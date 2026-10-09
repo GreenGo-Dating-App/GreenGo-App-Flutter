@@ -16,6 +16,7 @@ import {
   handleClaimChallengeReward,
   handleResetDailyChallenges,
   handleUpdateLeaderboardRankings,
+  ACHIEVEMENTS,
 } from './handlers';
 import { computeUserStats, computeAllUserStats } from './userStatsCompute';
 export { onMessageCreatedVocabulary } from './vocabularyProcessor';
@@ -53,96 +54,8 @@ const LEVEL_XP_REQUIREMENTS = [
   50000,  // Level 16
 ];
 
-// Achievement Definitions
-const ACHIEVEMENTS = {
-  first_match: {
-    name: 'First Match',
-    description: 'Get your first match',
-    xpReward: 50,
-    coinReward: 10,
-    icon: 'heart',
-  },
-  social_butterfly: {
-    name: 'Social Butterfly',
-    description: 'Send 100 messages',
-    xpReward: 100,
-    coinReward: 25,
-    icon: 'chat',
-    target: 100,
-  },
-  popular: {
-    name: 'Popular',
-    description: 'Get 50 matches',
-    xpReward: 200,
-    coinReward: 50,
-    icon: 'star',
-    target: 50,
-  },
-  video_enthusiast: {
-    name: 'Video Enthusiast',
-    description: 'Complete 10 video calls',
-    xpReward: 250,
-    coinReward: 75,
-    icon: 'video',
-    target: 10,
-  },
-  daily_streak_7: {
-    name: '7-Day Streak',
-    description: 'Login for 7 consecutive days',
-    xpReward: 150,
-    coinReward: 30,
-    icon: 'flame',
-    target: 7,
-  },
-  daily_streak_30: {
-    name: '30-Day Streak',
-    description: 'Login for 30 consecutive days',
-    xpReward: 500,
-    coinReward: 100,
-    icon: 'trophy',
-    target: 30,
-  },
-} as const;
-
-// Daily Challenge Definitions
-const DAILY_CHALLENGES = [
-  {
-    id: 'send_5_messages',
-    name: 'Conversation Starter',
-    description: 'Send 5 messages today',
-    type: ChallengeType.DAILY,
-    target: 5,
-    xpReward: 20,
-    coinReward: 5,
-  },
-  {
-    id: 'get_3_matches',
-    name: 'Match Maker',
-    description: 'Get 3 matches today',
-    type: ChallengeType.DAILY,
-    target: 3,
-    xpReward: 30,
-    coinReward: 10,
-  },
-  {
-    id: 'complete_profile',
-    name: 'Profile Perfectionist',
-    description: 'Complete your profile 100%',
-    type: ChallengeType.DAILY,
-    target: 100,
-    xpReward: 25,
-    coinReward: 5,
-  },
-  {
-    id: 'video_call_1',
-    name: 'Face to Face',
-    description: 'Complete 1 video call today',
-    type: ChallengeType.DAILY,
-    target: 1,
-    xpReward: 50,
-    coinReward: 15,
-  },
-] as const;
+// Achievement / daily-challenge definitions live in ./handlers (single source;
+// their user-facing names are rendered from the i18n catalog).
 
 // Interfaces
 interface GrantXPRequest {

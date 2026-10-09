@@ -23,6 +23,7 @@ import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
 import { requireAdmin, SUPER_ADMIN_ONLY } from '../shared/adminAuth';
 import { db, logInfo, logError } from '../shared/utils';
+import { lt, notifTextFields, rawText } from '../shared/i18n';
 import {
   Grant,
   validateGrant,
@@ -149,8 +150,8 @@ export const grantEntitlement = onCall<GrantRequest>(
         await db.collection('notifications').add({
           userId: uid,
           type: 'gift_received',
-          title: 'A gift from GreenGo',
-          body: summary,
+          // The summary is compact notation ("GOLD +30d · +100 coins").
+          ...notifTextFields(lt('srvGiftFromGreenGo'), rawText(summary)),
           createdAt: admin.firestore.Timestamp.now(),
           read: false,
         });

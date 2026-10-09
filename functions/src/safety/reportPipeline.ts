@@ -29,6 +29,8 @@
 import { onDocumentCreated, onDocumentUpdated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
+import { t as tr } from '../shared/i18n';
+import { resolveLocale } from '../shared/i18n/recipientLocale';
 import { monitored } from '../shared/monitoring';
 import { applyReportAutoActions } from './reportingSystem';
 
@@ -631,52 +633,6 @@ export function outcomeFor(after: admin.firestore.DocumentData): ReviewOutcome {
   return 'no_violation';
 }
 
-const FEEDBACK_TEXT: Record<string, { title: string; action_taken: string; no_violation: string }> = {
-  en: {
-    title: 'Your report was reviewed',
-    action_taken: 'Thank you for your report. Our team reviewed it and took action under our Community Guidelines.',
-    no_violation: 'Thank you for your report. Our team reviewed it and found no violation of our Community Guidelines.',
-  },
-  it: {
-    title: 'La tua segnalazione è stata esaminata',
-    action_taken: 'Grazie per la segnalazione. Il nostro team l\'ha esaminata e ha preso provvedimenti secondo le Linee guida della community.',
-    no_violation: 'Grazie per la segnalazione. Il nostro team l\'ha esaminata e non ha riscontrato violazioni delle Linee guida della community.',
-  },
-  pt: {
-    title: 'A sua denúncia foi analisada',
-    action_taken: 'Obrigado pela sua denúncia. A nossa equipa analisou-a e tomou medidas de acordo com as Diretrizes da Comunidade.',
-    no_violation: 'Obrigado pela sua denúncia. A nossa equipa analisou-a e não encontrou violação das Diretrizes da Comunidade.',
-  },
-  pt_BR: {
-    title: 'Sua denúncia foi analisada',
-    action_taken: 'Obrigado pela sua denúncia. Nossa equipe a analisou e tomou medidas de acordo com as Diretrizes da Comunidade.',
-    no_violation: 'Obrigado pela sua denúncia. Nossa equipe a analisou e não encontrou violação das Diretrizes da Comunidade.',
-  },
-  es: {
-    title: 'Tu denuncia ha sido revisada',
-    action_taken: 'Gracias por tu denuncia. Nuestro equipo la revisó y tomó medidas según las Normas de la comunidad.',
-    no_violation: 'Gracias por tu denuncia. Nuestro equipo la revisó y no encontró ninguna infracción de las Normas de la comunidad.',
-  },
-  fr: {
-    title: 'Votre signalement a été examiné',
-    action_taken: 'Merci pour votre signalement. Notre équipe l\'a examiné et a pris des mesures conformément aux Règles de la communauté.',
-    no_violation: 'Merci pour votre signalement. Notre équipe l\'a examiné et n\'a constaté aucune infraction aux Règles de la communauté.',
-  },
-  de: {
-    title: 'Deine Meldung wurde geprüft',
-    action_taken: 'Danke für deine Meldung. Unser Team hat sie geprüft und gemäß den Community-Richtlinien Maßnahmen ergriffen.',
-    no_violation: 'Danke für deine Meldung. Unser Team hat sie geprüft und keinen Verstoß gegen die Community-Richtlinien festgestellt.',
-  },
-};
-
-function feedbackLocale(lang: unknown): string {
-  if (typeof lang !== 'string' || !lang) return 'en';
-  const l = lang.replace('-', '_');
-  if (/^pt_br$/i.test(l)) return 'pt_BR';
-  const base = l.split('_')[0].toLowerCase();
-  return FEEDBACK_TEXT[base] ? base : 'en';
-}
-
 /** Notification doc id: one per queue item, ever. */
 export function feedbackNotificationId(queueId: string): string {
   return `report_reviewed_${queueId}`;
@@ -696,13 +652,16 @@ export async function notifyReporterOnResolution(
   }
 
   const outcome = outcomeFor(after);
-  let lang: unknown = 'en';
-  try {
-    lang = (await db.collection('users').doc(reporterId).get()).data()?.preferredLanguage;
-  } catch {
-    /* default to English */
-  }
-  const t = FEEDBACK_TEXT[feedbackLocale(lang)];
+  // Stored in the reporter's language (as before) for app versions without
+  // key support, plus titleKey/bodyKey so newer apps follow the UI language.
+  const locale = await resolveLocale(reporterId);
+  const bodyKey = outcome === 'action_taken'
+    ? 'srvReportReviewedActionTaken' as const
+    : 'srvReportReviewedNoViolation' as const;
+  const t = {
+    title: tr(locale, 'srvReportReviewedTitle'),
+    [outcome]: tr(locale, bodyKey),
+  } as Record<string, string>;
   try {
     await db.collection('notifications').doc(feedbackNotificationId(queueId)).create({
       userId: reporterId,
@@ -711,6 +670,8 @@ export async function notifyReporterOnResolution(
       title: t.title,
       message: t[outcome],
       body: t[outcome],
+      titleKey: 'srvReportReviewedTitle',
+      bodyKey,
       // Neutral (DSA art. 16(5)/17): no identity of the reported user, no sanction detail.
       data: {
         action: 'report_reviewed',

@@ -25,6 +25,7 @@ import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
 import { emitNotification } from '../notifications/notifyHelpers';
+import { lt, rawText } from '../shared/i18n';
 import { EXPERIENCES, countPublishedPaid, safetyError } from './createUserExperience';
 import {
   AS_FREE_PATCH,
@@ -174,8 +175,8 @@ export const onExperienceReportCreated = onDocumentCreated(
         await emitNotification({
           recipientId: h.hostId,
           type: 'experience_hidden',
-          title: 'Your experience was hidden after several reports',
-          body: h.title.slice(0, 120) || 'Pending review by GreenGo',
+          title: lt('notifServerExperienceHidden'),
+          body: h.title.slice(0, 120) ? rawText(h.title.slice(0, 120)) : lt('notifServerPendingReview'),
           data: { action: 'experience', experienceId },
         });
       } catch (e) {

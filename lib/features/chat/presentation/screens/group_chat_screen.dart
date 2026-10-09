@@ -30,6 +30,7 @@ import '../../../../core/widgets/voice_record_send_button.dart';
 import '../../../events/presentation/widgets/event_message_card.dart';
 import '../../../safety/presentation/widgets/report_block_sheet.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../../core/utils/server_text.dart';
 import '../../data/chat_constants.dart';
 import '../../domain/entities/message.dart';
 import '../bloc/group_chat_bloc.dart';
@@ -848,11 +849,21 @@ class _GroupMessageBubble extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (message.type == MessageType.system) {
+      // Server-written lines ("2 members left the group") carry an ARB key in
+      // metadata.systemKey: render them in the viewer's language.
+      final meta = message.metadata;
+      final rawParams = meta?['systemParams'];
+      final systemText = serverText(
+            AppLocalizations.of(context)!,
+            meta?['systemKey'] as String?,
+            rawParams is Map ? Map<String, dynamic>.from(rawParams) : null,
+          ) ??
+          message.content;
       return Padding(
         padding: const EdgeInsets.symmetric(vertical: 6),
         child: Center(
           child: Text(
-            message.content,
+            systemText,
             style: Theme.of(context)
                 .textTheme
                 .bodySmall

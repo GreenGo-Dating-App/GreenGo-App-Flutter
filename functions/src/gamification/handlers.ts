@@ -6,6 +6,7 @@
 import { db, FieldValue, logInfo, logError } from '../shared/utils';
 import * as admin from 'firebase-admin';
 import { weeklyXpFields } from './weekKey';
+import { lt, notifTextFields } from '../shared/i18n';
 
 // XP Configuration
 export const XP_ACTIONS = {
@@ -175,8 +176,10 @@ export async function handleGrantXP(params: GrantXPParams): Promise<GrantXPResul
     await db.collection('notifications').add({
       userId: uid,
       type: 'level_up',
-      title: `Level Up! You're now level ${newLevel}!`,
-      body: `Congratulations! You've earned ${totalCoins} coins.`,
+      ...notifTextFields(
+        lt('srvLevelUpTitle', { level: newLevel }),
+        lt('srvLevelUpBody', { coins: totalCoins }),
+      ),
       data: {
         newLevel,
         rewards: rewardsEarned,
@@ -294,8 +297,12 @@ export async function handleTrackAchievementProgress(params: TrackAchievementPar
     await db.collection('notifications').add({
       userId: uid,
       type: 'achievement_unlocked',
-      title: `Achievement Unlocked: ${achievement.name}!`,
-      body: (achievement as any).description || achievement.name,
+      // Name + description come from the catalog (select on the id), so the
+      // English list below stays data only.
+      ...notifTextFields(
+        lt('srvAchievementUnlockedTitle', { achievement: achievementId }),
+        lt('srvAchievementDescription', { achievement: achievementId }),
+      ),
       data: {
         achievementId,
         xpReward: achievement.xpReward,
@@ -542,8 +549,13 @@ export async function handleTrackChallengeProgress(params: TrackChallengeParams)
     await db.collection('notifications').add({
       userId: uid,
       type: 'challenge_completed',
-      title: `Challenge Completed: ${challengeDef.name}!`,
-      body: `Claim your rewards: ${challengeDef.xpReward} XP and ${challengeDef.coinReward} coins`,
+      ...notifTextFields(
+        lt('srvChallengeCompletedTitle', { challenge: challengeId }),
+        lt('srvChallengeRewardsBody', {
+          xp: challengeDef.xpReward,
+          coins: challengeDef.coinReward,
+        }),
+      ),
       data: {
         challengeId,
         xpReward: challengeDef.xpReward,

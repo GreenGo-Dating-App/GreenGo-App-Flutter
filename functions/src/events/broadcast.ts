@@ -14,6 +14,8 @@ import { filterUidsByPref } from '../notifications/prefs';
 import { monitored } from '../shared/monitoring';
 import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
+import { LText, lt, notifTextFields, rawText, render, t } from '../shared/i18n';
+import { pushRecipientsFromUserDocs, sendLocalizedMulticast } from '../notifications/localizedPush';
 
 const db = admin.firestore();
 const FCM_CHUNK = 500;
@@ -34,8 +36,14 @@ export const onEventBroadcastCreated = onDocumentCreated(
     const text = (msg.text as string) || '';
 
     const eventDoc = await db.collection('events').doc(eventId).get();
-    const title = (eventDoc.data()?.title as string) || 'Event';
+    const eventTitle = ((eventDoc.data()?.title as string) || '').trim();
     const eventImage = (eventDoc.data()?.imageUrl as string) || undefined;
+    const pushTitle: LText = eventTitle
+      ? lt('srvAnnouncementTitle', { name: eventTitle })
+      : lt('srvAnnouncementAnEvent');
+    const feedTitle: LText = eventTitle
+      ? lt('notifServerAnnouncement', { name: eventTitle })
+      : lt('srvAnnouncementAnEvent');
 
     const attendeesSnap = await db
       .collection('events')
@@ -57,26 +65,18 @@ export const onEventBroadcastCreated = onDocumentCreated(
     const tokenDocs = await Promise.all(
       recipientIds.map((u) => db.collection('users').doc(u).get())
     );
-    const tokens: string[] = [];
-    for (const td of tokenDocs) {
-      const t = td.data()?.fcmToken as string | undefined;
-      if (t) tokens.push(t);
-    }
-    if (tokens.length === 0) return;
+    const recipients = pushRecipientsFromUserDocs(tokenDocs);
+    if (recipients.length === 0) return;
 
-    for (let i = 0; i < tokens.length; i += FCM_CHUNK) {
-      const chunk = tokens.slice(i, i + FCM_CHUNK);
-      try {
-        await admin.messaging().sendEachForMulticast({
-          tokens: chunk,
-          notification: brandPush(`📣 ${title}`, text, eventImage),
-          data: { type: 'event_broadcast', eventId },
-          android: { priority: 'high' },
-        });
-      } catch (e) {
-        console.error('Event broadcast FCM failed', e);
-      }
-    }
+    await sendLocalizedMulticast(
+      recipients,
+      (locale) => ({
+        notification: brandPush(render(locale, pushTitle), text, eventImage),
+        data: { type: 'event_broadcast', eventId },
+        android: { priority: 'high' },
+      }),
+      'Event broadcast FCM',
+    );
 
     // Also write an in-app notification doc per attendee so the announcement
     // appears on the notifications page (case s). Batched (≤450 ops/commit).
@@ -87,9 +87,7 @@ export const onEventBroadcastCreated = onDocumentCreated(
       batch.set(db.collection('notifications').doc(), {
         userId: uid,
         type: 'event_announcement',
-        title: `Announcement · ${title}`,
-        message: text,
-        body: text,
+        ...notifTextFields(feedTitle, rawText(text)),
         data: { type: 'event_announcement', eventId, action: 'open_event' },
         isRead: false,
         createdAt: admin.firestore.FieldValue.serverTimestamp(),
@@ -127,7 +125,7 @@ export const onEventMessageCreated = onDocumentCreated(
     const text = (msg.text as string) || '';
 
     const eventDoc = await db.collection('events').doc(eventId).get();
-    const title = (eventDoc.data()?.title as string) || 'Event';
+    const title = ((eventDoc.data()?.title as string) || '').trim();
     const eventImage = (eventDoc.data()?.imageUrl as string) || undefined;
 
     const attendeesSnap = await db
@@ -156,20 +154,18 @@ export const onEventMessageCreated = onDocumentCreated(
     const tokenDocs = await Promise.all(
       prefRecipients.map((u) => db.collection('users').doc(u).get())
     );
-    const tokens: string[] = [];
-    for (const td of tokenDocs) {
-      const t = td.data()?.fcmToken as string | undefined;
-      if (t) tokens.push(t);
-    }
-    if (tokens.length === 0) return;
+    const recipients = pushRecipientsFromUserDocs(tokenDocs);
+    if (recipients.length === 0) return;
 
-    for (let i = 0; i < tokens.length; i += FCM_CHUNK) {
-      const chunk = tokens.slice(i, i + FCM_CHUNK);
-      try {
-        await admin.messaging().sendEachForMulticast({
-          tokens: chunk,
+    await sendLocalizedMulticast(
+      recipients,
+      (locale) => ({
           // Title = the sender's name, body = the message (2026-10-03).
-          notification: messagePush(senderName || title, text, eventImage),
+          notification: messagePush(
+            senderName || title || t(locale, 'srvUnknownUser'),
+            text,
+            eventImage,
+          ),
           data: { type: 'event_message', eventId, conversationId: eventId },
           android: {
             priority: 'high',
@@ -185,10 +181,8 @@ export const onEventMessageCreated = onDocumentCreated(
             headers: { 'apns-collapse-id': `event_${eventId}` },
             payload: { aps: { sound: 'default', badge: 1 } },
           },
-        });
-      } catch (e) {
-        console.error('Event message FCM failed', e);
-      }
-    }
+      }),
+      'Event message FCM',
+    );
   })
 );

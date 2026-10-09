@@ -56,6 +56,7 @@ import { ticketKey } from './keys';
 import { checkCharge, stripePaymentMethodTypes } from './currency';
 import { CheckoutInput, publicImage, whenText } from './checkoutPayload';
 import { emitNotification } from '../notifications/notifyHelpers';
+import { lt, rawText } from '../shared/i18n';
 
 const db = () => admin.firestore();
 const ts = (ms: number) => admin.firestore.Timestamp.fromMillis(ms);
@@ -761,10 +762,10 @@ async function notifyPaid(orderId: string, o: Record<string, any>, byOrganizer: 
   const data = { action: 'ticket', orderId, kind: String(o.kind), listingId: String(o.listingId) };
   const title = String(o.title || '');
   try {
-    await emitNotification({ recipientId: o.buyerId, type: 'ticket_ready', title: 'Your ticket is ready', body: title, data });
+    await emitNotification({ recipientId: o.buyerId, type: 'ticket_ready', title: lt('notifServerTicketReady'), body: rawText(title), data });
     if (!byOrganizer) {
       await emitNotification({
-        recipientId: o.organizerId, type: 'ticket_sold', title: 'Ticket sold', body: title,
+        recipientId: o.organizerId, type: 'ticket_sold', title: lt('notifServerTicketSold'), body: rawText(title),
         data: { ...data, action: o.kind === 'event' ? 'event' : 'booking' },
       });
     }
@@ -813,8 +814,8 @@ export async function markTicketPaymentSent(uid: string, data: any): Promise<Rec
   });
   if (r.changed) {
     await emitNotification({
-      recipientId: r.o.organizerId, type: 'ticket_payment_to_confirm', title: 'Payment to confirm',
-      body: `${r.o.title || ''} · ${r.o.code || ''}`.trim(),
+      recipientId: r.o.organizerId, type: 'ticket_payment_to_confirm', title: lt('notifServerPaymentToConfirm'),
+      body: rawText(`${r.o.title || ''} · ${r.o.code || ''}`.trim()),
       data: { action: 'ticket_confirm', orderId },
     }).catch(() => undefined);
   }
@@ -858,8 +859,8 @@ export async function rejectTicketPayment(uid: string, data: any): Promise<Recor
     ['pending_payment', 'awaiting_confirmation']);
   if (!done) fail('failed-precondition', 'not_pending', { status: o.status });
   await emitNotification({
-    recipientId: o.buyerId, type: 'ticket_payment_rejected', title: 'Payment not confirmed',
-    body: reason || String(o.title || ''), data: { action: 'ticket', orderId },
+    recipientId: o.buyerId, type: 'ticket_payment_rejected', title: lt('notifServerPaymentNotConfirmed'),
+    body: rawText(reason || String(o.title || '')), data: { action: 'ticket', orderId },
   }).catch(() => undefined);
   return { orderId, status: 'rejected' };
 }
@@ -882,8 +883,8 @@ export async function remindDueConfirmations(limit = 300): Promise<number> {
   if (due.size) await batch.commit();
   for (const [org, n] of byOrg) {
     await emitNotification({
-      recipientId: org, type: 'ticket_payment_to_confirm', title: 'Payments waiting for your confirmation',
-      body: `${n}`, data: { action: 'ticket_confirm', count: String(n) },
+      recipientId: org, type: 'ticket_payment_to_confirm', title: lt('notifServerPaymentsWaiting'),
+      body: lt('srvPaymentsWaitingCount', { count: n }), data: { action: 'ticket_confirm', count: String(n) },
     }).catch(() => undefined);
   }
   return byOrg.size;
@@ -955,8 +956,8 @@ export async function markOrderReversed(orderId: string, to: 'refunded' | 'dispu
     const o = (await oref.get()).data() || {};
     await emitNotification({
       recipientId: o.buyerId, type: 'ticket_refunded',
-      title: to === 'refunded' ? 'Ticket refunded' : 'Ticket payment disputed',
-      body: String(o.title || ''), data: { action: 'ticket', orderId },
+      title: to === 'refunded' ? lt('notifServerTicketRefunded') : lt('notifServerTicketDisputed'),
+      body: rawText(String(o.title || '')), data: { action: 'ticket', orderId },
     }).catch(() => undefined);
   }
   return changed;
@@ -1003,8 +1004,8 @@ export async function requestOrderRefund(orderId: string, reason: string): Promi
   await ref.set({ refund, updatedAt: t }, { merge: true });
   if (refund.status !== 'requested') {
     await emitNotification({
-      recipientId: o.organizerId, type: 'ticket_refund_owed', title: 'Refund to pay back',
-      body: `${o.title || ''} · ${o.code || ''}`.trim(), data: { action: 'ticket_confirm', orderId },
+      recipientId: o.organizerId, type: 'ticket_refund_owed', title: lt('notifServerRefundToPayBack'),
+      body: rawText(`${o.title || ''} · ${o.code || ''}`.trim()), data: { action: 'ticket_confirm', orderId },
     }).catch(() => undefined);
   }
   return String(refund.status);
@@ -1084,8 +1085,8 @@ export async function expireDueOrders(limit = 300): Promise<number> {
       const o = d.data();
       if (o.provider === 'link') {
         await emitNotification({
-          recipientId: o.buyerId, type: 'ticket_order_expired', title: 'Ticket reservation expired',
-          body: String(o.title || ''), data: { action: 'ticket', orderId: d.id },
+          recipientId: o.buyerId, type: 'ticket_order_expired', title: lt('notifServerTicketReservationExpired'),
+          body: rawText(String(o.title || '')), data: { action: 'ticket', orderId: d.id },
         }).catch(() => undefined);
       }
     }

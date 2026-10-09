@@ -37,6 +37,7 @@ import {
 } from '../shared/effectiveTier';
 import { WriteQueue, planBaseExpiry, planTierExpiry } from '../shared/membershipExpiry';
 import { redact } from '../shared/redact';
+import { lt, notifTextFields } from '../shared/i18n';
 
 // Product ID → tier and duration mapping.
 // `price` is NOT charged anywhere — the stores charge what Play Console / App
@@ -482,8 +483,13 @@ export const checkExpiringSubscriptions = onSchedule(
         await db.collection('notifications').add({
           userId: doc.id,
           type: 'membership_expiring',
-          title: 'Membership Expiring Soon',
-          body: `Your ${data.membershipTier || 'membership'} expires in ${daysUntilExpiry} day${daysUntilExpiry !== 1 ? 's' : ''}. Extend now to keep your premium features!`,
+          ...notifTextFields(
+            lt('srvMembershipExpiringTitle'),
+            lt('srvMembershipExpiringBody', {
+              tier: String(data.membershipTier || ''),
+              days: daysUntilExpiry,
+            }),
+          ),
           data: {
             tier: data.membershipTier,
             expiresAt: endDate.toISOString(),

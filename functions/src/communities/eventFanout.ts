@@ -27,6 +27,8 @@ import { filterUidsByPref } from '../notifications/prefs';
 import { monitored } from '../shared/monitoring';
 import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
+import { LText, lt, notifTextFields, rawText, render } from '../shared/i18n';
+import { pushRecipientsFromUserDocs, sendLocalizedMulticast } from '../notifications/localizedPush';
 
 const db = admin.firestore();
 
@@ -40,8 +42,8 @@ function preview(title: string): string {
 
 interface CommunityNotif {
   type: string;
-  title: string;
-  body: string;
+  title: LText;
+  body: LText;
   eventImage?: string;
   dataPayload: Record<string, string>;
   collapseKey: string;
@@ -57,6 +59,7 @@ async function notifyCommunityMembers(
   notif: CommunityNotif,
 ): Promise<number> {
   const { title, body, eventImage, dataPayload, collapseKey } = notif;
+  const textFields = notifTextFields(title, body);
   const membersCol = db
     .collection('communities')
     .doc(communityId)
@@ -86,18 +89,10 @@ async function notifyCommunityMembers(
     const userDocs = await Promise.all(
       recipientIds.map((uid) => db.collection('users').doc(uid).get()),
     );
-    const tokens: string[] = [];
-    for (const ud of userDocs) {
-      const t = ud.data()?.fcmToken as string | undefined;
-      if (t) tokens.push(t);
-    }
-
-    for (let i = 0; i < tokens.length; i += FCM_CHUNK) {
-      const chunk = tokens.slice(i, i + FCM_CHUNK);
-      try {
-        await admin.messaging().sendEachForMulticast({
-          tokens: chunk,
-          notification: brandPush(title, body, eventImage),
+    await sendLocalizedMulticast(
+      pushRecipientsFromUserDocs(userDocs),
+      (locale) => ({
+          notification: brandPush(render(locale, title), render(locale, body), eventImage),
           data: dataPayload,
           android: {
             priority: 'high',
@@ -114,11 +109,9 @@ async function notifyCommunityMembers(
             headers: { 'apns-collapse-id': collapseKey },
             payload: { aps: { sound: 'default', badge: 1 } },
           },
-        });
-      } catch (e) {
-        console.error('Community members multicast failed', collapseKey, e);
-      }
-    }
+      }),
+      `Community members multicast ${collapseKey}`,
+    );
 
     let batch = db.batch();
     let ops = 0;
@@ -128,9 +121,7 @@ async function notifyCommunityMembers(
       batch.set(ref, {
         userId: uid,
         type: notif.type,
-        title,
-        message: body,
-        body,
+        ...textFields,
         data: dataPayload,
         imageUrl: eventImage ?? null,
         createdAt: admin.firestore.FieldValue.serverTimestamp(),
@@ -180,15 +171,16 @@ async function fanOutCommunityEvent(
     .collection('communities')
     .doc(communityId)
     .get();
-  const communityName =
-    (communitySnap.data()?.name as string) || 'Your community';
+  const communityName = ((communitySnap.data()?.name as string) || '').trim();
 
-  const eventTitle = (eventData.title as string) || 'New event';
+  const eventTitle = ((eventData.title as string) || '').trim();
   const eventImage = (eventData.imageUrl as string) || undefined;
   const total = await notifyCommunityMembers(communityId, {
     type: 'community_event',
-    title: `New event in ${communityName}`,
-    body: preview(eventTitle),
+    title: communityName
+      ? lt('notifServerNewEventIn', { name: communityName })
+      : lt('srvNewEventInYourCommunity'),
+    body: eventTitle ? rawText(preview(eventTitle)) : lt('srvNewEvent'),
     eventImage,
     dataPayload: {
       type: 'community_event',
@@ -271,9 +263,8 @@ export const onCommunityEventChanged = onDocumentUpdated(
       .collection('communities')
       .doc(communityId)
       .get();
-    const communityName =
-      (communitySnap.data()?.name as string) || 'Your community';
-    const eventTitle = (after.title as string) || 'Event';
+    const communityName = ((communitySnap.data()?.name as string) || '').trim();
+    const eventTitle = preview(((after.title as string) || '').trim() || 'Event');
     const eventImage = (after.imageUrl as string) || undefined;
 
     // Cancellation takes precedence.
@@ -282,8 +273,10 @@ export const onCommunityEventChanged = onDocumentUpdated(
     if (cancelled && before.status === 'published') {
       const total = await notifyCommunityMembers(communityId, {
         type: 'community_event_changed',
-        title: `Event cancelled in ${communityName}`,
-        body: preview(`"${eventTitle}" has been cancelled`),
+        title: communityName
+          ? lt('notifServerEventCancelledIn', { name: communityName })
+          : lt('srvEventCancelledInYourCommunity'),
+        body: lt('srvEventHasBeenCancelled', { event: eventTitle }),
         eventImage,
         dataPayload: {
           type: 'community_event_changed',
@@ -307,11 +300,14 @@ export const onCommunityEventChanged = onDocumentUpdated(
       (before.venue || '') !== (after.venue || '');
     if (!timeChanged && !venueChanged) return;
 
-    const what = timeChanged ? 'New time' : 'New location';
     const total = await notifyCommunityMembers(communityId, {
       type: 'community_event_changed',
-      title: `Event updated in ${communityName}`,
-      body: preview(`${what} for "${eventTitle}"`),
+      title: communityName
+        ? lt('notifServerEventUpdatedIn', { name: communityName })
+        : lt('srvEventUpdatedInYourCommunity'),
+      body: timeChanged
+        ? lt('srvEventNewTime', { event: eventTitle })
+        : lt('srvEventNewLocation', { event: eventTitle }),
       eventImage,
       dataPayload: {
         type: 'community_event_changed',

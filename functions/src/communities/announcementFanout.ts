@@ -23,6 +23,8 @@ import { filterUidsByPref } from '../notifications/prefs';
 import { monitored } from '../shared/monitoring';
 import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
+import { LText, lt, notifTextFields, rawText, render } from '../shared/i18n';
+import { pushRecipientsFromUserDocs, sendLocalizedMulticast } from '../notifications/localizedPush';
 
 const db = admin.firestore();
 
@@ -66,13 +68,15 @@ export const onCommunityAnnouncementCreated = onDocumentCreated(
       .collection('communities')
       .doc(communityId)
       .get();
-    const communityName =
-      (communitySnap.data()?.name as string) || 'A community';
+    const communityName = ((communitySnap.data()?.name as string) || '').trim();
     const communityImage =
       (communitySnap.data()?.imageUrl as string) || undefined;
 
-    const title = `📣 ${communityName}`;
+    const title: LText = communityName
+      ? lt('srvAnnouncementTitle', { name: communityName })
+      : lt('srvAnnouncementACommunity');
     const body = preview((msg.content as string) || '');
+    const textFields = notifTextFields(title, rawText(body));
     const dataPayload: Record<string, string> = {
       type: 'community_announcement',
       communityId,
@@ -110,18 +114,10 @@ export const onCommunityAnnouncementCreated = onDocumentCreated(
       const userDocs = await Promise.all(
         recipientIds.map((uid) => db.collection('users').doc(uid).get()),
       );
-      const tokens: string[] = [];
-      for (const ud of userDocs) {
-        const t = ud.data()?.fcmToken as string | undefined;
-        if (t) tokens.push(t);
-      }
-
-      for (let i = 0; i < tokens.length; i += FCM_CHUNK) {
-        const chunk = tokens.slice(i, i + FCM_CHUNK);
-        try {
-          await admin.messaging().sendEachForMulticast({
-            tokens: chunk,
-            notification: brandPush(title, body, communityImage),
+      await sendLocalizedMulticast(
+        pushRecipientsFromUserDocs(userDocs),
+        (locale) => ({
+            notification: brandPush(render(locale, title), body, communityImage),
             data: dataPayload,
             android: {
               priority: 'high',
@@ -137,11 +133,9 @@ export const onCommunityAnnouncementCreated = onDocumentCreated(
               headers: { 'apns-collapse-id': `community_ann_${communityId}` },
               payload: { aps: { sound: 'default', badge: 1 } },
             },
-          });
-        } catch (e) {
-          console.error('Community announcement multicast failed', communityId, e);
-        }
-      }
+        }),
+        `Community announcement multicast ${communityId}`,
+      );
 
       // In-app notification docs (Flutter NotificationModel shape).
       let batch = db.batch();
@@ -155,9 +149,7 @@ export const onCommunityAnnouncementCreated = onDocumentCreated(
           // Shows the community's picture in the notification row rather than
           // the generic megaphone glyph.
           ...(communityImage ? { imageUrl: communityImage } : {}),
-          title,
-          message: body,
-          body,
+          ...textFields,
           data: dataPayload,
           createdAt: admin.firestore.FieldValue.serverTimestamp(),
           isRead: false,

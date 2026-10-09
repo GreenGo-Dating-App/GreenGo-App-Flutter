@@ -1,4 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../../core/utils/app_l10n_lookup.dart';
+import '../../../../core/utils/server_text.dart';
 import '../../domain/entities/conversation.dart';
 import '../../domain/entities/group_info.dart';
 import '../../domain/entities/message.dart';
@@ -261,14 +263,30 @@ class GroupChatRemoteDataSourceImpl implements GroupChatRemoteDataSource {
     final lastAt = (data['lastMessageAt'] as Timestamp?)?.toDate();
     final unread = (data['unreadCount'] as num?)?.toInt() ?? 0;
 
+    // The server stores the last message's type (media previews are then
+    // labelled in the viewer's language) and, for server-written system
+    // lines, an ARB key + params.
+    final lastKey = data['lastMessageKey'] as String?;
+    final rawParams = data['lastMessageParams'];
+    final storedPreview = data['lastMessagePreview'] as String? ?? '';
+    final lastType = data['lastMessageType'] as String?;
     final preview = Message(
       messageId: '',
       matchId: groupId,
       conversationId: groupId,
       senderId: data['lastSenderId'] as String? ?? '',
       receiverId: '',
-      content: data['lastMessagePreview'] as String? ?? '',
-      type: MessageType.text,
+      content: (lastKey == null
+              ? null
+              : serverText(
+                  currentAppL10n(),
+                  lastKey,
+                  rawParams is Map ? Map<String, dynamic>.from(rawParams) : null,
+                )) ??
+          storedPreview,
+      type: lastType == null || lastKey != null
+          ? MessageType.text
+          : MessageTypeExtension.fromString(lastType),
       sentAt: lastAt ?? DateTime.now(),
     );
 

@@ -5,6 +5,7 @@
 
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { t } from '../shared/i18n';
 import { monitored } from '../shared/monitoring';
 import { MODERATION_ROLES, requireAdmin } from '../shared/adminAuth';
 import { syncHostExperiencesForBan } from '../user_experiences/hostBan';
@@ -660,7 +661,9 @@ async function removeContent(
     await firestore.doc(path).update({
       isDeletedForEveryone: true,
       deletedAt: admin.firestore.FieldValue.serverTimestamp(),
-      content: 'This message was removed by a moderator',
+      content: t('en', 'srvMessageRemovedByModerator'),
+      // Readers render the placeholder in their own language.
+      'metadata.systemKey': 'srvMessageRemovedByModerator',
       moderation,
     });
     return;
@@ -671,7 +674,7 @@ async function removeContent(
     const snap = await firestore.doc(path).get();
     if (!snap.exists) throw new functions.https.HttpsError('not-found', 'The flagged message no longer exists');
     const d = snap.data() || {};
-    const placeholder = 'This message was removed by a moderator';
+    const placeholder = t('en', 'srvMessageRemovedByModerator');
     await snap.ref.update({
       isDeletedForEveryone: true,
       isDeleted: true,
@@ -679,6 +682,7 @@ async function removeContent(
       ...(typeof d.text === 'string' ? { text: placeholder } : {}),
       ...(typeof d.content === 'string' ? { content: placeholder } : {}),
       ...(typeof d.caption === 'string' ? { caption: placeholder } : {}),
+      'metadata.systemKey': 'srvMessageRemovedByModerator',
       moderation,
     });
     return;

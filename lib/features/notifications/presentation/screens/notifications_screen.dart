@@ -28,6 +28,7 @@ import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../domain/entities/notification.dart';
+import '../../../../core/utils/server_text.dart';
 import '../utils/notification_text_l10n.dart';
 import '../../domain/entities/notification_preferences.dart';
 import '../../domain/usecases/get_notification_preferences.dart';
@@ -895,7 +896,10 @@ class _NotificationTile extends StatelessWidget {
     if (l10n == null || text.startsWith('l10n:')) {
       return _resolveL10n(context, text);
     }
-    return localizedNotificationTitle(l10n, notification);
+    // Server-written docs carry titleKey + params (viewer's language);
+    // older / app-written docs go through the phrase table.
+    return serverText(l10n, notification.titleKey, notification.textParams) ??
+        localizedNotificationTitle(l10n, notification);
   }
 
   String _resolveBody(BuildContext context) {
@@ -904,7 +908,8 @@ class _NotificationTile extends StatelessWidget {
     if (l10n == null || text.startsWith('l10n:')) {
       return _resolveL10n(context, text);
     }
-    return localizedNotificationBody(l10n, notification);
+    return serverText(l10n, notification.bodyKey, notification.textParams) ??
+        localizedNotificationBody(l10n, notification);
   }
 
   /// Resolve `l10n:key` prefixed strings to localized text.

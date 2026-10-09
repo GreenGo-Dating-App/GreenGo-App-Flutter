@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart' show debugPrint, kIsWeb;
 import '../../../../core/config/web_push_config.dart';
+import '../../../../core/providers/language_provider.dart';
 import '../../domain/entities/notification.dart';
 import '../models/notification_model.dart';
 import '../models/notification_preferences_model.dart';
@@ -372,8 +373,13 @@ class NotificationRemoteDataSourceImpl
           tokenData,
           SetOptions(merge: true),
         ),
+        // + the app language, so the server renders pushes in it.
         firestore.collection('users').doc(userId).set(
-          tokenData,
+          {
+            ...tokenData,
+            LanguageProvider.serverLanguageField:
+                LanguageProvider.activeLanguageCode,
+          },
           SetOptions(merge: true),
         ),
       ]);

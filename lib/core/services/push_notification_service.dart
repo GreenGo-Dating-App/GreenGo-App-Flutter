@@ -30,6 +30,7 @@ import '../di/injection_container.dart' as di;
 import 'app_sound_service.dart';
 import '../../generated/app_localizations.dart';
 import '../utils/app_l10n_lookup.dart';
+import '../providers/language_provider.dart';
 import '../../features/safety/presentation/screens/moderation_decision_screen.dart';
 
 /// Top-level background message handler (must be a top-level function)
@@ -568,7 +569,12 @@ class PushNotificationService {
       FirebaseFirestore.instance
           .collection('users')
           .doc(userId)
-          .set(tokenData, SetOptions(merge: true)),
+          // + the app language, so the server renders pushes in it.
+          .set({
+            ...tokenData,
+            LanguageProvider.serverLanguageField:
+                LanguageProvider.activeLanguageCode,
+          }, SetOptions(merge: true)),
     ]).catchError((Object e) {
       debugPrint('[FCM] Failed to persist token: $e');
       return <void>[];
@@ -593,7 +599,11 @@ class PushNotificationService {
       FirebaseFirestore.instance
           .collection('users')
           .doc(userId)
-          .set(tokenData, SetOptions(merge: true)),
+          .set({
+            ...tokenData,
+            LanguageProvider.serverLanguageField:
+                LanguageProvider.activeLanguageCode,
+          }, SetOptions(merge: true)),
     ]).catchError((e) {
       debugPrint('[FCM] Token refresh save error: $e');
       return <void>[];

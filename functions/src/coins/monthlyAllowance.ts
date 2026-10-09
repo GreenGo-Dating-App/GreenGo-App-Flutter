@@ -36,6 +36,13 @@ import '../shared/firebaseAdmin';
 import { grantCoins } from '../shared/grants';
 import { effectiveTier, EffectiveTier, isBaseMembershipActive } from '../shared/effectiveTier';
 import { logInfo, logError } from '../shared/utils';
+import { lt, notifTextFields } from '../shared/i18n';
+
+/** Tier product name for display ("GOLD" -> "Gold"); a brand name, not translated. */
+function tierLabel(tier: string): string {
+  const v = String(tier || '').toLowerCase();
+  return v ? v[0].toUpperCase() + v.slice(1) : v;
+}
 
 const db = admin.firestore();
 
@@ -134,8 +141,12 @@ async function grantOne(
   await db.collection('notifications').add({
     userId: uid,
     type: 'coins_allowance',
-    title: 'Monthly coins added',
-    message: `You received ${amount} coins with your ${tier === 'FREE' ? 'free' : tier.toLowerCase()} membership this month.`,
+    ...notifTextFields(
+      lt('notifServerMonthlyCoinsAdded'),
+      tier === 'FREE'
+        ? lt('srvMonthlyCoinsBodyFree', { amount })
+        : lt('srvMonthlyCoinsBodyTier', { amount, tier: tierLabel(tier) }),
+    ),
     data: { type: 'coins_allowance', amount: String(amount), period },
     isRead: false,
     // In-app only: a push to every member each month is not wanted.

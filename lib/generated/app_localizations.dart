@@ -39062,6 +39062,708 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Coin gift package'**
   String get invoiceLineGiftPackage;
+
+  /// No description provided for @srvSomeone.
+  ///
+  /// In en, this message translates to:
+  /// **'Someone'**
+  String get srvSomeone;
+
+  /// No description provided for @srvJoinedYourCommunity.
+  ///
+  /// In en, this message translates to:
+  /// **'joined your community'**
+  String get srvJoinedYourCommunity;
+
+  /// No description provided for @srvJoinedYourEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'joined your event'**
+  String get srvJoinedYourEvent;
+
+  /// No description provided for @srvLikedYourEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'liked your event'**
+  String get srvLikedYourEvent;
+
+  /// No description provided for @srvJoinedYourGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'joined your group'**
+  String get srvJoinedYourGroup;
+
+  /// No description provided for @srvAddedYouToAGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'added you to a group'**
+  String get srvAddedYouToAGroup;
+
+  /// No description provided for @srvGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'Group'**
+  String get srvGroup;
+
+  /// No description provided for @srvGroupMembersLeft.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{A member left the group} other{{count} members left the group}}'**
+  String srvGroupMembersLeft(int count);
+
+  /// No description provided for @srvTicketScanned.
+  ///
+  /// In en, this message translates to:
+  /// **'Your ticket was scanned'**
+  String get srvTicketScanned;
+
+  /// No description provided for @srvEventBoostLive.
+  ///
+  /// In en, this message translates to:
+  /// **'Your event boost is now live'**
+  String get srvEventBoostLive;
+
+  /// No description provided for @srvEventBoostEnded.
+  ///
+  /// In en, this message translates to:
+  /// **'Your event boost has ended'**
+  String get srvEventBoostEnded;
+
+  /// No description provided for @srvAddedYouAsCoOwnerOfEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'added you as a co-owner of an event'**
+  String get srvAddedYouAsCoOwnerOfEvent;
+
+  /// No description provided for @srvAnEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'An event'**
+  String get srvAnEvent;
+
+  /// No description provided for @srvPaymentsWaitingCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 payment} other{{count} payments}}'**
+  String srvPaymentsWaitingCount(int count);
+
+  /// No description provided for @srvNewReview.
+  ///
+  /// In en, this message translates to:
+  /// **'New review'**
+  String get srvNewReview;
+
+  /// No description provided for @srvMentionedYouInReviewReply.
+  ///
+  /// In en, this message translates to:
+  /// **'mentioned you in a review reply'**
+  String get srvMentionedYouInReviewReply;
+
+  /// No description provided for @srvRepliedToYourReview.
+  ///
+  /// In en, this message translates to:
+  /// **'replied to your review'**
+  String get srvRepliedToYourReview;
+
+  /// No description provided for @srvExperience.
+  ///
+  /// In en, this message translates to:
+  /// **'Experience'**
+  String get srvExperience;
+
+  /// No description provided for @srvBookingRequested.
+  ///
+  /// In en, this message translates to:
+  /// **'requested to book your experience'**
+  String get srvBookingRequested;
+
+  /// No description provided for @srvBookingBooked.
+  ///
+  /// In en, this message translates to:
+  /// **'booked your experience'**
+  String get srvBookingBooked;
+
+  /// No description provided for @srvBookingConfirmed.
+  ///
+  /// In en, this message translates to:
+  /// **'Booking confirmed'**
+  String get srvBookingConfirmed;
+
+  /// No description provided for @srvBookingAccepted.
+  ///
+  /// In en, this message translates to:
+  /// **'accepted your booking request'**
+  String get srvBookingAccepted;
+
+  /// No description provided for @srvBookingDeclined.
+  ///
+  /// In en, this message translates to:
+  /// **'declined your booking request'**
+  String get srvBookingDeclined;
+
+  /// No description provided for @srvBookingCancelledTheirs.
+  ///
+  /// In en, this message translates to:
+  /// **'cancelled their booking'**
+  String get srvBookingCancelledTheirs;
+
+  /// No description provided for @srvBookingCancelledYours.
+  ///
+  /// In en, this message translates to:
+  /// **'cancelled your booking'**
+  String get srvBookingCancelledYours;
+
+  /// No description provided for @srvBookingRefundOwed.
+  ///
+  /// In en, this message translates to:
+  /// **'{title} — refund owed: {percent}%.'**
+  String srvBookingRefundOwed(String title, int percent);
+
+  /// No description provided for @srvBookingCheckedIn.
+  ///
+  /// In en, this message translates to:
+  /// **'You are checked in'**
+  String get srvBookingCheckedIn;
+
+  /// No description provided for @srvBookingCancelledByHost.
+  ///
+  /// In en, this message translates to:
+  /// **'Your booking was cancelled by the host'**
+  String get srvBookingCancelledByHost;
+
+  /// No description provided for @srvBookingCancelledByHostBody.
+  ///
+  /// In en, this message translates to:
+  /// **'{title} — the time is no longer available. Any payment is refunded.'**
+  String srvBookingCancelledByHostBody(String title);
+
+  /// No description provided for @srvBookingNoShow.
+  ///
+  /// In en, this message translates to:
+  /// **'marked you as a no-show'**
+  String get srvBookingNoShow;
+
+  /// No description provided for @srvBookingNoShowBody.
+  ///
+  /// In en, this message translates to:
+  /// **'{title} — you can contest this within {hours} h of the end.'**
+  String srvBookingNoShowBody(String title, int hours);
+
+  /// No description provided for @srvBookingGuestSaysPaid.
+  ///
+  /// In en, this message translates to:
+  /// **'says they paid for their booking'**
+  String get srvBookingGuestSaysPaid;
+
+  /// No description provided for @srvBookingPaymentConfirmed.
+  ///
+  /// In en, this message translates to:
+  /// **'confirmed your payment'**
+  String get srvBookingPaymentConfirmed;
+
+  /// No description provided for @srvBookingProblemReported.
+  ///
+  /// In en, this message translates to:
+  /// **'reported a problem with their booking'**
+  String get srvBookingProblemReported;
+
+  /// No description provided for @srvBookingReportReviewed.
+  ///
+  /// In en, this message translates to:
+  /// **'Your report was reviewed'**
+  String get srvBookingReportReviewed;
+
+  /// No description provided for @srvBookingHostWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'Warning about one of your bookings'**
+  String get srvBookingHostWarning;
+
+  /// No description provided for @srvBookingReportReviewedHost.
+  ///
+  /// In en, this message translates to:
+  /// **'A booking report was reviewed'**
+  String get srvBookingReportReviewedHost;
+
+  /// No description provided for @srvBookingReviewedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'{title}.'**
+  String srvBookingReviewedBody(String title);
+
+  /// No description provided for @srvBookingReviewedRefundBody.
+  ///
+  /// In en, this message translates to:
+  /// **'{title}. Refund owed: {percent}%.'**
+  String srvBookingReviewedRefundBody(String title, int percent);
+
+  /// No description provided for @srvBookingCancelled.
+  ///
+  /// In en, this message translates to:
+  /// **'Your booking was cancelled'**
+  String get srvBookingCancelled;
+
+  /// No description provided for @srvBookingNoLongerAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'{title} is no longer available.'**
+  String srvBookingNoLongerAvailable(String title);
+
+  /// No description provided for @srvBookingComingUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Your experience is coming up'**
+  String get srvBookingComingUp;
+
+  /// No description provided for @srvBookingHostingSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'You are hosting soon'**
+  String get srvBookingHostingSoon;
+
+  /// No description provided for @srvBookingRequestExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'Your booking request expired'**
+  String get srvBookingRequestExpired;
+
+  /// No description provided for @srvBookingRequestExpiredBody.
+  ///
+  /// In en, this message translates to:
+  /// **'{title} — the host did not answer in time.'**
+  String srvBookingRequestExpiredBody(String title);
+
+  /// No description provided for @srvBookingHowWasIt.
+  ///
+  /// In en, this message translates to:
+  /// **'How was your experience?'**
+  String get srvBookingHowWasIt;
+
+  /// No description provided for @srvBookingReviewIt.
+  ///
+  /// In en, this message translates to:
+  /// **'Review {title}'**
+  String srvBookingReviewIt(String title);
+
+  /// No description provided for @srvBookingReviewGuest.
+  ///
+  /// In en, this message translates to:
+  /// **'Review your guest'**
+  String get srvBookingReviewGuest;
+
+  /// No description provided for @srvBookingPayLink.
+  ///
+  /// In en, this message translates to:
+  /// **'{title} — pay the host with their payment link.'**
+  String srvBookingPayLink(String title);
+
+  /// No description provided for @srvBookingPayOnline.
+  ///
+  /// In en, this message translates to:
+  /// **'{title} — pay in the app to get your ticket.'**
+  String srvBookingPayOnline(String title);
+
+  /// No description provided for @srvBookingPayCash.
+  ///
+  /// In en, this message translates to:
+  /// **'{title} — pay the host in cash when you meet.'**
+  String srvBookingPayCash(String title);
+
+  /// No description provided for @srvHostReviewedYou.
+  ///
+  /// In en, this message translates to:
+  /// **'Your host reviewed you'**
+  String get srvHostReviewedYou;
+
+  /// No description provided for @srvHostReviewedYouBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Review your experience to see what they said.'**
+  String get srvHostReviewedYouBody;
+
+  /// No description provided for @srvNewReviewFromHost.
+  ///
+  /// In en, this message translates to:
+  /// **'You have a new review from a host'**
+  String get srvNewReviewFromHost;
+
+  /// No description provided for @srvGuestLeftReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Your guest left a review'**
+  String get srvGuestLeftReview;
+
+  /// No description provided for @srvGuestLeftReviewBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Review your guest to reveal both reviews.'**
+  String get srvGuestLeftReviewBody;
+
+  /// No description provided for @srvSupportNewMessageOnTicket.
+  ///
+  /// In en, this message translates to:
+  /// **'New message on support ticket'**
+  String get srvSupportNewMessageOnTicket;
+
+  /// No description provided for @srvSupportUserSentMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'A user sent a new message.'**
+  String get srvSupportUserSentMessage;
+
+  /// No description provided for @srvVerificationResubmit.
+  ///
+  /// In en, this message translates to:
+  /// **'Please submit a new verification photo.'**
+  String get srvVerificationResubmit;
+
+  /// No description provided for @srvVerificationResubmitReason.
+  ///
+  /// In en, this message translates to:
+  /// **'Please submit a new verification photo. Reason: {reason}'**
+  String srvVerificationResubmitReason(String reason);
+
+  /// No description provided for @srvVerificationRejected.
+  ///
+  /// In en, this message translates to:
+  /// **'Your verification was not approved. Please try again.'**
+  String get srvVerificationRejected;
+
+  /// No description provided for @srvVerificationRejectedReason.
+  ///
+  /// In en, this message translates to:
+  /// **'Your verification was not approved. Reason: {reason}'**
+  String srvVerificationRejectedReason(String reason);
+
+  /// No description provided for @srvBundleNewMessages.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 new message} other{{count} new messages}}'**
+  String srvBundleNewMessages(int count);
+
+  /// No description provided for @srvBundleLikes.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 person liked your profile} other{{count} people liked your profile}}'**
+  String srvBundleLikes(int count);
+
+  /// No description provided for @srvBundleProfileViews.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 profile view} other{{count} profile views}}'**
+  String srvBundleProfileViews(int count);
+
+  /// No description provided for @srvBundleNewConnections.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 new connection} other{{count} new connections}}'**
+  String srvBundleNewConnections(int count);
+
+  /// No description provided for @srvBundleNotifications.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 notification} other{{count} notifications}}'**
+  String srvBundleNotifications(int count);
+
+  /// No description provided for @srvBundleNamesAndOthers.
+  ///
+  /// In en, this message translates to:
+  /// **'{names} and {count, plural, =1{1 other} other{{count} others}}'**
+  String srvBundleNamesAndOthers(String names, int count);
+
+  /// No description provided for @srvLevelUpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Level Up! You\'re now level {level}!'**
+  String srvLevelUpTitle(int level);
+
+  /// No description provided for @srvLevelUpBody.
+  ///
+  /// In en, this message translates to:
+  /// **'{coins, plural, =1{Congratulations! You\'ve earned 1 coin.} other{Congratulations! You\'ve earned {coins} coins.}}'**
+  String srvLevelUpBody(int coins);
+
+  /// No description provided for @srvAchievementUnlockedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Achievement Unlocked: {achievement, select, first_match{First Match} social_butterfly{Social Butterfly} popular{Popular} video_enthusiast{Video Enthusiast} daily_streak_7{7-Day Streak} daily_streak_30{30-Day Streak} other{New achievement}}!'**
+  String srvAchievementUnlockedTitle(String achievement);
+
+  /// No description provided for @srvAchievementDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'{achievement, select, first_match{Make your first connection} social_butterfly{Send 100 messages} popular{Make 50 connections} video_enthusiast{Complete 10 video calls} daily_streak_7{Log in 7 days in a row} daily_streak_30{Log in 30 days in a row} other{Keep it up!}}'**
+  String srvAchievementDescription(String achievement);
+
+  /// No description provided for @srvChallengeCompletedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Challenge Completed: {challenge, select, send_5_messages{Conversation Starter} get_3_matches{Match Maker} complete_profile{Profile Perfectionist} video_call_1{Face to Face} other{Daily challenge}}!'**
+  String srvChallengeCompletedTitle(String challenge);
+
+  /// No description provided for @srvChallengeRewardsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Claim your rewards: {xp} XP and {coins, plural, =1{1 coin} other{{coins} coins}}'**
+  String srvChallengeRewardsBody(int xp, int coins);
+
+  /// No description provided for @srvSentYouCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'{amount, plural, =1{sent you 1 coin} other{sent you {amount} coins}}'**
+  String srvSentYouCoins(int amount);
+
+  /// No description provided for @srvMonthlyCoinsBodyFree.
+  ///
+  /// In en, this message translates to:
+  /// **'{amount, plural, =1{You received 1 coin with your free membership this month.} other{You received {amount} coins with your free membership this month.}}'**
+  String srvMonthlyCoinsBodyFree(int amount);
+
+  /// No description provided for @srvMonthlyCoinsBodyTier.
+  ///
+  /// In en, this message translates to:
+  /// **'{amount, plural, =1{You received 1 coin with your {tier} membership this month.} other{You received {amount} coins with your {tier} membership this month.}}'**
+  String srvMonthlyCoinsBodyTier(int amount, String tier);
+
+  /// No description provided for @srvMembershipExpiringTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Membership expiring soon'**
+  String get srvMembershipExpiringTitle;
+
+  /// No description provided for @srvMembershipExpiringBody.
+  ///
+  /// In en, this message translates to:
+  /// **'{days, plural, =1{Your {tier} membership expires in 1 day. Extend now to keep your premium features!} other{Your {tier} membership expires in {days} days. Extend now to keep your premium features!}}'**
+  String srvMembershipExpiringBody(String tier, int days);
+
+  /// No description provided for @srvMembershipExpiredTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Membership expired'**
+  String get srvMembershipExpiredTitle;
+
+  /// No description provided for @srvMembershipExpiredBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your membership has expired. Purchase a new membership to restore premium features.'**
+  String get srvMembershipExpiredBody;
+
+  /// No description provided for @srvSubscriptionCancelledTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscription cancelled'**
+  String get srvSubscriptionCancelledTitle;
+
+  /// No description provided for @srvSubscriptionEndedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your membership has ended. You can resubscribe anytime from the Shop.'**
+  String get srvSubscriptionEndedBody;
+
+  /// No description provided for @srvPaymentFailedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment failed'**
+  String get srvPaymentFailedTitle;
+
+  /// No description provided for @srvSubscriptionPaymentFailedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your subscription payment failed. Please update your payment method to keep your membership active.'**
+  String get srvSubscriptionPaymentFailedBody;
+
+  /// No description provided for @srvGiftFromGreenGo.
+  ///
+  /// In en, this message translates to:
+  /// **'A gift from GreenGo'**
+  String get srvGiftFromGreenGo;
+
+  /// No description provided for @srvAccountNotApprovedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Account not approved'**
+  String get srvAccountNotApprovedTitle;
+
+  /// No description provided for @srvAccountNotApprovedReason.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account could not be approved. Reason: {reason}'**
+  String srvAccountNotApprovedReason(String reason);
+
+  /// No description provided for @srvAccountNotApprovedContactSupport.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account could not be approved. Please contact support.'**
+  String get srvAccountNotApprovedContactSupport;
+
+  /// No description provided for @srvEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'Event'**
+  String get srvEvent;
+
+  /// No description provided for @srvNewEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'New event'**
+  String get srvNewEvent;
+
+  /// No description provided for @srvEventStartingNow.
+  ///
+  /// In en, this message translates to:
+  /// **'is starting now — enjoy!'**
+  String get srvEventStartingNow;
+
+  /// No description provided for @srvEventStartsIn6h.
+  ///
+  /// In en, this message translates to:
+  /// **'starts in about 6 hours'**
+  String get srvEventStartsIn6h;
+
+  /// No description provided for @srvEventIsTomorrow.
+  ///
+  /// In en, this message translates to:
+  /// **'is tomorrow — see you there!'**
+  String get srvEventIsTomorrow;
+
+  /// No description provided for @srvNewEventInYourCommunity.
+  ///
+  /// In en, this message translates to:
+  /// **'New event in your community'**
+  String get srvNewEventInYourCommunity;
+
+  /// No description provided for @srvEventCancelledInYourCommunity.
+  ///
+  /// In en, this message translates to:
+  /// **'Event cancelled in your community'**
+  String get srvEventCancelledInYourCommunity;
+
+  /// No description provided for @srvEventUpdatedInYourCommunity.
+  ///
+  /// In en, this message translates to:
+  /// **'Event updated in your community'**
+  String get srvEventUpdatedInYourCommunity;
+
+  /// No description provided for @srvEventHasBeenCancelled.
+  ///
+  /// In en, this message translates to:
+  /// **'\"{event}\" has been cancelled'**
+  String srvEventHasBeenCancelled(String event);
+
+  /// No description provided for @srvEventNewTime.
+  ///
+  /// In en, this message translates to:
+  /// **'New time for \"{event}\"'**
+  String srvEventNewTime(String event);
+
+  /// No description provided for @srvEventNewLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'New location for \"{event}\"'**
+  String srvEventNewLocation(String event);
+
+  /// No description provided for @srvAnnouncementTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'📣 {name}'**
+  String srvAnnouncementTitle(String name);
+
+  /// No description provided for @srvAnnouncementACommunity.
+  ///
+  /// In en, this message translates to:
+  /// **'📣 A community'**
+  String get srvAnnouncementACommunity;
+
+  /// No description provided for @srvAnnouncementAnEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'📣 Event announcement'**
+  String get srvAnnouncementAnEvent;
+
+  /// No description provided for @srvReportReviewedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your report was reviewed'**
+  String get srvReportReviewedTitle;
+
+  /// No description provided for @srvReportReviewedActionTaken.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you for your report. Our team reviewed it and took action under our Community Guidelines.'**
+  String get srvReportReviewedActionTaken;
+
+  /// No description provided for @srvReportReviewedNoViolation.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you for your report. Our team reviewed it and found no violation of our Community Guidelines.'**
+  String get srvReportReviewedNoViolation;
+
+  /// No description provided for @srvModerationDecisionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A moderation decision about your account'**
+  String get srvModerationDecisionTitle;
+
+  /// No description provided for @srvModerationDecisionBody.
+  ///
+  /// In en, this message translates to:
+  /// **'We took action under our Community Guidelines. Tap to read the reasons and how to appeal.'**
+  String get srvModerationDecisionBody;
+
+  /// No description provided for @srvNewMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'New message'**
+  String get srvNewMessage;
+
+  /// No description provided for @srvGroupCreated.
+  ///
+  /// In en, this message translates to:
+  /// **'Group created'**
+  String get srvGroupCreated;
+
+  /// No description provided for @srvYouWereAddedToGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'You were added to the group'**
+  String get srvYouWereAddedToGroup;
+
+  /// No description provided for @srvGroupMembersJoined.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{A new member joined} other{{count} new members joined}}'**
+  String srvGroupMembersJoined(int count);
+
+  /// No description provided for @srvUnknownUser.
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown user'**
+  String get srvUnknownUser;
+
+  /// No description provided for @srvCoinsReceivedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} sent you {amount, plural, =1{1 coin} other{{amount} coins}}!'**
+  String srvCoinsReceivedBody(String name, int amount);
+
+  /// No description provided for @srvNewEventFromFollowedBusiness.
+  ///
+  /// In en, this message translates to:
+  /// **'New event from a business you follow'**
+  String get srvNewEventFromFollowedBusiness;
+
+  /// No description provided for @srvMessageRemovedByModerator.
+  ///
+  /// In en, this message translates to:
+  /// **'This message was removed by a moderator'**
+  String get srvMessageRemovedByModerator;
+
+  /// No description provided for @srvSupportAiHandoff.
+  ///
+  /// In en, this message translates to:
+  /// **'I understand you’d like to speak with a human agent. I’m connecting you now. A support team member will respond shortly.'**
+  String get srvSupportAiHandoff;
 }
 
 class _AppLocalizationsDelegate

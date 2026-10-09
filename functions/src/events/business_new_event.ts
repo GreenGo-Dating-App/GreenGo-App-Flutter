@@ -44,6 +44,8 @@ import { brandPush } from '../notifications/brand';
 import { monitored } from '../shared/monitoring';
 import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
+import { LText, lt, notifTextFields, rawText, render, t } from '../shared/i18n';
+import { pushRecipientsFromUserDocs, sendLocalizedMulticast } from '../notifications/localizedPush';
 
 const db = admin.firestore();
 
@@ -77,12 +79,13 @@ async function fanOutNewEventToFollowers(
   const profile = profileSnap.data() || {};
   if (profile.isBusiness !== true) return;
 
-  const businessName =
+  const businessName = (
     (profile.businessName as string) ||
     (profile.name as string) ||
     (profile.nickname as string) ||
     (eventData.organizerName as string) ||
-    'A business you follow';
+    ''
+  ).trim();
 
   // Claim the idempotency flag transactionally BEFORE any fan-out so concurrent
   // triggers / retries can never double-send.
@@ -98,10 +101,13 @@ async function fanOutNewEventToFollowers(
   });
   if (!claimed) return;
 
-  const eventTitle = (eventData.title as string) || 'New event';
+  const eventTitle = ((eventData.title as string) || '').trim();
   const eventImage = (eventData.imageUrl as string) || undefined;
-  const title = `New event from ${businessName}`;
-  const body = eventPreview(eventTitle);
+  const title: LText = businessName
+    ? lt('notifServerNewEventFrom', { name: businessName })
+    : lt('srvNewEventFromFollowedBusiness');
+  const body: LText = eventTitle ? rawText(eventPreview(eventTitle)) : lt('srvNewEvent');
+  const textFields = notifTextFields(title, body);
   const dataPayload: Record<string, string> = {
     type: 'new_event',
     eventId,
@@ -136,19 +142,11 @@ async function fanOutNewEventToFollowers(
     const userDocs = await Promise.all(
       followerIds.map((uid) => db.collection('users').doc(uid).get()),
     );
-    const tokens: string[] = [];
-    for (const ud of userDocs) {
-      const t = ud.data()?.fcmToken as string | undefined;
-      if (t) tokens.push(t);
-    }
-
-    // Push (chunked at the multicast limit).
-    for (let i = 0; i < tokens.length; i += FCM_CHUNK) {
-      const chunk = tokens.slice(i, i + FCM_CHUNK);
-      try {
-        await admin.messaging().sendEachForMulticast({
-          tokens: chunk,
-          notification: brandPush(title, body, eventImage),
+    // Push (one multicast per recipient language, chunked at the FCM limit).
+    await sendLocalizedMulticast(
+      pushRecipientsFromUserDocs(userDocs),
+      (locale) => ({
+          notification: brandPush(render(locale, title), render(locale, body), eventImage),
           data: dataPayload,
           android: {
             priority: 'high',
@@ -165,12 +163,9 @@ async function fanOutNewEventToFollowers(
             headers: { 'apns-collapse-id': `event_new_${eventId}` },
             payload: { aps: { sound: 'default', badge: 1 } },
           },
-        });
-      } catch (e) {
-        // Best-effort: never fail the trigger on notification errors.
-        console.error('Business new-event FCM multicast failed', eventId, e);
-      }
-    }
+      }),
+      `Business new-event FCM ${eventId}`,
+    );
 
     // In-app notification doc per follower (matches Flutter NotificationModel:
     // userId, type, title, message, createdAt, isRead[, data]). Batched.
@@ -182,9 +177,8 @@ async function fanOutNewEventToFollowers(
       batch.set(ref, {
         userId: uid,
         type: 'new_event',
-        title,
-        message: body, // Flutter NotificationModel reads `message`
-        body, // legacy field for older clients
+        // English title/message/body + titleKey/bodyKey/params.
+        ...textFields,
         data: dataPayload,
         imageUrl: eventImage ?? null,
         createdAt: admin.firestore.FieldValue.serverTimestamp(),

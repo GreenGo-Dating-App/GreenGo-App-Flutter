@@ -16,6 +16,7 @@
 
 import * as admin from 'firebase-admin';
 import { db, logError } from './utils';
+import { lt, notifTextFields } from './i18n';
 import {
   USERS_FREE_TIER,
   effectiveTier,
@@ -180,8 +181,7 @@ export async function planTierExpiry(
       {
         userId: uid,
         type: 'membership_expired',
-        title: 'Membership Expired',
-        body: 'Your membership has expired. Purchase a new membership to restore premium features.',
+        ...notifTextFields(lt('srvMembershipExpiredTitle'), lt('srvMembershipExpiredBody')),
         data: { previousTier: String(data.membershipTier ?? '') },
         read: false,
         sent: false,

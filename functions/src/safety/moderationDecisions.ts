@@ -19,6 +19,8 @@
 import * as admin from 'firebase-admin';
 import * as functions from 'firebase-functions/v1';
 import '../shared/firebaseAdmin';
+import { t as tr } from '../shared/i18n';
+import { resolveLocale } from '../shared/i18n/recipientLocale';
 
 const db = () => admin.firestore();
 
@@ -35,24 +37,6 @@ export const USER_AFFECTING_ACTIONS = new Set([
 
 export function decisionNotificationId(queueId: string): string {
   return `moderation_decision_${queueId}`;
-}
-
-const TEXT: Record<string, { title: string; body: string }> = {
-  en: { title: 'A moderation decision about your account', body: 'We took action under our Community Guidelines. Tap to read the reasons and how to appeal.' },
-  it: { title: 'Una decisione di moderazione sul tuo account', body: 'Abbiamo preso provvedimenti secondo le Linee guida della community. Tocca per leggere i motivi e come presentare ricorso.' },
-  pt: { title: 'Uma decisão de moderação sobre a sua conta', body: 'Tomámos medidas de acordo com as Diretrizes da Comunidade. Toque para ler os motivos e como recorrer.' },
-  pt_BR: { title: 'Uma decisão de moderação sobre sua conta', body: 'Tomamos medidas de acordo com as Diretrizes da Comunidade. Toque para ler os motivos e como recorrer.' },
-  es: { title: 'Una decisión de moderación sobre tu cuenta', body: 'Tomamos medidas según las Normas de la comunidad. Toca para leer los motivos y cómo apelar.' },
-  fr: { title: 'Une décision de modération concernant votre compte', body: 'Nous avons pris des mesures conformément aux Règles de la communauté. Touchez pour lire les motifs et comment faire appel.' },
-  de: { title: 'Eine Moderationsentscheidung zu deinem Konto', body: 'Wir haben gemäß den Community-Richtlinien Maßnahmen ergriffen. Tippe, um die Gründe und die Einspruchsmöglichkeit zu sehen.' },
-};
-
-function localeOf(lang: unknown): string {
-  if (typeof lang !== 'string' || !lang) return 'en';
-  const l = lang.replace('-', '_');
-  if (/^pt_br$/i.test(l)) return 'pt_BR';
-  const base = l.split('_')[0].toLowerCase();
-  return TEXT[base] ? base : 'en';
 }
 
 function isAlreadyExists(e: unknown): boolean {
@@ -102,13 +86,13 @@ export async function notifyAffectedUserOfDecision(p: {
     throw e;
   }
 
-  let lang: unknown = 'en';
-  try {
-    lang = (await db().collection('users').doc(userId).get()).data()?.preferredLanguage;
-  } catch {
-    /* English */
-  }
-  const t = TEXT[localeOf(lang)];
+  // Stored in the user's language (as before) for app versions without key
+  // support, plus titleKey/bodyKey so newer apps follow the UI language.
+  const locale = await resolveLocale(userId);
+  const t = {
+    title: tr(locale, 'srvModerationDecisionTitle'),
+    body: tr(locale, 'srvModerationDecisionBody'),
+  };
   try {
     await db().collection('notifications').doc(decisionNotificationId(p.queueId)).create({
       userId,
@@ -116,6 +100,8 @@ export async function notifyAffectedUserOfDecision(p: {
       title: t.title,
       message: t.body,
       body: t.body,
+      titleKey: 'srvModerationDecisionTitle',
+      bodyKey: 'srvModerationDecisionBody',
       data: {
         action: 'moderation_decision',
         decisionId: p.queueId,

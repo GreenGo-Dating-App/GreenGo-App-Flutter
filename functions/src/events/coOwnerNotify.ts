@@ -10,6 +10,7 @@
  * list notifies nobody, so the trigger is idempotent per addition.
  */
 import { onDocumentWritten } from 'firebase-functions/v2/firestore';
+import { lt, rawText } from '../shared/i18n';
 import { monitored } from '../shared/monitoring';
 import { resolveActor, emitNotification } from '../notifications/notifyHelpers';
 import '../shared/firebaseAdmin';
@@ -38,7 +39,7 @@ export const onEventCoOwnersChanged = onDocumentWritten(
     if (added.length === 0) return;
 
     const eventId = event.params.eventId;
-    const title = ((after.title as string) || '').trim() || 'an event';
+    const name = ((after.title as string) || '').trim();
     const actor = organizerId ? await resolveActor(organizerId) : undefined;
 
     await Promise.all(
@@ -46,8 +47,10 @@ export const onEventCoOwnersChanged = onDocumentWritten(
         emitNotification({
           recipientId: uid,
           type: 'event_co_owner_added',
-          title: `added you as a co-owner of ${title}`,
-          body: title,
+          title: name
+            ? lt('notifServerAddedYouAsCoOwner', { name })
+            : lt('srvAddedYouAsCoOwnerOfEvent'),
+          body: name ? rawText(name) : lt('srvAnEvent'),
           data: {
             type: 'event_co_owner_added',
             eventId,

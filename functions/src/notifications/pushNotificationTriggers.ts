@@ -11,6 +11,9 @@ import { shouldNotify } from './prefs';
 import { logInfo, logError } from '../shared/utils';
 import { monitored } from '../shared/monitoring';
 import { PUSH_MEMORY } from '../shared/pushRuntime';
+import { AppLocale, LText, lt, notifTextFields, rawText, render, t } from '../shared/i18n';
+import { mediaLabel, truncatePreview } from '../shared/i18n/chatPreview';
+import { resolveLocale } from '../shared/i18n/recipientLocale';
 
 const db = admin.firestore();
 const messaging = admin.messaging();
@@ -77,14 +80,31 @@ function isInQuietHours(prefs: any): boolean {
  * Helper: Send FCM push notification to a user
  * Reads FCM token, checks notification preferences, sends via FCM, and writes in-app notification
  */
+/**
+ * Text for sendPushToUser: a catalog/raw LText, or a function of the
+ * recipient's locale (chat previews: localized media labels).
+ */
+type PushText = LText | ((locale: AppLocale) => string);
+
+function pushText(locale: AppLocale, v: PushText): string {
+  return typeof v === 'function' ? v(locale) : render(locale, v);
+}
+
+/** Doc-storable form: functions are stored as their English rendering. */
+function storable(v: PushText): LText {
+  return typeof v === 'function' ? rawText(v('en')) : v;
+}
+
 async function sendPushToUser(
   userId: string,
   type: string,
-  title: string,
-  body: string,
+  titleText: PushText,
+  bodyText: PushText,
   data?: Record<string, string>,
   options?: SendOptions,
 ): Promise<boolean> {
+  const title = storable(titleText);
+  const body = storable(bodyText);
   // Actor identity for the in-app tile (avatar + tappable name). Threaded into
   // every writeInAppNotification branch below so the feed doc always names who
   // acted, exactly like the push does.
@@ -108,6 +128,9 @@ async function sendPushToUser(
 
     const userData = userDoc.data()!;
     const fcmToken = userData.fcmToken;
+    const locale = fcmToken ? await resolveLocale(userId, { userData }) : 'en';
+    const pushTitle = pushText(locale, titleText);
+    const pushBody = pushText(locale, bodyText);
 
     // Notification preferences
     const prefsDoc = await db.collection('notification_preferences').doc(userId).get();
@@ -153,8 +176,8 @@ async function sendPushToUser(
     const message: admin.messaging.Message = {
       token: fcmToken,
       notification: options?.messageStyle
-        ? messagePush(title, body, options?.imageUrl)
-        : brandPush(title, body, options?.imageUrl),
+        ? messagePush(pushTitle, pushBody, options?.imageUrl)
+        : brandPush(pushTitle, pushBody, options?.imageUrl),
       data: {
         type,
         timestamp: new Date().toISOString(),
@@ -211,8 +234,8 @@ async function sendPushToUser(
 async function writeInAppNotification(
   userId: string,
   type: string,
-  title: string,
-  body: string,
+  title: LText,
+  body: LText,
   data?: Record<string, string>,
   fcmMessageId?: string,
   actor?: { imageUrl?: string; actorId?: string; actorName?: string },
@@ -221,9 +244,8 @@ async function writeInAppNotification(
     await db.collection('notifications').add({
       userId,
       type,
-      title,
-      message: body, // Flutter NotificationModel reads `message`
-      body, // legacy field for older clients
+      // English title/message/body (+ titleKey/bodyKey/params when keyed).
+      ...notifTextFields(title, body),
       createdAt: admin.firestore.FieldValue.serverTimestamp(),
       isRead: false,
       // Only when THIS module actually pushed (fcmMessageId present) do we set
@@ -315,7 +337,8 @@ export const onNewMessagePush = onDocumentCreated(
       // Sender info for title + avatar
       const senderDoc = await db.collection('users').doc(senderId).get();
       const senderData = senderDoc.data() || {};
-      const senderName = senderData.displayName || 'Someone';
+      // Empty when unknown: the push shows a localized "Unknown user".
+      const senderName = ((senderData.displayName as string) || '').trim();
 
       let senderAvatar: string | undefined;
       try {
@@ -327,12 +350,11 @@ export const onNewMessagePush = onDocumentCreated(
       // Build message preview
       const messageText = data.text || data.content || '';
       const messageType = data.type || 'text';
-      let preview: string;
-      if (messageType === 'image') preview = '📷 Photo';
-      else if (messageType === 'voice') preview = '🎤 Voice message';
-      else if (messageType === 'video') preview = '🎥 Video';
-      else if (messageText.length > 100) preview = messageText.substring(0, 97) + '...';
-      else preview = messageText;
+      // Media label in the RECIPIENT's language, else the text itself.
+      const preview = (locale: AppLocale): string =>
+        mediaLabel(locale, messageType) ?? truncatePreview(messageText, 100);
+      const titleFor = (locale: AppLocale): string =>
+        senderName || t(locale, 'srvUnknownUser');
 
       const recipients = participants.filter((id: string) => id !== senderId);
       const now = Date.now();
@@ -371,7 +393,7 @@ export const onNewMessagePush = onDocumentCreated(
           await sendPushToUser(
             recipientId,
             'newMessage',
-            senderName,
+            titleFor,
             preview,
             {
               conversationId: convId,
@@ -433,8 +455,8 @@ export const onSupportMessagePush = onDocumentCreated(
         await sendPushToUser(
           userId,
           'supportReply',
-          'Support replied to your ticket',
-          data.text || 'You have a new reply from support.',
+          lt('notifServerSupportReplied'),
+          data.text ? rawText(data.text) : lt('notifServerSupportNewReply'),
           { conversationId, action: 'support_message' },
           { collapseKey: `support_${conversationId}`, threadId: `support_${conversationId}` },
         );
@@ -448,8 +470,8 @@ export const onSupportMessagePush = onDocumentCreated(
         await sendPushToUser(
           agentId,
           'supportMessage',
-          'New message on support ticket',
-          data.text || 'A user sent a new message.',
+          lt('srvSupportNewMessageOnTicket'),
+          data.text ? rawText(data.text) : lt('srvSupportUserSentMessage'),
           { conversationId, action: 'support_message' },
           { collapseKey: `support_${conversationId}`, threadId: `support_${conversationId}` },
         );
@@ -490,8 +512,8 @@ export const checkExpiringModes = onSchedule(
         await sendPushToUser(
           doc.id,
           'modeExpiry',
-          'Incognito Mode Expiring Soon',
-          'Your Incognito Mode expires in less than 1 hour!',
+          lt('notifServerIncognitoExpiring'),
+          lt('notifServerIncognitoExpiringBody'),
         );
 
         await doc.ref.update({ incognitoWarningNotified: true });
@@ -512,8 +534,8 @@ export const checkExpiringModes = onSchedule(
         await sendPushToUser(
           doc.id,
           'modeExpiry',
-          'Traveler Mode Expiring Soon',
-          'Your Traveler Mode expires in less than 1 hour!',
+          lt('notifServerTravelerExpiring'),
+          lt('notifServerTravelerExpiringBody'),
         );
 
         await doc.ref.update({ travelerWarningNotified: true });
@@ -551,31 +573,31 @@ export const onVerificationStatusChange = onDocumentUpdated(
         await sendPushToUser(
           userId,
           'verification',
-          'Profile Verified!',
-          'Your profile has been verified! You now have a verified badge.',
+          lt('notifServerProfileVerified'),
+          lt('notifServerProfileVerifiedBody'),
           undefined,
           { isCritical: true },
         );
       } else if (afterStatus === 'needsResubmission') {
         const body = reason
-          ? `Please submit a new verification photo. Reason: ${reason}`
-          : 'Please submit a new verification photo.';
+          ? lt('srvVerificationResubmitReason', { reason: String(reason) })
+          : lt('srvVerificationResubmit');
         await sendPushToUser(
           userId,
           'verification',
-          'New Verification Photo Needed',
+          lt('notifServerNewVerificationPhoto'),
           body,
           undefined,
           { isCritical: true },
         );
       } else if (afterStatus === 'rejected') {
         const body = reason
-          ? `Your verification was not approved. Reason: ${reason}`
-          : 'Your verification was not approved. Please try again.';
+          ? lt('srvVerificationRejectedReason', { reason: String(reason) })
+          : lt('srvVerificationRejected');
         await sendPushToUser(
           userId,
           'verification',
-          'Verification Update',
+          lt('notifServerVerificationUpdate'),
           body,
           undefined,
           { isCritical: true },

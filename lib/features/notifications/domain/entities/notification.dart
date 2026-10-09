@@ -19,6 +19,9 @@ class NotificationEntity extends Equatable {
     this.imageUrl,
     this.actorId,
     this.actorName,
+    this.titleKey,
+    this.bodyKey,
+    this.textParams,
   });
   final String notificationId;
   final String userId;
@@ -35,6 +38,13 @@ class NotificationEntity extends Equatable {
   /// tappable bold name in the tile). Null for system/no-actor notifications.
   final String? actorId;
   final String? actorName;
+
+  /// Server-written texts: catalog keys (ARB keys) + their params, rendered
+  /// in the viewer's language with `serverText()`. Null on docs written
+  /// before the keys existed (then [title] / [message] are shown).
+  final String? titleKey;
+  final String? bodyKey;
+  final Map<String, dynamic>? textParams;
 
   /// Get time since notification
   String get timeSinceText {
@@ -182,6 +192,9 @@ class NotificationEntity extends Equatable {
     String? imageUrl,
     String? actorId,
     String? actorName,
+    String? titleKey,
+    String? bodyKey,
+    Map<String, dynamic>? textParams,
   }) {
     return NotificationEntity(
       notificationId: notificationId ?? this.notificationId,
@@ -196,6 +209,9 @@ class NotificationEntity extends Equatable {
       imageUrl: imageUrl ?? this.imageUrl,
       actorId: actorId ?? this.actorId,
       actorName: actorName ?? this.actorName,
+      titleKey: titleKey ?? this.titleKey,
+      bodyKey: bodyKey ?? this.bodyKey,
+      textParams: textParams ?? this.textParams,
     );
   }
 
@@ -213,6 +229,9 @@ class NotificationEntity extends Equatable {
         imageUrl,
         actorId,
         actorName,
+        titleKey,
+        bodyKey,
+        textParams,
       ];
 }
 
