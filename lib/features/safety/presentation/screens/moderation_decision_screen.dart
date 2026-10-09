@@ -112,6 +112,8 @@ String moderationReasonLabel(AppLocalizations l10n, String code) {
       return l10n.moderationReasonNoShow;
     case 'off_platform_payment':
       return l10n.moderationReasonOffPlatformPayment;
+    case 'copyright':
+      return l10n.copyrightHelpEntry;
     default:
       return l10n.moderationReasonOther;
   }

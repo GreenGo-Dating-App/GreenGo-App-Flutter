@@ -60,6 +60,20 @@
           }
         },
         {
+          "source": "/copyright-notice",
+          "function": {
+            "functionId": "copyrightNoticeWeb",
+            "region": "us-central1"
+          }
+        },
+        {
+          "source": "/copyright-notice/**",
+          "function": {
+            "functionId": "copyrightNoticeWeb",
+            "region": "us-central1"
+          }
+        },
+        {
           "source": "/gfonts/**",
           "function": {
             "functionId": "fontFallbackProxy",

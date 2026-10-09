@@ -45,6 +45,7 @@ import '../../../../core/security/screen_security_service.dart';
 import '../../../../core/security/viewer_watermark.dart';
 import '../../data/services/chat_screenshot_notice.dart';
 import '../utils/chat_l10n.dart';
+import '../../../copyright/data/copyright_service.dart';
 
 /// Group Chat Screen ("Culture Circle").
 ///
@@ -866,6 +867,9 @@ class _GroupMessageBubble extends StatelessWidget {
       reportedUserName: name.isNotEmpty ? name : l10n.chatUnknown,
       surface: 'groupChat',
       contentId: message.messageId,
+      copyrightContent: message.conversationId.isNotEmpty
+          ? CopyrightContentRef.message('groups', message.conversationId, message.messageId)
+          : null,
     );
   }
 

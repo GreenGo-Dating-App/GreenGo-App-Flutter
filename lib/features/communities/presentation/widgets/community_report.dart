@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../copyright/data/copyright_service.dart';
 import '../../../safety/presentation/widgets/report_block_sheet.dart';
 
 /// Report a community member or a community post's author.
@@ -24,5 +25,8 @@ Future<void> showCommunityReportSheet(
     surface: 'community:$communityId',
     contentId: contentId,
     allowBlock: false,
+    copyrightContent: contentId != null
+        ? CopyrightContentRef.message('communities', communityId, contentId)
+        : null,
   );
 }

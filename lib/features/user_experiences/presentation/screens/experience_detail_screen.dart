@@ -14,6 +14,8 @@ import '../../../../core/widgets/translatable_text.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../copyright/data/copyright_service.dart';
+import '../../../copyright/presentation/screens/copyright_notice_form_screen.dart';
 import '../../../experience_bookings/domain/entities/booking.dart';
 import '../../../experience_bookings/domain/repositories/bookings_repository.dart';
 import '../../../experience_bookings/presentation/screens/book_experience_screen.dart';
@@ -252,7 +254,9 @@ class _DetailViewState extends State<_DetailView> {
   /// auto-hide the listing pending admin review).
   Future<void> _report() async {
     final bloc = context.read<ExperienceDetailBloc>();
-    final input = await ReportExperienceSheet.show(context);
+    final input = await ReportExperienceSheet.show(context,
+        onCopyright: () => openCopyrightNoticeForm(context,
+            content: CopyrightContentRef.experience(widget.experienceId)));
     if (input == null) return;
     bloc.add(ExperienceDetailReported(widget.currentUserId,
         reason: input.reason.wire, details: input.details));

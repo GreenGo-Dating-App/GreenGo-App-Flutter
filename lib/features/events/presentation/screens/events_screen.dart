@@ -89,6 +89,8 @@ import '../../../../core/widgets/boost_celebration.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/services/paid_listing_access.dart';
 import '../../../business/presentation/widgets/paid_business_note.dart';
+import '../../../copyright/data/copyright_service.dart';
+import '../../../copyright/presentation/screens/copyright_notice_form_screen.dart';
 
 /// Coin cost for an organizer to feature ("Feature this event") their event in
 /// the Explore featured carousel for 7 days. Pure revenue, zero run-cost.
@@ -2381,6 +2383,15 @@ class EventDetailsScreen extends StatelessWidget {
         content: Text(l10n.eventReportBody,
             style: const TextStyle(color: AppColors.textSecondary)),
         actions: [
+          TextButton(
+            key: const ValueKey('event-report-copyright'),
+            onPressed: () {
+              Navigator.pop(dialogContext, false);
+              openCopyrightNoticeForm(context,
+                  content: CopyrightContentRef.event(event.id));
+            },
+            child: Text(l10n.copyrightReportEntry),
+          ),
           TextButton(
             onPressed: () => Navigator.pop(dialogContext, false),
             child: Text(l10n.cancel),

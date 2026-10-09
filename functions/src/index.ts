@@ -799,3 +799,18 @@ export {
 export { emailOnIdVerificationSubmitted } from './emails/verificationSubmittedEmail';
 export { emailTicketsOnOrderPaid, emailBookingQrOnConfirm } from './emails/ticketEmails';
 export { sendParticipantListsDue, sendParticipantsList } from './emails/participantsList';
+
+// Copyright notice-and-takedown (DMCA §512 / DSA art. 16-20 / Lei 9.610):
+// notices (app callable + public web form with email confirmation),
+// counter-notices, admin queue, strikes, automatic restoration.
+export {
+  submitCopyrightNotice,
+  submitCopyrightCounterNotice,
+  copyrightNoticeWeb,
+  adminListCopyrightNotices,
+  adminGetCopyrightNotice,
+  adminDecideCopyrightNotice,
+  adminMarkCopyrightLawsuit,
+  adminGetCopyrightStrikes,
+  processCopyrightNotices,
+} from './copyright';

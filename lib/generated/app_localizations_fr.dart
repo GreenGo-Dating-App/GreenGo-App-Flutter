@@ -23387,4 +23387,604 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get authErrorNicknameSignInFailed =>
       'Impossible de te connecter avec ton pseudo pour le moment. Connecte-toi avec ton adresse e-mail.';
+
+  @override
+  String get blindDateActivate => 'Activer le mode Rendez-vous à l\'aveugle';
+
+  @override
+  String get blindDateDeactivate => 'Désactiver';
+
+  @override
+  String get blindDateDeactivateMessage =>
+      'Vous retournerez au mode découverte normal.';
+
+  @override
+  String get blindDateDeactivateTitle =>
+      'Désactiver le mode Rendez-vous à l\'aveugle ?';
+
+  @override
+  String get blindDateDeactivateTooltip =>
+      'Désactiver le mode Rendez-vous à l\'aveugle';
+
+  @override
+  String blindDateFeatureInstantReveal(int cost) {
+    return 'Révélation instantanée pour $cost pièces';
+  }
+
+  @override
+  String get blindDateFeatureNoPhotos =>
+      'Aucune photo de profil visible au départ';
+
+  @override
+  String get blindDateFeaturePersonality =>
+      'Focus sur la personnalité et les centres d\'intérêt';
+
+  @override
+  String get blindDateFeatureUnlock => 'Les photos se débloquent en discutant';
+
+  @override
+  String get blindDateGetCoins => 'Obtenir des pièces';
+
+  @override
+  String get blindDateInstantReveal => 'Révélation instantanée';
+
+  @override
+  String blindDateInstantRevealMessage(int cost) {
+    return 'Révéler toutes les photos de ce match pour $cost pièces ?';
+  }
+
+  @override
+  String blindDateInstantRevealTooltip(int cost) {
+    return 'Révélation instantanée ($cost pièces)';
+  }
+
+  @override
+  String get blindDateInsufficientCoins => 'Pièces insuffisantes';
+
+  @override
+  String blindDateInsufficientCoinsMessage(int cost) {
+    return 'Vous avez besoin de $cost pièces pour révéler les photos instantanément.';
+  }
+
+  @override
+  String get blindDateInterests => 'Centres d\'intérêt';
+
+  @override
+  String blindDateKmAway(String distance) {
+    return 'à $distance km';
+  }
+
+  @override
+  String get blindDateLetsExchange => 'Commencez à connecter !';
+
+  @override
+  String get blindDateMatchMessage =>
+      'Vous vous plaisez mutuellement ! Commencez à discuter pour révéler vos photos.';
+
+  @override
+  String blindDateMessageProgress(int current, int total) {
+    return '$current / $total messages';
+  }
+
+  @override
+  String blindDateMessagesToGo(int count) {
+    return 'encore $count';
+  }
+
+  @override
+  String blindDateMessagesUntilReveal(int count) {
+    return '$count messages avant la révélation';
+  }
+
+  @override
+  String get blindDateModeActivated => 'Mode Rendez-vous à l\'aveugle activé !';
+
+  @override
+  String blindDateModeDescription(int threshold) {
+    return 'Matchez selon la personnalité, pas le physique.\nLes photos se révèlent après $threshold messages.';
+  }
+
+  @override
+  String get blindDateModeTitle => 'Mode Rendez-vous à l\'aveugle';
+
+  @override
+  String get blindDateMysteryPerson => 'Personne mystère';
+
+  @override
+  String get blindDateNoCandidates => 'Aucun candidat disponible';
+
+  @override
+  String get blindDateNoMatches => 'Pas encore de matchs';
+
+  @override
+  String blindDatePendingReveal(int count) {
+    return 'Révélation en attente ($count)';
+  }
+
+  @override
+  String get blindDatePhotoRevealProgress => 'Progression de la Révélation';
+
+  @override
+  String blindDatePhotosRevealHint(int threshold) {
+    return 'Les photos se révèlent après $threshold messages';
+  }
+
+  @override
+  String blindDatePhotosRevealed(int coinsSpent) {
+    return 'Photos révélées ! $coinsSpent pièces dépensées.';
+  }
+
+  @override
+  String get blindDatePhotosRevealedLabel => 'Photos révélées !';
+
+  @override
+  String get blindDateReveal => 'Révéler';
+
+  @override
+  String blindDateRevealed(int count) {
+    return 'Révélé ($count)';
+  }
+
+  @override
+  String get blindDateRevealedMatch => 'Match Révélé';
+
+  @override
+  String get blindDateStartSwiping =>
+      'Commencez à swiper pour trouver votre rendez-vous à l\'aveugle !';
+
+  @override
+  String get blindDateTabDiscover => 'Découvrir';
+
+  @override
+  String get blindDateTabMatches => 'Matchs';
+
+  @override
+  String get blindDateTitle => 'Rendez-vous à l\'aveugle';
+
+  @override
+  String get blindDateViewMatch => 'Voir le match';
+
+  @override
+  String get casualCategory => 'Décontracté';
+
+  @override
+  String get datePlanningCategory => 'Planifier un Rendez-vous';
+
+  @override
+  String get dateSchedulerAccept => 'Accepter';
+
+  @override
+  String get dateSchedulerCancelConfirm =>
+      'Êtes-vous sûr de vouloir annuler ce rendez-vous ?';
+
+  @override
+  String get dateSchedulerCancelTitle => 'Annuler le rendez-vous';
+
+  @override
+  String get dateSchedulerConfirmed => 'Rendez-vous confirmé !';
+
+  @override
+  String get dateSchedulerDecline => 'Refuser';
+
+  @override
+  String get dateSchedulerEnterTitle => 'Veuillez saisir un titre';
+
+  @override
+  String get dateSchedulerKeepDate => 'Garder le rendez-vous';
+
+  @override
+  String get dateSchedulerNotesLabel => 'Notes (optionnel)';
+
+  @override
+  String get dateSchedulerPlanningHint => 'ex. : Café, Dîner, Cinéma...';
+
+  @override
+  String get dateSchedulerReasonLabel => 'Raison (optionnel)';
+
+  @override
+  String get dateSchedulerReschedule => 'Reprogrammer';
+
+  @override
+  String get dateSchedulerRescheduleTitle => 'Reprogrammer le rendez-vous';
+
+  @override
+  String get dateSchedulerSchedule => 'Planifier';
+
+  @override
+  String get dateSchedulerScheduled => 'Rendez-vous planifié !';
+
+  @override
+  String get dateSchedulerTabPast => 'Passés';
+
+  @override
+  String get dateSchedulerTabPending => 'En attente';
+
+  @override
+  String get dateSchedulerTabUpcoming => 'À venir';
+
+  @override
+  String get dateSchedulerTitle => 'Mes rendez-vous';
+
+  @override
+  String get dateSchedulerWhatPlanning => 'Qu\'est-ce que vous prévoyez ?';
+
+  @override
+  String get flirtyCategory => 'Flirteur';
+
+  @override
+  String get icebreakersCategoryDateIdeas => 'Idées de rendez-vous';
+
+  @override
+  String get romanticCategory => 'Romantique';
+
+  @override
+  String get safetyCheckInDescription =>
+      'Programmez un check-in pour votre rendez-vous. Nous vous rappellerons de faire le check-in et alerterons vos contacts si vous ne répondez pas.';
+
+  @override
+  String get safetyCheckInScheduled => 'Check-in de rendez-vous programmé !';
+
+  @override
+  String get safetyDateCheckIn => 'Check-in de rendez-vous';
+
+  @override
+  String get copyrightHelpEntry => 'Droit d’auteur (DMCA)';
+
+  @override
+  String get copyrightHelpEntrySubtitle =>
+      'Signaler une violation, contre-notifications et notre politique';
+
+  @override
+  String get copyrightReportEntry => 'Signaler une violation du droit d’auteur';
+
+  @override
+  String get copyrightPolicyTitle => 'Politique relative au droit d’auteur';
+
+  @override
+  String get copyrightPolicyIntro =>
+      'GreenGo respecte la propriété intellectuelle. Nous traitons les notifications de violation présumée du droit d’auteur conformément au Digital Millennium Copyright Act américain (17 U.S.C. §512), au règlement européen sur les services numériques et à la loi brésilienne 9.610/1998, où que se trouvent le titulaire des droits ou l’utilisateur.';
+
+  @override
+  String get copyrightPolicyNoticeTitle => 'Signaler une violation';
+
+  @override
+  String get copyrightPolicyNoticeBody =>
+      'Envoyez une notification via notre formulaire ou par e-mail à notre agent désigné. Elle doit comporter :\n• votre signature physique ou électronique ;\n• l’identification de l’œuvre protégée ;\n• l’identification du contenu litigieux et son emplacement sur GreenGo (lien ou identifiant) ;\n• votre adresse, votre numéro de téléphone et votre e-mail ;\n• une déclaration indiquant que vous estimez de bonne foi que l’utilisation n’est autorisée ni par le titulaire, ni par son mandataire, ni par la loi ;\n• une déclaration indiquant que les informations sont exactes et, sous peine de parjure, que vous êtes le titulaire ou êtes autorisé à agir en son nom.\nLes notifications incomplètes peuvent ne pas être traitées.';
+
+  @override
+  String get copyrightPolicyCounterTitle => 'Contre-notifications';
+
+  @override
+  String get copyrightPolicyCounterBody =>
+      'Si votre contenu a été supprimé et que vous pensez qu’il s’agit d’une erreur ou d’une mauvaise identification, vous pouvez envoyer une contre-notification depuis l’app. Elle doit comporter votre signature, l’identification du contenu supprimé et son emplacement, une déclaration sous peine de parjure indiquant qu’il a été supprimé par erreur ou mauvaise identification, vos nom, adresse et numéro de téléphone, ainsi que votre acceptation de la compétence des tribunaux décrite dans le formulaire. Nous transmettons la contre-notification au plaignant et rétablissons le contenu sous 10 à 14 jours ouvrables, sauf si le plaignant nous informe qu’il a engagé une action en justice.';
+
+  @override
+  String get copyrightPolicyRepeatTitle => 'Récidivistes';
+
+  @override
+  String get copyrightPolicyRepeatBody =>
+      'Chaque notification valide ajoute un avertissement au compte qui a publié le contenu. Les avertissements expirent au bout de 12 mois. Un avertissement est retiré si le contenu est rétabli après une contre-notification. Les comptes ayant 3 avertissements actifs sont résiliés ; vous pouvez contester la résiliation depuis l’app.';
+
+  @override
+  String get copyrightPolicyMisrepTitle => 'Notifications abusives';
+
+  @override
+  String get copyrightPolicyMisrepBody =>
+      'En vertu de 17 U.S.C. §512(f), toute personne qui affirme sciemment et de manière substantiellement inexacte qu’un contenu est contrefaisant, ou qu’il a été supprimé par erreur, peut être tenue de verser des dommages-intérêts, frais et honoraires d’avocat compris. Les notifications ne servent pas à supprimer un contenu qui vous déplaît simplement.';
+
+  @override
+  String get copyrightPolicyJurisdictionTitle => 'Brésil, UE et autres pays';
+
+  @override
+  String get copyrightPolicyJurisdictionBody =>
+      'Nous traitons de la même manière les notifications de tous les pays. Les utilisateurs de l’Union européenne reçoivent un exposé des motifs pour chaque suppression et peuvent la contester en vertu du règlement sur les services numériques. Les titulaires de droits au Brésil conservent tous leurs droits en vertu de la loi 9.610/1998.';
+
+  @override
+  String get copyrightPolicyAgentTitle => 'Agent désigné';
+
+  @override
+  String copyrightPolicyAgentBody(String address) {
+    return 'Agent pour le droit d’auteur : Universo Kardasha Ltda.\nE-mail : copyright@greengochat.com\nAdresse postale : $address';
+  }
+
+  @override
+  String get copyrightPolicySubmitButton => 'Envoyer une notification';
+
+  @override
+  String get copyrightMyNoticesButton => 'Notifications concernant mon contenu';
+
+  @override
+  String get copyrightFormTitle => 'Signaler une violation du droit d’auteur';
+
+  @override
+  String get copyrightFormIntro =>
+      'Utilisez ce formulaire uniquement si vous êtes titulaire des droits ou autorisé à agir en son nom. Les champs marqués * sont exigés par la loi.';
+
+  @override
+  String get copyrightFormSectionYou => 'Vos coordonnées';
+
+  @override
+  String get copyrightFormName => 'Nom légal complet';
+
+  @override
+  String get copyrightFormOrganization => 'Société ou organisation';
+
+  @override
+  String get copyrightFormEmail => 'E-mail';
+
+  @override
+  String get copyrightFormPhone => 'Numéro de téléphone';
+
+  @override
+  String get copyrightFormAddress => 'Adresse postale';
+
+  @override
+  String get copyrightFormOptional => 'facultatif';
+
+  @override
+  String get copyrightFormRelationship => 'Je suis';
+
+  @override
+  String get copyrightFormRelOwner => 'Le titulaire des droits';
+
+  @override
+  String get copyrightFormRelAgent => 'Autorisé à agir au nom du titulaire';
+
+  @override
+  String get copyrightFormSectionWork => 'L’œuvre protégée';
+
+  @override
+  String get copyrightFormWorkDescription => 'Description de l’œuvre protégée';
+
+  @override
+  String get copyrightFormWorkUrl => 'Lien vers l’œuvre originale';
+
+  @override
+  String get copyrightFormSectionContent => 'Le contenu litigieux';
+
+  @override
+  String get copyrightFormContentLocation =>
+      'Lien ou identifiant du contenu sur GreenGo';
+
+  @override
+  String get copyrightFormContentDetails =>
+      'Où il apparaît (p. ex. quelle photo ou quel message)';
+
+  @override
+  String copyrightFormContentPrefilled(String label) {
+    return 'Élément signalé : $label';
+  }
+
+  @override
+  String get copyrightContentMessage => 'Message ou média du chat';
+
+  @override
+  String get copyrightContentEvent => 'Événement';
+
+  @override
+  String get copyrightContentExperience => 'Expérience';
+
+  @override
+  String get copyrightContentProfilePhoto => 'Photo de profil';
+
+  @override
+  String get copyrightFormSectionStatements => 'Déclarations sur l’honneur';
+
+  @override
+  String get copyrightFormGoodFaith =>
+      'J’estime de bonne foi que l’utilisation contestée du contenu n’est autorisée ni par le titulaire des droits, ni par son mandataire, ni par la loi.';
+
+  @override
+  String get copyrightFormAccuracy =>
+      'Les informations contenues dans cette notification sont exactes.';
+
+  @override
+  String get copyrightFormAuthority =>
+      'Sous peine de parjure, je suis le titulaire, ou suis autorisé à agir au nom du titulaire, d’un droit exclusif prétendument violé.';
+
+  @override
+  String get copyrightFormMisrepWarning =>
+      'Attention : en vertu de 17 U.S.C. §512(f), toute personne qui affirme sciemment et de manière substantiellement inexacte qu’un contenu est contrefaisant peut être tenue de verser des dommages-intérêts. Nous transmettons une copie de votre notification, y compris votre nom et votre e-mail, à l’utilisateur qui a publié le contenu.';
+
+  @override
+  String get copyrightFormSignature =>
+      'Signature électronique : saisissez votre nom légal complet';
+
+  @override
+  String get copyrightFormSubmit => 'Envoyer la notification';
+
+  @override
+  String get copyrightFormRequired => 'Obligatoire';
+
+  @override
+  String get copyrightFormInvalidEmail => 'Saisissez une adresse e-mail valide';
+
+  @override
+  String get copyrightFormStatementsRequired =>
+      'Confirmez chaque déclaration pour continuer';
+
+  @override
+  String get copyrightFormSignatureMismatch =>
+      'La signature doit correspondre à votre nom légal complet';
+
+  @override
+  String get copyrightFormSubmitted =>
+      'Notification reçue. Nous allons l’examiner et répondrons à l’adresse e-mail indiquée.';
+
+  @override
+  String get copyrightFormError =>
+      'Envoi impossible. Veuillez réessayer plus tard.';
+
+  @override
+  String get copyrightFormRateLimited =>
+      'Trop d’envois. Veuillez réessayer plus tard.';
+
+  @override
+  String get copyrightMyNoticesTitle => 'Notifications de droit d’auteur';
+
+  @override
+  String get copyrightMyNoticesEmpty =>
+      'Aucune notification de droit d’auteur ne concerne votre contenu.';
+
+  @override
+  String copyrightActiveStrikes(int count) {
+    return 'Avertissements actifs pour droit d’auteur : $count sur 3';
+  }
+
+  @override
+  String get copyrightStatusAccepted => 'Contenu supprimé';
+
+  @override
+  String get copyrightStatusCounterNoticed => 'Contre-notification envoyée';
+
+  @override
+  String get copyrightStatusRestored => 'Contenu rétabli';
+
+  @override
+  String get copyrightStatusLawsuit =>
+      'Action en justice engagée : le contenu reste supprimé';
+
+  @override
+  String copyrightNoticeFrom(String name, String email) {
+    return 'Plaignant : $name ($email)';
+  }
+
+  @override
+  String copyrightRestoreOn(String date) {
+    return 'Votre contenu sera rétabli à partir du $date, sauf si le plaignant engage une action en justice.';
+  }
+
+  @override
+  String get copyrightCounterButton => 'Envoyer une contre-notification';
+
+  @override
+  String get copyrightAppealButton => 'Contester la décision';
+
+  @override
+  String get copyrightCounterTitle => 'Contre-notification';
+
+  @override
+  String get copyrightCounterIntro =>
+      'Si vous pensez que le contenu a été supprimé par erreur ou mauvaise identification, vous pouvez envoyer une contre-notification. Nous la transmettons au plaignant avec vos nom, adresse, numéro de téléphone et e-mail.';
+
+  @override
+  String get copyrightCounterExplanation =>
+      'Pourquoi la suppression est une erreur ou une mauvaise identification';
+
+  @override
+  String get copyrightCounterPerjury =>
+      'Sous peine de parjure, j’estime de bonne foi que le contenu a été supprimé ou bloqué à la suite d’une erreur ou d’une mauvaise identification du contenu à supprimer ou à bloquer.';
+
+  @override
+  String get copyrightCounterJurisdiction =>
+      'J’accepte la compétence du tribunal fédéral de district des États-Unis du ressort de mon adresse (ou, si mon adresse est hors des États-Unis, de tout ressort où GreenGo peut être trouvé) et j’accepterai la signification des actes de procédure de la personne ayant envoyé la notification ou de son mandataire.';
+
+  @override
+  String get copyrightCounterSubmit => 'Envoyer la contre-notification';
+
+  @override
+  String get copyrightCounterSent =>
+      'Contre-notification envoyée. Sauf si le plaignant nous informe d’une action en justice, votre contenu sera rétabli sous 10 à 14 jours ouvrables.';
+
+  @override
+  String get srvCopyrightRemovedTitle =>
+      'Contenu supprimé après une notification de droit d’auteur';
+
+  @override
+  String get srvCopyrightRemovedBody =>
+      'Touchez pour voir la notification et vos options.';
+
+  @override
+  String get srvCopyrightRestoredTitle => 'Votre contenu a été rétabli';
+
+  @override
+  String get srvCopyrightRestoredBody =>
+      'Le contenu supprimé après une notification de droit d’auteur est de nouveau visible.';
+
+  @override
+  String get emailCopyrightRemovedSubject =>
+      'Notification de droit d’auteur : contenu supprimé';
+
+  @override
+  String get emailCopyrightRemovedIntro =>
+      'Nous avons reçu une notification de droit d’auteur concernant un contenu que vous avez publié sur GreenGo et en avons bloqué l’accès. Une copie de la notification figure ci-dessous.';
+
+  @override
+  String emailCopyrightStrikeInfo(int count) {
+    return 'Ceci compte comme un avertissement pour droit d’auteur. Avertissements actifs : $count sur 3. Ils expirent au bout de 12 mois ; les comptes ayant 3 avertissements actifs sont résiliés.';
+  }
+
+  @override
+  String get emailCopyrightCounterInfo =>
+      'Si vous pensez qu’il s’agit d’une erreur ou d’une mauvaise identification, vous pouvez envoyer une contre-notification dans l’app : Profil > Aide et assistance > Droit d’auteur (DMCA). Vous pouvez aussi y contester la décision.';
+
+  @override
+  String get emailCopyrightNoticeCopy => 'Copie de la notification';
+
+  @override
+  String get emailCopyrightRefLabel => 'Référence';
+
+  @override
+  String get emailCopyrightDateLabel => 'Date';
+
+  @override
+  String get emailCopyrightConfirmSubject =>
+      'Confirmez votre notification de droit d’auteur';
+
+  @override
+  String get emailCopyrightConfirmIntro =>
+      'Veuillez confirmer votre notification en ouvrant ce lien dans les 48 heures. Les notifications non confirmées ne sont pas traitées.';
+
+  @override
+  String get emailCopyrightConfirmButton => 'Confirmer la notification';
+
+  @override
+  String get emailCopyrightAcceptedSubject =>
+      'Votre notification de droit d’auteur a été acceptée';
+
+  @override
+  String emailCopyrightAcceptedBody(String ref) {
+    return 'Nous avons bloqué l’accès au contenu identifié dans votre notification $ref.';
+  }
+
+  @override
+  String get emailCopyrightRejectedSubject =>
+      'Votre notification de droit d’auteur n’a pas pu être traitée';
+
+  @override
+  String emailCopyrightRejectedBody(String ref, String reason) {
+    return 'Nous n’avons pas pu donner suite à votre notification $ref. Motif : $reason';
+  }
+
+  @override
+  String get emailCopyrightCounterSubject => 'Contre-notification reçue';
+
+  @override
+  String emailCopyrightCounterBody(String ref, String date, String agentEmail) {
+    return 'L’utilisateur qui a publié le contenu a envoyé la contre-notification ci-dessous concernant votre notification $ref. Nous rétablirons le contenu à partir du $date, sauf si vous nous informez avant cette date, à $agentEmail, que vous avez engagé une action en justice pour faire cesser la violation.';
+  }
+
+  @override
+  String get emailCopyrightRestoredSubject => 'Contenu rétabli';
+
+  @override
+  String emailCopyrightRestoredBody(String ref) {
+    return 'Le contenu visé par la notification $ref a été rétabli après une contre-notification.';
+  }
+
+  @override
+  String get copyrightWebCheckEmail =>
+      'Presque terminé : nous vous avons envoyé un lien de confirmation par e-mail. Votre notification sera traitée après confirmation.';
+
+  @override
+  String get copyrightWebConfirmed =>
+      'Merci. Votre notification est confirmée et sera examinée.';
+
+  @override
+  String get copyrightWebInvalidLink =>
+      'Ce lien de confirmation est invalide ou a expiré.';
+
+  @override
+  String get copyrightWebInvalid =>
+      'Certaines informations obligatoires sont manquantes ou invalides. Revenez en arrière et vérifiez le formulaire.';
 }

@@ -39698,6 +39698,1014 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'We couldn\'t sign you in with your nickname right now. Please sign in with your email address.'**
   String get authErrorNicknameSignInFailed;
+
+  /// No description provided for @blindDateActivate.
+  ///
+  /// In en, this message translates to:
+  /// **'Activate Blind Date Mode'**
+  String get blindDateActivate;
+
+  /// No description provided for @blindDateDeactivate.
+  ///
+  /// In en, this message translates to:
+  /// **'Deactivate'**
+  String get blindDateDeactivate;
+
+  /// No description provided for @blindDateDeactivateMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ll return to normal discovery mode.'**
+  String get blindDateDeactivateMessage;
+
+  /// No description provided for @blindDateDeactivateTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Deactivate Blind Date Mode?'**
+  String get blindDateDeactivateTitle;
+
+  /// No description provided for @blindDateDeactivateTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Deactivate Blind Date Mode'**
+  String get blindDateDeactivateTooltip;
+
+  /// No description provided for @blindDateFeatureInstantReveal.
+  ///
+  /// In en, this message translates to:
+  /// **'Instant reveal for {cost} coins'**
+  String blindDateFeatureInstantReveal(int cost);
+
+  /// No description provided for @blindDateFeatureNoPhotos.
+  ///
+  /// In en, this message translates to:
+  /// **'No profile photos visible initially'**
+  String get blindDateFeatureNoPhotos;
+
+  /// No description provided for @blindDateFeaturePersonality.
+  ///
+  /// In en, this message translates to:
+  /// **'Focus on personality & interests'**
+  String get blindDateFeaturePersonality;
+
+  /// No description provided for @blindDateFeatureUnlock.
+  ///
+  /// In en, this message translates to:
+  /// **'Photos unlock after chatting'**
+  String get blindDateFeatureUnlock;
+
+  /// No description provided for @blindDateGetCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Get Coins'**
+  String get blindDateGetCoins;
+
+  /// No description provided for @blindDateInstantReveal.
+  ///
+  /// In en, this message translates to:
+  /// **'Instant Reveal'**
+  String get blindDateInstantReveal;
+
+  /// No description provided for @blindDateInstantRevealMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Reveal all photos of this match for {cost} coins?'**
+  String blindDateInstantRevealMessage(int cost);
+
+  /// No description provided for @blindDateInstantRevealTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Instant reveal ({cost} coins)'**
+  String blindDateInstantRevealTooltip(int cost);
+
+  /// No description provided for @blindDateInsufficientCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Insufficient Coins'**
+  String get blindDateInsufficientCoins;
+
+  /// No description provided for @blindDateInsufficientCoinsMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'You need {cost} coins to instantly reveal photos.'**
+  String blindDateInsufficientCoinsMessage(int cost);
+
+  /// No description provided for @blindDateInterests.
+  ///
+  /// In en, this message translates to:
+  /// **'Interests'**
+  String get blindDateInterests;
+
+  /// No description provided for @blindDateKmAway.
+  ///
+  /// In en, this message translates to:
+  /// **'{distance} km away'**
+  String blindDateKmAway(String distance);
+
+  /// No description provided for @blindDateLetsExchange.
+  ///
+  /// In en, this message translates to:
+  /// **'Start Connecting!'**
+  String get blindDateLetsExchange;
+
+  /// No description provided for @blindDateMatchMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'You both liked each other! Start chatting to reveal your photos.'**
+  String get blindDateMatchMessage;
+
+  /// No description provided for @blindDateMessageProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'{current} / {total} messages'**
+  String blindDateMessageProgress(int current, int total);
+
+  /// No description provided for @blindDateMessagesToGo.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} to go'**
+  String blindDateMessagesToGo(int count);
+
+  /// No description provided for @blindDateMessagesUntilReveal.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} messages until reveal'**
+  String blindDateMessagesUntilReveal(int count);
+
+  /// No description provided for @blindDateModeActivated.
+  ///
+  /// In en, this message translates to:
+  /// **'Blind Date mode activated!'**
+  String get blindDateModeActivated;
+
+  /// No description provided for @blindDateModeDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Match based on personality, not looks.\nPhotos reveal after {threshold} messages.'**
+  String blindDateModeDescription(int threshold);
+
+  /// No description provided for @blindDateModeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Blind Date Mode'**
+  String get blindDateModeTitle;
+
+  /// No description provided for @blindDateMysteryPerson.
+  ///
+  /// In en, this message translates to:
+  /// **'Mystery Person'**
+  String get blindDateMysteryPerson;
+
+  /// No description provided for @blindDateNoCandidates.
+  ///
+  /// In en, this message translates to:
+  /// **'No candidates available'**
+  String get blindDateNoCandidates;
+
+  /// No description provided for @blindDateNoMatches.
+  ///
+  /// In en, this message translates to:
+  /// **'No matches yet'**
+  String get blindDateNoMatches;
+
+  /// No description provided for @blindDatePendingReveal.
+  ///
+  /// In en, this message translates to:
+  /// **'Pending Reveal ({count})'**
+  String blindDatePendingReveal(int count);
+
+  /// No description provided for @blindDatePhotoRevealProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo Reveal Progress'**
+  String get blindDatePhotoRevealProgress;
+
+  /// No description provided for @blindDatePhotosRevealHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Photos reveal after {threshold} messages'**
+  String blindDatePhotosRevealHint(int threshold);
+
+  /// No description provided for @blindDatePhotosRevealed.
+  ///
+  /// In en, this message translates to:
+  /// **'Photos revealed! {coinsSpent} coins spent.'**
+  String blindDatePhotosRevealed(int coinsSpent);
+
+  /// No description provided for @blindDatePhotosRevealedLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Photos revealed!'**
+  String get blindDatePhotosRevealedLabel;
+
+  /// No description provided for @blindDateReveal.
+  ///
+  /// In en, this message translates to:
+  /// **'Reveal'**
+  String get blindDateReveal;
+
+  /// No description provided for @blindDateRevealed.
+  ///
+  /// In en, this message translates to:
+  /// **'Revealed ({count})'**
+  String blindDateRevealed(int count);
+
+  /// No description provided for @blindDateRevealedMatch.
+  ///
+  /// In en, this message translates to:
+  /// **'Revealed Match'**
+  String get blindDateRevealedMatch;
+
+  /// No description provided for @blindDateStartSwiping.
+  ///
+  /// In en, this message translates to:
+  /// **'Start swiping to find your blind date!'**
+  String get blindDateStartSwiping;
+
+  /// No description provided for @blindDateTabDiscover.
+  ///
+  /// In en, this message translates to:
+  /// **'Discover'**
+  String get blindDateTabDiscover;
+
+  /// No description provided for @blindDateTabMatches.
+  ///
+  /// In en, this message translates to:
+  /// **'Matches'**
+  String get blindDateTabMatches;
+
+  /// No description provided for @blindDateTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Blind Date'**
+  String get blindDateTitle;
+
+  /// No description provided for @blindDateViewMatch.
+  ///
+  /// In en, this message translates to:
+  /// **'View Match'**
+  String get blindDateViewMatch;
+
+  /// No description provided for @casualCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Casual'**
+  String get casualCategory;
+
+  /// No description provided for @datePlanningCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Date Planning'**
+  String get datePlanningCategory;
+
+  /// No description provided for @dateSchedulerAccept.
+  ///
+  /// In en, this message translates to:
+  /// **'Accept'**
+  String get dateSchedulerAccept;
+
+  /// No description provided for @dateSchedulerCancelConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to cancel this date?'**
+  String get dateSchedulerCancelConfirm;
+
+  /// No description provided for @dateSchedulerCancelTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel Date'**
+  String get dateSchedulerCancelTitle;
+
+  /// No description provided for @dateSchedulerConfirmed.
+  ///
+  /// In en, this message translates to:
+  /// **'Date confirmed!'**
+  String get dateSchedulerConfirmed;
+
+  /// No description provided for @dateSchedulerDecline.
+  ///
+  /// In en, this message translates to:
+  /// **'Decline'**
+  String get dateSchedulerDecline;
+
+  /// No description provided for @dateSchedulerEnterTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a title'**
+  String get dateSchedulerEnterTitle;
+
+  /// No description provided for @dateSchedulerKeepDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep Date'**
+  String get dateSchedulerKeepDate;
+
+  /// No description provided for @dateSchedulerNotesLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Notes (optional)'**
+  String get dateSchedulerNotesLabel;
+
+  /// No description provided for @dateSchedulerPlanningHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g., Coffee, Dinner, Movie...'**
+  String get dateSchedulerPlanningHint;
+
+  /// No description provided for @dateSchedulerReasonLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Reason (optional)'**
+  String get dateSchedulerReasonLabel;
+
+  /// No description provided for @dateSchedulerReschedule.
+  ///
+  /// In en, this message translates to:
+  /// **'Reschedule'**
+  String get dateSchedulerReschedule;
+
+  /// No description provided for @dateSchedulerRescheduleTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reschedule Date'**
+  String get dateSchedulerRescheduleTitle;
+
+  /// No description provided for @dateSchedulerSchedule.
+  ///
+  /// In en, this message translates to:
+  /// **'Schedule'**
+  String get dateSchedulerSchedule;
+
+  /// No description provided for @dateSchedulerScheduled.
+  ///
+  /// In en, this message translates to:
+  /// **'Date scheduled!'**
+  String get dateSchedulerScheduled;
+
+  /// No description provided for @dateSchedulerTabPast.
+  ///
+  /// In en, this message translates to:
+  /// **'Past'**
+  String get dateSchedulerTabPast;
+
+  /// No description provided for @dateSchedulerTabPending.
+  ///
+  /// In en, this message translates to:
+  /// **'Pending'**
+  String get dateSchedulerTabPending;
+
+  /// No description provided for @dateSchedulerTabUpcoming.
+  ///
+  /// In en, this message translates to:
+  /// **'Upcoming'**
+  String get dateSchedulerTabUpcoming;
+
+  /// No description provided for @dateSchedulerTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'My Dates'**
+  String get dateSchedulerTitle;
+
+  /// No description provided for @dateSchedulerWhatPlanning.
+  ///
+  /// In en, this message translates to:
+  /// **'What are you planning?'**
+  String get dateSchedulerWhatPlanning;
+
+  /// No description provided for @flirtyCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Flirty'**
+  String get flirtyCategory;
+
+  /// No description provided for @icebreakersCategoryDateIdeas.
+  ///
+  /// In en, this message translates to:
+  /// **'Date Ideas'**
+  String get icebreakersCategoryDateIdeas;
+
+  /// No description provided for @romanticCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Romantic'**
+  String get romanticCategory;
+
+  /// No description provided for @safetyCheckInDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Set up a check-in for your date. We\'ll remind you to check in, and alert your contacts if you don\'t respond.'**
+  String get safetyCheckInDescription;
+
+  /// No description provided for @safetyCheckInScheduled.
+  ///
+  /// In en, this message translates to:
+  /// **'Date check-in scheduled!'**
+  String get safetyCheckInScheduled;
+
+  /// No description provided for @safetyDateCheckIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Date Check-In'**
+  String get safetyDateCheckIn;
+
+  /// No description provided for @copyrightHelpEntry.
+  ///
+  /// In en, this message translates to:
+  /// **'Copyright (DMCA)'**
+  String get copyrightHelpEntry;
+
+  /// No description provided for @copyrightHelpEntrySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Report infringement, counter-notices and our policy'**
+  String get copyrightHelpEntrySubtitle;
+
+  /// No description provided for @copyrightReportEntry.
+  ///
+  /// In en, this message translates to:
+  /// **'Report copyright infringement'**
+  String get copyrightReportEntry;
+
+  /// No description provided for @copyrightPolicyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Copyright policy'**
+  String get copyrightPolicyTitle;
+
+  /// No description provided for @copyrightPolicyIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo respects intellectual property. We respond to notices of alleged copyright infringement under the U.S. Digital Millennium Copyright Act (17 U.S.C. §512), the EU Digital Services Act and Brazilian Law 9.610/1998, wherever the rights holder or the user is located.'**
+  String get copyrightPolicyIntro;
+
+  /// No description provided for @copyrightPolicyNoticeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reporting infringement'**
+  String get copyrightPolicyNoticeTitle;
+
+  /// No description provided for @copyrightPolicyNoticeBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a notice with our form or by email to our designated agent. It must include:\n• your physical or electronic signature;\n• identification of the copyrighted work;\n• identification of the infringing material and where it is on GreenGo (a link or ID);\n• your address, phone number and email;\n• a statement that you have a good faith belief the use is not authorized by the owner, its agent or the law;\n• a statement that the information is accurate and, under penalty of perjury, that you are the owner or authorized to act for the owner.\nIncomplete notices may not be processed.'**
+  String get copyrightPolicyNoticeBody;
+
+  /// No description provided for @copyrightPolicyCounterTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Counter-notices'**
+  String get copyrightPolicyCounterTitle;
+
+  /// No description provided for @copyrightPolicyCounterBody.
+  ///
+  /// In en, this message translates to:
+  /// **'If your content was removed and you believe it was a mistake or misidentification, you can send a counter-notice from the app. It must include your signature, identification of the removed material and where it appeared, a statement under penalty of perjury that it was removed by mistake or misidentification, your name, address and phone number, and your consent to the jurisdiction of the courts described in the form. We forward the counter-notice to the complainant and restore the material in 10 to 14 business days unless the complainant tells us they have filed a court action.'**
+  String get copyrightPolicyCounterBody;
+
+  /// No description provided for @copyrightPolicyRepeatTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Repeat infringers'**
+  String get copyrightPolicyRepeatTitle;
+
+  /// No description provided for @copyrightPolicyRepeatBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Each valid notice adds a strike to the account that posted the material. Strikes expire after 12 months. A strike is removed if the material is restored after a counter-notice. Accounts with 3 active strikes are terminated; you can appeal the termination from the app.'**
+  String get copyrightPolicyRepeatBody;
+
+  /// No description provided for @copyrightPolicyMisrepTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'False notices'**
+  String get copyrightPolicyMisrepTitle;
+
+  /// No description provided for @copyrightPolicyMisrepBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Under 17 U.S.C. §512(f), anyone who knowingly materially misrepresents that material is infringing, or that it was removed by mistake, may be liable for damages, including costs and attorneys’ fees. Notices are not a tool for removing content you simply dislike.'**
+  String get copyrightPolicyMisrepBody;
+
+  /// No description provided for @copyrightPolicyJurisdictionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Brazil, the EU and other countries'**
+  String get copyrightPolicyJurisdictionTitle;
+
+  /// No description provided for @copyrightPolicyJurisdictionBody.
+  ///
+  /// In en, this message translates to:
+  /// **'We handle notices from every country the same way. Users in the European Union receive a statement of reasons for every removal and can appeal it under the Digital Services Act. Rights holders in Brazil keep all their rights under Law 9.610/1998.'**
+  String get copyrightPolicyJurisdictionBody;
+
+  /// No description provided for @copyrightPolicyAgentTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Designated agent'**
+  String get copyrightPolicyAgentTitle;
+
+  /// No description provided for @copyrightPolicyAgentBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Copyright agent: Universo Kardasha Ltda.\nEmail: copyright@greengochat.com\nPostal address: {address}'**
+  String copyrightPolicyAgentBody(String address);
+
+  /// No description provided for @copyrightPolicySubmitButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit a copyright notice'**
+  String get copyrightPolicySubmitButton;
+
+  /// No description provided for @copyrightMyNoticesButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Notices about my content'**
+  String get copyrightMyNoticesButton;
+
+  /// No description provided for @copyrightFormTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Report copyright infringement'**
+  String get copyrightFormTitle;
+
+  /// No description provided for @copyrightFormIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Use this form only if you own the copyright or are authorized to act for the owner. Fields marked * are required by law.'**
+  String get copyrightFormIntro;
+
+  /// No description provided for @copyrightFormSectionYou.
+  ///
+  /// In en, this message translates to:
+  /// **'Your details'**
+  String get copyrightFormSectionYou;
+
+  /// No description provided for @copyrightFormName.
+  ///
+  /// In en, this message translates to:
+  /// **'Full legal name'**
+  String get copyrightFormName;
+
+  /// No description provided for @copyrightFormOrganization.
+  ///
+  /// In en, this message translates to:
+  /// **'Company or organization'**
+  String get copyrightFormOrganization;
+
+  /// No description provided for @copyrightFormEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get copyrightFormEmail;
+
+  /// No description provided for @copyrightFormPhone.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone number'**
+  String get copyrightFormPhone;
+
+  /// No description provided for @copyrightFormAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'Postal address'**
+  String get copyrightFormAddress;
+
+  /// No description provided for @copyrightFormOptional.
+  ///
+  /// In en, this message translates to:
+  /// **'optional'**
+  String get copyrightFormOptional;
+
+  /// No description provided for @copyrightFormRelationship.
+  ///
+  /// In en, this message translates to:
+  /// **'I am'**
+  String get copyrightFormRelationship;
+
+  /// No description provided for @copyrightFormRelOwner.
+  ///
+  /// In en, this message translates to:
+  /// **'The copyright owner'**
+  String get copyrightFormRelOwner;
+
+  /// No description provided for @copyrightFormRelAgent.
+  ///
+  /// In en, this message translates to:
+  /// **'Authorized to act for the owner'**
+  String get copyrightFormRelAgent;
+
+  /// No description provided for @copyrightFormSectionWork.
+  ///
+  /// In en, this message translates to:
+  /// **'The copyrighted work'**
+  String get copyrightFormSectionWork;
+
+  /// No description provided for @copyrightFormWorkDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Description of the copyrighted work'**
+  String get copyrightFormWorkDescription;
+
+  /// No description provided for @copyrightFormWorkUrl.
+  ///
+  /// In en, this message translates to:
+  /// **'Link to the original work'**
+  String get copyrightFormWorkUrl;
+
+  /// No description provided for @copyrightFormSectionContent.
+  ///
+  /// In en, this message translates to:
+  /// **'The infringing material'**
+  String get copyrightFormSectionContent;
+
+  /// No description provided for @copyrightFormContentLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Link or ID of the material on GreenGo'**
+  String get copyrightFormContentLocation;
+
+  /// No description provided for @copyrightFormContentDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Where it appears (e.g. which photo or message)'**
+  String get copyrightFormContentDetails;
+
+  /// No description provided for @copyrightFormContentPrefilled.
+  ///
+  /// In en, this message translates to:
+  /// **'Reported item: {label}'**
+  String copyrightFormContentPrefilled(String label);
+
+  /// No description provided for @copyrightContentMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat message or media'**
+  String get copyrightContentMessage;
+
+  /// No description provided for @copyrightContentEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'Event'**
+  String get copyrightContentEvent;
+
+  /// No description provided for @copyrightContentExperience.
+  ///
+  /// In en, this message translates to:
+  /// **'Experience'**
+  String get copyrightContentExperience;
+
+  /// No description provided for @copyrightContentProfilePhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile photo'**
+  String get copyrightContentProfilePhoto;
+
+  /// No description provided for @copyrightFormSectionStatements.
+  ///
+  /// In en, this message translates to:
+  /// **'Sworn statements'**
+  String get copyrightFormSectionStatements;
+
+  /// No description provided for @copyrightFormGoodFaith.
+  ///
+  /// In en, this message translates to:
+  /// **'I have a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law.'**
+  String get copyrightFormGoodFaith;
+
+  /// No description provided for @copyrightFormAccuracy.
+  ///
+  /// In en, this message translates to:
+  /// **'The information in this notice is accurate.'**
+  String get copyrightFormAccuracy;
+
+  /// No description provided for @copyrightFormAuthority.
+  ///
+  /// In en, this message translates to:
+  /// **'Under penalty of perjury, I am the owner, or authorized to act on behalf of the owner, of an exclusive right that is allegedly infringed.'**
+  String get copyrightFormAuthority;
+
+  /// No description provided for @copyrightFormMisrepWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'Warning: under 17 U.S.C. §512(f), anyone who knowingly materially misrepresents that material is infringing may be liable for damages. We forward a copy of your notice, including your name and email, to the user who posted the material.'**
+  String get copyrightFormMisrepWarning;
+
+  /// No description provided for @copyrightFormSignature.
+  ///
+  /// In en, this message translates to:
+  /// **'Electronic signature: type your full legal name'**
+  String get copyrightFormSignature;
+
+  /// No description provided for @copyrightFormSubmit.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit notice'**
+  String get copyrightFormSubmit;
+
+  /// No description provided for @copyrightFormRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Required'**
+  String get copyrightFormRequired;
+
+  /// No description provided for @copyrightFormInvalidEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a valid email address'**
+  String get copyrightFormInvalidEmail;
+
+  /// No description provided for @copyrightFormStatementsRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm every statement to continue'**
+  String get copyrightFormStatementsRequired;
+
+  /// No description provided for @copyrightFormSignatureMismatch.
+  ///
+  /// In en, this message translates to:
+  /// **'The signature must match your full legal name'**
+  String get copyrightFormSignatureMismatch;
+
+  /// No description provided for @copyrightFormSubmitted.
+  ///
+  /// In en, this message translates to:
+  /// **'Notice received. We will review it and reply to the email you provided.'**
+  String get copyrightFormSubmitted;
+
+  /// No description provided for @copyrightFormError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn’t submit. Please try again later.'**
+  String get copyrightFormError;
+
+  /// No description provided for @copyrightFormRateLimited.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many submissions. Please try again later.'**
+  String get copyrightFormRateLimited;
+
+  /// No description provided for @copyrightMyNoticesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Copyright notices'**
+  String get copyrightMyNoticesTitle;
+
+  /// No description provided for @copyrightMyNoticesEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'There are no copyright notices about your content.'**
+  String get copyrightMyNoticesEmpty;
+
+  /// No description provided for @copyrightActiveStrikes.
+  ///
+  /// In en, this message translates to:
+  /// **'Active copyright strikes: {count} of 3'**
+  String copyrightActiveStrikes(int count);
+
+  /// No description provided for @copyrightStatusAccepted.
+  ///
+  /// In en, this message translates to:
+  /// **'Content removed'**
+  String get copyrightStatusAccepted;
+
+  /// No description provided for @copyrightStatusCounterNoticed.
+  ///
+  /// In en, this message translates to:
+  /// **'Counter-notice sent'**
+  String get copyrightStatusCounterNoticed;
+
+  /// No description provided for @copyrightStatusRestored.
+  ///
+  /// In en, this message translates to:
+  /// **'Content restored'**
+  String get copyrightStatusRestored;
+
+  /// No description provided for @copyrightStatusLawsuit.
+  ///
+  /// In en, this message translates to:
+  /// **'Court action filed: content stays removed'**
+  String get copyrightStatusLawsuit;
+
+  /// No description provided for @copyrightNoticeFrom.
+  ///
+  /// In en, this message translates to:
+  /// **'Complainant: {name} ({email})'**
+  String copyrightNoticeFrom(String name, String email);
+
+  /// No description provided for @copyrightRestoreOn.
+  ///
+  /// In en, this message translates to:
+  /// **'Your content will be restored on or after {date} unless the complainant files a court action.'**
+  String copyrightRestoreOn(String date);
+
+  /// No description provided for @copyrightCounterButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Send counter-notice'**
+  String get copyrightCounterButton;
+
+  /// No description provided for @copyrightAppealButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Appeal the decision'**
+  String get copyrightAppealButton;
+
+  /// No description provided for @copyrightCounterTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Counter-notice'**
+  String get copyrightCounterTitle;
+
+  /// No description provided for @copyrightCounterIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'If you believe the material was removed by mistake or misidentification, you can send a counter-notice. We forward it, including your name, address, phone number and email, to the complainant.'**
+  String get copyrightCounterIntro;
+
+  /// No description provided for @copyrightCounterExplanation.
+  ///
+  /// In en, this message translates to:
+  /// **'Why the removal was a mistake or misidentification'**
+  String get copyrightCounterExplanation;
+
+  /// No description provided for @copyrightCounterPerjury.
+  ///
+  /// In en, this message translates to:
+  /// **'Under penalty of perjury, I have a good faith belief that the material was removed or disabled as a result of mistake or misidentification of the material to be removed or disabled.'**
+  String get copyrightCounterPerjury;
+
+  /// No description provided for @copyrightCounterJurisdiction.
+  ///
+  /// In en, this message translates to:
+  /// **'I consent to the jurisdiction of the U.S. Federal District Court for the judicial district of my address (or, if my address is outside the United States, any judicial district in which GreenGo may be found), and I will accept service of process from the person who provided the notice or their agent.'**
+  String get copyrightCounterJurisdiction;
+
+  /// No description provided for @copyrightCounterSubmit.
+  ///
+  /// In en, this message translates to:
+  /// **'Send counter-notice'**
+  String get copyrightCounterSubmit;
+
+  /// No description provided for @copyrightCounterSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Counter-notice sent. Unless the complainant tells us they have filed a court action, your content will be restored in 10 to 14 business days.'**
+  String get copyrightCounterSent;
+
+  /// No description provided for @srvCopyrightRemovedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Content removed after a copyright notice'**
+  String get srvCopyrightRemovedTitle;
+
+  /// No description provided for @srvCopyrightRemovedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to see the notice and your options.'**
+  String get srvCopyrightRemovedBody;
+
+  /// No description provided for @srvCopyrightRestoredTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your content was restored'**
+  String get srvCopyrightRestoredTitle;
+
+  /// No description provided for @srvCopyrightRestoredBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The content removed after a copyright notice is visible again.'**
+  String get srvCopyrightRestoredBody;
+
+  /// No description provided for @emailCopyrightRemovedSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Copyright notice: content removed'**
+  String get emailCopyrightRemovedSubject;
+
+  /// No description provided for @emailCopyrightRemovedIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'We received a copyright notice about content you posted on GreenGo and disabled access to it. A copy of the notice is below.'**
+  String get emailCopyrightRemovedIntro;
+
+  /// No description provided for @emailCopyrightStrikeInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'This counts as a copyright strike. Active strikes: {count} of 3. Strikes expire after 12 months; accounts with 3 active strikes are terminated.'**
+  String emailCopyrightStrikeInfo(int count);
+
+  /// No description provided for @emailCopyrightCounterInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'If you believe this is a mistake or misidentification, you can send a counter-notice in the app: Profile > Help & Support > Copyright (DMCA). From there you can also appeal the decision.'**
+  String get emailCopyrightCounterInfo;
+
+  /// No description provided for @emailCopyrightNoticeCopy.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy of the notice'**
+  String get emailCopyrightNoticeCopy;
+
+  /// No description provided for @emailCopyrightRefLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Reference'**
+  String get emailCopyrightRefLabel;
+
+  /// No description provided for @emailCopyrightDateLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Date'**
+  String get emailCopyrightDateLabel;
+
+  /// No description provided for @emailCopyrightConfirmSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm your copyright notice'**
+  String get emailCopyrightConfirmSubject;
+
+  /// No description provided for @emailCopyrightConfirmIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Please confirm your copyright notice by opening this link within 48 hours. Unconfirmed notices are not processed.'**
+  String get emailCopyrightConfirmIntro;
+
+  /// No description provided for @emailCopyrightConfirmButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm notice'**
+  String get emailCopyrightConfirmButton;
+
+  /// No description provided for @emailCopyrightAcceptedSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Your copyright notice was accepted'**
+  String get emailCopyrightAcceptedSubject;
+
+  /// No description provided for @emailCopyrightAcceptedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'We disabled access to the material identified in your notice {ref}.'**
+  String emailCopyrightAcceptedBody(String ref);
+
+  /// No description provided for @emailCopyrightRejectedSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Your copyright notice could not be processed'**
+  String get emailCopyrightRejectedSubject;
+
+  /// No description provided for @emailCopyrightRejectedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'We could not act on your notice {ref}. Reason: {reason}'**
+  String emailCopyrightRejectedBody(String ref, String reason);
+
+  /// No description provided for @emailCopyrightCounterSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Counter-notice received'**
+  String get emailCopyrightCounterSubject;
+
+  /// No description provided for @emailCopyrightCounterBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The user who posted the material sent the counter-notice below about your notice {ref}. We will restore the material on or after {date} unless, before then, you tell us at {agentEmail} that you have filed a court action to stop the infringement.'**
+  String emailCopyrightCounterBody(String ref, String date, String agentEmail);
+
+  /// No description provided for @emailCopyrightRestoredSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Material restored'**
+  String get emailCopyrightRestoredSubject;
+
+  /// No description provided for @emailCopyrightRestoredBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The material from copyright notice {ref} has been restored after a counter-notice.'**
+  String emailCopyrightRestoredBody(String ref);
+
+  /// No description provided for @copyrightWebCheckEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Almost done: we sent a confirmation link to your email. Your notice is processed after you confirm it.'**
+  String get copyrightWebCheckEmail;
+
+  /// No description provided for @copyrightWebConfirmed.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you. Your notice is confirmed and will be reviewed.'**
+  String get copyrightWebConfirmed;
+
+  /// No description provided for @copyrightWebInvalidLink.
+  ///
+  /// In en, this message translates to:
+  /// **'This confirmation link is invalid or has expired.'**
+  String get copyrightWebInvalidLink;
+
+  /// No description provided for @copyrightWebInvalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Some required information is missing or invalid. Go back and check the form.'**
+  String get copyrightWebInvalid;
 }
 
 class _AppLocalizationsDelegate

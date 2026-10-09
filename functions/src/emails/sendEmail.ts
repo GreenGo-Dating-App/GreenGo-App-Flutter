@@ -32,6 +32,8 @@ export interface OutgoingEmail {
   attachments?: EmailAttachment[];
   /** Display name of the sender (default: settings senderName or "GreenGo"). */
   fromName?: string;
+  /** Optional Reply-To address (e.g. the copyright agent mailbox). */
+  replyTo?: string;
 }
 
 export type SendResult = { sent: boolean; reason?: string };
@@ -80,6 +82,7 @@ export async function sendEmail(msg: OutgoingEmail): Promise<SendResult> {
       subject: msg.subject,
       html: msg.html,
       ...(msg.text ? { text: msg.text } : {}),
+      ...(msg.replyTo && isEmail(msg.replyTo) ? { reply_to: msg.replyTo } : {}),
     };
     if (msg.attachments?.length) {
       body.attachments = msg.attachments.map((a) => ({
