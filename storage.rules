@@ -37,12 +37,17 @@ service firebase.storage {
     // P1-4 split uploaded the onboarding ID selfie to
     // profiles/{uid}/verifications/. That sub-folder is owner/admin-only
     // (admins open it through getVerificationPhotoUrl). Storage ORs matching
-    // rules, so the broad match must exclude it explicitly.
-    match /profiles/{uid}/{allPaths=**} {
-      allow read: if signedIn() && !allPaths.matches('verifications/.*');
+    // rules, so the broad match must exclude it explicitly (by its first
+    // path segment: a `**` wildcard is a path, not a string).
+    match /profiles/{uid}/{file} {
+      allow read: if signedIn();
       allow write: if isOwner(uid) && validUpload();
     }
-    match /profiles/{uid}/verifications/{file=**} {
+    match /profiles/{uid}/{folder}/{rest=**} {
+      allow read: if signedIn() && folder != 'verifications';
+      allow write: if isOwner(uid) && validUpload();
+    }
+    match /profiles/{uid}/verifications/{rest=**} {
       allow read: if isOwner(uid) || isAdmin();
     }
 

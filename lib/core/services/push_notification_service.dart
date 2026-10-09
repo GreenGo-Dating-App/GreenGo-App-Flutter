@@ -555,17 +555,15 @@ class PushNotificationService {
     }
   }
 
-  /// Write the token to both documents the push senders read from.
+  /// Write the token to the document the push senders read from.
   void _persistToken(String userId, String token) {
     final tokenData = {
       'fcmToken': token,
       'fcmTokenUpdatedAt': Timestamp.now(),
     };
+    // users/{uid} only: push tokens are never kept on the world-readable
+    // public profile (INC-2026-001); every push sender reads users/{uid}.
     Future.wait([
-      FirebaseFirestore.instance
-          .collection('profiles')
-          .doc(userId)
-          .set(tokenData, SetOptions(merge: true)),
       FirebaseFirestore.instance
           .collection('users')
           .doc(userId)
@@ -591,11 +589,9 @@ class PushNotificationService {
       'fcmToken': token,
       'fcmTokenUpdatedAt': Timestamp.now(),
     };
+    // users/{uid} only: push tokens are never kept on the world-readable
+    // public profile (INC-2026-001); every push sender reads users/{uid}.
     Future.wait([
-      FirebaseFirestore.instance
-          .collection('profiles')
-          .doc(userId)
-          .set(tokenData, SetOptions(merge: true)),
       FirebaseFirestore.instance
           .collection('users')
           .doc(userId)
