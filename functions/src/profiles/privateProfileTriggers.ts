@@ -14,6 +14,7 @@ import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
 import { requireAdmin, MODERATION_ROLES } from '../shared/adminAuth';
 import { AppError, handleError } from '../shared/utils';
+import { applyPrivateProfileAgeGate } from '../auth/ageGate';
 import {
   PRIVATE_PROFILES,
   SENSITIVE_FIELDS,
@@ -45,6 +46,13 @@ export const syncCoarseFromPrivateProfile = onDocumentWritten(
     const uid = event.params.uid as string;
     const before = event.data?.before?.exists ? event.data.before.data() : undefined;
     const after = event.data?.after?.exists ? event.data.after.data() : undefined;
+    // Server age-gate backstop on the private date of birth (the public
+    // profile no longer carries it). Never blocks the coarse sync below.
+    try {
+      await applyPrivateProfileAgeGate(uid, before, after);
+    } catch (e: any) {
+      console.error('private age gate check failed:', e?.message || e);
+    }
     await handlePrivateProfileWrite(uid, before, after);
   },
 );

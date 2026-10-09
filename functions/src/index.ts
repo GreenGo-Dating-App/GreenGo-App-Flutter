@@ -444,9 +444,14 @@ export {
   recordConsent,
 } from './ai/aiGateway';
 
-// Neutral age gate, interim (H-21). The profile-trigger backstop runs inside
-// reverseGeocodeProfileLocation.
+// Neutral age gate, interim (H-21). Backstops: the public-profile check runs
+// inside reverseGeocodeProfileLocation, the private-DOB check inside
+// syncCoarseFromPrivateProfile.
 export { declareAge } from './auth/ageGate';
+
+// Nickname sign-in (INC-2026-001): server-side nickname -> custom token, so
+// nicknames/{nick} no longer has to expose the account email.
+export { signInWithNickname } from './auth/nicknameSignIn';
 
 // Regional strong age assurance (P3-1, H-21): BR / GB / US-TX when
 // app_config/feature_flags.ageAssuranceEnforced is on.

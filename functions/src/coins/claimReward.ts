@@ -89,7 +89,9 @@ const nonEmptyList = (v: unknown): boolean =>
 export function isProfileComplete(p: Record<string, unknown> | undefined): boolean {
   if (!p) return false;
   return nonEmptyString(p.displayName)
-    && p.dateOfBirth != null
+    // INC-2026-001: the date of birth moved to profiles_private; the public
+    // profile carries the server-computed `age` instead.
+    && (p.dateOfBirth != null || typeof p.age === 'number')
     && nonEmptyString(p.gender)
     && nonEmptyList(p.photoUrls)
     && nonEmptyList(p.interests)
