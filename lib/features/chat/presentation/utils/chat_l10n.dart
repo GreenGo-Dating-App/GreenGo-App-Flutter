@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:intl/intl.dart';
 
+import '../../../../core/utils/server_text.dart';
 import '../../../../core/utils/user_display_name.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/chat_system_message.dart';
@@ -111,7 +112,9 @@ String? chatSystemText(
       );
       return '${l10n.supportReportFollowUpTitle}\n\n$details';
   }
-  return null;
+  // Keys written by the SERVER (members joined/left, message removed by a
+  // moderator, AI support hand-off, ...) - null when unknown to this version.
+  return serverText(l10n, key, params);
 }
 
 /// Localized "ticket status changed" line for a SupportTicketStatus name.

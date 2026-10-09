@@ -52,9 +52,13 @@ String supportTicketSubject(AppLocalizations l10n, Map<String, dynamic> ticket) 
 String supportMessageDisplayText(
     AppLocalizations l10n, Map<String, dynamic> message) {
   final content = message['content'] as String? ?? '';
-  final key = message['systemKey'];
+  // App-written lines store systemKey/systemParams at the top level; SERVER
+  // lines (e.g. the AI support hand-off) store them under `metadata`.
+  final meta = message['metadata'];
+  final nested = meta is Map ? meta : const {};
+  final key = message['systemKey'] ?? nested['systemKey'];
   if (key is String) {
-    final rawParams = message['systemParams'];
+    final rawParams = message['systemParams'] ?? nested['systemParams'];
     final params = rawParams is Map
         ? Map<String, dynamic>.from(rawParams)
         : const <String, dynamic>{};
