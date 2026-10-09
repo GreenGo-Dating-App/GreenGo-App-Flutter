@@ -39992,6 +39992,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your name and email will be shared with the organizer for entry.'**
   String get checkoutOrganizerShareNotice;
+
+  /// Blocking loader text shown while the account is being created after tapping Register
+  ///
+  /// In en, this message translates to:
+  /// **'We are creating your account…'**
+  String get signupCreatingAccount;
+
+  /// Secondary loader line shown when account creation takes more than 5 seconds
+  ///
+  /// In en, this message translates to:
+  /// **'This can take a few seconds. Please keep the app open.'**
+  String get signupCreatingAccountSlow;
+
+  /// Inline error under the date-of-birth field when the picked date is under 18 (correctable before Continue)
+  ///
+  /// In en, this message translates to:
+  /// **'You must be at least 18 to use GreenGo. Please check the date you selected.'**
+  String get onboardingAgeUnderMinimumHint;
+
+  /// Dialog body when the server already blocked this account/email for a previous under-18 date of birth
+  ///
+  /// In en, this message translates to:
+  /// **'This account was already registered with a date of birth under 18, so it stays restricted. If that was a mistake, contact support to verify your age.'**
+  String get onboardingAgePreviouslyBlockedBody;
 }
 
 class _AppLocalizationsDelegate

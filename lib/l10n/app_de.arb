@@ -7250,5 +7250,9 @@
   "participantsEmailRateLimited": "Du hast sie gerade angefordert. Versuch es in ein paar Minuten erneut.",
   "participantsEmailFailed": "Die Teilnehmerliste konnte nicht gesendet werden. Bitte versuch es später erneut.",
   "participantsEmailNoEmail": "Dein Konto hat keine E-Mail-Adresse für den Versand.",
-  "checkoutOrganizerShareNotice": "Dein Name und deine E-Mail-Adresse werden für den Einlass an den Veranstalter weitergegeben."
+  "checkoutOrganizerShareNotice": "Dein Name und deine E-Mail-Adresse werden für den Einlass an den Veranstalter weitergegeben.",
+  "signupCreatingAccount": "Wir erstellen dein Konto…",
+  "signupCreatingAccountSlow": "Das kann ein paar Sekunden dauern. Bitte lass die App geöffnet.",
+  "onboardingAgeUnderMinimumHint": "Du musst mindestens 18 Jahre alt sein, um GreenGo zu nutzen. Bitte überprüfe das gewählte Datum.",
+  "onboardingAgePreviouslyBlockedBody": "Dieses Konto wurde bereits mit einem Geburtsdatum unter 18 Jahren registriert und bleibt daher eingeschränkt. Falls das ein Fehler war, wende dich an den Support, um dein Alter zu bestätigen."
 }

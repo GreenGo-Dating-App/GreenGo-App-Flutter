@@ -23170,4 +23170,19 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get checkoutOrganizerShareNotice =>
       'Your name and email will be shared with the organizer for entry.';
+
+  @override
+  String get signupCreatingAccount => 'We are creating your account…';
+
+  @override
+  String get signupCreatingAccountSlow =>
+      'This can take a few seconds. Please keep the app open.';
+
+  @override
+  String get onboardingAgeUnderMinimumHint =>
+      'You must be at least 18 to use GreenGo. Please check the date you selected.';
+
+  @override
+  String get onboardingAgePreviouslyBlockedBody =>
+      'This account was already registered with a date of birth under 18, so it stays restricted. If that was a mistake, contact support to verify your age.';
 }

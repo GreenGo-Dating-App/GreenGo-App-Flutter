@@ -23399,6 +23399,21 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get checkoutOrganizerShareNotice =>
       'O teu nome e e-mail serão partilhados com o organizador para a entrada.';
+
+  @override
+  String get signupCreatingAccount => 'Estamos a criar a tua conta…';
+
+  @override
+  String get signupCreatingAccountSlow =>
+      'Isto pode demorar alguns segundos. Mantém a app aberta.';
+
+  @override
+  String get onboardingAgeUnderMinimumHint =>
+      'Tens de ter pelo menos 18 anos para usar o GreenGo. Verifica a data que selecionaste.';
+
+  @override
+  String get onboardingAgePreviouslyBlockedBody =>
+      'Esta conta já foi registada com uma data de nascimento inferior a 18 anos, por isso continua restrita. Se foi um engano, contacta o suporte para verificar a tua idade.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -46799,4 +46814,19 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get checkoutOrganizerShareNotice =>
       'Seu nome e e-mail serão compartilhados com o organizador para a entrada.';
+
+  @override
+  String get signupCreatingAccount => 'Estamos criando sua conta…';
+
+  @override
+  String get signupCreatingAccountSlow =>
+      'Isso pode levar alguns segundos. Mantenha o app aberto.';
+
+  @override
+  String get onboardingAgeUnderMinimumHint =>
+      'Você precisa ter pelo menos 18 anos para usar o GreenGo. Confira a data selecionada.';
+
+  @override
+  String get onboardingAgePreviouslyBlockedBody =>
+      'Esta conta já foi registrada com uma data de nascimento de menor de 18 anos, por isso continua restrita. Se foi um engano, fale com o suporte para verificar sua idade.';
 }

@@ -55,6 +55,28 @@ export function parseDob(v: unknown): Date | null {
   return date;
 }
 
+const utcDay = (t: number) => {
+  const d = new Date(t);
+  return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+};
+
+/**
+ * The caller's own calendar "today" ('YYYY-MM-DD', sent by the app), used so
+ * an 18th birthday counts from local midnight, not UTC midnight (otherwise an
+ * adult in UTC+X picking their exact birthday in the first hours of the day
+ * was recorded as 17 and blocked for good). Accepted only when that date is
+ * "today" somewhere on Earth (UTC-12 .. UTC+14), so it can shift the answer
+ * by one day at most; anything else falls back to the UTC date.
+ */
+export function callerToday(v: unknown, now = new Date()): Date {
+  const fallback = new Date(utcDay(now.getTime()));
+  const d = parseDob(v);
+  if (!d) return fallback;
+  const earliest = utcDay(now.getTime() - 12 * 3600e3);
+  const latest = utcDay(now.getTime() + 14 * 3600e3);
+  return d.getTime() >= earliest && d.getTime() <= latest ? d : fallback;
+}
+
 /** A profile's dateOfBirth (Timestamp, Date, ISO string or millis) -> Date. */
 export function profileDob(v: unknown): Date | null {
   if (!v) return null;
@@ -99,7 +121,8 @@ export async function handleDeclareAge(request: any) {
   const email = (request.auth?.token?.email as string | undefined) ?? null;
   const dob = parseDob(request.data?.dob);
   const now = new Date();
-  if (!dob || dob.getTime() > now.getTime() || dob.getUTCFullYear() < 1900) {
+  const today = callerToday(request.data?.today, now);
+  if (!dob || dob.getTime() > Math.max(now.getTime(), today.getTime()) || dob.getUTCFullYear() < 1900) {
     throw new AppError('INVALID_ARGUMENT', 'Invalid date of birth', 400);
   }
 
@@ -110,7 +133,7 @@ export async function handleDeclareAge(request: any) {
     return { success: true, allowed: false, reason: 'AGE_BLOCKED' };
   }
 
-  const age = ageOn(dob, now);
+  const age = ageOn(dob, today);
   if (age < MIN_AGE) {
     await markAgeBlocked(uid, email, age, 'declareAge');
     // If onboarding already wrote a profile, hide it now.

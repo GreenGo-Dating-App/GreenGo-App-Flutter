@@ -23405,4 +23405,19 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get checkoutOrganizerShareNotice =>
       'Tu nombre y tu correo electrónico se compartirán con el organizador para el acceso.';
+
+  @override
+  String get signupCreatingAccount => 'Estamos creando tu cuenta…';
+
+  @override
+  String get signupCreatingAccountSlow =>
+      'Esto puede tardar unos segundos. Mantén la app abierta.';
+
+  @override
+  String get onboardingAgeUnderMinimumHint =>
+      'Debes tener al menos 18 años para usar GreenGo. Revisa la fecha que has seleccionado.';
+
+  @override
+  String get onboardingAgePreviouslyBlockedBody =>
+      'Esta cuenta ya se registró con una fecha de nacimiento de menor de 18 años, por lo que sigue restringida. Si fue un error, contacta con soporte para verificar tu edad.';
 }
