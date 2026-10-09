@@ -29,7 +29,7 @@
  *
  * The password is never logged, stored, or echoed in an error.
  *
- * Config: the Identity Toolkit key comes from env `FIREBASE_WEB_API_KEY`
+ * Config: the Identity Toolkit key comes from env `GG_WEB_API_KEY`
  * (functions/.env, gitignored), else `app_config/api_keys.firebase_web_api_key`.
  * If the key is HTTP-referrer restricted, `NICKNAME_SIGNIN_REFERER` (default
  * https://greengo-chat.web.app/) is sent as the Referer.
@@ -145,9 +145,9 @@ function identityToolkitUrl(apiKey: string): string {
 export async function verifyPassword(email: string, password: string): Promise<PasswordCheck> {
   const apiKey = process.env.FIREBASE_AUTH_EMULATOR_HOST
     ? 'emulator-key'
-    : await getServerKey('FIREBASE_WEB_API_KEY', 'firebase_web_api_key');
+    : await getServerKey('GG_WEB_API_KEY', 'firebase_web_api_key');
   if (!apiKey) {
-    console.error('signInWithNickname: FIREBASE_WEB_API_KEY is not configured');
+    console.error('signInWithNickname: GG_WEB_API_KEY is not configured');
     return { ok: false, reason: 'UNAVAILABLE' };
   }
   const ctrl = new AbortController();
