@@ -1,18 +1,9 @@
 import 'dart:math' as math;
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/foundation.dart' show kIsWeb, visibleForTesting;
 import 'package:flutter/material.dart';
 
 import '../services/own_profile_store.dart';
-
-/// Whether a photo / media item gets the viewer watermark.
-///
-/// Private photos (private albums, chat media) are watermarked on every
-/// platform; on web, where screenshots cannot be blocked at all, every photo
-/// is. [isWeb] is only overridden by tests.
-bool shouldWatermarkMedia({required bool isPrivate, bool? isWeb}) =>
-    isPrivate || (isWeb ?? kIsWeb);
 
 /// Text stamped over protected media: who is LOOKING at it (not who owns
 /// it), so a leaked screenshot or phone photo of the screen can be traced
@@ -56,19 +47,17 @@ class ViewerWatermark extends StatelessWidget {
     this.opacity = 0.16,
   });
 
-  /// Convenience: watermark only when [shouldWatermarkMedia] says so.
-  factory ViewerWatermark.media({
+  /// The mark for a full-screen, pinch-to-zoom photo viewer.
+  ///
+  /// Owner decision (2026-10-11): the GreenGo mark appears ONLY on a photo
+  /// opened full screen / zoomed in - never on thumbnails, grids, cards or
+  /// profile carousels. Use this inside the InteractiveViewer of every viewer
+  /// that shows user photos; not on third-party images (e.g. attraction
+  /// photos), which GreenGo does not own.
+  const ViewerWatermark.zoomed({
     required Widget child,
-    required bool isPrivate,
     Key? key,
-    String? label,
-  }) =>
-      ViewerWatermark(
-        key: key,
-        label: label,
-        enabled: shouldWatermarkMedia(isPrivate: isPrivate),
-        child: child,
-      );
+  }) : this(key: key, child: child);
 
   final Widget child;
 

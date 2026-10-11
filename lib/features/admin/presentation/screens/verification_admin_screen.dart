@@ -804,8 +804,7 @@ class _VerificationCard extends StatelessWidget {
             child: InteractiveViewer(
               // Someone else's ID selfie: always stamped with the reviewing
               // admin's id, so a leaked capture is traceable.
-              child: ViewerWatermark.media(
-                isPrivate: true,
+              child: ViewerWatermark.zoomed(
                 child: Image.network(imageUrl),
               ),
             ),

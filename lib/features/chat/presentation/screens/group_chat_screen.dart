@@ -1413,8 +1413,7 @@ class _FullImageScreen extends StatelessWidget {
         child: InteractiveViewer(
           // Full resolution, disk-cached. Group media is private: stamped
           // with the viewer's id so a leaked capture is traceable.
-          child: ViewerWatermark.media(
-            isPrivate: true,
+          child: ViewerWatermark.zoomed(
             child: CachedNetworkImage(imageUrl: url),
           ),
         ),
