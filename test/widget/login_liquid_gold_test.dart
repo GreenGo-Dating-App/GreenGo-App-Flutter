@@ -1,6 +1,7 @@
 import 'dart:ui' as ui;
 
 import 'package:dartz/dartz.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -9,6 +10,7 @@ import 'package:greengo_chat/core/error/failures.dart';
 import 'package:greengo_chat/core/providers/language_provider.dart';
 import 'package:greengo_chat/core/widgets/gold_shimmer.dart';
 import 'package:greengo_chat/core/widgets/liquid_gold_background.dart';
+import 'package:greengo_chat/core/widgets/website_link.dart';
 import 'package:greengo_chat/features/authentication/domain/entities/user.dart'
     as domain;
 import 'package:greengo_chat/features/authentication/presentation/bloc/auth_bloc.dart';
@@ -258,7 +260,7 @@ void main() {
       expect(find.byKey(E2EKeys.loginPassword), findsOneWidget);
       expect(find.byKey(E2EKeys.loginSubmit), findsOneWidget);
       expect(
-        find.text('Discover cultures. Connect without language barriers.'),
+        find.text('Places. People. Experiences.'),
         findsOneWidget,
       );
       final l10n = await AppLocalizations.delegate.load(const Locale('en'));
@@ -387,6 +389,141 @@ void main() {
       await tester.pump(const Duration(milliseconds: 50));
       expect(values(), everyElement(1.0));
       expect(tester.takeException(), isNull);
+    });
+
+    // iOS Safari (Flutter web) reports the on-screen keyboard as
+    // viewInsets.bottom while a field is focused; the toolbar collapsing /
+    // expanding changes the window height instead. Neither may move the page
+    // or remount the form.
+    testWidgets('keyboard opening keeps focus and typed text (no remount)',
+        (tester) async {
+      await _pumpLogin(tester, const Locale('en'),
+          settle: const Duration(seconds: 3));
+      await tester.tap(find.byKey(E2EKeys.loginEmail));
+      await tester.pump();
+      await tester.enterText(find.byKey(E2EKeys.loginEmail), 'ana@x.io');
+      await tester.pump();
+      EditableTextState editable() => tester.state<EditableTextState>(
+          find.descendant(
+              of: find.byKey(E2EKeys.loginEmail),
+              matching: find.byType(EditableText)));
+      final before = editable();
+
+      for (final kb in const [336.0, 0.0, 336.0]) {
+        tester.view.viewInsets = FakeViewPadding(bottom: kb * 2.0);
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 400));
+        expect(identical(editable(), before), isTrue,
+            reason: 'keyboard $kb px must not remount the email field');
+        expect(editable().widget.focusNode.hasFocus, isTrue,
+            reason: 'keyboard $kb px must not drop focus');
+        expect(editable().textEditingValue.text, 'ana@x.io');
+      }
+      tester.view.viewInsets = FakeViewPadding.zero;
+      expect(tester.takeException(), isNull);
+    });
+
+    testWidgets('height-only viewport changes (toolbar) do not move the page',
+        (tester) async {
+      await _pumpLogin(tester, const Locale('en'),
+          settle: const Duration(seconds: 3));
+      double top(Finder f) => tester.getRect(f).top;
+      final tagline = find.byKey(const ValueKey('login_tagline'));
+      final email = find.byKey(E2EKeys.loginEmail);
+      final t0 = top(tagline);
+      final e0 = top(email);
+      final rise = tester.widget<RiseIn>(find.byType(RiseIn).first).animation;
+
+      for (final h in const [760.0, 700.0, 844.0, 920.0, 844.0]) {
+        tester.view.physicalSize = Size(390, h) * 2.0;
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 100));
+        expect(top(tagline), moreOrLessEquals(t0, epsilon: 0.5),
+            reason: 'tagline moved at height $h');
+        expect(top(email), moreOrLessEquals(e0, epsilon: 0.5),
+            reason: 'email field moved at height $h');
+        expect(rise.value, 1.0, reason: 'entrance replayed at height $h');
+        expect(tester.takeException(), isNull);
+      }
+    });
+
+    for (final locale in AppLocalizations.supportedLocales) {
+      testWidgets('tagline stays on one line at 320 px — $locale',
+          (tester) async {
+        await _pumpLogin(tester, locale, reducedMotion: true);
+        tester.view.physicalSize = const Size(320, 640) * 2.0;
+        await tester.pump();
+        final rect = tester.getRect(find.byKey(const ValueKey('login_tagline')));
+        expect(rect.height, lessThan(17 * 1.4 * 1.5),
+            reason: 'tagline wrapped in $locale');
+        expect(rect.width, lessThanOrEqualTo(320 - 2 * 24 + 0.5));
+        expect(tester.takeException(), isNull);
+      });
+    }
+
+    group('website link (web only)', () {
+      tearDown(() {
+        websiteLinkEligible = () => kIsWeb;
+        openWebsite = (uri) async => false;
+      });
+
+      testWidgets('absent in the native apps', (tester) async {
+        websiteLinkEligible = () => false;
+        await _pumpLogin(tester, const Locale('en'), reducedMotion: true);
+        expect(find.byKey(const ValueKey('website-link')), findsNothing);
+      });
+
+      testWidgets('present on web, opens greengochat.com, is a link',
+          (tester) async {
+        final opened = <Uri>[];
+        websiteLinkEligible = () => true;
+        openWebsite = (uri) async {
+          opened.add(uri);
+          return true;
+        };
+        final semantics = tester.ensureSemantics();
+        await _pumpLogin(tester, const Locale('en'), reducedMotion: true);
+        final link = find.byKey(const ValueKey('website-link'));
+        expect(link, findsOneWidget);
+        expect(find.textContaining('greengochat.com', findRichText: true),
+            findsOneWidget);
+        expect(tester.getSize(link).height, greaterThanOrEqualTo(44));
+        expect(
+          tester.getSemantics(find.ancestor(
+              of: link, matching: find.byType(Semantics)).first),
+          matchesSemantics(
+            isLink: true,
+            label: 'Visit greengochat.com for more info',
+            hasTapAction: true,
+          ),
+        );
+        // Below Sign Up, above the version.
+        final signUp = tester.getRect(find.text('Sign Up'));
+        expect(tester.getRect(link).top, greaterThan(signUp.bottom - 1));
+
+        await tester.ensureVisible(link);
+        await tester.tap(link);
+        await tester.pump();
+        expect(opened, [Uri.parse('https://greengochat.com')]);
+        semantics.dispose();
+      });
+
+      for (final locale in AppLocalizations.supportedLocales) {
+        testWidgets('fits a 320 px phone — $locale', (tester) async {
+          websiteLinkEligible = () => true;
+          await _pumpLogin(tester, locale, reducedMotion: true);
+          tester.view.physicalSize = const Size(320, 640) * 2.0;
+          await tester.pump();
+          final l10n = await AppLocalizations.delegate.load(locale);
+          expect(l10n.loginVisitWebsite('greengochat.com'),
+              contains('greengochat.com'));
+          final rect =
+              tester.getRect(find.byKey(const ValueKey('website-link')));
+          expect(rect.left, greaterThanOrEqualTo(0));
+          expect(rect.right, lessThanOrEqualTo(320));
+          expect(tester.takeException(), isNull);
+        });
+      }
     });
 
     testWidgets('typing during the entrance keeps text and focus',

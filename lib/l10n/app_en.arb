@@ -13263,9 +13263,19 @@
   "srvReferralPreviewOpenApp": "Open in the app",
   "srvReferralPreviewGetApp": "Get the app",
   "srvReferralPreviewWeb": "Continue on the web",
-  "loginTagline": "Discover cultures. Connect without language barriers.",
+  "loginTagline": "Places. People. Experiences.",
   "@loginTagline": {
     "description": "One-line tagline under the logo on the login screen"
+  },
+  "loginVisitWebsite": "Visit {site} for more info",
+  "@loginVisitWebsite": {
+    "description": "Web-only login link to the marketing site; {site} is the domain (greengochat.com), shown in gold and never translated",
+    "placeholders": {
+      "site": {
+        "type": "String",
+        "example": "greengochat.com"
+      }
+    }
   },
   "tierTravelModeCostRow": "Travel mode (coins per day)",
   "@tierTravelModeCostRow": {

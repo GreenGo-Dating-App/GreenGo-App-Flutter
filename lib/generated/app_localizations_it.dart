@@ -24228,8 +24228,12 @@ class AppLocalizationsIt extends AppLocalizations {
   String get srvReferralPreviewWeb => 'Continua sul web';
 
   @override
-  String get loginTagline =>
-      'Scopri culture. Connettiti senza barriere linguistiche.';
+  String get loginTagline => 'Luoghi. Persone. Esperienze.';
+
+  @override
+  String loginVisitWebsite(String site) {
+    return 'Visita $site per maggiori informazioni';
+  }
 
   @override
   String get tierTravelModeCostRow => 'Modalità viaggio (monete al giorno)';

@@ -24173,8 +24173,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get srvReferralPreviewWeb => 'Continuar na web';
 
   @override
-  String get loginTagline =>
-      'Descubra culturas. Ligue-se sem barreiras linguísticas.';
+  String get loginTagline => 'Lugares. Pessoas. Experiências.';
+
+  @override
+  String loginVisitWebsite(String site) {
+    return 'Visita $site para mais informações';
+  }
 
   @override
   String get tierTravelModeCostRow => 'Modo viagem (moedas por dia)';
@@ -48425,8 +48429,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get srvReferralPreviewWeb => 'Continuar na web';
 
   @override
-  String get loginTagline =>
-      'Descubra culturas. Conecte-se sem barreiras de idioma.';
+  String get loginTagline => 'Lugares. Pessoas. Experiências.';
+
+  @override
+  String loginVisitWebsite(String site) {
+    return 'Visite $site para mais informações';
+  }
 
   @override
   String get tierTravelModeCostRow => 'Modo viagem (moedas por dia)';

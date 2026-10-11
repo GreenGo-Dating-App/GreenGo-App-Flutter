@@ -24254,8 +24254,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get srvReferralPreviewWeb => 'Im Web fortfahren';
 
   @override
-  String get loginTagline =>
-      'Kulturen entdecken. Ohne Sprachbarrieren verbinden.';
+  String get loginTagline => 'Orte. Menschen. Erlebnisse.';
+
+  @override
+  String loginVisitWebsite(String site) {
+    return 'Mehr Infos auf $site';
+  }
 
   @override
   String get tierTravelModeCostRow => 'Reisemodus (Münzen pro Tag)';
