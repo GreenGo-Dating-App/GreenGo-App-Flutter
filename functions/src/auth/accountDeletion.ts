@@ -36,6 +36,18 @@
  *   on purpose so hashes stay stable, but it is public in the source, so it
  *   only pseudonymises against outsiders who do not have the uid list.
  *
+ * RETAINED - LEGAL PROOF (privacy policy 5.1.0, section 14: "consent and
+ *   acceptance records, including private-content warning confirmations: for
+ *   as long as the account exists and 5 years afterwards"; GDPR 7(1) and
+ *   17(3)(e), LGPD 8 §2 and 16 I): `consents/{uid}` (+ its `events` history:
+ *   terms / privacy acceptance with the accepted document version, opt-ins)
+ *   and `legal_acknowledgements/{uid}/items/*` (private-content warning
+ *   confirmations, privacy policy 10.5) are NOT deleted. On deletion they get
+ *   `legalRetention: { accountDeletedAt, retainUntil (+5 years), basis }`
+ *   (markLegalRecordsRetained). They hold no profile data beyond the uid,
+ *   locale, platform and versions. A purge job for expired records is
+ *   follow-up work (like retention_finance).
+ *
  * IDENTITY DOCUMENTS (P2-6): `id_documents/{uid}/` images are DELETED (no
  *   30-day retention any more); only legacy entries under an admin legal hold
  *   stay in `id_document_retention` (safety/idDocumentRetention.ts).
@@ -72,6 +84,10 @@ export const DELETION_RECEIPTS = 'deletion_receipts';
 export const DELETION_FOLLOWUPS = 'deletion_followups';
 export const RETENTION_FINANCE = 'retention_finance';
 export const FALLBACK_RETENTION_SALT = 'greengo-retention-finance-v1';
+/** Consent / acceptance records (recordConsent). Retained as legal proof. */
+export const CONSENTS_COLLECTION = 'consents';
+/** Private-content warning confirmations, `{uid}/items/{autoId}`. Retained. */
+export const LEGAL_ACKNOWLEDGEMENTS = 'legal_acknowledgements';
 const PAGE = 300;
 const FIVE_YEARS_MS = 5 * 365.25 * 24 * 3600 * 1000;
 
@@ -86,6 +102,10 @@ export const RETENTION_STORES = [
   DELETION_JOBS, // only kept when a run FAILED (needed to retry)
   'id_document_retention', // legacy entries under an admin legal hold only (P2-6)
   'follow_cleanup_jobs', // queued follow-graph job, deleted when done
+  // Legal proof, kept for the account's lifetime + 5 years (privacy policy
+  // 5.1.0 section 14); NEVER add these to ACCOUNT_DATA_INVENTORY.
+  CONSENTS_COLLECTION,
+  LEGAL_ACKNOWLEDGEMENTS,
 ];
 
 // ---------------------------------------------------------------------------
@@ -796,6 +816,13 @@ export async function deleteAccountData(uid: string, source: DeletionSource): Pr
     report.failures.push('finance:coinBalances.subcollections');
   }
   await runInventory(uid, report);
+  // The records themselves are never deleted; a failed stamp only loses the
+  // retainUntil date, so it must not block the deletion.
+  try {
+    await markLegalRecordsRetained(uid);
+  } catch (e: any) {
+    console.error(`accountDeletion: legal retention stamp failed for ${uid}`, e?.message || e);
+  }
 
   // Last: users/{uid}, then profiles/{uid}. Deleting the profile fires
   // onProfileDeleted, which (for old app versions) also deletes the Auth user;
@@ -809,6 +836,31 @@ export async function deleteAccountData(uid: string, source: DeletionSource): Pr
     }
   }
   return report;
+}
+
+/**
+ * Stamps the retained legal-proof records (see the policy notes) with when the
+ * account was deleted and until when they are kept. Idempotent: the first
+ * deletion run's dates are kept on re-runs (Auth trigger sweep). Writes only
+ * where something exists.
+ */
+export async function markLegalRecordsRetained(uid: string, nowMs = Date.now()): Promise<void> {
+  const legalRetention = {
+    accountDeletedAt: admin.firestore.Timestamp.fromMillis(nowMs),
+    retainUntil: admin.firestore.Timestamp.fromMillis(nowMs + FIVE_YEARS_MS),
+    basis: 'proof of consent / acceptance and warning confirmations (GDPR 7(1), 17(3)(e); LGPD 8 §2, 16 I)',
+  };
+  const consents = db().collection(CONSENTS_COLLECTION).doc(uid);
+  const acks = db().collection(LEGAL_ACKNOWLEDGEMENTS).doc(uid);
+  const [c, a, items] = await Promise.all([
+    consents.get(), acks.get(), acks.collection('items').limit(1).get(),
+  ]);
+  if (c.exists && !c.get('legalRetention')) {
+    await consents.set({ legalRetention }, { merge: true });
+  }
+  if (!items.empty && !a.get('legalRetention')) {
+    await acks.set({ legalRetention }, { merge: true });
+  }
 }
 
 async function writeReceipt(uid: string, report: DeletionReport, source: DeletionSource) {

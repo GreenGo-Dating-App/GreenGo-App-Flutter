@@ -106,6 +106,10 @@ async function seed() {
   await db.doc(`profiles_private/${ME}`).set({ dateOfBirth: '1990-01-02', exactLocation: { lat: -23.5, lng: -46.6 } });
   await db.doc(`consents/${ME}`).set({ marketing_email: { accepted: true, version: 1 } });
   await db.doc(`consents/${ME}/events/e1`).set({ type: 'marketing_email', accepted: true });
+  // Private-content warning confirmation (privacy policy 5.1.0, 10.5).
+  await db.doc(`legal_acknowledgements/${ME}/items/w1`).set({
+    type: 'private_content_warning', termsVersion: '5.1.0', ownerId: BOB, at: admin.firestore.Timestamp.now(),
+  });
   await db.doc(`notifications/n1`).set({ userId: ME, title: 'my-notification', fromUserId: BOB, fromUserName: 'Bob Otherperson' });
   await db.doc(`notifications/n2`).set({ userId: ME, title: 'my-second-notification' });
   await db.doc(`coinTransactions/t1`).set({ userId: ME, amount: 100, type: 'credit', relatedUserId: BOB });
@@ -209,6 +213,10 @@ describe('exportMyData: contents', () => {
     expect(z['account/profiles_private.json'].toString()).toContain('1990-01-02');
     const consents = JSON.parse(z['account/consents.json'].toString());
     expect(consents).toHaveLength(2); // doc + its events subcollection
+    // Warning confirmations: exported (the parent doc does not even exist).
+    const acks = JSON.parse(z['account/legal_acknowledgements.json'].toString());
+    expect(acks).toHaveLength(1);
+    expect(acks[0]).toMatchObject({ type: 'private_content_warning', termsVersion: '5.1.0' });
     expect(all).toContain('my-notification');
     expect(all).toContain('my-report-reason');
     const msgs = JSON.parse(z['messages/my_messages.json'].toString());
