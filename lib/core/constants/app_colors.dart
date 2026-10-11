@@ -29,6 +29,21 @@ class AppColors {
   static const Color errorRed = Color(0xFFDC2626);
   static const Color infoBlue = Color(0xFF3B82F6);
 
+  // "Liquid Gold" auth screens (login, waiting). Contrast on [liquidBase]:
+  // liquidText 17.1:1, liquidTagline 13.1:1, liquidMuted 9.9:1,
+  // liquidGoldLight 12.1:1, liquidHint 7.3:1; liquidInk on the gold button
+  // 8.0-12.8:1. Text on the glass card stays >= 4.3:1 over a glow peak.
+  static const Color liquidBase = Color(0xFF070604); // near-black, warm
+  static const Color liquidGoldLight = Color(0xFFE9C46A); // links, glows
+  static const Color liquidGoldBright = Color(0xFFF0CF7A); // focus, button top
+  static const Color liquidGoldDeep = Color(0xFFC9A227); // button bottom
+  static const Color liquidGoldCream = Color(0xFFFFF4D6); // shimmer band
+  static const Color liquidInk = Color(0xFF120E05); // text on gold
+  static const Color liquidText = Color(0xFFF3EBDD); // input text
+  static const Color liquidTagline = Color(0xFFD9CFBE);
+  static const Color liquidMuted = Color(0xFFBFB49F); // labels, footer
+  static const Color liquidHint = Color(0xFFA39A88);
+
   // UI Elements
   static const Color backgroundDark = Color(0xFF0A0A0A);
   static const Color backgroundCard = Color(0xFF1A1A1A);

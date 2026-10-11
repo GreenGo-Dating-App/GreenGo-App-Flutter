@@ -3,7 +3,7 @@ import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/access_control_service.dart';
-import '../../../../core/widgets/aurora_background.dart';
+import '../../../../core/widgets/liquid_gold_background.dart';
 import '../../../../core/widgets/calm_brand_logo.dart';
 import '../../../../core/widgets/language_selector.dart';
 import '../../../../core/widgets/luxury_countdown_widget.dart';
@@ -82,7 +82,7 @@ class _WaitingScreenState extends State<WaitingScreen>
     final shouldShowPendingApproval = accessData?.shouldShowPendingApproval ?? false;
     final isRejected = approvalStatus == ApprovalStatus.rejected;
 
-    return AuroraBackground(
+    return LiquidGoldBackground(
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(

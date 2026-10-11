@@ -7,23 +7,27 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/e2e_keys.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/auth_error_localizer.dart';
-import '../../../../core/widgets/aurora_background.dart';
 import '../../../../core/widgets/calm_brand_logo.dart';
 import '../../../../core/widgets/connection_error_dialog.dart';
 import '../../../../core/widgets/ios_install_hint.dart';
 import '../../../../core/widgets/language_selector.dart';
+import '../../../../core/widgets/liquid_gold_background.dart';
 import '../../../../generated/app_localizations.dart';
 import '../bloc/auth_bloc.dart';
 import '../bloc/auth_event.dart';
 import '../bloc/auth_state.dart';
 import '../widgets/auth_button.dart';
 import '../widgets/auth_text_field.dart';
+import '../widgets/liquid_gold_widgets.dart';
 
 // Conditional imports based on feature flags
 // Only import if the corresponding feature is enabled in AppConfig
 // import 'package:font_awesome_flutter/font_awesome_flutter.dart'; // Enable when AppConfig.enableGoogleAuth or enableFacebookAuth = true
 // import '../widgets/social_login_button.dart'; // Enable when any social auth is enabled
 
+/// "Liquid Gold" login: warm near-black with slowly drifting molten-gold
+/// glows ([LiquidGoldBackground]), the shimmering logo, the tagline and a
+/// frosted glass form card, entering once in a calm stagger.
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -38,45 +42,45 @@ const double _compactHeightBreakpoint = 640;
 /// The form never stretches wider than this, however wide the screen is.
 const double _formMaxWidth = 420;
 
-/// From this width up (tablet / desktop web) the form sits in a card.
+/// From this width up (tablet / desktop web) the card gets roomier padding.
 const double _cardBreakpoint = 600;
+
+/// Gold vertical gradient of the primary button (#F0CF7A → #C9A227).
+const LinearGradient _goldButtonGradient = LinearGradient(
+  begin: Alignment.topCenter,
+  end: Alignment.bottomCenter,
+  colors: [AppColors.liquidGoldBright, AppColors.liquidGoldDeep],
+);
+
+/// Soft dark halo behind text that sits directly on the background (not on
+/// the card): keeps AA contrast even where a bright glow drifts underneath.
+const List<Shadow> _onGlowShadow = [
+  Shadow(color: Color(0xB3070604), blurRadius: 14),
+  Shadow(color: Color(0x80070604), blurRadius: 4),
+];
 
 class _LoginScreenState extends State<LoginScreen>
     with SingleTickerProviderStateMixin {
   final _formKey = GlobalKey<FormState>();
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
-  late AnimationController _animationController;
-  late Animation<double> _fadeAnimation;
-  late Animation<Offset> _slideAnimation;
+
+  /// Drives the staggered entrance (logo → tagline → form → footer). Runs
+  /// once per visit: it lives in this State, so rebuilds (keyboard, bloc,
+  /// locale) never restart it.
+  late final AnimationController _entrance;
+  late final List<Animation<double>> _steps;
+
+  /// Fetched once — not on every rebuild.
+  late final Future<PackageInfo> _packageInfo = PackageInfo.fromPlatform();
   bool _obscurePassword = true;
 
   @override
   void initState() {
     super.initState();
-    _animationController = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 1500),
-    );
-
-    _fadeAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
-      CurvedAnimation(
-        parent: _animationController,
-        curve: const Interval(0.0, 0.5, curve: Curves.easeOut),
-      ),
-    );
-
-    _slideAnimation = Tween<Offset>(
-      begin: const Offset(0, 0.04),
-      end: Offset.zero,
-    ).animate(
-      CurvedAnimation(
-        parent: _animationController,
-        curve: const Interval(0.2, 0.7, curve: Curves.easeOut),
-      ),
-    );
-
-    _animationController.forward();
+    _entrance = AnimationController(vsync: this, duration: kEntranceTotal);
+    _steps = [for (var i = 0; i < 4; i++) entranceFor(_entrance, i)];
+    _entrance.forward();
 
     // Check if we mounted with an existing error state (e.g., after AuthWrapper rebuild)
     WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -92,7 +96,7 @@ class _LoginScreenState extends State<LoginScreen>
   void dispose() {
     _emailController.dispose();
     _passwordController.dispose();
-    _animationController.dispose();
+    _entrance.dispose();
     super.dispose();
   }
 
@@ -154,13 +158,13 @@ class _LoginScreenState extends State<LoginScreen>
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    // Reduced motion: show the form immediately, no fade/slide.
+    // Reduced motion: show everything immediately, no fade/rise/blur.
     if (MediaQuery.maybeDisableAnimationsOf(context) ?? false) {
-      _animationController.value = 1.0;
+      _entrance.value = 1.0;
     }
   }
 
-  /// Social sign-in button — quiet white/grey; gold stays reserved for the
+  /// Social sign-in button — quiet neutral; gold stays reserved for the
   /// primary Login button.
   Widget _buildSocialLoginButton({
     required BuildContext context,
@@ -196,7 +200,7 @@ class _LoginScreenState extends State<LoginScreen>
     // zeroed, so a check further down always sees 0.
     final keyboardUp = MediaQuery.viewInsetsOf(context).bottom > 0;
 
-    return AuroraBackground(
+    return LiquidGoldBackground(
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
@@ -206,7 +210,7 @@ class _LoginScreenState extends State<LoginScreen>
           actions: const [
             Padding(
               padding: EdgeInsets.only(right: 8.0),
-              // Quiet white/grey — gold is reserved for the Login button.
+              // Quiet neutral — gold is reserved for the brand + Login.
               child: LanguageSelector(
                 iconColor: AppColors.textSecondary,
                 textColor: AppColors.textSecondary,
@@ -244,17 +248,16 @@ class _LoginScreenState extends State<LoginScreen>
                   final compact = keyboardUp &&
                       constraints.maxHeight < _compactHeightBreakpoint;
                   final wide = constraints.maxWidth >= _cardBreakpoint;
-                  final logoSize = compact ? 64.0 : (wide ? 120.0 : 112.0);
-                  final topGap = compact ? 8.0 : (wide ? 16.0 : 24.0);
+                  final logoSize = compact ? 72.0 : (wide ? 148.0 : 136.0);
 
-                  final form = _buildForm(
-                    context,
-                    l10n,
-                    isLoading: isLoading,
-                    compact: compact,
-                    logoSize: logoSize,
-                  );
+                  // Optical centre: the block sits a little above the middle
+                  // of the free space (as in the mock), more so on tall
+                  // tablet / desktop windows; nothing when the keyboard is up.
+                  final topGap = compact
+                      ? 4.0
+                      : ((constraints.maxHeight - 640) / 3).clamp(8.0, 220.0);
 
+                  const bottomPad = AppDimensions.paddingM;
                   return SingleChildScrollView(
                     // A drag dismisses the keyboard — on a tablet the keyboard is
                     // the only thing that can cover the button.
@@ -264,24 +267,54 @@ class _LoginScreenState extends State<LoginScreen>
                       AppDimensions.paddingL,
                       topGap,
                       AppDimensions.paddingL,
-                      AppDimensions.paddingL,
+                      bottomPad,
                     ),
                     child: ConstrainedBox(
-                      // Vertically centre the column when it fits.
+                      // At least the viewport tall: spaceBetween then rests
+                      // the footer at the bottom when the form fits, and it
+                      // simply follows the form when it scrolls. (No
+                      // intrinsics/flex needed, so nothing can overflow.)
                       constraints: BoxConstraints(
-                        minHeight: (constraints.maxHeight -
-                                topGap -
-                                AppDimensions.paddingL)
+                        // Full width too: the scroll view hands down a loose
+                        // width, and a shrink-wrapped column would sit at the
+                        // left edge of a desktop window instead of centred.
+                        minWidth: (constraints.maxWidth -
+                                2 * AppDimensions.paddingL)
+                            .clamp(0.0, double.infinity),
+                        minHeight: (constraints.maxHeight - topGap - bottomPad)
                             .clamp(0.0, double.infinity),
                       ),
-                      child: Center(
-                        child: ConstrainedBox(
-                          // Full-bleed inputs look broken on a wide screen.
-                          constraints: BoxConstraints(
-                            maxWidth: wide ? _formMaxWidth + 80 : _formMaxWidth,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          ConstrainedBox(
+                            constraints:
+                                const BoxConstraints(maxWidth: _formMaxWidth),
+                            child: _buildForm(
+                              context,
+                              l10n,
+                              isLoading: isLoading,
+                              compact: compact,
+                              wide: wide,
+                              logoSize: logoSize,
+                            ),
                           ),
-                          child: wide ? _FormCard(child: form) : form,
-                        ),
+                          ConstrainedBox(
+                            constraints:
+                                const BoxConstraints(maxWidth: _formMaxWidth),
+                            child: Padding(
+                              padding: EdgeInsets.only(top: compact ? 20 : 28),
+                              child: RiseIn(
+                                animation: _steps[3],
+                                child: _buildFooter(
+                                  context,
+                                  l10n,
+                                  isLoading: isLoading,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   );
@@ -299,6 +332,7 @@ class _LoginScreenState extends State<LoginScreen>
     AppLocalizations l10n, {
     required bool isLoading,
     required bool compact,
+    required bool wide,
     required double logoSize,
   }) {
     return Form(
@@ -306,36 +340,39 @@ class _LoginScreenState extends State<LoginScreen>
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          // Logo — soft glow, no sparkles.
-          FadeTransition(
-            opacity: _fadeAnimation,
+          // 1 · Logo with a slow gold shimmer sweep.
+          RiseIn(
+            animation: _steps[0],
             child: Center(
               child: CalmBrandLogo(
                 assetPath: 'assets/images/greengo_logo.png',
                 size: logoSize,
+                shimmer: true,
               ),
             ),
           ),
 
+          // 2 · Tagline.
           if (!compact) ...[
-            const SizedBox(height: 16),
-            FadeTransition(
-              opacity: _fadeAnimation,
+            const SizedBox(height: 6),
+            RiseIn(
+              animation: _steps[1],
               // Narrower than the form so the line breaks into two balanced
               // lines instead of leaving a one-word orphan.
               child: Center(
                 child: ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 320),
+                  constraints: const BoxConstraints(maxWidth: 300),
                   child: Text(
                     l10n.loginTagline,
                     key: const ValueKey('login_tagline'),
                     textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white.withValues(alpha: 0.78),
-                      fontSize: 16,
-                      height: 1.45,
+                    style: const TextStyle(
+                      color: AppColors.liquidTagline,
+                      fontSize: 15,
+                      height: 1.5,
                       fontWeight: FontWeight.w400,
                       letterSpacing: 0.1,
+                      shadows: _onGlowShadow,
                     ),
                   ),
                 ),
@@ -343,292 +380,297 @@ class _LoginScreenState extends State<LoginScreen>
             ),
           ],
 
-          SizedBox(height: compact ? 24 : 40),
+          SizedBox(height: compact ? 16 : 28),
 
-          // Form Fields
-          SlideTransition(
-            position: _slideAnimation,
-            child: FadeTransition(
-              opacity: _fadeAnimation,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  // Email / Nickname Field (login accepts either)
-                  AuthTextField(
-                    fieldKey: E2EKeys.loginEmail,
-                    controller: _emailController,
-                    label: l10n.loginEmailOrNickname,
-                    keyboardType: TextInputType.emailAddress,
-                    translucent: true,
-                    validator: (value) {
-                      if (value == null || value.trim().isEmpty) {
-                        return l10n.authPleaseEnterEmail;
-                      }
-                      return null;
-                    },
-                    prefixIcon: Icons.email_outlined,
-                    enabled: !isLoading,
-                    textInputAction: TextInputAction.next,
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  // Password Field
-                  AuthTextField(
-                    fieldKey: E2EKeys.loginPassword,
-                    controller: _passwordController,
-                    label: l10n.password,
-                    obscureText: _obscurePassword,
-                    translucent: true,
-                    validator: (value) {
-                      if (value == null || value.isEmpty) {
-                        return l10n.passwordRequired;
-                      }
-                      return null;
-                    },
-                    prefixIcon: Icons.lock_outline,
-                    suffixIcon: IconButton(
-                      icon: Icon(
-                        _obscurePassword
-                            ? Icons.visibility_outlined
-                            : Icons.visibility_off_outlined,
-                        color: AppColors.textTertiary,
-                        size: 20,
-                      ),
-                      onPressed: () {
-                        setState(() {
-                          _obscurePassword = !_obscurePassword;
-                        });
-                      },
-                    ),
-                    enabled: !isLoading,
-                    // After typing the password the natural next move is the
-                    // keyboard's Go key — wire it to the same handler as the
-                    // button.
-                    textInputAction: TextInputAction.go,
-                    onSubmitted: (_) {
-                      if (!isLoading) _handleLogin();
-                    },
-                  ),
-
-                  const SizedBox(height: 8),
-
-                  // Forgot Password — quiet, not gold.
-                  Align(
-                    alignment: Alignment.centerRight,
-                    child: TextButton(
-                      onPressed: isLoading
-                          ? null
-                          : () {
-                              Navigator.of(context)
-                                  .pushNamed('/forgot-password');
-                            },
-                      style: TextButton.styleFrom(
-                        foregroundColor: AppColors.textSecondary,
-                      ),
-                      child: Text(
-                        l10n.forgotPassword,
-                        style: const TextStyle(
-                          color: AppColors.textSecondary,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400,
-                        ),
-                      ),
-                    ),
-                  ),
-
-                  const SizedBox(height: 24),
-
-                  // Login Button — the one strong (gold) accent on the page.
-                  AuthButton(
-                    key: E2EKeys.loginSubmit,
-                    text: l10n.login,
-                    onPressed: isLoading ? null : _handleLogin,
-                    isLoading: isLoading,
-                    height: 52,
-                  ),
-
-                  const SizedBox(height: 32),
-
-                  // Social Login Section (conditionally rendered)
-                  if (AppConfig.showSocialLoginSection) ...[
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Divider(
-                            color: Colors.white.withValues(alpha: 0.12),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16),
-                          child: Text(
-                            l10n.orContinueWith,
-                            style: const TextStyle(
-                              color: AppColors.textTertiary,
-                              fontSize: 13,
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          child: Divider(
-                            color: Colors.white.withValues(alpha: 0.12),
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 24),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        if (AppConfig.enableGoogleAuth)
-                          _buildSocialLoginButton(
-                            context: context,
-                            icon: Icons
-                                .g_mobiledata, // Placeholder - use FontAwesome when enabled
-                            onTap: isLoading
-                                ? null
-                                : () {
-                                    context.read<AuthBloc>().add(
-                                          const AuthSignInWithGoogleRequested(),
-                                        );
-                                  },
-                          ),
-                        if (AppConfig.enableFacebookAuth)
-                          _buildSocialLoginButton(
-                            context: context,
-                            icon: Icons
-                                .facebook, // Placeholder - use FontAwesome when enabled
-                            onTap: isLoading
-                                ? null
-                                : () {
-                                    context.read<AuthBloc>().add(
-                                          const AuthSignInWithFacebookRequested(),
-                                        );
-                                  },
-                          ),
-                        if (AppConfig.enableBiometricAuth)
-                          _buildSocialLoginButton(
-                            context: context,
-                            icon: Icons.fingerprint,
-                            onTap: isLoading
-                                ? null
-                                : () {
-                                    context.read<AuthBloc>().add(
-                                          const AuthBiometricSignInRequested(),
-                                        );
-                                  },
-                          ),
-                        if (AppConfig.enableAppleAuth)
-                          _buildSocialLoginButton(
-                            context: context,
-                            icon: Icons.apple,
-                            onTap: isLoading
-                                ? null
-                                : () {
-                                    // TODO: Implement Apple Sign In
-                                    ScaffoldMessenger.of(context).showSnackBar(
-                                      SnackBar(
-                                        content: Text(
-                                            l10n.authAppleSignInComingSoon),
-                                      ),
-                                    );
-                                  },
-                          ),
-                      ],
-                    ),
-                    const SizedBox(height: 32),
-                  ],
-
-                  // Sign Up Link. A Wrap, not a Row — the prompt + button
-                  // overflow a narrow phone in the longer locales, which
-                  // clipped the Sign Up tap target.
-                  Wrap(
-                    alignment: WrapAlignment.center,
-                    crossAxisAlignment: WrapCrossAlignment.center,
-                    children: [
-                      Text(
-                        l10n.dontHaveAccount,
-                        style: const TextStyle(
-                          color: AppColors.textTertiary,
-                          fontSize: 15,
-                        ),
-                      ),
-                      TextButton(
-                        onPressed: isLoading
-                            ? null
-                            : () {
-                                Navigator.of(context)
-                                    .pushReplacementNamed('/register');
-                              },
-                        style: TextButton.styleFrom(
-                          foregroundColor: AppColors.textPrimary,
-                        ),
-                        child: Text(
-                          l10n.signUp,
-                          style: const TextStyle(
-                            color: AppColors.textPrimary,
-                            fontWeight: FontWeight.w600,
-                            fontSize: 15,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-
-                  // Web on iPhone / iPad (not installed yet): install guide.
-                  const IosInstallLink(),
-
-                  const SizedBox(height: 24),
-
-                  // App Version
-                  FutureBuilder<PackageInfo>(
-                    future: PackageInfo.fromPlatform(),
-                    builder: (context, snapshot) {
-                      if (snapshot.hasData) {
-                        return Text(
-                          'v${snapshot.data!.version}',
-                          style: TextStyle(
-                            color: Colors.white.withValues(alpha: 0.5),
-                            fontSize: 12,
-                            letterSpacing: 0.4,
-                          ),
-                          textAlign: TextAlign.center,
-                        );
-                      }
-                      return const SizedBox.shrink();
-                    },
-                  ),
-
-                  const SizedBox(height: 8),
-                ],
-              ),
+          // 3 · Frosted glass form card.
+          RiseIn(
+            animation: _steps[2],
+            blur: false,
+            child: GlassCard(
+              padding: wide
+                  ? const EdgeInsets.fromLTRB(28, 28, 28, 28)
+                  : const EdgeInsets.fromLTRB(20, 24, 20, 24),
+              child: _buildFields(context, l10n, isLoading: isLoading),
             ),
           ),
         ],
       ),
     );
   }
-}
 
-/// Desktop / tablet container: a quiet translucent panel with a hairline
-/// border so the form reads as one unit over the wide aurora.
-class _FormCard extends StatelessWidget {
-  const _FormCard({required this.child});
+  Widget _buildFields(
+    BuildContext context,
+    AppLocalizations l10n, {
+    required bool isLoading,
+  }) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        // Email / Nickname Field (login accepts either)
+        AuthTextField(
+          fieldKey: E2EKeys.loginEmail,
+          controller: _emailController,
+          label: l10n.loginEmailOrNickname,
+          keyboardType: TextInputType.emailAddress,
+          translucent: true,
+          validator: (value) {
+            if (value == null || value.trim().isEmpty) {
+              return l10n.authPleaseEnterEmail;
+            }
+            return null;
+          },
+          prefixIcon: Icons.email_outlined,
+          enabled: !isLoading,
+          textInputAction: TextInputAction.next,
+        ),
 
-  final Widget child;
+        const SizedBox(height: 14),
 
-  @override
-  Widget build(BuildContext context) {
-    return DecoratedBox(
-      decoration: BoxDecoration(
-        color: Colors.black.withValues(alpha: 0.32),
-        borderRadius: BorderRadius.circular(AppDimensions.radiusXL),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(40, 40, 40, 24),
-        child: child,
-      ),
+        // Password Field
+        AuthTextField(
+          fieldKey: E2EKeys.loginPassword,
+          controller: _passwordController,
+          label: l10n.password,
+          obscureText: _obscurePassword,
+          translucent: true,
+          validator: (value) {
+            if (value == null || value.isEmpty) {
+              return l10n.passwordRequired;
+            }
+            return null;
+          },
+          prefixIcon: Icons.lock_outline,
+          suffixIcon: IconButton(
+            icon: Icon(
+              _obscurePassword
+                  ? Icons.visibility_outlined
+                  : Icons.visibility_off_outlined,
+              color: AppColors.liquidHint,
+              size: 20,
+            ),
+            onPressed: () {
+              setState(() {
+                _obscurePassword = !_obscurePassword;
+              });
+            },
+          ),
+          enabled: !isLoading,
+          // After typing the password the natural next move is the
+          // keyboard's Go key — wire it to the same handler as the
+          // button.
+          textInputAction: TextInputAction.go,
+          onSubmitted: (_) {
+            if (!isLoading) _handleLogin();
+          },
+        ),
+
+        const SizedBox(height: 4),
+
+        // Forgot Password — gold link.
+        Align(
+          alignment: Alignment.centerRight,
+          child: TextButton(
+            onPressed: isLoading
+                ? null
+                : () {
+                    Navigator.of(context).pushNamed('/forgot-password');
+                  },
+            style: TextButton.styleFrom(
+              foregroundColor: AppColors.liquidGoldLight,
+              padding: const EdgeInsets.symmetric(horizontal: 6),
+            ),
+            child: Text(
+              l10n.forgotPassword,
+              style: const TextStyle(
+                color: AppColors.liquidGoldLight,
+                fontSize: 13,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+
+        const SizedBox(height: 10),
+
+        // Login Button — gold gradient, breathing glow, tiny press scale.
+        BreathingGoldButton(
+          child: AuthButton(
+            key: E2EKeys.loginSubmit,
+            text: l10n.login,
+            onPressed: isLoading ? null : _handleLogin,
+            isLoading: isLoading,
+            height: 52,
+            gradient: _goldButtonGradient,
+            borderRadius: 14,
+            textColor: AppColors.liquidInk,
+          ),
+        ),
+
+        // Social Login Section (conditionally rendered)
+        if (AppConfig.showSocialLoginSection) ...[
+          const SizedBox(height: 24),
+          Row(
+            children: [
+              Expanded(
+                child: Divider(
+                  color: AppColors.liquidGoldLight.withValues(alpha: 0.16),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Text(
+                  l10n.orContinueWith,
+                  style: const TextStyle(
+                    color: AppColors.liquidMuted,
+                    fontSize: 13,
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Divider(
+                  color: AppColors.liquidGoldLight.withValues(alpha: 0.16),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              if (AppConfig.enableGoogleAuth)
+                _buildSocialLoginButton(
+                  context: context,
+                  icon: Icons
+                      .g_mobiledata, // Placeholder - use FontAwesome when enabled
+                  onTap: isLoading
+                      ? null
+                      : () {
+                          context.read<AuthBloc>().add(
+                                const AuthSignInWithGoogleRequested(),
+                              );
+                        },
+                ),
+              if (AppConfig.enableFacebookAuth)
+                _buildSocialLoginButton(
+                  context: context,
+                  icon: Icons
+                      .facebook, // Placeholder - use FontAwesome when enabled
+                  onTap: isLoading
+                      ? null
+                      : () {
+                          context.read<AuthBloc>().add(
+                                const AuthSignInWithFacebookRequested(),
+                              );
+                        },
+                ),
+              if (AppConfig.enableBiometricAuth)
+                _buildSocialLoginButton(
+                  context: context,
+                  icon: Icons.fingerprint,
+                  onTap: isLoading
+                      ? null
+                      : () {
+                          context.read<AuthBloc>().add(
+                                const AuthBiometricSignInRequested(),
+                              );
+                        },
+                ),
+              if (AppConfig.enableAppleAuth)
+                _buildSocialLoginButton(
+                  context: context,
+                  icon: Icons.apple,
+                  onTap: isLoading
+                      ? null
+                      : () {
+                          // TODO: Implement Apple Sign In
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text(l10n.authAppleSignInComingSoon),
+                            ),
+                          );
+                        },
+                ),
+            ],
+          ),
+        ],
+      ],
+    );
+  }
+
+  Widget _buildFooter(
+    BuildContext context,
+    AppLocalizations l10n, {
+    required bool isLoading,
+  }) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        // Sign Up Link. A Wrap, not a Row — the prompt + button overflow a
+        // narrow phone in the longer locales, which clipped the Sign Up tap
+        // target.
+        Wrap(
+          alignment: WrapAlignment.center,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: [
+            Text(
+              l10n.dontHaveAccount,
+              style: const TextStyle(
+                color: AppColors.liquidMuted,
+                fontSize: 14,
+                shadows: _onGlowShadow,
+              ),
+            ),
+            TextButton(
+              onPressed: isLoading
+                  ? null
+                  : () {
+                      Navigator.of(context).pushReplacementNamed('/register');
+                    },
+              style: TextButton.styleFrom(
+                foregroundColor: AppColors.liquidGoldLight,
+                padding: const EdgeInsets.symmetric(horizontal: 6),
+              ),
+              child: Text(
+                l10n.signUp,
+                style: const TextStyle(
+                  color: AppColors.liquidGoldLight,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 14,
+                  shadows: _onGlowShadow,
+                ),
+              ),
+            ),
+          ],
+        ),
+
+        // Web on iPhone / iPad (not installed yet): install guide.
+        const IosInstallLink(),
+
+        const SizedBox(height: 8),
+
+        // App Version
+        FutureBuilder<PackageInfo>(
+          future: _packageInfo,
+          builder: (context, snapshot) {
+            if (snapshot.hasData) {
+              return Text(
+                'v${snapshot.data!.version}',
+                style: const TextStyle(
+                  color: AppColors.liquidHint, // 7.3:1 on the base
+                  fontSize: 12,
+                  letterSpacing: 0.4,
+                  shadows: _onGlowShadow,
+                ),
+                textAlign: TextAlign.center,
+              );
+            }
+            return const SizedBox.shrink();
+          },
+        ),
+
+        const SizedBox(height: 4),
+      ],
     );
   }
 }

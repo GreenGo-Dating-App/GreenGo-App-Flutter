@@ -13,7 +13,13 @@ class AuthButton extends StatelessWidget {
     this.textColor,
     this.icon,
     this.height = AppDimensions.buttonHeightM,
+    this.gradient,
+    this.borderRadius = AppDimensions.radiusM,
   });
+  /// Optional fill gradient (login's liquid-gold button). Replaces the solid
+  /// [backgroundColor] for the filled variant.
+  final Gradient? gradient;
+  final double borderRadius;
   /// Minimum button height (login uses a slightly taller 52).
   final double height;
   final String text;
@@ -36,23 +42,33 @@ class AuthButton extends StatelessWidget {
             width: 2,
           ),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+            borderRadius: BorderRadius.circular(borderRadius),
           ),
         ),
         child: _buildChild(context),
       );
     }
 
+    final radius = BorderRadius.circular(borderRadius);
+    final g = gradient;
     return ElevatedButton(
       onPressed: isLoading ? null : onPressed,
       style: ElevatedButton.styleFrom(
-        backgroundColor: backgroundColor ?? AppColors.richGold,
+        backgroundColor: g != null
+            ? Colors.transparent
+            : (backgroundColor ?? AppColors.richGold),
+        disabledBackgroundColor: g != null ? Colors.transparent : null,
+        shadowColor: g != null ? Colors.transparent : null,
         foregroundColor: textColor ?? AppColors.deepBlack,
         minimumSize: Size(double.infinity, height),
         elevation: 0,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: radius),
+        backgroundBuilder: g == null
+            ? null
+            : (context, states, child) => DecoratedBox(
+                  decoration: BoxDecoration(gradient: g, borderRadius: radius),
+                  child: child,
+                ),
       ),
       child: _buildChild(context),
     );
