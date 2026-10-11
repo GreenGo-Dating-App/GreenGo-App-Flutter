@@ -33,6 +33,8 @@ import { ticketKey } from '../ticket_payments/keys';
 import { checkInBookingWithTicket } from '../experience_bookings/service';
 
 const CALL_OPTS = { memory: '512MiB' as const, timeoutSeconds: 60 };
+/** Server-only audit trail of manual (code-less) check-ins and undos. */
+export const CHECKIN_AUDIT = 'checkin_audit';
 const HOUR_MS = 60 * 60 * 1000;
 /** Doors open this long before the start … */
 export const EVENT_CHECKIN_EARLY_HOURS = 3;
@@ -112,11 +114,11 @@ export function canScanEvent(uid: string, ev: Record<string, any>): boolean {
 
 // ─────────────────────────────────────────────────────────── server side
 
-function fail(code: ConstructorParameters<typeof HttpsError>[0], reason: string, extra: Record<string, unknown> = {}): never {
+export function fail(code: ConstructorParameters<typeof HttpsError>[0], reason: string, extra: Record<string, unknown> = {}): never {
   throw new HttpsError(code, reason, { code: reason, ...extra });
 }
 
-function msOf(v: unknown): number | null {
+export function msOf(v: unknown): number | null {
   if (v instanceof admin.firestore.Timestamp) return v.toMillis();
   if (v instanceof Date) return v.getTime();
   if (typeof v === 'string') {
@@ -154,7 +156,7 @@ async function allowLegacyTickets(): Promise<boolean> {
   }
 }
 
-function withAuth(impl: (uid: string, data: any) => Promise<Record<string, unknown>>) {
+export function withAuth(impl: (uid: string, data: any) => Promise<Record<string, unknown>>) {
   return onCall(CALL_OPTS, async (req: CallableRequest<any>) => {
     const uid = req.auth?.uid;
     if (!uid) fail('unauthenticated', 'unauthenticated');
@@ -178,11 +180,11 @@ export function isPaidEventDoc(ev: Record<string, any> | undefined): boolean {
   if (!ev) return false;
   return (typeof ev.price === 'number' && ev.price > 0) || ev.ticketProvider != null;
 }
-function sellsTickets(ev: Record<string, any> | undefined): boolean {
+export function sellsTickets(ev: Record<string, any> | undefined): boolean {
   return !!ev && ev.ticketProvider != null;
 }
 
-async function validTicketFor(ticketId: unknown, eventId: string, userId: string): Promise<Record<string, any> | null> {
+export async function validTicketFor(ticketId: unknown, eventId: string, userId: string): Promise<Record<string, any> | null> {
   if (typeof ticketId !== 'string' || !ID_RE.test(ticketId)) return null;
   const t = (await admin.firestore().collection('tickets').doc(ticketId).get()).data();
   if (!t || t.kind !== 'event' || t.listingId !== eventId || t.buyerId !== userId) return null;
@@ -270,6 +272,8 @@ export async function admitEventAttendee(
   ev: Record<string, any>,
   verified: boolean,
   ticketId: string | null,
+  /** 'manual' from the organizer's check-in checklist (setEventAttendeeCheckIn). */
+  methodOverride?: 'manual',
 ): Promise<Record<string, unknown>> {
   const db = admin.firestore();
   const evRef = db.collection('events').doc(eventId);
@@ -292,8 +296,15 @@ export async function admitEventAttendee(
       checkedIn: true,
       checkedInAt: admin.firestore.FieldValue.serverTimestamp(),
       checkedInBy: uid,
-      checkInMethod: ticketId ? 'ticket' : verified ? 'signed' : 'legacy',
+      checkInMethod: methodOverride ?? (ticketId ? 'ticket' : verified ? 'signed' : 'legacy'),
     });
+    if (methodOverride === 'manual') {
+      // Code-less check-in by the organizer: audited (server-only collection).
+      tx.create(db.collection(CHECKIN_AUDIT).doc(), {
+        kind: 'event', action: 'check_in', method: 'manual', eventId, targetUid: userId,
+        byUid: uid, at: admin.firestore.FieldValue.serverTimestamp(),
+      });
+    }
     return { already: false, a };
   });
 

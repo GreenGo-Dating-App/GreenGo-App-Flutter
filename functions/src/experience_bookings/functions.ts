@@ -50,6 +50,8 @@ export const cancelBooking = callable(svc.cancelBooking);
 export const cancelExperienceSlot = callable(svc.cancelSlot);
 export const getBookingCheckInCode = callable(svc.getBookingCheckInCode);
 export const checkInBooking = callable(svc.checkInBooking);
+// My Space session checklist: host ticks a guest in by hand (audited).
+export const manualCheckInBooking = callable(svc.manualCheckInBooking);
 export const markBookingNoShow = callable(svc.markNoShow);
 export const markBookingPaid = callable((uid, data) => svc.markBookingPaid(uid, data));
 export const confirmCashReceived = callable(svc.confirmCashReceived);

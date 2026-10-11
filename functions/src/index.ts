@@ -763,6 +763,7 @@ export {
   cancelExperienceSlot,
   getBookingCheckInCode,
   checkInBooking,
+  manualCheckInBooking,
   markBookingNoShow,
   markBookingPaid,
   confirmCashReceived,
@@ -782,6 +783,8 @@ export {
 // QR check-in for events: signed tickets verified by the server, and the
 // shared "met in person" record (checkin/).
 export { getEventTicketCode, checkInEventAttendee, checkInTicket } from './checkin/eventCheckin';
+// My Space check-in checklist: organizer ticks attendees in / out by hand.
+export { setEventAttendeeCheckIn } from './checkin/manualCheckin';
 
 // Paid tickets for events + experiences (docs/payments/ticket-payments.md):
 // link mode (organizer confirms) + instant mode (Stripe Connect Standard /
