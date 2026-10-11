@@ -7314,5 +7314,13 @@
   "locMapRecenter": "Centrar",
   "locMapExpand": "Ampliar mapa",
   "locMapApproximateArea": "Zona aproximada",
-  "locMapCouldNotOpen": "No se pudo abrir una app de mapas"
+  "locMapCouldNotOpen": "No se pudo abrir una app de mapas",
+  "pcwTitle": "Contenido privado: léelo antes de verlo",
+  "pcwIntro": "Las fotos privadas, los álbumes privados y las fotos y vídeos que recibes en los chats se comparten contigo de forma personal.",
+  "pcwForbidden": "Hacer capturas o grabaciones de pantalla, guardar, compartir, reenviar o publicar este contenido sin el consentimiento de la persona que lo compartió está prohibido por nuestros Términos y es contrario a la ley. En muchos países puede ser un delito, por ejemplo compartir imágenes íntimas sin consentimiento.",
+  "pcwConsequences": "El uso indebido conlleva la suspensión o la expulsión definitiva de tu cuenta, la conservación de pruebas, la denuncia ante las autoridades y acciones legales.",
+  "pcwRecorded": "Verás este aviso solo una vez. Tu aceptación queda registrada.",
+  "pcwCheckbox": "He leído y acepto este aviso",
+  "pcwUnderstand": "Entendido",
+  "pcwSaveFailed": "No pudimos registrar tu aceptación. Comprueba tu conexión e inténtalo de nuevo."
 }

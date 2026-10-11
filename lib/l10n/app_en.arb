@@ -12671,5 +12671,37 @@
   "locMapCouldNotOpen": "Couldn't open a maps app",
   "@locMapCouldNotOpen": {
     "description": "Interactive location map control"
+  },
+  "pcwTitle": "Private content: read before viewing",
+  "@pcwTitle": {
+    "description": "Private-content warning (Terms 5.1.0 section 16.9(d)) shown before another user's private photos or received chat media"
+  },
+  "pcwIntro": "Private photos, private albums and the photos and videos you receive in chats are shared with you personally.",
+  "@pcwIntro": {
+    "description": "Private-content warning (Terms 5.1.0 section 16.9(d)) shown before another user's private photos or received chat media"
+  },
+  "pcwForbidden": "Taking screenshots or screen recordings, saving, sharing, forwarding or publishing this content without the consent of the person who shared it is forbidden by our Terms and is against the law. In many countries it can be a crime, for example sharing intimate images without consent.",
+  "@pcwForbidden": {
+    "description": "Private-content warning (Terms 5.1.0 section 16.9(d)) shown before another user's private photos or received chat media"
+  },
+  "pcwConsequences": "Misuse leads to suspension or a permanent ban of your account, preservation of evidence, reporting to the authorities and legal action.",
+  "@pcwConsequences": {
+    "description": "Private-content warning (Terms 5.1.0 section 16.9(d)) shown before another user's private photos or received chat media"
+  },
+  "pcwRecorded": "You will see this warning only once. Your acceptance is recorded.",
+  "@pcwRecorded": {
+    "description": "Private-content warning (Terms 5.1.0 section 16.9(d)) shown before another user's private photos or received chat media"
+  },
+  "pcwCheckbox": "I have read and accept this warning",
+  "@pcwCheckbox": {
+    "description": "Private-content warning (Terms 5.1.0 section 16.9(d)) shown before another user's private photos or received chat media"
+  },
+  "pcwUnderstand": "I understand",
+  "@pcwUnderstand": {
+    "description": "Private-content warning (Terms 5.1.0 section 16.9(d)) shown before another user's private photos or received chat media"
+  },
+  "pcwSaveFailed": "We could not record your acceptance. Check your connection and try again.",
+  "@pcwSaveFailed": {
+    "description": "Private-content warning (Terms 5.1.0 section 16.9(d)) shown before another user's private photos or received chat media"
   }
 }

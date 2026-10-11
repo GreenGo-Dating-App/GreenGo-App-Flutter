@@ -23634,6 +23634,35 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get locMapCouldNotOpen => 'Não foi possível abrir uma app de mapas';
+
+  @override
+  String get pcwTitle => 'Conteúdo privado: leia antes de ver';
+
+  @override
+  String get pcwIntro =>
+      'As fotos privadas, os álbuns privados e as fotos e vídeos que recebe nas conversas são partilhados consigo pessoalmente.';
+
+  @override
+  String get pcwForbidden =>
+      'Fazer capturas ou gravações de ecrã, guardar, partilhar, reencaminhar ou publicar este conteúdo sem o consentimento da pessoa que o partilhou é proibido pelos nossos Termos e é contra a lei. Em muitos países pode ser crime, por exemplo partilhar imagens íntimas sem consentimento.';
+
+  @override
+  String get pcwConsequences =>
+      'A utilização indevida leva à suspensão ou ao banimento definitivo da sua conta, à preservação de provas, à denúncia às autoridades e a ações judiciais.';
+
+  @override
+  String get pcwRecorded =>
+      'Verá este aviso apenas uma vez. A sua aceitação fica registada.';
+
+  @override
+  String get pcwCheckbox => 'Li e aceito este aviso';
+
+  @override
+  String get pcwUnderstand => 'Compreendo';
+
+  @override
+  String get pcwSaveFailed =>
+      'Não foi possível registar a sua aceitação. Verifique a ligação e tente novamente.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -47277,4 +47306,33 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get locMapCouldNotOpen => 'Não foi possível abrir um app de mapas';
+
+  @override
+  String get pcwTitle => 'Conteúdo privado: leia antes de ver';
+
+  @override
+  String get pcwIntro =>
+      'Fotos privadas, álbuns privados e as fotos e vídeos que você recebe nos chats são compartilhados com você pessoalmente.';
+
+  @override
+  String get pcwForbidden =>
+      'Fazer capturas ou gravações de tela, salvar, compartilhar, encaminhar ou publicar este conteúdo sem o consentimento da pessoa que o compartilhou é proibido pelos nossos Termos e é contra a lei. Em muitos países pode ser crime, por exemplo compartilhar imagens íntimas sem consentimento.';
+
+  @override
+  String get pcwConsequences =>
+      'O uso indevido leva à suspensão ou ao banimento definitivo da sua conta, à preservação de provas, à denúncia às autoridades e a medidas judiciais.';
+
+  @override
+  String get pcwRecorded =>
+      'Você verá este aviso apenas uma vez. Sua aceitação fica registrada.';
+
+  @override
+  String get pcwCheckbox => 'Li e aceito este aviso';
+
+  @override
+  String get pcwUnderstand => 'Entendi';
+
+  @override
+  String get pcwSaveFailed =>
+      'Não foi possível registrar sua aceitação. Verifique sua conexão e tente novamente.';
 }

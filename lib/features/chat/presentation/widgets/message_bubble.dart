@@ -24,6 +24,7 @@ import '../../../../core/widgets/interactive_location_map.dart';
 import 'deleted_message_bubble.dart';
 import '../../../../core/widgets/ai_consent_sheet.dart';
 import '../../../../core/security/viewer_watermark.dart';
+import '../../../../core/security/private_content_warning.dart';
 import '../../../copyright/data/copyright_service.dart';
 import '../../../copyright/presentation/screens/copyright_notice_form_screen.dart';
 
@@ -993,7 +994,8 @@ class _MessageBubbleState extends State<MessageBubble> {
         return Column(
           children: [
             GestureDetector(
-              onTap: () => _openFullScreenImage(context, message.content),
+              onTap: () => _openReceivedMedia(context,
+                  () => _openFullScreenImage(context, message.content)),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(AppDimensions.radiusS),
                 child: SizedBox(
@@ -1065,7 +1067,8 @@ class _MessageBubbleState extends State<MessageBubble> {
             ClipRRect(
               borderRadius: BorderRadius.circular(AppDimensions.radiusS),
               child: GestureDetector(
-                onTap: () => _openVideoPlayer(context, message.content),
+                onTap: () => _openReceivedMedia(context,
+                    () => _openVideoPlayer(context, message.content)),
                 child: Container(
                   width: 200,
                   height: 200,
@@ -1415,6 +1418,18 @@ class _MessageBubbleState extends State<MessageBubble> {
         ),
       );
     }
+  }
+
+  /// Media received from another user opens only after the private-content
+  /// warning was accepted (Terms §16.9(d)); the user's own media never asks.
+  Future<void> _openReceivedMedia(
+      BuildContext context, VoidCallback open) async {
+    if (!widget.isCurrentUser &&
+        !await ensurePrivateContentWarningAccepted(context)) {
+      return;
+    }
+    if (!context.mounted) return;
+    open();
   }
 
   void _openFullScreenImage(BuildContext context, String imageUrl) {
