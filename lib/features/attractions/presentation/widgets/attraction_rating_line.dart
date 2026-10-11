@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../domain/attraction_rating.dart';
 
-/// "★ 4.6 (23)" for GreenGo users' rating, "★ 4.5" for the Google fallback.
+/// "★ 4.6 (23)": GreenGo users' rating.
 /// Renders nothing when [display] is null (see [AttractionRatingDisplay.of]).
 class AttractionRatingLine extends StatelessWidget {
   const AttractionRatingLine({

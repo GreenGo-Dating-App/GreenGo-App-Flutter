@@ -627,8 +627,11 @@ class _DetailViewState extends State<_DetailView> {
         ),
         const SizedBox(height: 10),
         Row(children: [
-          StarRatingDisplay(rating: e.averageRating, size: 18),
-          const SizedBox(width: 6),
+          // No stars at all until someone has actually reviewed it.
+          if (e.ratingCount > 0) ...[
+            StarRatingDisplay(rating: e.averageRating, size: 18),
+            const SizedBox(width: 6),
+          ],
           Text(
             e.ratingCount == 0
                 ? l.uexpNoReviews

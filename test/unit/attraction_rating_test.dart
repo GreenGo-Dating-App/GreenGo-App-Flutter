@@ -6,27 +6,19 @@ import 'package:greengo_chat/features/attractions/domain/attraction_rating.dart'
 
 void main() {
   group('AttractionRatingDisplay.of (card rating rule)', () {
-    test('GreenGo rating wins when anyone rated', () {
+    test('GreenGo rating shown when anyone rated', () {
       final d = AttractionRatingDisplay.of(
-          const AttractionRatingSummary(sum: 14, count: 3), 4.1)!;
+          const AttractionRatingSummary(sum: 14, count: 3))!;
       expect(d.isGreenGo, isTrue);
       expect(d.count, 3);
       expect(d.valueLabel, '4.7');
     });
 
-    test('falls back to Google when nobody rated', () {
+    test('no stars when nobody rated (the catalogue estimate is never shown)', () {
       for (final s in [null, AttractionRatingSummary.empty,
           const AttractionRatingSummary(sum: -3, count: -1)]) {
-        final d = AttractionRatingDisplay.of(s, 4.5)!;
-        expect(d.isGreenGo, isFalse);
-        expect(d.count, isNull);
-        expect(d.valueLabel, '4.5');
+        expect(AttractionRatingDisplay.of(s), isNull);
       }
-    });
-
-    test('nothing when neither exists', () {
-      expect(AttractionRatingDisplay.of(null, null), isNull);
-      expect(AttractionRatingDisplay.of(AttractionRatingSummary.empty, 0), isNull);
     });
   });
 

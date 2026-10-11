@@ -630,17 +630,6 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
                           style: const TextStyle(
                               color: AppColors.textSecondary, fontSize: 13)),
                     ),
-                    if (a.googleRating != null) ...[
-                      Semantics(
-                        label: l10n.attrRatingGoogleLabel,
-                        child: const Icon(Icons.star,
-                            size: 15, color: AppColors.richGold),
-                      ),
-                      const SizedBox(width: 2),
-                      Text('${a.googleRating}',
-                          style: const TextStyle(
-                              color: AppColors.textPrimary, fontSize: 13)),
-                    ],
                     if ((_shownViews ?? 0) > 0) ...[
                       const SizedBox(width: 10),
                       const Icon(Icons.visibility_outlined,

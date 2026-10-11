@@ -379,7 +379,7 @@ class _ExperienceReviewsSectionState extends State<ExperienceReviewsSection> {
                       color: AppColors.textPrimary,
                       fontSize: 34,
                       fontWeight: FontWeight.bold)),
-              StarRatingDisplay(rating: e.averageRating, size: 16),
+              if (total > 0) StarRatingDisplay(rating: e.averageRating, size: 16),
               const SizedBox(height: 4),
               Text(l.uexpReviewsCount(total),
                   style: const TextStyle(

@@ -70,10 +70,10 @@ class ExternalEventsDataSource {
     }
   }
 
-  List<ExternalEvent> _samplesFor(String source) {
-    final s = ExternalEvent.samples.where((e) => e.source == source).toList();
-    return s.isNotEmpty ? s : ExternalEvent.samples;
-  }
+  /// What to show when the feed is empty or unreachable: nothing. This used
+  /// to return [ExternalEvent.samples] (invented events with invented
+  /// ratings), which real users saw as if they were genuine listings.
+  List<ExternalEvent> _samplesFor(String source) => const [];
 
   static double _distanceKm(double lat1, double lng1, double lat2, double lng2) {
     const r = 6371.0;

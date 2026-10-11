@@ -3617,8 +3617,7 @@ class _FeaturedCard extends StatelessWidget {
                                   final a = happening.attraction!;
                                   final d = AttractionRatingDisplay.of(
                                       AttractionRatingsStore.instance
-                                          .peek(a.id),
-                                      a.googleRating);
+                                          .peek(a.id));
                                   if (d == null) {
                                     return const SizedBox.shrink();
                                   }
@@ -4735,7 +4734,11 @@ class _Happening {
       attraction?.imageUrl('card', bucket: attractionBucket ?? '');
 
   /// Ratings/prices/source labels only exist for external experiences.
-  double? get rating => external?.rating;
+  /// Provider rating, only when backed by a review count (never a bare number).
+  double? get rating =>
+      (external?.reviewCount ?? 0) > 0 && (external?.rating ?? 0) > 0
+          ? external!.rating
+          : null;
   double? get fromPrice => external?.fromPrice;
   String? get currency => external?.currency;
   String? get sourceLabel => external?.sourceLabel;

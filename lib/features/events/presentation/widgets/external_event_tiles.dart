@@ -245,7 +245,9 @@ class ExternalEventCard extends StatelessWidget {
                               color: AppColors.textSecondary, fontSize: 12),
                         ),
                       ),
-                      if (e.rating != null && e.rating! > 0) ...[
+                      // Provider rating only when backed by a review count.
+                      if (e.rating != null && e.rating! > 0 &&
+                          (e.reviewCount ?? 0) > 0) ...[
                         const Icon(Icons.star,
                             size: 14, color: AppColors.richGold),
                         const SizedBox(width: 2),
@@ -297,15 +299,11 @@ class ExternalEventGridTile extends StatelessWidget {
     required this.event,
     required this.onTap,
     this.showPartnerBadge = false,
-    this.showReviewCount = false,
   });
 
   final ExternalEvent event;
   final VoidCallback onTap;
   final bool showPartnerBadge;
-
-  /// Append the review count to the rating ("★ 4.7 (5.3k)") when known.
-  final bool showReviewCount;
 
   @override
   Widget build(BuildContext context) {
@@ -375,14 +373,14 @@ class ExternalEventGridTile extends StatelessWidget {
                     const SizedBox(height: 2),
                     Row(
                       children: [
-                        if (e.rating != null && e.rating! > 0) ...[
+                        // Provider rating only when backed by a review count.
+                        if (e.rating != null && e.rating! > 0 && reviews > 0) ...[
                           const Icon(Icons.star,
                               size: 10, color: AppColors.richGold),
                           Text('${e.rating}',
                               style: const TextStyle(
                                   color: AppColors.textTertiary, fontSize: 10)),
-                          if (showReviewCount && reviews > 0)
-                            Flexible(
+                          Flexible(
                               child: Text(' (${formatCompactCount(reviews)})',
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,

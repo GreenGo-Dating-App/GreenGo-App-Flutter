@@ -67,7 +67,7 @@ class AttractionRatingDisplay {
   /// Stars, 1 decimal when rendered.
   final double value;
 
-  /// Number of GreenGo ratings; null for the Google rating fallback.
+  /// Number of GreenGo ratings.
   final int? count;
 
   bool get isGreenGo => count != null;
@@ -75,15 +75,13 @@ class AttractionRatingDisplay {
   /// "4.6" — always one decimal.
   String get valueLabel => value.toStringAsFixed(1);
 
-  /// The display rule: GreenGo users' rating when anyone rated, else the
-  /// Google rating when the catalogue has one, else nothing (null).
-  static AttractionRatingDisplay? of(
-      AttractionRatingSummary? greengo, double? googleRating) {
+  /// The display rule: GreenGo users' real rating when anyone rated, else
+  /// nothing (null). The catalogue's `googleRating` is an ESTIMATE
+  /// (`GoogleRatingApprox` in the dataset), not a rating anyone gave, so it is
+  /// never shown as stars.
+  static AttractionRatingDisplay? of(AttractionRatingSummary? greengo) {
     if (greengo != null && greengo.hasRatings) {
       return AttractionRatingDisplay._(greengo.average, greengo.count);
-    }
-    if (googleRating != null && googleRating > 0) {
-      return AttractionRatingDisplay._(googleRating, null);
     }
     return null;
   }

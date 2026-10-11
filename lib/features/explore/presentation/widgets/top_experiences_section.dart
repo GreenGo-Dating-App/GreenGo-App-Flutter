@@ -109,7 +109,6 @@ class TopExperiencesSection extends StatelessWidget {
       return ExternalEventGridTile(
         event: p,
         showPartnerBadge: true,
-        showReviewCount: true,
         onTap: () => onOpenPartner(p),
       );
     }

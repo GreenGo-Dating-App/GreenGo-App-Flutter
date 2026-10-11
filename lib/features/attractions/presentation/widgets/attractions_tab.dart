@@ -215,7 +215,7 @@ class _AttractionsTabState extends State<AttractionsTab>
   }
 
   AttractionRatingDisplay? _ratingOf(Attraction a) =>
-      AttractionRatingDisplay.of(_ratings.peek(a.id), a.googleRating);
+      AttractionRatingDisplay.of(_ratings.peek(a.id));
 
   @override
   void initState() {
@@ -719,7 +719,8 @@ class _AttractionsTabState extends State<AttractionsTab>
         break;
       case 'rating':
         out.sort((a, b) =>
-            then((b.googleRating ?? 0).compareTo(a.googleRating ?? 0), a, b));
+            then((_ratings.peek(b.id)?.average ?? 0)
+                .compareTo(_ratings.peek(a.id)?.average ?? 0), a, b));
         break;
       case 'price':
         out.sort((a, b) =>

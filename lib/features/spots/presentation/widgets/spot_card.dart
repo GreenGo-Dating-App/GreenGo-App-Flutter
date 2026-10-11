@@ -114,9 +114,12 @@ class SpotCard extends StatelessWidget {
                   Row(
                     children: [
                       // Stars
-                      ..._buildStars(spot.rating),
-                      const SizedBox(width: 6),
-                      Text(
+                      // Stars only once someone has actually reviewed it.
+                      if (spot.reviewCount > 0) ...[
+                        ..._buildStars(spot.rating),
+                        const SizedBox(width: 6),
+                      ],
+                      if (spot.reviewCount > 0) Text(
                         spot.rating.toStringAsFixed(1),
                         style: const TextStyle(
                           color: AppColors.richGold,
