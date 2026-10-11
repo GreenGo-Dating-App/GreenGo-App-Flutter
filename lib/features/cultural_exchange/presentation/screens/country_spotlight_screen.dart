@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/country_names_l10n.dart';
 import '../../../../generated/app_localizations.dart';
@@ -13,6 +14,14 @@ class CountrySpotlightScreen extends StatelessWidget {
     required this.spotlight, super.key,
   });
   final CountrySpotlight spotlight;
+
+  /// Sections to render. The `datingEtiquette` section (dating-oriented
+  /// Firestore content) is hidden unless [FlavorConfig.enableEtiquetteGuide].
+  List<SpotlightSection> get _visibleSections => FlavorConfig.enableEtiquetteGuide
+      ? spotlight.sections
+      : spotlight.sections
+          .where((s) => s.type != SpotlightSectionType.datingEtiquette)
+          .toList();
 
   @override
   Widget build(BuildContext context) {
@@ -122,12 +131,12 @@ class CountrySpotlightScreen extends StatelessWidget {
             sliver: SliverList(
               delegate: SliverChildListDelegate([
                 // Render each section
-                ...spotlight.sections.map(
+                ..._visibleSections.map(
                   (s) => _buildSection(l10n, s),
                 ),
 
                 // If no sections, show placeholder
-                if (spotlight.sections.isEmpty)
+                if (_visibleSections.isEmpty)
                   _buildEmptyContent(l10n),
 
                 const SizedBox(height: 40),

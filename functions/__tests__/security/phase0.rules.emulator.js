@@ -64,7 +64,7 @@ async function client(email) {
   await adb.doc('app_config/resend_settings').set({ apiKey: 'secret' });
   await adb.doc(`profiles/${A}`).set({ name: 'Alice', signupGrantsAppliedAt: admin.firestore.Timestamp.now(),
     signupGrantsApplied: [{ couponId: 'welcome_2026', dismissed: false }] });
-  await adb.doc(`nicknames/bobby`).set({ email: 'bob@example.com', uid: B });
+  await adb.doc(`nicknames/bobby`).set({ uid: B, nickname: 'bobby' });
   await adb.doc(`referrals/${B}`).set({ redeemedCode: 'ABC', redeemedFrom: A }); // server-written
 
   // ---- app_config (C-08) ----
@@ -77,9 +77,13 @@ async function client(email) {
   await expectDenied('anonymous lists app_config', () => fs.getDocs(fs.collection(anon.db, 'app_config')));
 
   // ---- nicknames (C-06) ----
-  await expectOk('registration writes own nickname {email, uid}', () =>
-    fs.setDoc(D(alice, 'nicknames/ali'), { email: 'alice@example.com', uid: A, createdAt: fs.serverTimestamp() }));
-  await expectOk('nickname login: anonymous get by id', () => fs.getDoc(D(anon, 'nicknames/bobby')));
+  await expectOk('sign-in sync writes own nickname {uid, nickname, createdAt}', () =>
+    fs.setDoc(D(alice, 'nicknames/ali'), { uid: A, nickname: 'ali', createdAt: fs.serverTimestamp() }));
+  await expectDenied('INC-2026-001: nickname doc with the account email', () =>
+    fs.setDoc(D(alice, 'nicknames/ali'), { email: 'alice@example.com', uid: A, nickname: 'ali' }));
+  await expectDenied('INC-2026-001: nickname field differing from the doc id', () =>
+    fs.setDoc(D(alice, 'nicknames/ali'), { uid: A, nickname: 'bobby' }));
+  await expectOk('nickname availability: anonymous get by id', () => fs.getDoc(D(anon, 'nicknames/bobby')));
   await expectDenied('anonymous lists all nicknames (email dump)', () => fs.getDocs(fs.collection(anon.db, 'nicknames')));
   await expectDenied('signed-in lists all nicknames', () => fs.getDocs(fs.collection(alice.db, 'nicknames')));
   await expectDenied('hijack another user\'s nickname mapping', () =>

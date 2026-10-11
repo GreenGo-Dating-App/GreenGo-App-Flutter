@@ -9,6 +9,7 @@ import '../../../../core/config/app_config.dart';
 import '../../../../core/providers/language_provider.dart';
 import '../../../../core/error/exceptions.dart';
 import '../models/user_model.dart';
+import 'nickname_sign_in.dart';
 import '../../../profile/data/private_profile.dart';
 
 abstract class AuthRemoteDataSource {
@@ -89,10 +90,17 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource { // Will be Face
     required this.firebaseAuth,
     this.googleSignIn,
     this.facebookAuth,
-  });
+    FirebaseFirestore? firestore,
+    NicknameTokenFetcher? nicknameTokenFetcher,
+  })  : _firestore = firestore,
+        _nicknameTokenFetcher = nicknameTokenFetcher;
   final firebase_auth.FirebaseAuth firebaseAuth;
   final dynamic googleSignIn; // Will be GoogleSignIn? when enabled
   final dynamic facebookAuth;
+  final FirebaseFirestore? _firestore;
+  final NicknameTokenFetcher? _nicknameTokenFetcher;
+
+  FirebaseFirestore get _db => _firestore ?? FirebaseFirestore.instance;
 
   @override
   Future<UserModel> signInWithEmail({
@@ -100,47 +108,53 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource { // Will be Face
     required String password,
   }) async {
     try {
-      // Check if input is a nickname rather than an email
-      // Strip leading '@' since users often type @nickname
-      var input = email.trim();
-      if (input.startsWith('@')) {
-        input = input.substring(1);
+      // The field accepts "Email / Nickname". A nickname (no '@' once a
+      // leading '@' is stripped) signs in through the server, which verifies
+      // the password and returns a custom token (INC-2026-001: the email is
+      // no longer readable from nicknames/{nick}).
+      final nickname = NicknameSignIn.nicknameFromIdentifier(email);
+      final firebase_auth.UserCredential userCredential;
+      if (nickname != null) {
+        final String token;
+        try {
+          token = await (_nicknameTokenFetcher ?? NicknameSignIn.fetchToken)(
+            nickname,
+            password,
+          );
+        } on FirebaseFunctionsException catch (e) {
+          throw NicknameSignIn.mapError(e.code, e.details);
+        }
+        userCredential = await firebaseAuth.signInWithCustomToken(token);
+      } else {
+        userCredential = await firebaseAuth.signInWithEmailAndPassword(
+          email: email.trim(),
+          password: password,
+        );
       }
-      var resolvedEmail = input;
-      if (!input.contains('@')) {
-        // Treat as nickname - look up email from Firestore profiles
-        resolvedEmail = await _resolveNicknameToEmail(input);
-      }
-
-      final userCredential = await firebaseAuth.signInWithEmailAndPassword(
-        email: resolvedEmail,
-        password: password,
-      );
 
       if (userCredential.user == null) {
         throw AuthenticationException('Sign in failed');
       }
 
-      // Store email on profile, users, and nicknames docs so nickname login works
       final uid = userCredential.user!.uid;
-      final firestore = FirebaseFirestore.instance;
+      final accountEmail = userCredential.user!.email ??
+          (nickname == null ? email.trim() : null);
       try {
-        // Email is private (security P1-4): owner-only profiles_private,
-        // never the public profile.
-        writePrivateProfile(firestore, uid, {
-          'email': resolvedEmail,
-          'updatedAt': FieldValue.serverTimestamp(),
-        });
-        firestore.collection('users').doc(uid).set({'email': resolvedEmail}, SetOptions(merge: true));
-        // Also sync nickname → email in public nicknames collection
-        final profileDoc = await firestore.collection('profiles').doc(uid).get();
-        final nick = profileDoc.data()?['nickname'] as String?;
-        if (nick != null && nick.isNotEmpty) {
-          firestore.collection('nicknames').doc(nick.toLowerCase()).set({
-            'email': resolvedEmail,
-            'uid': uid,
+        final firestore = _db;
+        if (accountEmail != null && accountEmail.isNotEmpty) {
+          // Email is private (security P1-4): owner-only profiles_private,
+          // never the public profile.
+          writePrivateProfile(firestore, uid, {
+            'email': accountEmail,
+            'updatedAt': FieldValue.serverTimestamp(),
           });
+          firestore
+              .collection('users')
+              .doc(uid)
+              .set({'email': accountEmail}, SetOptions(merge: true))
+              .catchError((_) => null);
         }
+        await _syncNicknameMapping(firestore, uid);
       } catch (_) {}
 
       return UserModel.fromFirebaseUser(userCredential.user!);
@@ -163,29 +177,28 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource { // Will be Face
     }
   }
 
-  /// Resolve a nickname to an email address via the public 'nicknames' collection.
-  /// This collection is readable without authentication (unlike 'profiles').
-  Future<String> _resolveNicknameToEmail(String nickname) async {
-    try {
-      final firestore = FirebaseFirestore.instance;
-      final normalizedNickname = nickname.toLowerCase().replaceAll('@', '');
-
-      // Query the public nicknames collection (readable without auth)
-      final doc = await firestore
-          .collection('nicknames')
-          .doc(normalizedNickname)
-          .get();
-
-      if (!doc.exists || doc.data()?['email'] == null) {
-        throw AuthenticationException('No account found with nickname "@$normalizedNickname"');
-      }
-
-      return doc.data()!['email'] as String;
-    } on AuthenticationException {
-      rethrow;
-    } catch (e) {
-      throw AuthenticationException('Failed to look up nickname: ${e.toString()}');
-    }
+  /// Keeps the public `nicknames/{nick}` -> uid mapping (nickname sign-in and
+  /// availability) in place for the signed-in user. The doc holds ONLY
+  /// `{uid, nickname, createdAt}`: never the email (INC-2026-001; the rules
+  /// reject any other key). A legacy doc that still carries the email is
+  /// rewritten without it.
+  Future<void> _syncNicknameMapping(FirebaseFirestore firestore, String uid) async {
+    final profileDoc = await firestore.collection('profiles').doc(uid).get();
+    final nick = (profileDoc.data()?['nickname'] as String?)?.trim().toLowerCase();
+    if (nick == null || nick.isEmpty || nick.contains('/')) return;
+    final ref = firestore.collection('nicknames').doc(nick);
+    final existing = await ref.get();
+    final data = existing.data();
+    if (existing.exists && data?['uid'] != uid) return; // someone else's
+    final clean = existing.exists &&
+        data!.keys.every((k) => k == 'uid' || k == 'nickname' || k == 'createdAt') &&
+        data['nickname'] == nick;
+    if (clean) return;
+    await ref.set({
+      'uid': uid,
+      'nickname': nick,
+      'createdAt': data?['createdAt'] ?? FieldValue.serverTimestamp(),
+    });
   }
 
   @override

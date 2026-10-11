@@ -6,6 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../../../core/widgets/zoom_photo_viewer.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/deep_link_service.dart';
@@ -14,6 +15,8 @@ import '../../../../core/widgets/translatable_text.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../copyright/data/copyright_service.dart';
+import '../../../copyright/presentation/screens/copyright_notice_form_screen.dart';
 import '../../../experience_bookings/domain/entities/booking.dart';
 import '../../../experience_bookings/domain/repositories/bookings_repository.dart';
 import '../../../experience_bookings/presentation/screens/book_experience_screen.dart';
@@ -29,6 +32,7 @@ import '../experience_safety_flow.dart';
 import '../widgets/booking_consent_dialog.dart';
 import '../widgets/experience_policy_widgets.dart';
 import '../widgets/experience_reviews_section.dart';
+import '../widgets/experience_location_map.dart';
 import '../widgets/experience_widgets.dart';
 import '../widgets/report_experience_sheet.dart';
 import 'experience_editor_screen.dart';
@@ -252,7 +256,9 @@ class _DetailViewState extends State<_DetailView> {
   /// auto-hide the listing pending admin review).
   Future<void> _report() async {
     final bloc = context.read<ExperienceDetailBloc>();
-    final input = await ReportExperienceSheet.show(context);
+    final input = await ReportExperienceSheet.show(context,
+        onCopyright: () => openCopyrightNoticeForm(context,
+            content: CopyrightContentRef.experience(widget.experienceId)));
     if (input == null) return;
     bloc.add(ExperienceDetailReported(widget.currentUserId,
         reason: input.reason.wire, details: input.details));
@@ -392,6 +398,7 @@ class _DetailViewState extends State<_DetailView> {
                       ),
                       const SizedBox(height: 20),
                       _infoCard(e, l),
+                      ExperienceLocationMap(experience: e),
                       if (!e.isFree) ...[
                         const SizedBox(height: 20),
                         CancellationPolicyCard(
@@ -533,7 +540,7 @@ class _DetailViewState extends State<_DetailView> {
             itemBuilder: (_, i) => GestureDetector(
               onTap: photos.isEmpty
                   ? null
-                  : () => ExperiencePhotoViewer.open(context, photos, i),
+                  : () => ZoomPhotoViewer.open(context, photos, i),
               child: ExperienceImage(
                 url: photos.isEmpty ? '' : photos[i],
                 category: e.category,

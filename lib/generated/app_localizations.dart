@@ -176,7 +176,7 @@ abstract class AppLocalizations {
   /// No description provided for @passportEventDating.
   ///
   /// In en, this message translates to:
-  /// **'Dating'**
+  /// **'Meetups'**
   String get passportEventDating;
 
   /// No description provided for @passportEventSocial.
@@ -272,7 +272,7 @@ abstract class AppLocalizations {
   /// No description provided for @tourCardTapDesc.
   ///
   /// In en, this message translates to:
-  /// **'Tap the center of a card to open the action menu — like, super-like, or view their full profile.'**
+  /// **'Tap the center of a card to open the action menu — connect, Priority Connect, or view their full profile.'**
   String get tourCardTapDesc;
 
   /// No description provided for @tourCardEdgeTitle.
@@ -320,7 +320,7 @@ abstract class AppLocalizations {
   /// No description provided for @tourModeToggleDesc.
   ///
   /// In en, this message translates to:
-  /// **'Tap here to switch between grid and swipe mode. In swipe mode: swipe right to like, left to pass, up to super-like.'**
+  /// **'Tap here to switch between grid and swipe mode. In swipe mode: swipe right to connect, left to pass, up to send a Priority Connect.'**
   String get tourModeToggleDesc;
 
   /// No description provided for @tourGlobeTitle.
@@ -464,7 +464,7 @@ abstract class AppLocalizations {
   /// No description provided for @tourSwipeHintSuper.
   ///
   /// In en, this message translates to:
-  /// **'Super Like'**
+  /// **'Priority Connect'**
   String get tourSwipeHintSuper;
 
   /// No description provided for @tourChatHoldTitle.
@@ -1352,7 +1352,7 @@ abstract class AppLocalizations {
   /// No description provided for @adminEngagementReportsSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'View matching and messaging statistics'**
+  /// **'View connection and messaging statistics'**
   String get adminEngagementReportsSubtitle;
 
   /// No description provided for @adminEnterEmailAddress.
@@ -1616,13 +1616,13 @@ abstract class AppLocalizations {
   /// No description provided for @adminMatchPriority.
   ///
   /// In en, this message translates to:
-  /// **'Match Priority'**
+  /// **'Connection Priority'**
   String get adminMatchPriority;
 
   /// No description provided for @adminMatchingAndVisibility.
   ///
   /// In en, this message translates to:
-  /// **'Matching & Visibility'**
+  /// **'Connections & Visibility'**
   String get adminMatchingAndVisibility;
 
   /// No description provided for @adminMessageContext.
@@ -2660,7 +2660,7 @@ abstract class AppLocalizations {
   /// No description provided for @appTagline.
   ///
   /// In en, this message translates to:
-  /// **'Discover Your Perfect Match'**
+  /// **'Discover cultures and people worldwide'**
   String get appTagline;
 
   /// No description provided for @approveVerification.
@@ -2975,252 +2975,6 @@ abstract class AppLocalizations {
   /// **'Bio Updated!'**
   String get bioUpdatedTitle;
 
-  /// No description provided for @blindDateActivate.
-  ///
-  /// In en, this message translates to:
-  /// **'Activate Blind Date Mode'**
-  String get blindDateActivate;
-
-  /// No description provided for @blindDateDeactivate.
-  ///
-  /// In en, this message translates to:
-  /// **'Deactivate'**
-  String get blindDateDeactivate;
-
-  /// No description provided for @blindDateDeactivateMessage.
-  ///
-  /// In en, this message translates to:
-  /// **'You\'ll return to normal discovery mode.'**
-  String get blindDateDeactivateMessage;
-
-  /// No description provided for @blindDateDeactivateTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Deactivate Blind Date Mode?'**
-  String get blindDateDeactivateTitle;
-
-  /// No description provided for @blindDateDeactivateTooltip.
-  ///
-  /// In en, this message translates to:
-  /// **'Deactivate Blind Date Mode'**
-  String get blindDateDeactivateTooltip;
-
-  /// No description provided for @blindDateFeatureInstantReveal.
-  ///
-  /// In en, this message translates to:
-  /// **'Instant reveal for {cost} coins'**
-  String blindDateFeatureInstantReveal(int cost);
-
-  /// No description provided for @blindDateFeatureNoPhotos.
-  ///
-  /// In en, this message translates to:
-  /// **'No profile photos visible initially'**
-  String get blindDateFeatureNoPhotos;
-
-  /// No description provided for @blindDateFeaturePersonality.
-  ///
-  /// In en, this message translates to:
-  /// **'Focus on personality & interests'**
-  String get blindDateFeaturePersonality;
-
-  /// No description provided for @blindDateFeatureUnlock.
-  ///
-  /// In en, this message translates to:
-  /// **'Photos unlock after chatting'**
-  String get blindDateFeatureUnlock;
-
-  /// No description provided for @blindDateGetCoins.
-  ///
-  /// In en, this message translates to:
-  /// **'Get Coins'**
-  String get blindDateGetCoins;
-
-  /// No description provided for @blindDateInstantReveal.
-  ///
-  /// In en, this message translates to:
-  /// **'Instant Reveal'**
-  String get blindDateInstantReveal;
-
-  /// No description provided for @blindDateInstantRevealMessage.
-  ///
-  /// In en, this message translates to:
-  /// **'Reveal all photos of this match for {cost} coins?'**
-  String blindDateInstantRevealMessage(int cost);
-
-  /// No description provided for @blindDateInstantRevealTooltip.
-  ///
-  /// In en, this message translates to:
-  /// **'Instant reveal ({cost} coins)'**
-  String blindDateInstantRevealTooltip(int cost);
-
-  /// No description provided for @blindDateInsufficientCoins.
-  ///
-  /// In en, this message translates to:
-  /// **'Insufficient Coins'**
-  String get blindDateInsufficientCoins;
-
-  /// No description provided for @blindDateInsufficientCoinsMessage.
-  ///
-  /// In en, this message translates to:
-  /// **'You need {cost} coins to instantly reveal photos.'**
-  String blindDateInsufficientCoinsMessage(int cost);
-
-  /// No description provided for @blindDateInterests.
-  ///
-  /// In en, this message translates to:
-  /// **'Interests'**
-  String get blindDateInterests;
-
-  /// No description provided for @blindDateKmAway.
-  ///
-  /// In en, this message translates to:
-  /// **'{distance} km away'**
-  String blindDateKmAway(String distance);
-
-  /// No description provided for @blindDateLetsExchange.
-  ///
-  /// In en, this message translates to:
-  /// **'Start Connecting!'**
-  String get blindDateLetsExchange;
-
-  /// No description provided for @blindDateMatchMessage.
-  ///
-  /// In en, this message translates to:
-  /// **'You both liked each other! Start chatting to reveal your photos.'**
-  String get blindDateMatchMessage;
-
-  /// No description provided for @blindDateMessageProgress.
-  ///
-  /// In en, this message translates to:
-  /// **'{current} / {total} messages'**
-  String blindDateMessageProgress(int current, int total);
-
-  /// No description provided for @blindDateMessagesToGo.
-  ///
-  /// In en, this message translates to:
-  /// **'{count} to go'**
-  String blindDateMessagesToGo(int count);
-
-  /// No description provided for @blindDateMessagesUntilReveal.
-  ///
-  /// In en, this message translates to:
-  /// **'{count} messages until reveal'**
-  String blindDateMessagesUntilReveal(int count);
-
-  /// No description provided for @blindDateModeActivated.
-  ///
-  /// In en, this message translates to:
-  /// **'Blind Date mode activated!'**
-  String get blindDateModeActivated;
-
-  /// No description provided for @blindDateModeDescription.
-  ///
-  /// In en, this message translates to:
-  /// **'Match based on personality, not looks.\nPhotos reveal after {threshold} messages.'**
-  String blindDateModeDescription(int threshold);
-
-  /// No description provided for @blindDateModeTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Blind Date Mode'**
-  String get blindDateModeTitle;
-
-  /// No description provided for @blindDateMysteryPerson.
-  ///
-  /// In en, this message translates to:
-  /// **'Mystery Person'**
-  String get blindDateMysteryPerson;
-
-  /// No description provided for @blindDateNoCandidates.
-  ///
-  /// In en, this message translates to:
-  /// **'No candidates available'**
-  String get blindDateNoCandidates;
-
-  /// No description provided for @blindDateNoMatches.
-  ///
-  /// In en, this message translates to:
-  /// **'No matches yet'**
-  String get blindDateNoMatches;
-
-  /// No description provided for @blindDatePendingReveal.
-  ///
-  /// In en, this message translates to:
-  /// **'Pending Reveal ({count})'**
-  String blindDatePendingReveal(int count);
-
-  /// No description provided for @blindDatePhotoRevealProgress.
-  ///
-  /// In en, this message translates to:
-  /// **'Photo Reveal Progress'**
-  String get blindDatePhotoRevealProgress;
-
-  /// No description provided for @blindDatePhotosRevealHint.
-  ///
-  /// In en, this message translates to:
-  /// **'Photos reveal after {threshold} messages'**
-  String blindDatePhotosRevealHint(int threshold);
-
-  /// No description provided for @blindDatePhotosRevealed.
-  ///
-  /// In en, this message translates to:
-  /// **'Photos revealed! {coinsSpent} coins spent.'**
-  String blindDatePhotosRevealed(int coinsSpent);
-
-  /// No description provided for @blindDatePhotosRevealedLabel.
-  ///
-  /// In en, this message translates to:
-  /// **'Photos revealed!'**
-  String get blindDatePhotosRevealedLabel;
-
-  /// No description provided for @blindDateReveal.
-  ///
-  /// In en, this message translates to:
-  /// **'Reveal'**
-  String get blindDateReveal;
-
-  /// No description provided for @blindDateRevealed.
-  ///
-  /// In en, this message translates to:
-  /// **'Revealed ({count})'**
-  String blindDateRevealed(int count);
-
-  /// No description provided for @blindDateRevealedMatch.
-  ///
-  /// In en, this message translates to:
-  /// **'Revealed Match'**
-  String get blindDateRevealedMatch;
-
-  /// No description provided for @blindDateStartSwiping.
-  ///
-  /// In en, this message translates to:
-  /// **'Start swiping to find your blind date!'**
-  String get blindDateStartSwiping;
-
-  /// No description provided for @blindDateTabDiscover.
-  ///
-  /// In en, this message translates to:
-  /// **'Discover'**
-  String get blindDateTabDiscover;
-
-  /// No description provided for @blindDateTabMatches.
-  ///
-  /// In en, this message translates to:
-  /// **'Matches'**
-  String get blindDateTabMatches;
-
-  /// No description provided for @blindDateTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Blind Date'**
-  String get blindDateTitle;
-
-  /// No description provided for @blindDateViewMatch.
-  ///
-  /// In en, this message translates to:
-  /// **'View Match'**
-  String get blindDateViewMatch;
-
   /// No description provided for @bonusCoinsText.
   ///
   /// In en, this message translates to:
@@ -3314,19 +3068,13 @@ abstract class AppLocalizations {
   /// No description provided for @cantUndoMatched.
   ///
   /// In en, this message translates to:
-  /// **'Can\'t undo — you already matched!'**
+  /// **'Can\'t undo — you\'re already connected!'**
   String get cantUndoMatched;
-
-  /// No description provided for @casualCategory.
-  ///
-  /// In en, this message translates to:
-  /// **'Casual'**
-  String get casualCategory;
 
   /// No description provided for @casualDating.
   ///
   /// In en, this message translates to:
-  /// **'Casual dating'**
+  /// **'Casual meetups'**
   String get casualDating;
 
   /// No description provided for @categoryFlashcard.
@@ -4604,7 +4352,7 @@ abstract class AppLocalizations {
   /// No description provided for @chatStartSwipingToChat.
   ///
   /// In en, this message translates to:
-  /// **'Start swiping and matching to chat with people!'**
+  /// **'Start exploring and connecting to chat with people!'**
   String get chatStartSwipingToChat;
 
   /// No description provided for @chatStatusAssigned.
@@ -5384,7 +5132,7 @@ abstract class AppLocalizations {
   /// No description provided for @coinsVideoCallMatches.
   ///
   /// In en, this message translates to:
-  /// **'Video call with your matches'**
+  /// **'Video call with your connections'**
   String get coinsVideoCallMatches;
 
   /// No description provided for @coinsVideoMinutes.
@@ -6140,13 +5888,13 @@ abstract class AppLocalizations {
   /// No description provided for @culturalExchangeDatingEtiquette.
   ///
   /// In en, this message translates to:
-  /// **'Dating Etiquette'**
+  /// **'Social Etiquette'**
   String get culturalExchangeDatingEtiquette;
 
   /// No description provided for @culturalExchangeDatingEtiquetteGuide.
   ///
   /// In en, this message translates to:
-  /// **'Dating Etiquette Guide'**
+  /// **'Social Etiquette Guide'**
   String get culturalExchangeDatingEtiquetteGuide;
 
   /// No description provided for @culturalExchangeLoadingCountries.
@@ -6269,126 +6017,6 @@ abstract class AppLocalizations {
   /// **'Date of Birth'**
   String get dateOfBirth;
 
-  /// No description provided for @datePlanningCategory.
-  ///
-  /// In en, this message translates to:
-  /// **'Date Planning'**
-  String get datePlanningCategory;
-
-  /// No description provided for @dateSchedulerAccept.
-  ///
-  /// In en, this message translates to:
-  /// **'Accept'**
-  String get dateSchedulerAccept;
-
-  /// No description provided for @dateSchedulerCancelConfirm.
-  ///
-  /// In en, this message translates to:
-  /// **'Are you sure you want to cancel this date?'**
-  String get dateSchedulerCancelConfirm;
-
-  /// No description provided for @dateSchedulerCancelTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Cancel Date'**
-  String get dateSchedulerCancelTitle;
-
-  /// No description provided for @dateSchedulerConfirmed.
-  ///
-  /// In en, this message translates to:
-  /// **'Date confirmed!'**
-  String get dateSchedulerConfirmed;
-
-  /// No description provided for @dateSchedulerDecline.
-  ///
-  /// In en, this message translates to:
-  /// **'Decline'**
-  String get dateSchedulerDecline;
-
-  /// No description provided for @dateSchedulerEnterTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Please enter a title'**
-  String get dateSchedulerEnterTitle;
-
-  /// No description provided for @dateSchedulerKeepDate.
-  ///
-  /// In en, this message translates to:
-  /// **'Keep Date'**
-  String get dateSchedulerKeepDate;
-
-  /// No description provided for @dateSchedulerNotesLabel.
-  ///
-  /// In en, this message translates to:
-  /// **'Notes (optional)'**
-  String get dateSchedulerNotesLabel;
-
-  /// No description provided for @dateSchedulerPlanningHint.
-  ///
-  /// In en, this message translates to:
-  /// **'e.g., Coffee, Dinner, Movie...'**
-  String get dateSchedulerPlanningHint;
-
-  /// No description provided for @dateSchedulerReasonLabel.
-  ///
-  /// In en, this message translates to:
-  /// **'Reason (optional)'**
-  String get dateSchedulerReasonLabel;
-
-  /// No description provided for @dateSchedulerReschedule.
-  ///
-  /// In en, this message translates to:
-  /// **'Reschedule'**
-  String get dateSchedulerReschedule;
-
-  /// No description provided for @dateSchedulerRescheduleTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Reschedule Date'**
-  String get dateSchedulerRescheduleTitle;
-
-  /// No description provided for @dateSchedulerSchedule.
-  ///
-  /// In en, this message translates to:
-  /// **'Schedule'**
-  String get dateSchedulerSchedule;
-
-  /// No description provided for @dateSchedulerScheduled.
-  ///
-  /// In en, this message translates to:
-  /// **'Date scheduled!'**
-  String get dateSchedulerScheduled;
-
-  /// No description provided for @dateSchedulerTabPast.
-  ///
-  /// In en, this message translates to:
-  /// **'Past'**
-  String get dateSchedulerTabPast;
-
-  /// No description provided for @dateSchedulerTabPending.
-  ///
-  /// In en, this message translates to:
-  /// **'Pending'**
-  String get dateSchedulerTabPending;
-
-  /// No description provided for @dateSchedulerTabUpcoming.
-  ///
-  /// In en, this message translates to:
-  /// **'Upcoming'**
-  String get dateSchedulerTabUpcoming;
-
-  /// No description provided for @dateSchedulerTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'My Dates'**
-  String get dateSchedulerTitle;
-
-  /// No description provided for @dateSchedulerWhatPlanning.
-  ///
-  /// In en, this message translates to:
-  /// **'What are you planning?'**
-  String get dateSchedulerWhatPlanning;
-
   /// No description provided for @dayNumber.
   ///
   /// In en, this message translates to:
@@ -6488,7 +6116,7 @@ abstract class AppLocalizations {
   /// No description provided for @discoveryFilterMatches.
   ///
   /// In en, this message translates to:
-  /// **'Matches'**
+  /// **'Connections'**
   String get discoveryFilterMatches;
 
   /// No description provided for @discoveryFilterPassed.
@@ -6722,19 +6350,19 @@ abstract class AppLocalizations {
   /// No description provided for @emptyStateNoMatchesMessage.
   ///
   /// In en, this message translates to:
-  /// **'Start swiping to find your perfect match!'**
+  /// **'Start exploring to make your first connection!'**
   String get emptyStateNoMatchesMessage;
 
   /// No description provided for @emptyStateNoMatchesTitle.
   ///
   /// In en, this message translates to:
-  /// **'No matches yet'**
+  /// **'No connections yet'**
   String get emptyStateNoMatchesTitle;
 
   /// No description provided for @emptyStateNoMessagesMessage.
   ///
   /// In en, this message translates to:
-  /// **'When you match with someone, you can start chatting here.'**
+  /// **'When you connect with someone, you can start chatting here.'**
   String get emptyStateNoMessagesMessage;
 
   /// No description provided for @emptyStateNoMessagesTitle.
@@ -7718,7 +7346,7 @@ abstract class AppLocalizations {
   /// No description provided for @filterFromMatch.
   ///
   /// In en, this message translates to:
-  /// **'Match'**
+  /// **'Connection'**
   String get filterFromMatch;
 
   /// No description provided for @filterFromSearch.
@@ -7786,12 +7414,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Flashcards'**
   String get flashcardReviewLabel;
-
-  /// No description provided for @flirtyCategory.
-  ///
-  /// In en, this message translates to:
-  /// **'Flirty'**
-  String get flirtyCategory;
 
   /// No description provided for @foodDiningCategory.
   ///
@@ -9392,7 +9014,7 @@ abstract class AppLocalizations {
   /// No description provided for @greatInterestsHelp.
   ///
   /// In en, this message translates to:
-  /// **'Great! Your interests help us find better matches'**
+  /// **'Great! Your interests help us suggest better connections'**
   String get greatInterestsHelp;
 
   /// No description provided for @greengoLearn.
@@ -9454,12 +9076,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Compliments'**
   String get icebreakersCategoryCompliments;
-
-  /// No description provided for @icebreakersCategoryDateIdeas.
-  ///
-  /// In en, this message translates to:
-  /// **'Date Ideas'**
-  String get icebreakersCategoryDateIdeas;
 
   /// No description provided for @icebreakersCategoryDeep.
   ///
@@ -9974,7 +9590,7 @@ abstract class AppLocalizations {
   /// No description provided for @joinMessage.
   ///
   /// In en, this message translates to:
-  /// **'Join GreenGoChat and find your perfect match'**
+  /// **'Join GreenGoChat and connect with people from around the world'**
   String get joinMessage;
 
   /// No description provided for @keepSwiping.
@@ -10238,7 +9854,7 @@ abstract class AppLocalizations {
   /// No description provided for @learningCustomPackTitleHint.
   ///
   /// In en, this message translates to:
-  /// **'e.g., \"Spanish Greetings for Dating\"'**
+  /// **'e.g., \"Spanish Greetings for Travelers\"'**
   String get learningCustomPackTitleHint;
 
   /// No description provided for @learningDescribeImage.
@@ -10520,7 +10136,7 @@ abstract class AppLocalizations {
   /// No description provided for @learningLessonTitleHint.
   ///
   /// In en, this message translates to:
-  /// **'e.g., \"Spanish Greetings for Dating\"'**
+  /// **'e.g., \"Spanish Greetings for Travelers\"'**
   String get learningLessonTitleHint;
 
   /// No description provided for @learningLessonTitleLabel.
@@ -11588,7 +11204,7 @@ abstract class AppLocalizations {
   /// No description provided for @longTermRelationship.
   ///
   /// In en, this message translates to:
-  /// **'Long-term relationship'**
+  /// **'Long-term friendships'**
   String get longTermRelationship;
 
   /// No description provided for @lookingFor.
@@ -11648,25 +11264,25 @@ abstract class AppLocalizations {
   /// No description provided for @matchPercentage.
   ///
   /// In en, this message translates to:
-  /// **'{percentage} match'**
+  /// **'{percentage} in common'**
   String matchPercentage(String percentage);
 
   /// No description provided for @matchedOnDate.
   ///
   /// In en, this message translates to:
-  /// **'Matched on {date}'**
+  /// **'Connected on {date}'**
   String matchedOnDate(String date);
 
   /// No description provided for @matchedWithDate.
   ///
   /// In en, this message translates to:
-  /// **'You matched with {name} on {date}'**
+  /// **'You connected with {name} on {date}'**
   String matchedWithDate(String name, String date);
 
   /// No description provided for @matches.
   ///
   /// In en, this message translates to:
-  /// **'Matches'**
+  /// **'Connections'**
   String get matches;
 
   /// No description provided for @matchesClearFilters.
@@ -11678,7 +11294,7 @@ abstract class AppLocalizations {
   /// No description provided for @matchesCount.
   ///
   /// In en, this message translates to:
-  /// **'{count} matches'**
+  /// **'{count} connections'**
   String matchesCount(int count);
 
   /// No description provided for @matchesFilterAll.
@@ -11702,31 +11318,31 @@ abstract class AppLocalizations {
   /// No description provided for @matchesNoMatchesFound.
   ///
   /// In en, this message translates to:
-  /// **'No matches found'**
+  /// **'No connections found'**
   String get matchesNoMatchesFound;
 
   /// No description provided for @matchesNoMatchesYet.
   ///
   /// In en, this message translates to:
-  /// **'No matches yet'**
+  /// **'No connections yet'**
   String get matchesNoMatchesYet;
 
   /// No description provided for @matchesOfCount.
   ///
   /// In en, this message translates to:
-  /// **'{filtered} of {total} matches'**
+  /// **'{filtered} of {total} connections'**
   String matchesOfCount(int filtered, int total);
 
   /// No description provided for @matchesOfTotal.
   ///
   /// In en, this message translates to:
-  /// **'{filtered} of {total} matches'**
+  /// **'{filtered} of {total} connections'**
   String matchesOfTotal(int filtered, int total);
 
   /// No description provided for @matchesStartSwiping.
   ///
   /// In en, this message translates to:
-  /// **'Start swiping to find your matches!'**
+  /// **'Start exploring to make connections!'**
   String get matchesStartSwiping;
 
   /// No description provided for @matchesTryDifferent.
@@ -12519,7 +12135,7 @@ abstract class AppLocalizations {
   /// No description provided for @nicknameSearchActionMatch.
   ///
   /// In en, this message translates to:
-  /// **'It\'s a match with @{nickname}!'**
+  /// **'You\'re now connected with @{nickname}!'**
   String nicknameSearchActionMatch(String nickname);
 
   /// No description provided for @nicknameSearchLimitReached.
@@ -12591,13 +12207,13 @@ abstract class AppLocalizations {
   /// No description provided for @noMatchesFound.
   ///
   /// In en, this message translates to:
-  /// **'No matches found'**
+  /// **'No connections found'**
   String get noMatchesFound;
 
   /// No description provided for @noMatchesYet.
   ///
   /// In en, this message translates to:
-  /// **'No matches yet'**
+  /// **'No connections yet'**
   String get noMatchesYet;
 
   /// No description provided for @noMessages.
@@ -12723,7 +12339,7 @@ abstract class AppLocalizations {
   /// No description provided for @notificationDialogMessage.
   ///
   /// In en, this message translates to:
-  /// **'Enable notifications to know when you get matches, messages, and priority connects.'**
+  /// **'Enable notifications to know when you get new connections, messages, and priority connects.'**
   String get notificationDialogMessage;
 
   /// No description provided for @notificationDialogNotNow.
@@ -12771,13 +12387,13 @@ abstract class AppLocalizations {
   /// No description provided for @notificationMatchExpiring.
   ///
   /// In en, this message translates to:
-  /// **'Match Expiring'**
+  /// **'Connection Expiring'**
   String get notificationMatchExpiring;
 
   /// No description provided for @notificationMatchExpiringSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'When a match is about to expire'**
+  /// **'When a connection is about to expire'**
   String get notificationMatchExpiringSubtitle;
 
   /// No description provided for @notificationNewChat.
@@ -12801,25 +12417,25 @@ abstract class AppLocalizations {
   /// No description provided for @notificationNewLikesSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'When someone likes you'**
+  /// **'When someone wants to connect with you'**
   String get notificationNewLikesSubtitle;
 
   /// No description provided for @notificationNewMatch.
   ///
   /// In en, this message translates to:
-  /// **'It\'s a Match! You matched with @{nickname}. Start chatting now.'**
+  /// **'It\'s a connection! You and @{nickname} are now connected. Start chatting now.'**
   String notificationNewMatch(String nickname);
 
   /// No description provided for @notificationNewMatches.
   ///
   /// In en, this message translates to:
-  /// **'New Matches'**
+  /// **'New Connections'**
   String get notificationNewMatches;
 
   /// No description provided for @notificationNewMatchesSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'When you get a new match'**
+  /// **'When you get a new connection'**
   String get notificationNewMatchesSubtitle;
 
   /// No description provided for @notificationNewMessage.
@@ -13221,7 +12837,7 @@ abstract class AppLocalizations {
   /// No description provided for @onboardingBioHint.
   ///
   /// In en, this message translates to:
-  /// **'Tell us about your interests, the languages you speak, and the cultures you\'d love to explore...'**
+  /// **'Tell us about your interests, the languages you speak, and the cultures you want to explore...'**
   String get onboardingBioHint;
 
   /// No description provided for @onboardingBioMinLength.
@@ -14535,7 +14151,7 @@ abstract class AppLocalizations {
   /// No description provided for @profileDeleteAccountWarning.
   ///
   /// In en, this message translates to:
-  /// **'This action is permanent and cannot be undone. All your data, matches, and messages will be deleted. Please enter your password to confirm.'**
+  /// **'This action is permanent and cannot be undone. All your data, connections, and messages will be deleted. Please enter your password to confirm.'**
   String get profileDeleteAccountWarning;
 
   /// No description provided for @profileDiscoveryRestarted.
@@ -14553,7 +14169,7 @@ abstract class AppLocalizations {
   /// No description provided for @profileDobInfo.
   ///
   /// In en, this message translates to:
-  /// **'Your date of birth cannot be changed for age verification purposes. Your exact age is visible to matches.'**
+  /// **'Your date of birth cannot be changed for age verification purposes. Your exact age is visible to your connections.'**
   String get profileDobInfo;
 
   /// No description provided for @profileEditBasicInfo.
@@ -14751,7 +14367,7 @@ abstract class AppLocalizations {
   /// No description provided for @profileLookingForHint.
   ///
   /// In en, this message translates to:
-  /// **'e.g. Long-term relationship'**
+  /// **'e.g. Language exchange partner'**
   String get profileLookingForHint;
 
   /// No description provided for @profileMaxLanguagesAllowed.
@@ -14943,7 +14559,7 @@ abstract class AppLocalizations {
   /// No description provided for @profileRestartDiscoveryDialogContent.
   ///
   /// In en, this message translates to:
-  /// **'This will erase all your swipes (connects, passes, priority connects) so you can rediscover everyone from scratch.\n\nYour matches and chats will NOT be affected.'**
+  /// **'This will erase all your swipes (connects, passes, priority connects) so you can rediscover everyone from scratch.\n\nYour connections and chats will NOT be affected.'**
   String get profileRestartDiscoveryDialogContent;
 
   /// No description provided for @profileRestartDiscoveryDialogTitle.
@@ -15135,7 +14751,7 @@ abstract class AppLocalizations {
   /// No description provided for @profilingDescription.
   ///
   /// In en, this message translates to:
-  /// **'Allow us to analyze your preferences to provide better match suggestions'**
+  /// **'Allow us to analyze your preferences to provide better connection suggestions'**
   String get profilingDescription;
 
   /// No description provided for @progress.
@@ -15177,7 +14793,7 @@ abstract class AppLocalizations {
   /// No description provided for @progressJourneyDescription.
   ///
   /// In en, this message translates to:
-  /// **'See your complete dating journey and milestones'**
+  /// **'See your complete GreenGo journey and milestones'**
   String get progressJourneyDescription;
 
   /// No description provided for @progressLabel.
@@ -15552,12 +15168,6 @@ abstract class AppLocalizations {
   /// **'Rewards & Progress'**
   String get rewardsAndProgress;
 
-  /// No description provided for @romanticCategory.
-  ///
-  /// In en, this message translates to:
-  /// **'Romantic'**
-  String get romanticCategory;
-
   /// No description provided for @roundTimer.
   ///
   /// In en, this message translates to:
@@ -15606,29 +15216,11 @@ abstract class AppLocalizations {
   /// **'Any additional details...'**
   String get safetyAdditionalDetailsHint;
 
-  /// No description provided for @safetyCheckInDescription.
-  ///
-  /// In en, this message translates to:
-  /// **'Set up a check-in for your date. We\'ll remind you to check in, and alert your contacts if you don\'t respond.'**
-  String get safetyCheckInDescription;
-
   /// No description provided for @safetyCheckInEvery.
   ///
   /// In en, this message translates to:
   /// **'Check-in every'**
   String get safetyCheckInEvery;
-
-  /// No description provided for @safetyCheckInScheduled.
-  ///
-  /// In en, this message translates to:
-  /// **'Date check-in scheduled!'**
-  String get safetyCheckInScheduled;
-
-  /// No description provided for @safetyDateCheckIn.
-  ///
-  /// In en, this message translates to:
-  /// **'Date Check-In'**
-  String get safetyDateCheckIn;
 
   /// No description provided for @safetyDateTime.
   ///
@@ -15831,7 +15423,7 @@ abstract class AppLocalizations {
   /// No description provided for @secondChanceDescription.
   ///
   /// In en, this message translates to:
-  /// **'See profiles you passed on who actually liked you!'**
+  /// **'See profiles you passed on who wanted to connect with you!'**
   String get secondChanceDescription;
 
   /// No description provided for @secondChanceDistanceAway.
@@ -15879,7 +15471,7 @@ abstract class AppLocalizations {
   /// No description provided for @secondChanceLikedYouAgo.
   ///
   /// In en, this message translates to:
-  /// **'They liked you {ago}'**
+  /// **'They wanted to connect {ago}'**
   String secondChanceLikedYouAgo(Object ago);
 
   /// No description provided for @secondChanceMatchBody.
@@ -16317,7 +15909,7 @@ abstract class AppLocalizations {
   /// No description provided for @shopPriorityMatching.
   ///
   /// In en, this message translates to:
-  /// **'Priority Matching'**
+  /// **'Priority Connections'**
   String get shopPriorityMatching;
 
   /// No description provided for @shopPurchaseCoinsFor.
@@ -16443,7 +16035,7 @@ abstract class AppLocalizations {
   /// No description provided for @shopUnlockPremium.
   ///
   /// In en, this message translates to:
-  /// **'Unlock premium features and enhance your dating experience'**
+  /// **'Unlock premium features and get more out of GreenGo'**
   String get shopUnlockPremium;
 
   /// No description provided for @shopUpgradeAndSave.
@@ -16515,7 +16107,7 @@ abstract class AppLocalizations {
   /// No description provided for @shortTermRelationship.
   ///
   /// In en, this message translates to:
-  /// **'Short-term relationship'**
+  /// **'New acquaintances'**
   String get shortTermRelationship;
 
   /// No description provided for @showingProfiles.
@@ -16611,7 +16203,7 @@ abstract class AppLocalizations {
   /// No description provided for @socialProfilesTip.
   ///
   /// In en, this message translates to:
-  /// **'Your social profiles will be visible on your dating profile and help others verify your identity.'**
+  /// **'Your social profiles will be visible on your GreenGo profile and help others verify your identity.'**
   String get socialProfilesTip;
 
   /// No description provided for @somethingWentWrong.
@@ -16815,7 +16407,7 @@ abstract class AppLocalizations {
   /// No description provided for @startSwipingToFindMatches.
   ///
   /// In en, this message translates to:
-  /// **'Start swiping to find your matches!'**
+  /// **'Start exploring to make connections!'**
   String get startSwipingToFindMatches;
 
   /// No description provided for @step.
@@ -17157,13 +16749,13 @@ abstract class AppLocalizations {
   /// No description provided for @tourDiscoveryDescription.
   ///
   /// In en, this message translates to:
-  /// **'Swipe through profiles to find your perfect match. Swipe right if you\'re interested, left to pass.'**
+  /// **'Browse profiles to find people to connect with. Swipe right to connect, left to pass.'**
   String get tourDiscoveryDescription;
 
   /// No description provided for @tourDiscoveryTitle.
   ///
   /// In en, this message translates to:
-  /// **'Discover Matches'**
+  /// **'Discover People'**
   String get tourDiscoveryTitle;
 
   /// No description provided for @tourDone.
@@ -17187,19 +16779,19 @@ abstract class AppLocalizations {
   /// No description provided for @tourMatchesDescription.
   ///
   /// In en, this message translates to:
-  /// **'See everyone who liked you back! Start conversations with your mutual matches.'**
+  /// **'See everyone who connected with you back! Start conversations with your mutual connections.'**
   String get tourMatchesDescription;
 
   /// No description provided for @tourMatchesTitle.
   ///
   /// In en, this message translates to:
-  /// **'Your Matches'**
+  /// **'Your Connections'**
   String get tourMatchesTitle;
 
   /// No description provided for @tourMessagesDescription.
   ///
   /// In en, this message translates to:
-  /// **'Chat with your matches here. Send messages, photos, and voice notes to connect.'**
+  /// **'Chat with your connections here. Send messages, photos, and voice notes.'**
   String get tourMessagesDescription;
 
   /// No description provided for @tourMessagesTitle.
@@ -17253,7 +16845,7 @@ abstract class AppLocalizations {
   /// No description provided for @tourShopDescription.
   ///
   /// In en, this message translates to:
-  /// **'Get coins and premium features to boost your dating experience.'**
+  /// **'Get coins and premium features to get more out of GreenGo.'**
   String get tourShopDescription;
 
   /// No description provided for @tourShopTitle.
@@ -17589,19 +17181,19 @@ abstract class AppLocalizations {
   /// No description provided for @unmatchConfirm.
   ///
   /// In en, this message translates to:
-  /// **'Are you sure you want to unmatch with {name}? This cannot be undone.'**
+  /// **'Are you sure you want to remove your connection with {name}? This cannot be undone.'**
   String unmatchConfirm(String name);
 
   /// No description provided for @unmatchLabel.
   ///
   /// In en, this message translates to:
-  /// **'Unmatch'**
+  /// **'Remove connection'**
   String get unmatchLabel;
 
   /// No description provided for @unmatchedWith.
   ///
   /// In en, this message translates to:
-  /// **'Unmatched with {name}'**
+  /// **'You are no longer connected with {name}'**
   String unmatchedWith(String name);
 
   /// No description provided for @upgrade.
@@ -18711,7 +18303,7 @@ abstract class AppLocalizations {
   /// No description provided for @youMatchedWithOnDate.
   ///
   /// In en, this message translates to:
-  /// **'You matched with {name} on {date}'**
+  /// **'You connected with {name} on {date}'**
   String youMatchedWithOnDate(String name, String date);
 
   /// No description provided for @youWin.
@@ -18825,13 +18417,13 @@ abstract class AppLocalizations {
   /// No description provided for @guideConnectionsItem1.
   ///
   /// In en, this message translates to:
-  /// **'When two people Connect with each other, it\'s a match!'**
+  /// **'When two people Connect with each other, it\'s a connection!'**
   String get guideConnectionsItem1;
 
   /// No description provided for @guideConnectionsItem2.
   ///
   /// In en, this message translates to:
-  /// **'After matching, you can start chatting right away.'**
+  /// **'Once connected, you can start chatting right away.'**
   String get guideConnectionsItem2;
 
   /// No description provided for @guideConnectionsItem3.
@@ -18843,7 +18435,7 @@ abstract class AppLocalizations {
   /// No description provided for @guideConnectionsItem4.
   ///
   /// In en, this message translates to:
-  /// **'Check the Exchanges tab to see all your matches and conversations.'**
+  /// **'Check the Exchanges tab to see all your connections and conversations.'**
   String get guideConnectionsItem4;
 
   /// No description provided for @guideChatTitle.
@@ -18921,7 +18513,7 @@ abstract class AppLocalizations {
   /// No description provided for @guideTravelItem3.
   ///
   /// In en, this message translates to:
-  /// **'Language exchange partners are matched based on what you speak and what you want to learn.'**
+  /// **'Language exchange partners are suggested based on what you speak and what you want to learn.'**
   String get guideTravelItem3;
 
   /// No description provided for @guideMembershipTitle.
@@ -18933,7 +18525,7 @@ abstract class AppLocalizations {
   /// No description provided for @guideMembershipItem1.
   ///
   /// In en, this message translates to:
-  /// **'Your base membership gives you access to all core features: swiping, chatting, and matching.'**
+  /// **'Your base membership gives you access to all core features: swiping, chatting, and connecting.'**
   String get guideMembershipItem1;
 
   /// No description provided for @guideMembershipItem2.
@@ -18993,7 +18585,7 @@ abstract class AppLocalizations {
   /// No description provided for @guideCoinsItem2.
   ///
   /// In en, this message translates to:
-  /// **'• Priority Connect: 10 coins  • Boost: 50 coins  • Direct Match: 2/day free, then 50 coins'**
+  /// **'• Priority Connect: 10 coins  • Boost: 50 coins  • Direct Connect: 2/day free, then 50 coins'**
   String get guideCoinsItem2;
 
   /// No description provided for @guideCoinsItem3.
@@ -19095,7 +18687,7 @@ abstract class AppLocalizations {
   /// No description provided for @guideExchangesItem3.
   ///
   /// In en, this message translates to:
-  /// **'Use the filter chips to organize your chats: All, New, Not Replied, Favorites, To Approve, Match, and Search.'**
+  /// **'Use the filter chips to organize your chats: All, New, Not Replied, Favorites, To Approve, Connection, and Search.'**
   String get guideExchangesItem3;
 
   /// No description provided for @guideExchangesItem4.
@@ -19311,7 +18903,7 @@ abstract class AppLocalizations {
   /// No description provided for @loadingMsg2.
   ///
   /// In en, this message translates to:
-  /// **'Connecting hearts across continents...'**
+  /// **'Connecting people across continents...'**
   String get loadingMsg2;
 
   /// No description provided for @loadingMsg3.
@@ -19323,7 +18915,7 @@ abstract class AppLocalizations {
   /// No description provided for @loadingMsg4.
   ///
   /// In en, this message translates to:
-  /// **'Preparing your personalized matches...'**
+  /// **'Preparing your personalized suggestions...'**
   String get loadingMsg4;
 
   /// No description provided for @loadingMsg5.
@@ -19353,7 +18945,7 @@ abstract class AppLocalizations {
   /// No description provided for @loadingMsg9.
   ///
   /// In en, this message translates to:
-  /// **'Searching for your perfect match...'**
+  /// **'Searching for people who share your interests...'**
   String get loadingMsg9;
 
   /// No description provided for @loadingMsg10.
@@ -19383,7 +18975,7 @@ abstract class AppLocalizations {
   /// No description provided for @loadingMsg14.
   ///
   /// In en, this message translates to:
-  /// **'Finding the best matches in your area...'**
+  /// **'Finding great people in your area...'**
   String get loadingMsg14;
 
   /// No description provided for @loadingMsg15.
@@ -19419,7 +19011,7 @@ abstract class AppLocalizations {
   /// No description provided for @loadingMsg20.
   ///
   /// In en, this message translates to:
-  /// **'Love knows no borders, and neither do we...'**
+  /// **'Curiosity knows no borders, and neither do we...'**
   String get loadingMsg20;
 
   /// No description provided for @loadingMsg21.
@@ -21021,7 +20613,7 @@ abstract class AppLocalizations {
   /// No description provided for @onboardingPickInterests.
   ///
   /// In en, this message translates to:
-  /// **'What do you love?'**
+  /// **'What are you into?'**
   String get onboardingPickInterests;
 
   /// No description provided for @onboardingPickLanguages.
@@ -23427,7 +23019,7 @@ abstract class AppLocalizations {
   /// No description provided for @tourNotifHubDesc.
   ///
   /// In en, this message translates to:
-  /// **'Every like, match, message and event update lands here.'**
+  /// **'Every connection, message and event update lands here.'**
   String get tourNotifHubDesc;
 
   /// No description provided for @tourNotifOpenTitle.
@@ -32321,7 +31913,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnActiveListeningQ0.
   ///
   /// In en, this message translates to:
-  /// **'Your date shares a story about their recent trip. What is the best active listening response?'**
+  /// **'The person you are meeting shares a story about their recent trip. What is the best active listening response?'**
   String get safetyAcademyLsnActiveListeningQ0;
 
   /// No description provided for @safetyAcademyLsnActiveListeningQ0O0.
@@ -32435,7 +32027,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnBoundariesS3I2.
   ///
   /// In en, this message translates to:
-  /// **'Being clear about physical comfort levels on dates'**
+  /// **'Being clear about your personal space and comfort levels when meeting up'**
   String get safetyAcademyLsnBoundariesS3I2;
 
   /// No description provided for @safetyAcademyLsnBoundariesS3I3.
@@ -32453,13 +32045,13 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnBoundariesS4.
   ///
   /// In en, this message translates to:
-  /// **'Remember: setting boundaries is not being difficult. It is self-respect. A partner who values you will appreciate and honor your boundaries.'**
+  /// **'Remember: setting boundaries is not being difficult. It is self-respect. A person who values you will appreciate and honor your boundaries.'**
   String get safetyAcademyLsnBoundariesS4;
 
   /// No description provided for @safetyAcademyLsnBoundariesQ0.
   ///
   /// In en, this message translates to:
-  /// **'You tell your match you are not comfortable sharing your number yet, and they keep asking. What does this indicate?'**
+  /// **'You tell a new connection you are not comfortable sharing your number yet, and they keep asking. What does this indicate?'**
   String get safetyAcademyLsnBoundariesQ0;
 
   /// No description provided for @safetyAcademyLsnBoundariesQ0O0.
@@ -32483,7 +32075,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnBoundariesQ0O3.
   ///
   /// In en, this message translates to:
-  /// **'It is normal dating behavior'**
+  /// **'It is normal behavior when getting to know someone'**
   String get safetyAcademyLsnBoundariesQ0O3;
 
   /// No description provided for @safetyAcademyLsnBoundariesQ0Exp.
@@ -32519,7 +32111,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnBoundariesQ1O3.
   ///
   /// In en, this message translates to:
-  /// **'Boundaries are not necessary in dating'**
+  /// **'Boundaries are not necessary when meeting new people'**
   String get safetyAcademyLsnBoundariesQ1O3;
 
   /// No description provided for @safetyAcademyLsnBoundariesQ1Exp.
@@ -32537,7 +32129,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnConsentS0.
   ///
   /// In en, this message translates to:
-  /// **'Consent is a clear, enthusiastic, and ongoing agreement. It applies to every aspect of dating -- from sharing personal information to physical intimacy.'**
+  /// **'Consent is a clear, enthusiastic, and ongoing agreement. It applies to every interaction -- from sharing personal information to physical contact.'**
   String get safetyAcademyLsnConsentS0;
 
   /// No description provided for @safetyAcademyLsnConsentS1.
@@ -32633,7 +32225,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnConsentQ1.
   ///
   /// In en, this message translates to:
-  /// **'Your date agreed to come to your place but seems uncomfortable after arriving. What should you do?'**
+  /// **'Someone you met on the app agreed to join you at an event but seems uncomfortable after arriving. What should you do?'**
   String get safetyAcademyLsnConsentQ1;
 
   /// No description provided for @safetyAcademyLsnConsentQ1O0.
@@ -32675,19 +32267,19 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyModCulturalSensitivityDesc.
   ///
   /// In en, this message translates to:
-  /// **'Navigate cross-cultural dating with respect, curiosity, and awareness.'**
+  /// **'Navigate cross-cultural friendships with respect, curiosity, and awareness.'**
   String get safetyAcademyModCulturalSensitivityDesc;
 
   /// No description provided for @safetyAcademyLsnCulturalDosTitle.
   ///
   /// In en, this message translates to:
-  /// **'Cross-Cultural Dating Do\'s'**
+  /// **'Cross-Cultural Do\'s'**
   String get safetyAcademyLsnCulturalDosTitle;
 
   /// No description provided for @safetyAcademyLsnCulturalDosS0.
   ///
   /// In en, this message translates to:
-  /// **'Dating someone from a different cultural background can be one of the most enriching experiences. Approach it with genuine curiosity, respect, and a willingness to learn.'**
+  /// **'Getting to know someone from a different cultural background can be one of the most enriching experiences. Approach it with genuine curiosity, respect, and a willingness to learn.'**
   String get safetyAcademyLsnCulturalDosS0;
 
   /// No description provided for @safetyAcademyLsnCulturalDosS1.
@@ -32699,13 +32291,13 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnCulturalDosS2.
   ///
   /// In en, this message translates to:
-  /// **'Do\'s for Cross-Cultural Dating'**
+  /// **'Do\'s for Cross-Cultural Connections'**
   String get safetyAcademyLsnCulturalDosS2;
 
   /// No description provided for @safetyAcademyLsnCulturalDosS2I0.
   ///
   /// In en, this message translates to:
-  /// **'Research basic cultural customs before a date'**
+  /// **'Research basic cultural customs before meeting up'**
   String get safetyAcademyLsnCulturalDosS2I0;
 
   /// No description provided for @safetyAcademyLsnCulturalDosS2I1.
@@ -32747,7 +32339,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnCulturalDosQ0.
   ///
   /// In en, this message translates to:
-  /// **'What is the best way to learn about your date\'s culture?'**
+  /// **'What is the best way to learn about a new friend\'s culture?'**
   String get safetyAcademyLsnCulturalDosQ0;
 
   /// No description provided for @safetyAcademyLsnCulturalDosQ0O0.
@@ -32783,7 +32375,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnCulturalDosQ1.
   ///
   /// In en, this message translates to:
-  /// **'Your date mentions a family tradition you do not understand. What should you do?'**
+  /// **'A new friend mentions a family tradition you do not understand. What should you do?'**
   String get safetyAcademyLsnCulturalDosQ1;
 
   /// No description provided for @safetyAcademyLsnCulturalDosQ1O0.
@@ -32819,25 +32411,25 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnCulturalDontsTitle.
   ///
   /// In en, this message translates to:
-  /// **'Cross-Cultural Dating Don\'ts'**
+  /// **'Cross-Cultural Don\'ts'**
   String get safetyAcademyLsnCulturalDontsTitle;
 
   /// No description provided for @safetyAcademyLsnCulturalDontsS0.
   ///
   /// In en, this message translates to:
-  /// **'Well-intentioned but uninformed comments can feel hurtful or dismissive. Understanding common pitfalls helps you navigate cross-cultural dating with grace.'**
+  /// **'Well-intentioned but uninformed comments can feel hurtful or dismissive. Understanding common pitfalls helps you navigate cross-cultural friendships with grace.'**
   String get safetyAcademyLsnCulturalDontsS0;
 
   /// No description provided for @safetyAcademyLsnCulturalDontsS1.
   ///
   /// In en, this message translates to:
-  /// **'Never reduce someone to their ethnicity or nationality. Comments like \"I\'ve always wanted to date a [nationality]\" or \"You\'re pretty for a [ethnicity]\" are hurtful, not complimentary.'**
+  /// **'Never reduce someone to their ethnicity or nationality. Comments like \"I\'ve always wanted a friend from [country]\" or \"You speak well for a [nationality]\" are hurtful, not complimentary.'**
   String get safetyAcademyLsnCulturalDontsS1;
 
   /// No description provided for @safetyAcademyLsnCulturalDontsS2.
   ///
   /// In en, this message translates to:
-  /// **'Don\'ts for Cross-Cultural Dating'**
+  /// **'Don\'ts for Cross-Cultural Connections'**
   String get safetyAcademyLsnCulturalDontsS2;
 
   /// No description provided for @safetyAcademyLsnCulturalDontsS2I0.
@@ -32891,7 +32483,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnCulturalDontsQ0O0.
   ///
   /// In en, this message translates to:
-  /// **'\"I would love to try the food from your country.\"'**
+  /// **'\"I\'d really like to try the food from your country.\"'**
   String get safetyAcademyLsnCulturalDontsQ0O0;
 
   /// No description provided for @safetyAcademyLsnCulturalDontsQ0O1.
@@ -32969,7 +32561,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnCulturalCommunicationS1.
   ///
   /// In en, this message translates to:
-  /// **'If something your date says or does confuses you, assume positive intent and ask for clarification rather than jumping to conclusions.'**
+  /// **'If something the other person says or does confuses you, assume positive intent and ask for clarification rather than jumping to conclusions.'**
   String get safetyAcademyLsnCulturalCommunicationS1;
 
   /// No description provided for @safetyAcademyLsnCulturalCommunicationS2.
@@ -33023,7 +32615,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnCulturalCommunicationQ0.
   ///
   /// In en, this message translates to:
-  /// **'Your date avoids direct eye contact. What should you think?'**
+  /// **'The person you are talking to avoids direct eye contact. What should you think?'**
   String get safetyAcademyLsnCulturalCommunicationQ0;
 
   /// No description provided for @safetyAcademyLsnCulturalCommunicationQ0O0.
@@ -33101,7 +32693,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyModOnlineSafetyDesc.
   ///
   /// In en, this message translates to:
-  /// **'Learn to protect your identity and spot potential scams while dating online.'**
+  /// **'Learn to protect your identity and spot potential scams while meeting people online.'**
   String get safetyAcademyModOnlineSafetyDesc;
 
   /// No description provided for @safetyAcademyLsnProfileProtectionTitle.
@@ -33113,7 +32705,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnProfileProtectionS0.
   ///
   /// In en, this message translates to:
-  /// **'Your dating profile is your first impression, but it can also expose personal information if you are not careful. Learning to share the right amount keeps you safe while still showing your personality.'**
+  /// **'Your profile is your first impression, but it can also expose personal information if you are not careful. Learning to share the right amount keeps you safe while still showing your personality.'**
   String get safetyAcademyLsnProfileProtectionS0;
 
   /// No description provided for @safetyAcademyLsnProfileProtectionS1.
@@ -33173,7 +32765,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnProfileProtectionQ0.
   ///
   /// In en, this message translates to:
-  /// **'Which of the following is safe to include in your dating profile?'**
+  /// **'Which of the following is safe to include in your profile?'**
   String get safetyAcademyLsnProfileProtectionQ0;
 
   /// No description provided for @safetyAcademyLsnProfileProtectionQ0O0.
@@ -33209,19 +32801,19 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnProfileProtectionQ1.
   ///
   /// In en, this message translates to:
-  /// **'Why should you use unique photos on your dating profile?'**
+  /// **'Why should you use unique photos on your profile?'**
   String get safetyAcademyLsnProfileProtectionQ1;
 
   /// No description provided for @safetyAcademyLsnProfileProtectionQ1O0.
   ///
   /// In en, this message translates to:
-  /// **'To look more attractive'**
+  /// **'To get more profile views'**
   String get safetyAcademyLsnProfileProtectionQ1O0;
 
   /// No description provided for @safetyAcademyLsnProfileProtectionQ1O1.
   ///
   /// In en, this message translates to:
-  /// **'Because dating apps compress images'**
+  /// **'Because social apps compress images'**
   String get safetyAcademyLsnProfileProtectionQ1O1;
 
   /// No description provided for @safetyAcademyLsnProfileProtectionQ1O2.
@@ -33239,7 +32831,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnProfileProtectionQ1Exp.
   ///
   /// In en, this message translates to:
-  /// **'Reverse image search tools can link your dating profile to social media, blogs, or professional pages, revealing your full identity.'**
+  /// **'Reverse image search tools can link your profile to social media, blogs, or professional pages, revealing your full identity.'**
   String get safetyAcademyLsnProfileProtectionQ1Exp;
 
   /// No description provided for @safetyAcademyLsnProfileProtectionQ2.
@@ -33287,13 +32879,13 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnScamRecognitionS0.
   ///
   /// In en, this message translates to:
-  /// **'Romance scams cost victims billions worldwide each year. Scammers build emotional connections quickly and then exploit them for money or personal data. Knowing the signs can protect you.'**
+  /// **'Impersonation and money scams cost victims billions worldwide each year. Scammers build emotional connections quickly and then exploit them for money or personal data. Knowing the signs can protect you.'**
   String get safetyAcademyLsnScamRecognitionS0;
 
   /// No description provided for @safetyAcademyLsnScamRecognitionS1.
   ///
   /// In en, this message translates to:
-  /// **'If someone asks for money, gift cards, cryptocurrency, or financial help early in a relationship -- no matter how compelling the story -- it is almost certainly a scam.'**
+  /// **'If someone asks for money, gift cards, cryptocurrency, or financial help soon after you meet online -- no matter how compelling the story -- it is almost certainly a scam.'**
   String get safetyAcademyLsnScamRecognitionS1;
 
   /// No description provided for @safetyAcademyLsnScamRecognitionS2.
@@ -33323,7 +32915,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnScamRecognitionS3I2.
   ///
   /// In en, this message translates to:
-  /// **'Falls in love unusually fast (\"love bombing\")'**
+  /// **'Shows intense attachment or flattery unusually fast'**
   String get safetyAcademyLsnScamRecognitionS3I2;
 
   /// No description provided for @safetyAcademyLsnScamRecognitionS3I3.
@@ -33353,7 +32945,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnScamRecognitionQ0.
   ///
   /// In en, this message translates to:
-  /// **'Someone you matched with a week ago says they love you and asks for money to visit you. What should you do?'**
+  /// **'Someone you connected with a week ago says you mean everything to them and asks for money to visit you. What should you do?'**
   String get safetyAcademyLsnScamRecognitionQ0;
 
   /// No description provided for @safetyAcademyLsnScamRecognitionQ0O0.
@@ -33371,7 +32963,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnScamRecognitionQ0O2.
   ///
   /// In en, this message translates to:
-  /// **'Recognize this as a classic romance scam pattern and report them'**
+  /// **'Recognize this as a classic money-scam pattern and report them'**
   String get safetyAcademyLsnScamRecognitionQ0O2;
 
   /// No description provided for @safetyAcademyLsnScamRecognitionQ0O3.
@@ -33383,7 +32975,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnScamRecognitionQ0Exp.
   ///
   /// In en, this message translates to:
-  /// **'Declaring love very quickly and then requesting money is the hallmark pattern of romance scams. Report and block.'**
+  /// **'Building intense emotional attachment very quickly and then requesting money is the hallmark pattern of money scams. Report and block.'**
   String get safetyAcademyLsnScamRecognitionQ0Exp;
 
   /// No description provided for @safetyAcademyLsnScamRecognitionQ1.
@@ -33533,7 +33125,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnRedFlagsQ0.
   ///
   /// In en, this message translates to:
-  /// **'Your match gets upset when you take an hour to reply. What does this indicate?'**
+  /// **'A new connection gets upset when you take an hour to reply. What does this indicate?'**
   String get safetyAcademyLsnRedFlagsQ0;
 
   /// No description provided for @safetyAcademyLsnRedFlagsQ0O0.
@@ -33623,7 +33215,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnRedFlagsQ2O2.
   ///
   /// In en, this message translates to:
-  /// **'They say \"I love you\" within the first few days'**
+  /// **'They declare intense feelings for you within the first few days'**
   String get safetyAcademyLsnRedFlagsQ2O2;
 
   /// No description provided for @safetyAcademyLsnRedFlagsQ2O3.
@@ -33647,7 +33239,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyModEmotionalIntelligenceDesc.
   ///
   /// In en, this message translates to:
-  /// **'Understand attachment styles, love languages, and build emotional awareness.'**
+  /// **'Understand attachment styles, appreciation languages, and build emotional awareness.'**
   String get safetyAcademyModEmotionalIntelligenceDesc;
 
   /// No description provided for @safetyAcademyLsnAttachmentStylesTitle.
@@ -33659,7 +33251,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnAttachmentStylesS0.
   ///
   /// In en, this message translates to:
-  /// **'Attachment theory explains how our early relationships shape the way we connect with romantic partners. Understanding your attachment style can help you build healthier relationships.'**
+  /// **'Attachment theory explains how our early relationships shape the way we connect with other people as adults. Understanding your attachment style can help you build healthier friendships.'**
   String get safetyAcademyLsnAttachmentStylesS0;
 
   /// No description provided for @safetyAcademyLsnAttachmentStylesS1.
@@ -33707,13 +33299,13 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnAttachmentStylesS4.
   ///
   /// In en, this message translates to:
-  /// **'Understanding your partner\'s attachment style helps you respond with empathy rather than frustration. An avoidant partner pulling away is not rejection -- it is their coping mechanism.'**
+  /// **'Understanding a friend\'s attachment style helps you respond with empathy rather than frustration. An avoidant friend pulling away is not rejection -- it is their coping mechanism.'**
   String get safetyAcademyLsnAttachmentStylesS4;
 
   /// No description provided for @safetyAcademyLsnAttachmentStylesQ0.
   ///
   /// In en, this message translates to:
-  /// **'Your partner needs a lot of reassurance and gets anxious when you do not respond quickly. Which attachment style might this reflect?'**
+  /// **'A friend needs a lot of reassurance and gets anxious when you do not respond quickly. Which attachment style might this reflect?'**
   String get safetyAcademyLsnAttachmentStylesQ0;
 
   /// No description provided for @safetyAcademyLsnAttachmentStylesQ0O0.
@@ -33773,7 +33365,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnAttachmentStylesQ1O3.
   ///
   /// In en, this message translates to:
-  /// **'Only date people with the same style'**
+  /// **'Only spend time with people who have the same style'**
   String get safetyAcademyLsnAttachmentStylesQ1O3;
 
   /// No description provided for @safetyAcademyLsnAttachmentStylesQ1Exp.
@@ -33797,7 +33389,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnAttachmentStylesQ2O1.
   ///
   /// In en, this message translates to:
-  /// **'Pull away or shut down when the relationship gets emotionally close'**
+  /// **'Pull away or shut down when a friendship gets emotionally close'**
   String get safetyAcademyLsnAttachmentStylesQ2O1;
 
   /// No description provided for @safetyAcademyLsnAttachmentStylesQ2O2.
@@ -33815,31 +33407,31 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnAttachmentStylesQ2Exp.
   ///
   /// In en, this message translates to:
-  /// **'Avoidant attachment often manifests as pulling away when emotional intimacy increases, as a self-protection mechanism.'**
+  /// **'Avoidant attachment often manifests as pulling away when emotional closeness increases, as a self-protection mechanism.'**
   String get safetyAcademyLsnAttachmentStylesQ2Exp;
 
   /// No description provided for @safetyAcademyLsnLoveLanguagesTitle.
   ///
   /// In en, this message translates to:
-  /// **'Love Languages'**
+  /// **'Appreciation Languages'**
   String get safetyAcademyLsnLoveLanguagesTitle;
 
   /// No description provided for @safetyAcademyLsnLoveLanguagesS0.
   ///
   /// In en, this message translates to:
-  /// **'The concept of love languages, popularized by Dr. Gary Chapman, suggests that people express and receive love in five primary ways. Understanding yours and your partner\'s can transform your relationship.'**
+  /// **'The concept of appreciation languages, adapted from Dr. Gary Chapman\'s work, suggests that people express and receive appreciation in five primary ways. Understanding yours and your friends\' can strengthen your connections.'**
   String get safetyAcademyLsnLoveLanguagesS0;
 
   /// No description provided for @safetyAcademyLsnLoveLanguagesS1.
   ///
   /// In en, this message translates to:
-  /// **'The Five Love Languages'**
+  /// **'The Five Appreciation Languages'**
   String get safetyAcademyLsnLoveLanguagesS1;
 
   /// No description provided for @safetyAcademyLsnLoveLanguagesS1I0.
   ///
   /// In en, this message translates to:
-  /// **'Words of Affirmation: Verbal compliments, encouragement, and expressions of love'**
+  /// **'Words of Affirmation: Verbal compliments, encouragement, and expressions of appreciation'**
   String get safetyAcademyLsnLoveLanguagesS1I0;
 
   /// No description provided for @safetyAcademyLsnLoveLanguagesS1I1.
@@ -33851,7 +33443,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnLoveLanguagesS1I2.
   ///
   /// In en, this message translates to:
-  /// **'Receiving Gifts: Thoughtful tokens of affection (not about cost)'**
+  /// **'Receiving Gifts: Thoughtful tokens of appreciation (not about cost)'**
   String get safetyAcademyLsnLoveLanguagesS1I2;
 
   /// No description provided for @safetyAcademyLsnLoveLanguagesS1I3.
@@ -33863,25 +33455,25 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnLoveLanguagesS1I4.
   ///
   /// In en, this message translates to:
-  /// **'Physical Touch: Hugs, holding hands, and other physical affection'**
+  /// **'Friendly Gestures: A handshake, high five, or hug when it is welcome'**
   String get safetyAcademyLsnLoveLanguagesS1I4;
 
   /// No description provided for @safetyAcademyLsnLoveLanguagesS2.
   ///
   /// In en, this message translates to:
-  /// **'Pay attention to how your date expresses affection -- that is likely their love language. If they always compliment you, they probably value words of affirmation.'**
+  /// **'Pay attention to how someone shows appreciation -- that is likely their appreciation language. If they always compliment you, they probably value words of affirmation.'**
   String get safetyAcademyLsnLoveLanguagesS2;
 
   /// No description provided for @safetyAcademyLsnLoveLanguagesS3.
   ///
   /// In en, this message translates to:
-  /// **'Mismatched love languages are common and manageable. The key is communication: tell your partner what makes you feel loved, and ask them the same question.'**
+  /// **'Different appreciation languages are common and manageable. The key is communication: tell your friends what makes you feel appreciated, and ask them the same question.'**
   String get safetyAcademyLsnLoveLanguagesS3;
 
   /// No description provided for @safetyAcademyLsnLoveLanguagesQ0.
   ///
   /// In en, this message translates to:
-  /// **'Your partner always makes time for you and puts their phone away during conversations. Their love language is likely:'**
+  /// **'A friend always makes time for you and puts their phone away during conversations. Their appreciation language is likely:'**
   String get safetyAcademyLsnLoveLanguagesQ0;
 
   /// No description provided for @safetyAcademyLsnLoveLanguagesQ0O0.
@@ -33905,19 +33497,19 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnLoveLanguagesQ0O3.
   ///
   /// In en, this message translates to:
-  /// **'Physical Touch'**
+  /// **'Friendly Gestures'**
   String get safetyAcademyLsnLoveLanguagesQ0O3;
 
   /// No description provided for @safetyAcademyLsnLoveLanguagesQ0Exp.
   ///
   /// In en, this message translates to:
-  /// **'Giving undivided attention and prioritizing presence is the hallmark of Quality Time as a love language.'**
+  /// **'Giving undivided attention and prioritizing presence is the hallmark of Quality Time as an appreciation language.'**
   String get safetyAcademyLsnLoveLanguagesQ0Exp;
 
   /// No description provided for @safetyAcademyLsnLoveLanguagesQ1.
   ///
   /// In en, this message translates to:
-  /// **'You value words of affirmation but your partner shows love through acts of service. What should you do?'**
+  /// **'You value words of affirmation but a friend shows appreciation through acts of service. What should you do?'**
   String get safetyAcademyLsnLoveLanguagesQ1;
 
   /// No description provided for @safetyAcademyLsnLoveLanguagesQ1O0.
@@ -33929,13 +33521,13 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnLoveLanguagesQ1O1.
   ///
   /// In en, this message translates to:
-  /// **'Tell your partner what you need and learn to recognize their style of showing love'**
+  /// **'Tell them what you need and learn to recognize how they show appreciation'**
   String get safetyAcademyLsnLoveLanguagesQ1O1;
 
   /// No description provided for @safetyAcademyLsnLoveLanguagesQ1O2.
   ///
   /// In en, this message translates to:
-  /// **'Change your love language to match theirs'**
+  /// **'Change your appreciation language to match theirs'**
   String get safetyAcademyLsnLoveLanguagesQ1O2;
 
   /// No description provided for @safetyAcademyLsnLoveLanguagesQ1O3.
@@ -33947,7 +33539,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnLoveLanguagesQ1Exp.
   ///
   /// In en, this message translates to:
-  /// **'Communication is key. Express what you need while also learning to appreciate how your partner shows love.'**
+  /// **'Communication is key. Express what you need while also learning to appreciate how your friend shows they care.'**
   String get safetyAcademyLsnLoveLanguagesQ1Exp;
 
   /// No description provided for @safetyAcademyLsnEmotionalAwarenessTitle.
@@ -33959,7 +33551,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnEmotionalAwarenessS0.
   ///
   /// In en, this message translates to:
-  /// **'Emotional awareness is the ability to recognize, understand, and manage your own emotions while also being attuned to others\'. In dating, this skill prevents reactive decisions and builds deeper connections.'**
+  /// **'Emotional awareness is the ability to recognize, understand, and manage your own emotions while also being attuned to others\'. When meeting new people, this skill prevents reactive decisions and builds deeper connections.'**
   String get safetyAcademyLsnEmotionalAwarenessS0;
 
   /// No description provided for @safetyAcademyLsnEmotionalAwarenessS1.
@@ -33989,7 +33581,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnEmotionalAwarenessS2I2.
   ///
   /// In en, this message translates to:
-  /// **'Journal about dating experiences and your emotional reactions'**
+  /// **'Journal about your social experiences and emotional reactions'**
   String get safetyAcademyLsnEmotionalAwarenessS2I2;
 
   /// No description provided for @safetyAcademyLsnEmotionalAwarenessS2I3.
@@ -34019,7 +33611,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ0.
   ///
   /// In en, this message translates to:
-  /// **'Your date cancels plans last minute and you feel angry. What is the emotionally aware response?'**
+  /// **'A new friend cancels plans last minute and you feel angry. What is the emotionally aware response?'**
   String get safetyAcademyLsnEmotionalAwarenessQ0;
 
   /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ0O0.
@@ -34133,7 +33725,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyModFirstMeetingDesc.
   ///
   /// In en, this message translates to:
-  /// **'Essential tips for safe, confident first dates with people you meet online.'**
+  /// **'Essential tips for safe, confident first meetings with people you meet online.'**
   String get safetyAcademyModFirstMeetingDesc;
 
   /// No description provided for @safetyAcademyLsnPublicPlacesTitle.
@@ -34145,7 +33737,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnPublicPlacesS0.
   ///
   /// In en, this message translates to:
-  /// **'Meeting someone from a dating app for the first time is exciting, but safety should always come first. Choosing the right location sets the foundation for a comfortable experience.'**
+  /// **'Meeting someone from an app for the first time is exciting, but safety should always come first. Choosing the right location sets the foundation for a comfortable experience.'**
   String get safetyAcademyLsnPublicPlacesS0;
 
   /// No description provided for @safetyAcademyLsnPublicPlacesS1.
@@ -34157,7 +33749,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnPublicPlacesS2.
   ///
   /// In en, this message translates to:
-  /// **'Never agree to meet at someone\'s home, a secluded area, or a place you are unfamiliar with for a first date.'**
+  /// **'Never agree to meet at someone\'s home, a secluded area, or a place you are unfamiliar with for a first meeting.'**
   String get safetyAcademyLsnPublicPlacesS2;
 
   /// No description provided for @safetyAcademyLsnPublicPlacesS3.
@@ -34199,7 +33791,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnPublicPlacesQ0.
   ///
   /// In en, this message translates to:
-  /// **'Which is the safest first date location?'**
+  /// **'Which is the safest first meeting location?'**
   String get safetyAcademyLsnPublicPlacesQ0;
 
   /// No description provided for @safetyAcademyLsnPublicPlacesQ0O0.
@@ -34241,7 +33833,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnPublicPlacesQ1O0.
   ///
   /// In en, this message translates to:
-  /// **'So you can impress your date with recommendations'**
+  /// **'So you can impress the other person with recommendations'**
   String get safetyAcademyLsnPublicPlacesQ1O0;
 
   /// No description provided for @safetyAcademyLsnPublicPlacesQ1O1.
@@ -34277,13 +33869,13 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnSharingPlansS0.
   ///
   /// In en, this message translates to:
-  /// **'Letting someone you trust know about your date is one of the simplest and most effective safety measures. A safety buddy can check in on you and knows where to look if something goes wrong.'**
+  /// **'Letting someone you trust know about your plans to meet someone new is one of the simplest and most effective safety measures. A safety buddy can check in on you and knows where to look if something goes wrong.'**
   String get safetyAcademyLsnSharingPlansS0;
 
   /// No description provided for @safetyAcademyLsnSharingPlansS1.
   ///
   /// In en, this message translates to:
-  /// **'Share your date\'s profile, the venue, and your expected return time with a trusted friend. Set up a check-in call 30 minutes into the date.'**
+  /// **'Share the other person\'s profile, the venue, and your expected return time with a trusted friend. Set up a check-in call 30 minutes into the meeting.'**
   String get safetyAcademyLsnSharingPlansS1;
 
   /// No description provided for @safetyAcademyLsnSharingPlansS2.
@@ -34295,7 +33887,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnSharingPlansS2I0.
   ///
   /// In en, this message translates to:
-  /// **'Screenshot of your date\'s profile'**
+  /// **'Screenshot of the other person\'s profile'**
   String get safetyAcademyLsnSharingPlansS2I0;
 
   /// No description provided for @safetyAcademyLsnSharingPlansS2I1.
@@ -34307,7 +33899,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnSharingPlansS2I2.
   ///
   /// In en, this message translates to:
-  /// **'Date, time, and venue of the meeting'**
+  /// **'Day, time, and venue of the meeting'**
   String get safetyAcademyLsnSharingPlansS2I2;
 
   /// No description provided for @safetyAcademyLsnSharingPlansS2I3.
@@ -34325,13 +33917,13 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnSharingPlansS3.
   ///
   /// In en, this message translates to:
-  /// **'You can also use GreenGo\'s Share My Date feature to easily send date details to a trusted contact. There is no shame in being safe -- your date should understand.'**
+  /// **'You can also send the meeting details to a trusted contact before you go. There is no shame in being safe -- the person you are meeting should understand.'**
   String get safetyAcademyLsnSharingPlansS3;
 
   /// No description provided for @safetyAcademyLsnSharingPlansQ0.
   ///
   /// In en, this message translates to:
-  /// **'What should you share with a trusted friend before a first date?'**
+  /// **'What should you share with a trusted friend before a first meeting?'**
   String get safetyAcademyLsnSharingPlansQ0;
 
   /// No description provided for @safetyAcademyLsnSharingPlansQ0O0.
@@ -34343,7 +33935,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnSharingPlansQ0O1.
   ///
   /// In en, this message translates to:
-  /// **'Your date\'s profile, venue, time, and expected return'**
+  /// **'The other person\'s profile, venue, time, and expected return'**
   String get safetyAcademyLsnSharingPlansQ0O1;
 
   /// No description provided for @safetyAcademyLsnSharingPlansQ0O2.
@@ -34355,7 +33947,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnSharingPlansQ0O3.
   ///
   /// In en, this message translates to:
-  /// **'Just a text saying \"going on a date\"'**
+  /// **'Just a text saying \"going out\"'**
   String get safetyAcademyLsnSharingPlansQ0O3;
 
   /// No description provided for @safetyAcademyLsnSharingPlansQ0Exp.
@@ -34373,13 +33965,13 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnSharingPlansQ1O0.
   ///
   /// In en, this message translates to:
-  /// **'After the date is over'**
+  /// **'After the meeting is over'**
   String get safetyAcademyLsnSharingPlansQ1O0;
 
   /// No description provided for @safetyAcademyLsnSharingPlansQ1O1.
   ///
   /// In en, this message translates to:
-  /// **'About 30 minutes into the date'**
+  /// **'About 30 minutes into the meeting'**
   String get safetyAcademyLsnSharingPlansQ1O1;
 
   /// No description provided for @safetyAcademyLsnSharingPlansQ1O2.
@@ -34391,7 +33983,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnSharingPlansQ1O3.
   ///
   /// In en, this message translates to:
-  /// **'Before you leave for the date'**
+  /// **'Before you leave for the meeting'**
   String get safetyAcademyLsnSharingPlansQ1O3;
 
   /// No description provided for @safetyAcademyLsnSharingPlansQ1Exp.
@@ -34409,13 +34001,13 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnTransportSafetyS0.
   ///
   /// In en, this message translates to:
-  /// **'How you get to and from a date matters just as much as where you meet. Maintaining control over your transportation ensures you can leave whenever you want.'**
+  /// **'How you get to and from a meetup matters just as much as where you meet. Maintaining control over your transportation ensures you can leave whenever you want.'**
   String get safetyAcademyLsnTransportSafetyS0;
 
   /// No description provided for @safetyAcademyLsnTransportSafetyS1.
   ///
   /// In en, this message translates to:
-  /// **'Never let your date pick you up from your home for the first meeting. This reveals your address and makes you dependent on them for a ride home.'**
+  /// **'Never let someone you just met online pick you up from your home for the first meeting. This reveals your address and makes you dependent on them for a ride home.'**
   String get safetyAcademyLsnTransportSafetyS1;
 
   /// No description provided for @safetyAcademyLsnTransportSafetyS2.
@@ -34469,7 +34061,7 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnTransportSafetyQ0.
   ///
   /// In en, this message translates to:
-  /// **'Why should you arrange your own transportation for a first date?'**
+  /// **'Why should you arrange your own transportation for a first meeting?'**
   String get safetyAcademyLsnTransportSafetyQ0;
 
   /// No description provided for @safetyAcademyLsnTransportSafetyQ0O0.
@@ -34499,13 +34091,13 @@ abstract class AppLocalizations {
   /// No description provided for @safetyAcademyLsnTransportSafetyQ0Exp.
   ///
   /// In en, this message translates to:
-  /// **'Having your own transport means you are not dependent on your date and your home address remains private.'**
+  /// **'Having your own transport means you are not dependent on the other person and your home address remains private.'**
   String get safetyAcademyLsnTransportSafetyQ0Exp;
 
   /// No description provided for @safetyAcademyLsnTransportSafetyQ1.
   ///
   /// In en, this message translates to:
-  /// **'Your date offers to pick you up from home. What should you do?'**
+  /// **'Someone you are about to meet for the first time offers to pick you up from home. What should you do?'**
   String get safetyAcademyLsnTransportSafetyQ1;
 
   /// No description provided for @safetyAcademyLsnTransportSafetyQ1O0.
@@ -34541,7 +34133,7 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationAchFirstMatchName.
   ///
   /// In en, this message translates to:
-  /// **'First Match'**
+  /// **'First Connection'**
   String get gamificationAchFirstMatchName;
 
   /// No description provided for @gamificationAchFirstMatchDesc.
@@ -34595,19 +34187,19 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationAchGlobeTrotterDesc.
   ///
   /// In en, this message translates to:
-  /// **'Match with users from 10+ countries'**
+  /// **'Connect with people from 10+ countries'**
   String get gamificationAchGlobeTrotterDesc;
 
   /// No description provided for @gamificationAchGenerousHeartName.
   ///
   /// In en, this message translates to:
-  /// **'Generous Heart'**
+  /// **'Generous Spirit'**
   String get gamificationAchGenerousHeartName;
 
   /// No description provided for @gamificationAchGenerousHeartDesc.
   ///
   /// In en, this message translates to:
-  /// **'Gift coins to matches'**
+  /// **'Gift coins to your connections'**
   String get gamificationAchGenerousHeartDesc;
 
   /// No description provided for @gamificationAchDailyDedicationName.
@@ -34631,7 +34223,7 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationAchSuperStarDesc.
   ///
   /// In en, this message translates to:
-  /// **'Receive 50+ super likes'**
+  /// **'Receive 50+ Priority Connects'**
   String get gamificationAchSuperStarDesc;
 
   /// No description provided for @gamificationAchSocialButterflyName.
@@ -34691,19 +34283,19 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationAchCenturionDesc.
   ///
   /// In en, this message translates to:
-  /// **'Reach 100 total matches'**
+  /// **'Reach 100 total connections'**
   String get gamificationAchCenturionDesc;
 
   /// No description provided for @gamificationAchSpeedDaterName.
   ///
   /// In en, this message translates to:
-  /// **'Speed Dater'**
+  /// **'Social Sprinter'**
   String get gamificationAchSpeedDaterName;
 
   /// No description provided for @gamificationAchSpeedDaterDesc.
   ///
   /// In en, this message translates to:
-  /// **'Match with 10 people in one day'**
+  /// **'Connect with 10 people in one day'**
   String get gamificationAchSpeedDaterDesc;
 
   /// No description provided for @gamificationAchPhotoCollectorName.
@@ -35225,7 +34817,7 @@ abstract class AppLocalizations {
   /// No description provided for @celebrationSeeWhoLikedYou.
   ///
   /// In en, this message translates to:
-  /// **'See who liked you'**
+  /// **'See who wants to connect'**
   String get celebrationSeeWhoLikedYou;
 
   /// No description provided for @celebrationPerDay.
@@ -35339,7 +34931,7 @@ abstract class AppLocalizations {
   /// No description provided for @usageLimitTypeDirectMatches.
   ///
   /// In en, this message translates to:
-  /// **'direct matches'**
+  /// **'direct connects'**
   String get usageLimitTypeDirectMatches;
 
   /// No description provided for @usageLimitTypeConnections.
@@ -35423,7 +35015,7 @@ abstract class AppLocalizations {
   /// No description provided for @usageLimitDirectMatchDaily.
   ///
   /// In en, this message translates to:
-  /// **'{limit, plural, =1{You\'ve used your 1 free direct match today. Use coins for more or wait until tomorrow.} other{You\'ve used your {limit} free direct matches today. Use coins for more or wait until tomorrow.}}'**
+  /// **'{limit, plural, =1{You\'ve used your 1 free Direct Connect today. Use coins for more or wait until tomorrow.} other{You\'ve used your {limit} free Direct Connects today. Use coins for more or wait until tomorrow.}}'**
   String usageLimitDirectMatchDaily(int limit);
 
   /// No description provided for @contentFilterViolationEmail.
@@ -35801,7 +35393,7 @@ abstract class AppLocalizations {
   /// No description provided for @coinSpendCategoryMatching.
   ///
   /// In en, this message translates to:
-  /// **'Matching'**
+  /// **'Connecting'**
   String get coinSpendCategoryMatching;
 
   /// No description provided for @coinSpendCategoryMessaging.
@@ -35849,7 +35441,7 @@ abstract class AppLocalizations {
   /// No description provided for @coinSpendSuperLikeDesc.
   ///
   /// In en, this message translates to:
-  /// **'Send a super like to stand out'**
+  /// **'Send a Priority Connect to stand out'**
   String get coinSpendSuperLikeDesc;
 
   /// No description provided for @coinSpendBoostDesc.
@@ -35897,7 +35489,7 @@ abstract class AppLocalizations {
   /// No description provided for @coinReasonFirstMatchReward.
   ///
   /// In en, this message translates to:
-  /// **'First Match Reward'**
+  /// **'First Connection Reward'**
   String get coinReasonFirstMatchReward;
 
   /// No description provided for @coinReasonCompleteProfileReward.
@@ -35969,7 +35561,7 @@ abstract class AppLocalizations {
   /// No description provided for @coinReasonSeeWhoLikedYou.
   ///
   /// In en, this message translates to:
-  /// **'See Who Liked You'**
+  /// **'See Who Wants to Connect'**
   String get coinReasonSeeWhoLikedYou;
 
   /// No description provided for @coinReasonDirectMessage.
@@ -35999,7 +35591,7 @@ abstract class AppLocalizations {
   /// No description provided for @coinTxDescFirstMatch.
   ///
   /// In en, this message translates to:
-  /// **'Congratulations on your first match! Earned {amount} coins.'**
+  /// **'Congratulations on your first connection! Earned {amount} coins.'**
   String coinTxDescFirstMatch(int amount);
 
   /// No description provided for @coinTxDescCompleteProfile.
@@ -36563,7 +36155,7 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationJourneyCatMasteryDesc.
   ///
   /// In en, this message translates to:
-  /// **'Become a master of the dating game'**
+  /// **'Become a master connector'**
   String get gamificationJourneyCatMasteryDesc;
 
   /// No description provided for @gamificationJourneyCatSpecialDesc.
@@ -36617,7 +36209,7 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationJourneyFirstMatchDesc.
   ///
   /// In en, this message translates to:
-  /// **'Get your first match'**
+  /// **'Make your first connection'**
   String get gamificationJourneyFirstMatchDesc;
 
   /// No description provided for @gamificationJourneyTenMatchesName.
@@ -36629,7 +36221,7 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationJourneyTenMatchesDesc.
   ///
   /// In en, this message translates to:
-  /// **'Get 10 matches'**
+  /// **'Make 10 connections'**
   String get gamificationJourneyTenMatchesDesc;
 
   /// No description provided for @gamificationJourneyFiftyMatchesName.
@@ -36641,7 +36233,7 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationJourneyFiftyMatchesDesc.
   ///
   /// In en, this message translates to:
-  /// **'Get 50 matches'**
+  /// **'Make 50 connections'**
   String get gamificationJourneyFiftyMatchesDesc;
 
   /// No description provided for @gamificationJourneyFirstMessageName.
@@ -36785,7 +36377,7 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationJourneyHundredMatchesDesc.
   ///
   /// In en, this message translates to:
-  /// **'Get 100 matches'**
+  /// **'Make 100 connections'**
   String get gamificationJourneyHundredMatchesDesc;
 
   /// No description provided for @gamificationStreakMilestone3Name.
@@ -36833,7 +36425,7 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationStreakMilestone365Name.
   ///
   /// In en, this message translates to:
-  /// **'Year of Love'**
+  /// **'Year of Discovery'**
   String get gamificationStreakMilestone365Name;
 
   /// No description provided for @gamificationStreakMilestoneDesc.
@@ -36863,7 +36455,7 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationChallengeSend5MessagesDesc.
   ///
   /// In en, this message translates to:
-  /// **'Send 5 messages to your matches'**
+  /// **'Send 5 messages to your connections'**
   String get gamificationChallengeSend5MessagesDesc;
 
   /// No description provided for @gamificationChallengeSend10MessagesName.
@@ -36893,37 +36485,37 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationChallengeGet1MatchName.
   ///
   /// In en, this message translates to:
-  /// **'First Spark'**
+  /// **'New Connection'**
   String get gamificationChallengeGet1MatchName;
 
   /// No description provided for @gamificationChallengeGet1MatchDesc.
   ///
   /// In en, this message translates to:
-  /// **'Get 1 new match today'**
+  /// **'Make 1 new connection today'**
   String get gamificationChallengeGet1MatchDesc;
 
   /// No description provided for @gamificationChallengeGet3MatchesName.
   ///
   /// In en, this message translates to:
-  /// **'Match Maker'**
+  /// **'Connector'**
   String get gamificationChallengeGet3MatchesName;
 
   /// No description provided for @gamificationChallengeGet3MatchesDesc.
   ///
   /// In en, this message translates to:
-  /// **'Get 3 new matches today'**
+  /// **'Make 3 new connections today'**
   String get gamificationChallengeGet3MatchesDesc;
 
   /// No description provided for @gamificationChallengeGet5MatchesName.
   ///
   /// In en, this message translates to:
-  /// **'Love Magnet'**
+  /// **'People Magnet'**
   String get gamificationChallengeGet5MatchesName;
 
   /// No description provided for @gamificationChallengeGet5MatchesDesc.
   ///
   /// In en, this message translates to:
-  /// **'Get 5 new matches today'**
+  /// **'Make 5 new connections today'**
   String get gamificationChallengeGet5MatchesDesc;
 
   /// No description provided for @gamificationChallengeSend1SuperlikeName.
@@ -36935,19 +36527,19 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationChallengeSend1SuperlikeDesc.
   ///
   /// In en, this message translates to:
-  /// **'Send 1 super like'**
+  /// **'Send 1 Priority Connect'**
   String get gamificationChallengeSend1SuperlikeDesc;
 
   /// No description provided for @gamificationChallengeSend3SuperlikesName.
   ///
   /// In en, this message translates to:
-  /// **'Super Liker'**
+  /// **'Priority Connector'**
   String get gamificationChallengeSend3SuperlikesName;
 
   /// No description provided for @gamificationChallengeSend3SuperlikesDesc.
   ///
   /// In en, this message translates to:
-  /// **'Send 3 super likes'**
+  /// **'Send 3 Priority Connects'**
   String get gamificationChallengeSend3SuperlikesDesc;
 
   /// No description provided for @gamificationChallengeSend5SuperlikesName.
@@ -36959,7 +36551,7 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationChallengeSend5SuperlikesDesc.
   ///
   /// In en, this message translates to:
-  /// **'Send 5 super likes'**
+  /// **'Send 5 Priority Connects'**
   String get gamificationChallengeSend5SuperlikesDesc;
 
   /// No description provided for @gamificationChallengeVideoCall1Name.
@@ -37019,13 +36611,13 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationChallengeSend1GiftDesc.
   ///
   /// In en, this message translates to:
-  /// **'Send 1 gift to a match'**
+  /// **'Send 1 gift to a connection'**
   String get gamificationChallengeSend1GiftDesc;
 
   /// No description provided for @gamificationChallengeSend3GiftsName.
   ///
   /// In en, this message translates to:
-  /// **'Generous Heart'**
+  /// **'Generous Spirit'**
   String get gamificationChallengeSend3GiftsName;
 
   /// No description provided for @gamificationChallengeSend3GiftsDesc.
@@ -37055,7 +36647,7 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationChallengeChatStarterDesc.
   ///
   /// In en, this message translates to:
-  /// **'Send 7 messages to different matches'**
+  /// **'Send 7 messages to different connections'**
   String get gamificationChallengeChatStarterDesc;
 
   /// No description provided for @gamificationChallengeSocialButterflyName.
@@ -37073,13 +36665,13 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationChallengeMatchRushName.
   ///
   /// In en, this message translates to:
-  /// **'Match Rush'**
+  /// **'Connection Rush'**
   String get gamificationChallengeMatchRushName;
 
   /// No description provided for @gamificationChallengeMatchRushDesc.
   ///
   /// In en, this message translates to:
-  /// **'Get 7 matches today'**
+  /// **'Make 7 connections today'**
   String get gamificationChallengeMatchRushDesc;
 
   /// No description provided for @gamificationChallengeVideoMarathonName.
@@ -37139,43 +36731,43 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationChallengeWeeklyMatches10Desc.
   ///
   /// In en, this message translates to:
-  /// **'Get 10 matches this week'**
+  /// **'Make 10 connections this week'**
   String get gamificationChallengeWeeklyMatches10Desc;
 
   /// No description provided for @gamificationChallengeWeeklyMatches20Name.
   ///
   /// In en, this message translates to:
-  /// **'Weekly Match Champion'**
+  /// **'Weekly Connection Champion'**
   String get gamificationChallengeWeeklyMatches20Name;
 
   /// No description provided for @gamificationChallengeWeeklyMatches20Desc.
   ///
   /// In en, this message translates to:
-  /// **'Get 20 matches this week'**
+  /// **'Make 20 connections this week'**
   String get gamificationChallengeWeeklyMatches20Desc;
 
   /// No description provided for @gamificationChallengeWeeklyMatches30Name.
   ///
   /// In en, this message translates to:
-  /// **'Match Machine'**
+  /// **'Connection Machine'**
   String get gamificationChallengeWeeklyMatches30Name;
 
   /// No description provided for @gamificationChallengeWeeklyMatches30Desc.
   ///
   /// In en, this message translates to:
-  /// **'Get 30 matches this week'**
+  /// **'Make 30 connections this week'**
   String get gamificationChallengeWeeklyMatches30Desc;
 
   /// No description provided for @gamificationChallengeWeeklySuperlikes5Name.
   ///
   /// In en, this message translates to:
-  /// **'Weekly Super Liker'**
+  /// **'Weekly Priority Connector'**
   String get gamificationChallengeWeeklySuperlikes5Name;
 
   /// No description provided for @gamificationChallengeWeeklySuperlikes5Desc.
   ///
   /// In en, this message translates to:
-  /// **'Send 5 super likes this week'**
+  /// **'Send 5 Priority Connects this week'**
   String get gamificationChallengeWeeklySuperlikes5Desc;
 
   /// No description provided for @gamificationChallengeWeeklySuperlikes10Name.
@@ -37187,7 +36779,7 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationChallengeWeeklySuperlikes10Desc.
   ///
   /// In en, this message translates to:
-  /// **'Send 10 super likes this week'**
+  /// **'Send 10 Priority Connects this week'**
   String get gamificationChallengeWeeklySuperlikes10Desc;
 
   /// No description provided for @gamificationChallengeWeeklySuperlikes15Name.
@@ -37199,7 +36791,7 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationChallengeWeeklySuperlikes15Desc.
   ///
   /// In en, this message translates to:
-  /// **'Send 15 super likes this week'**
+  /// **'Send 15 Priority Connects this week'**
   String get gamificationChallengeWeeklySuperlikes15Desc;
 
   /// No description provided for @gamificationChallengeWeeklyVideo3Name.
@@ -37277,19 +36869,19 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationChallengeValentineMatchesName.
   ///
   /// In en, this message translates to:
-  /// **'Love Connections'**
+  /// **'Friendship Connections'**
   String get gamificationChallengeValentineMatchesName;
 
   /// No description provided for @gamificationChallengeValentineMatchesDesc.
   ///
   /// In en, this message translates to:
-  /// **'Get 14 matches during Valentine’s Week (1 per day)'**
+  /// **'Make 14 connections during Friendship Week (1 per day)'**
   String get gamificationChallengeValentineMatchesDesc;
 
   /// No description provided for @gamificationChallengeValentineVideoName.
   ///
   /// In en, this message translates to:
-  /// **'Virtual Date Night'**
+  /// **'Virtual Culture Night'**
   String get gamificationChallengeValentineVideoName;
 
   /// No description provided for @gamificationChallengeValentineVideoDesc.
@@ -37307,7 +36899,7 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationChallengeSummerMatchesDesc.
   ///
   /// In en, this message translates to:
-  /// **'Get 30 matches this summer'**
+  /// **'Make 30 connections this summer'**
   String get gamificationChallengeSummerMatchesDesc;
 
   /// No description provided for @gamificationChallengeHolidayGiftsName.
@@ -37319,7 +36911,7 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationChallengeHolidayGiftsDesc.
   ///
   /// In en, this message translates to:
-  /// **'Send 10 coin gifts to matches'**
+  /// **'Send 10 coin gifts to your connections'**
   String get gamificationChallengeHolidayGiftsDesc;
 
   /// No description provided for @gamificationChallengeHolidayMessagesName.
@@ -37337,25 +36929,25 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationEventValentinesName.
   ///
   /// In en, this message translates to:
-  /// **'Valentine’s Week'**
+  /// **'Friendship Week'**
   String get gamificationEventValentinesName;
 
   /// No description provided for @gamificationEventValentinesDesc.
   ///
   /// In en, this message translates to:
-  /// **'Spread the love this Valentine’s Week!'**
+  /// **'Celebrate friendship across cultures this week!'**
   String get gamificationEventValentinesDesc;
 
   /// No description provided for @gamificationEventSummerName.
   ///
   /// In en, this message translates to:
-  /// **'Summer Love'**
+  /// **'Summer of Discovery'**
   String get gamificationEventSummerName;
 
   /// No description provided for @gamificationEventSummerDesc.
   ///
   /// In en, this message translates to:
-  /// **'Find your summer romance!'**
+  /// **'Make new friends from around the world this summer!'**
   String get gamificationEventSummerDesc;
 
   /// No description provided for @gamificationEventHolidayName.
@@ -37367,7 +36959,7 @@ abstract class AppLocalizations {
   /// No description provided for @gamificationEventHolidayDesc.
   ///
   /// In en, this message translates to:
-  /// **'Find love this holiday season!'**
+  /// **'Connect with people from around the world this holiday season!'**
   String get gamificationEventHolidayDesc;
 
   /// No description provided for @travelExploreTitle.
@@ -37523,7 +37115,7 @@ abstract class AppLocalizations {
   /// No description provided for @discoveryMatchFallbackName.
   ///
   /// In en, this message translates to:
-  /// **'Match'**
+  /// **'Connection'**
   String get discoveryMatchFallbackName;
 
   /// No description provided for @discoveryThisUser.
@@ -37595,7 +37187,7 @@ abstract class AppLocalizations {
   /// No description provided for @chatPreviewSayHi.
   ///
   /// In en, this message translates to:
-  /// **'Say hi to your match!'**
+  /// **'Say hi to your new connection!'**
   String get chatPreviewSayHi;
 
   /// No description provided for @chatTimeShortMinutes.
@@ -38063,7 +37655,7 @@ abstract class AppLocalizations {
   /// No description provided for @videoProfileInfoBody.
   ///
   /// In en, this message translates to:
-  /// **'Record a {seconds} second video to introduce yourself. Profiles with videos get 40% more matches!'**
+  /// **'Record a {seconds} second video to introduce yourself. Profiles with videos get 40% more connections!'**
   String videoProfileInfoBody(int seconds);
 
   /// No description provided for @videoProfileNoVideo.
@@ -38753,7 +38345,7 @@ abstract class AppLocalizations {
   /// No description provided for @culturalExchangeCategoryDating.
   ///
   /// In en, this message translates to:
-  /// **'Dating'**
+  /// **'Meeting People'**
   String get culturalExchangeCategoryDating;
 
   /// No description provided for @culturalExchangeCategoryCustoms.
@@ -38861,7 +38453,7 @@ abstract class AppLocalizations {
   /// No description provided for @culturalExchangeLearnEtiquette.
   ///
   /// In en, this message translates to:
-  /// **'Learn dating etiquette from 20+ countries\naround the world'**
+  /// **'Learn social etiquette from 20+ countries\naround the world'**
   String get culturalExchangeLearnEtiquette;
 
   /// No description provided for @culturalExchangeDos.
@@ -39450,7 +39042,7 @@ abstract class AppLocalizations {
   /// No description provided for @srvAchievementUnlockedTitle.
   ///
   /// In en, this message translates to:
-  /// **'Achievement Unlocked: {achievement, select, first_match{First Match} social_butterfly{Social Butterfly} popular{Popular} video_enthusiast{Video Enthusiast} daily_streak_7{7-Day Streak} daily_streak_30{30-Day Streak} other{New achievement}}!'**
+  /// **'Achievement Unlocked: {achievement, select, first_match{First Connection} social_butterfly{Social Butterfly} popular{Popular} video_enthusiast{Video Enthusiast} daily_streak_7{7-Day Streak} daily_streak_30{30-Day Streak} other{New achievement}}!'**
   String srvAchievementUnlockedTitle(String achievement);
 
   /// No description provided for @srvAchievementDescription.
@@ -39462,7 +39054,7 @@ abstract class AppLocalizations {
   /// No description provided for @srvChallengeCompletedTitle.
   ///
   /// In en, this message translates to:
-  /// **'Challenge Completed: {challenge, select, send_5_messages{Conversation Starter} get_3_matches{Match Maker} complete_profile{Profile Perfectionist} video_call_1{Face to Face} other{Daily challenge}}!'**
+  /// **'Challenge Completed: {challenge, select, send_5_messages{Conversation Starter} get_3_matches{Connector} complete_profile{Profile Perfectionist} video_call_1{Face to Face} other{Daily challenge}}!'**
   String srvChallengeCompletedTitle(String challenge);
 
   /// No description provided for @srvChallengeRewardsBody.
@@ -39992,6 +39584,798 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your name and email will be shared with the organizer for entry.'**
   String get checkoutOrganizerShareNotice;
+
+  /// No description provided for @openSourceLicensesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Open-source licenses'**
+  String get openSourceLicensesTitle;
+
+  /// No description provided for @openSourceLicensesSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Fonts and software components used in this app'**
+  String get openSourceLicensesSubtitle;
+
+  /// No description provided for @screenProtectionRecordingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Screen recording is not allowed'**
+  String get screenProtectionRecordingTitle;
+
+  /// No description provided for @screenProtectionRecordingBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Stop recording or mirroring your screen to keep using GreenGo.'**
+  String get screenProtectionRecordingBody;
+
+  /// No description provided for @screenProtectionHiddenTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Content hidden'**
+  String get screenProtectionHiddenTitle;
+
+  /// No description provided for @screenProtectionHiddenBody.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo hides content while the window is not in focus. Click here to continue.'**
+  String get screenProtectionHiddenBody;
+
+  /// No description provided for @screenProtectionScreenshotsNotAllowed.
+  ///
+  /// In en, this message translates to:
+  /// **'Screenshots are not allowed'**
+  String get screenProtectionScreenshotsNotAllowed;
+
+  /// No description provided for @screenProtectionAppOnlyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Open in the GreenGo app to view'**
+  String get screenProtectionAppOnlyTitle;
+
+  /// No description provided for @screenProtectionAppOnlyBody.
+  ///
+  /// In en, this message translates to:
+  /// **'To protect people\'s privacy, private photos and ID verification are only available in the GreenGo mobile app.'**
+  String get screenProtectionAppOnlyBody;
+
+  /// No description provided for @screenProtectionOpenApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Open the app'**
+  String get screenProtectionOpenApp;
+
+  /// No description provided for @chatSystemScreenshotTaken.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} took a screenshot'**
+  String chatSystemScreenshotTaken(String name);
+
+  /// No description provided for @guidelinesPrivacyCaptureTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Respect privacy'**
+  String get guidelinesPrivacyCaptureTitle;
+
+  /// No description provided for @guidelinesPrivacyCaptureDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Screenshots and recordings of other people\'s content are blocked or reported; sharing others\' photos without consent is forbidden.'**
+  String get guidelinesPrivacyCaptureDesc;
+
+  /// Blocking loader text shown while the account is being created after tapping Register
+  ///
+  /// In en, this message translates to:
+  /// **'We are creating your account…'**
+  String get signupCreatingAccount;
+
+  /// Secondary loader line shown when account creation takes more than 5 seconds
+  ///
+  /// In en, this message translates to:
+  /// **'This can take a few seconds. Please keep the app open.'**
+  String get signupCreatingAccountSlow;
+
+  /// Inline error under the date-of-birth field when the picked date is under 18 (correctable before Continue)
+  ///
+  /// In en, this message translates to:
+  /// **'You must be at least 18 to use GreenGo. Please check the date you selected.'**
+  String get onboardingAgeUnderMinimumHint;
+
+  /// Dialog body when the server already blocked this account/email for a previous under-18 date of birth
+  ///
+  /// In en, this message translates to:
+  /// **'This account was already registered with a date of birth under 18, so it stays restricted. If that was a mistake, contact support to verify your age.'**
+  String get onboardingAgePreviouslyBlockedBody;
+
+  /// Login error: nickname sign-in refused because the account has two-step verification; user must sign in with email
+  ///
+  /// In en, this message translates to:
+  /// **'This account uses two-step verification. Please sign in with your email address instead of your nickname.'**
+  String get authErrorNicknameMfaRequired;
+
+  /// Login error: nickname sign-in service failed; user should sign in with email
+  ///
+  /// In en, this message translates to:
+  /// **'We couldn\'t sign you in with your nickname right now. Please sign in with your email address.'**
+  String get authErrorNicknameSignInFailed;
+
+  /// No description provided for @copyrightHelpEntry.
+  ///
+  /// In en, this message translates to:
+  /// **'Copyright (DMCA)'**
+  String get copyrightHelpEntry;
+
+  /// No description provided for @copyrightHelpEntrySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Report infringement, counter-notices and our policy'**
+  String get copyrightHelpEntrySubtitle;
+
+  /// No description provided for @copyrightReportEntry.
+  ///
+  /// In en, this message translates to:
+  /// **'Report copyright infringement'**
+  String get copyrightReportEntry;
+
+  /// No description provided for @copyrightPolicyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Copyright policy'**
+  String get copyrightPolicyTitle;
+
+  /// No description provided for @copyrightPolicyIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo respects intellectual property. We respond to notices of alleged copyright infringement under the U.S. Digital Millennium Copyright Act (17 U.S.C. §512), the EU Digital Services Act and Brazilian Law 9.610/1998, wherever the rights holder or the user is located.'**
+  String get copyrightPolicyIntro;
+
+  /// No description provided for @copyrightPolicyNoticeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reporting infringement'**
+  String get copyrightPolicyNoticeTitle;
+
+  /// No description provided for @copyrightPolicyNoticeBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a notice with our form or by email to our designated agent. It must include:\n• your physical or electronic signature;\n• identification of the copyrighted work;\n• identification of the infringing material and where it is on GreenGo (a link or ID);\n• your address, phone number and email;\n• a statement that you have a good faith belief the use is not authorized by the owner, its agent or the law;\n• a statement that the information is accurate and, under penalty of perjury, that you are the owner or authorized to act for the owner.\nIncomplete notices may not be processed.'**
+  String get copyrightPolicyNoticeBody;
+
+  /// No description provided for @copyrightPolicyCounterTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Counter-notices'**
+  String get copyrightPolicyCounterTitle;
+
+  /// No description provided for @copyrightPolicyCounterBody.
+  ///
+  /// In en, this message translates to:
+  /// **'If your content was removed and you believe it was a mistake or misidentification, you can send a counter-notice from the app. It must include your signature, identification of the removed material and where it appeared, a statement under penalty of perjury that it was removed by mistake or misidentification, your name, address and phone number, and your consent to the jurisdiction of the courts described in the form. We forward the counter-notice to the complainant and restore the material in 10 to 14 business days unless the complainant tells us they have filed a court action.'**
+  String get copyrightPolicyCounterBody;
+
+  /// No description provided for @copyrightPolicyRepeatTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Repeat infringers'**
+  String get copyrightPolicyRepeatTitle;
+
+  /// No description provided for @copyrightPolicyRepeatBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Each valid notice adds a strike to the account that posted the material. Strikes expire after 12 months. A strike is removed if the material is restored after a counter-notice. Accounts with 3 active strikes are terminated; you can appeal the termination from the app.'**
+  String get copyrightPolicyRepeatBody;
+
+  /// No description provided for @copyrightPolicyMisrepTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'False notices'**
+  String get copyrightPolicyMisrepTitle;
+
+  /// No description provided for @copyrightPolicyMisrepBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Under 17 U.S.C. §512(f), anyone who knowingly materially misrepresents that material is infringing, or that it was removed by mistake, may be liable for damages, including costs and attorneys’ fees. Notices are not a tool for removing content you simply dislike.'**
+  String get copyrightPolicyMisrepBody;
+
+  /// No description provided for @copyrightPolicyJurisdictionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Brazil, the EU and other countries'**
+  String get copyrightPolicyJurisdictionTitle;
+
+  /// No description provided for @copyrightPolicyJurisdictionBody.
+  ///
+  /// In en, this message translates to:
+  /// **'We handle notices from every country the same way. Users in the European Union receive a statement of reasons for every removal and can appeal it under the Digital Services Act. Rights holders in Brazil keep all their rights under Law 9.610/1998.'**
+  String get copyrightPolicyJurisdictionBody;
+
+  /// No description provided for @copyrightPolicyAgentTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Designated agent'**
+  String get copyrightPolicyAgentTitle;
+
+  /// No description provided for @copyrightPolicyAgentBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Copyright agent: Universo Kardasha Ltda.\nEmail: copyright@greengochat.com\nPostal address: {address}'**
+  String copyrightPolicyAgentBody(String address);
+
+  /// No description provided for @copyrightPolicySubmitButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit a copyright notice'**
+  String get copyrightPolicySubmitButton;
+
+  /// No description provided for @copyrightMyNoticesButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Notices about my content'**
+  String get copyrightMyNoticesButton;
+
+  /// No description provided for @copyrightFormTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Report copyright infringement'**
+  String get copyrightFormTitle;
+
+  /// No description provided for @copyrightFormIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Use this form only if you own the copyright or are authorized to act for the owner. Fields marked * are required by law.'**
+  String get copyrightFormIntro;
+
+  /// No description provided for @copyrightFormSectionYou.
+  ///
+  /// In en, this message translates to:
+  /// **'Your details'**
+  String get copyrightFormSectionYou;
+
+  /// No description provided for @copyrightFormName.
+  ///
+  /// In en, this message translates to:
+  /// **'Full legal name'**
+  String get copyrightFormName;
+
+  /// No description provided for @copyrightFormOrganization.
+  ///
+  /// In en, this message translates to:
+  /// **'Company or organization'**
+  String get copyrightFormOrganization;
+
+  /// No description provided for @copyrightFormEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get copyrightFormEmail;
+
+  /// No description provided for @copyrightFormPhone.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone number'**
+  String get copyrightFormPhone;
+
+  /// No description provided for @copyrightFormAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'Postal address'**
+  String get copyrightFormAddress;
+
+  /// No description provided for @copyrightFormOptional.
+  ///
+  /// In en, this message translates to:
+  /// **'optional'**
+  String get copyrightFormOptional;
+
+  /// No description provided for @copyrightFormRelationship.
+  ///
+  /// In en, this message translates to:
+  /// **'I am'**
+  String get copyrightFormRelationship;
+
+  /// No description provided for @copyrightFormRelOwner.
+  ///
+  /// In en, this message translates to:
+  /// **'The copyright owner'**
+  String get copyrightFormRelOwner;
+
+  /// No description provided for @copyrightFormRelAgent.
+  ///
+  /// In en, this message translates to:
+  /// **'Authorized to act for the owner'**
+  String get copyrightFormRelAgent;
+
+  /// No description provided for @copyrightFormSectionWork.
+  ///
+  /// In en, this message translates to:
+  /// **'The copyrighted work'**
+  String get copyrightFormSectionWork;
+
+  /// No description provided for @copyrightFormWorkDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Description of the copyrighted work'**
+  String get copyrightFormWorkDescription;
+
+  /// No description provided for @copyrightFormWorkUrl.
+  ///
+  /// In en, this message translates to:
+  /// **'Link to the original work'**
+  String get copyrightFormWorkUrl;
+
+  /// No description provided for @copyrightFormSectionContent.
+  ///
+  /// In en, this message translates to:
+  /// **'The infringing material'**
+  String get copyrightFormSectionContent;
+
+  /// No description provided for @copyrightFormContentLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Link or ID of the material on GreenGo'**
+  String get copyrightFormContentLocation;
+
+  /// No description provided for @copyrightFormContentDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Where it appears (e.g. which photo or message)'**
+  String get copyrightFormContentDetails;
+
+  /// No description provided for @copyrightFormContentPrefilled.
+  ///
+  /// In en, this message translates to:
+  /// **'Reported item: {label}'**
+  String copyrightFormContentPrefilled(String label);
+
+  /// No description provided for @copyrightContentMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat message or media'**
+  String get copyrightContentMessage;
+
+  /// No description provided for @copyrightContentEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'Event'**
+  String get copyrightContentEvent;
+
+  /// No description provided for @copyrightContentExperience.
+  ///
+  /// In en, this message translates to:
+  /// **'Experience'**
+  String get copyrightContentExperience;
+
+  /// No description provided for @copyrightContentProfilePhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile photo'**
+  String get copyrightContentProfilePhoto;
+
+  /// No description provided for @copyrightFormSectionStatements.
+  ///
+  /// In en, this message translates to:
+  /// **'Sworn statements'**
+  String get copyrightFormSectionStatements;
+
+  /// No description provided for @copyrightFormGoodFaith.
+  ///
+  /// In en, this message translates to:
+  /// **'I have a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law.'**
+  String get copyrightFormGoodFaith;
+
+  /// No description provided for @copyrightFormAccuracy.
+  ///
+  /// In en, this message translates to:
+  /// **'The information in this notice is accurate.'**
+  String get copyrightFormAccuracy;
+
+  /// No description provided for @copyrightFormAuthority.
+  ///
+  /// In en, this message translates to:
+  /// **'Under penalty of perjury, I am the owner, or authorized to act on behalf of the owner, of an exclusive right that is allegedly infringed.'**
+  String get copyrightFormAuthority;
+
+  /// No description provided for @copyrightFormMisrepWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'Warning: under 17 U.S.C. §512(f), anyone who knowingly materially misrepresents that material is infringing may be liable for damages. We forward a copy of your notice, including your name and email, to the user who posted the material.'**
+  String get copyrightFormMisrepWarning;
+
+  /// No description provided for @copyrightFormSignature.
+  ///
+  /// In en, this message translates to:
+  /// **'Electronic signature: type your full legal name'**
+  String get copyrightFormSignature;
+
+  /// No description provided for @copyrightFormSubmit.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit notice'**
+  String get copyrightFormSubmit;
+
+  /// No description provided for @copyrightFormRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Required'**
+  String get copyrightFormRequired;
+
+  /// No description provided for @copyrightFormInvalidEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a valid email address'**
+  String get copyrightFormInvalidEmail;
+
+  /// No description provided for @copyrightFormStatementsRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm every statement to continue'**
+  String get copyrightFormStatementsRequired;
+
+  /// No description provided for @copyrightFormSignatureMismatch.
+  ///
+  /// In en, this message translates to:
+  /// **'The signature must match your full legal name'**
+  String get copyrightFormSignatureMismatch;
+
+  /// No description provided for @copyrightFormSubmitted.
+  ///
+  /// In en, this message translates to:
+  /// **'Notice received. We will review it and reply to the email you provided.'**
+  String get copyrightFormSubmitted;
+
+  /// No description provided for @copyrightFormError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn’t submit. Please try again later.'**
+  String get copyrightFormError;
+
+  /// No description provided for @copyrightFormRateLimited.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many submissions. Please try again later.'**
+  String get copyrightFormRateLimited;
+
+  /// No description provided for @copyrightMyNoticesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Copyright notices'**
+  String get copyrightMyNoticesTitle;
+
+  /// No description provided for @copyrightMyNoticesEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'There are no copyright notices about your content.'**
+  String get copyrightMyNoticesEmpty;
+
+  /// No description provided for @copyrightActiveStrikes.
+  ///
+  /// In en, this message translates to:
+  /// **'Active copyright strikes: {count} of 3'**
+  String copyrightActiveStrikes(int count);
+
+  /// No description provided for @copyrightStatusAccepted.
+  ///
+  /// In en, this message translates to:
+  /// **'Content removed'**
+  String get copyrightStatusAccepted;
+
+  /// No description provided for @copyrightStatusCounterNoticed.
+  ///
+  /// In en, this message translates to:
+  /// **'Counter-notice sent'**
+  String get copyrightStatusCounterNoticed;
+
+  /// No description provided for @copyrightStatusRestored.
+  ///
+  /// In en, this message translates to:
+  /// **'Content restored'**
+  String get copyrightStatusRestored;
+
+  /// No description provided for @copyrightStatusLawsuit.
+  ///
+  /// In en, this message translates to:
+  /// **'Court action filed: content stays removed'**
+  String get copyrightStatusLawsuit;
+
+  /// No description provided for @copyrightNoticeFrom.
+  ///
+  /// In en, this message translates to:
+  /// **'Complainant: {name} ({email})'**
+  String copyrightNoticeFrom(String name, String email);
+
+  /// No description provided for @copyrightRestoreOn.
+  ///
+  /// In en, this message translates to:
+  /// **'Your content will be restored on or after {date} unless the complainant files a court action.'**
+  String copyrightRestoreOn(String date);
+
+  /// No description provided for @copyrightCounterButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Send counter-notice'**
+  String get copyrightCounterButton;
+
+  /// No description provided for @copyrightAppealButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Appeal the decision'**
+  String get copyrightAppealButton;
+
+  /// No description provided for @copyrightCounterTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Counter-notice'**
+  String get copyrightCounterTitle;
+
+  /// No description provided for @copyrightCounterIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'If you believe the material was removed by mistake or misidentification, you can send a counter-notice. We forward it, including your name, address, phone number and email, to the complainant.'**
+  String get copyrightCounterIntro;
+
+  /// No description provided for @copyrightCounterExplanation.
+  ///
+  /// In en, this message translates to:
+  /// **'Why the removal was a mistake or misidentification'**
+  String get copyrightCounterExplanation;
+
+  /// No description provided for @copyrightCounterPerjury.
+  ///
+  /// In en, this message translates to:
+  /// **'Under penalty of perjury, I have a good faith belief that the material was removed or disabled as a result of mistake or misidentification of the material to be removed or disabled.'**
+  String get copyrightCounterPerjury;
+
+  /// No description provided for @copyrightCounterJurisdiction.
+  ///
+  /// In en, this message translates to:
+  /// **'I consent to the jurisdiction of the U.S. Federal District Court for the judicial district of my address (or, if my address is outside the United States, any judicial district in which GreenGo may be found), and I will accept service of process from the person who provided the notice or their agent.'**
+  String get copyrightCounterJurisdiction;
+
+  /// No description provided for @copyrightCounterSubmit.
+  ///
+  /// In en, this message translates to:
+  /// **'Send counter-notice'**
+  String get copyrightCounterSubmit;
+
+  /// No description provided for @copyrightCounterSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Counter-notice sent. Unless the complainant tells us they have filed a court action, your content will be restored in 10 to 14 business days.'**
+  String get copyrightCounterSent;
+
+  /// No description provided for @srvCopyrightRemovedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Content removed after a copyright notice'**
+  String get srvCopyrightRemovedTitle;
+
+  /// No description provided for @srvCopyrightRemovedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to see the notice and your options.'**
+  String get srvCopyrightRemovedBody;
+
+  /// No description provided for @srvCopyrightRestoredTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your content was restored'**
+  String get srvCopyrightRestoredTitle;
+
+  /// No description provided for @srvCopyrightRestoredBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The content removed after a copyright notice is visible again.'**
+  String get srvCopyrightRestoredBody;
+
+  /// No description provided for @emailCopyrightRemovedSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Copyright notice: content removed'**
+  String get emailCopyrightRemovedSubject;
+
+  /// No description provided for @emailCopyrightRemovedIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'We received a copyright notice about content you posted on GreenGo and disabled access to it. A copy of the notice is below.'**
+  String get emailCopyrightRemovedIntro;
+
+  /// No description provided for @emailCopyrightStrikeInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'This counts as a copyright strike. Active strikes: {count} of 3. Strikes expire after 12 months; accounts with 3 active strikes are terminated.'**
+  String emailCopyrightStrikeInfo(int count);
+
+  /// No description provided for @emailCopyrightCounterInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'If you believe this is a mistake or misidentification, you can send a counter-notice in the app: Profile > Help & Support > Copyright (DMCA). From there you can also appeal the decision.'**
+  String get emailCopyrightCounterInfo;
+
+  /// No description provided for @emailCopyrightNoticeCopy.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy of the notice'**
+  String get emailCopyrightNoticeCopy;
+
+  /// No description provided for @emailCopyrightRefLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Reference'**
+  String get emailCopyrightRefLabel;
+
+  /// No description provided for @emailCopyrightDateLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Date'**
+  String get emailCopyrightDateLabel;
+
+  /// No description provided for @emailCopyrightConfirmSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm your copyright notice'**
+  String get emailCopyrightConfirmSubject;
+
+  /// No description provided for @emailCopyrightConfirmIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Please confirm your copyright notice by opening this link within 48 hours. Unconfirmed notices are not processed.'**
+  String get emailCopyrightConfirmIntro;
+
+  /// No description provided for @emailCopyrightConfirmButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm notice'**
+  String get emailCopyrightConfirmButton;
+
+  /// No description provided for @emailCopyrightAcceptedSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Your copyright notice was accepted'**
+  String get emailCopyrightAcceptedSubject;
+
+  /// No description provided for @emailCopyrightAcceptedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'We disabled access to the material identified in your notice {ref}.'**
+  String emailCopyrightAcceptedBody(String ref);
+
+  /// No description provided for @emailCopyrightRejectedSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Your copyright notice could not be processed'**
+  String get emailCopyrightRejectedSubject;
+
+  /// No description provided for @emailCopyrightRejectedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'We could not act on your notice {ref}. Reason: {reason}'**
+  String emailCopyrightRejectedBody(String ref, String reason);
+
+  /// No description provided for @emailCopyrightCounterSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Counter-notice received'**
+  String get emailCopyrightCounterSubject;
+
+  /// No description provided for @emailCopyrightCounterBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The user who posted the material sent the counter-notice below about your notice {ref}. We will restore the material on or after {date} unless, before then, you tell us at {agentEmail} that you have filed a court action to stop the infringement.'**
+  String emailCopyrightCounterBody(String ref, String date, String agentEmail);
+
+  /// No description provided for @emailCopyrightRestoredSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Material restored'**
+  String get emailCopyrightRestoredSubject;
+
+  /// No description provided for @emailCopyrightRestoredBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The material from copyright notice {ref} has been restored after a counter-notice.'**
+  String emailCopyrightRestoredBody(String ref);
+
+  /// No description provided for @copyrightWebCheckEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Almost done: we sent a confirmation link to your email. Your notice is processed after you confirm it.'**
+  String get copyrightWebCheckEmail;
+
+  /// No description provided for @copyrightWebConfirmed.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you. Your notice is confirmed and will be reviewed.'**
+  String get copyrightWebConfirmed;
+
+  /// No description provided for @copyrightWebInvalidLink.
+  ///
+  /// In en, this message translates to:
+  /// **'This confirmation link is invalid or has expired.'**
+  String get copyrightWebInvalidLink;
+
+  /// No description provided for @copyrightWebInvalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Some required information is missing or invalid. Go back and check the form.'**
+  String get copyrightWebInvalid;
+
+  /// Experience wizard availability step: section title
+  ///
+  /// In en, this message translates to:
+  /// **'Opening hours'**
+  String get wzAvailHoursTitle;
+
+  /// Experience wizard availability step: section title
+  ///
+  /// In en, this message translates to:
+  /// **'Sessions'**
+  String get wzAvailSessionsTitle;
+
+  /// Experience wizard availability step: section title
+  ///
+  /// In en, this message translates to:
+  /// **'Days'**
+  String get wzAvailDaysTitle;
+
+  /// Experience wizard availability step: section title
+  ///
+  /// In en, this message translates to:
+  /// **'Period'**
+  String get wzAvailPeriodTitle;
+
+  /// Experience wizard availability preview count
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 session per day} other{{count} sessions per day}}'**
+  String wzAvailSessionsPerDay(int count);
+
+  /// Interactive location map control
+  ///
+  /// In en, this message translates to:
+  /// **'Directions'**
+  String get locMapDirections;
+
+  /// Interactive location map control
+  ///
+  /// In en, this message translates to:
+  /// **'Open in Maps'**
+  String get locMapOpenInMaps;
+
+  /// Interactive location map control
+  ///
+  /// In en, this message translates to:
+  /// **'Zoom in'**
+  String get locMapZoomIn;
+
+  /// Interactive location map control
+  ///
+  /// In en, this message translates to:
+  /// **'Zoom out'**
+  String get locMapZoomOut;
+
+  /// Interactive location map control
+  ///
+  /// In en, this message translates to:
+  /// **'Recenter'**
+  String get locMapRecenter;
+
+  /// Interactive location map control
+  ///
+  /// In en, this message translates to:
+  /// **'Expand map'**
+  String get locMapExpand;
+
+  /// Interactive location map control
+  ///
+  /// In en, this message translates to:
+  /// **'Approximate area'**
+  String get locMapApproximateArea;
+
+  /// Interactive location map control
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t open a maps app'**
+  String get locMapCouldNotOpen;
 }
 
 class _AppLocalizationsDelegate

@@ -147,17 +147,17 @@ class DailyChallenges {
   static final List<_ChallengeTemplate> _pool = [
     // Messaging challenges
     const _ChallengeTemplate('send_3_messages', 'Quick Chat', 'Send 3 messages', 'message_sent', 3, ChallengeDifficulty.easy, 30, 10),
-    const _ChallengeTemplate('send_5_messages', 'Message Master', 'Send 5 messages to your matches', 'message_sent', 5, ChallengeDifficulty.easy, 50, 20),
+    const _ChallengeTemplate('send_5_messages', 'Message Master', 'Send 5 messages to your connections', 'message_sent', 5, ChallengeDifficulty.easy, 50, 20),
     const _ChallengeTemplate('send_10_messages', 'Conversation King', 'Send 10 messages today', 'message_sent', 10, ChallengeDifficulty.medium, 80, 35),
     const _ChallengeTemplate('send_15_messages', 'Chat Marathon', 'Send 15 messages today', 'message_sent', 15, ChallengeDifficulty.hard, 120, 50),
     // Match challenges
-    const _ChallengeTemplate('get_1_match', 'First Spark', 'Get 1 new match today', 'match', 1, ChallengeDifficulty.easy, 40, 15),
-    const _ChallengeTemplate('get_3_matches', 'Match Maker', 'Get 3 new matches today', 'match', 3, ChallengeDifficulty.medium, 60, 25),
-    const _ChallengeTemplate('get_5_matches', 'Love Magnet', 'Get 5 new matches today', 'match', 5, ChallengeDifficulty.hard, 100, 40),
+    const _ChallengeTemplate('get_1_match', 'New Connection', 'Make 1 new connection today', 'match', 1, ChallengeDifficulty.easy, 40, 15),
+    const _ChallengeTemplate('get_3_matches', 'Connector', 'Make 3 new connections today', 'match', 3, ChallengeDifficulty.medium, 60, 25),
+    const _ChallengeTemplate('get_5_matches', 'People Magnet', 'Make 5 new connections today', 'match', 5, ChallengeDifficulty.hard, 100, 40),
     // Super Like challenges
-    const _ChallengeTemplate('send_1_superlike', 'Priority Pick', 'Send 1 super like', 'super_like', 1, ChallengeDifficulty.easy, 35, 15),
-    const _ChallengeTemplate('send_3_superlikes', 'Super Liker', 'Send 3 super likes', 'super_like', 3, ChallengeDifficulty.medium, 55, 25),
-    const _ChallengeTemplate('send_5_superlikes', 'Super Star', 'Send 5 super likes', 'super_like', 5, ChallengeDifficulty.hard, 90, 40),
+    const _ChallengeTemplate('send_1_superlike', 'Priority Pick', 'Send 1 Priority Connect', 'super_like', 1, ChallengeDifficulty.easy, 35, 15),
+    const _ChallengeTemplate('send_3_superlikes', 'Priority Connector', 'Send 3 Priority Connects', 'super_like', 3, ChallengeDifficulty.medium, 55, 25),
+    const _ChallengeTemplate('send_5_superlikes', 'Super Star', 'Send 5 Priority Connects', 'super_like', 5, ChallengeDifficulty.hard, 90, 40),
     // Video call challenges
     const _ChallengeTemplate('video_call_1', 'Video Enthusiast', 'Complete 1 video call', 'video_call', 1, ChallengeDifficulty.medium, 75, 50),
     const _ChallengeTemplate('video_call_2', 'Video Pro', 'Complete 2 video calls', 'video_call', 2, ChallengeDifficulty.hard, 120, 80),
@@ -165,13 +165,13 @@ class DailyChallenges {
     const _ChallengeTemplate('add_photo', 'Photo Refresh', 'Add or update a profile photo', 'photo_added', 1, ChallengeDifficulty.easy, 40, 15),
     const _ChallengeTemplate('add_2_photos', 'Photo Gallery', 'Add 2 new profile photos', 'photo_added', 2, ChallengeDifficulty.medium, 70, 30),
     // Gift challenges
-    const _ChallengeTemplate('send_1_gift', 'Gift Giver', 'Send 1 gift to a match', 'gift_sent', 1, ChallengeDifficulty.easy, 45, 20),
-    const _ChallengeTemplate('send_3_gifts', 'Generous Heart', 'Send 3 gifts today', 'gift_sent', 3, ChallengeDifficulty.medium, 80, 35),
+    const _ChallengeTemplate('send_1_gift', 'Gift Giver', 'Send 1 gift to a connection', 'gift_sent', 1, ChallengeDifficulty.easy, 45, 20),
+    const _ChallengeTemplate('send_3_gifts', 'Generous Spirit', 'Send 3 gifts today', 'gift_sent', 3, ChallengeDifficulty.medium, 80, 35),
     const _ChallengeTemplate('send_5_gifts', 'Gift Master', 'Send 5 gifts today', 'gift_sent', 5, ChallengeDifficulty.hard, 130, 55),
     // Mixed difficulty combos
-    const _ChallengeTemplate('chat_starter', 'Ice Breaker', 'Send 7 messages to different matches', 'message_sent', 7, ChallengeDifficulty.medium, 65, 30),
+    const _ChallengeTemplate('chat_starter', 'Ice Breaker', 'Send 7 messages to different connections', 'message_sent', 7, ChallengeDifficulty.medium, 65, 30),
     const _ChallengeTemplate('social_butterfly', 'Social Butterfly', 'Send 20 messages today', 'message_sent', 20, ChallengeDifficulty.epic, 150, 70),
-    const _ChallengeTemplate('match_rush', 'Match Rush', 'Get 7 matches today', 'match', 7, ChallengeDifficulty.epic, 140, 60),
+    const _ChallengeTemplate('match_rush', 'Connection Rush', 'Make 7 connections today', 'match', 7, ChallengeDifficulty.epic, 140, 60),
     const _ChallengeTemplate('video_marathon', 'Video Marathon', 'Complete 3 video calls', 'video_call', 3, ChallengeDifficulty.epic, 180, 100),
   ];
 
@@ -233,13 +233,13 @@ class WeeklyChallenges {
     const _ChallengeTemplate('weekly_messages_50', 'Chat Master', 'Send 50 messages this week', 'message_sent', 50, ChallengeDifficulty.medium, 300, 150),
     const _ChallengeTemplate('weekly_messages_100', 'Chat Legend', 'Send 100 messages this week', 'message_sent', 100, ChallengeDifficulty.hard, 500, 250),
     // Matches
-    const _ChallengeTemplate('weekly_matches_10', 'Weekly Connector', 'Get 10 matches this week', 'match', 10, ChallengeDifficulty.easy, 250, 120),
-    const _ChallengeTemplate('weekly_matches_20', 'Weekly Match Champion', 'Get 20 matches this week', 'match', 20, ChallengeDifficulty.hard, 400, 200),
-    const _ChallengeTemplate('weekly_matches_30', 'Match Machine', 'Get 30 matches this week', 'match', 30, ChallengeDifficulty.epic, 600, 300),
+    const _ChallengeTemplate('weekly_matches_10', 'Weekly Connector', 'Make 10 connections this week', 'match', 10, ChallengeDifficulty.easy, 250, 120),
+    const _ChallengeTemplate('weekly_matches_20', 'Weekly Connection Champion', 'Make 20 connections this week', 'match', 20, ChallengeDifficulty.hard, 400, 200),
+    const _ChallengeTemplate('weekly_matches_30', 'Connection Machine', 'Make 30 connections this week', 'match', 30, ChallengeDifficulty.epic, 600, 300),
     // Super Likes
-    const _ChallengeTemplate('weekly_superlikes_5', 'Weekly Super Liker', 'Send 5 super likes this week', 'super_like', 5, ChallengeDifficulty.easy, 180, 90),
-    const _ChallengeTemplate('weekly_superlikes_10', 'Super Fan', 'Send 10 super likes this week', 'super_like', 10, ChallengeDifficulty.medium, 300, 150),
-    const _ChallengeTemplate('weekly_superlikes_15', 'Priority King', 'Send 15 super likes this week', 'super_like', 15, ChallengeDifficulty.hard, 450, 220),
+    const _ChallengeTemplate('weekly_superlikes_5', 'Weekly Priority Connector', 'Send 5 Priority Connects this week', 'super_like', 5, ChallengeDifficulty.easy, 180, 90),
+    const _ChallengeTemplate('weekly_superlikes_10', 'Super Fan', 'Send 10 Priority Connects this week', 'super_like', 10, ChallengeDifficulty.medium, 300, 150),
+    const _ChallengeTemplate('weekly_superlikes_15', 'Priority King', 'Send 15 Priority Connects this week', 'super_like', 15, ChallengeDifficulty.hard, 450, 220),
     // Video Calls
     const _ChallengeTemplate('weekly_video_3', 'Video Socialite', 'Complete 3 video calls this week', 'video_call', 3, ChallengeDifficulty.medium, 350, 180),
     const _ChallengeTemplate('weekly_video_5', 'Video Star', 'Complete 5 video calls this week', 'video_call', 5, ChallengeDifficulty.hard, 500, 250),
@@ -349,20 +349,20 @@ class SeasonalEvent extends Equatable { // UI customization
 
 /// Seasonal Events
 class SeasonalEvents {
-  /// Valentine's Day Event
+  /// Friendship Week Event (stored id unchanged)
   static SeasonalEvent valentinesDay(int year) {
     return SeasonalEvent(
       eventId: 'valentines_$year',
-      name: 'Valentine\'s Week', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
-      description: 'Spread the love this Valentine\'s Week!', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+      name: 'Friendship Week', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+      description: 'Celebrate friendship across cultures this week!', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
       theme: 'valentine',
-      startDate: DateTime(year, 2, 7), // Week before Valentine's
-      endDate: DateTime(year, 2, 15),  // Day after Valentine's
+      startDate: DateTime(year, 2, 7), // Week before Feb 14
+      endDate: DateTime(year, 2, 15),  // Day after Feb 14
       challenges: [
         DailyChallenge(
           challengeId: 'valentine_matches_$year',
-          name: 'Love Connections', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
-          description: 'Get 14 matches during Valentine\'s Week (1 per day)', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+          name: 'Friendship Connections', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+          description: 'Make 14 connections during Friendship Week (1 per day)', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
           type: ChallengeType.seasonal,
           difficulty: ChallengeDifficulty.hard,
           requiredCount: 14,
@@ -377,7 +377,7 @@ class SeasonalEvents {
         ),
         DailyChallenge(
           challengeId: 'valentine_video_$year',
-          name: 'Virtual Date Night', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+          name: 'Virtual Culture Night', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
           description: 'Complete 3 video calls', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
           type: ChallengeType.seasonal,
           difficulty: ChallengeDifficulty.medium,
@@ -400,12 +400,12 @@ class SeasonalEvents {
     );
   }
 
-  /// Summer Love Event
+  /// Summer of Discovery Event (stored id unchanged)
   static SeasonalEvent summerLove(int year) {
     return SeasonalEvent(
       eventId: 'summer_$year',
-      name: 'Summer Love', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
-      description: 'Find your summer romance!', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+      name: 'Summer of Discovery', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+      description: 'Make new friends from around the world this summer!', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
       theme: 'summer',
       startDate: DateTime(year, 6, 1),
       endDate: DateTime(year, 8, 31),
@@ -413,7 +413,7 @@ class SeasonalEvents {
         DailyChallenge(
           challengeId: 'summer_matches_$year',
           name: 'Beach Vibes', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
-          description: 'Get 30 matches this summer', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+          description: 'Make 30 connections this summer', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
           type: ChallengeType.seasonal,
           difficulty: ChallengeDifficulty.epic,
           requiredCount: 30,
@@ -441,7 +441,7 @@ class SeasonalEvents {
     return SeasonalEvent(
       eventId: 'holiday_$year',
       name: 'Holiday Season', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
-      description: 'Find love this holiday season!', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+      description: 'Connect with people from around the world this holiday season!', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
       theme: 'holiday',
       startDate: DateTime(year, 12, 1),
       endDate: DateTime(year, 12, 31),
@@ -449,7 +449,7 @@ class SeasonalEvents {
         DailyChallenge(
           challengeId: 'holiday_gifts_$year',
           name: 'Gift Giver', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
-          description: 'Send 10 coin gifts to matches', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+          description: 'Send 10 coin gifts to your connections', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
           type: ChallengeType.seasonal,
           difficulty: ChallengeDifficulty.hard,
           requiredCount: 10,

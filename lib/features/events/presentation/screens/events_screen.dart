@@ -1,4 +1,5 @@
 import '../../../../core/widgets/listing_wizard.dart';
+import '../widgets/event_location_map.dart';
 import '../../../ticket_payments/presentation/ticket_l10n.dart';
 import '../../../ticket_payments/domain/ticket_payments.dart';
 import '../../../ticket_payments/presentation/screens/get_paid_screen.dart';
@@ -89,6 +90,8 @@ import '../../../../core/widgets/boost_celebration.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/services/paid_listing_access.dart';
 import '../../../business/presentation/widgets/paid_business_note.dart';
+import '../../../copyright/data/copyright_service.dart';
+import '../../../copyright/presentation/screens/copyright_notice_form_screen.dart';
 
 /// Coin cost for an organizer to feature ("Feature this event") their event in
 /// the Explore featured carousel for 7 days. Pure revenue, zero run-cost.
@@ -2382,6 +2385,15 @@ class EventDetailsScreen extends StatelessWidget {
             style: const TextStyle(color: AppColors.textSecondary)),
         actions: [
           TextButton(
+            key: const ValueKey('event-report-copyright'),
+            onPressed: () {
+              Navigator.pop(dialogContext, false);
+              openCopyrightNoticeForm(context,
+                  content: CopyrightContentRef.event(event.id));
+            },
+            child: Text(l10n.copyrightReportEntry),
+          ),
+          TextButton(
             onPressed: () => Navigator.pop(dialogContext, false),
             child: Text(l10n.cancel),
           ),
@@ -2628,6 +2640,8 @@ class EventDetailsScreen extends StatelessWidget {
                       event.address,
                     ),
                   ),
+                  // Venue map (physical events with coordinates only).
+                  EventLocationMap(event: event),
                   const SizedBox(height: 12),
                   _buildInfoRow(
                     Icons.people,
@@ -4220,10 +4234,19 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               dropdownColor: AppColors.backgroundCard,
               style: const TextStyle(color: AppColors.textPrimary),
               decoration: _inputDecoration(AppLocalizations.of(context)!.eventsCategory),
-              items: EventCategory.values.map((c) {
+              // `dating` stays in the enum so existing events keep working,
+              // but it is never offered for new events (only shown when an
+              // existing event being edited already uses it).
+              items: EventCategory.values
+                  .where((c) => c != EventCategory.dating || c == _category)
+                  .map((c) {
                 return DropdownMenuItem(
                   value: c,
-                  child: Text(c.name.toUpperCase()),
+                  child: Text(c == EventCategory.dating
+                      ? AppLocalizations.of(context)!
+                          .passportEventDating
+                          .toUpperCase()
+                      : c.name.toUpperCase()),
                 );
               }).toList(),
               onChanged: (v) => setState(() => _category = v!),

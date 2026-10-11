@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../../core/utils/app_l10n_lookup.dart';
 import '../../../../core/utils/server_text.dart';
+import '../../domain/chat_system_message.dart';
 import '../../domain/entities/conversation.dart';
 import '../../domain/entities/group_info.dart';
 import '../../domain/entities/message.dart';
@@ -288,6 +289,17 @@ class GroupChatRemoteDataSourceImpl implements GroupChatRemoteDataSource {
           ? MessageType.text
           : MessageTypeExtension.fromString(lastType),
       sentAt: lastAt ?? DateTime.now(),
+      // Client-written keys (e.g. the screenshot notice) are unknown to
+      // serverText: keep the key so the inbox row localizes it at display
+      // time (chatLastMessagePreview -> chatMessageDisplayText).
+      metadata: lastKey == null
+          ? null
+          : chatSystemMetadata(
+              lastKey,
+              rawParams is Map
+                  ? Map<String, dynamic>.from(rawParams)
+                  : const <String, dynamic>{},
+            ),
     );
 
     return ConversationModel(

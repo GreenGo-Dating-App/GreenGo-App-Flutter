@@ -60,6 +60,16 @@ class FlavorConfig {
   /// Video profiles.
   static bool get enableVideoProfiles => isFull;
 
+  /// Cultural Exchange "etiquette guide" (Firestore `dating_etiquette`
+  /// collection) and the country-spotlight `datingEtiquette` sections.
+  ///
+  /// The labels were reworded to "Social Etiquette", but the CONTENT is
+  /// admin-authored Firestore data written for dating. Hidden on the culture
+  /// build until that content has been reviewed / rewritten for friendship &
+  /// meeting people; nothing was deleted (collection, models, screen and the
+  /// `/dating-etiquette` route all stay). Flip to `true` once the docs are clean.
+  static bool get enableEtiquetteGuide => isFull;
+
   /// The 3D world map ("My World Map").
   ///
   /// HELD BACK deliberately - the feature is finished enough to compile but is

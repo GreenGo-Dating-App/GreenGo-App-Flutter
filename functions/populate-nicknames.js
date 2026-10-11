@@ -2,7 +2,10 @@
  * One-time script: Populate the public 'nicknames' collection
  * so nickname login works before authentication.
  *
- * Each doc: nicknames/{nickname} → { email, uid }
+ * Each doc: nicknames/{nickname} → { uid, nickname, createdAt }
+ * INC-2026-001: NEVER write the email here. The collection is publicly
+ * readable by id; nickname sign-in resolves the email on the server
+ * (signInWithNickname). Existing docs are only created when missing.
  *
  * Run from the functions/ directory:
  *   node populate-nicknames.js
@@ -33,20 +36,26 @@ async function populateNicknames() {
     const data = doc.data();
     const uid = doc.id;
     const nickname = data.nickname;
-    const email = data.email;
 
-    if (!nickname || !email) {
-      console.log(`  SKIP ${uid}: nickname=${nickname || 'null'}, email=${email || 'null'}`);
+    if (!nickname) {
+      console.log(`  SKIP ${uid}: no nickname`);
       skipped++;
       continue;
     }
 
     const normalizedNickname = nickname.toLowerCase();
-    await firestore.collection('nicknames').doc(normalizedNickname).set({
-      email,
+    const ref = firestore.collection('nicknames').doc(normalizedNickname);
+    const existing = await ref.get();
+    if (existing.exists) {
+      skipped++;
+      continue;
+    }
+    await ref.set({
       uid,
+      nickname: normalizedNickname,
+      createdAt: admin.firestore.FieldValue.serverTimestamp(),
     });
-    console.log(`  CREATED nicknames/${normalizedNickname} → ${email}`);
+    console.log(`  CREATED nicknames/${normalizedNickname}`);
     created++;
   }
 

@@ -16,6 +16,20 @@
  *    is already in `age_gate`, gets `accountStatus: 'age_blocked'` (hidden from
  *    discovery, search, map: they all require 'active'). Profiles without a
  *    DOB, and existing adult profiles, are never touched.
+ *  - applyPrivateProfileAgeGate: the same backstop for the PRIVATE profile.
+ *    The date of birth is no longer on `profiles/{uid}` (INC-2026-001 strip):
+ *    the app writes it only to `profiles_private/{uid}`, so the public-profile
+ *    check above never sees it. Called from the existing
+ *    `profiles_private/{uid}` onWrite trigger (syncCoarseFromPrivateProfile).
+ *    Acts on private-doc creation or a CHANGED dateOfBirth; under 18 -> the
+ *    age_gate records + `accountStatus: 'age_blocked'` on the public profile
+ *    (if the public profile does not exist yet, its creation is blocked by
+ *    applyProfileAgeGate through age_gate/{uid}).
+ *
+ *  Backstops use the LATEST calendar date anywhere on Earth (UTC+14) as
+ *  "today": they cannot know the user's timezone, so they only block someone
+ *  who is under 18 everywhere. declareAge (which gets the caller's local date)
+ *  stays the precise check.
  */
 
 import { onCall } from 'firebase-functions/v2/https';
@@ -55,6 +69,28 @@ export function parseDob(v: unknown): Date | null {
   return date;
 }
 
+const utcDay = (t: number) => {
+  const d = new Date(t);
+  return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+};
+
+/**
+ * The caller's own calendar "today" ('YYYY-MM-DD', sent by the app), used so
+ * an 18th birthday counts from local midnight, not UTC midnight (otherwise an
+ * adult in UTC+X picking their exact birthday in the first hours of the day
+ * was recorded as 17 and blocked for good). Accepted only when that date is
+ * "today" somewhere on Earth (UTC-12 .. UTC+14), so it can shift the answer
+ * by one day at most; anything else falls back to the UTC date.
+ */
+export function callerToday(v: unknown, now = new Date()): Date {
+  const fallback = new Date(utcDay(now.getTime()));
+  const d = parseDob(v);
+  if (!d) return fallback;
+  const earliest = utcDay(now.getTime() - 12 * 3600e3);
+  const latest = utcDay(now.getTime() + 14 * 3600e3);
+  return d.getTime() >= earliest && d.getTime() <= latest ? d : fallback;
+}
+
 /** A profile's dateOfBirth (Timestamp, Date, ISO string or millis) -> Date. */
 export function profileDob(v: unknown): Date | null {
   if (!v) return null;
@@ -67,6 +103,11 @@ export function profileDob(v: unknown): Date | null {
     return isNaN(d.getTime()) ? null : d;
   }
   return null;
+}
+
+/** Latest calendar date on Earth right now (UTC+14), as a UTC-midnight Date. */
+export function backstopToday(now = new Date()): Date {
+  return new Date(utcDay(now.getTime() + 14 * 3600e3));
 }
 
 export async function isAgeBlocked(uid: string, email?: string | null): Promise<boolean> {
@@ -99,7 +140,8 @@ export async function handleDeclareAge(request: any) {
   const email = (request.auth?.token?.email as string | undefined) ?? null;
   const dob = parseDob(request.data?.dob);
   const now = new Date();
-  if (!dob || dob.getTime() > now.getTime() || dob.getUTCFullYear() < 1900) {
+  const today = callerToday(request.data?.today, now);
+  if (!dob || dob.getTime() > Math.max(now.getTime(), today.getTime()) || dob.getUTCFullYear() < 1900) {
     throw new AppError('INVALID_ARGUMENT', 'Invalid date of birth', 400);
   }
 
@@ -110,7 +152,7 @@ export async function handleDeclareAge(request: any) {
     return { success: true, allowed: false, reason: 'AGE_BLOCKED' };
   }
 
-  const age = ageOn(dob, now);
+  const age = ageOn(dob, today);
   if (age < MIN_AGE) {
     await markAgeBlocked(uid, email, age, 'declareAge');
     // If onboarding already wrote a profile, hide it now.
@@ -152,7 +194,7 @@ export async function applyProfileAgeGate(
   const dobChanged = !!dobAfter && (!dobBefore || dobBefore.getTime() !== dobAfter.getTime());
   if (!created && !dobChanged) return false;
 
-  const age = dobAfter ? ageOn(dobAfter) : null;
+  const age = dobAfter ? ageOn(dobAfter, backstopToday()) : null;
   let block = age !== null && age < MIN_AGE;
   if (!block && created) block = await isAgeBlocked(uid, typeof after.email === 'string' ? after.email : null);
   if (!block) return false;
@@ -161,5 +203,44 @@ export async function applyProfileAgeGate(
     await markAgeBlocked(uid, typeof after.email === 'string' ? after.email : null, age, 'profile_trigger');
   }
   await ref.update({ accountStatus: AGE_BLOCKED_STATUS, ageBlockedAt: TS() });
+  return true;
+}
+
+/**
+ * Private-profile backstop (see header). Returns true when it blocked.
+ * Cheap: unrelated private writes (location, photos...) return after one
+ * field comparison.
+ */
+export async function applyPrivateProfileAgeGate(
+  uid: string,
+  before: FirebaseFirestore.DocumentData | null | undefined,
+  after: FirebaseFirestore.DocumentData | null | undefined,
+  opts: { now?: Date } = {},
+): Promise<boolean> {
+  if (!after) return false;
+  const dobAfter = profileDob(after.dateOfBirth);
+  if (!dobAfter) return false;
+  const dobBefore = before ? profileDob(before.dateOfBirth) : null;
+  if (dobBefore && dobBefore.getTime() === dobAfter.getTime()) return false;
+
+  const age = ageOn(dobAfter, backstopToday(opts.now ?? new Date()));
+  if (age >= MIN_AGE) return false;
+
+  let email: string | null = typeof after.email === 'string' && after.email ? after.email : null;
+  if (!email) {
+    try {
+      email = (await admin.auth().getUser(uid)).email ?? null;
+    } catch {
+      email = null;
+    }
+  }
+  await markAgeBlocked(uid, email, age, 'private_profile_trigger');
+  const profile = db().collection('profiles').doc(uid);
+  await db().runTransaction(async (tx) => {
+    const p = await tx.get(profile);
+    if (p.exists && p.data()?.accountStatus !== AGE_BLOCKED_STATUS) {
+      tx.update(profile, { accountStatus: AGE_BLOCKED_STATUS, ageBlockedAt: TS() });
+    }
+  });
   return true;
 }

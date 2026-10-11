@@ -5,6 +5,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/services/age_verification_service.dart';
 import '../widgets/id_consent_sheet.dart';
+import '../../../../core/security/app_only_content.dart';
 
 /// Age verification flow.
 ///
@@ -118,6 +119,8 @@ class _AgeVerificationScreenState extends State<AgeVerificationScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // ID documents are app-only: a browser cannot block screenshots.
+    if (isAppOnlyContentBlocked()) return const AppOnlyContentScreen();
     final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(

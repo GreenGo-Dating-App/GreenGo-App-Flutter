@@ -32,6 +32,7 @@ import '../../generated/app_localizations.dart';
 import '../utils/app_l10n_lookup.dart';
 import '../providers/language_provider.dart';
 import '../../features/safety/presentation/screens/moderation_decision_screen.dart';
+import '../../features/copyright/presentation/screens/copyright_my_notices_screen.dart';
 
 /// Top-level background message handler (must be a top-level function)
 @pragma('vm:entry-point')
@@ -238,6 +239,12 @@ class PushNotificationService {
     if (action == kModerationDecisionAction) {
       final decision = ModerationDecision.fromData(data);
       if (decision != null) navigator.push(ModerationDecisionScreen.route(decision));
+      return;
+    }
+
+    // Copyright removal / restoration -> notices about my content.
+    if (action == kCopyrightNoticeAction) {
+      navigator.push(CopyrightMyNoticesScreen.route());
       return;
     }
 
@@ -555,17 +562,15 @@ class PushNotificationService {
     }
   }
 
-  /// Write the token to both documents the push senders read from.
+  /// Write the token to the document the push senders read from.
   void _persistToken(String userId, String token) {
     final tokenData = {
       'fcmToken': token,
       'fcmTokenUpdatedAt': Timestamp.now(),
     };
+    // users/{uid} only: push tokens are never kept on the world-readable
+    // public profile (INC-2026-001); every push sender reads users/{uid}.
     Future.wait([
-      FirebaseFirestore.instance
-          .collection('profiles')
-          .doc(userId)
-          .set(tokenData, SetOptions(merge: true)),
       FirebaseFirestore.instance
           .collection('users')
           .doc(userId)
@@ -591,11 +596,9 @@ class PushNotificationService {
       'fcmToken': token,
       'fcmTokenUpdatedAt': Timestamp.now(),
     };
+    // users/{uid} only: push tokens are never kept on the world-readable
+    // public profile (INC-2026-001); every push sender reads users/{uid}.
     Future.wait([
-      FirebaseFirestore.instance
-          .collection('profiles')
-          .doc(userId)
-          .set(tokenData, SetOptions(merge: true)),
       FirebaseFirestore.instance
           .collection('users')
           .doc(userId)

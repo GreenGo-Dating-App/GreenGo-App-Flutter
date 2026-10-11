@@ -140,7 +140,7 @@ class Achievements {
   // Point 177: First Match
   static const Achievement firstMatch = Achievement(
     achievementId: 'first_match',
-    name: 'First Match', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    name: 'First Connection', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     description: 'Get your first mutual like', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.milestones,
     rarity: AchievementRarity.common,
@@ -193,7 +193,7 @@ class Achievements {
   static const Achievement globeTrotter = Achievement(
     achievementId: 'globe_trotter',
     name: 'Globe Trotter', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
-    description: 'Match with users from 10+ countries', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Connect with people from 10+ countries', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.social,
     rarity: AchievementRarity.epic,
     iconUrl: 'assets/achievements/globe_trotter.png',
@@ -205,8 +205,8 @@ class Achievements {
   // Point 182: Generous Heart
   static const Achievement generousHeart = Achievement(
     achievementId: 'generous_heart',
-    name: 'Generous Heart', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
-    description: 'Gift coins to matches', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    name: 'Generous Spirit', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Gift coins to your connections', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.premium,
     rarity: AchievementRarity.rare,
     iconUrl: 'assets/achievements/generous_heart.png',
@@ -232,7 +232,7 @@ class Achievements {
   static const Achievement superStar = Achievement(
     achievementId: 'super_star',
     name: 'Super Star', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
-    description: 'Receive 50+ super likes', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Receive 50+ Priority Connects', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.social,
     rarity: AchievementRarity.legendary,
     iconUrl: 'assets/achievements/super_star.png',
@@ -294,7 +294,7 @@ class Achievements {
   static const Achievement centurion = Achievement(
     achievementId: 'centurion',
     name: 'Centurion', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
-    description: 'Reach 100 total matches', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Reach 100 total connections', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.milestones,
     rarity: AchievementRarity.epic,
     iconUrl: 'assets/achievements/centurion.png',
@@ -305,8 +305,8 @@ class Achievements {
 
   static const Achievement speedDater = Achievement(
     achievementId: 'speed_dater',
-    name: 'Speed Dater', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
-    description: 'Match with 10 people in one day', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    name: 'Social Sprinter', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Connect with 10 people in one day', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.social,
     rarity: AchievementRarity.rare,
     iconUrl: 'assets/achievements/speed_dater.png',

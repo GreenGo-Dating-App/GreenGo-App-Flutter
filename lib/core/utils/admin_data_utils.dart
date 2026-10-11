@@ -11,14 +11,14 @@ class AdminDataUtils {
   /// Default admin profile data
   static Map<String, dynamic> get _defaultAdminProfileData => {
     'displayName': 'Admin User',
-    'dateOfBirth': Timestamp.fromDate(DateTime(1990, 1, 1)),
+    // No dateOfBirth / exact coordinates / verificationPhotoUrl here: those
+    // are private (profiles_private) and the rules refuse them on the public
+    // profile (INC-2026-001).
     'gender': 'Other',
     'photoUrls': ['https://ui-avatars.com/api/?name=Admin&background=D4AF37&color=000&size=400'],
     'bio': 'GreenGo Administrator',
     'interests': ['Technology', 'Management', 'Community'],
     'location': {
-      'latitude': 41.9028,
-      'longitude': 12.4964,
       'city': 'Rome',
       'country': 'Italy',
       'displayAddress': 'Rome, Italy',
@@ -38,7 +38,6 @@ class AdminDataUtils {
     'height': 175,
     'isComplete': true,
     'verificationStatus': 'approved',
-    'verificationPhotoUrl': null,
     'verificationRejectionReason': null,
     'verificationSubmittedAt': null,
     'verificationReviewedAt': null,

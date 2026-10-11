@@ -3341,6 +3341,62 @@
       ]
     },
     {
+      "collectionGroup": "copyright_notices",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "submittedAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "copyright_notices",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "restoreAfter",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "copyright_notices",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "expireAt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "copyright_strikes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "expiresAt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
       "collectionGroup": "safety_cases",
       "queryScope": "COLLECTION",
       "fields": [
@@ -3656,6 +3712,12 @@
     },
     {
       "collectionGroup": "auto_text_quota",
+      "fieldPath": "expireAt",
+      "ttl": true,
+      "indexes": []
+    },
+    {
+      "collectionGroup": "copyright_rate_limits",
       "fieldPath": "expireAt",
       "ttl": true,
       "indexes": []
