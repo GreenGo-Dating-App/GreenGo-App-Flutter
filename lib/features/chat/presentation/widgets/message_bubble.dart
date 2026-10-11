@@ -1151,10 +1151,29 @@ class _MessageBubbleState extends State<MessageBubble> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: [
-            LocationMessageMap(lat: loc.lat, lng: loc.lng),
+            LocationMessageMap(
+                lat: loc.lat,
+                lng: loc.lng,
+                label: LocationShareService.addressOf(message.metadata)),
+            if (LocationShareService.addressOf(message.metadata) case final a?)
+              Padding(
+                padding: const EdgeInsets.only(top: 4),
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 220),
+                  child: Text(a,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                          fontSize: 13,
+                          color: isCurrentUser
+                              ? AppColors.deepBlack
+                              : AppColors.textPrimary)),
+                ),
+              ),
             const SizedBox(height: 4),
             InkWell(
-              onTap: () => openInMapsApp(context, loc.lat, loc.lng),
+              onTap: () => openInMapsApp(context, loc.lat, loc.lng,
+                  label: LocationShareService.addressOf(message.metadata)),
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [

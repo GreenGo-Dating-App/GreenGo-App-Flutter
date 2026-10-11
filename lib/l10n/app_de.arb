@@ -7444,5 +7444,20 @@
   "participationBaseRequiredBody": "Um an Events teilzunehmen und Erlebnisse zu buchen, brauchst du eine Basis-Mitgliedschaft (oder Silver, Gold oder Platinum).",
   "participationBaseRequiredCta": "Basis-Mitgliedschaft holen",
   "participationBaseRequiredHint": "Basis-Mitgliedschaft erforderlich",
-  "membershipBenefitJoinEvents": "An Events teilnehmen und Erlebnisse buchen"
+  "membershipBenefitJoinEvents": "An Events teilnehmen und Erlebnisse buchen",
+  "locPickerTitle": "Ort auswählen",
+  "locPickerSearchHint": "Adresse oder Ort suchen",
+  "locPickerConfirm": "Diesen Ort verwenden",
+  "locPickerMyLocation": "Meinen aktuellen Standort verwenden",
+  "locPickerLocationUnavailable": "Dein Standort konnte nicht ermittelt werden. Prüfe, ob der Standortzugriff erlaubt ist.",
+  "locPickerNoResults": "Keine Orte gefunden",
+  "locPickerOffline": "Du scheinst offline zu sein. Prüfe deine Verbindung und versuche es erneut.",
+  "locPickerUnavailable": "Die Suche ist gerade nicht verfügbar. Versuche es gleich noch einmal.",
+  "locPickerRateLimited": "Zu viele Suchanfragen. Warte kurz und versuche es erneut.",
+  "locPickerHint": "Suche oder tippe auf die Karte, um eine Markierung zu setzen. Ziehe sie zum Anpassen.",
+  "locPickerFindingAddress": "Adresse wird gesucht…",
+  "locPickerNoAddress": "Markierter Ort (keine Adresse gefunden)",
+  "locPickerClear": "Suche löschen",
+  "locPickerRecent": "Zuletzt",
+  "locPickerPinLabel": "Ausgewählter Ort. Zum Anpassen ziehen."
 }

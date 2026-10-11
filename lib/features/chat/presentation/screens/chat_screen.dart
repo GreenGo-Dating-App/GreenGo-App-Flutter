@@ -24,6 +24,8 @@ import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/services/chat_learning_service.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/services/location_share_service.dart';
+import '../../../../core/services/place_search_service.dart';
+import '../../../../core/widgets/location_picker.dart';
 import '../../../../core/services/tier_gate.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/services/presence_service.dart';
@@ -816,24 +818,16 @@ class _ChatScreenState extends State<ChatScreen> {
     }
   }
 
-  /// Capture and send the user's current location as a message.
+  /// Pick a place (search, current location or a pin) and send it.
   Future<void> _sendLocation(BuildContext context) async {
-    final l10n = AppLocalizations.of(context)!;
-    final messenger = ScaffoldMessenger.of(context);
-    final position = await const LocationShareService().getCurrentPosition();
-    if (!mounted) return;
-    if (position == null) {
-      messenger.showSnackBar(SnackBar(
-        content: Text(l10n.chatLocationDenied),
-        backgroundColor: AppColors.errorRed,
-      ));
-      return;
-    }
+    final picked = await Navigator.of(context)
+        .push<PickedPlace>(LocationPickerScreen.route());
+    if (picked == null || !mounted) return;
     _addSend(ChatMessageSent(
-      content: '${position.latitude},${position.longitude}',
+      content: '${picked.lat},${picked.lng}',
       type: MessageType.location,
-      metadata: LocationShareService.metadataFor(
-          position.latitude, position.longitude),
+      metadata: LocationShareService.metadataFor(picked.lat, picked.lng,
+          address: picked.address),
     ));
   }
 

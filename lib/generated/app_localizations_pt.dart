@@ -24263,6 +24263,56 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get membershipBenefitJoinEvents =>
       'Participar em eventos e reservar experiências';
+
+  @override
+  String get locPickerTitle => 'Escolher um local';
+
+  @override
+  String get locPickerSearchHint => 'Pesquisar um endereço ou local';
+
+  @override
+  String get locPickerConfirm => 'Usar este local';
+
+  @override
+  String get locPickerMyLocation => 'Usar a minha localização atual';
+
+  @override
+  String get locPickerLocationUnavailable =>
+      'Não foi possível obter a tua localização. Verifica se o acesso à localização está permitido.';
+
+  @override
+  String get locPickerNoResults => 'Nenhum local encontrado';
+
+  @override
+  String get locPickerOffline =>
+      'Parece que estás offline. Verifica a ligação e tenta novamente.';
+
+  @override
+  String get locPickerUnavailable =>
+      'A pesquisa não está disponível agora. Tenta novamente daqui a pouco.';
+
+  @override
+  String get locPickerRateLimited =>
+      'Demasiadas pesquisas. Aguarda um momento e tenta novamente.';
+
+  @override
+  String get locPickerHint =>
+      'Pesquisa ou toca no mapa para colocar um marcador. Arrasta-o para ajustar.';
+
+  @override
+  String get locPickerFindingAddress => 'A procurar o endereço…';
+
+  @override
+  String get locPickerNoAddress => 'Ponto marcado (nenhum endereço encontrado)';
+
+  @override
+  String get locPickerClear => 'Limpar pesquisa';
+
+  @override
+  String get locPickerRecent => 'Recentes';
+
+  @override
+  String get locPickerPinLabel => 'Local selecionado. Arrasta para ajustar.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -48536,4 +48586,54 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get membershipBenefitJoinEvents =>
       'Participar de eventos e reservar experiências';
+
+  @override
+  String get locPickerTitle => 'Escolher um local';
+
+  @override
+  String get locPickerSearchHint => 'Buscar um endereço ou local';
+
+  @override
+  String get locPickerConfirm => 'Usar este local';
+
+  @override
+  String get locPickerMyLocation => 'Usar minha localização atual';
+
+  @override
+  String get locPickerLocationUnavailable =>
+      'Não foi possível obter sua localização. Verifique se o acesso à localização está permitido.';
+
+  @override
+  String get locPickerNoResults => 'Nenhum local encontrado';
+
+  @override
+  String get locPickerOffline =>
+      'Parece que você está offline. Verifique sua conexão e tente novamente.';
+
+  @override
+  String get locPickerUnavailable =>
+      'A busca não está disponível agora. Tente novamente em instantes.';
+
+  @override
+  String get locPickerRateLimited =>
+      'Muitas buscas. Aguarde um momento e tente novamente.';
+
+  @override
+  String get locPickerHint =>
+      'Busque ou toque no mapa para colocar um marcador. Arraste-o para ajustar.';
+
+  @override
+  String get locPickerFindingAddress => 'Buscando o endereço…';
+
+  @override
+  String get locPickerNoAddress => 'Ponto marcado (nenhum endereço encontrado)';
+
+  @override
+  String get locPickerClear => 'Limpar busca';
+
+  @override
+  String get locPickerRecent => 'Recentes';
+
+  @override
+  String get locPickerPinLabel => 'Local selecionado. Arraste para ajustar.';
 }

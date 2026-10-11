@@ -7,6 +7,7 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 
 import '../../../../core/widgets/interactive_location_map.dart' show MapAttribution;
+import '../../../../core/services/place_search_service.dart';
 import '../../../../core/widgets/map_basemap_layer.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
@@ -49,77 +50,72 @@ class _TravelerLocationPickerScreenState
 
   void _onSearchChanged(String query) {
     _debounce?.cancel();
-    if (query.trim().length < 2) {
+    if (query.trim().length < 3) {
       setState(() => _searchResults = []);
       return;
     }
-    _debounce = Timer(const Duration(milliseconds: 500), () {
+    _debounce = Timer(const Duration(milliseconds: 350), () {
       _performSearch(query.trim());
     });
   }
 
+  /// Server-side city search (`searchAddress`, city mode): the same results
+  /// on Android, iOS and web, with no geocoder called from the device.
+  int _searchSeq = 0;
+  final String _sessionToken = newPlaceSessionToken();
+
   Future<void> _performSearch(String query) async {
+    final seq = ++_searchSeq;
     setState(() => _isSearching = true);
     try {
-      final locations = await locationFromAddress(query);
+      final suggestions = await PlaceSearchRepository.instance.search(
+        query,
+        lang: Localizations.localeOf(context).toLanguageTag(),
+        mode: PlaceSearchMode.city,
+        sessionToken: _sessionToken,
+      );
       final results = <_SearchResult>[];
-
-      for (final loc in locations.take(5)) {
-        try {
-          final placemarks =
-              await placemarkFromCoordinates(loc.latitude, loc.longitude);
-          if (placemarks.isNotEmpty) {
-            final place = placemarks.first;
-            final city = place.locality ??
-                place.subLocality ??
-                place.subAdministrativeArea ??
-                place.administrativeArea ??
-                place.name ??
-                query;
-            final country = normalizeCountryName(place.country ?? '');
-            final region = place.administrativeArea ?? '';
-            results.add(_SearchResult(
-              latitude: loc.latitude,
-              longitude: loc.longitude,
-              city: city,
-              country: country,
-              region: region,
-              displayAddress:
-                  [city, region, country].where((s) => s.isNotEmpty).join(', '),
-            ));
-          }
-        } catch (_) {
-          results.add(_SearchResult(
-            latitude: loc.latitude,
-            longitude: loc.longitude,
-            city: query,
-            country: '',
-            region: '',
-            displayAddress:
-                '$query (${loc.latitude.toStringAsFixed(4)}, ${loc.longitude.toStringAsFixed(4)})',
-          ));
+      for (final s in suggestions.take(5)) {
+        var lat = s.lat;
+        var lng = s.lng;
+        var city = s.city.isNotEmpty ? s.city : s.primary;
+        var country = s.country;
+        if ((lat == null || lng == null) && s.placeId != null) {
+          final p = await PlaceSearchRepository.instance
+              .resolve(s.placeId!, sessionToken: _sessionToken);
+          if (p == null) continue;
+          lat = p.lat;
+          lng = p.lng;
+          if (p.city.isNotEmpty) city = p.city;
+          country = p.country;
         }
+        if (lat == null || lng == null) continue;
+        results.add(_SearchResult(
+          latitude: lat,
+          longitude: lng,
+          city: city,
+          country: country,
+          region: s.secondary,
+          displayAddress: s.fullText,
+        ));
       }
-
-      if (mounted) {
-        setState(() {
-          _searchResults = results;
-          _isSearching = false;
-        });
-      }
-    } catch (e) {
-      if (mounted) {
-        setState(() {
-          _searchResults = [];
-          _isSearching = false;
-        });
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)?.travelerNoResultsFor(query) ?? 'No results found for "$query"'),
-            backgroundColor: AppColors.warningAmber,
-          ),
-        );
-      }
+      if (!mounted || seq != _searchSeq) return;
+      setState(() {
+        _searchResults = results;
+        _isSearching = false;
+      });
+    } catch (_) {
+      if (!mounted || seq != _searchSeq) return;
+      setState(() {
+        _searchResults = [];
+        _isSearching = false;
+      });
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.travelerNoResultsFor(query)),
+          backgroundColor: AppColors.warningAmber,
+        ),
+      );
     }
   }
 

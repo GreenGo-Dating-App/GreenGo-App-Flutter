@@ -67,8 +67,8 @@ import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
-import '../../../profile/domain/entities/location.dart' as profile_entity;
-import 'event_location_picker_screen.dart';
+import '../../../../core/services/place_search_service.dart';
+import '../../../../core/widgets/location_picker.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../data/repositories/events_repository_impl.dart';
@@ -4130,9 +4130,15 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
 
   /// Pick the event location from the map (reuses the app's location picker).
   Future<void> _pickLocation() async {
-    final loc = await Navigator.of(context)
-        .push<profile_entity.Location>(EventLocationPickerScreen.route());
-    if (loc == null || !mounted) return;
+    final picked = await Navigator.of(context).push<PickedPlace>(
+      LocationPickerScreen.route(
+        initialLat: _lat,
+        initialLng: _lng,
+        initialAddress: _locationController.text.trim(),
+      ),
+    );
+    if (picked == null || !mounted) return;
+    final loc = picked.toLocation();
     setState(() {
       _lat = loc.latitude;
       _lng = loc.longitude;
@@ -4159,7 +4165,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         manual: false,
       );
     }
-    final loc = await EventGeocoder.geocode(text);
+    final loc = await EventGeocoder.geocode(text,
+        lang: Localizations.localeOf(context).toLanguageTag());
     if (loc == null) return const _EventPlace(manual: true);
     // Remember the result so a retried save doesn't geocode again.
     _lat = loc.latitude;

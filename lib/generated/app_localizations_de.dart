@@ -24347,4 +24347,54 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get membershipBenefitJoinEvents =>
       'An Events teilnehmen und Erlebnisse buchen';
+
+  @override
+  String get locPickerTitle => 'Ort auswählen';
+
+  @override
+  String get locPickerSearchHint => 'Adresse oder Ort suchen';
+
+  @override
+  String get locPickerConfirm => 'Diesen Ort verwenden';
+
+  @override
+  String get locPickerMyLocation => 'Meinen aktuellen Standort verwenden';
+
+  @override
+  String get locPickerLocationUnavailable =>
+      'Dein Standort konnte nicht ermittelt werden. Prüfe, ob der Standortzugriff erlaubt ist.';
+
+  @override
+  String get locPickerNoResults => 'Keine Orte gefunden';
+
+  @override
+  String get locPickerOffline =>
+      'Du scheinst offline zu sein. Prüfe deine Verbindung und versuche es erneut.';
+
+  @override
+  String get locPickerUnavailable =>
+      'Die Suche ist gerade nicht verfügbar. Versuche es gleich noch einmal.';
+
+  @override
+  String get locPickerRateLimited =>
+      'Zu viele Suchanfragen. Warte kurz und versuche es erneut.';
+
+  @override
+  String get locPickerHint =>
+      'Suche oder tippe auf die Karte, um eine Markierung zu setzen. Ziehe sie zum Anpassen.';
+
+  @override
+  String get locPickerFindingAddress => 'Adresse wird gesucht…';
+
+  @override
+  String get locPickerNoAddress => 'Markierter Ort (keine Adresse gefunden)';
+
+  @override
+  String get locPickerClear => 'Suche löschen';
+
+  @override
+  String get locPickerRecent => 'Zuletzt';
+
+  @override
+  String get locPickerPinLabel => 'Ausgewählter Ort. Zum Anpassen ziehen.';
 }

@@ -6870,5 +6870,20 @@
   "participationBaseRequiredBody": "Pour participer à des événements et réserver des expériences, il te faut un abonnement de base (ou Silver, Gold ou Platinum).",
   "participationBaseRequiredCta": "Prendre l'abonnement de base",
   "participationBaseRequiredHint": "Abonnement de base requis",
-  "membershipBenefitJoinEvents": "Participer à des événements et réserver des expériences"
+  "membershipBenefitJoinEvents": "Participer à des événements et réserver des expériences",
+  "locPickerTitle": "Choisir un lieu",
+  "locPickerSearchHint": "Rechercher une adresse ou un lieu",
+  "locPickerConfirm": "Utiliser ce lieu",
+  "locPickerMyLocation": "Utiliser ma position actuelle",
+  "locPickerLocationUnavailable": "Impossible d'obtenir ta position. Vérifie que l'accès à la localisation est autorisé.",
+  "locPickerNoResults": "Aucun lieu trouvé",
+  "locPickerOffline": "Tu sembles hors ligne. Vérifie ta connexion et réessaie.",
+  "locPickerUnavailable": "La recherche n'est pas disponible pour le moment. Réessaie dans un instant.",
+  "locPickerRateLimited": "Trop de recherches. Patiente un instant et réessaie.",
+  "locPickerHint": "Recherche ou touche la carte pour placer un repère. Fais-le glisser pour l'ajuster.",
+  "locPickerFindingAddress": "Recherche de l'adresse…",
+  "locPickerNoAddress": "Point épinglé (aucune adresse trouvée)",
+  "locPickerClear": "Effacer la recherche",
+  "locPickerRecent": "Récents",
+  "locPickerPinLabel": "Lieu sélectionné. Fais glisser pour ajuster."
 }

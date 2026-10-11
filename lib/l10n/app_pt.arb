@@ -7444,5 +7444,20 @@
   "participationBaseRequiredBody": "Para participar em eventos e reservar experiências precisas de uma subscrição Base (ou Silver, Gold ou Platinum).",
   "participationBaseRequiredCta": "Obter a subscrição Base",
   "participationBaseRequiredHint": "Requer subscrição Base",
-  "membershipBenefitJoinEvents": "Participar em eventos e reservar experiências"
+  "membershipBenefitJoinEvents": "Participar em eventos e reservar experiências",
+  "locPickerTitle": "Escolher um local",
+  "locPickerSearchHint": "Pesquisar um endereço ou local",
+  "locPickerConfirm": "Usar este local",
+  "locPickerMyLocation": "Usar a minha localização atual",
+  "locPickerLocationUnavailable": "Não foi possível obter a tua localização. Verifica se o acesso à localização está permitido.",
+  "locPickerNoResults": "Nenhum local encontrado",
+  "locPickerOffline": "Parece que estás offline. Verifica a ligação e tenta novamente.",
+  "locPickerUnavailable": "A pesquisa não está disponível agora. Tenta novamente daqui a pouco.",
+  "locPickerRateLimited": "Demasiadas pesquisas. Aguarda um momento e tenta novamente.",
+  "locPickerHint": "Pesquisa ou toca no mapa para colocar um marcador. Arrasta-o para ajustar.",
+  "locPickerFindingAddress": "A procurar o endereço…",
+  "locPickerNoAddress": "Ponto marcado (nenhum endereço encontrado)",
+  "locPickerClear": "Limpar pesquisa",
+  "locPickerRecent": "Recentes",
+  "locPickerPinLabel": "Local selecionado. Arrasta para ajustar."
 }
