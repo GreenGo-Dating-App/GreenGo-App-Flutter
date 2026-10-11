@@ -24347,4 +24347,8 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get srvReferralPreviewWeb => 'Continua sul web';
+
+  @override
+  String get loginTagline =>
+      'Scopri culture. Connettiti senza barriere linguistiche.';
 }

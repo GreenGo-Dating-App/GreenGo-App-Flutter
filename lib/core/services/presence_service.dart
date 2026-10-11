@@ -32,6 +32,13 @@ class PresenceService {
   bool _isCurrentlyOnline = false;
   bool _isAppInForeground = true;
 
+  /// Set by [endSession]; afterwards nothing can mark this user online again.
+  bool _ended = false;
+
+  /// True while an inactivity timer is scheduled (exposed for tests).
+  @visibleForTesting
+  bool get hasActiveTimers => _periodicCheck != null || _inactivityTimer != null;
+
   /// Record user activity — resets the inactivity timer.
   /// Call this on taps, swipes, messages, navigation changes, etc.
   void recordActivity() {
@@ -82,7 +89,7 @@ class PresenceService {
 
   /// Mark the user as online in Firestore
   Future<void> _setOnline() async {
-    if (_isCurrentlyOnline) return;
+    if (_isCurrentlyOnline || _ended) return;
     _isCurrentlyOnline = true;
     try {
       await _firestore.collection('profiles').doc(userId).update({
@@ -106,6 +113,25 @@ class PresenceService {
     } catch (e) {
       debugPrint('[Presence] Failed to set offline: $e');
     }
+  }
+
+  /// Sign-out: stop every timer, write offline/lastSeen ONCE (the caller runs
+  /// this while the user is still authenticated) and detach the static
+  /// [instance] so nothing can mark the old user online again.
+  Future<void> endSession() async {
+    _ended = true;
+    _isAppInForeground = false;
+    _stopInactivityCheck();
+    if (identical(_instance, this)) _instance = null;
+    try {
+      await _firestore.collection('profiles').doc(userId).update({
+        'isOnline': false,
+        'lastSeen': FieldValue.serverTimestamp(),
+      });
+    } catch (e) {
+      debugPrint('[Presence] Failed to set offline on sign-out: $e');
+    }
+    _isCurrentlyOnline = false;
   }
 
   /// Clean up timers

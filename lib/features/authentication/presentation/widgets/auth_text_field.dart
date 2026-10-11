@@ -20,7 +20,11 @@ class AuthTextField extends StatelessWidget {
     this.textCapitalization = TextCapitalization.none,
     this.fieldKey,
     this.focusNode,
+    this.translucent = false,
   });
+  /// Calm variant for screens drawn over a background (login): subtle
+  /// translucent fill, 1px hairline border, gold only on focus.
+  final bool translucent;
   final TextEditingController controller;
   /// Optional: lets a caller react to the field gaining or losing focus (the
   /// registration form uses it to look up the email's entitlement on blur).
@@ -46,6 +50,7 @@ class AuthTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (translucent) return _buildTranslucent(context);
     return TextFormField(
       key: fieldKey,
       controller: controller,
@@ -112,6 +117,63 @@ class AuthTextField extends StatelessWidget {
           color: AppColors.errorRed,
           fontSize: 12,
         ),
+      ),
+    );
+  }
+
+  Widget _buildTranslucent(BuildContext context) {
+    OutlineInputBorder border(Color c, [double w = 1]) => OutlineInputBorder(
+          borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+          borderSide: BorderSide(color: c, width: w),
+        );
+    // Gold appears only while focused; otherwise icons/labels stay grey.
+    final focusAware = WidgetStateColor.resolveWith((states) {
+      if (states.contains(WidgetState.error)) return AppColors.errorRed;
+      if (states.contains(WidgetState.focused)) return AppColors.richGold;
+      return AppColors.textTertiary;
+    });
+    return TextFormField(
+      key: fieldKey,
+      controller: controller,
+      focusNode: focusNode,
+      obscureText: obscureText,
+      keyboardType: keyboardType,
+      validator: validator,
+      enabled: enabled,
+      maxLines: maxLines,
+      textCapitalization: textCapitalization,
+      textInputAction: textInputAction,
+      onChanged: onChanged,
+      onFieldSubmitted: onSubmitted,
+      cursorColor: AppColors.richGold,
+      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+            color: AppColors.textPrimary,
+            fontSize: 16,
+          ),
+      decoration: InputDecoration(
+        labelText: label,
+        hintText: hint,
+        labelStyle: const TextStyle(color: AppColors.textTertiary),
+        floatingLabelStyle: WidgetStateTextStyle.resolveWith(
+          (states) => TextStyle(color: focusAware.resolve(states)),
+        ),
+        hintStyle: const TextStyle(color: AppColors.textTertiary),
+        prefixIcon: prefixIcon != null ? Icon(prefixIcon, size: 20) : null,
+        prefixIconColor: focusAware,
+        suffixIcon: suffixIcon,
+        filled: true,
+        fillColor: Colors.white.withValues(alpha: enabled ? 0.05 : 0.03),
+        border: border(Colors.white.withValues(alpha: 0.14)),
+        enabledBorder: border(Colors.white.withValues(alpha: 0.14)),
+        focusedBorder: border(AppColors.richGold, 1.5),
+        errorBorder: border(AppColors.errorRed),
+        focusedErrorBorder: border(AppColors.errorRed, 1.5),
+        disabledBorder: border(Colors.white.withValues(alpha: 0.08)),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: AppDimensions.paddingM,
+          vertical: 18,
+        ),
+        errorStyle: const TextStyle(color: Color(0xFFFF8A80), fontSize: 12),
       ),
     );
   }

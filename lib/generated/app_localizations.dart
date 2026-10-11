@@ -41288,6 +41288,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Continue on the web'**
   String get srvReferralPreviewWeb;
+
+  /// One-line tagline under the logo on the login screen
+  ///
+  /// In en, this message translates to:
+  /// **'Discover cultures. Connect without language barriers.'**
+  String get loginTagline;
 }
 
 class _AppLocalizationsDelegate

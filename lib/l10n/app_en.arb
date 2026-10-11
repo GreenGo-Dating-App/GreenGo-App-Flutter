@@ -13319,5 +13319,9 @@
   "srvReferralPreviewBody": "Join with this invitation and get 1 week of Base membership free. Discover people, cultures, events and communities around the world.",
   "srvReferralPreviewOpenApp": "Open in the app",
   "srvReferralPreviewGetApp": "Get the app",
-  "srvReferralPreviewWeb": "Continue on the web"
+  "srvReferralPreviewWeb": "Continue on the web",
+  "loginTagline": "Discover cultures. Connect without language barriers.",
+  "@loginTagline": {
+    "description": "One-line tagline under the logo on the login screen"
+  }
 }

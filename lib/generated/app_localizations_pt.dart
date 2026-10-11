@@ -24294,6 +24294,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get srvReferralPreviewWeb => 'Continuar na web';
+
+  @override
+  String get loginTagline =>
+      'Descubra culturas. Ligue-se sem barreiras linguísticas.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -48598,4 +48602,8 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get srvReferralPreviewWeb => 'Continuar na web';
+
+  @override
+  String get loginTagline =>
+      'Descubra culturas. Conecte-se sem barreiras de idioma.';
 }

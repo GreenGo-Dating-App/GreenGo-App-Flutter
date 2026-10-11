@@ -47,6 +47,7 @@ import 'core/services/onboarding_gate.dart';
 import 'core/services/own_profile_store.dart';
 import 'core/services/push_notification_service.dart';
 import 'core/services/session_cache_gate.dart';
+import 'core/services/sign_out_steps.dart';
 import 'core/services/version_check_service.dart';
 import 'core/security/screen_protection_overlay.dart';
 import 'core/security/screen_security_service.dart';
@@ -240,6 +241,10 @@ void main() async {
     SharedPreferences.getInstance(),
   ).wait;
   final prefs = startup.$5;
+
+  // Instant logout: everything the background sign-out job must end for the
+  // signed-out user (listeners → presence → push → media → local data).
+  registerDefaultSignOutSteps();
 
   // Analytics / crash-reporting consent (P2-5a, ePrivacy art. 5(3)): decide
   // the region on first run, load the stored choice, then switch the SDKs on
@@ -801,6 +806,7 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
       // for the already-current AuthAuthenticated state, so the access check
       // would never run and we'd sit on the splash forever. Kick it off here.
       final authState = context.read<AuthBloc>().state;
+      _lastAuthState ??= authState;
       if (_isSignedOutState(authState)) _signInPending = true;
       if (authState is AuthAuthenticated) {
         _onAuthenticated(authState.user);
@@ -1246,6 +1252,9 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
 
   bool _isSigningOut = false;
 
+  /// Previous auth state seen by the listener (detects signed-in → out).
+  AuthState? _lastAuthState;
+
   void _handleSignOut() {
     _isSigningOut = true;
     // Clear all caches before signing out
@@ -1571,6 +1580,16 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
           await _onAuthenticated(state.user);
         }
         if (_isSignedOutState(state)) _signInPending = true;
+        // Instant logout: a signed-in session just ended. Clear every route
+        // pushed above this wrapper (chat, settings, sheets…) so the login
+        // page shows NOW — the actual sign-out finishes in the background.
+        final wasSignedIn = _lastAuthState is AuthAuthenticated ||
+            _lastAuthState is AuthWaitingForAccess;
+        _lastAuthState = state;
+        if (wasSignedIn && state is AuthUnauthenticated && mounted) {
+          final nav = Navigator.maybeOf(this.context, rootNavigator: true);
+          nav?.popUntil((route) => route.isFirst);
+        }
         // When user signs out, reset access state to prevent stuck splash
         if (state is AuthInitial || state is AuthUnauthenticated) {
           _isSigningOut = false;

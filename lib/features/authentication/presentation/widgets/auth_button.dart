@@ -12,7 +12,10 @@ class AuthButton extends StatelessWidget {
     this.backgroundColor,
     this.textColor,
     this.icon,
+    this.height = AppDimensions.buttonHeightM,
   });
+  /// Minimum button height (login uses a slightly taller 52).
+  final double height;
   final String text;
   final VoidCallback? onPressed;
   final bool isLoading;
@@ -27,7 +30,7 @@ class AuthButton extends StatelessWidget {
       return OutlinedButton(
         onPressed: isLoading ? null : onPressed,
         style: OutlinedButton.styleFrom(
-          minimumSize: const Size(double.infinity, AppDimensions.buttonHeightM),
+          minimumSize: Size(double.infinity, height),
           side: BorderSide(
             color: backgroundColor ?? AppColors.richGold,
             width: 2,
@@ -45,7 +48,7 @@ class AuthButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         backgroundColor: backgroundColor ?? AppColors.richGold,
         foregroundColor: textColor ?? AppColors.deepBlack,
-        minimumSize: const Size(double.infinity, AppDimensions.buttonHeightM),
+        minimumSize: Size(double.infinity, height),
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppDimensions.radiusM),

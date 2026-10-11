@@ -24321,4 +24321,8 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get srvReferralPreviewWeb => 'Continuar en la web';
+
+  @override
+  String get loginTagline =>
+      'Descubre culturas. Conecta sin barreras de idioma.';
 }
