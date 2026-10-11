@@ -113,7 +113,9 @@ describe('mirrorPrivateProfileFields: public -> private (old app versions)', () 
     expect(priv.verificationPhone).toBe('+390000000');
     expect(priv.verificationPhotoUrl).toMatch(/verifications/);
     expect(priv.privatePhotoUrls).toEqual(['https://p/1.jpg']);
-    expect(priv.sexualOrientation).toBe('straight');
+    // Audit AS-06: orientation is never copied into profiles_private any more
+    // (purge-sexual-orientation.ts removes the legacy public value).
+    expect(priv.sexualOrientation).toBeUndefined();
     expect(priv.ageVerification).toEqual({ documentHash: 'h1', documentDateOfBirth: expect.anything() });
     expect(priv.birthMonthDay).toBe('05-20');
     // City / country are NOT sensitive and are not copied.
@@ -425,7 +427,7 @@ describe('backfill + strip scripts', () => {
     const b = await data('profiles/alice');
     await stripOne(db, 'alice', true);
     const pub = await data('profiles/alice');
-    for (const f of ['geohash', 'dateOfBirth', 'email', 'verificationPhone', 'verificationPhotoUrl', 'privatePhotoUrls', 'sexualOrientation']) {
+    for (const f of ['geohash', 'dateOfBirth', 'email', 'verificationPhone', 'verificationPhotoUrl', 'privatePhotoUrls']) {
       expect(pub[f]).toBeUndefined();
     }
     expect(pub.location).toEqual({ city: 'Rome', country: 'Italy', displayAddress: 'Rome, Italy' });

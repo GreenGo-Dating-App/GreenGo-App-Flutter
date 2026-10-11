@@ -36,7 +36,7 @@ Global answers:
 - Use case: **"one-time and frequent"** access — users pick profile/chat photos and videos regularly (core feature). Justify broad access, OR migrate one-off pickers to the Android Photo Picker to avoid the declaration. `READ_MEDIA_AUDIO` was removed (not needed).
 
 ### Play — Content rating (IARC questionnaire)
-- Category **Social/Communication**, user-generated content + user interaction = **Yes**. **NOT** a dating app. Expect Teen/Mature-17 depending on UGC answers; answer honestly about chat/UGC moderation (you have block/report + community guidelines).
+- Category **Social/Communication**, user-generated content + user interaction = **Yes**. **NOT** a dating app. Answer honestly about chat/UGC moderation (you have block/report + community guidelines). Whatever IARC returns, the app is **adults-only**: Target audience = **18 and over** only.
 
 ---
 
@@ -75,7 +75,7 @@ Mark **Linked to the user = Yes** for all below (tied to an account), **Used for
 - [ ] Apple App Privacy completed (§2) — matches Play.
 - [ ] Privacy policy URL live + linked in both consoles; account-deletion URL added.
 - [ ] Content rating (IARC) done — non-dating, UGC honest.
-- [ ] Age rating set (Apple) consistent with content.
+- [ ] Age rating set (Apple) to **18+** (override to higher rating), consistent with the 18+ Terms and age gate.
 - [ ] Store listing (name/subtitle/keywords/desc/screenshots) — see `ASO_TODO.md`.
 - [ ] Upload fresh **AAB** (built from main today) + **iOS build** (TestFlight → submit).
 - [ ] Export compliance (Apple): uses standard encryption (HTTPS) → usually "exempt"; answer the encryption question.

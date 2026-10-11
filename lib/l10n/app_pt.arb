@@ -7314,5 +7314,11 @@
   "locMapRecenter": "Centrar",
   "locMapExpand": "Expandir mapa",
   "locMapApproximateArea": "Área aproximada",
-  "locMapCouldNotOpen": "Não foi possível abrir uma app de mapas"
+  "locMapCouldNotOpen": "Não foi possível abrir uma app de mapas",
+  "aiConsentTitleV2": "As funcionalidades de IA usam serviços da Google e da Anthropic",
+  "aiConsentIntroV2": "As respostas inteligentes, o treinador de línguas com IA, a tradução das mensagens que recebe, a leitura em voz alta e as respostas automáticas do assistente de apoio só funcionam se a GreenGo enviar o texto em causa a estes fornecedores.",
+  "aiConsentProvidersV2": "Quem: Google Gemini (sugestões e treino), Google Cloud Text-to-Speech (áudio), Google Cloud Translation (traduções) e Anthropic Claude (respostas automáticas do assistente de apoio).",
+  "aiConsentWhatSentV2": "O que é enviado: apenas o texto da mensagem em que usa a funcionalidade (incluindo mensagens que outras pessoas lhe enviaram e as mensagens que escreve ao apoio) e os idiomas. Nunca o seu nome, fotos ou perfil.",
+  "aiConsentDisabledNoticeV2": "Esta funcionalidade está desligada porque escolheu não enviar texto para serviços de IA.",
+  "aiServicesSubtitleOnV2": "Ativado: as funcionalidades de IA podem enviar à Google e à Anthropic o texto em que as usa."
 }

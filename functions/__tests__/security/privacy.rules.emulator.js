@@ -65,7 +65,7 @@ async function client(email) {
   await expectOk('onboarding creates own private profile', () =>
     fs.setDoc(D(alice, `profiles_private/${A}`), {
       location: { latitude: 41.9, longitude: 12.5 }, geohash: 'sr2yk3abc',
-      dateOfBirth: fs.Timestamp.fromDate(new Date('1995-05-20')), sexualOrientation: 'straight',
+      dateOfBirth: fs.Timestamp.fromDate(new Date('1995-05-20')),
       email: 'alice@example.com', verificationPhone: '+39', privatePhotoUrls: [],
       verificationPhotoPath: `verifications/${A}/1.jpg`, updatedAt: fs.serverTimestamp(),
     }));
@@ -76,7 +76,7 @@ async function client(email) {
   await expectOk('owner reads own private profile', () => fs.getDoc(D(alice, `profiles_private/${A}`)));
   await expectOk('admin_users member reads a private profile', () => fs.getDoc(D(mod, `profiles_private/${A}`)));
   await expectOk('owner updates a doc that holds server-owned fields (untouched)', () =>
-    fs.updateDoc(D(bob, `profiles_private/${B}`), { sexualOrientation: 'gay' }));
+    fs.updateDoc(D(bob, `profiles_private/${B}`), { verificationPhone: '+351' }));
 
   // ---- ATTACK ----
   await expectDenied('other user reads someone\'s private profile', () => fs.getDoc(D(bob, `profiles_private/${A}`)));
@@ -96,6 +96,8 @@ async function client(email) {
     fs.setDoc(D(mod, `profiles_private/${mod.uid}`), { email: 'x', birthMonthDay: '01-01' }));
   await expectDenied('user creates a private profile under another uid', () =>
     fs.setDoc(D(bob, `profiles_private/${A}x`), { email: 'x' }));
+  await expectDenied('owner stores sexualOrientation (field removed, audit AS-06)', () =>
+    fs.updateDoc(D(alice, `profiles_private/${A}`), { sexualOrientation: 'gay' }));
   await expectDenied('owner deletes own private profile', () => fs.deleteDoc(D(alice, `profiles_private/${A}`)));
   await expectDenied('admin deletes a private profile from a client', () => fs.deleteDoc(D(mod, `profiles_private/${A}`)));
 

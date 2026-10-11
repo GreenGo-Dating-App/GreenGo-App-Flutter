@@ -19,10 +19,12 @@ class MemStore implements AiConsentStore {
 
 class FakeRecorder {
   final List<bool> sent = [];
+  final List<int> versions = [];
   bool fail = false;
   Future<void> call({required bool accepted, required int version}) async {
     if (fail) throw Exception('offline');
     sent.add(accepted);
+    versions.add(version);
   }
 }
 
@@ -102,6 +104,18 @@ void main() {
       final s = svc(store, FakeRecorder(), () => 'u1');
       await s.load();
       expect(s.status, AiConsentStatus.unknown);
+    });
+
+    test('a version-1 acceptance (Google only) asks again: v2 names Anthropic',
+        () async {
+      expect(AiConsentService.currentVersion, 2);
+      final store = MemStore()..data['ai_consent_u1'] = '{"v":1,"a":true,"s":true}';
+      final rec = FakeRecorder();
+      final s = svc(store, rec, () => 'u1');
+      await s.load();
+      expect(s.status, AiConsentStatus.unknown);
+      await s.setDecision(accepted: true);
+      expect(rec.versions, [2]);
     });
 
     test('listeners hear the decision', () async {
@@ -224,6 +238,36 @@ void main() {
       expect(r.text, 'Ciao');
     });
 
+    test('production routing: private text ALWAYS goes to translatePrivateText; '
+        'a server failure never falls back to the free endpoint (audit EU-05)',
+        () async {
+      final log = <http.Request>[];
+      var fail = false;
+      final t = TranslationService.test(
+        client: endpoint(log),
+        productionRouting: true,
+        serverCall: (p) async {
+          if (fail) throw Exception('unavailable');
+          return {
+            'translations': [
+              {'text': 'Ciao', 'detectedLanguage': 'en', 'sameLanguage': false}
+            ]
+          };
+        },
+      );
+      final r = await t.translateDetailed(text: 'Hello', targetLanguage: 'it');
+      expect(r.text, 'Ciao');
+      fail = true;
+      final r2 = await t.translateDetailed(text: 'Bye', targetLanguage: 'it');
+      expect(r2.failed, isTrue);
+      expect(log, isEmpty, reason: 'no device call to translate.googleapis.com');
+      // Public content still may use the device fallback.
+      final r3 = await t.translateDetailed(
+          text: 'Public event', targetLanguage: 'it', requiresConsent: false);
+      expect(r3.text, 'Ciao');
+      expect(log, hasLength(1));
+    });
+
     test('server flag on: private text goes to translatePrivateText, not the free endpoint', () async {
       final log = <http.Request>[];
       final payloads = <Map<String, dynamic>>[];
@@ -271,6 +315,10 @@ void main() {
       bool? result;
       await pump(tester, s, (r) => result = r);
       expect(find.textContaining('Google Gemini'), findsOneWidget);
+      // Audit 2026-10: the support assistant's provider is named too.
+      expect(find.textContaining('Anthropic Claude'), findsOneWidget);
+      await tester.ensureVisible(find.byKey(const Key('aiConsentAccept')));
+      await tester.pump();
       await tester.tap(find.byKey(const Key('aiConsentAccept')));
       await tester.pumpAndSettle();
       expect(result, isTrue);
@@ -282,6 +330,8 @@ void main() {
       final s = svc(MemStore(), FakeRecorder(), () => 'u1');
       bool? result;
       await pump(tester, s, (r) => result = r);
+      await tester.ensureVisible(find.byKey(const Key('aiConsentDecline')));
+      await tester.pump();
       await tester.tap(find.byKey(const Key('aiConsentDecline')));
       await tester.pumpAndSettle();
       expect(result, isFalse);

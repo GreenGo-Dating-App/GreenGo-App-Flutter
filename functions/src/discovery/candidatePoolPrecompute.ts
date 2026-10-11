@@ -53,7 +53,8 @@ interface PoolMember {
   boostExpiry: string | null;
   isOnline: boolean;
   lastActive: string | null;
-  sexualOrientation: string | null;
+  // sexualOrientation was removed (audit AS-06 / EU-02): special-category
+  // data is never copied into pools again.
   hasPhotos: boolean;
 }
 
@@ -153,7 +154,6 @@ function toPoolMember(doc: admin.firestore.DocumentSnapshot): PoolMember | null 
     boostExpiry: boostExpiry ? boostExpiry.toDate().toISOString() : null,
     isOnline: d.isOnline === true,
     lastActive: lastSeen ? lastSeen.toDate().toISOString() : null,
-    sexualOrientation: (d.sexualOrientation as string) || null,
     hasPhotos: true,
     // We expose `country` and `gender` via the pool key, not per-member
   };

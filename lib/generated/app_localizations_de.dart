@@ -6384,7 +6384,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return '$tierName-Mitgliedschaft aktiv bis $formattedDate$coinsText';
   }
 
@@ -16372,13 +16375,21 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price pro $interval. Verlängert sich automatisch am $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price pro $interval. Gekündigt; Zugang endet am $date.';
   }
 
@@ -20021,7 +20032,9 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-      String name, String rewards) {
+    String name,
+    String rewards,
+  ) {
     return 'Belohnungen für $name abgeholt! $rewards';
   }
 
@@ -20501,7 +20514,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String profileTravelerActiveSubtitle(
-      String location, int hours, int minutes) {
+    String location,
+    int hours,
+    int minutes,
+  ) {
     return '$location - noch $hours Std. $minutes Min.';
   }
 
@@ -22459,7 +22475,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date) {
+    String reason,
+    String message,
+    String user,
+    String date,
+  ) {
     return 'Grund: $reason\nGemeldete Nachricht: „$message“\nGemeldeter Nutzer: $user\nGemeldet am: $date';
   }
 
@@ -22801,50 +22821,41 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Erste Verbindung',
-        'social_butterfly': 'Gesellige Seele',
-        'popular': 'Beliebt',
-        'video_enthusiast': 'Video-Fan',
-        'daily_streak_7': '7-Tage-Serie',
-        'daily_streak_30': '30-Tage-Serie',
-        'other': 'Neuer Erfolg',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Erste Verbindung',
+      'social_butterfly': 'Gesellige Seele',
+      'popular': 'Beliebt',
+      'video_enthusiast': 'Video-Fan',
+      'daily_streak_7': '7-Tage-Serie',
+      'daily_streak_30': '30-Tage-Serie',
+      'other': 'Neuer Erfolg',
+    });
     return 'Erfolg freigeschaltet: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Knüpfe deine erste Verbindung',
-        'social_butterfly': 'Sende 100 Nachrichten',
-        'popular': 'Knüpfe 50 Verbindungen',
-        'video_enthusiast': 'Führe 10 Videoanrufe',
-        'daily_streak_7': 'Melde dich 7 Tage in Folge an',
-        'daily_streak_30': 'Melde dich 30 Tage in Folge an',
-        'other': 'Weiter so!',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Knüpfe deine erste Verbindung',
+      'social_butterfly': 'Sende 100 Nachrichten',
+      'popular': 'Knüpfe 50 Verbindungen',
+      'video_enthusiast': 'Führe 10 Videoanrufe',
+      'daily_streak_7': 'Melde dich 7 Tage in Folge an',
+      'daily_streak_30': 'Melde dich 30 Tage in Folge an',
+      'other': 'Weiter so!',
+    });
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(
-      challenge,
-      {
-        'send_5_messages': 'Gesprächsstarter',
-        'get_3_matches': 'Netzwerker',
-        'complete_profile': 'Profil-Perfektionist',
-        'video_call_1': 'Von Angesicht zu Angesicht',
-        'other': 'Tägliche Herausforderung',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(challenge, {
+      'send_5_messages': 'Gesprächsstarter',
+      'get_3_matches': 'Netzwerker',
+      'complete_profile': 'Profil-Perfektionist',
+      'video_call_1': 'Von Angesicht zu Angesicht',
+      'other': 'Tägliche Herausforderung',
+    });
     return 'Herausforderung geschafft: $_temp0!';
   }
 
@@ -23708,4 +23719,28 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get locMapCouldNotOpen => 'Karten-App konnte nicht geöffnet werden';
+
+  @override
+  String get aiConsentTitleV2 =>
+      'KI-Funktionen nutzen Dienste von Google und Anthropic';
+
+  @override
+  String get aiConsentIntroV2 =>
+      'Antwortvorschläge, der KI-Sprachcoach, das Übersetzen empfangener Nachrichten, das Vorlesen und die automatischen Antworten des Support-Assistenten funktionieren nur, wenn GreenGo den betreffenden Text an diese Anbieter sendet.';
+
+  @override
+  String get aiConsentProvidersV2 =>
+      'Wer: Google Gemini (Vorschläge und Coaching), Google Cloud Text-to-Speech (Audio), Google Cloud Translation (Übersetzungen) und Anthropic Claude (automatische Antworten des Support-Assistenten).';
+
+  @override
+  String get aiConsentWhatSentV2 =>
+      'Was gesendet wird: nur der Text der Nachricht, auf die du die Funktion anwendest (auch Nachrichten, die andere dir geschickt haben, und deine Nachrichten an den Support), und die Sprachen. Nie dein Name, deine Fotos oder dein Profil.';
+
+  @override
+  String get aiConsentDisabledNoticeV2 =>
+      'Diese Funktion ist aus, weil du keinen Text an KI-Dienste senden möchtest.';
+
+  @override
+  String get aiServicesSubtitleOnV2 =>
+      'An: KI-Funktionen dürfen den Text, für den du sie nutzt, an Google und Anthropic senden.';
 }

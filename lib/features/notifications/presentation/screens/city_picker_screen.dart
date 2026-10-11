@@ -9,6 +9,8 @@ import 'package:http/http.dart' as http;
 import 'package:latlong2/latlong.dart' as ll;
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/services/web_location_fallback.dart'
+    show WebLocationFallback;
 import '../../../../core/widgets/map_basemap_layer.dart';
 import '../../../../generated/app_localizations.dart';
 
@@ -163,20 +165,12 @@ class _CityPickerScreenState extends State<CityPickerScreen> {
   }
 
   // ── Nominatim (web only) ───────────────────────────────────────────────────
+  /// Reverse geocoding goes through the server with ~1 km coordinates
+  /// (`reverseGeocodeCoarse`): the browser never sends a position to
+  /// Nominatim (legal audit 2026-10).
   Future<(String, String)> _nominatimReverse(double lat, double lng) async {
-    final uri = Uri.parse(
-      'https://nominatim.openstreetmap.org/reverse'
-      '?format=jsonv2&lat=$lat&lon=$lng&zoom=10&addressdetails=1',
-    );
-    final resp = await http
-        .get(uri, headers: {'Accept': 'application/json'})
-        .timeout(const Duration(seconds: 8));
-    if (resp.statusCode == 200) {
-      final data = jsonDecode(resp.body) as Map<String, dynamic>;
-      final addr = (data['address'] as Map<String, dynamic>?) ?? {};
-      return (_cityFromAddr(addr), (addr['country'] ?? '').toString());
-    }
-    return ('', '');
+    final loc = await WebLocationFallback.reverseGeocode(lat, lng);
+    return (loc?.city ?? '', loc?.country ?? '');
   }
 
   Future<(double, double, String, String)?> _nominatimSearch(String q) async {

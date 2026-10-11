@@ -276,6 +276,9 @@ describe('H-04 AI support replies', () => {
     });
     await db.doc('support_chats/s1').set({ userId: 'u1' });
     await db.doc('profiles/u1').set({ displayName: 'Maria Rossi', membershipTier: 'gold', email: 'maria@example.com' });
+    // Since the 2026-10 legal audit the assistant needs explicit, current
+    // (v2, names Anthropic) AI consent.
+    await db.doc('consents/u1').set({ ai_processing: { accepted: true, version: 2 } });
   });
 
   test('LEGIT: first user message gets one AI reply, with contact details scrubbed', async () => {

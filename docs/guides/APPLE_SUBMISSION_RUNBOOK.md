@@ -46,7 +46,7 @@
 3. **App Information** (left sidebar):
    - Category → Primary **Travel**, Secondary **Education** *(this is a core 4.3(b) signal — do NOT leave it as Social/Lifestyle)*
    - Content Rights: confirm you have rights to all content.
-   - Age Rating → **Edit** → answer honestly. GreenGo is user-generated social + messaging: expect **12+** (infrequent/mild content, unrestricted web = No if you sandbox links). Answer *"Made for Kids" = No*.
+   - Age Rating → **Edit** → answer the questionnaire honestly (user-generated content + user-to-user messaging = Yes, unrestricted web = No if links are sandboxed), then set the rating to **18+** with *Override to higher age rating* ("Age Restrictions"): the Terms of Service restrict GreenGo to adults and the app has an age gate, so the store rating must match (legal audit 2026-10; the old "12+" was wrong). Answer *"Made for Kids" = No*. Keep this **18+** on every future version.
 
 ---
 

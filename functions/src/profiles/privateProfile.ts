@@ -3,7 +3,7 @@
  *
  * `profiles/{uid}` is readable by every signed-in user (discovery). It used to
  * carry exact coordinates (raw lat/lng + a 9-char geohash, ~5 m), the date of
- * birth, orientation, email, phone, the ID-selfie download URL, private photo
+ * birth, email, phone, the ID-selfie download URL, private photo
  * URLs and ID-derived age-verification data. This module moves that data to
  * the owner/admin-only `profiles_private/{uid}` and publishes COARSE
  * replacements on the public profile:
@@ -58,7 +58,9 @@ export const SENSITIVE_FIELDS: ReadonlyArray<{ pub: string; priv: string }> = [
   { pub: 'travelerLocation.longitude', priv: 'travelerLocation.longitude' },
   { pub: 'geohash', priv: 'geohash' },
   { pub: 'dateOfBirth', priv: 'dateOfBirth' },
-  { pub: 'sexualOrientation', priv: 'sexualOrientation' },
+  // sexualOrientation is NOT mirrored any more (audit AS-06 / EU-02): the
+  // field was removed from the product and is purged everywhere by
+  // scripts/purge-sexual-orientation.ts; the rules reject new values.
   { pub: 'email', priv: 'email' },
   { pub: 'verificationPhone', priv: 'verificationPhone' },
   { pub: 'verificationPhotoUrl', priv: 'verificationPhotoUrl' },

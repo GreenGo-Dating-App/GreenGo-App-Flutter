@@ -86,7 +86,9 @@ void main() {
       expect(p.dateOfBirth, DateTime(1995, 2, 3));
       expect(p.publicAge, isNull, reason: 'own age from the exact birth date');
       expect(p.age, ageFromDateOfBirth(DateTime(1995, 2, 3)));
-      expect(p.sexualOrientation, 'straight');
+      // Orientation was removed (audit AS-06): a legacy private value is
+      // ignored and never written back.
+      expect(p.toJson().containsKey('sexualOrientation'), isFalse);
       expect(p.privatePhotoUrls, ['https://x/p1.jpg']);
       expect(p.verificationPhotoPath, 'verifications/me/1.jpg');
     });
@@ -156,7 +158,8 @@ void main() {
       expect(w['location'], {'latitude': 41.1579, 'longitude': -8.6291});
       expect(w[kProfileGeohashField], geohashFor(41.1579, -8.6291));
       expect(w['dateOfBirth'], Timestamp.fromDate(DateTime(1995, 2, 3)));
-      expect(w['sexualOrientation'], 'straight');
+      expect(w.containsKey('sexualOrientation'), isFalse,
+          reason: 'orientation removed (audit AS-06)');
       expect(w['privatePhotoUrls'], ['p1']);
       expect(w[kVerificationPhotoPathField], 'verifications/me/1.jpg');
       expect(w.containsKey('verificationPhotoUrl'), isFalse);

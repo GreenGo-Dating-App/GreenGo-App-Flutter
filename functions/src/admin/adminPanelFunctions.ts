@@ -19,7 +19,7 @@ import { requireAdmin, adminRoleFromDoc, AdminRole, SUPER_ADMIN_ONLY, SUPPORT_RO
 import { setAdmin2faClaim } from './adminClaims';
 import { scrubPII, redact } from '../shared/redact';
 import { applyProfileAgeGate } from '../auth/ageGate';
-import { hasWithdrawnAiConsent } from '../shared/aiConsent';
+import { getAiConsentState, hasSupportAiConsent } from '../shared/aiConsent';
 import { t } from '../shared/i18n';
 
 const db = admin.firestore();
@@ -623,13 +623,26 @@ export const processAISupportMessage = functions
         console.log('Support message not from the chat owner; no AI reply');
         return null;
       }
-      // The owner turned "AI services" OFF (consents/{uid}.ai_processing
-      // withdrawn): no AI reply, the chat stays with human agents.
-      if (await hasWithdrawnAiConsent(ownerUid)) {
-        console.log('Owner turned AI services off; leaving for human agents');
+      // Explicit, CURRENT consent is required before any text goes to
+      // Anthropic (legal audit 2026-10): consents/{uid}.ai_processing must be
+      // accepted with a notice version that names Anthropic. Never asked,
+      // version-1 (Google-only) and withdrawn records all get a human agent:
+      // the chat is handed over (open, high priority) once - later messages
+      // stop at the escalatedFromAI check above - and nothing is sent to the
+      // model.
+      if (!(await hasSupportAiConsent(ownerUid))) {
+        const state = await getAiConsentState(ownerUid);
+        const status = state === 'withdrawn' ? 'ai_consent_withdrawn' : 'ai_consent_missing';
+        console.log(`No current AI consent (${status}); handing over to human agents`);
+        await conversationRef.update({
+          status: 'open',
+          escalatedFromAI: true,
+          escalationReason: status,
+          escalatedAt: admin.firestore.FieldValue.serverTimestamp(),
+        });
         await db.collection('ai_support_logs').add({
           conversationId,
-          status: 'ai_consent_withdrawn',
+          status,
           timestamp: admin.firestore.FieldValue.serverTimestamp(),
         });
         return null;

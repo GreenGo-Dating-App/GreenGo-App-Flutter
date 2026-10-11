@@ -43,7 +43,7 @@ Metadata is easy; these are what cause real rejections for an app like GreenGo. 
 | **Terms URL** | *(host `legal/TERMS_AND_CONDITIONS_en.md` — e.g. greengo-chat.web.app/terms)* |
 | **Support URL / email** | *(required — add a real support page + email)* |
 | **Marketing URL** | greengo-chat.web.app *(optional)* |
-| **Age rating** | Expect **17+ (Apple) / Mature-Teen (Google IARC)** — driven by unrestricted user communication + UGC. See per-platform questionnaires. |
+| **Age rating** | **18+ on both stores** (Apple: override to 18+; Google: Target audience = 18 and over only) — GreenGo is adults-only by its Terms and age gate. See per-platform questionnaires. |
 | **Languages** | EN, IT, PT-BR, PT, ES, FR, DE *(match the `legal/` + l10n set)* |
 
 > ⚠️ **Do NOT reuse dating vocabulary** anywhere in either listing (no "match", "singles", "nearby", "date", "hookup", "flirt"). Metadata keywords are a documented 4.3 signal. Description, keywords, screenshots, and preview must all read as cultural/language/travel.

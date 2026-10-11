@@ -18,7 +18,6 @@ class PoolCandidate {
     required this.isBoosted,
     required this.isOnline, this.boostExpiry,
     this.lastActive,
-    this.sexualOrientation,
   });
 
   factory PoolCandidate.fromMap(Map<String, dynamic> map) {
@@ -38,7 +37,6 @@ class PoolCandidate {
       lastActive: map['lastActive'] != null
           ? DateTime.tryParse(map['lastActive'] as String)
           : null,
-      sexualOrientation: map['sexualOrientation'] as String?,
     );
   }
   final String userId;
@@ -52,7 +50,6 @@ class PoolCandidate {
   final DateTime? boostExpiry;
   final bool isOnline;
   final DateTime? lastActive;
-  final String? sexualOrientation;
 }
 
 /// Pre-computed candidate pool read from Firestore.

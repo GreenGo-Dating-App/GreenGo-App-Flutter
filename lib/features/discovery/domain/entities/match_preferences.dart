@@ -10,7 +10,6 @@ class MatchPreferences extends Equatable { // true = show only users in my netwo
     this.onlyVerified = false,
     this.onlyRecentlyActive = false,
     this.dealBreakers = const [],
-    this.preferredOrientations = const [],
     this.preferredCountries = const [],
     this.sortByDistance = false,
     this.onlyOnlineNow = false,
@@ -34,7 +33,6 @@ class MatchPreferences extends Equatable { // true = show only users in my netwo
       onlyVerified: false,
       onlyRecentlyActive: false,
       dealBreakers: const [],
-      preferredOrientations: const [],
       preferredCountries: const [],
       onlyOnlineNow: false,
       languageFilter: null,
@@ -62,10 +60,8 @@ class MatchPreferences extends Equatable { // true = show only users in my netwo
               ?.map((e) => e as String)
               .toList() ??
           const [],
-      preferredOrientations: (map['preferredOrientations'] as List<dynamic>?)
-              ?.map((e) => e as String)
-              .toList() ??
-          const [],
+      // `preferredOrientations` on old documents is ignored (filter removed,
+      // audit AS-06).
       preferredCountries: (map['preferredCountries'] as List<dynamic>?)
               ?.map((e) => e as String)
               .toList() ??
@@ -93,7 +89,6 @@ class MatchPreferences extends Equatable { // true = show only users in my netwo
   final bool onlyVerified;
   final bool onlyRecentlyActive;
   final List<String> dealBreakers;
-  final List<String> preferredOrientations; // empty = show all
   final List<String> preferredCountries; // empty = show all
   final bool sortByDistance; // true = sort closest first
   final bool onlyOnlineNow; // true = show only online users
@@ -116,7 +111,6 @@ class MatchPreferences extends Equatable { // true = show only users in my netwo
     bool? onlyVerified,
     bool? onlyRecentlyActive,
     List<String>? dealBreakers,
-    List<String>? preferredOrientations,
     List<String>? preferredCountries,
     bool? sortByDistance,
     bool? onlyOnlineNow,
@@ -139,7 +133,6 @@ class MatchPreferences extends Equatable { // true = show only users in my netwo
       onlyVerified: onlyVerified ?? this.onlyVerified,
       onlyRecentlyActive: onlyRecentlyActive ?? this.onlyRecentlyActive,
       dealBreakers: dealBreakers ?? this.dealBreakers,
-      preferredOrientations: preferredOrientations ?? this.preferredOrientations,
       preferredCountries: preferredCountries ?? this.preferredCountries,
       sortByDistance: sortByDistance ?? this.sortByDistance,
       onlyOnlineNow: onlyOnlineNow ?? this.onlyOnlineNow,
@@ -165,7 +158,6 @@ class MatchPreferences extends Equatable { // true = show only users in my netwo
       'onlyVerified': onlyVerified,
       'onlyRecentlyActive': onlyRecentlyActive,
       'dealBreakers': dealBreakers,
-      'preferredOrientations': preferredOrientations,
       'preferredCountries': preferredCountries,
       'sortByDistance': sortByDistance,
       'onlyOnlineNow': onlyOnlineNow,
@@ -190,7 +182,6 @@ class MatchPreferences extends Equatable { // true = show only users in my netwo
         onlyVerified,
         onlyRecentlyActive,
         dealBreakers,
-        preferredOrientations,
         preferredCountries,
         sortByDistance,
         onlyOnlineNow,

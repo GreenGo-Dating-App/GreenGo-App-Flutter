@@ -213,8 +213,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       '|${p.localGuidesOnly}'
       '|${p.showSupportUser}'
       '|${p.preferredInterests.join(',')}'
-      '|${p.dealBreakers.join(',')}'
-      '|${p.preferredOrientations.join(',')}';
+      '|${p.dealBreakers.join(',')}';
 
   /// [LastResultCache] key per preference set (stable FNV-1a of the hash, so
   /// it survives restarts - String.hashCode is not guaranteed to).
@@ -420,17 +419,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     var filteredCandidates = candidates.toList();
 
     if (!isCurrentUserPrivileged) {
-      // Apply sexual orientation filter
-      if (preferences.preferredOrientations.isNotEmpty) {
-        filteredCandidates = filteredCandidates.where((candidate) {
-          final orientation = candidate.profile.sexualOrientation;
-          if (orientation == null || orientation.isEmpty) return true;
-          if (!preferences.preferredOrientations.contains(orientation)) {
-            return false;
-          }
-          return true;
-        }).toList();
-      }
+      // (The sexual-orientation filter was removed: audit AS-06 / EU-02.)
 
       // Apply country filter — use effectiveLocation so traveler candidates show in correct country
       // When user has a country filter, profiles with unknown/empty country are excluded

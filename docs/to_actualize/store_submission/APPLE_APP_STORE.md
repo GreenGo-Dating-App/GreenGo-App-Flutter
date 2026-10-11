@@ -16,7 +16,7 @@ Bundle ID: `com.greengochat.greengochatapp` · Version `3.0.0` · Build `101` ·
 | **Primary category** | **Travel** |
 | **Secondary category** | **Education** |
 | **Content rights** | Confirm you own or are licensed for all content (events data from Geoapify/Viator/Ticketmaster — ensure attribution/licensing terms are met). |
-| **Age rating** | Complete the questionnaire (§7). Expect **17+** due to *Unrestricted Web Access* / user-generated content / frequent user communication. |
+| **Age rating** | **18+** (set with *Override to higher age rating* after the questionnaire, §7). GreenGo is adults-only by its Terms and age gate; never submit a lower rating. |
 
 ## 2. Version metadata (→ [Version] → App Store tab)
 | Field | Value / guidance |
@@ -90,9 +90,9 @@ Declare data collection accurately. Typical for GreenGo:
 | **Restore purchases** | — | Provide a working "Restore Purchases" control (required for subscriptions/non-consumables). |
 
 ## 7. Age rating questionnaire (→ App Information → Age Rating)
-Answer honestly. For GreenGo the drivers are:
-- **Unrestricted web access** (in-app links/browsers) → pushes to 17+ if present; disable if not needed.
-- **User-generated content / user communication** → declare it; this typically yields **17+** for social apps and requires the §9 safety controls.
+Answer honestly, then set the final rating to **18+** (*Override to higher age rating*): the Terms of Service and the in-app age gate restrict GreenGo to adults, and the store rating must match them (legal audit 2026-10). The questionnaire drivers are:
+- **Unrestricted web access** (in-app links/browsers) → declare it if present; disable if not needed.
+- **User-generated content / user communication** → declare it; it requires the §9 safety controls.
 - Gambling / contests / mature themes → **No** (unless you add them).
 
 ## 8. App Review Information (→ Version → App Review Information)
