@@ -40376,6 +40376,192 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Couldn\'t open a maps app'**
   String get locMapCouldNotOpen;
+
+  /// No description provided for @nciiEntryTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove an intimate image of me'**
+  String get nciiEntryTitle;
+
+  /// No description provided for @nciiEntrySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Intimate images shared without consent are hidden right away while we review'**
+  String get nciiEntrySubtitle;
+
+  /// No description provided for @nciiFormTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Intimate image removal'**
+  String get nciiFormTitle;
+
+  /// No description provided for @nciiFormIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'If an intimate image or video of you is on GreenGo without your consent, tell us where it is. We hide it immediately and decide within 2 hours (never later than 48 hours). Copies are blocked from being uploaded again.'**
+  String get nciiFormIntro;
+
+  /// No description provided for @nciiFormSectionYou.
+  ///
+  /// In en, this message translates to:
+  /// **'About you'**
+  String get nciiFormSectionYou;
+
+  /// No description provided for @nciiFormName.
+  ///
+  /// In en, this message translates to:
+  /// **'Full legal name'**
+  String get nciiFormName;
+
+  /// No description provided for @nciiFormEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get nciiFormEmail;
+
+  /// No description provided for @nciiFormPhone.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone (optional)'**
+  String get nciiFormPhone;
+
+  /// No description provided for @nciiFormRoleLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'You are'**
+  String get nciiFormRoleLabel;
+
+  /// No description provided for @nciiFormRoleDepicted.
+  ///
+  /// In en, this message translates to:
+  /// **'The person shown'**
+  String get nciiFormRoleDepicted;
+
+  /// No description provided for @nciiFormRoleAuthorized.
+  ///
+  /// In en, this message translates to:
+  /// **'Acting for them'**
+  String get nciiFormRoleAuthorized;
+
+  /// No description provided for @nciiFormRepresented.
+  ///
+  /// In en, this message translates to:
+  /// **'Name of the person shown'**
+  String get nciiFormRepresented;
+
+  /// No description provided for @nciiFormSectionContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Where is the content?'**
+  String get nciiFormSectionContent;
+
+  /// No description provided for @nciiFormLocations.
+  ///
+  /// In en, this message translates to:
+  /// **'Links or locations (one per line)'**
+  String get nciiFormLocations;
+
+  /// No description provided for @nciiFormLocationsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile link, photo link, or the chat where you saw it'**
+  String get nciiFormLocationsHint;
+
+  /// No description provided for @nciiFormPrefilled.
+  ///
+  /// In en, this message translates to:
+  /// **'The item you were viewing is already included.'**
+  String get nciiFormPrefilled;
+
+  /// No description provided for @nciiFormDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Anything else we should know (optional)'**
+  String get nciiFormDescription;
+
+  /// No description provided for @nciiFormSectionStatements.
+  ///
+  /// In en, this message translates to:
+  /// **'Statements'**
+  String get nciiFormSectionStatements;
+
+  /// No description provided for @nciiFormStatementDepicted.
+  ///
+  /// In en, this message translates to:
+  /// **'I am the person shown in this content, or I am authorized to act for them.'**
+  String get nciiFormStatementDepicted;
+
+  /// No description provided for @nciiFormStatementGoodFaith.
+  ///
+  /// In en, this message translates to:
+  /// **'I believe in good faith that this intimate content was published without consent.'**
+  String get nciiFormStatementGoodFaith;
+
+  /// No description provided for @nciiFormStatementAccurate.
+  ///
+  /// In en, this message translates to:
+  /// **'The information in this request is accurate.'**
+  String get nciiFormStatementAccurate;
+
+  /// No description provided for @nciiFormStatementsRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Please confirm all three statements.'**
+  String get nciiFormStatementsRequired;
+
+  /// No description provided for @nciiFormSignature.
+  ///
+  /// In en, this message translates to:
+  /// **'Signature (type your full name)'**
+  String get nciiFormSignature;
+
+  /// No description provided for @nciiFormSubmit.
+  ///
+  /// In en, this message translates to:
+  /// **'Send request'**
+  String get nciiFormSubmit;
+
+  /// No description provided for @nciiFormRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Required'**
+  String get nciiFormRequired;
+
+  /// No description provided for @nciiFormInvalidEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a valid email'**
+  String get nciiFormInvalidEmail;
+
+  /// No description provided for @nciiFormSubmitted.
+  ///
+  /// In en, this message translates to:
+  /// **'Request {reference} received. The content is hidden while we review it, and we will notify you of the decision.'**
+  String nciiFormSubmitted(String reference);
+
+  /// No description provided for @nciiFormError.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not send the request. Try again, or email info@greengochat.com.'**
+  String get nciiFormError;
+
+  /// No description provided for @nciiFormRateLimited.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many requests today. Email info@greengochat.com if this is urgent.'**
+  String get nciiFormRateLimited;
+
+  /// No description provided for @safetyReportReasonCsae.
+  ///
+  /// In en, this message translates to:
+  /// **'Child sexual abuse or exploitation'**
+  String get safetyReportReasonCsae;
+
+  /// No description provided for @safetyReportReasonNcii.
+  ///
+  /// In en, this message translates to:
+  /// **'Intimate image shared without consent'**
+  String get safetyReportReasonNcii;
 }
 
 class _AppLocalizationsDelegate

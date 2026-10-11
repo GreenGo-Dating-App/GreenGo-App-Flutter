@@ -5,6 +5,8 @@ import '../../../../core/utils/user_error.dart';
 import '../../../../core/di/injection_container.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/services/safety_actions_service.dart';
+import '../../data/services/safety_takedown_service.dart';
+import '../screens/ncii_request_screen.dart';
 
 /// Overflow (⋮) menu with Report and Block actions for a viewed user.
 ///
@@ -49,6 +51,8 @@ class SafetyActionsMenu extends StatelessWidget {
           _onReport(context);
         } else if (value == 'block') {
           _onBlock(context);
+        } else if (value == 'ncii') {
+          openNciiRequestForm(context, prefilledLocations: [nciiProfileLocation(reportedUserId)]);
         }
       },
       itemBuilder: (context) => [
@@ -79,6 +83,23 @@ class SafetyActionsMenu extends StatelessWidget {
             ],
           ),
         ),
+        PopupMenuItem<String>(
+          key: const ValueKey('safety-menu-ncii'),
+          value: 'ncii',
+          child: Row(
+            children: [
+              const Icon(Icons.no_photography_outlined,
+                  color: AppColors.textSecondary, size: 20),
+              const SizedBox(width: 12),
+              Flexible(
+                child: Text(
+                  l10n.nciiEntryTitle,
+                  style: const TextStyle(color: AppColors.textPrimary),
+                ),
+              ),
+            ],
+          ),
+        ),
       ],
     );
   }
@@ -102,6 +123,8 @@ class SafetyActionsMenu extends StatelessWidget {
       l10n.chatReportReasonInappropriate,
       l10n.chatReportReasonThreatening,
       l10n.chatReportReasonUnderage,
+      l10n.safetyReportReasonCsae,
+      l10n.safetyReportReasonNcii,
       l10n.chatReportReasonOther,
     ];
 

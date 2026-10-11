@@ -12671,5 +12671,43 @@
   "locMapCouldNotOpen": "Couldn't open a maps app",
   "@locMapCouldNotOpen": {
     "description": "Interactive location map control"
-  }
+  },
+  "nciiEntryTitle": "Remove an intimate image of me",
+  "nciiEntrySubtitle": "Intimate images shared without consent are hidden right away while we review",
+  "nciiFormTitle": "Intimate image removal",
+  "nciiFormIntro": "If an intimate image or video of you is on GreenGo without your consent, tell us where it is. We hide it immediately and decide within 2 hours (never later than 48 hours). Copies are blocked from being uploaded again.",
+  "nciiFormSectionYou": "About you",
+  "nciiFormName": "Full legal name",
+  "nciiFormEmail": "Email",
+  "nciiFormPhone": "Phone (optional)",
+  "nciiFormRoleLabel": "You are",
+  "nciiFormRoleDepicted": "The person shown",
+  "nciiFormRoleAuthorized": "Acting for them",
+  "nciiFormRepresented": "Name of the person shown",
+  "nciiFormSectionContent": "Where is the content?",
+  "nciiFormLocations": "Links or locations (one per line)",
+  "nciiFormLocationsHint": "Profile link, photo link, or the chat where you saw it",
+  "nciiFormPrefilled": "The item you were viewing is already included.",
+  "nciiFormDescription": "Anything else we should know (optional)",
+  "nciiFormSectionStatements": "Statements",
+  "nciiFormStatementDepicted": "I am the person shown in this content, or I am authorized to act for them.",
+  "nciiFormStatementGoodFaith": "I believe in good faith that this intimate content was published without consent.",
+  "nciiFormStatementAccurate": "The information in this request is accurate.",
+  "nciiFormStatementsRequired": "Please confirm all three statements.",
+  "nciiFormSignature": "Signature (type your full name)",
+  "nciiFormSubmit": "Send request",
+  "nciiFormRequired": "Required",
+  "nciiFormInvalidEmail": "Enter a valid email",
+  "nciiFormSubmitted": "Request {reference} received. The content is hidden while we review it, and we will notify you of the decision.",
+  "@nciiFormSubmitted": {
+    "placeholders": {
+      "reference": {
+        "type": "String"
+      }
+    }
+  },
+  "nciiFormError": "Could not send the request. Try again, or email info@greengochat.com.",
+  "nciiFormRateLimited": "Too many requests today. Email info@greengochat.com if this is urgent.",
+  "safetyReportReasonCsae": "Child sexual abuse or exploitation",
+  "safetyReportReasonNcii": "Intimate image shared without consent"
 }
