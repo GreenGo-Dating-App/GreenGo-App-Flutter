@@ -562,6 +562,83 @@ class PushNotificationService {
     }
   }
 
+  /// Sign-out: this device must stop receiving the old user's pushes.
+  ///
+  /// 1. Clears [currentUserId]/[activeConversationId] so a token refresh can
+  ///    no longer re-attach this device to the old account and a late
+  ///    notification tap cannot open their content.
+  /// 2. Removes this device's token from `users/{uid}` — only when the stored
+  ///    token IS this device's (single-field model: deleting someone else's
+  ///    device token would silence their other phone). Runs while the user is
+  ///    still authenticated.
+  /// 3. Deletes the FCM token itself, so even a stale server copy stops
+  ///    delivering (the server nulls invalid tokens on the next send).
+  /// 4. Cancels every shown local notification.
+  Future<void> signOutCleanup(String? uid) async {
+    currentUserId = null;
+    activeConversationId = null;
+
+    var hasToken = true;
+    if (kIsWeb) {
+      // On web getToken() would PROMPT for permission when it was never
+      // granted — and without a grant there is no token to remove anyway.
+      try {
+        final settings =
+            await FirebaseMessaging.instance.getNotificationSettings();
+        hasToken =
+            settings.authorizationStatus == AuthorizationStatus.authorized;
+      } catch (_) {
+        hasToken = false;
+      }
+    }
+
+    if (hasToken) {
+      String? deviceToken;
+      try {
+        if (kIsWeb) {
+          final vapid = await WebPushConfig.resolveVapidKey();
+          if (vapid != null && vapid.isNotEmpty) {
+            deviceToken =
+                await FirebaseMessaging.instance.getToken(vapidKey: vapid);
+          }
+        } else {
+          deviceToken = await FirebaseMessaging.instance.getToken();
+        }
+      } catch (e) {
+        debugPrint('[FCM] sign-out: getToken failed: $e');
+      }
+
+      if (uid != null && deviceToken != null && deviceToken.isNotEmpty) {
+        try {
+          final ref = FirebaseFirestore.instance.collection('users').doc(uid);
+          final snap = await ref.get();
+          if (snap.data()?['fcmToken'] == deviceToken) {
+            await ref.update({
+              'fcmToken': FieldValue.delete(),
+              'fcmTokenUpdatedAt': FieldValue.serverTimestamp(),
+            });
+          }
+        } catch (e) {
+          debugPrint('[FCM] sign-out: server token removal failed: $e');
+        }
+      }
+
+      try {
+        await FirebaseMessaging.instance.deleteToken();
+      } catch (e) {
+        debugPrint('[FCM] sign-out: deleteToken failed: $e');
+      }
+    }
+
+    if (!kIsWeb) {
+      try {
+        await _localNotifications.cancelAll();
+      } catch (e) {
+        debugPrint('[FCM] sign-out: cancelAll failed: $e');
+      }
+    }
+  }
+
   /// Write the token to the document the push senders read from.
   void _persistToken(String userId, String token) {
     final tokenData = {

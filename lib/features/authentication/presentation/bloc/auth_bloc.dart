@@ -1,8 +1,12 @@
+import 'dart:async';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 // Conditional import - uncomment when AppConfig.enableBiometricAuth = true
 // import 'package:local_auth/local_auth.dart';
 import '../../../../core/config/app_config.dart';
 import '../../../../core/services/access_control_service.dart';
+import '../../../../core/services/sign_out_coordinator.dart';
 import '../../domain/repositories/auth_repository.dart';
 import 'auth_event.dart';
 import 'auth_state.dart';
@@ -13,7 +17,9 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     required this.repository,
     this.localAuth,
     AccessControlService? accessControlService,
+    SignOutCoordinator? signOutCoordinator,
   }) : _accessControlService = accessControlService ?? AccessControlService(),
+       _signOut = signOutCoordinator ?? SignOutCoordinator.instance,
        super(const AuthInitial()) {
     on<AuthCheckRequested>(_onAuthCheckRequested);
     on<AuthSignInWithEmailRequested>(_onSignInWithEmailRequested);
@@ -39,12 +45,34 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
   final AuthRepository repository;
   final dynamic localAuth; // Will be LocalAuthentication when biometric is enabled
   final AccessControlService _accessControlService;
+  final SignOutCoordinator _signOut;
   late final dynamic _authSubscription;
+
+  /// The background sign-out job, if one is running (instant logout).
+  Future<void>? get pendingSignOut => _signOut.pending;
+
+  /// Every sign-in path awaits this first: a fast re-login must neither race
+  /// the previous session's teardown nor be signed out by its late
+  /// `signOut()`.
+  Future<void> _awaitPendingSignOut() => _signOut.waitForPendingSignOut();
+
+  /// While the old user's background sign-out runs, Firebase still reports
+  /// that user as signed in. Such reads must not put them back on screen.
+  bool _isStaleUser(dynamic user) {
+    if (!_signOut.isSigningOut || user == null) return false;
+    final uid = _signOut.signingOutUid;
+    try {
+      return uid == null || (user as dynamic).uid == uid;
+    } catch (_) {
+      return true;
+    }
+  }
 
   Future<void> _onAuthStateChanged(
     _AuthStateChanged event,
     Emitter<AuthState> emit,
   ) async {
+    if (_isStaleUser(event.user)) return; // old session being torn down
     if (event.user != null) {
       // Reload countdown dates from Firestore on every auth restore
       AccessControlService.loadCountdownDatesFromFirestore();
@@ -72,7 +100,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     final result = await repository.getCurrentUser();
     result.fold(
       (failure) => emit(const AuthUnauthenticated()),
-      (user) => user != null
+      (user) => user != null && !_isStaleUser(user)
           ? emit(AuthAuthenticated(user))
           : emit(const AuthUnauthenticated()),
     );
@@ -83,6 +111,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     Emitter<AuthState> emit,
   ) async {
     emit(const AuthLoading());
+    await _awaitPendingSignOut();
     final result = await repository.signInWithEmail(
       email: event.email,
       password: event.password,
@@ -112,6 +141,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     Emitter<AuthState> emit,
   ) async {
     emit(const AuthLoading());
+    await _awaitPendingSignOut();
     final result = await repository.registerWithEmail(
       email: event.email,
       password: event.password,
@@ -151,6 +181,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     }
 
     emit(const AuthLoading());
+    await _awaitPendingSignOut();
     final result = await repository.signInWithGoogle();
     result.fold(
       (failure) => emit(AuthError(failure.message)),
@@ -185,6 +216,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     }
 
     emit(const AuthLoading());
+    await _awaitPendingSignOut();
     final result = await repository.signInWithFacebook();
     result.fold(
       (failure) => emit(AuthError(failure.message)),
@@ -200,6 +232,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     Emitter<AuthState> emit,
   ) async {
     emit(const AuthLoading());
+    await _awaitPendingSignOut();
     emit(AuthError('Phone sign-in is not yet available'));
   }
 
@@ -208,15 +241,44 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     Emitter<AuthState> emit,
   ) async {
     emit(const AuthLoading());
+    await _awaitPendingSignOut();
     // Phone verification will be implemented in the data source
     emit(AuthError('Phone verification not yet implemented'));
   }
 
+  /// Instant logout: the UI goes to the login page NOW; ending the user's
+  /// activities (listeners, presence, push token, media, local data) and the
+  /// Firebase/social sign-out run in the background via [SignOutCoordinator].
+  /// Background failures are logged, never shown — the user asked to leave.
   Future<void> _onSignOutRequested(
     AuthSignOutRequested event,
     Emitter<AuthState> emit,
   ) async {
-    await repository.signOut();
+    final current = state;
+    String? uid;
+    if (current is AuthAuthenticated) {
+      uid = current.user.uid;
+    } else if (current is AuthWaitingForAccess) {
+      uid = current.user.uid;
+    } else {
+      try {
+        final result = await repository.getCurrentUser();
+        uid = result.fold((_) => null, (u) => u?.uid);
+      } catch (_) {}
+    }
+
+    // Start the job BEFORE emitting so listeners reacting to
+    // AuthUnauthenticated already see `isSigningOut`.
+    unawaited(_signOut.start(
+      uid: uid,
+      finalSignOut: () async {
+        final result = await repository.signOut();
+        result.fold((failure) => throw Exception(failure.message), (_) {});
+      },
+    ).catchError((Object e) {
+      debugPrint('[AuthBloc] background sign-out error (ignored): $e');
+    }));
+
     emit(const AuthUnauthenticated());
   }
 
@@ -309,8 +371,10 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     AuthCheckAccessStatusRequested event,
     Emitter<AuthState> emit,
   ) async {
+    if (_signOut.isSigningOut) return; // old session is being torn down
     final result = await repository.getCurrentUser();
     final user = result.fold((_) => null, (u) => u);
+    if (_isStaleUser(user)) return;
     if (user == null) {
       // Failure: keep whatever is on screen. Genuinely signed out: say so
       // (idempotent with the auth stream).

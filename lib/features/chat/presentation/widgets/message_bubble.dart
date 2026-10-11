@@ -85,6 +85,13 @@ class MessageBubble extends StatefulWidget {
 
   @override
   State<MessageBubble> createState() => _MessageBubbleState();
+
+  /// Stops the shared TTS player (sign-out: no audio may outlive the user).
+  /// No-op if nothing was ever played, so it never creates the player.
+  static Future<void> stopSharedPlayback() async {
+    if (!_MessageBubbleState._playerUsed) return;
+    await _MessageBubbleState._audioPlayer.stop();
+  }
 }
 
 class _MessageBubbleState extends State<MessageBubble> {
@@ -92,6 +99,7 @@ class _MessageBubbleState extends State<MessageBubble> {
   bool _isTtsLoading = false;
   bool _isTtsPlaying = false;
   static final AudioPlayer _audioPlayer = AudioPlayer();
+  static bool _playerUsed = false;
 
   // Learning enhancement state
   String? _difficultyLevel;
@@ -445,6 +453,7 @@ class _MessageBubbleState extends State<MessageBubble> {
           if (mounted) setState(() => _isTtsPlaying = false);
         });
 
+        _playerUsed = true;
         await _audioPlayer.setVolume(1.0);
         await _audioPlayer.play(source);
       } else {
