@@ -40,7 +40,7 @@ export const REWARD_COINS = {
   month_streak: 200,
   first_message: 25,
   photo_verification: 75,
-  refer_friend: 100,
+  refer_friend: 50, // display only: refused below, paid by redeemReferral (referralRules.ts)
 } as const;
 
 export type RewardId = keyof typeof REWARD_COINS;

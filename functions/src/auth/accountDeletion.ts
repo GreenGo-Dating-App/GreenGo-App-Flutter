@@ -174,7 +174,7 @@ export const ACCOUNT_DATA_INVENTORY: InventoryEntry[] = [
   // --- Documents keyed by uid (subcollections included) -------------------
   ...docs(true,
     'user_interactions', 'user_vectors', 'match_preferences', 'interaction_matrix',
-    'referrals', 'referral_redemptions', 'signup_grants', 'user_passports',
+    'referrals', 'referral_redemptions', 'referral_stats', 'signup_grants', 'user_passports',
     'email_preferences', 'user_levels', 'userLevels', 'user_group_tags', 'user_people_tags',
     'user_group_inbox', 'user_favorite_communities', 'userSettings', 'user_settings',
     'notification_preferences', 'notification_settings', 'user_presence', 'age_verification_queue',

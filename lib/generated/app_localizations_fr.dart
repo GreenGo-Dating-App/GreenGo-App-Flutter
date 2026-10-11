@@ -11716,7 +11716,7 @@ class AppLocalizationsFr extends AppLocalizations {
         intl.NumberFormat.decimalPattern(localeName);
     final String monthlyCapString = monthlyCapNumberFormat.format(monthlyCap);
 
-    return 'Partage ton code — quand un ami s\'inscrit avec, tu gagnes $coinsString pièces (jusqu\'à $monthlyCapString par mois) et il reçoit 1 mois de Platinum.';
+    return 'Partage ton code. Quand un ami s\'inscrit avec, il reçoit 1 semaine d\'abonnement Base et tu gagnes $coinsString pièces (jusqu\'à $monthlyCapString par mois), plus des récompenses d\'abonnement à 5, 10 et 20 amis.';
   }
 
   @override
@@ -23987,4 +23987,115 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get legalUpdateDisagreeHint =>
       'Si vous n\'êtes pas d\'accord, vous pouvez vous déconnecter. Vous pouvez aussi supprimer votre compte à tout moment.';
+
+  @override
+  String get referralRuleFriendGets =>
+      'Ton ami reçoit 1 semaine d\'abonnement Base';
+
+  @override
+  String referralRuleYouGet(int coins, int monthlyCap) {
+    final intl.NumberFormat coinsNumberFormat =
+        intl.NumberFormat.decimalPattern(localeName);
+    final String coinsString = coinsNumberFormat.format(coins);
+    final intl.NumberFormat monthlyCapNumberFormat =
+        intl.NumberFormat.decimalPattern(localeName);
+    final String monthlyCapString = monthlyCapNumberFormat.format(monthlyCap);
+
+    return 'Tu reçois $coinsString pièces par ami qui s\'inscrit (jusqu\'à $monthlyCapString pièces par mois)';
+  }
+
+  @override
+  String get referralRuleAlwaysCounts =>
+      'Chaque ami qui s\'inscrit compte pour tes paliers, même après avoir atteint la limite mensuelle de pièces.';
+
+  @override
+  String get referralMilestonesTitle => 'Paliers';
+
+  @override
+  String referralMilestoneFriends(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count amis',
+      one: '1 ami',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String referralMilestoneReward(String tier) {
+    return '1 mois de $tier';
+  }
+
+  @override
+  String referralFriendsJoined(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count amis inscrits',
+      one: '1 ami inscrit',
+      zero: 'Aucun ami inscrit pour l\'instant',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String referralMoreToTier(int remaining, String tier) {
+    String _temp0 = intl.Intl.pluralLogic(
+      remaining,
+      locale: localeName,
+      other: 'Encore $remaining pour $tier',
+      one: 'Encore 1 pour $tier',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralAllMilestonesUnlocked =>
+      'Tous les paliers sont débloqués. Merci d\'avoir invité tes amis !';
+
+  @override
+  String get referralMilestoneUnlocked => 'Débloqué';
+
+  @override
+  String get srvReferralFriendJoinedTitle => 'Un ami a rejoint GreenGo';
+
+  @override
+  String srvReferralCoinsBody(int amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      amount,
+      locale: localeName,
+      other: 'Tu as gagné $amount pièces pour avoir invité un ami.',
+      one: 'Tu as gagné 1 pièce pour avoir invité un ami.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvReferralCapReachedBody(int cap) {
+    return 'Tu as atteint la limite de $cap pièces de parrainage ce mois-ci, mais cet ami compte quand même pour tes paliers.';
+  }
+
+  @override
+  String get srvReferralMilestoneTitle => 'Palier débloqué !';
+
+  @override
+  String srvReferralMilestoneBody(int count, String tier) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count amis se sont inscrits avec ton code : tu reçois 1 mois d\'abonnement $tier.',
+      one:
+          '1 ami s\'est inscrit avec ton code : tu reçois 1 mois d\'abonnement $tier.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get srvReferralWelcomeTitle => 'Bienvenue sur GreenGo !';
+
+  @override
+  String get srvReferralWelcomeBody =>
+      'Grâce à l\'invitation de ton ami, tu reçois 1 semaine d\'abonnement Base.';
 }

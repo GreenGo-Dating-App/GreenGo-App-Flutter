@@ -111,7 +111,9 @@ export async function grantBaseMembership(
   durationMs: number,
   // 'admin_grant' is the v4.0.0 replacement for coupon redemption: an admin
   // gives the entitlement directly, with nothing for the user to redeem.
-  source: 'purchase' | 'coupon' | 'admin_grant' = 'purchase',
+  // 'referral': the 1-week Base an invited friend gets (referral/redeemReferral.ts).
+  // Like a coupon, it does not consume the store's introductory offer.
+  source: 'purchase' | 'coupon' | 'admin_grant' | 'referral' = 'purchase',
 ): Promise<{ newEndDate: Date; newEndTimestamp: admin.firestore.Timestamp }> {
   const profileSnap = await db.collection('profiles').doc(uid).get();
   const profileData = profileSnap.data() || {};

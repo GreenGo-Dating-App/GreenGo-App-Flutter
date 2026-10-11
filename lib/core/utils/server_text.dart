@@ -504,6 +504,20 @@ String? serverText(
       return l10n.srvPaymentFailedTitle;
     case 'srvPaymentsWaitingCount':
       return l10n.srvPaymentsWaitingCount(_int(p['count']));
+    case 'srvReferralCapReachedBody':
+      return l10n.srvReferralCapReachedBody(_int(p['cap']));
+    case 'srvReferralCoinsBody':
+      return l10n.srvReferralCoinsBody(_int(p['amount']));
+    case 'srvReferralFriendJoinedTitle':
+      return l10n.srvReferralFriendJoinedTitle;
+    case 'srvReferralMilestoneBody':
+      return l10n.srvReferralMilestoneBody(_int(p['count']), _str(p['tier']));
+    case 'srvReferralMilestoneTitle':
+      return l10n.srvReferralMilestoneTitle;
+    case 'srvReferralWelcomeBody':
+      return l10n.srvReferralWelcomeBody;
+    case 'srvReferralWelcomeTitle':
+      return l10n.srvReferralWelcomeTitle;
     case 'srvRepliedToYourReview':
       return l10n.srvRepliedToYourReview;
     case 'srvReportReviewedActionTaken':

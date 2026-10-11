@@ -11525,7 +11525,7 @@ class AppLocalizationsEn extends AppLocalizations {
         intl.NumberFormat.decimalPattern(localeName);
     final String monthlyCapString = monthlyCapNumberFormat.format(monthlyCap);
 
-    return 'Share your code — when a friend joins with it, you earn $coinsString coins (up to $monthlyCapString a month) and they get 1 month of Platinum.';
+    return 'Share your code. When a friend joins with it, they get 1 week of Base membership and you earn $coinsString coins (up to $monthlyCapString a month), plus membership rewards at 5, 10 and 20 friends.';
   }
 
   @override
@@ -23622,4 +23622,115 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get legalUpdateDisagreeHint =>
       'If you don\'t agree, you can sign out. You can also delete your account at any time.';
+
+  @override
+  String get referralRuleFriendGets =>
+      'Your friend gets 1 week of Base membership';
+
+  @override
+  String referralRuleYouGet(int coins, int monthlyCap) {
+    final intl.NumberFormat coinsNumberFormat =
+        intl.NumberFormat.decimalPattern(localeName);
+    final String coinsString = coinsNumberFormat.format(coins);
+    final intl.NumberFormat monthlyCapNumberFormat =
+        intl.NumberFormat.decimalPattern(localeName);
+    final String monthlyCapString = monthlyCapNumberFormat.format(monthlyCap);
+
+    return 'You get $coinsString coins per friend who joins (up to $monthlyCapString coins a month)';
+  }
+
+  @override
+  String get referralRuleAlwaysCounts =>
+      'Every friend who joins counts toward your milestones, even after you reach the monthly coin limit.';
+
+  @override
+  String get referralMilestonesTitle => 'Milestones';
+
+  @override
+  String referralMilestoneFriends(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count friends',
+      one: '1 friend',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String referralMilestoneReward(String tier) {
+    return '1 month of $tier';
+  }
+
+  @override
+  String referralFriendsJoined(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count friends joined',
+      one: '1 friend joined',
+      zero: 'No friends have joined yet',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String referralMoreToTier(int remaining, String tier) {
+    String _temp0 = intl.Intl.pluralLogic(
+      remaining,
+      locale: localeName,
+      other: '$remaining more to $tier',
+      one: '1 more to $tier',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralAllMilestonesUnlocked =>
+      'All milestones unlocked. Thank you for inviting your friends!';
+
+  @override
+  String get referralMilestoneUnlocked => 'Unlocked';
+
+  @override
+  String get srvReferralFriendJoinedTitle => 'A friend joined GreenGo';
+
+  @override
+  String srvReferralCoinsBody(int amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      amount,
+      locale: localeName,
+      other: 'You earned $amount coins for inviting a friend.',
+      one: 'You earned 1 coin for inviting a friend.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvReferralCapReachedBody(int cap) {
+    return 'You\'ve reached this month\'s limit of $cap referral coins, but this friend still counts toward your milestones.';
+  }
+
+  @override
+  String get srvReferralMilestoneTitle => 'Milestone unlocked!';
+
+  @override
+  String srvReferralMilestoneBody(int count, String tier) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count friends joined with your code: you get 1 month of $tier membership.',
+      one:
+          '1 friend joined with your code: you get 1 month of $tier membership.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get srvReferralWelcomeTitle => 'Welcome to GreenGo!';
+
+  @override
+  String get srvReferralWelcomeBody =>
+      'Thanks to your friend\'s invitation, you get 1 week of Base membership.';
 }
