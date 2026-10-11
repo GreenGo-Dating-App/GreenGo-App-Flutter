@@ -24318,4 +24318,19 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get membershipBenefitJoinEvents =>
       'Partecipare agli eventi e prenotare esperienze';
+
+  @override
+  String get tierPaymentLinksRow => 'Link di pagamento sul tuo profilo';
+
+  @override
+  String get paymentLinksTierLocked =>
+      'Disponibile con Silver, Gold o Platinum';
+
+  @override
+  String get paymentLinksTierLockedBody =>
+      'I tuoi metodi di pagamento salvati sono nascosti dal tuo profilo. Passa a Silver, Gold o Platinum per mostrarli di nuovo.';
+
+  @override
+  String get paymentLinksTierUpsellBody =>
+      'Fatti pagare direttamente con Pix, PayPal e altro. Passa a Silver, Gold o Platinum per aggiungere metodi di pagamento al tuo profilo.';
 }

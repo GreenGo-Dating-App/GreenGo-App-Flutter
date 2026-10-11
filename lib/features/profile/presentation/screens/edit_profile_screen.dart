@@ -82,6 +82,7 @@ import 'usage_stats_screen.dart';
 import '../../../../core/widgets/boost_celebration.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../settings/presentation/screens/privacy_data_settings_screen.dart';
+import '../widgets/payment_links_settings_entry.dart';
 
 class EditProfileScreen extends StatelessWidget {
 
@@ -513,25 +514,20 @@ class EditProfileScreen extends StatelessWidget {
                       // (recorded server-side; the AI callables enforce it).
                       const SizedBox(height: 16),
                       const AiServicesSettingsCard(),
-                      // Money. Active business accounts get the full "Get
-                      // paid" page (Stripe / Mercado Pago, payment methods,
-                      // payments to confirm) in the Business hub, NOT here.
-                      // Everyone else keeps their own payment methods
-                      // (person-to-person) reachable here.
-                      if (!isBusinessActive) ...[
-                        const SizedBox(height: 16),
-                        EditSectionCard(
-                          key: const ValueKey('account-settings-payment-methods'),
-                          title: AppLocalizations.of(context)!.paymentLinksTitle,
-                          subtitle: AppLocalizations.of(context)!
-                              .paymentMethodsSettingsSubtitle,
-                          icon: Icons.account_balance_wallet_outlined,
-                          onTap: () => Navigator.of(context).push(
-                              GetPaidScreen.route(activeProfile.userId,
-                                  profileBloc: context.read<ProfileBloc>(),
-                                  paymentMethodsOnly: true)),
-                        ),
-                      ],
+                      // Money (owner rule 2026-10-12): personal payment
+                      // links live HERE for Silver, Gold and Platinum
+                      // (business accounts included; their automatic Stripe /
+                      // Mercado Pago payouts stay in Business > Get paid).
+                      // Visible only with such a tier; after a lapse the
+                      // owner still sees an entry (greyed links + upgrade)
+                      // while saved links are waiting in their private doc.
+                      PaymentLinksSettingsEntry(
+                        profile: activeProfile,
+                        onOpen: () => Navigator.of(context).push(
+                            GetPaidScreen.route(activeProfile.userId,
+                                profileBloc: context.read<ProfileBloc>(),
+                                paymentMethodsOnly: true)),
+                      ),
                     ],
                   ),
 

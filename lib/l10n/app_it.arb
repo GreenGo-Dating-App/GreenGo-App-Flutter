@@ -7444,5 +7444,9 @@
   "participationBaseRequiredBody": "Per partecipare agli eventi e prenotare esperienze ti serve un abbonamento base (oppure Silver, Gold o Platinum).",
   "participationBaseRequiredCta": "Attiva l'abbonamento base",
   "participationBaseRequiredHint": "Richiede l'abbonamento base",
-  "membershipBenefitJoinEvents": "Partecipare agli eventi e prenotare esperienze"
+  "membershipBenefitJoinEvents": "Partecipare agli eventi e prenotare esperienze",
+  "tierPaymentLinksRow": "Link di pagamento sul tuo profilo",
+  "paymentLinksTierLocked": "Disponibile con Silver, Gold o Platinum",
+  "paymentLinksTierLockedBody": "I tuoi metodi di pagamento salvati sono nascosti dal tuo profilo. Passa a Silver, Gold o Platinum per mostrarli di nuovo.",
+  "paymentLinksTierUpsellBody": "Fatti pagare direttamente con Pix, PayPal e altro. Passa a Silver, Gold o Platinum per aggiungere metodi di pagamento al tuo profilo."
 }

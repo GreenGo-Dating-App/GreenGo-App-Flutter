@@ -24059,4 +24059,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get membershipBenefitJoinEvents => 'Join events and book experiences';
+
+  @override
+  String get tierPaymentLinksRow => 'Payment links on your profile';
+
+  @override
+  String get paymentLinksTierLocked =>
+      'Available with Silver, Gold or Platinum';
+
+  @override
+  String get paymentLinksTierLockedBody =>
+      'Your saved payment methods are hidden from your profile. Upgrade to Silver, Gold or Platinum to show them again.';
+
+  @override
+  String get paymentLinksTierUpsellBody =>
+      'Let people pay you directly with Pix, PayPal and more. Upgrade to Silver, Gold or Platinum to add payment methods to your profile.';
 }

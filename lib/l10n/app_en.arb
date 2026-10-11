@@ -13348,5 +13348,21 @@
   "membershipBenefitJoinEvents": "Join events and book experiences",
   "@membershipBenefitJoinEvents": {
     "description": "Membership benefit (Base and every tier above): joining events and booking experiences"
+  },
+  "tierPaymentLinksRow": "Payment links on your profile",
+  "@tierPaymentLinksRow": {
+    "description": "Membership comparison table row: personal payment links (Silver, Gold, Platinum)"
+  },
+  "paymentLinksTierLocked": "Available with Silver, Gold or Platinum",
+  "@paymentLinksTierLocked": {
+    "description": "Payment methods locked for tiers below Silver: short label / subtitle"
+  },
+  "paymentLinksTierLockedBody": "Your saved payment methods are hidden from your profile. Upgrade to Silver, Gold or Platinum to show them again.",
+  "@paymentLinksTierLockedBody": {
+    "description": "Payment methods locked: the owner has saved links that are hidden because the tier lapsed"
+  },
+  "paymentLinksTierUpsellBody": "Let people pay you directly with Pix, PayPal and more. Upgrade to Silver, Gold or Platinum to add payment methods to your profile.",
+  "@paymentLinksTierUpsellBody": {
+    "description": "Payment methods locked: no saved links, upgrade invitation"
   }
 }

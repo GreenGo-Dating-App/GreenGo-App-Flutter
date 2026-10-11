@@ -24263,6 +24263,21 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get membershipBenefitJoinEvents =>
       'Participar em eventos e reservar experiências';
+
+  @override
+  String get tierPaymentLinksRow => 'Links de pagamento no teu perfil';
+
+  @override
+  String get paymentLinksTierLocked =>
+      'Disponível com Silver, Gold ou Platinum';
+
+  @override
+  String get paymentLinksTierLockedBody =>
+      'As tuas formas de pagamento guardadas estão ocultas no teu perfil. Faz upgrade para Silver, Gold ou Platinum para as mostrar de novo.';
+
+  @override
+  String get paymentLinksTierUpsellBody =>
+      'Deixa que te paguem diretamente com Pix, PayPal e mais. Faz upgrade para Silver, Gold ou Platinum para adicionar formas de pagamento ao teu perfil.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -48536,4 +48551,19 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get membershipBenefitJoinEvents =>
       'Participar de eventos e reservar experiências';
+
+  @override
+  String get tierPaymentLinksRow => 'Links de pagamento no seu perfil';
+
+  @override
+  String get paymentLinksTierLocked =>
+      'Disponível com Silver, Gold ou Platinum';
+
+  @override
+  String get paymentLinksTierLockedBody =>
+      'Suas formas de pagamento salvas estão ocultas no seu perfil. Faça upgrade para Silver, Gold ou Platinum para mostrá-las de novo.';
+
+  @override
+  String get paymentLinksTierUpsellBody =>
+      'Deixe as pessoas pagarem você direto com Pix, PayPal e mais. Faça upgrade para Silver, Gold ou Platinum para adicionar formas de pagamento ao seu perfil.';
 }

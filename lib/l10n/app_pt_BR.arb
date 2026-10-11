@@ -7444,5 +7444,9 @@
   "participationBaseRequiredBody": "Para participar de eventos e reservar experiências você precisa de uma assinatura Base (ou Silver, Gold ou Platinum).",
   "participationBaseRequiredCta": "Assinar a Base",
   "participationBaseRequiredHint": "Requer assinatura Base",
-  "membershipBenefitJoinEvents": "Participar de eventos e reservar experiências"
+  "membershipBenefitJoinEvents": "Participar de eventos e reservar experiências",
+  "tierPaymentLinksRow": "Links de pagamento no seu perfil",
+  "paymentLinksTierLocked": "Disponível com Silver, Gold ou Platinum",
+  "paymentLinksTierLockedBody": "Suas formas de pagamento salvas estão ocultas no seu perfil. Faça upgrade para Silver, Gold ou Platinum para mostrá-las de novo.",
+  "paymentLinksTierUpsellBody": "Deixe as pessoas pagarem você direto com Pix, PayPal e mais. Faça upgrade para Silver, Gold ou Platinum para adicionar formas de pagamento ao seu perfil."
 }
