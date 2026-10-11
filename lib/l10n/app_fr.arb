@@ -6669,5 +6669,11 @@
   "participantsEmailRateLimited": "Vous venez de la demander. Réessayez dans quelques minutes.",
   "participantsEmailFailed": "Impossible d’envoyer la liste des participants. Réessayez plus tard.",
   "participantsEmailNoEmail": "Votre compte n’a pas d’adresse e-mail pour recevoir la liste.",
-  "checkoutOrganizerShareNotice": "Votre nom et votre e-mail seront communiqués à l’organisateur pour l’entrée."
+  "checkoutOrganizerShareNotice": "Votre nom et votre e-mail seront communiqués à l’organisateur pour l’entrée.",
+  "aiConsentTitleV2": "Les fonctions d'IA utilisent des services de Google et d'Anthropic",
+  "aiConsentIntroV2": "Les réponses suggérées, le coach linguistique IA, la traduction des messages que vous recevez, la lecture à voix haute et les réponses automatiques de l'assistant d'assistance ne fonctionnent que si GreenGo envoie le texte concerné à ces fournisseurs.",
+  "aiConsentProvidersV2": "Qui : Google Gemini (suggestions et coaching), Google Cloud Text-to-Speech (audio), Google Cloud Translation (traductions) et Anthropic Claude (réponses automatiques de l'assistant d'assistance).",
+  "aiConsentWhatSentV2": "Ce qui est envoyé : uniquement le texte du message sur lequel vous utilisez la fonction (y compris les messages que d'autres personnes vous ont envoyés et les messages que vous écrivez à l'assistance) et les langues. Jamais votre nom, vos photos ni votre profil.",
+  "aiConsentDisabledNoticeV2": "Cette fonction est désactivée car vous avez choisi de ne pas envoyer de texte à des services d'IA.",
+  "aiServicesSubtitleOnV2": "Activé : les fonctions d'IA peuvent envoyer à Google et Anthropic le texte sur lequel vous les utilisez."
 }

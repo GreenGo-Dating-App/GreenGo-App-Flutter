@@ -113,8 +113,8 @@ const callV1 = (fn: any, data: any, uid?: string) =>
   (fft.wrap(fn) as any)(data, { auth: uid ? { uid, token: { email: `${uid}@example.com` } } : undefined, rawRequest: {} });
 
 /** What the app's "AI services" switch sends (AiConsentService -> recordConsent). */
-const setAiServices = (uid: string, on: boolean) =>
-  callV2(gw().recordConsent, { type: 'ai_processing', version: 1, accepted: on, locale: 'en', platform: 'web' }, uid);
+const setAiServices = (uid: string, on: boolean, version = 1) =>
+  callV2(gw().recordConsent, { type: 'ai_processing', version, accepted: on, locale: 'en', platform: 'web' }, uid);
 
 const AI_OFF = { code: 'permission-denied', details: { code: 'AI_CONSENT_REQUIRED' } };
 
@@ -240,8 +240,8 @@ describe('support assistant follows the switch', () => {
     expect(logs.docs.map((d) => d.data().status)).toEqual(['ai_consent_withdrawn']);
   });
 
-  test('ON: the assistant answers', async () => {
-    await setAiServices('u1', true);
+  test('ON (v2 notice, names Anthropic): the assistant answers', async () => {
+    await setAiServices('u1', true, 2);
     await fire('a', msg);
     expect(calls('api.anthropic.com')).toHaveLength(1);
     const replies = await db.collection('support_messages').where('senderId', '==', 'ai-agent').get();

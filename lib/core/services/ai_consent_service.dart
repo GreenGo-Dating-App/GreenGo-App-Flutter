@@ -8,8 +8,10 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// The user's decision about sending content to third-party AI services
-/// (Google Gemini, Cloud Text-to-Speech, Cloud Translation): Apple 5.1.2(i),
-/// EU AI Act art. 50, audit H-17.
+/// (Google Gemini, Cloud Text-to-Speech, Cloud Translation; Anthropic Claude
+/// for the support assistant): Apple 5.1.2(i), EU AI Act art. 50, audit H-17.
+/// Version 2 (legal audit 2026-10) added Anthropic to the notice; the support
+/// assistant requires a version-2 acceptance on the server.
 enum AiConsentStatus { unknown, granted, declined }
 
 /// Where the decision is kept on this device (per user).
@@ -91,7 +93,9 @@ class AiConsentService {
   static AiConsentService instance = AiConsentService();
 
   /// Bump when the consent text changes materially: everyone is asked again.
-  static const int currentVersion = 1;
+  /// 2: Anthropic (support assistant) named in the notice (legal audit
+  /// 2026-10). Everyone who accepted version 1 is asked again.
+  static const int currentVersion = 2;
 
   final AiConsentStore _store;
   final AiConsentRecorder _recorder;

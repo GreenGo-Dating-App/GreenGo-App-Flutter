@@ -12550,5 +12550,29 @@
   "participantsEmailRateLimited": "You just requested it. Try again in a few minutes.",
   "participantsEmailFailed": "Couldn’t send the participants list. Please try again later.",
   "participantsEmailNoEmail": "Your account has no email address to send the list to.",
-  "checkoutOrganizerShareNotice": "Your name and email will be shared with the organizer for entry."
+  "checkoutOrganizerShareNotice": "Your name and email will be shared with the organizer for entry.",
+  "aiConsentTitleV2": "AI features use Google and Anthropic services",
+  "@aiConsentTitleV2": {
+    "description": "AI consent sheet title (v2: names Google and Anthropic)"
+  },
+  "aiConsentIntroV2": "Smart replies, the AI language coach, translating messages you receive, read-aloud audio and the support assistant's automatic replies only work if GreenGo sends the text involved to these providers.",
+  "@aiConsentIntroV2": {
+    "description": "AI consent sheet intro (v2)"
+  },
+  "aiConsentProvidersV2": "Who: Google Gemini (suggestions and coaching), Google Cloud Text-to-Speech (audio), Google Cloud Translation (translations) and Anthropic Claude (automatic replies from the support assistant).",
+  "@aiConsentProvidersV2": {
+    "description": "AI consent sheet: named providers (v2, includes Anthropic)"
+  },
+  "aiConsentWhatSentV2": "What is sent: only the text of the message you use the feature on (including messages other people sent you, and the messages you write to support) and the languages. Never your name, photos or profile.",
+  "@aiConsentWhatSentV2": {
+    "description": "AI consent sheet: what is sent (v2)"
+  },
+  "aiConsentDisabledNoticeV2": "This feature is off because you chose not to send text to AI services.",
+  "@aiConsentDisabledNoticeV2": {
+    "description": "Snackbar when an AI feature is used while AI consent is declined (v2)"
+  },
+  "aiServicesSubtitleOnV2": "On: AI features may send the text you use them on to Google and Anthropic.",
+  "@aiServicesSubtitleOnV2": {
+    "description": "AI services switch subtitle when on (v2)"
+  }
 }

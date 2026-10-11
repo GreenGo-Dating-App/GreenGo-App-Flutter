@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:cloud_functions/cloud_functions.dart';
+import 'package:flutter/foundation.dart' show visibleForTesting;
 import 'package:http/http.dart' as http;
 
 import '../../features/profile/data/models/profile_model.dart'
@@ -11,10 +13,15 @@ import '../../features/profile/domain/entities/location.dart';
 /// The `geocoding` plugin declares only `android` and `ios` platforms, so
 /// `placemarkFromCoordinates` throws `MissingPluginException` on web — even when
 /// the browser hands back a perfectly good position. These helpers cover that
-/// gap: Nominatim for reverse geocoding (the web "Update current location"
-/// button and onboarding) and forward geocoding (a hand-typed event
-/// location), and ipwho.is for a rough fix when the browser gives us no
+/// gap: reverse geocoding through the `reverseGeocodeCoarse` callable (the web
+/// "Update current location" button, onboarding and the alert-city picker),
+/// Nominatim forward geocoding (a hand-typed event location: text only, no
+/// position), and ipwho.is for a rough fix when the browser gives us no
 /// coordinates at all.
+///
+/// Reverse geocoding never calls a third party from the browser (legal audit
+/// 2026-10): the server rounds the position to ~1 km and asks the geocoder
+/// itself, so neither the user's IP nor the exact fix leaves our systems.
 ///
 /// NOTE: both are free public endpoints with no key and no contractual rate
 /// limit. They run during web onboarding, on a manual web location update and
@@ -27,40 +34,40 @@ class WebLocationFallback {
 
   static const Duration _timeout = Duration(seconds: 8);
 
-  /// Reverse-geocode [latitude]/[longitude] into a city + country via Nominatim.
+  /// The `reverseGeocodeCoarse` call (overridable in tests). Receives the
+  /// ALREADY ROUNDED coordinates.
+  @visibleForTesting
+  static Future<Map<String, dynamic>> Function(double lat, double lng)
+      reverseCall = _callServer;
+
+  static Future<Map<String, dynamic>> _callServer(double lat, double lng) async {
+    final res = await FirebaseFunctions.instance
+        .httpsCallable('reverseGeocodeCoarse',
+            options: HttpsCallableOptions(timeout: _timeout))
+        .call<Map<String, dynamic>>({'lat': lat, 'lng': lng});
+    return Map<String, dynamic>.from(res.data);
+  }
+
+  /// Reverse-geocode [latitude]/[longitude] into a city + country through the
+  /// server (`reverseGeocodeCoarse`).
   ///
   /// Returns null when the lookup fails so the caller can fall back to a
-  /// coordinate-only location rather than losing the position entirely.
+  /// coordinate-only location rather than losing the position entirely. The
+  /// returned [Location] keeps the exact coordinates for the caller (they
+  /// stay in profiles_private); only the rounded ones are sent.
   static Future<Location?> reverseGeocode(
     double latitude,
     double longitude,
   ) async {
     try {
-      // Only a city is wanted (zoom=10), so the third-party geocoder gets the
-      // position rounded to ~1 km, never the exact browser fix (security P1-4:
-      // exact coordinates stay in profiles_private).
-      final uri = Uri.parse(
-        'https://nominatim.openstreetmap.org/reverse'
-        '?format=jsonv2&lat=${coarseCoordinate(latitude)}'
-        '&lon=${coarseCoordinate(longitude)}'
-        '&zoom=10&addressdetails=1',
-      );
-      final resp = await http
-          .get(uri, headers: {'Accept': 'application/json'})
-          .timeout(_timeout);
-      if (resp.statusCode != 200) return null;
-
-      final data = jsonDecode(resp.body) as Map<String, dynamic>;
-      final addr = (data['address'] as Map<String, dynamic>?) ?? {};
-      final city = _firstNonEmpty([
-        addr['city'],
-        addr['town'],
-        addr['village'],
-        addr['municipality'],
-        addr['county'],
-        addr['state'],
-      ]);
-      final country = normalizeCountryName((addr['country'] ?? '').toString());
+      // Only a city is wanted, so even our own server gets the position
+      // rounded to ~1 km, never the exact browser fix (security P1-4).
+      final data = await reverseCall(
+        double.parse(coarseCoordinate(latitude)),
+        double.parse(coarseCoordinate(longitude)),
+      ).timeout(_timeout);
+      final city = (data['city'] ?? '').toString().trim();
+      final country = normalizeCountryName((data['country'] ?? '').toString());
       if (city.isEmpty && country.isEmpty) return null;
 
       return Location(
@@ -75,7 +82,7 @@ class WebLocationFallback {
     }
   }
 
-  /// [value] rounded to 2 decimals (~1.1 km), as sent to Nominatim.
+  /// [value] rounded to 2 decimals (~1.1 km), as sent for reverse geocoding.
   static String coarseCoordinate(double value) => value.toStringAsFixed(2);
 
   /// Forward-geocode a free-text place ([query]: a venue, street address or

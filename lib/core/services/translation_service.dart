@@ -64,18 +64,20 @@ class TranslationResult {
 ///
 /// Private text (chat messages) is translated only after the user accepted
 /// the AI-processing notice ([AiConsentService]; Apple 5.1.2(i), audit H-17).
-/// Two backends:
-///  - default: Google's FREE translate endpoint
-///    (`translate.googleapis.com/translate_a/single?client=gtx`), called
-///    directly from the device;
-///  - when `app_config/feature_flags.serverChatTranslation` is true: the
-///    `translatePrivateText` callable (official Cloud Translation API,
-///    server-side). The owner turns this on once the Cloud Translation API and
-///    its billing are enabled (plan P2-10).
+/// Backends:
+///  - PRIVATE text (chat messages, [requiresConsent] true) ALWAYS goes to the
+///    `translatePrivateText` callable: the contracted Google Cloud Translation
+///    API, server-side, under a DPA (legal audit EU-05 / BR-06). It is never
+///    sent from the device to Google's free endpoint, and there is no
+///    fallback to it (the old `serverChatTranslation` flag is gone).
+///  - PUBLIC content only ([requiresConsent] false: events, attractions,
+///    experiences, public reviews): the shared store first, then Google's free
+///    endpoint (`translate.googleapis.com/translate_a/single?client=gtx`) as a
+///    device-side last resort.
 /// Chat translation is private and never touches the shared
-/// `translations/` store. The free endpoint has no key and no quota of ours,
-/// but it rate-limits bursts (HTTP 429), so requests are de-duplicated,
-/// throttled, retried with backoff and cached (memory + Hive on device).
+/// `translations/` store. The free endpoint rate-limits bursts (HTTP 429), so
+/// requests are de-duplicated, throttled, retried with backoff and cached
+/// (memory + Hive on device).
 class TranslationService {
   factory TranslationService() => _instance;
   TranslationService._internal({
@@ -106,6 +108,7 @@ class TranslationService {
     bool Function()? consentGranted,
     Future<bool> Function()? useServer,
     ServerTranslateCall? serverCall,
+    bool productionRouting = false,
   }) =>
       TranslationService._internal(
         client: client,
@@ -113,7 +116,8 @@ class TranslationService {
         backoff: backoff ?? (_) => Duration.zero,
         contributor: contributor,
         consentGranted: consentGranted ?? () => true,
-        useServer: useServer ?? () async => false,
+        // productionRouting: no override, i.e. exactly what the app does.
+        useServer: productionRouting ? null : (useServer ?? () async => false),
         serverCall: serverCall,
       );
 
@@ -129,28 +133,13 @@ class TranslationService {
     return c.isGranted;
   }
 
-  bool? _serverFlag;
-  DateTime _serverFlagAt = DateTime.fromMillisecondsSinceEpoch(0);
-
-  /// `app_config/feature_flags.serverChatTranslation` (re-read every 10 min).
+  /// Private text always uses the server (contracted Cloud Translation). The
+  /// override exists only so tests can exercise the device-side retry logic
+  /// that public content still uses.
   Future<bool> _useServer() async {
     final o = _useServerOverride;
     if (o != null) return o();
-    if (_serverFlag != null &&
-        DateTime.now().difference(_serverFlagAt) < const Duration(minutes: 10)) {
-      return _serverFlag!;
-    }
-    try {
-      final doc = await FirebaseFirestore.instance
-          .collection('app_config')
-          .doc('feature_flags')
-          .get();
-      _serverFlag = doc.data()?['serverChatTranslation'] == true;
-    } catch (_) {
-      _serverFlag = false;
-    }
-    _serverFlagAt = DateTime.now();
-    return _serverFlag!;
+    return true;
   }
 
   static Future<Map<String, dynamic>> _defaultServerCall(

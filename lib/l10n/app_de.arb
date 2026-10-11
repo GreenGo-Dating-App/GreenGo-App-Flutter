@@ -7250,5 +7250,11 @@
   "participantsEmailRateLimited": "Du hast sie gerade angefordert. Versuch es in ein paar Minuten erneut.",
   "participantsEmailFailed": "Die Teilnehmerliste konnte nicht gesendet werden. Bitte versuch es später erneut.",
   "participantsEmailNoEmail": "Dein Konto hat keine E-Mail-Adresse für den Versand.",
-  "checkoutOrganizerShareNotice": "Dein Name und deine E-Mail-Adresse werden für den Einlass an den Veranstalter weitergegeben."
+  "checkoutOrganizerShareNotice": "Dein Name und deine E-Mail-Adresse werden für den Einlass an den Veranstalter weitergegeben.",
+  "aiConsentTitleV2": "KI-Funktionen nutzen Dienste von Google und Anthropic",
+  "aiConsentIntroV2": "Antwortvorschläge, der KI-Sprachcoach, das Übersetzen empfangener Nachrichten, das Vorlesen und die automatischen Antworten des Support-Assistenten funktionieren nur, wenn GreenGo den betreffenden Text an diese Anbieter sendet.",
+  "aiConsentProvidersV2": "Wer: Google Gemini (Vorschläge und Coaching), Google Cloud Text-to-Speech (Audio), Google Cloud Translation (Übersetzungen) und Anthropic Claude (automatische Antworten des Support-Assistenten).",
+  "aiConsentWhatSentV2": "Was gesendet wird: nur der Text der Nachricht, auf die du die Funktion anwendest (auch Nachrichten, die andere dir geschickt haben, und deine Nachrichten an den Support), und die Sprachen. Nie dein Name, deine Fotos oder dein Profil.",
+  "aiConsentDisabledNoticeV2": "Diese Funktion ist aus, weil du keinen Text an KI-Dienste senden möchtest.",
+  "aiServicesSubtitleOnV2": "An: KI-Funktionen dürfen den Text, für den du sie nutzt, an Google und Anthropic senden."
 }

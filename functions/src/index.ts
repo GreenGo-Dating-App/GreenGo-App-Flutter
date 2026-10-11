@@ -444,6 +444,16 @@ export {
   recordConsent,
 } from './ai/aiGateway';
 
+// Web reverse geocoding through the server with coarse (~1 km) coordinates:
+// the browser no longer sends positions + IP to Nominatim (audit 2026-10).
+export { reverseGeocodeCoarse } from './location/reverseGeocodeCoarse';
+
+// Marco Civil art. 15 access logs (audit BR-09): IP + time of every sign-in /
+// app session in the server-only access_logs collection (TTL 6 months).
+// logAccessOnSignIn / logAccessOnSignUp are Auth BLOCKING functions: deploy
+// them only after the project is upgraded to Identity Platform.
+export { logAccess, logAccessOnSignIn, logAccessOnSignUp } from './auth/accessLogs';
+
 // Neutral age gate, interim (H-21). The profile-trigger backstop runs inside
 // reverseGeocodeProfileLocation.
 export { declareAge } from './auth/ageGate';

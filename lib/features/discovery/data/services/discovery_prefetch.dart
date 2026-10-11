@@ -98,8 +98,8 @@ class DiscoveryPrefetch {
   }
 
   /// The saved filters merged with the rules the Apple-safe grid always
-  /// enforces: orientation and verified-only are neutralised (removed as
-  /// user-facing filters, so a value saved before the removal cannot keep
+  /// enforces: verified-only is neutralised (removed as a
+  /// user-facing filter, so a value saved before the removal cannot keep
   /// silently excluding people), and in the culture flavor age is never a
   /// filter (forced to the full 18–99 span).
   static MatchPreferences effectivePreferences(
@@ -108,7 +108,6 @@ class DiscoveryPrefetch {
   ) {
     final base = saved ?? MatchPreferences.defaultFor(userId);
     return base.copyWith(
-      preferredOrientations: const [],
       onlyVerified: false,
       minAge: FlavorConfig.enableMatching ? base.minAge : 18,
       maxAge: FlavorConfig.enableMatching ? base.maxAge : 99,

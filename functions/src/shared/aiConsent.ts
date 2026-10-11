@@ -9,9 +9,12 @@
  *                          AI provider (Gemini, Cloud TTS, Cloud Translation,
  *                          the free Google Translate endpoint).
  *  - hasWithdrawnAiConsent true only when the user explicitly switched AI
- *                          services OFF. Used by the support assistant, which
- *                          answered everyone before consent existed: users who
- *                          turned AI off get a human agent instead.
+ *                          services OFF.
+ *  - hasSupportAiConsent   strict, version-aware: an ACCEPTED record of at
+ *                          least AI_SUPPORT_CONSENT_MIN_VERSION (the notice
+ *                          that names Anthropic). Used by the support
+ *                          assistant (Claude): without it the chat is handed
+ *                          to a human agent (legal audit 2026-10).
  *
  * Safety / moderation screening is NOT gated here: it is not optional.
  */
@@ -23,6 +26,12 @@ export const CONSENTS = 'consents';
 export const AI_CONSENT_TYPE = 'ai_processing';
 /** Oldest consent-text version the server accepts for AI calls. */
 export const AI_CONSENT_MIN_VERSION = 1;
+/**
+ * Oldest notice version that names Anthropic (support assistant). Version 1
+ * named only Google, so a v1 acceptance covers Google features but NOT the
+ * Claude-powered support assistant.
+ */
+export const AI_SUPPORT_CONSENT_MIN_VERSION = 2;
 
 export type AiConsentState = 'granted' | 'withdrawn' | 'none';
 
@@ -47,6 +56,18 @@ export function aiConsentRequiredError(): AppError {
 /** The caller must have ACCEPTED the AI-processing notice (server record). */
 export async function requireAiConsent(uid: string): Promise<void> {
   if ((await getAiConsentState(uid)) !== 'granted') throw aiConsentRequiredError();
+}
+
+/**
+ * Explicit, current consent for the support assistant: accepted AND a notice
+ * version that names Anthropic. Never-asked, withdrawn and version-1 records
+ * all return false.
+ */
+export async function hasSupportAiConsent(uid: string): Promise<boolean> {
+  const snap = await admin.firestore().collection(CONSENTS).doc(uid).get();
+  const c = snap.data()?.[AI_CONSENT_TYPE];
+  return !!c && typeof c === 'object' && c.accepted === true
+    && Number(c.version) >= AI_SUPPORT_CONSENT_MIN_VERSION;
 }
 
 /** True when the user explicitly turned AI services off. */

@@ -13,7 +13,6 @@ class ProfileModel extends Profile {
     required super.userId,
     required super.displayName,
     required super.dateOfBirth, required super.gender, required super.photoUrls, required super.bio, required super.interests, required super.location, required super.languages, required super.createdAt, required super.updatedAt, required super.isComplete, super.nickname,
-    super.sexualOrientation,
     super.accountStatus,
     super.isBoosted,
     super.boostExpiry,
@@ -96,7 +95,6 @@ class ProfileModel extends Profile {
       nickname: profile.nickname,
       dateOfBirth: profile.dateOfBirth,
       gender: profile.gender,
-      sexualOrientation: profile.sexualOrientation,
       accountStatus: profile.accountStatus,
       isBoosted: profile.isBoosted,
       boostExpiry: profile.boostExpiry,
@@ -191,7 +189,8 @@ class ProfileModel extends Profile {
           ? (json['dateOfBirth'] as Timestamp).toDate()
           : DateTime(1990, 1, 1),
       gender: json['gender'] as String? ?? 'other',
-      sexualOrientation: json['sexualOrientation'] as String?,
+      // `sexualOrientation` on old documents is ignored (field removed,
+      // audit AS-06; purged by functions/scripts/purge-sexual-orientation.ts).
       accountStatus: json['accountStatus'] as String? ?? 'active',
       isBoosted: json['isBoosted'] as bool? ?? false,
       boostExpiry: json['boostExpiry'] != null
@@ -395,7 +394,6 @@ class ProfileModel extends Profile {
       'nickname': nickname,
       'dateOfBirth': Timestamp.fromDate(dateOfBirth),
       'gender': gender,
-      'sexualOrientation': sexualOrientation,
       'accountStatus': accountStatus,
       'isBoosted': isBoosted,
       'boostExpiry': boostExpiry != null

@@ -29,7 +29,6 @@ class Profile extends Equatable {
     required this.userId,
     required this.displayName,
     required this.dateOfBirth, required this.gender, required this.photoUrls, required this.bio, required this.interests, required this.location, required this.languages, required this.createdAt, required this.updatedAt, required this.isComplete, this.nickname,
-    this.sexualOrientation,
     this.accountStatus = 'active',
     this.isBoosted = false,
     this.boostExpiry,
@@ -104,7 +103,6 @@ class Profile extends Equatable {
   final String? nickname; // Unique username, format: lowercase alphanumeric + underscores, 3-20 chars
   final DateTime dateOfBirth;
   final String gender;
-  final String? sexualOrientation;
   final String accountStatus; // active, suspended, banned, deleted
   final bool isBoosted;
   final DateTime? boostExpiry;
@@ -334,7 +332,6 @@ class Profile extends Equatable {
         nickname,
         dateOfBirth,
         gender,
-        sexualOrientation,
         accountStatus,
         isBoosted,
         boostExpiry,
@@ -419,7 +416,6 @@ class Profile extends Equatable {
     String? nickname,
     DateTime? dateOfBirth,
     String? gender,
-    String? sexualOrientation,
     String? accountStatus,
     bool? isBoosted,
     DateTime? boostExpiry,
@@ -502,7 +498,6 @@ class Profile extends Equatable {
       nickname: nickname ?? this.nickname,
       dateOfBirth: dateOfBirth ?? this.dateOfBirth,
       gender: gender ?? this.gender,
-      sexualOrientation: sexualOrientation ?? this.sexualOrientation,
       accountStatus: accountStatus ?? this.accountStatus,
       isBoosted: isBoosted ?? this.isBoosted,
       boostExpiry: boostExpiry ?? this.boostExpiry,

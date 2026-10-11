@@ -72,7 +72,7 @@ Complete **all** of these — each is a gate:
 - [ ] **Advertising ID** — declare if you use it (Firebase Analytics may). If unused, remove the `AD_ID` permission.
 
 ## 6. Content rating (IARC questionnaire → App content → Content rating)
-Answer honestly. For GreenGo the drivers are **user interaction / user-generated content / shares location** → typically lands around **Teen / Mature**. Declare:
+Answer honestly. For GreenGo the drivers are **user interaction / user-generated content / shares location**. The IARC result may come out lower, but GreenGo is **adults-only (18+)**: in *App content → Target audience and content* select **only "18 and over"**, and keep the store listing consistent with the 18+ Terms and age gate (legal audit 2026-10). Declare:
 - Users can interact / communicate: **Yes**.
 - User-generated content: **Yes** (→ triggers UGC obligations, §8).
 - Shares user location: **Yes**.

@@ -7250,5 +7250,11 @@
   "participantsEmailRateLimited": "L’hai appena richiesto. Riprova tra qualche minuto.",
   "participantsEmailFailed": "Impossibile inviare l’elenco dei partecipanti. Riprova più tardi.",
   "participantsEmailNoEmail": "Il tuo account non ha un indirizzo email a cui inviare l’elenco.",
-  "checkoutOrganizerShareNotice": "Il tuo nome e la tua email saranno condivisi con l’organizzatore per l’ingresso."
+  "checkoutOrganizerShareNotice": "Il tuo nome e la tua email saranno condivisi con l’organizzatore per l’ingresso.",
+  "aiConsentTitleV2": "Le funzioni IA usano servizi di Google e Anthropic",
+  "aiConsentIntroV2": "Le risposte intelligenti, il coach linguistico IA, la traduzione dei messaggi che ricevi, la lettura ad alta voce e le risposte automatiche dell'assistente di supporto funzionano solo se GreenGo invia a questi fornitori il testo interessato.",
+  "aiConsentProvidersV2": "Chi: Google Gemini (suggerimenti e coaching), Google Cloud Text-to-Speech (audio), Google Cloud Translation (traduzioni) e Anthropic Claude (risposte automatiche dell'assistente di supporto).",
+  "aiConsentWhatSentV2": "Cosa viene inviato: solo il testo del messaggio su cui usi la funzione (compresi i messaggi che altre persone ti hanno inviato e i messaggi che scrivi al supporto) e le lingue. Mai il tuo nome, le tue foto o il tuo profilo.",
+  "aiConsentDisabledNoticeV2": "Questa funzione è disattivata perché hai scelto di non inviare testo a servizi IA.",
+  "aiServicesSubtitleOnV2": "Attivo: le funzioni IA possono inviare a Google e Anthropic il testo su cui le usi."
 }

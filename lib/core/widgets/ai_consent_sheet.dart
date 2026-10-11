@@ -5,8 +5,8 @@ import '../constants/app_colors.dart';
 import '../services/ai_consent_service.dart';
 
 /// One-time notice + choice before the first use of a feature that sends
-/// text to Google AI services (smart replies, AI coach, translating messages
-/// from other people, read-aloud). Returns true (allow), false (decline) or
+/// text to AI services: Google (smart replies, AI coach, translating messages
+/// from other people, read-aloud) and Anthropic (support assistant). Returns true (allow), false (decline) or
 /// null (dismissed without choosing: asked again later). The decision is
 /// stored through [AiConsentService]. With [recordDecline] false a "Decline"
 /// is returned but not recorded (the settings switch uses this: turning AI
@@ -62,7 +62,7 @@ class _AiConsentSheetBody extends StatelessWidget {
                 const Icon(Icons.auto_awesome, color: AppColors.richGold),
                 const SizedBox(width: 10),
                 Expanded(
-                  child: Text(l10n.aiConsentTitle,
+                  child: Text(l10n.aiConsentTitleV2,
                       style: const TextStyle(
                           color: AppColors.textPrimary,
                           fontSize: 18,
@@ -71,12 +71,12 @@ class _AiConsentSheetBody extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 14),
-            Text(l10n.aiConsentIntro,
+            Text(l10n.aiConsentIntroV2,
                 style: const TextStyle(
                     color: AppColors.textPrimary, fontSize: 14, height: 1.4)),
             const SizedBox(height: 14),
-            point(Icons.business, l10n.aiConsentProviders),
-            point(Icons.chat_bubble_outline, l10n.aiConsentWhatSent),
+            point(Icons.business, l10n.aiConsentProvidersV2),
+            point(Icons.chat_bubble_outline, l10n.aiConsentWhatSentV2),
             point(Icons.help_outline, l10n.aiConsentWhy),
             point(Icons.toggle_off_outlined, l10n.aiConsentDeclineInfo),
             const SizedBox(height: 8),
@@ -156,7 +156,7 @@ class AiConsentGate {
     messenger?.hideCurrentSnackBar();
     messenger?.showSnackBar(
       SnackBar(
-        content: Text(l10n.aiConsentDisabledNotice),
+        content: Text(l10n.aiConsentDisabledNoticeV2),
         duration: const Duration(seconds: 6),
         action: SnackBarAction(
           label: l10n.aiConsentReview,

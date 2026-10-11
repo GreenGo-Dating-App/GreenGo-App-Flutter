@@ -86,6 +86,9 @@ export const RETENTION_STORES = [
   DELETION_JOBS, // only kept when a run FAILED (needed to retry)
   'id_document_retention', // legacy entries under an admin legal hold only (P2-6)
   'follow_cleanup_jobs', // queued follow-graph job, deleted when done
+  // Marco Civil art. 15 access logs (IP + time), legal obligation to keep 6
+  // months (LGPD art. 16 I); removed by the TTL on expireAt, not here.
+  'access_logs',
 ];
 
 // ---------------------------------------------------------------------------

@@ -33,6 +33,7 @@ import 'core/di/injection_container.dart' as di;
 import 'core/cache/last_result_cache.dart';
 import 'core/providers/language_provider.dart';
 import 'core/services/access_control_service.dart';
+import 'core/services/access_log_service.dart';
 import 'core/services/api_key_service.dart';
 import 'core/services/app_sound_service.dart';
 import 'core/services/cache_service.dart';
@@ -861,6 +862,9 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
     // handler + auth stream, or from listener + initState). Reset on sign-out.
     if (_routedUserId == user.uid) return;
     _routedUserId = user.uid;
+    // Marco Civil access log (audit BR-09): the server records IP + time.
+    // Fire-and-forget; never blocks or fails the sign-in.
+    AccessLogService.log(signIn: _signInPending);
     // Set checking flag IMMEDIATELY to prevent WaitingScreen flash
     // (builder runs before async work completes)
     setState(() {

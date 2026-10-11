@@ -12,7 +12,7 @@ import 'profile_geohash.dart';
 /// identifies or locates a person precisely lives here instead:
 ///  * exact coordinates: `location.{latitude,longitude}`,
 ///    `travelerLocation.{latitude,longitude}` and the 9-char `geohash`;
-///  * `dateOfBirth`, `sexualOrientation`, `email`, `verificationPhone`,
+///  * `dateOfBirth`, `email`, `verificationPhone`,
 ///    `privatePhotoUrls`, `verificationPhotoPath` (a Storage PATH, never a
 ///    tokenised download URL).
 ///
@@ -45,6 +45,8 @@ final DateTime kUnknownDateOfBirth = DateTime(1990, 1, 1);
 /// coordinates inside `location` / `travelerLocation`).
 const Set<String> kSensitiveTopLevelFields = {
   'dateOfBirth',
+  // Removed from the product (audit AS-06); kept here so a stray legacy
+  // value can never be copied onto the public profile.
   'sexualOrientation',
   'email',
   'verificationPhone',
@@ -59,7 +61,6 @@ const Set<String> kOwnerWritablePrivateFields = {
   'travelerLocation',
   kProfileGeohashField,
   'dateOfBirth',
-  'sexualOrientation',
   'email',
   'verificationPhone',
   kVerificationPhotoPathField,
@@ -140,7 +141,6 @@ Map<String, dynamic> ownProfileView(
     }
     for (final k in const [
       'dateOfBirth',
-      'sexualOrientation',
       'email',
       'verificationPhone',
       'privatePhotoUrls',
@@ -320,7 +320,7 @@ Map<String, dynamic> privateProfileWrite(
     out['dateOfBirth'] = Timestamp.fromDate(dob);
   }
 
-  for (final k in const ['sexualOrientation', 'verificationPhone', 'email']) {
+  for (final k in const ['verificationPhone', 'email']) {
     final v = json[k];
     if (v is String && v.isNotEmpty && v != current?[k]) out[k] = v;
   }

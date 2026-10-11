@@ -34,7 +34,7 @@ App facts: bundle `com.greengochat.greengochatapp` · iOS Apple ID `6759628425` 
 ### Configuration
 - [ ] **Category:** Primary `Social Networking` or `Travel`; Secondary the other. (Avoid "Lifestyle→Dating".)
 - [ ] **App Privacy** nutrition labels — match the actual data collection (matches the Data Safety work: photos, location, contacts-none, usage). Keep in sync with the privacy policy.
-- [ ] **Age rating** questionnaire — set honestly; ensure it's NOT flagged as dating.
+- [ ] **Age rating** questionnaire — set honestly; ensure it's NOT flagged as dating; final rating **18+** (override to higher rating; adults-only Terms + age gate).
 - [ ] **In-App Purchases** — display names + descriptions for **coins** and **Silver/Gold/Platinum** tiers (clear, non-misleading; localized).
 - [ ] **Support URL / Marketing URL / Privacy Policy URL** present and live.
 - [ ] **Localize** all of the above for EN/ES/PT/DE/FR/IT (at minimum name, subtitle, keywords, description, screenshots).
@@ -58,7 +58,7 @@ App facts: bundle `com.greengochat.greengochatapp` · iOS Apple ID `6759628425` 
 ### Configuration
 - [ ] **Category:** `Social` or `Travel & Local`; set **tags** relevant to culture/travel/community.
 - [ ] **Data safety** form completed (from the permission audit: camera/photos, microphone, location; images/video media). Keep consistent with the privacy policy + Apple labels.
-- [ ] **Content rating** questionnaire (IARC) — honest, non-dating.
+- [ ] **Content rating** questionnaire (IARC) — honest, non-dating; Target audience = **18 and over** only.
 - [ ] **Target audience & content** — set age; ensure not "designed for families" unless intended.
 - [ ] **Store listing localizations** for EN/ES/PT/DE/FR/IT (title, short + full description, screenshots).
 - [ ] **Custom store listings** (per country/language or install-state) for high-value markets.

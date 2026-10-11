@@ -116,7 +116,7 @@ class _AiServicesSettingsCardState extends State<AiServicesSettingsCard> {
                 subtitle: Padding(
                   padding: const EdgeInsets.only(top: 4),
                   child: Text(
-                    on ? l10n.aiServicesSubtitleOn : l10n.aiServicesSubtitleOff,
+                    on ? l10n.aiServicesSubtitleOnV2 : l10n.aiServicesSubtitleOff,
                     style: const TextStyle(
                         color: AppColors.textSecondary, fontSize: 14),
                   ),

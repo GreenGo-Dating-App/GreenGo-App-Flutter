@@ -12,10 +12,11 @@
  *                      `pronunciation_cache` / `pronunciation_audio` cache.
  *  - translatePrivateText
  *                      Official Cloud Translation (v2, service-account auth,
- *                      no key) for PRIVATE chat text. The app keeps using the
- *                      on-device path until `app_config/feature_flags.
- *                      serverChatTranslation` is true (needs the Cloud
- *                      Translation API enabled + billing: owner decision).
+ *                      no key) for PRIVATE chat text. Since the 2026-10 legal
+ *                      audit (EU-05 / BR-06) the app sends ALL private chat
+ *                      translation here (no device call to the free endpoint;
+ *                      the `serverChatTranslation` flag is no longer read).
+ *                      Needs the Cloud Translation API enabled + billing.
  *  - getVocabularyImages
  *                      Unsplash / Pexels lookups (keys stay server-side).
  *  - recordConsent     Stores the user's AI-processing decision in the

@@ -26,7 +26,6 @@ class EditBasicInfoScreen extends StatefulWidget {
 class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
   final TextEditingController _nameController = TextEditingController();
   String? _selectedGender;
-  String? _selectedOrientation;
   bool _isSaving = false;
 
   final List<String> _genderOptions = [
@@ -36,19 +35,11 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
     'Prefer not to say',
   ];
 
-  final List<String> _orientationOptions = [
-    'Straight',
-    'Gay',
-    'Bisexual',
-    'Other',
-  ];
-
   @override
   void initState() {
     super.initState();
     _nameController.text = widget.profile.displayName;
     _selectedGender = widget.profile.gender;
-    _selectedOrientation = widget.profile.sexualOrientation;
   }
 
   @override
@@ -75,7 +66,6 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
     final updatedProfile = widget.profile.copyWith(
       displayName: _nameController.text.trim(),
       gender: _selectedGender!,
-      sexualOrientation: _selectedOrientation,
       updatedAt: DateTime.now(),
     );
 
@@ -303,78 +293,6 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
 
             const SizedBox(height: 24),
 
-            // Sexual Orientation
-            Text(
-              AppLocalizations.of(context)!.profileSexualOrientation,
-              style: const TextStyle(
-                color: AppColors.textPrimary,
-                fontSize: 16,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-            const SizedBox(height: 4),
-            Text(
-              AppLocalizations.of(context)!.profileOrientationPrivate,
-              style: const TextStyle(
-                color: AppColors.textTertiary,
-                fontSize: 12,
-              ),
-            ),
-            const SizedBox(height: 12),
-
-            ..._orientationOptions.map((orientation) {
-              return GestureDetector(
-                onTap: () => setState(() => _selectedOrientation = orientation),
-                child: Container(
-                  margin: const EdgeInsets.only(bottom: 12),
-                  padding: const EdgeInsets.all(16),
-                  decoration: BoxDecoration(
-                    color: _selectedOrientation == orientation
-                        ? AppColors.richGold.withOpacity(0.1)
-                        : AppColors.backgroundCard,
-                    borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                    border: Border.all(
-                      color: _selectedOrientation == orientation
-                          ? AppColors.richGold
-                          : AppColors.divider,
-                      width: _selectedOrientation == orientation ? 2 : 1,
-                    ),
-                  ),
-                  child: Row(
-                    children: [
-                      Icon(
-                        _getOrientationIcon(orientation),
-                        color: _selectedOrientation == orientation
-                            ? AppColors.richGold
-                            : AppColors.textSecondary,
-                      ),
-                      const SizedBox(width: 12),
-                      Text(
-                        _orientationLabel(orientation),
-                        style: TextStyle(
-                          color: _selectedOrientation == orientation
-                              ? AppColors.richGold
-                              : AppColors.textPrimary,
-                          fontSize: 16,
-                          fontWeight: _selectedOrientation == orientation
-                              ? FontWeight.w600
-                              : FontWeight.normal,
-                        ),
-                      ),
-                      const Spacer(),
-                      if (_selectedOrientation == orientation)
-                        const Icon(
-                          Icons.check_circle,
-                          color: AppColors.richGold,
-                        ),
-                    ],
-                  ),
-                ),
-              );
-            }),
-
-            const SizedBox(height: 24),
-
             // Info Box
             Container(
               padding: const EdgeInsets.all(16),
@@ -429,23 +347,6 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
     }
   }
 
-  /// Orientation values are stored in English; this is only the display label.
-  String _orientationLabel(String orientation) {
-    final l10n = AppLocalizations.of(context)!;
-    switch (orientation) {
-      case 'Straight':
-        return l10n.profileOrientationStraight;
-      case 'Gay':
-        return l10n.profileOrientationGay;
-      case 'Bisexual':
-        return l10n.profileOrientationBisexual;
-      case 'Other':
-        return l10n.onboardingGenderOther;
-      default:
-        return orientation;
-    }
-  }
-
   IconData _getGenderIcon(String gender) {
     switch (gender) {
       case 'Male':
@@ -454,21 +355,6 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
         return Icons.female;
       case 'Non-binary':
         return Icons.transgender;
-      default:
-        return Icons.help_outline;
-    }
-  }
-
-  IconData _getOrientationIcon(String orientation) {
-    switch (orientation) {
-      case 'Straight':
-        return Icons.favorite;
-      case 'Gay':
-        return Icons.diversity_1;
-      case 'Bisexual':
-        return Icons.diversity_3;
-      case 'Other':
-        return Icons.more_horiz;
       default:
         return Icons.help_outline;
     }

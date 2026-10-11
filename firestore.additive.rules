@@ -21,6 +21,30 @@ service cloud.firestore {
       return isSignedIn() && request.auth.uid == userId;
     }
 
+    // Sexual orientation was REMOVED from the product (legal audit AS-06 /
+    // EU-02 / BR-04 / US-03 / GCC-01: special-category data). A client may
+    // never store a new value: on create the field must be absent or null; on
+    // update it may only stay as it is (legacy docs until the purge script
+    // ran) or be cleared. The Admin SDK (purge script) bypasses rules.
+    function noOrientationOnCreate(d) {
+      return d.get('sexualOrientation', null) == null;
+    }
+    function noNewOrientation() {
+      return request.resource.data.get('sexualOrientation', null) == null
+        || request.resource.data.get('sexualOrientation', null)
+             == resource.data.get('sexualOrientation', null);
+    }
+    // users/{uid}.matchPreferences.preferredOrientations (the removed
+    // discovery filter): empty, absent or unchanged only.
+    function noNewOrientationFilter() {
+      return request.resource.data.get('matchPreferences', {})
+               .get('preferredOrientations', []).size() == 0
+        || request.resource.data.get('matchPreferences', {})
+             .get('preferredOrientations', [])
+           == resource.data.get('matchPreferences', {})
+             .get('preferredOrientations', []);
+    }
+
     // Check if user is admin (legacy — checks users collection)
     function isAdmin() {
       return isSignedIn() &&
@@ -101,14 +125,19 @@ service cloud.firestore {
       // Owner may create their own doc but NEVER seed a privilege field.
       allow create: if isOwner(userId)
         && request.resource.data.get('role', '') != 'admin'
-        && request.resource.data.get('isAdmin', false) == false;
+        && request.resource.data.get('isAdmin', false) == false
+        && noOrientationOnCreate(request.resource.data)
+        && request.resource.data.get('matchPreferences', {})
+             .get('preferredOrientations', []).size() == 0;
       // Owner may update their own doc but NEVER change role / isAdmin — those
       // are admin / Cloud-Function only (closes the self-promote-to-admin hole).
       allow update: if (isOwner(userId)
               && request.resource.data.get('role', resource.data.get('role', ''))
                  == resource.data.get('role', '')
               && request.resource.data.get('isAdmin', false)
-                 == resource.data.get('isAdmin', false))
+                 == resource.data.get('isAdmin', false)
+              && noNewOrientation()
+              && noNewOrientationFilter())
         || isAdminPanelUser();
       allow delete: if isOwner(userId);
 
@@ -117,7 +146,12 @@ service cloud.firestore {
       //  safety_progress, …). Firestore rules do NOT cascade into
       //  subcollections, so without this every such write falls through to the
       //  catch-all (admin-only) and is denied for normal users.
-      match /{userSub=**} {
+      //  `{userSub}/{rest=**}` and NOT `{userSub=**}`: in rules v2 a recursive
+      //  wildcard also matches ZERO segments, so `/{userSub=**}` matched
+      //  users/{userId} itself and its `allow write: if isOwner` overrode the
+      //  create/update guards above (an owner could set role: 'admin', which
+      //  isAdmin() trusts). Found by the 2026-10 legal-audit rules tests.
+      match /{userSub}/{rest=**} {
         allow read, write: if isOwner(userId);
       }
     }
@@ -145,6 +179,7 @@ service cloud.firestore {
       // rule below guards each flag against its previous value, but a
       // recreated document has no previous value to guard against.
       allow create: if isOwner(profileId)
+        && noOrientationOnCreate(request.resource.data)
         && request.resource.data.get('isAdmin', false) == false
         && request.resource.data.get('isBanned', false) == false
         // Becoming a business is a Platinum upgrade made by UPDATE (below).
@@ -185,6 +220,7 @@ service cloud.firestore {
       // user must never be able to self-unban). Any signed-in user may also
       // change ONLY the denormalized counters (followerCount / rating aggregate).
       allow update: if (isOwner(profileId)
+              && noNewOrientation()
               && request.resource.data.get('isBanned', false)
                  == resource.data.get('isBanned', false)
               // NEVER let the owner set their own admin / verification flags.
@@ -294,7 +330,7 @@ service cloud.firestore {
     // PRIVATE PROFILES (security audit C-07 / C-10, plan P1-4)
     // ============================================================================
     // The owner/admin-only half of a profile: exact location + 9-char geohash,
-    // date of birth, orientation, email, phone, the ID-selfie storage path,
+    // date of birth, email, phone, the ID-selfie storage path,
     // private album URLs, ID-derived age-verification data. The public
     // profiles/{uid} gets only coarse values computed by the
     // mirrorPrivateProfileFields / syncCoarseFromPrivateProfile functions
@@ -305,8 +341,9 @@ service cloud.firestore {
     //    (Admin SDK bypasses rules).
     //  - delete: never from a client (account deletion runs server-side).
     function privateProfileOwnerKeys() {
+      // 'sexualOrientation' is deliberately NOT here (removed, audit AS-06).
       return ['location', 'travelerLocation', 'geohash', 'dateOfBirth',
-              'sexualOrientation', 'email', 'verificationPhone',
+              'email', 'verificationPhone',
               'verificationPhotoPath', 'privatePhotoUrls', 'updatedAt'];
     }
     function privateProfileShapeOk(d) {
@@ -2654,6 +2691,15 @@ service cloud.firestore {
     match /consents/{uid} {
       allow get: if isSignedIn() && request.auth.uid == uid;
       allow list, write: if false;
+    }
+
+    // Marco Civil da Internet art. 15 access logs (legal audit BR-09): IP +
+    // timestamp of every sign-in / app session, kept 6 months (TTL on
+    // expireAt). Written ONLY by Cloud Functions (Admin SDK: auth blocking
+    // functions + the logAccess callable) and disclosed only under a court
+    // order. NO client access at all, admins included.
+    match /access_logs/{logId} {
+      allow read, write: if false;
     }
 
     // Rejected-image review queue. Admin-only: it indexes quarantined content.

@@ -204,8 +204,26 @@ interface Section {
 
 type Snap = FirebaseFirestore.DocumentSnapshot;
 
+/**
+ * Fields REMOVED from the product that must never appear in an export, even
+ * on a legacy document the purge script has not reached yet (audit AS-06:
+ * sexual orientation + the discovery filter on it).
+ */
+export const REMOVED_FIELDS: ReadonlySet<string> = new Set(['sexualOrientation', 'preferredOrientations']);
+
+export function dropRemovedFields(v: any): any {
+  if (Array.isArray(v)) return v.map(dropRemovedFields);
+  if (!v || typeof v !== 'object') return v;
+  const out: Record<string, any> = {};
+  for (const [k, x] of Object.entries(v)) {
+    if (REMOVED_FIELDS.has(k)) continue;
+    out[k] = dropRemovedFields(x);
+  }
+  return out;
+}
+
 function record(snap: Snap, uid: string, extra: Record<string, any> = {}): Record<string, any> {
-  return { _id: snap.id, _path: snap.ref.path.split(uid).join('{you}'), ...extra, ...redactOthers(toPlain(snap.data() || {}), uid) };
+  return { _id: snap.id, _path: snap.ref.path.split(uid).join('{you}'), ...extra, ...redactOthers(dropRemovedFields(toPlain(snap.data() || {})), uid) };
 }
 
 /** A document and (recursively, bounded) its subcollections. */
