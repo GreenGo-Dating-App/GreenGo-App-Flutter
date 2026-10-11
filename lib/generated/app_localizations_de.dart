@@ -24351,4 +24351,19 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get chatReplyNeedsBase =>
       'Zum Antworten brauchst du die Basis-Mitgliedschaft';
+
+  @override
+  String get tierPaymentLinksRow => 'Zahlungslinks in deinem Profil';
+
+  @override
+  String get paymentLinksTierLocked =>
+      'Verfügbar mit Silver, Gold oder Platinum';
+
+  @override
+  String get paymentLinksTierLockedBody =>
+      'Deine gespeicherten Zahlungsmethoden sind in deinem Profil ausgeblendet. Upgrade auf Silver, Gold oder Platinum, um sie wieder anzuzeigen.';
+
+  @override
+  String get paymentLinksTierUpsellBody =>
+      'Lass dich direkt per Pix, PayPal und mehr bezahlen. Upgrade auf Silver, Gold oder Platinum, um deinem Profil Zahlungsmethoden hinzuzufügen.';
 }

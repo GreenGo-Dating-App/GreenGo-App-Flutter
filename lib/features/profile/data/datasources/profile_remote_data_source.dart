@@ -10,6 +10,7 @@ import '../../../../core/utils/image_compression.dart';
 import '../models/profile_model.dart';
 import '../private_profile.dart';
 import '../../../../core/services/image_moderation_gate.dart';
+import '../../domain/payment_links_access.dart';
 
 /// Fields the SERVER owns. A client write must never carry them.
 ///
@@ -212,6 +213,17 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
       // (a stale copy would be refused by the rules, which forbid turning it
       // off). Only a `true` rides along (a no-op once set).
       if (publicUpdate['isBusiness'] != true) publicUpdate.remove('isBusiness');
+      // Personal payment links (owner rule 2026-10-12): Silver / Gold /
+      // Platinum only, hidden by the server when the tier lapses. Send them
+      // only when they changed and the change is allowed, so a stale copy is
+      // never written back and the rules never refuse the whole save.
+      if (!shouldWritePaymentLinks(
+        stored: publicData?['paymentLinks'],
+        next: publicUpdate['paymentLinks'],
+        allowed: paymentLinksAllowedFromDoc(publicData),
+      )) {
+        publicUpdate.remove('paymentLinks');
+      }
       final batch = firestore.batch()
         ..update(firestore.collection('profiles').doc(profile.userId),
             publicUpdate);

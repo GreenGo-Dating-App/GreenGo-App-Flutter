@@ -4,7 +4,12 @@
  * there for the data model and the no-loop argument.
  *
  * Deploy:  mirrorPrivateProfileFields, syncCoarseFromPrivateProfile,
- *          refreshBirthdayAges, getVerificationPhotoUrl
+ *          refreshBirthdayAges, getVerificationPhotoUrl,
+ *          sweepExpiredPaymentLinks
+ *
+ * mirrorPrivateProfileFields also runs the payment-links visibility hook
+ * (./paymentLinksVisibility.ts): piggybacking on the existing profiles
+ * onWrite avoids one more 512MiB invocation per write of this hot collection.
  */
 
 import { onDocumentWritten } from 'firebase-functions/v2/firestore';
@@ -24,6 +29,7 @@ import {
   handlePublicProfileWrite,
   syncProfile,
 } from './privateProfile';
+import { handlePaymentLinksProfileWrite, runPaymentLinksSweep } from './paymentLinksVisibility';
 
 /**
  * profiles/{uid} written. Most writes (presence, counters) touch no watched
@@ -35,7 +41,30 @@ export const mirrorPrivateProfileFields = onDocumentWritten(
     const uid = event.params.uid as string;
     const before = event.data?.before?.exists ? event.data.before.data() : undefined;
     const after = event.data?.after?.exists ? event.data.after.data() : undefined;
-    await handlePublicProfileWrite(uid, before, after);
+    // Payment links visibility (owner rule 2026-10-12). Independent of the
+    // private mirror: a failure of one never blocks the other.
+    const links = handlePaymentLinksProfileWrite(uid, before, after).catch((e: any) => {
+      console.error(`payment links visibility failed for ${uid}:`, e?.message || e);
+    });
+    try {
+      await handlePublicProfileWrite(uid, before, after);
+    } finally {
+      await links;
+    }
+  },
+);
+
+/**
+ * Hides the payment links of owners whose paid tier lapsed by DATE (no
+ * document write happens at the end date itself; the hourly
+ * handleExpiredMemberships downgrade then also fires the hook). One indexed
+ * range query on profiles.paymentLinksExpireAt (automatic single-field index).
+ */
+export const sweepExpiredPaymentLinks = onSchedule(
+  { schedule: '*/15 * * * *', timeZone: 'UTC', memory: '512MiB', timeoutSeconds: 540 },
+  async () => {
+    const r = await runPaymentLinksSweep();
+    console.log(`sweepExpiredPaymentLinks: ${JSON.stringify(r)}`);
   },
 );
 

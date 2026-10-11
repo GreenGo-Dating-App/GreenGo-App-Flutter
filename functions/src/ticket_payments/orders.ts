@@ -378,6 +378,14 @@ export async function createTicketCheckout(uid: string, data: any, email: string
     } else if (listing.provider === 'link') {
       const prof = (await tx.get(db().collection('profiles').doc(listing.organizerId))).data();
       payment = linkPaymentSnapshot(listing.linkMethod, prof, listing.instructions);
+      if (!payment && isBusinessActive(prof)) {
+        // Personal payment links are public only while the owner's tier is
+        // paid (profiles/paymentLinksVisibility.ts). An active business is
+        // Platinum, so its links are public; this covers the seconds after a
+        // renewal before the visibility hook moved them back.
+        const priv = (await tx.get(db().collection('profiles_private').doc(listing.organizerId))).data();
+        payment = linkPaymentSnapshot(listing.linkMethod, { paymentLinks: priv?.paymentLinksHidden }, listing.instructions);
+      }
       if (!payment) fail('failed-precondition', 'organizer_payments_not_ready', { provider: 'link' });
     } else {
       const acct = (await tx.get(db().collection(COL.accounts).doc(listing.organizerId))).data();

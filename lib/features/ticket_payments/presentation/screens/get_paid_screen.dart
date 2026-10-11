@@ -7,11 +7,14 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../profile/data/private_profile.dart';
 import '../../../profile/domain/entities/payment_links.dart';
+import '../../../profile/domain/payment_links_access.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
+import '../../../profile/presentation/widgets/payment_links_locked_card.dart';
 import '../../../profile/presentation/widgets/payment_methods_editor.dart';
 import '../../data/ticket_payments_service.dart';
 import '../../domain/ticket_payments.dart';
@@ -29,9 +32,13 @@ import 'payments_to_confirm_screen.dart';
 /// refresh. Money goes straight to the user's own account; GreenGo takes no
 /// fee.
 ///
-/// [paymentMethodsOnly] (Account settings > Payment methods, for accounts
-/// that are not an active business): only the payment-methods editor; the
-/// payments-to-confirm icon still appears while orders are waiting.
+/// [paymentMethodsOnly] (Account settings > Payment methods): only the
+/// payment-methods editor; the payments-to-confirm icon still appears while
+/// orders are waiting.
+///
+/// Payment methods (personal payment links) are a Silver / Gold / Platinum
+/// perk (owner rule 2026-10-12): for any other effective tier the editor is
+/// replaced by [PaymentLinksLockedCard] (saved links greyed + upgrade).
 class GetPaidScreen extends StatefulWidget {
   const GetPaidScreen({
     super.key,
@@ -40,6 +47,8 @@ class GetPaidScreen extends StatefulWidget {
     this.profileBloc,
     this.profileRepository,
     this.paymentMethodsOnly = false,
+    this.hiddenLinksLoader,
+    this.onUpgrade,
   });
 
   final String uid;
@@ -50,6 +59,13 @@ class GetPaidScreen extends StatefulWidget {
   final ProfileBloc? profileBloc;
   final ProfileRepository? profileRepository;
   final bool paymentMethodsOnly;
+
+  /// Reads the owner's hidden links (tier lapsed); defaults to the own
+  /// private profile document. Injectable for tests.
+  final Future<PaymentLinks?> Function(String uid)? hiddenLinksLoader;
+
+  /// Upgrade action of the locked state (defaults to the membership screen).
+  final VoidCallback? onUpgrade;
 
   static Route<void> route(String uid,
           {ProfileBloc? profileBloc, bool paymentMethodsOnly = false}) =>
@@ -72,6 +88,7 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
       widget.profileRepository ?? di.sl<ProfileRepository>();
   Profile? _profile;
   bool _profileFailed = false;
+  PaymentLinks? _hiddenLinks;
 
   @override
   void initState() {
@@ -94,6 +111,20 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
       (_) => setState(() => _profileFailed = true),
       (p) => setState(() => _profile = p),
     );
+    final p = _profile;
+    if (p != null && !paymentLinksAllowed(p)) unawaited(_loadHiddenLinks());
+  }
+
+  Future<void> _loadHiddenLinks() async {
+    PaymentLinks? hidden;
+    try {
+      final loader = widget.hiddenLinksLoader;
+      hidden = loader != null
+          ? await loader(widget.uid)
+          : hiddenPaymentLinksFromPrivate(
+              await PrivateProfileCache.instance.ensure(widget.uid));
+    } catch (_) {/* nothing to show greyed */}
+    if (mounted && hidden != null) setState(() => _hiddenLinks = hidden);
   }
 
   Future<bool> _savePaymentLinks(PaymentLinks links) async {
@@ -122,7 +153,13 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
 
   Widget _paymentMethodsSection(AppLocalizations l) {
     final Widget body;
-    if (_profile != null) {
+    if (_profile != null && !paymentLinksAllowed(_profile!)) {
+      body = PaymentLinksLockedCard(
+        uid: widget.uid,
+        hidden: _hiddenLinks,
+        onUpgrade: widget.onUpgrade,
+      );
+    } else if (_profile != null) {
       body = PaymentMethodsEditor(
         key: const ValueKey('get-paid-payment-methods'),
         initial: _profile!.paymentLinks,

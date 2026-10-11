@@ -39,6 +39,7 @@ import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/entities/swipe_action.dart';
 import '../widgets/swipe_buttons.dart';
+import '../../../profile/domain/payment_links_access.dart';
 
 /// Profile Detail Screen
 ///
@@ -864,13 +865,16 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                         ],
 
                         // Pay directly — the user's own external payment
-                        // methods; money never goes through GreenGo.
+                        // methods; money never goes through GreenGo. Shown
+                        // only while the owner's effective tier is Silver,
+                        // Gold or Platinum (owner rule 2026-10-12; the server
+                        // also hides them from the public profile).
                         if (!_isSelfView &&
-                            (widget.profile.paymentLinks?.hasAnyLink ?? false)) ...[
+                            visiblePaymentLinks(widget.profile) != null) ...[
                           _buildSectionTitle(AppLocalizations.of(context)!.paymentLinksSection),
                           const SizedBox(height: 12),
                           PaymentMethodsSection(
-                            links: widget.profile.paymentLinks!,
+                            links: visiblePaymentLinks(widget.profile)!,
                             receiverName: widget.profile.displayName,
                             receiverCity: widget.profile.location.city,
                           ),

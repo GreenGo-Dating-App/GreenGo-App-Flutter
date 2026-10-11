@@ -41204,6 +41204,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Base membership required to reply'**
   String get chatReplyNeedsBase;
+
+  /// Membership comparison table row: personal payment links (Silver, Gold, Platinum)
+  ///
+  /// In en, this message translates to:
+  /// **'Payment links on your profile'**
+  String get tierPaymentLinksRow;
+
+  /// Payment methods locked for tiers below Silver: short label / subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Available with Silver, Gold or Platinum'**
+  String get paymentLinksTierLocked;
+
+  /// Payment methods locked: the owner has saved links that are hidden because the tier lapsed
+  ///
+  /// In en, this message translates to:
+  /// **'Your saved payment methods are hidden from your profile. Upgrade to Silver, Gold or Platinum to show them again.'**
+  String get paymentLinksTierLockedBody;
+
+  /// Payment methods locked: no saved links, upgrade invitation
+  ///
+  /// In en, this message translates to:
+  /// **'Let people pay you directly with Pix, PayPal and more. Upgrade to Silver, Gold or Platinum to add payment methods to your profile.'**
+  String get paymentLinksTierUpsellBody;
 }
 
 class _AppLocalizationsDelegate

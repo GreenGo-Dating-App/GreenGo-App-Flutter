@@ -394,6 +394,57 @@ service cloud.firestore {
         && profileNestedKeptOrCleared('ageVerification', 'documentDateOfBirth');
     }
 
+    // ---- PERSONAL PAYMENT LINKS (owner rule 2026-10-12) ----------------------
+    // profiles/{uid}.paymentLinks (Pix, PayPal, Mercado Pago link, Wise, ...)
+    // may be ADDED or CHANGED only while the owner's effective tier is SILVER /
+    // GOLD / PLATINUM or TEST (tierRankOf > 0; membershipTier and
+    // membershipEndDate are server-written). Removing / clearing entries is
+    // always allowed. When the tier lapses, the server MOVES the links to the
+    // owner-only profiles_private/{uid}.paymentLinksHidden and back on renewal
+    // (functions/src/profiles/paymentLinksVisibility.ts), so they never stay
+    // public. Keys = PaymentMethod in lib/.../payment_links.dart.
+    function paymentLinkKeys() {
+      return ['pix', 'mercadoPago', 'picPay', 'paypal', 'venmo', 'cashApp',
+              'revolut', 'wise', 'monzo', 'kofi', 'stripe'];
+    }
+    // Entry `k` of the new map `n` is empty or the same as in the old map `o`.
+    function paymentLinkKeptOrCleared(n, o, k) {
+      return n.get(k, null) == null || n.get(k, null) == ''
+        || n.get(k, null) == o.get(k, null);
+    }
+    // `n` (new value of a links field) only removes / clears entries of `o`
+    // (old value, {} when absent): nothing is added or changed.
+    function paymentLinksOnlyCleared(n, o) {
+      return n == null
+        || (n is map
+            && n.diff(o).addedKeys().hasOnly(paymentLinkKeys())
+            && n.diff(o).changedKeys().hasOnly(paymentLinkKeys())
+            && paymentLinkKeptOrCleared(n, o, 'pix')
+            && paymentLinkKeptOrCleared(n, o, 'mercadoPago')
+            && paymentLinkKeptOrCleared(n, o, 'picPay')
+            && paymentLinkKeptOrCleared(n, o, 'paypal')
+            && paymentLinkKeptOrCleared(n, o, 'venmo')
+            && paymentLinkKeptOrCleared(n, o, 'cashApp')
+            && paymentLinkKeptOrCleared(n, o, 'revolut')
+            && paymentLinkKeptOrCleared(n, o, 'wise')
+            && paymentLinkKeptOrCleared(n, o, 'monzo')
+            && paymentLinkKeptOrCleared(n, o, 'kofi')
+            && paymentLinkKeptOrCleared(n, o, 'stripe'));
+    }
+    function oldMapOr(d, f) {
+      return d.get(f, null) is map ? d.get(f, {}) : {};
+    }
+    // Owner write of profiles/{uid}: paymentLinks untouched, cleared, or the
+    // (post-write) profile holds an active paid tier / TEST.
+    function paymentLinksWriteOk() {
+      return !('paymentLinks' in request.resource.data.diff(resource.data).affectedKeys())
+        || paymentLinksOnlyCleared(request.resource.data.get('paymentLinks', null),
+                                   oldMapOr(resource.data, 'paymentLinks'))
+        || (tierRankOf(request.resource.data) > 0
+            && request.resource.data.paymentLinks is map
+            && request.resource.data.paymentLinks.size() <= 20);
+    }
+
     match /profiles/{profileId} {
       // Single profile (get / listen). INC-2026-001 (lockdown doc §3): a user
       // the owner has BLOCKED can't open the profile. block_index is written
@@ -451,7 +502,9 @@ service cloud.firestore {
         // INC-2026-001: no sensitive / server-coarse field on a public profile.
         && publicProfileCreateOk()
         // Audit P-H3: a (re)created profile carries no paid perk.
-        && perkFieldsOffOnCreate(request.resource.data);
+        && perkFieldsOffOnCreate(request.resource.data)
+        // A (re)created profile is FREE: no payment links (empty values only).
+        && paymentLinksOnlyCleared(request.resource.data.get('paymentLinks', null), {});
       // Owner, admin-panel and profile-admins (business-verification approval →
       // sets businessVerified) may update. Additionally ANY signed-in user may
       // change ONLY the denormalized `followerCount` (business follow/unfollow
@@ -552,7 +605,9 @@ service cloud.firestore {
               && request.resource.data.get('hostAgreementAcceptedAt', null)
                  == resource.data.get('hostAgreementAcceptedAt', null)
               // Audit P-H3: boost / incognito / travel / ghost / promotion.
-              && perkFieldsOk())
+              && perkFieldsOk()
+              // Personal payment links: Silver / Gold / Platinum / TEST only.
+              && paymentLinksWriteOk())
         || isAdminPanelUser() || isProfileAdmin()
         || (isSignedIn()
             && request.resource.data.diff(resource.data).affectedKeys()
@@ -604,10 +659,14 @@ service cloud.firestore {
       allow create: if isOwner(uid)
         && request.resource.data.keys().hasOnly(privateProfileOwnerKeys())
         && privateProfileShapeOk(request.resource.data);
+      // paymentLinksHidden (the links of a lapsed tier, server-moved, see
+      // paymentLinksWriteOk) may be cleared by the owner, never added to.
       allow update: if isOwner(uid)
         && request.resource.data.diff(resource.data).affectedKeys()
-             .hasOnly(privateProfileOwnerKeys())
-        && privateProfileShapeOk(request.resource.data);
+             .hasOnly(privateProfileOwnerKeys().concat(['paymentLinksHidden']))
+        && privateProfileShapeOk(request.resource.data)
+        && paymentLinksOnlyCleared(request.resource.data.get('paymentLinksHidden', null),
+                                   oldMapOr(resource.data, 'paymentLinksHidden'));
       allow delete: if false;
     }
 

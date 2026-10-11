@@ -481,6 +481,17 @@ describe('link mode: payment link + organizer confirmation', () => {
     expect((await refused(call(getEventTicketCode, { eventId: 'e1' }, BUYER))).reason).toBe('not_going');
   });
 
+  test('active business whose links are still in the hidden copy (renewal race) keeps selling', async () => {
+    // Personal payment links are public only while the tier is paid
+    // (profiles/paymentLinksVisibility.ts). Right after a renewal the
+    // visibility hook may not have moved them back yet.
+    await db.doc(`profiles/${ORG}`).update({ paymentLinks: admin.firestore.FieldValue.delete() });
+    await db.doc(`profiles_private/${ORG}`).set({ paymentLinksHidden: { pix: 'org@pix.example' } });
+    await linkEvent();
+    const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
+    expect(r.payment).toEqual({ method: 'pix', value: 'org@pix.example', instructions: null });
+  });
+
   test('method missing from the organizer profile -> not on sale', async () => {
     await linkEvent({ ticketLinkMethod: 'revolut' });
     expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER))).reason).toBe('organizer_payments_not_ready');

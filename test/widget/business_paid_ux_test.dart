@@ -103,7 +103,13 @@ void main() {
       profiles = _MockProfiles();
       service = _MockService();
       when(() => profiles.getProfile(any()))
-          .thenAnswer((_) async => Right<Failure, Profile>(buildProfile(userId: 'u1')));
+          .thenAnswer((_) async => Right<Failure, Profile>(buildProfile(
+              // Payment methods are a Silver / Gold / Platinum perk; the
+              // business Get paid page belongs to an active Platinum business.
+              userId: 'u1',
+              isBusiness: true,
+              membershipTier: MembershipTier.platinum,
+              membershipEndDate: _future)));
       when(() => service.config()).thenAnswer((_) async => const TicketPaymentsConfig());
       when(() => service.refreshAccounts()).thenAnswer((_) async {});
       when(() => service.watchAccounts(any()))

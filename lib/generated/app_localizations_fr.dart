@@ -24432,4 +24432,19 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get chatReplyNeedsBase => 'Il faut l’abonnement Base pour répondre';
+
+  @override
+  String get tierPaymentLinksRow => 'Liens de paiement sur votre profil';
+
+  @override
+  String get paymentLinksTierLocked =>
+      'Disponible avec Silver, Gold ou Platinum';
+
+  @override
+  String get paymentLinksTierLockedBody =>
+      'Vos moyens de paiement enregistrés sont masqués sur votre profil. Passez à Silver, Gold ou Platinum pour les afficher à nouveau.';
+
+  @override
+  String get paymentLinksTierUpsellBody =>
+      'Faites-vous payer directement par Pix, PayPal et plus. Passez à Silver, Gold ou Platinum pour ajouter des moyens de paiement à votre profil.';
 }
