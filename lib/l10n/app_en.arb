@@ -13316,5 +13316,7 @@
   "iosInstallHowTo": "How to install on your iPhone or iPad",
   "iosInstallBannerText": "Install GreenGo on your iPhone or iPad for the full app experience.",
   "iosInstallNotNow": "Not now",
-  "iosInstallShowMe": "Show me how"
+  "iosInstallShowMe": "Show me how",
+  "mySpaceTooltipWithTodo": "{count, plural, =1{My Space · 1 to-do} other{My Space · {count} to-dos}}",
+  "@mySpaceTooltipWithTodo": {"description": "Tooltip / screen-reader label of the My Space icon when there are to-dos", "placeholders": {"count": {"type": "int"}}}
 }

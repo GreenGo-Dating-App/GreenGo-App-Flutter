@@ -7437,5 +7437,6 @@
   "iosInstallHowTo": "Como instalar no seu iPhone ou iPad",
   "iosInstallBannerText": "Instale o GreenGo no seu iPhone ou iPad para ter a experiência completa do app.",
   "iosInstallNotNow": "Agora não",
-  "iosInstallShowMe": "Me mostre como"
+  "iosInstallShowMe": "Me mostre como",
+  "mySpaceTooltipWithTodo": "{count, plural, =1{Meu espaço · 1 tarefa} other{Meu espaço · {count} tarefas}}"
 }

@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/painting.dart';
 import 'package:get_it/get_it.dart';
 
+import '../../features/my_space/data/my_space_badge.dart';
 import '../../features/admin/domain/entities/tier_config.dart';
 import '../../features/business/data/services/follow_count_overlay.dart';
 import '../../features/chat/presentation/widgets/message_bubble.dart';
@@ -111,6 +112,7 @@ void registerDefaultSignOutSteps([SignOutCoordinator? coordinator]) {
     EventsPrefetch.reset();
     DiscoveryPrefetch.reset();
     OnboardingGate.reset();
+    MySpaceBadge.reset();
   });
   c.register(SignOutPhase.localData, 'cache.hive', (_) async {
     await LastResultCache.clear();

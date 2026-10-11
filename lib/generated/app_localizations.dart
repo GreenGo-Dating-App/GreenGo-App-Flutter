@@ -41156,6 +41156,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Show me how'**
   String get iosInstallShowMe;
+
+  /// Tooltip / screen-reader label of the My Space icon when there are to-dos
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{My Space · 1 to-do} other{My Space · {count} to-dos}}'**
+  String mySpaceTooltipWithTodo(int count);
 }
 
 class _AppLocalizationsDelegate

@@ -24028,4 +24028,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get iosInstallShowMe => 'Show me how';
+
+  @override
+  String mySpaceTooltipWithTodo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'My Space · $count to-dos',
+      one: 'My Space · 1 to-do',
+    );
+    return '$_temp0';
+  }
 }

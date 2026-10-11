@@ -24231,6 +24231,17 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get iosInstallShowMe => 'Mostra-me como';
+
+  @override
+  String mySpaceTooltipWithTodo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'O meu espaço · $count tarefas',
+      one: 'O meu espaço · 1 tarefa',
+    );
+    return '$_temp0';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -48472,4 +48483,15 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get iosInstallShowMe => 'Me mostre como';
+
+  @override
+  String mySpaceTooltipWithTodo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Meu espaço · $count tarefas',
+      one: 'Meu espaço · 1 tarefa',
+    );
+    return '$_temp0';
+  }
 }

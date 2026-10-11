@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:cached_network_image/cached_network_image.dart';
+import '../../../my_space/data/my_space_badge.dart';
 import '../../../../core/constants/business_categories.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -289,6 +290,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
   void initState() {
     super.initState();
     _seedPlaceFromOwnProfile();
+    // To-do count on the My Space icon (cached; cheap count() queries).
+    unawaited(MySpaceBadge.refresh(widget.userId));
     // The stats header (coins, tier, countries, chats) is at the TOP of the
     // page and depends on nothing location-based, so it starts NOW: last
     // known values on the first frame, live/fresh values right after —
@@ -2398,12 +2401,22 @@ class _ExploreScreenState extends State<ExploreScreen> {
           description: l10n.tourExploreQrDesc,
           gesture: TourGesture.tap,
           targetShapeBorder: const CircleBorder(),
-          child: _headerIconButton(
-            // My Space (events & experiences dashboard), not a plain scanner.
-            icon: Icons.space_dashboard_outlined,
-            tooltip: l10n.exploreQrTooltip,
-            onTap: () => Navigator.of(context).push(
-              QRHubScreen.route(currentUserId: widget.userId),
+          // My Space (events & experiences dashboard) with the number of
+          // to-dos that need action, like the notifications bell.
+          child: ValueListenableBuilder<int>(
+            valueListenable: MySpaceBadge.count,
+            builder: (context, todo, _) => _headerIconButton(
+              icon: Icons.space_dashboard_outlined,
+              tooltip: todo > 0
+                  ? l10n.mySpaceTooltipWithTodo(todo)
+                  : l10n.exploreQrTooltip,
+              badgeCount: todo,
+              onTap: () async {
+                await Navigator.of(context).push(
+                  QRHubScreen.route(currentUserId: widget.userId),
+                );
+                MySpaceBadge.refresh(widget.userId, force: true);
+              },
             ),
           ),
         ),

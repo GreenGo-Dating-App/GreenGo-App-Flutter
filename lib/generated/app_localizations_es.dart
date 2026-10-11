@@ -24258,4 +24258,15 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get iosInstallShowMe => 'Muéstrame cómo';
+
+  @override
+  String mySpaceTooltipWithTodo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mi espacio · $count pendientes',
+      one: 'Mi espacio · 1 pendiente',
+    );
+    return '$_temp0';
+  }
 }
