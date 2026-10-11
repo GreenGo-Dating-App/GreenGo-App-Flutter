@@ -13348,5 +13348,6 @@
   "membershipBenefitJoinEvents": "Join events and book experiences",
   "@membershipBenefitJoinEvents": {
     "description": "Membership benefit (Base and every tier above): joining events and booking experiences"
-  }
+  },
+  "chatReplyNeedsBase": "Base membership required to reply"
 }

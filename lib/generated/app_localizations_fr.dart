@@ -24429,4 +24429,7 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get membershipBenefitJoinEvents =>
       'Participer à des événements et réserver des expériences';
+
+  @override
+  String get chatReplyNeedsBase => 'Il faut l’abonnement Base pour répondre';
 }

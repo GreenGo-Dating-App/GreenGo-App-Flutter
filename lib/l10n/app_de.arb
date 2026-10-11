@@ -7444,5 +7444,6 @@
   "participationBaseRequiredBody": "Um an Events teilzunehmen und Erlebnisse zu buchen, brauchst du eine Basis-Mitgliedschaft (oder Silver, Gold oder Platinum).",
   "participationBaseRequiredCta": "Basis-Mitgliedschaft holen",
   "participationBaseRequiredHint": "Basis-Mitgliedschaft erforderlich",
-  "membershipBenefitJoinEvents": "An Events teilnehmen und Erlebnisse buchen"
+  "membershipBenefitJoinEvents": "An Events teilnehmen und Erlebnisse buchen",
+  "chatReplyNeedsBase": "Zum Antworten brauchst du die Basis-Mitgliedschaft"
 }

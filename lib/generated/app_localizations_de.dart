@@ -24347,4 +24347,8 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get membershipBenefitJoinEvents =>
       'An Events teilnehmen und Erlebnisse buchen';
+
+  @override
+  String get chatReplyNeedsBase =>
+      'Zum Antworten brauchst du die Basis-Mitgliedschaft';
 }

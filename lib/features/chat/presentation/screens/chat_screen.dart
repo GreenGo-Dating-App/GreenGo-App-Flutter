@@ -2120,8 +2120,12 @@ class _ChatScreenState extends State<ChatScreen> {
                 ),
               ),
 
-            // Input field
-            _buildInputField(context),
+            // Input field — or, without Base, a "Base required to reply" bar
+            // (messages can always be READ; the server refuses the send).
+            if (_canReply)
+              _buildInputField(context)
+            else
+              _buildReplyLockedBar(context),
           ],
         ),
         ),
@@ -3819,6 +3823,65 @@ class _ChatScreenState extends State<ChatScreen> {
             ],
           ),
         ],
+      ),
+    );
+  }
+
+  /// Replying needs a Base membership (or an active paid tier / TEST — see
+  /// [Profile.isBaseMembershipActive]). While the own profile is still
+  /// loading the composer stays available; the send path re-checks.
+  bool get _canReply =>
+      _currentUserProfile == null ||
+      _currentUserProfile!.isBaseMembershipActive ||
+      _currentUserProfile!.effectiveTier == MembershipTier.test;
+
+  /// Shown instead of the composer to users without Base: they can read the
+  /// conversation; replying opens the membership screen.
+  Widget _buildReplyLockedBar(BuildContext context) {
+    final l = AppLocalizations.of(context)!;
+    return Container(
+      key: const ValueKey('chat-reply-locked'),
+      decoration: const BoxDecoration(
+        color: AppColors.backgroundCard,
+        border: Border(top: BorderSide(color: AppColors.divider, width: 1)),
+      ),
+      child: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(16, 12, 16, 12),
+          child: Row(
+            children: [
+              const Icon(Icons.lock_outline, color: AppColors.richGold, size: 20),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Text(
+                  l.chatReplyNeedsBase,
+                  style: const TextStyle(color: AppColors.textSecondary, fontSize: 14),
+                ),
+              ),
+              const SizedBox(width: 8),
+              TextButton(
+                key: const ValueKey('chat-reply-get-base'),
+                style: TextButton.styleFrom(
+                  foregroundColor: AppColors.deepBlack,
+                  backgroundColor: AppColors.richGold,
+                  minimumSize: const Size(44, 44),
+                  padding: const EdgeInsets.symmetric(horizontal: 14),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                ),
+                onPressed: () async {
+                  await Navigator.of(context).push(MaterialPageRoute<void>(
+                    builder: (_) => MembershipScreen(currentUserId: widget.currentUserId),
+                  ));
+                  // Bought it? Reload so the composer appears right away.
+                  if (mounted) await _fetchCurrentUserName(forceServer: true);
+                  if (mounted) setState(() {});
+                },
+                child: Text(l.participationBaseRequiredCta,
+                    style: const TextStyle(fontWeight: FontWeight.w600)),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

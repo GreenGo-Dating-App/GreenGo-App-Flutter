@@ -24059,4 +24059,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get membershipBenefitJoinEvents => 'Join events and book experiences';
+
+  @override
+  String get chatReplyNeedsBase => 'Base membership required to reply';
 }

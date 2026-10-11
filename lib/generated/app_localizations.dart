@@ -41198,6 +41198,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Join events and book experiences'**
   String get membershipBenefitJoinEvents;
+
+  /// No description provided for @chatReplyNeedsBase.
+  ///
+  /// In en, this message translates to:
+  /// **'Base membership required to reply'**
+  String get chatReplyNeedsBase;
 }
 
 class _AppLocalizationsDelegate

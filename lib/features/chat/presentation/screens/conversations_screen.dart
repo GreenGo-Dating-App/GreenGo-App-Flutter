@@ -8,7 +8,6 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/providers/language_provider.dart';
 import '../../../../core/services/user_directory_service.dart';
-import '../../../../core/utils/base_membership_gate.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../profile/data/models/profile_model.dart';
@@ -750,23 +749,10 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                               );
                                             },
                                             onTap: () async {
-                                              // Base membership gate
-                                              final wasMember = _currentUserProfile
-                                                      ?.isBaseMembershipActive ??
-                                                  false;
-                                              final allowed =
-                                                  await BaseMembershipGate
-                                                      .checkAndGate(
-                                                context: context,
-                                                profile: _currentUserProfile,
-                                                userId: widget.userId,
-                                              );
-                                              if (!allowed) return;
-                                              // Refresh profile after successful purchase so gate won't block again
-                                              if (!wasMember)
-                                                await _loadCurrentUserProfile(
-                                                    forceServer: true);
-
+                                              // Reading received messages is
+                                              // free: only REPLYING needs a
+                                              // Base membership (gated inside
+                                              // the chat and by the server).
                                               if (profile != null) {
                                                 await Navigator.of(context)
                                                     .push(

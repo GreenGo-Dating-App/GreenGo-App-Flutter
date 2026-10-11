@@ -24263,6 +24263,10 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get membershipBenefitJoinEvents =>
       'Participar em eventos e reservar experiências';
+
+  @override
+  String get chatReplyNeedsBase =>
+      'É necessária a assinatura Base para responder';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -48536,4 +48540,8 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get membershipBenefitJoinEvents =>
       'Participar de eventos e reservar experiências';
+
+  @override
+  String get chatReplyNeedsBase =>
+      'É preciso ter a assinatura Base para responder';
 }

@@ -7444,5 +7444,6 @@
   "participationBaseRequiredBody": "Per partecipare agli eventi e prenotare esperienze ti serve un abbonamento base (oppure Silver, Gold o Platinum).",
   "participationBaseRequiredCta": "Attiva l'abbonamento base",
   "participationBaseRequiredHint": "Richiede l'abbonamento base",
-  "membershipBenefitJoinEvents": "Partecipare agli eventi e prenotare esperienze"
+  "membershipBenefitJoinEvents": "Partecipare agli eventi e prenotare esperienze",
+  "chatReplyNeedsBase": "Per rispondere serve l'abbonamento base"
 }

@@ -7444,5 +7444,6 @@
   "participationBaseRequiredBody": "Para unirte a eventos y reservar experiencias necesitas una membresía base (o Silver, Gold o Platinum).",
   "participationBaseRequiredCta": "Obtener la membresía base",
   "participationBaseRequiredHint": "Requiere membresía base",
-  "membershipBenefitJoinEvents": "Unirte a eventos y reservar experiencias"
+  "membershipBenefitJoinEvents": "Unirte a eventos y reservar experiencias",
+  "chatReplyNeedsBase": "Necesitas la membresía Base para responder"
 }
