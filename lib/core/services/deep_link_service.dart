@@ -20,6 +20,8 @@ import '../../features/events/presentation/screens/event_detail_loader_screen.da
 import '../../features/profile/presentation/bloc/profile_bloc.dart';
 import '../../features/profile/presentation/bloc/profile_event.dart';
 import '../../features/user_experiences/presentation/screens/experience_detail_screen.dart';
+import '../../features/referral/data/services/pending_referral_store.dart';
+import '../../features/referral/data/services/referral_auto_redeemer.dart';
 import '../../generated/app_localizations.dart';
 import '../di/injection_container.dart' as di;
 import 'push_notification_service.dart';
@@ -35,6 +37,9 @@ import 'push_notification_service.dart';
 ///   * Community: `https://greengo-chat.web.app/c/{communityId}` or `greengo://c/{communityId}`
 ///   * Experience: `https://greengo-chat.web.app/x/{experienceId}` or `greengo://x/{experienceId}`
 ///   * Attraction: `https://greengo-chat.web.app/a/{attractionId}` or `greengo://a/{attractionId}`
+///   * Invite:  `https://greengo-chat.web.app/r/{CODE}` or `greengo://r/{CODE}`
+///     (no screen opens: the code is stored as a PENDING referral and redeemed
+///     automatically after sign-up, see [ReferralAutoRedeemer])
 ///
 /// Tapping a link opens the app and:
 ///   * profile -> opens that user's profile ("profile first", via
@@ -94,6 +99,10 @@ class DeepLinkService {
   static String buildEventLink(String eventId) =>
       'https://$linkHost/e/${Uri.encodeComponent(eventId.trim())}';
 
+  /// Canonical invite link (friend gets 1 week of Base membership).
+  static String buildReferralLink(String code) =>
+      'https://$linkHost/r/${Uri.encodeComponent(code.trim().toUpperCase())}';
+
   /// Canonical shareable HTTPS link for a community.
   static String buildCommunityLink(String communityId) =>
       'https://$linkHost/c/${Uri.encodeComponent(communityId.trim())}';
@@ -113,14 +122,35 @@ class DeepLinkService {
     if (_webLaunchCaptured) return;
     _webLaunchCaptured = true;
     final target = parse(launchUri ?? Uri.base);
-    if (target != null) _pending = target;
+    if (target == null) return;
+    if (target.kind == DeepLinkKind.referral) {
+      unawaited(_captureReferral(target.id));
+      return;
+    }
+    _pending = target;
   }
+
+  /// Invite links never navigate: keep the code for the automatic redemption
+  /// and try it right away when someone is already signed in (a new account
+  /// that finished onboarding before tapping the link).
+  Future<void> _captureReferral(String code) async {
+    await referralStore.save(code);
+    if (_homeAttached && FirebaseAuth.instance.currentUser != null) {
+      await ReferralAutoRedeemer.instance.tryRedeem();
+    }
+  }
+
+  /// Where invite codes from links are kept (overridable in tests).
+  PendingReferralStore referralStore = PendingReferralStore();
 
   /// Called by the signed-in home shell ([owner] = its State) once it has
   /// painted. Opens any pending link on top of it.
   void attachHome(Object owner) {
     _homeShells.add(owner);
     if (kIsWeb) captureWebLaunchLink();
+    // A pending invite (link opened before sign-up, or a retry after a
+    // network error) is redeemed silently; the server decides eligibility.
+    unawaited(ReferralAutoRedeemer.instance.tryRedeem());
     final target = _pending;
     if (target == null) return;
     _pending = null;
@@ -172,6 +202,10 @@ class DeepLinkService {
       debugPrint('DeepLinkService: ignoring unrecognized link "$uri"');
       return;
     }
+    if (target.kind == DeepLinkKind.referral) {
+      unawaited(_captureReferral(target.id));
+      return;
+    }
     if (!_homeAttached) {
       // Cold start / signed out: open once the home shell is up.
       _pending = target;
@@ -181,6 +215,7 @@ class DeepLinkService {
   }
 
   static final RegExp _idPattern = RegExp(r'^[A-Za-z0-9_-]{1,128}$');
+  static final RegExp _referralCodePattern = RegExp(r'^[A-Za-z0-9]{4,16}$');
 
   /// Extract a target from an https universal link, the `greengo://` custom
   /// scheme, or the web app's `?link=/u/{id}` hand-off. Returns null for
@@ -222,6 +257,10 @@ class DeepLinkService {
       final kind = segments[i].toLowerCase();
       final id = segments[i + 1].trim();
       if (!_idPattern.hasMatch(id)) continue;
+      if (kind == 'r') {
+        if (!_referralCodePattern.hasMatch(id)) continue;
+        return DeepLinkTarget(DeepLinkKind.referral, id.toUpperCase());
+      }
       if (kind == 'u') return DeepLinkTarget(DeepLinkKind.profile, id);
       if (kind == 'e') return DeepLinkTarget(DeepLinkKind.event, id);
       if (kind == 'c') return DeepLinkTarget(DeepLinkKind.community, id);
@@ -286,6 +325,8 @@ class DeepLinkService {
       Navigator.of(context).push(TicketOrderScreen.route(target.id));
     } else if (target.kind == DeepLinkKind.getPaid) {
       Navigator.of(context).push(GetPaidScreen.route(currentUserId));
+    } else if (target.kind == DeepLinkKind.referral) {
+      unawaited(_captureReferral(target.id)); // never navigates
     } else {
       Navigator.of(context).push(
         EventDetailLoaderScreen.route(
@@ -352,6 +393,7 @@ enum DeepLinkKind {
   attraction,
   ticketOrder,
   getPaid,
+  referral,
 }
 
 @immutable
@@ -522,6 +564,18 @@ Future<void> shareEventLink(BuildContext context, String eventId,
   final text = eventShareText(link: link, l10n: _l10n(context), title: t);
   await shareLinkText(context,
       text: text, link: link, subject: t.isNotEmpty ? t : null);
+}
+
+/// Share the user's invite link (`/r/{CODE}`) via the OS share sheet
+/// (clipboard on desktop web). The link unfurls into an "X invited you to
+/// GreenGo" card rendered by the `sharePreview` function.
+Future<void> shareReferralLink(BuildContext context, String code) async {
+  if (code.trim().isEmpty) return;
+  final l10n = AppLocalizations.of(context);
+  if (l10n == null) return;
+  final link = DeepLinkService.buildReferralLink(code);
+  await shareLinkText(context,
+      text: l10n.referralShareLinkMessage(link), link: link);
 }
 
 /// Share a community deep link via the OS share sheet (same preview card as

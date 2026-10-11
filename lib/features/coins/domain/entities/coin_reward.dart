@@ -127,12 +127,13 @@ class CoinRewards {
     maxClaims: 1,
   );
 
-  /// Refer a friend: 100 coins
+  /// Refer a friend: 50 coins (paid server-side by redeemReferral, capped at
+  /// 1,000 coins a month; see functions/src/referral/referralRules.ts).
   static const CoinReward referFriend = CoinReward(
     rewardId: 'refer_friend',
     name: 'Refer a Friend', // i18n-ignore: internal reward catalogue, never displayed
     description: 'Invite a friend to join GreenGo', // i18n-ignore: internal reward catalogue, never displayed
-    coinAmount: 100,
+    coinAmount: 50,
     type: RewardType.referral,
     isRecurring: true,
   );

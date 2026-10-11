@@ -4,15 +4,18 @@ import 'package:flutter/services.dart';
 import 'package:get_it/get_it.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/services/deep_link_service.dart';
 import '../../../../core/widgets/glass_container.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/services/referral_service.dart';
+import '../widgets/referral_progress_card.dart';
 
 // on first run, instead of requiring manual entry below.
 
-/// Glass UI for the referral loop: shows the user's code, a Share action, an
-/// invited-count / coins-earned summary, a redemption field and a short
-/// "how it works".
+/// Glass UI for the invite-friends loop: the user's code, a Share action, an
+/// invited-count / coins-earned summary, the milestone ladder (5 -> Silver,
+/// 10 -> Gold, 20 -> Platinum) and the rules. Counts come from the
+/// server-authoritative `referral_stats/{uid}` document.
 class ReferralScreen extends StatefulWidget {
   const ReferralScreen({super.key, this.userId});
 
@@ -33,14 +36,14 @@ class _ReferralScreenState extends State<ReferralScreen> {
 
   /// Created once so a rebuild never re-subscribes (and never flashes back
   /// to an empty state).
-  Stream<ReferralStats>? _statsStream;
+  Stream<ReferralProgress>? _progressStream;
 
   @override
   void initState() {
     super.initState();
     _userId = widget.userId ?? FirebaseAuth.instance.currentUser?.uid ?? '';
     if (_userId.isNotEmpty) {
-      _statsStream = _service.statsStream(_userId);
+      _progressStream = _service.progressStream(_userId);
     }
     _loadCode();
   }
@@ -91,14 +94,21 @@ class _ReferralScreenState extends State<ReferralScreen> {
     );
   }
 
-  Future<void> _shareCode() async {
+  /// Opens the share sheet with the invite LINK (friends never type a code:
+  /// the link carries it and the app redeems it automatically after sign-up).
+  Future<void> _shareLink(BuildContext buttonContext) async {
+    final code = _code;
+    if (code == null) return;
+    await shareReferralLink(buttonContext, code);
+  }
+
+  Future<void> _copyLink() async {
     final l10n = AppLocalizations.of(context)!;
     final code = _code;
     if (code == null) return;
-    // No share_plus dependency — copy an invite message to the clipboard.
-    final message = '${l10n.referralShareMessage}\n$code';
-    await Clipboard.setData(ClipboardData(text: message));
-    _snack(l10n.inviteCodeCopied);
+    await Clipboard.setData(
+        ClipboardData(text: DeepLinkService.buildReferralLink(code)));
+    _snack(l10n.shareLinkCopied);
   }
 
   @override
@@ -125,7 +135,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                 const SizedBox(height: 20),
                 _buildCodeCard(l10n),
                 const SizedBox(height: 16),
-                _buildStatsCard(l10n),
+                _buildProgress(l10n),
                 const SizedBox(height: 16),
                 _buildHowItWorks(l10n),
               ],
@@ -162,7 +172,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            l10n.referralYourCode,
+            l10n.referralYourLink,
             style: const TextStyle(
               color: AppColors.textSecondary,
               fontSize: 13,
@@ -206,36 +216,50 @@ class _ReferralScreenState extends State<ReferralScreen> {
               children: [
                 Expanded(
                   child: SelectableText(
-                    _code ?? '------',
+                    _code == null
+                        ? ''
+                        : DeepLinkService.buildReferralLink(_code!),
+                    key: const Key('referralInviteLink'),
                     style: const TextStyle(
                       color: AppColors.richGold,
-                      fontSize: 30,
-                      fontWeight: FontWeight.w700,
-                      letterSpacing: 6,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w600,
                     ),
                   ),
                 ),
                 IconButton(
                   icon: const Icon(Icons.copy, color: AppColors.textSecondary),
-                  onPressed: _code == null ? null : _shareCode,
+                  tooltip: l10n.shareLinkCopied,
+                  onPressed: _code == null ? null : _copyLink,
                 ),
               ],
             ),
-          const SizedBox(height: 16),
-          ElevatedButton.icon(
-            onPressed: _code == null ? null : _shareCode,
-            style: ElevatedButton.styleFrom(
-              backgroundColor: AppColors.richGold,
-              foregroundColor: AppColors.deepBlack,
-              padding: const EdgeInsets.symmetric(vertical: 14),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(14),
-              ),
+          const SizedBox(height: 8),
+          Text(
+            l10n.referralLinkHowItWorks,
+            style: const TextStyle(
+              color: AppColors.textSecondary,
+              fontSize: 12,
+              height: 1.4,
             ),
-            icon: const Icon(Icons.share),
-            label: Text(
-              l10n.referralShareCta,
-              style: const TextStyle(fontWeight: FontWeight.w600),
+          ),
+          const SizedBox(height: 16),
+          Builder(
+            builder: (buttonContext) => ElevatedButton.icon(
+              onPressed: _code == null ? null : () => _shareLink(buttonContext),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.richGold,
+                foregroundColor: AppColors.deepBlack,
+                padding: const EdgeInsets.symmetric(vertical: 14),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(14),
+                ),
+              ),
+              icon: const Icon(Icons.share),
+              label: Text(
+                l10n.referralShareCta,
+                style: const TextStyle(fontWeight: FontWeight.w600),
+              ),
             ),
           ),
         ],
@@ -243,42 +267,53 @@ class _ReferralScreenState extends State<ReferralScreen> {
     );
   }
 
-  Widget _buildStatsCard(AppLocalizations l10n) {
-    final statsStream = _statsStream;
-    if (statsStream == null) return const SizedBox.shrink();
-    return StreamBuilder<ReferralStats>(
-      stream: statsStream,
+  Widget _buildProgress(AppLocalizations l10n) {
+    final progressStream = _progressStream;
+    if (progressStream == null) return const SizedBox.shrink();
+    return StreamBuilder<ReferralProgress>(
+      stream: progressStream,
       builder: (context, snapshot) {
-        final stats = snapshot.data;
-        final invited = stats?.invitedCount ?? 0;
-        final earned = stats?.coinsEarned ?? 0;
-        return GlassContainer(
-          padding: const EdgeInsets.all(20),
-          child: Row(
-            children: [
-              Expanded(
-                child: _statTile(
-                  value: '$invited',
-                  label: l10n.referralCountLabel,
-                  icon: Icons.group,
-                ),
-              ),
-              Container(
-                width: 1,
-                height: 44,
-                color: Colors.white.withValues(alpha: 0.12),
-              ),
-              Expanded(
-                child: _statTile(
-                  value: '$earned',
-                  label: l10n.referralRewardEarned,
-                  icon: Icons.monetization_on,
-                ),
-              ),
-            ],
-          ),
+        final progress = snapshot.data ?? ReferralProgress.empty;
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            _buildStatsCard(l10n, progress),
+            const SizedBox(height: 16),
+            ReferralProgressCard(progress: progress),
+          ],
         );
       },
+    );
+  }
+
+  Widget _buildStatsCard(AppLocalizations l10n, ReferralProgress progress) {
+    final invited = progress.invitedCount;
+    final earned = progress.coinsEarned;
+    return GlassContainer(
+      padding: const EdgeInsets.all(20),
+      child: Row(
+        children: [
+          Expanded(
+            child: _statTile(
+              value: '$invited',
+              label: l10n.referralCountLabel,
+              icon: Icons.group,
+            ),
+          ),
+          Container(
+            width: 1,
+            height: 44,
+            color: Colors.white.withValues(alpha: 0.12),
+          ),
+          Expanded(
+            child: _statTile(
+              value: '$earned',
+              label: l10n.referralRewardEarned,
+              icon: Icons.monetization_on,
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -340,16 +375,37 @@ class _ReferralScreenState extends State<ReferralScreen> {
           const SizedBox(height: 12),
           // Full rules, always wrapped (no maxLines / ellipsis). Numbers come
           // from the server-mirrored constants in ReferralService.
-          Text(
-            l10n.referralHowItWorks(
+          _ruleLine(Icons.card_membership, l10n.referralRuleFriendGets),
+          _ruleLine(
+            Icons.monetization_on,
+            l10n.referralRuleYouGet(
               ReferralService.referrerCoinReward,
               ReferralService.referrerMonthlyCap,
             ),
-            softWrap: true,
-            style: const TextStyle(
-              color: AppColors.textSecondary,
-              fontSize: 13,
-              height: 1.5,
+          ),
+          _ruleLine(Icons.emoji_events, l10n.referralRuleAlwaysCounts),
+        ],
+      ),
+    );
+  }
+
+  Widget _ruleLine(IconData icon, String text) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 4),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(icon, color: AppColors.richGold, size: 16),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              text,
+              softWrap: true,
+              style: const TextStyle(
+                color: AppColors.textSecondary,
+                fontSize: 13,
+                height: 1.5,
+              ),
             ),
           ),
         ],

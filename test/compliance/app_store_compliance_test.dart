@@ -63,10 +63,50 @@ void main() {
       );
       final offenders = <String>[];
       for (final f in dartFiles) {
+        if (_isLinkAttribution(f)) continue;
         if (forbidden.hasMatch(f.readAsStringSync())) offenders.add(f.path);
       }
       expect(offenders, isEmpty,
           reason: 'A client must not be able to redeem a code.');
+    });
+
+    // Owner decision (2026-10-11): invitations are attributed AUTOMATICALLY
+    // from an invite LINK (/r/{CODE}). The only client path to redeemReferral
+    // is ReferralAutoRedeemer, which takes the code from PendingReferralStore
+    // (filled only by DeepLinkService from a link) - never from user input.
+    test('invite attribution is link-only: no code-entry UI anywhere', () {
+      final redeemer = File(_linkAttributionFile).readAsStringSync();
+      expect(redeemer.contains('TextField'), isFalse);
+      expect(redeemer.contains('TextEditingController'), isFalse);
+
+      // The callable is reached from nowhere else.
+      final callers = dartFiles
+          .where((f) => f.readAsStringSync().contains("'redeemReferral'"))
+          .map((f) => f.path.replaceAll(r'\', '/'))
+          .toList();
+      expect(callers, [_linkAttributionFile],
+          reason: 'Only the link-attribution service may call redeemReferral.');
+
+      // The old "Have a referral code?" field keys stay unused.
+      final codeEntryKeys =
+          RegExp(r'referralCode(Title|Label|Hint)|inviteCodeField');
+      final keyOffenders = dartFiles
+          .where((f) => codeEntryKeys.hasMatch(f.readAsStringSync()))
+          .map((f) => f.path)
+          .toList();
+      expect(keyOffenders, isEmpty,
+          reason: 'No screen may ask the user to type a referral code.');
+
+      // No text input on the invite-friends screens.
+      final referralUi = dartFiles.where((f) => f.path
+          .replaceAll(r'\', '/')
+          .contains('features/referral/presentation'));
+      for (final f in referralUi) {
+        final src = f.readAsStringSync();
+        expect(
+            src.contains('TextField') || src.contains('TextFormField'), isFalse,
+            reason: '${f.path} must not contain a code-entry field.');
+      }
     });
 
     test('no promo-code lookup survives', () {
@@ -86,7 +126,8 @@ void main() {
           File('lib/features/coins/domain/entities/coin_balance.dart')
               .readAsStringSync();
       expect(source.contains('expirationDate'), isFalse,
-          reason: 'Apple: "Purchased credits or currencies ... may never expire."');
+          reason:
+              'Apple: "Purchased credits or currencies ... may never expire."');
       expect(source.contains('isExpired'), isFalse);
       expect(source.contains('daysUntilExpiration'), isFalse);
     });
@@ -144,31 +185,32 @@ void main() {
     late Map<String, dynamic> catalogue;
 
     setUpAll(() {
-      catalogue = jsonDecode(File('tool/store_products.json').readAsStringSync())
-          as Map<String, dynamic>;
+      catalogue =
+          jsonDecode(File('tool/store_products.json').readAsStringSync())
+              as Map<String, dynamic>;
     });
 
     test('canonical subscription IDs match the submitted catalogue', () {
       final expected = (catalogue['subscriptions']
-              as Map<String, dynamic>)['canonical'] as List<dynamic>;
+          as Map<String, dynamic>)['canonical'] as List<dynamic>;
       expect(ProductCatalog.canonicalIds, expected.cast<String>(),
           reason: 'A drifted product ID fails only at runtime, in front of a '
               'reviewer. tool/store_products.json is the source of truth.');
     });
 
     test('coin pack product IDs match the submitted catalogue', () {
-      final expected = (catalogue['consumables']
-              as Map<String, dynamic>)['ios'] as List<dynamic>;
+      final expected = (catalogue['consumables'] as Map<String, dynamic>)['ios']
+          as List<dynamic>;
       final actual =
           CoinPackages.standardPackages.map((p) => p.productId).toList();
       expect(actual, expected.cast<String>());
     });
 
     test('the catalogue really is 11 products', () {
-      final subs = (catalogue['subscriptions']
-              as Map<String, dynamic>)['ios'] as List<dynamic>;
-      final coins = (catalogue['consumables']
-              as Map<String, dynamic>)['ios'] as List<dynamic>;
+      final subs = (catalogue['subscriptions'] as Map<String, dynamic>)['ios']
+          as List<dynamic>;
+      final coins = (catalogue['consumables'] as Map<String, dynamic>)['ios']
+          as List<dynamic>;
       expect(subs.length + coins.length, catalogue['expectedTotal']);
     });
   });
@@ -230,11 +272,13 @@ void main() {
       // Matching the guard as two fragments rather than one multi-line
       // string keeps this robust to reformatting of the rules file.
       final updateRule = rules.substring(
-        rules.indexOf('allow update: if publicProfileUpdateOk() && ((isOwner(profileId)'),
+        rules.indexOf(
+            'allow update: if publicProfileUpdateOk() && ((isOwner(profileId)'),
         rules.indexOf('allow delete: if isOwner(profileId)'),
       );
       expect(
-        updateRule.contains("request.resource.data.get('isAgeVerified', false)") &&
+        updateRule.contains(
+                "request.resource.data.get('isAgeVerified', false)") &&
             updateRule.contains("resource.data.get('isAgeVerified', false)"),
         isTrue,
         reason: 'profile update must hold isAgeVerified immutable.',
@@ -245,7 +289,8 @@ void main() {
       // delete + create was a way around the update guard.
       final createRule = rules.substring(
         rules.indexOf('allow create: if isOwner(profileId)'),
-        rules.indexOf('allow update: if publicProfileUpdateOk() && ((isOwner(profileId)'),
+        rules.indexOf(
+            'allow update: if publicProfileUpdateOk() && ((isOwner(profileId)'),
       );
       for (final flag in ['isAdmin', 'isBanned', 'isAgeVerified']) {
         expect(createRule.contains("'$flag'"), isTrue,
@@ -327,17 +372,21 @@ void main() {
 /// Removes `//` line comments and `/* */` block comments so a source scan
 /// tests what the app can SHOW, not what its authors wrote about it.
 String _stripDartComments(String source) {
-  final withoutBlocks = source.replaceAll(RegExp(r'/\*.*?\*/', dotAll: true), '');
-  return withoutBlocks
-      .split('\n')
-      .map((line) {
-        final idx = line.indexOf('//');
-        if (idx == -1) return line;
-        // Keep the line if the // sits inside a string literal.
-        final before = line.substring(0, idx);
-        final quotes =
-            "'".allMatches(before).length + '"'.allMatches(before).length;
-        return quotes.isOdd ? line : before;
-      })
-      .join('\n');
+  final withoutBlocks =
+      source.replaceAll(RegExp(r'/\*.*?\*/', dotAll: true), '');
+  return withoutBlocks.split('\n').map((line) {
+    final idx = line.indexOf('//');
+    if (idx == -1) return line;
+    // Keep the line if the // sits inside a string literal.
+    final before = line.substring(0, idx);
+    final quotes =
+        "'".allMatches(before).length + '"'.allMatches(before).length;
+    return quotes.isOdd ? line : before;
+  }).join('\n');
 }
+
+const String _linkAttributionFile =
+    'lib/features/referral/data/services/referral_auto_redeemer.dart';
+
+bool _isLinkAttribution(File f) =>
+    f.path.replaceAll(r'\', '/').endsWith(_linkAttributionFile);

@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
@@ -5,6 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/error/failures.dart';
 import '../../../../core/services/photo_validation_service.dart';
+import '../../../referral/data/services/referral_auto_redeemer.dart';
 import '../../domain/entities/profile.dart';
 import '../../domain/usecases/create_profile.dart';
 import '../../domain/usecases/upload_photo.dart';
@@ -18,7 +20,10 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     required this.createProfile,
     required this.uploadPhoto,
     required this.verifyPhoto,
-  }) : super(const OnboardingInitial()) {
+    Future<Object?> Function()? redeemPendingReferral,
+  })  : _redeemPendingReferral = redeemPendingReferral ??
+            (() => ReferralAutoRedeemer.instance.tryRedeem()),
+        super(const OnboardingInitial()) {
     on<OnboardingStarted>(_onOnboardingStarted);
     on<OnboardingNextStep>(_onOnboardingNextStep);
     on<OnboardingPreviousStep>(_onOnboardingPreviousStep);
@@ -41,6 +46,7 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
   final CreateProfile createProfile;
   final UploadPhoto uploadPhoto;
   final VerifyPhoto verifyPhoto;
+  final Future<Object?> Function() _redeemPendingReferral;
 
   void _onOnboardingStarted(
     OnboardingStarted event,
@@ -404,6 +410,17 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
           // NOTE: We intentionally do NOT auto-grant a 7-day Base membership
           // trial here. The trial comes from the App Store / Play subscription
           // itself, so nothing in the app needs to offer or activate it.
+
+          // Invite link (/r/{CODE}) opened before sign-up: redeem it now,
+          // silently and without blocking (server checks eligibility; the
+          // friend is told about the Base week by a notification).
+          unawaited(() async {
+            try {
+              await _redeemPendingReferral();
+            } catch (e) {
+              debugPrint('Onboarding: pending invite not redeemed yet: $e');
+            }
+          }());
 
           emit(currentState.copyWith(
             submitStage: OnboardingSubmitStage.finishingUp,

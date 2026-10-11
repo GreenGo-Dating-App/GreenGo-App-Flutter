@@ -11664,7 +11664,7 @@ class AppLocalizationsEs extends AppLocalizations {
         intl.NumberFormat.decimalPattern(localeName);
     final String monthlyCapString = monthlyCapNumberFormat.format(monthlyCap);
 
-    return 'Comparte tu código: cuando un amigo se una con él, tú ganas $coinsString monedas (hasta $monthlyCapString al mes) y tu amigo recibe 1 mes de Platinum.';
+    return 'Comparte tu código. Cuando un amigo se una con él, recibe 1 semana de membresía Base y tú ganas $coinsString monedas (hasta $monthlyCapString al mes), además de recompensas de membresía con 5, 10 y 20 amigos.';
   }
 
   @override
@@ -24178,4 +24178,147 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get communitiesJoinedSection => 'Todas mis comunidades';
+
+  @override
+  String get referralRuleFriendGets =>
+      'Tu amigo recibe 1 semana de membresía Base';
+
+  @override
+  String referralRuleYouGet(int coins, int monthlyCap) {
+    final intl.NumberFormat coinsNumberFormat =
+        intl.NumberFormat.decimalPattern(localeName);
+    final String coinsString = coinsNumberFormat.format(coins);
+    final intl.NumberFormat monthlyCapNumberFormat =
+        intl.NumberFormat.decimalPattern(localeName);
+    final String monthlyCapString = monthlyCapNumberFormat.format(monthlyCap);
+
+    return 'Tú recibes $coinsString monedas por cada amigo que se una (hasta $monthlyCapString monedas al mes)';
+  }
+
+  @override
+  String get referralRuleAlwaysCounts =>
+      'Cada amigo que se une cuenta para tus metas, incluso después de alcanzar el límite mensual de monedas.';
+
+  @override
+  String get referralMilestonesTitle => 'Metas';
+
+  @override
+  String referralMilestoneFriends(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count amigos',
+      one: '1 amigo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String referralMilestoneReward(String tier) {
+    return '1 mes de $tier';
+  }
+
+  @override
+  String referralFriendsJoined(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count amigos se han unido',
+      one: '1 amigo se ha unido',
+      zero: 'Aún no se ha unido ningún amigo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String referralMoreToTier(int remaining, String tier) {
+    String _temp0 = intl.Intl.pluralLogic(
+      remaining,
+      locale: localeName,
+      other: '$remaining más para $tier',
+      one: '1 más para $tier',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralAllMilestonesUnlocked =>
+      'Todas las metas desbloqueadas. ¡Gracias por invitar a tus amigos!';
+
+  @override
+  String get referralMilestoneUnlocked => 'Desbloqueado';
+
+  @override
+  String get srvReferralFriendJoinedTitle => 'Un amigo se unió a GreenGo';
+
+  @override
+  String srvReferralCoinsBody(int amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      amount,
+      locale: localeName,
+      other: 'Ganaste $amount monedas por invitar a un amigo.',
+      one: 'Ganaste 1 moneda por invitar a un amigo.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvReferralCapReachedBody(int cap) {
+    return 'Alcanzaste el límite de $cap monedas por invitaciones de este mes, pero este amigo sigue contando para tus metas.';
+  }
+
+  @override
+  String get srvReferralMilestoneTitle => '¡Meta desbloqueada!';
+
+  @override
+  String srvReferralMilestoneBody(int count, String tier) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count amigos se unieron con tu código: recibes 1 mes de membresía $tier.',
+      one: '1 amigo se unió con tu código: recibes 1 mes de membresía $tier.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get srvReferralWelcomeTitle => '¡Bienvenido a GreenGo!';
+
+  @override
+  String get srvReferralWelcomeBody =>
+      'Gracias a la invitación de tu amigo, recibes 1 semana de membresía Base.';
+
+  @override
+  String referralShareLinkMessage(String link) {
+    return '¡Únete a mí en GreenGo! Con mi invitación recibes 1 semana de membresía Base gratis: $link';
+  }
+
+  @override
+  String get referralYourLink => 'Tu enlace de invitación';
+
+  @override
+  String get referralLinkHowItWorks =>
+      'Los amigos que se unan a GreenGo a través de tu enlace se cuentan automáticamente. No hay que escribir ningún código.';
+
+  @override
+  String get srvReferralPreviewTitle => 'Te invitaron a GreenGo';
+
+  @override
+  String srvReferralPreviewTitleNamed(String name) {
+    return '$name te invitó a GreenGo';
+  }
+
+  @override
+  String get srvReferralPreviewBody =>
+      'Únete con esta invitación y recibe 1 semana de membresía Base gratis. Descubre personas, culturas, eventos y comunidades de todo el mundo.';
+
+  @override
+  String get srvReferralPreviewOpenApp => 'Abrir en la app';
+
+  @override
+  String get srvReferralPreviewGetApp => 'Descargar la app';
+
+  @override
+  String get srvReferralPreviewWeb => 'Continuar en la web';
 }

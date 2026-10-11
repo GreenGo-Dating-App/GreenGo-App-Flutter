@@ -20526,10 +20526,10 @@ abstract class AppLocalizations {
   /// **'Friends invited'**
   String get referralCountLabel;
 
-  /// Referral rules. Values mirror functions/src/referral/redeemReferral.ts (REFERRER_COIN_REWARD, REFERRER_MONTHLY_CAP, PLATINUM_DURATION_MS = 1 month).
+  /// Referral rules (edit-profile subtitle). Values mirror REFERRER_COIN_REWARD / REFERRER_MONTHLY_CAP in functions/src/referral/referralRules.ts; milestones 5/10/20.
   ///
   /// In en, this message translates to:
-  /// **'Share your code — when a friend joins with it, you earn {coins} coins (up to {monthlyCap} a month) and they get 1 month of Platinum.'**
+  /// **'Share your code. When a friend joins with it, they get 1 week of Base membership and you earn {coins} coins (up to {monthlyCap} a month), plus membership rewards at 5, 10 and 20 friends.'**
   String referralHowItWorks(int coins, int monthlyCap);
 
   /// No description provided for @referralHowItWorksTitle.
@@ -41132,6 +41132,162 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'All joined'**
   String get communitiesJoinedSection;
+
+  /// No description provided for @referralRuleFriendGets.
+  ///
+  /// In en, this message translates to:
+  /// **'Your friend gets 1 week of Base membership'**
+  String get referralRuleFriendGets;
+
+  /// Invite-friends rule. Values mirror REFERRER_COIN_REWARD / REFERRER_MONTHLY_CAP in functions/src/referral/referralRules.ts.
+  ///
+  /// In en, this message translates to:
+  /// **'You get {coins} coins per friend who joins (up to {monthlyCap} coins a month)'**
+  String referralRuleYouGet(int coins, int monthlyCap);
+
+  /// No description provided for @referralRuleAlwaysCounts.
+  ///
+  /// In en, this message translates to:
+  /// **'Every friend who joins counts toward your milestones, even after you reach the monthly coin limit.'**
+  String get referralRuleAlwaysCounts;
+
+  /// No description provided for @referralMilestonesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Milestones'**
+  String get referralMilestonesTitle;
+
+  /// Invite-friends milestone threshold (5, 10, 20).
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 friend} other{{count} friends}}'**
+  String referralMilestoneFriends(int count);
+
+  /// Invite-friends milestone reward; tier is the localized tier name (membershipSilver/Gold/Platinum).
+  ///
+  /// In en, this message translates to:
+  /// **'1 month of {tier}'**
+  String referralMilestoneReward(String tier);
+
+  /// Invite-friends progress: lifetime friends who joined with the code (server-authoritative).
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No friends have joined yet} =1{1 friend joined} other{{count} friends joined}}'**
+  String referralFriendsJoined(int count);
+
+  /// Invite-friends progress toward the next milestone; tier is the localized tier name.
+  ///
+  /// In en, this message translates to:
+  /// **'{remaining, plural, =1{1 more to {tier}} other{{remaining} more to {tier}}}'**
+  String referralMoreToTier(int remaining, String tier);
+
+  /// No description provided for @referralAllMilestonesUnlocked.
+  ///
+  /// In en, this message translates to:
+  /// **'All milestones unlocked. Thank you for inviting your friends!'**
+  String get referralAllMilestonesUnlocked;
+
+  /// No description provided for @referralMilestoneUnlocked.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlocked'**
+  String get referralMilestoneUnlocked;
+
+  /// No description provided for @srvReferralFriendJoinedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A friend joined GreenGo'**
+  String get srvReferralFriendJoinedTitle;
+
+  /// Server notification (redeemReferral) to the inviter.
+  ///
+  /// In en, this message translates to:
+  /// **'{amount, plural, =1{You earned 1 coin for inviting a friend.} other{You earned {amount} coins for inviting a friend.}}'**
+  String srvReferralCoinsBody(int amount);
+
+  /// Server notification (redeemReferral) to the inviter when the monthly coin cap is reached.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve reached this month\'s limit of {cap} referral coins, but this friend still counts toward your milestones.'**
+  String srvReferralCapReachedBody(int cap);
+
+  /// No description provided for @srvReferralMilestoneTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Milestone unlocked!'**
+  String get srvReferralMilestoneTitle;
+
+  /// Server notification (redeemReferral) for an invite milestone; tier is a brand name (Silver/Gold/Platinum).
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 friend joined with your code: you get 1 month of {tier} membership.} other{{count} friends joined with your code: you get 1 month of {tier} membership.}}'**
+  String srvReferralMilestoneBody(int count, String tier);
+
+  /// No description provided for @srvReferralWelcomeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to GreenGo!'**
+  String get srvReferralWelcomeTitle;
+
+  /// No description provided for @srvReferralWelcomeBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Thanks to your friend\'s invitation, you get 1 week of Base membership.'**
+  String get srvReferralWelcomeBody;
+
+  /// Invite-friends share text; link is https://greengo-chat.web.app/r/{CODE}.
+  ///
+  /// In en, this message translates to:
+  /// **'Join me on GreenGo! With my invitation you get 1 week of Base membership free: {link}'**
+  String referralShareLinkMessage(String link);
+
+  /// No description provided for @referralYourLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Your invite link'**
+  String get referralYourLink;
+
+  /// No description provided for @referralLinkHowItWorks.
+  ///
+  /// In en, this message translates to:
+  /// **'Friends who join GreenGo through your link are counted automatically. There is no code to type.'**
+  String get referralLinkHowItWorks;
+
+  /// No description provided for @srvReferralPreviewTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'re invited to GreenGo'**
+  String get srvReferralPreviewTitle;
+
+  /// Invite link preview (sharePreview /r/): name is the inviter public display name.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} invited you to GreenGo'**
+  String srvReferralPreviewTitleNamed(String name);
+
+  /// No description provided for @srvReferralPreviewBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Join with this invitation and get 1 week of Base membership free. Discover people, cultures, events and communities around the world.'**
+  String get srvReferralPreviewBody;
+
+  /// No description provided for @srvReferralPreviewOpenApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Open in the app'**
+  String get srvReferralPreviewOpenApp;
+
+  /// No description provided for @srvReferralPreviewGetApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Get the app'**
+  String get srvReferralPreviewGetApp;
+
+  /// No description provided for @srvReferralPreviewWeb.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue on the web'**
+  String get srvReferralPreviewWeb;
 }
 
 class _AppLocalizationsDelegate

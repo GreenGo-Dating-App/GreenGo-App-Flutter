@@ -980,6 +980,17 @@ service cloud.firestore {
       allow delete: if false;
     }
 
+    // referral_stats/{userId} = { ownerId, invitedCount, coinsEarned,
+    //   milestonesGranted: [5, 10, 20], milestonesFailed?, updatedAt }
+    // SERVER-AUTHORITATIVE invite counter (redeemReferral, in the same
+    // transaction as the redemption claim and the milestone claims). The owner
+    // may read their own doc for the invite-friends screen; nobody else may
+    // read it and no client may write it (Admin SDK only).
+    match /referral_stats/{userId} {
+      allow read: if isOwner(userId);
+      allow write: if false;
+    }
+
     // ============================================================================
     // COIN TRANSACTIONS COLLECTION (alternate path)
     // ============================================================================

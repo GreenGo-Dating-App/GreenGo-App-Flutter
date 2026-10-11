@@ -64,6 +64,7 @@ import {
   renderHtml,
 } from './sharePreviewCore';
 import type { AppLocale } from '../shared/i18n';
+import { handleReferralPreview } from './referralPreview';
 
 const MAX_SOURCE_BYTES = 15 * 1024 * 1024;
 
@@ -200,6 +201,7 @@ export const sharePreview = onRequest(
       res.status(405).send('method not allowed');
       return;
     }
+    if (await handleReferralPreview(req, res)) return; // /r/{CODE} invite links
     const parsed = parseSharePath(req.path);
     if (!parsed) {
       res.redirect(302, HOST);

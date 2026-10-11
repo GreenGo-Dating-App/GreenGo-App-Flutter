@@ -5498,9 +5498,9 @@
   "referralShareMessage": "Join me on GreenGo!",
   "referralRewardEarned": "Coins earned",
   "referralCountLabel": "Friends invited",
-  "referralHowItWorks": "Share your code — when a friend joins with it, you earn {coins} coins (up to {monthlyCap} a month) and they get 1 month of Platinum.",
+  "referralHowItWorks": "Share your code. When a friend joins with it, they get 1 week of Base membership and you earn {coins} coins (up to {monthlyCap} a month), plus membership rewards at 5, 10 and 20 friends.",
   "@referralHowItWorks": {
-    "description": "Referral rules. Values mirror functions/src/referral/redeemReferral.ts (REFERRER_COIN_REWARD, REFERRER_MONTHLY_CAP, PLATINUM_DURATION_MS = 1 month).",
+    "description": "Referral rules (edit-profile subtitle). Values mirror REFERRER_COIN_REWARD / REFERRER_MONTHLY_CAP in functions/src/referral/referralRules.ts; milestones 5/10/20.",
     "placeholders": {
       "coins": {
         "type": "int",
@@ -13202,5 +13202,122 @@
   "communitiesJoinedSection": "All joined",
   "@communitiesJoinedSection": {
     "description": "Communities Joined tab: section below favorites"
-  }
+  },
+  "referralRuleFriendGets": "Your friend gets 1 week of Base membership",
+  "referralRuleYouGet": "You get {coins} coins per friend who joins (up to {monthlyCap} coins a month)",
+  "@referralRuleYouGet": {
+    "description": "Invite-friends rule. Values mirror REFERRER_COIN_REWARD / REFERRER_MONTHLY_CAP in functions/src/referral/referralRules.ts.",
+    "placeholders": {
+      "coins": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "monthlyCap": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "referralRuleAlwaysCounts": "Every friend who joins counts toward your milestones, even after you reach the monthly coin limit.",
+  "referralMilestonesTitle": "Milestones",
+  "referralMilestoneFriends": "{count, plural, =1{1 friend} other{{count} friends}}",
+  "@referralMilestoneFriends": {
+    "description": "Invite-friends milestone threshold (5, 10, 20).",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "referralMilestoneReward": "1 month of {tier}",
+  "@referralMilestoneReward": {
+    "description": "Invite-friends milestone reward; tier is the localized tier name (membershipSilver/Gold/Platinum).",
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "referralFriendsJoined": "{count, plural, =0{No friends have joined yet} =1{1 friend joined} other{{count} friends joined}}",
+  "@referralFriendsJoined": {
+    "description": "Invite-friends progress: lifetime friends who joined with the code (server-authoritative).",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "referralMoreToTier": "{remaining, plural, =1{1 more to {tier}} other{{remaining} more to {tier}}}",
+  "@referralMoreToTier": {
+    "description": "Invite-friends progress toward the next milestone; tier is the localized tier name.",
+    "placeholders": {
+      "remaining": {
+        "type": "int"
+      },
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "referralAllMilestonesUnlocked": "All milestones unlocked. Thank you for inviting your friends!",
+  "referralMilestoneUnlocked": "Unlocked",
+  "srvReferralFriendJoinedTitle": "A friend joined GreenGo",
+  "srvReferralCoinsBody": "{amount, plural, =1{You earned 1 coin for inviting a friend.} other{You earned {amount} coins for inviting a friend.}}",
+  "@srvReferralCoinsBody": {
+    "description": "Server notification (redeemReferral) to the inviter.",
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "srvReferralCapReachedBody": "You've reached this month's limit of {cap} referral coins, but this friend still counts toward your milestones.",
+  "@srvReferralCapReachedBody": {
+    "description": "Server notification (redeemReferral) to the inviter when the monthly coin cap is reached.",
+    "placeholders": {
+      "cap": {
+        "type": "int"
+      }
+    }
+  },
+  "srvReferralMilestoneTitle": "Milestone unlocked!",
+  "srvReferralMilestoneBody": "{count, plural, =1{1 friend joined with your code: you get 1 month of {tier} membership.} other{{count} friends joined with your code: you get 1 month of {tier} membership.}}",
+  "@srvReferralMilestoneBody": {
+    "description": "Server notification (redeemReferral) for an invite milestone; tier is a brand name (Silver/Gold/Platinum).",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "srvReferralWelcomeTitle": "Welcome to GreenGo!",
+  "srvReferralWelcomeBody": "Thanks to your friend's invitation, you get 1 week of Base membership.",
+  "referralShareLinkMessage": "Join me on GreenGo! With my invitation you get 1 week of Base membership free: {link}",
+  "@referralShareLinkMessage": {
+    "description": "Invite-friends share text; link is https://greengo-chat.web.app/r/{CODE}.",
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "referralYourLink": "Your invite link",
+  "referralLinkHowItWorks": "Friends who join GreenGo through your link are counted automatically. There is no code to type.",
+  "srvReferralPreviewTitle": "You're invited to GreenGo",
+  "srvReferralPreviewTitleNamed": "{name} invited you to GreenGo",
+  "@srvReferralPreviewTitleNamed": {
+    "description": "Invite link preview (sharePreview /r/): name is the inviter public display name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "srvReferralPreviewBody": "Join with this invitation and get 1 week of Base membership free. Discover people, cultures, events and communities around the world.",
+  "srvReferralPreviewOpenApp": "Open in the app",
+  "srvReferralPreviewGetApp": "Get the app",
+  "srvReferralPreviewWeb": "Continue on the web"
 }
