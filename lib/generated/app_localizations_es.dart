@@ -23179,6 +23179,14 @@ class AppLocalizationsEs extends AppLocalizations {
       'Tu cuenta no tiene un correo electrónico al que enviar la lista.';
 
   @override
+  String get participantsEmailNoBookings =>
+      'Nadie ha reservado esta experiencia todavía, así que no hay lista de participantes que enviar.';
+
+  @override
+  String get participantsEmailUnavailable =>
+      'El envío de correos no está disponible temporalmente. Inténtalo de nuevo más tarde.';
+
+  @override
   String get checkoutOrganizerShareNotice =>
       'Tu nombre y tu correo electrónico se compartirán con el organizador para el acceso.';
 

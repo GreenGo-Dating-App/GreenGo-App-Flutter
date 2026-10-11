@@ -36,7 +36,26 @@ void main() {
     expect(ParticipantsListService.outcomeFor('permission-denied', 'not_organizer'),
         ParticipantsListOutcome.failed);
     expect(ParticipantsListService.outcomeFor('unavailable', 'email_failed'),
+        ParticipantsListOutcome.emailUnavailable);
+    expect(ParticipantsListService.outcomeFor('unavailable', 'email_not_configured'),
+        ParticipantsListOutcome.emailUnavailable);
+    expect(ParticipantsListService.outcomeFor('failed-precondition', 'no_upcoming_slot'),
+        ParticipantsListOutcome.noBookings);
+    expect(ParticipantsListService.outcomeFor('internal', 'participants_internal_error'),
         ParticipantsListOutcome.failed);
+  });
+
+  testWidgets('no-bookings and email-unavailable messages are localized', (tester) async {
+    late AppLocalizations l;
+    await tester.pumpWidget(_app(Builder(builder: (c) {
+      l = AppLocalizations.of(c)!;
+      return const SizedBox();
+    }), locale: const Locale('it')));
+    await tester.pumpAndSettle();
+    expect(participantsListMessage(l, ParticipantsListOutcome.noBookings), contains('prenotato'));
+    expect(participantsListMessage(l, ParticipantsListOutcome.emailUnavailable), contains('email'));
+    expect(participantsListMessage(l, ParticipantsListOutcome.noBookings),
+        isNot(participantsListMessage(l, ParticipantsListOutcome.failed)));
   });
 
   testWidgets('sharing notice is localized', (tester) async {

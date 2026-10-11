@@ -23224,6 +23224,14 @@ class AppLocalizationsDe extends AppLocalizations {
       'Dein Konto hat keine E-Mail-Adresse für den Versand.';
 
   @override
+  String get participantsEmailNoBookings =>
+      'Für dieses Erlebnis hat noch niemand gebucht, daher gibt es keine Teilnehmerliste zum Senden.';
+
+  @override
+  String get participantsEmailUnavailable =>
+      'Der E-Mail-Versand ist vorübergehend nicht verfügbar. Bitte versuch es später erneut.';
+
+  @override
   String get checkoutOrganizerShareNotice =>
       'Dein Name und deine E-Mail-Adresse werden für den Einlass an den Veranstalter weitergegeben.';
 

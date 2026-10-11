@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '../../generated/app_localizations.dart';
 
 /// Result of asking the server to email the participants list.
-enum ParticipantsListOutcome { sent, rateLimited, noEmail, failed }
+enum ParticipantsListOutcome { sent, rateLimited, noEmail, noBookings, emailUnavailable, failed }
 
 /// Organizer tool: emails the participants list (CSV) of an event or an
 /// experience slot to the caller's account email (`sendParticipantsList`
@@ -42,6 +42,12 @@ class ParticipantsListService {
     if (code == 'failed-precondition' && reason == 'no_email') {
       return ParticipantsListOutcome.noEmail;
     }
+    // No upcoming slot with bookings: nobody to list (not a failure).
+    if (code == 'failed-precondition' && reason == 'no_upcoming_slot') {
+      return ParticipantsListOutcome.noBookings;
+    }
+    // Email delivery not configured / provider down: nothing was sent.
+    if (code == 'unavailable') return ParticipantsListOutcome.emailUnavailable;
     return ParticipantsListOutcome.failed;
   }
 }
@@ -55,6 +61,10 @@ String participantsListMessage(AppLocalizations l, ParticipantsListOutcome outco
       return l.participantsEmailRateLimited;
     case ParticipantsListOutcome.noEmail:
       return l.participantsEmailNoEmail;
+    case ParticipantsListOutcome.noBookings:
+      return l.participantsEmailNoBookings;
+    case ParticipantsListOutcome.emailUnavailable:
+      return l.participantsEmailUnavailable;
     case ParticipantsListOutcome.failed:
       return l.participantsEmailFailed;
   }

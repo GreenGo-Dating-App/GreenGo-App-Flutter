@@ -23152,6 +23152,14 @@ class AppLocalizationsPt extends AppLocalizations {
       'A tua conta não tem um e-mail para onde enviar a lista.';
 
   @override
+  String get participantsEmailNoBookings =>
+      'Ainda ninguém reservou esta experiência, por isso não há lista de participantes para enviar.';
+
+  @override
+  String get participantsEmailUnavailable =>
+      'O envio de e-mails está temporariamente indisponível. Tenta novamente mais tarde.';
+
+  @override
   String get checkoutOrganizerShareNotice =>
       'O teu nome e e-mail serão partilhados com o organizador para a entrada.';
 
@@ -46983,6 +46991,14 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get participantsEmailNoEmail =>
       'Sua conta não tem um e-mail para receber a lista.';
+
+  @override
+  String get participantsEmailNoBookings =>
+      'Ninguém reservou esta experiência ainda, então não há lista de participantes para enviar.';
+
+  @override
+  String get participantsEmailUnavailable =>
+      'O envio de e-mails está temporariamente indisponível. Tente novamente mais tarde.';
 
   @override
   String get checkoutOrganizerShareNotice =>

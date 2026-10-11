@@ -7182,6 +7182,8 @@
   "participantsEmailRateLimited": "L’hai appena richiesto. Riprova tra qualche minuto.",
   "participantsEmailFailed": "Impossibile inviare l’elenco dei partecipanti. Riprova più tardi.",
   "participantsEmailNoEmail": "Il tuo account non ha un indirizzo email a cui inviare l’elenco.",
+  "participantsEmailNoBookings": "Nessuno ha ancora prenotato questa esperienza, quindi non c’è un elenco dei partecipanti da inviare.",
+  "participantsEmailUnavailable": "L’invio delle email è temporaneamente non disponibile. Riprova più tardi.",
   "checkoutOrganizerShareNotice": "Il tuo nome e la tua email saranno condivisi con l’organizzatore per l’ingresso.",
   "openSourceLicensesTitle": "Licenze open source",
   "openSourceLicensesSubtitle": "Font e componenti software usati in questa app",

@@ -7182,6 +7182,8 @@
   "participantsEmailRateLimited": "Acabaste de a pedir. Tenta novamente daqui a alguns minutos.",
   "participantsEmailFailed": "Não foi possível enviar a lista de participantes. Tenta mais tarde.",
   "participantsEmailNoEmail": "A tua conta não tem um e-mail para onde enviar a lista.",
+  "participantsEmailNoBookings": "Ainda ninguém reservou esta experiência, por isso não há lista de participantes para enviar.",
+  "participantsEmailUnavailable": "O envio de e-mails está temporariamente indisponível. Tenta novamente mais tarde.",
   "checkoutOrganizerShareNotice": "O teu nome e e-mail serão partilhados com o organizador para a entrada.",
   "openSourceLicensesTitle": "Licenças de código aberto",
   "openSourceLicensesSubtitle": "Tipos de letra e componentes de software usados nesta aplicação",

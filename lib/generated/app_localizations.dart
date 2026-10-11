@@ -39579,6 +39579,18 @@ abstract class AppLocalizations {
   /// **'Your account has no email address to send the list to.'**
   String get participantsEmailNoEmail;
 
+  /// No description provided for @participantsEmailNoBookings.
+  ///
+  /// In en, this message translates to:
+  /// **'No one has booked this experience yet, so there is no participants list to send.'**
+  String get participantsEmailNoBookings;
+
+  /// No description provided for @participantsEmailUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Email sending is temporarily unavailable. Please try again later.'**
+  String get participantsEmailUnavailable;
+
   /// No description provided for @checkoutOrganizerShareNotice.
   ///
   /// In en, this message translates to:

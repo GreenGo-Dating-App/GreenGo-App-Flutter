@@ -23313,6 +23313,14 @@ class AppLocalizationsFr extends AppLocalizations {
       'Votre compte n’a pas d’adresse e-mail pour recevoir la liste.';
 
   @override
+  String get participantsEmailNoBookings =>
+      'Personne n’a encore réservé cette expérience, il n’y a donc pas de liste de participants à envoyer.';
+
+  @override
+  String get participantsEmailUnavailable =>
+      'L’envoi d’e-mails est temporairement indisponible. Réessayez plus tard.';
+
+  @override
   String get checkoutOrganizerShareNotice =>
       'Votre nom et votre e-mail seront communiqués à l’organisateur pour l’entrée.';
 
