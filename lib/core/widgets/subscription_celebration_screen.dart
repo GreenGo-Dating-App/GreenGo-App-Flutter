@@ -3,6 +3,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../../features/coins/domain/entities/coin_transaction.dart'
+    show CoinFeaturePrices;
 import '../../features/subscription/domain/entities/subscription.dart';
 import '../../generated/app_localizations.dart';
 import '../../features/subscription/presentation/tier_l10n.dart';
@@ -187,20 +189,13 @@ class _SubscriptionCelebrationScreenState
     return [const Color(0xFF808080), const Color(0xFFC0C0C0), const Color(0xFFD3D3D3)];
   }
 
-  /// Build tier-specific benefit rows from the tier's features map
+  /// Tier-specific benefit rows, read from the tier's REAL entitlements
+  /// ([SubscriptionTier.features] -> TierEntitlements). Nothing is listed
+  /// that the plan does not include.
   List<Widget> _buildTierBenefits() {
     final l10n = AppLocalizations.of(context)!;
     final tier = widget.tier;
-    if (tier == null) {
-      // Fallback to generic features if no tier provided
-      return [
-        _buildFeatureRow(Icons.favorite, l10n.celebrationUnlimitedLikes),
-        const SizedBox(height: 12),
-        _buildFeatureRow(Icons.visibility, l10n.celebrationSeeWhoLikedYou),
-        const SizedBox(height: 12),
-        _buildFeatureRow(Icons.flash_on, l10n.shopPriorityMatching),
-      ];
-    }
+    if (tier == null) return const [];
 
     final features = tier.features;
     final rows = <Widget>[];
@@ -210,73 +205,44 @@ class _SubscriptionCelebrationScreenState
       rows.add(_buildBenefitRow(icon, label, value));
     }
 
-    // Daily Connects
+    String limit(Object? v) {
+      final n = v is int ? v : 0;
+      return n < 0 ? l10n.unlimited : '$n';
+    }
+
     final dailyConnects = features['dailyConnects'] as int? ?? 0;
-    if (dailyConnects == -1) {
-      addRow(Icons.handshake, l10n.membershipDailyLikes, l10n.unlimited);
-    } else if (dailyConnects > 0) {
-      addRow(Icons.handshake, l10n.membershipDailyLikes, '$dailyConnects');
+    if (dailyConnects != 0) {
+      addRow(Icons.handshake, l10n.shopDailyConnects, limit(dailyConnects));
     }
-
-    // Priority Connects
-    final priorityConnects = features['priorityConnects'] as int? ?? 0;
-    if (priorityConnects == -1) {
-      addRow(Icons.star, l10n.superLikes, l10n.unlimited);
-    } else if (priorityConnects > 0) {
-      addRow(Icons.star, l10n.superLikes, l10n.celebrationPerDay(priorityConnects));
+    final events = features['eventsCreate'] as int? ?? 0;
+    if (events != 0) {
+      addRow(Icons.event_available, l10n.shopEventsCreate, limit(events));
     }
-
-    // Rewinds
-    final rewinds = features['rewinds'] as int? ?? 0;
-    if (rewinds == -1) {
-      addRow(Icons.replay, l10n.membershipRewinds, l10n.unlimited);
-    } else if (rewinds > 0) {
-      addRow(Icons.replay, l10n.membershipRewinds, l10n.celebrationPerDay(rewinds));
+    final boosts = features['boostsPerMonth'] as int? ?? 0;
+    if (boosts > 0) {
+      addRow(Icons.flash_on, l10n.shopMonthlyBoosts, '$boosts');
     }
-
-    // Badge
-    if (features['badge'] == true) {
-      addRow(Icons.workspace_premium, l10n.shopBadge, '✓');
+    final coins = features['monthlyCoins'] as int? ?? 0;
+    if (coins > 0) {
+      addRow(Icons.monetization_on, l10n.shopMonthlyCoins, '$coins');
     }
-
-    // Read Receipts
-    if (features['readReceipts'] == true) {
-      addRow(Icons.done_all, l10n.membershipReadReceipts, '✓');
+    if (features['travelMode'] == true) {
+      addRow(
+        Icons.flight,
+        l10n.shopTravelMode,
+        features['travelModeFree'] == true
+            ? l10n.tierFree
+            : l10n.profileCoinsPerDay(CoinFeaturePrices.traveler),
+      );
     }
-
-    // Advanced Filters
-    if (features['advancedFilters'] == true) {
-      addRow(Icons.tune, l10n.membershipAdvancedFilters, '✓');
+    if (features['ghostMode'] == true) {
+      addRow(Icons.visibility_off, l10n.profileGhostMode, '✓');
     }
-
-    // Incognito Mode
-    if (features['incognitoMode'] == true) {
-      addRow(Icons.visibility_off, l10n.membershipIncognitoMode, '✓');
-    }
-
-    // Priority Support
     if (features['prioritySupport'] == true) {
       addRow(Icons.support_agent, l10n.membershipPrioritySupport, '✓');
     }
-
-    // Travelling (Platinum)
-    if (features['travelling'] == true) {
-      addRow(Icons.flight, l10n.shopTravelling, l10n.unlimited);
-    }
-
-    // VIP Badge (Platinum)
-    if (features['vipBadge'] == true) {
-      addRow(Icons.verified, l10n.shopVipBadge, '✓');
-    }
-
-    // Priority Matching (Platinum)
-    if (features['priorityMatching'] == true) {
-      addRow(Icons.flash_on, l10n.shopPriorityMatching, '✓');
-    }
-
-    // Exclusive Events (Platinum)
-    if (features['exclusiveEvents'] == true) {
-      addRow(Icons.event_available, l10n.celebrationExclusiveEvents, '✓');
+    if (features['businessAccount'] == true) {
+      addRow(Icons.storefront, l10n.shopBusinessAccount, '✓');
     }
 
     return rows;
@@ -475,23 +441,6 @@ class _SubscriptionCelebrationScreenState
           ),
         ],
       ),
-    );
-  }
-
-  Widget _buildFeatureRow(IconData icon, String text) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Icon(icon, color: _tierColor, size: 20),
-        const SizedBox(width: 10),
-        Text(
-          text,
-          style: const TextStyle(
-            color: AppColors.textPrimary,
-            fontSize: 15,
-          ),
-        ),
-      ],
     );
   }
 

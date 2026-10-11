@@ -11,6 +11,7 @@ import '../constants/app_colors.dart';
 import '../di/injection_container.dart' as di;
 import '../widgets/limit_reached_dialog.dart';
 import 'effective_tier.dart';
+import 'entitlement_usage.dart';
 import 'tier_entitlements.dart';
 import 'tier_limits_service.dart';
 import 'usage_limit_service.dart';
@@ -37,34 +38,52 @@ class TierGateResult {
   bool get isUnlimited => limit == null;
 }
 
-/// Central membership-tier ENFORCEMENT gate.
+/// Free monthly boosts of a user: the plan's allowance and what is left this
+/// (UTC) month. Boosts beyond it cost CoinFeaturePrices.boost coins.
+class BoostAllowance {
+  const BoostAllowance({
+    required this.tier,
+    required this.allowance,
+    required this.used,
+  });
+
+  final MembershipTier tier;
+  final int allowance;
+  final int used;
+
+  int get left => used >= allowance ? 0 : allowance - used;
+
+  /// Boosts are not part of the free plan at all.
+  bool get available => allowance > 0;
+}
+
+/// Central membership-tier gate (the UX side of the caps).
 ///
-/// Resolves the user's tier from `profiles/{uid}.membershipTier` and answers
-/// "is the user allowed to do X right now?" for the actions whose caps live in
+/// Resolves the user's EFFECTIVE tier from `profiles/{uid}` and answers "is the
+/// user allowed to do X right now?" for the actions whose caps live in
 /// [TierEntitlements]:
 ///   • daily new-people connects (vs [TierEntitlements.maxDailyConnects]),
-///   • profile boosts this month (vs [TierEntitlements.boostsPerMonth]),
+///   • free profile boosts this month ([TierEntitlements.boostsPerMonth]),
 ///   • create-event / create-group (delegated to [TierLimitsService]).
+///
+/// The SERVER enforces the same caps (Firestore rules + Cloud Functions, audit
+/// 2026-10-11); the counts shown here are read from its counters
+/// (`entitlement_usage/{uid}`, see entitlement_usage.dart), so the app shows
+/// exactly what the server will accept.
 ///
 /// The `ensureX` helpers additionally surface the upgrade path (reusing
 /// [LimitReachedDialog] / [FeatureNotAvailableDialog]) and route to the
 /// membership marketplace on deny, returning `false` so callers can bail.
-///
-/// Counting is cheap and per-user: daily connects reuse [UsageLimitService]'s
-/// day counters; monthly boosts use a dedicated `usageLimits/{uid}/months`
-/// document so they survive logout/login and scale (single indexed read).
 class TierGate {
   TierGate({
     FirebaseFirestore? firestore,
     TierLimitsService? tierLimits,
-    UsageLimitService? usageLimits,
   })  : _firestore = firestore ?? FirebaseFirestore.instance,
-        _tierLimits = tierLimits ?? TierLimitsService(),
-        _usageLimits = usageLimits ?? UsageLimitService();
+        _tierLimits =
+            tierLimits ?? TierLimitsService(firestore: firestore);
 
   final FirebaseFirestore _firestore;
   final TierLimitsService _tierLimits;
-  final UsageLimitService _usageLimits;
 
   // ── Tier resolution ────────────────────────────────────────────────────────
 
@@ -89,10 +108,25 @@ class TierGate {
     }
   }
 
+  /// The server-owned usage counters of [uid] (null when none yet).
+  Future<Map<String, dynamic>?> _usage(String uid) async {
+    try {
+      final doc = await _firestore
+          .collection(kEntitlementUsageCollection)
+          .doc(uid)
+          .get()
+          .timeout(const Duration(seconds: 6));
+      return doc.data();
+    } catch (_) {
+      return null;
+    }
+  }
+
   // ── Daily connects ─────────────────────────────────────────────────────────
 
   /// Whether [uid] may start a NEW connection today under their tier's
-  /// [TierEntitlements.maxDailyConnects] cap (null cap = unlimited).
+  /// [TierEntitlements.maxDailyConnects] cap (null cap = unlimited). Counted
+  /// by the server per UTC day; the rules refuse the create over the cap.
   Future<TierGateResult> canConnectToday(String uid) async {
     final tier = await resolveTier(uid);
     final limit = TierEntitlements.maxDailyConnects(tier);
@@ -100,79 +134,38 @@ class TierGate {
       return TierGateResult(
           allowed: true, tier: tier, current: 0, limit: null);
     }
-    final current =
-        await _usageLimits.getCurrentUsage(uid, UsageLimitType.connects);
+    final current = connectsTodayFrom(await _usage(uid), DateTime.now());
     return TierGateResult(
       allowed: current < limit,
       tier: tier,
       current: current,
       limit: limit,
-    );
-  }
-
-  /// Counts one successful NEW connection toward today's cap.
-  Future<void> recordConnect(String uid) {
-    return _usageLimits.recordUsage(
-      userId: uid,
-      limitType: UsageLimitType.connects,
     );
   }
 
   // ── Monthly boosts ─────────────────────────────────────────────────────────
 
-  /// Whether [uid] may activate a profile boost this month under their tier's
-  /// [TierEntitlements.boostsPerMonth] allotment. A 0 allotment (Base) is
-  /// always denied — boosts are simply not included on that plan.
+  /// The free boosts of [uid]'s plan and how many are left this month.
+  Future<BoostAllowance> boostAllowance(String uid,
+      {MembershipTier? knownTier}) async {
+    final tier = knownTier ?? await resolveTier(uid);
+    final allowance = TierEntitlements.boostsPerMonth(tier);
+    final used = allowance > 0
+        ? freeBoostsUsedFrom(await _usage(uid), DateTime.now())
+        : 0;
+    return BoostAllowance(tier: tier, allowance: allowance, used: used);
+  }
+
+  /// Whether [uid] may boost at all: every paid plan may (free boosts first,
+  /// then coins); the free plan may not.
   Future<TierGateResult> canBoost(String uid) async {
-    final tier = await resolveTier(uid);
-    final limit = TierEntitlements.boostsPerMonth(tier);
-    if (limit <= 0) {
-      return TierGateResult(allowed: false, tier: tier, current: 0, limit: limit);
-    }
-    final current = await _boostsThisMonth(uid);
+    final a = await boostAllowance(uid);
     return TierGateResult(
-      allowed: current < limit,
-      tier: tier,
-      current: current,
-      limit: limit,
+      allowed: a.available,
+      tier: a.tier,
+      current: a.used,
+      limit: a.allowance,
     );
-  }
-
-  /// Counts one activated boost toward this month's allotment.
-  Future<void> recordBoost(String uid) async {
-    try {
-      await _firestore
-          .collection('usageLimits')
-          .doc(uid)
-          .collection('months')
-          .doc(_monthKey())
-          .set({
-        'boostCount': FieldValue.increment(1),
-        'lastUpdated': FieldValue.serverTimestamp(),
-      }, SetOptions(merge: true));
-    } catch (_) {
-      // Non-fatal: an uncounted boost simply isn't debited against the cap.
-    }
-  }
-
-  Future<int> _boostsThisMonth(String uid) async {
-    try {
-      final doc = await _firestore
-          .collection('usageLimits')
-          .doc(uid)
-          .collection('months')
-          .doc(_monthKey())
-          .get();
-      return (doc.data()?['boostCount'] as num?)?.toInt() ?? 0;
-    } catch (_) {
-      return 0;
-    }
-  }
-
-  /// Monthly key: YYYY-MM (resets every calendar month).
-  String _monthKey() {
-    final now = DateTime.now();
-    return '${now.year}-${now.month.toString().padLeft(2, '0')}';
   }
 
   // ── Create event / group (pass-through to TierLimitsService) ────────────────
@@ -195,45 +188,22 @@ class TierGate {
     return false;
   }
 
-  /// Returns true if the user may boost this month; otherwise shows either the
-  /// "feature not on your plan" dialog (Base) or the monthly-limit dialog and
-  /// returns false.
+  /// Returns true if the user's plan includes boosts (free monthly boosts,
+  /// then coins); on the free plan shows the "feature not on your plan"
+  /// dialog and returns false.
   Future<bool> ensureBoost(BuildContext context, String uid) async {
     final result = await canBoost(uid);
     if (result.allowed) return true;
     if (!context.mounted) return false;
-
-    if ((result.limit ?? 0) <= 0) {
-      // Base tier — boosts are not part of the plan at all.
-      final l10n = AppLocalizations.of(context)!;
-      final r = await FeatureNotAvailableDialog.show(
-        context: context,
-        featureName: l10n.boostFeatureName,
-        description: l10n.boostRequiresTierDescription,
-        currentTier: result.tier,
-        requiredTier: MembershipTier.silver,
-        userId: uid,
-        icon: Icons.flash_on,
-      );
-      if (context.mounted) _maybeUpgrade(context, r, uid);
-      return false;
-    }
-
-    // Paid tier — monthly allotment exhausted.
     final l10n = AppLocalizations.of(context)!;
-    final usageResult = UsageLimitResult(
-      isAllowed: false,
-      currentUsage: result.current,
-      limit: result.limit ?? 0,
-      remaining: 0,
-      message: l10n.boostMonthlyLimitReached(result.limit ?? 0),
-      currentTier: result.tier,
-      suggestedTier: _nextTier(result.tier),
-    );
-    final r = await LimitReachedDialog.show(
+    final r = await FeatureNotAvailableDialog.show(
       context: context,
-      limitResult: usageResult,
+      featureName: l10n.boostFeatureName,
+      description: l10n.boostRequiresTierDescription,
+      currentTier: result.tier,
+      requiredTier: MembershipTier.silver,
       userId: uid,
+      icon: Icons.flash_on,
     );
     if (context.mounted) _maybeUpgrade(context, r, uid);
     return false;

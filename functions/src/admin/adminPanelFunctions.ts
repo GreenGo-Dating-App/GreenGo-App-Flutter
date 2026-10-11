@@ -21,6 +21,8 @@ import { scrubPII, redact } from '../shared/redact';
 import { applyProfileAgeGate } from '../auth/ageGate';
 import { getAiConsentState, hasSupportAiConsent } from '../shared/aiConsent';
 import { t } from '../shared/i18n';
+import { effectiveTier, EffectiveTier } from '../shared/effectiveTier';
+import { hasPrioritySupport, supportPriorityFor } from '../shared/tierLimits';
 
 const db = admin.firestore();
 const auth = admin.auth();
@@ -803,7 +805,39 @@ export const processAISupportMessage = functions
 // =============================================================================
 
 /**
- * When a new support chat is created, set default values
+ * Priority support (audit 2026-10-11, H2): Gold and Platinum tickets are
+ * handled first. The priority is decided HERE from the owner's EFFECTIVE tier
+ * at creation - never by the client (rules keep `priority`, `priorityRank`,
+ * `prioritySupport` and `userMembershipTier` server-owned). The admin queue
+ * orders by `priorityRank` desc, then `lastMessageAt` desc.
+ */
+/** Queue rank of a stored priority (staff may escalate in the panel). */
+export const SUPPORT_PRIORITY_RANK: Record<string, number> = { urgent: 3, high: 2, normal: 1, medium: 1, low: 0 };
+
+/**
+ * `existingPriority` is what the doc already holds: clients may only write
+ * 'normal' (rules), so anything higher was set by staff and is kept.
+ */
+export async function supportPriorityFields(userId: unknown, existingPriority?: unknown): Promise<Record<string, any>> {
+  let tier: EffectiveTier = 'FREE';
+  if (typeof userId === 'string' && userId && !userId.includes('/')) {
+    const profile = await db.collection('profiles').doc(userId).get();
+    tier = effectiveTier(profile.data());
+  }
+  const p = supportPriorityFor(tier);
+  const staffRank = typeof existingPriority === 'string' ? SUPPORT_PRIORITY_RANK[existingPriority] ?? -1 : -1;
+  const keepStaff = staffRank > p.priorityRank;
+  return {
+    priority: keepStaff ? existingPriority : p.priority,
+    priorityRank: keepStaff ? staffRank : p.priorityRank,
+    prioritySupport: hasPrioritySupport(tier),
+    userMembershipTier: tier,
+  };
+}
+
+/**
+ * When a new support chat is created, set default values and the
+ * tier-based priority.
  */
 export const onSupportChatCreated = functions
   .runWith({ memory: '512MB' })
@@ -815,7 +849,9 @@ export const onSupportChatCreated = functions
     const updates: Record<string, any> = {};
 
     if (!chat.status) updates.status = 'open';
-    if (!chat.priority) updates.priority = 'normal';
+    // Server-decided priority (overrides whatever the client sent; staff
+    // escalations to 'urgent' made later in the panel are kept untouched).
+    Object.assign(updates, await supportPriorityFields(chat.userId, chat.priority));
     if (!chat.createdAt) updates.createdAt = admin.firestore.FieldValue.serverTimestamp();
     if (!chat.updatedAt) updates.updatedAt = admin.firestore.FieldValue.serverTimestamp();
     if (chat.unreadCount === undefined) updates.unreadCount = 1;
@@ -851,7 +887,14 @@ export const onSupportMessageCreated = functions
     const isFromUser = message.senderType === 'user';
     const isFromAdmin = message.senderType === 'admin';
 
+    // Tickets opened before priority support existed get their rank the
+    // first time a message arrives (lazy backfill; one profile read).
+    const priorityBackfill = typeof currentData.priorityRank === 'number'
+      ? {}
+      : await supportPriorityFields(currentData.userId, currentData.priority);
+
     await conversationRef.update({
+      ...priorityBackfill,
       lastMessage: (message.content || '').substring(0, 100),
       lastMessageAt: admin.firestore.FieldValue.serverTimestamp(),
       lastMessageBy: message.senderType,

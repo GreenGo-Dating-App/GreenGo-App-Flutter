@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/di/injection_container.dart' as di;
 import '../../../core/services/tier_gate.dart';
+import '../../membership/domain/entities/membership.dart';
 import '../../../core/services/user_directory_service.dart';
 import '../../../generated/app_localizations.dart';
 import '../../profile/domain/entities/profile.dart';
@@ -168,39 +169,59 @@ Future<void> openConnectChat(
       return;
     }
     if (isNewConnect) {
-      // NEW connect: run the daily-limit gate and the conversation create
-      // CONCURRENTLY (they touch different docs) so the open is as fast as a
-      // single round-trip instead of two sequential ones. Both are bounded.
-      final createFuture = dataSource
-          .getOrCreateSearchConversation(
-            currentUserId: currentUserId,
-            otherUserId: otherUserId,
-            businessInquiry: isBusinessChat,
-          )
-          .timeout(const Duration(seconds: 12));
-
+      // NEW connect: the daily cap is enforced by the SERVER (the rules refuse
+      // the create over the cap; the counter is entitlement_usage/{uid}). The
+      // gate runs FIRST and the create only when it allows: the old
+      // concurrent create left a conversation behind on a denied tap, and
+      // the next tap opened it with no gate (audit P-H1).
       TierGateResult? gate;
       try {
         gate = await tierGate
             .canConnectToday(currentUserId)
             .timeout(const Duration(seconds: 8));
       } catch (_) {
-        gate = null; // treat as allowed on timeout/error — never hang or block
+        gate = null; // the server still enforces the cap on the create
       }
       if (gate != null && !gate.allowed) {
         dismissBarrier();
-        // Let the (already in-flight) create settle so it doesn't leak, but we
-        // do not open the chat.
-        unawaited(createFuture.catchError((_) => throw Exception('ignored')));
         if (context.mounted) {
           await tierGate.showConnectLimitDialog(context, currentUserId, gate);
         }
         return;
       }
 
-      conversation = await createFuture;
-      // Count a successful NEW connection toward today's cap (fire-and-forget).
-      unawaited(tierGate.recordConnect(currentUserId));
+      try {
+        conversation = await dataSource
+            .getOrCreateSearchConversation(
+              currentUserId: currentUserId,
+              otherUserId: otherUserId,
+              businessInquiry: isBusinessChat,
+            )
+            .timeout(const Duration(seconds: 12));
+      } catch (e) {
+        // Refused by the server: the cap was reached since the gate read
+        // (e.g. another device). Show the limit, not a generic error.
+        if (e.toString().contains('permission-denied')) {
+          final fresh = await tierGate
+              .canConnectToday(currentUserId)
+              .timeout(const Duration(seconds: 8))
+              .catchError((Object _) => gate ??
+                  const TierGateResult(
+                      allowed: true,
+                      tier: MembershipTier.free,
+                      current: 0,
+                      limit: null));
+          if (!fresh.allowed) {
+            dismissBarrier();
+            if (context.mounted) {
+              await tierGate.showConnectLimitDialog(
+                  context, currentUserId, fresh);
+            }
+            return;
+          }
+        }
+        rethrow;
+      }
     } else {
       // Existing conversation: just fetch/ensure it (cache-first internally).
       conversation = await dataSource

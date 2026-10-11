@@ -195,6 +195,13 @@ describe('LEGIT: what app 4.6.0+194/195 writes to its own public profile', () =>
       locationUpdatedAt: new Date(), 'location.city': 'Milan', 'location.country': 'Italy',
       'location.countryLower': 'italy', 'location.displayAddress': 'Milan, Italy',
     })).toBe(200);
+    // Travel mode needs the paid pass spendCoins('traveler') writes, and
+    // ghost mode needs Gold (membership caps, audit 2026-10-11): the app only
+    // makes these writes after that. A Gold member who paid for travel here.
+    await db.doc(`profiles/${ALICE}`).set({
+      membershipTier: 'GOLD', membershipEndDate: Ts.fromMillis(Date.now() + 30 * 86400000),
+      travelerPaidUntil: Ts.fromMillis(Date.now() + 86400000),
+    }, { merge: true });
     expect(await update(ALICE, `profiles/${ALICE}`, {
       isTraveler: true, travelerExpiry: new Date(Date.now() + 86400000),
       travelerLocation: { city: 'Paris', country: 'France', displayAddress: 'Paris, France' },

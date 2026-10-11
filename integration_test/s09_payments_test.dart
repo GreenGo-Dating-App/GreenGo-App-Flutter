@@ -173,30 +173,37 @@ void main() {
       expect(ledger, 1, reason: 'the replay wrote a second ledger entry');
     });
 
-    e2eTest('PAY-05 a paid membership raises the stored tier',
+    // PAY-05 used to write users/{uid}.membershipTier='gold' itself and then
+    // assert that same value: it could never fail, and users/* is not the
+    // source of truth. The tier lives on profiles/{uid}, only the server
+    // (verifyPurchase / Stripe / grants) may raise it, and every gate reads the
+    // EFFECTIVE tier. The store path itself (verified purchase -> tier + store
+    // expiry, replay, expired / mismatched / shared tokens) is covered by
+    // functions/__tests__/security/verify-purchase.emulator.test.ts.
+    e2eTest('PAY-05 the app cannot raise its own tier; gates read the server tier',
         (tester) async {
       E2E.requireEmulator('PAY-05');
       await intoApp(tester);
 
-      // Web membership has never completed a purchase in production: zero
-      // invoice.paid events have ever been received. This asserts the effect
-      // that event is supposed to have, so the wiring has something to prove.
-      await Backend.db.collection('users').doc(meUid).set(
-          {'membershipTier': 'basic'}, SetOptions(merge: true));
-      expect((await Backend.user(meUid))!['membershipTier'], 'basic');
+      final before = await TierGate().resolveTier(meUid);
 
-      await Backend.db.collection('users').doc(meUid).set({
-        'membershipTier': 'gold',
-        'membershipStartDate': Timestamp.now(),
-        'membershipEndDate':
-            Timestamp.fromDate(DateTime.now().add(const Duration(days: 30))),
-      }, SetOptions(merge: true));
+      var refused = false;
+      try {
+        await Backend.db.collection('profiles').doc(meUid).update({
+          'membershipTier': 'GOLD',
+          'membershipEndDate':
+              Timestamp.fromDate(DateTime.now().add(const Duration(days: 30))),
+        });
+      } on FirebaseException catch (e) {
+        refused = e.code == 'permission-denied';
+      }
+      expect(refused, isTrue,
+          reason: 'a client wrote itself a paid tier on profiles/{uid}');
 
-      final after = await Backend.user(meUid);
-      expect(after!['membershipTier'], 'gold',
-          reason: 'a completed subscription did not raise the tier');
-      expect(after['membershipEndDate'], isA<Timestamp>(),
-          reason: 'no expiry stored, so the tier can never be re-locked');
+      final after = await TierGate().resolveTier(meUid);
+      expect(after, before, reason: 'the refused write changed the tier');
+      expect(after, isNot(MembershipTier.gold),
+          reason: 'the gates honour a self-written tier');
     });
 
     e2eTest('PAY-06 a retried store purchase grants once', (tester) async {

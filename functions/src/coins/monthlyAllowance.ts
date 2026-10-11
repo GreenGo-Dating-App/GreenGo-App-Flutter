@@ -55,6 +55,16 @@ export const MONTHLY_COINS: Record<EffectiveTier, number> = {
   TEST: 500,
 };
 
+/**
+ * What `profile` is paid this month: the EFFECTIVE tier's amount; the FREE
+ * (Base) amount only with an active Base membership, otherwise 0.
+ */
+export function allowanceFor(profile: Record<string, any>, now: Date): { tier: EffectiveTier; amount: number } {
+  const tier = effectiveTier(profile, now);
+  if (tier === 'FREE' && !isBaseMembershipActive(profile, now)) return { tier, amount: 0 };
+  return { tier, amount: MONTHLY_COINS[tier] ?? 0 };
+}
+
 const PAGE_SIZE = 300;
 const PARALLEL = 20;
 const TIME_BUDGET_MS = 480_000;
@@ -94,10 +104,7 @@ async function grantOne(
     out.excluded++;
     return;
   }
-  const tier = effectiveTier(data, now);
-  // The FREE-tier amount is the Base membership's allowance.
-  if (tier === 'FREE' && !isBaseMembershipActive(data, now)) return;
-  const amount = MONTHLY_COINS[tier] ?? 0;
+  const { tier, amount } = allowanceFor(data, now);
   if (amount <= 0) return;
   const ledger = db.collection('coinAllowanceGrants').doc(`${uid}_${period}`);
 

@@ -21,6 +21,17 @@
  * Testers (`profiles.membershipTier` TEST, which rules make server-owned) use
  * every feature free, exactly as the app did client-side; the effect still
  * applies and a zero-cost receipt is recorded.
+ *
+ * Membership perks (audit 2026-10-11, H4 / P-H3), decided on the EFFECTIVE tier
+ * at the time of the call:
+ *  - boost: Silver 1 / Gold 4 / Platinum 30 FREE boosts per UTC month, counted
+ *    in the server-owned `entitlement_usage/{uid}` (boostMonth / boostsUsed) in
+ *    this transaction; beyond them a boost costs the normal price. Not on the
+ *    free plan (refused with reason `tier-required`).
+ *  - traveler: Silver and up; free for Platinum.
+ *  - business_promotion: an ACTIVE business account only (`business-required`).
+ *  - extra_event: the paid credit is recorded (`eventExtraCredits`) so the
+ *    event rules / onEventWrittenUsage accept one event over the tier cap.
  */
 
 import * as admin from 'firebase-admin';
@@ -28,6 +39,8 @@ import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import { db, handleError, logInfo, verifyAuth } from '../shared/utils';
 import { fifoDraw, refusal, REASON, validRequestId } from './ledger';
 import { assertAgeAssured, GatedFeature } from '../safety/ageAssuranceGate';
+import { effectiveTier, isBusinessActive } from '../shared/effectiveTier';
+import { FREE_BOOSTS_PER_MONTH, monthKeyUtc, travelModeEnabled, travelModeFree, USAGE_COLLECTION } from '../shared/tierLimits';
 
 /**
  * P3-1 age assurance: coin features that reach people discovery or start a
@@ -187,6 +200,9 @@ export const spendCoins = onCall<SpendCoinsRequest>(
             transactionId: p.transactionId ?? null,
             newBalance: (bal.data()?.totalCoins as number | undefined) ?? 0,
             effect: p.effect ?? null,
+            ...(featureId === 'boost'
+              ? { freeBoost: p.freeBoost ?? false, freeBoostsLeft: p.freeBoostsLeft ?? null, freeBoostsAllowance: p.freeBoostsAllowance ?? null }
+              : {}),
           };
         }
         const balanceSnap = await tx.get(balanceRef);
@@ -223,7 +239,48 @@ export const spendCoins = onCall<SpendCoinsRequest>(
 
         const tier = String(profileSnap.data()?.membershipTier ?? '');
         const isTester = tier === 'test' || tier === 'TEST';
-        const charge = isTester ? 0 : price;
+        const effTier = effectiveTier(profileSnap.data(), new Date(nowMs));
+        let charge = isTester ? 0 : price;
+
+        // ---- membership perks ----
+        const usageRef = db.collection(USAGE_COLLECTION).doc(uid);
+        const needsUsage = featureId === 'boost' || featureId === 'extra_event';
+        const usageSnap = needsUsage ? await tx.get(usageRef) : null;
+        const usage = usageSnap?.data() || {};
+        let freeBoost = false;
+        let freeBoostsLeft: number | null = null;
+        const freeBoostsAllowance = FREE_BOOSTS_PER_MONTH[effTier] ?? 0;
+        if (featureId === 'boost') {
+          if (effTier === 'FREE') {
+            throw refusal('permission-denied', REASON.tierRequired,
+              'Profile boosts need a Silver, Gold or Platinum membership.', { requiredTier: 'SILVER' });
+          }
+          const month = monthKeyUtc(new Date(nowMs));
+          const used = usage.boostMonth === month ? Number(usage.boostsUsed || 0) : 0;
+          if (used < freeBoostsAllowance) {
+            freeBoost = true;
+            charge = 0;
+            tx.set(usageRef, {
+              boostMonth: month,
+              boostsUsed: used + 1,
+              updatedAt: now,
+            }, { merge: true });
+            freeBoostsLeft = freeBoostsAllowance - used - 1;
+          } else {
+            freeBoostsLeft = 0;
+          }
+        } else if (featureId === 'traveler') {
+          if (!travelModeEnabled(effTier)) {
+            throw refusal('permission-denied', REASON.tierRequired,
+              'Travel mode needs a Silver, Gold or Platinum membership.', { requiredTier: 'SILVER' });
+          }
+          if (travelModeFree(effTier)) charge = 0;
+        } else if (featureId === 'business_promotion') {
+          if (!isBusinessActive(profileSnap.data(), new Date(nowMs))) {
+            throw refusal('permission-denied', REASON.businessRequired,
+              'Promotion needs an active business account (Platinum).');
+          }
+        }
 
         const bal = balanceSnap.data() || {};
         const total = (bal.totalCoins as number | undefined) ?? 0;
@@ -267,6 +324,13 @@ export const spendCoins = onCall<SpendCoinsRequest>(
         // ---- debit ----
         let transactionId: string | null = null;
         let newBalance = total;
+        if (featureId === 'extra_event') {
+          // One paid event over the tier cap (consumed by onEventWrittenUsage).
+          tx.set(usageRef, {
+            eventExtraCredits: Number(usage.eventExtraCredits || 0) + 1,
+            updatedAt: now,
+          }, { merge: true });
+        }
         if (charge > 0) {
           const { batches } = fifoDraw(bal.coinBatches, charge);
           newBalance = total - charge;
@@ -307,12 +371,14 @@ export const spendCoins = onCall<SpendCoinsRequest>(
           tester: isTester,
           transactionId,
           effect,
+          ...(featureId === 'boost' ? { freeBoost, freeBoostsLeft, freeBoostsAllowance } : {}),
           createdAt: now,
         });
 
         return {
           ok: true, success: true, alreadyProcessed: false, featureId,
           charged: charge, transactionId, newBalance, effect,
+          ...(featureId === 'boost' ? { freeBoost, freeBoostsLeft, freeBoostsAllowance } : {}),
         };
       });
 

@@ -153,17 +153,18 @@ describe('spendCoins (C-03 / H-12)', () => {
     await profile('u1');
     await seedBalance('u1', [batch('b1', 100, 'reward', 100 * HOUR)]);
     const id = rid();
-    const a = await call(spendCoins, { featureId: 'boost', requestId: id }, 'u1');
-    const b = await call(spendCoins, { featureId: 'boost', requestId: id }, 'u1');
+    // (incognito: any plan, a fixed 30 coins; boosts are now tier perks.)
+    const a = await call(spendCoins, { featureId: 'incognito', requestId: id }, 'u1');
+    const b = await call(spendCoins, { featureId: 'incognito', requestId: id }, 'u1');
     expect(a.alreadyProcessed).toBe(false);
     expect(b.alreadyProcessed).toBe(true);
     expect(b.transactionId).toBe(a.transactionId);
-    expect(await coins('u1')).toBe(50);
+    expect(await coins('u1')).toBe(70);
     expect((await txns('u1')).filter((t) => t.type === 'debit')).toHaveLength(1);
     // Same key for a different purchase is refused.
     const e = await refused(call(spendCoins, { featureId: 'superlike', requestId: id }, 'u1'));
     expect(e.code).toBe('invalid-argument');
-    expect(await coins('u1')).toBe(50);
+    expect(await coins('u1')).toBe(70);
   });
 
   test('FIFO over coinBatches with the shape the app parses', async () => {
@@ -202,14 +203,17 @@ describe('spendCoins (C-03 / H-12)', () => {
     expect(await coins('u1')).toBe(5);
 
     // C-03: totalCoins 0 but a client-written batch of 999999.
-    await profile('mallory');
+    // Travel mode is a Silver+ feature (audit 2026-10-11): a Silver caller.
+    await profile('mallory', { membershipTier: 'SILVER', membershipEndDate: TS.fromMillis(Date.now() + 720 * HOUR) });
     await seedBalance('mallory', [batch('fake', 999999, 'purchase', 100 * HOUR)], 0);
     const e2 = await refused(call(spendCoins, { featureId: 'traveler', requestId: rid() }, 'mallory'));
     expect(e2.details.reason).toBe('insufficient-coins');
   });
 
   test('server-owned effects are written in the same transaction', async () => {
-    await profile('u1');
+    // Platinum business: promotion needs an active business account, and the
+    // boost is one of Platinum's free monthly boosts (audit 2026-10-11).
+    await profile('u1', { membershipTier: 'PLATINUM', membershipEndDate: TS.fromMillis(Date.now() + 720 * HOUR), isBusiness: true });
     await seedBalance('u1', [batch('b', 500, 'reward', 100 * HOUR)]);
     await call(spendCoins, { featureId: 'boost', requestId: rid() }, 'u1');
     await call(spendCoins, { featureId: 'incognito', requestId: rid() }, 'u1');
@@ -220,7 +224,7 @@ describe('spendCoins (C-03 / H-12)', () => {
     expect(p.isIncognito).toBe(true);
     expect(Math.abs(p.incognitoExpiry.toMillis() - (Date.now() + 24 * HOUR))).toBeLessThan(60000);
     expect(Math.abs(p.businessPromotedUntil.toMillis() - (Date.now() + 7 * 24 * HOUR))).toBeLessThan(60000);
-    expect(await coins('u1')).toBe(500 - 50 - 30 - 250);
+    expect(await coins('u1')).toBe(500 - 0 - 30 - 250);
   });
 
   test('testers use features free (server-owned tier) but still get the effect', async () => {

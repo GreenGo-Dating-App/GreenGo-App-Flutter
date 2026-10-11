@@ -450,13 +450,11 @@
   "adminWelcome": "Welcome, Admin",
   "adminXpReward": "XP Reward",
   "ageRange": "Age Range",
-  "aiCoachBenefitAllChapters": "All learning chapters unlocked",
   "aiCoachBenefitFeedback": "Real-time grammar & pronunciation feedback",
   "aiCoachBenefitPersonalized": "Personalized learning path",
   "aiCoachBenefitUnlimited": "Unlimited AI conversation practice",
   "aiCoachLabel": "AI Coach",
   "aiCoachTrialEnded": "Your free trial of AI Coach has ended.",
-  "aiCoachUpgradePrompt": "Upgrade to Silver, Gold, or Platinum to unlock.",
   "aiCoachUpgradeTitle": "Upgrade to Learn More",
   "albumNotShared": "Album not shared with you",
   "albumOption": "Album",
@@ -1083,7 +1081,6 @@
   "chatUnknown": "Unknown",
   "chatUnstarMessage": "Unstar Message",
   "chatUpgrade": "Upgrade",
-  "chatUpgradePracticeMode": "Upgrade to Silver VIP or higher to continue practicing languages in your chats.",
   "chatUploading": "Uploading...",
   "chatUseCorrection": "Use Correction",
   "chatUserBlocked": "{name} has been blocked",
@@ -3096,7 +3093,6 @@
     }
   },
   "membershipActivatedTitle": "Membership Activated!",
-  "membershipAdvancedFilters": "Advanced Filters",
   "membershipBase": "Base",
   "membershipBaseMembership": "Base Membership",
   "membershipBestValue": "Best value for long-term commitment!",
@@ -3105,7 +3101,6 @@
   "membershipCouponCodeLabel": "Coupon Code *",
   "membershipCouponHint": "e.g., GOLD2024",
   "membershipCurrent": "Current Membership",
-  "membershipDailyLikes": "Daily Connects",
   "membershipDailyMessagesLabel": "Daily Messages (empty = unlimited)",
   "membershipDailySwipesLabel": "Daily Swipes (empty = unlimited)",
   "membershipDaysRemaining": "{days} days remaining",
@@ -3152,7 +3147,6 @@
   "membershipGeneric": "Membership",
   "membershipGold": "Gold",
   "membershipGreenGoBase": "GreenGo Base",
-  "membershipIncognitoMode": "Incognito Mode",
   "membershipLeaveEmptyLifetime": "Leave empty for lifetime",
   "membershipLeaveEmptyUnlimited": "Leave empty for unlimited",
   "membershipLowerThanCurrent": "Lower than your current tier",
@@ -3165,23 +3159,20 @@
   "membershipOneMonth": "1 month",
   "membershipOneYear": "1 year",
   "membershipPanel": "Membership Panel",
-  "membershipPermanent": "Permanent",
+  "membershipPermanent": "1 year, renews yearly",
   "membershipPlatinum": "Platinum",
   "membershipPlus500Coins": "+500 COINS",
   "membershipPrioritySupport": "Priority Support",
-  "membershipReadReceipts": "Read Receipts",
   "membershipRequired": "Membership Required",
   "membershipRequiredDescription": "You need to be a member of GreenGo to perform this action.",
   "membershipExtendDescription": "Your base membership is active. Purchase another year to extend your expiration date.",
-  "membershipRewinds": "Rewinds",
   "membershipSavePercent": "SAVE {percent}%",
-  "membershipSeeWhoLikes": "See Who Connects",
   "membershipSilver": "Silver",
-  "membershipSubtitle": "Buy once, enjoy premium features for 1 month or 1 year",
+  "membershipSubtitle": "Memberships renew automatically: Base every year, Silver, Gold and Platinum every month or year. Cancel anytime.",
   "membershipSuperLikes": "Priority Connects",
   "membershipSuperLikesLabel": "Priority Connects/Day (empty = unlimited)",
-  "membershipTerms": "One-time purchase. Membership will be extended from your current end date.",
-  "membershipTermsExtended": "One-time purchase. Membership will be extended from your current end date. Higher tier purchases override lower tiers.",
+  "membershipTerms": "Auto-renewing subscription: it renews at the end of each period at the price shown unless you cancel at least 24 hours before. Manage or cancel it in your store account.",
+  "membershipTermsExtended": "Auto-renewing subscription: it renews at the end of each period at the price shown unless you cancel at least 24 hours before. Manage or cancel it in your store account. A higher tier replaces a lower one.",
   "membershipTierLabel": "Membership Tier *",
   "membershipTierName": "{tierName} Membership",
   "membershipYearly": "Yearly Memberships (Save up to {percent}%)",
@@ -3817,7 +3808,6 @@
   "profileIncognitoCost": "Incognito mode costs {cost} coins per day.",
   "profileIncognitoDeactivated": "Incognito mode deactivated.",
   "profileIncognitoDescription": "Incognito mode hides your profile from discovery for 24 hours.\n\nCost: {cost}",
-  "profileIncognitoFreePlatinum": "Free with Platinum - Hidden from discovery",
   "profileIncognitoMode": "Incognito Mode",
   "profileInsufficientCoins": "Insufficient Coins",
   "profileInterestsCount": "{count} interests",
@@ -4169,9 +4159,7 @@
   "shareAlbum": "Share Album",
   "shop": "Shop",
   "shopActive": "ACTIVE",
-  "shopAdvancedFilters": "Advanced Filters",
   "shopAmountCoins": "{amount} coins",
-  "shopBadge": "Badge",
   "shopBaseMembership": "GreenGo Base Membership",
   "shopBaseMembershipDescription": "Required to swipe, like, chat, and interact with other users.",
   "shopBonusCoins": "+{bonus} bonus coins",
@@ -4242,7 +4230,6 @@
   "shopFailedToSendCoins": "Failed to send coins",
   "shopGetNotified": "Get Notified",
   "shopGreenGoCoins": "GreenGoCoins",
-  "shopIncognitoMode": "Incognito Mode",
   "shopInsufficientCoins": "Insufficient coins",
   "shopMembershipActivated": "GreenGo Membership activated! +500 bonus coins. Valid until {date}.",
   "@shopMembershipActivated": {
@@ -4260,7 +4247,6 @@
   "shopPerYear": "/year",
   "shopPopular": "POPULAR",
   "shopPreviousPurchaseFound": "Previous purchase found. Please try again.",
-  "shopPriorityMatching": "Priority Connections",
   "shopPurchaseCoinsFor": "Purchase {coins} Coins for {price}",
   "@shopPurchaseCoinsFor": {
     "placeholders": {
@@ -4284,7 +4270,6 @@
       }
     }
   },
-  "shopSeeWhoLikesYou": "See Who Connects",
   "shopSend": "Send",
   "shopSendCoins": "Send Coins",
   "shopStoreNotAvailable": "Store not available. Please check your device settings.",
@@ -4292,13 +4277,11 @@
   "@shopTemporarilyUnavailable": {
     "description": "Shown when store products cannot be loaded. Must never expose product IDs or store console names."
   },
-  "shopSuperLikes": "Priority Connects",
   "shopTabCoins": "Coins",
   "shopTabError": "{tabName} tab error",
   "shopTabMembership": "Membership",
   "shopTabVideo": "Video",
   "shopTitle": "Shop",
-  "shopTravelling": "Travelling",
   "shopUnableToLoadPackages": "Unable to Load Packages",
   "shopUnlimited": "Unlimited",
   "shopUnlockPremium": "Unlock premium features and get more out of GreenGo",
@@ -4325,7 +4308,6 @@
     }
   },
   "shopVideoCoinsDescription": "Watch short videos to earn free coins!\nStay tuned for this exciting feature.",
-  "shopVipBadge": "VIP Badge",
   "shopYearly": "Yearly",
   "shopYearlyPlan": "Yearly subscription",
   "shopYouHave": "You have",
@@ -4613,7 +4595,6 @@
     }
   },
   "upgrade": "Upgrade",
-  "upgradeForEarlyAccess": "Upgrade to Silver, Gold, or Platinum for early access before April 14th, 2026!",
   "upgradeNow": "Upgrade Now",
   "upgradeToPremium": "Upgrade to Premium",
   "upgradeToTier": "Upgrade to {tier}",
@@ -4703,10 +4684,6 @@
   "vibeTagsLimitReachedFree": "Free users can select up to {limit} tags. Upgrade to Premium for 5 tags!",
   "vibeTagsLimitReachedPremium": "You've reached your maximum of {limit} tags. Remove one to add another.",
   "vibeTagsNoTags": "No tags available",
-  "vibeTagsPremiumFeature1": "5 vibe tags instead of 3",
-  "vibeTagsPremiumFeature2": "Exclusive premium tags",
-  "vibeTagsPremiumFeature3": "Priority in search results",
-  "vibeTagsPremiumFeature4": "And much more!",
   "vibeTagsRemoveTag": "Remove tag",
   "vibeTagsSelectDescription": "Select tags that match your current mood and intentions",
   "vibeTagsSetTemporary": "Set as temporary tag (24h)",
@@ -4779,14 +4756,6 @@
   "voiceUploading": "Uploading...",
   "vsLabel": "VS",
   "waitingAccessDateBasic": "Your access will begin on April 14th, 2026",
-  "waitingAccessDatePremium": "As a {tier} member, you get early access before April 14th, 2026!",
-  "@waitingAccessDatePremium": {
-    "placeholders": {
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
   "waitingAccessDateTitle": "Your Access Date",
   "waitingCountLabel": "{count} waiting",
   "@waitingCountLabel": {
@@ -4969,9 +4938,9 @@
   "guideMembershipItem2": "Membership starts with a free trial after your first sign-up.",
   "guideMembershipItem3": "When your membership expires, you can renew it to continue using the app.",
   "guideTiersTitle": "VIP Tiers (Silver, Gold, Platinum)",
-  "guideTiersItem1": "Silver: Get more daily connects, see who connected with you, and priority support.",
-  "guideTiersItem2": "Gold: Everything in Silver plus unlimited connects, advanced filters, and read receipts.",
-  "guideTiersItem3": "Platinum: Everything in Gold plus profile boost, top picks, and exclusive features.",
+  "guideTiersItem1": "Silver: 50 new connections a day, 3 ongoing events, unlimited groups, 1 free profile boost and 300 coins a month, and travel mode for 100 coins a day.",
+  "guideTiersItem2": "Gold: everything in Silver plus 200 new connections a day, 5 ongoing events, 4 free boosts and 400 coins a month, ghost mode and priority support.",
+  "guideTiersItem3": "Platinum: everything in Gold plus unlimited new connections and events, 30 free boosts and 500 coins a month, free travel mode, a business account and analytics.",
   "guideTiersItem4": "VIP tiers are independent from your base membership and provide extra perks.",
   "guideCoinsTitle": "Coins",
   "guideCoinsItem1": "Coins are used for premium actions. Here are the costs:",
@@ -5058,9 +5027,6 @@
   "priorityConnectPending": "Pending approval",
   "membershipTrialTitle": "Start Your Free Trial!",
   "membershipTrialSubtitle": "7 days free, then auto-renews yearly",
-  "membershipTrialFeature1": "Create unlimited communities, events & groups",
-  "membershipTrialFeature2": "Ad-free experience — no advertisements",
-  "membershipTrialFeature3": "500 bonus coins + full access to every feature",
   "membershipHaveCoupon": "Have a coupon code?",
   "membershipTrialCta": "Start 7-Day Free Trial",
   "membershipTrialFooter": "Cancel anytime. No charge until day 8.",
@@ -5449,14 +5415,6 @@
   },
   "boostFeatureName": "Profile Boost",
   "boostRequiresTierDescription": "Profile boosts are a paid-membership perk. Upgrade your plan to boost your profile and get seen by more people.",
-  "boostMonthlyLimitReached": "You've used all {limit} profile boosts included in your plan this month. Upgrade for more.",
-  "@boostMonthlyLimitReached": {
-    "placeholders": {
-      "limit": {
-        "type": "int"
-      }
-    }
-  },
   "travelModeFeatureName": "Traveler Mode",
   "travelModeRequiresTierDescription": "Traveler Mode lets you appear in another city's discovery feed. Upgrade your plan to unlock it.",
   "exploreRecommended": "Recommended for you",
@@ -6069,12 +6027,10 @@
   "communitiesAddTip": "Add tip",
   "communitiesTipHint": "Share a helpful tip…",
   "shopEventsCreate": "Events you can create",
-  "shopGroupsCreate": "Groups & communities you can create",
+  "shopGroupsCreate": "Groups you can create",
   "shopDailyConnects": "Daily new connections",
-  "shopMonthlyBoosts": "Monthly profile boosts",
+  "shopMonthlyBoosts": "Free profile boosts per month",
   "shopMonthlyCoins": "Monthly coins",
-  "shopNoAds": "Ad-free experience",
-  "shopSeeWhoConnected": "See who connected with you",
   "shopTravelMode": "Travel mode",
   "shopBusinessAccount": "Business account",
   "tourCommunitiesTabsTitle": "Three ways to browse",
@@ -6509,7 +6465,7 @@
       }
     }
   },
-  "featureBoosts": "{count} profile boosts a month",
+  "featureBoosts": "{count} free profile boosts a month",
   "@featureBoosts": {
     "placeholders": {
       "count": {
@@ -6525,8 +6481,6 @@
       }
     }
   },
-  "featureTravelMode": "Travel mode - discover people anywhere",
-  "featureWhoConnected": "See who connected with you",
   "boostProfileCelebrationTitle": "Profile boosted!",
   "boostEventCelebrationTitle": "Event boosted!",
   "eventsEnded": "Event ended",
@@ -10454,17 +10408,6 @@
     }
   },
   "celebrationMembershipActive": "Your premium membership is now active",
-  "celebrationUnlimitedLikes": "Unlimited likes",
-  "celebrationSeeWhoLikedYou": "See who wants to connect",
-  "celebrationPerDay": "{count}/day",
-  "@celebrationPerDay": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "celebrationExclusiveEvents": "Exclusive Events",
   "purchaseSuccessCoinsAdded": "{count} GreenGo Coins added!",
   "@purchaseSuccessCoinsAdded": {
     "placeholders": {
@@ -12805,5 +12748,51 @@
   "legalUpdateDisagreeHint": "If you don't agree, you can sign out. You can also delete your account at any time.",
   "@legalUpdateDisagreeHint": {
     "description": "Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)"
+  },
+  "tierTravelModeCostRow": "Travel mode (coins per day)",
+  "@tierTravelModeCostRow": {
+    "description": "Membership comparison table row: travel-mode price per day (cells: a coin amount, or Free for Platinum)"
+  },
+  "upgradeBenefitFreeTravelMode": "Free travel mode",
+  "@upgradeBenefitFreeTravelMode": {
+    "description": "My Usage > Upgrade Benefits row: travel mode without the daily coin price (Platinum)"
+  },
+  "featureTravelModeFree": "Travel mode - free, discover people anywhere",
+  "@featureTravelModeFree": {
+    "description": "Welcome pack / tier reveal perk row (Platinum)"
+  },
+  "featureTravelModeCoins": "Travel mode - {coins} coins per day",
+  "@featureTravelModeCoins": {
+    "description": "Welcome pack / tier reveal perk row (Silver, Gold)",
+    "placeholders": {
+      "coins": {
+        "type": "int"
+      }
+    }
+  },
+  "boostFreeLeftThisMonth": "{count, plural, =0{No free boosts left this month} =1{1 free boost left this month} other{{count} free boosts left this month}}",
+  "@boostFreeLeftThisMonth": {
+    "description": "Profile boost card + confirm dialog: free monthly boosts left",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "boostUsesFreeBoost": "Free: uses one of your monthly free boosts",
+  "@boostUsesFreeBoost": {
+    "description": "Profile boost confirm dialog: price line when a free monthly boost is used"
+  },
+  "userErrorTierRequired": "This feature isn't included in your membership. Upgrade your plan to use it.",
+  "@userErrorTierRequired": {
+    "description": "Error popup: the server refused a feature that is not part of the user's membership tier"
+  },
+  "userErrorBusinessRequired": "This needs an active business account (Platinum).",
+  "@userErrorBusinessRequired": {
+    "description": "Error popup: the server refused a business-only feature"
+  },
+  "supportPriorityBanner": "Priority support: your tickets are answered first.",
+  "@supportPriorityBanner": {
+    "description": "Support tickets list banner, shown only to Gold and Platinum members"
   }
 }

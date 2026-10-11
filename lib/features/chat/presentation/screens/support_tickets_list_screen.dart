@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/services/tier_entitlements.dart';
+import '../../../../core/services/tier_gate.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
 import '../utils/support_l10n.dart';
@@ -42,6 +44,10 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
   Object? _loadError;
   bool _timedOut = false;
 
+  /// Gold+ (effective tier): their tickets are ranked first in the support
+  /// queue by the server (onSupportChatCreated). Shown only to them.
+  bool _prioritySupport = false;
+
   /// The `/support` named route can pass '' — fall back to the signed-in uid.
   String get _uid => widget.currentUserId.isNotEmpty
       ? widget.currentUserId
@@ -53,6 +59,16 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
     // Subscribed ONCE here, not in build(): a stream created in build() is
     // replaced on every rebuild, which resets the StreamBuilder to `waiting`.
     _subscribe();
+    _loadPrioritySupport();
+  }
+
+  Future<void> _loadPrioritySupport() async {
+    final uid = _uid;
+    if (uid.isEmpty) return;
+    final tier = await TierGate().resolveTier(uid);
+    if (mounted && TierEntitlements.prioritySupport(tier)) {
+      setState(() => _prioritySupport = true);
+    }
   }
 
   @override
@@ -125,6 +141,31 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
           icon: const Icon(Icons.arrow_back, color: AppColors.richGold),
           onPressed: () => SafeNavigation.pop(context, userId: widget.currentUserId),
         ),
+        bottom: _prioritySupport
+            ? PreferredSize(
+                preferredSize: const Size.fromHeight(36),
+                child: Container(
+                  width: double.infinity,
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  color: AppColors.richGold.withValues(alpha: 0.12),
+                  child: Row(
+                    children: [
+                      const Icon(Icons.support_agent,
+                          color: AppColors.richGold, size: 18),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          l10n.supportPriorityBanner,
+                          style: const TextStyle(
+                              color: AppColors.richGold, fontSize: 13),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              )
+            : null,
       ),
       body: Builder(
         builder: (context) {

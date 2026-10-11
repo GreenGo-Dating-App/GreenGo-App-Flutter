@@ -18,35 +18,25 @@ enum SearchFilterLevel {
   const SearchFilterLevel(this.level);
 }
 
-/// A single, renderable perk row for the marketplace (Part 3).
-///
-/// [labelKey] is an l10n key NAME (not a display string) so the marketplace
-/// can localize it. [valueText] is a raw, already-formatted value fragment
-/// (e.g. "5", "Unlimited", "5 coins") — Part 3 is free to reformat/localize it.
-/// [enabled] lets boolean perks render as a check / cross without parsing text.
-class TierPerk {
-  const TierPerk({
-    required this.labelKey,
-    required this.valueText,
-    this.enabled,
-  });
+/// One row of the membership comparison table: a localized label and one
+/// display value per tier, in [TierEntitlements.comparisonTiers] order.
+class TierComparisonRow {
+  const TierComparisonRow(this.label, this.values);
 
-  /// l10n key NAME for the perk label (e.g. 'tierPerkEvents').
-  final String labelKey;
+  final String label;
 
-  /// Human-facing value fragment for this tier (e.g. "50", "Unlimited").
-  final String valueText;
-
-  /// For boolean perks: whether the tier has it. null for numeric perks.
-  final bool? enabled;
+  /// Free (Base), Silver, Gold, Platinum.
+  final List<String> values;
 }
 
 /// SINGLE SOURCE OF TRUTH for what each membership tier can do.
 ///
-/// This is Part 1 (foundation / config only). Nothing here enforces anything —
-/// features read these accessors in Part 2, and the marketplace renders
-/// [perksFor] in Part 3. Keep ALL tunable numbers in the `// adjustable`
-/// consts at the top so tiers can be re-balanced in one place.
+/// The app's gates and every promise screen (shop cards, the comparison
+/// table [comparisonRows], Upgrade Benefits, the tier reveal) read these
+/// accessors. The SERVER enforces the same numbers: they are mirrored in
+/// functions/src/shared/tierLimits.ts (a unit test there parses this file and
+/// fails on drift) and in the Firestore rules (`tierCap*`). Keep ALL tunable
+/// numbers in the `// adjustable` consts at the top.
 ///
 /// Convention: a `null` return means UNLIMITED / infinite (∞).
 ///
@@ -89,7 +79,10 @@ class TierEntitlements {
   static const int _dailyConnectsGold = 200; // adjustable
   static const int? _dailyConnectsPlatinum = null; // adjustable (∞)
 
-  // --- Profile boosts granted per month. ---
+  // --- FREE profile boosts per calendar month (UTC). ---
+  // Counted by the server (spendCoins, entitlement_usage/{uid}); a boost
+  // beyond the allowance costs CoinFeaturePrices.boost coins. Not available
+  // on the free plan at all.
   static const int _boostsPerMonthFree = 0; // adjustable (none)
   static const int _boostsPerMonthSilver = 1; // adjustable (~1/month)
   static const int _boostsPerMonthGold = 4; // adjustable (~1/week)
@@ -116,7 +109,7 @@ class TierEntitlements {
   // Starting reveal ceiling in the network-discovery grid; beyond it the user
   // spends coins to "see more". Platinum is effectively uncapped.
   // People a viewer can see at a time in discovery, per tier (Base → Platinum).
-  // Beyond the cap, +25 more people can be unlocked for 25 coins (see
+  // Beyond the cap, +50 more people can be unlocked for 15 coins (see
   // network_discovery_screen.dart kRevealChunk / kCoinsToSeeMore).
   static const int _discoveryFreeRevealFree = 100; // Base: 100 at a time
   static const int _discoveryFreeRevealSilver = 200; // Silver: 200
@@ -195,7 +188,7 @@ class TierEntitlements {
     }
   }
 
-  /// Number of profile boosts granted per month.
+  /// FREE profile boosts per calendar month (more can be bought with coins).
   static int boostsPerMonth(MembershipTier tier) {
     switch (tier) {
       case MembershipTier.free:
@@ -287,19 +280,6 @@ class TierEntitlements {
     }
   }
 
-  /// Whether the tier can see the list of who connected with them.
-  static bool canSeeWhoConnected(MembershipTier tier) {
-    switch (tier) {
-      case MembershipTier.free:
-      case MembershipTier.silver:
-        return false;
-      case MembershipTier.gold:
-      case MembershipTier.platinum:
-      case MembershipTier.test:
-        return true;
-    }
-  }
-
   /// Whether travel mode (browse/discover in another location) is enabled.
   static bool travelModeEnabled(MembershipTier tier) {
     switch (tier) {
@@ -313,7 +293,21 @@ class TierEntitlements {
     }
   }
 
-  /// Whether the tier gets priority customer support.
+  /// Whether travel mode is FREE for the tier (Platinum); the other tiers
+  /// with travel mode pay CoinFeaturePrices.traveler coins per day.
+  static bool travelModeFree(MembershipTier tier) =>
+      tier == MembershipTier.platinum || tier == MembershipTier.test;
+
+  /// Ghost mode (hidden from discovery and search), free and unlimited:
+  /// Gold and up. The Firestore rules enforce the same.
+  static bool ghostModeIncluded(MembershipTier tier) =>
+      tier == MembershipTier.gold ||
+      tier == MembershipTier.platinum ||
+      tier == MembershipTier.test;
+
+  /// Whether the tier gets priority customer support: its support tickets are
+  /// ranked first in the support queue (set server-side by
+  /// onSupportChatCreated from the effective tier).
   static bool prioritySupport(MembershipTier tier) {
     switch (tier) {
       case MembershipTier.free:
@@ -379,100 +373,58 @@ class TierEntitlements {
   }
 
   // ===========================================================================
-  // MARKETPLACE (Part 3) — structured, iterable description of the matrix.
-  // Renders a per-tier feature list WITHOUT duplicating any numbers above.
-  // Labels are l10n key NAMES (Part 3 adds the English strings to app_en.arb).
+  // COMPARISON TABLE — rendered by TierComparisonTable on the membership
+  // screen. Every value is derived from the accessors above.
   // ===========================================================================
 
-  /// Stable l10n key NAMES for each perk row. Part 3 will add the matching
-  /// English strings to `app_en.arb`. Exposed so the marketplace and any
-  /// tests can reference keys without magic strings.
-  static const String perkKeyEvents = 'tierPerkEvents';
-  static const String perkKeyGroups = 'tierPerkGroups';
-  static const String perkKeyDailyConnects = 'tierPerkDailyConnects';
-  static const String perkKeyBoostsPerMonth = 'tierPerkBoostsPerMonth';
-  static const String perkKeyBoostedVisible = 'tierPerkBoostedVisible';
-  static const String perkKeyMonthlyCoins = 'tierPerkMonthlyCoins';
-  static const String perkKeySearchFilters = 'tierPerkSearchFilters';
-  static const String perkKeySeeWhoConnected = 'tierPerkSeeWhoConnected';
-  static const String perkKeyTravelMode = 'tierPerkTravelMode';
-  static const String perkKeyTtsCost = 'tierPerkTtsCost';
-  static const String perkKeyPrioritySupport = 'tierPerkPrioritySupport';
+  /// Column order of [comparisonRows].
+  static const List<MembershipTier> comparisonTiers = [
+    MembershipTier.free,
+    MembershipTier.silver,
+    MembershipTier.gold,
+    MembershipTier.platinum,
+  ];
 
-  /// Format an "int? (null = ∞)" value for display.
-  static String _fmtCount(int? v) => v == null ? '∞' : '$v';
+  /// Check / cross marks used for on-off perks in the table.
+  static const String yesMark = '✓';
+  static const String noMark = '✗';
 
-  /// Format a boolean perk for display.
-  static String _fmtBool(AppLocalizations l10n, bool v) =>
-      v ? l10n.yes : l10n.no;
+  /// The comparison table rows. [travelCoinsPerDay] is the daily travel-mode
+  /// price for the tiers that pay for it (CoinFeaturePrices.traveler).
+  static List<TierComparisonRow> comparisonRows(
+    AppLocalizations l10n, {
+    required int travelCoinsPerDay,
+  }) {
+    String count(int? v) => v == null ? l10n.shopUnlimited : '$v';
+    String mark(bool v) => v ? yesMark : noMark;
+    List<String> each(String Function(MembershipTier t) f) =>
+        [for (final t in comparisonTiers) f(t)];
 
-  /// Human-facing name for a search-filter level.
-  static String _fmtFilterLevel(AppLocalizations l10n, SearchFilterLevel l) {
-    switch (l) {
-      case SearchFilterLevel.none:
-        return l10n.tierFilterLevelBasic;
-      case SearchFilterLevel.basic:
-        return l10n.tierFilterLevelStandard;
-      case SearchFilterLevel.plus:
-        return l10n.tierFilterLevelAdvanced;
-      case SearchFilterLevel.all:
-        return l10n.tierFilterLevelAll;
-    }
-  }
-
-  /// The full, ordered perk list for a tier — everything derived from the
-  /// accessors above, so there is no duplication of the tunable numbers.
-  /// The marketplace can render this directly (localizing [TierPerk.labelKey]).
-  static List<TierPerk> perksFor(AppLocalizations l10n, MembershipTier tier) {
     return [
-      TierPerk(
-        labelKey: perkKeyEvents,
-        valueText: _fmtCount(maxEvents(tier)),
+      TierComparisonRow(l10n.shopEventsCreate, each((t) => count(maxEvents(t)))),
+      TierComparisonRow(l10n.shopGroupsCreate, each((t) => count(maxGroups(t)))),
+      TierComparisonRow(
+          l10n.shopDailyConnects, each((t) => count(maxDailyConnects(t)))),
+      TierComparisonRow(
+          l10n.shopExperiencesCreate, each((t) => count(maxExperiences(t)))),
+      TierComparisonRow(
+          l10n.shopMonthlyBoosts, each((t) => '${boostsPerMonth(t)}')),
+      TierComparisonRow(
+          l10n.shopMonthlyCoins, each((t) => '${monthlyCoins(t)}')),
+      TierComparisonRow(
+        l10n.tierTravelModeCostRow,
+        each((t) => !travelModeEnabled(t)
+            ? noMark
+            : travelModeFree(t)
+                ? l10n.tierFree
+                : '$travelCoinsPerDay'),
       ),
-      TierPerk(
-        labelKey: perkKeyGroups,
-        valueText: _fmtCount(maxGroups(tier)),
-      ),
-      TierPerk(
-        labelKey: perkKeyDailyConnects,
-        valueText: _fmtCount(maxDailyConnects(tier)),
-      ),
-      TierPerk(
-        labelKey: perkKeyBoostsPerMonth,
-        valueText: '${boostsPerMonth(tier)}',
-      ),
-      TierPerk(
-        labelKey: perkKeyBoostedVisible,
-        valueText: '${maxBoostedVisible(tier)}',
-      ),
-      TierPerk(
-        labelKey: perkKeyMonthlyCoins,
-        valueText: '${monthlyCoins(tier)}',
-      ),
-      TierPerk(
-        labelKey: perkKeySearchFilters,
-        valueText: _fmtFilterLevel(l10n, searchFilterLevel(tier)),
-      ),
-      TierPerk(
-        labelKey: perkKeySeeWhoConnected,
-        valueText: _fmtBool(l10n, canSeeWhoConnected(tier)),
-        enabled: canSeeWhoConnected(tier),
-      ),
-      TierPerk(
-        labelKey: perkKeyTravelMode,
-        valueText: _fmtBool(l10n, travelModeEnabled(tier)),
-        enabled: travelModeEnabled(tier),
-      ),
-      // Flat for every tier: 5 coins per translation (no discount, no quota).
-      TierPerk(
-        labelKey: perkKeyTtsCost,
-        valueText: l10n.tierTtsCostValue(ttsCostCoins),
-      ),
-      TierPerk(
-        labelKey: perkKeyPrioritySupport,
-        valueText: _fmtBool(l10n, prioritySupport(tier)),
-        enabled: prioritySupport(tier),
-      ),
+      TierComparisonRow(
+          l10n.profileGhostMode, each((t) => mark(ghostModeIncluded(t)))),
+      TierComparisonRow(l10n.membershipPrioritySupport,
+          each((t) => mark(prioritySupport(t)))),
+      TierComparisonRow(
+          l10n.shopBusinessAccount, each((t) => mark(canBecomeBusiness(t)))),
     ];
   }
 }

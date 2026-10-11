@@ -35,6 +35,10 @@ export const REASON = {
   giftPurchaseHold: 'gift-purchase-hold',
   giftVelocityLimit: 'gift-velocity-limit',
   unknownFeature: 'unknown-feature',
+  /** The feature is not part of the caller's (effective) membership tier. */
+  tierRequired: 'tier-required',
+  /** The feature needs an ACTIVE business account (isBusiness + Platinum). */
+  businessRequired: 'business-required',
 } as const;
 
 /**

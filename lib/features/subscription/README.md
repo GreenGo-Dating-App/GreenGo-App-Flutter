@@ -19,39 +19,28 @@ Complete subscription management system with Google Play Billing and Apple Store
 
 ## Subscription Tiers
 
-### Basic (Free)
-- 10 daily likes
-- 1 super like per day
-- No rewinds
-- No boosts
-- Cannot see who likes you
-- No advanced filters
-- No read receipts
-- Ads enabled
+The tiers and every number shown to users live in ONE place:
+`lib/core/services/tier_entitlements.dart` (`TierEntitlements`). The server
+enforces the same numbers (`functions/src/shared/tierLimits.ts`, the Firestore
+rules' `tierCap*` helpers, `entitlement_usage/{uid}` counters); a unit test in
+`functions/__tests__/unit/membershipEntitlements.test.ts` fails on drift.
 
-### Silver ($9.99/month)
-- 100 daily likes
-- 5 super likes per day
-- 5 rewinds per day
-- 1 boost per month
-- See who likes you ✓
-- Advanced filters ✓
-- Read receipts ✓
-- Ad-free ✓
-- 1 profile boost
+| | Base | Silver | Gold | Platinum |
+|---|---|---|---|---|
+| Ongoing events | 1 | 3 | 5 | unlimited |
+| Groups you can create | 1 | unlimited | unlimited | unlimited |
+| New connections per day | 10 | 50 | 200 | unlimited |
+| Free profile boosts per month (then coins) | - | 1 | 4 | 30 |
+| Monthly coins | 20 | 300 | 400 | 500 |
+| Travel mode | - | 100 coins/day | 100 coins/day | free |
+| Ghost mode | - | - | yes | yes |
+| Priority support (tickets answered first) | - | - | yes | yes |
+| Business account | - | - | - | yes |
 
-### Gold ($19.99/month)
-- **Unlimited** daily likes
-- 10 super likes per day
-- **Unlimited** rewinds
-- 3 boosts per month
-- See who likes you ✓
-- Advanced filters ✓
-- Read receipts ✓
-- Priority support ✓
-- Ad-free ✓
-- 5 profile boosts
-- Incognito mode ✓
+There are no ads in the app for anyone, so "ad-free" is not a perk, and
+"see who connected" does not exist (removed from every promise, 2026-10-11).
+Memberships are auto-renewing subscriptions: Base yearly, the tiers monthly or
+yearly (Terms section 7).
 
 ## Architecture
 

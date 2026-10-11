@@ -45,6 +45,8 @@ import { monitored } from '../shared/monitoring';
 import {
   CONSENTS, AI_CONSENT_TYPE, AI_CONSENT_MIN_VERSION, requireAiConsent,
 } from '../shared/aiConsent';
+import { effectiveTier } from '../shared/effectiveTier';
+import { aiChatHelpersEnabled } from '../shared/tierLimits';
 
 const db = () => admin.firestore();
 const TS = () => admin.firestore.Timestamp.now();
@@ -324,6 +326,22 @@ async function callGemini(prompt: string): Promise<any> {
   return typeof text === 'string' ? parseModelJson(text) : null;
 }
 
+/**
+ * Smart replies and word breakdown are Silver-and-up chat helpers (the app
+ * says so in chat settings / the message menu); the EFFECTIVE tier decides
+ * (audit 2026-10-11, M6). The other assist tasks stay open to everyone.
+ */
+export const TIER_GATED_ASSIST_TASKS: readonly AssistTask[] = ['smartReplies', 'wordBreakdown'];
+
+export async function requireTierForTask(uid: string, task: AssistTask): Promise<void> {
+  if (!TIER_GATED_ASSIST_TASKS.includes(task)) return;
+  const profile = (await db().collection('profiles').doc(uid).get()).data();
+  if (!aiChatHelpersEnabled(effectiveTier(profile))) {
+    throw new AppError('TIER_REQUIRED', 'tier-required: this chat helper needs a Silver, Gold or Platinum membership', 403,
+      { reason: 'tier-required', requiredTier: 'SILVER' });
+  }
+}
+
 export async function handleAiAssist(request: any) {
   const uid = requireUid(request);
   const data = request.data ?? {};
@@ -334,6 +352,7 @@ export async function handleAiAssist(request: any) {
   const target = cleanLanguage(data.targetLanguage, language);
   const userLanguage = cleanLanguage(data.userLanguage, 'en');
   await requireAiConsent(uid);
+  await requireTierForTask(uid, task);
   await consumeQuota(uid, 'assist', 1, limits().assist);
   const raw = await callGemini(buildPrompt(task, text, language, target, userLanguage));
   const result = shapeResult(task, raw);

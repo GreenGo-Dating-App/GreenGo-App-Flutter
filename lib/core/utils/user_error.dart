@@ -49,6 +49,11 @@ enum UserErrorKind {
   insufficientCoins,
   giftPurchaseHold,
   giftVelocityLimit,
+
+  /// Membership refusals from the server: the feature is not part of the
+  /// user's plan / needs an active business account (audit 2026-10-11).
+  tierRequired,
+  businessRequired,
 }
 
 /// Server coin refusal reason code -> kind.
@@ -56,6 +61,8 @@ const Map<String, UserErrorKind> _coinReasonKinds = {
   'insufficient-coins': UserErrorKind.insufficientCoins,
   'gift-purchase-hold': UserErrorKind.giftPurchaseHold,
   'gift-velocity-limit': UserErrorKind.giftVelocityLimit,
+  'tier-required': UserErrorKind.tierRequired,
+  'business-required': UserErrorKind.businessRequired,
 };
 
 UserErrorKind? _coinKindForText(String text) {
@@ -267,6 +274,10 @@ String userErrorMessageForKind(AppLocalizations l10n, UserErrorKind kind) {
       return l10n.coinsGiftPurchaseHold;
     case UserErrorKind.giftVelocityLimit:
       return l10n.coinsGiftDailyLimit;
+    case UserErrorKind.tierRequired:
+      return l10n.userErrorTierRequired;
+    case UserErrorKind.businessRequired:
+      return l10n.userErrorBusinessRequired;
     case UserErrorKind.generic:
       return l10n.userErrorGeneric;
   }

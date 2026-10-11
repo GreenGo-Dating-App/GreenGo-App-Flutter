@@ -163,91 +163,52 @@ extension SubscriptionTierExtension on SubscriptionTier {
   ///
   ///   eventsCreate     ongoing events a user may create (Free 1 / Silver 3 /
   ///                    Gold 5 / Platinum ∞)
-  ///   groupsCreate     groups & communities a user may create (Free 1 / paid ∞)
+  ///   groupsCreate     groups a user may create (Free 1 / paid ∞)
   ///   dailyConnects    new-people connections per day (Free 10 / Silver 50 /
   ///                    Gold 200 / Platinum ∞)
-  ///   boostsPerMonth   profile boosts granted each month
+  ///   boostsPerMonth   FREE profile boosts each month (more cost coins)
   ///   monthlyCoins     coins granted each month by the membership
-  ///   seeWhoConnected  can see who connected with you (Gold+)
   ///   travelMode       browse/discover in another location (Silver+)
-  ///   prioritySupport  priority customer support (Gold+)
+  ///   travelModeFree   travel mode without the daily coin price (Platinum)
+  ///   ghostMode        hidden from discovery and search (Gold+)
+  ///   prioritySupport  support tickets answered first (Gold+)
   ///   businessAccount  may convert to a public business account (Platinum-only)
   ///   unlimitedChat    unlimited chat messages (all tiers)
-  ///   noAds            ad-free experience (all paying tiers)
+  ///
+  /// Every value is read from [TierEntitlements]; nothing is promised here
+  /// that the app and the server do not enforce.
   Map<String, dynamic> get features {
+    final tier = _membershipTier;
+    int limit(int? v) => v ?? -1; // -1 = unlimited
+    return {
+      'eventsCreate': limit(TierEntitlements.maxEvents(tier)),
+      'groupsCreate': limit(TierEntitlements.maxGroups(tier)),
+      'dailyConnects': limit(TierEntitlements.maxDailyConnects(tier)),
+      'boostsPerMonth': TierEntitlements.boostsPerMonth(tier),
+      'monthlyCoins': TierEntitlements.monthlyCoins(tier),
+      'travelMode': TierEntitlements.travelModeEnabled(tier),
+      'travelModeFree': TierEntitlements.travelModeFree(tier),
+      'ghostMode': TierEntitlements.ghostModeIncluded(tier),
+      'prioritySupport': TierEntitlements.prioritySupport(tier),
+      'businessAccount': TierEntitlements.canBecomeBusiness(tier),
+      'unlimitedChat': true,
+      if (this == SubscriptionTier.test)
+        'bypassCountdown': true, // Key feature for test users
+    };
+  }
+
+  MembershipTier get _membershipTier {
     switch (this) {
       case SubscriptionTier.basic:
-        return {
-          'eventsCreate': 1,
-          'groupsCreate': 1,
-          'dailyConnects': 10,
-          'boostsPerMonth': 0,
-          'monthlyCoins': TierEntitlements.monthlyCoins(MembershipTier.free),
-          'seeWhoConnected': false,
-          'travelMode': false,
-          'prioritySupport': false,
-          'businessAccount': false,
-          'unlimitedChat': true,
-          'noAds': false,
-        };
+        return MembershipTier.free;
       case SubscriptionTier.silver:
-        return {
-          'eventsCreate': 3,
-          'groupsCreate': -1, // unlimited
-          'dailyConnects': 50,
-          'boostsPerMonth': 1,
-          'monthlyCoins': TierEntitlements.monthlyCoins(MembershipTier.silver),
-          'seeWhoConnected': false,
-          'travelMode': true,
-          'prioritySupport': false,
-          'businessAccount': false,
-          'unlimitedChat': true,
-          'noAds': true,
-        };
+        return MembershipTier.silver;
       case SubscriptionTier.gold:
-        return {
-          'eventsCreate': 5,
-          'groupsCreate': -1, // unlimited
-          'dailyConnects': 200,
-          'boostsPerMonth': 4,
-          'monthlyCoins': TierEntitlements.monthlyCoins(MembershipTier.gold),
-          'seeWhoConnected': true,
-          'travelMode': true,
-          'prioritySupport': true,
-          'businessAccount': false,
-          'unlimitedChat': true,
-          'noAds': true,
-        };
+        return MembershipTier.gold;
       case SubscriptionTier.platinum:
-        return {
-          'eventsCreate': -1, // unlimited
-          'groupsCreate': -1, // unlimited
-          'dailyConnects': -1, // unlimited
-          'boostsPerMonth': 30,
-          'monthlyCoins': TierEntitlements.monthlyCoins(MembershipTier.platinum),
-          'seeWhoConnected': true,
-          'travelMode': true,
-          'prioritySupport': true,
-          'businessAccount': true,
-          'unlimitedChat': true,
-          'noAds': true,
-        };
+        return MembershipTier.platinum;
       case SubscriptionTier.test:
-        // Test tier - all features enabled, limits configurable from admin panel
-        return {
-          'eventsCreate': -1, // unlimited (admin configurable)
-          'groupsCreate': -1, // unlimited (admin configurable)
-          'dailyConnects': -1, // unlimited (admin configurable)
-          'boostsPerMonth': 30,
-          'monthlyCoins': TierEntitlements.monthlyCoins(MembershipTier.test),
-          'seeWhoConnected': true,
-          'travelMode': true,
-          'prioritySupport': true,
-          'businessAccount': true,
-          'unlimitedChat': true,
-          'noAds': true,
-          'bypassCountdown': true, // Key feature for test users
-        };
+        return MembershipTier.test;
     }
   }
 

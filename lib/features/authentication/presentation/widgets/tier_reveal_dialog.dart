@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/tier_entitlements.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../coins/domain/entities/coin_transaction.dart'
+    show CoinFeaturePrices;
 import '../../../membership/domain/entities/membership.dart';
 import 'pre_registration_offer.dart';
 
@@ -135,12 +137,15 @@ class _TierRevealDialogState extends State<TierRevealDialog>
     if (TierEntitlements.travelModeEnabled(t)) {
       add(_plainRow(
         const Icon(Icons.flight_takeoff, size: 20),
-        l10n.featureTravelMode,
+        TierEntitlements.travelModeFree(t)
+            ? l10n.featureTravelModeFree
+            : l10n.featureTravelModeCoins(CoinFeaturePrices.traveler),
       ));
-    } else if (TierEntitlements.canSeeWhoConnected(t)) {
+    }
+    if (TierEntitlements.prioritySupport(t)) {
       add(_plainRow(
-        const Icon(Icons.people_alt_outlined, size: 20),
-        l10n.featureWhoConnected,
+        const Icon(Icons.support_agent, size: 20),
+        l10n.membershipPrioritySupport,
       ));
     }
 

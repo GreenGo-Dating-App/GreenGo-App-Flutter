@@ -10,6 +10,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/effective_tier.dart';
+import '../../../../core/services/entitlement_usage.dart';
 import '../../../../core/services/tier_entitlements.dart';
 import '../../../../core/services/tier_upgrade_benefits.dart';
 import '../../../../core/services/usage_limit_service.dart';
@@ -27,10 +28,9 @@ import '../../domain/entities/profile.dart';
 ///
 /// Shows the user's usage in the current period vs the limits of their
 /// EFFECTIVE tier, live, from the same counters the gates increment:
-///   • `usageLimits/{uid}/days/{YYYY-MM-DD}.connectsCount` — new connections
-///     today (TierGate.recordConnect; cap TierEntitlements.maxDailyConnects)
-///   • `usageLimits/{uid}/months/{YYYY-MM}.boostCount` — profile boosts this
-///     month (TierGate.recordBoost; cap TierEntitlements.boostsPerMonth)
+///   • `entitlement_usage/{uid}` (SERVER-owned, the counters the rules check)
+///     — new connections today (UTC; cap TierEntitlements.maxDailyConnects)
+///     and free boosts used this month (UTC; TierEntitlements.boostsPerMonth)
 ///   • `usageLimits/{uid}/hours/{YYYY-MM-DD-HH}.likeCount / nopeCount /
 ///     superLikeCount` — swipe-deck connects / passes / priority connects this
 ///     hour (DiscoveryBloc; caps in MembershipRules). Only shown when the swipe
@@ -61,12 +61,12 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
   // Real-time Firestore listeners (one document each).
   StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _hourlyUsageSub;
   StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _dailyUsageSub;
-  StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _monthlyUsageSub;
+  StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _entitlementSub;
+  Map<String, dynamic>? _entitlementUsage;
   StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _profileSub;
   Timer? _periodTimer;
   String? _hourKey;
   String? _dayKey;
-  String? _monthKey;
 
   // Real-time membership tier (updates after purchase / on expiry)
   late MembershipTier _liveMembershipTier;
@@ -93,7 +93,7 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
     _periodTimer?.cancel();
     _hourlyUsageSub?.cancel();
     _dailyUsageSub?.cancel();
-    _monthlyUsageSub?.cancel();
+    _entitlementSub?.cancel();
     _profileSub?.cancel();
     super.dispose();
   }
@@ -166,8 +166,6 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
         if (!mounted) return;
         final data = doc.data();
         setState(() {
-          _usageStats[UsageLimitType.connects] =
-              _intField(data, 'connectsCount');
           _usageStats[UsageLimitType.messages] =
               _intField(data, 'messageCount');
           _usageStats[UsageLimitType.mediaSends] =
@@ -176,16 +174,27 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
       }, onError: (Object _) {});
     }
 
-    final monthKey = _getMonthKey(now);
-    if (monthKey != _monthKey) {
-      _monthKey = monthKey;
-      _monthlyUsageSub?.cancel();
-      _monthlyUsageSub =
-          usage.collection('months').doc(monthKey).snapshots().listen((doc) {
-        if (!mounted) return;
-        setState(() => _boostsThisMonth = _intField(doc.data(), 'boostCount'));
-      }, onError: (Object _) {});
-    }
+    // Server-owned counters (connects today, free boosts this month): one
+    // listener for the screen's lifetime; the UTC windows are applied on read.
+    _entitlementSub ??= FirebaseFirestore.instance
+        .collection(kEntitlementUsageCollection)
+        .doc(widget.userId)
+        .snapshots()
+        .listen((doc) {
+      if (!mounted) return;
+      setState(() {
+        _entitlementUsage = doc.data();
+        _applyEntitlementUsage(DateTime.now());
+      });
+    }, onError: (Object _) {});
+    // (Re-applied on every snapshot; here for a UTC day / month rollover.)
+    _applyEntitlementUsage(now);
+  }
+
+  void _applyEntitlementUsage(DateTime now) {
+    _usageStats[UsageLimitType.connects] =
+        connectsTodayFrom(_entitlementUsage, now);
+    _boostsThisMonth = freeBoostsUsedFrom(_entitlementUsage, now);
   }
 
   Future<void> _loadCoins() async {
@@ -758,10 +767,14 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
         // Closest existing key; a dedicated "People you can see at a time"
         // label is pending in the ARBs.
         return l10n.featureDiscoveryReveals(b.to.count ?? 0);
-      case UpgradeBenefitKind.seeWhoConnected:
-        return l10n.shopSeeWhoConnected;
       case UpgradeBenefitKind.travelMode:
         return l10n.shopTravelMode;
+      case UpgradeBenefitKind.freeTravelMode:
+        return l10n.upgradeBenefitFreeTravelMode;
+      case UpgradeBenefitKind.ghostMode:
+        return l10n.profileGhostMode;
+      case UpgradeBenefitKind.prioritySupport:
+        return l10n.membershipPrioritySupport;
       case UpgradeBenefitKind.analytics:
         return l10n.analyticsTitle;
       case UpgradeBenefitKind.businessAccount:

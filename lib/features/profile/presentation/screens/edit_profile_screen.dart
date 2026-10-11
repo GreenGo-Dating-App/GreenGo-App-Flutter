@@ -182,10 +182,7 @@ class EditProfileScreen extends StatelessWidget {
               return;
             }
             if (state is ProfileBoostActivated) {
-              // Count this activated boost toward the tier's monthly allotment.
-              if (userId != null) {
-                TierGate().recordBoost(userId!);
-              }
+              // The free monthly boost (if any) was counted by the server.
               final remaining = state.expiry.difference(DateTime.now());
               // A boost costs coins, so it gets a moment of its own rather
               // than a line of text that slides away.
@@ -1714,10 +1711,15 @@ class EditProfileScreen extends StatelessWidget {
       return;
     }
 
-    // Tier gate: boosts are a paid-plan perk (Base gets 0/month → blocked with
-    // an upgrade prompt; paid tiers are capped by boostsPerMonth).
+    // Tier gate: boosts are a paid-plan perk (the free plan is blocked with an
+    // upgrade prompt). Paid plans get free boosts each month (Silver 1 /
+    // Gold 4 / Platinum 30, counted by the server), then pay coins.
     if (!await TierGate().ensureBoost(context, profile.userId)) return;
     if (!context.mounted) return;
+    final allowance = await TierGate()
+        .boostAllowance(profile.userId, knownTier: profile.effectiveTier);
+    if (!context.mounted) return;
+    final freeBoost = allowance.left > 0;
 
     const cost = CoinFeaturePrices.boost;
 
@@ -1742,6 +1744,11 @@ class EditProfileScreen extends StatelessWidget {
               AppLocalizations.of(context)!.profileBoostDescription,
               style: const TextStyle(color: Colors.white70, fontSize: 14),
             ),
+            const SizedBox(height: 8),
+            Text(
+              AppLocalizations.of(context)!.boostFreeLeftThisMonth(allowance.left),
+              style: const TextStyle(color: AppColors.richGold, fontSize: 13),
+            ),
             const SizedBox(height: 16),
             Container(
               padding: const EdgeInsets.all(12),
@@ -1755,7 +1762,9 @@ class EditProfileScreen extends StatelessWidget {
                   const Icon(Icons.monetization_on, color: AppColors.richGold, size: 24),
                   const SizedBox(width: 8),
                   Text(
-                    AppLocalizations.of(context)!.profileBoostCost(cost),
+                    freeBoost
+                        ? AppLocalizations.of(context)!.boostUsesFreeBoost
+                        : AppLocalizations.of(context)!.profileBoostCost(cost),
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 16,
@@ -1789,7 +1798,8 @@ class EditProfileScreen extends StatelessWidget {
 
     // Dispatch boost event
     context.read<ProfileBloc>().add(
-      ProfileBoostRequested(userId: profile.userId),
+      ProfileBoostRequested(
+          userId: profile.userId, freeBoostAvailable: freeBoost),
     );
 
     // No "activating..." message here. It was shown immediately AFTER the
@@ -2062,6 +2072,12 @@ class EditProfileScreen extends StatelessWidget {
 
     if (confirmed != true || !context.mounted) return;
 
+    // Pick the destination FIRST, then pay: cancelling the picker costs
+    // nothing, and the travel pass the server writes on payment
+    // (travelerPaidUntil) bounds the end time the rules accept.
+    final location = await _pickTravelerLocation(context);
+    if (location == null || !context.mounted) return;
+
     if (!isPlatinum) {
       try {
         final coinRepository = GetIt.instance<CoinRepository>();
@@ -2105,7 +2121,7 @@ class EditProfileScreen extends StatelessWidget {
           return;
         }
 
-        // Pay on the server; the destination is picked next.
+        // Pay on the server (writes the 24h travel pass).
         final spend = await coinRepository.purchaseFeature(
           userId: profile.userId,
           featureName: 'traveler',
@@ -2122,20 +2138,23 @@ class EditProfileScreen extends StatelessWidget {
 
     if (!context.mounted) return;
 
-    // Show map picker dialog for the user to select their traveler location
-    _showLocationPickerDialog(context, profile);
+    await _writeTravelerLocation(context, profile, location);
   }
 
-  Future<void> _showLocationPickerDialog(BuildContext context, Profile profile) async {
+  Future<profile_entity.Location?> _pickTravelerLocation(
+      BuildContext context) async {
     final selectedLocation = await Navigator.of(context).push<dynamic>(
       MaterialPageRoute(
         builder: (_) => const TravelerLocationPickerScreen(),
       ),
     );
+    return selectedLocation is profile_entity.Location
+        ? selectedLocation
+        : null;
+  }
 
-    if (selectedLocation == null || !context.mounted) return;
-
-    final location = selectedLocation as profile_entity.Location;
+  Future<void> _writeTravelerLocation(BuildContext context, Profile profile,
+      profile_entity.Location location) async {
     final expiry = DateTime.now().add(const Duration(hours: 24));
 
     // Public: the travel place (city / country) only. The exact point and
@@ -2294,8 +2313,9 @@ class _TravelerToggleCard extends StatelessWidget {
   }
 }
 
-/// Incognito toggle card widget
-class _BoostProfileCard extends StatelessWidget {
+/// Profile boost card: shows the free boosts left this month (server
+/// counter) and the price once they are used.
+class _BoostProfileCard extends StatefulWidget {
 
   const _BoostProfileCard({
     required this.profile,
@@ -2305,7 +2325,39 @@ class _BoostProfileCard extends StatelessWidget {
   final VoidCallback onBoost;
 
   @override
+  State<_BoostProfileCard> createState() => _BoostProfileCardState();
+}
+
+class _BoostProfileCardState extends State<_BoostProfileCard> {
+  BoostAllowance? _allowance;
+
+  Profile get profile => widget.profile;
+  VoidCallback get onBoost => widget.onBoost;
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  @override
+  void didUpdateWidget(covariant _BoostProfileCard old) {
+    super.didUpdateWidget(old);
+    if (old.profile.boostExpiry != widget.profile.boostExpiry ||
+        old.profile.effectiveTier != widget.profile.effectiveTier) {
+      _load();
+    }
+  }
+
+  Future<void> _load() async {
+    final a = await TierGate().boostAllowance(widget.profile.userId,
+        knownTier: widget.profile.effectiveTier);
+    if (mounted) setState(() => _allowance = a);
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final freeLeft = _allowance?.left ?? 0;
     final isActive = profile.isBoosted &&
         profile.boostExpiry != null &&
         profile.boostExpiry!.isAfter(DateTime.now());
@@ -2473,10 +2525,14 @@ class _BoostProfileCard extends StatelessWidget {
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              Icon(Icons.monetization_on, color: const Color(0xFF2A1F0E).withOpacity(0.8), size: 14),
-                              const SizedBox(width: 3),
+                              if (freeLeft == 0) ...[
+                                Icon(Icons.monetization_on, color: const Color(0xFF2A1F0E).withOpacity(0.8), size: 14),
+                                const SizedBox(width: 3),
+                              ],
                               Text(
-                                '${CoinFeaturePrices.boost}',
+                                freeLeft > 0
+                                    ? AppLocalizations.of(context)!.tierFree
+                                    : '${CoinFeaturePrices.boost}',
                                 style: TextStyle(
                                   color: const Color(0xFF2A1F0E).withOpacity(0.8),
                                   fontSize: 12,
@@ -2491,6 +2547,16 @@ class _BoostProfileCard extends StatelessWidget {
                   ),
                 ),
               ),
+              if (_allowance?.available ?? false) ...[
+                const SizedBox(height: 8),
+                Text(
+                  AppLocalizations.of(context)!.boostFreeLeftThisMonth(freeLeft),
+                  style: TextStyle(
+                    color: AppColors.richGold.withOpacity(0.8),
+                    fontSize: 12,
+                  ),
+                ),
+              ],
             ],
           ],
         ),

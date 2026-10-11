@@ -2543,12 +2543,6 @@ abstract class AppLocalizations {
   /// **'Age Range'**
   String get ageRange;
 
-  /// No description provided for @aiCoachBenefitAllChapters.
-  ///
-  /// In en, this message translates to:
-  /// **'All learning chapters unlocked'**
-  String get aiCoachBenefitAllChapters;
-
   /// No description provided for @aiCoachBenefitFeedback.
   ///
   /// In en, this message translates to:
@@ -2578,12 +2572,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your free trial of AI Coach has ended.'**
   String get aiCoachTrialEnded;
-
-  /// No description provided for @aiCoachUpgradePrompt.
-  ///
-  /// In en, this message translates to:
-  /// **'Upgrade to Silver, Gold, or Platinum to unlock.'**
-  String get aiCoachUpgradePrompt;
 
   /// No description provided for @aiCoachUpgradeTitle.
   ///
@@ -4708,12 +4696,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Upgrade'**
   String get chatUpgrade;
-
-  /// No description provided for @chatUpgradePracticeMode.
-  ///
-  /// In en, this message translates to:
-  /// **'Upgrade to Silver VIP or higher to continue practicing languages in your chats.'**
-  String get chatUpgradePracticeMode;
 
   /// No description provided for @chatUploading.
   ///
@@ -11394,12 +11376,6 @@ abstract class AppLocalizations {
   /// **'Membership Activated!'**
   String get membershipActivatedTitle;
 
-  /// No description provided for @membershipAdvancedFilters.
-  ///
-  /// In en, this message translates to:
-  /// **'Advanced Filters'**
-  String get membershipAdvancedFilters;
-
   /// No description provided for @membershipBase.
   ///
   /// In en, this message translates to:
@@ -11447,12 +11423,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Current Membership'**
   String get membershipCurrent;
-
-  /// No description provided for @membershipDailyLikes.
-  ///
-  /// In en, this message translates to:
-  /// **'Daily Connects'**
-  String get membershipDailyLikes;
 
   /// No description provided for @membershipDailyMessagesLabel.
   ///
@@ -11688,12 +11658,6 @@ abstract class AppLocalizations {
   /// **'GreenGo Base'**
   String get membershipGreenGoBase;
 
-  /// No description provided for @membershipIncognitoMode.
-  ///
-  /// In en, this message translates to:
-  /// **'Incognito Mode'**
-  String get membershipIncognitoMode;
-
   /// No description provided for @membershipLeaveEmptyLifetime.
   ///
   /// In en, this message translates to:
@@ -11769,7 +11733,7 @@ abstract class AppLocalizations {
   /// No description provided for @membershipPermanent.
   ///
   /// In en, this message translates to:
-  /// **'Permanent'**
+  /// **'1 year, renews yearly'**
   String get membershipPermanent;
 
   /// No description provided for @membershipPlatinum.
@@ -11790,12 +11754,6 @@ abstract class AppLocalizations {
   /// **'Priority Support'**
   String get membershipPrioritySupport;
 
-  /// No description provided for @membershipReadReceipts.
-  ///
-  /// In en, this message translates to:
-  /// **'Read Receipts'**
-  String get membershipReadReceipts;
-
   /// No description provided for @membershipRequired.
   ///
   /// In en, this message translates to:
@@ -11814,23 +11772,11 @@ abstract class AppLocalizations {
   /// **'Your base membership is active. Purchase another year to extend your expiration date.'**
   String get membershipExtendDescription;
 
-  /// No description provided for @membershipRewinds.
-  ///
-  /// In en, this message translates to:
-  /// **'Rewinds'**
-  String get membershipRewinds;
-
   /// No description provided for @membershipSavePercent.
   ///
   /// In en, this message translates to:
   /// **'SAVE {percent}%'**
   String membershipSavePercent(Object percent);
-
-  /// No description provided for @membershipSeeWhoLikes.
-  ///
-  /// In en, this message translates to:
-  /// **'See Who Connects'**
-  String get membershipSeeWhoLikes;
 
   /// No description provided for @membershipSilver.
   ///
@@ -11841,7 +11787,7 @@ abstract class AppLocalizations {
   /// No description provided for @membershipSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'Buy once, enjoy premium features for 1 month or 1 year'**
+  /// **'Memberships renew automatically: Base every year, Silver, Gold and Platinum every month or year. Cancel anytime.'**
   String get membershipSubtitle;
 
   /// No description provided for @membershipSuperLikes.
@@ -11859,13 +11805,13 @@ abstract class AppLocalizations {
   /// No description provided for @membershipTerms.
   ///
   /// In en, this message translates to:
-  /// **'One-time purchase. Membership will be extended from your current end date.'**
+  /// **'Auto-renewing subscription: it renews at the end of each period at the price shown unless you cancel at least 24 hours before. Manage or cancel it in your store account.'**
   String get membershipTerms;
 
   /// No description provided for @membershipTermsExtended.
   ///
   /// In en, this message translates to:
-  /// **'One-time purchase. Membership will be extended from your current end date. Higher tier purchases override lower tiers.'**
+  /// **'Auto-renewing subscription: it renews at the end of each period at the price shown unless you cancel at least 24 hours before. Manage or cancel it in your store account. A higher tier replaces a lower one.'**
   String get membershipTermsExtended;
 
   /// No description provided for @membershipTierLabel.
@@ -14298,12 +14244,6 @@ abstract class AppLocalizations {
   /// **'Incognito mode hides your profile from discovery for 24 hours.\n\nCost: {cost}'**
   String profileIncognitoDescription(Object cost);
 
-  /// No description provided for @profileIncognitoFreePlatinum.
-  ///
-  /// In en, this message translates to:
-  /// **'Free with Platinum - Hidden from discovery'**
-  String get profileIncognitoFreePlatinum;
-
   /// No description provided for @profileIncognitoMode.
   ///
   /// In en, this message translates to:
@@ -15666,23 +15606,11 @@ abstract class AppLocalizations {
   /// **'ACTIVE'**
   String get shopActive;
 
-  /// No description provided for @shopAdvancedFilters.
-  ///
-  /// In en, this message translates to:
-  /// **'Advanced Filters'**
-  String get shopAdvancedFilters;
-
   /// No description provided for @shopAmountCoins.
   ///
   /// In en, this message translates to:
   /// **'{amount} coins'**
   String shopAmountCoins(Object amount);
-
-  /// No description provided for @shopBadge.
-  ///
-  /// In en, this message translates to:
-  /// **'Badge'**
-  String get shopBadge;
 
   /// No description provided for @shopBaseMembership.
   ///
@@ -15840,12 +15768,6 @@ abstract class AppLocalizations {
   /// **'GreenGoCoins'**
   String get shopGreenGoCoins;
 
-  /// No description provided for @shopIncognitoMode.
-  ///
-  /// In en, this message translates to:
-  /// **'Incognito Mode'**
-  String get shopIncognitoMode;
-
   /// No description provided for @shopInsufficientCoins.
   ///
   /// In en, this message translates to:
@@ -15906,12 +15828,6 @@ abstract class AppLocalizations {
   /// **'Previous purchase found. Please try again.'**
   String get shopPreviousPurchaseFound;
 
-  /// No description provided for @shopPriorityMatching.
-  ///
-  /// In en, this message translates to:
-  /// **'Priority Connections'**
-  String get shopPriorityMatching;
-
   /// No description provided for @shopPurchaseCoinsFor.
   ///
   /// In en, this message translates to:
@@ -15948,12 +15864,6 @@ abstract class AppLocalizations {
   /// **'SAVE {percent}%'**
   String shopSavePercent(String percent);
 
-  /// No description provided for @shopSeeWhoLikesYou.
-  ///
-  /// In en, this message translates to:
-  /// **'See Who Connects'**
-  String get shopSeeWhoLikesYou;
-
   /// No description provided for @shopSend.
   ///
   /// In en, this message translates to:
@@ -15977,12 +15887,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Purchases are temporarily unavailable. Please try again later.'**
   String get shopTemporarilyUnavailable;
-
-  /// No description provided for @shopSuperLikes.
-  ///
-  /// In en, this message translates to:
-  /// **'Priority Connects'**
-  String get shopSuperLikes;
 
   /// No description provided for @shopTabCoins.
   ///
@@ -16013,12 +15917,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Shop'**
   String get shopTitle;
-
-  /// No description provided for @shopTravelling.
-  ///
-  /// In en, this message translates to:
-  /// **'Travelling'**
-  String get shopTravelling;
 
   /// No description provided for @shopUnableToLoadPackages.
   ///
@@ -16073,12 +15971,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Watch short videos to earn free coins!\nStay tuned for this exciting feature.'**
   String get shopVideoCoinsDescription;
-
-  /// No description provided for @shopVipBadge.
-  ///
-  /// In en, this message translates to:
-  /// **'VIP Badge'**
-  String get shopVipBadge;
 
   /// No description provided for @shopYearly.
   ///
@@ -17202,12 +17094,6 @@ abstract class AppLocalizations {
   /// **'Upgrade'**
   String get upgrade;
 
-  /// No description provided for @upgradeForEarlyAccess.
-  ///
-  /// In en, this message translates to:
-  /// **'Upgrade to Silver, Gold, or Platinum for early access before April 14th, 2026!'**
-  String get upgradeForEarlyAccess;
-
   /// No description provided for @upgradeNow.
   ///
   /// In en, this message translates to:
@@ -17616,30 +17502,6 @@ abstract class AppLocalizations {
   /// **'No tags available'**
   String get vibeTagsNoTags;
 
-  /// No description provided for @vibeTagsPremiumFeature1.
-  ///
-  /// In en, this message translates to:
-  /// **'5 vibe tags instead of 3'**
-  String get vibeTagsPremiumFeature1;
-
-  /// No description provided for @vibeTagsPremiumFeature2.
-  ///
-  /// In en, this message translates to:
-  /// **'Exclusive premium tags'**
-  String get vibeTagsPremiumFeature2;
-
-  /// No description provided for @vibeTagsPremiumFeature3.
-  ///
-  /// In en, this message translates to:
-  /// **'Priority in search results'**
-  String get vibeTagsPremiumFeature3;
-
-  /// No description provided for @vibeTagsPremiumFeature4.
-  ///
-  /// In en, this message translates to:
-  /// **'And much more!'**
-  String get vibeTagsPremiumFeature4;
-
   /// No description provided for @vibeTagsRemoveTag.
   ///
   /// In en, this message translates to:
@@ -17987,12 +17849,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your access will begin on April 14th, 2026'**
   String get waitingAccessDateBasic;
-
-  /// No description provided for @waitingAccessDatePremium.
-  ///
-  /// In en, this message translates to:
-  /// **'As a {tier} member, you get early access before April 14th, 2026!'**
-  String waitingAccessDatePremium(String tier);
 
   /// No description provided for @waitingAccessDateTitle.
   ///
@@ -18549,19 +18405,19 @@ abstract class AppLocalizations {
   /// No description provided for @guideTiersItem1.
   ///
   /// In en, this message translates to:
-  /// **'Silver: Get more daily connects, see who connected with you, and priority support.'**
+  /// **'Silver: 50 new connections a day, 3 ongoing events, unlimited groups, 1 free profile boost and 300 coins a month, and travel mode for 100 coins a day.'**
   String get guideTiersItem1;
 
   /// No description provided for @guideTiersItem2.
   ///
   /// In en, this message translates to:
-  /// **'Gold: Everything in Silver plus unlimited connects, advanced filters, and read receipts.'**
+  /// **'Gold: everything in Silver plus 200 new connections a day, 5 ongoing events, 4 free boosts and 400 coins a month, ghost mode and priority support.'**
   String get guideTiersItem2;
 
   /// No description provided for @guideTiersItem3.
   ///
   /// In en, this message translates to:
-  /// **'Platinum: Everything in Gold plus profile boost, top picks, and exclusive features.'**
+  /// **'Platinum: everything in Gold plus unlimited new connections and events, 30 free boosts and 500 coins a month, free travel mode, a business account and analytics.'**
   String get guideTiersItem3;
 
   /// No description provided for @guideTiersItem4.
@@ -19079,24 +18935,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'7 days free, then auto-renews yearly'**
   String get membershipTrialSubtitle;
-
-  /// No description provided for @membershipTrialFeature1.
-  ///
-  /// In en, this message translates to:
-  /// **'Create unlimited communities, events & groups'**
-  String get membershipTrialFeature1;
-
-  /// No description provided for @membershipTrialFeature2.
-  ///
-  /// In en, this message translates to:
-  /// **'Ad-free experience — no advertisements'**
-  String get membershipTrialFeature2;
-
-  /// No description provided for @membershipTrialFeature3.
-  ///
-  /// In en, this message translates to:
-  /// **'500 bonus coins + full access to every feature'**
-  String get membershipTrialFeature3;
 
   /// No description provided for @membershipHaveCoupon.
   ///
@@ -20399,12 +20237,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Profile boosts are a paid-membership perk. Upgrade your plan to boost your profile and get seen by more people.'**
   String get boostRequiresTierDescription;
-
-  /// No description provided for @boostMonthlyLimitReached.
-  ///
-  /// In en, this message translates to:
-  /// **'You\'ve used all {limit} profile boosts included in your plan this month. Upgrade for more.'**
-  String boostMonthlyLimitReached(int limit);
 
   /// No description provided for @travelModeFeatureName.
   ///
@@ -22815,7 +22647,7 @@ abstract class AppLocalizations {
   /// No description provided for @shopGroupsCreate.
   ///
   /// In en, this message translates to:
-  /// **'Groups & communities you can create'**
+  /// **'Groups you can create'**
   String get shopGroupsCreate;
 
   /// No description provided for @shopDailyConnects.
@@ -22827,7 +22659,7 @@ abstract class AppLocalizations {
   /// No description provided for @shopMonthlyBoosts.
   ///
   /// In en, this message translates to:
-  /// **'Monthly profile boosts'**
+  /// **'Free profile boosts per month'**
   String get shopMonthlyBoosts;
 
   /// No description provided for @shopMonthlyCoins.
@@ -22835,18 +22667,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Monthly coins'**
   String get shopMonthlyCoins;
-
-  /// No description provided for @shopNoAds.
-  ///
-  /// In en, this message translates to:
-  /// **'Ad-free experience'**
-  String get shopNoAds;
-
-  /// No description provided for @shopSeeWhoConnected.
-  ///
-  /// In en, this message translates to:
-  /// **'See who connected with you'**
-  String get shopSeeWhoConnected;
 
   /// No description provided for @shopTravelMode.
   ///
@@ -24423,7 +24243,7 @@ abstract class AppLocalizations {
   /// No description provided for @featureBoosts.
   ///
   /// In en, this message translates to:
-  /// **'{count} profile boosts a month'**
+  /// **'{count} free profile boosts a month'**
   String featureBoosts(int count);
 
   /// No description provided for @featureDiscoveryReveals.
@@ -24431,18 +24251,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count} profiles revealed at a time'**
   String featureDiscoveryReveals(int count);
-
-  /// No description provided for @featureTravelMode.
-  ///
-  /// In en, this message translates to:
-  /// **'Travel mode - discover people anywhere'**
-  String get featureTravelMode;
-
-  /// No description provided for @featureWhoConnected.
-  ///
-  /// In en, this message translates to:
-  /// **'See who connected with you'**
-  String get featureWhoConnected;
 
   /// No description provided for @boostProfileCelebrationTitle.
   ///
@@ -34808,30 +34616,6 @@ abstract class AppLocalizations {
   /// **'Your premium membership is now active'**
   String get celebrationMembershipActive;
 
-  /// No description provided for @celebrationUnlimitedLikes.
-  ///
-  /// In en, this message translates to:
-  /// **'Unlimited likes'**
-  String get celebrationUnlimitedLikes;
-
-  /// No description provided for @celebrationSeeWhoLikedYou.
-  ///
-  /// In en, this message translates to:
-  /// **'See who wants to connect'**
-  String get celebrationSeeWhoLikedYou;
-
-  /// No description provided for @celebrationPerDay.
-  ///
-  /// In en, this message translates to:
-  /// **'{count}/day'**
-  String celebrationPerDay(int count);
-
-  /// No description provided for @celebrationExclusiveEvents.
-  ///
-  /// In en, this message translates to:
-  /// **'Exclusive Events'**
-  String get celebrationExclusiveEvents;
-
   /// No description provided for @purchaseSuccessCoinsAdded.
   ///
   /// In en, this message translates to:
@@ -40694,6 +40478,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'If you don\'t agree, you can sign out. You can also delete your account at any time.'**
   String get legalUpdateDisagreeHint;
+
+  /// Membership comparison table row: travel-mode price per day (cells: a coin amount, or Free for Platinum)
+  ///
+  /// In en, this message translates to:
+  /// **'Travel mode (coins per day)'**
+  String get tierTravelModeCostRow;
+
+  /// My Usage > Upgrade Benefits row: travel mode without the daily coin price (Platinum)
+  ///
+  /// In en, this message translates to:
+  /// **'Free travel mode'**
+  String get upgradeBenefitFreeTravelMode;
+
+  /// Welcome pack / tier reveal perk row (Platinum)
+  ///
+  /// In en, this message translates to:
+  /// **'Travel mode - free, discover people anywhere'**
+  String get featureTravelModeFree;
+
+  /// Welcome pack / tier reveal perk row (Silver, Gold)
+  ///
+  /// In en, this message translates to:
+  /// **'Travel mode - {coins} coins per day'**
+  String featureTravelModeCoins(int coins);
+
+  /// Profile boost card + confirm dialog: free monthly boosts left
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No free boosts left this month} =1{1 free boost left this month} other{{count} free boosts left this month}}'**
+  String boostFreeLeftThisMonth(int count);
+
+  /// Profile boost confirm dialog: price line when a free monthly boost is used
+  ///
+  /// In en, this message translates to:
+  /// **'Free: uses one of your monthly free boosts'**
+  String get boostUsesFreeBoost;
+
+  /// Error popup: the server refused a feature that is not part of the user's membership tier
+  ///
+  /// In en, this message translates to:
+  /// **'This feature isn\'t included in your membership. Upgrade your plan to use it.'**
+  String get userErrorTierRequired;
+
+  /// Error popup: the server refused a business-only feature
+  ///
+  /// In en, this message translates to:
+  /// **'This needs an active business account (Platinum).'**
+  String get userErrorBusinessRequired;
+
+  /// Support tickets list banner, shown only to Gold and Platinum members
+  ///
+  /// In en, this message translates to:
+  /// **'Priority support: your tickets are answered first.'**
+  String get supportPriorityBanner;
 }
 
 class _AppLocalizationsDelegate

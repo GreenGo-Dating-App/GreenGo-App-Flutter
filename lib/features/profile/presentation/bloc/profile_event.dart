@@ -109,9 +109,13 @@ class ProfileNicknameUpdateRequested extends ProfileEvent {
 
 class ProfileBoostRequested extends ProfileEvent {
 
-  const ProfileBoostRequested({required this.userId});
+  const ProfileBoostRequested({required this.userId, this.freeBoostAvailable = false});
   final String userId;
 
+  /// A free monthly boost is left (TierGate.boostAllowance): the server will
+  /// charge 0 coins, so the coin balance is not checked first.
+  final bool freeBoostAvailable;
+
   @override
-  List<Object?> get props => [userId];
+  List<Object?> get props => [userId, freeBoostAvailable];
 }
