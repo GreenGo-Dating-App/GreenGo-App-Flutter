@@ -91,7 +91,10 @@ class _WaitingScreenState extends State<WaitingScreen>
           actions: const [
             Padding(
               padding: EdgeInsets.only(right: 8.0),
-              child: LanguageSelector(),
+              child: LanguageSelector(
+                iconColor: AppColors.textSecondary,
+                textColor: AppColors.textSecondary,
+              ),
             ),
           ],
         ),

@@ -49,15 +49,15 @@ void main() {
 
   vec3 col = BASE;
   // Vertical base: slightly greener at the top, black at the bottom.
-  col = mix(col, GREEN * 0.45, (1.0 - uv.y) * 0.55);
-  col += GREEN * 0.55 * blob(p, c1, r);
-  col += TEAL  * 0.40 * blob(p, c2, r * 0.9);
-  col += EMER  * 0.45 * blob(p, c3, r * 1.1);
+  col = mix(col, GREEN * 0.38, (1.0 - uv.y) * 0.45);
+  col += GREEN * 0.42 * blob(p, c1, r);
+  col += TEAL  * 0.32 * blob(p, c2, r * 0.9);
+  col += EMER  * 0.38 * blob(p, c3, r * 1.1);
   col += GOLD  * 0.035 * blob(p, c4, r * 0.7);
 
   // Soft vignette keeps the edges deep and the centre calm.
   float v = length(uv - vec2(0.5, 0.45));
-  col *= mix(1.0, 0.55, smoothstep(0.35, 0.95, v));
+  col *= mix(1.0, 0.50, smoothstep(0.30, 0.95, v));
 
   // +-0.5/255 dither.
   col += (hash(frag) - 0.5) / 255.0;

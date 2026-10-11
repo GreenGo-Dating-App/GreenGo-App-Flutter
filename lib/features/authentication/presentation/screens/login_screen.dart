@@ -205,7 +205,11 @@ class _LoginScreenState extends State<LoginScreen>
           actions: const [
             Padding(
               padding: EdgeInsets.only(right: 8.0),
-              child: LanguageSelector(),
+              // Quiet white/grey — gold is reserved for the Login button.
+              child: LanguageSelector(
+                iconColor: AppColors.textSecondary,
+                textColor: AppColors.textSecondary,
+              ),
             ),
           ],
         ),
@@ -262,21 +266,18 @@ class _LoginScreenState extends State<LoginScreen>
                       AppDimensions.paddingL,
                     ),
                     child: ConstrainedBox(
-                      // Vertically centre the column when it fits (desktop).
+                      // Vertically centre the column when it fits.
                       constraints: BoxConstraints(
-                        minHeight: wide
-                            ? (constraints.maxHeight -
-                                    topGap -
-                                    AppDimensions.paddingL)
-                                .clamp(0.0, double.infinity)
-                            : 0,
+                        minHeight: (constraints.maxHeight -
+                                topGap -
+                                AppDimensions.paddingL)
+                            .clamp(0.0, double.infinity),
                       ),
                       child: Center(
                         child: ConstrainedBox(
                           // Full-bleed inputs look broken on a wide screen.
                           constraints: BoxConstraints(
-                            maxWidth:
-                                wide ? _formMaxWidth + 80 : _formMaxWidth,
+                            maxWidth: wide ? _formMaxWidth + 80 : _formMaxWidth,
                           ),
                           child: wide ? _FormCard(child: form) : form,
                         ),
@@ -319,16 +320,23 @@ class _LoginScreenState extends State<LoginScreen>
             const SizedBox(height: 16),
             FadeTransition(
               opacity: _fadeAnimation,
-              child: Text(
-                l10n.loginTagline,
-                key: const ValueKey('login_tagline'),
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.white.withValues(alpha: 0.78),
-                  fontSize: 17,
-                  height: 1.45,
-                  fontWeight: FontWeight.w400,
-                  letterSpacing: 0.1,
+              // Narrower than the form so the line breaks into two balanced
+              // lines instead of leaving a one-word orphan.
+              child: Center(
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 320),
+                  child: Text(
+                    l10n.loginTagline,
+                    key: const ValueKey('login_tagline'),
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white.withValues(alpha: 0.78),
+                      fontSize: 16,
+                      height: 1.45,
+                      fontWeight: FontWeight.w400,
+                      letterSpacing: 0.1,
+                    ),
+                  ),
                 ),
               ),
             ),
@@ -422,6 +430,7 @@ class _LoginScreenState extends State<LoginScreen>
                         style: const TextStyle(
                           color: AppColors.textSecondary,
                           fontSize: 14,
+                          fontWeight: FontWeight.w400,
                         ),
                       ),
                     ),
@@ -466,9 +475,7 @@ class _LoginScreenState extends State<LoginScreen>
                         ),
                       ],
                     ),
-
                     const SizedBox(height: 24),
-
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -528,7 +535,6 @@ class _LoginScreenState extends State<LoginScreen>
                           ),
                       ],
                     ),
-
                     const SizedBox(height: 32),
                   ],
 

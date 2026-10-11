@@ -237,7 +237,7 @@ class AuroraFallbackPainter extends CustomPainter {
         ..shader = const LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [Color(0xFF071A14), AuroraBackground.base],
+          colors: [Color(0xFF06150F), AuroraBackground.base],
           stops: [0.0, 0.85],
         ).createShader(rect),
     );
@@ -260,11 +260,11 @@ class AuroraFallbackPainter extends CustomPainter {
     }
 
     blob(0.20 + 0.10 * math.sin(a), 0.18 + 0.08 * math.cos(a), r,
-        AuroraBackground.green, 0.55);
+        AuroraBackground.green, 0.42);
     blob(0.85 + 0.08 * math.cos(a + 1.7), 0.40 + 0.10 * math.sin(2 * a + 0.6),
-        r * 0.9, AuroraBackground.teal, 0.45);
+        r * 0.9, AuroraBackground.teal, 0.34);
     blob(0.35 + 0.12 * math.sin(2 * a + 2.4), 0.92 + 0.06 * math.cos(a + 0.3),
-        r * 1.1, AuroraBackground.emerald, 0.50);
+        r * 1.1, AuroraBackground.emerald, 0.40);
     blob(0.70 + 0.10 * math.cos(a + 4.1), 0.08 + 0.05 * math.sin(a + 2.0),
         r * 0.7, AppColors.richGold, 0.035);
 
@@ -277,7 +277,7 @@ class AuroraFallbackPainter extends CustomPainter {
           radius: 1.0,
           colors: [
             Colors.transparent,
-            Colors.black.withValues(alpha: 0.45),
+            Colors.black.withValues(alpha: 0.50),
           ],
           stops: const [0.55, 1.0],
         ).createShader(rect),
