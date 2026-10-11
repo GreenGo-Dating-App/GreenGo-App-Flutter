@@ -40796,6 +40796,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Thanks to your friend\'s invitation, you get 1 week of Base membership.'**
   String get srvReferralWelcomeBody;
+
+  /// Invite-friends share text; link is https://greengo-chat.web.app/r/{CODE}.
+  ///
+  /// In en, this message translates to:
+  /// **'Join me on GreenGo! With my invitation you get 1 week of Base membership free: {link}'**
+  String referralShareLinkMessage(String link);
+
+  /// No description provided for @referralYourLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Your invite link'**
+  String get referralYourLink;
+
+  /// No description provided for @referralLinkHowItWorks.
+  ///
+  /// In en, this message translates to:
+  /// **'Friends who join GreenGo through your link are counted automatically. There is no code to type.'**
+  String get referralLinkHowItWorks;
+
+  /// No description provided for @srvReferralPreviewTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'re invited to GreenGo'**
+  String get srvReferralPreviewTitle;
+
+  /// Invite link preview (sharePreview /r/): name is the inviter public display name.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} invited you to GreenGo'**
+  String srvReferralPreviewTitleNamed(String name);
+
+  /// No description provided for @srvReferralPreviewBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Join with this invitation and get 1 week of Base membership free. Discover people, cultures, events and communities around the world.'**
+  String get srvReferralPreviewBody;
+
+  /// No description provided for @srvReferralPreviewOpenApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Open in the app'**
+  String get srvReferralPreviewOpenApp;
+
+  /// No description provided for @srvReferralPreviewGetApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Get the app'**
+  String get srvReferralPreviewGetApp;
+
+  /// No description provided for @srvReferralPreviewWeb.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue on the web'**
+  String get srvReferralPreviewWeb;
 }
 
 class _AppLocalizationsDelegate

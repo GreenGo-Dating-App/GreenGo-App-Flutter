@@ -23934,6 +23934,39 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get srvReferralWelcomeBody =>
       'Graças ao convite do teu amigo, recebes 1 semana de subscrição Base.';
+
+  @override
+  String referralShareLinkMessage(String link) {
+    return 'Junta-te a mim no GreenGo! Com o meu convite recebes 1 semana de subscrição Base grátis: $link';
+  }
+
+  @override
+  String get referralYourLink => 'O teu link de convite';
+
+  @override
+  String get referralLinkHowItWorks =>
+      'Os amigos que se juntam ao GreenGo através do teu link são contados automaticamente. Não há código para escrever.';
+
+  @override
+  String get srvReferralPreviewTitle => 'Foste convidado para o GreenGo';
+
+  @override
+  String srvReferralPreviewTitleNamed(String name) {
+    return '$name convidou-te para o GreenGo';
+  }
+
+  @override
+  String get srvReferralPreviewBody =>
+      'Junta-te com este convite e recebe 1 semana de subscrição Base grátis. Descobre pessoas, culturas, eventos e comunidades de todo o mundo.';
+
+  @override
+  String get srvReferralPreviewOpenApp => 'Abrir na app';
+
+  @override
+  String get srvReferralPreviewGetApp => 'Obter a app';
+
+  @override
+  String get srvReferralPreviewWeb => 'Continuar na web';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -47878,4 +47911,37 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get srvReferralWelcomeBody =>
       'Graças ao convite do seu amigo, você ganha 1 semana de assinatura Base.';
+
+  @override
+  String referralShareLinkMessage(String link) {
+    return 'Venha para o GreenGo comigo! Com meu convite você ganha 1 semana de assinatura Base grátis: $link';
+  }
+
+  @override
+  String get referralYourLink => 'Seu link de convite';
+
+  @override
+  String get referralLinkHowItWorks =>
+      'Amigos que entrarem no GreenGo pelo seu link são contados automaticamente. Não é preciso digitar nenhum código.';
+
+  @override
+  String get srvReferralPreviewTitle => 'Você foi convidado para o GreenGo';
+
+  @override
+  String srvReferralPreviewTitleNamed(String name) {
+    return '$name convidou você para o GreenGo';
+  }
+
+  @override
+  String get srvReferralPreviewBody =>
+      'Entre com este convite e ganhe 1 semana de assinatura Base grátis. Descubra pessoas, culturas, eventos e comunidades do mundo todo.';
+
+  @override
+  String get srvReferralPreviewOpenApp => 'Abrir no app';
+
+  @override
+  String get srvReferralPreviewGetApp => 'Baixar o app';
+
+  @override
+  String get srvReferralPreviewWeb => 'Continuar na web';
 }

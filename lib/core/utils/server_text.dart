@@ -514,6 +514,18 @@ String? serverText(
       return l10n.srvReferralMilestoneBody(_int(p['count']), _str(p['tier']));
     case 'srvReferralMilestoneTitle':
       return l10n.srvReferralMilestoneTitle;
+    case 'srvReferralPreviewBody':
+      return l10n.srvReferralPreviewBody;
+    case 'srvReferralPreviewGetApp':
+      return l10n.srvReferralPreviewGetApp;
+    case 'srvReferralPreviewOpenApp':
+      return l10n.srvReferralPreviewOpenApp;
+    case 'srvReferralPreviewTitle':
+      return l10n.srvReferralPreviewTitle;
+    case 'srvReferralPreviewTitleNamed':
+      return l10n.srvReferralPreviewTitleNamed(_str(p['name']));
+    case 'srvReferralPreviewWeb':
+      return l10n.srvReferralPreviewWeb;
     case 'srvReferralWelcomeBody':
       return l10n.srvReferralWelcomeBody;
     case 'srvReferralWelcomeTitle':

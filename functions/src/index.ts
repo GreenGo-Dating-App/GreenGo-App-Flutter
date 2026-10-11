@@ -289,6 +289,7 @@ export {
 // Coupon Redemption + Admin Management
 export { redeemCoupon } from './coupons/redeemCoupon';
 export { redeemReferral } from './referral/redeemReferral';
+export { ensureReferralCode } from './referral/ensureReferralCode';
 export {
   upsertCoupon,
   listCoupons,

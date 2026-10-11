@@ -7384,5 +7384,14 @@
   "srvReferralMilestoneTitle": "Traguardo sbloccato!",
   "srvReferralMilestoneBody": "{count, plural, =1{1 amico si è iscritto con il tuo codice: ricevi 1 mese di iscrizione {tier}.} other{{count} amici si sono iscritti con il tuo codice: ricevi 1 mese di iscrizione {tier}.}}",
   "srvReferralWelcomeTitle": "Benvenuto su GreenGo!",
-  "srvReferralWelcomeBody": "Grazie all'invito del tuo amico, ricevi 1 settimana di iscrizione Base."
+  "srvReferralWelcomeBody": "Grazie all'invito del tuo amico, ricevi 1 settimana di iscrizione Base.",
+  "referralShareLinkMessage": "Unisciti a me su GreenGo! Con il mio invito ricevi 1 settimana di iscrizione Base gratis: {link}",
+  "referralYourLink": "Il tuo link di invito",
+  "referralLinkHowItWorks": "Gli amici che si iscrivono a GreenGo tramite il tuo link vengono contati automaticamente. Non c'è nessun codice da digitare.",
+  "srvReferralPreviewTitle": "Sei invitato su GreenGo",
+  "srvReferralPreviewTitleNamed": "{name} ti ha invitato su GreenGo",
+  "srvReferralPreviewBody": "Iscriviti con questo invito e ricevi 1 settimana di iscrizione Base gratis. Scopri persone, culture, eventi e comunità di tutto il mondo.",
+  "srvReferralPreviewOpenApp": "Apri nell'app",
+  "srvReferralPreviewGetApp": "Scarica l'app",
+  "srvReferralPreviewWeb": "Continua sul web"
 }

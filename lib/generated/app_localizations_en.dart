@@ -23733,4 +23733,37 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get srvReferralWelcomeBody =>
       'Thanks to your friend\'s invitation, you get 1 week of Base membership.';
+
+  @override
+  String referralShareLinkMessage(String link) {
+    return 'Join me on GreenGo! With my invitation you get 1 week of Base membership free: $link';
+  }
+
+  @override
+  String get referralYourLink => 'Your invite link';
+
+  @override
+  String get referralLinkHowItWorks =>
+      'Friends who join GreenGo through your link are counted automatically. There is no code to type.';
+
+  @override
+  String get srvReferralPreviewTitle => 'You\'re invited to GreenGo';
+
+  @override
+  String srvReferralPreviewTitleNamed(String name) {
+    return '$name invited you to GreenGo';
+  }
+
+  @override
+  String get srvReferralPreviewBody =>
+      'Join with this invitation and get 1 week of Base membership free. Discover people, cultures, events and communities around the world.';
+
+  @override
+  String get srvReferralPreviewOpenApp => 'Open in the app';
+
+  @override
+  String get srvReferralPreviewGetApp => 'Get the app';
+
+  @override
+  String get srvReferralPreviewWeb => 'Continue on the web';
 }

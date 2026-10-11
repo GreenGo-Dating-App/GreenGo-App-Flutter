@@ -6803,5 +6803,14 @@
   "srvReferralMilestoneTitle": "Palier débloqué !",
   "srvReferralMilestoneBody": "{count, plural, =1{1 ami s'est inscrit avec ton code : tu reçois 1 mois d'abonnement {tier}.} other{{count} amis se sont inscrits avec ton code : tu reçois 1 mois d'abonnement {tier}.}}",
   "srvReferralWelcomeTitle": "Bienvenue sur GreenGo !",
-  "srvReferralWelcomeBody": "Grâce à l'invitation de ton ami, tu reçois 1 semaine d'abonnement Base."
+  "srvReferralWelcomeBody": "Grâce à l'invitation de ton ami, tu reçois 1 semaine d'abonnement Base.",
+  "referralShareLinkMessage": "Rejoins-moi sur GreenGo ! Avec mon invitation, tu reçois 1 semaine d'abonnement Base gratuite : {link}",
+  "referralYourLink": "Ton lien d'invitation",
+  "referralLinkHowItWorks": "Les amis qui rejoignent GreenGo via ton lien sont comptés automatiquement. Aucun code à saisir.",
+  "srvReferralPreviewTitle": "Tu es invité sur GreenGo",
+  "srvReferralPreviewTitleNamed": "{name} t'invite sur GreenGo",
+  "srvReferralPreviewBody": "Inscris-toi avec cette invitation et reçois 1 semaine d'abonnement Base gratuite. Découvre des personnes, des cultures, des événements et des communautés du monde entier.",
+  "srvReferralPreviewOpenApp": "Ouvrir dans l'app",
+  "srvReferralPreviewGetApp": "Télécharger l'app",
+  "srvReferralPreviewWeb": "Continuer sur le web"
 }

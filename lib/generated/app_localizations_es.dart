@@ -23962,4 +23962,37 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get srvReferralWelcomeBody =>
       'Gracias a la invitación de tu amigo, recibes 1 semana de membresía Base.';
+
+  @override
+  String referralShareLinkMessage(String link) {
+    return '¡Únete a mí en GreenGo! Con mi invitación recibes 1 semana de membresía Base gratis: $link';
+  }
+
+  @override
+  String get referralYourLink => 'Tu enlace de invitación';
+
+  @override
+  String get referralLinkHowItWorks =>
+      'Los amigos que se unan a GreenGo a través de tu enlace se cuentan automáticamente. No hay que escribir ningún código.';
+
+  @override
+  String get srvReferralPreviewTitle => 'Te invitaron a GreenGo';
+
+  @override
+  String srvReferralPreviewTitleNamed(String name) {
+    return '$name te invitó a GreenGo';
+  }
+
+  @override
+  String get srvReferralPreviewBody =>
+      'Únete con esta invitación y recibe 1 semana de membresía Base gratis. Descubre personas, culturas, eventos y comunidades de todo el mundo.';
+
+  @override
+  String get srvReferralPreviewOpenApp => 'Abrir en la app';
+
+  @override
+  String get srvReferralPreviewGetApp => 'Descargar la app';
+
+  @override
+  String get srvReferralPreviewWeb => 'Continuar en la web';
 }

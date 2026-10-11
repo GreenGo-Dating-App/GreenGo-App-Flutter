@@ -12897,5 +12897,30 @@
     }
   },
   "srvReferralWelcomeTitle": "Welcome to GreenGo!",
-  "srvReferralWelcomeBody": "Thanks to your friend's invitation, you get 1 week of Base membership."
+  "srvReferralWelcomeBody": "Thanks to your friend's invitation, you get 1 week of Base membership.",
+  "referralShareLinkMessage": "Join me on GreenGo! With my invitation you get 1 week of Base membership free: {link}",
+  "@referralShareLinkMessage": {
+    "description": "Invite-friends share text; link is https://greengo-chat.web.app/r/{CODE}.",
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "referralYourLink": "Your invite link",
+  "referralLinkHowItWorks": "Friends who join GreenGo through your link are counted automatically. There is no code to type.",
+  "srvReferralPreviewTitle": "You're invited to GreenGo",
+  "srvReferralPreviewTitleNamed": "{name} invited you to GreenGo",
+  "@srvReferralPreviewTitleNamed": {
+    "description": "Invite link preview (sharePreview /r/): name is the inviter public display name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "srvReferralPreviewBody": "Join with this invitation and get 1 week of Base membership free. Discover people, cultures, events and communities around the world.",
+  "srvReferralPreviewOpenApp": "Open in the app",
+  "srvReferralPreviewGetApp": "Get the app",
+  "srvReferralPreviewWeb": "Continue on the web"
 }
