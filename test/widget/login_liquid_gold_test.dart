@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:ui' as ui;
 
 import 'package:dartz/dartz.dart';
@@ -5,6 +6,7 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:greengo_chat/core/services/sign_out_coordinator.dart';
 import 'package:greengo_chat/core/constants/e2e_keys.dart';
 import 'package:greengo_chat/core/error/failures.dart';
 import 'package:greengo_chat/core/providers/language_provider.dart';
@@ -388,6 +390,30 @@ void main() {
       await tester.pump();
       await tester.pump(const Duration(milliseconds: 50));
       expect(values(), everyElement(1.0));
+      expect(tester.takeException(), isNull);
+    });
+
+    testWidgets('right after logout the page is shown at once (no entrance)',
+        (tester) async {
+      // A sign-out still finishing in the background (never completes here).
+      final never = Completer<void>();
+      final coordinator = SignOutCoordinator.instance;
+      unawaited(coordinator.start(uid: 'u1', finalSignOut: () => never.future));
+      expect(coordinator.isSigningOut, isTrue);
+
+      await _pumpLogin(tester, const Locale('en'), settle: Duration.zero);
+      await tester.pump();
+      final values = [
+        for (final r in tester.widgetList<RiseIn>(find.byType(RiseIn)))
+          r.animation.value,
+      ];
+      expect(values, isNotEmpty);
+      expect(values, everyElement(1.0),
+          reason: 'logo, tagline, form and footer must be fully visible');
+      // Let the background job finish so it doesn't leak into other tests.
+      never.complete();
+      await tester.pump(const Duration(seconds: 1));
+      await coordinator.waitForPendingSignOut();
       expect(tester.takeException(), isNull);
     });
 

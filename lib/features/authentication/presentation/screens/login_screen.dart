@@ -8,6 +8,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/e2e_keys.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/auth_error_localizer.dart';
+import '../../../../core/services/sign_out_coordinator.dart';
 import '../../../../core/widgets/calm_brand_logo.dart';
 import '../../../../core/widgets/connection_error_dialog.dart';
 import '../../../../core/widgets/ios_install_hint.dart';
@@ -100,7 +101,13 @@ class _LoginScreenState extends State<LoginScreen>
     super.initState();
     _entrance = AnimationController(vsync: this, duration: kEntranceTotal);
     _steps = [for (var i = 0; i < 4; i++) entranceFor(_entrance, i)];
-    _entrance.forward();
+    // Right after "Log out" the page must be there at once: the entrance
+    // only plays when the app opens, never while a sign-out is finishing.
+    if (SignOutCoordinator.instance.isSigningOut) {
+      _entrance.value = 1.0;
+    } else {
+      _entrance.forward();
+    }
 
     // Check if we mounted with an existing error state (e.g., after AuthWrapper rebuild)
     WidgetsBinding.instance.addPostFrameCallback((_) {

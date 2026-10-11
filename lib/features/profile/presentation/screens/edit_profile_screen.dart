@@ -1667,21 +1667,23 @@ class EditProfileScreen extends StatelessWidget {
   }
 
   void _logout(BuildContext context) {
-    // Clear all caches before signing out
-    try {
-      final datasource = GetIt.I<DiscoveryRemoteDataSource>();
-      datasource.clearAllDiscoveryCaches();
-    } catch (_) {}
-    try {
-      CacheService.instance.clearAll();
-    } catch (_) {}
-    // Sign out via AuthBloc, with direct Firebase fallback
+    // Sign out via AuthBloc FIRST (the login page shows immediately; the
+    // real sign-out runs in the background), with direct Firebase fallback.
     try {
       context.read<AuthBloc>().add(const AuthSignOutRequested());
     } catch (e) {
       debugPrint('[Logout] AuthBloc dispatch failed: $e — using direct Firebase signOut');
       FirebaseAuth.instance.signOut();
     }
+    // Cache clearing never delays the switch to the login page.
+    Future<void>.delayed(const Duration(milliseconds: 60), () {
+      try {
+        GetIt.I<DiscoveryRemoteDataSource>().clearAllDiscoveryCaches();
+      } catch (_) {}
+      try {
+        CacheService.instance.clearAll();
+      } catch (_) {}
+    });
   }
 
   void _navigateToUsageStats(BuildContext context, Profile profile) {

@@ -61,6 +61,7 @@ class SignOutStepResult {
 class SignOutCoordinator {
   SignOutCoordinator({
     this.stepTimeout = const Duration(seconds: 8),
+    this.paintDelay = const Duration(milliseconds: 60),
     this.signOutTimeout = const Duration(seconds: 15),
   });
 
@@ -69,6 +70,9 @@ class SignOutCoordinator {
   static SignOutCoordinator instance = SignOutCoordinator();
 
   final Duration stepTimeout;
+
+  /// Delay before the first cleanup step, so the login page paints first.
+  final Duration paintDelay;
   final Duration signOutTimeout;
 
   final List<_RegisteredStep> _steps = [];
@@ -133,6 +137,9 @@ class SignOutCoordinator {
   }
 
   Future<void> _run(String? uid, Future<void> Function() finalSignOut) async {
+    // Instant logout: give the UI a frame to show the login page before any
+    // cleanup step runs (steps start synchronously inside Future.wait).
+    await Future<void>.delayed(paintDelay);
     final results = <SignOutStepResult>[];
     for (final phase in SignOutPhase.values) {
       final steps = _steps.where((s) => s.phase == phase).toList();

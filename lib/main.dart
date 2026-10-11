@@ -1257,18 +1257,19 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
 
   void _handleSignOut() {
     _isSigningOut = true;
-    // Clear all caches before signing out
-    try {
-      final datasource = GetIt.I<DiscoveryRemoteDataSource>();
-      datasource.clearAllDiscoveryCaches();
-    } catch (_) {}
-    try {
-      CacheService.instance.clearAll();
-    } catch (_) {}
+    // Instant logout: switch to the login page first; caches are cleared
+    // right after so they never delay it.
+    context.read<AuthBloc>().add(const AuthSignOutRequested());
+    Future<void>.delayed(const Duration(milliseconds: 60), () {
+      try {
+        GetIt.I<DiscoveryRemoteDataSource>().clearAllDiscoveryCaches();
+      } catch (_) {}
+      try {
+        CacheService.instance.clearAll();
+      } catch (_) {}
+    });
     // Clear cached business flag so the next account's splash isn't mislabeled.
     _cacheBusinessFlag(false);
-
-    context.read<AuthBloc>().add(const AuthSignOutRequested());
     OnboardingGate.reset();
     setState(() {
       _accessData = null;

@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:greengo_chat/core/services/sign_out_coordinator.dart';
 import 'package:greengo_chat/core/error/failures.dart';
 import 'package:greengo_chat/features/authentication/domain/entities/user.dart';
 import 'package:greengo_chat/features/authentication/presentation/bloc/auth_bloc.dart';
@@ -199,6 +200,8 @@ void main() {
 
       bloc.add(const AuthSignOutRequested());
       await expectation;
+      // The real sign-out runs in the background, after the login page shows.
+      await SignOutCoordinator.instance.waitForPendingSignOut();
       verify(() => repository.signOut()).called(1);
       await bloc.close();
     });
