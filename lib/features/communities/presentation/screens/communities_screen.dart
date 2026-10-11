@@ -19,6 +19,7 @@ import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../data/datasources/community_favorites_service.dart';
 import '../../domain/community_language.dart';
+import '../../domain/joined_favorites.dart';
 import '../../domain/entities/community.dart';
 import '../bloc/communities_bloc.dart';
 import '../bloc/communities_event.dart';
@@ -27,24 +28,38 @@ import '../widgets/community_card.dart';
 import 'community_detail_screen.dart';
 import 'create_community_screen.dart';
 
-const int _kDiscoverTab = 0;
-const int _kJoinedTab = 1;
+const int _kJoinedTab = 0;
+const int _kDiscoverTab = 1;
 const int _kManagedTab = 2;
 
 /// Communities Screen
 ///
 /// Main screen for the communities feature with three tabs, in this order:
-/// Discover, Joined communities, My communities (created/managed).
+/// Joined communities (default), Discover, My communities (created/managed).
+/// On Joined, starred favorites are pinned on top (newest starred first, at
+/// most [CommunityFavoritesService.maxFavorites]), then the rest, revealed
+/// page by page as the user scrolls.
 class CommunitiesScreen extends StatefulWidget {
-  const CommunitiesScreen({super.key, this.initialTab = _kDiscoverTab});
+  const CommunitiesScreen({
+    super.key,
+    this.initialTab = _kJoinedTab,
+    this.currentUserId,
+    this.favoritesService,
+  });
 
-  /// Tab to open on. Defaults to Discover; callers may pass
-  /// [CommunitiesScreen.joinedTab] / [CommunitiesScreen.managedTab].
+  /// Tab to open on. Defaults to Joined; callers may pass
+  /// [CommunitiesScreen.discoverTab] / [CommunitiesScreen.managedTab].
   final int initialTab;
 
-  // Tab order (product spec): Discover, Joined, My communities.
-  static const int discoverTab = _kDiscoverTab;
+  /// Defaults to the signed-in Firebase user (tests pass one).
+  final String? currentUserId;
+
+  /// Defaults to [CommunityFavoritesService] (tests inject a fake).
+  final CommunityFavoritesService? favoritesService;
+
+  // Tab order (product spec): Joined, Discover, My communities.
   static const int joinedTab = _kJoinedTab;
+  static const int discoverTab = _kDiscoverTab;
   static const int managedTab = _kManagedTab;
 
   @override
@@ -63,9 +78,20 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
   String _joinedSearchQuery = '';
 
   // Per-user favorite communities (starred on the Joined tab). Loaded once,
-  // toggled optimistically, persisted via [CommunityFavoritesService].
-  final CommunityFavoritesService _favoritesService = CommunityFavoritesService();
-  Set<String> _favoriteIds = <String>{};
+  // toggled optimistically, persisted via [CommunityFavoritesService]; synced
+  // across devices (server-side doc). Stored in starring order (oldest
+  // first); their documents are loaded SEPARATELY (bounded: <= 50) so they
+  // are always pinned on top whatever part of the joined list is shown.
+  late final CommunityFavoritesService _favoritesService =
+      widget.favoritesService ?? CommunityFavoritesService();
+  List<String> _favoriteOrder = <String>[];
+  Set<String> get _favoriteIds => _favoriteOrder.toSet();
+  Map<String, Community> _favoriteDocs = <String, Community>{};
+
+  /// Joined (non-favorite) communities revealed so far; grows by
+  /// [_joinedPageSize] as the user nears the end of the list.
+  static const int _joinedPageSize = 20;
+  int _joinedShown = _joinedPageSize;
   String _managedSearchQuery = '';
   String? _currentUserId;
   // Last good list state. Opening a community detail makes the SHARED bloc emit
@@ -84,7 +110,8 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
       initialIndex: widget.initialTab.clamp(0, 2),
     );
     _tabController.addListener(_onTabChanged);
-    _currentUserId = FirebaseAuth.instance.currentUser?.uid;
+    _currentUserId =
+        widget.currentUserId ?? FirebaseAuth.instance.currentUser?.uid;
     _discoverScrollController.addListener(_onDiscoverScroll);
     _loadInitialData();
     _loadFavorites();
@@ -114,39 +141,79 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     });
   }
 
-  /// One cheap read of the user's starred communities (single-doc id array).
+  /// One cheap read of the user's starred ids (single doc), then their
+  /// community documents by id (<= 50, at most 2 queries).
   Future<void> _loadFavorites() async {
     final uid = _currentUserId;
     if (uid == null) return;
     try {
-      final ids = await _favoritesService.getAll(uid);
-      if (mounted) setState(() => _favoriteIds = ids);
+      final ids = await _favoritesService.getOrdered(uid);
+      if (!mounted) return;
+      setState(() => _favoriteOrder = ids);
+      final docs = await _favoritesService.loadCommunities(ids);
+      if (mounted) setState(() => _favoriteDocs = docs);
     } catch (_) {
-      // Non-fatal: the star just starts un-filled.
+      // Non-fatal: the stars just start un-filled / unpinned.
     }
   }
 
   /// Optimistically toggle a favorite, then persist (revert on failure).
+  /// Starring past the cap shows a friendly message instead.
   Future<void> _toggleFavorite(Community community) async {
     final uid = _currentUserId;
     if (uid == null) return;
     final id = community.id;
     final wasFavorite = _favoriteIds.contains(id);
+    if (!wasFavorite &&
+        _favoriteOrder.length >= CommunityFavoritesService.maxFavorites) {
+      ScaffoldMessenger.maybeOf(context)?.showSnackBar(SnackBar(
+        content: Text(AppLocalizations.of(context)!
+            .communitiesFavoritesLimit(CommunityFavoritesService.maxFavorites)),
+      ));
+      return;
+    }
+    final before = _favoriteOrder;
     setState(() {
-      final next = Set<String>.from(_favoriteIds);
-      wasFavorite ? next.remove(id) : next.add(id);
-      _favoriteIds = next;
+      _favoriteOrder = wasFavorite
+          ? [for (final x in before) if (x != id) x]
+          : [...before, id];
+      if (!wasFavorite) _favoriteDocs = {..._favoriteDocs, id: community};
     });
     try {
       await _favoritesService.setFavorite(uid, id, !wasFavorite);
     } catch (_) {
       if (!mounted) return;
-      setState(() {
-        final revert = Set<String>.from(_favoriteIds);
-        wasFavorite ? revert.add(id) : revert.remove(id);
-        _favoriteIds = revert;
-      });
+      setState(() => _favoriteOrder = before);
     }
+  }
+
+  bool _revealScheduled = false;
+
+  /// Shows the next [_joinedPageSize] joined communities (once per frame).
+  void _revealMoreJoined() {
+    if (_revealScheduled) return;
+    _revealScheduled = true;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _revealScheduled = false;
+      if (mounted) setState(() => _joinedShown += _joinedPageSize);
+    });
+  }
+
+  /// Leaving (or deleting) a community drops its favorite, here and on the
+  /// server, so it never comes back pinned.
+  Future<void> _dropFavorite(String communityId) async {
+    final uid = _currentUserId;
+    if (uid == null || !_favoriteIds.contains(communityId)) return;
+    setState(() {
+      _favoriteOrder = [
+        for (final x in _favoriteOrder)
+          if (x != communityId) x
+      ];
+      _favoriteDocs = {..._favoriteDocs}..remove(communityId);
+    });
+    try {
+      await _favoritesService.setFavorite(uid, communityId, false);
+    } catch (_) {/* hidden anyway: not joined any more */}
   }
 
   bool _managedLoaded = false;
@@ -313,8 +380,8 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
               ),
               tabs: [
                 for (final label in [
-                  AppLocalizations.of(context)!.communitiesTabDiscover,
                   AppLocalizations.of(context)!.communitiesTabJoined,
+                  AppLocalizations.of(context)!.communitiesTabDiscover,
                   AppLocalizations.of(context)!.communitiesTabManaged,
                 ])
                   Tab(
@@ -335,8 +402,13 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
         listenWhen: (prev, curr) =>
             curr is CommunityCreated ||
             curr is CommunityJoined ||
-            curr is CommunityLeft,
-        listener: (context, state) => _reloadLists(),
+            curr is CommunityLeft ||
+            curr is CommunityDeleted,
+        listener: (context, state) {
+          if (state is CommunityLeft) _dropFavorite(state.communityId);
+          if (state is CommunityDeleted) _dropFavorite(state.communityId);
+          _reloadLists();
+        },
         builder: (context, state) {
           // Remember the last populated list state; fall back to it when the
           // live state is a non-list state (e.g. CommunityDetailLoaded after
@@ -347,8 +419,8 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
           return TabBarView(
             controller: _tabController,
             children: [
-              _buildDiscoverTab(effective),
               _buildMyGroupsTab(effective),
+              _buildDiscoverTab(effective),
               _buildManagedTab(effective),
             ],
           );
@@ -401,23 +473,44 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
       );
     }
 
-    // Search filter over the joined communities.
-    final q = _joinedSearchQuery.trim().toLowerCase();
-    final matched = q.isEmpty
-        ? userCommunities
-        : userCommunities
-            .where((c) =>
-                c.name.toLowerCase().contains(q) ||
-                c.description.toLowerCase().contains(q))
-            .toList();
-
-    // Pin FAVORITES to the top (starred first, preserving relative order), the
-    // rest below.
-    final favorites =
-        matched.where((c) => _favoriteIds.contains(c.id)).toList();
-    final others =
-        matched.where((c) => !_favoriteIds.contains(c.id)).toList();
-    final ordered = [...favorites, ...others];
+    // Favorites pinned on top (newest starred first, loaded separately), then
+    // the rest in the existing order, revealed page by page.
+    final arranged = arrangeJoinedCommunities(
+      joined: userCommunities,
+      favoriteIds: _favoriteOrder,
+      favoriteDocs: _favoriteDocs,
+      joinedLoaded: state is CommunitiesLoaded,
+      query: _joinedSearchQuery,
+    );
+    final favorites = arranged.favorites;
+    final others = arranged.others.length > _joinedShown
+        ? arranged.others.sublist(0, _joinedShown)
+        : arranged.others;
+    final hasMoreOthers = others.length < arranged.others.length;
+    final l10n = AppLocalizations.of(context)!;
+    // Rows: [Favorites header, favorites..., Joined header, others..., loader]
+    final rows = <Widget Function(bool first)>[
+      if (favorites.isNotEmpty)
+        (_) => _sectionHeader(l10n.communitiesFavoritesSection),
+      for (final c in favorites) (first) => _joinedCard(c, isFirst: first),
+      if (favorites.isNotEmpty && others.isNotEmpty)
+        (_) => _sectionHeader(l10n.communitiesJoinedSection,
+            icon: Icons.groups_outlined),
+      for (final c in others) (first) => _joinedCard(c, isFirst: first),
+      // Building the loader means the end of the revealed page is (nearly)
+      // on screen: reveal the next page after this frame.
+      if (hasMoreOthers)
+        (_) {
+          _revealMoreJoined();
+          return const Padding(
+            padding: EdgeInsets.all(16),
+            child: Center(
+              child: CircularProgressIndicator(color: AppColors.richGold),
+            ),
+          );
+        },
+    ];
+    final firstCardRow = favorites.isNotEmpty ? 1 : 0;
 
     return Column(
       children: [
@@ -434,7 +527,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
                 await _loadFavorites();
               }
             },
-            child: ordered.isEmpty
+            child: arranged.isEmpty
                 ? ListView(
                   keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
                     physics: const AlwaysScrollableScrollPhysics(),
@@ -442,33 +535,21 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
                       const SizedBox(height: 80),
                       _buildEmptyState(
                         icon: Icons.search_off,
-                        title: AppLocalizations.of(context)!
-                            .communitiesNoCommunitiesFound,
-                        subtitle:
-                            AppLocalizations.of(context)!.communitiesAdjustSearch,
+                        title: l10n.communitiesNoCommunitiesFound,
+                        subtitle: l10n.communitiesAdjustSearch,
                       ),
                     ],
                   )
                 : ListView.builder(
+                    key: const ValueKey('communities-joined-list'),
                     physics: const AlwaysScrollableScrollPhysics(),
                     padding: const EdgeInsets.only(
                       top: AppDimensions.paddingS,
                       bottom: 80,
                     ),
-                    // +1 for the "Favorites" section header when any exist and
-                    // no search is narrowing the list.
-                    itemCount: ordered.length + (favorites.isNotEmpty ? 1 : 0),
-                    itemBuilder: (context, index) {
-                      if (favorites.isNotEmpty) {
-                        if (index == 0) {
-                          return _sectionHeader(AppLocalizations.of(context)!
-                              .communitiesFavoritesSection);
-                        }
-                        final oi = index - 1;
-                        return _joinedCard(ordered[oi], isFirst: oi == 0);
-                      }
-                      return _joinedCard(ordered[index], isFirst: index == 0);
-                    },
+                    itemCount: rows.length,
+                    itemBuilder: (context, index) =>
+                        rows[index](index == firstCardRow),
                   ),
           ),
         ),
@@ -480,6 +561,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
   /// that explains tapping to open + the favorite star.
   Widget _joinedCard(Community c, {required bool isFirst}) {
     final card = CommunityCard(
+      key: ValueKey('joined-${c.id}'),
       community: c,
       showFavorite: true,
       isFavorite: _favoriteIds.contains(c.id),
@@ -498,12 +580,12 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
   }
 
   /// A small section header (e.g. "Favorites") above a group of cards.
-  Widget _sectionHeader(String label) {
+  Widget _sectionHeader(String label, {IconData icon = Icons.star}) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
       child: Row(
         children: [
-          const Icon(Icons.star, size: 16, color: AppColors.richGold),
+          Icon(icon, size: 16, color: AppColors.richGold),
           const SizedBox(width: 6),
           Text(
             label.toUpperCase(),
@@ -562,7 +644,10 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
             vertical: 12,
           ),
         ),
-        onChanged: (value) => setState(() => _joinedSearchQuery = value),
+        onChanged: (value) => setState(() {
+          _joinedSearchQuery = value;
+          _joinedShown = _joinedPageSize;
+        }),
       ),
       ),
     );

@@ -173,10 +173,12 @@ class CommunityCard extends StatelessWidget {
 
   Widget _buildFavoriteStar(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
+    // 44x44 tap target (accessibility); keyed for tests.
     return IconButton(
-      padding: const EdgeInsets.only(left: 8),
-      constraints: const BoxConstraints(),
-      visualDensity: VisualDensity.compact,
+      key: ValueKey('fav-${community.id}'),
+      padding: EdgeInsets.zero,
+      constraints: const BoxConstraints(minWidth: 44, minHeight: 44),
+      isSelected: isFavorite,
       icon: Icon(
         isFavorite ? Icons.star : Icons.star_border,
         color: isFavorite ? AppColors.richGold : AppColors.textTertiary,
