@@ -127,12 +127,12 @@ class BusinessHubScreen extends StatelessWidget {
     );
   }
 
-  /// Opens the QR hub scanner so the organizer can quickly check attendees in
-  /// at the door. The hub's Scan tab routes each scanned ticket to the right
+  /// Opens the door scanner (My Space "Scan tickets") so the organizer can
+  /// quickly check attendees in. It routes each scanned ticket to the right
   /// event's check-in — no need to pick an event first.
   Future<void> _openQuickScanner(BuildContext context) async {
     await Navigator.of(context).push(
-      QRHubScreen.route(currentUserId: profile.userId),
+      QrScanScreen.route(currentUserId: profile.userId),
     );
   }
 

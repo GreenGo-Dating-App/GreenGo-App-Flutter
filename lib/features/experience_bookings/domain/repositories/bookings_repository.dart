@@ -77,6 +77,10 @@ abstract class BookingsRepository {
       {required String code, bool cashReceived = false});
   Future<Either<Failure, Booking>> markNoShow(Booking b);
 
+  /// Host ticks the guest in WITHOUT the code (My Space session checklist).
+  /// Same door rules as [checkIn]; audited and recorded as unverified.
+  Future<Either<Failure, Booking>> manualCheckIn(Booking b);
+
   /// Guest (link) or host (link / cash after the start).
   Future<Either<Failure, Booking>> markPaid(Booking b);
   Future<Either<Failure, Booking>> confirmCashReceived(Booking b);

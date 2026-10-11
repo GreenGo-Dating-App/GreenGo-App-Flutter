@@ -119,6 +119,10 @@ class BookingsRepositoryImpl implements BookingsRepository {
       _guard(() => _remote.markNoShow(b));
 
   @override
+  Future<Either<Failure, Booking>> manualCheckIn(Booking b) =>
+      _guard(() => _remote.manualCheckIn(b));
+
+  @override
   Future<Either<Failure, Booking>> markPaid(Booking b) =>
       _guard(() => _remote.markPaid(b));
 

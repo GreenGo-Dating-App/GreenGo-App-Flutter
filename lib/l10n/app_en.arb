@@ -5661,7 +5661,7 @@
   "communitiesSaveSponsorship": "Save",
   "communitiesRemovePromo": "Remove promo",
   "exploreSearchTooltip": "Search",
-  "exploreQrTooltip": "My QR codes",
+  "exploreQrTooltip": "My Space",
   "universalSearchTitle": "Search",
   "universalSearchHint": "Search people and events",
   "universalSearchTabPeople": "People",
@@ -6088,8 +6088,8 @@
   "tourReplayGuide": "Replay guide",
   "tourExploreSearchTitle": "Search everything",
   "tourExploreSearchDesc": "Find people, businesses, events and communities — all from one search.",
-  "tourExploreQrTitle": "Your QR code",
-  "tourExploreQrDesc": "Scan or share a QR code to connect instantly in person.",
+  "tourExploreQrTitle": "My Space",
+  "tourExploreQrDesc": "Scan tickets, show your QR codes and manage your events and experiences.",
   "tourEventsCreateTitle": "Create an event",
   "tourEventsCreateDesc": "Tap the plus to host your own event or meetup.",
   "tourEventsSearchTitle": "Search events",
@@ -12805,5 +12805,293 @@
   "legalUpdateDisagreeHint": "If you don't agree, you can sign out. You can also delete your account at any time.",
   "@legalUpdateDisagreeHint": {
     "description": "Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)"
+  },
+  "bkCardUpcoming": "{count, plural, =0{None upcoming} =1{1 upcoming} other{{count} upcoming}}",
+  "@bkCardUpcoming": {
+    "description": "Booking dashboard card subtitle",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "bkCardToConfirm": "{count, plural, =1{1 to confirm} other{{count} to confirm}}",
+  "@bkCardToConfirm": {
+    "description": "Booking dashboard card subtitle (host requests)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "bkTabToConfirm": "To confirm",
+  "@bkTabToConfirm": {
+    "description": "Bookings received: tab with requests to answer"
+  },
+  "bkNoneToConfirm": "No booking requests waiting for you.",
+  "@bkNoneToConfirm": {
+    "description": "Bookings received: To confirm tab empty"
+  },
+  "msTitle": "My Space",
+  "@msTitle": {
+    "description": "My Space hub (Explore QR button)"
+  },
+  "msGreetingMorning": "Good morning",
+  "@msGreetingMorning": {
+    "description": "My Space greeting"
+  },
+  "msGreetingAfternoon": "Good afternoon",
+  "@msGreetingAfternoon": {
+    "description": "My Space greeting"
+  },
+  "msGreetingEvening": "Good evening",
+  "@msGreetingEvening": {
+    "description": "My Space greeting"
+  },
+  "msGreetingSubtitle": "Everything you host and attend, in one place.",
+  "@msGreetingSubtitle": {
+    "description": "My Space greeting subtitle"
+  },
+  "msScanTickets": "Scan tickets",
+  "@msScanTickets": {
+    "description": "My Space: scanner action tile"
+  },
+  "msScanTicketsHint": "Check guests in at the door",
+  "@msScanTicketsHint": {
+    "description": "My Space: scanner tile hint"
+  },
+  "msMyTicketsHint": "Your QR codes for events and bookings",
+  "@msMyTicketsHint": {
+    "description": "My Space: my tickets tile hint"
+  },
+  "msTodoTitle": "To do",
+  "@msTodoTitle": {
+    "description": "My Space: to-do card title"
+  },
+  "msTodoBookingRequests": "{count, plural, =1{1 booking request to confirm} other{{count} booking requests to confirm}}",
+  "@msTodoBookingRequests": {
+    "description": "My Space to-do row",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "msTodoPayments": "{count, plural, =1{1 payment to confirm} other{{count} payments to confirm}}",
+  "@msTodoPayments": {
+    "description": "My Space to-do row",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "msTodoCheckInToday": "{count, plural, =1{Check guests in today: 1 event or session} other{Check guests in today: {count} events or sessions}}",
+  "@msTodoCheckInToday": {
+    "description": "My Space to-do row: events / sessions with check-in today",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "msTodoUpcomingBookings": "{count, plural, =1{1 upcoming booking as a guest} other{{count} upcoming bookings as a guest}}",
+  "@msTodoUpcomingBookings": {
+    "description": "My Space to-do row (guest)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "msAllDone": "All done!",
+  "@msAllDone": {
+    "description": "My Space to-do: empty state title"
+  },
+  "msAllDoneBody": "Nothing needs your attention right now.",
+  "@msAllDoneBody": {
+    "description": "My Space to-do: empty state body"
+  },
+  "msSegmentEvents": "Events",
+  "@msSegmentEvents": {
+    "description": "My Space segmented control"
+  },
+  "msSegmentExperiences": "Experiences",
+  "@msSegmentExperiences": {
+    "description": "My Space segmented control"
+  },
+  "msHosting": "Hosting",
+  "@msHosting": {
+    "description": "My Space: events I organize"
+  },
+  "msAttending": "Attending",
+  "@msAttending": {
+    "description": "My Space: events I am going to"
+  },
+  "msSeeAll": "See all",
+  "@msSeeAll": {
+    "description": "My Space: see all link"
+  },
+  "msNoHosting": "You're not hosting any upcoming events.",
+  "@msNoHosting": {
+    "description": "My Space: no hosted events"
+  },
+  "msNoAttending": "No upcoming events. Join one to see your ticket here.",
+  "@msNoAttending": {
+    "description": "My Space: no attended events"
+  },
+  "msGoingCount": "{count, plural, =0{No one going yet} =1{1 going} other{{count} going}}",
+  "@msGoingCount": {
+    "description": "My Space: event going count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "msCheckedInProgress": "{checkedIn} / {total} checked in",
+  "@msCheckedInProgress": {
+    "description": "Check-in progress (checked in / expected)",
+    "placeholders": {
+      "checkedIn": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "msOpenTicket": "Open ticket",
+  "@msOpenTicket": {
+    "description": "My Space: open my ticket (accessibility)"
+  },
+  "msMyExperiencesHint": "Create, edit and publish your listings",
+  "@msMyExperiencesHint": {
+    "description": "My Space: my experiences card subtitle"
+  },
+  "msSessions": "Upcoming sessions",
+  "@msSessions": {
+    "description": "My Space: upcoming experience sessions"
+  },
+  "msNoSessions": "No upcoming sessions with confirmed guests.",
+  "@msNoSessions": {
+    "description": "My Space: no sessions"
+  },
+  "msTodaySheetTitle": "Check guests in today",
+  "@msTodaySheetTitle": {
+    "description": "My Space: pick today's event / session"
+  },
+  "msCheckInTitle": "Check-in",
+  "@msCheckInTitle": {
+    "description": "Check-in checklist title"
+  },
+  "msScan": "Scan",
+  "@msScan": {
+    "description": "Check-in checklist: open scanner"
+  },
+  "msCheckInSearchHint": "Search guests",
+  "@msCheckInSearchHint": {
+    "description": "Check-in checklist search"
+  },
+  "msFilterAll": "All",
+  "@msFilterAll": {
+    "description": "Check-in checklist filter"
+  },
+  "msCheckInGuest": "Check in {name}",
+  "@msCheckInGuest": {
+    "description": "Accessibility label of the check-in toggle",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "msCheckInConfirmTitle": "Check in without a code?",
+  "@msCheckInConfirmTitle": {
+    "description": "Manual check-in confirm title"
+  },
+  "msCheckInConfirmBody": "Only do this once you're sure it's really {name}. Manual check-ins are recorded.",
+  "@msCheckInConfirmBody": {
+    "description": "Manual check-in confirm body",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "msCheckInBookingConfirmBody": "Only do this once your guest is really here. Manual check-ins are recorded and can't be undone.",
+  "@msCheckInBookingConfirmBody": {
+    "description": "Manual booking check-in confirm body"
+  },
+  "msCheckIn": "Check in",
+  "@msCheckIn": {
+    "description": "Manual check-in action"
+  },
+  "msUndoCheckInTitle": "Undo check-in?",
+  "@msUndoCheckInTitle": {
+    "description": "Undo check-in confirm title"
+  },
+  "msUndoCheckInBody": "{name} will be marked as not here yet.",
+  "@msUndoCheckInBody": {
+    "description": "Undo check-in confirm body",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "msUndo": "Undo",
+  "@msUndo": {
+    "description": "Undo action"
+  },
+  "msCheckedInSnack": "{name} checked in",
+  "@msCheckedInSnack": {
+    "description": "Snackbar after a manual check-in",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "msCheckInUndoneSnack": "Check-in undone",
+  "@msCheckInUndoneSnack": {
+    "description": "Snackbar after undoing a check-in"
+  },
+  "msNoGoingAttendees": "No one is going yet.",
+  "@msNoGoingAttendees": {
+    "description": "Check-in checklist: nobody going"
+  },
+  "msNoMatches": "No guests match your search.",
+  "@msNoMatches": {
+    "description": "Check-in checklist: search without results"
+  },
+  "msSearchLoadedOnly": "Searching the guests loaded so far. Load more to search everyone.",
+  "@msSearchLoadedOnly": {
+    "description": "Check-in checklist: search covers loaded guests"
+  },
+  "msLoadMore": "Load more",
+  "@msLoadMore": {
+    "description": "Load more button"
+  },
+  "msGuest": "Guest",
+  "@msGuest": {
+    "description": "Generic guest label (session checklist)"
+  },
+  "msNoSessionGuests": "No confirmed guests for this session.",
+  "@msNoSessionGuests": {
+    "description": "Session checklist: no bookings"
+  },
+  "communitiesFavoritesLimit": "{count, plural, =1{You can pin 1 favorite. Unstar it to add another.} other{You can pin up to {count} favorites. Unstar one to add another.}}",
+  "@communitiesFavoritesLimit": {
+    "description": "Communities: favorites cap reached",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "communitiesJoinedSection": "All joined",
+  "@communitiesJoinedSection": {
+    "description": "Communities Joined tab: section below favorites"
   }
 }

@@ -463,6 +463,7 @@ class BookingsQuery extends Equatable {
     required this.uid,
     required this.upcoming,
     this.experienceId,
+    this.status,
   });
 
   final BookingRole role;
@@ -475,6 +476,11 @@ class BookingsQuery extends Equatable {
   /// Host only: one experience.
   final String? experienceId;
 
+  /// Only bookings in this status (e.g. [BookingStatus.requested] for the
+  /// host's "To confirm" list). Served by the (hostId|guestId, status,
+  /// slotStart) composite indexes.
+  final BookingStatus? status;
+
   @override
-  List<Object?> get props => [role, uid, upcoming, experienceId];
+  List<Object?> get props => [role, uid, upcoming, experienceId, status];
 }
