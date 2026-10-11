@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:get_it/get_it.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/services/deep_link_service.dart';
 import '../../../../core/widgets/glass_container.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/services/referral_service.dart';
@@ -93,14 +94,21 @@ class _ReferralScreenState extends State<ReferralScreen> {
     );
   }
 
-  Future<void> _shareCode() async {
+  /// Opens the share sheet with the invite LINK (friends never type a code:
+  /// the link carries it and the app redeems it automatically after sign-up).
+  Future<void> _shareLink(BuildContext buttonContext) async {
+    final code = _code;
+    if (code == null) return;
+    await shareReferralLink(buttonContext, code);
+  }
+
+  Future<void> _copyLink() async {
     final l10n = AppLocalizations.of(context)!;
     final code = _code;
     if (code == null) return;
-    // No share_plus dependency — copy an invite message to the clipboard.
-    final message = '${l10n.referralShareMessage}\n$code';
-    await Clipboard.setData(ClipboardData(text: message));
-    _snack(l10n.inviteCodeCopied);
+    await Clipboard.setData(
+        ClipboardData(text: DeepLinkService.buildReferralLink(code)));
+    _snack(l10n.shareLinkCopied);
   }
 
   @override
@@ -164,7 +172,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            l10n.referralYourCode,
+            l10n.referralYourLink,
             style: const TextStyle(
               color: AppColors.textSecondary,
               fontSize: 13,
@@ -208,36 +216,50 @@ class _ReferralScreenState extends State<ReferralScreen> {
               children: [
                 Expanded(
                   child: SelectableText(
-                    _code ?? '------',
+                    _code == null
+                        ? ''
+                        : DeepLinkService.buildReferralLink(_code!),
+                    key: const Key('referralInviteLink'),
                     style: const TextStyle(
                       color: AppColors.richGold,
-                      fontSize: 30,
-                      fontWeight: FontWeight.w700,
-                      letterSpacing: 6,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w600,
                     ),
                   ),
                 ),
                 IconButton(
                   icon: const Icon(Icons.copy, color: AppColors.textSecondary),
-                  onPressed: _code == null ? null : _shareCode,
+                  tooltip: l10n.shareLinkCopied,
+                  onPressed: _code == null ? null : _copyLink,
                 ),
               ],
             ),
-          const SizedBox(height: 16),
-          ElevatedButton.icon(
-            onPressed: _code == null ? null : _shareCode,
-            style: ElevatedButton.styleFrom(
-              backgroundColor: AppColors.richGold,
-              foregroundColor: AppColors.deepBlack,
-              padding: const EdgeInsets.symmetric(vertical: 14),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(14),
-              ),
+          const SizedBox(height: 8),
+          Text(
+            l10n.referralLinkHowItWorks,
+            style: const TextStyle(
+              color: AppColors.textSecondary,
+              fontSize: 12,
+              height: 1.4,
             ),
-            icon: const Icon(Icons.share),
-            label: Text(
-              l10n.referralShareCta,
-              style: const TextStyle(fontWeight: FontWeight.w600),
+          ),
+          const SizedBox(height: 16),
+          Builder(
+            builder: (buttonContext) => ElevatedButton.icon(
+              onPressed: _code == null ? null : () => _shareLink(buttonContext),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.richGold,
+                foregroundColor: AppColors.deepBlack,
+                padding: const EdgeInsets.symmetric(vertical: 14),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(14),
+                ),
+              ),
+              icon: const Icon(Icons.share),
+              label: Text(
+                l10n.referralShareCta,
+                style: const TextStyle(fontWeight: FontWeight.w600),
+              ),
             ),
           ),
         ],

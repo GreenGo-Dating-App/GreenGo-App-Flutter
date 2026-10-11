@@ -33,8 +33,8 @@ void main() {
       expect(find.text(l10n.referralMoreToTier(3, l10n.membershipGold)),
           findsOneWidget);
       expect(find.text('3 more to Gold'), findsOneWidget);
-      expect(find.byKey(const Key('referralMilestoneUnlocked_5')),
-          findsOneWidget);
+      expect(
+          find.byKey(const Key('referralMilestoneUnlocked_5')), findsOneWidget);
       expect(
           find.byKey(const Key('referralMilestoneLocked_10')), findsOneWidget);
       expect(
@@ -78,8 +78,7 @@ void main() {
       );
       expect(find.text(l10n.referralAllMilestonesUnlocked), findsOneWidget);
       for (final c in [5, 10, 20]) {
-        expect(
-            find.byKey(Key('referralMilestoneUnlocked_$c')), findsOneWidget);
+        expect(find.byKey(Key('referralMilestoneUnlocked_$c')), findsOneWidget);
       }
     });
 
@@ -96,7 +95,9 @@ void main() {
               child: SingleChildScrollView(
                 child: ReferralProgressCard(
                   progress: ReferralProgress(
-                      invitedCount: 7, coinsEarned: 350, milestonesGranted: {5}),
+                      invitedCount: 7,
+                      coinsEarned: 350,
+                      milestonesGranted: {5}),
                 ),
               ),
             ),
@@ -141,13 +142,16 @@ void main() {
       ));
       await tester.pumpAndSettle();
 
-      expect(find.text('ABC234'), findsOneWidget);
+      expect(
+          find.text('https://greengo-chat.web.app/r/ABC234'), findsOneWidget);
+      expect(find.text(l10n.referralLinkHowItWorks), findsOneWidget);
+      expect(find.byType(TextField), findsNothing); // no code entry
       expect(find.text('12 friends joined'), findsOneWidget);
       expect(find.text('8 more to Platinum'), findsOneWidget);
       expect(find.text('600'), findsOneWidget);
       expect(find.text('99'), findsNothing);
-      expect(find.byKey(const Key('referralMilestoneUnlocked_5')),
-          findsOneWidget);
+      expect(
+          find.byKey(const Key('referralMilestoneUnlocked_5')), findsOneWidget);
       expect(find.byKey(const Key('referralMilestoneUnlocked_10')),
           findsOneWidget);
       expect(
@@ -163,6 +167,21 @@ void main() {
               'You get 50 coins per friend who joins (up to 1,000 coins a month)'),
           findsOneWidget);
       expect(find.textContaining('Platinum.'), findsNothing);
+    });
+
+    testWidgets('a user without a code gets one from the server (invite link)',
+        (tester) async {
+      await GetIt.instance.reset();
+      GetIt.instance.registerSingleton<ReferralService>(ReferralService(
+          firestore: firestore, serverCode: () async => 'SRV234'));
+      await tester.pumpWidget(MaterialApp(
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
+        home: const ReferralScreen(userId: 'newbie'),
+      ));
+      await tester.pumpAndSettle();
+      expect(
+          find.text('https://greengo-chat.web.app/r/SRV234'), findsOneWidget);
     });
   });
 }

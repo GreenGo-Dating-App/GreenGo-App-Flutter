@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/foundation.dart';
 
 /// Immutable snapshot of a user's referral state.
@@ -133,10 +134,25 @@ class ReferralService {
   ReferralService({
     required this.firestore,
     Random? random,
-  }) : _random = random ?? Random.secure();
+    Future<String?> Function()? serverCode,
+  })  : _random = random ?? Random.secure(),
+        _serverCode = serverCode ?? _ensureCodeOnServer;
 
   final FirebaseFirestore firestore;
   final Random _random;
+  final Future<String?> Function() _serverCode;
+
+  /// `ensureReferralCode` callable: returns (creating when missing) the
+  /// caller's invite code server-side.
+  static Future<String?> _ensureCodeOnServer() async {
+    final result = await FirebaseFunctions.instance
+        .httpsCallable('ensureReferralCode',
+            options: HttpsCallableOptions(timeout: requestTimeout))
+        .call<dynamic>();
+    final data = result.data;
+    final code = data is Map ? data['code'] : null;
+    return code is String && code.isNotEmpty ? code : null;
+  }
 
   /// Coins the REFERRER earns per friend who redeems their code.
   /// Mirrors REFERRER_COIN_REWARD in functions/src/referral/referralRules.ts
@@ -187,6 +203,15 @@ class ReferralService {
     final existing = referralDoc.data()?['code'] as String?;
     if (existing != null && existing.isNotEmpty) {
       return existing;
+    }
+
+    // Server-side creation first (every user gets an invite link); the
+    // client path below stays as a fallback for an older backend.
+    try {
+      final serverCode = await _serverCode();
+      if (serverCode != null) return serverCode;
+    } catch (e) {
+      debugPrint('ReferralService: ensureReferralCode unavailable: $e');
     }
 
     // Generate a unique code with bounded retries.
