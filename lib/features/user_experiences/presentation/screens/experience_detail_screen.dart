@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/widgets/zoom_photo_viewer.dart';
@@ -244,13 +243,11 @@ class _DetailViewState extends State<_DetailView> {
         .catchError((_) => false);
   }
 
-  Future<void> _share(UserExperience e) async {
-    final l = AppLocalizations.of(context)!;
-    await Share.share(
-      l.uexpShareText(e.title, 'https://${DeepLinkService.linkHost}'),
-      subject: e.title,
-    );
-  }
+  /// Shares the experience's own link (`/x/{id}`), which unfurls into a
+  /// preview card (photo, title, place, price, duration, host) in WhatsApp,
+  /// Telegram, Instagram DMs...
+  Future<void> _share(BuildContext buttonContext, UserExperience e) =>
+      shareExperienceLink(buttonContext, e.id, title: e.title);
 
   /// "Report scam": reason chips + text → `reports` (3 distinct reporters
   /// auto-hide the listing pending admin review).
@@ -441,11 +438,16 @@ class _DetailViewState extends State<_DetailView> {
       leading: BackButton(
           onPressed: () => _pop(ExperienceDetailResult(updated: _edited))),
       actions: [
-        IconButton(
-          tooltip: l.uexpShare,
-          icon: const Icon(Icons.share_outlined),
-          onPressed: () => _share(e),
-        ),
+        // Only a published listing has a public preview card.
+        if (e.isPublished)
+          Builder(
+            builder: (buttonContext) => IconButton(
+              key: const ValueKey('experienceShareButton'),
+              tooltip: l.uexpShare,
+              icon: const Icon(Icons.share_outlined),
+              onPressed: () => _share(buttonContext, e),
+            ),
+          ),
         // A door helper the host authorised: straight to the scanner.
         if (!isHost && e.allowedScannerIds.contains(widget.currentUserId))
           IconButton(

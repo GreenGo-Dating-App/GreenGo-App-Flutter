@@ -10,6 +10,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:share_plus/share_plus.dart';
 
+import '../../features/attractions/data/datasources/attractions_datasource.dart';
+import '../../features/attractions/presentation/screens/attraction_detail_screen.dart';
 import '../../features/communities/domain/repositories/communities_repository.dart';
 import '../../features/communities/presentation/bloc/communities_bloc.dart';
 import '../../features/communities/presentation/screens/community_detail_screen.dart';
@@ -17,27 +19,33 @@ import '../../features/discovery/presentation/open_user_profile.dart';
 import '../../features/events/presentation/screens/event_detail_loader_screen.dart';
 import '../../features/profile/presentation/bloc/profile_bloc.dart';
 import '../../features/profile/presentation/bloc/profile_event.dart';
+import '../../features/user_experiences/presentation/screens/experience_detail_screen.dart';
 import '../../generated/app_localizations.dart';
 import '../di/injection_container.dart' as di;
 import 'push_notification_service.dart';
 
-/// Handles inbound deep links / universal links for shareable PROFILE, EVENT
-/// and COMMUNITY links, and builds/shares those same links from inside the app.
+/// Handles inbound deep links / universal links for shareable PROFILE, EVENT,
+/// COMMUNITY, EXPERIENCE and ATTRACTION links, and builds/shares those same
+/// links from inside the app.
 ///
 /// Supported link shapes (kept in sync with `web/.well-known/*`,
 /// `AndroidManifest.xml` intent-filters and the iOS entitlements / Info.plist):
 ///   * Profile: `https://greengo-chat.web.app/u/{userId}`  or `greengo://u/{userId}`
 ///   * Event:   `https://greengo-chat.web.app/e/{eventId}` or `greengo://e/{eventId}`
 ///   * Community: `https://greengo-chat.web.app/c/{communityId}` or `greengo://c/{communityId}`
+///   * Experience: `https://greengo-chat.web.app/x/{experienceId}` or `greengo://x/{experienceId}`
+///   * Attraction: `https://greengo-chat.web.app/a/{attractionId}` or `greengo://a/{attractionId}`
 ///
 /// Tapping a link opens the app and:
 ///   * profile -> opens that user's profile ("profile first", via
 ///     [openUserProfile], which loads the target `Profile` and skips blocked
 ///     users); the chat is one tap away in the profile's app bar;
 ///   * event   -> opens [EventDetailLoaderScreen] for that event;
-///   * community -> opens [CommunityDetailScreen] for that community.
+///   * community -> opens [CommunityDetailScreen] for that community;
+///   * experience -> opens [ExperienceDetailScreen];
+///   * attraction -> opens [AttractionDetailScreen] (catalogue id).
 ///
-/// Profile, event and community links are all rendered by the `sharePreview`
+/// All these links are rendered by the `sharePreview`
 /// Cloud Function (Hosting rewrites) so WhatsApp / Telegram / Instagram show a
 /// preview card with the real name/title, description and photo (a profile's
 /// MAIN photo). When the app is NOT installed that page bounces to the store;
@@ -89,6 +97,14 @@ class DeepLinkService {
   /// Canonical shareable HTTPS link for a community.
   static String buildCommunityLink(String communityId) =>
       'https://$linkHost/c/${Uri.encodeComponent(communityId.trim())}';
+
+  /// Canonical shareable HTTPS link for a user experience.
+  static String buildExperienceLink(String experienceId) =>
+      'https://$linkHost/x/${Uri.encodeComponent(experienceId.trim())}';
+
+  /// Canonical shareable HTTPS link for a catalogue attraction.
+  static String buildAttractionLink(int attractionId) =>
+      'https://$linkHost/a/$attractionId';
 
   /// The web app reads `?link=/u/{id}` (set by the share page for desktop
   /// browsers) or a direct `/u/{id}` path from the page URL. Captured once per
@@ -168,8 +184,9 @@ class DeepLinkService {
 
   /// Extract a target from an https universal link, the `greengo://` custom
   /// scheme, or the web app's `?link=/u/{id}` hand-off. Returns null for
-  /// anything that isn't `/u/{id}`, `/e/{id}` or `/c/{id}` with a well-formed
-  /// id.
+  /// anything that isn't `/u/{id}`, `/e/{id}`, `/c/{id}`, `/x/{id}` or
+  /// `/a/{numericId}` (or a ticket / get-paid return link) with a
+  /// well-formed id.
   static DeepLinkTarget? parse(Uri uri) {
     final scheme = uri.scheme.toLowerCase();
     final isHttp = scheme == 'http' || scheme == 'https';
@@ -208,6 +225,11 @@ class DeepLinkService {
       if (kind == 'u') return DeepLinkTarget(DeepLinkKind.profile, id);
       if (kind == 'e') return DeepLinkTarget(DeepLinkKind.event, id);
       if (kind == 'c') return DeepLinkTarget(DeepLinkKind.community, id);
+      if (kind == 'x') return DeepLinkTarget(DeepLinkKind.experience, id);
+      // Catalogue attraction ids are integers.
+      if (kind == 'a' && int.tryParse(id) != null) {
+        return DeepLinkTarget(DeepLinkKind.attraction, id);
+      }
       // Ticket order (checkout return page) and "Get paid" (onboarding return).
       if (kind == 't') return DeepLinkTarget(DeepLinkKind.ticketOrder, id);
       if (kind == 'pay') return DeepLinkTarget(DeepLinkKind.getPaid, id);
@@ -253,6 +275,13 @@ class DeepLinkService {
       );
     } else if (target.kind == DeepLinkKind.community) {
       _openCommunity(context, target.id, currentUserId);
+    } else if (target.kind == DeepLinkKind.experience) {
+      Navigator.of(context).push(ExperienceDetailScreen.route(
+        experienceId: target.id,
+        currentUserId: currentUserId,
+      ));
+    } else if (target.kind == DeepLinkKind.attraction) {
+      _openAttraction(context, target.id);
     } else if (target.kind == DeepLinkKind.ticketOrder) {
       Navigator.of(context).push(TicketOrderScreen.route(target.id));
     } else if (target.kind == DeepLinkKind.getPaid) {
@@ -264,6 +293,22 @@ class DeepLinkService {
           currentUserId: currentUserId,
         ),
       );
+    }
+  }
+
+  /// Resolve the catalogue image bucket (memoised), then open the attraction.
+  /// The detail screen loads the full document itself.
+  Future<void> _openAttraction(BuildContext context, String rawId) async {
+    final id = int.tryParse(rawId);
+    if (id == null) return;
+    final navigator = Navigator.of(context);
+    try {
+      final bucket = await AttractionsDataSource().bucket();
+      await navigator.push(MaterialPageRoute<void>(
+        builder: (_) => AttractionDetailScreen(attractionId: id, bucket: bucket),
+      ));
+    } catch (e) {
+      debugPrint('DeepLinkService: could not open attraction $rawId: $e');
     }
   }
 
@@ -299,7 +344,15 @@ class DeepLinkService {
   }
 }
 
-enum DeepLinkKind { profile, event, community, ticketOrder, getPaid }
+enum DeepLinkKind {
+  profile,
+  event,
+  community,
+  experience,
+  attraction,
+  ticketOrder,
+  getPaid,
+}
 
 @immutable
 class DeepLinkTarget {
@@ -352,11 +405,9 @@ Future<void> shareLinkText(
   required String link,
   String? subject,
 }) async {
-  final messenger = context.mounted ? ScaffoldMessenger.maybeOf(context) : null;
-  final copiedLabel = (context.mounted
-          ? AppLocalizations.of(context)?.shareLinkCopied
-          : null) ??
-      'Link copied';
+  if (!context.mounted) return;
+  final messenger = ScaffoldMessenger.maybeOf(context);
+  final copiedLabel = _l10n(context).shareLinkCopied;
   final origin = _shareOrigin(context);
 
   if (!kIsWeb || _webCanUseNativeShare) {
@@ -375,21 +426,62 @@ Future<void> shareLinkText(
   }
 }
 
+/// Share helpers always run under MaterialApp, so localizations exist; a
+/// missing delegate is a programming error, not a reason to show English.
+AppLocalizations _l10n(BuildContext context) {
+  final l10n = AppLocalizations.of(context);
+  assert(l10n != null, 'share helpers need AppLocalizations in the tree');
+  return l10n ?? lookupAppLocalizations(const Locale('en'));
+}
+
 /// The text that accompanies a shared profile link. Your own profile reads
 /// "Chat with me..."; someone else's names them.
 String profileShareText({
   required String link,
   required bool isSelf,
+  required AppLocalizations l10n,
   String? displayName,
-  AppLocalizations? l10n,
 }) {
   final name = displayName?.trim() ?? '';
-  if (isSelf || name.isEmpty) {
-    return l10n?.shareProfileMessage(link) ?? 'Chat with me on GreenGo: $link';
-  }
-  return l10n?.shareOtherProfileMessage(name, link) ??
-      'Meet $name on GreenGo: $link';
+  if (isSelf || name.isEmpty) return l10n.shareProfileMessage(link);
+  return l10n.shareOtherProfileMessage(name, link);
 }
+
+/// Text for a shared event link (title first when known).
+String eventShareText({
+  required String link,
+  required AppLocalizations l10n,
+  String? title,
+}) {
+  final t = title?.trim() ?? '';
+  return t.isNotEmpty
+      ? l10n.shareEventMessageTitled(t, link)
+      : l10n.shareEventMessage(link);
+}
+
+/// Text for a shared community link.
+String communityShareText({
+  required String link,
+  required String name,
+  required AppLocalizations l10n,
+}) =>
+    l10n.shareCommunityMessage(name.trim(), link);
+
+/// Text for a shared experience link.
+String experienceShareText({
+  required String link,
+  required String title,
+  required AppLocalizations l10n,
+}) =>
+    l10n.uexpShareText(title.trim(), link);
+
+/// Text for a shared attraction link.
+String attractionShareText({
+  required String link,
+  required String name,
+  required AppLocalizations l10n,
+}) =>
+    l10n.shareAttractionMessage(name.trim(), link);
 
 /// Share a user's profile deep link via the OS share sheet (clipboard on
 /// desktop web). The link unfurls into a card with the profile's main photo,
@@ -409,7 +501,7 @@ Future<void> shareProfileLink(
     link: link,
     isSelf: isSelf,
     displayName: displayName,
-    l10n: AppLocalizations.of(context),
+    l10n: _l10n(context),
   );
   final name = displayName?.trim() ?? '';
   await shareLinkText(
@@ -426,13 +518,8 @@ Future<void> shareProfileLink(
 Future<void> shareEventLink(BuildContext context, String eventId,
     {String? title}) async {
   final link = DeepLinkService.buildEventLink(eventId);
-  final l10n = AppLocalizations.of(context);
   final t = title?.trim() ?? '';
-  final text = t.isNotEmpty
-      ? (l10n?.shareEventMessageTitled(t, link) ??
-          '$t\nCheck out this event on GreenGo: $link')
-      : (l10n?.shareEventMessage(link) ??
-          'Check out this event on GreenGo: $link');
+  final text = eventShareText(link: link, l10n: _l10n(context), title: t);
   await shareLinkText(context,
       text: text, link: link, subject: t.isNotEmpty ? t : null);
 }
@@ -442,10 +529,31 @@ Future<void> shareEventLink(BuildContext context, String eventId,
 Future<void> shareCommunityLink(BuildContext context, String communityId,
     {required String name}) async {
   final link = DeepLinkService.buildCommunityLink(communityId);
-  final l10n = AppLocalizations.of(context);
   final n = name.trim();
-  final text = l10n?.shareCommunityMessage(n, link) ??
-      '$n\nJoin this community on GreenGo: $link';
+  final text = communityShareText(link: link, name: n, l10n: _l10n(context));
+  await shareLinkText(context,
+      text: text, link: link, subject: n.isNotEmpty ? n : null);
+}
+
+/// Share an experience deep link (`/x/{id}`): the link unfurls into a card
+/// with the main photo, title, place, price, duration and host.
+Future<void> shareExperienceLink(BuildContext context, String experienceId,
+    {required String title}) async {
+  if (experienceId.trim().isEmpty) return;
+  final link = DeepLinkService.buildExperienceLink(experienceId);
+  final t = title.trim();
+  final text = experienceShareText(link: link, title: t, l10n: _l10n(context));
+  await shareLinkText(context,
+      text: text, link: link, subject: t.isNotEmpty ? t : null);
+}
+
+/// Share a catalogue attraction deep link (`/a/{id}`): photo (licence
+/// permitting), name, city / country, category and a short description.
+Future<void> shareAttractionLink(BuildContext context, int attractionId,
+    {required String name}) async {
+  final link = DeepLinkService.buildAttractionLink(attractionId);
+  final n = name.trim();
+  final text = attractionShareText(link: link, name: n, l10n: _l10n(context));
   await shareLinkText(context,
       text: text, link: link, subject: n.isNotEmpty ? n : null);
 }

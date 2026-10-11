@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/services/deep_link_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../utils/community_l10n.dart';
 import '../../domain/entities/community.dart';
@@ -37,6 +38,12 @@ class CommunityCard extends StatelessWidget {
     // column (title + subtitle) and a trailing column (time + unread dot).
     return InkWell(
       onTap: onTap,
+      // Long-press shares a PUBLIC community's link (/c/{id}), which unfurls
+      // into a preview card. Private communities have no public card.
+      onLongPress: community.isPublic
+          ? () => shareCommunityLink(context, community.id,
+              name: community.name)
+          : null,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         decoration: BoxDecoration(
