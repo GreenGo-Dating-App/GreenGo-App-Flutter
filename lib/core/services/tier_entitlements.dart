@@ -401,6 +401,9 @@ class TierEntitlements {
         [for (final t in comparisonTiers) f(t)];
 
     return [
+      // Joining events / booking experiences: Base and every tier above
+      // (owner rule 2026-10-11; enforced by the rules and the callables).
+      TierComparisonRow(l10n.membershipBenefitJoinEvents, each((_) => mark(true))),
       TierComparisonRow(l10n.shopEventsCreate, each((t) => count(maxEvents(t)))),
       TierComparisonRow(l10n.shopGroupsCreate, each((t) => count(maxGroups(t)))),
       TierComparisonRow(

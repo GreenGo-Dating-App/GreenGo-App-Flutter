@@ -5,6 +5,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/services/effective_tier.dart' show kBaseMembershipRequiredCode;
+import '../../../../core/utils/base_membership_gate.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/widgets/organizer_share_notice.dart';
@@ -96,6 +98,12 @@ class _BookViewState extends State<_BookView> {
     if (e == null || !s.canSubmit || _preparing) return;
     setState(() => _preparing = true);
     try {
+      // Base membership required to book (owner rule 2026-10-11).
+      if (!await BaseMembershipGate.ensureCanParticipate(
+          context: context, userId: widget.currentUserId)) {
+        return;
+      }
+      if (!mounted) return;
       if (!await ExperienceSafetyFlow.ensureIdDocument(
           context, widget.currentUserId, IdDocPurpose.payAsGuest)) {
         return;
@@ -115,7 +123,13 @@ class _BookViewState extends State<_BookView> {
                 );
         if (!mounted) return;
         if (saved.isLeft()) {
-          unawaited(showUserError(context, saved.fold((f) => f, (_) => null)));
+          final f = saved.fold((f) => f, (_) => null);
+          if (await BaseMembershipGate.handleParticipationError(context,
+                  userId: widget.currentUserId, error: f) ||
+              !mounted) {
+            return;
+          }
+          unawaited(showUserError(context, f));
           return;
         }
       }
@@ -130,6 +144,10 @@ class _BookViewState extends State<_BookView> {
     final l = AppLocalizations.of(context)!;
     final bloc = context.read<BookingFlowBloc>();
     switch (f.code) {
+      case kBaseMembershipRequiredCode:
+        await BaseMembershipGate.handleParticipationError(context,
+            userId: widget.currentUserId, reason: f.code);
+        return;
       case 'id_document_required':
         // Upload in place, then try again automatically.
         if (await ExperienceSafetyFlow.ensureIdDocument(

@@ -2552,7 +2552,7 @@
   "shopActive": "ACTIF",
   "shopAmountCoins": "{amount} pièces",
   "shopBaseMembership": "Adhésion de base GreenGo",
-  "shopBaseMembershipDescription": "Nécessaire pour swiper, liker, discuter et interagir avec d'autres utilisateurs.",
+  "shopBaseMembershipDescription": "Nécessaire pour discuter, participer à des événements, réserver des expériences et te connecter avec d'autres membres.",
   "shopBonusCoins": "+{bonus} pièces bonus",
   "shopBoosts": "Boosts",
   "shopBuyTier": "Acheter {tier} ({duration})",
@@ -3012,7 +3012,7 @@
   "guideTravelItem2": "Les guides locaux peuvent aider les voyageurs à découvrir leur ville et leur culture.",
   "guideTravelItem3": "Les partenaires d'échange linguistique sont suggérés selon les langues que vous parlez et celles que vous voulez apprendre.",
   "guideMembershipTitle": "Abonnement de base",
-  "guideMembershipItem1": "Votre abonnement de base vous donne accès à toutes les fonctionnalités principales : swiper, discuter et vous connecter.",
+  "guideMembershipItem1": "Ton abonnement de base te donne accès à toutes les fonctionnalités principales : discuter, te connecter, participer à des événements et réserver des expériences.",
   "guideMembershipItem2": "L'abonnement commence par un essai gratuit après votre première inscription.",
   "guideMembershipItem3": "Lorsque votre abonnement expire, vous pouvez le renouveler pour continuer à utiliser l'application.",
   "guideTiersTitle": "Niveaux VIP (Argent, Or, Platine)",
@@ -6525,7 +6525,7 @@
   "becomeBusinessOneWayHint": "Nécessite Platinum. Passage unique : il ne peut pas être annulé.",
   "businessPermanentInfo": "Ton compte est définitivement un compte professionnel et ne peut pas redevenir personnel. Les outils professionnels fonctionnent tant que Platinum est actif ; s'il expire, ils sont en pause jusqu'au renouvellement.",
   "paidBusinessOnlyNote": "Les billets payants sont disponibles pour les comptes professionnels.",
-  "paidBusinessOnlyBody": "Les événements et expériences gratuits sont ouverts à tous. Pour faire payer des billets ou des réservations, il te faut un compte professionnel actif (Platinum).",
+  "paidBusinessOnlyBody": "Tout le monde peut organiser des événements et expériences gratuits. Pour faire payer des billets ou des réservations, il te faut un compte professionnel actif (Platinum).",
   "paidBusinessPausedNote": "Ton entreprise est en pause : renouvelle Platinum pour vendre à nouveau des billets payants.",
   "uexpBusinessRequiredTitle": "Les annonces payantes sont réservées aux comptes professionnels",
   "tpErrSellerNotBusiness": "Les ventes sont en pause : les billets et réservations payants ne sont proposés que par des comptes professionnels actifs.",
@@ -6864,5 +6864,10 @@
   "iosInstallBannerText": "Installez GreenGo sur votre iPhone ou iPad pour profiter de l’application complète.",
   "iosInstallNotNow": "Plus tard",
   "iosInstallShowMe": "Me montrer comment",
-  "mySpaceTooltipWithTodo": "{count, plural, =1{Mon espace · 1 tâche} other{Mon espace · {count} tâches}}"
+  "mySpaceTooltipWithTodo": "{count, plural, =1{Mon espace · 1 tâche} other{Mon espace · {count} tâches}}",
+  "participationBaseRequiredTitle": "Abonnement de base requis",
+  "participationBaseRequiredBody": "Pour participer à des événements et réserver des expériences, il te faut un abonnement de base (ou Silver, Gold ou Platinum).",
+  "participationBaseRequiredCta": "Prendre l'abonnement de base",
+  "participationBaseRequiredHint": "Abonnement de base requis",
+  "membershipBenefitJoinEvents": "Participer à des événements et réserver des expériences"
 }

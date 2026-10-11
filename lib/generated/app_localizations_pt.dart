@@ -8780,7 +8780,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get shopBaseMembershipDescription =>
-      'Necessária para deslizar, gostar, conversar e interagir com outros utilizadores.';
+      'Necessária para conversar, participar em eventos, reservar experiências e criar ligações com outros membros.';
 
   @override
   String shopBonusCoins(Object bonus) {
@@ -10386,7 +10386,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get guideMembershipItem1 =>
-      'A tua subscrição base dá-te acesso a todas as funcionalidades principais: deslizar, conversar e criar ligações.';
+      'A tua subscrição Base dá-te acesso a todas as funcionalidades principais: conversar, criar ligações, participar em eventos e reservar experiências.';
 
   @override
   String get guideMembershipItem2 =>
@@ -22884,7 +22884,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get paidBusinessOnlyBody =>
-      'Os eventos e experiências gratuitos estão abertos a todos. Para cobrar bilhetes ou reservas precisas de uma conta empresarial ativa (Platinum).';
+      'Qualquer pessoa pode organizar eventos e experiências gratuitos. Para cobrar bilhetes ou reservas precisas de uma conta empresarial ativa (Platinum).';
 
   @override
   String get paidBusinessPausedNote =>
@@ -24242,6 +24242,23 @@ class AppLocalizationsPt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get participationBaseRequiredTitle => 'Subscrição Base necessária';
+
+  @override
+  String get participationBaseRequiredBody =>
+      'Para participar em eventos e reservar experiências precisas de uma subscrição Base (ou Silver, Gold ou Platinum).';
+
+  @override
+  String get participationBaseRequiredCta => 'Obter a subscrição Base';
+
+  @override
+  String get participationBaseRequiredHint => 'Requer subscrição Base';
+
+  @override
+  String get membershipBenefitJoinEvents =>
+      'Participar em eventos e reservar experiências';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -33023,7 +33040,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get shopBaseMembershipDescription =>
-      'Necessária para deslizar, curtir, conversar e interagir com outros usuários.';
+      'Necessária para conversar, participar de eventos, reservar experiências e se conectar com outros membros.';
 
   @override
   String shopBonusCoins(Object bonus) {
@@ -34629,7 +34646,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get guideMembershipItem1 =>
-      'Sua assinatura básica dá acesso a todos os recursos principais: deslizar, conversar e se conectar.';
+      'Sua assinatura Base dá acesso a todos os recursos principais: conversar, se conectar, participar de eventos e reservar experiências.';
 
   @override
   String get guideMembershipItem2 =>
@@ -47135,7 +47152,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get paidBusinessOnlyBody =>
-      'Eventos e experiências gratuitos são abertos a todos. Para cobrar ingressos ou reservas você precisa de uma conta empresarial ativa (Platinum).';
+      'Qualquer pessoa pode organizar eventos e experiências gratuitos. Para cobrar ingressos ou reservas você precisa de uma conta empresarial ativa (Platinum).';
 
   @override
   String get paidBusinessPausedNote =>
@@ -48494,4 +48511,21 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
     );
     return '$_temp0';
   }
+
+  @override
+  String get participationBaseRequiredTitle => 'Assinatura Base necessária';
+
+  @override
+  String get participationBaseRequiredBody =>
+      'Para participar de eventos e reservar experiências você precisa de uma assinatura Base (ou Silver, Gold ou Platinum).';
+
+  @override
+  String get participationBaseRequiredCta => 'Assinar a Base';
+
+  @override
+  String get participationBaseRequiredHint => 'Requer assinatura Base';
+
+  @override
+  String get membershipBenefitJoinEvents =>
+      'Participar de eventos e reservar experiências';
 }

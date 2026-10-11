@@ -2920,7 +2920,7 @@
   "shopActive": "ATIVA",
   "shopAmountCoins": "{amount} moedas",
   "shopBaseMembership": "Assinatura Base GreenGo",
-  "shopBaseMembershipDescription": "Necessária para deslizar, curtir, conversar e interagir com outros usuários.",
+  "shopBaseMembershipDescription": "Necessária para conversar, participar de eventos, reservar experiências e se conectar com outros membros.",
   "shopBonusCoins": "+{bonus} moedas bônus",
   "shopBoosts": "Impulsos",
   "shopBuyTier": "Comprar {tier} ({duration})",
@@ -3462,7 +3462,7 @@
   "guideTravelItem2": "Guias Locais podem ajudar viajantes a descobrir sua cidade e cultura.",
   "guideTravelItem3": "Os parceiros de intercâmbio de idiomas são sugeridos com base no que você fala e no que quer aprender.",
   "guideMembershipTitle": "Assinatura Base",
-  "guideMembershipItem1": "Sua assinatura básica dá acesso a todos os recursos principais: deslizar, conversar e se conectar.",
+  "guideMembershipItem1": "Sua assinatura Base dá acesso a todos os recursos principais: conversar, se conectar, participar de eventos e reservar experiências.",
   "guideMembershipItem2": "A assinatura começa com um período gratuito após o primeiro cadastro.",
   "guideMembershipItem3": "Quando sua assinatura expirar, você pode renová-la para continuar usando o app.",
   "guideTiersTitle": "Níveis VIP (Prata, Ouro, Platina)",
@@ -7099,7 +7099,7 @@
   "becomeBusinessOneWayHint": "Requer Platinum. Upgrade único: não pode ser desfeito.",
   "businessPermanentInfo": "Sua conta é permanentemente uma conta empresarial e não pode voltar a ser pessoal. As ferramentas empresariais funcionam enquanto o Platinum estiver ativo; se expirar, ficam pausadas até você renovar.",
   "paidBusinessOnlyNote": "Os ingressos pagos estão disponíveis para contas empresariais.",
-  "paidBusinessOnlyBody": "Eventos e experiências gratuitos são abertos a todos. Para cobrar ingressos ou reservas você precisa de uma conta empresarial ativa (Platinum).",
+  "paidBusinessOnlyBody": "Qualquer pessoa pode organizar eventos e experiências gratuitos. Para cobrar ingressos ou reservas você precisa de uma conta empresarial ativa (Platinum).",
   "paidBusinessPausedNote": "Sua empresa está pausada: renove o Platinum para voltar a vender ingressos pagos.",
   "uexpBusinessRequiredTitle": "Os anúncios pagos são para contas empresariais",
   "tpErrSellerNotBusiness": "As vendas estão pausadas: ingressos e reservas pagos só estão disponíveis em contas empresariais ativas.",
@@ -7438,5 +7438,10 @@
   "iosInstallBannerText": "Instale o GreenGo no seu iPhone ou iPad para ter a experiência completa do app.",
   "iosInstallNotNow": "Agora não",
   "iosInstallShowMe": "Me mostre como",
-  "mySpaceTooltipWithTodo": "{count, plural, =1{Meu espaço · 1 tarefa} other{Meu espaço · {count} tarefas}}"
+  "mySpaceTooltipWithTodo": "{count, plural, =1{Meu espaço · 1 tarefa} other{Meu espaço · {count} tarefas}}",
+  "participationBaseRequiredTitle": "Assinatura Base necessária",
+  "participationBaseRequiredBody": "Para participar de eventos e reservar experiências você precisa de uma assinatura Base (ou Silver, Gold ou Platinum).",
+  "participationBaseRequiredCta": "Assinar a Base",
+  "participationBaseRequiredHint": "Requer assinatura Base",
+  "membershipBenefitJoinEvents": "Participar de eventos e reservar experiências"
 }

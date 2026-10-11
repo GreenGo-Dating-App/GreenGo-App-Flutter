@@ -2918,7 +2918,7 @@
   "shopActive": "AKTIV",
   "shopAmountCoins": "{amount} Münzen",
   "shopBaseMembership": "GreenGo Basis-Mitgliedschaft",
-  "shopBaseMembershipDescription": "Erforderlich zum Swipen, Liken, Chatten und Interagieren mit anderen Nutzern.",
+  "shopBaseMembershipDescription": "Erforderlich zum Chatten, für die Teilnahme an Events, das Buchen von Erlebnissen und um dich mit anderen Mitgliedern zu verbinden.",
   "shopBonusCoins": "+{bonus} Bonusmünzen",
   "shopBoosts": "Boosts",
   "shopBuyTier": "{tier} kaufen ({duration})",
@@ -3460,7 +3460,7 @@
   "guideTravelItem2": "Lokale Guides können Reisenden helfen, ihre Stadt und Kultur zu entdecken.",
   "guideTravelItem3": "Sprachtandem-Partner werden danach vorgeschlagen, was du sprichst und was du lernen möchtest.",
   "guideMembershipTitle": "Basismitgliedschaft",
-  "guideMembershipItem1": "Deine Basismitgliedschaft gibt dir Zugang zu allen Kernfunktionen: Swipen, Chatten und Verbinden.",
+  "guideMembershipItem1": "Deine Basis-Mitgliedschaft gibt dir Zugang zu allen Kernfunktionen: Chatten, Verbinden, an Events teilnehmen und Erlebnisse buchen.",
   "guideMembershipItem2": "Die Mitgliedschaft beginnt mit einer kostenlosen Testphase nach deiner ersten Anmeldung.",
   "guideMembershipItem3": "Wenn deine Mitgliedschaft abläuft, kannst du sie verlängern, um die App weiter zu nutzen.",
   "guideTiersTitle": "VIP-Stufen (Silber, Gold, Platin)",
@@ -7099,7 +7099,7 @@
   "becomeBusinessOneWayHint": "Erfordert Platinum. Einmaliges Upgrade: Es kann nicht rückgängig gemacht werden.",
   "businessPermanentInfo": "Dein Konto ist dauerhaft ein Unternehmenskonto und kann nicht wieder ein persönliches Konto werden. Die Business-Tools funktionieren, solange Platinum aktiv ist; läuft es ab, werden sie pausiert, bis du verlängerst.",
   "paidBusinessOnlyNote": "Kostenpflichtige Tickets sind für Unternehmenskonten verfügbar.",
-  "paidBusinessOnlyBody": "Kostenlose Events und Erlebnisse stehen allen offen. Um Geld für Tickets oder Buchungen zu verlangen, brauchst du ein aktives Unternehmenskonto (Platinum).",
+  "paidBusinessOnlyBody": "Kostenlose Events und Erlebnisse kann jeder veranstalten. Um Geld für Tickets oder Buchungen zu verlangen, brauchst du ein aktives Unternehmenskonto (Platinum).",
   "paidBusinessPausedNote": "Dein Business ist pausiert: Verlängere Platinum, um wieder kostenpflichtige Tickets zu verkaufen.",
   "uexpBusinessRequiredTitle": "Kostenpflichtige Angebote sind für Unternehmenskonten",
   "tpErrSellerNotBusiness": "Der Verkauf ist pausiert: Kostenpflichtige Tickets und Buchungen gibt es nur bei aktiven Unternehmenskonten.",
@@ -7438,5 +7438,10 @@
   "iosInstallBannerText": "Installiere GreenGo auf deinem iPhone oder iPad für das volle App-Erlebnis.",
   "iosInstallNotNow": "Nicht jetzt",
   "iosInstallShowMe": "Zeig mir wie",
-  "mySpaceTooltipWithTodo": "{count, plural, =1{Mein Bereich · 1 Aufgabe} other{Mein Bereich · {count} Aufgaben}}"
+  "mySpaceTooltipWithTodo": "{count, plural, =1{Mein Bereich · 1 Aufgabe} other{Mein Bereich · {count} Aufgaben}}",
+  "participationBaseRequiredTitle": "Basis-Mitgliedschaft erforderlich",
+  "participationBaseRequiredBody": "Um an Events teilzunehmen und Erlebnisse zu buchen, brauchst du eine Basis-Mitgliedschaft (oder Silver, Gold oder Platinum).",
+  "participationBaseRequiredCta": "Basis-Mitgliedschaft holen",
+  "participationBaseRequiredHint": "Basis-Mitgliedschaft erforderlich",
+  "membershipBenefitJoinEvents": "An Events teilnehmen und Erlebnisse buchen"
 }

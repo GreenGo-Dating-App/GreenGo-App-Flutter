@@ -2957,7 +2957,7 @@
   "shopActive": "ATTIVA",
   "shopAmountCoins": "{amount} monete",
   "shopBaseMembership": "Iscrizione Base GreenGo",
-  "shopBaseMembershipDescription": "Necessaria per scorrere, mettere like, chattare e interagire con altri utenti.",
+  "shopBaseMembershipDescription": "Necessario per chattare, partecipare agli eventi, prenotare esperienze e connetterti con altri membri.",
   "shopBonusCoins": "+{bonus} monete bonus",
   "shopBoosts": "Boost",
   "shopBuyTier": "Acquista {tier} ({duration})",
@@ -3499,7 +3499,7 @@
   "guideTravelItem2": "Le guide locali possono aiutare i viaggiatori a scoprire la loro città e cultura.",
   "guideTravelItem3": "I partner per lo scambio linguistico vengono suggeriti in base alle lingue che parli e a quelle che vuoi imparare.",
   "guideMembershipTitle": "Abbonamento base",
-  "guideMembershipItem1": "Il tuo abbonamento base ti dà accesso a tutte le funzioni principali: swipe, chat e connessioni.",
+  "guideMembershipItem1": "Il tuo abbonamento base ti dà accesso a tutte le funzioni principali: chat, connessioni, partecipazione agli eventi e prenotazione di esperienze.",
   "guideMembershipItem2": "L'abbonamento inizia con una prova gratuita dopo la prima registrazione.",
   "guideMembershipItem3": "Quando il tuo abbonamento scade, puoi rinnovarlo per continuare a usare l'app.",
   "guideTiersTitle": "Livelli VIP (Argento, Oro, Platino)",
@@ -7099,7 +7099,7 @@
   "becomeBusinessOneWayHint": "Richiede Platinum. Upgrade una tantum: non può essere annullato.",
   "businessPermanentInfo": "Il tuo account è definitivamente un account aziendale e non può tornare personale. Gli strumenti aziendali funzionano finché Platinum è attivo; se scade, vengono sospesi fino al rinnovo.",
   "paidBusinessOnlyNote": "I biglietti a pagamento sono disponibili per gli account aziendali.",
-  "paidBusinessOnlyBody": "Eventi ed esperienze gratuiti sono aperti a tutti. Per far pagare biglietti o prenotazioni ti serve un account aziendale attivo (Platinum).",
+  "paidBusinessOnlyBody": "Chiunque può organizzare eventi ed esperienze gratuiti. Per far pagare biglietti o prenotazioni ti serve un account aziendale attivo (Platinum).",
   "paidBusinessPausedNote": "La tua attività è sospesa: rinnova Platinum per vendere di nuovo biglietti a pagamento.",
   "uexpBusinessRequiredTitle": "Gli annunci a pagamento sono per gli account aziendali",
   "tpErrSellerNotBusiness": "Le vendite sono sospese: biglietti e prenotazioni a pagamento sono disponibili solo da account aziendali attivi.",
@@ -7438,5 +7438,10 @@
   "iosInstallBannerText": "Installa GreenGo sul tuo iPhone o iPad per usare l’app al meglio.",
   "iosInstallNotNow": "Non ora",
   "iosInstallShowMe": "Mostrami come",
-  "mySpaceTooltipWithTodo": "{count, plural, =1{Il mio spazio · 1 cosa da fare} other{Il mio spazio · {count} cose da fare}}"
+  "mySpaceTooltipWithTodo": "{count, plural, =1{Il mio spazio · 1 cosa da fare} other{Il mio spazio · {count} cose da fare}}",
+  "participationBaseRequiredTitle": "Serve l'abbonamento base",
+  "participationBaseRequiredBody": "Per partecipare agli eventi e prenotare esperienze ti serve un abbonamento base (oppure Silver, Gold o Platinum).",
+  "participationBaseRequiredCta": "Attiva l'abbonamento base",
+  "participationBaseRequiredHint": "Richiede l'abbonamento base",
+  "membershipBenefitJoinEvents": "Partecipare agli eventi e prenotare esperienze"
 }

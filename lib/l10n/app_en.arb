@@ -4161,7 +4161,7 @@
   "shopActive": "ACTIVE",
   "shopAmountCoins": "{amount} coins",
   "shopBaseMembership": "GreenGo Base Membership",
-  "shopBaseMembershipDescription": "Required to swipe, like, chat, and interact with other users.",
+  "shopBaseMembershipDescription": "Required to chat, join events, book experiences and connect with other members.",
   "shopBonusCoins": "+{bonus} bonus coins",
   "shopBoosts": "Boosts",
   "shopBuyTier": "Buy {tier} ({duration})",
@@ -4934,7 +4934,7 @@
   "guideTravelItem2": "Local Guides can help travelers discover their city and culture.",
   "guideTravelItem3": "Language exchange partners are suggested based on what you speak and what you want to learn.",
   "guideMembershipTitle": "Base Membership",
-  "guideMembershipItem1": "Your base membership gives you access to all core features: swiping, chatting, and connecting.",
+  "guideMembershipItem1": "Your Base membership gives you access to all core features: chatting, connecting, joining events and booking experiences.",
   "guideMembershipItem2": "Membership starts with a free trial after your first sign-up.",
   "guideMembershipItem3": "When your membership expires, you can renew it to continue using the app.",
   "guideTiersTitle": "VIP Tiers (Silver, Gold, Platinum)",
@@ -12251,7 +12251,7 @@
   "becomeBusinessOneWayHint": "Requires Platinum. One-time upgrade: it can't be undone.",
   "businessPermanentInfo": "Your account is permanently a business account and can't go back to a personal account. Business tools work while Platinum is active; if it lapses they pause until you renew.",
   "paidBusinessOnlyNote": "Paid tickets are available for business accounts.",
-  "paidBusinessOnlyBody": "Free events and experiences are open to everyone. To charge for tickets or bookings you need an active business account (Platinum).",
+  "paidBusinessOnlyBody": "Anyone can host free events and experiences. To charge for tickets or bookings you need an active business account (Platinum).",
   "paidBusinessPausedNote": "Your business is paused: renew Platinum to sell paid tickets again.",
   "uexpBusinessRequiredTitle": "Paid listings are for business accounts",
   "tpErrSellerNotBusiness": "Sales are paused: paid tickets and bookings are only available from active business accounts.",
@@ -13318,5 +13318,25 @@
   "iosInstallNotNow": "Not now",
   "iosInstallShowMe": "Show me how",
   "mySpaceTooltipWithTodo": "{count, plural, =1{My Space · 1 to-do} other{My Space · {count} to-dos}}",
-  "@mySpaceTooltipWithTodo": {"description": "Tooltip / screen-reader label of the My Space icon when there are to-dos", "placeholders": {"count": {"type": "int"}}}
+  "@mySpaceTooltipWithTodo": {"description": "Tooltip / screen-reader label of the My Space icon when there are to-dos", "placeholders": {"count": {"type": "int"}}},
+  "participationBaseRequiredTitle": "Base membership required",
+  "@participationBaseRequiredTitle": {
+    "description": "Dialog title: joining an event / booking an experience needs the Base membership"
+  },
+  "participationBaseRequiredBody": "To join events and book experiences you need a Base membership (or Silver, Gold or Platinum).",
+  "@participationBaseRequiredBody": {
+    "description": "Dialog body: Base (or a paid tier) is required to join events and book experiences"
+  },
+  "participationBaseRequiredCta": "Get Base membership",
+  "@participationBaseRequiredCta": {
+    "description": "Dialog button: opens the membership purchase screen"
+  },
+  "participationBaseRequiredHint": "Base membership required",
+  "@participationBaseRequiredHint": {
+    "description": "Small caption with a lock icon under the join / book button for users without Base"
+  },
+  "membershipBenefitJoinEvents": "Join events and book experiences",
+  "@membershipBenefitJoinEvents": {
+    "description": "Membership benefit (Base and every tier above): joining events and booking experiences"
+  }
 }

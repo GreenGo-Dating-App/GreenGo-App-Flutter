@@ -15621,7 +15621,7 @@ abstract class AppLocalizations {
   /// No description provided for @shopBaseMembershipDescription.
   ///
   /// In en, this message translates to:
-  /// **'Required to swipe, like, chat, and interact with other users.'**
+  /// **'Required to chat, join events, book experiences and connect with other members.'**
   String get shopBaseMembershipDescription;
 
   /// No description provided for @shopBonusCoins.
@@ -18381,7 +18381,7 @@ abstract class AppLocalizations {
   /// No description provided for @guideMembershipItem1.
   ///
   /// In en, this message translates to:
-  /// **'Your base membership gives you access to all core features: swiping, chatting, and connecting.'**
+  /// **'Your Base membership gives you access to all core features: chatting, connecting, joining events and booking experiences.'**
   String get guideMembershipItem1;
 
   /// No description provided for @guideMembershipItem2.
@@ -39126,7 +39126,7 @@ abstract class AppLocalizations {
   /// No description provided for @paidBusinessOnlyBody.
   ///
   /// In en, this message translates to:
-  /// **'Free events and experiences are open to everyone. To charge for tickets or bookings you need an active business account (Platinum).'**
+  /// **'Anyone can host free events and experiences. To charge for tickets or bookings you need an active business account (Platinum).'**
   String get paidBusinessOnlyBody;
 
   /// No description provided for @paidBusinessPausedNote.
@@ -41162,6 +41162,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, =1{My Space · 1 to-do} other{My Space · {count} to-dos}}'**
   String mySpaceTooltipWithTodo(int count);
+
+  /// Dialog title: joining an event / booking an experience needs the Base membership
+  ///
+  /// In en, this message translates to:
+  /// **'Base membership required'**
+  String get participationBaseRequiredTitle;
+
+  /// Dialog body: Base (or a paid tier) is required to join events and book experiences
+  ///
+  /// In en, this message translates to:
+  /// **'To join events and book experiences you need a Base membership (or Silver, Gold or Platinum).'**
+  String get participationBaseRequiredBody;
+
+  /// Dialog button: opens the membership purchase screen
+  ///
+  /// In en, this message translates to:
+  /// **'Get Base membership'**
+  String get participationBaseRequiredCta;
+
+  /// Small caption with a lock icon under the join / book button for users without Base
+  ///
+  /// In en, this message translates to:
+  /// **'Base membership required'**
+  String get participationBaseRequiredHint;
+
+  /// Membership benefit (Base and every tier above): joining events and booking experiences
+  ///
+  /// In en, this message translates to:
+  /// **'Join events and book experiences'**
+  String get membershipBenefitJoinEvents;
 }
 
 class _AppLocalizationsDelegate

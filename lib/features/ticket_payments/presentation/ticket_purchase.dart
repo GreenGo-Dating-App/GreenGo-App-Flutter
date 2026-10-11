@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
+import '../../../core/services/own_profile_store.dart';
+import '../../../core/utils/base_membership_gate.dart';
 import '../../../generated/app_localizations.dart';
 import '../data/ticket_payments_service.dart';
 import 'screens/ticket_order_screen.dart';
@@ -47,6 +49,15 @@ Future<void> startTicketPurchase(
     }
     await navigator.push(TicketOrderScreen.route(r.orderId));
   } catch (e) {
+    // No Base membership (owner rule 2026-10-11): the upsell, not an error.
+    final uid = OwnProfileStore.instance.uid;
+    if (e is TicketPaymentException &&
+        uid != null &&
+        context.mounted &&
+        await BaseMembershipGate.handleParticipationError(context,
+            userId: uid, reason: e.reason)) {
+      return;
+    }
     messenger.showSnackBar(SnackBar(content: Text(TicketL10n.error(l, e))));
   }
 }

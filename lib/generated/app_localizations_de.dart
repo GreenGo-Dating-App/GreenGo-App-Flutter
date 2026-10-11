@@ -8816,7 +8816,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get shopBaseMembershipDescription =>
-      'Erforderlich zum Swipen, Liken, Chatten und Interagieren mit anderen Nutzern.';
+      'Erforderlich zum Chatten, für die Teilnahme an Events, das Buchen von Erlebnissen und um dich mit anderen Mitgliedern zu verbinden.';
 
   @override
   String shopBonusCoins(Object bonus) {
@@ -10426,7 +10426,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get guideMembershipItem1 =>
-      'Deine Basismitgliedschaft gibt dir Zugang zu allen Kernfunktionen: Swipen, Chatten und Verbinden.';
+      'Deine Basis-Mitgliedschaft gibt dir Zugang zu allen Kernfunktionen: Chatten, Verbinden, an Events teilnehmen und Erlebnisse buchen.';
 
   @override
   String get guideMembershipItem2 =>
@@ -22958,7 +22958,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get paidBusinessOnlyBody =>
-      'Kostenlose Events und Erlebnisse stehen allen offen. Um Geld für Tickets oder Buchungen zu verlangen, brauchst du ein aktives Unternehmenskonto (Platinum).';
+      'Kostenlose Events und Erlebnisse kann jeder veranstalten. Um Geld für Tickets oder Buchungen zu verlangen, brauchst du ein aktives Unternehmenskonto (Platinum).';
 
   @override
   String get paidBusinessPausedNote =>
@@ -24324,4 +24324,23 @@ class AppLocalizationsDe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get participationBaseRequiredTitle =>
+      'Basis-Mitgliedschaft erforderlich';
+
+  @override
+  String get participationBaseRequiredBody =>
+      'Um an Events teilzunehmen und Erlebnisse zu buchen, brauchst du eine Basis-Mitgliedschaft (oder Silver, Gold oder Platinum).';
+
+  @override
+  String get participationBaseRequiredCta => 'Basis-Mitgliedschaft holen';
+
+  @override
+  String get participationBaseRequiredHint =>
+      'Basis-Mitgliedschaft erforderlich';
+
+  @override
+  String get membershipBenefitJoinEvents =>
+      'An Events teilnehmen und Erlebnisse buchen';
 }

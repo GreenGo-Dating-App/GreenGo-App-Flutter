@@ -8797,7 +8797,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get shopBaseMembershipDescription =>
-      'Necessaria per scorrere, mettere like, chattare e interagire con altri utenti.';
+      'Necessario per chattare, partecipare agli eventi, prenotare esperienze e connetterti con altri membri.';
 
   @override
   String shopBonusCoins(Object bonus) {
@@ -10405,7 +10405,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get guideMembershipItem1 =>
-      'Il tuo abbonamento base ti dà accesso a tutte le funzioni principali: swipe, chat e connessioni.';
+      'Il tuo abbonamento base ti dà accesso a tutte le funzioni principali: chat, connessioni, partecipazione agli eventi e prenotazione di esperienze.';
 
   @override
   String get guideMembershipItem2 =>
@@ -22935,7 +22935,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get paidBusinessOnlyBody =>
-      'Eventi ed esperienze gratuiti sono aperti a tutti. Per far pagare biglietti o prenotazioni ti serve un account aziendale attivo (Platinum).';
+      'Chiunque può organizzare eventi ed esperienze gratuiti. Per far pagare biglietti o prenotazioni ti serve un account aziendale attivo (Platinum).';
 
   @override
   String get paidBusinessPausedNote =>
@@ -24297,4 +24297,21 @@ class AppLocalizationsIt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get participationBaseRequiredTitle => 'Serve l\'abbonamento base';
+
+  @override
+  String get participationBaseRequiredBody =>
+      'Per partecipare agli eventi e prenotare esperienze ti serve un abbonamento base (oppure Silver, Gold o Platinum).';
+
+  @override
+  String get participationBaseRequiredCta => 'Attiva l\'abbonamento base';
+
+  @override
+  String get participationBaseRequiredHint => 'Richiede l\'abbonamento base';
+
+  @override
+  String get membershipBenefitJoinEvents =>
+      'Partecipare agli eventi e prenotare esperienze';
 }

@@ -8848,7 +8848,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get shopBaseMembershipDescription =>
-      'Nécessaire pour swiper, liker, discuter et interagir avec d\'autres utilisateurs.';
+      'Nécessaire pour discuter, participer à des événements, réserver des expériences et te connecter avec d\'autres membres.';
 
   @override
   String shopBonusCoins(Object bonus) {
@@ -10460,7 +10460,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get guideMembershipItem1 =>
-      'Votre abonnement de base vous donne accès à toutes les fonctionnalités principales : swiper, discuter et vous connecter.';
+      'Ton abonnement de base te donne accès à toutes les fonctionnalités principales : discuter, te connecter, participer à des événements et réserver des expériences.';
 
   @override
   String get guideMembershipItem2 =>
@@ -23046,7 +23046,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get paidBusinessOnlyBody =>
-      'Les événements et expériences gratuits sont ouverts à tous. Pour faire payer des billets ou des réservations, il te faut un compte professionnel actif (Platinum).';
+      'Tout le monde peut organiser des événements et expériences gratuits. Pour faire payer des billets ou des réservations, il te faut un compte professionnel actif (Platinum).';
 
   @override
   String get paidBusinessPausedNote =>
@@ -24408,4 +24408,21 @@ class AppLocalizationsFr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get participationBaseRequiredTitle => 'Abonnement de base requis';
+
+  @override
+  String get participationBaseRequiredBody =>
+      'Pour participer à des événements et réserver des expériences, il te faut un abonnement de base (ou Silver, Gold ou Platinum).';
+
+  @override
+  String get participationBaseRequiredCta => 'Prendre l\'abonnement de base';
+
+  @override
+  String get participationBaseRequiredHint => 'Abonnement de base requis';
+
+  @override
+  String get membershipBenefitJoinEvents =>
+      'Participer à des événements et réserver des expériences';
 }

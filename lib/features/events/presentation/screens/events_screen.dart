@@ -22,7 +22,9 @@ import 'package:showcaseview/showcaseview.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/base_membership_gate.dart';
 import '../../../../core/utils/first_screen_gate.dart';
+import '../../../../core/widgets/base_membership_required_dialog.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/widgets/translatable_text.dart';
 import '../../../../core/di/injection_container.dart';
@@ -1808,7 +1810,16 @@ class _EventsScreenState extends State<EventsScreen>
     );
   }
 
-  void _handleRSVP(Event event, RSVPStatus status) {
+  Future<void> _handleRSVP(Event event, RSVPStatus status) async {
+    // Going / waitlist on someone else's event needs Base (owner rule
+    // 2026-10-11); 'interested' and the organizer's own RSVP never do.
+    if ((status == RSVPStatus.going || status == RSVPStatus.waitlist) &&
+        !event.isOwner(widget.currentUserId) &&
+        !await BaseMembershipGate.ensureCanParticipate(
+            context: context, userId: widget.currentUserId)) {
+      return;
+    }
+    if (!mounted) return;
     _eventsBloc.add(RsvpEvent(
       eventId: event.id,
       userId: widget.currentUserId,
@@ -3069,47 +3080,75 @@ class EventDetailsScreen extends StatelessWidget {
                   final organizer = event.isOwner(currentUserId);
                   final onSale = event.sellsTickets && !event.hasEnded;
                   return Expanded(
-                    child: ElevatedButton(
-                      key: const ValueKey('event-buy-ticket'),
-                      onPressed: organizer
-                          ? () => Navigator.of(context).push(GetPaidScreen.route(currentUserId))
-                          : (onSale
-                              ? () => BuyTicketSheet.show(context, event: event, uid: currentUserId)
-                              : null),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: AppColors.richGold,
-                        foregroundColor: AppColors.deepBlack,
-                        padding: const EdgeInsets.symmetric(vertical: 16),
-                      ),
-                      child: Text(
-                        organizer
-                            ? l10n.tpGetPaidTitle
-                            : (event.hasEnded
-                                ? l10n.eventsEnded
-                                : (onSale
-                                    ? (isGoing ? l10n.tpBuyMoreTickets : l10n.tpBuyTickets)
-                                    : l10n.tpNotOnSaleYet)),
-                        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                      ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        ElevatedButton(
+                          key: const ValueKey('event-buy-ticket'),
+                          onPressed: organizer
+                              ? () => Navigator.of(context).push(GetPaidScreen.route(currentUserId))
+                              : (onSale
+                                  ? () async {
+                                      // Base membership required to buy / claim
+                                      // tickets (createTicketCheckout refuses too).
+                                      if (!await BaseMembershipGate.ensureCanParticipate(
+                                              context: context, userId: currentUserId) ||
+                                          !context.mounted) {
+                                        return;
+                                      }
+                                      await BuyTicketSheet.show(context, event: event, uid: currentUserId);
+                                    }
+                                  : null),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: AppColors.richGold,
+                            foregroundColor: AppColors.deepBlack,
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                          ),
+                          child: Text(
+                            organizer
+                                ? l10n.tpGetPaidTitle
+                                : (event.hasEnded
+                                    ? l10n.eventsEnded
+                                    : (onSale
+                                        ? (isGoing ? l10n.tpBuyMoreTickets : l10n.tpBuyTickets)
+                                        : l10n.tpNotOnSaleYet)),
+                            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        // Lock hint for users without Base (button stays usable:
+                        // it opens the Base-membership upsell).
+                        if (!organizer && onSale)
+                          BaseMembershipRequiredHint(userId: currentUserId),
+                      ],
                     ),
                   );
                 }
                 return Expanded(
-                  child: ElevatedButton(
-                    onPressed:
-                        enabled ? () => _handleJoin(context, event) : null,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppColors.richGold,
-                      foregroundColor: AppColors.deepBlack,
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                    ),
-                    child: Text(
-                      label,
-                      style: const TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      ElevatedButton(
+                        key: const ValueKey('event-join'),
+                        onPressed:
+                            enabled ? () => _handleJoin(context, event) : null,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: AppColors.richGold,
+                          foregroundColor: AppColors.deepBlack,
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                        ),
+                        child: Text(
+                          label,
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
-                    ),
+                      if (enabled && !event.isOwner(currentUserId))
+                        BaseMembershipRequiredHint(userId: currentUserId),
+                    ],
                   ),
                 );
               }),
@@ -3131,6 +3170,15 @@ class EventDetailsScreen extends StatelessWidget {
     final ds = sl<EventsRemoteDataSource>();
 
     final cost = event.isFree ? 0 : (event.price ?? 0).round();
+
+    // Base membership required to join someone else's event (owner rule
+    // 2026-10-11; the Firestore rules refuse it too).
+    if (!event.isOwner(currentUserId) &&
+        !await BaseMembershipGate.ensureCanParticipate(
+            context: context, userId: currentUserId)) {
+      return;
+    }
+    if (!context.mounted) return;
 
     // Pre-check affordability for paid joins so we rarely have to roll back.
     if (cost > 0) {
@@ -3154,6 +3202,12 @@ class EventDetailsScreen extends StatelessWidget {
         userId: currentUserId,
       );
     } catch (e) {
+      // Refused for lack of Base (stale local state): the upsell, not an error.
+      if (context.mounted &&
+          await BaseMembershipGate.handleParticipationError(context,
+              userId: currentUserId, error: e)) {
+        return;
+      }
       reportUserError(e);
       if (context.mounted) {
         unawaited(showUserErrorMessage(context, l10n.eventsRsvpError));

@@ -468,6 +468,21 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
                   color: tierColor,
                 ),
               ),
+            if (isBase) ...[
+              const SizedBox(height: 8),
+              // Base unlocks joining events and booking experiences (owner
+              // rule 2026-10-11).
+              Row(children: [
+                Icon(Icons.event_available, size: 16, color: tierColor),
+                const SizedBox(width: 6),
+                Expanded(
+                  child: Text(
+                    l10n.membershipBenefitJoinEvents,
+                    style: const TextStyle(fontSize: 13, color: Colors.white70),
+                  ),
+                ),
+              ]),
+            ],
             if (ProductCatalog.hasSevenDayFreeTrial(product)) ...[
               const SizedBox(height: 6),
               Text(

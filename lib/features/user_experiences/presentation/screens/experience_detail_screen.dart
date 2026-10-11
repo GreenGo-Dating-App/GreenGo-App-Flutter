@@ -5,6 +5,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../../../core/utils/base_membership_gate.dart';
+import '../../../../core/widgets/base_membership_required_dialog.dart';
 import '../../../../core/widgets/zoom_photo_viewer.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
@@ -139,6 +141,14 @@ class _DetailViewState extends State<_DetailView> {
   /// Book a date (bookings) — or, for a listing without dates, the earlier
   /// direct pay flow.
   Future<void> _book(UserExperience e) async {
+    // Booking an experience needs Base (owner rule 2026-10-11): consents and
+    // createBooking are refused server-side too. The host never books here.
+    if (e.hostId != widget.currentUserId &&
+        !await BaseMembershipGate.ensureCanParticipate(
+            context: context, userId: widget.currentUserId)) {
+      return;
+    }
+    if (!mounted) return;
     if (!_hasSlots) return _pay(e);
     await Navigator.of(context).push(BookExperienceScreen.route(
         experience: e,
@@ -209,7 +219,13 @@ class _DetailViewState extends State<_DetailView> {
         );
     if (!mounted) return;
     if (saved.isLeft()) {
-      unawaited(showUserError(context, saved.fold((f) => f, (_) => null)));
+      final f = saved.fold((f) => f, (_) => null);
+      if (await BaseMembershipGate.handleParticipationError(context,
+              userId: widget.currentUserId, error: f) ||
+          !mounted) {
+        return;
+      }
+      unawaited(showUserError(context, f));
       return;
     }
     if (method == PaymentMethod.cash) {
@@ -710,6 +726,9 @@ class _DetailViewState extends State<_DetailView> {
                     : Icons.open_in_new),
             onPay: () => _book(e),
           ),
+          // Lock hint for users without Base (the button stays usable and
+          // opens the Base-membership upsell).
+          if (canBook) BaseMembershipRequiredHint(userId: widget.currentUserId),
           if (_slots != null && (!isHost || _hasSlots)) ...[
             const SizedBox(height: 8),
             Row(children: [

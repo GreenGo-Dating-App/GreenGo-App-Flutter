@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 
 import '../../../../core/error/exceptions.dart';
+import '../../../../core/services/effective_tier.dart';
 import '../../../../core/utils/display_image.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../domain/entities/event.dart';
@@ -773,46 +774,20 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
             .toList()
           ..sort((a, b) =>
               _tsCompare(a.data()['rsvpDate'], b.data()['rsvpDate']));
-        if (sameTier.isNotEmpty) promoteRef = sameTier.first.reference;
+        promoteRef = await _firstEligibleForPromotion(sameTier);
       }
 
-      await _firestore.runTransaction((tx) async {
-        final eventSnap = await tx.get(eventRef);
-        final data = eventSnap.data() ?? {};
-        final attendeeCount = (data['attendeeCount'] as num?)?.toInt() ?? 0;
-        final tierCounts =
-            Map<String, dynamic>.from(data['tierGoingCounts'] as Map? ?? {});
-        final tierGoing =
-            tierId != null ? ((tierCounts[tierId] as num?)?.toInt() ?? 0) : 0;
-
-        // Re-read the promotion candidate inside the transaction.
-        DocumentSnapshot<Map<String, dynamic>>? promoSnap;
-        if (promoteRef != null) promoSnap = await tx.get(promoteRef);
-
-        // Reads done — now writes. Remove the cancelling RSVP.
-        tx.delete(attendeeRef);
-
-        var newCount = attendeeCount;
-        var newTierGoing = tierGoing;
-        if (wasGoing) {
-          newCount = attendeeCount > 0 ? attendeeCount - 1 : 0;
-          newTierGoing = tierGoing > 0 ? tierGoing - 1 : 0;
-        }
-
-        // Auto-promote the oldest still-waitlisted attendee into the freed slot.
-        if (promoSnap != null &&
-            promoSnap.exists &&
-            (promoSnap.data()?['status'] as String?) ==
-                RSVPStatus.waitlist.name) {
-          tx.update(promoSnap.reference, {'status': RSVPStatus.going.name});
-          newCount += 1;
-          newTierGoing += 1;
-        }
-
-        final update = <String, dynamic>{'attendeeCount': newCount};
-        if (tierId != null) update['tierGoingCounts.$tierId'] = newTierGoing;
-        tx.update(eventRef, update);
-      });
+      try {
+        await _cancelAndPromote(
+            eventRef, attendeeRef, wasGoing, tierId, promoteRef);
+      } on FirebaseException catch (e) {
+        // The rules refuse promoting someone without Base (owner rule
+        // 2026-10-11). Their membership may have lapsed since the check
+        // above: cancelling must never fail because of it, so cancel again
+        // without promoting anyone.
+        if (promoteRef == null || e.code != 'permission-denied') rethrow;
+        await _cancelAndPromote(eventRef, attendeeRef, wasGoing, tierId, null);
+      }
       // The promoted attendee (another user) may be memoised too.
       invalidateUserEvents();
       debugPrint('RSVP cancelled + promotion run: $userId -> $eventId');
@@ -820,6 +795,70 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       debugPrint('Error cancelling RSVP with promotion: $e');
       throw ServerException('Failed to cancel RSVP: $e');
     }
+  }
+
+  /// The oldest waitlisted attendee of [ordered] who may take a seat: only
+  /// Base members (or an active paid tier) are promoted - the same rule the
+  /// Firestore rules apply (canParticipate). Users without one are skipped
+  /// and keep their waitlist place until they get a membership. Bounded:
+  /// at most the first 10 candidates are checked.
+  Future<DocumentReference<Map<String, dynamic>>?> _firstEligibleForPromotion(
+      List<QueryDocumentSnapshot<Map<String, dynamic>>> ordered) async {
+    for (final d in ordered.take(10)) {
+      try {
+        final p = await _firestore.collection('profiles').doc(d.id).get();
+        if (canParticipateFromDoc(p.data())) return d.reference;
+      } catch (e) {
+        debugPrint('Promotion candidate ${d.id} not checked: $e');
+      }
+    }
+    return null;
+  }
+
+  Future<void> _cancelAndPromote(
+    DocumentReference<Map<String, dynamic>> eventRef,
+    DocumentReference<Map<String, dynamic>> attendeeRef,
+    bool wasGoing,
+    String? tierId,
+    DocumentReference<Map<String, dynamic>>? promoteRef,
+  ) async {
+    await _firestore.runTransaction((tx) async {
+      final eventSnap = await tx.get(eventRef);
+      final data = eventSnap.data() ?? {};
+      final attendeeCount = (data['attendeeCount'] as num?)?.toInt() ?? 0;
+      final tierCounts =
+          Map<String, dynamic>.from(data['tierGoingCounts'] as Map? ?? {});
+      final tierGoing =
+          tierId != null ? ((tierCounts[tierId] as num?)?.toInt() ?? 0) : 0;
+
+      // Re-read the promotion candidate inside the transaction.
+      DocumentSnapshot<Map<String, dynamic>>? promoSnap;
+      if (promoteRef != null) promoSnap = await tx.get(promoteRef);
+
+      // Reads done — now writes. Remove the cancelling RSVP.
+      tx.delete(attendeeRef);
+
+      var newCount = attendeeCount;
+      var newTierGoing = tierGoing;
+      if (wasGoing) {
+        newCount = attendeeCount > 0 ? attendeeCount - 1 : 0;
+        newTierGoing = tierGoing > 0 ? tierGoing - 1 : 0;
+      }
+
+      // Auto-promote the oldest still-waitlisted attendee into the freed slot.
+      if (promoSnap != null &&
+          promoSnap.exists &&
+          (promoSnap.data()?['status'] as String?) ==
+              RSVPStatus.waitlist.name) {
+        tx.update(promoSnap.reference, {'status': RSVPStatus.going.name});
+        newCount += 1;
+        newTierGoing += 1;
+      }
+
+      final update = <String, dynamic>{'attendeeCount': newCount};
+      if (tierId != null) update['tierGoingCounts.$tierId'] = newTierGoing;
+      tx.update(eventRef, update);
+    });
   }
 
   @override
