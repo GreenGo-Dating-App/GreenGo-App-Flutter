@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/security/viewer_watermark.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/utils/compact_count.dart';
 import '../../../../core/utils/first_screen_gate.dart';
@@ -671,7 +672,8 @@ class _ExperiencePhotoViewerState extends State<ExperiencePhotoViewer> {
             minScale: 1,
             maxScale: 5,
             child: Center(
-              child: CachedNetworkImage(
+              child: ViewerWatermark.zoomed(
+                child: CachedNetworkImage(
                 imageUrl: widget.urls[i],
                 fit: BoxFit.contain,
                 placeholder: (_, __) => const SizedBox(
@@ -684,6 +686,7 @@ class _ExperiencePhotoViewerState extends State<ExperiencePhotoViewer> {
                     Icons.broken_image_outlined,
                     color: AppColors.textTertiary,
                     size: 48),
+                ),
               ),
             ),
           ),

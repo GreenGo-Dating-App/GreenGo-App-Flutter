@@ -1599,9 +1599,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       onTap: () => _openPhotoFullscreen(context, photoUrl, privatePhotos.cast<String>(), index),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(12),
-                        child: ViewerWatermark.media(
-                          isPrivate: true,
-                          child: CachedNetworkImage(
+                        child: CachedNetworkImage(
                           imageUrl: photoUrl,
                           // Signed URLs change on every fetch: cache by object.
                           cacheKey: stableMediaCacheKey(photoUrl),
@@ -1619,7 +1617,6 @@ class _ChatScreenState extends State<ChatScreen> {
                               ),
                             );
                           },
-                        ),
                         ),
                       ),
                     );
@@ -1669,8 +1666,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 child: InteractiveViewer(
                   minScale: 0.5,
                   maxScale: 3.0,
-                  child: ViewerWatermark.media(
-                    isPrivate: true,
+                  child: ViewerWatermark.zoomed(
                     child: CachedNetworkImage(
                     imageUrl: photoUrl,
                     cacheKey: stableMediaCacheKey(photoUrl),

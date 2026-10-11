@@ -1437,8 +1437,7 @@ class _MessageBubbleState extends State<MessageBubble> {
               // Full-screen viewer: full resolution, but disk-cached.
               // Chat media is private: stamped with the VIEWER's id so a
               // leaked capture is traceable.
-              child: ViewerWatermark.media(
-                isPrivate: true,
+              child: ViewerWatermark.zoomed(
                 child: CachedNetworkImage(
                   imageUrl: imageUrl,
                   fit: BoxFit.contain,

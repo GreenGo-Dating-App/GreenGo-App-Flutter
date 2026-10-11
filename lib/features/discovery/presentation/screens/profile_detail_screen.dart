@@ -38,7 +38,6 @@ import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/entities/swipe_action.dart';
 import '../widgets/swipe_buttons.dart';
-import '../../../../core/security/viewer_watermark.dart';
 
 /// Profile Detail Screen
 ///
@@ -1036,11 +1035,9 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
             itemCount: widget.profile.photoUrls.length,
             itemBuilder: (context, index) {
               // Full-width hero: decoded at ~screen width, disk-cached.
-              // Web only: stamped with the viewer's id (a browser cannot
-              // block screenshots; the apps do).
-              return ViewerWatermark.media(
-                isPrivate: false,
-                child: CachedNetworkImage(
+              // No watermark here: the GreenGo mark is only shown on photos
+              // opened full screen / zoomed in (ViewerWatermark.zoomed).
+              return CachedNetworkImage(
                 imageUrl: widget.profile.photoUrls[index],
                 fit: BoxFit.cover,
                 // Wide screens crop top/bottom; bias towards the upper part
@@ -1050,7 +1047,6 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                     : Alignment.center,
                 memCacheWidth: 1080,
                 errorWidget: (context, url, error) => _buildPhotoPlaceholder(),
-                ),
               );
             },
           ),

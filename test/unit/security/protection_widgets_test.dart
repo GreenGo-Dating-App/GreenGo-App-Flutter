@@ -90,11 +90,13 @@ void main() {
   });
 
   group('ViewerWatermark', () {
-    test('policy: private media everywhere, all photos on web', () {
-      expect(shouldWatermarkMedia(isPrivate: true, isWeb: false), isTrue);
-      expect(shouldWatermarkMedia(isPrivate: true, isWeb: true), isTrue);
-      expect(shouldWatermarkMedia(isPrivate: false, isWeb: true), isTrue);
-      expect(shouldWatermarkMedia(isPrivate: false, isWeb: false), isFalse);
+    testWidgets('zoomed: the full-screen viewer always shows the mark',
+        (tester) async {
+      await tester.pumpWidget(_app(const ViewerWatermark.zoomed(
+        child: SizedBox(width: 300, height: 300),
+      )));
+      expect(find.byKey(const ValueKey('viewerWatermark')), findsOneWidget);
+      expect(find.text(kWatermarkBrand), findsOneWidget);
     });
 
     test('label names the viewer', () {
