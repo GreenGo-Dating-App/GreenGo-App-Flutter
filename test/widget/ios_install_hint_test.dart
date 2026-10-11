@@ -44,6 +44,12 @@ void main() {
     expect(find.byKey(const ValueKey('ios-install-banner')), findsNothing);
   });
 
+  test('guide link is localized and opens the iPhone section', () {
+    expect(iosInstallGuideUri(const Locale('it')).toString(), 'https://greengochat.com/how-to?lang=it#ios');
+    expect(iosInstallGuideUri(const Locale('pt', 'BR')).toString(), 'https://greengochat.com/how-to?lang=pt#ios');
+    expect(iosInstallGuideUri(const Locale('ja')).toString(), 'https://greengochat.com/how-to?lang=en#ios');
+  });
+
   testWidgets('no banner when not eligible', (tester) async {
     SharedPreferences.setMockInitialValues({});
     iosInstallHintEligible = () => false;

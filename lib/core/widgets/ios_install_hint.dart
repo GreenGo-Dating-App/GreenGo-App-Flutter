@@ -14,8 +14,16 @@ const String kIosInstallGuideUrl = 'https://greengochat.com/how-to';
 /// installed). Overridable in tests.
 bool Function() iosInstallHintEligible = isIosBrowserNotInstalled;
 
-Future<void> openIosInstallGuide() => launchUrl(
-      Uri.parse(kIosInstallGuideUrl),
+/// The guide in the user's language, opened at the iPhone / iPad section:
+/// `?lang=en|pt|es|fr|de|it` (pt = Brazilian Portuguese) + `#ios`.
+Uri iosInstallGuideUri(Locale locale) {
+  const supported = {'en', 'pt', 'es', 'fr', 'de', 'it'};
+  final lang = supported.contains(locale.languageCode) ? locale.languageCode : 'en';
+  return Uri.parse('$kIosInstallGuideUrl?lang=$lang#ios');
+}
+
+Future<void> openIosInstallGuide(BuildContext context) => launchUrl(
+      iosInstallGuideUri(Localizations.localeOf(context)),
       mode: LaunchMode.externalApplication,
     );
 
@@ -30,7 +38,7 @@ class IosInstallLink extends StatelessWidget {
     final l10n = AppLocalizations.of(context)!;
     return TextButton.icon(
       key: const ValueKey('ios-install-link'),
-      onPressed: openIosInstallGuide,
+      onPressed: () => openIosInstallGuide(context),
       style: TextButton.styleFrom(
         foregroundColor: AppColors.textSecondary,
         minimumSize: const Size(44, 44),
@@ -79,7 +87,7 @@ class IosInstallBanner {
           TextButton(
             onPressed: () async {
               await dismiss();
-              await openIosInstallGuide();
+              if (context.mounted) await openIosInstallGuide(context);
             },
             child: Text(l10n.iosInstallShowMe,
                 style: const TextStyle(color: AppColors.richGold)),
