@@ -132,12 +132,24 @@ service cloud.firestore {
     function usagePath(uid) {
       return /databases/$(database)/documents/entitlement_usage/$(uid);
     }
-    // "Base membership required to chat": an active Base, an active paid tier
-    // or TEST (Profile.isBaseMembershipActive in the app).
-    function canChat(uid) {
+    // "Base or better": an active Base, an active paid tier or TEST
+    // (Profile.isBaseMembershipActive in the app, hasBaseAccess() in
+    // functions/src/shared/effectiveTier.ts). The ONE rules predicate behind
+    // canChat and canParticipate.
+    function baseAccess(uid) {
       return exists(profilePath(uid))
         && (tierRankOf(get(profilePath(uid)).data) > 0
             || baseMembershipActive(get(profilePath(uid)).data));
+    }
+    // "Base membership required to chat" (audit P-H2).
+    function canChat(uid) {
+      return baseAccess(uid);
+    }
+    // "Base membership required to participate" (owner rule 2026-10-11):
+    // going / waitlist on someone else's event, booking consents. Server
+    // callables use functions/src/shared/participation.ts.
+    function canParticipate(uid) {
+      return baseAccess(uid);
     }
     // Caps per rank (-1 = unlimited) = tierLimits.ts / TierEntitlements.
     function tierCapConnects(r) { return r == 0 ? 10 : r == 1 ? 50 : r == 2 ? 200 : -1; }
@@ -2262,6 +2274,22 @@ service cloud.firestore {
         // On a paid event nobody admits THEMSELVES: 'going' (or a waitlist
         // place) comes only with a confirmed ticket. The organizer may still
         // add people to the roster (comps) - they get no paid ticket / QR.
+        // Owner rule (2026-10-11): becoming 'going' / 'waitlist' (any status
+        // other than 'interested' / 'notGoing') needs Base or an active paid
+        // tier. Organizers / co-owners are exempt (their own event: their own
+        // attendance and comps). A status that does not CHANGE is not a new
+        // participation: existing attendees keep their place and may still
+        // edit their privacy flags.
+        function participates(d) {
+          return !(d.get('status', '') in ['interested', 'notGoing']);
+        }
+        function participationAllowed() {
+          return parentOrganizer()
+            || !participates(request.resource.data)
+            || (resource != null
+                && resource.data.get('status', '') == request.resource.data.get('status', ''))
+            || canParticipate(request.auth.uid);
+        }
         function selfAdmitsOnPaid() {
           return request.auth.uid == uid && !parentOrganizer() && paidEvent()
             && request.resource.data.get('status', '') in ['going', 'waitlist'];
@@ -2290,10 +2318,12 @@ service cloud.firestore {
           && !('checkInMethod' in request.resource.data)
           && !('ticketId' in request.resource.data)
           && !('ticketStatus' in request.resource.data)
-          && !('paidAt' in request.resource.data);
+          && !('paidAt' in request.resource.data)
+          && participationAllowed();
           // TIGHTEN LATER: && !selfAdmitsOnPaid()
         allow update: if isSignedIn()
           && (request.auth.uid == uid || parentOrganizer())
+          && participationAllowed()
           && !touchesCheckIn()
           && !touchesTicket();
           // TIGHTEN LATER: no self going / waitlist and frozen guestCount on paid events.
@@ -2307,6 +2337,9 @@ service cloud.firestore {
         allow update: if isSignedIn()
           && resource.data.status == 'waitlist'
           && request.resource.data.status == 'going'
+          // Only a Base (or paid-tier) member is promoted into a seat; the app
+          // skips waitlisted users without one (owner rule 2026-10-11).
+          && canParticipate(uid)
           // TIGHTEN LATER: && !paidEvent()
           && !touchesCheckIn()
           && !touchesTicket();
@@ -2795,7 +2828,10 @@ service cloud.firestore {
           && request.resource.data.version is int
           && request.resource.data.version >= 1
           && request.resource.data.version <= 100
-          && request.resource.data.experienceId == experienceId;
+          && request.resource.data.experienceId == experienceId
+          // Booking an experience needs Base or an active paid tier (owner
+          // rule 2026-10-11; createBooking enforces it again server-side).
+          && canParticipate(request.auth.uid);
         allow update, delete: if false;
       }
 

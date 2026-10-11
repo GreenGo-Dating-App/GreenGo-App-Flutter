@@ -19,6 +19,7 @@ import * as crypto from 'crypto';
 import { HttpsError, FunctionsErrorCode } from 'firebase-functions/v2/https';
 import '../shared/firebaseAdmin';
 import { isBusinessActive, tierDateFromValue } from '../shared/effectiveTier';
+import { assertCanParticipate } from '../shared/participation';
 import { emitNotification, resolveActor, Actor } from '../notifications/notifyHelpers';
 import { LText, lt, rawText } from '../shared/i18n';
 import { recordMeeting } from '../checkin/meetings';
@@ -572,6 +573,9 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
     if (susp.exists && susp.data()?.active !== false) fail('failed-precondition', 'host_unavailable');
     const guest = guestP.data() ?? null;
     if (!guestP.exists || isBannedProfile(guest)) fail('permission-denied', 'account_restricted');
+    // Owner rule: booking an experience (any payment mode, free included)
+    // needs Base or an active paid tier (shared/participation.ts).
+    assertCanParticipate(guest, new Date(now));
     if (idDocumentStateOf(guest) === 'none') fail('failed-precondition', 'id_document_required');
 
     const sizeErr = groupSizeError(e, guests);

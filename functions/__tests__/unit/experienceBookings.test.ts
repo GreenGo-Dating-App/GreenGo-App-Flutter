@@ -249,6 +249,8 @@ const saved = { ...svc.bookingDeps };
 const HOST = 'host1';
 // Paid bookings need an ACTIVE business host (isBusiness + Platinum).
 const HOST_BIZ = { isBusiness: true, membershipTier: 'PLATINUM', membershipEndDate: new Date('2100-01-01T00:00:00Z') };
+// Guests need Base (or an active paid tier) to book (owner rule 2026-10-11).
+const BASE = { hasBaseMembership: true, baseMembershipEndDate: new Date('2100-01-01T00:00:00Z') };
 const GUEST = 'guest1';
 const GUEST2 = 'guest2';
 const ADMIN = 'admin1';
@@ -259,8 +261,8 @@ const rid = () => `req_${String(++reqN).padStart(6, '0')}`;
 
 function seedWorld(opts: { exp?: Record<string, any>; slot?: Record<string, any> } = {}) {
   db.seed(`profiles/${HOST}`, { ...HOST_BIZ, isAgeVerified: true, displayName: 'Host' });
-  db.seed(`profiles/${GUEST}`, { ageVerification: { status: 'pending' } });
-  db.seed(`profiles/${GUEST2}`, { isAgeVerified: true });
+  db.seed(`profiles/${GUEST}`, { ...BASE, ageVerification: { status: 'pending' } });
+  db.seed(`profiles/${GUEST2}`, { ...BASE, isAgeVerified: true });
   db.seed(`admin_users/${ADMIN}`, { role: 'admin' });
   db.seed(`user_experiences/${EXP}`, {
     hostId: HOST, status: 'published', title: 'Samba night', price: 19.99, currency: 'EUR',
@@ -336,6 +338,25 @@ describe('createBooking', () => {
     expect(sent.map((s) => s.type).sort()).toEqual(['booking_accepted', 'booking_request']);
   });
 
+  test('Base membership required: free / expired refused, Base and active paid tier allowed (free experience too)', async () => {
+    seedWorld({ exp: { isFree: true, price: 0, currency: null, paymentMethods: null, paymentLink: null }, slot: { capacity: 10 } });
+    db.seed(`profiles/${GUEST2}`, { isAgeVerified: true });
+    await expectCode(request(GUEST2), 'base_membership_required');
+    db.seed(`profiles/${GUEST2}`, { isAgeVerified: true, hasBaseMembership: true, baseMembershipEndDate: new Date(T0 - D) });
+    await expectCode(request(GUEST2), 'base_membership_required');
+    db.seed(`profiles/${GUEST2}`, { isAgeVerified: true, membershipTier: 'GOLD', membershipEndDate: new Date(T0 - D) });
+    await expectCode(request(GUEST2), 'base_membership_required');
+    expect(slot().bookedCount).toBe(0);
+    db.seed(`profiles/${GUEST2}`, { isAgeVerified: true, membershipTier: 'SILVER', membershipEndDate: new Date(T0 + D) });
+    const silver: any = await request(GUEST2);
+    expect(silver.status).toBe('requested');
+    // Cancelling an existing participation is never gated.
+    db.seed(`profiles/${GUEST2}`, { isAgeVerified: true });
+    await svc.cancelBooking(GUEST2, { bookingId: silver.bookingId });
+    db.seed('profiles/guest5', { isAgeVerified: true, membershipTier: 'TEST' });
+    expect((await request('guest5')).status).toBe('requested');
+  });
+
   test('cash chosen; both methods require an explicit choice', async () => {
     seedWorld();
     const r: any = await book(GUEST, { paymentMethod: 'cash' });
@@ -361,11 +382,11 @@ describe('createBooking', () => {
     await book(GUEST);
     await expectCode(book(GUEST), 'already_booked');
 
-    db.seed(`profiles/${GUEST2}`, {});
+    db.seed(`profiles/${GUEST2}`, { ...BASE });
     db.seed(`user_experiences/${EXP}/slots/${SLOT}`, { start: ts(T0 + D * 10), end: ts(T0 + D * 10 + H), capacity: 9, bookedCount: 0, status: 'open' });
     await expectCode(book(GUEST2), 'id_document_required');
 
-    db.seed(`profiles/${GUEST2}`, { isAgeVerified: true });
+    db.seed(`profiles/${GUEST2}`, { ...BASE, isAgeVerified: true });
     db.seed(`profiles/${HOST}`, { ...HOST_BIZ, ageVerification: { status: 'pending' } });
     await expectCode(book(GUEST2), 'host_not_verified');
     db.seed(`profiles/${HOST}`, { ...HOST_BIZ, isAgeVerified: true });
@@ -496,7 +517,7 @@ describe('cancelBooking', () => {
   test('3 host cancellations in 90 days -> host_flags + admins notified', async () => {
     seedWorld({ slot: { capacity: 10 } });
     for (const g of ['ga', 'gb', 'gc']) {
-      db.seed(`profiles/${g}`, { isAgeVerified: true });
+      db.seed(`profiles/${g}`, { ...BASE, isAgeVerified: true });
       const r: any = await book(g);
       await svc.cancelBooking(HOST, { bookingId: r.bookingId });
     }
@@ -530,10 +551,10 @@ describe('private time slots (one user per time, host never double-booked)', () 
     const b: any = await request(GUEST2, { startAt: W });
     expect(booking(b.bookingId).slotEnd).toEqual(ts(W + H));
     // no start sent (older app): first free time
-    db.seed(`profiles/guest3`, { isAgeVerified: true });
+    db.seed(`profiles/guest3`, { ...BASE, isAgeVerified: true });
     const c: any = await request('guest3');
     expect(booking(c.bookingId).slotStart).toEqual(ts(W + 2 * H));
-    db.seed(`profiles/guest4`, { isAgeVerified: true });
+    db.seed(`profiles/guest4`, { ...BASE, isAgeVerified: true });
     await expectCode(request('guest4'), 'time_taken');
   });
 

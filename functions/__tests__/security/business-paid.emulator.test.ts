@@ -120,7 +120,7 @@ beforeEach(async () => {
   await db.doc(`profiles/${LAPSED}`).set({
     displayName: 'Lapsed', isBusiness: true, membershipTier: 'PLATINUM', membershipEndDate: past(), ...idDoc,
   });
-  await db.doc(`profiles/${BUYER}`).set({ displayName: 'Buyer' });
+  await db.doc(`profiles/${BUYER}`).set({ displayName: 'Buyer', hasBaseMembership: true, baseMembershipEndDate: future() });
 });
 afterAll(() => fft.cleanup());
 

@@ -162,3 +162,20 @@ export function tierRank(tier: unknown): number {
 export function isBaseProductId(productId: unknown): boolean {
   return typeof productId === 'string' && BASE_PRODUCT_IDS.includes(productId);
 }
+
+/**
+ * "Base or better": an active Base membership, an active SILVER / GOLD /
+ * PLATINUM (effective tier) or TEST. THE single server predicate behind
+ *   - 1:1 messaging (audit P-H2; rules `canChat`), and
+ *   - participation in events / experiences (owner rule 2026-10-11: going /
+ *     waitlist RSVPs, ticket checkouts, experience bookings; rules
+ *     `canParticipate`, see shared/participation.ts).
+ * Mirrors `Profile.isBaseMembershipActive` / `isBaseMembershipActiveFromDoc`
+ * in the app and `baseAccess()` in firestore(.additive).rules.
+ */
+export function hasBaseAccess(
+  profile: Record<string, any> | null | undefined,
+  now: Date = new Date(),
+): boolean {
+  return effectiveTier(profile, now) !== 'FREE' || isBaseMembershipActive(profile, now);
+}

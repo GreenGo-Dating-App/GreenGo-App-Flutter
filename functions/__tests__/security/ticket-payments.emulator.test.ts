@@ -118,8 +118,11 @@ async function seedProfiles() {
     displayName: 'Org', paymentLinks: { pix: 'org@pix.example', paypal: 'https://paypal.me/org' },
     isBusiness: true, membershipTier: 'PLATINUM', membershipEndDate: TS.fromMillis(Date.now() + 365 * 24 * HOUR),
   });
-  await db.doc(`profiles/${BUYER}`).set({ displayName: 'Buyer', photoUrls: ['https://x/b.jpg'] });
-  await db.doc(`profiles/${OTHER}`).set({ displayName: 'Other' });
+  // Buyers need Base (or an active paid tier) to join events (owner rule
+  // 2026-10-11; participation-base.emulator.test.ts covers the refusals).
+  const base = { hasBaseMembership: true, baseMembershipEndDate: TS.fromMillis(Date.now() + 365 * 24 * HOUR) };
+  await db.doc(`profiles/${BUYER}`).set({ displayName: 'Buyer', photoUrls: ['https://x/b.jpg'], ...base });
+  await db.doc(`profiles/${OTHER}`).set({ displayName: 'Other', ...base });
 }
 async function connectStripe() {
   await db.doc(`payment_accounts/${ORG}`).set({ uid: ORG, stripe: { accountId: 'acct_org', chargesEnabled: true, detailsSubmitted: true, status: 'ready', country: 'BR' } });

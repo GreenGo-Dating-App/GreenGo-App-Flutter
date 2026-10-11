@@ -58,6 +58,7 @@ import { CheckoutInput, publicImage, whenText } from './checkoutPayload';
 import { emitNotification } from '../notifications/notifyHelpers';
 import { lt, rawText } from '../shared/i18n';
 import { isBusinessActive } from '../shared/effectiveTier';
+import { assertCanParticipate } from '../shared/participation';
 
 const db = () => admin.firestore();
 const ts = (ms: number) => admin.firestore.Timestamp.fromMillis(ms);
@@ -257,6 +258,9 @@ export async function createTicketCheckout(uid: string, data: any, email: string
       tx.get(openQ),
       ...typeRefs.map((r) => tx.get(r)),
     ]) as any[];
+    // Owner rule: joining an event needs Base (or an active paid tier). Read
+    // in the transaction so a lapsed membership cannot slip through.
+    const buyerSnap = kind === 'event' ? await tx.get(db().collection('profiles').doc(uid)) : null;
     if (!lSnap.exists) fail('not-found', 'listing_not_found');
     const l = lSnap.data() as Record<string, any>;
 
@@ -298,6 +302,9 @@ export async function createTicketCheckout(uid: string, data: any, email: string
       const end = msOf(l.endDate) ?? msOf(l.startDate);
       if (end !== null && end < t0) fail('failed-precondition', 'listing_ended');
       if (l.organizerId === uid) fail('failed-precondition', 'own_listing');
+      // Base membership required to participate (shared/participation.ts).
+      // Experiences are gated at createBooking; paying an existing booking is not.
+      assertCanParticipate(buyerSnap?.data(), new Date(t0));
       const currency = isoCurrency(l.currencyCode, l.currency);
       if (!currency) fail('failed-precondition', 'currency_missing');
       const place = [l.locationName, l.address, l.city].filter((x) => typeof x === 'string' && x.trim()).join(', ');
