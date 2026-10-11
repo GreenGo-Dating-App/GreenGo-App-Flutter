@@ -46,7 +46,7 @@ describe('parseSharePath', () => {
     expect(parseSharePath('/og/u/uid123.jpg')).toEqual({ isImage: true, kind: 'u', id: 'uid123' });
   });
   it('rejects unknown kinds and malformed ids', () => {
-    expect(parseSharePath('/x/abc')).toBeNull();
+    expect(parseSharePath('/z/abc')).toBeNull();
     expect(parseSharePath('/u/')).toBeNull();
     expect(parseSharePath('/u/a%20b')).toBeNull();
     expect(parseSharePath('/u/%E0%A4%A')).toBeNull();

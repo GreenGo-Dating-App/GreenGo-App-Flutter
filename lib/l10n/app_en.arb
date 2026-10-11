@@ -12807,5 +12807,112 @@
   "legalUpdateDisagreeHint": "If you don't agree, you can sign out. You can also delete your account at any time.",
   "@legalUpdateDisagreeHint": {
     "description": "Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)"
+  },
+  "sharePreviewByHost": "by {name}",
+  "@sharePreviewByHost": {
+    "description": "Link preview card (sharePreview Cloud Function) / share action",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "sharePreviewHours": "{hours} h",
+  "@sharePreviewHours": {
+    "description": "Link preview card (sharePreview Cloud Function) / share action",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "sharePreviewMinutes": "{minutes} min",
+  "@sharePreviewMinutes": {
+    "description": "Link preview card (sharePreview Cloud Function) / share action",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "sharePreviewGoing": "{count} going",
+  "@sharePreviewGoing": {
+    "description": "Link preview card (sharePreview Cloud Function) / share action",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "sharePreviewMembers": "{count, plural, =1{1 member} other{{count} members}}",
+  "@sharePreviewMembers": {
+    "description": "Link preview card (sharePreview Cloud Function) / share action",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "sharePreviewEventTitle": "Event on GreenGo",
+  "@sharePreviewEventTitle": {
+    "description": "Link preview card (sharePreview Cloud Function) / share action"
+  },
+  "sharePreviewCommunityTitle": "Community on GreenGo",
+  "@sharePreviewCommunityTitle": {
+    "description": "Link preview card (sharePreview Cloud Function) / share action"
+  },
+  "sharePreviewExperienceTitle": "Experience on GreenGo",
+  "@sharePreviewExperienceTitle": {
+    "description": "Link preview card (sharePreview Cloud Function) / share action"
+  },
+  "sharePreviewAttractionTitle": "Attraction on GreenGo",
+  "@sharePreviewAttractionTitle": {
+    "description": "Link preview card (sharePreview Cloud Function) / share action"
+  },
+  "sharePreviewGenericDescription": "Discover people, cultures, events and communities around the world.",
+  "@sharePreviewGenericDescription": {
+    "description": "Link preview card (sharePreview Cloud Function) / share action"
+  },
+  "sharePreviewConnectWith": "Connect with {name} on GreenGo — meet people and cultures from around the world.",
+  "@sharePreviewConnectWith": {
+    "description": "Link preview card (sharePreview Cloud Function) / share action",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "sharePreviewOpenApp": "Open in GreenGo",
+  "@sharePreviewOpenApp": {
+    "description": "Link preview card (sharePreview Cloud Function) / share action"
+  },
+  "sharePreviewOpenWeb": "Open on the web",
+  "@sharePreviewOpenWeb": {
+    "description": "Link preview card (sharePreview Cloud Function) / share action"
+  },
+  "sharePreviewPhotoCredit": "Photo: {credit}",
+  "@sharePreviewPhotoCredit": {
+    "description": "Link preview card (sharePreview Cloud Function) / share action",
+    "placeholders": {
+      "credit": {
+        "type": "String"
+      }
+    }
+  },
+  "shareAttractionMessage": "{name}\nDiscover this place on GreenGo: {link}",
+  "@shareAttractionMessage": {
+    "description": "Link preview card (sharePreview Cloud Function) / share action",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "attrShare": "Share",
+  "@attrShare": {
+    "description": "Link preview card (sharePreview Cloud Function) / share action"
   }
 }

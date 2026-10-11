@@ -20,6 +20,60 @@ String? serverText(
       return l10n.adminBusinessVerifiedNotificationBody;
     case 'adminBusinessVerifiedNotificationTitle':
       return l10n.adminBusinessVerifiedNotificationTitle;
+    case 'attrCatAquarium':
+      return l10n.attrCatAquarium;
+    case 'attrCatArchitecture':
+      return l10n.attrCatArchitecture;
+    case 'attrCatBeach':
+      return l10n.attrCatBeach;
+    case 'attrCatBridge':
+      return l10n.attrCatBridge;
+    case 'attrCatCastle':
+      return l10n.attrCatCastle;
+    case 'attrCatGarden':
+      return l10n.attrCatGarden;
+    case 'attrCatHistoricSite':
+      return l10n.attrCatHistoricSite;
+    case 'attrCatIsland':
+      return l10n.attrCatIsland;
+    case 'attrCatLake':
+      return l10n.attrCatLake;
+    case 'attrCatMarket':
+      return l10n.attrCatMarket;
+    case 'attrCatMonument':
+      return l10n.attrCatMonument;
+    case 'attrCatMountain':
+      return l10n.attrCatMountain;
+    case 'attrCatMuseum':
+      return l10n.attrCatMuseum;
+    case 'attrCatNationalPark':
+      return l10n.attrCatNationalPark;
+    case 'attrCatNature':
+      return l10n.attrCatNature;
+    case 'attrCatNeighborhood':
+      return l10n.attrCatNeighborhood;
+    case 'attrCatObservationDeck':
+      return l10n.attrCatObservationDeck;
+    case 'attrCatOther':
+      return l10n.attrCatOther;
+    case 'attrCatPalace':
+      return l10n.attrCatPalace;
+    case 'attrCatReligious':
+      return l10n.attrCatReligious;
+    case 'attrCatShopping':
+      return l10n.attrCatShopping;
+    case 'attrCatSquare':
+      return l10n.attrCatSquare;
+    case 'attrCatStreet':
+      return l10n.attrCatStreet;
+    case 'attrCatThemePark':
+      return l10n.attrCatThemePark;
+    case 'attrCatWaterfall':
+      return l10n.attrCatWaterfall;
+    case 'attrCatZoo':
+      return l10n.attrCatZoo;
+    case 'attrFree':
+      return l10n.attrFree;
     case 'chatLocation':
       return l10n.chatLocation;
     case 'chatPhoto':
@@ -300,6 +354,34 @@ String? serverText(
       return l10n.notifServerYourCommunity;
     case 'notifServerYourEvent':
       return l10n.notifServerYourEvent;
+    case 'sharePreviewAttractionTitle':
+      return l10n.sharePreviewAttractionTitle;
+    case 'sharePreviewByHost':
+      return l10n.sharePreviewByHost(_str(p['name']));
+    case 'sharePreviewCommunityTitle':
+      return l10n.sharePreviewCommunityTitle;
+    case 'sharePreviewConnectWith':
+      return l10n.sharePreviewConnectWith(_str(p['name']));
+    case 'sharePreviewEventTitle':
+      return l10n.sharePreviewEventTitle;
+    case 'sharePreviewExperienceTitle':
+      return l10n.sharePreviewExperienceTitle;
+    case 'sharePreviewGenericDescription':
+      return l10n.sharePreviewGenericDescription;
+    case 'sharePreviewGoing':
+      return l10n.sharePreviewGoing(_int(p['count']));
+    case 'sharePreviewHours':
+      return l10n.sharePreviewHours(_int(p['hours']));
+    case 'sharePreviewMembers':
+      return l10n.sharePreviewMembers(_int(p['count']));
+    case 'sharePreviewMinutes':
+      return l10n.sharePreviewMinutes(_int(p['minutes']));
+    case 'sharePreviewOpenApp':
+      return l10n.sharePreviewOpenApp;
+    case 'sharePreviewOpenWeb':
+      return l10n.sharePreviewOpenWeb;
+    case 'sharePreviewPhotoCredit':
+      return l10n.sharePreviewPhotoCredit(_str(p['credit']));
     case 'srvAccountNotApprovedContactSupport':
       return l10n.srvAccountNotApprovedContactSupport;
     case 'srvAccountNotApprovedReason':

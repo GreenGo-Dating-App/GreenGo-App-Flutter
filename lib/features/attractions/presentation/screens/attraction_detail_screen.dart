@@ -7,6 +7,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/services/deep_link_service.dart';
 import '../../../../core/services/translation_service.dart';
 import '../../../../core/utils/attraction_icons.dart';
 import '../../../../core/utils/compact_count.dart';
@@ -493,6 +494,18 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
           pinned: true,
           backgroundColor: AppColors.deepBlack,
           actions: [
+            // Share the attraction's link (/a/{id}): unfurls into a preview
+            // card (photo when its licence allows, name, place, category).
+            Builder(
+              builder: (buttonContext) => IconButton(
+                key: const ValueKey('attractionShareButton'),
+                tooltip: l10n.attrShare,
+                icon: const Icon(Icons.share_outlined,
+                    color: AppColors.richGold, size: 20),
+                onPressed: () =>
+                    shareAttractionLink(buttonContext, a.id, name: a.name),
+              ),
+            ),
             TextButton.icon(
               onPressed: _translating
                   ? null

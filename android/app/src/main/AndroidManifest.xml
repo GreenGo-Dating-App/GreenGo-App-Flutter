@@ -78,7 +78,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
 
-            <!-- Android App Links: shareable profile (/u) and event (/e) links on
+            <!-- Android App Links: shareable profile (/u), event (/e), community (/c),
+                 experience (/x) and attraction (/a) links on
                  https://greengo-chat.web.app. autoVerify pairs with
                  web/.well-known/assetlinks.json so the OS opens the app directly
                  (no chooser). If the app isn't installed, the browser loads the
@@ -96,9 +97,17 @@
                 <data android:scheme="https"
                       android:host="greengo-chat.web.app"
                       android:pathPrefix="/c/" />
+                <!-- Experiences (/x/{id}) and catalogue attractions (/a/{id}). -->
+                <data android:scheme="https"
+                      android:host="greengo-chat.web.app"
+                      android:pathPrefix="/x/" />
+                <data android:scheme="https"
+                      android:host="greengo-chat.web.app"
+                      android:pathPrefix="/a/" />
             </intent-filter>
 
-            <!-- Secondary custom scheme: greengo://u/{userId}, greengo://e/{eventId} and greengo://c/{communityId} -->
+            <!-- Secondary custom scheme: greengo://u/{userId}, greengo://e/{eventId}, greengo://c/{communityId},
+                 greengo://x/{experienceId} and greengo://a/{attractionId} -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -106,6 +115,8 @@
                 <data android:scheme="greengo" android:host="u" />
                 <data android:scheme="greengo" android:host="e" />
                 <data android:scheme="greengo" android:host="c" />
+                <data android:scheme="greengo" android:host="x" />
+                <data android:scheme="greengo" android:host="a" />
                 <data android:scheme="greengo" android:host="t" />
                 <data android:scheme="greengo" android:host="pay" />
             </intent-filter>

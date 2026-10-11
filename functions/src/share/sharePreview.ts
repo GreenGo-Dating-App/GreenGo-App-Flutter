@@ -1,5 +1,6 @@
 /**
- * Link previews for shared GreenGo EVENTS, COMMUNITIES and PROFILES.
+ * Link previews for shared GreenGo EVENTS, COMMUNITIES, PROFILES,
+ * EXPERIENCES and catalogue ATTRACTIONS.
  *
  * WhatsApp, Telegram, Instagram (DMs), iMessage, Slack… build their preview
  * card from the page's Open Graph tags, and their crawlers never run
@@ -8,9 +9,12 @@
  *   /e/{eventId}           -> HTML with og:title/description/image for the event
  *   /c/{communityId}       -> same for a community
  *   /u/{userId}            -> same for a user profile (main photo, name, city)
+ *   /x/{experienceId}      -> same for a published experience (user_experiences)
+ *   /a/{attractionId}      -> same for a catalogue attraction (attractions)
  *   /og/e/{eventId}.jpg    -> 1200x630 JPEG preview image (the og:image)
  *   /og/c/{communityId}.jpg
  *   /og/u/{userId}.jpg     -> the profile's MAIN photo, fitted on 1200x630
+ *   /og/x/{experienceId}.jpg, /og/a/{attractionId}.jpg
  *
  * Firebase Hosting rewrites these paths here (firebase.json). Every response
  * is CDN-cacheable, so a link that goes viral costs ~one Firestore read and
@@ -25,8 +29,15 @@
  * Privacy: drafts, not-yet-published scheduled events, private communities and
  * hidden profiles (missing/deleted, banned, suspended, incognito, ghost mode,
  * sharing opt-out) render a generic GreenGo card - never their name, text or
- * photo. Profile cards never include age, birth date, exact location or
- * contact details (see sharePreviewCore.ts).
+ * photo. So do unpublished / hidden / copyright- or safety-held experiences
+ * and unpublished attractions. Profile cards never include age, birth date,
+ * exact location or contact details (see sharePreviewCore.ts). Attraction
+ * photos whose licence forbids the use fall back to the brand image; those
+ * that require attribution carry it in the card text.
+ *
+ * Language: fixed strings come from the ARB-backed server catalog, in the
+ * request's Accept-Language (or ?hl=), English by default; responses carry
+ * `Vary: Accept-Language` so the CDN keeps one copy per language.
  */
 
 import { onRequest } from 'firebase-functions/v2/https';
@@ -35,19 +46,24 @@ import sharp from 'sharp';
 import { monitored } from '../shared/monitoring';
 import { admin } from '../shared/firebaseAdmin';
 import {
+  DEFAULT_ATTRACTION_BUCKET,
   FALLBACK_IMAGE,
   HOST,
   Kind,
   OG_H,
   OG_W,
   Preview,
+  buildAttractionPreview,
   buildCommunityPreview,
   buildEventPreview,
+  buildExperiencePreview,
   buildProfilePreview,
   genericPreview,
   parseSharePath,
+  pickLocale,
   renderHtml,
 } from './sharePreviewCore';
+import type { AppLocale } from '../shared/i18n';
 
 const MAX_SOURCE_BYTES = 15 * 1024 * 1024;
 
@@ -59,6 +75,22 @@ const HTML_CACHE = 'public, max-age=300, s-maxage=1800';
 const PROFILE_HTML_CACHE = 'public, max-age=300, s-maxage=600';
 const IMAGE_CACHE = 'public, max-age=86400, s-maxage=604800';
 const PROFILE_IMAGE_CACHE = 'public, max-age=3600, s-maxage=86400';
+// Experiences are user content that can be hidden / taken down at any time:
+// short CDN windows so a takedown stops showing within the hour.
+const UGC_HTML_CACHE = 'public, max-age=300, s-maxage=600';
+const UGC_IMAGE_CACHE = 'public, max-age=3600, s-maxage=3600';
+
+function htmlCache(kind: Kind): string {
+  if (kind === 'u') return PROFILE_HTML_CACHE;
+  if (kind === 'x') return UGC_HTML_CACHE;
+  return HTML_CACHE;
+}
+
+function imageCache(kind: Kind): string {
+  if (kind === 'u') return PROFILE_IMAGE_CACHE;
+  if (kind === 'x') return UGC_IMAGE_CACHE;
+  return IMAGE_CACHE;
+}
 
 // Only these hosts are fetched server-side (no SSRF through a user-supplied
 // image URL). Anything else is redirected to so the crawler fetches it itself.
@@ -72,15 +104,39 @@ const COLLECTION: Record<Kind, string> = {
   e: 'events',
   c: 'communities',
   u: 'profiles',
+  x: 'user_experiences',
+  a: 'attractions',
 };
 
-async function loadPreview(kind: Kind, id: string): Promise<Preview> {
+// Bucket of the catalogue images (attraction_config/app.storageBucket, as the
+// app reads it); one read per instance.
+let attractionBucket: Promise<string> | null = null;
+function getAttractionBucket(): Promise<string> {
+  attractionBucket ??= admin
+    .firestore()
+    .collection('attraction_config')
+    .doc('app')
+    .get()
+    .then((d) => {
+      const b = d.get('storageBucket');
+      return typeof b === 'string' && b.trim() ? b.trim() : DEFAULT_ATTRACTION_BUCKET;
+    })
+    .catch(() => {
+      attractionBucket = null;
+      return DEFAULT_ATTRACTION_BUCKET;
+    });
+  return attractionBucket;
+}
+
+async function loadPreview(kind: Kind, id: string, locale: AppLocale): Promise<Preview> {
   const snap = await admin.firestore().collection(COLLECTION[kind]).doc(id).get();
-  if (!snap.exists) return genericPreview(kind, id);
+  if (!snap.exists) return genericPreview(kind, id, locale);
   const d = (snap.data() ?? {}) as Record<string, unknown>;
-  if (kind === 'e') return buildEventPreview(id, d);
-  if (kind === 'c') return buildCommunityPreview(id, d);
-  return buildProfilePreview(id, d);
+  if (kind === 'e') return buildEventPreview(id, d, Date.now(), locale);
+  if (kind === 'c') return buildCommunityPreview(id, d, locale);
+  if (kind === 'x') return buildExperiencePreview(id, d, locale);
+  if (kind === 'a') return buildAttractionPreview(id, d, await getAttractionBucket(), locale);
+  return buildProfilePreview(id, d, Date.now(), locale);
 }
 
 /**
@@ -150,12 +206,13 @@ export const sharePreview = onRequest(
       return;
     }
     const { isImage, kind, id } = parsed;
+    const locale = pickLocale(req.get('accept-language'), req.query.hl);
 
     let preview: Preview;
     try {
-      preview = await loadPreview(kind, id);
+      preview = await loadPreview(kind, id, locale);
     } catch {
-      preview = genericPreview(kind, id);
+      preview = genericPreview(kind, id, locale);
     }
 
     if (isImage) {
@@ -165,12 +222,13 @@ export const sharePreview = onRequest(
         res.redirect(302, out);
         return;
       }
-      res.set('Cache-Control', kind === 'u' ? PROFILE_IMAGE_CACHE : IMAGE_CACHE);
+      res.set('Cache-Control', imageCache(kind));
       res.type('image/jpeg').send(out);
       return;
     }
 
-    res.set('Cache-Control', kind === 'u' ? PROFILE_HTML_CACHE : HTML_CACHE);
+    res.set('Cache-Control', htmlCache(kind));
+    res.set('Vary', 'Accept-Language');
     res.type('html').send(renderHtml(preview));
   }),
 );

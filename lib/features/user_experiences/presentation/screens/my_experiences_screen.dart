@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/deep_link_service.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../experience_bookings/domain/entities/booking.dart';
@@ -376,6 +377,8 @@ class _MyExperiencesViewState extends State<_MyExperiencesView> {
                           _dates(e);
                         case 'bookings':
                           _bookings(e: e);
+                        case 'share':
+                          shareExperienceLink(context, e.id, title: e.title);
                         case 'publish':
                           _setStatus(e, ExperienceStatus.published);
                         case 'unpublish':
@@ -404,6 +407,12 @@ class _MyExperiencesViewState extends State<_MyExperiencesView> {
                         PopupMenuItem(
                             value: 'publish',
                             child: Text(l.uexpPublish,
+                                style: const TextStyle(
+                                    color: AppColors.textPrimary))),
+                      if (e.isPublished)
+                        PopupMenuItem(
+                            value: 'share',
+                            child: Text(l.uexpShare,
                                 style: const TextStyle(
                                     color: AppColors.textPrimary))),
                       if (e.isPublished)

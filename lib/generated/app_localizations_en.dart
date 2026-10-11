@@ -23630,4 +23630,75 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get legalUpdateDisagreeHint =>
       'If you don\'t agree, you can sign out. You can also delete your account at any time.';
+
+  @override
+  String sharePreviewByHost(String name) {
+    return 'by $name';
+  }
+
+  @override
+  String sharePreviewHours(int hours) {
+    return '$hours h';
+  }
+
+  @override
+  String sharePreviewMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String sharePreviewGoing(int count) {
+    return '$count going';
+  }
+
+  @override
+  String sharePreviewMembers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count members',
+      one: '1 member',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get sharePreviewEventTitle => 'Event on GreenGo';
+
+  @override
+  String get sharePreviewCommunityTitle => 'Community on GreenGo';
+
+  @override
+  String get sharePreviewExperienceTitle => 'Experience on GreenGo';
+
+  @override
+  String get sharePreviewAttractionTitle => 'Attraction on GreenGo';
+
+  @override
+  String get sharePreviewGenericDescription =>
+      'Discover people, cultures, events and communities around the world.';
+
+  @override
+  String sharePreviewConnectWith(String name) {
+    return 'Connect with $name on GreenGo — meet people and cultures from around the world.';
+  }
+
+  @override
+  String get sharePreviewOpenApp => 'Open in GreenGo';
+
+  @override
+  String get sharePreviewOpenWeb => 'Open on the web';
+
+  @override
+  String sharePreviewPhotoCredit(String credit) {
+    return 'Photo: $credit';
+  }
+
+  @override
+  String shareAttractionMessage(String name, String link) {
+    return '$name\nDiscover this place on GreenGo: $link';
+  }
+
+  @override
+  String get attrShare => 'Share';
 }

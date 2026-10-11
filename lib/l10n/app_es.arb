@@ -7369,5 +7369,21 @@
   "legalUpdateBulletOrientation": "Ya no recopilamos la orientación sexual.",
   "legalUpdateAgree": "Acepto",
   "legalUpdateSaveFailed": "No pudimos guardar tu elección. Revisa tu conexión e inténtalo de nuevo.",
-  "legalUpdateDisagreeHint": "Si no estás de acuerdo, puedes cerrar sesión. También puedes eliminar tu cuenta en cualquier momento."
+  "legalUpdateDisagreeHint": "Si no estás de acuerdo, puedes cerrar sesión. También puedes eliminar tu cuenta en cualquier momento.",
+  "sharePreviewByHost": "por {name}",
+  "sharePreviewHours": "{hours} h",
+  "sharePreviewMinutes": "{minutes} min",
+  "sharePreviewGoing": "{count} asistirán",
+  "sharePreviewMembers": "{count, plural, =1{1 miembro} other{{count} miembros}}",
+  "sharePreviewEventTitle": "Evento en GreenGo",
+  "sharePreviewCommunityTitle": "Comunidad en GreenGo",
+  "sharePreviewExperienceTitle": "Experiencia en GreenGo",
+  "sharePreviewAttractionTitle": "Atracción en GreenGo",
+  "sharePreviewGenericDescription": "Descubre personas, culturas, eventos y comunidades de todo el mundo.",
+  "sharePreviewConnectWith": "Conecta con {name} en GreenGo: conoce personas y culturas de todo el mundo.",
+  "sharePreviewOpenApp": "Abrir en GreenGo",
+  "sharePreviewOpenWeb": "Abrir en la web",
+  "sharePreviewPhotoCredit": "Foto: {credit}",
+  "shareAttractionMessage": "{name}\nDescubre este lugar en GreenGo: {link}",
+  "attrShare": "Compartir"
 }
