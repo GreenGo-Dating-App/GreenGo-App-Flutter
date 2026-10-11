@@ -24200,8 +24200,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get srvReferralPreviewWeb => 'Continuar en la web';
 
   @override
-  String get loginTagline =>
-      'Descubre culturas. Conecta sin barreras de idioma.';
+  String get loginTagline => 'Lugares. Personas. Experiencias.';
+
+  @override
+  String loginVisitWebsite(String site) {
+    return 'Visita $site para más información';
+  }
 
   @override
   String get tierTravelModeCostRow => 'Modo viaje (monedas por día)';

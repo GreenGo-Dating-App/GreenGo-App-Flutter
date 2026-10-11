@@ -41076,8 +41076,14 @@ abstract class AppLocalizations {
   /// One-line tagline under the logo on the login screen
   ///
   /// In en, this message translates to:
-  /// **'Discover cultures. Connect without language barriers.'**
+  /// **'Places. People. Experiences.'**
   String get loginTagline;
+
+  /// Web-only login link to the marketing site; {site} is the domain (greengochat.com), shown in gold and never translated
+  ///
+  /// In en, this message translates to:
+  /// **'Visit {site} for more info'**
+  String loginVisitWebsite(String site);
 
   /// Membership comparison table row: travel-mode price per day (cells: a coin amount, or Free for Platinum)
   ///

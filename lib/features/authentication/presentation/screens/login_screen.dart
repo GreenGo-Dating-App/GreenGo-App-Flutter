@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:package_info_plus/package_info_plus.dart';
@@ -12,6 +13,7 @@ import '../../../../core/widgets/connection_error_dialog.dart';
 import '../../../../core/widgets/ios_install_hint.dart';
 import '../../../../core/widgets/language_selector.dart';
 import '../../../../core/widgets/liquid_gold_background.dart';
+import '../../../../core/widgets/website_link.dart';
 import '../../../../generated/app_localizations.dart';
 import '../bloc/auth_bloc.dart';
 import '../bloc/auth_event.dart';
@@ -74,6 +76,24 @@ class _LoginScreenState extends State<LoginScreen>
   /// Fetched once — not on every rebuild.
   late final Future<PackageInfo> _packageInfo = PackageInfo.fromPlatform();
   bool _obscurePassword = true;
+
+  /// Tallest body height seen at this width while the keyboard was down.
+  /// Layout is computed from this, never from the live height: iOS Safari
+  /// changes the window height whenever its toolbar collapses/expands, and
+  /// following it made the whole page jump on every scroll.
+  double _stableHeight = 0;
+  double _stableWidth = -1;
+
+  double _stableBodyHeight(BoxConstraints c, {required bool keyboardUp}) {
+    if (c.maxWidth != _stableWidth) {
+      // Rotation or a desktop window resize: start over at this width.
+      _stableWidth = c.maxWidth;
+      _stableHeight = 0;
+    }
+    if (!keyboardUp && c.maxHeight > _stableHeight) _stableHeight = c.maxHeight;
+    // Mounted with the keyboard already up: use what we have.
+    return _stableHeight > 0 ? _stableHeight : c.maxHeight;
+  }
 
   @override
   void initState() {
@@ -245,17 +265,27 @@ class _LoginScreenState extends State<LoginScreen>
                   // would make the form fit exactly — removing the page's only
                   // cue that anything lies below and recreating the same trap
                   // one screen size down.
-                  final compact = keyboardUp &&
+                  //
+                  // Never on the web: there the keyboard is a browser-driven
+                  // resize (iOS Safari also resizes for its toolbar), and
+                  // re-laying the header on every one of those made the page
+                  // jump under the user's finger.
+                  final compact = !kIsWeb &&
+                      keyboardUp &&
                       constraints.maxHeight < _compactHeightBreakpoint;
                   final wide = constraints.maxWidth >= _cardBreakpoint;
-                  final logoSize = compact ? 72.0 : (wide ? 148.0 : 136.0);
+                  final logoSize = compact ? 56.0 : (wide ? 148.0 : 136.0);
 
-                  // Optical centre: the block sits a little above the middle
-                  // of the free space (as in the mock), more so on tall
-                  // tablet / desktop windows; nothing when the keyboard is up.
+                  final stableHeight =
+                      _stableBodyHeight(constraints, keyboardUp: keyboardUp);
+                  // Top-aligned content with a FIXED top gap on phones; on
+                  // tablets/desktop a gap derived from the stable height (an
+                  // optical centre). Never from the live height.
                   final topGap = compact
                       ? 4.0
-                      : ((constraints.maxHeight - 640) / 3).clamp(8.0, 220.0);
+                      : wide
+                          ? ((stableHeight - 640) / 3).clamp(8.0, 220.0)
+                          : 24.0;
 
                   const bottomPad = AppDimensions.paddingM;
                   return SingleChildScrollView(
@@ -281,7 +311,10 @@ class _LoginScreenState extends State<LoginScreen>
                         minWidth: (constraints.maxWidth -
                                 2 * AppDimensions.paddingL)
                             .clamp(0.0, double.infinity),
-                        minHeight: (constraints.maxHeight - topGap - bottomPad)
+                        // The footer rests at the bottom of the STABLE height:
+                        // a shrinking toolbar/keyboard only scrolls it out of
+                        // view, it never moves anything above it.
+                        minHeight: (stableHeight - topGap - bottomPad)
                             .clamp(0.0, double.infinity),
                       ),
                       child: Column(
@@ -340,8 +373,13 @@ class _LoginScreenState extends State<LoginScreen>
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          // Every child is KEYED: when the tagline is left out (native
+          // compact header) the card must not slide into the tagline's slot —
+          // that remounted the text fields, dropped focus and closed the
+          // keyboard again.
           // 1 · Logo with a slow gold shimmer sweep.
           RiseIn(
+            key: const ValueKey('login_rise_logo'),
             animation: _steps[0],
             child: Center(
               child: CalmBrandLogo(
@@ -354,24 +392,29 @@ class _LoginScreenState extends State<LoginScreen>
 
           // 2 · Tagline.
           if (!compact) ...[
-            const SizedBox(height: 6),
+            const SizedBox(key: ValueKey('login_gap_tagline'), height: 6),
             RiseIn(
+              key: const ValueKey('login_rise_tagline'),
               animation: _steps[1],
-              // Narrower than the form so the line breaks into two balanced
-              // lines instead of leaving a one-word orphan.
+              // "Places. People. Experiences." — three words on one line,
+              // a touch larger and airier than body text.
+              // Always ONE line: scaled down (never wrapped) when a locale
+              // does not fit a 320 px phone.
               child: Center(
-                child: ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 300),
+                child: FittedBox(
+                  fit: BoxFit.scaleDown,
                   child: Text(
                     l10n.loginTagline,
                     key: const ValueKey('login_tagline'),
                     textAlign: TextAlign.center,
+                    maxLines: 1,
+                    softWrap: false,
                     style: const TextStyle(
                       color: AppColors.liquidTagline,
-                      fontSize: 15,
-                      height: 1.5,
-                      fontWeight: FontWeight.w400,
-                      letterSpacing: 0.1,
+                      fontSize: 17,
+                      height: 1.4,
+                      fontWeight: FontWeight.w500,
+                      letterSpacing: 0.6,
                       shadows: _onGlowShadow,
                     ),
                   ),
@@ -380,16 +423,24 @@ class _LoginScreenState extends State<LoginScreen>
             ),
           ],
 
-          SizedBox(height: compact ? 16 : 28),
+          SizedBox(
+            key: const ValueKey('login_gap_card'),
+            height: compact ? 8 : 28,
+          ),
 
           // 3 · Frosted glass form card.
           RiseIn(
+            key: const ValueKey('login_rise_card'),
             animation: _steps[2],
             blur: false,
             child: GlassCard(
-              padding: wide
-                  ? const EdgeInsets.fromLTRB(28, 28, 28, 28)
-                  : const EdgeInsets.fromLTRB(20, 24, 20, 24),
+              // Tighter while the keyboard is up (native compact header) so
+              // the Login button stays above it on a landscape iPad.
+              padding: compact
+                  ? EdgeInsets.symmetric(horizontal: wide ? 24 : 20, vertical: 16)
+                  : wide
+                      ? const EdgeInsets.fromLTRB(28, 28, 28, 28)
+                      : const EdgeInsets.fromLTRB(20, 24, 20, 24),
               child: _buildFields(context, l10n, isLoading: isLoading),
             ),
           ),
@@ -646,6 +697,9 @@ class _LoginScreenState extends State<LoginScreen>
 
         // Web on iPhone / iPad (not installed yet): install guide.
         const IosInstallLink(),
+
+        // Web build only: "Visit greengochat.com for more info".
+        const WebsiteLink(shadows: _onGlowShadow),
 
         const SizedBox(height: 8),
 

@@ -23971,8 +23971,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get srvReferralPreviewWeb => 'Continue on the web';
 
   @override
-  String get loginTagline =>
-      'Discover cultures. Connect without language barriers.';
+  String get loginTagline => 'Places. People. Experiences.';
+
+  @override
+  String loginVisitWebsite(String site) {
+    return 'Visit $site for more info';
+  }
 
   @override
   String get tierTravelModeCostRow => 'Travel mode (coins per day)';
