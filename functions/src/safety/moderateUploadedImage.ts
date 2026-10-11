@@ -51,6 +51,7 @@ import { onObjectFinalized } from 'firebase-functions/v2/storage';
 import * as admin from 'firebase-admin';
 import vision from '@google-cloud/vision';
 import { logInfo, logError } from '../shared/utils';
+import { screenUploadAgainstHashLists } from './takedowns/uploadScreening';
 
 const db = admin.firestore();
 // Constructed lazily: this module is loaded by index.js along with every other
@@ -86,6 +87,9 @@ const MODERATED = [
 const NEVER = [
   'attractions/',
   'quarantine/',
+  // Safety takedown holds (safety/takedowns): moved there by the server.
+  'safety_holds/',
+  'legal_holds/',
   'verifications/',
   'age_verification/',
   'business_verification/',
@@ -138,6 +142,33 @@ export const moderateUploadedImage = onObjectFinalized(
 
     const bucket = admin.storage().bucket(event.data.bucket);
     const gcsUri = `gs://${event.data.bucket}/${objectPath}`;
+
+    // NCII / CSAE re-upload blocking (safety/takedowns/uploadScreening.ts):
+    // public surfaces only (audit EU-19). A match moves the file out of reach
+    // and opens a P0 safety case; the uploader sees an ordinary rejection.
+    try {
+      const screening = await screenUploadAgainstHashLists({
+        bucketName: event.data.bucket,
+        objectPath,
+        userId,
+        visibility,
+        size: Number(event.data.size || 0),
+      });
+      if (screening.blocked) {
+        await docRef.set({
+          status: 'rejected',
+          userId,
+          objectPath,
+          reasons: ['blocked_hash'],
+          checkedAt: admin.firestore.FieldValue.serverTimestamp(),
+          expiresAt: admin.firestore.Timestamp.fromMillis(Date.now() + 24 * 3600 * 1000),
+        });
+        logInfo(`[moderate] BLOCKED_HASH ${objectPath} case=${screening.caseId}`);
+        return;
+      }
+    } catch (e) {
+      logError(`[moderate] hash screening failed for ${objectPath}`, e);
+    }
 
     try {
       // ONE annotate call for all three features. SafeSearch is billed free

@@ -23830,4 +23830,111 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get aiServicesSubtitleOnV2 =>
       'Activé : les fonctions d\'IA peuvent envoyer à Google et Anthropic le texte sur lequel vous les utilisez.';
+
+  @override
+  String get nciiEntryTitle => 'Retirer une image intime de moi';
+
+  @override
+  String get nciiEntrySubtitle =>
+      'Les images intimes partagées sans consentement sont masquées immédiatement pendant notre examen';
+
+  @override
+  String get nciiFormTitle => 'Retrait d\'image intime';
+
+  @override
+  String get nciiFormIntro =>
+      'Si une image ou une vidéo intime de vous se trouve sur GreenGo sans votre consentement, indiquez-nous où. Nous la masquons immédiatement et décidons sous 2 heures (jamais plus de 48 heures). Les copies ne peuvent plus être republiées.';
+
+  @override
+  String get nciiFormSectionYou => 'Vous concernant';
+
+  @override
+  String get nciiFormName => 'Nom complet';
+
+  @override
+  String get nciiFormEmail => 'E-mail';
+
+  @override
+  String get nciiFormPhone => 'Téléphone (facultatif)';
+
+  @override
+  String get nciiFormRoleLabel => 'Vous êtes';
+
+  @override
+  String get nciiFormRoleDepicted => 'La personne représentée';
+
+  @override
+  String get nciiFormRoleAuthorized => 'En son nom';
+
+  @override
+  String get nciiFormRepresented => 'Nom de la personne représentée';
+
+  @override
+  String get nciiFormSectionContent => 'Où se trouve le contenu ?';
+
+  @override
+  String get nciiFormLocations => 'Liens ou emplacements (un par ligne)';
+
+  @override
+  String get nciiFormLocationsHint =>
+      'Lien du profil, de la photo ou la discussion où vous l\'avez vu';
+
+  @override
+  String get nciiFormPrefilled =>
+      'L\'élément que vous consultiez est déjà inclus.';
+
+  @override
+  String get nciiFormDescription => 'Autre chose à savoir (facultatif)';
+
+  @override
+  String get nciiFormSectionStatements => 'Déclarations';
+
+  @override
+  String get nciiFormStatementDepicted =>
+      'Je suis la personne représentée dans ce contenu, ou je suis autorisé(e) à agir en son nom.';
+
+  @override
+  String get nciiFormStatementGoodFaith =>
+      'Je crois de bonne foi que ce contenu intime a été publié sans consentement.';
+
+  @override
+  String get nciiFormStatementAccurate =>
+      'Les informations de cette demande sont exactes.';
+
+  @override
+  String get nciiFormStatementsRequired =>
+      'Veuillez confirmer les trois déclarations.';
+
+  @override
+  String get nciiFormSignature => 'Signature (tapez votre nom complet)';
+
+  @override
+  String get nciiFormSubmit => 'Envoyer la demande';
+
+  @override
+  String get nciiFormRequired => 'Obligatoire';
+
+  @override
+  String get nciiFormInvalidEmail => 'Saisissez un e-mail valide';
+
+  @override
+  String nciiFormSubmitted(String reference) {
+    return 'Demande $reference reçue. Le contenu est masqué pendant notre examen et nous vous informerons de la décision.';
+  }
+
+  @override
+  String get nciiFormError =>
+      'Impossible d\'envoyer la demande. Réessayez ou écrivez à info@greengochat.com.';
+
+  @override
+  String get nciiFormRateLimited =>
+      'Trop de demandes aujourd\'hui. Écrivez à info@greengochat.com si c\'est urgent.';
+
+  @override
+  String get safetyReportReasonCsae =>
+      'Abus ou exploitation sexuelle d\'enfants';
+
+  @override
+  String get safetyReportReasonNcii =>
+      'Image intime partagée sans consentement';
 }

@@ -7,6 +7,8 @@ import '../../../../generated/app_localizations.dart';
 import '../../data/services/safety_actions_service.dart';
 import '../../../copyright/data/copyright_service.dart';
 import '../../../copyright/presentation/screens/copyright_notice_form_screen.dart';
+import '../../data/services/safety_takedown_service.dart';
+import '../screens/ncii_request_screen.dart';
 
 /// App-wide "report or block this person" sheet.
 ///
@@ -86,6 +88,17 @@ Future<void> showReportBlockSheet(
             ),
             onTap: () => Navigator.pop(sheetContext, _SafetyAction.copyright),
           ),
+          // NCII (TAKE IT DOWN Act / Decreto 12.976): the depicted person asks
+          // for removal; the content is hidden at once while it is reviewed.
+          ListTile(
+            key: const ValueKey('report-ncii'),
+            leading: const Icon(Icons.no_photography_outlined, color: AppColors.textSecondary),
+            title: Text(
+              l10n.nciiEntryTitle,
+              style: const TextStyle(color: AppColors.textPrimary),
+            ),
+            onTap: () => Navigator.pop(sheetContext, _SafetyAction.ncii),
+          ),
           const SizedBox(height: 8),
         ],
       ),
@@ -113,10 +126,16 @@ Future<void> showReportBlockSheet(
       );
     case _SafetyAction.copyright:
       await openCopyrightNoticeForm(context, content: copyrightContent);
+    case _SafetyAction.ncii:
+      await openNciiRequestForm(context, prefilledLocations: [
+        if (copyrightContent?.photoUrl != null) copyrightContent!.photoUrl!,
+        if (copyrightContent != null && copyrightContent.type == 'message') copyrightContent.path,
+        nciiProfileLocation(reportedUserId),
+      ]);
   }
 }
 
-enum _SafetyAction { report, block, copyright }
+enum _SafetyAction { report, block, copyright, ncii }
 
 /// The reasons offered. Deliberately the same list everywhere so moderation
 /// can aggregate across surfaces, and `underage` is included because
@@ -128,6 +147,9 @@ List<String> _reasons(AppLocalizations l10n) => [
       l10n.chatReportReasonInappropriate,
       l10n.chatReportReasonThreatening,
       l10n.chatReportReasonUnderage,
+      // P0 reasons: hidden at once server-side (safety/takedowns).
+      l10n.safetyReportReasonCsae,
+      l10n.safetyReportReasonNcii,
       l10n.chatReportReasonOther,
     ];
 

@@ -331,6 +331,17 @@ service firebase.storage {
       allow write: if false;
     }
 
+    // Safety takedown holds (NCII / CSAE, functions safety/takedowns): content
+    // hidden pending review, and CSAE legal-hold evidence. No client access at
+    // all, admins included - the server moves files with the Admin SDK and the
+    // panel gets 5-minute signed links for NCII review only.
+    match /safety_holds/{allPaths=**} {
+      allow read, write: if false;
+    }
+    match /legal_holds/{allPaths=**} {
+      allow read, write: if false;
+    }
+
     // Everything else: denied (no more open bucket). Add a match above for any
     // new upload path before shipping it.
   }

@@ -2897,6 +2897,39 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // SAFETY TAKEDOWNS (NCII / CSAE) - safety/takedowns/ in functions
+    // ============================================================================
+    // Cases, legal holds and hash lists are server-only: the admin panel reads
+    // them through the safetyAdmin callable (role-checked, audit-logged), and
+    // legal holds are superAdmin-only there. Spelled out (the default deny
+    // below would also deny them) so nobody adds a read rule by accident.
+    match /safety_cases/{caseId}/{document=**} {
+      allow read, write: if false;
+    }
+    match /legal_holds/{holdId}/{document=**} {
+      allow read, write: if false;
+    }
+    match /blocked_media_hashes/{id} {
+      allow read, write: if false;
+    }
+    match /csam_hash_list/{id} {
+      allow read, write: if false;
+    }
+    match /safety_rate_limits/{id} {
+      allow read, write: if false;
+    }
+    match /user_strikes/{id} {
+      allow read, write: if false;
+    }
+    // A requester may read the status of their OWN request (status + dates
+    // only; written by the server). Public-form requesters use the token link.
+    match /safety_request_status/{caseId} {
+      allow get: if isSignedIn() && resource.data.requesterUid == request.auth.uid;
+      allow list: if isSignedIn() && resource.data.requesterUid == request.auth.uid;
+      allow write: if false;
+    }
+
+    // ============================================================================
     // DEFAULT DENY
     // ============================================================================
     // Written out rather than omitted, so the intent is explicit and nobody

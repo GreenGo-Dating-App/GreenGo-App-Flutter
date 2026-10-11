@@ -384,6 +384,17 @@ export {
   onModerationQueueResolved,
 } from './safety/reportPipeline';
 
+// Safety takedowns (audit BR-11 / US-09 NCII, US-10 / BR-14 / AS-08 / EU-19
+// CSAE): public + in-app NCII request, precautionary hide, SLA escalation,
+// 1-year CSAE legal hold, admin Safety queue. See safety/takedowns/.
+export {
+  nciiTakedownRequest,
+  submitSafetyRequest,
+  safetyAdmin,
+  safetySlaSweep,
+  legalHoldExpirySweep,
+} from './safety/takedowns/endpoints';
+
 // P2-6 / BIPA: startPhotoVerification, verifyPhotoSelfie (selfie face
 // comparison via Cloud Vision) and verifyIDDocument (ID OCR without the
 // retention controls of submitAgeDocument) were never called by any app,

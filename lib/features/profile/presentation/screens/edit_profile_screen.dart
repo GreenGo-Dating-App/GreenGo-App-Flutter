@@ -38,6 +38,7 @@ import '../../../authentication/presentation/screens/change_password_screen.dart
 import '../../../notifications/presentation/screens/notification_preferences_screen.dart';
 import '../../../chat/presentation/screens/support_tickets_list_screen.dart';
 import '../../../copyright/presentation/screens/copyright_policy_screen.dart';
+import '../../../safety/presentation/screens/ncii_request_screen.dart';
 import '../../../coins/domain/entities/coin_transaction.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
@@ -603,6 +604,15 @@ class EditProfileScreen extends StatelessWidget {
                             AppLocalizations.of(context)!.copyrightHelpEntrySubtitle,
                         icon: Icons.copyright,
                         onTap: () => Navigator.of(context).push(CopyrightPolicyScreen.route()),
+                      ),
+                      const SizedBox(height: 16),
+                      // NCII removal request (TAKE IT DOWN Act / Decreto 12.976).
+                      EditSectionCard(
+                        key: const ValueKey('help-ncii'),
+                        title: AppLocalizations.of(context)!.nciiEntryTitle,
+                        subtitle: AppLocalizations.of(context)!.nciiEntrySubtitle,
+                        icon: Icons.no_photography_outlined,
+                        onTap: () => openNciiRequestForm(context),
                       ),
                       const SizedBox(height: 16),
                       // Coin Shop
