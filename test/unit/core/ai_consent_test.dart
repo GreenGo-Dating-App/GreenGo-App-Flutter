@@ -317,6 +317,8 @@ void main() {
       expect(find.textContaining('Google Gemini'), findsOneWidget);
       // Audit 2026-10: the support assistant's provider is named too.
       expect(find.textContaining('Anthropic Claude'), findsOneWidget);
+      await tester.ensureVisible(find.byKey(const Key('aiConsentAccept')));
+      await tester.pump();
       await tester.tap(find.byKey(const Key('aiConsentAccept')));
       await tester.pumpAndSettle();
       expect(result, isTrue);
@@ -328,6 +330,8 @@ void main() {
       final s = svc(MemStore(), FakeRecorder(), () => 'u1');
       bool? result;
       await pump(tester, s, (r) => result = r);
+      await tester.ensureVisible(find.byKey(const Key('aiConsentDecline')));
+      await tester.pump();
       await tester.tap(find.byKey(const Key('aiConsentDecline')));
       await tester.pumpAndSettle();
       expect(result, isFalse);

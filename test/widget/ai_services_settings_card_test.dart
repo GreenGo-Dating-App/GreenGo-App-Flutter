@@ -90,6 +90,8 @@ void main() {
     await tester.tap(find.byKey(const Key('aiServicesSwitch')));
     await tester.pumpAndSettle();
     expect(find.textContaining('Google Gemini'), findsOneWidget);
+    await tester.ensureVisible(find.byKey(const Key('aiConsentDecline')));
+    await tester.pump();
     await tester.tap(find.byKey(const Key('aiConsentDecline')));
     await tester.pumpAndSettle();
     expect(server.recorded, isEmpty);
@@ -98,6 +100,8 @@ void main() {
     // "Allow" records consent and turns the switch on.
     await tester.tap(find.byKey(const Key('aiServicesSwitch')));
     await tester.pumpAndSettle();
+    await tester.ensureVisible(find.byKey(const Key('aiConsentAccept')));
+    await tester.pump();
     await tester.tap(find.byKey(const Key('aiConsentAccept')));
     await tester.pumpAndSettle();
     expect(server.recorded, [true]);
