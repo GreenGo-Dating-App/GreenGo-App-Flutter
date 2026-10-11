@@ -835,3 +835,7 @@ export {
   adminGetCopyrightStrikes,
   processCopyrightNotices,
 } from './copyright';
+
+// Private-content warning: server-only proof that the user accepted the
+// warning before opening another user's private photos.
+export { acknowledgePrivateContentWarning } from './legal/privateContentWarning';

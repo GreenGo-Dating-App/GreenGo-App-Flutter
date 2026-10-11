@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:io';
+import 'dart:ui' as ui;
 import 'package:cached_network_image/cached_network_image.dart';
 
 import 'package:audioplayers/audioplayers.dart' hide Source;
@@ -40,6 +41,7 @@ import '../widgets/deleted_message_bubble.dart';
 import '../widgets/location_message_map.dart';
 import '../../../../core/widgets/interactive_location_map.dart';
 import '../../../../core/services/ai_consent_service.dart';
+import '../../../../core/security/private_content_warning.dart';
 import '../../../../core/widgets/ai_consent_sheet.dart';
 import '../../../profile/data/private_album.dart';
 import '../../../../core/security/screen_security_service.dart';
@@ -854,6 +856,18 @@ class _GroupMessageBubble extends StatelessWidget {
   final bool showOriginal;
   final bool ttsReadTranslated;
 
+  /// Opens media full screen. Media received from another member opens only
+  /// after the private-content warning was accepted (Terms §16.9(d)); the
+  /// user's own media never asks.
+  Future<void> _openReceivedMedia(
+      BuildContext context, WidgetBuilder builder) async {
+    if (!isMine && !await ensurePrivateContentWarningAccepted(context)) {
+      return;
+    }
+    if (!context.mounted) return;
+    await Navigator.of(context).push(MaterialPageRoute<void>(builder: builder));
+  }
+
   /// Report/block the sender. The name is resolved BEFORE the sheet opens so
   /// the sheet (and a persisted block entry) never carries a raw uid.
   Future<void> _openReportSheet(BuildContext context) async {
@@ -977,26 +991,63 @@ class _GroupMessageBubble extends StatelessWidget {
               )
             else if (message.type == MessageType.image)
               GestureDetector(
-                onTap: () => Navigator.of(context).push(MaterialPageRoute(
-                  builder: (_) => _FullImageScreen(url: message.content),
-                )),
+                onTap: () => _openReceivedMedia(
+                    context, (_) => _FullImageScreen(url: message.content)),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(10),
-                  child: CachedNetworkImage(
-                    imageUrl: message.content,
-                    width: 200,
-                    fit: BoxFit.cover,
-                    memCacheWidth: 400,
-                    errorWidget: (_, __, ___) =>
-                        const Icon(Icons.broken_image, size: 60),
-                  ),
+                  child: isMine
+                      ? CachedNetworkImage(
+                          imageUrl: message.content,
+                          width: 200,
+                          fit: BoxFit.cover,
+                          memCacheWidth: 400,
+                          errorWidget: (_, __, ___) =>
+                              const Icon(Icons.broken_image, size: 60),
+                        )
+                      // Received media stays blurred until opened full
+                      // screen (behind the private-content warning), as in
+                      // 1:1 chats.
+                      : SizedBox(
+                          width: 200,
+                          height: 200,
+                          child: Stack(fit: StackFit.expand, children: [
+                            ImageFiltered(
+                              imageFilter:
+                                  ui.ImageFilter.blur(sigmaX: 15, sigmaY: 15),
+                              child: CachedNetworkImage(
+                                imageUrl: message.content,
+                                fit: BoxFit.cover,
+                                memCacheWidth: 200,
+                                errorWidget: (_, __, ___) =>
+                                    const Icon(Icons.broken_image, size: 60),
+                              ),
+                            ),
+                            Container(
+                              color: Colors.black.withValues(alpha: 0.2),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  const Icon(Icons.visibility,
+                                      color: Colors.white70, size: 32),
+                                  const SizedBox(height: 6),
+                                  Text(
+                                    AppLocalizations.of(context)!.chatTapToView,
+                                    style: const TextStyle(
+                                        color: Colors.white70,
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w500),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ]),
+                        ),
                 ),
               )
             else if (message.type == MessageType.video)
               GestureDetector(
-                onTap: () => Navigator.of(context).push(MaterialPageRoute(
-                  builder: (_) => _GroupVideoPlayerScreen(url: message.content),
-                )),
+                onTap: () => _openReceivedMedia(context,
+                    (_) => _GroupVideoPlayerScreen(url: message.content)),
                 child: Container(
                   width: 200,
                   height: 120,

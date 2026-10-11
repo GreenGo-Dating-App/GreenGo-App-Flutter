@@ -92,9 +92,18 @@ class _RecurringTimePickerState extends State<RecurringTimePicker> {
       byDate.putIfAbsent(t.date, () => []).add(t);
     }
     final dates = byDate.keys.toList()..sort();
-    final first = parseDateKey(dates.first).toLocal();
-    final last = parseDateKey(dates.last).toLocal();
-    final selectedDate = _date ?? dates.first;
+    // Date keys are calendar days: build LOCAL midnights from their y/m/d.
+    // (`parseDateKey(..).toLocal()` shifted first/last back a day west of
+    // UTC, so initialDate landed after lastDate and the calendar asserted.)
+    DateTime day(String key) {
+      final d = parseDateKey(key);
+      return DateTime(d.year, d.month, d.day);
+    }
+    // A remembered/selected date that is no longer bookable falls back to the
+    // first bookable one: the calendar requires a selectable initialDate
+    // inside [firstDate, lastDate].
+    final selectedDate =
+        (_date != null && byDate.containsKey(_date)) ? _date! : dates.first;
     final locale = Localizations.localeOf(context).toString();
     final times = byDate[selectedDate] ?? const <AvailableTime>[];
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
@@ -106,9 +115,9 @@ class _RecurringTimePickerState extends State<RecurringTimePicker> {
         ),
         child: CalendarDatePicker(
           key: const ValueKey('recurring-calendar'),
-          initialDate: DateTime(parseDateKey(selectedDate).year, parseDateKey(selectedDate).month, parseDateKey(selectedDate).day),
-          firstDate: DateTime(first.year, first.month, first.day),
-          lastDate: DateTime(last.year, last.month, last.day),
+          initialDate: day(selectedDate),
+          firstDate: day(dates.first),
+          lastDate: day(dates.last),
           selectableDayPredicate: (d) => byDate.containsKey(dateKey(d)),
           onDateChanged: (d) => setState(() => _date = dateKey(d)),
         ),

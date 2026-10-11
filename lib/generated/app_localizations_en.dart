@@ -23573,4 +23573,33 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get safetyReportReasonNcii => 'Intimate image shared without consent';
+
+  @override
+  String get pcwTitle => 'Private content: read before viewing';
+
+  @override
+  String get pcwIntro =>
+      'Private photos, private albums and the photos and videos you receive in chats are shared with you personally.';
+
+  @override
+  String get pcwForbidden =>
+      'Taking screenshots or screen recordings, saving, sharing, forwarding or publishing this content without the consent of the person who shared it is forbidden by our Terms and is against the law. In many countries it can be a crime, for example sharing intimate images without consent.';
+
+  @override
+  String get pcwConsequences =>
+      'Misuse leads to suspension or a permanent ban of your account, preservation of evidence, reporting to the authorities and legal action.';
+
+  @override
+  String get pcwRecorded =>
+      'You will see this warning only once. Your acceptance is recorded.';
+
+  @override
+  String get pcwCheckbox => 'I have read and accept this warning';
+
+  @override
+  String get pcwUnderstand => 'I understand';
+
+  @override
+  String get pcwSaveFailed =>
+      'We could not record your acceptance. Check your connection and try again.';
 }

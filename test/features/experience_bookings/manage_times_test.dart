@@ -187,6 +187,35 @@ void main() {
       final other = now.add(const Duration(days: 1));
       expect(cal.selectableDayPredicate!(DateTime(other.year, other.month, other.day)), isFalse);
     });
+
+    testWidgets('calendar range is the bookable local days whatever the timezone; a stale selection falls back', (t) async {
+      // Fixed dates: independent of today and of the machine timezone (date
+      // keys used to go through UTC->local, which put initialDate after
+      // lastDate west of UTC).
+      const d1 = '2031-03-10';
+      const d2 = '2031-03-12';
+      await t.pumpWidget(_app(Scaffold(
+        body: SingleChildScrollView(
+          child: RecurringTimePicker(
+            experience: exp(),
+            onPicked: (_) {},
+            // Selected time no longer offered: must not crash the calendar.
+            selected: slot('2031-03-20', '09:00', 1, 5000),
+            initialPage: AvailabilityPage(timezone: null, times: [
+              slot(d1, '10:00', 3, 9000),
+              slot(d2, '12:00', 1, 5000),
+            ]),
+          ),
+        ),
+      )));
+      await t.pumpAndSettle();
+      expect(t.takeException(), isNull);
+      final cal = t.widget<CalendarDatePicker>(find.byKey(const ValueKey('recurring-calendar')));
+      expect(cal.firstDate, DateTime(2031, 3, 10));
+      expect(cal.lastDate, DateTime(2031, 3, 12));
+      expect(cal.initialDate, DateTime(2031, 3, 10));
+      expect(find.byKey(const ValueKey('recurring-time-${d1}T10:00')), findsOneWidget);
+    });
   });
 
   testWidgets('ticket types sales summary totals', (t) async {

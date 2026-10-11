@@ -23937,4 +23937,33 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get safetyReportReasonNcii =>
       'Image intime partagée sans consentement';
+
+  @override
+  String get pcwTitle => 'Contenu privé : à lire avant de l’afficher';
+
+  @override
+  String get pcwIntro =>
+      'Les photos privées, les albums privés ainsi que les photos et vidéos que tu reçois dans les chats sont partagés avec toi personnellement.';
+
+  @override
+  String get pcwForbidden =>
+      'Faire des captures ou des enregistrements d’écran, enregistrer, partager, transférer ou publier ce contenu sans le consentement de la personne qui l’a partagé est interdit par nos Conditions et contraire à la loi. Dans de nombreux pays, cela peut constituer une infraction pénale, par exemple le partage d’images intimes sans consentement.';
+
+  @override
+  String get pcwConsequences =>
+      'Tout usage abusif entraîne la suspension ou le bannissement définitif de ton compte, la conservation des preuves, un signalement aux autorités et des poursuites judiciaires.';
+
+  @override
+  String get pcwRecorded =>
+      'Tu ne verras cet avertissement qu’une seule fois. Ton acceptation est enregistrée.';
+
+  @override
+  String get pcwCheckbox => 'J’ai lu et j’accepte cet avertissement';
+
+  @override
+  String get pcwUnderstand => 'J’ai compris';
+
+  @override
+  String get pcwSaveFailed =>
+      'Impossible d’enregistrer ton acceptation. Vérifie ta connexion et réessaie.';
 }

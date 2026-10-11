@@ -40613,6 +40613,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Intimate image shared without consent'**
   String get safetyReportReasonNcii;
+
+  /// Private-content warning (Terms 5.1.0 section 16.9(d)) shown before another user's private photos or received chat media
+  ///
+  /// In en, this message translates to:
+  /// **'Private content: read before viewing'**
+  String get pcwTitle;
+
+  /// Private-content warning (Terms 5.1.0 section 16.9(d)) shown before another user's private photos or received chat media
+  ///
+  /// In en, this message translates to:
+  /// **'Private photos, private albums and the photos and videos you receive in chats are shared with you personally.'**
+  String get pcwIntro;
+
+  /// Private-content warning (Terms 5.1.0 section 16.9(d)) shown before another user's private photos or received chat media
+  ///
+  /// In en, this message translates to:
+  /// **'Taking screenshots or screen recordings, saving, sharing, forwarding or publishing this content without the consent of the person who shared it is forbidden by our Terms and is against the law. In many countries it can be a crime, for example sharing intimate images without consent.'**
+  String get pcwForbidden;
+
+  /// Private-content warning (Terms 5.1.0 section 16.9(d)) shown before another user's private photos or received chat media
+  ///
+  /// In en, this message translates to:
+  /// **'Misuse leads to suspension or a permanent ban of your account, preservation of evidence, reporting to the authorities and legal action.'**
+  String get pcwConsequences;
+
+  /// Private-content warning (Terms 5.1.0 section 16.9(d)) shown before another user's private photos or received chat media
+  ///
+  /// In en, this message translates to:
+  /// **'You will see this warning only once. Your acceptance is recorded.'**
+  String get pcwRecorded;
+
+  /// Private-content warning (Terms 5.1.0 section 16.9(d)) shown before another user's private photos or received chat media
+  ///
+  /// In en, this message translates to:
+  /// **'I have read and accept this warning'**
+  String get pcwCheckbox;
+
+  /// Private-content warning (Terms 5.1.0 section 16.9(d)) shown before another user's private photos or received chat media
+  ///
+  /// In en, this message translates to:
+  /// **'I understand'**
+  String get pcwUnderstand;
+
+  /// Private-content warning (Terms 5.1.0 section 16.9(d)) shown before another user's private photos or received chat media
+  ///
+  /// In en, this message translates to:
+  /// **'We could not record your acceptance. Check your connection and try again.'**
+  String get pcwSaveFailed;
 }
 
 class _AppLocalizationsDelegate

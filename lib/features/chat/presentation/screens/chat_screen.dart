@@ -62,6 +62,7 @@ import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/services/ai_consent_service.dart';
 import '../../../../core/widgets/ai_consent_sheet.dart';
 import '../../../profile/data/private_album.dart';
+import '../../../../core/security/private_content_warning.dart';
 import '../../../../core/security/app_only_content.dart';
 import '../../../../core/security/media_url.dart';
 import '../../../../core/security/screen_security_service.dart';
@@ -1534,6 +1535,12 @@ class _ChatScreenState extends State<ChatScreen> {
         );
         return;
       }
+
+      // Terms §16.9(d): accept the private-content warning (proof stored
+      // server-side) before any photo of the album is fetched or shown.
+      if (!context.mounted) return;
+      if (!await ensurePrivateContentWarningAccepted(context)) return;
+      if (!mounted || !context.mounted) return;
 
       // Other user's private album: server-checked grant (getSharedAlbum).
       final privatePhotos = await PrivateAlbum.sharedBy(widget.otherUserId);

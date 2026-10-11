@@ -7351,5 +7351,13 @@
   "nciiFormError": "Não foi possível enviar o pedido. Tente novamente ou escreva para info@greengochat.com.",
   "nciiFormRateLimited": "Demasiados pedidos hoje. Escreva para info@greengochat.com se for urgente.",
   "safetyReportReasonCsae": "Abuso ou exploração sexual de crianças",
-  "safetyReportReasonNcii": "Imagem íntima partilhada sem consentimento"
+  "safetyReportReasonNcii": "Imagem íntima partilhada sem consentimento",
+  "pcwTitle": "Conteúdo privado: leia antes de ver",
+  "pcwIntro": "As fotos privadas, os álbuns privados e as fotos e vídeos que recebe nas conversas são partilhados consigo pessoalmente.",
+  "pcwForbidden": "Fazer capturas ou gravações de ecrã, guardar, partilhar, reencaminhar ou publicar este conteúdo sem o consentimento da pessoa que o partilhou é proibido pelos nossos Termos e é contra a lei. Em muitos países pode ser crime, por exemplo partilhar imagens íntimas sem consentimento.",
+  "pcwConsequences": "A utilização indevida leva à suspensão ou ao banimento definitivo da sua conta, à preservação de provas, à denúncia às autoridades e a ações judiciais.",
+  "pcwRecorded": "Verá este aviso apenas uma vez. A sua aceitação fica registada.",
+  "pcwCheckbox": "Li e aceito este aviso",
+  "pcwUnderstand": "Compreendo",
+  "pcwSaveFailed": "Não foi possível registar a sua aceitação. Verifique a ligação e tente novamente."
 }
