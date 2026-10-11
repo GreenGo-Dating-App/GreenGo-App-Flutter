@@ -10,6 +10,7 @@ import '../../../../core/utils/auth_error_localizer.dart';
 import '../../../../core/widgets/aurora_background.dart';
 import '../../../../core/widgets/calm_brand_logo.dart';
 import '../../../../core/widgets/connection_error_dialog.dart';
+import '../../../../core/widgets/ios_install_hint.dart';
 import '../../../../core/widgets/language_selector.dart';
 import '../../../../generated/app_localizations.dart';
 import '../bloc/auth_bloc.dart';
@@ -573,6 +574,9 @@ class _LoginScreenState extends State<LoginScreen>
                       ),
                     ],
                   ),
+
+                  // Web on iPhone / iPad (not installed yet): install guide.
+                  const IosInstallLink(),
 
                   const SizedBox(height: 24),
 

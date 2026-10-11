@@ -41132,6 +41132,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Priority support: your tickets are answered first.'**
   String get supportPriorityBanner;
+
+  /// No description provided for @iosInstallHowTo.
+  ///
+  /// In en, this message translates to:
+  /// **'How to install on your iPhone or iPad'**
+  String get iosInstallHowTo;
+
+  /// No description provided for @iosInstallBannerText.
+  ///
+  /// In en, this message translates to:
+  /// **'Install GreenGo on your iPhone or iPad for the full app experience.'**
+  String get iosInstallBannerText;
+
+  /// No description provided for @iosInstallNotNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Not now'**
+  String get iosInstallNotNow;
+
+  /// No description provided for @iosInstallShowMe.
+  ///
+  /// In en, this message translates to:
+  /// **'Show me how'**
+  String get iosInstallShowMe;
 }
 
 class _AppLocalizationsDelegate

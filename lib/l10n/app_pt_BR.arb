@@ -7433,5 +7433,9 @@
   "boostUsesFreeBoost": "Grátis: usa um dos seus impulsos grátis do mês",
   "userErrorTierRequired": "Este recurso não está incluído na sua assinatura. Faça upgrade do seu plano para usá-lo.",
   "userErrorBusinessRequired": "É preciso ter uma conta empresarial ativa (Platinum).",
-  "supportPriorityBanner": "Suporte prioritário: seus chamados são respondidos primeiro."
+  "supportPriorityBanner": "Suporte prioritário: seus chamados são respondidos primeiro.",
+  "iosInstallHowTo": "Como instalar no seu iPhone ou iPad",
+  "iosInstallBannerText": "Instale o GreenGo no seu iPhone ou iPad para ter a experiência completa do app.",
+  "iosInstallNotNow": "Agora não",
+  "iosInstallShowMe": "Me mostre como"
 }

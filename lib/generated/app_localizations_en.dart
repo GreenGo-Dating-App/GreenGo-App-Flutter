@@ -24015,4 +24015,17 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get supportPriorityBanner =>
       'Priority support: your tickets are answered first.';
+
+  @override
+  String get iosInstallHowTo => 'How to install on your iPhone or iPad';
+
+  @override
+  String get iosInstallBannerText =>
+      'Install GreenGo on your iPhone or iPad for the full app experience.';
+
+  @override
+  String get iosInstallNotNow => 'Not now';
+
+  @override
+  String get iosInstallShowMe => 'Show me how';
 }

@@ -13312,5 +13312,9 @@
   "supportPriorityBanner": "Priority support: your tickets are answered first.",
   "@supportPriorityBanner": {
     "description": "Support tickets list banner, shown only to Gold and Platinum members"
-  }
+  },
+  "iosInstallHowTo": "How to install on your iPhone or iPad",
+  "iosInstallBannerText": "Install GreenGo on your iPhone or iPad for the full app experience.",
+  "iosInstallNotNow": "Not now",
+  "iosInstallShowMe": "Show me how"
 }

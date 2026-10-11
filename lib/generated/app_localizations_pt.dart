@@ -24218,6 +24218,19 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get supportPriorityBanner =>
       'Suporte prioritário: os teus pedidos são respondidos primeiro.';
+
+  @override
+  String get iosInstallHowTo => 'Como instalar no teu iPhone ou iPad';
+
+  @override
+  String get iosInstallBannerText =>
+      'Instala o GreenGo no teu iPhone ou iPad para teres a experiência completa da app.';
+
+  @override
+  String get iosInstallNotNow => 'Agora não';
+
+  @override
+  String get iosInstallShowMe => 'Mostra-me como';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -48446,4 +48459,17 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get supportPriorityBanner =>
       'Suporte prioritário: seus chamados são respondidos primeiro.';
+
+  @override
+  String get iosInstallHowTo => 'Como instalar no seu iPhone ou iPad';
+
+  @override
+  String get iosInstallBannerText =>
+      'Instale o GreenGo no seu iPhone ou iPad para ter a experiência completa do app.';
+
+  @override
+  String get iosInstallNotNow => 'Agora não';
+
+  @override
+  String get iosInstallShowMe => 'Me mostre como';
 }

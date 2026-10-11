@@ -24273,4 +24273,17 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get supportPriorityBanner =>
       'Assistenza prioritaria: i tuoi ticket ricevono risposta per primi.';
+
+  @override
+  String get iosInstallHowTo => 'Come installarla su iPhone o iPad';
+
+  @override
+  String get iosInstallBannerText =>
+      'Installa GreenGo sul tuo iPhone o iPad per usare l’app al meglio.';
+
+  @override
+  String get iosInstallNotNow => 'Non ora';
+
+  @override
+  String get iosInstallShowMe => 'Mostrami come';
 }

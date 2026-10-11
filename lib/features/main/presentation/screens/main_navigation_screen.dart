@@ -8,6 +8,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:showcaseview/showcaseview.dart';
 
+import '../../../../core/widgets/ios_install_hint.dart';
 import '../../../../core/config/app_config.dart';
 import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -216,6 +217,11 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       reverseDuration: const Duration(milliseconds: 260),
       value: 1,
     );
+
+    // Web on iPhone / iPad (not installed yet): offer the install guide.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) IosInstallBanner.maybeShow(context);
+    });
 
     // Set current user ID for push notification navigation
     PushNotificationService.currentUserId = widget.userId;
