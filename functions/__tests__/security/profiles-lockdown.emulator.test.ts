@@ -209,7 +209,10 @@ describe('LEGIT: what app 4.6.0+194/195 writes to its own public profile', () =>
     expect(await update(ALICE, `profiles/${ALICE}`, { isTraveler: false, travelerLocation: null })).toBe(200);
     expect(await update(ALICE, `profiles/${ALICE}`, { isOnline: true, lastSeen: new Date() })).toBe(200);
     expect(await update(ALICE, `profiles/${ALICE}`, { isGhostMode: true, isIncognito: false, incognitoExpiry: null })).toBe(200);
-    expect(await update(ALICE, `profiles/${ALICE}`, { isBoosted: true, boostExpiry: new Date() })).toBe(200);
+    // Boosts are switched ON only by the server (spendCoins 'boost'; the app's
+    // ProfileBoostRequested path since 4.6.0). The owner may only switch it OFF.
+    expect(await update(ALICE, `profiles/${ALICE}`, { isBoosted: true, boostExpiry: new Date(Date.now() + 1800000) })).toBe(403);
+    expect(await update(ALICE, `profiles/${ALICE}`, { isBoosted: false, boostExpiry: null })).toBe(200);
     expect(await update(ALICE, `profiles/${ALICE}`, { showOnMap: false })).toBe(200);
   });
 
