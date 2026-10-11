@@ -15,8 +15,23 @@ import '../config/map_basemap.dart';
 /// to load — offline, a bad URL in config, the public instance down — the map
 /// silently draws raster tiles instead of nothing. Setting `useVector: false`
 /// in `app_config/map_style` pins every client to raster without a rebuild.
+///
+/// [MapBasemapLayer.light] draws the fixed CARTO Positron raster style instead
+/// (light land, grey roads) for the place-detail maps; it ignores the remote
+/// config so the required attribution always matches the tiles.
 class MapBasemapLayer extends StatefulWidget {
-  const MapBasemapLayer({super.key});
+  const MapBasemapLayer({super.key}) : light = false;
+
+  /// The light CARTO Positron basemap.
+  const MapBasemapLayer.light({super.key}) : light = true;
+
+  /// Whether this layer draws the light basemap.
+  final bool light;
+
+  /// Tests set this to skip network tile requests entirely (the test HTTP
+  /// client answers every request with 400, which only adds noise).
+  @visibleForTesting
+  static bool debugDisableTiles = false;
 
   @override
   State<MapBasemapLayer> createState() => _MapBasemapLayerState();
@@ -47,8 +62,19 @@ class _MapBasemapLayerState extends State<MapBasemapLayer> {
     );
   }
 
+  Widget _light() => TileLayer(
+        urlTemplate: MapBasemap.lightTileUrl,
+        subdomains: const ['a', 'b', 'c', 'd'],
+        retinaMode: RetinaMode.isHighDensity(context),
+        userAgentPackageName: 'com.greengochat.greengochatapp',
+        maxZoom: MapBasemap.lightMaxZoom,
+        maxNativeZoom: MapBasemap.lightMaxZoom.toInt(),
+      );
+
   @override
   Widget build(BuildContext context) {
+    if (MapBasemapLayer.debugDisableTiles) return const SizedBox.shrink();
+    if (widget.light) return _light();
     if (!MapBasemap.useVector) return _raster();
 
     return FutureBuilder<Style>(

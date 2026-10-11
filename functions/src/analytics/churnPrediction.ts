@@ -518,7 +518,7 @@ function generateRecommendations(
   factors.forEach((factor) => {
     if (factor.impact < -0.2) {
       if (factor.factor === 'Engagement') {
-        recommendations.push('Send push notification about new matches');
+        recommendations.push('Send push notification about new connections');
       } else if (factor.factor === 'Message Activity') {
         recommendations.push('Suggest conversation starters');
       }

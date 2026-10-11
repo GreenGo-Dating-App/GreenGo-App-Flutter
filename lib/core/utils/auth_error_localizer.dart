@@ -13,6 +13,14 @@ class AuthErrorLocalizer {
 
     final lowerMessage = errorMessage.toLowerCase();
 
+    // Nickname sign-in (server callable, INC-2026-001)
+    if (errorMessage == 'NICKNAME_MFA_REQUIRED') {
+      return l10n.authErrorNicknameMfaRequired;
+    }
+    if (errorMessage == 'NICKNAME_SIGNIN_FAILED') {
+      return l10n.authErrorNicknameSignInFailed;
+    }
+
     // User not found
     if (lowerMessage.contains('no user found') ||
         lowerMessage.contains('user-not-found') ||

@@ -24,7 +24,13 @@
  *     --esModuleInterop --skipLibCheck --resolveJsonModule scripts/strip-public-sensitive-fields.ts
  *   GOOGLE_APPLICATION_CREDENTIALS=/path/sa.json GCLOUD_PROJECT=greengo-chat \
  *     node scripts/.out/scripts/strip-public-sensitive-fields.js [--apply] \
- *     [--page-size 300] [--start-after <uid>] [--max-pages N]
+ *     [--page-size 300] [--start-after <uid>] [--max-pages N] [--fcm-token]
+ *
+ * --fcm-token (INC-2026-001): also remove the push token (`fcmToken`,
+ * `fcmTokenUpdatedAt`) from the public profile. Every push sender reads
+ * users/{uid}.fcmToken; when users/{uid} has no token yet, the public one is
+ * first copied there (never over a newer users token), in the same
+ * transaction.
  */
 import * as admin from 'firebase-admin';
 import {
@@ -36,23 +42,47 @@ function arg(name: string): string | undefined {
   return i >= 0 ? process.argv[i + 1] : undefined;
 }
 
-export async function stripOne(fs: admin.firestore.Firestore, uid: string, apply: boolean): Promise<string[]> {
+/** Public push-token fields removed by --fcm-token. */
+export const PUBLIC_PUSH_TOKEN_FIELDS = ['fcmToken', 'fcmTokenUpdatedAt'] as const;
+
+export async function stripOne(
+  fs: admin.firestore.Firestore,
+  uid: string,
+  apply: boolean,
+  opts: { fcmToken?: boolean } = {},
+): Promise<string[]> {
   return fs.runTransaction(async (tx) => {
     const pubRef = fs.collection('profiles').doc(uid);
     const privRef = fs.collection(PRIVATE_PROFILES).doc(uid);
-    const [pubSnap, privSnap] = await tx.getAll(pubRef, privRef);
+    const userRef = fs.collection('users').doc(uid);
+    const refs = opts.fcmToken ? [pubRef, privRef, userRef] : [pubRef, privRef];
+    const [pubSnap, privSnap, userSnap] = await tx.getAll(...refs);
     if (!pubSnap.exists) return [];
     const pub = pubSnap.data() ?? {};
     const present = SENSITIVE_FIELDS.filter((f) => getPath(pub, f.pub) !== undefined);
-    if (!present.length) return [];
-    const missing = privateCopyUpdates(pub, privSnap.data() ?? {}, present, true);
+    const pushPresent = opts.fcmToken
+      ? PUBLIC_PUSH_TOKEN_FIELDS.filter((f) => pub[f] !== undefined)
+      : [];
+    if (!present.length && !pushPresent.length) return [];
     if (apply) {
-      if (Object.keys(missing).length) tx.set(privRef, nestedFromPaths(missing), { merge: true });
+      if (present.length) {
+        const missing = privateCopyUpdates(pub, privSnap.data() ?? {}, present, true);
+        if (Object.keys(missing).length) tx.set(privRef, nestedFromPaths(missing), { merge: true });
+      }
+      const token = pub.fcmToken;
+      if (pushPresent.length && typeof token === 'string' && token
+          && !userSnap?.data()?.fcmToken) {
+        tx.set(userRef, {
+          fcmToken: token,
+          ...(pub.fcmTokenUpdatedAt !== undefined ? { fcmTokenUpdatedAt: pub.fcmTokenUpdatedAt } : {}),
+        }, { merge: true });
+      }
       const del: Record<string, any> = {};
       for (const f of present) del[f.pub] = admin.firestore.FieldValue.delete();
+      for (const f of pushPresent) del[f] = admin.firestore.FieldValue.delete();
       tx.update(pubRef, del);
     }
-    return present.map((f) => f.pub);
+    return [...present.map((f) => f.pub), ...pushPresent];
   });
 }
 
@@ -60,6 +90,7 @@ async function main() {
   if (!admin.apps.length) admin.initializeApp();
   const fs = admin.firestore();
   const apply = process.argv.includes('--apply');
+  const fcmToken = process.argv.includes('--fcm-token');
   const pageSize = Math.min(Number(arg('--page-size') ?? 300), 400);
   const maxPages = Number(arg('--max-pages') ?? Number.MAX_SAFE_INTEGER);
   let cursor: string | null = arg('--start-after') ?? null;
@@ -71,7 +102,7 @@ async function main() {
     const snap = await q.select().get();
     if (snap.empty) break;
     for (let i = 0; i < snap.docs.length; i += 10) {
-      const res = await Promise.all(snap.docs.slice(i, i + 10).map((d) => stripOne(fs, d.id, apply)));
+      const res = await Promise.all(snap.docs.slice(i, i + 10).map((d) => stripOne(fs, d.id, apply, { fcmToken })));
       for (const fields of res) {
         if (fields.length) stripped++;
         for (const f of fields) counts[f] = (counts[f] ?? 0) + 1;

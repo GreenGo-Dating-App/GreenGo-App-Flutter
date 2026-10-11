@@ -307,7 +307,7 @@ export async function handleConfirmAccountDeletion(req: Request, res: Response):
       const safe = encodeURIComponent(String(token));
       res.status(200).type('html').send(page(
         'Delete your GreenGo account?',
-        '<p>This permanently deletes your GreenGo account, profile, photos, matches and messages. ' +
+        '<p>This permanently deletes your GreenGo account, profile, photos, connections and messages. ' +
           'It cannot be undone. Remaining coins and active subscriptions are lost.</p>' +
           '<p>Cancel any App Store / Google Play subscription in the store as well.</p>' +
           `<form method="POST" action="?token=${safe}"><input type="hidden" name="token" value="${safe}">` +

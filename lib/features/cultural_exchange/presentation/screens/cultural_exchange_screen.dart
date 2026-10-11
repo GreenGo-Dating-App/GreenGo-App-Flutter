@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/entities.dart';
@@ -94,14 +95,15 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
                       ),
                     ),
                     actions: [
-                      IconButton(
-                        icon: const Icon(
-                          Icons.favorite_border,
-                          color: AppColors.richGold,
+                      if (FlavorConfig.enableEtiquetteGuide)
+                        IconButton(
+                          icon: const Icon(
+                            Icons.public,
+                            color: AppColors.richGold,
+                          ),
+                          onPressed: () => _navigateToDatingEtiquette(context),
+                          tooltip: l10n.culturalExchangeDatingEtiquette,
                         ),
-                        onPressed: () => _navigateToDatingEtiquette(context),
-                        tooltip: l10n.culturalExchangeDatingEtiquette,
-                      ),
                     ],
                   ),
 
@@ -131,16 +133,19 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
                           const SizedBox(height: 24),
                         ],
 
-                        // Quick Access: Dating Etiquette
-                        _buildSectionHeader(
-                          l10n.culturalExchangeDatingEtiquetteGuide,
-                          icon: Icons.favorite,
-                          onViewAll: () =>
-                              _navigateToDatingEtiquette(context),
-                        ),
-                        const SizedBox(height: 10),
-                        _buildDatingEtiquettePreview(state),
-                        const SizedBox(height: 24),
+                        // Quick Access: Social Etiquette (hidden until the
+                        // Firestore content is reviewed, see FlavorConfig).
+                        if (FlavorConfig.enableEtiquetteGuide) ...[
+                          _buildSectionHeader(
+                            l10n.culturalExchangeDatingEtiquetteGuide,
+                            icon: Icons.public,
+                            onViewAll: () =>
+                                _navigateToDatingEtiquette(context),
+                          ),
+                          const SizedBox(height: 10),
+                          _buildDatingEtiquettePreview(state),
+                          const SizedBox(height: 24),
+                        ],
 
                         // User Cultural Tips
                         _buildSectionHeader(

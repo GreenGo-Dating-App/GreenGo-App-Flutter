@@ -11,6 +11,7 @@ import '../bloc/verification_admin_bloc.dart';
 import '../bloc/verification_admin_event.dart';
 import '../bloc/verification_admin_state.dart';
 import '../../../../core/utils/user_error.dart';
+import '../../../../core/security/viewer_watermark.dart';
 
 class VerificationAdminScreen extends StatefulWidget {
 
@@ -801,7 +802,12 @@ class _VerificationCard extends StatelessWidget {
           ),
           body: Center(
             child: InteractiveViewer(
-              child: Image.network(imageUrl),
+              // Someone else's ID selfie: always stamped with the reviewing
+              // admin's id, so a leaked capture is traceable.
+              child: ViewerWatermark.media(
+                isPrivate: true,
+                child: Image.network(imageUrl),
+              ),
             ),
           ),
         ),

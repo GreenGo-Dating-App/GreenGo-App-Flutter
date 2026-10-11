@@ -127,6 +127,14 @@ void main() {
     expect(find.text('Baixar meus dados'), findsOneWidget);
   });
 
+  testWidgets('open-source licenses entry opens the licenses page', (tester) async {
+    final l10n = await pump(tester, export: _FakeExport([]));
+    expect(find.text(l10n.openSourceLicensesTitle), findsOneWidget);
+    await tester.tap(find.byKey(const Key('openSourceLicensesTile')));
+    await tester.pumpAndSettle();
+    expect(find.byType(LicensePage), findsOneWidget);
+  });
+
   test('server error codes map to failures', () {
     expect(DataExportService.failureFor('unauthenticated', {'code': 'REQUIRES_RECENT_LOGIN'}),
         DataExportFailure.requiresRecentLogin);

@@ -78,7 +78,7 @@ extension TipCategoryExtension on TipCategory {
       case TipCategory.transportation:
         return 'Transportation';
       case TipCategory.dating:
-        return 'Dating';
+        return 'Meeting People';
       case TipCategory.customs:
         return 'Customs';
       case TipCategory.language:
@@ -95,7 +95,7 @@ extension TipCategoryExtension on TipCategory {
       case TipCategory.transportation:
         return '🚌';
       case TipCategory.dating:
-        return '💕';
+        return '🤝';
       case TipCategory.customs:
         return '🎎';
       case TipCategory.language:

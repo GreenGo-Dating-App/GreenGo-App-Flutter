@@ -230,7 +230,7 @@ void main() {
       // Matching the guard as two fragments rather than one multi-line
       // string keeps this robust to reformatting of the rules file.
       final updateRule = rules.substring(
-        rules.indexOf('allow update: if (isOwner(profileId)'),
+        rules.indexOf('allow update: if publicProfileUpdateOk() && ((isOwner(profileId)'),
         rules.indexOf('allow delete: if isOwner(profileId)'),
       );
       expect(
@@ -245,7 +245,7 @@ void main() {
       // delete + create was a way around the update guard.
       final createRule = rules.substring(
         rules.indexOf('allow create: if isOwner(profileId)'),
-        rules.indexOf('allow update: if (isOwner(profileId)'),
+        rules.indexOf('allow update: if publicProfileUpdateOk() && ((isOwner(profileId)'),
       );
       for (final flag in ['isAdmin', 'isBanned', 'isAgeVerified']) {
         expect(createRule.contains("'$flag'"), isTrue,

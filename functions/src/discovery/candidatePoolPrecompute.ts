@@ -106,8 +106,12 @@ function toPoolMember(doc: admin.firestore.DocumentSnapshot): PoolMember | null 
   } else if (d.dateOfBirth) {
     dob = new Date(d.dateOfBirth);
   }
-  if (!dob || isNaN(dob.getTime())) return null;
-  const age = calculateAge(dob);
+  // INC-2026-001: public profiles no longer carry dateOfBirth; fall back to
+  // the server-computed public `age` (privateProfile.ts).
+  let age: number;
+  if (dob && !isNaN(dob.getTime())) age = calculateAge(dob);
+  else if (typeof d.age === 'number' && Number.isFinite(d.age)) age = d.age;
+  else return null;
   if (age < 18 || age > 120) return null;
 
   // Resolve effective location (traveler-aware)

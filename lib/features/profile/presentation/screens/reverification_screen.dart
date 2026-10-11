@@ -10,6 +10,7 @@ import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../data/private_profile.dart';
+import '../../../../core/security/app_only_content.dart';
 
 /// Standalone screen shown when admin requests a better verification photo.
 /// User takes a new selfie, it uploads to Storage, updates the profile doc
@@ -127,6 +128,8 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // Verification selfies are app-only: a browser cannot block screenshots.
+    if (isAppOnlyContentBlocked()) return const AppOnlyContentScreen();
     final l10n = AppLocalizations.of(context)!;
 
     return PopScope(

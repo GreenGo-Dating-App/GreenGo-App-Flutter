@@ -37,6 +37,7 @@ import '../bloc/notifications_event.dart';
 import '../bloc/notifications_state.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../safety/presentation/screens/moderation_decision_screen.dart';
+import '../../../copyright/presentation/screens/copyright_my_notices_screen.dart';
 
 /// Notifications Screen — the app's notifications hub.
 ///
@@ -338,6 +339,12 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
         if (value is String && value.isNotEmpty) return value;
       }
       return null;
+    }
+
+    // Copyright removal / restoration: notices about my content.
+    if (action == kCopyrightNoticeAction) {
+      Navigator.of(context).push(CopyrightMyNoticesScreen.route());
+      return;
     }
 
     // Moderation decision (DSA art. 17/20): statement of reasons + appeal.

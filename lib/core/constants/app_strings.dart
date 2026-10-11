@@ -3,7 +3,7 @@ class AppStrings {
 
   // App
   static const String appName = 'GreenGoChat';
-  static const String appTagline = 'Discover Your Perfect Match';
+  static const String appTagline = 'Discover cultures and people worldwide';
 
   // Authentication
   static const String login = 'Login';

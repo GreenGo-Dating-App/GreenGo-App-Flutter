@@ -5,7 +5,6 @@ import 'package:audioplayers/audioplayers.dart' hide Source;
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
-import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/location_share_service.dart';
 import '../../../../core/widgets/voice_message_widget.dart';
@@ -21,8 +20,12 @@ import '../../../../generated/app_localizations.dart';
 import '../utils/chat_l10n.dart';
 import '../../domain/entities/message.dart';
 import 'location_message_map.dart';
+import '../../../../core/widgets/interactive_location_map.dart';
 import 'deleted_message_bubble.dart';
 import '../../../../core/widgets/ai_consent_sheet.dart';
+import '../../../../core/security/viewer_watermark.dart';
+import '../../../copyright/data/copyright_service.dart';
+import '../../../copyright/presentation/screens/copyright_notice_form_screen.dart';
 
 /// Message Bubble Widget
 ///
@@ -1130,41 +1133,38 @@ class _MessageBubbleState extends State<MessageBubble> {
             ),
           );
         }
-        // A cached mini-map preview; tap opens the point in an external maps app.
+        // Static light mini-map; tap opens the full-screen interactive map
+        // (zoom, recenter, directions). The link below opens the maps app.
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: [
-            LocationMessageMap(
-              lat: loc.lat,
-              lng: loc.lng,
-              onTap: () => launchUrl(
-                Uri.parse(LocationShareService.mapsUrl(loc.lat, loc.lng)),
-                mode: LaunchMode.externalApplication,
-              ),
-            ),
+            LocationMessageMap(lat: loc.lat, lng: loc.lng),
             const SizedBox(height: 4),
-            Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Icon(
-                  Icons.location_on,
-                  size: 14,
-                  color:
-                      isCurrentUser ? AppColors.deepBlack : AppColors.richGold,
-                ),
-                const SizedBox(width: 4),
-                Text(
-                  l10n.chatOpenInMaps,
-                  style: TextStyle(
-                    color: isCurrentUser
-                        ? AppColors.deepBlack
-                        : AppColors.textSecondary,
-                    fontSize: 12,
-                    decoration: TextDecoration.underline,
+            InkWell(
+              onTap: () => openInMapsApp(context, loc.lat, loc.lng),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(
+                    Icons.location_on,
+                    size: 14,
+                    color:
+                        isCurrentUser ? AppColors.deepBlack : AppColors.richGold,
                   ),
-                ),
-              ],
+                  const SizedBox(width: 4),
+                  Text(
+                    l10n.chatOpenInMaps,
+                    style: TextStyle(
+                      color: isCurrentUser
+                          ? AppColors.deepBlack
+                          : AppColors.textSecondary,
+                      fontSize: 12,
+                      decoration: TextDecoration.underline,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         );
@@ -1326,6 +1326,22 @@ class _MessageBubbleState extends State<MessageBubble> {
                   _showReportDialog(context);
                 },
               ),
+              ListTile(
+                key: const ValueKey('message-report-copyright'),
+                leading: const Icon(Icons.copyright, color: AppColors.textSecondary),
+                title: Text(
+                  AppLocalizations.of(context)!.copyrightReportEntry,
+                  style: const TextStyle(color: AppColors.textPrimary),
+                ),
+                onTap: () {
+                  Navigator.pop(bottomSheetContext);
+                  final m = widget.message;
+                  openCopyrightNoticeForm(context,
+                      content: m.conversationId.isNotEmpty
+                          ? CopyrightContentRef.message('conversations', m.conversationId, m.messageId)
+                          : null);
+                },
+              ),
             ],
             const SizedBox(height: 16),
           ],
@@ -1419,14 +1435,19 @@ class _MessageBubbleState extends State<MessageBubble> {
               minScale: 0.5,
               maxScale: 4.0,
               // Full-screen viewer: full resolution, but disk-cached.
-              child: CachedNetworkImage(
-                imageUrl: imageUrl,
-                fit: BoxFit.contain,
-                placeholder: (context, _) => const Center(
-                  child: CircularProgressIndicator(color: AppColors.richGold),
-                ),
-                errorWidget: (context, _, __) => const Center(
-                  child: Icon(Icons.broken_image, color: Colors.white54, size: 64),
+              // Chat media is private: stamped with the VIEWER's id so a
+              // leaked capture is traceable.
+              child: ViewerWatermark.media(
+                isPrivate: true,
+                child: CachedNetworkImage(
+                  imageUrl: imageUrl,
+                  fit: BoxFit.contain,
+                  placeholder: (context, _) => const Center(
+                    child: CircularProgressIndicator(color: AppColors.richGold),
+                  ),
+                  errorWidget: (context, _, __) => const Center(
+                    child: Icon(Icons.broken_image, color: Colors.white54, size: 64),
+                  ),
                 ),
               ),
             ),

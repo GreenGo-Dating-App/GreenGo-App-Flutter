@@ -217,7 +217,7 @@ class StreakMilestones {
 
   static const StreakMilestone yearStreak = StreakMilestone(
     id: 'streak_365',
-    name: 'Year of Love', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    name: 'Year of Discovery', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     description: 'Log in for 365 consecutive days', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     daysRequired: 365,
     coinReward: 2500,

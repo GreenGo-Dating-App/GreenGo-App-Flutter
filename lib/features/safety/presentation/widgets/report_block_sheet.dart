@@ -5,6 +5,8 @@ import '../../../../core/utils/user_error.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../generated/app_localizations.dart';
 import '../../data/services/safety_actions_service.dart';
+import '../../../copyright/data/copyright_service.dart';
+import '../../../copyright/presentation/screens/copyright_notice_form_screen.dart';
 
 /// App-wide "report or block this person" sheet.
 ///
@@ -33,6 +35,7 @@ Future<void> showReportBlockSheet(
   required String surface,
   String? contentId,
   bool allowBlock = true,
+  CopyrightContentRef? copyrightContent,
 }) async {
   final l10n = AppLocalizations.of(context)!;
 
@@ -74,6 +77,15 @@ Future<void> showReportBlockSheet(
               ),
               onTap: () => Navigator.pop(sheetContext, _SafetyAction.block),
             ),
+          ListTile(
+            key: const ValueKey('report-copyright'),
+            leading: const Icon(Icons.copyright, color: AppColors.textSecondary),
+            title: Text(
+              l10n.copyrightReportEntry,
+              style: const TextStyle(color: AppColors.textPrimary),
+            ),
+            onTap: () => Navigator.pop(sheetContext, _SafetyAction.copyright),
+          ),
           const SizedBox(height: 8),
         ],
       ),
@@ -99,10 +111,12 @@ Future<void> showReportBlockSheet(
         blockedUserId: reportedUserId,
         blockedUserName: reportedUserName,
       );
+    case _SafetyAction.copyright:
+      await openCopyrightNoticeForm(context, content: copyrightContent);
   }
 }
 
-enum _SafetyAction { report, block }
+enum _SafetyAction { report, block, copyright }
 
 /// The reasons offered. Deliberately the same list everywhere so moderation
 /// can aggregate across surfaces, and `underage` is included because

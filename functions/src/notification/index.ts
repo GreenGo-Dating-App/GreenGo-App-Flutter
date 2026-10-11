@@ -422,7 +422,7 @@ export const startWelcomeEmailSeries = onCall<WelcomeEmailRequest>(
       const welcomeSeries = [
         { day: 0, templateId: 'welcome_day_0', subject: 'Welcome to GreenGo!' },
         { day: 1, templateId: 'welcome_day_1', subject: 'Complete your profile' },
-        { day: 3, templateId: 'welcome_day_3', subject: 'Tips for great matches' },
+        { day: 3, templateId: 'welcome_day_3', subject: 'Tips for great conversations' },
         { day: 7, templateId: 'welcome_day_7', subject: 'Your first week recap' },
       ];
 

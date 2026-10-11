@@ -154,22 +154,23 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
   /// Check if either user has blocked the other (bidirectional)
   Future<bool> _isUserBlocked(String userId, String otherUserId) async {
     try {
-      final blockQuery = await FirebaseFirestore.instance
-          .collection('blockedUsers')
-          .where('blockerId', whereIn: [userId, otherUserId])
-          .get();
-
-      for (final doc in blockQuery.docs) {
-        final data = doc.data();
-        final blockerId = data['blockerId'] as String;
-        final blockedUserId = data['blockedUserId'] as String;
-
-        if ((blockerId == userId && blockedUserId == otherUserId) ||
-            (blockerId == otherUserId && blockedUserId == userId)) {
-          return true;
-        }
-      }
-      return false;
+      // Two queries that each filter on the caller's own id: the rules only
+      // let a user read blocks they are a party to (INC-2026-001), so a
+      // `blockerId in [me, other]` query would be refused as a whole.
+      final col = FirebaseFirestore.instance.collection('blockedUsers');
+      final results = await Future.wait([
+        col
+            .where('blockerId', isEqualTo: userId)
+            .where('blockedUserId', isEqualTo: otherUserId)
+            .limit(1)
+            .get(),
+        col
+            .where('blockerId', isEqualTo: otherUserId)
+            .where('blockedUserId', isEqualTo: userId)
+            .limit(1)
+            .get(),
+      ]);
+      return results.any((r) => r.docs.isNotEmpty);
     } catch (e) {
       return false;
     }

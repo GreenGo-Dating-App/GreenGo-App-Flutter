@@ -454,9 +454,14 @@ export { reverseGeocodeCoarse } from './location/reverseGeocodeCoarse';
 // them only after the project is upgraded to Identity Platform.
 export { logAccess, logAccessOnSignIn, logAccessOnSignUp } from './auth/accessLogs';
 
-// Neutral age gate, interim (H-21). The profile-trigger backstop runs inside
-// reverseGeocodeProfileLocation.
+// Neutral age gate, interim (H-21). Backstops: the public-profile check runs
+// inside reverseGeocodeProfileLocation, the private-DOB check inside
+// syncCoarseFromPrivateProfile.
 export { declareAge } from './auth/ageGate';
+
+// Nickname sign-in (INC-2026-001): server-side nickname -> custom token, so
+// nicknames/{nick} no longer has to expose the account email.
+export { signInWithNickname } from './auth/nicknameSignIn';
 
 // Regional strong age assurance (P3-1, H-21): BR / GB / US-TX when
 // app_config/feature_flags.ageAssuranceEnforced is on.
@@ -628,6 +633,8 @@ export {
   getVerificationPhotoUrl,
   getSharedAlbum,
 } from './profiles/privateProfileTriggers';
+// Block index for the profiles `get` rule (INC-2026-001).
+export { syncBlockIndex } from './safety/blockIndex';
 
 // Presence / Location Enrichment Functions
 export {
@@ -686,6 +693,10 @@ export {
 // Link previews (Open Graph) for shared events + communities, served on
 // /e/**, /c/** and /og/** via Firebase Hosting rewrites.
 export { sharePreview } from './share/sharePreview';
+
+// Flutter web fallback fonts (Roboto/Noto) served same-origin on /gfonts/**
+// so visitors' browsers never contact fonts.gstatic.com (GDPR).
+export { fontFallbackProxy } from './web/fontFallbackProxy';
 
 // Events — notify people when they are added as a co-owner of an event.
 export { onEventCoOwnersChanged } from './events/coOwnerNotify';
@@ -798,3 +809,18 @@ export {
 export { emailOnIdVerificationSubmitted } from './emails/verificationSubmittedEmail';
 export { emailTicketsOnOrderPaid, emailBookingQrOnConfirm } from './emails/ticketEmails';
 export { sendParticipantListsDue, sendParticipantsList } from './emails/participantsList';
+
+// Copyright notice-and-takedown (DMCA §512 / DSA art. 16-20 / Lei 9.610):
+// notices (app callable + public web form with email confirmation),
+// counter-notices, admin queue, strikes, automatic restoration.
+export {
+  submitCopyrightNotice,
+  submitCopyrightCounterNotice,
+  copyrightNoticeWeb,
+  adminListCopyrightNotices,
+  adminGetCopyrightNotice,
+  adminDecideCopyrightNotice,
+  adminMarkCopyrightLawsuit,
+  adminGetCopyrightStrikes,
+  processCopyrightNotices,
+} from './copyright';

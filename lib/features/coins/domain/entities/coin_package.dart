@@ -238,7 +238,7 @@ class CoinSpendItems {
   static const CoinSpendItem superLike = CoinSpendItem(
     itemId: 'super_like',
     name: 'Super Like', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
-    description: 'Send a super like to stand out', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
+    description: 'Send a Priority Connect to stand out', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
     coinCost: 5,
     iconAsset: 'assets/icons/super_like.png',
     category: CoinSpendCategory.matching,

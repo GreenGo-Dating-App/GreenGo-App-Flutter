@@ -18,6 +18,7 @@ import '../../data/datasources/events_remote_datasource.dart';
 import '../../domain/entities/event.dart';
 import '../../../chat/presentation/widgets/deleted_message_bubble.dart';
 import '../../../../core/widgets/ai_consent_sheet.dart';
+import '../../../copyright/data/copyright_service.dart';
 
 /// Event Group Chat Screen
 ///
@@ -141,6 +142,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
       reportedUserName: name.isNotEmpty ? name : l10n.chatUnknown,
       surface: 'eventChat:${widget.event.id}',
       contentId: message.id,
+      copyrightContent: CopyrightContentRef.message('events', widget.event.id, message.id),
     );
   }
 

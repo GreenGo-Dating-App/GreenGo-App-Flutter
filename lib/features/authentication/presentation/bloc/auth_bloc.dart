@@ -95,7 +95,10 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
         // Reload countdown dates from Firestore on every login
         AccessControlService.loadCountdownDatesFromFirestore();
         // Refresh access date in a fire-and-forget manner
-        _accessControlService.refreshUserAccessDate(user.uid, event.email).catchError((e) {
+        // A nickname sign-in carries the nickname in event.email: use the
+        // account's real email for the early-access lookup.
+        final accessEmail = user.email.isNotEmpty ? user.email : event.email;
+        _accessControlService.refreshUserAccessDate(user.uid, accessEmail).catchError((e) {
           // Log error but don't fail sign-in
           return null;
         });

@@ -25,16 +25,20 @@ class ExperienceReportInput {
 /// "Report this experience": reason chips + optional text. Three distinct
 /// reporters hide the listing pending admin review (server trigger).
 class ReportExperienceSheet extends StatefulWidget {
-  const ReportExperienceSheet({super.key});
+  const ReportExperienceSheet({super.key, this.onCopyright});
 
-  static Future<ExperienceReportInput?> show(BuildContext context) =>
+  /// "Report copyright infringement" (opens the DMCA notice form).
+  final VoidCallback? onCopyright;
+
+  static Future<ExperienceReportInput?> show(BuildContext context,
+          {VoidCallback? onCopyright}) =>
       showModalBottomSheet<ExperienceReportInput>(
         context: context,
         isScrollControlled: true,
         backgroundColor: AppColors.backgroundCard,
         shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(top: Radius.circular(18))),
-        builder: (_) => const ReportExperienceSheet(),
+        builder: (_) => ReportExperienceSheet(onCopyright: onCopyright),
       );
 
   static String label(AppLocalizations l, ExperienceReportReason r) =>
@@ -121,6 +125,16 @@ class _ReportExperienceSheetState extends State<ReportExperienceSheet> {
                       ExperienceReportInput(_reason!, _details.text)),
               child: Text(l.uexpReportSend),
             ),
+            if (widget.onCopyright != null)
+              TextButton.icon(
+                key: const ValueKey('experience-report-copyright'),
+                onPressed: () {
+                  Navigator.pop(context);
+                  widget.onCopyright!();
+                },
+                icon: const Icon(Icons.copyright, size: 18),
+                label: Text(l.copyrightReportEntry),
+              ),
           ],
         ),
       ),

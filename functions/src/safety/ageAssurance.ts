@@ -301,18 +301,28 @@ export async function requiresIdDocument(uid: string): Promise<boolean> {
   }
 }
 
+/** ageVerification keys that live only in profiles_private (never public). */
+export const PRIVATE_ONLY_AGE_VERIFICATION_KEYS = ['documentHash', 'documentDateOfBirth'] as const;
+
 /** Writes the status to the profile, plus the denormalised flag rules read. */
 async function writeStatus(
   uid: string,
   status: AgeVerificationStatus,
   extra: Record<string, unknown> = {}
 ): Promise<void> {
+  // INC-2026-001: the ID-document fingerprint and the birth date read off the
+  // document are PRIVATE (profiles_private only). The public copy never gets
+  // them again, and any legacy public value is removed on every status write.
+  const publicExtra: Record<string, unknown> = { ...extra };
+  for (const k of PRIVATE_ONLY_AGE_VERIFICATION_KEYS) {
+    publicExtra[k] = admin.firestore.FieldValue.delete();
+  }
   await db.collection('profiles').doc(uid).set(
     {
       ageVerification: {
         status,
         updatedAt: admin.firestore.Timestamp.now(),
-        ...extra,
+        ...publicExtra,
       },
       // Denormalised so security rules cost ONE document read instead of
       // reaching into a nested map on every community write.
@@ -683,13 +693,24 @@ export const getAgeVerificationDetails = onCall({ memory: '512MiB' }, async (req
   const targetUid = String(request.data?.userId ?? '');
   if (!targetUid) throw new HttpsError('invalid-argument', 'userId is required.');
 
-  const [profileSnap, queueSnap, indexSnap] = await Promise.all([
+  const [profileSnap, privateSnap, queueSnap, indexSnap] = await Promise.all([
     db.collection('profiles').doc(targetUid).get(),
+    db.collection('profiles_private').doc(targetUid).get(),
     db.collection('age_verification_queue').doc(targetUid).get(),
     db.collection('id_documents').doc(targetUid).get(),
   ]);
-  const profile = profileSnap.data() ?? {};
-  const av = (profile.ageVerification ?? {}) as Record<string, any>;
+  // P1-4 / INC-2026-001: the date of birth and the ID-derived values live in
+  // profiles_private; the public copies are legacy and get stripped.
+  const publicProfile = profileSnap.data() ?? {};
+  const privateProfile = privateSnap.data() ?? {};
+  const profile = {
+    ...publicProfile,
+    dateOfBirth: privateProfile.dateOfBirth ?? publicProfile.dateOfBirth ?? null,
+  } as Record<string, any>;
+  const av = {
+    ...((publicProfile.ageVerification ?? {}) as Record<string, any>),
+    ...((privateProfile.ageVerification ?? {}) as Record<string, any>),
+  } as Record<string, any>;
   const queue = queueSnap.data() ?? null;
   const index = indexSnap.data() ?? null;
 

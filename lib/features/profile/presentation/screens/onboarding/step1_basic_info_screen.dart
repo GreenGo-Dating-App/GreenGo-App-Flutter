@@ -13,7 +13,13 @@ import 'onboarding_value_labels.dart';
 import '../../../domain/age_gate.dart';
 
 class Step1BasicInfoScreen extends StatefulWidget {
-  const Step1BasicInfoScreen({super.key});
+  const Step1BasicInfoScreen({super.key, this.ageGate, this.pickDate});
+
+  /// Test seams. Default: the real [AgeGateService] and the Material date
+  /// picker (same widget on Android, iOS and web).
+  final AgeGateService? ageGate;
+  final Future<DateTime?> Function(BuildContext context, DateTime initial)?
+  pickDate;
 
   @override
   State<Step1BasicInfoScreen> createState() => _Step1BasicInfoScreenState();
@@ -25,7 +31,12 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
   DateTime? _selectedDate;
   String? _selectedGender;
   bool _checkingAge = false;
-  final AgeGateService _ageGate = AgeGateService();
+  late final AgeGateService _ageGate = widget.ageGate ?? AgeGateService();
+
+  /// Derived ONLY from the date currently selected, recomputed on every pick,
+  /// so choosing a correct date clears it immediately (no sticky flag).
+  bool get _selectedDateUnderAge =>
+      _selectedDate != null && isUnderMinimumAge(_selectedDate!);
 
   final List<Map<String, dynamic>> _genders = [
     {'label': 'Male', 'icon': Icons.male},
@@ -48,33 +59,41 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
   Future<void> _selectDate(BuildContext context) async {
     // Neutral age gate (H-21): any date up to today, starting on the year
     // grid at the current year, so the picker does not steer anyone towards
-    // an "adult" date. Age is checked on Continue.
+    // an "adult" date. The age is computed from the picked date right away
+    // (inline hint, Continue refused) and can be corrected by picking again.
     final now = DateTime.now();
     final today = DateTime(now.year, now.month, now.day);
-    final picked = await showDatePicker(
-      context: context,
-      initialDate: _selectedDate ?? today,
-      firstDate: DateTime(1900),
-      lastDate: today,
-      initialDatePickerMode: DatePickerMode.year,
-      builder: (context, child) {
-        return Theme(
-          data: Theme.of(context).copyWith(
-            colorScheme: const ColorScheme.dark(
-              primary: AppColors.richGold,
-              onPrimary: Colors.black,
-              surface: Color(0xFF1A1A1A),
-              onSurface: Colors.white,
-            ), dialogTheme: const DialogThemeData(backgroundColor: Color(0xFF0D0D0D)),
-          ),
-          child: child!,
-        );
-      },
-    );
+    final picked = widget.pickDate != null
+        ? await widget.pickDate!(context, _selectedDate ?? today)
+        : await showDatePicker(
+            context: context,
+            initialDate: _selectedDate ?? today,
+            firstDate: DateTime(1900),
+            lastDate: today,
+            initialDatePickerMode: DatePickerMode.year,
+            builder: (context, child) {
+              return Theme(
+                data: Theme.of(context).copyWith(
+                  colorScheme: const ColorScheme.dark(
+                    primary: AppColors.richGold,
+                    onPrimary: Colors.black,
+                    surface: Color(0xFF1A1A1A),
+                    onSurface: Colors.white,
+                  ),
+                  dialogTheme: const DialogThemeData(
+                    backgroundColor: Color(0xFF0D0D0D),
+                  ),
+                ),
+                child: child!,
+              );
+            },
+          );
 
+    if (!mounted) return;
     if (picked != null && picked != _selectedDate) {
       setState(() {
-        _selectedDate = picked;
+        // Calendar date only: the age check never depends on time of day.
+        _selectedDate = DateTime(picked.year, picked.month, picked.day);
       });
     }
   }
@@ -84,29 +103,41 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
     if (_formKey.currentState!.validate() &&
         _selectedDate != null &&
         _selectedGender != null) {
+      // Under 18 on the date selected NOW: refuse inline, nothing stored or
+      // sent, so the user can pick the right date and continue.
+      if (_selectedDateUnderAge) {
+        setState(() {});
+        return;
+      }
       setState(() => _checkingAge = true);
-      final allowed = await _ageGate.mayContinue(_selectedDate!);
+      final result = await _ageGate.check(_selectedDate!);
       if (!mounted) return;
       setState(() => _checkingAge = false);
-      if (!allowed) {
+      if (result == AgeGateResult.underAge) return;
+      if (result == AgeGateResult.previouslyBlocked) {
         await _showAgeBlocked();
         return;
       }
       context.read<OnboardingBloc>().add(
-            OnboardingBasicInfoUpdated(
-              displayName: _nameController.text.trim(),
-              dateOfBirth: _selectedDate!,
-              gender: _selectedGender!,
-            ),
-          );
+        OnboardingBasicInfoUpdated(
+          displayName: _nameController.text.trim(),
+          dateOfBirth: _selectedDate!,
+          gender: _selectedGender!,
+        ),
+      );
       context.read<OnboardingBloc>().add(const OnboardingNextStep());
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(AppLocalizations.of(context)?.onboardingCompleteAllFields ?? 'Please complete all fields'),
+          content: Text(
+            AppLocalizations.of(context)?.onboardingCompleteAllFields ??
+                'Please complete all fields',
+          ),
           backgroundColor: AppColors.errorRed,
           behavior: SnackBarBehavior.floating,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
         ),
       );
     }
@@ -118,10 +149,14 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
       context: context,
       builder: (ctx) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: Text(l10n.onboardingAgeBlockedTitle,
-            style: const TextStyle(color: AppColors.textPrimary)),
-        content: Text(l10n.onboardingAgeBlockedBody,
-            style: const TextStyle(color: AppColors.textSecondary)),
+        title: Text(
+          l10n.onboardingAgeBlockedTitle,
+          style: const TextStyle(color: AppColors.textPrimary),
+        ),
+        content: Text(
+          l10n.onboardingAgePreviouslyBlockedBody,
+          style: const TextStyle(color: AppColors.textSecondary),
+        ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(),
@@ -141,8 +176,12 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
         }
 
         return LuxuryOnboardingLayout(
-          title: AppLocalizations.of(context)?.onboardingLetsGetStarted ?? "Let's get started",
-          subtitle: AppLocalizations.of(context)?.onboardingTellUsAboutYourself ?? 'Tell us a bit about yourself',
+          title:
+              AppLocalizations.of(context)?.onboardingLetsGetStarted ??
+              "Let's get started",
+          subtitle:
+              AppLocalizations.of(context)?.onboardingTellUsAboutYourself ??
+              'Tell us a bit about yourself',
           showBackButton: true,
           // First step: "back" exits registration (sign out → login) rather than
           // popping the only route, which would show a black screen.
@@ -152,7 +191,8 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
             totalSteps: state.totalSteps,
           ),
           bottomChild: LuxuryButton(
-            text: AppLocalizations.of(context)?.onboardingContinue ?? 'Continue',
+            text:
+                AppLocalizations.of(context)?.onboardingContinue ?? 'Continue',
             onPressed: _checkingAge ? null : _handleContinue,
           ),
           child: Form(
@@ -166,15 +206,27 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
                   // Name Field
                   LuxuryTextField(
                     controller: _nameController,
-                    label: AppLocalizations.of(context)?.onboardingDisplayName ?? 'Display Name',
-                    hint: AppLocalizations.of(context)?.onboardingDisplayNameHint ?? 'How should we call you?',
+                    label:
+                        AppLocalizations.of(context)?.onboardingDisplayName ??
+                        'Display Name',
+                    hint:
+                        AppLocalizations.of(
+                          context,
+                        )?.onboardingDisplayNameHint ??
+                        'How should we call you?',
                     prefixIcon: Icons.person_outline,
                     validator: (value) {
                       if (value == null || value.trim().isEmpty) {
-                        return AppLocalizations.of(context)?.onboardingEnterYourName ?? 'Please enter your name';
+                        return AppLocalizations.of(
+                              context,
+                            )?.onboardingEnterYourName ??
+                            'Please enter your name';
                       }
                       if (value.trim().length < 2) {
-                        return AppLocalizations.of(context)?.onboardingNameMinLength ?? 'Name must be at least 2 characters';
+                        return AppLocalizations.of(
+                              context,
+                            )?.onboardingNameMinLength ??
+                            'Name must be at least 2 characters';
                       }
                       return null;
                     },
@@ -184,12 +236,27 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
 
                   // Date of Birth
                   _buildDatePicker(context),
+                  if (_selectedDateUnderAge)
+                    Padding(
+                      key: const Key('onboardingAgeUnderMinimumHint'),
+                      padding: const EdgeInsets.only(top: 8, left: 4),
+                      child: Text(
+                        AppLocalizations.of(
+                          context,
+                        )!.onboardingAgeUnderMinimumHint,
+                        style: const TextStyle(
+                          color: AppColors.errorRed,
+                          fontSize: 13,
+                        ),
+                      ),
+                    ),
 
                   const SizedBox(height: 32),
 
                   // Gender Selection
                   Text(
-                    AppLocalizations.of(context)?.onboardingIdentifyAs ?? 'I identify as',
+                    AppLocalizations.of(context)?.onboardingIdentifyAs ??
+                        'I identify as',
                     style: TextStyle(
                       color: Colors.white.withOpacity(0.9),
                       fontSize: 16,
@@ -229,6 +296,7 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
 
   Widget _buildDatePicker(BuildContext context) {
     return GestureDetector(
+      key: const Key('onboardingDobField'),
       onTap: () => _selectDate(context),
       child: Container(
         decoration: BoxDecoration(
@@ -242,7 +310,9 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
             ],
           ),
           border: Border.all(
-            color: _selectedDate != null
+            color: _selectedDateUnderAge
+                ? AppColors.errorRed.withOpacity(0.8)
+                : _selectedDate != null
                 ? AppColors.richGold.withOpacity(0.5)
                 : Colors.white.withOpacity(0.1),
             width: _selectedDate != null ? 1.5 : 1,
@@ -264,7 +334,8 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    AppLocalizations.of(context)?.onboardingDateOfBirth ?? 'Date of Birth',
+                    AppLocalizations.of(context)?.onboardingDateOfBirth ??
+                        'Date of Birth',
                     style: TextStyle(
                       color: Colors.white.withOpacity(0.5),
                       fontSize: 12,
@@ -278,7 +349,9 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
-                      fontWeight: _selectedDate != null ? FontWeight.w500 : null,
+                      fontWeight: _selectedDate != null
+                          ? FontWeight.w500
+                          : null,
                     ),
                   ),
                 ],

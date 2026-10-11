@@ -10,7 +10,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:uuid/uuid.dart';
 import 'package:video_player/video_player.dart';
 
@@ -30,7 +29,6 @@ import '../../../../core/widgets/voice_record_send_button.dart';
 import '../../../events/presentation/widgets/event_message_card.dart';
 import '../../../safety/presentation/widgets/report_block_sheet.dart';
 import '../../../../generated/app_localizations.dart';
-import '../../../../core/utils/server_text.dart';
 import '../../data/chat_constants.dart';
 import '../../domain/entities/message.dart';
 import '../bloc/group_chat_bloc.dart';
@@ -39,9 +37,16 @@ import '../bloc/group_chat_state.dart';
 import '../widgets/resolved_users_builder.dart';
 import 'group_info_screen.dart';
 import '../widgets/deleted_message_bubble.dart';
+import '../widgets/location_message_map.dart';
+import '../../../../core/widgets/interactive_location_map.dart';
 import '../../../../core/services/ai_consent_service.dart';
 import '../../../../core/widgets/ai_consent_sheet.dart';
 import '../../../profile/data/private_album.dart';
+import '../../../../core/security/screen_security_service.dart';
+import '../../../../core/security/viewer_watermark.dart';
+import '../../data/services/chat_screenshot_notice.dart';
+import '../utils/chat_l10n.dart';
+import '../../../copyright/data/copyright_service.dart';
 
 /// Group Chat Screen ("Culture Circle").
 ///
@@ -156,6 +161,25 @@ class _GroupChatViewState extends State<_GroupChatView> {
     _loadTranslationPrefs();
     _scrollController.addListener(_onScroll);
     _prefetchMembers();
+    // "X took a screenshot" notice (iOS; Android 14+ when FLAG_SECURE is off).
+    _screenshotSub = ScreenSecurityService.instance.screenshots
+        .listen((_) => _postScreenshotNotice());
+  }
+
+  StreamSubscription<void>? _screenshotSub;
+  final ChatScreenshotNotice _screenshotNotice = ChatScreenshotNotice();
+
+  Future<void> _postScreenshotNotice() async {
+    var name = '';
+    try {
+      name = await UserDirectoryService.instance
+          .displayName(widget.currentUserId);
+    } catch (_) {}
+    await _screenshotNotice.postToGroup(
+      groupId: widget.groupId,
+      senderId: widget.currentUserId,
+      senderName: name,
+    );
   }
 
   /// Warms the user directory with every member of the group (one batched,
@@ -320,6 +344,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
 
   @override
   void dispose() {
+    _screenshotSub?.cancel();
     _controller.dispose();
     _scrollController.dispose();
     super.dispose();
@@ -843,6 +868,9 @@ class _GroupMessageBubble extends StatelessWidget {
       reportedUserName: name.isNotEmpty ? name : l10n.chatUnknown,
       surface: 'groupChat',
       contentId: message.messageId,
+      copyrightContent: message.conversationId.isNotEmpty
+          ? CopyrightContentRef.message('groups', message.conversationId, message.messageId)
+          : null,
     );
   }
 
@@ -853,11 +881,18 @@ class _GroupMessageBubble extends StatelessWidget {
       // metadata.systemKey: render them in the viewer's language.
       final meta = message.metadata;
       final rawParams = meta?['systemParams'];
-      final systemText = serverText(
-            AppLocalizations.of(context)!,
-            meta?['systemKey'] as String?,
-            rawParams is Map ? Map<String, dynamic>.from(rawParams) : null,
-          ) ??
+      final key = meta?['systemKey'];
+      // Server keys (members joined/left, ...) and client keys (screenshot
+      // notice, ...): chatSystemText covers both.
+      final systemText = (key is String
+              ? chatSystemText(
+                  AppLocalizations.of(context)!,
+                  key,
+                  rawParams is Map
+                      ? Map<String, dynamic>.from(rawParams)
+                      : const <String, dynamic>{},
+                )
+              : null) ??
           message.content;
       return Padding(
         padding: const EdgeInsets.symmetric(vertical: 6),
@@ -1258,23 +1293,32 @@ class _LocationContent extends StatelessWidget {
     final color =
         isMine ? theme.colorScheme.onPrimary : theme.colorScheme.onSurface;
     final loc = LocationShareService.parse(message.content);
-    return InkWell(
-      onTap: loc == null
-          ? null
-          : () => launchUrl(
-                Uri.parse(LocationShareService.mapsUrl(loc.lat, loc.lng)),
-                mode: LaunchMode.externalApplication,
-              ),
-      child: Row(
+    if (loc == null) {
+      return Row(
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(Icons.location_on, size: 18, color: color),
           const SizedBox(width: 6),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          Text(l10n.chatLocation,
+              style: TextStyle(color: color, fontWeight: FontWeight.w600)),
+        ],
+      );
+    }
+    // Static light mini-map (no gestures inside the list); tap opens the
+    // full-screen interactive map with zoom, recenter and directions.
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        LocationMessageMap(lat: loc.lat, lng: loc.lng),
+        const SizedBox(height: 4),
+        InkWell(
+          onTap: () => openInMapsApp(context, loc.lat, loc.lng),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
             children: [
-              Text(l10n.chatLocation,
-                  style: TextStyle(color: color, fontWeight: FontWeight.w600)),
+              Icon(Icons.location_on, size: 14, color: color),
+              const SizedBox(width: 4),
               Text(
                 l10n.chatOpenInMaps,
                 style: theme.textTheme.bodySmall?.copyWith(
@@ -1284,8 +1328,8 @@ class _LocationContent extends StatelessWidget {
               ),
             ],
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
@@ -1367,8 +1411,12 @@ class _FullImageScreen extends StatelessWidget {
       appBar: AppBar(backgroundColor: Colors.black),
       body: Center(
         child: InteractiveViewer(
-          // Full resolution, disk-cached.
-          child: CachedNetworkImage(imageUrl: url),
+          // Full resolution, disk-cached. Group media is private: stamped
+          // with the viewer's id so a leaked capture is traceable.
+          child: ViewerWatermark.media(
+            isPrivate: true,
+            child: CachedNetworkImage(imageUrl: url),
+          ),
         ),
       ),
     );
