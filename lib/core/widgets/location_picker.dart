@@ -26,7 +26,7 @@ import 'map_basemap_layer.dart';
 ///
 /// Every lookup goes through [PlaceSearchRepository] (our Cloud Functions), so
 /// no third-party geocoder is ever called from the device. The map is
-/// flutter_map + the light CARTO basemap: keyless raster tiles over HTTPS that
+/// flutter_map + the light Esri basemap: keyless raster tiles over HTTPS that
 /// render the same in a release APK as in the browser.
 class LocationPickerScreen extends StatefulWidget {
   const LocationPickerScreen({

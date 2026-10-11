@@ -108,7 +108,7 @@ Future<void> openInMapsApp(
   }
 }
 
-/// The map itself: light CARTO basemap, gold pin (or approximate-area
+/// The map itself: light basemap, gold pin (or approximate-area
 /// circle), required attribution, optional zoom / recenter controls.
 ///
 /// With [interactive] false it is a static preview (no gestures at all), safe
@@ -243,7 +243,7 @@ class _LocationMapViewState extends State<LocationMapView> {
   }
 }
 
-/// The CARTO / OpenStreetMap credit both providers require on every map.
+/// The basemap credit (provider + OpenStreetMap) required on every map.
 class MapAttribution extends StatelessWidget {
   const MapAttribution({super.key});
 
@@ -255,9 +255,9 @@ class MapAttribution extends StatelessWidget {
         color: Colors.white.withValues(alpha: 0.8),
         borderRadius: BorderRadius.circular(3),
       ),
-      child: const Text(
+      child: Text(
         MapBasemap.lightAttribution, // i18n-ignore: legal map credit
-        style: TextStyle(fontSize: 9, color: LocationMapColors.subtext),
+        style: const TextStyle(fontSize: 9, color: LocationMapColors.subtext),
       ),
     );
   }

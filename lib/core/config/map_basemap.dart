@@ -1,34 +1,40 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 
-/// The raster basemap every `flutter_map` surface draws.
+/// The raster basemaps every `flutter_map` surface draws.
 ///
-/// Defaults to Esri's World Street Map — the closest keyless match to Google
-/// Maps: coloured roads, parks and water with readable labels, but without the
-/// full POI/landuse clutter of the raw OpenStreetMap style.
+/// Two of them, both Esri keyless raster tiles (no key, no account, plain
+/// HTTPS, so they render the same in an Android release build as in the
+/// browser): Dark Gray Canvas for the globe/explore map, World Street Map
+/// (light, labelled, the closest keyless match to Google Maps) for every
+/// place map and the location picker.
 ///
-/// The style can be changed from Firestore `app_config/map_style` WITHOUT
-/// rebuilding and redeploying either app — settling on a look otherwise costs
-/// a full build + store/hosting cycle per attempt. Fields (all optional):
+/// Both can be changed from Firestore `app_config/map_style` WITHOUT
+/// rebuilding either app. Fields (all optional; a URL only applies together
+/// with its attribution, and CARTO URLs are ignored):
 ///
-///   styleUrl     MapLibre style JSON for the vector basemap
-///   useVector    false pins the app to the raster fallback below
-///   tileUrl      raster template used when useVector is false, or when the
-///                vector style fails to load, e.g.
-///                https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png
-///   attribution  credit line shown on the map
-///   maxZoom      furthest zoom the provider serves
-///   initialZoom  how far in the world map opens (11-13 is city level)
+///   styleUrl            MapLibre style JSON for the vector basemap
+///   useVector           true draws the vector style on the globe map
+///   tileUrl             globe raster template, e.g. the Esri ones below
+///   attribution         credit line for tileUrl (required with it)
+///   maxNativeZoom       deepest zoom tileUrl has real tiles for (default 19)
+///   lightTileUrl        place-map raster template
+///   lightAttribution    credit line for lightTileUrl (required with it)
+///   lightMaxNativeZoom  deepest real zoom of lightTileUrl (default 19)
+///   maxZoom             furthest the globe map lets users zoom
+///   initialZoom         how far in the world map opens (11-13 is city level)
 ///
-/// Some ready-made values, all verified keyless:
+/// Some ready-made values, all verified keyless (2026-10):
 ///   Esri Street   .../World_Street_Map/MapServer/tile/{z}/{y}/{x}
 ///   Esri Topo     .../World_Topo_Map/MapServer/tile/{z}/{y}/{x}
-///   Esri Gray     .../Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}
-///   CARTO Voyager https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png
-///   (Do NOT use tile.openstreetmap.org: OSM's tile usage policy forbids
-///   heavy app traffic.)
+///   Esri Gray     .../Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x} (native <= 16)
+///   Esri Dark     .../Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}  (native <= 16)
+///   (CARTO basemaps.cartocdn.com now needs an API key: placeholder tiles.
+///   Do NOT use tile.openstreetmap.org: its policy forbids heavy app traffic.)
 ///
 /// Note Esri addresses tiles as {z}/{y}/{x}; most others use {z}/{x}/{y}.
+/// Esri's terms: attribution required; commercial production use is meant to
+/// run under an ArcGIS Location Platform account (free tier available).
 class MapBasemap {
   const MapBasemap._();
 
@@ -38,27 +44,48 @@ class MapBasemap {
   static const String defaultStyleUrl =
       'https://greengo-chat.web.app/greengo-map-style.json';
 
-  /// The basemap: CARTO "Dark Matter". Minimal by design — muted dark land,
-  /// water and a thin road network with sparse labels — free, no API key, and
-  /// verified serving real 256px tiles (and @2x retina) at every zoom.
+  /// CARTO's public basemaps (basemaps.cartocdn.com) now answer every
+  /// keyless request with an "API KEY REQUIRED" placeholder tile (HTTP 200,
+  /// so nothing errors: the map is just blank). Verified 2026-10 for
+  /// light_all, dark_all and voyager, with or without a browser Referer.
+  /// Remote config pointing at it is ignored, see [isUsableTileUrl].
+  static const String _esri = 'https://server.arcgisonline.com/ArcGIS/rest/services';
+
+  /// The default (dark) basemap for the globe/explore map: Esri Dark Gray
+  /// Canvas. Keyless raster; Esri serves real data up to zoom 16 here and
+  /// "Map data not yet available" beyond, so [defaultMaxNativeZoom] is 16 and
+  /// flutter_map upscales past it.
   static const String defaultTileUrl =
-      'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
-  /// Credit for the default basemap: CARTO renders OpenStreetMap data.
-  static const String defaultAttribution = 'CARTO, OpenStreetMap contributors';
+      '$_esri/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}';
+  /// Credit for the default basemap.
+  static const String defaultAttribution =
+      'Esri, HERE, Garmin, © OpenStreetMap contributors';
   static const double defaultMaxZoom = 19;
+  static const int defaultMaxNativeZoom = 16;
 
-  /// The LIGHT basemap: CARTO "Positron". Used by every place-detail map
-  /// (event venue, experience meeting point, chat shared location) where the
-  /// owner wants light colours. Free with no key; CARTO's free tier asks for
-  /// attribution and fair use (non-commercial heavy use needs a plan). Not
-  /// remote-configurable on purpose: the attribution below must always match
-  /// the tiles actually drawn.
-  static const String lightTileUrl =
-      'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+  /// The LIGHT basemap for every place map (event venue, experience meeting
+  /// point, chat shared location, the location picker): Esri World Street
+  /// Map. Keyless raster with street names down to zoom 19, which a "pick the
+  /// exact meeting point" map needs (the light-gray canvas stops at 16).
+  static const String defaultLightTileUrl =
+      '$_esri/World_Street_Map/MapServer/tile/{z}/{y}/{x}';
 
-  /// Required credit for [lightTileUrl] (CARTO renders OpenStreetMap data).
-  static const String lightAttribution = '© OpenStreetMap contributors © CARTO';
+  /// Required credit for [defaultLightTileUrl].
+  static const String defaultLightAttribution =
+      'Esri, HERE, Garmin, © OpenStreetMap contributors';
   static const double lightMaxZoom = 19;
+
+  /// False for a template that cannot draw a map: not http(s), no {z}/{x}/{y},
+  /// or CARTO (placeholder tiles without a key, see above).
+  static bool isUsableTileUrl(String? url) {
+    if (url == null) return false;
+    final u = url.trim();
+    return u.startsWith('https://') &&
+        u.contains('{z}') &&
+        u.contains('{x}') &&
+        u.contains('{y}') &&
+        !u.contains('cartocdn.com');
+  }
 
   /// City level. 3-5 is continent/country, 11-13 shows a city and its
   /// surroundings, 15+ is street level.
@@ -69,6 +96,10 @@ class MapBasemap {
   static String _tileUrl = defaultTileUrl;
   static String _attribution = defaultAttribution;
   static double _maxZoom = defaultMaxZoom;
+  static int _maxNativeZoom = defaultMaxNativeZoom;
+  static String _lightTileUrl = defaultLightTileUrl;
+  static String _lightAttribution = defaultLightAttribution;
+  static int _lightMaxNativeZoom = lightMaxZoom.toInt();
   static double _initialZoom = defaultInitialZoom;
 
   static String get styleUrl => _styleUrl;
@@ -80,6 +111,13 @@ class MapBasemap {
   static String get tileUrl => _tileUrl;
   static String get attribution => _attribution;
   static double get maxZoom => _maxZoom;
+  static int get maxNativeZoom => _maxNativeZoom;
+
+  /// The light place-map basemap (remote-overridable as a pair with its
+  /// attribution, so the credit always matches the tiles drawn).
+  static String get lightTileUrl => _lightTileUrl;
+  static String get lightAttribution => _lightAttribution;
+  static int get lightMaxNativeZoom => _lightMaxNativeZoom;
   static double get initialZoom => _initialZoom;
 
   /// Pull the override once at startup. Best-effort: any failure leaves the
@@ -99,11 +137,29 @@ class MapBasemap {
       final vector = data['useVector'];
       if (vector is bool) _useVector = vector;
 
+      // A tile URL and its credit only apply together: a provider switch
+      // must never draw new tiles under the old provider's attribution.
       final url = data['tileUrl'] as String?;
-      if (url != null && url.contains('{z}')) _tileUrl = url;
-
       final credit = data['attribution'] as String?;
-      if (credit != null && credit.isNotEmpty) _attribution = credit;
+      if (isUsableTileUrl(url) && credit != null && credit.trim().isNotEmpty) {
+        _tileUrl = url!.trim();
+        _attribution = credit.trim();
+        final native = data['maxNativeZoom'];
+        _maxNativeZoom =
+            native is num && native >= 1 && native <= 23 ? native.toInt() : 19;
+      }
+
+      final lightUrl = data['lightTileUrl'] as String?;
+      final lightCredit = data['lightAttribution'] as String?;
+      if (isUsableTileUrl(lightUrl) &&
+          lightCredit != null &&
+          lightCredit.trim().isNotEmpty) {
+        _lightTileUrl = lightUrl!.trim();
+        _lightAttribution = lightCredit.trim();
+        final native = data['lightMaxNativeZoom'];
+        _lightMaxNativeZoom =
+            native is num && native >= 1 && native <= 23 ? native.toInt() : 19;
+      }
 
       final zoom = data['maxZoom'];
       if (zoom is num && zoom > 0 && zoom <= 23) _maxZoom = zoom.toDouble();

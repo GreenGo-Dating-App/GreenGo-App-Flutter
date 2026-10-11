@@ -4,7 +4,7 @@ import '../../../../core/widgets/interactive_location_map.dart';
 
 /// A small, static map preview inside a location chat bubble.
 ///
-/// No gestures (it lives inside a scrolling chat list), light CARTO basemap
+/// No gestures (it lives inside a scrolling chat list), light basemap
 /// with a gold pin. Tapping opens the full-screen interactive
 /// [LocationMapScreen] with zoom, recenter and directions; [onTap] overrides
 /// that.

@@ -86,11 +86,26 @@ void main() {
     });
   });
 
-  test('light basemap is CARTO Positron with the required credit', () {
-    expect(MapBasemap.lightTileUrl, contains('basemaps.cartocdn.com/light_all'));
+  test('basemaps are keyless Esri tiles with the required credit', () {
+    expect(MapBasemap.lightTileUrl, contains('World_Street_Map'));
+    expect(MapBasemap.lightAttribution, contains('Esri'));
     expect(MapBasemap.lightAttribution, contains('OpenStreetMap'));
-    expect(MapBasemap.lightAttribution, contains('CARTO'));
     expect(MapBasemap.lightMaxZoom, 19);
+    expect(MapBasemap.tileUrl, contains('World_Dark_Gray_Base'));
+    expect(MapBasemap.maxNativeZoom, 16);
+    for (final url in [MapBasemap.lightTileUrl, MapBasemap.tileUrl]) {
+      expect(MapBasemap.isUsableTileUrl(url), isTrue, reason: url);
+    }
+  });
+
+  test('CARTO (placeholder tiles without a key) is never usable', () {
+    expect(
+        MapBasemap.isUsableTileUrl(
+            'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'),
+        isFalse);
+    expect(MapBasemap.isUsableTileUrl('http://x/{z}/{x}/{y}.png'), isFalse);
+    expect(MapBasemap.isUsableTileUrl('https://x/{z}/{x}.png'), isFalse);
+    expect(MapBasemap.isUsableTileUrl(null), isFalse);
   });
 
   test('validCoordinates rejects missing, out-of-range and 0,0', () {

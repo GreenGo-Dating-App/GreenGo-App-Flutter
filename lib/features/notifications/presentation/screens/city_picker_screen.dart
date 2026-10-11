@@ -8,7 +8,7 @@ import '../../../../generated/app_localizations.dart';
 /// [LocationPickerScreen] in city mode (city-only suggestions, tap or drag the
 /// pin, current location). Pops the chosen city name.
 ///
-/// Same flutter_map + CARTO basemap on every platform: the previous native
+/// Same flutter_map + Esri basemap on every platform: the previous native
 /// Google Map rendered blank on Android builds without a Maps SDK key.
 class CityPickerScreen extends StatelessWidget {
   const CityPickerScreen({super.key, this.repository});

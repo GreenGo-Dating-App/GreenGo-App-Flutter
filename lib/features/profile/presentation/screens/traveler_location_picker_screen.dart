@@ -611,7 +611,7 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
                 onTap: (_, point) => _onMapTapped(point),
               ),
               children: [
-                // Light CARTO Positron (free, keyless) instead of the raw
+                // The light place-map basemap (keyless) instead of the raw
                 // configurable template, with its required credit.
                 const MapBasemapLayer.light(),
                 const Align(
@@ -831,7 +831,7 @@ class _SelectedLocationCard extends StatelessWidget {
                     const InteractionOptions(flags: InteractiveFlag.none),
               ),
               children: [
-                // Light CARTO Positron (free, keyless) instead of the raw
+                // The light place-map basemap (keyless) instead of the raw
                 // configurable template, with its required credit.
                 const MapBasemapLayer.light(),
                 const Align(

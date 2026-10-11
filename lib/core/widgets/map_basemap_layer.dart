@@ -16,13 +16,13 @@ import '../config/map_basemap.dart';
 /// silently draws raster tiles instead of nothing. Setting `useVector: false`
 /// in `app_config/map_style` pins every client to raster without a rebuild.
 ///
-/// [MapBasemapLayer.light] draws the fixed CARTO Positron raster style instead
-/// (light land, grey roads) for the place-detail maps; it ignores the remote
-/// config so the required attribution always matches the tiles.
+/// [MapBasemapLayer.light] draws the light place-map basemap instead (Esri
+/// World Street Map by default); its URL and attribution are only ever
+/// overridden together, so the credit always matches the tiles.
 class MapBasemapLayer extends StatefulWidget {
   const MapBasemapLayer({super.key}) : light = false;
 
-  /// The light CARTO Positron basemap.
+  /// The light place-map basemap.
   const MapBasemapLayer.light({super.key}) : light = true;
 
   /// Whether this layer draws the light basemap.
@@ -59,17 +59,24 @@ class _MapBasemapLayerState extends State<MapBasemapLayer> {
       retinaMode: url.contains('{r}'),
       userAgentPackageName: 'com.greengochat.greengochatapp',
       maxZoom: MapBasemap.maxZoom,
+      maxNativeZoom: MapBasemap.maxNativeZoom,
     );
   }
 
-  Widget _light() => TileLayer(
-        urlTemplate: MapBasemap.lightTileUrl,
-        subdomains: const ['a', 'b', 'c', 'd'],
-        retinaMode: RetinaMode.isHighDensity(context),
-        userAgentPackageName: 'com.greengochat.greengochatapp',
-        maxZoom: MapBasemap.lightMaxZoom,
-        maxNativeZoom: MapBasemap.lightMaxZoom.toInt(),
-      );
+  Widget _light() {
+    final url = MapBasemap.lightTileUrl;
+    return TileLayer(
+      urlTemplate: url,
+      subdomains:
+          url.contains('{s}') ? const ['a', 'b', 'c', 'd'] : const <String>[],
+      // Only a template with {r} has real @2x tiles; faking retina by
+      // upscaling lower zooms just blurs street names.
+      retinaMode: url.contains('{r}') && RetinaMode.isHighDensity(context),
+      userAgentPackageName: 'com.greengochat.greengochatapp',
+      maxZoom: MapBasemap.lightMaxZoom,
+      maxNativeZoom: MapBasemap.lightMaxNativeZoom,
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
