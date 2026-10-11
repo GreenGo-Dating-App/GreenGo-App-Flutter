@@ -267,6 +267,9 @@ class BookingsRemoteDataSource {
     if (q.role == BookingRole.host && q.experienceId != null) {
       query = query.where('experienceId', isEqualTo: q.experienceId);
     }
+    if (q.status != null) {
+      query = query.where('status', isEqualTo: q.status!.wire);
+    }
     final cutoff =
         Timestamp.fromDate(BookingRules.upcomingCutoff(DateTime.now()));
     return q.upcoming
@@ -358,6 +361,10 @@ class BookingsRemoteDataSource {
       });
 
   Future<Booking> markNoShow(Booking b) => _action('markBookingNoShow', b);
+
+  /// Host only, code-less (My Space session checklist; audited server-side).
+  Future<Booking> manualCheckIn(Booking b) =>
+      _action('manualCheckInBooking', b);
 
   Future<Booking> markPaid(Booking b) => _action('markBookingPaid', b);
 

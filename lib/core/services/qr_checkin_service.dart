@@ -115,6 +115,7 @@ class CheckInOutcome {
     switch (reason) {
       case 'not_scanner':
       case 'not_host':
+      case 'not_organizer':
         return l10n.qrScanNotAuthorized;
       case 'wrong_event':
       case 'wrong_experience':
@@ -272,6 +273,30 @@ class QrCheckinService {
         guestCount: ((m['partySize'] as num?)?.toInt() ?? 1) - 1,
         ticketTypeName: m['ticketTypeName'] as String?,
         partySize: (m['partySize'] as num?)?.toInt() ?? 1,
+      );
+    } catch (e) {
+      return CheckInOutcome(approved: false, reason: _reasonOf(e));
+    }
+  }
+
+  /// Organizer's check-in CHECKLIST: tick [userId] in ([checkedIn] true) or
+  /// undo a check-in (false) without a QR. Organizer / co-owner only; the
+  /// server applies the door rules and audits it (setEventAttendeeCheckIn).
+  Future<CheckInOutcome> setEventCheckIn(
+      String eventId, String userId, bool checkedIn) async {
+    try {
+      final m = await _call('setEventAttendeeCheckIn', {
+        'eventId': eventId,
+        'userId': userId,
+        'checkedIn': checkedIn,
+      });
+      final already = m['alreadyCheckedIn'] == true;
+      return CheckInOutcome(
+        approved: true,
+        alreadyCheckedIn: already,
+        name: (m['userName'] as String?) ?? '',
+        photoUrl: m['userPhotoUrl'] as String?,
+        guestCount: (m['guestCount'] as num?)?.toInt() ?? 0,
       );
     } catch (e) {
       return CheckInOutcome(approved: false, reason: _reasonOf(e));

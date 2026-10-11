@@ -21303,7 +21303,7 @@ abstract class AppLocalizations {
   /// No description provided for @exploreQrTooltip.
   ///
   /// In en, this message translates to:
-  /// **'My QR codes'**
+  /// **'My Space'**
   String get exploreQrTooltip;
 
   /// No description provided for @universalSearchTitle.
@@ -22929,13 +22929,13 @@ abstract class AppLocalizations {
   /// No description provided for @tourExploreQrTitle.
   ///
   /// In en, this message translates to:
-  /// **'Your QR code'**
+  /// **'My Space'**
   String get tourExploreQrTitle;
 
   /// No description provided for @tourExploreQrDesc.
   ///
   /// In en, this message translates to:
-  /// **'Scan or share a QR code to connect instantly in person.'**
+  /// **'Scan tickets, show your QR codes and manage your events and experiences.'**
   String get tourExploreQrDesc;
 
   /// No description provided for @tourEventsCreateTitle.
@@ -40802,6 +40802,336 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Share'**
   String get attrShare;
+
+  /// Booking dashboard card subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{None upcoming} =1{1 upcoming} other{{count} upcoming}}'**
+  String bkCardUpcoming(int count);
+
+  /// Booking dashboard card subtitle (host requests)
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 to confirm} other{{count} to confirm}}'**
+  String bkCardToConfirm(int count);
+
+  /// Bookings received: tab with requests to answer
+  ///
+  /// In en, this message translates to:
+  /// **'To confirm'**
+  String get bkTabToConfirm;
+
+  /// Bookings received: To confirm tab empty
+  ///
+  /// In en, this message translates to:
+  /// **'No booking requests waiting for you.'**
+  String get bkNoneToConfirm;
+
+  /// My Space hub (Explore QR button)
+  ///
+  /// In en, this message translates to:
+  /// **'My Space'**
+  String get msTitle;
+
+  /// My Space greeting
+  ///
+  /// In en, this message translates to:
+  /// **'Good morning'**
+  String get msGreetingMorning;
+
+  /// My Space greeting
+  ///
+  /// In en, this message translates to:
+  /// **'Good afternoon'**
+  String get msGreetingAfternoon;
+
+  /// My Space greeting
+  ///
+  /// In en, this message translates to:
+  /// **'Good evening'**
+  String get msGreetingEvening;
+
+  /// My Space greeting subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Everything you host and attend, in one place.'**
+  String get msGreetingSubtitle;
+
+  /// My Space: scanner action tile
+  ///
+  /// In en, this message translates to:
+  /// **'Scan tickets'**
+  String get msScanTickets;
+
+  /// My Space: scanner tile hint
+  ///
+  /// In en, this message translates to:
+  /// **'Check guests in at the door'**
+  String get msScanTicketsHint;
+
+  /// My Space: my tickets tile hint
+  ///
+  /// In en, this message translates to:
+  /// **'Your QR codes for events and bookings'**
+  String get msMyTicketsHint;
+
+  /// My Space: to-do card title
+  ///
+  /// In en, this message translates to:
+  /// **'To do'**
+  String get msTodoTitle;
+
+  /// My Space to-do row
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 booking request to confirm} other{{count} booking requests to confirm}}'**
+  String msTodoBookingRequests(int count);
+
+  /// My Space to-do row
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 payment to confirm} other{{count} payments to confirm}}'**
+  String msTodoPayments(int count);
+
+  /// My Space to-do row: events / sessions with check-in today
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Check guests in today: 1 event or session} other{Check guests in today: {count} events or sessions}}'**
+  String msTodoCheckInToday(int count);
+
+  /// My Space to-do row (guest)
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 upcoming booking as a guest} other{{count} upcoming bookings as a guest}}'**
+  String msTodoUpcomingBookings(int count);
+
+  /// My Space to-do: empty state title
+  ///
+  /// In en, this message translates to:
+  /// **'All done!'**
+  String get msAllDone;
+
+  /// My Space to-do: empty state body
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing needs your attention right now.'**
+  String get msAllDoneBody;
+
+  /// My Space segmented control
+  ///
+  /// In en, this message translates to:
+  /// **'Events'**
+  String get msSegmentEvents;
+
+  /// My Space segmented control
+  ///
+  /// In en, this message translates to:
+  /// **'Experiences'**
+  String get msSegmentExperiences;
+
+  /// My Space: events I organize
+  ///
+  /// In en, this message translates to:
+  /// **'Hosting'**
+  String get msHosting;
+
+  /// My Space: events I am going to
+  ///
+  /// In en, this message translates to:
+  /// **'Attending'**
+  String get msAttending;
+
+  /// My Space: see all link
+  ///
+  /// In en, this message translates to:
+  /// **'See all'**
+  String get msSeeAll;
+
+  /// My Space: no hosted events
+  ///
+  /// In en, this message translates to:
+  /// **'You\'re not hosting any upcoming events.'**
+  String get msNoHosting;
+
+  /// My Space: no attended events
+  ///
+  /// In en, this message translates to:
+  /// **'No upcoming events. Join one to see your ticket here.'**
+  String get msNoAttending;
+
+  /// My Space: event going count
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No one going yet} =1{1 going} other{{count} going}}'**
+  String msGoingCount(int count);
+
+  /// Check-in progress (checked in / expected)
+  ///
+  /// In en, this message translates to:
+  /// **'{checkedIn} / {total} checked in'**
+  String msCheckedInProgress(int checkedIn, int total);
+
+  /// My Space: open my ticket (accessibility)
+  ///
+  /// In en, this message translates to:
+  /// **'Open ticket'**
+  String get msOpenTicket;
+
+  /// My Space: my experiences card subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Create, edit and publish your listings'**
+  String get msMyExperiencesHint;
+
+  /// My Space: upcoming experience sessions
+  ///
+  /// In en, this message translates to:
+  /// **'Upcoming sessions'**
+  String get msSessions;
+
+  /// My Space: no sessions
+  ///
+  /// In en, this message translates to:
+  /// **'No upcoming sessions with confirmed guests.'**
+  String get msNoSessions;
+
+  /// My Space: pick today's event / session
+  ///
+  /// In en, this message translates to:
+  /// **'Check guests in today'**
+  String get msTodaySheetTitle;
+
+  /// Check-in checklist title
+  ///
+  /// In en, this message translates to:
+  /// **'Check-in'**
+  String get msCheckInTitle;
+
+  /// Check-in checklist: open scanner
+  ///
+  /// In en, this message translates to:
+  /// **'Scan'**
+  String get msScan;
+
+  /// Check-in checklist search
+  ///
+  /// In en, this message translates to:
+  /// **'Search guests'**
+  String get msCheckInSearchHint;
+
+  /// Check-in checklist filter
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get msFilterAll;
+
+  /// Accessibility label of the check-in toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Check in {name}'**
+  String msCheckInGuest(String name);
+
+  /// Manual check-in confirm title
+  ///
+  /// In en, this message translates to:
+  /// **'Check in without a code?'**
+  String get msCheckInConfirmTitle;
+
+  /// Manual check-in confirm body
+  ///
+  /// In en, this message translates to:
+  /// **'Only do this once you\'re sure it\'s really {name}. Manual check-ins are recorded.'**
+  String msCheckInConfirmBody(String name);
+
+  /// Manual booking check-in confirm body
+  ///
+  /// In en, this message translates to:
+  /// **'Only do this once your guest is really here. Manual check-ins are recorded and can\'t be undone.'**
+  String get msCheckInBookingConfirmBody;
+
+  /// Manual check-in action
+  ///
+  /// In en, this message translates to:
+  /// **'Check in'**
+  String get msCheckIn;
+
+  /// Undo check-in confirm title
+  ///
+  /// In en, this message translates to:
+  /// **'Undo check-in?'**
+  String get msUndoCheckInTitle;
+
+  /// Undo check-in confirm body
+  ///
+  /// In en, this message translates to:
+  /// **'{name} will be marked as not here yet.'**
+  String msUndoCheckInBody(String name);
+
+  /// Undo action
+  ///
+  /// In en, this message translates to:
+  /// **'Undo'**
+  String get msUndo;
+
+  /// Snackbar after a manual check-in
+  ///
+  /// In en, this message translates to:
+  /// **'{name} checked in'**
+  String msCheckedInSnack(String name);
+
+  /// Snackbar after undoing a check-in
+  ///
+  /// In en, this message translates to:
+  /// **'Check-in undone'**
+  String get msCheckInUndoneSnack;
+
+  /// Check-in checklist: nobody going
+  ///
+  /// In en, this message translates to:
+  /// **'No one is going yet.'**
+  String get msNoGoingAttendees;
+
+  /// Check-in checklist: search without results
+  ///
+  /// In en, this message translates to:
+  /// **'No guests match your search.'**
+  String get msNoMatches;
+
+  /// Check-in checklist: search covers loaded guests
+  ///
+  /// In en, this message translates to:
+  /// **'Searching the guests loaded so far. Load more to search everyone.'**
+  String get msSearchLoadedOnly;
+
+  /// Load more button
+  ///
+  /// In en, this message translates to:
+  /// **'Load more'**
+  String get msLoadMore;
+
+  /// Generic guest label (session checklist)
+  ///
+  /// In en, this message translates to:
+  /// **'Guest'**
+  String get msGuest;
+
+  /// Session checklist: no bookings
+  ///
+  /// In en, this message translates to:
+  /// **'No confirmed guests for this session.'**
+  String get msNoSessionGuests;
+
+  /// Communities: favorites cap reached
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{You can pin 1 favorite. Unstar it to add another.} other{You can pin up to {count} favorites. Unstar one to add another.}}'**
+  String communitiesFavoritesLimit(int count);
+
+  /// Communities Joined tab: section below favorites
+  ///
+  /// In en, this message translates to:
+  /// **'All joined'**
+  String get communitiesJoinedSection;
 }
 
 class _AppLocalizationsDelegate

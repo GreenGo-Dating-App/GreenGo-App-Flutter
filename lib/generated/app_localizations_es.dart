@@ -12102,7 +12102,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get exploreSearchTooltip => 'Buscar';
 
   @override
-  String get exploreQrTooltip => 'Mis códigos QR';
+  String get exploreQrTooltip => 'Mi espacio';
 
   @override
   String get universalSearchTitle => 'Buscar';
@@ -13034,11 +13034,11 @@ class AppLocalizationsEs extends AppLocalizations {
       'Encuentra personas, negocios, eventos y comunidades — todo desde una sola búsqueda.';
 
   @override
-  String get tourExploreQrTitle => 'Tu código QR';
+  String get tourExploreQrTitle => 'Mi espacio';
 
   @override
   String get tourExploreQrDesc =>
-      'Escanea o comparte un código QR para conectar al instante en persona.';
+      'Escanea entradas, muestra tus códigos QR y gestiona tus eventos y experiencias.';
 
   @override
   String get tourEventsCreateTitle => 'Crea un evento';
@@ -23931,4 +23931,251 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get attrShare => 'Compartir';
+
+  @override
+  String bkCardUpcoming(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count próximas',
+      one: '1 próxima',
+      zero: 'Ninguna próxima',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String bkCardToConfirm(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count por confirmar',
+      one: '1 por confirmar',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get bkTabToConfirm => 'Por confirmar';
+
+  @override
+  String get bkNoneToConfirm => 'No tienes solicitudes de reserva pendientes.';
+
+  @override
+  String get msTitle => 'Mi espacio';
+
+  @override
+  String get msGreetingMorning => 'Buenos días';
+
+  @override
+  String get msGreetingAfternoon => 'Buenas tardes';
+
+  @override
+  String get msGreetingEvening => 'Buenas noches';
+
+  @override
+  String get msGreetingSubtitle =>
+      'Todo lo que organizas y a lo que asistes, en un solo lugar.';
+
+  @override
+  String get msScanTickets => 'Escanear entradas';
+
+  @override
+  String get msScanTicketsHint => 'Registra a los invitados en la entrada';
+
+  @override
+  String get msMyTicketsHint => 'Tus códigos QR de eventos y reservas';
+
+  @override
+  String get msTodoTitle => 'Pendientes';
+
+  @override
+  String msTodoBookingRequests(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count solicitudes de reserva por confirmar',
+      one: '1 solicitud de reserva por confirmar',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String msTodoPayments(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pagos por confirmar',
+      one: '1 pago por confirmar',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String msTodoCheckInToday(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Registra invitados hoy: $count eventos o sesiones',
+      one: 'Registra invitados hoy: 1 evento o sesión',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String msTodoUpcomingBookings(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count reservas próximas como invitado',
+      one: '1 reserva próxima como invitado',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get msAllDone => '¡Todo listo!';
+
+  @override
+  String get msAllDoneBody => 'Ahora mismo no hay nada pendiente.';
+
+  @override
+  String get msSegmentEvents => 'Eventos';
+
+  @override
+  String get msSegmentExperiences => 'Experiencias';
+
+  @override
+  String get msHosting => 'Organizo';
+
+  @override
+  String get msAttending => 'Asisto';
+
+  @override
+  String get msSeeAll => 'Ver todo';
+
+  @override
+  String get msNoHosting => 'No organizas ningún evento próximo.';
+
+  @override
+  String get msNoAttending =>
+      'No hay eventos próximos. Únete a uno para ver tu entrada aquí.';
+
+  @override
+  String msGoingCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count asistirán',
+      one: '1 asistirá',
+      zero: 'Nadie confirmado aún',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String msCheckedInProgress(int checkedIn, int total) {
+    return '$checkedIn / $total registrados';
+  }
+
+  @override
+  String get msOpenTicket => 'Abrir entrada';
+
+  @override
+  String get msMyExperiencesHint => 'Crea, edita y publica tus experiencias';
+
+  @override
+  String get msSessions => 'Próximas sesiones';
+
+  @override
+  String get msNoSessions =>
+      'No hay próximas sesiones con invitados confirmados.';
+
+  @override
+  String get msTodaySheetTitle => 'Registra invitados hoy';
+
+  @override
+  String get msCheckInTitle => 'Registro de entrada';
+
+  @override
+  String get msScan => 'Escanear';
+
+  @override
+  String get msCheckInSearchHint => 'Buscar invitados';
+
+  @override
+  String get msFilterAll => 'Todos';
+
+  @override
+  String msCheckInGuest(String name) {
+    return 'Registrar a $name';
+  }
+
+  @override
+  String get msCheckInConfirmTitle => '¿Registrar sin código?';
+
+  @override
+  String msCheckInConfirmBody(String name) {
+    return 'Hazlo solo si estás seguro de que es $name. Los registros manuales quedan guardados.';
+  }
+
+  @override
+  String get msCheckInBookingConfirmBody =>
+      'Hazlo solo cuando tu invitado esté realmente aquí. Los registros manuales quedan guardados y no se pueden deshacer.';
+
+  @override
+  String get msCheckIn => 'Registrar';
+
+  @override
+  String get msUndoCheckInTitle => '¿Deshacer el registro?';
+
+  @override
+  String msUndoCheckInBody(String name) {
+    return '$name se marcará como que aún no está aquí.';
+  }
+
+  @override
+  String get msUndo => 'Deshacer';
+
+  @override
+  String msCheckedInSnack(String name) {
+    return '$name registrado';
+  }
+
+  @override
+  String get msCheckInUndoneSnack => 'Registro deshecho';
+
+  @override
+  String get msNoGoingAttendees => 'Todavía no hay nadie confirmado.';
+
+  @override
+  String get msNoMatches => 'Ningún invitado coincide con tu búsqueda.';
+
+  @override
+  String get msSearchLoadedOnly =>
+      'Se buscan los invitados cargados hasta ahora. Carga más para buscar entre todos.';
+
+  @override
+  String get msLoadMore => 'Cargar más';
+
+  @override
+  String get msGuest => 'Invitado';
+
+  @override
+  String get msNoSessionGuests =>
+      'No hay invitados confirmados para esta sesión.';
+
+  @override
+  String communitiesFavoritesLimit(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Puedes fijar hasta $count favoritos. Quita uno para añadir otro.',
+      one: 'Puedes fijar 1 favorito. Quítalo para añadir otro.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get communitiesJoinedSection => 'Todas mis comunidades';
 }

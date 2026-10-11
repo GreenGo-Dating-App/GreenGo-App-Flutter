@@ -1524,8 +1524,25 @@ service cloud.firestore {
     // Per-user PRIVATE favorite communities — each user's own starred list.
     // Strictly private to the owner; never read/written by anyone else or by CFs.
     // Shape: user_favorite_communities/{userId} = { communityIds: [id, ...] }
+    // Capped at 50 starred communities (My Space / Communities > Joined pins
+    // them on top). A list that is already over the cap may only shrink.
     match /user_favorite_communities/{userId} {
-      allow read, write: if isOwner(userId);
+      allow read, delete: if isOwner(userId);
+      allow create: if isOwner(userId)
+        && request.resource.data.get('communityIds', []) is list
+        && request.resource.data.get('communityIds', []).size() <= 50;
+      allow update: if isOwner(userId)
+        && request.resource.data.get('communityIds', []) is list
+        && (request.resource.data.get('communityIds', []).size() <= 50
+            || request.resource.data.get('communityIds', []).size()
+               <= resource.data.get('communityIds', []).size());
+    }
+
+    // Audit trail of manual (code-less) check-ins and undos from the My Space
+    // check-in checklists (setEventAttendeeCheckIn / manualCheckInBooking).
+    // Written ONLY by Cloud Functions (Admin SDK); no client access.
+    match /checkin_audit/{auditId} {
+      allow read, write: if false;
     }
 
     // Per-user PRIVATE saved discovery searches — each user's named snapshots of

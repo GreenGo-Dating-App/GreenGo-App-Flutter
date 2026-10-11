@@ -20,58 +20,95 @@ import '../../../events/presentation/widgets/scan_result_overlay.dart';
 import '../../../experience_bookings/data/datasources/bookings_remote_datasource.dart';
 import '../../../experience_bookings/domain/entities/booking.dart';
 import '../../../experience_bookings/presentation/screens/booking_detail_screen.dart';
+import '../../../my_space/presentation/screens/my_space_screen.dart';
 
-/// QR hub — one place for everything QR:
-///  - **My tickets**: a QR code for EVERY event the user has joined (going) or
-///    organizes — upcoming & ongoing first, finished events after — reusing the
-///    exact [EventTicketPayload] the organizer scanner validates. A joined event
-///    always shows its ticket regardless of publish/featured state.
-///  - **Scan**: a [MobileScanner] that parses a scanned GreenGo code and routes
-///    it — check a person in (when the current user organizes that event), join
-///    the current user to the event, or open their own ticket's event.
-///
-/// Apple-safe / glass. Reuses [EventsRemoteDataSource] and [EventTicketScreen]
-/// so ticket codes stay 100% compatible with the existing check-in scanner.
+/// The former two-tab "QR codes" hub. Since My Space (4.7) the Explore QR
+/// button opens [MySpaceScreen]; this name is kept so every existing route /
+/// deep link / caller lands on the new hub. Its two tabs live on as
+/// [MyTicketsScreen] ("My tickets") and [QrScanScreen] ("Scan tickets").
 class QRHubScreen extends StatelessWidget {
   const QRHubScreen({super.key, required this.currentUserId});
 
   final String currentUserId;
 
-  static Route<void> route({required String currentUserId}) {
-    return MaterialPageRoute<void>(
-      builder: (_) => QRHubScreen(currentUserId: currentUserId),
-    );
-  }
+  static Route<void> route({required String currentUserId}) =>
+      MySpaceScreen.route(currentUserId: currentUserId);
+
+  @override
+  Widget build(BuildContext context) =>
+      MySpaceScreen(currentUserId: currentUserId);
+}
+
+/// "My tickets": a QR code for every event the user joined or organizes and
+/// every confirmed experience booking — reusing the exact payloads the door
+/// scanners validate.
+class MyTicketsScreen extends StatelessWidget {
+  const MyTicketsScreen({super.key, required this.currentUserId});
+
+  final String currentUserId;
+
+  static Route<void> route({required String currentUserId}) =>
+      MaterialPageRoute<void>(
+          builder: (_) => MyTicketsScreen(currentUserId: currentUserId));
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    return DefaultTabController(
-      length: 2,
-      child: Scaffold(
+    return Scaffold(
+      backgroundColor: AppColors.backgroundDark,
+      appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
-        appBar: AppBar(
-          backgroundColor: AppColors.backgroundDark,
-          foregroundColor: AppColors.textPrimary,
-          elevation: 0,
-          title: Text(l10n.qrHubTitle),
-          bottom: TabBar(
-            indicatorColor: AppColors.richGold,
-            labelColor: AppColors.textPrimary,
-            unselectedLabelColor: AppColors.textSecondary,
-            tabs: [
-              Tab(text: l10n.qrHubTabMyTickets),
-              Tab(text: l10n.qrHubTabScan),
-            ],
-          ),
-        ),
-        body: TabBarView(
-          children: [
-            _MyTicketsTab(currentUserId: currentUserId),
-            _ScanTab(currentUserId: currentUserId),
-          ],
-        ),
+        foregroundColor: AppColors.textPrimary,
+        elevation: 0,
+        title: Text(l10n.qrHubTabMyTickets),
       ),
+      body: MyTicketsView(currentUserId: currentUserId),
+    );
+  }
+}
+
+/// "Scan tickets": the door scanner. Routes each scanned GreenGo code to the
+/// right server check-in. [experienceId] presets it to one experience (a
+/// session checklist's "Scan": codes of other experiences are refused).
+class QrScanScreen extends StatelessWidget {
+  const QrScanScreen({
+    super.key,
+    required this.currentUserId,
+    this.experienceId,
+    this.title,
+  });
+
+  final String currentUserId;
+  final String? experienceId;
+  final String? title;
+
+  static Route<void> route({
+    required String currentUserId,
+    String? experienceId,
+    String? title,
+  }) =>
+      MaterialPageRoute<void>(
+        builder: (_) => QrScanScreen(
+          currentUserId: currentUserId,
+          experienceId: experienceId,
+          title: title,
+        ),
+      );
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    return Scaffold(
+      backgroundColor: AppColors.backgroundDark,
+      appBar: AppBar(
+        backgroundColor: AppColors.backgroundDark,
+        foregroundColor: AppColors.textPrimary,
+        elevation: 0,
+        title: Text(title ?? l10n.msScanTickets,
+            maxLines: 1, overflow: TextOverflow.ellipsis),
+      ),
+      body: QrScanView(
+          currentUserId: currentUserId, experienceId: experienceId),
     );
   }
 }
@@ -80,16 +117,16 @@ class QRHubScreen extends StatelessWidget {
 // My tickets
 // ─────────────────────────────────────────────────────────────────────────────
 
-class _MyTicketsTab extends StatefulWidget {
-  const _MyTicketsTab({required this.currentUserId});
+class MyTicketsView extends StatefulWidget {
+  const MyTicketsView({super.key, required this.currentUserId});
 
   final String currentUserId;
 
   @override
-  State<_MyTicketsTab> createState() => _MyTicketsTabState();
+  State<MyTicketsView> createState() => _MyTicketsViewState();
 }
 
-class _MyTicketsTabState extends State<_MyTicketsTab> {
+class _MyTicketsViewState extends State<MyTicketsView> {
   // null == loading; empty == loaded, no joined/organized events.
   List<Event>? _events;
   // Confirmed upcoming experience bookings (the guest's check-in codes).
@@ -381,16 +418,19 @@ class _MyTicketsTabState extends State<_MyTicketsTab> {
 // Scan
 // ─────────────────────────────────────────────────────────────────────────────
 
-class _ScanTab extends StatefulWidget {
-  const _ScanTab({required this.currentUserId});
+class QrScanView extends StatefulWidget {
+  const QrScanView({super.key, required this.currentUserId, this.experienceId});
 
   final String currentUserId;
 
+  /// Preset to one experience: codes of other experiences are refused.
+  final String? experienceId;
+
   @override
-  State<_ScanTab> createState() => _ScanTabState();
+  State<QrScanView> createState() => _QrScanViewState();
 }
 
-class _ScanTabState extends State<_ScanTab> {
+class _QrScanViewState extends State<QrScanView> {
   final MobileScannerController _controller = MobileScannerController(
     detectionSpeed: DetectionSpeed.normal,
   );
@@ -437,12 +477,15 @@ class _ScanTabState extends State<_ScanTab> {
     // records that the two people met in person. Never navigates.
     final code = ScannedCheckInCode.parse(raw);
     final CheckInOutcome r;
+    final exp = widget.experienceId;
     if (code is PaidTicketCode) {
-      r = await _checkin.checkInPaidTicket(code);
-    } else if (code is EventTicketCode) {
+      r = await _checkin.checkInPaidTicket(code, experienceId: exp);
+    } else if (code is EventTicketCode && exp == null) {
       r = await _checkin.checkInEvent(code);
+    } else if (code is EventTicketCode) {
+      r = const CheckInOutcome(approved: false, reason: 'wrong_experience');
     } else if (code is BookingTicketCode) {
-      r = await _checkin.checkInBooking(code);
+      r = await _checkin.checkInBooking(code, experienceId: exp);
     } else {
       _denied(l10n, l10n.qrHubInvalidCode);
       return;

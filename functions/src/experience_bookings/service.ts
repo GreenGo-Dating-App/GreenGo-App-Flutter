@@ -955,6 +955,62 @@ export async function checkInBooking(uid: string, data: any): Promise<Record<str
   };
 }
 
+/** Server-only audit trail of manual (code-less) check-ins: `checkin_audit`. */
+export const CHECKIN_AUDIT = 'checkin_audit';
+
+/**
+ * My Space session checklist: the HOST ticks a guest in by hand (the guest's
+ * phone died, no signal at the meeting point…). data: { bookingId }.
+ *
+ * Same preconditions as the door (confirmed, in-app payment still paid,
+ * inside the check-in window) but:
+ *   - host ONLY (a delegated helper must scan the guest's code),
+ *   - the "met in person" record is NOT verified (no code was shown),
+ *   - every manual check-in is audited in checkin_audit (server-only).
+ * Idempotent: an already checked-in booking is returned unchanged.
+ */
+export async function manualCheckInBooking(uid: string, data: any): Promise<Record<string, unknown>> {
+  const bookingId = requireBookingId(data);
+  const cfg = await loadConfig();
+  const r = await transition(bookingId, (b, now) => {
+    if (uid !== b.hostId) fail('permission-denied', 'not_host');
+    if (b.status === 'confirmed' && b.checkIn) return { noop: true };
+    if (b.status !== 'confirmed') fail('failed-precondition', 'not_confirmed', { status: b.status });
+    if (b.payment?.mode === 'online' && b.payment?.status !== 'paid') {
+      fail('permission-denied', 'ticket_not_valid', { status: b.payment?.status ?? null });
+    }
+    if (!inCheckInWindow(now, msOf(b.slotStart) as number, msOf(b.slotEnd) as number, cfg)) {
+      fail('failed-precondition', 'outside_checkin_window');
+    }
+    return {
+      patch: { checkIn: { at: ts(now), byUid: uid, method: 'manual' } },
+      extra: (tx, after) => {
+        eligibilityWrite(tx, after, bookingId, now, cfg);
+        tx.create(fdb().collection(CHECKIN_AUDIT).doc(), {
+          kind: 'booking',
+          action: 'check_in',
+          method: 'manual',
+          bookingId,
+          experienceId: after.experienceId ?? null,
+          targetUid: after.guestId,
+          byUid: uid,
+          at: ts(now),
+        });
+      },
+    };
+  }, cfg);
+  if (!r.noop) {
+    await recordMeeting(r.after.hostId, r.after.guestId, {
+      type: 'experience', contextId: bookingId, title: title(r.after), verified: false, byUid: uid,
+    }, fdb());
+    await safeNotify({
+      recipientId: r.after.guestId, type: 'booking_checked_in', title: lt('srvBookingCheckedIn'),
+      body: titleText(r.after), data: notifData(bookingId, r.after),
+    });
+  }
+  return { ...bookingView(bookingId, r.after), alreadyCheckedIn: r.noop === true };
+}
+
 /**
  * Host removed bookable times (updateExperienceAvailability with confirm):
  * every active booking at those starts is cancelled by the host (100 %

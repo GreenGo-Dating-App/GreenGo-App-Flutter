@@ -9,6 +9,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../experience_bookings/domain/entities/booking.dart';
 import '../../../experience_bookings/presentation/screens/bookings_list_screen.dart';
 import '../../../experience_bookings/presentation/screens/experience_slots_screen.dart';
+import '../../../my_space/presentation/widgets/booking_dashboard_cards.dart';
 import '../../domain/entities/user_experience.dart';
 import '../../domain/repositories/user_experiences_repository.dart';
 import '../bloc/experience_feed_bloc.dart';
@@ -132,39 +133,19 @@ class _MyExperiencesViewState extends State<_MyExperiencesView> {
         title: e?.title,
       ));
 
-  /// "My bookings" (as a guest) + "Bookings received" (as a host).
-  Widget _bookingsBar(AppLocalizations l) {
-    ButtonStyle style() => OutlinedButton.styleFrom(
-          foregroundColor: AppColors.richGold,
-          side: const BorderSide(color: AppColors.richGold),
-          visualDensity: VisualDensity.compact,
-          minimumSize: const Size(0, 40),
-        );
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
-      child: Row(children: [
-        Expanded(
-          child: OutlinedButton.icon(
-            key: const ValueKey('my-bookings'),
-            style: style(),
-            onPressed: () => _bookings(role: BookingRole.guest),
-            icon: const Icon(Icons.confirmation_number_outlined, size: 18),
-            label: Text(l.bkMyBookings, overflow: TextOverflow.ellipsis),
+  /// "My bookings" (as a guest) + "Bookings received" (as a host): two
+  /// dashboard cards with live counts (see [BookingDashboardCards]).
+  Widget _bookingsBar(AppLocalizations l) => BookingDashboardCards(
+        currentUserId: widget.currentUserId,
+        padding: const EdgeInsets.fromLTRB(12, 10, 12, 4),
+        onOpen: (role, {toConfirm = false}) => Navigator.of(context).push(
+          BookingsListScreen.route(
+            role: role,
+            currentUserId: widget.currentUserId,
+            openToConfirm: toConfirm,
           ),
         ),
-        const SizedBox(width: 8),
-        Expanded(
-          child: OutlinedButton.icon(
-            key: const ValueKey('host-bookings'),
-            style: style(),
-            onPressed: () => _bookings(),
-            icon: const Icon(Icons.receipt_long_outlined, size: 18),
-            label: Text(l.bkHostBookings, overflow: TextOverflow.ellipsis),
-          ),
-        ),
-      ]),
-    );
-  }
+      );
 
   Future<void> _setStatus(UserExperience e, ExperienceStatus s) async {
     final l = AppLocalizations.of(context)!;

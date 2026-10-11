@@ -13,7 +13,8 @@ class BookingsFirstPageCache {
   /// Per role + time bucket (+ experience for a host's per-listing list).
   static String keyFor(BookingsQuery q) =>
       'bookings_${q.role.name}_${q.upcoming ? 'up' : 'past'}'
-      '_${q.experienceId ?? ''}';
+      '_${q.experienceId ?? ''}'
+      '${q.status == null ? '' : '_${q.status!.wire}'}';
 
   Future<List<Booking>> load(BookingsQuery q) async {
     try {

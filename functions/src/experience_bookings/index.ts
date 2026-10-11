@@ -12,6 +12,7 @@ export {
   cancelExperienceSlot,
   getBookingCheckInCode,
   checkInBooking,
+  manualCheckInBooking,
   markBookingNoShow,
   markBookingPaid,
   confirmCashReceived,
