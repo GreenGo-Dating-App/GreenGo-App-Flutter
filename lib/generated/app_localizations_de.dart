@@ -23708,4 +23708,36 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get locMapCouldNotOpen => 'Karten-App konnte nicht geöffnet werden';
+
+  @override
+  String get legalUpdateTitle =>
+      'Wir haben unsere AGB und Datenschutzerklärung aktualisiert';
+
+  @override
+  String legalUpdateIntro(String version, String date) {
+    return 'Version $version gilt ab dem $date. Das ist neu:';
+  }
+
+  @override
+  String get legalUpdateBulletPrivateContent =>
+      'Private Fotos, Chat-Medien oder personenbezogene Daten anderer ohne deren Einwilligung zu kopieren, aufzuzeichnen oder weiterzugeben, ist verboten (AGB, Abschnitt 16.9).';
+
+  @override
+  String get legalUpdateBulletWarning =>
+      'Wenn du zum ersten Mal private Inhalte einer anderen Person öffnest, bestätigst du einen kurzen Hinweis, und wir speichern diese Bestätigung (Datenschutzerklärung, Abschnitt 10.5).';
+
+  @override
+  String get legalUpdateBulletOrientation =>
+      'Wir erheben die sexuelle Orientierung nicht mehr.';
+
+  @override
+  String get legalUpdateAgree => 'Ich stimme zu';
+
+  @override
+  String get legalUpdateSaveFailed =>
+      'Deine Auswahl konnte nicht gespeichert werden. Prüfe deine Verbindung und versuche es erneut.';
+
+  @override
+  String get legalUpdateDisagreeHint =>
+      'Wenn du nicht zustimmst, kannst du dich abmelden. Du kannst dein Konto auch jederzeit löschen.';
 }

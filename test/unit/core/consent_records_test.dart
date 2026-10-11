@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:greengo_chat/core/constants/legal_versions.dart';
 import 'package:greengo_chat/core/services/consent_recorder.dart';
 import 'package:greengo_chat/features/authentication/presentation/widgets/consent_checkboxes.dart';
 import 'package:greengo_chat/features/notifications/data/models/notification_preferences_model.dart';
@@ -57,14 +58,14 @@ void main() {
       final r = ConsentRecorder(
           callable: (p) async => sent.add(p), currentUid: () => 'u1');
       await r.recordSignupConsents(
-          profiling: false, thirdPartyData: true, marketingEmail: false,
-          docVersion: '2026-09-15');
+          profiling: false, thirdPartyData: true, marketingEmail: false);
       final byType = {for (final p in sent) p['type'] as String: p};
       expect(byType.keys.toSet(), {
         'terms', 'privacy', 'profiling', 'third_party_data', 'marketing_email'
       });
       expect(byType['terms']!['accepted'], isTrue);
-      expect(byType['terms']!['docVersion'], '2026-09-15');
+      expect(byType['terms']!['docVersion'], kTermsVersion);
+      expect(byType['privacy']!['docVersion'], kPrivacyPolicyVersion);
       expect(byType['privacy']!['accepted'], isTrue);
       expect(byType['profiling']!['accepted'], isFalse);
       expect(byType['third_party_data']!['accepted'], isTrue);

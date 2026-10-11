@@ -7314,5 +7314,13 @@
   "locMapRecenter": "Zentrieren",
   "locMapExpand": "Karte vergrößern",
   "locMapApproximateArea": "Ungefähres Gebiet",
-  "locMapCouldNotOpen": "Karten-App konnte nicht geöffnet werden"
+  "locMapCouldNotOpen": "Karten-App konnte nicht geöffnet werden",
+  "legalUpdateTitle": "Wir haben unsere AGB und Datenschutzerklärung aktualisiert",
+  "legalUpdateIntro": "Version {version} gilt ab dem {date}. Das ist neu:",
+  "legalUpdateBulletPrivateContent": "Private Fotos, Chat-Medien oder personenbezogene Daten anderer ohne deren Einwilligung zu kopieren, aufzuzeichnen oder weiterzugeben, ist verboten (AGB, Abschnitt 16.9).",
+  "legalUpdateBulletWarning": "Wenn du zum ersten Mal private Inhalte einer anderen Person öffnest, bestätigst du einen kurzen Hinweis, und wir speichern diese Bestätigung (Datenschutzerklärung, Abschnitt 10.5).",
+  "legalUpdateBulletOrientation": "Wir erheben die sexuelle Orientierung nicht mehr.",
+  "legalUpdateAgree": "Ich stimme zu",
+  "legalUpdateSaveFailed": "Deine Auswahl konnte nicht gespeichert werden. Prüfe deine Verbindung und versuche es erneut.",
+  "legalUpdateDisagreeHint": "Wenn du nicht zustimmst, kannst du dich abmelden. Du kannst dein Konto auch jederzeit löschen."
 }

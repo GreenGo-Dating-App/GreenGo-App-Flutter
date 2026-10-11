@@ -7314,5 +7314,13 @@
   "locMapRecenter": "Centralizar",
   "locMapExpand": "Expandir mapa",
   "locMapApproximateArea": "Área aproximada",
-  "locMapCouldNotOpen": "Não foi possível abrir um app de mapas"
+  "locMapCouldNotOpen": "Não foi possível abrir um app de mapas",
+  "legalUpdateTitle": "Atualizamos nossos Termos e a Política de Privacidade",
+  "legalUpdateIntro": "A versão {version} vale a partir de {date}. O que mudou:",
+  "legalUpdateBulletPrivateContent": "É proibido copiar, gravar ou compartilhar fotos privadas, mídias de conversas ou dados pessoais de outras pessoas sem o consentimento delas (Termos, seção 16.9).",
+  "legalUpdateBulletWarning": "Na primeira vez que você abrir conteúdo privado de outra pessoa, vai confirmar um breve aviso, e guardamos um registro dessa confirmação (Política de Privacidade, seção 10.5).",
+  "legalUpdateBulletOrientation": "Não coletamos mais a orientação sexual.",
+  "legalUpdateAgree": "Concordo",
+  "legalUpdateSaveFailed": "Não foi possível salvar sua escolha. Verifique sua conexão e tente novamente.",
+  "legalUpdateDisagreeHint": "Se você não concordar, pode sair da conta. Você também pode excluir sua conta a qualquer momento."
 }

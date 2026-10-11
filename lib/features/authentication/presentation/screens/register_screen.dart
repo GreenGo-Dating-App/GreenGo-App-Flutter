@@ -21,11 +21,6 @@ import '../widgets/password_strength_indicator.dart';
 import '../../../../core/constants/e2e_keys.dart';
 import '../widgets/pre_registration_offer.dart';
 
-/// Version label of the Terms / Privacy Policy accepted at signup, stored with
-/// the consent record: the "Last Updated" date of assets/legal/*.txt. Update
-/// it together with the bundled legal documents.
-const String kSignupLegalDocVersion = '2026-09-15';
-
 /// Longest the Register tap waits for the pre-registration offer lookup
 /// (a callable that can cold-start for several seconds). Past it, signup
 /// carries on without the dialog: the offer itself is granted server-side by
@@ -232,7 +227,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
         profiling: _profilingAccepted,
         thirdPartyData: _thirdPartyDataAccepted,
         marketingEmail: _marketingEmailAccepted,
-        docVersion: kSignupLegalDocVersion,
+        // Terms / Privacy versions accepted at signup: kTermsVersion and
+        // kPrivacyPolicyVersion (core/constants/legal_versions.dart).
       ),
     );
   }

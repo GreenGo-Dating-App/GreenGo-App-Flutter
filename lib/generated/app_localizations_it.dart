@@ -23683,4 +23683,36 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get locMapCouldNotOpen => 'Impossibile aprire un\'app di mappe';
+
+  @override
+  String get legalUpdateTitle =>
+      'Abbiamo aggiornato i Termini e l\'Informativa sulla privacy';
+
+  @override
+  String legalUpdateIntro(String version, String date) {
+    return 'La versione $version si applica dal $date. Novità:';
+  }
+
+  @override
+  String get legalUpdateBulletPrivateContent =>
+      'È vietato copiare, registrare o condividere foto private, contenuti multimediali delle chat o dati personali di altre persone senza il loro consenso (Termini, sezione 16.9).';
+
+  @override
+  String get legalUpdateBulletWarning =>
+      'La prima volta che apri contenuti privati di un\'altra persona, confermi un breve avviso e conserviamo una registrazione di questa conferma (Informativa sulla privacy, sezione 10.5).';
+
+  @override
+  String get legalUpdateBulletOrientation =>
+      'Non raccogliamo più l\'orientamento sessuale.';
+
+  @override
+  String get legalUpdateAgree => 'Accetto';
+
+  @override
+  String get legalUpdateSaveFailed =>
+      'Non è stato possibile salvare la tua scelta. Controlla la connessione e riprova.';
+
+  @override
+  String get legalUpdateDisagreeHint =>
+      'Se non sei d\'accordo, puoi uscire dall\'account. Puoi anche eliminare il tuo account in qualsiasi momento.';
 }
