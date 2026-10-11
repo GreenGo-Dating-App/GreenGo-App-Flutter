@@ -9,6 +9,7 @@ import 'package:showcaseview/showcaseview.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/widgets/zoom_photo_viewer.dart';
 import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/widgets/met_in_person_badge.dart';
 import '../../../profile/presentation/widgets/payment_methods_section.dart';
@@ -1024,6 +1025,12 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
           description: AppLocalizations.of(context)!.tourDetailDoubleTapDesc,
           gesture: TourGesture.doubleTap,
           child: GestureDetector(
+          // Tap: open the photo full screen (pinch-to-zoom, GreenGo mark).
+          // Double-tap: like.
+          onTap: widget.profile.photoUrls.isEmpty
+              ? null
+              : () => ZoomPhotoViewer.open(
+                  context, widget.profile.photoUrls, _currentPhotoIndex),
           onDoubleTap: _togglePhotoLike,
           child: PageView.builder(
             controller: _pageController,

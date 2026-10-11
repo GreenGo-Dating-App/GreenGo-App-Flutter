@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/security/viewer_watermark.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/utils/compact_count.dart';
 import '../../../../core/utils/first_screen_gate.dart';
@@ -624,93 +623,6 @@ class ExperienceCard extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
-
-/// Full-screen, pinch-to-zoom gallery (swipe between photos).
-class ExperiencePhotoViewer extends StatefulWidget {
-  const ExperiencePhotoViewer({
-    super.key,
-    required this.urls,
-    this.initialIndex = 0,
-  });
-  final List<String> urls;
-  final int initialIndex;
-
-  static Future<void> open(BuildContext context, List<String> urls, int index) =>
-      Navigator.of(context).push(MaterialPageRoute<void>(
-        fullscreenDialog: true,
-        builder: (_) => ExperiencePhotoViewer(urls: urls, initialIndex: index),
-      ));
-
-  @override
-  State<ExperiencePhotoViewer> createState() => _ExperiencePhotoViewerState();
-}
-
-class _ExperiencePhotoViewerState extends State<ExperiencePhotoViewer> {
-  late final PageController _page =
-      PageController(initialPage: widget.initialIndex);
-  late int _index = widget.initialIndex;
-
-  @override
-  void dispose() {
-    _page.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black,
-      body: Stack(children: [
-        PageView.builder(
-          controller: _page,
-          itemCount: widget.urls.length,
-          onPageChanged: (i) => setState(() => _index = i),
-          itemBuilder: (_, i) => InteractiveViewer(
-            minScale: 1,
-            maxScale: 5,
-            child: Center(
-              child: ViewerWatermark.zoomed(
-                child: CachedNetworkImage(
-                imageUrl: widget.urls[i],
-                fit: BoxFit.contain,
-                placeholder: (_, __) => const SizedBox(
-                  width: 28,
-                  height: 28,
-                  child: CircularProgressIndicator(
-                      strokeWidth: 2, color: AppColors.richGold),
-                ),
-                errorWidget: (_, __, ___) => const Icon(
-                    Icons.broken_image_outlined,
-                    color: AppColors.textTertiary,
-                    size: 48),
-                ),
-              ),
-            ),
-          ),
-        ),
-        Positioned(
-          top: MediaQuery.of(context).padding.top + 8,
-          right: 12,
-          child: IconButton(
-            tooltip: MaterialLocalizations.of(context).closeButtonTooltip,
-            icon: const Icon(Icons.close, color: Colors.white, size: 28),
-            onPressed: () => Navigator.of(context).pop(),
-          ),
-        ),
-        if (widget.urls.length > 1)
-          Positioned(
-            bottom: MediaQuery.of(context).padding.bottom + 16,
-            left: 0,
-            right: 0,
-            child: Center(
-              child: Text('${_index + 1} / ${widget.urls.length}',
-                  style: const TextStyle(color: Colors.white70)),
-            ),
-          ),
-      ]),
     );
   }
 }

@@ -6,6 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../../../core/widgets/zoom_photo_viewer.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/deep_link_service.dart';
@@ -539,7 +540,7 @@ class _DetailViewState extends State<_DetailView> {
             itemBuilder: (_, i) => GestureDetector(
               onTap: photos.isEmpty
                   ? null
-                  : () => ExperiencePhotoViewer.open(context, photos, i),
+                  : () => ZoomPhotoViewer.open(context, photos, i),
               child: ExperienceImage(
                 url: photos.isEmpty ? '' : photos[i],
                 category: e.category,
