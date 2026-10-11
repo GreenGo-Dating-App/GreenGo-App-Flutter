@@ -33,6 +33,7 @@ import { t as tr } from '../shared/i18n';
 import { resolveLocale } from '../shared/i18n/recipientLocale';
 import { monitored } from '../shared/monitoring';
 import { applyReportAutoActions } from './reportingSystem';
+import { createSafetyCase, ContentRef } from './takedowns/safetyCases';
 
 const db = admin.firestore();
 const OPTS = { memory: '512MiB' as const, timeoutSeconds: 60 };
@@ -43,6 +44,7 @@ const OPTS = { memory: '512MiB' as const, timeoutSeconds: 60 };
 
 export type ReasonCode =
   | 'csae'
+  | 'ncii'
   | 'underage'
   | 'sexual_content'
   | 'inappropriate'
@@ -73,7 +75,23 @@ const REASON_STRINGS: Record<ReasonCode, string[]> = {
     'Utente minorenne', 'Utilizador menor de idade', 'Usuário menor de idade',
     'underage', 'minorSafety', 'minor_safety', 'minor',
   ],
-  csae: ['csae', 'csam', 'child_sexual_exploitation', 'childSexualExploitation', 'child_safety', 'childSafety'],
+  csae: [
+    'csae', 'csam', 'child_sexual_exploitation', 'childSexualExploitation', 'child_safety', 'childSafety',
+    // safetyReportReasonCsae in every lib/l10n/app_*.arb
+    'Child sexual abuse or exploitation', 'Sexueller Missbrauch oder Ausbeutung von Kindern',
+    'Abuso o explotación sexual infantil', "Abus ou exploitation sexuelle d'enfants",
+    'Abuso o sfruttamento sessuale di minori', 'Abuso ou exploração sexual de crianças',
+    'Abuso ou exploração sexual infantil',
+  ],
+  // Non-consensual intimate imagery (TAKE IT DOWN Act / Decreto 12.976/2026).
+  ncii: [
+    'ncii', 'non_consensual_intimate_imagery', 'nonConsensualIntimateImagery', 'intimate_image', 'revenge_porn',
+    // safetyReportReasonNcii in every lib/l10n/app_*.arb
+    'Intimate image shared without consent', 'Intimes Bild ohne Einwilligung geteilt',
+    'Imagen íntima compartida sin consentimiento', 'Image intime partagée sans consentement',
+    'Immagine intima condivisa senza consenso', 'Imagem íntima partilhada sem consentimento',
+    'Imagem íntima compartilhada sem consentimento',
+  ],
   harassment: [
     'Belästigung oder Mobbing', 'Harassment or bullying', 'Acoso o intimidación',
     'Harcèlement ou intimidation', 'Molestie o bullismo', 'Assédio ou bullying',
@@ -137,8 +155,11 @@ const REASON_LOOKUP: Map<string, ReasonCode> = (() => {
 // severity: the first hit wins.
 export const CSAE_PATTERN =
   /\b(csam|csae|child ?(porn\w*|sexual\w*|abuse\w*|exploit\w*)|p(a)?edophil\w*|pedofil\w*|padophil\w*|(child|minor) grooming|pornografia infantil|pornografia minorile|pedopornogra\w*|abuso (sexual )?infantil|abuso (sessuale )?su minori|kinderporn\w*|kindesmissbrauch|pornographie infantile|explotacion sexual infantil|exploracao sexual infantil)\b/;
+export const NCII_PATTERN =
+  /\b(ncii|revenge porn\w*|non ?-?consensual (intimate|nude|sexual)\w*|intimate (image|photo|picture|video)s? (shared|posted|leaked)\w*|leaked nudes?|pornografia de vinganca|imagem intima\w*|imagens intimas|nudes vazad\w*|porno di vendetta|pornovendetta|racheporno\w*|porno vengativo|vengeance pornographique)\b/;
 const KEYWORD_RULES: [ReasonCode, RegExp][] = [
   ['csae', CSAE_PATTERN],
+  ['ncii', NCII_PATTERN],
   ['underage', /\b(under ?age|minor|minors|minorenne|minorenni|menor|menores|mineur|mineure|minderjahrig\w*|child|children|kid|kids|crianca|bambin\w*|nin[oa]s?|enfant)\b/],
   ['sexual_content', /\b(sexual\w*|sessual\w*|sexuel\w*|nud\w*|naked|nackt|porn\w*|explicit)\b/],
   ['threats', /\b(threat\w*|minacc\w*|amenaz\w*|menac\w*|amea\w*|bedroh\w*)\b/],
@@ -152,6 +173,7 @@ const KEYWORD_RULES: [ReasonCode, RegExp][] = [
 
 const PRIORITY_BY_CODE: Record<ReasonCode, PriorityLevel> = {
   csae: 'P0',
+  ncii: 'P0',
   underage: 'P0',
   sexual_content: 'P1',
   // "Inappropriate content" is the app's catch-all for sexual/nudity reports.
@@ -182,6 +204,7 @@ const LEGACY_PRIORITY: Record<PriorityLevel, 'critical' | 'high' | 'medium'> = {
 /** Admin-panel ReportCategory vocabulary (filter on `category`). */
 const PANEL_CATEGORY: Record<ReasonCode, string> = {
   csae: 'underage',
+  ncii: 'inappropriateContent',
   underage: 'underage',
   sexual_content: 'inappropriateContent',
   inappropriate: 'inappropriateContent',
@@ -424,6 +447,16 @@ export async function enqueueReport(
     }
   }
 
+  // NCII / CSAE: precautionary takedown + safety case (+ legal hold for CSAE).
+  const reasonCode = item.reasonCode as ReasonCode;
+  if (reasonCode === 'csae' || reasonCode === 'ncii') {
+    try {
+      await openSafetyCaseForReport(source, reportId, item, r);
+    } catch (e) {
+      console.error(`[reportPipeline] safety case failed for ${item.queueId}:`, e);
+    }
+  }
+
   if (source === 'user_reports' && item.reportedUserId) {
     try {
       const settings = (await db.doc('app_config/moderation_settings').get()).data() || {};
@@ -444,6 +477,45 @@ export async function enqueueReport(
     }
   }
   return true;
+}
+
+/**
+ * Opens the NCII / CSAE safety case for a report (one per queue item): the
+ * reported content is hidden at once, CSAE also gets the 1-year legal hold.
+ * Content refs: the reported message, else the reported profile (its
+ * photos). Events / experiences stay with the moderator (manual).
+ */
+export async function openSafetyCaseForReport(
+  source: ReportSource,
+  reportId: string,
+  item: Record<string, unknown>,
+  r: admin.firestore.DocumentData,
+): Promise<string | null> {
+  const kind = item.reasonCode === 'csae' ? 'csae' : 'ncii';
+  const ref = item.contentRef as { type: string; id: string | null; path: string | null };
+  const refs: ContentRef[] = [];
+  if (ref?.type === 'message' && ref.path) refs.push({ type: 'message', value: ref.path });
+  else if (item.reportedUserId) refs.push({ type: 'profile', value: item.reportedUserId as string });
+  if (ref && ref.type !== 'message' && ref.type !== 'user' && (ref.path || ref.id)) {
+    refs.push({ type: 'url', value: String(ref.path || ref.id) });
+  }
+  const reporterId = typeof item.reporterId === 'string' && !['anonymous', 'admin', 'system'].includes(item.reporterId)
+    ? item.reporterId : null;
+  const created = await createSafetyCase({
+    caseId: `report_${item.queueId as string}`.replace(/[^A-Za-z0-9_-]/g, '_').slice(0, 200),
+    kind,
+    source: 'user_report',
+    requester: { name: null, email: null, phone: null, uid: reporterId, role: 'reporter' },
+    contentRefs: refs,
+    reportedUserId: (item.reportedUserId as string) || null,
+    description: typeof item.reason === 'string' ? item.reason : null,
+    sourceReport: { collection: source, id: reportId, queueId: item.queueId as string },
+  });
+  if (created) {
+    await db.collection('moderation_queue').doc(item.queueId as string)
+      .update({ safetyCaseId: created.caseId }).catch(() => undefined);
+  }
+  return created?.caseId ?? null;
 }
 
 // ---------------------------------------------------------------------------

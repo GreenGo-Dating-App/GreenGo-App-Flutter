@@ -62,6 +62,7 @@ import * as crypto from 'crypto';
 import '../shared/firebaseAdmin';
 import { retainIdDocumentsOnAccountDeletion } from '../safety/idDocumentRetention';
 import { enqueueFollowGraphCleanup, removeFollowGraphRound } from '../social/followCleanup';
+import { preserveForAccountDeletion, LEGAL_HOLD_KEEP_COLLECTIONS } from '../safety/takedowns/legalHold';
 
 const db = () => admin.firestore();
 const TS = () => admin.firestore.Timestamp.now();
@@ -86,6 +87,12 @@ export const RETENTION_STORES = [
   DELETION_JOBS, // only kept when a run FAILED (needed to retry)
   'id_document_retention', // legacy entries under an admin legal hold only (P2-6)
   'follow_cleanup_jobs', // queued follow-graph job, deleted when done
+  // CSAE legal holds (REPORT Act 1-year preservation; superAdmin only). Only
+  // exist for accounts reported for CSAE (safety/takedowns/legalHold.ts).
+  'legal_holds',
+  // NCII / CSAE takedown cases: legal records of a removal request and its
+  // decision (TAKE IT DOWN Act / Decreto 12.976/2026), server-only.
+  'safety_cases',
 ];
 
 // ---------------------------------------------------------------------------
@@ -207,6 +214,9 @@ export const ACCOUNT_DATA_INVENTORY: InventoryEntry[] = [
   ...q('report_appeals', 'userId'),
   ...q('spam_detections', 'userId'),
   ...q('deletion_requests', 'uid'),
+  // Safety takedowns: the requester's status mirror and strike records.
+  ...q('safety_request_status', 'requesterUid'),
+  ...q('user_strikes', 'userId'),
   { kind: 'query', collection: 'met_in_person', field: 'users', arrayContains: true, recursive: true },
   { kind: 'query', collection: 'user_experiences', field: 'hostId', recursive: true },
   { kind: 'supportChats' },
@@ -281,6 +291,7 @@ export const KNOWN_RESIDUALS = [
   'communities created by the user (createdByUserId) and events organised by the user (organizerId): left for their members',
   'Storage objects outside uid-keyed prefixes that carry only customMetadata.userId',
   'admin_users/{uid} (admin roles are removed by an admin, not by self-deletion)',
+  'ACCOUNTS UNDER A CSAE LEGAL HOLD: copies in legal_holds/{holdId} (+ Storage legal_holds/{holdId}/files/) and the moderation records in LEGAL_HOLD_KEEP_COLLECTIONS are kept for the hold period (1 year, REPORT Act / Lei 15.211)',
 ];
 
 /** Chat media prefixes whose objects are attributed via the sender's messages. */
@@ -605,7 +616,7 @@ async function removeSupportChats(uid: string, report: DeletionReport) {
 }
 
 /** Removes everything in the inventory except profiles/{uid} and users/{uid}. */
-async function runInventory(uid: string, report: DeletionReport) {
+async function runInventory(uid: string, report: DeletionReport, legalHold = false) {
   const step = async (label: string, fn: () => Promise<void>) => {
     try {
       await fn();
@@ -652,6 +663,8 @@ async function runInventory(uid: string, report: DeletionReport) {
   ];
   for (const kind of order) {
     for (const e of ACCOUNT_DATA_INVENTORY.filter((x) => x.kind === kind)) {
+      // Under a CSAE legal hold the moderation records about the user stay.
+      if (legalHold && e.kind === 'query' && LEGAL_HOLD_KEEP_COLLECTIONS.includes(e.collection)) continue;
       switch (e.kind) {
         case 'doc':
           await step(`${e.collection}/${uid}`, async () => {
@@ -790,12 +803,24 @@ export async function deleteAccountData(uid: string, source: DeletionSource): Pr
     return report;
   }
 
+  // CSAE legal hold FIRST: refresh the preserved copies from the live data
+  // before anything is deleted. If that fails nothing is deleted (a retry -
+  // the Auth trigger or the user - runs it again); evidence is never lost.
+  let legalHold = false;
+  try {
+    legalHold = await preserveForAccountDeletion(uid);
+  } catch (e: any) {
+    console.error(`accountDeletion: legal-hold preservation failed for ${uid}`, e?.message || e);
+    report.failures.push('legal_hold:preserve');
+    return report;
+  }
+
   try {
     await retainSubcollectionLedgers(uid, report);
   } catch (e) {
     report.failures.push('finance:coinBalances.subcollections');
   }
-  await runInventory(uid, report);
+  await runInventory(uid, report, legalHold);
 
   // Last: users/{uid}, then profiles/{uid}. Deleting the profile fires
   // onProfileDeleted, which (for old app versions) also deletes the Auth user;

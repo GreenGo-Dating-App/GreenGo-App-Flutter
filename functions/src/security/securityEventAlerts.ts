@@ -45,8 +45,9 @@ async function underHourlyCap(kind: string, cap: number): Promise<boolean> {
   });
 }
 
-export async function sendSecurityAlert(subject: string, lines: string[]): Promise<boolean> {
-  const to = recipients();
+export async function sendSecurityAlert(subject: string, lines: string[], extraRecipients: string[] = []): Promise<boolean> {
+  const valid = (e: string) => /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e);
+  const to = Array.from(new Set([...recipients(), ...extraRecipients.map((e) => String(e).trim()).filter(valid)]));
   if (to.length === 0) return false;
   const cfg = (await db().doc('app_config/resend_settings').get()).data() || {};
   const apiKey = process.env.RESEND_API_KEY || cfg.apiKey;
@@ -71,6 +72,9 @@ const SENSITIVE_ACTIONS = new Set([
   'view_id_document', 'change_user_password', 'CHANGE_USER_PASSWORD', 'delete_user', 'bulk_delete_users',
   'adjust_coins', 'admin_adjust_coins', 'override_subscription', 'grant_entitlement', 'set_user_status',
   'ban_user', 'impersonate_user', 'send_password_reset', 'set_age_assurance_override',
+  // Safety takedowns (safety/takedowns): legal-hold access and CSAE reporting.
+  'safety_view_legal_hold', 'safety_report_package', 'safety_mark_reported', 'safety_restore_content',
+  'safety_extend_legal_hold', 'safety_import_csam_hashes',
 ]);
 
 /** Every admin action is audited; sensitive ones are flagged in the subject. */
