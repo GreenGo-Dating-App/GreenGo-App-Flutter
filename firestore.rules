@@ -2856,6 +2856,20 @@ service cloud.firestore {
       allow write: if false;
     }
 
+    // Legal acknowledgements = PROOF (functions/src/legal/privateContentWarning.ts
+    // acknowledgePrivateContentWarning). Written ONLY by the server (Admin
+    // SDK, server timestamp, request IP / user agent, hash of the displayed
+    // text) and never changed: users/{uid} is owner-writable and could not
+    // prove anything. The owner may read their own records (the app checks
+    // it on a new device so the warning is shown once per user per version).
+    match /legal_acknowledgements/{uid} {
+      allow read, write: if false;
+      match /items/{ackId} {
+        allow get, list: if isSignedIn() && request.auth.uid == uid;
+        allow write: if false;
+      }
+    }
+
     // ============================================================================
     // DEFAULT DENY
     // ============================================================================
