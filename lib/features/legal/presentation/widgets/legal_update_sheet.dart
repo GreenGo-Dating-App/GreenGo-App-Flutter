@@ -77,6 +77,7 @@ class LegalUpdateGate {
   }
 }
 
+/// True while the sheet is open (no double show from two triggers).
 bool _legalSheetShownThisSession = false;
 
 /// Shows the non-dismissable "we've updated our Terms and Privacy Policy"
@@ -110,11 +111,11 @@ Future<void> showLegalUpdateSheetIfNeeded(
       ),
     ),
   );
-  if (agreed != true) {
-    // Only reachable through "Sign out".
-    _legalSheetShownThisSession = false;
-    onSignOut();
-  }
+  // Guard only while the sheet is up: after "I agree" the per-user local
+  // mirror stops it, and another account signed in later is checked anew.
+  _legalSheetShownThisSession = false;
+  // Only reachable through "Sign out".
+  if (agreed != true) onSignOut();
 }
 
 /// Resets the once-per-session guard (tests).
