@@ -40694,6 +40694,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'If you don\'t agree, you can sign out. You can also delete your account at any time.'**
   String get legalUpdateDisagreeHint;
+
+  /// Link preview card (sharePreview Cloud Function) / share action
+  ///
+  /// In en, this message translates to:
+  /// **'by {name}'**
+  String sharePreviewByHost(String name);
+
+  /// Link preview card (sharePreview Cloud Function) / share action
+  ///
+  /// In en, this message translates to:
+  /// **'{hours} h'**
+  String sharePreviewHours(int hours);
+
+  /// Link preview card (sharePreview Cloud Function) / share action
+  ///
+  /// In en, this message translates to:
+  /// **'{minutes} min'**
+  String sharePreviewMinutes(int minutes);
+
+  /// Link preview card (sharePreview Cloud Function) / share action
+  ///
+  /// In en, this message translates to:
+  /// **'{count} going'**
+  String sharePreviewGoing(int count);
+
+  /// Link preview card (sharePreview Cloud Function) / share action
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 member} other{{count} members}}'**
+  String sharePreviewMembers(int count);
+
+  /// Link preview card (sharePreview Cloud Function) / share action
+  ///
+  /// In en, this message translates to:
+  /// **'Event on GreenGo'**
+  String get sharePreviewEventTitle;
+
+  /// Link preview card (sharePreview Cloud Function) / share action
+  ///
+  /// In en, this message translates to:
+  /// **'Community on GreenGo'**
+  String get sharePreviewCommunityTitle;
+
+  /// Link preview card (sharePreview Cloud Function) / share action
+  ///
+  /// In en, this message translates to:
+  /// **'Experience on GreenGo'**
+  String get sharePreviewExperienceTitle;
+
+  /// Link preview card (sharePreview Cloud Function) / share action
+  ///
+  /// In en, this message translates to:
+  /// **'Attraction on GreenGo'**
+  String get sharePreviewAttractionTitle;
+
+  /// Link preview card (sharePreview Cloud Function) / share action
+  ///
+  /// In en, this message translates to:
+  /// **'Discover people, cultures, events and communities around the world.'**
+  String get sharePreviewGenericDescription;
+
+  /// Link preview card (sharePreview Cloud Function) / share action
+  ///
+  /// In en, this message translates to:
+  /// **'Connect with {name} on GreenGo — meet people and cultures from around the world.'**
+  String sharePreviewConnectWith(String name);
+
+  /// Link preview card (sharePreview Cloud Function) / share action
+  ///
+  /// In en, this message translates to:
+  /// **'Open in GreenGo'**
+  String get sharePreviewOpenApp;
+
+  /// Link preview card (sharePreview Cloud Function) / share action
+  ///
+  /// In en, this message translates to:
+  /// **'Open on the web'**
+  String get sharePreviewOpenWeb;
+
+  /// Link preview card (sharePreview Cloud Function) / share action
+  ///
+  /// In en, this message translates to:
+  /// **'Photo: {credit}'**
+  String sharePreviewPhotoCredit(String credit);
+
+  /// Link preview card (sharePreview Cloud Function) / share action
+  ///
+  /// In en, this message translates to:
+  /// **'{name}\nDiscover this place on GreenGo: {link}'**
+  String shareAttractionMessage(String name, String link);
+
+  /// Link preview card (sharePreview Cloud Function) / share action
+  ///
+  /// In en, this message translates to:
+  /// **'Share'**
+  String get attrShare;
 }
 
 class _AppLocalizationsDelegate

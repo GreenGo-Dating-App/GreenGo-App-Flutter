@@ -53,6 +53,20 @@
           }
         },
         {
+          "source": "/x/**",
+          "function": {
+            "functionId": "sharePreview",
+            "region": "us-central1"
+          }
+        },
+        {
+          "source": "/a/**",
+          "function": {
+            "functionId": "sharePreview",
+            "region": "us-central1"
+          }
+        },
+        {
           "source": "/og/**",
           "function": {
             "functionId": "sharePreview",

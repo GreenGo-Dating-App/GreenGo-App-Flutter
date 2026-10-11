@@ -7367,5 +7367,21 @@
   "legalUpdateBulletOrientation": "Wir erheben die sexuelle Orientierung nicht mehr.",
   "legalUpdateAgree": "Ich stimme zu",
   "legalUpdateSaveFailed": "Deine Auswahl konnte nicht gespeichert werden. Prüfe deine Verbindung und versuche es erneut.",
-  "legalUpdateDisagreeHint": "Wenn du nicht zustimmst, kannst du dich abmelden. Du kannst dein Konto auch jederzeit löschen."
+  "legalUpdateDisagreeHint": "Wenn du nicht zustimmst, kannst du dich abmelden. Du kannst dein Konto auch jederzeit löschen.",
+  "sharePreviewByHost": "von {name}",
+  "sharePreviewHours": "{hours} h",
+  "sharePreviewMinutes": "{minutes} min",
+  "sharePreviewGoing": "{count} nehmen teil",
+  "sharePreviewMembers": "{count, plural, =1{1 Mitglied} other{{count} Mitglieder}}",
+  "sharePreviewEventTitle": "Event auf GreenGo",
+  "sharePreviewCommunityTitle": "Community auf GreenGo",
+  "sharePreviewExperienceTitle": "Erlebnis auf GreenGo",
+  "sharePreviewAttractionTitle": "Sehenswürdigkeit auf GreenGo",
+  "sharePreviewGenericDescription": "Entdecke Menschen, Kulturen, Events und Communities auf der ganzen Welt.",
+  "sharePreviewConnectWith": "Vernetze dich mit {name} auf GreenGo – triff Menschen und Kulturen aus aller Welt.",
+  "sharePreviewOpenApp": "In GreenGo öffnen",
+  "sharePreviewOpenWeb": "Im Web öffnen",
+  "sharePreviewPhotoCredit": "Foto: {credit}",
+  "shareAttractionMessage": "{name}\nEntdecke diesen Ort auf GreenGo: {link}",
+  "attrShare": "Teilen"
 }
