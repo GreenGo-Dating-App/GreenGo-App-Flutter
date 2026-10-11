@@ -321,6 +321,33 @@ describe('app: deleteMyAccount callable', () => {
     expect(await docExists('deletion_jobs/app2')).toBe(false);
   });
 
+  test('legal proof (consents + warning confirmations) is retained and stamped, not deleted', async () => {
+    await newUser('app3', 'app3@example.com');
+    await db.doc('consents/app3').set({ terms: { accepted: true, version: 1, docVersion: '5.1.0' } });
+    await db.doc('consents/app3/events/e1').set({ type: 'terms', accepted: true, docVersion: '5.1.0' });
+    await db.doc('legal_acknowledgements/app3/items/w1').set({ type: 'private_content_warning', termsVersion: '5.1.0' });
+
+    expect(await v2call(fn(), {}, fresh('app3'))).toEqual({ success: true });
+    expect(await authExists('app3')).toBe(false);
+    expect(await docExists('profiles/app3')).toBe(false);
+
+    for (const p of ['consents/app3', 'consents/app3/events/e1', 'legal_acknowledgements/app3/items/w1']) {
+      expect([p, await docExists(p)]).toEqual([p, true]);
+    }
+    const c = (await db.doc('consents/app3').get()).data()!;
+    expect(c.terms.docVersion).toBe('5.1.0');
+    const years = (c.legalRetention.retainUntil.toMillis() - c.legalRetention.accountDeletedAt.toMillis()) / (365.25 * 86400000);
+    expect(Math.round(years)).toBe(5);
+    const a = (await db.doc('legal_acknowledgements/app3').get()).data()!;
+    expect(a.legalRetention.retainUntil.toMillis()).toBe(c.legalRetention.retainUntil.toMillis());
+
+    // A later sweep (Auth trigger) keeps the first dates.
+    const { markLegalRecordsRetained } = require('../../src/auth/accountDeletion');
+    await markLegalRecordsRetained('app3', Date.now() + 86400000);
+    const again = (await db.doc('consents/app3').get()).data()!;
+    expect(again.legalRetention.retainUntil.toMillis()).toBe(c.legalRetention.retainUntil.toMillis());
+  });
+
   test('a failing step leaves the account intact (Auth deleted last); retry completes', async () => {
     await newUser('app3', 'app3@example.com');
     await put('profiles/app3/photos/a.jpg');

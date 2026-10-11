@@ -23591,4 +23591,35 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get pcwSaveFailed =>
       'We could not record your acceptance. Check your connection and try again.';
+
+  @override
+  String get legalUpdateTitle => 'We\'ve updated our Terms and Privacy Policy';
+
+  @override
+  String legalUpdateIntro(String version, String date) {
+    return 'Version $version applies from $date. What\'s new:';
+  }
+
+  @override
+  String get legalUpdateBulletPrivateContent =>
+      'Copying, recording or sharing other people\'s private photos, chat media or personal data without their consent is prohibited (Terms, section 16.9).';
+
+  @override
+  String get legalUpdateBulletWarning =>
+      'The first time you open someone\'s private content, you confirm a short warning, and we keep a record of that confirmation (Privacy Policy, section 10.5).';
+
+  @override
+  String get legalUpdateBulletOrientation =>
+      'We no longer collect sexual orientation.';
+
+  @override
+  String get legalUpdateAgree => 'I agree';
+
+  @override
+  String get legalUpdateSaveFailed =>
+      'We couldn\'t save your choice. Check your connection and try again.';
+
+  @override
+  String get legalUpdateDisagreeHint =>
+      'If you don\'t agree, you can sign out. You can also delete your account at any time.';
 }

@@ -23955,4 +23955,36 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get pcwSaveFailed =>
       'Impossible d’enregistrer ton acceptation. Vérifie ta connexion et réessaie.';
+
+  @override
+  String get legalUpdateTitle =>
+      'Nous avons mis à jour nos Conditions et notre Politique de confidentialité';
+
+  @override
+  String legalUpdateIntro(String version, String date) {
+    return 'La version $version s\'applique à partir du $date. Nouveautés :';
+  }
+
+  @override
+  String get legalUpdateBulletPrivateContent =>
+      'Il est interdit de copier, d\'enregistrer ou de partager les photos privées, les médias de discussion ou les données personnelles d\'autres personnes sans leur consentement (Conditions, section 16.9).';
+
+  @override
+  String get legalUpdateBulletWarning =>
+      'La première fois que vous ouvrez le contenu privé d\'une autre personne, vous confirmez un court avertissement, et nous conservons une trace de cette confirmation (Politique de confidentialité, section 10.5).';
+
+  @override
+  String get legalUpdateBulletOrientation =>
+      'Nous ne collectons plus l\'orientation sexuelle.';
+
+  @override
+  String get legalUpdateAgree => 'J\'accepte';
+
+  @override
+  String get legalUpdateSaveFailed =>
+      'Impossible d\'enregistrer votre choix. Vérifiez votre connexion et réessayez.';
+
+  @override
+  String get legalUpdateDisagreeHint =>
+      'Si vous n\'êtes pas d\'accord, vous pouvez vous déconnecter. Vous pouvez aussi supprimer votre compte à tout moment.';
 }

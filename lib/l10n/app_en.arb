@@ -12765,5 +12765,45 @@
   "pcwSaveFailed": "We could not record your acceptance. Check your connection and try again.",
   "@pcwSaveFailed": {
     "description": "Private-content warning (Terms 5.1.0 section 16.9(d)) shown before another user's private photos or received chat media"
+  },
+  "legalUpdateTitle": "We've updated our Terms and Privacy Policy",
+  "@legalUpdateTitle": {
+    "description": "Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)"
+  },
+  "legalUpdateIntro": "Version {version} applies from {date}. What's new:",
+  "@legalUpdateIntro": {
+    "description": "Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)",
+    "placeholders": {
+      "version": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "legalUpdateBulletPrivateContent": "Copying, recording or sharing other people's private photos, chat media or personal data without their consent is prohibited (Terms, section 16.9).",
+  "@legalUpdateBulletPrivateContent": {
+    "description": "Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)"
+  },
+  "legalUpdateBulletWarning": "The first time you open someone's private content, you confirm a short warning, and we keep a record of that confirmation (Privacy Policy, section 10.5).",
+  "@legalUpdateBulletWarning": {
+    "description": "Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)"
+  },
+  "legalUpdateBulletOrientation": "We no longer collect sexual orientation.",
+  "@legalUpdateBulletOrientation": {
+    "description": "Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)"
+  },
+  "legalUpdateAgree": "I agree",
+  "@legalUpdateAgree": {
+    "description": "Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)"
+  },
+  "legalUpdateSaveFailed": "We couldn't save your choice. Check your connection and try again.",
+  "@legalUpdateSaveFailed": {
+    "description": "Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)"
+  },
+  "legalUpdateDisagreeHint": "If you don't agree, you can sign out. You can also delete your account at any time.",
+  "@legalUpdateDisagreeHint": {
+    "description": "Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)"
   }
 }

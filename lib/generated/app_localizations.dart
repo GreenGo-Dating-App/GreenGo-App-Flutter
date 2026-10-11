@@ -40646,6 +40646,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'We could not record your acceptance. Check your connection and try again.'**
   String get pcwSaveFailed;
+
+  /// Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)
+  ///
+  /// In en, this message translates to:
+  /// **'We\'ve updated our Terms and Privacy Policy'**
+  String get legalUpdateTitle;
+
+  /// Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)
+  ///
+  /// In en, this message translates to:
+  /// **'Version {version} applies from {date}. What\'s new:'**
+  String legalUpdateIntro(String version, String date);
+
+  /// Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)
+  ///
+  /// In en, this message translates to:
+  /// **'Copying, recording or sharing other people\'s private photos, chat media or personal data without their consent is prohibited (Terms, section 16.9).'**
+  String get legalUpdateBulletPrivateContent;
+
+  /// Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)
+  ///
+  /// In en, this message translates to:
+  /// **'The first time you open someone\'s private content, you confirm a short warning, and we keep a record of that confirmation (Privacy Policy, section 10.5).'**
+  String get legalUpdateBulletWarning;
+
+  /// Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)
+  ///
+  /// In en, this message translates to:
+  /// **'We no longer collect sexual orientation.'**
+  String get legalUpdateBulletOrientation;
+
+  /// Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)
+  ///
+  /// In en, this message translates to:
+  /// **'I agree'**
+  String get legalUpdateAgree;
+
+  /// Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)
+  ///
+  /// In en, this message translates to:
+  /// **'We couldn\'t save your choice. Check your connection and try again.'**
+  String get legalUpdateSaveFailed;
+
+  /// Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)
+  ///
+  /// In en, this message translates to:
+  /// **'If you don\'t agree, you can sign out. You can also delete your account at any time.'**
+  String get legalUpdateDisagreeHint;
 }
 
 class _AppLocalizationsDelegate

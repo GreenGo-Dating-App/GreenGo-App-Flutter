@@ -23791,6 +23791,38 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get pcwSaveFailed =>
       'Não foi possível registar a sua aceitação. Verifique a ligação e tente novamente.';
+
+  @override
+  String get legalUpdateTitle =>
+      'Atualizámos os nossos Termos e a Política de Privacidade';
+
+  @override
+  String legalUpdateIntro(String version, String date) {
+    return 'A versão $version aplica-se a partir de $date. Novidades:';
+  }
+
+  @override
+  String get legalUpdateBulletPrivateContent =>
+      'É proibido copiar, gravar ou partilhar fotos privadas, multimédia de conversas ou dados pessoais de outras pessoas sem o seu consentimento (Termos, secção 16.9).';
+
+  @override
+  String get legalUpdateBulletWarning =>
+      'Da primeira vez que abrir conteúdo privado de outra pessoa, confirma um breve aviso e guardamos um registo dessa confirmação (Política de Privacidade, secção 10.5).';
+
+  @override
+  String get legalUpdateBulletOrientation =>
+      'Deixámos de recolher a orientação sexual.';
+
+  @override
+  String get legalUpdateAgree => 'Aceito';
+
+  @override
+  String get legalUpdateSaveFailed =>
+      'Não foi possível guardar a sua escolha. Verifique a ligação e tente novamente.';
+
+  @override
+  String get legalUpdateDisagreeHint =>
+      'Se não concordar, pode terminar sessão. Também pode eliminar a sua conta a qualquer momento.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -47592,4 +47624,36 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get pcwSaveFailed =>
       'Não foi possível registrar sua aceitação. Verifique sua conexão e tente novamente.';
+
+  @override
+  String get legalUpdateTitle =>
+      'Atualizamos nossos Termos e a Política de Privacidade';
+
+  @override
+  String legalUpdateIntro(String version, String date) {
+    return 'A versão $version vale a partir de $date. O que mudou:';
+  }
+
+  @override
+  String get legalUpdateBulletPrivateContent =>
+      'É proibido copiar, gravar ou compartilhar fotos privadas, mídias de conversas ou dados pessoais de outras pessoas sem o consentimento delas (Termos, seção 16.9).';
+
+  @override
+  String get legalUpdateBulletWarning =>
+      'Na primeira vez que você abrir conteúdo privado de outra pessoa, vai confirmar um breve aviso, e guardamos um registro dessa confirmação (Política de Privacidade, seção 10.5).';
+
+  @override
+  String get legalUpdateBulletOrientation =>
+      'Não coletamos mais a orientação sexual.';
+
+  @override
+  String get legalUpdateAgree => 'Concordo';
+
+  @override
+  String get legalUpdateSaveFailed =>
+      'Não foi possível salvar sua escolha. Verifique sua conexão e tente novamente.';
+
+  @override
+  String get legalUpdateDisagreeHint =>
+      'Se você não concordar, pode sair da conta. Você também pode excluir sua conta a qualquer momento.';
 }

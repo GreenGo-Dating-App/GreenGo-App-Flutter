@@ -5,6 +5,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../constants/legal_versions.dart';
+
 /// Consent types the server's `recordConsent` callable accepts
 /// (functions/src/ai/aiGateway.ts). Kept as constants so a typo cannot
 /// silently create an unknown type the server rejects.
@@ -46,6 +48,12 @@ class ConsentRecorder {
   final String? Function() _currentUid;
 
   static String localKey(String uid, String type) => 'consent_${type}_$uid';
+
+  /// Local mirror of the legal-document version the server stored for
+  /// [type] (terms / privacy). Lets the legal-update gate skip its server
+  /// read once the current version is known to be accepted.
+  static String localDocKey(String uid, String type) =>
+      'consent_doc_${type}_$uid';
 
   /// Builds the wire payload (exposed for tests).
   static Map<String, dynamic> payload({
@@ -89,7 +97,7 @@ class ConsentRecorder {
       try {
         await _callable(data);
         // Mirror only what the server actually stored.
-        await _writeLocal(uid, type, accepted);
+        await _writeLocal(uid, type, accepted, accepted ? docVersion : null);
         return true;
       } catch (e) {
         debugPrint('ConsentRecorder: $type attempt ${attempt + 1} failed: $e');
@@ -113,10 +121,38 @@ class ConsentRecorder {
     }
   }
 
-  Future<void> _writeLocal(String uid, String type, bool accepted) async {
+  /// The legal-document version last accepted from this device for [type]
+  /// by the signed-in user (see [localDocKey]), or null.
+  Future<String?> localDocVersion(String type) async {
+    final uid = _currentUid();
+    if (uid == null) return null;
+    try {
+      return (await SharedPreferences.getInstance())
+          .getString(localDocKey(uid, type));
+    } catch (_) {
+      return null;
+    }
+  }
+
+  /// Mirrors a server-confirmed accepted [docVersion] locally (used by the
+  /// legal-update gate after it read the server record).
+  Future<void> rememberDocVersion(String type, String docVersion) async {
+    final uid = _currentUid();
+    if (uid == null) return;
     try {
       await (await SharedPreferences.getInstance())
-          .setBool(localKey(uid, type), accepted);
+          .setString(localDocKey(uid, type), docVersion);
+    } catch (_) {}
+  }
+
+  Future<void> _writeLocal(
+      String uid, String type, bool accepted, String? docVersion) async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setBool(localKey(uid, type), accepted);
+      if (docVersion != null) {
+        await prefs.setString(localDocKey(uid, type), docVersion);
+      }
     } catch (e) {
       debugPrint('ConsentRecorder: local write failed: $e');
     }
@@ -129,14 +165,30 @@ class ConsentRecorder {
     required bool profiling,
     required bool thirdPartyData,
     required bool marketingEmail,
-    String docVersion = '1.0',
+    String termsDocVersion = kTermsVersion,
+    String privacyDocVersion = kPrivacyPolicyVersion,
   }) async {
     await Future.wait([
-      record(type: ConsentTypes.terms, accepted: true, docVersion: docVersion, retries: 1),
-      record(type: ConsentTypes.privacy, accepted: true, docVersion: docVersion, retries: 1),
+      record(type: ConsentTypes.terms, accepted: true, docVersion: termsDocVersion, retries: 1),
+      record(type: ConsentTypes.privacy, accepted: true, docVersion: privacyDocVersion, retries: 1),
       record(type: ConsentTypes.profiling, accepted: profiling, retries: 1),
       record(type: ConsentTypes.thirdPartyData, accepted: thirdPartyData, retries: 1),
       record(type: ConsentTypes.marketingEmail, accepted: marketingEmail, retries: 1),
     ]);
+  }
+
+  /// Acceptance of updated Terms / Privacy Policy (the legal-update sheet).
+  /// The server stamps the time (`recordConsent` writes a server timestamp);
+  /// the client only sends the document versions. True when BOTH records
+  /// were stored. Never throws.
+  Future<bool> recordLegalUpdateAcceptance({
+    String termsDocVersion = kTermsVersion,
+    String privacyDocVersion = kPrivacyPolicyVersion,
+  }) async {
+    final results = await Future.wait([
+      record(type: ConsentTypes.terms, accepted: true, docVersion: termsDocVersion, retries: 1),
+      record(type: ConsentTypes.privacy, accepted: true, docVersion: privacyDocVersion, retries: 1),
+    ]);
+    return results.every((ok) => ok);
   }
 }

@@ -6778,5 +6778,13 @@
   "pcwRecorded": "Tu ne verras cet avertissement qu’une seule fois. Ton acceptation est enregistrée.",
   "pcwCheckbox": "J’ai lu et j’accepte cet avertissement",
   "pcwUnderstand": "J’ai compris",
-  "pcwSaveFailed": "Impossible d’enregistrer ton acceptation. Vérifie ta connexion et réessaie."
+  "pcwSaveFailed": "Impossible d’enregistrer ton acceptation. Vérifie ta connexion et réessaie.",
+  "legalUpdateTitle": "Nous avons mis à jour nos Conditions et notre Politique de confidentialité",
+  "legalUpdateIntro": "La version {version} s'applique à partir du {date}. Nouveautés :",
+  "legalUpdateBulletPrivateContent": "Il est interdit de copier, d'enregistrer ou de partager les photos privées, les médias de discussion ou les données personnelles d'autres personnes sans leur consentement (Conditions, section 16.9).",
+  "legalUpdateBulletWarning": "La première fois que vous ouvrez le contenu privé d'une autre personne, vous confirmez un court avertissement, et nous conservons une trace de cette confirmation (Politique de confidentialité, section 10.5).",
+  "legalUpdateBulletOrientation": "Nous ne collectons plus l'orientation sexuelle.",
+  "legalUpdateAgree": "J'accepte",
+  "legalUpdateSaveFailed": "Impossible d'enregistrer votre choix. Vérifiez votre connexion et réessayez.",
+  "legalUpdateDisagreeHint": "Si vous n'êtes pas d'accord, vous pouvez vous déconnecter. Vous pouvez aussi supprimer votre compte à tout moment."
 }

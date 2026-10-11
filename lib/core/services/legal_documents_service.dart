@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import '../../generated/app_localizations.dart';
+import '../constants/legal_versions.dart';
 
 /// Supported language codes
 class SupportedLanguage {
@@ -51,6 +52,16 @@ extension LegalDocumentTypeExtension on LegalDocumentType {
         return 'terms-and-conditions';
       case LegalDocumentType.privacyPolicy:
         return 'privacy-policy';
+    }
+  }
+
+  /// Version of the bundled text (lib/core/constants/legal_versions.dart).
+  String get bundledVersion {
+    switch (this) {
+      case LegalDocumentType.termsAndConditions:
+        return kTermsVersion;
+      case LegalDocumentType.privacyPolicy:
+        return kPrivacyPolicyVersion;
     }
   }
 
@@ -127,6 +138,7 @@ class LegalDocument {
     var body = content;
 
     final lines = content.split('\n');
+    final headerVersion = parseHeaderVersion(lines);
     if (lines.isNotEmpty) {
       final firstLine = lines[0].trim();
       if (firstLine.startsWith('#')) {
@@ -145,12 +157,25 @@ class LegalDocument {
       languageCode: languageCode,
       title: title,
       content: body,
-      version: version ?? '1.0',
+      version: version ?? headerVersion ?? type.bundledVersion,
       isActive: true,
-      lastUpdated: DateTime(2026, 1, 26),
+      lastUpdated: kLegalEffectiveDate,
       updatedBy: 'bundled',
-      createdAt: DateTime(2026, 1, 26),
+      createdAt: kLegalEffectiveDate,
     );
+  }
+
+  /// The document's own version from its header block, e.g. "Version: 5.1.0"
+  /// (es "Versión:", fr "Version :", it "Versione:", pt "Versão:"). Only the
+  /// first 12 lines are read, and only a line that ENDS with the number, so
+  /// "Previous version: 5.0.0 (9 October 2026)" is never taken. CRLF-safe.
+  static String? parseHeaderVersion(List<String> lines) {
+    final re = RegExp(r'^[^\d:]{3,30}:\s*(\d+\.\d+(?:\.\d+)?)$');
+    for (final line in lines.take(12)) {
+      final m = re.firstMatch(line.trim());
+      if (m != null) return m.group(1);
+    }
+    return null;
   }
   final String id;
   final LegalDocumentType type;

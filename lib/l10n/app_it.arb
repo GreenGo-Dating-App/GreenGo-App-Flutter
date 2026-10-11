@@ -7359,5 +7359,13 @@
   "pcwRecorded": "Vedrai questo avviso una sola volta. La tua accettazione viene registrata.",
   "pcwCheckbox": "Ho letto e accetto questo avviso",
   "pcwUnderstand": "Ho capito",
-  "pcwSaveFailed": "Non è stato possibile registrare la tua accettazione. Controlla la connessione e riprova."
+  "pcwSaveFailed": "Non è stato possibile registrare la tua accettazione. Controlla la connessione e riprova.",
+  "legalUpdateTitle": "Abbiamo aggiornato i Termini e l'Informativa sulla privacy",
+  "legalUpdateIntro": "La versione {version} si applica dal {date}. Novità:",
+  "legalUpdateBulletPrivateContent": "È vietato copiare, registrare o condividere foto private, contenuti multimediali delle chat o dati personali di altre persone senza il loro consenso (Termini, sezione 16.9).",
+  "legalUpdateBulletWarning": "La prima volta che apri contenuti privati di un'altra persona, confermi un breve avviso e conserviamo una registrazione di questa conferma (Informativa sulla privacy, sezione 10.5).",
+  "legalUpdateBulletOrientation": "Non raccogliamo più l'orientamento sessuale.",
+  "legalUpdateAgree": "Accetto",
+  "legalUpdateSaveFailed": "Non è stato possibile salvare la tua scelta. Controlla la connessione e riprova.",
+  "legalUpdateDisagreeHint": "Se non sei d'accordo, puoi uscire dall'account. Puoi anche eliminare il tuo account in qualsiasi momento."
 }

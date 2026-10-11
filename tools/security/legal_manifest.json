@@ -1,19 +1,19 @@
 {
   "_comment": "sha256 (CRLF->LF normalised) of assets/legal/*. Regenerate ONLY after the legal text change was reviewed: python tools/security/check_legal_manifest.py --update",
   "files": {
-    "privacy-policy-de.txt": "4c1b236bfe7c71516b994db8be6d167fa57d41f6f96b5329b63c20f25bf1a4b6",
-    "privacy-policy-en.txt": "e4d3a6c3ec6b6de0d0fb82d868d858db270df420117fe54522d6bb004fc6006f",
-    "privacy-policy-es.txt": "dabbdb8ccbdee44bb3da5de2a21385164cb09bd4a8a9a11077c18a8ab9471e10",
-    "privacy-policy-fr.txt": "881cb7fab11ffccfad7f08e420df5570b7103edb1d678f319f8bd80e37f1b203",
-    "privacy-policy-it.txt": "e7777333769b28a5957818d13cd68d9612d24f1cf37898fdb63fee42b95890bf",
-    "privacy-policy-pt.txt": "d82c585273ff2defb149c933facb548f75f895f2f506c0dbba4cb1fb61f76bb8",
-    "privacy-policy-pt_BR.txt": "e1fde40fd2de422c35ca7291dd596ff7f3c95feab576fab1aa3af23726aec5b4",
-    "terms-and-conditions-de.txt": "c61aac562c97a3e73682aa0ea96c4fe5c67492bc7d3017d73ed7ac0c89a2ca00",
-    "terms-and-conditions-en.txt": "6d9cd13ccd7c2b1f90d03530eacd1404aa55cdda511f01e96d79b04a08ca13d1",
-    "terms-and-conditions-es.txt": "1a5dc94cc3e67bbada25fa86867d4669d81476fef72cbf75d944cc1c8ff79e59",
-    "terms-and-conditions-fr.txt": "5afa2cd6214adfbdcc4c49fcfb5420c3c1a85a64d95e8fd7f6332eeb51719008",
-    "terms-and-conditions-it.txt": "539a4ea740b836f82a812dd5a45df7ef643ecae7b3e6e9e5ec632576cef7efa0",
-    "terms-and-conditions-pt.txt": "abde50aa01e527174c51ce3e390a3747af2a04e7c0b21cfd94b29ae14f692aa2",
-    "terms-and-conditions-pt_BR.txt": "06e77aa6ffdd5df396aee98fa0d0ce8ac929ebfd3bb66d8919c270c14b58179a"
+    "privacy-policy-de.txt": "73b62cae3995ef193dbf8634ec0335db01c0c4741a11b0232cc89ef9f4b6c835",
+    "privacy-policy-en.txt": "ed71ec10ff83669e2d3142737d1c8230d09a8392abdda0906fa59f70e5526f73",
+    "privacy-policy-es.txt": "99f675838c3139d565a603c3f9e1ccff9a23ef9ae4db621bd12e713c566aee83",
+    "privacy-policy-fr.txt": "939fdfc38f64bc2b2afe9a435f0ac654e166c85d7d1071420c4cdbda6ef12c6e",
+    "privacy-policy-it.txt": "5623f60111f8c079623c71fc16db3ed84ce119c0d26f89b4a04b6d7b11c0d465",
+    "privacy-policy-pt.txt": "c0f5960192bbafddeb221e7d9d62fed3fea682bc4354e799c41a4cf62ab5f16d",
+    "privacy-policy-pt_BR.txt": "529941f79a40b43e8ba2f4eb3ab273bd039e478b1ededce53086aa5b713c0efb",
+    "terms-and-conditions-de.txt": "09d026212d871280cc066c05037c15d9d1008252a9f1ef8e9642da11b8498739",
+    "terms-and-conditions-en.txt": "c1ac60ea9bc5cabaca4f8f4e8a169e6a2a11bb5d56a1850c47abff4048a81cf2",
+    "terms-and-conditions-es.txt": "37a23c6baa22b9f20b452534b3e32fd7d8b01c4e9c3d593e0871040433bd8d21",
+    "terms-and-conditions-fr.txt": "3fe742f57e1e772c155b71d592bcf016714701292dcc232951cd8935652ceb27",
+    "terms-and-conditions-it.txt": "d19702699c830ebb3da902d7f221275e6023601d54ec615204c6283e674453b6",
+    "terms-and-conditions-pt.txt": "57f2d169b619725bd77fca5fd8bd0c945a0f0b622fc20e428192b68f00dfdf88",
+    "terms-and-conditions-pt_BR.txt": "1c26b82487d0811855df7e37fb5b54fca351514425cfedb5cd9ad63abcec221c"
   }
 }

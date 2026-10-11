@@ -14,7 +14,10 @@
  * deletion uses, so a new per-user collection is exported as soon as it is
  * added there):
  *   account/      Auth record (email, phone, providers, dates), profiles/{uid},
- *                 users/{uid}, profiles_private/{uid}, consents/{uid} (+events)
+ *                 users/{uid}, profiles_private/{uid}, consents/{uid} (+events:
+ *                 terms / privacy acceptance records with the accepted
+ *                 document version), legal_acknowledgements/{uid}/items
+ *                 (private-content warning confirmations, privacy policy 10.5)
  *   data/         one JSON (and a CSV when there is more than one record) per
  *                 inventory location that holds something
  *   messages/     the messages the CALLER sent (all conversations / groups /
@@ -49,6 +52,7 @@ import { ZipStreamWriter } from '../shared/zipWriter';
 import {
   ACCOUNT_DATA_INVENTORY,
   InventoryEntry,
+  LEGAL_ACKNOWLEDGEMENTS,
   SHARED_MEDIA_PREFIXES,
   storagePathFromUrl,
 } from './accountDeletion';
@@ -319,7 +323,8 @@ function readme(uid: string, generatedAt: string): string {
     '',
     'This archive contains the personal data GreenGo holds about you (GDPR Art. 15 and 20,',
     'LGPD Art. 18). Files:',
-    '  account/        your sign-in record, profile, private profile fields, consents',
+    '  account/        your sign-in record, profile, private profile fields, consents,',
+    '                  acceptances of the Terms / Privacy Policy and warning confirmations',
     '  data/           everything else stored for your account (JSON; CSV for lists)',
     '  messages/       the messages YOU sent (JSON and CSV)',
     '  conversations/  basic information about your conversations and groups',
@@ -372,7 +377,10 @@ export async function collectSections(uid: string): Promise<{ sections: Section[
   } catch (e: any) {
     if (e?.code !== 'auth/user-not-found') throw e;
   }
-  for (const c of ['profiles', 'users', 'profiles_private', 'consents']) {
+  // consents/{uid} (+events) and legal_acknowledgements/{uid}/items are the
+  // acceptance / warning-confirmation records kept as legal proof (they
+  // survive account deletion, see RETENTION_STORES); the user gets them too.
+  for (const c of ['profiles', 'users', 'profiles_private', 'consents', LEGAL_ACKNOWLEDGEMENTS]) {
     const recs: Array<Record<string, any>> = [];
     await readTree(db().collection(c).doc(uid), uid, 0, recs);
     add(`account/${c}`, `${c}/{you}`, recs);

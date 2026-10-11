@@ -65,6 +65,7 @@ import '../../../gamification/presentation/widgets/achievement_unlock_dialog.dar
 import '../../../gamification/presentation/widgets/level_up_celebration_dialog.dart';
 import '../../../globe_explore/presentation/bloc/globe_bloc.dart';
 import '../../../globe_explore/presentation/screens/globe_screen.dart';
+import '../../../legal/presentation/widgets/legal_update_sheet.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../safety/presentation/screens/community_guidelines_screen.dart';
 import '../../../notifications/presentation/bloc/notifications_bloc.dart';
@@ -314,6 +315,16 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       if (!mounted) return;
       await CommunityGuidelinesScreen.showIfNeeded(context);
+      // Terms / Privacy Policy 5.1.0 (material change): users whose
+      // server-side acceptance is older are asked to accept once.
+      if (mounted) {
+        await showLegalUpdateSheetIfNeeded(
+          context,
+          onSignOut: () {
+            if (mounted) context.read<AuthBloc>().add(const AuthSignOutRequested());
+          },
+        );
+      }
       // P2-5(a): analytics / crash-reporting consent in the EEA/UK/CH (shown
       // once per launch until decided; collection stays OFF meanwhile).
       if (mounted) await showAnalyticsConsentPromptIfNeeded(context);
