@@ -81,12 +81,11 @@ Future<void> _pumpGrid(
 
 void main() {
   final greengo = AttractionRatingDisplay.of(
-      const AttractionRatingSummary(sum: 46000, count: 10000), 4.2);
-  final google = AttractionRatingDisplay.of(null, 4.2);
+      const AttractionRatingSummary(sum: 46000, count: 10000));
 
   for (final locale in _locales) {
     for (final withDistance in [true, false]) {
-      for (final rating in [greengo, google, null]) {
+      for (final rating in [greengo, null]) {
         testWidgets(
             'grid tile fits at 320px / 3 columns '
             '[$locale dist=$withDistance rating=${rating?.valueLabel}]',
@@ -118,9 +117,12 @@ void main() {
     expect(find.text('1234.5 km away'), findsWidgets);
   });
 
-  testWidgets('Google fallback shows no count', (tester) async {
+  testWidgets('the catalogue rating estimate is never shown as stars',
+      (tester) async {
+    // The attraction carries googleRating 4.4 (an estimate); nobody rated it.
     await _pumpGrid(tester, const Locale('en'),
-        withDistance: false, rating: google);
-    expect(find.text('4.2'), findsWidgets);
+        withDistance: false, rating: AttractionRatingDisplay.of(null));
+    expect(find.byKey(const ValueKey('attrRatingLine')), findsNothing);
+    expect(find.text('4.4'), findsNothing);
   });
 }
