@@ -1398,10 +1398,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get ageRange => 'Faixa Etária';
 
   @override
-  String get aiCoachBenefitAllChapters =>
-      'Todos os capítulos de aprendizagem desbloqueados';
-
-  @override
   String get aiCoachBenefitFeedback =>
       'Feedback de gramática e pronúncia em tempo real';
 
@@ -1419,10 +1415,6 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get aiCoachTrialEnded =>
       'O teu período de teste do Treinador IA terminou.';
-
-  @override
-  String get aiCoachUpgradePrompt =>
-      'Atualiza para Prata, Ouro ou Platina para desbloquear.';
 
   @override
   String get aiCoachUpgradeTitle => 'Atualiza para Aprender Mais';
@@ -2620,10 +2612,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get chatUpgrade => 'Atualizar';
-
-  @override
-  String get chatUpgradePracticeMode =>
-      'Atualiza para Silver VIP ou superior para continuar a praticar idiomas nos teus chats.';
 
   @override
   String get chatUploading => 'A carregar...';
@@ -6365,9 +6353,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get membershipActivatedTitle => 'Subscrição Ativada!';
 
   @override
-  String get membershipAdvancedFilters => 'Filtros Avançados';
-
-  @override
   String get membershipBase => 'Base';
 
   @override
@@ -6391,9 +6376,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get membershipCurrent => 'Subscrição Atual';
-
-  @override
-  String get membershipDailyLikes => 'Conexões Diárias';
 
   @override
   String get membershipDailyMessagesLabel =>
@@ -6530,9 +6512,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get membershipGreenGoBase => 'GreenGo Base';
 
   @override
-  String get membershipIncognitoMode => 'Modo Incógnito';
-
-  @override
   String get membershipLeaveEmptyLifetime => 'Deixar vazio para vitalício';
 
   @override
@@ -6569,7 +6548,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get membershipPanel => 'Painel de Subscrições';
 
   @override
-  String get membershipPermanent => 'Permanente';
+  String get membershipPermanent => '1 ano, renova anualmente';
 
   @override
   String get membershipPlatinum => 'Platinum';
@@ -6579,9 +6558,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get membershipPrioritySupport => 'Suporte Prioritário';
-
-  @override
-  String get membershipReadReceipts => 'Confirmação de Leitura';
 
   @override
   String get membershipRequired => 'Subscrição necessária';
@@ -6595,22 +6571,16 @@ class AppLocalizationsPt extends AppLocalizations {
       'A tua subscrição base está ativa. Compra mais um ano para prolongar a data de expiração.';
 
   @override
-  String get membershipRewinds => 'Rewinds';
-
-  @override
   String membershipSavePercent(Object percent) {
     return 'POUPE $percent%';
   }
-
-  @override
-  String get membershipSeeWhoLikes => 'Ver quem conecta';
 
   @override
   String get membershipSilver => 'Silver';
 
   @override
   String get membershipSubtitle =>
-      'Compre uma vez, desfrute de funcionalidades premium por 1 mês ou 1 ano';
+      'As subscrições renovam automaticamente: Base todos os anos; Silver, Gold e Platinum todos os meses ou anos. Cancela quando quiseres.';
 
   @override
   String get membershipSuperLikes => 'Conexões Prioritárias';
@@ -6621,11 +6591,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get membershipTerms =>
-      'Compra única. A subscrição será prolongada a partir da sua data de término atual.';
+      'Subscrição com renovação automática: renova no fim de cada período ao preço indicado, salvo se cancelares pelo menos 24 horas antes. Gere-a ou cancela-a na tua conta da loja.';
 
   @override
   String get membershipTermsExtended =>
-      'Compra única. A subscrição será prolongada a partir da sua data de término atual. Compras de nível superior substituem níveis inferiores.';
+      'Subscrição com renovação automática: renova no fim de cada período ao preço indicado, salvo se cancelares pelo menos 24 horas antes. Gere-a ou cancela-a na tua conta da loja. Um nível superior substitui um inferior.';
 
   @override
   String get membershipTierLabel => 'Nível de Subscrição *';
@@ -8018,10 +7988,6 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get profileIncognitoFreePlatinum =>
-      'Grátis com Platinum - Oculto da descoberta';
-
-  @override
   String get profileIncognitoMode => 'Modo Incógnito';
 
   @override
@@ -8805,15 +8771,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get shopActive => 'ATIVA';
 
   @override
-  String get shopAdvancedFilters => 'Filtros Avançados';
-
-  @override
   String shopAmountCoins(Object amount) {
     return '$amount moedas';
   }
-
-  @override
-  String get shopBadge => 'Distintivo';
 
   @override
   String get shopBaseMembership => 'Subscrição Base GreenGo';
@@ -8914,9 +8874,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get shopGreenGoCoins => 'GreenGoCoins';
 
   @override
-  String get shopIncognitoMode => 'Modo Incógnito';
-
-  @override
   String get shopInsufficientCoins => 'Moedas insuficientes';
 
   @override
@@ -8951,9 +8908,6 @@ class AppLocalizationsPt extends AppLocalizations {
       'Compra anterior encontrada. Tenta novamente.';
 
   @override
-  String get shopPriorityMatching => 'Ligações prioritárias';
-
-  @override
   String shopPurchaseCoinsFor(String coins, String price) {
     return 'Comprar $coins moedas por $price';
   }
@@ -8978,9 +8932,6 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get shopSeeWhoLikesYou => 'Ver quem conecta';
-
-  @override
   String get shopSend => 'Enviar';
 
   @override
@@ -8993,9 +8944,6 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get shopTemporarilyUnavailable =>
       'As compras estão temporariamente indisponíveis. Tenta novamente mais tarde.';
-
-  @override
-  String get shopSuperLikes => 'Conexões Prioritárias';
 
   @override
   String get shopTabCoins => 'Moedas';
@@ -9013,9 +8961,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get shopTitle => 'Loja';
-
-  @override
-  String get shopTravelling => 'A Viajar';
 
   @override
   String get shopUnableToLoadPackages => 'Não é possível carregar os pacotes';
@@ -9050,9 +8995,6 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get shopVideoCoinsDescription =>
       'Vê vídeos curtos para ganhar moedas grátis!\nFica atento a esta funcionalidade entusiasmante.';
-
-  @override
-  String get shopVipBadge => 'Distintivo VIP';
 
   @override
   String get shopYearly => 'Anual';
@@ -9695,10 +9637,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get upgrade => 'Atualizar';
 
   @override
-  String get upgradeForEarlyAccess =>
-      'Atualize para Prata, Ouro ou Platina para acesso antecipado a 1 de março de 2026!';
-
-  @override
   String get upgradeNow => 'Atualizar Agora';
 
   @override
@@ -9936,18 +9874,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get vibeTagsNoTags => 'Sem etiquetas disponíveis';
 
   @override
-  String get vibeTagsPremiumFeature1 => '5 etiquetas de vibe em vez de 3';
-
-  @override
-  String get vibeTagsPremiumFeature2 => 'Etiquetas premium exclusivas';
-
-  @override
-  String get vibeTagsPremiumFeature3 => 'Prioridade nos resultados de pesquisa';
-
-  @override
-  String get vibeTagsPremiumFeature4 => 'E muito mais!';
-
-  @override
   String get vibeTagsRemoveTag => 'Remover etiqueta';
 
   @override
@@ -10139,11 +10065,6 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get waitingAccessDateBasic =>
       'O seu acesso começará a 15 de março de 2026';
-
-  @override
-  String waitingAccessDatePremium(String tier) {
-    return 'Como membro $tier, tem acesso antecipado a 1 de março de 2026!';
-  }
 
   @override
   String get waitingAccessDateTitle => 'A Sua Data de Acesso';
@@ -10480,15 +10401,15 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get guideTiersItem1 =>
-      'Prata: Obtenha mais connects diários, veja quem fez Connect consigo e suporte prioritário.';
+      'Silver: 50 novas ligações por dia, 3 eventos em curso, grupos ilimitados, 1 destaque de perfil grátis e 300 moedas por mês, e o modo viagem por 100 moedas por dia.';
 
   @override
   String get guideTiersItem2 =>
-      'Ouro: Tudo o que está em Prata mais connects ilimitados, filtros avançados e confirmações de leitura.';
+      'Gold: tudo do Silver mais 200 novas ligações por dia, 5 eventos em curso, 4 destaques grátis e 400 moedas por mês, modo fantasma e suporte prioritário.';
 
   @override
   String get guideTiersItem3 =>
-      'Platina: Tudo o que está em Ouro mais impulso de perfil, melhores escolhas e funcionalidades exclusivas.';
+      'Platinum: tudo do Gold mais ligações e eventos ilimitados, 30 destaques grátis e 500 moedas por mês, modo viagem grátis, conta empresarial e estatísticas.';
 
   @override
   String get guideTiersItem4 =>
@@ -10794,18 +10715,6 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get membershipTrialSubtitle =>
       '7 dias grátis, depois renova anualmente';
-
-  @override
-  String get membershipTrialFeature1 =>
-      'Crie comunidades, eventos e grupos ilimitados';
-
-  @override
-  String get membershipTrialFeature2 =>
-      'Sem anuncios — experiencia sem publicidade';
-
-  @override
-  String get membershipTrialFeature3 =>
-      '500 moedas bonus + acesso total a tudo';
 
   @override
   String get membershipHaveCoupon => 'Tem um codigo de cupao?';
@@ -11550,11 +11459,6 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get boostRequiresTierDescription =>
       'Os impulsos de perfil são um benefício de subscrição paga. Faz upgrade do teu plano para impulsionar o teu perfil e seres visto por mais pessoas.';
-
-  @override
-  String boostMonthlyLimitReached(int limit) {
-    return 'Já usaste todos os $limit impulsos de perfil incluídos no teu plano este mês. Faz upgrade para mais.';
-  }
 
   @override
   String get travelModeFeatureName => 'Modo Viajante';
@@ -12934,22 +12838,16 @@ class AppLocalizationsPt extends AppLocalizations {
   String get shopEventsCreate => 'Eventos que podes criar';
 
   @override
-  String get shopGroupsCreate => 'Grupos e comunidades que podes criar';
+  String get shopGroupsCreate => 'Grupos que podes criar';
 
   @override
   String get shopDailyConnects => 'Novas ligacoes diarias';
 
   @override
-  String get shopMonthlyBoosts => 'Destaques de perfil mensais';
+  String get shopMonthlyBoosts => 'Destaques de perfil grátis por mês';
 
   @override
   String get shopMonthlyCoins => 'Moedas mensais';
-
-  @override
-  String get shopNoAds => 'Sem anuncios';
-
-  @override
-  String get shopSeeWhoConnected => 'Ve quem se ligou a ti';
 
   @override
   String get shopTravelMode => 'Modo viagem';
@@ -13839,20 +13737,13 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String featureBoosts(int count) {
-    return '$count destaques de perfil por mês';
+    return '$count destaques de perfil grátis por mês';
   }
 
   @override
   String featureDiscoveryReveals(int count) {
     return '$count perfis visíveis de cada vez';
   }
-
-  @override
-  String get featureTravelMode =>
-      'Modo viagem - descobre pessoas em qualquer lugar';
-
-  @override
-  String get featureWhoConnected => 'Vê quem se ligou a ti';
 
   @override
   String get boostProfileCelebrationTitle => 'Perfil destacado!';
@@ -20123,20 +20014,6 @@ class AppLocalizationsPt extends AppLocalizations {
       'A tua subscrição premium já está ativa';
 
   @override
-  String get celebrationUnlimitedLikes => 'Gostos ilimitados';
-
-  @override
-  String get celebrationSeeWhoLikedYou => 'Vê quem se quer ligar';
-
-  @override
-  String celebrationPerDay(int count) {
-    return '$count/dia';
-  }
-
-  @override
-  String get celebrationExclusiveEvents => 'Eventos exclusivos';
-
-  @override
   String purchaseSuccessCoinsAdded(int count) {
     return '$count moedas GreenGo adicionadas!';
   }
@@ -24298,6 +24175,49 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get loginTagline =>
       'Descubra culturas. Ligue-se sem barreiras linguísticas.';
+
+  @override
+  String get tierTravelModeCostRow => 'Modo viagem (moedas por dia)';
+
+  @override
+  String get upgradeBenefitFreeTravelMode => 'Modo viagem grátis';
+
+  @override
+  String get featureTravelModeFree =>
+      'Modo viagem - grátis, descobre pessoas em qualquer lugar';
+
+  @override
+  String featureTravelModeCoins(int coins) {
+    return 'Modo viagem - $coins moedas por dia';
+  }
+
+  @override
+  String boostFreeLeftThisMonth(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Restam-te $count destaques grátis este mês',
+      one: 'Resta-te 1 destaque grátis este mês',
+      zero: 'Já não tens destaques grátis este mês',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get boostUsesFreeBoost =>
+      'Grátis: usa um dos teus destaques grátis do mês';
+
+  @override
+  String get userErrorTierRequired =>
+      'Esta funcionalidade não está incluída na tua subscrição. Muda para um plano superior para a usar.';
+
+  @override
+  String get userErrorBusinessRequired =>
+      'É preciso uma conta empresarial ativa (Platinum).';
+
+  @override
+  String get supportPriorityBanner =>
+      'Suporte prioritário: os teus pedidos são respondidos primeiro.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -25696,10 +25616,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get ageRange => 'Faixa Etária';
 
   @override
-  String get aiCoachBenefitAllChapters =>
-      'Todos os capítulos de aprendizado desbloqueados';
-
-  @override
   String get aiCoachBenefitFeedback =>
       'Feedback em tempo real de gramática e pronúncia';
 
@@ -25717,10 +25633,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get aiCoachTrialEnded =>
       'Seu período de teste grátis do Coach IA acabou.';
-
-  @override
-  String get aiCoachUpgradePrompt =>
-      'Faça upgrade para Prata, Ouro ou Platina para desbloquear.';
 
   @override
   String get aiCoachUpgradeTitle => 'Faça Upgrade para Aprender Mais';
@@ -26920,10 +26832,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get chatUpgrade => 'Atualizar';
-
-  @override
-  String get chatUpgradePracticeMode =>
-      'Atualize para Silver VIP ou superior para continuar praticando idiomas nos seus chats.';
 
   @override
   String get chatUploading => 'Enviando...';
@@ -30668,9 +30576,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get membershipActivatedTitle => 'Assinatura Ativada!';
 
   @override
-  String get membershipAdvancedFilters => 'Filtros Avançados';
-
-  @override
   String get membershipBase => 'Base';
 
   @override
@@ -30694,9 +30599,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get membershipCurrent => 'Assinatura Atual';
-
-  @override
-  String get membershipDailyLikes => 'Conexões Diárias';
 
   @override
   String get membershipDailyMessagesLabel =>
@@ -30830,9 +30732,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get membershipGreenGoBase => 'GreenGo Base';
 
   @override
-  String get membershipIncognitoMode => 'Modo Incógnito';
-
-  @override
   String get membershipLeaveEmptyLifetime => 'Deixe vazio para vitalício';
 
   @override
@@ -30869,7 +30768,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get membershipPanel => 'Painel de Assinaturas';
 
   @override
-  String get membershipPermanent => 'Permanente';
+  String get membershipPermanent => '1 ano, renova anualmente';
 
   @override
   String get membershipPlatinum => 'Platinum';
@@ -30879,9 +30778,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get membershipPrioritySupport => 'Suporte Prioritário';
-
-  @override
-  String get membershipReadReceipts => 'Confirmação de Leitura';
 
   @override
   String get membershipRequired => 'Assinatura necessária';
@@ -30895,22 +30791,16 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
       'Sua assinatura base está ativa. Compre mais um ano para estender a data de vencimento.';
 
   @override
-  String get membershipRewinds => 'Rewinds';
-
-  @override
   String membershipSavePercent(Object percent) {
     return 'ECONOMIZE $percent%';
   }
-
-  @override
-  String get membershipSeeWhoLikes => 'Ver quem conecta';
 
   @override
   String get membershipSilver => 'Silver';
 
   @override
   String get membershipSubtitle =>
-      'Compre uma vez, aproveite funcionalidades premium por 1 mês ou 1 ano';
+      'As assinaturas renovam automaticamente: Base todo ano; Silver, Gold e Platinum todo mês ou todo ano. Cancele quando quiser.';
 
   @override
   String get membershipSuperLikes => 'Conexões Prioritárias';
@@ -30921,11 +30811,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get membershipTerms =>
-      'Compra única. A assinatura será estendida a partir da sua data de término atual.';
+      'Assinatura com renovação automática: renova no fim de cada período pelo preço mostrado, a menos que você cancele pelo menos 24 horas antes. Gerencie ou cancele na sua conta da loja.';
 
   @override
   String get membershipTermsExtended =>
-      'Compra única. A assinatura será estendida a partir da sua data de término atual. Compras de nível superior substituem níveis inferiores.';
+      'Assinatura com renovação automática: renova no fim de cada período pelo preço mostrado, a menos que você cancele pelo menos 24 horas antes. Gerencie ou cancele na sua conta da loja. Um nível superior substitui um inferior.';
 
   @override
   String get membershipTierLabel => 'Plano de Assinatura *';
@@ -32318,10 +32208,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get profileIncognitoFreePlatinum =>
-      'Grátis com Platinum - Oculto da descoberta';
-
-  @override
   String get profileIncognitoMode => 'Modo Incógnito';
 
   @override
@@ -33104,15 +32990,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get shopActive => 'ATIVA';
 
   @override
-  String get shopAdvancedFilters => 'Filtros Avançados';
-
-  @override
   String shopAmountCoins(Object amount) {
     return '$amount moedas';
   }
-
-  @override
-  String get shopBadge => 'Distintivo';
 
   @override
   String get shopBaseMembership => 'Assinatura Base GreenGo';
@@ -33214,9 +33094,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get shopGreenGoCoins => 'GreenGoCoins';
 
   @override
-  String get shopIncognitoMode => 'Modo Incógnito';
-
-  @override
   String get shopInsufficientCoins => 'Moedas insuficientes';
 
   @override
@@ -33251,9 +33128,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
       'Compra anterior encontrada. Tente novamente.';
 
   @override
-  String get shopPriorityMatching => 'Conexões prioritárias';
-
-  @override
   String shopPurchaseCoinsFor(String coins, String price) {
     return 'Comprar $coins moedas por $price';
   }
@@ -33278,9 +33152,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get shopSeeWhoLikesYou => 'Ver quem conecta';
-
-  @override
   String get shopSend => 'Enviar';
 
   @override
@@ -33293,9 +33164,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get shopTemporarilyUnavailable =>
       'As compras estão temporariamente indisponíveis. Tente novamente mais tarde.';
-
-  @override
-  String get shopSuperLikes => 'Conexões Prioritárias';
 
   @override
   String get shopTabCoins => 'Moedas';
@@ -33313,9 +33181,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get shopTitle => 'Loja';
-
-  @override
-  String get shopTravelling => 'Viajando';
 
   @override
   String get shopUnableToLoadPackages => 'Não foi possível carregar os pacotes';
@@ -33350,9 +33215,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get shopVideoCoinsDescription =>
       'Assista vídeos curtos para ganhar moedas grátis!\nFique ligado nessa funcionalidade empolgante.';
-
-  @override
-  String get shopVipBadge => 'Selo VIP';
 
   @override
   String get shopYearly => 'Anual';
@@ -33994,10 +33856,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get upgrade => 'Upgrade';
 
   @override
-  String get upgradeForEarlyAccess =>
-      'Faça upgrade para Prata, Ouro ou Platina para acesso antecipado em 1º de março de 2026!';
-
-  @override
   String get upgradeNow => 'Fazer Upgrade Agora';
 
   @override
@@ -34235,18 +34093,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get vibeTagsNoTags => 'Sem tags disponíveis';
 
   @override
-  String get vibeTagsPremiumFeature1 => '5 tags de vibe em vez de 3';
-
-  @override
-  String get vibeTagsPremiumFeature2 => 'Tags premium exclusivas';
-
-  @override
-  String get vibeTagsPremiumFeature3 => 'Prioridade nos resultados de pesquisa';
-
-  @override
-  String get vibeTagsPremiumFeature4 => 'E muito mais!';
-
-  @override
   String get vibeTagsRemoveTag => 'Remover tag';
 
   @override
@@ -34438,11 +34284,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get waitingAccessDateBasic =>
       'Seu acesso começará em 15 de março de 2026';
-
-  @override
-  String waitingAccessDatePremium(String tier) {
-    return 'Como membro $tier, você tem acesso antecipado em 1º de março de 2026!';
-  }
 
   @override
   String get waitingAccessDateTitle => 'Sua Data de Acesso';
@@ -34779,15 +34620,15 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get guideTiersItem1 =>
-      'Prata: Mais connects diários, veja quem fez Connect com você e suporte prioritário.';
+      'Silver: 50 novas conexões por dia, 3 eventos em andamento, grupos ilimitados, 1 impulso de perfil grátis e 300 moedas por mês, e o modo viagem por 100 moedas por dia.';
 
   @override
   String get guideTiersItem2 =>
-      'Ouro: Tudo do Prata mais connects ilimitados, filtros avançados e confirmação de leitura.';
+      'Gold: tudo do Silver mais 200 novas conexões por dia, 5 eventos em andamento, 4 impulsos grátis e 400 moedas por mês, modo fantasma e suporte prioritário.';
 
   @override
   String get guideTiersItem3 =>
-      'Platina: Tudo do Ouro mais impulso de perfil, escolhas top e recursos exclusivos.';
+      'Platinum: tudo do Gold mais conexões e eventos ilimitados, 30 impulsos grátis e 500 moedas por mês, modo viagem grátis, conta empresarial e estatísticas.';
 
   @override
   String get guideTiersItem4 =>
@@ -35096,18 +34937,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get membershipTrialSubtitle =>
       '7 dias grátis, depois renova anualmente';
-
-  @override
-  String get membershipTrialFeature1 =>
-      'Crie comunidades, eventos e grupos ilimitados';
-
-  @override
-  String get membershipTrialFeature2 =>
-      'Sem anuncios — experiencia sem publicidade';
-
-  @override
-  String get membershipTrialFeature3 =>
-      '500 moedas bonus + acesso total a tudo';
 
   @override
   String get membershipHaveCoupon => 'Tem um codigo de cupom?';
@@ -35853,11 +35682,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get boostRequiresTierDescription =>
       'Os impulsos de perfil são um benefício de assinatura paga. Faça upgrade do seu plano para impulsionar seu perfil e ser visto por mais pessoas.';
-
-  @override
-  String boostMonthlyLimitReached(int limit) {
-    return 'Você já usou todos os $limit impulsos de perfil incluídos no seu plano este mês. Faça upgrade para mais.';
-  }
 
   @override
   String get travelModeFeatureName => 'Modo Viajante';
@@ -37238,22 +37062,16 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get shopEventsCreate => 'Eventos que voce pode criar';
 
   @override
-  String get shopGroupsCreate => 'Grupos e comunidades que voce pode criar';
+  String get shopGroupsCreate => 'Grupos que você pode criar';
 
   @override
   String get shopDailyConnects => 'Novas conexoes diarias';
 
   @override
-  String get shopMonthlyBoosts => 'Impulsos de perfil mensais';
+  String get shopMonthlyBoosts => 'Impulsos de perfil grátis por mês';
 
   @override
   String get shopMonthlyCoins => 'Moedas mensais';
-
-  @override
-  String get shopNoAds => 'Sem anuncios';
-
-  @override
-  String get shopSeeWhoConnected => 'Veja quem se conectou com voce';
 
   @override
   String get shopTravelMode => 'Modo viagem';
@@ -38142,20 +37960,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String featureBoosts(int count) {
-    return '$count impulsos de perfil por mês';
+    return '$count impulsos de perfil grátis por mês';
   }
 
   @override
   String featureDiscoveryReveals(int count) {
     return '$count perfis revelados por vez';
   }
-
-  @override
-  String get featureTravelMode =>
-      'Modo viagem - descubra pessoas em qualquer lugar';
-
-  @override
-  String get featureWhoConnected => 'Veja quem se conectou com você';
 
   @override
   String get boostProfileCelebrationTitle => 'Perfil impulsionado!';
@@ -44426,20 +44237,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
       'Sua assinatura premium já está ativa';
 
   @override
-  String get celebrationUnlimitedLikes => 'Curtidas ilimitadas';
-
-  @override
-  String get celebrationSeeWhoLikedYou => 'Veja quem quer se conectar';
-
-  @override
-  String celebrationPerDay(int count) {
-    return '$count/dia';
-  }
-
-  @override
-  String get celebrationExclusiveEvents => 'Eventos exclusivos';
-
-  @override
   String purchaseSuccessCoinsAdded(int count) {
     return '$count moedas GreenGo adicionadas!';
   }
@@ -48606,4 +48403,47 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get loginTagline =>
       'Descubra culturas. Conecte-se sem barreiras de idioma.';
+
+  @override
+  String get tierTravelModeCostRow => 'Modo viagem (moedas por dia)';
+
+  @override
+  String get upgradeBenefitFreeTravelMode => 'Modo viagem grátis';
+
+  @override
+  String get featureTravelModeFree =>
+      'Modo viagem - grátis, descubra pessoas em qualquer lugar';
+
+  @override
+  String featureTravelModeCoins(int coins) {
+    return 'Modo viagem - $coins moedas por dia';
+  }
+
+  @override
+  String boostFreeLeftThisMonth(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Restam $count impulsos grátis este mês',
+      one: 'Resta 1 impulso grátis este mês',
+      zero: 'Nenhum impulso grátis restante este mês',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get boostUsesFreeBoost =>
+      'Grátis: usa um dos seus impulsos grátis do mês';
+
+  @override
+  String get userErrorTierRequired =>
+      'Este recurso não está incluído na sua assinatura. Faça upgrade do seu plano para usá-lo.';
+
+  @override
+  String get userErrorBusinessRequired =>
+      'É preciso ter uma conta empresarial ativa (Platinum).';
+
+  @override
+  String get supportPriorityBanner =>
+      'Suporte prioritário: seus chamados são respondidos primeiro.';
 }

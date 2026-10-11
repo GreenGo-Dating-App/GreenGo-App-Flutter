@@ -843,3 +843,11 @@ export {
 // Private-content warning: server-only proof that the user accepted the
 // warning before opening another user's private photos.
 export { acknowledgePrivateContentWarning } from './legal/privateContentWarning';
+
+// Membership caps (audit 2026-10-11): server-owned usage counters the rules
+// read (daily connects, ongoing events, created groups) + backstop deletes.
+export {
+  onConversationCreatedCountConnect,
+  onEventWrittenUsage,
+  onGroupWrittenUsage,
+} from './entitlements/usage';

@@ -7,6 +7,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/product_catalog.dart';
 import '../../../../core/widgets/purchase_success_dialog.dart';
+import '../../../../core/widgets/subscription_legal_footer.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/subscription.dart';
 import '../tier_l10n.dart';
@@ -270,7 +271,8 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
 
                       const SizedBox(height: 16),
 
-                      // Terms
+                      // Terms: auto-renewing subscriptions (Terms §7.2),
+                      // with the store disclosure + Terms / Privacy links.
                       Text(
                         AppLocalizations.of(context)!.membershipTerms,
                         style: TextStyle(
@@ -279,6 +281,8 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
                         ),
                         textAlign: TextAlign.center,
                       ),
+                      const SizedBox(height: 8),
+                      const SubscriptionLegalFooter(),
                     ],
                   ),
                 ),

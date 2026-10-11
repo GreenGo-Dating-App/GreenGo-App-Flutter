@@ -99,6 +99,140 @@ service cloud.firestore {
         && activePlatinum(get(/databases/$(database)/documents/profiles/$(uid)).data);
     }
 
+    // ---- MEMBERSHIP CAPS (audit 2026-10-11) ---------------------------------
+    // Mirrors functions/src/shared/effectiveTier.ts (effective tier) and
+    // functions/src/shared/tierLimits.ts (caps). The usage counters live in
+    // the server-owned entitlement_usage/{uid} (functions entitlements/usage.ts
+    // and spendCoins); a client can read its own but never write it.
+    function paidTierActive(p) {
+      return p.get('isAdmin', false) == true
+        || (p.get('membershipEndDate', null) is timestamp
+            && p.membershipEndDate > request.time)
+        || (p.get('membershipEndDate', null) is int
+            && p.membershipEndDate > request.time.toMillis());
+    }
+    // Effective tier rank: 0 free / Base, 1 Silver, 2 Gold, 3 Platinum or TEST.
+    function tierRankOf(p) {
+      return string(p.get('membershipTier', '')).upper() == 'TEST' ? 3
+        : !(string(p.get('membershipTier', '')).upper() in ['SILVER', 'GOLD', 'PLATINUM'])
+            || !paidTierActive(p) ? 0
+        : string(p.get('membershipTier', '')).upper() == 'PLATINUM' ? 3
+        : string(p.get('membershipTier', '')).upper() == 'GOLD' ? 2 : 1;
+    }
+    function baseMembershipActive(p) {
+      return p.get('hasBaseMembership', false) == true
+        && ((p.get('baseMembershipEndDate', null) is timestamp
+             && p.baseMembershipEndDate > request.time)
+            || (p.get('baseMembershipEndDate', null) is int
+                && p.baseMembershipEndDate > request.time.toMillis()));
+    }
+    function profilePath(uid) {
+      return /databases/$(database)/documents/profiles/$(uid);
+    }
+    function usagePath(uid) {
+      return /databases/$(database)/documents/entitlement_usage/$(uid);
+    }
+    // "Base membership required to chat": an active Base, an active paid tier
+    // or TEST (Profile.isBaseMembershipActive in the app).
+    function canChat(uid) {
+      return exists(profilePath(uid))
+        && (tierRankOf(get(profilePath(uid)).data) > 0
+            || baseMembershipActive(get(profilePath(uid)).data));
+    }
+    // Caps per rank (-1 = unlimited) = tierLimits.ts / TierEntitlements.
+    function tierCapConnects(r) { return r == 0 ? 10 : r == 1 ? 50 : r == 2 ? 200 : -1; }
+    function tierCapEvents(r) { return r == 0 ? 1 : r == 1 ? 3 : r == 2 ? 5 : -1; }
+    function tierCapGroups(r) { return r == 0 ? 1 : -1; }
+    // New 1:1 conversations started today (UTC) are under the daily cap.
+    function connectCapOk(uid) {
+      return tierCapConnects(tierRankOf(get(profilePath(uid)).data)) < 0
+        || !exists(usagePath(uid))
+        || get(usagePath(uid)).data.get('connectDayStartMs', 0) + 86400000
+             <= request.time.toMillis()
+        || get(usagePath(uid)).data.get('connectCount', 0)
+             < tierCapConnects(tierRankOf(get(profilePath(uid)).data));
+    }
+    // Ongoing-event cap. eventActiveEnds is ascending, so fewer than `cap`
+    // slots are still running when the cap-th latest end has passed. A new
+    // occurrence of an already-counted series and a paid extra event (coins)
+    // are allowed too.
+    function eventSlotFree(u, cap, d) {
+      return u.get('eventActiveEnds', []).size() < cap
+        || u.get('eventActiveEnds', [])[u.get('eventActiveEnds', []).size() - cap]
+             <= request.time.toMillis()
+        || (d.get('seriesId', null) is string
+            && u.get('eventActiveSeries', {}).get(d.get('seriesId', ''), 0) > 0
+            && u.get('eventActiveSeries', {}).get(d.get('seriesId', ''), 0) < 120)
+        || u.get('eventExtraCredits', 0) > u.get('eventExtraUsed', 0);
+    }
+    function eventCapOk(uid, d) {
+      return tierCapEvents(tierRankOf(get(profilePath(uid)).data)) < 0
+        || !exists(usagePath(uid))
+        || eventSlotFree(get(usagePath(uid)).data,
+                         tierCapEvents(tierRankOf(get(profilePath(uid)).data)), d);
+    }
+    function groupCapOk(uid) {
+      return tierCapGroups(tierRankOf(get(profilePath(uid)).data)) < 0
+        || !exists(usagePath(uid))
+        || get(usagePath(uid)).data.get('groupsCreated', 0)
+             < tierCapGroups(tierRankOf(get(profilePath(uid)).data));
+    }
+    // A support ticket in the chat inbox (never a "new connection").
+    function isSupportConvData(c) {
+      return c.get('conversationType', '') == 'support'
+        || c.get('userId2', '') == 'support_system'
+        || c.get('matchId', '') == 'support';
+    }
+
+    // PROFILE PERK FIELDS (audit P-H3). Boost, incognito, business promotion
+    // and the travel pass are written by spendCoins (Admin SDK). The owner may
+    // switch a perk OFF or shorten it, never grant or extend it. Travel mode
+    // is set by the app after paying: its end may be at most the paid pass
+    // (+2h to pick the place), or 24h for Platinum. Ghost mode: Gold and up.
+    function perkExpiryNotExtended(k) {
+      return request.resource.data.get(k, null) == resource.data.get(k, null)
+        || request.resource.data.get(k, null) == null
+        || (request.resource.data.get(k, null) is timestamp
+            && ((resource.data.get(k, null) is timestamp
+                 && request.resource.data.get(k, null) <= resource.data.get(k, null))
+                || request.resource.data.get(k, null) <= request.time));
+    }
+    function travelerExpiryOk() {
+      return perkExpiryNotExtended('travelerExpiry')
+        || (request.resource.data.get('travelerExpiry', null) is timestamp
+            && ((tierRankOf(resource.data) == 3
+                 && request.resource.data.travelerExpiry
+                      <= request.time + duration.value(25, 'h'))
+                || (resource.data.get('travelerPaidUntil', null) is timestamp
+                    && resource.data.travelerPaidUntil > request.time
+                    && request.resource.data.travelerExpiry
+                         <= resource.data.travelerPaidUntil + duration.value(2, 'h'))));
+    }
+    // A perk flag may turn ON only together with a (bounded) end time.
+    function perkFlagOk(f, k) {
+      return request.resource.data.get(f, false) != true
+        || resource.data.get(f, false) == true
+        || request.resource.data.get(k, null) is timestamp;
+    }
+    function perkFieldsOk() {
+      return perkExpiryNotExtended('boostExpiry') && perkFlagOk('isBoosted', 'boostExpiry')
+        && perkExpiryNotExtended('incognitoExpiry') && perkFlagOk('isIncognito', 'incognitoExpiry')
+        && perkExpiryNotExtended('businessPromotedUntil')
+        && perkExpiryNotExtended('travelerPaidUntil')
+        && travelerExpiryOk() && perkFlagOk('isTraveler', 'travelerExpiry')
+        && (request.resource.data.get('isGhostMode', false) != true
+            || resource.data.get('isGhostMode', false) == true
+            || tierRankOf(resource.data) >= 2);
+    }
+    function perkFieldsOffOnCreate(d) {
+      return d.get('isBoosted', false) == false && d.get('boostExpiry', null) == null
+        && d.get('isIncognito', false) == false && d.get('incognitoExpiry', null) == null
+        && d.get('isGhostMode', false) == false
+        && d.get('isTraveler', false) == false && d.get('travelerExpiry', null) == null
+        && d.get('travelerPaidUntil', null) == null
+        && d.get('businessPromotedUntil', null) == null;
+    }
+
     // Conversation membership (C4): the two 1:1 participants, any group
     // participant, or the assigned support agent. `c` is the conversation data.
     function convMember(c) {
@@ -303,7 +437,9 @@ service cloud.firestore {
         && request.resource.data.get('hostAgreementVersion', 0) == 0
         && request.resource.data.get('hostAgreementAcceptedAt', null) == null
         // INC-2026-001: no sensitive / server-coarse field on a public profile.
-        && publicProfileCreateOk();
+        && publicProfileCreateOk()
+        // Audit P-H3: a (re)created profile carries no paid perk.
+        && perkFieldsOffOnCreate(request.resource.data);
       // Owner, admin-panel and profile-admins (business-verification approval →
       // sets businessVerified) may update. Additionally ANY signed-in user may
       // change ONLY the denormalized `followerCount` (business follow/unfollow
@@ -402,7 +538,9 @@ service cloud.firestore {
               && request.resource.data.get('hostAgreementVersion', 0)
                  == resource.data.get('hostAgreementVersion', 0)
               && request.resource.data.get('hostAgreementAcceptedAt', null)
-                 == resource.data.get('hostAgreementAcceptedAt', null))
+                 == resource.data.get('hostAgreementAcceptedAt', null)
+              // Audit P-H3: boost / incognito / travel / ghost / promotion.
+              && perkFieldsOk())
         || isAdminPanelUser() || isProfileAdmin()
         || (isSignedIn()
             && request.resource.data.diff(resource.data).affectedKeys()
@@ -489,9 +627,14 @@ service cloud.firestore {
       // C4: only the participants (or support agent / admin) may access a
       // conversation — was readable/writable by ANY signed-in user.
       allow read: if convMember(resource.data) || convAdmin();
+      // The creator is userId1 (every app path writes it so; the server
+      // counts the new connection against userId1). Audit P-H1: a new
+      // conversation is refused once today's tier cap of new connections is
+      // used (support tickets excepted).
       allow create: if isSignedIn()
-        && (request.auth.uid == request.resource.data.get('userId1', '')
-            || request.auth.uid == request.resource.data.get('userId2', ''));
+        && request.auth.uid == request.resource.data.get('userId1', '')
+        && (isSupportConvData(request.resource.data)
+            || connectCapOk(request.auth.uid));
       allow update: if convMember(resource.data) || convAdmin();
       allow delete: if convMember(resource.data) || convAdmin();
 
@@ -507,7 +650,12 @@ service cloud.firestore {
         // who opens a support chat — are also allowed.
         allow create: if convMember(conv())
           && (request.auth.uid == request.resource.data.get('senderId', request.auth.uid)
-              || request.resource.data.get('senderId', '') == 'system');
+              || request.resource.data.get('senderId', '') == 'system')
+          // Audit P-H2: chatting needs a Base membership (or an active paid
+          // tier / TEST). Support tickets and staff are exempt.
+          && (isSupportConvData(conv())
+              || canChat(request.auth.uid)
+              || convAdmin());
         allow update, delete: if convMember(conv()) || convAdmin();
       }
     }
@@ -843,6 +991,16 @@ service cloud.firestore {
         allow create, update: if isOwner(userId);
         allow delete: if false;
       }
+    }
+
+    // ============================================================================
+    // ENTITLEMENT USAGE (audit 2026-10-11): server-owned counters behind the
+    // membership caps (functions entitlements/usage.ts, spendCoins). The owner
+    // reads them to show "x of y used"; only the Admin SDK writes.
+    // ============================================================================
+    match /entitlement_usage/{userId} {
+      allow read: if isOwner(userId) || isAdminPanelUser();
+      allow write: if false;
     }
 
     // ============================================================================
@@ -1281,11 +1439,22 @@ service cloud.firestore {
       function supportStaff() { return isAdminPanelUser() || isAdmin(); }
       allow read: if supportStaff()
         || (isSignedIn() && resource.data.userId == request.auth.uid);
+      // Priority support (audit H2): the priority is set by the server from
+      // the owner's tier (onSupportChatCreated). A user may only open a
+      // ticket as 'normal' and never touch the priority fields.
+      function supportPriorityKeys() {
+        return ['priority', 'priorityRank', 'prioritySupport', 'userMembershipTier'];
+      }
       allow create: if supportStaff()
-        || (isSignedIn() && request.resource.data.userId == request.auth.uid);
+        || (isSignedIn() && request.resource.data.userId == request.auth.uid
+            && request.resource.data.get('priority', 'normal') == 'normal'
+            && !request.resource.data.keys()
+                  .hasAny(['priorityRank', 'prioritySupport', 'userMembershipTier']));
       allow update: if supportStaff()
         || (isSignedIn() && resource.data.userId == request.auth.uid
-            && request.resource.data.userId == resource.data.userId);
+            && request.resource.data.userId == resource.data.userId
+            && !request.resource.data.diff(resource.data).affectedKeys()
+                  .hasAny(supportPriorityKeys()));
       allow delete: if false;
     }
 
@@ -1465,9 +1634,13 @@ service cloud.firestore {
 
       allow read: if isGroupMember();
       // Creator must be in participants and be their own admin.
+      // Audit H5 / P-H4: createdBy is the creator (the server counts it)
+      // and the free plan may have created at most tierCapGroups groups.
       allow create: if isSignedIn()
                     && request.auth.uid in request.resource.data.participants
-                    && request.resource.data.roles[request.auth.uid] == 'admin';
+                    && request.resource.data.roles[request.auth.uid] == 'admin'
+                    && request.resource.data.get('createdBy', '') == request.auth.uid
+                    && groupCapOk(request.auth.uid);
       // Members may update the group doc (info, membership, denorm). A member
       // may NOT elevate roles (self-promotion to admin) — role changes require
       // an existing admin. EXCEPTION: a member leaving removes their OWN role
@@ -1734,11 +1907,33 @@ service cloud.firestore {
           get(/databases/$(database)/documents/communities/$(communityId)).data.createdByUserId == memberId;
       }
 
+      // Audit P-H5: sponsoring a community / pinning a promo is a Platinum
+      // BUSINESS feature (SponsorshipGate in the app). Needed when a
+      // community is created sponsored or BECOMES sponsored; switching it off
+      // and unrelated edits stay open to the moderators.
+      function sponsoredData(d) {
+        return d.get('isSponsored', false) == true
+          || d.get('pinnedPromo', null) != null
+          || d.get('sponsorId', null) != null;
+      }
+      function becomesSponsored() {
+        return (request.resource.data.get('isSponsored', false) == true
+                && resource.data.get('isSponsored', false) != true)
+          || (request.resource.data.get('pinnedPromo', null) != null
+              && resource.data.get('pinnedPromo', null) == null)
+          || (request.resource.data.get('sponsorId', null) != null
+              && request.resource.data.get('sponsorId', null)
+                 != resource.data.get('sponsorId', null));
+      }
+
       allow read: if isSignedIn();
-      allow create: if isSignedIn();
+      allow create: if isSignedIn()
+        && (!sponsoredData(request.resource.data)
+            || sellerBusinessActive(request.auth.uid));
       // Community edits (rules/resources/sponsor/promo) → owner/admin only,
       // EXCEPT denormalized member-driven fields (memberCount / last message).
-      allow update: if isCommunityMod() || (isSignedIn() && onlyDenormChanged());
+      allow update: if (isCommunityMod() || (isSignedIn() && onlyDenormChanged()))
+        && (!becomesSponsored() || sellerBusinessActive(request.auth.uid));
       allow delete: if isCommunityCreator() || isAdmin();
 
       // Members: a user manages their OWN membership (join public / leave);
@@ -1786,7 +1981,11 @@ service cloud.firestore {
       // the mod-only read on join_requests, letting anyone enumerate who
       // requested to join a private community. members/messages keep their own
       // explicit signed-in read rules above.)
-      match /{document=**} {
+      // `{sub}/{rest=**}`, NOT `{document=**}`: a recursive wildcard also
+      // matches ZERO segments, i.e. communities/{id} itself, and its write
+      // grant overrode the update / delete / sponsorship guards above
+      // (found by the 2026-10-11 benefits tests; same bug as users/{uid}).
+      match /{sub}/{rest=**} {
         allow read, write: if isCommunityMod();
       }
     }
@@ -1992,7 +2191,11 @@ service cloud.firestore {
         && validCoOrganizers(request.resource.data)
         && validTicketing(request.resource.data)
         && (!isPaidEventData(request.resource.data)
-            || sellerBusinessActive(request.auth.uid));
+            || sellerBusinessActive(request.auth.uid))
+        // Audit P-H4 / M1: an end date (what makes an event "ongoing") and
+        // the tier's cap of ongoing events (onEventWrittenUsage counts them).
+        && request.resource.data.get('endDate', null) is timestamp
+        && eventCapOk(request.auth.uid, request.resource.data);
       // Delete stays CREATOR-only (co-owners cannot delete).
       allow delete: if isOrganizer();
       // Organizer has full update rights. Additionally ANY signed-in user may

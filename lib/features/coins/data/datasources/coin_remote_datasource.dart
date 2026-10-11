@@ -1383,11 +1383,19 @@ class CoinRefusalException implements Exception {
   static const String giftVelocityLimit = 'gift-velocity-limit';
   static const String unknownFeature = 'unknown-feature';
 
+  /// The feature is not part of the caller's membership tier (server check).
+  static const String tierRequired = 'tier-required';
+
+  /// The feature needs an active business account (Platinum).
+  static const String businessRequired = 'business-required';
+
   static const Set<String> knownReasons = {
     insufficientCoins,
     giftPurchaseHold,
     giftVelocityLimit,
     unknownFeature,
+    tierRequired,
+    businessRequired,
   };
 
   /// The refusal carried by a callable error, or null when it is not one.

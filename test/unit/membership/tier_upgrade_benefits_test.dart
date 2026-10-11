@@ -45,8 +45,9 @@ void main() {
             UpgradeBenefitKind.monthlyCoins, count(300), count(400)),
         UpgradeBenefit(
             UpgradeBenefitKind.discoveryReveal, count(200), count(300)),
+        UpgradeBenefit(UpgradeBenefitKind.ghostMode, flag(false), flag(true)),
         UpgradeBenefit(
-            UpgradeBenefitKind.seeWhoConnected, flag(false), flag(true)),
+            UpgradeBenefitKind.prioritySupport, flag(false), flag(true)),
       ]);
     });
 
@@ -62,6 +63,8 @@ void main() {
             UpgradeBenefitKind.monthlyCoins, count(400), count(500)),
         UpgradeBenefit(
             UpgradeBenefitKind.discoveryReveal, count(300), count(500)),
+        UpgradeBenefit(
+            UpgradeBenefitKind.freeTravelMode, flag(false), flag(true)),
         UpgradeBenefit(UpgradeBenefitKind.analytics, flag(false), flag(true)),
         UpgradeBenefit(
             UpgradeBenefitKind.businessAccount, flag(false), flag(true)),

@@ -6,10 +6,10 @@ import 'package:in_app_purchase/in_app_purchase.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/product_catalog.dart';
-import '../../../../core/services/tier_entitlements.dart';
 import '../../../../core/widgets/purchase_success_dialog.dart';
+import '../../../../core/widgets/subscription_legal_footer.dart';
+import '../../../../core/widgets/tier_comparison_table.dart';
 import '../../../../generated/app_localizations.dart';
-import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/subscription.dart';
 import '../tier_l10n.dart';
 import '../../domain/membership_product_mapping.dart';
@@ -354,7 +354,8 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
 
                       const SizedBox(height: 16),
 
-                      // Terms
+                      // Terms: auto-renewing subscriptions (Terms §7.2),
+                      // with the store disclosure + Terms / Privacy links.
                       Text(
                         AppLocalizations.of(context)!.membershipTermsExtended,
                         style: TextStyle(
@@ -363,11 +364,13 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                         ),
                         textAlign: TextAlign.center,
                       ),
+                      const SizedBox(height: 8),
+                      const SubscriptionLegalFooter(),
 
                       const SizedBox(height: 32),
 
-                      // Feature Comparison
-                      _buildFeatureComparison(),
+                      // Feature Comparison (TierEntitlements, incl. Platinum)
+                      const TierComparisonTable(),
                     ],
                   ),
                 ),
@@ -653,89 +656,6 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
             ],
           ),
         ),
-      ),
-    );
-  }
-
-  Widget _buildFeatureComparison() {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.grey[900],
-        borderRadius: BorderRadius.circular(16),
-      ),
-      padding: const EdgeInsets.all(20),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            AppLocalizations.of(context)!.membershipFeatureComparison,
-            style: const TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-              color: Color(0xFFD4AF37),
-            ),
-          ),
-          const SizedBox(height: 16),
-          // Phase 3.2: real per-tier entitlements (Free / Silver / Gold columns).
-          _buildComparisonRow(AppLocalizations.of(context)!.shopEventsCreate, '1', '3', '5'),
-          _buildComparisonRow(AppLocalizations.of(context)!.shopGroupsCreate, '1', AppLocalizations.of(context)!.shopUnlimited, AppLocalizations.of(context)!.shopUnlimited),
-          _buildComparisonRow(AppLocalizations.of(context)!.shopDailyConnects, '10', '50', '200'),
-          _buildComparisonRow(AppLocalizations.of(context)!.shopMonthlyBoosts, '0', '1', '4'),
-          _buildComparisonRow(
-            AppLocalizations.of(context)!.shopMonthlyCoins,
-            '${TierEntitlements.monthlyCoins(MembershipTier.free)}',
-            '${TierEntitlements.monthlyCoins(MembershipTier.silver)}',
-            '${TierEntitlements.monthlyCoins(MembershipTier.gold)}',
-          ),
-          _buildComparisonRow(AppLocalizations.of(context)!.shopSeeWhoConnected, '✗', '✗', '✓'),
-          _buildComparisonRow(AppLocalizations.of(context)!.shopTravelMode, '✗', '✓', '✓'),
-          _buildComparisonRow(AppLocalizations.of(context)!.membershipPrioritySupport, '✗', '✗', '✓'),
-          _buildComparisonRow(AppLocalizations.of(context)!.shopNoAds, '✗', '✓', '✓'),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildComparisonRow(
-    String feature,
-    String basic,
-    String silver,
-    String gold,
-  ) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0),
-      child: Row(
-        children: [
-          Expanded(
-            flex: 3,
-            child: Text(
-              feature,
-              style: const TextStyle(color: Colors.white70),
-            ),
-          ),
-          Expanded(
-            child: Text(
-              basic,
-              style: const TextStyle(color: Colors.white70),
-              textAlign: TextAlign.center,
-            ),
-          ),
-          Expanded(
-            child: Text(
-              silver,
-              style: const TextStyle(color: Colors.white),
-              textAlign: TextAlign.center,
-            ),
-          ),
-          Expanded(
-            child: Text(
-              gold,
-              style: const TextStyle(color: Color(0xFFD4AF37)),
-              textAlign: TextAlign.center,
-              overflow: TextOverflow.ellipsis,
-            ),
-          ),
-        ],
       ),
     );
   }

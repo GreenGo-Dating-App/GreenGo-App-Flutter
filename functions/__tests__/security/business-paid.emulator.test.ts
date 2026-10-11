@@ -163,7 +163,9 @@ describe('profiles: becoming a business is permanent and Platinum-only', () => {
 
 const ev = (organizerId: string, over: Record<string, any> = {}) => ({
   organizerId, title: 'Rooftop Samba', attendeeCount: 0, maxAttendees: 0,
-  startDate: new Date(Date.now() + HOUR), ...over,
+  // The app always writes an end date (EventModel.toJson); the event rules
+  // need it for the ongoing-event cap (audit 2026-10-11).
+  startDate: new Date(Date.now() + HOUR), endDate: new Date(Date.now() + 3 * HOUR), ...over,
 });
 
 describe('events: paid only by an active business', () => {

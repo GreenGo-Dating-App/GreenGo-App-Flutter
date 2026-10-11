@@ -128,6 +128,12 @@ describe('recordConsent', () => {
 describe('aiAssist (Gemini)', () => {
   const ask = (uid: string | undefined, data: any = {}) =>
     call(gw().aiAssist, { task: 'smartReplies', text: 'Bom dia, tudo bem?', language: 'pt', targetLanguage: 'pt', userLanguage: 'en', ...data }, uid);
+  // Smart replies are a Silver+ chat helper (audit 2026-10-11, M6).
+  beforeEach(async () => {
+    for (const u of ['u1', 'u2']) {
+      await db.doc(`profiles/${u}`).set({ membershipTier: 'SILVER', membershipEndDate: admin.firestore.Timestamp.fromMillis(Date.now() + 30 * 86400000) });
+    }
+  });
 
   test('auth required; no Google call', async () => {
     await expect(ask(undefined)).rejects.toMatchObject({ code: 'unauthenticated' });

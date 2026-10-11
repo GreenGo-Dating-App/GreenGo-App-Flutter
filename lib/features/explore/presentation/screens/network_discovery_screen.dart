@@ -422,7 +422,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
   MembershipTier? _revealTier;
 
   /// Resolves the membership tier and sets the starting reveal ceiling from
-  /// [TierEntitlements.discoveryFreeReveal] (Base 30 / Silver 100 / Gold 300 /
+  /// [TierEntitlements.discoveryFreeReveal] (Base 100 / Silver 200 / Gold 300 /
   /// Platinum ≈∞). The coins-to-see-more flow still raises it beyond that.
   void _applySelf(DocumentSnapshot<Map<String, dynamic>> doc) {
     if (!mounted) return;

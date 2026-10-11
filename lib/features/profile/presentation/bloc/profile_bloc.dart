@@ -248,7 +248,8 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
         return;
       }
 
-      // All users pay 50 coins for boost
+      // The plan's free monthly boosts come first (counted by the server in
+      // spendCoins); beyond them a boost costs CoinFeaturePrices.boost coins.
       const cost = CoinFeaturePrices.boost;
 
       if (coinRepository == null) {
@@ -257,22 +258,22 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
         return;
       }
 
-      // Check balance
+      // Check balance (not needed for a free boost: the server charges 0).
       final balanceResult = await coinRepository!.getBalance(event.userId);
       final balance = balanceResult.fold(
         (failure) => 0,
         (b) => b.availableCoins,
       );
 
-      if (balance < cost) {
+      if (!event.freeBoostAvailable && balance < cost) {
         emit(ProfileBoostInsufficientCoins(required: cost, available: balance));
         emit(ProfileLoaded(profile: profile));
         return;
       }
 
-      // Pay AND activate in one server transaction (spendCoins sets
-      // isBoosted / boostExpiry, 30 minutes): no coins without a boost, and no
-      // boost without coins.
+      // Pay (or use a free boost) AND activate in one server transaction
+      // (spendCoins sets isBoosted / boostExpiry, 30 minutes): no coins
+      // without a boost, and no boost without coins.
       final spend = await coinRepository!.purchaseFeature(
         userId: event.userId,
         featureName: 'boost',

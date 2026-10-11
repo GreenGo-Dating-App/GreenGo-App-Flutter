@@ -8,7 +8,12 @@ const tsFromDate = (d: Date) => ({ toDate: () => d, toMillis: () => d.getTime() 
 const tsNow = () => tsFromDate(new Date());
 
 jest.mock('firebase-admin', () => {
-  const firestoreFn: any = () => ({});
+  // shared/monitoring reads its config doc through admin.firestore() at call
+  // time (`db.doc(...).get()`): give it a doc that does not exist.
+  const firestoreFn: any = () => ({
+    doc: () => ({ get: async () => ({ exists: false, data: () => undefined }) }),
+    collection: () => ({ doc: () => ({ set: async () => undefined }) }),
+  });
   firestoreFn.Timestamp = {
     fromDate: tsFromDate,
     now: tsNow,

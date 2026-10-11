@@ -6,9 +6,10 @@ import 'tier_entitlements.dart';
 /// Every kind here is read from the same source the app's gates use:
 ///   • [TierEntitlements] — connects/day (TierGate), events & groups
 ///     (TierLimitsService), hosted experiences (createUserExperience),
-///     boosts/month (TierGate), monthly coins, discovery
-///     reveal ceiling (network discovery), see-who-connected, travel mode
-///     (TierGate), analytics (TierGate), business account.
+///     free boosts/month (spendCoins), monthly coins, discovery
+///     reveal ceiling (network discovery), travel mode and free travel
+///     (TierGate / spendCoins), ghost mode (profile rules), priority support
+///     (support queue), analytics (TierGate), business account.
 ///   • [MembershipRules] — the swipe-deck limits (DiscoveryBloc), only when the
 ///     swipe deck exists in this build.
 enum UpgradeBenefitKind {
@@ -19,8 +20,10 @@ enum UpgradeBenefitKind {
   boostsPerMonth,
   monthlyCoins,
   discoveryReveal,
-  seeWhoConnected,
   travelMode,
+  freeTravelMode,
+  ghostMode,
+  prioritySupport,
   analytics,
   businessAccount,
   // Swipe deck (full flavor only).
@@ -119,10 +122,14 @@ BenefitValue benefitValueFor(UpgradeBenefitKind kind, MembershipTier tier) {
       return BenefitValue.count(TierEntitlements.monthlyCoins(tier));
     case UpgradeBenefitKind.discoveryReveal:
       return BenefitValue.count(TierEntitlements.discoveryFreeReveal(tier));
-    case UpgradeBenefitKind.seeWhoConnected:
-      return BenefitValue.flag(TierEntitlements.canSeeWhoConnected(tier));
     case UpgradeBenefitKind.travelMode:
       return BenefitValue.flag(TierEntitlements.travelModeEnabled(tier));
+    case UpgradeBenefitKind.freeTravelMode:
+      return BenefitValue.flag(TierEntitlements.travelModeFree(tier));
+    case UpgradeBenefitKind.ghostMode:
+      return BenefitValue.flag(TierEntitlements.ghostModeIncluded(tier));
+    case UpgradeBenefitKind.prioritySupport:
+      return BenefitValue.flag(TierEntitlements.prioritySupport(tier));
     case UpgradeBenefitKind.analytics:
       return BenefitValue.flag(TierEntitlements.analyticsEnabled(tier));
     case UpgradeBenefitKind.businessAccount:

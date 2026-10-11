@@ -29,6 +29,7 @@ import '../../../subscription/domain/entities/subscription.dart';
 import '../../../subscription/presentation/tier_l10n.dart';
 import '../../data/datasources/coin_remote_datasource.dart';
 import '../../domain/entities/coin_package.dart';
+import '../../domain/entities/coin_transaction.dart' show CoinFeaturePrices;
 import '../../domain/entities/coin_promotion.dart';
 import '../bloc/coin_bloc.dart';
 import '../bloc/coin_event.dart';
@@ -1849,12 +1850,20 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                     _buildFeatureRow(AppLocalizations.of(context)!.shopDailyConnects, _formatLimit(features['dailyConnects'] as int)),
                     _buildFeatureRow(AppLocalizations.of(context)!.shopMonthlyBoosts, _formatLimit(features['boostsPerMonth'] as int)),
                     _buildFeatureRow(AppLocalizations.of(context)!.shopMonthlyCoins, _formatLimit(features['monthlyCoins'] as int)),
-                    if (features['noAds'] == true)
-                      _buildFeatureRow(AppLocalizations.of(context)!.shopNoAds, '✓'),
-                    if (features['seeWhoConnected'] == true)
-                      _buildFeatureRow(AppLocalizations.of(context)!.shopSeeWhoConnected, '✓'),
+                    // Travel mode: Platinum free, Silver / Gold pay per day.
                     if (features['travelMode'] == true)
-                      _buildFeatureRow(AppLocalizations.of(context)!.shopTravelMode, '✓'),
+                      _buildFeatureRow(
+                        AppLocalizations.of(context)!.shopTravelMode,
+                        features['travelModeFree'] == true
+                            ? AppLocalizations.of(context)!.tierFree
+                            : AppLocalizations.of(context)!
+                                .profileCoinsPerDay(CoinFeaturePrices.traveler),
+                        enabled: true,
+                      ),
+                    if (features['ghostMode'] == true)
+                      _buildFeatureRow(AppLocalizations.of(context)!.profileGhostMode, '✓'),
+                    if (features['prioritySupport'] == true)
+                      _buildFeatureRow(AppLocalizations.of(context)!.membershipPrioritySupport, '✓'),
                     if (features['businessAccount'] == true)
                       _buildFeatureRow(AppLocalizations.of(context)!.shopBusinessAccount, '✓'),
                   ],
@@ -1867,9 +1876,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     );
   }
 
-  Widget _buildFeatureRow(String feature, String value) {
+  Widget _buildFeatureRow(String feature, String value, {bool? enabled}) {
     final unlimitedLabel = AppLocalizations.of(context)!.shopUnlimited;
-    final isEnabled = value == '✓' || value == unlimitedLabel || (int.tryParse(value) ?? 0) > 0;
+    final isEnabled = enabled ??
+        (value == '✓' || value == unlimitedLabel || (int.tryParse(value) ?? 0) > 0);
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Row(
