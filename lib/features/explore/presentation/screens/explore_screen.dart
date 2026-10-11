@@ -2399,7 +2399,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
           gesture: TourGesture.tap,
           targetShapeBorder: const CircleBorder(),
           child: _headerIconButton(
-            icon: Icons.qr_code_scanner,
+            // My Space (events & experiences dashboard), not a plain scanner.
+            icon: Icons.space_dashboard_outlined,
             tooltip: l10n.exploreQrTooltip,
             onTap: () => Navigator.of(context).push(
               QRHubScreen.route(currentUserId: widget.userId),
