@@ -23900,4 +23900,8 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get legalUpdateDisagreeHint =>
       'Wenn du nicht zustimmst, kannst du dich abmelden. Du kannst dein Konto auch jederzeit löschen.';
+
+  @override
+  String get loginTagline =>
+      'Kulturen entdecken. Ohne Sprachbarrieren verbinden.';
 }

@@ -23875,4 +23875,8 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get legalUpdateDisagreeHint =>
       'Se non sei d\'accordo, puoi uscire dall\'account. Puoi anche eliminare il tuo account in qualsiasi momento.';
+
+  @override
+  String get loginTagline =>
+      'Scopri culture. Connettiti senza barriere linguistiche.';
 }

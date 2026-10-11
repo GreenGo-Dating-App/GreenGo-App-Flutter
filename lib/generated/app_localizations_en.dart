@@ -23622,4 +23622,8 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get legalUpdateDisagreeHint =>
       'If you don\'t agree, you can sign out. You can also delete your account at any time.';
+
+  @override
+  String get loginTagline =>
+      'Discover cultures. Connect without language barriers.';
 }

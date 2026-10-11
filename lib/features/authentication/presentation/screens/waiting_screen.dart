@@ -3,10 +3,10 @@ import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/access_control_service.dart';
-import '../../../../core/widgets/animated_luxury_logo.dart';
+import '../../../../core/widgets/aurora_background.dart';
+import '../../../../core/widgets/calm_brand_logo.dart';
 import '../../../../core/widgets/language_selector.dart';
 import '../../../../core/widgets/luxury_countdown_widget.dart';
-import '../../../../core/widgets/luxury_particles_background.dart';
 import '../../../../features/subscription/domain/entities/subscription.dart';
 import '../../../../generated/app_localizations.dart';
 
@@ -43,11 +43,9 @@ class WaitingScreen extends StatefulWidget {
 }
 
 class _WaitingScreenState extends State<WaitingScreen>
-    with TickerProviderStateMixin {
+    with SingleTickerProviderStateMixin {
   late AnimationController _fadeController;
-  late AnimationController _pulseController;
   late Animation<double> _fadeAnimation;
-  late Animation<double> _pulseAnimation;
 
   @override
   void initState() {
@@ -58,18 +56,9 @@ class _WaitingScreenState extends State<WaitingScreen>
       vsync: this,
     );
 
-    _pulseController = AnimationController(
-      duration: const Duration(seconds: 2),
-      vsync: this,
-    )..repeat(reverse: true);
-
     _fadeAnimation = CurvedAnimation(
       parent: _fadeController,
       curve: Curves.easeIn,
-    );
-
-    _pulseAnimation = Tween<double>(begin: 1.0, end: 1.05).animate(
-      CurvedAnimation(parent: _pulseController, curve: Curves.easeInOut),
     );
 
     _fadeController.forward();
@@ -78,7 +67,6 @@ class _WaitingScreenState extends State<WaitingScreen>
   @override
   void dispose() {
     _fadeController.dispose();
-    _pulseController.dispose();
     super.dispose();
   }
 
@@ -94,7 +82,7 @@ class _WaitingScreenState extends State<WaitingScreen>
     final shouldShowPendingApproval = accessData?.shouldShowPendingApproval ?? false;
     final isRejected = approvalStatus == ApprovalStatus.rejected;
 
-    return LuxuryParticlesBackground(
+    return AuroraBackground(
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
@@ -130,13 +118,11 @@ class _WaitingScreenState extends State<WaitingScreen>
                           children: [
                             SizedBox(height: constraints.maxHeight > 700 ? 20 : 8),
 
-                            // Animated Logo - same as login page
-                            ScaleTransition(
-                              scale: _pulseAnimation,
-                              child: AnimatedLuxuryLogo(
-                                assetPath: 'assets/images/greengo_main_logo_gold.png',
-                                size: constraints.maxHeight > 700 ? 140 : 100,
-                              ),
+                            // Static logo with a soft glow — same calm
+                            // treatment as the login page (no pulse).
+                            CalmBrandLogo(
+                              assetPath: 'assets/images/greengo_main_logo_gold.png',
+                              size: constraints.maxHeight > 700 ? 120 : 96,
                             ),
 
                             SizedBox(height: constraints.maxHeight > 700 ? 24 : 16),

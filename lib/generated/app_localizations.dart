@@ -40694,6 +40694,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'If you don\'t agree, you can sign out. You can also delete your account at any time.'**
   String get legalUpdateDisagreeHint;
+
+  /// One-line tagline under the logo on the login screen
+  ///
+  /// In en, this message translates to:
+  /// **'Discover cultures. Connect without language barriers.'**
+  String get loginTagline;
 }
 
 class _AppLocalizationsDelegate

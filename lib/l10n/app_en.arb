@@ -12805,5 +12805,9 @@
   "legalUpdateDisagreeHint": "If you don't agree, you can sign out. You can also delete your account at any time.",
   "@legalUpdateDisagreeHint": {
     "description": "Legal update sheet (Terms / Privacy Policy 5.1.0 re-acceptance)"
+  },
+  "loginTagline": "Discover cultures. Connect without language barriers.",
+  "@loginTagline": {
+    "description": "One-line tagline under the logo on the login screen"
   }
 }

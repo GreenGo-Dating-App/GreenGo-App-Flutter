@@ -206,6 +206,11 @@ flutter_launcher_icons:
 
 flutter:
   uses-material-design: true
+
+  # Fragment shaders (compiled at build time). aurora.frag = calm auth
+  # background; AuroraBackground falls back to a CustomPainter if it fails.
+  shaders:
+    - shaders/aurora.frag
   generate: true
 
   assets:

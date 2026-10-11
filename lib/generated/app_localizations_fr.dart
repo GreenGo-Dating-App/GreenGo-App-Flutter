@@ -23987,4 +23987,8 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get legalUpdateDisagreeHint =>
       'Si vous n\'êtes pas d\'accord, vous pouvez vous déconnecter. Vous pouvez aussi supprimer votre compte à tout moment.';
+
+  @override
+  String get loginTagline =>
+      'Découvrez des cultures. Échangez sans barrière de la langue.';
 }

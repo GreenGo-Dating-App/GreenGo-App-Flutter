@@ -23823,6 +23823,10 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get legalUpdateDisagreeHint =>
       'Se não concordar, pode terminar sessão. Também pode eliminar a sua conta a qualquer momento.';
+
+  @override
+  String get loginTagline =>
+      'Descubra culturas. Ligue-se sem barreiras linguísticas.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -47656,4 +47660,8 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get legalUpdateDisagreeHint =>
       'Se você não concordar, pode sair da conta. Você também pode excluir sua conta a qualquer momento.';
+
+  @override
+  String get loginTagline =>
+      'Descubra culturas. Conecte-se sem barreiras de idioma.';
 }

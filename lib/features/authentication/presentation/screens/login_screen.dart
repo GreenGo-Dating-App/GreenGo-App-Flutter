@@ -7,10 +7,10 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/e2e_keys.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/auth_error_localizer.dart';
-import '../../../../core/widgets/animated_luxury_logo.dart';
+import '../../../../core/widgets/aurora_background.dart';
+import '../../../../core/widgets/calm_brand_logo.dart';
 import '../../../../core/widgets/connection_error_dialog.dart';
 import '../../../../core/widgets/language_selector.dart';
-import '../../../../core/widgets/luxury_particles_background.dart';
 import '../../../../generated/app_localizations.dart';
 import '../bloc/auth_bloc.dart';
 import '../bloc/auth_event.dart';
@@ -35,7 +35,10 @@ class LoginScreen extends StatefulWidget {
 const double _compactHeightBreakpoint = 640;
 
 /// The form never stretches wider than this, however wide the screen is.
-const double _formMaxWidth = 480;
+const double _formMaxWidth = 420;
+
+/// From this width up (tablet / desktop web) the form sits in a card.
+const double _cardBreakpoint = 600;
 
 class _LoginScreenState extends State<LoginScreen>
     with SingleTickerProviderStateMixin {
@@ -63,7 +66,7 @@ class _LoginScreenState extends State<LoginScreen>
     );
 
     _slideAnimation = Tween<Offset>(
-      begin: const Offset(0, 0.5),
+      begin: const Offset(0, 0.04),
       end: Offset.zero,
     ).animate(
       CurvedAnimation(
@@ -147,31 +150,37 @@ class _LoginScreenState extends State<LoginScreen>
     }
   }
 
-  /// Build a social login button with consistent styling
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Reduced motion: show the form immediately, no fade/slide.
+    if (MediaQuery.maybeDisableAnimationsOf(context) ?? false) {
+      _animationController.value = 1.0;
+    }
+  }
+
+  /// Social sign-in button — quiet white/grey; gold stays reserved for the
+  /// primary Login button.
   Widget _buildSocialLoginButton({
     required BuildContext context,
     required IconData icon,
     required VoidCallback? onTap,
   }) {
     return Container(
-      width: 56,
-      height: 56,
+      width: 48,
+      height: 48,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        border: Border.all(color: AppColors.divider, width: 1.5),
-        color: AppColors.backgroundCard,
+        border: Border.all(color: Colors.white.withValues(alpha: 0.16)),
+        color: Colors.white.withValues(alpha: 0.04),
       ),
       child: Material(
         color: Colors.transparent,
         child: InkWell(
           onTap: onTap,
-          borderRadius: BorderRadius.circular(28),
+          customBorder: const CircleBorder(),
           child: Center(
-            child: Icon(
-              icon,
-              size: 28,
-              color: AppColors.richGold,
-            ),
+            child: Icon(icon, size: 24, color: AppColors.textSecondary),
           ),
         ),
       ),
@@ -186,11 +195,12 @@ class _LoginScreenState extends State<LoginScreen>
     // zeroed, so a check further down always sees 0.
     final keyboardUp = MediaQuery.viewInsetsOf(context).bottom > 0;
 
-    return LuxuryParticlesBackground(
+    return AuroraBackground(
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
+          surfaceTintColor: Colors.transparent,
           elevation: 0,
           actions: const [
             Padding(
@@ -225,307 +235,50 @@ class _LoginScreenState extends State<LoginScreen>
                   // sits under the breakpoint at rest too, and shrinking there
                   // would make the form fit exactly — removing the page's only
                   // cue that anything lies below and recreating the same trap
-                  // one screen size down. At rest the tall header keeps the
-                  // page scrollable, and users already know to scroll.
+                  // one screen size down.
                   final compact = keyboardUp &&
                       constraints.maxHeight < _compactHeightBreakpoint;
-                  final logoSize = compact ? 96.0 : 200.0;
-                  final topGap = compact ? 8.0 : 60.0;
-                  final midGap = compact ? 24.0 : 60.0;
+                  final wide = constraints.maxWidth >= _cardBreakpoint;
+                  final logoSize = compact ? 64.0 : (wide ? 120.0 : 112.0);
+                  final topGap = compact ? 8.0 : (wide ? 16.0 : 24.0);
+
+                  final form = _buildForm(
+                    context,
+                    l10n,
+                    isLoading: isLoading,
+                    compact: compact,
+                    logoSize: logoSize,
+                  );
 
                   return SingleChildScrollView(
                     // A drag dismisses the keyboard — on a tablet the keyboard is
                     // the only thing that can cover the button.
                     keyboardDismissBehavior:
                         ScrollViewKeyboardDismissBehavior.onDrag,
-                    padding: const EdgeInsets.all(AppDimensions.paddingL),
-                    child: Center(
-                      child: ConstrainedBox(
-                        // Full-bleed inputs look broken on a 1366pt-wide tablet.
-                        constraints:
-                            const BoxConstraints(maxWidth: _formMaxWidth),
-                        child: Form(
-                          key: _formKey,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              SizedBox(height: topGap),
-
-                              // Animated Luxury Logo
-                              FadeTransition(
-                                opacity: _fadeAnimation,
-                                child: AnimatedLuxuryLogo(
-                                  assetPath: 'assets/images/greengo_logo.png',
-                                  size: logoSize,
-                                ),
-                              ),
-
-                              SizedBox(height: midGap),
-
-                              // Form Fields
-                              SlideTransition(
-                                position: _slideAnimation,
-                                child: Column(
-                                  children: [
-                                    // Email / Nickname Field (login accepts either)
-                                    AuthTextField(
-                                      fieldKey: E2EKeys.loginEmail,
-                                      controller: _emailController,
-                                      label: l10n.loginEmailOrNickname,
-                                      keyboardType: TextInputType.emailAddress,
-                                      validator: (value) {
-                                        if (value == null ||
-                                            value.trim().isEmpty) {
-                                          return l10n.authPleaseEnterEmail;
-                                        }
-                                        return null;
-                                      },
-                                      prefixIcon: Icons.email_outlined,
-                                      enabled: !isLoading,
-                                      textInputAction: TextInputAction.next,
-                                    ),
-
-                                    const SizedBox(height: 16),
-
-                                    // Password Field
-                                    AuthTextField(
-                                      fieldKey: E2EKeys.loginPassword,
-                                      controller: _passwordController,
-                                      label: l10n.password,
-                                      obscureText: _obscurePassword,
-                                      validator: (value) {
-                                        if (value == null || value.isEmpty) {
-                                          return l10n.passwordRequired;
-                                        }
-                                        return null;
-                                      },
-                                      prefixIcon: Icons.lock_outline,
-                                      suffixIcon: IconButton(
-                                        icon: Icon(
-                                          _obscurePassword
-                                              ? Icons.visibility_outlined
-                                              : Icons.visibility_off_outlined,
-                                          color: AppColors.textTertiary,
-                                        ),
-                                        onPressed: () {
-                                          setState(() {
-                                            _obscurePassword =
-                                                !_obscurePassword;
-                                          });
-                                        },
-                                      ),
-                                      enabled: !isLoading,
-                                      // After typing the password the natural next move
-                                      // is the keyboard's Go key — wire it to the same
-                                      // handler as the button.
-                                      textInputAction: TextInputAction.go,
-                                      onSubmitted: (_) {
-                                        if (!isLoading) _handleLogin();
-                                      },
-                                    ),
-
-                                    const SizedBox(height: 8),
-
-                                    // Forgot Password
-                                    Align(
-                                      alignment: Alignment.centerRight,
-                                      child: TextButton(
-                                        onPressed: isLoading
-                                            ? null
-                                            : () {
-                                                Navigator.of(context).pushNamed(
-                                                    '/forgot-password');
-                                              },
-                                        child: Text(
-                                          l10n.forgotPassword,
-                                          style: const TextStyle(
-                                            color: AppColors.richGold,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-
-                                    const SizedBox(height: 24),
-
-                                    // Login Button
-                                    AuthButton(
-                                      key: E2EKeys.loginSubmit,
-                                      text: l10n.login,
-                                      onPressed:
-                                          isLoading ? null : _handleLogin,
-                                      isLoading: isLoading,
-                                    ),
-
-                                    const SizedBox(height: 24),
-
-                                    // Social Login Section (conditionally rendered)
-                                    if (AppConfig.showSocialLoginSection) ...[
-                                      // Divider
-                                      Row(
-                                        children: [
-                                          const Expanded(
-                                              child: Divider(
-                                                  color: AppColors.divider)),
-                                          Padding(
-                                            padding: const EdgeInsets.symmetric(
-                                                horizontal: 16),
-                                            child: Text(
-                                              l10n.orContinueWith,
-                                              style: Theme.of(context)
-                                                  .textTheme
-                                                  .bodySmall,
-                                            ),
-                                          ),
-                                          const Expanded(
-                                              child: Divider(
-                                                  color: AppColors.divider)),
-                                        ],
-                                      ),
-
-                                      const SizedBox(height: 24),
-
-                                      // Social Login Buttons
-                                      Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceEvenly,
-                                        children: [
-                                          // Google Login Button
-                                          if (AppConfig.enableGoogleAuth)
-                                            _buildSocialLoginButton(
-                                              context: context,
-                                              icon: Icons
-                                                  .g_mobiledata, // Placeholder - use FontAwesome when enabled
-                                              onTap: isLoading
-                                                  ? null
-                                                  : () {
-                                                      context
-                                                          .read<AuthBloc>()
-                                                          .add(
-                                                            const AuthSignInWithGoogleRequested(),
-                                                          );
-                                                    },
-                                            ),
-
-                                          // Facebook Login Button
-                                          if (AppConfig.enableFacebookAuth)
-                                            _buildSocialLoginButton(
-                                              context: context,
-                                              icon: Icons
-                                                  .facebook, // Placeholder - use FontAwesome when enabled
-                                              onTap: isLoading
-                                                  ? null
-                                                  : () {
-                                                      context
-                                                          .read<AuthBloc>()
-                                                          .add(
-                                                            const AuthSignInWithFacebookRequested(),
-                                                          );
-                                                    },
-                                            ),
-
-                                          // Biometric Login Button
-                                          if (AppConfig.enableBiometricAuth)
-                                            _buildSocialLoginButton(
-                                              context: context,
-                                              icon: Icons.fingerprint,
-                                              onTap: isLoading
-                                                  ? null
-                                                  : () {
-                                                      context
-                                                          .read<AuthBloc>()
-                                                          .add(
-                                                            const AuthBiometricSignInRequested(),
-                                                          );
-                                                    },
-                                            ),
-
-                                          // Apple Login Button
-                                          if (AppConfig.enableAppleAuth)
-                                            _buildSocialLoginButton(
-                                              context: context,
-                                              icon: Icons.apple,
-                                              onTap: isLoading
-                                                  ? null
-                                                  : () {
-                                                      // TODO: Implement Apple Sign In
-                                                      ScaffoldMessenger.of(
-                                                              context)
-                                                          .showSnackBar(
-                                                        SnackBar(
-                                                          content: Text(l10n
-                                                              .authAppleSignInComingSoon),
-                                                        ),
-                                                      );
-                                                    },
-                                            ),
-                                        ],
-                                      ),
-
-                                      const SizedBox(height: 24),
-                                    ],
-
-                                    // Sign Up Link. A Wrap, not a Row — the
-                                    // prompt + button overflow a narrow phone
-                                    // in the longer locales, which clipped the
-                                    // Sign Up tap target.
-                                    Wrap(
-                                      alignment: WrapAlignment.center,
-                                      crossAxisAlignment:
-                                          WrapCrossAlignment.center,
-                                      children: [
-                                        Text(
-                                          l10n.dontHaveAccount,
-                                          style: const TextStyle(
-                                            color: AppColors.textSecondary,
-                                            fontSize: 14,
-                                          ),
-                                        ),
-                                        TextButton(
-                                          onPressed: isLoading
-                                              ? null
-                                              : () {
-                                                  Navigator.of(context)
-                                                      .pushReplacementNamed(
-                                                          '/register');
-                                                },
-                                          child: Text(
-                                            l10n.signUp,
-                                            style: const TextStyle(
-                                              color: AppColors.richGold,
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 14,
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-
-                                    const SizedBox(height: 20),
-
-                                    // App Version
-                                    FutureBuilder<PackageInfo>(
-                                      future: PackageInfo.fromPlatform(),
-                                      builder: (context, snapshot) {
-                                        if (snapshot.hasData) {
-                                          return Text(
-                                            'v${snapshot.data!.version}',
-                                            style: const TextStyle(
-                                              color: AppColors.textTertiary,
-                                              fontSize: 12,
-                                            ),
-                                            textAlign: TextAlign.center,
-                                          );
-                                        }
-                                        return const SizedBox.shrink();
-                                      },
-                                    ),
-
-                                    const SizedBox(height: 10),
-                                  ],
-                                ),
-                              ),
-                            ],
+                    padding: EdgeInsets.fromLTRB(
+                      AppDimensions.paddingL,
+                      topGap,
+                      AppDimensions.paddingL,
+                      AppDimensions.paddingL,
+                    ),
+                    child: ConstrainedBox(
+                      // Vertically centre the column when it fits (desktop).
+                      constraints: BoxConstraints(
+                        minHeight: wide
+                            ? (constraints.maxHeight -
+                                    topGap -
+                                    AppDimensions.paddingL)
+                                .clamp(0.0, double.infinity)
+                            : 0,
+                      ),
+                      child: Center(
+                        child: ConstrainedBox(
+                          // Full-bleed inputs look broken on a wide screen.
+                          constraints: BoxConstraints(
+                            maxWidth:
+                                wide ? _formMaxWidth + 80 : _formMaxWidth,
                           ),
+                          child: wide ? _FormCard(child: form) : form,
                         ),
                       ),
                     ),
@@ -535,6 +288,336 @@ class _LoginScreenState extends State<LoginScreen>
             },
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _buildForm(
+    BuildContext context,
+    AppLocalizations l10n, {
+    required bool isLoading,
+    required bool compact,
+    required double logoSize,
+  }) {
+    return Form(
+      key: _formKey,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          // Logo — soft glow, no sparkles.
+          FadeTransition(
+            opacity: _fadeAnimation,
+            child: Center(
+              child: CalmBrandLogo(
+                assetPath: 'assets/images/greengo_logo.png',
+                size: logoSize,
+              ),
+            ),
+          ),
+
+          if (!compact) ...[
+            const SizedBox(height: 16),
+            FadeTransition(
+              opacity: _fadeAnimation,
+              child: Text(
+                l10n.loginTagline,
+                key: const ValueKey('login_tagline'),
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white.withValues(alpha: 0.78),
+                  fontSize: 17,
+                  height: 1.45,
+                  fontWeight: FontWeight.w400,
+                  letterSpacing: 0.1,
+                ),
+              ),
+            ),
+          ],
+
+          SizedBox(height: compact ? 24 : 40),
+
+          // Form Fields
+          SlideTransition(
+            position: _slideAnimation,
+            child: FadeTransition(
+              opacity: _fadeAnimation,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  // Email / Nickname Field (login accepts either)
+                  AuthTextField(
+                    fieldKey: E2EKeys.loginEmail,
+                    controller: _emailController,
+                    label: l10n.loginEmailOrNickname,
+                    keyboardType: TextInputType.emailAddress,
+                    translucent: true,
+                    validator: (value) {
+                      if (value == null || value.trim().isEmpty) {
+                        return l10n.authPleaseEnterEmail;
+                      }
+                      return null;
+                    },
+                    prefixIcon: Icons.email_outlined,
+                    enabled: !isLoading,
+                    textInputAction: TextInputAction.next,
+                  ),
+
+                  const SizedBox(height: 16),
+
+                  // Password Field
+                  AuthTextField(
+                    fieldKey: E2EKeys.loginPassword,
+                    controller: _passwordController,
+                    label: l10n.password,
+                    obscureText: _obscurePassword,
+                    translucent: true,
+                    validator: (value) {
+                      if (value == null || value.isEmpty) {
+                        return l10n.passwordRequired;
+                      }
+                      return null;
+                    },
+                    prefixIcon: Icons.lock_outline,
+                    suffixIcon: IconButton(
+                      icon: Icon(
+                        _obscurePassword
+                            ? Icons.visibility_outlined
+                            : Icons.visibility_off_outlined,
+                        color: AppColors.textTertiary,
+                        size: 20,
+                      ),
+                      onPressed: () {
+                        setState(() {
+                          _obscurePassword = !_obscurePassword;
+                        });
+                      },
+                    ),
+                    enabled: !isLoading,
+                    // After typing the password the natural next move is the
+                    // keyboard's Go key — wire it to the same handler as the
+                    // button.
+                    textInputAction: TextInputAction.go,
+                    onSubmitted: (_) {
+                      if (!isLoading) _handleLogin();
+                    },
+                  ),
+
+                  const SizedBox(height: 8),
+
+                  // Forgot Password — quiet, not gold.
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: TextButton(
+                      onPressed: isLoading
+                          ? null
+                          : () {
+                              Navigator.of(context)
+                                  .pushNamed('/forgot-password');
+                            },
+                      style: TextButton.styleFrom(
+                        foregroundColor: AppColors.textSecondary,
+                      ),
+                      child: Text(
+                        l10n.forgotPassword,
+                        style: const TextStyle(
+                          color: AppColors.textSecondary,
+                          fontSize: 14,
+                        ),
+                      ),
+                    ),
+                  ),
+
+                  const SizedBox(height: 24),
+
+                  // Login Button — the one strong (gold) accent on the page.
+                  AuthButton(
+                    key: E2EKeys.loginSubmit,
+                    text: l10n.login,
+                    onPressed: isLoading ? null : _handleLogin,
+                    isLoading: isLoading,
+                    height: 52,
+                  ),
+
+                  const SizedBox(height: 32),
+
+                  // Social Login Section (conditionally rendered)
+                  if (AppConfig.showSocialLoginSection) ...[
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Divider(
+                            color: Colors.white.withValues(alpha: 0.12),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Text(
+                            l10n.orContinueWith,
+                            style: const TextStyle(
+                              color: AppColors.textTertiary,
+                              fontSize: 13,
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Divider(
+                            color: Colors.white.withValues(alpha: 0.12),
+                          ),
+                        ),
+                      ],
+                    ),
+
+                    const SizedBox(height: 24),
+
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        if (AppConfig.enableGoogleAuth)
+                          _buildSocialLoginButton(
+                            context: context,
+                            icon: Icons
+                                .g_mobiledata, // Placeholder - use FontAwesome when enabled
+                            onTap: isLoading
+                                ? null
+                                : () {
+                                    context.read<AuthBloc>().add(
+                                          const AuthSignInWithGoogleRequested(),
+                                        );
+                                  },
+                          ),
+                        if (AppConfig.enableFacebookAuth)
+                          _buildSocialLoginButton(
+                            context: context,
+                            icon: Icons
+                                .facebook, // Placeholder - use FontAwesome when enabled
+                            onTap: isLoading
+                                ? null
+                                : () {
+                                    context.read<AuthBloc>().add(
+                                          const AuthSignInWithFacebookRequested(),
+                                        );
+                                  },
+                          ),
+                        if (AppConfig.enableBiometricAuth)
+                          _buildSocialLoginButton(
+                            context: context,
+                            icon: Icons.fingerprint,
+                            onTap: isLoading
+                                ? null
+                                : () {
+                                    context.read<AuthBloc>().add(
+                                          const AuthBiometricSignInRequested(),
+                                        );
+                                  },
+                          ),
+                        if (AppConfig.enableAppleAuth)
+                          _buildSocialLoginButton(
+                            context: context,
+                            icon: Icons.apple,
+                            onTap: isLoading
+                                ? null
+                                : () {
+                                    // TODO: Implement Apple Sign In
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                        content: Text(
+                                            l10n.authAppleSignInComingSoon),
+                                      ),
+                                    );
+                                  },
+                          ),
+                      ],
+                    ),
+
+                    const SizedBox(height: 32),
+                  ],
+
+                  // Sign Up Link. A Wrap, not a Row — the prompt + button
+                  // overflow a narrow phone in the longer locales, which
+                  // clipped the Sign Up tap target.
+                  Wrap(
+                    alignment: WrapAlignment.center,
+                    crossAxisAlignment: WrapCrossAlignment.center,
+                    children: [
+                      Text(
+                        l10n.dontHaveAccount,
+                        style: const TextStyle(
+                          color: AppColors.textTertiary,
+                          fontSize: 15,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: isLoading
+                            ? null
+                            : () {
+                                Navigator.of(context)
+                                    .pushReplacementNamed('/register');
+                              },
+                        style: TextButton.styleFrom(
+                          foregroundColor: AppColors.textPrimary,
+                        ),
+                        child: Text(
+                          l10n.signUp,
+                          style: const TextStyle(
+                            color: AppColors.textPrimary,
+                            fontWeight: FontWeight.w600,
+                            fontSize: 15,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+
+                  const SizedBox(height: 24),
+
+                  // App Version
+                  FutureBuilder<PackageInfo>(
+                    future: PackageInfo.fromPlatform(),
+                    builder: (context, snapshot) {
+                      if (snapshot.hasData) {
+                        return Text(
+                          'v${snapshot.data!.version}',
+                          style: TextStyle(
+                            color: Colors.white.withValues(alpha: 0.5),
+                            fontSize: 12,
+                            letterSpacing: 0.4,
+                          ),
+                          textAlign: TextAlign.center,
+                        );
+                      }
+                      return const SizedBox.shrink();
+                    },
+                  ),
+
+                  const SizedBox(height: 8),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Desktop / tablet container: a quiet translucent panel with a hairline
+/// border so the form reads as one unit over the wide aurora.
+class _FormCard extends StatelessWidget {
+  const _FormCard({required this.child});
+
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: Colors.black.withValues(alpha: 0.32),
+        borderRadius: BorderRadius.circular(AppDimensions.radiusXL),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(40, 40, 40, 24),
+        child: child,
       ),
     );
   }
