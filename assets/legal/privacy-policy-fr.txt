@@ -1,816 +1,1347 @@
-POLITIQUE DE CONFIDENTIALITE DE GREENGO CHAT
+POLITIQUE DE CONFIDENTIALITÉ DE GREENGO
 
-Derniere mise a jour : 15 septembre 2026
-Date d'entree en vigueur : 15 septembre 2026
-
-================================================================================
-INTRODUCTION
-================================================================================
-
-Bienvenue sur GreenGo Chat ("GreenGo", "nous" ou "notre"). Cette Politique de Confidentialite explique comment Universo Kardasha Ltda., une societe constituee en vertu des lois de la Republique Federative du Bresil, dont le siege social est situe a Sao Paulo, Bresil ("Societe", "Responsable du Traitement"), collecte, utilise, divulgue et protege vos donnees personnelles lorsque vous utilisez notre application mobile, notre site web et nos services connexes (collectivement, les "Services").
-
-Nous nous engageons a proteger votre vie privee et a garantir la transparence sur la maniere dont nous traitons vos informations personnelles. Cette Politique de Confidentialite a ete elaboree en conformite avec :
-
-- Loi Generale sur la Protection des Donnees du Bresil (LGPD, Loi n° 13.709/2018)
-- Reglement General sur la Protection des Donnees de l'Union Europeenne (RGPD, Reglement 2016/679)
-- California Consumer Privacy Act et California Privacy Rights Act (CCPA/CPRA)
-- Autres lois internationales applicables en matiere de protection des donnees
-
-En accedant ou en utilisant nos Services, vous reconnaissez avoir lu, compris et accepte d'etre lie par cette Politique de Confidentialite. Si vous n'etes pas d'accord avec nos politiques et pratiques, veuillez ne pas utiliser nos Services.
-
-Coordonnees :
-- Responsable du Traitement : Universo Kardasha Ltda.
-- Delegue a la Protection des Donnees (DPO) : privacy@greengochat.com
-- Email : support@greengochat.com
-- Telephone : +55 11 911142911
-- Adresse : Sao Paulo, SP, Bresil
+Version : 5.1.0
+Date d'entrée en vigueur : 11 octobre 2026
+Version précédente : 5.0.0 (9 octobre 2026)
 
 ================================================================================
-TABLE DES MATIERES
+1. QUI NOUS SOMMES ET COMMENT NOUS CONTACTER
 ================================================================================
 
-1. Definitions
-2. Informations que nous collectons
-3. Comment nous collectons les informations
-4. Base juridique du traitement (LGPD/RGPD)
-5. Comment nous utilisons vos informations
-6. Comment nous partageons vos informations
-7. Transferts internationaux de donnees
-8. Conservation des donnees
-9. Securite des donnees
-10. Vos droits en vertu de la LGPD (Bresil)
-11. Vos droits en vertu du RGPD (Espace Economique Europeen)
-12. Vos droits en vertu de la CCPA/CPRA (Californie)
-13. Droits dans d'autres juridictions
-14. Confidentialite des enfants
-15. Decisions automatisees et profilage
-16. Cookies et technologies de suivi
-17. Liens et services tiers
-18. Modifications de cette politique de confidentialite
-19. Comment exercer vos droits
-20. Reclamations et resolution des litiges
-21. Loi applicable et juridiction
-22. Nous contacter
+1.1 Le responsable du traitement
+
+GreenGo est exploité par :
+
+  Universo Kardasha Ltda.
+  CNPJ 40.486.663/0001-82
+  Av. Dona Helena Pereira de Moraes, 290, Sao Paulo - SP, 05707-400, Brésil
+  (« GreenGo », « nous »)
+
+Nous sommes le responsable du traitement de vos données personnelles. Cela
+signifie que nous décidons pourquoi et comment elles sont utilisées. Cette même
+société est votre cocontractant au titre de nos Conditions générales et de
+notre Contrat de licence utilisateur final, et c'est elle qui vend les achats
+effectués sur notre site web.
+
+1.2 Délégué à la protection des données (Encarregado)
+
+Notre délégué à la protection des données, qui est aussi notre Encarregado
+(délégué à la protection des données) au sens de la loi brésilienne sur la
+protection des données (LGPD, art. 41), peut être contacté :
+
+  GreenGo Privacy Team - Encarregado / Délégué à la protection des données
+  E-mail : privacy@greengochat.com
+  Adresse postale : celle indiquée au point 1.1, avec la mention
+  « Attn: Encarregado / DPO »
+
+Vous pouvez contacter le délégué à la protection des données pour toute
+question relative à la présente politique.
+
+1.3 Représentants dans l'Union européenne et au Royaume-Uni
+
+Nous sommes établis au Brésil et proposons GreenGo à des personnes situées dans
+l'Union européenne et au Royaume-Uni. Nous sommes en train d'y désigner des
+représentants (RGPD art. 27 et UK GDPR art. 27) et publierons leurs coordonnées
+dans cette section dès leur désignation. D'ici là, vous-même et les autorités de
+protection des données pouvez nous contacter directement à
+privacy@greengochat.com, dans l'une des langues de la présente politique.
+
+1.4 Champ d'application de la présente politique
+
+La présente politique s'applique à tout ce que nous proposons sous le nom
+GreenGo : les applications GreenGo pour Android et iOS, l'application web
+GreenGo (greengo-chat.web.app) et le site web greengochat.com (ensemble, les
+« Services »).
+
+GreenGo est un service destiné aux adultes (18 ans et plus). Il aide les
+personnes à découvrir d'autres cultures et à communiquer au-delà des barrières
+linguistiques. Il comprend :
+- les profils et la découverte ;
+- la messagerie avec traduction ;
+- les groupes et les communautés ;
+- les événements et les expériences ;
+- les pages professionnelles ;
+- des fonctionnalités d'apprentissage.
+
+GreenGo est un service de découverte sociale et culturelle, et non un service
+de recherche de partenaires amoureux ou sexuels.
 
 ================================================================================
-1. DEFINITIONS
+2. EN BREF
 ================================================================================
 
-Aux fins de la presente Politique de Confidentialite :
-
-"Donnees Personnelles" designe toute information se rapportant a une personne physique identifiee ou identifiable, y compris, mais sans s'y limiter, le nom, le numero d'identification, les donnees de localisation, l'identifiant en ligne ou des facteurs specifiques a l'identite physique, physiologique, genetique, mentale, economique, culturelle ou sociale de cette personne.
-
-"Donnees Personnelles Sensibles" designe les donnees personnelles revelant l'origine raciale ou ethnique, les opinions politiques, les convictions religieuses ou philosophiques, l'appartenance syndicale, les donnees relatives a la sante, les donnees genetiques, les donnees biometriques, l'orientation sexuelle ou les donnees concernant la vie sexuelle.
-
-"Traitement" designe toute operation effectuee sur des donnees personnelles, y compris la collecte, l'enregistrement, l'organisation, la structuration, la conservation, l'adaptation, la modification, l'extraction, la consultation, l'utilisation, la communication, la diffusion, le rapprochement, l'interconnexion, la limitation, l'effacement ou la destruction.
-
-"Personne Concernee" designe la personne physique a laquelle se rapportent les donnees personnelles faisant l'objet d'un traitement.
-
-"Responsable du Traitement" designe la personne physique ou morale qui determine les finalites et les moyens du traitement des donnees personnelles.
-
-"Sous-traitant" designe une personne physique ou morale qui traite des donnees personnelles pour le compte du responsable du traitement.
-
-"Consentement" designe toute manifestation de volonte, libre, specifique, eclairee et univoque par laquelle la personne concernee accepte que des donnees personnelles la concernant fassent l'objet d'un traitement.
-
-"Anonymisation" designe le traitement de donnees personnelles de telle maniere qu'elles ne puissent plus etre attribuees a une personne concernee specifique sans avoir recours a des informations supplementaires.
-
-================================================================================
-2. INFORMATIONS QUE NOUS COLLECTONS
-================================================================================
-
-2.1 Informations que vous fournissez directement
-
-a) Informations d'inscription au compte :
-   - Nom complet
-   - Adresse email
-   - Numero de telephone
-   - Date de naissance
-   - Genre
-   - Mot de passe (stocke sous forme chiffree)
-
-b) Informations de profil :
-   - Photos et videos de profil
-   - Biographie/description
-   - Caracteristiques physiques (taille, morphologie)
-   - Interets et loisirs
-   - Formation et profession
-   - Preferences relationnelles
-   - Langues parlees
-   - Choix de mode de vie (tabagisme, consommation d'alcool, regime alimentaire)
-
-c) Informations de verification d'identite :
-   - Documents d'identite delivres par le gouvernement
-   - Photos selfie pour verification
-   - Donnees biometriques faciales (uniquement a des fins de verification)
-
-d) Donnees de communication :
-   - Messages echanges avec d'autres utilisateurs
-   - Signalements et commentaires soumis
-   - Correspondance avec le service client
-   - Reponses aux enquetes
-
-e) Informations de paiement :
-   - Donnees de carte de paiement (traitees par des prestataires de paiement tiers)
-   - Adresse de facturation
-   - Historique des transactions
-   - Informations d'abonnement
-
-f) Contenu que vous creez :
-   - Photos et videos telechargees
-   - Contenu textuel dans les profils et messages
-   - Messages audio (le cas echeant)
-
-2.2 Informations collectees automatiquement
-
-a) Informations sur l'appareil :
-   - Type et modele de l'appareil
-   - Systeme d'exploitation et version
-   - Identifiants uniques de l'appareil (IMEI, identifiant publicitaire)
-   - Informations sur le reseau mobile
-   - Type et version du navigateur
-   - Resolution et parametres d'ecran
-
-b) Informations de localisation :
-   - Geolocalisation precise (coordonnees GPS) lorsqu'elle est activee
-   - Localisation approximative basee sur l'adresse IP
-   - Historique de localisation (a des fins de mise en correspondance)
-   - Fuseau horaire
-
-c) Informations d'utilisation :
-   - Fonctionnalites de l'application utilisees
-   - Temps passe sur l'application
-   - Modeles d'interaction (glissements, likes, correspondances)
-   - Requetes de recherche et filtres appliques
-   - Pages et profils consultes
-   - Modeles de clics et chemins de navigation
-
-d) Informations de journal :
-   - Adresse IP
-   - Dates et heures d'acces
-   - Plantages et erreurs de l'application
-   - URLs de reference
-   - Journaux d'activite systeme
-
-e) Cookies et technologies similaires :
-   - Cookies de session
-   - Cookies persistants
-   - Balises web
-   - Pixels espions
-   - Donnees de stockage local
-
-2.3 Informations provenant de tiers
-
-a) Plateformes de medias sociaux :
-   - Informations de profil public (si vous connectez des comptes sociaux)
-   - Liste d'amis (avec votre permission)
-   - Photos de comptes connectes
-
-b) Fournisseurs d'authentification :
-   - Donnees Google Sign-In
-   - Donnees Apple Sign-In
-   - Donnees Facebook Login
-
-c) Partenaires d'analyse et de publicite :
-   - Informations demographiques
-   - Donnees basees sur les interets
-   - Identifiants publicitaires
-
-d) Autres utilisateurs :
-   - Signalements ou plaintes vous concernant
-   - Tags ou mentions dans du contenu partage
-
-e) Sources publiques :
-   - Informations accessibles au public
-   - Bases de donnees gouvernementales (pour verification)
-
-2.4 Donnees Personnelles Sensibles
-
-Nous pouvons collecter et traiter les donnees personnelles sensibles suivantes avec votre consentement explicite :
-
-- Orientation sexuelle et identite de genre
-- Origine raciale ou ethnique (si fournie volontairement dans le profil)
-- Croyances religieuses (si fournies volontairement)
-- Informations de sante pertinentes pour les relations (si divulguees volontairement)
-- Donnees biometriques (uniquement pour la verification d'identite)
-- Donnees du document d'identite (uniquement pour la verification de l'age - voir la Section 2.6)
-
-Les images des documents d'identite utilisees pour la verification de l'age sont
-conservees dans un stockage restreint, accessible uniquement cote serveur, a des
-fins de prevention de la fraude (voir les Sections 2.6 et 8.1(e)). A des fins de
-prevention de la fraude et pour la securite de la communaute, les documents
-d'identite sont conserves jusqu'a 30 jours apres la suppression du compte, puis
-definitivement effaces. La verification faciale est traitee et seul le resultat
-derive est conserve.
-
-Le retrait du consentement a la verification de l'age supprime votre statut
-verifie et, avec lui, la possibilite de publier du contenu dans les Communautes.
-Cela n'affecte pas le reste de votre compte.
-
-
-Vous avez le droit de retirer votre consentement au traitement des donnees sensibles a tout moment.
+- Nous collectons ce que vous nous fournissez (votre compte, votre profil, vos
+  messages et publications), ce que votre appareil nous transmet (par exemple
+  votre localisation, si vous l'autorisez) et ce qui se produit lorsque vous
+  utilisez GreenGo (par exemple les achats et les signalements).
+- Les autres utilisateurs voient votre profil public : vos photos, votre nom ou
+  pseudonyme, votre âge et une localisation APPROXIMATIVE, précise seulement à
+  environ 1,5 km. Ils ne voient jamais votre localisation exacte, votre date de
+  naissance, votre numéro de téléphone ni votre adresse e-mail.
+- Nous ne VENDONS PAS vos données personnelles. Nous ne les utilisons PAS pour
+  de la publicité de tiers. Il n'y a aucune publicité dans GreenGo.
+- Vos messages sont chiffrés en transit et au repos, mais ils ne sont PAS
+  chiffrés de bout en bout.
+  - Nos systèmes peuvent traiter le contenu des messages, par exemple pour le
+    traduire à votre demande, ou pour examiner un message qui a été signalé.
+- Si vous vérifiez votre âge au moyen d'une pièce d'identité, nous supprimons
+  l'image dès la fin de la vérification. Nous ne conservons que le résultat.
+- Les fonctionnalités d'IA (traduction, lecture vocale, réponses suggérées,
+  coach IA) passent par nos serveurs. Elles utilisent des services Google, et
+  notre assistant d'assistance utilise Claude d'Anthropic. Nous vous demandons
+  votre consentement avant leur première utilisation, et l'assistant
+  d'assistance est clairement identifié comme une IA.
+- Vous pouvez supprimer votre compte à tout moment :
+  - dans l'application ;
+  - sur notre site web, à l'adresse https://greengochat.com/delete-account, en
+    confirmant un lien que nous vous envoyons par e-mail.
+- Vous disposez de droits sur vos données : accès, rectification, effacement,
+  portabilité, opposition et plus encore. Voir la section 16.
 
 ================================================================================
-2.5 AUTORISATIONS DE L'APPLICATION MOBILE
+3. QUELLES DONNÉES NOUS COLLECTONS
 ================================================================================
 
-Notre application mobile necessite certaines autorisations de l'appareil pour fonctionner correctement. Voici une liste complete des autorisations que nous pouvons demander et comment elles sont utilisees:
+3.1 Données que vous nous fournissez
 
-a) Autorisation Camera (android.permission.CAMERA)
-   - Objectif: Vous permettre de prendre des photos pour votre profil, de capturer des images pour la verification d'identite et de partager des photos dans les messages avec d'autres utilisateurs.
-   - Utilisation des Donnees: Les photos prises avec la camera sont telechargees sur nos serveurs pour l'affichage du profil, la verification d'identite ou le partage de messages.
-   - Stockage: Les images sont stockees de maniere securisee sur nos serveurs conformement a nos politiques de conservation des donnees.
-   - Partage avec des Tiers: Les photos de profil peuvent etre visibles par d'autres utilisateurs. Les photos de verification sont traitees par nos fournisseurs de services de verification d'identite.
-   - Controle de l'Utilisateur: Vous pouvez revoquer l'autorisation camera a tout moment via les parametres de votre appareil. Certaines fonctionnalites necessitant des photos seront indisponibles sans cette autorisation.
+a) Données de compte
+   Adresse e-mail, mot de passe (stocké uniquement sous forme de hachage
+   sécurisé par notre fournisseur d'authentification), pseudonyme et nom
+   affiché, date de naissance et langue utilisée.
 
-b) Autorisation de Localisation (android.permission.ACCESS_FINE_LOCATION, android.permission.ACCESS_COARSE_LOCATION)
-   - Objectif: Vous montrer des correspondances potentielles pres de votre emplacement et activer les fonctionnalites basees sur la localisation.
-   - Utilisation des Donnees: Les donnees de localisation sont utilisees pour calculer les distances et suggerer des utilisateurs a proximite.
-   - Stockage: Les donnees de localisation sont stockees sur nos serveurs et mises a jour lorsque vous utilisez l'application.
-   - Partage avec des Tiers: La localisation approximative peut etre affichee aux autres utilisateurs (niveau ville/region). La localisation precise n'est pas partagee avec les autres utilisateurs.
-   - Controle de l'Utilisateur: Vous pouvez desactiver les autorisations de localisation a tout moment. L'application fonctionnera avec des fonctionnalites limitees sans acces a la localisation.
+b) Données de profil
+   - Photos, un profil vidéo et une présentation vocale facultatifs.
+   - À propos de vous : biographie, centres d'intérêt, langues que vous parlez
+     et que vous apprenez, et genre.
+   - Informations facultatives que vous choisissez d'ajouter : taille,
+     formation, profession, traits de personnalité, pays ou culture d'origine,
+     liens vers vos comptes de réseaux sociaux et liens vers des services de
+     paiement externes (par exemple une clé Pix ou un lien PayPal.me).
+   - Nous ne demandons pas votre orientation sexuelle (voir le point 3.4).
+   - Vos choix de confidentialité, par exemple le mode incognito, le mode
+     fantôme et votre apparition ou non sur la carte.
 
-c) Autorisation de Stockage (android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE)
-   - Objectif: Vous permettre de selectionner et de telecharger des photos depuis la galerie de votre appareil.
-   - Utilisation des Donnees: Les photos selectionnees sont telechargees sur nos serveurs a des fins de profil ou de messagerie.
-   - Stockage: Nous n'accdons ni ne stockons aucun fichier autre que ceux que vous selectionnez explicitement pour le telechargement.
-   - Partage avec des Tiers: Seules les photos que vous choisissez de partager sont telechargees et potentiellement visibles par d'autres utilisateurs.
-   - Controle de l'Utilisateur: Vous pouvez revoquer l'autorisation de stockage a tout moment. Le telechargement de photos depuis la galerie sera indisponible sans cette autorisation.
+c) Contenus et communications
+   - Messages dans les conversations individuelles, les groupes, les
+     communautés et les conversations d'événements : texte, photos, vidéos,
+     messages vocaux et réactions.
+   - Publications, conseils, annonces, avis et évaluations.
+   - Vos réponses aux invitations à des événements.
+   - Les expériences que vous organisez ou réservez.
+   - Les messages que vous envoyez à notre équipe d'assistance.
 
-d) Acces Internet (android.permission.INTERNET)
-   - Objectif: Necessaire pour que l'application communique avec nos serveurs, charge le contenu et active la messagerie.
-   - Utilisation des Donnees: Toutes les donnees transmises sur Internet sont chiffrees en utilisant TLS 1.3.
-   - Controle de l'Utilisateur: Cette autorisation est essentielle au fonctionnement de l'application et ne peut pas etre desactivee.
+d) Données des comptes professionnels
+   Nom commercial et dénomination sociale, catégorie, adresse affichée sur
+   votre page, horaires d'ouverture, canaux de contact et, si vous demandez à
+   être vérifié en tant qu'entreprise, les documents nécessaires à la
+   vérification (voir le point 8.4).
 
-e) Etat du Reseau (android.permission.ACCESS_NETWORK_STATE)
-   - Objectif: Verifier la connectivite Internet et optimiser l'utilisation des donnees.
-   - Utilisation des Donnees: Utilise uniquement pour determiner si l'appareil est connecte a Internet.
-   - Controle de l'Utilisateur: Cette autorisation est essentielle au fonctionnement de l'application.
+e) Données de vérification
+   Une pièce d'identité et/ou un selfie, uniquement si vous choisissez de vous
+   faire vérifier. Voir la section 8.
 
-f) Notifications Push (android.permission.POST_NOTIFICATIONS)
-   - Objectif: Vous envoyer des notifications concernant les nouveaux messages, les correspondances et les mises a jour importantes.
-   - Utilisation des Donnees: Les jetons de notification sont stockes pour delivrer les notifications push.
-   - Partage avec des Tiers: Nous utilisons Firebase Cloud Messaging (Google) pour delivrer les notifications.
-   - Controle de l'Utilisateur: Vous pouvez desactiver les notifications a tout moment via les parametres de votre appareil ou les preferences de l'application.
+f) Données d'achat
+   - Ce que vous avez acheté, quand, le prix et la devise.
+   - La boutique ou le prestataire de paiement utilisé, et le numéro de
+     commande ou de transaction.
+   - Sur notre site web, votre paiement est saisi sur la page propre de Stripe.
+     Nous ne recevons pas votre numéro de carte complet.
 
-g) Vibration (android.permission.VIBRATE)
-   - Objectif: Fournir un retour haptique pour les notifications et les interactions.
-   - Utilisation des Donnees: Aucune donnee n'est collectee via cette autorisation.
-   - Controle de l'Utilisateur: Vous pouvez controler les parametres de vibration via les parametres de votre appareil.
+g) Signalements et recours
+   Ce que vous nous indiquez lorsque vous signalez un contenu ou une personne,
+   et lorsque vous contestez l'une de nos décisions.
 
-h) Wake Lock (android.permission.WAKE_LOCK)
-   - Objectif: S'assurer que les notifications sont delivrees meme lorsque l'appareil est en mode veille.
-   - Utilisation des Donnees: Aucune donnee n'est collectee via cette autorisation.
+3.2 Données générées lorsque vous utilisez GreenGo
 
-i) Authentification Biometrique (android.permission.USE_BIOMETRIC)
-   - Objectif: Fournir une connexion securisee par empreinte digitale ou reconnaissance faciale.
-   - Utilisation des Donnees: Les donnees biometriques sont traitees localement sur votre appareil et ne sont jamais transmises a nos serveurs.
-   - Controle de l'Utilisateur: Vous pouvez choisir d'utiliser l'authentification par mot de passe a la place.
+a) Localisation
+   Si vous l'autorisez, la localisation de votre appareil. Voir la section 7
+   pour savoir exactement ce qui est stocké et ce que les autres voient.
 
-COMMENT GERER LES AUTORISATIONS:
+b) Données relatives à l'appareil et données techniques
+   - Modèle de l'appareil, système d'exploitation et version de l'application,
+     langue et fuseau horaire.
+   - Adresse IP.
+   - Un jeton de notifications push.
+   - Des rapports de plantage.
+   - Un jeton de sécurité qui prouve que la requête provient de la véritable
+     application GreenGo (Firebase App Check).
 
-Utilisateurs Android:
-1. Allez dans Parametres > Applications > GreenGo Chat > Autorisations
-2. Activez ou desactivez les autorisations individuelles
-3. Certaines fonctionnalites peuvent etre limitees lorsque les autorisations sont desactivees
+c) Données d'utilisation
+   - Les fonctionnalités que vous utilisez.
+   - Les personnes, communautés et événements que vous consultez, suivez,
+     aimez ou rejoignez.
+   - Votre historique de pièces et d'abonnements.
+   - Vos progrès d'apprentissage, vos réussites et vos séries.
+   - Le fait que vous soyez en ligne et la date de votre dernière connexion.
 
-Utilisateurs iOS:
-1. Allez dans Reglages > GreenGo Chat
-2. Activez ou desactivez les autorisations individuelles
-3. Certaines fonctionnalites peuvent etre limitees lorsque les autorisations sont desactivees
+d) Données d'analyse
+   - Événements dans l'application et mesures de performance, associés à un
+     identifiant utilisateur pseudonyme.
+   - Dans l'Espace économique européen, au Royaume-Uni et en Suisse, nous ne
+     collectons les données d'analyse et de plantage qu'après votre accord.
+     Voir la section 17.
 
-Nous ne demandons que les autorisations necessaires au fonctionnement de base de l'application ou aux fonctionnalites optionnelles que vous choisissez d'utiliser. Nous n'accdons a aucune donnee au-dela de ce qui est necessaire pour les objectifs declares.
+3.3 Données que nous recevons de tiers
 
-================================================================================
-2.6 DONNEES DE VERIFICATION DE L'AGE
-================================================================================
+a) Autres utilisateurs : signalements vous concernant, évaluations et avis sur
+   vous en tant qu'hôte ou invité, invitations et messages qu'ils vous envoient.
 
-GreenGo est reserve aux adultes de 18 ans et plus. Chaque utilisateur declare sa
-date de naissance lors de la creation d'un compte, et les comptes declarant un
-age inferieur a 18 ans sont refuses.
+b) Apple et Google : confirmation des achats que vous effectuez dans leurs
+   boutiques, et avis de remboursement ou d'annulation.
 
-En outre, nous verifions l'age au moyen d'un document d'identite dans deux
-situations:
+c) Stripe : confirmation des paiements web, des remboursements et des
+   contestations de paiement. Stripe et Mercado Pago : confirmation des
+   paiements de billets effectués sur le compte d'un organisateur (point
+   11.4).
 
-a) Lorsque vous vous connectez en utilisant UNIQUEMENT un numero de telephone.
-   Un numero de telephone n'etablit aucune identite; une date de naissance
-   declaree derriere lui n'est donc etayee par rien.
+d) Fournisseurs de connexion : si nous proposons la connexion avec Google ou
+   Apple et que vous l'utilisez, votre nom et votre adresse e-mail provenant de
+   ce fournisseur.
 
-b) Lorsque vous souhaitez PUBLIER du contenu dans une Communaute. Lire une
-   Communaute et la rejoindre n'exigent jamais de verification; seule la
-   publication l'exige, car le contenu publie atteint d'autres personnes.
+3.4 Données sensibles
 
-CE QUI ARRIVE A VOTRE DOCUMENT
+Certaines données sont « sensibles » (catégorie particulière) au sens de la
+loi. Nous ne les collectons que dans les cas suivants :
 
-Votre document est traite comme suit:
+- Orientation sexuelle : nous ne la collectons PAS. Les versions antérieures
+  de l'application comportaient un champ facultatif et privé pour cette
+  information. Ce champ a été supprimé ; toute valeur enregistrée auparavant
+  n'a jamais été montrée aux autres utilisateurs et est supprimée.
 
-1. Vous televersez la photographie d'un document d'identite vers un emplacement
-   de stockage en ecriture seule. Il ne peut pas etre relu - ni par vous, ni par
-   notre personnel.
-2. Nos systemes lisent automatiquement le document par reconnaissance optique de
-   caracteres, afin d'en extraire la date de naissance.
-3. L'image est ensuite deplacee vers un stockage restreint, accessible
-   uniquement cote serveur, auquel aucun utilisateur ni aucune interface de
-   l'application ne peut acceder. Elle est conservee tant que votre compte
-   existe, afin de pouvoir enqueter sur une fraude (par exemple un document
-   falsifie ou reutilise). Un document que vous remplacez est conserve 30 jours
-   puis efface. A des fins de prevention de la fraude et pour la securite de la
-   communaute, les documents d'identite sont conserves jusqu'a 30 jours apres la
-   suppression du compte, puis definitivement effaces (plus longtemps uniquement
-   si une enquete en cours pour fraude ou escroquerie l'exige).
+- Pièce d'identité et selfie : uniquement si vous choisissez de vous faire
+  vérifier, ou si vous devez le faire dans les cas décrits à la section 8. Nous
+  vous demandons votre consentement explicite au moment du téléversement.
 
-CE QUE NOUS CONSERVONS
+- Contenus que vous partagez : vos messages ou publications peuvent révéler des
+  informations sensibles, par exemple votre religion ou votre santé, si vous
+  choisissez d'en parler. Nous n'analysons pas vos contenus pour en déduire des
+  caractéristiques sensibles.
 
-Uniquement ce qui est necessaire pour etayer la decision:
-
-- La date de naissance lue sur le document
-- Si elle correspondait a la date de naissance que vous avez declaree
-- Une empreinte cryptographique a sens unique (SHA-256) du numero du document.
-  Elle nous permet de detecter l'utilisation d'un meme document pour verifier
-  deux comptes differents. Elle ne peut pas etre inversee pour retrouver le
-  numero.
-- Le resultat, le score de confiance automatique et - si un membre du personnel a
-  examine un cas limite - l'identifiant de ce relecteur
-
-Nous NE stockons PAS dans votre profil: l'image, votre nom tel qu'imprime sur le
-document, le numero du document sous forme lisible, votre nationalite ni la date
-d'expiration du document. L'image elle-meme n'est conservee que dans le stockage
-restreint decrit ci-dessus.
-
-OU LE TRAITEMENT A LIEU
-
-La reconnaissance optique de caracteres est effectuee par Google Cloud Vision,
-agissant comme notre sous-traitant dans le cadre d'un accord de traitement des
-donnees. L'image est transmise a ce service pour traitement et n'est pas
-conservee par lui ensuite.
-
-BASE LEGALE
-
-- Consentement (LGPD Art. 7, I / RGPD Art. 6(1)(a)) pour le traitement du
-  document
-- Respect d'une obligation legale (LGPD Art. 7, II / RGPD Art. 6(1)(c)) et
-  interets legitimes (LGPD Art. 7, IX / RGPD Art. 6(1)(f)) a empecher les mineurs
-  d'acceder a du contenu pour adultes ou d'en publier, et a satisfaire aux
-  exigences de verification de l'age des boutiques d'applications par lesquelles
-  GreenGo est distribue
-
-Vous pouvez refuser la verification. Un refus signifie que vous ne pouvez pas
-publier dans les Communautes et, si votre compte utilise uniquement la connexion
-par telephone, que certaines fonctionnalites restent indisponibles. Il n'entraine
-jamais la suppression de votre compte.
-
+Nous ne demandons pas votre origine raciale ou ethnique. Le champ facultatif
+« pays ou culture d'origine » décrit une nationalité ou un héritage culturel.
+Vous décidez de le remplir ou non.
 
 ================================================================================
-3. COMMENT NOUS COLLECTONS LES INFORMATIONS
+4. CE QUE LES AUTRES PERSONNES PEUVENT VOIR
 ================================================================================
 
-3.1 Collecte directe
-- Lorsque vous vous inscrivez pour un compte
-- Lorsque vous completez ou mettez a jour votre profil
-- Lorsque vous communiquez avec d'autres utilisateurs
-- Lorsque vous contactez le service client
-- Lorsque vous participez a des enquetes ou promotions
-- Lorsque vous effectuez des achats ou souscrivez des abonnements
+4.1 Visible par les utilisateurs GreenGo connectés (votre profil public)
 
-3.2 Collecte automatique
-- Via des cookies et technologies de suivi
-- Via les journaux du serveur lorsque vous accedez a nos Services
-- Via les capteurs de l'appareil (GPS, accelerometre)
-- Via des outils d'analyse integres a nos Services
+- Votre pseudonyme ou nom affiché, vos photos publiques, votre profil vidéo et
+  votre présentation vocale.
+- Votre biographie, vos centres d'intérêt, vos langues et les informations
+  facultatives que vous avez choisi d'ajouter.
+- Votre ÂGE en années, et non votre date de naissance.
+- Votre localisation APPROXIMATIVE : votre ville et votre pays, ainsi qu'un
+  point sur la carte situé à environ 1,5 km de votre position réelle. Ce point
+  ne bouge pas tant que vous ne changez pas de zone.
+- Badges : vérifié, niveau d'abonnement, guide local, voyageur, entreprise.
+- Le fait que vous soyez en ligne, sauf si vous le masquez avec le mode
+  fantôme ou incognito.
+- Vos évaluations en tant qu'hôte ou invité, et les avis que d'autres laissent
+  à votre sujet.
 
-3.3 Collecte aupres de tiers
-- De plateformes de medias sociaux que vous connectez
-- De fournisseurs d'authentification
-- De partenaires publicitaires
-- De fournisseurs de services d'analyse
+Les personnes que vous avez bloquées ne peuvent pas voir votre profil.
 
-================================================================================
-4. BASE JURIDIQUE DU TRAITEMENT (LGPD/RGPD)
-================================================================================
+4.2 Jamais montré aux autres utilisateurs
 
-Nous traitons vos donnees personnelles sur les bases juridiques suivantes :
+Votre localisation exacte, votre date de naissance, votre adresse e-mail,
+votre numéro de téléphone, votre pièce d'identité, votre
+selfie de vérification et les photos de votre album privé (sauf si vous
+accordez à quelqu'un l'accès à votre album privé).
 
-4.1 Execution d'un contrat (LGPD Art. 7, V / RGPD Art. 6(1)(b))
-Traitement necessaire pour fournir nos Services, notamment :
-- Creation et gestion de compte
-- Affichage du profil aux autres utilisateurs
-- Facilitation des correspondances et communications
-- Traitement des paiements et abonnements
+4.3 Contenus que vous partagez
 
-4.2 Consentement (LGPD Art. 7, I / RGPD Art. 6(1)(a))
-Lorsque vous avez donne votre consentement explicite pour :
-- Le traitement des donnees personnelles sensibles
-- Les communications marketing
-- Le suivi de localisation
-- La reconnaissance faciale pour verification
-- Le partage de donnees avec des partenaires publicitaires
+- Les messages sont visibles par les personnes présentes dans la conversation,
+  le groupe, la communauté ou la conversation d'événement concernés.
+- Les publications dans une communauté publique sont visibles par toute
+  personne pouvant l'ouvrir.
+- Votre page professionnelle et les expériences que vous publiez sont
+  publiques.
 
-4.3 Interets legitimes (LGPD Art. 7, IX / RGPD Art. 6(1)(f))
-Traitement necessaire a nos interets legitimes, notamment :
-- Amelioration et developpement de nos Services
-- Assurance de la securite de la plateforme et prevention de la fraude
-- Realisation d'analyses et de recherches
-- Application de nos Conditions d'utilisation
-- Personnalisation de l'experience utilisateur
+4.4 Notre personnel
 
-4.4 Obligation legale (LGPD Art. 7, II / RGPD Art. 6(1)(c))
-Traitement necessaire pour respecter nos obligations legales :
-- Reponse aux demandes legitimes des autorites
-- Exigences fiscales et comptables
-- Conservation des donnees imposee par la loi
-- Signalement de contenu ou d'activites illegales
+Un nombre restreint de membres du personnel habilités peut accéder aux données
+de compte lorsque cela est nécessaire, par exemple pour :
+- traiter un signalement ou un recours ;
+- répondre à une demande d'assistance ;
+- examiner une vérification ;
+- respecter une obligation légale.
 
-4.5 Protection des interets vitaux (LGPD Art. 7, VII / RGPD Art. 6(1)(d))
-Traitement necessaire pour proteger les interets vitaux :
-- Situations d'urgence
-- Prevention de dommages imminents aux utilisateurs
-
-4.6 Exercice regulier des droits (LGPD Art. 7, VI)
-Traitement necessaire pour l'exercice regulier des droits dans le cadre de procedures judiciaires, administratives ou arbitrales.
+L'accès aux pièces d'identité est limité aux administrateurs principaux. Chaque
+consultation est journalisée.
 
 ================================================================================
-5. COMMENT NOUS UTILISONS VOS INFORMATIONS
+5. POURQUOI NOUS UTILISONS VOS DONNÉES ET NOS BASES JURIDIQUES
 ================================================================================
 
-5.1 Fourniture et amelioration des Services
-- Creation et gestion de votre compte
-- Affichage de votre profil aux autres utilisateurs
-- Facilitation des correspondances basees sur les preferences et la localisation
-- Activation de la communication entre utilisateurs apparies
-- Traitement des abonnements et paiements
-- Fourniture du service client
+La loi exige une base juridique pour toute utilisation de données
+personnelles. Dans le tableau :
+- « RGPD » couvre l'UE, l'EEE et le Royaume-Uni ;
+- « LGPD » couvre le Brésil.
 
-5.2 Personnalisation
-- Recommandation de correspondances potentielles
-- Personnalisation du contenu et des fonctionnalites
-- Memorisation de vos preferences
-- Adaptation des notifications
+Finalité                             | Données utilisées          | Base juridique
+-------------------------------------|----------------------------|--------------------------------------
+1. Créer et gérer votre compte       | Compte, données appareil   | Contrat (RGPD 6(1)(b) ; LGPD 7 V)
+2. Afficher votre profil et permettre| Profil, localisation       | Contrat (RGPD 6(1)(b) ; LGPD 7 V)
+   la découverte de personnes,       | approximative, âge,        |
+   communautés, événements et        | utilisation                |
+   expériences                       |                            |
+3. Recommander des personnes,        | Profil, interactions,      | Intérêts légitimes à montrer des
+   communautés et événements         | localisation approximative | contenus pertinents (RGPD 6(1)(f) ;
+   susceptibles de vous intéresser   |                            | LGPD 7 IX). Opposition possible (16.2).
+4. Messagerie, groupes, communautés, | Contenus, compte           | Contrat (RGPD 6(1)(b) ; LGPD 7 V)
+   événements, réservations          |                            |
+5. Fonctionnalités d'IA : traduction,| Le texte ou l'audio que    | Contrat, après votre consentement à
+   lecture vocale, réponses          | vous choisissez de traiter | la fonctionnalité d'IA (RGPD
+   suggérées, aide grammaticale,     |                            | 6(1)(a)/(b) ; LGPD 7 I/V). Voir la
+   coach IA, transcription des       |                            | section 9.
+   messages vocaux                   |                            |
+6. Vérification de l'âge au moyen    | Image de la pièce, date de | Consentement explicite (RGPD
+   d'une pièce d'identité            | naissance qui y est lue    | 9(2)(a) ; LGPD 11 I). Voir section 8.
+7. Vérification par selfie           | Selfie, photos de profil   | Consentement explicite (RGPD
+                                     |                            | 9(2)(a) ; LGPD 11 I)
+8. Achats, pièces, abonnements,      | Données d'achat, registre  | Contrat (RGPD 6(1)(b) ; LGPD 7 V)
+   remboursements                    | des pièces                 |
+9.  Tenir les registres fiscaux et   | Données d'achat (minimum)  | Obligation légale (RGPD 6(1)(c) ;
+    comptables                       |                            | LGPD 7 II)
+10. Sécurité : modération,           | Contenus, signalements,    | Obligation légale lorsque la loi
+    signalements, recours, blocage,  | données de compte et       | l'exige (par exemple le règlement
+    prévention de la fraude et des   | d'appareil, données        | européen sur les services
+    abus, contrôle des               | d'achat                    | numériques) ; sinon intérêts
+    remboursements et des            |                            | légitimes à un service sûr et sans
+    rétrofacturations                |                            |
+                                     |                            | fraude (RGPD 6(1)(c)/(f) ;
+                                     |                            | LGPD 7 II/IX)
+11. Signaler aux autorités les       | Contenus, données de       | Obligation légale (RGPD 6(1)(c) ;
+    contenus d'exploitation sexuelle | compte                     | LGPD 7 II) et intérêts vitaux
+    d'enfants                        |                            |
+12. Assistance client, y compris     | Messages d'assistance      | Contrat (RGPD 6(1)(b) ; LGPD 7 V)
+    l'assistant d'assistance IA      |                            |
+13. Messages de service (sécurité,   | E-mail, jeton push         | Contrat (RGPD 6(1)(b) ; LGPD 7 V)
+    achats, modifications des        |                            |
+    politiques)                      |                            |
+14. E-mails et notifications push    | E-mail, jeton push,        | Consentement, que vous pouvez retirer
+    marketing                        | préférences                | à tout moment (RGPD 6(1)(a) ;
+                                     |                            | ePrivacy art. 13 ; LGPD 7 I)
+15. Analyses et rapports de plantage | Données d'utilisation et   | EEE/Royaume-Uni/Suisse : consentement
+                                     | d'appareil                 | (RGPD 6(1)(a) ; ePrivacy 5(3)).
+                                     |                            | Ailleurs : intérêts légitimes à
+                                     |                            | améliorer les Services (RGPD
+                                     |                            | 6(1)(f) ; LGPD 7 IX)
+16. Prouver vos consentements,       | Registres de consentement, | Obligation légale (RGPD 7(1) ;
+    votre acceptation de nos         | confirmations de           | LGPD 8 par. 2) ; intérêts
+    conditions et votre confirmation | l'avertissement            | légitimes à protéger les
+    de l'avertissement relatif aux   |                            | utilisateurs et à prouver que les
+    contenus privés (10.5)           |                            | règles étaient connues (RGPD
+                                     |                            | 6(1)(f) ; LGPD 7 IX)
+17. Actions en justice, demandes des | Selon les besoins          | Intérêts légitimes / exercice de
+    autorités                        |                            | droits (RGPD 6(1)(c)/(f), 9(2)(f) ;
+                                     |                            | LGPD 7 II/VI, 11 II(d))
 
-5.3 Securite et protection
-- Verification des identites des utilisateurs
-- Detection et prevention de la fraude
-- Identification des comptes faux ou malveillants
-- Surveillance des violations des Conditions d'utilisation
-- Protection contre les acces non autorises
-- Enquete sur les signalements et plaintes
+Lorsque nous nous fondons sur des intérêts légitimes, nous avons mis en balance
+notre intérêt et vos droits. Vous pouvez nous demander cette évaluation. Vous
+pouvez vous y opposer à tout moment (16.2).
 
-5.4 Analyses et recherche
-- Comprehension de l'interaction des utilisateurs avec nos Services
-- Mesure de l'efficacite des fonctionnalites
-- Realisation d'analyses statistiques
-- Amelioration des algorithmes et systemes de mise en correspondance
-- Developpement de nouvelles fonctionnalites et services
-
-5.5 Communications
-- Envoi de notifications liees au service
-- Fourniture de mises a jour concernant votre compte
-- Reponse aux demandes et requetes de support
-- Envoi de communications marketing (avec consentement)
-- Notification des changements de politique
-
-5.6 Juridique et conformite
-- Respect des lois et reglementations applicables
-- Reponse aux demandes juridiques et ordonnances judiciaires
-- Application de nos Conditions d'utilisation
-- Protection de nos droits et interets juridiques
-- Resolution des litiges
-
-5.7 Publicite
-- Affichage de publicites pertinentes (avec consentement)
-- Mesure de l'efficacite publicitaire
-- Collaboration avec des partenaires publicitaires
-
-================================================================================
-6. COMMENT NOUS PARTAGEONS VOS INFORMATIONS
-================================================================================
-
-6.1 Avec d'autres utilisateurs
-Vos informations de profil sont visibles par les autres utilisateurs du Service, notamment :
-- Photos et videos de profil
-- Biographie et descriptions personnelles
-- Age et localisation (approximative)
-- Interets et preferences
-- Toute autre information que vous choisissez de partager
-
-Les messages ne sont partages qu'avec les utilisateurs avec lesquels vous communiquez.
-
-6.2 Avec des prestataires de services
-Nous partageons des donnees avec des prestataires de services tiers qui effectuent des services en notre nom :
-
-- Fournisseurs d'hebergement cloud (stockage et traitement des donnees)
-- Prestataires de paiement (traitement des transactions)
-- Fournisseurs d'analyses (analyse de l'utilisation)
-- Plateformes de service client (services de support)
-- Fournisseurs de services de messagerie (communications)
-- Fournisseurs de SMS (verification et notifications)
-- Services de moderation de contenu (securite)
-- Services de verification d'identite (prevention de la fraude)
-- Services de reconnaissance optique de caracteres (verification de l'age) -
-  Google Cloud Vision, qui recoit l'image d'un document d'identite, renvoie le
-  texte qui s'y trouve et ne conserve rien ensuite
-
-Tous les prestataires de services sont contractuellement tenus de proteger vos donnees et de les utiliser uniquement aux fins specifiees.
-
-6.3 Avec des partenaires commerciaux
-- Partenaires publicitaires (avec consentement)
-- Partenaires marketing (avec consentement)
-- Partenaires de recherche (donnees anonymisees uniquement)
-
-6.4 Pour des raisons juridiques
-Nous pouvons divulguer vos informations lorsque la loi l'exige ou lorsque nous croyons de bonne foi que la divulgation est necessaire pour :
-- Respecter des obligations legales ou des procedures judiciaires valides
-- Proteger et defendre nos droits ou notre propriete
-- Prevenir ou enqueter sur d'eventuelles irregularites
-- Proteger la securite personnelle des utilisateurs ou du public
-- Repondre aux demandes des autorites de police
-
-6.5 Transferts commerciaux
-En cas de fusion, acquisition, reorganisation, faillite ou vente d'actifs, vos donnees personnelles peuvent etre transferees a l'entite acquerante. Nous vous informerons de tout changement et de vos options concernant vos donnees.
-
-6.6 Avec votre consentement
-Nous pouvons partager vos informations a d'autres fins avec votre consentement explicite.
-
-6.7 Donnees agregees et anonymisees
-Nous pouvons partager des donnees agregees ou anonymisees qui ne peuvent raisonnablement pas etre utilisees pour vous identifier a des fins de recherche, d'analyse et autres.
+Lorsque nous nous fondons sur le consentement, vous pouvez le retirer à tout
+moment, dans les paramètres de l'application ou en nous écrivant. Le retrait
+n'affecte pas les traitements effectués auparavant. Si vous refusez ou retirez
+votre consentement :
+- à une fonctionnalité d'IA, vous ne pouvez pas utiliser cette fonctionnalité,
+  mais le reste de GreenGo continue de fonctionner ;
+- à la vérification, vous perdez uniquement les fonctionnalités qui exigent une
+  vérification (voir la section 8).
 
 ================================================================================
-7. TRANSFERTS INTERNATIONAUX DE DONNEES
+6. COMPTE, PROFIL ET DÉCOUVERTE
 ================================================================================
 
-7.1 Mecanismes de transfert
+6.1 Nous utilisons votre profil, votre localisation approximative et votre
+activité (par exemple les communautés que vous rejoignez) pour vous suggérer
+des personnes, des communautés, des événements et des expériences. Il s'agit
+d'une personnalisation ordinaire. Elle ne produit pas d'effets juridiques ni
+d'effets similaires significatifs à votre égard.
 
-En tant que service mondial, vos donnees personnelles peuvent etre transferees et traitees dans des pays autres que votre pays de residence, notamment le Bresil, les Etats-Unis et les pays de l'Espace Economique Europeen.
+6.2 Vous contrôlez votre visibilité :
+- mode incognito ;
+- mode fantôme ;
+- « me montrer sur la carte » ;
+- votre apparition ou non sur le globe ;
+- blocage.
 
-Nous assurons des garanties appropriees pour les transferts internationaux par :
-
-a) Clauses Contractuelles Types (CCT)
-   - Clauses contractuelles types approuvees par l'UE pour les transferts depuis l'EEE
-   - Clauses contractuelles types bresiliennes approuvees par l'ANPD
-
-b) Decisions d'adequation
-   - Transferts vers des pays reconnus comme offrant une protection adequate
-
-c) Regles d'entreprise contraignantes
-   - Le cas echeant, regles d'entreprise contraignantes approuvees
-
-d) Derogations specifiques
-   - Execution d'un contrat avec vous
-   - Votre consentement explicite
-   - Etablissement, exercice ou defense de droits en justice
+6.3 Nous n'utilisons pas vos données à des fins publicitaires et nous ne
+créons pas de profils vous concernant pour des tiers.
 
 ================================================================================
-8. CONSERVATION DES DONNEES
+7. LOCALISATION
 ================================================================================
 
-8.1 Periodes de conservation
+7.1 Ce que nous collectons
 
-Nous conservons vos donnees personnelles aussi longtemps que necessaire pour atteindre les objectifs decrits dans cette Politique de Confidentialite, sauf si une periode de conservation plus longue est requise ou autorisee par la loi.
+Si vous autorisez l'accès à la localisation, l'application lit la
+localisation de votre appareil pendant que vous l'utilisez. Nous ne collectons
+jamais la localisation en arrière-plan. Si vous êtes voyageur, vous pouvez
+aussi indiquer le lieu où vous vous rendez. Sur le web, si votre navigateur ne
+fournit aucune localisation, l'application peut estimer votre ville à partir
+de votre adresse IP. Vous pouvez toujours la corriger.
 
-a) Donnees de compte actif
-   - Conservees pendant la duree de votre compte plus 1 an apres la suppression
-   - Permet la recuperation du compte et le respect des obligations legales
+7.2 Ce que nous stockons
 
-b) Donnees de profil et de communication
-   - Donnees de profil : Duree du compte plus 6 mois
-   - Messages : 6 mois apres la fermeture du compte (sauf s'ils sont signales)
-   - Contenu signale : Jusqu'a 3 ans a des fins d'enquete
+Nous stockons votre localisation exacte dans une partie privée de votre compte
+à laquelle seuls vous-même et nos systèmes ont accès. Nous l'utilisons pour
+calculer des distances et trouver des personnes, des événements et des
+expériences près de chez vous.
 
-c) Archives financieres
-   - Archives de paiement : 5 ans (exigence de la legislation fiscale bresilienne)
-   - Historique des transactions : 5 ans
-   - Factures et recus : 5 ans
+7.3 Ce que les autres voient
 
-d) Donnees de securite et de prevention de la fraude
-   - Journaux IP : 6 mois
-   - Donnees d'incidents de securite : 5 ans
-   - Donnees de comptes bannis : Indefiniment (pour empecher une nouvelle inscription)
+Les autres utilisateurs ne voient que votre ville et votre pays, ainsi qu'un
+point approximatif situé à environ 1,5 km de votre position réelle. Les
+distances affichées aux autres sont calculées à partir de données
+approximatives. Votre localisation exacte n'est jamais montrée aux autres
+utilisateurs.
 
-e) Donnees de Verification de l'Age et de l'Identite
-   - Images de documents: dans un stockage restreint, accessible uniquement cote
-     serveur, tant que le compte existe; un document remplace est conserve 30
-     jours. A des fins de prevention de la fraude et pour la securite de la
-     communaute, les documents d'identite sont conserves jusqu'a 30 jours apres
-     la suppression du compte, puis definitivement effaces (sauf si une enquete
-     en cours pour fraude exige leur conservation).
-   - Date de naissance extraite, resultat de la correspondance, empreinte du
-     numero de document et resultat: pendant la duree du compte. Supprimes lors
-     de la suppression du compte.
+7.4 Qui d'autre la reçoit
 
-f) Monnaie Virtuelle
-   - Les pieces GreenGo n'expirent pas et ne sont soumises a aucune duree de
-     conservation. Voir les Conditions Generales.
+Pour convertir des coordonnées en nom de ville, nous utilisons le service de
+géocodage de Google. Les cartes de l'application sont chargées depuis des
+fournisseurs de cartes (OpenStreetMap, CARTO, Google Maps), qui reçoivent
+l'adresse IP de votre appareil et la zone de la carte que vous consultez, mais
+pas vos données de compte.
 
-8.2 Procedure de suppression
+7.5 Vos choix
 
-Vous pouvez supprimer votre compte a tout moment depuis l'application, dans les
-parametres de votre profil. La suppression est definitive et irreversible.
-
-Lorsque vous supprimez votre compte, un processus automatique retire:
-- Votre profil, vos photographies, videos et enregistrements vocaux
-- Vos enregistrements de compte et vos parametres
-- Votre solde de pieces et vos enregistrements d'abonnement
-- Vos adhesions aux Communautes, vos participations aux evenements et vos
-  recherches enregistrees
-- Vos donnees de verification d'age et d'identite, y compris l'empreinte du
-  numero de document et la date de naissance extraite
-- Votre liste d'utilisateurs bloques
-
-Les messages que vous avez deja envoyes a une autre personne sont ANONYMISES
-plutot que supprimes. Votre nom, votre photographie et votre identifiant de
-compte sont remplaces par une mention "utilisateur supprime", de sorte que le
-contenu ne puisse plus vous etre rattache. Nous procedons ainsi parce que
-supprimer purement et simplement ces messages modifierait la trace qu'une autre
-personne conserve d'une conversation a laquelle elle a pris part, ce qui n'est
-pas necessaire pour en retirer vos donnees personnelles.
-
-Nous conservons un enregistrement de suppression comportant la date et le nombre
-d'elements retires. Il ne contient aucune donnee personnelle et existe afin que
-nous puissions repondre ulterieurement a une question sur la realite de la
-suppression.
-
-Par ailleurs:
-- Votre profil cesse immediatement d'etre visible par les autres utilisateurs
-- Les copies de sauvegarde sont purgees sous 90 jours
-- Certains enregistrements sont conserves lorsque la loi l'exige, principalement
-  les documents financiers et fiscaux (voir la Section 8.1(c)) et les donnees
-  soumises a une obligation de conservation
+- Vous pouvez désactiver l'accès à la localisation à tout moment dans les
+  paramètres de votre appareil, ou indiquer votre ville manuellement.
+- Certaines fonctionnalités, comme « près de moi », seront alors moins
+  précises.
 
 ================================================================================
-9. SECURITE DES DONNEES
+8. VÉRIFICATION DE L'ÂGE, PIÈCES D'IDENTITÉ ET SELFIES
 ================================================================================
 
-9.1 Mesures techniques
+8.1 Quand nous le demandons
 
-Nous mettons en oeuvre des mesures de securite conformes aux normes de l'industrie pour proteger vos donnees personnelles :
+GreenGo est destiné aux adultes (18 ans et plus). Chacun indique sa date de
+naissance lors de l'inscription. Nous ne demandons une pièce d'identité que
+dans les cas suivants :
+- avant que vous ne publiiez dans une Communauté ;
+- avant que vous ne publiiez une expérience payante en tant qu'hôte ;
+- lorsque la loi de votre lieu de résidence exige des contrôles d'âge
+  renforcés ;
+- lorsque nous avons une raison précise de penser qu'un compte appartient à
+  une personne de moins de 18 ans.
 
-a) Chiffrement
-   - Chiffrement TLS 1.3 pour les donnees en transit
-   - Chiffrement AES-256 pour les donnees au repos
-   - Chiffrement de bout en bout pour les communications sensibles
+8.2 Ce qu'il advient de votre pièce d'identité
 
-b) Controles d'acces
-   - Controle d'acces base sur les roles (RBAC)
-   - Authentification multifacteur pour l'acces administratif
-   - Revues et audits d'acces reguliers
+a) Avant le téléversement, nous vous expliquons ce qui va se passer et vous
+   demandons votre consentement explicite.
 
-c) Securite de l'infrastructure
-   - Pare-feu et systemes de detection d'intrusion
-   - Protection contre les DDoS
-   - Correctifs et mises a jour de securite reguliers
-   - Infrastructure cloud securisee
+b) L'image est envoyée à Google Cloud Vision, qui lit le texte figurant sur le
+   document afin que nous puissions trouver la date de naissance. Google agit
+   pour notre compte et ne conserve rien ensuite.
 
-================================================================================
-10. VOS DROITS EN VERTU DE LA LGPD (BRESIL)
-================================================================================
+c) Si la vérification automatique est concluante, l'image est SUPPRIMÉE dès
+   que la décision est prise.
 
-En vertu de la Loi Generale sur la Protection des Donnees (LGPD), vous disposez des droits suivants :
+d) Si la vérification automatique n'est pas concluante, un membre formé de
+   notre personnel peut examiner l'image. Dans ce cas, l'image est conservée
+   7 jours au maximum, puis SUPPRIMÉE, quel que soit le résultat.
 
-10.1 Droit de confirmation et d'acces (Art. 18, I et II)
-Vous avez le droit d'obtenir la confirmation de l'existence d'un traitement et l'acces a vos donnees personnelles.
+e) Après la suppression, nous ne conservons que :
+   - le fait que votre âge a été vérifié ou non (oui ou non) ;
+   - la méthode ;
+   - la date de la vérification ;
+   - votre année de naissance.
 
-10.2 Droit de rectification (Art. 18, III)
-Vous avez le droit de demander la rectification de donnees personnelles incompletes, inexactes ou obsoletes.
+   Nous ne conservons ni l'image, ni votre nom tel qu'imprimé sur le document,
+   ni le numéro du document, ni votre nationalité, ni la date d'expiration du
+   document.
 
-10.3 Droit a l'anonymisation, au blocage ou a la suppression (Art. 18, IV)
-Vous avez le droit de demander l'anonymisation, le blocage ou la suppression de donnees personnelles inutiles, excessives ou non conformes.
+8.3 Vérification par selfie
 
-10.4 Droit a la portabilite (Art. 18, V)
-Vous avez le droit de demander la portabilite de vos donnees personnelles vers un autre fournisseur de services.
+Vous pouvez faire vérifier votre profil en prenant un selfie. Un membre de
+notre personnel le compare à vos photos de profil. Nous supprimons le selfie
+après l'examen et ne conservons que le résultat (vérifié ou non). Nous ne
+créons à partir de votre selfie aucun gabarit facial ni aucun autre
+identifiant biométrique, et nous n'utilisons pas la reconnaissance faciale pour
+vous identifier.
 
-10.5 Droit a la suppression (Art. 18, VI)
-Vous avez le droit de demander la suppression des donnees personnelles traitees avec votre consentement.
+Sur votre appareil, avant que vous ne téléversiez une photo, l'application
+vérifie qu'un visage est visible et contrôle l'absence de nudité. Cette
+vérification s'effectue entièrement sur votre téléphone, à l'aide de Google ML
+Kit. Rien n'est envoyé à nous ou à Google à cette fin, et aucune donnée faciale
+n'est stockée.
 
-10.6 Droit a l'information sur le partage (Art. 18, VII)
-Vous avez le droit d'obtenir des informations sur les entites publiques et privees avec lesquelles nous partageons vos donnees.
+8.4 Vérification des entreprises
 
-10.7 Droit a l'information sur le refus de consentement (Art. 18, VIII)
-Vous avez le droit d'etre informe de la possibilite de refuser le consentement et des consequences d'un tel refus.
+Pour vérifier un compte professionnel, nous pouvons demander les informations
+d'immatriculation de l'entreprise et une pièce d'identité de la personne qui la
+dirige. La pièce d'identité du propriétaire suit les mêmes règles qu'au point
+8.2. Nous conservons les informations d'immatriculation de l'entreprise tant
+que la page professionnelle existe et pendant 6 mois ensuite, car le règlement
+européen sur les services numériques nous impose de pouvoir identifier les
+professionnels qui proposent des services aux consommateurs.
 
-10.8 Droit de revocation du consentement (Art. 18, IX)
-Vous avez le droit de revoquer votre consentement a tout moment par une manifestation expresse.
+8.5 Si vous refusez
 
-10.9 Droit de petition aupres de l'ANPD (Art. 18, Paragraphe 1)
-Vous avez le droit de deposer une plainte aupres de l'Autorite Nationale de Protection des Donnees (ANPD).
+Vous pouvez refuser ou retirer votre consentement à la vérification. Vous ne
+pouvez alors pas utiliser les fonctionnalités énumérées au point 8.1 qui
+l'exigent. Votre compte n'est pas supprimé.
 
-10.10 Droit d'opposition (Art. 18, Paragraphe 2)
-Vous avez le droit de vous opposer au traitement non conforme a la LGPD.
+8.6 Avis aux résidents de l'Illinois, du Texas et des autres États américains
+dotés de lois sur la biométrie
 
-10.11 Droit de revision des decisions automatisees (Art. 20)
-Vous avez le droit de demander la revision des decisions prises uniquement sur la base d'un traitement automatise affectant vos interets.
+Nous ne collectons pas d'« identifiants biométriques » ni d'« informations
+biométriques », c'est-à-dire des relevés de la géométrie du visage, à partir de
+votre pièce d'identité ou de votre selfie :
+- le document est uniquement lu pour son texte ;
+- le selfie est comparé visuellement par une personne.
 
-Delai de reponse : Nous repondrons a vos demandes dans un delai de 15 jours conformement a la LGPD.
+Si nous introduisons un jour une comparaison faciale automatisée, nous allons
+d'abord :
+- vous indiquer par écrit ce que nous collectons, pourquoi et pendant combien
+  de temps nous le conservons ;
+- obtenir votre autorisation écrite (consentement) ;
+- publier un calendrier de conservation. Selon ce calendrier, les données
+  biométriques sont détruites lorsque la finalité est atteinte, ou dans les
+  3 ans suivant votre dernière interaction avec nous, selon la première de ces
+  échéances.
 
-================================================================================
-11. VOS DROITS EN VERTU DU RGPD (ESPACE ECONOMIQUE EUROPEEN)
-================================================================================
-
-Si vous etes situe dans l'Espace Economique Europeen (EEE), au Royaume-Uni ou en Suisse, vous disposez des droits suivants en vertu du RGPD :
-
-11.1 Droit d'acces (Art. 15)
-Vous avez le droit d'obtenir la confirmation que nous traitons vos donnees personnelles et l'acces a ces donnees.
-
-11.2 Droit de rectification (Art. 16)
-Vous avez le droit d'obtenir la rectification des donnees personnelles inexactes et le completement des donnees incompletes.
-
-11.3 Droit a l'effacement ("Droit a l'oubli") (Art. 17)
-Vous avez le droit de demander l'effacement de vos donnees personnelles dans certaines circonstances.
-
-11.4 Droit a la limitation du traitement (Art. 18)
-Vous avez le droit d'obtenir la limitation du traitement dans certaines circonstances.
-
-11.5 Droit a la portabilite des donnees (Art. 20)
-Vous avez le droit de recevoir vos donnees personnelles dans un format structure, couramment utilise et lisible par machine.
-
-11.6 Droit d'opposition (Art. 21)
-Vous avez le droit de vous opposer au traitement fonde sur des interets legitimes ou a des fins de marketing direct.
-
-11.7 Droit de ne pas faire l'objet de decisions automatisees (Art. 22)
-Vous avez le droit de ne pas faire l'objet d'une decision fondee exclusivement sur un traitement automatise, y compris le profilage, produisant des effets juridiques ou vous affectant de maniere significative de facon similaire.
-
-11.8 Droit de retirer le consentement (Art. 7)
-Lorsque le traitement est fonde sur le consentement, vous avez le droit de retirer votre consentement a tout moment.
-
-11.9 Droit d'introduire une reclamation (Art. 77)
-Vous avez le droit d'introduire une reclamation aupres d'une autorite de controle dans votre Etat membre.
-
-Delai de reponse : Nous repondrons a vos demandes dans un delai de 30 jours (extensible de 60 jours pour les demandes complexes).
+Nous ne vendrons, ne louerons, n'échangerons jamais de données biométriques et
+n'en tirerons jamais profit d'aucune autre manière.
 
 ================================================================================
-12. VOS DROITS EN VERTU DE LA CCPA/CPRA (CALIFORNIE)
+9. FONCTIONNALITÉS D'IA ET TRAITEMENTS AUTOMATISÉS
 ================================================================================
 
-Si vous etes resident de Californie, vous disposez des droits suivants en vertu du California Consumer Privacy Act (CCPA) et du California Privacy Rights Act (CPRA) :
+9.1 Quelles fonctionnalités utilisent l'IA
 
-12.1 Droit de savoir (Cal. Civ. Code Section 1798.100)
-Vous avez le droit de savoir :
-- Categories d'informations personnelles collectees
-- Sources d'informations personnelles
-- Finalites commerciales de la collecte
-- Categories de tiers avec lesquels nous partageons les donnees
-- Elements specifiques d'informations personnelles collectees vous concernant
+Fonctionnalité                   | Fournisseur (pour notre compte) | Ce qui est envoyé
+---------------------------------|---------------------------------|----------------------------
+Traduction des messages,         | Google Cloud Translation        | Le texte à traduire
+publications et contenus publics |                                 |
+Lecture vocale (synthèse vocale) | Google Cloud Text-to-Speech     | Le texte à lire à voix haute
+Réponses suggérées, aide         | Google Gemini (API payante)     | Le message ou le texte que
+grammaticale, conseils culturels,|                                 | vous sélectionnez, et les
+décomposition des mots, coach IA |                                 | langues
+Transcription des messages       | Google Cloud Speech-to-Text     | Le message vocal que vous
+vocaux                           |                                 | demandez de transcrire
+Assistant d'assistance           | Anthropic Claude                | Vos messages à l'assistance
+Modération des images et des     | Google Cloud Vision et Natural  | Images téléversées ; texte
+textes                           | Language                        | contrôlé pour la sécurité
 
-12.2 Droit de suppression (Cal. Civ. Code Section 1798.105)
-Vous avez le droit de demander la suppression de vos informations personnelles, sous reserve de certaines exceptions.
+9.2 Fonctionnement
 
-12.3 Droit de correction (Cal. Civ. Code Section 1798.106)
-Vous avez le droit de demander la correction d'informations personnelles inexactes.
+- Toutes les requêtes d'IA partent de nos serveurs vers le fournisseur. Votre
+  application ne communique pas directement avec le fournisseur d'IA.
+- Les fournisseurs agissent en tant que nos sous-traitants. Nous les utilisons
+  dans le cadre de leurs conditions professionnelles payantes, en vertu
+  desquelles ils n'utilisent pas vos données pour entraîner leurs modèles.
+- Avant votre première utilisation de la traduction des messages d'autres
+  personnes, de la lecture vocale, des réponses suggérées ou du coach IA, nous
+  vous indiquons quel fournisseur est utilisé et ce qui est envoyé, et nous
+  vous demandons votre consentement. Vous pouvez modifier ce choix dans les
+  Paramètres.
+- Les contenus créés ou modifiés par l'IA sont signalés, par exemple
+  « Traduit ». Les résultats de l'IA peuvent contenir des erreurs. Ne vous y
+  fiez pas pour des décisions importantes.
+- Notre chat d'assistance répond d'abord au moyen d'un assistant IA,
+  clairement identifié comme une IA. Vous pouvez demander à parler à un humain
+  à tout moment.
+- Lorsque vous traduisez un message d'une autre personne, son texte est envoyé
+  au fournisseur de traduction. Cette personne a accepté cette possibilité en
+  acceptant la présente politique.
 
-12.4 Droit de refuser la vente/le partage (Cal. Civ. Code Section 1798.120)
-Vous avez le droit de refuser la vente ou le partage de vos informations personnelles pour la publicite comportementale inter-contextes.
+9.3 Décisions automatisées
 
-12.5 Droit de limiter l'utilisation des informations personnelles sensibles (Cal. Civ. Code Section 1798.121)
-Vous avez le droit de limiter l'utilisation et la divulgation d'informations personnelles sensibles.
+Nous utilisons des outils automatisés pour contribuer à la sécurité de
+GreenGo :
+- détection de nudité ou de violence dans les images ;
+- repérage du spam et des arnaques ;
+- vérification que la date de naissance figurant sur un document correspond à
+  celle que vous avez indiquée ;
+- application de règles, par exemple des limites aux dons de pièces.
 
-12.6 Droit a la non-discrimination (Cal. Civ. Code Section 1798.125)
-Vous avez le droit de ne pas recevoir de traitement discriminatoire pour avoir exerce vos droits en matiere de confidentialite.
-
-================================================================================
-13-22. [SECTIONS SUPPLEMENTAIRES]
-================================================================================
-
-Les sections restantes (13-22) suivent la meme structure que la version anglaise, couvrant :
-- Droits dans d'autres juridictions
-- Confidentialite des enfants
-- Decisions automatisees et profilage
-- Cookies et technologies de suivi
-- Liens et services tiers
-- Modifications de cette politique de confidentialite
-- Comment exercer vos droits
-- Reclamations et resolution des litiges
-- Loi applicable et juridiction
-- Nous contacter
-
-================================================================================
-NOUS CONTACTER
-================================================================================
-
-Si vous avez des questions, des preoccupations ou des demandes concernant cette Politique de Confidentialite ou nos pratiques en matiere de donnees, veuillez nous contacter :
-
-Responsable du Traitement :
-Universo Kardasha Ltda.
-Sao Paulo, SP, Bresil
-
-Delegue a la Protection des Donnees :
-Email : privacy@greengochat.com
-
-Support General :
-Email : support@greengochat.com
-Telephone : +55 11 911142911
-
-Representant dans l'UE :
-Email : eu-representative@greengochat.com
-
-Pour les demandes relatives aux droits de confidentialite :
-Email : privacy@greengochat.com
-Web : https://greengochat.com/privacy-request
-
-Nous nous engageons a repondre a vos questions et a resoudre toute preoccupation concernant votre vie privee.
+- La plupart des résultats automatisés sont examinés par une personne avant
+  toute mesure grave prise à l'encontre de votre compte.
+- Lorsqu'une décision automatisée vous affecte, nous vous en informons, nous
+  vous en donnons les raisons et nous vous permettons de former un recours
+  auprès d'un humain (point 10.4).
+- Vous pouvez toujours demander un réexamen humain d'une décision prise
+  exclusivement par des moyens automatisés (RGPD art. 22 ; LGPD art. 20).
 
 ================================================================================
+10. MESSAGES, SÉCURITÉ ET MODÉRATION
+================================================================================
 
-Copyright 2026 Universo Kardasha Ltda. Tous droits reserves.
+10.1 Sécurité des messages
 
-Cette Politique de Confidentialite est fournie en plusieurs langues pour votre commodite. En cas de divergence entre les traductions, la version en portugais (Bresil) prevaudra pour les utilisateurs au Bresil, et la version en anglais prevaudra pour les utilisateurs dans d'autres juridictions.
+- Les messages sont chiffrés pendant leur transit entre votre appareil et nos
+  serveurs, ainsi que pendant leur stockage.
+- Ils ne sont PAS chiffrés de bout en bout. Cela signifie que nos systèmes
+  peuvent techniquement accéder au contenu des messages. Nous n'utilisons cet
+  accès que pour :
+  - remettre et stocker vos messages ;
+  - les traduire ou les lire à voix haute lorsque vous ou votre interlocuteur
+    le demandez ;
+  - transcrire les messages vocaux sur demande ;
+  - les sauvegarder lorsque vous le demandez ;
+  - examiner un contenu qui a été signalé ou que nos outils de sécurité
+    automatisés ont repéré ;
+  - respecter une obligation légale.
+
+10.2 Signalements
+
+- Lorsque vous signalez une personne ou un contenu, nous créons un dossier
+  dans notre file de modération. Le dossier comprend votre signalement et une
+  copie du contenu signalé.
+- Les signalements relatifs à la sécurité des enfants sont traités en
+  priorité.
+- Nous vous informons lorsque nous avons examiné votre signalement.
+
+10.3 Exploitation sexuelle des enfants
+
+- Nous appliquons une tolérance zéro à l'égard des contenus d'exploitation et
+  d'abus sexuels sur enfants (CSAM).
+- Nous utilisons des outils pour détecter les CSAM connus.
+- Nous signalons les CSAM apparents au National Center for Missing & Exploited
+  Children (NCMEC) américain et aux autorités compétentes, comme la loi
+  l'exige. Nous conservons les données correspondantes pendant la durée que la
+  loi impose pour l'enquête (au moins un an en droit américain, 18 U.S.C.
+  2258A).
+
+10.4 Exposé des motifs et recours
+
+- Si nous supprimons votre contenu ou restreignons votre compte, nous vous
+  indiquons ce que nous avons fait, pourquoi, quelle règle a été enfreinte et
+  si des moyens automatisés ont été utilisés.
+- Vous pouvez former un recours dans l'application dans un délai de 6 mois.
+  Une personne qui n'a pas participé à la décision initiale examine le
+  recours.
+- Plus de détails figurent dans nos Conditions générales.
+
+10.5 Photos privées et médias de discussion : avertissement et registre
+
+- Il est interdit de copier ou de partager les photos privées, le contenu des
+  albums privés, les médias de discussion ou les données personnelles d'autres
+  utilisateurs sans leur consentement (Conditions générales, section 16.9).
+- La première fois que vous ouvrez un tel contenu, l'application affiche un
+  avertissement que vous devez confirmer (« J'ai compris »). Nous enregistrons
+  l'identifiant de votre compte, la date et l'heure, ainsi que la version des
+  Conditions que vous avez confirmée. Nous n'utilisons ce registre que pour
+  prouver que vous avez été informé, par exemple dans un dossier de
+  modération, un recours ou une demande de la police ou d'un tribunal.
+- La base juridique est notre intérêt légitime, et celui des personnes dont
+  vous voyez le contenu, à prévenir et à prouver les utilisations abusives
+  (RGPD 6(1)(f) ; LGPD 7 IX). Nous conservons le registre comme indiqué à la
+  section 14.
 
 ================================================================================
-FIN DE LA POLITIQUE DE CONFIDENTIALITE
+11. PAIEMENTS, PIÈCES ET ABONNEMENTS
+================================================================================
+
+11.1 Dans les applications
+
+- Les achats sont effectués via l'App Store d'Apple ou Google Play.
+- Ces derniers traitent votre paiement, et leurs politiques de
+  confidentialité s'y appliquent.
+- Nous recevons une confirmation de l'achat (numéro de commande ou de
+  transaction, produit, date) puis, le cas échéant, les avis de remboursement
+  ou d'annulation.
+
+11.2 Sur le web
+
+- Les achats sont effectués via Stripe. Vous saisissez vos informations de
+  paiement sur la page sécurisée propre à Stripe : cartes et, pour les
+  paiements en réais brésiliens, Pix.
+- Nous recevons votre numéro de client Stripe, le montant, la devise, votre
+  pays et le statut du paiement. Nous ne recevons jamais votre numéro de carte
+  complet.
+- Nous conservons une trace de votre consentement à la fourniture immédiate du
+  contenu numérique, et de votre reconnaissance du fait que vous perdez ainsi
+  votre droit de rétractation (voir les Conditions).
+
+11.3 Remboursements et fraude
+
+Si un achat est remboursé ou fait l'objet d'une rétrofacturation, nous
+retirons les pièces ou l'abonnement qu'il a payés. Votre solde de pièces peut
+alors devenir négatif. Nous conservons une trace des remboursements et des
+rétrofacturations afin de prévenir la fraude.
+
+11.4 Billets pour les événements et expériences payants
+
+- Les événements payants et les expériences payantes sont vendus par leur
+  organisateur ou leur hôte, et non par GreenGo. GreenGo ne prélève aucune
+  commission sur les billets et ne détient jamais l'argent des billets.
+- Vous payez directement l'organisateur, soit via son propre compte Stripe ou
+  Mercado Pago, soit au moyen d'un moyen de paiement qu'il indique (par
+  exemple Pix ou un virement bancaire). Les données de carte sont saisies sur
+  la page propre de Stripe ou de Mercado Pago ; nous ne recevons jamais votre
+  numéro de carte complet.
+- Nous conservons une trace de chaque commande de billets : l'événement ou
+  l'expérience, le nombre de billets, le prix, le moyen de paiement, le statut
+  du paiement et, lorsque l'organisateur le demande, le justificatif de
+  paiement que vous téléversez.
+- Le nom et l'adresse e-mail de l'acheteur/de l'invité sont communiqués à l'organisateur de l'événement pour le contrôle d'accès.
+  L'organisateur voit également votre commande de billets et, si vous en avez
+  téléversé un, votre justificatif de paiement. L'organisateur utilise ces
+  données pour vous enregistrer à l'entrée et pour gérer l'événement ou
+  l'expérience, et il en est responsable en tant que responsable du
+  traitement indépendant.
+- La base juridique est l'exécution de votre contrat de billetterie (RGPD
+  6(1)(b) ; LGPD 7 V).
+
+================================================================================
+12. AVEC QUI NOUS PARTAGEONS VOS DONNÉES
+================================================================================
+
+12.1 Nous ne vendons pas vos données personnelles et nous ne les partageons
+pas à des fins de publicité comportementale inter-contextuelle.
+
+12.2 Prestataires de services agissant pour notre compte (sous-traitants)
+
+Ces sociétés ne traitent les données que sur nos instructions, dans le cadre de
+contrats écrits (accords de traitement des données) :
+
+Prestataire                      | Ce qu'ils font pour nous          | Lieu     | Garantie de transfert
+---------------------------------|-----------------------------------|----------|---------------------------
+Google LLC / Google Cloud,       | Hébergement, base de données,     | USA,     | CCT de l'UE, Data Privacy
+Firebase                         | stockage de fichiers, fonctions   | monde    | Framework UE-USA ; clauses
+                                 | serveur, connexion, notifications |          | de l'ANPD
+                                 | push, contrôles de sécurité (App  |          |
+                                 | Check), analyses et rapports de   |          |
+                                 | plantage, journalisation          |          |
+Services d'IA de Google Cloud    | Vision (texte des documents,      | USA      | Comme ci-dessus
+                                 | modération des images), Natural   |          |
+                                 | Language (modération des textes), |          |
+                                 | Speech-to-Text, Text-to-Speech,   |          |
+                                 | Translation, Gemini               |          |
+Google Maps Platform             | Conversion de coordonnées en noms | USA      | Comme ci-dessus
+                                 | de villes ; cartes                |          |
+Stripe                           | Paiements web, abonnements,       | USA,     | CCT de l'UE, Data Privacy
+                                 | remboursements, factures          | Irlande  | Framework UE-USA ; clauses
+                                 |                                   |          | de l'ANPD
+Brevo (Sendinblue SAS)           | Envoi d'e-mails                   | France   | UE (aucun transfert pour
+                                 |                                   |          | les utilisateurs de l'UE) ;
+                                 |                                   |          | clauses de l'ANPD
+Resend, Inc.                     | Envoi d'e-mails de service (par   | USA      | CCT de l'UE ; clauses de
+                                 | exemple liens de suppression de   |          | l'ANPD
+                                 | compte et e-mails de billets)     |          |
+Anthropic PBC                    | Assistant d'assistance IA (Claude)| USA      | CCT de l'UE ; clauses de
+                                 |                                   |          | l'ANPD
+
+(CCT : clauses contractuelles types.)
+
+12.3 Sociétés indépendantes (elles décident de l'utilisation des données)
+
+- Apple et Google, lorsque vous achetez via leurs boutiques.
+- Stripe, pour sa propre prévention de la fraude et ses obligations légales.
+- Les organisateurs et hôtes des événements et expériences pour lesquels vous
+  achetez un billet ou effectuez une réservation : votre nom et votre adresse
+  e-mail, votre commande de billets et tout justificatif de paiement que vous
+  téléversez, afin qu'ils puissent vous admettre (point 11.4). Stripe et
+  Mercado Pago traitent les paiements de billets pour l'organisateur selon
+  leurs propres conditions.
+- Les partenaires que vous choisissez d'ouvrir depuis GreenGo, par exemple
+  Viator, Ticketmaster ou Tiqets pour les événements et attractions externes.
+  - Lorsque vous touchez un lien vers leur site, ils collectent des données
+    selon leurs propres politiques.
+  - GreenGo peut percevoir une commission de leur part.
+  - Nous ne leur envoyons pas vos données de compte.
+- Les services de paiement externes que vous ou un hôte indiquez sur un profil
+  ou une expérience (par exemple Pix, PayPal ou Revolut). Le paiement a lieu
+  entre vous et l'autre personne, en dehors de GreenGo.
+- Les services de cartes et d'images chargés directement par l'application :
+  OpenStreetMap, CARTO, Cesium (globe 3D), Unsplash et Pexels (images pour les
+  cartes de vocabulaire). Ils reçoivent l'adresse IP de votre appareil et la
+  requête (par exemple une zone de carte ou un mot), mais pas vos données de
+  compte.
+
+12.4 Autres utilisateurs
+
+Comme décrit à la section 4.
+
+12.5 Autorités et motifs juridiques
+
+Nous communiquons des données lorsque la loi l'exige ou lorsque cela est
+nécessaire :
+- pour répondre à une injonction valable d'un tribunal ou d'une autorité ;
+- pour signaler des infractions commises contre des enfants (point 10.3) ;
+- pour protéger la vie ou la sécurité d'une personne ;
+- pour constater, exercer ou défendre des droits en justice.
+
+Lorsque la loi le permet, nous vous informons de la demande.
+
+12.6 Évolutions de l'entreprise
+
+Si GreenGo fait l'objet d'une fusion, d'une cession ou d'une réorganisation,
+vos données peuvent être transférées au nouveau propriétaire. La présente
+politique continuera de s'y appliquer, et nous vous informerons avant tout
+changement.
+
+12.7 Notre personnel et nos conseillers
+
+Le personnel habilité et les conseillers professionnels (avocats,
+experts-comptables, auditeurs) n'accèdent aux données que dans la mesure
+nécessaire et sont soumis à des obligations de confidentialité.
+
+================================================================================
+13. TRANSFERTS INTERNATIONAUX
+================================================================================
+
+13.1 Nous sommes établis au Brésil. Nos principaux serveurs se trouvent aux
+États-Unis. Certains prestataires sont situés dans l'Union européenne. Vos
+données peuvent donc être traitées en dehors de votre pays.
+
+13.2 Nous encadrons ces transferts de la manière suivante :
+a) Depuis l'UE, l'EEE, le Royaume-Uni ou la Suisse vers des pays ne
+   bénéficiant pas d'une décision d'adéquation : les clauses contractuelles
+   types de la Commission européenne (et l'addendum britannique), ou le Data
+   Privacy Framework UE-USA lorsque le prestataire américain est certifié. Si
+   nécessaire, nous évaluons le transfert et ajoutons des mesures
+   supplémentaires, comme le chiffrement.
+b) Depuis le Brésil : les clauses contractuelles types approuvées par l'ANPD
+   (Résolution CD/ANPD n° 19/2024), ou un autre mécanisme prévu par l'art. 33
+   de la LGPD.
+c) Les transferts vers le Brésil, où nous sommes établis, depuis l'UE, le
+   Royaume-Uni et la Suisse sont couverts par une décision d'adéquation
+   concernant le Brésil lorsqu'il en existe une, et à défaut par les mêmes
+   clauses contractuelles types.
+
+13.3 Vous pouvez nous demander une copie des garanties (section 16).
+
+================================================================================
+14. COMBIEN DE TEMPS NOUS CONSERVONS VOS DONNÉES
+================================================================================
+
+Nous ne conservons les données que le temps nécessaire. Ensuite, nous les
+supprimons ou les anonymisons de sorte qu'elles ne permettent plus de vous
+identifier.
+
+Données                                | Durée
+---------------------------------------|----------------------------------------
+Compte et profil                       | Jusqu'à la suppression de votre compte
+Localisation exacte                    | Écrasée à chaque mise à jour ;
+                                       | supprimée avec le compte
+Messages et médias                     | Jusqu'à leur suppression par vous ou
+                                       | par la conversation, ou la suppression
+                                       | de votre compte (voir la section 15)
+Image de la pièce d'identité           | Supprimée dès la décision prise, ou au
+                                       | bout de 7 jours au maximum si une
+                                       | personne doit l'examiner
+Résultat de la vérification de l'âge   | Jusqu'à la suppression de votre compte
+(oui/non, méthode, date, année de      |
+naissance)                             |
+Selfie de vérification                 | Supprimé après l'examen ; le résultat
+                                       | est conservé jusqu'à la suppression
+                                       | du compte
+Registres d'achats et de paiements     | 5 ans après l'achat, sous forme
+                                       | pseudonymisée après la suppression du
+                                       | compte (droit fiscal et comptable)
+Commandes de billets et justificatifs  | 5 ans après l'événement (droit de la
+de paiement                            | consommation et droit fiscal) ; les
+                                       | justificatifs ne sont visibles que par
+                                       | vous et l'organisateur
+Signalements, dossiers de modération,  | 2 ans après la clôture du dossier
+recours                                |
+Signalements et preuves relatifs à la  | Au moins 1 an, ou plus lorsque la loi
+sécurité des enfants                   | ou une autorité l'exige
+Registres de consentement et           | Pendant toute l'existence de votre
+d'acceptation, y compris les           | compte et 5 ans ensuite, pour prouver
+confirmations de l'avertissement       | le consentement et la connaissance des
+relatif aux contenus privés (10.5)     | règles
+Conversations avec l'assistance        | 2 ans après la clôture de la demande,
+                                       | ou jusqu'à la suppression du compte si
+                                       | elle intervient avant
+Journaux de l'assistant d'assistance IA| 90 jours
+Journaux d'envoi des e-mails           | 90 jours
+Notifications dans l'application       | 90 jours
+Données d'analyse                      | 14 mois
+Rapports de plantage                   | 90 jours
+Journaux d'accès (adresse IP, date et  | 6 mois, comme l'exige le Marco Civil
+heure d'accès aux Services)            | da Internet brésilien (art. 15)
+Autres journaux de sécurité serveur    | 30 jours
+Sauvegardes                            | Écrasées sous 90 jours
+Registres des comptes bannis (pour     | 5 ans, conservés sous forme de hachage
+empêcher une réinscription)            | irréversible de l'adresse e-mail
+
+Nous ne pouvons conserver des données plus longtemps que si la loi l'exige, ou
+si cela est nécessaire pour une action en justice ou une enquête en cours (une
+« conservation à des fins juridiques »). Dans ce cas, nous ne les conservons
+qu'à cette fin.
+
+Les pièces n'expirent pas. Elles restent sur votre compte jusqu'à ce que vous
+les utilisiez ou supprimiez le compte.
+
+================================================================================
+15. SUPPRESSION DE VOTRE COMPTE
+================================================================================
+
+15.1 Comment supprimer votre compte
+
+- Dans l'application : Profil > Paramètres > Supprimer le compte. Il vous sera
+  demandé de vous reconnecter pour confirmer.
+- Sur le web : https://greengochat.com/delete-account. Saisissez votre adresse
+  e-mail, et nous vous enverrons un lien de confirmation valable 24 heures.
+  Votre compte est supprimé lorsque vous confirmez. Pour votre sécurité, la
+  page n'indique à personne si un compte existe pour cette adresse e-mail.
+
+15.2 Ce qui se passe
+
+a) Votre profil disparaît immédiatement de GreenGo.
+
+b) Nous supprimons votre compte, votre profil, vos photos, vidéos et
+   enregistrements vocaux, vos paramètres, vos abonnements, vos adhésions aux
+   communautés, groupes et événements, vos résultats de vérification, vos
+   données de localisation privées, vos éléments enregistrés et vos autres
+   données personnelles.
+
+c) Les messages que vous avez envoyés sont supprimés pour tout le monde. Les
+   autres participants à la conversation voient « Message supprimé » à leur
+   place. Les médias que vous avez envoyés sont supprimés.
+
+d) Les contenus qui appartiennent à un espace partagé restent disponibles pour
+   ses membres, mais sans votre identité. Par exemple, une communauté que vous
+   avez créée reste disponible pour ses membres.
+
+e) Les registres d'achats et de paiements sont conservés pendant la durée
+   exigée par le droit fiscal et comptable (voir la section 14). Nous en
+   retirons d'abord votre nom, votre adresse e-mail et votre identifiant de
+   compte, et remplaçons l'identifiant par un code qui ne permet pas de vous
+   identifier sans informations supplémentaires.
+
+f) Nous demandons également à nos prestataires de supprimer vos données :
+   - Stripe supprime votre fiche client ;
+   - vos données d'analyse et de plantage sont supprimées ;
+   - votre fiche de contact e-mail est supprimée.
+
+g) Les sauvegardes sont écrasées sous 90 jours.
+
+h) Nous conservons un bref justificatif de suppression (la date et le nombre
+   d'éléments supprimés) afin de pouvoir prouver que la suppression a eu lieu.
+
+15.3 Les pièces restant sur votre compte et toute durée d'abonnement restante
+sont perdues lorsque vous supprimez votre compte. Supprimer l'application ne
+supprime pas votre compte. Supprimer votre compte n'annule pas un abonnement
+souscrit via Apple ou Google : résiliez-le d'abord dans votre compte de la
+boutique.
+
+================================================================================
+16. VOS DROITS
+================================================================================
+
+16.1 Pour tous
+
+Où que vous viviez, vous pouvez nous demander :
+- de confirmer si nous traitons vos données et de vous en remettre une copie
+  (accès) ;
+- de rectifier des données inexactes ou incomplètes (vous pouvez modifier
+  vous-même la plupart d'entre elles dans l'application) ;
+- d'effacer vos données (voir la section 15 pour la méthode la plus rapide) ;
+- de vous fournir vos données dans un format structuré et lisible par machine
+  (portabilité) ;
+- de limiter, bloquer ou anonymiser les données inutiles ou excessives ;
+- de cesser les traitements fondés sur nos intérêts légitimes (opposition) ;
+- de retirer votre consentement à tout moment ;
+- de vous indiquer avec qui nous partageons vos données ;
+- de réexaminer une décision prise exclusivement par des moyens automatisés.
+
+16.2 Comment vous opposer
+
+- Pour arrêter les recommandations personnalisées : Paramètres >
+  Confidentialité.
+- Pour arrêter le marketing : Paramètres > Notifications, ou le lien « se
+  désabonner » figurant dans tout e-mail marketing.
+- Pour toute autre demande, écrivez à privacy@greengochat.com.
+
+16.3 Brésil (LGPD)
+
+Vous disposez également des droits prévus à l'art. 18 de la LGPD :
+- confirmation du traitement ;
+- accès ;
+- rectification ;
+- anonymisation, blocage ou suppression ;
+- portabilité ;
+- suppression des données traitées sur la base du consentement ;
+- information sur le partage ;
+- information sur les conséquences d'un refus de consentement ;
+- révocation du consentement.
+
+Vous pouvez également saisir l'ANPD (Autoridade Nacional de Protecao de
+Dados).
+
+16.4 Espace économique européen, Royaume-Uni et Suisse (RGPD)
+
+Vous disposez également des droits prévus aux articles 15 à 22 du RGPD. Vous
+pouvez introduire une réclamation auprès de l'autorité de protection des
+données de votre lieu de résidence ou de travail, ou du lieu où vous estimez
+que la loi a été enfreinte.
+
+16.5 Comment présenter une demande
+
+- Dans l'application : Paramètres > Confidentialité (télécharger vos données,
+  supprimer votre compte).
+- Par e-mail : privacy@greengochat.com
+- Par courrier : à l'adresse indiquée au point 1.1, avec la mention
+  « Attn: Encarregado / DPO ».
+- Par l'intermédiaire de notre représentant dans l'UE ou au Royaume-Uni (point
+  1.3).
+
+Nous pouvons vous demander de confirmer votre identité, généralement en
+répondant depuis l'adresse e-mail associée à votre compte. Nous ne vous
+demanderons pas plus d'informations que nécessaire.
+
+16.6 Délais de réponse
+
+- Brésil : une confirmation simplifiée immédiatement ; une réponse complète
+  sous 15 jours.
+- UE, EEE, Royaume-Uni et Suisse : dans un délai d'un mois. Nous pouvons
+  prolonger ce délai de deux mois au maximum pour les demandes complexes, et
+  nous vous en informerons le cas échéant.
+- Californie : sous 45 jours, prolongeables de 45 jours.
+- Ailleurs : sous 30 jours.
+
+Les demandes sont gratuites, sauf si elles sont manifestement infondées ou
+excessives.
+
+16.7 Autorités de contrôle
+
+- Brésil : ANPD, https://www.gov.br/anpd
+- Union européenne : votre autorité nationale ; la liste est disponible à
+  l'adresse https://www.edpb.europa.eu/about-edpb/about-edpb/members_en
+- Royaume-Uni : Information Commissioner's Office, https://ico.org.uk
+- Suisse : PFPDT (FDPIC), https://www.edoeb.admin.ch
+- Californie : California Privacy Protection Agency, https://cppa.ca.gov
+
+================================================================================
+17. COOKIES, ANALYSES ET TECHNOLOGIES SIMILAIRES
+================================================================================
+
+17.1 Strictement nécessaires
+
+Les applications et l'application web stockent de petites quantités de
+données sur votre appareil pour maintenir votre connexion, mémoriser vos
+paramètres, mettre en cache des contenus afin que l'application fonctionne
+rapidement, et protéger le service (App Check). Ces opérations ne nécessitent
+pas de consentement.
+
+17.2 Analyses et rapports de plantage
+
+- Nous utilisons Google Analytics for Firebase, Firebase Crashlytics et
+  Firebase Performance Monitoring pour comprendre comment GreenGo est utilisé
+  et pour corriger les problèmes.
+- Dans l'Espace économique européen, au Royaume-Uni et en Suisse, ces outils
+  restent DÉSACTIVÉS jusqu'à ce que vous donniez votre accord sur l'écran de
+  consentement. Ailleurs, ils sont activés, et vous pouvez les désactiver dans
+  Paramètres > Confidentialité.
+- Nous ne les utilisons pas à des fins publicitaires.
+
+17.3 Site web et application web
+
+- Le site web greengochat.com n'utilise aucun cookie, aucun outil d'analyse ni
+  aucun traceur. Il enregistre uniquement votre choix de langue dans votre
+  navigateur. Les polices et les images sont servies depuis notre propre
+  serveur, de sorte qu'aucun tiers ne reçoit votre adresse IP lorsque vous le
+  visitez.
+- L'application web (greengo-chat.web.app) suit le point 17.2 : les analyses
+  restent désactivées dans l'EEE, au Royaume-Uni et en Suisse jusqu'à votre
+  accord.
+- Notre politique en matière de cookies donne les détails :
+  https://greengochat.com/cookie-policy
+
+17.4 Global Privacy Control et Do Not Track
+
+- Nous ne vendons ni ne partageons de données personnelles ; il n'y a donc
+  rien à refuser.
+- Nous ne répondons pas aux signaux « Do Not Track », qui ne font l'objet
+  d'aucune norme reconnue.
+
+================================================================================
+18. COMMUNICATIONS MARKETING
+================================================================================
+
+18.1 Nous ne vous envoyons des e-mails marketing et des notifications push
+marketing que si vous y avez consenti. Il s'agit par exemple de résumés
+hebdomadaires, d'offres et de messages « vous nous manquez ». Vous pouvez donner
+ou retirer votre accord à tout moment dans Paramètres > Notifications, et chaque
+e-mail marketing contient un lien de désabonnement.
+
+18.2 Nous vous envoyons toujours les messages de service, car ils font partie
+du service. Exemples : alertes de sécurité, reçus d'achat, réponses à vos
+demandes et avis de modification de nos conditions.
+
+================================================================================
+19. AUTORISATIONS DE L'APPAREIL
+================================================================================
+
+L'application ne demande ces autorisations que lorsque vous utilisez la
+fonctionnalité qui en a besoin. Vous pouvez les modifier à tout moment dans les
+paramètres de votre appareil.
+
+- Localisation (pendant l'utilisation de l'application) : personnes,
+  événements et expériences à proximité ; localisation approximative sur votre
+  profil (section 7).
+- Appareil photo : photos de profil, photos et vidéos dans les conversations et
+  les publications, codes QR pour l'enregistrement aux événements,
+  vérification par pièce d'identité et par selfie.
+- Microphone : messages vocaux, votre présentation vocale, exercices de
+  prononciation.
+- Photos : choix des images à téléverser. L'application utilise le sélecteur
+  de photos du système et ne voit que les photos que vous sélectionnez.
+- Notifications : messages, rappels d'événements et autres alertes.
+- Internet et état du réseau : nécessaires au fonctionnement de l'application.
+
+================================================================================
+20. SÉCURITÉ ET VIOLATIONS DE DONNÉES
+================================================================================
+
+20.1 Nos mesures de sécurité
+
+- Chiffrement en transit (TLS) et au repos.
+- Règles d'accès limitant chaque enregistrement aux personnes qui en ont
+  besoin.
+- Contrôles côté serveur pour les achats et les pièces.
+- App Check contre les clients falsifiés.
+- Accès administrateur restreint et journalisé.
+- Clés et secrets conservés dans un gestionnaire de secrets.
+- Revues de sécurité régulières.
+
+Aucun système n'est parfaitement sûr. Veuillez utiliser un mot de passe robuste
+et unique et maintenir votre appareil à jour.
+
+20.2 En cas de violation
+
+Si une violation de données personnelles est susceptible de présenter un
+risque pour vos droits, nous :
+a) notifierons l'autorité de protection des données compétente :
+   - dans l'UE/l'EEE/au Royaume-Uni, dans les 72 heures après en avoir pris
+     connaissance (RGPD art. 33) ;
+   - au Brésil, l'ANPD dans un délai de 3 jours ouvrables (Résolution de
+     l'ANPD CD/ANPD n° 15/2024) ;
+b) vous informerons dans les meilleurs délais lorsque la violation est
+   susceptible d'engendrer un risque élevé pour vous (RGPD art. 34) ou un
+   risque ou dommage pertinent (LGPD art. 48). Nous vous expliquerons ce qui
+   s'est passé, les conséquences probables, ce que nous faisons et ce que vous
+   pouvez faire pour vous protéger ;
+c) consignerons chaque violation dans notre registre interne des violations,
+   même lorsqu'aucune notification n'est requise.
+
+================================================================================
+21. MINEURS
+================================================================================
+
+21.1 GreenGo est réservé aux personnes âgées de 18 ans ou plus.
+
+21.2 Lors de votre inscription, nous vous demandons votre date de naissance
+sans suggérer de réponse. Si la date indique que vous avez moins de 18 ans,
+vous ne pouvez pas créer de compte, et l'appareil est empêché de réessayer avec
+une autre date pendant un certain temps.
+
+21.3 Nous ne collectons pas sciemment de données concernant des personnes de
+moins de 18 ans. Si nous apprenons qu'un compte appartient à un mineur, nous le
+fermons et supprimons ses données. Nous ne conservons que ce qui est
+nécessaire pour empêcher le retour du compte, ou ce que la loi nous impose de
+conserver.
+
+21.4 Si vous pensez qu'un mineur utilise GreenGo, signalez le compte dans
+l'application ou écrivez à safety@greengochat.com.
+
+================================================================================
+22. AVIS POUR LA CALIFORNIE ET LES AUTRES ÉTATS AMÉRICAINS
+================================================================================
+
+Cette section s'applique aux résidents de la Californie et des autres États
+américains dotés de lois générales sur la protection de la vie privée, dans la
+mesure où ces lois nous sont applicables.
+
+22.1 Catégories d'informations personnelles collectées au cours des 12 derniers
+mois
+
+Catégorie (Cal. Civ. Code 1798.140)    | Collectée | Communiquée à des    | Vendue ou
+                                       |           | fins professionnelles| partagée
+                                       |           | à                    |
+---------------------------------------|-----------|----------------------|----------
+Identifiants (nom, e-mail, identifiant | Oui       | Prestataires de      | Non
+de compte, adresse IP)                 |           | services             |
+Registres clients (1798.80)            | Oui       | Prestataires de      | Non
+                                       |           | services             |
+Caractéristiques protégées (âge,       | Oui       | Prestataires de      | Non
+genre)                                 |           | services             |
+Informations commerciales (achats)     | Oui       | Prestataires de      | Non
+                                       |           | services, boutiques  |
+                                       |           | d'applications       |
+Informations biométriques              | Non       | -                    | Non
+Activité Internet ou réseau            | Oui       | Prestataires de      | Non
+                                       |           | services             |
+Géolocalisation                        | Oui       | Prestataires de      | Non
+                                       |           | services             |
+Informations audio et visuelles        | Oui       | Prestataires de      | Non
+(photos, messages vocaux)              |           | services             |
+Informations professionnelles ou       | Oui, si   | Prestataires de      | Non
+relatives à la formation (champs de    | vous les  | services             |
+profil facultatifs)                    | ajoutez   |                      |
+Déductions (centres d'intérêt,         | Oui       | Non                  | Non
+recommandations)                       |           |                      |
+Informations personnelles sensibles    | Oui       | Prestataires de      | Non
+(géolocalisation précise, identifiants |           | services             |
+de connexion au compte, pièce          |           |                      |
+d'identité officielle lors de la       |           |                      |
+vérification)                          |           |                      |
+
+22.2 Sources
+
+Vous, votre appareil, les autres utilisateurs, les boutiques d'applications et
+les prestataires de paiement (section 3).
+
+22.3 Finalités
+
+Comme indiqué à la section 5.
+
+22.4 Nous ne vendons ni ne partageons vos informations personnelles
+
+Nous ne vendons pas d'informations personnelles. Nous ne les partageons pas à
+des fins de publicité comportementale inter-contextuelle. Nous n'avons pas
+effectivement connaissance d'avoir vendu ou partagé des informations de
+consommateurs de moins de 16 ans, et nous n'autorisons aucune personne de moins
+de 18 ans à utiliser GreenGo.
+
+22.5 Informations personnelles sensibles
+
+Nous n'utilisons les informations personnelles sensibles qu'aux fins
+autorisées par le Cal. Code Regs. tit. 11, section 7027(m), par exemple :
+- la fourniture du service ;
+- la sécurité ;
+- la prévention de la fraude ;
+- la vérification de l'âge.
+
+Nous ne les utilisons pas pour déduire des caractéristiques vous concernant. Le
+droit de limiter leur utilisation ne s'applique donc pas.
+
+22.6 Vos droits
+
+- Vous avez le droit de savoir, d'accéder, de rectifier et de supprimer vos
+  informations, ainsi que de refuser leur vente et leur partage (nous ne
+  pratiquons ni l'un ni l'autre).
+- Nous ne vous ferons subir aucune discrimination pour avoir exercé ces
+  droits.
+- Un mandataire habilité peut présenter une demande en votre nom, avec votre
+  autorisation signée. Nous pouvons vérifier votre identité directement.
+
+22.7 Comment présenter une demande
+
+Écrivez à privacy@greengochat.com, utilisez les paramètres de confidentialité
+de l'application ou supprimez votre compte (section 15).
+
+22.8 Incitations financières
+
+Notre programme de parrainage et nos crédits de bienvenue offrent des pièces ou
+une durée d'abonnement. Ils ne dépendent pas de la communication de plus de
+données personnelles que le service n'en requiert. La participation est
+facultative.
+
+22.9 Autres États
+
+Les résidents de Virginie, du Colorado, du Connecticut, de l'Utah, du Texas, de
+l'Oregon et d'autres États dotés de lois similaires disposent de droits
+comparables. Si nous rejetons votre demande, vous pouvez former un recours en
+répondant à notre réponse. Si le recours est rejeté, vous pouvez contacter
+l'Attorney General de votre État.
+
+================================================================================
+23. AUTRES PAYS
+================================================================================
+
+Si vous vivez dans un pays non mentionné ci-dessus, vous disposez des droits
+que vous confère votre législation locale. C'est le cas par exemple au Canada,
+en Australie, en Argentine, au Mexique, au Japon et en Corée du Sud. Écrivez à
+privacy@greengochat.com et nous vous aiderons à les exercer.
+
+================================================================================
+24. MODIFICATIONS DE LA PRÉSENTE POLITIQUE
+================================================================================
+
+24.1 Chaque version de la présente politique comporte un numéro de version et
+une date d'entrée en vigueur. Les versions antérieures sont disponibles sur
+demande et dans notre dépôt public.
+
+24.2 En cas de modification importante, nous vous en informerons au moins
+30 jours avant son entrée en vigueur, dans l'application et par e-mail. Sont
+par exemple des modifications importantes une nouvelle finalité, une nouvelle
+catégorie de données ou un nouveau type de destinataire. Lorsque la loi exige
+votre consentement à la modification, nous vous le demanderons, et la
+modification ne vous sera applicable qu'une fois ce consentement donné.
+
+24.3 Les modifications mineures, par exemple une correction ou une formulation
+plus claire, prennent effet dès leur publication.
+
+================================================================================
+25. LANGUE
+================================================================================
+
+La présente politique est disponible en anglais, en portugais du Brésil, en
+portugais européen, en espagnol, en français, en allemand et en italien. Toutes
+les versions ont la même signification. Si une traduction n'est pas claire, la
+version dans la langue officielle de votre pays de résidence prévaut lorsque la
+loi l'exige. À défaut, la version anglaise prévaut.
+
+================================================================================
+26. CONTACT
+================================================================================
+
+Universo Kardasha Ltda. - CNPJ 40.486.663/0001-82
+Av. Dona Helena Pereira de Moraes, 290, Sao Paulo - SP, 05707-400, Brésil
+
+Délégué à la protection des données / Encarregado : GreenGo Privacy Team,
+privacy@greengochat.com
+Sécurité et protection des enfants : safety@greengochat.com
+Assistance générale : support@greengochat.com
+Représentants dans l'UE et au Royaume-Uni : en cours de désignation (voir le
+point 1.3)
+
+================================================================================
+HISTORIQUE DES VERSIONS
+================================================================================
+
+5.1.0 - 11 octobre 2026
+- L'orientation sexuelle n'est plus collectée (sections 2, 3.1, 3.4, 4.2, 5,
+  22).
+- Nouveau point 10.5 : l'avertissement relatif aux contenus privés et le
+  registre de votre confirmation (également sections 5 et 14).
+
+5.0.0 - 9 octobre 2026
+Refonte complète sur la base de la cartographie des données de GreenGo :
+- un responsable du traitement unique ;
+- un contact Encarregado (délégué à la protection des données) ;
+- des représentants dans l'UE et au Royaume-Uni ;
+- un tableau des finalités et des bases juridiques ;
+- une liste complète des sous-traitants et des garanties de transfert ;
+- le nouveau modèle de suppression des pièces d'identité ;
+- la localisation publique approximative ;
+- la section sur l'IA ;
+- un tableau des durées de conservation ;
+- le lien de suppression sur le site web ;
+- les billets pour les événements et expériences payants, et le partage avec
+  les organisateurs ;
+- la conservation des journaux d'accès au titre du Marco Civil ;
+- le consentement aux analyses ;
+- l'accord préalable au marketing ;
+- un avis exact pour les États-Unis ;
+- la notification des violations.
+
+Supprimé :
+- l'affirmation relative au chiffrement de bout en bout ;
+- les SDK que nous n'utilisons pas ;
+- les partenaires publicitaires ;
+- les formulations décrivant GreenGo comme un service de recherche de
+  partenaires.
+
+4.0.0 - 15 septembre 2026
+Vérification de l'âge, suppression en cascade, suppression de l'expiration des
+pièces.
+
+1.0.0 - 26 janvier 2026
+Première version.
+
+================================================================================
+FIN DE LA POLITIQUE DE CONFIDENTIALITÉ
 ================================================================================

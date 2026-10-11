@@ -1,355 +1,1135 @@
-TERMINI E CONDIZIONI DI GREENGO CHAT
+TERMINI E CONDIZIONI DI GREENGO
 
-Ultimo Aggiornamento: 15 settembre 2026
-Data di Entrata in Vigore: 15 settembre 2026
-
-================================================================================
-INTRODUZIONE
-================================================================================
-
-Benvenuto su GreenGo Chat ("GreenGo", "noi" o "nostro"). I presenti Termini e Condizioni ("Termini", "Accordo") costituiscono un accordo legalmente vincolante tra l'utente ("Utente", "tu" o "tuo") e Universo Kardasha Ltda., una societa costituita ai sensi delle leggi della Repubblica Federativa del Brasile, registrata con CNPJ 40.486.663/0001-82, con sede legale a San Paolo, Brasile ("Societa").
-
-I presenti Termini regolano l'accesso e l'utilizzo della nostra applicazione mobile, del sito web e dei servizi correlati (collettivamente, i "Servizi"). Accedendo o utilizzando i nostri Servizi, riconosci di aver letto, compreso e accetti di essere vincolato da questi Termini.
-
-SE NON ACCETTI QUESTI TERMINI, NON ACCEDERE O UTILIZZARE I NOSTRI SERVIZI.
-
-I presenti Termini sono regolati e interpretati in conformita con la legislazione brasiliana, inclusi, ma non limitati a:
-- Codice Civile Brasiliano (Legge n. 10.406/2002)
-- Codice di Difesa del Consumatore (CDC, Legge n. 8.078/1990)
-- Legge Generale sulla Protezione dei Dati (LGPD, Legge n. 13.709/2018)
-- Marco Civil di Internet (Legge n. 12.965/2014)
-- Decreto sul Commercio Elettronico (Decreto n. 7.962/2013)
-
-Informazioni di Contatto:
-- Societa: Universo Kardasha Ltda.
-- CNPJ: 40.486.663/0001-82
-- Email: support@greengochat.com
-- Telefono: +55 11 911142911
-- Indirizzo: San Paolo, SP, Brasile
+Versione: 5.1.0
+Data di entrata in vigore: 11 ottobre 2026
+Versione precedente: 5.0.0 (9 ottobre 2026)
 
 ================================================================================
-INDICE
+1. INFORMAZIONI SU QUESTI TERMINI
 ================================================================================
 
-1. Definizioni
-2. Requisiti di Idoneita
-3. Registrazione dell'Account
-4. Descrizione del Servizio
-5. Termini e Condizioni di Prevendita
-6. Piani di Abbonamento e Prezzi
-7. Termini di Pagamento
-8. Diritto di Recesso e Rimborsi
-9. Condotta dell'Utente e Linee Guida della Community
-10. Attivita Vietate
-11. Contenuti Generati dagli Utenti
-12. Diritti di Proprieta Intellettuale
-13. Sicurezza e Segnalazioni
-14. Match e Comunicazione
-15. Funzionalita Premium
-16. Servizi di Terze Parti
-17. Esclusioni e Limitazioni di Responsabilita
-18. Indennizzo
-19. Sospensione e Chiusura dell'Account
-20. Risoluzione delle Controversie
-21. Legge Applicabile e Giurisdizione
-22. Modifiche ai Termini
-23. Clausola di Salvaguardia
-24. Accordo Integrale
-25. Informazioni di Contatto
+1.1 I presenti Termini e Condizioni (i "Termini") costituiscono un contratto
+tra te e:
+
+  Universo Kardasha Ltda.
+  CNPJ 40.486.663/0001-82
+  Av. Dona Helena Pereira de Moraes, 290, Sao Paulo - SP, 05707-400, Brazil
+  E-mail: support@greengochat.com - Telefono: +55 11 911142911
+  ("GreenGo", "noi", "ci")
+
+1.2 Si applicano a tutto ciò che offriamo con il nome GreenGo: le app per
+Android e iOS, la web app e il sito web greengochat.com (i "Servizi").
+
+1.3 Fanno parte del nostro accordo anche i seguenti documenti:
+a) l'Informativa sulla privacy, che spiega come utilizziamo i dati personali;
+b) il Contratto di Licenza con l'Utente Finale (EULA), che disciplina la
+   licenza d'uso del software dell'app;
+c) le regole mostrate nell'app per funzioni specifiche, ad esempio l'Accordo
+   per gli Host relativo alle esperienze e le regole di ciascuna community.
+
+Se uno di questi documenti è in contrasto con i presenti Termini, prevalgono i
+presenti Termini, a meno che l'altro documento non ti offra una tutela
+maggiore.
+
+1.4 Accetti i presenti Termini spuntando la casella quando crei il tuo account.
+Registriamo la versione che hai accettato e quando l'hai accettata.
+
+1.5 Nulla nei presenti Termini ti priva dei diritti che ti spettano in base
+alle leggi inderogabili a tutela dei consumatori del paese in cui vivi.
 
 ================================================================================
-1. DEFINIZIONI
+2. TERMINI CHE UTILIZZIAMO
 ================================================================================
 
-Ai fini dei presenti Termini:
-
-"Account" indica l'account personale creato da un Utente per accedere e utilizzare i Servizi.
-
-"Contenuto" indica qualsiasi testo, immagine, foto, video, audio o altro materiale caricato, pubblicato o trasmesso attraverso i Servizi.
-
-"Membro Fondatore" indica un Utente che si e abbonato durante il periodo di prevendita e ha diritto a benefici esclusivi.
-
-"Match" indica un'espressione reciproca di interesse tra due Utenti.
-
-"Membro" indica un Utente che ha un abbonamento a pagamento attivo.
-
-"Funzionalita Premium" indica le funzionalita aggiuntive disponibili per i Membri paganti.
-
-"Profilo" indica la pagina personale dell'Utente contenente le sue informazioni, foto e preferenze.
-
-"Servizi" indica l'applicazione mobile GreenGo Chat, il sito web e tutti i servizi correlati.
-
-"Abbonamento" indica un piano a pagamento che concede l'accesso alle Funzionalita Premium.
-
-"Utente" indica qualsiasi individuo che accede o utilizza i Servizi.
-
-"Contenuto Generato dall'Utente" indica qualsiasi Contenuto creato, caricato o condiviso dagli Utenti.
+- "Account": il tuo account GreenGo personale.
+- "Contenuti": tutto ciò che viene pubblicato o inviato su GreenGo, come testi,
+  foto, video, messaggi vocali, recensioni e link.
+- "Monete": la valuta virtuale di GreenGo utilizzabile nell'app (sezione 8).
+- "Abbonamento": un piano a pagamento che sblocca funzioni aggiuntive
+  (sezione 7).
+- "Community": uno spazio di gruppo con propri membri, regole e moderatori.
+- "Evento": un incontro creato su GreenGo da un utente o da un'attività
+  commerciale.
+- "Esperienza": un'attività che un utente (l'"Host") offre ad altri utenti (gli
+  "Ospiti"), gratuita o a pagamento, e prenotata tramite GreenGo (sezione 12).
+- "Account business": un account utilizzato da un'azienda o da un
+  professionista per presentare la propria attività (sezione 13).
+- "Professionista": chiunque agisca per fini che rientrano nella propria
+  attività commerciale, imprenditoriale, artigianale o professionale.
+- "Consumatore": chiunque non agisca in qualità di professionista.
 
 ================================================================================
-2. REQUISITI DI IDONEITA
+3. CHI PUÒ USARE GREENGO
 ================================================================================
 
-2.1 Eta Minima
-Devi avere almeno 18 anni per utilizzare i nostri Servizi. Creando un account, dichiari e garantisci di avere almeno 18 anni. Non consentiamo consapevolmente a individui di eta inferiore ai 18 anni di utilizzare i nostri Servizi.
+3.1 Devi avere almeno 18 anni. Al momento della registrazione, ti chiediamo la
+data di nascita. Se hai meno di 18 anni, non puoi creare un account.
 
-2.2 Capacita Giuridica
-Devi avere piena capacita giuridica per stipulare il presente Accordo. Se agisci per conto di un'entita, dichiari di avere l'autorita per vincolare tale entita.
+3.2 Devi avere la capacità giuridica di concludere un contratto, e non devi
+essere escluso dall'uso dei Servizi in base alla legge del tuo paese o a causa
+di sanzioni.
 
-2.3 Restrizioni Geografiche
-I nostri Servizi sono disponibili a livello globale. Tuttavia, alcune funzionalita potrebbero essere limitate in giurisdizioni specifiche a causa di leggi e regolamenti locali.
+3.3 Non puoi usare GreenGo se in passato abbiamo chiuso il tuo account per una
+violazione grave dei presenti Termini, a meno che non ti consentiamo di
+tornare.
 
-2.4 Restrizioni dell'Account
-Non puoi creare un account se:
-- Sei stato precedentemente bandito dai nostri Servizi
-- Sei un molestatore sessuale registrato
-- Sei stato condannato per un reato violento
-- Ti e vietato per legge l'uso di servizi di incontri
-- Sei attualmente sposato (a meno che non sia legalmente separato) e cerchi relazioni extraconiugali
-
-2.5 Verifica dell'Eta
-Dichiari la tua data di nascita al momento della creazione dell'account.
-Inoltre, verifichiamo l'eta tramite un documento di identita in due situazioni:
-
-a) Se accedi utilizzando solo un numero di telefono, poiche un numero di
-   telefono non stabilisce alcuna identita.
-b) Se desideri pubblicare contenuti in una Community. Leggere e iscriversi a una
-   Community non richiede mai la verifica; solo la pubblicazione la richiede.
-
-La verifica avviene automaticamente: il documento viene letto per ricavarne la
-data di nascita e l'immagine viene eliminata nella stessa operazione. Non la
-conserviamo mai. La Sezione 2.6 della nostra Informativa sulla Privacy descrive
-il processo per intero.
-
-Puoi rifiutare la verifica. Il rifiuto comporta l'impossibilita di pubblicare
-nelle Community e, se il tuo account utilizza solo l'accesso telefonico, che
-alcune funzionalita restino non disponibili. Non comporta l'eliminazione del tuo
-account.
-
-Fornire un documento che non ti appartiene, o gia utilizzato per verificare un
-altro account, costituisce una violazione dei presenti Termini e puo comportare
-la sospensione.
-
-2.6 Altre Verifiche
-Ci riserviamo il diritto di verificare la tua identita in qualsiasi momento. Il
-mancato rispetto di una richiesta di verifica puo comportare la sospensione o la
-chiusura dell'account.
+3.4 Una persona, un account personale. Un'attività commerciale può inoltre
+avere un account business per ciascuna attività.
 
 ================================================================================
-3. REGISTRAZIONE DELL'ACCOUNT
+4. IL TUO ACCOUNT
 ================================================================================
 
-3.1 Creazione dell'Account
-Per utilizzare alcune funzionalita dei nostri Servizi, devi creare un account fornendo:
-- Indirizzo email valido
-- Numero di telefono
-- Nome legale completo
-- Data di nascita
-- Genere
-- Foto del profilo (si applicano requisiti minimi)
-- Informazioni sulla posizione
+4.1 Forniscici informazioni accurate e mantienile aggiornate. La tua data di
+nascita deve essere la tua vera data di nascita.
 
-3.2 Accuratezza dell'Account
-Accetti di fornire informazioni accurate, attuali e complete durante la registrazione e di aggiornare tali informazioni secondo necessita. Fornire informazioni false costituisce motivo di chiusura immediata dell'account.
+4.2 Mantieni segreta la tua password. Informaci immediatamente all'indirizzo
+support@greengochat.com se ritieni che qualcun altro stia usando il tuo
+account. Sei responsabile di ciò che accade nel tuo account, a meno che non sia
+stato utilizzato senza tua colpa.
 
-3.3 Sicurezza dell'Account
-Sei responsabile del mantenimento della riservatezza delle credenziali del tuo account. Accetti di:
-- Creare una password forte e unica
-- Non condividere le tue credenziali di accesso con nessuno
-- Notificarci immediatamente di qualsiasi accesso non autorizzato
-- Disconnetterti dai dispositivi condivisi
+4.3 Il tuo account è personale. Non puoi venderlo, prestarlo o trasferirlo.
 
-3.4 Un Account per Persona
-Ogni Utente puo mantenere solo un account. La creazione di account multipli e vietata e puo comportare la chiusura di tutti gli account.
-
-3.5 Proprieta dell'Account
-Il tuo account e personale e non trasferibile. Non puoi vendere, scambiare o trasferire il tuo account a un'altra persona.
+4.4 Verifica
+a) Alcune funzioni richiedono che tu verifichi la tua età con un documento
+   d'identità:
+   - pubblicare in una Community;
+   - pubblicare un'esperienza a pagamento;
+   - altri casi in cui lo richiede la legge del luogo in cui vivi.
+b) Alcuni badge richiedono che tu verifichi il tuo profilo con un selfie.
+c) Cancelliamo le immagini dei documenti d'identità non appena il controllo è
+   terminato, come spiegato nella sezione 8 dell'Informativa sulla privacy.
+d) Usare un documento che non è tuo, o che è già stato utilizzato per un altro
+   account, costituisce una violazione dei presenti Termini.
 
 ================================================================================
-4. DESCRIZIONE DEL SERVIZIO
+5. CHE COS'È GREENGO
 ================================================================================
 
-4.1 Scopo della Piattaforma
-GreenGo Chat e una piattaforma di incontri e scoperta sociale progettata per aiutare gli utenti a incontrare nuove persone e creare connessioni significative. Forniamo:
-- Creazione e personalizzazione del profilo
-- Scoperta basata sulla posizione
-- Algoritmi di matching
-- Messaggistica tra utenti abbinati
-- Funzionalita premium per un'esperienza migliorata
+5.1 GreenGo aiuta gli adulti a scoprire altre culture e a entrare in contatto
+con persone superando le barriere linguistiche. Con GreenGo puoi:
+a) creare un profilo e scoprire persone, luoghi e culture vicino a te o in
+   tutto il mondo;
+b) chattare individualmente o in gruppo, con traduzione e lettura vocale
+   facoltative;
+c) unirti alle Community e gestirle, con post, consigli, annunci ed eventi
+   della community;
+d) creare, trovare e partecipare a Eventi, compresi gli eventi provenienti da
+   siti partner;
+e) offrire e prenotare Esperienze organizzate da altri utenti;
+f) presentare un'attività commerciale con un Account business;
+g) imparare le lingue con lezioni, giochi, strumenti per il vocabolario e un
+   coach IA;
+h) utilizzare Monete e Abbonamenti per sbloccare funzioni facoltative;
+i) invitare amici tramite il programma di referral.
 
-4.2 Nessuna Garanzia di Risultati
-Non garantiamo che troverai match, appuntamenti, relazioni o qualsiasi risultato specifico. Il successo della tua esperienza dipende da molti fattori al di fuori del nostro controllo.
+5.2 GreenGo è un servizio di scoperta sociale e culturale. NON è un servizio per
+trovare partner romantici o sessuali, e non deve essere utilizzato per cercare
+incontri sessuali, né per offrire o acquistare servizi sessuali.
 
-4.3 Disponibilita del Servizio
-Ci impegniamo a mantenere la disponibilita continua del servizio, ma non garantiamo un accesso ininterrotto. I Servizi potrebbero essere temporaneamente non disponibili a causa di:
-- Manutenzione programmata
-- Problemi tecnici
-- Eventi di forza maggiore
-- Aggiornamenti e miglioramenti
+5.3 Non possiamo garantire che incontrerai qualcuno, che farai amicizia o che
+raggiungerai un risultato particolare.
 
-================================================================================
-5. TERMINI E CONDIZIONI DI PREVENDITA
-================================================================================
+5.4 Modifiche ai Servizi
+- Miglioriamo continuamente GreenGo. Possiamo aggiungere, modificare o
+  rimuovere funzioni.
+- Se una modifica riduce in modo significativo una funzione a pagamento per cui
+  stai attualmente pagando, te lo comunicheremo con almeno 30 giorni di
+  anticipo. Potrai quindi annullare e ricevere un rimborso per la parte non
+  utilizzata.
+- Possiamo apportare modifiche urgenti senza preavviso quando sono necessarie
+  per motivi di sicurezza, per motivi legali o per fermare abusi.
 
-5.1 Stato di Prevendita
-GreenGo Chat e attualmente in fase di sviluppo. Gli abbonamenti acquistati durante il periodo di prevendita ("Abbonamenti di Prevendita") sono soggetti ai seguenti termini speciali:
-
-5.2 Calendario di Lancio
-- Data di Lancio Prevista: 30 marzo 2026
-- Data di Lancio Garantita: 30 aprile 2026 (massimo)
-
-Se l'applicazione non viene lanciata entro la Data di Lancio Garantita, avrai diritto a un rimborso completo del tuo Abbonamento di Prevendita.
-
-5.3 Benefici della Prevendita
-Gli abbonati alla Prevendita ("Membri Fondatori") ricevono:
-- Prezzo esclusivo scontato garantito a vita
-- Badge e riconoscimento di Membro Fondatore
-- Accesso prioritario alle nuove funzionalita
-- Periodo di abbonamento esteso
-- Accesso esclusivo alla community dei Membri Fondatori
-- Accesso anticipato alle funzionalita beta
-
-5.4 Attivazione dell'Abbonamento
-Gli Abbonamenti di Prevendita iniziano alla data del lancio ufficiale dell'app, NON alla data di acquisto. Il periodo del tuo abbonamento iniziera a decorrere dalla data di lancio.
-
-5.5 Politica di Rimborso della Prevendita
-Puoi richiedere un rimborso del 100% del tuo Abbonamento di Prevendita in qualsiasi momento prima del lancio ufficiale dell'app, per qualsiasi motivo. Dopo il lancio dell'app, si applicano le politiche di rimborso standard.
+5.5 Ci impegniamo a mantenere GreenGo disponibile, ma a volte può essere
+interrotta, ad esempio per manutenzione. Cercheremo di dare preavviso delle
+interruzioni programmate.
 
 ================================================================================
-6. PIANI DI ABBONAMENTO E PREZZI
+6. FUNZIONI GRATUITE E A PAGAMENTO
 ================================================================================
 
-6.1 Livello Gratuito
-L'accesso base ai Servizi e disponibile gratuitamente con funzionalita limitate:
-- Creazione del profilo
-- Swipe giornalieri limitati
-- Visualizzazione dei profili
-- Matching base
+6.1 Puoi usare GreenGo gratuitamente. Alcune funzioni richiedono un Abbonamento
+o delle Monete. L'app mostra sempre il costo di una funzione prima che tu paghi.
 
-6.2 Piani di Abbonamento Premium
+6.2 Possiamo anche darti Monete o periodi di Abbonamento gratuitamente, ad
+esempio:
+- come regalo di benvenuto;
+- tramite l'assegnazione mensile di Monete del tuo Abbonamento;
+- per i traguardi raggiunti;
+- come scusa per un problema;
+- tramite il programma di referral;
+- come promozione.
 
-a) Prezzi di Prevendita (Offerta Limitata):
-   - Piano Annuale: $39 USD/anno (64% di sconto su $109)
-   - Piano Semestrale: $29 USD/6 mesi (51% di sconto su $59)
-
-b) Prezzi Standard (Dopo il Lancio):
-   - Piano Annuale: $109 USD/anno
-   - Piano Semestrale: $59 USD/6 mesi
-   - Piano Mensile: $14,99 USD/mese
-
-6.3 Le Funzionalita Premium Includono:
-- Swipe illimitati
-- Vedere chi ti ha messo mi piace
-- Filtri avanzati
-- Conferme di lettura
-- Visibilita prioritaria
-- Super like
-- Annulla ultimo swipe
-- Passaporto (cambia posizione)
-- Esperienza senza pubblicita
-- Boost del profilo
+Le assegnazioni gratuite non hanno valore monetario e non possono essere
+rimborsate. Le accreditiamo direttamente sul tuo account. Un'assegnazione non
+riduce mai un Abbonamento che già possiedi.
 
 ================================================================================
-7. TERMINI DI PAGAMENTO
+7. ABBONAMENTI
 ================================================================================
 
-7.1 Metodi di Pagamento
-Accettiamo i seguenti metodi di pagamento:
-- Carte di credito (Visa, Mastercard, American Express)
-- Carte di debito
-- PayPal
-- Apple Pay (iOS)
-- Google Pay (Android)
-- PIX (Brasile)
-- Boleto Bancario (Brasile)
+7.1 Piani
+- Abbonamento Base: annuale.
+- Silver, Gold e Platinum: mensili o annuali.
+- Le funzioni, il prezzo, la valuta e il periodo di rinnovo di ciascun piano
+  sono mostrati nell'app prima dell'acquisto.
 
-7.2 Elaborazione dei Pagamenti
-I pagamenti sono elaborati da processori di pagamento di terze parti. Effettuando un pagamento, accetti i termini di servizio del processore di pagamento.
+7.2 Rinnovo automatico
+- Gli Abbonamenti si rinnovano automaticamente alla fine di ogni periodo, al
+  prezzo che ti è stato mostrato, finché non li annulli.
+- Nelle app, lo store ti addebita l'importo nelle 24 ore precedenti la fine del
+  periodo, a meno che tu non annulli almeno 24 ore prima.
+- Sul web, Stripe ti addebita l'importo alla data di rinnovo indicata nella tua
+  ricevuta.
 
-7.3 Rinnovo Automatico
-Gli abbonamenti si rinnovano automaticamente alla fine di ogni periodo di fatturazione a meno che:
-- Tu non annulli prima della data di rinnovo
-- Noi non chiudiamo il tuo account
-- Il tuo metodo di pagamento non fallisca
+7.3 Come annullare
+a) Acquistato nell'app iOS: nelle impostazioni del tuo ID Apple > Abbonamenti.
+b) Acquistato nell'app Android: in Google Play > Pagamenti e abbonamenti >
+   Abbonamenti.
+c) Acquistato sul web: in GreenGo > Impostazioni > Abbonamento > Gestisci
+   abbonamento, che apre il portale di fatturazione sicuro di Stripe, oppure
+   con il link "Gestisci abbonamento" presente in ogni e-mail di ricevuta. Non
+   è necessario indicare un motivo.
 
-================================================================================
-8. DIRITTO DI RECESSO E RIMBORSI
-================================================================================
+Quando annulli, il tuo Abbonamento resta attivo fino alla fine del periodo che
+hai pagato, e non viene rinnovato. Disinstallare l'app o eliminare il tuo
+account non annulla un abbonamento acquistato tramite uno store: annullalo
+nello store.
 
-8.1 Diritto di Recesso (Protezione del Consumatore Brasiliano)
-Ai sensi dell'Articolo 49 del Codice di Difesa del Consumatore (CDC), hai il diritto di recedere dal tuo acquisto entro 7 (sette) giorni dalla data di acquisto o attivazione del servizio, per qualsiasi motivo, e ricevere un rimborso completo.
+7.4 Prova gratuita (web)
+- L'Abbonamento Base può includere una prova gratuita di 7 giorni sul web, una
+  sola volta per account.
+- A meno che tu non annulli prima della fine della prova, la prova si
+  trasforma in un Abbonamento Base a pagamento, e il primo pagamento viene
+  addebitato al termine della prova.
+- Ti inviamo un promemoria via e-mail prima della fine della prova.
 
-8.2 Come Esercitare il Diritto di Recesso
-Per esercitare il tuo diritto di recesso:
-- Contatta support@greengochat.com entro 7 giorni
-- Includi la tua email dell'account e i dettagli dell'ordine
-- Indica che desideri esercitare il tuo diritto di recesso
+7.5 Variazioni di prezzo
+- Ti informeremo di un aumento di prezzo almeno 30 giorni prima che si applichi
+  al tuo Abbonamento.
+- Puoi annullare prima che si applichi.
+- Quando lo store o la legge richiede il tuo consenso a un nuovo prezzo, il
+  nuovo prezzo non si applica finché non lo accetti.
 
-8.3 Elaborazione dei Rimborsi
-I rimborsi saranno elaborati entro 15 (quindici) giorni lavorativi utilizzando lo stesso metodo di pagamento utilizzato per l'acquisto originale.
+7.6 Upgrade
+Se effettui un upgrade sul web, il prezzo mostrato può includere uno sconto per
+il periodo residuo del tuo piano attuale. L'upgrade ha effetto immediato.
 
-================================================================================
-9-25. [SEZIONI AGGIUNTIVE]
-================================================================================
-
-Le sezioni rimanenti seguono la stessa struttura della versione inglese, coprendo:
-- Condotta dell'Utente e Linee Guida della Community
-- Attivita Vietate
-- Contenuti Generati dagli Utenti
-- Diritti di Proprieta Intellettuale
-- Sicurezza e Segnalazioni
-- Match e Comunicazione
-- Funzionalita Premium
-- Servizi di Terze Parti
-- Esclusioni e Limitazioni di Responsabilita
-- Indennizzo
-- Sospensione e Chiusura dell'Account
-- Risoluzione delle Controversie
-- Legge Applicabile e Giurisdizione
-- Modifiche ai Termini
-- Clausola di Salvaguardia
-- Accordo Integrale
-- Informazioni di Contatto
+7.7 Precedenti offerte di prevendita
+Se hai acquistato un piano di prevendita "Founder" in base a una versione
+precedente dei presenti Termini, i vantaggi che ti sono stati promessi in quel
+momento continuano ad applicarsi.
 
 ================================================================================
-COPYRIGHT E VIOLATORI RECIDIVI
+8. MONETE
 ================================================================================
 
-Puoi caricare solo Contenuti di cui sei titolare o che hai licenza di condividere; e vietato caricare materiale che violi il diritto d'autore altrui. La licenza che ci concedi sui tuoi Contenuti copre solo quanto necessario per gestire e promuovere i Servizi. Gestiamo le segnalazioni di copyright ai sensi del Digital Millennium Copyright Act statunitense (17 U.S.C. 512), del Digital Services Act dell'UE e della legge brasiliana 9.610/1998, ovunque si trovino il titolare o l'utente:
-- Le segnalazioni vanno inviate al nostro agente designato: Universo Kardasha Ltda., copyright@greengochat.com, [indirizzo postale da completare a cura del titolare], oppure tramite il modulo nell'app (Profilo > Aiuto e supporto > Copyright) o su https://greengo-chat.web.app/copyright-notice
-- Se accogliamo una segnalazione valida, disattiviamo il materiale, ti spieghiamo il motivo e ti inviamo una copia della segnalazione (con nome ed email del segnalante)
-- Puoi inviare una contronotifica se ritieni che la rimozione sia un errore o un'identificazione errata; la inoltriamo con i tuoi dati di contatto al segnalante e ripristiniamo il materiale entro 10-14 giorni lavorativi, salvo che ci comunichi un'azione giudiziaria. Gli utenti UE possono inoltre presentare ricorso ai sensi del Digital Services Act
-- Ogni segnalazione accolta e un avvertimento sul tuo account. Gli avvertimenti scadono dopo 12 mesi e vengono rimossi se il materiale e ripristinato dopo una contronotifica. Gli account con 3 avvertimenti attivi vengono chiusi (e possibile il ricorso)
-- Segnalazioni o contronotifiche consapevolmente false possono comportare il risarcimento dei danni (17 U.S.C. 512(f))
+8.1 Che cosa sono le Monete
+- Le Monete sono una valuta virtuale utilizzata all'interno di GreenGo per
+  sbloccare funzioni facoltative e per inviare regali ad altri utenti.
+- Le Monete sono un diritto limitato di utilizzare funzioni dei Servizi. Non
+  sono denaro, non sono moneta elettronica e non sono beni di proprietà.
+
+8.2 Le Monete non scadono mai
+Le Monete che acquisti o ricevi restano nel tuo account per tutto il tempo in
+cui il tuo account esiste.
+
+8.3 Nessun valore monetario
+- Le Monete non possono essere convertite in denaro.
+- Non possono essere vendute, trasferite al di fuori della funzione regalo, né
+  utilizzate al di fuori di GreenGo.
+- Salvo quanto previsto dalla legge (sezione 9), le Monete non vengono
+  rimborsate.
+
+8.4 Come vengono usate le Monete
+- Quando usi le Monete, l'app mostra prima il prezzo in Monete.
+- Le Monete vengono prelevate a partire dalle tue Monete più vecchie.
+- Le Monete utilizzate per una funzione vengono consumate e non vengono
+  restituite, a meno che la funzione non abbia funzionato per causa nostra.
+
+8.5 Regalare Monete
+Puoi regalare Monete a un altro utente con la funzione regalo. Le seguenti
+regole servono a prevenire le frodi:
+a) un regalo è compreso tra 10 e 1.000 Monete;
+b) puoi inviare al massimo 10 regali e 5.000 Monete al giorno (UTC);
+c) le Monete che hai ACQUISTATO possono essere regalate solo 72 ore dopo
+   l'acquisto. Le Monete gratuite possono essere regalate subito;
+d) il destinatario può accettare o rifiutare un regalo. Se il destinatario lo
+   rifiuta, o non lo accetta entro 7 giorni, le Monete ti vengono restituite;
+e) è vietato regalare Monete in cambio di denaro, beni o servizi al di fuori di
+   GreenGo.
+
+8.6 Rimborsi, chargeback e frodi
+a) Se un acquisto di Monete viene rimborsato o stornato (chargeback), da Apple,
+   Google, Stripe, dalla tua banca o da noi, rimuoviamo le Monete che
+   quell'acquisto ti ha dato.
+b) Se hai già usato o regalato quelle Monete, il tuo saldo può diventare
+   negativo. Le Monete che ricevi successivamente coprono prima il saldo
+   negativo.
+c) Le Monete ottenute tramite frode, sfruttamento di un bug o violazione dei
+   presenti Termini possono essere rimosse.
+
+8.7 Le Monete e il tuo account
+- Se elimini il tuo account, le Monete rimaste vanno perse. Ti avviseremo prima
+  che tu confermi.
+- Se chiudiamo il tuo account per una violazione grave, vedi la sezione 20.4.
+- Se dovessimo smettere di offrire le Monete, ti daremo un preavviso di almeno
+  90 giorni per utilizzarle, e rimborseremo le Monete ACQUISTATE non utilizzate
+  quando la legge lo richiede.
 
 ================================================================================
-INFORMAZIONI DI CONTATTO
+9. PAGAMENTI, RECESSO E RIMBORSI
 ================================================================================
 
-Per domande, preoccupazioni o feedback su questi Termini, contattaci:
+9.1 Chi paghi
+a) Nell'app iOS paghi Apple. Nell'app Android paghi Google Play. A tali
+   acquisti si applicano le loro condizioni di pagamento e le loro procedure di
+   rimborso.
+b) Sul web (greengochat.com e la web app) paghi noi, tramite Stripe. Puoi
+   pagare con carta e, per i pagamenti in real brasiliani, con Pix.
+c) Non accettiamo PayPal, boleto o altri metodi di pagamento per gli acquisti
+   su GreenGo.
 
-Supporto Generale:
-Email: support@greengochat.com
-Telefono: +55 11 911142911
+9.2 Prezzi e imposte
+- I prezzi sono mostrati nella tua valuta.
+- I prezzi includono l'IVA o imposte sui consumi simili quando la legge
+  richiede che siano incluse.
+- La tua banca può addebitare commissioni per la conversione di valuta.
 
-Richieste Legali:
-Email: legal@greengochat.com
+9.3 Conferma
+Dopo ogni acquisto sul web ti inviamo una conferma via e-mail. Include il
+prezzo, il prodotto e, se pertinente, la tua scelta relativa al recesso.
 
-Problemi di Sicurezza:
-Email: safety@greengochat.com
+9.4 Consumatori dell'UE, dello SEE e del Regno Unito: diritto di recesso
+a) Normalmente puoi recedere da un acquisto online entro 14 giorni senza dover
+   fornire alcuna motivazione.
+b) Monete (contenuto digitale)
+   - Forniamo le Monete immediatamente. Prima che tu paghi, ti chiediamo di
+     spuntare una casella per confermare che:
+     (i) desideri che le Monete ti vengano fornite subito, durante il periodo
+         di recesso; e
+     (ii) sei consapevole di perdere il diritto di recesso una volta che ti
+          sono state fornite.
+   - Una volta fornite le Monete, il diritto di recesso cessa. Confermiamo la
+     tua scelta nell'e-mail di acquisto.
+   - Se forniamo le Monete prima che tu abbia spuntato la casella, conservi il
+     diritto di recesso.
+c) Abbonamenti (servizio digitale)
+   - Puoi recedere entro 14 giorni dall'acquisto.
+   - Se ci hai chiesto di attivare subito il tuo Abbonamento, ti rimborsiamo il
+     prezzo meno un importo proporzionale ai giorni già utilizzati.
+d) Come recedere
+   - Sul web, usa la funzione "Recedi dal contratto" in GreenGo >
+     Impostazioni > Acquisti.
+   - Puoi anche inviarci una dichiarazione esplicita via e-mail all'indirizzo
+     billing@greengochat.com, ad esempio: "Recedo dal mio contratto per
+     [prodotto], acquistato il [data], e-mail dell'account [e-mail]".
+   - Confermiamo la ricezione via e-mail.
+   - Ti rimborsiamo entro 14 giorni, con lo stesso metodo di pagamento.
+e) Se hai acquistato nell'app iOS o Android, il prodotto ti è stato venduto da
+   Apple o da Google. Chiedi a loro il recesso o un rimborso in base alle loro
+   politiche:
+   - Apple: reportaproblem.apple.com;
+   - Google Play: nella cronologia dei tuoi ordini.
 
-Domande sulla Fatturazione:
-Email: billing@greengochat.com
+9.5 Consumatori brasiliani: diritto di recesso (CDC art. 49)
+a) Puoi recedere da un acquisto entro 7 giorni dall'acquisto o dall'inizio del
+   servizio, e ricevere un rimborso completo.
+b) Per gli acquisti sul web, usa la funzione "Recedi dal contratto" o scrivi a
+   billing@greengochat.com. Ti rimborsiamo entro 15 giorni, con lo stesso
+   metodo di pagamento. Un pagamento con Pix viene rimborsato tramite Pix.
+c) Per gli acquisti nelle app, rivolgiti prima ad Apple o a Google. Se non
+   risolvono il problema, contattaci e ti aiuteremo.
 
-Indirizzo Postale:
-Universo Kardasha Ltda.
-CNPJ: 40.486.663/0001-82
-San Paolo, SP, Brasile
+9.6 Rimborsi in altri casi
+Ti rimborsiamo:
+- quando la legge lo richiede;
+- quando una funzione a pagamento non ha funzionato per causa nostra;
+- quando chiudiamo il tuo account senza alcuna colpa da parte tua (sezione
+  20.5).
+
+9.7 Effetti di un rimborso
+Quando noi, Apple, Google, Stripe o la tua banca rimborsiamo un acquisto,
+rimuoviamo ciò che è stato pagato con esso:
+- le Monete, come spiegato al punto 8.6;
+- l'Abbonamento, che termina.
 
 ================================================================================
+10. REFERRAL, BONUS DI BENVENUTO E PROMOZIONI
+================================================================================
 
-Copyright 2026 Universo Kardasha Ltda. Tutti i diritti riservati.
+10.1 Programma di referral
+a) Se un nuovo utente si registra con il tuo codice referral e lo riscatta
+   entro 30 giorni dalla registrazione, il nuovo utente riceve 1 mese di
+   Abbonamento Platinum, e tu ricevi 100 Monete.
+b) Puoi guadagnare al massimo 1.000 Monete di referral per mese di calendario.
+c) Ogni nuovo account può riscattare un solo codice referral. Non puoi
+   invitare te stesso.
+d) È vietato creare account falsi o duplicati, acquistare referral o usare lo
+   spam per condividere il tuo codice. Possiamo trattenere o rimuovere le
+   ricompense ottenute in questo modo.
+e) Quando condividi il tuo codice, informa chiaramente le persone che ricevi
+   una ricompensa.
+f) Possiamo modificare o terminare il programma con un preavviso di 30 giorni.
+   Le ricompense già ottenute restano tue.
 
-I presenti Termini e Condizioni sono forniti in piu lingue per tua comodita. In caso di discrepanza tra le traduzioni, la versione in portoghese (Brasile) prevarra per gli utenti in Brasile e la versione in inglese prevarra per gli utenti in altre giurisdizioni.
+10.2 Bonus di benvenuto e coupon
+- I nuovi account possono ricevere un bonus di benvenuto, come indicato
+  nell'app.
+- I bonus e i coupon sono personali, possono essere utilizzati una sola volta e
+  non hanno valore monetario.
+
+10.3 Promozioni
+Le promozioni specifiche hanno regole proprie, che ti mostriamo prima che tu
+partecipi.
+
+================================================================================
+11. EVENTI
+================================================================================
+
+11.1 Chiunque abbia un account può creare un Evento, a meno che il suo account
+non sia soggetto a limitazioni. L'organizzatore è responsabile di:
+- descrivere l'Evento in modo accurato;
+- garantire che sia lecito e sicuro;
+- annullarlo per tempo se non può avere luogo.
+
+11.2 Eventi gratuiti e a pagamento
+a) La partecipazione a un Evento gratuito è gratuita.
+b) Gli Account business possono vendere biglietti per i propri Eventi. Il
+   contratto relativo al biglietto è tra te e l'organizzatore: l'organizzatore
+   è il venditore, stabilisce il prezzo e la politica di annullamento e
+   rimborso, ed è responsabile dell'Evento, dell'emissione di eventuali fatture
+   o ricevute e del pagamento di eventuali imposte sul biglietto.
+c) GreenGo non applica alcuna commissione sui biglietti e non detiene mai il
+   denaro dei biglietti. Paghi direttamente l'organizzatore, tramite il suo
+   account Stripe o Mercado Pago, oppure con un metodo di pagamento indicato
+   dall'organizzatore (ad esempio Pix o un bonifico bancario). Per i metodi di
+   pagamento indicati, è l'organizzatore a confermare il tuo pagamento; GreenGo
+   non lo verifica.
+d) Il nome e l'indirizzo e-mail dell'acquirente/ospite vengono condivisi con
+   l'organizzatore dell'evento per il controllo degli ingressi (vedi
+   l'Informativa sulla privacy, sezione 11.4).
+e) I tuoi diritti di consumatore nei confronti dell'organizzatore, compreso
+   l'eventuale diritto di recesso, sono quelli previsti dalla legge applicabile
+   alla vendita effettuata dall'organizzatore. Contatta prima l'organizzatore;
+   se non risponde, segnala l'Evento nell'app e interverremo come descritto
+   nella sezione 18.
+
+11.3 Il check-in agli Eventi utilizza un codice QR nell'app. Per gli Eventi a
+pagamento il codice QR viene emesso solo dopo la conferma del tuo pagamento. Il
+check-in registra la tua partecipazione.
+
+11.4 Eventi e attrazioni esterni
+- Alcuni eventi e attrazioni provengono da partner come Viator, Ticketmaster e
+  Tiqets.
+- Quando ne apri uno, esci da GreenGo, e a qualsiasi prenotazione si applicano
+  le condizioni del partner.
+- GreenGo può ricevere una commissione dal partner. Ciò non modifica il prezzo
+  che paghi.
+
+11.5 Incontrare persone di persona
+- Incontra le persone in luoghi pubblici.
+- Di' a una persona di fiducia dove stai andando.
+- Vai via se non ti senti al sicuro.
+- In caso di emergenza, chiama prima i servizi di emergenza locali, poi segnala
+  la persona nell'app.
+
+================================================================================
+12. ESPERIENZE (HOST E OSPITI)
+================================================================================
+
+12.1 Che cosa fa GreenGo
+- GreenGo consente agli Host di pubblicare Esperienze e agli Ospiti di
+  prenotarle.
+- Il contratto relativo a un'Esperienza è tra l'Host e l'Ospite. GreenGo non è
+  l'organizzatore, il venditore o il fornitore di alcuna Esperienza.
+- GreenGo è responsabile del corretto funzionamento degli strumenti di
+  prenotazione e di intervenire sulle segnalazioni come descritto nella sezione
+  18.
+
+12.2 Il pagamento va direttamente all'Host
+- Le Esperienze a pagamento vengono pagate direttamente all'Host: tramite
+  l'account Stripe o Mercado Pago dell'Host, tramite un metodo di pagamento che
+  l'Host indica nell'annuncio, oppure in contanti all'incontro se l'annuncio lo
+  consente.
+- GreenGo non applica commissioni, nessun importo transita attraverso GreenGo e
+  GreenGo non detiene né rimborsa i pagamenti per le Esperienze.
+- Il nome e l'indirizzo e-mail dell'Ospite vengono condivisi con l'Host per il
+  controllo degli ingressi (vedi l'Informativa sulla privacy, sezione 11.4).
+- GreenGo registra la prenotazione, il prezzo concordato e, in caso di
+  annullamento o di controversia, il rimborso che, secondo la politica di
+  annullamento, l'Host deve corrispondere.
+
+12.3 Host
+Prima di pubblicare la tua prima Esperienza devi accettare l'Accordo per gli
+Host. In base a tale accordo devi:
+a) descrivere l'Esperienza in modo veritiero: che cos'è, prezzo, durata, che
+   cosa è incluso e il punto di incontro;
+b) possedere tutte le licenze, i permessi, le assicurazioni o le registrazioni
+   necessari per l'attività, e dichiarare i tuoi redditi come previsto dalla
+   legge;
+c) rimborsare gli Ospiti secondo la politica di annullamento che hai scelto:
+   Flessibile, Moderata o Rigida, come spiegato nell'app. Rimborsa sempre
+   l'intero importo se sei tu ad annullare;
+d) non chiedere mai agli Ospiti di pagare con un metodo non indicato
+   nell'annuncio;
+e) trattare gli Ospiti con rispetto e garantirne la sicurezza.
+
+Per pubblicare un'Esperienza a pagamento devi aver verificato la tua età con un
+documento d'identità. I nuovi Host possono pubblicare una sola Esperienza a
+pagamento finché non hanno ricevuto 3 recensioni.
+
+12.4 Host che sono professionisti
+- Se offri Esperienze nell'ambito della tua attività commerciale,
+  imprenditoriale o professionale, devi dichiararlo al momento della
+  pubblicazione.
+- Devi fornirci il tuo nome, indirizzo, numero di telefono, e-mail, un
+  documento d'identità e, se sei iscritto, il registro delle imprese e il tuo
+  numero di iscrizione.
+- Devi confermare di offrire solo prodotti e servizi conformi alla legge.
+- Mostriamo i tuoi dati di professionista agli Ospiti nell'UE, come richiesto
+  dal Digital Services Act (art. 30).
+- In quanto professionista, devi inoltre fornire agli Ospiti le informazioni e
+  i diritti previsti dalla normativa a tutela dei consumatori, ad esempio i
+  diritti di annullamento.
+
+12.5 Ospiti
+a) Leggi l'annuncio e la politica di annullamento prima di prenotare.
+b) Paga l'Host solo con un metodo indicato nell'annuncio.
+c) Se qualcosa va storto, puoi aprire una controversia nell'app entro il
+   periodo indicato. GreenGo la esaminerà e potrà registrare un rimborso dovuto
+   dall'Host, o adottare misure nei confronti dell'account dell'Host. GreenGo
+   non paga direttamente rimborsi per le Esperienze.
+
+12.6 Recensioni
+- Dopo una prenotazione reale, Host e Ospiti possono recensirsi a vicenda.
+- Le recensioni restano nascoste finché entrambi non ne hanno scritta una, o
+  finché non si chiude il periodo per le recensioni.
+- Le recensioni devono essere oneste e basate sull'esperienza reale. Le
+  recensioni a pagamento o false sono vietate.
+
+================================================================================
+13. ACCOUNT BUSINESS
+================================================================================
+
+13.1 Un Account business consente a un'azienda o a un professionista di
+mostrare una pagina business:
+- dati dell'attività e orari di apertura;
+- eventi ed esperienze;
+- follower.
+
+13.2 Aprendo un Account business confermi che:
+- sei autorizzato ad agire per conto dell'attività;
+- le informazioni che fornisci sono veritiere;
+- rispetti le leggi applicabili alla tua attività, comprese le leggi in materia
+  di tutela dei consumatori, pubblicità e protezione dei dati.
+
+13.3 Sei il titolare del trattamento dei dati personali che raccogli dalle
+persone che ti contattano (ad esempio i contatti commerciali). Utilizzali solo
+nei limiti consentiti dalla legge.
+
+13.4 Possiamo chiederti di verificare l'attività. Il badge di verifica significa
+che abbiamo controllato i documenti forniti. Non costituisce un'approvazione.
+
+13.5 Qualsiasi promozione a pagamento di una pagina business è chiaramente
+indicata nell'app come promossa.
+
+13.6 Per gli Account business che agiscono in qualità di professionisti:
+- si applicano i limiti di responsabilità di cui alla sezione 23.4;
+- le tutele riservate ai consumatori previste dai presenti Termini non si
+  applicano, salvo diversa disposizione di legge.
+
+================================================================================
+14. FUNZIONI DI IA
+================================================================================
+
+14.1 GreenGo offre funzioni basate sull'IA:
+- traduzione;
+- lettura vocale (sintesi vocale);
+- risposte intelligenti e aiuto grammaticale;
+- un coach linguistico IA;
+- trascrizione dei messaggi vocali.
+
+La chat di supporto inizia con un assistente di IA. È indicato come IA, e puoi
+chiedere di parlare con una persona in qualsiasi momento.
+
+14.2 Prima che tu utilizzi le funzioni di IA per la prima volta, ti indichiamo
+quale fornitore viene utilizzato e che cosa viene inviato, e ti chiediamo il
+consenso. Puoi revocare il tuo consenso nelle Impostazioni. L'Informativa sulla
+privacy (sezione 9) contiene i dettagli.
+
+14.3 I risultati dell'IA possono essere errati, incompleti o culturalmente
+inesatti. Le traduzioni sono contrassegnate con "Tradotto". Non fare affidamento
+sui risultati dell'IA per decisioni mediche, legali, finanziarie o di
+sicurezza. In caso di dubbio, verifica con l'altra persona.
+
+14.4 Alcune funzioni di IA sono soggette a limiti giornalieri o costano Monete,
+come indicato nell'app.
+
+================================================================================
+15. I TUOI CONTENUTI
+================================================================================
+
+15.1 Mantieni la titolarità dei tuoi Contenuti.
+
+15.2 Licenza per il funzionamento di GreenGo
+- Ci concedi una licenza mondiale, non esclusiva e gratuita per ospitare,
+  archiviare, copiare, visualizzare, tradurre, convertire (ad esempio in voce o
+  in testo) e inviare i tuoi Contenuti.
+- Utilizziamo questa licenza solo per fornire e proteggere i Servizi, ad
+  esempio per mostrare i tuoi post alle persone con cui li condividi, per
+  tradurli quando qualcuno lo chiede e per moderarli.
+- La licenza termina quando elimini i Contenuti o il tuo account. Possiamo
+  conservare i Contenuti dopo tale momento solo nei casi previsti
+  dall'Informativa sulla privacy: ad esempio conservazione per obblighi di
+  legge, prove relative a una segnalazione o a un ricorso pendente, o Contenuti
+  che altre persone hanno condiviso nei propri post.
+
+15.3 Promozione solo con il tuo permesso
+- Non utilizzeremo il tuo nome, le tue foto o i tuoi Contenuti nella pubblicità
+  o nel marketing di GreenGo al di fuori dell'app senza il tuo permesso
+  separato.
+- Puoi concedere o revocare tale permesso in qualsiasi momento in
+  Impostazioni > Privacy > Uso promozionale.
+
+15.4 Garantisci che:
+- disponi dei diritti sui Contenuti che pubblichi;
+- le persone che compaiono nelle tue foto o nei tuoi video vi acconsentono;
+- i tuoi Contenuti rispettano i presenti Termini.
+
+15.5 Feedback
+Se ci invii idee o suggerimenti, possiamo utilizzarli liberamente. Non sei
+tenuto a inviarne.
+
+================================================================================
+16. REGOLE DI CONDOTTA
+================================================================================
+
+Queste regole si applicano ovunque su GreenGo, nelle aree pubbliche E private:
+profili, album privati, chat individuali, gruppi, community, eventi, esperienze
+e recensioni.
+
+16.1 Contenuti sessuali
+a) Nessuna nudità, pornografia o Contenuto sessualmente esplicito in nessuna
+   parte di GreenGo, comprese le chat private e gli album privati.
+b) Nessuna richiesta di contenuti sessuali o di servizi sessuali, nessuna
+   attività di escort e nessuna prostituzione.
+c) Nessuna condivisione di immagini intime di chiunque senza il suo consenso.
+
+16.2 Sicurezza dei minori
+- Nessun Contenuto che sessualizzi, sfrutti o metta in pericolo persone di età
+  inferiore a 18 anni.
+- Nessun tentativo di contattare o adescare minori.
+- Vedi la sezione 19.
+
+16.3 Rispetto e sicurezza
+Sono vietati:
+- molestie, bullismo, stalking o minacce;
+- incitamento all'odio, o discriminazione basata su origine, etnia, religione,
+  genere, orientamento sessuale, disabilità o età;
+- avances romantiche o sessuali indesiderate (le avances indesiderate ripetute
+  costituiscono molestia);
+- incitamento all'autolesionismo, al suicidio o alla violenza;
+- la condivisione di dati personali di altre persone, come il loro indirizzo,
+  numero di telefono o posizione esatta, senza il loro consenso.
+
+16.4 Onestà
+Sono vietati:
+- profili falsi o sostituzione di persona;
+- mentire sulla propria età;
+- foto di altre persone presentate come proprie;
+- recensioni o valutazioni false;
+- annunci ingannevoli.
+
+16.5 Denaro e truffe
+a) Nessuna truffa, phishing, schema piramidale o richiesta di denaro con
+   pretesti falsi.
+b) Puoi indicare link a servizi di pagamento esterni sul tuo profilo o nel tuo
+   annuncio, ad esempio per consentire a un Ospite di pagare un Host. Non
+   utilizzarli:
+   - per fare pressione sulle persone;
+   - per vendere qualsiasi cosa vietata dai presenti Termini;
+   - per vendere qualsiasi cosa venduta da GreenGo stessa (Monete, Abbonamenti
+     o funzioni dell'app).
+c) Non inviare mai denaro a qualcuno che non hai incontrato e che non conosci.
+   GreenGo non ti chiederà mai una password o un pagamento in una chat.
+
+16.6 Attività illecite
+- Niente beni illegali, droghe, armi, tratta di esseri umani o riciclaggio di
+  denaro.
+- Nessun Contenuto che violi diritti d'autore, marchi o altri diritti.
+
+16.7 La piattaforma
+Sono vietati:
+- bot, scraping, o creazione di account automatizzata o in massa;
+- attacchi ai nostri sistemi;
+- l'aggiramento di limiti, ban, pagamenti o controlli dell'età;
+- il reverse engineering oltre quanto consentito dalla legge;
+- lo sfruttamento di bug: segnalali a support@greengochat.com.
+
+16.8 Spam e pubblicità
+- Niente spam o messaggi di massa.
+- Nessuna pubblicità non richiesta al di fuori degli Account business e delle
+  aree a essa destinate.
+
+16.9 Foto, contenuti e dati personali degli altri utenti
+a) Senza il chiaro consenso della persona interessata, non devi:
+   - fare screenshot o registrazioni dello schermo, fotografare, scaricare,
+     salvare o copiare le foto private, i contenuti dell'album privato, le
+     foto, i video o i messaggi vocali delle chat di un altro utente, o i suoi
+     dati personali;
+   - condividere, inoltrare, pubblicare o postare uno qualsiasi di questi
+     contenuti, su GreenGo o altrove;
+   - usare uno qualsiasi di questi contenuti per minacciare, mettere in
+     imbarazzo, molestare, ricattare o identificare qualcuno.
+b) Non si tratta solo di una violazione dei presenti Termini. A seconda del
+   paese, può costituire un reato o un illecito civile che ti obbliga a
+   risarcire i danni, ad esempio ai sensi di:
+   - Brasile: art. 218-C del Codice penale brasiliano (introdotto dalla Lei
+     13.718/2018) per le immagini intime, diritti all'immagine e alla
+     riservatezza (Costituzione federale art. 5, X; Codice civile art. 20), la
+     LGPD e il Marco Civil da Internet (art. 21);
+   - Unione europea: il GDPR e le leggi nazionali, ad esempio l'art. 612-ter
+     del codice penale italiano per le immagini sessualmente esplicite;
+   - ovunque: diritti alla riservatezza e all'immagine, diritto d'autore e
+     leggi contro le molestie e l'estorsione.
+c) Se lo fai, possiamo:
+   - rimuovere i contenuti e sospendere o chiudere il tuo account, con effetto
+     immediato se il caso è grave;
+   - conservare le prove (ad esempio i contenuti, i dati del tuo account e la
+     conferma dell'avviso di cui alla lettera d) qui sotto) per tutto il tempo
+     consentito dalla legge;
+   - segnalare il fatto e collaborare con la polizia, i tribunali e le altre
+     autorità, e fornire loro queste prove quando la legge lo consente o lo
+     richiede;
+   - intraprendere azioni legali contro di te per tutelare le persone
+     coinvolte e GreenGo.
+d) Avviso che confermi. La prima volta che apri una foto privata, contenuti
+   dell'album privato o media delle chat di un altro utente, l'app ti mostra
+   un avviso su queste regole, e devi confermarlo ("Ho capito") prima che il
+   contenuto venga mostrato. Registriamo la tua conferma con la data e l'ora e
+   la versione dei presenti Termini, come prova che sei stato avvisato (vedi
+   l'Informativa sulla privacy, sezioni 10.5 e 14).
+e) GreenGo utilizza misure tecniche che rendono più difficile la copia (ad
+   esempio il blocco degli screenshot in alcune schermate e il marchio GreenGo
+   sulle foto aperte a schermo intero). Nessuna misura può impedire ogni
+   copia: queste regole si applicano indipendentemente dalla presenza di una
+   misura.
+
+================================================================================
+17. COME MODERIAMO (POLITICA DI MODERAZIONE DEI CONTENUTI)
+================================================================================
+
+Questa sezione spiega come applichiamo le regole della sezione 16. Include le
+informazioni richieste dal Digital Services Act dell'UE (DSA, Regolamento (UE)
+2022/2065, art. 14).
+
+17.1 Strumenti che utilizziamo
+a) Segnalazioni degli utenti (sezione 18).
+b) Strumenti automatizzati, che non adottano decisioni definitive da soli:
+   - sul tuo telefono, prima del caricamento: un controllo che una foto
+     contenga un volto, e un controllo per escludere nudità (Google ML Kit);
+   - sui nostri server: controllo automatico delle immagini per rilevare nudità
+     e violenza (Google Cloud Vision SafeSearch), controlli dei testi per spam,
+     truffe e abusi, e confronto con materiale noto di abuso sessuale su
+     minori.
+   I Contenuti contrassegnati dagli strumenti automatizzati possono essere
+   trattenuti finché non vengono esaminati.
+c) Esame da parte di personale GreenGo qualificato. Le segnalazioni relative
+   alla sicurezza dei minori vengono esaminate per prime.
+
+17.2 Misure che possiamo adottare
+A seconda della gravità del caso e dei tuoi precedenti, possiamo:
+- mostrare un avvertimento;
+- rimuovere o nascondere Contenuti, o limitarne la visibilità;
+- disattivare determinate funzioni per te, ad esempio messaggistica,
+  pubblicazione od ospitalità come Host;
+- sospendere temporaneamente il tuo account;
+- chiudere il tuo account;
+- trattenere le ricompense ottenute in modo abusivo;
+- segnalare la questione alle autorità.
+
+Agiamo in modo tempestivo, diligente, obiettivo e proporzionato, e rispettiamo i
+diritti di tutte le persone coinvolte, compresa la libertà di espressione.
+
+17.3 Moderatori delle community
+- I proprietari e i moderatori delle community possono rimuovere post e membri
+  della propria Community, nel rispetto delle regole di quella Community e dei
+  presenti Termini.
+- Non possono derogare ai presenti Termini.
+- Puoi segnalarci la decisione di un moderatore.
+
+================================================================================
+18. SEGNALAZIONI, MOTIVAZIONI E RICORSI
+================================================================================
+
+18.1 Come segnalare
+- Usa "Segnala" su qualsiasi profilo, messaggio, post, community, evento,
+  esperienza o recensione.
+- Puoi anche scrivere a safety@greengochat.com.
+- Chiunque, comprese le persone senza un account, può segnalare contenuti
+  illegali via e-mail a safety@greengochat.com (DSA art. 16).
+
+Una buona segnalazione include:
+- dove si trova il contenuto (un link o una descrizione);
+- perché ritieni che sia illegale o contrario alle nostre regole;
+- il tuo nome e il tuo indirizzo e-mail, tranne per le segnalazioni relative ad
+  abusi sessuali su minori, che possono essere anonime;
+- una dichiarazione in cui affermi di ritenere la segnalazione accurata e
+  completa.
+
+18.2 Che cosa succede dopo
+- Confermiamo di aver ricevuto la tua segnalazione, la esaminiamo e ti
+  comunichiamo che cosa abbiamo deciso e se puoi contestare la decisione.
+- Ti informiamo se sono stati utilizzati strumenti automatizzati.
+
+18.3 Motivazione
+Se interveniamo sui tuoi Contenuti o sul tuo account, te lo comunichiamo
+nell'app o via e-mail (DSA art. 17):
+- che cosa abbiamo fatto;
+- a quali Contenuti si riferisce;
+- i fatti, e la regola o la legge violata;
+- se sono stati utilizzati strumenti automatizzati;
+- come puoi contestare la decisione.
+
+Non inviamo questa comunicazione quando la legge lo vieta, ad esempio per
+tutelare un'indagine su abusi sessuali su minori.
+
+18.4 Ricorsi (reclami interni)
+a) Puoi presentare ricorso contro una qualsiasi delle seguenti decisioni,
+   nell'app o rispondendo alla nostra comunicazione, entro 6 mesi dalla
+   decisione (DSA art. 20):
+   - la rimozione o la limitazione dei tuoi Contenuti;
+   - la sospensione o la chiusura del tuo account;
+   - la limitazione delle tue funzioni o ricompense;
+   - il mancato intervento su una segnalazione che hai presentato.
+b) I ricorsi sono gratuiti. Vengono esaminati da una persona che non ha preso
+   la decisione originaria.
+c) Revochiamo le decisioni che si rivelano errate, e ti comunichiamo l'esito e
+   i motivi.
+
+18.5 Altre opzioni
+Se vivi nell'UE, puoi anche sottoporre una controversia sulla moderazione a un
+organismo certificato di risoluzione extragiudiziale delle controversie (DSA
+art. 21). Puoi sempre rivolgerti a un tribunale o a un'autorità per la tutela
+dei consumatori (sezione 26).
+
+18.6 Uso improprio
+- Se qualcuno pubblica frequentemente Contenuti manifestamente illegali,
+  sospendiamo il suo account dopo un avvertimento.
+- Se qualcuno invia frequentemente segnalazioni manifestamente infondate,
+  smettiamo di trattare le sue segnalazioni per un certo periodo dopo un
+  avvertimento (DSA art. 23).
+
+18.7 Punti di contatto (DSA artt. 11 e 12)
+- Per le autorità degli Stati membri dell'UE, la Commissione europea e il
+  Comitato europeo per i servizi digitali: legal@greengochat.com, in inglese o
+  in portoghese.
+- Per gli utenti: safety@greengochat.com e la chat di supporto nell'app, in
+  qualsiasi lingua supportata dall'app.
+- Stiamo nominando un rappresentante legale nell'UE ai sensi dell'art. 13 DSA e
+  ne pubblicheremo i dati qui. Fino ad allora, le autorità possono utilizzare
+  legal@greengochat.com.
+
+================================================================================
+19. SICUREZZA DEI MINORI
+================================================================================
+
+19.1 Tolleranza zero. GreenGo è riservata esclusivamente agli adulti. Non
+tolleriamo alcuna forma di abuso o sfruttamento sessuale di minori, adescamento
+o Contenuti che sessualizzino i minori.
+
+19.2 Che cosa facciamo
+a) Rimuoviamo tali Contenuti e chiudiamo gli account coinvolti, immediatamente
+   e senza preavviso.
+b) Segnaliamo il presunto materiale di abuso sessuale su minori al National
+   Center for Missing & Exploited Children (NCMEC) degli Stati Uniti e alle
+   autorità competenti in Brasile, nell'UE e in altri paesi, come richiesto
+   dalla legge.
+c) Conserviamo i dati correlati per finalità di contrasto della criminalità per
+   il periodo richiesto dalla legge.
+d) Collaboriamo con la polizia e con l'autorità giudiziaria.
+
+19.3 Segnala sospetti minori o problemi relativi alla sicurezza dei minori
+nell'app, che offre il motivo "Sfruttamento sessuale di minori", oppure
+all'indirizzo safety@greengochat.com. I nostri standard per la sicurezza dei
+minori sono pubblicati all'indirizzo https://greengochat.com/child-safety.
+
+================================================================================
+20. CESSAZIONE DEL CONTRATTO
+================================================================================
+
+20.1 Puoi smettere di usare GreenGo ed eliminare il tuo account in qualsiasi
+momento:
+- nell'app, in Profilo > Impostazioni > Elimina account;
+- sul web, all'indirizzo https://greengochat.com/delete-account.
+
+Ricorda di annullare eventuali abbonamenti acquistati tramite uno store
+(sezione 7.3).
+
+20.2 Possiamo sospendere o chiudere il tuo account se:
+a) violi i presenti Termini in modo grave o ripetuto;
+b) lo richiede la legge o un'autorità;
+c) crei un rischio per altre persone, per GreenGo o per la nostra posizione
+   giuridica;
+d) il tuo account viene utilizzato per frodi.
+
+20.3 Prima di intervenire
+- Salvo che il caso sia urgente o grave o che la legge lo impedisca, ti
+  avvisiamo prima e ti diamo la possibilità di fornire spiegazioni.
+- Inviamo sempre una motivazione (sezione 18.3), e puoi presentare ricorso
+  (sezione 18.4).
+
+20.4 Effetti sugli acquisti quando interveniamo per una violazione grave
+Se chiudiamo il tuo account a causa di una tua violazione grave:
+- il tuo Abbonamento termina;
+- le tue Monete vanno perse;
+- non rimborsiamo ciò che hai già utilizzato.
+
+Quando la legge richiede il rimborso degli importi prepagati non utilizzati, lo
+effettuiamo.
+
+20.5 Se chiudiamo i Servizi, o chiudiamo il tuo account senza alcuna colpa da
+parte tua
+- Ti diamo un preavviso di almeno 30 giorni, a meno che la legge non lo
+  impedisca.
+- Rimborsiamo la parte non utilizzata di qualsiasi Abbonamento prepagato.
+- Rimborsiamo le Monete acquistate non utilizzate quando la legge lo richiede.
+
+20.6 Alcune sezioni continuano ad applicarsi dopo la cessazione del contratto:
+- sezioni 8.6 e 9.7 (rimborsi e frodi);
+- 15.2, nei limiti ivi indicati;
+- 23 (la nostra responsabilità);
+- 26 (legge applicabile e controversie);
+- 27 (disposizioni generali).
+
+================================================================================
+21. PROPRIETÀ INTELLETTUALE
+================================================================================
+
+21.1 GreenGo appartiene a noi o ai nostri licenzianti: il software, il design,
+il nome, il logo e i nostri contenuti.
+
+21.2 Puoi utilizzare i Servizi per uso personale (o per la tua attività, tramite
+un Account business) in conformità con i presenti Termini e con l'EULA.
+
+21.3 Non devi:
+- copiare, vendere o modificare il nostro software;
+- utilizzare il nostro nome e il nostro logo senza autorizzazione;
+- rimuovere le note sul diritto d'autore.
+
+21.4 Contenuti in violazione
+- Se ritieni che un Contenuto su GreenGo violi il tuo diritto d'autore o altri
+  tuoi diritti, segnalalo come descritto nella sezione 18.1.
+- Le notifiche statunitensi ai sensi del Digital Millennium Copyright Act
+  (DMCA) possono essere inviate al nostro agente per il diritto d'autore
+  all'indirizzo copyright@greengochat.com. Una notifica deve contenere la tua
+  firma, l'opera che ritieni violata, il punto di GreenGo in cui si trova il
+  Contenuto in violazione, i tuoi recapiti, una dichiarazione di convinzione in
+  buona fede e una dichiarazione, sotto pena di falsa testimonianza, che la
+  notifica è accurata e che sei autorizzato ad agire.
+- Se commetti violazioni ripetute, chiudiamo il tuo account.
+
+================================================================================
+22. ALTRI SERVIZI E LINK
+================================================================================
+
+- GreenGo contiene link a servizi di altre società, e funziona con essi, ad
+  esempio store di app, Stripe, mappe, siti di eventi partner e i servizi di
+  pagamento indicati dagli utenti.
+- Quando li utilizzi, si applicano le loro condizioni.
+- Non siamo responsabili dei loro contenuti o delle loro pratiche. Ciò non
+  limita le nostre responsabilità ai sensi dei presenti Termini o della legge.
+
+================================================================================
+23. LA NOSTRA RESPONSABILITÀ
+================================================================================
+
+23.1 Forniamo i Servizi con ragionevole cura e competenza, e come descritto nei
+presenti Termini. In caso contrario, hai i diritti che la legge ti riconosce,
+come la riparazione, una riduzione del prezzo, un rimborso o un risarcimento.
+
+23.2 Siamo responsabili delle perdite o dei danni che causiamo violando i
+presenti Termini o la legge. Non siamo responsabili delle perdite o dei danni
+che:
+- non erano prevedibili;
+- avresti potuto evitare adottando misure ragionevoli;
+- sono causati da eventi al di fuori del nostro ragionevole controllo.
+
+23.3 Non siamo responsabili della condotta di altri utenti, su GreenGo o al di
+fuori di essa, né delle Esperienze e degli Eventi da loro organizzati. Tuttavia,
+SIAMO responsabili quando una nostra mancanza ha contribuito al danno, ad
+esempio se non siamo intervenuti su una segnalazione valida come richiesto dalla
+legge.
+
+23.4 Nulla nei presenti Termini limita o esclude la nostra responsabilità per:
+- morte o lesioni personali causate da nostra negligenza;
+- frode;
+- colpa grave o dolo;
+- qualsiasi altra responsabilità che non può essere limitata o esclusa per
+  legge, anche ai sensi del Codice brasiliano di tutela del consumatore (CDC)
+  e delle leggi a tutela dei consumatori del tuo paese.
+
+Solo per gli Account business che agiscono in qualità di professionisti, e nei
+limiti consentiti dalla legge, la nostra responsabilità complessiva è limitata
+agli importi che ci sono stati pagati nei 12 mesi precedenti la richiesta.
+
+23.5 Se violi i presenti Termini o la legge, sei responsabile dei danni che
+causi a noi o ad altri, come previsto dalla legge.
+
+================================================================================
+24. MODIFICHE AI PRESENTI TERMINI
+================================================================================
+
+24.1 Possiamo modificare i presenti Termini:
+- per riflettere modifiche ai Servizi o alla legge;
+- per soddisfare i requisiti di un'autorità di regolamentazione;
+- per migliorarne la chiarezza;
+- per prevenire abusi.
+
+24.2 Modifiche importanti
+Per le modifiche che ti riguardano in modo importante:
+a) te lo comunichiamo almeno 30 giorni prima che entrino in vigore, nell'app e
+   via e-mail, e ti spieghiamo che cosa cambia;
+b) quando entrano in vigore, ti chiediamo di accettarle nell'app;
+c) se non le accetti, puoi recedere dal contratto senza alcun costo prima che
+   la modifica entri in vigore. Riceverai un rimborso della parte non
+   utilizzata di qualsiasi Abbonamento prepagato. Finché non recedi, continua
+   ad applicarsi a te la versione precedente, per un massimo di 60 giorni.
+   Trascorso tale periodo, possiamo risolvere il contratto con preavviso.
+
+24.3 Le modifiche che vanno esclusivamente a tuo vantaggio, o che sono
+necessarie immediatamente per motivi legali o di sicurezza, entrano in vigore al
+momento della pubblicazione. Te ne informiamo comunque.
+
+24.4 Ogni versione ha un numero e una data. Le versioni precedenti sono
+disponibili su richiesta.
+
+================================================================================
+25. RECLAMI
+================================================================================
+
+Se non sei soddisfatto, contattaci prima all'indirizzo support@greengochat.com,
+oppure all'indirizzo legal@greengochat.com per questioni legali. Cercheremo di
+risolvere il problema entro 15 giorni. Questo passaggio è facoltativo: puoi
+sempre ricorrere direttamente alle opzioni della sezione 26.
+
+================================================================================
+26. LEGGE APPLICABILE E CONTROVERSIE
+================================================================================
+
+26.1 I presenti Termini sono regolati dalla legge brasiliana.
+
+26.2 I consumatori conservano le tutele del proprio paese
+Se sei un consumatore, la scelta della legge brasiliana non ti priva della
+tutela delle norme inderogabili del paese in cui vivi.
+a) Brasile: puoi intentare un'azione dinanzi ai tribunali del luogo in cui vivi
+   (CDC art. 101, I), rivolgerti al PROCON o utilizzare
+   https://www.consumidor.gov.br.
+b) UE e SEE: conservi la tutela delle norme inderogabili a tutela dei
+   consumatori del tuo paese di residenza (Regolamento Roma I, art. 6). Puoi
+   citarci in giudizio dinanzi ai tribunali del luogo in cui vivi, e noi
+   possiamo citarti in giudizio solo dinanzi a tali tribunali (Regolamento
+   Bruxelles I bis, art. 18).
+c) Regno Unito: puoi intentare azioni dinanzi ai tribunali di Inghilterra e
+   Galles, Scozia o Irlanda del Nord, a seconda del luogo in cui vivi, e
+   conservi i tuoi diritti previsti dalla legge.
+d) Altrove: conservi i diritti inderogabili dei consumatori del tuo paese, e la
+   competenza dei tribunali che tali diritti stabiliscono.
+
+26.3 Account business che agiscono in qualità di professionisti
+Le controversie sono devolute ai tribunali della città di Sao Paulo, Brasile.
+
+26.4 Nulla nei presenti Termini:
+- ti obbliga a ricorrere all'arbitrato;
+- ti impedisce di partecipare a un'azione collettiva consentita dalla legge del
+  tuo paese;
+- abbrevia i termini che la legge ti concede per intentare un'azione.
+
+26.5 Risoluzione extragiudiziale delle controversie
+Attualmente non siamo obbligati a partecipare a procedure di risoluzione
+alternativa delle controversie dei consumatori nell'UE. Per le decisioni di
+moderazione, vedi la sezione 18.5.
+
+================================================================================
+27. DISPOSIZIONI GENERALI
+================================================================================
+
+27.1 Se un tribunale stabilisce che una parte dei presenti Termini non è valida,
+il resto continua ad applicarsi.
+
+27.2 Se non facciamo valere immediatamente un diritto, non vi rinunciamo.
+
+27.3 Possiamo trasferire il presente contratto a un'altra società nell'ambito di
+una fusione, vendita o riorganizzazione, a condizione che i tuoi diritti non
+siano ridotti. Te lo comunicheremo. Non puoi trasferire i tuoi diritti senza il
+nostro consenso.
+
+27.4 I presenti Termini, insieme ai documenti elencati nella sezione 1.3,
+costituiscono l'intero accordo tra te e noi in merito ai Servizi. Ciò non
+pregiudica i tuoi diritti previsti dalla legge.
+
+27.5 Lingua
+- I presenti Termini sono disponibili in inglese, portoghese brasiliano,
+  portoghese europeo, spagnolo, francese, tedesco e italiano. Tutte le versioni
+  hanno lo stesso significato.
+- Ove la legge lo richieda, prevale la versione nella lingua ufficiale del tuo
+  paese di residenza. Altrimenti prevale la versione inglese.
+
+================================================================================
+28. CONTATTI
+================================================================================
+
+Universo Kardasha Ltda. - CNPJ 40.486.663/0001-82
+Av. Dona Helena Pereira de Moraes, 290, Sao Paulo - SP, 05707-400, Brazil
+
+Supporto: support@greengochat.com - Telefono: +55 11 911142911
+Fatturazione e recesso: billing@greengochat.com
+Sicurezza e sicurezza dei minori: safety@greengochat.com
+Questioni legali e autorità (punto di contatto DSA): legal@greengochat.com
+Privacy: privacy@greengochat.com
+Diritto d'autore (DMCA): copyright@greengochat.com
+
+================================================================================
+CRONOLOGIA DELLE VERSIONI
+================================================================================
+
+5.1.0 - 11 ottobre 2026
+- Nuova sezione 16.9: l'uso improprio di foto, contenuti e dati personali di
+  altri utenti (screenshot, registrazioni, salvataggio, condivisione,
+  pubblicazione) è vietato e può essere illecito; conseguenze; l'avviso sui
+  contenuti privati che gli utenti confermano.
+
+5.0.0 - 9 ottobre 2026
+Riscrittura completa:
+- descrive il prodotto reale (nessuna funzione per la ricerca di partner);
+- un'unica definizione di Monete, comprese le regole sui regali e il recupero
+  in caso di rimborso;
+- i tre canali di pagamento;
+- rinnovo automatico sul web e annullamento tramite il portale Stripe;
+- recesso UE, compresa la rinuncia per fornitura immediata e la funzione di
+  recesso;
+- Brasile, CDC art. 49;
+- nuove sezioni: moderazione DSA, notifica e azione, motivazioni e ricorsi;
+  sicurezza dei minori; condizioni per referral, eventi, esperienze e account
+  business; biglietti a pagamento venduti direttamente dagli organizzatori;
+  funzioni di IA.
+
+Rimossi:
+- "l'uso continuato equivale ad accettazione";
+- il limite di un anno per le richieste;
+- la rinuncia alle azioni collettive;
+- l'arbitrato;
+- l'esclusione generalizzata della responsabilità per lesioni personali;
+- l'ampia licenza promozionale (la promozione è ora soggetta a opt-in);
+- il link alla piattaforma ODR dell'UE;
+- la sezione scaduta sulla prevendita.
+
+4.0.0 - 15 settembre 2026
+Verifica dell'età, le Monete non scadono mai.
+
+1.0.0 - 26 gennaio 2026
+Prima pubblicazione.
 
 ================================================================================
 FINE DEI TERMINI E CONDIZIONI
