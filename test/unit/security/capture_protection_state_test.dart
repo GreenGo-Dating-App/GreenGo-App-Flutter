@@ -111,22 +111,13 @@ void main() {
           throwsA(isA<MissingPluginException>()));
     });
 
-    test('web focus loss covers; shortcuts produce a blocked event', () async {
-      debugDefaultTargetPlatformOverride = TargetPlatform.windows;
-      addTearDown(() => debugDefaultTargetPlatformOverride = null);
-      service.handleWebEvent('blur');
-      expect(service.state.value.cover, CaptureCover.away);
-      service.handleWebEvent('focus');
-      expect(service.state.value.cover, CaptureCover.none);
-
-      final got = expectLater(
-          service.events, emits(ScreenCaptureEvent.blockedShortcut));
-      service.handleWebEvent('printscreen');
-      await got;
-    });
-
-    test('phone/tablet browsers never get the away cover', () async {
-      for (final platform in [TargetPlatform.iOS, TargetPlatform.android]) {
+    test('web never gets the away cover; shortcuts still toast', () async {
+      for (final platform in [
+        TargetPlatform.iOS,
+        TargetPlatform.android,
+        TargetPlatform.windows,
+        TargetPlatform.macOS,
+      ]) {
         debugDefaultTargetPlatformOverride = platform;
         service.handleWebEvent('blur');
         service.handleWebEvent('hidden');
@@ -136,7 +127,7 @@ void main() {
 
       final got = expectLater(
           service.events, emits(ScreenCaptureEvent.blockedShortcut));
-      service.handleWebEvent('print');
+      service.handleWebEvent('printscreen');
       await got;
     });
 

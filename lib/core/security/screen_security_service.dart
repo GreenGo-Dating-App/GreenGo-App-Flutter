@@ -25,7 +25,7 @@ enum ScreenCaptureEvent {
 /// |----------|--------------------------------------|--------------------------|------------------------------|
 /// | Android  | FLAG_SECURE: screenshots, recordings, recents thumbnail (black) | 14+: screenshots when FLAG_SECURE is off; 15+: recording state | - |
 /// | iOS      | secure-layer: app renders blank in screenshots/recordings | screenshots, recording/mirroring (`isCaptured`) | full-screen cover while captured |
-/// | web      | nothing can truly be blocked         | PrintScreen, print, save, focus loss | blur on focus loss, cleared clipboard, no print, watermarks, app-only content |
+/// | web      | nothing can truly be blocked         | PrintScreen, print, save, focus loss | cleared clipboard, no print, watermarks, app-only content |
 ///
 /// Native side: `MainActivity.kt` and `AppDelegate.swift`, channel
 /// [channelName]. Dart -> native: `enable`, `disable`, `isCaptured`.
@@ -80,14 +80,12 @@ class ScreenSecurityService {
     }
   }
 
-  /// Android / iOS, natively or in a phone/tablet browser (on web
-  /// [defaultTargetPlatform] follows the browser's user agent).
   static bool get _isMobile =>
       defaultTargetPlatform == TargetPlatform.android ||
       defaultTargetPlatform == TargetPlatform.iOS;
 
   /// Remote kill-switch (feature flag `screenProtection`). Off = no
-  /// FLAG_SECURE / secure layer, no overlay, no web blur. Screenshot notices
+  /// FLAG_SECURE / secure layer, no overlay. Screenshot notices
   /// in chats keep working (they only report, never block).
   Future<void> setProtectionEnabled(bool enabled) async {
     _signal(enabled
@@ -136,13 +134,10 @@ class ScreenSecurityService {
   void handleWebEvent(String event) {
     final signal = captureSignalForWebEvent(event);
     if (signal != null) {
-      // Phone/tablet browsers: no "away" cover. The OS photo picker, share
-      // sheet and app switcher all take focus, and iOS Safari often never
-      // sends `focus` back, so the blurred black cover stuck on screen and
-      // blocked the picked photo (onboarding photos step). The shim in
-      // web/index.html skips its CSS blur on the same devices.
-      if (_isMobile) return;
-      _signal(signal);
+      // No "away" cover on web at all (owner, 2026-10-12): the blurred
+      // black cover glitched, and on iPhone it stuck on screen after the
+      // photo picker took focus. The shim no longer sends these events;
+      // this also ignores them from an older cached index.html.
       return;
     }
     if (kBlockedCaptureWebEvents.contains(event) && state.value.enabled) {
