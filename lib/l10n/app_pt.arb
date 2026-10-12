@@ -7449,5 +7449,20 @@
   "tierPaymentLinksRow": "Links de pagamento no teu perfil",
   "paymentLinksTierLocked": "Disponível com Silver, Gold ou Platinum",
   "paymentLinksTierLockedBody": "As tuas formas de pagamento guardadas estão ocultas no teu perfil. Faz upgrade para Silver, Gold ou Platinum para as mostrar de novo.",
-  "paymentLinksTierUpsellBody": "Deixa que te paguem diretamente com Pix, PayPal e mais. Faz upgrade para Silver, Gold ou Platinum para adicionar formas de pagamento ao teu perfil."
+  "paymentLinksTierUpsellBody": "Deixa que te paguem diretamente com Pix, PayPal e mais. Faz upgrade para Silver, Gold ou Platinum para adicionar formas de pagamento ao teu perfil.",
+  "locPickerTitle": "Escolher um local",
+  "locPickerSearchHint": "Pesquisar um endereço ou local",
+  "locPickerConfirm": "Usar este local",
+  "locPickerMyLocation": "Usar a minha localização atual",
+  "locPickerLocationUnavailable": "Não foi possível obter a tua localização. Verifica se o acesso à localização está permitido.",
+  "locPickerNoResults": "Nenhum local encontrado",
+  "locPickerOffline": "Parece que estás offline. Verifica a ligação e tenta novamente.",
+  "locPickerUnavailable": "A pesquisa não está disponível agora. Tenta novamente daqui a pouco.",
+  "locPickerRateLimited": "Demasiadas pesquisas. Aguarda um momento e tenta novamente.",
+  "locPickerHint": "Pesquisa ou toca no mapa para colocar um marcador. Arrasta-o para ajustar.",
+  "locPickerFindingAddress": "A procurar o endereço…",
+  "locPickerNoAddress": "Ponto marcado (nenhum endereço encontrado)",
+  "locPickerClear": "Limpar pesquisa",
+  "locPickerRecent": "Recentes",
+  "locPickerPinLabel": "Local selecionado. Arrasta para ajustar."
 }

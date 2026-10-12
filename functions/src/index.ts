@@ -460,6 +460,11 @@ export {
 // the browser no longer sends positions + IP to Nominatim (audit 2026-10).
 export { reverseGeocodeCoarse } from './location/reverseGeocodeCoarse';
 
+// Location picker: server-side address autocomplete (Google Places New with a
+// session token when a key is configured, else Photon), place details and a
+// precise reverse geocode for a pin dropped on a public meeting place.
+export { searchAddress, resolvePlace, reverseGeocode } from './location/placeSearch';
+
 // Marco Civil art. 15 access logs (audit BR-09): IP + time of every sign-in /
 // app session in the server-only access_logs collection (TTL 6 months).
 // logAccessOnSignIn / logAccessOnSignUp are Auth BLOCKING functions: deploy

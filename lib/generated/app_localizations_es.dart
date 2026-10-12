@@ -24307,4 +24307,55 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get paymentLinksTierUpsellBody =>
       'Deja que te paguen directamente con Pix, PayPal y más. Mejora a Silver, Gold o Platinum para añadir métodos de pago a tu perfil.';
+
+  @override
+  String get locPickerTitle => 'Elige un lugar';
+
+  @override
+  String get locPickerSearchHint => 'Busca una dirección o un lugar';
+
+  @override
+  String get locPickerConfirm => 'Usar este lugar';
+
+  @override
+  String get locPickerMyLocation => 'Usar mi ubicación actual';
+
+  @override
+  String get locPickerLocationUnavailable =>
+      'No se pudo obtener tu ubicación. Comprueba que el acceso a la ubicación esté permitido.';
+
+  @override
+  String get locPickerNoResults => 'No se encontraron lugares';
+
+  @override
+  String get locPickerOffline =>
+      'Parece que no tienes conexión. Compruébala e inténtalo de nuevo.';
+
+  @override
+  String get locPickerUnavailable =>
+      'La búsqueda no está disponible ahora. Inténtalo de nuevo en un momento.';
+
+  @override
+  String get locPickerRateLimited =>
+      'Demasiadas búsquedas. Espera un momento e inténtalo de nuevo.';
+
+  @override
+  String get locPickerHint =>
+      'Busca o toca el mapa para colocar un marcador. Arrástralo para ajustarlo.';
+
+  @override
+  String get locPickerFindingAddress => 'Buscando la dirección…';
+
+  @override
+  String get locPickerNoAddress => 'Punto marcado (no se encontró dirección)';
+
+  @override
+  String get locPickerClear => 'Borrar búsqueda';
+
+  @override
+  String get locPickerRecent => 'Recientes';
+
+  @override
+  String get locPickerPinLabel =>
+      'Lugar seleccionado. Arrastra para ajustarlo.';
 }

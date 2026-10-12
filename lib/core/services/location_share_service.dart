@@ -80,11 +80,31 @@ class LocationShareService {
 
   /// Builds the message payload for a shared location.
   /// `content` is "lat,lng" (human/preview friendly); metadata carries doubles.
-  static Map<String, dynamic> metadataFor(double lat, double lng) => {
-        'isLocation': true,
-        'lat': lat,
-        'lng': lng,
-      };
+  /// [address] (a place picked in the location picker) is optional and
+  /// capped at [maxAddressLength] characters.
+  static Map<String, dynamic> metadataFor(double lat, double lng,
+      {String? address}) {
+    final label = (address ?? '').trim();
+    return {
+      'isLocation': true,
+      'lat': lat,
+      'lng': lng,
+      if (label.isNotEmpty)
+        'address': label.length > maxAddressLength
+            ? label.substring(0, maxAddressLength)
+            : label,
+    };
+  }
+
+  static const int maxAddressLength = 200;
+
+  /// The place label of a location message, or null.
+  static String? addressOf(Map<String, dynamic>? metadata) {
+    final v = metadata?['address'];
+    if (v is! String) return null;
+    final t = v.trim();
+    return t.isEmpty ? null : t;
+  }
 
   /// A maps deep link for opening a shared location.
   static String mapsUrl(double lat, double lng) =>

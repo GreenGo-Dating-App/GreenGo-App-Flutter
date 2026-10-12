@@ -21,10 +21,10 @@ import '../../../../core/utils/geo_query.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../events/data/services/event_geocoder.dart';
-import '../../../events/presentation/screens/event_location_picker_screen.dart';
+import '../../../../core/services/place_search_service.dart';
+import '../../../../core/widgets/location_picker.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
 import '../../../experience_bookings/presentation/screens/experience_slots_screen.dart';
-import '../../../profile/domain/entities/location.dart' as profile_entity;
 import '../../domain/entities/user_experience.dart';
 import '../../domain/experience_validation.dart';
 import '../../domain/repositories/user_experiences_repository.dart';
@@ -414,9 +414,15 @@ class _EditorFormState extends State<_EditorForm> {
   // ───────────────────────────────────────────── location
 
   Future<void> _pickOnMap() async {
-    final loc = await Navigator.of(context)
-        .push<profile_entity.Location>(EventLocationPickerScreen.route());
-    if (loc == null || !mounted) return;
+    final picked = await Navigator.of(context).push<PickedPlace>(
+      LocationPickerScreen.route(
+        initialLat: _lat,
+        initialLng: _lng,
+        initialAddress: _location.text.trim(),
+      ),
+    );
+    if (picked == null || !mounted) return;
+    final loc = picked.toLocation();
     setState(() {
       _lat = loc.latitude;
       _lng = loc.longitude;
@@ -432,7 +438,8 @@ class _EditorFormState extends State<_EditorForm> {
   Future<void> _resolveLocation() async {
     final text = _location.text.trim();
     if (_lat != null && _lng != null && _coordsLabel?.trim() == text) return;
-    final loc = await EventGeocoder.geocode(text);
+    final loc = await EventGeocoder.geocode(text,
+        lang: Localizations.localeOf(context).toLanguageTag());
     if (loc == null) {
       _lat = _lng = null;
       _coordsLabel = null;

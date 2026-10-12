@@ -7449,5 +7449,20 @@
   "tierPaymentLinksRow": "Zahlungslinks in deinem Profil",
   "paymentLinksTierLocked": "Verfügbar mit Silver, Gold oder Platinum",
   "paymentLinksTierLockedBody": "Deine gespeicherten Zahlungsmethoden sind in deinem Profil ausgeblendet. Upgrade auf Silver, Gold oder Platinum, um sie wieder anzuzeigen.",
-  "paymentLinksTierUpsellBody": "Lass dich direkt per Pix, PayPal und mehr bezahlen. Upgrade auf Silver, Gold oder Platinum, um deinem Profil Zahlungsmethoden hinzuzufügen."
+  "paymentLinksTierUpsellBody": "Lass dich direkt per Pix, PayPal und mehr bezahlen. Upgrade auf Silver, Gold oder Platinum, um deinem Profil Zahlungsmethoden hinzuzufügen.",
+  "locPickerTitle": "Ort auswählen",
+  "locPickerSearchHint": "Adresse oder Ort suchen",
+  "locPickerConfirm": "Diesen Ort verwenden",
+  "locPickerMyLocation": "Meinen aktuellen Standort verwenden",
+  "locPickerLocationUnavailable": "Dein Standort konnte nicht ermittelt werden. Prüfe, ob der Standortzugriff erlaubt ist.",
+  "locPickerNoResults": "Keine Orte gefunden",
+  "locPickerOffline": "Du scheinst offline zu sein. Prüfe deine Verbindung und versuche es erneut.",
+  "locPickerUnavailable": "Die Suche ist gerade nicht verfügbar. Versuche es gleich noch einmal.",
+  "locPickerRateLimited": "Zu viele Suchanfragen. Warte kurz und versuche es erneut.",
+  "locPickerHint": "Suche oder tippe auf die Karte, um eine Markierung zu setzen. Ziehe sie zum Anpassen.",
+  "locPickerFindingAddress": "Adresse wird gesucht…",
+  "locPickerNoAddress": "Markierter Ort (keine Adresse gefunden)",
+  "locPickerClear": "Suche löschen",
+  "locPickerRecent": "Zuletzt",
+  "locPickerPinLabel": "Ausgewählter Ort. Zum Anpassen ziehen."
 }

@@ -24077,4 +24077,54 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get paymentLinksTierUpsellBody =>
       'Let people pay you directly with Pix, PayPal and more. Upgrade to Silver, Gold or Platinum to add payment methods to your profile.';
+
+  @override
+  String get locPickerTitle => 'Choose a place';
+
+  @override
+  String get locPickerSearchHint => 'Search an address or place';
+
+  @override
+  String get locPickerConfirm => 'Use this place';
+
+  @override
+  String get locPickerMyLocation => 'Use my current location';
+
+  @override
+  String get locPickerLocationUnavailable =>
+      'Couldn\'t get your location. Check that location access is allowed.';
+
+  @override
+  String get locPickerNoResults => 'No places found';
+
+  @override
+  String get locPickerOffline =>
+      'You seem to be offline. Check your connection and try again.';
+
+  @override
+  String get locPickerUnavailable =>
+      'Search isn\'t available right now. Try again in a moment.';
+
+  @override
+  String get locPickerRateLimited =>
+      'Too many searches. Wait a moment and try again.';
+
+  @override
+  String get locPickerHint =>
+      'Search, or tap the map to drop a pin. Drag the pin to adjust.';
+
+  @override
+  String get locPickerFindingAddress => 'Finding the address…';
+
+  @override
+  String get locPickerNoAddress => 'Pinned spot (no address found)';
+
+  @override
+  String get locPickerClear => 'Clear search';
+
+  @override
+  String get locPickerRecent => 'Recent';
+
+  @override
+  String get locPickerPinLabel => 'Selected place. Drag to adjust.';
 }

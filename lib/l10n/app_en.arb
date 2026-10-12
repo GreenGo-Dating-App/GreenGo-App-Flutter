@@ -13372,5 +13372,65 @@
   "paymentLinksTierUpsellBody": "Let people pay you directly with Pix, PayPal and more. Upgrade to Silver, Gold or Platinum to add payment methods to your profile.",
   "@paymentLinksTierUpsellBody": {
     "description": "Payment methods locked: no saved links, upgrade invitation"
+  },
+  "locPickerTitle": "Choose a place",
+  "@locPickerTitle": {
+    "description": "Location picker (search an address, drop a pin)"
+  },
+  "locPickerSearchHint": "Search an address or place",
+  "@locPickerSearchHint": {
+    "description": "Location picker (search an address, drop a pin)"
+  },
+  "locPickerConfirm": "Use this place",
+  "@locPickerConfirm": {
+    "description": "Location picker (search an address, drop a pin)"
+  },
+  "locPickerMyLocation": "Use my current location",
+  "@locPickerMyLocation": {
+    "description": "Location picker (search an address, drop a pin)"
+  },
+  "locPickerLocationUnavailable": "Couldn't get your location. Check that location access is allowed.",
+  "@locPickerLocationUnavailable": {
+    "description": "Location picker (search an address, drop a pin)"
+  },
+  "locPickerNoResults": "No places found",
+  "@locPickerNoResults": {
+    "description": "Location picker (search an address, drop a pin)"
+  },
+  "locPickerOffline": "You seem to be offline. Check your connection and try again.",
+  "@locPickerOffline": {
+    "description": "Location picker (search an address, drop a pin)"
+  },
+  "locPickerUnavailable": "Search isn't available right now. Try again in a moment.",
+  "@locPickerUnavailable": {
+    "description": "Location picker (search an address, drop a pin)"
+  },
+  "locPickerRateLimited": "Too many searches. Wait a moment and try again.",
+  "@locPickerRateLimited": {
+    "description": "Location picker (search an address, drop a pin)"
+  },
+  "locPickerHint": "Search, or tap the map to drop a pin. Drag the pin to adjust.",
+  "@locPickerHint": {
+    "description": "Location picker (search an address, drop a pin)"
+  },
+  "locPickerFindingAddress": "Finding the address…",
+  "@locPickerFindingAddress": {
+    "description": "Location picker (search an address, drop a pin)"
+  },
+  "locPickerNoAddress": "Pinned spot (no address found)",
+  "@locPickerNoAddress": {
+    "description": "Location picker (search an address, drop a pin)"
+  },
+  "locPickerClear": "Clear search",
+  "@locPickerClear": {
+    "description": "Location picker (search an address, drop a pin)"
+  },
+  "locPickerRecent": "Recent",
+  "@locPickerRecent": {
+    "description": "Location picker (search an address, drop a pin)"
+  },
+  "locPickerPinLabel": "Selected place. Drag to adjust.",
+  "@locPickerPinLabel": {
+    "description": "Location picker (search an address, drop a pin)"
   }
 }

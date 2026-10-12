@@ -19,6 +19,8 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart';
 import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/services/location_share_service.dart';
+import '../../../../core/services/place_search_service.dart';
+import '../../../../core/widgets/location_picker.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/services/pronunciation_service.dart';
 import '../../../../core/services/translation_service.dart';
@@ -678,20 +680,17 @@ class _GroupChatViewState extends State<_GroupChatView> {
     );
   }
 
+  /// Pick a place (search, current location or a pin) and send it.
   Future<void> _sendLocation(BuildContext context) async {
-    final l10n = AppLocalizations.of(context)!;
     final bloc = context.read<GroupChatBloc>();
-    final messenger = ScaffoldMessenger.of(context);
-    final position = await const LocationShareService().getCurrentPosition();
-    if (position == null) {
-      messenger.showSnackBar(SnackBar(content: Text(l10n.chatLocationDenied)));
-      return;
-    }
+    final picked = await Navigator.of(context)
+        .push<PickedPlace>(LocationPickerScreen.route());
+    if (picked == null) return;
     bloc.add(GroupChatMessageSent(
-      content: '${position.latitude},${position.longitude}',
+      content: '${picked.lat},${picked.lng}',
       type: MessageType.location,
-      metadata:
-          LocationShareService.metadataFor(position.latitude, position.longitude),
+      metadata: LocationShareService.metadataFor(picked.lat, picked.lng,
+          address: picked.address),
     ));
   }
 
@@ -1361,10 +1360,25 @@ class _LocationContent extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
-        LocationMessageMap(lat: loc.lat, lng: loc.lng),
+        LocationMessageMap(
+            lat: loc.lat,
+            lng: loc.lng,
+            label: LocationShareService.addressOf(message.metadata)),
+        if (LocationShareService.addressOf(message.metadata) case final a?)
+          Padding(
+            padding: const EdgeInsets.only(top: 4),
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 220),
+              child: Text(a,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: theme.textTheme.bodySmall?.copyWith(color: color)),
+            ),
+          ),
         const SizedBox(height: 4),
         InkWell(
-          onTap: () => openInMapsApp(context, loc.lat, loc.lng),
+          onTap: () => openInMapsApp(context, loc.lat, loc.lng,
+              label: LocationShareService.addressOf(message.metadata)),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [

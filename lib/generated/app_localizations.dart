@@ -41228,6 +41228,96 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Let people pay you directly with Pix, PayPal and more. Upgrade to Silver, Gold or Platinum to add payment methods to your profile.'**
   String get paymentLinksTierUpsellBody;
+
+  /// Location picker (search an address, drop a pin)
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a place'**
+  String get locPickerTitle;
+
+  /// Location picker (search an address, drop a pin)
+  ///
+  /// In en, this message translates to:
+  /// **'Search an address or place'**
+  String get locPickerSearchHint;
+
+  /// Location picker (search an address, drop a pin)
+  ///
+  /// In en, this message translates to:
+  /// **'Use this place'**
+  String get locPickerConfirm;
+
+  /// Location picker (search an address, drop a pin)
+  ///
+  /// In en, this message translates to:
+  /// **'Use my current location'**
+  String get locPickerMyLocation;
+
+  /// Location picker (search an address, drop a pin)
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t get your location. Check that location access is allowed.'**
+  String get locPickerLocationUnavailable;
+
+  /// Location picker (search an address, drop a pin)
+  ///
+  /// In en, this message translates to:
+  /// **'No places found'**
+  String get locPickerNoResults;
+
+  /// Location picker (search an address, drop a pin)
+  ///
+  /// In en, this message translates to:
+  /// **'You seem to be offline. Check your connection and try again.'**
+  String get locPickerOffline;
+
+  /// Location picker (search an address, drop a pin)
+  ///
+  /// In en, this message translates to:
+  /// **'Search isn\'t available right now. Try again in a moment.'**
+  String get locPickerUnavailable;
+
+  /// Location picker (search an address, drop a pin)
+  ///
+  /// In en, this message translates to:
+  /// **'Too many searches. Wait a moment and try again.'**
+  String get locPickerRateLimited;
+
+  /// Location picker (search an address, drop a pin)
+  ///
+  /// In en, this message translates to:
+  /// **'Search, or tap the map to drop a pin. Drag the pin to adjust.'**
+  String get locPickerHint;
+
+  /// Location picker (search an address, drop a pin)
+  ///
+  /// In en, this message translates to:
+  /// **'Finding the address…'**
+  String get locPickerFindingAddress;
+
+  /// Location picker (search an address, drop a pin)
+  ///
+  /// In en, this message translates to:
+  /// **'Pinned spot (no address found)'**
+  String get locPickerNoAddress;
+
+  /// Location picker (search an address, drop a pin)
+  ///
+  /// In en, this message translates to:
+  /// **'Clear search'**
+  String get locPickerClear;
+
+  /// Location picker (search an address, drop a pin)
+  ///
+  /// In en, this message translates to:
+  /// **'Recent'**
+  String get locPickerRecent;
+
+  /// Location picker (search an address, drop a pin)
+  ///
+  /// In en, this message translates to:
+  /// **'Selected place. Drag to adjust.'**
+  String get locPickerPinLabel;
 }
 
 class _AppLocalizationsDelegate
