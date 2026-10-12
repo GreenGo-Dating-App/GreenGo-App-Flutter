@@ -16,11 +16,11 @@ Q13 | quotes | QUOTES_ASSIGN 13 | parts/quotes_13.json | done
 Q14 | quotes | QUOTES_ASSIGN 14 | parts/quotes_14.json | done
 Q15 | quotes | QUOTES_ASSIGN 15 | parts/quotes_15.json | done
 Q16 | quotes | QUOTES_ASSIGN 16 | parts/quotes_16.json | done
-Q17 | quotes | QUOTES_ASSIGN 17 | parts/quotes_17.json | running
-Q18 | quotes | QUOTES_ASSIGN 18 | parts/quotes_18.json | running
+Q17 | quotes | QUOTES_ASSIGN 17 | parts/quotes_17.json | done
+Q18 | quotes | QUOTES_ASSIGN 18 | parts/quotes_18.json | done
 Q19 | quotes | QUOTES_ASSIGN 19 | parts/quotes_19.json | running
 Q20 | quotes | QUOTES_ASSIGN 20 | parts/quotes_20.json | running
-Q21 | quotes | QUOTES_ASSIGN 21 | parts/quotes_21.json | todo
+Q21 | quotes | QUOTES_ASSIGN 21 | parts/quotes_21.json | running
 Q22 | quotes | QUOTES_ASSIGN 22 | parts/quotes_22.json | todo
 Q23 | quotes | QUOTES_ASSIGN 23 | parts/quotes_23.json | todo
 Q24 | quotes | QUOTES_ASSIGN 24 | parts/quotes_24.json | todo
@@ -37,8 +37,8 @@ I04 | icebreakers | languages,traditions | parts/icebreakers_04.json | done
 I05 | icebreakers | hometown,work_studies | parts/icebreakers_05.json | done
 I06 | icebreakers | hobbies_creativity,nature_outdoors | parts/icebreakers_06.json | done
 I07 | icebreakers | technology,daily_life | parts/icebreakers_07.json | done
-I08 | icebreakers | dreams_goals,would_you_rather | parts/icebreakers_08.json | running
-I09 | icebreakers | festivals,animals_pets | parts/icebreakers_09.json | todo
+I08 | icebreakers | dreams_goals,would_you_rather | parts/icebreakers_08.json | done
+I09 | icebreakers | festivals,animals_pets | parts/icebreakers_09.json | running
 I10 | icebreakers | art_museums,local_tips | parts/icebreakers_10.json | todo
 S01 | sentences | greetings_intro,getting_to_know | parts/sentences_01.json | done
 S02 | sentences | agree_disagree,compliments | parts/sentences_02.json | done
@@ -49,9 +49,9 @@ S06 | sentences | directions_meeting,weather | parts/sentences_06.json | done
 S07 | sentences | food_talk,restaurant | parts/sentences_07.json | done
 S08 | sentences | shopping,transport | parts/sentences_08.json | done
 S09 | sentences | accommodation,health_emergency | parts/sentences_09.json | done
-S10 | sentences | feelings,encouraging | parts/sentences_10.json | running
-S11 | sentences | small_talk,family | parts/sentences_11.json | todo
-S12 | sentences | work,studies | parts/sentences_12.json | todo
+S10 | sentences | feelings,encouraging | parts/sentences_10.json | done
+S11 | sentences | small_talk,family | parts/sentences_11.json | running
+S12 | sentences | work,studies | parts/sentences_12.json | running
 S13 | sentences | hobbies,travel_stories | parts/sentences_13.json | todo
 S14 | sentences | language_help,clarifying | parts/sentences_14.json | todo
 S15 | sentences | time_dates,money_prices | parts/sentences_15.json | todo

@@ -36,6 +36,8 @@ import '../../data/chat_constants.dart';
 import '../../domain/entities/message.dart';
 import '../bloc/group_chat_bloc.dart';
 import '../../domain/message_insights.dart';
+import '../../../../core/services/chat_datasets/keyword_matcher.dart';
+import '../widgets/keyword_text.dart';
 import '../bloc/group_chat_event.dart';
 import '../bloc/group_chat_state.dart';
 import '../widgets/resolved_users_builder.dart';
@@ -1068,6 +1070,7 @@ class _GroupMessageBubble extends StatelessWidget {
             else
               _TranslatableText(
                 text: message.content,
+                entities: MessageInsights.storedEntities(message.metadata, message.content),
                 color: isMine
                     ? theme.colorScheme.onPrimary
                     : theme.colorScheme.onSurface,
@@ -1103,9 +1106,13 @@ class _TranslatableText extends StatefulWidget {
     this.ttsReadTranslated = true,
     this.currentUserId = '',
     this.sourceLang,
+    this.entities,
   });
 
   final String text;
+
+  /// Keywords the sender stored with the message (MessageInsights).
+  final List<KeywordMatch>? entities;
   final Color color;
   final bool translate;
   final String targetLang;
@@ -1131,11 +1138,18 @@ class _TranslatableTextState extends State<_TranslatableText> {
   bool _failed = false;
   final AudioPlayer _player = AudioPlayer();
 
+  /// Cultural tips (keyword highlights) - the same global switch as 1:1 chats.
+  bool _highlight = true;
+
   @override
   void initState() {
     super.initState();
     AiConsentService.instance.statusListenable.addListener(_onAiConsentChanged);
     _maybeTranslate();
+    SharedPreferences.getInstance().then((p) {
+      final on = p.getBool('chat_showCulturalTips') ?? true;
+      if (mounted && on != _highlight) setState(() => _highlight = on);
+    });
   }
 
   @override
@@ -1257,7 +1271,10 @@ class _TranslatableTextState extends State<_TranslatableText> {
         mainAxisSize: MainAxisSize.min,
         children: [
           Flexible(
-            child: Text(widget.text, style: TextStyle(color: widget.color)),
+            child: KeywordText(widget.text,
+                highlight: _highlight,
+                stored: widget.entities,
+                style: TextStyle(color: widget.color)),
           ),
           if (_loading || _ttsBusy)
             Padding(
@@ -1283,8 +1300,9 @@ class _TranslatableTextState extends State<_TranslatableText> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Flexible(
-                  child:
-                      Text(_translated!, style: TextStyle(color: widget.color))),
+                  child: KeywordText(_translated!,
+                      highlight: _highlight,
+                      style: TextStyle(color: widget.color))),
               if (_ttsBusy)
                 Padding(
                   padding: const EdgeInsets.only(left: 6),
@@ -1295,12 +1313,15 @@ class _TranslatableTextState extends State<_TranslatableText> {
           ),
           if (widget.showOriginal) ...[
             const SizedBox(height: 4),
-            Text(
+            KeywordText(
               widget.text,
+              highlight: _highlight,
+              stored: widget.entities,
               style: theme.textTheme.bodySmall?.copyWith(
-                color: widget.color.withValues(alpha: 0.6),
-                fontStyle: FontStyle.italic,
-              ),
+                    color: widget.color.withValues(alpha: 0.6),
+                    fontStyle: FontStyle.italic,
+                  ) ??
+                  TextStyle(color: widget.color.withValues(alpha: 0.6), fontStyle: FontStyle.italic),
             ),
           ],
         ],
