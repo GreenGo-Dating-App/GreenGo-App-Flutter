@@ -5,6 +5,18 @@ import 'package:flutter/services.dart';
 const String poppinsLicenseAsset = 'assets/fonts/OFL-Poppins.txt';
 const String webFallbackFontsLicenseAsset = 'assets/fonts/OFL-Roboto-Noto.txt';
 
+/// The chat difficulty badge uses word-frequency lists derived from
+/// FrequencyWords (downloaded as part of the chat datasets), CC BY-SA 4.0.
+const String frequencyWordsNotice =
+    'Word-frequency lists derived from FrequencyWords by Hermit Dave '
+    '(https://github.com/hermitdave/FrequencyWords), built from '
+    'OpenSubtitles data.\n\n'
+    'Licensed under the Creative Commons Attribution-ShareAlike 4.0 '
+    'International licence (CC BY-SA 4.0): '
+    'https://creativecommons.org/licenses/by-sa/4.0/\n\n'
+    'GreenGo uses a reduced, derived version of these lists, which is '
+    'shared under the same licence.';
+
 bool _registered = false;
 
 /// Adds the SIL Open Font License texts of the fonts GreenGo ships to
@@ -33,6 +45,10 @@ void registerBundledFontLicenses({bool? isWeb}) {
         await rootBundle.loadString(webFallbackFontsLicenseAsset),
       );
     }
+    yield const LicenseEntryWithLineBreaks(
+      <String>['FrequencyWords (chat difficulty data)'],
+      frequencyWordsNotice,
+    );
   });
 }
 
