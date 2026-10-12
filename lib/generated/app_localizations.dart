@@ -41330,6 +41330,420 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Remove e-mail addresses and phone numbers: people contact you through GreenGo.'**
   String get eventErrContactInfo;
+
+  /// No description provided for @chatKeywordWhichOne.
+  ///
+  /// In en, this message translates to:
+  /// **'Which one?'**
+  String get chatKeywordWhichOne;
+
+  /// No description provided for @chatCityAttractionsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Attractions in {city}'**
+  String chatCityAttractionsTitle(String city);
+
+  /// No description provided for @chatCountryTipsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Cultural tips: {country}'**
+  String chatCountryTipsTitle(String country);
+
+  /// No description provided for @chatCountryTipsEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No cultural tips for this country yet.'**
+  String get chatCountryTipsEmpty;
+
+  /// No description provided for @chatSuggestionsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Suggested sentences'**
+  String get chatSuggestionsTitle;
+
+  /// No description provided for @chatIcebreakersTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Ice-breakers'**
+  String get chatIcebreakersTitle;
+
+  /// No description provided for @chatSuggestionsTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Ideas to write'**
+  String get chatSuggestionsTooltip;
+
+  /// No description provided for @chatQuoteAuthor.
+  ///
+  /// In en, this message translates to:
+  /// **'— {author}'**
+  String chatQuoteAuthor(String author);
+
+  /// No description provided for @chatDatasetsUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Not available offline yet. Connect once to download it.'**
+  String get chatDatasetsUnavailable;
+
+  /// No description provided for @chatTopicTravel.
+  ///
+  /// In en, this message translates to:
+  /// **'Travel'**
+  String get chatTopicTravel;
+
+  /// No description provided for @chatTopicFood.
+  ///
+  /// In en, this message translates to:
+  /// **'Food'**
+  String get chatTopicFood;
+
+  /// No description provided for @chatTopicMusic.
+  ///
+  /// In en, this message translates to:
+  /// **'Music'**
+  String get chatTopicMusic;
+
+  /// No description provided for @chatTopicMoviesSeries.
+  ///
+  /// In en, this message translates to:
+  /// **'Movies & series'**
+  String get chatTopicMoviesSeries;
+
+  /// No description provided for @chatTopicBooks.
+  ///
+  /// In en, this message translates to:
+  /// **'Books'**
+  String get chatTopicBooks;
+
+  /// No description provided for @chatTopicSportsFitness.
+  ///
+  /// In en, this message translates to:
+  /// **'Sports & fitness'**
+  String get chatTopicSportsFitness;
+
+  /// No description provided for @chatTopicLanguages.
+  ///
+  /// In en, this message translates to:
+  /// **'Languages'**
+  String get chatTopicLanguages;
+
+  /// No description provided for @chatTopicTraditions.
+  ///
+  /// In en, this message translates to:
+  /// **'Traditions'**
+  String get chatTopicTraditions;
+
+  /// No description provided for @chatTopicHometown.
+  ///
+  /// In en, this message translates to:
+  /// **'Hometown'**
+  String get chatTopicHometown;
+
+  /// No description provided for @chatTopicWorkStudies.
+  ///
+  /// In en, this message translates to:
+  /// **'Work & studies'**
+  String get chatTopicWorkStudies;
+
+  /// No description provided for @chatTopicHobbiesCreativity.
+  ///
+  /// In en, this message translates to:
+  /// **'Hobbies & creativity'**
+  String get chatTopicHobbiesCreativity;
+
+  /// No description provided for @chatTopicNatureOutdoors.
+  ///
+  /// In en, this message translates to:
+  /// **'Nature & outdoors'**
+  String get chatTopicNatureOutdoors;
+
+  /// No description provided for @chatTopicTechnology.
+  ///
+  /// In en, this message translates to:
+  /// **'Technology'**
+  String get chatTopicTechnology;
+
+  /// No description provided for @chatTopicDailyLife.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily life'**
+  String get chatTopicDailyLife;
+
+  /// No description provided for @chatTopicDreamsGoals.
+  ///
+  /// In en, this message translates to:
+  /// **'Dreams & goals'**
+  String get chatTopicDreamsGoals;
+
+  /// No description provided for @chatTopicWouldYouRather.
+  ///
+  /// In en, this message translates to:
+  /// **'Would you rather'**
+  String get chatTopicWouldYouRather;
+
+  /// No description provided for @chatTopicFestivals.
+  ///
+  /// In en, this message translates to:
+  /// **'Festivals'**
+  String get chatTopicFestivals;
+
+  /// No description provided for @chatTopicAnimalsPets.
+  ///
+  /// In en, this message translates to:
+  /// **'Animals & pets'**
+  String get chatTopicAnimalsPets;
+
+  /// No description provided for @chatTopicArtMuseums.
+  ///
+  /// In en, this message translates to:
+  /// **'Art & museums'**
+  String get chatTopicArtMuseums;
+
+  /// No description provided for @chatTopicLocalTips.
+  ///
+  /// In en, this message translates to:
+  /// **'Local tips'**
+  String get chatTopicLocalTips;
+
+  /// No description provided for @chatTopicGreetingsIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Greetings & introductions'**
+  String get chatTopicGreetingsIntro;
+
+  /// No description provided for @chatTopicGettingToKnow.
+  ///
+  /// In en, this message translates to:
+  /// **'Getting to know someone'**
+  String get chatTopicGettingToKnow;
+
+  /// No description provided for @chatTopicAgreeDisagree.
+  ///
+  /// In en, this message translates to:
+  /// **'Agreeing & disagreeing'**
+  String get chatTopicAgreeDisagree;
+
+  /// No description provided for @chatTopicCompliments.
+  ///
+  /// In en, this message translates to:
+  /// **'Compliments'**
+  String get chatTopicCompliments;
+
+  /// No description provided for @chatTopicApologizing.
+  ///
+  /// In en, this message translates to:
+  /// **'Apologizing'**
+  String get chatTopicApologizing;
+
+  /// No description provided for @chatTopicThanking.
+  ///
+  /// In en, this message translates to:
+  /// **'Thanking'**
+  String get chatTopicThanking;
+
+  /// No description provided for @chatTopicMakingPlans.
+  ///
+  /// In en, this message translates to:
+  /// **'Making plans'**
+  String get chatTopicMakingPlans;
+
+  /// No description provided for @chatTopicInviting.
+  ///
+  /// In en, this message translates to:
+  /// **'Inviting'**
+  String get chatTopicInviting;
+
+  /// No description provided for @chatTopicAcceptDecline.
+  ///
+  /// In en, this message translates to:
+  /// **'Accepting & declining'**
+  String get chatTopicAcceptDecline;
+
+  /// No description provided for @chatTopicRecommendations.
+  ///
+  /// In en, this message translates to:
+  /// **'Recommendations'**
+  String get chatTopicRecommendations;
+
+  /// No description provided for @chatTopicDirectionsMeeting.
+  ///
+  /// In en, this message translates to:
+  /// **'Directions & meeting up'**
+  String get chatTopicDirectionsMeeting;
+
+  /// No description provided for @chatTopicWeather.
+  ///
+  /// In en, this message translates to:
+  /// **'Weather'**
+  String get chatTopicWeather;
+
+  /// No description provided for @chatTopicFoodTalk.
+  ///
+  /// In en, this message translates to:
+  /// **'Talking about food'**
+  String get chatTopicFoodTalk;
+
+  /// No description provided for @chatTopicRestaurant.
+  ///
+  /// In en, this message translates to:
+  /// **'At the restaurant'**
+  String get chatTopicRestaurant;
+
+  /// No description provided for @chatTopicShopping.
+  ///
+  /// In en, this message translates to:
+  /// **'Shopping'**
+  String get chatTopicShopping;
+
+  /// No description provided for @chatTopicTransport.
+  ///
+  /// In en, this message translates to:
+  /// **'Transport'**
+  String get chatTopicTransport;
+
+  /// No description provided for @chatTopicAccommodation.
+  ///
+  /// In en, this message translates to:
+  /// **'Accommodation'**
+  String get chatTopicAccommodation;
+
+  /// No description provided for @chatTopicHealthEmergency.
+  ///
+  /// In en, this message translates to:
+  /// **'Health & emergencies'**
+  String get chatTopicHealthEmergency;
+
+  /// No description provided for @chatTopicFeelings.
+  ///
+  /// In en, this message translates to:
+  /// **'Feelings'**
+  String get chatTopicFeelings;
+
+  /// No description provided for @chatTopicEncouraging.
+  ///
+  /// In en, this message translates to:
+  /// **'Encouraging'**
+  String get chatTopicEncouraging;
+
+  /// No description provided for @chatTopicSmallTalk.
+  ///
+  /// In en, this message translates to:
+  /// **'Small talk'**
+  String get chatTopicSmallTalk;
+
+  /// No description provided for @chatTopicFamily.
+  ///
+  /// In en, this message translates to:
+  /// **'Family'**
+  String get chatTopicFamily;
+
+  /// No description provided for @chatTopicWork.
+  ///
+  /// In en, this message translates to:
+  /// **'Work'**
+  String get chatTopicWork;
+
+  /// No description provided for @chatTopicStudies.
+  ///
+  /// In en, this message translates to:
+  /// **'Studies'**
+  String get chatTopicStudies;
+
+  /// No description provided for @chatTopicHobbies.
+  ///
+  /// In en, this message translates to:
+  /// **'Hobbies'**
+  String get chatTopicHobbies;
+
+  /// No description provided for @chatTopicTravelStories.
+  ///
+  /// In en, this message translates to:
+  /// **'Travel stories'**
+  String get chatTopicTravelStories;
+
+  /// No description provided for @chatTopicLanguageHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Language help'**
+  String get chatTopicLanguageHelp;
+
+  /// No description provided for @chatTopicClarifying.
+  ///
+  /// In en, this message translates to:
+  /// **'Clarifying'**
+  String get chatTopicClarifying;
+
+  /// No description provided for @chatTopicTimeDates.
+  ///
+  /// In en, this message translates to:
+  /// **'Time & dates'**
+  String get chatTopicTimeDates;
+
+  /// No description provided for @chatTopicMoneyPrices.
+  ///
+  /// In en, this message translates to:
+  /// **'Money & prices'**
+  String get chatTopicMoneyPrices;
+
+  /// No description provided for @chatTopicCelebrating.
+  ///
+  /// In en, this message translates to:
+  /// **'Celebrating'**
+  String get chatTopicCelebrating;
+
+  /// No description provided for @chatTopicSupportCondolences.
+  ///
+  /// In en, this message translates to:
+  /// **'Support & condolences'**
+  String get chatTopicSupportCondolences;
+
+  /// No description provided for @chatTopicGoodbyes.
+  ///
+  /// In en, this message translates to:
+  /// **'Goodbyes'**
+  String get chatTopicGoodbyes;
+
+  /// No description provided for @chatTopicKeepingInTouch.
+  ///
+  /// In en, this message translates to:
+  /// **'Keeping in touch'**
+  String get chatTopicKeepingInTouch;
+
+  /// No description provided for @chatTopicVideoCalls.
+  ///
+  /// In en, this message translates to:
+  /// **'Video calls'**
+  String get chatTopicVideoCalls;
+
+  /// No description provided for @chatTopicSharingPhotos.
+  ///
+  /// In en, this message translates to:
+  /// **'Sharing photos'**
+  String get chatTopicSharingPhotos;
+
+  /// No description provided for @chatTopicCultureQuestions.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions about culture'**
+  String get chatTopicCultureQuestions;
+
+  /// No description provided for @chatTopicHumorReactions.
+  ///
+  /// In en, this message translates to:
+  /// **'Humor & reactions'**
+  String get chatTopicHumorReactions;
+
+  /// No description provided for @chatTopicEventsRsvp.
+  ///
+  /// In en, this message translates to:
+  /// **'Events'**
+  String get chatTopicEventsRsvp;
+
+  /// No description provided for @chatTopicLanguageProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'Language progress'**
+  String get chatTopicLanguageProgress;
 }
 
 class _AppLocalizationsDelegate

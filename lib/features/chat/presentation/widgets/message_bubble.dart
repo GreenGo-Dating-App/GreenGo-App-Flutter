@@ -17,6 +17,8 @@ import '../../../../features/coins/data/datasources/coin_remote_datasource.dart'
 import '../../../../features/coins/presentation/screens/coin_shop_screen.dart';
 import '../../../../features/membership/domain/entities/membership.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../domain/message_insights.dart';
+import 'keyword_text.dart';
 import '../utils/chat_l10n.dart';
 import '../../domain/entities/message.dart';
 import 'location_message_map.dart';
@@ -104,7 +106,6 @@ class _MessageBubbleState extends State<MessageBubble> {
   // Learning enhancement state
   String? _difficultyLevel;
   String? _romanizedText;
-  String? _culturalTooltip;
   /// Set once a fetch has been kicked off, so a rebuild storm cannot fire
   /// several Gemini calls for the same bubble.
   bool _enhancementsRequested = false;
@@ -218,7 +219,11 @@ class _MessageBubbleState extends State<MessageBubble> {
     // Load difficulty
     setState(() => _loadingDifficulty = true);
     try {
-      final level = await service.getMessageDifficulty(message.content, language);
+      final stored = MessageInsights.storedLevel(message.metadata);
+      final entities = MessageInsights.storedEntities(message.metadata, message.content);
+      final level = stored ??
+          await service.getMessageDifficulty(message.content, language,
+              skip: [for (final e in entities ?? const []) (e.start, e.end)]);
       if (mounted) setState(() { _difficultyLevel = level; _loadingDifficulty = false; });
     } catch (e) {
       if (mounted) setState(() => _loadingDifficulty = false);
@@ -232,14 +237,6 @@ class _MessageBubbleState extends State<MessageBubble> {
     } catch (e) {
       if (mounted) setState(() => _loadingRomanization = false);
     }
-
-    // Load cultural tooltip
-    try {
-      final tooltip = await service.getCulturalTooltip(message.content, language);
-      if (mounted) setState(() => _culturalTooltip = tooltip);
-    } catch (e) {
-      debugPrint('Cultural tooltip error: $e');
-    }
   }
 
   Color _getDifficultyColor(String level) {
@@ -252,25 +249,6 @@ class _MessageBubbleState extends State<MessageBubble> {
       case 'C2': return Colors.purple;
       default: return Colors.grey;
     }
-  }
-
-  void _showCulturalTooltip() {
-    if (_culturalTooltip == null) return;
-    showDialog(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: Row(
-          children: [
-            const Icon(Icons.lightbulb, color: AppColors.richGold),
-            const SizedBox(width: 8),
-            Text(AppLocalizations.of(ctx)!.chatCulturalContextTitle, style: const TextStyle(color: AppColors.textPrimary)),
-          ],
-        ),
-        content: Text(_culturalTooltip!, style: const TextStyle(color: AppColors.textSecondary)),
-        actions: [TextButton(onPressed: () => Navigator.pop(ctx), child: Text(AppLocalizations.of(ctx)!.ok))],
-      ),
-    );
   }
 
   Future<void> _showWordBreakdown() async {
@@ -903,8 +881,9 @@ class _MessageBubbleState extends State<MessageBubble> {
                   Text(translatedFlag, style: const TextStyle(fontSize: 14)),
                   const SizedBox(width: 6),
                   Expanded(
-                    child: Text(
+                    child: KeywordText(
                       message.translatedContent!,
+                      highlight: widget.showCulturalTips,
                       style: TextStyle(
                         color: isCurrentUser ? AppColors.deepBlack : AppColors.textPrimary,
                         fontSize: 15,
@@ -915,10 +894,14 @@ class _MessageBubbleState extends State<MessageBubble> {
                 ],
               ),
             ] else ...[
-              Text(
+              KeywordText(
                 hasTranslation
                     ? message.translatedContent!
                     : chatMessageDisplayText(l10n, message),
+                highlight: widget.showCulturalTips,
+                stored: hasTranslation
+                    ? null
+                    : MessageInsights.storedEntities(message.metadata, message.content),
                 style: TextStyle(
                   color: isCurrentUser ? AppColors.deepBlack : AppColors.textPrimary,
                   fontSize: 15,
@@ -945,8 +928,10 @@ class _MessageBubbleState extends State<MessageBubble> {
                       const SizedBox(width: 5),
                     ],
                     Expanded(
-                      child: Text(
+                      child: KeywordText(
                         message.content,
+                        highlight: widget.showCulturalTips,
+                        stored: MessageInsights.storedEntities(message.metadata, message.content),
                         style: TextStyle(
                           color: isCurrentUser
                               ? AppColors.deepBlack.withValues(alpha: 0.7)
@@ -971,28 +956,6 @@ class _MessageBubbleState extends State<MessageBubble> {
                   fontSize: 12,
                   fontStyle: FontStyle.italic,
                   height: 1.3,
-                ),
-              ),
-            ],
-            // Cultural tooltip icon
-            if (_culturalTooltip != null && !isCurrentUser && widget.showCulturalTips) ...[
-              const SizedBox(height: 4),
-              GestureDetector(
-                onTap: _showCulturalTooltip,
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    const Text('\u{1F4A1}', style: TextStyle(fontSize: 14)),
-                    const SizedBox(width: 4),
-                    Text(
-                      AppLocalizations.of(context)!.chatCulturalContextLink,
-                      style: const TextStyle(
-                        color: AppColors.richGold,
-                        fontSize: 11,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ],
                 ),
               ),
             ],

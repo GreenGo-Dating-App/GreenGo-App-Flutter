@@ -24423,4 +24423,219 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get eventErrContactInfo =>
       'Entferne E-Mail-Adressen und Telefonnummern: Andere kontaktieren dich über GreenGo.';
+
+  @override
+  String get chatKeywordWhichOne => 'Welches?';
+
+  @override
+  String chatCityAttractionsTitle(String city) {
+    return 'Sehenswürdigkeiten in $city';
+  }
+
+  @override
+  String chatCountryTipsTitle(String country) {
+    return 'Kulturtipps: $country';
+  }
+
+  @override
+  String get chatCountryTipsEmpty =>
+      'Für dieses Land gibt es noch keine Kulturtipps.';
+
+  @override
+  String get chatSuggestionsTitle => 'Satzvorschläge';
+
+  @override
+  String get chatIcebreakersTitle => 'Eisbrecher';
+
+  @override
+  String get chatSuggestionsTooltip => 'Ideen zum Schreiben';
+
+  @override
+  String chatQuoteAuthor(String author) {
+    return '— $author';
+  }
+
+  @override
+  String get chatDatasetsUnavailable =>
+      'Noch nicht offline verfügbar. Verbinde dich einmal, um es herunterzuladen.';
+
+  @override
+  String get chatTopicTravel => 'Reisen';
+
+  @override
+  String get chatTopicFood => 'Essen';
+
+  @override
+  String get chatTopicMusic => 'Musik';
+
+  @override
+  String get chatTopicMoviesSeries => 'Filme & Serien';
+
+  @override
+  String get chatTopicBooks => 'Bücher';
+
+  @override
+  String get chatTopicSportsFitness => 'Sport & Fitness';
+
+  @override
+  String get chatTopicLanguages => 'Sprachen';
+
+  @override
+  String get chatTopicTraditions => 'Traditionen';
+
+  @override
+  String get chatTopicHometown => 'Heimatstadt';
+
+  @override
+  String get chatTopicWorkStudies => 'Arbeit & Studium';
+
+  @override
+  String get chatTopicHobbiesCreativity => 'Hobbys & Kreativität';
+
+  @override
+  String get chatTopicNatureOutdoors => 'Natur & Draußen';
+
+  @override
+  String get chatTopicTechnology => 'Technik';
+
+  @override
+  String get chatTopicDailyLife => 'Alltag';
+
+  @override
+  String get chatTopicDreamsGoals => 'Träume & Ziele';
+
+  @override
+  String get chatTopicWouldYouRather => 'Was wäre dir lieber';
+
+  @override
+  String get chatTopicFestivals => 'Feste';
+
+  @override
+  String get chatTopicAnimalsPets => 'Tiere & Haustiere';
+
+  @override
+  String get chatTopicArtMuseums => 'Kunst & Museen';
+
+  @override
+  String get chatTopicLocalTips => 'Lokale Tipps';
+
+  @override
+  String get chatTopicGreetingsIntro => 'Begrüßung & Vorstellung';
+
+  @override
+  String get chatTopicGettingToKnow => 'Sich kennenlernen';
+
+  @override
+  String get chatTopicAgreeDisagree => 'Zustimmen & widersprechen';
+
+  @override
+  String get chatTopicCompliments => 'Komplimente';
+
+  @override
+  String get chatTopicApologizing => 'Sich entschuldigen';
+
+  @override
+  String get chatTopicThanking => 'Danken';
+
+  @override
+  String get chatTopicMakingPlans => 'Pläne machen';
+
+  @override
+  String get chatTopicInviting => 'Einladen';
+
+  @override
+  String get chatTopicAcceptDecline => 'Zusagen & absagen';
+
+  @override
+  String get chatTopicRecommendations => 'Empfehlungen';
+
+  @override
+  String get chatTopicDirectionsMeeting => 'Wegbeschreibung & Treffen';
+
+  @override
+  String get chatTopicWeather => 'Wetter';
+
+  @override
+  String get chatTopicFoodTalk => 'Über Essen reden';
+
+  @override
+  String get chatTopicRestaurant => 'Im Restaurant';
+
+  @override
+  String get chatTopicShopping => 'Einkaufen';
+
+  @override
+  String get chatTopicTransport => 'Verkehr';
+
+  @override
+  String get chatTopicAccommodation => 'Unterkunft';
+
+  @override
+  String get chatTopicHealthEmergency => 'Gesundheit & Notfälle';
+
+  @override
+  String get chatTopicFeelings => 'Gefühle';
+
+  @override
+  String get chatTopicEncouraging => 'Ermutigen';
+
+  @override
+  String get chatTopicSmallTalk => 'Smalltalk';
+
+  @override
+  String get chatTopicFamily => 'Familie';
+
+  @override
+  String get chatTopicWork => 'Arbeit';
+
+  @override
+  String get chatTopicStudies => 'Studium';
+
+  @override
+  String get chatTopicHobbies => 'Hobbys';
+
+  @override
+  String get chatTopicTravelStories => 'Reisegeschichten';
+
+  @override
+  String get chatTopicLanguageHelp => 'Sprachhilfe';
+
+  @override
+  String get chatTopicClarifying => 'Nachfragen';
+
+  @override
+  String get chatTopicTimeDates => 'Uhrzeit & Datum';
+
+  @override
+  String get chatTopicMoneyPrices => 'Geld & Preise';
+
+  @override
+  String get chatTopicCelebrating => 'Feiern';
+
+  @override
+  String get chatTopicSupportCondolences => 'Beistand & Beileid';
+
+  @override
+  String get chatTopicGoodbyes => 'Abschied';
+
+  @override
+  String get chatTopicKeepingInTouch => 'In Kontakt bleiben';
+
+  @override
+  String get chatTopicVideoCalls => 'Videoanrufe';
+
+  @override
+  String get chatTopicSharingPhotos => 'Fotos teilen';
+
+  @override
+  String get chatTopicCultureQuestions => 'Fragen zur Kultur';
+
+  @override
+  String get chatTopicHumorReactions => 'Humor & Reaktionen';
+
+  @override
+  String get chatTopicEventsRsvp => 'Veranstaltungen';
+
+  @override
+  String get chatTopicLanguageProgress => 'Sprachfortschritt';
 }

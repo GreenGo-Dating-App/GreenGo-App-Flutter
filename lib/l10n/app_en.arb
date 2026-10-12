@@ -13437,5 +13437,95 @@
   "eventErrContactInfo": "Remove e-mail addresses and phone numbers: people contact you through GreenGo.",
   "@eventErrContactInfo": {
     "description": "Event editor: title/description/place contain an e-mail or phone number"
-  }
+  },
+  "chatKeywordWhichOne": "Which one?",
+  "chatCityAttractionsTitle": "Attractions in {city}",
+  "@chatCityAttractionsTitle": {
+    "placeholders": {
+      "city": {
+        "type": "String"
+      }
+    }
+  },
+  "chatCountryTipsTitle": "Cultural tips: {country}",
+  "@chatCountryTipsTitle": {
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "chatCountryTipsEmpty": "No cultural tips for this country yet.",
+  "chatSuggestionsTitle": "Suggested sentences",
+  "chatIcebreakersTitle": "Ice-breakers",
+  "chatSuggestionsTooltip": "Ideas to write",
+  "chatQuoteAuthor": "— {author}",
+  "@chatQuoteAuthor": {
+    "placeholders": {
+      "author": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDatasetsUnavailable": "Not available offline yet. Connect once to download it.",
+  "chatTopicTravel": "Travel",
+  "chatTopicFood": "Food",
+  "chatTopicMusic": "Music",
+  "chatTopicMoviesSeries": "Movies & series",
+  "chatTopicBooks": "Books",
+  "chatTopicSportsFitness": "Sports & fitness",
+  "chatTopicLanguages": "Languages",
+  "chatTopicTraditions": "Traditions",
+  "chatTopicHometown": "Hometown",
+  "chatTopicWorkStudies": "Work & studies",
+  "chatTopicHobbiesCreativity": "Hobbies & creativity",
+  "chatTopicNatureOutdoors": "Nature & outdoors",
+  "chatTopicTechnology": "Technology",
+  "chatTopicDailyLife": "Daily life",
+  "chatTopicDreamsGoals": "Dreams & goals",
+  "chatTopicWouldYouRather": "Would you rather",
+  "chatTopicFestivals": "Festivals",
+  "chatTopicAnimalsPets": "Animals & pets",
+  "chatTopicArtMuseums": "Art & museums",
+  "chatTopicLocalTips": "Local tips",
+  "chatTopicGreetingsIntro": "Greetings & introductions",
+  "chatTopicGettingToKnow": "Getting to know someone",
+  "chatTopicAgreeDisagree": "Agreeing & disagreeing",
+  "chatTopicCompliments": "Compliments",
+  "chatTopicApologizing": "Apologizing",
+  "chatTopicThanking": "Thanking",
+  "chatTopicMakingPlans": "Making plans",
+  "chatTopicInviting": "Inviting",
+  "chatTopicAcceptDecline": "Accepting & declining",
+  "chatTopicRecommendations": "Recommendations",
+  "chatTopicDirectionsMeeting": "Directions & meeting up",
+  "chatTopicWeather": "Weather",
+  "chatTopicFoodTalk": "Talking about food",
+  "chatTopicRestaurant": "At the restaurant",
+  "chatTopicShopping": "Shopping",
+  "chatTopicTransport": "Transport",
+  "chatTopicAccommodation": "Accommodation",
+  "chatTopicHealthEmergency": "Health & emergencies",
+  "chatTopicFeelings": "Feelings",
+  "chatTopicEncouraging": "Encouraging",
+  "chatTopicSmallTalk": "Small talk",
+  "chatTopicFamily": "Family",
+  "chatTopicWork": "Work",
+  "chatTopicStudies": "Studies",
+  "chatTopicHobbies": "Hobbies",
+  "chatTopicTravelStories": "Travel stories",
+  "chatTopicLanguageHelp": "Language help",
+  "chatTopicClarifying": "Clarifying",
+  "chatTopicTimeDates": "Time & dates",
+  "chatTopicMoneyPrices": "Money & prices",
+  "chatTopicCelebrating": "Celebrating",
+  "chatTopicSupportCondolences": "Support & condolences",
+  "chatTopicGoodbyes": "Goodbyes",
+  "chatTopicKeepingInTouch": "Keeping in touch",
+  "chatTopicVideoCalls": "Video calls",
+  "chatTopicSharingPhotos": "Sharing photos",
+  "chatTopicCultureQuestions": "Questions about culture",
+  "chatTopicHumorReactions": "Humor & reactions",
+  "chatTopicEventsRsvp": "Events",
+  "chatTopicLanguageProgress": "Language progress"
 }

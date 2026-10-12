@@ -35,6 +35,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../data/chat_constants.dart';
 import '../../domain/entities/message.dart';
 import '../bloc/group_chat_bloc.dart';
+import '../../domain/message_insights.dart';
 import '../bloc/group_chat_event.dart';
 import '../bloc/group_chat_state.dart';
 import '../widgets/resolved_users_builder.dart';
@@ -364,7 +365,11 @@ class _GroupChatViewState extends State<_GroupChatView> {
     }
     context
         .read<GroupChatBloc>()
-        .add(GroupChatMessageSent(content: text));
+        .add(GroupChatMessageSent(
+          content: text,
+          metadata: MessageInsights.metadataFor(text,
+              language: Localizations.localeOf(context).languageCode),
+        ));
     _controller.clear();
     // Same "message sent" sound as 1:1 exchanges.
     AppSoundService().play(AppSound.messageSent);

@@ -22,6 +22,7 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/providers/language_provider.dart';
 import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/services/chat_learning_service.dart';
+import '../../domain/message_insights.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/services/location_share_service.dart';
 import '../../../../core/services/place_search_service.dart';
@@ -710,7 +711,11 @@ class _ChatScreenState extends State<ChatScreen> {
       ));
       _clearReplyMessage();
     } else {
-      _addSend(ChatMessageSent(content: content));
+      _addSend(ChatMessageSent(
+        content: content,
+        // Offline keywords + CEFR level for the receiver (MessageInsights).
+        metadata: MessageInsights.metadataFor(content, language: _userLanguage),
+      ));
     }
 
     // Play the "message sent" sound effect.
