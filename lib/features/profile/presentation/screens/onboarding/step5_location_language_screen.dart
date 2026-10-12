@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -7,6 +8,7 @@ import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 
 import '../../../../../core/constants/app_colors.dart';
+import '../../../../../core/services/web_location_fallback.dart';
 import '../../../../../core/widgets/connection_error_dialog.dart';
 import '../../../../../generated/app_localizations.dart';
 import 'onboarding_value_labels.dart';
@@ -64,6 +66,10 @@ class _Step5LocationLanguageScreenState
   bool _isLoadingLocation = false;
   String? _locationError;
 
+  /// True while the automatic detection on opening the step runs: a failure
+  /// then only shows the inline error, never a dialog the user did not ask for.
+  bool _silentErrors = false;
+
   @override
   void initState() {
     super.initState();
@@ -71,6 +77,21 @@ class _Step5LocationLanguageScreenState
     if (state is OnboardingInProgress) {
       _selectedLanguages = List.from(state.languages);
       _selectedLocation = state.location;
+    }
+    // Web: detect the location as soon as the step opens (the button stays
+    // for a retry).
+    if (kIsWeb && _selectedLocation == null) {
+      WidgetsBinding.instance.addPostFrameCallback((_) => _autoDetect());
+    }
+  }
+
+  Future<void> _autoDetect() async {
+    if (!mounted || _isLoadingLocation || _selectedLocation != null) return;
+    _silentErrors = true;
+    try {
+      await _getCurrentLocation();
+    } finally {
+      _silentErrors = false;
     }
   }
 
@@ -83,6 +104,8 @@ class _Step5LocationLanguageScreenState
       _isLoadingLocation = true;
       _locationError = null;
     });
+
+    if (kIsWeb) return _getWebLocation(l10n);
 
     try {
       // Check if location services are enabled
@@ -191,6 +214,62 @@ class _Step5LocationLanguageScreenState
     }
   }
 
+  /// Web: the `geocoding` plugin has no web implementation
+  /// (`placemarkFromCoordinates` always throws there), so the browser position
+  /// is turned into a city through the server (`reverseGeocodeCoarse`). When
+  /// the browser gives no position (denied, timeout) or the lookup fails, the
+  /// approximate IP location fills the gap; the user can correct it later.
+  Future<void> _getWebLocation(AppLocalizations? l10n) async {
+    Position? position;
+    try {
+      var permission = await Geolocator.checkPermission();
+      if (permission == LocationPermission.denied) {
+        permission = await Geolocator.requestPermission();
+      }
+      if (permission != LocationPermission.denied &&
+          permission != LocationPermission.deniedForever) {
+        position = await Geolocator.getCurrentPosition(
+          desiredAccuracy: LocationAccuracy.high,
+        ).timeout(const Duration(seconds: 20));
+      }
+    } catch (e) {
+      debugPrint('[Onboarding] browser location unavailable: $e');
+    }
+
+    location_entity.Location? location;
+    if (position != null) {
+      location = await WebLocationFallback.reverseGeocode(
+          position.latitude, position.longitude);
+    }
+    if (location == null) {
+      final approx = await WebLocationFallback.fromIpAddress();
+      if (approx != null) {
+        location = position == null
+            ? approx
+            : location_entity.Location(
+                latitude: position.latitude,
+                longitude: position.longitude,
+                city: approx.city,
+                country: approx.country,
+                displayAddress: approx.displayAddress,
+              );
+      }
+    }
+    if (!mounted) return;
+    if (location == null) {
+      _showLocationError(
+        l10n?.locationUnavailableTitle ?? 'Location Unavailable',
+        l10n?.locationUnavailable ??
+            'Unable to get your location at the moment. You can set it manually later in settings.',
+      );
+      return;
+    }
+    setState(() {
+      _selectedLocation = location;
+      _isLoadingLocation = false;
+    });
+  }
+
   void _showLocationError(String title, String message) {
     setState(() {
       _isLoadingLocation = false;
@@ -198,7 +277,7 @@ class _Step5LocationLanguageScreenState
     });
 
     // Show a graceful dialog
-    if (mounted) {
+    if (mounted && !_silentErrors) {
       ConnectionErrorDialog.showError(
         context,
         title: title,

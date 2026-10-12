@@ -373,8 +373,13 @@
         if (!handler) return;
         try { handler(type); } catch (e) {}
       }
+      // Phones / tablets (iPadOS reports a Mac UA, hence maxTouchPoints): no
+      // blur on focus loss. The photo picker and app switcher take focus and
+      // iOS Safari often never gives it back, leaving the page blurred.
+      var mobile = /Android|iPhone|iPad|iPod|Mobi/i.test(navigator.userAgent)
+        || (navigator.maxTouchPoints > 1 && /Macintosh/.test(navigator.userAgent));
       function obscure(on) {
-        if (on && !enabled) return;
+        if (on && (!enabled || mobile)) return;
         if (on) root.classList.add('gg-obscured');
         else root.classList.remove('gg-obscured');
       }
@@ -388,7 +393,7 @@
         // Let the activeElement settle first: it becomes the iframe only
         // after the blur event.
         setTimeout(function () {
-          if (focusInFrame() || document.hasFocus()) return;
+          if (mobile || focusInFrame() || document.hasFocus()) return;
           obscure(true);
           emit('blur');
         }, 0);
@@ -398,6 +403,7 @@
         emit('focus');
       });
       document.addEventListener('visibilitychange', function () {
+        if (mobile) return;
         var hidden = document.visibilityState === 'hidden';
         obscure(hidden);
         emit(hidden ? 'hidden' : 'visible');

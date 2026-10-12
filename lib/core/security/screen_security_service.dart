@@ -80,6 +80,8 @@ class ScreenSecurityService {
     }
   }
 
+  /// Android / iOS, natively or in a phone/tablet browser (on web
+  /// [defaultTargetPlatform] follows the browser's user agent).
   static bool get _isMobile =>
       defaultTargetPlatform == TargetPlatform.android ||
       defaultTargetPlatform == TargetPlatform.iOS;
@@ -134,6 +136,12 @@ class ScreenSecurityService {
   void handleWebEvent(String event) {
     final signal = captureSignalForWebEvent(event);
     if (signal != null) {
+      // Phone/tablet browsers: no "away" cover. The OS photo picker, share
+      // sheet and app switcher all take focus, and iOS Safari often never
+      // sends `focus` back, so the blurred black cover stuck on screen and
+      // blocked the picked photo (onboarding photos step). The shim in
+      // web/index.html skips its CSS blur on the same devices.
+      if (_isMobile) return;
       _signal(signal);
       return;
     }

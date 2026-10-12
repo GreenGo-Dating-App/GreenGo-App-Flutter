@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:greengo_chat/core/security/capture_protection_state.dart';
@@ -111,6 +112,8 @@ void main() {
     });
 
     test('web focus loss covers; shortcuts produce a blocked event', () async {
+      debugDefaultTargetPlatformOverride = TargetPlatform.windows;
+      addTearDown(() => debugDefaultTargetPlatformOverride = null);
       service.handleWebEvent('blur');
       expect(service.state.value.cover, CaptureCover.away);
       service.handleWebEvent('focus');
@@ -119,6 +122,21 @@ void main() {
       final got = expectLater(
           service.events, emits(ScreenCaptureEvent.blockedShortcut));
       service.handleWebEvent('printscreen');
+      await got;
+    });
+
+    test('phone/tablet browsers never get the away cover', () async {
+      for (final platform in [TargetPlatform.iOS, TargetPlatform.android]) {
+        debugDefaultTargetPlatformOverride = platform;
+        service.handleWebEvent('blur');
+        service.handleWebEvent('hidden');
+        expect(service.state.value.cover, CaptureCover.none, reason: '$platform');
+      }
+      debugDefaultTargetPlatformOverride = null;
+
+      final got = expectLater(
+          service.events, emits(ScreenCaptureEvent.blockedShortcut));
+      service.handleWebEvent('print');
       await got;
     });
 
