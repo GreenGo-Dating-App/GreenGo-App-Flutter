@@ -60,8 +60,8 @@ class _BusinessVerificationRequestScreenState
   @override
   void initState() {
     super.initState();
-    _businessNameController.text = widget.profile.businessName ??
-        widget.profile.displayName;
+    _businessNameController.text =
+        widget.profile.businessName ?? widget.profile.displayName;
     // NOTE: no per-keystroke setState here. Typing in the name fields used to
     // rebuild the WHOLE form (this screen), which tore down the sibling text
     // fields' IME connection — that's why the phone field couldn't be typed
@@ -418,82 +418,81 @@ class _BusinessVerificationRequestScreenState
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Row(
-          children: [
-            Expanded(
-              child: _field(
-                _phoneController,
-                icon: Icons.phone_outlined,
-                fieldKey: 'phone',
-                hint: l10n.verifyPhoneHint,
-                keyboardType: TextInputType.phone,
-                enabled: !_phoneVerified,
-              ),
-            ),
-            const SizedBox(width: 8),
-            if (_phoneVerified)
-              const Padding(
-                padding: EdgeInsets.only(left: 4),
-                child: Icon(Icons.verified, color: AppColors.richGold),
-              )
-            else
-              OutlinedButton(
-                onPressed: _sendingCode ? null : _sendCode,
-                style: OutlinedButton.styleFrom(
-                  foregroundColor: AppColors.richGold,
-                  side: const BorderSide(color: AppColors.richGold),
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 14, vertical: 14),
-                ),
-                child: _sendingCode
-                    ? const SizedBox(
-                        width: 16,
-                        height: 16,
-                        child: CircularProgressIndicator(
-                          strokeWidth: 2,
-                          valueColor:
-                              AlwaysStoppedAnimation<Color>(AppColors.richGold),
-                        ),
-                      )
-                    : Text(_codeSent ? l10n.verifyResendCode : l10n.verifySendCode),
-              ),
-          ],
+        // Field and button are stacked, not side by side: on a phone the
+        // button left the number field too narrow to read (and the theme's
+        // full-width button minimumSize broke the Row outright).
+        _field(
+          _phoneController,
+          icon: Icons.phone_outlined,
+          fieldKey: 'phone',
+          hint: l10n.verifyPhoneHint,
+          keyboardType: TextInputType.phone,
+          enabled: !_phoneVerified,
+          suffix: _phoneVerified
+              ? const Icon(Icons.verified, color: AppColors.richGold)
+              : null,
         ),
+        if (!_phoneVerified) ...[
+          const SizedBox(height: 8),
+          SizedBox(
+            width: double.infinity,
+            child: OutlinedButton(
+              onPressed: _sendingCode ? null : _sendCode,
+              style: OutlinedButton.styleFrom(
+                foregroundColor: AppColors.richGold,
+                side: const BorderSide(color: AppColors.richGold),
+                minimumSize: const Size(0, 48),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
+              ),
+              child: _sendingCode
+                  ? const SizedBox(
+                      width: 16,
+                      height: 16,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        valueColor:
+                            AlwaysStoppedAnimation<Color>(AppColors.richGold),
+                      ),
+                    )
+                  : Text(
+                      _codeSent ? l10n.verifyResendCode : l10n.verifySendCode),
+            ),
+          ),
+        ],
         if (_codeSent && !_phoneVerified) ...[
           const SizedBox(height: 10),
-          Row(
-            children: [
-              Expanded(
-                child: _field(
-                  _codeController,
-                  icon: Icons.sms_outlined,
-                  fieldKey: 'code',
-                  hint: l10n.verifyEnterCodeLabel,
-                  keyboardType: TextInputType.number,
-                ),
+          _field(
+            _codeController,
+            icon: Icons.sms_outlined,
+            fieldKey: 'code',
+            hint: l10n.verifyEnterCodeLabel,
+            keyboardType: TextInputType.number,
+          ),
+          const SizedBox(height: 8),
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: _verifyingCode ? null : _verifyCode,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.richGold,
+                foregroundColor: AppColors.deepBlack,
+                minimumSize: const Size(0, 48),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
               ),
-              const SizedBox(width: 8),
-              ElevatedButton(
-                onPressed: _verifyingCode ? null : _verifyCode,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.richGold,
-                  foregroundColor: AppColors.deepBlack,
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 16, vertical: 14),
-                ),
-                child: _verifyingCode
-                    ? const SizedBox(
-                        width: 16,
-                        height: 16,
-                        child: CircularProgressIndicator(
-                          strokeWidth: 2,
-                          valueColor:
-                              AlwaysStoppedAnimation<Color>(AppColors.deepBlack),
-                        ),
-                      )
-                    : Text(l10n.verifyConfirmCode),
-              ),
-            ],
+              child: _verifyingCode
+                  ? const SizedBox(
+                      width: 16,
+                      height: 16,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        valueColor:
+                            AlwaysStoppedAnimation<Color>(AppColors.deepBlack),
+                      ),
+                    )
+                  : Text(l10n.verifyConfirmCode),
+            ),
           ),
         ],
         if (_phoneVerified)
@@ -523,7 +522,8 @@ class _BusinessVerificationRequestScreenState
       child: OutlinedButton.icon(
         onPressed: _uploadingDocument ? null : _pickDocument,
         style: OutlinedButton.styleFrom(
-          foregroundColor: uploaded ? AppColors.richGold : AppColors.textPrimary,
+          foregroundColor:
+              uploaded ? AppColors.richGold : AppColors.textPrimary,
           side: BorderSide(
             color: uploaded ? AppColors.richGold : AppColors.divider,
           ),
@@ -577,6 +577,7 @@ class _BusinessVerificationRequestScreenState
     int maxLines = 1,
     bool enabled = true,
     TextInputType? keyboardType,
+    Widget? suffix,
   }) {
     return TextField(
       // A distinct, STABLE key per field so Flutter never re-maps one field's
@@ -589,6 +590,7 @@ class _BusinessVerificationRequestScreenState
       style: const TextStyle(color: AppColors.textPrimary),
       decoration: InputDecoration(
         prefixIcon: Icon(icon, color: AppColors.richGold, size: 20),
+        suffixIcon: suffix,
         hintText: hint,
         hintStyle: const TextStyle(color: AppColors.textTertiary),
         filled: true,
