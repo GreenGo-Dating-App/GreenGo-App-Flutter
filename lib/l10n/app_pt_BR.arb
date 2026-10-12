@@ -7444,5 +7444,6 @@
   "participationBaseRequiredBody": "Para participar de eventos e reservar experiências você precisa de uma assinatura Base (ou Silver, Gold ou Platinum).",
   "participationBaseRequiredCta": "Assinar a Base",
   "participationBaseRequiredHint": "Requer assinatura Base",
-  "membershipBenefitJoinEvents": "Participar de eventos e reservar experiências"
+  "membershipBenefitJoinEvents": "Participar de eventos e reservar experiências",
+  "eventErrContactInfo": "Remova e-mails e números de telefone: as pessoas falam com você pelo GreenGo."
 }

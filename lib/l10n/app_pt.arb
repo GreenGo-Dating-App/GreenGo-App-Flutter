@@ -7444,5 +7444,6 @@
   "participationBaseRequiredBody": "Para participar em eventos e reservar experiências precisas de uma subscrição Base (ou Silver, Gold ou Platinum).",
   "participationBaseRequiredCta": "Obter a subscrição Base",
   "participationBaseRequiredHint": "Requer subscrição Base",
-  "membershipBenefitJoinEvents": "Participar em eventos e reservar experiências"
+  "membershipBenefitJoinEvents": "Participar em eventos e reservar experiências",
+  "eventErrContactInfo": "Remove e-mails e números de telefone: as pessoas contactam-te através do GreenGo."
 }

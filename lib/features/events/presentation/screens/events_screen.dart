@@ -94,6 +94,7 @@ import '../../../../core/services/paid_listing_access.dart';
 import '../../../business/presentation/widgets/paid_business_note.dart';
 import '../../../copyright/data/copyright_service.dart';
 import '../../../copyright/presentation/screens/copyright_notice_form_screen.dart';
+import '../../../user_experiences/domain/contact_info.dart';
 
 /// Coin cost for an organizer to feature ("Feature this event") their event in
 /// the Explore featured carousel for 7 days. Pure revenue, zero run-cost.
@@ -4689,12 +4690,22 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     final l = AppLocalizations.of(context)!;
     if (_titleController.text.trim().isEmpty) return l.wzErrTitle;
     if (_descriptionController.text.trim().isEmpty) return l.wzErrDescription;
+    if ([
+      _titleController.text,
+      _descriptionController.text,
+      _languagePairsController.text,
+    ].any(ContactInfoDetector.hasEmailOrPhone)) {
+      return l.eventErrContactInfo;
+    }
     return null;
   }
 
   String? _whereError() {
     final l = AppLocalizations.of(context)!;
     if (_locationController.text.trim().isEmpty) return l.wzErrLocation;
+    if (ContactInfoDetector.hasEmailOrPhone(_locationController.text)) {
+      return l.eventErrContactInfo;
+    }
     if (!_endDate.isAfter(_startDate)) return l.wzErrDates;
     return null;
   }
@@ -5222,6 +5233,21 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     if (prohibited.isNotEmpty) {
       unawaited(showUserErrorMessage(
           context, AppLocalizations.of(context)!.eventTextProhibited));
+      return;
+    }
+
+    // No e-mail addresses or phone numbers in the event's text: people reach
+    // the organizer through GreenGo (owner rule 2026-10-12; the server
+    // refuses the same text in firestore.rules eventTextOk()).
+    if ([
+      _titleController.text,
+      _descriptionController.text,
+      _languagePairsController.text,
+      _locationController.text,
+      for (final link in _externalLinks) link.label,
+    ].any(ContactInfoDetector.hasEmailOrPhone)) {
+      unawaited(showUserErrorMessage(
+          context, AppLocalizations.of(context)!.eventErrContactInfo));
       return;
     }
 

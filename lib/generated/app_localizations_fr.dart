@@ -24429,4 +24429,8 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get membershipBenefitJoinEvents =>
       'Participer à des événements et réserver des expériences';
+
+  @override
+  String get eventErrContactInfo =>
+      'Retirez les adresses e-mail et numéros de téléphone : les gens vous contactent via GreenGo.';
 }

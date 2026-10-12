@@ -41198,6 +41198,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Join events and book experiences'**
   String get membershipBenefitJoinEvents;
+
+  /// Event editor: title/description/place contain an e-mail or phone number
+  ///
+  /// In en, this message translates to:
+  /// **'Remove e-mail addresses and phone numbers: people contact you through GreenGo.'**
+  String get eventErrContactInfo;
 }
 
 class _AppLocalizationsDelegate

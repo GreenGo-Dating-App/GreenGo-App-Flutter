@@ -13348,5 +13348,7 @@
   "membershipBenefitJoinEvents": "Join events and book experiences",
   "@membershipBenefitJoinEvents": {
     "description": "Membership benefit (Base and every tier above): joining events and booking experiences"
-  }
+  },
+  "eventErrContactInfo": "Remove e-mail addresses and phone numbers: people contact you through GreenGo.",
+  "@eventErrContactInfo": {"description": "Event editor: title/description/place contain an e-mail or phone number"}
 }

@@ -6870,5 +6870,6 @@
   "participationBaseRequiredBody": "Pour participer à des événements et réserver des expériences, il te faut un abonnement de base (ou Silver, Gold ou Platinum).",
   "participationBaseRequiredCta": "Prendre l'abonnement de base",
   "participationBaseRequiredHint": "Abonnement de base requis",
-  "membershipBenefitJoinEvents": "Participer à des événements et réserver des expériences"
+  "membershipBenefitJoinEvents": "Participer à des événements et réserver des expériences",
+  "eventErrContactInfo": "Retirez les adresses e-mail et numéros de téléphone : les gens vous contactent via GreenGo."
 }

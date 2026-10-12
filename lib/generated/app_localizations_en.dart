@@ -24059,4 +24059,8 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get membershipBenefitJoinEvents => 'Join events and book experiences';
+
+  @override
+  String get eventErrContactInfo =>
+      'Remove e-mail addresses and phone numbers: people contact you through GreenGo.';
 }

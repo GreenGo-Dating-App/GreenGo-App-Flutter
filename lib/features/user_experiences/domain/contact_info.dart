@@ -57,6 +57,11 @@ class ContactInfoDetector {
 
   static bool contains(String? text) => find(text).isNotEmpty;
 
+  /// Only e-mail addresses and phone numbers (community events: owner rule
+  /// 2026-10-12; mirrored by eventTextOk() in firestore.rules).
+  static bool hasEmailOrPhone(String? text) =>
+      text != null && (_email.hasMatch(text) || _phone.hasMatch(text));
+
   /// Wire name used by the server / fixture (snake_case).
   static String wireName(ContactKind k) => switch (k) {
         ContactKind.phone => 'phone',
