@@ -13131,6 +13131,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String get attrAbout => 'Informazioni';
 
   @override
+  String get attrAboutSource => 'Fonte: Wikipedia (CC BY-SA 4.0)';
+
+  @override
   String get attrHighlights => 'In evidenza';
 
   @override
@@ -24429,6 +24432,69 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get chatCountryTipsEmpty =>
       'Ancora nessun consiglio culturale per questo paese.';
+
+  @override
+  String get chatTipCatGreetings => 'Saluti';
+
+  @override
+  String get chatTipCatConversation => 'Conversazione';
+
+  @override
+  String get chatTipCatDining => 'Cibo e tavola';
+
+  @override
+  String get chatTipCatTipping => 'Mance';
+
+  @override
+  String get chatTipCatGifts => 'Regali';
+
+  @override
+  String get chatTipCatDress => 'Abbigliamento';
+
+  @override
+  String get chatTipCatReligionSites => 'Luoghi di culto';
+
+  @override
+  String get chatTipCatGestures => 'Gesti';
+
+  @override
+  String get chatTipCatPunctuality => 'Puntualità';
+
+  @override
+  String get chatTipCatPublicBehavior => 'In pubblico';
+
+  @override
+  String get chatTipCatTransport => 'Spostarsi';
+
+  @override
+  String get chatTipCatLanguage => 'Lingua';
+
+  @override
+  String get chatTipCatFestivals => 'Feste';
+
+  @override
+  String get chatTipCatFamily => 'Famiglia';
+
+  @override
+  String get chatTipCatMoney => 'Denaro';
+
+  @override
+  String get chatTipCatPhotography => 'Fotografia';
+
+  @override
+  String get chatTipCatNightlife => 'Vita notturna';
+
+  @override
+  String get chatTipCatNature => 'Natura';
+
+  @override
+  String get chatTipCatSafety => 'Sicurezza';
+
+  @override
+  String get chatTipCatLocalPride => 'Orgoglio locale';
+
+  @override
+  String get chatTipCatOther => 'Altro';
 
   @override
   String get chatSuggestionsTitle => 'Frasi suggerite';

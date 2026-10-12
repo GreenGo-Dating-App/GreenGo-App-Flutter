@@ -260,9 +260,14 @@ class ChatDatasets {
   }
 
   @visibleForTesting
-  void debugSet({KeywordIndex? keywords, DifficultyEstimator? difficulty}) {
+  void debugSet({
+    KeywordIndex? keywords,
+    DifficultyEstimator? difficulty,
+    Map<String, List<CulturalTip>>? tips,
+  }) {
     _keywords = keywords ?? _keywords;
     _difficulty = difficulty ?? _difficulty;
+    _tips = tips ?? _tips;
     changes.value++;
   }
 }

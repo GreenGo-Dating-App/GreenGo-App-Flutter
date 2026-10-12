@@ -188,9 +188,32 @@ class _CityAttractionsScreenState extends State<CityAttractionsScreen> {
 class CountryTipsSheet {
   CountryTipsSheet._();
 
+  /// Category order of the chips and sections (tools/chat_datasets/jobs/TEXTS.md).
+  static const List<String> categories = [
+    'greetings',
+    'conversation',
+    'dining',
+    'tipping',
+    'gifts',
+    'dress',
+    'religion_sites',
+    'gestures',
+    'punctuality',
+    'public_behavior',
+    'transport',
+    'language',
+    'festivals',
+    'family',
+    'money',
+    'photography',
+    'nightlife',
+    'nature',
+    'safety',
+    'local_pride',
+  ];
+
   static Future<void> show(BuildContext context, String iso2) async {
-    final datasets = ChatDatasets.instance;
-    final ready = datasets.ensure('tips');
+    final ready = ChatDatasets.instance.ensure('tips');
     if (!context.mounted) return;
     await showModalBottomSheet<void>(
       context: context,
@@ -198,67 +221,49 @@ class CountryTipsSheet {
       backgroundColor: AppColors.backgroundCard,
       builder: (ctx) => DraggableScrollableSheet(
         expand: false,
-        initialChildSize: 0.7,
+        initialChildSize: 0.75,
         maxChildSize: 0.95,
-        builder: (ctx, scroll) => FutureBuilder<void>(
-          future: ready,
-          builder: (ctx, snap) {
-            final l10n = AppLocalizations.of(ctx)!;
-            final lang = Localizations.localeOf(ctx).toLanguageTag();
-            final country = datasets.keywords?.countries[iso2] ?? iso2;
-            final tips = datasets.tips?[iso2] ?? const <CulturalTip>[];
-            return ListView(
-              controller: scroll,
-              padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
-              children: [
-                Center(
-                  child: Container(
-                    width: 40, height: 4,
-                    decoration: BoxDecoration(color: AppColors.textTertiary, borderRadius: BorderRadius.circular(2)),
-                  ),
-                ),
-                const SizedBox(height: 12),
-                Text(l10n.chatCountryTipsTitle(country),
-                    style: const TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.w700)),
-                const SizedBox(height: 12),
-                if (snap.connectionState != ConnectionState.done)
-                  const Center(child: CircularProgressIndicator(color: AppColors.richGold))
-                else if (tips.isEmpty)
-                  Text(l10n.chatCountryTipsEmpty, style: const TextStyle(color: AppColors.textSecondary))
-                else
-                  for (final t in tips)
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 12),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Icon(_tipIcon(t.category), size: 18, color: AppColors.richGold),
-                          const SizedBox(width: 10),
-                          Expanded(
-                            child: Text(t.text.of(lang),
-                                style: const TextStyle(color: AppColors.textSecondary, fontSize: 14, height: 1.4)),
-                          ),
-                        ],
-                      ),
-                    ),
-              ],
-            );
-          },
-        ),
+        builder: (ctx, scroll) => CountryTipsView(iso2: iso2, ready: ready, scroll: scroll),
       ),
     );
   }
 
-  static IconData _tipIcon(String category) => switch (category) {
+  static String label(AppLocalizations l10n, String category) => switch (category) {
+        'greetings' => l10n.chatTipCatGreetings,
+        'conversation' => l10n.chatTipCatConversation,
+        'dining' => l10n.chatTipCatDining,
+        'tipping' => l10n.chatTipCatTipping,
+        'gifts' => l10n.chatTipCatGifts,
+        'dress' => l10n.chatTipCatDress,
+        'religion_sites' => l10n.chatTipCatReligionSites,
+        'gestures' => l10n.chatTipCatGestures,
+        'punctuality' => l10n.chatTipCatPunctuality,
+        'public_behavior' => l10n.chatTipCatPublicBehavior,
+        'transport' => l10n.chatTipCatTransport,
+        'language' => l10n.chatTipCatLanguage,
+        'festivals' => l10n.chatTipCatFestivals,
+        'family' => l10n.chatTipCatFamily,
+        'money' => l10n.chatTipCatMoney,
+        'photography' => l10n.chatTipCatPhotography,
+        'nightlife' => l10n.chatTipCatNightlife,
+        'nature' => l10n.chatTipCatNature,
+        'safety' => l10n.chatTipCatSafety,
+        'local_pride' => l10n.chatTipCatLocalPride,
+        _ => l10n.chatTipCatOther,
+      };
+
+  static IconData icon(String category) => switch (category) {
         'greetings' => Icons.waving_hand_outlined,
         'conversation' => Icons.forum_outlined,
         'dining' => Icons.restaurant_outlined,
-        'tipping' || 'money' => Icons.payments_outlined,
+        'tipping' => Icons.volunteer_activism_outlined,
+        'money' => Icons.payments_outlined,
         'gifts' => Icons.card_giftcard_outlined,
         'dress' => Icons.checkroom_outlined,
         'religion_sites' => Icons.account_balance_outlined,
         'gestures' => Icons.back_hand_outlined,
         'punctuality' => Icons.schedule_outlined,
+        'public_behavior' => Icons.groups_outlined,
         'transport' => Icons.directions_bus_outlined,
         'language' => Icons.translate,
         'festivals' => Icons.celebration_outlined,
@@ -270,4 +275,180 @@ class CountryTipsSheet {
         'local_pride' => Icons.star_outline,
         _ => Icons.lightbulb_outline,
       };
+}
+
+/// Cultural tips of one country: category chips on top ("All" + one per
+/// category, with counts); "All" shows the tips grouped under category
+/// headings, a chip shows that category only. Each tip is its own card.
+class CountryTipsView extends StatefulWidget {
+  const CountryTipsView({super.key, required this.iso2, required this.ready, this.scroll});
+
+  final String iso2;
+  final Future<void> ready;
+  final ScrollController? scroll;
+
+  @override
+  State<CountryTipsView> createState() => _CountryTipsViewState();
+}
+
+class _CountryTipsViewState extends State<CountryTipsView> {
+  String? _category; // null = all
+
+  @override
+  Widget build(BuildContext context) {
+    return FutureBuilder<void>(
+      future: widget.ready,
+      builder: (context, snap) {
+        final l10n = AppLocalizations.of(context)!;
+        final lang = Localizations.localeOf(context).toLanguageTag();
+        final datasets = ChatDatasets.instance;
+        final country = datasets.keywords?.countries[widget.iso2] ?? widget.iso2;
+        final tips = datasets.tips?[widget.iso2] ?? const <CulturalTip>[];
+
+        // Tips by category, in the fixed category order (unknown ones last).
+        final byCat = <String, List<CulturalTip>>{};
+        for (final t in tips) {
+          (byCat[t.category] ??= []).add(t);
+        }
+        final cats = [
+          ...CountryTipsSheet.categories.where(byCat.containsKey),
+          ...byCat.keys.where((c) => !CountryTipsSheet.categories.contains(c)),
+        ];
+        final selected = _category != null && byCat.containsKey(_category) ? _category : null;
+
+        final body = <Widget>[];
+        if (snap.connectionState != ConnectionState.done && tips.isEmpty) {
+          body.add(const Padding(
+            padding: EdgeInsets.only(top: 48),
+            child: Center(child: CircularProgressIndicator(color: AppColors.richGold)),
+          ));
+        } else if (tips.isEmpty) {
+          body.add(Padding(
+            padding: const EdgeInsets.all(16),
+            child: Text(l10n.chatCountryTipsEmpty, style: const TextStyle(color: AppColors.textSecondary)),
+          ));
+        } else {
+          for (final c in selected == null ? cats : [selected]) {
+            if (selected == null) body.add(_sectionHeader(l10n, c));
+            for (final t in byCat[c]!) {
+              body.add(_tipCard(t.text.of(lang)));
+            }
+          }
+        }
+
+        return CustomScrollView(
+          controller: widget.scroll,
+          slivers: [
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Center(
+                      child: Container(
+                        width: 40,
+                        height: 4,
+                        decoration: BoxDecoration(color: AppColors.textTertiary, borderRadius: BorderRadius.circular(2)),
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    Text(l10n.chatCountryTipsTitle(country),
+                        style: const TextStyle(color: AppColors.textPrimary, fontSize: 19, fontWeight: FontWeight.w700)),
+                  ],
+                ),
+              ),
+            ),
+            if (cats.isNotEmpty)
+              SliverPersistentHeader(
+                pinned: true,
+                delegate: _ChipsHeader(
+                  child: Container(
+                    color: AppColors.backgroundCard,
+                    height: 56,
+                    child: ListView(
+                      key: const ValueKey('tips-category-chips'),
+                      scrollDirection: Axis.horizontal,
+                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                      children: [
+                        _chip(l10n.filterAll, Icons.apps, tips.length, selected == null,
+                            () => setState(() => _category = null)),
+                        for (final c in cats)
+                          _chip(CountryTipsSheet.label(l10n, c), CountryTipsSheet.icon(c), byCat[c]!.length,
+                              selected == c, () => setState(() => _category = c)),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            SliverPadding(
+              padding: const EdgeInsets.fromLTRB(16, 4, 16, 32),
+              sliver: SliverList(delegate: SliverChildListDelegate(body)),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  Widget _chip(String label, IconData icon, int count, bool selected, VoidCallback onTap) => Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 4),
+        child: ChoiceChip(
+          selected: selected,
+          onSelected: (_) => onTap(),
+          showCheckmark: false,
+          avatar: Icon(icon, size: 16, color: selected ? Colors.black : AppColors.richGold),
+          label: Text('$label  $count'),
+          labelStyle: TextStyle(
+            color: selected ? Colors.black : AppColors.textPrimary,
+            fontSize: 13,
+            fontWeight: selected ? FontWeight.w700 : FontWeight.w500,
+          ),
+          selectedColor: AppColors.richGold,
+          backgroundColor: AppColors.charcoal,
+          side: BorderSide(color: selected ? AppColors.richGold : AppColors.textTertiary.withValues(alpha: 0.4)),
+        ),
+      );
+
+  Widget _sectionHeader(AppLocalizations l10n, String c) => Padding(
+        padding: const EdgeInsets.only(top: 18, bottom: 8),
+        child: Row(
+          children: [
+            Icon(CountryTipsSheet.icon(c), size: 18, color: AppColors.richGold),
+            const SizedBox(width: 8),
+            Flexible(
+              child: Text(CountryTipsSheet.label(l10n, c).toUpperCase(),
+                  style: const TextStyle(
+                      color: AppColors.richGold, fontSize: 12, fontWeight: FontWeight.w700, letterSpacing: 1.1)),
+            ),
+          ],
+        ),
+      );
+
+  Widget _tipCard(String text) => Container(
+        margin: const EdgeInsets.only(bottom: 10),
+        padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
+        decoration: BoxDecoration(
+          color: AppColors.charcoal,
+          borderRadius: BorderRadius.circular(14),
+          border: Border(left: BorderSide(color: AppColors.richGold.withValues(alpha: 0.7), width: 3)),
+        ),
+        child: Text(text, style: const TextStyle(color: AppColors.textPrimary, fontSize: 15, height: 1.45)),
+      );
+}
+
+class _ChipsHeader extends SliverPersistentHeaderDelegate {
+  _ChipsHeader({required this.child});
+  final Widget child;
+
+  @override
+  double get minExtent => 56;
+  @override
+  double get maxExtent => 56;
+
+  @override
+  Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) => child;
+
+  @override
+  bool shouldRebuild(_ChipsHeader oldDelegate) => oldDelegate.child != child;
 }

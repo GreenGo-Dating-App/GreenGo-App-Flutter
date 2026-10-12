@@ -63,6 +63,8 @@ class Attraction {
     this.interestingFacts = const [],
     this.curiosities = const [],
     this.names = const {},
+    this.about = const {},
+    this.aboutSources = const {},
     this.altText,
     this.openingHours,
     this.bestSeason,
@@ -146,6 +148,33 @@ class Attraction {
     final lang = locale.languageCode;
     final key = lang == 'pt' && locale.countryCode == 'BR' ? 'pt_BR' : lang;
     return names[key] ?? names[lang] ?? name;
+  }
+
+  /// "What is it?": 3-4 sentences per app language (en, it, es, pt, pt_BR,
+  /// fr, de) from the lead of the attraction's Wikipedia article
+  /// (tools/attractions_about/build_about.js). CC BY-SA 4.0: show
+  /// [aboutSources] with it.
+  final Map<String, String> about;
+
+  /// Wikipedia article URL per language of [about].
+  final Map<String, String> aboutSources;
+
+  static String _langKey(Locale locale) =>
+      locale.languageCode == 'pt' && locale.countryCode == 'BR' ? 'pt_BR' : locale.languageCode;
+
+  /// [about] in [locale]'s language, or null when that language has no article
+  /// (then show the English one, translated).
+  String? aboutIn(Locale locale) {
+    final k = _langKey(locale);
+    return about[k] ?? about[locale.languageCode];
+  }
+
+  /// Source URL for the text [aboutIn] returned (or the English one).
+  String? aboutSourceIn(Locale locale) {
+    final k = _langKey(locale);
+    return aboutIn(locale) != null
+        ? (aboutSources[k] ?? aboutSources[locale.languageCode])
+        : aboutSources['en'];
   }
 
   /// Every known title (catalogue, official and localised), for search.
@@ -279,6 +308,8 @@ class Attraction {
       interestingFacts: _list(m['interestingFacts']),
       curiosities: _list(m['curiosities']),
       names: namesMap(m['names']),
+      about: namesMap(m['about']),
+      aboutSources: namesMap(m['aboutSources']),
       altText: _s(m['altText']),
       openingHours: _s(m['openingHours']),
       visitDuration: _s(m['visitDuration']),

@@ -270,6 +270,9 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
       return;
     }
     final texts = <String>[
+      // "What is it?" in a language without its own article: English, translated.
+      if (a.aboutIn(Localizations.localeOf(context)) == null && a.about['en'] != null)
+        a.about['en']!,
       if (a.descriptionMedium != null) a.descriptionMedium!,
       if (a.descriptionLong != null) a.descriptionLong!,
       if (a.descriptionShort != null) a.descriptionShort!,
@@ -368,6 +371,26 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
             style: const TextStyle(
                 color: AppColors.textSecondary, fontSize: 13.5, height: 1.45)),
       );
+
+  /// "Source: Wikipedia (CC BY-SA 4.0)" under the about text; opens the article.
+  Widget _aboutSource(AppLocalizations l10n, String? url) {
+    if (url == null) return const SizedBox.shrink();
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 6, 16, 0),
+      child: InkWell(
+        key: const ValueKey('attraction-about-source'),
+        onTap: () => launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 6),
+          child: Text(
+            l10n.attrAboutSource,
+            style: const TextStyle(
+                color: AppColors.textTertiary, fontSize: 11, decoration: TextDecoration.underline),
+          ),
+        ),
+      ),
+    );
+  }
 
   Widget _factRow(IconData icon, String label, String value) => Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 5),
@@ -718,7 +741,11 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
               ),
 
             // ---- about ------------------------------------------------------
-            if (a.descriptionMedium != null || a.descriptionShort != null) ...[
+            if (a.about.isNotEmpty) ...[
+              _sectionTitle(l10n.attrAbout),
+              _body(a.aboutIn(Localizations.localeOf(context)) ?? _t(a.about['en'])),
+              _aboutSource(l10n, a.aboutSourceIn(Localizations.localeOf(context))),
+            ] else if (a.descriptionMedium != null || a.descriptionShort != null) ...[
               _sectionTitle(l10n.attrAbout),
               _body(_t(a.descriptionMedium ?? a.descriptionShort)),
             ],

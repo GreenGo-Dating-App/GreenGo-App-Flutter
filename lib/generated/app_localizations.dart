@@ -23124,6 +23124,12 @@ abstract class AppLocalizations {
   /// **'About'**
   String get attrAbout;
 
+  /// No description provided for @attrAboutSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Source: Wikipedia (CC BY-SA 4.0)'**
+  String get attrAboutSource;
+
   /// No description provided for @attrHighlights.
   ///
   /// In en, this message translates to:
@@ -41384,6 +41390,132 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No cultural tips for this country yet.'**
   String get chatCountryTipsEmpty;
+
+  /// No description provided for @chatTipCatGreetings.
+  ///
+  /// In en, this message translates to:
+  /// **'Greetings'**
+  String get chatTipCatGreetings;
+
+  /// No description provided for @chatTipCatConversation.
+  ///
+  /// In en, this message translates to:
+  /// **'Conversation'**
+  String get chatTipCatConversation;
+
+  /// No description provided for @chatTipCatDining.
+  ///
+  /// In en, this message translates to:
+  /// **'Food & dining'**
+  String get chatTipCatDining;
+
+  /// No description provided for @chatTipCatTipping.
+  ///
+  /// In en, this message translates to:
+  /// **'Tipping'**
+  String get chatTipCatTipping;
+
+  /// No description provided for @chatTipCatGifts.
+  ///
+  /// In en, this message translates to:
+  /// **'Gifts'**
+  String get chatTipCatGifts;
+
+  /// No description provided for @chatTipCatDress.
+  ///
+  /// In en, this message translates to:
+  /// **'Dress code'**
+  String get chatTipCatDress;
+
+  /// No description provided for @chatTipCatReligionSites.
+  ///
+  /// In en, this message translates to:
+  /// **'Religious sites'**
+  String get chatTipCatReligionSites;
+
+  /// No description provided for @chatTipCatGestures.
+  ///
+  /// In en, this message translates to:
+  /// **'Gestures'**
+  String get chatTipCatGestures;
+
+  /// No description provided for @chatTipCatPunctuality.
+  ///
+  /// In en, this message translates to:
+  /// **'Punctuality'**
+  String get chatTipCatPunctuality;
+
+  /// No description provided for @chatTipCatPublicBehavior.
+  ///
+  /// In en, this message translates to:
+  /// **'In public'**
+  String get chatTipCatPublicBehavior;
+
+  /// No description provided for @chatTipCatTransport.
+  ///
+  /// In en, this message translates to:
+  /// **'Getting around'**
+  String get chatTipCatTransport;
+
+  /// No description provided for @chatTipCatLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get chatTipCatLanguage;
+
+  /// No description provided for @chatTipCatFestivals.
+  ///
+  /// In en, this message translates to:
+  /// **'Festivals'**
+  String get chatTipCatFestivals;
+
+  /// No description provided for @chatTipCatFamily.
+  ///
+  /// In en, this message translates to:
+  /// **'Family'**
+  String get chatTipCatFamily;
+
+  /// No description provided for @chatTipCatMoney.
+  ///
+  /// In en, this message translates to:
+  /// **'Money'**
+  String get chatTipCatMoney;
+
+  /// No description provided for @chatTipCatPhotography.
+  ///
+  /// In en, this message translates to:
+  /// **'Photography'**
+  String get chatTipCatPhotography;
+
+  /// No description provided for @chatTipCatNightlife.
+  ///
+  /// In en, this message translates to:
+  /// **'Nightlife'**
+  String get chatTipCatNightlife;
+
+  /// No description provided for @chatTipCatNature.
+  ///
+  /// In en, this message translates to:
+  /// **'Nature'**
+  String get chatTipCatNature;
+
+  /// No description provided for @chatTipCatSafety.
+  ///
+  /// In en, this message translates to:
+  /// **'Safety'**
+  String get chatTipCatSafety;
+
+  /// No description provided for @chatTipCatLocalPride.
+  ///
+  /// In en, this message translates to:
+  /// **'Local pride'**
+  String get chatTipCatLocalPride;
+
+  /// No description provided for @chatTipCatOther.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get chatTipCatOther;
 
   /// No description provided for @chatSuggestionsTitle.
   ///
