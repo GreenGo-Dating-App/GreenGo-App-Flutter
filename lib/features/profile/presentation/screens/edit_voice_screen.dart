@@ -3,14 +3,16 @@ import 'dart:io';
 
 import 'package:audioplayers/audioplayers.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:path_provider/path_provider.dart';
+import 'package:image_picker/image_picker.dart' show XFile;
 import 'package:record/record.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/platform/voice_recording_format.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
@@ -51,6 +53,7 @@ class _EditVoiceScreenState extends State<EditVoiceScreen>
   double _uploadProgress = 0.0;
 
   String? _recordedFilePath;
+  VoiceRecordingFormat _format = VoiceRecordingFormat.aacM4a;
   String? _existingVoiceUrl;
   Duration _recordingDuration = Duration.zero;
   Duration _playbackPosition = Duration.zero;
@@ -123,12 +126,14 @@ class _EditVoiceScreenState extends State<EditVoiceScreen>
       return;
     }
 
-    final directory = await getTemporaryDirectory();
-    final filePath = '${directory.path}/voice_intro_${DateTime.now().millisecondsSinceEpoch}.m4a';
+    // Mobile: AAC .m4a temp file (unchanged). Web: no temp dir; the
+    // recorder returns a blob: URL from stop() in a browser-supported format.
+    _format = await VoiceRecordingFormat.pick(_recorder);
+    final filePath = await _format.recordingPath('voice_intro');
 
     await _recorder.start(
-      const RecordConfig(
-        encoder: AudioEncoder.aacLc,
+      RecordConfig(
+        encoder: _format.encoder,
         bitRate: 128000,
         sampleRate: 44100,
       ),
@@ -180,7 +185,9 @@ class _EditVoiceScreenState extends State<EditVoiceScreen>
 
   Future<void> _playRecording() async {
     if (_recordedFilePath != null) {
-      await _audioPlayer.play(DeviceFileSource(_recordedFilePath!));
+      await _audioPlayer.play(kIsWeb
+          ? UrlSource(_recordedFilePath!)
+          : DeviceFileSource(_recordedFilePath!));
     } else if (_existingVoiceUrl != null) {
       await _audioPlayer.play(UrlSource(_existingVoiceUrl!));
     }
@@ -254,12 +261,24 @@ class _EditVoiceScreenState extends State<EditVoiceScreen>
     });
 
     try {
-      final file = File(_recordedFilePath!);
       final uuid = const Uuid().v4();
-      final fileName = 'voice_intros/${widget.profile.userId}/$uuid.m4a';
+      final fileName =
+          'voice_intros/${widget.profile.userId}/$uuid.${_format.extension}';
 
       final ref = FirebaseStorage.instance.ref().child(fileName);
-      final uploadTask = ref.putFile(file);
+      // Mobile: putFile (contentType inferred from .m4a, as before). Web:
+      // dart:io File is unsupported, so upload the blob's bytes with an
+      // explicit audio contentType (storage rules require audio/*).
+      final UploadTask uploadTask;
+      if (kIsWeb) {
+        final bytes = await XFile(_recordedFilePath!).readAsBytes();
+        uploadTask = ref.putData(
+          bytes,
+          SettableMetadata(contentType: _format.contentType),
+        );
+      } else {
+        uploadTask = ref.putFile(File(_recordedFilePath!));
+      }
 
       uploadTask.snapshotEvents.listen((snapshot) {
         if (mounted) {

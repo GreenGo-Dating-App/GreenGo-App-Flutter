@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/foundation.dart';
+import 'package:image_picker/image_picker.dart' show XFile;
 
 import '../../../../core/error/exceptions.dart';
 import '../models/video_profile_model.dart';
@@ -60,13 +61,20 @@ class VideoProfileRemoteDataSourceImpl implements VideoProfileRemoteDataSource {
     void Function(double progress)? onProgress,
   }) async {
     try {
-      final file = File(filePath);
-      if (!await file.exists()) {
-        throw ServerException('Video file not found at path: $filePath');
+      // Web: [filePath] is the picker's blob: URL. dart:io File/putFile are
+      // unsupported there, so read the bytes and use putData instead.
+      final File? file = kIsWeb ? null : File(filePath);
+      Uint8List? webBytes;
+      if (file != null) {
+        if (!await file.exists()) {
+          throw ServerException('Video file not found at path: $filePath');
+        }
+      } else {
+        webBytes = await XFile(filePath).readAsBytes();
       }
 
       // Validate file size (max 50MB for a 30s video)
-      final fileSize = await file.length();
+      final fileSize = file != null ? await file.length() : webBytes!.length;
       if (fileSize > 50 * 1024 * 1024) {
         throw ValidationException(
             'Video file is too large. Maximum size is 50MB.');
@@ -76,16 +84,16 @@ class VideoProfileRemoteDataSourceImpl implements VideoProfileRemoteDataSource {
       final storageRef =
           _storage.ref().child('$_storagePath/$userId/intro.mp4');
 
-      final uploadTask = storageRef.putFile(
-        file,
-        SettableMetadata(
-          contentType: 'video/mp4',
-          customMetadata: {
-            'userId': userId,
-            if (prompt != null) 'prompt': prompt,
-          },
-        ),
+      final metadata = SettableMetadata(
+        contentType: 'video/mp4',
+        customMetadata: {
+          'userId': userId,
+          if (prompt != null) 'prompt': prompt,
+        },
       );
+      final uploadTask = file != null
+          ? storageRef.putFile(file, metadata)
+          : storageRef.putData(webBytes!, metadata);
 
       // Track upload progress
       uploadTask.snapshotEvents.listen((snapshot) {

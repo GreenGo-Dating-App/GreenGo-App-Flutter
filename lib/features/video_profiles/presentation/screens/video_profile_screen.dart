@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
@@ -34,7 +35,7 @@ class VideoProfileScreen extends StatefulWidget {
 
 class _VideoProfileScreenState extends State<VideoProfileScreen> {
   VideoPlayerController? _videoController;
-  File? _videoFile;
+  XFile? _videoFile;
   final bool _isRecording = false;
   bool _isUploading = false;
   String? _selectedPrompt;
@@ -82,7 +83,7 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
     );
 
     if (video != null) {
-      _setVideo(File(video.path));
+      _setVideo(video);
     }
   }
 
@@ -102,14 +103,17 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
     );
 
     if (video != null) {
-      _setVideo(File(video.path));
+      _setVideo(video);
     }
   }
 
-  Future<void> _setVideo(File file) async {
+  Future<void> _setVideo(XFile file) async {
     _videoController?.dispose();
     _videoFile = file;
-    _videoController = VideoPlayerController.file(file);
+    // Web: the picked video is a blob: URL (no dart:io File there).
+    _videoController = kIsWeb
+        ? VideoPlayerController.networkUrl(Uri.parse(file.path))
+        : VideoPlayerController.file(File(file.path));
     await _videoController!.initialize();
 
     // Check duration

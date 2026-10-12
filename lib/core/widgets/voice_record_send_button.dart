@@ -1,12 +1,14 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:path_provider/path_provider.dart';
+import 'package:image_picker/image_picker.dart' show XFile;
 import 'package:record/record.dart';
 
 import '../../generated/app_localizations.dart';
+import '../platform/voice_recording_format.dart';
 
 /// WhatsApp-style send / voice-record button used by both 1:1 and group chats.
 ///
@@ -21,6 +23,13 @@ import '../../generated/app_localizations.dart';
 ///
 /// Recording/upload follows the existing `record` + `m4a` pattern already used
 /// by the profile voice intro, so playback works through `VoiceMessageWidget`.
+///
+/// On **web** there is no temp directory and the recorder returns a `blob:`
+/// URL, so the clip is handed over as an [XFile] (read with `readAsBytes`).
+/// Browsers that cannot record AAC/MP4 fall back to Opus/WebM, then WAV; the
+/// chosen MIME type is set on [XFile.mimeType] (see
+/// `WebMedia.voiceContentType`). On mobile the [XFile] wraps the same `.m4a`
+/// temp file as before.
 class VoiceRecordSendButton extends StatefulWidget {
   const VoiceRecordSendButton({
     super.key,
@@ -36,7 +45,7 @@ class VoiceRecordSendButton extends StatefulWidget {
 
   final TextEditingController controller;
   final VoidCallback onSendText;
-  final void Function(File file, Duration duration) onSendVoice;
+  final void Function(XFile file, Duration duration) onSendVoice;
   final bool isSending;
   final Color? buttonColor;
   final Color? iconColor;
@@ -55,6 +64,7 @@ class _VoiceRecordSendButtonState extends State<VoiceRecordSendButton> {
   bool _cancelZone = false;
   DateTime? _startedAt;
   String? _path;
+  VoiceRecordingFormat _format = VoiceRecordingFormat.aacM4a;
   Timer? _ticker;
   Duration _elapsed = Duration.zero;
   OverlayEntry? _hud;
@@ -100,11 +110,11 @@ class _VoiceRecordSendButtonState extends State<VoiceRecordSendButton> {
       }
       return;
     }
-    final dir = await getTemporaryDirectory();
-    _path = '${dir.path}/voice_${DateTime.now().millisecondsSinceEpoch}.m4a';
+    _format = await VoiceRecordingFormat.pick(_recorder);
+    _path = await _format.recordingPath('voice');
     await _recorder.start(
-      const RecordConfig(
-        encoder: AudioEncoder.aacLc,
+      RecordConfig(
+        encoder: _format.encoder,
         bitRate: 128000,
         sampleRate: 44100,
       ),
@@ -156,11 +166,14 @@ class _VoiceRecordSendButtonState extends State<VoiceRecordSendButton> {
       }
       return;
     }
-    widget.onSendVoice(File(path), elapsed);
+    widget.onSendVoice(
+      XFile(path, mimeType: _format.contentType),
+      elapsed,
+    );
   }
 
   void _deleteFile(String? path) {
-    if (path == null) return;
+    if (path == null || kIsWeb) return;
     try {
       final f = File(path);
       if (f.existsSync()) f.deleteSync();

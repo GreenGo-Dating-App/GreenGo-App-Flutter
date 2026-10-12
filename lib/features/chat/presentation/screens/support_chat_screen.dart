@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -7,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../../core/platform/web_media.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/push_notification_service.dart';
@@ -40,7 +39,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
   final ImagePicker _imagePicker = ImagePicker();
   bool _isSending = false;
   bool _isUploadingImage = false;
-  File? _selectedImage;
+  XFile? _selectedImage;
   String? _supportAgentName;
   String? _ticketStatus;
   String? _ticketSubject;
@@ -453,7 +452,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
 
       if (pickedFile != null) {
         setState(() {
-          _selectedImage = File(pickedFile.path);
+          _selectedImage = pickedFile;
         });
       }
     } catch (e) {
@@ -470,7 +469,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
     });
   }
 
-  Future<String?> _uploadImage(File imageFile) async {
+  Future<String?> _uploadImage(XFile imageFile) async {
     try {
       setState(() {
         _isUploadingImage = true;
@@ -479,12 +478,13 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       final fileName = '${const Uuid().v4()}.jpg';
       final ref = _storage.ref().child('support_attachments/${widget.conversationId}/$fileName');
 
-      final uploadTask = ref.putFile(
+      // putFile on mobile, putData(bytes) on web (dart:io File is
+      // unsupported there). Same path + contentType either way.
+      final snapshot = await WebMedia.uploadXFile(
+        ref,
         imageFile,
-        SettableMetadata(contentType: 'image/jpeg'),
+        contentType: 'image/jpeg',
       );
-
-      final snapshot = await uploadTask;
       final downloadUrl = await snapshot.ref.getDownloadURL();
 
       return downloadUrl;
@@ -1119,8 +1119,8 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(12),
-                      child: Image.file(
-                        _selectedImage!,
+                      child: Image(
+                        image: WebMedia.imageProviderFor(_selectedImage!),
                         height: 120,
                         width: 120,
                         fit: BoxFit.cover,
