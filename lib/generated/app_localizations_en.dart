@@ -16048,6 +16048,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get checkoutContinueToPayment => 'Continue to payment';
 
   @override
+  String get checkoutAccept => 'Accept';
+
+  @override
   String get withdrawFromContract => 'Withdraw from contract';
 
   @override

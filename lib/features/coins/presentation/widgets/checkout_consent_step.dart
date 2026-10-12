@@ -6,11 +6,11 @@ import '../../../../generated/app_localizations.dart';
 
 /// The mandatory step shown before the web (Stripe) checkout opens. Plan P2-9.
 ///
-/// - Coins (immediate digital content): the EU CRD art. 16(m) waiver checkbox.
-///   "Continue to payment" stays disabled until it is ticked; the box is never
-///   pre-ticked.
+/// - Coins (immediate digital content): the EU CRD art. 16(m) waiver text;
+///   tapping "Accept" is the express agreement (nothing is pre-selected).
 /// - Memberships (a service): the 14-day (EU) / 7-day (Brazil) withdrawal
-///   information and the auto-renew notice. No waiver checkbox.
+///   information and the auto-renew notice.
+/// Full-width Accept with Cancel under it, so both always fit on a phone.
 class CheckoutConsentStep extends StatefulWidget {
   const CheckoutConsentStep({
     required this.productId,
@@ -28,10 +28,7 @@ class CheckoutConsentStep extends StatefulWidget {
 }
 
 class _CheckoutConsentStepState extends State<CheckoutConsentStep> {
-  bool _waiverTicked = false;
-
   bool get _isCoins => isCoinProduct(widget.productId);
-  bool get _canContinue => !_isCoins || _waiverTicked;
 
   void _continue() {
     widget.onContinue(_isCoins
@@ -65,41 +62,27 @@ class _CheckoutConsentStepState extends State<CheckoutConsentStep> {
           ),
         ),
         const SizedBox(height: 12),
-        if (_isCoins)
-          CheckboxListTile(
-            key: const Key('checkoutWaiverCheckbox'),
-            value: _waiverTicked,
-            onChanged: (v) => setState(() => _waiverTicked = v ?? false),
-            controlAffinity: ListTileControlAffinity.leading,
-            contentPadding: EdgeInsets.zero,
-            activeColor: AppColors.richGold,
-            title: Text(l10n.checkoutCoinWaiverCheckbox, style: textStyle),
-          )
-        else
-          Text(
-            l10n.checkoutMembershipWithdrawalInfo,
-            key: const Key('checkoutWithdrawalInfo'),
-            style: textStyle,
+        Text(
+          _isCoins ? l10n.checkoutCoinWaiverCheckbox : l10n.checkoutMembershipWithdrawalInfo,
+          key: Key(_isCoins ? 'checkoutWaiverText' : 'checkoutWithdrawalInfo'),
+          style: textStyle,
+        ),
+        const SizedBox(height: 18),
+        ElevatedButton(
+          key: const Key('checkoutContinueButton'),
+          onPressed: _continue,
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.richGold,
+            foregroundColor: Colors.black,
+            minimumSize: const Size(0, 48),
           ),
-        const SizedBox(height: 16),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            TextButton(
-              onPressed: widget.onCancel,
-              child: Text(l10n.cancel),
-            ),
-            const SizedBox(width: 8),
-            ElevatedButton(
-              key: const Key('checkoutContinueButton'),
-              onPressed: _canContinue ? _continue : null,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.richGold,
-                foregroundColor: Colors.black,
-              ),
-              child: Text(l10n.checkoutContinueToPayment),
-            ),
-          ],
+          child: Text(l10n.checkoutAccept,
+              style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 15)),
+        ),
+        const SizedBox(height: 4),
+        TextButton(
+          onPressed: widget.onCancel,
+          child: Text(l10n.cancel),
         ),
       ],
     );

@@ -16306,6 +16306,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get checkoutContinueToPayment => 'Continuer vers le paiement';
 
   @override
+  String get checkoutAccept => 'J\'accepte';
+
+  @override
   String get withdrawFromContract => 'Se rétracter du contrat';
 
   @override

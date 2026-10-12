@@ -16196,6 +16196,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get checkoutContinueToPayment => 'Continuar para o pagamento';
 
   @override
+  String get checkoutAccept => 'Aceito';
+
+  @override
   String get withdrawFromContract => 'Desistir do contrato';
 
   @override
@@ -40898,6 +40901,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get checkoutContinueToPayment => 'Continuar para o pagamento';
+
+  @override
+  String get checkoutAccept => 'Aceito';
 
   @override
   String get withdrawFromContract => 'Desistir do contrato';

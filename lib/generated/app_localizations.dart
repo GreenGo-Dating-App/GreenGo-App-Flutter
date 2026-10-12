@@ -28248,6 +28248,12 @@ abstract class AppLocalizations {
   /// **'Continue to payment'**
   String get checkoutContinueToPayment;
 
+  /// No description provided for @checkoutAccept.
+  ///
+  /// In en, this message translates to:
+  /// **'Accept'**
+  String get checkoutAccept;
+
   /// No description provided for @withdrawFromContract.
   ///
   /// In en, this message translates to:

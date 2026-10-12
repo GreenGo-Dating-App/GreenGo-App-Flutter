@@ -63,7 +63,6 @@ class _BookingConsentDialogState extends State<BookingConsentDialog> {
       ? [widget.only!]
       : BookingConsentDialog.methodsOf(widget.experience);
   late PaymentMethod? _method = _methods.length == 1 ? _methods.first : null;
-  bool _understood = false;
 
   @override
   Widget build(BuildContext context) {
@@ -140,36 +139,31 @@ class _BookingConsentDialogState extends State<BookingConsentDialog> {
             const SizedBox(height: 2),
             Text(ExperienceL10n.policyDescription(l, e.cancellationPolicy),
                 style: body),
-            const SizedBox(height: 8),
-            CheckboxListTile(
-              key: const ValueKey('consent-understand'),
-              value: _understood,
-              onChanged: (v) => setState(() => _understood = v ?? false),
-              controlAffinity: ListTileControlAffinity.leading,
-              contentPadding: EdgeInsets.zero,
-              activeColor: AppColors.richGold,
-              title: Text(l.uexpConsentUnderstand,
-                  style: const TextStyle(color: AppColors.textPrimary)),
-            ),
           ],
         ),
       ),
       actions: [
-        TextButton(
-          onPressed: () => Navigator.pop(context),
-          child: Text(l.cancel),
-        ),
-        ElevatedButton(
-          key: const ValueKey('consent-continue'),
-          style: ElevatedButton.styleFrom(
-            backgroundColor: AppColors.richGold,
-            foregroundColor: AppColors.deepBlack,
-            minimumSize: const Size(0, 40),
-          ),
-          onPressed: _understood && m != null
-              ? () => Navigator.pop(context, m)
-              : null,
-          child: Text(l.uexpConsentContinue),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            ElevatedButton(
+              key: const ValueKey('consent-continue'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.richGold,
+                foregroundColor: AppColors.deepBlack,
+                minimumSize: const Size(0, 48),
+              ),
+              // Tapping Accept is the agreement to the terms above.
+              onPressed: m != null ? () => Navigator.pop(context, m) : null,
+              child: Text(l.checkoutAccept,
+                  style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 15)),
+            ),
+            const SizedBox(height: 4),
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: Text(l.cancel),
+            ),
+          ],
         ),
       ],
     );

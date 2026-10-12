@@ -4713,6 +4713,7 @@
   "checkoutCoinWaiverCheckbox": "J'accepte que les pièces soient livrées immédiatement et je reconnais perdre mon droit de rétractation dès le début de la livraison.",
   "checkoutMembershipWithdrawalInfo": "Droit de rétractation : vous pouvez vous rétracter de cet abonnement dans les 14 jours suivant l'achat (7 jours pour les achats effectués au Brésil) sans motif et être remboursé intégralement, via « Se rétracter du contrat » dans la Boutique ou sur notre site web. L'abonnement se renouvelle automatiquement jusqu'à résiliation ; vous pouvez résilier à tout moment dans le portail de facturation.",
   "checkoutContinueToPayment": "Continuer vers le paiement",
+  "checkoutAccept": "J'accepte",
   "withdrawFromContract": "Se rétracter du contrat",
   "withdrawalDialogIntro": "Choisissez l'achat dont vous souhaitez vous rétracter. Nous enverrons un lien de confirmation à l'adresse utilisée pour l'achat ; rien n'est annulé ni remboursé avant votre confirmation.",
   "withdrawalNothingEligible": "Aucun de vos achats web ne peut faire l'objet d'une rétractation pour le moment. Les abonnements peuvent être rétractés dans les 14 jours suivant l'achat (7 jours au Brésil) ; les achats de pièces uniquement si le droit n'a pas été abandonné au paiement.",

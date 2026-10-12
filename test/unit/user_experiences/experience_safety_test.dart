@@ -289,10 +289,10 @@ void main() {
     await tester.pumpAndSettle();
     final l = await AppLocalizations.delegate.load(const Locale('en'));
     expect(find.text(l.uexpConsentBodyCash), findsOneWidget);
+    // No checkbox: Accept (full width, always visible) is the agreement.
+    expect(find.byType(CheckboxListTile), findsNothing);
     final cont = find.byKey(const ValueKey('consent-continue'));
-    expect(tester.widget<ElevatedButton>(cont).onPressed, isNull);
-    await tester.tap(find.byKey(const ValueKey('consent-understand')));
-    await tester.pump();
+    expect(find.text(l.checkoutAccept), findsOneWidget);
     expect(tester.widget<ElevatedButton>(cont).onPressed, isNotNull);
     await tester.tap(cont);
     await tester.pumpAndSettle();

@@ -16220,6 +16220,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String get checkoutContinueToPayment => 'Continua al pagamento';
 
   @override
+  String get checkoutAccept => 'Accetto';
+
+  @override
   String get withdrawFromContract => 'Recedi dal contratto';
 
   @override

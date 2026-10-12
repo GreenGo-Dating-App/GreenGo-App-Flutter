@@ -36,19 +36,12 @@ void main() {
   ElevatedButton continueButton(WidgetTester tester) =>
       tester.widget<ElevatedButton>(find.byKey(const Key('checkoutContinueButton')));
 
-  testWidgets('coins: continue is disabled until the waiver box is ticked', (tester) async {
+  testWidgets('coins: waiver text + Accept (no checkbox); Accept records the waiver', (tester) async {
     final got = await pump(tester, 'greengo_coins_500');
-    final checkbox = find.byKey(const Key('checkoutWaiverCheckbox'));
-    expect(checkbox, findsOneWidget);
-    expect(tester.widget<CheckboxListTile>(checkbox).value, isFalse); // never pre-ticked
-    expect(continueButton(tester).onPressed, isNull);
-
-    await tester.tap(find.byKey(const Key('checkoutContinueButton')));
-    await tester.pump();
-    expect(got, isEmpty);
-
-    await tester.tap(checkbox);
-    await tester.pump();
+    expect(find.byType(CheckboxListTile), findsNothing);
+    expect(find.byKey(const Key('checkoutWaiverText')), findsOneWidget);
+    expect(find.text('Accept'), findsOneWidget);
+    expect(find.text('Cancel'), findsOneWidget);
     expect(continueButton(tester).onPressed, isNotNull);
 
     await tester.tap(find.byKey(const Key('checkoutContinueButton')));
@@ -61,19 +54,19 @@ void main() {
     });
   });
 
-  testWidgets('coins: unticking the box disables continue again', (tester) async {
-    await pump(tester, 'greengo_coins_100');
-    final checkbox = find.byKey(const Key('checkoutWaiverCheckbox'));
-    await tester.tap(checkbox);
-    await tester.pump();
-    await tester.tap(checkbox);
-    await tester.pump();
-    expect(continueButton(tester).onPressed, isNull);
+  testWidgets('Accept and Cancel both fit on a narrow phone', (tester) async {
+    tester.view.physicalSize = const Size(320 * 3, 640 * 3);
+    tester.view.devicePixelRatio = 3;
+    addTearDown(tester.view.reset);
+    await pump(tester, '1_month_gold');
+    expect(tester.takeException(), isNull);
+    expect(find.text('Accept').hitTestable(), findsOneWidget);
+    expect(find.text('Cancel').hitTestable(), findsOneWidget);
   });
 
   testWidgets('membership: withdrawal info, no waiver, continue enabled', (tester) async {
     final got = await pump(tester, '1_month_gold');
-    expect(find.byKey(const Key('checkoutWaiverCheckbox')), findsNothing);
+    expect(find.byKey(const Key('checkoutWaiverText')), findsNothing);
     expect(find.byKey(const Key('checkoutWithdrawalInfo')), findsOneWidget);
     expect(continueButton(tester).onPressed, isNotNull);
 
@@ -105,7 +98,7 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byType(CheckoutConsentStep), findsOneWidget);
     expect(find.byType(CircularProgressIndicator), findsNothing);
-    expect(continueButton(tester).onPressed, isNull);
+    expect(find.text('Accept'), findsOneWidget);
   });
 
   test('only coin packages need the waiver', () {

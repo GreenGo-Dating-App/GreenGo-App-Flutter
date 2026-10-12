@@ -7978,6 +7978,7 @@
   },
   "checkoutMembershipWithdrawalInfo": "Right of withdrawal: you can withdraw from this membership within 14 days of purchase (7 days for purchases in Brazil) without giving a reason and receive a full refund, using \"Withdraw from contract\" in the Shop or on our website. The membership renews automatically until you cancel; you can cancel anytime in the billing portal.",
   "checkoutContinueToPayment": "Continue to payment",
+  "checkoutAccept": "Accept",
   "withdrawFromContract": "Withdraw from contract",
   "withdrawalDialogIntro": "Choose the purchase to withdraw from. We will email a confirmation link to the address used for the purchase; nothing is cancelled or refunded until you confirm.",
   "withdrawalNothingEligible": "None of your web purchases can be withdrawn from right now. Memberships can be withdrawn within 14 days of purchase (7 days in Brazil); coin purchases only if the right was not waived at checkout.",
