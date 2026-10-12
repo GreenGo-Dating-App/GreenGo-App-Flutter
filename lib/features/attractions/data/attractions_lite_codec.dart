@@ -150,8 +150,23 @@ class AttractionsLiteShard {
       visitDuration: v('vd'),
       attributionAuthor: author,
       attributionLicense: author == null ? null : v('al'),
+      names: {
+        for (final e in _nameCols.entries)
+          if (v(e.key) != null) e.value: v(e.key)!,
+      },
     );
   }
+
+  /// Localised title columns (empty cell = same as `n`).
+  static const Map<String, String> _nameCols = {
+    'n_en': 'en',
+    'n_it': 'it',
+    'n_es': 'es',
+    'n_pt': 'pt',
+    'n_ptbr': 'pt_BR',
+    'n_fr': 'fr',
+    'n_de': 'de',
+  };
 
   /// The tier the catalogue assigns to [score] (`attraction_config/app`
   /// scoreTiers); the lite rows omit `st` whenever it equals this.

@@ -6,6 +6,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../core/utils/text_fold.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/attraction_icons.dart';
 import '../../../../core/utils/first_screen_gate.dart';
@@ -651,7 +652,14 @@ class _AttractionsTabState extends State<AttractionsTab>
   /// should lead with attractions *named* after Rome, then everything *in*
   /// Rome; typing "Italy" should return the whole country.
   int _score(Attraction a, String q, AppLocalizations? l10n) {
-    final name = a.name.toLowerCase();
+    // Every language's title counts: "Colosseo" finds the Colosseum in any UI
+    // language. The best-matching title is the one scored below.
+    final names = [for (final n in a.allNames) foldForSearch(n)];
+    q = foldForSearch(q);
+    final name = names.firstWhere((n) => n == q,
+        orElse: () => names.firstWhere((n) => n.startsWith(q),
+            orElse: () => names.firstWhere((n) => n.contains(q),
+                orElse: () => names.first)));
     final city = a.cityName.toLowerCase();
     final country = (_countryNameOf(a.countryIso2) ?? '').toLowerCase();
     final countryEn = (_englishCountryNameOf(a.countryIso2) ?? '').toLowerCase();
@@ -748,7 +756,9 @@ class _AttractionsTabState extends State<AttractionsTab>
             then((a.ticketPrice ?? 0).compareTo(b.ticketPrice ?? 0), a, b));
         break;
       case 'name':
-        out.sort((a, b) => then(a.name.compareTo(b.name), a, b));
+        final locale = Localizations.localeOf(context);
+        out.sort((a, b) =>
+            then(a.nameFor(locale).compareTo(b.nameFor(locale)), a, b));
         break;
       case 'distance':
       default:
@@ -1179,7 +1189,8 @@ class _AttractionsTabState extends State<AttractionsTab>
                     // 'thumb' (720x405) at a 160px-tall row: 'card' (1280x720)
                     // was ~3x the bytes for no visible gain, which hurt most on
                     // web where every row is a fresh network fetch.
-                    label: a.altText ?? a.name, child: _img(a, _listVariant, 160)),
+                    label: a.altText ?? a.nameFor(Localizations.localeOf(context)),
+                    child: _img(a, _listVariant, 160)),
               ),
               Positioned(top: 8, left: 8, child: _scoreBadge(a, size: 12)),
               Positioned(
@@ -1207,7 +1218,7 @@ class _AttractionsTabState extends State<AttractionsTab>
                         size: 15, color: AppColors.richGold),
                     const SizedBox(width: 6),
                     Expanded(
-                      child: Text(a.name,
+                      child: Text(a.nameFor(Localizations.localeOf(context)),
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: const TextStyle(

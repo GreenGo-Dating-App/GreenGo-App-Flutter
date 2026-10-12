@@ -1,3 +1,5 @@
+import 'dart:ui' show Locale;
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 /// A curated attraction from the GreenGo dataset.
@@ -60,6 +62,7 @@ class Attraction {
     this.photographyTips,
     this.interestingFacts = const [],
     this.curiosities = const [],
+    this.names = const {},
     this.altText,
     this.openingHours,
     this.bestSeason,
@@ -130,6 +133,27 @@ class Attraction {
   /// The attraction's top 5 curiosities (English; the detail page translates
   /// them). Filled by scripts/generate_attraction_curiosities.js.
   final List<String> curiosities;
+
+  /// The title in the app languages (en, it, es, pt, pt_BR, fr, de), from
+  /// Wikidata (scripts/build_attraction_names_i18n.js). Missing languages fall
+  /// back to [name]; use [nameFor].
+  final Map<String, String> names;
+
+  /// The title to show for [locale]: "Colosseo" in Italian, "Kolosseum" in
+  /// German, else [name].
+  String nameFor(Locale? locale) {
+    if (locale == null || names.isEmpty) return name;
+    final lang = locale.languageCode;
+    final key = lang == 'pt' && locale.countryCode == 'BR' ? 'pt_BR' : lang;
+    return names[key] ?? names[lang] ?? name;
+  }
+
+  /// Every known title (catalogue, official and localised), for search.
+  Iterable<String> get allNames => {
+        name,
+        if (officialName != null) officialName!,
+        ...names.values,
+      };
   final String? altText;
   final String? openingHours;
   final String? bestSeason;
@@ -160,6 +184,17 @@ class Attraction {
     if (v == null) return null;
     final s = v.toString().trim();
     return s.isEmpty ? null : s;
+  }
+
+  /// A `names` map from Firestore / the lite columns (string values only).
+  static Map<String, String> namesMap(dynamic v) {
+    if (v is! Map) return const {};
+    final out = <String, String>{};
+    v.forEach((k, val) {
+      final s = val?.toString().trim() ?? '';
+      if (s.isNotEmpty) out[k.toString()] = s;
+    });
+    return out;
   }
 
   static List<String> _list(dynamic v) =>
@@ -243,6 +278,7 @@ class Attraction {
       photographyTips: _s(m['photographyTips']),
       interestingFacts: _list(m['interestingFacts']),
       curiosities: _list(m['curiosities']),
+      names: namesMap(m['names']),
       altText: _s(m['altText']),
       openingHours: _s(m['openingHours']),
       visitDuration: _s(m['visitDuration']),

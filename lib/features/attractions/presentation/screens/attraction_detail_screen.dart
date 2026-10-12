@@ -498,7 +498,7 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
       pageBuilder: (ctx, _, __) => _AttractionImageViewer(
         url: url,
         heroTag: 'attraction-image-${a.id}',
-        semanticLabel: a.altText ?? a.name,
+        semanticLabel: a.altText ?? a.nameFor(Localizations.localeOf(context)),
       ),
       transitionsBuilder: (_, anim, __, child) =>
           FadeTransition(opacity: anim, child: child),
@@ -545,7 +545,8 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
                 icon: const Icon(Icons.share_outlined,
                     color: AppColors.richGold, size: 20),
                 onPressed: () =>
-                    shareAttractionLink(buttonContext, a.id, name: a.name),
+                    shareAttractionLink(buttonContext, a.id,
+                        name: a.nameFor(Localizations.localeOf(buttonContext))),
               ),
             ),
             TextButton.icon(
@@ -572,7 +573,7 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
             background: Stack(fit: StackFit.expand, children: [
               // Tap the photo to open it full screen (pinch to zoom).
               Semantics(
-                label: a.altText ?? a.name,
+                label: a.altText ?? a.nameFor(Localizations.localeOf(context)),
                 button: true,
                 child: GestureDetector(
                   onTap: () => _openImage(context, a),
@@ -622,7 +623,7 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
                 children: [
                   Row(children: [
                     Expanded(
-                      child: Text(a.name,
+                      child: Text(a.nameFor(Localizations.localeOf(context)),
                           style: const TextStyle(
                               color: AppColors.textPrimary,
                               fontSize: 22,

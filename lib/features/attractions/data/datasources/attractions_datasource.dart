@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart' show compute, kIsWeb;
 
 import '../../../../core/utils/display_image.dart';
+import '../../../../core/utils/text_fold.dart';
 import '../../domain/country_resolver.dart';
 import '../../domain/entities/attraction.dart';
 import '../attractions_lite_codec.dart';
@@ -112,6 +113,9 @@ class AttractionsDataSource {
 
   /// Lite list shards (see [AttractionsLiteShard]).
   static const String liteCollection = 'attractions_lite';
+
+  /// One doc per (folded name, attraction): { n, id, iso2, score }.
+  static const String nameIndexCollection = 'attraction_name_index';
 
   /// The docs of ONE complete lite build in [s], in shard order, or null.
   ///
@@ -612,6 +616,34 @@ class AttractionsDataSource {
                 .get()
                 .then((s) => addAll(s.docs.map(Attraction.fromDoc))),
         ]);
+      }());
+    }
+    // Names in every language + Wikidata alternative names
+    // (attraction_name_index, scripts/build_attraction_names_i18n.js):
+    // "Colosseo", "Colisée", "Kolosseum" all find the Colosseum.
+    final folded = foldForSearch(q);
+    if (folded.length >= 3) {
+      jobs.add(() async {
+        final hits = await _db
+            .collection(nameIndexCollection)
+            .orderBy('n')
+            .startAt([folded])
+            .endAt(['$folded'])
+            .limit(searchNameLimit * 2)
+            .get();
+        final ids = <int>{
+          for (final d in hits.docs)
+            if (d.data()['id'] is num) (d.data()['id'] as num).toInt(),
+        }.take(searchNameLimit).toList();
+        final attractions = _db.collection('attractions');
+        for (var i = 0; i < ids.length; i += 10) {
+          final chunk = ids.sublist(i, (i + 10).clamp(0, ids.length));
+          final s = await attractions
+              .where(FieldPath.documentId,
+                  whereIn: [for (final id in chunk) '$id'])
+              .get();
+          addAll(s.docs.map(Attraction.fromDoc));
+        }
       }());
     }
     // Each source is best-effort: one failing never blanks the others.

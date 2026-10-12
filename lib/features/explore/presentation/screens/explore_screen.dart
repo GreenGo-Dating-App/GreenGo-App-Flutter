@@ -3540,7 +3540,7 @@ class _FeaturedCard extends StatelessWidget {
     final l10n = AppLocalizations.of(context)!;
     final imageUrl = happening.imageUrl;
     final goingCount = happening.goingCount;
-    final title = happening.title ?? '';
+    final title = happening.titleFor(Localizations.localeOf(context)) ?? '';
 
     return SizedBox(
       width: cardWidth,
@@ -3744,7 +3744,7 @@ class _LuxuryEventCardState extends State<_LuxuryEventCard>
     final l10n = AppLocalizations.of(context)!;
     final happening = widget.happening;
     final imageUrl = happening.imageUrl;
-    final title = happening.title ?? '';
+    final title = happening.titleFor(Localizations.localeOf(context)) ?? '';
     final goingCount = happening.goingCount;
     const innerRadius = AppGlass.radiusCard - _LuxuryEventCard._frame;
 
@@ -4028,7 +4028,7 @@ class _HappeningCard extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          happening.title ?? '',
+                          happening.titleFor(Localizations.localeOf(context)) ?? '',
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                           style: const TextStyle(
@@ -4731,6 +4731,10 @@ class _Happening {
       (attraction != null ? 'attraction_${attraction!.id}' : '');
 
   String? get title => community?.title ?? external?.title ?? attraction?.name;
+
+  /// [title] with an attraction's name in the app language.
+  String? titleFor(Locale locale) =>
+      community?.title ?? external?.title ?? attraction?.nameFor(locale);
   String? get city =>
       community?.city ?? external?.city ?? attraction?.cityName;
   String? get country =>

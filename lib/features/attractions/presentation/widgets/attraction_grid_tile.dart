@@ -59,7 +59,9 @@ class AttractionGridTile extends StatelessWidget {
             children: [
               Expanded(
                 child: Stack(fit: StackFit.expand, children: [
-                  Semantics(label: a.altText ?? a.name, child: image),
+                  Semantics(
+                      label: a.altText ?? a.nameFor(Localizations.localeOf(context)),
+                      child: image),
                   Positioned(
                       top: 4,
                       left: 4,
@@ -102,7 +104,7 @@ class AttractionGridTile extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Text(a.name,
+                    Text(a.nameFor(Localizations.localeOf(context)),
                         key: const ValueKey('attrTileTitle'),
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,

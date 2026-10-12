@@ -1872,6 +1872,10 @@ service cloud.firestore {
       allow read: if isSignedIn();
       allow write: if false; // packed list rows (scripts/build_attractions_lite.js)
     }
+    match /attraction_name_index/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false; // multilingual name search (scripts/build_attraction_names_i18n.js)
+    }
     match /attraction_countries/{docId} {
       allow read: if isSignedIn();
       allow write: if false; // coverage + publish flag (the control plane)

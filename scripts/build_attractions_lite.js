@@ -111,7 +111,13 @@ const DESC_CAP = 120;
 const COLS = [
   'i', 'n', 'c', 'cs', 's', 'cat', 'ci', 'imp', 'ii', 'la', 'ln', 'b', 'h', 't',
   'tk', 'sc', 'st', 'r', 'tp', 'cu', 'f', 'dt', 'd', 'vd', 'aa', 'al',
+  // Localised titles (attractions/{id}.names, scripts/build_attraction_names_i18n.js);
+  // a cell is empty when it equals `n`. Older apps ignore unknown columns.
+  'n_en', 'n_it', 'n_es', 'n_pt', 'n_ptbr', 'n_fr', 'n_de',
 ];
+const NAME_COLS = { n_en: 'en', n_it: 'it', n_es: 'es', n_pt: 'pt', n_ptbr: 'pt_BR', n_fr: 'fr', n_de: 'de' };
+/** id -> names map of the country being built (empty when not loaded). */
+let NAMES = new Map();
 const DICT_COLS = ['cat', 'ci', 'imp', 'ii', 'cu', 'dt', 'vd', 'al'];
 const SEPARATORS = ['|', '~', '^', '`', '¦', '\u001f'];
 
@@ -285,6 +291,11 @@ function liteCells(it, iso) {
   const at = it.at && typeof it.at === 'object' ? it.at : null;
   cells.aa = at ? str(at.a) : '';
   cells.al = cells.aa ? str(at.l) : '';
+  const names = NAMES.get(cells.i) || {};
+  for (const [col, lang] of Object.entries(NAME_COLS)) {
+    const v = str(names[lang]);
+    cells[col] = v && v !== name ? v : '';
+  }
   return { cells, score };
 }
 
@@ -548,6 +559,11 @@ async function main() {
       continue;
     }
     let build;
+    NAMES = new Map();
+    if (db) {
+      const ns = await db.collection('attractions').where('countryIso2', '==', iso).select('names').get();
+      for (const d of ns.docs) if (d.get('names')) NAMES.set(d.id, d.get('names'));
+    }
     try {
       build = buildCountry(iso, c.items, c.src, maxBytes);
       selfCheck(iso, c.items, build.docs);
