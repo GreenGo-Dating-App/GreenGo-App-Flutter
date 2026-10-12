@@ -1,8 +1,8 @@
 TERMINI E CONDIZIONI DI GREENGO
 
-Versione: 5.1.0
-Data di entrata in vigore: 11 ottobre 2026
-Versione precedente: 5.0.0 (9 ottobre 2026)
+Versione: 5.1.1
+Data di entrata in vigore: 13 ottobre 2026
+Versione precedente: 5.1.0 (11 ottobre 2026)
 
 ================================================================================
 1. INFORMAZIONI SU QUESTI TERMINI
@@ -292,6 +292,14 @@ c) Non accettiamo PayPal, boleto o altri metodi di pagamento per gli acquisti
 
 9.2 Prezzi e imposte
 - I prezzi sono mostrati nella tua valuta.
+- I prezzi sono importi fissi stabiliti separatamente per ogni valuta (per
+  esempio 4,99 USD o 24,99 BRL). Non sono convertiti al tasso di cambio del
+  giorno: i prezzi nelle diverse valute sono fissati per essere
+  sostanzialmente equivalenti, ma non sono conversioni esatte l'uno
+  dell'altro e possono differire da quanto mostra un convertitore di valuta.
+- Si applica il prezzo mostrato nella tua valuta prima del pagamento. Negli
+  store, i prezzi seguono i livelli di prezzo che Apple e Google offrono in
+  ciascun paese.
 - I prezzi includono l'IVA o imposte sui consumi simili quando la legge
   richiede che siano incluse.
 - La tua banca può addebitare commissioni per la conversione di valuta.
@@ -1093,6 +1101,10 @@ Diritto d'autore (DMCA): copyright@greengochat.com
 ================================================================================
 CRONOLOGIA DELLE VERSIONI
 ================================================================================
+
+5.1.1 - 13 ottobre 2026
+- Sezione 9.2: i prezzi sono importi fissi per valuta, sostanzialmente
+  equivalenti ma non conversioni esatte al tasso di cambio.
 
 5.1.0 - 11 ottobre 2026
 - Nuova sezione 16.9: l'uso improprio di foto, contenuti e dati personali di

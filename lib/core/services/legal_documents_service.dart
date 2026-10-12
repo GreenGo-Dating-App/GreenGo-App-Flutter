@@ -159,9 +159,9 @@ class LegalDocument {
       content: body,
       version: version ?? headerVersion ?? type.bundledVersion,
       isActive: true,
-      lastUpdated: kLegalEffectiveDate,
+      lastUpdated: type == LegalDocumentType.termsAndConditions ? kTermsEffectiveDate : kLegalEffectiveDate,
       updatedBy: 'bundled',
-      createdAt: kLegalEffectiveDate,
+      createdAt: type == LegalDocumentType.termsAndConditions ? kTermsEffectiveDate : kLegalEffectiveDate,
     );
   }
 

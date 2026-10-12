@@ -1,8 +1,8 @@
 ALLGEMEINE GESCHÄFTSBEDINGUNGEN VON GREENGO
 
-Version: 5.1.0
-Gültig ab: 11. Oktober 2026
-Vorherige Version: 5.0.0 (9. Oktober 2026)
+Version: 5.1.1
+Gültig ab: 13. Oktober 2026
+Vorherige Version: 5.1.0 (11. Oktober 2026)
 
 ================================================================================
 1. ÜBER DIESE BEDINGUNGEN
@@ -301,6 +301,15 @@ c) Wir akzeptieren für GreenGo-Käufe weder PayPal noch Boleto oder andere
 
 9.2 Preise und Steuern
 - Preise werden in deiner Währung angezeigt.
+- Preise sind feste Beträge, die für jede Währung einzeln festgelegt werden
+  (zum Beispiel 4,99 USD oder 24,99 BRL). Sie werden nicht zum Tageskurs
+  umgerechnet: Die Preise in den verschiedenen Währungen sind so
+  festgelegt, dass sie ungefähr gleichwertig sind, sie sind aber keine
+  genauen Umrechnungen voneinander und können von dem abweichen, was ein
+  Währungsrechner anzeigt.
+- Es gilt der Preis, der dir vor dem Bezahlen in deiner Währung angezeigt
+  wird. In den App-Stores folgen die Preise den Preisstufen, die Apple und
+  Google im jeweiligen Land anbieten.
 - Preise enthalten die Mehrwertsteuer oder ähnliche Verbrauchsteuern, wo das
   Gesetz deren Einbeziehung verlangt.
 - Deine Bank kann Gebühren für die Währungsumrechnung erheben.
@@ -1120,6 +1129,10 @@ Urheberrecht (DMCA): copyright@greengochat.com
 ================================================================================
 VERSIONSVERLAUF
 ================================================================================
+
+5.1.1 - 13. Oktober 2026
+- Abschnitt 9.2: Preise sind feste Beträge je Währung, ungefähr
+  gleichwertig, aber keine genauen Umrechnungen zum Wechselkurs.
 
 5.1.0 - 11. Oktober 2026
 - Neuer Abschnitt 16.9: Der Missbrauch von Fotos, Inhalten und

@@ -7,13 +7,17 @@
 library;
 
 /// Terms and Conditions version shown in-app and recorded at acceptance.
-const String kTermsVersion = '5.1.0';
+const String kTermsVersion = '5.1.1';
 
 /// Privacy Policy version shown in-app and recorded at acceptance.
 const String kPrivacyPolicyVersion = '5.1.0';
 
-/// Effective date of [kTermsVersion] / [kPrivacyPolicyVersion].
+/// Effective date of [kPrivacyPolicyVersion] (and of the Terms up to 5.1.0).
 final DateTime kLegalEffectiveDate = DateTime(2026, 10, 11);
+
+/// Effective date of [kTermsVersion] (5.1.1: section 9.2 - fixed price
+/// points per currency, a clarification; no re-acceptance).
+final DateTime kTermsEffectiveDate = DateTime(2026, 10, 13);
 
 /// Oldest accepted version that does NOT trigger the "we've updated our
 /// Terms" sheet. Raise it only for a MATERIAL change (5.1.0: new Terms 16.9

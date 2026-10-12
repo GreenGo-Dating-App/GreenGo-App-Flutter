@@ -1,8 +1,8 @@
 CONDITIONS GÉNÉRALES DE GREENGO
 
-Version : 5.1.0
-Date d'entrée en vigueur : 11 octobre 2026
-Version précédente : 5.0.0 (9 octobre 2026)
+Version : 5.1.1
+Date d'entrée en vigueur : 13 octobre 2026
+Version précédente : 5.1.0 (11 octobre 2026)
 
 ================================================================================
 1. À PROPOS DES PRÉSENTES CONDITIONS
@@ -316,6 +316,15 @@ c) Nous n'acceptons pas PayPal, le boleto ni d'autres moyens de paiement pour
 
 9.2 Prix et taxes
 - Les prix sont affichés dans votre devise.
+- Les prix sont des montants fixes définis séparément pour chaque devise
+  (par exemple 4,99 USD ou 24,99 BRL). Ils ne sont pas convertis au taux de
+  change du jour : les prix dans les différentes devises sont fixés pour
+  être globalement équivalents, mais ils ne sont pas des conversions exactes
+  les uns des autres et peuvent différer de ce qu'affiche un convertisseur
+  de devises.
+- Le prix applicable est celui affiché dans votre devise avant le paiement.
+  Dans les magasins d'applications, les prix suivent les niveaux de prix
+  proposés par Apple et Google dans chaque pays.
 - Les prix incluent la TVA ou des taxes sur la consommation similaires lorsque
   la loi exige qu'elles soient incluses.
 - Votre banque peut facturer des frais de conversion de devises.
@@ -1150,6 +1159,10 @@ Droits d'auteur (DMCA) : copyright@greengochat.com
 ================================================================================
 HISTORIQUE DES VERSIONS
 ================================================================================
+
+5.1.1 - 13 octobre 2026
+- Section 9.2 : les prix sont des montants fixes par devise, globalement
+  équivalents mais pas des conversions exactes au taux de change.
 
 5.1.0 - 11 octobre 2026
 - Nouveau point 16.9 : l'utilisation abusive des photos, contenus et données

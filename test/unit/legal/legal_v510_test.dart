@@ -48,7 +48,9 @@ void main() {
             content: crlf,
           );
           expect(doc.version, version);
-          expect(doc.lastUpdated, kLegalEffectiveDate);
+          expect(
+              doc.lastUpdated,
+              prefix == 'privacy-policy' ? kLegalEffectiveDate : kTermsEffectiveDate);
           expect(doc.title.trim(), isNotEmpty);
           expect(doc.title.contains('\r'), isFalse);
         }
