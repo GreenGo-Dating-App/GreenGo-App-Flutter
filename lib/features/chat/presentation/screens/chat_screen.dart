@@ -23,6 +23,8 @@ import '../../../../core/providers/language_provider.dart';
 import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/services/chat_learning_service.dart';
 import '../../domain/message_insights.dart';
+import '../../../../core/services/chat_datasets/chat_datasets.dart';
+import '../widgets/chat_ideas_sheet.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/services/location_share_service.dart';
 import '../../../../core/services/place_search_service.dart';
@@ -218,7 +220,7 @@ class _ChatScreenState extends State<ChatScreen> {
   // Phrase of the Day
   String? _phraseOfTheDay;
   String? _phraseTranslation;
-  String? _phraseId;
+  String? _phraseAuthor;
   bool _showPhraseOfDay = true;
 
   // Pagination — open on a BOUNDED latest window (Firestore offline persistence
@@ -1906,6 +1908,8 @@ class _ChatScreenState extends State<ChatScreen> {
                                 textAlign: TextAlign.center,
                               ),
                             ),
+                            const SizedBox(height: 16),
+                            _buildEmptyChatIcebreakers(),
                           ],
                         ),
                       );
@@ -2915,136 +2919,111 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
-  Future<void> _loadPhraseOfTheDay() async {
-    final today = DateTime.now();
-    final dateKey = '${today.year}-${today.month.toString().padLeft(2, '0')}-${today.day.toString().padLeft(2, '0')}';
-
-    // Try to load from Firestore cache first
-    try {
-      final doc = await FirebaseFirestore.instance
-          .collection('daily_phrases')
-          .doc(dateKey)
-          .get();
-
-      if (doc.exists) {
-        final data = doc.data()!;
-        if (mounted) {
-          setState(() {
-            _phraseOfTheDay = data['phrase'] as String?;
-            _phraseId = data['id'] as String?;
-            _phraseTranslation = '${data['translation']} (${data['lang']})';
-          });
-        }
-        return;
-      }
-    } catch (e) {
-      debugPrint('Phrase of day: Firestore read failed: $e');
-    }
-
-    // Fallback to local phrases and cache to Firestore. The English
-    // translation/lang are kept as the stored fallback (shared daily_phrases
-    // doc); the banner localizes by the stable 'id' (_localizedPhraseTranslation).
-    final phrases = [
-      {'id': 'es_how_are_you', 'phrase': 'Cómo estás?', 'translation': 'How are you?', 'lang': 'Spanish'},
-      {'id': 'it_good_morning', 'phrase': 'Buongiorno!', 'translation': 'Good morning!', 'lang': 'Italian'},
-      {'id': 'fr_how_are_you', 'phrase': 'Comment allez-vous?', 'translation': 'How are you?', 'lang': 'French'},
-      {'id': 'de_how_are_you', 'phrase': 'Wie geht es Ihnen?', 'translation': 'How are you?', 'lang': 'German'},
-      {'id': 'pt_all_good', 'phrase': 'Tudo bem?', 'translation': 'All good?', 'lang': 'Portuguese'},
-      {'id': 'it_nice_to_meet', 'phrase': 'Piacere di conoscerti!', 'translation': 'Nice to meet you!', 'lang': 'Italian'},
-      {'id': 'fr_pleased_to_meet', 'phrase': 'Enchanté!', 'translation': 'Pleased to meet you!', 'lang': 'French'},
-      {'id': 'es_nice_to_meet', 'phrase': 'Mucho gusto!', 'translation': 'Nice to meet you!', 'lang': 'Spanish'},
-      {'id': 'de_nice_to_meet', 'phrase': 'Freut mich!', 'translation': 'Nice to meet you!', 'lang': 'German'},
-      {'id': 'es_whats_up', 'phrase': 'Que tal?', 'translation': "What's up?", 'lang': 'Spanish'},
-    ];
-
-    // Pick based on day of year for consistency
-    final dayOfYear = today.difference(DateTime(today.year)).inDays;
-    final phrase = phrases[dayOfYear % phrases.length];
-
-    if (mounted) {
-      setState(() {
-        _phraseOfTheDay = '${phrase['phrase']}';
-        _phraseId = phrase['id'];
-        _phraseTranslation = '${phrase['translation']} (${phrase['lang']})';
-      });
-    }
-
-    // Cache to Firestore for future use (non-blocking)
-    FirebaseFirestore.instance
-        .collection('daily_phrases')
-        .doc(dateKey)
-        .set(phrase)
-        .catchError((_) {});
+  void _openIdeas() {
+    final mine = _userLanguage ?? Localizations.localeOf(context).languageCode;
+    ChatIdeasSheet.show(
+      context,
+      partnerLanguage: _targetLanguage ?? mine,
+      myLanguage: mine,
+      onPick: (text) => _messageController.text = text,
+    );
   }
 
-  /// Localized "translation (language)" for the phrase banner; falls back to
-  /// the stored English text for phrases without a known id.
-  String? _localizedPhraseTranslation(AppLocalizations l10n) {
-    final id = _phraseId;
-    if (id == null || id.length < 3) return _phraseTranslation;
-    final String translation;
-    if (id.endsWith('how_are_you')) {
-      translation = l10n.chatPhraseHowAreYou;
-    } else if (id == 'it_good_morning') {
-      translation = l10n.chatPhraseGoodMorning;
-    } else if (id == 'pt_all_good') {
-      translation = l10n.chatPhraseAllGood;
-    } else if (id == 'fr_pleased_to_meet') {
-      translation = l10n.chatPhrasePleasedToMeetYou;
-    } else if (id.endsWith('nice_to_meet')) {
-      translation = l10n.chatPhraseNiceToMeetYou;
-    } else if (id == 'es_whats_up') {
-      translation = l10n.chatPhraseWhatsUp;
-    } else {
-      return _phraseTranslation;
-    }
-    final String language;
-    switch (id.substring(0, 2)) {
-      case 'es':
-        language = l10n.languageNameSpanish;
-        break;
-      case 'it':
-        language = l10n.languageNameItalian;
-        break;
-      case 'fr':
-        language = l10n.languageNameFrench;
-        break;
-      case 'de':
-        language = l10n.languageNameGerman;
-        break;
-      case 'pt':
-        language = l10n.languageNamePortuguese;
-        break;
-      default:
-        return _phraseTranslation;
-    }
-    return '$translation ($language)';
+  /// Three random offline ice-breakers under "Say hi" in an empty chat.
+  Widget _buildEmptyChatIcebreakers() {
+    final datasets = ChatDatasets.instance;
+    return FutureBuilder<void>(
+      future: datasets.ensure('icebreakers'),
+      builder: (context, _) {
+        final picks = ChatIdeasSheet.randomIcebreakers(3, seed: _headerName.hashCode);
+        if (picks.isEmpty) return const SizedBox.shrink();
+        final mine = _userLanguage ?? Localizations.localeOf(context).languageCode;
+        final theirs = _targetLanguage ?? mine;
+        return Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          child: Column(
+            children: [
+              for (final p in picks)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: ActionChip(
+                    avatar: const Icon(Icons.lightbulb_outline, size: 16, color: AppColors.richGold),
+                    label: Text(p.text.of(theirs), maxLines: 2, overflow: TextOverflow.ellipsis),
+                    onPressed: () => _messageController.text = p.text.of(theirs),
+                  ),
+                ),
+              TextButton(
+                onPressed: _openIdeas,
+                child: Text(AppLocalizations.of(context)!.chatSuggestionsTooltip),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  /// Phrase of the day: one of the 3,000 verified quotes of the offline
+  /// dataset (same quote for everyone on a given day), shown in the chat
+  /// partner's language with the user's own language underneath.
+  Future<void> _loadPhraseOfTheDay() async {
+    final datasets = ChatDatasets.instance;
+    await datasets.ensure('quotes');
+    final quote = datasets.quoteOfDay(DateTime.now());
+    if (quote == null || !mounted) return;
+    final mine = _userLanguage ?? Localizations.localeOf(context).languageCode;
+    final theirs = _targetLanguage ?? mine;
+    final inTheirs = quote.text.of(theirs);
+    final inMine = quote.text.of(mine);
+    setState(() {
+      _phraseOfTheDay = inTheirs;
+      _phraseTranslation = inMine == inTheirs ? null : inMine;
+      _phraseAuthor = quote.author;
+    });
   }
 
   Widget _buildPhraseOfDay() {
     if (_phraseOfTheDay == null || !_showPhraseOfDay) return const SizedBox.shrink();
-
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       color: AppColors.backgroundDark,
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Icon(Icons.today, size: 16, color: AppColors.richGold),
-          const SizedBox(width: 8),
-          Text(
-            '${AppLocalizations.of(context)!.chatSettingPhraseOfDay}: ',
-            style: const TextStyle(color: AppColors.textTertiary, fontSize: 11),
+          const Padding(
+            padding: EdgeInsets.only(top: 2),
+            child: Icon(Icons.format_quote, size: 16, color: AppColors.richGold),
           ),
+          const SizedBox(width: 8),
           Expanded(
             child: GestureDetector(
-              onTap: () {
-                // Copy phrase to input
-                _messageController.text = _phraseOfTheDay!;
-              },
-              child: Text(
-                '$_phraseOfTheDay — ${_localizedPhraseTranslation(AppLocalizations.of(context)!)}',
-                style: const TextStyle(color: AppColors.richGold, fontSize: 12, fontWeight: FontWeight.w500),
-                overflow: TextOverflow.ellipsis,
+              // Practise it: the partner-language text goes into the input.
+              onTap: () => _messageController.text = _phraseOfTheDay!,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    _phraseOfTheDay!,
+                    maxLines: 3,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                        color: AppColors.richGold, fontSize: 12, fontWeight: FontWeight.w500, height: 1.3),
+                  ),
+                  if (_phraseTranslation != null)
+                    Text(
+                      _phraseTranslation!,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(
+                          color: AppColors.textTertiary, fontSize: 11, fontStyle: FontStyle.italic, height: 1.3),
+                    ),
+                  if (_phraseAuthor != null && _phraseAuthor!.isNotEmpty)
+                    Text(
+                      l10n.chatQuoteAuthor(_phraseAuthor!),
+                      style: const TextStyle(color: AppColors.textSecondary, fontSize: 10),
+                    ),
+                ],
               ),
             ),
           ),
@@ -3782,6 +3761,13 @@ class _ChatScreenState extends State<ChatScreen> {
                     icon: const Icon(Icons.add_circle_outline),
                     color: AppColors.textSecondary,
                     onPressed: () => _showAttachmentOptions(context),
+                  ),
+                  // Offline ice-breakers + suggested sentences.
+                  IconButton(
+                    tooltip: AppLocalizations.of(context)!.chatSuggestionsTooltip,
+                    icon: const Icon(Icons.lightbulb_outline),
+                    color: AppColors.richGold,
+                    onPressed: _openIdeas,
                   ),
 
                   // Text input

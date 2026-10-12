@@ -11,15 +11,15 @@ Q08 | quotes | QUOTES_ASSIGN 08 | parts/quotes_08.json | done
 Q09 | quotes | QUOTES_ASSIGN 09 | parts/quotes_09.json | done
 Q10 | quotes | QUOTES_ASSIGN 10 | parts/quotes_10.json | done
 Q11 | quotes | QUOTES_ASSIGN 11 | parts/quotes_11.json | done
-Q12 | quotes | QUOTES_ASSIGN 12 | parts/quotes_12.json | running
+Q12 | quotes | QUOTES_ASSIGN 12 | parts/quotes_12.json | done
 Q13 | quotes | QUOTES_ASSIGN 13 | parts/quotes_13.json | done
-Q14 | quotes | QUOTES_ASSIGN 14 | parts/quotes_14.json | running
+Q14 | quotes | QUOTES_ASSIGN 14 | parts/quotes_14.json | done
 Q15 | quotes | QUOTES_ASSIGN 15 | parts/quotes_15.json | done
 Q16 | quotes | QUOTES_ASSIGN 16 | parts/quotes_16.json | done
 Q17 | quotes | QUOTES_ASSIGN 17 | parts/quotes_17.json | running
 Q18 | quotes | QUOTES_ASSIGN 18 | parts/quotes_18.json | running
-Q19 | quotes | QUOTES_ASSIGN 19 | parts/quotes_19.json | todo
-Q20 | quotes | QUOTES_ASSIGN 20 | parts/quotes_20.json | todo
+Q19 | quotes | QUOTES_ASSIGN 19 | parts/quotes_19.json | running
+Q20 | quotes | QUOTES_ASSIGN 20 | parts/quotes_20.json | running
 Q21 | quotes | QUOTES_ASSIGN 21 | parts/quotes_21.json | todo
 Q22 | quotes | QUOTES_ASSIGN 22 | parts/quotes_22.json | todo
 Q23 | quotes | QUOTES_ASSIGN 23 | parts/quotes_23.json | todo
@@ -36,8 +36,8 @@ I03 | icebreakers | books,sports_fitness | parts/icebreakers_03.json | done
 I04 | icebreakers | languages,traditions | parts/icebreakers_04.json | done
 I05 | icebreakers | hometown,work_studies | parts/icebreakers_05.json | done
 I06 | icebreakers | hobbies_creativity,nature_outdoors | parts/icebreakers_06.json | done
-I07 | icebreakers | technology,daily_life | parts/icebreakers_07.json | running
-I08 | icebreakers | dreams_goals,would_you_rather | parts/icebreakers_08.json | todo
+I07 | icebreakers | technology,daily_life | parts/icebreakers_07.json | done
+I08 | icebreakers | dreams_goals,would_you_rather | parts/icebreakers_08.json | running
 I09 | icebreakers | festivals,animals_pets | parts/icebreakers_09.json | todo
 I10 | icebreakers | art_museums,local_tips | parts/icebreakers_10.json | todo
 S01 | sentences | greetings_intro,getting_to_know | parts/sentences_01.json | done
@@ -48,8 +48,8 @@ S05 | sentences | accept_decline,recommendations | parts/sentences_05.json | don
 S06 | sentences | directions_meeting,weather | parts/sentences_06.json | done
 S07 | sentences | food_talk,restaurant | parts/sentences_07.json | done
 S08 | sentences | shopping,transport | parts/sentences_08.json | done
-S09 | sentences | accommodation,health_emergency | parts/sentences_09.json | running
-S10 | sentences | feelings,encouraging | parts/sentences_10.json | todo
+S09 | sentences | accommodation,health_emergency | parts/sentences_09.json | done
+S10 | sentences | feelings,encouraging | parts/sentences_10.json | running
 S11 | sentences | small_talk,family | parts/sentences_11.json | todo
 S12 | sentences | work,studies | parts/sentences_12.json | todo
 S13 | sentences | hobbies,travel_stories | parts/sentences_13.json | todo
@@ -68,10 +68,10 @@ T05 | tips | BY,CA,CH | parts/tips_05.json | done
 T06 | tips | CL,CN,CO | parts/tips_06.json | done
 T07 | tips | CR,CY,CZ | parts/tips_07.json | done
 T08 | tips | DE,DK,DO | parts/tips_08.json | done
-T09 | tips | EC,EE,EG | parts/tips_09.json | running
+T09 | tips | EC,EE,EG | parts/tips_09.json | done
 T10 | tips | ES,FI,FR | parts/tips_10.json | running
 T11 | tips | GB,GE,GR | parts/tips_11.json | done
-T12 | tips | HR,HU,ID | parts/tips_12.json | todo
+T12 | tips | HR,HU,ID | parts/tips_12.json | running
 T13 | tips | IE,IL,IN | parts/tips_13.json | todo
 T14 | tips | IS,IT,JO | parts/tips_14.json | todo
 T15 | tips | JP,KE,KH | parts/tips_15.json | done
