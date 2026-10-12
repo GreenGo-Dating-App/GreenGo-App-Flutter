@@ -169,12 +169,19 @@ class Attraction {
     return about[k] ?? about[locale.languageCode];
   }
 
-  /// Source URL for the text [aboutIn] returned (or the English one).
+  /// The text to translate when [aboutIn] has none: English, else whichever
+  /// language has an article (some places only have one in Spanish, say).
+  String? get aboutAny => about['en'] ?? (about.isEmpty ? null : about.values.first);
+
+  /// Source URL for the text [aboutIn] returned, else for [aboutAny].
   String? aboutSourceIn(Locale locale) {
     final k = _langKey(locale);
-    return aboutIn(locale) != null
-        ? (aboutSources[k] ?? aboutSources[locale.languageCode])
-        : aboutSources['en'];
+    if (aboutIn(locale) != null) return aboutSources[k] ?? aboutSources[locale.languageCode];
+    final any = aboutAny;
+    for (final e in about.entries) {
+      if (e.value == any) return aboutSources[e.key];
+    }
+    return null;
   }
 
   /// Every known title (catalogue, official and localised), for search.

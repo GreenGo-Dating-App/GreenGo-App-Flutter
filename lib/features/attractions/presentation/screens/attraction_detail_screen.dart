@@ -271,8 +271,8 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
     }
     final texts = <String>[
       // "What is it?" in a language without its own article: English, translated.
-      if (a.aboutIn(Localizations.localeOf(context)) == null && a.about['en'] != null)
-        a.about['en']!,
+      if (a.aboutIn(Localizations.localeOf(context)) == null && a.aboutAny != null)
+        a.aboutAny!,
       if (a.descriptionMedium != null) a.descriptionMedium!,
       if (a.descriptionLong != null) a.descriptionLong!,
       if (a.descriptionShort != null) a.descriptionShort!,
@@ -743,7 +743,7 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
             // ---- about ------------------------------------------------------
             if (a.about.isNotEmpty) ...[
               _sectionTitle(l10n.attrAbout),
-              _body(a.aboutIn(Localizations.localeOf(context)) ?? _t(a.about['en'])),
+              _body(a.aboutIn(Localizations.localeOf(context)) ?? _t(a.aboutAny)),
               _aboutSource(l10n, a.aboutSourceIn(Localizations.localeOf(context))),
             ] else if (a.descriptionMedium != null || a.descriptionShort != null) ...[
               _sectionTitle(l10n.attrAbout),

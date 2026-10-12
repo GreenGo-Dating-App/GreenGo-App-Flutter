@@ -194,7 +194,10 @@ async function stepExtracts() {
 }
 
 const STOP = new Set(['the', 'of', 'and', 'del', 'della', 'des', 'der', 'die', 'das', 'les', 'los', 'las', 'de', 'la', 'le', 'el', 'do', 'da', 'dos', 'das', 'di']);
-const fold = (s) => (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+// NFD does not split ø æ þ ð ß ł đ œ: map them by hand ("Nærøyfjord" = "Naeroyfjord").
+const SPECIAL = { 'ø': 'o', 'æ': 'ae', 'þ': 'th', 'ð': 'd', 'ß': 'ss', 'ł': 'l', 'đ': 'd', 'œ': 'oe', 'ı': 'i' };
+const fold = (s) => (s || '').toLowerCase().replace(/[øæþðßłđœı]/g, (c) => SPECIAL[c])
+  .normalize('NFD').replace(/[̀-ͯ]/g, '');
 const words = (s) => fold(s).split(/[^a-z0-9]+/).filter((w) => w.length >= 3 && !STOP.has(w));
 
 const baseName = (n) => (n || '').replace(/\s*\([^)]*\)/g, '').trim();

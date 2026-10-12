@@ -35,4 +35,12 @@ void main() {
     expect(a.aboutIn(const Locale('de')), isNull);
     expect(a.aboutSourceIn(const Locale('de')), 'https://en.wikipedia.org/wiki/Colosseum');
   });
+
+  test('only a Spanish article: that one is the fallback, with its source', () {
+    final es = _a({'es': 'El jardín botánico de Hamilton.'}, {'es': 'https://es.wikipedia.org/wiki/X'});
+    expect(es.aboutIn(const Locale('en')), isNull);
+    expect(es.aboutAny, 'El jardín botánico de Hamilton.');
+    expect(es.aboutSourceIn(const Locale('en')), 'https://es.wikipedia.org/wiki/X');
+    expect(es.aboutIn(const Locale('es')), 'El jardín botánico de Hamilton.');
+  });
 }
