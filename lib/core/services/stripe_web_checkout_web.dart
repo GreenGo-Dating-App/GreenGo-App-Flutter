@@ -63,7 +63,7 @@ class StripeWebCheckout {
     final uid = FirebaseAuth.instance.currentUser?.uid;
     if (uid == null) return null;
 
-    final country = await _resolveCountry(uid);
+    final country = await resolveCountry(uid);
     final origin = Uri.base.origin;
 
     final callable =
@@ -213,7 +213,10 @@ class StripeWebCheckout {
     return ((res.data as Map?)?['status'] ?? 'unknown').toString();
   }
 
-  static Future<String> _resolveCountry(String uid) async {
+  /// The country Stripe prices are resolved for: the profile country, else ''
+  /// (the server then applies its own default). Shared by checkout and the
+  /// shop's display prices so the price shown is the price charged.
+  static Future<String> resolveCountry(String uid) async {
     try {
       final snap =
           await FirebaseFirestore.instance.collection('profiles').doc(uid).get();

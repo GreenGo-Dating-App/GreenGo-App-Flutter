@@ -44,6 +44,9 @@ class StripeWebCheckout {
     return null;
   }
 
+  /// No-op on mobile ('' = the server's default country).
+  static Future<String> resolveCountry(String uid) async => '';
+
   /// No-op on mobile.
   static Future<Set<String>> existingCompletedOrderIds() async => <String>{};
 
