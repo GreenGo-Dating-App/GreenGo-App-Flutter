@@ -372,10 +372,6 @@ class TranslationService {
     if (text.trim().isEmpty) {
       return TranslationResult(original: text, text: text);
     }
-    if (requiresConsent && !await _consentOk()) {
-      return TranslationResult.consentRequired(text);
-    }
-
     // Normalize before anything else, including the equality check and the
     // cache key, so "Portuguese" and "pt" are one entry rather than two.
     final target = normalizeLanguage(targetLanguage);
@@ -395,10 +391,15 @@ class TranslationService {
 
     return _inFlight[cacheKey] ??= () async {
       try {
+        // A translation already on this device is shown without any call
+        // (and needs no consent: nothing leaves the device).
         final stored = await _readPersistent(from, target, text);
         if (stored != null) {
           _remember(cacheKey, stored);
           return stored;
+        }
+        if (requiresConsent && !await _consentOk()) {
+          return TranslationResult.consentRequired(text);
         }
         final r = await _throttled(() async => (requiresConsent && await _useServer())
             ? _fetchViaServer(text, from, target)
@@ -548,7 +549,7 @@ class TranslationService {
   // ---------------------------------------------------------------------------
 
   static const String _boxName = 'chat_translations_v1';
-  static const int _maxPersistent = 3000;
+  static const int _maxPersistent = 20000;
   Box<String>? _box;
   bool _boxFailed = false;
 

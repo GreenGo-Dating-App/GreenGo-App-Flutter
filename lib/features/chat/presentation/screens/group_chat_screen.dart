@@ -132,9 +132,10 @@ class _GroupChatViewState extends State<_GroupChatView> {
   // Endless scroll: open on a bounded window and page older messages in on
   // scroll (Firestore offline persistence serves them cache-first).
   final _scrollController = ScrollController();
-  static const int _initialMessageWindow = 40;
+  static const int _initialMessageWindow = 30;
   static const int _messagePageSize = 30;
   int _messageLimit = _initialMessageWindow;
+  int _loadedBeforeLastPage = -1;
   bool _isLoadingMore = false;
 
   // Per-user, per-group translation settings (local; scales with no backend).
@@ -212,6 +213,11 @@ class _GroupChatViewState extends State<_GroupChatView> {
     if (_isLoadingMore) return;
     if (_scrollController.position.pixels >=
         _scrollController.position.maxScrollExtent - 100) {
+      // The last page added nothing = the whole history is already here.
+      final st = context.read<GroupChatBloc>().state;
+      final loaded = st is GroupChatLoaded ? st.messages.length : 0;
+      if (loaded <= _loadedBeforeLastPage) return;
+      _loadedBeforeLastPage = loaded;
       setState(() => _isLoadingMore = true);
       _messageLimit += _messagePageSize;
       context.read<GroupChatBloc>().add(

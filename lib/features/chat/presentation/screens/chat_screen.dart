@@ -227,9 +227,10 @@ class _ChatScreenState extends State<ChatScreen> {
   // Pagination — open on a BOUNDED latest window (Firestore offline persistence
   // serves it from the device cache and only syncs newer messages), then page
   // older messages in on scroll instead of ever loading the whole history.
-  static const int _initialMessageWindow = 40;
+  static const int _initialMessageWindow = 30;
   static const int _messagePageSize = 30;
   int _messageLimit = _initialMessageWindow;
+  int _loadedBeforeLastPage = -1;
   // In-flight upload progress subscription — cancelled in dispose() so an upload
   // finishing after the screen closes can't setState into a disposed widget.
   StreamSubscription<TaskSnapshot>? _uploadSub;
@@ -465,6 +466,11 @@ class _ChatScreenState extends State<ChatScreen> {
     // In a reversed ListView, maxScrollExtent is the top (oldest messages)
     if (_scrollController.position.pixels >=
         _scrollController.position.maxScrollExtent - 100) {
+      // The last page added nothing = the whole history is already here.
+      final st = _chatBloc.state;
+      final loaded = st is ChatLoaded ? st.messages.length : 0;
+      if (loaded <= _loadedBeforeLastPage) return;
+      _loadedBeforeLastPage = loaded;
       setState(() => _isLoadingMore = true);
       _messageLimit += _messagePageSize;
       _chatBloc.add(ChatConversationLoaded(

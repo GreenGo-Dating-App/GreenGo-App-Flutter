@@ -92,7 +92,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
   String? _otherUserId;
   bool _hasLoadedOnce = false;
   // Bounded default window; the screen grows it in pages as the user scrolls up.
-  int _messageLimit = 40;
+  int _messageLimit = 30;
 
   // Persistent live-messages subscription. Established once in
   // [_onConversationLoaded] and kept alive across sends/actions so real-time
