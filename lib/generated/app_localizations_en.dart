@@ -2354,13 +2354,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'Read the translated text instead of original';
 
   @override
-  String get chatSettingWordBreakdown => 'Word Breakdown';
-
-  @override
-  String get chatSettingWordBreakdownDesc =>
-      'Tap messages for word-by-word translation';
-
-  @override
   String get chatSettingXpBar => 'XP & Streak Bar';
 
   @override
@@ -21215,10 +21208,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get chatCulturalContextLink => 'Cultural context';
-
-  @override
-  String get chatWordBreakdownTierRequired =>
-      'Word breakdown is available for Silver, Gold, and Platinum members';
 
   @override
   String get chatPreviewSticker => 'Sticker';

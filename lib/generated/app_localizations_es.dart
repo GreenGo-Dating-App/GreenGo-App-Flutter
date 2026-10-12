@@ -2392,13 +2392,6 @@ class AppLocalizationsEs extends AppLocalizations {
       'Leer el texto traducido en lugar del original';
 
   @override
-  String get chatSettingWordBreakdown => 'Desglose de palabras';
-
-  @override
-  String get chatSettingWordBreakdownDesc =>
-      'Toca mensajes para traducción palabra por palabra';
-
-  @override
   String get chatSettingXpBar => 'Barra de XP y racha';
 
   @override
@@ -21435,10 +21428,6 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get chatCulturalContextLink => 'Contexto cultural';
-
-  @override
-  String get chatWordBreakdownTierRequired =>
-      'El desglose de palabras está disponible para miembros Silver, Gold y Platinum';
 
   @override
   String get chatPreviewSticker => 'Sticker';

@@ -44,7 +44,6 @@ class MessageBubble extends StatefulWidget {
     this.showOriginalText = true,
     this.showDifficultyBadge = true,
     this.showCulturalTips = true,
-    this.showWordBreakdown = true,
     this.showPronunciation = true,
     this.showLanguageFlags = true,
     this.ttsReadTranslated = false,
@@ -66,7 +65,6 @@ class MessageBubble extends StatefulWidget {
   final bool showOriginalText;
   final bool showDifficultyBadge;
   final bool showCulturalTips;
-  final bool showWordBreakdown;
   final bool showPronunciation;
   final bool showLanguageFlags;
   final bool ttsReadTranslated;
@@ -251,64 +249,6 @@ class _MessageBubbleState extends State<MessageBubble> {
     }
   }
 
-  Future<void> _showWordBreakdown() async {
-    final tier = widget.userMembershipTier ?? MembershipTier.free;
-    if (tier == MembershipTier.free) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(AppLocalizations.of(context)!.chatWordBreakdownTierRequired)),
-        );
-      }
-      return;
-    }
-    final language = widget.message.detectedLanguage ?? widget.message.metadata?['language'] as String? ?? widget.otherUserLanguage ?? 'en';
-    final words = await ChatLearningService().getWordBreakdown(
-      widget.message.content,
-      language,
-      'en', // Target language for translations
-    );
-    if (words.isEmpty || !mounted) return;
-    showModalBottomSheet(
-      context: context,
-      backgroundColor: AppColors.backgroundCard,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
-      ),
-      builder: (ctx) => Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(AppLocalizations.of(ctx)!.chatSettingWordBreakdown, style: const TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold)),
-            const SizedBox(height: 12),
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: words.map((w) => Container(
-                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                decoration: BoxDecoration(
-                  color: AppColors.backgroundDark,
-                  borderRadius: BorderRadius.circular(8),
-                  border: Border.all(color: AppColors.divider),
-                ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(w['word'] ?? '', style: const TextStyle(color: AppColors.textPrimary, fontSize: 16, fontWeight: FontWeight.w600)),
-                    Text(w['translation'] ?? '', style: const TextStyle(color: AppColors.richGold, fontSize: 12)),
-                    Text(w['pos'] ?? '', style: const TextStyle(color: AppColors.textTertiary, fontSize: 10, fontStyle: FontStyle.italic)),
-                  ],
-                ),
-              )).toList(),
-            ),
-            const SizedBox(height: 16),
-          ],
-        ),
-      ),
-    );
-  }
-
   /// Map language codes to TTS locale codes
   static String _ttsLocale(String lang) {
     final code = lang.toLowerCase().replaceAll('-', '_');
@@ -462,7 +402,6 @@ class _MessageBubbleState extends State<MessageBubble> {
     }
 
     return GestureDetector(
-      onTap: (!isCurrentUser && message.type == MessageType.text && widget.showWordBreakdown) ? _showWordBreakdown : null,
       onDoubleTap: (message.type == MessageType.text && widget.showPronunciation) ? _playTts : null,
       onLongPress: () => _showMessageOptions(context),
       child: Align(

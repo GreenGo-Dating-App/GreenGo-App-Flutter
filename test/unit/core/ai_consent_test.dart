@@ -148,7 +148,6 @@ void main() {
       );
       expect(await learning.checkGrammar('Hello there friend', 'en'), isNull);
       await s.setDecision(accepted: false);
-      expect(await learning.getWordBreakdown('Hello', 'en', 'pt'), isEmpty);
       expect(calls, isEmpty);
     });
 

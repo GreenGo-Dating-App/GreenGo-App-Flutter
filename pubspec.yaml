@@ -1,7 +1,7 @@
 name: greengo_chat
 description: A cross-cultural discovery and language-barrier-free networking app built with Flutter and GCP
 publish_to: 'none'
-version: 4.9.6+208
+version: 4.9.6+209
 environment:
   sdk: '>=3.0.0 <4.0.0'
 
@@ -222,6 +222,7 @@ flutter:
     - assets/fonts/
     - assets/legal/
     - assets/sounds/
+    - assets/chat_datasets/
 
   fonts:
     - family: Poppins

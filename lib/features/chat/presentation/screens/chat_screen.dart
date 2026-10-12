@@ -182,7 +182,6 @@ class _ChatScreenState extends State<ChatScreen> {
   bool _showDifficultyBadge = true;    // Show CEFR level badge on messages
   bool _showGrammarCheck = true;       // Check grammar before sending
   bool _showCulturalTips = true;       // Show cultural context tooltips
-  bool _showWordBreakdown = true;      // Tap message for word breakdown
   bool _showPronunciation = true;      // Double-tap for TTS pronunciation
   bool _ttsReadTranslated = true;     // TTS reads translated text (true) or original (false)
   bool _showLanguageFlags = true;     // Show flag emoji next to translated/original text
@@ -376,7 +375,6 @@ class _ChatScreenState extends State<ChatScreen> {
       _showDifficultyBadge = prefs.getBool('${p}showDifficultyBadge') ?? true;
       _showGrammarCheck = prefs.getBool('${p}showGrammarCheck') ?? true;
       _showCulturalTips = prefs.getBool('${p}showCulturalTips') ?? true;
-      _showWordBreakdown = prefs.getBool('${p}showWordBreakdown') ?? true;
       _showPronunciation = prefs.getBool('${p}showPronunciation') ?? true;
       _ttsReadTranslated = prefs.getBool('${p}ttsReadTranslated') ?? true;
       _showLanguageFlags = prefs.getBool('${p}showLanguageFlags') ?? true;
@@ -393,7 +391,6 @@ class _ChatScreenState extends State<ChatScreen> {
     await prefs.setBool('${prefix}showDifficultyBadge', _showDifficultyBadge);
     await prefs.setBool('${prefix}showGrammarCheck', _showGrammarCheck);
     await prefs.setBool('${prefix}showCulturalTips', _showCulturalTips);
-    await prefs.setBool('${prefix}showWordBreakdown', _showWordBreakdown);
     await prefs.setBool('${prefix}showPronunciation', _showPronunciation);
     await prefs.setBool('${prefix}ttsReadTranslated', _ttsReadTranslated);
     await prefs.setBool('${prefix}showLanguageFlags', _showLanguageFlags);
@@ -409,7 +406,6 @@ class _ChatScreenState extends State<ChatScreen> {
     await prefs.setBool('chat_showDifficultyBadge', _showDifficultyBadge);
     await prefs.setBool('chat_showGrammarCheck', _showGrammarCheck);
     await prefs.setBool('chat_showCulturalTips', _showCulturalTips);
-    await prefs.setBool('chat_showWordBreakdown', _showWordBreakdown);
     await prefs.setBool('chat_showPronunciation', _showPronunciation);
     await prefs.setBool('chat_ttsReadTranslated', _ttsReadTranslated);
     await prefs.setBool('chat_showLanguageFlags', _showLanguageFlags);
@@ -2005,7 +2001,6 @@ class _ChatScreenState extends State<ChatScreen> {
                               showOriginalText: _showOriginalText,
                               showDifficultyBadge: _showDifficultyBadge,
                               showCulturalTips: _showCulturalTips,
-                              showWordBreakdown: _showWordBreakdown,
                               showPronunciation: _showPronunciation,
                               showLanguageFlags: _showLanguageFlags,
                               ttsReadTranslated: _ttsReadTranslated,
@@ -2630,14 +2625,6 @@ class _ChatScreenState extends State<ChatScreen> {
                 subtitle: AppLocalizations.of(context)!.chatSettingCulturalTipsDesc,
                 value: _showCulturalTips,
                 onChanged: (v) => setState(() => _showCulturalTips = v),
-              ),
-              _buildSettingToggle(
-                setSheetState,
-                icon: Icons.segment,
-                label: AppLocalizations.of(context)!.chatSettingWordBreakdown,
-                subtitle: AppLocalizations.of(context)!.chatSettingWordBreakdownDesc,
-                value: _showWordBreakdown,
-                onChanged: (v) => setState(() => _showWordBreakdown = v),
               ),
               _buildSettingToggle(
                 setSheetState,

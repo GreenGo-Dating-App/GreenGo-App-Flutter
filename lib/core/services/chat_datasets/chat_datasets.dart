@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:archive/archive.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;
 
 import 'chat_dataset_cache.dart';
@@ -103,7 +104,7 @@ class ChatDatasets {
     _lastWarmUp = now;
     unawaited(() async {
       await Future.wait([ensure('keywords'), ensure('freq')]);
-      for (final name in const ['quotes', 'icebreakers', 'sentences', 'tips']) {
+      for (final name in const ['icebreakers', 'sentences', 'tips', 'quotes']) {
         await ensure(name);
       }
     }()
@@ -130,7 +131,22 @@ class ChatDatasets {
         _ => true,
       };
 
+  /// Datasets shipped inside the app (assets/chat_datasets/, copied from
+  /// tools/chat_datasets/build/): open instantly, offline, no download.
+  static const Set<String> bundled = {'icebreakers', 'sentences', 'tips'};
+
   Future<Object?> _load(String name) async {
+    if (bundled.contains(name)) {
+      try {
+        final data = await rootBundle.load('assets/chat_datasets/$name.json');
+        final parsed = await compute(_decode, data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes));
+        _apply(name, parsed);
+        changes.value++;
+        return parsed;
+      } catch (e) {
+        debugPrint('[ChatDatasets] bundled $name unavailable, downloading: $e');
+      }
+    }
     try {
       final manifest = await _readManifest();
       final entry = (manifest?['files'] as Map?)?[name];

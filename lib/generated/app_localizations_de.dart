@@ -2387,13 +2387,6 @@ class AppLocalizationsDe extends AppLocalizations {
       'Übersetzten Text statt Original vorlesen';
 
   @override
-  String get chatSettingWordBreakdown => 'Wortzerlegung';
-
-  @override
-  String get chatSettingWordBreakdownDesc =>
-      'Nachrichten antippen für Wort-für-Wort-Übersetzung';
-
-  @override
   String get chatSettingXpBar => 'XP & Streak-Leiste';
 
   @override
@@ -21473,10 +21466,6 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get chatCulturalContextLink => 'Kultureller Kontext';
-
-  @override
-  String get chatWordBreakdownTierRequired =>
-      'Die Wortzerlegung ist für Silver-, Gold- und Platinum-Mitglieder verfügbar';
 
   @override
   String get chatPreviewSticker => 'Sticker';

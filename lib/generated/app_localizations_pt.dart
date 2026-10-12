@@ -2375,13 +2375,6 @@ class AppLocalizationsPt extends AppLocalizations {
       'Ler o texto traduzido em vez do original';
 
   @override
-  String get chatSettingWordBreakdown => 'Decomposição de palavras';
-
-  @override
-  String get chatSettingWordBreakdownDesc =>
-      'Toque nas mensagens para tradução palavra por palavra';
-
-  @override
   String get chatSettingXpBar => 'Barra de XP e série';
 
   @override
@@ -21408,10 +21401,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get chatCulturalContextLink => 'Contexto cultural';
 
   @override
-  String get chatWordBreakdownTierRequired =>
-      'A decomposição de palavras está disponível para membros Silver, Gold e Platinum';
-
-  @override
   String get chatPreviewSticker => 'Autocolante';
 
   @override
@@ -27014,13 +27003,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get chatSettingTtsTranslationDesc =>
       'Ler o texto traduzido em vez do original';
-
-  @override
-  String get chatSettingWordBreakdown => 'Decomposição de palavras';
-
-  @override
-  String get chatSettingWordBreakdownDesc =>
-      'Toque nas mensagens para tradução palavra por palavra';
 
   @override
   String get chatSettingXpBar => 'Barra de XP e sequência';
@@ -46053,10 +46035,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get chatCulturalContextLink => 'Contexto cultural';
-
-  @override
-  String get chatWordBreakdownTierRequired =>
-      'A decomposição de palavras está disponível para membros Silver, Gold e Platinum';
 
   @override
   String get chatPreviewSticker => 'Figurinha';

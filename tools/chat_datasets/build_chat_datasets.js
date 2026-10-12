@@ -218,6 +218,10 @@ async function main() {
   for (const [name, data] of Object.entries(files)) {
     const json = Buffer.from(JSON.stringify(data));
     if (name !== 'keywords') fs.writeFileSync(path.join(BUILD, `${name}.json`), json);
+    // Shipped inside the app (ChatDatasets.bundled): opens instantly, offline.
+    if (['icebreakers', 'sentences', 'tips'].includes(name)) {
+      fs.writeFileSync(path.join(__dirname, '../../assets/chat_datasets', `${name}.json`), json);
+    }
     const gz = zlib.gzipSync(json, { level: 9 });
     fs.writeFileSync(path.join(BUILD, `${name}.json.gz`), gz);
     manifest.files[name] = {

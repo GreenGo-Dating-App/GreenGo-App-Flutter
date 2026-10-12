@@ -2382,13 +2382,6 @@ class AppLocalizationsIt extends AppLocalizations {
       'Leggi il testo tradotto invece dell\'originale';
 
   @override
-  String get chatSettingWordBreakdown => 'Scomposizione parole';
-
-  @override
-  String get chatSettingWordBreakdownDesc =>
-      'Tocca i messaggi per traduzione parola per parola';
-
-  @override
   String get chatSettingXpBar => 'Barra XP e serie';
 
   @override
@@ -21443,10 +21436,6 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get chatCulturalContextLink => 'Contesto culturale';
-
-  @override
-  String get chatWordBreakdownTierRequired =>
-      'La scomposizione delle parole è disponibile per i membri Silver, Gold e Platinum';
 
   @override
   String get chatPreviewSticker => 'Sticker';

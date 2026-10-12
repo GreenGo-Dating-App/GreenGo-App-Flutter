@@ -4265,18 +4265,6 @@ abstract class AppLocalizations {
   /// **'Read the translated text instead of original'**
   String get chatSettingTtsTranslationDesc;
 
-  /// No description provided for @chatSettingWordBreakdown.
-  ///
-  /// In en, this message translates to:
-  /// **'Word Breakdown'**
-  String get chatSettingWordBreakdown;
-
-  /// No description provided for @chatSettingWordBreakdownDesc.
-  ///
-  /// In en, this message translates to:
-  /// **'Tap messages for word-by-word translation'**
-  String get chatSettingWordBreakdownDesc;
-
   /// No description provided for @chatSettingXpBar.
   ///
   /// In en, this message translates to:
@@ -36973,12 +36961,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Cultural context'**
   String get chatCulturalContextLink;
-
-  /// No description provided for @chatWordBreakdownTierRequired.
-  ///
-  /// In en, this message translates to:
-  /// **'Word breakdown is available for Silver, Gold, and Platinum members'**
-  String get chatWordBreakdownTierRequired;
 
   /// No description provided for @chatPreviewSticker.
   ///

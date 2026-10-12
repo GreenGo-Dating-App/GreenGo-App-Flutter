@@ -12,7 +12,7 @@ typedef AiAssistCall = Future<Map<String, dynamic>?> Function(
     Map<String, dynamic> payload);
 
 /// Centralized service for AI-powered chat language learning features:
-/// smart replies, grammar correction, cultural tooltips, word breakdown,
+/// smart replies, grammar correction, cultural tooltips,
 /// difficulty assessment and romanization.
 ///
 /// Everything goes through the `aiAssist` callable: the Gemini key and the
@@ -43,7 +43,6 @@ class ChatLearningService {
   // Caches to avoid repeated calls
   final Map<String, String> _correctionCache = {};
   final Map<String, String> _culturalTooltipCache = {};
-  final Map<String, List<Map<String, String>>> _wordBreakdownCache = {};
   final Map<String, String> _romanizationCache = {};
   final Map<String, String> _difficultyCache = {};
 
@@ -121,25 +120,6 @@ class ChatLearningService {
     return null;
   }
 
-  /// Break down a message word by word with translations.
-  Future<List<Map<String, String>>> getWordBreakdown(String text, String sourceLanguage, String targetLanguage) async {
-    final cacheKey = '${text.hashCode}_${sourceLanguage}_$targetLanguage';
-    if (_wordBreakdownCache.containsKey(cacheKey)) return _wordBreakdownCache[cacheKey]!;
-
-    final result = await _assist('wordBreakdown', text,
-        language: sourceLanguage, targetLanguage: targetLanguage);
-    if (result != null && result['words'] is List) {
-      final words = (result['words'] as List).map((w) => Map<String, String>.from({
-        'word': w['word']?.toString() ?? '',
-        'translation': w['translation']?.toString() ?? '',
-        'pos': w['pos']?.toString() ?? '',
-      })).toList();
-      _wordBreakdownCache[cacheKey] = words;
-      return words;
-    }
-    return [];
-  }
-
   /// Get CEFR difficulty level for a message ('A1' when unknown).
   /// CEFR level of [text], computed OFFLINE from word frequency
   /// (ChatDatasets `freq`, DifficultyEstimator). [skip] = character ranges of
@@ -182,7 +162,6 @@ class ChatLearningService {
   void clearCaches() {
     _correctionCache.clear();
     _culturalTooltipCache.clear();
-    _wordBreakdownCache.clear();
     _romanizationCache.clear();
     _difficultyCache.clear();
   }
