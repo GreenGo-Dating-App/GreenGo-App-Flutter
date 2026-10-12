@@ -20,6 +20,7 @@ import '../experience_feed_prefetch.dart';
 import '../experience_first_page_cache.dart';
 import '../screens/experience_detail_screen.dart';
 import 'experience_widgets.dart';
+import '../../../../core/utils/grid_columns.dart';
 
 /// One row of the merged Experiences feed: a member-hosted experience or a
 /// partner (Viator) one.
@@ -223,7 +224,7 @@ class _MergedExperiencesFeedState extends State<MergedExperiencesFeed> {
           return externalEventImageProvider(context, x.partner!, grid: grid);
         }
         final width = grid
-            ? gridCellWidth(viewport.width, eventsGridColumns(context))
+            ? gridCellWidth(viewport.width, gridColumnsOf(context))
             : ExperienceCard.listImageWidth(viewport.width - 24);
         return ExperienceImage.providerFor(context, c.mainPhotoUrl, width);
       },

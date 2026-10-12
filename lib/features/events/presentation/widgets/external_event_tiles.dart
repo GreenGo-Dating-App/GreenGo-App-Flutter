@@ -4,14 +4,9 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/compact_count.dart';
 import '../../../../core/utils/first_screen_gate.dart';
+import '../../../../core/utils/grid_columns.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/external_event.dart';
-
-/// Grid columns shared by every Events sub-tab: more on wide/web screens.
-int eventsGridColumns(BuildContext context) {
-  final w = MediaQuery.of(context).size.width;
-  return w >= 1100 ? 6 : (w >= 800 ? 4 : 3);
-}
 
 /// Decode width (physical px) of a partner tile image laid out [cols] per
 /// row (1 = the full-width list card). Shared by [_img] and
@@ -30,7 +25,7 @@ ImageProvider? externalEventImageProvider(BuildContext context, ExternalEvent e,
   if (url == null || url.isEmpty) return null;
   return cachedNetworkImageProvider(url,
       memCacheWidth: externalEventMemCacheWidth(
-          context, grid ? eventsGridColumns(context) : 1));
+          context, grid ? gridColumnsOf(context) : 1));
 }
 
 /// Small gold "Partner" pill marking third-party (ticketmaster / viator)
@@ -323,7 +318,7 @@ class ExternalEventGridTile extends StatelessWidget {
                   fit: StackFit.expand,
                   children: [
                     _img(context, e, double.infinity,
-                        eventsGridColumns(context)),
+                        gridColumnsOf(context)),
                     Positioned(top: 4, left: 4, child: _sourceBadge(e)),
                     if (showPartnerBadge)
                       const Positioned(

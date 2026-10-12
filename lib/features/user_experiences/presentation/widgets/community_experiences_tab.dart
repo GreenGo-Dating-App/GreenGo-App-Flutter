@@ -8,8 +8,7 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/utils/first_screen_gate.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../../../generated/app_localizations.dart';
-import '../../../events/presentation/widgets/external_event_tiles.dart'
-    show eventsGridColumns;
+import '../../../../core/utils/grid_columns.dart';
 import '../../domain/entities/user_experience.dart';
 import '../../domain/repositories/user_experiences_repository.dart';
 import '../bloc/experience_feed_bloc.dart';
@@ -262,7 +261,7 @@ class _CommunityViewState extends State<_CommunityView>
   /// grid cell, or the list card's inner width).
   List<ImageProvider> _firstScreenImages(
       BuildContext context, Size viewport, List<UserExperience> items) {
-    final cols = eventsGridColumns(context);
+    final cols = gridColumnsOf(context);
     final count = widget.gridView
         ? firstScreenGridCount(
             viewport: viewport, columns: cols, childAspectRatio: 0.66)
@@ -321,7 +320,7 @@ class _CommunityViewState extends State<_CommunityView>
 
     final Widget child;
     if (widget.gridView) {
-      final cols = eventsGridColumns(context);
+      final cols = gridColumnsOf(context);
       child = GridView.builder(
         key: const ValueKey('uexpGrid'),
         controller: _gridScroll,

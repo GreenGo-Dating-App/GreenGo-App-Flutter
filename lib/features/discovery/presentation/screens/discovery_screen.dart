@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'dart:async';
 import 'dart:math';
 
@@ -18,6 +17,7 @@ import '../../../../core/services/access_control_service.dart';
 import '../../../../core/services/location_refresh_service.dart';
 import '../../../../core/services/presence_service.dart';
 import '../../../../core/utils/base_membership_gate.dart';
+import '../../../../core/utils/grid_columns.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../../core/widgets/loading_indicator.dart';
 import '../../../../generated/app_localizations.dart';
@@ -177,17 +177,14 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
   String get userId => widget.userId;
 
-  /// Auto-detect grid columns based on available width
-  int _autoColumns(double width) {
-    // Web: the discovery grid is always 6 columns (dense, desktop-style),
-    // except on very narrow browser windows where 6 tiles would be unusable.
-    if (kIsWeb) return width < 360 ? 4 : 6;
-    if (width < 300) return 2;
-    if (width < 450) return 3;
-    if (width < 800) return 4;
-    if (width < 1200) return 6;
-    return 8; // wide / web
-  }
+  /// Columns the grid renders: the picker choice (a choice no longer offered
+  /// at this screen width falls back to auto), or auto columns of
+  /// [gridWidth]. Width-based only — a phone browser matches the phone app.
+  int _effectiveColumns(double gridWidth) => discoveryColumns(
+        selected: _gridColumns,
+        screenWidth: MediaQuery.sizeOf(context).width,
+        gridWidth: gridWidth,
+      );
 
   /// Get current preferences (saved from Firestore, or default)
   MatchPreferences get _currentPreferences =>
@@ -196,7 +193,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   /// Get grid profile limit — starts at 50, extends up to max 500
   static const int _gridMaxProfiles = 500;
   int get _gridProfileLimit {
-    final cols = _gridColumns == 0 ? (kIsWeb ? 6 : 3) : _gridColumns; // fallback for auto mode
+    final cols = _effectiveColumns(MediaQuery.sizeOf(context).width - 8);
     final limit = 50 + (_gridExtraPurchased * cols * 3);
     return limit.clamp(0, _gridMaxProfiles);
   }
@@ -1160,9 +1157,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
             },
             child: LayoutBuilder(
               builder: (context, constraints) {
-                final effectiveCols = _gridColumns == 0
-                    ? _autoColumns(constraints.maxWidth)
-                    : _gridColumns;
+                final effectiveCols = _effectiveColumns(constraints.maxWidth);
                 return GridView.builder(
               padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -1332,13 +1327,12 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
-        // Wide screens (web) can pick denser grids (6 / 8 columns).
-        children:
-            (kIsWeb || MediaQuery.of(context).size.width >= 800
-                    ? const [0, 2, 4, 6, 8]
-                    : const [0, 2, 3, 4])
-                .map((cols) {
-          final isSelected = _gridColumns == cols;
+        // Choices by screen width only; wide screens add 6 / 8 columns.
+        children: discoveryColumnChoices(MediaQuery.sizeOf(context).width)
+            .map((cols) {
+          final isSelected = discoveryEffectiveChoice(
+                  _gridColumns, MediaQuery.sizeOf(context).width) ==
+              cols;
           return GestureDetector(
             onTap: () {
               if (_gridColumns != cols) {
@@ -1436,9 +1430,8 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   }
 
   Widget _buildGridProfileCard(BuildContext context, DiscoveryCard card) {
-    final effectiveCols = _gridColumns == 0
-        ? _autoColumns(MediaQuery.of(context).size.width - 8) // account for padding
-        : _gridColumns;
+    final effectiveCols = _effectiveColumns(
+        MediaQuery.sizeOf(context).width - 8); // account for padding
     final isSelf = card.userId == userId;
     return _GridProfileCard(
       key: ValueKey(card.userId),
@@ -1601,7 +1594,8 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
   Widget _buildLoadMoreCard() {
     final l10n = AppLocalizations.of(context)!;
-    final batchSize = _gridColumns * 3; // 3 rows worth of profiles
+    // 3 rows worth of profiles (same columns as the grid / profile limit).
+    final batchSize = _effectiveColumns(MediaQuery.sizeOf(context).width - 8) * 3;
     return GestureDetector(
       onTap: _purchaseMoreGridProfiles,
       child: Container(
@@ -1650,7 +1644,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
   Future<void> _purchaseMoreGridProfiles() async {
     final l10n = AppLocalizations.of(context)!;
-    final batchSize = _gridColumns * 3;
+    final batchSize = _effectiveColumns(MediaQuery.sizeOf(context).width - 8) * 3;
     try {
       final coinRepo = di.sl<CoinRepository>();
       final balanceResult = await coinRepo.getBalance(userId);
