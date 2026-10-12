@@ -24416,4 +24416,8 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get locPickerPinLabel => 'Ausgewählter Ort. Zum Anpassen ziehen.';
+
+  @override
+  String get eventErrContactInfo =>
+      'Entferne E-Mail-Adressen und Telefonnummern: Andere kontaktieren dich über GreenGo.';
 }

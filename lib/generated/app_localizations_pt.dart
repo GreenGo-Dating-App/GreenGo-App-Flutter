@@ -24332,6 +24332,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get locPickerPinLabel => 'Local selecionado. Arrasta para ajustar.';
+
+  @override
+  String get eventErrContactInfo =>
+      'Remove e-mails e números de telefone: as pessoas contactam-te através do GreenGo.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -48674,4 +48678,8 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get locPickerPinLabel => 'Local selecionado. Arraste para ajustar.';
+
+  @override
+  String get eventErrContactInfo =>
+      'Remova e-mails e números de telefone: as pessoas falam com você pelo GreenGo.';
 }

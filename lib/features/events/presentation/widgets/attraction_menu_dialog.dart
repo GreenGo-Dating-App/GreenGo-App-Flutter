@@ -4,7 +4,9 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/own_profile_store.dart';
 import '../../../../core/services/translation_service.dart';
+import '../../../../core/utils/partner_link_gate.dart';
 import '../../../../core/widgets/translatable_text.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/domain/usecases/report_user.dart';
@@ -44,6 +46,24 @@ class _AttractionMenuDialogState extends State<_AttractionMenuDialog> {
   String? _translatedDesc;
   bool _translating = false;
   bool _translateStarted = false;
+
+  @override
+  void initState() {
+    super.initState();
+    // The partner "Open link" depends on the own membership: rebuild when the
+    // own profile arrives / changes (e.g. a membership bought meanwhile).
+    OwnProfileStore.instance.profile.addListener(_onProfile);
+  }
+
+  @override
+  void dispose() {
+    OwnProfileStore.instance.profile.removeListener(_onProfile);
+    super.dispose();
+  }
+
+  void _onProfile() {
+    if (mounted) setState(() {});
+  }
 
   @override
   void didChangeDependencies() {
@@ -189,10 +209,14 @@ class _AttractionMenuDialogState extends State<_AttractionMenuDialog> {
     }
 
     // Primary link (the "original url" — for Wikidata items this is wikidata.org).
-    final primaryHost = _hostOf(e.bookingUrl);
-    addLink(Icons.open_in_new,
-        '${l10n.attractionOpenLink}${primaryHost.isNotEmpty ? '  ·  $primaryHost' : ''}',
-        e.bookingUrl);
+    // Ticketmaster / Viator links are for members only ([PartnerLinkGate]).
+    if (PartnerLinkGate.showLink(
+        source: e.source, userId: widget.currentUserId)) {
+      final primaryHost = _hostOf(e.bookingUrl);
+      addLink(Icons.open_in_new,
+          '${l10n.attractionOpenLink}${primaryHost.isNotEmpty ? '  ·  $primaryHost' : ''}',
+          e.bookingUrl);
+    }
     // Official website — preloaded in the DB (OSM tag, or scraped from the
     // Wikidata P856 referenced inside wikidata.org during ingest/backfill).
     final site = e.website;

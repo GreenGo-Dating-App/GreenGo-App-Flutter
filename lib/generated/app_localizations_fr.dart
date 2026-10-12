@@ -24498,4 +24498,8 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get locPickerPinLabel =>
       'Lieu sélectionné. Fais glisser pour ajuster.';
+
+  @override
+  String get eventErrContactInfo =>
+      'Retirez les adresses e-mail et numéros de téléphone : les gens vous contactent via GreenGo.';
 }

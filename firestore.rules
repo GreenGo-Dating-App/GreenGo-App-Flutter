@@ -2251,9 +2251,30 @@ service cloud.firestore {
           || (resource != null && isPaidEventData(resource.data))
           || sellerBusinessActive(organizerId);
       }
+      // Owner rule 2026-10-12: no e-mail address or phone number in an
+      // event's own text (title, description, language pairs, place name).
+      // Same patterns as the e-mail / phone kinds of ContactInfoDetector
+      // (lib/features/user_experiences/domain/contact_info.dart) - the app
+      // refuses first; this refuses a write that SETS such text. A field left
+      // unchanged never blocks an unrelated edit of an older event.
+      function hasEmailOrPhone(v) {
+        return v is string
+          && (v.matches('(?s).*[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+([.][a-zA-Z0-9-]+)*[.][a-zA-Z]{2,}.*')
+              || v.matches('(?s).*[0-9]([[:space:]().-]{0,3}[0-9]){8,}.*'));
+      }
+      function contactFieldOk(f) {
+        return (resource != null
+                && request.resource.data.get(f, null) == resource.data.get(f, null))
+          || !hasEmailOrPhone(request.resource.data.get(f, null));
+      }
+      function eventTextOk() {
+        return contactFieldOk('title') && contactFieldOk('description')
+          && contactFieldOk('languagePairs') && contactFieldOk('locationName');
+      }
       // Creator must set themselves as organizer.
       allow create: if isSignedIn()
         && request.resource.data.organizerId == request.auth.uid
+        && eventTextOk()
         && validCoOrganizers(request.resource.data)
         && validTicketing(request.resource.data)
         && (!isPaidEventData(request.resource.data)
@@ -2272,6 +2293,7 @@ service cloud.firestore {
       // createTicketCheckout / the payment confirmation): others may only bump
       // viewCount there.
       allow update: if (isOrganizer() && validCoOrganizers(request.resource.data)
+                        && eventTextOk()
                         && validTicketing(request.resource.data)
                         && paidAllowed(resource.data.organizerId))
         || (isSignedIn()
@@ -2286,6 +2308,7 @@ service cloud.firestore {
       // snapshot) or the co-owner list itself. Mirrors kEventCreatorOnlyFields
       // in the Event entity.
       allow update: if isCoOrganizer()
+        && eventTextOk()
         && !request.resource.data.diff(resource.data).affectedKeys()
               .hasAny(['organizerId', 'organizerName', 'organizerPhotoUrl',
                        'coOrganizerIds'])

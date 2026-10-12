@@ -41318,6 +41318,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Selected place. Drag to adjust.'**
   String get locPickerPinLabel;
+
+  /// Event editor: title/description/place contain an e-mail or phone number
+  ///
+  /// In en, this message translates to:
+  /// **'Remove e-mail addresses and phone numbers: people contact you through GreenGo.'**
+  String get eventErrContactInfo;
 }
 
 class _AppLocalizationsDelegate

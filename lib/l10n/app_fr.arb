@@ -6890,5 +6890,6 @@
   "locPickerNoAddress": "Point épinglé (aucune adresse trouvée)",
   "locPickerClear": "Effacer la recherche",
   "locPickerRecent": "Récents",
-  "locPickerPinLabel": "Lieu sélectionné. Fais glisser pour ajuster."
+  "locPickerPinLabel": "Lieu sélectionné. Fais glisser pour ajuster.",
+  "eventErrContactInfo": "Retirez les adresses e-mail et numéros de téléphone : les gens vous contactent via GreenGo."
 }

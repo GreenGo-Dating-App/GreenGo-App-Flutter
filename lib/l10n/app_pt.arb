@@ -7464,5 +7464,6 @@
   "locPickerNoAddress": "Ponto marcado (nenhum endereço encontrado)",
   "locPickerClear": "Limpar pesquisa",
   "locPickerRecent": "Recentes",
-  "locPickerPinLabel": "Local selecionado. Arrasta para ajustar."
+  "locPickerPinLabel": "Local selecionado. Arrasta para ajustar.",
+  "eventErrContactInfo": "Remove e-mails e números de telefone: as pessoas contactam-te através do GreenGo."
 }

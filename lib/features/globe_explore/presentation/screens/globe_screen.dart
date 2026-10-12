@@ -9,6 +9,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/utils/partner_link_gate.dart';
 import '../../../../core/error/failures.dart';
 import '../../../../core/utils/country_names_l10n.dart';
 import '../../../../core/utils/display_image.dart';
@@ -300,7 +301,8 @@ class _GlobeScreenState extends State<GlobeScreen> {
         ),
         trailing:
             const Icon(Icons.open_in_new, color: AppColors.richGold, size: 18),
-        onTap: e.bookingUrl.isEmpty
+        onTap: e.bookingUrl.isEmpty ||
+                !PartnerLinkGate.showLink(source: e.source, userId: userId)
             ? null
             : () => launchUrl(Uri.parse(e.bookingUrl),
                 mode: LaunchMode.externalApplication),
@@ -418,7 +420,8 @@ class _GlobeScreenState extends State<GlobeScreen> {
           ),
           trailing: const Icon(Icons.open_in_new,
               color: AppColors.richGold, size: 18),
-          onTap: e.bookingUrl.isEmpty
+          onTap: e.bookingUrl.isEmpty ||
+                  !PartnerLinkGate.showLink(source: e.source, userId: userId)
               ? null
               : () => launchUrl(Uri.parse(e.bookingUrl),
                   mode: LaunchMode.externalApplication),

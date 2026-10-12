@@ -13432,5 +13432,9 @@
   "locPickerPinLabel": "Selected place. Drag to adjust.",
   "@locPickerPinLabel": {
     "description": "Location picker (search an address, drop a pin)"
+  },
+  "eventErrContactInfo": "Remove e-mail addresses and phone numbers: people contact you through GreenGo.",
+  "@eventErrContactInfo": {
+    "description": "Event editor: title/description/place contain an e-mail or phone number"
   }
 }
