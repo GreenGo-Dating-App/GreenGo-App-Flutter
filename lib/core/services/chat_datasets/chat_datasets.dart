@@ -89,10 +89,29 @@ class ChatDatasets {
   Map<String, List<CulturalTip>>? get tips => _tips;
 
   /// Loads what a chat screen needs (keywords + difficulty) in the background.
+  /// The rest (ideas sheet, tips, quote) follows in the background, one file
+  /// at a time, so it is usually ready before it is tapped; after the first
+  /// use every file comes from the device cache.
   void warmUpForChat() {
-    unawaited(ensure('keywords'));
-    unawaited(ensure('freq'));
+    // Called from every message bubble: at most one pass per minute, so an
+    // offline device does not retry on each rebuild.
+    final now = DateTime.now();
+    if (_warmingUp || (_lastWarmUp != null && now.difference(_lastWarmUp!) < const Duration(minutes: 1))) {
+      return;
+    }
+    _warmingUp = true;
+    _lastWarmUp = now;
+    unawaited(() async {
+      await Future.wait([ensure('keywords'), ensure('freq')]);
+      for (final name in const ['quotes', 'icebreakers', 'sentences', 'tips']) {
+        await ensure(name);
+      }
+    }()
+        .whenComplete(() => _warmingUp = false));
   }
+
+  bool _warmingUp = false;
+  DateTime? _lastWarmUp;
 
   /// Loads dataset [name] (keywords, freq, quotes, icebreakers, sentences,
   /// tips) if not loaded yet. Completes when it is ready or failed.
@@ -139,22 +158,36 @@ class ChatDatasets {
     final m = _manifest;
     if (m != null) return Future.value(m);
     return _manifestFuture ??= () async {
+      // After the first use the cached manifest (and its cached files) is used
+      // at once, with no network wait; a newer build found by the background
+      // refresh is used from the next app start.
       try {
-        final url = await FirebaseStorage.instance.ref(manifestPath).getDownloadURL();
-        final res = await http.get(Uri.parse(url));
-        if (res.statusCode == 200) {
-          _manifest = jsonDecode(utf8.decode(res.bodyBytes)) as Map<String, dynamic>;
-          unawaited(_cache.writeManifest(res.bodyBytes));
+        final cached = await _cache.readManifest();
+        if (cached != null) {
+          _manifest = jsonDecode(utf8.decode(cached)) as Map<String, dynamic>;
+          unawaited(_fetchManifest());
           return _manifest;
         }
-      } catch (e) {
-        debugPrint('[ChatDatasets] manifest offline: $e');
-      }
-      // Offline: the last manifest we saw (its files are cached too).
-      final cached = await _cache.readManifest();
-      if (cached != null) _manifest = jsonDecode(utf8.decode(cached)) as Map<String, dynamic>;
-      return _manifest;
+      } catch (_) {}
+      return await _fetchManifest() ?? _manifest;
     }().whenComplete(() => _manifestFuture = null);
+  }
+
+  /// Downloads the current manifest and caches it; null when offline. Sets
+  /// [_manifest] only when none is in use yet.
+  Future<Map<String, dynamic>?> _fetchManifest() async {
+    try {
+      final url = await FirebaseStorage.instance.ref(manifestPath).getDownloadURL();
+      final res = await http.get(Uri.parse(url));
+      if (res.statusCode != 200) return null;
+      final m = jsonDecode(utf8.decode(res.bodyBytes)) as Map<String, dynamic>;
+      _manifest ??= m;
+      await _cache.writeManifest(res.bodyBytes);
+      return m;
+    } catch (e) {
+      debugPrint('[ChatDatasets] manifest offline: $e');
+      return null;
+    }
   }
 
   void _apply(String name, Object? json) {

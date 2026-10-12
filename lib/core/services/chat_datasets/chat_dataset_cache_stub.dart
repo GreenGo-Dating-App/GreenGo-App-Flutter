@@ -1,7 +1,6 @@
 import 'dart:typed_data';
 
-/// Web: no file system. The dataset files are immutable and served with a
-/// one-year Cache-Control, so the browser's HTTP cache keeps them instead.
+/// Fallback for platforms with neither dart:io nor JS (tests use the io one).
 class ChatDatasetCache {
   Future<Uint8List?> read(String path) async => null;
   Future<void> write(String path, Uint8List bytes) async {}

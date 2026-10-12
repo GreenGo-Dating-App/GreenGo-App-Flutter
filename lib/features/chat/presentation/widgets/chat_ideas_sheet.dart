@@ -56,8 +56,16 @@ class ChatIdeasSheet extends StatefulWidget {
 
 class _ChatIdeasSheetState extends State<ChatIdeasSheet> {
   final _datasets = ChatDatasets.instance;
-  late final Future<void> _ready =
-      Future.wait([_datasets.ensure('icebreakers'), _datasets.ensure('sentences')]);
+  // Each tab waits only for its own file (both start loading at once).
+  late final Future<void> _icebreakersReady = _datasets.ensure('icebreakers');
+  late final Future<void> _sentencesReady = _datasets.ensure('sentences');
+
+  @override
+  void initState() {
+    super.initState();
+    _icebreakersReady;
+    _sentencesReady;
+  }
   bool _sentences = false;
   String? _topic;
 
@@ -65,7 +73,7 @@ class _ChatIdeasSheetState extends State<ChatIdeasSheet> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     return FutureBuilder<void>(
-      future: _ready,
+      future: _sentences ? _sentencesReady : _icebreakersReady,
       builder: (context, snap) {
         final items = (_sentences ? _datasets.sentences : _datasets.icebreakers) ?? const <DatasetItem>[];
         final topics = <String>{for (final i in items) i.topic}.toList();

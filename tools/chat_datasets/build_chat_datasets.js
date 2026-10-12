@@ -250,7 +250,9 @@ async function main() {
     for (const [name, f] of Object.entries(manifest.files)) {
       await bucket.file(f.path).save(fs.readFileSync(path.join(BUILD, `${name}.json.gz`)), {
         resumable: false,
-        metadata: { contentType: 'application/json', cacheControl: 'public, max-age=31536000, immutable' },
+        // gzip encoding: browsers (and dart:io) decompress natively; the app
+        // gunzips only if the bytes still start with the gzip magic.
+        metadata: { contentType: 'application/json', contentEncoding: 'gzip', cacheControl: 'public, max-age=31536000, immutable' },
       });
       console.log(`  uploaded ${f.path}`);
     }
