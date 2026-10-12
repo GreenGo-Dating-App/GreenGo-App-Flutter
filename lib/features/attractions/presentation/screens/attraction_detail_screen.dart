@@ -281,6 +281,7 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
       if (a.openingHours != null) a.openingHours!,
       ...a.topHighlights,
       ...a.interestingFacts,
+      ...a.curiosities,
     ].where((t) => t.trim().isNotEmpty).toSet();
 
     setState(() => _translating = true);
@@ -444,6 +445,47 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
                         ]),
                   ))
               .toList(),
+        ),
+      );
+
+  /// Numbered list (1-5) for the top curiosities.
+  Widget _numbered(List<String> items) => Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            for (var i = 0; i < items.length; i++)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 10),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      width: 22,
+                      height: 22,
+                      margin: const EdgeInsets.only(right: 10, top: 1),
+                      alignment: Alignment.center,
+                      decoration: const BoxDecoration(
+                        color: AppColors.richGold,
+                        shape: BoxShape.circle,
+                      ),
+                      child: Text('${i + 1}',
+                          style: const TextStyle(
+                              color: AppColors.deepBlack,
+                              fontSize: 12,
+                              fontWeight: FontWeight.w700)),
+                    ),
+                    Expanded(
+                      child: Text(items[i],
+                          style: const TextStyle(
+                              color: AppColors.textSecondary,
+                              fontSize: 13,
+                              height: 1.4)),
+                    ),
+                  ],
+                ),
+              ),
+          ],
         ),
       );
 
@@ -680,6 +722,11 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
               _body(_t(a.descriptionMedium ?? a.descriptionShort)),
             ],
 
+            if (a.curiosities.isNotEmpty) ...[
+              _sectionTitle(l10n.attrTopCuriosities),
+              _numbered(_tList(a.curiosities)),
+            ],
+
             if (a.topHighlights.isNotEmpty) ...[
               _sectionTitle(l10n.attrHighlights),
               _bullets(_tList(a.topHighlights)),
@@ -710,7 +757,7 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
               _sectionTitle(l10n.attrHistoryTitle),
               _body(_t(a.historySummary)),
             ],
-            if (a.interestingFacts.isNotEmpty) ...[
+            if (a.interestingFacts.isNotEmpty && a.curiosities.isEmpty) ...[
               _sectionTitle(l10n.attrDidYouKnow),
               _bullets(_tList(a.interestingFacts)),
             ],

@@ -13111,6 +13111,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get attrDidYouKnow => 'Sabia que';
 
   @override
+  String get attrTopCuriosities => 'Top 5 curiosidades';
+
+  @override
   String get attrPhotoTips => 'Dicas de fotografia';
 
   @override
@@ -37450,6 +37453,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get attrDidYouKnow => 'Você sabia';
+
+  @override
+  String get attrTopCuriosities => 'Top 5 curiosidades';
 
   @override
   String get attrPhotoTips => 'Dicas de fotografia';

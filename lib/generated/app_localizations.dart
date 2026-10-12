@@ -23148,6 +23148,12 @@ abstract class AppLocalizations {
   /// **'Did you know'**
   String get attrDidYouKnow;
 
+  /// No description provided for @attrTopCuriosities.
+  ///
+  /// In en, this message translates to:
+  /// **'Top 5 curiosities'**
+  String get attrTopCuriosities;
+
   /// No description provided for @attrPhotoTips.
   ///
   /// In en, this message translates to:

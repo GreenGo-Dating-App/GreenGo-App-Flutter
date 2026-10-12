@@ -13147,6 +13147,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get attrDidYouKnow => '¿Sabías que?';
 
   @override
+  String get attrTopCuriosities => 'Top 5 curiosidades';
+
+  @override
   String get attrPhotoTips => 'Consejos de fotografía';
 
   @override

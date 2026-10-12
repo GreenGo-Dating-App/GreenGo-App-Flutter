@@ -59,6 +59,7 @@ class Attraction {
     this.topHighlights = const [],
     this.photographyTips,
     this.interestingFacts = const [],
+    this.curiosities = const [],
     this.altText,
     this.openingHours,
     this.bestSeason,
@@ -125,6 +126,10 @@ class Attraction {
   final List<String> topHighlights;
   final String? photographyTips;
   final List<String> interestingFacts;
+
+  /// The attraction's top 5 curiosities (English; the detail page translates
+  /// them). Filled by scripts/generate_attraction_curiosities.js.
+  final List<String> curiosities;
   final String? altText;
   final String? openingHours;
   final String? bestSeason;
@@ -237,6 +242,7 @@ class Attraction {
       topHighlights: _list(m['topHighlights']),
       photographyTips: _s(m['photographyTips']),
       interestingFacts: _list(m['interestingFacts']),
+      curiosities: _list(m['curiosities']),
       altText: _s(m['altText']),
       openingHours: _s(m['openingHours']),
       visitDuration: _s(m['visitDuration']),
