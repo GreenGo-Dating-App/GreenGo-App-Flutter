@@ -1229,20 +1229,18 @@ service cloud.firestore {
     // COIN TRANSACTIONS COLLECTION (alternate path)
     // ============================================================================
     match /coinTransactions/{transactionId} {
-      allow read: if isSignedIn();
-      // A user may only create ledger entries they're a party to — their own
-      // (userId) or as the counterparty of a gift/refund (relatedUserId).
-      // Blocks forging arbitrary third-party ledger entries.
-      //
-      // ⚠️ PENDING LOCKDOWN — enable ONLY together with the coinBalances guard
-      // above, once a build with server-verified coin purchases is live in BOTH
-      // stores (>= 3.0.0+131). `coinPurchase` entries are then written
-      // exclusively by the receipt verification callables (Admin SDK), so a
-      // client-authored one is always a forgery attempt. Add this line:
-      //   && request.resource.data.get('reason', '') != 'coinPurchase'
+      // Owner-only ledger: the owner (userId) or the counterparty of a gift /
+      // refund (relatedUserId). Every client query filters userId == uid.
+      allow read: if isSignedIn()
+        && (resource.data.userId == request.auth.uid
+            || resource.data.get('relatedUserId', '') == request.auth.uid);
+      // A user may only create ledger entries they're a party to. Purchased
+      // coins (`coinPurchase`) are credited ONLY server-side after receipt /
+      // Stripe verification (Admin SDK), so a client-authored one is a forgery.
       allow create: if isSignedIn()
         && (request.resource.data.userId == request.auth.uid
-            || request.resource.data.get('relatedUserId', '') == request.auth.uid);
+            || request.resource.data.get('relatedUserId', '') == request.auth.uid)
+        && request.resource.data.get('reason', '') != 'coinPurchase';
       allow update: if false;
       allow delete: if false;
     }

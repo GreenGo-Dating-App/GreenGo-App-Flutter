@@ -1,3 +1,4 @@
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 
@@ -10,8 +11,8 @@ import 'checkout_consent_step.dart';
 /// Drives the web Stripe checkout flow with a single modal:
 /// first the mandatory consent step ([CheckoutConsentStep]: the EU waiver
 /// checkbox for coins, the withdrawal information for memberships), then
-/// opens the hosted checkout in a new tab, polls `stripe_orders` and
-/// resolves true once the purchase is credited (or false on cancel/timeout).
+/// opens the hosted checkout in this tab. Stripe then returns to
+/// `/?payment=...`, where [StripeReturnNotice] confirms the purchase.
 ///
 /// Usage:
 ///   final ok = await WebCheckoutDialog.show(context, productId);
@@ -46,8 +47,12 @@ class WebCheckoutDialog extends StatefulWidget {
 
 enum _Phase { consent, opening, waiting, timeout, failed }
 
+/// Why the checkout could not start (shown instead of the generic error).
+enum _Failure { generic, alreadySubscribed, termsRequired }
+
 class _WebCheckoutDialogState extends State<WebCheckoutDialog> {
   _Phase _phase = _Phase.consent;
+  _Failure _failure = _Failure.generic;
 
   void _onConsent(CheckoutConsent consent) {
     setState(() => _phase = _Phase.opening);
@@ -56,24 +61,22 @@ class _WebCheckoutDialogState extends State<WebCheckoutDialog> {
 
   Future<void> _run(CheckoutConsent consent) async {
     try {
-      final known = await StripeWebCheckout.existingCompletedOrderIds();
       final sessionId = await StripeWebCheckout.startCheckout(
         widget.productId,
         consent: consent,
       );
-      if (sessionId == null) {
-        if (mounted) setState(() => _phase = _Phase.failed);
-        return;
-      }
-      if (mounted) setState(() => _phase = _Phase.waiting);
-
-      final ok = await StripeWebCheckout.waitForCompletion(known);
+      // Success: the page is leaving for Stripe; keep the spinner.
+      if (sessionId == null && mounted) setState(() => _phase = _Phase.failed);
+    } on FirebaseFunctionsException catch (e) {
       if (!mounted) return;
-      if (ok) {
-        Navigator.of(context).pop(true);
-      } else {
-        setState(() => _phase = _Phase.timeout);
-      }
+      setState(() {
+        _phase = _Phase.failed;
+        _failure = switch (e.code) {
+          'already-exists' => _Failure.alreadySubscribed,
+          'failed-precondition' => _Failure.termsRequired,
+          _ => _Failure.generic,
+        };
+      });
     } catch (_) {
       if (mounted) setState(() => _phase = _Phase.failed);
     }
@@ -109,7 +112,11 @@ class _WebCheckoutDialogState extends State<WebCheckoutDialog> {
         message = l10n.webCheckoutTimeout;
         break;
       case _Phase.failed:
-        message = l10n.webCheckoutFailed;
+        message = switch (_failure) {
+          _Failure.alreadySubscribed => l10n.webCheckoutAlreadySubscribed,
+          _Failure.termsRequired => l10n.webCheckoutTermsRequired,
+          _Failure.generic => l10n.webCheckoutFailed,
+        };
         break;
     }
 

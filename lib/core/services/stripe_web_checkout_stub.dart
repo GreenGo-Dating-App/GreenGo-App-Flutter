@@ -47,6 +47,8 @@ class StripeWebCheckout {
   /// No-op on mobile.
   static Future<Set<String>> existingCompletedOrderIds() async => <String>{};
 
+  static Future<StripeReturn?> consumeReturn() async => null;
+
   /// No-op on mobile.
   static Future<bool> waitForCompletion(
     Set<String> knownIds, {

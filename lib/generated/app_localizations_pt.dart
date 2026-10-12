@@ -16199,6 +16199,32 @@ class AppLocalizationsPt extends AppLocalizations {
   String get checkoutAccept => 'Aceito';
 
   @override
+  String get webPaymentCancelled =>
+      'Pagamento cancelado. Não te foi cobrado nada.';
+
+  @override
+  String get webPaymentConfirming => 'A confirmar o teu pagamento…';
+
+  @override
+  String get webPaymentDoneCoins =>
+      'Pagamento concluído. As tuas moedas foram adicionadas.';
+
+  @override
+  String get webPaymentDoneMembership =>
+      'Pagamento concluído. A tua assinatura está ativa.';
+
+  @override
+  String get webPaymentPending =>
+      'Pagamento recebido. Pode demorar alguns minutos a aparecer na tua conta; é adicionado automaticamente.';
+
+  @override
+  String get webCheckoutAlreadySubscribed =>
+      'Já tens este plano ou um superior. Para mudar para um inferior, cancela primeiro o atual.';
+
+  @override
+  String get webCheckoutTermsRequired => 'Aceita os termos antes de pagar.';
+
+  @override
   String get withdrawFromContract => 'Desistir do contrato';
 
   @override
@@ -40904,6 +40930,32 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get checkoutAccept => 'Aceito';
+
+  @override
+  String get webPaymentCancelled =>
+      'Pagamento cancelado. Você não foi cobrado.';
+
+  @override
+  String get webPaymentConfirming => 'Confirmando seu pagamento…';
+
+  @override
+  String get webPaymentDoneCoins =>
+      'Pagamento concluído. Suas moedas foram adicionadas.';
+
+  @override
+  String get webPaymentDoneMembership =>
+      'Pagamento concluído. Sua assinatura está ativa.';
+
+  @override
+  String get webPaymentPending =>
+      'Pagamento recebido. Pode levar alguns minutos para aparecer na sua conta; ele é adicionado automaticamente.';
+
+  @override
+  String get webCheckoutAlreadySubscribed =>
+      'Você já tem este plano ou um superior. Para mudar para um inferior, cancele o atual primeiro.';
+
+  @override
+  String get webCheckoutTermsRequired => 'Aceite os termos antes de pagar.';
 
   @override
   String get withdrawFromContract => 'Desistir do contrato';

@@ -16261,6 +16261,33 @@ class AppLocalizationsDe extends AppLocalizations {
   String get checkoutAccept => 'Akzeptieren';
 
   @override
+  String get webPaymentCancelled =>
+      'Zahlung abgebrochen. Dir wurde nichts berechnet.';
+
+  @override
+  String get webPaymentConfirming => 'Deine Zahlung wird bestätigt…';
+
+  @override
+  String get webPaymentDoneCoins =>
+      'Zahlung abgeschlossen. Deine Münzen wurden gutgeschrieben.';
+
+  @override
+  String get webPaymentDoneMembership =>
+      'Zahlung abgeschlossen. Deine Mitgliedschaft ist aktiv.';
+
+  @override
+  String get webPaymentPending =>
+      'Zahlung erhalten. Es kann ein paar Minuten dauern, bis sie in deinem Konto erscheint; sie wird automatisch hinzugefügt.';
+
+  @override
+  String get webCheckoutAlreadySubscribed =>
+      'Du hast diesen oder einen höheren Plan bereits. Für einen niedrigeren Plan kündige zuerst den aktuellen.';
+
+  @override
+  String get webCheckoutTermsRequired =>
+      'Bitte akzeptiere die Bedingungen vor dem Bezahlen.';
+
+  @override
   String get withdrawFromContract => 'Vertrag widerrufen';
 
   @override

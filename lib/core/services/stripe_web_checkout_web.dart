@@ -3,7 +3,12 @@ import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'dart:convert';
+import 'dart:js_interop';
+import 'dart:js_interop_unsafe';
+
 import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../constants/purchase_consent.dart';
@@ -14,7 +19,9 @@ import 'stripe_billing_models.dart';
 /// The mobile app uses native in-app-purchase; the web build has no IAP plugin,
 /// so coin packages and memberships are sold through Stripe's hosted checkout:
 ///   1. [startCheckout] asks the `createStripeCheckoutSession` Cloud Function for
-///      a session and opens the hosted page in a new tab.
+///      a session and opens the hosted page IN THIS TAB (no popup blocker, no
+///      second tab left spinning); Stripe sends the user back to
+///      `/?payment=success|cancel`, read once by [consumeReturn].
 ///   2. The `stripeWebhook` Cloud Function credits coins / activates membership.
 ///   3. [waitForCompletion] polls `stripe_orders` in the original tab so we know
 ///      when the purchase landed (independent of where the new tab redirects).
@@ -74,9 +81,60 @@ class StripeWebCheckout {
     final sessionId = data['sessionId'] as String?;
     if (url == null) return null;
 
-    await launchUrl(Uri.parse(url), webOnlyWindowName: '_blank');
-    return sessionId;
+    // Remembered across the redirect: what was bought and which orders were
+    // already complete, so the return can confirm THIS purchase.
+    final known = await existingCompletedOrderIds();
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString(_pendingKey, jsonEncode({
+        'productId': productId,
+        'known': known.toList(),
+        'at': DateTime.now().millisecondsSinceEpoch,
+      }));
+    } catch (_) {/* the return then shows the generic confirmation */}
+
+    final opened = await launchUrl(Uri.parse(url), webOnlyWindowName: '_self');
+    return opened ? sessionId : null;
   }
+
+  static const String _pendingKey = 'stripe_pending_checkout';
+
+  /// Once per page load: the result of coming back from Stripe Checkout
+  /// (`?payment=success|cancel`), or null. Removes the parameter from the
+  /// address bar so a reload does not show it again.
+  static Future<StripeReturn?> consumeReturn() async {
+    if (!kIsWeb || _returnConsumed) return null;
+    _returnConsumed = true;
+    final payment = Uri.base.queryParameters['payment'];
+    if (payment != 'success' && payment != 'cancel') return null;
+    try {
+      final b = Uri.base;
+      final rest = {
+        for (final e in b.queryParameters.entries)
+          if (e.key != 'payment') e.key: e.value,
+      };
+      final query = rest.isEmpty ? '' : '?${Uri(queryParameters: rest).query}';
+      final fragment = b.fragment.isEmpty ? '' : '#${b.fragment}';
+      final history = globalContext.getProperty<JSObject>('history'.toJS);
+      history.callMethod<JSAny?>(
+          'replaceState'.toJS, null, ''.toJS, '${b.origin}${b.path}$query$fragment'.toJS);
+    } catch (_) {}
+    String? productId;
+    var known = <String>{};
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final raw = prefs.getString(_pendingKey);
+      await prefs.remove(_pendingKey);
+      if (raw != null) {
+        final m = jsonDecode(raw) as Map<String, dynamic>;
+        productId = m['productId'] as String?;
+        known = {for (final x in (m['known'] as List? ?? const [])) '$x'};
+      }
+    } catch (_) {}
+    return StripeReturn(success: payment == 'success', productId: productId, knownOrderIds: known);
+  }
+
+  static bool _returnConsumed = false;
 
   /// IDs of the user's already-completed Stripe orders, captured before checkout
   /// so [waitForCompletion] can detect the NEW one precisely.

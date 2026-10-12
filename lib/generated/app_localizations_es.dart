@@ -16233,6 +16233,32 @@ class AppLocalizationsEs extends AppLocalizations {
   String get checkoutAccept => 'Acepto';
 
   @override
+  String get webPaymentCancelled => 'Pago cancelado. No se te ha cobrado nada.';
+
+  @override
+  String get webPaymentConfirming => 'Confirmando tu pago…';
+
+  @override
+  String get webPaymentDoneCoins =>
+      'Pago completado. Tus monedas ya están en tu cuenta.';
+
+  @override
+  String get webPaymentDoneMembership =>
+      'Pago completado. Tu membresía está activa.';
+
+  @override
+  String get webPaymentPending =>
+      'Pago recibido. Puede tardar unos minutos en aparecer en tu cuenta; se añade automáticamente.';
+
+  @override
+  String get webCheckoutAlreadySubscribed =>
+      'Ya tienes este plan o uno superior. Para pasar a uno inferior, cancela primero el actual.';
+
+  @override
+  String get webCheckoutTermsRequired =>
+      'Acepta las condiciones antes de pagar.';
+
+  @override
   String get withdrawFromContract => 'Desistir del contrato';
 
   @override

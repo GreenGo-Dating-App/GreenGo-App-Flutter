@@ -91,3 +91,12 @@ class WebBillingSummary {
     );
   }
 }
+
+/// Coming back from Stripe Checkout (web): paid or cancelled, what was bought
+/// and the orders that were already complete before (to confirm the new one).
+class StripeReturn {
+  const StripeReturn({required this.success, this.productId, this.knownOrderIds = const {}});
+  final bool success;
+  final String? productId;
+  final Set<String> knownOrderIds;
+}

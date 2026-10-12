@@ -28254,6 +28254,48 @@ abstract class AppLocalizations {
   /// **'Accept'**
   String get checkoutAccept;
 
+  /// No description provided for @webPaymentCancelled.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment cancelled. You have not been charged.'**
+  String get webPaymentCancelled;
+
+  /// No description provided for @webPaymentConfirming.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirming your payment…'**
+  String get webPaymentConfirming;
+
+  /// No description provided for @webPaymentDoneCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment complete. Your coins have been added.'**
+  String get webPaymentDoneCoins;
+
+  /// No description provided for @webPaymentDoneMembership.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment complete. Your membership is active.'**
+  String get webPaymentDoneMembership;
+
+  /// No description provided for @webPaymentPending.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment received. It can take a few minutes to show up in your account; it is added automatically.'**
+  String get webPaymentPending;
+
+  /// No description provided for @webCheckoutAlreadySubscribed.
+  ///
+  /// In en, this message translates to:
+  /// **'You already have this plan or a higher one. To move to a lower plan, cancel the current one first.'**
+  String get webCheckoutAlreadySubscribed;
+
+  /// No description provided for @webCheckoutTermsRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Please accept the terms before paying.'**
+  String get webCheckoutTermsRequired;
+
   /// No description provided for @withdrawFromContract.
   ///
   /// In en, this message translates to:
