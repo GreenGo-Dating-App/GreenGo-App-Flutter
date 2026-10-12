@@ -177,7 +177,6 @@ class _ChatScreenState extends State<ChatScreen> {
   // Chat learning settings (user-customizable)
   bool _showOriginalText = true;       // Show original text below translation
   bool _showDifficultyBadge = true;    // Show CEFR level badge on messages
-  bool _showSmartReplies = true;       // Show smart reply suggestions
   bool _showGrammarCheck = true;       // Check grammar before sending
   bool _showCulturalTips = true;       // Show cultural context tooltips
   bool _showWordBreakdown = true;      // Tap message for word breakdown
@@ -200,10 +199,6 @@ class _ChatScreenState extends State<ChatScreen> {
   Message? _replyingToMessage;
 
   // Smart replies
-  List<String> _smartReplies = [];
-  List<String> _smartReplyTranslations = [];
-  bool _loadingSmartReplies = false;
-  String? _lastProcessedMessageId;
 
   // Grammar correction
   Map<String, dynamic>? _grammarResult;
@@ -376,7 +371,6 @@ class _ChatScreenState extends State<ChatScreen> {
     setState(() {
       _showOriginalText = prefs.getBool('${p}showOriginalText') ?? true;
       _showDifficultyBadge = prefs.getBool('${p}showDifficultyBadge') ?? true;
-      _showSmartReplies = prefs.getBool('${p}showSmartReplies') ?? true;
       _showGrammarCheck = prefs.getBool('${p}showGrammarCheck') ?? true;
       _showCulturalTips = prefs.getBool('${p}showCulturalTips') ?? true;
       _showWordBreakdown = prefs.getBool('${p}showWordBreakdown') ?? true;
@@ -394,7 +388,6 @@ class _ChatScreenState extends State<ChatScreen> {
     final prefix = 'chat_${widget.matchId}_';
     await prefs.setBool('${prefix}showOriginalText', _showOriginalText);
     await prefs.setBool('${prefix}showDifficultyBadge', _showDifficultyBadge);
-    await prefs.setBool('${prefix}showSmartReplies', _showSmartReplies);
     await prefs.setBool('${prefix}showGrammarCheck', _showGrammarCheck);
     await prefs.setBool('${prefix}showCulturalTips', _showCulturalTips);
     await prefs.setBool('${prefix}showWordBreakdown', _showWordBreakdown);
@@ -411,7 +404,6 @@ class _ChatScreenState extends State<ChatScreen> {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool('chat_showOriginalText', _showOriginalText);
     await prefs.setBool('chat_showDifficultyBadge', _showDifficultyBadge);
-    await prefs.setBool('chat_showSmartReplies', _showSmartReplies);
     await prefs.setBool('chat_showGrammarCheck', _showGrammarCheck);
     await prefs.setBool('chat_showCulturalTips', _showCulturalTips);
     await prefs.setBool('chat_showWordBreakdown', _showWordBreakdown);
@@ -1866,19 +1858,6 @@ class _ChatScreenState extends State<ChatScreen> {
                       });
                     }
 
-                    // Trigger smart replies for latest received message
-                    if (messages.isNotEmpty) {
-                      final latest = messages.first; // newest message (list is descending)
-                      if (latest.senderId != widget.currentUserId && latest.messageId != _lastProcessedMessageId) {
-                        _lastProcessedMessageId = latest.messageId;
-                        final lang = latest.detectedLanguage ?? latest.metadata?['language'] ?? 'en';
-                        // Use addPostFrameCallback to avoid calling setState during build
-                        WidgetsBinding.instance.addPostFrameCallback((_) {
-                          if (mounted) _loadSmartReplies(latest.content, lang);
-                        });
-                      }
-                    }
-
                     if (messages.isEmpty) {
                       return Center(
                         child: Column(
@@ -2069,7 +2048,6 @@ class _ChatScreenState extends State<ChatScreen> {
             if (_showGrammarCheck) _buildGrammarBanner(),
 
             // Smart reply suggestions
-            if (_showSmartReplies) _buildSmartRepliesBar(),
 
             // Upload progress indicator
             if (_isUploadingMedia)
@@ -2627,17 +2605,6 @@ class _ChatScreenState extends State<ChatScreen> {
                 subtitle: AppLocalizations.of(context)!.chatSettingDifficultyBadgesDesc,
                 value: _showDifficultyBadge,
                 onChanged: (v) => setState(() => _showDifficultyBadge = v),
-              ),
-              _buildSettingToggle(
-                setSheetState,
-                icon: Icons.auto_awesome,
-                label: AppLocalizations.of(context)!.chatSettingSmartReplies,
-                subtitle: AppLocalizations.of(context)!.chatSettingSmartRepliesDesc,
-                value: _showSmartReplies,
-                // Silver and above only — _loadSmartReplies bails out for free
-                // accounts, so show that instead of a switch that does nothing.
-                locked: !_hasPaidTier,
-                onChanged: (v) => setState(() => _showSmartReplies = v),
               ),
               _buildSettingToggle(
                 setSheetState,
@@ -3647,100 +3614,6 @@ class _ChatScreenState extends State<ChatScreen> {
             constraints: const BoxConstraints(),
           ),
         ],
-      ),
-    );
-  }
-
-  Future<void> _loadSmartReplies(String messageText, String language) async {
-    // Smart replies are Silver+ only
-    final userTier = _currentUserProfile?.effectiveTier ?? MembershipTier.free;
-    if (userTier == MembershipTier.free) return;
-
-    setState(() => _loadingSmartReplies = true);
-    try {
-      final userLang = _userLanguage ?? 'en';
-      final replies = await _learningService.getSmartReplies(messageText, language, userLang);
-      final translations = _learningService.getSmartReplyTranslations(messageText, language);
-      if (mounted) {
-        setState(() {
-          _smartReplies = replies;
-          _smartReplyTranslations = translations;
-          _loadingSmartReplies = false;
-        });
-      }
-    } catch (_) {
-      if (mounted) setState(() => _loadingSmartReplies = false);
-    }
-  }
-
-  Widget _buildSmartRepliesBar() {
-    if (_loadingSmartReplies && _smartReplies.isEmpty) {
-      return Container(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-        color: AppColors.backgroundCard,
-        child: Row(
-          children: [
-            const SizedBox(
-              width: 14,
-              height: 14,
-              child: CircularProgressIndicator(
-                strokeWidth: 2,
-                valueColor:
-                    AlwaysStoppedAnimation<Color>(AppColors.richGold),
-              ),
-            ),
-            const SizedBox(width: 10),
-            Text(
-              AppLocalizations.of(context)!.chatSmartRepliesLoading,
-              style: const TextStyle(
-                  color: AppColors.textTertiary, fontSize: 12),
-            ),
-          ],
-        ),
-      );
-    }
-    if (_smartReplies.isEmpty) return const SizedBox.shrink();
-
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-      color: AppColors.backgroundCard,
-      child: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        child: Row(
-          children: [
-            const Icon(Icons.auto_awesome, size: 16, color: AppColors.richGold),
-            const SizedBox(width: 8),
-            ...List.generate(_smartReplies.length, (i) {
-              final reply = _smartReplies[i];
-              final translation = i < _smartReplyTranslations.length ? _smartReplyTranslations[i] : null;
-              return Padding(
-                padding: const EdgeInsets.only(right: 8),
-                child: GestureDetector(
-                  onTap: () {
-                    _messageController.text = reply;
-                    setState(() => _smartReplies = []);
-                  },
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                    decoration: BoxDecoration(
-                      color: AppColors.backgroundDark,
-                      borderRadius: BorderRadius.circular(16),
-                      border: Border.all(color: AppColors.richGold.withOpacity(0.3)),
-                    ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text(reply, style: const TextStyle(color: AppColors.textPrimary, fontSize: 13)),
-                        if (translation != null)
-                          Text(translation, style: const TextStyle(color: AppColors.textTertiary, fontSize: 10)),
-                      ],
-                    ),
-                  ),
-                ),
-              );
-            }),
-          ],
-        ),
       ),
     );
   }

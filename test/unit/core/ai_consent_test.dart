@@ -146,9 +146,7 @@ void main() {
         },
         consent: s,
       );
-      expect(await learning.getSmartReplies('Oi, tudo bem?', 'pt', 'en'), isEmpty);
       expect(await learning.checkGrammar('Hello there friend', 'en'), isNull);
-      expect(await learning.getMessageDifficulty('Hello', 'en'), 'A1');
       await s.setDecision(accepted: false);
       expect(await learning.getWordBreakdown('Hello', 'en', 'pt'), isEmpty);
       expect(calls, isEmpty);
@@ -161,21 +159,18 @@ void main() {
       final learning = ChatLearningService.test(
         call: (p) async {
           calls.add(p);
-          return {'replies': ['Oi!', 'Tudo'], 'translations': ['Hi!', 'All']};
+          return {'hasErrors': false};
         },
         consent: s,
       );
-      expect(await learning.getSmartReplies('Bom dia', 'pt', 'en'), ['Oi!', 'Tudo']);
-      expect(learning.getSmartReplyTranslations('Bom dia', 'pt'), ['Hi!', 'All']);
+      expect(await learning.checkGrammar('Bom dia amigo', 'pt'), {'hasErrors': false});
       expect(calls.single, {
-        'task': 'smartReplies',
-        'text': 'Bom dia',
+        'task': 'grammar',
+        'text': 'Bom dia amigo',
         'language': 'pt',
-        'targetLanguage': 'pt',
-        'userLanguage': 'en',
       });
       // Cached: no second call.
-      await learning.getSmartReplies('Bom dia', 'pt', 'en');
+      await learning.checkGrammar('Bom dia amigo', 'pt');
       expect(calls, hasLength(1));
     });
 
@@ -197,11 +192,12 @@ void main() {
         call: (p) async {
           n++;
           if (n == 1) throw consentRequiredError();
-          return {'level': 'B2'};
+          return {'hasErrors': true};
         },
         consent: s,
       );
-      expect(await learning.getMessageDifficulty('Hello', 'en'), 'B2');
+      // (Difficulty is offline now; grammar still goes through aiAssist.)
+      expect(await learning.checkGrammar('Hello there friend', 'en'), {'hasErrors': true});
       expect(n, 2);
       expect(rec.sent, [true, true]);
     });

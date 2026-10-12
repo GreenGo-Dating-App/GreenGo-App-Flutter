@@ -6,16 +6,16 @@ Q03 | quotes | QUOTES_ASSIGN 03 | parts/quotes_03.json | done
 Q04 | quotes | QUOTES_ASSIGN 04 | parts/quotes_04.json | done
 Q05 | quotes | QUOTES_ASSIGN 05 | parts/quotes_05.json | done (50/100, top-up later)
 Q06 | quotes | QUOTES_ASSIGN 06 | parts/quotes_06.json | done
-Q07 | quotes | QUOTES_ASSIGN 07 | parts/quotes_07.json | running
-Q08 | quotes | QUOTES_ASSIGN 08 | parts/quotes_08.json | running
-Q09 | quotes | QUOTES_ASSIGN 09 | parts/quotes_09.json | running
+Q07 | quotes | QUOTES_ASSIGN 07 | parts/quotes_07.json | done
+Q08 | quotes | QUOTES_ASSIGN 08 | parts/quotes_08.json | done
+Q09 | quotes | QUOTES_ASSIGN 09 | parts/quotes_09.json | done
 Q10 | quotes | QUOTES_ASSIGN 10 | parts/quotes_10.json | done
-Q11 | quotes | QUOTES_ASSIGN 11 | parts/quotes_11.json | running
+Q11 | quotes | QUOTES_ASSIGN 11 | parts/quotes_11.json | done
 Q12 | quotes | QUOTES_ASSIGN 12 | parts/quotes_12.json | running
 Q13 | quotes | QUOTES_ASSIGN 13 | parts/quotes_13.json | done
-Q14 | quotes | QUOTES_ASSIGN 14 | parts/quotes_14.json | todo
-Q15 | quotes | QUOTES_ASSIGN 15 | parts/quotes_15.json | todo
-Q16 | quotes | QUOTES_ASSIGN 16 | parts/quotes_16.json | todo
+Q14 | quotes | QUOTES_ASSIGN 14 | parts/quotes_14.json | running
+Q15 | quotes | QUOTES_ASSIGN 15 | parts/quotes_15.json | running
+Q16 | quotes | QUOTES_ASSIGN 16 | parts/quotes_16.json | running
 Q17 | quotes | QUOTES_ASSIGN 17 | parts/quotes_17.json | todo
 Q18 | quotes | QUOTES_ASSIGN 18 | parts/quotes_18.json | todo
 Q19 | quotes | QUOTES_ASSIGN 19 | parts/quotes_19.json | todo
@@ -34,8 +34,8 @@ I01 | icebreakers | travel,food | parts/icebreakers_01.json | done
 I02 | icebreakers | music,movies_series | parts/icebreakers_02.json | done
 I03 | icebreakers | books,sports_fitness | parts/icebreakers_03.json | done
 I04 | icebreakers | languages,traditions | parts/icebreakers_04.json | done
-I05 | icebreakers | hometown,work_studies | parts/icebreakers_05.json | running
-I06 | icebreakers | hobbies_creativity,nature_outdoors | parts/icebreakers_06.json | todo
+I05 | icebreakers | hometown,work_studies | parts/icebreakers_05.json | done
+I06 | icebreakers | hobbies_creativity,nature_outdoors | parts/icebreakers_06.json | running
 I07 | icebreakers | technology,daily_life | parts/icebreakers_07.json | todo
 I08 | icebreakers | dreams_goals,would_you_rather | parts/icebreakers_08.json | todo
 I09 | icebreakers | festivals,animals_pets | parts/icebreakers_09.json | todo
@@ -46,8 +46,8 @@ S03 | sentences | apologizing,thanking | parts/sentences_03.json | done
 S04 | sentences | making_plans,inviting | parts/sentences_04.json | done
 S05 | sentences | accept_decline,recommendations | parts/sentences_05.json | done
 S06 | sentences | directions_meeting,weather | parts/sentences_06.json | done
-S07 | sentences | food_talk,restaurant | parts/sentences_07.json | todo
-S08 | sentences | shopping,transport | parts/sentences_08.json | todo
+S07 | sentences | food_talk,restaurant | parts/sentences_07.json | done
+S08 | sentences | shopping,transport | parts/sentences_08.json | running
 S09 | sentences | accommodation,health_emergency | parts/sentences_09.json | todo
 S10 | sentences | feelings,encouraging | parts/sentences_10.json | todo
 S11 | sentences | small_talk,family | parts/sentences_11.json | todo
@@ -65,10 +65,10 @@ T02 | tips | AM,AR,AT | parts/tips_02.json | done
 T03 | tips | AU,AZ,BA | parts/tips_03.json | done
 T04 | tips | BE,BG,BR | parts/tips_04.json | done
 T05 | tips | BY,CA,CH | parts/tips_05.json | done
-T06 | tips | CL,CN,CO | parts/tips_06.json | running
-T07 | tips | CR,CY,CZ | parts/tips_07.json | running
-T08 | tips | DE,DK,DO | parts/tips_08.json | todo
-T09 | tips | EC,EE,EG | parts/tips_09.json | todo
+T06 | tips | CL,CN,CO | parts/tips_06.json | done
+T07 | tips | CR,CY,CZ | parts/tips_07.json | done
+T08 | tips | DE,DK,DO | parts/tips_08.json | running
+T09 | tips | EC,EE,EG | parts/tips_09.json | running
 T10 | tips | ES,FI,FR | parts/tips_10.json | todo
 T11 | tips | GB,GE,GR | parts/tips_11.json | done
 T12 | tips | HR,HU,ID | parts/tips_12.json | todo

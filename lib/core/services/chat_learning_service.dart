@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart';
 
 import '../utils/app_l10n_lookup.dart';
 import 'ai_consent_service.dart';
+import 'chat_datasets/chat_datasets.dart';
 
 /// Signature of the server call (overridable in tests).
 typedef AiAssistCall = Future<Map<String, dynamic>?> Function(
@@ -40,7 +41,6 @@ class ChatLearningService {
   static const int maxChars = 1000;
 
   // Caches to avoid repeated calls
-  final Map<String, List<String>> _smartReplyCache = {};
   final Map<String, String> _correctionCache = {};
   final Map<String, String> _culturalTooltipCache = {};
   final Map<String, List<Map<String, String>>> _wordBreakdownCache = {};
@@ -86,34 +86,6 @@ class ChatLearningService {
       }
     }
     return null;
-  }
-
-  /// Get 3 smart reply suggestions in the learning language
-  Future<List<String>> getSmartReplies(String receivedMessage, String targetLanguage, String userLanguage) async {
-    final cacheKey = '${receivedMessage.hashCode}_$targetLanguage';
-    if (_smartReplyCache.containsKey(cacheKey)) return _smartReplyCache[cacheKey]!;
-
-    final result = await _assist('smartReplies', receivedMessage,
-        language: targetLanguage,
-        targetLanguage: targetLanguage,
-        userLanguage: userLanguage);
-
-    if (result != null && result['replies'] != null) {
-      final replies = List<String>.from(result['replies']);
-      _smartReplyCache[cacheKey] = replies;
-      // Also cache translations
-      if (result['translations'] != null) {
-        _smartReplyCache['${cacheKey}_tr'] = List<String>.from(result['translations']);
-      }
-      return replies;
-    }
-    return [];
-  }
-
-  /// Get cached translations for smart replies
-  List<String> getSmartReplyTranslations(String receivedMessage, String targetLanguage) {
-    final cacheKey = '${receivedMessage.hashCode}_${targetLanguage}_tr';
-    return _smartReplyCache[cacheKey] ?? [];
   }
 
   /// Check grammar and suggest corrections.
@@ -169,13 +141,19 @@ class ChatLearningService {
   }
 
   /// Get CEFR difficulty level for a message ('A1' when unknown).
-  Future<String> getMessageDifficulty(String text, String language) async {
+  /// CEFR level of [text], computed OFFLINE from word frequency
+  /// (ChatDatasets `freq`, DifficultyEstimator). [skip] = character ranges of
+  /// recognised names. 'A1' while the dataset is not loaded or for unknown
+  /// languages (same fallback as before).
+  Future<String> getMessageDifficulty(String text, String language,
+      {List<(int, int)> skip = const []}) async {
     final cacheKey = '${text.hashCode}_$language';
-    if (_difficultyCache.containsKey(cacheKey)) return _difficultyCache[cacheKey]!;
-
-    final result = await _assist('difficulty', text, language: language);
-    final level = result?['level'] as String?;
-    if (level == null) return 'A1'; // not cached: may work later
+    final hit = _difficultyCache[cacheKey];
+    if (hit != null) return hit;
+    final datasets = ChatDatasets.instance;
+    await datasets.ensure('freq');
+    final level = datasets.difficulty?.estimate(text, language, skip: skip);
+    if (level == null) return 'A1'; // not cached: the dataset may load later
     _difficultyCache[cacheKey] = level;
     return level;
   }
@@ -202,7 +180,6 @@ class ChatLearningService {
   }
 
   void clearCaches() {
-    _smartReplyCache.clear();
     _correctionCache.clear();
     _culturalTooltipCache.clear();
     _wordBreakdownCache.clear();
