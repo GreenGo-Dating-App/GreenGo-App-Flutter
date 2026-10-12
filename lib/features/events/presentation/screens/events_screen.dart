@@ -95,6 +95,7 @@ import '../../../business/presentation/widgets/paid_business_note.dart';
 import '../../../copyright/data/copyright_service.dart';
 import '../../../copyright/presentation/screens/copyright_notice_form_screen.dart';
 import '../../../user_experiences/domain/contact_info.dart';
+import '../../../../core/utils/grid_columns.dart';
 
 /// Coin cost for an organizer to feature ("Feature this event") their event in
 /// the Explore featured carousel for 7 days. Pure revenue, zero run-cost.
@@ -145,13 +146,6 @@ class _EventsScreenState extends State<EventsScreen>
   String _searchQuery = '';
   bool _gridView = true; // default to grid view (web + mobile)
 
-  /// Grid columns: more on wide/web screens, 3 on phones.
-  int _gridColumns(BuildContext context) {
-    final w = MediaQuery.of(context).size.width;
-    if (w >= 1100) return 6;
-    if (w >= 800) return 4;
-    return 3;
-  }
   double? _userLat;
   double? _userLng;
   String _extSort = 'distance';
@@ -1253,7 +1247,7 @@ class _EventsScreenState extends State<EventsScreen>
         final count = _gridView
             ? firstScreenGridCount(
                 viewport: viewport,
-                columns: _gridColumns(context),
+                columns: gridColumnsOf(context),
                 childAspectRatio: 0.7)
             : firstScreenListCount(
                 viewportHeight: viewport.height, itemExtent: 330);
@@ -1286,7 +1280,7 @@ class _EventsScreenState extends State<EventsScreen>
           ? GridView.builder(
               padding: const EdgeInsets.all(12),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: _gridColumns(context),
+                crossAxisCount: gridColumnsOf(context),
                 crossAxisSpacing: 8,
                 mainAxisSpacing: 8,
                 childAspectRatio: 0.7,
@@ -1852,12 +1846,12 @@ void _logSavedEventLead(Event event, String uid) {
 }
 
 /// Decode width (physical px) of a community event cover: the grid tile
-/// ([grid], one of [eventsGridColumns] per row) or the full-width [EventCard].
+/// ([grid], one of [gridColumnsOf] per row) or the full-width [EventCard].
 /// Shared by the tiles and [eventCoverImageProvider] so a first-screen
 /// precache hits the SAME ImageCache entry the tile paints.
 int eventCoverMemCacheWidth(BuildContext context, {required bool grid}) {
   final mq = MediaQuery.of(context);
-  final cols = grid ? eventsGridColumns(context) : 1;
+  final cols = grid ? gridColumnsOf(context) : 1;
   return (mq.size.width / cols * mq.devicePixelRatio).round();
 }
 

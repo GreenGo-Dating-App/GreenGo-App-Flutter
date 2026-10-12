@@ -40,6 +40,7 @@ import '../../../saved_searches/data/saved_searches_service.dart';
 import '../../../saved_searches/presentation/screens/saved_searches_screen.dart';
 import '../../../../core/services/effective_tier.dart';
 import '../../../safety/presentation/screens/age_assurance_required_screen.dart';
+import '../../../../core/utils/grid_columns.dart';
 
 /// A full-screen, Apple-safe people directory reached from the Explore
 /// "Network Discovery → See all" action.
@@ -1086,11 +1087,11 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
     AppLocalizations l10n,
     bool reduceMotion,
   ) {
-    // Edge-to-edge 3-column grid with PORTRAIT people tiles (5:7) to match the
-    // Explore page's 150×210 person cards. NetworkGridCard keeps its own rounded
-    // corners for a "bit rounded" look.
-    const gridDelegate = SliverGridDelegateWithFixedCrossAxisCount(
-      crossAxisCount: 3,
+    // Edge-to-edge width-based grid (3 / 4 / 6 columns) with PORTRAIT people
+    // tiles (5:7) to match the Explore page's 150×210 person cards.
+    // NetworkGridCard keeps its own rounded corners for a "bit rounded" look.
+    final gridDelegate = SliverGridDelegateWithFixedCrossAxisCount(
+      crossAxisCount: gridColumnsOf(context),
       crossAxisSpacing: 3,
       mainAxisSpacing: 3,
       childAspectRatio: 5 / 7,

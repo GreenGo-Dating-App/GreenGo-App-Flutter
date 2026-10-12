@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/first_screen_gate.dart';
 import '../../domain/feed_interleave.dart';
-import 'external_event_tiles.dart';
+import '../../../../core/utils/grid_columns.dart';
 
 /// One paged source of a merged feed (a Firestore pager, or a fixed list).
 abstract class FeedSource<T> {
@@ -366,7 +366,7 @@ class _InterleavedFeedViewState<T> extends State<InterleavedFeedView<T>> {
     final count = widget.gridView
         ? firstScreenGridCount(
             viewport: viewport,
-            columns: eventsGridColumns(context),
+            columns: gridColumnsOf(context),
             childAspectRatio: widget.gridAspectRatio)
         : firstScreenListCount(
             viewportHeight: viewport.height,
@@ -428,7 +428,7 @@ class _InterleavedFeedViewState<T> extends State<InterleavedFeedView<T>> {
         physics: const AlwaysScrollableScrollPhysics(),
         padding: const EdgeInsets.all(12),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: eventsGridColumns(context),
+          crossAxisCount: gridColumnsOf(context),
           crossAxisSpacing: 8,
           mainAxisSpacing: 8,
           childAspectRatio: widget.gridAspectRatio,

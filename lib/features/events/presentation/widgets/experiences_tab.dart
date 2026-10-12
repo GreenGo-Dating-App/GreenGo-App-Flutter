@@ -12,6 +12,7 @@ import '../../data/datasources/external_events_preloader.dart';
 import '../../domain/entities/external_event.dart';
 import 'attraction_menu_dialog.dart';
 import 'external_event_tiles.dart';
+import '../../../../core/utils/grid_columns.dart';
 
 /// Experiences tab — external events (Experiences/Attractions/Live Events) with
 /// **infinite scroll**, downloaded already filtered & ordered from Firestore:
@@ -342,7 +343,7 @@ class _ExperiencesTabState extends State<ExperiencesTab>
     final count = widget.gridView
         ? firstScreenGridCount(
             viewport: viewport,
-            columns: eventsGridColumns(context),
+            columns: gridColumnsOf(context),
             childAspectRatio: 0.62)
         : firstScreenListCount(
             viewportHeight: viewport.height, itemExtent: 280);
@@ -392,7 +393,7 @@ class _ExperiencesTabState extends State<ExperiencesTab>
     // view a distinct key makes the swap clean, so the list shows the events.
     final Widget child;
     if (widget.gridView) {
-      final cols = eventsGridColumns(context);
+      final cols = gridColumnsOf(context);
       child = GridView.builder(
         key: const ValueKey('expGrid'),
         controller: _gridScroll,

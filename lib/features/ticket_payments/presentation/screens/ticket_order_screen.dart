@@ -312,19 +312,30 @@ class TicketQrCard extends StatelessWidget {
     final l = AppLocalizations.of(context)!;
     final title = ticket.title ?? '';
     final text = l.tpShareTicketText(title, ticket.index, ticket.of);
+    // The QR as a PNG on every platform (share_plus uses the Web Share API on
+    // web). Where sharing files is unsupported (e.g. desktop browsers without
+    // Web Share) it throws and we fall back to the text + QR payload.
     try {
-      if (!kIsWeb) {
-        final painter = QrPainter(data: ticket.qrPayload, version: QrVersions.auto, gapless: true,
-            eyeStyle: const QrEyeStyle(color: Colors.black), dataModuleStyle: const QrDataModuleStyle(color: Colors.black));
-        final img = await painter.toImageData(900, format: ui.ImageByteFormat.png);
-        if (img != null) {
+      final painter = QrPainter(data: ticket.qrPayload, version: QrVersions.auto, gapless: true,
+          eyeStyle: const QrEyeStyle(color: Colors.black), dataModuleStyle: const QrDataModuleStyle(color: Colors.black));
+      final img = await painter.toImageData(900, format: ui.ImageByteFormat.png);
+      if (img != null) {
+        // Web: throw instead of silently downloading the PNG, so the text
+        // fallback below runs.
+        final downloadFallback = Share.downloadFallbackEnabled;
+        if (kIsWeb) Share.downloadFallbackEnabled = false;
+        try {
           await Share.shareXFiles(
             [XFile.fromData(img.buffer.asUint8List(), mimeType: 'image/png', name: 'ticket-${ticket.id}.png')],
             text: text,
           );
           return;
+        } finally {
+          Share.downloadFallbackEnabled = downloadFallback;
         }
       }
+    } catch (_) {/* file sharing unsupported: fall back to text */}
+    try {
       await Share.share('$text\n${ticket.qrPayload}');
     } catch (_) {/* share sheet dismissed / unavailable */}
   }

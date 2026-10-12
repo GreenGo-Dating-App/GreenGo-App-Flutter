@@ -11,6 +11,7 @@ import '../../user_experiences/presentation/widgets/experience_widgets.dart';
 import '../data/datasources/external_events_preloader.dart';
 import '../data/services/events_location.dart';
 import '../data/services/events_prefetch.dart';
+import '../../../core/utils/grid_columns.dart';
 
 /// Decodes the images of the FIRST visible rows of each Events-page tab
 /// (Events "All", Attractions, Experiences "All") from what [EventsPrefetch]
@@ -30,16 +31,11 @@ class EventsTabsImageWarmup {
   static const int rowsPerSource = 2;
   static String? _doneFor;
 
-  /// Columns of the Events-page grids (= `eventsGridColumns`).
-  static int gridColumns(BuildContext context) {
-    final w = MediaQuery.of(context).size.width;
-    return w >= 1100 ? 6 : (w >= 800 ? 4 : 3);
-  }
 
   /// Must match the Events-page grids (events / partner / attraction tiles).
   static int gridMemCacheWidth(BuildContext context) {
     final mq = MediaQuery.of(context);
-    return (mq.size.width / gridColumns(context) * mq.devicePixelRatio)
+    return (mq.size.width / gridColumnsOf(context) * mq.devicePixelRatio)
         .round()
         .clamp(64, 4096);
   }
@@ -95,7 +91,7 @@ class EventsTabsImageWarmup {
     if (_doneFor == userId || !context.mounted) return;
     _doneFor = userId;
     try {
-      final cols = gridColumns(context);
+      final cols = gridColumnsOf(context);
       final memW = gridMemCacheWidth(context);
       final cellW = gridCellWidth(MediaQuery.of(context).size.width, cols);
       for (final r in firstRows(cols * rowsPerSource)) {

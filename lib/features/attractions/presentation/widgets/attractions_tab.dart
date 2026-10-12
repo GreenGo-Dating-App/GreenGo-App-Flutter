@@ -26,6 +26,7 @@ import '../../../../core/utils/country_names_l10n.dart';
 import 'attraction_rating_line.dart';
 import 'attraction_score_badge.dart';
 import 'attractions_filter_sheet.dart';
+import '../../../../core/utils/grid_columns.dart';
 
 /// Curated attractions, scoped to ONE country at a time.
 ///
@@ -276,7 +277,7 @@ class _AttractionsTabState extends State<AttractionsTab>
   int _memW() {
     final mq = MediaQuery.of(context);
     final w = mq.size.width;
-    final cols = w >= 1100 ? 6 : (w >= 800 ? 4 : 3);
+    final cols = gridColumnsForWidth(w);
     final box = widget.gridView ? w / cols : w;
     return (box * mq.devicePixelRatio).round().clamp(64, 4096);
   }
@@ -296,8 +297,7 @@ class _AttractionsTabState extends State<AttractionsTab>
   /// Images of the first viewport of [all] in the current layout.
   List<ImageProvider> _firstScreenImages(
       List<Attraction> all, Size viewport) {
-    final w = MediaQuery.of(context).size.width;
-    final cols = w >= 1100 ? 6 : (w >= 800 ? 4 : 3);
+    final cols = gridColumnsOf(context);
     final count = widget.gridView
         ? firstScreenGridCount(
             viewport: viewport, columns: cols, childAspectRatio: 0.62)
@@ -1102,8 +1102,7 @@ class _AttractionsTabState extends State<AttractionsTab>
   }
 
   Widget _grid(List<Attraction> items, AppLocalizations l10n, bool hasMore) {
-    final w = MediaQuery.of(context).size.width;
-    final cols = w >= 1100 ? 6 : (w >= 800 ? 4 : 3);
+    final cols = gridColumnsOf(context);
     return GridView.builder(
       key: const ValueKey('attrGrid'),
       controller: _scroll,
