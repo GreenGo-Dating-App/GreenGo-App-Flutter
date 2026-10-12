@@ -41373,6 +41373,114 @@ abstract class AppLocalizations {
   /// **'No cultural tips for this country yet.'**
   String get chatCountryTipsEmpty;
 
+  /// No description provided for @chatAskBeenTo.
+  ///
+  /// In en, this message translates to:
+  /// **'Have you been to {place}?'**
+  String chatAskBeenTo(String place);
+
+  /// No description provided for @chatAskFavorite.
+  ///
+  /// In en, this message translates to:
+  /// **'What do you like most about {place}?'**
+  String chatAskFavorite(String place);
+
+  /// No description provided for @chatAskMustSee.
+  ///
+  /// In en, this message translates to:
+  /// **'What should I not miss in {place}?'**
+  String chatAskMustSee(String place);
+
+  /// No description provided for @chatAskFood.
+  ///
+  /// In en, this message translates to:
+  /// **'What food should I try in {place}?'**
+  String chatAskFood(String place);
+
+  /// No description provided for @chatAskBestTime.
+  ///
+  /// In en, this message translates to:
+  /// **'When is the best time to visit {place}?'**
+  String chatAskBestTime(String place);
+
+  /// No description provided for @chatAskWorthIt.
+  ///
+  /// In en, this message translates to:
+  /// **'Is {place} worth a visit?'**
+  String chatAskWorthIt(String place);
+
+  /// No description provided for @chatPlaceCameUp.
+  ///
+  /// In en, this message translates to:
+  /// **'{place} came up - ask about it'**
+  String chatPlaceCameUp(String place);
+
+  /// No description provided for @chatTipsFor.
+  ///
+  /// In en, this message translates to:
+  /// **'{country}: cultural tips'**
+  String chatTipsFor(String country);
+
+  /// No description provided for @chatTripTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Places from this chat'**
+  String get chatTripTitle;
+
+  /// No description provided for @chatTripList.
+  ///
+  /// In en, this message translates to:
+  /// **'List'**
+  String get chatTripList;
+
+  /// No description provided for @chatTripMap.
+  ///
+  /// In en, this message translates to:
+  /// **'Map'**
+  String get chatTripMap;
+
+  /// No description provided for @chatTripAttractions.
+  ///
+  /// In en, this message translates to:
+  /// **'Attractions'**
+  String get chatTripAttractions;
+
+  /// No description provided for @chatTripCities.
+  ///
+  /// In en, this message translates to:
+  /// **'Cities'**
+  String get chatTripCities;
+
+  /// No description provided for @chatTripCountries.
+  ///
+  /// In en, this message translates to:
+  /// **'Countries'**
+  String get chatTripCountries;
+
+  /// No description provided for @chatTripEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No places yet. Cities, countries and attractions you name in this chat appear here.'**
+  String get chatTripEmpty;
+
+  /// No description provided for @chatTripNoMap.
+  ///
+  /// In en, this message translates to:
+  /// **'None of these places has a map position yet.'**
+  String get chatTripNoMap;
+
+  /// No description provided for @chatTripShare.
+  ///
+  /// In en, this message translates to:
+  /// **'Share list'**
+  String get chatTripShare;
+
+  /// No description provided for @chatTripShareHeader.
+  ///
+  /// In en, this message translates to:
+  /// **'Places from our GreenGo chat:'**
+  String get chatTripShareHeader;
+
   /// No description provided for @chatTipCatGreetings.
   ///
   /// In en, this message translates to:

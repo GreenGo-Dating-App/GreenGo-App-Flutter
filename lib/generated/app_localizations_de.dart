@@ -24453,6 +24453,78 @@ class AppLocalizationsDe extends AppLocalizations {
       'Für dieses Land gibt es noch keine Kulturtipps.';
 
   @override
+  String chatAskBeenTo(String place) {
+    return 'Warst du schon mal in $place?';
+  }
+
+  @override
+  String chatAskFavorite(String place) {
+    return 'Was gefällt dir an $place am besten?';
+  }
+
+  @override
+  String chatAskMustSee(String place) {
+    return 'Was sollte ich in $place nicht verpassen?';
+  }
+
+  @override
+  String chatAskFood(String place) {
+    return 'Was sollte ich in $place unbedingt essen?';
+  }
+
+  @override
+  String chatAskBestTime(String place) {
+    return 'Wann ist die beste Zeit, $place zu besuchen?';
+  }
+
+  @override
+  String chatAskWorthIt(String place) {
+    return 'Lohnt sich ein Besuch in $place?';
+  }
+
+  @override
+  String chatPlaceCameUp(String place) {
+    return '$place wurde erwähnt - frag nach';
+  }
+
+  @override
+  String chatTipsFor(String country) {
+    return '$country: Kultur-Tipps';
+  }
+
+  @override
+  String get chatTripTitle => 'Orte aus diesem Chat';
+
+  @override
+  String get chatTripList => 'Liste';
+
+  @override
+  String get chatTripMap => 'Karte';
+
+  @override
+  String get chatTripAttractions => 'Sehenswürdigkeiten';
+
+  @override
+  String get chatTripCities => 'Städte';
+
+  @override
+  String get chatTripCountries => 'Länder';
+
+  @override
+  String get chatTripEmpty =>
+      'Noch keine Orte. Städte, Länder und Sehenswürdigkeiten, die ihr in diesem Chat nennt, erscheinen hier.';
+
+  @override
+  String get chatTripNoMap =>
+      'Keiner dieser Orte hat bisher eine Position auf der Karte.';
+
+  @override
+  String get chatTripShare => 'Liste teilen';
+
+  @override
+  String get chatTripShareHeader => 'Orte aus unserem GreenGo-Chat:';
+
+  @override
   String get chatTipCatGreetings => 'Begrüßung';
 
   @override

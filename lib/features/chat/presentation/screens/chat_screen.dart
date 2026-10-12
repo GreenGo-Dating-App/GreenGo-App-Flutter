@@ -25,6 +25,8 @@ import '../../../../core/services/chat_learning_service.dart';
 import '../../domain/message_insights.dart';
 import '../../../../core/services/chat_datasets/chat_datasets.dart';
 import '../widgets/chat_ideas_sheet.dart';
+import '../widgets/chat_places_bar.dart';
+import '../../domain/chat_places.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/services/location_share_service.dart';
 import '../../../../core/services/place_search_service.dart';
@@ -2051,7 +2053,9 @@ class _ChatScreenState extends State<ChatScreen> {
             // Grammar correction banner
             if (_showGrammarCheck) _buildGrammarBanner(),
 
-            // Smart reply suggestions
+            // Places named in the chat + questions about the partner's latest
+            // one + list/map (offline, from message metadata; no AI).
+            if (_showCulturalTips) _buildPlacesBar(),
 
             // Upload progress indicator
             if (_isUploadingMedia)
@@ -3720,6 +3724,39 @@ class _ChatScreenState extends State<ChatScreen> {
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _buildPlacesBar() {
+    return ValueListenableBuilder<int>(
+      // Old messages without stored entities match once the keywords load.
+      valueListenable: ChatDatasets.instance.changes,
+      builder: (context, _, __) => BlocBuilder<ChatBloc, ChatState>(
+        buildWhen: (a, b) => b is ChatLoaded,
+        builder: (context, state) {
+          if (state is! ChatLoaded) return const SizedBox.shrink();
+          final sources = [
+            for (final m in state.messages)
+              if (m.type == MessageType.text)
+                (
+                  id: m.messageId,
+                  text: m.content,
+                  metadata: m.metadata,
+                  sentAt: m.sentAt,
+                  fromPartner: m.senderId != widget.currentUserId,
+                ),
+          ];
+          final places = ChatPlaces.collect(sources);
+          return ChatPlacesBar(
+            places: places,
+            partnerPlaces: ChatPlaces.latestFromPartner(places, sources),
+            onInsert: (text) {
+              _messageController.text = text;
+              _messageController.selection = TextSelection.collapsed(offset: text.length);
+            },
+          );
+        },
       ),
     );
   }
