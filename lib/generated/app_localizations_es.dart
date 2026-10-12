@@ -7115,6 +7115,25 @@ class AppLocalizationsEs extends AppLocalizations {
   String get notificationOpenSettings => 'Abrir Ajustes';
 
   @override
+  String get notificationWebBlockedBody =>
+      'Las notificaciones de GreenGo están bloqueadas en este navegador. Una página web no puede abrir tus ajustes, así que actívalas así:';
+
+  @override
+  String get notificationWebStepsBrowser =>
+      '1. Toca el icono del candado o de ajustes junto a la dirección web.\n2. Abre Notificaciones (o Configuración del sitio) y elige Permitir.\n3. Recarga GreenGo.';
+
+  @override
+  String get notificationWebStepsIos =>
+      '1. Abre la app Ajustes en tu iPhone o iPad.\n2. Toca Notificaciones y luego GreenGo.\n3. Activa Permitir notificaciones.';
+
+  @override
+  String get notificationWebIosInstallBody =>
+      'En iPhone y iPad, las notificaciones solo funcionan si GreenGo está añadido a tu pantalla de inicio. Añádelo, abre GreenGo desde su icono y permite las notificaciones.';
+
+  @override
+  String get notificationWebHowToInstall => 'Cómo añadirlo';
+
+  @override
   String get notificationSound => 'Sonido';
 
   @override

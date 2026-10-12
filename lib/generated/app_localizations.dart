@@ -12660,6 +12660,36 @@ abstract class AppLocalizations {
   /// **'Open Settings'**
   String get notificationOpenSettings;
 
+  /// No description provided for @notificationWebBlockedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications are blocked for GreenGo in this browser. A web page can\'t open your settings, so turn them on like this:'**
+  String get notificationWebBlockedBody;
+
+  /// No description provided for @notificationWebStepsBrowser.
+  ///
+  /// In en, this message translates to:
+  /// **'1. Tap the lock or settings icon next to the web address.\n2. Open Notifications (or Site settings) and choose Allow.\n3. Reload GreenGo.'**
+  String get notificationWebStepsBrowser;
+
+  /// No description provided for @notificationWebStepsIos.
+  ///
+  /// In en, this message translates to:
+  /// **'1. Open the Settings app on your iPhone or iPad.\n2. Tap Notifications, then GreenGo.\n3. Turn on Allow Notifications.'**
+  String get notificationWebStepsIos;
+
+  /// No description provided for @notificationWebIosInstallBody.
+  ///
+  /// In en, this message translates to:
+  /// **'On iPhone and iPad, notifications only work when GreenGo is added to your Home Screen. Add it, open GreenGo from its icon and allow notifications.'**
+  String get notificationWebIosInstallBody;
+
+  /// No description provided for @notificationWebHowToInstall.
+  ///
+  /// In en, this message translates to:
+  /// **'How to add it'**
+  String get notificationWebHowToInstall;
+
   /// No description provided for @notificationSound.
   ///
   /// In en, this message translates to:

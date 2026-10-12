@@ -7085,6 +7085,25 @@ class AppLocalizationsPt extends AppLocalizations {
   String get notificationOpenSettings => 'Abrir Definições';
 
   @override
+  String get notificationWebBlockedBody =>
+      'As notificações do GreenGo estão bloqueadas neste navegador. Uma página web não pode abrir as tuas definições, por isso ativa-as assim:';
+
+  @override
+  String get notificationWebStepsBrowser =>
+      '1. Toca no ícone do cadeado ou das definições junto ao endereço web.\n2. Abre Notificações (ou Definições do site) e escolhe Permitir.\n3. Recarrega o GreenGo.';
+
+  @override
+  String get notificationWebStepsIos =>
+      '1. Abre a app Definições no teu iPhone ou iPad.\n2. Toca em Notificações e depois em GreenGo.\n3. Ativa Permitir notificações.';
+
+  @override
+  String get notificationWebIosInstallBody =>
+      'No iPhone e no iPad, as notificações só funcionam quando o GreenGo está adicionado ao ecrã principal. Adiciona-o, abre o GreenGo a partir do ícone e permite as notificações.';
+
+  @override
+  String get notificationWebHowToInstall => 'Como adicionar';
+
+  @override
   String get notificationSound => 'Som';
 
   @override
@@ -31640,6 +31659,25 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get notificationOpenSettings => 'Abrir Configurações';
+
+  @override
+  String get notificationWebBlockedBody =>
+      'As notificações do GreenGo estão bloqueadas neste navegador. Uma página da web não consegue abrir suas configurações, então ative assim:';
+
+  @override
+  String get notificationWebStepsBrowser =>
+      '1. Toque no ícone de cadeado ou de configurações ao lado do endereço.\n2. Abra Notificações (ou Configurações do site) e escolha Permitir.\n3. Recarregue o GreenGo.';
+
+  @override
+  String get notificationWebStepsIos =>
+      '1. Abra o app Ajustes no seu iPhone ou iPad.\n2. Toque em Notificações e depois em GreenGo.\n3. Ative Permitir Notificações.';
+
+  @override
+  String get notificationWebIosInstallBody =>
+      'No iPhone e no iPad, as notificações só funcionam quando o GreenGo está na Tela de Início. Adicione-o, abra o GreenGo pelo ícone e permita as notificações.';
+
+  @override
+  String get notificationWebHowToInstall => 'Como adicionar';
 
   @override
   String get notificationSound => 'Som';

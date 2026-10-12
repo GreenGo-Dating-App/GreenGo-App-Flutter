@@ -30,6 +30,7 @@ import 'features/analytics/data/services/performance_monitoring_service.dart';
 import 'core/constants/app_colors.dart';
 import 'core/constants/app_strings.dart';
 import 'core/legal/bundled_font_licenses.dart';
+import 'core/widgets/web_notification_help.dart';
 import 'core/di/injection_container.dart' as di;
 import 'core/cache/last_result_cache.dart';
 import 'core/providers/language_provider.dart';
@@ -1395,6 +1396,12 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
       // user to turn notifications on, pointing them to the app's Settings page.
       if (status == AuthorizationStatus.denied) {
         if (!mounted) return;
+        // Web: a page cannot open the browser / phone settings, so explain
+        // where to allow notifications instead of an "Open Settings" button.
+        if (kIsWeb) {
+          await showWebNotificationHelpDialog(context);
+          return;
+        }
         final l10nD = AppLocalizations.of(context);
         await showDialog<void>(
           context: context,
