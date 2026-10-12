@@ -16,6 +16,8 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/product_catalog.dart';
 import '../../../../core/cache/last_result_cache.dart';
+import '../../../../core/services/display_prices.dart';
+import '../../../../core/services/stripe_web_checkout.dart';
 import '../widgets/web_checkout_dialog.dart';
 import '../widgets/web_billing_panel.dart';
 import '../../../../core/widgets/subscription_legal_footer.dart';
@@ -155,7 +157,12 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
   /// Initialize In-App Purchases safely — avoids crash if plugin not available
   void _initIAP() {
-    if (kIsWeb) return; // no IAP plugin on web — keep _inAppPurchase null
+    if (kIsWeb) {
+      // No IAP plugin on web — keep _inAppPurchase null. Stripe charges in
+      // the currency of the user's country, so show the server's prices.
+      _loadWebDisplayPrices();
+      return;
+    }
     try {
       _inAppPurchase = InAppPurchase.instance;
       _purchaseSubscription = _inAppPurchase!.purchaseStream.listen(
@@ -240,6 +247,30 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         _storePrices = map;
         _availableProductIds = store.available;
       });
+    }
+  }
+
+  /// Web: the Stripe display prices (`getDisplayPrices`) for the same country
+  /// the checkout charges in ([StripeWebCheckout.resolveCountry]): profile
+  /// country, else the server's default. The USD fallbacks stay only while
+  /// loading or when the call fails.
+  Future<void> _loadWebDisplayPrices() async {
+    final memo = _sessionPrices;
+    if (memo != null) {
+      setState(() => _storePrices = memo);
+      return;
+    }
+    try {
+      final country = await StripeWebCheckout.resolveCountry(widget.userId);
+      final result = await FirebaseFunctions.instance
+          .httpsCallable('getDisplayPrices')
+          .call({'userCountry': country});
+      final map = parseDisplayPrices(result.data);
+      if (map.isEmpty) return;
+      _sessionPrices = map;
+      if (mounted) setState(() => _storePrices = map);
+    } catch (e) {
+      debugPrint('[CoinShop] web display prices failed: $e');
     }
   }
 
@@ -1317,10 +1348,11 @@ class _CoinShopScreenState extends State<CoinShopScreen>
               // Apple 3.1.2: free-trial + auto-renew disclosure, Terms/Privacy,
               // Restore. Every tier sold here carries a 7-day introductory
               // offer, so the trial notice is required on this surface.
+              // Web (Stripe) has neither a store to restore from nor a trial.
               SubscriptionLegalFooter(
-                onRestore: _restorePurchases,
+                onRestore: kIsWeb ? null : _restorePurchases,
                 isRestoring: _isRestoring,
-                showFreeTrialNotice: true,
+                showFreeTrialNotice: !kIsWeb,
               ),
               // Web (Stripe): price / interval / next renewal, the billing
               // portal and "Withdraw from contract" (P2-9; L-11, H-23).
