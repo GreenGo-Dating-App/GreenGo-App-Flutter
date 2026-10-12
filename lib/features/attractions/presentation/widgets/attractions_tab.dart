@@ -172,6 +172,13 @@ class _AttractionsTabState extends State<AttractionsTab>
   static const String _listVariant = 'thumb';
   String get _variant => widget.gridView ? _gridVariant : _listVariant;
 
+  /// Tiny variant (160x160, ~6 KB) painted at once under every card while its
+  /// real image ([_variant], 720x405, ~70 KB) loads. The first-screen gate and
+  /// the window reveal wait for THIS one, not the big one, so the grid appears
+  /// in a fraction of the time and sharpens in place.
+  static const String _placeholderVariant = 'micro';
+  static const int _placeholderW = 160;
+
   static const Duration _precacheCap = Duration(seconds: 3);
 
   /// URLs whose image finished (decoded or failed).
@@ -248,14 +255,15 @@ class _AttractionsTabState extends State<AttractionsTab>
     final key = _windowKey;
     final variant = _variant;
     final next = _lastAll.skip(_visibleCount).take(_pageSize).toList();
-    await _precache(next, variant, cap: _precacheCap);
+    await _precache(next, _placeholderVariant, cap: _precacheCap);
     _growing = false;
     if (!mounted || key != _windowKey) return;
     setState(() {
       _visibleCount = (_visibleCount + _pageSize).clamp(0, _lastItemCount);
     });
-    unawaited(_precache(
-        _lastAll.skip(_visibleCount).take(_pageSize).toList(), variant));
+    unawaited(_precache(next, variant));
+    unawaited(_precache(_lastAll.skip(_visibleCount).take(_pageSize).toList(),
+        _placeholderVariant));
   }
 
   String _urlOf(Attraction a, String variant) =>
@@ -274,9 +282,15 @@ class _AttractionsTabState extends State<AttractionsTab>
 
   String _decodedKey(String url, int memW) => '$url@$memW';
 
+  /// Decode width for [variant]: the placeholder is never decoded larger than
+  /// its own 160 px.
+  int _wFor(String variant) =>
+      variant == _placeholderVariant ? _placeholderW : _memW();
+
   /// The exact provider [_img] paints (CachedNetworkImage + memCacheWidth).
   ImageProvider _providerOf(Attraction a, String variant) =>
-      cachedNetworkImageProvider(_urlOf(a, variant), memCacheWidth: _memW());
+      cachedNetworkImageProvider(_urlOf(a, variant),
+          memCacheWidth: _wFor(variant));
 
   /// Images of the first viewport of [all] in the current layout.
   List<ImageProvider> _firstScreenImages(
@@ -288,8 +302,9 @@ class _AttractionsTabState extends State<AttractionsTab>
             viewport: viewport, columns: cols, childAspectRatio: 0.62)
         : firstScreenListCount(
             viewportHeight: viewport.height, itemExtent: 290);
-    final variant = _variant;
-    return [for (final a in all.take(count)) _providerOf(a, variant)];
+    return [
+      for (final a in all.take(count)) _providerOf(a, _placeholderVariant),
+    ];
   }
 
   /// Decodes [list]'s images into the ImageCache using the SAME provider the
@@ -299,7 +314,7 @@ class _AttractionsTabState extends State<AttractionsTab>
   Future<void> _precache(List<Attraction> list, String variant,
       {Duration? cap}) {
     if (!mounted || list.isEmpty) return Future.value();
-    final memW = _memW();
+    final memW = _wFor(variant);
     final waits = <Future<void>>[];
     for (final a in list) {
       final url = _urlOf(a, variant);
@@ -330,8 +345,9 @@ class _AttractionsTabState extends State<AttractionsTab>
     final variant = _variant;
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted || _preparingKey != readyKey) return;
-      unawaited(_precache(
-          _lastAll.skip(_visibleCount).take(_pageSize).toList(), variant));
+      unawaited(_precache(_lastAll.take(_visibleCount).toList(), variant));
+      unawaited(_precache(_lastAll.skip(_visibleCount).take(_pageSize).toList(),
+          _placeholderVariant));
     });
   }
 
@@ -687,16 +703,21 @@ class _AttractionsTabState extends State<AttractionsTab>
     _rank
       ..clear()
       ..addEntries(scored.map((e) => MapEntry(e.$2.id, e.$1)));
+    final dist = _distanceMeaningful ? _distancesOf(pool) : null;
     scored.sort((x, y) {
       if (x.$1 != y.$1) return y.$1.compareTo(x.$1); // relevance first
-      if (_distanceMeaningful) {
-        return (_distanceMeters(x.$2) ?? double.maxFinite)
-            .compareTo(_distanceMeters(y.$2) ?? double.maxFinite);
-      }
+      if (dist != null) return dist[x.$2.id]!.compareTo(dist[y.$2.id]!);
       return y.$2.greengoScore.compareTo(x.$2.greengoScore);
     });
     return scored.map((e) => e.$2).toList();
   }
+
+  /// Distance of every item in [list], computed ONCE: inside a comparator it
+  /// ran ~2 x n log n times per sort (about 60k haversines for a big country,
+  /// on every keystroke).
+  Map<int, double> _distancesOf(Iterable<Attraction> list) => {
+        for (final a in list) a.id: _distanceMeters(a) ?? double.maxFinite,
+      };
 
   /// What the grid/list renders: [base] (already narrowed by the filters)
   /// ordered by the sort chosen in the search bar, with relevance as the
@@ -732,11 +753,8 @@ class _AttractionsTabState extends State<AttractionsTab>
       case 'distance':
       default:
         if (_distanceMeaningful) {
-          out.sort((a, b) => then(
-              (_distanceMeters(a) ?? double.maxFinite)
-                  .compareTo(_distanceMeters(b) ?? double.maxFinite),
-              a,
-              b));
+          final dist = _distancesOf(out);
+          out.sort((a, b) => then(dist[a.id]!.compareTo(dist[b.id]!), a, b));
         } else {
           out.sort((a, b) =>
               then(b.greengoScore.compareTo(a.greengoScore), a, b));
@@ -839,8 +857,18 @@ class _AttractionsTabState extends State<AttractionsTab>
         width: double.infinity,
         fit: BoxFit.cover,
         // Decode at the card's size, not the source's.
-        memCacheWidth: _memW(),
-        placeholder: (_, __) => Container(color: AppColors.backgroundInput),
+        memCacheWidth: _wFor(variant),
+        fadeInDuration: const Duration(milliseconds: 150),
+        // The tiny variant (already decoded by the gate) until this one lands.
+        placeholder: (_, __) => Image(
+          image: _providerOf(a, _placeholderVariant),
+          height: h,
+          width: double.infinity,
+          fit: BoxFit.cover,
+          gaplessPlayback: true,
+          errorBuilder: (_, __, ___) =>
+              Container(color: AppColors.backgroundInput),
+        ),
         errorWidget: (_, __, ___) => Container(
             color: AppColors.backgroundInput,
             child: Icon(AttractionIcons.category(a.categoryIcon),

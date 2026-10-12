@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart' show compute, kIsWeb;
 
 import '../../../../core/utils/display_image.dart';
 import '../../domain/country_resolver.dart';
@@ -91,13 +92,18 @@ class AttractionsDataSource {
   /// result is the WHOLE answer: the local cache holds whatever documents any
   /// earlier read fetched (e.g. only `{ISO2}_0` from [aboveScore]), and a
   /// partial result must never be shown as the full list.
+  ///
+  /// [current] says the cached result is already the latest version (the
+  /// lite build the manifest names): the background server refresh is then
+  /// skipped. It re-downloaded the WHOLE country (0.4-1.4 MB) on every open.
   static Future<QuerySnapshot<Map<String, dynamic>>> _queryCacheFirst(
       Query<Map<String, dynamic>> q,
-      {bool Function(QuerySnapshot<Map<String, dynamic>>)? complete}) async {
+      {bool Function(QuerySnapshot<Map<String, dynamic>>)? complete,
+      bool Function(QuerySnapshot<Map<String, dynamic>>)? current}) async {
     try {
       final c = await q.get(const GetOptions(source: Source.cache));
       if (c.docs.isNotEmpty && (complete == null || complete(c))) {
-        q.get().ignore();
+        if (current == null || !current(c)) q.get().ignore();
         return c;
       }
     } catch (_) {/* empty cache */}
@@ -137,6 +143,28 @@ class AttractionsDataSource {
       if (other != null) return other;
     }
     return null;
+  }
+
+  /// True when [docs] is exactly the build [manifest] names (not an older one
+  /// that happened to be complete in the cache).
+  static bool _isManifestBuild(
+      List<QueryDocumentSnapshot<Map<String, dynamic>>>? docs,
+      AttractionLiteManifest manifest) {
+    if (docs == null || docs.isEmpty) return false;
+    return AttractionsLiteShard.header(docs.first.data())?.version ==
+        manifest.version;
+  }
+
+  /// Parses a lite doc off the UI thread (a big country is ~2,800 rows of
+  /// splitting, int parsing and token decoding). Web has no isolates and
+  /// `compute` would run inline anyway, so it parses directly there.
+  static Future<AttractionsLiteShard?> _parseLite(
+      Map<String, dynamic>? data, String iso2) {
+    if (data == null) return Future.value(null);
+    if (kIsWeb) {
+      return Future.value(AttractionsLiteShard.parse(data, iso2: iso2));
+    }
+    return compute(_parseLiteEntry, (data, iso2));
   }
 
   /// The current lite manifest of [iso2], or null (use the full shards). Comes
@@ -333,12 +361,13 @@ class AttractionsDataSource {
     try {
       final snap = await _queryCacheFirst(
           _db.collection(liteCollection).where('iso2', isEqualTo: key),
-          complete: (s) => _liteBuild(s, manifest) != null);
+          complete: (s) => _liteBuild(s, manifest) != null,
+          current: (s) => _isManifestBuild(_liteBuild(s, manifest), manifest));
       final docs = _liteBuild(snap, manifest);
       if (docs == null) return null;
       final out = <Attraction>[];
       for (final d in docs) {
-        final shard = AttractionsLiteShard.parse(d.data(), iso2: key);
+        final shard = await _parseLite(d.data(), key);
         if (shard == null) return null;
         out.addAll(shard.items.where(attractionHasPicture));
       }
@@ -417,7 +446,7 @@ class AttractionsDataSource {
       for (var i = 0; i < shards; i++) {
         final snap = await _docCacheFirst(
             _db.collection(liteCollection).doc('${key}_$i'));
-        final shard = AttractionsLiteShard.parse(snap.data(), iso2: key);
+        final shard = await _parseLite(snap.data(), key);
         if (shard == null || shard.shard != i) return null;
         if (version == null) {
           version = shard.version;
@@ -614,3 +643,7 @@ class AttractionsDataSource {
     _search.clear();
   }
 }
+
+/// [compute] entry point (top level so it can run in another isolate).
+AttractionsLiteShard? _parseLiteEntry((Map<String, dynamic>, String) args) =>
+    AttractionsLiteShard.parse(args.$1, iso2: args.$2);
