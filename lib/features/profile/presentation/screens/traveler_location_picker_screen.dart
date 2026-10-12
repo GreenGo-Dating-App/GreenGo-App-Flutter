@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
@@ -8,6 +9,7 @@ import 'package:latlong2/latlong.dart';
 
 import '../../../../core/widgets/interactive_location_map.dart' show MapAttribution;
 import '../../../../core/services/place_search_service.dart';
+import '../../../../core/services/web_location_fallback.dart';
 import '../../../../core/widgets/map_basemap_layer.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
@@ -17,6 +19,30 @@ import '../../../../core/utils/country_names_l10n.dart';
 import '../../data/models/profile_model.dart' show normalizeCountryName;
 import '../../domain/entities/location.dart' as profile_entity;
 import '../../../../core/utils/user_error.dart';
+
+/// City / region / country for a point. The `geocoding` plugin has no web
+/// implementation (`placemarkFromCoordinates` always throws there), so on web
+/// the server resolves it (`reverseGeocodeCoarse`, via WebLocationFallback);
+/// it returns no region. Null when nothing could be resolved.
+Future<({String city, String region, String country})?> _reverseGeocode(
+    double latitude, double longitude) async {
+  if (kIsWeb) {
+    final loc = await WebLocationFallback.reverseGeocode(latitude, longitude);
+    if (loc == null) return null;
+    return (city: loc.city, region: '', country: loc.country);
+  }
+  final placemarks = await placemarkFromCoordinates(latitude, longitude);
+  if (placemarks.isEmpty) return null;
+  final place = placemarks.first;
+  final city = place.locality ??
+      place.subLocality ??
+      place.subAdministrativeArea ??
+      place.administrativeArea ??
+      '';
+  final country = normalizeCountryName(place.country ?? '');
+  if (city.isEmpty && country.isEmpty) return null;
+  return (city: city, region: place.administrativeArea ?? '', country: country);
+}
 
 /// Full-screen location picker for Traveler mode.
 /// Uses geocoding for forward/reverse address lookup, GPS for current location,
@@ -140,24 +166,19 @@ class _TravelerLocationPickerScreenState
 
       final position = await Geolocator.getCurrentPosition(
         desiredAccuracy: LocationAccuracy.high,
-      );
+      ).timeout(const Duration(seconds: 20));
 
-      final placemarks = await placemarkFromCoordinates(
+      final place = await _reverseGeocode(
         position.latitude,
         position.longitude,
       );
+      if (place == null) {
+        throw Exception('Could not resolve address from coordinates');
+      }
 
-      if (placemarks.isNotEmpty && mounted) {
-        final place = placemarks.first;
-        final city = place.locality ??
-            place.subLocality ??
-            place.subAdministrativeArea ??
-            place.administrativeArea ??
-            '';
-        final country = normalizeCountryName(place.country ?? '');
-        if (city.isEmpty && country.isEmpty) {
-          throw Exception('Could not resolve address from coordinates');
-        }
+      if (mounted) {
+        final city = place.city;
+        final country = place.country;
         final displayAddress = city.isNotEmpty ? '$city, $country' : country;
 
         setState(() {
@@ -517,22 +538,17 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
     });
 
     try {
-      final placemarks = await placemarkFromCoordinates(
+      final place = await _reverseGeocode(
         latLng.latitude,
         latLng.longitude,
       );
 
-      if (placemarks.isNotEmpty && mounted) {
-        final place = placemarks.first;
-        final city = place.locality ??
-            place.subLocality ??
-            place.subAdministrativeArea ??
-            place.administrativeArea ??
-            '';
-        final country = normalizeCountryName(place.country ?? '');
-        final region = place.administrativeArea ?? '';
+      if (mounted) {
+        final city = place?.city ?? '';
+        final country = place?.country ?? '';
+        final region = place?.region ?? '';
 
-        if (city.isEmpty && country.isEmpty) {
+        if (place == null) {
           setState(() {
             _city = '';
             _country = '';
