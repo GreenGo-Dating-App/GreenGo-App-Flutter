@@ -1,0 +1,1178 @@
+{
+ "CL": [
+  {
+   "id": "ct-CL-01",
+   "category": "greetings",
+   "text": {
+    "en": "It is common to greet with a single kiss on the right cheek between women and between a man and a woman. Men usually shake hands.",
+    "it": "Si usa salutare con un solo bacio sulla guancia destra tra donne e tra uomo e donna. Gli uomini di solito si stringono la mano.",
+    "es": "Es habitual saludar con un solo beso en la mejilla derecha entre mujeres y entre hombre y mujer. Los hombres suelen darse la mano.",
+    "pt": "É comum cumprimentar com um único beijo na face direita entre mulheres e entre homem e mulher. Os homens costumam apertar a mão.",
+    "pt_BR": "É comum cumprimentar com um único beijo na bochecha direita entre mulheres e entre homem e mulher. Os homens costumam apertar a mão.",
+    "fr": "Il est courant de se saluer par une seule bise sur la joue droite entre femmes et entre un homme et une femme. Les hommes se serrent généralement la main.",
+    "de": "Üblich ist ein einzelner Wangenkuss auf die rechte Wange zwischen Frauen sowie zwischen Mann und Frau. Männer geben sich meist die Hand."
+   }
+  },
+  {
+   "id": "ct-CL-02",
+   "category": "greetings",
+   "text": {
+    "en": "With new acquaintances and in business, a handshake and a friendly \"mucho gusto\" is the safe way to start.",
+    "it": "Con nuove conoscenze e in ambito di lavoro, una stretta di mano e un cordiale \"mucho gusto\" sono il modo sicuro per iniziare.",
+    "es": "Con personas nuevas y en el trabajo, un apretón de manos y un cordial \"mucho gusto\" es la forma segura de empezar.",
+    "pt": "Com pessoas novas e no trabalho, um aperto de mão e um simpático \"mucho gusto\" são a forma segura de começar.",
+    "pt_BR": "Com pessoas novas e no trabalho, um aperto de mão e um simpático \"mucho gusto\" são a forma segura de começar.",
+    "fr": "Avec de nouvelles connaissances et au travail, une poignée de main et un aimable \"mucho gusto\" sont la façon sûre de commencer.",
+    "de": "Bei neuen Bekanntschaften und im Beruf ist ein Händedruck mit einem freundlichen \"mucho gusto\" der sichere Einstieg."
+   }
+  },
+  {
+   "id": "ct-CL-03",
+   "category": "conversation",
+   "text": {
+    "en": "Chileans often enjoy chatting about food, landscapes, football and travel. Asking what a visitor thinks of Chile is a welcome opener.",
+    "it": "Ai cileni piace spesso parlare di cibo, paesaggi, calcio e viaggi. Chiedere a un visitatore cosa pensa del Cile è un'apertura gradita.",
+    "es": "A muchos chilenos les gusta conversar sobre comida, paisajes, fútbol y viajes. Preguntar a un visitante qué opina de Chile es un buen comienzo.",
+    "pt": "Muitos chilenos gostam de conversar sobre comida, paisagens, futebol e viagens. Perguntar a um visitante o que acha do Chile é uma boa abertura.",
+    "pt_BR": "Muitos chilenos gostam de conversar sobre comida, paisagens, futebol e viagens. Perguntar a um visitante o que acha do Chile é uma boa abertura.",
+    "fr": "Beaucoup de Chiliens aiment parler de cuisine, de paysages, de football et de voyages. Demander à un visiteur ce qu'il pense du Chili est une bonne entrée en matière.",
+    "de": "Viele Chilenen unterhalten sich gern über Essen, Landschaften, Fußball und Reisen. Die Frage, wie Besuchern Chile gefällt, ist ein willkommener Einstieg."
+   }
+  },
+  {
+   "id": "ct-CL-04",
+   "category": "conversation",
+   "text": {
+    "en": "Chile's recent political history is a sensitive subject for many people, so it is polite to let local friends bring it up first.",
+    "it": "La storia politica recente del Cile è un tema delicato per molti, quindi è educato lasciare che siano gli amici locali a toccarlo per primi.",
+    "es": "La historia política reciente de Chile es un tema delicado para muchas personas, así que es cortés dejar que sean los amigos locales quienes lo mencionen primero.",
+    "pt": "A história política recente do Chile é um assunto sensível para muitas pessoas, por isso é educado deixar que sejam os amigos locais a abordá-lo primeiro.",
+    "pt_BR": "A história política recente do Chile é um assunto sensível para muita gente, então é educado deixar que os amigos locais toquem no assunto primeiro.",
+    "fr": "L'histoire politique récente du Chili est un sujet sensible pour beaucoup de gens ; il est poli de laisser vos amis locaux l'aborder les premiers.",
+    "de": "Chiles jüngere politische Geschichte ist für viele ein sensibles Thema, deshalb ist es höflich, es zuerst von einheimischen Freunden ansprechen zu lassen."
+   }
+  },
+  {
+   "id": "ct-CL-05",
+   "category": "dining",
+   "text": {
+    "en": "Lunch is often the main meal of the day, usually eaten between 1 and 3 pm, and many restaurants offer a good-value set menu.",
+    "it": "Il pranzo è spesso il pasto principale della giornata, di solito tra le 13 e le 15, e molti ristoranti offrono un menù fisso conveniente.",
+    "es": "El almuerzo suele ser la comida principal del día, normalmente entre la 1 y las 3 de la tarde, y muchos restaurantes ofrecen un menú del día a buen precio.",
+    "pt": "O almoço costuma ser a refeição principal do dia, normalmente entre a 1 e as 3 da tarde, e muitos restaurantes oferecem um menu do dia a bom preço.",
+    "pt_BR": "O almoço costuma ser a refeição principal do dia, normalmente entre uma e três da tarde, e muitos restaurantes oferecem um prato do dia com bom preço.",
+    "fr": "Le déjeuner est souvent le repas principal de la journée, généralement entre 13 h et 15 h, et beaucoup de restaurants proposent un menu du jour économique.",
+    "de": "Das Mittagessen ist oft die Hauptmahlzeit des Tages, meist zwischen 13 und 15 Uhr, und viele Restaurants bieten ein günstiges Tagesmenü an."
+   }
+  },
+  {
+   "id": "ct-CL-06",
+   "category": "dining",
+   "text": {
+    "en": "Many Chileans take \"once\", an afternoon tea-style meal with bread, avocado, tea and sweets. At home it can replace dinner.",
+    "it": "Molti cileni fanno \"la once\", una merenda in stile tè con pane, avocado, tè e dolci. A casa può sostituire la cena.",
+    "es": "Muchos chilenos toman la \"once\", una merienda al estilo del té con pan, palta, té y dulces. En casa puede reemplazar la cena.",
+    "pt": "Muitos chilenos fazem a \"once\", um lanche ao estilo do chá com pão, abacate, chá e doces. Em casa pode substituir o jantar.",
+    "pt_BR": "Muitos chilenos fazem a \"once\", um lanche no estilo do chá com pão, abacate, chá e doces. Em casa pode substituir o jantar.",
+    "fr": "Beaucoup de Chiliens prennent la \"once\", un goûter façon thé avec du pain, de l'avocat, du thé et des douceurs. À la maison, il peut remplacer le dîner.",
+    "de": "Viele Chilenen nehmen die \"once\" ein, eine Art Teezeit mit Brot, Avocado, Tee und Süßem. Zu Hause ersetzt sie manchmal das Abendessen."
+   }
+  },
+  {
+   "id": "ct-CL-07",
+   "category": "tipping",
+   "text": {
+    "en": "In restaurants, a tip of about 10 percent (propina) is customary. Staff often ask whether you want to include it before you pay.",
+    "it": "Nei ristoranti è consuetudine lasciare una mancia di circa il 10 percento (propina). Spesso il personale chiede se vuoi includerla prima di pagare.",
+    "es": "En los restaurantes es costumbre dejar una propina de alrededor del 10 por ciento. El personal suele preguntar si quieres incluirla antes de pagar.",
+    "pt": "Nos restaurantes é costume deixar uma gorjeta de cerca de 10 por cento (propina). O pessoal costuma perguntar se queres incluí-la antes de pagar.",
+    "pt_BR": "Nos restaurantes é costume deixar uma gorjeta de cerca de 10 por cento (propina). Os atendentes costumam perguntar se você quer incluí-la antes de pagar.",
+    "fr": "Au restaurant, un pourboire d'environ 10 pour cent (propina) est d'usage. Le personnel demande souvent si vous voulez l'ajouter avant de payer.",
+    "de": "Im Restaurant ist ein Trinkgeld von etwa 10 Prozent (propina) üblich. Das Personal fragt vor dem Bezahlen oft, ob es auf die Rechnung soll."
+   }
+  },
+  {
+   "id": "ct-CL-08",
+   "category": "tipping",
+   "text": {
+    "en": "Taxi drivers do not expect a tip; rounding up the fare is fine. Guides and bag handlers appreciate a small cash tip.",
+    "it": "I tassisti non si aspettano la mancia: arrotondare la tariffa va bene. Guide e facchini apprezzano una piccola mancia in contanti.",
+    "es": "Los taxistas no esperan propina; redondear la tarifa está bien. Los guías y maleteros agradecen una pequeña propina en efectivo.",
+    "pt": "Os taxistas não esperam gorjeta; arredondar o valor está bem. Guias e bagageiros agradecem uma pequena gorjeta em dinheiro.",
+    "pt_BR": "Os taxistas não esperam gorjeta; arredondar o valor está ótimo. Guias e carregadores de bagagem agradecem uma pequena gorjeta em dinheiro.",
+    "fr": "Les chauffeurs de taxi n'attendent pas de pourboire ; arrondir la course suffit. Les guides et porteurs apprécient un petit pourboire en espèces.",
+    "de": "Taxifahrer erwarten kein Trinkgeld; Aufrunden reicht. Guides und Gepäckträger freuen sich über ein kleines Trinkgeld in bar."
+   }
+  },
+  {
+   "id": "ct-CL-09",
+   "category": "gifts",
+   "text": {
+    "en": "If you are invited to a home, it is common to bring something small, such as chocolates, pastries, flowers or fruit.",
+    "it": "Se sei invitato a casa di qualcuno, è comune portare qualcosa di piccolo, come cioccolatini, dolci, fiori o frutta.",
+    "es": "Si te invitan a una casa, es común llevar algo pequeño, como chocolates, pasteles, flores o fruta.",
+    "pt": "Se fores convidado para casa de alguém, é comum levar algo pequeno, como chocolates, bolos, flores ou fruta.",
+    "pt_BR": "Se você for convidado para a casa de alguém, é comum levar algo pequeno, como chocolates, doces, flores ou frutas.",
+    "fr": "Si vous êtes invité chez quelqu'un, il est courant d'apporter un petit présent : chocolats, pâtisseries, fleurs ou fruits.",
+    "de": "Wer nach Hause eingeladen wird, bringt üblicherweise eine Kleinigkeit mit, etwa Pralinen, Gebäck, Blumen oder Obst."
+   }
+  },
+  {
+   "id": "ct-CL-10",
+   "category": "dress",
+   "text": {
+    "en": "Chileans in cities like Santiago tend to dress neatly and casually-smart. Pack layers, since mornings and evenings can be cool even in summer.",
+    "it": "I cileni nelle città come Santiago tendono a vestirsi in modo curato e smart casual. Porta più strati: mattine e sere possono essere fresche anche d'estate.",
+    "es": "En ciudades como Santiago, la gente suele vestir de forma prolija y casual elegante. Lleva ropa por capas, ya que las mañanas y las noches pueden ser frescas incluso en verano.",
+    "pt": "Nas cidades como Santiago, as pessoas costumam vestir-se de forma cuidada e smart casual. Leva roupa por camadas, pois as manhãs e as noites podem ser frescas mesmo no verão.",
+    "pt_BR": "Nas cidades como Santiago, as pessoas costumam se vestir de forma cuidada e casual elegante. Leve roupas em camadas, pois manhãs e noites podem ser frescas mesmo no verão.",
+    "fr": "Dans des villes comme Santiago, on s'habille en général de façon soignée et décontractée chic. Prévoyez des couches : matins et soirs peuvent être frais, même en été.",
+    "de": "In Städten wie Santiago kleidet man sich meist gepflegt und leger-elegant. Packen Sie Schichten ein, denn Morgen und Abende können auch im Sommer kühl sein."
+   }
+  },
+  {
+   "id": "ct-CL-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Many churches welcome visitors. Speak quietly, avoid flash during services and cover your shoulders if you can.",
+    "it": "Molte chiese accolgono i visitatori. Parla a bassa voce, evita il flash durante le funzioni e copri le spalle se puoi.",
+    "es": "Muchas iglesias reciben visitantes. Habla en voz baja, evita el flash durante las misas y cúbrete los hombros si puedes.",
+    "pt": "Muitas igrejas recebem visitantes. Fala baixo, evita o flash durante as celebrações e cobre os ombros, se possível.",
+    "pt_BR": "Muitas igrejas recebem visitantes. Fale baixo, evite o flash durante as celebrações e cubra os ombros, se possível.",
+    "fr": "Beaucoup d'églises accueillent les visiteurs. Parlez à voix basse, évitez le flash pendant les offices et couvrez vos épaules si possible.",
+    "de": "Viele Kirchen heißen Besucher willkommen. Sprechen Sie leise, verzichten Sie bei Gottesdiensten auf Blitzlicht und bedecken Sie nach Möglichkeit die Schultern."
+   }
+  },
+  {
+   "id": "ct-CL-12",
+   "category": "gestures",
+   "text": {
+    "en": "Chileans often stand fairly close when talking and may touch an arm for emphasis. Stepping back abruptly can seem cold.",
+    "it": "I cileni spesso stanno abbastanza vicini quando parlano e possono toccare un braccio per enfasi. Fare un passo indietro all'improvviso può sembrare freddezza.",
+    "es": "Los chilenos suelen estar bastante cerca al conversar y pueden tocar el brazo para enfatizar. Retroceder bruscamente puede parecer frialdad.",
+    "pt": "Os chilenos costumam ficar bastante próximos ao conversar e podem tocar no braço para dar ênfase. Recuar de repente pode parecer frieza.",
+    "pt_BR": "Os chilenos costumam ficar bem próximos ao conversar e podem tocar no braço para dar ênfase. Recuar de repente pode parecer frieza.",
+    "fr": "Les Chiliens se tiennent souvent assez près en parlant et peuvent toucher le bras pour insister. Reculer brusquement peut sembler froid.",
+    "de": "Chilenen stehen beim Reden oft recht nah beieinander und berühren zur Betonung auch mal den Arm. Ein abruptes Zurückweichen kann kühl wirken."
+   }
+  },
+  {
+   "id": "ct-CL-13",
+   "category": "punctuality",
+   "text": {
+    "en": "Business meetings start roughly on time, but for parties and informal gatherings it is common to arrive 15 to 30 minutes after the stated hour.",
+    "it": "Le riunioni di lavoro iniziano più o meno puntuali, ma per feste e ritrovi informali è comune arrivare 15-30 minuti dopo l'orario indicato.",
+    "es": "Las reuniones de trabajo empiezan más o menos a la hora, pero en fiestas y reuniones informales es común llegar entre 15 y 30 minutos después de lo indicado.",
+    "pt": "As reuniões de trabalho começam mais ou menos a horas, mas em festas e encontros informais é comum chegar 15 a 30 minutos depois da hora marcada.",
+    "pt_BR": "As reuniões de trabalho começam mais ou menos na hora, mas em festas e encontros informais é comum chegar de 15 a 30 minutos depois do horário combinado.",
+    "fr": "Les réunions de travail commencent à peu près à l'heure, mais pour les fêtes et rencontres informelles, il est courant d'arriver 15 à 30 minutes après l'heure annoncée.",
+    "de": "Geschäftstermine beginnen ungefähr pünktlich, doch zu Partys und lockeren Treffen kommt man üblicherweise 15 bis 30 Minuten nach der genannten Zeit."
+   }
+  },
+  {
+   "id": "ct-CL-14",
+   "category": "public_behavior",
+   "text": {
+    "en": "On buses and the metro, it is considered polite to offer your seat to older people, pregnant women and people with young children.",
+    "it": "Su autobus e metro è considerato cortese cedere il posto agli anziani, alle donne incinte e a chi ha bambini piccoli.",
+    "es": "En buses y en el metro se considera cortés ceder el asiento a personas mayores, mujeres embarazadas y personas con niños pequeños.",
+    "pt": "Nos autocarros e no metro é considerado educado ceder o lugar a idosos, grávidas e pessoas com crianças pequenas.",
+    "pt_BR": "Em ônibus e no metrô é considerado educado ceder o lugar a idosos, gestantes e pessoas com crianças pequenas.",
+    "fr": "Dans les bus et le métro, il est poli de céder sa place aux personnes âgées, aux femmes enceintes et aux personnes avec de jeunes enfants.",
+    "de": "In Bussen und der Metro gilt es als höflich, älteren Menschen, Schwangeren und Personen mit kleinen Kindern den Sitzplatz anzubieten."
+   }
+  },
+  {
+   "id": "ct-CL-15",
+   "category": "transport",
+   "text": {
+    "en": "In Santiago, the metro and buses use the rechargeable Bip! card. Buy one at a metro station and top it up there.",
+    "it": "A Santiago metro e autobus usano la carta ricaricabile Bip!. Acquistala in una stazione della metro e ricaricala lì.",
+    "es": "En Santiago, el metro y los buses usan la tarjeta recargable Bip!. Cómprala en una estación de metro y recárgala ahí.",
+    "pt": "Em Santiago, o metro e os autocarros usam o cartão recarregável Bip!. Compra um numa estação de metro e carrega-o lá.",
+    "pt_BR": "Em Santiago, o metrô e os ônibus usam o cartão recarregável Bip!. Compre um em uma estação de metrô e recarregue lá mesmo.",
+    "fr": "À Santiago, le métro et les bus utilisent la carte rechargeable Bip!. Achetez-la dans une station de métro et rechargez-la sur place.",
+    "de": "In Santiago nutzen Metro und Busse die aufladbare Bip!-Karte. Man kauft sie an einer Metrostation und lädt sie dort auf."
+   }
+  },
+  {
+   "id": "ct-CL-16",
+   "category": "transport",
+   "text": {
+    "en": "In many Chilean cities, colectivos are shared taxis that run fixed routes and charge a set fare per person, usually paid in cash.",
+    "it": "In molte città cilene i colectivos sono taxi condivisi che seguono percorsi fissi e fanno pagare una tariffa fissa a persona, di solito in contanti.",
+    "es": "En muchas ciudades chilenas, los colectivos son taxis compartidos que recorren rutas fijas y cobran una tarifa por persona, normalmente en efectivo.",
+    "pt": "Em muitas cidades chilenas, os colectivos são táxis partilhados que seguem rotas fixas e cobram uma tarifa por pessoa, normalmente em dinheiro.",
+    "pt_BR": "Em muitas cidades chilenas, os colectivos são táxis compartilhados que seguem rotas fixas e cobram uma tarifa por pessoa, normalmente em dinheiro.",
+    "fr": "Dans de nombreuses villes chiliennes, les colectivos sont des taxis partagés qui suivent des itinéraires fixes et facturent un tarif par personne, en général en espèces.",
+    "de": "In vielen chilenischen Städten sind Colectivos Sammeltaxis auf festen Strecken mit einem festen Preis pro Person, meist bar zu zahlen."
+   }
+  },
+  {
+   "id": "ct-CL-17",
+   "category": "language",
+   "text": {
+    "en": "Chilean Spanish is spoken fast and often drops final sounds. Asking \"¿Puedes hablar más despacio?\" is perfectly fine and appreciated.",
+    "it": "Lo spagnolo cileno è parlato in fretta e spesso perde i suoni finali. Chiedere \"¿Puedes hablar más despacio?\" va benissimo ed è apprezzato.",
+    "es": "El español chileno se habla rápido y suele omitir sonidos finales. Pedir \"¿Puedes hablar más despacio?\" está perfectamente bien y se agradece.",
+    "pt": "O espanhol chileno fala-se depressa e costuma omitir sons finais. Pedir \"¿Puedes hablar más despacio?\" é perfeitamente aceitável e é apreciado.",
+    "pt_BR": "O espanhol chileno é falado rápido e costuma omitir sons finais. Pedir \"¿Puedes hablar más despacio?\" é totalmente aceitável e apreciado.",
+    "fr": "L'espagnol chilien se parle vite et omet souvent les sons finaux. Demander \"¿Puedes hablar más despacio?\" est tout à fait normal et apprécié.",
+    "de": "Chilenisches Spanisch wird schnell gesprochen und verschluckt oft Endlaute. Die Bitte \"¿Puedes hablar más despacio?\" ist völlig in Ordnung und kommt gut an."
+   }
+  },
+  {
+   "id": "ct-CL-18",
+   "category": "language",
+   "text": {
+    "en": "Chileans love their own slang, like \"cachai?\" (you get it?) and \"po\" as a filler. Trying a few words usually earns smiles.",
+    "it": "I cileni amano il proprio slang, come \"cachai?\" (capisci?) e \"po\" come intercalare. Provare qualche parola di solito fa sorridere.",
+    "es": "A los chilenos les encanta su propia jerga, como \"¿cachai?\" (¿entiendes?) y \"po\" como muletilla. Intentar algunas palabras suele arrancar sonrisas.",
+    "pt": "Os chilenos adoram o seu próprio calão, como \"cachai?\" (percebes?) e \"po\" como muleta de fala. Tentar algumas palavras costuma arrancar sorrisos.",
+    "pt_BR": "Os chilenos adoram suas próprias gírias, como \"cachai?\" (entende?) e \"po\" como expressão de apoio. Tentar algumas palavras costuma render sorrisos.",
+    "fr": "Les Chiliens aiment leur argot, comme \"cachai ?\" (tu vois ?) et \"po\" en ponctuation. Essayer quelques mots fait généralement sourire.",
+    "de": "Chilenen lieben ihren eigenen Slang, etwa \"cachai?\" (verstehst du?) und \"po\" als Füllwort. Ein paar Wörter auszuprobieren bringt meist Lächeln."
+   }
+  },
+  {
+   "id": "ct-CL-19",
+   "category": "festivals",
+   "text": {
+    "en": "Fiestas Patrias around 18 September are Chile's national holidays, with empanadas, cueca dancing, asados and open-air fondas.",
+    "it": "Le Fiestas Patrias, intorno al 18 settembre, sono le feste nazionali del Cile, con empanadas, ballo della cueca, asados e fondas all'aperto.",
+    "es": "Las Fiestas Patrias, alrededor del 18 de septiembre, son las fiestas nacionales de Chile, con empanadas, cueca, asados y fondas al aire libre.",
+    "pt": "As Fiestas Patrias, por volta de 18 de setembro, são os feriados nacionais do Chile, com empanadas, dança da cueca, assados e fondas ao ar livre.",
+    "pt_BR": "As Fiestas Patrias, por volta de 18 de setembro, são os feriados nacionais do Chile, com empanadas, dança cueca, assados e fondas ao ar livre.",
+    "fr": "Les Fiestas Patrias, autour du 18 septembre, sont les fêtes nationales du Chili, avec empanadas, cueca, asados et fondas en plein air.",
+    "de": "Die Fiestas Patrias um den 18. September sind Chiles Nationalfeiertage, mit Empanadas, Cueca-Tanz, Asados und Fondas unter freiem Himmel."
+   }
+  },
+  {
+   "id": "ct-CL-20",
+   "category": "festivals",
+   "text": {
+    "en": "New Year's Eve in Valparaíso is famous for its fireworks over the bay, and people book viewing spots and lodging well in advance.",
+    "it": "Il Capodanno a Valparaíso è famoso per i fuochi d'artificio sulla baia; posti panoramici e alloggi si prenotano con largo anticipo.",
+    "es": "El Año Nuevo en Valparaíso es famoso por sus fuegos artificiales sobre la bahía, y los lugares para verlos y el alojamiento se reservan con mucha antelación.",
+    "pt": "A passagem de ano em Valparaíso é famosa pelos fogos de artifício sobre a baía, e os locais de observação e o alojamento reservam-se com bastante antecedência.",
+    "pt_BR": "O Réveillon em Valparaíso é famoso pelos fogos de artifício sobre a baía, e os pontos de observação e a hospedagem são reservados com bastante antecedência.",
+    "fr": "Le Nouvel An à Valparaíso est célèbre pour son feu d'artifice au-dessus de la baie ; places d'observation et hébergements se réservent longtemps à l'avance.",
+    "de": "Silvester in Valparaíso ist berühmt für das Feuerwerk über der Bucht; Aussichtsplätze und Unterkünfte werden lange im Voraus gebucht."
+   }
+  },
+  {
+   "id": "ct-CL-21",
+   "category": "family",
+   "text": {
+    "en": "Family is central, and Sunday lunch with relatives is a cherished tradition. A guest invited to one is usually welcomed warmly.",
+    "it": "La famiglia è centrale e il pranzo della domenica con i parenti è una tradizione amata. L'ospite invitato viene di solito accolto con calore.",
+    "es": "La familia es central y el almuerzo dominical con parientes es una tradición muy querida. A un invitado se le suele recibir con mucha calidez.",
+    "pt": "A família é central e o almoço de domingo com os familiares é uma tradição muito querida. Um convidado costuma ser recebido com muito carinho.",
+    "pt_BR": "A família é central e o almoço de domingo com os parentes é uma tradição muito querida. Um convidado costuma ser recebido com muito carinho.",
+    "fr": "La famille est centrale et le déjeuner du dimanche avec les proches est une tradition chère. Un invité y est généralement accueilli chaleureusement.",
+    "de": "Familie steht im Mittelpunkt, und das Sonntagsmittagessen mit Verwandten ist eine geschätzte Tradition. Gäste werden dabei meist herzlich aufgenommen."
+   }
+  },
+  {
+   "id": "ct-CL-22",
+   "category": "money",
+   "text": {
+    "en": "Prices are in Chilean pesos (CLP) with no decimals. Cards are widely accepted in cities, but keep some cash for small shops and markets.",
+    "it": "I prezzi sono in pesos cileni (CLP) senza decimali. Le carte sono accettate in città, ma tieni un po' di contanti per negozietti e mercati.",
+    "es": "Los precios están en pesos chilenos (CLP) sin decimales. Las tarjetas se aceptan en las ciudades, pero conviene llevar algo de efectivo para tiendas pequeñas y ferias.",
+    "pt": "Os preços são em pesos chilenos (CLP) sem casas decimais. Os cartões são aceites nas cidades, mas leva algum dinheiro para lojas pequenas e mercados.",
+    "pt_BR": "Os preços são em pesos chilenos (CLP) sem casas decimais. Os cartões são aceitos nas cidades, mas leve algum dinheiro para lojinhas e feiras.",
+    "fr": "Les prix sont en pesos chiliens (CLP), sans décimales. Les cartes sont acceptées en ville, mais gardez un peu d'espèces pour les petites boutiques et marchés.",
+    "de": "Preise werden in chilenischen Pesos (CLP) ohne Dezimalstellen angegeben. In Städten werden Karten akzeptiert, für kleine Läden und Märkte lohnt sich etwas Bargeld."
+   }
+  },
+  {
+   "id": "ct-CL-23",
+   "category": "photography",
+   "text": {
+    "en": "Ask permission before photographing people, especially in local markets and Indigenous communities, and respect a polite \"no\".",
+    "it": "Chiedi il permesso prima di fotografare le persone, soprattutto nei mercati locali e nelle comunità indigene, e rispetta un educato \"no\".",
+    "es": "Pide permiso antes de fotografiar a las personas, sobre todo en ferias locales y comunidades indígenas, y respeta un \"no\" amable.",
+    "pt": "Pede licença antes de fotografar pessoas, sobretudo em mercados locais e comunidades indígenas, e respeita um \"não\" educado.",
+    "pt_BR": "Peça permissão antes de fotografar pessoas, principalmente em feiras locais e comunidades indígenas, e respeite um \"não\" educado.",
+    "fr": "Demandez la permission avant de photographier des personnes, surtout sur les marchés locaux et dans les communautés autochtones, et respectez un \"non\" poli.",
+    "de": "Fragen Sie vor Fotos von Menschen um Erlaubnis, besonders auf lokalen Märkten und in indigenen Gemeinschaften, und respektieren Sie ein höfliches Nein."
+   }
+  },
+  {
+   "id": "ct-CL-24",
+   "category": "nightlife",
+   "text": {
+    "en": "Going out starts late: bars fill up after 10 pm and clubs get lively after midnight. A night out is often called a \"carrete\".",
+    "it": "Si esce tardi: i bar si riempiono dopo le 22 e le discoteche si animano dopo mezzanotte. Una serata fuori si chiama spesso \"carrete\".",
+    "es": "Salir de noche empieza tarde: los bares se llenan después de las 10 y las discotecas se animan pasada la medianoche. Una salida suele llamarse \"carrete\".",
+    "pt": "Sair à noite começa tarde: os bares enchem depois das 22h e as discotecas animam-se depois da meia-noite. Uma saída chama-se muitas vezes \"carrete\".",
+    "pt_BR": "Sair à noite começa tarde: os bares enchem depois das 22h e as baladas esquentam depois da meia-noite. Uma saída costuma ser chamada de \"carrete\".",
+    "fr": "Les sorties commencent tard : les bars se remplissent après 22 h et les clubs s'animent après minuit. Une soirée s'appelle souvent un \"carrete\".",
+    "de": "Das Ausgehen beginnt spät: Bars füllen sich nach 22 Uhr, Clubs werden nach Mitternacht lebendig. Ein Abend unterwegs heißt oft \"carrete\"."
+   }
+  },
+  {
+   "id": "ct-CL-25",
+   "category": "nature",
+   "text": {
+    "en": "In national parks such as Torres del Paine, weather changes quickly. Stay on marked trails, carry out your trash and only make fires where allowed.",
+    "it": "Nei parchi nazionali come Torres del Paine il tempo cambia in fretta. Resta sui sentieri segnalati, porta via i rifiuti e accendi fuochi solo dove consentito.",
+    "es": "En parques nacionales como Torres del Paine el clima cambia rápido. Mantente en los senderos marcados, llévate la basura y haz fuego solo donde esté permitido.",
+    "pt": "Em parques nacionais como Torres del Paine o tempo muda depressa. Fica nos trilhos marcados, leva o lixo contigo e só faz fogo onde for permitido.",
+    "pt_BR": "Em parques nacionais como Torres del Paine o tempo muda rápido. Fique nas trilhas marcadas, leve seu lixo embora e só faça fogo onde for permitido.",
+    "fr": "Dans les parcs nationaux comme Torres del Paine, le temps change vite. Restez sur les sentiers balisés, remportez vos déchets et ne faites du feu que là où c'est autorisé.",
+    "de": "In Nationalparks wie Torres del Paine wechselt das Wetter schnell. Bleiben Sie auf markierten Wegen, nehmen Sie Müll mit und machen Sie nur dort Feuer, wo es erlaubt ist."
+   }
+  },
+  {
+   "id": "ct-CL-26",
+   "category": "safety",
+   "text": {
+    "en": "Chile is in an earthquake zone. On the coast, learn the tsunami evacuation signs and follow local instructions if a strong quake occurs.",
+    "it": "Il Cile si trova in una zona sismica. Sulla costa impara a riconoscere i cartelli di evacuazione da tsunami e segui le indicazioni locali in caso di forte terremoto.",
+    "es": "Chile está en una zona sísmica. En la costa, aprende las señales de evacuación por tsunami y sigue las instrucciones locales si ocurre un sismo fuerte.",
+    "pt": "O Chile fica numa zona sísmica. Na costa, aprende os sinais de evacuação de tsunami e segue as instruções locais se houver um sismo forte.",
+    "pt_BR": "O Chile fica em uma zona sísmica. No litoral, aprenda as placas de evacuação de tsunami e siga as instruções locais se ocorrer um terremoto forte.",
+    "fr": "Le Chili est en zone sismique. Sur la côte, repérez les panneaux d'évacuation en cas de tsunami et suivez les consignes locales en cas de fort séisme.",
+    "de": "Chile liegt in einer Erdbebenzone. An der Küste sollte man die Tsunami-Evakuierungsschilder kennen und bei einem starken Beben den örtlichen Anweisungen folgen."
+   }
+  },
+  {
+   "id": "ct-CL-27",
+   "category": "local_pride",
+   "text": {
+    "en": "Chileans are proud of their poets: Gabriela Mistral and Pablo Neruda both won the Nobel Prize in Literature, in 1945 and 1971.",
+    "it": "I cileni sono orgogliosi dei loro poeti: Gabriela Mistral e Pablo Neruda hanno vinto entrambi il Nobel per la letteratura, nel 1945 e nel 1971.",
+    "es": "Los chilenos se enorgullecen de sus poetas: Gabriela Mistral y Pablo Neruda ganaron el Premio Nobel de Literatura, en 1945 y 1971.",
+    "pt": "Os chilenos têm orgulho dos seus poetas: Gabriela Mistral e Pablo Neruda ganharam o Prémio Nobel da Literatura, em 1945 e 1971.",
+    "pt_BR": "Os chilenos têm orgulho de seus poetas: Gabriela Mistral e Pablo Neruda ganharam o Prêmio Nobel de Literatura, em 1945 e 1971.",
+    "fr": "Les Chiliens sont fiers de leurs poètes : Gabriela Mistral et Pablo Neruda ont tous deux reçu le prix Nobel de littérature, en 1945 et 1971.",
+    "de": "Chilenen sind stolz auf ihre Dichter: Gabriela Mistral und Pablo Neruda erhielten beide den Literaturnobelpreis, 1945 und 1971."
+   }
+  },
+  {
+   "id": "ct-CL-28",
+   "category": "local_pride",
+   "text": {
+    "en": "Chile is a very long, narrow country, over 4,000 km from north to south, with desert, vineyards, lakes and glaciers. Locals love sharing their favourite region.",
+    "it": "Il Cile è un paese lunghissimo e stretto, oltre 4.000 km da nord a sud, con deserto, vigneti, laghi e ghiacciai. La gente del posto ama raccontare la propria regione preferita.",
+    "es": "Chile es un país muy largo y angosto, de más de 4.000 km de norte a sur, con desierto, viñedos, lagos y glaciares. A los locales les encanta compartir su región favorita.",
+    "pt": "O Chile é um país muito comprido e estreito, com mais de 4000 km de norte a sul, com deserto, vinhas, lagos e glaciares. Os locais adoram partilhar a sua região favorita.",
+    "pt_BR": "O Chile é um país muito comprido e estreito, com mais de 4.000 km de norte a sul, com deserto, vinhedos, lagos e geleiras. Os locais adoram compartilhar sua região favorita.",
+    "fr": "Le Chili est un pays très long et étroit, de plus de 4 000 km du nord au sud, avec désert, vignobles, lacs et glaciers. Les habitants adorent parler de leur région préférée.",
+    "de": "Chile ist ein sehr langes, schmales Land, über 4.000 km von Nord nach Süd, mit Wüste, Weinbergen, Seen und Gletschern. Einheimische erzählen gern von ihrer Lieblingsregion."
+   }
+  },
+  {
+   "id": "ct-CL-29",
+   "category": "safety",
+   "text": {
+    "en": "Pickpocketing can happen in crowded tourist areas such as central Santiago and Valparaíso. Keep your bag zipped and in front of you.",
+    "it": "Nelle zone turistiche affollate, come il centro di Santiago e Valparaíso, possono esserci borseggiatori. Tieni la borsa chiusa e davanti a te.",
+    "es": "En zonas turísticas concurridas, como el centro de Santiago y Valparaíso, puede haber carteristas. Lleva el bolso cerrado y por delante.",
+    "pt": "Nas zonas turísticas movimentadas, como o centro de Santiago e Valparaíso, pode haver carteiristas. Leva a mala fechada e à frente do corpo.",
+    "pt_BR": "Em áreas turísticas movimentadas, como o centro de Santiago e Valparaíso, pode haver batedores de carteira. Mantenha a bolsa fechada e na frente do corpo.",
+    "fr": "Des pickpockets peuvent sévir dans les zones touristiques bondées comme le centre de Santiago et Valparaíso. Gardez votre sac fermé et devant vous.",
+    "de": "In belebten Touristengegenden wie dem Zentrum von Santiago und Valparaíso kann es Taschendiebe geben. Tragen Sie die Tasche geschlossen vor dem Körper."
+   }
+  },
+  {
+   "id": "ct-CL-30",
+   "category": "nature",
+   "text": {
+    "en": "San Pedro de Atacama lies at about 2,400 m in one of the driest deserts in the world. Drink plenty of water, use sun protection and take it easy on day one.",
+    "it": "San Pedro de Atacama si trova a circa 2.400 m in uno dei deserti più aridi del mondo. Bevi molta acqua, usa la protezione solare e vai piano il primo giorno.",
+    "es": "San Pedro de Atacama está a unos 2.400 m en uno de los desiertos más secos del mundo. Bebe mucha agua, usa protección solar y ve con calma el primer día.",
+    "pt": "San Pedro de Atacama fica a cerca de 2400 m num dos desertos mais secos do mundo. Bebe muita água, usa proteção solar e vai com calma no primeiro dia.",
+    "pt_BR": "San Pedro de Atacama fica a cerca de 2.400 m em um dos desertos mais secos do mundo. Beba bastante água, use proteção solar e vá com calma no primeiro dia.",
+    "fr": "San Pedro de Atacama se situe à environ 2 400 m dans l'un des déserts les plus secs du monde. Buvez beaucoup d'eau, protégez-vous du soleil et allez-y doucement le premier jour.",
+    "de": "San Pedro de Atacama liegt auf etwa 2.400 m in einer der trockensten Wüsten der Welt. Trinken Sie viel, nutzen Sie Sonnenschutz und gehen Sie den ersten Tag ruhig an."
+   }
+  }
+ ],
+ "CN": [
+  {
+   "id": "ct-CN-01",
+   "category": "greetings",
+   "text": {
+    "en": "A light handshake and a slight nod are the usual way to greet. Hugging or kissing on the cheek is uncommon, especially with new acquaintances.",
+    "it": "Una stretta di mano leggera e un lieve cenno del capo sono il saluto abituale. Abbracci e baci sulla guancia sono rari, soprattutto con nuove conoscenze.",
+    "es": "Un apretón de manos suave y un leve asentimiento son el saludo habitual. Los abrazos o besos en la mejilla son poco comunes, sobre todo con gente nueva.",
+    "pt": "Um aperto de mão suave e um ligeiro aceno de cabeça são o cumprimento habitual. Abraços ou beijos na face são pouco comuns, sobretudo com pessoas novas.",
+    "pt_BR": "Um aperto de mão leve e um pequeno aceno de cabeça são o cumprimento habitual. Abraços ou beijos na bochecha são pouco comuns, principalmente com pessoas novas.",
+    "fr": "Une poignée de main légère et un petit hochement de tête sont la façon habituelle de saluer. Les accolades ou bises sont peu courantes, surtout avec de nouvelles connaissances.",
+    "de": "Üblich sind ein leichter Händedruck und ein kurzes Nicken. Umarmungen oder Wangenküsse sind selten, besonders bei neuen Bekanntschaften."
+   }
+  },
+  {
+   "id": "ct-CN-02",
+   "category": "greetings",
+   "text": {
+    "en": "Chinese names put the family name first. Address people by surname plus title, like Manager Wang, until they invite you to use their given name.",
+    "it": "I nomi cinesi mettono il cognome per primo. Rivolgiti alle persone con cognome più titolo, come Direttore Wang, finché non ti invitano a usare il nome.",
+    "es": "Los nombres chinos ponen primero el apellido. Dirígete a las personas con apellido y título, como gerente Wang, hasta que te inviten a usar su nombre de pila.",
+    "pt": "Os nomes chineses colocam o apelido primeiro. Trata as pessoas pelo apelido e título, como gerente Wang, até te convidarem a usar o nome próprio.",
+    "pt_BR": "Os nomes chineses colocam o sobrenome primeiro. Trate as pessoas pelo sobrenome e título, como gerente Wang, até convidarem você a usar o primeiro nome.",
+    "fr": "Les noms chinois placent le nom de famille en premier. Appelez les gens par leur nom et leur titre, comme directeur Wang, jusqu'à ce qu'ils vous invitent à utiliser leur prénom.",
+    "de": "Chinesische Namen beginnen mit dem Familiennamen. Sprechen Sie Menschen mit Familienname und Titel an, etwa Manager Wang, bis sie Ihnen den Vornamen anbieten."
+   }
+  },
+  {
+   "id": "ct-CN-03",
+   "category": "conversation",
+   "text": {
+    "en": "A traditional friendly greeting is \"Have you eaten yet?\" (chī le ma). It is a caring way to say hello, not a real invitation.",
+    "it": "Un saluto amichevole tradizionale è \"Hai già mangiato?\" (chī le ma). È un modo affettuoso di dire ciao, non un vero invito.",
+    "es": "Un saludo amistoso tradicional es \"¿Ya comiste?\" (chī le ma). Es una forma cariñosa de decir hola, no una invitación real.",
+    "pt": "Um cumprimento amigável tradicional é \"Já comeste?\" (chī le ma). É uma forma carinhosa de dizer olá, não um convite verdadeiro.",
+    "pt_BR": "Um cumprimento amigável tradicional é \"Já comeu?\" (chī le ma). É um jeito carinhoso de dizer oi, não um convite de verdade.",
+    "fr": "Une salutation amicale traditionnelle est \"As-tu déjà mangé ?\" (chī le ma). C'est une façon attentionnée de dire bonjour, pas une vraie invitation.",
+    "de": "Ein traditioneller freundlicher Gruß lautet \"Hast du schon gegessen?\" (chī le ma). Es ist eine fürsorgliche Art, hallo zu sagen, keine echte Einladung."
+   }
+  },
+  {
+   "id": "ct-CN-04",
+   "category": "conversation",
+   "text": {
+    "en": "Many people answer a compliment with modesty, like \"not at all, I'm still learning\". Responding humbly is seen as polite.",
+    "it": "Molte persone rispondono a un complimento con modestia, ad esempio \"macché, sto ancora imparando\". Rispondere con umiltà è considerato educato.",
+    "es": "Muchas personas responden a un cumplido con modestia, como \"para nada, aún estoy aprendiendo\". Responder con humildad se considera educado.",
+    "pt": "Muitas pessoas respondem a um elogio com modéstia, como \"que nada, ainda estou a aprender\". Responder com humildade é visto como educado.",
+    "pt_BR": "Muitas pessoas respondem a um elogio com modéstia, como \"imagina, ainda estou aprendendo\". Responder com humildade é visto como educado.",
+    "fr": "Beaucoup de gens répondent à un compliment avec modestie, par exemple \"pas du tout, j'apprends encore\". Répondre avec humilité est jugé poli.",
+    "de": "Viele antworten auf ein Kompliment bescheiden, etwa \"gar nicht, ich lerne noch\". Bescheidenheit gilt als höflich."
+   }
+  },
+  {
+   "id": "ct-CN-05",
+   "category": "dining",
+   "text": {
+    "en": "Never stick chopsticks upright in a bowl of rice, because it resembles incense offerings for the dead. Rest them on the table or a holder.",
+    "it": "Non conficcare mai le bacchette in verticale nella ciotola di riso, perché ricorda gli incensi offerti ai defunti. Appoggiale sul tavolo o su un supporto.",
+    "es": "Nunca claves los palillos en vertical en un cuenco de arroz, porque recuerdan al incienso que se ofrece a los difuntos. Déjalos sobre la mesa o en un soporte.",
+    "pt": "Nunca espetes os pauzinhos na vertical numa tigela de arroz, pois lembram o incenso oferecido aos mortos. Pousa-os na mesa ou num suporte.",
+    "pt_BR": "Nunca finque os palitinhos na vertical em uma tigela de arroz, pois lembram o incenso oferecido aos mortos. Apoie-os na mesa ou em um suporte.",
+    "fr": "Ne plantez jamais vos baguettes à la verticale dans un bol de riz, car cela rappelle l'encens offert aux défunts. Posez-les sur la table ou un repose-baguettes.",
+    "de": "Stecken Sie Essstäbchen nie senkrecht in eine Reisschale, denn das erinnert an Räucherstäbchen für Verstorbene. Legen Sie sie auf den Tisch oder eine Ablage."
+   }
+  },
+  {
+   "id": "ct-CN-06",
+   "category": "dining",
+   "text": {
+    "en": "Dishes are shared from the middle of the table. Use the serving chopsticks if provided, and expect hosts to keep adding food to your plate.",
+    "it": "I piatti si condividono dal centro del tavolo. Usa le bacchette di servizio se ci sono e aspettati che i padroni di casa continuino ad aggiungere cibo al tuo piatto.",
+    "es": "Los platos se comparten desde el centro de la mesa. Usa los palillos de servir si los hay y espera que los anfitriones sigan añadiendo comida a tu plato.",
+    "pt": "Os pratos partilham-se a partir do centro da mesa. Usa os pauzinhos de servir, se existirem, e espera que os anfitriões continuem a pôr comida no teu prato.",
+    "pt_BR": "Os pratos são compartilhados a partir do centro da mesa. Use os palitinhos de servir, se houver, e espere que os anfitriões continuem colocando comida no seu prato.",
+    "fr": "Les plats se partagent depuis le centre de la table. Utilisez les baguettes de service si elles sont fournies, et attendez-vous à ce que l'hôte remplisse sans cesse votre assiette.",
+    "de": "Gerichte werden aus der Tischmitte geteilt. Nutzen Sie Servierstäbchen, falls vorhanden, und rechnen Sie damit, dass Gastgeber Ihnen immer wieder nachlegen."
+   }
+  },
+  {
+   "id": "ct-CN-07",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping is not customary in mainland China, in restaurants, taxis or hotels. A friendly thank you is enough.",
+    "it": "La mancia non è consuetudine in Cina continentale, né nei ristoranti, né sui taxi, né negli hotel. Basta un cordiale grazie.",
+    "es": "Dar propina no es costumbre en China continental, ni en restaurantes, taxis u hoteles. Basta con un agradecimiento cordial.",
+    "pt": "Dar gorjeta não é costume na China continental, nem em restaurantes, táxis ou hotéis. Basta um agradecimento simpático.",
+    "pt_BR": "Dar gorjeta não é costume na China continental, nem em restaurantes, táxis ou hotéis. Um agradecimento simpático basta.",
+    "fr": "Le pourboire n'est pas d'usage en Chine continentale, ni au restaurant, ni en taxi, ni à l'hôtel. Un merci cordial suffit.",
+    "de": "Trinkgeld ist auf dem chinesischen Festland nicht üblich, weder im Restaurant noch im Taxi oder Hotel. Ein freundliches Dankeschön genügt."
+   }
+  },
+  {
+   "id": "ct-CN-08",
+   "category": "tipping",
+   "text": {
+    "en": "Some upscale international hotels and restaurants add a service charge to the bill. If one is included, you do not need to add more.",
+    "it": "Alcuni hotel e ristoranti internazionali di fascia alta aggiungono un costo di servizio al conto. Se è incluso, non serve aggiungere altro.",
+    "es": "Algunos hoteles y restaurantes internacionales de categoría alta añaden un cargo por servicio a la cuenta. Si ya está incluido, no hace falta dar más.",
+    "pt": "Alguns hotéis e restaurantes internacionais de luxo acrescentam uma taxa de serviço à conta. Se estiver incluída, não é preciso dar mais nada.",
+    "pt_BR": "Alguns hotéis e restaurantes internacionais de luxo acrescentam uma taxa de serviço à conta. Se já estiver incluída, não precisa dar mais nada.",
+    "fr": "Certains hôtels et restaurants internationaux haut de gamme ajoutent des frais de service à l'addition. S'ils sont inclus, inutile d'en donner davantage.",
+    "de": "Einige internationale Luxushotels und -restaurants setzen eine Servicegebühr auf die Rechnung. Ist sie enthalten, müssen Sie nichts weiter geben."
+   }
+  },
+  {
+   "id": "ct-CN-09",
+   "category": "gifts",
+   "text": {
+    "en": "Offer and receive gifts with both hands, and expect a polite refusal once or twice first. Avoid giving clocks, since the word sounds like \"funeral\".",
+    "it": "Offri e ricevi i regali con entrambe le mani e aspettati un cortese rifiuto una o due volte all'inizio. Evita di regalare orologi da tavolo, perché la parola suona come \"funerale\".",
+    "es": "Ofrece y recibe regalos con ambas manos y espera un rechazo cortés una o dos veces al principio. Evita regalar relojes de mesa, porque la palabra suena como \"funeral\".",
+    "pt": "Oferece e recebe presentes com as duas mãos e espera uma recusa educada uma ou duas vezes no início. Evita oferecer relógios de mesa, pois a palavra soa como \"funeral\".",
+    "pt_BR": "Ofereça e receba presentes com as duas mãos e espere uma recusa educada uma ou duas vezes no início. Evite dar relógios de mesa, pois a palavra soa como \"funeral\".",
+    "fr": "Offrez et recevez les cadeaux à deux mains, et attendez-vous à un refus poli une ou deux fois d'abord. Évitez d'offrir une horloge, car le mot sonne comme \"funérailles\".",
+    "de": "Geschenke überreicht und empfängt man mit beiden Händen; ein höfliches Ablehnen ein- oder zweimal ist normal. Verschenken Sie keine Uhren, das Wort klingt wie \"Beerdigung\"."
+   }
+  },
+  {
+   "id": "ct-CN-10",
+   "category": "dress",
+   "text": {
+    "en": "Dress is mostly casual in daily life, but neat and modest clothes are best for business meetings, temples and family visits.",
+    "it": "Nella vita quotidiana l'abbigliamento è perlopiù casual, ma per riunioni di lavoro, templi e visite alle famiglie sono meglio abiti curati e sobri.",
+    "es": "En la vida diaria la ropa es mayormente informal, pero para reuniones de trabajo, templos y visitas familiares lo mejor es vestir pulcro y recatado.",
+    "pt": "No dia a dia a roupa é sobretudo informal, mas para reuniões de trabalho, templos e visitas a famílias é melhor vestir de forma cuidada e discreta.",
+    "pt_BR": "No dia a dia a roupa é majoritariamente casual, mas para reuniões de trabalho, templos e visitas a famílias o melhor é se vestir de forma cuidada e discreta.",
+    "fr": "Au quotidien, la tenue est surtout décontractée, mais pour les rendez-vous professionnels, les temples et les visites en famille, mieux vaut une tenue soignée et sobre.",
+    "de": "Im Alltag ist die Kleidung meist lässig, doch für Geschäftstermine, Tempel und Familienbesuche sind gepflegte, zurückhaltende Kleidung am besten."
+   }
+  },
+  {
+   "id": "ct-CN-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "In temples, speak softly, dress modestly and follow local signs. Ask before photographing worshippers or statues, as rules differ by site.",
+    "it": "Nei templi parla a bassa voce, vestiti con sobrietà e segui i cartelli locali. Chiedi prima di fotografare i fedeli o le statue, perché le regole cambiano da luogo a luogo.",
+    "es": "En los templos, habla en voz baja, vístete con recato y sigue las señales locales. Pregunta antes de fotografiar a los fieles o las estatuas, porque las reglas cambian según el lugar.",
+    "pt": "Nos templos, fala baixo, veste-te com discrição e segue a sinalização local. Pergunta antes de fotografar fiéis ou estátuas, pois as regras mudam conforme o local.",
+    "pt_BR": "Nos templos, fale baixo, vista-se com discrição e siga a sinalização local. Pergunte antes de fotografar fiéis ou estátuas, pois as regras mudam conforme o local.",
+    "fr": "Dans les temples, parlez doucement, habillez-vous sobrement et suivez les panneaux. Demandez avant de photographier fidèles ou statues, car les règles varient selon le lieu.",
+    "de": "In Tempeln leise sprechen, zurückhaltend kleiden und den Hinweisschildern folgen. Vor Fotos von Gläubigen oder Statuen nachfragen, denn die Regeln unterscheiden sich je nach Ort."
+   }
+  },
+  {
+   "id": "ct-CN-12",
+   "category": "gestures",
+   "text": {
+    "en": "Pointing with one finger can seem rude, so use an open hand. Numbers 6 to 10 can be shown with one hand, for example six is thumb and little finger.",
+    "it": "Indicare con un dito può sembrare scortese, meglio usare la mano aperta. I numeri da 6 a 10 si mostrano con una mano, ad esempio il sei è pollice e mignolo.",
+    "es": "Señalar con un solo dedo puede parecer grosero, así que usa la mano abierta. Los números del 6 al 10 se muestran con una mano; por ejemplo, el seis es pulgar y meñique.",
+    "pt": "Apontar com um dedo pode parecer rude, por isso usa a mão aberta. Os números de 6 a 10 mostram-se com uma só mão; por exemplo, o seis é polegar e mindinho.",
+    "pt_BR": "Apontar com um dedo pode parecer rude, então use a mão aberta. Os números de 6 a 10 são mostrados com uma só mão; por exemplo, o seis é polegar e mindinho.",
+    "fr": "Pointer d'un seul doigt peut sembler impoli ; utilisez la main ouverte. Les chiffres de 6 à 10 se montrent d'une main, par exemple le six est le pouce et l'auriculaire.",
+    "de": "Mit einem Finger zu zeigen kann unhöflich wirken, nutzen Sie die offene Hand. Die Zahlen 6 bis 10 zeigt man mit einer Hand, die Sechs etwa mit Daumen und kleinem Finger."
+   }
+  },
+  {
+   "id": "ct-CN-13",
+   "category": "punctuality",
+   "text": {
+    "en": "Being on time is valued for business and dinners. Traffic in big cities is heavy, so leave early to avoid arriving late.",
+    "it": "Essere puntuali è apprezzato per lavoro e cene. Il traffico nelle grandi città è intenso, quindi parti presto per non arrivare in ritardo.",
+    "es": "Ser puntual se valora en reuniones de trabajo y cenas. El tráfico en las grandes ciudades es denso, así que sal temprano para no llegar tarde.",
+    "pt": "Ser pontual é valorizado no trabalho e em jantares. O trânsito nas grandes cidades é intenso, por isso sai cedo para não chegar atrasado.",
+    "pt_BR": "Ser pontual é valorizado no trabalho e em jantares. O trânsito nas grandes cidades é intenso, então saia cedo para não chegar atrasado.",
+    "fr": "La ponctualité est appréciée pour le travail et les dîners. La circulation est dense dans les grandes villes, partez donc tôt pour ne pas être en retard.",
+    "de": "Pünktlichkeit wird bei Geschäftsterminen und Abendessen geschätzt. In Großstädten ist viel Verkehr, planen Sie also früh genug, um nicht zu spät zu kommen."
+   }
+  },
+  {
+   "id": "ct-CN-14",
+   "category": "public_behavior",
+   "text": {
+    "en": "In parks, mornings and evenings are lively with tai chi, group dancing and music. Watching is welcome, but ask before joining or filming.",
+    "it": "Nei parchi, mattine e sere sono animate da tai chi, balli di gruppo e musica. Guardare è gradito, ma chiedi prima di unirti o di filmare.",
+    "es": "En los parques, las mañanas y las tardes se llenan de taichí, baile en grupo y música. Mirar es bienvenido, pero pregunta antes de unirte o grabar.",
+    "pt": "Nos parques, as manhãs e os fins de tarde são animados com tai chi, dança em grupo e música. Observar é bem-vindo, mas pergunta antes de te juntares ou filmares.",
+    "pt_BR": "Nos parques, as manhãs e os fins de tarde são animados com tai chi, dança em grupo e música. Observar é bem-vindo, mas pergunte antes de participar ou filmar.",
+    "fr": "Dans les parcs, matins et soirs s'animent de tai-chi, de danse en groupe et de musique. On peut regarder, mais demandez avant de vous joindre ou de filmer.",
+    "de": "In Parks herrscht morgens und abends reges Treiben mit Tai-Chi, Gruppentänzen und Musik. Zuschauen ist willkommen, doch vor dem Mitmachen oder Filmen bitte fragen."
+   }
+  },
+  {
+   "id": "ct-CN-15",
+   "category": "transport",
+   "text": {
+    "en": "Booking and boarding high-speed trains requires a passport or ID, and you will be checked at the station. Arrive at least 30 to 45 minutes early.",
+    "it": "Prenotare e salire sui treni ad alta velocità richiede passaporto o documento, e sarai controllato in stazione. Arriva almeno 30-45 minuti prima.",
+    "es": "Reservar y abordar trenes de alta velocidad requiere pasaporte o documento de identidad, y te revisarán en la estación. Llega al menos 30 o 45 minutos antes.",
+    "pt": "Reservar e embarcar nos comboios de alta velocidade exige passaporte ou documento de identificação, e serás verificado na estação. Chega pelo menos 30 a 45 minutos antes.",
+    "pt_BR": "Reservar e embarcar nos trens de alta velocidade exige passaporte ou documento de identidade, e você será verificado na estação. Chegue pelo menos 30 a 45 minutos antes.",
+    "fr": "Réserver et embarquer dans les trains à grande vitesse exige un passeport ou une pièce d'identité, avec contrôle en gare. Arrivez au moins 30 à 45 minutes à l'avance.",
+    "de": "Für Buchung und Einstieg in Hochgeschwindigkeitszüge braucht man Reisepass oder Ausweis, und im Bahnhof gibt es Kontrollen. Kommen Sie mindestens 30 bis 45 Minuten früher."
+   }
+  },
+  {
+   "id": "ct-CN-16",
+   "category": "transport",
+   "text": {
+    "en": "Big-city metros are cheap and efficient, and bags are screened at entrances. Ride-hailing apps like Didi are widely used instead of hailing taxis.",
+    "it": "Le metropolitane delle grandi città sono economiche ed efficienti e i bagagli vengono controllati all'ingresso. Le app di ride-hailing come Didi sono molto usate al posto dei taxi in strada.",
+    "es": "Los metros de las grandes ciudades son baratos y eficientes, y las bolsas se revisan en las entradas. Las aplicaciones de transporte como Didi se usan mucho en lugar de parar taxis.",
+    "pt": "Os metros das grandes cidades são baratos e eficientes, e as malas são inspecionadas nas entradas. As aplicações de transporte como a Didi são muito usadas em vez de apanhar táxis na rua.",
+    "pt_BR": "Os metrôs das grandes cidades são baratos e eficientes, e as bolsas são verificadas nas entradas. Aplicativos de transporte como o Didi são muito usados em vez de pegar táxi na rua.",
+    "fr": "Les métros des grandes villes sont bon marché et efficaces, et les sacs sont contrôlés à l'entrée. Les applications de VTC comme Didi sont très utilisées plutôt que de héler un taxi.",
+    "de": "Die U-Bahnen der Großstädte sind günstig und effizient, Taschen werden am Eingang kontrolliert. Fahrdienst-Apps wie Didi werden häufig statt Straßentaxis genutzt."
+   }
+  },
+  {
+   "id": "ct-CN-17",
+   "category": "language",
+   "text": {
+    "en": "Mandarin (Putonghua) is the national standard, but regions have their own dialects such as Cantonese. Learning \"nǐ hǎo\" and \"xièxie\" goes a long way.",
+    "it": "Il mandarino (putonghua) è lo standard nazionale, ma le regioni hanno dialetti propri come il cantonese. Imparare \"nǐ hǎo\" e \"xièxie\" aiuta molto.",
+    "es": "El mandarín (putonghua) es el estándar nacional, pero las regiones tienen sus propios dialectos, como el cantonés. Aprender \"nǐ hǎo\" y \"xièxie\" ayuda mucho.",
+    "pt": "O mandarim (putonghua) é o padrão nacional, mas as regiões têm os seus próprios dialetos, como o cantonês. Aprender \"nǐ hǎo\" e \"xièxie\" ajuda muito.",
+    "pt_BR": "O mandarim (putonghua) é o padrão nacional, mas as regiões têm seus próprios dialetos, como o cantonês. Aprender \"nǐ hǎo\" e \"xièxie\" ajuda muito.",
+    "fr": "Le mandarin (putonghua) est le standard national, mais chaque région a ses dialectes, comme le cantonais. Apprendre \"nǐ hǎo\" et \"xièxie\" aide beaucoup.",
+    "de": "Mandarin (Putonghua) ist der nationale Standard, aber die Regionen haben eigene Dialekte wie Kantonesisch. \"Nǐ hǎo\" und \"xièxie\" zu lernen hilft sehr."
+   }
+  },
+  {
+   "id": "ct-CN-18",
+   "category": "language",
+   "text": {
+    "en": "Mandarin is tonal, so the same syllable can mean different things. Pinyin, the Latin spelling, helps learners, and locals appreciate any effort.",
+    "it": "Il mandarino è una lingua tonale, quindi la stessa sillaba può avere significati diversi. Il pinyin, la trascrizione latina, aiuta chi studia, e la gente apprezza ogni sforzo.",
+    "es": "El mandarín es tonal, así que una misma sílaba puede significar cosas distintas. El pinyin, la escritura latina, ayuda a quienes aprenden, y la gente valora cualquier esfuerzo.",
+    "pt": "O mandarim é tonal, por isso a mesma sílaba pode ter significados diferentes. O pinyin, a escrita latina, ajuda quem aprende, e as pessoas apreciam qualquer esforço.",
+    "pt_BR": "O mandarim é tonal, então a mesma sílaba pode ter significados diferentes. O pinyin, a escrita latina, ajuda quem aprende, e as pessoas valorizam qualquer esforço.",
+    "fr": "Le mandarin est tonal, donc une même syllabe peut avoir plusieurs sens. Le pinyin, la transcription latine, aide les apprenants, et les gens apprécient tout effort.",
+    "de": "Mandarin ist eine Tonsprache, dieselbe Silbe kann also Verschiedenes bedeuten. Pinyin, die lateinische Umschrift, hilft Lernenden, und Einheimische schätzen jeden Versuch."
+   }
+  },
+  {
+   "id": "ct-CN-19",
+   "category": "festivals",
+   "text": {
+    "en": "The Spring Festival (Chinese New Year) is the biggest holiday. Hundreds of millions travel home, and families give red envelopes with money.",
+    "it": "Il Festival di Primavera (Capodanno cinese) è la festa più importante. Centinaia di milioni di persone tornano a casa e le famiglie regalano buste rosse con del denaro.",
+    "es": "El Festival de Primavera (Año Nuevo chino) es la fiesta más grande. Cientos de millones viajan a casa y las familias dan sobres rojos con dinero.",
+    "pt": "O Festival da Primavera (Ano Novo Chinês) é a maior festividade. Centenas de milhões viajam para casa e as famílias dão envelopes vermelhos com dinheiro.",
+    "pt_BR": "O Festival da Primavera (Ano Novo Chinês) é a maior festividade. Centenas de milhões viajam para casa e as famílias dão envelopes vermelhos com dinheiro.",
+    "fr": "La Fête du Printemps (Nouvel An chinois) est la plus grande fête. Des centaines de millions de personnes rentrent chez elles et les familles offrent des enveloppes rouges d'argent.",
+    "de": "Das Frühlingsfest (Chinesisches Neujahr) ist das größte Fest. Hunderte Millionen reisen nach Hause, und Familien verschenken rote Umschläge mit Geld."
+   }
+  },
+  {
+   "id": "ct-CN-20",
+   "category": "festivals",
+   "text": {
+    "en": "At the Mid-Autumn Festival, families gather under the full moon to share mooncakes, and giving mooncakes to friends is a common gesture.",
+    "it": "Alla Festa di Metà Autunno le famiglie si riuniscono sotto la luna piena per condividere i mooncake, e regalarli agli amici è un gesto comune.",
+    "es": "En el Festival del Medio Otoño, las familias se reúnen bajo la luna llena para compartir pasteles de luna, y regalarlos a los amigos es un gesto habitual.",
+    "pt": "No Festival do Meio Outono, as famílias reúnem-se sob a lua cheia para partilhar bolos lunares, e oferecê-los a amigos é um gesto comum.",
+    "pt_BR": "No Festival do Meio Outono, as famílias se reúnem sob a lua cheia para compartilhar bolos lunares, e presentear amigos com eles é um gesto comum.",
+    "fr": "À la fête de la mi-automne, les familles se réunissent sous la pleine lune pour partager des gâteaux de lune, et en offrir à ses amis est un geste courant.",
+    "de": "Beim Mondfest versammeln sich Familien unter dem Vollmond, um Mondkuchen zu teilen, und sie an Freunde zu verschenken ist eine übliche Geste."
+   }
+  },
+  {
+   "id": "ct-CN-21",
+   "category": "family",
+   "text": {
+    "en": "Elders are highly respected. Greet the oldest person first, let them sit or start eating first, and offer them the best seat.",
+    "it": "Gli anziani sono molto rispettati. Saluta per prima la persona più anziana, lasciala sedere o iniziare a mangiare per prima e offrile il posto migliore.",
+    "es": "Los mayores son muy respetados. Saluda primero a la persona de más edad, deja que se siente o empiece a comer primero y ofrécele el mejor asiento.",
+    "pt": "Os mais velhos são muito respeitados. Cumprimenta primeiro a pessoa mais idosa, deixa-a sentar-se ou começar a comer primeiro e oferece-lhe o melhor lugar.",
+    "pt_BR": "Os mais velhos são muito respeitados. Cumprimente primeiro a pessoa mais idosa, deixe-a sentar ou começar a comer primeiro e ofereça a ela o melhor lugar.",
+    "fr": "Les aînés sont très respectés. Saluez d'abord la personne la plus âgée, laissez-la s'asseoir ou commencer à manger en premier et offrez-lui la meilleure place.",
+    "de": "Ältere genießen großen Respekt. Begrüßen Sie zuerst die älteste Person, lassen Sie sie zuerst Platz nehmen oder mit dem Essen beginnen und bieten Sie ihr den besten Platz an."
+   }
+  },
+  {
+   "id": "ct-CN-22",
+   "category": "money",
+   "text": {
+    "en": "Mobile payment through Alipay and WeChat Pay is everywhere. Link a foreign card before you travel, and keep some cash as a backup.",
+    "it": "Il pagamento da mobile con Alipay e WeChat Pay è ovunque. Collega una carta straniera prima di partire e tieni un po' di contanti come riserva.",
+    "es": "El pago móvil con Alipay y WeChat Pay está en todas partes. Vincula una tarjeta extranjera antes de viajar y lleva algo de efectivo de respaldo.",
+    "pt": "O pagamento móvel com Alipay e WeChat Pay está em todo o lado. Associa um cartão estrangeiro antes de viajar e leva algum dinheiro de reserva.",
+    "pt_BR": "O pagamento por celular com Alipay e WeChat Pay está em todo lugar. Vincule um cartão estrangeiro antes de viajar e leve algum dinheiro de reserva.",
+    "fr": "Le paiement mobile via Alipay et WeChat Pay est partout. Associez une carte étrangère avant de partir et gardez un peu d'espèces en secours.",
+    "de": "Mobiles Bezahlen mit Alipay und WeChat Pay ist überall verbreitet. Verknüpfen Sie vor der Reise eine ausländische Karte und halten Sie etwas Bargeld als Reserve bereit."
+   }
+  },
+  {
+   "id": "ct-CN-23",
+   "category": "photography",
+   "text": {
+    "en": "Ask before photographing people. Photography is restricted at some military sites, government buildings and in certain museum halls.",
+    "it": "Chiedi prima di fotografare le persone. La fotografia è vietata in alcuni siti militari, edifici governativi e in certe sale dei musei.",
+    "es": "Pregunta antes de fotografiar a las personas. La fotografía está restringida en algunos sitios militares, edificios gubernamentales y ciertas salas de museos.",
+    "pt": "Pergunta antes de fotografar pessoas. A fotografia é restringida em alguns locais militares, edifícios governamentais e certas salas de museus.",
+    "pt_BR": "Pergunte antes de fotografar pessoas. A fotografia é restrita em alguns locais militares, prédios governamentais e certas salas de museus.",
+    "fr": "Demandez avant de photographier des personnes. La photo est limitée sur certains sites militaires, bâtiments publics et dans certaines salles de musée.",
+    "de": "Fragen Sie vor Fotos von Menschen nach. An manchen Militärstandorten, Regierungsgebäuden und in bestimmten Museumssälen ist Fotografieren eingeschränkt."
+   }
+  },
+  {
+   "id": "ct-CN-24",
+   "category": "nightlife",
+   "text": {
+    "en": "Karaoke, known as KTV, is a popular way to socialise with friends and colleagues. Evening street food markets are also a big part of night life.",
+    "it": "Il karaoke, chiamato KTV, è un modo popolare di socializzare con amici e colleghi. Anche i mercati serali di street food sono una parte importante della vita notturna.",
+    "es": "El karaoke, conocido como KTV, es una forma popular de socializar con amigos y colegas. Los mercados nocturnos de comida callejera también son parte importante de la vida nocturna.",
+    "pt": "O karaoke, conhecido como KTV, é uma forma popular de socializar com amigos e colegas. Os mercados noturnos de comida de rua também são uma parte importante da vida noturna.",
+    "pt_BR": "O karaokê, conhecido como KTV, é um jeito popular de socializar com amigos e colegas. As feiras noturnas de comida de rua também são uma parte importante da vida noturna.",
+    "fr": "Le karaoké, appelé KTV, est une façon populaire de se retrouver entre amis et collègues. Les marchés nocturnes de street food font aussi partie de la vie nocturne.",
+    "de": "Karaoke, genannt KTV, ist eine beliebte Art, Zeit mit Freunden und Kollegen zu verbringen. Auch abendliche Streetfood-Märkte gehören zum Nachtleben."
+   }
+  },
+  {
+   "id": "ct-CN-25",
+   "category": "nature",
+   "text": {
+    "en": "Scenic spots get extremely crowded during the National Day holiday, the first week of October. Book tickets and lodging well ahead or choose other dates.",
+    "it": "Le località panoramiche si affollano moltissimo durante la festa nazionale, la prima settimana di ottobre. Prenota biglietti e alloggio con largo anticipo o scegli altre date.",
+    "es": "Los lugares turísticos se llenan muchísimo durante las vacaciones del Día Nacional, la primera semana de octubre. Reserva entradas y alojamiento con mucha antelación o elige otras fechas.",
+    "pt": "Os locais turísticos ficam extremamente cheios durante as férias do Dia Nacional, na primeira semana de outubro. Reserva bilhetes e alojamento com muita antecedência ou escolhe outras datas.",
+    "pt_BR": "Os pontos turísticos ficam extremamente lotados durante o feriado do Dia Nacional, na primeira semana de outubro. Reserve ingressos e hospedagem com bastante antecedência ou escolha outras datas.",
+    "fr": "Les sites touristiques sont extrêmement fréquentés pendant les vacances de la fête nationale, première semaine d'octobre. Réservez billets et hébergement très à l'avance ou choisissez d'autres dates.",
+    "de": "Beliebte Ausflugsziele sind während der Nationalfeiertage in der ersten Oktoberwoche extrem überfüllt. Buchen Sie Tickets und Unterkunft weit im Voraus oder wählen Sie andere Termine."
+   }
+  },
+  {
+   "id": "ct-CN-26",
+   "category": "safety",
+   "text": {
+    "en": "Tap water is usually not drunk directly. Most people drink boiled or bottled water, and hot water dispensers are common in hotels and stations.",
+    "it": "L'acqua del rubinetto di solito non si beve direttamente. La maggior parte della gente beve acqua bollita o in bottiglia e i distributori di acqua calda sono comuni in hotel e stazioni.",
+    "es": "El agua del grifo normalmente no se bebe directamente. La mayoría bebe agua hervida o embotellada, y los dispensadores de agua caliente son comunes en hoteles y estaciones.",
+    "pt": "A água da torneira normalmente não se bebe diretamente. A maioria bebe água fervida ou engarrafada, e os dispensadores de água quente são comuns em hotéis e estações.",
+    "pt_BR": "A água da torneira normalmente não é bebida diretamente. A maioria bebe água fervida ou engarrafada, e os bebedouros de água quente são comuns em hotéis e estações.",
+    "fr": "L'eau du robinet ne se boit généralement pas directement. La plupart des gens boivent de l'eau bouillie ou en bouteille, et les distributeurs d'eau chaude sont courants dans les hôtels et gares.",
+    "de": "Leitungswasser wird normalerweise nicht direkt getrunken. Die meisten trinken abgekochtes oder abgefülltes Wasser, und Heißwasserspender sind in Hotels und Bahnhöfen verbreitet."
+   }
+  },
+  {
+   "id": "ct-CN-27",
+   "category": "local_pride",
+   "text": {
+    "en": "Regional cuisines such as Sichuan, Cantonese and Shandong are a source of local pride. Asking about someone's hometown dish is a great conversation starter.",
+    "it": "Le cucine regionali come quella del Sichuan, cantonese e dello Shandong sono motivo di orgoglio locale. Chiedere del piatto della città natale di qualcuno è un ottimo modo per iniziare a parlare.",
+    "es": "Las cocinas regionales como la de Sichuan, la cantonesa y la de Shandong son motivo de orgullo local. Preguntar por el plato de la ciudad natal de alguien es un gran comienzo de conversación.",
+    "pt": "As cozinhas regionais, como a de Sichuan, a cantonesa e a de Shandong, são motivo de orgulho local. Perguntar pelo prato da terra natal de alguém é um ótimo início de conversa.",
+    "pt_BR": "As cozinhas regionais, como a de Sichuan, a cantonesa e a de Shandong, são motivo de orgulho local. Perguntar pelo prato da cidade natal de alguém é ótimo para começar uma conversa.",
+    "fr": "Les cuisines régionales comme celles du Sichuan, du Guangdong et du Shandong sont une fierté locale. Demander le plat de la ville natale de quelqu'un est une excellente entrée en matière.",
+    "de": "Regionalküchen wie Sichuan, die kantonesische und Shandong sind ein Grund für lokalen Stolz. Die Frage nach dem Gericht der Heimatstadt ist ein guter Gesprächseinstieg."
+   }
+  },
+  {
+   "id": "ct-CN-28",
+   "category": "local_pride",
+   "text": {
+    "en": "Tea is central to hospitality. When a host serves you tea, accept it with both hands or a nod of thanks, and tap two fingers on the table to thank someone who pours.",
+    "it": "Il tè è centrale nell'ospitalità. Quando un ospite ti serve il tè, accettalo con entrambe le mani o con un cenno di ringraziamento; per ringraziare chi lo versa si battono due dita sul tavolo.",
+    "es": "El té es central en la hospitalidad. Cuando un anfitrión te sirva té, acéptalo con ambas manos o con un gesto de agradecimiento; para agradecer a quien sirve se golpean dos dedos sobre la mesa.",
+    "pt": "O chá é central na hospitalidade. Quando um anfitrião te serve chá, aceita-o com as duas mãos ou com um aceno de agradecimento; para agradecer a quem serve, batem-se dois dedos na mesa.",
+    "pt_BR": "O chá é central na hospitalidade. Quando um anfitrião serve chá, aceite com as duas mãos ou com um aceno de agradecimento; para agradecer a quem serve, batem-se dois dedos na mesa.",
+    "fr": "Le thé est au cœur de l'hospitalité. Quand un hôte vous sert du thé, acceptez-le à deux mains ou d'un signe de tête ; pour remercier celui qui sert, on tapote deux doigts sur la table.",
+    "de": "Tee gehört zur Gastfreundschaft. Wenn Ihnen ein Gastgeber Tee serviert, nehmen Sie ihn mit beiden Händen oder einem dankbaren Nicken an; zum Dank tippt man mit zwei Fingern auf den Tisch."
+   }
+  },
+  {
+   "id": "ct-CN-29",
+   "category": "safety",
+   "text": {
+    "en": "Carry your passport when travelling. Hotels register foreign guests at check-in, and ID is also needed for trains, flights and some attractions.",
+    "it": "Porta con te il passaporto quando viaggi. Gli hotel registrano gli ospiti stranieri al check-in e il documento serve anche per treni, voli e alcune attrazioni.",
+    "es": "Lleva siempre el pasaporte al viajar. Los hoteles registran a los huéspedes extranjeros al llegar, y también se necesita identificación para trenes, vuelos y algunas atracciones.",
+    "pt": "Leva o passaporte contigo quando viajas. Os hotéis registam os hóspedes estrangeiros no check-in e a identificação também é necessária para comboios, voos e algumas atrações.",
+    "pt_BR": "Leve o passaporte consigo quando viajar. Os hotéis registram hóspedes estrangeiros no check-in e a identificação também é necessária para trens, voos e algumas atrações.",
+    "fr": "Gardez votre passeport sur vous en voyage. Les hôtels enregistrent les clients étrangers à l'arrivée, et une pièce d'identité est aussi exigée pour les trains, vols et certaines attractions.",
+    "de": "Führen Sie auf Reisen Ihren Reisepass mit. Hotels registrieren ausländische Gäste beim Check-in, und auch für Züge, Flüge und manche Sehenswürdigkeiten wird ein Ausweis benötigt."
+   }
+  },
+  {
+   "id": "ct-CN-30",
+   "category": "nature",
+   "text": {
+    "en": "Air quality can vary by city and season. Many people check an air quality app and wear a mask on polluted days.",
+    "it": "La qualità dell'aria può variare a seconda della città e della stagione. Molte persone controllano un'app sulla qualità dell'aria e indossano la mascherina nei giorni inquinati.",
+    "es": "La calidad del aire puede variar según la ciudad y la estación. Mucha gente consulta una aplicación de calidad del aire y usa mascarilla los días contaminados.",
+    "pt": "A qualidade do ar pode variar consoante a cidade e a estação. Muitas pessoas consultam uma aplicação de qualidade do ar e usam máscara nos dias poluídos.",
+    "pt_BR": "A qualidade do ar pode variar conforme a cidade e a estação. Muita gente consulta um aplicativo de qualidade do ar e usa máscara nos dias poluídos.",
+    "fr": "La qualité de l'air varie selon la ville et la saison. Beaucoup de gens consultent une application de qualité de l'air et portent un masque les jours de pollution.",
+    "de": "Die Luftqualität kann je nach Stadt und Jahreszeit schwanken. Viele prüfen eine Luftqualitäts-App und tragen an belasteten Tagen eine Maske."
+   }
+  }
+ ],
+ "CO": [
+  {
+   "id": "ct-CO-01",
+   "category": "greetings",
+   "text": {
+    "en": "Greet with a handshake and eye contact. Close friends often share a light kiss on the cheek, mostly between women or between a man and a woman.",
+    "it": "Saluta con una stretta di mano e contatto visivo. Gli amici stretti si scambiano spesso un bacio leggero sulla guancia, soprattutto tra donne o tra uomo e donna.",
+    "es": "Saluda con un apretón de manos y contacto visual. Los amigos cercanos suelen darse un beso ligero en la mejilla, sobre todo entre mujeres o entre hombre y mujer.",
+    "pt": "Cumprimenta com um aperto de mão e contacto visual. Os amigos próximos costumam trocar um beijo leve na face, sobretudo entre mulheres ou entre homem e mulher.",
+    "pt_BR": "Cumprimente com um aperto de mão e contato visual. Amigos próximos costumam trocar um beijo leve na bochecha, principalmente entre mulheres ou entre homem e mulher.",
+    "fr": "Saluez avec une poignée de main et un contact visuel. Les amis proches s'embrassent souvent légèrement sur la joue, surtout entre femmes ou entre un homme et une femme.",
+    "de": "Begrüßen Sie sich mit Handschlag und Blickkontakt. Enge Freunde geben sich oft einen leichten Wangenkuss, vor allem unter Frauen oder zwischen Mann und Frau."
+   }
+  },
+  {
+   "id": "ct-CO-02",
+   "category": "greetings",
+   "text": {
+    "en": "It is polite to say \"buenos días\" or \"buenas tardes\" when entering a shop, a lift or a small waiting room, even to strangers.",
+    "it": "È educato dire \"buenos días\" o \"buenas tardes\" entrando in un negozio, un ascensore o una piccola sala d'attesa, anche agli sconosciuti.",
+    "es": "Es cortés decir \"buenos días\" o \"buenas tardes\" al entrar a una tienda, un ascensor o una sala de espera pequeña, incluso a desconocidos.",
+    "pt": "É educado dizer \"buenos días\" ou \"buenas tardes\" ao entrar numa loja, num elevador ou numa pequena sala de espera, mesmo a desconhecidos.",
+    "pt_BR": "É educado dizer \"buenos días\" ou \"buenas tardes\" ao entrar em uma loja, em um elevador ou em uma pequena sala de espera, mesmo para desconhecidos.",
+    "fr": "Il est poli de dire \"buenos días\" ou \"buenas tardes\" en entrant dans un magasin, un ascenseur ou une petite salle d'attente, même à des inconnus.",
+    "de": "Es ist höflich, beim Betreten eines Ladens, Aufzugs oder kleinen Wartezimmers \"buenos días\" oder \"buenas tardes\" zu sagen, auch zu Fremden."
+   }
+  },
+  {
+   "id": "ct-CO-03",
+   "category": "conversation",
+   "text": {
+    "en": "Colombians are generally warm and curious. Talking about family, food, music and your home country is a great way to connect.",
+    "it": "I colombiani sono in genere calorosi e curiosi. Parlare di famiglia, cibo, musica e del tuo paese è un ottimo modo per entrare in sintonia.",
+    "es": "Los colombianos suelen ser cálidos y curiosos. Hablar de familia, comida, música y de tu país es una excelente forma de conectar.",
+    "pt": "Os colombianos são em geral calorosos e curiosos. Falar de família, comida, música e do teu país é uma ótima forma de criar ligação.",
+    "pt_BR": "Os colombianos costumam ser calorosos e curiosos. Falar de família, comida, música e do seu país é uma ótima forma de criar conexão.",
+    "fr": "Les Colombiens sont généralement chaleureux et curieux. Parler de famille, de cuisine, de musique et de votre pays est une excellente façon de créer le lien.",
+    "de": "Kolumbianer sind meist herzlich und neugierig. Gespräche über Familie, Essen, Musik und Ihr Heimatland sind ein guter Weg, Kontakt zu knüpfen."
+   }
+  },
+  {
+   "id": "ct-CO-04",
+   "category": "conversation",
+   "text": {
+    "en": "Many Colombians are tired of stereotypes about drugs and violence. Asking about their region's food, music and nature goes down better.",
+    "it": "Molti colombiani sono stanchi degli stereotipi su droga e violenza. Chiedere del cibo, della musica e della natura della loro regione è più gradito.",
+    "es": "A muchos colombianos les cansan los estereotipos sobre drogas y violencia. Preguntar por la comida, la música y la naturaleza de su región cae mucho mejor.",
+    "pt": "Muitos colombianos estão cansados dos estereótipos sobre drogas e violência. Perguntar pela comida, música e natureza da sua região é mais bem recebido.",
+    "pt_BR": "Muitos colombianos estão cansados dos estereótipos sobre drogas e violência. Perguntar sobre a comida, a música e a natureza da região deles é bem mais bem-vindo.",
+    "fr": "Beaucoup de Colombiens sont lassés des stéréotypes sur la drogue et la violence. Mieux vaut les interroger sur la cuisine, la musique et la nature de leur région.",
+    "de": "Viele Kolumbianer sind Klischees über Drogen und Gewalt leid. Fragen nach Essen, Musik und Natur ihrer Region kommen deutlich besser an."
+   }
+  },
+  {
+   "id": "ct-CO-05",
+   "category": "dining",
+   "text": {
+    "en": "A typical breakfast includes an arepa, eggs, and coffee, hot chocolate or \"tinto\" (small black coffee). Lunch is often the biggest meal.",
+    "it": "Una colazione tipica include un'arepa, uova e caffè, cioccolata calda o \"tinto\" (piccolo caffè nero). Il pranzo è spesso il pasto più abbondante.",
+    "es": "Un desayuno típico incluye arepa, huevos y café, chocolate caliente o \"tinto\" (café negro pequeño). El almuerzo suele ser la comida más grande.",
+    "pt": "Um pequeno-almoço típico inclui arepa, ovos e café, chocolate quente ou \"tinto\" (café preto pequeno). O almoço costuma ser a refeição maior.",
+    "pt_BR": "Um café da manhã típico inclui arepa, ovos e café, chocolate quente ou \"tinto\" (café preto pequeno). O almoço costuma ser a refeição mais farta.",
+    "fr": "Un petit-déjeuner typique comprend une arepa, des œufs et du café, du chocolat chaud ou un \"tinto\" (petit café noir). Le déjeuner est souvent le plus gros repas.",
+    "de": "Ein typisches Frühstück besteht aus Arepa, Eiern und Kaffee, heißer Schokolade oder \"tinto\" (kleiner schwarzer Kaffee). Das Mittagessen ist oft die größte Mahlzeit."
+   }
+  },
+  {
+   "id": "ct-CO-06",
+   "category": "dining",
+   "text": {
+    "en": "Saying \"buen provecho\" to people who are eating, including when you walk past a table, is a friendly and common courtesy.",
+    "it": "Dire \"buen provecho\" a chi sta mangiando, anche passando accanto a un tavolo, è una cortesia gentile e diffusa.",
+    "es": "Decir \"buen provecho\" a quien está comiendo, incluso al pasar junto a una mesa, es una cortesía amable y común.",
+    "pt": "Dizer \"buen provecho\" a quem está a comer, mesmo ao passar junto de uma mesa, é uma cortesia simpática e comum.",
+    "pt_BR": "Dizer \"buen provecho\" a quem está comendo, mesmo ao passar perto de uma mesa, é uma gentileza simpática e comum.",
+    "fr": "Dire \"buen provecho\" à ceux qui mangent, même en passant près d'une table, est une politesse amicale et courante.",
+    "de": "Anderen beim Essen \"buen provecho\" zu wünschen, auch im Vorbeigehen an einem Tisch, ist eine freundliche und übliche Höflichkeit."
+   }
+  },
+  {
+   "id": "ct-CO-07",
+   "category": "tipping",
+   "text": {
+    "en": "Many restaurants add a suggested 10 percent service charge (propina) to the bill. It is voluntary, and you can ask to remove or change it.",
+    "it": "Molti ristoranti aggiungono al conto un servizio suggerito del 10 percento (propina). È facoltativo e puoi chiedere di toglierlo o modificarlo.",
+    "es": "Muchos restaurantes añaden a la cuenta una propina sugerida del 10 por ciento. Es voluntaria y puedes pedir que la quiten o la cambien.",
+    "pt": "Muitos restaurantes acrescentam à conta uma gorjeta sugerida de 10 por cento (propina). É voluntária e podes pedir para a retirar ou alterar.",
+    "pt_BR": "Muitos restaurantes acrescentam à conta uma gorjeta sugerida de 10 por cento (propina). É voluntária e você pode pedir para retirá-la ou alterá-la.",
+    "fr": "Beaucoup de restaurants ajoutent à l'addition un pourboire suggéré de 10 pour cent (propina). Il est facultatif et vous pouvez demander à le retirer ou le modifier.",
+    "de": "Viele Restaurants setzen ein vorgeschlagenes Trinkgeld von 10 Prozent (propina) auf die Rechnung. Es ist freiwillig, und man kann es streichen oder ändern lassen."
+   }
+  },
+  {
+   "id": "ct-CO-08",
+   "category": "tipping",
+   "text": {
+    "en": "Taxi drivers do not expect tips; rounding up is enough. Small cash tips are appreciated by hotel porters and tour guides.",
+    "it": "I tassisti non si aspettano la mancia: arrotondare basta. Piccole mance in contanti sono apprezzate da facchini d'hotel e guide turistiche.",
+    "es": "Los taxistas no esperan propina; redondear es suficiente. Los botones de hotel y los guías turísticos agradecen una pequeña propina en efectivo.",
+    "pt": "Os taxistas não esperam gorjeta; arredondar chega. Pequenas gorjetas em dinheiro são apreciadas por porteiros de hotel e guias turísticos.",
+    "pt_BR": "Os taxistas não esperam gorjeta; arredondar basta. Pequenas gorjetas em dinheiro são apreciadas por carregadores de hotel e guias turísticos.",
+    "fr": "Les chauffeurs de taxi n'attendent pas de pourboire ; arrondir suffit. Les porteurs d'hôtel et les guides apprécient un petit pourboire en espèces.",
+    "de": "Taxifahrer erwarten kein Trinkgeld; Aufrunden genügt. Hotelpagen und Reiseführer freuen sich über ein kleines Trinkgeld in bar."
+   }
+  },
+  {
+   "id": "ct-CO-09",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to a home, bring something small like pastries, chocolates or flowers. Colombia is a major flower grower, so they are a lovely gift.",
+    "it": "Quando sei invitato a casa di qualcuno, porta qualcosa di piccolo come dolci, cioccolatini o fiori. La Colombia è un grande produttore di fiori, quindi sono un bel regalo.",
+    "es": "Si te invitan a una casa, lleva algo pequeño como pasteles, chocolates o flores. Colombia es un gran productor de flores, así que son un lindo regalo.",
+    "pt": "Quando fores convidado para casa de alguém, leva algo pequeno, como bolos, chocolates ou flores. A Colômbia é um grande produtor de flores, por isso são uma bela prenda.",
+    "pt_BR": "Quando for convidado para a casa de alguém, leve algo pequeno, como doces, chocolates ou flores. A Colômbia é um grande produtor de flores, então são um belo presente.",
+    "fr": "Si vous êtes invité chez quelqu'un, apportez un petit présent : pâtisseries, chocolats ou fleurs. La Colombie est un grand producteur de fleurs, c'est donc un joli cadeau.",
+    "de": "Wer nach Hause eingeladen wird, bringt eine Kleinigkeit wie Gebäck, Pralinen oder Blumen mit. Kolumbien ist ein bedeutender Blumenproduzent, daher sind sie ein schönes Geschenk."
+   }
+  },
+  {
+   "id": "ct-CO-10",
+   "category": "dress",
+   "text": {
+    "en": "Climate varies with altitude. Bogotá sits at about 2,600 m and is cool, so bring a jacket, while the coast and lowlands are hot and humid.",
+    "it": "Il clima varia con l'altitudine. Bogotá si trova a circa 2.600 m ed è fresca, quindi porta una giacca, mentre la costa e le pianure sono calde e umide.",
+    "es": "El clima varía con la altitud. Bogotá está a unos 2.600 m y es fresca, así que lleva una chaqueta, mientras que la costa y las tierras bajas son cálidas y húmedas.",
+    "pt": "O clima varia com a altitude. Bogotá fica a cerca de 2600 m e é fresca, por isso leva um casaco, enquanto a costa e as terras baixas são quentes e húmidas.",
+    "pt_BR": "O clima varia com a altitude. Bogotá fica a cerca de 2.600 m e é fresca, então leve um casaco, enquanto o litoral e as terras baixas são quentes e úmidos.",
+    "fr": "Le climat varie avec l'altitude. Bogotá est à environ 2 600 m et reste fraîche, prévoyez une veste ; la côte et les basses terres sont chaudes et humides.",
+    "de": "Das Klima hängt von der Höhe ab. Bogotá liegt auf etwa 2.600 m und ist kühl, also eine Jacke einpacken; Küste und Tiefland sind heiß und feucht."
+   }
+  },
+  {
+   "id": "ct-CO-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "The Salt Cathedral of Zipaquirá is a working church inside a salt mine. Visit quietly and dress modestly, as in other Colombian churches.",
+    "it": "La Cattedrale di Sale di Zipaquirá è una chiesa in funzione dentro una miniera di sale. Visitala in silenzio e vestiti con sobrietà, come in altre chiese colombiane.",
+    "es": "La Catedral de Sal de Zipaquirá es una iglesia en funcionamiento dentro de una mina de sal. Visítala en silencio y vístete con recato, como en otras iglesias colombianas.",
+    "pt": "A Catedral de Sal de Zipaquirá é uma igreja em funcionamento dentro de uma mina de sal. Visita-a em silêncio e veste-te com discrição, como noutras igrejas colombianas.",
+    "pt_BR": "A Catedral de Sal de Zipaquirá é uma igreja em funcionamento dentro de uma mina de sal. Visite em silêncio e vista-se com discrição, como em outras igrejas colombianas.",
+    "fr": "La cathédrale de sel de Zipaquirá est une église en activité dans une mine de sel. Visitez-la en silence et habillez-vous sobrement, comme dans les autres églises colombiennes.",
+    "de": "Die Salzkathedrale von Zipaquirá ist eine aktive Kirche in einem Salzbergwerk. Besuchen Sie sie leise und angemessen gekleidet, wie andere kolumbianische Kirchen."
+   }
+  },
+  {
+   "id": "ct-CO-12",
+   "category": "gestures",
+   "text": {
+    "en": "To call someone over, Colombians often wave fingers with the palm facing down, not up. Beckoning with an upturned finger can seem rude.",
+    "it": "Per chiamare qualcuno, i colombiani spesso muovono le dita con il palmo verso il basso, non verso l'alto. Chiamare con il dito rivolto in su può sembrare scortese.",
+    "es": "Para llamar a alguien, los colombianos suelen mover los dedos con la palma hacia abajo, no hacia arriba. Llamar con el dedo hacia arriba puede parecer grosero.",
+    "pt": "Para chamar alguém, os colombianos costumam mexer os dedos com a palma virada para baixo, não para cima. Chamar com o dedo virado para cima pode parecer rude.",
+    "pt_BR": "Para chamar alguém, os colombianos costumam mexer os dedos com a palma virada para baixo, não para cima. Chamar com o dedo virado para cima pode parecer rude.",
+    "fr": "Pour appeler quelqu'un, les Colombiens agitent souvent les doigts paume vers le bas, pas vers le haut. Appeler d'un doigt tourné vers le haut peut sembler impoli.",
+    "de": "Um jemanden heranzuwinken, bewegen Kolumbianer oft die Finger mit der Handfläche nach unten, nicht nach oben. Mit nach oben gekrümmtem Finger zu winken kann unhöflich wirken."
+   }
+  },
+  {
+   "id": "ct-CO-13",
+   "category": "punctuality",
+   "text": {
+    "en": "Business meetings in Bogotá usually expect punctuality, but social events often start later than announced. Ask if the time is flexible.",
+    "it": "Le riunioni di lavoro a Bogotá di solito richiedono puntualità, ma gli eventi sociali spesso iniziano più tardi di quanto annunciato. Chiedi se l'orario è flessibile.",
+    "es": "En Bogotá las reuniones de trabajo suelen exigir puntualidad, pero los eventos sociales a menudo empiezan más tarde de lo anunciado. Pregunta si la hora es flexible.",
+    "pt": "Em Bogotá as reuniões de trabalho costumam exigir pontualidade, mas os eventos sociais começam muitas vezes mais tarde do que o anunciado. Pergunta se a hora é flexível.",
+    "pt_BR": "Em Bogotá as reuniões de trabalho costumam exigir pontualidade, mas os eventos sociais muitas vezes começam mais tarde do que o anunciado. Pergunte se o horário é flexível.",
+    "fr": "À Bogotá, les réunions de travail exigent en général la ponctualité, mais les événements sociaux commencent souvent plus tard qu'annoncé. Demandez si l'horaire est flexible.",
+    "de": "In Bogotá wird bei Geschäftsterminen meist Pünktlichkeit erwartet, private Treffen beginnen aber oft später als angekündigt. Fragen Sie, ob die Zeit flexibel ist."
+   }
+  },
+  {
+   "id": "ct-CO-14",
+   "category": "public_behavior",
+   "text": {
+    "en": "Say \"con permiso\" when you need to pass through a crowd or a narrow space, and \"gracias\" often. Politeness is valued in daily life.",
+    "it": "Di' \"con permiso\" quando devi passare tra la folla o in uno spazio stretto, e \"gracias\" spesso. La cortesia è molto apprezzata nella vita quotidiana.",
+    "es": "Di \"con permiso\" cuando necesites pasar entre la gente o por un espacio estrecho, y \"gracias\" con frecuencia. La cortesía se valora en el día a día.",
+    "pt": "Diz \"con permiso\" quando precisares de passar no meio da multidão ou num espaço estreito, e \"gracias\" muitas vezes. A cortesia é valorizada no dia a dia.",
+    "pt_BR": "Diga \"con permiso\" quando precisar passar no meio da multidão ou em um espaço estreito, e \"gracias\" com frequência. A cortesia é valorizada no dia a dia.",
+    "fr": "Dites \"con permiso\" quand vous devez passer dans la foule ou un passage étroit, et \"gracias\" souvent. La politesse est valorisée au quotidien.",
+    "de": "Sagen Sie \"con permiso\", wenn Sie sich durch eine Menge oder eine enge Stelle bewegen, und oft \"gracias\". Höflichkeit wird im Alltag geschätzt."
+   }
+  },
+  {
+   "id": "ct-CO-15",
+   "category": "transport",
+   "text": {
+    "en": "Bogotá's TransMilenio bus rapid transit system runs on a rechargeable TuLlave card. Rush hours are very crowded, so keep your belongings close.",
+    "it": "Il sistema di bus rapidi TransMilenio di Bogotá funziona con la carta ricaricabile TuLlave. Nelle ore di punta è molto affollato, quindi tieni gli oggetti vicino a te.",
+    "es": "El sistema de buses rápidos TransMilenio de Bogotá funciona con la tarjeta recargable TuLlave. En hora pico va muy lleno, así que mantén tus cosas cerca.",
+    "pt": "O sistema de autocarros rápidos TransMilenio de Bogotá funciona com o cartão recarregável TuLlave. Nas horas de ponta vai muito cheio, por isso mantém os teus pertences por perto.",
+    "pt_BR": "O sistema de ônibus rápidos TransMilenio de Bogotá funciona com o cartão recarregável TuLlave. Nos horários de pico fica muito cheio, então mantenha seus pertences por perto.",
+    "fr": "Le système de bus à haut niveau de service TransMilenio de Bogotá fonctionne avec la carte rechargeable TuLlave. Aux heures de pointe, il est bondé : gardez vos affaires près de vous.",
+    "de": "Bogotás Schnellbussystem TransMilenio funktioniert mit der aufladbaren Karte TuLlave. In der Hauptverkehrszeit ist es sehr voll, halten Sie Ihre Sachen nah am Körper."
+   }
+  },
+  {
+   "id": "ct-CO-16",
+   "category": "transport",
+   "text": {
+    "en": "The Medellín Metro is clean and a source of local pride. People are asked to keep it tidy, give up seats and follow the \"Cultura Metro\" rules.",
+    "it": "La metropolitana di Medellín è pulita e motivo di orgoglio locale. Si chiede di mantenerla in ordine, cedere i posti e seguire le regole della \"Cultura Metro\".",
+    "es": "El Metro de Medellín es limpio y motivo de orgullo local. Se pide mantenerlo ordenado, ceder asientos y seguir las normas de la \"Cultura Metro\".",
+    "pt": "O metro de Medellín é limpo e motivo de orgulho local. Pede-se que se mantenha arrumado, que se cedam lugares e que se sigam as regras da \"Cultura Metro\".",
+    "pt_BR": "O metrô de Medellín é limpo e motivo de orgulho local. Pede-se mantê-lo limpo, ceder assentos e seguir as regras da \"Cultura Metro\".",
+    "fr": "Le métro de Medellín est propre et source de fierté locale. On demande de le garder propre, de céder sa place et de suivre les règles de la \"Cultura Metro\".",
+    "de": "Die Metro von Medellín ist sauber und ein Grund für lokalen Stolz. Man soll sie ordentlich halten, Sitzplätze abgeben und die Regeln der \"Cultura Metro\" befolgen."
+   }
+  },
+  {
+   "id": "ct-CO-17",
+   "category": "language",
+   "text": {
+    "en": "Colombian Spanish, especially in Bogotá, is often seen as clear and easy to follow, which makes it popular with Spanish learners.",
+    "it": "Lo spagnolo colombiano, soprattutto a Bogotá, è spesso considerato chiaro e facile da seguire, il che lo rende popolare tra chi impara lo spagnolo.",
+    "es": "El español colombiano, sobre todo el de Bogotá, suele considerarse claro y fácil de seguir, lo que lo hace popular entre quienes aprenden español.",
+    "pt": "O espanhol colombiano, sobretudo o de Bogotá, é muitas vezes considerado claro e fácil de acompanhar, o que o torna popular entre quem aprende espanhol.",
+    "pt_BR": "O espanhol colombiano, principalmente o de Bogotá, costuma ser considerado claro e fácil de acompanhar, o que o torna popular entre quem aprende espanhol.",
+    "fr": "L'espagnol colombien, surtout celui de Bogotá, est souvent jugé clair et facile à suivre, ce qui le rend populaire auprès des apprenants.",
+    "de": "Kolumbianisches Spanisch, besonders in Bogotá, gilt oft als klar und gut verständlich und ist deshalb bei Lernenden beliebt."
+   }
+  },
+  {
+   "id": "ct-CO-18",
+   "category": "language",
+   "text": {
+    "en": "\"Con gusto\" is a common way to say \"you're welcome\", and many Colombians use \"usted\" even with friends and family as a sign of warmth.",
+    "it": "\"Con gusto\" è un modo comune per dire \"prego\", e molti colombiani usano \"usted\" anche con amici e familiari come segno di affetto.",
+    "es": "\"Con gusto\" es una forma común de decir \"de nada\", y muchos colombianos usan \"usted\" incluso con amigos y familia como muestra de cariño.",
+    "pt": "\"Con gusto\" é uma forma comum de dizer \"de nada\", e muitos colombianos usam \"usted\" mesmo com amigos e família como sinal de carinho.",
+    "pt_BR": "\"Con gusto\" é uma forma comum de dizer \"de nada\", e muitos colombianos usam \"usted\" até com amigos e família como sinal de carinho.",
+    "fr": "\"Con gusto\" est une façon courante de dire \"de rien\", et beaucoup de Colombiens emploient \"usted\" même avec amis et famille en signe d'affection.",
+    "de": "\"Con gusto\" ist eine gängige Art, \"gern geschehen\" zu sagen, und viele Kolumbianer verwenden \"usted\" sogar bei Freunden und Familie als Zeichen von Zuneigung."
+   }
+  },
+  {
+   "id": "ct-CO-19",
+   "category": "festivals",
+   "text": {
+    "en": "The Barranquilla Carnival, held before Lent, is recognised by UNESCO as intangible cultural heritage. Expect parades, music and costumes.",
+    "it": "Il Carnevale di Barranquilla, che si tiene prima della Quaresima, è riconosciuto dall'UNESCO come patrimonio culturale immateriale. Aspettati sfilate, musica e costumi.",
+    "es": "El Carnaval de Barranquilla, que se celebra antes de la Cuaresma, está reconocido por la UNESCO como patrimonio cultural inmaterial. Habrá desfiles, música y disfraces.",
+    "pt": "O Carnaval de Barranquilla, realizado antes da Quaresma, é reconhecido pela UNESCO como património cultural imaterial. Espera desfiles, música e fantasias.",
+    "pt_BR": "O Carnaval de Barranquilla, realizado antes da Quaresma, é reconhecido pela UNESCO como patrimônio cultural imaterial. Espere desfiles, música e fantasias.",
+    "fr": "Le Carnaval de Barranquilla, organisé avant le Carême, est reconnu par l'UNESCO comme patrimoine culturel immatériel. Attendez-vous à des défilés, de la musique et des costumes.",
+    "de": "Der Karneval von Barranquilla vor der Fastenzeit ist von der UNESCO als immaterielles Kulturerbe anerkannt. Erwarten Sie Umzüge, Musik und Kostüme."
+   }
+  },
+  {
+   "id": "ct-CO-20",
+   "category": "festivals",
+   "text": {
+    "en": "Each August, Medellín's Feria de las Flores features the Desfile de Silleteros, where farmers carry huge flower arrangements on their backs.",
+    "it": "Ogni agosto la Feria de las Flores di Medellín presenta il Desfile de Silleteros, in cui i contadini portano enormi composizioni floreali sulla schiena.",
+    "es": "Cada agosto, la Feria de las Flores de Medellín incluye el Desfile de Silleteros, donde campesinos cargan enormes arreglos de flores en la espalda.",
+    "pt": "Todos os anos, em agosto, a Feria de las Flores de Medellín inclui o Desfile de Silleteros, em que camponeses carregam enormes arranjos de flores às costas.",
+    "pt_BR": "Todo mês de agosto, a Feria de las Flores de Medellín inclui o Desfile de Silleteros, em que camponeses carregam enormes arranjos de flores nas costas.",
+    "fr": "Chaque août, la Feria de las Flores de Medellín propose le Desfile de Silleteros, où des paysans portent d'énormes compositions florales sur le dos.",
+    "de": "Jeden August gibt es bei der Feria de las Flores in Medellín den Desfile de Silleteros, bei dem Bauern riesige Blumengestecke auf dem Rücken tragen."
+   }
+  },
+  {
+   "id": "ct-CO-21",
+   "category": "family",
+   "text": {
+    "en": "On the night of 7 December, the Día de las Velitas, families light candles and lanterns outside their homes to start the Christmas season.",
+    "it": "La notte del 7 dicembre, il Día de las Velitas, le famiglie accendono candele e lanterne fuori casa per dare inizio al periodo natalizio.",
+    "es": "En la noche del 7 de diciembre, el Día de las Velitas, las familias encienden velas y farolitos afuera de sus casas para iniciar la temporada navideña.",
+    "pt": "Na noite de 7 de dezembro, o Día de las Velitas, as famílias acendem velas e lanternas à porta de casa para dar início à época natalícia.",
+    "pt_BR": "Na noite de 7 de dezembro, o Día de las Velitas, as famílias acendem velas e lanternas na frente de casa para dar início à temporada natalina.",
+    "fr": "Dans la nuit du 7 décembre, le Día de las Velitas, les familles allument bougies et lanternes devant chez elles pour lancer la saison de Noël.",
+    "de": "In der Nacht zum 7. Dezember, dem Día de las Velitas, zünden Familien vor ihren Häusern Kerzen und Laternen an und eröffnen so die Weihnachtszeit."
+   }
+  },
+  {
+   "id": "ct-CO-22",
+   "category": "money",
+   "text": {
+    "en": "Prices are in Colombian pesos (COP), and thousands are written with dots, like $10.000. Check the number of zeros before paying.",
+    "it": "I prezzi sono in pesos colombiani (COP) e le migliaia si scrivono con il punto, ad esempio $10.000. Controlla il numero di zeri prima di pagare.",
+    "es": "Los precios están en pesos colombianos (COP) y los miles se escriben con punto, como $10.000. Revisa la cantidad de ceros antes de pagar.",
+    "pt": "Os preços são em pesos colombianos (COP) e os milhares escrevem-se com ponto, como $10.000. Confere o número de zeros antes de pagar.",
+    "pt_BR": "Os preços são em pesos colombianos (COP) e os milhares são escritos com ponto, como $10.000. Confira o número de zeros antes de pagar.",
+    "fr": "Les prix sont en pesos colombiens (COP) et les milliers s'écrivent avec un point, comme $10.000. Vérifiez le nombre de zéros avant de payer.",
+    "de": "Preise sind in kolumbianischen Pesos (COP) angegeben, Tausender mit Punkt, z. B. $10.000. Prüfen Sie vor dem Bezahlen die Anzahl der Nullen."
+   }
+  },
+  {
+   "id": "ct-CO-23",
+   "category": "photography",
+   "text": {
+    "en": "Ask before photographing people, especially in Indigenous communities and rural villages, and be ready to accept a polite refusal.",
+    "it": "Chiedi prima di fotografare le persone, soprattutto nelle comunità indigene e nei villaggi rurali, e sii pronto ad accettare un cortese rifiuto.",
+    "es": "Pregunta antes de fotografiar a las personas, sobre todo en comunidades indígenas y pueblos rurales, y está preparado para aceptar una negativa amable.",
+    "pt": "Pergunta antes de fotografar pessoas, sobretudo em comunidades indígenas e aldeias rurais, e está preparado para aceitar uma recusa educada.",
+    "pt_BR": "Pergunte antes de fotografar pessoas, principalmente em comunidades indígenas e vilarejos rurais, e esteja pronto para aceitar uma recusa educada.",
+    "fr": "Demandez avant de photographier des personnes, surtout dans les communautés autochtones et les villages ruraux, et acceptez un refus poli.",
+    "de": "Fragen Sie vor Fotos von Menschen nach, besonders in indigenen Gemeinden und Dörfern auf dem Land, und akzeptieren Sie eine höfliche Absage."
+   }
+  },
+  {
+   "id": "ct-CO-24",
+   "category": "nightlife",
+   "text": {
+    "en": "Cali is known as the salsa capital of the world. Dancing is a social activity, and learners are usually welcomed at salsa classes and clubs.",
+    "it": "Cali è conosciuta come la capitale mondiale della salsa. Ballare è un'attività sociale e chi sta imparando di solito è il benvenuto a lezioni e locali di salsa.",
+    "es": "Cali es conocida como la capital mundial de la salsa. Bailar es una actividad social y a quienes están aprendiendo se les suele recibir bien en clases y locales de salsa.",
+    "pt": "Cali é conhecida como a capital mundial da salsa. Dançar é uma atividade social e quem está a aprender costuma ser bem recebido em aulas e salas de salsa.",
+    "pt_BR": "Cali é conhecida como a capital mundial da salsa. Dançar é uma atividade social e quem está aprendendo costuma ser bem recebido em aulas e casas de salsa.",
+    "fr": "Cali est connue comme la capitale mondiale de la salsa. Danser est une activité sociale, et les débutants sont généralement bien accueillis dans les cours et les clubs.",
+    "de": "Cali gilt als Salsa-Hauptstadt der Welt. Tanzen ist ein geselliges Erlebnis, und Lernende sind in Salsa-Kursen und Clubs meist willkommen."
+   }
+  },
+  {
+   "id": "ct-CO-25",
+   "category": "nature",
+   "text": {
+    "en": "Some protected areas, like Tayrona National Park, have limited entry and close at times for ecological rest. Check dates and book ahead.",
+    "it": "Alcune aree protette, come il Parco Nazionale Tayrona, hanno accessi limitati e a volte chiudono per il riposo ecologico. Controlla le date e prenota in anticipo.",
+    "es": "Algunas áreas protegidas, como el Parque Nacional Tayrona, tienen ingreso limitado y cierran en ciertas épocas por descanso ecológico. Revisa las fechas y reserva con tiempo.",
+    "pt": "Algumas áreas protegidas, como o Parque Nacional Tayrona, têm entrada limitada e fecham por vezes para descanso ecológico. Confirma as datas e reserva com antecedência.",
+    "pt_BR": "Algumas áreas protegidas, como o Parque Nacional Tayrona, têm entrada limitada e fecham em certas épocas para descanso ecológico. Confira as datas e reserve com antecedência.",
+    "fr": "Certaines aires protégées, comme le parc national Tayrona, limitent l'accès et ferment parfois pour repos écologique. Vérifiez les dates et réservez à l'avance.",
+    "de": "Manche Schutzgebiete wie der Tayrona-Nationalpark haben begrenzten Zutritt und schließen zeitweise zur ökologischen Erholung. Daten prüfen und rechtzeitig buchen."
+   }
+  },
+  {
+   "id": "ct-CO-26",
+   "category": "safety",
+   "text": {
+    "en": "Locals say \"no dar papaya\", meaning don't make yourself an easy target: keep your phone out of sight on the street and use official taxis or apps.",
+    "it": "La gente del posto dice \"no dar papaya\", cioè non rendersi un bersaglio facile: tieni il telefono nascosto in strada e usa taxi ufficiali o app.",
+    "es": "Los locales dicen \"no dar papaya\", es decir, no ponerse como blanco fácil: no saques el celular en la calle y usa taxis oficiales o aplicaciones.",
+    "pt": "Os locais dizem \"no dar papaya\", ou seja, não te tornes um alvo fácil: mantém o telemóvel fora de vista na rua e usa táxis oficiais ou aplicações.",
+    "pt_BR": "Os locais dizem \"no dar papaya\", ou seja, não se torne um alvo fácil: mantenha o celular fora de vista na rua e use táxis oficiais ou aplicativos.",
+    "fr": "Les habitants disent \"no dar papaya\", c'est-à-dire ne pas être une cible facile : gardez votre téléphone discret dans la rue et utilisez des taxis officiels ou des applications.",
+    "de": "Einheimische sagen \"no dar papaya\", also kein leichtes Ziel sein: Handy auf der Straße nicht offen zeigen und offizielle Taxis oder Apps nutzen."
+   }
+  },
+  {
+   "id": "ct-CO-27",
+   "category": "local_pride",
+   "text": {
+    "en": "Colombian coffee is a national pride. The Coffee Cultural Landscape in the Andes is a UNESCO World Heritage Site worth visiting.",
+    "it": "Il caffè colombiano è un orgoglio nazionale. Il Paesaggio Culturale del Caffè nelle Ande è Patrimonio dell'Umanità UNESCO e vale una visita.",
+    "es": "El café colombiano es un orgullo nacional. El Paisaje Cultural Cafetero en los Andes es Patrimonio de la Humanidad de la UNESCO y vale la pena visitarlo.",
+    "pt": "O café colombiano é um orgulho nacional. A Paisagem Cultural do Café nos Andes é Património Mundial da UNESCO e vale a pena visitar.",
+    "pt_BR": "O café colombiano é um orgulho nacional. A Paisagem Cultural Cafeeira nos Andes é Patrimônio Mundial da UNESCO e vale a visita.",
+    "fr": "Le café colombien est une fierté nationale. Le paysage culturel du café dans les Andes est classé au patrimoine mondial de l'UNESCO et mérite le détour.",
+    "de": "Kolumbianischer Kaffee ist ein Nationalstolz. Die Kulturlandschaft des Kaffees in den Anden ist UNESCO-Welterbe und einen Besuch wert."
+   }
+  },
+  {
+   "id": "ct-CO-28",
+   "category": "local_pride",
+   "text": {
+    "en": "Colombians take pride in Gabriel García Márquez, the Nobel Prize-winning author of One Hundred Years of Solitude, born in Aracataca.",
+    "it": "I colombiani sono orgogliosi di Gabriel García Márquez, premio Nobel e autore di Cent'anni di solitudine, nato ad Aracataca.",
+    "es": "Los colombianos se enorgullecen de Gabriel García Márquez, Premio Nobel y autor de Cien años de soledad, nacido en Aracataca.",
+    "pt": "Os colombianos têm orgulho de Gabriel García Márquez, Prémio Nobel e autor de Cem Anos de Solidão, nascido em Aracataca.",
+    "pt_BR": "Os colombianos têm orgulho de Gabriel García Márquez, Prêmio Nobel e autor de Cem Anos de Solidão, nascido em Aracataca.",
+    "fr": "Les Colombiens sont fiers de Gabriel García Márquez, prix Nobel et auteur de Cent ans de solitude, né à Aracataca.",
+    "de": "Kolumbianer sind stolz auf Gabriel García Márquez, den Literaturnobelpreisträger und Autor von Hundert Jahre Einsamkeit, geboren in Aracataca."
+   }
+  },
+  {
+   "id": "ct-CO-29",
+   "category": "nature",
+   "text": {
+    "en": "Bogotá is at about 2,600 m, so take it easy on your first day, drink water and avoid heavy meals if you feel dizzy or tired.",
+    "it": "Bogotá si trova a circa 2.600 m, quindi vai piano il primo giorno, bevi acqua ed evita pasti pesanti se ti senti stordito o stanco.",
+    "es": "Bogotá está a unos 2.600 m, así que ve con calma el primer día, bebe agua y evita comidas pesadas si te sientes mareado o cansado.",
+    "pt": "Bogotá fica a cerca de 2600 m, por isso vai com calma no primeiro dia, bebe água e evita refeições pesadas se te sentires tonto ou cansado.",
+    "pt_BR": "Bogotá fica a cerca de 2.600 m, então vá com calma no primeiro dia, beba água e evite refeições pesadas se sentir tontura ou cansaço.",
+    "fr": "Bogotá est à environ 2 600 m : allez-y doucement le premier jour, buvez de l'eau et évitez les repas lourds si vous avez des vertiges ou êtes fatigué.",
+    "de": "Bogotá liegt auf etwa 2.600 m. Gehen Sie den ersten Tag ruhig an, trinken Sie Wasser und meiden Sie schwere Mahlzeiten, wenn Ihnen schwindlig oder müde ist."
+   }
+  },
+  {
+   "id": "ct-CO-30",
+   "category": "transport",
+   "text": {
+    "en": "Because the Andes make road trips slow, domestic flights are a common way to cover long distances between cities such as Bogotá, Cartagena and Medellín.",
+    "it": "Poiché le Ande rendono lenti i viaggi su strada, i voli interni sono un modo comune per coprire lunghe distanze tra città come Bogotá, Cartagena e Medellín.",
+    "es": "Como los Andes hacen lentos los viajes por carretera, los vuelos nacionales son una forma común de cubrir largas distancias entre ciudades como Bogotá, Cartagena y Medellín.",
+    "pt": "Como os Andes tornam as viagens por estrada lentas, os voos internos são uma forma comum de cobrir grandes distâncias entre cidades como Bogotá, Cartagena e Medellín.",
+    "pt_BR": "Como os Andes deixam as viagens de carro lentas, os voos domésticos são um jeito comum de cobrir longas distâncias entre cidades como Bogotá, Cartagena e Medellín.",
+    "fr": "Comme les Andes ralentissent les trajets routiers, les vols intérieurs sont courants pour parcourir de longues distances entre des villes comme Bogotá, Carthagène et Medellín.",
+    "de": "Weil die Anden Autofahrten langsam machen, sind Inlandsflüge üblich, um lange Strecken zwischen Städten wie Bogotá, Cartagena und Medellín zu überbrücken."
+   }
+  }
+ ]
+}

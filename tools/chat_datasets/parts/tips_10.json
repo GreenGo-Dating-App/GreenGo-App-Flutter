@@ -1,0 +1,1178 @@
+{
+ "ES": [
+  {
+   "id": "ct-ES-01",
+   "category": "greetings",
+   "text": {
+    "en": "Friends and acquaintances usually greet with two kisses on the cheeks, starting with the right. In formal or business settings a handshake is the norm.",
+    "it": "Amici e conoscenti si salutano di solito con due baci sulle guance, partendo da destra. In contesti formali o di lavoro si usa la stretta di mano.",
+    "es": "Los amigos y conocidos suelen saludarse con dos besos, empezando por la mejilla derecha. En entornos formales o de trabajo lo normal es dar la mano.",
+    "pt": "Amigos e conhecidos costumam cumprimentar-se com dois beijos na cara, começando pelo lado direito. Em contextos formais ou de trabalho, usa-se o aperto de mão.",
+    "pt_BR": "Amigos e conhecidos costumam se cumprimentar com dois beijinhos no rosto, começando pelo lado direito. Em contextos formais ou de trabalho, o normal é o aperto de mão.",
+    "fr": "Entre amis et connaissances, on se salue souvent par deux bises, en commençant par la joue droite. Dans un cadre formel ou professionnel, on se serre la main.",
+    "de": "Freunde und Bekannte begrüßen sich meist mit zwei Wangenküssen, zuerst rechts. In formellen oder beruflichen Situationen gibt man sich die Hand."
+   }
+  },
+  {
+   "id": "ct-ES-02",
+   "category": "greetings",
+   "text": {
+    "en": "Say 'buenos días' until lunchtime and 'buenas tardes' after it, which in Spain often means until about 8 pm. Greeting people when entering a small shop is polite.",
+    "it": "Si dice 'buenos días' fino all'ora di pranzo e 'buenas tardes' dopo, che in Spagna spesso vale fino alle 20 circa. Salutare entrando in un piccolo negozio è educato.",
+    "es": "Se dice 'buenos días' hasta la hora de comer y 'buenas tardes' después, que en España suele valer hasta las 8 de la tarde. Saludar al entrar en una tienda pequeña es de buena educación.",
+    "pt": "Diz-se 'buenos días' até à hora do almoço e 'buenas tardes' depois, o que em Espanha costuma valer até cerca das 20h. Cumprimentar ao entrar numa loja pequena é educado.",
+    "pt_BR": "Diz-se 'buenos días' até a hora do almoço e 'buenas tardes' depois, o que na Espanha costuma valer até umas 20h. Cumprimentar ao entrar numa loja pequena é educado.",
+    "fr": "On dit 'buenos días' jusqu'à l'heure du déjeuner, puis 'buenas tardes', ce qui en Espagne court souvent jusqu'à 20 h environ. Saluer en entrant dans une petite boutique est poli.",
+    "de": "Man sagt 'buenos días' bis zum Mittagessen und danach 'buenas tardes', was in Spanien oft bis etwa 20 Uhr gilt. Beim Betreten eines kleinen Ladens zu grüßen gehört sich."
+   }
+  },
+  {
+   "id": "ct-ES-03",
+   "category": "conversation",
+   "text": {
+    "en": "Conversations are often lively and animated, with people talking at the same time. Interrupting is usually a sign of interest, not rudeness.",
+    "it": "Le conversazioni sono spesso vivaci e animate, con persone che parlano insieme. Interrompere di solito è segno di interesse, non di maleducazione.",
+    "es": "Las conversaciones suelen ser animadas, con varias personas hablando a la vez. Interrumpir suele ser señal de interés, no de mala educación.",
+    "pt": "As conversas costumam ser animadas, com várias pessoas a falar ao mesmo tempo. Interromper costuma ser sinal de interesse, não de má educação.",
+    "pt_BR": "As conversas costumam ser animadas, com várias pessoas falando ao mesmo tempo. Interromper costuma ser sinal de interesse, não de falta de educação.",
+    "fr": "Les conversations sont souvent animées, avec plusieurs personnes qui parlent en même temps. Couper la parole est généralement un signe d'intérêt, pas d'impolitesse.",
+    "de": "Gespräche sind oft lebhaft, und mehrere Leute reden gleichzeitig. Ins Wort zu fallen gilt meist als Zeichen von Interesse, nicht von Unhöflichkeit."
+   }
+  },
+  {
+   "id": "ct-ES-04",
+   "category": "conversation",
+   "text": {
+    "en": "Spain has strong regional identities. Ask people about their own region, such as Andalusia, Catalonia or Galicia, rather than assuming everyone sees things the same way.",
+    "it": "La Spagna ha forti identità regionali. Chiedi alle persone della loro regione, come Andalusia, Catalogna o Galizia, senza dare per scontato che tutti la vedano allo stesso modo.",
+    "es": "España tiene fuertes identidades regionales. Pregunta a la gente por su región, como Andalucía, Cataluña o Galicia, en lugar de suponer que todos lo ven igual.",
+    "pt": "Espanha tem fortes identidades regionais. Pergunta às pessoas pela sua região, como a Andaluzia, a Catalunha ou a Galiza, em vez de assumires que todos pensam da mesma forma.",
+    "pt_BR": "A Espanha tem fortes identidades regionais. Pergunte às pessoas sobre a região delas, como Andaluzia, Catalunha ou Galícia, em vez de supor que todos pensam do mesmo jeito.",
+    "fr": "L'Espagne a de fortes identités régionales. Demande aux gens de leur région, comme l'Andalousie, la Catalogne ou la Galice, plutôt que de supposer que tout le monde voit les choses pareil.",
+    "de": "Spanien hat starke regionale Identitäten. Frag die Leute nach ihrer Region, etwa Andalusien, Katalonien oder Galicien, statt anzunehmen, dass alle es gleich sehen."
+   }
+  },
+  {
+   "id": "ct-ES-05",
+   "category": "dining",
+   "text": {
+    "en": "Meals are late compared with much of Europe: lunch is usually between 2 and 4 pm and dinner often starts around 9 or 10 pm.",
+    "it": "I pasti sono tardivi rispetto a gran parte dell'Europa: il pranzo è di solito tra le 14 e le 16 e la cena inizia spesso verso le 21 o le 22.",
+    "es": "Las comidas son tardías comparadas con buena parte de Europa: el almuerzo suele ser entre las 2 y las 4 de la tarde y la cena empieza a menudo hacia las 9 o las 10 de la noche.",
+    "pt": "As refeições são tardias comparadas com grande parte da Europa: o almoço costuma ser entre as 14h e as 16h e o jantar começa muitas vezes por volta das 21h ou 22h.",
+    "pt_BR": "As refeições são tardias em comparação com boa parte da Europa: o almoço costuma ser entre 14h e 16h e o jantar começa muitas vezes por volta das 21h ou 22h.",
+    "fr": "Les repas sont tardifs par rapport à une grande partie de l'Europe : le déjeuner a lieu en général entre 14 h et 16 h et le dîner commence souvent vers 21 h ou 22 h.",
+    "de": "Die Mahlzeiten liegen später als in großen Teilen Europas: Mittagessen gibt es meist zwischen 14 und 16 Uhr, das Abendessen beginnt oft gegen 21 oder 22 Uhr."
+   }
+  },
+  {
+   "id": "ct-ES-06",
+   "category": "dining",
+   "text": {
+    "en": "Tapas are small plates meant for sharing. In some cities, such as Granada, a free tapa often comes with your drink.",
+    "it": "Le tapas sono piccoli piatti da condividere. In alcune città, come Granada, con la bevanda arriva spesso una tapa gratis.",
+    "es": "Las tapas son platos pequeños para compartir. En algunas ciudades, como Granada, suelen poner una tapa gratis con la bebida.",
+    "pt": "As tapas são pratos pequenos para partilhar. Em algumas cidades, como Granada, costuma vir uma tapa grátis com a bebida.",
+    "pt_BR": "As tapas são pratos pequenos para compartilhar. Em algumas cidades, como Granada, costuma vir uma tapa grátis com a bebida.",
+    "fr": "Les tapas sont de petites portions à partager. Dans certaines villes, comme Grenade, une tapa est souvent offerte avec la boisson.",
+    "de": "Tapas sind kleine Gerichte zum Teilen. In manchen Städten, etwa in Granada, gibt es zum Getränk oft eine kostenlose Tapa."
+   }
+  },
+  {
+   "id": "ct-ES-07",
+   "category": "dining",
+   "text": {
+    "en": "After a meal, people often stay at the table to chat for a long time. This is called 'sobremesa', and rushing to leave can feel odd.",
+    "it": "Dopo il pasto, spesso si resta a tavola a chiacchierare a lungo. Si chiama 'sobremesa', e avere fretta di andare via può sembrare strano.",
+    "es": "Después de comer, la gente suele quedarse en la mesa charlando un buen rato. Es la 'sobremesa', y marcharse con prisas puede resultar raro.",
+    "pt": "Depois da refeição, as pessoas costumam ficar à mesa a conversar durante muito tempo. Chama-se 'sobremesa' e sair com pressa pode parecer estranho.",
+    "pt_BR": "Depois da refeição, as pessoas costumam ficar à mesa conversando por bastante tempo. Chama-se 'sobremesa', e sair com pressa pode parecer estranho.",
+    "fr": "Après le repas, on reste souvent longtemps à table pour discuter. C'est la 'sobremesa', et partir en hâte peut sembler étrange.",
+    "de": "Nach dem Essen bleibt man oft lange am Tisch und unterhält sich. Das nennt man 'sobremesa', und es wirkt seltsam, wenn man es eilig hat."
+   }
+  },
+  {
+   "id": "ct-ES-08",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping is not obligatory since service is included. Many people round up the bill or leave a few coins in a bar or restaurant if they were happy.",
+    "it": "La mancia non è obbligatoria perché il servizio è incluso. Molti arrotondano il conto o lasciano qualche moneta in un bar o ristorante se sono soddisfatti.",
+    "es": "La propina no es obligatoria porque el servicio está incluido. Mucha gente redondea la cuenta o deja unas monedas en un bar o restaurante si ha quedado contenta.",
+    "pt": "A gorjeta não é obrigatória porque o serviço está incluído. Muitas pessoas arredondam a conta ou deixam algumas moedas num bar ou restaurante se ficarem satisfeitas.",
+    "pt_BR": "A gorjeta não é obrigatória porque o serviço está incluído. Muita gente arredonda a conta ou deixa algumas moedas em um bar ou restaurante se ficou satisfeita.",
+    "fr": "Le pourboire n'est pas obligatoire, car le service est inclus. Beaucoup arrondissent l'addition ou laissent quelques pièces dans un bar ou un restaurant s'ils sont contents.",
+    "de": "Trinkgeld ist nicht Pflicht, denn der Service ist inbegriffen. Viele runden die Rechnung auf oder lassen in einer Bar oder einem Restaurant ein paar Münzen liegen, wenn sie zufrieden waren."
+   }
+  },
+  {
+   "id": "ct-ES-09",
+   "category": "gifts",
+   "text": {
+    "en": "If you are invited to someone's home, it is nice to bring pastries, sweets or a small gift for the host. You do not need to bring anything expensive.",
+    "it": "Se sei invitato a casa di qualcuno, è carino portare dolci, pasticcini o un piccolo regalo per chi ospita. Non serve niente di costoso.",
+    "es": "Si te invitan a casa de alguien, queda bien llevar pasteles, dulces o un detalle para quien te recibe. No hace falta nada caro.",
+    "pt": "Se fores convidado a casa de alguém, é simpático levar bolos, doces ou uma pequena lembrança para quem recebe. Não é preciso nada caro.",
+    "pt_BR": "Se você for convidado para a casa de alguém, é simpático levar doces, bolo ou uma lembrancinha para o anfitrião. Não precisa ser nada caro.",
+    "fr": "Si on t'invite chez quelqu'un, il est agréable d'apporter des pâtisseries, des douceurs ou un petit cadeau pour l'hôte. Inutile d'offrir quelque chose de cher.",
+    "de": "Wenn du zu jemandem nach Hause eingeladen bist, kommt ein Gebäck, Süßigkeiten oder ein kleines Mitbringsel gut an. Es muss nichts Teures sein."
+   }
+  },
+  {
+   "id": "ct-ES-10",
+   "category": "dress",
+   "text": {
+    "en": "People tend to dress neatly and in a smart-casual way when going out. Beachwear is for the beach and pool, not for walking around town or entering shops.",
+    "it": "Quando escono, le persone si vestono in modo curato e smart casual. L'abbigliamento da spiaggia è per spiaggia e piscina, non per girare in città o entrare nei negozi.",
+    "es": "Al salir, la gente suele vestir con cuidado y de forma informal elegante. La ropa de playa es para la playa y la piscina, no para pasear por la ciudad ni entrar en tiendas.",
+    "pt": "As pessoas costumam vestir-se de forma cuidada e smart casual quando saem. A roupa de praia é para a praia e a piscina, não para andar pela cidade nem entrar em lojas.",
+    "pt_BR": "As pessoas costumam se vestir de maneira caprichada e smart casual quando saem. Roupa de praia é para a praia e a piscina, não para andar pela cidade nem entrar em lojas.",
+    "fr": "On a tendance à s'habiller avec soin, dans un style décontracté chic, pour sortir. La tenue de plage reste pour la plage et la piscine, pas pour se promener en ville ni entrer dans les magasins.",
+    "de": "Beim Ausgehen kleidet man sich meist gepflegt und leger-elegant. Strandkleidung ist für Strand und Pool gedacht, nicht für Stadtbummel oder Geschäfte."
+   }
+  },
+  {
+   "id": "ct-ES-11",
+   "category": "dress",
+   "text": {
+    "en": "When visiting churches and cathedrals, cover your shoulders and knees. Some, like those in Seville or Toledo, may turn away people in very short clothes.",
+    "it": "Quando visiti chiese e cattedrali, copri spalle e ginocchia. Alcune, come quelle di Siviglia o Toledo, possono non far entrare chi indossa abiti molto corti.",
+    "es": "Al visitar iglesias y catedrales, cúbrete los hombros y las rodillas. En algunas, como las de Sevilla o Toledo, pueden no dejar entrar con ropa muy corta.",
+    "pt": "Ao visitar igrejas e catedrais, tapa os ombros e os joelhos. Algumas, como as de Sevilha ou Toledo, podem não deixar entrar quem leve roupa muito curta.",
+    "pt_BR": "Ao visitar igrejas e catedrais, cubra os ombros e os joelhos. Algumas, como as de Sevilha ou Toledo, podem barrar quem estiver com roupas muito curtas.",
+    "fr": "Pour visiter les églises et cathédrales, couvre-toi les épaules et les genoux. Certaines, comme celles de Séville ou de Tolède, peuvent refuser l'entrée aux tenues très courtes.",
+    "de": "Bei Kirchen und Kathedralen solltest du Schultern und Knie bedecken. Manche, etwa in Sevilla oder Toledo, lassen Leute in sehr kurzer Kleidung nicht hinein."
+   }
+  },
+  {
+   "id": "ct-ES-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "During Semana Santa (Holy Week), solemn processions fill the streets of many cities. Keep quiet, give the participants space and do not cross the procession.",
+    "it": "Durante la Semana Santa (Settimana Santa) solenni processioni riempiono le strade di molte città. Fai silenzio, lascia spazio ai partecipanti e non attraversare il corteo.",
+    "es": "Durante la Semana Santa, solemnes procesiones llenan las calles de muchas ciudades. Guarda silencio, deja espacio a los participantes y no cruces la procesión.",
+    "pt": "Durante a Semana Santa, solenes procissões enchem as ruas de muitas cidades. Mantém o silêncio, dá espaço aos participantes e não atravesses o cortejo.",
+    "pt_BR": "Durante a Semana Santa, solenes procissões tomam as ruas de muitas cidades. Fique em silêncio, dê espaço aos participantes e não atravesse o cortejo.",
+    "fr": "Pendant la Semana Santa (Semaine sainte), de solennelles processions envahissent les rues de nombreuses villes. Reste silencieux, laisse de la place aux participants et ne traverse pas le cortège.",
+    "de": "Während der Semana Santa (Karwoche) ziehen feierliche Prozessionen durch die Straßen vieler Städte. Sei still, lass den Teilnehmenden Platz und quere die Prozession nicht."
+   }
+  },
+  {
+   "id": "ct-ES-13",
+   "category": "gestures",
+   "text": {
+    "en": "To beckon someone, people often wave their fingers with the palm facing down, which can look like waving goodbye to visitors from other countries.",
+    "it": "Per chiamare qualcuno, spesso si muovono le dita con il palmo rivolto verso il basso, un gesto che per chi viene da altri paesi può sembrare un saluto d'addio.",
+    "es": "Para llamar a alguien, mucha gente mueve los dedos con la palma hacia abajo, un gesto que a visitantes de otros países puede parecerles una despedida.",
+    "pt": "Para chamar alguém, muitas pessoas mexem os dedos com a palma da mão virada para baixo, um gesto que para visitantes de outros países pode parecer um adeus.",
+    "pt_BR": "Para chamar alguém, muita gente mexe os dedos com a palma da mão virada para baixo, um gesto que para visitantes de outros países pode parecer um tchau.",
+    "fr": "Pour appeler quelqu'un, beaucoup agitent les doigts, paume vers le bas, un geste qui peut ressembler à un au revoir pour les visiteurs d'autres pays.",
+    "de": "Um jemanden heranzuwinken, bewegen viele die Finger bei nach unten gedrehter Handfläche, was auf Besucher aus anderen Ländern wie ein Abschiedswinken wirken kann."
+   }
+  },
+  {
+   "id": "ct-ES-14",
+   "category": "punctuality",
+   "text": {
+    "en": "Business meetings start on time, but social events are relaxed. Arriving 10 to 15 minutes after the agreed time to a dinner or party is common.",
+    "it": "Le riunioni di lavoro iniziano puntuali, ma gli eventi sociali sono più rilassati. Arrivare 10-15 minuti dopo l'orario stabilito a una cena o a una festa è normale.",
+    "es": "Las reuniones de trabajo empiezan a su hora, pero los eventos sociales son más relajados. Llegar 10 o 15 minutos tarde a una cena o fiesta es habitual.",
+    "pt": "As reuniões de trabalho começam a horas, mas os eventos sociais são mais descontraídos. Chegar 10 a 15 minutos depois da hora marcada a um jantar ou festa é comum.",
+    "pt_BR": "As reuniões de trabalho começam na hora, mas os eventos sociais são mais descontraídos. Chegar 10 a 15 minutos depois do horário combinado a um jantar ou festa é comum.",
+    "fr": "Les réunions de travail commencent à l'heure, mais les événements sociaux sont plus détendus. Arriver 10 à 15 minutes après l'heure convenue à un dîner ou une fête est courant.",
+    "de": "Geschäftstermine beginnen pünktlich, gesellige Anlässe sind lockerer. Zu einem Abendessen oder einer Party 10 bis 15 Minuten nach der vereinbarten Zeit zu kommen, ist üblich."
+   }
+  },
+  {
+   "id": "ct-ES-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "Smoking is banned in enclosed public places such as bars, restaurants and public transport. Smoking is generally allowed on outdoor terraces.",
+    "it": "Fumare è vietato nei luoghi pubblici chiusi come bar, ristoranti e mezzi pubblici. Sulle terrazze all'aperto di solito è consentito.",
+    "es": "Está prohibido fumar en espacios públicos cerrados como bares, restaurantes y transporte público. En las terrazas al aire libre suele estar permitido.",
+    "pt": "É proibido fumar em espaços públicos fechados, como bares, restaurantes e transportes públicos. Nas esplanadas ao ar livre costuma ser permitido.",
+    "pt_BR": "É proibido fumar em locais públicos fechados, como bares, restaurantes e transporte público. Nas áreas externas, como terraços, geralmente é permitido.",
+    "fr": "Il est interdit de fumer dans les lieux publics fermés comme les bars, restaurants et transports en commun. Sur les terrasses en plein air, c'est en général autorisé.",
+    "de": "In geschlossenen öffentlichen Räumen wie Bars, Restaurants und öffentlichen Verkehrsmitteln ist Rauchen verboten. Auf Außenterrassen ist es meist erlaubt."
+   }
+  },
+  {
+   "id": "ct-ES-16",
+   "category": "transport",
+   "text": {
+    "en": "Long-distance trains such as the AVE are fast and comfortable. Tickets have assigned seats and are cheaper when booked early.",
+    "it": "I treni a lunga percorrenza come l'AVE sono veloci e comodi. I biglietti hanno il posto assegnato e costano meno se prenotati con anticipo.",
+    "es": "Los trenes de larga distancia, como el AVE, son rápidos y cómodos. Los billetes llevan asiento asignado y salen más baratos si se compran con antelación.",
+    "pt": "Os comboios de longo curso, como o AVE, são rápidos e confortáveis. Os bilhetes têm lugar marcado e saem mais baratos se comprados com antecedência.",
+    "pt_BR": "Os trens de longa distância, como o AVE, são rápidos e confortáveis. As passagens têm assento marcado e saem mais baratas quando compradas com antecedência.",
+    "fr": "Les trains longue distance comme l'AVE sont rapides et confortables. Les billets ont une place attribuée et sont moins chers si on les achète à l'avance.",
+    "de": "Fernzüge wie der AVE sind schnell und bequem. Die Tickets haben feste Sitzplätze und sind günstiger, wenn man früh bucht."
+   }
+  },
+  {
+   "id": "ct-ES-17",
+   "category": "transport",
+   "text": {
+    "en": "Big cities such as Madrid and Barcelona sell rechargeable transport cards, which are usually cheaper per trip than single tickets.",
+    "it": "Le grandi città come Madrid e Barcellona vendono tessere di trasporto ricaricabili, di solito più economiche per corsa rispetto ai biglietti singoli.",
+    "es": "Las grandes ciudades, como Madrid y Barcelona, venden tarjetas de transporte recargables, que suelen salir más baratas por viaje que los billetes sencillos.",
+    "pt": "As grandes cidades, como Madrid e Barcelona, vendem cartões de transporte recarregáveis, que costumam sair mais baratos por viagem do que os bilhetes simples.",
+    "pt_BR": "As grandes cidades, como Madri e Barcelona, vendem cartões de transporte recarregáveis, que geralmente saem mais baratos por viagem do que as passagens avulsas.",
+    "fr": "Les grandes villes, comme Madrid et Barcelone, vendent des cartes de transport rechargeables, généralement moins chères par trajet que les tickets à l'unité.",
+    "de": "Große Städte wie Madrid und Barcelona verkaufen aufladbare Fahrkarten, die pro Fahrt meist günstiger sind als Einzeltickets."
+   }
+  },
+  {
+   "id": "ct-ES-18",
+   "category": "language",
+   "text": {
+    "en": "Spanish is also called 'castellano'. In some regions, Catalan, Galician and Basque are co-official languages, and people appreciate it when you respect them.",
+    "it": "Lo spagnolo si chiama anche 'castellano'. In alcune regioni catalano, galiziano e basco sono lingue co-ufficiali, e le persone apprezzano il rispetto verso di esse.",
+    "es": "El español también se llama 'castellano'. En algunas regiones, el catalán, el gallego y el euskera son lenguas cooficiales, y la gente agradece que se las respete.",
+    "pt": "O espanhol também se chama 'castellano'. Em algumas regiões, o catalão, o galego e o basco são línguas cooficiais, e as pessoas agradecem que as respeites.",
+    "pt_BR": "O espanhol também se chama 'castellano'. Em algumas regiões, o catalão, o galego e o basco são línguas cooficiais, e as pessoas apreciam quando você as respeita.",
+    "fr": "L'espagnol s'appelle aussi 'castellano'. Dans certaines régions, le catalan, le galicien et le basque sont co-officiels, et les gens apprécient qu'on les respecte.",
+    "de": "Spanisch heißt auch 'castellano'. In manchen Regionen sind Katalanisch, Galicisch und Baskisch ebenfalls Amtssprachen, und die Menschen schätzen es, wenn man sie respektiert."
+   }
+  },
+  {
+   "id": "ct-ES-19",
+   "category": "language",
+   "text": {
+    "en": "People use the informal 'tú' very quickly, even with strangers of a similar age. Trying a few Spanish words is always appreciated.",
+    "it": "Si passa molto in fretta al 'tú' informale, anche con sconosciuti di età simile. Provare a dire qualche parola in spagnolo è sempre apprezzato.",
+    "es": "Se pasa muy rápido al 'tú', incluso con desconocidos de edad parecida. Siempre se agradece que intentes decir algunas palabras en español.",
+    "pt": "Passa-se muito depressa ao 'tú' informal, mesmo com desconhecidos da mesma idade. Tentar dizer algumas palavras em espanhol é sempre apreciado.",
+    "pt_BR": "Passa-se muito rápido para o 'tú' informal, mesmo com desconhecidos da mesma idade. Tentar dizer algumas palavras em espanhol é sempre apreciado.",
+    "fr": "On passe très vite au 'tú' informel, même avec des inconnus du même âge. Essayer quelques mots d'espagnol est toujours apprécié.",
+    "de": "Man geht sehr schnell zum informellen 'tú' über, selbst mit Fremden im ähnlichen Alter. Ein paar Worte Spanisch zu versuchen, wird immer geschätzt."
+   }
+  },
+  {
+   "id": "ct-ES-20",
+   "category": "festivals",
+   "text": {
+    "en": "La Tomatina, a huge tomato fight in Buñol near Valencia, takes place on the last Wednesday of August. Wear old clothes and protect your phone and camera.",
+    "it": "La Tomatina, un'enorme battaglia di pomodori a Buñol vicino a Valencia, si tiene l'ultimo mercoledì di agosto. Indossa vestiti vecchi e proteggi telefono e fotocamera.",
+    "es": "La Tomatina, una enorme batalla de tomates en Buñol, cerca de Valencia, se celebra el último miércoles de agosto. Lleva ropa vieja y protege el móvil y la cámara.",
+    "pt": "A Tomatina, uma enorme batalha de tomates em Buñol, perto de Valência, realiza-se na última quarta-feira de agosto. Usa roupa velha e protege o telemóvel e a câmara.",
+    "pt_BR": "A Tomatina, uma enorme batalha de tomates em Buñol, perto de Valência, acontece na última quarta-feira de agosto. Use roupa velha e proteja o celular e a câmera.",
+    "fr": "La Tomatina, une gigantesque bataille de tomates à Buñol près de Valence, a lieu le dernier mercredi d'août. Mets de vieux vêtements et protège ton téléphone et ton appareil photo.",
+    "de": "La Tomatina, eine riesige Tomatenschlacht in Buñol bei Valencia, findet am letzten Mittwoch im August statt. Zieh alte Kleidung an und schütze Handy und Kamera."
+   }
+  },
+  {
+   "id": "ct-ES-21",
+   "category": "festivals",
+   "text": {
+    "en": "In Spain, children traditionally receive gifts on 6 January, the Day of the Three Kings, and many towns hold a parade the evening before.",
+    "it": "In Spagna i bambini ricevono tradizionalmente i regali il 6 gennaio, giorno dei Re Magi, e in molte città la sera prima c'è una sfilata.",
+    "es": "En España los niños reciben tradicionalmente los regalos el 6 de enero, Día de Reyes, y en muchas ciudades hay una cabalgata la tarde anterior.",
+    "pt": "Em Espanha, as crianças recebem tradicionalmente as prendas a 6 de janeiro, Dia de Reis, e em muitas cidades há um desfile na véspera.",
+    "pt_BR": "Na Espanha, as crianças recebem tradicionalmente os presentes em 6 de janeiro, Dia de Reis, e em muitas cidades há um desfile na véspera.",
+    "fr": "En Espagne, les enfants reçoivent traditionnellement leurs cadeaux le 6 janvier, jour des Rois mages, et de nombreuses villes organisent un défilé la veille.",
+    "de": "In Spanien bekommen Kinder traditionell am 6. Januar, dem Dreikönigstag, ihre Geschenke, und in vielen Städten gibt es am Vorabend einen Umzug."
+   }
+  },
+  {
+   "id": "ct-ES-22",
+   "category": "family",
+   "text": {
+    "en": "Family ties are strong. Long Sunday lunches with relatives are common, and adult children often live with their parents until they are older.",
+    "it": "I legami familiari sono forti. I lunghi pranzi domenicali con i parenti sono comuni, e i figli adulti spesso vivono con i genitori fino a un'età più avanzata.",
+    "es": "Los lazos familiares son fuertes. Son habituales las largas comidas de domingo con parientes, y muchos hijos adultos viven con sus padres hasta más tarde.",
+    "pt": "Os laços familiares são fortes. São comuns os longos almoços de domingo com os familiares, e muitos filhos adultos vivem com os pais até mais tarde.",
+    "pt_BR": "Os laços familiares são fortes. São comuns os longos almoços de domingo com parentes, e muitos filhos adultos moram com os pais até mais tarde.",
+    "fr": "Les liens familiaux sont forts. Les longs déjeuners dominicaux en famille sont courants, et de nombreux jeunes adultes vivent chez leurs parents jusqu'à un âge plus avancé.",
+    "de": "Familienbande sind stark. Lange Sonntagsessen mit Verwandten sind üblich, und viele erwachsene Kinder wohnen bis ins höhere Alter bei den Eltern."
+   }
+  },
+  {
+   "id": "ct-ES-23",
+   "category": "money",
+   "text": {
+    "en": "The euro is the currency. Cards and contactless payments are widely accepted, but keep some cash for small bars, markets and village shops.",
+    "it": "La valuta è l'euro. Carte e pagamenti contactless sono ampiamente accettati, ma tieni un po' di contanti per piccoli bar, mercati e negozi di paese.",
+    "es": "La moneda es el euro. Se aceptan ampliamente tarjetas y pagos sin contacto, pero lleva algo de efectivo para bares pequeños, mercados y tiendas de pueblo.",
+    "pt": "A moeda é o euro. Cartões e pagamentos sem contacto são amplamente aceites, mas leva algum dinheiro para bares pequenos, mercados e lojas de aldeia.",
+    "pt_BR": "A moeda é o euro. Cartões e pagamentos por aproximação são amplamente aceitos, mas leve algum dinheiro em espécie para bares pequenos, mercados e lojas de vilarejos.",
+    "fr": "La monnaie est l'euro. Les cartes et le paiement sans contact sont largement acceptés, mais garde un peu d'espèces pour les petits bars, les marchés et les boutiques de village.",
+    "de": "Die Währung ist der Euro. Karten und kontaktloses Bezahlen werden weitgehend akzeptiert, aber nimm etwas Bargeld für kleine Bars, Märkte und Dorfläden mit."
+   }
+  },
+  {
+   "id": "ct-ES-24",
+   "category": "money",
+   "text": {
+    "en": "Many restaurants offer a 'menú del día' on weekdays, a fixed-price lunch with starter, main, dessert and a drink, usually good value.",
+    "it": "Molti ristoranti offrono nei giorni feriali un 'menú del día', un pranzo a prezzo fisso con antipasto, secondo, dolce e bevanda, di solito conveniente.",
+    "es": "Muchos restaurantes ofrecen entre semana un 'menú del día', una comida a precio fijo con primero, segundo, postre y bebida, que suele tener buena relación calidad-precio.",
+    "pt": "Muitos restaurantes oferecem durante a semana um 'menú del día', um almoço de preço fixo com entrada, prato, sobremesa e bebida, normalmente com boa relação qualidade-preço.",
+    "pt_BR": "Muitos restaurantes oferecem em dias úteis um 'menú del día', um almoço de preço fixo com entrada, prato principal, sobremesa e bebida, geralmente com ótimo custo-benefício.",
+    "fr": "Beaucoup de restaurants proposent en semaine un 'menú del día', un déjeuner à prix fixe avec entrée, plat, dessert et boisson, en général d'un bon rapport qualité-prix.",
+    "de": "Viele Restaurants bieten werktags ein 'menú del día' an, ein Mittagsmenü zum Festpreis mit Vorspeise, Hauptgang, Dessert und Getränk, meist mit gutem Preis-Leistungs-Verhältnis."
+   }
+  },
+  {
+   "id": "ct-ES-25",
+   "category": "photography",
+   "text": {
+    "en": "Ask before photographing strangers, especially children and religious processions. Some museums and churches do not allow photos or flash.",
+    "it": "Chiedi il permesso prima di fotografare gli sconosciuti, soprattutto bambini e processioni religiose. Alcuni musei e chiese non permettono foto o flash.",
+    "es": "Pide permiso antes de fotografiar a desconocidos, sobre todo a niños y procesiones religiosas. Algunos museos e iglesias no permiten fotos ni flash.",
+    "pt": "Pede licença antes de fotografar desconhecidos, sobretudo crianças e procissões religiosas. Alguns museus e igrejas não permitem fotos nem flash.",
+    "pt_BR": "Peça permissão antes de fotografar desconhecidos, principalmente crianças e procissões religiosas. Alguns museus e igrejas não permitem fotos nem flash.",
+    "fr": "Demande la permission avant de photographier des inconnus, surtout des enfants ou des processions religieuses. Certains musées et églises interdisent les photos ou le flash.",
+    "de": "Frag nach, bevor du Fremde fotografierst, besonders Kinder und religiöse Prozessionen. In manchen Museen und Kirchen sind Fotos oder Blitz nicht erlaubt."
+   }
+  },
+  {
+   "id": "ct-ES-26",
+   "category": "nightlife",
+   "text": {
+    "en": "Going out starts late. Bars fill up after 10 pm, and clubs often get busy only after 1 or 2 am, especially on weekends.",
+    "it": "Si esce tardi. I bar si riempiono dopo le 22 e i locali notturni spesso si animano solo dopo l'una o le due, soprattutto nel fine settimana.",
+    "es": "La salida nocturna empieza tarde. Los bares se llenan después de las 10 de la noche y las discotecas suelen animarse pasada la una o las dos de la madrugada, sobre todo los fines de semana.",
+    "pt": "A saída à noite começa tarde. Os bares enchem depois das 22h e as discotecas costumam animar-se só depois da 1h ou das 2h, sobretudo ao fim de semana.",
+    "pt_BR": "A saída à noite começa tarde. Os bares enchem depois das 22h e as baladas costumam esquentar só depois da 1h ou das 2h, principalmente nos fins de semana.",
+    "fr": "Les sorties commencent tard. Les bars se remplissent après 22 h, et les boîtes de nuit ne s'animent souvent qu'après 1 h ou 2 h, surtout le week-end.",
+    "de": "Das Ausgehen beginnt spät. Bars füllen sich nach 22 Uhr, und Clubs werden oft erst nach 1 oder 2 Uhr voll, vor allem am Wochenende."
+   }
+  },
+  {
+   "id": "ct-ES-27",
+   "category": "nature",
+   "text": {
+    "en": "The Camino de Santiago is a network of walking pilgrim routes that many people follow. Walkers often greet each other with 'Buen camino'.",
+    "it": "Il Cammino di Santiago è una rete di percorsi a piedi per pellegrini che molti seguono. I camminatori si salutano spesso con 'Buen camino'.",
+    "es": "El Camino de Santiago es una red de rutas de peregrinación a pie que mucha gente recorre. Los caminantes suelen saludarse con un 'Buen camino'.",
+    "pt": "O Caminho de Santiago é uma rede de rotas de peregrinação a pé que muita gente percorre. Os caminhantes costumam cumprimentar-se com 'Buen camino'.",
+    "pt_BR": "O Caminho de Santiago é uma rede de rotas de peregrinação a pé que muita gente percorre. Os caminhantes costumam se cumprimentar com 'Buen camino'.",
+    "fr": "Le Chemin de Compostelle est un réseau d'itinéraires de pèlerinage à pied que beaucoup de gens parcourent. Les marcheurs se saluent souvent d'un 'Buen camino'.",
+    "de": "Der Jakobsweg ist ein Netz von Pilgerwegen zu Fuß, das viele Menschen gehen. Wandernde grüßen sich oft mit 'Buen camino'."
+   }
+  },
+  {
+   "id": "ct-ES-28",
+   "category": "safety",
+   "text": {
+    "en": "Spain is generally safe, but pickpockets work in crowded tourist areas and on the metro. Keep bags closed in front of you. The emergency number is 112.",
+    "it": "La Spagna è in generale sicura, ma i borseggiatori agiscono nelle zone turistiche affollate e in metropolitana. Tieni le borse chiuse davanti a te. Il numero d'emergenza è 112.",
+    "es": "España es en general segura, pero hay carteristas en zonas turísticas concurridas y en el metro. Lleva los bolsos cerrados y delante. El número de emergencias es el 112.",
+    "pt": "Espanha é em geral segura, mas há carteiristas em zonas turísticas movimentadas e no metro. Leva as malas fechadas à tua frente. O número de emergência é o 112.",
+    "pt_BR": "A Espanha é em geral segura, mas há batedores de carteira em áreas turísticas lotadas e no metrô. Mantenha as bolsas fechadas à sua frente. O número de emergência é 112.",
+    "fr": "L'Espagne est en général sûre, mais des pickpockets opèrent dans les zones touristiques bondées et dans le métro. Garde ton sac fermé devant toi. Le numéro d'urgence est le 112.",
+    "de": "Spanien ist im Allgemeinen sicher, aber in überfüllten Touristenzonen und in der U-Bahn gibt es Taschendiebe. Trag die Tasche geschlossen vor dir. Die Notrufnummer lautet 112."
+   }
+  },
+  {
+   "id": "ct-ES-29",
+   "category": "local_pride",
+   "text": {
+    "en": "People are proud of their regional food, from paella in Valencia to pintxos in the Basque Country. Asking for a local recommendation starts great conversations.",
+    "it": "Le persone sono orgogliose della cucina della propria regione, dalla paella di Valencia ai pintxos dei Paesi Baschi. Chiedere un consiglio locale avvia belle conversazioni.",
+    "es": "La gente está orgullosa de la cocina de su región, desde la paella en Valencia hasta los pintxos en el País Vasco. Pedir una recomendación local da pie a buenas conversaciones.",
+    "pt": "As pessoas orgulham-se da cozinha da sua região, da paella em Valência aos pintxos no País Basco. Pedir uma recomendação local dá origem a boas conversas.",
+    "pt_BR": "As pessoas têm orgulho da culinária da sua região, da paella em Valência aos pintxos no País Basco. Pedir uma recomendação local rende ótimas conversas.",
+    "fr": "Les gens sont fiers de la cuisine de leur région, de la paella à Valence aux pintxos au Pays basque. Demander une recommandation locale lance de belles conversations.",
+    "de": "Die Menschen sind stolz auf die Küche ihrer Region, von der Paella in Valencia bis zu den Pintxos im Baskenland. Wer nach einer lokalen Empfehlung fragt, kommt schnell ins Gespräch."
+   }
+  },
+  {
+   "id": "ct-ES-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Flamenco, born in Andalusia, is recognised by UNESCO as intangible cultural heritage. Watching a live show at a tablao is a respected tradition; stay quiet during the performance.",
+    "it": "Il flamenco, nato in Andalusia, è riconosciuto dall'UNESCO come patrimonio culturale immateriale. Assistere a uno spettacolo dal vivo in un tablao è una tradizione rispettata; resta in silenzio durante l'esibizione.",
+    "es": "El flamenco, nacido en Andalucía, está reconocido por la UNESCO como patrimonio cultural inmaterial. Ver un espectáculo en directo en un tablao es una tradición respetada; guarda silencio durante la actuación.",
+    "pt": "O flamenco, nascido na Andaluzia, é reconhecido pela UNESCO como património cultural imaterial. Ver um espetáculo ao vivo num tablao é uma tradição respeitada; mantém o silêncio durante a atuação.",
+    "pt_BR": "O flamenco, nascido na Andaluzia, é reconhecido pela UNESCO como patrimônio cultural imaterial. Assistir a um show ao vivo em um tablao é uma tradição respeitada; fique em silêncio durante a apresentação.",
+    "fr": "Le flamenco, né en Andalousie, est reconnu par l'UNESCO comme patrimoine culturel immatériel. Assister à un spectacle dans un tablao est une tradition respectée ; reste silencieux pendant la représentation.",
+    "de": "Der in Andalusien entstandene Flamenco ist von der UNESCO als immaterielles Kulturerbe anerkannt. Eine Live-Show im Tablao zu sehen ist eine geachtete Tradition; sei während der Aufführung still."
+   }
+  }
+ ],
+ "FI": [
+  {
+   "id": "ct-FI-01",
+   "category": "greetings",
+   "text": {
+    "en": "A firm handshake with brief eye contact is the usual greeting, including between women and men. Hugs and cheek kisses are reserved for close friends and family.",
+    "it": "Il saluto abituale è una stretta di mano ferma con un breve contatto visivo, anche tra donne e uomini. Abbracci e baci sulla guancia sono riservati ad amici stretti e famiglia.",
+    "es": "El saludo habitual es un apretón de manos firme con un breve contacto visual, también entre mujeres y hombres. Los abrazos y besos en la mejilla se reservan para amigos cercanos y familia.",
+    "pt": "O cumprimento habitual é um aperto de mão firme com um breve contacto visual, também entre mulheres e homens. Abraços e beijos na cara ficam reservados para amigos próximos e família.",
+    "pt_BR": "O cumprimento habitual é um aperto de mão firme com um breve contato visual, inclusive entre mulheres e homens. Abraços e beijos no rosto ficam reservados para amigos próximos e família.",
+    "fr": "La salutation habituelle est une poignée de main ferme avec un bref contact visuel, y compris entre femmes et hommes. Les accolades et les bises sont réservées aux proches et à la famille.",
+    "de": "Üblich ist ein fester Händedruck mit kurzem Blickkontakt, auch zwischen Frauen und Männern. Umarmungen und Wangenküsse sind engen Freunden und der Familie vorbehalten."
+   }
+  },
+  {
+   "id": "ct-FI-02",
+   "category": "greetings",
+   "text": {
+    "en": "'Moi' is a friendly, casual hello that works with almost anyone, and 'Hei' is similar. 'Kiitos' (thank you) is always welcome.",
+    "it": "'Moi' è un saluto cordiale e informale che va bene con quasi tutti, e 'Hei' è simile. 'Kiitos' (grazie) è sempre gradito.",
+    "es": "'Moi' es un saludo amistoso e informal que sirve con casi todo el mundo, y 'Hei' es parecido. 'Kiitos' (gracias) siempre cae bien.",
+    "pt": "'Moi' é um cumprimento simpático e informal que serve para quase toda a gente, e 'Hei' é parecido. 'Kiitos' (obrigado) é sempre bem-vindo.",
+    "pt_BR": "'Moi' é um cumprimento simpático e informal que serve para quase todo mundo, e 'Hei' é parecido. 'Kiitos' (obrigado) é sempre bem-vindo.",
+    "fr": "'Moi' est un salut amical et décontracté qui convient à presque tout le monde, et 'Hei' est similaire. 'Kiitos' (merci) est toujours bien reçu.",
+    "de": "'Moi' ist ein freundliches, lockeres Hallo, das bei fast jedem passt, und 'Hei' ist ähnlich. 'Kiitos' (danke) kommt immer gut an."
+   }
+  },
+  {
+   "id": "ct-FI-03",
+   "category": "conversation",
+   "text": {
+    "en": "Finns are comfortable with silence. A pause in conversation is not awkward, and it often means people are thinking carefully about what to say.",
+    "it": "I finlandesi si sentono a loro agio nel silenzio. Una pausa nella conversazione non è imbarazzante e spesso significa che si sta riflettendo con attenzione su cosa dire.",
+    "es": "Los finlandeses se sienten cómodos con el silencio. Una pausa en la conversación no es incómoda y a menudo significa que están pensando con cuidado lo que van a decir.",
+    "pt": "Os finlandeses sentem-se à vontade com o silêncio. Uma pausa na conversa não é constrangedora e muitas vezes significa que estão a pensar com cuidado no que dizer.",
+    "pt_BR": "Os finlandeses se sentem à vontade com o silêncio. Uma pausa na conversa não é constrangedora e muitas vezes significa que estão pensando com cuidado no que dizer.",
+    "fr": "Les Finlandais sont à l'aise avec le silence. Une pause dans la conversation n'est pas gênante et signifie souvent qu'on réfléchit soigneusement à ce qu'on va dire.",
+    "de": "Finnen fühlen sich mit Stille wohl. Eine Gesprächspause ist nicht peinlich und bedeutet oft, dass jemand sorgfältig überlegt, was er sagen möchte."
+   }
+  },
+  {
+   "id": "ct-FI-04",
+   "category": "conversation",
+   "text": {
+    "en": "Finns tend to be direct and honest and say what they mean. Small talk with strangers is less common, so a short answer is not a sign of rudeness.",
+    "it": "I finlandesi tendono a essere diretti e sinceri e dicono ciò che pensano. Le chiacchiere con gli sconosciuti sono meno comuni, quindi una risposta breve non è maleducazione.",
+    "es": "Los finlandeses suelen ser directos y sinceros y dicen lo que piensan. Charlar con desconocidos es menos común, así que una respuesta corta no es mala educación.",
+    "pt": "Os finlandeses tendem a ser diretos e sinceros e dizem o que pensam. A conversa de circunstância com desconhecidos é menos comum, por isso uma resposta curta não é falta de educação.",
+    "pt_BR": "Os finlandeses tendem a ser diretos e sinceros e dizem o que pensam. Conversa fiada com desconhecidos é menos comum, então uma resposta curta não é falta de educação.",
+    "fr": "Les Finlandais ont tendance à être directs et sincères et disent ce qu'ils pensent. Le bavardage avec des inconnus est moins courant, donc une réponse brève n'est pas un signe d'impolitesse.",
+    "de": "Finnen sind eher direkt und ehrlich und sagen, was sie meinen. Smalltalk mit Fremden ist weniger üblich, eine kurze Antwort ist also keine Unhöflichkeit."
+   }
+  },
+  {
+   "id": "ct-FI-05",
+   "category": "dining",
+   "text": {
+    "en": "Finland is a coffee-loving country, and Finns drink more coffee per person than almost anyone. If you are offered coffee at someone's home, it is polite to accept.",
+    "it": "La Finlandia è un paese amante del caffè e i finlandesi ne bevono pro capite più di quasi chiunque altro. Se ti offrono un caffè a casa di qualcuno, è educato accettare.",
+    "es": "Finlandia ama el café y los finlandeses beben más café por persona que casi cualquier otro pueblo. Si te ofrecen un café en casa de alguien, es de buena educación aceptarlo.",
+    "pt": "A Finlândia adora café e os finlandeses bebem mais café por pessoa do que quase qualquer outro povo. Se te oferecerem um café em casa de alguém, é educado aceitar.",
+    "pt_BR": "A Finlândia adora café e os finlandeses tomam mais café por pessoa do que quase qualquer outro povo. Se oferecerem um café na casa de alguém, é educado aceitar.",
+    "fr": "La Finlande adore le café, et les Finlandais en boivent plus par habitant que presque tout le monde. Si on t'offre un café chez quelqu'un, il est poli d'accepter.",
+    "de": "Finnland liebt Kaffee, und Finnen trinken pro Kopf mehr davon als fast alle anderen. Wenn dir zu Hause Kaffee angeboten wird, ist es höflich, ihn anzunehmen."
+   }
+  },
+  {
+   "id": "ct-FI-06",
+   "category": "dining",
+   "text": {
+    "en": "Meals are earlier than in southern Europe. Lunch is often eaten around 11 am to noon, and dinner is typically in the early evening.",
+    "it": "I pasti sono più anticipati rispetto all'Europa meridionale. Il pranzo si mangia spesso tra le 11 e mezzogiorno e la cena di solito la sera presto.",
+    "es": "Las comidas son más temprano que en el sur de Europa. El almuerzo suele ser entre las 11 y las 12, y la cena, a primera hora de la noche.",
+    "pt": "As refeições são mais cedo do que no sul da Europa. O almoço é muitas vezes por volta das 11h ou do meio-dia, e o jantar costuma ser ao início da noite.",
+    "pt_BR": "As refeições são mais cedo do que no sul da Europa. O almoço costuma ser entre 11h e meio-dia, e o jantar geralmente no início da noite.",
+    "fr": "Les repas sont plus tôt que dans le sud de l'Europe. Le déjeuner a souvent lieu entre 11 h et midi, et le dîner en début de soirée.",
+    "de": "Die Mahlzeiten liegen früher als in Südeuropa. Mittagessen gibt es oft zwischen 11 und 12 Uhr, das Abendessen meist am frühen Abend."
+   }
+  },
+  {
+   "id": "ct-FI-07",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping is not expected, as service is included in the price. If you are very happy, rounding up the bill is welcome but never required.",
+    "it": "La mancia non è attesa, perché il servizio è incluso nel prezzo. Se sei molto soddisfatto, arrotondare il conto è gradito ma mai obbligatorio.",
+    "es": "No se espera propina, ya que el servicio está incluido en el precio. Si has quedado muy contento, redondear la cuenta se agradece, pero nunca es obligatorio.",
+    "pt": "Não se espera gorjeta, pois o serviço está incluído no preço. Se ficares muito satisfeito, arredondar a conta é bem-vindo, mas nunca obrigatório.",
+    "pt_BR": "Não se espera gorjeta, pois o serviço está incluído no preço. Se você ficar muito satisfeito, arredondar a conta é bem-vindo, mas nunca obrigatório.",
+    "fr": "Le pourboire n'est pas attendu, car le service est compris dans le prix. Si tu es très content, arrondir l'addition est apprécié mais jamais obligatoire.",
+    "de": "Trinkgeld wird nicht erwartet, da der Service im Preis enthalten ist. Wenn du sehr zufrieden bist, wird Aufrunden gern gesehen, ist aber nie Pflicht."
+   }
+  },
+  {
+   "id": "ct-FI-08",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to a Finnish home, a small gift such as flowers, chocolates or something from your own country is nice but not required.",
+    "it": "Se sei invitato a casa di un finlandese, un piccolo regalo come fiori, cioccolatini o qualcosa del tuo paese è gradito ma non obbligatorio.",
+    "es": "Si te invitan a un hogar finlandés, un pequeño regalo como flores, bombones o algo de tu país es un detalle bonito, pero no obligatorio.",
+    "pt": "Se fores convidado para a casa de um finlandês, uma pequena lembrança, como flores, chocolates ou algo do teu país, é simpática mas não obrigatória.",
+    "pt_BR": "Se você for convidado para a casa de um finlandês, uma lembrancinha, como flores, chocolates ou algo do seu país, é simpática, mas não obrigatória.",
+    "fr": "Si tu es invité chez un Finlandais, un petit cadeau comme des fleurs, des chocolats ou quelque chose de ton pays est agréable mais pas obligatoire.",
+    "de": "Wenn du bei Finnen zu Hause eingeladen bist, sind Blumen, Pralinen oder etwas aus deiner Heimat ein nettes, aber kein notwendiges Mitbringsel."
+   }
+  },
+  {
+   "id": "ct-FI-09",
+   "category": "dress",
+   "text": {
+    "en": "Dress practically and in layers, because the weather changes quickly. Warm clothes and good shoes matter more than fashion, especially in winter.",
+    "it": "Vestiti in modo pratico e a strati, perché il tempo cambia in fretta. Vestiti caldi e buone scarpe contano più della moda, soprattutto d'inverno.",
+    "es": "Vístete con ropa práctica y por capas, porque el tiempo cambia rápido. La ropa de abrigo y el buen calzado importan más que la moda, sobre todo en invierno.",
+    "pt": "Veste-te de forma prática e por camadas, porque o tempo muda depressa. Roupa quente e bom calçado importam mais do que a moda, sobretudo no inverno.",
+    "pt_BR": "Vista-se de forma prática e em camadas, porque o tempo muda rápido. Roupa quente e bons calçados importam mais do que moda, principalmente no inverno.",
+    "fr": "Habille-toi de façon pratique et par couches, car le temps change vite. Des vêtements chauds et de bonnes chaussures comptent plus que la mode, surtout en hiver.",
+    "de": "Zieh dich praktisch und nach dem Zwiebelprinzip an, denn das Wetter wechselt schnell. Warme Kleidung und gute Schuhe sind wichtiger als Mode, besonders im Winter."
+   }
+  },
+  {
+   "id": "ct-FI-10",
+   "category": "dress",
+   "text": {
+    "en": "Take your shoes off when you enter a Finnish home. Hosts often have slippers or you can bring clean socks.",
+    "it": "Togliti le scarpe quando entri in una casa finlandese. Spesso chi ospita ha delle pantofole, oppure puoi portare calzini puliti.",
+    "es": "Quítate los zapatos al entrar en una casa finlandesa. Los anfitriones suelen tener zapatillas, o puedes llevar calcetines limpios.",
+    "pt": "Tira os sapatos ao entrar numa casa finlandesa. Os anfitriões costumam ter pantufas, ou podes levar meias limpas.",
+    "pt_BR": "Tire os sapatos ao entrar em uma casa finlandesa. Os anfitriões costumam ter chinelos, ou você pode levar meias limpas.",
+    "fr": "Enlève tes chaussures en entrant chez des Finlandais. Les hôtes ont souvent des pantoufles, ou tu peux prévoir des chaussettes propres.",
+    "de": "Zieh beim Betreten eines finnischen Hauses die Schuhe aus. Gastgeber haben oft Hausschuhe, oder du bringst saubere Socken mit."
+   }
+  },
+  {
+   "id": "ct-FI-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Most Finns belong to the Evangelical Lutheran church, but many are not very active. Churches welcome visitors; keep your voice low and avoid disturbing services.",
+    "it": "La maggior parte dei finlandesi appartiene alla chiesa evangelica luterana, ma molti non sono molto praticanti. Le chiese accolgono i visitatori; parla a bassa voce ed evita di disturbare le funzioni.",
+    "es": "La mayoría de los finlandeses pertenece a la Iglesia evangélica luterana, aunque muchos no son muy practicantes. Las iglesias reciben visitantes; habla en voz baja y no molestes durante los oficios.",
+    "pt": "A maioria dos finlandeses pertence à Igreja Evangélica Luterana, mas muitos não são muito praticantes. As igrejas recebem visitantes; fala baixo e evita incomodar as celebrações.",
+    "pt_BR": "A maioria dos finlandeses pertence à Igreja Evangélica Luterana, mas muitos não são muito praticantes. As igrejas recebem visitantes; fale baixo e evite atrapalhar os cultos.",
+    "fr": "La plupart des Finlandais appartiennent à l'Église évangélique luthérienne, mais beaucoup ne sont pas très pratiquants. Les églises accueillent les visiteurs ; parle à voix basse et évite de gêner les offices.",
+    "de": "Die meisten Finnen gehören der evangelisch-lutherischen Kirche an, viele sind aber nicht sehr aktiv. Kirchen heißen Besucher willkommen; sprich leise und stör keine Gottesdienste."
+   }
+  },
+  {
+   "id": "ct-FI-12",
+   "category": "gestures",
+   "text": {
+    "en": "Finns tend to use few hand gestures and a calm voice. Not smiling at strangers is normal and does not mean unfriendliness.",
+    "it": "I finlandesi tendono a usare pochi gesti e un tono di voce calmo. Non sorridere agli sconosciuti è normale e non significa scortesia.",
+    "es": "Los finlandeses suelen usar pocos gestos y un tono de voz tranquilo. No sonreír a desconocidos es normal y no significa antipatía.",
+    "pt": "Os finlandeses tendem a usar poucos gestos e um tom de voz calmo. Não sorrir a desconhecidos é normal e não significa antipatia.",
+    "pt_BR": "Os finlandeses tendem a usar poucos gestos e um tom de voz calmo. Não sorrir para desconhecidos é normal e não significa antipatia.",
+    "fr": "Les Finlandais utilisent peu de gestes et gardent une voix calme. Ne pas sourire aux inconnus est normal et ne signifie pas de l'hostilité.",
+    "de": "Finnen gestikulieren eher wenig und sprechen ruhig. Fremde nicht anzulächeln ist normal und bedeutet keine Unfreundlichkeit."
+   }
+  },
+  {
+   "id": "ct-FI-13",
+   "category": "punctuality",
+   "text": {
+    "en": "Being on time is very important, both for work and social plans. If you will be late, send a message in advance.",
+    "it": "Essere puntuali è molto importante, sia per il lavoro sia per gli impegni sociali. Se farai tardi, avvisa con un messaggio in anticipo.",
+    "es": "La puntualidad es muy importante, tanto en el trabajo como en los planes sociales. Si vas a llegar tarde, avisa con un mensaje antes.",
+    "pt": "A pontualidade é muito importante, tanto no trabalho como nos planos sociais. Se fores chegar atrasado, avisa com uma mensagem antes.",
+    "pt_BR": "A pontualidade é muito importante, tanto no trabalho quanto nos compromissos sociais. Se for se atrasar, avise com uma mensagem antes.",
+    "fr": "La ponctualité est très importante, au travail comme dans les rendez-vous entre amis. Si tu vas être en retard, préviens par message à l'avance.",
+    "de": "Pünktlichkeit ist sehr wichtig, sowohl im Beruf als auch bei privaten Verabredungen. Wenn du dich verspätest, schreib vorher kurz Bescheid."
+   }
+  },
+  {
+   "id": "ct-FI-14",
+   "category": "public_behavior",
+   "text": {
+    "en": "Finns value personal space. At bus stops and in queues people stand a little apart, and loud phone calls in public are frowned upon.",
+    "it": "I finlandesi tengono allo spazio personale. Alle fermate e nelle code si sta un po' distanziati, e le telefonate ad alta voce in pubblico non sono ben viste.",
+    "es": "Los finlandeses valoran el espacio personal. En las paradas y las colas la gente se mantiene algo separada, y las llamadas a voz alta en público están mal vistas.",
+    "pt": "Os finlandeses valorizam o espaço pessoal. Nas paragens e nas filas as pessoas ficam um pouco afastadas, e as chamadas em voz alta em público são mal vistas.",
+    "pt_BR": "Os finlandeses valorizam o espaço pessoal. Nos pontos de ônibus e nas filas as pessoas ficam um pouco afastadas, e ligações em voz alta em público são mal vistas.",
+    "fr": "Les Finlandais tiennent à leur espace personnel. Aux arrêts et dans les files, on se tient un peu à distance, et les appels bruyants en public sont mal vus.",
+    "de": "Finnen schätzen persönlichen Raum. An Haltestellen und in Warteschlangen steht man etwas auseinander, und laute Telefonate in der Öffentlichkeit sind unerwünscht."
+   }
+  },
+  {
+   "id": "ct-FI-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "In a Finnish sauna, shower first and sit on a towel or the seat cover. Swimwear rules vary, so ask your hosts, and keep conversation calm and relaxed.",
+    "it": "In una sauna finlandese fai prima la doccia e siediti su un asciugamano o sul telo. Le regole sul costume variano, quindi chiedi a chi ti ospita, e mantieni una conversazione calma e rilassata.",
+    "es": "En una sauna finlandesa, dúchate primero y siéntate sobre una toalla o el protector del asiento. Las normas sobre el traje de baño varían, así que pregunta a tus anfitriones y mantén una conversación tranquila.",
+    "pt": "Numa sauna finlandesa, toma primeiro um duche e senta-te numa toalha ou na proteção do banco. As regras sobre o fato de banho variam, por isso pergunta aos anfitriões e mantém uma conversa calma.",
+    "pt_BR": "Em uma sauna finlandesa, tome banho primeiro e sente em uma toalha ou na capa do banco. As regras sobre roupa de banho variam, então pergunte aos anfitriões e mantenha uma conversa tranquila.",
+    "fr": "Dans un sauna finlandais, prends d'abord une douche et assieds-toi sur une serviette ou la protection du banc. Les règles sur le maillot varient, demande donc à tes hôtes et garde une conversation calme.",
+    "de": "In einer finnischen Sauna duschst du zuerst und setzt dich auf ein Handtuch oder die Sitzauflage. Die Regeln zur Badekleidung sind verschieden, frag also deine Gastgeber und halte das Gespräch ruhig."
+   }
+  },
+  {
+   "id": "ct-FI-16",
+   "category": "transport",
+   "text": {
+    "en": "In the Helsinki area, trams, metro, buses and trains share one ticket system, and you can buy tickets in the HSL app. Inspectors check tickets.",
+    "it": "Nell'area di Helsinki tram, metropolitana, autobus e treni usano un unico sistema di biglietti, acquistabili nell'app HSL. I controllori verificano i biglietti.",
+    "es": "En el área de Helsinki, tranvías, metro, autobuses y trenes comparten un único sistema de billetes, que puedes comprar en la app de HSL. Hay revisores que comprueban los billetes.",
+    "pt": "Na área de Helsínquia, elétricos, metro, autocarros e comboios partilham um único sistema de bilhetes, que podes comprar na app HSL. Há revisores a verificar os bilhetes.",
+    "pt_BR": "Na área de Helsinque, bondes, metrô, ônibus e trens compartilham um único sistema de bilhetes, que você pode comprar no app HSL. Há fiscais que checam os bilhetes.",
+    "fr": "Dans la région d'Helsinki, tramways, métro, bus et trains partagent un même système de titres, que tu peux acheter dans l'appli HSL. Des contrôleurs vérifient les billets.",
+    "de": "Im Raum Helsinki teilen sich Straßenbahn, U-Bahn, Bus und Zug ein Ticketsystem, und du kannst Tickets in der HSL-App kaufen. Es wird kontrolliert."
+   }
+  },
+  {
+   "id": "ct-FI-17",
+   "category": "transport",
+   "text": {
+    "en": "Public transport and trains run reliably even in snowy weather. Cycling is popular in cities in summer, and many people keep cycling in winter with studded tyres.",
+    "it": "I trasporti pubblici e i treni funzionano in modo affidabile anche con la neve. In estate la bicicletta è popolare nelle città e molti pedalano anche d'inverno con pneumatici chiodati.",
+    "es": "El transporte público y los trenes funcionan con fiabilidad incluso con nieve. La bicicleta es popular en las ciudades en verano, y muchos siguen pedaleando en invierno con neumáticos con clavos.",
+    "pt": "Os transportes públicos e os comboios funcionam com fiabilidade mesmo com neve. A bicicleta é popular nas cidades no verão, e muitos continuam a pedalar no inverno com pneus de pregos.",
+    "pt_BR": "O transporte público e os trens funcionam com confiabilidade mesmo com neve. A bicicleta é popular nas cidades no verão, e muita gente continua pedalando no inverno com pneus com cravos.",
+    "fr": "Les transports en commun et les trains fonctionnent de façon fiable même par temps de neige. Le vélo est populaire en ville l'été, et beaucoup continuent l'hiver avec des pneus cloutés.",
+    "de": "Öffentliche Verkehrsmittel und Züge fahren auch bei Schnee zuverlässig. Im Sommer ist das Rad in den Städten beliebt, und viele fahren im Winter mit Spikereifen weiter."
+   }
+  },
+  {
+   "id": "ct-FI-18",
+   "category": "language",
+   "text": {
+    "en": "Finnish and Swedish are both official languages, so many signs and public notices are bilingual. Finnish is not related to Swedish, Russian or most European languages.",
+    "it": "Finlandese e svedese sono entrambe lingue ufficiali, perciò molti cartelli e avvisi pubblici sono bilingui. Il finlandese non è imparentato con svedese, russo o la maggior parte delle lingue europee.",
+    "es": "El finés y el sueco son ambos idiomas oficiales, por eso muchos carteles y avisos públicos son bilingües. El finés no está emparentado con el sueco, el ruso ni la mayoría de las lenguas europeas.",
+    "pt": "O finlandês e o sueco são ambos línguas oficiais, por isso muitos sinais e avisos públicos são bilingues. O finlandês não tem parentesco com o sueco, o russo ou a maioria das línguas europeias.",
+    "pt_BR": "O finlandês e o sueco são ambos línguas oficiais, por isso muitas placas e avisos públicos são bilíngues. O finlandês não é aparentado com o sueco, o russo ou a maioria das línguas europeias.",
+    "fr": "Le finnois et le suédois sont tous deux langues officielles, donc beaucoup de panneaux et d'avis publics sont bilingues. Le finnois n'est pas apparenté au suédois, au russe ni à la plupart des langues européennes.",
+    "de": "Finnisch und Schwedisch sind beide Amtssprachen, daher sind viele Schilder und Mitteilungen zweisprachig. Finnisch ist weder mit Schwedisch noch mit Russisch oder den meisten europäischen Sprachen verwandt."
+   }
+  },
+  {
+   "id": "ct-FI-19",
+   "category": "language",
+   "text": {
+    "en": "English is widely spoken, especially by younger people, but a few words in Finnish like 'kiitos' and 'anteeksi' show respect and are warmly received.",
+    "it": "L'inglese è molto parlato, soprattutto dai giovani, ma qualche parola in finlandese come 'kiitos' e 'anteeksi' mostra rispetto ed è accolta con calore.",
+    "es": "El inglés se habla mucho, sobre todo entre los jóvenes, pero algunas palabras en finés como 'kiitos' y 'anteeksi' muestran respeto y se reciben con cariño.",
+    "pt": "O inglês é muito falado, sobretudo pelos jovens, mas algumas palavras em finlandês, como 'kiitos' e 'anteeksi', mostram respeito e são recebidas com carinho.",
+    "pt_BR": "O inglês é muito falado, principalmente pelos jovens, mas algumas palavras em finlandês, como 'kiitos' e 'anteeksi', mostram respeito e são recebidas com carinho.",
+    "fr": "L'anglais est très répandu, surtout chez les jeunes, mais quelques mots de finnois comme 'kiitos' et 'anteeksi' montrent du respect et sont bien accueillis.",
+    "de": "Englisch wird weithin gesprochen, besonders von Jüngeren, aber ein paar finnische Wörter wie 'kiitos' und 'anteeksi' zeigen Respekt und kommen gut an."
+   }
+  },
+  {
+   "id": "ct-FI-20",
+   "category": "festivals",
+   "text": {
+    "en": "Midsummer (Juhannus) in late June is one of the biggest holidays. Many Finns leave cities for summer cottages, with bonfires, saunas and light nights.",
+    "it": "La festa di mezza estate (Juhannus) a fine giugno è una delle più importanti. Molti finlandesi lasciano le città per le case estive, tra falò, saune e notti luminose.",
+    "es": "El solsticio de verano (Juhannus), a finales de junio, es una de las fiestas más grandes. Muchos finlandeses dejan las ciudades por sus casas de verano, con hogueras, saunas y noches luminosas.",
+    "pt": "A festa do solstício de verão (Juhannus), no final de junho, é uma das maiores. Muitos finlandeses deixam as cidades rumo às casas de veraneio, com fogueiras, saunas e noites luminosas.",
+    "pt_BR": "A festa do solstício de verão (Juhannus), no fim de junho, é uma das maiores. Muitos finlandeses deixam as cidades rumo às casas de veraneio, com fogueiras, saunas e noites claras.",
+    "fr": "La Saint-Jean d'été (Juhannus), fin juin, est l'une des plus grandes fêtes. Beaucoup de Finlandais quittent les villes pour leurs maisons de campagne, avec feux de joie, saunas et nuits lumineuses.",
+    "de": "Das Mittsommerfest (Juhannus) Ende Juni ist einer der größten Feiertage. Viele Finnen verlassen die Städte in Richtung Sommerhaus, mit Lagerfeuern, Sauna und hellen Nächten."
+   }
+  },
+  {
+   "id": "ct-FI-21",
+   "category": "festivals",
+   "text": {
+    "en": "Vappu, on 1 May, is a lively spring festival with picnics, street gatherings and students wearing white caps. It marks the end of winter for many people.",
+    "it": "Il Vappu, il 1 maggio, è una vivace festa di primavera con picnic, ritrovi in strada e studenti con il berretto bianco. Per molti segna la fine dell'inverno.",
+    "es": "El Vappu, el 1 de mayo, es una animada fiesta de primavera con picnics, reuniones en la calle y estudiantes con gorra blanca. Para muchos marca el fin del invierno.",
+    "pt": "O Vappu, a 1 de maio, é uma animada festa de primavera com piqueniques, encontros na rua e estudantes de boné branco. Para muitos marca o fim do inverno.",
+    "pt_BR": "O Vappu, em 1º de maio, é uma animada festa de primavera com piqueniques, encontros na rua e estudantes de boné branco. Para muita gente marca o fim do inverno.",
+    "fr": "Le Vappu, le 1er mai, est une joyeuse fête du printemps avec pique-niques, rassemblements dans la rue et étudiants coiffés de casquettes blanches. Pour beaucoup, il marque la fin de l'hiver.",
+    "de": "Vappu am 1. Mai ist ein lebhaftes Frühlingsfest mit Picknicks, Treffen auf der Straße und Studierenden in weißen Mützen. Für viele markiert es das Ende des Winters."
+   }
+  },
+  {
+   "id": "ct-FI-22",
+   "category": "family",
+   "text": {
+    "en": "Many families have a summer cottage (mökki) by a lake or the sea, and spending time there with family and friends is an important part of Finnish life.",
+    "it": "Molte famiglie hanno una casa estiva (mökki) vicino a un lago o al mare, e trascorrervi del tempo con familiari e amici è una parte importante della vita finlandese.",
+    "es": "Muchas familias tienen una casa de verano (mökki) junto a un lago o al mar, y pasar tiempo allí con familiares y amigos es una parte importante de la vida finlandesa.",
+    "pt": "Muitas famílias têm uma casa de veraneio (mökki) junto a um lago ou ao mar, e passar tempo lá com familiares e amigos é uma parte importante da vida finlandesa.",
+    "pt_BR": "Muitas famílias têm uma casa de veraneio (mökki) perto de um lago ou do mar, e passar tempo lá com familiares e amigos é parte importante da vida finlandesa.",
+    "fr": "Beaucoup de familles ont une maison d'été (mökki) au bord d'un lac ou de la mer, et y passer du temps avec famille et amis est une part importante de la vie finlandaise.",
+    "de": "Viele Familien haben ein Sommerhaus (mökki) an einem See oder am Meer, und die Zeit dort mit Familie und Freunden ist ein wichtiger Teil des finnischen Lebens."
+   }
+  },
+  {
+   "id": "ct-FI-23",
+   "category": "money",
+   "text": {
+    "en": "Finland uses the euro. Cards and contactless payments are accepted almost everywhere, even for small amounts, so you rarely need cash.",
+    "it": "La Finlandia usa l'euro. Carte e pagamenti contactless sono accettati quasi ovunque, anche per piccoli importi, quindi di rado serve il contante.",
+    "es": "Finlandia usa el euro. Las tarjetas y los pagos sin contacto se aceptan casi en todas partes, incluso para importes pequeños, así que rara vez hace falta efectivo.",
+    "pt": "A Finlândia usa o euro. Cartões e pagamentos sem contacto são aceites quase em todo o lado, mesmo para pequenos valores, por isso raramente é preciso dinheiro vivo.",
+    "pt_BR": "A Finlândia usa o euro. Cartões e pagamentos por aproximação são aceitos quase em todo lugar, mesmo para valores pequenos, então raramente é preciso ter dinheiro em espécie.",
+    "fr": "La Finlande utilise l'euro. Les cartes et le paiement sans contact sont acceptés presque partout, même pour de petits montants, donc les espèces servent rarement.",
+    "de": "Finnland nutzt den Euro. Karten und kontaktloses Bezahlen werden fast überall akzeptiert, auch für kleine Beträge, Bargeld braucht man daher selten."
+   }
+  },
+  {
+   "id": "ct-FI-24",
+   "category": "photography",
+   "text": {
+    "en": "Finns value their privacy. Ask before photographing people, and avoid taking photos in saunas or of people swimming and relaxing in public spaces.",
+    "it": "I finlandesi tengono alla privacy. Chiedi prima di fotografare le persone ed evita di scattare foto in sauna o a chi nuota e si rilassa in spazi pubblici.",
+    "es": "Los finlandeses valoran su privacidad. Pregunta antes de fotografiar a personas y evita hacer fotos en saunas o a gente que nada o descansa en espacios públicos.",
+    "pt": "Os finlandeses valorizam a privacidade. Pergunta antes de fotografar pessoas e evita tirar fotos em saunas ou a pessoas que nadam e descansam em espaços públicos.",
+    "pt_BR": "Os finlandeses valorizam a privacidade. Pergunte antes de fotografar pessoas e evite tirar fotos em saunas ou de pessoas nadando e descansando em espaços públicos.",
+    "fr": "Les Finlandais tiennent à leur vie privée. Demande avant de photographier des personnes et évite de prendre des photos dans les saunas ou de gens qui nagent ou se détendent dans les lieux publics.",
+    "de": "Finnen legen Wert auf Privatsphäre. Frag, bevor du Menschen fotografierst, und mach keine Fotos in Saunen oder von Leuten, die in der Öffentlichkeit baden oder sich erholen."
+   }
+  },
+  {
+   "id": "ct-FI-25",
+   "category": "nightlife",
+   "text": {
+    "en": "Bars and clubs in cities are busiest on Friday and Saturday nights. Many venues check ID at the door, so carry a valid ID or passport.",
+    "it": "Bar e locali nelle città sono più affollati il venerdì e il sabato sera. Molti locali controllano i documenti all'ingresso, quindi porta con te un documento o il passaporto.",
+    "es": "Los bares y discotecas de las ciudades se llenan más los viernes y sábados por la noche. Muchos locales piden identificación en la puerta, así que lleva un documento válido o el pasaporte.",
+    "pt": "Os bares e discotecas das cidades ficam mais cheios às sextas e sábados à noite. Muitos locais pedem identificação à entrada, por isso leva um documento válido ou o passaporte.",
+    "pt_BR": "Bares e baladas nas cidades ficam mais cheios nas noites de sexta e sábado. Muitos locais pedem identificação na porta, então leve um documento válido ou o passaporte.",
+    "fr": "Les bars et boîtes des villes sont les plus fréquentés les vendredis et samedis soir. Beaucoup d'établissements contrôlent l'identité à l'entrée, alors garde une pièce d'identité ou ton passeport.",
+    "de": "Bars und Clubs in den Städten sind freitags und samstags am vollsten. Viele Lokale kontrollieren am Eingang den Ausweis, nimm also einen gültigen Ausweis oder Reisepass mit."
+   }
+  },
+  {
+   "id": "ct-FI-26",
+   "category": "nature",
+   "text": {
+    "en": "Everyman's right (jokamiehenoikeus) lets everyone walk, ski and pick berries and mushrooms in the countryside, even on private land. Do not disturb homes or damage nature.",
+    "it": "Il diritto di accesso alla natura (jokamiehenoikeus) permette a tutti di camminare, sciare e raccogliere bacche e funghi in campagna, anche su terreni privati. Non disturbare le abitazioni né danneggiare la natura.",
+    "es": "El derecho de acceso a la naturaleza (jokamiehenoikeus) permite a todos caminar, esquiar y recoger bayas y setas en el campo, incluso en terrenos privados. No molestes a los vecinos ni dañes la naturaleza.",
+    "pt": "O direito de acesso à natureza (jokamiehenoikeus) permite a todos caminhar, esquiar e apanhar bagas e cogumelos no campo, mesmo em terrenos privados. Não incomodes as casas nem danifiques a natureza.",
+    "pt_BR": "O direito de acesso à natureza (jokamiehenoikeus) permite que todos caminhem, esquiem e colham frutas silvestres e cogumelos no campo, até em terrenos privados. Não incomode as casas nem danifique a natureza.",
+    "fr": "Le droit d'accès à la nature (jokamiehenoikeus) permet à chacun de marcher, skier et cueillir baies et champignons à la campagne, même sur des terrains privés. Ne dérange pas les habitations et ne dégrade pas la nature.",
+    "de": "Das Jedermannsrecht (jokamiehenoikeus) erlaubt es allen, auf dem Land zu wandern, Ski zu laufen und Beeren und Pilze zu sammeln, sogar auf Privatgrund. Stör keine Wohnhäuser und beschädige die Natur nicht."
+   }
+  },
+  {
+   "id": "ct-FI-27",
+   "category": "nature",
+   "text": {
+    "en": "In northern Finland, Lapland, you can see the northern lights on clear nights from autumn to early spring, and the sun barely sets in midsummer.",
+    "it": "Nella Finlandia settentrionale, in Lapponia, si possono vedere le aurore boreali nelle notti serene dall'autunno all'inizio della primavera, mentre a mezza estate il sole quasi non tramonta.",
+    "es": "En el norte de Finlandia, en Laponia, se pueden ver auroras boreales en noches despejadas desde el otoño hasta principios de primavera, y en pleno verano el sol casi no se pone.",
+    "pt": "No norte da Finlândia, na Lapónia, podem ver-se auroras boreais em noites limpas do outono ao início da primavera, e em pleno verão o sol quase não se põe.",
+    "pt_BR": "No norte da Finlândia, na Lapônia, podem-se ver auroras boreais em noites claras do outono ao início da primavera, e em pleno verão o sol quase não se põe.",
+    "fr": "Dans le nord de la Finlande, en Laponie, on peut voir des aurores boréales par nuit claire de l'automne au début du printemps, et en plein été le soleil se couche à peine.",
+    "de": "Im Norden Finnlands, in Lappland, sieht man von Herbst bis zum frühen Frühling bei klarem Himmel Polarlichter, und im Hochsommer geht die Sonne kaum unter."
+   }
+  },
+  {
+   "id": "ct-FI-28",
+   "category": "safety",
+   "text": {
+    "en": "Finland is considered very safe, but winter conditions need care: avoid walking on thin ice, dress warmly, and call 112 in an emergency.",
+    "it": "La Finlandia è considerata molto sicura, ma le condizioni invernali richiedono attenzione: evita di camminare sul ghiaccio sottile, vestiti caldo e chiama il 112 in caso di emergenza.",
+    "es": "Finlandia se considera muy segura, pero las condiciones invernales exigen cuidado: evita caminar sobre hielo fino, abrígate bien y llama al 112 en una emergencia.",
+    "pt": "A Finlândia é considerada muito segura, mas as condições de inverno exigem cuidado: evita andar em gelo fino, veste-te bem e liga 112 em caso de emergência.",
+    "pt_BR": "A Finlândia é considerada muito segura, mas as condições do inverno exigem cuidado: evite andar em gelo fino, agasalhe-se bem e ligue para o 112 em caso de emergência.",
+    "fr": "La Finlande est considérée comme très sûre, mais l'hiver demande de la prudence : évite de marcher sur une glace fine, habille-toi chaudement et appelle le 112 en cas d'urgence.",
+    "de": "Finnland gilt als sehr sicher, doch im Winter ist Vorsicht geboten: Betritt kein dünnes Eis, zieh dich warm an und ruf im Notfall die 112 an."
+   }
+  },
+  {
+   "id": "ct-FI-29",
+   "category": "local_pride",
+   "text": {
+    "en": "'Sisu' is a Finnish word for determination and inner strength when things are hard. Finns are proud of it, and it is a nice topic to ask about.",
+    "it": "'Sisu' è una parola finlandese che indica determinazione e forza interiore nelle difficoltà. I finlandesi ne vanno fieri ed è un bell'argomento di cui chiedere.",
+    "es": "'Sisu' es una palabra finlandesa que expresa determinación y fortaleza interior cuando las cosas se ponen difíciles. Los finlandeses están orgullosos de ella y es un buen tema para preguntar.",
+    "pt": "'Sisu' é uma palavra finlandesa que expressa determinação e força interior quando as coisas são difíceis. Os finlandeses têm orgulho dela e é um bom tema para perguntar.",
+    "pt_BR": "'Sisu' é uma palavra finlandesa que expressa determinação e força interior quando as coisas ficam difíceis. Os finlandeses têm orgulho dela e é um bom assunto para perguntar.",
+    "fr": "'Sisu' est un mot finnois qui désigne la détermination et la force intérieure face aux difficultés. Les Finlandais en sont fiers, et c'est un beau sujet pour discuter.",
+    "de": "'Sisu' ist ein finnisches Wort für Durchhaltevermögen und innere Stärke in schwierigen Zeiten. Die Finnen sind stolz darauf, und es ist ein schönes Gesprächsthema."
+   }
+  },
+  {
+   "id": "ct-FI-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Finland celebrates Independence Day on 6 December, a calm and respectful occasion when many families light two blue-and-white candles in their windows.",
+    "it": "La Finlandia celebra il Giorno dell'Indipendenza il 6 dicembre, un'occasione tranquilla e rispettosa in cui molte famiglie accendono due candele blu e bianche alle finestre.",
+    "es": "Finlandia celebra el Día de la Independencia el 6 de diciembre, una ocasión tranquila y respetuosa en la que muchas familias encienden dos velas azules y blancas en las ventanas.",
+    "pt": "A Finlândia celebra o Dia da Independência a 6 de dezembro, uma ocasião tranquila e respeitosa em que muitas famílias acendem duas velas azuis e brancas nas janelas.",
+    "pt_BR": "A Finlândia celebra o Dia da Independência em 6 de dezembro, uma ocasião tranquila e respeitosa em que muitas famílias acendem duas velas azuis e brancas nas janelas.",
+    "fr": "La Finlande célèbre sa fête de l'Indépendance le 6 décembre, une occasion calme et respectueuse où beaucoup de familles allument deux bougies bleues et blanches aux fenêtres.",
+    "de": "Finnland feiert am 6. Dezember den Unabhängigkeitstag, einen ruhigen, würdevollen Anlass, an dem viele Familien zwei blau-weiße Kerzen ins Fenster stellen."
+   }
+  }
+ ],
+ "FR": [
+  {
+   "id": "ct-FR-01",
+   "category": "greetings",
+   "text": {
+    "en": "Friends greet each other with 'la bise', light kisses on the cheeks. The number of kisses varies by region, so follow the other person's lead. In business, a handshake is standard.",
+    "it": "Gli amici si salutano con 'la bise', lievi baci sulle guance. Il numero dei baci varia da regione a regione, quindi segui l'esempio dell'altra persona. Nel lavoro si usa la stretta di mano.",
+    "es": "Los amigos se saludan con 'la bise', besos suaves en las mejillas. El número de besos varía según la región, así que sigue el ejemplo de la otra persona. En el trabajo se da la mano.",
+    "pt": "Os amigos cumprimentam-se com 'la bise', beijinhos na cara. O número de beijos varia consoante a região, por isso segue o exemplo da outra pessoa. No trabalho, usa-se o aperto de mão.",
+    "pt_BR": "Os amigos se cumprimentam com 'la bise', beijinhos no rosto. O número de beijos varia conforme a região, então siga o exemplo da outra pessoa. No trabalho, usa-se o aperto de mão.",
+    "fr": "Entre amis, on se salue par la bise. Le nombre de bises varie selon les régions, alors suis l'exemple de l'autre personne. Dans le cadre professionnel, on se serre la main.",
+    "de": "Freunde begrüßen sich mit 'la bise', leichten Wangenküssen. Die Anzahl der Küsse ist regional verschieden, richte dich also nach deinem Gegenüber. Im Beruf gibt man sich die Hand."
+   }
+  },
+  {
+   "id": "ct-FR-02",
+   "category": "greetings",
+   "text": {
+    "en": "Always say 'Bonjour' when you enter a shop, bakery or café, and 'Au revoir' when you leave. Skipping the greeting is considered rude.",
+    "it": "Dì sempre 'Bonjour' quando entri in un negozio, una panetteria o un caffè, e 'Au revoir' quando esci. Omettere il saluto è considerato scortese.",
+    "es": "Di siempre 'Bonjour' al entrar en una tienda, panadería o café, y 'Au revoir' al salir. No saludar se considera de mala educación.",
+    "pt": "Diz sempre 'Bonjour' ao entrares numa loja, padaria ou café, e 'Au revoir' ao saíres. Não cumprimentar é considerado indelicado.",
+    "pt_BR": "Diga sempre 'Bonjour' ao entrar em uma loja, padaria ou café, e 'Au revoir' ao sair. Não cumprimentar é considerado indelicado.",
+    "fr": "Dis toujours 'Bonjour' en entrant dans un magasin, une boulangerie ou un café, et 'Au revoir' en partant. Oublier de saluer est considéré comme impoli.",
+    "de": "Sag immer 'Bonjour', wenn du ein Geschäft, eine Bäckerei oder ein Café betrittst, und 'Au revoir' beim Gehen. Wer nicht grüßt, gilt als unhöflich."
+   }
+  },
+  {
+   "id": "ct-FR-03",
+   "category": "conversation",
+   "text": {
+    "en": "Use 'vous' with strangers, older people and in professional settings until someone invites you to use 'tu'. Switching too early can feel too familiar.",
+    "it": "Usa il 'vous' con sconosciuti, persone più anziane e in contesti professionali finché qualcuno non ti propone il 'tu'. Passare al 'tu' troppo presto può sembrare troppo confidenziale.",
+    "es": "Usa 'vous' con desconocidos, personas mayores y en entornos profesionales hasta que alguien te proponga tutear. Pasar al 'tu' demasiado pronto puede resultar demasiado familiar.",
+    "pt": "Usa 'vous' com desconhecidos, pessoas mais velhas e em contextos profissionais até alguém te propor o 'tu'. Passar ao 'tu' demasiado cedo pode parecer demasiado familiar.",
+    "pt_BR": "Use 'vous' com desconhecidos, pessoas mais velhas e em contextos profissionais até alguém propor o 'tu'. Passar para o 'tu' cedo demais pode parecer familiar demais.",
+    "fr": "Utilise le 'vous' avec les inconnus, les personnes plus âgées et en contexte professionnel jusqu'à ce qu'on te propose le 'tu'. Passer au tutoiement trop tôt peut sembler trop familier.",
+    "de": "Verwende 'vous' bei Fremden, älteren Menschen und im Beruf, bis dir jemand das 'tu' anbietet. Zu früh zu duzen kann zu vertraulich wirken."
+   }
+  },
+  {
+   "id": "ct-FR-04",
+   "category": "conversation",
+   "text": {
+    "en": "Lively debate about ideas, food or culture is a normal part of conversation and not seen as an argument. Questions about salary are considered private.",
+    "it": "Un vivace dibattito su idee, cibo o cultura fa parte della conversazione e non è visto come una lite. Le domande sullo stipendio sono considerate private.",
+    "es": "Un debate animado sobre ideas, comida o cultura es parte normal de la conversación y no se ve como una pelea. Las preguntas sobre el sueldo se consideran privadas.",
+    "pt": "Um debate animado sobre ideias, comida ou cultura faz parte normal da conversa e não é visto como discussão. As perguntas sobre o salário são consideradas privadas.",
+    "pt_BR": "Um debate animado sobre ideias, comida ou cultura faz parte normal da conversa e não é visto como briga. Perguntas sobre salário são consideradas privadas.",
+    "fr": "Un débat animé sur les idées, la cuisine ou la culture fait partie de la conversation et n'est pas perçu comme une dispute. Les questions sur le salaire sont considérées comme privées.",
+    "de": "Eine lebhafte Debatte über Ideen, Essen oder Kultur gehört zum Gespräch und gilt nicht als Streit. Fragen nach dem Gehalt gelten als privat."
+   }
+  },
+  {
+   "id": "ct-FR-05",
+   "category": "dining",
+   "text": {
+    "en": "Lunch is usually around noon to 2 pm and dinner after 7:30 pm. Many restaurants close between meals, so book ahead or eat at regular times.",
+    "it": "Il pranzo è di solito tra mezzogiorno e le 14 e la cena dopo le 19:30. Molti ristoranti chiudono tra un pasto e l'altro, quindi prenota o mangia agli orari consueti.",
+    "es": "El almuerzo suele ser de mediodía a las 2 de la tarde y la cena después de las 19:30. Muchos restaurantes cierran entre comidas, así que reserva o come en los horarios habituales.",
+    "pt": "O almoço costuma ser do meio-dia às 14h e o jantar depois das 19h30. Muitos restaurantes fecham entre as refeições, por isso reserva ou come nos horários habituais.",
+    "pt_BR": "O almoço costuma ser do meio-dia às 14h e o jantar depois das 19h30. Muitos restaurantes fecham entre as refeições, então reserve ou coma nos horários habituais.",
+    "fr": "Le déjeuner a lieu en général de midi à 14 h et le dîner après 19 h 30. Beaucoup de restaurants ferment entre les repas, alors réserve ou mange aux heures habituelles.",
+    "de": "Das Mittagessen ist meist zwischen 12 und 14 Uhr, das Abendessen nach 19:30 Uhr. Viele Restaurants schließen zwischen den Mahlzeiten, reserviere also oder iss zu den üblichen Zeiten."
+   }
+  },
+  {
+   "id": "ct-FR-06",
+   "category": "dining",
+   "text": {
+    "en": "Wait until everyone is served and the host says 'Bon appétit' before eating. Keep your hands visible above the table, and bread is usually placed on the table beside your plate.",
+    "it": "Aspetta che tutti siano serviti e che chi ospita dica 'Bon appétit' prima di mangiare. Tieni le mani visibili sopra il tavolo; il pane di solito si appoggia sul tavolo accanto al piatto.",
+    "es": "Espera a que todos estén servidos y el anfitrión diga 'Bon appétit' antes de comer. Mantén las manos visibles sobre la mesa; el pan suele ponerse sobre la mesa junto al plato.",
+    "pt": "Espera que todos sejam servidos e que o anfitrião diga 'Bon appétit' antes de comeres. Mantém as mãos visíveis sobre a mesa; o pão costuma ser colocado na mesa ao lado do prato.",
+    "pt_BR": "Espere todos serem servidos e o anfitrião dizer 'Bon appétit' antes de comer. Mantenha as mãos visíveis sobre a mesa; o pão geralmente fica na mesa ao lado do prato.",
+    "fr": "Attends que tout le monde soit servi et que l'hôte dise 'Bon appétit' avant de manger. Garde les mains visibles au-dessus de la table ; le pain se pose en général sur la table à côté de l'assiette.",
+    "de": "Warte, bis alle bedient sind und der Gastgeber 'Bon appétit' sagt, bevor du isst. Halte die Hände sichtbar über dem Tisch; das Brot liegt meist direkt auf dem Tisch neben dem Teller."
+   }
+  },
+  {
+   "id": "ct-FR-07",
+   "category": "dining",
+   "text": {
+    "en": "In restaurants, the waiter will not bring the bill until you ask. Say 'L'addition, s'il vous plaît' when you are ready to pay.",
+    "it": "Nei ristoranti il cameriere non porta il conto finché non lo chiedi. Dì 'L'addition, s'il vous plaît' quando sei pronto a pagare.",
+    "es": "En los restaurantes, el camarero no trae la cuenta hasta que la pides. Di 'L'addition, s'il vous plaît' cuando estés listo para pagar.",
+    "pt": "Nos restaurantes, o empregado não traz a conta até a pedires. Diz 'L'addition, s'il vous plaît' quando estiveres pronto para pagar.",
+    "pt_BR": "Nos restaurantes, o garçom não traz a conta até você pedir. Diga 'L'addition, s'il vous plaît' quando estiver pronto para pagar.",
+    "fr": "Au restaurant, le serveur n'apporte pas l'addition tant que tu ne la demandes pas. Dis 'L'addition, s'il vous plaît' quand tu es prêt à payer.",
+    "de": "Im Restaurant bringt die Bedienung die Rechnung erst, wenn du darum bittest. Sag 'L'addition, s'il vous plaît', wenn du zahlen möchtest."
+   }
+  },
+  {
+   "id": "ct-FR-08",
+   "category": "tipping",
+   "text": {
+    "en": "Service is included by law in restaurant prices ('service compris'). Leaving a few coins or rounding up is a polite extra but not expected.",
+    "it": "Il servizio è incluso per legge nei prezzi dei ristoranti ('service compris'). Lasciare qualche moneta o arrotondare è un gesto gentile ma non atteso.",
+    "es": "El servicio está incluido por ley en los precios de los restaurantes ('service compris'). Dejar unas monedas o redondear es un detalle amable, pero no se espera.",
+    "pt": "O serviço está incluído por lei nos preços dos restaurantes ('service compris'). Deixar algumas moedas ou arredondar é um gesto simpático, mas não é esperado.",
+    "pt_BR": "O serviço está incluído por lei nos preços dos restaurantes ('service compris'). Deixar algumas moedas ou arredondar é um gesto simpático, mas não é esperado.",
+    "fr": "Le service est inclus par la loi dans les prix des restaurants ('service compris'). Laisser quelques pièces ou arrondir est un geste aimable mais pas attendu.",
+    "de": "Der Service ist gesetzlich im Restaurantpreis enthalten ('service compris'). Ein paar Münzen oder Aufrunden sind eine nette Geste, werden aber nicht erwartet."
+   }
+  },
+  {
+   "id": "ct-FR-09",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to a French home, bring flowers, chocolates or a good bottle of wine. Avoid chrysanthemums, which are tied to funerals and All Saints' Day.",
+    "it": "Se sei invitato in una casa francese, porta fiori, cioccolatini o una buona bottiglia di vino. Evita i crisantemi, legati ai funerali e al giorno di Ognissanti.",
+    "es": "Si te invitan a una casa francesa, lleva flores, bombones o una buena botella de vino. Evita los crisantemos, asociados a los funerales y al día de Todos los Santos.",
+    "pt": "Se fores convidado para uma casa francesa, leva flores, chocolates ou uma boa garrafa de vinho. Evita os crisântemos, associados a funerais e ao dia de Todos os Santos.",
+    "pt_BR": "Se você for convidado para uma casa francesa, leve flores, chocolates ou uma boa garrafa de vinho. Evite crisântemos, associados a funerais e ao dia de Todos os Santos.",
+    "fr": "Si tu es invité chez des Français, apporte des fleurs, des chocolats ou une bonne bouteille de vin. Évite les chrysanthèmes, liés aux enterrements et à la Toussaint.",
+    "de": "Wenn du bei Franzosen eingeladen bist, bring Blumen, Pralinen oder eine gute Flasche Wein mit. Vermeide Chrysanthemen, die mit Beerdigungen und Allerheiligen verbunden sind."
+   }
+  },
+  {
+   "id": "ct-FR-10",
+   "category": "dress",
+   "text": {
+    "en": "People tend to dress neatly even for everyday outings, in simple, well-fitting clothes. Very sporty or beach outfits stand out in cities.",
+    "it": "Le persone tendono a vestirsi in modo curato anche per le uscite quotidiane, con abiti semplici e ben tagliati. Abbigliamento molto sportivo o da spiaggia si nota in città.",
+    "es": "La gente suele vestirse con cuidado incluso para salidas cotidianas, con ropa sencilla y que le siente bien. La ropa muy deportiva o de playa destaca en las ciudades.",
+    "pt": "As pessoas tendem a vestir-se de forma cuidada mesmo nas saídas do dia a dia, com roupa simples e bem ajustada. Roupa muito desportiva ou de praia destaca-se nas cidades.",
+    "pt_BR": "As pessoas tendem a se vestir de forma caprichada mesmo em saídas do dia a dia, com roupas simples e bem ajustadas. Roupas muito esportivas ou de praia chamam atenção nas cidades.",
+    "fr": "On a tendance à s'habiller avec soin même pour les sorties du quotidien, avec des vêtements simples et bien coupés. Les tenues très sportives ou de plage se remarquent en ville.",
+    "de": "Man kleidet sich auch im Alltag gepflegt, mit schlichter, gut sitzender Kleidung. Sehr sportliche oder strandtaugliche Outfits fallen in Städten auf."
+   }
+  },
+  {
+   "id": "ct-FR-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Cathedrals and churches such as Notre-Dame or those in Chartres are open to visitors, but cover your shoulders, speak quietly and respect services.",
+    "it": "Cattedrali e chiese, come Notre-Dame o quelle di Chartres, sono aperte ai visitatori, ma copri le spalle, parla a bassa voce e rispetta le funzioni.",
+    "es": "Las catedrales e iglesias, como Notre-Dame o las de Chartres, están abiertas a los visitantes, pero cúbrete los hombros, habla en voz baja y respeta los oficios.",
+    "pt": "As catedrais e igrejas, como Notre-Dame ou as de Chartres, estão abertas a visitantes, mas tapa os ombros, fala baixo e respeita as celebrações.",
+    "pt_BR": "As catedrais e igrejas, como Notre-Dame ou as de Chartres, estão abertas a visitantes, mas cubra os ombros, fale baixo e respeite as celebrações.",
+    "fr": "Les cathédrales et églises, comme Notre-Dame ou celles de Chartres, sont ouvertes aux visiteurs, mais couvre-toi les épaules, parle doucement et respecte les offices.",
+    "de": "Kathedralen und Kirchen wie Notre-Dame oder die in Chartres sind für Besucher offen, aber bedecke die Schultern, sprich leise und respektiere Gottesdienste."
+   }
+  },
+  {
+   "id": "ct-FR-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "France is built on 'laïcité', the separation of religion and the state. Faith is seen as a private matter, so avoid asking people about their beliefs.",
+    "it": "La Francia si fonda sulla 'laïcité', la separazione tra religione e Stato. La fede è vista come una questione privata, quindi evita di chiedere alle persone delle loro credenze.",
+    "es": "Francia se basa en la 'laïcité', la separación entre religión y Estado. La fe se ve como un asunto privado, así que evita preguntar a la gente por sus creencias.",
+    "pt": "A França assenta na 'laïcité', a separação entre religião e Estado. A fé é vista como assunto privado, por isso evita perguntar às pessoas sobre as suas crenças.",
+    "pt_BR": "A França se baseia na 'laïcité', a separação entre religião e Estado. A fé é vista como assunto privado, então evite perguntar às pessoas sobre suas crenças.",
+    "fr": "La France repose sur la 'laïcité', la séparation de la religion et de l'État. La foi est vue comme une affaire privée, alors évite de demander aux gens leurs croyances.",
+    "de": "Frankreich beruht auf der 'laïcité', der Trennung von Religion und Staat. Glaube gilt als Privatsache, frag die Leute also nicht nach ihren Überzeugungen."
+   }
+  },
+  {
+   "id": "ct-FR-13",
+   "category": "gestures",
+   "text": {
+    "en": "Do not snap your fingers or shout to call a waiter. Make eye contact, raise your hand slightly and say 'S'il vous plaît' or 'Monsieur/Madame'.",
+    "it": "Non schioccare le dita né gridare per chiamare un cameriere. Cerca il contatto visivo, alza leggermente la mano e di' 'S'il vous plaît' o 'Monsieur/Madame'.",
+    "es": "No chasquees los dedos ni grites para llamar al camarero. Busca el contacto visual, levanta ligeramente la mano y di 'S'il vous plaît' o 'Monsieur/Madame'.",
+    "pt": "Não estales os dedos nem grites para chamar o empregado. Faz contacto visual, levanta ligeiramente a mão e diz 'S'il vous plaît' ou 'Monsieur/Madame'.",
+    "pt_BR": "Não estale os dedos nem grite para chamar o garçom. Faça contato visual, levante levemente a mão e diga 'S'il vous plaît' ou 'Monsieur/Madame'.",
+    "fr": "Ne claque pas des doigts et ne crie pas pour appeler un serveur. Croise son regard, lève légèrement la main et dis 'S'il vous plaît' ou 'Monsieur/Madame'.",
+    "de": "Schnipp nicht mit den Fingern und ruf nicht laut nach der Bedienung. Such Blickkontakt, heb leicht die Hand und sag 'S'il vous plaît' oder 'Monsieur/Madame'."
+   }
+  },
+  {
+   "id": "ct-FR-14",
+   "category": "punctuality",
+   "text": {
+    "en": "Be on time for work and formal meetings. For a dinner at someone's home, arriving 10 to 15 minutes late is common and often considered polite.",
+    "it": "Sii puntuale per lavoro e riunioni formali. Per una cena a casa di qualcuno, arrivare 10-15 minuti dopo è comune e spesso considerato educato.",
+    "es": "Sé puntual en el trabajo y en reuniones formales. En una cena en casa de alguien, llegar 10 o 15 minutos tarde es habitual y a menudo se considera de buena educación.",
+    "pt": "Sê pontual no trabalho e em reuniões formais. Num jantar em casa de alguém, chegar 10 a 15 minutos atrasado é comum e muitas vezes considerado educado.",
+    "pt_BR": "Seja pontual no trabalho e em reuniões formais. Em um jantar na casa de alguém, chegar 10 a 15 minutos atrasado é comum e muitas vezes considerado educado.",
+    "fr": "Sois ponctuel au travail et pour les rendez-vous formels. Pour un dîner chez quelqu'un, arriver avec 10 à 15 minutes de retard est courant et souvent jugé poli.",
+    "de": "Sei bei der Arbeit und bei formellen Terminen pünktlich. Zu einem Abendessen bei jemandem zu Hause kommt man oft 10 bis 15 Minuten später, was als höflich gilt."
+   }
+  },
+  {
+   "id": "ct-FR-15",
+   "category": "punctuality",
+   "text": {
+    "en": "In smaller towns many shops close at lunchtime and on Sundays, so plan your shopping ahead. Bakeries and markets are often open on Sunday mornings.",
+    "it": "Nelle cittadine molti negozi chiudono a pranzo e la domenica, quindi pianifica gli acquisti. Panetterie e mercati sono spesso aperti la domenica mattina.",
+    "es": "En las ciudades pequeñas muchas tiendas cierran a la hora de comer y los domingos, así que planifica las compras. Las panaderías y los mercados suelen abrir el domingo por la mañana.",
+    "pt": "Nas cidades mais pequenas, muitas lojas fecham à hora do almoço e aos domingos, por isso planeia as compras. As padarias e os mercados costumam abrir ao domingo de manhã.",
+    "pt_BR": "Em cidades menores, muitas lojas fecham na hora do almoço e aos domingos, então planeje as compras. Padarias e feiras costumam abrir no domingo de manhã.",
+    "fr": "Dans les petites villes, de nombreux magasins ferment à l'heure du déjeuner et le dimanche, alors planifie tes courses. Les boulangeries et les marchés sont souvent ouverts le dimanche matin.",
+    "de": "In kleineren Städten schließen viele Geschäfte mittags und sonntags, plane deine Einkäufe also im Voraus. Bäckereien und Märkte sind sonntagmorgens oft geöffnet."
+   }
+  },
+  {
+   "id": "ct-FR-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "Keep your voice down on public transport and in restaurants. Loud conversations or music without headphones are frowned upon.",
+    "it": "Abbassa la voce sui mezzi pubblici e nei ristoranti. Conversazioni ad alta voce o musica senza cuffie sono mal viste.",
+    "es": "Baja la voz en el transporte público y en los restaurantes. Las conversaciones a gritos o la música sin auriculares están mal vistas.",
+    "pt": "Mantém a voz baixa nos transportes públicos e nos restaurantes. Conversas em voz alta ou música sem auscultadores são mal vistas.",
+    "pt_BR": "Mantenha a voz baixa no transporte público e em restaurantes. Conversas em voz alta ou música sem fones de ouvido são mal vistas.",
+    "fr": "Garde la voix basse dans les transports en commun et les restaurants. Les conversations bruyantes ou la musique sans écouteurs sont mal vues.",
+    "de": "Sprich in öffentlichen Verkehrsmitteln und Restaurants leise. Laute Gespräche oder Musik ohne Kopfhörer sind unerwünscht."
+   }
+  },
+  {
+   "id": "ct-FR-17",
+   "category": "transport",
+   "text": {
+    "en": "Validate paper train tickets in the yellow machines at the station before boarding when required. Fast TGV trains need a reservation and have assigned seats.",
+    "it": "Convalida i biglietti ferroviari cartacei nelle macchinette gialle in stazione prima di salire, quando richiesto. I treni veloci TGV richiedono la prenotazione e hanno posti assegnati.",
+    "es": "Valida los billetes de tren en papel en las máquinas amarillas de la estación antes de subir, cuando se requiera. Los trenes rápidos TGV necesitan reserva y llevan asiento asignado.",
+    "pt": "Valida os bilhetes de comboio em papel nas máquinas amarelas da estação antes de embarcares, quando for exigido. Os comboios rápidos TGV exigem reserva e têm lugar marcado.",
+    "pt_BR": "Valide as passagens de trem em papel nas máquinas amarelas da estação antes de embarcar, quando exigido. Os trens rápidos TGV exigem reserva e têm assento marcado.",
+    "fr": "Composte les billets de train papier dans les bornes jaunes en gare avant de monter, quand c'est requis. Les TGV exigent une réservation et ont des places attribuées.",
+    "de": "Entwerte Papier-Bahntickets, wenn nötig, vor dem Einsteigen an den gelben Automaten im Bahnhof. Schnelle TGV-Züge erfordern eine Reservierung und haben feste Sitzplätze."
+   }
+  },
+  {
+   "id": "ct-FR-18",
+   "category": "transport",
+   "text": {
+    "en": "In Paris, the metro is the fastest way around. Let passengers get off before you board, and offer your seat to older people or those who need it.",
+    "it": "A Parigi la metropolitana è il modo più veloce per spostarsi. Fai scendere i passeggeri prima di salire e offri il posto ad anziani o a chi ne ha bisogno.",
+    "es": "En París, el metro es la forma más rápida de moverse. Deja salir a los pasajeros antes de subir y cede el asiento a personas mayores o a quien lo necesite.",
+    "pt": "Em Paris, o metro é a forma mais rápida de circular. Deixa os passageiros sair antes de entrares e oferece o lugar a pessoas mais velhas ou a quem precisar.",
+    "pt_BR": "Em Paris, o metrô é a forma mais rápida de se locomover. Deixe os passageiros descerem antes de entrar e ofereça o lugar a idosos ou a quem precisar.",
+    "fr": "À Paris, le métro est le moyen le plus rapide de se déplacer. Laisse descendre les voyageurs avant de monter et cède ta place aux personnes âgées ou à celles qui en ont besoin.",
+    "de": "In Paris ist die Metro das schnellste Verkehrsmittel. Lass Fahrgäste erst aussteigen, bevor du einsteigst, und biete älteren oder bedürftigen Menschen deinen Platz an."
+   }
+  },
+  {
+   "id": "ct-FR-19",
+   "category": "language",
+   "text": {
+    "en": "A French greeting and an effort to speak a few words are very much appreciated. Start with 'Bonjour, parlez-vous anglais ?' before switching to English.",
+    "it": "Un saluto in francese e lo sforzo di dire qualche parola sono molto apprezzati. Comincia con 'Bonjour, parlez-vous anglais ?' prima di passare all'inglese.",
+    "es": "Se agradece mucho un saludo en francés y el esfuerzo de decir algunas palabras. Empieza con 'Bonjour, parlez-vous anglais ?' antes de pasar al inglés.",
+    "pt": "Um cumprimento em francês e o esforço de dizer algumas palavras são muito apreciados. Começa com 'Bonjour, parlez-vous anglais ?' antes de passares ao inglês.",
+    "pt_BR": "Um cumprimento em francês e o esforço de dizer algumas palavras são muito apreciados. Comece com 'Bonjour, parlez-vous anglais ?' antes de passar para o inglês.",
+    "fr": "Un salut en français et l'effort de dire quelques mots sont très appréciés. Commence par 'Bonjour, parlez-vous anglais ?' avant de passer à l'anglais.",
+    "de": "Ein Gruß auf Französisch und der Versuch, ein paar Worte zu sprechen, werden sehr geschätzt. Beginne mit 'Bonjour, parlez-vous anglais ?', bevor du ins Englische wechselst."
+   }
+  },
+  {
+   "id": "ct-FR-20",
+   "category": "language",
+   "text": {
+    "en": "Besides French, regional languages such as Breton, Basque, Occitan and Alsatian are spoken in some areas and are a source of local pride.",
+    "it": "Oltre al francese, in alcune zone si parlano lingue regionali come bretone, basco, occitano e alsaziano, motivo di orgoglio locale.",
+    "es": "Además del francés, en algunas zonas se hablan lenguas regionales como el bretón, el vasco, el occitano y el alsaciano, motivo de orgullo local.",
+    "pt": "Além do francês, em algumas zonas falam-se línguas regionais como o bretão, o basco, o occitano e o alsaciano, motivo de orgulho local.",
+    "pt_BR": "Além do francês, em algumas áreas falam-se línguas regionais como o bretão, o basco, o occitano e o alsaciano, motivo de orgulho local.",
+    "fr": "Outre le français, des langues régionales comme le breton, le basque, l'occitan et l'alsacien sont parlées dans certaines régions et sont une source de fierté locale.",
+    "de": "Neben Französisch werden in manchen Gegenden Regionalsprachen wie Bretonisch, Baskisch, Okzitanisch und Elsässisch gesprochen, auf die man vor Ort stolz ist."
+   }
+  },
+  {
+   "id": "ct-FR-21",
+   "category": "festivals",
+   "text": {
+    "en": "Bastille Day on 14 July is France's national holiday, with a military parade on the Champs-Élysées in Paris, fireworks and public dances across the country.",
+    "it": "La festa del 14 luglio, giorno della presa della Bastiglia, è la festa nazionale francese, con una parata militare sugli Champs-Élysées a Parigi, fuochi d'artificio e balli pubblici in tutto il paese.",
+    "es": "El 14 de julio, Día de la Bastilla, es la fiesta nacional de Francia, con un desfile militar en los Campos Elíseos de París, fuegos artificiales y bailes públicos por todo el país.",
+    "pt": "O 14 de julho, Dia da Bastilha, é a festa nacional de França, com um desfile militar nos Campos Elísios, em Paris, fogo de artifício e bailes populares por todo o país.",
+    "pt_BR": "O 14 de julho, Dia da Bastilha, é a festa nacional da França, com um desfile militar na Avenida dos Champs-Élysées, em Paris, fogos de artifício e bailes populares por todo o país.",
+    "fr": "Le 14 juillet, fête nationale, est célébré par un défilé militaire sur les Champs-Élysées à Paris, des feux d'artifice et des bals publics dans tout le pays.",
+    "de": "Der 14. Juli, der französische Nationalfeiertag, wird mit einer Militärparade auf den Champs-Élysées in Paris, Feuerwerken und öffentlichen Tanzfesten im ganzen Land gefeiert."
+   }
+  },
+  {
+   "id": "ct-FR-22",
+   "category": "festivals",
+   "text": {
+    "en": "The Fête de la Musique on 21 June fills streets and squares with free concerts by amateurs and professionals. It is a great way to experience local life.",
+    "it": "La Fête de la Musique del 21 giugno riempie strade e piazze di concerti gratuiti di dilettanti e professionisti. È un ottimo modo per vivere la vita locale.",
+    "es": "La Fête de la Musique, el 21 de junio, llena calles y plazas de conciertos gratuitos de aficionados y profesionales. Es una gran forma de conocer la vida local.",
+    "pt": "A Fête de la Musique, a 21 de junho, enche ruas e praças de concertos gratuitos de amadores e profissionais. É uma ótima forma de conhecer a vida local.",
+    "pt_BR": "A Fête de la Musique, em 21 de junho, enche ruas e praças de shows gratuitos de amadores e profissionais. É uma ótima forma de conhecer a vida local.",
+    "fr": "La Fête de la Musique, le 21 juin, remplit rues et places de concerts gratuits d'amateurs et de professionnels. C'est une belle façon de découvrir la vie locale.",
+    "de": "Das Fête de la Musique am 21. Juni füllt Straßen und Plätze mit kostenlosen Konzerten von Amateuren und Profis. Eine tolle Gelegenheit, das Leben vor Ort zu erleben."
+   }
+  },
+  {
+   "id": "ct-FR-23",
+   "category": "family",
+   "text": {
+    "en": "Long Sunday lunches with extended family are a cherished tradition for many households, and meals are seen as time to talk and enjoy company.",
+    "it": "I lunghi pranzi della domenica con la famiglia allargata sono una tradizione cara a molte famiglie, e i pasti sono visti come momenti per parlare e stare insieme.",
+    "es": "Los largos almuerzos de domingo con la familia extensa son una tradición querida en muchos hogares, y las comidas se ven como un momento para conversar y disfrutar de la compañía.",
+    "pt": "Os longos almoços de domingo com a família alargada são uma tradição muito querida em muitas casas, e as refeições são vistas como momentos para conversar e estar juntos.",
+    "pt_BR": "Os longos almoços de domingo com a família estendida são uma tradição querida em muitas casas, e as refeições são vistas como momentos para conversar e curtir a companhia.",
+    "fr": "Les longs déjeuners du dimanche en famille élargie sont une tradition chère à de nombreux foyers, et les repas sont vus comme un moment pour discuter et profiter de la compagnie.",
+    "de": "Lange Sonntagsessen mit der Großfamilie sind in vielen Haushalten eine geschätzte Tradition, und Mahlzeiten gelten als Zeit zum Reden und Beisammensein."
+   }
+  },
+  {
+   "id": "ct-FR-24",
+   "category": "money",
+   "text": {
+    "en": "France uses the euro. Cards and contactless payments are common, though some small shops and markets prefer cash or set a minimum amount for card payments.",
+    "it": "La Francia usa l'euro. Carte e pagamenti contactless sono comuni, anche se alcuni piccoli negozi e mercati preferiscono i contanti o fissano un importo minimo per le carte.",
+    "es": "Francia usa el euro. Las tarjetas y los pagos sin contacto son comunes, aunque algunas tiendas pequeñas y mercados prefieren efectivo o fijan un importe mínimo para pagar con tarjeta.",
+    "pt": "A França usa o euro. Cartões e pagamentos sem contacto são comuns, embora algumas lojas pequenas e mercados prefiram dinheiro ou imponham um valor mínimo para pagar com cartão.",
+    "pt_BR": "A França usa o euro. Cartões e pagamentos por aproximação são comuns, embora algumas lojas pequenas e feiras prefiram dinheiro ou definam um valor mínimo para pagar com cartão.",
+    "fr": "La France utilise l'euro. Les cartes et le paiement sans contact sont courants, même si certains petits commerces et marchés préfèrent les espèces ou fixent un minimum pour la carte.",
+    "de": "Frankreich nutzt den Euro. Karten und kontaktloses Bezahlen sind üblich, doch manche kleinen Läden und Märkte bevorzugen Bargeld oder verlangen einen Mindestbetrag für Kartenzahlung."
+   }
+  },
+  {
+   "id": "ct-FR-25",
+   "category": "money",
+   "text": {
+    "en": "In cafés, drinks at the bar (au comptoir) are often cheaper than at a table or on the terrace, so check the price list if you are watching your budget.",
+    "it": "Nei caffè, le bevande al banco (au comptoir) costano spesso meno che al tavolo o in terrazza, quindi controlla il listino se tieni al budget.",
+    "es": "En los cafés, las bebidas en la barra (au comptoir) suelen costar menos que en la mesa o en la terraza, así que mira la lista de precios si cuidas el presupuesto.",
+    "pt": "Nos cafés, as bebidas ao balcão (au comptoir) costumam ser mais baratas do que à mesa ou na esplanada, por isso vê a lista de preços se estiveres a controlar o orçamento.",
+    "pt_BR": "Nos cafés, as bebidas no balcão (au comptoir) costumam ser mais baratas do que na mesa ou no terraço, então confira a lista de preços se estiver de olho no orçamento.",
+    "fr": "Dans les cafés, les boissons au comptoir sont souvent moins chères qu'à table ou en terrasse, alors regarde la carte des prix si tu surveilles ton budget.",
+    "de": "In Cafés sind Getränke an der Theke (au comptoir) oft günstiger als am Tisch oder auf der Terrasse. Schau also auf die Preisliste, wenn du aufs Budget achtest."
+   }
+  },
+  {
+   "id": "ct-FR-26",
+   "category": "photography",
+   "text": {
+    "en": "France has strong privacy rights over one's image. Ask before photographing people, especially children, and follow the rules in museums, where flash is often banned.",
+    "it": "In Francia il diritto all'immagine è molto tutelato. Chiedi prima di fotografare le persone, soprattutto i bambini, e rispetta le regole dei musei, dove il flash è spesso vietato.",
+    "es": "En Francia el derecho a la propia imagen está muy protegido. Pregunta antes de fotografiar a personas, sobre todo a niños, y respeta las normas de los museos, donde el flash suele estar prohibido.",
+    "pt": "Em França, o direito à imagem é muito protegido. Pergunta antes de fotografares pessoas, sobretudo crianças, e respeita as regras dos museus, onde o flash é muitas vezes proibido.",
+    "pt_BR": "Na França, o direito à imagem é muito protegido. Pergunte antes de fotografar pessoas, principalmente crianças, e respeite as regras dos museus, onde o flash costuma ser proibido.",
+    "fr": "En France, le droit à l'image est très protégé. Demande avant de photographier des personnes, surtout des enfants, et respecte les règles des musées, où le flash est souvent interdit.",
+    "de": "In Frankreich ist das Recht am eigenen Bild stark geschützt. Frag, bevor du Menschen fotografierst, besonders Kinder, und beachte die Regeln der Museen, wo Blitz oft verboten ist."
+   }
+  },
+  {
+   "id": "ct-FR-27",
+   "category": "nightlife",
+   "text": {
+    "en": "The Paris metro does not run all night on most days, with later service on weekends. Check the last train or plan a taxi or night bus before heading out.",
+    "it": "La metropolitana di Parigi non funziona tutta la notte nella maggior parte dei giorni, con un servizio più lungo nel fine settimana. Controlla l'ultimo treno o pianifica un taxi o un bus notturno prima di uscire.",
+    "es": "El metro de París no funciona toda la noche la mayoría de los días, con servicio más tardío los fines de semana. Mira el último tren o planea un taxi o autobús nocturno antes de salir.",
+    "pt": "O metro de Paris não funciona a noite toda na maioria dos dias, com serviço mais tardio ao fim de semana. Vê o último comboio ou planeia um táxi ou autocarro noturno antes de saíres.",
+    "pt_BR": "O metrô de Paris não funciona a noite toda na maioria dos dias, com serviço mais tarde nos fins de semana. Confira o último trem ou planeje um táxi ou ônibus noturno antes de sair.",
+    "fr": "Le métro parisien ne circule pas toute la nuit la plupart des jours, avec un service plus tardif le week-end. Vérifie le dernier métro ou prévois un taxi ou un bus de nuit avant de sortir.",
+    "de": "Die Pariser Metro fährt an den meisten Tagen nicht die ganze Nacht, am Wochenende aber länger. Prüfe die letzte Bahn oder plane Taxi oder Nachtbus, bevor du losgehst."
+   }
+  },
+  {
+   "id": "ct-FR-28",
+   "category": "nature",
+   "text": {
+    "en": "Hiking trails called GR (grande randonnée) are marked with red and white stripes. Follow the markings, carry water and check the weather in mountain areas.",
+    "it": "I sentieri escursionistici chiamati GR (grande randonnée) sono segnati con strisce bianche e rosse. Segui i segnavia, porta acqua e controlla il meteo in montagna.",
+    "es": "Los senderos llamados GR (grande randonnée) están marcados con franjas rojas y blancas. Sigue las marcas, lleva agua y consulta el tiempo en zonas de montaña.",
+    "pt": "Os trilhos chamados GR (grande randonnée) estão marcados com riscas vermelhas e brancas. Segue as marcas, leva água e consulta a meteorologia nas zonas de montanha.",
+    "pt_BR": "As trilhas chamadas GR (grande randonnée) são marcadas com listras vermelhas e brancas. Siga as marcações, leve água e confira a previsão do tempo em áreas de montanha.",
+    "fr": "Les sentiers de grande randonnée (GR) sont balisés de traits rouges et blancs. Suis le balisage, emporte de l'eau et vérifie la météo en montagne.",
+    "de": "Fernwanderwege namens GR (grande randonnée) sind mit rot-weißen Streifen markiert. Folge den Markierungen, nimm Wasser mit und prüfe in den Bergen das Wetter."
+   }
+  },
+  {
+   "id": "ct-FR-29",
+   "category": "safety",
+   "text": {
+    "en": "France is generally safe, but pickpockets operate around major tourist sites and on the metro. Keep bags closed. Emergency numbers: 112 (general), 15 (medical), 17 (police).",
+    "it": "La Francia è in genere sicura, ma i borseggiatori agiscono presso i principali siti turistici e in metropolitana. Tieni le borse chiuse. Numeri d'emergenza: 112 (generale), 15 (medico), 17 (polizia).",
+    "es": "Francia es en general segura, pero hay carteristas en los principales sitios turísticos y en el metro. Mantén los bolsos cerrados. Números de emergencia: 112 (general), 15 (médico), 17 (policía).",
+    "pt": "A França é em geral segura, mas há carteiristas junto dos principais locais turísticos e no metro. Mantém as malas fechadas. Números de emergência: 112 (geral), 15 (médico), 17 (polícia).",
+    "pt_BR": "A França é em geral segura, mas há batedores de carteira perto dos principais pontos turísticos e no metrô. Mantenha as bolsas fechadas. Números de emergência: 112 (geral), 15 (médico), 17 (polícia).",
+    "fr": "La France est globalement sûre, mais des pickpockets opèrent près des grands sites touristiques et dans le métro. Garde ton sac fermé. Numéros d'urgence : 112 (général), 15 (SAMU), 17 (police).",
+    "de": "Frankreich ist im Allgemeinen sicher, aber an großen Sehenswürdigkeiten und in der Metro gibt es Taschendiebe. Halte Taschen geschlossen. Notrufe: 112 (allgemein), 15 (Rettungsdienst), 17 (Polizei)."
+   }
+  },
+  {
+   "id": "ct-FR-30",
+   "category": "local_pride",
+   "text": {
+    "en": "People are proud of their regional food, from Breton crêpes to Provençal dishes and hundreds of cheeses. Asking about a local specialty is a great conversation starter.",
+    "it": "Le persone vanno fiere della cucina della propria regione, dalle crêpes bretoni ai piatti provenzali e alle centinaia di formaggi. Chiedere una specialità locale è un ottimo modo per iniziare una conversazione.",
+    "es": "La gente está orgullosa de la cocina de su región, desde las crêpes bretonas hasta los platos provenzales y cientos de quesos. Preguntar por una especialidad local es una buena forma de empezar a conversar.",
+    "pt": "As pessoas têm orgulho da cozinha da sua região, das crepes bretãs aos pratos provençais e às centenas de queijos. Perguntar por uma especialidade local é uma ótima forma de começar conversa.",
+    "pt_BR": "As pessoas têm orgulho da culinária da sua região, das crepes bretãs aos pratos provençais e às centenas de queijos. Perguntar por uma especialidade local é uma ótima forma de puxar conversa.",
+    "fr": "On est fier de la cuisine de sa région, des crêpes bretonnes aux plats provençaux et aux centaines de fromages. Demander une spécialité locale est une excellente façon de lancer la conversation.",
+    "de": "Die Menschen sind stolz auf die Küche ihrer Region, von bretonischen Crêpes über provenzalische Gerichte bis zu hunderten Käsesorten. Nach einer lokalen Spezialität zu fragen, ist ein guter Gesprächseinstieg."
+   }
+  }
+ ]
+}

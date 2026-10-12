@@ -1,0 +1,1178 @@
+{
+ "AU": [
+  {
+   "id": "ct-AU-01",
+   "category": "greetings",
+   "text": {
+    "en": "A handshake with eye contact and a relaxed G'day or Hi, how are you? is the usual way to meet someone. Hugs and cheek kisses are mostly kept for close friends.",
+    "it": "Una stretta di mano con contatto visivo e un G'day o un Hi, how are you? rilassato è il modo abituale di presentarsi. Abbracci e baci sulla guancia sono per lo più riservati agli amici stretti.",
+    "es": "Lo habitual es un apretón de manos con contacto visual y un G'day o un Hi, how are you? relajado. Los abrazos y los besos en la mejilla se reservan sobre todo para amigos cercanos.",
+    "pt": "O habitual é um aperto de mão com contacto visual e um G'day ou um Hi, how are you? descontraído. Abraços e beijos na cara ficam sobretudo para os amigos próximos.",
+    "pt_BR": "O comum é um aperto de mão com contato visual e um G'day ou um Hi, how are you? descontraído. Abraços e beijos no rosto ficam mais para os amigos próximos.",
+    "fr": "On se serre la main en regardant l'autre dans les yeux, avec un G'day ou un Hi, how are you? décontracté. Les accolades et les bises sont surtout réservées aux amis proches.",
+    "de": "Üblich sind ein Händedruck mit Blickkontakt und ein lockeres G'day oder Hi, how are you?. Umarmungen und Wangenküsse sind meist engen Freunden vorbehalten."
+   }
+  },
+  {
+   "id": "ct-AU-02",
+   "category": "greetings",
+   "text": {
+    "en": "Many Australians shorten words and add -ie or -o, like arvo for afternoon or brekkie for breakfast. Smiling and asking what a word means is welcome and often starts a good chat.",
+    "it": "Molti australiani accorciano le parole e aggiungono -ie o -o, come arvo per afternoon o brekkie per breakfast. Chiedere con un sorriso cosa significa una parola è gradito e spesso apre una bella chiacchierata.",
+    "es": "Muchos australianos acortan las palabras y añaden -ie o -o, como arvo por afternoon o brekkie por breakfast. Preguntar sonriendo qué significa una palabra es bien recibido y suele abrir buena conversación.",
+    "pt": "Muitos australianos encurtam as palavras e acrescentam -ie ou -o, como arvo para afternoon ou brekkie para breakfast. Perguntar com um sorriso o que significa uma palavra é bem-vindo e muitas vezes puxa conversa.",
+    "pt_BR": "Muitos australianos encurtam as palavras e acrescentam -ie ou -o, como arvo para afternoon ou brekkie para breakfast. Perguntar com um sorriso o que uma palavra significa é bem-vindo e muitas vezes puxa conversa.",
+    "fr": "Beaucoup d'Australiens raccourcissent les mots et ajoutent -ie ou -o, comme arvo pour afternoon ou brekkie pour breakfast. Demander avec le sourire ce qu'un mot veut dire est bien vu et lance souvent la conversation.",
+    "de": "Viele Australier kürzen Wörter ab und hängen -ie oder -o an, etwa arvo für afternoon oder brekkie für breakfast. Mit einem Lächeln nachzufragen, was ein Wort bedeutet, kommt gut an und bringt oft ein Gespräch in Gang."
+   }
+  },
+  {
+   "id": "ct-AU-03",
+   "category": "conversation",
+   "text": {
+    "en": "Australian humour is often dry and self-mocking, and friendly teasing is common among friends. Many people dislike bragging, so modest talk about your own achievements goes down well.",
+    "it": "L'umorismo australiano è spesso asciutto e autoironico, e prendersi bonariamente in giro tra amici è comune. A molti non piace chi si vanta, quindi parlare con modestia dei propri successi è apprezzato.",
+    "es": "El humor australiano suele ser seco y autocrítico, y las bromas amistosas entre amigos son habituales. A mucha gente no le gusta presumir, así que hablar con modestia de tus logros cae bien.",
+    "pt": "O humor australiano é muitas vezes seco e autoirónico, e as piadas amigáveis entre amigos são comuns. Muita gente não gosta de gabarolices, por isso falar com modéstia das tuas conquistas é bem visto.",
+    "pt_BR": "O humor australiano costuma ser seco e autoirônico, e brincadeiras amigáveis entre amigos são comuns. Muita gente não gosta de se gabar, então falar com modéstia das suas conquistas cai bem.",
+    "fr": "L'humour australien est souvent pince-sans-rire et autodérisoire, et les taquineries amicales sont courantes entre amis. Beaucoup n'aiment pas les vantards : parler avec modestie de ses réussites est apprécié.",
+    "de": "Der australische Humor ist oft trocken und selbstironisch, und freundliches Aufziehen unter Freunden ist üblich. Viele mögen keine Angeberei, deshalb kommt es gut an, bescheiden über eigene Erfolge zu sprechen."
+   }
+  },
+  {
+   "id": "ct-AU-04",
+   "category": "conversation",
+   "text": {
+    "en": "The term tall poppy syndrome describes a dislike of people who boast or stand out too much. Sharing a win with a bit of humility, and praising others, fits the local style.",
+    "it": "L'espressione tall poppy syndrome descrive l'insofferenza verso chi si vanta o si mette troppo in mostra. Raccontare un successo con un po' di umiltà e lodare gli altri è in linea con lo stile locale.",
+    "es": "La expresión tall poppy syndrome describe el rechazo a quien presume o destaca demasiado. Contar un éxito con algo de humildad y elogiar a los demás encaja con el estilo local.",
+    "pt": "A expressão tall poppy syndrome descreve a antipatia por quem se gaba ou se destaca demais. Contar uma vitória com alguma humildade e elogiar os outros encaixa no estilo local.",
+    "pt_BR": "A expressão tall poppy syndrome descreve a antipatia por quem se gaba ou se destaca demais. Contar uma vitória com um pouco de humildade e elogiar os outros combina com o estilo local.",
+    "fr": "L'expression tall poppy syndrome décrit la méfiance envers ceux qui se vantent ou se mettent trop en avant. Raconter une réussite avec un peu d'humilité et féliciter les autres correspond au style local.",
+    "de": "Der Ausdruck tall poppy syndrome beschreibt die Abneigung gegen Leute, die prahlen oder zu sehr herausstechen. Einen Erfolg mit etwas Bescheidenheit zu erzählen und andere zu loben, passt zum lokalen Stil."
+   }
+  },
+  {
+   "id": "ct-AU-05",
+   "category": "dining",
+   "text": {
+    "en": "A backyard barbecue, or barbie, is a cherished tradition. When invited, it is common to ask what to bring and to arrive with something small to share, such as a salad or dessert.",
+    "it": "Il barbecue in giardino, o barbie, è una tradizione amatissima. Se sei invitato, è normale chiedere cosa portare e arrivare con qualcosa da condividere, come un'insalata o un dolce.",
+    "es": "La barbacoa en el jardín, o barbie, es una tradición muy querida. Si te invitan, es normal preguntar qué llevar y llegar con algo para compartir, como una ensalada o un postre.",
+    "pt": "O churrasco no quintal, ou barbie, é uma tradição muito querida. Se fores convidado, é normal perguntar o que levar e chegar com algo para partilhar, como uma salada ou uma sobremesa.",
+    "pt_BR": "O churrasco no quintal, ou barbie, é uma tradição muito querida. Se você for convidado, é normal perguntar o que levar e chegar com algo para dividir, como uma salada ou uma sobremesa.",
+    "fr": "Le barbecue dans le jardin, ou barbie, est une tradition très appréciée. Si on vous invite, il est courant de demander ce qu'il faut apporter et d'arriver avec un petit plat à partager, comme une salade ou un dessert.",
+    "de": "Das Grillen im Garten, das barbie, ist eine beliebte Tradition. Wenn du eingeladen bist, fragt man üblicherweise, was man mitbringen soll, und kommt mit etwas zum Teilen, etwa einem Salat oder einem Dessert."
+   }
+  },
+  {
+   "id": "ct-AU-06",
+   "category": "dining",
+   "text": {
+    "en": "Many Australian restaurants are BYO, meaning you may bring your own drinks for a small corkage fee. Check the sign or ask when booking. Splitting the bill among friends is normal.",
+    "it": "Molti ristoranti australiani sono BYO: si possono portare le proprie bevande pagando un piccolo costo di servizio. Controlla il cartello o chiedi al momento della prenotazione. Dividere il conto tra amici è normale.",
+    "es": "Muchos restaurantes australianos son BYO, es decir, puedes llevar tus propias bebidas pagando un pequeño cargo por descorche. Mira el cartel o pregunta al reservar. Dividir la cuenta entre amigos es normal.",
+    "pt": "Muitos restaurantes australianos são BYO, ou seja, podes levar as tuas bebidas pagando uma pequena taxa de rolha. Vê o letreiro ou pergunta ao reservar. Dividir a conta entre amigos é normal.",
+    "pt_BR": "Muitos restaurantes australianos são BYO, ou seja, você pode levar suas próprias bebidas pagando uma pequena taxa de rolha. Confira a placa ou pergunte ao reservar. Dividir a conta entre amigos é normal.",
+    "fr": "De nombreux restaurants australiens sont BYO : on peut apporter ses propres boissons moyennant de petits frais de bouchon. Regardez l'affiche ou demandez à la réservation. Partager l'addition entre amis est normal.",
+    "de": "Viele australische Restaurants sind BYO: Du darfst eigene Getränke mitbringen und zahlst eine kleine Korkgebühr. Achte auf das Schild oder frag bei der Reservierung. Die Rechnung unter Freunden zu teilen ist normal."
+   }
+  },
+  {
+   "id": "ct-AU-07",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping is not expected in Australia because staff are paid award wages and prices usually include tax. Rounding up the bill or leaving a few dollars for great service is appreciated but optional.",
+    "it": "In Australia la mancia non è attesa, perché il personale ha uno stipendio regolare e i prezzi includono già le tasse. Arrotondare il conto o lasciare qualche dollaro per un ottimo servizio è gradito ma facoltativo.",
+    "es": "En Australia no se espera propina, porque el personal cobra un salario regulado y los precios ya incluyen impuestos. Redondear la cuenta o dejar unos dólares por un gran servicio se agradece, pero es opcional.",
+    "pt": "Na Austrália não se espera gorjeta, porque o pessoal recebe um salário regulado e os preços já incluem impostos. Arredondar a conta ou deixar uns dólares por um serviço excelente é apreciado, mas opcional.",
+    "pt_BR": "Na Austrália não se espera gorjeta, porque os funcionários recebem salário regulamentado e os preços já incluem impostos. Arredondar a conta ou deixar uns dólares por um ótimo serviço é apreciado, mas opcional.",
+    "fr": "En Australie, le pourboire n'est pas attendu : le personnel touche un salaire encadré et les prix incluent déjà les taxes. Arrondir l'addition ou laisser quelques dollars pour un excellent service est apprécié, mais facultatif.",
+    "de": "In Australien wird kein Trinkgeld erwartet, denn das Personal erhält einen geregelten Lohn und die Preise enthalten bereits die Steuern. Aufrunden oder ein paar Dollar für besonders guten Service sind willkommen, aber freiwillig."
+   }
+  },
+  {
+   "id": "ct-AU-08",
+   "category": "gifts",
+   "text": {
+    "en": "If you are invited to someone's home, a small gift such as flowers, chocolates or a dessert is thoughtful. Gifts are opened right away and do not need to be expensive.",
+    "it": "Se sei invitato a casa di qualcuno, un piccolo regalo come fiori, cioccolatini o un dolce è un bel gesto. I regali si aprono subito e non devono essere costosi.",
+    "es": "Si te invitan a casa de alguien, un detalle pequeño como flores, bombones o un postre es muy apreciado. Los regalos se abren en el momento y no hace falta que sean caros.",
+    "pt": "Se fores convidado para casa de alguém, uma lembrança pequena como flores, bombons ou uma sobremesa é um bom gesto. Os presentes abrem-se logo e não precisam de ser caros.",
+    "pt_BR": "Se você for convidado para a casa de alguém, uma lembrança pequena como flores, bombons ou uma sobremesa é um gesto simpático. Os presentes são abertos na hora e não precisam ser caros.",
+    "fr": "Si vous êtes invité chez quelqu'un, un petit cadeau comme des fleurs, des chocolats ou un dessert est une attention appréciée. Les cadeaux s'ouvrent tout de suite et n'ont pas besoin d'être chers.",
+    "de": "Wenn du zu jemandem nach Hause eingeladen bist, ist ein kleines Geschenk wie Blumen, Pralinen oder ein Dessert eine nette Geste. Geschenke werden gleich ausgepackt und müssen nicht teuer sein."
+   }
+  },
+  {
+   "id": "ct-AU-09",
+   "category": "dress",
+   "text": {
+    "en": "Dress is relaxed and casual almost everywhere, and flip-flops are called thongs. Smart casual is enough for most restaurants, though some clubs and upscale venues have a dress code.",
+    "it": "Quasi ovunque l'abbigliamento è rilassato e informale, e le infradito si chiamano thongs. Un look smart casual basta per la maggior parte dei ristoranti, anche se alcuni locali eleganti hanno un dress code.",
+    "es": "Casi en todas partes se viste de forma relajada e informal, y las chanclas se llaman thongs. Un estilo smart casual basta para la mayoría de restaurantes, aunque algunos locales elegantes tienen código de vestimenta.",
+    "pt": "Quase em todo o lado a roupa é descontraída e informal, e as sandálias de dedo chamam-se thongs. Um estilo smart casual chega para a maioria dos restaurantes, embora alguns locais elegantes tenham código de vestuário.",
+    "pt_BR": "Quase em todo lugar a roupa é descontraída e informal, e as sandálias de dedo se chamam thongs. Um estilo smart casual basta para a maioria dos restaurantes, embora alguns lugares mais chiques tenham código de vestimenta.",
+    "fr": "La tenue est décontractée presque partout, et les tongs s'appellent des thongs. Un style smart casual suffit dans la plupart des restaurants, même si certains établissements chics imposent un code vestimentaire.",
+    "de": "Die Kleidung ist fast überall locker und lässig, und Flipflops heißen thongs. Smart Casual reicht für die meisten Restaurants, auch wenn manche Clubs und gehobene Lokale einen Dresscode haben."
+   }
+  },
+  {
+   "id": "ct-AU-10",
+   "category": "religion_sites",
+   "text": {
+    "en": "At Uluru, called Uluru-Kata Tjuta National Park, the climb has been closed since 2019 out of respect for the Anangu traditional owners. Join a guided walk to learn about the site.",
+    "it": "A Uluru, nel parco nazionale Uluru-Kata Tjuta, la salita è chiusa dal 2019 per rispetto verso gli Anangu, proprietari tradizionali. Una visita guidata è un buon modo per conoscere il luogo.",
+    "es": "En Uluru, dentro del Parque Nacional Uluru-Kata Tjuta, la subida está cerrada desde 2019 por respeto a los Anangu, propietarios tradicionales. Una visita guiada es una buena forma de conocer el lugar.",
+    "pt": "Em Uluru, no Parque Nacional Uluru-Kata Tjuta, a subida está fechada desde 2019 por respeito pelos Anangu, os proprietários tradicionais. Uma visita guiada é uma boa forma de conhecer o local.",
+    "pt_BR": "Em Uluru, no Parque Nacional Uluru-Kata Tjuta, a subida está fechada desde 2019 por respeito aos Anangu, os donos tradicionais. Uma visita guiada é uma boa forma de conhecer o lugar.",
+    "fr": "À Uluru, dans le parc national d'Uluru-Kata Tjuta, l'ascension est interdite depuis 2019 par respect pour les Anangu, propriétaires traditionnels. Une visite guidée est un bon moyen de découvrir le site.",
+    "de": "Am Uluru im Uluru-Kata-Tjuta-Nationalpark ist der Aufstieg seit 2019 aus Respekt vor den Anangu, den traditionellen Besitzern, gesperrt. Eine geführte Wanderung ist eine gute Möglichkeit, den Ort kennenzulernen."
+   }
+  },
+  {
+   "id": "ct-AU-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Many events begin with an Acknowledgement of Country, thanking the First Nations people of the land. Listening quietly and respectfully during it is the expected response.",
+    "it": "Molti eventi iniziano con un Acknowledgement of Country, che ringrazia i popoli delle Prime Nazioni della terra su cui ci si trova. Ascoltare in silenzio e con rispetto è la reazione attesa.",
+    "es": "Muchos actos empiezan con un Acknowledgement of Country, que agradece a los pueblos de las Primeras Naciones de esa tierra. Lo esperado es escuchar en silencio y con respeto.",
+    "pt": "Muitos eventos começam com um Acknowledgement of Country, que agradece aos povos das Primeiras Nações da terra onde se está. O esperado é ouvir em silêncio e com respeito.",
+    "pt_BR": "Muitos eventos começam com um Acknowledgement of Country, que agradece aos povos das Primeiras Nações da terra onde se está. O esperado é ouvir em silêncio e com respeito.",
+    "fr": "De nombreux événements commencent par un Acknowledgement of Country, qui remercie les peuples des Premières Nations du territoire. On attend de l'écouter en silence et avec respect.",
+    "de": "Viele Veranstaltungen beginnen mit einem Acknowledgement of Country, das den First-Nations-Völkern des jeweiligen Landes dankt. Erwartet wird, still und respektvoll zuzuhören."
+   }
+  },
+  {
+   "id": "ct-AU-12",
+   "category": "gestures",
+   "text": {
+    "en": "A thumbs-up and a friendly nod are common ways to say thanks, for example to a driver who lets you pass. Pointing at people with a finger is considered rude, so use an open hand.",
+    "it": "Il pollice in su e un cenno cordiale della testa sono modi comuni per dire grazie, ad esempio a un automobilista che ti fa passare. Indicare le persone col dito è maleducato: meglio usare la mano aperta.",
+    "es": "El pulgar hacia arriba y un asentimiento amable son formas comunes de dar las gracias, por ejemplo a un conductor que te deja pasar. Señalar a la gente con el dedo se considera de mala educación; mejor usar la mano abierta.",
+    "pt": "O polegar para cima e um aceno simpático são formas comuns de agradecer, por exemplo a um condutor que te deixa passar. Apontar o dedo às pessoas é considerado indelicado, por isso usa a mão aberta.",
+    "pt_BR": "O polegar para cima e um aceno simpático são jeitos comuns de agradecer, por exemplo a um motorista que deixa você passar. Apontar o dedo para as pessoas é considerado indelicado, então use a mão aberta.",
+    "fr": "Un pouce levé et un signe de tête aimable sont des façons courantes de dire merci, par exemple à un conducteur qui vous laisse passer. Montrer les gens du doigt est jugé impoli ; mieux vaut utiliser la main ouverte.",
+    "de": "Ein Daumen nach oben und ein freundliches Nicken sind übliche Dankesgesten, etwa gegenüber einem Autofahrer, der dich durchlässt. Mit dem Finger auf Menschen zu zeigen gilt als unhöflich, nimm lieber die offene Hand."
+   }
+  },
+  {
+   "id": "ct-AU-13",
+   "category": "punctuality",
+   "text": {
+    "en": "Being on time matters for work, appointments and tours, and a quick message if you run late is polite. For house parties and barbecues, arriving 15 to 30 minutes after the stated time is common.",
+    "it": "Essere puntuali conta per lavoro, appuntamenti e tour, ed è educato avvisare con un messaggio se si fa tardi. Per feste in casa e barbecue è normale arrivare 15-30 minuti dopo l'orario indicato.",
+    "es": "Ser puntual importa en el trabajo, las citas y las excursiones, y avisar con un mensaje si llegas tarde es de buena educación. En fiestas en casa y barbacoas es común llegar 15 a 30 minutos después de la hora indicada.",
+    "pt": "Ser pontual é importante no trabalho, em compromissos e em passeios, e avisar com uma mensagem se te atrasares é educado. Em festas em casa e churrascos é comum chegar 15 a 30 minutos depois da hora indicada.",
+    "pt_BR": "Ser pontual é importante no trabalho, em compromissos e em passeios, e avisar por mensagem se você se atrasar é educado. Em festas em casa e churrascos é comum chegar de 15 a 30 minutos depois do horário combinado.",
+    "fr": "La ponctualité compte pour le travail, les rendez-vous et les visites, et prévenir par message en cas de retard est poli. Pour les fêtes à la maison et les barbecues, arriver 15 à 30 minutes après l'heure indiquée est courant.",
+    "de": "Pünktlichkeit zählt bei Arbeit, Terminen und Touren, und eine kurze Nachricht bei Verspätung ist höflich. Bei Hausparty und Grillfeiern ist es üblich, 15 bis 30 Minuten nach der angegebenen Zeit zu kommen."
+   }
+  },
+  {
+   "id": "ct-AU-14",
+   "category": "public_behavior",
+   "text": {
+    "en": "Australians queue patiently, and cutting in line is frowned upon. Say please and thank you often, including to bus drivers and shop staff, as a way of showing everyday courtesy.",
+    "it": "Gli australiani fanno la coda con pazienza e saltare la fila è mal visto. Dire please e thank you spesso, anche ad autisti di autobus e commessi, è un segno di cortesia quotidiana.",
+    "es": "Los australianos hacen cola con paciencia y colarse está mal visto. Decir please y thank you a menudo, también a conductores de autobús y dependientes, es una muestra de cortesía cotidiana.",
+    "pt": "Os australianos esperam na fila com paciência e furar a fila é mal visto. Dizer please e thank you com frequência, também aos motoristas de autocarro e aos funcionários das lojas, é sinal de cortesia no dia a dia.",
+    "pt_BR": "Os australianos esperam na fila com paciência e furar fila é mal visto. Dizer please e thank you com frequência, inclusive para motoristas de ônibus e atendentes de loja, é sinal de cortesia no dia a dia.",
+    "fr": "Les Australiens font la queue patiemment et doubler est mal vu. Dire please et thank you souvent, y compris aux chauffeurs de bus et au personnel des magasins, est une marque de courtoisie quotidienne.",
+    "de": "Australier stehen geduldig an, und Drängeln wird nicht gern gesehen. Oft please und thank you zu sagen, auch zu Busfahrern und Verkaufspersonal, gehört zur alltäglichen Höflichkeit."
+   }
+  },
+  {
+   "id": "ct-AU-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "Smoking and vaping are banned in many public places, including most indoor venues, public transport areas and some beaches. Look for signs and use designated areas.",
+    "it": "Fumare e svapare sono vietati in molti luoghi pubblici, tra cui la maggior parte dei locali chiusi, le aree dei trasporti e alcune spiagge. Controlla i cartelli e usa le zone designate.",
+    "es": "Fumar y vapear están prohibidos en muchos lugares públicos, incluidos la mayoría de espacios cerrados, zonas de transporte y algunas playas. Fíjate en las señales y usa las zonas designadas.",
+    "pt": "Fumar e vaporizar são proibidos em muitos locais públicos, incluindo a maioria dos espaços fechados, zonas de transportes e algumas praias. Repara nos sinais e usa as áreas designadas.",
+    "pt_BR": "Fumar e vapear são proibidos em muitos lugares públicos, incluindo a maioria dos ambientes fechados, áreas de transporte e algumas praias. Fique atento às placas e use as áreas designadas.",
+    "fr": "Fumer et vapoter sont interdits dans de nombreux lieux publics, dont la plupart des lieux fermés, les zones de transport et certaines plages. Repérez les panneaux et utilisez les zones prévues.",
+    "de": "Rauchen und Dampfen sind an vielen öffentlichen Orten verboten, darunter die meisten Innenräume, Verkehrsbereiche und einige Strände. Achte auf Schilder und nutze die ausgewiesenen Bereiche."
+   }
+  },
+  {
+   "id": "ct-AU-16",
+   "category": "transport",
+   "text": {
+    "en": "Australians drive on the left. If you rent a car, remember distances between towns can be huge, so plan fuel, water and rest stops, especially in the outback.",
+    "it": "In Australia si guida a sinistra. Se noleggi un'auto, ricorda che le distanze tra le città possono essere enormi: pianifica carburante, acqua e soste, soprattutto nell'outback.",
+    "es": "En Australia se conduce por la izquierda. Si alquilas un coche, ten en cuenta que las distancias entre pueblos pueden ser enormes, así que planifica combustible, agua y descansos, sobre todo en el outback.",
+    "pt": "Na Austrália conduz-se pela esquerda. Se alugares um carro, lembra-te de que as distâncias entre localidades podem ser enormes, por isso planeia combustível, água e paragens, sobretudo no outback.",
+    "pt_BR": "Na Austrália se dirige pela esquerda. Se alugar um carro, lembre-se de que as distâncias entre cidades podem ser enormes, então planeje combustível, água e paradas, principalmente no outback.",
+    "fr": "On roule à gauche en Australie. Si vous louez une voiture, sachez que les distances entre les villes peuvent être énormes : prévoyez carburant, eau et pauses, surtout dans l'outback.",
+    "de": "In Australien herrscht Linksverkehr. Wenn du ein Auto mietest, bedenke, dass die Entfernungen zwischen Orten riesig sein können. Plane Treibstoff, Wasser und Pausen, besonders im Outback."
+   }
+  },
+  {
+   "id": "ct-AU-17",
+   "category": "transport",
+   "text": {
+    "en": "Cities use contactless payment and travel cards on public transport, such as Opal in Sydney and myki in Melbourne. In many cities you can tap a bank card or phone directly.",
+    "it": "Le città usano pagamenti contactless e carte di viaggio sui mezzi pubblici, come Opal a Sydney e myki a Melbourne. In molte città si può appoggiare direttamente carta bancaria o telefono.",
+    "es": "Las ciudades usan pago sin contacto y tarjetas de transporte, como Opal en Sídney y myki en Melbourne. En muchas ciudades se puede pasar directamente la tarjeta bancaria o el móvil.",
+    "pt": "As cidades usam pagamento sem contacto e cartões de transporte, como o Opal em Sydney e o myki em Melbourne. Em muitas cidades podes encostar diretamente o cartão bancário ou o telemóvel.",
+    "pt_BR": "As cidades usam pagamento por aproximação e cartões de transporte, como o Opal em Sydney e o myki em Melbourne. Em muitas cidades dá para encostar direto o cartão bancário ou o celular.",
+    "fr": "Les villes utilisent le paiement sans contact et des cartes de transport, comme Opal à Sydney et myki à Melbourne. Dans beaucoup de villes, on peut valider directement avec une carte bancaire ou un téléphone.",
+    "de": "Die Städte nutzen kontaktloses Bezahlen und Fahrkarten wie Opal in Sydney und myki in Melbourne. In vielen Städten kannst du direkt mit Bankkarte oder Handy einchecken."
+   }
+  },
+  {
+   "id": "ct-AU-18",
+   "category": "language",
+   "text": {
+    "en": "Australian English has its own slang, like no worries, mate, and reckon. People are happy to explain it, and they appreciate it when you try a phrase yourself.",
+    "it": "L'inglese australiano ha un proprio slang, come no worries, mate e reckon. Le persone spiegano volentieri e apprezzano quando provi a usare un'espressione tu stesso.",
+    "es": "El inglés australiano tiene su propia jerga, como no worries, mate y reckon. La gente explica con gusto y agradece que pruebes alguna expresión.",
+    "pt": "O inglês australiano tem gíria própria, como no worries, mate e reckon. As pessoas explicam com gosto e apreciam quando experimentas uma expressão.",
+    "pt_BR": "O inglês australiano tem gírias próprias, como no worries, mate e reckon. As pessoas explicam com prazer e gostam quando você tenta usar uma expressão.",
+    "fr": "L'anglais australien a son propre argot, comme no worries, mate et reckon. Les gens expliquent volontiers et apprécient que vous essayiez une expression.",
+    "de": "Das australische Englisch hat eigenen Slang, etwa no worries, mate und reckon. Die Leute erklären ihn gern und freuen sich, wenn du selbst einen Ausdruck ausprobierst."
+   }
+  },
+  {
+   "id": "ct-AU-19",
+   "category": "language",
+   "text": {
+    "en": "Over 250 Indigenous languages were spoken before European settlement, and many are being revived. Learning a greeting in the local Aboriginal language is a respectful gesture.",
+    "it": "Prima dell'arrivo degli europei si parlavano oltre 250 lingue indigene, e molte sono in corso di recupero. Imparare un saluto nella lingua aborigena locale è un gesto rispettoso.",
+    "es": "Antes de la llegada de los europeos se hablaban más de 250 lenguas indígenas, y muchas se están recuperando. Aprender un saludo en la lengua aborigen local es un gesto respetuoso.",
+    "pt": "Antes da chegada dos europeus falavam-se mais de 250 línguas indígenas, e muitas estão a ser recuperadas. Aprender uma saudação na língua aborígene local é um gesto respeitoso.",
+    "pt_BR": "Antes da chegada dos europeus eram faladas mais de 250 línguas indígenas, e muitas estão sendo recuperadas. Aprender uma saudação na língua aborígene local é um gesto respeitoso.",
+    "fr": "Avant l'arrivée des Européens, plus de 250 langues autochtones étaient parlées, et beaucoup sont en cours de revitalisation. Apprendre une salutation dans la langue aborigène locale est un geste respectueux.",
+    "de": "Vor der europäischen Besiedlung wurden über 250 Indigene Sprachen gesprochen, viele werden heute wiederbelebt. Eine Begrüßung in der örtlichen Aborigine-Sprache zu lernen ist eine respektvolle Geste."
+   }
+  },
+  {
+   "id": "ct-AU-20",
+   "category": "festivals",
+   "text": {
+    "en": "Anzac Day on 25 April honours Australian and New Zealand soldiers with dawn services and quiet remembrance. It is a solemn day, so keep a respectful tone around the ceremonies.",
+    "it": "L'Anzac Day, il 25 aprile, onora i soldati australiani e neozelandesi con cerimonie all'alba e un ricordo sobrio. È una giornata solenne: mantieni un tono rispettoso vicino alle cerimonie.",
+    "es": "El Anzac Day, el 25 de abril, honra a los soldados australianos y neozelandeses con ceremonias al amanecer y un recuerdo sereno. Es un día solemne, así que mantén un tono respetuoso cerca de los actos.",
+    "pt": "O Anzac Day, a 25 de abril, homenageia os soldados australianos e neozelandeses com cerimónias ao amanhecer e uma recordação serena. É um dia solene, por isso mantém um tom respeitoso junto às cerimónias.",
+    "pt_BR": "O Anzac Day, em 25 de abril, homenageia os soldados australianos e neozelandeses com cerimônias ao amanhecer e uma lembrança serena. É um dia solene, então mantenha um tom respeitoso perto das cerimônias.",
+    "fr": "L'Anzac Day, le 25 avril, honore les soldats australiens et néo-zélandais par des cérémonies à l'aube et un recueillement sobre. C'est un jour solennel : gardez un ton respectueux près des cérémonies.",
+    "de": "Der Anzac Day am 25. April ehrt australische und neuseeländische Soldaten mit Gedenkfeiern im Morgengrauen. Es ist ein ernster Tag, halte dich bei den Zeremonien daher respektvoll zurück."
+   }
+  },
+  {
+   "id": "ct-AU-21",
+   "category": "festivals",
+   "text": {
+    "en": "The Melbourne Cup horse race, held on the first Tuesday of November, is so popular that many workplaces pause to watch it. People often dress up and join a sweepstake with colleagues.",
+    "it": "La corsa di cavalli Melbourne Cup, che si tiene il primo martedì di novembre, è così popolare che molti luoghi di lavoro si fermano per guardarla. Spesso ci si veste eleganti e si partecipa a una lotteria tra colleghi.",
+    "es": "La carrera de caballos Melbourne Cup, el primer martes de noviembre, es tan popular que muchos lugares de trabajo se detienen para verla. Mucha gente se arregla y participa en una porra con colegas.",
+    "pt": "A corrida de cavalos Melbourne Cup, na primeira terça-feira de novembro, é tão popular que muitos locais de trabalho param para a ver. É comum arranjar-se bem e entrar numa aposta simbólica entre colegas.",
+    "pt_BR": "A corrida de cavalos Melbourne Cup, na primeira terça-feira de novembro, é tão popular que muitos locais de trabalho param para assistir. É comum se vestir bem e entrar num bolão entre colegas.",
+    "fr": "La course de chevaux Melbourne Cup, le premier mardi de novembre, est si populaire que beaucoup de lieux de travail s'arrêtent pour la regarder. On s'habille souvent avec élégance et on participe à une cagnotte entre collègues.",
+    "de": "Das Pferderennen Melbourne Cup am ersten Dienstag im November ist so beliebt, dass viele Arbeitsplätze zum Zuschauen pausieren. Oft macht man sich schick und nimmt an einer Tippgemeinschaft mit Kollegen teil."
+   }
+  },
+  {
+   "id": "ct-AU-22",
+   "category": "family",
+   "text": {
+    "en": "Christmas falls in summer, so many families celebrate with seafood, a barbecue or a beach picnic. Family and friends gather and there is often a relaxed cricket game in the yard.",
+    "it": "Il Natale cade in estate, quindi molte famiglie festeggiano con pesce, barbecue o un picnic in spiaggia. Familiari e amici si riuniscono e spesso c'è una partita di cricket informale in giardino.",
+    "es": "La Navidad cae en verano, así que muchas familias celebran con marisco, barbacoa o un picnic en la playa. Familia y amigos se reúnen y a menudo hay un partido de cricket relajado en el jardín.",
+    "pt": "O Natal cai no verão, por isso muitas famílias celebram com marisco, churrasco ou um piquenique na praia. Família e amigos reúnem-se e muitas vezes há um jogo de críquete descontraído no quintal.",
+    "pt_BR": "O Natal cai no verão, então muitas famílias comemoram com frutos do mar, churrasco ou um piquenique na praia. Família e amigos se reúnem e muitas vezes rola um jogo de críquete descontraído no quintal.",
+    "fr": "Noël tombe en été, donc beaucoup de familles le fêtent avec des fruits de mer, un barbecue ou un pique-nique à la plage. Famille et amis se retrouvent, souvent avec une partie de cricket détendue dans le jardin.",
+    "de": "Weihnachten fällt in den Sommer, deshalb feiern viele Familien mit Meeresfrüchten, Grillen oder einem Strandpicknick. Familie und Freunde kommen zusammen, oft mit einem lockeren Kricketspiel im Garten."
+   }
+  },
+  {
+   "id": "ct-AU-23",
+   "category": "money",
+   "text": {
+    "en": "The currency is the Australian dollar, and cards and phone payments are accepted almost everywhere, even for small amounts. Carrying a little cash is still useful in remote areas.",
+    "it": "La valuta è il dollaro australiano, e carte e pagamenti da telefono sono accettati quasi ovunque, anche per piccoli importi. Avere un po' di contanti resta utile nelle zone remote.",
+    "es": "La moneda es el dólar australiano, y se aceptan tarjetas y pagos con el móvil casi en todas partes, incluso para importes pequeños. Llevar algo de efectivo sigue siendo útil en zonas remotas.",
+    "pt": "A moeda é o dólar australiano, e cartões e pagamentos por telemóvel são aceites quase em todo o lado, mesmo para valores pequenos. Levar algum dinheiro continua a ser útil em zonas remotas.",
+    "pt_BR": "A moeda é o dólar australiano, e cartões e pagamentos por celular são aceitos quase em todo lugar, mesmo para valores pequenos. Levar um pouco de dinheiro vivo ainda é útil em regiões remotas.",
+    "fr": "La monnaie est le dollar australien, et les cartes et paiements par téléphone sont acceptés presque partout, même pour de petits montants. Avoir un peu d'espèces reste utile dans les régions reculées.",
+    "de": "Die Währung ist der Australische Dollar, und Karten und Handyzahlung werden fast überall akzeptiert, selbst für kleine Beträge. In abgelegenen Gebieten ist etwas Bargeld weiterhin nützlich."
+   }
+  },
+  {
+   "id": "ct-AU-24",
+   "category": "photography",
+   "text": {
+    "en": "Ask before photographing people, especially children, and be mindful at Indigenous cultural sites where photography may be restricted. Signs usually explain the rules.",
+    "it": "Chiedi il permesso prima di fotografare le persone, soprattutto i bambini, e fai attenzione nei siti culturali indigeni, dove la fotografia può essere limitata. I cartelli di solito spiegano le regole.",
+    "es": "Pide permiso antes de fotografiar a personas, sobre todo a niños, y ten cuidado en los sitios culturales indígenas, donde puede haber restricciones. Los carteles suelen explicar las normas.",
+    "pt": "Pede licença antes de fotografar pessoas, sobretudo crianças, e tem cuidado em locais culturais indígenas, onde a fotografia pode ser restrita. Os avisos costumam explicar as regras.",
+    "pt_BR": "Peça permissão antes de fotografar pessoas, principalmente crianças, e tome cuidado em locais culturais indígenas, onde a fotografia pode ser restrita. As placas costumam explicar as regras.",
+    "fr": "Demandez la permission avant de photographier des personnes, surtout des enfants, et soyez attentif sur les sites culturels autochtones, où la photo peut être limitée. Les panneaux expliquent généralement les règles.",
+    "de": "Frag vor Fotos von Menschen nach, besonders bei Kindern, und sei an indigenen Kulturstätten aufmerksam, wo Fotografieren eingeschränkt sein kann. Schilder erklären meist die Regeln."
+   }
+  },
+  {
+   "id": "ct-AU-25",
+   "category": "nightlife",
+   "text": {
+    "en": "Pubs are social hubs where friends take turns buying a round, known as shouting. Joining in when it is your turn is expected, and non-alcoholic drinks are perfectly fine.",
+    "it": "I pub sono luoghi sociali dove gli amici si alternano a offrire un giro, detto shouting. Partecipare quando tocca a te è previsto, e le bevande analcoliche vanno benissimo.",
+    "es": "Los pubs son centros sociales donde los amigos se turnan para pagar una ronda, lo que se llama shouting. Se espera que participes cuando te toque, y las bebidas sin alcohol están totalmente bien.",
+    "pt": "Os pubs são pontos de encontro onde os amigos se revezam a pagar uma ronda, o chamado shouting. Espera-se que participes quando for a tua vez, e as bebidas sem álcool são perfeitamente aceites.",
+    "pt_BR": "Os pubs são pontos de encontro onde os amigos se revezam para pagar uma rodada, o chamado shouting. Espera-se que você participe quando for a sua vez, e bebidas sem álcool são perfeitamente aceitas.",
+    "fr": "Les pubs sont des lieux de sociabilité où les amis paient leur tour une tournée, ce qu'on appelle shouting. On attend que vous participiez quand c'est votre tour, et les boissons sans alcool sont tout à fait acceptées.",
+    "de": "Pubs sind soziale Treffpunkte, in denen Freunde reihum eine Runde ausgeben, das sogenannte shouting. Man erwartet, dass du mitmachst, wenn du dran bist, und alkoholfreie Getränke sind völlig in Ordnung."
+   }
+  },
+  {
+   "id": "ct-AU-26",
+   "category": "nature",
+   "text": {
+    "en": "Do not feed wildlife such as kangaroos, birds or dingoes, and keep a respectful distance. Stay on marked tracks in national parks and take your rubbish with you.",
+    "it": "Non dare da mangiare agli animali selvatici come canguri, uccelli o dingo, e mantieni una distanza rispettosa. Resta sui sentieri segnalati nei parchi nazionali e porta via i rifiuti.",
+    "es": "No alimentes a animales salvajes como canguros, aves o dingos, y mantén una distancia respetuosa. Permanece en los senderos marcados de los parques nacionales y llévate tu basura.",
+    "pt": "Não alimentes animais selvagens como cangurus, aves ou dingos, e mantém uma distância respeitosa. Fica nos trilhos marcados dos parques nacionais e leva o lixo contigo.",
+    "pt_BR": "Não alimente animais selvagens como cangurus, aves ou dingos, e mantenha uma distância respeitosa. Fique nas trilhas sinalizadas dos parques nacionais e leve seu lixo com você.",
+    "fr": "Ne nourrissez pas la faune sauvage comme les kangourous, les oiseaux ou les dingos, et gardez une distance respectueuse. Restez sur les sentiers balisés des parcs nationaux et remportez vos déchets.",
+    "de": "Füttere keine Wildtiere wie Kängurus, Vögel oder Dingos und halte respektvollen Abstand. Bleib in Nationalparks auf markierten Wegen und nimm deinen Müll wieder mit."
+   }
+  },
+  {
+   "id": "ct-AU-27",
+   "category": "nature",
+   "text": {
+    "en": "During bushfire season in summer, check local fire danger ratings before hiking or camping. On total fire ban days, open flames and barbecues are not allowed in many areas.",
+    "it": "Durante la stagione degli incendi boschivi, in estate, controlla il livello di pericolo locale prima di fare escursioni o campeggiare. Nei giorni di divieto totale di fuochi, fiamme libere e barbecue sono vietati in molte zone.",
+    "es": "Durante la temporada de incendios forestales, en verano, consulta el nivel de peligro local antes de hacer senderismo o acampar. En los días de prohibición total de fuego, no se permiten llamas ni barbacoas en muchas zonas.",
+    "pt": "Durante a época de incêndios florestais, no verão, consulta o nível de perigo local antes de fazer caminhadas ou campismo. Nos dias de proibição total de fogo, não são permitidas chamas nem churrascos em muitas zonas.",
+    "pt_BR": "Durante a temporada de incêndios florestais, no verão, confira o nível de perigo local antes de fazer trilhas ou acampar. Nos dias de proibição total de fogo, chamas e churrascos não são permitidos em muitas áreas.",
+    "fr": "Pendant la saison des feux de brousse, en été, consultez le niveau de danger local avant de randonner ou de camper. Les jours d'interdiction totale de feu, flammes nues et barbecues sont interdits dans de nombreuses zones.",
+    "de": "In der sommerlichen Buschfeuersaison solltest du vor Wanderungen oder dem Zelten die lokale Brandgefahrenstufe prüfen. An Tagen mit totalem Feuerverbot sind offene Flammen und Grills vielerorts untersagt."
+   }
+  },
+  {
+   "id": "ct-AU-28",
+   "category": "safety",
+   "text": {
+    "en": "Slip, slop, slap: the sun is very strong, so wear sunscreen, a hat and sunglasses and seek shade at midday. Carry water, even on short walks.",
+    "it": "Slip, slop, slap: il sole è molto forte, quindi usa crema solare, cappello e occhiali da sole e cerca l'ombra a mezzogiorno. Porta con te acqua, anche per brevi passeggiate.",
+    "es": "Slip, slop, slap: el sol es muy fuerte, así que usa protector solar, sombrero y gafas de sol y busca sombra al mediodía. Lleva agua, incluso en paseos cortos.",
+    "pt": "Slip, slop, slap: o sol é muito forte, por isso usa protetor solar, chapéu e óculos de sol e procura sombra ao meio-dia. Leva água, mesmo em passeios curtos.",
+    "pt_BR": "Slip, slop, slap: o sol é muito forte, então use protetor solar, chapéu e óculos escuros e procure sombra ao meio-dia. Leve água, mesmo em passeios curtos.",
+    "fr": "Slip, slop, slap : le soleil est très fort, donc portez crème solaire, chapeau et lunettes de soleil et cherchez l'ombre à midi. Emportez de l'eau, même pour de courtes balades.",
+    "de": "Slip, slop, slap: Die Sonne ist sehr stark, also trage Sonnencreme, Hut und Sonnenbrille und such mittags Schatten. Nimm Wasser mit, auch bei kurzen Spaziergängen."
+   }
+  },
+  {
+   "id": "ct-AU-29",
+   "category": "safety",
+   "text": {
+    "en": "Swim between the red and yellow flags at patrolled beaches, where lifeguards watch the water. If you are caught in a rip current, stay calm, float and signal for help rather than fight it.",
+    "it": "Nuota tra le bandiere rosse e gialle nelle spiagge sorvegliate, dove i bagnini controllano il mare. Se sei trascinato da una corrente di risacca, mantieni la calma, galleggia e chiedi aiuto invece di lottare.",
+    "es": "Nada entre las banderas rojas y amarillas en las playas vigiladas, donde los socorristas vigilan el agua. Si te atrapa una corriente de resaca, mantén la calma, flota y pide ayuda en lugar de luchar contra ella.",
+    "pt": "Nada entre as bandeiras vermelhas e amarelas nas praias vigiadas, onde os nadadores-salvadores vigiam a água. Se fores apanhado por uma corrente de retorno, mantém a calma, flutua e pede ajuda em vez de lutar contra ela.",
+    "pt_BR": "Nade entre as bandeiras vermelhas e amarelas nas praias com guarda-vidas, que ficam de olho na água. Se for pego por uma corrente de retorno, mantenha a calma, flutue e peça ajuda em vez de lutar contra ela.",
+    "fr": "Nagez entre les drapeaux rouges et jaunes sur les plages surveillées, où les sauveteurs veillent. Si vous êtes pris dans un courant d'arrachement, restez calme, flottez et appelez à l'aide plutôt que de lutter.",
+    "de": "Schwimme an bewachten Stränden zwischen den rot-gelben Flaggen, wo Rettungsschwimmer das Wasser beobachten. Gerätst du in eine Rippströmung, bleib ruhig, lass dich treiben und ruf um Hilfe, statt dagegen anzukämpfen."
+   }
+  },
+  {
+   "id": "ct-AU-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Many Australians are proud of their love of the outdoors, sport and a fair go, the idea that everyone deserves a fair chance. Asking about their favourite beach or sport is a great way to start talking.",
+    "it": "Molti australiani sono orgogliosi della loro passione per la vita all'aria aperta, per lo sport e per il fair go, l'idea che tutti meritino una giusta opportunità. Chiedere della loro spiaggia o del loro sport preferito è un ottimo modo per iniziare a parlare.",
+    "es": "Muchos australianos están orgullosos de su amor por el aire libre, el deporte y el fair go, la idea de que todos merecen una oportunidad justa. Preguntar por su playa o deporte favorito es una excelente forma de empezar a charlar.",
+    "pt": "Muitos australianos têm orgulho do seu gosto pela vida ao ar livre, pelo desporto e pelo fair go, a ideia de que todos merecem uma oportunidade justa. Perguntar pela praia ou pelo desporto favorito é uma ótima forma de começar a conversar.",
+    "pt_BR": "Muitos australianos têm orgulho do seu gosto pela vida ao ar livre, pelo esporte e pelo fair go, a ideia de que todos merecem uma chance justa. Perguntar pela praia ou pelo esporte favorito é uma ótima forma de puxar assunto.",
+    "fr": "Beaucoup d'Australiens sont fiers de leur goût pour le plein air, le sport et le fair go, l'idée que chacun mérite une chance équitable. Demander quelle est leur plage ou leur sport préféré est un bon moyen d'engager la conversation.",
+    "de": "Viele Australier sind stolz auf ihre Liebe zur Natur, zum Sport und auf den fair go, die Idee, dass jeder eine faire Chance verdient. Nach dem Lieblingsstrand oder Lieblingssport zu fragen ist ein guter Gesprächseinstieg."
+   }
+  }
+ ],
+ "AZ": [
+  {
+   "id": "ct-AZ-01",
+   "category": "greetings",
+   "text": {
+    "en": "A handshake is the usual greeting, and a friendly Salam works for everyone. Close friends of the same gender often greet with a hug or cheek kisses.",
+    "it": "La stretta di mano è il saluto abituale, e un cordiale Salam va bene per tutti. Gli amici stretti dello stesso genere si salutano spesso con un abbraccio o baci sulla guancia.",
+    "es": "El saludo habitual es el apretón de manos, y un cordial Salam sirve para todos. Los amigos cercanos del mismo género suelen saludarse con un abrazo o besos en la mejilla.",
+    "pt": "O cumprimento habitual é o aperto de mão, e um simpático Salam serve para todos. Amigos próximos do mesmo género cumprimentam-se muitas vezes com um abraço ou beijos na cara.",
+    "pt_BR": "O cumprimento comum é o aperto de mão, e um simpático Salam serve para todos. Amigos próximos do mesmo gênero costumam se cumprimentar com abraço ou beijos no rosto.",
+    "fr": "La poignée de main est le salut habituel, et un chaleureux Salam convient à tous. Les amis proches du même genre se saluent souvent d'une accolade ou de bises.",
+    "de": "Üblich ist der Händedruck, und ein freundliches Salam passt für alle. Enge Freunde des gleichen Geschlechts begrüßen sich oft mit einer Umarmung oder Wangenküssen."
+   }
+  },
+  {
+   "id": "ct-AZ-02",
+   "category": "greetings",
+   "text": {
+    "en": "Greet older people first and with extra respect, and wait for them to offer a hand. When a man meets a woman, it is polite to let her decide whether to shake hands.",
+    "it": "Saluta per primi gli anziani e con particolare rispetto, e aspetta che porgano la mano. Quando un uomo incontra una donna, è cortese lasciare a lei la scelta di stringere la mano.",
+    "es": "Saluda primero a las personas mayores y con especial respeto, y espera a que ofrezcan la mano. Cuando un hombre conoce a una mujer, es cortés dejar que ella decida si da la mano.",
+    "pt": "Cumprimenta primeiro as pessoas mais velhas e com especial respeito, e espera que estendam a mão. Quando um homem conhece uma mulher, é cortês deixar que ela decida se aperta a mão.",
+    "pt_BR": "Cumprimente primeiro as pessoas mais velhas e com especial respeito, e espere que estendam a mão. Quando um homem conhece uma mulher, é educado deixar que ela decida se aperta a mão.",
+    "fr": "Saluez d'abord les personnes âgées, avec un respect particulier, et attendez qu'elles tendent la main. Quand un homme rencontre une femme, il est poli de la laisser décider de serrer la main ou non.",
+    "de": "Begrüße ältere Menschen zuerst und mit besonderem Respekt und warte, bis sie die Hand reichen. Trifft ein Mann eine Frau, ist es höflich, ihr die Entscheidung über den Händedruck zu überlassen."
+   }
+  },
+  {
+   "id": "ct-AZ-03",
+   "category": "conversation",
+   "text": {
+    "en": "Hospitality is a point of pride, and hosts often ask many friendly questions about your family and trip. Sharing a little about your own home country in return is welcome.",
+    "it": "L'ospitalità è motivo di orgoglio, e chi ti accoglie fa spesso molte domande cordiali sulla tua famiglia e sul tuo viaggio. Raccontare a tua volta qualcosa del tuo paese è gradito.",
+    "es": "La hospitalidad es motivo de orgullo, y los anfitriones suelen hacer muchas preguntas amables sobre tu familia y tu viaje. Contar algo de tu país a cambio es bien recibido.",
+    "pt": "A hospitalidade é motivo de orgulho, e os anfitriões fazem muitas vezes perguntas simpáticas sobre a tua família e a viagem. Contar também um pouco do teu país é bem-vindo.",
+    "pt_BR": "A hospitalidade é motivo de orgulho, e os anfitriões costumam fazer muitas perguntas simpáticas sobre a sua família e a viagem. Contar também um pouco do seu país é bem-vindo.",
+    "fr": "L'hospitalité est une fierté, et les hôtes posent souvent de nombreuses questions amicales sur votre famille et votre voyage. Parler un peu de votre pays en retour est bienvenu.",
+    "de": "Gastfreundschaft ist ein Grund zum Stolz, und Gastgeber stellen oft viele freundliche Fragen zu deiner Familie und Reise. Im Gegenzug etwas über dein Heimatland zu erzählen, kommt gut an."
+   }
+  },
+  {
+   "id": "ct-AZ-04",
+   "category": "conversation",
+   "text": {
+    "en": "Topics like food, music, carpets, family and travel are safe and warm. Sensitive regional politics and recent conflicts are best left for people you know well, and let the local person raise them.",
+    "it": "Cibo, musica, tappeti, famiglia e viaggi sono argomenti sicuri e piacevoli. La politica regionale delicata e i conflitti recenti è meglio lasciarli a chi conosci bene, e lascia che sia la persona del posto a sollevarli.",
+    "es": "La comida, la música, las alfombras, la familia y los viajes son temas seguros y cálidos. La política regional delicada y los conflictos recientes es mejor dejarlos para gente que conoces bien, y que sea la persona local quien los plantee.",
+    "pt": "Comida, música, tapetes, família e viagens são temas seguros e simpáticos. A política regional sensível e os conflitos recentes é melhor deixá-los para quem conheces bem, e deixa que seja a pessoa local a levantá-los.",
+    "pt_BR": "Comida, música, tapetes, família e viagens são assuntos seguros e agradáveis. A política regional delicada e os conflitos recentes é melhor deixar para quem você conhece bem, e deixe que a pessoa local toque no assunto.",
+    "fr": "La cuisine, la musique, les tapis, la famille et les voyages sont des sujets sûrs et chaleureux. La politique régionale sensible et les conflits récents sont à réserver à des personnes que vous connaissez bien, en laissant l'interlocuteur local les aborder.",
+    "de": "Essen, Musik, Teppiche, Familie und Reisen sind sichere, herzliche Themen. Heikle Regionalpolitik und aktuelle Konflikte besprichst du am besten nur mit Leuten, die du gut kennst, und lässt die Einheimischen das Thema anschneiden."
+   }
+  },
+  {
+   "id": "ct-AZ-05",
+   "category": "dining",
+   "text": {
+    "en": "Tea is central to hospitality: it is served in small pear-shaped armudu glasses, often with jam, lemon or sweets. Accepting at least a cup shows appreciation.",
+    "it": "Il tè è centrale nell'ospitalità: si serve in piccoli bicchieri a forma di pera detti armudu, spesso con marmellata, limone o dolcetti. Accettare almeno una tazza mostra apprezzamento.",
+    "es": "El té es central en la hospitalidad: se sirve en pequeños vasos en forma de pera llamados armudu, a menudo con mermelada, limón o dulces. Aceptar al menos una taza demuestra aprecio.",
+    "pt": "O chá é central na hospitalidade: serve-se em pequenos copos em forma de pera chamados armudu, muitas vezes com doce, limão ou guloseimas. Aceitar pelo menos uma chávena mostra apreço.",
+    "pt_BR": "O chá é central na hospitalidade: é servido em pequenos copos em forma de pera chamados armudu, muitas vezes com geleia, limão ou doces. Aceitar pelo menos uma xícara demonstra apreço.",
+    "fr": "Le thé est au cœur de l'hospitalité : il est servi dans de petits verres en forme de poire appelés armudu, souvent avec de la confiture, du citron ou des douceurs. En accepter au moins une tasse montre votre appréciation.",
+    "de": "Tee ist zentral für die Gastfreundschaft: Er wird in kleinen birnenförmigen Gläsern namens armudu serviert, oft mit Marmelade, Zitrone oder Süßigkeiten. Wenigstens eine Tasse anzunehmen zeigt Wertschätzung."
+   }
+  },
+  {
+   "id": "ct-AZ-06",
+   "category": "dining",
+   "text": {
+    "en": "Meals are generous and shared. Try plov (rice dish), dolma and kebabs, and expect hosts to keep offering more food. Politely saying you are full, while praising the dish, is understood.",
+    "it": "I pasti sono abbondanti e condivisi. Prova il plov (piatto di riso), la dolma e i kebab, e aspettati che chi ospita continui a offrirti altro cibo. Dire con gentilezza di essere sazi, lodando il piatto, è ben compreso.",
+    "es": "Las comidas son generosas y compartidas. Prueba el plov (plato de arroz), la dolma y los kebabs, y espera que los anfitriones sigan ofreciendo más. Decir con educación que estás lleno, elogiando el plato, se entiende bien.",
+    "pt": "As refeições são generosas e partilhadas. Experimenta o plov (prato de arroz), a dolma e os kebabs, e conta que os anfitriões continuem a oferecer mais. Dizer com educação que estás cheio, elogiando o prato, é bem compreendido.",
+    "pt_BR": "As refeições são fartas e compartilhadas. Experimente o plov (prato de arroz), a dolma e os kebabs, e espere que os anfitriões continuem oferecendo mais. Dizer com educação que está satisfeito, elogiando o prato, é bem compreendido.",
+    "fr": "Les repas sont généreux et partagés. Goûtez le plov (plat de riz), la dolma et les kebabs, et attendez-vous à ce que vos hôtes proposent sans cesse d'en reprendre. Dire poliment que vous n'avez plus faim en louant le plat est bien compris.",
+    "de": "Mahlzeiten sind üppig und gemeinsam. Probiere Plov (Reisgericht), Dolma und Kebabs, und rechne damit, dass Gastgeber ständig nachlegen. Höflich zu sagen, dass du satt bist, und das Essen zu loben, wird gut verstanden."
+   }
+  },
+  {
+   "id": "ct-AZ-07",
+   "category": "tipping",
+   "text": {
+    "en": "In restaurants, leaving about 10 percent is customary if a service charge is not already added. Check the bill first, and rounding up for taxi drivers is appreciated but not required.",
+    "it": "Nei ristoranti è consuetudine lasciare circa il 10 per cento se il servizio non è già incluso. Controlla prima il conto; arrotondare per i tassisti è gradito ma non obbligatorio.",
+    "es": "En los restaurantes es habitual dejar cerca del 10 por ciento si no se ha añadido ya el servicio. Revisa antes la cuenta; redondear para los taxistas se agradece, pero no es obligatorio.",
+    "pt": "Nos restaurantes é habitual deixar cerca de 10 por cento se o serviço ainda não estiver incluído. Vê primeiro a conta; arredondar para os taxistas é apreciado, mas não obrigatório.",
+    "pt_BR": "Nos restaurantes é comum deixar cerca de 10 por cento se o serviço ainda não estiver incluído. Confira antes a conta; arredondar para os taxistas é apreciado, mas não obrigatório.",
+    "fr": "Au restaurant, il est d'usage de laisser environ 10 pour cent si le service n'est pas déjà ajouté. Vérifiez d'abord l'addition ; arrondir pour les chauffeurs de taxi est apprécié mais pas obligatoire.",
+    "de": "In Restaurants ist es üblich, etwa 10 Prozent zu geben, wenn keine Servicegebühr enthalten ist. Prüfe zuerst die Rechnung; Aufrunden für Taxifahrer wird geschätzt, ist aber nicht verpflichtend."
+   }
+  },
+  {
+   "id": "ct-AZ-08",
+   "category": "gifts",
+   "text": {
+    "en": "When visiting a home, bring sweets, pastries or fruit for the family. Flowers are common too, and many people give them in odd numbers for happy occasions.",
+    "it": "Quando si visita una casa, porta dolci, pasticcini o frutta per la famiglia. Anche i fiori sono comuni, e molti li regalano in numero dispari per le occasioni liete.",
+    "es": "Al visitar una casa, lleva dulces, pasteles o fruta para la familia. Las flores también son habituales, y mucha gente las regala en número impar en ocasiones alegres.",
+    "pt": "Ao visitar uma casa, leva doces, bolos ou fruta para a família. As flores também são comuns, e muita gente oferece-as em número ímpar em ocasiões felizes.",
+    "pt_BR": "Ao visitar uma casa, leve doces, bolos ou frutas para a família. Flores também são comuns, e muita gente as oferece em número ímpar em ocasiões felizes.",
+    "fr": "En visite chez quelqu'un, apportez des sucreries, des pâtisseries ou des fruits pour la famille. Les fleurs sont aussi courantes, et beaucoup les offrent en nombre impair pour les occasions joyeuses.",
+    "de": "Bei einem Hausbesuch bringst du Süßes, Gebäck oder Obst für die Familie mit. Auch Blumen sind üblich, und viele schenken sie zu freudigen Anlässen in ungerader Anzahl."
+   }
+  },
+  {
+   "id": "ct-AZ-09",
+   "category": "dress",
+   "text": {
+    "en": "Baku is cosmopolitan and people dress stylishly, usually neat and smart. Away from the capital and at religious sites, more modest clothing with covered shoulders and knees is wise.",
+    "it": "Baku è cosmopolita e la gente si veste con stile, di solito in modo curato. Fuori dalla capitale e nei luoghi di culto è saggio scegliere abiti più sobri, con spalle e ginocchia coperte.",
+    "es": "Bakú es cosmopolita y la gente se viste con estilo, normalmente de forma cuidada. Fuera de la capital y en lugares religiosos conviene una ropa más discreta, con hombros y rodillas cubiertos.",
+    "pt": "Bacu é cosmopolita e as pessoas vestem-se com estilo, normalmente de forma cuidada. Fora da capital e em locais religiosos convém roupa mais discreta, com ombros e joelhos tapados.",
+    "pt_BR": "Baku é cosmopolita e as pessoas se vestem com estilo, normalmente de forma bem cuidada. Fora da capital e em locais religiosos convém usar roupas mais discretas, com ombros e joelhos cobertos.",
+    "fr": "Bakou est cosmopolite et l'on s'y habille avec style, en général de façon soignée. Hors de la capitale et dans les lieux religieux, mieux vaut une tenue plus sobre, épaules et genoux couverts.",
+    "de": "Baku ist weltoffen, und die Leute kleiden sich meist gepflegt und modisch. Außerhalb der Hauptstadt und an religiösen Stätten empfiehlt sich dezentere Kleidung mit bedeckten Schultern und Knien."
+   }
+  },
+  {
+   "id": "ct-AZ-10",
+   "category": "religion_sites",
+   "text": {
+    "en": "When entering a mosque, remove your shoes and dress modestly. Women are usually asked to cover their hair, and scarves are often available at the entrance of well-known mosques.",
+    "it": "Entrando in una moschea, togliti le scarpe e vestiti in modo sobrio. Alle donne di solito si chiede di coprire i capelli, e all'ingresso delle moschee più note spesso si trovano foulard.",
+    "es": "Al entrar en una mezquita, quítate los zapatos y vístete con modestia. A las mujeres normalmente se les pide cubrirse el pelo, y en las mezquitas conocidas suele haber pañuelos a la entrada.",
+    "pt": "Ao entrar numa mesquita, tira os sapatos e veste-te com discrição. Às mulheres pede-se normalmente que cubram o cabelo, e nas mesquitas mais conhecidas costuma haver lenços à entrada.",
+    "pt_BR": "Ao entrar em uma mesquita, tire os sapatos e vista-se com discrição. Às mulheres normalmente se pede que cubram o cabelo, e nas mesquitas mais conhecidas costuma haver lenços na entrada.",
+    "fr": "En entrant dans une mosquée, enlevez vos chaussures et habillez-vous sobrement. On demande généralement aux femmes de se couvrir les cheveux, et des foulards sont souvent disponibles à l'entrée des mosquées connues.",
+    "de": "Beim Betreten einer Moschee ziehst du die Schuhe aus und kleidest dich dezent. Frauen werden meist gebeten, das Haar zu bedecken, und an bekannten Moscheen liegen oft Tücher am Eingang bereit."
+   }
+  },
+  {
+   "id": "ct-AZ-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Azerbaijan is a secular country with a Muslim majority and also Christian and Jewish communities. Respectful curiosity about traditions is welcome, and quiet behavior near worshippers is expected.",
+    "it": "L'Azerbaigian è un paese laico a maggioranza musulmana, con anche comunità cristiane ed ebraiche. La curiosità rispettosa verso le tradizioni è gradita, e vicino ai fedeli ci si aspetta un comportamento tranquillo.",
+    "es": "Azerbaiyán es un país laico de mayoría musulmana, con comunidades cristianas y judías. Se agradece la curiosidad respetuosa por las tradiciones, y cerca de los fieles se espera un comportamiento tranquilo.",
+    "pt": "O Azerbaijão é um país laico de maioria muçulmana, com também comunidades cristãs e judaicas. A curiosidade respeitosa pelas tradições é bem-vinda, e junto dos fiéis espera-se um comportamento calmo.",
+    "pt_BR": "O Azerbaijão é um país laico de maioria muçulmana, com também comunidades cristãs e judaicas. A curiosidade respeitosa pelas tradições é bem-vinda, e perto dos fiéis espera-se um comportamento calmo.",
+    "fr": "L'Azerbaïdjan est un pays laïc à majorité musulmane, avec aussi des communautés chrétiennes et juives. Une curiosité respectueuse pour les traditions est bienvenue, et un comportement calme est attendu près des fidèles.",
+    "de": "Aserbaidschan ist ein säkulares Land mit muslimischer Mehrheit sowie christlichen und jüdischen Gemeinden. Respektvolle Neugier auf Traditionen ist willkommen, und in der Nähe von Gläubigen erwartet man ruhiges Verhalten."
+   }
+  },
+  {
+   "id": "ct-AZ-12",
+   "category": "gestures",
+   "text": {
+    "en": "Take off your shoes when entering a home; hosts often provide slippers. Use your right hand, or both hands, when giving or receiving gifts, food and tea.",
+    "it": "Togliti le scarpe entrando in casa; chi ospita spesso offre delle pantofole. Usa la mano destra, o entrambe le mani, per dare o ricevere regali, cibo e tè.",
+    "es": "Quítate los zapatos al entrar en una casa; los anfitriones suelen ofrecer zapatillas. Usa la mano derecha, o ambas manos, para dar o recibir regalos, comida y té.",
+    "pt": "Tira os sapatos ao entrar numa casa; os anfitriões costumam oferecer pantufas. Usa a mão direita, ou as duas mãos, para dar ou receber presentes, comida e chá.",
+    "pt_BR": "Tire os sapatos ao entrar em uma casa; os anfitriões costumam oferecer chinelos. Use a mão direita, ou as duas mãos, para dar ou receber presentes, comida e chá.",
+    "fr": "Enlevez vos chaussures en entrant dans une maison ; les hôtes proposent souvent des chaussons. Utilisez la main droite, ou les deux mains, pour donner ou recevoir cadeaux, nourriture et thé.",
+    "de": "Zieh beim Betreten eines Hauses die Schuhe aus; Gastgeber bieten oft Hausschuhe an. Benutze die rechte oder beide Hände, um Geschenke, Essen und Tee zu geben oder anzunehmen."
+   }
+  },
+  {
+   "id": "ct-AZ-13",
+   "category": "punctuality",
+   "text": {
+    "en": "For business and official appointments be on time. For social visits, a relaxed arrival is common, and meals can start later than announced and last for hours.",
+    "it": "Per appuntamenti di lavoro e ufficiali sii puntuale. Per le visite sociali è comune arrivare con calma, e i pasti possono iniziare più tardi di quanto annunciato e durare ore.",
+    "es": "Para citas de trabajo y oficiales sé puntual. En visitas sociales es común llegar con calma, y las comidas pueden empezar más tarde de lo anunciado y durar horas.",
+    "pt": "Para compromissos profissionais e oficiais sê pontual. Em visitas sociais é comum chegar com calma, e as refeições podem começar mais tarde do que o anunciado e durar horas.",
+    "pt_BR": "Para compromissos profissionais e oficiais seja pontual. Em visitas sociais é comum chegar com calma, e as refeições podem começar mais tarde do que o anunciado e durar horas.",
+    "fr": "Soyez ponctuel pour les rendez-vous professionnels et officiels. Pour les visites entre particuliers, arriver sans se presser est courant, et les repas peuvent commencer plus tard que prévu et durer des heures.",
+    "de": "Sei bei geschäftlichen und offiziellen Terminen pünktlich. Bei privaten Besuchen ist ein gelassenes Eintreffen üblich, und Essen kann später als angekündigt beginnen und Stunden dauern."
+   }
+  },
+  {
+   "id": "ct-AZ-14",
+   "category": "public_behavior",
+   "text": {
+    "en": "Offering your seat on the metro or bus to elderly people, pregnant women and parents with small children is expected and shows good manners.",
+    "it": "Cedere il posto in metropolitana o in autobus ad anziani, donne incinte e genitori con bambini piccoli è previsto e dimostra buone maniere.",
+    "es": "Ceder el asiento en el metro o el autobús a personas mayores, embarazadas y padres con niños pequeños es lo esperado y muestra buenos modales.",
+    "pt": "Ceder o lugar no metro ou no autocarro a idosos, grávidas e pais com crianças pequenas é o esperado e mostra boa educação.",
+    "pt_BR": "Ceder o lugar no metrô ou no ônibus a idosos, gestantes e pais com crianças pequenas é o esperado e mostra boa educação.",
+    "fr": "Céder sa place dans le métro ou le bus aux personnes âgées, aux femmes enceintes et aux parents avec de jeunes enfants est attendu et témoigne de bonnes manières.",
+    "de": "Älteren Menschen, Schwangeren und Eltern mit kleinen Kindern in Metro und Bus den Sitzplatz anzubieten wird erwartet und zeugt von guten Manieren."
+   }
+  },
+  {
+   "id": "ct-AZ-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "Public displays of affection are usually kept discreet, and loud or boisterous behavior in the street is not appreciated. A calm, polite manner fits well, especially outside Baku.",
+    "it": "Le manifestazioni pubbliche di affetto sono di solito discrete, e i comportamenti rumorosi in strada non sono apprezzati. Un atteggiamento calmo e cortese è adatto, soprattutto fuori da Baku.",
+    "es": "Las muestras públicas de afecto suelen ser discretas, y el comportamiento ruidoso en la calle no se aprecia. Un trato tranquilo y educado encaja bien, sobre todo fuera de Bakú.",
+    "pt": "As demonstrações públicas de afeto costumam ser discretas, e o comportamento ruidoso na rua não é apreciado. Um trato calmo e educado encaixa bem, sobretudo fora de Bacu.",
+    "pt_BR": "Demonstrações públicas de afeto costumam ser discretas, e comportamento barulhento na rua não é apreciado. Um jeito calmo e educado combina bem, principalmente fora de Baku.",
+    "fr": "Les démonstrations d'affection en public restent généralement discrètes, et les comportements bruyants dans la rue ne sont pas appréciés. Une attitude calme et polie convient bien, surtout hors de Bakou.",
+    "de": "Zärtlichkeiten in der Öffentlichkeit halten sich meist in Grenzen, und lautes Auftreten auf der Straße kommt nicht gut an. Ein ruhiges, höfliches Auftreten passt gut, besonders außerhalb von Baku."
+   }
+  },
+  {
+   "id": "ct-AZ-16",
+   "category": "transport",
+   "text": {
+    "en": "Baku has a modern metro, and you pay with a rechargeable BakıKart. Buying and topping up the card is cheaper than single tickets and works on buses too.",
+    "it": "Baku ha una metropolitana moderna, e si paga con la BakıKart ricaricabile. Acquistare e ricaricare la tessera costa meno dei biglietti singoli e vale anche sugli autobus.",
+    "es": "Bakú tiene un metro moderno y se paga con la tarjeta recargable BakıKart. Comprar y recargar la tarjeta sale más barato que los billetes sencillos y sirve también en los autobuses.",
+    "pt": "Bacu tem um metro moderno e paga-se com o cartão recarregável BakıKart. Comprar e carregar o cartão fica mais barato do que bilhetes avulsos e serve também nos autocarros.",
+    "pt_BR": "Baku tem um metrô moderno e se paga com o cartão recarregável BakıKart. Comprar e recarregar o cartão sai mais barato do que bilhetes avulsos e vale também nos ônibus.",
+    "fr": "Bakou dispose d'un métro moderne, et l'on paie avec la carte rechargeable BakıKart. L'acheter et la recharger revient moins cher que les tickets unitaires, et elle sert aussi dans les bus.",
+    "de": "Baku hat eine moderne Metro, bezahlt wird mit der aufladbaren BakıKart. Kauf und Aufladen sind günstiger als Einzeltickets, und die Karte gilt auch in Bussen."
+   }
+  },
+  {
+   "id": "ct-AZ-17",
+   "category": "transport",
+   "text": {
+    "en": "Ride-hailing apps are widely used in Baku and show the price in advance. For street taxis, agree on the fare before getting in, since meters are not always used.",
+    "it": "Le app di trasporto con autista sono molto usate a Baku e mostrano il prezzo in anticipo. Per i taxi fermati per strada, concorda la tariffa prima di salire, perché il tassametro non sempre viene usato.",
+    "es": "Las aplicaciones de transporte con conductor se usan mucho en Bakú y muestran el precio por adelantado. Con los taxis de la calle, acuerda la tarifa antes de subir, porque no siempre se usa taxímetro.",
+    "pt": "As aplicações de transporte com motorista são muito usadas em Bacu e mostram o preço antecipadamente. Nos táxis de rua, combina a tarifa antes de entrares, porque o taxímetro nem sempre é usado.",
+    "pt_BR": "Os aplicativos de transporte são muito usados em Baku e mostram o preço antecipadamente. Nos táxis de rua, combine a tarifa antes de entrar, porque o taxímetro nem sempre é usado.",
+    "fr": "Les applications de VTC sont très utilisées à Bakou et affichent le prix à l'avance. Pour les taxis hélés dans la rue, convenez du tarif avant de monter, car le compteur n'est pas toujours utilisé.",
+    "de": "Fahrdienst-Apps sind in Baku weit verbreitet und zeigen den Preis im Voraus an. Bei Straßentaxis vereinbare den Fahrpreis vor dem Einsteigen, da nicht immer ein Taxameter läuft."
+   }
+  },
+  {
+   "id": "ct-AZ-18",
+   "category": "language",
+   "text": {
+    "en": "The official language is Azerbaijani, a Turkic language written in the Latin alphabet. Learning thank you, təşəkkür edirəm, or the shorter sağ ol, will win smiles.",
+    "it": "La lingua ufficiale è l'azero, una lingua turcica scritta con l'alfabeto latino. Imparare grazie, təşəkkür edirəm, o la forma più breve sağ ol, farà sorridere.",
+    "es": "El idioma oficial es el azerí, una lengua túrquica escrita con alfabeto latino. Aprender gracias, təşəkkür edirəm, o la forma corta sağ ol, te hará ganar sonrisas.",
+    "pt": "A língua oficial é o azeri, uma língua turcomana escrita com o alfabeto latino. Aprender obrigado, təşəkkür edirəm, ou a forma curta sağ ol, vai render sorrisos.",
+    "pt_BR": "A língua oficial é o azerbaijano, uma língua turcomana escrita com o alfabeto latino. Aprender obrigado, təşəkkür edirəm, ou a forma curta sağ ol, vai render sorrisos.",
+    "fr": "La langue officielle est l'azerbaïdjanais, une langue turque écrite en alphabet latin. Apprendre merci, təşəkkür edirəm, ou la forme courte sağ ol, vous vaudra des sourires.",
+    "de": "Amtssprache ist Aserbaidschanisch, eine Turksprache in lateinischer Schrift. Wenn du danke lernst, təşəkkür edirəm, oder kurz sağ ol, erntest du Lächeln."
+   }
+  },
+  {
+   "id": "ct-AZ-19",
+   "category": "language",
+   "text": {
+    "en": "Many people speak Russian as well, especially older generations, and Turkish is easily understood. English is more common among younger people and in Baku's hotels and cafes.",
+    "it": "Molti parlano anche russo, soprattutto le generazioni più anziane, e il turco è facilmente compreso. L'inglese è più diffuso tra i giovani e negli hotel e nei caffè di Baku.",
+    "es": "Mucha gente habla también ruso, sobre todo las generaciones mayores, y el turco se entiende con facilidad. El inglés es más común entre los jóvenes y en hoteles y cafés de Bakú.",
+    "pt": "Muita gente fala também russo, sobretudo as gerações mais velhas, e o turco é facilmente compreendido. O inglês é mais comum entre os jovens e em hotéis e cafés de Bacu.",
+    "pt_BR": "Muita gente fala também russo, principalmente as gerações mais velhas, e o turco é facilmente compreendido. O inglês é mais comum entre os jovens e em hotéis e cafés de Baku.",
+    "fr": "Beaucoup parlent aussi russe, surtout les générations plus âgées, et le turc est facilement compris. L'anglais est plus répandu chez les jeunes et dans les hôtels et cafés de Bakou.",
+    "de": "Viele sprechen auch Russisch, besonders ältere Generationen, und Türkisch wird leicht verstanden. Englisch ist bei Jüngeren und in Hotels und Cafés in Baku verbreiteter."
+   }
+  },
+  {
+   "id": "ct-AZ-20",
+   "category": "festivals",
+   "text": {
+    "en": "Novruz, the spring festival around 20 to 21 March, is the biggest celebration. People jump over bonfires, set a table with sweets like pakhlava and shakarbura, and grow sprouted wheat called samani.",
+    "it": "Novruz, la festa di primavera intorno al 20-21 marzo, è la celebrazione più grande. Si salta sui falò, si prepara una tavola con dolci come pakhlava e shakarbura e si fa germogliare il grano, chiamato samani.",
+    "es": "Novruz, la fiesta de primavera hacia el 20 o 21 de marzo, es la mayor celebración. Se salta sobre hogueras, se prepara una mesa con dulces como pakhlava y shakarbura y se hace germinar trigo, llamado samani.",
+    "pt": "O Novruz, a festa da primavera por volta de 20 a 21 de março, é a maior celebração. Saltam-se fogueiras, põe-se a mesa com doces como pakhlava e shakarbura e fazem-se germinar trigo, chamado samani.",
+    "pt_BR": "O Novruz, a festa da primavera por volta de 20 a 21 de março, é a maior celebração. Pula-se fogueiras, monta-se a mesa com doces como pakhlava e shakarbura e faz-se brotar trigo, chamado samani.",
+    "fr": "Novruz, la fête du printemps vers le 20 ou 21 mars, est la plus grande célébration. On saute par-dessus des feux, on dresse une table de douceurs comme la pakhlava et la shakarbura et on fait germer du blé, appelé samani.",
+    "de": "Novruz, das Frühlingsfest um den 20. und 21. März, ist das größte Fest. Man springt über Feuer, deckt einen Tisch mit Süßem wie Pakhlava und Shakarbura und zieht Weizenkeimlinge namens Samani."
+   }
+  },
+  {
+   "id": "ct-AZ-21",
+   "category": "festivals",
+   "text": {
+    "en": "Ramazan Bayramı and Gurban Bayramı (Eid holidays) are public holidays spent visiting relatives. Wishing someone Bayramınız mübarək is a warm greeting during these days.",
+    "it": "Ramazan Bayramı e Gurban Bayramı (le feste dell'Eid) sono festività nazionali che si trascorrono visitando i parenti. Augurare Bayramınız mübarək è un saluto caloroso in questi giorni.",
+    "es": "Ramazan Bayramı y Gurban Bayramı (las fiestas del Eid) son festivos que se pasan visitando a los familiares. Desear Bayramınız mübarək es un saludo afectuoso en esos días.",
+    "pt": "Ramazan Bayramı e Gurban Bayramı (as festas do Eid) são feriados passados a visitar familiares. Desejar Bayramınız mübarək é uma saudação calorosa nesses dias.",
+    "pt_BR": "Ramazan Bayramı e Gurban Bayramı (as festas do Eid) são feriados passados visitando parentes. Desejar Bayramınız mübarək é uma saudação calorosa nesses dias.",
+    "fr": "Ramazan Bayramı et Gurban Bayramı (les fêtes de l'Aïd) sont des jours fériés passés à rendre visite à la famille. Souhaiter Bayramınız mübarək est une salutation chaleureuse à cette occasion.",
+    "de": "Ramazan Bayramı und Gurban Bayramı (die Eid-Feiertage) sind gesetzliche Feiertage, an denen man Verwandte besucht. Bayramınız mübarək zu wünschen ist in diesen Tagen ein herzlicher Gruß."
+   }
+  },
+  {
+   "id": "ct-AZ-22",
+   "category": "family",
+   "text": {
+    "en": "Family ties are strong and several generations often live close together. Elders are respected, and being introduced to relatives is a sign that you are welcome.",
+    "it": "I legami familiari sono forti e spesso più generazioni vivono vicine. Gli anziani sono rispettati, e farsi presentare i parenti è segno che sei il benvenuto.",
+    "es": "Los lazos familiares son fuertes y a menudo varias generaciones viven cerca. Se respeta a los mayores, y que te presenten a los familiares es señal de que eres bienvenido.",
+    "pt": "Os laços familiares são fortes e muitas vezes várias gerações vivem perto umas das outras. Os mais velhos são respeitados, e ser apresentado aos familiares é sinal de que és bem-vindo.",
+    "pt_BR": "Os laços familiares são fortes e muitas vezes várias gerações vivem perto umas das outras. Os mais velhos são respeitados, e ser apresentado aos parentes é sinal de que você é bem-vindo.",
+    "fr": "Les liens familiaux sont forts et plusieurs générations vivent souvent proches les unes des autres. Les aînés sont respectés, et se voir présenter la famille est un signe que vous êtes le bienvenu.",
+    "de": "Familienbande sind stark, und oft leben mehrere Generationen nah beieinander. Ältere werden respektiert, und wenn man dir Verwandte vorstellt, bist du willkommen."
+   }
+  },
+  {
+   "id": "ct-AZ-23",
+   "category": "money",
+   "text": {
+    "en": "The currency is the Azerbaijani manat (AZN). Cards are widely accepted in Baku, but carry some cash for bazaars, small shops and trips to the countryside.",
+    "it": "La valuta è il manat azero (AZN). A Baku le carte sono molto accettate, ma porta un po' di contanti per bazar, piccoli negozi e gite in campagna.",
+    "es": "La moneda es el manat azerbaiyano (AZN). En Bakú se aceptan mucho las tarjetas, pero lleva algo de efectivo para bazares, tiendas pequeñas y excursiones al campo.",
+    "pt": "A moeda é o manat azeri (AZN). Em Bacu aceitam-se muito os cartões, mas leva algum dinheiro para bazares, lojas pequenas e viagens ao campo.",
+    "pt_BR": "A moeda é o manat azeri (AZN). Em Baku os cartões são muito aceitos, mas leve algum dinheiro vivo para bazares, lojinhas e passeios pelo interior.",
+    "fr": "La monnaie est le manat azerbaïdjanais (AZN). Les cartes sont très acceptées à Bakou, mais emportez des espèces pour les bazars, les petites boutiques et les excursions à la campagne.",
+    "de": "Die Währung ist der Aserbaidschan-Manat (AZN). In Baku werden Karten weitgehend akzeptiert, doch für Basare, kleine Läden und Landausflüge solltest du etwas Bargeld dabeihaben."
+   }
+  },
+  {
+   "id": "ct-AZ-24",
+   "category": "photography",
+   "text": {
+    "en": "Ask permission before photographing people, especially women and older people. Avoid photographing military sites, border areas and government buildings, where it may be restricted.",
+    "it": "Chiedi il permesso prima di fotografare le persone, soprattutto donne e anziani. Evita di fotografare siti militari, zone di confine ed edifici governativi, dove può essere vietato.",
+    "es": "Pide permiso antes de fotografiar a personas, sobre todo a mujeres y mayores. Evita fotografiar sitios militares, zonas fronterizas y edificios gubernamentales, donde puede estar restringido.",
+    "pt": "Pede autorização antes de fotografar pessoas, sobretudo mulheres e idosos. Evita fotografar locais militares, zonas de fronteira e edifícios governamentais, onde pode ser restrito.",
+    "pt_BR": "Peça permissão antes de fotografar pessoas, principalmente mulheres e idosos. Evite fotografar locais militares, áreas de fronteira e prédios do governo, onde pode haver restrição.",
+    "fr": "Demandez la permission avant de photographier des personnes, surtout des femmes et des personnes âgées. Évitez de photographier les sites militaires, les zones frontalières et les bâtiments officiels, où cela peut être restreint.",
+    "de": "Frag vor Fotos von Menschen nach, besonders bei Frauen und älteren Leuten. Fotografiere keine Militäranlagen, Grenzgebiete und Regierungsgebäude, wo es eingeschränkt sein kann."
+   }
+  },
+  {
+   "id": "ct-AZ-25",
+   "category": "nightlife",
+   "text": {
+    "en": "Evenings in Baku revolve around strolling the Seaside Boulevard, tea houses, restaurants and live music. Many places stay open late, and a relaxed evening walk is a local habit.",
+    "it": "Le serate a Baku ruotano attorno alla passeggiata sul lungomare, alle case da tè, ai ristoranti e alla musica dal vivo. Molti locali restano aperti fino a tardi, e la passeggiata serale è un'abitudine locale.",
+    "es": "Las noches en Bakú giran en torno a pasear por el Bulevar Marítimo, las casas de té, los restaurantes y la música en vivo. Muchos locales abren hasta tarde, y el paseo nocturno es una costumbre local.",
+    "pt": "As noites em Bacu giram em torno de passear no Boulevard à beira-mar, casas de chá, restaurantes e música ao vivo. Muitos locais ficam abertos até tarde, e o passeio noturno é um hábito local.",
+    "pt_BR": "As noites em Baku giram em torno de passear pelo calçadão à beira-mar, casas de chá, restaurantes e música ao vivo. Muitos lugares ficam abertos até tarde, e a caminhada noturna é um hábito local.",
+    "fr": "Les soirées à Bakou tournent autour de la promenade sur le boulevard du bord de mer, des maisons de thé, des restaurants et de la musique live. Beaucoup d'endroits ferment tard, et la balade du soir est une habitude locale.",
+    "de": "Abende in Baku drehen sich um Spaziergänge auf dem Seaside Boulevard, Teehäuser, Restaurants und Livemusik. Viele Lokale haben lange geöffnet, und der entspannte Abendspaziergang ist eine lokale Gewohnheit."
+   }
+  },
+  {
+   "id": "ct-AZ-26",
+   "category": "nature",
+   "text": {
+    "en": "Gobustan has ancient rock engravings and small mud volcanoes, a UNESCO-listed area and a favorite day trip from Baku. Stay on paths and do not touch or climb on the carvings.",
+    "it": "Gobustan ha antiche incisioni rupestri e piccoli vulcani di fango, è un sito UNESCO ed è una gita giornaliera amata da Baku. Resta sui sentieri e non toccare né arrampicarti sulle incisioni.",
+    "es": "Gobustán tiene antiguos grabados rupestres y pequeños volcanes de lodo, es un sitio UNESCO y una excursión de un día muy querida desde Bakú. Mantente en los senderos y no toques ni escales los grabados.",
+    "pt": "Gobustão tem antigas gravuras rupestres e pequenos vulcões de lama, é um sítio da UNESCO e uma excursão de um dia muito apreciada a partir de Bacu. Fica nos caminhos e não toques nem trepes nas gravuras.",
+    "pt_BR": "Gobustão tem antigas gravuras rupestres e pequenos vulcões de lama, é um sítio da UNESCO e um passeio de um dia muito apreciado a partir de Baku. Fique nas trilhas e não toque nem suba nas gravuras.",
+    "fr": "Gobustan possède d'anciennes gravures rupestres et de petits volcans de boue ; classé à l'UNESCO, c'est une excursion d'une journée appréciée au départ de Bakou. Restez sur les sentiers et ne touchez ni ne grimpez sur les gravures.",
+    "de": "Gobustan bietet uralte Felszeichnungen und kleine Schlammvulkane, ist UNESCO-gelistet und ein beliebter Tagesausflug ab Baku. Bleib auf den Wegen und berühre oder besteige die Gravuren nicht."
+   }
+  },
+  {
+   "id": "ct-AZ-27",
+   "category": "nature",
+   "text": {
+    "en": "The Greater Caucasus mountains offer hiking in villages like Khinalug and Lahij. Weather changes quickly at altitude, so bring warm layers and ask locals about road and trail conditions.",
+    "it": "Le montagne del Grande Caucaso offrono escursioni in villaggi come Khinalug e Lahij. Il tempo cambia in fretta in quota, quindi porta strati caldi e chiedi ai locali delle condizioni di strade e sentieri.",
+    "es": "Las montañas del Gran Cáucaso ofrecen senderismo en pueblos como Khinalug y Lahij. El tiempo cambia rápido en altura, así que lleva capas de abrigo y pregunta a los locales por el estado de carreteras y senderos.",
+    "pt": "As montanhas do Grande Cáucaso oferecem caminhadas em aldeias como Khinalug e Lahij. O tempo muda depressa em altitude, por isso leva camadas de agasalho e pergunta aos locais pelo estado das estradas e trilhos.",
+    "pt_BR": "As montanhas do Grande Cáucaso oferecem trilhas em vilarejos como Khinalug e Lahij. O tempo muda rápido em altitude, então leve agasalhos em camadas e pergunte aos moradores sobre as condições de estradas e trilhas.",
+    "fr": "Les montagnes du Grand Caucase offrent des randonnées dans des villages comme Khinalug et Lahij. Le temps change vite en altitude : emportez des couches chaudes et renseignez-vous auprès des habitants sur l'état des routes et sentiers.",
+    "de": "Das Große Kaukasus-Gebirge bietet Wanderungen in Dörfern wie Chinalug und Lahidsch. Das Wetter schlägt in der Höhe schnell um, also pack warme Schichten ein und frag Einheimische nach Straßen- und Wegzustand."
+   }
+  },
+  {
+   "id": "ct-AZ-28",
+   "category": "safety",
+   "text": {
+    "en": "Azerbaijan is generally considered safe for visitors, with friendly locals. Use normal city caution with bags and phones in crowded places, and keep a copy of your passport.",
+    "it": "L'Azerbaigian è considerato in genere sicuro per i visitatori, con persone cordiali. Usa la normale prudenza cittadina con borse e telefoni nei luoghi affollati e tieni una copia del passaporto.",
+    "es": "Azerbaiyán se considera en general seguro para los visitantes, con gente amable. Ten la precaución normal de ciudad con bolsos y móviles en sitios concurridos y guarda una copia del pasaporte.",
+    "pt": "O Azerbaijão é geralmente considerado seguro para visitantes, com pessoas simpáticas. Tem os cuidados normais de cidade com malas e telemóveis em locais cheios e guarda uma cópia do passaporte.",
+    "pt_BR": "O Azerbaijão é geralmente considerado seguro para visitantes, com pessoas simpáticas. Tenha os cuidados normais de cidade com bolsas e celulares em locais cheios e guarde uma cópia do passaporte.",
+    "fr": "L'Azerbaïdjan est généralement jugé sûr pour les visiteurs, avec des habitants aimables. Prenez les précautions habituelles en ville pour vos sacs et téléphones dans les endroits bondés, et gardez une copie de votre passeport.",
+    "de": "Aserbaidschan gilt für Besucher allgemein als sicher, die Menschen sind freundlich. Sei an belebten Orten mit Taschen und Handy so vorsichtig wie in jeder Stadt und bewahre eine Passkopie auf."
+   }
+  },
+  {
+   "id": "ct-AZ-29",
+   "category": "safety",
+   "text": {
+    "en": "Check official travel advice before visiting areas near the borders with Armenia and the former conflict zones, since some regions are restricted or not fully cleared of mines. Do not leave marked roads there.",
+    "it": "Consulta le indicazioni ufficiali di viaggio prima di visitare le zone vicino ai confini con l'Armenia e le ex zone di conflitto, perché alcune regioni sono limitate o non del tutto bonificate dalle mine. Lì non lasciare le strade segnalate.",
+    "es": "Consulta los avisos oficiales de viaje antes de visitar zonas cercanas a las fronteras con Armenia y las antiguas zonas de conflicto, porque algunas regiones están restringidas o no están totalmente desminadas. No te salgas allí de las carreteras señalizadas.",
+    "pt": "Consulta os avisos oficiais de viagem antes de visitar zonas junto às fronteiras com a Arménia e as antigas zonas de conflito, porque algumas regiões estão restritas ou não estão totalmente limpas de minas. Aí, não saias das estradas sinalizadas.",
+    "pt_BR": "Consulte os avisos oficiais de viagem antes de visitar áreas perto das fronteiras com a Armênia e as antigas zonas de conflito, porque algumas regiões são restritas ou não estão totalmente livres de minas. Lá, não saia das estradas sinalizadas.",
+    "fr": "Consultez les avis de voyage officiels avant de visiter les zones proches des frontières avec l'Arménie et les anciennes zones de conflit, car certaines régions sont restreintes ou pas entièrement déminées. N'y quittez pas les routes balisées.",
+    "de": "Informiere dich vor Reisen in die Grenzgebiete zu Armenien und frühere Konfliktzonen in den offiziellen Reisehinweisen, da manche Regionen eingeschränkt oder nicht vollständig minenfrei sind. Verlass dort nie die markierten Straßen."
+   }
+  },
+  {
+   "id": "ct-AZ-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Azerbaijanis take pride in mugham, a traditional music form recognized by UNESCO in 2003, and in carpet weaving. Asking to hear a piece of mugham or about a family carpet is warmly received.",
+    "it": "Gli azeri sono orgogliosi del mugham, una forma musicale tradizionale riconosciuta dall'UNESCO nel 2003, e della tessitura dei tappeti. Chiedere di ascoltare un brano di mugham o di un tappeto di famiglia è accolto con calore.",
+    "es": "Los azerbaiyanos se enorgullecen del mugham, una forma musical tradicional reconocida por la UNESCO en 2003, y de la tejeduría de alfombras. Pedir escuchar una pieza de mugham o preguntar por una alfombra familiar se recibe con calidez.",
+    "pt": "Os azeris têm orgulho do mugham, uma forma musical tradicional reconhecida pela UNESCO em 2003, e do fabrico de tapetes. Pedir para ouvir uma peça de mugham ou perguntar por um tapete de família é recebido com calor.",
+    "pt_BR": "Os azerbaijanos têm orgulho do mugham, uma forma musical tradicional reconhecida pela UNESCO em 2003, e da tecelagem de tapetes. Pedir para ouvir uma peça de mugham ou perguntar sobre um tapete de família é recebido com carinho.",
+    "fr": "Les Azerbaïdjanais sont fiers du mugham, une forme musicale traditionnelle reconnue par l'UNESCO en 2003, et du tissage des tapis. Demander à écouter un morceau de mugham ou à parler d'un tapis de famille est accueilli chaleureusement.",
+    "de": "Die Aserbaidschaner sind stolz auf den Mugham, eine 2003 von der UNESCO anerkannte traditionelle Musikform, und auf die Teppichweberei. Wenn du um ein Mugham-Stück oder einen Familienteppich bittest, wirst du herzlich empfangen."
+   }
+  }
+ ],
+ "BA": [
+  {
+   "id": "ct-BA-01",
+   "category": "greetings",
+   "text": {
+    "en": "A handshake with eye contact and a warm Dobar dan (good day) or Zdravo is the standard greeting. Friends often exchange cheek kisses, and people usually greet everyone when entering a small group or room.",
+    "it": "La stretta di mano con contatto visivo e un caloroso Dobar dan (buongiorno) o Zdravo è il saluto standard. Gli amici si scambiano spesso baci sulla guancia, e di solito si saluta ogni persona quando si entra in un piccolo gruppo o in una stanza.",
+    "es": "El saludo habitual es un apretón de manos con contacto visual y un cálido Dobar dan (buenos días) o Zdravo. Los amigos suelen darse besos en la mejilla, y normalmente se saluda a todos al entrar en un grupo pequeño o una sala.",
+    "pt": "O cumprimento habitual é um aperto de mão com contacto visual e um caloroso Dobar dan (bom dia) ou Zdravo. Os amigos trocam muitas vezes beijos na cara, e costuma-se cumprimentar toda a gente ao entrar num grupo pequeno ou numa sala.",
+    "pt_BR": "O cumprimento padrão é um aperto de mão com contato visual e um caloroso Dobar dan (bom dia) ou Zdravo. Amigos costumam trocar beijos no rosto, e normalmente se cumprimenta todo mundo ao entrar num grupo pequeno ou numa sala.",
+    "fr": "La poignée de main avec contact visuel et un chaleureux Dobar dan (bonjour) ou Zdravo est le salut habituel. Les amis échangent souvent des bises, et l'on salue généralement tout le monde en entrant dans un petit groupe ou une pièce.",
+    "de": "Üblich sind ein Händedruck mit Blickkontakt und ein herzliches Dobar dan (guten Tag) oder Zdravo. Freunde tauschen oft Wangenküsse, und beim Betreten eines kleinen Kreises oder Raums begrüßt man meist alle."
+   }
+  },
+  {
+   "id": "ct-BA-02",
+   "category": "greetings",
+   "text": {
+    "en": "Hosting runs on generosity, and people often greet visitors as honored guests. Addressing elders with extra respect, using formal forms of address at first, is appreciated.",
+    "it": "L'ospitalità si basa sulla generosità, e i visitatori sono spesso accolti come ospiti d'onore. Rivolgersi agli anziani con rispetto particolare, usando all'inizio il lei, è molto apprezzato.",
+    "es": "La hospitalidad se basa en la generosidad, y a los visitantes se les suele recibir como invitados de honor. Dirigirse a los mayores con especial respeto, usando al principio el trato formal, se agradece.",
+    "pt": "A hospitalidade assenta na generosidade, e os visitantes são muitas vezes recebidos como convidados de honra. Dirigir-se aos mais velhos com especial respeito, usando de início o tratamento formal, é apreciado.",
+    "pt_BR": "A hospitalidade se baseia na generosidade, e os visitantes costumam ser recebidos como convidados de honra. Tratar os mais velhos com respeito especial, usando de início o tratamento formal, é apreciado.",
+    "fr": "L'hospitalité repose sur la générosité, et les visiteurs sont souvent accueillis en invités d'honneur. S'adresser aux aînés avec un respect particulier, en les vouvoyant au début, est apprécié.",
+    "de": "Gastfreundschaft beruht auf Großzügigkeit, und Besucher werden oft als Ehrengäste empfangen. Ältere zunächst mit besonderem Respekt und in der Höflichkeitsform anzusprechen, wird geschätzt."
+   }
+  },
+  {
+   "id": "ct-BA-03",
+   "category": "conversation",
+   "text": {
+    "en": "Locals enjoy talking about food, football, music, nature and family. The 1990s war and current politics are sensitive, so let people bring them up and listen respectfully.",
+    "it": "Ai locali piace parlare di cibo, calcio, musica, natura e famiglia. La guerra degli anni Novanta e la politica attuale sono temi delicati: lascia che siano le persone a toccarli e ascolta con rispetto.",
+    "es": "A los locales les gusta hablar de comida, fútbol, música, naturaleza y familia. La guerra de los años noventa y la política actual son temas delicados: deja que sea la gente quien los saque y escucha con respeto.",
+    "pt": "Os locais gostam de falar de comida, futebol, música, natureza e família. A guerra dos anos 90 e a política atual são temas delicados: deixa que sejam as pessoas a abordá-los e ouve com respeito.",
+    "pt_BR": "Os locais gostam de falar de comida, futebol, música, natureza e família. A guerra dos anos 1990 e a política atual são temas delicados: deixe que as pessoas toquem no assunto e escute com respeito.",
+    "fr": "Les habitants aiment parler de cuisine, de football, de musique, de nature et de famille. La guerre des années 1990 et la politique actuelle sont des sujets sensibles : laissez les gens les aborder et écoutez avec respect.",
+    "de": "Einheimische reden gern über Essen, Fußball, Musik, Natur und Familie. Der Krieg der 1990er-Jahre und die aktuelle Politik sind heikle Themen: Lass die Leute sie ansprechen und hör respektvoll zu."
+   }
+  },
+  {
+   "id": "ct-BA-04",
+   "category": "conversation",
+   "text": {
+    "en": "Bosnia and Herzegovina has three main constituent peoples. Asking open, curious questions about local traditions is welcome, while taking sides or generalizing about any group is not.",
+    "it": "La Bosnia ed Erzegovina ha tre popoli costitutivi principali. Fare domande aperte e curiose sulle tradizioni locali è gradito, mentre schierarsi o generalizzare su un gruppo non lo è.",
+    "es": "Bosnia y Herzegovina tiene tres pueblos constituyentes principales. Hacer preguntas abiertas y curiosas sobre las tradiciones locales se agradece, mientras que tomar partido o generalizar sobre un grupo, no.",
+    "pt": "A Bósnia e Herzegovina tem três povos constituintes principais. Fazer perguntas abertas e curiosas sobre as tradições locais é bem-vindo, enquanto tomar partido ou generalizar sobre um grupo não é.",
+    "pt_BR": "A Bósnia e Herzegovina tem três povos constituintes principais. Fazer perguntas abertas e curiosas sobre as tradições locais é bem-vindo, já tomar partido ou generalizar sobre um grupo não é.",
+    "fr": "La Bosnie-Herzégovine compte trois peuples constitutifs principaux. Poser des questions ouvertes et curieuses sur les traditions locales est bienvenu, mais prendre parti ou généraliser sur un groupe ne l'est pas.",
+    "de": "Bosnien und Herzegowina hat drei konstituierende Völker. Offene, neugierige Fragen zu lokalen Traditionen sind willkommen, Partei zu ergreifen oder über eine Gruppe zu verallgemeinern dagegen nicht."
+   }
+  },
+  {
+   "id": "ct-BA-05",
+   "category": "dining",
+   "text": {
+    "en": "Bosnian coffee is a ritual, not a quick drink. It is served in a small copper pot (džezva) with a cup, a sugar cube and often rahat lokum, and people sit for a long, relaxed chat.",
+    "it": "Il caffè bosniaco è un rito, non una bevanda veloce. Si serve in una piccola caraffa di rame (džezva) con una tazzina, una zolletta di zucchero e spesso rahat lokum, e ci si siede per una lunga chiacchierata rilassata.",
+    "es": "El café bosnio es un ritual, no una bebida rápida. Se sirve en una pequeña jarra de cobre (džezva) con una taza, un terrón de azúcar y a menudo rahat lokum, y la gente se sienta a charlar largo y tendido.",
+    "pt": "O café bósnio é um ritual, não uma bebida rápida. Serve-se numa pequena cafeteira de cobre (džezva) com uma chávena, um cubo de açúcar e muitas vezes rahat lokum, e as pessoas sentam-se para uma conversa longa e descontraída.",
+    "pt_BR": "O café bósnio é um ritual, não uma bebida rápida. É servido num pequeno bule de cobre (džezva) com uma xícara, um cubo de açúcar e muitas vezes rahat lokum, e as pessoas se sentam para um bate-papo longo e tranquilo.",
+    "fr": "Le café bosniaque est un rituel, pas une boisson rapide. Il est servi dans une petite cafetière en cuivre (džezva) avec une tasse, un sucre et souvent du rahat lokum, et l'on s'installe pour une longue conversation détendue.",
+    "de": "Bosnischer Kaffee ist ein Ritual, kein schnelles Getränk. Er wird in einem kleinen Kupferkännchen (džezva) mit Tasse, Zuckerwürfel und oft Rahat Lokum serviert, und man sitzt lange und entspannt zusammen."
+   }
+  },
+  {
+   "id": "ct-BA-06",
+   "category": "dining",
+   "text": {
+    "en": "Try ćevapi, small grilled minced-meat sausages served in somun bread with onions, and burek, a flaky pie. Hosts often keep offering more, so a polite no thanks, I am full, with a compliment, is fine.",
+    "it": "Prova i ćevapi, piccole salsicce di carne macinata alla griglia servite nel pane somun con cipolla, e il burek, una torta sfogliata. Chi ospita offre spesso altro, quindi un cortese no grazie, sono sazio, con un complimento va benissimo.",
+    "es": "Prueba los ćevapi, pequeñas salchichas de carne picada a la parrilla servidas en pan somun con cebolla, y el burek, un pastel de hojaldre. Los anfitriones suelen seguir ofreciendo más, así que un amable no gracias, estoy lleno, con un elogio, está bien.",
+    "pt": "Experimenta os ćevapi, pequenas salsichas de carne picada grelhadas servidas em pão somun com cebola, e o burek, uma tarte folhada. Os anfitriões costumam continuar a oferecer, por isso um educado não obrigado, estou cheio, com um elogio, está bem.",
+    "pt_BR": "Experimente os ćevapi, pequenas linguiças de carne moída grelhadas servidas no pão somun com cebola, e o burek, uma torta folhada. Os anfitriões costumam continuar oferecendo, então um educado não, obrigado, estou satisfeito, com um elogio, tudo bem.",
+    "fr": "Goûtez les ćevapi, petites saucisses de viande hachée grillées servies dans du pain somun avec des oignons, et le burek, une tourte feuilletée. Les hôtes proposent souvent d'en reprendre : un poli non merci, j'ai assez mangé, avec un compliment, convient très bien.",
+    "de": "Probiere Ćevapi, kleine gegrillte Hackfleischröllchen im Somun-Fladenbrot mit Zwiebeln, und Burek, eine Blätterteigpastete. Gastgeber bieten oft Nachschlag an, ein höfliches Nein danke, ich bin satt, mit einem Kompliment ist völlig in Ordnung."
+   }
+  },
+  {
+   "id": "ct-BA-07",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping about 10 percent in restaurants and cafes is common and appreciated, often done by rounding up the bill. Leaving a tip directly with the server is more usual than adding it to a card payment.",
+    "it": "Lasciare circa il 10 per cento nei ristoranti e nei caffè è comune e gradito, spesso arrotondando il conto. È più usuale lasciare la mancia direttamente al cameriere che aggiungerla al pagamento con carta.",
+    "es": "Dejar cerca del 10 por ciento de propina en restaurantes y cafeterías es habitual y se agradece, a menudo redondeando la cuenta. Es más normal dejarla directamente al camarero que añadirla al pago con tarjeta.",
+    "pt": "Deixar cerca de 10 por cento de gorjeta em restaurantes e cafés é comum e apreciado, muitas vezes arredondando a conta. É mais habitual deixá-la diretamente ao empregado do que juntá-la ao pagamento com cartão.",
+    "pt_BR": "Deixar cerca de 10 por cento de gorjeta em restaurantes e cafés é comum e apreciado, muitas vezes arredondando a conta. É mais comum entregá-la diretamente ao garçom do que incluí-la no pagamento com cartão.",
+    "fr": "Laisser environ 10 pour cent de pourboire au restaurant et au café est courant et apprécié, souvent en arrondissant l'addition. On le remet plus souvent directement au serveur qu'on ne l'ajoute au paiement par carte.",
+    "de": "In Restaurants und Cafés sind etwa 10 Prozent Trinkgeld üblich und willkommen, oft durch Aufrunden der Rechnung. Man gibt es meist direkt dem Servicepersonal, statt es bei Kartenzahlung hinzuzufügen."
+   }
+  },
+  {
+   "id": "ct-BA-08",
+   "category": "gifts",
+   "text": {
+    "en": "When visiting a home, bring a small gift such as sweets, chocolate, flowers or a bottle of juice for the family. Take off your shoes at the door and accept the slippers offered.",
+    "it": "Quando visiti una casa, porta un piccolo regalo come dolci, cioccolato, fiori o una bottiglia di succo per la famiglia. Togliti le scarpe all'ingresso e accetta le pantofole che ti offrono.",
+    "es": "Al visitar una casa, lleva un pequeño detalle como dulces, chocolate, flores o una botella de zumo para la familia. Quítate los zapatos en la puerta y acepta las zapatillas que te ofrezcan.",
+    "pt": "Ao visitar uma casa, leva uma pequena lembrança como doces, chocolate, flores ou uma garrafa de sumo para a família. Tira os sapatos à porta e aceita as pantufas que te oferecerem.",
+    "pt_BR": "Ao visitar uma casa, leve uma pequena lembrança como doces, chocolate, flores ou uma garrafa de suco para a família. Tire os sapatos na porta e aceite os chinelos que oferecerem.",
+    "fr": "En visite chez quelqu'un, apportez un petit cadeau comme des sucreries, du chocolat, des fleurs ou une bouteille de jus pour la famille. Enlevez vos chaussures à l'entrée et acceptez les chaussons proposés.",
+    "de": "Bei einem Hausbesuch bringst du ein kleines Geschenk wie Süßigkeiten, Schokolade, Blumen oder eine Flasche Saft für die Familie mit. Zieh an der Tür die Schuhe aus und nimm die angebotenen Hausschuhe an."
+   }
+  },
+  {
+   "id": "ct-BA-09",
+   "category": "dress",
+   "text": {
+    "en": "Everyday dress in cities like Sarajevo is casual and fashionable. In villages and when visiting mosques or churches, more modest clothing is respectful, with shoulders and knees covered.",
+    "it": "L'abbigliamento quotidiano in città come Sarajevo è informale e alla moda. Nei villaggi e quando si visitano moschee o chiese, abiti più sobri con spalle e ginocchia coperte sono segno di rispetto.",
+    "es": "La ropa diaria en ciudades como Sarajevo es informal y moderna. En los pueblos y al visitar mezquitas o iglesias, una ropa más discreta con hombros y rodillas cubiertos es una muestra de respeto.",
+    "pt": "A roupa do dia a dia em cidades como Sarajevo é informal e moderna. Nas aldeias e ao visitar mesquitas ou igrejas, roupa mais discreta com ombros e joelhos tapados é sinal de respeito.",
+    "pt_BR": "A roupa do dia a dia em cidades como Sarajevo é informal e moderna. Em vilarejos e ao visitar mesquitas ou igrejas, roupas mais discretas com ombros e joelhos cobertos mostram respeito.",
+    "fr": "La tenue quotidienne dans des villes comme Sarajevo est décontractée et à la mode. Dans les villages et pour visiter mosquées ou églises, des vêtements plus sobres, épaules et genoux couverts, sont une marque de respect.",
+    "de": "Die Alltagskleidung in Städten wie Sarajevo ist lässig und modisch. In Dörfern und beim Besuch von Moscheen oder Kirchen ist dezentere Kleidung mit bedeckten Schultern und Knien respektvoll."
+   }
+  },
+  {
+   "id": "ct-BA-10",
+   "category": "religion_sites",
+   "text": {
+    "en": "In mosques, remove your shoes and dress modestly; women usually cover their hair with a scarf. Visit outside prayer times, and ask before entering if a service is in progress.",
+    "it": "Nelle moschee togliti le scarpe e vestiti in modo sobrio; le donne di solito coprono i capelli con un foulard. Visita fuori dagli orari di preghiera e chiedi prima di entrare se è in corso una funzione.",
+    "es": "En las mezquitas, quítate los zapatos y vístete con modestia; las mujeres suelen cubrirse el pelo con un pañuelo. Visita fuera de las horas de oración y pregunta antes de entrar si hay un servicio en curso.",
+    "pt": "Nas mesquitas, tira os sapatos e veste-te com discrição; as mulheres costumam cobrir o cabelo com um lenço. Visita fora das horas de oração e pergunta antes de entrar se estiver a decorrer um serviço.",
+    "pt_BR": "Nas mesquitas, tire os sapatos e vista-se com discrição; as mulheres costumam cobrir o cabelo com um lenço. Visite fora dos horários de oração e pergunte antes de entrar se houver uma cerimônia em andamento.",
+    "fr": "Dans les mosquées, retirez vos chaussures et habillez-vous sobrement ; les femmes se couvrent généralement les cheveux d'un foulard. Visitez en dehors des heures de prière et demandez avant d'entrer si un office est en cours.",
+    "de": "In Moscheen ziehst du die Schuhe aus und kleidest dich dezent; Frauen bedecken meist das Haar mit einem Tuch. Besuche sie außerhalb der Gebetszeiten und frag vor dem Eintreten nach, ob gerade ein Gottesdienst läuft."
+   }
+  },
+  {
+   "id": "ct-BA-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Mosques, Catholic and Orthodox churches and synagogues stand close together in Sarajevo, a city often called a meeting point of cultures. Visiting them quietly and respectfully is a highlight.",
+    "it": "A Sarajevo moschee, chiese cattoliche e ortodosse e sinagoghe sorgono vicine, in una città spesso definita punto d'incontro di culture. Visitarle in silenzio e con rispetto è uno dei momenti più belli.",
+    "es": "En Sarajevo, mezquitas, iglesias católicas y ortodoxas y sinagogas están muy cerca unas de otras, en una ciudad a menudo descrita como punto de encuentro de culturas. Visitarlas en silencio y con respeto es uno de sus mayores atractivos.",
+    "pt": "Em Sarajevo, mesquitas, igrejas católicas e ortodoxas e sinagogas ficam perto umas das outras, numa cidade muitas vezes descrita como ponto de encontro de culturas. Visitá-las em silêncio e com respeito é um dos pontos altos.",
+    "pt_BR": "Em Sarajevo, mesquitas, igrejas católicas e ortodoxas e sinagogas ficam perto umas das outras, numa cidade muitas vezes descrita como ponto de encontro de culturas. Visitá-las em silêncio e com respeito é um dos pontos altos.",
+    "fr": "À Sarajevo, mosquées, églises catholiques et orthodoxes et synagogues sont proches les unes des autres, dans une ville souvent décrite comme un lieu de rencontre des cultures. Les visiter en silence et avec respect est un temps fort.",
+    "de": "In Sarajevo liegen Moscheen, katholische und orthodoxe Kirchen und Synagogen nah beieinander, in einer Stadt, die oft als Treffpunkt der Kulturen beschrieben wird. Sie leise und respektvoll zu besuchen ist ein Höhepunkt."
+   }
+  },
+  {
+   "id": "ct-BA-12",
+   "category": "gestures",
+   "text": {
+    "en": "A warm handshake, a nod and a smile go a long way. Sitting for coffee and not rushing the conversation is itself a gesture of friendship, so avoid checking the time or your phone too often.",
+    "it": "Una stretta di mano calorosa, un cenno e un sorriso valgono molto. Fermarsi per un caffè senza fretta di concludere è già un gesto di amicizia, quindi evita di controllare troppo spesso l'ora o il telefono.",
+    "es": "Un apretón de manos cálido, un gesto de cabeza y una sonrisa valen mucho. Sentarse a tomar un café sin prisa por terminar la conversación es en sí un gesto de amistad, así que evita mirar demasiado la hora o el móvil.",
+    "pt": "Um aperto de mão caloroso, um aceno e um sorriso contam muito. Sentar-se para um café sem pressa de acabar a conversa é em si um gesto de amizade, por isso evita olhar demasiadas vezes para as horas ou para o telemóvel.",
+    "pt_BR": "Um aperto de mão caloroso, um aceno e um sorriso valem muito. Sentar para um café sem pressa de encerrar a conversa já é um gesto de amizade, então evite olhar demais para o relógio ou para o celular.",
+    "fr": "Une poignée de main chaleureuse, un signe de tête et un sourire comptent beaucoup. S'asseoir pour un café sans se presser est déjà un geste d'amitié : évitez de regarder trop souvent l'heure ou votre téléphone.",
+    "de": "Ein herzlicher Händedruck, ein Nicken und ein Lächeln bewirken viel. Sich ohne Eile zum Kaffee zu setzen ist schon eine Geste der Freundschaft, schau also nicht zu oft auf die Uhr oder das Handy."
+   }
+  },
+  {
+   "id": "ct-BA-13",
+   "category": "punctuality",
+   "text": {
+    "en": "For business meetings and tours, be on time. In social life, coffee dates and visits are relaxed, and a late start of 10 to 15 minutes is usually taken calmly.",
+    "it": "Per riunioni di lavoro e tour sii puntuale. Nella vita sociale caffè e visite sono rilassati, e un ritardo di 10-15 minuti di solito viene preso con calma.",
+    "es": "Para reuniones de trabajo y excursiones sé puntual. En la vida social, los cafés y las visitas son relajados, y un retraso de 10 a 15 minutos suele tomarse con calma.",
+    "pt": "Para reuniões de trabalho e passeios sê pontual. Na vida social, os cafés e as visitas são descontraídos, e um atraso de 10 a 15 minutos costuma ser encarado com calma.",
+    "pt_BR": "Para reuniões de trabalho e passeios seja pontual. Na vida social, cafés e visitas são descontraídos, e um atraso de 10 a 15 minutos costuma ser encarado com calma.",
+    "fr": "Soyez ponctuel pour les réunions de travail et les visites guidées. Dans la vie sociale, cafés et visites sont détendus, et 10 à 15 minutes de retard sont généralement pris avec calme.",
+    "de": "Sei bei Geschäftsterminen und Touren pünktlich. Im Privatleben sind Kaffeetreffen und Besuche entspannt, und 10 bis 15 Minuten Verspätung werden meist gelassen genommen."
+   }
+  },
+  {
+   "id": "ct-BA-14",
+   "category": "public_behavior",
+   "text": {
+    "en": "Smoking is still common in cafes, though many places have rules. If you prefer smoke-free air, ask for a terrace or non-smoking area, and expect locals to be understanding.",
+    "it": "Fumare è ancora comune nei caffè, anche se molti locali hanno delle regole. Se preferisci un ambiente senza fumo, chiedi una terrazza o un'area non fumatori, e aspettati comprensione dai locali.",
+    "es": "Fumar sigue siendo habitual en las cafeterías, aunque muchos locales tienen normas. Si prefieres aire sin humo, pide una terraza o una zona de no fumadores, y espera comprensión de la gente local.",
+    "pt": "Fumar continua a ser comum nos cafés, embora muitos locais tenham regras. Se preferires ar sem fumo, pede uma esplanada ou uma zona de não fumadores, e conta com a compreensão dos locais.",
+    "pt_BR": "Fumar ainda é comum nos cafés, embora muitos locais tenham regras. Se preferir ar sem fumaça, peça uma varanda ou uma área para não fumantes, e espere compreensão dos locais.",
+    "fr": "Fumer reste courant dans les cafés, même si beaucoup d'endroits ont des règles. Si vous préférez un air sans fumée, demandez une terrasse ou un espace non-fumeur, et comptez sur la compréhension des habitants.",
+    "de": "Rauchen ist in Cafés noch verbreitet, auch wenn viele Lokale Regeln haben. Wenn du rauchfreie Luft bevorzugst, bitte um eine Terrasse oder einen Nichtraucherbereich, die Einheimischen zeigen meist Verständnis."
+   }
+  },
+  {
+   "id": "ct-BA-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "Giving up your seat to older people, pregnant women and parents with children on trams and buses is expected and noticed. A polite Izvinite (excuse me) goes a long way in crowded places.",
+    "it": "Cedere il posto su tram e autobus ad anziani, donne incinte e genitori con bambini è previsto e viene notato. Un cortese Izvinite (scusi) aiuta molto nei luoghi affollati.",
+    "es": "Ceder el asiento en tranvías y autobuses a mayores, embarazadas y padres con niños es lo esperado y se nota. Un amable Izvinite (disculpe) ayuda mucho en lugares concurridos.",
+    "pt": "Ceder o lugar nos elétricos e autocarros a idosos, grávidas e pais com crianças é o esperado e nota-se. Um educado Izvinite (com licença) ajuda muito em locais cheios.",
+    "pt_BR": "Ceder o lugar nos bondes e ônibus a idosos, gestantes e pais com crianças é o esperado e é notado. Um educado Izvinite (com licença) ajuda muito em lugares cheios.",
+    "fr": "Céder sa place dans les trams et bus aux personnes âgées, aux femmes enceintes et aux parents avec enfants est attendu et remarqué. Un poli Izvinite (excusez-moi) aide beaucoup dans les endroits bondés.",
+    "de": "Älteren, Schwangeren und Eltern mit Kindern in Straßenbahn und Bus den Platz anzubieten wird erwartet und bemerkt. Ein höfliches Izvinite (Entschuldigung) hilft an vollen Orten sehr."
+   }
+  },
+  {
+   "id": "ct-BA-16",
+   "category": "transport",
+   "text": {
+    "en": "Sarajevo has trams, trolleybuses and buses, and tickets can be bought on board or at kiosks. Between cities, buses are usually more frequent and practical than trains.",
+    "it": "Sarajevo ha tram, filobus e autobus, e i biglietti si comprano a bordo o nei chioschi. Tra le città, gli autobus sono di solito più frequenti e pratici dei treni.",
+    "es": "Sarajevo tiene tranvías, trolebuses y autobuses, y los billetes se compran a bordo o en quioscos. Entre ciudades, los autobuses suelen ser más frecuentes y prácticos que los trenes.",
+    "pt": "Sarajevo tem elétricos, troleicarros e autocarros, e os bilhetes compram-se a bordo ou em quiosques. Entre cidades, os autocarros costumam ser mais frequentes e práticos do que os comboios.",
+    "pt_BR": "Sarajevo tem bondes, trólebus e ônibus, e as passagens são compradas a bordo ou em quiosques. Entre cidades, os ônibus costumam ser mais frequentes e práticos do que os trens.",
+    "fr": "Sarajevo possède des tramways, des trolleybus et des bus, et les tickets s'achètent à bord ou dans des kiosques. Entre les villes, les bus sont généralement plus fréquents et pratiques que les trains.",
+    "de": "Sarajevo hat Straßenbahnen, Oberleitungsbusse und Busse, Fahrkarten gibt es an Bord oder an Kiosken. Zwischen Städten fahren Busse meist häufiger und praktischer als Züge."
+   }
+  },
+  {
+   "id": "ct-BA-17",
+   "category": "transport",
+   "text": {
+    "en": "Traffic drives on the right, and mountain roads can be narrow and winding, especially in winter. Allow extra time for journeys and ask locals about road conditions before long drives.",
+    "it": "Si guida a destra, e le strade di montagna possono essere strette e tortuose, soprattutto in inverno. Calcola più tempo per gli spostamenti e chiedi ai locali delle condizioni stradali prima dei lunghi viaggi.",
+    "es": "Se conduce por la derecha, y las carreteras de montaña pueden ser estrechas y sinuosas, sobre todo en invierno. Calcula más tiempo para los trayectos y pregunta a los locales por el estado de las carreteras antes de viajes largos.",
+    "pt": "Conduz-se pela direita, e as estradas de montanha podem ser estreitas e sinuosas, sobretudo no inverno. Conta com mais tempo para as viagens e pergunta aos locais pelo estado das estradas antes de longas deslocações.",
+    "pt_BR": "Dirige-se pela direita, e as estradas de montanha podem ser estreitas e sinuosas, principalmente no inverno. Conte com mais tempo para as viagens e pergunte aos locais sobre as condições das estradas antes de trajetos longos.",
+    "fr": "On roule à droite, et les routes de montagne peuvent être étroites et sinueuses, surtout en hiver. Prévoyez plus de temps pour les trajets et renseignez-vous auprès des habitants sur l'état des routes avant un long trajet.",
+    "de": "Es herrscht Rechtsverkehr, und Bergstraßen können eng und kurvig sein, besonders im Winter. Plane mehr Zeit für Fahrten ein und frag vor langen Strecken Einheimische nach dem Straßenzustand."
+   }
+  },
+  {
+   "id": "ct-BA-18",
+   "category": "language",
+   "text": {
+    "en": "People speak Bosnian, Croatian and Serbian, which are closely related and mutually understood. Using Hvala (thank you) and Molim (please) in any of them is warmly appreciated.",
+    "it": "Si parlano bosniaco, croato e serbo, lingue strettamente imparentate e reciprocamente comprensibili. Usare Hvala (grazie) e Molim (prego, per favore) in una qualsiasi di esse è molto apprezzato.",
+    "es": "Se hablan bosnio, croata y serbio, lenguas muy emparentadas y mutuamente comprensibles. Usar Hvala (gracias) y Molim (por favor) en cualquiera de ellas se agradece mucho.",
+    "pt": "Falam-se bósnio, croata e sérvio, línguas muito próximas e mutuamente compreensíveis. Usar Hvala (obrigado) e Molim (por favor) em qualquer uma delas é muito apreciado.",
+    "pt_BR": "Fala-se bósnio, croata e sérvio, línguas muito próximas e mutuamente compreensíveis. Usar Hvala (obrigado) e Molim (por favor) em qualquer uma delas é muito apreciado.",
+    "fr": "On parle bosniaque, croate et serbe, des langues très proches et mutuellement compréhensibles. Dire Hvala (merci) et Molim (s'il vous plaît) dans l'une d'elles est très apprécié.",
+    "de": "Gesprochen werden Bosnisch, Kroatisch und Serbisch, eng verwandte und gegenseitig verständliche Sprachen. Hvala (danke) und Molim (bitte) in einer davon zu sagen wird sehr geschätzt."
+   }
+  },
+  {
+   "id": "ct-BA-19",
+   "category": "language",
+   "text": {
+    "en": "Both Latin and Cyrillic scripts are used, and signs may appear in either. English is widely understood by younger people in cities, but a few words of the local language open doors.",
+    "it": "Si usano sia l'alfabeto latino sia quello cirillico, e i cartelli possono essere in uno dei due. L'inglese è ben compreso dai giovani nelle città, ma qualche parola della lingua locale apre molte porte.",
+    "es": "Se usan tanto el alfabeto latino como el cirílico, y los carteles pueden estar en cualquiera de los dos. El inglés lo entienden bien los jóvenes en las ciudades, pero unas pocas palabras de la lengua local abren puertas.",
+    "pt": "Usam-se tanto o alfabeto latino como o cirílico, e os letreiros podem estar em qualquer um deles. O inglês é bem compreendido pelos jovens nas cidades, mas umas poucas palavras da língua local abrem portas.",
+    "pt_BR": "Usam-se tanto o alfabeto latino quanto o cirílico, e as placas podem estar em qualquer um deles. O inglês é bem compreendido pelos jovens nas cidades, mas algumas palavras da língua local abrem portas.",
+    "fr": "Les alphabets latin et cyrillique sont tous deux utilisés, et les panneaux peuvent être dans l'un ou l'autre. L'anglais est bien compris des jeunes en ville, mais quelques mots de la langue locale ouvrent des portes.",
+    "de": "Es werden sowohl die lateinische als auch die kyrillische Schrift verwendet, und Schilder können in beiden stehen. Englisch verstehen jüngere Leute in Städten gut, aber ein paar Worte der Landessprache öffnen Türen."
+   }
+  },
+  {
+   "id": "ct-BA-20",
+   "category": "festivals",
+   "text": {
+    "en": "Bajram (Eid), Catholic and Orthodox Christmas and Easter, and other religious holidays are celebrated by different communities. Greeting people with Sretan praznik (happy holiday) is kind and welcomed.",
+    "it": "Bajram (Eid), il Natale e la Pasqua cattolici e ortodossi e altre festività religiose sono celebrati da comunità diverse. Salutare con Sretan praznik (buona festa) è gentile e gradito.",
+    "es": "Bajram (Eid), la Navidad y la Pascua católicas y ortodoxas y otras fiestas religiosas son celebradas por distintas comunidades. Saludar con Sretan praznik (feliz fiesta) es amable y se agradece.",
+    "pt": "Bajram (Eid), o Natal e a Páscoa católicos e ortodoxos e outras festas religiosas são celebrados por comunidades diferentes. Cumprimentar com Sretan praznik (boa festa) é simpático e bem recebido.",
+    "pt_BR": "Bajram (Eid), o Natal e a Páscoa católicos e ortodoxos e outras festas religiosas são celebrados por comunidades diferentes. Cumprimentar com Sretan praznik (boa festa) é gentil e bem recebido.",
+    "fr": "Bajram (l'Aïd), Noël et Pâques catholiques et orthodoxes et d'autres fêtes religieuses sont célébrés par différentes communautés. Saluer avec Sretan praznik (bonne fête) est aimable et bien accueilli.",
+    "de": "Bajram (Eid), katholisches und orthodoxes Weihnachten und Ostern sowie weitere religiöse Feste werden von verschiedenen Gemeinschaften gefeiert. Mit Sretan praznik (frohes Fest) zu grüßen ist freundlich und willkommen."
+   }
+  },
+  {
+   "id": "ct-BA-21",
+   "category": "festivals",
+   "text": {
+    "en": "The Sarajevo Film Festival, held each August, is one of the biggest film events in Southeast Europe. The city fills with visitors, screenings and open-air events, so book accommodation early.",
+    "it": "Il Sarajevo Film Festival, che si tiene ogni agosto, è uno dei maggiori eventi cinematografici dell'Europa sud-orientale. La città si riempie di visitatori, proiezioni ed eventi all'aperto, quindi prenota l'alloggio per tempo.",
+    "es": "El Festival de Cine de Sarajevo, que se celebra cada agosto, es uno de los mayores eventos de cine del sureste de Europa. La ciudad se llena de visitantes, proyecciones y actos al aire libre, así que reserva alojamiento con tiempo.",
+    "pt": "O Festival de Cinema de Sarajevo, realizado todos os anos em agosto, é um dos maiores eventos de cinema do sudeste da Europa. A cidade enche-se de visitantes, sessões e eventos ao ar livre, por isso reserva alojamento com antecedência.",
+    "pt_BR": "O Festival de Cinema de Sarajevo, realizado todo agosto, é um dos maiores eventos de cinema do sudeste da Europa. A cidade se enche de visitantes, sessões e eventos ao ar livre, então reserve hospedagem com antecedência.",
+    "fr": "Le Festival du film de Sarajevo, qui a lieu chaque août, est l'un des plus grands événements cinématographiques d'Europe du Sud-Est. La ville se remplit de visiteurs, de projections et d'événements en plein air : réservez tôt votre hébergement.",
+    "de": "Das Sarajevo Film Festival findet jeden August statt und gehört zu den größten Filmereignissen Südosteuropas. Die Stadt füllt sich mit Besuchern, Vorführungen und Open-Air-Events, buche die Unterkunft also früh."
+   }
+  },
+  {
+   "id": "ct-BA-22",
+   "category": "family",
+   "text": {
+    "en": "Family is central, and visits to relatives often involve coffee, sweets and long conversations. Children are welcome almost everywhere, and elders are treated with respect and care.",
+    "it": "La famiglia è centrale, e le visite ai parenti comprendono spesso caffè, dolci e lunghe conversazioni. I bambini sono i benvenuti quasi ovunque e gli anziani sono trattati con rispetto e cura.",
+    "es": "La familia es central, y las visitas a los parientes suelen incluir café, dulces y largas conversaciones. Los niños son bienvenidos casi en todas partes y a los mayores se les trata con respeto y cuidado.",
+    "pt": "A família é central, e as visitas aos familiares incluem muitas vezes café, doces e longas conversas. As crianças são bem-vindas quase em todo o lado e os mais velhos são tratados com respeito e cuidado.",
+    "pt_BR": "A família é central, e as visitas aos parentes costumam incluir café, doces e longas conversas. As crianças são bem-vindas quase em todo lugar e os mais velhos são tratados com respeito e cuidado.",
+    "fr": "La famille est centrale, et les visites aux proches comprennent souvent café, douceurs et longues conversations. Les enfants sont les bienvenus presque partout et les aînés sont traités avec respect et attention.",
+    "de": "Die Familie steht im Mittelpunkt, und Besuche bei Verwandten bedeuten oft Kaffee, Süßes und lange Gespräche. Kinder sind fast überall willkommen, und Ältere werden mit Respekt und Fürsorge behandelt."
+   }
+  },
+  {
+   "id": "ct-BA-23",
+   "category": "money",
+   "text": {
+    "en": "The currency is the convertible mark (KM, or BAM), pegged to the euro. Cards are accepted in cities, but keep cash for small cafes, markets and rural areas, and check change carefully.",
+    "it": "La valuta è il marco convertibile (KM o BAM), legato all'euro. Le carte sono accettate nelle città, ma tieni contanti per piccoli caffè, mercati e zone rurali, e controlla bene il resto.",
+    "es": "La moneda es el marco convertible (KM o BAM), vinculado al euro. Las tarjetas se aceptan en las ciudades, pero lleva efectivo para cafeterías pequeñas, mercados y zonas rurales, y revisa bien el cambio.",
+    "pt": "A moeda é o marco convertível (KM ou BAM), indexado ao euro. Os cartões são aceites nas cidades, mas leva dinheiro para cafés pequenos, mercados e zonas rurais, e confere bem o troco.",
+    "pt_BR": "A moeda é o marco conversível (KM ou BAM), atrelado ao euro. Os cartões são aceitos nas cidades, mas leve dinheiro vivo para cafés pequenos, mercados e áreas rurais, e confira bem o troco.",
+    "fr": "La monnaie est le mark convertible (KM ou BAM), arrimé à l'euro. Les cartes sont acceptées dans les villes, mais gardez des espèces pour les petits cafés, les marchés et les zones rurales, et vérifiez bien la monnaie rendue.",
+    "de": "Die Währung ist die Konvertible Mark (KM oder BAM), an den Euro gekoppelt. In Städten werden Karten akzeptiert, doch für kleine Cafés, Märkte und ländliche Gebiete brauchst du Bargeld, und prüfe das Wechselgeld genau."
+   }
+  },
+  {
+   "id": "ct-BA-24",
+   "category": "photography",
+   "text": {
+    "en": "Ask permission before photographing people, especially at religious sites and memorials. Be sensitive near places linked to the war, where photography may be seen as disrespectful.",
+    "it": "Chiedi il permesso prima di fotografare le persone, soprattutto nei luoghi di culto e nei memoriali. Sii sensibile vicino ai luoghi legati alla guerra, dove fotografare può essere visto come mancanza di rispetto.",
+    "es": "Pide permiso antes de fotografiar a personas, sobre todo en lugares religiosos y memoriales. Sé sensible cerca de lugares vinculados a la guerra, donde fotografiar puede verse como una falta de respeto.",
+    "pt": "Pede autorização antes de fotografar pessoas, sobretudo em locais religiosos e memoriais. Sê sensível junto de locais ligados à guerra, onde fotografar pode ser visto como falta de respeito.",
+    "pt_BR": "Peça permissão antes de fotografar pessoas, principalmente em locais religiosos e memoriais. Seja sensível perto de lugares ligados à guerra, onde fotografar pode ser visto como falta de respeito.",
+    "fr": "Demandez la permission avant de photographier des personnes, surtout dans les lieux de culte et aux mémoriaux. Soyez sensible près des lieux liés à la guerre, où photographier peut être perçu comme irrespectueux.",
+    "de": "Frag vor Fotos von Menschen um Erlaubnis, besonders an religiösen Stätten und Gedenkorten. Sei an Orten mit Kriegsbezug einfühlsam, da Fotografieren dort respektlos wirken kann."
+   }
+  },
+  {
+   "id": "ct-BA-25",
+   "category": "nightlife",
+   "text": {
+    "en": "Cafe culture is the heart of social life, and evenings in Sarajevo's old town (Baščaršija) mix cafes, live music and late dinners. Many people meet outdoors in warm months and stay late.",
+    "it": "La cultura dei caffè è il cuore della vita sociale, e le serate nel centro storico di Sarajevo (Baščaršija) uniscono caffè, musica dal vivo e cene tardive. Nei mesi caldi molti si incontrano all'aperto e restano fino a tardi.",
+    "es": "La cultura de las cafeterías es el corazón de la vida social, y las noches en el casco antiguo de Sarajevo (Baščaršija) combinan cafés, música en vivo y cenas tardías. En los meses cálidos mucha gente queda al aire libre y se queda hasta tarde.",
+    "pt": "A cultura dos cafés é o coração da vida social, e as noites no centro histórico de Sarajevo (Baščaršija) juntam cafés, música ao vivo e jantares tardios. Nos meses quentes muita gente encontra-se ao ar livre e fica até tarde.",
+    "pt_BR": "A cultura dos cafés é o coração da vida social, e as noites no centro histórico de Sarajevo (Baščaršija) misturam cafés, música ao vivo e jantares tardios. Nos meses quentes muita gente se encontra ao ar livre e fica até tarde.",
+    "fr": "La culture des cafés est le cœur de la vie sociale, et les soirées dans la vieille ville de Sarajevo (Baščaršija) mêlent cafés, musique live et dîners tardifs. Aux beaux jours, beaucoup se retrouvent dehors et restent tard.",
+    "de": "Die Café-Kultur ist das Herz des gesellschaftlichen Lebens, und Abende in Sarajevos Altstadt (Baščaršija) vereinen Cafés, Livemusik und späte Abendessen. In warmen Monaten trifft man sich draußen und bleibt lange."
+   }
+  },
+  {
+   "id": "ct-BA-26",
+   "category": "nature",
+   "text": {
+    "en": "The Una and Neretva rivers offer rafting, kayaking and swimming, and the mountains around Sarajevo have hiking and skiing. Check weather and use licensed local guides for river and mountain activities.",
+    "it": "I fiumi Una e Neretva offrono rafting, kayak e nuoto, e le montagne intorno a Sarajevo hanno sentieri e piste da sci. Controlla il meteo e affidati a guide locali autorizzate per le attività su fiumi e montagne.",
+    "es": "Los ríos Una y Neretva ofrecen rafting, kayak y baño, y las montañas alrededor de Sarajevo tienen senderismo y esquí. Consulta el tiempo y recurre a guías locales autorizados para las actividades en ríos y montañas.",
+    "pt": "Os rios Una e Neretva oferecem rafting, caiaque e natação, e as montanhas à volta de Sarajevo têm caminhadas e ski. Consulta a meteorologia e recorre a guias locais licenciados para atividades em rios e montanhas.",
+    "pt_BR": "Os rios Una e Neretva oferecem rafting, caiaque e natação, e as montanhas ao redor de Sarajevo têm trilhas e esqui. Consulte a previsão do tempo e use guias locais licenciados para atividades em rios e montanhas.",
+    "fr": "Les rivières Una et Neretva offrent rafting, kayak et baignade, et les montagnes autour de Sarajevo proposent randonnée et ski. Consultez la météo et faites appel à des guides locaux agréés pour les activités en rivière et en montagne.",
+    "de": "Die Flüsse Una und Neretva bieten Rafting, Kajak und Baden, und die Berge um Sarajevo laden zum Wandern und Skifahren ein. Prüfe das Wetter und buche für Fluss- und Bergaktivitäten zugelassene lokale Guides."
+   }
+  },
+  {
+   "id": "ct-BA-27",
+   "category": "nature",
+   "text": {
+    "en": "Respect nature by taking your rubbish with you and not picking plants in protected areas. Waterfalls like Kravice are lovely, but follow signs and swim only in permitted spots.",
+    "it": "Rispetta la natura portando via i rifiuti e non raccogliendo piante nelle aree protette. Cascate come Kravice sono splendide, ma segui i cartelli e fai il bagno solo nei punti consentiti.",
+    "es": "Respeta la naturaleza llevándote la basura y sin recoger plantas en áreas protegidas. Cascadas como Kravice son preciosas, pero sigue las señales y báñate solo en los lugares permitidos.",
+    "pt": "Respeita a natureza levando o lixo contigo e não apanhando plantas em áreas protegidas. Cascatas como Kravice são lindas, mas segue os sinais e nada apenas nos locais permitidos.",
+    "pt_BR": "Respeite a natureza levando o lixo com você e não colhendo plantas em áreas protegidas. Cachoeiras como Kravice são lindas, mas siga as placas e nade apenas nos locais permitidos.",
+    "fr": "Respectez la nature en remportant vos déchets et en ne cueillant pas de plantes dans les zones protégées. Des cascades comme Kravice sont magnifiques, mais suivez les panneaux et ne vous baignez qu'aux endroits autorisés.",
+    "de": "Respektiere die Natur, indem du deinen Müll mitnimmst und in Schutzgebieten keine Pflanzen pflückst. Wasserfälle wie Kravice sind wunderschön, doch folge den Schildern und bade nur an erlaubten Stellen."
+   }
+  },
+  {
+   "id": "ct-BA-28",
+   "category": "safety",
+   "text": {
+    "en": "Some rural areas still contain landmines left from the 1990s war. Stay on marked roads and trails, heed red warning signs, and never touch suspicious objects; ask local guides when hiking off the beaten track.",
+    "it": "Alcune zone rurali contengono ancora mine lasciate dalla guerra degli anni Novanta. Resta su strade e sentieri segnalati, rispetta i cartelli rossi di pericolo e non toccare mai oggetti sospetti; chiedi alle guide locali se esci dai percorsi battuti.",
+    "es": "Algunas zonas rurales aún tienen minas de la guerra de los años noventa. Mantente en carreteras y senderos señalizados, respeta las señales rojas de peligro y nunca toques objetos sospechosos; consulta a guías locales si sales de los caminos habituales.",
+    "pt": "Algumas zonas rurais ainda têm minas deixadas pela guerra dos anos 90. Fica em estradas e trilhos sinalizados, respeita os sinais vermelhos de perigo e nunca toques em objetos suspeitos; pergunta a guias locais se saíres dos percursos habituais.",
+    "pt_BR": "Algumas áreas rurais ainda têm minas deixadas pela guerra dos anos 1990. Fique em estradas e trilhas sinalizadas, respeite as placas vermelhas de perigo e nunca toque em objetos suspeitos; pergunte a guias locais se sair dos caminhos mais comuns.",
+    "fr": "Certaines zones rurales contiennent encore des mines héritées de la guerre des années 1990. Restez sur les routes et sentiers balisés, respectez les panneaux de danger rouges, ne touchez jamais d'objets suspects et demandez conseil à des guides locaux hors des sentiers battus.",
+    "de": "In manchen ländlichen Gebieten liegen noch Landminen aus dem Krieg der 1990er-Jahre. Bleib auf markierten Straßen und Wegen, beachte rote Warnschilder, fass nie verdächtige Gegenstände an und frag bei Touren abseits der Wege lokale Guides."
+   }
+  },
+  {
+   "id": "ct-BA-29",
+   "category": "safety",
+   "text": {
+    "en": "Large cities are generally calm for visitors, with the usual care needed in crowds. Keep valuables out of sight, carry a copy of your passport, and know the emergency number 112.",
+    "it": "Le grandi città sono in genere tranquille per i visitatori, con la solita attenzione nella folla. Tieni gli oggetti di valore fuori vista, porta una copia del passaporto e ricorda il numero di emergenza 112.",
+    "es": "Las grandes ciudades suelen ser tranquilas para los visitantes, con la precaución habitual entre multitudes. Mantén los objetos de valor fuera de la vista, lleva una copia del pasaporte y recuerda el número de emergencias 112.",
+    "pt": "As grandes cidades costumam ser calmas para os visitantes, com o cuidado habitual no meio de multidões. Mantém os objetos de valor fora de vista, leva uma cópia do passaporte e fica a saber o número de emergência 112.",
+    "pt_BR": "As grandes cidades costumam ser tranquilas para os visitantes, com o cuidado habitual no meio de multidões. Mantenha objetos de valor fora de vista, leve uma cópia do passaporte e saiba o número de emergência 112.",
+    "fr": "Les grandes villes sont généralement calmes pour les visiteurs, avec la prudence habituelle dans la foule. Gardez vos objets de valeur hors de vue, emportez une copie de votre passeport et retenez le numéro d'urgence 112.",
+    "de": "Große Städte sind für Besucher im Allgemeinen ruhig, mit der üblichen Vorsicht in Menschenmengen. Halte Wertsachen außer Sicht, trag eine Passkopie bei dir und merke dir den Notruf 112."
+   }
+  },
+  {
+   "id": "ct-BA-30",
+   "category": "local_pride",
+   "text": {
+    "en": "People are proud of the Stari Most in Mostar, the 16th-century bridge rebuilt in 2004 and now a UNESCO site, and of Sarajevo's old town. Asking about local landmarks and traditions shows genuine interest.",
+    "it": "La gente è orgogliosa dello Stari Most di Mostar, il ponte del XVI secolo ricostruito nel 2004 e oggi patrimonio UNESCO, e della città vecchia di Sarajevo. Chiedere dei luoghi e delle tradizioni locali mostra un interesse sincero.",
+    "es": "La gente está orgullosa del Stari Most de Mostar, el puente del siglo XVI reconstruido en 2004 y hoy Patrimonio de la UNESCO, y del casco antiguo de Sarajevo. Preguntar por los lugares y tradiciones locales muestra un interés genuino.",
+    "pt": "As pessoas têm orgulho do Stari Most de Mostar, a ponte do século XVI reconstruída em 2004 e hoje classificada pela UNESCO, e do centro histórico de Sarajevo. Perguntar pelos locais e tradições locais mostra interesse genuíno.",
+    "pt_BR": "As pessoas têm orgulho do Stari Most de Mostar, a ponte do século XVI reconstruída em 2004 e hoje Patrimônio da UNESCO, e do centro histórico de Sarajevo. Perguntar sobre os locais e tradições locais mostra interesse genuíno.",
+    "fr": "Les habitants sont fiers du Stari Most de Mostar, le pont du XVIe siècle reconstruit en 2004 et inscrit à l'UNESCO, ainsi que de la vieille ville de Sarajevo. Poser des questions sur les lieux et traditions locales témoigne d'un intérêt sincère.",
+    "de": "Die Menschen sind stolz auf die Stari Most in Mostar, die im 16. Jahrhundert erbaute und 2004 wiederaufgebaute Brücke und heutige UNESCO-Stätte, sowie auf Sarajevos Altstadt. Fragen zu lokalen Sehenswürdigkeiten und Traditionen zeigen echtes Interesse."
+   }
+  }
+ ]
+}

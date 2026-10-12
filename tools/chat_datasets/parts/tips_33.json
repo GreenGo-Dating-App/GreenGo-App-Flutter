@@ -1,0 +1,1178 @@
+{
+ "MA": [
+  {
+   "id": "ct-MA-01",
+   "category": "greetings",
+   "text": {
+    "en": "When meeting, Moroccans often shake hands and then touch the right hand to the heart. Friends of the same gender may exchange cheek kisses.",
+    "it": "Quando ci si incontra, spesso ci si stringe la mano e poi si porta la mano destra al cuore. Tra amici dello stesso genere possono esserci baci sulle guance.",
+    "es": "Al encontrarse, es habitual dar la mano y luego llevarse la mano derecha al corazón. Entre amigos del mismo género puede haber besos en las mejillas.",
+    "pt": "Ao encontrarem-se, é comum apertar a mão e depois levar a mão direita ao coração. Entre amigos do mesmo género podem trocar-se beijos na face.",
+    "pt_BR": "Ao se encontrar, é comum apertar a mão e depois levar a mão direita ao coração. Entre amigos do mesmo gênero pode haver beijinhos no rosto.",
+    "fr": "Lors d'une rencontre, on se serre souvent la main puis on pose la main droite sur le cœur. Entre amis du même genre, on peut se faire la bise.",
+    "de": "Zur Begrüßung gibt man sich oft die Hand und legt dann die rechte Hand aufs Herz. Unter Freunden gleichen Geschlechts sind Wangenküsse üblich."
+   }
+  },
+  {
+   "id": "ct-MA-02",
+   "category": "greetings",
+   "text": {
+    "en": "Greeting people with \"Salam alaykum\" is warmly received, and the usual reply is \"Wa alaykum salam\". Take a moment to ask how someone and their family are doing.",
+    "it": "Salutare con \"Salam alaykum\" è molto apprezzato e la risposta abituale è \"Wa alaykum salam\". Dedica un momento a chiedere come stanno la persona e la sua famiglia.",
+    "es": "Saludar con \"Salam alaykum\" se agradece mucho, y la respuesta habitual es \"Wa alaykum salam\". Tómate un momento para preguntar cómo están la persona y su familia.",
+    "pt": "Cumprimentar com \"Salam alaykum\" é muito apreciado, e a resposta habitual é \"Wa alaykum salam\". Dedica um momento a perguntar como estão a pessoa e a família.",
+    "pt_BR": "Cumprimentar com \"Salam alaykum\" é muito apreciado, e a resposta habitual é \"Wa alaykum salam\". Dedique um momento para perguntar como estão a pessoa e a família.",
+    "fr": "Saluer avec \"Salam alaykum\" est très apprécié, et la réponse habituelle est \"Wa alaykum salam\". Prends un moment pour demander comment vont la personne et sa famille.",
+    "de": "Ein \"Salam alaykum\" kommt sehr gut an, die übliche Antwort lautet \"Wa alaykum salam\". Nimm dir einen Moment, um nach dem Befinden der Person und ihrer Familie zu fragen."
+   }
+  },
+  {
+   "id": "ct-MA-03",
+   "category": "conversation",
+   "text": {
+    "en": "Conversations often start slowly with small talk about health, family and travel before getting to the point. Rushing straight to business can feel abrupt.",
+    "it": "Le conversazioni iniziano spesso con calma, parlando di salute, famiglia e viaggi prima di arrivare al punto. Andare subito al sodo può sembrare brusco.",
+    "es": "Las conversaciones suelen empezar con calma, hablando de salud, familia y viajes antes de ir al grano. Ir directo al tema puede parecer brusco.",
+    "pt": "As conversas começam muitas vezes devagar, com assuntos como saúde, família e viagens, antes de se chegar ao ponto. Ir direto ao assunto pode parecer brusco.",
+    "pt_BR": "As conversas costumam começar com calma, falando de saúde, família e viagens antes de chegar ao ponto. Ir direto ao assunto pode parecer brusco.",
+    "fr": "Les conversations commencent souvent doucement, avec des échanges sur la santé, la famille et les voyages avant d'aborder le sujet. Aller droit au but peut sembler abrupt.",
+    "de": "Gespräche beginnen oft ruhig mit Smalltalk über Gesundheit, Familie und Reisen, bevor man zur Sache kommt. Direkt zum Geschäft zu kommen kann abrupt wirken."
+   }
+  },
+  {
+   "id": "ct-MA-04",
+   "category": "conversation",
+   "text": {
+    "en": "Many Moroccans enjoy talking about food, football and family. Asking about someone's hometown or region is a friendly way to start a chat.",
+    "it": "A molti marocchini piace parlare di cibo, calcio e famiglia. Chiedere della città o della regione di origine è un modo cordiale per iniziare a chiacchierare.",
+    "es": "A muchos marroquíes les gusta hablar de comida, fútbol y familia. Preguntar por la ciudad o la región de origen es una forma amable de empezar a charlar.",
+    "pt": "Muitos marroquinos gostam de falar de comida, futebol e família. Perguntar pela cidade ou região de origem é uma forma simpática de começar a conversa.",
+    "pt_BR": "Muitos marroquinos gostam de falar sobre comida, futebol e família. Perguntar sobre a cidade ou a região de origem é uma forma simpática de puxar assunto.",
+    "fr": "Beaucoup de Marocains aiment parler de cuisine, de football et de famille. Demander la ville ou la région d'origine est une façon amicale d'engager la conversation.",
+    "de": "Viele Marokkaner sprechen gern über Essen, Fußball und Familie. Nach der Heimatstadt oder Region zu fragen ist ein freundlicher Gesprächseinstieg."
+   }
+  },
+  {
+   "id": "ct-MA-05",
+   "category": "dining",
+   "text": {
+    "en": "Meals are often shared from a central dish, such as couscous or tagine. Eat with your right hand or a spoon, and mostly from the part of the dish in front of you.",
+    "it": "I pasti si condividono spesso da un piatto centrale, come cuscus o tajine. Mangia con la mano destra o con un cucchiaio, soprattutto dalla parte del piatto davanti a te.",
+    "es": "Las comidas se suelen compartir desde un plato central, como el cuscús o el tajín. Come con la mano derecha o con cuchara, sobre todo de la parte del plato que tienes delante.",
+    "pt": "As refeições partilham-se muitas vezes a partir de um prato central, como o cuscuz ou a tajine. Come com a mão direita ou com uma colher, sobretudo da parte do prato à tua frente.",
+    "pt_BR": "As refeições costumam ser compartilhadas a partir de um prato central, como cuscuz ou tajine. Coma com a mão direita ou com uma colher, principalmente da parte do prato à sua frente.",
+    "fr": "Les repas se partagent souvent dans un plat central, comme le couscous ou le tajine. Mange avec la main droite ou une cuillère, surtout dans la partie du plat devant toi.",
+    "de": "Mahlzeiten werden oft aus einer gemeinsamen Schüssel geteilt, etwa Couscous oder Tajine. Iss mit der rechten Hand oder einem Löffel, vor allem von dem Teil, der vor dir liegt."
+   }
+  },
+  {
+   "id": "ct-MA-06",
+   "category": "dining",
+   "text": {
+    "en": "Couscous is traditionally enjoyed on Fridays, the holy day in Islam. If you are invited for Friday lunch, it is a warm sign of welcome.",
+    "it": "Il cuscus si mangia tradizionalmente di venerdì, giorno sacro nell'Islam. Essere invitati a pranzo di venerdì è un caloroso segno di accoglienza.",
+    "es": "El cuscús se come tradicionalmente los viernes, el día sagrado del islam. Si te invitan a comer un viernes, es una cálida muestra de bienvenida.",
+    "pt": "O cuscuz come-se tradicionalmente à sexta-feira, o dia sagrado no Islão. Se fores convidado para almoçar a uma sexta, é um sinal caloroso de boas-vindas.",
+    "pt_BR": "O cuscuz é tradicionalmente comido às sextas-feiras, o dia sagrado no Islã. Se você for convidado para almoçar numa sexta, é um sinal caloroso de boas-vindas.",
+    "fr": "Le couscous se mange traditionnellement le vendredi, jour saint de l'islam. Être invité à déjeuner un vendredi est un signe chaleureux d'accueil.",
+    "de": "Couscous wird traditionell freitags gegessen, dem heiligen Tag im Islam. Eine Einladung zum Freitagsessen ist ein herzliches Zeichen der Gastfreundschaft."
+   }
+  },
+  {
+   "id": "ct-MA-07",
+   "category": "tipping",
+   "text": {
+    "en": "In cafes and restaurants it is common to leave a tip of about 10 percent if service was good. Small coins are also appreciated by guides, porters and parking attendants.",
+    "it": "Nei caffè e nei ristoranti è comune lasciare circa il 10 per cento se il servizio è stato buono. Anche guide, facchini e parcheggiatori apprezzano qualche moneta.",
+    "es": "En cafés y restaurantes es habitual dejar una propina de alrededor del 10 por ciento si el servicio fue bueno. Guías, porteadores y aparcacoches también agradecen unas monedas.",
+    "pt": "Em cafés e restaurantes é comum deixar cerca de 10 por cento de gorjeta se o serviço foi bom. Guias, carregadores e arrumadores de carros também apreciam umas moedas.",
+    "pt_BR": "Em cafés e restaurantes é comum deixar cerca de 10 por cento de gorjeta se o atendimento foi bom. Guias, carregadores e flanelinhas de estacionamento também apreciam algumas moedas.",
+    "fr": "Dans les cafés et restaurants, il est courant de laisser environ 10 pour cent si le service était bon. Les guides, porteurs et gardiens de parking apprécient aussi quelques pièces.",
+    "de": "In Cafés und Restaurants ist es üblich, bei gutem Service etwa 10 Prozent Trinkgeld zu geben. Auch Guides, Gepäckträger und Parkwächter freuen sich über ein paar Münzen."
+   }
+  },
+  {
+   "id": "ct-MA-08",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to a Moroccan home, bring pastries, dates or sweets. Offer the gift with your right hand, or with both hands.",
+    "it": "Se sei invitato in una casa marocchina, porta dolci, datteri o pasticcini. Offri il regalo con la mano destra o con entrambe le mani.",
+    "es": "Si te invitan a una casa marroquí, lleva pasteles, dátiles o dulces. Ofrece el regalo con la mano derecha o con ambas manos.",
+    "pt": "Se fores convidado para uma casa marroquina, leva doces, tâmaras ou pastelaria. Oferece o presente com a mão direita ou com as duas mãos.",
+    "pt_BR": "Se você for convidado para uma casa marroquina, leve doces, tâmaras ou massas. Ofereça o presente com a mão direita ou com as duas mãos.",
+    "fr": "Si tu es invité chez des Marocains, apporte des pâtisseries, des dattes ou des douceurs. Offre le cadeau de la main droite ou des deux mains.",
+    "de": "Wenn du in ein marokkanisches Zuhause eingeladen bist, bring Gebäck, Datteln oder Süßigkeiten mit. Überreiche das Geschenk mit der rechten oder mit beiden Händen."
+   }
+  },
+  {
+   "id": "ct-MA-09",
+   "category": "dress",
+   "text": {
+    "en": "Modest clothing is appreciated, especially outside big tourist areas. Covering shoulders and knees is a respectful choice for both men and women.",
+    "it": "Un abbigliamento sobrio è apprezzato, soprattutto fuori dalle grandi zone turistiche. Coprire spalle e ginocchia è una scelta rispettosa per uomini e donne.",
+    "es": "Se agradece la ropa discreta, sobre todo fuera de las grandes zonas turísticas. Cubrir hombros y rodillas es una elección respetuosa para hombres y mujeres.",
+    "pt": "Valoriza-se a roupa discreta, sobretudo fora das grandes zonas turísticas. Cobrir ombros e joelhos é uma escolha respeitosa para homens e mulheres.",
+    "pt_BR": "Roupas discretas são valorizadas, principalmente fora das grandes áreas turísticas. Cobrir ombros e joelhos é uma escolha respeitosa para homens e mulheres.",
+    "fr": "Une tenue modeste est appréciée, surtout en dehors des grandes zones touristiques. Couvrir épaules et genoux est un choix respectueux pour les hommes comme pour les femmes.",
+    "de": "Dezente Kleidung wird geschätzt, besonders abseits der großen Touristengebiete. Schultern und Knie zu bedecken ist für Männer und Frauen eine respektvolle Wahl."
+   }
+  },
+  {
+   "id": "ct-MA-10",
+   "category": "dress",
+   "text": {
+    "en": "The djellaba, a long hooded garment, is traditional dress for men and women. Many Moroccans wear it for Friday prayers and family occasions.",
+    "it": "La djellaba, un lungo abito con cappuccio, è l'abito tradizionale per uomini e donne. Molti marocchini la indossano per la preghiera del venerdì e nelle occasioni di famiglia.",
+    "es": "La chilaba, una prenda larga con capucha, es el traje tradicional de hombres y mujeres. Muchos marroquíes la llevan para la oración del viernes y en ocasiones familiares.",
+    "pt": "A djellaba, uma veste comprida com capuz, é o traje tradicional de homens e mulheres. Muitos marroquinos usam-na na oração de sexta-feira e em ocasiões de família.",
+    "pt_BR": "A djellaba, uma veste longa com capuz, é o traje tradicional de homens e mulheres. Muitos marroquinos a usam na oração de sexta-feira e em ocasiões de família.",
+    "fr": "La djellaba, un long vêtement à capuche, est la tenue traditionnelle des hommes et des femmes. Beaucoup de Marocains la portent pour la prière du vendredi et les fêtes de famille.",
+    "de": "Die Dschellaba, ein langes Gewand mit Kapuze, ist die traditionelle Kleidung für Männer und Frauen. Viele Marokkaner tragen sie zum Freitagsgebet und zu Familienfesten."
+   }
+  },
+  {
+   "id": "ct-MA-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Islam is the official religion, and daily life follows its rhythm. Many shops and offices slow down around Friday midday prayer.",
+    "it": "L'Islam è la religione ufficiale e la vita quotidiana ne segue il ritmo. Molti negozi e uffici rallentano intorno alla preghiera del venerdì a mezzogiorno.",
+    "es": "El islam es la religión oficial y la vida diaria sigue su ritmo. Muchas tiendas y oficinas reducen la actividad durante la oración del mediodía del viernes.",
+    "pt": "O Islão é a religião oficial e o dia a dia segue o seu ritmo. Muitas lojas e escritórios abrandam por volta da oração de sexta-feira ao meio-dia.",
+    "pt_BR": "O Islã é a religião oficial e o dia a dia segue o seu ritmo. Muitas lojas e escritórios desaceleram por volta da oração de sexta-feira ao meio-dia.",
+    "fr": "L'islam est la religion officielle et la vie quotidienne suit son rythme. Beaucoup de commerces et de bureaux ralentissent autour de la prière du vendredi midi.",
+    "de": "Der Islam ist Staatsreligion, und der Alltag folgt seinem Rhythmus. Viele Geschäfte und Büros fahren rund um das Freitagsmittagsgebet ihren Betrieb herunter."
+   }
+  },
+  {
+   "id": "ct-MA-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "Most mosques are closed to non-Muslims, but the Hassan II Mosque in Casablanca offers guided visits. Dress modestly and follow your guide's instructions.",
+    "it": "La maggior parte delle moschee è chiusa ai non musulmani, ma la Moschea Hassan II di Casablanca offre visite guidate. Vesti in modo sobrio e segui le indicazioni della guida.",
+    "es": "La mayoría de las mezquitas están cerradas a los no musulmanes, pero la Mezquita Hassan II de Casablanca ofrece visitas guiadas. Viste con modestia y sigue las indicaciones del guía.",
+    "pt": "A maioria das mesquitas está fechada a não muçulmanos, mas a Mesquita Hassan II, em Casablanca, oferece visitas guiadas. Veste-te com discrição e segue as indicações do guia.",
+    "pt_BR": "A maioria das mesquitas é fechada a não muçulmanos, mas a Mesquita Hassan II, em Casablanca, oferece visitas guiadas. Vista-se com discrição e siga as orientações do guia.",
+    "fr": "La plupart des mosquées sont fermées aux non-musulmans, mais la mosquée Hassan II de Casablanca propose des visites guidées. Habille-toi sobrement et suis les consignes du guide.",
+    "de": "Die meisten Moscheen sind für Nichtmuslime geschlossen, aber die Hassan-II.-Moschee in Casablanca bietet Führungen an. Kleide dich dezent und folge den Anweisungen des Guides."
+   }
+  },
+  {
+   "id": "ct-MA-13",
+   "category": "gestures",
+   "text": {
+    "en": "Use your right hand for eating, passing items and giving money. Pointing the soles of your feet at someone is considered impolite.",
+    "it": "Usa la mano destra per mangiare, passare oggetti e dare denaro. Puntare le piante dei piedi verso qualcuno è considerato scortese.",
+    "es": "Usa la mano derecha para comer, pasar objetos y dar dinero. Apuntar con las plantas de los pies hacia alguien se considera descortés.",
+    "pt": "Usa a mão direita para comer, passar objetos e dar dinheiro. Apontar a sola dos pés para alguém é considerado indelicado.",
+    "pt_BR": "Use a mão direita para comer, passar objetos e dar dinheiro. Apontar a sola dos pés para alguém é considerado indelicado.",
+    "fr": "Utilise la main droite pour manger, passer des objets et donner de l'argent. Pointer la plante des pieds vers quelqu'un est considéré comme impoli.",
+    "de": "Benutze die rechte Hand zum Essen, zum Weiterreichen von Gegenständen und zum Bezahlen. Jemandem die Fußsohlen entgegenzustrecken gilt als unhöflich."
+   }
+  },
+  {
+   "id": "ct-MA-14",
+   "category": "gestures",
+   "text": {
+    "en": "Putting your hand on your heart after a handshake or when declining an offer is a common, warm gesture. It shows sincerity and thanks.",
+    "it": "Portare la mano al cuore dopo una stretta di mano o quando si rifiuta un'offerta è un gesto comune e caloroso. Esprime sincerità e gratitudine.",
+    "es": "Llevarse la mano al corazón tras un apretón de manos o al rechazar una oferta es un gesto común y cálido. Expresa sinceridad y agradecimiento.",
+    "pt": "Levar a mão ao coração depois de um aperto de mão ou ao recusar uma oferta é um gesto comum e caloroso. Mostra sinceridade e agradecimento.",
+    "pt_BR": "Levar a mão ao coração depois de um aperto de mão ou ao recusar uma oferta é um gesto comum e caloroso. Mostra sinceridade e gratidão.",
+    "fr": "Poser la main sur le cœur après une poignée de main ou pour refuser poliment une offre est un geste courant et chaleureux. Il exprime sincérité et remerciement.",
+    "de": "Die Hand aufs Herz zu legen, nach einem Händedruck oder beim Ablehnen eines Angebots, ist eine übliche, herzliche Geste. Sie drückt Aufrichtigkeit und Dank aus."
+   }
+  },
+  {
+   "id": "ct-MA-15",
+   "category": "punctuality",
+   "text": {
+    "en": "For business meetings, arriving on time is expected. For social visits, hosts often have a relaxed sense of time, so a small delay is usually fine.",
+    "it": "Per le riunioni di lavoro è previsto arrivare in orario. Per le visite sociali, chi ospita ha spesso un rapporto flessibile con il tempo, quindi un piccolo ritardo di solito va bene.",
+    "es": "En las reuniones de trabajo se espera puntualidad. En las visitas sociales, los anfitriones suelen tener una noción flexible del tiempo, así que un pequeño retraso suele estar bien.",
+    "pt": "Nas reuniões de trabalho espera-se pontualidade. Nas visitas sociais, os anfitriões costumam ter uma noção flexível do tempo, por isso um pequeno atraso costuma ser aceitável.",
+    "pt_BR": "Em reuniões de trabalho espera-se pontualidade. Em visitas sociais, os anfitriões costumam ter uma noção flexível de tempo, então um pequeno atraso geralmente é aceitável.",
+    "fr": "Pour les réunions professionnelles, la ponctualité est attendue. Pour les visites entre amis, les hôtes ont souvent un rapport souple au temps, un petit retard passe donc généralement bien.",
+    "de": "Bei Geschäftsterminen wird Pünktlichkeit erwartet. Bei privaten Besuchen sind Gastgeber oft locker mit der Zeit, eine kleine Verspätung ist meist in Ordnung."
+   }
+  },
+  {
+   "id": "ct-MA-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "Public displays of affection are generally kept discreet in Morocco. Keeping a calm, polite tone in public is valued.",
+    "it": "In Marocco le manifestazioni di affetto in pubblico sono in genere discrete. Mantenere un tono calmo e cortese in pubblico è apprezzato.",
+    "es": "En Marruecos las muestras de afecto en público suelen ser discretas. Se valora mantener un tono tranquilo y educado en público.",
+    "pt": "Em Marrocos, as demonstrações de afeto em público costumam ser discretas. Valoriza-se manter um tom calmo e cortês em público.",
+    "pt_BR": "No Marrocos, demonstrações de afeto em público costumam ser discretas. Manter um tom calmo e educado em público é valorizado.",
+    "fr": "Au Maroc, les démonstrations d'affection en public restent généralement discrètes. Garder un ton calme et poli en public est apprécié.",
+    "de": "In Marokko hält man Zärtlichkeiten in der Öffentlichkeit meist dezent. Ein ruhiger, höflicher Ton in der Öffentlichkeit wird geschätzt."
+   }
+  },
+  {
+   "id": "ct-MA-17",
+   "category": "public_behavior",
+   "text": {
+    "en": "In the souks, bargaining is part of the culture. Keep it friendly and smiling, and do not start haggling unless you really intend to buy.",
+    "it": "Nei suk contrattare fa parte della cultura. Fallo con gentilezza e sorrisi, e non iniziare a trattare se non hai davvero intenzione di comprare.",
+    "es": "En los zocos, regatear forma parte de la cultura. Hazlo con amabilidad y una sonrisa, y no empieces a negociar si no piensas comprar de verdad.",
+    "pt": "Nos souks, regatear faz parte da cultura. Faz-lo com simpatia e um sorriso, e não comeces a negociar se não tiveres mesmo intenção de comprar.",
+    "pt_BR": "Nos souks, pechinchar faz parte da cultura. Faça isso com simpatia e um sorriso, e não comece a negociar se não tiver mesmo a intenção de comprar.",
+    "fr": "Dans les souks, marchander fait partie de la culture. Reste aimable et souriant, et ne commence pas à négocier si tu n'as pas vraiment l'intention d'acheter.",
+    "de": "In den Souks gehört Handeln zur Kultur. Bleib freundlich und lächelnd, und fang nur an zu feilschen, wenn du wirklich kaufen willst."
+   }
+  },
+  {
+   "id": "ct-MA-18",
+   "category": "transport",
+   "text": {
+    "en": "Petit taxis are small city taxis with meters; ask the driver to turn it on. Grands taxis are shared cars on fixed routes between towns.",
+    "it": "I petit taxi sono piccoli taxi urbani con tassametro: chiedi all'autista di accenderlo. I grands taxis sono auto condivise su percorsi fissi tra le città.",
+    "es": "Los petit taxis son taxis urbanos pequeños con taxímetro; pide al conductor que lo ponga en marcha. Los grands taxis son coches compartidos con rutas fijas entre ciudades.",
+    "pt": "Os petit taxis são pequenos táxis urbanos com taxímetro; pede ao condutor que o ligue. Os grands taxis são carros partilhados com percursos fixos entre cidades.",
+    "pt_BR": "Os petit taxis são pequenos táxis urbanos com taxímetro; peça ao motorista que o ligue. Os grands taxis são carros compartilhados com rotas fixas entre cidades.",
+    "fr": "Les petits taxis sont de petits taxis urbains avec compteur ; demande au chauffeur de l'allumer. Les grands taxis sont des voitures partagées sur des trajets fixes entre villes.",
+    "de": "Petit Taxis sind kleine Stadttaxis mit Taxameter; bitte den Fahrer, es einzuschalten. Grands Taxis sind Sammeltaxis auf festen Strecken zwischen Städten."
+   }
+  },
+  {
+   "id": "ct-MA-19",
+   "category": "transport",
+   "text": {
+    "en": "The Al Boraq high-speed train links Tangier and Casablanca, and the regular rail network connects many major cities. Buying tickets in advance is a good idea at busy times.",
+    "it": "Il treno ad alta velocità Al Boraq collega Tangeri e Casablanca, e la rete ferroviaria ordinaria unisce molte grandi città. Nei periodi di punta conviene comprare i biglietti in anticipo.",
+    "es": "El tren de alta velocidad Al Boraq une Tánger y Casablanca, y la red ferroviaria convencional conecta muchas ciudades importantes. Conviene comprar los billetes con antelación en épocas de mucha demanda.",
+    "pt": "O comboio de alta velocidade Al Boraq liga Tânger a Casablanca, e a rede ferroviária convencional liga muitas cidades importantes. Em épocas de maior procura, convém comprar os bilhetes com antecedência.",
+    "pt_BR": "O trem de alta velocidade Al Boraq liga Tânger a Casablanca, e a rede ferroviária comum conecta muitas cidades importantes. Em épocas de muita procura, vale comprar as passagens com antecedência.",
+    "fr": "Le train à grande vitesse Al Boraq relie Tanger et Casablanca, et le réseau ferroviaire classique dessert de nombreuses grandes villes. En période d'affluence, mieux vaut acheter ses billets à l'avance.",
+    "de": "Der Hochgeschwindigkeitszug Al Boraq verbindet Tanger und Casablanca, und das normale Bahnnetz verbindet viele größere Städte. In Stoßzeiten lohnt es sich, Tickets früh zu kaufen."
+   }
+  },
+  {
+   "id": "ct-MA-20",
+   "category": "language",
+   "text": {
+    "en": "Moroccan Arabic, called Darija, is the everyday language, and Amazigh (Berber) languages are also widely spoken. French is common in business and education.",
+    "it": "L'arabo marocchino, detto darija, è la lingua di tutti i giorni, e sono molto parlate anche le lingue amazigh (berbere). Il francese è diffuso negli affari e nell'istruzione.",
+    "es": "El árabe marroquí, llamado darija, es la lengua cotidiana, y las lenguas amazigh (bereberes) también se hablan mucho. El francés es habitual en los negocios y la educación.",
+    "pt": "O árabe marroquino, chamado darija, é a língua do dia a dia, e as línguas amazigh (berberes) também são muito faladas. O francês é comum nos negócios e na educação.",
+    "pt_BR": "O árabe marroquino, chamado darija, é a língua do dia a dia, e as línguas amazigh (berberes) também são muito faladas. O francês é comum nos negócios e na educação.",
+    "fr": "L'arabe marocain, appelé darija, est la langue du quotidien, et les langues amazighes (berbères) sont aussi très parlées. Le français est courant dans les affaires et l'éducation.",
+    "de": "Marokkanisches Arabisch, genannt Darija, ist die Alltagssprache, und auch amazighische (berberische) Sprachen sind weit verbreitet. Französisch ist im Geschäftsleben und in der Bildung üblich."
+   }
+  },
+  {
+   "id": "ct-MA-21",
+   "category": "language",
+   "text": {
+    "en": "Learning a few words like \"shukran\" (thank you) and \"afak\" (please) in Darija earns smiles. Even a clumsy attempt is appreciated.",
+    "it": "Imparare qualche parola in darija come \"shukran\" (grazie) e \"afak\" (per favore) fa sorridere. Anche un tentativo goffo è apprezzato.",
+    "es": "Aprender unas palabras en darija como \"shukran\" (gracias) y \"afak\" (por favor) arranca sonrisas. Hasta un intento torpe se agradece.",
+    "pt": "Aprender algumas palavras em darija, como \"shukran\" (obrigado) e \"afak\" (por favor), arranca sorrisos. Até uma tentativa desajeitada é apreciada.",
+    "pt_BR": "Aprender algumas palavras em darija, como \"shukran\" (obrigado) e \"afak\" (por favor), arranca sorrisos. Até uma tentativa desajeitada é apreciada.",
+    "fr": "Apprendre quelques mots de darija comme \"shukran\" (merci) et \"afak\" (s'il te plaît) fait sourire. Même une tentative maladroite est appréciée.",
+    "de": "Ein paar Wörter Darija wie \"shukran\" (danke) und \"afak\" (bitte) zaubern ein Lächeln hervor. Selbst ein holpriger Versuch wird geschätzt."
+   }
+  },
+  {
+   "id": "ct-MA-22",
+   "category": "festivals",
+   "text": {
+    "en": "During Ramadan, Muslims fast from dawn to sunset, and evenings are filled with family meals called iftar. Visitors are advised not to eat or drink openly in public during the day.",
+    "it": "Durante il Ramadan i musulmani digiunano dall'alba al tramonto, e le serate si riempiono di pasti in famiglia chiamati iftar. Ai visitatori si consiglia di non mangiare o bere apertamente in pubblico di giorno.",
+    "es": "Durante el Ramadán, los musulmanes ayunan del amanecer al atardecer, y las noches se llenan de comidas familiares llamadas iftar. A los visitantes se les aconseja no comer ni beber abiertamente en público durante el día.",
+    "pt": "Durante o Ramadão, os muçulmanos jejuam do amanhecer ao pôr do sol, e as noites enchem-se de refeições em família chamadas iftar. Aconselha-se os visitantes a não comer nem beber abertamente em público durante o dia.",
+    "pt_BR": "Durante o Ramadã, os muçulmanos jejuam do amanhecer ao pôr do sol, e as noites se enchem de refeições em família chamadas iftar. Aconselha-se aos visitantes não comer nem beber abertamente em público durante o dia.",
+    "fr": "Pendant le ramadan, les musulmans jeûnent de l'aube au coucher du soleil, et les soirées se remplissent de repas en famille appelés iftar. Il est conseillé aux visiteurs de ne pas manger ni boire ostensiblement en public le jour.",
+    "de": "Im Ramadan fasten Muslime von der Morgendämmerung bis zum Sonnenuntergang, und die Abende füllen sich mit Familienessen, dem Iftar. Besuchern wird geraten, tagsüber nicht offen in der Öffentlichkeit zu essen oder zu trinken."
+   }
+  },
+  {
+   "id": "ct-MA-23",
+   "category": "festivals",
+   "text": {
+    "en": "Yennayer, the Amazigh New Year, is celebrated around 12 to 13 January with communal dishes such as couscous. Eid al-Adha is another major holiday, often followed by folk carnivals in some regions.",
+    "it": "Yennayer, il capodanno amazigh, si celebra intorno al 12-13 gennaio con piatti conviviali come il cuscus. L'Eid al-Adha è un'altra grande festa, spesso seguita da carnevali popolari in alcune regioni.",
+    "es": "Yennayer, el Año Nuevo amazigh, se celebra hacia el 12 o 13 de enero con platos compartidos como el cuscús. El Eid al-Adha es otra gran fiesta, a la que en algunas regiones siguen carnavales populares.",
+    "pt": "O Yennayer, o Ano Novo amazigh, celebra-se por volta de 12 e 13 de janeiro com pratos partilhados como o cuscuz. O Eid al-Adha é outra grande festa, muitas vezes seguida de carnavais populares em algumas regiões.",
+    "pt_BR": "O Yennayer, o Ano Novo amazigh, é celebrado por volta de 12 e 13 de janeiro com pratos compartilhados como o cuscuz. O Eid al-Adha é outra grande festa, muitas vezes seguida de carnavais populares em algumas regiões.",
+    "fr": "Yennayer, le Nouvel An amazigh, se fête vers le 12 ou 13 janvier avec des plats partagés comme le couscous. L'Aïd al-Adha est une autre grande fête, souvent suivie de carnavals populaires dans certaines régions.",
+    "de": "Yennayer, das amazighische Neujahr, wird um den 12. und 13. Januar mit gemeinsamen Gerichten wie Couscous gefeiert. Das Opferfest Eid al-Adha ist ein weiterer großer Feiertag, auf den in manchen Regionen Volkskarnevale folgen."
+   }
+  },
+  {
+   "id": "ct-MA-24",
+   "category": "family",
+   "text": {
+    "en": "Family is central in Moroccan life, and generations often live close together. Asking about someone's family shows warmth and respect.",
+    "it": "La famiglia è centrale nella vita marocchina e le generazioni vivono spesso vicine. Chiedere della famiglia di qualcuno dimostra calore e rispetto.",
+    "es": "La familia es central en la vida marroquí y las generaciones suelen vivir cerca unas de otras. Preguntar por la familia de alguien muestra calidez y respeto.",
+    "pt": "A família é central na vida marroquina e as gerações vivem muitas vezes perto umas das outras. Perguntar pela família de alguém demonstra carinho e respeito.",
+    "pt_BR": "A família é central na vida marroquina e as gerações costumam morar perto umas das outras. Perguntar pela família de alguém demonstra carinho e respeito.",
+    "fr": "La famille est au cœur de la vie marocaine et les générations vivent souvent proches les unes des autres. Demander des nouvelles de la famille montre chaleur et respect.",
+    "de": "Die Familie steht im Zentrum des marokkanischen Lebens, und mehrere Generationen wohnen oft nah beieinander. Nach der Familie zu fragen zeigt Wärme und Respekt."
+   }
+  },
+  {
+   "id": "ct-MA-25",
+   "category": "money",
+   "text": {
+    "en": "The currency is the Moroccan dirham. Cash is common in markets and small shops, so carry small notes and coins for taxis and tips.",
+    "it": "La valuta è il dirham marocchino. Il contante è diffuso nei mercati e nei piccoli negozi, quindi porta banconote e monete di piccolo taglio per taxi e mance.",
+    "es": "La moneda es el dírham marroquí. El efectivo es habitual en mercados y tiendas pequeñas, así que lleva billetes y monedas pequeños para taxis y propinas.",
+    "pt": "A moeda é o dirham marroquino. O dinheiro vivo é comum nos mercados e nas lojas pequenas, por isso leva notas e moedas pequenas para táxis e gorjetas.",
+    "pt_BR": "A moeda é o dirham marroquino. O dinheiro em espécie é comum em mercados e lojas pequenas, então leve notas e moedas pequenas para táxis e gorjetas.",
+    "fr": "La monnaie est le dirham marocain. Les espèces sont courantes dans les marchés et les petites boutiques ; prends donc des petites coupures et pièces pour les taxis et les pourboires.",
+    "de": "Die Währung ist der marokkanische Dirham. Auf Märkten und in kleinen Läden zahlt man oft bar, also nimm kleine Scheine und Münzen für Taxis und Trinkgeld mit."
+   }
+  },
+  {
+   "id": "ct-MA-26",
+   "category": "photography",
+   "text": {
+    "en": "Always ask before photographing people, especially women and elders, as some prefer not to be photographed. Avoid photographing military sites and police.",
+    "it": "Chiedi sempre prima di fotografare le persone, soprattutto donne e anziani, perché alcuni preferiscono non essere fotografati. Evita di fotografare siti militari e forze di polizia.",
+    "es": "Pregunta siempre antes de fotografiar a las personas, sobre todo a mujeres y mayores, porque algunas prefieren no ser fotografiadas. Evita fotografiar instalaciones militares y a la policía.",
+    "pt": "Pergunta sempre antes de fotografar pessoas, sobretudo mulheres e idosos, porque alguns preferem não ser fotografados. Evita fotografar instalações militares e a polícia.",
+    "pt_BR": "Sempre pergunte antes de fotografar pessoas, principalmente mulheres e idosos, porque alguns preferem não ser fotografados. Evite fotografar instalações militares e a polícia.",
+    "fr": "Demande toujours avant de photographier des personnes, surtout des femmes et des personnes âgées, car certaines préfèrent ne pas être prises en photo. Évite de photographier les sites militaires et la police.",
+    "de": "Frag immer, bevor du Menschen fotografierst, besonders Frauen und ältere Personen, denn manche möchten nicht fotografiert werden. Vermeide Fotos von Militäranlagen und Polizei."
+   }
+  },
+  {
+   "id": "ct-MA-27",
+   "category": "nightlife",
+   "text": {
+    "en": "Evenings in Morocco often revolve around cafes, mint tea and strolls in the main squares, such as Jemaa el-Fna in Marrakech. Late-night social life is lively, especially in summer.",
+    "it": "Le serate in Marocco ruotano spesso attorno a caffè, tè alla menta e passeggiate nelle piazze principali, come Jemaa el-Fna a Marrakech. La vita sociale notturna è vivace, soprattutto d'estate.",
+    "es": "Las noches en Marruecos suelen girar en torno a cafés, té de menta y paseos por las plazas principales, como Jemaa el-Fna en Marrakech. La vida social nocturna es animada, sobre todo en verano.",
+    "pt": "As noites em Marrocos giram muitas vezes em torno de cafés, chá de menta e passeios nas praças principais, como a Jemaa el-Fna, em Marraquexe. A vida social noturna é animada, sobretudo no verão.",
+    "pt_BR": "As noites no Marrocos costumam girar em torno de cafés, chá de menta e passeios nas praças principais, como a Jemaa el-Fna, em Marrakech. A vida social noturna é animada, principalmente no verão.",
+    "fr": "Les soirées au Maroc tournent souvent autour des cafés, du thé à la menthe et des promenades sur les grandes places, comme Jemaa el-Fna à Marrakech. La vie sociale nocturne est animée, surtout en été.",
+    "de": "Abende in Marokko drehen sich oft um Cafés, Minztee und Spaziergänge über die großen Plätze, etwa den Jemaa el-Fna in Marrakesch. Das gesellige Nachtleben ist lebhaft, besonders im Sommer."
+   }
+  },
+  {
+   "id": "ct-MA-28",
+   "category": "nature",
+   "text": {
+    "en": "Morocco offers the Atlas Mountains, Atlantic beaches and the Sahara. For treks in the mountains or desert, go with a local guide and carry plenty of water.",
+    "it": "Il Marocco offre le montagne dell'Atlante, spiagge atlantiche e il Sahara. Per le escursioni in montagna o nel deserto, vai con una guida locale e porta molta acqua.",
+    "es": "Marruecos ofrece el Atlas, playas atlánticas y el Sáhara. Para excursiones por la montaña o el desierto, ve con un guía local y lleva mucha agua.",
+    "pt": "Marrocos tem as montanhas do Atlas, praias atlânticas e o Saara. Para caminhadas na montanha ou no deserto, vai com um guia local e leva muita água.",
+    "pt_BR": "O Marrocos tem as montanhas do Atlas, praias atlânticas e o Saara. Para caminhadas na montanha ou no deserto, vá com um guia local e leve bastante água.",
+    "fr": "Le Maroc offre l'Atlas, des plages atlantiques et le Sahara. Pour les randonnées en montagne ou dans le désert, pars avec un guide local et emporte beaucoup d'eau.",
+    "de": "Marokko bietet das Atlasgebirge, Atlantikstrände und die Sahara. Für Touren in den Bergen oder in der Wüste geh mit einem lokalen Guide und nimm viel Wasser mit."
+   }
+  },
+  {
+   "id": "ct-MA-29",
+   "category": "safety",
+   "text": {
+    "en": "In medinas, unofficial guides may offer help and then ask for payment. A friendly but firm \"no, thank you\" is fine, and agreeing on a price in advance avoids misunderstandings.",
+    "it": "Nelle medine, guide non ufficiali possono offrire aiuto e poi chiedere un compenso. Un \"no, grazie\" gentile ma deciso va bene, e accordarsi sul prezzo in anticipo evita malintesi.",
+    "es": "En las medinas, guías no oficiales pueden ofrecer ayuda y luego pedir dinero. Un \"no, gracias\" amable pero firme está bien, y acordar el precio de antemano evita malentendidos.",
+    "pt": "Nas medinas, guias não oficiais podem oferecer ajuda e depois pedir pagamento. Um \"não, obrigado\" simpático mas firme é aceitável, e combinar o preço antes evita mal-entendidos.",
+    "pt_BR": "Nas medinas, guias não oficiais podem oferecer ajuda e depois pedir pagamento. Um \"não, obrigado\" simpático mas firme é aceitável, e combinar o preço antes evita mal-entendidos.",
+    "fr": "Dans les médinas, des guides non officiels peuvent proposer leur aide puis demander de l'argent. Un \"non, merci\" aimable mais ferme convient, et convenir du prix à l'avance évite les malentendus.",
+    "de": "In den Medinen bieten inoffizielle Guides manchmal Hilfe an und verlangen dann Geld. Ein freundliches, aber bestimmtes \"Nein, danke\" ist völlig in Ordnung, und einen Preis vorab zu vereinbaren verhindert Missverständnisse."
+   }
+  },
+  {
+   "id": "ct-MA-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Moroccans are proud of their crafts, such as zellij mosaic tilework, leather from Fez and argan oil. Showing interest in how things are made is a great way to connect.",
+    "it": "I marocchini sono orgogliosi del loro artigianato, come i mosaici zellij, la pelle di Fez e l'olio di argan. Mostrare interesse per come vengono fatte le cose è un ottimo modo per creare un legame.",
+    "es": "Los marroquíes están orgullosos de su artesanía, como los mosaicos zellij, el cuero de Fez y el aceite de argán. Mostrar interés por cómo se hacen las cosas es una gran forma de conectar.",
+    "pt": "Os marroquinos têm orgulho do seu artesanato, como os mosaicos zellij, o couro de Fez e o óleo de argão. Mostrar interesse em como as coisas são feitas é uma ótima forma de criar ligação.",
+    "pt_BR": "Os marroquinos têm orgulho do seu artesanato, como os mosaicos zellij, o couro de Fez e o óleo de argan. Mostrar interesse em como as coisas são feitas é uma ótima forma de criar conexão.",
+    "fr": "Les Marocains sont fiers de leur artisanat, comme les mosaïques zellige, le cuir de Fès et l'huile d'argan. Montrer de l'intérêt pour la façon dont les choses sont fabriquées est une belle manière de créer du lien.",
+    "de": "Marokkaner sind stolz auf ihr Handwerk, etwa Zellige-Mosaike, Leder aus Fès und Arganöl. Interesse daran zu zeigen, wie die Dinge hergestellt werden, ist eine schöne Möglichkeit, Kontakt aufzubauen."
+   }
+  }
+ ],
+ "MC": [
+  {
+   "id": "ct-MC-01",
+   "category": "greetings",
+   "text": {
+    "en": "In Monaco, a handshake is the standard greeting in formal settings. Among friends, French-style cheek kisses (la bise) are common.",
+    "it": "A Monaco la stretta di mano è il saluto standard nei contesti formali. Tra amici sono comuni i baci sulle guance alla francese (la bise).",
+    "es": "En Mónaco, el apretón de manos es el saludo habitual en contextos formales. Entre amigos son comunes los besos en las mejillas a la francesa (la bise).",
+    "pt": "No Mónaco, o aperto de mão é a saudação habitual em contextos formais. Entre amigos são comuns os beijinhos na face à francesa (la bise).",
+    "pt_BR": "Em Mônaco, o aperto de mão é a saudação padrão em contextos formais. Entre amigos são comuns os beijinhos no rosto à francesa (la bise).",
+    "fr": "À Monaco, la poignée de main est la salutation habituelle dans les cadres formels. Entre amis, la bise est courante.",
+    "de": "In Monaco ist der Handschlag die übliche Begrüßung im formellen Rahmen. Unter Freunden sind Wangenküsse nach französischer Art (la bise) üblich."
+   }
+  },
+  {
+   "id": "ct-MC-02",
+   "category": "greetings",
+   "text": {
+    "en": "Starting with \"Bonjour\" when entering a shop, cafe or lift is expected. Skipping the greeting can come across as rude.",
+    "it": "Dire \"Bonjour\" entrando in un negozio, un bar o un ascensore è la norma. Omettere il saluto può sembrare maleducato.",
+    "es": "Decir \"Bonjour\" al entrar en una tienda, un café o un ascensor es lo esperado. Omitir el saludo puede parecer descortés.",
+    "pt": "Dizer \"Bonjour\" ao entrar numa loja, num café ou num elevador é o esperado. Omitir a saudação pode parecer indelicado.",
+    "pt_BR": "Dizer \"Bonjour\" ao entrar em uma loja, um café ou um elevador é o esperado. Deixar de cumprimentar pode parecer indelicado.",
+    "fr": "Dire \"Bonjour\" en entrant dans un magasin, un café ou un ascenseur est de rigueur. Omettre la salutation peut paraître impoli.",
+    "de": "Beim Betreten eines Geschäfts, Cafés oder Aufzugs wird ein \"Bonjour\" erwartet. Ein fehlender Gruß kann unhöflich wirken."
+   }
+  },
+  {
+   "id": "ct-MC-03",
+   "category": "conversation",
+   "text": {
+    "en": "Residents tend to value privacy and discretion. Questions about income, property or someone's job are best avoided with new acquaintances.",
+    "it": "Chi vive a Monaco tende ad apprezzare riservatezza e discrezione. Con i nuovi conoscenti è meglio evitare domande su reddito, proprietà o lavoro.",
+    "es": "Los residentes suelen valorar la privacidad y la discreción. Con conocidos nuevos es mejor evitar preguntas sobre ingresos, propiedades o trabajo.",
+    "pt": "Os residentes tendem a valorizar a privacidade e a discrição. Com novos conhecidos, é melhor evitar perguntas sobre rendimentos, propriedades ou profissão.",
+    "pt_BR": "Os moradores tendem a valorizar a privacidade e a discrição. Com novos conhecidos, é melhor evitar perguntas sobre renda, patrimônio ou profissão.",
+    "fr": "Les résidents tiennent généralement à leur vie privée et à la discrétion. Avec de nouvelles connaissances, mieux vaut éviter les questions sur les revenus, le patrimoine ou le métier.",
+    "de": "Bewohner schätzen meist Privatsphäre und Diskretion. Bei neuen Bekanntschaften sollte man Fragen zu Einkommen, Besitz oder Beruf besser vermeiden."
+   }
+  },
+  {
+   "id": "ct-MC-04",
+   "category": "conversation",
+   "text": {
+    "en": "Safe and friendly topics include the sea, the Grand Prix, cuisine and the Mediterranean climate. Many people enjoy hearing what visitors think of the principality.",
+    "it": "Argomenti sicuri e cordiali sono il mare, il Gran Premio, la cucina e il clima mediterraneo. A molti fa piacere sapere cosa pensano i visitatori del Principato.",
+    "es": "Temas seguros y amables son el mar, el Gran Premio, la gastronomía y el clima mediterráneo. A muchos les gusta saber qué piensan los visitantes del principado.",
+    "pt": "Temas seguros e simpáticos são o mar, o Grande Prémio, a gastronomia e o clima mediterrânico. Muita gente gosta de saber o que os visitantes pensam do principado.",
+    "pt_BR": "Assuntos seguros e simpáticos são o mar, o Grande Prêmio, a gastronomia e o clima mediterrâneo. Muita gente gosta de saber o que os visitantes acham do principado.",
+    "fr": "Des sujets sûrs et agréables sont la mer, le Grand Prix, la cuisine et le climat méditerranéen. Beaucoup aiment savoir ce que les visiteurs pensent de la principauté.",
+    "de": "Unverfängliche, freundliche Themen sind das Meer, der Grand Prix, die Küche und das Mittelmeerklima. Viele hören gern, was Besucher vom Fürstentum halten."
+   }
+  },
+  {
+   "id": "ct-MC-05",
+   "category": "dining",
+   "text": {
+    "en": "Restaurant cuisine blends French and Italian influences. Lunch is usually served from about noon to 2 pm, and dinner tends to start fairly late in the evening.",
+    "it": "La cucina dei ristoranti unisce influenze francesi e italiane. Il pranzo si serve di solito da mezzogiorno alle 14 circa e la cena tende a cominciare piuttosto tardi.",
+    "es": "La cocina de los restaurantes mezcla influencias francesas e italianas. El almuerzo suele servirse de mediodía a las 14:00 aproximadamente, y la cena tiende a empezar bastante tarde.",
+    "pt": "A cozinha dos restaurantes mistura influências francesas e italianas. O almoço costuma servir-se do meio-dia às 14h, e o jantar tende a começar bastante tarde.",
+    "pt_BR": "A cozinha dos restaurantes mistura influências francesas e italianas. O almoço costuma ser servido do meio-dia às 14h, e o jantar tende a começar bem tarde.",
+    "fr": "La cuisine des restaurants mêle influences françaises et italiennes. Le déjeuner se sert en général de midi à 14 h environ, et le dîner commence plutôt tard.",
+    "de": "Die Restaurantküche mischt französische und italienische Einflüsse. Mittagessen gibt es meist von etwa 12 bis 14 Uhr, das Abendessen beginnt eher spät."
+   }
+  },
+  {
+   "id": "ct-MC-06",
+   "category": "dining",
+   "text": {
+    "en": "Keep your hands visible on the table and wait for everyone to be served before starting. Asking for the bill with \"L'addition, s'il vous plaît\" is normal, since it is rarely brought unprompted.",
+    "it": "Tieni le mani visibili sul tavolo e aspetta che tutti siano serviti prima di iniziare. Chiedere il conto con \"L'addition, s'il vous plaît\" è normale, perché di rado viene portato senza richiesta.",
+    "es": "Mantén las manos visibles sobre la mesa y espera a que todos estén servidos antes de empezar. Pedir la cuenta con \"L'addition, s'il vous plaît\" es normal, ya que rara vez la traen sin pedirla.",
+    "pt": "Mantém as mãos visíveis sobre a mesa e espera que todos sejam servidos antes de começar. Pedir a conta com \"L'addition, s'il vous plaît\" é normal, pois raramente a trazem sem pedido.",
+    "pt_BR": "Mantenha as mãos visíveis sobre a mesa e espere todos serem servidos antes de começar. Pedir a conta com \"L'addition, s'il vous plaît\" é normal, pois raramente ela é trazida sem pedido.",
+    "fr": "Garde les mains visibles sur la table et attends que tout le monde soit servi avant de commencer. Demander l'addition avec \"L'addition, s'il vous plaît\" est normal, car elle est rarement apportée sans demande.",
+    "de": "Halte die Hände sichtbar auf dem Tisch und warte, bis alle bedient sind, bevor du anfängst. Die Rechnung mit \"L'addition, s'il vous plaît\" zu erbitten ist normal, denn sie wird selten ungefragt gebracht."
+   }
+  },
+  {
+   "id": "ct-MC-07",
+   "category": "tipping",
+   "text": {
+    "en": "Service is generally included in restaurant prices. Many people still round up or leave a few euros for good service.",
+    "it": "Il servizio è in genere incluso nei prezzi dei ristoranti. Molti comunque arrotondano o lasciano qualche euro per un buon servizio.",
+    "es": "El servicio suele estar incluido en los precios de los restaurantes. Aun así, muchos redondean o dejan unos euros por un buen servicio.",
+    "pt": "O serviço está geralmente incluído nos preços dos restaurantes. Mesmo assim, muita gente arredonda ou deixa alguns euros por um bom serviço.",
+    "pt_BR": "O serviço geralmente está incluído nos preços dos restaurantes. Mesmo assim, muita gente arredonda ou deixa alguns euros por um bom atendimento.",
+    "fr": "Le service est généralement compris dans les prix des restaurants. Beaucoup arrondissent tout de même ou laissent quelques euros pour un bon service.",
+    "de": "Der Service ist in Restaurantpreisen in der Regel enthalten. Viele runden trotzdem auf oder lassen für guten Service ein paar Euro da."
+   }
+  },
+  {
+   "id": "ct-MC-08",
+   "category": "gifts",
+   "text": {
+    "en": "If invited to someone's home, bring flowers, good chocolates or a bottle of something from a respected maker. Quality matters more than size.",
+    "it": "Se vieni invitato a casa di qualcuno, porta fiori, buon cioccolato o un prodotto di un produttore rinomato. Conta più la qualità che la quantità.",
+    "es": "Si te invitan a casa de alguien, lleva flores, buen chocolate o un producto de un fabricante reconocido. Importa más la calidad que el tamaño.",
+    "pt": "Se fores convidado para casa de alguém, leva flores, bons chocolates ou um produto de um produtor reconhecido. A qualidade conta mais do que o tamanho.",
+    "pt_BR": "Se você for convidado para a casa de alguém, leve flores, bons chocolates ou um produto de um produtor renomado. A qualidade importa mais do que o tamanho.",
+    "fr": "Si tu es invité chez quelqu'un, apporte des fleurs, de bons chocolats ou un produit d'un bon producteur. La qualité compte plus que la taille.",
+    "de": "Wenn du zu jemandem nach Hause eingeladen bist, bring Blumen, gute Schokolade oder ein Produkt eines renommierten Herstellers mit. Qualität zählt mehr als Größe."
+   }
+  },
+  {
+   "id": "ct-MC-09",
+   "category": "dress",
+   "text": {
+    "en": "Monaco leans elegant. Smart casual is the baseline for restaurants and evenings out, and sportswear is usually out of place in upscale venues.",
+    "it": "Monaco tende all'eleganza. Lo smart casual è il minimo per ristoranti e serate fuori, e l'abbigliamento sportivo di solito è fuori luogo nei locali di alto livello.",
+    "es": "Mónaco tiende a lo elegante. El estilo smart casual es lo mínimo para restaurantes y salidas nocturnas, y la ropa deportiva suele desentonar en locales de categoría.",
+    "pt": "O Mónaco tende para o elegante. O smart casual é o mínimo para restaurantes e saídas à noite, e a roupa desportiva costuma estar deslocada em locais de alto nível.",
+    "pt_BR": "Mônaco tende ao elegante. O smart casual é o mínimo para restaurantes e saídas à noite, e roupa esportiva costuma destoar em lugares sofisticados.",
+    "fr": "Monaco penche vers l'élégance. Le style smart casual est la base pour les restaurants et les soirées, et la tenue de sport est souvent déplacée dans les lieux haut de gamme.",
+    "de": "Monaco ist eher elegant. Smart Casual ist die Basis für Restaurants und Abende, und Sportbekleidung passt in gehobenen Lokalen meist nicht."
+   }
+  },
+  {
+   "id": "ct-MC-10",
+   "category": "dress",
+   "text": {
+    "en": "Swimwear and bare chests are for the beach or pool only. Away from the shore, cover up when walking through town or entering shops.",
+    "it": "Costume da bagno e torso nudo sono solo per spiaggia o piscina. Lontano dalla riva, copriti quando cammini in città o entri nei negozi.",
+    "es": "El bañador y el torso desnudo son solo para la playa o la piscina. Lejos de la orilla, cúbrete al caminar por la ciudad o entrar en tiendas.",
+    "pt": "Fato de banho e tronco nu são apenas para a praia ou a piscina. Longe da costa, veste-te ao andar pela cidade ou ao entrar em lojas.",
+    "pt_BR": "Roupa de banho e tronco nu são apenas para a praia ou a piscina. Longe da orla, vista-se ao andar pela cidade ou entrar em lojas.",
+    "fr": "Maillot de bain et torse nu sont réservés à la plage ou à la piscine. Loin du rivage, couvre-toi pour te promener en ville ou entrer dans les magasins.",
+    "de": "Badebekleidung und freier Oberkörper gehören nur an Strand oder Pool. Abseits des Ufers zieh dich beim Gang durch die Stadt oder in Geschäften etwas über."
+   }
+  },
+  {
+   "id": "ct-MC-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Catholicism is the official religion, with freedom of other faiths guaranteed. Dress respectfully and keep your voice low in the cathedral and parish churches.",
+    "it": "Il cattolicesimo è la religione ufficiale, con libertà garantita per le altre fedi. Vesti in modo rispettoso e parla a bassa voce nella cattedrale e nelle chiese parrocchiali.",
+    "es": "El catolicismo es la religión oficial, con libertad garantizada para otras creencias. Viste con respeto y habla en voz baja en la catedral y las iglesias parroquiales.",
+    "pt": "O catolicismo é a religião oficial, com liberdade garantida para as outras crenças. Veste-te com respeito e fala baixo na catedral e nas igrejas paroquiais.",
+    "pt_BR": "O catolicismo é a religião oficial, com liberdade garantida para outras crenças. Vista-se com respeito e fale baixo na catedral e nas igrejas paroquiais.",
+    "fr": "Le catholicisme est la religion officielle, la liberté des autres cultes étant garantie. Habille-toi avec respect et parle à voix basse dans la cathédrale et les églises paroissiales.",
+    "de": "Der Katholizismus ist Staatsreligion, die Freiheit anderer Glaubensrichtungen ist garantiert. Kleide dich respektvoll und sprich in der Kathedrale und den Pfarrkirchen leise."
+   }
+  },
+  {
+   "id": "ct-MC-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "The Cathedral of Our Lady Immaculate on the Rock holds the tombs of the princes. Check opening times first, as visits may pause during services.",
+    "it": "La cattedrale dell'Immacolata sulla Rocca custodisce le tombe dei principi. Controlla prima gli orari, perché le visite possono sospendersi durante le funzioni.",
+    "es": "La catedral de la Inmaculada Concepción, en el Peñón, alberga las tumbas de los príncipes. Consulta antes los horarios, ya que las visitas pueden detenerse durante los oficios.",
+    "pt": "A catedral da Imaculada Conceição, no Rochedo, guarda os túmulos dos príncipes. Consulta antes os horários, pois as visitas podem parar durante as celebrações.",
+    "pt_BR": "A catedral da Imaculada Conceição, no Rochedo, guarda os túmulos dos príncipes. Confira antes os horários, pois as visitas podem ser suspensas durante as celebrações.",
+    "fr": "La cathédrale Notre-Dame-Immaculée, sur le Rocher, abrite les tombes des princes. Vérifie d'abord les horaires, car les visites peuvent être interrompues pendant les offices.",
+    "de": "Die Kathedrale Unserer Lieben Frau der Unbefleckten Empfängnis auf dem Felsen beherbergt die Gräber der Fürsten. Prüfe vorher die Öffnungszeiten, da Besichtigungen während Gottesdiensten pausieren können."
+   }
+  },
+  {
+   "id": "ct-MC-13",
+   "category": "gestures",
+   "text": {
+    "en": "Calm, composed body language fits the local style. Loud gestures, pointing and shouting in public places are not appreciated.",
+    "it": "Un linguaggio del corpo calmo e composto si addice allo stile locale. Gesti plateali, dita puntate e urla nei luoghi pubblici non sono apprezzati.",
+    "es": "Un lenguaje corporal tranquilo y comedido encaja con el estilo local. No se aprecian los gestos exagerados, señalar con el dedo ni gritar en lugares públicos.",
+    "pt": "Uma linguagem corporal calma e contida combina com o estilo local. Gestos exagerados, apontar com o dedo e gritar em locais públicos não são apreciados.",
+    "pt_BR": "Uma linguagem corporal calma e contida combina com o estilo local. Gestos exagerados, apontar o dedo e gritar em locais públicos não são bem-vistos.",
+    "fr": "Un langage corporel calme et posé correspond au style local. Les gestes bruyants, le fait de pointer du doigt et de crier dans les lieux publics ne sont pas appréciés.",
+    "de": "Ruhige, zurückhaltende Körpersprache passt zum lokalen Stil. Laute Gesten, mit dem Finger zeigen und Schreien an öffentlichen Orten kommen nicht gut an."
+   }
+  },
+  {
+   "id": "ct-MC-14",
+   "category": "punctuality",
+   "text": {
+    "en": "Being on time is expected for business meetings, reservations and guided visits. For private social events, arriving ten to fifteen minutes late is generally accepted.",
+    "it": "Essere puntuali è previsto per riunioni di lavoro, prenotazioni e visite guidate. Per gli eventi privati un ritardo di dieci-quindici minuti è in genere accettato.",
+    "es": "Se espera puntualidad en reuniones de trabajo, reservas y visitas guiadas. En eventos sociales privados, llegar diez o quince minutos tarde suele aceptarse.",
+    "pt": "Espera-se pontualidade em reuniões de trabalho, reservas e visitas guiadas. Em eventos sociais privados, chegar dez a quinze minutos depois costuma ser aceitável.",
+    "pt_BR": "Espera-se pontualidade em reuniões de trabalho, reservas e visitas guiadas. Em eventos sociais privados, chegar dez ou quinze minutos depois geralmente é aceito.",
+    "fr": "La ponctualité est attendue pour les rendez-vous professionnels, les réservations et les visites guidées. Pour les réunions privées, dix à quinze minutes de retard sont généralement tolérées.",
+    "de": "Pünktlichkeit wird bei Geschäftsterminen, Reservierungen und Führungen erwartet. Bei privaten Treffen sind zehn bis fünfzehn Minuten Verspätung meist akzeptiert."
+   }
+  },
+  {
+   "id": "ct-MC-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "The principality is very clean and orderly. Dropping litter or behaving noisily in public is frowned upon.",
+    "it": "Il Principato è molto pulito e ordinato. Gettare rifiuti a terra o comportarsi in modo rumoroso in pubblico è mal visto.",
+    "es": "El principado es muy limpio y ordenado. Tirar basura o comportarse con ruido en público está mal visto.",
+    "pt": "O principado é muito limpo e ordenado. Deitar lixo para o chão ou comportar-se de forma ruidosa em público é mal visto.",
+    "pt_BR": "O principado é muito limpo e organizado. Jogar lixo no chão ou se comportar de forma barulhenta em público é malvisto.",
+    "fr": "La principauté est très propre et ordonnée. Jeter des déchets ou se comporter bruyamment en public est mal vu.",
+    "de": "Das Fürstentum ist sehr sauber und geordnet. Müll fallen zu lassen oder sich in der Öffentlichkeit laut zu verhalten ist verpönt."
+   }
+  },
+  {
+   "id": "ct-MC-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "When using public lifts and escalators between the different levels of the city, keep to the right and let others pass. Offering your seat to older passengers on buses is customary.",
+    "it": "Sugli ascensori e le scale mobili pubblici tra i diversi livelli della città, tieni la destra e lascia passare gli altri. Offrire il posto agli anziani sugli autobus è consuetudine.",
+    "es": "En los ascensores y escaleras mecánicas públicos entre los distintos niveles de la ciudad, mantente a la derecha y deja pasar a los demás. Es costumbre ofrecer el asiento a las personas mayores en el autobús.",
+    "pt": "Nos elevadores e escadas rolantes públicos entre os vários níveis da cidade, mantém-te à direita e deixa os outros passar. É costume oferecer o lugar a pessoas idosas nos autocarros.",
+    "pt_BR": "Nos elevadores e escadas rolantes públicos entre os vários níveis da cidade, mantenha-se à direita e deixe os outros passarem. É costume oferecer o assento a pessoas idosas nos ônibus.",
+    "fr": "Dans les ascenseurs et escaliers mécaniques publics entre les différents niveaux de la ville, reste sur la droite et laisse passer les autres. Il est d'usage de céder sa place aux personnes âgées dans les bus.",
+    "de": "In den öffentlichen Aufzügen und Rolltreppen zwischen den Ebenen der Stadt halte dich rechts und lass andere vorbei. Älteren Fahrgästen im Bus den Sitzplatz anzubieten ist üblich."
+   }
+  },
+  {
+   "id": "ct-MC-17",
+   "category": "transport",
+   "text": {
+    "en": "Monaco is compact and very walkable, and public lifts and escalators help with the steep hills. Buses run by the local company cover the main sights.",
+    "it": "Monaco è compatta e si gira bene a piedi, e ascensori e scale mobili pubblici aiutano con le salite ripide. Gli autobus della compagnia locale coprono le attrazioni principali.",
+    "es": "Mónaco es compacto y muy transitable a pie, y los ascensores y escaleras mecánicas públicos ayudan con las cuestas. Los autobuses de la compañía local cubren los principales atractivos.",
+    "pt": "O Mónaco é compacto e muito fácil de percorrer a pé, e os elevadores e escadas rolantes públicos ajudam nas subidas íngremes. Os autocarros da empresa local cobrem os principais pontos de interesse.",
+    "pt_BR": "Mônaco é compacto e muito fácil de percorrer a pé, e os elevadores e escadas rolantes públicos ajudam nas subidas íngremes. Os ônibus da empresa local cobrem os principais pontos turísticos.",
+    "fr": "Monaco est compacte et très agréable à parcourir à pied, et les ascenseurs et escaliers mécaniques publics aident dans les montées. Les bus de la compagnie locale desservent les principaux sites.",
+    "de": "Monaco ist kompakt und gut zu Fuß zu erkunden, und öffentliche Aufzüge und Rolltreppen helfen bei den steilen Anstiegen. Die Busse der lokalen Gesellschaft fahren die wichtigsten Sehenswürdigkeiten an."
+   }
+  },
+  {
+   "id": "ct-MC-18",
+   "category": "transport",
+   "text": {
+    "en": "There are no border formalities between Monaco and France, so you can cross on foot or by bus without noticing. The train station connects to nearby French and Italian coastal towns.",
+    "it": "Tra Monaco e la Francia non ci sono formalità di frontiera, quindi si passa a piedi o in autobus senza accorgersene. La stazione ferroviaria collega le vicine città costiere francesi e italiane.",
+    "es": "Entre Mónaco y Francia no hay trámites fronterizos, así que se cruza a pie o en autobús sin darse cuenta. La estación de tren conecta con localidades costeras francesas e italianas cercanas.",
+    "pt": "Entre o Mónaco e a França não há formalidades de fronteira, por isso atravessa-se a pé ou de autocarro sem se dar por isso. A estação de comboios liga a localidades costeiras francesas e italianas próximas.",
+    "pt_BR": "Entre Mônaco e a França não há formalidades de fronteira, então dá para atravessar a pé ou de ônibus sem perceber. A estação de trem liga a cidades costeiras francesas e italianas próximas.",
+    "fr": "Il n'y a aucune formalité à la frontière entre Monaco et la France : on la franchit à pied ou en bus sans s'en apercevoir. La gare relie les villes côtières françaises et italiennes voisines.",
+    "de": "Zwischen Monaco und Frankreich gibt es keine Grenzformalitäten, man überquert die Grenze zu Fuß oder im Bus, ohne es zu merken. Der Bahnhof verbindet mit nahen französischen und italienischen Küstenorten."
+   }
+  },
+  {
+   "id": "ct-MC-19",
+   "category": "language",
+   "text": {
+    "en": "French is the official language, and Italian is also widely spoken. English is common in tourist and business settings.",
+    "it": "Il francese è la lingua ufficiale e anche l'italiano è molto parlato. L'inglese è diffuso in ambito turistico e lavorativo.",
+    "es": "El francés es la lengua oficial y el italiano también se habla mucho. El inglés es habitual en entornos turísticos y de negocios.",
+    "pt": "O francês é a língua oficial e o italiano também é muito falado. O inglês é comum em contextos turísticos e empresariais.",
+    "pt_BR": "O francês é a língua oficial e o italiano também é muito falado. O inglês é comum em contextos turísticos e de negócios.",
+    "fr": "Le français est la langue officielle et l'italien est également très parlé. L'anglais est courant dans le tourisme et les affaires.",
+    "de": "Französisch ist Amtssprache, und auch Italienisch wird viel gesprochen. Englisch ist im Tourismus und im Geschäftsleben verbreitet."
+   }
+  },
+  {
+   "id": "ct-MC-20",
+   "category": "language",
+   "text": {
+    "en": "Monégasque, a Ligurian dialect, is the historic local language and is taught in schools. A few words or street names in Monégasque often appear on signs.",
+    "it": "Il monegasco, un dialetto ligure, è la lingua locale storica e si insegna nelle scuole. Alcune parole o nomi di strade in monegasco compaiono spesso sui cartelli.",
+    "es": "El monegasco, un dialecto ligur, es la lengua local histórica y se enseña en las escuelas. En los carteles aparecen a menudo algunas palabras o nombres de calles en monegasco.",
+    "pt": "O monegasco, um dialeto ligúrio, é a língua local histórica e ensina-se nas escolas. Algumas palavras ou nomes de ruas em monegasco aparecem muitas vezes nas placas.",
+    "pt_BR": "O monegasco, um dialeto lígure, é a língua local histórica e é ensinado nas escolas. Algumas palavras ou nomes de ruas em monegasco aparecem com frequência nas placas.",
+    "fr": "Le monégasque, un dialecte ligure, est la langue locale historique et il est enseigné dans les écoles. Quelques mots ou noms de rues en monégasque figurent souvent sur les panneaux.",
+    "de": "Monegassisch, ein ligurischer Dialekt, ist die historische Lokalsprache und wird an Schulen unterrichtet. Einzelne Wörter oder Straßennamen auf Monegassisch stehen oft auf Schildern."
+   }
+  },
+  {
+   "id": "ct-MC-21",
+   "category": "festivals",
+   "text": {
+    "en": "The Monaco Grand Prix, held on temporary city streets in Monte Carlo, is the highest-profile annual event. Streets close and hotels fill up well in advance.",
+    "it": "Il Gran Premio di Monaco, che si corre su strade cittadine temporanee a Monte Carlo, è l'evento annuale più noto. Le strade chiudono e gli hotel si riempiono con largo anticipo.",
+    "es": "El Gran Premio de Mónaco, que se disputa en calles temporales de Montecarlo, es el evento anual más destacado. Las calles se cierran y los hoteles se llenan con mucha antelación.",
+    "pt": "O Grande Prémio do Mónaco, disputado em ruas temporárias de Monte Carlo, é o evento anual de maior destaque. As ruas fecham e os hotéis esgotam com muita antecedência.",
+    "pt_BR": "O Grande Prêmio de Mônaco, disputado em ruas temporárias de Monte Carlo, é o evento anual de maior destaque. As ruas são fechadas e os hotéis lotam com bastante antecedência.",
+    "fr": "Le Grand Prix de Monaco, couru sur des rues temporairement fermées à Monte-Carlo, est l'événement annuel le plus en vue. Les rues sont fermées et les hôtels se remplissent bien à l'avance.",
+    "de": "Der Große Preis von Monaco, der auf temporär gesperrten Straßen in Monte Carlo stattfindet, ist das größte Jahresereignis. Straßen werden gesperrt, und Hotels sind lange im Voraus ausgebucht."
+   }
+  },
+  {
+   "id": "ct-MC-22",
+   "category": "festivals",
+   "text": {
+    "en": "Monaco celebrates its National Day on 19 November, with ceremonies and fireworks. Sainte Dévote, the patron saint, is honored every January.",
+    "it": "Monaco festeggia la Festa Nazionale il 19 novembre, con cerimonie e fuochi d'artificio. Santa Devota, la santa patrona, viene onorata ogni gennaio.",
+    "es": "Mónaco celebra su Fiesta Nacional el 19 de noviembre, con ceremonias y fuegos artificiales. Santa Devota, la patrona, se honra cada enero.",
+    "pt": "O Mónaco celebra o seu Dia Nacional a 19 de novembro, com cerimónias e fogo de artifício. Santa Devota, a padroeira, é homenageada todos os anos em janeiro.",
+    "pt_BR": "Mônaco celebra seu Dia Nacional em 19 de novembro, com cerimônias e fogos de artifício. Santa Devota, a padroeira, é homenageada todo ano em janeiro.",
+    "fr": "Monaco célèbre sa Fête nationale le 19 novembre, avec cérémonies et feux d'artifice. Sainte Dévote, la sainte patronne, est honorée chaque année en janvier.",
+    "de": "Monaco feiert am 19. November seinen Nationalfeiertag mit Zeremonien und Feuerwerk. Die Schutzpatronin Sainte Dévote wird jedes Jahr im Januar geehrt."
+   }
+  },
+  {
+   "id": "ct-MC-23",
+   "category": "family",
+   "text": {
+    "en": "The Grimaldi family has reigned over Monaco since 1297, and the ruling family is a source of affection and pride. Speaking respectfully about the prince and his family is the norm.",
+    "it": "La famiglia Grimaldi regna su Monaco dal 1297 e la famiglia regnante è motivo di affetto e orgoglio. Parlare con rispetto del principe e della sua famiglia è la norma.",
+    "es": "La familia Grimaldi reina en Mónaco desde 1297, y la familia gobernante es motivo de cariño y orgullo. Hablar con respeto del príncipe y su familia es lo habitual.",
+    "pt": "A família Grimaldi reina no Mónaco desde 1297, e a família reinante é motivo de carinho e orgulho. Falar com respeito do príncipe e da sua família é a norma.",
+    "pt_BR": "A família Grimaldi reina em Mônaco desde 1297, e a família reinante é motivo de carinho e orgulho. Falar com respeito do príncipe e de sua família é a norma.",
+    "fr": "La famille Grimaldi règne sur Monaco depuis 1297, et la famille princière suscite affection et fierté. Parler avec respect du prince et de sa famille est la norme.",
+    "de": "Die Familie Grimaldi regiert Monaco seit 1297, und die Fürstenfamilie ist Quelle von Zuneigung und Stolz. Respektvoll über den Fürsten und seine Familie zu sprechen ist selbstverständlich."
+   }
+  },
+  {
+   "id": "ct-MC-24",
+   "category": "money",
+   "text": {
+    "en": "Monaco uses the euro, and cards and contactless payments are widely accepted. Some Monaco euro coins carry the prince's portrait and are popular with collectors.",
+    "it": "Monaco usa l'euro e carte e pagamenti contactless sono ampiamente accettati. Alcune monete euro di Monaco recano il ritratto del principe e sono apprezzate dai collezionisti.",
+    "es": "Mónaco usa el euro y las tarjetas y los pagos sin contacto se aceptan ampliamente. Algunas monedas de euro de Mónaco llevan el retrato del príncipe y gustan a los coleccionistas.",
+    "pt": "O Mónaco usa o euro e os cartões e pagamentos sem contacto são amplamente aceites. Algumas moedas de euro do Mónaco têm o retrato do príncipe e são apreciadas por colecionadores.",
+    "pt_BR": "Mônaco usa o euro, e cartões e pagamentos por aproximação são amplamente aceitos. Algumas moedas de euro de Mônaco trazem o retrato do príncipe e são apreciadas por colecionadores.",
+    "fr": "Monaco utilise l'euro, et les cartes et paiements sans contact sont largement acceptés. Certaines pièces d'euro monégasques portent le portrait du prince et plaisent aux collectionneurs.",
+    "de": "Monaco verwendet den Euro, und Karten sowie kontaktloses Bezahlen werden breit akzeptiert. Manche monegassischen Euromünzen zeigen das Porträt des Fürsten und sind bei Sammlern beliebt."
+   }
+  },
+  {
+   "id": "ct-MC-25",
+   "category": "photography",
+   "text": {
+    "en": "Photos outside the Prince's Palace and of the daily changing of the guard are welcome. Inside the casinos, photography is usually restricted, so check the rules first.",
+    "it": "Le foto fuori dal Palazzo del Principe e del cambio della guardia quotidiano sono benvenute. All'interno dei casinò la fotografia è di solito limitata, quindi controlla prima le regole.",
+    "es": "Las fotos frente al Palacio del Príncipe y del cambio de guardia diario son bienvenidas. Dentro de los casinos la fotografía suele estar restringida, así que consulta antes las normas.",
+    "pt": "As fotografias à frente do Palácio do Príncipe e da rendição da guarda diária são bem-vindas. Dentro dos casinos, a fotografia costuma ser restringida, por isso consulta primeiro as regras.",
+    "pt_BR": "Fotos em frente ao Palácio do Príncipe e da troca da guarda diária são bem-vindas. Dentro dos cassinos, a fotografia costuma ser restrita, então confira as regras antes.",
+    "fr": "Les photos devant le Palais princier et de la relève de la garde quotidienne sont bienvenues. À l'intérieur des casinos, la photographie est généralement restreinte ; vérifie d'abord les règles.",
+    "de": "Fotos vor dem Fürstenpalast und von der täglichen Wachablösung sind willkommen. In den Casinos ist Fotografieren meist eingeschränkt, prüfe also vorher die Regeln."
+   }
+  },
+  {
+   "id": "ct-MC-26",
+   "category": "nightlife",
+   "text": {
+    "en": "Evenings in Monte Carlo are elegant, from seafront bars to concerts at the Opera. Venues often have a smart dress code, and some ask for photo ID at the door.",
+    "it": "Le serate a Monte Carlo sono eleganti, dai bar sul lungomare ai concerti all'Opéra. I locali spesso hanno un dress code curato e alcuni chiedono un documento con foto all'ingresso.",
+    "es": "Las noches en Montecarlo son elegantes, desde los bares frente al mar hasta los conciertos en la Ópera. Los locales suelen tener un código de vestimenta cuidado y algunos piden documento con foto en la puerta.",
+    "pt": "As noites em Monte Carlo são elegantes, dos bares junto ao mar aos concertos na Ópera. Os locais costumam ter um código de vestuário cuidado e alguns pedem documento com fotografia à entrada.",
+    "pt_BR": "As noites em Monte Carlo são elegantes, dos bares à beira-mar aos concertos na Ópera. Os locais costumam ter um dress code cuidado e alguns pedem documento com foto na entrada.",
+    "fr": "Les soirées à Monte-Carlo sont élégantes, des bars en bord de mer aux concerts à l'Opéra. Les lieux ont souvent un code vestimentaire soigné et certains demandent une pièce d'identité avec photo à l'entrée.",
+    "de": "Abende in Monte Carlo sind elegant, von Bars am Meer bis zu Konzerten in der Oper. Lokale haben oft einen gepflegten Dresscode, und manche verlangen am Eingang einen Lichtbildausweis."
+   }
+  },
+  {
+   "id": "ct-MC-27",
+   "category": "nature",
+   "text": {
+    "en": "The Exotic Garden and the seafront promenades offer a calm break from the city, with views over the Mediterranean. Wear comfortable shoes, as many paths are steep.",
+    "it": "Il Giardino Esotico e le passeggiate sul lungomare offrono una pausa tranquilla dalla città, con viste sul Mediterraneo. Porta scarpe comode, perché molti sentieri sono ripidi.",
+    "es": "El Jardín Exótico y los paseos marítimos ofrecen un respiro tranquilo de la ciudad, con vistas al Mediterráneo. Lleva calzado cómodo, ya que muchos caminos son empinados.",
+    "pt": "O Jardim Exótico e os passeios à beira-mar oferecem uma pausa tranquila da cidade, com vistas sobre o Mediterrâneo. Leva calçado confortável, pois muitos caminhos são íngremes.",
+    "pt_BR": "O Jardim Exótico e os calçadões à beira-mar oferecem uma pausa tranquila da cidade, com vista para o Mediterrâneo. Use calçado confortável, pois muitos caminhos são íngremes.",
+    "fr": "Le Jardin exotique et les promenades en bord de mer offrent une pause tranquille loin de la ville, avec vue sur la Méditerranée. Prends des chaussures confortables, car beaucoup de chemins sont raides.",
+    "de": "Der Exotische Garten und die Uferpromenaden bieten eine ruhige Auszeit von der Stadt mit Blick aufs Mittelmeer. Trag bequeme Schuhe, denn viele Wege sind steil."
+   }
+  },
+  {
+   "id": "ct-MC-28",
+   "category": "safety",
+   "text": {
+    "en": "Monaco is known as one of the safest places in Europe, with many security cameras and a visible police presence. Normal care with belongings is still wise in crowded areas.",
+    "it": "Monaco è nota come uno dei luoghi più sicuri d'Europa, con molte telecamere e una presenza visibile della polizia. È comunque saggio fare attenzione agli effetti personali nei luoghi affollati.",
+    "es": "Mónaco es conocido como uno de los lugares más seguros de Europa, con muchas cámaras de seguridad y presencia policial visible. Aun así, conviene cuidar las pertenencias en zonas concurridas.",
+    "pt": "O Mónaco é conhecido como um dos locais mais seguros da Europa, com muitas câmaras de segurança e presença policial visível. Mesmo assim, convém ter cuidado com os pertences em zonas movimentadas.",
+    "pt_BR": "Mônaco é conhecido como um dos lugares mais seguros da Europa, com muitas câmeras de segurança e presença policial visível. Mesmo assim, vale cuidar dos pertences em locais movimentados.",
+    "fr": "Monaco est réputée comme l'un des endroits les plus sûrs d'Europe, avec de nombreuses caméras et une présence policière visible. Mieux vaut tout de même surveiller ses affaires dans les endroits fréquentés.",
+    "de": "Monaco gilt als einer der sichersten Orte Europas, mit vielen Überwachungskameras und sichtbarer Polizeipräsenz. In belebten Bereichen ist dennoch normale Aufmerksamkeit für Wertsachen sinnvoll."
+   }
+  },
+  {
+   "id": "ct-MC-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Monaco is a sovereign principality, not part of France, and locals take pride in their own identity and traditions. Its motto, \"Deo Juvante\", means \"with God's help\".",
+    "it": "Monaco è un principato sovrano, non parte della Francia, e i monegaschi sono orgogliosi della propria identità e delle proprie tradizioni. Il suo motto, \"Deo Juvante\", significa \"con l'aiuto di Dio\".",
+    "es": "Mónaco es un principado soberano, no parte de Francia, y los monegascos se enorgullecen de su identidad y tradiciones. Su lema, \"Deo Juvante\", significa \"con la ayuda de Dios\".",
+    "pt": "O Mónaco é um principado soberano, que não faz parte da França, e os monegascos têm orgulho na sua identidade e tradições. O lema, \"Deo Juvante\", significa \"com a ajuda de Deus\".",
+    "pt_BR": "Mônaco é um principado soberano, que não faz parte da França, e os monegascos têm orgulho de sua identidade e tradições. O lema, \"Deo Juvante\", significa \"com a ajuda de Deus\".",
+    "fr": "Monaco est une principauté souveraine, qui ne fait pas partie de la France, et les Monégasques sont fiers de leur identité et de leurs traditions. Sa devise, \"Deo Juvante\", signifie \"avec l'aide de Dieu\".",
+    "de": "Monaco ist ein souveränes Fürstentum und nicht Teil Frankreichs, und die Monegassen sind stolz auf ihre Identität und Traditionen. Das Motto \"Deo Juvante\" bedeutet \"mit Gottes Hilfe\"."
+   }
+  },
+  {
+   "id": "ct-MC-30",
+   "category": "tipping",
+   "text": {
+    "en": "In cafes and bars, rounding up the bill or leaving small change is a courteous way to thank staff. Bellhops and drivers in hotels and taxis usually appreciate a euro or two.",
+    "it": "Nei caffè e nei bar, arrotondare il conto o lasciare gli spiccioli è un modo cortese di ringraziare il personale. Facchini e autisti di hotel e taxi di solito apprezzano un euro o due.",
+    "es": "En cafés y bares, redondear la cuenta o dejar el cambio es una forma cortés de agradecer al personal. Los botones y conductores de hoteles y taxis suelen agradecer uno o dos euros.",
+    "pt": "Em cafés e bares, arredondar a conta ou deixar os trocos é uma forma cortês de agradecer ao pessoal. Os porteiros e condutores de hotéis e táxis costumam apreciar um ou dois euros.",
+    "pt_BR": "Em cafés e bares, arredondar a conta ou deixar o troco é uma forma educada de agradecer à equipe. Mensageiros e motoristas de hotéis e táxis costumam apreciar um ou dois euros.",
+    "fr": "Dans les cafés et les bars, arrondir l'addition ou laisser la monnaie est une manière courtoise de remercier le personnel. Les bagagistes et chauffeurs d'hôtels et de taxis apprécient généralement un euro ou deux.",
+    "de": "In Cafés und Bars ist Aufrunden oder Kleingeld dalassen eine höfliche Art, dem Personal zu danken. Hotelpagen und Taxifahrer freuen sich meist über ein oder zwei Euro."
+   }
+  }
+ ],
+ "MD": [
+  {
+   "id": "ct-MD-01",
+   "category": "greetings",
+   "text": {
+    "en": "A firm handshake with eye contact and a friendly \"Bună ziua\" (good day) is the usual way to greet. Among friends, hugs or cheek kisses are common.",
+    "it": "Una stretta di mano decisa con contatto visivo e un cordiale \"Bună ziua\" (buongiorno) è il modo abituale di salutare. Tra amici ci si può abbracciare o scambiare baci sulle guance.",
+    "es": "Un apretón de manos firme con contacto visual y un amable \"Bună ziua\" (buenos días) es la forma habitual de saludar. Entre amigos puede haber abrazos o besos en las mejillas.",
+    "pt": "Um aperto de mão firme com contacto visual e um simpático \"Bună ziua\" (bom dia) é a forma habitual de cumprimentar. Entre amigos podem trocar-se abraços ou beijos na face.",
+    "pt_BR": "Um aperto de mão firme com contato visual e um simpático \"Bună ziua\" (bom dia) é a forma habitual de cumprimentar. Entre amigos pode haver abraços ou beijos no rosto.",
+    "fr": "Une poignée de main ferme avec contact visuel et un aimable \"Bună ziua\" (bonjour) est la façon habituelle de saluer. Entre amis, on peut se faire un câlin ou la bise.",
+    "de": "Ein fester Händedruck mit Blickkontakt und ein freundliches \"Bună ziua\" (guten Tag) sind die übliche Begrüßung. Unter Freunden sind Umarmungen oder Wangenküsse möglich."
+   }
+  },
+  {
+   "id": "ct-MD-02",
+   "category": "greetings",
+   "text": {
+    "en": "Addressing older people with respect, using \"domnule\" (sir) or \"doamnă\" (madam), is appreciated. Switching to first names usually happens only when invited.",
+    "it": "Rivolgersi agli anziani con rispetto, usando \"domnule\" (signore) o \"doamnă\" (signora), è apprezzato. Passare al nome di battesimo di solito avviene solo su invito.",
+    "es": "Dirigirse a las personas mayores con respeto, usando \"domnule\" (señor) o \"doamnă\" (señora), se agradece. Pasar a los nombres de pila suele hacerse solo cuando te invitan.",
+    "pt": "Dirigir-se a pessoas mais velhas com respeito, usando \"domnule\" (senhor) ou \"doamnă\" (senhora), é apreciado. Passar a tratar pelo nome próprio costuma acontecer só quando há convite.",
+    "pt_BR": "Dirigir-se a pessoas mais velhas com respeito, usando \"domnule\" (senhor) ou \"doamnă\" (senhora), é apreciado. Passar a usar o primeiro nome costuma acontecer só quando há convite.",
+    "fr": "S'adresser aux personnes plus âgées avec respect, en disant \"domnule\" (monsieur) ou \"doamnă\" (madame), est apprécié. On passe aux prénoms généralement sur invitation.",
+    "de": "Ältere Menschen respektvoll mit \"domnule\" (Herr) oder \"doamnă\" (Frau) anzusprechen, wird geschätzt. Zum Vornamen wechselt man meist erst auf Einladung."
+   }
+  },
+  {
+   "id": "ct-MD-03",
+   "category": "conversation",
+   "text": {
+    "en": "Moldovans are often curious about visitors and enjoy talking about food, wine, family and travel. Politics and history can be sensitive, so let your hosts lead on those topics.",
+    "it": "I moldavi sono spesso curiosi verso i visitatori e amano parlare di cibo, vino, famiglia e viaggi. Politica e storia possono essere temi delicati, quindi lascia che siano gli ospiti a guidare.",
+    "es": "Los moldavos suelen sentir curiosidad por los visitantes y disfrutan hablando de comida, vino, familia y viajes. La política y la historia pueden ser temas delicados, así que deja que tus anfitriones lleven la iniciativa.",
+    "pt": "Os moldavos são muitas vezes curiosos em relação aos visitantes e gostam de falar de comida, vinho, família e viagens. A política e a história podem ser temas sensíveis, por isso deixa os anfitriões conduzirem.",
+    "pt_BR": "Os moldavos costumam ser curiosos em relação aos visitantes e gostam de falar de comida, vinho, família e viagens. Política e história podem ser assuntos sensíveis, então deixe os anfitriões conduzirem.",
+    "fr": "Les Moldaves sont souvent curieux des visiteurs et aiment parler de cuisine, de vin, de famille et de voyages. La politique et l'histoire peuvent être des sujets sensibles ; laisse tes hôtes mener la conversation.",
+    "de": "Moldauer sind oft neugierig auf Besucher und sprechen gern über Essen, Wein, Familie und Reisen. Politik und Geschichte können heikle Themen sein, überlasse hier deinen Gastgebern die Führung."
+   }
+  },
+  {
+   "id": "ct-MD-04",
+   "category": "conversation",
+   "text": {
+    "en": "Showing interest in Moldovan traditions, such as folk music, crafts and wine-making, is a warm way to start a conversation. People are proud when visitors ask questions.",
+    "it": "Mostrare interesse per le tradizioni moldave, come musica popolare, artigianato e vinificazione, è un modo cordiale per avviare una conversazione. Le persone sono orgogliose quando i visitatori fanno domande.",
+    "es": "Mostrar interés por las tradiciones moldavas, como la música popular, la artesanía y la elaboración del vino, es una forma cálida de iniciar una conversación. La gente se siente orgullosa cuando los visitantes preguntan.",
+    "pt": "Mostrar interesse pelas tradições moldavas, como a música popular, o artesanato e a produção de vinho, é uma forma calorosa de iniciar conversa. As pessoas ficam orgulhosas quando os visitantes fazem perguntas.",
+    "pt_BR": "Mostrar interesse pelas tradições moldavas, como a música folclórica, o artesanato e a produção de vinho, é uma forma calorosa de puxar conversa. As pessoas ficam orgulhosas quando os visitantes fazem perguntas.",
+    "fr": "Montrer de l'intérêt pour les traditions moldaves, comme la musique folklorique, l'artisanat et la viticulture, est une manière chaleureuse d'engager la conversation. Les gens sont fiers quand les visiteurs posent des questions.",
+    "de": "Interesse an moldauischen Traditionen wie Volksmusik, Handwerk und Weinbau zu zeigen, ist ein herzlicher Gesprächseinstieg. Die Menschen sind stolz, wenn Besucher Fragen stellen."
+   }
+  },
+  {
+   "id": "ct-MD-05",
+   "category": "dining",
+   "text": {
+    "en": "Hospitality is generous, and hosts often keep refilling your plate. Politely leaving a little food or saying you are full shows you have had enough.",
+    "it": "L'ospitalità è generosa e chi ospita continua spesso a riempirti il piatto. Lasciare un po' di cibo o dire che sei sazio è il modo gentile per far capire che ne hai avuto abbastanza.",
+    "es": "La hospitalidad es generosa y los anfitriones suelen volver a llenarte el plato. Dejar un poco de comida o decir que estás lleno es la forma educada de indicar que ya has comido suficiente.",
+    "pt": "A hospitalidade é generosa e os anfitriões costumam voltar a encher-te o prato. Deixar um pouco de comida ou dizer que estás cheio é a forma educada de mostrar que já chega.",
+    "pt_BR": "A hospitalidade é generosa e os anfitriões costumam encher seu prato de novo. Deixar um pouco de comida ou dizer que está satisfeito é a forma educada de mostrar que já foi o bastante.",
+    "fr": "L'hospitalité est généreuse et les hôtes resservent souvent ton assiette. Laisser un peu de nourriture ou dire que tu es rassasié est la manière polie d'indiquer que tu as assez mangé.",
+    "de": "Die Gastfreundschaft ist großzügig, und Gastgeber füllen den Teller oft nach. Etwas übrig zu lassen oder zu sagen, dass man satt ist, zeigt höflich, dass man genug hat."
+   }
+  },
+  {
+   "id": "ct-MD-06",
+   "category": "dining",
+   "text": {
+    "en": "Traditional dishes include mămăligă (a cornmeal porridge), sarmale (stuffed cabbage rolls) and placinte (filled pastries). Trying them is a good way to connect with locals.",
+    "it": "I piatti tradizionali includono la mămăligă (polenta), i sarmale (involtini di cavolo ripieni) e le plăcinte (sfogliatine ripiene). Assaggiarli è un buon modo per entrare in sintonia con la gente del posto.",
+    "es": "Los platos tradicionales incluyen la mămăligă (polenta de maíz), los sarmale (rollitos de col rellenos) y las plăcinte (empanadillas rellenas). Probarlos es una buena forma de conectar con la gente local.",
+    "pt": "Os pratos tradicionais incluem a mămăligă (papas de milho), os sarmale (rolinhos de couve recheados) e as plăcinte (massas recheadas). Prová-los é uma boa forma de criar ligação com os locais.",
+    "pt_BR": "Os pratos tradicionais incluem a mămăligă (polenta de milho), os sarmale (charutinhos de repolho) e as plăcinte (pastéis recheados). Experimentá-los é uma boa forma de criar conexão com os locais.",
+    "fr": "Les plats traditionnels comprennent la mămăligă (polenta de maïs), les sarmale (feuilles de chou farcies) et les plăcinte (feuilletés garnis). Les goûter est une bonne façon de se rapprocher des habitants.",
+    "de": "Zu den traditionellen Gerichten zählen Mămăligă (Maisbrei), Sarmale (gefüllte Kohlrouladen) und Plăcinte (gefüllte Teigtaschen). Sie zu probieren ist ein guter Weg, mit Einheimischen ins Gespräch zu kommen."
+   }
+  },
+  {
+   "id": "ct-MD-07",
+   "category": "tipping",
+   "text": {
+    "en": "In restaurants and cafes, leaving around 10 percent is customary if service is not already added. Rounding up the fare is also common for taxi drivers.",
+    "it": "Nei ristoranti e nei caffè è usanza lasciare circa il 10 per cento se il servizio non è già incluso. Anche per i tassisti è comune arrotondare la tariffa.",
+    "es": "En restaurantes y cafés es costumbre dejar alrededor del 10 por ciento si el servicio no está ya incluido. También es habitual redondear la tarifa a los taxistas.",
+    "pt": "Em restaurantes e cafés é costume deixar cerca de 10 por cento se o serviço não estiver já incluído. Também é comum arredondar o valor da viagem aos taxistas.",
+    "pt_BR": "Em restaurantes e cafés é costume deixar cerca de 10 por cento se o serviço ainda não estiver incluído. Também é comum arredondar a tarifa para os taxistas.",
+    "fr": "Au restaurant et au café, il est d'usage de laisser environ 10 pour cent si le service n'est pas déjà compris. Arrondir la course est aussi courant pour les chauffeurs de taxi.",
+    "de": "In Restaurants und Cafés sind etwa 10 Prozent Trinkgeld üblich, wenn der Service nicht schon enthalten ist. Bei Taxifahrten wird der Fahrpreis oft aufgerundet."
+   }
+  },
+  {
+   "id": "ct-MD-08",
+   "category": "gifts",
+   "text": {
+    "en": "When visiting a home, bring flowers, sweets or a small gift for the host. Give an odd number of flowers, since even numbers are traditionally for funerals.",
+    "it": "Quando visiti una casa, porta fiori, dolci o un piccolo regalo per chi ospita. Regala un numero dispari di fiori, perché i numeri pari sono tradizionalmente riservati ai funerali.",
+    "es": "Al visitar una casa, lleva flores, dulces o un pequeño regalo para el anfitrión. Regala un número impar de flores, ya que los números pares se reservan tradicionalmente para los funerales.",
+    "pt": "Ao visitar uma casa, leva flores, doces ou uma pequena lembrança para o anfitrião. Oferece um número ímpar de flores, pois os números pares são tradicionalmente reservados a funerais.",
+    "pt_BR": "Ao visitar uma casa, leve flores, doces ou uma lembrancinha para o anfitrião. Ofereça um número ímpar de flores, pois os números pares são tradicionalmente reservados a funerais.",
+    "fr": "Quand tu rends visite à quelqu'un, apporte des fleurs, des douceurs ou un petit cadeau pour l'hôte. Offre un nombre impair de fleurs, car les nombres pairs sont traditionnellement réservés aux enterrements.",
+    "de": "Bei einem Besuch bring Blumen, Süßigkeiten oder ein kleines Geschenk für die Gastgeber mit. Schenke eine ungerade Zahl Blumen, denn gerade Zahlen sind traditionell Beerdigungen vorbehalten."
+   }
+  },
+  {
+   "id": "ct-MD-09",
+   "category": "dress",
+   "text": {
+    "en": "Moldovans, particularly in Chișinău, tend to dress neatly and a bit smartly for daily life. Smart casual works well for restaurants, theatres and meetings.",
+    "it": "I moldavi, soprattutto a Chișinău, tendono a vestirsi in modo curato e un po' elegante nella vita quotidiana. Lo smart casual va bene per ristoranti, teatri e riunioni.",
+    "es": "Los moldavos, sobre todo en Chisináu, suelen vestir de forma cuidada y algo elegante en el día a día. El smart casual funciona bien para restaurantes, teatros y reuniones.",
+    "pt": "Os moldavos, sobretudo em Chisinau, tendem a vestir-se de forma cuidada e um pouco elegante no dia a dia. O smart casual funciona bem em restaurantes, teatros e reuniões.",
+    "pt_BR": "Os moldavos, principalmente em Chisinau, costumam se vestir de forma cuidada e um pouco elegante no dia a dia. O smart casual funciona bem em restaurantes, teatros e reuniões.",
+    "fr": "Les Moldaves, surtout à Chișinău, s'habillent volontiers avec soin et un peu d'élégance au quotidien. Le smart casual convient bien pour les restaurants, les théâtres et les rendez-vous.",
+    "de": "Moldauer, besonders in Chișinău, kleiden sich im Alltag meist gepflegt und etwas elegant. Smart Casual passt gut zu Restaurants, Theatern und Terminen."
+   }
+  },
+  {
+   "id": "ct-MD-10",
+   "category": "dress",
+   "text": {
+    "en": "Traditional embroidered blouses, called ie, and woven textiles are worn for festivals and special occasions. They are a point of pride, so compliment them if you see them.",
+    "it": "Le tradizionali camicie ricamate, chiamate ie, e i tessuti lavorati al telaio si indossano per feste e occasioni speciali. Sono motivo di orgoglio, quindi un complimento è gradito.",
+    "es": "Las blusas tradicionales bordadas, llamadas ie, y los tejidos hechos a mano se llevan en festivales y ocasiones especiales. Son motivo de orgullo, así que un cumplido es bienvenido.",
+    "pt": "As blusas tradicionais bordadas, chamadas ie, e os tecidos artesanais usam-se em festas e ocasiões especiais. São motivo de orgulho, por isso um elogio é bem-vindo.",
+    "pt_BR": "As blusas tradicionais bordadas, chamadas ie, e os tecidos artesanais são usados em festas e ocasiões especiais. São motivo de orgulho, então um elogio é bem-vindo.",
+    "fr": "Les chemises brodées traditionnelles, appelées ie, et les tissus tissés se portent lors des fêtes et occasions spéciales. Elles sont source de fierté, alors un compliment est le bienvenu.",
+    "de": "Traditionelle bestickte Blusen, Ie genannt, und gewebte Stoffe werden zu Festen und besonderen Anlässen getragen. Sie sind ein Stolz der Menschen, ein Kompliment kommt gut an."
+   }
+  },
+  {
+   "id": "ct-MD-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Most Moldovans are Orthodox Christian, and churches and monasteries are active places of worship. Dress modestly there, with shoulders and knees covered.",
+    "it": "La maggior parte dei moldavi è cristiana ortodossa e chiese e monasteri sono luoghi di culto attivi. Vesti in modo sobrio, con spalle e ginocchia coperte.",
+    "es": "La mayoría de los moldavos son cristianos ortodoxos, y las iglesias y los monasterios son lugares de culto en uso. Viste con modestia, con hombros y rodillas cubiertos.",
+    "pt": "A maioria dos moldavos é cristã ortodoxa, e as igrejas e os mosteiros são locais de culto ativos. Veste-te com discrição, com ombros e joelhos cobertos.",
+    "pt_BR": "A maioria dos moldavos é cristã ortodoxa, e as igrejas e os mosteiros são locais de culto ativos. Vista-se com discrição, com ombros e joelhos cobertos.",
+    "fr": "La plupart des Moldaves sont chrétiens orthodoxes, et les églises et monastères sont des lieux de culte actifs. Habille-toi sobrement, épaules et genoux couverts.",
+    "de": "Die meisten Moldauer sind orthodoxe Christen, und Kirchen und Klöster sind aktive Gotteshäuser. Kleide dich dezent mit bedeckten Schultern und Knien."
+   }
+  },
+  {
+   "id": "ct-MD-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "At the Orheiul Vechi cave monastery and other sacred sites, speak quietly and ask before photographing inside. Women often cover their hair in churches, although visitors are rarely required to.",
+    "it": "Al monastero rupestre di Orheiul Vechi e in altri luoghi sacri, parla a bassa voce e chiedi prima di fotografare all'interno. Le donne spesso si coprono i capelli in chiesa, anche se ai visitatori raramente è richiesto.",
+    "es": "En el monasterio rupestre de Orheiul Vechi y otros lugares sagrados, habla en voz baja y pregunta antes de fotografiar en el interior. Las mujeres suelen cubrirse el pelo en las iglesias, aunque a los visitantes rara vez se les exige.",
+    "pt": "No mosteiro rupestre de Orheiul Vechi e noutros locais sagrados, fala baixo e pergunta antes de fotografar no interior. As mulheres costumam cobrir o cabelo nas igrejas, embora aos visitantes raramente seja exigido.",
+    "pt_BR": "No mosteiro rupestre de Orheiul Vechi e em outros locais sagrados, fale baixo e pergunte antes de fotografar no interior. As mulheres costumam cobrir o cabelo nas igrejas, embora dos visitantes raramente seja exigido.",
+    "fr": "Au monastère troglodytique d'Orheiul Vechi et dans d'autres lieux sacrés, parle doucement et demande avant de photographier à l'intérieur. Les femmes se couvrent souvent les cheveux dans les églises, même si les visiteurs n'y sont rarement obligés.",
+    "de": "Im Höhlenkloster Orheiul Vechi und an anderen heiligen Orten sprich leise und frag, bevor du drinnen fotografierst. Frauen bedecken in Kirchen oft das Haar, von Besuchern wird das aber selten verlangt."
+   }
+  },
+  {
+   "id": "ct-MD-13",
+   "category": "gestures",
+   "text": {
+    "en": "Making eye contact while speaking and when toasting shows sincerity. Pointing with a finger at people or snapping fingers to call a waiter is considered rude.",
+    "it": "Mantenere il contatto visivo mentre si parla e durante un brindisi mostra sincerità. Puntare il dito contro qualcuno o schioccare le dita per chiamare un cameriere è considerato maleducato.",
+    "es": "Mantener el contacto visual al hablar y al brindar muestra sinceridad. Señalar a las personas con el dedo o chasquear los dedos para llamar a un camarero se considera de mala educación.",
+    "pt": "Manter o contacto visual ao falar e ao fazer um brinde demonstra sinceridade. Apontar o dedo a pessoas ou estalar os dedos para chamar um empregado é considerado indelicado.",
+    "pt_BR": "Manter o contato visual ao falar e ao brindar demonstra sinceridade. Apontar o dedo para as pessoas ou estalar os dedos para chamar um garçom é considerado indelicado.",
+    "fr": "Garder le contact visuel en parlant et en trinquant montre de la sincérité. Pointer quelqu'un du doigt ou claquer des doigts pour appeler un serveur est jugé impoli.",
+    "de": "Blickkontakt beim Sprechen und beim Anstoßen zeigt Aufrichtigkeit. Mit dem Finger auf Menschen zu zeigen oder mit den Fingern zu schnipsen, um den Kellner zu rufen, gilt als unhöflich."
+   }
+  },
+  {
+   "id": "ct-MD-14",
+   "category": "punctuality",
+   "text": {
+    "en": "Being on time is expected for business meetings and appointments. For friendly gatherings, arriving a little late is usually accepted.",
+    "it": "Essere puntuali è previsto per riunioni di lavoro e appuntamenti. Per gli incontri tra amici, arrivare un po' in ritardo di solito è accettato.",
+    "es": "Se espera puntualidad en reuniones de trabajo y citas. En reuniones de amigos, llegar un poco tarde suele aceptarse.",
+    "pt": "Espera-se pontualidade em reuniões de trabalho e marcações. Em encontros entre amigos, chegar um pouco atrasado costuma ser aceitável.",
+    "pt_BR": "Espera-se pontualidade em reuniões de trabalho e compromissos. Em encontros entre amigos, chegar um pouco atrasado geralmente é aceito.",
+    "fr": "La ponctualité est attendue pour les rendez-vous professionnels. Entre amis, arriver un peu en retard est généralement toléré.",
+    "de": "Pünktlichkeit wird bei Geschäftsterminen und Verabredungen erwartet. Bei Treffen unter Freunden ist eine kleine Verspätung meist akzeptiert."
+   }
+  },
+  {
+   "id": "ct-MD-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "Giving up your seat to older people, pregnant women and parents with small children on public transport is the norm. People appreciate a quiet tone on buses and trolleybuses.",
+    "it": "Cedere il posto ad anziani, donne in gravidanza e genitori con bambini piccoli sui mezzi pubblici è la norma. Su autobus e filobus si apprezza un tono di voce basso.",
+    "es": "Ceder el asiento a personas mayores, mujeres embarazadas y padres con niños pequeños en el transporte público es lo habitual. En autobuses y trolebuses se agradece un tono de voz bajo.",
+    "pt": "Ceder o lugar a pessoas idosas, grávidas e pais com crianças pequenas nos transportes públicos é a norma. Nos autocarros e troleicarros aprecia-se um tom de voz baixo.",
+    "pt_BR": "Ceder o assento a idosos, grávidas e pais com crianças pequenas no transporte público é a norma. Em ônibus e trólebus, um tom de voz baixo é apreciado.",
+    "fr": "Céder sa place aux personnes âgées, aux femmes enceintes et aux parents avec de jeunes enfants dans les transports en commun est la norme. Un ton discret est apprécié dans les bus et les trolleybus.",
+    "de": "Älteren Menschen, Schwangeren und Eltern mit kleinen Kindern im öffentlichen Nahverkehr den Platz anzubieten ist selbstverständlich. In Bussen und Oberleitungsbussen wird eine leise Stimme geschätzt."
+   }
+  },
+  {
+   "id": "ct-MD-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "It is polite to greet neighbours and shopkeepers, and to say \"mulțumesc\" (thank you) often. Small courtesies go a long way in smaller towns.",
+    "it": "È educato salutare vicini e negozianti e dire spesso \"mulțumesc\" (grazie). Piccole cortesie contano molto nei centri più piccoli.",
+    "es": "Es cortés saludar a los vecinos y comerciantes, y decir a menudo \"mulțumesc\" (gracias). Los pequeños gestos de cortesía cuentan mucho en las localidades pequeñas.",
+    "pt": "É educado cumprimentar vizinhos e lojistas e dizer muitas vezes \"mulțumesc\" (obrigado). Pequenas cortesias contam muito nas localidades mais pequenas.",
+    "pt_BR": "É educado cumprimentar vizinhos e lojistas e dizer \"mulțumesc\" (obrigado) com frequência. Pequenas gentilezas valem muito nas cidades menores.",
+    "fr": "Il est poli de saluer les voisins et les commerçants, et de dire souvent \"mulțumesc\" (merci). Les petites attentions comptent beaucoup dans les petites villes.",
+    "de": "Es ist höflich, Nachbarn und Ladenbesitzer zu grüßen und oft \"mulțumesc\" (danke) zu sagen. Kleine Höflichkeiten zählen in kleineren Orten viel."
+   }
+  },
+  {
+   "id": "ct-MD-17",
+   "category": "transport",
+   "text": {
+    "en": "In Chișinău, trolleybuses, buses and minibuses called marshrutkas are the main public transport. Pay the driver or conductor and tell them your stop in advance.",
+    "it": "A Chișinău, filobus, autobus e minibus chiamati marshrutke sono i principali mezzi pubblici. Paga all'autista o al bigliettaio e comunica la fermata in anticipo.",
+    "es": "En Chisináu, los trolebuses, autobuses y minibuses llamados marshrutkas son el principal transporte público. Paga al conductor o al cobrador y avisa de tu parada con antelación.",
+    "pt": "Em Chisinau, os troleicarros, autocarros e minibus chamados marshrutkas são o principal transporte público. Paga ao motorista ou ao revisor e avisa da tua paragem com antecedência.",
+    "pt_BR": "Em Chisinau, trólebus, ônibus e micro-ônibus chamados marshrutkas são o principal transporte público. Pague ao motorista ou ao cobrador e avise seu ponto com antecedência.",
+    "fr": "À Chișinău, les trolleybus, bus et minibus appelés marshrutkas sont les principaux transports en commun. Paie le chauffeur ou le receveur et indique ton arrêt à l'avance.",
+    "de": "In Chișinău sind Oberleitungsbusse, Busse und Minibusse, sogenannte Marschrutkas, die wichtigsten öffentlichen Verkehrsmittel. Zahle beim Fahrer oder Schaffner und sag deine Haltestelle früh an."
+   }
+  },
+  {
+   "id": "ct-MD-18",
+   "category": "transport",
+   "text": {
+    "en": "Marshrutkas also connect Chișinău with towns and villages and are often cheaper than trains. Carry small change, as drivers may not have much for large notes.",
+    "it": "Le marshrutke collegano anche Chișinău a città e villaggi e spesso costano meno dei treni. Porta spiccioli, perché gli autisti potrebbero non avere molto resto per le banconote grandi.",
+    "es": "Las marshrutkas también conectan Chisináu con ciudades y pueblos y suelen ser más baratas que el tren. Lleva monedas sueltas, ya que los conductores pueden no tener mucho cambio para billetes grandes.",
+    "pt": "As marshrutkas também ligam Chisinau a cidades e aldeias e costumam ser mais baratas do que o comboio. Leva trocos, pois os motoristas podem não ter muito troco para notas grandes.",
+    "pt_BR": "As marshrutkas também ligam Chisinau a cidades e vilarejos e costumam ser mais baratas que o trem. Leve trocados, pois os motoristas podem não ter muito troco para notas grandes.",
+    "fr": "Les marshrutkas relient aussi Chișinău aux villes et villages et sont souvent moins chères que le train. Prends de la monnaie, car les chauffeurs n'ont pas toujours de quoi rendre sur les gros billets.",
+    "de": "Marschrutkas verbinden Chișinău auch mit Städten und Dörfern und sind oft günstiger als der Zug. Halte Kleingeld bereit, denn Fahrer haben für große Scheine oft nicht viel Wechselgeld."
+   }
+  },
+  {
+   "id": "ct-MD-19",
+   "category": "language",
+   "text": {
+    "en": "Romanian is the main language of daily life, and Russian is also widely understood, especially in cities and among older people. Gagauz is spoken in the south.",
+    "it": "Il rumeno è la lingua principale della vita quotidiana e anche il russo è molto compreso, soprattutto nelle città e tra gli anziani. Il gagauzo si parla nel sud.",
+    "es": "El rumano es la lengua principal de la vida diaria, y el ruso también se entiende mucho, sobre todo en las ciudades y entre las personas mayores. El gagauzo se habla en el sur.",
+    "pt": "O romeno é a língua principal da vida quotidiana, e o russo também é muito compreendido, sobretudo nas cidades e entre os mais velhos. O gagauz fala-se no sul.",
+    "pt_BR": "O romeno é a língua principal do dia a dia, e o russo também é bastante compreendido, principalmente nas cidades e entre os mais velhos. O gagauz é falado no sul.",
+    "fr": "Le roumain est la langue principale de la vie quotidienne, et le russe est aussi largement compris, surtout en ville et chez les personnes âgées. Le gagaouze est parlé dans le sud.",
+    "de": "Rumänisch ist die wichtigste Alltagssprache, und Russisch wird besonders in Städten und von Älteren ebenfalls weithin verstanden. Gagausisch wird im Süden gesprochen."
+   }
+  },
+  {
+   "id": "ct-MD-20",
+   "category": "language",
+   "text": {
+    "en": "Learning a few Romanian phrases like \"Bună\" (hello), \"Mulțumesc\" (thank you) and \"Noroc\" (cheers) is warmly received. Many young people also speak English.",
+    "it": "Imparare qualche frase di rumeno come \"Bună\" (ciao), \"Mulțumesc\" (grazie) e \"Noroc\" (salute) è molto apprezzato. Molti giovani parlano anche inglese.",
+    "es": "Aprender algunas frases en rumano como \"Bună\" (hola), \"Mulțumesc\" (gracias) y \"Noroc\" (salud) se recibe con cariño. Muchos jóvenes también hablan inglés.",
+    "pt": "Aprender algumas frases em romeno, como \"Bună\" (olá), \"Mulțumesc\" (obrigado) e \"Noroc\" (saúde), é muito bem recebido. Muitos jovens também falam inglês.",
+    "pt_BR": "Aprender algumas frases em romeno, como \"Bună\" (oi), \"Mulțumesc\" (obrigado) e \"Noroc\" (saúde), é muito bem recebido. Muitos jovens também falam inglês.",
+    "fr": "Apprendre quelques phrases de roumain comme \"Bună\" (salut), \"Mulțumesc\" (merci) et \"Noroc\" (santé) est très bien accueilli. Beaucoup de jeunes parlent aussi anglais.",
+    "de": "Ein paar rumänische Wendungen wie \"Bună\" (Hallo), \"Mulțumesc\" (danke) und \"Noroc\" (Prost) kommen gut an. Viele junge Leute sprechen auch Englisch."
+   }
+  },
+  {
+   "id": "ct-MD-21",
+   "category": "festivals",
+   "text": {
+    "en": "On 1 March, Moldovans celebrate Mărțișor, giving small red-and-white string charms to welcome spring. Receiving one is a kind gesture, often worn until the first blossoms appear.",
+    "it": "Il 1 marzo i moldavi celebrano il Mărțișor, regalando piccoli portafortuna con un filo rosso e bianco per accogliere la primavera. Riceverne uno è un gesto gentile, spesso indossato fino alla comparsa dei primi fiori.",
+    "es": "El 1 de marzo los moldavos celebran el Mărțișor, regalando pequeños amuletos con un cordón rojo y blanco para recibir la primavera. Recibir uno es un gesto amable, que a menudo se lleva hasta que aparecen las primeras flores.",
+    "pt": "A 1 de março os moldavos celebram o Mărțișor, oferecendo pequenos amuletos com um fio vermelho e branco para receber a primavera. Receber um é um gesto simpático, muitas vezes usado até aparecerem as primeiras flores.",
+    "pt_BR": "Em 1º de março os moldavos celebram o Mărțișor, presenteando pequenos amuletos com um fio vermelho e branco para receber a primavera. Ganhar um é um gesto gentil, muitas vezes usado até surgirem as primeiras flores.",
+    "fr": "Le 1er mars, les Moldaves célèbrent le Mărțișor en offrant de petits porte-bonheur à fil rouge et blanc pour accueillir le printemps. En recevoir un est un geste gentil, souvent porté jusqu'aux premières fleurs.",
+    "de": "Am 1. März feiern die Moldauer das Mărțișor und schenken kleine Glücksbringer mit rot-weißer Schnur, um den Frühling zu begrüßen. Einen zu erhalten ist eine freundliche Geste, oft trägt man ihn bis zu den ersten Blüten."
+   }
+  },
+  {
+   "id": "ct-MD-22",
+   "category": "festivals",
+   "text": {
+    "en": "Independence Day on 27 August and Limba Noastră (Our Language Day) on 31 August are celebrated with concerts and cultural events. Orthodox Easter is a major family holiday, with its own date each year.",
+    "it": "Il Giorno dell'Indipendenza, il 27 agosto, e Limba Noastră (Giornata della nostra lingua), il 31 agosto, si celebrano con concerti ed eventi culturali. La Pasqua ortodossa è una grande festa di famiglia, con una data diversa ogni anno.",
+    "es": "El Día de la Independencia, el 27 de agosto, y Limba Noastră (Día de Nuestra Lengua), el 31 de agosto, se celebran con conciertos y eventos culturales. La Pascua ortodoxa es una gran fiesta familiar, con fecha distinta cada año.",
+    "pt": "O Dia da Independência, a 27 de agosto, e o Limba Noastră (Dia da Nossa Língua), a 31 de agosto, celebram-se com concertos e eventos culturais. A Páscoa ortodoxa é uma grande festa de família, com data diferente todos os anos.",
+    "pt_BR": "O Dia da Independência, em 27 de agosto, e o Limba Noastră (Dia da Nossa Língua), em 31 de agosto, são celebrados com shows e eventos culturais. A Páscoa ortodoxa é uma grande festa de família, com data diferente a cada ano.",
+    "fr": "La fête de l'Indépendance, le 27 août, et Limba Noastră (Journée de notre langue), le 31 août, se célèbrent avec des concerts et des événements culturels. Pâques orthodoxe est une grande fête de famille, dont la date change chaque année.",
+    "de": "Der Unabhängigkeitstag am 27. August und Limba Noastră (Tag unserer Sprache) am 31. August werden mit Konzerten und Kulturveranstaltungen gefeiert. Das orthodoxe Ostern ist ein großes Familienfest, dessen Datum sich jedes Jahr ändert."
+   }
+  },
+  {
+   "id": "ct-MD-23",
+   "category": "family",
+   "text": {
+    "en": "Family ties are strong, and many households include several generations. Asking about someone's parents, children or grandparents is seen as caring.",
+    "it": "I legami familiari sono forti e molte case ospitano più generazioni. Chiedere di genitori, figli o nonni di qualcuno è visto come un gesto premuroso.",
+    "es": "Los lazos familiares son fuertes y muchos hogares incluyen varias generaciones. Preguntar por los padres, los hijos o los abuelos de alguien se ve como una muestra de cariño.",
+    "pt": "Os laços familiares são fortes e muitos lares incluem várias gerações. Perguntar pelos pais, filhos ou avós de alguém é visto como um gesto de carinho.",
+    "pt_BR": "Os laços familiares são fortes e muitas casas reúnem várias gerações. Perguntar pelos pais, filhos ou avós de alguém é visto como um gesto de carinho.",
+    "fr": "Les liens familiaux sont forts et beaucoup de foyers réunissent plusieurs générations. Demander des nouvelles des parents, des enfants ou des grands-parents est vu comme une attention bienveillante.",
+    "de": "Familienbande sind stark, und in vielen Haushalten leben mehrere Generationen zusammen. Nach Eltern, Kindern oder Großeltern zu fragen gilt als fürsorglich."
+   }
+  },
+  {
+   "id": "ct-MD-24",
+   "category": "money",
+   "text": {
+    "en": "The currency is the Moldovan leu (MDL). Cards are accepted in Chișinău and larger shops, but carry cash for markets, minibuses and rural areas.",
+    "it": "La valuta è il leu moldavo (MDL). Le carte sono accettate a Chișinău e nei negozi più grandi, ma porta contanti per mercati, minibus e zone rurali.",
+    "es": "La moneda es el leu moldavo (MDL). Las tarjetas se aceptan en Chisináu y en tiendas grandes, pero lleva efectivo para mercados, minibuses y zonas rurales.",
+    "pt": "A moeda é o leu moldavo (MDL). Os cartões são aceites em Chisinau e em lojas maiores, mas leva dinheiro vivo para mercados, minibus e zonas rurais.",
+    "pt_BR": "A moeda é o leu moldavo (MDL). Cartões são aceitos em Chisinau e em lojas maiores, mas leve dinheiro em espécie para mercados, micro-ônibus e áreas rurais.",
+    "fr": "La monnaie est le leu moldave (MDL). Les cartes sont acceptées à Chișinău et dans les grands magasins, mais prends des espèces pour les marchés, les minibus et les zones rurales.",
+    "de": "Die Währung ist der Moldau-Leu (MDL). Karten werden in Chișinău und größeren Geschäften akzeptiert, aber nimm Bargeld für Märkte, Minibusse und ländliche Gebiete mit."
+   }
+  },
+  {
+   "id": "ct-MD-25",
+   "category": "photography",
+   "text": {
+    "en": "Ask permission before photographing people, especially at religious ceremonies and in villages. Avoid photographing government buildings and military sites.",
+    "it": "Chiedi il permesso prima di fotografare le persone, soprattutto durante le cerimonie religiose e nei villaggi. Evita di fotografare edifici governativi e siti militari.",
+    "es": "Pide permiso antes de fotografiar a las personas, sobre todo en ceremonias religiosas y en los pueblos. Evita fotografiar edificios gubernamentales e instalaciones militares.",
+    "pt": "Pede autorização antes de fotografar pessoas, sobretudo em cerimónias religiosas e nas aldeias. Evita fotografar edifícios governamentais e instalações militares.",
+    "pt_BR": "Peça permissão antes de fotografar pessoas, principalmente em cerimônias religiosas e nos vilarejos. Evite fotografar prédios do governo e instalações militares.",
+    "fr": "Demande la permission avant de photographier des personnes, surtout lors de cérémonies religieuses et dans les villages. Évite de photographier les bâtiments gouvernementaux et les sites militaires.",
+    "de": "Frag um Erlaubnis, bevor du Menschen fotografierst, besonders bei religiösen Zeremonien und in Dörfern. Vermeide Fotos von Regierungsgebäuden und Militäranlagen."
+   }
+  },
+  {
+   "id": "ct-MD-26",
+   "category": "nightlife",
+   "text": {
+    "en": "Chișinău has a lively cafe, restaurant and live-music scene, especially on weekends. Evenings often start with a long dinner before moving on to music or a walk.",
+    "it": "Chișinău ha una vivace scena di caffè, ristoranti e musica dal vivo, soprattutto nei fine settimana. Le serate spesso iniziano con una lunga cena prima di passare alla musica o a una passeggiata.",
+    "es": "Chisináu tiene una animada oferta de cafés, restaurantes y música en directo, sobre todo los fines de semana. Las noches suelen empezar con una larga cena antes de pasar a la música o a dar un paseo.",
+    "pt": "Chisinau tem uma cena animada de cafés, restaurantes e música ao vivo, sobretudo ao fim de semana. As noites começam muitas vezes com um jantar demorado antes de seguir para música ou um passeio.",
+    "pt_BR": "Chisinau tem uma cena animada de cafés, restaurantes e música ao vivo, principalmente nos fins de semana. As noites muitas vezes começam com um jantar demorado antes de seguir para música ou uma caminhada.",
+    "fr": "Chișinău a une scène animée de cafés, de restaurants et de musique live, surtout le week-end. Les soirées commencent souvent par un long dîner avant de passer à la musique ou à une balade.",
+    "de": "Chișinău hat eine lebendige Szene aus Cafés, Restaurants und Livemusik, besonders am Wochenende. Abende beginnen oft mit einem langen Essen, bevor man zur Musik oder zu einem Spaziergang übergeht."
+   }
+  },
+  {
+   "id": "ct-MD-27",
+   "category": "nature",
+   "text": {
+    "en": "Moldova's rolling countryside, vineyards and the Orheiul Vechi landscape are great for slow, scenic days out. Underground wine cellars such as Cricova and Mileștii Mici can be visited on guided tours.",
+    "it": "La campagna ondulata, i vigneti e il paesaggio di Orheiul Vechi sono ideali per giornate tranquille e panoramiche. Le cantine sotterranee come Cricova e Mileștii Mici si visitano con tour guidati.",
+    "es": "El campo ondulado, los viñedos y el paisaje de Orheiul Vechi son ideales para jornadas tranquilas y panorámicas. Las bodegas subterráneas como Cricova y Mileștii Mici se visitan con tours guiados.",
+    "pt": "O campo ondulado, as vinhas e a paisagem de Orheiul Vechi são ideais para dias tranquilos e panorâmicos. As caves subterrâneas como Cricova e Mileștii Mici visitam-se com visitas guiadas.",
+    "pt_BR": "O campo ondulado, os vinhedos e a paisagem de Orheiul Vechi são ideais para dias tranquilos e panorâmicos. As adegas subterrâneas como Cricova e Mileștii Mici podem ser visitadas em tours guiados.",
+    "fr": "La campagne vallonnée, les vignobles et le paysage d'Orheiul Vechi se prêtent bien à des journées paisibles et pittoresques. Les caves souterraines comme Cricova et Mileștii Mici se visitent lors de visites guidées.",
+    "de": "Die hügelige Landschaft, die Weinberge und das Gebiet von Orheiul Vechi eignen sich gut für ruhige, schöne Ausflüge. Unterirdische Weinkeller wie Cricova und Mileștii Mici lassen sich bei Führungen besichtigen."
+   }
+  },
+  {
+   "id": "ct-MD-28",
+   "category": "safety",
+   "text": {
+    "en": "Moldova is generally safe for visitors, but take normal precautions in crowded places and keep valuables out of sight. The Transnistria region has its own checkpoints, so check entry rules before travelling there.",
+    "it": "La Moldavia è in genere sicura per i visitatori, ma prendi le normali precauzioni nei luoghi affollati e tieni gli oggetti di valore fuori vista. La regione della Transnistria ha propri posti di controllo, quindi verifica le regole di ingresso prima di andarci.",
+    "es": "Moldavia suele ser segura para los visitantes, pero toma las precauciones habituales en lugares concurridos y mantén los objetos de valor fuera de la vista. La región de Transnistria tiene sus propios controles, así que consulta las normas de entrada antes de viajar allí.",
+    "pt": "A Moldávia é geralmente segura para os visitantes, mas toma as precauções normais em locais movimentados e mantém os objetos de valor fora de vista. A região da Transnístria tem os seus próprios postos de controlo, por isso verifica as regras de entrada antes de viajar para lá.",
+    "pt_BR": "A Moldávia geralmente é segura para os visitantes, mas tome as precauções normais em locais movimentados e mantenha objetos de valor fora de vista. A região da Transnístria tem seus próprios postos de controle, então verifique as regras de entrada antes de ir.",
+    "fr": "La Moldavie est généralement sûre pour les visiteurs, mais prends les précautions habituelles dans les lieux fréquentés et garde tes objets de valeur à l'abri des regards. La région de Transnistrie a ses propres points de contrôle ; vérifie les règles d'entrée avant d'y aller.",
+    "de": "Moldau ist für Besucher im Allgemeinen sicher, aber triff an belebten Orten die üblichen Vorkehrungen und halte Wertsachen außer Sicht. Die Region Transnistrien hat eigene Kontrollpunkte, prüfe also vor der Reise die Einreiseregeln."
+   }
+  },
+  {
+   "id": "ct-MD-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Moldovans are proud of their folk traditions, including ceramics, weaving, ballads such as Miorița and the lively hora dance. Showing curiosity about these is a lovely way to bond.",
+    "it": "I moldavi sono orgogliosi delle loro tradizioni popolari, tra cui ceramica, tessitura, ballate come Miorița e la vivace danza hora. Mostrare curiosità per queste cose è un bel modo per creare un legame.",
+    "es": "Los moldavos están orgullosos de sus tradiciones populares, como la cerámica, el tejido, baladas como Miorița y la animada danza hora. Mostrar curiosidad por ellas es una bonita forma de conectar.",
+    "pt": "Os moldavos têm orgulho das suas tradições populares, como a cerâmica, a tecelagem, baladas como a Miorița e a animada dança hora. Mostrar curiosidade por estas coisas é uma bela forma de criar ligação.",
+    "pt_BR": "Os moldavos têm orgulho de suas tradições populares, como a cerâmica, a tecelagem, baladas como a Miorița e a animada dança hora. Mostrar curiosidade por elas é uma bela forma de criar conexão.",
+    "fr": "Les Moldaves sont fiers de leurs traditions populaires, dont la céramique, le tissage, des ballades comme Miorița et la danse animée de la hora. Montrer de la curiosité pour tout cela est une belle façon de créer du lien.",
+    "de": "Die Moldauer sind stolz auf ihre Volkstraditionen, darunter Keramik, Weberei, Balladen wie Miorița und den lebhaften Hora-Tanz. Neugier darauf zu zeigen ist eine schöne Möglichkeit, Kontakt zu knüpfen."
+   }
+  },
+  {
+   "id": "ct-MD-30",
+   "category": "dining",
+   "text": {
+    "en": "Toasts are common at shared meals, and hosts may propose one. Raise your glass, make eye contact and say \"Noroc\" (cheers); a non-alcoholic drink is just as welcome.",
+    "it": "I brindisi sono frequenti durante i pasti condivisi e chi ospita può proporne uno. Alza il bicchiere, guarda negli occhi e dì \"Noroc\" (salute); una bevanda analcolica è altrettanto gradita.",
+    "es": "Los brindis son habituales en las comidas compartidas y el anfitrión puede proponer uno. Levanta la copa, mira a los ojos y di \"Noroc\" (salud); una bebida sin alcohol es igual de bienvenida.",
+    "pt": "Os brindes são comuns nas refeições partilhadas e o anfitrião pode propor um. Levanta o copo, olha nos olhos e diz \"Noroc\" (saúde); uma bebida sem álcool é igualmente bem-vinda.",
+    "pt_BR": "Os brindes são comuns nas refeições compartilhadas e o anfitrião pode propor um. Levante o copo, olhe nos olhos e diga \"Noroc\" (saúde); uma bebida sem álcool é igualmente bem-vinda.",
+    "fr": "Les toasts sont courants lors des repas partagés et l'hôte peut en proposer un. Lève ton verre, regarde dans les yeux et dis \"Noroc\" (santé) ; une boisson sans alcool est tout aussi bienvenue.",
+    "de": "Trinksprüche sind bei gemeinsamen Mahlzeiten üblich, und der Gastgeber kann einen aussprechen. Hebe das Glas, schau in die Augen und sage \"Noroc\" (Prost); ein alkoholfreies Getränk ist genauso willkommen."
+   }
+  }
+ ]
+}

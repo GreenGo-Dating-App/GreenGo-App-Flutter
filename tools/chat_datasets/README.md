@@ -34,3 +34,19 @@ tips_<n>.json - JSON object keyed by ISO2:
 ```json
 {"IT": [{"id": "ct-IT-01", "category": "dining", "text": {"en": "...", "...": "..."}}]}
 ```
+
+## Status (2026-10-12)
+Final build: quotes 3,265 (verbatim-verified against Wikiquote), icebreakers 997, sentences 2,011,
+cultural tips 2,550 (85 countries x 30), keywords 63,494 aliases (7,689 attractions, 4,645 cities,
+84 countries). Cultural tips are partly from model knowledge where Wikipedia's culture articles are
+silent on etiquette (tipping, transport, emergency numbers): worth a native spot-check.
+
+## Licences
+- `freq/*_50k.txt`: FrequencyWords by Hermit Dave (github.com/hermitdave/FrequencyWords), content
+  CC BY-SA 4.0 (derived from OpenSubtitles). The app's difficulty badge uses the derived `freq.json`,
+  which is therefore CC BY-SA 4.0 - credit it in the app's open-source / data licences page.
+- Quotes: public-domain authors (died before 1956) and traditional proverbs; source = Wikiquote page.
+- Keyword names: Wikidata labels/aliases (CC0).
+
+Rebuild: `node tools/chat_datasets/build_keywords.js --project greengo-chat` then
+`node tools/chat_datasets/build_chat_datasets.js --verify-quotes [--upload --project greengo-chat]`.

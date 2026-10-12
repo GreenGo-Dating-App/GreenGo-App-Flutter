@@ -1,0 +1,1178 @@
+{
+ "VA": [
+  {
+   "id": "ct-VA-01",
+   "category": "greetings",
+   "text": {
+    "en": "In Vatican City a polite 'Buongiorno' or a simple handshake is the usual greeting; staff and guards appreciate a calm, courteous tone.",
+    "it": "In Vaticano un cortese «Buongiorno» o una semplice stretta di mano è il saluto abituale; personale e guardie apprezzano un tono calmo e cortese.",
+    "es": "En el Vaticano lo habitual es saludar con un educado «Buongiorno» o un apretón de manos; el personal y los guardias agradecen un tono tranquilo y cortés.",
+    "pt": "No Vaticano, o habitual é cumprimentar com um educado «Buongiorno» ou um aperto de mão; o pessoal e os guardas apreciam um tom calmo e cortês.",
+    "pt_BR": "No Vaticano, o habitual é cumprimentar com um educado «Buongiorno» ou um aperto de mão; os funcionários e os guardas apreciam um tom calmo e cortês.",
+    "fr": "Au Vatican, un poli «Buongiorno» ou une simple poignée de main est la façon habituelle de saluer ; le personnel et les gardes apprécient un ton calme et courtois.",
+    "de": "Im Vatikan grüßt man üblicherweise mit einem höflichen «Buongiorno» oder einem Händedruck; Personal und Wachen schätzen einen ruhigen, höflichen Ton."
+   }
+  },
+  {
+   "id": "ct-VA-02",
+   "category": "conversation",
+   "text": {
+    "en": "Visitors often chat about art, history and architecture here; asking what someone found most striking in the museums is an easy conversation starter.",
+    "it": "Qui i visitatori parlano volentieri di arte, storia e architettura; chiedere cosa ha colpito di più nei musei è un facile spunto di conversazione.",
+    "es": "Aquí los visitantes suelen hablar de arte, historia y arquitectura; preguntar qué fue lo que más impresionó en los museos es una forma fácil de empezar una conversación.",
+    "pt": "Aqui os visitantes costumam falar de arte, história e arquitetura; perguntar o que mais impressionou nos museus é uma forma fácil de começar conversa.",
+    "pt_BR": "Aqui os visitantes costumam falar de arte, história e arquitetura; perguntar o que mais impressionou nos museus é um jeito fácil de começar uma conversa.",
+    "fr": "Les visiteurs aiment parler d'art, d'histoire et d'architecture ; demander ce qui a le plus marqué dans les musées est une façon simple d'engager la conversation.",
+    "de": "Besucher sprechen hier gern über Kunst, Geschichte und Architektur; die Frage, was in den Museen am meisten beeindruckt hat, ist ein leichter Gesprächseinstieg."
+   }
+  },
+  {
+   "id": "ct-VA-03",
+   "category": "dining",
+   "text": {
+    "en": "Vatican City is tiny and has few places to eat, so most visitors have lunch in the nearby Borgo and Prati neighborhoods of Rome, where Italian meal habits apply.",
+    "it": "La Città del Vaticano è minuscola e ha pochi locali, per cui la maggior parte dei visitatori pranza nei vicini rioni Borgo e Prati di Roma, dove valgono le abitudini a tavola italiane.",
+    "es": "La Ciudad del Vaticano es diminuta y tiene pocos sitios para comer, así que la mayoría de visitantes almuerza en los cercanos barrios romanos de Borgo y Prati, donde rigen las costumbres italianas.",
+    "pt": "A Cidade do Vaticano é minúscula e tem poucos sítios para comer, por isso a maioria dos visitantes almoça nos bairros vizinhos de Borgo e Prati, em Roma, onde valem os hábitos italianos à mesa.",
+    "pt_BR": "A Cidade do Vaticano é minúscula e tem poucos lugares para comer, por isso a maioria dos visitantes almoça nos bairros vizinhos de Borgo e Prati, em Roma, onde valem os costumes italianos à mesa.",
+    "fr": "La Cité du Vatican est minuscule et compte peu de restaurants ; la plupart des visiteurs déjeunent donc dans les quartiers voisins de Borgo et Prati, à Rome, où s'appliquent les usages italiens.",
+    "de": "Die Vatikanstadt ist winzig und hat wenige Lokale, daher essen die meisten Besucher in den benachbarten römischen Vierteln Borgo und Prati, wo italienische Tischsitten gelten."
+   }
+  },
+  {
+   "id": "ct-VA-04",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping is not expected at the Vatican; in nearby Roman restaurants a small coin tip or rounding up the bill is appreciated but optional.",
+    "it": "Al Vaticano la mancia non è richiesta; nei ristoranti romani vicini lasciare qualche moneta o arrotondare il conto è gradito ma facoltativo.",
+    "es": "En el Vaticano no se espera propina; en los restaurantes romanos cercanos se agradece dejar unas monedas o redondear la cuenta, pero es opcional.",
+    "pt": "No Vaticano não se espera gorjeta; nos restaurantes romanos próximos, deixar algumas moedas ou arredondar a conta é apreciado, mas opcional.",
+    "pt_BR": "No Vaticano não se espera gorjeta; nos restaurantes romanos próximos, deixar algumas moedas ou arredondar a conta é bem-vindo, mas opcional.",
+    "fr": "Le pourboire n'est pas attendu au Vatican ; dans les restaurants romains voisins, laisser quelques pièces ou arrondir l'addition est apprécié mais facultatif.",
+    "de": "Im Vatikan wird kein Trinkgeld erwartet; in den nahen römischen Restaurants freut man sich über ein paar Münzen oder aufgerundete Beträge, es ist aber freiwillig."
+   }
+  },
+  {
+   "id": "ct-VA-05",
+   "category": "gifts",
+   "text": {
+    "en": "Religious souvenirs such as rosaries, medals and books are popular gifts here; small and simple items are fine, and a blessing is never assumed to be included.",
+    "it": "Souvenir religiosi come rosari, medaglie e libri sono regali diffusi; vanno bene oggetti piccoli e semplici, e non si dà per scontato che includano una benedizione.",
+    "es": "Los recuerdos religiosos como rosarios, medallas y libros son regalos habituales; sirven objetos pequeños y sencillos, y no se da por hecho que incluyan una bendición.",
+    "pt": "Lembranças religiosas como terços, medalhas e livros são presentes comuns; objetos pequenos e simples chegam bem, e não se assume que incluam uma bênção.",
+    "pt_BR": "Lembranças religiosas como terços, medalhas e livros são presentes comuns; objetos pequenos e simples servem bem, e não se presume que incluam uma bênção.",
+    "fr": "Les souvenirs religieux comme les chapelets, les médailles et les livres sont des cadeaux courants ; de petits objets simples conviennent, sans présumer qu'une bénédiction y soit incluse.",
+    "de": "Religiöse Souvenirs wie Rosenkränze, Medaillen und Bücher sind beliebte Geschenke; kleine, schlichte Dinge genügen, und ein Segen ist nicht automatisch dabei."
+   }
+  },
+  {
+   "id": "ct-VA-06",
+   "category": "dress",
+   "text": {
+    "en": "Shoulders and knees must be covered to enter St. Peter's Basilica; tank tops, short shorts and miniskirts can get you turned away at the door.",
+    "it": "Per entrare nella Basilica di San Pietro spalle e ginocchia devono essere coperte; canottiere, pantaloncini corti e minigonne possono far negare l'accesso.",
+    "es": "Para entrar en la Basílica de San Pedro hay que llevar hombros y rodillas cubiertos; con camisetas de tirantes, shorts cortos o minifaldas pueden no dejarte pasar.",
+    "pt": "Para entrar na Basílica de São Pedro é preciso ter ombros e joelhos cobertos; com camisolas de alças, calções curtos ou minissaias podem não te deixar entrar.",
+    "pt_BR": "Para entrar na Basílica de São Pedro é preciso ter ombros e joelhos cobertos; com regata, short curto ou minissaia podem não deixar você entrar.",
+    "fr": "Pour entrer dans la basilique Saint-Pierre, épaules et genoux doivent être couverts ; débardeurs, shorts courts et minijupes peuvent vous faire refuser l'accès.",
+    "de": "Für den Petersdom müssen Schultern und Knie bedeckt sein; mit Trägershirt, kurzen Shorts oder Minirock kann man am Eingang abgewiesen werden."
+   }
+  },
+  {
+   "id": "ct-VA-07",
+   "category": "dress",
+   "text": {
+    "en": "Carry a light scarf or shawl in summer; it is an easy way to cover your shoulders when you reach the basilica or the Sistine Chapel.",
+    "it": "In estate porta con te una sciarpa o uno scialle leggero: è un modo semplice per coprire le spalle all'arrivo in basilica o alla Cappella Sistina.",
+    "es": "En verano lleva un pañuelo o chal ligero: es una forma sencilla de cubrirte los hombros al llegar a la basílica o a la Capilla Sixtina.",
+    "pt": "No verão leva um lenço ou xaile leve: é uma forma simples de cobrir os ombros ao chegares à basílica ou à Capela Sistina.",
+    "pt_BR": "No verão leve um lenço ou xale leve: é um jeito simples de cobrir os ombros ao chegar à basílica ou à Capela Sistina.",
+    "fr": "En été, emportez un foulard ou un châle léger : c'est un moyen simple de vous couvrir les épaules en arrivant à la basilique ou à la chapelle Sixtine.",
+    "de": "Nimm im Sommer ein leichtes Tuch oder einen Schal mit; so bedeckst du ganz einfach die Schultern, wenn du zum Dom oder zur Sixtinischen Kapelle kommst."
+   }
+  },
+  {
+   "id": "ct-VA-08",
+   "category": "religion_sites",
+   "text": {
+    "en": "St. Peter's Basilica is a working church: keep your voice low, remove hats, and do not walk through areas set aside for prayer or services.",
+    "it": "La Basilica di San Pietro è una chiesa in uso: parla a bassa voce, togli il cappello e non attraversare le zone riservate alla preghiera o alle funzioni.",
+    "es": "La Basílica de San Pedro es una iglesia en uso: habla en voz baja, quítate el sombrero y no atravieses las zonas reservadas a la oración o a los oficios.",
+    "pt": "A Basílica de São Pedro é uma igreja em uso: fala baixo, tira o chapéu e não atravesses as zonas reservadas à oração ou às celebrações.",
+    "pt_BR": "A Basílica de São Pedro é uma igreja em uso: fale baixo, tire o chapéu e não atravesse as áreas reservadas à oração ou às celebrações.",
+    "fr": "La basilique Saint-Pierre est une église en activité : parlez à voix basse, retirez votre chapeau et ne traversez pas les zones réservées à la prière ou aux offices.",
+    "de": "Der Petersdom ist eine aktive Kirche: Sprich leise, nimm die Kopfbedeckung ab und durchquere keine Bereiche, die dem Gebet oder Gottesdiensten vorbehalten sind."
+   }
+  },
+  {
+   "id": "ct-VA-09",
+   "category": "religion_sites",
+   "text": {
+    "en": "Entry to St. Peter's Square and the Basilica is free, but expect a security check and a queue, so arrive early in the morning to wait less.",
+    "it": "L'ingresso in Piazza San Pietro e nella Basilica è gratuito, ma c'è un controllo di sicurezza con coda: arriva presto al mattino per aspettare meno.",
+    "es": "La entrada a la Plaza de San Pedro y a la Basílica es gratuita, pero hay control de seguridad y cola; llega temprano por la mañana para esperar menos.",
+    "pt": "A entrada na Praça de São Pedro e na Basílica é gratuita, mas há controlo de segurança e fila; chega cedo de manhã para esperares menos.",
+    "pt_BR": "A entrada na Praça de São Pedro e na Basílica é gratuita, mas há controle de segurança e fila; chegue cedo de manhã para esperar menos.",
+    "fr": "L'entrée sur la place Saint-Pierre et dans la basilique est gratuite, mais il y a un contrôle de sécurité et une file ; arrivez tôt le matin pour attendre moins.",
+    "de": "Der Eintritt zum Petersplatz und zum Dom ist kostenlos, aber es gibt eine Sicherheitskontrolle und Warteschlangen; komm früh am Morgen, dann wartest du weniger."
+   }
+  },
+  {
+   "id": "ct-VA-10",
+   "category": "religion_sites",
+   "text": {
+    "en": "Papal general audiences and major ceremonies need free tickets obtained in advance; check the Holy See's official channels instead of paying a reseller.",
+    "it": "Le udienze generali del Papa e le grandi cerimonie richiedono biglietti gratuiti da ritirare in anticipo; usa i canali ufficiali della Santa Sede invece di pagare un rivenditore.",
+    "es": "Las audiencias generales del Papa y las grandes ceremonias requieren entradas gratuitas que se obtienen con antelación; usa los canales oficiales de la Santa Sede en lugar de pagar a un revendedor.",
+    "pt": "As audiências gerais do Papa e as grandes cerimónias exigem bilhetes gratuitos pedidos com antecedência; usa os canais oficiais da Santa Sé em vez de pagares a um revendedor.",
+    "pt_BR": "As audiências gerais do Papa e as grandes cerimônias exigem ingressos gratuitos obtidos com antecedência; use os canais oficiais da Santa Sé em vez de pagar a um revendedor.",
+    "fr": "Les audiences générales du pape et les grandes cérémonies exigent des billets gratuits à obtenir à l'avance ; passez par les canaux officiels du Saint-Siège plutôt que de payer un revendeur.",
+    "de": "Für die Generalaudienzen des Papstes und große Feiern braucht man kostenlose Tickets, die man vorab besorgt; nutze die offiziellen Kanäle des Heiligen Stuhls statt eines Wiederverkäufers."
+   }
+  },
+  {
+   "id": "ct-VA-11",
+   "category": "gestures",
+   "text": {
+    "en": "Pointing at people or tapping on glass cases is considered impolite; in the museums use gentle gestures and keep your hands off statues and walls.",
+    "it": "Indicare le persone col dito o battere sulle teche è maleducato; nei musei usa gesti discreti e non toccare statue e pareti.",
+    "es": "Señalar a la gente con el dedo o golpear las vitrinas se considera de mala educación; en los museos usa gestos discretos y no toques estatuas ni paredes.",
+    "pt": "Apontar para as pessoas ou bater nas vitrinas é considerado mal-educado; nos museus usa gestos discretos e não toques em estátuas nem paredes.",
+    "pt_BR": "Apontar para as pessoas ou bater nas vitrines é considerado falta de educação; nos museus use gestos discretos e não toque em estátuas nem paredes.",
+    "fr": "Montrer les gens du doigt ou taper sur les vitrines est jugé impoli ; dans les musées, restez discret et ne touchez ni les statues ni les murs.",
+    "de": "Mit dem Finger auf Menschen zu zeigen oder gegen Vitrinen zu klopfen gilt als unhöflich; in den Museen bleib dezent und fass weder Statuen noch Wände an."
+   }
+  },
+  {
+   "id": "ct-VA-12",
+   "category": "punctuality",
+   "text": {
+    "en": "Vatican Museums tickets are for a set time slot, so arrive 15 to 20 minutes early to clear security without losing your entry window.",
+    "it": "I biglietti dei Musei Vaticani sono a fascia oraria: arriva 15-20 minuti prima per passare i controlli senza perdere il tuo turno d'ingresso.",
+    "es": "Las entradas de los Museos Vaticanos son para una franja horaria: llega 15 o 20 minutos antes para pasar el control sin perder tu turno.",
+    "pt": "Os bilhetes dos Museus do Vaticano têm hora marcada: chega 15 a 20 minutos antes para passares a segurança sem perderes a tua vez.",
+    "pt_BR": "Os ingressos dos Museus do Vaticano têm horário marcado: chegue 15 a 20 minutos antes para passar pela segurança sem perder o seu horário.",
+    "fr": "Les billets des Musées du Vatican correspondent à un créneau horaire : arrivez 15 à 20 minutes avant pour passer la sécurité sans perdre votre créneau.",
+    "de": "Die Tickets für die Vatikanischen Museen gelten für ein Zeitfenster: Komm 15 bis 20 Minuten früher, um die Kontrolle zu passieren, ohne dein Zeitfenster zu verlieren."
+   }
+  },
+  {
+   "id": "ct-VA-13",
+   "category": "public_behavior",
+   "text": {
+    "en": "Large backpacks, big bags and bulky items must usually be left in a cloakroom at the museums, so travel light on your visit day.",
+    "it": "Zaini grandi, borse voluminose e oggetti ingombranti di solito vanno lasciati al guardaroba dei musei, quindi nel giorno della visita viaggia leggero.",
+    "es": "Las mochilas grandes, bolsos voluminosos y objetos abultados suelen tener que dejarse en el guardarropa de los museos, así que ve ligero el día de la visita.",
+    "pt": "As mochilas grandes, malas volumosas e objetos pesados costumam ter de ficar no bengaleiro dos museus, por isso viaja leve no dia da visita.",
+    "pt_BR": "Mochilas grandes, bolsas volumosas e objetos pesados normalmente precisam ficar no guarda-volumes dos museus, então leve pouca coisa no dia da visita.",
+    "fr": "Les grands sacs à dos, sacs volumineux et objets encombrants doivent généralement être laissés au vestiaire des musées ; voyagez léger le jour de la visite.",
+    "de": "Große Rucksäcke, Taschen und sperrige Gegenstände müssen in den Museen meist in der Garderobe bleiben, also reise am Besuchstag mit leichtem Gepäck."
+   }
+  },
+  {
+   "id": "ct-VA-14",
+   "category": "public_behavior",
+   "text": {
+    "en": "In the Sistine Chapel, guards ask visitors for silence and respectful behavior; speak very quietly or not at all, and follow the staff's reminders.",
+    "it": "Nella Cappella Sistina i custodi chiedono silenzio e comportamento rispettoso; parla pianissimo o non parlare, e segui i richiami del personale.",
+    "es": "En la Capilla Sixtina los guardias piden silencio y un comportamiento respetuoso; habla muy bajo o no hables, y atiende los avisos del personal.",
+    "pt": "Na Capela Sistina os guardas pedem silêncio e comportamento respeitoso; fala muito baixinho ou não fales, e segue os avisos do pessoal.",
+    "pt_BR": "Na Capela Sistina os guardas pedem silêncio e comportamento respeitoso; fale bem baixinho ou não fale, e siga os avisos da equipe.",
+    "fr": "Dans la chapelle Sixtine, les gardiens demandent le silence et un comportement respectueux ; parlez très bas ou pas du tout, et suivez les rappels du personnel.",
+    "de": "In der Sixtinischen Kapelle bitten die Aufseher um Ruhe und respektvolles Verhalten; sprich sehr leise oder gar nicht und beachte die Hinweise des Personals."
+   }
+  },
+  {
+   "id": "ct-VA-15",
+   "category": "transport",
+   "text": {
+    "en": "Rome's Metro line A has stops at Ottaviano and Cipro, each a short walk from the Vatican entrances; buses and trams from the city also stop nearby.",
+    "it": "La linea A della metropolitana di Roma ferma a Ottaviano e a Cipro, a pochi passi dagli ingressi vaticani; vicino fermano anche autobus e tram della città.",
+    "es": "La línea A del metro de Roma tiene paradas en Ottaviano y Cipro, a poca distancia de las entradas del Vaticano; también hay autobuses y tranvías cercanos.",
+    "pt": "A linha A do metro de Roma tem paragens em Ottaviano e Cipro, a curta distância das entradas do Vaticano; também há autocarros e elétricos nas proximidades.",
+    "pt_BR": "A linha A do metrô de Roma tem paradas em Ottaviano e Cipro, a uma curta caminhada das entradas do Vaticano; também há ônibus e bondes por perto.",
+    "fr": "La ligne A du métro de Rome dessert Ottaviano et Cipro, à quelques pas des entrées du Vatican ; des bus et tramways de la ville s'arrêtent aussi à proximité.",
+    "de": "Die U-Bahn-Linie A in Rom hält an Ottaviano und Cipro, beide nur einen kurzen Fußweg von den Vatikan-Eingängen entfernt; auch Busse und Trams halten in der Nähe."
+   }
+  },
+  {
+   "id": "ct-VA-16",
+   "category": "transport",
+   "text": {
+    "en": "Vatican City itself is small enough to explore on foot, and there are no passport controls when you walk in from Rome.",
+    "it": "La Città del Vaticano è abbastanza piccola da visitare a piedi e non ci sono controlli di passaporto quando si entra da Roma.",
+    "es": "La Ciudad del Vaticano es lo bastante pequeña para recorrerla a pie, y no hay control de pasaportes al entrar desde Roma.",
+    "pt": "A Cidade do Vaticano é pequena o suficiente para se explorar a pé e não há controlo de passaportes ao entrar a partir de Roma.",
+    "pt_BR": "A Cidade do Vaticano é pequena o suficiente para ser explorada a pé e não há controle de passaporte ao entrar vindo de Roma.",
+    "fr": "La Cité du Vatican est assez petite pour se visiter à pied, et il n'y a pas de contrôle de passeport en venant de Rome.",
+    "de": "Die Vatikanstadt ist klein genug, um sie zu Fuß zu erkunden, und beim Betreten von Rom aus gibt es keine Passkontrolle."
+   }
+  },
+  {
+   "id": "ct-VA-17",
+   "category": "language",
+   "text": {
+    "en": "Italian is the working language of Vatican City, so a few words like 'per favore', 'grazie' and 'scusi' are warmly received.",
+    "it": "L'italiano è la lingua di lavoro della Città del Vaticano, quindi poche parole come «per favore», «grazie» e «scusi» sono accolte con calore.",
+    "es": "El italiano es la lengua de trabajo de la Ciudad del Vaticano, así que unas pocas palabras como «per favore», «grazie» y «scusi» se reciben con simpatía.",
+    "pt": "O italiano é a língua de trabalho da Cidade do Vaticano, por isso algumas palavras como «per favore», «grazie» e «scusi» são recebidas com simpatia.",
+    "pt_BR": "O italiano é a língua de trabalho da Cidade do Vaticano, então algumas palavras como «per favore», «grazie» e «scusi» são recebidas com simpatia.",
+    "fr": "L'italien est la langue de travail de la Cité du Vatican ; quelques mots comme «per favore», «grazie» et «scusi» sont toujours bien accueillis.",
+    "de": "Italienisch ist die Arbeitssprache der Vatikanstadt, daher kommen ein paar Wörter wie «per favore», «grazie» und «scusi» gut an."
+   }
+  },
+  {
+   "id": "ct-VA-18",
+   "category": "language",
+   "text": {
+    "en": "Latin is the official language of the Holy See and you will see it on inscriptions and official texts, though everyday talk is in Italian and English.",
+    "it": "Il latino è la lingua ufficiale della Santa Sede e lo vedrai su iscrizioni e testi ufficiali, ma nella vita quotidiana si parla italiano e inglese.",
+    "es": "El latín es la lengua oficial de la Santa Sede y lo verás en inscripciones y textos oficiales, aunque en el día a día se habla italiano e inglés.",
+    "pt": "O latim é a língua oficial da Santa Sé e vais vê-lo em inscrições e textos oficiais, mas no dia a dia fala-se italiano e inglês.",
+    "pt_BR": "O latim é a língua oficial da Santa Sé e você vai vê-lo em inscrições e textos oficiais, mas no dia a dia se fala italiano e inglês.",
+    "fr": "Le latin est la langue officielle du Saint-Siège et vous le verrez sur les inscriptions et les textes officiels, mais on parle surtout italien et anglais au quotidien.",
+    "de": "Latein ist die offizielle Sprache des Heiligen Stuhls und begegnet dir auf Inschriften und in offiziellen Texten, im Alltag spricht man aber Italienisch und Englisch."
+   }
+  },
+  {
+   "id": "ct-VA-19",
+   "category": "festivals",
+   "text": {
+    "en": "Easter and Christmas bring huge crowds to St. Peter's Square; if you plan to visit in those weeks, book accommodation and entry slots well ahead.",
+    "it": "A Pasqua e a Natale Piazza San Pietro si riempie di folla; se pensi di visitare in quelle settimane, prenota alloggio e ingressi con largo anticipo.",
+    "es": "En Semana Santa y Navidad la Plaza de San Pedro se llena de gente; si piensas visitar en esas semanas, reserva alojamiento y entradas con mucha antelación.",
+    "pt": "Na Páscoa e no Natal a Praça de São Pedro enche-se de gente; se pensas visitar nessas semanas, reserva alojamento e entradas com muita antecedência.",
+    "pt_BR": "Na Páscoa e no Natal a Praça de São Pedro fica lotada; se você pretende visitar nessas semanas, reserve hospedagem e ingressos com bastante antecedência.",
+    "fr": "À Pâques et à Noël, la place Saint-Pierre est noire de monde ; si vous comptez venir ces semaines-là, réservez hébergement et créneaux d'entrée bien à l'avance.",
+    "de": "An Ostern und Weihnachten ist der Petersplatz extrem voll; wenn du in diesen Wochen kommst, buche Unterkunft und Einlasszeiten weit im Voraus."
+   }
+  },
+  {
+   "id": "ct-VA-20",
+   "category": "festivals",
+   "text": {
+    "en": "On most Sundays around noon the Pope leads the Angelus prayer from a window above St. Peter's Square, and anyone can join the crowd below for free.",
+    "it": "Nella maggior parte delle domeniche, verso mezzogiorno, il Papa guida la preghiera dell'Angelus da una finestra sopra Piazza San Pietro e chiunque può unirsi alla folla gratuitamente.",
+    "es": "La mayoría de los domingos hacia el mediodía el Papa dirige el rezo del Ángelus desde una ventana sobre la Plaza de San Pedro, y cualquiera puede unirse gratis a la multitud.",
+    "pt": "Na maioria dos domingos, perto do meio-dia, o Papa dirige a oração do Ângelus de uma janela sobre a Praça de São Pedro e qualquer pessoa pode juntar-se gratuitamente à multidão.",
+    "pt_BR": "Na maioria dos domingos, por volta do meio-dia, o Papa conduz a oração do Ângelus de uma janela sobre a Praça de São Pedro e qualquer pessoa pode se juntar gratuitamente à multidão.",
+    "fr": "La plupart des dimanches vers midi, le pape dirige la prière de l'Angélus depuis une fenêtre donnant sur la place Saint-Pierre, et chacun peut se joindre gratuitement à la foule.",
+    "de": "An den meisten Sonntagen gegen Mittag leitet der Papst von einem Fenster über dem Petersplatz das Angelusgebet, und jeder kann sich kostenlos der Menge anschließen."
+   }
+  },
+  {
+   "id": "ct-VA-21",
+   "category": "family",
+   "text": {
+    "en": "Many visitors come as families or school groups, so the Vatican is used to children; just keep young ones close and quiet in churches and galleries.",
+    "it": "Molti visitatori arrivano in famiglia o con gruppi scolastici, quindi il Vaticano è abituato ai bambini; tienili vicini e tranquilli in chiese e gallerie.",
+    "es": "Muchos visitantes llegan en familia o con grupos escolares, así que el Vaticano está acostumbrado a los niños; mantenlos cerca y tranquilos en iglesias y galerías.",
+    "pt": "Muitos visitantes chegam em família ou com grupos escolares, por isso o Vaticano está habituado a crianças; mantém os mais pequenos perto e calmos em igrejas e galerias.",
+    "pt_BR": "Muitos visitantes chegam em família ou com grupos escolares, então o Vaticano está acostumado com crianças; mantenha os pequenos por perto e tranquilos em igrejas e galerias.",
+    "fr": "Beaucoup de visiteurs viennent en famille ou en groupe scolaire, le Vatican est donc habitué aux enfants ; gardez les petits près de vous et calmes dans les églises et les galeries.",
+    "de": "Viele Besucher kommen als Familie oder Schulklasse, der Vatikan ist also an Kinder gewöhnt; halte die Kleinen in Kirchen und Galerien nah bei dir und ruhig."
+   }
+  },
+  {
+   "id": "ct-VA-22",
+   "category": "money",
+   "text": {
+    "en": "Vatican City uses the euro, and it issues its own euro coins with a Vatican design, which are popular with collectors.",
+    "it": "La Città del Vaticano usa l'euro ed emette proprie monete in euro con un disegno vaticano, molto ricercate dai collezionisti.",
+    "es": "La Ciudad del Vaticano usa el euro y emite sus propias monedas de euro con diseño vaticano, muy buscadas por los coleccionistas.",
+    "pt": "A Cidade do Vaticano usa o euro e emite as suas próprias moedas de euro com desenho do Vaticano, muito procuradas por colecionadores.",
+    "pt_BR": "A Cidade do Vaticano usa o euro e emite suas próprias moedas de euro com desenho do Vaticano, muito procuradas por colecionadores.",
+    "fr": "La Cité du Vatican utilise l'euro et émet ses propres pièces en euros avec un dessin vaticanien, très recherchées des collectionneurs.",
+    "de": "Die Vatikanstadt nutzt den Euro und gibt eigene Euro-Münzen mit vatikanischem Motiv heraus, die bei Sammlern beliebt sind."
+   }
+  },
+  {
+   "id": "ct-VA-23",
+   "category": "money",
+   "text": {
+    "en": "Vatican City has no taxes and items are duty-free, but souvenir prices inside are not always lower, so compare with shops in Rome before buying.",
+    "it": "La Città del Vaticano non ha tasse e i prodotti sono esenti da dazi, ma i souvenir non sempre costano meno: confronta con i negozi di Roma prima di comprare.",
+    "es": "La Ciudad del Vaticano no tiene impuestos y los productos están libres de aranceles, pero los recuerdos no siempre son más baratos: compara con tiendas de Roma antes de comprar.",
+    "pt": "A Cidade do Vaticano não tem impostos e os artigos estão isentos de direitos, mas as lembranças nem sempre são mais baratas: compara com lojas de Roma antes de comprares.",
+    "pt_BR": "A Cidade do Vaticano não tem impostos e os produtos são isentos de taxas, mas as lembranças nem sempre são mais baratas: compare com lojas de Roma antes de comprar.",
+    "fr": "La Cité du Vatican n'a pas d'impôts et les articles y sont exempts de droits, mais les souvenirs n'y coûtent pas toujours moins cher : comparez avec les boutiques de Rome avant d'acheter.",
+    "de": "Die Vatikanstadt erhebt keine Steuern und Waren sind zollfrei, doch Souvenirs sind dort nicht immer günstiger, vergleiche also vor dem Kauf mit Geschäften in Rom."
+   }
+  },
+  {
+   "id": "ct-VA-24",
+   "category": "photography",
+   "text": {
+    "en": "Photography is not allowed inside the Sistine Chapel, and guards will remind you; save your camera for the museum corridors and courtyards.",
+    "it": "Nella Cappella Sistina non si possono fare foto e i custodi te lo ricordano; usa la fotocamera nei corridoi e nei cortili dei musei.",
+    "es": "En la Capilla Sixtina no se permite fotografiar y los guardias te lo recordarán; guarda la cámara para los pasillos y patios de los museos.",
+    "pt": "Na Capela Sistina não é permitido fotografar e os guardas lembram-te disso; guarda a câmara para os corredores e pátios dos museus.",
+    "pt_BR": "Na Capela Sistina não é permitido fotografar e os guardas vão lembrar você; guarde a câmera para os corredores e pátios dos museus.",
+    "fr": "La photographie est interdite dans la chapelle Sixtine et les gardiens vous le rappelleront ; gardez votre appareil pour les couloirs et les cours des musées.",
+    "de": "In der Sixtinischen Kapelle ist Fotografieren verboten, und die Aufseher erinnern daran; heb dir die Kamera für die Museumsgänge und Innenhöfe auf."
+   }
+  },
+  {
+   "id": "ct-VA-25",
+   "category": "photography",
+   "text": {
+    "en": "Photos in St. Peter's Square and inside the basilica are generally welcome, but avoid flash and do not photograph people praying up close.",
+    "it": "Le foto in Piazza San Pietro e dentro la basilica sono in genere ben accette, ma evita il flash e non fotografare da vicino chi prega.",
+    "es": "Las fotos en la Plaza de San Pedro y dentro de la basílica suelen estar bien vistas, pero evita el flash y no fotografíes de cerca a quien reza.",
+    "pt": "As fotografias na Praça de São Pedro e dentro da basílica são em geral bem-vindas, mas evita o flash e não fotografes de perto quem está a rezar.",
+    "pt_BR": "As fotos na Praça de São Pedro e dentro da basílica geralmente são bem-vindas, mas evite o flash e não fotografe de perto quem está rezando.",
+    "fr": "Les photos sur la place Saint-Pierre et dans la basilique sont généralement bienvenues, mais évitez le flash et ne photographiez pas de près les personnes qui prient.",
+    "de": "Fotos auf dem Petersplatz und im Dom sind meist willkommen, aber verzichte auf Blitz und fotografiere betende Menschen nicht aus nächster Nähe."
+   }
+  },
+  {
+   "id": "ct-VA-26",
+   "category": "nightlife",
+   "text": {
+    "en": "Vatican City is very quiet in the evening and visitor areas close; for dinner and nightlife, head to the nearby Prati district or central Rome.",
+    "it": "La Città del Vaticano la sera è tranquillissima e le aree per i visitatori chiudono; per cena e vita serale vai nel vicino quartiere Prati o nel centro di Roma.",
+    "es": "La Ciudad del Vaticano es muy tranquila por la noche y las zonas de visita cierran; para cenar y salir, ve al cercano barrio de Prati o al centro de Roma.",
+    "pt": "A Cidade do Vaticano é muito calma à noite e as zonas de visita fecham; para jantar e sair, vai ao bairro vizinho de Prati ou ao centro de Roma.",
+    "pt_BR": "A Cidade do Vaticano é muito calma à noite e as áreas de visita fecham; para jantar e sair, vá ao bairro vizinho de Prati ou ao centro de Roma.",
+    "fr": "La Cité du Vatican est très calme le soir et les zones de visite ferment ; pour dîner et sortir, rendez-vous dans le quartier voisin de Prati ou dans le centre de Rome.",
+    "de": "Die Vatikanstadt ist abends sehr ruhig und die Besucherbereiche schließen; für Abendessen und Ausgehen geh ins nahe Viertel Prati oder ins Zentrum von Rom."
+   }
+  },
+  {
+   "id": "ct-VA-27",
+   "category": "nature",
+   "text": {
+    "en": "The Vatican Gardens cover a large part of the state and can only be visited on a guided tour, which is worth booking ahead.",
+    "it": "I Giardini Vaticani occupano gran parte dello Stato e si visitano solo con un tour guidato, da prenotare con anticipo.",
+    "es": "Los Jardines Vaticanos ocupan gran parte del Estado y solo se visitan con visita guiada, que conviene reservar con antelación.",
+    "pt": "Os Jardins do Vaticano ocupam grande parte do Estado e só se visitam em visita guiada, que convém reservar com antecedência.",
+    "pt_BR": "Os Jardins do Vaticano ocupam grande parte do Estado e só podem ser visitados com visita guiada, que vale reservar com antecedência.",
+    "fr": "Les jardins du Vatican couvrent une bonne partie de l'État et ne se visitent qu'en visite guidée, qu'il vaut mieux réserver à l'avance.",
+    "de": "Die Vatikanischen Gärten nehmen einen großen Teil des Staates ein und sind nur mit einer Führung zugänglich, die man besser vorab bucht."
+   }
+  },
+  {
+   "id": "ct-VA-28",
+   "category": "safety",
+   "text": {
+    "en": "Crowded queues and the area around St. Peter's Square attract pickpockets, so keep your phone and wallet in a zipped inner pocket.",
+    "it": "Le code affollate e la zona intorno a Piazza San Pietro attirano i borseggiatori: tieni telefono e portafoglio in una tasca interna con la cerniera.",
+    "es": "Las colas llenas de gente y la zona de la Plaza de San Pedro atraen a carteristas, así que guarda el móvil y la cartera en un bolsillo interior con cremallera.",
+    "pt": "As filas cheias e a zona da Praça de São Pedro atraem carteiristas, por isso guarda o telemóvel e a carteira num bolso interior com fecho.",
+    "pt_BR": "As filas cheias e a região da Praça de São Pedro atraem batedores de carteira, então guarde o celular e a carteira em um bolso interno com zíper.",
+    "fr": "Les files d'attente bondées et les abords de la place Saint-Pierre attirent les pickpockets ; gardez téléphone et portefeuille dans une poche intérieure zippée.",
+    "de": "Volle Warteschlangen und die Gegend um den Petersplatz ziehen Taschendiebe an, also trage Handy und Geldbeutel in einer Innentasche mit Reißverschluss."
+   }
+  },
+  {
+   "id": "ct-VA-29",
+   "category": "safety",
+   "text": {
+    "en": "Be wary of unofficial guides who approach you in the queue offering skip-the-line tours; buy tickets from the official website or a trusted agency.",
+    "it": "Diffida delle guide non ufficiali che in coda propongono tour senza fila; acquista i biglietti dal sito ufficiale o da un'agenzia di fiducia.",
+    "es": "Desconfía de los guías no oficiales que se acercan en la cola ofreciendo visitas sin esperar; compra las entradas en la web oficial o en una agencia de confianza.",
+    "pt": "Desconfia dos guias não oficiais que te abordam na fila a oferecer visitas sem espera; compra os bilhetes no site oficial ou numa agência de confiança.",
+    "pt_BR": "Desconfie de guias não oficiais que abordam você na fila oferecendo visitas sem espera; compre os ingressos no site oficial ou em uma agência de confiança.",
+    "fr": "Méfiez-vous des guides non officiels qui vous abordent dans la file pour proposer des visites coupe-file ; achetez vos billets sur le site officiel ou auprès d'une agence fiable.",
+    "de": "Sei vorsichtig bei inoffiziellen Guides, die dich in der Schlange mit Touren ohne Anstehen ansprechen; kaufe Tickets auf der offiziellen Website oder bei einer vertrauenswürdigen Agentur."
+   }
+  },
+  {
+   "id": "ct-VA-30",
+   "category": "local_pride",
+   "text": {
+    "en": "The Swiss Guard, in their colorful uniforms, are a proud symbol of the Vatican; it is polite to stay at a respectful distance and not interrupt them while on duty.",
+    "it": "Le Guardie Svizzere, con le loro uniformi colorate, sono un fiero simbolo del Vaticano; è cortese mantenere una distanza rispettosa e non disturbarle mentre sono in servizio.",
+    "es": "La Guardia Suiza, con sus coloridos uniformes, es un orgulloso símbolo del Vaticano; es cortés mantener una distancia respetuosa y no interrumpirla mientras está de servicio.",
+    "pt": "A Guarda Suíça, com os seus uniformes coloridos, é um orgulhoso símbolo do Vaticano; é educado manter uma distância respeitosa e não a interromper durante o serviço.",
+    "pt_BR": "A Guarda Suíça, com seus uniformes coloridos, é um orgulhoso símbolo do Vaticano; é educado manter uma distância respeitosa e não interrompê-la durante o serviço.",
+    "fr": "La Garde suisse, avec ses uniformes colorés, est un symbole fier du Vatican ; il est poli de garder une distance respectueuse et de ne pas la déranger pendant son service.",
+    "de": "Die Schweizergarde mit ihren bunten Uniformen ist ein stolzes Symbol des Vatikans; es ist höflich, respektvollen Abstand zu halten und sie im Dienst nicht zu stören."
+   }
+  }
+ ],
+ "VN": [
+  {
+   "id": "ct-VN-01",
+   "category": "greetings",
+   "text": {
+    "en": "A smile, a slight nod and a friendly 'Xin chào' work well in Vietnam; a gentle handshake is common, and the elder or senior person is greeted first.",
+    "it": "In Vietnam funzionano bene un sorriso, un lieve cenno del capo e un cordiale «Xin chào»; è comune una stretta di mano delicata e si saluta per primo la persona più anziana.",
+    "es": "En Vietnam funcionan bien una sonrisa, un leve asentimiento y un amistoso «Xin chào»; es común un apretón de manos suave y se saluda primero a la persona mayor.",
+    "pt": "No Vietname funcionam bem um sorriso, um ligeiro aceno de cabeça e um simpático «Xin chào»; é comum um aperto de mão suave e cumprimenta-se primeiro a pessoa mais velha.",
+    "pt_BR": "No Vietnã funcionam bem um sorriso, um leve aceno de cabeça e um simpático «Xin chào»; é comum um aperto de mão suave e cumprimenta-se primeiro a pessoa mais velha.",
+    "fr": "Au Vietnam, un sourire, un léger signe de tête et un aimable «Xin chào» fonctionnent bien ; une poignée de main douce est courante et l'on salue d'abord la personne la plus âgée.",
+    "de": "In Vietnam kommen ein Lächeln, ein leichtes Nicken und ein freundliches «Xin chào» gut an; ein sanfter Händedruck ist üblich, und die ältere Person wird zuerst begrüßt."
+   }
+  },
+  {
+   "id": "ct-VN-02",
+   "category": "greetings",
+   "text": {
+    "en": "Vietnamese people often address each other with kinship words such as anh, chị, em, cô or chú instead of 'you'; listen to what others use and ask politely which suits you.",
+    "it": "I vietnamiti si rivolgono spesso l'un l'altro con termini di parentela come anh, chị, em, cô o chú invece di «tu»; ascolta cosa usano gli altri e chiedi con garbo quale ti si addice.",
+    "es": "Los vietnamitas suelen dirigirse unos a otros con términos de parentesco como anh, chị, em, cô o chú en lugar de «tú»; fíjate en lo que usan los demás y pregunta con educación cuál te corresponde.",
+    "pt": "Os vietnamitas tratam-se muitas vezes por termos de parentesco como anh, chị, em, cô ou chú em vez de «tu»; repara no que os outros usam e pergunta com educação qual te convém.",
+    "pt_BR": "Os vietnamitas costumam se tratar por termos de parentesco como anh, chị, em, cô ou chú em vez de «você»; observe o que os outros usam e pergunte com educação qual combina com você.",
+    "fr": "Les Vietnamiens s'interpellent souvent avec des termes de parenté comme anh, chị, em, cô ou chú au lieu de «tu» ; écoutez ce que les autres emploient et demandez poliment lequel vous convient.",
+    "de": "Vietnamesen sprechen einander oft mit Verwandtschaftswörtern wie anh, chị, em, cô oder chú statt «du» an; achte darauf, was andere benutzen, und frag höflich, welches zu dir passt."
+   }
+  },
+  {
+   "id": "ct-VN-03",
+   "category": "conversation",
+   "text": {
+    "en": "Friendly questions about your family, where you come from or whether you have eaten yet are normal small talk and usually mean genuine interest, not prying.",
+    "it": "Domande cordiali su famiglia, provenienza o se hai già mangiato sono normali chiacchiere e di solito esprimono interesse sincero, non indiscrezione.",
+    "es": "Las preguntas amistosas sobre tu familia, de dónde eres o si ya has comido son charla normal y suelen mostrar interés sincero, no indiscreción.",
+    "pt": "Perguntas amigáveis sobre a tua família, de onde vens ou se já comeste são conversa normal e costumam mostrar interesse genuíno, não indiscrição.",
+    "pt_BR": "Perguntas amigáveis sobre a sua família, de onde você é ou se já comeu são conversa normal e costumam mostrar interesse genuíno, não indiscrição.",
+    "fr": "Les questions amicales sur votre famille, votre pays d'origine ou si vous avez déjà mangé sont de la conversation courante et traduisent souvent un intérêt sincère, pas de l'indiscrétion.",
+    "de": "Freundliche Fragen nach deiner Familie, deiner Herkunft oder ob du schon gegessen hast sind normaler Smalltalk und zeigen meist echtes Interesse, keine Neugier um jeden Preis."
+   }
+  },
+  {
+   "id": "ct-VN-04",
+   "category": "conversation",
+   "text": {
+    "en": "Praise for Vietnamese food, coffee and landscapes is always welcome, and asking about a person's home region is an easy way to start a chat.",
+    "it": "Complimenti per cibo, caffè e paesaggi vietnamiti sono sempre ben accetti, e chiedere della regione d'origine di qualcuno è un modo facile per iniziare a chiacchierare.",
+    "es": "Los elogios a la comida, el café y los paisajes de Vietnam siempre se agradecen, y preguntar por la región de origen de alguien es una forma fácil de empezar a charlar.",
+    "pt": "Elogios à comida, ao café e às paisagens do Vietname são sempre bem-vindos, e perguntar pela região de origem de alguém é uma forma fácil de começar a conversa.",
+    "pt_BR": "Elogios à comida, ao café e às paisagens do Vietnã são sempre bem-vindos, e perguntar pela região de origem de alguém é um jeito fácil de começar a conversar.",
+    "fr": "Les compliments sur la cuisine, le café et les paysages du Vietnam sont toujours bienvenus, et demander la région d'origine de quelqu'un est une façon simple d'engager la conversation.",
+    "de": "Lob für vietnamesisches Essen, Kaffee und Landschaften ist immer willkommen, und die Frage nach der Heimatregion ist ein einfacher Gesprächseinstieg."
+   }
+  },
+  {
+   "id": "ct-VN-05",
+   "category": "dining",
+   "text": {
+    "en": "Chopsticks are the main utensil; never stick them upright in a bowl of rice, and rest them across the bowl or on the holder between bites.",
+    "it": "Le bacchette sono la posata principale; non conficcarle mai in verticale nella ciotola di riso, ma appoggiale sulla ciotola o sul poggiabacchette tra un boccone e l'altro.",
+    "es": "Los palillos son el cubierto principal; nunca los claves en vertical en un cuenco de arroz y apóyalos sobre el cuenco o en el soporte entre bocado y bocado.",
+    "pt": "Os pauzinhos são o talher principal; nunca os espetes na vertical numa tigela de arroz e pousa-os sobre a tigela ou no descanso entre garfadas.",
+    "pt_BR": "Os hashis são o talher principal; nunca os finque na vertical em uma tigela de arroz e apoie-os sobre a tigela ou no descanso entre uma garfada e outra.",
+    "fr": "Les baguettes sont le couvert principal ; ne les plantez jamais à la verticale dans un bol de riz, posez-les sur le bol ou sur le repose-baguettes entre deux bouchées.",
+    "de": "Stäbchen sind das wichtigste Essbesteck; steck sie niemals senkrecht in eine Reisschale, sondern leg sie zwischen den Bissen auf die Schale oder den Stäbchenhalter."
+   }
+  },
+  {
+   "id": "ct-VN-06",
+   "category": "dining",
+   "text": {
+    "en": "Meals are often shared from central dishes; it is polite to wait for the eldest or host to begin and to offer food to others before filling your own bowl.",
+    "it": "I pasti si condividono spesso da piatti al centro; è cortese aspettare che inizi il più anziano o chi ospita e offrire il cibo agli altri prima di riempire la propria ciotola.",
+    "es": "Las comidas se comparten a menudo desde platos centrales; es cortés esperar a que empiece la persona mayor o el anfitrión y ofrecer comida a los demás antes de llenar tu cuenco.",
+    "pt": "As refeições partilham-se muitas vezes a partir de pratos ao centro; é educado esperar que o mais velho ou o anfitrião comece e oferecer comida aos outros antes de encheres a tua tigela.",
+    "pt_BR": "As refeições costumam ser compartilhadas a partir de pratos no centro; é educado esperar o mais velho ou o anfitrião começar e oferecer comida aos outros antes de encher a sua tigela.",
+    "fr": "Les repas se partagent souvent à partir de plats au centre ; il est poli d'attendre que le plus âgé ou l'hôte commence et de servir les autres avant de remplir son bol.",
+    "de": "Mahlzeiten werden oft aus Schalen in der Tischmitte geteilt; es ist höflich, zu warten, bis der Älteste oder Gastgeber anfängt, und andere zu bedienen, bevor man die eigene Schale füllt."
+   }
+  },
+  {
+   "id": "ct-VN-07",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping is not obligatory in Vietnam; small tips or rounding up are welcome in restaurants and for guides and drivers, but never required.",
+    "it": "In Vietnam la mancia non è obbligatoria; piccole mance o arrotondamenti sono graditi nei ristoranti e per guide e autisti, ma mai richiesti.",
+    "es": "En Vietnam la propina no es obligatoria; las propinas pequeñas o redondear la cuenta se agradecen en restaurantes y con guías y conductores, pero nunca se exigen.",
+    "pt": "No Vietname a gorjeta não é obrigatória; pequenas gorjetas ou arredondamentos são bem-vindos em restaurantes e para guias e motoristas, mas nunca exigidos.",
+    "pt_BR": "No Vietnã a gorjeta não é obrigatória; pequenas gorjetas ou arredondamentos são bem-vindos em restaurantes e para guias e motoristas, mas nunca exigidos.",
+    "fr": "Au Vietnam, le pourboire n'est pas obligatoire ; de petits pourboires ou un arrondi sont appréciés au restaurant et pour les guides et chauffeurs, mais jamais exigés.",
+    "de": "In Vietnam ist Trinkgeld nicht verpflichtend; kleine Beträge oder Aufrunden freuen Restaurants, Guides und Fahrer, werden aber nie verlangt."
+   }
+  },
+  {
+   "id": "ct-VN-08",
+   "category": "gifts",
+   "text": {
+    "en": "When visiting a home, bring fruit, sweets or flowers and offer them with both hands; the host may politely decline once before accepting.",
+    "it": "Quando vai in visita a casa di qualcuno, porta frutta, dolci o fiori e offrili con entrambe le mani; l'ospite può rifiutare con garbo una volta prima di accettare.",
+    "es": "Al visitar una casa, lleva fruta, dulces o flores y ofrécelos con ambas manos; el anfitrión puede rechazarlos una vez con cortesía antes de aceptarlos.",
+    "pt": "Ao visitares uma casa, leva fruta, doces ou flores e oferece-os com as duas mãos; o anfitrião pode recusar uma vez com educação antes de aceitar.",
+    "pt_BR": "Ao visitar uma casa, leve frutas, doces ou flores e ofereça com as duas mãos; o anfitrião pode recusar uma vez com educação antes de aceitar.",
+    "fr": "Lorsque vous êtes invité chez quelqu'un, apportez des fruits, des sucreries ou des fleurs et offrez-les à deux mains ; l'hôte peut refuser poliment une fois avant d'accepter.",
+    "de": "Wenn du zu jemandem nach Hause kommst, bring Obst, Süßigkeiten oder Blumen mit und überreiche sie mit beiden Händen; der Gastgeber lehnt vielleicht einmal höflich ab, bevor er annimmt."
+   }
+  },
+  {
+   "id": "ct-VN-09",
+   "category": "dress",
+   "text": {
+    "en": "Casual clothes are fine in cities, but cover shoulders and knees when visiting pagodas, temples and family altars as a sign of respect.",
+    "it": "Nelle città l'abbigliamento casual va bene, ma per visitare pagode, templi e altari di famiglia copri spalle e ginocchia in segno di rispetto.",
+    "es": "En las ciudades la ropa informal está bien, pero al visitar pagodas, templos y altares familiares cúbrete hombros y rodillas en señal de respeto.",
+    "pt": "Nas cidades a roupa informal serve, mas ao visitares pagodes, templos e altares de família cobre os ombros e os joelhos em sinal de respeito.",
+    "pt_BR": "Nas cidades roupas casuais servem, mas ao visitar pagodes, templos e altares de família cubra ombros e joelhos em sinal de respeito.",
+    "fr": "En ville, les vêtements décontractés conviennent, mais pour visiter pagodes, temples et autels familiaux, couvrez épaules et genoux en signe de respect.",
+    "de": "In den Städten ist lockere Kleidung in Ordnung, aber bei Besuchen von Pagoden, Tempeln und Familienaltären bedeckst du aus Respekt Schultern und Knie."
+   }
+  },
+  {
+   "id": "ct-VN-10",
+   "category": "religion_sites",
+   "text": {
+    "en": "Remove your shoes before entering pagodas and many temples, speak quietly, and avoid pointing your feet toward altars or Buddha statues.",
+    "it": "Togli le scarpe prima di entrare nelle pagode e in molti templi, parla a bassa voce ed evita di puntare i piedi verso altari o statue del Buddha.",
+    "es": "Quítate los zapatos antes de entrar en pagodas y muchos templos, habla en voz baja y evita apuntar con los pies hacia altares o estatuas de Buda.",
+    "pt": "Tira os sapatos antes de entrares em pagodes e em muitos templos, fala baixo e evita apontar os pés para altares ou estátuas de Buda.",
+    "pt_BR": "Tire os sapatos antes de entrar em pagodes e em muitos templos, fale baixo e evite apontar os pés para altares ou estátuas de Buda.",
+    "fr": "Retirez vos chaussures avant d'entrer dans les pagodes et de nombreux temples, parlez doucement et évitez de pointer les pieds vers les autels ou les statues de Bouddha.",
+    "de": "Zieh vor Pagoden und vielen Tempeln die Schuhe aus, sprich leise und richte deine Füße nicht auf Altäre oder Buddha-Statuen."
+   }
+  },
+  {
+   "id": "ct-VN-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Most Vietnamese homes and shops have an ancestor altar; do not touch the offerings on it, and ask before taking photos near it.",
+    "it": "La maggior parte delle case e dei negozi vietnamiti ha un altare degli antenati; non toccare le offerte e chiedi prima di scattare foto lì vicino.",
+    "es": "La mayoría de los hogares y comercios vietnamitas tienen un altar de los antepasados; no toques las ofrendas y pregunta antes de hacer fotos cerca.",
+    "pt": "A maioria das casas e lojas vietnamitas tem um altar dos antepassados; não toques nas oferendas e pergunta antes de tirares fotografias perto.",
+    "pt_BR": "A maioria das casas e lojas vietnamitas tem um altar dos antepassados; não toque nas oferendas e pergunte antes de tirar fotos por perto.",
+    "fr": "La plupart des maisons et boutiques vietnamiennes ont un autel des ancêtres ; ne touchez pas aux offrandes et demandez avant de prendre des photos à proximité.",
+    "de": "Die meisten vietnamesischen Häuser und Läden haben einen Ahnenaltar; berühre die Opfergaben nicht und frag, bevor du in der Nähe fotografierst."
+   }
+  },
+  {
+   "id": "ct-VN-12",
+   "category": "gestures",
+   "text": {
+    "en": "Avoid touching someone's head, even a child's, as the head is considered the most respected part of the body.",
+    "it": "Evita di toccare la testa di una persona, anche di un bambino, perché la testa è considerata la parte più rispettata del corpo.",
+    "es": "Evita tocar la cabeza de alguien, aunque sea un niño, porque la cabeza se considera la parte más respetada del cuerpo.",
+    "pt": "Evita tocar na cabeça de alguém, mesmo de uma criança, porque a cabeça é considerada a parte mais respeitada do corpo.",
+    "pt_BR": "Evite tocar na cabeça de alguém, mesmo de uma criança, porque a cabeça é considerada a parte mais respeitada do corpo.",
+    "fr": "Évitez de toucher la tête de quelqu'un, même celle d'un enfant, car la tête est considérée comme la partie la plus respectée du corps.",
+    "de": "Vermeide es, jemandem an den Kopf zu fassen, auch einem Kind, denn der Kopf gilt als der am meisten geachtete Körperteil."
+   }
+  },
+  {
+   "id": "ct-VN-13",
+   "category": "gestures",
+   "text": {
+    "en": "To call someone over, turn your palm down and wave the fingers toward you; beckoning with a palm-up finger can look rude.",
+    "it": "Per chiamare qualcuno, tieni il palmo verso il basso e muovi le dita verso di te; far cenno con un dito a palmo in su può sembrare scortese.",
+    "es": "Para llamar a alguien, pon la palma hacia abajo y mueve los dedos hacia ti; hacer señas con un dedo y la palma hacia arriba puede parecer grosero.",
+    "pt": "Para chamar alguém, vira a palma da mão para baixo e move os dedos na tua direção; chamar com um dedo e a palma para cima pode parecer mal-educado.",
+    "pt_BR": "Para chamar alguém, vire a palma da mão para baixo e mova os dedos em sua direção; chamar com um dedo e a palma para cima pode parecer grosseiro.",
+    "fr": "Pour appeler quelqu'un, tournez la paume vers le bas et agitez les doigts vers vous ; faire signe d'un doigt, paume vers le haut, peut sembler impoli.",
+    "de": "Um jemanden heranzuwinken, halte die Handfläche nach unten und bewege die Finger zu dir; mit dem Zeigefinger bei nach oben gedrehter Handfläche zu winken kann unhöflich wirken."
+   }
+  },
+  {
+   "id": "ct-VN-14",
+   "category": "punctuality",
+   "text": {
+    "en": "Traffic in Hanoi and Ho Chi Minh City can be heavy, so leave extra time for appointments and flights; being a little late socially is usually forgiven, but business meetings value punctuality.",
+    "it": "Il traffico a Hanoi e a Ho Chi Minh City può essere intenso, quindi lascia tempo extra per appuntamenti e voli; un piccolo ritardo tra amici di solito si perdona, ma negli affari la puntualità conta.",
+    "es": "El tráfico en Hanói y Ciudad Ho Chi Minh puede ser denso, así que deja tiempo extra para citas y vuelos; un pequeño retraso en lo social suele perdonarse, pero en los negocios se valora la puntualidad.",
+    "pt": "O trânsito em Hanói e na Cidade de Ho Chi Minh pode ser intenso, por isso deixa tempo extra para compromissos e voos; um pequeno atraso em situações sociais costuma ser perdoado, mas nos negócios valoriza-se a pontualidade.",
+    "pt_BR": "O trânsito em Hanói e em Ho Chi Minh pode ser intenso, então deixe tempo extra para compromissos e voos; um pequeno atraso em situações sociais costuma ser perdoado, mas nos negócios a pontualidade é valorizada.",
+    "fr": "La circulation à Hanoï et à Hô Chi Minh-Ville peut être dense : prévoyez de la marge pour vos rendez-vous et vols ; un petit retard en société est généralement toléré, mais en affaires la ponctualité compte.",
+    "de": "Der Verkehr in Hanoi und Ho-Chi-Minh-Stadt kann dicht sein, plane also Zeit für Termine und Flüge ein; kleine Verspätungen im Privaten werden meist verziehen, geschäftlich zählt Pünktlichkeit."
+   }
+  },
+  {
+   "id": "ct-VN-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "Staying calm and smiling is valued in Vietnam; raising your voice or arguing loudly in public tends to make everyone uncomfortable and solves little.",
+    "it": "In Vietnam si apprezzano calma e sorriso; alzare la voce o discutere forte in pubblico mette a disagio tutti e risolve poco.",
+    "es": "En Vietnam se valora mantener la calma y sonreír; levantar la voz o discutir a gritos en público incomoda a todos y arregla poco.",
+    "pt": "No Vietname valoriza-se a calma e o sorriso; levantar a voz ou discutir alto em público deixa todos desconfortáveis e resolve pouco.",
+    "pt_BR": "No Vietnã se valoriza a calma e o sorriso; levantar a voz ou discutir alto em público deixa todo mundo desconfortável e resolve pouco.",
+    "fr": "Au Vietnam, on valorise le calme et le sourire ; hausser la voix ou se disputer bruyamment en public met tout le monde mal à l'aise et règle peu de choses.",
+    "de": "In Vietnam werden Ruhe und ein Lächeln geschätzt; wer in der Öffentlichkeit laut wird oder streitet, macht alle unwohl und erreicht wenig."
+   }
+  },
+  {
+   "id": "ct-VN-16",
+   "category": "transport",
+   "text": {
+    "en": "Crossing the street amid motorbikes feels daunting: walk at a slow, steady pace without sudden stops so riders can steer around you.",
+    "it": "Attraversare la strada tra i motorini sembra impegnativo: cammina a passo lento e costante, senza fermarti all'improvviso, così i motociclisti possono evitarti.",
+    "es": "Cruzar la calle entre las motos intimida: camina a paso lento y constante, sin paradas bruscas, para que los conductores puedan esquivarte.",
+    "pt": "Atravessar a rua no meio das motas intimida: caminha a passo lento e constante, sem paragens bruscas, para que os condutores te possam contornar.",
+    "pt_BR": "Atravessar a rua no meio das motos intimida: caminhe em passo lento e constante, sem paradas bruscas, para que os motociclistas possam desviar de você.",
+    "fr": "Traverser la rue au milieu des scooters impressionne : marchez d'un pas lent et régulier, sans vous arrêter brusquement, pour que les conducteurs puissent vous contourner.",
+    "de": "Eine Straße zwischen Mopeds zu überqueren wirkt einschüchternd: Geh langsam und gleichmäßig ohne plötzliches Stehenbleiben, damit die Fahrer um dich herumlenken können."
+   }
+  },
+  {
+   "id": "ct-VN-17",
+   "category": "transport",
+   "text": {
+    "en": "Ride-hailing apps such as Grab are popular for taxis and motorbike rides because the price is shown up front; if you take a regular taxi, make sure the meter is on.",
+    "it": "Le app di ride-hailing come Grab sono molto usate per taxi e moto perché il prezzo è mostrato in anticipo; se prendi un taxi normale, assicurati che il tassametro sia acceso.",
+    "es": "Las apps de transporte como Grab son muy usadas para taxis y motos porque muestran el precio de antemano; si tomas un taxi normal, asegúrate de que el taxímetro esté encendido.",
+    "pt": "As aplicações de transporte como a Grab são muito usadas para táxis e motas porque mostram o preço à partida; se apanhares um táxi normal, certifica-te de que o taxímetro está ligado.",
+    "pt_BR": "Aplicativos de transporte como o Grab são muito usados para táxis e motos porque mostram o preço de antemão; se pegar um táxi comum, confira se o taxímetro está ligado.",
+    "fr": "Les applications de VTC comme Grab sont très utilisées pour les taxis et les motos car le prix est affiché à l'avance ; si vous prenez un taxi classique, vérifiez que le compteur tourne.",
+    "de": "Fahrdienst-Apps wie Grab sind für Taxis und Motorradfahrten beliebt, weil der Preis vorab feststeht; bei einem normalen Taxi achte darauf, dass das Taxameter läuft."
+   }
+  },
+  {
+   "id": "ct-VN-18",
+   "category": "language",
+   "text": {
+    "en": "Vietnamese has six tones, so the same syllable can mean different things; locals appreciate any attempt, and a simple 'cảm ơn' for thanks goes a long way.",
+    "it": "Il vietnamita ha sei toni, quindi la stessa sillaba può avere significati diversi; la gente apprezza ogni tentativo, e un semplice «cảm ơn» per ringraziare fa molta strada.",
+    "es": "El vietnamita tiene seis tonos, así que la misma sílaba puede significar cosas distintas; la gente valora cualquier intento y un simple «cảm ơn» para dar las gracias ayuda mucho.",
+    "pt": "O vietnamita tem seis tons, por isso a mesma sílaba pode ter significados diferentes; as pessoas apreciam qualquer tentativa e um simples «cảm ơn» para agradecer faz toda a diferença.",
+    "pt_BR": "O vietnamita tem seis tons, então a mesma sílaba pode ter significados diferentes; as pessoas valorizam qualquer tentativa e um simples «cảm ơn» para agradecer faz toda a diferença.",
+    "fr": "Le vietnamien compte six tons, si bien qu'une même syllabe peut avoir des sens différents ; les gens apprécient tout effort, et un simple «cảm ơn» pour remercier fait très bonne impression.",
+    "de": "Vietnamesisch hat sechs Töne, dieselbe Silbe kann also verschiedene Bedeutungen haben; Einheimische schätzen jeden Versuch, und ein einfaches «cảm ơn» zum Danken kommt sehr gut an."
+   }
+  },
+  {
+   "id": "ct-VN-19",
+   "category": "language",
+   "text": {
+    "en": "Vietnamese is written with a Latin-based alphabet plus many accent marks; copy the accents exactly when typing place names so maps and drivers find them.",
+    "it": "Il vietnamita si scrive con un alfabeto di base latina con molti segni diacritici; riproduci gli accenti esattamente quando scrivi nomi di luoghi, così mappe e autisti li trovano.",
+    "es": "El vietnamita se escribe con un alfabeto de base latina y muchos signos diacríticos; copia los acentos exactamente al escribir nombres de lugares para que mapas y conductores los encuentren.",
+    "pt": "O vietnamita escreve-se com um alfabeto de base latina e muitos sinais diacríticos; copia os acentos exatamente ao escrever nomes de locais para que mapas e motoristas os encontrem.",
+    "pt_BR": "O vietnamita é escrito com um alfabeto de base latina e muitos sinais diacríticos; copie os acentos exatamente ao digitar nomes de lugares para que mapas e motoristas os encontrem.",
+    "fr": "Le vietnamien s'écrit avec un alphabet d'origine latine et de nombreux signes diacritiques ; recopiez les accents exactement en tapant des noms de lieux pour que cartes et chauffeurs les trouvent.",
+    "de": "Vietnamesisch wird mit einem lateinischen Alphabet und vielen Akzentzeichen geschrieben; übernimm die Akzente beim Tippen von Ortsnamen genau, damit Karten und Fahrer sie finden."
+   }
+  },
+  {
+   "id": "ct-VN-20",
+   "category": "festivals",
+   "text": {
+    "en": "Tết, the Lunar New Year, is the biggest holiday; many shops and restaurants close for several days and transport is very crowded, so plan well ahead.",
+    "it": "Il Tết, il Capodanno lunare, è la festa più importante; molti negozi e ristoranti chiudono per diversi giorni e i trasporti sono affollatissimi, quindi organizzati con largo anticipo.",
+    "es": "El Tết, el Año Nuevo lunar, es la fiesta más importante; muchas tiendas y restaurantes cierran varios días y el transporte va abarrotado, así que planifica con mucha antelación.",
+    "pt": "O Tết, o Ano Novo lunar, é a maior festa; muitas lojas e restaurantes fecham durante vários dias e os transportes ficam cheiríssimos, por isso planeia com muita antecedência.",
+    "pt_BR": "O Tết, o Ano-Novo lunar, é a maior festa; muitas lojas e restaurantes fecham por vários dias e o transporte fica lotado, então planeje com bastante antecedência.",
+    "fr": "Le Tết, le Nouvel An lunaire, est la plus grande fête ; beaucoup de boutiques et de restaurants ferment plusieurs jours et les transports sont bondés, alors planifiez bien à l'avance.",
+    "de": "Tết, das Mondneujahr, ist das größte Fest; viele Geschäfte und Restaurants schließen mehrere Tage und der Verkehr ist völlig überfüllt, plane also früh."
+   }
+  },
+  {
+   "id": "ct-VN-21",
+   "category": "festivals",
+   "text": {
+    "en": "At Tết it is common to give children and elders small red envelopes with money, called lì xì, along with warm wishes for the year.",
+    "it": "Durante il Tết è usanza dare a bambini e anziani piccole buste rosse con del denaro, chiamate lì xì, insieme a calorosi auguri per l'anno.",
+    "es": "En el Tết es habitual dar a niños y mayores pequeños sobres rojos con dinero, llamados lì xì, junto con buenos deseos para el año.",
+    "pt": "No Tết é costume dar a crianças e idosos pequenos envelopes vermelhos com dinheiro, chamados lì xì, juntamente com bons votos para o ano.",
+    "pt_BR": "No Tết é costume dar a crianças e idosos pequenos envelopes vermelhos com dinheiro, chamados lì xì, junto com bons votos para o ano.",
+    "fr": "Pendant le Tết, il est courant d'offrir aux enfants et aux aînés de petites enveloppes rouges contenant de l'argent, appelées lì xì, avec des vœux chaleureux pour l'année.",
+    "de": "Zu Tết ist es üblich, Kindern und Älteren kleine rote Umschläge mit Geld, lì xì genannt, samt guten Wünschen für das Jahr zu schenken."
+   }
+  },
+  {
+   "id": "ct-VN-22",
+   "category": "family",
+   "text": {
+    "en": "Family and respect for elders are central; it is common for several generations to live together, and older relatives are served first and spoken to politely.",
+    "it": "Famiglia e rispetto per gli anziani sono centrali; è comune che vivano insieme più generazioni, e i parenti più anziani vengono serviti per primi e trattati con cortesia.",
+    "es": "La familia y el respeto a los mayores son fundamentales; es habitual que convivan varias generaciones, y a los parientes mayores se les sirve primero y se les habla con cortesía.",
+    "pt": "A família e o respeito pelos mais velhos são centrais; é comum viverem várias gerações juntas, e os familiares mais velhos são servidos primeiro e tratados com cortesia.",
+    "pt_BR": "A família e o respeito pelos mais velhos são centrais; é comum várias gerações morarem juntas, e os parentes mais velhos são servidos primeiro e tratados com cortesia.",
+    "fr": "La famille et le respect des aînés sont essentiels ; il est courant que plusieurs générations vivent ensemble, et les parents âgés sont servis en premier et traités avec courtoisie.",
+    "de": "Familie und Respekt vor Älteren stehen im Mittelpunkt; oft leben mehrere Generationen zusammen, und ältere Verwandte werden zuerst bedient und höflich angesprochen."
+   }
+  },
+  {
+   "id": "ct-VN-23",
+   "category": "family",
+   "text": {
+    "en": "Mid-Autumn Festival, Tết Trung Thu, is known as the Children's Festival: lanterns, lion dances and mooncakes are shared with family and kids.",
+    "it": "La Festa di Metà Autunno, Tết Trung Thu, è nota come Festa dei Bambini: lanterne, danze del leone e dolci della luna si condividono con la famiglia e i più piccoli.",
+    "es": "La Fiesta del Medio Otoño, Tết Trung Thu, se conoce como la Fiesta de los Niños: farolillos, danzas del león y pasteles de luna se comparten en familia y con los pequeños.",
+    "pt": "A Festa do Meio do Outono, Tết Trung Thu, é conhecida como a Festa das Crianças: lanternas, danças do leão e bolos lunares partilham-se em família e com os mais pequenos.",
+    "pt_BR": "O Festival do Meio do Outono, Tết Trung Thu, é conhecido como a Festa das Crianças: lanternas, danças do leão e bolos lunares são compartilhados em família e com os pequenos.",
+    "fr": "La fête de la mi-automne, Tết Trung Thu, est connue comme la fête des enfants : lanternes, danses du lion et gâteaux de lune se partagent en famille et avec les petits.",
+    "de": "Das Mittherbstfest Tết Trung Thu gilt als Kinderfest: Laternen, Löwentänze und Mondkuchen werden mit Familie und Kindern geteilt."
+   }
+  },
+  {
+   "id": "ct-VN-24",
+   "category": "money",
+   "text": {
+    "en": "The Vietnamese đồng is the currency; carry small notes for street food, markets and taxis, since vendors often cannot change large bills.",
+    "it": "La valuta è il đồng vietnamita; porta banconote di piccolo taglio per cibo di strada, mercati e taxi, perché i venditori spesso non hanno il resto per le banconote grandi.",
+    "es": "La moneda es el đồng vietnamita; lleva billetes pequeños para comida callejera, mercados y taxis, porque los vendedores a menudo no pueden cambiar billetes grandes.",
+    "pt": "A moeda é o đồng vietnamita; leva notas pequenas para comida de rua, mercados e táxis, porque os vendedores muitas vezes não têm troco para notas grandes.",
+    "pt_BR": "A moeda é o đồng vietnamita; leve notas pequenas para comida de rua, mercados e táxis, porque os vendedores muitas vezes não têm troco para notas grandes.",
+    "fr": "La monnaie est le đồng vietnamien ; ayez de petites coupures pour la street food, les marchés et les taxis, car les vendeurs ne peuvent souvent pas rendre la monnaie sur les gros billets.",
+    "de": "Die Währung ist der vietnamesische Đồng; hab kleine Scheine für Straßenessen, Märkte und Taxis dabei, da Händler große Scheine oft nicht wechseln können."
+   }
+  },
+  {
+   "id": "ct-VN-25",
+   "category": "money",
+   "text": {
+    "en": "Bargaining is normal at markets: smile, offer a bit lower and settle calmly, but prices in supermarkets and most restaurants are fixed.",
+    "it": "Contrattare è normale nei mercati: sorridi, offri un po' meno e chiudi con calma, ma i prezzi in supermercati e nella maggior parte dei ristoranti sono fissi.",
+    "es": "Regatear es normal en los mercados: sonríe, ofrece un poco menos y cierra el trato con calma, pero los precios en supermercados y en la mayoría de restaurantes son fijos.",
+    "pt": "Regatear é normal nos mercados: sorri, oferece um pouco menos e fecha o negócio com calma, mas os preços em supermercados e na maioria dos restaurantes são fixos.",
+    "pt_BR": "Pechinchar é normal nos mercados: sorria, ofereça um pouco menos e feche o negócio com calma, mas os preços em supermercados e na maioria dos restaurantes são fixos.",
+    "fr": "Marchander est normal sur les marchés : souriez, proposez un peu moins et concluez calmement, mais les prix sont fixes dans les supermarchés et la plupart des restaurants.",
+    "de": "Auf Märkten ist Feilschen normal: lächle, biete etwas weniger und einige dich ruhig, aber in Supermärkten und den meisten Restaurants sind die Preise fest."
+   }
+  },
+  {
+   "id": "ct-VN-26",
+   "category": "photography",
+   "text": {
+    "en": "Ask before photographing people, especially elders and members of ethnic minority communities in the highlands; a smile and a gesture are usually enough to check.",
+    "it": "Chiedi prima di fotografare le persone, soprattutto anziani e membri delle minoranze etniche degli altopiani; un sorriso e un gesto di solito bastano per chiedere.",
+    "es": "Pide permiso antes de fotografiar a las personas, sobre todo a mayores y a miembros de minorías étnicas de las tierras altas; una sonrisa y un gesto suelen bastar para preguntar.",
+    "pt": "Pede licença antes de fotografares pessoas, sobretudo idosos e membros de minorias étnicas das terras altas; um sorriso e um gesto costumam bastar para perguntar.",
+    "pt_BR": "Peça permissão antes de fotografar pessoas, sobretudo idosos e membros de minorias étnicas das terras altas; um sorriso e um gesto geralmente bastam para perguntar.",
+    "fr": "Demandez avant de photographier des personnes, surtout des aînés et des membres de minorités ethniques des hauts plateaux ; un sourire et un geste suffisent généralement.",
+    "de": "Frag, bevor du Menschen fotografierst, besonders Ältere und Angehörige ethnischer Minderheiten im Hochland; ein Lächeln und eine Geste reichen meist zum Nachfragen."
+   }
+  },
+  {
+   "id": "ct-VN-27",
+   "category": "nightlife",
+   "text": {
+    "en": "On weekend evenings Hanoi's Old Quarter has pedestrian streets with street food, music and families strolling, a relaxed way to enjoy the night.",
+    "it": "Nelle sere del fine settimana il Quartiere Vecchio di Hanoi ha strade pedonali con cibo di strada, musica e famiglie a passeggio, un modo rilassato di godersi la serata.",
+    "es": "Los fines de semana por la noche el Barrio Antiguo de Hanói tiene calles peatonales con comida callejera, música y familias paseando, una forma relajada de disfrutar la noche.",
+    "pt": "Nas noites de fim de semana o Bairro Antigo de Hanói tem ruas pedonais com comida de rua, música e famílias a passear, uma forma descontraída de aproveitar a noite.",
+    "pt_BR": "Nas noites de fim de semana o Bairro Antigo de Hanói tem ruas de pedestres com comida de rua, música e famílias passeando, um jeito descontraído de curtir a noite.",
+    "fr": "Les soirs de week-end, le Vieux Quartier de Hanoï propose des rues piétonnes avec street food, musique et familles en promenade, une façon détendue de profiter de la soirée.",
+    "de": "An Wochenendabenden gibt es im Altstadtviertel von Hanoi Fußgängerstraßen mit Streetfood, Musik und flanierenden Familien, eine entspannte Art, den Abend zu genießen."
+   }
+  },
+  {
+   "id": "ct-VN-28",
+   "category": "nature",
+   "text": {
+    "en": "Ha Long Bay and Phong Nha are popular natural sites; book boat or cave tours through licensed operators and follow guides' rules to protect the environment.",
+    "it": "La baia di Ha Long e Phong Nha sono mete naturali molto frequentate; prenota escursioni in barca o nelle grotte con operatori autorizzati e segui le regole delle guide per proteggere l'ambiente.",
+    "es": "La bahía de Ha Long y Phong Nha son lugares naturales muy visitados; reserva excursiones en barco o a cuevas con operadores autorizados y sigue las normas de los guías para proteger el entorno.",
+    "pt": "A baía de Ha Long e Phong Nha são locais naturais muito visitados; reserva passeios de barco ou às grutas com operadores licenciados e segue as regras dos guias para proteger o ambiente.",
+    "pt_BR": "A baía de Ha Long e Phong Nha são locais naturais muito visitados; reserve passeios de barco ou às cavernas com operadores licenciados e siga as regras dos guias para proteger o ambiente.",
+    "fr": "La baie d'Ha Long et Phong Nha sont des sites naturels très visités ; réservez vos sorties en bateau ou dans les grottes auprès d'opérateurs agréés et respectez les consignes des guides pour protéger l'environnement.",
+    "de": "Die Ha-Long-Bucht und Phong Nha sind beliebte Naturziele; buche Boots- oder Höhlentouren bei zugelassenen Anbietern und befolge die Regeln der Guides, um die Umwelt zu schützen."
+   }
+  },
+  {
+   "id": "ct-VN-29",
+   "category": "safety",
+   "text": {
+    "en": "Phone snatching from passing motorbikes happens in busy cities, so hold your phone away from the curb and keep bags on the side away from traffic.",
+    "it": "Nelle città affollate capita che qualcuno strappi il telefono da una moto in corsa, quindi tieni il telefono lontano dal bordo del marciapiede e la borsa dal lato opposto al traffico.",
+    "es": "En las ciudades concurridas a veces te arrebatan el móvil desde una moto en marcha, así que sujeta el teléfono lejos del bordillo y lleva el bolso en el lado opuesto al tráfico.",
+    "pt": "Nas cidades movimentadas há quem arranque o telemóvel a partir de uma mota em andamento, por isso segura o telemóvel longe do passeio e leva a mala do lado oposto ao trânsito.",
+    "pt_BR": "Nas cidades movimentadas há quem arranque o celular de uma moto em movimento, então segure o celular longe do meio-fio e leve a bolsa do lado oposto ao trânsito.",
+    "fr": "Dans les villes animées, il arrive qu'on arrache un téléphone depuis une moto en marche ; tenez votre téléphone loin du bord du trottoir et gardez le sac du côté opposé à la circulation.",
+    "de": "In belebten Städten kommt es vor, dass Handys von vorbeifahrenden Mopeds gerissen werden; halte dein Handy vom Bordstein weg und trage die Tasche auf der verkehrsabgewandten Seite."
+   }
+  },
+  {
+   "id": "ct-VN-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Vietnamese people are proud of their food, and each region has its own style; asking which local dish to try, and which region it comes from, is a warm way to connect.",
+    "it": "I vietnamiti sono orgogliosi della loro cucina e ogni regione ha il proprio stile; chiedere quale piatto locale provare e di quale regione sia è un modo caloroso per creare un legame.",
+    "es": "Los vietnamitas están orgullosos de su comida y cada región tiene su propio estilo; preguntar qué plato local probar y de qué región es, es una forma cálida de conectar.",
+    "pt": "Os vietnamitas têm orgulho na sua comida e cada região tem o seu estilo; perguntar que prato local experimentar e de que região é uma forma calorosa de criar ligação.",
+    "pt_BR": "Os vietnamitas têm orgulho da sua comida e cada região tem seu próprio estilo; perguntar qual prato local experimentar e de qual região ele é, é um jeito caloroso de criar conexão.",
+    "fr": "Les Vietnamiens sont fiers de leur cuisine et chaque région a son style ; demander quel plat local goûter et de quelle région il vient est une façon chaleureuse de créer du lien.",
+    "de": "Vietnamesen sind stolz auf ihr Essen, und jede Region hat ihren eigenen Stil; die Frage, welches lokale Gericht man probieren sollte und aus welcher Region es stammt, schafft eine herzliche Verbindung."
+   }
+  }
+ ],
+ "XK": [
+  {
+   "id": "ct-XK-01",
+   "category": "greetings",
+   "text": {
+    "en": "A firm handshake with eye contact and a warm 'Përshëndetje' or 'Mirëdita' is the usual greeting; close friends often add a kiss on the cheek or a hug.",
+    "it": "Una stretta di mano decisa con contatto visivo e un caloroso «Përshëndetje» o «Mirëdita» è il saluto abituale; gli amici stretti aggiungono spesso un bacio sulla guancia o un abbraccio.",
+    "es": "Lo habitual es un apretón de manos firme con contacto visual y un cálido «Përshëndetje» o «Mirëdita»; los amigos cercanos suelen añadir un beso en la mejilla o un abrazo.",
+    "pt": "O habitual é um aperto de mão firme com contacto visual e um caloroso «Përshëndetje» ou «Mirëdita»; os amigos próximos costumam acrescentar um beijo na face ou um abraço.",
+    "pt_BR": "O habitual é um aperto de mão firme com contato visual e um caloroso «Përshëndetje» ou «Mirëdita»; amigos próximos costumam acrescentar um beijo no rosto ou um abraço.",
+    "fr": "La façon habituelle de saluer est une poignée de main ferme avec contact visuel et un chaleureux «Përshëndetje» ou «Mirëdita» ; les amis proches ajoutent souvent une bise ou une accolade.",
+    "de": "Üblich ist ein fester Händedruck mit Blickkontakt und ein herzliches «Përshëndetje» oder «Mirëdita»; enge Freunde fügen oft einen Wangenkuss oder eine Umarmung hinzu."
+   }
+  },
+  {
+   "id": "ct-XK-02",
+   "category": "greetings",
+   "text": {
+    "en": "Kosovo has two official languages, Albanian and Serbian; greeting people in the language they start with shows consideration.",
+    "it": "Il Kosovo ha due lingue ufficiali, albanese e serbo; salutare nella lingua con cui la persona inizia mostra attenzione.",
+    "es": "Kosovo tiene dos lenguas oficiales, albanés y serbio; saludar en la lengua con la que la persona empieza muestra consideración.",
+    "pt": "O Kosovo tem duas línguas oficiais, albanês e sérvio; cumprimentar na língua com que a pessoa começa mostra consideração.",
+    "pt_BR": "O Kosovo tem duas línguas oficiais, albanês e sérvio; cumprimentar na língua com que a pessoa começa mostra consideração.",
+    "fr": "Le Kosovo a deux langues officielles, l'albanais et le serbe ; saluer dans la langue par laquelle la personne commence montre de la considération.",
+    "de": "Der Kosovo hat zwei Amtssprachen, Albanisch und Serbisch; wer in der Sprache grüßt, mit der das Gegenüber beginnt, zeigt Rücksicht."
+   }
+  },
+  {
+   "id": "ct-XK-03",
+   "category": "conversation",
+   "text": {
+    "en": "Hosts love to talk about family, food, football and travel; asking about someone's hometown is a safe and friendly way to start a chat.",
+    "it": "Chi ospita ama parlare di famiglia, cibo, calcio e viaggi; chiedere della città d'origine di qualcuno è un modo sicuro e cordiale per iniziare a chiacchierare.",
+    "es": "A los anfitriones les encanta hablar de familia, comida, fútbol y viajes; preguntar por la ciudad natal de alguien es una forma segura y amistosa de empezar a charlar.",
+    "pt": "Os anfitriões adoram falar de família, comida, futebol e viagens; perguntar pela terra natal de alguém é uma forma segura e simpática de começar conversa.",
+    "pt_BR": "Os anfitriões adoram falar de família, comida, futebol e viagens; perguntar pela cidade natal de alguém é um jeito seguro e simpático de começar a conversar.",
+    "fr": "Les hôtes aiment parler de famille, de cuisine, de football et de voyages ; demander la ville d'origine de quelqu'un est une façon sûre et amicale d'engager la conversation.",
+    "de": "Gastgeber sprechen gern über Familie, Essen, Fußball und Reisen; die Frage nach der Heimatstadt ist ein sicherer und freundlicher Gesprächseinstieg."
+   }
+  },
+  {
+   "id": "ct-XK-04",
+   "category": "conversation",
+   "text": {
+    "en": "Many people would rather chat about daily life than about recent history, so let locals choose whether to bring up heavier topics.",
+    "it": "Molte persone preferiscono parlare della vita quotidiana piuttosto che della storia recente, quindi lascia che siano gli abitanti a scegliere se affrontare argomenti più pesanti.",
+    "es": "Mucha gente prefiere hablar de la vida cotidiana antes que de la historia reciente, así que deja que los locales decidan si sacan temas más pesados.",
+    "pt": "Muitas pessoas preferem falar do dia a dia a falar da história recente, por isso deixa que sejam os locais a decidir se abordam temas mais pesados.",
+    "pt_BR": "Muitas pessoas preferem falar do dia a dia a falar da história recente, então deixe que os moradores decidam se vão tocar em assuntos mais pesados.",
+    "fr": "Beaucoup de gens préfèrent parler de la vie quotidienne plutôt que de l'histoire récente ; laissez les habitants choisir s'ils veulent aborder des sujets plus lourds.",
+    "de": "Viele sprechen lieber über den Alltag als über die jüngere Geschichte, also überlass es den Einheimischen, ob sie schwerere Themen ansprechen."
+   }
+  },
+  {
+   "id": "ct-XK-05",
+   "category": "dining",
+   "text": {
+    "en": "Turkish-style coffee and macchiato are served everywhere, and a café visit is a social ritual: people sit for an hour or more, and nobody rushes you.",
+    "it": "Il caffè alla turca e il macchiato si servono ovunque, e andare al bar è un rito sociale: ci si siede anche per un'ora o più e nessuno ti mette fretta.",
+    "es": "El café turco y el macchiato se sirven en todas partes, y ir a una cafetería es un ritual social: la gente se sienta una hora o más y nadie te mete prisa.",
+    "pt": "O café turco e o macchiato servem-se em todo o lado, e ir a um café é um ritual social: as pessoas ficam uma hora ou mais e ninguém te apressa.",
+    "pt_BR": "O café turco e o macchiato são servidos em todo lugar, e ir a um café é um ritual social: as pessoas ficam uma hora ou mais e ninguém apressa você.",
+    "fr": "Le café turc et le macchiato se servent partout, et aller au café est un rituel social : on y reste une heure ou plus sans que personne ne vous presse.",
+    "de": "Türkischer Kaffee und Macchiato werden überall serviert, und der Cafébesuch ist ein soziales Ritual: Man sitzt eine Stunde oder länger, und niemand drängt dich."
+   }
+  },
+  {
+   "id": "ct-XK-06",
+   "category": "dining",
+   "text": {
+    "en": "Try local dishes like flija, byrek, qebapa and pite; at a home meal, expect to be offered second helpings and say so kindly if you are full.",
+    "it": "Assaggia piatti locali come flija, byrek, qebapa e pite; a un pasto in casa ti offriranno il bis, e se sei sazio dillo con gentilezza.",
+    "es": "Prueba platos locales como flija, byrek, qebapa y pite; en una comida en casa te ofrecerán repetir y, si estás lleno, dilo con amabilidad.",
+    "pt": "Experimenta pratos locais como flija, byrek, qebapa e pite; numa refeição em casa vão oferecer-te repetição, e se estiveres cheio di-lo com simpatia.",
+    "pt_BR": "Experimente pratos locais como flija, byrek, qebapa e pite; em uma refeição em casa vão oferecer repetição, e se estiver satisfeito diga isso com gentileza.",
+    "fr": "Goûtez des plats locaux comme la flija, le byrek, les qebapa et la pite ; lors d'un repas à la maison, on vous proposera de vous resservir, et si vous n'avez plus faim, dites-le gentiment.",
+    "de": "Probiere lokale Gerichte wie Flija, Byrek, Qebapa und Pite; bei einem Essen zu Hause wird dir Nachschlag angeboten, und wenn du satt bist, sag das freundlich."
+   }
+  },
+  {
+   "id": "ct-XK-07",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping about 10 percent in restaurants is appreciated, and rounding up the bill in cafés or for taxi drivers is common.",
+    "it": "Una mancia di circa il 10 per cento nei ristoranti è apprezzata, e arrotondare il conto nei bar o per i tassisti è comune.",
+    "es": "Una propina de alrededor del 10 por ciento en restaurantes se agradece, y es común redondear la cuenta en cafeterías o con los taxistas.",
+    "pt": "Uma gorjeta de cerca de 10 por cento nos restaurantes é apreciada, e é comum arredondar a conta nos cafés ou para os taxistas.",
+    "pt_BR": "Uma gorjeta de cerca de 10 por cento nos restaurantes é bem-vinda, e é comum arredondar a conta em cafés ou para motoristas de táxi.",
+    "fr": "Un pourboire d'environ 10 pour cent au restaurant est apprécié, et arrondir l'addition au café ou pour les chauffeurs de taxi est courant.",
+    "de": "Etwa 10 Prozent Trinkgeld im Restaurant werden geschätzt, und Aufrunden im Café oder beim Taxi ist üblich."
+   }
+  },
+  {
+   "id": "ct-XK-08",
+   "category": "gifts",
+   "text": {
+    "en": "If invited to a home, bring something small such as sweets, pastries, flowers or a gift for the children; the host will appreciate the thought more than the price.",
+    "it": "Se sei invitato a casa di qualcuno, porta qualcosa di piccolo come dolci, pasticcini, fiori o un regalo per i bambini; l'ospite apprezzerà il pensiero più del prezzo.",
+    "es": "Si te invitan a una casa, lleva algo pequeño como dulces, pasteles, flores o un detalle para los niños; el anfitrión valorará más el gesto que el precio.",
+    "pt": "Se fores convidado para uma casa, leva algo pequeno como doces, pastéis, flores ou uma lembrança para as crianças; o anfitrião valoriza mais o gesto do que o preço.",
+    "pt_BR": "Se for convidado para uma casa, leve algo pequeno como doces, salgados, flores ou uma lembrança para as crianças; o anfitrião valoriza mais o gesto do que o preço.",
+    "fr": "Si on vous invite chez quelqu'un, apportez un petit présent comme des sucreries, des pâtisseries, des fleurs ou un cadeau pour les enfants ; l'hôte appréciera l'attention plus que le prix.",
+    "de": "Wenn du zu jemandem nach Hause eingeladen bist, bring etwas Kleines mit, etwa Süßes, Gebäck, Blumen oder etwas für die Kinder; der Gastgeber schätzt die Geste mehr als den Preis."
+   }
+  },
+  {
+   "id": "ct-XK-09",
+   "category": "dress",
+   "text": {
+    "en": "Everyday dress in cities like Pristina is casual and fashionable; smart-casual clothes suit cafés and restaurants.",
+    "it": "L'abbigliamento quotidiano in città come Pristina è casual e alla moda; vestiti smart casual vanno bene per bar e ristoranti.",
+    "es": "La ropa diaria en ciudades como Pristina es informal y a la moda; la ropa smart casual va bien para cafeterías y restaurantes.",
+    "pt": "A roupa do dia a dia em cidades como Pristina é informal e moderna; roupa smart casual serve bem para cafés e restaurantes.",
+    "pt_BR": "A roupa do dia a dia em cidades como Pristina é casual e moderna; roupa esporte fino serve bem para cafés e restaurantes.",
+    "fr": "La tenue quotidienne dans des villes comme Pristina est décontractée et à la mode ; une tenue chic décontractée convient aux cafés et restaurants.",
+    "de": "Die Alltagskleidung in Städten wie Pristina ist leger und modisch; Smart-Casual passt gut in Cafés und Restaurants."
+   }
+  },
+  {
+   "id": "ct-XK-10",
+   "category": "religion_sites",
+   "text": {
+    "en": "Cover shoulders and knees and take your shoes off before entering a mosque; women may be asked to cover their hair, and a scarf in your bag helps.",
+    "it": "Prima di entrare in una moschea copri spalle e ginocchia e togli le scarpe; alle donne può essere chiesto di coprire i capelli, e avere una sciarpa in borsa aiuta.",
+    "es": "Antes de entrar en una mezquita cúbrete hombros y rodillas y quítate los zapatos; a las mujeres se les puede pedir cubrirse el pelo, y un pañuelo en el bolso viene bien.",
+    "pt": "Antes de entrares numa mesquita, cobre os ombros e os joelhos e tira os sapatos; às mulheres pode ser pedido que cubram o cabelo, e um lenço na mala ajuda.",
+    "pt_BR": "Antes de entrar em uma mesquita, cubra ombros e joelhos e tire os sapatos; às mulheres pode ser pedido que cubram o cabelo, e um lenço na bolsa ajuda.",
+    "fr": "Avant d'entrer dans une mosquée, couvrez-vous les épaules et les genoux et retirez vos chaussures ; on peut demander aux femmes de se couvrir les cheveux, un foulard dans le sac est utile.",
+    "de": "Bevor du eine Moschee betrittst, bedecke Schultern und Knie und zieh die Schuhe aus; Frauen werden eventuell gebeten, das Haar zu bedecken, ein Tuch in der Tasche hilft."
+   }
+  },
+  {
+   "id": "ct-XK-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Four medieval Serbian Orthodox churches and monasteries in Kosovo form a UNESCO World Heritage Site; dress modestly, speak softly and follow the monks' and guards' instructions.",
+    "it": "Quattro chiese e monasteri ortodossi serbi medievali in Kosovo formano un sito UNESCO; vesti in modo sobrio, parla piano e segui le indicazioni di monaci e guardie.",
+    "es": "Cuatro iglesias y monasterios ortodoxos serbios medievales de Kosovo forman un sitio Patrimonio de la Humanidad de la UNESCO; vístete con modestia, habla bajo y sigue las indicaciones de monjes y guardias.",
+    "pt": "Quatro igrejas e mosteiros ortodoxos sérvios medievais no Kosovo formam um sítio Património Mundial da UNESCO; veste-te com recato, fala baixo e segue as indicações de monges e guardas.",
+    "pt_BR": "Quatro igrejas e mosteiros ortodoxos sérvios medievais no Kosovo formam um sítio Patrimônio Mundial da UNESCO; vista-se com recato, fale baixo e siga as orientações de monges e guardas.",
+    "fr": "Quatre églises et monastères orthodoxes serbes médiévaux du Kosovo forment un site du patrimoine mondial de l'UNESCO ; habillez-vous modestement, parlez doucement et suivez les consignes des moines et des gardes.",
+    "de": "Vier mittelalterliche serbisch-orthodoxe Kirchen und Klöster im Kosovo bilden ein UNESCO-Welterbe; kleide dich dezent, sprich leise und folge den Anweisungen von Mönchen und Wachen."
+   }
+  },
+  {
+   "id": "ct-XK-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "Kosovo is religiously mixed and largely secular in daily life; mosques, Catholic and Orthodox churches all welcome respectful visitors, so check opening hours first.",
+    "it": "Il Kosovo è religiosamente variegato e nella vita quotidiana in gran parte laico; moschee e chiese cattoliche e ortodosse accolgono visitatori rispettosi, ma controlla prima gli orari.",
+    "es": "Kosovo es religiosamente diverso y en gran parte laico en la vida diaria; mezquitas e iglesias católicas y ortodoxas acogen a visitantes respetuosos, pero comprueba antes los horarios.",
+    "pt": "O Kosovo é religiosamente diverso e em grande parte laico no dia a dia; mesquitas e igrejas católicas e ortodoxas recebem visitantes respeitosos, mas confirma antes os horários.",
+    "pt_BR": "O Kosovo é religiosamente diverso e em grande parte laico no dia a dia; mesquitas e igrejas católicas e ortodoxas recebem visitantes respeitosos, mas confira antes os horários.",
+    "fr": "Le Kosovo est religieusement varié et largement laïc au quotidien ; mosquées et églises catholiques et orthodoxes accueillent les visiteurs respectueux, mais vérifiez d'abord les horaires.",
+    "de": "Der Kosovo ist religiös vielfältig und im Alltag weitgehend säkular; Moscheen sowie katholische und orthodoxe Kirchen nehmen respektvolle Besucher auf, prüfe aber vorher die Öffnungszeiten."
+   }
+  },
+  {
+   "id": "ct-XK-13",
+   "category": "gestures",
+   "text": {
+    "en": "In some Albanian-speaking communities a head shake can mean yes and a nod can mean no, so confirm answers with a word when it matters.",
+    "it": "In alcune comunità albanofone scuotere la testa può significare sì e annuire può significare no, quindi conferma le risposte a parole quando è importante.",
+    "es": "En algunas comunidades de habla albanesa mover la cabeza de lado a lado puede significar sí y asentir puede significar no, así que confirma con palabras cuando importe.",
+    "pt": "Em algumas comunidades de língua albanesa, abanar a cabeça pode significar sim e acenar pode significar não, por isso confirma as respostas por palavras quando for importante.",
+    "pt_BR": "Em algumas comunidades de língua albanesa, balançar a cabeça de um lado para o outro pode significar sim e acenar pode significar não, então confirme com palavras quando for importante.",
+    "fr": "Dans certaines communautés albanophones, secouer la tête peut signifier oui et hocher la tête non ; confirmez donc par un mot lorsque c'est important.",
+    "de": "In manchen albanischsprachigen Gemeinschaften kann Kopfschütteln Ja und Nicken Nein bedeuten, also bestätige Antworten mit einem Wort, wenn es darauf ankommt."
+   }
+  },
+  {
+   "id": "ct-XK-14",
+   "category": "punctuality",
+   "text": {
+    "en": "Social meetings often start a little later than agreed, but be on time for business meetings, appointments and bus departures.",
+    "it": "Gli incontri sociali spesso iniziano un po' dopo l'orario concordato, ma sii puntuale per riunioni di lavoro, appuntamenti e partenze degli autobus.",
+    "es": "Las reuniones sociales suelen empezar un poco más tarde de lo acordado, pero sé puntual en reuniones de negocios, citas y salidas de autobuses.",
+    "pt": "Os encontros sociais costumam começar um pouco depois da hora combinada, mas sê pontual em reuniões de negócios, consultas e partidas de autocarros.",
+    "pt_BR": "Os encontros sociais costumam começar um pouco depois do horário combinado, mas seja pontual em reuniões de negócios, compromissos e partidas de ônibus.",
+    "fr": "Les rencontres entre amis commencent souvent un peu après l'heure convenue, mais soyez ponctuel pour les réunions d'affaires, les rendez-vous et les départs de bus.",
+    "de": "Private Treffen beginnen oft etwas später als verabredet, doch sei bei Geschäftsterminen, Verabredungen und Busabfahrten pünktlich."
+   }
+  },
+  {
+   "id": "ct-XK-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "Offering your seat to elders, pregnant women and people with small children on buses is expected and noticed with appreciation.",
+    "it": "Cedere il posto ad anziani, donne in gravidanza e persone con bambini piccoli sull'autobus è atteso e viene notato con apprezzamento.",
+    "es": "Ceder el asiento a mayores, embarazadas y personas con niños pequeños en el autobús es lo esperado y se agradece.",
+    "pt": "Ceder o lugar a idosos, grávidas e pessoas com crianças pequenas no autocarro é o esperado e é notado com apreço.",
+    "pt_BR": "Ceder o lugar a idosos, grávidas e pessoas com crianças pequenas no ônibus é o esperado e é notado com apreço.",
+    "fr": "Céder sa place aux personnes âgées, aux femmes enceintes et aux personnes avec de jeunes enfants dans le bus est attendu et apprécié.",
+    "de": "Älteren, Schwangeren und Menschen mit kleinen Kindern im Bus den Sitzplatz anzubieten wird erwartet und dankbar bemerkt."
+   }
+  },
+  {
+   "id": "ct-XK-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "Smoking is still common in many cafés and on terraces; if smoke bothers you, choose a table outdoors or a place with a no-smoking section.",
+    "it": "Fumare è ancora comune in molti bar e sulle terrazze; se il fumo ti dà fastidio, scegli un tavolo all'aperto o un locale con zona non fumatori.",
+    "es": "Fumar sigue siendo habitual en muchas cafeterías y terrazas; si el humo te molesta, elige una mesa al aire libre o un local con zona de no fumadores.",
+    "pt": "Fumar ainda é comum em muitos cafés e esplanadas; se o fumo te incomodar, escolhe uma mesa ao ar livre ou um local com zona de não fumadores.",
+    "pt_BR": "Fumar ainda é comum em muitos cafés e terraços; se a fumaça incomodar, escolha uma mesa ao ar livre ou um lugar com área para não fumantes.",
+    "fr": "Fumer reste courant dans de nombreux cafés et sur les terrasses ; si la fumée vous gêne, choisissez une table dehors ou un lieu avec une zone non-fumeurs.",
+    "de": "Rauchen ist in vielen Cafés und auf Terrassen noch verbreitet; wenn dich Rauch stört, wähle einen Tisch draußen oder ein Lokal mit Nichtraucherbereich."
+   }
+  },
+  {
+   "id": "ct-XK-17",
+   "category": "transport",
+   "text": {
+    "en": "Intercity buses connect Pristina with Prizren, Peja, Gjilan and other towns; they are the most practical way to travel, but check departure times at the station the day before.",
+    "it": "Gli autobus interurbani collegano Pristina con Prizren, Peja, Gjilan e altre città; sono il modo più pratico per spostarsi, ma controlla gli orari alla stazione il giorno prima.",
+    "es": "Los autobuses interurbanos conectan Pristina con Prizren, Peja, Gjilan y otras ciudades; son la forma más práctica de viajar, pero comprueba los horarios en la estación el día anterior.",
+    "pt": "Os autocarros interurbanos ligam Pristina a Prizren, Peja, Gjilan e outras cidades; são a forma mais prática de viajar, mas confirma os horários na estação no dia anterior.",
+    "pt_BR": "Os ônibus intermunicipais ligam Pristina a Prizren, Peja, Gjilan e outras cidades; são o jeito mais prático de viajar, mas confira os horários na rodoviária no dia anterior.",
+    "fr": "Des bus interurbains relient Pristina à Prizren, Peja, Gjilan et d'autres villes ; c'est le moyen le plus pratique de voyager, mais vérifiez les horaires à la gare routière la veille.",
+    "de": "Überlandbusse verbinden Pristina mit Prizren, Peja, Gjilan und anderen Städten; sie sind die praktischste Reiseart, doch prüfe die Abfahrtszeiten am Vortag am Busbahnhof."
+   }
+  },
+  {
+   "id": "ct-XK-18",
+   "category": "transport",
+   "text": {
+    "en": "Taxis are cheap, but agree on the price or check that the meter is running before you set off; many drivers will happily help with directions.",
+    "it": "I taxi costano poco, ma concorda il prezzo o verifica che il tassametro sia acceso prima di partire; molti autisti ti aiuteranno volentieri con le indicazioni.",
+    "es": "Los taxis son baratos, pero acuerda el precio o comprueba que el taxímetro esté en marcha antes de salir; muchos conductores te ayudarán gustosamente con indicaciones.",
+    "pt": "Os táxis são baratos, mas combina o preço ou verifica se o taxímetro está ligado antes de partir; muitos motoristas ajudam de bom grado com indicações.",
+    "pt_BR": "Os táxis são baratos, mas combine o preço ou confira se o taxímetro está ligado antes de partir; muitos motoristas ajudam de bom grado com indicações.",
+    "fr": "Les taxis sont bon marché, mais convenez du prix ou vérifiez que le compteur tourne avant de partir ; beaucoup de chauffeurs vous aideront volontiers pour les indications.",
+    "de": "Taxis sind günstig, aber vereinbare den Preis oder prüfe vor der Fahrt, ob das Taxameter läuft; viele Fahrer helfen gern mit Wegbeschreibungen."
+   }
+  },
+  {
+   "id": "ct-XK-19",
+   "category": "language",
+   "text": {
+    "en": "Albanian and Serbian are the official languages, and Turkish and Bosnian are also spoken locally; young people in cities often speak good English.",
+    "it": "Albanese e serbo sono le lingue ufficiali, e a livello locale si parlano anche turco e bosniaco; i giovani nelle città parlano spesso un buon inglese.",
+    "es": "El albanés y el serbio son las lenguas oficiales, y también se hablan turco y bosnio a nivel local; los jóvenes de las ciudades suelen hablar bien inglés.",
+    "pt": "O albanês e o sérvio são as línguas oficiais, e fala-se também turco e bósnio a nível local; os jovens nas cidades costumam falar bom inglês.",
+    "pt_BR": "O albanês e o sérvio são as línguas oficiais, e também se fala turco e bósnio em nível local; os jovens nas cidades costumam falar bom inglês.",
+    "fr": "L'albanais et le serbe sont les langues officielles, et le turc et le bosniaque sont aussi parlés localement ; les jeunes des villes parlent souvent bien anglais.",
+    "de": "Albanisch und Serbisch sind Amtssprachen, lokal werden auch Türkisch und Bosnisch gesprochen; junge Leute in den Städten sprechen oft gut Englisch."
+   }
+  },
+  {
+   "id": "ct-XK-20",
+   "category": "language",
+   "text": {
+    "en": "A few Albanian words go far: 'faleminderit' for thank you, 'ju lutem' for please and 'të lutem' when speaking informally.",
+    "it": "Poche parole di albanese fanno molta strada: «faleminderit» per grazie, «ju lutem» per per favore e «të lutem» in modo informale.",
+    "es": "Unas pocas palabras en albanés ayudan mucho: «faleminderit» para gracias, «ju lutem» para por favor y «të lutem» en trato informal.",
+    "pt": "Algumas palavras em albanês ajudam muito: «faleminderit» para obrigado, «ju lutem» para por favor e «të lutem» em tom informal.",
+    "pt_BR": "Algumas palavras em albanês ajudam muito: «faleminderit» para obrigado, «ju lutem» para por favor e «të lutem» em tom informal.",
+    "fr": "Quelques mots d'albanais font beaucoup : «faleminderit» pour merci, «ju lutem» pour s'il vous plaît et «të lutem» sur un ton informel.",
+    "de": "Ein paar albanische Wörter helfen viel: «faleminderit» für danke, «ju lutem» für bitte und «të lutem» im lockeren Ton."
+   }
+  },
+  {
+   "id": "ct-XK-21",
+   "category": "festivals",
+   "text": {
+    "en": "Dokufest, the international documentary and short film festival held each summer in Prizren, fills the old town with screenings, music and visitors.",
+    "it": "Dokufest, il festival internazionale di documentari e cortometraggi che si tiene ogni estate a Prizren, riempie la città vecchia di proiezioni, musica e visitatori.",
+    "es": "Dokufest, el festival internacional de documentales y cortometrajes que se celebra cada verano en Prizren, llena el casco antiguo de proyecciones, música y visitantes.",
+    "pt": "O Dokufest, o festival internacional de documentários e curtas-metragens que se realiza todos os verões em Prizren, enche a cidade velha de sessões, música e visitantes.",
+    "pt_BR": "O Dokufest, o festival internacional de documentários e curtas-metragens realizado todo verão em Prizren, enche a cidade velha de sessões, música e visitantes.",
+    "fr": "Le Dokufest, festival international de documentaires et de courts métrages organisé chaque été à Prizren, anime la vieille ville de projections, de musique et de visiteurs.",
+    "de": "Das Dokufest, ein internationales Dokumentar- und Kurzfilmfestival, das jeden Sommer in Prizren stattfindet, füllt die Altstadt mit Vorführungen, Musik und Besuchern."
+   }
+  },
+  {
+   "id": "ct-XK-22",
+   "category": "festivals",
+   "text": {
+    "en": "Religious holidays such as Eid, Catholic Christmas and Orthodox Christmas in January are celebrated by their communities; wishing someone a happy holiday is always welcome.",
+    "it": "Feste religiose come l'Eid, il Natale cattolico e il Natale ortodosso di gennaio sono celebrate dalle rispettive comunità; augurare buone feste è sempre gradito.",
+    "es": "Fiestas religiosas como el Eid, la Navidad católica y la Navidad ortodoxa de enero las celebran sus comunidades; desear felices fiestas siempre se agradece.",
+    "pt": "Festas religiosas como o Eid, o Natal católico e o Natal ortodoxo de janeiro são celebradas pelas respetivas comunidades; desejar boas festas é sempre bem-vindo.",
+    "pt_BR": "Festas religiosas como o Eid, o Natal católico e o Natal ortodoxo de janeiro são celebradas pelas respectivas comunidades; desejar boas festas é sempre bem-vindo.",
+    "fr": "Les fêtes religieuses comme l'Aïd, Noël catholique et Noël orthodoxe en janvier sont célébrées par leurs communautés ; souhaiter de bonnes fêtes est toujours bienvenu.",
+    "de": "Religiöse Feste wie Eid, das katholische Weihnachten und das orthodoxe Weihnachten im Januar werden von den jeweiligen Gemeinschaften gefeiert; gute Wünsche zum Fest sind immer willkommen."
+   }
+  },
+  {
+   "id": "ct-XK-23",
+   "category": "family",
+   "text": {
+    "en": "Family ties are strong and extended relatives often meet for Sunday lunches and celebrations; being invited to a family meal is a sign of trust and warmth.",
+    "it": "I legami familiari sono forti e i parenti si ritrovano spesso per i pranzi della domenica e le feste; essere invitati a un pranzo di famiglia è segno di fiducia e calore.",
+    "es": "Los lazos familiares son fuertes y los parientes suelen reunirse para almuerzos dominicales y celebraciones; que te inviten a una comida familiar es señal de confianza y calidez.",
+    "pt": "Os laços familiares são fortes e os parentes reúnem-se muitas vezes para almoços de domingo e celebrações; ser convidado para uma refeição de família é sinal de confiança e carinho.",
+    "pt_BR": "Os laços familiares são fortes e os parentes costumam se reunir em almoços de domingo e comemorações; ser convidado para uma refeição em família é sinal de confiança e carinho.",
+    "fr": "Les liens familiaux sont forts et la famille élargie se retrouve souvent pour les déjeuners du dimanche et les fêtes ; être invité à un repas de famille est un signe de confiance et de chaleur.",
+    "de": "Familienbande sind stark, und die Verwandtschaft trifft sich oft zu Sonntagsessen und Feiern; die Einladung zu einem Familienessen ist ein Zeichen von Vertrauen und Herzlichkeit."
+   }
+  },
+  {
+   "id": "ct-XK-24",
+   "category": "money",
+   "text": {
+    "en": "Kosovo uses the euro, so no currency exchange is needed if you carry euros; cash is still widely preferred in small shops, taxis and markets.",
+    "it": "Il Kosovo usa l'euro, quindi non serve cambiare valuta se hai euro; il contante è ancora molto preferito in piccoli negozi, taxi e mercati.",
+    "es": "Kosovo usa el euro, así que no necesitas cambiar moneda si llevas euros; el efectivo sigue siendo muy preferido en tiendas pequeñas, taxis y mercados.",
+    "pt": "O Kosovo usa o euro, por isso não precisas de trocar moeda se levares euros; o dinheiro em numerário continua a ser muito preferido em lojas pequenas, táxis e mercados.",
+    "pt_BR": "O Kosovo usa o euro, então você não precisa trocar moeda se levar euros; o dinheiro em espécie ainda é muito preferido em lojas pequenas, táxis e mercados.",
+    "fr": "Le Kosovo utilise l'euro, il n'y a donc pas besoin de changer d'argent si vous avez des euros ; les espèces restent très privilégiées dans les petits commerces, les taxis et les marchés.",
+    "de": "Der Kosovo nutzt den Euro, du musst also kein Geld wechseln, wenn du Euro dabeihast; Bargeld wird in kleinen Läden, Taxis und auf Märkten weiterhin bevorzugt."
+   }
+  },
+  {
+   "id": "ct-XK-25",
+   "category": "money",
+   "text": {
+    "en": "Cards are accepted in most city restaurants and hotels, but keep some cash for rural areas, where ATMs can be few.",
+    "it": "Le carte sono accettate nella maggior parte dei ristoranti e hotel di città, ma tieni un po' di contanti per le zone rurali, dove i bancomat possono essere pochi.",
+    "es": "Las tarjetas se aceptan en la mayoría de restaurantes y hoteles de ciudad, pero lleva algo de efectivo para zonas rurales, donde los cajeros pueden ser pocos.",
+    "pt": "Os cartões são aceites na maioria dos restaurantes e hotéis das cidades, mas leva algum numerário para as zonas rurais, onde os multibancos podem ser poucos.",
+    "pt_BR": "Cartões são aceitos na maioria dos restaurantes e hotéis das cidades, mas leve algum dinheiro em espécie para áreas rurais, onde os caixas eletrônicos podem ser poucos.",
+    "fr": "Les cartes sont acceptées dans la plupart des restaurants et hôtels des villes, mais gardez un peu de liquide pour les zones rurales, où les distributeurs peuvent être rares.",
+    "de": "Karten werden in den meisten Restaurants und Hotels der Städte akzeptiert, aber halte etwas Bargeld für ländliche Gegenden bereit, wo Geldautomaten selten sein können."
+   }
+  },
+  {
+   "id": "ct-XK-26",
+   "category": "photography",
+   "text": {
+    "en": "Photos of streets, cafés and old bazaars are welcome; ask before photographing people up close and avoid photographing police, military or security installations.",
+    "it": "Le foto di strade, bar e vecchi bazar sono benvenute; chiedi prima di fotografare le persone da vicino ed evita di fotografare polizia, militari o installazioni di sicurezza.",
+    "es": "Las fotos de calles, cafeterías y viejos bazares son bienvenidas; pregunta antes de fotografiar a personas de cerca y evita fotografiar policía, militares o instalaciones de seguridad.",
+    "pt": "As fotografias de ruas, cafés e velhos bazares são bem-vindas; pergunta antes de fotografares pessoas de perto e evita fotografar polícia, militares ou instalações de segurança.",
+    "pt_BR": "Fotos de ruas, cafés e velhos bazares são bem-vindas; peça permissão antes de fotografar pessoas de perto e evite fotografar polícia, militares ou instalações de segurança.",
+    "fr": "Les photos de rues, de cafés et de vieux bazars sont bienvenues ; demandez avant de photographier des personnes de près et évitez de photographier police, militaires ou installations de sécurité.",
+    "de": "Fotos von Straßen, Cafés und alten Basaren sind willkommen; frag, bevor du Menschen aus der Nähe fotografierst, und fotografiere keine Polizei, Militär oder Sicherheitsanlagen."
+   }
+  },
+  {
+   "id": "ct-XK-27",
+   "category": "nightlife",
+   "text": {
+    "en": "Pristina has a lively café and bar scene that runs late on Thursday to Saturday; it is relaxed, and many places also have live music.",
+    "it": "Pristina ha una vivace scena di caffè e locali che va avanti fino a tardi da giovedì a sabato; l'atmosfera è rilassata e in molti posti c'è musica dal vivo.",
+    "es": "Pristina tiene una animada escena de cafeterías y bares que se alarga hasta tarde de jueves a sábado; el ambiente es relajado y en muchos sitios hay música en directo.",
+    "pt": "Pristina tem uma animada cena de cafés e bares que se prolonga até tarde de quinta a sábado; o ambiente é descontraído e em muitos sítios há música ao vivo.",
+    "pt_BR": "Pristina tem uma animada cena de cafés e bares que vai até tarde de quinta a sábado; o ambiente é descontraído e em muitos lugares há música ao vivo.",
+    "fr": "Pristina a une scène animée de cafés et de bars qui se prolonge tard du jeudi au samedi ; l'ambiance est détendue et beaucoup d'endroits proposent de la musique live.",
+    "de": "Pristina hat eine lebendige Café- und Barszene, die von Donnerstag bis Samstag bis spät geht; die Stimmung ist entspannt, und viele Orte bieten Livemusik."
+   }
+  },
+  {
+   "id": "ct-XK-28",
+   "category": "nature",
+   "text": {
+    "en": "The Rugova Valley, the Sharr Mountains and the Mirusha waterfalls are great for hiking; stay on marked trails and check the weather before you go.",
+    "it": "La valle di Rugova, i Monti Šar e le cascate di Mirusha sono ottimi per le escursioni; resta sui sentieri segnalati e controlla il meteo prima di partire.",
+    "es": "El valle de Rugova, los Montes Šar y las cascadas de Mirusha son ideales para hacer senderismo; sigue los senderos señalizados y consulta el tiempo antes de salir.",
+    "pt": "O vale de Rugova, as Montanhas Šar e as cascatas de Mirusha são ótimos para caminhadas; segue os trilhos sinalizados e consulta a meteorologia antes de partir.",
+    "pt_BR": "O vale de Rugova, as Montanhas Šar e as cachoeiras de Mirusha são ótimos para trilhas; fique nos caminhos sinalizados e confira a previsão do tempo antes de sair.",
+    "fr": "La vallée de Rugova, les monts Šar et les cascades de Mirusha sont idéaux pour la randonnée ; restez sur les sentiers balisés et consultez la météo avant de partir.",
+    "de": "Das Rugova-Tal, das Šar-Gebirge und die Mirusha-Wasserfälle eignen sich gut zum Wandern; bleib auf markierten Wegen und prüfe vorher das Wetter."
+   }
+  },
+  {
+   "id": "ct-XK-29",
+   "category": "safety",
+   "text": {
+    "en": "Kosovo is generally welcoming to visitors; use normal city precautions, keep your ID or passport copy with you, and ask locals if unsure about a route.",
+    "it": "Il Kosovo è in generale accogliente con i visitatori; usa le normali precauzioni di città, porta con te documento o copia del passaporto e chiedi ai locali se hai dubbi su un percorso.",
+    "es": "Kosovo suele ser acogedor con los visitantes; toma las precauciones normales de ciudad, lleva contigo tu documento o una copia del pasaporte y pregunta a los locales si dudas de una ruta.",
+    "pt": "O Kosovo é geralmente acolhedor para com os visitantes; toma as precauções normais de cidade, leva contigo o documento ou uma cópia do passaporte e pergunta aos locais se tiveres dúvidas sobre um percurso.",
+    "pt_BR": "O Kosovo costuma ser acolhedor com os visitantes; tome as precauções normais de cidade, leve consigo o documento ou uma cópia do passaporte e pergunte aos moradores se tiver dúvida sobre um trajeto.",
+    "fr": "Le Kosovo est généralement accueillant envers les visiteurs ; prenez les précautions habituelles en ville, gardez sur vous votre pièce d'identité ou une copie de votre passeport et demandez aux habitants en cas de doute sur un itinéraire.",
+    "de": "Der Kosovo ist Besuchern gegenüber meist gastfreundlich; beachte die üblichen Vorsichtsregeln einer Stadt, trage Ausweis oder Passkopie bei dir und frag Einheimische, wenn du bei einer Route unsicher bist."
+   }
+  },
+  {
+   "id": "ct-XK-30",
+   "category": "local_pride",
+   "text": {
+    "en": "The NEWBORN monument in Pristina is repainted each year with new designs and is a favorite spot for photos with locals and visitors alike.",
+    "it": "Il monumento NEWBORN a Pristina viene ridipinto ogni anno con nuovi disegni ed è un luogo amato per le foto, sia dai locali sia dai visitatori.",
+    "es": "El monumento NEWBORN de Pristina se repinta cada año con nuevos diseños y es un lugar favorito para hacer fotos, tanto de locales como de visitantes.",
+    "pt": "O monumento NEWBORN em Pristina é repintado todos os anos com novos desenhos e é um local favorito para fotografias, tanto de locais como de visitantes.",
+    "pt_BR": "O monumento NEWBORN em Pristina é repintado todo ano com novos desenhos e é um lugar favorito para fotos, tanto de moradores quanto de visitantes.",
+    "fr": "Le monument NEWBORN à Pristina est repeint chaque année avec de nouveaux motifs et c'est un lieu de photo apprécié des habitants comme des visiteurs.",
+    "de": "Das NEWBORN-Denkmal in Pristina wird jedes Jahr mit neuen Motiven umgestaltet und ist bei Einheimischen wie Besuchern ein beliebter Fotospot."
+   }
+  }
+ ]
+}

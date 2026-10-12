@@ -1,0 +1,1302 @@
+[
+ {
+  "id": "ib-technology-001",
+  "topic": "technology",
+  "text": {
+   "en": "What's the one app on your phone you couldn't live without?",
+   "it": "Qual è l'unica app del tuo telefono di cui non potresti fare a meno?",
+   "es": "¿Cuál es la app del móvil sin la que no podrías vivir?",
+   "pt": "Qual é a app do telemóvel sem a qual não conseguirias viver?",
+   "pt_BR": "Qual é o app do celular sem o qual você não conseguiria viver?",
+   "fr": "Quelle est l'appli de ton téléphone dont tu ne pourrais pas te passer ?",
+   "de": "Welche App auf deinem Handy könntest du nicht missen?"
+  }
+ },
+ {
+  "id": "ib-technology-002",
+  "topic": "technology",
+  "text": {
+   "en": "What was your first mobile phone like?",
+   "it": "Com'era il tuo primo cellulare?",
+   "es": "¿Cómo era tu primer teléfono móvil?",
+   "pt": "Como era o teu primeiro telemóvel?",
+   "pt_BR": "Como era o seu primeiro celular?",
+   "fr": "Comment était ton premier téléphone portable ?",
+   "de": "Wie war dein erstes Handy?"
+  }
+ },
+ {
+  "id": "ib-technology-003",
+  "topic": "technology",
+  "text": {
+   "en": "Which gadget has made your daily life easier the most?",
+   "it": "Quale gadget ti ha semplificato di più la vita di tutti i giorni?",
+   "es": "¿Qué aparato te ha facilitado más la vida diaria?",
+   "pt": "Que aparelho te facilitou mais o dia a dia?",
+   "pt_BR": "Que aparelho mais facilitou o seu dia a dia?",
+   "fr": "Quel appareil t'a le plus simplifié la vie au quotidien ?",
+   "de": "Welches Gerät hat dir den Alltag am meisten erleichtert?"
+  }
+ },
+ {
+  "id": "ib-technology-004",
+  "topic": "technology",
+  "text": {
+   "en": "How do you usually keep in touch with friends who live far away?",
+   "it": "Come fai di solito a restare in contatto con gli amici che vivono lontano?",
+   "es": "¿Cómo sueles mantener el contacto con los amigos que viven lejos?",
+   "pt": "Como costumas manter o contacto com os amigos que vivem longe?",
+   "pt_BR": "Como você costuma manter contato com os amigos que moram longe?",
+   "fr": "Comment gardes-tu le contact avec tes amis qui vivent loin ?",
+   "de": "Wie hältst du normalerweise Kontakt zu Freunden, die weit weg wohnen?"
+  }
+ },
+ {
+  "id": "ib-technology-005",
+  "topic": "technology",
+  "text": {
+   "en": "What's a piece of technology from your childhood that you miss?",
+   "it": "Quale tecnologia della tua infanzia ti manca?",
+   "es": "¿Qué tecnología de tu infancia echas de menos?",
+   "pt": "Que tecnologia da tua infância te faz falta?",
+   "pt_BR": "Que tecnologia da sua infância você sente falta?",
+   "fr": "Quelle technologie de ton enfance te manque ?",
+   "de": "Welche Technik aus deiner Kindheit vermisst du?"
+  }
+ },
+ {
+  "id": "ib-technology-006",
+  "topic": "technology",
+  "text": {
+   "en": "Do you prefer reading on paper or on a screen, and why?",
+   "it": "Preferisci leggere su carta o su schermo, e perché?",
+   "es": "¿Prefieres leer en papel o en pantalla, y por qué?",
+   "pt": "Preferes ler em papel ou no ecrã, e porquê?",
+   "pt_BR": "Você prefere ler no papel ou na tela, e por quê?",
+   "fr": "Tu préfères lire sur papier ou sur écran, et pourquoi ?",
+   "de": "Liest du lieber auf Papier oder am Bildschirm, und warum?"
+  }
+ },
+ {
+  "id": "ib-technology-007",
+  "topic": "technology",
+  "text": {
+   "en": "What's the most useful website you've discovered recently?",
+   "it": "Qual è il sito web più utile che hai scoperto di recente?",
+   "es": "¿Cuál es la página web más útil que has descubierto últimamente?",
+   "pt": "Qual é o site mais útil que descobriste recentemente?",
+   "pt_BR": "Qual é o site mais útil que você descobriu recentemente?",
+   "fr": "Quel est le site web le plus utile que tu as découvert récemment ?",
+   "de": "Welche nützliche Website hast du in letzter Zeit entdeckt?"
+  }
+ },
+ {
+  "id": "ib-technology-008",
+  "topic": "technology",
+  "text": {
+   "en": "Which video games, if any, did you grow up playing?",
+   "it": "Con quali videogiochi sei cresciuto, se ce ne sono?",
+   "es": "¿Con qué videojuegos creciste, si es que jugabas?",
+   "pt": "Com que videojogos cresceste, se é que jogavas?",
+   "pt_BR": "Com quais videogames você cresceu, se é que jogava?",
+   "fr": "Avec quels jeux vidéo as-tu grandi, s'il y en a eu ?",
+   "de": "Mit welchen Videospielen bist du aufgewachsen, falls überhaupt?"
+  }
+ },
+ {
+  "id": "ib-technology-009",
+  "topic": "technology",
+  "text": {
+   "en": "How do you like to relax after a long day in front of a screen?",
+   "it": "Come ti rilassi dopo una lunga giornata davanti a uno schermo?",
+   "es": "¿Cómo te relajas después de un día largo frente a una pantalla?",
+   "pt": "Como relaxas depois de um dia longo à frente de um ecrã?",
+   "pt_BR": "Como você relaxa depois de um dia longo na frente de uma tela?",
+   "fr": "Comment aimes-tu te détendre après une longue journée devant un écran ?",
+   "de": "Wie entspannst du nach einem langen Tag vor dem Bildschirm?"
+  }
+ },
+ {
+  "id": "ib-technology-010",
+  "topic": "technology",
+  "text": {
+   "en": "What's a skill you taught yourself thanks to online tutorials?",
+   "it": "Quale abilità hai imparato da solo grazie ai tutorial online?",
+   "es": "¿Qué habilidad has aprendido por tu cuenta gracias a tutoriales en línea?",
+   "pt": "Que competência aprendeste sozinho graças a tutoriais online?",
+   "pt_BR": "Que habilidade você aprendeu sozinho graças a tutoriais online?",
+   "fr": "Quelle compétence as-tu apprise tout seul grâce aux tutoriels en ligne ?",
+   "de": "Welche Fähigkeit hast du dir dank Online-Tutorials selbst beigebracht?"
+  }
+ },
+ {
+  "id": "ib-technology-011",
+  "topic": "technology",
+  "text": {
+   "en": "Which app has helped you the most when learning a language?",
+   "it": "Quale app ti ha aiutato di più a imparare una lingua?",
+   "es": "¿Qué app te ha ayudado más a aprender un idioma?",
+   "pt": "Que app mais te ajudou a aprender uma língua?",
+   "pt_BR": "Qual app mais ajudou você a aprender um idioma?",
+   "fr": "Quelle appli t'a le plus aidé à apprendre une langue ?",
+   "de": "Welche App hat dir beim Sprachenlernen am meisten geholfen?"
+  }
+ },
+ {
+  "id": "ib-technology-012",
+  "topic": "technology",
+  "text": {
+   "en": "What's the coolest thing you've ever seen a robot do?",
+   "it": "Qual è la cosa più figa che hai mai visto fare a un robot?",
+   "es": "¿Qué es lo más impresionante que has visto hacer a un robot?",
+   "pt": "Qual é a coisa mais fixe que já viste um robô fazer?",
+   "pt_BR": "Qual é a coisa mais legal que você já viu um robô fazer?",
+   "fr": "Quelle est la chose la plus impressionnante que tu aies vue faire par un robot ?",
+   "de": "Was ist das Coolste, was du je einen Roboter hast machen sehen?"
+  }
+ },
+ {
+  "id": "ib-technology-013",
+  "topic": "technology",
+  "text": {
+   "en": "Do you prefer calling, voice messages or texting?",
+   "it": "Preferisci telefonare, mandare vocali o scrivere messaggi?",
+   "es": "¿Prefieres llamar, mandar audios o escribir mensajes?",
+   "pt": "Preferes telefonar, enviar mensagens de voz ou escrever?",
+   "pt_BR": "Você prefere ligar, mandar áudios ou escrever mensagens?",
+   "fr": "Tu préfères appeler, envoyer des vocaux ou écrire des messages ?",
+   "de": "Rufst du lieber an, schickst Sprachnachrichten oder schreibst Nachrichten?"
+  }
+ },
+ {
+  "id": "ib-technology-014",
+  "topic": "technology",
+  "text": {
+   "en": "If you could invent any gadget, what would it do?",
+   "it": "Se potessi inventare un gadget, cosa farebbe?",
+   "es": "Si pudieras inventar un aparato, ¿qué haría?",
+   "pt": "Se pudesses inventar um aparelho, o que faria?",
+   "pt_BR": "Se você pudesse inventar um aparelho, o que ele faria?",
+   "fr": "Si tu pouvais inventer un gadget, que ferait-il ?",
+   "de": "Wenn du ein Gerät erfinden könntest, was würde es können?"
+  }
+ },
+ {
+  "id": "ib-technology-015",
+  "topic": "technology",
+  "text": {
+   "en": "How has technology changed the way people get around in your town?",
+   "it": "In che modo la tecnologia ha cambiato gli spostamenti nella tua città?",
+   "es": "¿Cómo ha cambiado la tecnología la forma de moverse por tu ciudad?",
+   "pt": "Como é que a tecnologia mudou a forma de as pessoas se deslocarem na tua cidade?",
+   "pt_BR": "Como a tecnologia mudou a forma de as pessoas se locomoverem na sua cidade?",
+   "fr": "Comment la technologie a-t-elle changé les déplacements dans ta ville ?",
+   "de": "Wie hat die Technik die Fortbewegung in deiner Stadt verändert?"
+  }
+ },
+ {
+  "id": "ib-technology-016",
+  "topic": "technology",
+  "text": {
+   "en": "What's your favorite podcast or channel for learning something new?",
+   "it": "Qual è il tuo podcast o canale preferito per imparare qualcosa di nuovo?",
+   "es": "¿Cuál es tu pódcast o canal favorito para aprender algo nuevo?",
+   "pt": "Qual é o teu podcast ou canal preferido para aprender algo novo?",
+   "pt_BR": "Qual é o seu podcast ou canal preferido para aprender algo novo?",
+   "fr": "Quel est ton podcast ou ta chaîne préférée pour apprendre quelque chose de nouveau ?",
+   "de": "Welcher Podcast oder Kanal gefällt dir am besten, um etwas Neues zu lernen?"
+  }
+ },
+ {
+  "id": "ib-technology-017",
+  "topic": "technology",
+  "text": {
+   "en": "Which tech trend are you most curious about right now?",
+   "it": "Quale tendenza tecnologica ti incuriosisce di più in questo momento?",
+   "es": "¿Qué tendencia tecnológica te da más curiosidad ahora mismo?",
+   "pt": "Que tendência tecnológica mais te desperta curiosidade neste momento?",
+   "pt_BR": "Qual tendência tecnológica mais desperta sua curiosidade agora?",
+   "fr": "Quelle tendance technologique t'intrigue le plus en ce moment ?",
+   "de": "Welcher Technik-Trend macht dich im Moment am neugierigsten?"
+  }
+ },
+ {
+  "id": "ib-technology-018",
+  "topic": "technology",
+  "text": {
+   "en": "What's the oldest piece of electronics you still use?",
+   "it": "Qual è il dispositivo elettronico più vecchio che usi ancora?",
+   "es": "¿Cuál es el aparato electrónico más antiguo que sigues usando?",
+   "pt": "Qual é o aparelho eletrónico mais antigo que ainda usas?",
+   "pt_BR": "Qual é o aparelho eletrônico mais antigo que você ainda usa?",
+   "fr": "Quel est le plus vieil appareil électronique que tu utilises encore ?",
+   "de": "Was ist das älteste Elektrogerät, das du noch benutzt?"
+  }
+ },
+ {
+  "id": "ib-technology-019",
+  "topic": "technology",
+  "text": {
+   "en": "How do you organize your photos? Mine are total chaos!",
+   "it": "Come organizzi le tue foto? Le mie sono un caos totale!",
+   "es": "¿Cómo organizas tus fotos? ¡Las mías son un caos total!",
+   "pt": "Como organizas as tuas fotografias? As minhas são um caos total!",
+   "pt_BR": "Como você organiza suas fotos? As minhas são um caos total!",
+   "fr": "Comment organises-tu tes photos ? Les miennes sont un chaos total !",
+   "de": "Wie sortierst du deine Fotos? Bei mir herrscht totales Chaos!"
+  }
+ },
+ {
+  "id": "ib-technology-020",
+  "topic": "technology",
+  "text": {
+   "en": "What's your favorite way to listen to music these days?",
+   "it": "Qual è il tuo modo preferito di ascoltare musica oggi?",
+   "es": "¿Cuál es tu forma favorita de escuchar música hoy en día?",
+   "pt": "Qual é a tua forma preferida de ouvir música hoje em dia?",
+   "pt_BR": "Qual é a sua forma preferida de ouvir música hoje em dia?",
+   "fr": "Quelle est ta façon préférée d'écouter de la musique aujourd'hui ?",
+   "de": "Wie hörst du heutzutage am liebsten Musik?"
+  }
+ },
+ {
+  "id": "ib-technology-021",
+  "topic": "technology",
+  "text": {
+   "en": "If you spent a whole day without any device, what would you do?",
+   "it": "Se passassi un'intera giornata senza dispositivi, cosa faresti?",
+   "es": "Si pasaras un día entero sin ningún dispositivo, ¿qué harías?",
+   "pt": "Se passasses um dia inteiro sem qualquer dispositivo, o que farias?",
+   "pt_BR": "Se você passasse um dia inteiro sem nenhum dispositivo, o que faria?",
+   "fr": "Si tu passais une journée entière sans aucun appareil, que ferais-tu ?",
+   "de": "Was würdest du tun, wenn du einen ganzen Tag ohne Geräte verbringen würdest?"
+  }
+ },
+ {
+  "id": "ib-technology-022",
+  "topic": "technology",
+  "text": {
+   "en": "What's the best tech tip anyone has ever given you?",
+   "it": "Qual è il miglior consiglio tecnologico che ti abbiano mai dato?",
+   "es": "¿Cuál es el mejor consejo tecnológico que te han dado?",
+   "pt": "Qual é a melhor dica de tecnologia que já te deram?",
+   "pt_BR": "Qual é a melhor dica de tecnologia que já lhe deram?",
+   "fr": "Quel est le meilleur conseil tech qu'on t'ait jamais donné ?",
+   "de": "Was ist der beste Technik-Tipp, den dir je jemand gegeben hat?"
+  }
+ },
+ {
+  "id": "ib-technology-023",
+  "topic": "technology",
+  "text": {
+   "en": "Is there a smart-home gadget you would honestly recommend?",
+   "it": "C'è un gadget per la casa intelligente che consiglieresti davvero?",
+   "es": "¿Hay algún aparato para casa inteligente que recomendarías de verdad?",
+   "pt": "Há algum aparelho para casa inteligente que recomendarias a sério?",
+   "pt_BR": "Existe algum aparelho de casa inteligente que você recomendaria de verdade?",
+   "fr": "Y a-t-il un objet connecté pour la maison que tu recommanderais vraiment ?",
+   "de": "Gibt es ein Smart-Home-Gerät, das du wirklich empfehlen würdest?"
+  }
+ },
+ {
+  "id": "ib-technology-024",
+  "topic": "technology",
+  "text": {
+   "en": "What's the first thing you ever built or fixed yourself?",
+   "it": "Qual è la prima cosa che hai costruito o riparato da solo?",
+   "es": "¿Qué es lo primero que construiste o arreglaste tú mismo?",
+   "pt": "Qual foi a primeira coisa que construíste ou arranjaste sozinho?",
+   "pt_BR": "Qual foi a primeira coisa que você construiu ou consertou sozinho?",
+   "fr": "Quelle est la première chose que tu as construite ou réparée toi-même ?",
+   "de": "Was war das Erste, was du selbst gebaut oder repariert hast?"
+  }
+ },
+ {
+  "id": "ib-technology-025",
+  "topic": "technology",
+  "text": {
+   "en": "Is there an online community you've really enjoyed being part of?",
+   "it": "C'è una comunità online di cui ti è piaciuto davvero far parte?",
+   "es": "¿Hay alguna comunidad en línea de la que hayas disfrutado de verdad?",
+   "pt": "Há alguma comunidade online de que tenhas gostado mesmo de fazer parte?",
+   "pt_BR": "Existe alguma comunidade online da qual você gostou muito de participar?",
+   "fr": "Y a-t-il une communauté en ligne dont tu as vraiment aimé faire partie ?",
+   "de": "Gibt es eine Online-Community, bei der du richtig gern dabei warst?"
+  }
+ },
+ {
+  "id": "ib-technology-026",
+  "topic": "technology",
+  "text": {
+   "en": "Which technology do you think will be completely normal in ten years?",
+   "it": "Quale tecnologia pensi sarà del tutto normale tra dieci anni?",
+   "es": "¿Qué tecnología crees que será totalmente normal dentro de diez años?",
+   "pt": "Que tecnologia achas que será completamente normal daqui a dez anos?",
+   "pt_BR": "Que tecnologia você acha que será completamente normal daqui a dez anos?",
+   "fr": "Quelle technologie sera complètement normale dans dix ans, à ton avis ?",
+   "de": "Welche Technik wird deiner Meinung nach in zehn Jahren ganz normal sein?"
+  }
+ },
+ {
+  "id": "ib-technology-027",
+  "topic": "technology",
+  "text": {
+   "en": "What do you use your phone's camera for the most?",
+   "it": "Per cosa usi di più la fotocamera del telefono?",
+   "es": "¿Para qué usas más la cámara del móvil?",
+   "pt": "Para que usas mais a câmara do telemóvel?",
+   "pt_BR": "Para que você mais usa a câmera do celular?",
+   "fr": "Pour quoi utilises-tu le plus l'appareil photo de ton téléphone ?",
+   "de": "Wofür nutzt du die Kamera deines Handys am meisten?"
+  }
+ },
+ {
+  "id": "ib-technology-028",
+  "topic": "technology",
+  "text": {
+   "en": "Do you remember a funny autocorrect mistake?",
+   "it": "Ti ricordi un divertente errore del correttore automatico?",
+   "es": "¿Recuerdas algún error gracioso del autocorrector?",
+   "pt": "Lembras-te de algum erro engraçado do corretor automático?",
+   "pt_BR": "Você se lembra de algum erro engraçado do corretor automático?",
+   "fr": "Tu te souviens d'une erreur drôle de correction automatique ?",
+   "de": "Erinnerst du dich an einen lustigen Autokorrektur-Fehler?"
+  }
+ },
+ {
+  "id": "ib-technology-029",
+  "topic": "technology",
+  "text": {
+   "en": "Is there a game we could play together online sometime?",
+   "it": "C'è un gioco che potremmo fare insieme online, prima o poi?",
+   "es": "¿Hay algún juego al que podríamos jugar juntos en línea algún día?",
+   "pt": "Há algum jogo que pudéssemos jogar juntos online qualquer dia?",
+   "pt_BR": "Existe algum jogo que a gente poderia jogar junto online qualquer dia?",
+   "fr": "Y a-t-il un jeu auquel on pourrait jouer ensemble en ligne un jour ?",
+   "de": "Gibt es ein Spiel, das wir irgendwann zusammen online spielen könnten?"
+  }
+ },
+ {
+  "id": "ib-technology-030",
+  "topic": "technology",
+  "text": {
+   "en": "What's your favorite way to learn something new online?",
+   "it": "Qual è il tuo modo preferito per imparare qualcosa di nuovo online?",
+   "es": "¿Cuál es tu forma favorita de aprender algo nuevo en línea?",
+   "pt": "Qual é a tua forma preferida de aprender algo novo online?",
+   "pt_BR": "Qual é a sua forma preferida de aprender algo novo online?",
+   "fr": "Quelle est ta façon préférée d'apprendre quelque chose de nouveau en ligne ?",
+   "de": "Wie lernst du online am liebsten etwas Neues?"
+  }
+ },
+ {
+  "id": "ib-technology-031",
+  "topic": "technology",
+  "text": {
+   "en": "Do you remember what your first internet connection was like?",
+   "it": "Ti ricordi com'era la tua prima connessione a internet?",
+   "es": "¿Recuerdas cómo era tu primera conexión a internet?",
+   "pt": "Lembras-te de como era a tua primeira ligação à internet?",
+   "pt_BR": "Você se lembra de como era a sua primeira conexão com a internet?",
+   "fr": "Tu te souviens de ta toute première connexion à internet ?",
+   "de": "Weißt du noch, wie deine erste Internetverbindung war?"
+  }
+ },
+ {
+  "id": "ib-technology-032",
+  "topic": "technology",
+  "text": {
+   "en": "What's a small app or tool that saves you time every day?",
+   "it": "Qual è una piccola app o strumento che ti fa risparmiare tempo ogni giorno?",
+   "es": "¿Qué app o herramienta pequeña te ahorra tiempo cada día?",
+   "pt": "Que pequena app ou ferramenta te poupa tempo todos os dias?",
+   "pt_BR": "Qual pequeno app ou ferramenta economiza seu tempo todos os dias?",
+   "fr": "Quelle petite appli ou quel outil te fait gagner du temps chaque jour ?",
+   "de": "Welche kleine App oder welches Tool spart dir jeden Tag Zeit?"
+  }
+ },
+ {
+  "id": "ib-technology-033",
+  "topic": "technology",
+  "text": {
+   "en": "How do people in your country usually pay in shops: cash, card or phone?",
+   "it": "Come si paga di solito nei negozi nel tuo paese: contanti, carta o telefono?",
+   "es": "¿Cómo se suele pagar en las tiendas de tu país: efectivo, tarjeta o móvil?",
+   "pt": "Como se costuma pagar nas lojas no teu país: dinheiro, cartão ou telemóvel?",
+   "pt_BR": "Como as pessoas costumam pagar nas lojas no seu país: dinheiro, cartão ou celular?",
+   "fr": "Comment paie-t-on d'habitude dans les magasins chez toi : espèces, carte ou téléphone ?",
+   "de": "Wie bezahlt man in deinem Land normalerweise im Laden: bar, mit Karte oder per Handy?"
+  }
+ },
+ {
+  "id": "ib-technology-034",
+  "topic": "technology",
+  "text": {
+   "en": "Where do you like to work on your laptop: home, a café or a library?",
+   "it": "Dove ti piace lavorare al computer: a casa, in un bar o in biblioteca?",
+   "es": "¿Dónde te gusta trabajar con el portátil: en casa, en una cafetería o en una biblioteca?",
+   "pt": "Onde gostas de trabalhar no portátil: em casa, num café ou numa biblioteca?",
+   "pt_BR": "Onde você gosta de trabalhar no notebook: em casa, num café ou numa biblioteca?",
+   "fr": "Où aimes-tu travailler sur ton ordinateur : chez toi, dans un café ou à la bibliothèque ?",
+   "de": "Wo arbeitest du am liebsten am Laptop: zu Hause, im Café oder in der Bibliothek?"
+  }
+ },
+ {
+  "id": "ib-technology-035",
+  "topic": "technology",
+  "text": {
+   "en": "What's the most interesting science video or documentary you've seen lately?",
+   "it": "Qual è il video o documentario scientifico più interessante che hai visto di recente?",
+   "es": "¿Cuál es el vídeo o documental de ciencia más interesante que has visto últimamente?",
+   "pt": "Qual é o vídeo ou documentário de ciência mais interessante que viste ultimamente?",
+   "pt_BR": "Qual é o vídeo ou documentário de ciência mais interessante que você viu ultimamente?",
+   "fr": "Quelle est la vidéo ou le documentaire scientifique le plus intéressant que tu aies vu récemment ?",
+   "de": "Welches Wissenschaftsvideo oder welche Doku fandest du zuletzt am spannendsten?"
+  }
+ },
+ {
+  "id": "ib-technology-036",
+  "topic": "technology",
+  "text": {
+   "en": "Which gadgets do you always pack when you travel?",
+   "it": "Quali gadget metti sempre in valigia quando viaggi?",
+   "es": "¿Qué aparatos metes siempre en la maleta cuando viajas?",
+   "pt": "Que aparelhos levas sempre na mala quando viajas?",
+   "pt_BR": "Que aparelhos você sempre leva na mala quando viaja?",
+   "fr": "Quels gadgets mets-tu toujours dans ta valise quand tu voyages ?",
+   "de": "Welche Geräte packst du auf Reisen immer ein?"
+  }
+ },
+ {
+  "id": "ib-technology-037",
+  "topic": "technology",
+  "text": {
+   "en": "What's your best trick for saving phone battery?",
+   "it": "Qual è il tuo trucco migliore per far durare la batteria del telefono?",
+   "es": "¿Cuál es tu mejor truco para ahorrar batería en el móvil?",
+   "pt": "Qual é o teu melhor truque para poupar bateria no telemóvel?",
+   "pt_BR": "Qual é o seu melhor truque para economizar bateria do celular?",
+   "fr": "Quelle est ta meilleure astuce pour économiser la batterie de ton téléphone ?",
+   "de": "Was ist dein bester Trick, um Akku am Handy zu sparen?"
+  }
+ },
+ {
+  "id": "ib-technology-038",
+  "topic": "technology",
+  "text": {
+   "en": "Is there a film that showed technology in a surprisingly realistic way?",
+   "it": "C'è un film che ha mostrato la tecnologia in modo sorprendentemente realistico?",
+   "es": "¿Hay alguna película que mostrara la tecnología de forma sorprendentemente realista?",
+   "pt": "Há algum filme que mostrou a tecnologia de forma surpreendentemente realista?",
+   "pt_BR": "Existe algum filme que mostrou a tecnologia de forma surpreendentemente realista?",
+   "fr": "Y a-t-il un film qui montrait la technologie de façon étonnamment réaliste ?",
+   "de": "Gibt es einen Film, der Technik überraschend realistisch gezeigt hat?"
+  }
+ },
+ {
+  "id": "ib-technology-039",
+  "topic": "technology",
+  "text": {
+   "en": "Have you ever tried to learn programming?",
+   "it": "Hai mai provato a imparare a programmare?",
+   "es": "¿Alguna vez has intentado aprender a programar?",
+   "pt": "Alguma vez tentaste aprender a programar?",
+   "pt_BR": "Você já tentou aprender a programar?",
+   "fr": "As-tu déjà essayé d'apprendre à programmer ?",
+   "de": "Hast du schon mal versucht, programmieren zu lernen?"
+  }
+ },
+ {
+  "id": "ib-technology-040",
+  "topic": "technology",
+  "text": {
+   "en": "Is there a tech word in your language that sounds funny in English?",
+   "it": "C'è una parola tecnologica nella tua lingua che suona buffa in inglese?",
+   "es": "¿Hay alguna palabra tecnológica en tu idioma que suene graciosa en inglés?",
+   "pt": "Há alguma palavra de tecnologia na tua língua que soe engraçada em inglês?",
+   "pt_BR": "Existe alguma palavra de tecnologia na sua língua que soe engraçada em inglês?",
+   "fr": "Y a-t-il un mot technologique dans ta langue qui sonne drôle en anglais ?",
+   "de": "Gibt es in deiner Sprache ein Technikwort, das auf Englisch lustig klingt?"
+  }
+ },
+ {
+  "id": "ib-technology-041",
+  "topic": "technology",
+  "text": {
+   "en": "How did you find your way around before smartphones?",
+   "it": "Come ti orientavi prima degli smartphone?",
+   "es": "¿Cómo te orientabas antes de los teléfonos inteligentes?",
+   "pt": "Como te orientavas antes dos smartphones?",
+   "pt_BR": "Como você se orientava antes dos smartphones?",
+   "fr": "Comment trouvais-tu ton chemin avant les smartphones ?",
+   "de": "Wie hast du dich vor den Smartphones zurechtgefunden?"
+  }
+ },
+ {
+  "id": "ib-technology-042",
+  "topic": "technology",
+  "text": {
+   "en": "How do you pick your next series or song: friends' tips or recommendations?",
+   "it": "Come scegli la prossima serie o canzone: dai consigli degli amici o dai suggerimenti automatici?",
+   "es": "¿Cómo eliges tu próxima serie o canción: por consejos de amigos o por recomendaciones automáticas?",
+   "pt": "Como escolhes a próxima série ou música: por dicas de amigos ou por sugestões automáticas?",
+   "pt_BR": "Como você escolhe a próxima série ou música: por dicas de amigos ou por sugestões automáticas?",
+   "fr": "Comment choisis-tu ta prochaine série ou chanson : conseils d'amis ou recommandations automatiques ?",
+   "de": "Wie wählst du deine nächste Serie oder deinen nächsten Song aus: Tipps von Freunden oder automatische Empfehlungen?"
+  }
+ },
+ {
+  "id": "ib-technology-043",
+  "topic": "technology",
+  "text": {
+   "en": "Is there a digital habit you'd like to change this year?",
+   "it": "C'è un'abitudine digitale che vorresti cambiare quest'anno?",
+   "es": "¿Hay algún hábito digital que te gustaría cambiar este año?",
+   "pt": "Há algum hábito digital que gostasses de mudar este ano?",
+   "pt_BR": "Existe algum hábito digital que você gostaria de mudar este ano?",
+   "fr": "Y a-t-il une habitude numérique que tu aimerais changer cette année ?",
+   "de": "Gibt es eine digitale Gewohnheit, die du dieses Jahr ändern möchtest?"
+  }
+ },
+ {
+  "id": "ib-technology-044",
+  "topic": "technology",
+  "text": {
+   "en": "What's the most helpful thing you've learned from a video tutorial?",
+   "it": "Qual è la cosa più utile che hai imparato da un video tutorial?",
+   "es": "¿Qué es lo más útil que has aprendido con un vídeo tutorial?",
+   "pt": "Qual é a coisa mais útil que aprendeste com um vídeo tutorial?",
+   "pt_BR": "Qual é a coisa mais útil que você aprendeu com um vídeo tutorial?",
+   "fr": "Quelle est la chose la plus utile que tu aies apprise grâce à un tutoriel vidéo ?",
+   "de": "Was war das Nützlichste, das du aus einem Video-Tutorial gelernt hast?"
+  }
+ },
+ {
+  "id": "ib-technology-045",
+  "topic": "technology",
+  "text": {
+   "en": "Is there an inventor or scientist from your country you particularly admire?",
+   "it": "C'è un inventore o uno scienziato del tuo paese che ammiri in particolare?",
+   "es": "¿Hay algún inventor o científico de tu país que admires especialmente?",
+   "pt": "Há algum inventor ou cientista do teu país que admires especialmente?",
+   "pt_BR": "Existe algum inventor ou cientista do seu país que você admira especialmente?",
+   "fr": "Y a-t-il un inventeur ou un scientifique de ton pays que tu admires particulièrement ?",
+   "de": "Gibt es einen Erfinder oder Wissenschaftler aus deinem Land, den du besonders bewunderst?"
+  }
+ },
+ {
+  "id": "ib-technology-046",
+  "topic": "technology",
+  "text": {
+   "en": "What's the most unusual gadget you own?",
+   "it": "Qual è il gadget più insolito che possiedi?",
+   "es": "¿Cuál es el aparato más inusual que tienes?",
+   "pt": "Qual é o aparelho mais invulgar que tens?",
+   "pt_BR": "Qual é o aparelho mais incomum que você tem?",
+   "fr": "Quel est l'objet high-tech le plus insolite que tu possèdes ?",
+   "de": "Was ist das ungewöhnlichste Gerät, das du besitzt?"
+  }
+ },
+ {
+  "id": "ib-technology-047",
+  "topic": "technology",
+  "text": {
+   "en": "When you visit a place, do you take lots of photos or just enjoy the moment?",
+   "it": "Quando visiti un posto, scatti tante foto o preferisci goderti il momento?",
+   "es": "Cuando visitas un lugar, ¿haces muchas fotos o prefieres disfrutar del momento?",
+   "pt": "Quando visitas um sítio, tiras muitas fotografias ou preferes aproveitar o momento?",
+   "pt_BR": "Quando você visita um lugar, tira muitas fotos ou prefere aproveitar o momento?",
+   "fr": "Quand tu visites un endroit, prends-tu beaucoup de photos ou profites-tu simplement du moment ?",
+   "de": "Machst du an besuchten Orten viele Fotos oder genießt du lieber einfach den Moment?"
+  }
+ },
+ {
+  "id": "ib-technology-048",
+  "topic": "technology",
+  "text": {
+   "en": "What did you enjoy doing on the internet when you were younger?",
+   "it": "Cosa ti piaceva fare su internet quando eri più giovane?",
+   "es": "¿Qué te gustaba hacer en internet cuando eras más joven?",
+   "pt": "O que gostavas de fazer na internet quando eras mais novo?",
+   "pt_BR": "O que você gostava de fazer na internet quando era mais novo?",
+   "fr": "Qu'aimais-tu faire sur internet quand tu étais plus jeune ?",
+   "de": "Was hast du im Internet gern gemacht, als du jünger warst?"
+  }
+ },
+ {
+  "id": "ib-technology-049",
+  "topic": "technology",
+  "text": {
+   "en": "What would you ask a super-smart assistant to do for you every morning?",
+   "it": "Cosa chiederesti ogni mattina a un assistente superintelligente?",
+   "es": "¿Qué le pedirías cada mañana a un asistente superinteligente?",
+   "pt": "O que pedirias todas as manhãs a um assistente superinteligente?",
+   "pt_BR": "O que você pediria todas as manhãs a um assistente superinteligente?",
+   "fr": "Que demanderais-tu chaque matin à un assistant ultra-intelligent ?",
+   "de": "Was würdest du jeden Morgen von einem superschlauen Assistenten verlangen?"
+  }
+ },
+ {
+  "id": "ib-technology-050",
+  "topic": "technology",
+  "text": {
+   "en": "What's one thing technology still can't do that you wish it could?",
+   "it": "Qual è una cosa che la tecnologia ancora non sa fare e che vorresti sapesse fare?",
+   "es": "¿Qué cosa todavía no puede hacer la tecnología y te gustaría que hiciera?",
+   "pt": "O que é que a tecnologia ainda não consegue fazer e tu gostavas que fizesse?",
+   "pt_BR": "O que a tecnologia ainda não consegue fazer e que você gostaria que fizesse?",
+   "fr": "Qu'est-ce que la technologie ne sait pas encore faire et que tu aimerais qu'elle fasse ?",
+   "de": "Was kann die Technik noch nicht, obwohl du es dir wünschen würdest?"
+  }
+ },
+ {
+  "id": "ib-daily_life-001",
+  "topic": "daily_life",
+  "text": {
+   "en": "What does a perfect ordinary morning look like for you?",
+   "it": "Com'è per te una mattina normale perfetta?",
+   "es": "¿Cómo sería para ti una mañana normal perfecta?",
+   "pt": "Como seria para ti uma manhã normal perfeita?",
+   "pt_BR": "Como seria para você uma manhã comum perfeita?",
+   "fr": "À quoi ressemble pour toi une matinée ordinaire parfaite ?",
+   "de": "Wie sieht für dich ein perfekter ganz normaler Morgen aus?"
+  }
+ },
+ {
+  "id": "ib-daily_life-002",
+  "topic": "daily_life",
+  "text": {
+   "en": "What's the first thing you do after waking up?",
+   "it": "Qual è la prima cosa che fai dopo esserti svegliato?",
+   "es": "¿Qué es lo primero que haces al despertarte?",
+   "pt": "Qual é a primeira coisa que fazes depois de acordar?",
+   "pt_BR": "Qual é a primeira coisa que você faz depois de acordar?",
+   "fr": "Quelle est la première chose que tu fais en te réveillant ?",
+   "de": "Was machst du als Erstes, wenn du aufwachst?"
+  }
+ },
+ {
+  "id": "ib-daily_life-003",
+  "topic": "daily_life",
+  "text": {
+   "en": "How do you usually get to work or school?",
+   "it": "Come vai di solito al lavoro o a scuola?",
+   "es": "¿Cómo sueles ir al trabajo o a clase?",
+   "pt": "Como costumas ir para o trabalho ou para a escola?",
+   "pt_BR": "Como você costuma ir para o trabalho ou para a escola?",
+   "fr": "Comment vas-tu d'habitude au travail ou à l'école ?",
+   "de": "Wie kommst du normalerweise zur Arbeit oder zur Schule?"
+  }
+ },
+ {
+  "id": "ib-daily_life-004",
+  "topic": "daily_life",
+  "text": {
+   "en": "What's your favorite meal of the day, and what do you usually have?",
+   "it": "Qual è il tuo pasto preferito della giornata e cosa mangi di solito?",
+   "es": "¿Cuál es tu comida favorita del día y qué sueles tomar?",
+   "pt": "Qual é a tua refeição preferida do dia e o que costumas comer?",
+   "pt_BR": "Qual é a sua refeição preferida do dia e o que você costuma comer?",
+   "fr": "Quel est ton repas préféré de la journée et que manges-tu d'habitude ?",
+   "de": "Welche Mahlzeit magst du am Tag am liebsten, und was isst du dann meistens?"
+  }
+ },
+ {
+  "id": "ib-daily_life-005",
+  "topic": "daily_life",
+  "text": {
+   "en": "What's a small everyday ritual you really enjoy?",
+   "it": "Qual è un piccolo rituale quotidiano che ti piace davvero?",
+   "es": "¿Cuál es un pequeño ritual diario que disfrutas de verdad?",
+   "pt": "Qual é um pequeno ritual diário de que gostes mesmo?",
+   "pt_BR": "Qual é um pequeno ritual diário de que você gosta muito?",
+   "fr": "Quel petit rituel quotidien aimes-tu vraiment ?",
+   "de": "Welches kleine tägliche Ritual magst du richtig gern?"
+  }
+ },
+ {
+  "id": "ib-daily_life-006",
+  "topic": "daily_life",
+  "text": {
+   "en": "How do you like your coffee or tea, if you drink either?",
+   "it": "Come ti piace il caffè o il tè, se ne bevi?",
+   "es": "¿Cómo te gusta el café o el té, si tomas alguno?",
+   "pt": "Como gostas do teu café ou chá, se bebes algum?",
+   "pt_BR": "Como você gosta do seu café ou chá, se toma algum?",
+   "fr": "Comment aimes-tu ton café ou ton thé, si tu en bois ?",
+   "de": "Wie trinkst du deinen Kaffee oder Tee am liebsten, falls du einen von beiden magst?"
+  }
+ },
+ {
+  "id": "ib-daily_life-007",
+  "topic": "daily_life",
+  "text": {
+   "en": "What's your favorite spot in your neighborhood?",
+   "it": "Qual è il tuo posto preferito nel tuo quartiere?",
+   "es": "¿Cuál es tu rincón favorito de tu barrio?",
+   "pt": "Qual é o teu sítio preferido no teu bairro?",
+   "pt_BR": "Qual é o seu lugar preferido no seu bairro?",
+   "fr": "Quel est ton endroit préféré dans ton quartier ?",
+   "de": "Was ist dein Lieblingsplatz in deinem Viertel?"
+  }
+ },
+ {
+  "id": "ib-daily_life-008",
+  "topic": "daily_life",
+  "text": {
+   "en": "What's something you do every week that you look forward to?",
+   "it": "Cosa fai ogni settimana che aspetti con piacere?",
+   "es": "¿Qué haces cada semana que esperas con ganas?",
+   "pt": "O que fazes todas as semanas e esperas com expectativa?",
+   "pt_BR": "O que você faz toda semana e espera com ansiedade?",
+   "fr": "Qu'est-ce que tu fais chaque semaine et que tu attends avec impatience ?",
+   "de": "Was machst du jede Woche, worauf du dich freust?"
+  }
+ },
+ {
+  "id": "ib-daily_life-009",
+  "topic": "daily_life",
+  "text": {
+   "en": "How does a typical weekend go in your family?",
+   "it": "Com'è un tipico weekend nella tua famiglia?",
+   "es": "¿Cómo es un fin de semana típico en tu familia?",
+   "pt": "Como é um fim de semana típico na tua família?",
+   "pt_BR": "Como é um fim de semana típico na sua família?",
+   "fr": "Comment se passe un week-end typique dans ta famille ?",
+   "de": "Wie läuft ein typisches Wochenende in deiner Familie ab?"
+  }
+ },
+ {
+  "id": "ib-daily_life-010",
+  "topic": "daily_life",
+  "text": {
+   "en": "What do you cook when you have no time and little energy?",
+   "it": "Cosa cucini quando hai poco tempo e poca energia?",
+   "es": "¿Qué cocinas cuando tienes poco tiempo y pocas ganas?",
+   "pt": "O que cozinhas quando tens pouco tempo e pouca energia?",
+   "pt_BR": "O que você cozinha quando tem pouco tempo e pouca energia?",
+   "fr": "Que cuisines-tu quand tu as peu de temps et peu d'énergie ?",
+   "de": "Was kochst du, wenn du wenig Zeit und wenig Energie hast?"
+  }
+ },
+ {
+  "id": "ib-daily_life-011",
+  "topic": "daily_life",
+  "text": {
+   "en": "Which household chore do you secretly enjoy?",
+   "it": "Quale faccenda domestica ti piace in segreto?",
+   "es": "¿Qué tarea doméstica disfrutas en secreto?",
+   "pt": "Que tarefa doméstica fazes com gosto, em segredo?",
+   "pt_BR": "Que tarefa doméstica você secretamente gosta de fazer?",
+   "fr": "Quelle tâche ménagère aimes-tu en secret ?",
+   "de": "Welche Hausarbeit machst du heimlich gern?"
+  }
+ },
+ {
+  "id": "ib-daily_life-012",
+  "topic": "daily_life",
+  "text": {
+   "en": "What time do you usually have dinner, and who do you eat with?",
+   "it": "A che ora cenate di solito e con chi mangi?",
+   "es": "¿A qué hora sueles cenar y con quién comes?",
+   "pt": "A que horas costumas jantar e com quem comes?",
+   "pt_BR": "A que horas você costuma jantar e com quem come?",
+   "fr": "À quelle heure dînes-tu d'habitude, et avec qui ?",
+   "de": "Um wie viel Uhr isst du normalerweise zu Abend, und mit wem?"
+  }
+ },
+ {
+  "id": "ib-daily_life-013",
+  "topic": "daily_life",
+  "text": {
+   "en": "Are you more of a morning person or a night owl?",
+   "it": "Sei più una persona mattiniera o un nottambulo?",
+   "es": "¿Eres más de madrugar o más de trasnochar?",
+   "pt": "És mais madrugador ou mais noctívago?",
+   "pt_BR": "Você é mais matutino ou mais notívago?",
+   "fr": "Tu es plutôt du matin ou du soir ?",
+   "de": "Bist du eher ein Morgenmensch oder eine Nachteule?"
+  }
+ },
+ {
+  "id": "ib-daily_life-014",
+  "topic": "daily_life",
+  "text": {
+   "en": "What's a local habit in your city that visitors might find surprising?",
+   "it": "Qual è un'abitudine della tua città che potrebbe sorprendere i visitatori?",
+   "es": "¿Qué costumbre de tu ciudad podría sorprender a los visitantes?",
+   "pt": "Que hábito da tua cidade pode surpreender os visitantes?",
+   "pt_BR": "Que hábito da sua cidade pode surpreender os visitantes?",
+   "fr": "Quelle habitude de ta ville pourrait surprendre les visiteurs ?",
+   "de": "Welche Gewohnheit in deiner Stadt könnte Besucher überraschen?"
+  }
+ },
+ {
+  "id": "ib-daily_life-015",
+  "topic": "daily_life",
+  "text": {
+   "en": "How do you spend your lunch break?",
+   "it": "Come passi la pausa pranzo?",
+   "es": "¿Cómo pasas la pausa para comer?",
+   "pt": "Como passas a pausa para o almoço?",
+   "pt_BR": "Como você passa o horário de almoço?",
+   "fr": "Comment passes-tu ta pause déjeuner ?",
+   "de": "Wie verbringst du deine Mittagspause?"
+  }
+ },
+ {
+  "id": "ib-daily_life-016",
+  "topic": "daily_life",
+  "text": {
+   "en": "What's the best thing about the street where you live?",
+   "it": "Qual è la cosa più bella della via in cui vivi?",
+   "es": "¿Qué es lo mejor de la calle donde vives?",
+   "pt": "Qual é a melhor coisa da rua onde vives?",
+   "pt_BR": "Qual é a melhor coisa da rua onde você mora?",
+   "fr": "Quel est le meilleur côté de la rue où tu habites ?",
+   "de": "Was ist das Beste an der Straße, in der du wohnst?"
+  }
+ },
+ {
+  "id": "ib-daily_life-017",
+  "topic": "daily_life",
+  "text": {
+   "en": "What do you do to unwind after a busy day?",
+   "it": "Cosa fai per staccare dopo una giornata intensa?",
+   "es": "¿Qué haces para desconectar después de un día ajetreado?",
+   "pt": "O que fazes para descontrair depois de um dia agitado?",
+   "pt_BR": "O que você faz para relaxar depois de um dia agitado?",
+   "fr": "Que fais-tu pour décompresser après une journée chargée ?",
+   "de": "Was machst du, um nach einem hektischen Tag abzuschalten?"
+  }
+ },
+ {
+  "id": "ib-daily_life-018",
+  "topic": "daily_life",
+  "text": {
+   "en": "How do neighbors usually greet each other where you live?",
+   "it": "Come si salutano di solito i vicini dove vivi?",
+   "es": "¿Cómo se saludan normalmente los vecinos donde vives?",
+   "pt": "Como é que os vizinhos costumam cumprimentar-se onde vives?",
+   "pt_BR": "Como os vizinhos costumam se cumprimentar onde você mora?",
+   "fr": "Comment les voisins se saluent-ils d'habitude chez toi ?",
+   "de": "Wie begrüßen sich Nachbarn bei dir normalerweise?"
+  }
+ },
+ {
+  "id": "ib-daily_life-019",
+  "topic": "daily_life",
+  "text": {
+   "en": "Where do you usually do your grocery shopping: market, supermarket or a small shop?",
+   "it": "Dove fai di solito la spesa: al mercato, al supermercato o in un negozietto?",
+   "es": "¿Dónde sueles hacer la compra: en el mercado, en el supermercado o en una tienda pequeña?",
+   "pt": "Onde costumas fazer as compras: no mercado, no supermercado ou numa loja pequena?",
+   "pt_BR": "Onde você costuma fazer as compras: na feira, no supermercado ou numa lojinha?",
+   "fr": "Où fais-tu d'habitude tes courses : au marché, au supermarché ou dans une petite boutique ?",
+   "de": "Wo kaufst du normalerweise ein: auf dem Markt, im Supermarkt oder in einem kleinen Laden?"
+  }
+ },
+ {
+  "id": "ib-daily_life-020",
+  "topic": "daily_life",
+  "text": {
+   "en": "What's a simple recipe from your home that you could teach me?",
+   "it": "Qual è una ricetta semplice di casa tua che potresti insegnarmi?",
+   "es": "¿Qué receta sencilla de tu casa podrías enseñarme?",
+   "pt": "Que receita simples da tua casa me poderias ensinar?",
+   "pt_BR": "Que receita simples da sua casa você poderia me ensinar?",
+   "fr": "Quelle recette simple de chez toi pourrais-tu m'apprendre ?",
+   "de": "Welches einfache Rezept aus deiner Familie könntest du mir beibringen?"
+  }
+ },
+ {
+  "id": "ib-daily_life-021",
+  "topic": "daily_life",
+  "text": {
+   "en": "Which season do you like best for everyday life, and why?",
+   "it": "Quale stagione preferisci per la vita di tutti i giorni, e perché?",
+   "es": "¿Qué estación prefieres para el día a día, y por qué?",
+   "pt": "Que estação preferes para o dia a dia, e porquê?",
+   "pt_BR": "Qual estação você prefere para o dia a dia, e por quê?",
+   "fr": "Quelle saison préfères-tu pour le quotidien, et pourquoi ?",
+   "de": "Welche Jahreszeit magst du im Alltag am liebsten, und warum?"
+  }
+ },
+ {
+  "id": "ib-daily_life-022",
+  "topic": "daily_life",
+  "text": {
+   "en": "Do you have a pet, or have you ever wanted one?",
+   "it": "Hai un animale domestico o ne hai mai voluto uno?",
+   "es": "¿Tienes mascota o alguna vez has querido una?",
+   "pt": "Tens um animal de estimação ou já quiseste ter um?",
+   "pt_BR": "Você tem um bichinho de estimação ou já quis ter um?",
+   "fr": "As-tu un animal de compagnie, ou en as-tu déjà voulu un ?",
+   "de": "Hast du ein Haustier, oder wolltest du schon mal eins?"
+  }
+ },
+ {
+  "id": "ib-daily_life-023",
+  "topic": "daily_life",
+  "text": {
+   "en": "What song do you always put on while cleaning or cooking?",
+   "it": "Quale canzone metti sempre mentre pulisci o cucini?",
+   "es": "¿Qué canción pones siempre mientras limpias o cocinas?",
+   "pt": "Que música pões sempre enquanto limpas ou cozinhas?",
+   "pt_BR": "Que música você sempre coloca enquanto limpa ou cozinha?",
+   "fr": "Quelle chanson mets-tu toujours quand tu fais le ménage ou la cuisine ?",
+   "de": "Welchen Song hörst du immer beim Putzen oder Kochen?"
+  }
+ },
+ {
+  "id": "ib-daily_life-024",
+  "topic": "daily_life",
+  "text": {
+   "en": "How do you plan your week: with a calendar, a list or just by feel?",
+   "it": "Come organizzi la settimana: con un calendario, una lista o a sensazione?",
+   "es": "¿Cómo planificas tu semana: con un calendario, una lista o sobre la marcha?",
+   "pt": "Como planeias a tua semana: com um calendário, uma lista ou ao sabor do momento?",
+   "pt_BR": "Como você planeja sua semana: com um calendário, uma lista ou no improviso?",
+   "fr": "Comment organises-tu ta semaine : avec un agenda, une liste ou au feeling ?",
+   "de": "Wie planst du deine Woche: mit Kalender, Liste oder aus dem Bauch heraus?"
+  }
+ },
+ {
+  "id": "ib-daily_life-025",
+  "topic": "daily_life",
+  "text": {
+   "en": "What's the weather like where you are right now?",
+   "it": "Che tempo fa dove sei adesso?",
+   "es": "¿Qué tiempo hace donde estás ahora mismo?",
+   "pt": "Que tempo está aí onde estás agora?",
+   "pt_BR": "Como está o tempo aí onde você está agora?",
+   "fr": "Quel temps fait-il chez toi en ce moment ?",
+   "de": "Wie ist das Wetter bei dir gerade?"
+  }
+ },
+ {
+  "id": "ib-daily_life-026",
+  "topic": "daily_life",
+  "text": {
+   "en": "What's your favorite way to spend a rainy day?",
+   "it": "Qual è il tuo modo preferito di passare una giornata di pioggia?",
+   "es": "¿Cuál es tu forma favorita de pasar un día de lluvia?",
+   "pt": "Qual é a tua forma preferida de passar um dia de chuva?",
+   "pt_BR": "Qual é a sua forma preferida de passar um dia de chuva?",
+   "fr": "Quelle est ta façon préférée de passer une journée de pluie ?",
+   "de": "Wie verbringst du einen Regentag am liebsten?"
+  }
+ },
+ {
+  "id": "ib-daily_life-027",
+  "topic": "daily_life",
+  "text": {
+   "en": "What's something normal in your country that might surprise people from elsewhere?",
+   "it": "Cosa è normale nel tuo paese ma potrebbe sorprendere chi viene da fuori?",
+   "es": "¿Qué es normal en tu país pero podría sorprender a gente de fuera?",
+   "pt": "O que é normal no teu país mas pode surpreender quem vem de fora?",
+   "pt_BR": "O que é normal no seu país mas pode surpreender quem vem de fora?",
+   "fr": "Qu'est-ce qui est normal dans ton pays mais pourrait surprendre des gens d'ailleurs ?",
+   "de": "Was ist in deinem Land normal, könnte aber Menschen von woanders überraschen?"
+  }
+ },
+ {
+  "id": "ib-daily_life-028",
+  "topic": "daily_life",
+  "text": {
+   "en": "Is there a hobby that fills your evenings?",
+   "it": "C'è un hobby che riempie le tue serate?",
+   "es": "¿Hay algún pasatiempo que llene tus tardes y noches?",
+   "pt": "Há algum passatempo que te ocupe as noites?",
+   "pt_BR": "Existe algum hobby que preenche suas noites?",
+   "fr": "Y a-t-il un loisir qui remplit tes soirées ?",
+   "de": "Gibt es ein Hobby, das deine Abende ausfüllt?"
+  }
+ },
+ {
+  "id": "ib-daily_life-029",
+  "topic": "daily_life",
+  "text": {
+   "en": "What do you usually have for breakfast?",
+   "it": "Cosa mangi di solito a colazione?",
+   "es": "¿Qué sueles desayunar?",
+   "pt": "O que costumas comer ao pequeno-almoço?",
+   "pt_BR": "O que você costuma comer no café da manhã?",
+   "fr": "Que prends-tu d'habitude au petit-déjeuner ?",
+   "de": "Was isst du normalerweise zum Frühstück?"
+  }
+ },
+ {
+  "id": "ib-daily_life-030",
+  "topic": "daily_life",
+  "text": {
+   "en": "Who do you talk to the most during a normal day?",
+   "it": "Con chi parli di più durante una giornata normale?",
+   "es": "¿Con quién hablas más durante un día normal?",
+   "pt": "Com quem falas mais durante um dia normal?",
+   "pt_BR": "Com quem você mais conversa durante um dia comum?",
+   "fr": "Avec qui parles-tu le plus pendant une journée normale ?",
+   "de": "Mit wem sprichst du an einem normalen Tag am meisten?"
+  }
+ },
+ {
+  "id": "ib-daily_life-031",
+  "topic": "daily_life",
+  "text": {
+   "en": "What's the nicest part of your daily commute?",
+   "it": "Qual è la parte più bella del tuo tragitto quotidiano?",
+   "es": "¿Cuál es la mejor parte de tu trayecto diario?",
+   "pt": "Qual é a melhor parte do teu trajeto diário?",
+   "pt_BR": "Qual é a melhor parte do seu trajeto diário?",
+   "fr": "Quelle est la plus belle partie de ton trajet quotidien ?",
+   "de": "Was ist der schönste Teil deines täglichen Wegs?"
+  }
+ },
+ {
+  "id": "ib-daily_life-032",
+  "topic": "daily_life",
+  "text": {
+   "en": "What small thing made you smile today?",
+   "it": "Quale piccola cosa ti ha fatto sorridere oggi?",
+   "es": "¿Qué pequeña cosa te ha hecho sonreír hoy?",
+   "pt": "Que pequena coisa te fez sorrir hoje?",
+   "pt_BR": "Que pequena coisa fez você sorrir hoje?",
+   "fr": "Quelle petite chose t'a fait sourire aujourd'hui ?",
+   "de": "Was hat dich heute zum Lächeln gebracht?"
+  }
+ },
+ {
+  "id": "ib-daily_life-033",
+  "topic": "daily_life",
+  "text": {
+   "en": "What do you do when you have an unexpected free hour?",
+   "it": "Cosa fai quando hai un'ora libera inaspettata?",
+   "es": "¿Qué haces cuando tienes una hora libre inesperada?",
+   "pt": "O que fazes quando tens uma hora livre inesperada?",
+   "pt_BR": "O que você faz quando tem uma hora livre inesperada?",
+   "fr": "Que fais-tu quand tu as une heure de libre inattendue ?",
+   "de": "Was machst du, wenn du unerwartet eine freie Stunde hast?"
+  }
+ },
+ {
+  "id": "ib-daily_life-034",
+  "topic": "daily_life",
+  "text": {
+   "en": "Where is your favorite place to just sit and watch people go by?",
+   "it": "Qual è il tuo posto preferito per sederti a guardare la gente che passa?",
+   "es": "¿Cuál es tu lugar favorito para sentarte a ver pasar a la gente?",
+   "pt": "Qual é o teu sítio preferido para te sentares a ver as pessoas passar?",
+   "pt_BR": "Qual é o seu lugar preferido para sentar e ver as pessoas passando?",
+   "fr": "Quel est ton endroit préféré pour t'asseoir et regarder les gens passer ?",
+   "de": "Wo sitzt du am liebsten einfach da und beobachtest die Leute?"
+  }
+ },
+ {
+  "id": "ib-daily_life-035",
+  "topic": "daily_life",
+  "text": {
+   "en": "What's the best snack for a quick break where you live?",
+   "it": "Qual è lo spuntino migliore per una pausa veloce dove vivi?",
+   "es": "¿Cuál es el mejor tentempié para una pausa rápida donde vives?",
+   "pt": "Qual é o melhor lanche para uma pausa rápida onde vives?",
+   "pt_BR": "Qual é o melhor lanche para uma pausa rápida onde você mora?",
+   "fr": "Quel est le meilleur en-cas pour une petite pause chez toi ?",
+   "de": "Was ist bei dir der beste Snack für eine kurze Pause?"
+  }
+ },
+ {
+  "id": "ib-daily_life-036",
+  "topic": "daily_life",
+  "text": {
+   "en": "Do you prefer to walk, cycle or drive when you can choose?",
+   "it": "Preferisci camminare, andare in bici o guidare quando puoi scegliere?",
+   "es": "¿Prefieres caminar, ir en bici o conducir cuando puedes elegir?",
+   "pt": "Preferes andar a pé, de bicicleta ou conduzir quando podes escolher?",
+   "pt_BR": "Você prefere caminhar, andar de bicicleta ou dirigir quando pode escolher?",
+   "fr": "Tu préfères marcher, faire du vélo ou conduire quand tu as le choix ?",
+   "de": "Gehst du lieber zu Fuß, fährst Rad oder Auto, wenn du die Wahl hast?"
+  }
+ },
+ {
+  "id": "ib-daily_life-037",
+  "topic": "daily_life",
+  "text": {
+   "en": "What's one thing in your home you couldn't do without?",
+   "it": "Qual è una cosa di casa tua di cui non potresti fare a meno?",
+   "es": "¿Qué cosa de tu casa no podrías dejar de tener?",
+   "pt": "Qual é uma coisa na tua casa sem a qual não conseguirias viver?",
+   "pt_BR": "Qual é uma coisa na sua casa sem a qual você não conseguiria viver?",
+   "fr": "Quelle est la chose chez toi dont tu ne pourrais pas te passer ?",
+   "de": "Was in deinem Zuhause könntest du auf keinen Fall missen?"
+  }
+ },
+ {
+  "id": "ib-daily_life-038",
+  "topic": "daily_life",
+  "text": {
+   "en": "How do you like to start your Monday?",
+   "it": "Come ti piace iniziare il lunedì?",
+   "es": "¿Cómo te gusta empezar el lunes?",
+   "pt": "Como gostas de começar a segunda-feira?",
+   "pt_BR": "Como você gosta de começar a segunda-feira?",
+   "fr": "Comment aimes-tu commencer ton lundi ?",
+   "de": "Wie startest du am liebsten in den Montag?"
+  }
+ },
+ {
+  "id": "ib-daily_life-039",
+  "topic": "daily_life",
+  "text": {
+   "en": "Does your family have a tradition that happens every week?",
+   "it": "La tua famiglia ha una tradizione che si ripete ogni settimana?",
+   "es": "¿Tu familia tiene alguna tradición que se repite cada semana?",
+   "pt": "A tua família tem alguma tradição que se repete todas as semanas?",
+   "pt_BR": "Sua família tem alguma tradição que se repete toda semana?",
+   "fr": "Ta famille a-t-elle une tradition qui revient chaque semaine ?",
+   "de": "Hat deine Familie eine Tradition, die jede Woche stattfindet?"
+  }
+ },
+ {
+  "id": "ib-daily_life-040",
+  "topic": "daily_life",
+  "text": {
+   "en": "What's your favorite way to spend a Sunday afternoon?",
+   "it": "Qual è il tuo modo preferito di passare una domenica pomeriggio?",
+   "es": "¿Cuál es tu forma favorita de pasar un domingo por la tarde?",
+   "pt": "Qual é a tua forma preferida de passar uma tarde de domingo?",
+   "pt_BR": "Qual é a sua forma preferida de passar uma tarde de domingo?",
+   "fr": "Quelle est ta façon préférée de passer un dimanche après-midi ?",
+   "de": "Wie verbringst du einen Sonntagnachmittag am liebsten?"
+  }
+ },
+ {
+  "id": "ib-daily_life-041",
+  "topic": "daily_life",
+  "text": {
+   "en": "What do you usually do on a lazy evening at home?",
+   "it": "Cosa fai di solito in una serata tranquilla a casa?",
+   "es": "¿Qué sueles hacer en una tarde-noche tranquila en casa?",
+   "pt": "O que costumas fazer numa noite calma em casa?",
+   "pt_BR": "O que você costuma fazer numa noite tranquila em casa?",
+   "fr": "Que fais-tu d'habitude lors d'une soirée tranquille à la maison ?",
+   "de": "Was machst du normalerweise an einem faulen Abend zu Hause?"
+  }
+ },
+ {
+  "id": "ib-daily_life-042",
+  "topic": "daily_life",
+  "text": {
+   "en": "Which plant, flower or tree do you see most often near your home?",
+   "it": "Quale pianta, fiore o albero vedi più spesso vicino a casa tua?",
+   "es": "¿Qué planta, flor o árbol ves más a menudo cerca de tu casa?",
+   "pt": "Que planta, flor ou árvore vês mais vezes perto da tua casa?",
+   "pt_BR": "Que planta, flor ou árvore você vê com mais frequência perto da sua casa?",
+   "fr": "Quelle plante, fleur ou quel arbre vois-tu le plus souvent près de chez toi ?",
+   "de": "Welche Pflanze, Blume oder welchen Baum siehst du in der Nähe deines Zuhauses am häufigsten?"
+  }
+ },
+ {
+  "id": "ib-daily_life-043",
+  "topic": "daily_life",
+  "text": {
+   "en": "What's something you've recently started doing that improved your days?",
+   "it": "Cosa hai iniziato a fare di recente che ha migliorato le tue giornate?",
+   "es": "¿Qué has empezado a hacer hace poco que haya mejorado tus días?",
+   "pt": "O que começaste a fazer recentemente que melhorou os teus dias?",
+   "pt_BR": "O que você começou a fazer recentemente que melhorou seus dias?",
+   "fr": "Qu'as-tu commencé à faire récemment qui a amélioré tes journées ?",
+   "de": "Was hast du kürzlich angefangen, das deine Tage verbessert hat?"
+  }
+ },
+ {
+  "id": "ib-daily_life-044",
+  "topic": "daily_life",
+  "text": {
+   "en": "How do you stay in a good mood on a grey, busy day?",
+   "it": "Come mantieni il buonumore in una giornata grigia e piena di impegni?",
+   "es": "¿Cómo mantienes el buen humor en un día gris y ocupado?",
+   "pt": "Como manténs o bom humor num dia cinzento e ocupado?",
+   "pt_BR": "Como você mantém o bom humor num dia cinzento e corrido?",
+   "fr": "Comment gardes-tu la bonne humeur lors d'une journée grise et chargée ?",
+   "de": "Wie behältst du an einem grauen, vollen Tag gute Laune?"
+  }
+ },
+ {
+  "id": "ib-daily_life-045",
+  "topic": "daily_life",
+  "text": {
+   "en": "What's the most useful phrase you use every single day?",
+   "it": "Qual è la frase più utile che usi ogni singolo giorno?",
+   "es": "¿Cuál es la frase más útil que usas todos los días?",
+   "pt": "Qual é a frase mais útil que usas todos os dias?",
+   "pt_BR": "Qual é a frase mais útil que você usa todos os dias?",
+   "fr": "Quelle est l'expression la plus utile que tu utilises tous les jours ?",
+   "de": "Welchen Satz benutzt du jeden Tag am häufigsten?"
+  }
+ },
+ {
+  "id": "ib-daily_life-046",
+  "topic": "daily_life",
+  "text": {
+   "en": "Does the day start early or late in your town?",
+   "it": "Nella tua città la giornata inizia presto o tardi?",
+   "es": "¿En tu ciudad el día empieza temprano o tarde?",
+   "pt": "Na tua cidade o dia começa cedo ou tarde?",
+   "pt_BR": "Na sua cidade o dia começa cedo ou tarde?",
+   "fr": "Dans ta ville, la journée commence-t-elle tôt ou tard ?",
+   "de": "Beginnt der Tag in deiner Stadt früh oder spät?"
+  }
+ },
+ {
+  "id": "ib-daily_life-047",
+  "topic": "daily_life",
+  "text": {
+   "en": "What do you like to do first when the weekend arrives?",
+   "it": "Cosa ti piace fare per prima cosa quando arriva il weekend?",
+   "es": "¿Qué es lo primero que te gusta hacer cuando llega el fin de semana?",
+   "pt": "O que gostas de fazer primeiro quando chega o fim de semana?",
+   "pt_BR": "O que você gosta de fazer primeiro quando chega o fim de semana?",
+   "fr": "Qu'aimes-tu faire en premier quand arrive le week-end ?",
+   "de": "Was machst du als Erstes gern, wenn das Wochenende beginnt?"
+  }
+ },
+ {
+  "id": "ib-daily_life-048",
+  "topic": "daily_life",
+  "text": {
+   "en": "Is there a bakery, café or shop you pass regularly and love?",
+   "it": "C'è un forno, un bar o un negozio davanti a cui passi spesso e che ami?",
+   "es": "¿Hay alguna panadería, cafetería o tienda por la que pases a menudo y te encante?",
+   "pt": "Há alguma padaria, café ou loja por onde passas com frequência e de que gostes?",
+   "pt_BR": "Existe alguma padaria, café ou loja por onde você passa sempre e adora?",
+   "fr": "Y a-t-il une boulangerie, un café ou une boutique devant laquelle tu passes souvent et que tu adores ?",
+   "de": "Gibt es eine Bäckerei, ein Café oder einen Laden, an dem du oft vorbeikommst und den du liebst?"
+  }
+ },
+ {
+  "id": "ib-daily_life-049",
+  "topic": "daily_life",
+  "text": {
+   "en": "How is a normal school or work day organized where you are?",
+   "it": "Com'è organizzata una normale giornata di scuola o di lavoro dove vivi?",
+   "es": "¿Cómo se organiza un día normal de colegio o trabajo donde estás?",
+   "pt": "Como é organizado um dia normal de escola ou trabalho onde estás?",
+   "pt_BR": "Como é organizado um dia normal de escola ou trabalho onde você está?",
+   "fr": "Comment s'organise une journée d'école ou de travail normale chez toi ?",
+   "de": "Wie ist ein normaler Schul- oder Arbeitstag bei dir organisiert?"
+  }
+ },
+ {
+  "id": "ib-daily_life-050",
+  "topic": "daily_life",
+  "text": {
+   "en": "What's your favorite part of the day, and why?",
+   "it": "Qual è la tua parte preferita della giornata, e perché?",
+   "es": "¿Cuál es tu parte favorita del día y por qué?",
+   "pt": "Qual é a tua parte preferida do dia, e porquê?",
+   "pt_BR": "Qual é a sua parte preferida do dia, e por quê?",
+   "fr": "Quel est ton moment préféré de la journée, et pourquoi ?",
+   "de": "Welche Tageszeit magst du am liebsten, und warum?"
+  }
+ }
+]

@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ss-accept_decline-001",
+  "topic": "accept_decline",
+  "level": "A1",
+  "text": {
+   "en": "Yes, I'd love to!",
+   "it": "Sì, volentieri!",
+   "es": "¡Sí, me encantaría!",
+   "pt": "Sim, adorava!",
+   "pt_BR": "Sim, eu adoraria!",
+   "fr": "Oui, avec plaisir !",
+   "de": "Ja, sehr gerne!"
+  }
+ },
+ {
+  "id": "ss-accept_decline-002",
+  "topic": "accept_decline",
+  "level": "A1",
+  "text": {
+   "en": "No, thank you.",
+   "it": "No, grazie.",
+   "es": "No, gracias.",
+   "pt": "Não, obrigado.",
+   "pt_BR": "Não, obrigado.",
+   "fr": "Non, merci.",
+   "de": "Nein, danke."
+  }
+ },
+ {
+  "id": "ss-accept_decline-003",
+  "topic": "accept_decline",
+  "level": "A1",
+  "text": {
+   "en": "Sure, why not?",
+   "it": "Certo, perché no?",
+   "es": "Claro, ¿por qué no?",
+   "pt": "Claro, porque não?",
+   "pt_BR": "Claro, por que não?",
+   "fr": "Bien sûr, pourquoi pas ?",
+   "de": "Klar, warum nicht?"
+  }
+ },
+ {
+  "id": "ss-accept_decline-004",
+  "topic": "accept_decline",
+  "level": "A1",
+  "text": {
+   "en": "Sorry, I can't.",
+   "it": "Mi dispiace, non posso.",
+   "es": "Lo siento, no puedo.",
+   "pt": "Lamento, não posso.",
+   "pt_BR": "Desculpa, não posso.",
+   "fr": "Désolé, je ne peux pas.",
+   "de": "Tut mir leid, ich kann nicht."
+  }
+ },
+ {
+  "id": "ss-accept_decline-005",
+  "topic": "accept_decline",
+  "level": "A1",
+  "text": {
+   "en": "That sounds great!",
+   "it": "Sembra fantastico!",
+   "es": "¡Suena genial!",
+   "pt": "Parece-me ótimo!",
+   "pt_BR": "Parece ótimo!",
+   "fr": "Ça a l'air génial !",
+   "de": "Das klingt super!"
+  }
+ },
+ {
+  "id": "ss-accept_decline-006",
+  "topic": "accept_decline",
+  "level": "A1",
+  "text": {
+   "en": "Thanks for inviting me.",
+   "it": "Grazie per l'invito.",
+   "es": "Gracias por invitarme.",
+   "pt": "Obrigado por me convidares.",
+   "pt_BR": "Obrigado pelo convite.",
+   "fr": "Merci de m'avoir invité.",
+   "de": "Danke für die Einladung."
+  }
+ },
+ {
+  "id": "ss-accept_decline-007",
+  "topic": "accept_decline",
+  "level": "A1",
+  "text": {
+   "en": "Maybe another time.",
+   "it": "Magari un'altra volta.",
+   "es": "Quizás otro día.",
+   "pt": "Talvez noutra altura.",
+   "pt_BR": "Talvez outra hora.",
+   "fr": "Peut-être une autre fois.",
+   "de": "Vielleicht ein andermal."
+  }
+ },
+ {
+  "id": "ss-accept_decline-008",
+  "topic": "accept_decline",
+  "level": "A1",
+  "text": {
+   "en": "I'm free tomorrow.",
+   "it": "Domani sono libero.",
+   "es": "Mañana estoy libre.",
+   "pt": "Amanhã estou livre.",
+   "pt_BR": "Amanhã eu estou livre.",
+   "fr": "Demain, je suis libre.",
+   "de": "Morgen habe ich Zeit."
+  }
+ },
+ {
+  "id": "ss-accept_decline-009",
+  "topic": "accept_decline",
+  "level": "A1",
+  "text": {
+   "en": "I'm busy today.",
+   "it": "Oggi sono occupato.",
+   "es": "Hoy estoy ocupado.",
+   "pt": "Hoje estou ocupado.",
+   "pt_BR": "Hoje eu estou ocupado.",
+   "fr": "Aujourd'hui, je suis occupé.",
+   "de": "Heute bin ich beschäftigt."
+  }
+ },
+ {
+  "id": "ss-accept_decline-010",
+  "topic": "accept_decline",
+  "level": "A1",
+  "text": {
+   "en": "What time?",
+   "it": "A che ora?",
+   "es": "¿A qué hora?",
+   "pt": "A que horas?",
+   "pt_BR": "Que horas?",
+   "fr": "À quelle heure ?",
+   "de": "Um wie viel Uhr?"
+  }
+ },
+ {
+  "id": "ss-accept_decline-011",
+  "topic": "accept_decline",
+  "level": "A1",
+  "text": {
+   "en": "Where shall we meet?",
+   "it": "Dove ci troviamo?",
+   "es": "¿Dónde quedamos?",
+   "pt": "Onde nos encontramos?",
+   "pt_BR": "Onde a gente se encontra?",
+   "fr": "On se retrouve où ?",
+   "de": "Wo treffen wir uns?"
+  }
+ },
+ {
+  "id": "ss-accept_decline-012",
+  "topic": "accept_decline",
+  "level": "A1",
+  "text": {
+   "en": "Yes, that works for me.",
+   "it": "Sì, per me va bene.",
+   "es": "Sí, me viene bien.",
+   "pt": "Sim, para mim está bem.",
+   "pt_BR": "Sim, por mim tudo bem.",
+   "fr": "Oui, ça me convient.",
+   "de": "Ja, das passt mir."
+  }
+ },
+ {
+  "id": "ss-accept_decline-013",
+  "topic": "accept_decline",
+  "level": "A1",
+  "text": {
+   "en": "No problem at all.",
+   "it": "Nessun problema.",
+   "es": "Ningún problema.",
+   "pt": "Não há problema nenhum.",
+   "pt_BR": "Sem problema nenhum.",
+   "fr": "Aucun problème.",
+   "de": "Kein Problem."
+  }
+ },
+ {
+  "id": "ss-accept_decline-014",
+  "topic": "accept_decline",
+  "level": "A1",
+  "text": {
+   "en": "I'd like to come.",
+   "it": "Mi piacerebbe venire.",
+   "es": "Me gustaría ir.",
+   "pt": "Gostava de ir.",
+   "pt_BR": "Eu gostaria de ir.",
+   "fr": "J'aimerais venir.",
+   "de": "Ich würde gern kommen."
+  }
+ },
+ {
+  "id": "ss-accept_decline-015",
+  "topic": "accept_decline",
+  "level": "A1",
+  "text": {
+   "en": "Thank you, that's kind of you.",
+   "it": "Grazie, è molto gentile da parte tua.",
+   "es": "Gracias, es muy amable de tu parte.",
+   "pt": "Obrigado, é muito simpático da tua parte.",
+   "pt_BR": "Obrigado, é muito gentil da sua parte.",
+   "fr": "Merci, c'est gentil de ta part.",
+   "de": "Danke, das ist nett von dir."
+  }
+ },
+ {
+  "id": "ss-accept_decline-016",
+  "topic": "accept_decline",
+  "level": "A2",
+  "text": {
+   "en": "I'd love to, but I already have plans.",
+   "it": "Mi piacerebbe, ma ho già un impegno.",
+   "es": "Me encantaría, pero ya tengo planes.",
+   "pt": "Adorava, mas já tenho planos.",
+   "pt_BR": "Eu adoraria, mas já tenho planos.",
+   "fr": "J'aimerais bien, mais j'ai déjà prévu quelque chose.",
+   "de": "Gerne, aber ich habe schon etwas vor."
+  }
+ },
+ {
+  "id": "ss-accept_decline-017",
+  "topic": "accept_decline",
+  "level": "A2",
+  "text": {
+   "en": "Thanks, but I'm not hungry right now.",
+   "it": "Grazie, ma non ho fame adesso.",
+   "es": "Gracias, pero ahora no tengo hambre.",
+   "pt": "Obrigado, mas agora não tenho fome.",
+   "pt_BR": "Obrigado, mas agora não estou com fome.",
+   "fr": "Merci, mais je n'ai pas faim pour le moment.",
+   "de": "Danke, aber ich habe gerade keinen Hunger."
+  }
+ },
+ {
+  "id": "ss-accept_decline-018",
+  "topic": "accept_decline",
+  "level": "A2",
+  "text": {
+   "en": "Can I bring a friend with me?",
+   "it": "Posso portare un amico?",
+   "es": "¿Puedo llevar a un amigo?",
+   "pt": "Posso levar um amigo?",
+   "pt_BR": "Posso levar um amigo comigo?",
+   "fr": "Je peux amener un ami ?",
+   "de": "Darf ich einen Freund mitbringen?"
+  }
+ },
+ {
+  "id": "ss-accept_decline-019",
+  "topic": "accept_decline",
+  "level": "A2",
+  "text": {
+   "en": "Sorry, I'm not free on Saturday.",
+   "it": "Mi dispiace, sabato non sono libero.",
+   "es": "Lo siento, el sábado no estoy libre.",
+   "pt": "Desculpa, no sábado não estou livre.",
+   "pt_BR": "Desculpa, no sábado eu não estou livre.",
+   "fr": "Désolé, je ne suis pas libre samedi.",
+   "de": "Tut mir leid, am Samstag habe ich keine Zeit."
+  }
+ },
+ {
+  "id": "ss-accept_decline-020",
+  "topic": "accept_decline",
+  "level": "A2",
+  "text": {
+   "en": "Yes, let's do it!",
+   "it": "Sì, facciamolo!",
+   "es": "¡Sí, hagámoslo!",
+   "pt": "Sim, vamos a isso!",
+   "pt_BR": "Sim, vamos nessa!",
+   "fr": "Oui, allons-y !",
+   "de": "Ja, machen wir das!"
+  }
+ },
+ {
+  "id": "ss-accept_decline-021",
+  "topic": "accept_decline",
+  "level": "A2",
+  "text": {
+   "en": "I'm not sure yet. Can I tell you tomorrow?",
+   "it": "Non sono ancora sicuro. Posso dirtelo domani?",
+   "es": "Todavía no estoy seguro. ¿Te lo digo mañana?",
+   "pt": "Ainda não tenho a certeza. Posso dizer-te amanhã?",
+   "pt_BR": "Ainda não tenho certeza. Posso te falar amanhã?",
+   "fr": "Je ne suis pas encore sûr. Je te dis ça demain ?",
+   "de": "Ich bin noch nicht sicher. Kann ich dir morgen Bescheid sagen?"
+  }
+ },
+ {
+  "id": "ss-accept_decline-022",
+  "topic": "accept_decline",
+  "level": "A2",
+  "text": {
+   "en": "That's very kind of you, but I'll pass.",
+   "it": "Sei molto gentile, ma passo.",
+   "es": "Es muy amable de tu parte, pero paso.",
+   "pt": "É muito simpático da tua parte, mas vou passar.",
+   "pt_BR": "Que gentileza sua, mas vou passar dessa vez.",
+   "fr": "C'est très gentil, mais je vais passer mon tour.",
+   "de": "Das ist sehr nett, aber ich passe."
+  }
+ },
+ {
+  "id": "ss-accept_decline-023",
+  "topic": "accept_decline",
+  "level": "A2",
+  "text": {
+   "en": "I'd be happy to help you.",
+   "it": "Ti aiuto volentieri.",
+   "es": "Con gusto te ayudo.",
+   "pt": "Ajudo-te com todo o gosto.",
+   "pt_BR": "Com prazer, eu te ajudo.",
+   "fr": "Je t'aiderai avec plaisir.",
+   "de": "Ich helfe dir gern."
+  }
+ },
+ {
+  "id": "ss-accept_decline-024",
+  "topic": "accept_decline",
+  "level": "A2",
+  "text": {
+   "en": "I can't make it tonight, sorry.",
+   "it": "Stasera non ce la faccio, scusa.",
+   "es": "Esta noche no puedo ir, lo siento.",
+   "pt": "Esta noite não consigo ir, desculpa.",
+   "pt_BR": "Hoje à noite não vou conseguir, desculpa.",
+   "fr": "Je ne peux pas venir ce soir, désolé.",
+   "de": "Heute Abend schaffe ich es leider nicht."
+  }
+ },
+ {
+  "id": "ss-accept_decline-025",
+  "topic": "accept_decline",
+  "level": "A2",
+  "text": {
+   "en": "Yes, please. That would be great.",
+   "it": "Sì, grazie. Sarebbe fantastico.",
+   "es": "Sí, por favor. Sería genial.",
+   "pt": "Sim, se faz favor. Seria ótimo.",
+   "pt_BR": "Sim, por favor. Seria ótimo.",
+   "fr": "Oui, volontiers. Ce serait génial.",
+   "de": "Ja, bitte. Das wäre toll."
+  }
+ },
+ {
+  "id": "ss-accept_decline-026",
+  "topic": "accept_decline",
+  "level": "A2",
+  "text": {
+   "en": "Thanks for asking, but I prefer to stay home.",
+   "it": "Grazie per avermelo chiesto, ma preferisco restare a casa.",
+   "es": "Gracias por preguntar, pero prefiero quedarme en casa.",
+   "pt": "Obrigado por perguntares, mas prefiro ficar em casa.",
+   "pt_BR": "Obrigado por perguntar, mas prefiro ficar em casa.",
+   "fr": "Merci de me l'avoir proposé, mais je préfère rester à la maison.",
+   "de": "Danke für die Frage, aber ich bleibe lieber zu Hause."
+  }
+ },
+ {
+  "id": "ss-accept_decline-027",
+  "topic": "accept_decline",
+  "level": "A2",
+  "text": {
+   "en": "What time does it start?",
+   "it": "A che ora inizia?",
+   "es": "¿A qué hora empieza?",
+   "pt": "A que horas começa?",
+   "pt_BR": "A que horas começa?",
+   "fr": "À quelle heure ça commence ?",
+   "de": "Wann fängt es an?"
+  }
+ },
+ {
+  "id": "ss-accept_decline-028",
+  "topic": "accept_decline",
+  "level": "A2",
+  "text": {
+   "en": "I'm free after five o'clock.",
+   "it": "Sono libero dopo le cinque.",
+   "es": "Estoy libre después de las cinco.",
+   "pt": "Estou livre depois das cinco.",
+   "pt_BR": "Fico livre depois das cinco.",
+   "fr": "Je suis libre après 17 h.",
+   "de": "Nach fünf Uhr habe ich Zeit."
+  }
+ },
+ {
+  "id": "ss-accept_decline-029",
+  "topic": "accept_decline",
+  "level": "A2",
+  "text": {
+   "en": "I'd rather not, if that's okay.",
+   "it": "Preferirei di no, se per te va bene.",
+   "es": "Prefiero no, si no te importa.",
+   "pt": "Prefiro não, se não te importares.",
+   "pt_BR": "Prefiro não, se você não se importar.",
+   "fr": "Je préférerais éviter, si ça te va.",
+   "de": "Lieber nicht, wenn das okay ist."
+  }
+ },
+ {
+  "id": "ss-accept_decline-030",
+  "topic": "accept_decline",
+  "level": "A2",
+  "text": {
+   "en": "Of course, count me in!",
+   "it": "Certo, conta su di me!",
+   "es": "Claro, ¡cuenta conmigo!",
+   "pt": "Claro, conta comigo!",
+   "pt_BR": "Claro, pode contar comigo!",
+   "fr": "Bien sûr, compte sur moi !",
+   "de": "Klar, ich bin dabei!"
+  }
+ },
+ {
+  "id": "ss-accept_decline-031",
+  "topic": "accept_decline",
+  "level": "B1",
+  "text": {
+   "en": "I'd love to join you, but I have to work early tomorrow.",
+   "it": "Mi piacerebbe unirmi a voi, ma domani devo alzarmi presto per lavorare.",
+   "es": "Me encantaría unirme, pero mañana tengo que madrugar para trabajar.",
+   "pt": "Adorava juntar-me a vocês, mas amanhã tenho de ir cedo para o trabalho.",
+   "pt_BR": "Eu adoraria me juntar a vocês, mas amanhã tenho que acordar cedo para trabalhar.",
+   "fr": "J'aimerais bien vous rejoindre, mais je dois me lever tôt demain pour travailler.",
+   "de": "Ich würde mich gern euch anschließen, aber ich muss morgen früh zur Arbeit."
+  }
+ },
+ {
+  "id": "ss-accept_decline-032",
+  "topic": "accept_decline",
+  "level": "B1",
+  "text": {
+   "en": "Thank you for the invitation. I'll let you know by Thursday.",
+   "it": "Grazie per l'invito. Ti faccio sapere entro giovedì.",
+   "es": "Gracias por la invitación. Te aviso antes del jueves.",
+   "pt": "Obrigado pelo convite. Digo-te até quinta-feira.",
+   "pt_BR": "Obrigado pelo convite. Te aviso até quinta-feira.",
+   "fr": "Merci pour l'invitation. Je te tiens au courant d'ici jeudi.",
+   "de": "Danke für die Einladung. Ich sage dir bis Donnerstag Bescheid."
+  }
+ },
+ {
+  "id": "ss-accept_decline-033",
+  "topic": "accept_decline",
+  "level": "B1",
+  "text": {
+   "en": "I'm afraid I can't come, but I hope you have a great time.",
+   "it": "Purtroppo non posso venire, ma spero che vi divertiate.",
+   "es": "Me temo que no puedo ir, pero espero que lo pasen genial.",
+   "pt": "Infelizmente não posso ir, mas espero que se divirtam imenso.",
+   "pt_BR": "Infelizmente não vou poder ir, mas espero que vocês se divirtam bastante.",
+   "fr": "Je crains de ne pas pouvoir venir, mais je vous souhaite de bien vous amuser.",
+   "de": "Leider kann ich nicht kommen, aber ich wünsche euch viel Spaß."
+  }
+ },
+ {
+  "id": "ss-accept_decline-034",
+  "topic": "accept_decline",
+  "level": "B1",
+  "text": {
+   "en": "Would it be okay if I joined you for just an hour?",
+   "it": "Va bene se mi unisco a voi solo per un'ora?",
+   "es": "¿Os parece bien si me uno solo una hora?",
+   "pt": "Importam-se que me junte a vocês só por uma hora?",
+   "pt_BR": "Tudo bem se eu me juntar a vocês só por uma hora?",
+   "fr": "Ça vous dérange si je vous rejoins juste une heure ?",
+   "de": "Wäre es okay, wenn ich nur für eine Stunde dazukomme?"
+  }
+ },
+ {
+  "id": "ss-accept_decline-035",
+  "topic": "accept_decline",
+  "level": "B1",
+  "text": {
+   "en": "That's a generous offer, but I wouldn't want to impose.",
+   "it": "È un'offerta generosa, ma non vorrei disturbare.",
+   "es": "Es una oferta muy generosa, pero no quisiera molestar.",
+   "pt": "É uma oferta generosa, mas não gostava de incomodar.",
+   "pt_BR": "É uma oferta generosa, mas não quero incomodar.",
+   "fr": "C'est une offre généreuse, mais je ne voudrais pas déranger.",
+   "de": "Das ist ein großzügiges Angebot, aber ich möchte nicht zur Last fallen."
+  }
+ },
+ {
+  "id": "ss-accept_decline-036",
+  "topic": "accept_decline",
+  "level": "B1",
+  "text": {
+   "en": "I'd be glad to accept, as long as it's not too much trouble.",
+   "it": "Accetto volentieri, sempre che non sia un problema.",
+   "es": "Acepto encantado, siempre que no sea mucha molestia.",
+   "pt": "Aceito com todo o gosto, desde que não seja muito incómodo.",
+   "pt_BR": "Aceito com prazer, desde que não dê muito trabalho.",
+   "fr": "J'accepte avec plaisir, du moment que ça ne te dérange pas trop.",
+   "de": "Ich nehme gern an, solange es keine großen Umstände macht."
+  }
+ },
+ {
+  "id": "ss-accept_decline-037",
+  "topic": "accept_decline",
+  "level": "B1",
+  "text": {
+   "en": "Unfortunately, I have another commitment at that time. Could we do next week?",
+   "it": "Purtroppo a quell'ora ho un altro impegno. Possiamo la settimana prossima?",
+   "es": "Por desgracia, a esa hora tengo otro compromiso. ¿Podemos la semana que viene?",
+   "pt": "Infelizmente tenho outro compromisso a essa hora. Podemos marcar para a semana que vem?",
+   "pt_BR": "Infelizmente tenho outro compromisso nesse horário. Podemos deixar para a semana que vem?",
+   "fr": "Malheureusement, j'ai un autre engagement à ce moment-là. On peut faire ça la semaine prochaine ?",
+   "de": "Leider habe ich dann einen anderen Termin. Können wir es nächste Woche machen?"
+  }
+ },
+ {
+  "id": "ss-accept_decline-038",
+  "topic": "accept_decline",
+  "level": "B1",
+  "text": {
+   "en": "I'd rather not go out tonight, but let's plan something for the weekend.",
+   "it": "Stasera preferirei non uscire, ma organizziamo qualcosa per il weekend.",
+   "es": "Esta noche prefiero no salir, pero planeemos algo para el fin de semana.",
+   "pt": "Esta noite prefiro não sair, mas vamos combinar alguma coisa para o fim de semana.",
+   "pt_BR": "Hoje à noite prefiro não sair, mas vamos combinar algo para o fim de semana.",
+   "fr": "Ce soir je préfère ne pas sortir, mais prévoyons quelque chose pour le week-end.",
+   "de": "Heute Abend gehe ich lieber nicht aus, aber lass uns am Wochenende etwas planen."
+  }
+ },
+ {
+  "id": "ss-accept_decline-039",
+  "topic": "accept_decline",
+  "level": "B1",
+  "text": {
+   "en": "Thanks for thinking of me! I'd really like that.",
+   "it": "Grazie per aver pensato a me! Mi farebbe molto piacere.",
+   "es": "¡Gracias por pensar en mí! Me encantaría.",
+   "pt": "Obrigado por te lembrares de mim! Gostava mesmo.",
+   "pt_BR": "Obrigado por lembrar de mim! Eu adoraria.",
+   "fr": "Merci d'avoir pensé à moi ! Ça me ferait vraiment plaisir.",
+   "de": "Danke, dass du an mich gedacht hast! Das würde mir sehr gefallen."
+  }
+ },
+ {
+  "id": "ss-accept_decline-040",
+  "topic": "accept_decline",
+  "level": "B1",
+  "text": {
+   "en": "I'm not really into that kind of activity, but thanks anyway.",
+   "it": "Non è proprio il mio genere di attività, ma grazie lo stesso.",
+   "es": "No me van mucho ese tipo de actividades, pero gracias de todos modos.",
+   "pt": "Não é bem o meu tipo de atividade, mas obrigado na mesma.",
+   "pt_BR": "Não é bem o meu tipo de atividade, mas obrigado mesmo assim.",
+   "fr": "Ce genre d'activité n'est pas vraiment pour moi, mais merci quand même.",
+   "de": "Diese Art von Aktivität ist nicht so meins, aber trotzdem danke."
+  }
+ },
+ {
+  "id": "ss-accept_decline-041",
+  "topic": "accept_decline",
+  "level": "B1",
+  "text": {
+   "en": "If you don't mind, I'd like to think about it first.",
+   "it": "Se non ti dispiace, vorrei pensarci prima.",
+   "es": "Si no te importa, me gustaría pensarlo primero.",
+   "pt": "Se não te importares, gostava de pensar primeiro.",
+   "pt_BR": "Se você não se importar, eu gostaria de pensar primeiro.",
+   "fr": "Si ça ne te dérange pas, j'aimerais d'abord y réfléchir.",
+   "de": "Wenn es dir nichts ausmacht, würde ich gern erst darüber nachdenken."
+  }
+ },
+ {
+  "id": "ss-accept_decline-042",
+  "topic": "accept_decline",
+  "level": "B1",
+  "text": {
+   "en": "Sounds like fun! Send me the details and I'll be there.",
+   "it": "Sembra divertente! Mandami i dettagli e ci sarò.",
+   "es": "¡Suena divertido! Mándame los detalles y allí estaré.",
+   "pt": "Parece divertido! Manda-me os detalhes e lá estarei.",
+   "pt_BR": "Parece divertido! Me manda os detalhes que eu estarei lá.",
+   "fr": "Ça a l'air amusant ! Envoie-moi les détails et je serai là.",
+   "de": "Klingt nach Spaß! Schick mir die Details, dann komme ich."
+  }
+ },
+ {
+  "id": "ss-accept_decline-043",
+  "topic": "accept_decline",
+  "level": "B2",
+  "text": {
+   "en": "I appreciate the offer, though I'm afraid I'll have to decline this time.",
+   "it": "Apprezzo l'offerta, ma temo di dover rifiutare questa volta.",
+   "es": "Agradezco la oferta, aunque me temo que esta vez tendré que rechazarla.",
+   "pt": "Agradeço a oferta, mas receio ter de recusar desta vez.",
+   "pt_BR": "Agradeço a oferta, mas infelizmente vou ter que recusar desta vez.",
+   "fr": "J'apprécie la proposition, mais je crains de devoir refuser cette fois.",
+   "de": "Ich weiß das Angebot zu schätzen, muss aber diesmal leider ablehnen."
+  }
+ },
+ {
+  "id": "ss-accept_decline-044",
+  "topic": "accept_decline",
+  "level": "B2",
+  "text": {
+   "en": "I'd be delighted to take part, provided the schedule suits everyone.",
+   "it": "Partecipo volentieri, purché l'orario vada bene a tutti.",
+   "es": "Participaré encantado, siempre que el horario le venga bien a todos.",
+   "pt": "Participo com todo o prazer, desde que o horário sirva a todos.",
+   "pt_BR": "Participo com prazer, contanto que o horário sirva para todo mundo.",
+   "fr": "Je participerai avec plaisir, à condition que l'horaire convienne à tout le monde.",
+   "de": "Ich nehme sehr gern teil, vorausgesetzt, der Termin passt allen."
+  }
+ },
+ {
+  "id": "ss-accept_decline-045",
+  "topic": "accept_decline",
+  "level": "B2",
+  "text": {
+   "en": "It's tempting, but I've already committed to something else, so I'll have to say no.",
+   "it": "È allettante, ma ho già preso un altro impegno, quindi devo dire di no.",
+   "es": "Es tentador, pero ya me he comprometido con otra cosa, así que tendré que decir que no.",
+   "pt": "É tentador, mas já me comprometi com outra coisa, por isso vou ter de dizer que não.",
+   "pt_BR": "É tentador, mas já me comprometi com outra coisa, então vou ter que dizer não.",
+   "fr": "C'est tentant, mais je me suis déjà engagé ailleurs, donc je dois dire non.",
+   "de": "Das ist verlockend, aber ich habe mich schon anderweitig verpflichtet, also muss ich absagen."
+  }
+ },
+ {
+  "id": "ss-accept_decline-046",
+  "topic": "accept_decline",
+  "level": "B2",
+  "text": {
+   "en": "I'd gladly accept, but would you mind if we moved it to a later date?",
+   "it": "Accetterei volentieri, ma ti dispiacerebbe spostarlo a una data successiva?",
+   "es": "Aceptaría con gusto, pero ¿te importaría que lo aplazáramos a una fecha posterior?",
+   "pt": "Aceitava com todo o gosto, mas importavas-te de adiar para uma data posterior?",
+   "pt_BR": "Eu aceitaria com prazer, mas você se importaria de adiar para uma data mais à frente?",
+   "fr": "J'accepterais volontiers, mais cela t'ennuierait-il de le reporter à une date ultérieure ?",
+   "de": "Ich würde gern zusagen, aber hättest du etwas dagegen, es auf einen späteren Termin zu verschieben?"
+  }
+ },
+ {
+  "id": "ss-accept_decline-047",
+  "topic": "accept_decline",
+  "level": "B2",
+  "text": {
+   "en": "Thank you so much for the offer, but I wouldn't want to take advantage of your generosity.",
+   "it": "Grazie mille per l'offerta, ma non vorrei approfittare della tua generosità.",
+   "es": "Muchas gracias por la oferta, pero no quisiera abusar de tu generosidad.",
+   "pt": "Muito obrigado pela oferta, mas não queria abusar da tua generosidade.",
+   "pt_BR": "Muito obrigado pela oferta, mas não quero abusar da sua generosidade.",
+   "fr": "Merci beaucoup pour l'offre, mais je ne voudrais pas abuser de ta générosité.",
+   "de": "Vielen Dank für das Angebot, aber ich möchte deine Großzügigkeit nicht ausnutzen."
+  }
+ },
+ {
+  "id": "ss-accept_decline-048",
+  "topic": "accept_decline",
+  "level": "B2",
+  "text": {
+   "en": "Let me check my calendar and get back to you by the end of the day.",
+   "it": "Controllo il calendario e ti rispondo entro la fine della giornata.",
+   "es": "Déjame mirar mi agenda y te contesto antes de que acabe el día.",
+   "pt": "Deixa-me ver a minha agenda e respondo-te até ao fim do dia.",
+   "pt_BR": "Deixa eu ver a minha agenda e te respondo até o fim do dia.",
+   "fr": "Laisse-moi consulter mon agenda, je te réponds d'ici la fin de la journée.",
+   "de": "Lass mich kurz in meinen Kalender schauen, ich melde mich bis heute Abend."
+  }
+ },
+ {
+  "id": "ss-accept_decline-049",
+  "topic": "accept_decline",
+  "level": "B2",
+  "text": {
+   "en": "I'm honored that you asked, but I don't think I'm the right person for this.",
+   "it": "Sono onorato che tu me l'abbia chiesto, ma non credo di essere la persona giusta.",
+   "es": "Me honra que me lo hayas pedido, pero no creo ser la persona adecuada.",
+   "pt": "Sinto-me honrado por me teres pedido, mas não creio ser a pessoa certa.",
+   "pt_BR": "Fico honrado por você ter pedido, mas não acho que eu seja a pessoa certa.",
+   "fr": "Je suis honoré que tu me le demandes, mais je ne pense pas être la bonne personne.",
+   "de": "Es ehrt mich, dass du mich fragst, aber ich glaube nicht, dass ich die richtige Person dafür bin."
+  }
+ },
+ {
+  "id": "ss-accept_decline-050",
+  "topic": "accept_decline",
+  "level": "B2",
+  "text": {
+   "en": "I'd be happy to come along, as long as we don't stay out too late.",
+   "it": "Vengo volentieri, purché non si faccia troppo tardi.",
+   "es": "Me apunto encantado, mientras no volvamos demasiado tarde.",
+   "pt": "Vou com todo o gosto, desde que não fiquemos fora até muito tarde.",
+   "pt_BR": "Vou com prazer, desde que a gente não volte muito tarde.",
+   "fr": "Je viens volontiers, à condition qu'on ne rentre pas trop tard.",
+   "de": "Ich komme gern mit, solange wir nicht zu spät nach Hause kommen."
+  }
+ },
+ {
+  "id": "ss-recommendations-001",
+  "topic": "recommendations",
+  "level": "A1",
+  "text": {
+   "en": "Can you recommend a restaurant?",
+   "it": "Puoi consigliarmi un ristorante?",
+   "es": "¿Puedes recomendarme un restaurante?",
+   "pt": "Podes recomendar-me um restaurante?",
+   "pt_BR": "Você pode me recomendar um restaurante?",
+   "fr": "Tu peux me recommander un restaurant ?",
+   "de": "Kannst du mir ein Restaurant empfehlen?"
+  }
+ },
+ {
+  "id": "ss-recommendations-002",
+  "topic": "recommendations",
+  "level": "A1",
+  "text": {
+   "en": "What do you recommend?",
+   "it": "Cosa mi consigli?",
+   "es": "¿Qué me recomiendas?",
+   "pt": "O que me recomendas?",
+   "pt_BR": "O que você recomenda?",
+   "fr": "Qu'est-ce que tu me conseilles ?",
+   "de": "Was empfiehlst du?"
+  }
+ },
+ {
+  "id": "ss-recommendations-003",
+  "topic": "recommendations",
+  "level": "A1",
+  "text": {
+   "en": "Is it good?",
+   "it": "È buono?",
+   "es": "¿Está bueno?",
+   "pt": "É bom?",
+   "pt_BR": "É gostoso?",
+   "fr": "C'est bon ?",
+   "de": "Ist es gut?"
+  }
+ },
+ {
+  "id": "ss-recommendations-004",
+  "topic": "recommendations",
+  "level": "A1",
+  "text": {
+   "en": "I recommend this place.",
+   "it": "Ti consiglio questo posto.",
+   "es": "Te recomiendo este sitio.",
+   "pt": "Recomendo-te este sítio.",
+   "pt_BR": "Eu recomendo este lugar.",
+   "fr": "Je te recommande cet endroit.",
+   "de": "Ich empfehle dir diesen Ort."
+  }
+ },
+ {
+  "id": "ss-recommendations-005",
+  "topic": "recommendations",
+  "level": "A1",
+  "text": {
+   "en": "It's very good.",
+   "it": "È molto buono.",
+   "es": "Está muy bueno.",
+   "pt": "É muito bom.",
+   "pt_BR": "É muito gostoso.",
+   "fr": "C'est très bon.",
+   "de": "Es ist sehr gut."
+  }
+ },
+ {
+  "id": "ss-recommendations-006",
+  "topic": "recommendations",
+  "level": "A1",
+  "text": {
+   "en": "Where is a good café?",
+   "it": "Dov'è un bel caffè?",
+   "es": "¿Dónde hay una buena cafetería?",
+   "pt": "Onde há um bom café?",
+   "pt_BR": "Onde tem um bom café?",
+   "fr": "Où y a-t-il un bon café ?",
+   "de": "Wo gibt es ein gutes Café?"
+  }
+ },
+ {
+  "id": "ss-recommendations-007",
+  "topic": "recommendations",
+  "level": "A1",
+  "text": {
+   "en": "Is it far from here?",
+   "it": "È lontano da qui?",
+   "es": "¿Está lejos de aquí?",
+   "pt": "Fica longe daqui?",
+   "pt_BR": "É longe daqui?",
+   "fr": "C'est loin d'ici ?",
+   "de": "Ist es weit von hier?"
+  }
+ },
+ {
+  "id": "ss-recommendations-008",
+  "topic": "recommendations",
+  "level": "A1",
+  "text": {
+   "en": "Is it expensive?",
+   "it": "È caro?",
+   "es": "¿Es caro?",
+   "pt": "É caro?",
+   "pt_BR": "É caro?",
+   "fr": "C'est cher ?",
+   "de": "Ist es teuer?"
+  }
+ },
+ {
+  "id": "ss-recommendations-009",
+  "topic": "recommendations",
+  "level": "A1",
+  "text": {
+   "en": "I love this song.",
+   "it": "Adoro questa canzone.",
+   "es": "Me encanta esta canción.",
+   "pt": "Adoro esta música.",
+   "pt_BR": "Eu adoro essa música.",
+   "fr": "J'adore cette chanson.",
+   "de": "Ich liebe dieses Lied."
+  }
+ },
+ {
+  "id": "ss-recommendations-010",
+  "topic": "recommendations",
+  "level": "A1",
+  "text": {
+   "en": "Try this dish!",
+   "it": "Prova questo piatto!",
+   "es": "¡Prueba este plato!",
+   "pt": "Experimenta este prato!",
+   "pt_BR": "Experimente esse prato!",
+   "fr": "Goûte ce plat !",
+   "de": "Probier dieses Gericht!"
+  }
+ },
+ {
+  "id": "ss-recommendations-011",
+  "topic": "recommendations",
+  "level": "A1",
+  "text": {
+   "en": "Do you know a nice park?",
+   "it": "Conosci un bel parco?",
+   "es": "¿Conoces un parque bonito?",
+   "pt": "Conheces um parque bonito?",
+   "pt_BR": "Você conhece um parque bonito?",
+   "fr": "Tu connais un joli parc ?",
+   "de": "Kennst du einen schönen Park?"
+  }
+ },
+ {
+  "id": "ss-recommendations-012",
+  "topic": "recommendations",
+  "level": "A1",
+  "text": {
+   "en": "What is your favorite book?",
+   "it": "Qual è il tuo libro preferito?",
+   "es": "¿Cuál es tu libro favorito?",
+   "pt": "Qual é o teu livro preferido?",
+   "pt_BR": "Qual é o seu livro favorito?",
+   "fr": "Quel est ton livre préféré ?",
+   "de": "Was ist dein Lieblingsbuch?"
+  }
+ },
+ {
+  "id": "ss-recommendations-013",
+  "topic": "recommendations",
+  "level": "A1",
+  "text": {
+   "en": "Thanks for the tip!",
+   "it": "Grazie per il consiglio!",
+   "es": "¡Gracias por el consejo!",
+   "pt": "Obrigado pela dica!",
+   "pt_BR": "Valeu pela dica!",
+   "fr": "Merci pour le conseil !",
+   "de": "Danke für den Tipp!"
+  }
+ },
+ {
+  "id": "ss-recommendations-014",
+  "topic": "recommendations",
+  "level": "A1",
+  "text": {
+   "en": "I want to see a good film.",
+   "it": "Voglio vedere un bel film.",
+   "es": "Quiero ver una buena película.",
+   "pt": "Quero ver um bom filme.",
+   "pt_BR": "Quero assistir a um bom filme.",
+   "fr": "Je veux voir un bon film.",
+   "de": "Ich möchte einen guten Film sehen."
+  }
+ },
+ {
+  "id": "ss-recommendations-015",
+  "topic": "recommendations",
+  "level": "A1",
+  "text": {
+   "en": "What is that place called?",
+   "it": "Come si chiama quel posto?",
+   "es": "¿Cómo se llama ese lugar?",
+   "pt": "Como se chama esse sítio?",
+   "pt_BR": "Como se chama aquele lugar?",
+   "fr": "Comment s'appelle cet endroit ?",
+   "de": "Wie heißt dieser Ort?"
+  }
+ },
+ {
+  "id": "ss-recommendations-016",
+  "topic": "recommendations",
+  "level": "A2",
+  "text": {
+   "en": "Do you know any good places to eat near here?",
+   "it": "Conosci dei buoni posti per mangiare qui vicino?",
+   "es": "¿Conoces algún buen sitio para comer por aquí?",
+   "pt": "Conheces algum sítio bom para comer aqui perto?",
+   "pt_BR": "Você conhece algum lugar bom para comer aqui perto?",
+   "fr": "Tu connais de bons endroits pour manger près d'ici ?",
+   "de": "Kennst du gute Lokale zum Essen hier in der Nähe?"
+  }
+ },
+ {
+  "id": "ss-recommendations-017",
+  "topic": "recommendations",
+  "level": "A2",
+  "text": {
+   "en": "What is the best thing to order here?",
+   "it": "Cosa è meglio ordinare qui?",
+   "es": "¿Qué es lo mejor para pedir aquí?",
+   "pt": "O que é melhor pedir aqui?",
+   "pt_BR": "Qual é o melhor prato para pedir aqui?",
+   "fr": "Qu'est-ce qu'il vaut mieux commander ici ?",
+   "de": "Was bestellt man hier am besten?"
+  }
+ },
+ {
+  "id": "ss-recommendations-018",
+  "topic": "recommendations",
+  "level": "A2",
+  "text": {
+   "en": "Which museum should I visit first?",
+   "it": "Quale museo dovrei visitare per primo?",
+   "es": "¿Qué museo debería visitar primero?",
+   "pt": "Que museu devo visitar primeiro?",
+   "pt_BR": "Qual museu eu devo visitar primeiro?",
+   "fr": "Quel musée devrais-je visiter en premier ?",
+   "de": "Welches Museum sollte ich zuerst besuchen?"
+  }
+ },
+ {
+  "id": "ss-recommendations-019",
+  "topic": "recommendations",
+  "level": "A2",
+  "text": {
+   "en": "I can recommend a great bakery in my neighborhood.",
+   "it": "Posso consigliarti un'ottima panetteria nel mio quartiere.",
+   "es": "Puedo recomendarte una panadería estupenda en mi barrio.",
+   "pt": "Posso recomendar-te uma ótima padaria no meu bairro.",
+   "pt_BR": "Posso te recomendar uma ótima padaria no meu bairro.",
+   "fr": "Je peux te recommander une super boulangerie dans mon quartier.",
+   "de": "Ich kann dir eine tolle Bäckerei in meinem Viertel empfehlen."
+  }
+ },
+ {
+  "id": "ss-recommendations-020",
+  "topic": "recommendations",
+  "level": "A2",
+  "text": {
+   "en": "Do you have any music to recommend?",
+   "it": "Hai della musica da consigliarmi?",
+   "es": "¿Tienes alguna música que recomendarme?",
+   "pt": "Tens alguma música para me recomendar?",
+   "pt_BR": "Você tem alguma música para me recomendar?",
+   "fr": "Tu as de la musique à me conseiller ?",
+   "de": "Hast du Musik, die du mir empfehlen kannst?"
+  }
+ },
+ {
+  "id": "ss-recommendations-021",
+  "topic": "recommendations",
+  "level": "A2",
+  "text": {
+   "en": "What should I see in your city?",
+   "it": "Cosa dovrei vedere nella tua città?",
+   "es": "¿Qué debería ver en tu ciudad?",
+   "pt": "O que devo ver na tua cidade?",
+   "pt_BR": "O que eu devo ver na sua cidade?",
+   "fr": "Que devrais-je voir dans ta ville ?",
+   "de": "Was sollte ich in deiner Stadt sehen?"
+  }
+ },
+ {
+  "id": "ss-recommendations-022",
+  "topic": "recommendations",
+  "level": "A2",
+  "text": {
+   "en": "That sounds interesting. I'll try it.",
+   "it": "Sembra interessante. Lo proverò.",
+   "es": "Suena interesante. Lo probaré.",
+   "pt": "Parece interessante. Vou experimentar.",
+   "pt_BR": "Parece interessante. Vou testar.",
+   "fr": "Ça a l'air intéressant. Je vais l'essayer.",
+   "de": "Das klingt interessant. Ich probiere es aus."
+  }
+ },
+ {
+  "id": "ss-recommendations-023",
+  "topic": "recommendations",
+  "level": "A2",
+  "text": {
+   "en": "Is there a good bookshop around here?",
+   "it": "C'è una buona libreria da queste parti?",
+   "es": "¿Hay una buena librería por aquí?",
+   "pt": "Há alguma boa livraria por aqui?",
+   "pt_BR": "Tem alguma boa livraria por aqui?",
+   "fr": "Y a-t-il une bonne librairie par ici ?",
+   "de": "Gibt es hier in der Nähe eine gute Buchhandlung?"
+  }
+ },
+ {
+  "id": "ss-recommendations-024",
+  "topic": "recommendations",
+  "level": "A2",
+  "text": {
+   "en": "I read a great book last month. You should read it.",
+   "it": "Il mese scorso ho letto un libro bellissimo. Dovresti leggerlo.",
+   "es": "El mes pasado leí un libro genial. Deberías leerlo.",
+   "pt": "No mês passado li um livro ótimo. Devias lê-lo.",
+   "pt_BR": "No mês passado li um livro ótimo. Você devia ler.",
+   "fr": "Le mois dernier, j'ai lu un super livre. Tu devrais le lire.",
+   "de": "Letzten Monat habe ich ein tolles Buch gelesen. Das solltest du lesen."
+  }
+ },
+ {
+  "id": "ss-recommendations-025",
+  "topic": "recommendations",
+  "level": "A2",
+  "text": {
+   "en": "Which app do you use to learn languages?",
+   "it": "Quale app usi per imparare le lingue?",
+   "es": "¿Qué aplicación usas para aprender idiomas?",
+   "pt": "Que aplicação usas para aprender línguas?",
+   "pt_BR": "Qual aplicativo você usa para aprender idiomas?",
+   "fr": "Quelle appli utilises-tu pour apprendre les langues ?",
+   "de": "Welche App benutzt du, um Sprachen zu lernen?"
+  }
+ },
+ {
+  "id": "ss-recommendations-026",
+  "topic": "recommendations",
+  "level": "A2",
+  "text": {
+   "en": "It is cheap and the food is delicious.",
+   "it": "È economico e il cibo è delizioso.",
+   "es": "Es barato y la comida está deliciosa.",
+   "pt": "É barato e a comida é deliciosa.",
+   "pt_BR": "É barato e a comida é uma delícia.",
+   "fr": "Ce n'est pas cher et la nourriture est délicieuse.",
+   "de": "Es ist günstig und das Essen ist lecker."
+  }
+ },
+ {
+  "id": "ss-recommendations-027",
+  "topic": "recommendations",
+  "level": "A2",
+  "text": {
+   "en": "What kind of food is typical in your region?",
+   "it": "Che tipo di cibo è tipico della tua regione?",
+   "es": "¿Qué tipo de comida es típica de tu región?",
+   "pt": "Que tipo de comida é típica da tua região?",
+   "pt_BR": "Que tipo de comida é típica da sua região?",
+   "fr": "Quel genre de cuisine est typique de ta région ?",
+   "de": "Welches Essen ist typisch für deine Region?"
+  }
+ },
+ {
+  "id": "ss-recommendations-028",
+  "topic": "recommendations",
+  "level": "A2",
+  "text": {
+   "en": "Is it worth the price?",
+   "it": "Vale il prezzo?",
+   "es": "¿Vale lo que cuesta?",
+   "pt": "Vale o preço?",
+   "pt_BR": "Vale o preço?",
+   "fr": "Est-ce que ça vaut le prix ?",
+   "de": "Ist es den Preis wert?"
+  }
+ },
+ {
+  "id": "ss-recommendations-029",
+  "topic": "recommendations",
+  "level": "A2",
+  "text": {
+   "en": "You must try the local coffee.",
+   "it": "Devi assaggiare il caffè locale.",
+   "es": "Tienes que probar el café local.",
+   "pt": "Tens de provar o café local.",
+   "pt_BR": "Você precisa provar o café local.",
+   "fr": "Tu dois goûter le café local.",
+   "de": "Du musst den lokalen Kaffee probieren."
+  }
+ },
+ {
+  "id": "ss-recommendations-030",
+  "topic": "recommendations",
+  "level": "A2",
+  "text": {
+   "en": "Could you send me the name of that film?",
+   "it": "Puoi mandarmi il nome di quel film?",
+   "es": "¿Puedes enviarme el nombre de esa película?",
+   "pt": "Podes enviar-me o nome desse filme?",
+   "pt_BR": "Pode me mandar o nome daquele filme?",
+   "fr": "Tu peux m'envoyer le nom de ce film ?",
+   "de": "Kannst du mir den Namen dieses Films schicken?"
+  }
+ },
+ {
+  "id": "ss-recommendations-031",
+  "topic": "recommendations",
+  "level": "B1",
+  "text": {
+   "en": "I'm looking for a quiet place to read. Do you have any suggestions?",
+   "it": "Cerco un posto tranquillo dove leggere. Hai qualche suggerimento?",
+   "es": "Busco un lugar tranquilo para leer. ¿Tienes alguna sugerencia?",
+   "pt": "Ando à procura de um sítio sossegado para ler. Tens alguma sugestão?",
+   "pt_BR": "Estou procurando um lugar tranquilo para ler. Você tem alguma sugestão?",
+   "fr": "Je cherche un endroit calme pour lire. Tu as des suggestions ?",
+   "de": "Ich suche einen ruhigen Ort zum Lesen. Hast du Vorschläge?"
+  }
+ },
+ {
+  "id": "ss-recommendations-032",
+  "topic": "recommendations",
+  "level": "B1",
+  "text": {
+   "en": "If you like hiking, I'd definitely recommend the trails near the lake.",
+   "it": "Se ti piace fare escursioni, ti consiglio sicuramente i sentieri vicino al lago.",
+   "es": "Si te gusta el senderismo, te recomiendo sin duda las rutas cerca del lago.",
+   "pt": "Se gostas de caminhadas, recomendo-te sem dúvida os trilhos perto do lago.",
+   "pt_BR": "Se você gosta de trilha, eu recomendo com certeza os caminhos perto do lago.",
+   "fr": "Si tu aimes la randonnée, je te recommande vraiment les sentiers près du lac.",
+   "de": "Wenn du gern wanderst, kann ich dir die Wege am See auf jeden Fall empfehlen."
+  }
+ },
+ {
+  "id": "ss-recommendations-033",
+  "topic": "recommendations",
+  "level": "B1",
+  "text": {
+   "en": "Which neighborhood would you suggest for a first-time visitor?",
+   "it": "Quale quartiere suggeriresti a chi viene per la prima volta?",
+   "es": "¿Qué barrio sugerirías a alguien que visita la ciudad por primera vez?",
+   "pt": "Que bairro sugerias a quem visita a cidade pela primeira vez?",
+   "pt_BR": "Qual bairro você sugere para quem visita a cidade pela primeira vez?",
+   "fr": "Quel quartier suggérerais-tu à quelqu'un qui visite pour la première fois ?",
+   "de": "Welches Viertel würdest du jemandem empfehlen, der zum ersten Mal zu Besuch ist?"
+  }
+ },
+ {
+  "id": "ss-recommendations-034",
+  "topic": "recommendations",
+  "level": "B1",
+  "text": {
+   "en": "I've heard great things about that place. Have you been there?",
+   "it": "Ho sentito parlare molto bene di quel posto. Ci sei stato?",
+   "es": "He oído cosas buenísimas de ese lugar. ¿Has estado allí?",
+   "pt": "Ouvi coisas ótimas sobre esse sítio. Já lá estiveste?",
+   "pt_BR": "Ouvi falar muito bem daquele lugar. Você já foi lá?",
+   "fr": "J'ai entendu dire beaucoup de bien de cet endroit. Tu y es déjà allé ?",
+   "de": "Ich habe viel Gutes über diesen Ort gehört. Warst du schon mal dort?"
+  }
+ },
+ {
+  "id": "ss-recommendations-035",
+  "topic": "recommendations",
+  "level": "B1",
+  "text": {
+   "en": "It's a bit touristy, but honestly it's worth seeing at least once.",
+   "it": "È un po' turistico, ma onestamente vale la pena vederlo almeno una volta.",
+   "es": "Es un poco turístico, pero la verdad es que vale la pena verlo al menos una vez.",
+   "pt": "É um pouco turístico, mas, sinceramente, vale a pena ver pelo menos uma vez.",
+   "pt_BR": "É meio turístico, mas, sinceramente, vale a pena ver pelo menos uma vez.",
+   "fr": "C'est un peu touristique, mais honnêtement, ça vaut le coup d'œil au moins une fois.",
+   "de": "Es ist ein bisschen touristisch, aber ehrlich gesagt lohnt es sich, es mindestens einmal zu sehen."
+  }
+ },
+ {
+  "id": "ss-recommendations-036",
+  "topic": "recommendations",
+  "level": "B1",
+  "text": {
+   "en": "Could you recommend something for a rainy day?",
+   "it": "Potresti consigliarmi qualcosa da fare in una giornata di pioggia?",
+   "es": "¿Podrías recomendarme algo para un día de lluvia?",
+   "pt": "Podias recomendar-me algo para um dia de chuva?",
+   "pt_BR": "Você poderia me recomendar algo para um dia de chuva?",
+   "fr": "Pourrais-tu me conseiller quelque chose pour un jour de pluie ?",
+   "de": "Könntest du mir etwas für einen Regentag empfehlen?"
+  }
+ },
+ {
+  "id": "ss-recommendations-037",
+  "topic": "recommendations",
+  "level": "B1",
+  "text": {
+   "en": "The best time to go is early in the morning, before the crowds arrive.",
+   "it": "Il momento migliore per andare è la mattina presto, prima che arrivi la folla.",
+   "es": "La mejor hora para ir es muy temprano, antes de que llegue la multitud.",
+   "pt": "A melhor altura para ir é de manhã cedo, antes de chegar a multidão.",
+   "pt_BR": "O melhor horário para ir é de manhã cedo, antes de chegar a multidão.",
+   "fr": "Le meilleur moment pour y aller, c'est tôt le matin, avant l'arrivée de la foule.",
+   "de": "Am besten geht man früh am Morgen hin, bevor die Menschenmassen kommen."
+  }
+ },
+ {
+  "id": "ss-recommendations-038",
+  "topic": "recommendations",
+  "level": "B1",
+  "text": {
+   "en": "I'm trying to find a podcast in simple English. Any ideas?",
+   "it": "Sto cercando un podcast in inglese semplice. Hai qualche idea?",
+   "es": "Estoy buscando un pódcast en inglés sencillo. ¿Se te ocurre alguno?",
+   "pt": "Ando à procura de um podcast em inglês simples. Tens alguma ideia?",
+   "pt_BR": "Estou procurando um podcast em inglês simples. Alguma ideia?",
+   "fr": "Je cherche un podcast en anglais simple. Tu as des idées ?",
+   "de": "Ich suche einen Podcast in einfachem Englisch. Hast du eine Idee?"
+  }
+ },
+ {
+  "id": "ss-recommendations-039",
+  "topic": "recommendations",
+  "level": "B1",
+  "text": {
+   "en": "If you enjoy local food, ask for the dish of the day.",
+   "it": "Se ti piace il cibo locale, chiedi il piatto del giorno.",
+   "es": "Si te gusta la comida local, pide el plato del día.",
+   "pt": "Se gostas de comida local, pede o prato do dia.",
+   "pt_BR": "Se você gosta de comida local, peça o prato do dia.",
+   "fr": "Si tu aimes la cuisine locale, demande le plat du jour.",
+   "de": "Wenn du gern lokal isst, frag nach dem Tagesgericht."
+  }
+ },
+ {
+  "id": "ss-recommendations-040",
+  "topic": "recommendations",
+  "level": "B1",
+  "text": {
+   "en": "Do you know a shop where I can buy authentic souvenirs?",
+   "it": "Conosci un negozio dove comprare souvenir autentici?",
+   "es": "¿Conoces alguna tienda donde comprar recuerdos auténticos?",
+   "pt": "Conheces alguma loja onde possa comprar recordações autênticas?",
+   "pt_BR": "Você conhece uma loja onde eu possa comprar souvenirs autênticos?",
+   "fr": "Tu connais une boutique où acheter des souvenirs authentiques ?",
+   "de": "Kennst du einen Laden, in dem ich echte Souvenirs kaufen kann?"
+  }
+ },
+ {
+  "id": "ss-recommendations-041",
+  "topic": "recommendations",
+  "level": "B1",
+  "text": {
+   "en": "I'd suggest booking in advance, because it gets very busy at weekends.",
+   "it": "Ti suggerisco di prenotare in anticipo, perché nel weekend c'è molta gente.",
+   "es": "Te sugiero reservar con antelación, porque los fines de semana se llena mucho.",
+   "pt": "Sugiro que reserves com antecedência, porque ao fim de semana fica muito cheio.",
+   "pt_BR": "Sugiro reservar com antecedência, porque nos fins de semana fica muito cheio.",
+   "fr": "Je te suggère de réserver à l'avance, car il y a beaucoup de monde le week-end.",
+   "de": "Ich würde dir raten, im Voraus zu reservieren, denn am Wochenende ist es sehr voll."
+  }
+ },
+ {
+  "id": "ss-recommendations-042",
+  "topic": "recommendations",
+  "level": "B1",
+  "text": {
+   "en": "Have you got a favorite local artist I could listen to?",
+   "it": "Hai un artista locale preferito che potrei ascoltare?",
+   "es": "¿Tienes algún artista local favorito que pueda escuchar?",
+   "pt": "Tens algum artista local preferido que eu possa ouvir?",
+   "pt_BR": "Você tem algum artista local favorito que eu possa ouvir?",
+   "fr": "Tu as un artiste local préféré que je pourrais écouter ?",
+   "de": "Hast du einen lokalen Lieblingskünstler, den ich mir anhören könnte?"
+  }
+ },
+ {
+  "id": "ss-recommendations-043",
+  "topic": "recommendations",
+  "level": "B2",
+  "text": {
+   "en": "I'd highly recommend it to anyone who wants to experience the real local atmosphere.",
+   "it": "Lo consiglio caldamente a chiunque voglia vivere la vera atmosfera locale.",
+   "es": "Lo recomiendo muchísimo a cualquiera que quiera vivir el ambiente local auténtico.",
+   "pt": "Recomendo vivamente a quem quiser sentir o verdadeiro ambiente local.",
+   "pt_BR": "Recomendo muito para quem quer viver o verdadeiro clima local.",
+   "fr": "Je le recommande vivement à quiconque veut ressentir la vraie ambiance locale.",
+   "de": "Ich kann es allen wärmstens empfehlen, die die echte lokale Atmosphäre erleben möchten."
+  }
+ },
+ {
+  "id": "ss-recommendations-044",
+  "topic": "recommendations",
+  "level": "B2",
+  "text": {
+   "en": "Given that I only have two days, what would you prioritize in the city?",
+   "it": "Dato che ho solo due giorni, cosa metteresti in cima alla lista in città?",
+   "es": "Teniendo en cuenta que solo tengo dos días, ¿qué priorizarías en la ciudad?",
+   "pt": "Tendo em conta que só tenho dois dias, o que priorizarias na cidade?",
+   "pt_BR": "Como só tenho dois dias, o que você priorizaria na cidade?",
+   "fr": "Étant donné que je n'ai que deux jours, qu'est-ce que tu privilégierais en ville ?",
+   "de": "Da ich nur zwei Tage habe, was würdest du in der Stadt priorisieren?"
+  }
+ },
+ {
+  "id": "ss-recommendations-045",
+  "topic": "recommendations",
+  "level": "B2",
+  "text": {
+   "en": "It's not as famous as the main attractions, but it's a hidden gem that deserves more attention.",
+   "it": "Non è famoso come le attrazioni principali, ma è un gioiello nascosto che merita più attenzione.",
+   "es": "No es tan famoso como las atracciones principales, pero es una joya escondida que merece más atención.",
+   "pt": "Não é tão famoso como as principais atrações, mas é uma joia escondida que merece mais atenção.",
+   "pt_BR": "Não é tão famoso quanto as principais atrações, mas é uma joia escondida que merece mais atenção.",
+   "fr": "Ce n'est pas aussi célèbre que les grandes attractions, mais c'est un trésor caché qui mérite plus d'attention.",
+   "de": "Es ist nicht so berühmt wie die Hauptattraktionen, aber ein Geheimtipp, der mehr Aufmerksamkeit verdient."
+  }
+ },
+ {
+  "id": "ss-recommendations-046",
+  "topic": "recommendations",
+  "level": "B2",
+  "text": {
+   "en": "Could you point me toward something off the beaten path rather than the usual tourist spots?",
+   "it": "Potresti indicarmi qualcosa fuori dai soliti percorsi, invece dei soliti luoghi turistici?",
+   "es": "¿Podrías indicarme algo fuera de lo habitual en lugar de los típicos sitios turísticos?",
+   "pt": "Podias indicar-me algo fora dos circuitos habituais, em vez dos pontos turísticos do costume?",
+   "pt_BR": "Você poderia me indicar algo fora do circuito, em vez dos pontos turísticos de sempre?",
+   "fr": "Pourrais-tu m'indiquer quelque chose hors des sentiers battus plutôt que les lieux touristiques habituels ?",
+   "de": "Könntest du mir etwas abseits der ausgetretenen Pfade zeigen statt der üblichen Touristenziele?"
+  }
+ },
+ {
+  "id": "ss-recommendations-047",
+  "topic": "recommendations",
+  "level": "B2",
+  "text": {
+   "en": "Your recommendation was spot on, and I ended up going back the next day.",
+   "it": "Il tuo consiglio era azzeccatissimo e alla fine ci sono tornato il giorno dopo.",
+   "es": "Tu recomendación fue un acierto total y acabé volviendo al día siguiente.",
+   "pt": "A tua recomendação foi mesmo certeira e acabei por voltar no dia seguinte.",
+   "pt_BR": "Sua recomendação foi certeira, e acabei voltando lá no dia seguinte.",
+   "fr": "Ta recommandation était parfaite, et j'y suis finalement retourné le lendemain.",
+   "de": "Deine Empfehlung war absolut treffend, und ich bin am nächsten Tag gleich noch einmal hingegangen."
+  }
+ },
+ {
+  "id": "ss-recommendations-048",
+  "topic": "recommendations",
+  "level": "B2",
+  "text": {
+   "en": "Although it's a little pricey, I think the quality justifies the cost.",
+   "it": "Anche se è un po' caro, penso che la qualità giustifichi il prezzo.",
+   "es": "Aunque es algo caro, creo que la calidad justifica el precio.",
+   "pt": "Embora seja um pouco caro, acho que a qualidade justifica o preço.",
+   "pt_BR": "Apesar de ser um pouco caro, acho que a qualidade justifica o preço.",
+   "fr": "Même si c'est un peu cher, je pense que la qualité justifie le prix.",
+   "de": "Auch wenn es etwas teuer ist, finde ich, dass die Qualität den Preis rechtfertigt."
+  }
+ },
+ {
+  "id": "ss-recommendations-049",
+  "topic": "recommendations",
+  "level": "B2",
+  "text": {
+   "en": "I'd steer clear of the busiest streets and head for the smaller restaurants instead.",
+   "it": "Eviterei le strade più affollate e andrei piuttosto nei ristoranti più piccoli.",
+   "es": "Evitaría las calles más concurridas y me iría a los restaurantes más pequeños.",
+   "pt": "Evitava as ruas mais movimentadas e ia antes para os restaurantes mais pequenos.",
+   "pt_BR": "Eu evitaria as ruas mais movimentadas e iria para os restaurantes menores.",
+   "fr": "J'éviterais les rues les plus fréquentées et j'irais plutôt dans les petits restaurants.",
+   "de": "Ich würde die belebtesten Straßen meiden und stattdessen die kleineren Restaurants ansteuern."
+  }
+ },
+ {
+  "id": "ss-recommendations-050",
+  "topic": "recommendations",
+  "level": "B2",
+  "text": {
+   "en": "If you tell me what you enjoy, I can suggest something that suits your taste.",
+   "it": "Se mi dici cosa ti piace, posso suggerirti qualcosa che si adatti ai tuoi gusti.",
+   "es": "Si me cuentas qué te gusta, puedo sugerirte algo que se ajuste a tus gustos.",
+   "pt": "Se me disseres do que gostas, posso sugerir-te algo ao teu gosto.",
+   "pt_BR": "Se você me contar do que gosta, posso sugerir algo que combine com o seu gosto.",
+   "fr": "Si tu me dis ce que tu aimes, je peux te suggérer quelque chose qui te plaira.",
+   "de": "Wenn du mir sagst, was dir gefällt, kann ich dir etwas vorschlagen, das zu deinem Geschmack passt."
+  }
+ }
+]

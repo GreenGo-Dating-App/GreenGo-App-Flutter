@@ -1,0 +1,1178 @@
+{
+ "BY": [
+  {
+   "id": "ct-BY-01",
+   "category": "greetings",
+   "text": {
+    "en": "A firm handshake with eye contact is the usual greeting between men. With women, many people wait to see whether she offers her hand first.",
+    "it": "Tra uomini il saluto abituale è una stretta di mano decisa, guardandosi negli occhi. Con le donne molti aspettano che sia lei a porgere la mano.",
+    "es": "Entre hombres, el saludo habitual es un apretón de manos firme mirando a los ojos. Con las mujeres, muchos esperan a que ella tienda la mano primero.",
+    "pt": "Entre homens, o cumprimento habitual é um aperto de mão firme, olhando nos olhos. Com as mulheres, muita gente espera que ela estenda a mão primeiro.",
+    "pt_BR": "Entre homens, o cumprimento comum é um aperto de mão firme, olhando nos olhos. Com as mulheres, muita gente espera que ela estenda a mão primeiro.",
+    "fr": "Entre hommes, la salutation habituelle est une poignée de main ferme en regardant dans les yeux. Avec les femmes, beaucoup attendent qu'elle tende la main la première.",
+    "de": "Unter Männern ist ein fester Händedruck mit Blickkontakt üblich. Bei Frauen warten viele ab, ob sie zuerst die Hand reicht."
+   }
+  },
+  {
+   "id": "ct-BY-02",
+   "category": "greetings",
+   "text": {
+    "en": "It is considered unlucky by many people to shake hands or pass something across a doorway. Step inside or outside first, then greet.",
+    "it": "Per molte persone porta sfortuna stringersi la mano o passarsi qualcosa attraverso la soglia di una porta. Meglio entrare o uscire prima e poi salutare.",
+    "es": "Mucha gente cree que da mala suerte darse la mano o pasar algo por encima del umbral de una puerta. Primero entra o sal y luego saluda.",
+    "pt": "Muita gente acredita que dá azar cumprimentar ou passar algo por cima da soleira da porta. Primeiro entra ou sai e só depois cumprimenta.",
+    "pt_BR": "Muita gente acredita que dá azar cumprimentar ou passar algo por cima da soleira da porta. Primeiro entre ou saia e só depois cumprimente.",
+    "fr": "Beaucoup de gens pensent que se serrer la main ou se passer quelque chose par-dessus le seuil porte malheur. Entrez ou sortez d'abord, puis saluez.",
+    "de": "Viele halten es für Unglück bringend, sich über die Türschwelle hinweg die Hand zu geben oder etwas zu reichen. Erst eintreten oder hinaustreten, dann grüßen."
+   }
+  },
+  {
+   "id": "ct-BY-03",
+   "category": "conversation",
+   "text": {
+    "en": "Many people like to talk about family, food, travel and nature. Asking about someone's hometown or a favourite local dish is a warm way to start.",
+    "it": "A molti piace parlare di famiglia, cucina, viaggi e natura. Chiedere della città natale o di un piatto locale preferito è un bel modo per iniziare.",
+    "es": "A mucha gente le gusta hablar de la familia, la comida, los viajes y la naturaleza. Preguntar por la ciudad natal o un plato local favorito es una buena forma de empezar.",
+    "pt": "Muita gente gosta de falar de família, comida, viagens e natureza. Perguntar pela terra natal ou por um prato local preferido é uma boa forma de começar.",
+    "pt_BR": "Muita gente gosta de falar de família, comida, viagens e natureza. Perguntar sobre a cidade natal ou um prato local favorito é um jeito simpático de começar.",
+    "fr": "Beaucoup de gens aiment parler de famille, de cuisine, de voyages et de nature. Demander la ville natale ou un plat local préféré est une bonne façon de commencer.",
+    "de": "Viele sprechen gern über Familie, Essen, Reisen und Natur. Nach der Heimatstadt oder einem Lieblingsgericht zu fragen, ist ein herzlicher Einstieg."
+   }
+  },
+  {
+   "id": "ct-BY-04",
+   "category": "conversation",
+   "text": {
+    "en": "Many people prefer not to discuss politics with someone they have just met. Stick to culture, food, sport and travel until you know each other better.",
+    "it": "Molte persone preferiscono non parlare di politica con chi hanno appena conosciuto. Meglio restare su cultura, cibo, sport e viaggi finché ci si conosce meglio.",
+    "es": "Mucha gente prefiere no hablar de política con alguien que acaba de conocer. Es mejor hablar de cultura, comida, deporte y viajes hasta conocerse más.",
+    "pt": "Muita gente prefere não falar de política com quem acabou de conhecer. Convém ficar pela cultura, comida, desporto e viagens até se conhecerem melhor.",
+    "pt_BR": "Muita gente prefere não falar de política com quem acabou de conhecer. É melhor ficar em cultura, comida, esporte e viagens até se conhecerem melhor.",
+    "fr": "Beaucoup de gens préfèrent ne pas parler de politique avec quelqu'un qu'ils viennent de rencontrer. Restez sur la culture, la cuisine, le sport et les voyages.",
+    "de": "Viele sprechen mit frisch Bekannten lieber nicht über Politik. Bleibt zunächst bei Kultur, Essen, Sport und Reisen, bis ihr euch besser kennt."
+   }
+  },
+  {
+   "id": "ct-BY-05",
+   "category": "language",
+   "text": {
+    "en": "Belarusian and Russian are both widely used. Most people in daily life speak Russian, but a few words in Belarusian, like \"dziakuj\" (thank you), are warmly received.",
+    "it": "Bielorusso e russo sono entrambi molto usati. Nella vita quotidiana si parla soprattutto russo, ma qualche parola in bielorusso, come \"dziakuj\" (grazie), è molto apprezzata.",
+    "es": "El bielorruso y el ruso se usan mucho. En el día a día se habla sobre todo ruso, pero unas palabras en bielorruso, como \"dziakuj\" (gracias), se agradecen mucho.",
+    "pt": "O bielorrusso e o russo são ambos muito usados. No dia a dia fala-se sobretudo russo, mas algumas palavras em bielorrusso, como \"dziakuj\" (obrigado), são muito bem recebidas.",
+    "pt_BR": "O bielorrusso e o russo são ambos muito usados. No dia a dia fala-se principalmente russo, mas algumas palavras em bielorrusso, como \"dziakuj\" (obrigado), são muito bem recebidas.",
+    "fr": "Le biélorusse et le russe sont tous deux très utilisés. Au quotidien, on parle surtout russe, mais quelques mots de biélorusse, comme \"dziakuj\" (merci), sont très appréciés.",
+    "de": "Belarussisch und Russisch sind beide weit verbreitet. Im Alltag spricht man vor allem Russisch, doch ein paar belarussische Wörter wie \"dziakuj\" (danke) kommen gut an."
+   }
+  },
+  {
+   "id": "ct-BY-06",
+   "category": "dining",
+   "text": {
+    "en": "When invited to a home, expect a table full of food and repeated offers of more. Trying a bit of everything and praising the cook is a sign of respect.",
+    "it": "Se sei invitato a casa di qualcuno, aspettati una tavola ricca e offerte ripetute di altro cibo. Assaggiare un po' di tutto e fare i complimenti al cuoco è un segno di rispetto.",
+    "es": "Si te invitan a una casa, espera una mesa llena de comida y ofrecimientos constantes de más. Probar un poco de todo y elogiar al cocinero es una muestra de respeto.",
+    "pt": "Se fores convidado para casa de alguém, espera uma mesa cheia e ofertas repetidas de mais comida. Provar um pouco de tudo e elogiar quem cozinhou é sinal de respeito.",
+    "pt_BR": "Se você for convidado para a casa de alguém, espere uma mesa cheia e ofertas repetidas de mais comida. Provar um pouco de tudo e elogiar quem cozinhou é sinal de respeito.",
+    "fr": "Si vous êtes invité chez quelqu'un, attendez-vous à une table bien garnie et à des propositions de resservir. Goûter un peu de tout et complimenter le cuisinier est une marque de respect.",
+    "de": "Bei einer Einladung nach Hause erwartet dich ein reich gedeckter Tisch und immer neue Nachschubangebote. Von allem etwas zu probieren und die Köchin zu loben, ist ein Zeichen von Respekt."
+   }
+  },
+  {
+   "id": "ct-BY-07",
+   "category": "dining",
+   "text": {
+    "en": "Potato dishes are central to Belarusian cooking. Draniki (potato pancakes, often served with sour cream) are a classic to try in almost any traditional restaurant.",
+    "it": "I piatti a base di patate sono centrali nella cucina bielorussa. I draniki (frittelle di patate, spesso con panna acida) sono un classico da provare in quasi ogni ristorante tradizionale.",
+    "es": "Los platos de patata son centrales en la cocina bielorrusa. Los draniki (tortitas de patata, a menudo con crema agria) son un clásico que probar en casi cualquier restaurante tradicional.",
+    "pt": "Os pratos de batata são centrais na cozinha bielorrussa. Os draniki (panquecas de batata, muitas vezes com natas azedas) são um clássico a provar em quase qualquer restaurante tradicional.",
+    "pt_BR": "Os pratos de batata são centrais na culinária bielorrussa. Os draniki (panquecas de batata, geralmente com creme azedo) são um clássico para provar em quase qualquer restaurante tradicional.",
+    "fr": "Les plats de pommes de terre sont au cœur de la cuisine biélorusse. Les draniki (galettes de pommes de terre, souvent avec de la crème aigre) sont un classique à goûter dans presque tout restaurant traditionnel.",
+    "de": "Kartoffelgerichte sind zentral in der belarussischen Küche. Draniki (Kartoffelpuffer, oft mit saurer Sahne) sind ein Klassiker, den man in fast jedem traditionellen Restaurant probieren kann."
+   }
+  },
+  {
+   "id": "ct-BY-08",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping of around 10 percent in restaurants and cafes is appreciated but not obligatory. Check the bill first, since a service charge is sometimes already added.",
+    "it": "Una mancia di circa il 10 per cento nei ristoranti e nei caffè è apprezzata ma non obbligatoria. Controlla prima il conto, perché a volte il servizio è già incluso.",
+    "es": "Una propina de alrededor del 10 por ciento en restaurantes y cafés se agradece, pero no es obligatoria. Mira primero la cuenta, porque a veces el servicio ya está incluido.",
+    "pt": "Uma gorjeta de cerca de 10 por cento em restaurantes e cafés é apreciada, mas não obrigatória. Vê primeiro a conta, porque por vezes o serviço já está incluído.",
+    "pt_BR": "Uma gorjeta de cerca de 10 por cento em restaurantes e cafés é apreciada, mas não obrigatória. Confira antes a conta, porque às vezes o serviço já está incluído.",
+    "fr": "Un pourboire d'environ 10 pour cent dans les restaurants et cafés est apprécié mais pas obligatoire. Vérifiez d'abord l'addition, car le service est parfois déjà inclus.",
+    "de": "Etwa 10 Prozent Trinkgeld in Restaurants und Cafés werden geschätzt, sind aber nicht Pflicht. Schau zuerst auf die Rechnung, denn manchmal ist der Service schon enthalten."
+   }
+  },
+  {
+   "id": "ct-BY-09",
+   "category": "gifts",
+   "text": {
+    "en": "If invited to a home, bring a small gift such as a cake, chocolates or flowers for the host. Do not arrive empty-handed, even if the host says it is not needed.",
+    "it": "Se sei invitato a casa di qualcuno, porta un piccolo regalo come una torta, dei cioccolatini o dei fiori. Non presentarti a mani vuote, anche se chi ospita dice che non serve.",
+    "es": "Si te invitan a una casa, lleva un detalle pequeño, como una tarta, bombones o flores para el anfitrión. No llegues con las manos vacías, aunque diga que no hace falta.",
+    "pt": "Se fores convidado para casa de alguém, leva uma lembrança pequena, como um bolo, bombons ou flores para o anfitrião. Não chegues de mãos vazias, mesmo que digam que não é preciso.",
+    "pt_BR": "Se você for convidado para a casa de alguém, leve uma lembrança pequena, como um bolo, bombons ou flores para o anfitrião. Não chegue de mãos vazias, mesmo que digam que não precisa.",
+    "fr": "Si vous êtes invité chez quelqu'un, apportez un petit cadeau comme un gâteau, des chocolats ou des fleurs. Ne venez pas les mains vides, même si l'hôte dit que ce n'est pas nécessaire.",
+    "de": "Wenn du nach Hause eingeladen wirst, bring eine Kleinigkeit mit, etwa einen Kuchen, Pralinen oder Blumen. Komm nicht mit leeren Händen, auch wenn die Gastgeber sagen, es sei nicht nötig."
+   }
+  },
+  {
+   "id": "ct-BY-10",
+   "category": "gifts",
+   "text": {
+    "en": "When giving flowers, choose an odd number of stems. Even numbers are traditionally reserved for funerals, so a bouquet of 2, 4 or 6 flowers can send the wrong message.",
+    "it": "Quando regali dei fiori, scegli un numero dispari di steli. I numeri pari sono tradizionalmente riservati ai funerali, quindi un mazzo di 2, 4 o 6 fiori può dare il messaggio sbagliato.",
+    "es": "Al regalar flores, elige un número impar de tallos. Los números pares se reservan tradicionalmente para los funerales, así que un ramo de 2, 4 o 6 flores puede dar un mensaje equivocado.",
+    "pt": "Ao oferecer flores, escolhe um número ímpar de caules. Os números pares são tradicionalmente reservados para funerais, por isso um ramo de 2, 4 ou 6 flores pode passar a mensagem errada.",
+    "pt_BR": "Ao dar flores, escolha um número ímpar de hastes. Os números pares são tradicionalmente reservados para funerais, então um buquê de 2, 4 ou 6 flores pode passar a mensagem errada.",
+    "fr": "En offrant des fleurs, choisissez un nombre impair de tiges. Les nombres pairs sont traditionnellement réservés aux funérailles, donc un bouquet de 2, 4 ou 6 fleurs peut envoyer le mauvais message.",
+    "de": "Beim Blumenschenken wähle eine ungerade Zahl von Stielen. Gerade Zahlen sind traditionell Beerdigungen vorbehalten, ein Strauß aus 2, 4 oder 6 Blumen kann daher falsch ankommen."
+   }
+  },
+  {
+   "id": "ct-BY-11",
+   "category": "dress",
+   "text": {
+    "en": "Belarusians tend to dress neatly, and many people dress up for the theatre, concerts and restaurants. Smart casual clothes make a good impression in the city.",
+    "it": "I bielorussi tendono a vestirsi in modo curato e molti si fanno eleganti per teatro, concerti e ristoranti. Un abbigliamento smart casual fa buona impressione in città.",
+    "es": "Los bielorrusos suelen vestir con esmero y muchos se arreglan para ir al teatro, a conciertos o a restaurantes. La ropa informal elegante causa buena impresión en la ciudad.",
+    "pt": "Os bielorrussos costumam vestir-se com cuidado e muita gente arranja-se para ir ao teatro, a concertos e a restaurantes. Roupa casual elegante causa boa impressão na cidade.",
+    "pt_BR": "Os bielorrussos costumam se vestir com capricho e muita gente se arruma para ir ao teatro, a shows e a restaurantes. Roupa casual elegante causa boa impressão na cidade.",
+    "fr": "Les Biélorusses s'habillent généralement avec soin et beaucoup se mettent sur leur trente-et-un pour le théâtre, les concerts et les restaurants. Une tenue chic décontractée fait bonne impression en ville.",
+    "de": "Die Belarussen kleiden sich meist gepflegt, und viele machen sich für Theater, Konzerte und Restaurants schick. Smart-casual-Kleidung macht in der Stadt einen guten Eindruck."
+   }
+  },
+  {
+   "id": "ct-BY-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "In Orthodox churches, women usually cover their heads with a scarf and everyone dresses modestly. Keep your voice low during services and ask before taking photos inside.",
+    "it": "Nelle chiese ortodosse le donne di solito si coprono il capo con un foulard e tutti si vestono in modo sobrio. Parla a voce bassa durante le funzioni e chiedi prima di fare foto all'interno.",
+    "es": "En las iglesias ortodoxas, las mujeres suelen cubrirse la cabeza con un pañuelo y todos visten con modestia. Habla en voz baja durante los oficios y pide permiso antes de hacer fotos dentro.",
+    "pt": "Nas igrejas ortodoxas, as mulheres costumam cobrir a cabeça com um lenço e todos se vestem com modéstia. Fala baixo durante os serviços e pede licença antes de tirar fotografias lá dentro.",
+    "pt_BR": "Nas igrejas ortodoxas, as mulheres costumam cobrir a cabeça com um lenço e todos se vestem com modéstia. Fale baixo durante os cultos e peça licença antes de tirar fotos lá dentro.",
+    "fr": "Dans les églises orthodoxes, les femmes se couvrent généralement la tête d'un foulard et chacun s'habille de façon modeste. Parlez à voix basse pendant les offices et demandez avant de photographier à l'intérieur.",
+    "de": "In orthodoxen Kirchen bedecken Frauen meist den Kopf mit einem Tuch, und alle kleiden sich dezent. Sprich während der Gottesdienste leise und frag, bevor du drinnen fotografierst."
+   }
+  },
+  {
+   "id": "ct-BY-13",
+   "category": "religion_sites",
+   "text": {
+    "en": "Both Orthodox and Catholic communities are part of Belarusian life, and Orthodox Christmas on 7 January and Catholic Christmas on 25 December are both public holidays.",
+    "it": "Le comunità ortodosse e cattoliche fanno entrambe parte della vita bielorussa: il Natale ortodosso del 7 gennaio e quello cattolico del 25 dicembre sono entrambi festivi.",
+    "es": "Las comunidades ortodoxa y católica forman parte de la vida bielorrusa: la Navidad ortodoxa del 7 de enero y la católica del 25 de diciembre son festivos.",
+    "pt": "As comunidades ortodoxa e católica fazem ambas parte da vida bielorrussa: o Natal ortodoxo, a 7 de janeiro, e o católico, a 25 de dezembro, são feriados.",
+    "pt_BR": "As comunidades ortodoxa e católica fazem parte da vida bielorrussa: o Natal ortodoxo, em 7 de janeiro, e o católico, em 25 de dezembro, são feriados.",
+    "fr": "Les communautés orthodoxe et catholique font partie de la vie biélorusse : Noël orthodoxe le 7 janvier et Noël catholique le 25 décembre sont tous deux fériés.",
+    "de": "Orthodoxe und katholische Gemeinden gehören zum Leben in Belarus: Das orthodoxe Weihnachten am 7. Januar und das katholische am 25. Dezember sind beide Feiertage."
+   }
+  },
+  {
+   "id": "ct-BY-14",
+   "category": "gestures",
+   "text": {
+    "en": "Pointing at someone with a finger or whistling indoors is seen as impolite. Many people also avoid sitting with a foot resting on a knee in front of elders.",
+    "it": "Indicare qualcuno con il dito o fischiare in casa è considerato scortese. Molti evitano anche di sedersi con il piede appoggiato al ginocchio davanti agli anziani.",
+    "es": "Señalar a alguien con el dedo o silbar dentro de casa se considera de mala educación. Mucha gente evita también sentarse con el pie sobre la rodilla delante de los mayores.",
+    "pt": "Apontar o dedo a alguém ou assobiar dentro de casa é visto como má educação. Muita gente evita também sentar-se com o pé em cima do joelho à frente dos mais velhos.",
+    "pt_BR": "Apontar o dedo para alguém ou assobiar dentro de casa é visto como falta de educação. Muita gente evita também sentar com o pé apoiado no joelho na frente dos mais velhos.",
+    "fr": "Montrer quelqu'un du doigt ou siffler à l'intérieur est considéré comme impoli. Beaucoup évitent aussi de s'asseoir le pied sur le genou devant les aînés.",
+    "de": "Mit dem Finger auf jemanden zu zeigen oder drinnen zu pfeifen gilt als unhöflich. Viele vermeiden es auch, vor Älteren mit dem Fuß auf dem Knie zu sitzen."
+   }
+  },
+  {
+   "id": "ct-BY-15",
+   "category": "gestures",
+   "text": {
+    "en": "In many homes you take off your outdoor shoes at the door, and the host may offer you slippers. Follow what others do and wait to be invited further in.",
+    "it": "In molte case ci si toglie le scarpe all'ingresso e chi ospita può offrire delle pantofole. Fai come gli altri e aspetta di essere invitato a entrare.",
+    "es": "En muchas casas te quitas los zapatos de calle en la entrada y el anfitrión puede ofrecerte zapatillas. Haz lo que hagan los demás y espera a que te inviten a pasar.",
+    "pt": "Em muitas casas tiram-se os sapatos de rua à entrada e o anfitrião pode oferecer-te chinelos. Faz como os outros e espera que te convidem a entrar.",
+    "pt_BR": "Em muitas casas tiram-se os sapatos de rua na entrada e o anfitrião pode oferecer chinelos. Faça como os outros e espere ser convidado a entrar.",
+    "fr": "Dans beaucoup de foyers, on retire ses chaussures à l'entrée et l'hôte peut proposer des chaussons. Faites comme les autres et attendez d'être invité à entrer.",
+    "de": "In vielen Wohnungen zieht man die Straßenschuhe an der Tür aus, und die Gastgeber bieten oft Hausschuhe an. Mach es wie die anderen und warte, bis du hereingebeten wirst."
+   }
+  },
+  {
+   "id": "ct-BY-16",
+   "category": "punctuality",
+   "text": {
+    "en": "Being on time is expected for business meetings and appointments. For a visit to someone's home, arriving within a quarter of an hour of the agreed time is normal.",
+    "it": "La puntualità è attesa per riunioni di lavoro e appuntamenti. Per una visita a casa di qualcuno, arrivare entro un quarto d'ora dall'orario concordato è normale.",
+    "es": "Se espera puntualidad en reuniones de trabajo y citas. Para una visita a casa de alguien, llegar dentro de un cuarto de hora de la hora acordada es normal.",
+    "pt": "Espera-se pontualidade em reuniões de trabalho e marcações. Numa visita a casa de alguém, chegar até um quarto de hora depois da hora combinada é normal.",
+    "pt_BR": "Espera-se pontualidade em reuniões de trabalho e compromissos. Em uma visita à casa de alguém, chegar dentro de um quarto de hora do horário combinado é normal.",
+    "fr": "La ponctualité est attendue pour les réunions professionnelles et les rendez-vous. Pour une visite chez quelqu'un, arriver dans le quart d'heure suivant l'heure convenue est normal.",
+    "de": "Pünktlichkeit wird bei Geschäftsterminen und Verabredungen erwartet. Bei einem Besuch zu Hause ist es normal, bis zu einer Viertelstunde nach der vereinbarten Zeit einzutreffen."
+   }
+  },
+  {
+   "id": "ct-BY-17",
+   "category": "public_behavior",
+   "text": {
+    "en": "On buses, trams and the metro it is common to offer your seat to elderly people, pregnant women and parents with small children. Many people will do so without being asked.",
+    "it": "Su autobus, tram e metro è normale offrire il posto ad anziani, donne incinte e genitori con bambini piccoli. Molti lo fanno senza che nessuno lo chieda.",
+    "es": "En autobuses, tranvías y metro es habitual ceder el asiento a personas mayores, embarazadas y padres con niños pequeños. Mucha gente lo hace sin que se lo pidan.",
+    "pt": "Em autocarros, elétricos e no metro é comum oferecer o lugar a idosos, grávidas e pais com crianças pequenas. Muita gente fá-lo sem que lho peçam.",
+    "pt_BR": "Em ônibus, bondes e no metrô é comum oferecer o assento a idosos, grávidas e pais com crianças pequenas. Muita gente faz isso sem que peçam.",
+    "fr": "Dans les bus, tramways et le métro, il est courant de céder sa place aux personnes âgées, aux femmes enceintes et aux parents avec de jeunes enfants. Beaucoup le font sans qu'on le demande.",
+    "de": "In Bussen, Straßenbahnen und der Metro bietet man älteren Menschen, Schwangeren und Eltern mit kleinen Kindern üblicherweise den Sitzplatz an. Viele tun das, ohne gefragt zu werden."
+   }
+  },
+  {
+   "id": "ct-BY-18",
+   "category": "public_behavior",
+   "text": {
+    "en": "Minsk is known for being very clean, and people take care of public spaces. Dropping litter on the street is frowned upon, so look for a bin before throwing anything away.",
+    "it": "Minsk è nota per essere molto pulita e la gente ha cura degli spazi pubblici. Gettare rifiuti per strada è mal visto, quindi cerca un cestino prima di buttare qualcosa.",
+    "es": "Minsk es conocida por su limpieza y la gente cuida los espacios públicos. Tirar basura en la calle está mal visto, así que busca una papelera antes de tirar nada.",
+    "pt": "Minsk é conhecida por ser muito limpa e as pessoas cuidam dos espaços públicos. Deitar lixo para o chão é mal visto, por isso procura um caixote antes de deitar fora seja o que for.",
+    "pt_BR": "Minsk é conhecida por ser muito limpa e as pessoas cuidam dos espaços públicos. Jogar lixo na rua é mal visto, então procure uma lixeira antes de descartar qualquer coisa.",
+    "fr": "Minsk est réputée pour sa propreté et les habitants prennent soin des espaces publics. Jeter des déchets dans la rue est mal vu, cherchez donc une poubelle avant de jeter quoi que ce soit.",
+    "de": "Minsk gilt als sehr sauber, und die Menschen achten auf öffentliche Räume. Müll auf die Straße zu werfen ist verpönt, such also einen Mülleimer, bevor du etwas wegwirfst."
+   }
+  },
+  {
+   "id": "ct-BY-19",
+   "category": "transport",
+   "text": {
+    "en": "The Minsk metro is clean, cheap and easy to use, with station names shown in Belarusian and often English. Buses, trams and trolleybuses complete the city network.",
+    "it": "La metropolitana di Minsk è pulita, economica e facile da usare, con i nomi delle stazioni in bielorusso e spesso in inglese. Autobus, tram e filobus completano la rete cittadina.",
+    "es": "El metro de Minsk es limpio, barato y fácil de usar, con los nombres de las estaciones en bielorruso y a menudo en inglés. Autobuses, tranvías y trolebuses completan la red de la ciudad.",
+    "pt": "O metro de Minsk é limpo, barato e fácil de usar, com os nomes das estações em bielorrusso e muitas vezes em inglês. Autocarros, elétricos e troleicarros completam a rede da cidade.",
+    "pt_BR": "O metrô de Minsk é limpo, barato e fácil de usar, com os nomes das estações em bielorrusso e muitas vezes em inglês. Ônibus, bondes e trólebus completam a rede da cidade.",
+    "fr": "Le métro de Minsk est propre, bon marché et facile à utiliser, avec les noms des stations en biélorusse et souvent en anglais. Bus, tramways et trolleybus complètent le réseau urbain.",
+    "de": "Die Minsker Metro ist sauber, günstig und einfach zu benutzen, mit Stationsnamen auf Belarussisch und oft auf Englisch. Busse, Straßenbahnen und Oberleitungsbusse ergänzen das Stadtnetz."
+   }
+  },
+  {
+   "id": "ct-BY-20",
+   "category": "festivals",
+   "text": {
+    "en": "Kupala Night, on the night of 6 to 7 July, is a favourite folk holiday. People gather by rivers and lakes, weave flower wreaths and jump over bonfires.",
+    "it": "La notte di Kupala, tra il 6 e il 7 luglio, è una delle feste popolari più amate. Ci si riunisce vicino a fiumi e laghi, si intrecciano corone di fiori e si salta sui falò.",
+    "es": "La Noche de Kupala, del 6 al 7 de julio, es una de las fiestas populares más queridas. La gente se reúne junto a ríos y lagos, teje coronas de flores y salta sobre hogueras.",
+    "pt": "A Noite de Kupala, de 6 para 7 de julho, é uma das festas populares mais queridas. As pessoas reúnem-se junto a rios e lagos, entrançam coroas de flores e saltam sobre fogueiras.",
+    "pt_BR": "A Noite de Kupala, de 6 para 7 de julho, é uma das festas populares mais queridas. As pessoas se reúnem perto de rios e lagos, trançam coroas de flores e pulam fogueiras.",
+    "fr": "La nuit de Kupala, du 6 au 7 juillet, est l'une des fêtes populaires préférées. On se réunit au bord des rivières et des lacs, on tresse des couronnes de fleurs et on saute par-dessus des feux.",
+    "de": "Die Kupala-Nacht vom 6. auf den 7. Juli ist ein beliebtes Volksfest. Man versammelt sich an Flüssen und Seen, flicht Blumenkränze und springt über Feuer."
+   }
+  },
+  {
+   "id": "ct-BY-21",
+   "category": "festivals",
+   "text": {
+    "en": "Maslenitsa, the pancake week before Lent, is celebrated with pancakes, games and the burning of a straw figure. It is a cheerful way to say goodbye to winter.",
+    "it": "La Maslenitsa, la settimana delle frittelle prima della Quaresima, si celebra con frittelle, giochi e il rogo di un fantoccio di paglia. È un modo allegro per salutare l'inverno.",
+    "es": "La Maslenitsa, la semana de las tortitas antes de la Cuaresma, se celebra con tortitas, juegos y la quema de un muñeco de paja. Es una forma alegre de despedir el invierno.",
+    "pt": "A Maslenitsa, a semana das panquecas antes da Quaresma, celebra-se com panquecas, jogos e a queima de um boneco de palha. É uma forma alegre de dizer adeus ao inverno.",
+    "pt_BR": "A Maslenitsa, a semana das panquecas antes da Quaresma, é celebrada com panquecas, jogos e a queima de um boneco de palha. É um jeito alegre de se despedir do inverno.",
+    "fr": "La Maslenitsa, la semaine des crêpes avant le Carême, se fête avec des crêpes, des jeux et la combustion d'un mannequin de paille. C'est une manière joyeuse de dire adieu à l'hiver.",
+    "de": "Die Maslenitsa, die Pfannkuchenwoche vor der Fastenzeit, wird mit Pfannkuchen, Spielen und dem Verbrennen einer Strohpuppe gefeiert. Es ist ein fröhlicher Abschied vom Winter."
+   }
+  },
+  {
+   "id": "ct-BY-22",
+   "category": "family",
+   "text": {
+    "en": "Family ties are strong, and many people spend weekends at the family dacha, a country house with a garden. An invitation to a dacha is a sign of real friendship.",
+    "it": "I legami familiari sono forti e molti passano il fine settimana alla dacia di famiglia, una casa di campagna con orto. Un invito alla dacia è segno di vera amicizia.",
+    "es": "Los lazos familiares son fuertes y mucha gente pasa los fines de semana en la dacha familiar, una casa de campo con huerto. Una invitación a una dacha es señal de verdadera amistad.",
+    "pt": "Os laços familiares são fortes e muita gente passa os fins de semana na dacha da família, uma casa de campo com horta. Um convite para uma dacha é sinal de verdadeira amizade.",
+    "pt_BR": "Os laços familiares são fortes e muita gente passa os fins de semana na dacha da família, uma casa de campo com horta. Um convite para uma dacha é sinal de verdadeira amizade.",
+    "fr": "Les liens familiaux sont forts et beaucoup passent le week-end à la datcha familiale, une maison de campagne avec potager. Une invitation à la datcha est un signe de vraie amitié.",
+    "de": "Familienbande sind stark, und viele verbringen Wochenenden auf der Familiendatscha, einem Landhaus mit Garten. Eine Einladung auf die Datscha ist ein Zeichen echter Freundschaft."
+   }
+  },
+  {
+   "id": "ct-BY-23",
+   "category": "money",
+   "text": {
+    "en": "The currency is the Belarusian ruble (BYN). Cards are widely accepted in Minsk and bigger towns, but carry some cash for markets, small shops and rural areas.",
+    "it": "La valuta è il rublo bielorusso (BYN). Le carte sono ampiamente accettate a Minsk e nelle città più grandi, ma porta un po' di contanti per mercati, negozietti e zone rurali.",
+    "es": "La moneda es el rublo bielorruso (BYN). Las tarjetas se aceptan mucho en Minsk y en las ciudades grandes, pero lleva algo de efectivo para mercados, tiendas pequeñas y zonas rurales.",
+    "pt": "A moeda é o rublo bielorrusso (BYN). Os cartões são muito aceites em Minsk e nas cidades maiores, mas leva algum dinheiro vivo para mercados, lojas pequenas e zonas rurais.",
+    "pt_BR": "A moeda é o rublo bielorrusso (BYN). Os cartões são muito aceitos em Minsk e nas cidades maiores, mas leve algum dinheiro vivo para mercados, lojas pequenas e áreas rurais.",
+    "fr": "La monnaie est le rouble biélorusse (BYN). Les cartes sont largement acceptées à Minsk et dans les grandes villes, mais prenez un peu d'espèces pour les marchés, les petits commerces et les zones rurales.",
+    "de": "Die Währung ist der Belarussische Rubel (BYN). Karten werden in Minsk und größeren Städten häufig akzeptiert, für Märkte, kleine Läden und ländliche Gegenden brauchst du aber etwas Bargeld."
+   }
+  },
+  {
+   "id": "ct-BY-24",
+   "category": "photography",
+   "text": {
+    "en": "Ask permission before photographing people, especially older people and children. Be careful around government and military buildings, where photography may be restricted.",
+    "it": "Chiedi il permesso prima di fotografare le persone, soprattutto anziani e bambini. Fai attenzione vicino a edifici governativi e militari, dove fotografare può essere vietato.",
+    "es": "Pide permiso antes de fotografiar a la gente, sobre todo a personas mayores y niños. Ten cuidado cerca de edificios gubernamentales y militares, donde puede estar restringido fotografiar.",
+    "pt": "Pede autorização antes de fotografar pessoas, sobretudo idosos e crianças. Tem cuidado junto a edifícios governamentais e militares, onde fotografar pode ser restringido.",
+    "pt_BR": "Peça permissão antes de fotografar pessoas, principalmente idosos e crianças. Tenha cuidado perto de prédios do governo e militares, onde fotografar pode ser restrito.",
+    "fr": "Demandez la permission avant de photographier des personnes, surtout des personnes âgées et des enfants. Soyez prudent près des bâtiments gouvernementaux et militaires, où la photo peut être limitée.",
+    "de": "Frag um Erlaubnis, bevor du Menschen fotografierst, besonders ältere Menschen und Kinder. Sei bei Regierungs- und Militärgebäuden vorsichtig, dort kann das Fotografieren eingeschränkt sein."
+   }
+  },
+  {
+   "id": "ct-BY-25",
+   "category": "nightlife",
+   "text": {
+    "en": "Minsk has a lively scene of cafes, live music venues and theatres. Many evenings begin with dinner and a walk along the Svislach river or through the old Trinity Suburb.",
+    "it": "Minsk ha una scena vivace di caffè, locali di musica dal vivo e teatri. Molte serate iniziano con una cena e una passeggiata lungo il fiume Svislach o nel vecchio quartiere della Trinità.",
+    "es": "Minsk tiene una escena animada de cafés, locales de música en directo y teatros. Muchas noches empiezan con una cena y un paseo junto al río Svislach o por el antiguo barrio de la Trinidad.",
+    "pt": "Minsk tem uma cena animada de cafés, salas de música ao vivo e teatros. Muitas noites começam com um jantar e um passeio junto ao rio Svislach ou pelo antigo bairro da Trindade.",
+    "pt_BR": "Minsk tem uma cena animada de cafés, casas de música ao vivo e teatros. Muitas noites começam com um jantar e uma caminhada ao longo do rio Svislach ou pelo antigo bairro da Trindade.",
+    "fr": "Minsk a une scène animée de cafés, de salles de concert et de théâtres. Beaucoup de soirées commencent par un dîner et une promenade le long de la Svislotch ou dans l'ancien faubourg de la Trinité.",
+    "de": "Minsk hat eine lebendige Szene aus Cafés, Livemusik-Lokalen und Theatern. Viele Abende beginnen mit einem Essen und einem Spaziergang am Swislatsch oder durch die Trinitätsvorstadt."
+   }
+  },
+  {
+   "id": "ct-BY-26",
+   "category": "nature",
+   "text": {
+    "en": "Belovezhskaya Pushcha is one of Europe's last ancient lowland forests, shared with Poland and home to the European bison. Visit with a licensed guide and keep to marked paths.",
+    "it": "La foresta di Belovezhskaya Pushcha è una delle ultime foreste primarie di pianura d'Europa, condivisa con la Polonia e casa del bisonte europeo. Visitala con una guida autorizzata e resta sui sentieri segnati.",
+    "es": "El bosque de Belovézhskaya Pushcha es uno de los últimos bosques primarios de llanura de Europa, compartido con Polonia y hogar del bisonte europeo. Visítalo con un guía autorizado y sigue los senderos marcados.",
+    "pt": "A floresta de Belovezhskaya Pushcha é uma das últimas florestas primitivas de planície da Europa, partilhada com a Polónia e casa do bisonte-europeu. Visita-a com um guia autorizado e fica nos trilhos marcados.",
+    "pt_BR": "A floresta de Belovezhskaya Pushcha é uma das últimas florestas primitivas de planície da Europa, compartilhada com a Polônia e lar do bisão-europeu. Visite com um guia autorizado e fique nas trilhas marcadas.",
+    "fr": "La forêt de Białowieża est l'une des dernières forêts primaires de plaine d'Europe, partagée avec la Pologne et refuge du bison d'Europe. Visitez-la avec un guide agréé et restez sur les sentiers balisés.",
+    "de": "Der Białowieża-Urwald ist einer der letzten Tieflandurwälder Europas, mit Polen geteilt und Heimat des Wisents. Besuche ihn mit einem zugelassenen Führer und bleib auf den markierten Wegen."
+   }
+  },
+  {
+   "id": "ct-BY-27",
+   "category": "safety",
+   "text": {
+    "en": "Carry your passport or a copy of it, since you may be asked for identification. The emergency number is 112, and Minsk is generally regarded as a calm city for visitors.",
+    "it": "Porta con te il passaporto o una copia, perché potrebbe esserti chiesto un documento. Il numero di emergenza è 112 e Minsk è in genere considerata una città tranquilla per i visitatori.",
+    "es": "Lleva contigo el pasaporte o una copia, ya que pueden pedirte identificación. El número de emergencias es el 112 y Minsk suele considerarse una ciudad tranquila para los visitantes.",
+    "pt": "Leva contigo o passaporte ou uma cópia, pois podem pedir-te identificação. O número de emergência é o 112 e Minsk é geralmente considerada uma cidade tranquila para os visitantes.",
+    "pt_BR": "Leve o passaporte ou uma cópia, pois podem pedir identificação. O número de emergência é o 112 e Minsk costuma ser considerada uma cidade tranquila para os visitantes.",
+    "fr": "Gardez sur vous votre passeport ou une copie, car on peut vous demander une pièce d'identité. Le numéro d'urgence est le 112 et Minsk est généralement considérée comme une ville calme pour les visiteurs.",
+    "de": "Trage deinen Reisepass oder eine Kopie bei dir, denn man kann dich nach einem Ausweis fragen. Die Notrufnummer ist 112, und Minsk gilt für Besucher allgemein als ruhige Stadt."
+   }
+  },
+  {
+   "id": "ct-BY-28",
+   "category": "local_pride",
+   "text": {
+    "en": "Belarusians are proud of Francysk Skaryna, who printed the Bible in Old Belarusian in the 16th century, and of poets such as Yanka Kupala. Asking about them shows real interest.",
+    "it": "I bielorussi sono orgogliosi di Francysk Skaryna, che nel XVI secolo stampò la Bibbia in antico bielorusso, e di poeti come Yanka Kupala. Chiedere di loro mostra vero interesse.",
+    "es": "Los bielorrusos están orgullosos de Francysk Skaryna, que imprimió la Biblia en bielorruso antiguo en el siglo XVI, y de poetas como Yanka Kupala. Preguntar por ellos muestra interés real.",
+    "pt": "Os bielorrussos têm orgulho de Francysk Skaryna, que imprimiu a Bíblia em bielorrusso antigo no século XVI, e de poetas como Yanka Kupala. Perguntar por eles mostra interesse genuíno.",
+    "pt_BR": "Os bielorrussos têm orgulho de Francysk Skaryna, que imprimiu a Bíblia em bielorrusso antigo no século XVI, e de poetas como Yanka Kupala. Perguntar sobre eles mostra interesse genuíno.",
+    "fr": "Les Biélorusses sont fiers de Francysk Skaryna, qui a imprimé la Bible en vieux biélorusse au XVIe siècle, et de poètes comme Yanka Kupala. Poser des questions à leur sujet montre un intérêt sincère.",
+    "de": "Die Belarussen sind stolz auf Franzysk Skaryna, der im 16. Jahrhundert die Bibel auf Altbelarussisch druckte, und auf Dichter wie Janka Kupala. Nachfragen zeigt echtes Interesse."
+   }
+  },
+  {
+   "id": "ct-BY-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Mir Castle and Nesvizh Castle are treasured landmarks and UNESCO World Heritage Sites. Locals enjoy hearing that visitors made the trip beyond the capital to see them.",
+    "it": "I castelli di Mir e di Nesvizh sono monumenti molto cari e Patrimonio dell'Umanità UNESCO. Ai locali fa piacere sapere che i visitatori sono andati oltre la capitale per vederli.",
+    "es": "Los castillos de Mir y Nesvizh son monumentos muy queridos y Patrimonio Mundial de la UNESCO. A los locales les gusta saber que los visitantes han ido más allá de la capital para verlos.",
+    "pt": "Os castelos de Mir e Nesvizh são monumentos muito queridos e Património Mundial da UNESCO. Os locais gostam de saber que os visitantes foram além da capital para os ver.",
+    "pt_BR": "Os castelos de Mir e Nesvizh são monumentos muito queridos e Patrimônio Mundial da UNESCO. Os locais gostam de saber que os visitantes foram além da capital para vê-los.",
+    "fr": "Les châteaux de Mir et de Nesvij sont des monuments chéris et classés au patrimoine mondial de l'UNESCO. Les habitants aiment savoir que des visiteurs ont fait le voyage au-delà de la capitale pour les voir.",
+    "de": "Die Schlösser Mir und Njaswisch sind geschätzte Wahrzeichen und UNESCO-Welterbe. Die Einheimischen freuen sich, wenn Besucher die Reise über die Hauptstadt hinaus unternehmen."
+   }
+  },
+  {
+   "id": "ct-BY-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Ice hockey is the most popular sport, and Belarus has produced stars such as tennis player Aryna Sabalenka and biathlete Darya Domracheva. Sport is an easy, friendly topic.",
+    "it": "L'hockey su ghiaccio è lo sport più popolare e la Bielorussia ha dato campioni come la tennista Aryna Sabalenka e la biatleta Darya Domracheva. Lo sport è un argomento facile e amichevole.",
+    "es": "El hockey sobre hielo es el deporte más popular y Bielorrusia ha dado estrellas como la tenista Aryna Sabalenka y la biatleta Darya Domracheva. El deporte es un tema fácil y amistoso.",
+    "pt": "O hóquei no gelo é o desporto mais popular e a Bielorrússia deu estrelas como a tenista Aryna Sabalenka e a biatleta Darya Domracheva. O desporto é um tema fácil e simpático.",
+    "pt_BR": "O hóquei no gelo é o esporte mais popular e a Bielorrússia revelou estrelas como a tenista Aryna Sabalenka e a biatleta Darya Domracheva. O esporte é um assunto fácil e simpático.",
+    "fr": "Le hockey sur glace est le sport le plus populaire et la Biélorussie a donné des stars comme la joueuse de tennis Aryna Sabalenka et la biathlète Darya Domracheva. Le sport est un sujet facile et convivial.",
+    "de": "Eishockey ist der beliebteste Sport, und Belarus hat Stars wie die Tennisspielerin Aryna Sabalenka und die Biathletin Darja Domratschewa hervorgebracht. Sport ist ein leichtes, freundliches Gesprächsthema."
+   }
+  }
+ ],
+ "CA": [
+  {
+   "id": "ct-CA-01",
+   "category": "greetings",
+   "text": {
+    "en": "A handshake with a smile and eye contact is the standard greeting when meeting someone. Friends often hug, and in Quebec close friends may exchange a cheek kiss.",
+    "it": "Una stretta di mano con un sorriso e il contatto visivo è il saluto standard quando si conosce qualcuno. Gli amici spesso si abbracciano e in Québec gli amici stretti possono scambiarsi un bacio sulla guancia.",
+    "es": "Un apretón de manos con una sonrisa y contacto visual es el saludo estándar al conocer a alguien. Los amigos suelen abrazarse y en Quebec los amigos cercanos pueden darse un beso en la mejilla.",
+    "pt": "Um aperto de mão com um sorriso e contacto visual é o cumprimento habitual ao conhecer alguém. Os amigos costumam abraçar-se e, no Quebeque, os amigos próximos podem trocar um beijo na face.",
+    "pt_BR": "Um aperto de mão com um sorriso e contato visual é o cumprimento padrão ao conhecer alguém. Os amigos costumam se abraçar e, em Quebec, amigos próximos podem trocar um beijo no rosto.",
+    "fr": "Une poignée de main avec un sourire et un regard direct est la salutation standard lors d'une rencontre. Les amis se font souvent une accolade et, au Québec, les proches peuvent se faire la bise.",
+    "de": "Ein Händedruck mit Lächeln und Blickkontakt ist die übliche Begrüßung beim Kennenlernen. Freunde umarmen sich oft, und in Québec geben sich enge Freunde manchmal Wangenküsse."
+   }
+  },
+  {
+   "id": "ct-CA-02",
+   "category": "greetings",
+   "text": {
+    "en": "In Montreal and much of Quebec, the common shop greeting is \"Bonjour-hi\". Starting in French and switching to English if the other person does is friendly and well received.",
+    "it": "A Montréal e in buona parte del Québec il saluto comune nei negozi è \"Bonjour-hi\". Cominciare in francese e passare all'inglese se lo fa l'altra persona è un gesto amichevole e apprezzato.",
+    "es": "En Montreal y buena parte de Quebec, el saludo habitual en las tiendas es \"Bonjour-hi\". Empezar en francés y pasar al inglés si la otra persona lo hace es un gesto amable y bien recibido.",
+    "pt": "Em Montreal e em grande parte do Quebeque, o cumprimento comum nas lojas é \"Bonjour-hi\". Começar em francês e passar ao inglês se a outra pessoa o fizer é simpático e bem recebido.",
+    "pt_BR": "Em Montreal e em grande parte de Quebec, o cumprimento comum nas lojas é \"Bonjour-hi\". Começar em francês e passar para o inglês se a outra pessoa fizer isso é simpático e bem recebido.",
+    "fr": "À Montréal et dans une grande partie du Québec, le salut courant dans les commerces est \"Bonjour-hi\". Commencer en français et passer à l'anglais si l'autre le fait est sympathique et bien accueilli.",
+    "de": "In Montréal und weiten Teilen von Québec ist \"Bonjour-hi\" der übliche Gruß in Geschäften. Auf Französisch zu beginnen und ins Englische zu wechseln, wenn das Gegenüber es tut, kommt freundlich an."
+   }
+  },
+  {
+   "id": "ct-CA-03",
+   "category": "conversation",
+   "text": {
+    "en": "Small talk about the weather, hockey, travel or weekend plans is a normal way to start a chat. Canadians usually appreciate curiosity about their region.",
+    "it": "Chiacchierare del tempo, dell'hockey, dei viaggi o dei programmi per il fine settimana è un modo normale di iniziare. Di solito ai canadesi fa piacere la curiosità verso la loro regione.",
+    "es": "Charlar del tiempo, el hockey, los viajes o los planes del fin de semana es una forma normal de empezar. A los canadienses suele gustarles que se interesen por su región.",
+    "pt": "Falar do tempo, do hóquei, de viagens ou dos planos para o fim de semana é uma forma normal de começar a conversa. Os canadianos costumam gostar de ver curiosidade pela sua região.",
+    "pt_BR": "Falar do tempo, do hóquei, de viagens ou dos planos de fim de semana é um jeito normal de começar a conversa. Os canadenses costumam gostar de ver curiosidade pela sua região.",
+    "fr": "Parler de la météo, du hockey, de voyages ou des projets du week-end est une façon normale d'engager la conversation. Les Canadiens apprécient en général qu'on s'intéresse à leur région.",
+    "de": "Smalltalk über das Wetter, Eishockey, Reisen oder Wochenendpläne ist ein normaler Gesprächseinstieg. Kanadier freuen sich meist über Neugier auf ihre Region."
+   }
+  },
+  {
+   "id": "ct-CA-04",
+   "category": "conversation",
+   "text": {
+    "en": "Politeness is a point of pride, and \"sorry\" is used constantly, even for small things like squeezing past someone. Say \"please\" and \"thank you\" often and you will fit right in.",
+    "it": "La cortesia è motivo d'orgoglio e \"sorry\" si usa di continuo, anche per piccole cose come passare accanto a qualcuno. Dì spesso \"please\" e \"thank you\" e ti sentirai a tuo agio.",
+    "es": "La cortesía es motivo de orgullo y \"sorry\" se usa constantemente, incluso para cosas pequeñas como pasar junto a alguien. Di a menudo \"please\" y \"thank you\" y encajarás perfectamente.",
+    "pt": "A cortesia é motivo de orgulho e \"sorry\" usa-se constantemente, até para coisas pequenas como passar por alguém. Diz muitas vezes \"please\" e \"thank you\" e vais integrar-te na perfeição.",
+    "pt_BR": "A cortesia é motivo de orgulho e \"sorry\" é usado o tempo todo, até para coisas pequenas como passar por alguém. Diga \"please\" e \"thank you\" com frequência e você se encaixa direitinho.",
+    "fr": "La politesse est une fierté et \"sorry\" s'emploie sans cesse, même pour un détail comme se faufiler derrière quelqu'un. Dites souvent \"please\" et \"thank you\" et vous vous fondrez dans le décor.",
+    "de": "Höflichkeit ist ein Stolz, und \"sorry\" fällt ständig, selbst bei Kleinigkeiten wie dem Vorbeigehen. Sag oft \"please\" und \"thank you\", dann passt du gut hinein."
+   }
+  },
+  {
+   "id": "ct-CA-05",
+   "category": "language",
+   "text": {
+    "en": "English and French are both official languages at the federal level, and many signs and labels are bilingual. In Quebec, French is the main language of daily life.",
+    "it": "Inglese e francese sono entrambe lingue ufficiali a livello federale e molti cartelli ed etichette sono bilingui. In Québec il francese è la lingua principale della vita quotidiana.",
+    "es": "El inglés y el francés son lenguas oficiales a nivel federal y muchos carteles y etiquetas son bilingües. En Quebec, el francés es la lengua principal de la vida diaria.",
+    "pt": "O inglês e o francês são línguas oficiais a nível federal e muitas placas e rótulos são bilingues. No Quebeque, o francês é a língua principal do dia a dia.",
+    "pt_BR": "O inglês e o francês são línguas oficiais em nível federal e muitas placas e rótulos são bilíngues. Em Quebec, o francês é a língua principal do dia a dia.",
+    "fr": "L'anglais et le français sont les deux langues officielles au niveau fédéral, et de nombreux panneaux et étiquettes sont bilingues. Au Québec, le français est la langue principale de la vie quotidienne.",
+    "de": "Englisch und Französisch sind auf Bundesebene Amtssprachen, und viele Schilder und Etiketten sind zweisprachig. In Québec ist Französisch die wichtigste Alltagssprache."
+   }
+  },
+  {
+   "id": "ct-CA-06",
+   "category": "dining",
+   "text": {
+    "en": "Prices on menus and shelves usually do not include sales tax, which is added at the till and varies by province. The total on your bill will be higher than the listed price.",
+    "it": "I prezzi su menu e scaffali di solito non includono l'imposta sulle vendite, che si aggiunge alla cassa e varia da provincia a provincia. Il totale del conto sarà più alto del prezzo indicato.",
+    "es": "Los precios de las cartas y los estantes normalmente no incluyen el impuesto sobre las ventas, que se añade en caja y varía según la provincia. El total de la cuenta será mayor que el precio indicado.",
+    "pt": "Os preços nas ementas e nas prateleiras normalmente não incluem o imposto sobre vendas, que é acrescentado na caixa e varia consoante a província. O total da conta será superior ao preço indicado.",
+    "pt_BR": "Os preços nos cardápios e nas prateleiras normalmente não incluem o imposto sobre vendas, que é acrescentado no caixa e varia conforme a província. O total da conta será maior que o preço indicado.",
+    "fr": "Les prix sur les menus et les étagères n'incluent généralement pas la taxe de vente, ajoutée à la caisse et variable selon la province. Le total de l'addition sera supérieur au prix affiché.",
+    "de": "Preise auf Speisekarten und in Regalen enthalten meist keine Verkaufssteuer, die erst an der Kasse addiert wird und je nach Provinz variiert. Der Rechnungsbetrag liegt daher über dem angegebenen Preis."
+   }
+  },
+  {
+   "id": "ct-CA-07",
+   "category": "dining",
+   "text": {
+    "en": "Poutine, fries topped with cheese curds and gravy, comes from Quebec and is loved across the country. Maple syrup, butter tarts and Nanaimo bars are other treats worth trying.",
+    "it": "La poutine, patatine fritte con formaggio in grani e salsa, nasce in Québec ed è amata in tutto il paese. Lo sciroppo d'acero, le butter tart e i Nanaimo bar sono altre delizie da provare.",
+    "es": "La poutine, patatas fritas con queso en grano y salsa, nació en Quebec y se adora en todo el país. El sirope de arce, las butter tarts y las Nanaimo bars son otras delicias que probar.",
+    "pt": "A poutine, batatas fritas com queijo em grãos e molho, nasceu no Quebeque e é adorada em todo o país. O xarope de ácer, as butter tarts e as Nanaimo bars são outras delícias a provar.",
+    "pt_BR": "A poutine, batatas fritas com queijo em grãos e molho, nasceu em Quebec e é adorada em todo o país. O xarope de bordo, as butter tarts e as Nanaimo bars são outras delícias para provar.",
+    "fr": "La poutine, des frites garnies de fromage en grains et de sauce, vient du Québec et est adorée dans tout le pays. Le sirop d'érable, les tartes au beurre et les carrés Nanaimo sont d'autres douceurs à goûter.",
+    "de": "Poutine, Pommes frites mit Käsebruch und Sauce, stammt aus Québec und wird im ganzen Land geliebt. Ahornsirup, Butter Tarts und Nanaimo-Riegel sind weitere Leckereien zum Probieren."
+   }
+  },
+  {
+   "id": "ct-CA-08",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping is expected in restaurants: 15 to 20 percent of the pre-tax bill is typical. Servers rely on tips, so it is not seen as optional for table service.",
+    "it": "La mancia è attesa nei ristoranti: il 15-20 per cento del conto prima delle tasse è la norma. Il personale conta sulle mance, quindi per il servizio al tavolo non è vista come facoltativa.",
+    "es": "Se espera propina en los restaurantes: lo habitual es entre el 15 y el 20 por ciento de la cuenta antes de impuestos. El personal depende de las propinas, así que en el servicio de mesa no se considera opcional.",
+    "pt": "Espera-se gorjeta nos restaurantes: o habitual é entre 15 e 20 por cento da conta antes de impostos. Os empregados dependem das gorjetas, por isso no serviço de mesa não é vista como opcional.",
+    "pt_BR": "Espera-se gorjeta nos restaurantes: o habitual é de 15 a 20 por cento da conta antes dos impostos. Os garçons dependem das gorjetas, então no serviço de mesa ela não é vista como opcional.",
+    "fr": "Le pourboire est attendu au restaurant : 15 à 20 pour cent de l'addition avant taxes est la norme. Le personnel compte sur les pourboires, ce n'est donc pas considéré comme facultatif au service à table.",
+    "de": "In Restaurants wird Trinkgeld erwartet: 15 bis 20 Prozent der Rechnung vor Steuern sind üblich. Das Personal ist auf Trinkgeld angewiesen, bei Bedienung am Tisch gilt es daher nicht als freiwillig."
+   }
+  },
+  {
+   "id": "ct-CA-09",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to someone's home, bring a small gift such as flowers, dessert or a local treat. Ask in advance about any food allergies or diets your host follows.",
+    "it": "Quando sei invitato a casa di qualcuno, porta un piccolo dono come fiori, un dolce o una specialità locale. Chiedi prima se l'ospite ha allergie o regimi alimentari particolari.",
+    "es": "Cuando te invitan a una casa, lleva un detalle como flores, un postre o una especialidad local. Pregunta antes si tu anfitrión tiene alergias o sigue alguna dieta.",
+    "pt": "Quando fores convidado para casa de alguém, leva uma lembrança, como flores, uma sobremesa ou uma especialidade local. Pergunta antes se o anfitrião tem alergias ou segue alguma dieta.",
+    "pt_BR": "Quando for convidado para a casa de alguém, leve uma lembrança, como flores, uma sobremesa ou uma especialidade local. Pergunte antes se o anfitrião tem alergias ou segue alguma dieta.",
+    "fr": "Quand on vous invite chez quelqu'un, apportez un petit présent comme des fleurs, un dessert ou une spécialité locale. Demandez à l'avance si votre hôte a des allergies ou suit un régime.",
+    "de": "Wenn du nach Hause eingeladen wirst, bring eine Kleinigkeit mit, etwa Blumen, ein Dessert oder eine regionale Spezialität. Frag vorher nach Allergien oder Ernährungsweisen deiner Gastgeber."
+   }
+  },
+  {
+   "id": "ct-CA-10",
+   "category": "gifts",
+   "text": {
+    "en": "Maple syrup, smoked salmon, Indigenous-made crafts and local chocolate are popular souvenirs to bring home. Buy Indigenous art from Indigenous-owned shops to support the artists.",
+    "it": "Sciroppo d'acero, salmone affumicato, artigianato indigeno e cioccolato locale sono souvenir molto apprezzati. Compra arte indigena in negozi gestiti da indigeni per sostenere gli artisti.",
+    "es": "El sirope de arce, el salmón ahumado, la artesanía indígena y el chocolate local son recuerdos muy populares. Compra arte indígena en tiendas de propiedad indígena para apoyar a los artistas.",
+    "pt": "O xarope de ácer, o salmão fumado, o artesanato indígena e o chocolate local são lembranças populares. Compra arte indígena em lojas de propriedade indígena para apoiar os artistas.",
+    "pt_BR": "O xarope de bordo, o salmão defumado, o artesanato indígena e o chocolate local são lembranças populares. Compre arte indígena em lojas de propriedade indígena para apoiar os artistas.",
+    "fr": "Le sirop d'érable, le saumon fumé, l'artisanat autochtone et le chocolat local sont des souvenirs populaires. Achetez l'art autochtone dans des boutiques autochtones pour soutenir les artistes.",
+    "de": "Ahornsirup, geräucherter Lachs, indigenes Kunsthandwerk und lokale Schokolade sind beliebte Mitbringsel. Kauf indigene Kunst in indigenen Läden, um die Kunstschaffenden zu unterstützen."
+   }
+  },
+  {
+   "id": "ct-CA-11",
+   "category": "dress",
+   "text": {
+    "en": "Dress is casual in most settings, and jeans are fine almost everywhere. Neat, smart casual clothes suit nicer restaurants, theatres and business meetings.",
+    "it": "L'abbigliamento è informale nella maggior parte dei contesti e i jeans vanno bene quasi ovunque. Abiti smart casual ordinati vanno bene per ristoranti più eleganti, teatri e riunioni di lavoro.",
+    "es": "La ropa es informal en la mayoría de los contextos y los vaqueros sirven casi en cualquier sitio. Una ropa informal elegante y cuidada va bien para restaurantes más finos, teatros y reuniones de trabajo.",
+    "pt": "A roupa é informal na maioria dos contextos e as calças de ganga servem quase em todo o lado. Roupa casual elegante e cuidada serve para restaurantes mais finos, teatros e reuniões de trabalho.",
+    "pt_BR": "A roupa é informal na maioria dos contextos e jeans servem quase em qualquer lugar. Roupa casual elegante e cuidada serve para restaurantes mais finos, teatros e reuniões de trabalho.",
+    "fr": "La tenue est décontractée dans la plupart des situations et le jean convient presque partout. Une tenue chic décontractée et soignée convient aux restaurants plus élégants, aux théâtres et aux réunions professionnelles.",
+    "de": "Die Kleidung ist meist leger, und Jeans gehen fast überall. Gepflegte Smart-Casual-Kleidung passt zu gehobeneren Restaurants, Theatern und Geschäftsterminen."
+   }
+  },
+  {
+   "id": "ct-CA-12",
+   "category": "dress",
+   "text": {
+    "en": "Weather changes quickly, and winters can be very cold in much of the country. Dress in layers, with a warm coat, hat, gloves and waterproof boots from late autumn to early spring.",
+    "it": "Il tempo cambia in fretta e gli inverni possono essere molto freddi in gran parte del paese. Vestiti a strati, con cappotto caldo, cappello, guanti e stivali impermeabili da fine autunno a inizio primavera.",
+    "es": "El tiempo cambia rápido y los inviernos pueden ser muy fríos en gran parte del país. Vístete por capas, con abrigo, gorro, guantes y botas impermeables desde finales de otoño hasta principios de primavera.",
+    "pt": "O tempo muda depressa e os invernos podem ser muito frios em grande parte do país. Veste-te por camadas, com casaco quente, gorro, luvas e botas impermeáveis do fim do outono ao início da primavera.",
+    "pt_BR": "O tempo muda rápido e os invernos podem ser muito frios em grande parte do país. Vista-se em camadas, com casaco quente, gorro, luvas e botas impermeáveis do fim do outono ao início da primavera.",
+    "fr": "Le temps change vite et les hivers peuvent être très froids dans une grande partie du pays. Habillez-vous en couches, avec manteau chaud, bonnet, gants et bottes imperméables de la fin de l'automne au début du printemps.",
+    "de": "Das Wetter wechselt schnell, und die Winter sind in weiten Teilen des Landes sehr kalt. Zieh dich in Schichten an, mit warmem Mantel, Mütze, Handschuhen und wasserdichten Stiefeln von Spätherbst bis Frühfrühling."
+   }
+  },
+  {
+   "id": "ct-CA-13",
+   "category": "religion_sites",
+   "text": {
+    "en": "Canada is religiously diverse, with churches, mosques, temples, synagogues and gurdwaras in many cities. Dress modestly, follow the rules on shoes and head coverings, and ask before taking photos.",
+    "it": "Il Canada è religiosamente diverso, con chiese, moschee, templi, sinagoghe e gurdwara in molte città. Vestiti con sobrietà, rispetta le regole su scarpe e copricapo e chiedi prima di fotografare.",
+    "es": "Canadá es religiosamente diverso, con iglesias, mezquitas, templos, sinagogas y gurdwaras en muchas ciudades. Viste con modestia, respeta las normas sobre calzado y cubrirse la cabeza, y pide permiso para fotografiar.",
+    "pt": "O Canadá é religiosamente diverso, com igrejas, mesquitas, templos, sinagogas e gurdwaras em muitas cidades. Veste-te com modéstia, segue as regras sobre calçado e cobertura da cabeça e pede licença antes de fotografar.",
+    "pt_BR": "O Canadá é religiosamente diverso, com igrejas, mesquitas, templos, sinagogas e gurdwaras em muitas cidades. Vista-se com modéstia, siga as regras sobre calçados e cobertura da cabeça e peça licença antes de fotografar.",
+    "fr": "Le Canada est très diversifié sur le plan religieux, avec des églises, mosquées, temples, synagogues et gurdwaras dans de nombreuses villes. Habillez-vous modestement, suivez les règles sur les chaussures et la tête couverte, et demandez avant de photographier.",
+    "de": "Kanada ist religiös vielfältig, mit Kirchen, Moscheen, Tempeln, Synagogen und Gurdwaras in vielen Städten. Kleide dich dezent, beachte die Regeln zu Schuhen und Kopfbedeckung und frag vor dem Fotografieren."
+   }
+  },
+  {
+   "id": "ct-CA-14",
+   "category": "religion_sites",
+   "text": {
+    "en": "Many Indigenous communities share their culture through ceremonies, powwows and cultural centres. Attend with respect, follow the guidance of hosts and do not photograph sacred moments without permission.",
+    "it": "Molte comunità indigene condividono la loro cultura con cerimonie, powwow e centri culturali. Partecipa con rispetto, segui le indicazioni di chi ospita e non fotografare momenti sacri senza permesso.",
+    "es": "Muchas comunidades indígenas comparten su cultura mediante ceremonias, powwows y centros culturales. Asiste con respeto, sigue las indicaciones de los anfitriones y no fotografíes momentos sagrados sin permiso.",
+    "pt": "Muitas comunidades indígenas partilham a sua cultura através de cerimónias, powwows e centros culturais. Assiste com respeito, segue as indicações dos anfitriões e não fotografes momentos sagrados sem autorização.",
+    "pt_BR": "Muitas comunidades indígenas compartilham sua cultura por meio de cerimônias, powwows e centros culturais. Participe com respeito, siga as orientações dos anfitriões e não fotografe momentos sagrados sem permissão.",
+    "fr": "De nombreuses communautés autochtones partagent leur culture par des cérémonies, des pow-wow et des centres culturels. Participez avec respect, suivez les consignes des hôtes et ne photographiez pas les moments sacrés sans permission.",
+    "de": "Viele indigene Gemeinschaften teilen ihre Kultur in Zeremonien, Powwows und Kulturzentren. Nimm respektvoll teil, folge den Anweisungen der Gastgeber und fotografiere heilige Momente nicht ohne Erlaubnis."
+   }
+  },
+  {
+   "id": "ct-CA-15",
+   "category": "gestures",
+   "text": {
+    "en": "Personal space matters: people usually stand about an arm's length apart when talking. Standing too close to someone you have just met can feel uncomfortable.",
+    "it": "Lo spazio personale è importante: di solito si sta a circa un braccio di distanza quando si parla. Stare troppo vicini a qualcuno appena conosciuto può risultare scomodo.",
+    "es": "El espacio personal importa: la gente suele hablar a una distancia de un brazo. Ponerse demasiado cerca de alguien que acabas de conocer puede resultar incómodo.",
+    "pt": "O espaço pessoal importa: as pessoas costumam conversar a cerca de um braço de distância. Ficar demasiado perto de alguém que acabaste de conhecer pode ser desconfortável.",
+    "pt_BR": "O espaço pessoal importa: as pessoas costumam conversar a cerca de um braço de distância. Ficar perto demais de alguém que você acabou de conhecer pode ser desconfortável.",
+    "fr": "L'espace personnel compte : on se tient généralement à environ un bras de distance pour parler. Se placer trop près de quelqu'un qu'on vient de rencontrer peut mettre mal à l'aise.",
+    "de": "Persönlicher Freiraum ist wichtig: Beim Sprechen steht man meist etwa eine Armlänge auseinander. Zu nah bei jemandem zu stehen, den man gerade erst kennengelernt hat, kann unangenehm wirken."
+   }
+  },
+  {
+   "id": "ct-CA-16",
+   "category": "gestures",
+   "text": {
+    "en": "Many people take off their shoes when entering a home, especially in winter. Check at the door whether the host does, and wear clean socks just in case.",
+    "it": "Molte persone si tolgono le scarpe entrando in casa, soprattutto in inverno. Controlla all'ingresso se lo fa anche chi ospita e porta calzini puliti per sicurezza.",
+    "es": "Mucha gente se quita los zapatos al entrar en casa, sobre todo en invierno. Fíjate en la puerta si lo hace el anfitrión y lleva calcetines limpios por si acaso.",
+    "pt": "Muita gente tira os sapatos ao entrar em casa, sobretudo no inverno. Repara à porta se o anfitrião o faz e leva meias limpas por precaução.",
+    "pt_BR": "Muita gente tira os sapatos ao entrar em casa, principalmente no inverno. Veja na porta se o anfitrião faz isso e leve meias limpas por precaução.",
+    "fr": "Beaucoup de gens retirent leurs chaussures en entrant chez eux, surtout l'hiver. Regardez à la porte si l'hôte le fait et portez des chaussettes propres, au cas où.",
+    "de": "Viele ziehen beim Betreten einer Wohnung die Schuhe aus, besonders im Winter. Schau an der Tür, ob die Gastgeber es tun, und trag sicherheitshalber saubere Socken."
+   }
+  },
+  {
+   "id": "ct-CA-17",
+   "category": "punctuality",
+   "text": {
+    "en": "Being on time is valued for meetings, appointments and public transport. For a casual get-together at home, arriving 10 to 15 minutes late is usually fine, but message if you are delayed.",
+    "it": "Essere puntuali è importante per riunioni, appuntamenti e trasporti pubblici. Per un incontro informale a casa, arrivare con 10-15 minuti di ritardo di solito va bene, ma avvisa se tardi.",
+    "es": "La puntualidad se valora en reuniones, citas y transporte público. En una reunión informal en casa, llegar 10 o 15 minutos tarde suele estar bien, pero avisa si te retrasas.",
+    "pt": "A pontualidade é valorizada em reuniões, marcações e transportes públicos. Num encontro informal em casa, chegar 10 a 15 minutos depois costuma ser aceitável, mas avisa se te atrasares.",
+    "pt_BR": "A pontualidade é valorizada em reuniões, compromissos e transporte público. Em um encontro informal em casa, chegar 10 a 15 minutos depois costuma ser aceitável, mas avise se atrasar.",
+    "fr": "La ponctualité est valorisée pour les réunions, les rendez-vous et les transports en commun. Pour une réunion informelle à la maison, arriver 10 à 15 minutes en retard est généralement acceptable, mais prévenez si vous êtes retardé.",
+    "de": "Pünktlichkeit zählt bei Terminen, Meetings und im öffentlichen Verkehr. Bei einem lockeren Treffen zu Hause sind 10 bis 15 Minuten Verspätung meist in Ordnung, melde dich aber, wenn du dich verspätest."
+   }
+  },
+  {
+   "id": "ct-CA-18",
+   "category": "public_behavior",
+   "text": {
+    "en": "People line up in an orderly way for buses, shops and attractions. Cutting the queue is considered rude, so find the end of the line and wait your turn.",
+    "it": "Si fa la fila in modo ordinato per autobus, negozi e attrazioni. Saltare la coda è considerato maleducato, quindi cerca la fine della fila e aspetta il tuo turno.",
+    "es": "La gente hace cola de forma ordenada para autobuses, tiendas y atracciones. Colarse se considera de mala educación, así que busca el final de la cola y espera tu turno.",
+    "pt": "As pessoas fazem fila de forma ordeira para autocarros, lojas e atrações. Furar a fila é considerado má educação, por isso procura o fim da fila e espera pela tua vez.",
+    "pt_BR": "As pessoas fazem fila de forma ordenada para ônibus, lojas e atrações. Furar fila é considerado falta de educação, então procure o fim da fila e espere sua vez.",
+    "fr": "Les gens font la queue de façon ordonnée pour les bus, les magasins et les attractions. Couper la file est considéré comme impoli : cherchez la fin de la file et attendez votre tour.",
+    "de": "Man stellt sich geordnet an, für Busse, Geschäfte und Sehenswürdigkeiten. Drängeln gilt als unhöflich, such also das Ende der Schlange und warte, bis du dran bist."
+   }
+  },
+  {
+   "id": "ct-CA-19",
+   "category": "transport",
+   "text": {
+    "en": "Canada is huge, so people fly or drive between distant cities. In cities, buses, subways and light rail are common, and many systems let you tap a bank card or use an app.",
+    "it": "Il Canada è enorme, quindi tra città lontane si vola o si guida. In città sono comuni autobus, metropolitane e metropolitane leggere, e molti sistemi permettono di pagare con carta o app.",
+    "es": "Canadá es enorme, así que entre ciudades lejanas se vuela o se conduce. En las ciudades son habituales los autobuses, el metro y el tren ligero, y muchos sistemas permiten pagar con tarjeta o con una app.",
+    "pt": "O Canadá é enorme, por isso entre cidades distantes voa-se ou conduz-se. Nas cidades são comuns os autocarros, o metro e o metro ligeiro, e muitos sistemas permitem pagar com cartão ou aplicação.",
+    "pt_BR": "O Canadá é enorme, então entre cidades distantes se voa ou se dirige. Nas cidades são comuns ônibus, metrô e VLT, e muitos sistemas permitem pagar com cartão ou aplicativo.",
+    "fr": "Le Canada est immense : entre villes éloignées, on prend l'avion ou la voiture. En ville, bus, métros et trains légers sont courants, et beaucoup de réseaux permettent de payer avec une carte bancaire ou une appli.",
+    "de": "Kanada ist riesig, daher fliegt oder fährt man zwischen weit entfernten Städten. In Städten sind Busse, U-Bahnen und Stadtbahnen verbreitet, und viele Systeme erlauben das Bezahlen per Karte oder App."
+   }
+  },
+  {
+   "id": "ct-CA-20",
+   "category": "festivals",
+   "text": {
+    "en": "Canada Day on 1 July is celebrated with parades, concerts and fireworks, and many people wear red and white. Quebec's Fête nationale on 24 June is its own big celebration.",
+    "it": "Il Canada Day, il 1 luglio, si celebra con parate, concerti e fuochi d'artificio, e molti vestono di rosso e bianco. La Fête nationale del Québec, il 24 giugno, è una grande festa a sé.",
+    "es": "El Día de Canadá, el 1 de julio, se celebra con desfiles, conciertos y fuegos artificiales, y mucha gente viste de rojo y blanco. La Fête nationale de Quebec, el 24 de junio, es una gran celebración propia.",
+    "pt": "O Dia do Canadá, a 1 de julho, celebra-se com desfiles, concertos e fogo de artifício, e muita gente veste vermelho e branco. A Fête nationale do Quebeque, a 24 de junho, é uma grande celebração própria.",
+    "pt_BR": "O Dia do Canadá, em 1º de julho, é celebrado com desfiles, shows e fogos de artifício, e muita gente se veste de vermelho e branco. A Fête nationale de Quebec, em 24 de junho, é uma grande celebração própria.",
+    "fr": "La fête du Canada, le 1er juillet, se célèbre avec des défilés, des concerts et des feux d'artifice, et beaucoup portent du rouge et du blanc. La Fête nationale du Québec, le 24 juin, est une grande célébration à part.",
+    "de": "Der Canada Day am 1. Juli wird mit Paraden, Konzerten und Feuerwerk gefeiert, viele tragen Rot und Weiß. Québecs Fête nationale am 24. Juni ist ein eigenes großes Fest."
+   }
+  },
+  {
+   "id": "ct-CA-21",
+   "category": "festivals",
+   "text": {
+    "en": "Canadian Thanksgiving falls on the second Monday of October, earlier than in the United States. Families gather for a big meal, often with turkey, and the long weekend is popular for autumn trips.",
+    "it": "Il Ringraziamento canadese cade il secondo lunedì di ottobre, prima di quello degli Stati Uniti. Le famiglie si riuniscono per un grande pasto, spesso con il tacchino, e il lungo fine settimana è ideale per gite autunnali.",
+    "es": "El Día de Acción de Gracias canadiense cae el segundo lunes de octubre, antes que el de Estados Unidos. Las familias se reúnen para una gran comida, a menudo con pavo, y el puente es popular para escapadas otoñales.",
+    "pt": "O Dia de Ação de Graças canadiano calha na segunda segunda-feira de outubro, antes do dos Estados Unidos. As famílias reúnem-se para uma grande refeição, muitas vezes com peru, e o fim de semana prolongado é popular para escapadas outonais.",
+    "pt_BR": "O Dia de Ação de Graças canadense cai na segunda segunda-feira de outubro, antes do dos Estados Unidos. As famílias se reúnem para uma grande refeição, muitas vezes com peru, e o feriadão é popular para viagens de outono.",
+    "fr": "L'Action de grâce canadienne tombe le deuxième lundi d'octobre, avant celle des États-Unis. Les familles se réunissent pour un grand repas, souvent avec de la dinde, et le long week-end est prisé pour les escapades d'automne.",
+    "de": "Das kanadische Erntedankfest fällt auf den zweiten Montag im Oktober, früher als in den USA. Familien kommen zu einem großen Essen zusammen, oft mit Truthahn, und das lange Wochenende eignet sich für Herbstausflüge."
+   }
+  },
+  {
+   "id": "ct-CA-22",
+   "category": "festivals",
+   "text": {
+    "en": "On Remembrance Day, 11 November, many people wear a red poppy and observe two minutes of silence at 11 a.m. to honour those who served. Be respectful during ceremonies.",
+    "it": "Il Remembrance Day, l'11 novembre, molti portano un papavero rosso e osservano due minuti di silenzio alle 11 per onorare chi ha prestato servizio. Sii rispettoso durante le cerimonie.",
+    "es": "El Día del Recuerdo, el 11 de noviembre, mucha gente lleva una amapola roja y guarda dos minutos de silencio a las 11 para honrar a quienes sirvieron. Sé respetuoso durante las ceremonias.",
+    "pt": "No Dia da Memória, a 11 de novembro, muita gente usa uma papoila vermelha e guarda dois minutos de silêncio às 11 horas para honrar quem serviu. Sê respeitoso durante as cerimónias.",
+    "pt_BR": "No Dia da Lembrança, em 11 de novembro, muita gente usa uma papoula vermelha e faz dois minutos de silêncio às 11 horas para honrar quem serviu. Seja respeitoso durante as cerimônias.",
+    "fr": "Le jour du Souvenir, le 11 novembre, beaucoup portent un coquelicot rouge et observent deux minutes de silence à 11 h pour honorer ceux qui ont servi. Soyez respectueux pendant les cérémonies.",
+    "de": "Am Remembrance Day, dem 11. November, tragen viele eine rote Mohnblume und halten um 11 Uhr zwei Schweigeminuten ein, um an die Dienenden zu erinnern. Verhalte dich bei Zeremonien respektvoll."
+   }
+  },
+  {
+   "id": "ct-CA-23",
+   "category": "family",
+   "text": {
+    "en": "Family is central, and holidays like Thanksgiving, Christmas and Diwali bring relatives together. Because Canada is multicultural, you will meet families with many different traditions.",
+    "it": "La famiglia è centrale e feste come il Ringraziamento, il Natale e il Diwali riuniscono i parenti. Poiché il Canada è multiculturale, incontrerai famiglie con tradizioni molto diverse.",
+    "es": "La familia es central y fiestas como Acción de Gracias, Navidad y Diwali reúnen a los parientes. Como Canadá es multicultural, conocerás familias con tradiciones muy distintas.",
+    "pt": "A família é central e festas como o Dia de Ação de Graças, o Natal e o Diwali reúnem os familiares. Como o Canadá é multicultural, vais conhecer famílias com tradições muito diferentes.",
+    "pt_BR": "A família é central e festas como o Dia de Ação de Graças, o Natal e o Diwali reúnem os parentes. Como o Canadá é multicultural, você vai conhecer famílias com tradições bem diferentes.",
+    "fr": "La famille est centrale et des fêtes comme l'Action de grâce, Noël et Diwali rassemblent les proches. Le Canada étant multiculturel, vous rencontrerez des familles aux traditions très variées.",
+    "de": "Die Familie steht im Mittelpunkt, und Feste wie Thanksgiving, Weihnachten und Diwali bringen Verwandte zusammen. Da Kanada multikulturell ist, begegnest du Familien mit sehr unterschiedlichen Traditionen."
+   }
+  },
+  {
+   "id": "ct-CA-24",
+   "category": "money",
+   "text": {
+    "en": "The currency is the Canadian dollar. The one-dollar coin is called the loonie and the two-dollar coin the toonie. Contactless card and phone payments are accepted almost everywhere.",
+    "it": "La valuta è il dollaro canadese. La moneta da un dollaro si chiama loonie e quella da due dollari toonie. I pagamenti contactless con carta o telefono sono accettati quasi ovunque.",
+    "es": "La moneda es el dólar canadiense. La moneda de un dólar se llama loonie y la de dos dólares, toonie. Los pagos sin contacto con tarjeta o móvil se aceptan casi en todas partes.",
+    "pt": "A moeda é o dólar canadiano. A moeda de um dólar chama-se loonie e a de dois dólares toonie. Os pagamentos sem contacto com cartão ou telemóvel são aceites quase em todo o lado.",
+    "pt_BR": "A moeda é o dólar canadense. A moeda de um dólar se chama loonie e a de dois dólares, toonie. Pagamentos por aproximação com cartão ou celular são aceitos quase em todo lugar.",
+    "fr": "La monnaie est le dollar canadien. La pièce d'un dollar s'appelle le huard (loonie) et celle de deux dollars le toonie. Les paiements sans contact par carte ou téléphone sont acceptés presque partout.",
+    "de": "Die Währung ist der Kanadische Dollar. Die Ein-Dollar-Münze heißt Loonie, die Zwei-Dollar-Münze Toonie. Kontaktloses Bezahlen mit Karte oder Handy wird fast überall akzeptiert."
+   }
+  },
+  {
+   "id": "ct-CA-25",
+   "category": "photography",
+   "text": {
+    "en": "Ask before photographing people, and especially before photographing Indigenous ceremonies or children. Some museums and galleries restrict flash or photography in certain rooms.",
+    "it": "Chiedi prima di fotografare le persone, soprattutto prima di fotografare cerimonie indigene o bambini. Alcuni musei e gallerie limitano il flash o le foto in certe sale.",
+    "es": "Pregunta antes de fotografiar a la gente y, sobre todo, antes de fotografiar ceremonias indígenas o a niños. Algunos museos y galerías restringen el flash o las fotos en ciertas salas.",
+    "pt": "Pergunta antes de fotografar pessoas, sobretudo antes de fotografar cerimónias indígenas ou crianças. Alguns museus e galerias restringem o flash ou as fotografias em certas salas.",
+    "pt_BR": "Pergunte antes de fotografar pessoas, principalmente antes de fotografar cerimônias indígenas ou crianças. Alguns museus e galerias restringem o flash ou as fotos em certas salas.",
+    "fr": "Demandez avant de photographier des personnes, surtout avant de photographier des cérémonies autochtones ou des enfants. Certains musées et galeries limitent le flash ou les photos dans certaines salles.",
+    "de": "Frag, bevor du Menschen fotografierst, besonders bei indigenen Zeremonien oder Kindern. Manche Museen und Galerien schränken Blitz oder Fotos in einzelnen Räumen ein."
+   }
+  },
+  {
+   "id": "ct-CA-26",
+   "category": "nightlife",
+   "text": {
+    "en": "Bars and clubs check ID, and the legal drinking age is 18 or 19 depending on the province. Carry a government-issued photo ID, since a foreign passport or licence is usually accepted.",
+    "it": "Bar e locali controllano i documenti e l'età legale per bere è 18 o 19 anni a seconda della provincia. Porta un documento con foto, perché di solito si accetta un passaporto o una patente straniera.",
+    "es": "Los bares y discotecas piden identificación y la edad legal para beber es de 18 o 19 años según la provincia. Lleva un documento con foto, ya que normalmente se acepta un pasaporte o carné extranjero.",
+    "pt": "Os bares e discotecas pedem identificação e a idade legal para beber é 18 ou 19 anos, consoante a província. Leva um documento com fotografia, pois costuma aceitar-se um passaporte ou carta de condução estrangeira.",
+    "pt_BR": "Bares e baladas pedem identificação e a idade legal para beber é 18 ou 19 anos, dependendo da província. Leve um documento com foto, já que normalmente se aceita passaporte ou carteira de motorista estrangeira.",
+    "fr": "Les bars et boîtes de nuit vérifient les pièces d'identité, et l'âge légal pour boire est de 18 ou 19 ans selon la province. Ayez une pièce d'identité avec photo, car un passeport ou un permis étranger est généralement accepté.",
+    "de": "Bars und Clubs kontrollieren den Ausweis, und das gesetzliche Mindestalter zum Alkoholkonsum liegt je nach Provinz bei 18 oder 19 Jahren. Trag einen Lichtbildausweis bei dir, ein ausländischer Pass oder Führerschein wird meist akzeptiert."
+   }
+  },
+  {
+   "id": "ct-CA-27",
+   "category": "nature",
+   "text": {
+    "en": "Canada's national parks, such as Banff and Jasper, are spectacular. Keep a safe distance from wildlife like bears, elk and moose, never feed animals, and store food as park rules require.",
+    "it": "I parchi nazionali canadesi, come Banff e Jasper, sono spettacolari. Mantieni una distanza di sicurezza da animali come orsi, alci e wapiti, non dare mai cibo agli animali e conserva il cibo come richiedono le regole del parco.",
+    "es": "Los parques nacionales de Canadá, como Banff y Jasper, son espectaculares. Mantén una distancia segura de animales como osos, wapitíes y alces, nunca des de comer a los animales y guarda la comida según exigen las normas del parque.",
+    "pt": "Os parques nacionais do Canadá, como Banff e Jasper, são espetaculares. Mantém uma distância segura de animais como ursos, wapitis e alces, nunca dês comida aos animais e guarda os alimentos como exigem as regras do parque.",
+    "pt_BR": "Os parques nacionais do Canadá, como Banff e Jasper, são espetaculares. Mantenha uma distância segura de animais como ursos, wapitis e alces, nunca dê comida aos animais e guarde os alimentos como as regras do parque exigem.",
+    "fr": "Les parcs nationaux du Canada, comme Banff et Jasper, sont spectaculaires. Gardez une distance de sécurité avec les animaux comme les ours, les wapitis et les orignaux, ne nourrissez jamais les animaux et rangez la nourriture selon les règles du parc.",
+    "de": "Kanadas Nationalparks wie Banff und Jasper sind spektakulär. Halte Abstand zu Wildtieren wie Bären, Wapitis und Elchen, füttere nie Tiere und lagere Lebensmittel so, wie es die Parkregeln verlangen."
+   }
+  },
+  {
+   "id": "ct-CA-28",
+   "category": "safety",
+   "text": {
+    "en": "Canada is generally safe, and the emergency number is 911. In winter, check road and weather conditions before long drives, and carry warm clothing and water in the car.",
+    "it": "Il Canada è in generale sicuro e il numero di emergenza è il 911. In inverno controlla le condizioni di strade e meteo prima di lunghi viaggi in auto e tieni in macchina vestiti caldi e acqua.",
+    "es": "Canadá es en general seguro y el número de emergencias es el 911. En invierno, consulta el estado de las carreteras y el tiempo antes de trayectos largos y lleva ropa de abrigo y agua en el coche.",
+    "pt": "O Canadá é em geral seguro e o número de emergência é o 911. No inverno, consulta o estado das estradas e a meteorologia antes de viagens longas e leva roupa quente e água no carro.",
+    "pt_BR": "O Canadá é em geral seguro e o número de emergência é o 911. No inverno, verifique as condições das estradas e do tempo antes de viagens longas e leve roupa quente e água no carro.",
+    "fr": "Le Canada est généralement sûr et le numéro d'urgence est le 911. L'hiver, vérifiez l'état des routes et la météo avant un long trajet, et gardez des vêtements chauds et de l'eau dans la voiture.",
+    "de": "Kanada ist im Allgemeinen sicher, und die Notrufnummer lautet 911. Prüfe im Winter vor langen Fahrten Straßen- und Wetterlage und führe warme Kleidung und Wasser im Auto mit."
+   }
+  },
+  {
+   "id": "ct-CA-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Hockey is a national passion, and the Canadian flag with its maple leaf is a beloved symbol. Asking someone about their favourite team or a local rink is a friendly conversation opener.",
+    "it": "L'hockey è una passione nazionale e la bandiera canadese con la foglia d'acero è un simbolo amatissimo. Chiedere a qualcuno della sua squadra preferita o della pista locale è una bella apertura di conversazione.",
+    "es": "El hockey es una pasión nacional y la bandera canadiense con su hoja de arce es un símbolo muy querido. Preguntar a alguien por su equipo favorito o por la pista local es una buena forma de abrir la conversación.",
+    "pt": "O hóquei é uma paixão nacional e a bandeira canadiana com a sua folha de ácer é um símbolo muito querido. Perguntar a alguém pela sua equipa favorita ou pelo rinque local é uma boa forma de abrir a conversa.",
+    "pt_BR": "O hóquei é uma paixão nacional e a bandeira canadense com sua folha de bordo é um símbolo muito querido. Perguntar a alguém sobre seu time favorito ou a pista de gelo local é um bom jeito de abrir a conversa.",
+    "fr": "Le hockey est une passion nationale et le drapeau canadien avec sa feuille d'érable est un symbole très cher. Demander à quelqu'un son équipe préférée ou sa patinoire locale est une bonne façon d'entamer la conversation.",
+    "de": "Eishockey ist eine Nationalleidenschaft, und die kanadische Flagge mit dem Ahornblatt ist ein geliebtes Symbol. Nach dem Lieblingsteam oder der örtlichen Eishalle zu fragen, ist ein freundlicher Gesprächseinstieg."
+   }
+  },
+  {
+   "id": "ct-CA-30",
+   "category": "local_pride",
+   "text": {
+    "en": "National Indigenous Peoples Day on 21 June celebrates the cultures of First Nations, Inuit and Métis peoples. Learning whose traditional territory you are on is a respected habit.",
+    "it": "La Giornata nazionale dei popoli indigeni, il 21 giugno, celebra le culture di Prime Nazioni, Inuit e Métis. Informarsi su quale territorio tradizionale ci si trova è un'abitudine rispettata.",
+    "es": "El Día Nacional de los Pueblos Indígenas, el 21 de junio, celebra las culturas de las Primeras Naciones, los inuit y los métis. Informarse de en qué territorio tradicional estás es un hábito respetado.",
+    "pt": "O Dia Nacional dos Povos Indígenas, a 21 de junho, celebra as culturas das Primeiras Nações, dos Inuítes e dos Métis. Informar-se sobre o território tradicional em que se está é um hábito respeitado.",
+    "pt_BR": "O Dia Nacional dos Povos Indígenas, em 21 de junho, celebra as culturas das Primeiras Nações, dos Inuítes e dos Métis. Descobrir em qual território tradicional você está é um hábito respeitado.",
+    "fr": "La Journée nationale des peuples autochtones, le 21 juin, célèbre les cultures des Premières Nations, des Inuits et des Métis. Se renseigner sur le territoire traditionnel où l'on se trouve est une habitude respectée.",
+    "de": "Der Nationale Tag der indigenen Völker am 21. Juni feiert die Kulturen der First Nations, Inuit und Métis. Zu erfahren, auf wessen traditionellem Gebiet man sich befindet, ist eine respektierte Gewohnheit."
+   }
+  }
+ ],
+ "CH": [
+  {
+   "id": "ct-CH-01",
+   "category": "greetings",
+   "text": {
+    "en": "A firm handshake with direct eye contact is the standard greeting, and it is polite to greet each person individually, including when joining a group.",
+    "it": "Una stretta di mano decisa con contatto visivo diretto è il saluto standard ed è educato salutare ogni persona singolarmente, anche quando ci si unisce a un gruppo.",
+    "es": "Un apretón de manos firme con contacto visual directo es el saludo estándar, y es de buena educación saludar a cada persona por separado, también al unirse a un grupo.",
+    "pt": "Um aperto de mão firme com contacto visual direto é o cumprimento habitual, e é educado cumprimentar cada pessoa individualmente, mesmo ao juntar-se a um grupo.",
+    "pt_BR": "Um aperto de mão firme com contato visual direto é o cumprimento padrão, e é educado cumprimentar cada pessoa individualmente, inclusive ao se juntar a um grupo.",
+    "fr": "Une poignée de main ferme avec un regard direct est la salutation standard, et il est poli de saluer chaque personne individuellement, y compris en rejoignant un groupe.",
+    "de": "Ein fester Händedruck mit direktem Blickkontakt ist die übliche Begrüßung, und es ist höflich, jede Person einzeln zu begrüßen, auch wenn man sich einer Gruppe anschließt."
+   }
+  },
+  {
+   "id": "ct-CH-02",
+   "category": "greetings",
+   "text": {
+    "en": "Friends often greet each other with three cheek kisses, especially in the French-speaking part. Follow the other person's lead and do not worry if you only manage one or two.",
+    "it": "Gli amici spesso si salutano con tre baci sulla guancia, soprattutto nella parte francofona. Segui l'esempio dell'altra persona e non preoccuparti se ne fai solo uno o due.",
+    "es": "Los amigos suelen saludarse con tres besos en la mejilla, sobre todo en la parte francófona. Sigue el ejemplo de la otra persona y no te preocupes si solo das uno o dos.",
+    "pt": "Os amigos cumprimentam-se muitas vezes com três beijos na face, sobretudo na parte francófona. Segue o exemplo da outra pessoa e não te preocupes se só deres um ou dois.",
+    "pt_BR": "Os amigos costumam se cumprimentar com três beijos no rosto, principalmente na parte francófona. Siga o exemplo da outra pessoa e não se preocupe se der só um ou dois.",
+    "fr": "Les amis se saluent souvent avec trois bises, surtout en Suisse romande. Suivez l'exemple de l'autre personne et ne vous inquiétez pas si vous n'en faites qu'une ou deux.",
+    "de": "Freunde begrüßen sich oft mit drei Wangenküssen, vor allem in der Westschweiz. Richte dich nach dem Gegenüber und mach dir keine Sorgen, wenn es nur einer oder zwei werden."
+   }
+  },
+  {
+   "id": "ct-CH-03",
+   "category": "greetings",
+   "text": {
+    "en": "Say \"Grüezi\" in Swiss German areas, \"Bonjour\" in the French-speaking region and \"Buongiorno\" in Ticino when entering a shop, lift or waiting room. Silence can seem cold.",
+    "it": "Di' \"Grüezi\" nelle zone di lingua tedesca, \"Bonjour\" nella regione francofona e \"Buongiorno\" in Ticino entrando in un negozio, in ascensore o in una sala d'attesa. Il silenzio può sembrare freddo.",
+    "es": "Di \"Grüezi\" en las zonas de habla alemana, \"Bonjour\" en la región francófona y \"Buongiorno\" en el Tesino al entrar en una tienda, un ascensor o una sala de espera. El silencio puede parecer frío.",
+    "pt": "Diz \"Grüezi\" nas zonas de língua alemã, \"Bonjour\" na região francófona e \"Buongiorno\" no Ticino ao entrar numa loja, num elevador ou numa sala de espera. O silêncio pode parecer frio.",
+    "pt_BR": "Diga \"Grüezi\" nas áreas de língua alemã, \"Bonjour\" na região francófona e \"Buongiorno\" no Ticino ao entrar em uma loja, elevador ou sala de espera. O silêncio pode parecer frio.",
+    "fr": "Dites \"Grüezi\" en Suisse alémanique, \"Bonjour\" en Suisse romande et \"Buongiorno\" au Tessin en entrant dans un magasin, un ascenseur ou une salle d'attente. Le silence peut sembler froid.",
+    "de": "Sag \"Grüezi\" im deutschsprachigen Raum, \"Bonjour\" in der Westschweiz und \"Buongiorno\" im Tessin, wenn du ein Geschäft, einen Lift oder ein Wartezimmer betrittst. Schweigen wirkt schnell kühl."
+   }
+  },
+  {
+   "id": "ct-CH-04",
+   "category": "conversation",
+   "text": {
+    "en": "Swiss people tend to be reserved at first and value privacy, but warm up once you show respect and patience. Questions about hobbies, hiking or travels are a good way in.",
+    "it": "Gli svizzeri tendono a essere riservati all'inizio e tengono alla privacy, ma si aprono quando mostri rispetto e pazienza. Domande su hobby, escursioni o viaggi sono un buon modo per iniziare.",
+    "es": "Los suizos suelen ser reservados al principio y valoran la privacidad, pero se abren cuando muestras respeto y paciencia. Preguntar por aficiones, excursiones o viajes es una buena forma de empezar.",
+    "pt": "Os suíços tendem a ser reservados ao início e valorizam a privacidade, mas abrem-se quando mostras respeito e paciência. Perguntas sobre passatempos, caminhadas ou viagens são uma boa forma de começar.",
+    "pt_BR": "Os suíços tendem a ser reservados no início e valorizam a privacidade, mas se abrem quando você mostra respeito e paciência. Perguntas sobre hobbies, trilhas ou viagens são um bom jeito de começar.",
+    "fr": "Les Suisses sont souvent réservés au début et tiennent à leur vie privée, mais s'ouvrent quand on montre du respect et de la patience. Des questions sur les loisirs, la randonnée ou les voyages sont un bon début.",
+    "de": "Schweizerinnen und Schweizer sind anfangs oft zurückhaltend und schätzen ihre Privatsphäre, tauen aber auf, wenn man Respekt und Geduld zeigt. Fragen zu Hobbys, Wandern oder Reisen sind ein guter Einstieg."
+   }
+  },
+  {
+   "id": "ct-CH-05",
+   "category": "conversation",
+   "text": {
+    "en": "It is better not to ask about salary or wealth, which people keep private. Topics like nature, food, local customs and how the country's direct democracy works are safer and interesting.",
+    "it": "È meglio non chiedere dello stipendio o del patrimonio, che le persone tengono riservati. Temi come natura, cibo, usanze locali e il funzionamento della democrazia diretta sono più sicuri e interessanti.",
+    "es": "Es mejor no preguntar por el sueldo ni el patrimonio, que la gente mantiene en privado. Temas como la naturaleza, la comida, las costumbres locales y cómo funciona la democracia directa son más seguros e interesantes.",
+    "pt": "É melhor não perguntar pelo salário ou pelo património, que as pessoas mantêm privados. Temas como a natureza, a comida, os costumes locais e o funcionamento da democracia direta são mais seguros e interessantes.",
+    "pt_BR": "É melhor não perguntar sobre salário ou patrimônio, que as pessoas mantêm privados. Temas como natureza, comida, costumes locais e o funcionamento da democracia direta são mais seguros e interessantes.",
+    "fr": "Mieux vaut ne pas poser de questions sur le salaire ou la fortune, que les gens gardent privés. Des sujets comme la nature, la cuisine, les coutumes locales et le fonctionnement de la démocratie directe sont plus sûrs et intéressants.",
+    "de": "Besser nicht nach Gehalt oder Vermögen fragen, das behalten die Leute für sich. Themen wie Natur, Essen, lokale Bräuche und die direkte Demokratie sind sicherer und interessant."
+   }
+  },
+  {
+   "id": "ct-CH-06",
+   "category": "language",
+   "text": {
+    "en": "Switzerland has four national languages: German, French, Italian and Romansh. Do not assume everyone speaks English, and ask politely which language is easiest for the other person.",
+    "it": "La Svizzera ha quattro lingue nazionali: tedesco, francese, italiano e romancio. Non dare per scontato che tutti parlino inglese e chiedi con gentilezza quale lingua sia più comoda per l'altra persona.",
+    "es": "Suiza tiene cuatro lenguas nacionales: alemán, francés, italiano y romanche. No supongas que todos hablan inglés y pregunta con educación cuál es la lengua más cómoda para la otra persona.",
+    "pt": "A Suíça tem quatro línguas nacionais: alemão, francês, italiano e romanche. Não presumas que todos falam inglês e pergunta com educação qual é a língua mais cómoda para a outra pessoa.",
+    "pt_BR": "A Suíça tem quatro línguas nacionais: alemão, francês, italiano e romanche. Não presuma que todos falam inglês e pergunte com educação qual é a língua mais confortável para a outra pessoa.",
+    "fr": "La Suisse compte quatre langues nationales : allemand, français, italien et romanche. Ne supposez pas que tout le monde parle anglais et demandez poliment quelle langue convient le mieux à l'autre.",
+    "de": "Die Schweiz hat vier Landessprachen: Deutsch, Französisch, Italienisch und Rätoromanisch. Geh nicht davon aus, dass alle Englisch sprechen, und frag höflich, welche Sprache dem Gegenüber am liebsten ist."
+   }
+  },
+  {
+   "id": "ct-CH-07",
+   "category": "dining",
+   "text": {
+    "en": "Before eating, people often say \"En Guete\" in Swiss German or \"Bon appétit\" in French. Wait for everyone to be served, and keep your hands visible above the table.",
+    "it": "Prima di mangiare si dice spesso \"En Guete\" in svizzero tedesco o \"Bon appétit\" in francese. Aspetta che tutti siano serviti e tieni le mani visibili sopra il tavolo.",
+    "es": "Antes de comer se suele decir \"En Guete\" en suizo alemán o \"Bon appétit\" en francés. Espera a que todos estén servidos y mantén las manos visibles sobre la mesa.",
+    "pt": "Antes de comer diz-se muitas vezes \"En Guete\" em suíço-alemão ou \"Bon appétit\" em francês. Espera que todos estejam servidos e mantém as mãos visíveis em cima da mesa.",
+    "pt_BR": "Antes de comer costuma-se dizer \"En Guete\" em suíço-alemão ou \"Bon appétit\" em francês. Espere todos serem servidos e mantenha as mãos visíveis sobre a mesa.",
+    "fr": "Avant de manger, on dit souvent \"En Guete\" en suisse allemand ou \"Bon appétit\" en français. Attendez que tout le monde soit servi et gardez les mains visibles au-dessus de la table.",
+    "de": "Vor dem Essen wünscht man sich oft \"En Guete\" auf Schweizerdeutsch oder \"Bon appétit\" auf Französisch. Warte, bis alle bedient sind, und halte die Hände sichtbar über dem Tisch."
+   }
+  },
+  {
+   "id": "ct-CH-08",
+   "category": "dining",
+   "text": {
+    "en": "Cheese fondue and raclette are classic dishes meant for sharing. Fondue is eaten from a shared pot with long forks, so take only your own piece of bread each time.",
+    "it": "Fonduta al formaggio e raclette sono piatti classici da condividere. La fonduta si mangia da una pentola comune con lunghe forchette, quindi prendi ogni volta solo il tuo pezzo di pane.",
+    "es": "La fondue de queso y la raclette son platos clásicos para compartir. La fondue se come de una olla común con tenedores largos, así que coge solo tu propio trozo de pan cada vez.",
+    "pt": "A fondue de queijo e a raclette são pratos clássicos para partilhar. A fondue come-se de um tacho comum com garfos compridos, por isso pega só no teu pedaço de pão de cada vez.",
+    "pt_BR": "A fondue de queijo e a raclette são pratos clássicos para compartilhar. A fondue é comida de uma panela comum com garfos compridos, então pegue só o seu pedaço de pão a cada vez.",
+    "fr": "La fondue au fromage et la raclette sont des plats classiques à partager. La fondue se mange dans un caquelon commun avec de longues fourchettes ; prenez à chaque fois seulement votre morceau de pain.",
+    "de": "Käsefondue und Raclette sind klassische Gerichte zum Teilen. Fondue isst man aus einem gemeinsamen Topf mit langen Gabeln, nimm dir jedes Mal nur dein eigenes Stück Brot."
+   }
+  },
+  {
+   "id": "ct-CH-09",
+   "category": "dining",
+   "text": {
+    "en": "When clinking glasses at the table, it is polite to look each person in the eye while saying \"Prost\" or \"Santé\". Skipping the eye contact is seen as impolite.",
+    "it": "Quando si brinda a tavola è educato guardare negli occhi ogni persona dicendo \"Prost\" o \"Santé\". Evitare il contatto visivo è considerato scortese.",
+    "es": "Al brindar en la mesa es de buena educación mirar a los ojos a cada persona mientras dices \"Prost\" o \"Santé\". Evitar el contacto visual se ve como una falta de educación.",
+    "pt": "Ao brindar à mesa é educado olhar cada pessoa nos olhos enquanto dizes \"Prost\" ou \"Santé\". Evitar o contacto visual é visto como falta de educação.",
+    "pt_BR": "Ao brindar à mesa é educado olhar cada pessoa nos olhos enquanto diz \"Prost\" ou \"Santé\". Evitar o contato visual é visto como falta de educação.",
+    "fr": "Quand on trinque à table, il est poli de regarder chaque personne dans les yeux en disant \"Prost\" ou \"Santé\". Éviter le regard est perçu comme impoli.",
+    "de": "Beim Anstoßen am Tisch ist es höflich, jeder Person in die Augen zu schauen und \"Prost\" oder \"Santé\" zu sagen. Ausweichende Blicke gelten als unhöflich."
+   }
+  },
+  {
+   "id": "ct-CH-10",
+   "category": "tipping",
+   "text": {
+    "en": "Service is already included in menu prices by law, so tipping is not required. Many people round up the bill or leave a few francs for good service.",
+    "it": "Il servizio è già incluso nei prezzi del menu per legge, quindi la mancia non è obbligatoria. Molti arrotondano il conto o lasciano qualche franco per un buon servizio.",
+    "es": "El servicio ya está incluido en los precios de la carta por ley, así que la propina no es obligatoria. Mucha gente redondea la cuenta o deja unos francos si el servicio ha sido bueno.",
+    "pt": "O serviço já está incluído nos preços da ementa por lei, por isso a gorjeta não é obrigatória. Muita gente arredonda a conta ou deixa alguns francos por um bom serviço.",
+    "pt_BR": "O serviço já está incluído nos preços do cardápio por lei, então a gorjeta não é obrigatória. Muita gente arredonda a conta ou deixa alguns francos por um bom serviço.",
+    "fr": "Le service est déjà inclus dans les prix de la carte, donc le pourboire n'est pas obligatoire. Beaucoup arrondissent l'addition ou laissent quelques francs pour un bon service.",
+    "de": "Der Service ist per Gesetz bereits in den Preisen enthalten, Trinkgeld ist also nicht Pflicht. Viele runden die Rechnung auf oder lassen für guten Service ein paar Franken da."
+   }
+  },
+  {
+   "id": "ct-CH-11",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to a home, bring flowers, good chocolate or a bottle of wine for the hosts. Unwrap the flowers before handing them over.",
+    "it": "Quando sei invitato a casa di qualcuno, porta fiori, del buon cioccolato o una bottiglia di vino. Togli la carta ai fiori prima di consegnarli.",
+    "es": "Cuando te invitan a una casa, lleva flores, buen chocolate o una botella de vino para los anfitriones. Quita el envoltorio a las flores antes de entregarlas.",
+    "pt": "Quando fores convidado para casa de alguém, leva flores, bom chocolate ou uma garrafa de vinho. Tira o embrulho às flores antes de as entregares.",
+    "pt_BR": "Quando for convidado para a casa de alguém, leve flores, um bom chocolate ou uma garrafa de vinho. Tire o embrulho das flores antes de entregá-las.",
+    "fr": "Quand on vous invite chez quelqu'un, apportez des fleurs, du bon chocolat ou une bouteille de vin. Retirez l'emballage des fleurs avant de les offrir.",
+    "de": "Wenn du eingeladen wirst, bring Blumen, gute Schokolade oder eine Flasche Wein mit. Pack die Blumen vor der Übergabe aus."
+   }
+  },
+  {
+   "id": "ct-CH-12",
+   "category": "dress",
+   "text": {
+    "en": "Swiss people dress neatly and practically, and quality matters more than flashiness. Smart casual works for restaurants and the theatre, and business meetings call for a tidy, conservative look.",
+    "it": "Gli svizzeri si vestono in modo curato e pratico e conta più la qualità che l'appariscenza. Lo smart casual va bene per ristoranti e teatro, mentre per riunioni di lavoro serve un look ordinato e sobrio.",
+    "es": "Los suizos visten con pulcritud y practicidad, y la calidad importa más que la ostentación. La ropa informal elegante vale para restaurantes y teatro, y las reuniones de trabajo piden un aspecto cuidado y sobrio.",
+    "pt": "Os suíços vestem-se de forma cuidada e prática, e a qualidade conta mais do que a ostentação. O casual elegante serve para restaurantes e teatro, e as reuniões de trabalho pedem um visual cuidado e sóbrio.",
+    "pt_BR": "Os suíços se vestem de forma cuidada e prática, e a qualidade importa mais do que ostentação. O casual elegante serve para restaurantes e teatro, e reuniões de trabalho pedem um visual arrumado e sóbrio.",
+    "fr": "Les Suisses s'habillent avec soin et de façon pratique, la qualité compte plus que l'ostentation. Une tenue chic décontractée convient aux restaurants et au théâtre, et les réunions d'affaires demandent un look soigné et sobre.",
+    "de": "Die Schweizer kleiden sich gepflegt und praktisch, Qualität zählt mehr als Protz. Smart Casual passt für Restaurants und Theater, bei Geschäftsterminen ist ein gepflegtes, zurückhaltendes Auftreten gefragt."
+   }
+  },
+  {
+   "id": "ct-CH-13",
+   "category": "dress",
+   "text": {
+    "en": "Mountain weather changes fast, so bring layers, a rain jacket and sturdy shoes even for short hikes. Hiking boots are normal in alpine villages and nobody will look twice.",
+    "it": "Il tempo in montagna cambia in fretta, quindi porta strati, un k-way e scarpe robuste anche per escursioni brevi. Gli scarponi sono normali nei villaggi alpini e nessuno ci fa caso.",
+    "es": "El tiempo en la montaña cambia rápido, así que lleva capas, un chubasquero y calzado resistente incluso para excursiones cortas. Las botas de montaña son normales en los pueblos alpinos y nadie se fija.",
+    "pt": "O tempo na montanha muda depressa, por isso leva camadas, um casaco impermeável e calçado robusto mesmo para caminhadas curtas. As botas de montanha são normais nas aldeias alpinas e ninguém estranha.",
+    "pt_BR": "O tempo na montanha muda rápido, então leve camadas, uma capa de chuva e calçado resistente mesmo para trilhas curtas. Botas de trilha são normais nas vilas alpinas e ninguém estranha.",
+    "fr": "Le temps en montagne change vite : prévoyez des couches, une veste imperméable et de bonnes chaussures même pour de courtes randonnées. Les chaussures de marche sont normales dans les villages alpins et personne ne s'en étonne.",
+    "de": "Das Bergwetter wechselt schnell, nimm daher Schichten, eine Regenjacke und feste Schuhe auch für kurze Wanderungen mit. Wanderschuhe sind in Bergdörfern normal, niemand schaut zweimal hin."
+   }
+  },
+  {
+   "id": "ct-CH-14",
+   "category": "religion_sites",
+   "text": {
+    "en": "Switzerland has both Catholic and Protestant traditions, depending on the canton, and church bells ring on the hour. Dress modestly and be quiet when visiting churches and cathedrals.",
+    "it": "La Svizzera ha tradizioni sia cattoliche sia protestanti, a seconda del cantone, e le campane suonano ogni ora. Vestiti con sobrietà e fai silenzio quando visiti chiese e cattedrali.",
+    "es": "Suiza tiene tradiciones tanto católicas como protestantes, según el cantón, y las campanas de las iglesias suenan cada hora. Viste con modestia y guarda silencio al visitar iglesias y catedrales.",
+    "pt": "A Suíça tem tradições católicas e protestantes, consoante o cantão, e os sinos das igrejas tocam a cada hora. Veste-te com modéstia e faz silêncio ao visitar igrejas e catedrais.",
+    "pt_BR": "A Suíça tem tradições católicas e protestantes, dependendo do cantão, e os sinos das igrejas tocam a cada hora. Vista-se com modéstia e fique em silêncio ao visitar igrejas e catedrais.",
+    "fr": "La Suisse a des traditions catholiques et protestantes selon les cantons, et les cloches des églises sonnent chaque heure. Habillez-vous modestement et restez silencieux en visitant églises et cathédrales.",
+    "de": "Die Schweiz kennt je nach Kanton katholische und protestantische Traditionen, und die Kirchenglocken schlagen zur vollen Stunde. Kleide dich dezent und verhalte dich in Kirchen und Kathedralen ruhig."
+   }
+  },
+  {
+   "id": "ct-CH-15",
+   "category": "gestures",
+   "text": {
+    "en": "Pointing at your forehead or raising your voice in public is considered rude. Swiss people tend to speak quietly in public places, especially on trains.",
+    "it": "Indicare la propria fronte o alzare la voce in pubblico è considerato scortese. Gli svizzeri tendono a parlare a voce bassa nei luoghi pubblici, soprattutto sui treni.",
+    "es": "Señalarse la frente o levantar la voz en público se considera de mala educación. Los suizos suelen hablar en voz baja en lugares públicos, sobre todo en los trenes.",
+    "pt": "Apontar para a própria testa ou levantar a voz em público é considerado falta de educação. Os suíços costumam falar baixo em locais públicos, sobretudo nos comboios.",
+    "pt_BR": "Apontar para a própria testa ou levantar a voz em público é considerado falta de educação. Os suíços costumam falar baixo em locais públicos, principalmente nos trens.",
+    "fr": "Se tapoter le front ou élever la voix en public est jugé impoli. Les Suisses parlent généralement doucement dans les lieux publics, surtout dans les trains.",
+    "de": "Sich an die Stirn zu tippen oder in der Öffentlichkeit laut zu werden gilt als unhöflich. Schweizerinnen und Schweizer sprechen an öffentlichen Orten meist leise, besonders im Zug."
+   }
+  },
+  {
+   "id": "ct-CH-16",
+   "category": "punctuality",
+   "text": {
+    "en": "Punctuality is taken very seriously: arrive on time or a few minutes early for meetings, dinners and trains. If you will be late, send a message in advance.",
+    "it": "La puntualità è presa molto sul serio: arriva in orario o con qualche minuto di anticipo a riunioni, cene e treni. Se farai tardi, avvisa in anticipo.",
+    "es": "La puntualidad se toma muy en serio: llega a tiempo o unos minutos antes a reuniones, cenas y trenes. Si vas a llegar tarde, avisa con antelación.",
+    "pt": "A pontualidade é levada muito a sério: chega a horas ou uns minutos antes a reuniões, jantares e comboios. Se te fores atrasar, avisa com antecedência.",
+    "pt_BR": "A pontualidade é levada muito a sério: chegue na hora ou alguns minutos antes a reuniões, jantares e trens. Se for se atrasar, avise com antecedência.",
+    "fr": "La ponctualité est prise très au sérieux : arrivez à l'heure ou quelques minutes en avance aux réunions, aux dîners et aux trains. Si vous êtes en retard, prévenez à l'avance.",
+    "de": "Pünktlichkeit wird sehr ernst genommen: Komm zu Terminen, Essen und Zügen pünktlich oder ein paar Minuten früher. Wenn du dich verspätest, melde dich vorher."
+   }
+  },
+  {
+   "id": "ct-CH-17",
+   "category": "public_behavior",
+   "text": {
+    "en": "Quiet hours matter: avoid loud noise in the evening and on Sundays, and in many apartment blocks laundry and drilling are restricted at those times. When in doubt, ask neighbours or your host.",
+    "it": "Le ore di quiete contano: evita rumori forti la sera e la domenica e in molti condomini bucato e trapani sono limitati in quegli orari. Nel dubbio, chiedi ai vicini o a chi ti ospita.",
+    "es": "Las horas de silencio importan: evita ruidos fuertes por la noche y los domingos, y en muchos edificios la colada y los taladros están restringidos en esos horarios. En caso de duda, pregunta a los vecinos o al anfitrión.",
+    "pt": "As horas de silêncio contam: evita ruídos fortes à noite e ao domingo, e em muitos prédios as máquinas de lavar e os berbequins são restringidos nesses horários. Em caso de dúvida, pergunta aos vizinhos ou ao anfitrião.",
+    "pt_BR": "Os horários de silêncio importam: evite barulho forte à noite e aos domingos, e em muitos prédios máquinas de lavar e furadeiras são restritas nesses horários. Em caso de dúvida, pergunte aos vizinhos ou ao anfitrião.",
+    "fr": "Les heures de calme comptent : évitez les bruits forts le soir et le dimanche, et dans beaucoup d'immeubles, lessive et perceuse sont restreintes à ces moments. En cas de doute, demandez aux voisins ou à votre hôte.",
+    "de": "Ruhezeiten sind wichtig: Vermeide abends und sonntags laute Geräusche, in vielen Mehrfamilienhäusern sind Waschen und Bohren zu diesen Zeiten eingeschränkt. Frag im Zweifel Nachbarn oder Gastgeber."
+   }
+  },
+  {
+   "id": "ct-CH-18",
+   "category": "transport",
+   "text": {
+    "en": "Swiss trains, buses and boats form a famously punctual, well-connected network. Buy your ticket before boarding, and keep it handy, since spot checks are common.",
+    "it": "Treni, autobus e battelli svizzeri formano una rete famosa per puntualità e collegamenti. Compra il biglietto prima di salire e tienilo a portata di mano, perché i controlli a campione sono frequenti.",
+    "es": "Los trenes, autobuses y barcos suizos forman una red famosa por su puntualidad y buenas conexiones. Compra el billete antes de subir y tenlo a mano, porque los controles puntuales son frecuentes.",
+    "pt": "Os comboios, autocarros e barcos suíços formam uma rede famosa pela pontualidade e boas ligações. Compra o bilhete antes de embarcar e tem-no à mão, porque os controlos aleatórios são frequentes.",
+    "pt_BR": "Os trens, ônibus e barcos suíços formam uma rede famosa pela pontualidade e pelas boas conexões. Compre a passagem antes de embarcar e deixe-a à mão, porque as fiscalizações aleatórias são frequentes.",
+    "fr": "Les trains, bus et bateaux suisses forment un réseau réputé pour sa ponctualité et ses bonnes correspondances. Achetez votre billet avant de monter et gardez-le à portée de main, les contrôles sont fréquents.",
+    "de": "Schweizer Züge, Busse und Schiffe bilden ein berühmt pünktliches, gut vernetztes Netz. Kauf dein Ticket vor dem Einsteigen und halte es bereit, denn Stichproben-Kontrollen sind häufig."
+   }
+  },
+  {
+   "id": "ct-CH-19",
+   "category": "festivals",
+   "text": {
+    "en": "Swiss National Day on 1 August is celebrated with bonfires, lanterns and fireworks. Many towns hold local events with speeches, music and food, and fireworks rules can be strict.",
+    "it": "La Festa nazionale svizzera, il 1 agosto, si celebra con falò, lanterne e fuochi d'artificio. Molte città organizzano eventi con discorsi, musica e cibo, e le regole sui fuochi possono essere severe.",
+    "es": "El Día Nacional de Suiza, el 1 de agosto, se celebra con hogueras, farolillos y fuegos artificiales. Muchas localidades organizan actos con discursos, música y comida, y las normas sobre pirotecnia pueden ser estrictas.",
+    "pt": "O Dia Nacional da Suíça, a 1 de agosto, celebra-se com fogueiras, lanternas e fogo de artifício. Muitas localidades organizam eventos com discursos, música e comida, e as regras sobre pirotecnia podem ser rigorosas.",
+    "pt_BR": "O Dia Nacional da Suíça, em 1º de agosto, é celebrado com fogueiras, lanternas e fogos de artifício. Muitas cidades organizam eventos com discursos, música e comida, e as regras sobre fogos podem ser rígidas.",
+    "fr": "La fête nationale suisse, le 1er août, se célèbre avec des feux, des lampions et des feux d'artifice. De nombreuses communes organisent des événements avec discours, musique et repas, et les règles sur les feux peuvent être strictes.",
+    "de": "Der Schweizer Nationalfeiertag am 1. August wird mit Feuern, Lampions und Feuerwerk gefeiert. Viele Gemeinden veranstalten Feste mit Reden, Musik und Essen, und die Feuerwerksregeln können streng sein."
+   }
+  },
+  {
+   "id": "ct-CH-20",
+   "category": "festivals",
+   "text": {
+    "en": "Basel Fasnacht begins at 4 a.m. on the Monday after Ash Wednesday with the Morgestraich, when lights go out and drummers and piccolo players march with lanterns. It is a must-see for many.",
+    "it": "Il Fasnacht di Basilea inizia alle 4 del mattino del lunedì dopo il Mercoledì delle Ceneri con il Morgestraich, quando le luci si spengono e tamburi e ottavini sfilano con le lanterne. Per molti è da non perdere.",
+    "es": "El Fasnacht de Basilea comienza a las 4 de la madrugada del lunes después del Miércoles de Ceniza con el Morgestraich, cuando se apagan las luces y tambores y flautines desfilan con farolillos. Para muchos es imprescindible.",
+    "pt": "O Fasnacht de Basileia começa às 4 da manhã da segunda-feira a seguir à Quarta-Feira de Cinzas com o Morgestraich, quando as luzes se apagam e tambores e pífaros desfilam com lanternas. Para muitos é imperdível.",
+    "pt_BR": "O Fasnacht de Basileia começa às 4 da manhã da segunda-feira depois da Quarta-Feira de Cinzas com o Morgestraich, quando as luzes se apagam e tambores e pífaros desfilam com lanternas. Para muita gente é imperdível.",
+    "fr": "Le Carnaval de Bâle commence à 4 h du matin le lundi après le mercredi des Cendres avec le Morgestraich : les lumières s'éteignent et tambours et piccolos défilent avec des lanternes. Pour beaucoup, c'est incontournable.",
+    "de": "Die Basler Fasnacht beginnt am Montag nach Aschermittwoch um 4 Uhr morgens mit dem Morgestraich: Die Lichter gehen aus, und Trommler und Piccolospieler ziehen mit Laternen durch die Stadt. Für viele ein Muss."
+   }
+  },
+  {
+   "id": "ct-CH-21",
+   "category": "family",
+   "text": {
+    "en": "Family and friends often meet for Sunday walks, and many shops are closed on Sundays. Plan groceries in advance, and expect train stations and airports to be the main exceptions.",
+    "it": "Famiglia e amici si incontrano spesso per passeggiate domenicali e molti negozi sono chiusi la domenica. Pianifica la spesa in anticipo e aspettati che le eccezioni siano soprattutto stazioni e aeroporti.",
+    "es": "Familia y amigos suelen quedar para pasear los domingos y muchas tiendas cierran ese día. Planifica la compra con antelación y ten en cuenta que las excepciones son sobre todo estaciones y aeropuertos.",
+    "pt": "Família e amigos encontram-se muitas vezes para passeios ao domingo e muitas lojas fecham nesse dia. Planeia as compras com antecedência e conta com estações e aeroportos como principais exceções.",
+    "pt_BR": "Família e amigos costumam se encontrar para passeios aos domingos e muitas lojas fecham nesse dia. Planeje as compras com antecedência e conte com estações e aeroportos como principais exceções.",
+    "fr": "Famille et amis se retrouvent souvent pour des promenades dominicales, et beaucoup de magasins sont fermés le dimanche. Planifiez vos courses à l'avance, les gares et aéroports étant les principales exceptions.",
+    "de": "Familie und Freunde treffen sich oft zu Sonntagsspaziergängen, und viele Geschäfte sind sonntags geschlossen. Plane Einkäufe im Voraus, Ausnahmen sind vor allem Bahnhöfe und Flughäfen."
+   }
+  },
+  {
+   "id": "ct-CH-22",
+   "category": "money",
+   "text": {
+    "en": "The currency is the Swiss franc (CHF), not the euro, though some tourist places accept euros at a poor rate. Prices are high, so compare menus and supermarkets like Migros and Coop.",
+    "it": "La valuta è il franco svizzero (CHF), non l'euro, anche se alcuni luoghi turistici accettano euro a un cambio sfavorevole. I prezzi sono alti, quindi confronta menu e supermercati come Migros e Coop.",
+    "es": "La moneda es el franco suizo (CHF), no el euro, aunque algunos sitios turísticos aceptan euros a un cambio desfavorable. Los precios son altos, así que compara cartas y supermercados como Migros y Coop.",
+    "pt": "A moeda é o franco suíço (CHF), não o euro, embora alguns locais turísticos aceitem euros a um câmbio desfavorável. Os preços são altos, por isso compara ementas e supermercados como a Migros e a Coop.",
+    "pt_BR": "A moeda é o franco suíço (CHF), não o euro, embora alguns locais turísticos aceitem euros a um câmbio desfavorável. Os preços são altos, então compare cardápios e supermercados como Migros e Coop.",
+    "fr": "La monnaie est le franc suisse (CHF), pas l'euro, même si certains lieux touristiques acceptent les euros à un mauvais taux. Les prix sont élevés : comparez menus et supermarchés comme Migros et Coop.",
+    "de": "Die Währung ist der Schweizer Franken (CHF), nicht der Euro, auch wenn manche Touristenorte Euro zu schlechtem Kurs annehmen. Die Preise sind hoch, vergleiche daher Speisekarten und Supermärkte wie Migros und Coop."
+   }
+  },
+  {
+   "id": "ct-CH-23",
+   "category": "photography",
+   "text": {
+    "en": "Swiss privacy laws are strict, so do not photograph people without permission and avoid posting photos of strangers. Check signs for restrictions in museums, banks and some mountain railways.",
+    "it": "Le leggi svizzere sulla privacy sono severe, quindi non fotografare le persone senza permesso ed evita di pubblicare foto di sconosciuti. Controlla i cartelli per i divieti in musei, banche e alcune ferrovie di montagna.",
+    "es": "Las leyes suizas de privacidad son estrictas, así que no fotografíes a personas sin permiso y evita publicar fotos de desconocidos. Revisa los carteles por si hay restricciones en museos, bancos y algunos ferrocarriles de montaña.",
+    "pt": "As leis suíças de privacidade são rigorosas, por isso não fotografes pessoas sem autorização e evita publicar fotos de desconhecidos. Verifica os avisos de restrições em museus, bancos e alguns caminhos de ferro de montanha.",
+    "pt_BR": "As leis suíças de privacidade são rígidas, então não fotografe pessoas sem permissão e evite publicar fotos de desconhecidos. Verifique as placas de restrição em museus, bancos e algumas ferrovias de montanha.",
+    "fr": "Les lois suisses sur la vie privée sont strictes : ne photographiez pas les gens sans permission et évitez de publier des photos d'inconnus. Vérifiez les panneaux de restrictions dans les musées, banques et certains trains de montagne.",
+    "de": "Die Schweizer Datenschutzgesetze sind streng: Fotografiere Menschen nicht ohne Erlaubnis und poste keine Bilder Fremder. Achte auf Schilder mit Einschränkungen in Museen, Banken und manchen Bergbahnen."
+   }
+  },
+  {
+   "id": "ct-CH-24",
+   "category": "nightlife",
+   "text": {
+    "en": "Evenings in Swiss cities are often calm, with early dinners and many places closing by late evening. Bigger cities like Zurich, Geneva and Basel have lively bars, clubs and live music.",
+    "it": "Le serate nelle città svizzere sono spesso tranquille, con cene presto e molti locali che chiudono a tarda sera. Le città più grandi come Zurigo, Ginevra e Basilea hanno bar, club e musica dal vivo vivaci.",
+    "es": "Las noches en las ciudades suizas suelen ser tranquilas, con cenas temprano y muchos locales que cierran a última hora. Ciudades mayores como Zúrich, Ginebra y Basilea tienen bares, clubes y música en directo animados.",
+    "pt": "As noites nas cidades suíças costumam ser calmas, com jantares cedo e muitos locais a fechar ao fim da noite. Cidades maiores como Zurique, Genebra e Basileia têm bares, clubes e música ao vivo animados.",
+    "pt_BR": "As noites nas cidades suíças costumam ser tranquilas, com jantares cedo e muitos locais fechando no fim da noite. Cidades maiores como Zurique, Genebra e Basileia têm bares, baladas e música ao vivo animados.",
+    "fr": "Les soirées dans les villes suisses sont souvent calmes, avec des dîners tôt et beaucoup d'établissements fermant tard dans la soirée. Les grandes villes comme Zurich, Genève et Bâle ont des bars, clubs et concerts animés.",
+    "de": "Abende in Schweizer Städten sind oft ruhig, mit frühem Abendessen und vielen Lokalen, die spät am Abend schließen. Größere Städte wie Zürich, Genf und Basel bieten lebhafte Bars, Clubs und Livemusik."
+   }
+  },
+  {
+   "id": "ct-CH-25",
+   "category": "nature",
+   "text": {
+    "en": "Hiking trails are signposted with yellow signs, and mountain paths use white-red-white markings. Check weather and your fitness, tell someone your plan and carry water, since conditions change fast.",
+    "it": "I sentieri escursionistici sono segnalati con cartelli gialli e quelli di montagna con segni bianco-rosso-bianchi. Controlla meteo e preparazione, comunica il tuo piano a qualcuno e porta acqua, perché le condizioni cambiano in fretta.",
+    "es": "Los senderos están señalizados con carteles amarillos y los de montaña usan marcas blanco-rojo-blanco. Comprueba el tiempo y tu forma física, cuenta tu plan a alguien y lleva agua, porque las condiciones cambian rápido.",
+    "pt": "Os trilhos pedestres estão sinalizados com placas amarelas e os de montanha usam marcas branco-vermelho-branco. Verifica o tempo e a tua condição física, avisa alguém do teu plano e leva água, porque as condições mudam depressa.",
+    "pt_BR": "As trilhas são sinalizadas com placas amarelas e as de montanha usam marcações branco-vermelho-branco. Verifique o tempo e sua condição física, avise alguém do seu plano e leve água, porque as condições mudam rápido.",
+    "fr": "Les sentiers de randonnée sont signalés par des panneaux jaunes, et les chemins de montagne par des marques blanc-rouge-blanc. Vérifiez la météo et votre forme, prévenez quelqu'un de votre plan et emportez de l'eau, car les conditions changent vite.",
+    "de": "Wanderwege sind mit gelben Wegweisern markiert, Bergwege mit weiß-rot-weißen Zeichen. Prüfe Wetter und Kondition, sag jemandem Bescheid und nimm Wasser mit, denn die Bedingungen ändern sich schnell."
+   }
+  },
+  {
+   "id": "ct-CH-26",
+   "category": "nature",
+   "text": {
+    "en": "On alpine pastures, keep a distance from cows, close gates behind you and keep dogs on a lead. Say a friendly \"Grüezi\" to other hikers you pass on the trail.",
+    "it": "Sui pascoli alpini mantieni la distanza dalle mucche, chiudi i cancelli dietro di te e tieni i cani al guinzaglio. Saluta con un \"Grüezi\" gli altri escursionisti che incontri sul sentiero.",
+    "es": "En los pastos alpinos, mantén distancia con las vacas, cierra las puertas tras de ti y lleva a los perros atados. Saluda con un amable \"Grüezi\" a los demás excursionistas que encuentres en el sendero.",
+    "pt": "Nos pastos alpinos, mantém distância das vacas, fecha os portões atrás de ti e leva os cães à trela. Cumprimenta com um simpático \"Grüezi\" os outros caminhantes que encontrares no trilho.",
+    "pt_BR": "Nos pastos alpinos, mantenha distância das vacas, feche os portões atrás de você e leve os cães na coleira. Cumprimente com um simpático \"Grüezi\" os outros caminhantes que encontrar na trilha.",
+    "fr": "Dans les alpages, gardez vos distances avec les vaches, refermez les barrières derrière vous et tenez vos chiens en laisse. Lancez un \"Grüezi\" aux autres randonneurs que vous croisez sur le sentier.",
+    "de": "Halte auf Alpweiden Abstand zu Kühen, schließ Gatter hinter dir und leine Hunde an. Grüß andere Wandernde, denen du auf dem Weg begegnest, freundlich mit \"Grüezi\"."
+   }
+  },
+  {
+   "id": "ct-CH-27",
+   "category": "safety",
+   "text": {
+    "en": "Switzerland is among the safest countries, but keep valuables close in busy stations. Emergency numbers are 112 (general), 117 (police), 118 (fire) and 144 (ambulance).",
+    "it": "La Svizzera è tra i paesi più sicuri, ma tieni gli oggetti di valore a portata di mano nelle stazioni affollate. I numeri di emergenza sono 112 (generale), 117 (polizia), 118 (pompieri) e 144 (ambulanza).",
+    "es": "Suiza es uno de los países más seguros, pero lleva los objetos de valor cerca en estaciones concurridas. Los números de emergencia son el 112 (general), 117 (policía), 118 (bomberos) y 144 (ambulancia).",
+    "pt": "A Suíça é um dos países mais seguros, mas mantém os objetos de valor por perto em estações movimentadas. Os números de emergência são o 112 (geral), 117 (polícia), 118 (bombeiros) e 144 (ambulância).",
+    "pt_BR": "A Suíça é um dos países mais seguros, mas mantenha os objetos de valor por perto em estações movimentadas. Os números de emergência são 112 (geral), 117 (polícia), 118 (bombeiros) e 144 (ambulância).",
+    "fr": "La Suisse est l'un des pays les plus sûrs, mais gardez vos objets de valeur près de vous dans les gares fréquentées. Les numéros d'urgence sont le 112 (général), le 117 (police), le 118 (pompiers) et le 144 (ambulance).",
+    "de": "Die Schweiz gehört zu den sichersten Ländern, doch halte Wertsachen in belebten Bahnhöfen nahe bei dir. Die Notrufnummern lauten 112 (allgemein), 117 (Polizei), 118 (Feuerwehr) und 144 (Sanität)."
+   }
+  },
+  {
+   "id": "ct-CH-28",
+   "category": "local_pride",
+   "text": {
+    "en": "The Swiss are proud of their direct democracy, with citizens voting on issues several times a year. Asking how a recent vote works is a respectful way to learn more.",
+    "it": "Gli svizzeri sono orgogliosi della propria democrazia diretta, in cui i cittadini votano su vari temi più volte l'anno. Chiedere come funziona una votazione recente è un modo rispettoso per saperne di più.",
+    "es": "Los suizos están orgullosos de su democracia directa, en la que los ciudadanos votan varios temas varias veces al año. Preguntar cómo funciona una votación reciente es una forma respetuosa de aprender más.",
+    "pt": "Os suíços têm orgulho da sua democracia direta, em que os cidadãos votam várias questões várias vezes por ano. Perguntar como funciona uma votação recente é uma forma respeitosa de aprender mais.",
+    "pt_BR": "Os suíços têm orgulho de sua democracia direta, em que os cidadãos votam várias questões várias vezes por ano. Perguntar como funciona uma votação recente é um jeito respeitoso de aprender mais.",
+    "fr": "Les Suisses sont fiers de leur démocratie directe, où les citoyens votent sur divers sujets plusieurs fois par an. Demander comment fonctionne un vote récent est une manière respectueuse d'en apprendre davantage.",
+    "de": "Die Schweizer sind stolz auf ihre direkte Demokratie, bei der Bürger mehrmals im Jahr über Sachfragen abstimmen. Nachzufragen, wie eine aktuelle Abstimmung funktioniert, ist ein respektvoller Weg, mehr zu lernen."
+   }
+  },
+  {
+   "id": "ct-CH-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Swiss chocolate, cheese, watches and traditions like alphorn music, yodelling and Schwingen wrestling are sources of local pride. Yodelling is not widespread, limited mostly to certain mountain areas.",
+    "it": "Cioccolato, formaggi, orologi svizzeri e tradizioni come l'alphorn, lo jodel e la lotta Schwingen sono motivo di orgoglio locale. Lo jodel non è diffuso ovunque, ma limitato soprattutto ad alcune zone di montagna.",
+    "es": "El chocolate, el queso, los relojes suizos y tradiciones como el alphorn, el canto tirolés y la lucha Schwingen son motivos de orgullo local. El yodel no está muy extendido y se limita sobre todo a algunas zonas de montaña.",
+    "pt": "O chocolate, o queijo, os relógios suíços e tradições como o alphorn, o yodel e a luta Schwingen são motivos de orgulho local. O yodel não é muito difundido e limita-se sobretudo a algumas zonas de montanha.",
+    "pt_BR": "O chocolate, o queijo, os relógios suíços e tradições como o alphorn, o yodel e a luta Schwingen são motivos de orgulho local. O yodel não é muito difundido e fica limitado a algumas áreas de montanha.",
+    "fr": "Le chocolat, le fromage, l'horlogerie et des traditions comme le cor des Alpes, le yodel et la lutte suisse (Schwingen) sont des sources de fierté locale. Le yodel n'est pas répandu partout, surtout limité à certaines régions de montagne.",
+    "de": "Schweizer Schokolade, Käse, Uhren und Traditionen wie Alphorn, Jodeln und Schwingen sind Quellen lokalen Stolzes. Das Jodeln ist nicht überall verbreitet, sondern vor allem auf einige Bergregionen beschränkt."
+   }
+  },
+  {
+   "id": "ct-CH-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Every region has its own pride, from Geneva and Lake Geneva to Ticino's Italian-speaking charm and the Romansh valleys of Graubünden. Naming specific places you want to visit is always welcome.",
+    "it": "Ogni regione ha il suo orgoglio, da Ginevra e il Lemano al fascino italofono del Ticino e alle valli romance dei Grigioni. Nominare luoghi precisi che vuoi visitare è sempre gradito.",
+    "es": "Cada región tiene su orgullo, desde Ginebra y el lago Lemán hasta el encanto italófono del Tesino y los valles romanches de los Grisones. Mencionar lugares concretos que quieres visitar siempre se agradece.",
+    "pt": "Cada região tem o seu orgulho, desde Genebra e o lago Léman ao encanto italófono do Ticino e aos vales romanches dos Grisões. Mencionar locais concretos que queres visitar é sempre bem-vindo.",
+    "pt_BR": "Cada região tem o seu orgulho, de Genebra e do Lago Léman ao charme italófono do Ticino e aos vales romanches dos Grisões. Mencionar lugares específicos que você quer visitar é sempre bem-vindo.",
+    "fr": "Chaque région a sa fierté, de Genève et du Léman au charme italophone du Tessin et aux vallées romanches des Grisons. Citer des lieux précis que vous voulez visiter est toujours bien accueilli.",
+    "de": "Jede Region hat ihren eigenen Stolz, von Genf und dem Genfersee über den italienischen Charme des Tessins bis zu den rätoromanischen Tälern Graubündens. Konkrete Orte zu nennen, die du besuchen möchtest, kommt immer gut an."
+   }
+  }
+ ]
+}

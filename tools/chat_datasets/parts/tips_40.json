@@ -1,0 +1,1178 @@
+{
+ "SI": [
+  {
+   "id": "ct-SI-01",
+   "category": "greetings",
+   "text": {
+    "en": "A firm handshake with eye contact is the usual greeting. Friends often say \"Živjo\" for both hello and goodbye.",
+    "it": "Di solito ci si saluta con una stretta di mano decisa guardandosi negli occhi. Tra amici si dice spesso \"Živjo\" sia per salutare sia per congedarsi.",
+    "es": "Lo habitual es saludar con un apretón de manos firme y mirando a los ojos. Entre amigos se suele decir \"Živjo\" tanto para saludar como para despedirse.",
+    "pt": "O cumprimento habitual é um aperto de mão firme, olhando nos olhos. Entre amigos diz-se muitas vezes \"Živjo\" tanto para dizer olá como adeus.",
+    "pt_BR": "O cumprimento habitual é um aperto de mão firme, olhando nos olhos. Entre amigos, é comum dizer \"Živjo\" tanto para oi quanto para tchau.",
+    "fr": "On se salue d'ordinaire par une poignée de main ferme en regardant dans les yeux. Entre amis, on dit souvent \"Živjo\" pour dire bonjour comme au revoir.",
+    "de": "Üblich ist ein fester Händedruck mit Blickkontakt. Unter Freunden sagt man oft \"Živjo\" sowohl zur Begrüßung als auch zum Abschied."
+   }
+  },
+  {
+   "id": "ct-SI-02",
+   "category": "greetings",
+   "text": {
+    "en": "With strangers, in shops and in restaurants, say \"Dober dan\" (good day). First names are used quickly among younger people.",
+    "it": "Con gli sconosciuti, nei negozi e nei ristoranti si dice \"Dober dan\" (buongiorno). Tra i più giovani ci si dà presto del nome di battesimo.",
+    "es": "Con desconocidos, en tiendas y restaurantes se dice \"Dober dan\" (buenos días). Entre los más jóvenes se pasa pronto a usar el nombre de pila.",
+    "pt": "Com desconhecidos, nas lojas e nos restaurantes diz-se \"Dober dan\" (bom dia). Entre os mais jovens passa-se rapidamente a tratar pelo primeiro nome.",
+    "pt_BR": "Com desconhecidos, em lojas e restaurantes, diz-se \"Dober dan\" (bom dia). Entre os mais jovens, logo se passa a usar o primeiro nome.",
+    "fr": "Avec des inconnus, dans les magasins et les restaurants, on dit \"Dober dan\" (bonjour). Entre jeunes, on passe vite au prénom.",
+    "de": "Bei Fremden, in Geschäften und Restaurants sagt man \"Dober dan\" (guten Tag). Unter jüngeren Leuten duzt man sich und nennt sich schnell beim Vornamen."
+   }
+  },
+  {
+   "id": "ct-SI-03",
+   "category": "conversation",
+   "text": {
+    "en": "Hiking, sport, nature and food are easy topics. Ask a Slovene about their favourite mountain or trail and you will likely get a long, happy answer.",
+    "it": "Escursionismo, sport, natura e cibo sono argomenti facili. Chiedi a uno sloveno qual è la sua montagna o il suo sentiero preferito e probabilmente avrai una risposta lunga e piena di entusiasmo.",
+    "es": "El senderismo, el deporte, la naturaleza y la comida son temas fáciles. Pregunta a un esloveno por su montaña o ruta favorita y probablemente recibirás una respuesta larga y entusiasta.",
+    "pt": "Caminhadas, desporto, natureza e comida são temas fáceis. Pergunta a um esloveno qual é a sua montanha ou trilho preferido e provavelmente vais receber uma resposta longa e entusiasmada.",
+    "pt_BR": "Trilhas, esporte, natureza e comida são assuntos fáceis. Pergunte a um esloveno qual é sua montanha ou trilha favorita e você provavelmente vai ouvir uma resposta longa e animada.",
+    "fr": "La randonnée, le sport, la nature et la cuisine sont des sujets faciles. Demande à un Slovène quelle est sa montagne ou son sentier préféré : la réponse sera sans doute longue et enthousiaste.",
+    "de": "Wandern, Sport, Natur und Essen sind einfache Gesprächsthemen. Frag einen Slowenen nach seinem Lieblingsberg oder Lieblingsweg, und du bekommst wahrscheinlich eine lange, begeisterte Antwort."
+   }
+  },
+  {
+   "id": "ct-SI-04",
+   "category": "dining",
+   "text": {
+    "en": "Before a meal people say \"Dober tek\" (enjoy your meal). When invited to a home, wait for the host to start eating or to offer the first toast.",
+    "it": "Prima di mangiare si dice \"Dober tek\" (buon appetito). Se sei invitato a casa di qualcuno, aspetta che sia il padrone di casa a iniziare a mangiare o a fare il primo brindisi.",
+    "es": "Antes de comer se dice \"Dober tek\" (buen provecho). Si te invitan a una casa, espera a que el anfitrión empiece a comer o haga el primer brindis.",
+    "pt": "Antes de comer diz-se \"Dober tek\" (bom apetite). Se fores convidado para casa de alguém, espera que o anfitrião comece a comer ou faça o primeiro brinde.",
+    "pt_BR": "Antes de comer diz-se \"Dober tek\" (bom apetite). Se você for convidado para a casa de alguém, espere o anfitrião começar a comer ou fazer o primeiro brinde.",
+    "fr": "Avant le repas, on dit \"Dober tek\" (bon appétit). Si tu es invité chez quelqu'un, attends que l'hôte commence à manger ou porte le premier toast.",
+    "de": "Vor dem Essen wünscht man sich \"Dober tek\" (guten Appetit). Wenn du zu jemandem nach Hause eingeladen bist, warte, bis der Gastgeber zu essen beginnt oder den ersten Toast ausspricht."
+   }
+  },
+  {
+   "id": "ct-SI-05",
+   "category": "dining",
+   "text": {
+    "en": "Try a gostilna, a traditional inn, for dishes like štruklji or potica. Many people still treat lunch as the main meal of the day.",
+    "it": "Prova una gostilna, la tradizionale locanda, per assaggiare piatti come gli štruklji o la potica. Molti considerano ancora il pranzo il pasto principale della giornata.",
+    "es": "Prueba una gostilna, la posada tradicional, para comer platos como los štruklji o la potica. Mucha gente sigue considerando el almuerzo la comida principal del día.",
+    "pt": "Experimenta uma gostilna, a estalagem tradicional, para provar pratos como os štruklji ou a potica. Muita gente ainda considera o almoço a refeição principal do dia.",
+    "pt_BR": "Experimente uma gostilna, a estalagem tradicional, para provar pratos como štruklji ou potica. Muita gente ainda considera o almoço a refeição principal do dia.",
+    "fr": "Essaie une gostilna, l'auberge traditionnelle, pour goûter des plats comme les štruklji ou la potica. Beaucoup de gens considèrent encore le déjeuner comme le repas principal.",
+    "de": "Probier eine Gostilna, ein traditionelles Gasthaus, für Gerichte wie Štruklji oder Potica. Viele sehen das Mittagessen noch immer als wichtigste Mahlzeit des Tages."
+   }
+  },
+  {
+   "id": "ct-SI-06",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping is not obligatory. Rounding up the bill or leaving around 10 percent for good service in a restaurant is appreciated.",
+    "it": "La mancia non è obbligatoria. Arrotondare il conto o lasciare circa il 10 percento per un buon servizio al ristorante è gradito.",
+    "es": "La propina no es obligatoria. Redondear la cuenta o dejar alrededor de un 10 por ciento por un buen servicio en un restaurante se agradece.",
+    "pt": "A gorjeta não é obrigatória. Arredondar a conta ou deixar cerca de 10 por cento por um bom serviço num restaurante é apreciado.",
+    "pt_BR": "A gorjeta não é obrigatória. Arredondar a conta ou deixar cerca de 10 por cento por um bom atendimento em um restaurante é bem-vindo.",
+    "fr": "Le pourboire n'est pas obligatoire. Arrondir l'addition ou laisser environ 10 pour cent pour un bon service au restaurant est apprécié.",
+    "de": "Trinkgeld ist nicht verpflichtend. Im Restaurant freut man sich, wenn du bei gutem Service aufrundest oder etwa 10 Prozent gibst."
+   }
+  },
+  {
+   "id": "ct-SI-07",
+   "category": "gifts",
+   "text": {
+    "en": "If you are invited to someone's home, flowers, chocolates, local honey or a bottle of Slovenian wine make a thoughtful gift.",
+    "it": "Se sei invitato a casa di qualcuno, fiori, cioccolatini, miele locale o una bottiglia di vino sloveno sono un regalo gradito.",
+    "es": "Si te invitan a casa de alguien, flores, bombones, miel local o una botella de vino esloveno son un detalle muy apreciado.",
+    "pt": "Se fores convidado para casa de alguém, flores, chocolates, mel local ou uma garrafa de vinho esloveno são uma prenda simpática.",
+    "pt_BR": "Se você for convidado para a casa de alguém, flores, chocolates, mel local ou uma garrafa de vinho esloveno são um presente simpático.",
+    "fr": "Si tu es invité chez quelqu'un, des fleurs, des chocolats, du miel local ou une bouteille de vin slovène font un cadeau apprécié.",
+    "de": "Bist du bei jemandem zu Hause eingeladen, sind Blumen, Pralinen, lokaler Honig oder eine Flasche slowenischer Wein ein passendes Geschenk."
+   }
+  },
+  {
+   "id": "ct-SI-08",
+   "category": "gifts",
+   "text": {
+    "en": "Chrysanthemums are mostly placed on graves around All Saints' Day on 1 November, so avoid giving them as a gift.",
+    "it": "I crisantemi si portano soprattutto sulle tombe intorno a Ognissanti, il 1 novembre, quindi è meglio non regalarli.",
+    "es": "Los crisantemos se llevan sobre todo a las tumbas en torno a Todos los Santos, el 1 de noviembre, así que mejor no regalarlos.",
+    "pt": "Os crisântemos são colocados sobretudo nos túmulos por volta do Dia de Todos os Santos, a 1 de novembro, por isso é melhor não os oferecer.",
+    "pt_BR": "Os crisântemos são colocados principalmente nos túmulos perto do Dia de Todos os Santos, em 1º de novembro, então é melhor não dá-los de presente.",
+    "fr": "Les chrysanthèmes se déposent surtout sur les tombes autour de la Toussaint, le 1er novembre ; mieux vaut ne pas les offrir.",
+    "de": "Chrysanthemen legt man vor allem um Allerheiligen am 1. November auf Gräber, deshalb verschenkt man sie besser nicht."
+   }
+  },
+  {
+   "id": "ct-SI-09",
+   "category": "dress",
+   "text": {
+    "en": "Dress is casual and practical. Hiking boots are normal outdoors, while smart casual is common for restaurants, concerts and the theatre.",
+    "it": "L'abbigliamento è informale e pratico. Gli scarponi da trekking sono normali all'aperto, mentre per ristoranti, concerti e teatro si usa un look curato ma non formale.",
+    "es": "La ropa es informal y práctica. Las botas de montaña son normales al aire libre, mientras que para restaurantes, conciertos y teatro se suele llevar un estilo arreglado pero informal.",
+    "pt": "O vestuário é casual e prático. As botas de caminhada são normais ao ar livre, enquanto para restaurantes, concertos e teatro se usa um estilo cuidado mas informal.",
+    "pt_BR": "O vestuário é casual e prático. Botas de trilha são normais ao ar livre, enquanto para restaurantes, shows e teatro se usa um estilo arrumado, mas informal.",
+    "fr": "La tenue est décontractée et pratique. Les chaussures de randonnée sont normales en plein air, tandis que pour les restaurants, concerts et théâtres on opte pour un style soigné mais décontracté.",
+    "de": "Die Kleidung ist leger und praktisch. Wanderschuhe sind draußen normal, für Restaurant, Konzert und Theater trägt man eher gepflegt, aber ungezwungen."
+   }
+  },
+  {
+   "id": "ct-SI-10",
+   "category": "religion_sites",
+   "text": {
+    "en": "Most Slovenes are Catholic, and village churches are a landmark of the countryside. Dress modestly, speak quietly and avoid sightseeing during Mass.",
+    "it": "La maggior parte degli sloveni è cattolica e le chiese dei villaggi sono un tratto tipico del paesaggio. Vesti in modo sobrio, parla piano ed evita le visite turistiche durante la messa.",
+    "es": "La mayoría de los eslovenos son católicos y las iglesias de los pueblos son un rasgo típico del paisaje. Vístete con modestia, habla en voz baja y evita visitarlas como turista durante la misa.",
+    "pt": "A maioria dos eslovenos é católica e as igrejas das aldeias são um traço típico da paisagem. Veste-te com recato, fala baixo e evita visitas turísticas durante a missa.",
+    "pt_BR": "A maioria dos eslovenos é católica e as igrejas dos vilarejos são um traço típico da paisagem. Vista-se com discrição, fale baixo e evite visitas turísticas durante a missa.",
+    "fr": "La plupart des Slovènes sont catholiques et les églises de village sont un élément typique du paysage. Habille-toi sobrement, parle à voix basse et évite la visite touristique pendant la messe.",
+    "de": "Die meisten Slowenen sind katholisch, und Dorfkirchen prägen die Landschaft. Kleide dich dezent, sprich leise und besichtige sie nicht während der Messe."
+   }
+  },
+  {
+   "id": "ct-SI-11",
+   "category": "gestures",
+   "text": {
+    "en": "When clinking glasses and saying \"Na zdravje!\" (cheers), many people make eye contact with each person at the table. Avoid looking away.",
+    "it": "Quando si brinda dicendo \"Na zdravje!\" (cin cin), molti guardano negli occhi ciascuna persona al tavolo. Evita di distogliere lo sguardo.",
+    "es": "Al brindar y decir \"Na zdravje!\" (salud), mucha gente mira a los ojos a cada persona de la mesa. Evita apartar la vista.",
+    "pt": "Ao brindar e dizer \"Na zdravje!\" (saúde), muitas pessoas olham nos olhos de cada pessoa à mesa. Evita desviar o olhar.",
+    "pt_BR": "Ao brindar e dizer \"Na zdravje!\" (saúde), muitas pessoas olham nos olhos de cada pessoa à mesa. Evite desviar o olhar.",
+    "fr": "En trinquant et en disant \"Na zdravje !\" (santé), beaucoup de gens regardent chaque personne de la table dans les yeux. Évite de détourner le regard.",
+    "de": "Beim Anstoßen mit \"Na zdravje!\" (Prost) schauen viele jedem am Tisch in die Augen. Schau dabei nicht weg."
+   }
+  },
+  {
+   "id": "ct-SI-12",
+   "category": "punctuality",
+   "text": {
+    "en": "Being on time is valued for meetings, appointments and invitations. If you will be late, send a short message to let people know.",
+    "it": "Si apprezza la puntualità per riunioni, appuntamenti e inviti. Se farai tardi, manda un breve messaggio per avvisare.",
+    "es": "Se valora la puntualidad en reuniones, citas e invitaciones. Si vas a llegar tarde, envía un mensaje corto para avisar.",
+    "pt": "Valoriza-se a pontualidade em reuniões, encontros e convites. Se fores chegar atrasado, envia uma mensagem curta a avisar.",
+    "pt_BR": "Valoriza-se a pontualidade em reuniões, compromissos e convites. Se for se atrasar, mande uma mensagem curta avisando.",
+    "fr": "La ponctualité est appréciée pour les réunions, les rendez-vous et les invitations. Si tu as du retard, envoie un court message pour prévenir.",
+    "de": "Pünktlichkeit wird bei Terminen, Treffen und Einladungen geschätzt. Wenn du dich verspätest, gib kurz per Nachricht Bescheid."
+   }
+  },
+  {
+   "id": "ct-SI-13",
+   "category": "public_behavior",
+   "text": {
+    "en": "Slovenes take cleanliness and recycling seriously. Sort your waste into the right bins and never litter; Ljubljana was European Green Capital in 2016.",
+    "it": "Gli sloveni prendono molto sul serio la pulizia e il riciclo. Separa i rifiuti nei contenitori giusti e non gettare nulla per terra; Lubiana è stata Capitale verde europea nel 2016.",
+    "es": "Los eslovenos se toman muy en serio la limpieza y el reciclaje. Separa los residuos en los contenedores adecuados y no tires nada al suelo; Liubliana fue Capital Verde Europea en 2016.",
+    "pt": "Os eslovenos levam muito a sério a limpeza e a reciclagem. Separa o lixo nos contentores certos e não deites nada para o chão; Liubliana foi Capital Verde Europeia em 2016.",
+    "pt_BR": "Os eslovenos levam muito a sério a limpeza e a reciclagem. Separe o lixo nas lixeiras certas e não jogue nada no chão; Liubliana foi Capital Verde Europeia em 2016.",
+    "fr": "Les Slovènes prennent la propreté et le recyclage très au sérieux. Trie tes déchets dans les bons bacs et ne jette rien par terre ; Ljubljana a été Capitale verte européenne en 2016.",
+    "de": "Sauberkeit und Recycling nehmen Slowenen sehr ernst. Trenne deinen Müll in die passenden Behälter und wirf nichts auf den Boden; Ljubljana war 2016 Europas Grüne Hauptstadt."
+   }
+  },
+  {
+   "id": "ct-SI-14",
+   "category": "transport",
+   "text": {
+    "en": "Ljubljana's historic centre is largely closed to regular traffic, so the best way to explore it is on foot or by bike.",
+    "it": "Il centro storico di Lubiana è in gran parte chiuso al traffico ordinario, quindi il modo migliore per esplorarlo è a piedi o in bicicletta.",
+    "es": "El casco antiguo de Liubliana está en gran parte cerrado al tráfico normal, así que lo mejor es recorrerlo a pie o en bicicleta.",
+    "pt": "O centro histórico de Liubliana está em grande parte fechado ao trânsito normal, por isso a melhor forma de o explorar é a pé ou de bicicleta.",
+    "pt_BR": "O centro histórico de Liubliana é em grande parte fechado ao trânsito comum, então a melhor forma de explorá-lo é a pé ou de bicicleta.",
+    "fr": "Le centre historique de Ljubljana est en grande partie fermé à la circulation ordinaire ; le mieux est de l'explorer à pied ou à vélo.",
+    "de": "Die Altstadt von Ljubljana ist weitgehend für den normalen Verkehr gesperrt. Am besten erkundest du sie zu Fuß oder mit dem Fahrrad."
+   }
+  },
+  {
+   "id": "ct-SI-15",
+   "category": "transport",
+   "text": {
+    "en": "To drive on Slovenian motorways you need an electronic vignette. Buy it before you enter the motorway, online or at a petrol station.",
+    "it": "Per percorrere le autostrade slovene serve una vignetta elettronica. Acquistala prima di entrare in autostrada, online o in una stazione di servizio.",
+    "es": "Para circular por las autopistas eslovenas hace falta una viñeta electrónica. Cómprala antes de entrar en la autopista, en línea o en una gasolinera.",
+    "pt": "Para circular nas autoestradas eslovenas é preciso uma vinheta eletrónica. Compra-a antes de entrares na autoestrada, online ou numa bomba de gasolina.",
+    "pt_BR": "Para andar nas rodovias eslovenas é preciso uma vinheta eletrônica. Compre antes de entrar na rodovia, on-line ou em um posto de gasolina.",
+    "fr": "Pour rouler sur les autoroutes slovènes, il faut une vignette électronique. Achète-la avant d'entrer sur l'autoroute, en ligne ou dans une station-service.",
+    "de": "Für die slowenischen Autobahnen brauchst du eine elektronische Vignette. Kaufe sie, bevor du auf die Autobahn fährst, online oder an einer Tankstelle."
+   }
+  },
+  {
+   "id": "ct-SI-16",
+   "category": "language",
+   "text": {
+    "en": "Slovenian is a Slavic language that keeps a dual form for exactly two people or things. Do not worry about mistakes; locals appreciate the effort.",
+    "it": "Lo sloveno è una lingua slava che conserva il duale per indicare esattamente due persone o cose. Non temere gli errori: gli sloveni apprezzano lo sforzo.",
+    "es": "El esloveno es una lengua eslava que conserva el dual para referirse a exactamente dos personas o cosas. No te preocupes por los errores: se agradece el esfuerzo.",
+    "pt": "O esloveno é uma língua eslava que mantém o dual para referir exatamente duas pessoas ou coisas. Não te preocupes com os erros: o esforço é apreciado.",
+    "pt_BR": "O esloveno é uma língua eslava que mantém o dual para se referir a exatamente duas pessoas ou coisas. Não se preocupe com erros: o esforço é apreciado.",
+    "fr": "Le slovène est une langue slave qui a conservé le duel pour désigner exactement deux personnes ou choses. Ne t'inquiète pas des erreurs : l'effort est apprécié.",
+    "de": "Slowenisch ist eine slawische Sprache mit einem Dual für genau zwei Personen oder Dinge. Keine Angst vor Fehlern: Die Mühe wird geschätzt."
+   }
+  },
+  {
+   "id": "ct-SI-17",
+   "category": "language",
+   "text": {
+    "en": "Many Slovenes speak very good English, German or Italian, but a few words like \"hvala\" (thanks) and \"prosim\" (please) are always welcome.",
+    "it": "Molti sloveni parlano molto bene inglese, tedesco o italiano, ma qualche parola come \"hvala\" (grazie) e \"prosim\" (prego, per favore) è sempre gradita.",
+    "es": "Muchos eslovenos hablan muy bien inglés, alemán o italiano, pero unas pocas palabras como \"hvala\" (gracias) y \"prosim\" (por favor) siempre se agradecen.",
+    "pt": "Muitos eslovenos falam muito bem inglês, alemão ou italiano, mas algumas palavras como \"hvala\" (obrigado) e \"prosim\" (por favor) são sempre bem-vindas.",
+    "pt_BR": "Muitos eslovenos falam muito bem inglês, alemão ou italiano, mas algumas palavras como \"hvala\" (obrigado) e \"prosim\" (por favor) são sempre bem-vindas.",
+    "fr": "Beaucoup de Slovènes parlent très bien anglais, allemand ou italien, mais quelques mots comme \"hvala\" (merci) et \"prosim\" (s'il te plaît) font toujours plaisir.",
+    "de": "Viele Slowenen sprechen sehr gut Englisch, Deutsch oder Italienisch, doch ein paar Wörter wie \"hvala\" (danke) und \"prosim\" (bitte) kommen immer gut an."
+   }
+  },
+  {
+   "id": "ct-SI-18",
+   "category": "festivals",
+   "text": {
+    "en": "Kurentovanje in Ptuj is Slovenia's best-known carnival. Masked figures called Kurenti, wearing fur and bells, parade through town to chase away winter.",
+    "it": "Il Kurentovanje di Ptuj è il carnevale più famoso della Slovenia. Figure mascherate chiamate Kurenti, con pelliccia e campanacci, sfilano per la città per scacciare l'inverno.",
+    "es": "El Kurentovanje de Ptuj es el carnaval más conocido de Eslovenia. Unas figuras enmascaradas llamadas Kurenti, con pieles y cascabeles, desfilan por la ciudad para ahuyentar el invierno.",
+    "pt": "O Kurentovanje de Ptuj é o carnaval mais conhecido da Eslovénia. Figuras mascaradas chamadas Kurenti, com peles e chocalhos, desfilam pela cidade para afugentar o inverno.",
+    "pt_BR": "O Kurentovanje de Ptuj é o carnaval mais conhecido da Eslovênia. Figuras mascaradas chamadas Kurenti, com peles e chocalhos, desfilam pela cidade para espantar o inverno.",
+    "fr": "Le Kurentovanje de Ptuj est le carnaval le plus connu de Slovénie. Des figures masquées appelées Kurenti, vêtues de fourrure et de cloches, défilent dans la ville pour chasser l'hiver.",
+    "de": "Das Kurentovanje in Ptuj ist Sloweniens bekanntester Karneval. Maskierte Gestalten, die Kurenti, ziehen in Fell und mit Glocken durch die Stadt, um den Winter zu vertreiben."
+   }
+  },
+  {
+   "id": "ct-SI-19",
+   "category": "festivals",
+   "text": {
+    "en": "On 8 February, Prešeren Day, Slovenes honour national poet France Prešeren. It is the national day of culture, and shops and offices are closed.",
+    "it": "L'8 febbraio, giorno di Prešeren, gli sloveni onorano il poeta nazionale France Prešeren. È la festa nazionale della cultura e negozi e uffici sono chiusi.",
+    "es": "El 8 de febrero, Día de Prešeren, los eslovenos rinden homenaje al poeta nacional France Prešeren. Es el día nacional de la cultura y tiendas y oficinas están cerradas.",
+    "pt": "A 8 de fevereiro, Dia de Prešeren, os eslovenos homenageiam o poeta nacional France Prešeren. É o dia nacional da cultura e as lojas e os escritórios estão fechados.",
+    "pt_BR": "Em 8 de fevereiro, Dia de Prešeren, os eslovenos homenageiam o poeta nacional France Prešeren. É o dia nacional da cultura, e lojas e escritórios ficam fechados.",
+    "fr": "Le 8 février, jour de Prešeren, les Slovènes rendent hommage au poète national France Prešeren. C'est la fête nationale de la culture, et les magasins et bureaux sont fermés.",
+    "de": "Am 8. Februar, dem Prešeren-Tag, ehren die Slowenen ihren Nationaldichter France Prešeren. Es ist der Nationalfeiertag der Kultur, Geschäfte und Büros sind geschlossen."
+   }
+  },
+  {
+   "id": "ct-SI-20",
+   "category": "festivals",
+   "text": {
+    "en": "World Bee Day is on 20 May. The United Nations adopted it after a proposal from Slovenia, a country with a very strong beekeeping tradition.",
+    "it": "La Giornata mondiale delle api è il 20 maggio. Le Nazioni Unite l'hanno istituita su proposta della Slovenia, un paese con una fortissima tradizione apicola.",
+    "es": "El Día Mundial de las Abejas es el 20 de mayo. Las Naciones Unidas lo adoptaron a propuesta de Eslovenia, un país con una tradición apícola muy fuerte.",
+    "pt": "O Dia Mundial das Abelhas é a 20 de maio. As Nações Unidas adotaram-no por proposta da Eslovénia, um país com uma tradição apícola muito forte.",
+    "pt_BR": "O Dia Mundial das Abelhas é em 20 de maio. As Nações Unidas o adotaram por proposta da Eslovênia, um país com uma tradição apícola muito forte.",
+    "fr": "La Journée mondiale des abeilles a lieu le 20 mai. L'ONU l'a adoptée sur proposition de la Slovénie, un pays à la très forte tradition apicole.",
+    "de": "Der Weltbienentag ist am 20. Mai. Die Vereinten Nationen haben ihn auf Vorschlag Sloweniens eingeführt, einem Land mit sehr starker Imkertradition."
+   }
+  },
+  {
+   "id": "ct-SI-21",
+   "category": "family",
+   "text": {
+    "en": "Family ties are strong, and many families gather for a long Sunday lunch. Avoid planning a quick meeting with a local friend then.",
+    "it": "I legami familiari sono forti e molte famiglie si riuniscono per un lungo pranzo domenicale. In quel momento evita di proporre a un amico locale un incontro veloce.",
+    "es": "Los lazos familiares son fuertes y muchas familias se reúnen para un largo almuerzo dominical. Evita proponer a un amigo local una cita rápida en ese momento.",
+    "pt": "Os laços familiares são fortes e muitas famílias reúnem-se para um longo almoço de domingo. Evita propor um encontro rápido a um amigo local a essa hora.",
+    "pt_BR": "Os laços familiares são fortes e muitas famílias se reúnem para um longo almoço de domingo. Evite propor um encontro rápido a um amigo local nessa hora.",
+    "fr": "Les liens familiaux sont forts et beaucoup de familles se retrouvent pour un long déjeuner dominical. Évite alors de proposer un rendez-vous rapide à un ami local.",
+    "de": "Familienbande sind stark, und viele Familien treffen sich zu einem langen Sonntagsessen. Plane dann kein kurzes Treffen mit einem einheimischen Freund."
+   }
+  },
+  {
+   "id": "ct-SI-22",
+   "category": "money",
+   "text": {
+    "en": "Slovenia uses the euro. Cards are widely accepted, but carry some cash for mountain huts, farm stalls and village markets.",
+    "it": "La Slovenia usa l'euro. Le carte sono ampiamente accettate, ma porta un po' di contanti per i rifugi di montagna, le bancarelle delle fattorie e i mercati dei villaggi.",
+    "es": "Eslovenia usa el euro. Las tarjetas se aceptan en casi todas partes, pero lleva algo de efectivo para los refugios de montaña, los puestos de las granjas y los mercados de los pueblos.",
+    "pt": "A Eslovénia usa o euro. Os cartões são aceites na maioria dos sítios, mas leva algum dinheiro para os abrigos de montanha, as bancas das quintas e os mercados das aldeias.",
+    "pt_BR": "A Eslovênia usa o euro. Os cartões são aceitos na maioria dos lugares, mas leve algum dinheiro em espécie para os refúgios de montanha, barracas de fazenda e feiras de vilarejos.",
+    "fr": "La Slovénie utilise l'euro. Les cartes sont largement acceptées, mais prévois un peu d'espèces pour les refuges de montagne, les étals de ferme et les marchés de village.",
+    "de": "Slowenien nutzt den Euro. Karten werden fast überall akzeptiert, aber nimm etwas Bargeld für Berghütten, Hofstände und Dorfmärkte mit."
+   }
+  },
+  {
+   "id": "ct-SI-23",
+   "category": "photography",
+   "text": {
+    "en": "Photographing landscapes and town scenes is fine. Ask before taking close-up photos of people, especially at private events or inside churches.",
+    "it": "Fotografare paesaggi e scorci cittadini va benissimo. Chiedi il permesso prima di fare foto ravvicinate alle persone, soprattutto a eventi privati o dentro le chiese.",
+    "es": "Fotografiar paisajes y escenas urbanas no suele ser problema. Pide permiso antes de hacer fotos de cerca a las personas, sobre todo en eventos privados o dentro de iglesias.",
+    "pt": "Fotografar paisagens e cenas da cidade não é problema. Pede licença antes de fotografar pessoas de perto, sobretudo em eventos privados ou dentro das igrejas.",
+    "pt_BR": "Fotografar paisagens e cenas da cidade não é problema. Peça licença antes de fotografar pessoas de perto, principalmente em eventos privados ou dentro de igrejas.",
+    "fr": "Photographier les paysages et les scènes de rue ne pose pas de problème. Demande avant de photographier des personnes de près, surtout lors d'événements privés ou dans les églises.",
+    "de": "Landschaften und Stadtszenen zu fotografieren ist in Ordnung. Frag, bevor du Menschen aus der Nähe fotografierst, besonders bei privaten Veranstaltungen oder in Kirchen."
+   }
+  },
+  {
+   "id": "ct-SI-24",
+   "category": "nightlife",
+   "text": {
+    "en": "Evenings often revolve around café and bar terraces, such as along the Ljubljanica river. People like to linger over a coffee or a drink and chat.",
+    "it": "Le serate ruotano spesso intorno ai dehors di caffè e bar, come quelli lungo il fiume Ljubljanica. Si ama trattenersi a chiacchierare davanti a un caffè o a una bevanda.",
+    "es": "Las noches suelen girar en torno a las terrazas de cafés y bares, como las del río Ljubljanica. A la gente le gusta quedarse charlando con un café o una copa.",
+    "pt": "As noites giram muitas vezes em torno das esplanadas de cafés e bares, como as do rio Ljubljanica. As pessoas gostam de ficar a conversar com um café ou uma bebida.",
+    "pt_BR": "As noites costumam girar em torno dos terraços de cafés e bares, como os do rio Ljubljanica. As pessoas gostam de ficar conversando com um café ou uma bebida.",
+    "fr": "Les soirées tournent souvent autour des terrasses de cafés et de bars, comme celles le long de la Ljubljanica. On aime s'attarder en discutant autour d'un café ou d'un verre.",
+    "de": "Die Abende spielen sich oft auf den Café- und Barterrassen ab, etwa entlang der Ljubljanica. Man sitzt gern lange bei einem Kaffee oder Getränk zusammen und plaudert."
+   }
+  },
+  {
+   "id": "ct-SI-25",
+   "category": "nature",
+   "text": {
+    "en": "Slovenia is very green and well marked for hikers. Stay on marked trails, and note that wild camping is generally not allowed, so use campsites.",
+    "it": "La Slovenia è molto verde e ben segnalata per gli escursionisti. Resta sui sentieri segnati e tieni presente che il campeggio libero in genere non è consentito: usa i campeggi.",
+    "es": "Eslovenia es muy verde y está bien señalizada para senderistas. Sigue los senderos marcados y ten en cuenta que, por lo general, no se permite acampar libremente: usa los campings.",
+    "pt": "A Eslovénia é muito verde e bem sinalizada para caminhantes. Segue os trilhos marcados e tem em conta que o campismo livre geralmente não é permitido; usa os parques de campismo.",
+    "pt_BR": "A Eslovênia é muito verde e bem sinalizada para quem faz trilhas. Fique nas trilhas marcadas e lembre que acampar livremente geralmente não é permitido; use os campings.",
+    "fr": "La Slovénie est très verte et bien balisée pour les randonneurs. Reste sur les sentiers balisés et sache que le camping sauvage n'est en général pas autorisé : utilise les campings.",
+    "de": "Slowenien ist sehr grün und für Wanderer gut markiert. Bleib auf den markierten Wegen und beachte, dass wildes Campen meist nicht erlaubt ist; nutze Campingplätze."
+   }
+  },
+  {
+   "id": "ct-SI-26",
+   "category": "nature",
+   "text": {
+    "en": "Tap water is safe to drink across Slovenia. Carry a reusable bottle and refill it at public fountains instead of buying plastic bottles.",
+    "it": "In tutta la Slovenia l'acqua del rubinetto è potabile. Porta una borraccia e riempila alle fontanelle pubbliche invece di comprare bottigliette di plastica.",
+    "es": "En toda Eslovenia se puede beber agua del grifo. Lleva una botella reutilizable y rellénala en las fuentes públicas en lugar de comprar botellas de plástico.",
+    "pt": "Em toda a Eslovénia a água da torneira é potável. Leva uma garrafa reutilizável e enche-a nas fontes públicas em vez de comprares garrafas de plástico.",
+    "pt_BR": "Em toda a Eslovênia a água da torneira é potável. Leve uma garrafa reutilizável e encha-a nas fontes públicas em vez de comprar garrafinhas de plástico.",
+    "fr": "L'eau du robinet est potable dans toute la Slovénie. Emporte une gourde et remplis-la aux fontaines publiques plutôt que d'acheter des bouteilles en plastique.",
+    "de": "Leitungswasser ist in ganz Slowenien trinkbar. Nimm eine wiederverwendbare Flasche mit und fülle sie an öffentlichen Brunnen auf, statt Plastikflaschen zu kaufen."
+   }
+  },
+  {
+   "id": "ct-SI-27",
+   "category": "safety",
+   "text": {
+    "en": "Slovenia is generally very safe. Mountain weather can change fast, so check the forecast, tell someone your route and call 112 in an emergency.",
+    "it": "La Slovenia è in generale molto sicura. Il tempo in montagna può cambiare in fretta: controlla le previsioni, comunica a qualcuno il tuo percorso e chiama il 112 in caso di emergenza.",
+    "es": "Eslovenia es en general muy segura. El tiempo en la montaña puede cambiar rápido: consulta el pronóstico, avisa a alguien de tu ruta y llama al 112 en caso de emergencia.",
+    "pt": "A Eslovénia é em geral muito segura. O tempo na montanha pode mudar depressa: consulta a previsão, avisa alguém do teu percurso e liga para o 112 em caso de emergência.",
+    "pt_BR": "A Eslovênia é em geral muito segura. O tempo na montanha pode mudar rápido: confira a previsão, avise alguém sobre o seu trajeto e ligue 112 em caso de emergência.",
+    "fr": "La Slovénie est en général très sûre. Le temps en montagne peut changer vite : consulte la météo, indique ton itinéraire à quelqu'un et appelle le 112 en cas d'urgence.",
+    "de": "Slowenien ist im Allgemeinen sehr sicher. Das Bergwetter kann schnell umschlagen: Prüfe die Vorhersage, sag jemandem deine Route und wähle im Notfall die 112."
+   }
+  },
+  {
+   "id": "ct-SI-28",
+   "category": "local_pride",
+   "text": {
+    "en": "Triglav, the highest mountain, appears on the national flag. Many Slovenes feel that everyone should climb it at least once in their life.",
+    "it": "Il Triglav, la montagna più alta, compare sulla bandiera nazionale. Molti sloveni ritengono che tutti dovrebbero scalarlo almeno una volta nella vita.",
+    "es": "El Triglav, la montaña más alta, aparece en la bandera nacional. Muchos eslovenos creen que todo el mundo debería subirlo al menos una vez en la vida.",
+    "pt": "O Triglav, a montanha mais alta, aparece na bandeira nacional. Muitos eslovenos acham que todos deviam subi-lo pelo menos uma vez na vida.",
+    "pt_BR": "O Triglav, a montanha mais alta, aparece na bandeira nacional. Muitos eslovenos acham que todo mundo deveria subir nele pelo menos uma vez na vida.",
+    "fr": "Le Triglav, la plus haute montagne, figure sur le drapeau national. Beaucoup de Slovènes pensent que chacun devrait le gravir au moins une fois dans sa vie.",
+    "de": "Der Triglav, der höchste Berg, ist auf der Nationalflagge abgebildet. Viele Slowenen finden, dass jeder ihn mindestens einmal im Leben besteigen sollte."
+   }
+  },
+  {
+   "id": "ct-SI-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Beekeeping is a proud national tradition, and local honey is a favourite souvenir. Slovenia is also often mistaken for Slovakia, so do not mix them up.",
+    "it": "L'apicoltura è una tradizione nazionale di cui gli sloveni vanno fieri e il miele locale è un souvenir molto amato. La Slovenia viene spesso confusa con la Slovacchia: non scambiarle.",
+    "es": "La apicultura es una tradición nacional de la que se sienten orgullosos y la miel local es un recuerdo muy popular. A Eslovenia a menudo se la confunde con Eslovaquia: no las mezcles.",
+    "pt": "A apicultura é uma tradição nacional de que se orgulham e o mel local é uma lembrança muito apreciada. A Eslovénia é muitas vezes confundida com a Eslováquia, por isso não as troques.",
+    "pt_BR": "A apicultura é uma tradição nacional da qual se orgulham, e o mel local é uma lembrança muito popular. A Eslovênia costuma ser confundida com a Eslováquia, então não as troque.",
+    "fr": "L'apiculture est une tradition nationale dont on est fier, et le miel local est un souvenir très apprécié. La Slovénie est souvent confondue avec la Slovaquie : ne les mélange pas.",
+    "de": "Die Imkerei ist eine stolze nationale Tradition, und lokaler Honig ist ein beliebtes Souvenir. Slowenien wird oft mit der Slowakei verwechselt, also wirf die beiden nicht durcheinander."
+   }
+  },
+  {
+   "id": "ct-SI-30",
+   "category": "conversation",
+   "text": {
+    "en": "Slovenes can seem reserved at first but warm up quickly. Avoid asking too early about politics or the Yugoslav past; travel, food and nature are safer topics.",
+    "it": "Gli sloveni possono sembrare riservati all'inizio, ma si aprono in fretta. Evita di chiedere troppo presto di politica o del passato jugoslavo; viaggi, cibo e natura sono argomenti più sicuri.",
+    "es": "Los eslovenos pueden parecer reservados al principio, pero entran en confianza rápido. Evita preguntar pronto por política o por el pasado yugoslavo; viajes, comida y naturaleza son temas más seguros.",
+    "pt": "Os eslovenos podem parecer reservados ao início, mas descontraem depressa. Evita perguntar cedo demais sobre política ou o passado jugoslavo; viagens, comida e natureza são temas mais seguros.",
+    "pt_BR": "Os eslovenos podem parecer reservados no início, mas se soltam rápido. Evite perguntar cedo demais sobre política ou o passado iugoslavo; viagens, comida e natureza são assuntos mais seguros.",
+    "fr": "Les Slovènes peuvent sembler réservés au début, mais ils se détendent vite. Évite de poser trop tôt des questions sur la politique ou le passé yougoslave ; voyages, cuisine et nature sont des sujets plus sûrs.",
+    "de": "Slowenen wirken anfangs vielleicht zurückhaltend, tauen aber schnell auf. Frag nicht zu früh nach Politik oder der jugoslawischen Vergangenheit; Reisen, Essen und Natur sind sicherere Themen."
+   }
+  }
+ ],
+ "SK": [
+  {
+   "id": "ct-SK-01",
+   "category": "greetings",
+   "text": {
+    "en": "A handshake is the usual greeting, with \"Dobrý deň\" (good day) for strangers. Friends say \"Ahoj\" or \"Čau\" for both hello and goodbye.",
+    "it": "Di solito ci si stringe la mano, con \"Dobrý deň\" (buongiorno) per gli sconosciuti. Tra amici si dice \"Ahoj\" o \"Čau\" sia per salutare sia per congedarsi.",
+    "es": "Lo habitual es dar la mano, con \"Dobrý deň\" (buenos días) para los desconocidos. Entre amigos se dice \"Ahoj\" o \"Čau\" tanto para saludar como para despedirse.",
+    "pt": "O habitual é apertar a mão, com \"Dobrý deň\" (bom dia) para desconhecidos. Entre amigos diz-se \"Ahoj\" ou \"Čau\" tanto para olá como para adeus.",
+    "pt_BR": "O habitual é apertar a mão, com \"Dobrý deň\" (bom dia) para desconhecidos. Entre amigos diz-se \"Ahoj\" ou \"Čau\" tanto para oi quanto para tchau.",
+    "fr": "On se serre généralement la main, avec \"Dobrý deň\" (bonjour) pour les inconnus. Entre amis, on dit \"Ahoj\" ou \"Čau\" pour dire bonjour comme au revoir.",
+    "de": "Üblich ist ein Händedruck, mit \"Dobrý deň\" (guten Tag) für Fremde. Unter Freunden sagt man \"Ahoj\" oder \"Čau\" sowohl zur Begrüßung als auch zum Abschied."
+   }
+  },
+  {
+   "id": "ct-SK-02",
+   "category": "greetings",
+   "text": {
+    "en": "In formal settings people often use titles and surnames, including academic ones like \"Ing.\" or \"Mgr.\". Wait for the other person to offer first names.",
+    "it": "In contesti formali si usano spesso titoli e cognomi, compresi quelli accademici come \"Ing.\" o \"Mgr.\". Aspetta che sia l'altra persona a proporre di usare il nome.",
+    "es": "En contextos formales se suelen usar títulos y apellidos, incluidos los académicos como \"Ing.\" o \"Mgr.\". Espera a que la otra persona proponga tutearse por el nombre.",
+    "pt": "Em contextos formais usam-se muitas vezes títulos e apelidos, incluindo os académicos como \"Ing.\" ou \"Mgr.\". Espera que a outra pessoa proponha o uso do primeiro nome.",
+    "pt_BR": "Em contextos formais costumam-se usar títulos e sobrenomes, inclusive os acadêmicos como \"Ing.\" ou \"Mgr.\". Espere a outra pessoa propor o uso do primeiro nome.",
+    "fr": "Dans les contextes formels, on utilise souvent les titres et les noms de famille, y compris les titres universitaires comme \"Ing.\" ou \"Mgr.\". Attends que l'autre propose de passer au prénom.",
+    "de": "In formellen Situationen verwendet man oft Titel und Nachnamen, auch akademische wie \"Ing.\" oder \"Mgr.\". Warte, bis dir die andere Person das Du und den Vornamen anbietet."
+   }
+  },
+  {
+   "id": "ct-SK-03",
+   "category": "conversation",
+   "text": {
+    "en": "Slovaks enjoy talking about mountains, hiking, ice hockey and food. Ask about favourite places in the Tatras or a family recipe.",
+    "it": "Agli slovacchi piace parlare di montagne, escursioni, hockey su ghiaccio e cibo. Chiedi quali sono i loro posti preferiti sui Tatra o una ricetta di famiglia.",
+    "es": "A los eslovacos les gusta hablar de montañas, senderismo, hockey sobre hielo y comida. Pregunta por sus lugares favoritos de los Tatras o por una receta familiar.",
+    "pt": "Os eslovacos gostam de falar de montanhas, caminhadas, hóquei no gelo e comida. Pergunta pelos seus sítios preferidos nos Tatras ou por uma receita de família.",
+    "pt_BR": "Os eslovacos gostam de falar de montanhas, trilhas, hóquei no gelo e comida. Pergunte pelos lugares favoritos deles nos Tatras ou por uma receita de família.",
+    "fr": "Les Slovaques aiment parler de montagne, de randonnée, de hockey sur glace et de cuisine. Demande-leur leurs endroits préférés dans les Tatras ou une recette de famille.",
+    "de": "Slowaken sprechen gern über Berge, Wandern, Eishockey und Essen. Frag nach Lieblingsorten in der Tatra oder nach einem Familienrezept."
+   }
+  },
+  {
+   "id": "ct-SK-04",
+   "category": "dining",
+   "text": {
+    "en": "Bryndzové halušky, potato dumplings with sheep cheese, are the national dish and a fixture on traditional menus. Try them at least once.",
+    "it": "Le bryndzové halušky, gnocchetti di patate con formaggio di pecora, sono il piatto nazionale e non mancano nei menu tradizionali. Assaggiali almeno una volta.",
+    "es": "Los bryndzové halušky, ñoquis de patata con queso de oveja, son el plato nacional y no faltan en los menús tradicionales. Pruébalos al menos una vez.",
+    "pt": "Os bryndzové halušky, pequenos nhoques de batata com queijo de ovelha, são o prato nacional e não faltam nas ementas tradicionais. Experimenta pelo menos uma vez.",
+    "pt_BR": "Os bryndzové halušky, pequenos nhoques de batata com queijo de ovelha, são o prato nacional e não faltam nos cardápios tradicionais. Experimente pelo menos uma vez.",
+    "fr": "Les bryndzové halušky, des gnocchis de pommes de terre au fromage de brebis, sont le plat national et figurent sur tous les menus traditionnels. Goûte-les au moins une fois.",
+    "de": "Bryndzové halušky, Kartoffelnockerl mit Schafskäse, sind das Nationalgericht und gehören auf jede traditionelle Speisekarte. Probier sie mindestens einmal."
+   }
+  },
+  {
+   "id": "ct-SK-05",
+   "category": "dining",
+   "text": {
+    "en": "Before eating people say \"Dobrú chuť\" (enjoy your meal). At home, wait until everyone is served, and expect the host to offer second helpings.",
+    "it": "Prima di mangiare si dice \"Dobrú chuť\" (buon appetito). A casa si aspetta che tutti siano serviti e il padrone di casa di solito offre il bis.",
+    "es": "Antes de comer se dice \"Dobrú chuť\" (buen provecho). En casa se espera a que todos estén servidos, y el anfitrión suele ofrecer repetir.",
+    "pt": "Antes de comer diz-se \"Dobrú chuť\" (bom apetite). Em casa espera-se que todos estejam servidos e o anfitrião costuma oferecer repetição.",
+    "pt_BR": "Antes de comer diz-se \"Dobrú chuť\" (bom apetite). Em casa, espera-se que todos estejam servidos, e o anfitrião costuma oferecer repetição.",
+    "fr": "Avant de manger, on dit \"Dobrú chuť\" (bon appétit). À la maison, on attend que tout le monde soit servi, et l'hôte propose souvent de se resservir.",
+    "de": "Vor dem Essen sagt man \"Dobrú chuť\" (guten Appetit). Zu Hause wartet man, bis alle bedient sind, und der Gastgeber bietet meist einen Nachschlag an."
+   }
+  },
+  {
+   "id": "ct-SK-06",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping about 10 percent in restaurants is common if service was good. Many people simply round up the bill and say the final amount when paying.",
+    "it": "Lasciare circa il 10 percento al ristorante è comune se il servizio è stato buono. Molti arrotondano il conto e dicono la cifra finale al momento di pagare.",
+    "es": "Dejar alrededor de un 10 por ciento en los restaurantes es habitual si el servicio fue bueno. Mucha gente redondea la cuenta y dice la cantidad final al pagar.",
+    "pt": "Deixar cerca de 10 por cento nos restaurantes é habitual se o serviço foi bom. Muita gente arredonda a conta e diz o valor final ao pagar.",
+    "pt_BR": "Deixar cerca de 10 por cento nos restaurantes é comum se o atendimento foi bom. Muita gente arredonda a conta e diz o valor final na hora de pagar.",
+    "fr": "Laisser environ 10 pour cent au restaurant est courant si le service était bon. Beaucoup de gens arrondissent l'addition et annoncent le montant final en payant.",
+    "de": "Im Restaurant sind etwa 10 Prozent Trinkgeld bei gutem Service üblich. Viele runden auf und nennen beim Bezahlen den Endbetrag."
+   }
+  },
+  {
+   "id": "ct-SK-07",
+   "category": "gifts",
+   "text": {
+    "en": "If invited to a home, bring flowers, chocolates or something sweet for the host. Many people give an odd number of flowers.",
+    "it": "Se sei invitato a casa di qualcuno, porta fiori, cioccolatini o qualcosa di dolce per chi ti ospita. Molti regalano un numero dispari di fiori.",
+    "es": "Si te invitan a una casa, lleva flores, bombones o algo dulce para el anfitrión. Mucha gente regala un número impar de flores.",
+    "pt": "Se fores convidado para casa de alguém, leva flores, chocolates ou algo doce para o anfitrião. Muita gente oferece um número ímpar de flores.",
+    "pt_BR": "Se você for convidado para a casa de alguém, leve flores, chocolates ou algo doce para o anfitrião. Muita gente dá um número ímpar de flores.",
+    "fr": "Si tu es invité chez quelqu'un, apporte des fleurs, des chocolats ou une douceur pour l'hôte. Beaucoup de gens offrent un nombre impair de fleurs.",
+    "de": "Wenn du zu jemandem nach Hause eingeladen bist, bring Blumen, Pralinen oder etwas Süßes für den Gastgeber mit. Viele schenken eine ungerade Anzahl von Blumen."
+   }
+  },
+  {
+   "id": "ct-SK-08",
+   "category": "gifts",
+   "text": {
+    "en": "Name days (meniny) are widely celebrated. A short greeting, a small gift or a card on someone's name day is a warm gesture.",
+    "it": "Gli onomastici (meniny) sono molto festeggiati. Un breve augurio, un piccolo regalo o un biglietto nel giorno dell'onomastico di qualcuno è un gesto gentile.",
+    "es": "Los santos o días del nombre (meniny) se celebran mucho. Una felicitación breve, un detalle o una tarjeta en el día del nombre de alguien es un gesto cálido.",
+    "pt": "Os dias do nome (meniny) são muito celebrados. Uma saudação breve, uma pequena prenda ou um cartão no dia do nome de alguém é um gesto caloroso.",
+    "pt_BR": "Os dias do nome (meniny) são muito comemorados. Uma saudação curta, um presentinho ou um cartão no dia do nome de alguém é um gesto caloroso.",
+    "fr": "Les fêtes des prénoms (meniny) sont très célébrées. Un petit mot, un petit cadeau ou une carte le jour de la fête de quelqu'un est un geste chaleureux.",
+    "de": "Namenstage (meniny) werden weithin gefeiert. Ein kurzer Gruß, ein kleines Geschenk oder eine Karte zum Namenstag ist eine herzliche Geste."
+   }
+  },
+  {
+   "id": "ct-SK-09",
+   "category": "dress",
+   "text": {
+    "en": "Dress is neat and fairly casual in cities. In the mountains people wear sturdy hiking gear, and for theatre or formal events a smart outfit is expected.",
+    "it": "Nelle città l'abbigliamento è curato e abbastanza informale. In montagna si indossa un equipaggiamento da escursionismo robusto e a teatro o negli eventi formali ci si aspetta un abito elegante.",
+    "es": "En las ciudades la ropa es cuidada y bastante informal. En la montaña se usa equipo de senderismo resistente, y para el teatro o los actos formales se espera ropa elegante.",
+    "pt": "Nas cidades o vestuário é cuidado e bastante informal. Na montanha usa-se equipamento de caminhada resistente, e para o teatro ou eventos formais espera-se roupa elegante.",
+    "pt_BR": "Nas cidades o vestuário é arrumado e bastante informal. Na montanha usa-se equipamento resistente de trilha, e para teatro ou eventos formais espera-se roupa elegante.",
+    "fr": "En ville, la tenue est soignée et plutôt décontractée. En montagne, on porte un équipement de randonnée robuste, et pour le théâtre ou les événements formels une tenue élégante est attendue.",
+    "de": "In den Städten kleidet man sich gepflegt und eher leger. In den Bergen trägt man robuste Wanderausrüstung, für Theater oder formelle Anlässe wird elegante Kleidung erwartet."
+   }
+  },
+  {
+   "id": "ct-SK-10",
+   "category": "religion_sites",
+   "text": {
+    "en": "Many Slovaks are Catholic, and churches and wooden churches are important heritage sites. Dress modestly and keep quiet during services.",
+    "it": "Molti slovacchi sono cattolici e le chiese, comprese quelle in legno, sono importanti siti del patrimonio. Vesti in modo sobrio e mantieni il silenzio durante le funzioni.",
+    "es": "Muchos eslovacos son católicos y las iglesias, incluidas las de madera, son importantes lugares patrimoniales. Vístete con modestia y guarda silencio durante los oficios.",
+    "pt": "Muitos eslovacos são católicos e as igrejas, incluindo as de madeira, são importantes locais de património. Veste-te com recato e mantém o silêncio durante as celebrações.",
+    "pt_BR": "Muitos eslovacos são católicos, e as igrejas, inclusive as de madeira, são importantes locais de patrimônio. Vista-se com discrição e mantenha silêncio durante as celebrações.",
+    "fr": "Beaucoup de Slovaques sont catholiques, et les églises, y compris celles en bois, sont des sites patrimoniaux importants. Habille-toi sobrement et reste silencieux pendant les offices.",
+    "de": "Viele Slowaken sind katholisch, und Kirchen, auch die aus Holz, sind wichtige Kulturdenkmäler. Kleide dich dezent und sei während der Gottesdienste leise."
+   }
+  },
+  {
+   "id": "ct-SK-11",
+   "category": "gestures",
+   "text": {
+    "en": "When toasting with \"Na zdravie!\" (cheers), look the other person in the eye as you clink glasses. Declining a drink politely is fine.",
+    "it": "Quando si brinda con \"Na zdravie!\" (cin cin), si guarda negli occhi l'altra persona mentre si tintinnano i bicchieri. Rifiutare una bevanda con garbo va benissimo.",
+    "es": "Al brindar con \"Na zdravie!\" (salud), se mira a los ojos a la otra persona mientras se chocan las copas. Rechazar una bebida con educación está bien.",
+    "pt": "Ao brindar com \"Na zdravie!\" (saúde), olha-se a outra pessoa nos olhos enquanto se tocam os copos. Recusar uma bebida com delicadeza é perfeitamente aceitável.",
+    "pt_BR": "Ao brindar com \"Na zdravie!\" (saúde), olha-se a outra pessoa nos olhos enquanto os copos se tocam. Recusar uma bebida com educação é perfeitamente aceitável.",
+    "fr": "En trinquant avec \"Na zdravie !\" (santé), on regarde l'autre dans les yeux en faisant tinter les verres. Refuser poliment une boisson ne pose aucun problème.",
+    "de": "Beim Anstoßen mit \"Na zdravie!\" (Prost) schaut man der anderen Person in die Augen. Ein Getränk höflich abzulehnen ist völlig in Ordnung."
+   }
+  },
+  {
+   "id": "ct-SK-12",
+   "category": "punctuality",
+   "text": {
+    "en": "Punctuality is appreciated for business, appointments and public transport. For private visits, arriving a few minutes late is usually fine.",
+    "it": "La puntualità è apprezzata per lavoro, appuntamenti e trasporti pubblici. Per le visite private di solito qualche minuto di ritardo non è un problema.",
+    "es": "Se aprecia la puntualidad en el trabajo, las citas y el transporte público. En visitas privadas, llegar unos minutos tarde suele estar bien.",
+    "pt": "A pontualidade é apreciada no trabalho, nos compromissos e nos transportes públicos. Em visitas privadas, chegar uns minutos atrasado costuma ser aceitável.",
+    "pt_BR": "A pontualidade é valorizada no trabalho, em compromissos e no transporte público. Em visitas particulares, chegar alguns minutos atrasado costuma ser aceitável.",
+    "fr": "La ponctualité est appréciée pour le travail, les rendez-vous et les transports en commun. Pour les visites privées, arriver quelques minutes en retard passe généralement très bien.",
+    "de": "Pünktlichkeit wird bei der Arbeit, bei Terminen und im öffentlichen Verkehr geschätzt. Bei privaten Besuchen ist ein paar Minuten Verspätung meist kein Problem."
+   }
+  },
+  {
+   "id": "ct-SK-13",
+   "category": "public_behavior",
+   "text": {
+    "en": "It is polite to give up your seat to older people, pregnant women and parents with small children on buses and trams, and to keep your voice low.",
+    "it": "È educato cedere il posto agli anziani, alle donne incinte e ai genitori con bambini piccoli su autobus e tram, e parlare a voce bassa.",
+    "es": "Es de buena educación ceder el asiento a personas mayores, embarazadas y padres con niños pequeños en autobuses y tranvías, y hablar en voz baja.",
+    "pt": "É educado ceder o lugar a idosos, grávidas e pais com crianças pequenas nos autocarros e elétricos, e falar em voz baixa.",
+    "pt_BR": "É educado ceder o lugar a idosos, grávidas e pais com crianças pequenas em ônibus e bondes, e falar em voz baixa.",
+    "fr": "Il est poli de céder sa place aux personnes âgées, aux femmes enceintes et aux parents avec de jeunes enfants dans les bus et les trams, et de parler à voix basse.",
+    "de": "Es gilt als höflich, in Bussen und Straßenbahnen älteren Menschen, Schwangeren und Eltern mit kleinen Kindern den Platz anzubieten und leise zu sprechen."
+   }
+  },
+  {
+   "id": "ct-SK-14",
+   "category": "transport",
+   "text": {
+    "en": "Buy your ticket before boarding or validate it as required, since inspectors do check. Bratislava has an easy tram, bus and trolleybus network.",
+    "it": "Compra il biglietto prima di salire o convalidalo come richiesto, perché i controllori passano davvero. Bratislava ha una rete semplice di tram, autobus e filobus.",
+    "es": "Compra el billete antes de subir o valídalo según se exija, porque los revisores sí pasan. Bratislava tiene una red sencilla de tranvías, autobuses y trolebuses.",
+    "pt": "Compra o bilhete antes de entrar ou valida-o conforme exigido, pois há fiscais. Bratislava tem uma rede simples de elétricos, autocarros e troleicarros.",
+    "pt_BR": "Compre a passagem antes de embarcar ou valide-a conforme exigido, pois há fiscais. Bratislava tem uma rede simples de bondes, ônibus e trólebus.",
+    "fr": "Achète ton billet avant de monter ou valide-le selon les règles, car les contrôleurs passent. Bratislava dispose d'un réseau simple de tramways, bus et trolleybus.",
+    "de": "Kaufe dein Ticket vor dem Einsteigen oder entwerte es wie vorgeschrieben, denn es wird kontrolliert. Bratislava hat ein einfaches Netz aus Straßenbahnen, Bussen und Oberleitungsbussen."
+   }
+  },
+  {
+   "id": "ct-SK-15",
+   "category": "transport",
+   "text": {
+    "en": "Trains in Slovakia are a scenic way to reach the mountains. Check the timetable in advance, as some regional lines run only a few times a day.",
+    "it": "Il treno in Slovacchia è un modo panoramico per raggiungere le montagne. Controlla gli orari in anticipo, perché alcune linee regionali passano solo poche volte al giorno.",
+    "es": "El tren en Eslovaquia es una forma panorámica de llegar a las montañas. Consulta los horarios con antelación, porque algunas líneas regionales pasan solo unas pocas veces al día.",
+    "pt": "O comboio na Eslováquia é uma forma panorâmica de chegar às montanhas. Consulta os horários com antecedência, porque algumas linhas regionais só passam poucas vezes por dia.",
+    "pt_BR": "O trem na Eslováquia é uma forma panorâmica de chegar às montanhas. Confira os horários com antecedência, porque algumas linhas regionais passam só poucas vezes por dia.",
+    "fr": "Le train en Slovaquie est un moyen pittoresque d'atteindre les montagnes. Vérifie les horaires à l'avance, car certaines lignes régionales ne circulent que quelques fois par jour.",
+    "de": "Die Bahn ist in der Slowakei eine landschaftlich schöne Art, in die Berge zu kommen. Prüfe die Fahrpläne vorher, denn manche Regionallinien fahren nur wenige Male am Tag."
+   }
+  },
+  {
+   "id": "ct-SK-16",
+   "category": "language",
+   "text": {
+    "en": "Slovak and Czech are close, but Slovaks like being recognised for their own language. Say \"ďakujem\" (thank you) and \"prosím\" (please) with a smile.",
+    "it": "Slovacco e ceco sono vicini, ma agli slovacchi piace che la loro lingua venga riconosciuta come distinta. Dì \"ďakujem\" (grazie) e \"prosím\" (per favore) con un sorriso.",
+    "es": "El eslovaco y el checo son parecidos, pero a los eslovacos les gusta que se reconozca su propia lengua. Di \"ďakujem\" (gracias) y \"prosím\" (por favor) con una sonrisa.",
+    "pt": "O eslovaco e o checo são próximos, mas os eslovacos gostam que a sua língua seja reconhecida como própria. Diz \"ďakujem\" (obrigado) e \"prosím\" (por favor) com um sorriso.",
+    "pt_BR": "O eslovaco e o tcheco são próximos, mas os eslovacos gostam que a sua língua seja reconhecida como própria. Diga \"ďakujem\" (obrigado) e \"prosím\" (por favor) com um sorriso.",
+    "fr": "Le slovaque et le tchèque sont proches, mais les Slovaques apprécient que leur langue soit reconnue comme distincte. Dis \"ďakujem\" (merci) et \"prosím\" (s'il te plaît) avec le sourire.",
+    "de": "Slowakisch und Tschechisch sind verwandt, doch Slowaken freuen sich, wenn ihre eigene Sprache anerkannt wird. Sag \"ďakujem\" (danke) und \"prosím\" (bitte) mit einem Lächeln."
+   }
+  },
+  {
+   "id": "ct-SK-17",
+   "category": "language",
+   "text": {
+    "en": "Slovak uses many accents, such as ľ, š, č and ž. Younger Slovaks usually speak good English, especially in Bratislava and Košice.",
+    "it": "Lo slovacco usa molti segni diacritici, come ľ, š, č e ž. I giovani slovacchi di solito parlano bene l'inglese, soprattutto a Bratislava e a Košice.",
+    "es": "El eslovaco usa muchos signos diacríticos, como ľ, š, č y ž. Los eslovacos jóvenes suelen hablar bien inglés, sobre todo en Bratislava y Košice.",
+    "pt": "O eslovaco usa muitos sinais diacríticos, como ľ, š, č e ž. Os jovens eslovacos costumam falar bem inglês, sobretudo em Bratislava e Košice.",
+    "pt_BR": "O eslovaco usa muitos sinais diacríticos, como ľ, š, č e ž. Os jovens eslovacos costumam falar bem inglês, principalmente em Bratislava e Košice.",
+    "fr": "Le slovaque utilise de nombreux signes diacritiques, comme ľ, š, č et ž. Les jeunes Slovaques parlent en général bien anglais, surtout à Bratislava et à Košice.",
+    "de": "Das Slowakische verwendet viele diakritische Zeichen wie ľ, š, č und ž. Jüngere Slowaken sprechen meist gut Englisch, besonders in Bratislava und Košice."
+   }
+  },
+  {
+   "id": "ct-SK-18",
+   "category": "festivals",
+   "text": {
+    "en": "On Christmas Eve (Štedrý deň), families traditionally share a festive dinner, often with cabbage soup (kapustnica) or fish and potato salad.",
+    "it": "La vigilia di Natale (Štedrý deň) le famiglie condividono tradizionalmente una cena di festa, spesso con zuppa di cavolo (kapustnica) o pesce e insalata di patate.",
+    "es": "En Nochebuena (Štedrý deň), las familias comparten tradicionalmente una cena festiva, a menudo con sopa de col (kapustnica) o pescado y ensalada de patata.",
+    "pt": "Na consoada (Štedrý deň), as famílias partilham tradicionalmente um jantar festivo, muitas vezes com sopa de couve (kapustnica) ou peixe e salada de batata.",
+    "pt_BR": "Na véspera de Natal (Štedrý deň), as famílias tradicionalmente compartilham um jantar festivo, geralmente com sopa de repolho (kapustnica) ou peixe e salada de batata.",
+    "fr": "La veille de Noël (Štedrý deň), les familles partagent traditionnellement un dîner de fête, souvent avec une soupe au chou (kapustnica) ou du poisson et une salade de pommes de terre.",
+    "de": "Am Heiligabend (Štedrý deň) essen Familien traditionell gemeinsam ein Festessen, oft mit Krautsuppe (Kapustnica) oder Fisch und Kartoffelsalat."
+   }
+  },
+  {
+   "id": "ct-SK-19",
+   "category": "festivals",
+   "text": {
+    "en": "On Easter Monday, boys traditionally sprinkle or lightly whip girls in many villages for health and beauty. Today it is a playful rural custom.",
+    "it": "Il lunedì di Pasqua, in molti villaggi i ragazzi tradizionalmente spruzzano d'acqua o frustano leggermente le ragazze per augurare salute e bellezza. Oggi è un gioco rurale.",
+    "es": "El lunes de Pascua, en muchos pueblos los chicos rocían con agua o azotan suavemente a las chicas en señal de salud y belleza. Hoy es una costumbre rural lúdica.",
+    "pt": "Na segunda-feira de Páscoa, em muitas aldeias, os rapazes tradicionalmente borrifam com água ou chicoteiam ao de leve as raparigas, para desejar saúde e beleza. Hoje é um costume rural brincalhão.",
+    "pt_BR": "Na segunda-feira de Páscoa, em muitos vilarejos, os rapazes tradicionalmente jogam água ou chicoteiam de leve as moças, para desejar saúde e beleza. Hoje é um costume rural brincalhão.",
+    "fr": "Le lundi de Pâques, dans de nombreux villages, les garçons aspergent d'eau ou fouettent légèrement les filles pour leur souhaiter santé et beauté. C'est aujourd'hui une coutume rurale ludique.",
+    "de": "Am Ostermontag besprengen Burschen in vielen Dörfern traditionell Mädchen mit Wasser oder peitschen sie leicht mit Ruten, für Gesundheit und Schönheit. Heute ist es ein spielerischer ländlicher Brauch."
+   }
+  },
+  {
+   "id": "ct-SK-20",
+   "category": "festivals",
+   "text": {
+    "en": "On 5 July, Saints Cyril and Methodius Day, Slovaks remember the two brothers who brought literacy and Christianity to the region in 863. It is a public holiday.",
+    "it": "Il 5 luglio, giorno dei Santi Cirillo e Metodio, gli slovacchi ricordano i due fratelli che nell'863 portarono alfabeto e cristianesimo nella regione. È un giorno festivo.",
+    "es": "El 5 de julio, Día de los santos Cirilo y Metodio, los eslovacos recuerdan a los dos hermanos que llevaron a la región la escritura y el cristianismo en el año 863. Es festivo.",
+    "pt": "A 5 de julho, Dia dos Santos Cirilo e Metódio, os eslovacos recordam os dois irmãos que levaram a escrita e o cristianismo à região em 863. É feriado.",
+    "pt_BR": "Em 5 de julho, Dia dos Santos Cirilo e Metódio, os eslovacos lembram os dois irmãos que levaram a escrita e o cristianismo à região em 863. É feriado.",
+    "fr": "Le 5 juillet, jour des saints Cyrille et Méthode, les Slovaques se souviennent des deux frères qui ont apporté l'écriture et le christianisme dans la région en 863. C'est un jour férié.",
+    "de": "Am 5. Juli, dem Tag der Heiligen Kyrill und Method, gedenken die Slowaken der beiden Brüder, die 863 Schrift und Christentum in die Region brachten. Es ist ein Feiertag."
+   }
+  },
+  {
+   "id": "ct-SK-21",
+   "category": "family",
+   "text": {
+    "en": "Family is central. Sunday lunch with parents and grandparents is common, and on St Nicholas Day (6 December) children receive small sweets.",
+    "it": "La famiglia è centrale. Il pranzo della domenica con genitori e nonni è comune e il giorno di San Nicola (6 dicembre) i bambini ricevono piccoli dolci.",
+    "es": "La familia es fundamental. Es habitual almorzar el domingo con padres y abuelos, y el día de San Nicolás (6 de diciembre) los niños reciben pequeños dulces.",
+    "pt": "A família é central. O almoço de domingo com pais e avós é comum e no Dia de São Nicolau (6 de dezembro) as crianças recebem pequenos doces.",
+    "pt_BR": "A família é central. O almoço de domingo com pais e avós é comum, e no Dia de São Nicolau (6 de dezembro) as crianças ganham pequenos doces.",
+    "fr": "La famille est centrale. Le déjeuner du dimanche avec parents et grands-parents est courant, et à la Saint-Nicolas (6 décembre) les enfants reçoivent de petites friandises.",
+    "de": "Die Familie steht im Mittelpunkt. Sonntagsessen mit Eltern und Großeltern ist üblich, und am Nikolaustag (6. Dezember) bekommen Kinder kleine Süßigkeiten."
+   }
+  },
+  {
+   "id": "ct-SK-22",
+   "category": "money",
+   "text": {
+    "en": "Slovakia has used the euro since 2009. Cards are accepted in most places, but keep some cash for small village shops, huts and markets.",
+    "it": "La Slovacchia usa l'euro dal 2009. Le carte sono accettate quasi ovunque, ma tieni un po' di contanti per i piccoli negozi dei villaggi, i rifugi e i mercati.",
+    "es": "Eslovaquia usa el euro desde 2009. Las tarjetas se aceptan casi en todas partes, pero lleva algo de efectivo para las tiendas pequeñas de los pueblos, los refugios y los mercados.",
+    "pt": "A Eslováquia usa o euro desde 2009. Os cartões são aceites quase em todo o lado, mas leva algum dinheiro para as lojas pequenas das aldeias, os abrigos e os mercados.",
+    "pt_BR": "A Eslováquia usa o euro desde 2009. Os cartões são aceitos quase em todo lugar, mas leve algum dinheiro em espécie para lojinhas de vilarejos, refúgios e feiras.",
+    "fr": "La Slovaquie utilise l'euro depuis 2009. Les cartes sont acceptées presque partout, mais garde un peu d'espèces pour les petits commerces de village, les refuges et les marchés.",
+    "de": "Die Slowakei verwendet seit 2009 den Euro. Karten werden fast überall akzeptiert, aber etwas Bargeld ist für kleine Dorfläden, Hütten und Märkte nützlich."
+   }
+  },
+  {
+   "id": "ct-SK-23",
+   "category": "photography",
+   "text": {
+    "en": "Photography is welcome in streets, castles and mountains. Ask permission before photographing people, and check signs in churches and museums.",
+    "it": "Fotografare è ben accetto in strada, nei castelli e in montagna. Chiedi il permesso prima di fotografare le persone e controlla i cartelli nelle chiese e nei musei.",
+    "es": "Se puede fotografiar en las calles, los castillos y la montaña. Pide permiso antes de fotografiar a personas y revisa los carteles en iglesias y museos.",
+    "pt": "Fotografar é bem-vindo nas ruas, nos castelos e na montanha. Pede licença antes de fotografar pessoas e verifica os avisos nas igrejas e nos museus.",
+    "pt_BR": "Fotografar é bem-vindo nas ruas, castelos e montanhas. Peça licença antes de fotografar pessoas e confira as placas em igrejas e museus.",
+    "fr": "Photographier est bienvenu dans les rues, les châteaux et en montagne. Demande la permission avant de photographier des personnes et vérifie les panneaux dans les églises et les musées.",
+    "de": "Fotografieren ist in Straßen, Burgen und Bergen willkommen. Frag um Erlaubnis, bevor du Menschen fotografierst, und achte auf Hinweisschilder in Kirchen und Museen."
+   }
+  },
+  {
+   "id": "ct-SK-24",
+   "category": "nightlife",
+   "text": {
+    "en": "Pubs and cafés are social centres, and locals often meet friends for long conversations. Bratislava's old town has lively evening terraces in summer.",
+    "it": "Pub e caffè sono luoghi di ritrovo e la gente del posto si incontra spesso con gli amici per lunghe chiacchierate. Nella città vecchia di Bratislava d'estate le terrazze serali sono animate.",
+    "es": "Los pubs y los cafés son centros sociales y la gente suele quedar con amigos para conversar largo rato. El casco antiguo de Bratislava tiene terrazas animadas por la noche en verano.",
+    "pt": "Os pubs e os cafés são centros de convívio e os locais costumam encontrar-se com amigos para longas conversas. A cidade velha de Bratislava tem esplanadas animadas à noite no verão.",
+    "pt_BR": "Pubs e cafés são centros de convívio, e os moradores costumam encontrar amigos para longas conversas. A cidade velha de Bratislava tem terraços animados à noite no verão.",
+    "fr": "Les pubs et les cafés sont des lieux de sociabilité, et on retrouve souvent ses amis pour de longues conversations. La vieille ville de Bratislava a des terrasses animées le soir en été.",
+    "de": "Kneipen und Cafés sind soziale Treffpunkte, und man trifft sich gern zu langen Gesprächen. In der Altstadt von Bratislava sind die Terrassen im Sommer abends lebhaft."
+   }
+  },
+  {
+   "id": "ct-SK-25",
+   "category": "nature",
+   "text": {
+    "en": "The High Tatras are popular for hiking. Some high-altitude trails are closed in winter, so check current rules before you go.",
+    "it": "I Alti Tatra sono molto amati per le escursioni. Alcuni sentieri ad alta quota sono chiusi in inverno, quindi controlla le regole aggiornate prima di partire.",
+    "es": "Los Altos Tatras son muy populares para el senderismo. Algunos senderos de gran altitud están cerrados en invierno, así que consulta las normas vigentes antes de ir.",
+    "pt": "Os Altos Tatras são muito populares para caminhadas. Alguns trilhos em altitude estão fechados no inverno, por isso consulta as regras atuais antes de ir.",
+    "pt_BR": "Os Altos Tatras são muito populares para trilhas. Algumas trilhas em grande altitude ficam fechadas no inverno, então confira as regras atuais antes de ir.",
+    "fr": "Les Hautes Tatras sont très prisées des randonneurs. Certains sentiers d'altitude sont fermés en hiver ; vérifie donc les règles en vigueur avant de partir.",
+    "de": "Die Hohe Tatra ist ein beliebtes Wandergebiet. Manche Hochgebirgswege sind im Winter gesperrt, informiere dich also vorher über die aktuellen Regeln."
+   }
+  },
+  {
+   "id": "ct-SK-26",
+   "category": "nature",
+   "text": {
+    "en": "Bears live in Slovak forests and mountains. Stay on trails, make some noise while hiking, never feed wildlife and store food securely.",
+    "it": "Gli orsi vivono nelle foreste e sulle montagne slovacche. Resta sui sentieri, fai un po' di rumore mentre cammini, non dare mai da mangiare agli animali selvatici e conserva bene il cibo.",
+    "es": "Los osos viven en los bosques y montañas eslovacos. Sigue los senderos, haz algo de ruido al caminar, no alimentes nunca a los animales salvajes y guarda bien la comida.",
+    "pt": "Há ursos nas florestas e montanhas eslovacas. Fica nos trilhos, faz algum ruído enquanto caminhas, nunca alimentes animais selvagens e guarda bem a comida.",
+    "pt_BR": "Há ursos nas florestas e montanhas eslovacas. Fique nas trilhas, faça algum barulho enquanto caminha, nunca alimente animais selvagens e guarde bem a comida.",
+    "fr": "Des ours vivent dans les forêts et les montagnes slovaques. Reste sur les sentiers, fais un peu de bruit en marchant, ne nourris jamais les animaux sauvages et range bien la nourriture.",
+    "de": "In den slowakischen Wäldern und Bergen leben Bären. Bleib auf den Wegen, mach beim Wandern etwas Lärm, füttere nie Wildtiere und verstaue Essen sicher."
+   }
+  },
+  {
+   "id": "ct-SK-27",
+   "category": "safety",
+   "text": {
+    "en": "Slovakia is generally safe. Watch your belongings in crowded tourist areas, and in a mountain or other emergency call 112.",
+    "it": "La Slovacchia è in generale sicura. Fai attenzione agli oggetti personali nelle zone turistiche affollate e, in caso di emergenza anche in montagna, chiama il 112.",
+    "es": "Eslovaquia es en general segura. Cuida tus pertenencias en zonas turísticas concurridas y, en una emergencia, también en la montaña, llama al 112.",
+    "pt": "A Eslováquia é em geral segura. Cuida dos teus pertences em zonas turísticas movimentadas e, numa emergência, também na montanha, liga para o 112.",
+    "pt_BR": "A Eslováquia é em geral segura. Cuide dos seus pertences em áreas turísticas lotadas e, numa emergência, inclusive na montanha, ligue 112.",
+    "fr": "La Slovaquie est en général sûre. Surveille tes affaires dans les zones touristiques bondées et, en cas d'urgence, y compris en montagne, appelle le 112.",
+    "de": "Die Slowakei ist im Allgemeinen sicher. Achte in überfüllten Touristengebieten auf deine Sachen und wähle im Notfall, auch in den Bergen, die 112."
+   }
+  },
+  {
+   "id": "ct-SK-28",
+   "category": "local_pride",
+   "text": {
+    "en": "Ice hockey is a national passion. Slovaks are proud of their teams, so asking about the sport is a great way to start a conversation.",
+    "it": "L'hockey su ghiaccio è una passione nazionale. Gli slovacchi sono orgogliosi delle loro squadre, quindi chiedere dello sport è un ottimo modo per iniziare una conversazione.",
+    "es": "El hockey sobre hielo es una pasión nacional. Los eslovacos están orgullosos de sus equipos, así que preguntar por este deporte es una buena forma de empezar una conversación.",
+    "pt": "O hóquei no gelo é uma paixão nacional. Os eslovacos têm orgulho das suas equipas, por isso perguntar pelo desporto é uma boa forma de começar uma conversa.",
+    "pt_BR": "O hóquei no gelo é uma paixão nacional. Os eslovacos têm orgulho de suas equipes, então perguntar sobre o esporte é uma ótima forma de começar uma conversa.",
+    "fr": "Le hockey sur glace est une passion nationale. Les Slovaques sont fiers de leurs équipes ; parler de ce sport est donc un excellent moyen de lancer la conversation.",
+    "de": "Eishockey ist eine Nationalleidenschaft. Die Slowaken sind stolz auf ihre Teams, daher ist die Frage nach diesem Sport ein guter Gesprächseinstieg."
+   }
+  },
+  {
+   "id": "ct-SK-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Slovaks are proud of their castles, wooden churches, folk traditions and spa towns such as Piešťany. Show interest in them rather than in comparisons with neighbours.",
+    "it": "Gli slovacchi vanno fieri dei loro castelli, delle chiese di legno, delle tradizioni popolari e delle città termali come Piešťany. Mostra interesse per queste cose, non confronti con i vicini.",
+    "es": "Los eslovacos están orgullosos de sus castillos, iglesias de madera, tradiciones populares y ciudades balnearias como Piešťany. Muestra interés por ellos y no hagas comparaciones con los vecinos.",
+    "pt": "Os eslovacos têm orgulho dos seus castelos, igrejas de madeira, tradições populares e cidades termais como Piešťany. Mostra interesse por eles e não faças comparações com os vizinhos.",
+    "pt_BR": "Os eslovacos têm orgulho de seus castelos, igrejas de madeira, tradições populares e cidades termais como Piešťany. Mostre interesse por eles em vez de fazer comparações com os vizinhos.",
+    "fr": "Les Slovaques sont fiers de leurs châteaux, de leurs églises en bois, de leurs traditions populaires et de leurs villes thermales comme Piešťany. Montre de l'intérêt pour tout cela plutôt que de comparer avec les voisins.",
+    "de": "Die Slowaken sind stolz auf ihre Burgen, Holzkirchen, Volkstraditionen und Kurorte wie Piešťany. Zeig Interesse daran, statt Vergleiche mit den Nachbarn zu ziehen."
+   }
+  },
+  {
+   "id": "ct-SK-30",
+   "category": "conversation",
+   "text": {
+    "en": "Slovaks can seem reserved at first but are warm and hospitable once you know them. Avoid asking early about politics; travel, food and nature are safer topics.",
+    "it": "Gli slovacchi possono sembrare riservati all'inizio, ma sono calorosi e ospitali una volta conosciuti. Evita di chiedere presto di politica; viaggi, cibo e natura sono argomenti più sicuri.",
+    "es": "Los eslovacos pueden parecer reservados al principio, pero son cálidos y hospitalarios cuando los conoces. Evita preguntar pronto por política; viajes, comida y naturaleza son temas más seguros.",
+    "pt": "Os eslovacos podem parecer reservados ao início, mas são calorosos e hospitaleiros depois de os conheceres. Evita perguntar cedo por política; viagens, comida e natureza são temas mais seguros.",
+    "pt_BR": "Os eslovacos podem parecer reservados no início, mas são calorosos e hospitaleiros depois que você os conhece. Evite perguntar cedo sobre política; viagens, comida e natureza são assuntos mais seguros.",
+    "fr": "Les Slovaques peuvent sembler réservés au début, mais ils sont chaleureux et hospitaliers quand on les connaît. Évite de poser tôt des questions sur la politique ; voyages, cuisine et nature sont des sujets plus sûrs.",
+    "de": "Slowaken wirken anfangs vielleicht zurückhaltend, sind aber herzlich und gastfreundlich, wenn man sie kennt. Frag nicht zu früh nach Politik; Reisen, Essen und Natur sind sicherere Themen."
+   }
+  }
+ ],
+ "SM": [
+  {
+   "id": "ct-SM-01",
+   "category": "greetings",
+   "text": {
+    "en": "Italian is the language of daily life. Greet with \"Buongiorno\" or \"Buonasera\" and a handshake; friends often say \"Ciao\" and may exchange cheek kisses.",
+    "it": "L'italiano è la lingua della vita quotidiana. Si saluta con \"Buongiorno\" o \"Buonasera\" e una stretta di mano; tra amici si dice spesso \"Ciao\" e ci si può scambiare due baci sulle guance.",
+    "es": "El italiano es el idioma de la vida diaria. Se saluda con \"Buongiorno\" o \"Buonasera\" y un apretón de manos; entre amigos se dice a menudo \"Ciao\" y puede haber dos besos en las mejillas.",
+    "pt": "O italiano é a língua do dia a dia. Cumprimenta-se com \"Buongiorno\" ou \"Buonasera\" e um aperto de mão; entre amigos diz-se muitas vezes \"Ciao\" e pode haver beijinhos na cara.",
+    "pt_BR": "O italiano é a língua do dia a dia. Cumprimenta-se com \"Buongiorno\" ou \"Buonasera\" e um aperto de mão; entre amigos costuma-se dizer \"Ciao\" e pode haver beijinhos no rosto.",
+    "fr": "L'italien est la langue du quotidien. On salue avec \"Buongiorno\" ou \"Buonasera\" et une poignée de main ; entre amis, on dit souvent \"Ciao\" et on peut se faire la bise.",
+    "de": "Italienisch ist die Alltagssprache. Man grüßt mit \"Buongiorno\" oder \"Buonasera\" und Händedruck; unter Freunden sagt man oft \"Ciao\" und gibt sich vielleicht Wangenküsse."
+   }
+  },
+  {
+   "id": "ct-SM-02",
+   "category": "greetings",
+   "text": {
+    "en": "When meeting someone for the first time, a polite \"Piacere\" (nice to meet you) with a smile and eye contact makes a good impression.",
+    "it": "Quando conosci qualcuno per la prima volta, un cortese \"Piacere\" con un sorriso e uno sguardo diretto lascia una buona impressione.",
+    "es": "Cuando conoces a alguien por primera vez, un educado \"Piacere\" (encantado) con una sonrisa y contacto visual causa buena impresión.",
+    "pt": "Quando conheces alguém pela primeira vez, um educado \"Piacere\" (muito prazer) com um sorriso e contacto visual causa boa impressão.",
+    "pt_BR": "Quando você conhece alguém pela primeira vez, um educado \"Piacere\" (muito prazer) com um sorriso e contato visual causa boa impressão.",
+    "fr": "Quand on rencontre quelqu'un pour la première fois, un poli \"Piacere\" (enchanté) accompagné d'un sourire et d'un regard direct fait bonne impression.",
+    "de": "Beim ersten Kennenlernen macht ein höfliches \"Piacere\" (freut mich) mit Lächeln und Blickkontakt einen guten Eindruck."
+   }
+  },
+  {
+   "id": "ct-SM-03",
+   "category": "conversation",
+   "text": {
+    "en": "Locals love talking about San Marino's long history and independence. Asking about the Captains Regent or the three towers is a friendly opener.",
+    "it": "Gli abitanti amano parlare della lunga storia e dell'indipendenza di San Marino. Chiedere dei Capitani Reggenti o delle tre torri è un modo cordiale per iniziare.",
+    "es": "A los habitantes les encanta hablar de la larga historia y la independencia de San Marino. Preguntar por los Capitanes Regentes o las tres torres es una forma amable de empezar.",
+    "pt": "Os habitantes adoram falar da longa história e da independência de São Marinho. Perguntar pelos Capitães Regentes ou pelas três torres é uma forma simpática de começar.",
+    "pt_BR": "Os moradores adoram falar da longa história e da independência de San Marino. Perguntar sobre os Capitães Regentes ou as três torres é uma forma simpática de começar.",
+    "fr": "Les habitants aiment parler de la longue histoire et de l'indépendance de Saint-Marin. Demander des nouvelles des Capitaines-Régents ou des trois tours est une entrée en matière sympathique.",
+    "de": "Die Einheimischen sprechen gern über Sankt Marinos lange Geschichte und Unabhängigkeit. Eine Frage zu den Capitani Reggenti oder den drei Türmen ist ein freundlicher Einstieg."
+   }
+  },
+  {
+   "id": "ct-SM-04",
+   "category": "dining",
+   "text": {
+    "en": "Meals follow the Italian rhythm: lunch around 12:30 to 14:00 and dinner after 19:30. Sit down and take your time, as meals are social moments.",
+    "it": "I pasti seguono il ritmo italiano: pranzo verso le 12:30-14:00 e cena dopo le 19:30. Siediti e prenditi il tuo tempo, perché i pasti sono momenti di socialità.",
+    "es": "Las comidas siguen el ritmo italiano: almuerzo hacia las 12:30 a las 14:00 y cena a partir de las 19:30. Siéntate y tómate tu tiempo, porque comer es un momento social.",
+    "pt": "As refeições seguem o ritmo italiano: almoço por volta das 12:30 às 14:00 e jantar depois das 19:30. Senta-te e não tenhas pressa, porque as refeições são momentos de convívio.",
+    "pt_BR": "As refeições seguem o ritmo italiano: almoço por volta das 12h30 às 14h e jantar depois das 19h30. Sente-se e sem pressa, porque as refeições são momentos de convívio.",
+    "fr": "Les repas suivent le rythme italien : déjeuner vers 12h30-14h et dîner après 19h30. Installe-toi et prends ton temps, car les repas sont des moments conviviaux.",
+    "de": "Die Mahlzeiten folgen dem italienischen Rhythmus: Mittagessen gegen 12:30 bis 14:00 Uhr, Abendessen nach 19:30 Uhr. Setz dich und nimm dir Zeit, denn Essen ist ein geselliger Moment."
+   }
+  },
+  {
+   "id": "ct-SM-05",
+   "category": "dining",
+   "text": {
+    "en": "Try local specialities such as piadina flatbread, nidi di rondine (a baked pasta dish) and the layered wafer cake Torta Titano.",
+    "it": "Assaggia le specialità locali come la piadina, i nidi di rondine (un piatto di pasta al forno) e la Torta Titano, un dolce a strati di wafer.",
+    "es": "Prueba las especialidades locales como la piadina, los nidi di rondine (un plato de pasta al horno) y la Torta Titano, un pastel de capas de barquillo.",
+    "pt": "Experimenta as especialidades locais como a piadina, os nidi di rondine (um prato de massa no forno) e a Torta Titano, um bolo de camadas de bolacha.",
+    "pt_BR": "Experimente as especialidades locais como a piadina, os nidi di rondine (um prato de massa assada) e a Torta Titano, um bolo em camadas de wafer.",
+    "fr": "Goûte les spécialités locales comme la piadina, les nidi di rondine (un plat de pâtes au four) et la Torta Titano, un gâteau en couches de gaufrettes.",
+    "de": "Probier lokale Spezialitäten wie Piadina, Nidi di rondine (ein überbackenes Nudelgericht) und die Torta Titano, einen Waffelschichtkuchen."
+   }
+  },
+  {
+   "id": "ct-SM-06",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping is not expected. Rounding up the bill or leaving a few euros for good service is appreciated, and a service charge may already be listed.",
+    "it": "La mancia non è dovuta. Arrotondare il conto o lasciare qualche euro per un buon servizio è apprezzato, e talvolta nel conto è già indicato un coperto o servizio.",
+    "es": "No se espera propina. Redondear la cuenta o dejar unos euros por un buen servicio se agradece, y a veces la cuenta ya incluye un cargo de servicio.",
+    "pt": "A gorjeta não é esperada. Arredondar a conta ou deixar alguns euros por um bom serviço é apreciado, e por vezes a conta já inclui uma taxa de serviço.",
+    "pt_BR": "A gorjeta não é esperada. Arredondar a conta ou deixar alguns euros por um bom atendimento é bem-vindo, e às vezes a conta já inclui uma taxa de serviço.",
+    "fr": "Le pourboire n'est pas attendu. Arrondir l'addition ou laisser quelques euros pour un bon service est apprécié, et un couvert ou service peut déjà figurer sur la note.",
+    "de": "Trinkgeld wird nicht erwartet. Aufrunden oder ein paar Euro bei gutem Service werden geschätzt, und manchmal steht auf der Rechnung schon ein Service- oder Gedeckpreis."
+   }
+  },
+  {
+   "id": "ct-SM-07",
+   "category": "gifts",
+   "text": {
+    "en": "If you are invited to a home, bring pastries, chocolates or a good bottle of wine or olive oil for the host.",
+    "it": "Se sei invitato a casa di qualcuno, porta dei dolci, dei cioccolatini o una buona bottiglia di vino o di olio d'oliva per chi ti ospita.",
+    "es": "Si te invitan a una casa, lleva pasteles, bombones o una buena botella de vino o aceite de oliva para el anfitrión.",
+    "pt": "Se fores convidado para casa de alguém, leva doces, chocolates ou uma boa garrafa de vinho ou azeite para o anfitrião.",
+    "pt_BR": "Se você for convidado para a casa de alguém, leve doces, chocolates ou uma boa garrafa de vinho ou azeite para o anfitrião.",
+    "fr": "Si tu es invité chez quelqu'un, apporte des pâtisseries, des chocolats ou une bonne bouteille de vin ou d'huile d'olive pour l'hôte.",
+    "de": "Wenn du zu jemandem nach Hause eingeladen bist, bring Gebäck, Pralinen oder eine gute Flasche Wein oder Olivenöl für den Gastgeber mit."
+   }
+  },
+  {
+   "id": "ct-SM-08",
+   "category": "gifts",
+   "text": {
+    "en": "Stamps and coins from San Marino are collectors' items, so they make a distinctive souvenir or gift for friends back home.",
+    "it": "I francobolli e le monete di San Marino sono oggetti da collezione, quindi sono un souvenir o un regalo originale per gli amici a casa.",
+    "es": "Los sellos y las monedas de San Marino son objetos de coleccionista, por lo que son un recuerdo o regalo original para los amigos de casa.",
+    "pt": "Os selos e as moedas de São Marinho são artigos de coleção, por isso são uma lembrança ou prenda original para os amigos em casa.",
+    "pt_BR": "Os selos e as moedas de San Marino são itens de colecionador, então são uma lembrança ou presente original para os amigos em casa.",
+    "fr": "Les timbres et les pièces de Saint-Marin sont des objets de collection ; ils font un souvenir ou un cadeau original pour les amis restés au pays.",
+    "de": "Briefmarken und Münzen aus San Marino sind Sammlerstücke und damit ein besonderes Souvenir oder Geschenk für Freunde zu Hause."
+   }
+  },
+  {
+   "id": "ct-SM-09",
+   "category": "dress",
+   "text": {
+    "en": "People dress smartly and neatly, in the Italian style, even for casual outings. Comfortable shoes are essential for the steep cobbled streets.",
+    "it": "Si veste in modo curato ed elegante, all'italiana, anche per le uscite informali. Le scarpe comode sono indispensabili per le ripide strade acciottolate.",
+    "es": "La gente se viste con cuidado y elegancia, al estilo italiano, incluso en salidas informales. El calzado cómodo es imprescindible para las empinadas calles empedradas.",
+    "pt": "As pessoas vestem-se de forma cuidada e elegante, ao estilo italiano, mesmo em saídas informais. Sapatos confortáveis são essenciais para as ruas empedradas e íngremes.",
+    "pt_BR": "As pessoas se vestem de forma cuidada e elegante, ao estilo italiano, mesmo em passeios informais. Sapatos confortáveis são essenciais para as ruas de pedra e ladeiras.",
+    "fr": "On s'habille avec soin et élégance, à l'italienne, même pour une sortie décontractée. Des chaussures confortables sont indispensables pour les rues pavées en pente raide.",
+    "de": "Man kleidet sich gepflegt und elegant im italienischen Stil, selbst bei lockeren Ausflügen. Bequeme Schuhe sind für die steilen Kopfsteinpflastergassen unverzichtbar."
+   }
+  },
+  {
+   "id": "ct-SM-10",
+   "category": "religion_sites",
+   "text": {
+    "en": "Most Sammarinese are Catholic. In the Basilica of San Marino and other churches, cover shoulders and knees and keep your voice low.",
+    "it": "La maggior parte dei sammarinesi è cattolica. Nella Basilica di San Marino e nelle altre chiese copri spalle e ginocchia e mantieni la voce bassa.",
+    "es": "La mayoría de los sanmarinenses son católicos. En la Basílica de San Marino y otras iglesias, cúbrete hombros y rodillas y habla en voz baja.",
+    "pt": "A maioria dos sammarinenses é católica. Na Basílica de São Marinho e noutras igrejas, tapa os ombros e os joelhos e fala baixo.",
+    "pt_BR": "A maioria dos sanmarinenses é católica. Na Basílica de San Marino e em outras igrejas, cubra ombros e joelhos e fale baixo.",
+    "fr": "La plupart des Saint-Marinais sont catholiques. Dans la basilique de Saint-Marin et les autres églises, couvre-toi les épaules et les genoux et parle à voix basse.",
+    "de": "Die meisten Sanmarinesen sind katholisch. In der Basilika von San Marino und anderen Kirchen bedeckst du Schultern und Knie und sprichst leise."
+   }
+  },
+  {
+   "id": "ct-SM-11",
+   "category": "gestures",
+   "text": {
+    "en": "Like in Italy, people speak with expressive hand gestures and stand fairly close. This is friendly, not aggressive, so do not step back.",
+    "it": "Come in Italia, si parla con gesti espressivi delle mani e ci si tiene piuttosto vicini. È un segno di cordialità, non di aggressività, quindi non indietreggiare.",
+    "es": "Como en Italia, se habla con gestos expresivos de las manos y se está bastante cerca. Es un gesto amistoso, no agresivo, así que no te eches atrás.",
+    "pt": "Tal como em Itália, fala-se com gestos expressivos das mãos e fica-se bastante perto. É uma atitude amigável, não agressiva, por isso não recues.",
+    "pt_BR": "Como na Itália, fala-se com gestos expressivos das mãos e fica-se bem próximo. Isso é simpatia, não agressividade, então não recue.",
+    "fr": "Comme en Italie, on parle avec des gestes expressifs des mains et on se tient assez près. C'est amical, pas agressif ; ne recule donc pas.",
+    "de": "Wie in Italien spricht man mit ausdrucksvollen Handgesten und steht ziemlich nah beieinander. Das ist freundlich, nicht aggressiv, also weich nicht zurück."
+   }
+  },
+  {
+   "id": "ct-SM-12",
+   "category": "punctuality",
+   "text": {
+    "en": "Be on time for tours, museum visits and appointments. For social gatherings, arriving ten or fifteen minutes later is usually accepted.",
+    "it": "Sii puntuale per visite guidate, musei e appuntamenti. Per gli incontri informali, arrivare con dieci o quindici minuti di ritardo di solito è accettato.",
+    "es": "Sé puntual en visitas guiadas, museos y citas. En reuniones sociales, llegar diez o quince minutos tarde suele estar aceptado.",
+    "pt": "Sê pontual em visitas guiadas, museus e compromissos. Em encontros sociais, chegar dez ou quinze minutos mais tarde costuma ser aceite.",
+    "pt_BR": "Seja pontual em visitas guiadas, museus e compromissos. Em encontros sociais, chegar dez ou quinze minutos depois costuma ser aceito.",
+    "fr": "Sois ponctuel pour les visites guidées, les musées et les rendez-vous. Pour les rencontres entre amis, arriver dix ou quinze minutes plus tard est généralement accepté.",
+    "de": "Sei pünktlich bei Führungen, Museumsbesuchen und Terminen. Bei geselligen Treffen ist es meist akzeptiert, zehn oder fünfzehn Minuten später zu kommen."
+   }
+  },
+  {
+   "id": "ct-SM-13",
+   "category": "public_behavior",
+   "text": {
+    "en": "San Marino is tiny and tight-knit, so keep noise down, especially at night in the old town, and respect residents' privacy.",
+    "it": "San Marino è piccolo e molto unito, quindi evita di fare rumore, soprattutto di notte nel centro storico, e rispetta la privacy dei residenti.",
+    "es": "San Marino es diminuto y muy unido, así que evita el ruido, sobre todo de noche en el casco antiguo, y respeta la privacidad de los residentes.",
+    "pt": "São Marinho é pequeno e muito unido, por isso evita fazer barulho, sobretudo à noite no centro histórico, e respeita a privacidade dos residentes.",
+    "pt_BR": "San Marino é pequeno e muito unido, então evite fazer barulho, principalmente à noite no centro histórico, e respeite a privacidade dos moradores.",
+    "fr": "Saint-Marin est minuscule et très soudé ; évite donc le bruit, surtout la nuit dans la vieille ville, et respecte l'intimité des habitants.",
+    "de": "San Marino ist winzig und eng verbunden. Halte daher besonders nachts in der Altstadt den Lärm gering und respektiere die Privatsphäre der Bewohner."
+   }
+  },
+  {
+   "id": "ct-SM-14",
+   "category": "transport",
+   "text": {
+    "en": "The historic centre is mostly pedestrian. Park in the lower car parks and take the cable car or walk up to the old town.",
+    "it": "Il centro storico è in gran parte pedonale. Parcheggia nei parcheggi più in basso e sali alla città vecchia con la funivia o a piedi.",
+    "es": "El casco histórico es mayormente peatonal. Aparca en los aparcamientos de abajo y sube al casco antiguo en teleférico o a pie.",
+    "pt": "O centro histórico é maioritariamente pedonal. Estaciona nos parques de baixo e sobe à cidade velha de teleférico ou a pé.",
+    "pt_BR": "O centro histórico é em grande parte para pedestres. Estacione nos estacionamentos mais baixos e suba à cidade velha de teleférico ou a pé.",
+    "fr": "Le centre historique est en grande partie piéton. Gare-toi dans les parkings du bas et monte à la vieille ville en téléphérique ou à pied.",
+    "de": "Das historische Zentrum ist größtenteils Fußgängerzone. Parke auf den unteren Parkplätzen und fahr mit der Seilbahn oder geh zu Fuß in die Altstadt."
+   }
+  },
+  {
+   "id": "ct-SM-15",
+   "category": "transport",
+   "text": {
+    "en": "San Marino has no border checks with Italy. Buses connect it with Rimini, which is the easiest way to arrive without a car.",
+    "it": "San Marino non ha controlli di frontiera con l'Italia. Gli autobus lo collegano a Rimini, il modo più semplice per arrivare senza auto.",
+    "es": "San Marino no tiene controles fronterizos con Italia. Hay autobuses que lo conectan con Rímini, la forma más fácil de llegar sin coche.",
+    "pt": "São Marinho não tem controlos fronteiriços com a Itália. Há autocarros que o ligam a Rimini, a forma mais fácil de chegar sem carro.",
+    "pt_BR": "San Marino não tem controle de fronteira com a Itália. Há ônibus ligando o país a Rimini, a forma mais fácil de chegar sem carro.",
+    "fr": "Saint-Marin n'a pas de contrôles frontaliers avec l'Italie. Des bus le relient à Rimini, le moyen le plus simple d'y arriver sans voiture.",
+    "de": "San Marino hat keine Grenzkontrollen zu Italien. Busse verbinden es mit Rimini, der einfachste Weg ohne Auto hierher."
+   }
+  },
+  {
+   "id": "ct-SM-16",
+   "category": "language",
+   "text": {
+    "en": "The official language is Italian, and locals also speak a Romagnol dialect. Try simple Italian words like \"grazie\" and \"per favore\".",
+    "it": "La lingua ufficiale è l'italiano e gli abitanti parlano anche un dialetto romagnolo. Prova con semplici parole italiane come \"grazie\" e \"per favore\".",
+    "es": "El idioma oficial es el italiano y los habitantes también hablan un dialecto romañol. Prueba con palabras sencillas en italiano como \"grazie\" y \"per favore\".",
+    "pt": "A língua oficial é o italiano e os habitantes também falam um dialeto romanhol. Experimenta palavras simples em italiano como \"grazie\" e \"per favore\".",
+    "pt_BR": "A língua oficial é o italiano, e os moradores também falam um dialeto romanholo. Experimente palavras simples em italiano como \"grazie\" e \"per favore\".",
+    "fr": "La langue officielle est l'italien, et les habitants parlent aussi un dialecte romagnol. Essaie des mots simples d'italien comme \"grazie\" et \"per favore\".",
+    "de": "Amtssprache ist Italienisch, und die Einheimischen sprechen auch einen romagnolischen Dialekt. Versuch einfache italienische Wörter wie \"grazie\" und \"per favore\"."
+   }
+  },
+  {
+   "id": "ct-SM-17",
+   "category": "language",
+   "text": {
+    "en": "English is understood in tourist areas, but a few words of Italian are warmly appreciated, especially with shopkeepers and guides.",
+    "it": "L'inglese è capito nelle zone turistiche, ma qualche parola di italiano è molto apprezzata, soprattutto con i commercianti e le guide.",
+    "es": "El inglés se entiende en las zonas turísticas, pero unas pocas palabras en italiano se agradecen mucho, sobre todo con comerciantes y guías.",
+    "pt": "O inglês é compreendido nas zonas turísticas, mas algumas palavras em italiano são muito apreciadas, sobretudo com os comerciantes e guias.",
+    "pt_BR": "O inglês é entendido nas áreas turísticas, mas algumas palavras em italiano são muito apreciadas, principalmente com lojistas e guias.",
+    "fr": "L'anglais est compris dans les zones touristiques, mais quelques mots d'italien sont très appréciés, surtout auprès des commerçants et des guides.",
+    "de": "Englisch wird in Touristengegenden verstanden, doch ein paar Wörter Italienisch kommen besonders bei Ladenbesitzern und Guides sehr gut an."
+   }
+  },
+  {
+   "id": "ct-SM-18",
+   "category": "festivals",
+   "text": {
+    "en": "The Captains Regent take office every 1 April and 1 October in a ceremony with costumed parades and music. Check the dates if you want to see it.",
+    "it": "I Capitani Reggenti entrano in carica ogni 1 aprile e 1 ottobre con una cerimonia accompagnata da cortei in costume e musica. Controlla le date se vuoi assistere.",
+    "es": "Los Capitanes Regentes toman posesión cada 1 de abril y 1 de octubre en una ceremonia con desfiles en trajes de época y música. Consulta las fechas si quieres verla.",
+    "pt": "Os Capitães Regentes tomam posse todos os 1 de abril e 1 de outubro numa cerimónia com desfiles de trajes de época e música. Confirma as datas se quiseres assistir.",
+    "pt_BR": "Os Capitães Regentes tomam posse todo dia 1º de abril e 1º de outubro em uma cerimônia com desfiles de trajes de época e música. Confira as datas se quiser assistir.",
+    "fr": "Les Capitaines-Régents prennent leurs fonctions chaque 1er avril et 1er octobre lors d'une cérémonie avec défilés en costume et musique. Vérifie les dates si tu veux y assister.",
+    "de": "Die Capitani Reggenti treten jedes Jahr am 1. April und 1. Oktober ihr Amt an, mit einer Zeremonie samt Kostümumzügen und Musik. Prüfe die Termine, wenn du zuschauen möchtest."
+   }
+  },
+  {
+   "id": "ct-SM-19",
+   "category": "festivals",
+   "text": {
+    "en": "On 3 September, San Marino celebrates its patron saint and the Republic's founding, remembered as AD 301. Many events take place in the old town.",
+    "it": "Il 3 settembre San Marino celebra il suo santo patrono e la fondazione della Repubblica, ricordata nell'anno 301. Molti eventi si svolgono nel centro storico.",
+    "es": "El 3 de septiembre San Marino celebra a su santo patrón y la fundación de la República, recordada en el año 301. Muchos actos tienen lugar en el casco antiguo.",
+    "pt": "A 3 de setembro, São Marinho celebra o seu santo padroeiro e a fundação da República, recordada no ano 301. Muitos eventos decorrem no centro histórico.",
+    "pt_BR": "Em 3 de setembro, San Marino celebra o seu santo padroeiro e a fundação da República, lembrada no ano 301. Muitos eventos acontecem no centro histórico.",
+    "fr": "Le 3 septembre, Saint-Marin célèbre son saint patron et la fondation de la République, rappelée en l'an 301. De nombreux événements ont lieu dans la vieille ville.",
+    "de": "Am 3. September feiert San Marino seinen Schutzpatron und die Gründung der Republik, die auf das Jahr 301 zurückgeführt wird. Viele Veranstaltungen finden in der Altstadt statt."
+   }
+  },
+  {
+   "id": "ct-SM-20",
+   "category": "festivals",
+   "text": {
+    "en": "On 5 February, the feast of Saint Agatha, San Marino remembers the restoration of its independence in 1740. It is a local holiday.",
+    "it": "Il 5 febbraio, festa di Sant'Agata, San Marino ricorda il ripristino della propria indipendenza nel 1740. È una festa locale.",
+    "es": "El 5 de febrero, fiesta de Santa Águeda, San Marino recuerda la restauración de su independencia en 1740. Es una fiesta local.",
+    "pt": "A 5 de fevereiro, festa de Santa Águeda, São Marinho recorda o restabelecimento da sua independência em 1740. É um feriado local.",
+    "pt_BR": "Em 5 de fevereiro, festa de Santa Águeda, San Marino lembra o restabelecimento de sua independência em 1740. É um feriado local.",
+    "fr": "Le 5 février, fête de sainte Agathe, Saint-Marin commémore le rétablissement de son indépendance en 1740. C'est un jour férié local.",
+    "de": "Am 5. Februar, dem Fest der heiligen Agatha, erinnert San Marino an die Wiederherstellung seiner Unabhängigkeit im Jahr 1740. Es ist ein lokaler Feiertag."
+   }
+  },
+  {
+   "id": "ct-SM-21",
+   "category": "family",
+   "text": {
+    "en": "Family is central, as in much of Italy. Sunday lunch is often a long gathering, so avoid scheduling something else for local friends then.",
+    "it": "La famiglia è centrale, come in gran parte dell'Italia. Il pranzo della domenica è spesso un lungo ritrovo, quindi evita di proporre altri impegni agli amici del posto.",
+    "es": "La familia es fundamental, como en buena parte de Italia. El almuerzo del domingo suele ser una larga reunión, así que evita proponer otros planes a tus amigos locales.",
+    "pt": "A família é central, como em grande parte de Itália. O almoço de domingo é muitas vezes um longo encontro, por isso evita marcar outra coisa com amigos locais.",
+    "pt_BR": "A família é central, como em grande parte da Itália. O almoço de domingo costuma ser um longo encontro, então evite marcar outro compromisso com amigos locais.",
+    "fr": "La famille est centrale, comme dans une grande partie de l'Italie. Le déjeuner du dimanche est souvent un long rassemblement ; évite donc de proposer autre chose à tes amis locaux.",
+    "de": "Die Familie steht im Mittelpunkt, wie in weiten Teilen Italiens. Das Sonntagsessen ist oft ein langes Beisammensein, plane daher nichts anderes mit einheimischen Freunden."
+   }
+  },
+  {
+   "id": "ct-SM-22",
+   "category": "money",
+   "text": {
+    "en": "San Marino uses the euro and has its own euro coins, which are valued by collectors. Cards are widely accepted in shops and restaurants.",
+    "it": "San Marino usa l'euro e conia proprie monete in euro, apprezzate dai collezionisti. Le carte sono ampiamente accettate in negozi e ristoranti.",
+    "es": "San Marino usa el euro y emite sus propias monedas de euro, valoradas por los coleccionistas. Las tarjetas se aceptan ampliamente en tiendas y restaurantes.",
+    "pt": "São Marinho usa o euro e tem as suas próprias moedas de euro, valorizadas pelos colecionadores. Os cartões são amplamente aceites em lojas e restaurantes.",
+    "pt_BR": "San Marino usa o euro e tem as suas próprias moedas de euro, valorizadas por colecionadores. Os cartões são amplamente aceitos em lojas e restaurantes.",
+    "fr": "Saint-Marin utilise l'euro et émet ses propres pièces en euros, prisées des collectionneurs. Les cartes sont largement acceptées dans les magasins et restaurants.",
+    "de": "San Marino nutzt den Euro und gibt eigene Euromünzen heraus, die bei Sammlern beliebt sind. Karten werden in Geschäften und Restaurants weithin akzeptiert."
+   }
+  },
+  {
+   "id": "ct-SM-23",
+   "category": "photography",
+   "text": {
+    "en": "Photos are welcome around the towers, walls and viewpoints. Ask before photographing people, including the uniformed guards, and respect signs in museums and churches.",
+    "it": "Le foto sono benvenute intorno alle torri, alle mura e ai punti panoramici. Chiedi prima di fotografare le persone, comprese le guardie in uniforme, e rispetta i cartelli in musei e chiese.",
+    "es": "Las fotos son bienvenidas junto a las torres, las murallas y los miradores. Pide permiso antes de fotografiar a personas, incluidos los guardias uniformados, y respeta los carteles en museos e iglesias.",
+    "pt": "As fotografias são bem-vindas junto às torres, às muralhas e aos miradouros. Pede licença antes de fotografar pessoas, incluindo os guardas fardados, e respeita os avisos em museus e igrejas.",
+    "pt_BR": "Fotos são bem-vindas perto das torres, muralhas e mirantes. Peça licença antes de fotografar pessoas, inclusive os guardas uniformizados, e respeite as placas em museus e igrejas.",
+    "fr": "Les photos sont les bienvenues près des tours, des remparts et des points de vue. Demande avant de photographier des personnes, y compris les gardes en uniforme, et respecte les panneaux dans les musées et les églises.",
+    "de": "Fotos sind an den Türmen, Mauern und Aussichtspunkten willkommen. Frag, bevor du Menschen fotografierst, auch die uniformierten Wachen, und beachte die Schilder in Museen und Kirchen."
+   }
+  },
+  {
+   "id": "ct-SM-24",
+   "category": "nightlife",
+   "text": {
+    "en": "Evenings are relaxed: a stroll through the lit-up old town, an aperitivo or a gelato. Many shops in the centre close in the evening.",
+    "it": "Le serate sono rilassate: una passeggiata nel centro storico illuminato, un aperitivo o un gelato. Molti negozi del centro chiudono la sera.",
+    "es": "Las noches son tranquilas: un paseo por el casco antiguo iluminado, un aperitivo o un helado. Muchas tiendas del centro cierran por la noche.",
+    "pt": "As noites são descontraídas: um passeio pelo centro histórico iluminado, um aperitivo ou um gelado. Muitas lojas do centro fecham à noite.",
+    "pt_BR": "As noites são tranquilas: um passeio pelo centro histórico iluminado, um aperitivo ou um sorvete. Muitas lojas do centro fecham à noite.",
+    "fr": "Les soirées sont tranquilles : une promenade dans la vieille ville illuminée, un apéritif ou une glace. De nombreux magasins du centre ferment le soir.",
+    "de": "Die Abende sind entspannt: ein Spaziergang durch die beleuchtete Altstadt, ein Aperitif oder ein Eis. Viele Geschäfte im Zentrum schließen abends."
+   }
+  },
+  {
+   "id": "ct-SM-25",
+   "category": "nature",
+   "text": {
+    "en": "Mount Titano rises to 749 metres, and walking paths link the three towers with fine views. Wear sturdy shoes and bring water in warm months.",
+    "it": "Il Monte Titano si alza fino a 749 metri e dei sentieri collegano le tre torri con splendide viste. Porta scarpe robuste e dell'acqua nei mesi caldi.",
+    "es": "El Monte Titano se eleva hasta los 749 metros y unos senderos unen las tres torres con vistas magníficas. Lleva calzado resistente y agua en los meses cálidos.",
+    "pt": "O Monte Titano sobe até aos 749 metros e há caminhos que ligam as três torres com vistas magníficas. Leva calçado robusto e água nos meses quentes.",
+    "pt_BR": "O Monte Titano sobe até 749 metros, e há caminhos ligando as três torres com vistas magníficas. Leve calçado resistente e água nos meses quentes.",
+    "fr": "Le mont Titano s'élève à 749 mètres et des sentiers relient les trois tours avec de superbes vues. Porte de solides chaussures et emporte de l'eau pendant les mois chauds.",
+    "de": "Der Monte Titano ragt 749 Meter hoch, und Wege verbinden die drei Türme mit schönen Ausblicken. Trag feste Schuhe und nimm in den warmen Monaten Wasser mit."
+   }
+  },
+  {
+   "id": "ct-SM-26",
+   "category": "nature",
+   "text": {
+    "en": "The historic centre and Mount Titano are a UNESCO World Heritage Site. Stay on paths, take your litter with you and do not climb on walls.",
+    "it": "Il centro storico e il Monte Titano sono Patrimonio dell'Umanità UNESCO. Resta sui sentieri, porta via i tuoi rifiuti e non arrampicarti sulle mura.",
+    "es": "El centro histórico y el Monte Titano son Patrimonio de la Humanidad de la UNESCO. Sigue los senderos, llévate tu basura y no te subas a las murallas.",
+    "pt": "O centro histórico e o Monte Titano são Património Mundial da UNESCO. Fica nos caminhos, leva o teu lixo contigo e não subas às muralhas.",
+    "pt_BR": "O centro histórico e o Monte Titano são Patrimônio Mundial da UNESCO. Fique nos caminhos, leve o seu lixo com você e não suba nas muralhas.",
+    "fr": "Le centre historique et le mont Titano sont inscrits au patrimoine mondial de l'UNESCO. Reste sur les sentiers, remporte tes déchets et ne grimpe pas sur les remparts.",
+    "de": "Das historische Zentrum und der Monte Titano sind UNESCO-Welterbe. Bleib auf den Wegen, nimm deinen Müll mit und klettere nicht auf die Mauern."
+   }
+  },
+  {
+   "id": "ct-SM-27",
+   "category": "safety",
+   "text": {
+    "en": "San Marino is very safe, with low crime. Use common sense with valuables as anywhere, and call 112 for emergencies.",
+    "it": "San Marino è molto sicuro e ha una bassa criminalità. Usa il buon senso con gli oggetti di valore come ovunque e chiama il 112 per le emergenze.",
+    "es": "San Marino es muy seguro y tiene baja criminalidad. Usa el sentido común con los objetos de valor como en cualquier sitio y llama al 112 en caso de emergencia.",
+    "pt": "São Marinho é muito seguro e tem baixa criminalidade. Usa o bom senso com os objetos de valor, como em qualquer lugar, e liga para o 112 em caso de emergência.",
+    "pt_BR": "San Marino é muito seguro e tem baixa criminalidade. Use o bom senso com objetos de valor, como em qualquer lugar, e ligue 112 em caso de emergência.",
+    "fr": "Saint-Marin est très sûr, avec peu de criminalité. Fais preuve de bon sens avec tes objets de valeur comme partout, et appelle le 112 en cas d'urgence.",
+    "de": "San Marino ist sehr sicher und hat wenig Kriminalität. Geh mit Wertsachen wie überall umsichtig um und wähle im Notfall die 112."
+   }
+  },
+  {
+   "id": "ct-SM-28",
+   "category": "local_pride",
+   "text": {
+    "en": "Sammarinesi are proud that their republic is one of the world's oldest, with Statutes dating from 1600. Respect that San Marino is independent and not part of Italy.",
+    "it": "I sammarinesi sono orgogliosi che la loro repubblica sia tra le più antiche del mondo, con Statuti risalenti al 1600. Rispetta il fatto che San Marino è indipendente e non fa parte dell'Italia.",
+    "es": "Los sanmarinenses están orgullosos de que su república sea una de las más antiguas del mundo, con Estatutos que datan de 1600. Respeta que San Marino es independiente y no forma parte de Italia.",
+    "pt": "Os sammarinenses têm orgulho de a sua república ser uma das mais antigas do mundo, com Estatutos que datam de 1600. Respeita o facto de São Marinho ser independente e não fazer parte da Itália.",
+    "pt_BR": "Os sanmarinenses têm orgulho de sua república ser uma das mais antigas do mundo, com Estatutos que datam de 1600. Respeite o fato de San Marino ser independente e não fazer parte da Itália.",
+    "fr": "Les Saint-Marinais sont fiers que leur république soit l'une des plus anciennes du monde, avec des Statuts remontant à 1600. Respecte le fait que Saint-Marin est indépendant et ne fait pas partie de l'Italie.",
+    "de": "Die Sanmarinesen sind stolz darauf, dass ihre Republik eine der ältesten der Welt ist, mit Statuten aus dem Jahr 1600. Respektiere, dass San Marino unabhängig ist und nicht zu Italien gehört."
+   }
+  },
+  {
+   "id": "ct-SM-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Two Captains Regent are elected as heads of state every six months, and the country has had many women in the role. Locals are proud of this tradition.",
+    "it": "Due Capitani Reggenti sono eletti capi di Stato ogni sei mesi e il paese ha avuto molte donne in questo ruolo. Gli abitanti sono orgogliosi di questa tradizione.",
+    "es": "Cada seis meses se eligen dos Capitanes Regentes como jefes de Estado y el país ha tenido muchas mujeres en ese cargo. Los habitantes están orgullosos de esta tradición.",
+    "pt": "De seis em seis meses são eleitos dois Capitães Regentes como chefes de Estado e o país já teve muitas mulheres neste cargo. Os habitantes têm orgulho desta tradição.",
+    "pt_BR": "A cada seis meses são eleitos dois Capitães Regentes como chefes de Estado, e o país já teve muitas mulheres nesse cargo. Os moradores têm orgulho dessa tradição.",
+    "fr": "Deux Capitaines-Régents sont élus chefs d'État tous les six mois, et le pays a compté de nombreuses femmes à ce poste. Les habitants sont fiers de cette tradition.",
+    "de": "Alle sechs Monate werden zwei Capitani Reggenti als Staatsoberhäupter gewählt, und viele Frauen haben dieses Amt innegehabt. Die Einheimischen sind stolz auf diese Tradition."
+   }
+  },
+  {
+   "id": "ct-SM-30",
+   "category": "conversation",
+   "text": {
+    "en": "Small talk about food, travel and the view from Mount Titano goes down well. Avoid asking residents whether San Marino is really a country; it very much is.",
+    "it": "Le chiacchiere su cibo, viaggi e la vista dal Monte Titano sono sempre gradite. Evita di chiedere ai residenti se San Marino sia davvero uno Stato: lo è a tutti gli effetti.",
+    "es": "Charlar sobre comida, viajes y las vistas desde el Monte Titano siempre cae bien. Evita preguntar a los residentes si San Marino es realmente un país: lo es sin ninguna duda.",
+    "pt": "Conversar sobre comida, viagens e a vista do Monte Titano é sempre bem recebido. Evita perguntar aos residentes se São Marinho é mesmo um país: é, sem dúvida.",
+    "pt_BR": "Conversar sobre comida, viagens e a vista do Monte Titano é sempre bem recebido. Evite perguntar aos moradores se San Marino é mesmo um país: é, sem dúvida.",
+    "fr": "Parler de cuisine, de voyages et de la vue depuis le mont Titano est toujours bien reçu. Évite de demander aux habitants si Saint-Marin est vraiment un pays : c'en est bien un.",
+    "de": "Smalltalk über Essen, Reisen und die Aussicht vom Monte Titano kommt gut an. Frag Einheimische nicht, ob San Marino wirklich ein Land ist; das ist es durchaus."
+   }
+  }
+ ]
+}

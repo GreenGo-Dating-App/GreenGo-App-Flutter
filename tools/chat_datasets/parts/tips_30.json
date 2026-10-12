@@ -1,0 +1,1178 @@
+{
+ "GB": [
+  {
+   "id": "ct-GB-01",
+   "category": "greetings",
+   "text": {
+    "en": "A handshake is the usual greeting when meeting someone new. Friends often just say hello, and hugs or cheek kisses are less common than in southern Europe.",
+    "it": "Quando si conosce qualcuno si usa di solito la stretta di mano. Tra amici basta un ciao; abbracci e baci sulla guancia sono meno comuni che nell'Europa meridionale.",
+    "es": "Al conocer a alguien lo habitual es dar la mano. Entre amigos basta con decir hola; los abrazos y los besos en la mejilla son menos comunes que en el sur de Europa.",
+    "pt": "Ao conhecer alguém, o habitual é apertar a mão. Entre amigos basta dizer olá; abraços e beijos na face são menos comuns do que no sul da Europa.",
+    "pt_BR": "Ao conhecer alguém, o normal é apertar a mão. Entre amigos basta dizer oi; abraços e beijos no rosto são menos comuns do que no sul da Europa.",
+    "fr": "Une poignée de main est la salutation habituelle lors d'une première rencontre. Entre amis, un simple bonjour suffit; les accolades et les bises sont moins courantes que dans le sud de l'Europe.",
+    "de": "Beim Kennenlernen ist ein Händedruck üblich. Unter Freunden reicht ein Hallo; Umarmungen und Wangenküsse sind seltener als in Südeuropa."
+   }
+  },
+  {
+   "id": "ct-GB-02",
+   "category": "greetings",
+   "text": {
+    "en": "When someone says \"You alright?\" or \"How are you?\", it is usually a greeting, not a real question. A short \"Good, thanks, you?\" is the normal reply.",
+    "it": "Quando qualcuno dice \"You alright?\" o \"How are you?\", di solito è un saluto e non una vera domanda. La risposta normale è un breve \"Bene, grazie, e tu?\".",
+    "es": "Cuando alguien dice \"You alright?\" o \"How are you?\", suele ser un saludo y no una pregunta real. Lo normal es responder brevemente: \"Bien, gracias, ¿y tú?\".",
+    "pt": "Quando alguém diz \"You alright?\" ou \"How are you?\", costuma ser um cumprimento e não uma pergunta a sério. A resposta normal é um breve \"Bem, obrigado, e tu?\".",
+    "pt_BR": "Quando alguém diz \"You alright?\" ou \"How are you?\", costuma ser um cumprimento e não uma pergunta de verdade. A resposta normal é um breve \"Bem, obrigado, e você?\".",
+    "fr": "Quand quelqu'un dit \"You alright?\" ou \"How are you?\", c'est souvent une formule de salutation et non une vraie question. On répond simplement \"Bien, merci, et toi?\".",
+    "de": "Wenn jemand \"You alright?\" oder \"How are you?\" sagt, ist das meist eine Begrüßung und keine echte Frage. Üblich ist eine kurze Antwort wie \"Gut, danke, und dir?\"."
+   }
+  },
+  {
+   "id": "ct-GB-03",
+   "category": "conversation",
+   "text": {
+    "en": "Talking about the weather is a classic way to start a chat in Britain. It is a friendly, safe topic that almost everyone is happy to discuss.",
+    "it": "Parlare del tempo è un classico modo per iniziare una conversazione in Gran Bretagna. È un argomento amichevole e sicuro di cui quasi tutti parlano volentieri.",
+    "es": "Hablar del tiempo es una forma clásica de iniciar una conversación en Gran Bretaña. Es un tema amistoso y seguro del que casi todo el mundo habla con gusto.",
+    "pt": "Falar do tempo é uma forma clássica de começar uma conversa na Grã-Bretanha. É um tema simpático e seguro que quase toda a gente discute com gosto.",
+    "pt_BR": "Falar do clima é uma forma clássica de começar uma conversa na Grã-Bretanha. É um assunto simpático e seguro que quase todo mundo discute com prazer.",
+    "fr": "Parler de la météo est une façon classique d'engager la conversation en Grande-Bretagne. C'est un sujet amical et sans risque dont presque tout le monde parle volontiers.",
+    "de": "Über das Wetter zu sprechen ist in Großbritannien ein klassischer Gesprächseinstieg. Es ist ein freundliches, unverfängliches Thema, über das fast jeder gern redet."
+   }
+  },
+  {
+   "id": "ct-GB-04",
+   "category": "conversation",
+   "text": {
+    "en": "British humour often relies on irony and understatement, so \"not bad\" can mean \"very good\". Light, self-deprecating jokes are usually well received.",
+    "it": "L'umorismo britannico si basa spesso su ironia e understatement, quindi \"not bad\" può voler dire \"molto bene\". Le battute leggere e autoironiche sono di solito apprezzate.",
+    "es": "El humor británico se basa a menudo en la ironía y el entendimiento por lo bajo, así que \"not bad\" puede significar \"muy bien\". Las bromas ligeras y autoirónicas suelen gustar.",
+    "pt": "O humor britânico baseia-se muitas vezes na ironia e no understatement, por isso \"not bad\" pode significar \"muito bom\". As piadas leves e autoirónicas costumam ser bem recebidas.",
+    "pt_BR": "O humor britânico costuma se basear na ironia e no understatement, então \"not bad\" pode significar \"muito bom\". Piadas leves e autoirônicas costumam ser bem recebidas.",
+    "fr": "L'humour britannique repose souvent sur l'ironie et l'understatement, donc \"not bad\" peut vouloir dire \"très bien\". Les blagues légères et autodérisoires sont en général bien accueillies.",
+    "de": "Britischer Humor lebt oft von Ironie und Untertreibung, daher kann \"not bad\" so viel heißen wie \"sehr gut\". Leichte, selbstironische Witze kommen meist gut an."
+   }
+  },
+  {
+   "id": "ct-GB-05",
+   "category": "dining",
+   "text": {
+    "en": "In a pub you usually order and pay at the bar rather than waiting at the table. Many tables are not served, so look for a sign or ask the staff.",
+    "it": "In un pub di solito si ordina e si paga al bancone, senza aspettare al tavolo. Molti tavoli non hanno servizio, quindi cerca un cartello o chiedi al personale.",
+    "es": "En un pub lo habitual es pedir y pagar en la barra en lugar de esperar en la mesa. En muchas mesas no hay servicio, así que busca un cartel o pregunta al personal.",
+    "pt": "Num pub costuma-se pedir e pagar ao balcão, em vez de esperar à mesa. Em muitas mesas não há serviço, por isso procura um aviso ou pergunta ao pessoal.",
+    "pt_BR": "Em um pub costuma-se pedir e pagar no balcão, em vez de esperar na mesa. Em muitas mesas não há atendimento, então procure um aviso ou pergunte à equipe.",
+    "fr": "Dans un pub, on commande et on paie généralement au comptoir plutôt que d'attendre à table. Beaucoup de tables ne sont pas servies, alors cherche une pancarte ou demande au personnel.",
+    "de": "In einem Pub bestellt und bezahlt man normalerweise an der Theke, statt am Tisch zu warten. An vielen Tischen wird nicht bedient, achte also auf Schilder oder frag das Personal."
+   }
+  },
+  {
+   "id": "ct-GB-06",
+   "category": "dining",
+   "text": {
+    "en": "Many Britons enjoy a Sunday roast with family or friends, and afternoon tea with scones and sandwiches is a popular treat. Tea is the most popular drink in Britain.",
+    "it": "Molti britannici amano il Sunday roast con famiglia o amici, e l'afternoon tea con scones e tramezzini è una coccola molto apprezzata. Il tè è la bevanda più popolare in Gran Bretagna.",
+    "es": "A muchos británicos les encanta el Sunday roast con familia o amigos, y el té de la tarde con scones y sándwiches es un capricho muy popular. El té es la bebida más popular de Gran Bretaña.",
+    "pt": "Muitos britânicos gostam do Sunday roast com família ou amigos, e o chá da tarde com scones e sanduíches é um mimo popular. O chá é a bebida mais popular na Grã-Bretanha.",
+    "pt_BR": "Muitos britânicos gostam do Sunday roast com família ou amigos, e o chá da tarde com scones e sanduíches é um mimo popular. O chá é a bebida mais popular na Grã-Bretanha.",
+    "fr": "Beaucoup de Britanniques aiment le Sunday roast en famille ou entre amis, et l'afternoon tea avec scones et sandwichs est une gourmandise populaire. Le thé est la boisson la plus populaire en Grande-Bretagne.",
+    "de": "Viele Briten genießen den Sunday Roast mit Familie oder Freunden, und Afternoon Tea mit Scones und Sandwiches ist ein beliebtes Vergnügen. Tee ist das beliebteste Getränk Großbritanniens."
+   }
+  },
+  {
+   "id": "ct-GB-07",
+   "category": "tipping",
+   "text": {
+    "en": "In restaurants, a tip of around 10 to 12.5 percent is common if service is good, but check the bill first because a service charge may already be included.",
+    "it": "Nei ristoranti una mancia del 10-12,5 per cento è comune se il servizio è buono, ma controlla prima il conto perché il servizio potrebbe essere già incluso.",
+    "es": "En los restaurantes es habitual dejar una propina de entre el 10 y el 12,5 por ciento si el servicio es bueno, pero mira primero la cuenta porque el servicio puede estar ya incluido.",
+    "pt": "Nos restaurantes é comum deixar uma gorjeta de 10 a 12,5 por cento se o serviço for bom, mas verifica primeiro a conta, porque o serviço pode já estar incluído.",
+    "pt_BR": "Nos restaurantes é comum deixar uma gorjeta de 10 a 12,5 por cento se o serviço for bom, mas confira primeiro a conta, porque o serviço pode já estar incluído.",
+    "fr": "Au restaurant, un pourboire d'environ 10 à 12,5 pour cent est courant si le service est bon, mais vérifie d'abord l'addition car le service peut déjà être inclus.",
+    "de": "In Restaurants sind etwa 10 bis 12,5 Prozent Trinkgeld üblich, wenn der Service gut war. Prüfe aber zuerst die Rechnung, denn die Servicegebühr kann schon enthalten sein."
+   }
+  },
+  {
+   "id": "ct-GB-08",
+   "category": "gifts",
+   "text": {
+    "en": "If you are invited to someone's home, it is common to bring a small gift such as flowers, chocolates or a bottle of something to share. It does not need to be expensive.",
+    "it": "Se sei invitato a casa di qualcuno è comune portare un piccolo regalo, come fiori, cioccolatini o una bottiglia da condividere. Non deve essere costoso.",
+    "es": "Si te invitan a casa de alguien, es habitual llevar un pequeño regalo, como flores, bombones o una botella para compartir. No hace falta que sea caro.",
+    "pt": "Se fores convidado para casa de alguém, é comum levar uma pequena lembrança, como flores, chocolates ou uma garrafa para partilhar. Não precisa de ser cara.",
+    "pt_BR": "Se você for convidado para a casa de alguém, é comum levar um pequeno presente, como flores, chocolates ou uma garrafa para dividir. Não precisa ser caro.",
+    "fr": "Si on t'invite chez quelqu'un, il est courant d'apporter un petit cadeau, comme des fleurs, des chocolats ou une bouteille à partager. Il n'a pas besoin d'être cher.",
+    "de": "Wenn du zu jemandem nach Hause eingeladen wirst, ist ein kleines Geschenk wie Blumen, Pralinen oder eine Flasche zum Teilen üblich. Es muss nicht teuer sein."
+   }
+  },
+  {
+   "id": "ct-GB-09",
+   "category": "dress",
+   "text": {
+    "en": "British dress is generally relaxed and practical. Layers and a light waterproof jacket are sensible because the weather can change several times in a day.",
+    "it": "L'abbigliamento britannico è in genere rilassato e pratico. Vestirsi a strati e portare una giacca impermeabile leggera è saggio perché il tempo può cambiare più volte al giorno.",
+    "es": "La ropa británica suele ser relajada y práctica. Conviene vestirse por capas y llevar una chaqueta impermeable ligera, porque el tiempo puede cambiar varias veces al día.",
+    "pt": "O vestuário britânico é geralmente descontraído e prático. Convém usar camadas e levar um casaco impermeável leve, porque o tempo pode mudar várias vezes ao dia.",
+    "pt_BR": "O vestuário britânico costuma ser descontraído e prático. Vale usar camadas e levar uma jaqueta impermeável leve, porque o tempo pode mudar várias vezes no mesmo dia.",
+    "fr": "La tenue britannique est en général décontractée et pratique. Il est sage de s'habiller en couches et d'emporter un imperméable léger, car le temps peut changer plusieurs fois par jour.",
+    "de": "Die Kleidung ist in Großbritannien meist leger und praktisch. Zwiebellook und eine leichte Regenjacke sind sinnvoll, denn das Wetter kann sich mehrmals am Tag ändern."
+   }
+  },
+  {
+   "id": "ct-GB-10",
+   "category": "dress",
+   "text": {
+    "en": "Some venues, such as upmarket restaurants, theatres or clubs, have a smart dress code. If you are unsure, check the venue's website or ask beforehand.",
+    "it": "Alcuni locali, come ristoranti eleganti, teatri o club, hanno un dress code formale. Se non sei sicuro, controlla il sito del locale o chiedi in anticipo.",
+    "es": "Algunos locales, como restaurantes elegantes, teatros o clubes, tienen un código de vestimenta formal. Si tienes dudas, consulta la web del local o pregunta antes.",
+    "pt": "Alguns locais, como restaurantes elegantes, teatros ou clubes, têm um código de vestuário formal. Se tiveres dúvidas, consulta o site do local ou pergunta antes.",
+    "pt_BR": "Alguns locais, como restaurantes elegantes, teatros ou clubes, têm um código de vestimenta formal. Se tiver dúvidas, consulte o site do local ou pergunte antes.",
+    "fr": "Certains lieux, comme les restaurants chics, les théâtres ou les clubs, imposent une tenue correcte. En cas de doute, consulte le site du lieu ou renseigne-toi à l'avance.",
+    "de": "Manche Orte, etwa gehobene Restaurants, Theater oder Clubs, haben einen eleganten Dresscode. Im Zweifel schau auf die Website des Ortes oder frag vorher nach."
+   }
+  },
+  {
+   "id": "ct-GB-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Cathedrals and historic churches are open to visitors, but some are active places of worship. Speak quietly, dress modestly and avoid walking around during services.",
+    "it": "Cattedrali e chiese storiche sono aperte ai visitatori, ma alcune sono luoghi di culto attivi. Parla a bassa voce, vesti in modo sobrio ed evita di girare durante le funzioni.",
+    "es": "Las catedrales y las iglesias históricas están abiertas a los visitantes, pero algunas son lugares de culto activos. Habla en voz baja, viste con sobriedad y evita pasear durante los oficios.",
+    "pt": "As catedrais e as igrejas históricas estão abertas aos visitantes, mas algumas são locais de culto ativos. Fala baixo, veste-te com sobriedade e evita andar pelo espaço durante as celebrações.",
+    "pt_BR": "As catedrais e as igrejas históricas estão abertas aos visitantes, mas algumas são locais de culto ativos. Fale baixo, vista-se com sobriedade e evite circular durante as celebrações.",
+    "fr": "Les cathédrales et les églises historiques sont ouvertes aux visiteurs, mais certaines sont des lieux de culte en activité. Parle doucement, habille-toi sobrement et évite de te déplacer pendant les offices.",
+    "de": "Kathedralen und historische Kirchen stehen Besuchern offen, manche sind aber aktive Gotteshäuser. Sprich leise, kleide dich dezent und geh während der Gottesdienste nicht herum."
+   }
+  },
+  {
+   "id": "ct-GB-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "Britain is home to many faiths. Visitors to a mosque, gurdwara or temple are usually welcome, and are often asked to remove their shoes and cover their heads.",
+    "it": "La Gran Bretagna ospita molte fedi. I visitatori di moschee, gurdwara o templi sono di solito benvenuti e spesso viene chiesto di togliere le scarpe e coprirsi il capo.",
+    "es": "Gran Bretaña es hogar de muchas religiones. Los visitantes de mezquitas, gurdwaras o templos suelen ser bienvenidos y a menudo se les pide quitarse los zapatos y cubrirse la cabeza.",
+    "pt": "A Grã-Bretanha acolhe muitas religiões. Os visitantes de mesquitas, gurdwaras ou templos são geralmente bem-vindos e costuma pedir-se que tirem os sapatos e cubram a cabeça.",
+    "pt_BR": "A Grã-Bretanha abriga muitas religiões. Visitantes de mesquitas, gurdwaras ou templos costumam ser bem-vindos e muitas vezes pedem que tirem os sapatos e cubram a cabeça.",
+    "fr": "La Grande-Bretagne accueille de nombreuses confessions. Les visiteurs d'une mosquée, d'un gurdwara ou d'un temple sont en général les bienvenus et doivent souvent retirer leurs chaussures et couvrir leur tête.",
+    "de": "In Großbritannien leben viele Glaubensgemeinschaften. Besucher von Moscheen, Gurdwaras oder Tempeln sind meist willkommen und werden oft gebeten, die Schuhe auszuziehen und den Kopf zu bedecken."
+   }
+  },
+  {
+   "id": "ct-GB-13",
+   "category": "gestures",
+   "text": {
+    "en": "The two-fingered V sign with the palm facing inward is rude in Britain. Keep your palm outward if you want to make a peace or victory sign.",
+    "it": "Il segno a V con due dita e il palmo rivolto verso di sé è offensivo in Gran Bretagna. Tieni il palmo verso l'esterno se vuoi fare il segno della pace o della vittoria.",
+    "es": "El signo de la V con dos dedos y la palma hacia dentro es grosero en Gran Bretaña. Mantén la palma hacia fuera si quieres hacer el signo de la paz o de la victoria.",
+    "pt": "O sinal em V com dois dedos e a palma virada para dentro é grosseiro na Grã-Bretanha. Mantém a palma virada para fora se quiseres fazer o sinal de paz ou de vitória.",
+    "pt_BR": "O sinal de V com dois dedos e a palma virada para dentro é grosseiro na Grã-Bretanha. Mantenha a palma virada para fora se quiser fazer o sinal de paz ou de vitória.",
+    "fr": "Le V fait avec deux doigts et la paume tournée vers soi est grossier en Grande-Bretagne. Garde la paume vers l'extérieur pour faire le signe de la paix ou de la victoire.",
+    "de": "Das V-Zeichen mit zwei Fingern und nach innen gedrehter Handfläche gilt in Großbritannien als unhöflich. Halte die Handfläche nach außen, wenn du ein Friedens- oder Siegeszeichen machen willst."
+   }
+  },
+  {
+   "id": "ct-GB-14",
+   "category": "gestures",
+   "text": {
+    "en": "Personal space matters. Britons usually keep an arm's length distance in conversation and may feel uncomfortable with very close contact or loud, intrusive questions.",
+    "it": "Lo spazio personale conta. I britannici di solito mantengono la distanza di un braccio durante la conversazione e possono sentirsi a disagio con contatti troppo ravvicinati o domande rumorose e invadenti.",
+    "es": "El espacio personal importa. Los británicos suelen mantener una distancia de un brazo al hablar y pueden sentirse incómodos con un contacto muy cercano o con preguntas ruidosas e invasivas.",
+    "pt": "O espaço pessoal importa. Os britânicos costumam manter a distância de um braço numa conversa e podem sentir-se desconfortáveis com contacto muito próximo ou perguntas ruidosas e intrusivas.",
+    "pt_BR": "O espaço pessoal importa. Os britânicos costumam manter a distância de um braço numa conversa e podem se sentir desconfortáveis com contato muito próximo ou perguntas barulhentas e invasivas.",
+    "fr": "L'espace personnel compte. Les Britanniques gardent en général une distance d'un bras en conversation et peuvent se sentir mal à l'aise face à un contact très proche ou à des questions bruyantes et indiscrètes.",
+    "de": "Persönlicher Freiraum ist wichtig. Briten halten im Gespräch meist eine Armlänge Abstand und fühlen sich bei sehr großer Nähe oder lauten, aufdringlichen Fragen schnell unwohl."
+   }
+  },
+  {
+   "id": "ct-GB-15",
+   "category": "punctuality",
+   "text": {
+    "en": "Being on time is valued, especially for work meetings and appointments. If you are going to be late, even by a few minutes, it is polite to send a message.",
+    "it": "Essere puntuali è apprezzato, soprattutto per riunioni di lavoro e appuntamenti. Se stai per arrivare in ritardo, anche di pochi minuti, è educato mandare un messaggio.",
+    "es": "Se valora la puntualidad, sobre todo en reuniones de trabajo y citas. Si vas a llegar tarde, aunque sea unos minutos, es de buena educación avisar con un mensaje.",
+    "pt": "A pontualidade é valorizada, sobretudo em reuniões de trabalho e marcações. Se fores chegar atrasado, mesmo que só alguns minutos, é educado enviar uma mensagem.",
+    "pt_BR": "A pontualidade é valorizada, principalmente em reuniões de trabalho e compromissos. Se for chegar atrasado, mesmo que poucos minutos, é educado mandar uma mensagem.",
+    "fr": "La ponctualité est appréciée, surtout pour les réunions de travail et les rendez-vous. Si tu vas avoir du retard, même de quelques minutes, il est poli d'envoyer un message.",
+    "de": "Pünktlichkeit wird geschätzt, besonders bei Geschäftsterminen und Verabredungen. Wenn du dich auch nur um ein paar Minuten verspätest, ist eine kurze Nachricht höflich."
+   }
+  },
+  {
+   "id": "ct-GB-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "Queuing is taken very seriously. Join the end of the line at shops, bus stops and counters, and wait your turn without pushing in.",
+    "it": "Fare la fila è preso molto sul serio. Mettiti in coda nei negozi, alle fermate e agli sportelli e aspetta il tuo turno senza passare davanti agli altri.",
+    "es": "Hacer cola se toma muy en serio. Colócate al final de la fila en tiendas, paradas de autobús y ventanillas, y espera tu turno sin colarte.",
+    "pt": "Fazer fila é levado muito a sério. Coloca-te no fim da fila nas lojas, paragens de autocarro e balcões e espera pela tua vez sem passar à frente.",
+    "pt_BR": "Fazer fila é levado muito a sério. Entre no fim da fila em lojas, pontos de ônibus e balcões e espere a sua vez sem furar.",
+    "fr": "Faire la queue est pris très au sérieux. Place-toi en fin de file dans les magasins, aux arrêts de bus et aux guichets, et attends ton tour sans passer devant les autres.",
+    "de": "Anstehen wird sehr ernst genommen. Stell dich in Geschäften, an Bushaltestellen und Schaltern hinten an und warte, bis du dran bist, ohne dich vorzudrängeln."
+   }
+  },
+  {
+   "id": "ct-GB-17",
+   "category": "public_behavior",
+   "text": {
+    "en": "Saying \"sorry\", \"please\" and \"thank you\" often is normal, even for small things like squeezing past someone. These words are part of everyday politeness.",
+    "it": "Dire spesso \"sorry\", \"please\" e \"thank you\" è normale, anche per piccole cose come passare accanto a qualcuno. Queste parole fanno parte della cortesia quotidiana.",
+    "es": "Decir a menudo \"sorry\", \"please\" y \"thank you\" es normal, incluso por cosas pequeñas como pasar junto a alguien. Estas palabras forman parte de la cortesía cotidiana.",
+    "pt": "Dizer muitas vezes \"sorry\", \"please\" e \"thank you\" é normal, mesmo por coisas pequenas como passar por alguém. Estas palavras fazem parte da cortesia do dia a dia.",
+    "pt_BR": "Dizer com frequência \"sorry\", \"please\" e \"thank you\" é normal, até por coisas pequenas, como passar ao lado de alguém. Essas palavras fazem parte da cortesia do dia a dia.",
+    "fr": "Dire souvent \"sorry\", \"please\" et \"thank you\" est normal, même pour de petites choses comme se faufiler près de quelqu'un. Ces mots font partie de la politesse quotidienne.",
+    "de": "Oft \"sorry\", \"please\" und \"thank you\" zu sagen ist normal, selbst bei Kleinigkeiten wie dem Vorbeidrängeln an jemandem. Diese Wörter gehören zur alltäglichen Höflichkeit."
+   }
+  },
+  {
+   "id": "ct-GB-18",
+   "category": "transport",
+   "text": {
+    "en": "Traffic drives on the left. When crossing the road, look both ways, and remember that the first direction to check may be different from what you are used to.",
+    "it": "Si guida a sinistra. Quando attraversi la strada, guarda da entrambe le parti e ricorda che la prima direzione da controllare potrebbe essere diversa da quella a cui sei abituato.",
+    "es": "Se conduce por la izquierda. Al cruzar la calle, mira a ambos lados y recuerda que la primera dirección que debes comprobar puede ser distinta de la que estás acostumbrado.",
+    "pt": "Conduz-se pela esquerda. Ao atravessar a rua, olha para os dois lados e lembra-te de que a primeira direção a verificar pode ser diferente da que estás habituado.",
+    "pt_BR": "Dirige-se pela esquerda. Ao atravessar a rua, olhe para os dois lados e lembre que a primeira direção a conferir pode ser diferente da que você está acostumado.",
+    "fr": "On roule à gauche. En traversant la rue, regarde des deux côtés et rappelle-toi que le premier sens à vérifier peut être différent de celui auquel tu es habitué.",
+    "de": "Es herrscht Linksverkehr. Schau beim Überqueren der Straße in beide Richtungen und denk daran, dass die erste Richtung, die du prüfen musst, eine andere sein kann als gewohnt."
+   }
+  },
+  {
+   "id": "ct-GB-19",
+   "category": "transport",
+   "text": {
+    "en": "On escalators in the London Underground, people stand on the right and leave the left side free for those who want to walk. Contactless cards are accepted at the gates.",
+    "it": "Sulle scale mobili della metropolitana di Londra ci si ferma a destra e si lascia libero il lato sinistro per chi vuole camminare. Ai tornelli si accettano le carte contactless.",
+    "es": "En las escaleras mecánicas del metro de Londres la gente se coloca a la derecha y deja libre el lado izquierdo para quien quiere caminar. En los tornos se aceptan tarjetas contactless.",
+    "pt": "Nas escadas rolantes do metro de Londres as pessoas ficam à direita e deixam o lado esquerdo livre para quem quer andar. Nas cancelas aceitam-se cartões contactless.",
+    "pt_BR": "Nas escadas rolantes do metrô de Londres as pessoas ficam à direita e deixam o lado esquerdo livre para quem quer andar. Nas catracas aceitam-se cartões por aproximação.",
+    "fr": "Dans les escaliers mécaniques du métro de Londres, on se place à droite et on laisse la gauche libre pour ceux qui veulent marcher. Les cartes sans contact sont acceptées aux portillons.",
+    "de": "Auf den Rolltreppen der Londoner U-Bahn steht man rechts und lässt die linke Seite für Leute frei, die gehen wollen. An den Sperren werden kontaktlose Karten akzeptiert."
+   }
+  },
+  {
+   "id": "ct-GB-20",
+   "category": "language",
+   "text": {
+    "en": "English is spoken with many regional accents, and Wales and Scotland also have their own languages. Welsh signs are common in Wales, so don't be surprised to see two languages.",
+    "it": "L'inglese è parlato con molti accenti regionali, e anche il Galles e la Scozia hanno lingue proprie. In Galles i cartelli in gallese sono comuni, quindi non stupirti di vedere due lingue.",
+    "es": "El inglés se habla con muchos acentos regionales, y Gales y Escocia tienen además sus propias lenguas. En Gales son comunes los carteles en galés, así que no te sorprendas al ver dos idiomas.",
+    "pt": "O inglês fala-se com muitos sotaques regionais, e o País de Gales e a Escócia têm também as suas próprias línguas. No País de Gales os sinais em galês são comuns, por isso não estranhes ver dois idiomas.",
+    "pt_BR": "O inglês é falado com muitos sotaques regionais, e o País de Gales e a Escócia também têm suas próprias línguas. No País de Gales as placas em galês são comuns, então não estranhe ver dois idiomas.",
+    "fr": "L'anglais se parle avec de nombreux accents régionaux, et le pays de Galles et l'Écosse ont aussi leurs propres langues. Les panneaux en gallois sont courants au pays de Galles, ne sois donc pas surpris de voir deux langues.",
+    "de": "Englisch wird mit vielen regionalen Akzenten gesprochen, und auch Wales und Schottland haben eigene Sprachen. In Wales sind walisische Schilder üblich, also wundere dich nicht über zwei Sprachen."
+   }
+  },
+  {
+   "id": "ct-GB-21",
+   "category": "language",
+   "text": {
+    "en": "In casual speech, \"cheers\" often means \"thank you\" or even \"goodbye\", not only a toast. Words like \"mate\" are friendly and used with people of all kinds.",
+    "it": "Nel parlato informale \"cheers\" spesso significa \"grazie\" o anche \"ciao\", non solo un brindisi. Parole come \"mate\" sono amichevoli e si usano con persone di ogni tipo.",
+    "es": "En el habla informal, \"cheers\" suele significar \"gracias\" o incluso \"adiós\", y no solo un brindis. Palabras como \"mate\" son amistosas y se usan con todo tipo de personas.",
+    "pt": "Na fala informal, \"cheers\" significa muitas vezes \"obrigado\" ou até \"adeus\", e não apenas um brinde. Palavras como \"mate\" são amigáveis e usam-se com todo o tipo de pessoas.",
+    "pt_BR": "Na fala informal, \"cheers\" costuma significar \"obrigado\" ou até \"tchau\", e não só um brinde. Palavras como \"mate\" são amigáveis e usadas com todo tipo de pessoa.",
+    "fr": "Dans le langage courant, \"cheers\" veut souvent dire \"merci\" ou même \"au revoir\", pas seulement \"santé\". Des mots comme \"mate\" sont amicaux et s'emploient avec toutes sortes de gens.",
+    "de": "In der Umgangssprache bedeutet \"cheers\" oft \"danke\" oder sogar \"tschüss\", nicht nur \"prost\". Wörter wie \"mate\" sind freundlich und werden gegenüber allen möglichen Leuten benutzt."
+   }
+  },
+  {
+   "id": "ct-GB-22",
+   "category": "festivals",
+   "text": {
+    "en": "On 5 November, Bonfire Night (Guy Fawkes Night) is marked with bonfires and fireworks across Britain. Many towns hold organised displays that families can attend.",
+    "it": "Il 5 novembre la Bonfire Night (Guy Fawkes Night) si celebra con falò e fuochi d'artificio in tutta la Gran Bretagna. Molte città organizzano spettacoli a cui possono partecipare le famiglie.",
+    "es": "El 5 de noviembre se celebra la Bonfire Night (Guy Fawkes Night) con hogueras y fuegos artificiales por toda Gran Bretaña. Muchas ciudades organizan espectáculos a los que pueden asistir las familias.",
+    "pt": "A 5 de novembro celebra-se a Bonfire Night (Guy Fawkes Night) com fogueiras e fogo de artifício por toda a Grã-Bretanha. Muitas cidades organizam espetáculos a que as famílias podem assistir.",
+    "pt_BR": "Em 5 de novembro celebra-se a Bonfire Night (Guy Fawkes Night) com fogueiras e fogos de artifício por toda a Grã-Bretanha. Muitas cidades organizam espetáculos a que as famílias podem assistir.",
+    "fr": "Le 5 novembre, la Bonfire Night (Guy Fawkes Night) est célébrée avec des feux de joie et des feux d'artifice dans toute la Grande-Bretagne. De nombreuses villes organisent des spectacles ouverts aux familles.",
+    "de": "Am 5. November wird in ganz Großbritannien die Bonfire Night (Guy Fawkes Night) mit Feuern und Feuerwerk gefeiert. Viele Städte veranstalten organisierte Shows, die Familien besuchen können."
+   }
+  },
+  {
+   "id": "ct-GB-23",
+   "category": "festivals",
+   "text": {
+    "en": "The Notting Hill Carnival in London, held every year since 1966, celebrates Caribbean culture with music, costumes and food. It takes place in late August.",
+    "it": "Il Notting Hill Carnival di Londra, che si tiene ogni anno dal 1966, celebra la cultura caraibica con musica, costumi e cibo. Si svolge a fine agosto.",
+    "es": "El Carnaval de Notting Hill en Londres, que se celebra cada año desde 1966, festeja la cultura caribeña con música, trajes y comida. Tiene lugar a finales de agosto.",
+    "pt": "O Carnaval de Notting Hill, em Londres, realizado todos os anos desde 1966, celebra a cultura caribenha com música, trajes e comida. Acontece no final de agosto.",
+    "pt_BR": "O Carnaval de Notting Hill, em Londres, realizado todo ano desde 1966, celebra a cultura caribenha com música, fantasias e comida. Acontece no fim de agosto.",
+    "fr": "Le carnaval de Notting Hill à Londres, organisé chaque année depuis 1966, célèbre la culture caribéenne avec de la musique, des costumes et de la cuisine. Il a lieu fin août.",
+    "de": "Der Notting Hill Carnival in London, der seit 1966 jedes Jahr stattfindet, feiert die karibische Kultur mit Musik, Kostümen und Essen. Er findet Ende August statt."
+   }
+  },
+  {
+   "id": "ct-GB-24",
+   "category": "family",
+   "text": {
+    "en": "Sunday lunch and family gatherings at Christmas are important traditions. Mothering Sunday in spring is a day for thanking mothers and other carers.",
+    "it": "Il pranzo della domenica e le riunioni di famiglia a Natale sono tradizioni importanti. La Mothering Sunday, in primavera, è un giorno per ringraziare le madri e chi si prende cura di noi.",
+    "es": "La comida del domingo y las reuniones familiares en Navidad son tradiciones importantes. El Mothering Sunday, en primavera, es un día para agradecer a las madres y a otras personas que cuidan de nosotros.",
+    "pt": "O almoço de domingo e os encontros de família no Natal são tradições importantes. O Mothering Sunday, na primavera, é um dia para agradecer às mães e a outros cuidadores.",
+    "pt_BR": "O almoço de domingo e os encontros de família no Natal são tradições importantes. O Mothering Sunday, na primavera, é um dia para agradecer às mães e a outros cuidadores.",
+    "fr": "Le déjeuner du dimanche et les réunions de famille à Noël sont des traditions importantes. Le Mothering Sunday, au printemps, est un jour pour remercier les mères et ceux qui prennent soin de nous.",
+    "de": "Das Sonntagsessen und Familientreffen an Weihnachten sind wichtige Traditionen. Der Mothering Sunday im Frühling ist ein Tag, um Müttern und anderen Fürsorgenden zu danken."
+   }
+  },
+  {
+   "id": "ct-GB-25",
+   "category": "money",
+   "text": {
+    "en": "The currency is the pound sterling (£). Contactless card and phone payments are accepted almost everywhere, even for small amounts, so you may rarely need cash.",
+    "it": "La valuta è la sterlina (£). I pagamenti contactless con carta o telefono sono accettati quasi ovunque, anche per piccole somme, quindi raramente servono contanti.",
+    "es": "La moneda es la libra esterlina (£). Los pagos sin contacto con tarjeta o móvil se aceptan casi en todas partes, incluso para importes pequeños, así que rara vez necesitarás efectivo.",
+    "pt": "A moeda é a libra esterlina (£). Os pagamentos contactless com cartão ou telemóvel são aceites quase em todo o lado, mesmo para valores pequenos, por isso raramente vais precisar de dinheiro vivo.",
+    "pt_BR": "A moeda é a libra esterlina (£). Pagamentos por aproximação com cartão ou celular são aceitos quase em todo lugar, mesmo para valores pequenos, então raramente você vai precisar de dinheiro vivo.",
+    "fr": "La monnaie est la livre sterling (£). Les paiements sans contact par carte ou téléphone sont acceptés presque partout, même pour de petits montants, donc tu auras rarement besoin d'espèces.",
+    "de": "Die Währung ist das Pfund Sterling (£). Kontaktloses Bezahlen mit Karte oder Handy wird fast überall akzeptiert, selbst bei kleinen Beträgen, du brauchst also selten Bargeld."
+   }
+  },
+  {
+   "id": "ct-GB-26",
+   "category": "photography",
+   "text": {
+    "en": "Photography is generally fine in public places, but some museums, galleries and places of worship restrict it. Look for signs, and ask before photographing strangers.",
+    "it": "Fotografare è in genere permesso nei luoghi pubblici, ma alcuni musei, gallerie e luoghi di culto lo limitano. Cerca i cartelli e chiedi prima di fotografare degli sconosciuti.",
+    "es": "Fotografiar suele estar permitido en lugares públicos, pero algunos museos, galerías y lugares de culto lo restringen. Busca los carteles y pregunta antes de fotografiar a desconocidos.",
+    "pt": "Fotografar é geralmente permitido em locais públicos, mas alguns museus, galerias e locais de culto restringem-no. Procura os avisos e pergunta antes de fotografar desconhecidos.",
+    "pt_BR": "Fotografar costuma ser permitido em locais públicos, mas alguns museus, galerias e locais de culto restringem. Procure os avisos e pergunte antes de fotografar desconhecidos.",
+    "fr": "Photographier est généralement permis dans les lieux publics, mais certains musées, galeries et lieux de culte le limitent. Cherche les panneaux et demande avant de photographier des inconnus.",
+    "de": "Fotografieren ist an öffentlichen Orten meist in Ordnung, aber manche Museen, Galerien und Gotteshäuser schränken es ein. Achte auf Schilder und frag, bevor du Fremde fotografierst."
+   }
+  },
+  {
+   "id": "ct-GB-27",
+   "category": "nightlife",
+   "text": {
+    "en": "In pubs, groups often buy drinks in turns, which is called a round. If you join in, take your turn so that everyone feels the evening is fair.",
+    "it": "Nei pub i gruppi spesso offrono da bere a turno, cosa che si chiama round. Se partecipi, fai la tua parte, così tutti sentono che la serata è equa.",
+    "es": "En los pubs, los grupos suelen pagar las bebidas por turnos, lo que se llama round. Si participas, paga tu ronda para que todos sientan que la noche es justa.",
+    "pt": "Nos pubs, os grupos costumam pagar as bebidas à vez, o que se chama round. Se participares, paga a tua vez para que todos sintam que a noite é justa.",
+    "pt_BR": "Nos pubs, os grupos costumam pagar as bebidas em rodadas, o que se chama round. Se participar, pague a sua vez para que todos sintam que a noite é justa.",
+    "fr": "Dans les pubs, les groupes paient souvent les consommations à tour de rôle, ce qu'on appelle un round. Si tu participes, paie ta tournée pour que chacun trouve la soirée équitable.",
+    "de": "In Pubs kaufen Gruppen oft abwechselnd Getränke für alle, das nennt man eine Runde. Wenn du mitmachst, bezahle auch deine Runde, damit sich alle fair behandelt fühlen."
+   }
+  },
+  {
+   "id": "ct-GB-28",
+   "category": "nature",
+   "text": {
+    "en": "In Scotland, people generally have the right to walk and camp responsibly on most open land. Follow the Scottish Outdoor Access Code and leave no litter.",
+    "it": "In Scozia in genere si ha il diritto di camminare e campeggiare in modo responsabile sulla maggior parte dei terreni aperti. Segui lo Scottish Outdoor Access Code e non lasciare rifiuti.",
+    "es": "En Escocia, la gente tiene en general derecho a caminar y acampar de forma responsable en la mayoría de los terrenos abiertos. Sigue el Scottish Outdoor Access Code y no dejes basura.",
+    "pt": "Na Escócia, as pessoas têm geralmente o direito de caminhar e acampar com responsabilidade na maior parte dos terrenos abertos. Segue o Scottish Outdoor Access Code e não deixes lixo.",
+    "pt_BR": "Na Escócia, as pessoas geralmente têm o direito de caminhar e acampar com responsabilidade na maior parte das terras abertas. Siga o Scottish Outdoor Access Code e não deixe lixo.",
+    "fr": "En Écosse, on a généralement le droit de marcher et de camper de façon responsable sur la plupart des terres ouvertes. Respecte le Scottish Outdoor Access Code et ne laisse aucun déchet.",
+    "de": "In Schottland darf man auf den meisten offenen Flächen in der Regel verantwortungsvoll wandern und zelten. Halte dich an den Scottish Outdoor Access Code und hinterlasse keinen Müll."
+   }
+  },
+  {
+   "id": "ct-GB-29",
+   "category": "safety",
+   "text": {
+    "en": "The emergency number is 999 (112 also works) for police, fire and ambulance. The UK is generally safe, but keep phones and bags out of sight in busy areas.",
+    "it": "Il numero di emergenza è il 999 (funziona anche il 112) per polizia, vigili del fuoco e ambulanza. Il Regno Unito è in genere sicuro, ma tieni telefono e borse fuori dalla vista nelle zone affollate.",
+    "es": "El número de emergencias es el 999 (también funciona el 112) para policía, bomberos y ambulancia. El Reino Unido es en general seguro, pero mantén el móvil y los bolsos fuera de la vista en zonas concurridas.",
+    "pt": "O número de emergência é o 999 (o 112 também funciona) para polícia, bombeiros e ambulância. O Reino Unido é geralmente seguro, mas mantém o telemóvel e as malas fora da vista em zonas movimentadas.",
+    "pt_BR": "O número de emergência é o 999 (o 112 também funciona) para polícia, bombeiros e ambulância. O Reino Unido é geralmente seguro, mas mantenha celular e bolsas fora de vista em áreas movimentadas.",
+    "fr": "Le numéro d'urgence est le 999 (le 112 fonctionne aussi) pour la police, les pompiers et l'ambulance. Le Royaume-Uni est en général sûr, mais garde téléphone et sacs hors de vue dans les endroits fréquentés.",
+    "de": "Die Notrufnummer ist 999 (auch 112 funktioniert) für Polizei, Feuerwehr und Rettungsdienst. Das Vereinigte Königreich ist im Allgemeinen sicher, aber halte Handy und Taschen in belebten Gegenden außer Sicht."
+   }
+  },
+  {
+   "id": "ct-GB-30",
+   "category": "local_pride",
+   "text": {
+    "en": "England, Scotland, Wales and Northern Ireland are distinct nations within the UK. Say \"British\" for the whole country, but avoid calling a Scot or Welsh person \"English\".",
+    "it": "Inghilterra, Scozia, Galles e Irlanda del Nord sono nazioni distinte all'interno del Regno Unito. Usa \"britannico\" per tutto il Paese, ma evita di chiamare \"inglese\" uno scozzese o un gallese.",
+    "es": "Inglaterra, Escocia, Gales e Irlanda del Norte son naciones distintas dentro del Reino Unido. Usa \"británico\" para todo el país, pero evita llamar \"inglés\" a un escocés o a un galés.",
+    "pt": "Inglaterra, Escócia, País de Gales e Irlanda do Norte são nações distintas dentro do Reino Unido. Usa \"britânico\" para todo o país, mas evita chamar \"inglês\" a um escocês ou a um galês.",
+    "pt_BR": "Inglaterra, Escócia, País de Gales e Irlanda do Norte são nações distintas dentro do Reino Unido. Use \"britânico\" para o país todo, mas evite chamar de \"inglês\" um escocês ou um galês.",
+    "fr": "L'Angleterre, l'Écosse, le pays de Galles et l'Irlande du Nord sont des nations distinctes au sein du Royaume-Uni. Dis \"britannique\" pour l'ensemble du pays, mais évite d'appeler \"anglais\" un Écossais ou un Gallois.",
+    "de": "England, Schottland, Wales und Nordirland sind eigenständige Nationen innerhalb des Vereinigten Königreichs. Sag \"britisch\" für das ganze Land, aber nenne Schotten oder Waliser nicht \"englisch\"."
+   }
+  }
+ ],
+ "KE": [
+  {
+   "id": "ct-KE-01",
+   "category": "greetings",
+   "text": {
+    "en": "Greetings matter in Kenya. A handshake is common, and people often ask about your health, family and journey before getting to the point. Rushing a greeting can seem cold.",
+    "it": "I saluti contano in Kenya. La stretta di mano è comune e spesso si chiede di salute, famiglia e viaggio prima di arrivare al punto. Salutare di fretta può sembrare freddo.",
+    "es": "Los saludos son importantes en Kenia. El apretón de manos es habitual y a menudo se pregunta por la salud, la familia y el viaje antes de ir al grano. Saludar con prisa puede parecer frío.",
+    "pt": "Os cumprimentos são importantes no Quénia. O aperto de mão é comum e costuma perguntar-se pela saúde, pela família e pela viagem antes de ir ao assunto. Cumprimentar à pressa pode parecer frio.",
+    "pt_BR": "Os cumprimentos são importantes no Quênia. O aperto de mão é comum e costuma-se perguntar sobre saúde, família e viagem antes de ir ao assunto. Cumprimentar com pressa pode parecer frio.",
+    "fr": "Les salutations comptent au Kenya. La poignée de main est courante et on demande souvent des nouvelles de la santé, de la famille et du voyage avant d'aborder le sujet. Saluer à la hâte peut paraître froid.",
+    "de": "Begrüßungen sind in Kenia wichtig. Ein Händedruck ist üblich, und oft fragt man nach Gesundheit, Familie und Reise, bevor man zur Sache kommt. Eine hastige Begrüßung kann kühl wirken."
+   }
+  },
+  {
+   "id": "ct-KE-02",
+   "category": "greetings",
+   "text": {
+    "en": "Learning a few Swahili words goes a long way. \"Jambo\" and \"Habari\" mean hello, \"Karibu\" means welcome, and \"Asante\" means thank you.",
+    "it": "Imparare qualche parola di swahili aiuta molto. \"Jambo\" e \"Habari\" significano ciao, \"Karibu\" significa benvenuto e \"Asante\" significa grazie.",
+    "es": "Aprender unas palabras de suajili ayuda mucho. \"Jambo\" y \"Habari\" significan hola, \"Karibu\" significa bienvenido y \"Asante\" significa gracias.",
+    "pt": "Aprender algumas palavras de suaíli ajuda muito. \"Jambo\" e \"Habari\" significam olá, \"Karibu\" significa bem-vindo e \"Asante\" significa obrigado.",
+    "pt_BR": "Aprender algumas palavras de suaíli ajuda muito. \"Jambo\" e \"Habari\" significam oi, \"Karibu\" significa bem-vindo e \"Asante\" significa obrigado.",
+    "fr": "Apprendre quelques mots de swahili aide beaucoup. \"Jambo\" et \"Habari\" signifient bonjour, \"Karibu\" signifie bienvenue et \"Asante\" signifie merci.",
+    "de": "Ein paar Wörter Suaheli helfen sehr. \"Jambo\" und \"Habari\" heißen Hallo, \"Karibu\" heißt willkommen und \"Asante\" heißt danke."
+   }
+  },
+  {
+   "id": "ct-KE-03",
+   "category": "conversation",
+   "text": {
+    "en": "Asking about someone's family and home area is a warm way to start talking. Many Kenyans also enjoy football, running and music as friendly topics.",
+    "it": "Chiedere della famiglia e della zona d'origine è un modo caloroso per iniziare a parlare. Molti keniani amano anche parlare di calcio, corsa e musica.",
+    "es": "Preguntar por la familia y la zona de origen es una forma cálida de empezar a hablar. A muchos keniatas también les gusta conversar sobre fútbol, carreras y música.",
+    "pt": "Perguntar pela família e pela terra de origem é uma forma calorosa de começar a conversa. Muitos quenianos também gostam de falar de futebol, corrida e música.",
+    "pt_BR": "Perguntar pela família e pela terra de origem é uma forma calorosa de começar a conversa. Muitos quenianos também gostam de falar de futebol, corrida e música.",
+    "fr": "Demander des nouvelles de la famille et de la région d'origine est une façon chaleureuse d'entamer la conversation. Beaucoup de Kényans aiment aussi parler de football, de course à pied et de musique.",
+    "de": "Nach Familie und Heimatregion zu fragen ist ein herzlicher Gesprächseinstieg. Viele Kenianer reden auch gern über Fußball, Laufen und Musik."
+   }
+  },
+  {
+   "id": "ct-KE-04",
+   "category": "conversation",
+   "text": {
+    "en": "Kenya has more than 40 ethnic communities. Show curiosity about a person's community and language, and avoid assumptions about which group someone belongs to.",
+    "it": "Il Kenya ha più di 40 comunità etniche. Mostra curiosità per la comunità e la lingua di una persona ed evita di dare per scontato a quale gruppo appartenga.",
+    "es": "Kenia tiene más de 40 comunidades étnicas. Muestra curiosidad por la comunidad y la lengua de una persona, y evita suponer a qué grupo pertenece.",
+    "pt": "O Quénia tem mais de 40 comunidades étnicas. Mostra curiosidade pela comunidade e pela língua de cada pessoa e evita presumir a que grupo pertence.",
+    "pt_BR": "O Quênia tem mais de 40 comunidades étnicas. Mostre curiosidade pela comunidade e pela língua de cada pessoa e evite presumir a que grupo ela pertence.",
+    "fr": "Le Kenya compte plus de 40 communautés ethniques. Montre de la curiosité pour la communauté et la langue d'une personne, et évite de deviner à quel groupe elle appartient.",
+    "de": "Kenia hat mehr als 40 ethnische Gemeinschaften. Zeig Neugier für Gemeinschaft und Sprache eines Menschen und vermeide Annahmen darüber, zu welcher Gruppe jemand gehört."
+   }
+  },
+  {
+   "id": "ct-KE-05",
+   "category": "dining",
+   "text": {
+    "en": "Ugali, a stiff maize porridge, is a staple eaten across Kenya, often with sukuma wiki (greens) or stew. It is commonly eaten by hand, so wash your hands first.",
+    "it": "L'ugali, una polenta soda di mais, è un alimento base in tutto il Kenya, spesso con sukuma wiki (verdure) o stufato. Di solito si mangia con le mani, quindi lavale prima.",
+    "es": "El ugali, una gacha espesa de maíz, es un alimento básico en todo Kenia, a menudo con sukuma wiki (verduras) o estofado. Se suele comer con las manos, así que lávatelas antes.",
+    "pt": "O ugali, uma papa espessa de milho, é um alimento base em todo o Quénia, muitas vezes com sukuma wiki (verduras) ou guisado. Come-se normalmente com as mãos, por isso lava-as antes.",
+    "pt_BR": "O ugali, um mingau firme de milho, é um alimento básico em todo o Quênia, muitas vezes com sukuma wiki (verduras) ou ensopado. Costuma-se comer com as mãos, então lave-as antes.",
+    "fr": "L'ugali, une bouillie épaisse de maïs, est un aliment de base dans tout le Kenya, souvent avec du sukuma wiki (légumes verts) ou un ragoût. On le mange généralement avec les mains, alors lave-les d'abord.",
+    "de": "Ugali, ein fester Maisbrei, ist in ganz Kenia ein Grundnahrungsmittel, oft mit Sukuma Wiki (Blattgemüse) oder Eintopf. Man isst ihn meist mit den Händen, wasch sie dir also vorher."
+   }
+  },
+  {
+   "id": "ct-KE-06",
+   "category": "dining",
+   "text": {
+    "en": "Nyama choma, grilled meat shared with friends, is a favourite way to socialise. Tea with milk, called chai, is also offered often to guests.",
+    "it": "La nyama choma, carne alla griglia condivisa con gli amici, è un modo molto amato di stare insieme. Anche il tè con il latte, chiamato chai, viene offerto spesso agli ospiti.",
+    "es": "La nyama choma, carne a la parrilla que se comparte con amigos, es una forma muy querida de socializar. El té con leche, llamado chai, también se ofrece a menudo a los invitados.",
+    "pt": "A nyama choma, carne grelhada partilhada com amigos, é uma forma muito apreciada de convívio. O chá com leite, chamado chai, também é muitas vezes oferecido aos convidados.",
+    "pt_BR": "A nyama choma, carne grelhada dividida com amigos, é uma forma muito querida de confraternizar. O chá com leite, chamado chai, também costuma ser oferecido às visitas.",
+    "fr": "La nyama choma, de la viande grillée partagée entre amis, est une façon très appréciée de se retrouver. Le thé au lait, appelé chai, est aussi souvent offert aux invités.",
+    "de": "Nyama choma, gegrilltes Fleisch, das man mit Freunden teilt, ist eine beliebte Art zusammenzukommen. Auch Tee mit Milch, genannt Chai, wird Gästen oft angeboten."
+   }
+  },
+  {
+   "id": "ct-KE-07",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping is appreciated but not obligatory. In restaurants, check whether a service charge is on the bill; if not, a small tip of around 10 percent for good service is welcome.",
+    "it": "La mancia è apprezzata ma non obbligatoria. Nei ristoranti controlla se il servizio è nel conto; altrimenti una piccola mancia di circa il 10 per cento per un buon servizio è gradita.",
+    "es": "La propina se agradece, pero no es obligatoria. En los restaurantes, comprueba si la cuenta incluye servicio; si no, una pequeña propina de alrededor del 10 por ciento por un buen servicio es bienvenida.",
+    "pt": "A gorjeta é apreciada, mas não obrigatória. Nos restaurantes, verifica se o serviço está incluído na conta; se não estiver, uma pequena gorjeta de cerca de 10 por cento por um bom serviço é bem-vinda.",
+    "pt_BR": "A gorjeta é apreciada, mas não obrigatória. Nos restaurantes, confira se o serviço está incluído na conta; se não estiver, uma pequena gorjeta de cerca de 10 por cento por um bom serviço é bem-vinda.",
+    "fr": "Le pourboire est apprécié mais pas obligatoire. Au restaurant, vérifie si le service figure sur l'addition; sinon, un petit pourboire d'environ 10 pour cent pour un bon service est bienvenu.",
+    "de": "Trinkgeld wird geschätzt, ist aber nicht verpflichtend. Prüfe im Restaurant, ob die Rechnung Bedienung enthält; falls nicht, sind etwa 10 Prozent für guten Service willkommen."
+   }
+  },
+  {
+   "id": "ct-KE-08",
+   "category": "gifts",
+   "text": {
+    "en": "When visiting a Kenyan home, it is common to bring a small gift such as fruit, sweets, tea or sugar. Offer and receive gifts with the right hand or both hands.",
+    "it": "Quando si visita una casa keniana è comune portare un piccolo regalo, come frutta, dolci, tè o zucchero. Offri e ricevi i regali con la mano destra o con entrambe le mani.",
+    "es": "Al visitar una casa keniana es habitual llevar un pequeño regalo, como fruta, dulces, té o azúcar. Ofrece y recibe los regalos con la mano derecha o con ambas manos.",
+    "pt": "Ao visitar uma casa queniana é comum levar uma pequena lembrança, como fruta, doces, chá ou açúcar. Oferece e recebe os presentes com a mão direita ou com ambas as mãos.",
+    "pt_BR": "Ao visitar uma casa queniana é comum levar um pequeno presente, como frutas, doces, chá ou açúcar. Ofereça e receba presentes com a mão direita ou com as duas mãos.",
+    "fr": "Quand on rend visite à une famille kényane, il est courant d'apporter un petit cadeau, comme des fruits, des sucreries, du thé ou du sucre. Offre et reçois les cadeaux de la main droite ou des deux mains.",
+    "de": "Bei einem Besuch in einem kenianischen Zuhause ist ein kleines Geschenk wie Obst, Süßigkeiten, Tee oder Zucker üblich. Gib und nimm Geschenke mit der rechten oder mit beiden Händen."
+   }
+  },
+  {
+   "id": "ct-KE-09",
+   "category": "dress",
+   "text": {
+    "en": "Dress is generally modest, especially outside beach resorts and in smaller towns. Covering shoulders and knees is a safe choice in most daily situations.",
+    "it": "L'abbigliamento è in genere sobrio, soprattutto fuori dai resort sulla spiaggia e nelle città più piccole. Coprire spalle e ginocchia è una scelta sicura nella maggior parte delle situazioni quotidiane.",
+    "es": "La vestimenta es en general discreta, sobre todo fuera de los complejos de playa y en las ciudades pequeñas. Cubrir hombros y rodillas es una opción segura en la mayoría de las situaciones diarias.",
+    "pt": "O vestuário é geralmente discreto, sobretudo fora dos resorts de praia e nas cidades mais pequenas. Cobrir ombros e joelhos é uma escolha segura na maioria das situações do dia a dia.",
+    "pt_BR": "A roupa costuma ser discreta, principalmente fora dos resorts de praia e nas cidades menores. Cobrir ombros e joelhos é uma escolha segura na maioria das situações do dia a dia.",
+    "fr": "La tenue est en général pudique, surtout en dehors des stations balnéaires et dans les petites villes. Couvrir les épaules et les genoux est un choix sûr dans la plupart des situations quotidiennes.",
+    "de": "Die Kleidung ist meist dezent, besonders außerhalb von Strandresorts und in kleineren Städten. Schultern und Knie zu bedecken ist im Alltag fast immer eine sichere Wahl."
+   }
+  },
+  {
+   "id": "ct-KE-10",
+   "category": "dress",
+   "text": {
+    "en": "The kanga is a colourful printed cloth worn in many Kenyan homes, usually by women, and often carries a saying in Swahili. It also makes a meaningful souvenir.",
+    "it": "Il kanga è un tessuto colorato stampato indossato in molte case keniane, di solito dalle donne, e spesso riporta un proverbio in swahili. È anche un souvenir significativo.",
+    "es": "El kanga es una tela estampada de colores que se usa en muchos hogares kenianos, normalmente las mujeres, y a menudo lleva un dicho en suajili. También es un recuerdo con significado.",
+    "pt": "A kanga é um tecido estampado e colorido usado em muitas casas quenianas, normalmente por mulheres, e muitas vezes traz um provérbio em suaíli. Também é uma lembrança com significado.",
+    "pt_BR": "A kanga é um tecido estampado e colorido usado em muitas casas quenianas, normalmente por mulheres, e muitas vezes traz um provérbio em suaíli. Também é uma lembrança com significado.",
+    "fr": "Le kanga est un tissu imprimé coloré porté dans de nombreux foyers kényans, en général par les femmes, et orné souvent d'un proverbe en swahili. C'est aussi un souvenir plein de sens.",
+    "de": "Die Kanga ist ein buntes bedrucktes Tuch, das in vielen kenianischen Haushalten meist von Frauen getragen wird und oft einen Spruch auf Suaheli trägt. Sie ist auch ein bedeutungsvolles Souvenir."
+   }
+  },
+  {
+   "id": "ct-KE-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Most Kenyans are Christian, and churches are central to community life; Sunday services can be long and lively. Visitors are usually welcome if dressed neatly.",
+    "it": "La maggior parte dei keniani è cristiana e le chiese sono centrali nella vita comunitaria; le funzioni della domenica possono essere lunghe e vivaci. I visitatori sono di solito benvenuti se vestiti con cura.",
+    "es": "La mayoría de los keniatas son cristianos y las iglesias son centrales en la vida comunitaria; los oficios del domingo pueden ser largos y animados. Los visitantes suelen ser bienvenidos si visten con decoro.",
+    "pt": "A maioria dos quenianos é cristã e as igrejas são centrais na vida comunitária; as celebrações de domingo podem ser longas e animadas. Os visitantes costumam ser bem-vindos se estiverem bem vestidos.",
+    "pt_BR": "A maioria dos quenianos é cristã e as igrejas são centrais na vida comunitária; os cultos de domingo podem ser longos e animados. Os visitantes costumam ser bem-vindos se estiverem bem vestidos.",
+    "fr": "La plupart des Kényans sont chrétiens et les églises sont au cœur de la vie communautaire; les offices du dimanche peuvent être longs et animés. Les visiteurs sont généralement les bienvenus s'ils sont habillés correctement.",
+    "de": "Die meisten Kenianer sind Christen, und Kirchen stehen im Mittelpunkt des Gemeindelebens; Sonntagsgottesdienste können lang und lebhaft sein. Besucher sind meist willkommen, wenn sie ordentlich gekleidet sind."
+   }
+  },
+  {
+   "id": "ct-KE-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "On the coast and in some towns there are many Muslim communities. Before entering a mosque, ask permission, remove your shoes and dress modestly, with women covering their hair.",
+    "it": "Sulla costa e in alcune città ci sono molte comunità musulmane. Prima di entrare in una moschea chiedi il permesso, togliti le scarpe e vestiti in modo sobrio; le donne coprono i capelli.",
+    "es": "En la costa y en algunas ciudades hay muchas comunidades musulmanas. Antes de entrar en una mezquita, pide permiso, quítate los zapatos y viste con recato; las mujeres se cubren el cabello.",
+    "pt": "Na costa e em algumas cidades há muitas comunidades muçulmanas. Antes de entrares numa mesquita, pede autorização, tira os sapatos e veste-te com recato; as mulheres cobrem o cabelo.",
+    "pt_BR": "Na costa e em algumas cidades há muitas comunidades muçulmanas. Antes de entrar em uma mesquita, peça permissão, tire os sapatos e vista-se com recato; as mulheres cobrem o cabelo.",
+    "fr": "Sur la côte et dans certaines villes vivent de nombreuses communautés musulmanes. Avant d'entrer dans une mosquée, demande la permission, retire tes chaussures et habille-toi pudiquement; les femmes couvrent leurs cheveux.",
+    "de": "An der Küste und in einigen Städten leben viele muslimische Gemeinschaften. Frag vor dem Betreten einer Moschee um Erlaubnis, zieh die Schuhe aus und kleide dich dezent; Frauen bedecken das Haar."
+   }
+  },
+  {
+   "id": "ct-KE-13",
+   "category": "gestures",
+   "text": {
+    "en": "Use your right hand, or both hands, to give, receive or pass items such as money, food or gifts. The left hand is often seen as less polite for this.",
+    "it": "Usa la mano destra, o entrambe le mani, per dare, ricevere o passare oggetti come denaro, cibo o regali. La mano sinistra è spesso considerata meno educata per questo.",
+    "es": "Usa la mano derecha, o ambas manos, para dar, recibir o pasar cosas como dinero, comida o regalos. La mano izquierda suele considerarse menos educada para esto.",
+    "pt": "Usa a mão direita, ou ambas as mãos, para dar, receber ou passar objetos como dinheiro, comida ou presentes. A mão esquerda é muitas vezes vista como menos educada para isso.",
+    "pt_BR": "Use a mão direita, ou as duas mãos, para dar, receber ou passar coisas como dinheiro, comida ou presentes. A mão esquerda costuma ser vista como menos educada para isso.",
+    "fr": "Utilise la main droite, ou les deux mains, pour donner, recevoir ou passer des objets comme l'argent, la nourriture ou les cadeaux. La main gauche est souvent jugée moins polie pour cela.",
+    "de": "Benutze die rechte Hand oder beide Hände, um Dinge wie Geld, Essen oder Geschenke zu geben, anzunehmen oder weiterzureichen. Die linke Hand gilt dafür oft als weniger höflich."
+   }
+  },
+  {
+   "id": "ct-KE-14",
+   "category": "gestures",
+   "text": {
+    "en": "Many people consider it impolite to point at someone with a finger or to beckon with the palm up. Use an open hand or a palm-down wave to call someone.",
+    "it": "Molte persone considerano scortese indicare qualcuno con il dito o chiamare con il palmo verso l'alto. Per chiamare qualcuno usa la mano aperta o un cenno con il palmo verso il basso.",
+    "es": "Mucha gente considera descortés señalar a alguien con el dedo o llamar con la palma hacia arriba. Para llamar a alguien usa la mano abierta o un gesto con la palma hacia abajo.",
+    "pt": "Muitas pessoas consideram indelicado apontar para alguém com o dedo ou chamar com a palma virada para cima. Para chamar alguém, usa a mão aberta ou um aceno com a palma para baixo.",
+    "pt_BR": "Muitas pessoas consideram indelicado apontar para alguém com o dedo ou chamar com a palma virada para cima. Para chamar alguém, use a mão aberta ou um aceno com a palma para baixo.",
+    "fr": "Beaucoup de gens jugent impoli de pointer quelqu'un du doigt ou d'appeler avec la paume vers le haut. Pour appeler quelqu'un, utilise la main ouverte ou un geste paume vers le bas.",
+    "de": "Viele finden es unhöflich, mit dem Finger auf jemanden zu zeigen oder mit der Handfläche nach oben zu winken. Rufe jemanden mit offener Hand oder mit nach unten gerichteter Handfläche herbei."
+   }
+  },
+  {
+   "id": "ct-KE-15",
+   "category": "punctuality",
+   "text": {
+    "en": "For business and formal appointments, arrive on time. In social settings, plans can be more flexible, so a friend arriving a little late is usually not a problem.",
+    "it": "Per appuntamenti di lavoro e formali arriva puntuale. In contesti sociali i programmi possono essere più flessibili, quindi un amico che arriva un po' in ritardo di solito non è un problema.",
+    "es": "Para citas de negocios y formales, llega puntual. En contextos sociales los planes pueden ser más flexibles, así que un amigo que llega un poco tarde no suele ser un problema.",
+    "pt": "Para reuniões de negócios e compromissos formais, chega a horas. Em contextos sociais os planos podem ser mais flexíveis, por isso um amigo que chega um pouco atrasado normalmente não é um problema.",
+    "pt_BR": "Para reuniões de negócios e compromissos formais, chegue pontualmente. Em contextos sociais os planos podem ser mais flexíveis, então um amigo que chega um pouco atrasado normalmente não é um problema.",
+    "fr": "Pour les rendez-vous professionnels et formels, sois ponctuel. Dans un cadre social, les plans peuvent être plus souples, donc un ami qui arrive un peu en retard n'est généralement pas un problème.",
+    "de": "Bei geschäftlichen und förmlichen Terminen sei pünktlich. Im privaten Rahmen sind Pläne oft flexibler, daher ist es meist kein Problem, wenn ein Freund etwas später kommt."
+   }
+  },
+  {
+   "id": "ct-KE-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "Respect for elders is important. It is common to greet older people first, offer them a seat, and use polite titles such as \"Mzee\" for an older man or \"Mama\" for a woman.",
+    "it": "Il rispetto per gli anziani è importante. È comune salutare per primi le persone più anziane, offrire loro un posto a sedere e usare titoli di cortesia come \"Mzee\" per un uomo anziano o \"Mama\" per una donna.",
+    "es": "El respeto a los mayores es importante. Es habitual saludar primero a las personas mayores, ofrecerles asiento y usar títulos de cortesía como \"Mzee\" para un hombre mayor o \"Mama\" para una mujer.",
+    "pt": "O respeito pelos mais velhos é importante. É comum cumprimentar primeiro as pessoas mais velhas, oferecer-lhes lugar e usar títulos de cortesia como \"Mzee\" para um homem idoso ou \"Mama\" para uma mulher.",
+    "pt_BR": "O respeito pelos mais velhos é importante. É comum cumprimentar primeiro as pessoas mais velhas, oferecer um lugar a elas e usar títulos de cortesia como \"Mzee\" para um homem idoso ou \"Mama\" para uma mulher.",
+    "fr": "Le respect des aînés est important. Il est courant de saluer d'abord les personnes âgées, de leur offrir une place et d'employer des titres de politesse comme \"Mzee\" pour un homme âgé ou \"Mama\" pour une femme.",
+    "de": "Respekt vor Älteren ist wichtig. Üblich ist es, ältere Menschen zuerst zu grüßen, ihnen einen Sitzplatz anzubieten und höfliche Anreden wie \"Mzee\" für einen älteren Mann oder \"Mama\" für eine Frau zu benutzen."
+   }
+  },
+  {
+   "id": "ct-KE-17",
+   "category": "public_behavior",
+   "text": {
+    "en": "Public displays of anger or raised voices can embarrass everyone. Staying calm and friendly, even in a disagreement, is the best way to solve a problem.",
+    "it": "Mostrare rabbia in pubblico o alzare la voce può mettere tutti in imbarazzo. Restare calmi e cordiali, anche in un disaccordo, è il modo migliore per risolvere un problema.",
+    "es": "Mostrar enfado en público o levantar la voz puede avergonzar a todos. Mantener la calma y la cordialidad, incluso en un desacuerdo, es la mejor manera de resolver un problema.",
+    "pt": "Mostrar zanga em público ou levantar a voz pode envergonhar toda a gente. Manter a calma e a cordialidade, mesmo num desacordo, é a melhor forma de resolver um problema.",
+    "pt_BR": "Mostrar raiva em público ou levantar a voz pode constranger todo mundo. Manter a calma e a cordialidade, mesmo em um desacordo, é a melhor forma de resolver um problema.",
+    "fr": "Montrer sa colère en public ou hausser la voix peut gêner tout le monde. Rester calme et aimable, même en cas de désaccord, est la meilleure façon de résoudre un problème.",
+    "de": "Öffentlicher Zorn oder erhobene Stimmen können allen peinlich sein. Ruhig und freundlich zu bleiben, auch bei Meinungsverschiedenheiten, ist der beste Weg, ein Problem zu lösen."
+   }
+  },
+  {
+   "id": "ct-KE-18",
+   "category": "transport",
+   "text": {
+    "en": "Matatus are colourful shared minibuses that are the most common way to get around. Fares are low, they can be crowded, and the conductor usually collects the money.",
+    "it": "I matatu sono minibus condivisi e colorati, il modo più comune per spostarsi. Le tariffe sono basse, possono essere affollati e di solito è il bigliettaio a riscuotere il denaro.",
+    "es": "Los matatus son minibuses compartidos y coloridos, la forma más común de moverse. Las tarifas son bajas, pueden ir llenos y normalmente es el cobrador quien recoge el dinero.",
+    "pt": "Os matatus são miniautocarros partilhados e coloridos, a forma mais comum de se deslocar. As tarifas são baixas, podem ir cheios e normalmente é o cobrador que recebe o dinheiro.",
+    "pt_BR": "Os matatus são micro-ônibus compartilhados e coloridos, a forma mais comum de se deslocar. As tarifas são baixas, podem estar lotados e normalmente é o cobrador que recebe o dinheiro.",
+    "fr": "Les matatus sont des minibus partagés et colorés, le moyen de transport le plus courant. Les tarifs sont bas, ils peuvent être bondés et c'est généralement le receveur qui encaisse l'argent.",
+    "de": "Matatus sind bunte Sammel-Minibusse und das gängigste Verkehrsmittel. Die Preise sind niedrig, sie können überfüllt sein, und meist kassiert der Schaffner das Geld."
+   }
+  },
+  {
+   "id": "ct-KE-19",
+   "category": "transport",
+   "text": {
+    "en": "In Nairobi and other cities, ride-hailing apps and motorbike taxis called boda bodas are widely used. Agree on the price before a boda boda ride and wear the helmet offered.",
+    "it": "A Nairobi e in altre città si usano molto le app di trasporto e i moto-taxi chiamati boda boda. Accordati sul prezzo prima di salire su un boda boda e indossa il casco offerto.",
+    "es": "En Nairobi y otras ciudades se usan mucho las aplicaciones de transporte y las mototaxis llamadas boda boda. Acuerda el precio antes de subir a una boda boda y ponte el casco que te ofrezcan.",
+    "pt": "Em Nairobi e noutras cidades usam-se muito as aplicações de transporte e os mototáxis chamados boda boda. Combina o preço antes de subires para um boda boda e usa o capacete que te derem.",
+    "pt_BR": "Em Nairóbi e em outras cidades usam-se muito os aplicativos de transporte e os mototáxis chamados boda boda. Combine o preço antes de subir em uma boda boda e use o capacete oferecido.",
+    "fr": "À Nairobi et dans d'autres villes, les applications de VTC et les motos-taxis appelés boda boda sont très utilisés. Convenez du prix avant de monter sur une boda boda et mets le casque fourni.",
+    "de": "In Nairobi und anderen Städten sind Fahrdienst-Apps und Motorradtaxis namens Boda Boda weit verbreitet. Vereinbare den Preis vor der Fahrt und trage den angebotenen Helm."
+   }
+  },
+  {
+   "id": "ct-KE-20",
+   "category": "language",
+   "text": {
+    "en": "Kenya has two official languages, English and Swahili, and many communities also speak their own languages. Most people in cities speak English comfortably.",
+    "it": "Il Kenya ha due lingue ufficiali, inglese e swahili, e molte comunità parlano anche le proprie lingue. La maggior parte delle persone nelle città parla l'inglese con disinvoltura.",
+    "es": "Kenia tiene dos lenguas oficiales, inglés y suajili, y muchas comunidades hablan además sus propias lenguas. La mayoría de la gente en las ciudades habla inglés con soltura.",
+    "pt": "O Quénia tem duas línguas oficiais, inglês e suaíli, e muitas comunidades falam também as suas próprias línguas. A maioria das pessoas nas cidades fala inglês com à-vontade.",
+    "pt_BR": "O Quênia tem dois idiomas oficiais, inglês e suaíli, e muitas comunidades também falam suas próprias línguas. A maioria das pessoas nas cidades fala inglês com facilidade.",
+    "fr": "Le Kenya a deux langues officielles, l'anglais et le swahili, et de nombreuses communautés parlent aussi leurs propres langues. La plupart des gens en ville parlent couramment anglais.",
+    "de": "Kenia hat zwei Amtssprachen, Englisch und Suaheli, und viele Gemeinschaften sprechen zusätzlich ihre eigenen Sprachen. In den Städten sprechen die meisten Menschen gut Englisch."
+   }
+  },
+  {
+   "id": "ct-KE-21",
+   "category": "language",
+   "text": {
+    "en": "Urban young people often mix languages in Sheng, a lively slang built on Swahili and English. Trying a Sheng phrase with a smile can spark a friendly laugh.",
+    "it": "I giovani delle città spesso mescolano le lingue nello Sheng, uno slang vivace basato su swahili e inglese. Provare una frase in Sheng con un sorriso può far nascere una risata amichevole.",
+    "es": "Los jóvenes urbanos suelen mezclar idiomas en el sheng, una jerga animada basada en el suajili y el inglés. Probar una frase en sheng con una sonrisa puede provocar una risa amistosa.",
+    "pt": "Os jovens urbanos misturam muitas vezes as línguas no sheng, uma gíria animada baseada no suaíli e no inglês. Experimentar uma frase em sheng com um sorriso pode provocar uma risada amigável.",
+    "pt_BR": "Os jovens urbanos costumam misturar idiomas no sheng, uma gíria animada baseada no suaíli e no inglês. Experimentar uma frase em sheng com um sorriso pode render uma risada amigável.",
+    "fr": "Les jeunes des villes mélangent souvent les langues dans le sheng, un argot vivant fondé sur le swahili et l'anglais. Essayer une phrase en sheng avec le sourire peut déclencher un rire amical.",
+    "de": "Junge Menschen in den Städten mischen oft Sprachen im Sheng, einem lebendigen Slang aus Suaheli und Englisch. Ein Sheng-Satz mit einem Lächeln kann ein freundliches Lachen auslösen."
+   }
+  },
+  {
+   "id": "ct-KE-22",
+   "category": "festivals",
+   "text": {
+    "en": "Kenya celebrates national days such as Madaraka Day on 1 June, Mashujaa Day on 20 October and Jamhuri Day on 12 December, with parades, speeches and family gatherings.",
+    "it": "Il Kenya celebra giornate nazionali come il Madaraka Day l'1 giugno, il Mashujaa Day il 20 ottobre e il Jamhuri Day il 12 dicembre, con parate, discorsi e riunioni di famiglia.",
+    "es": "Kenia celebra días nacionales como el Madaraka Day el 1 de junio, el Mashujaa Day el 20 de octubre y el Jamhuri Day el 12 de diciembre, con desfiles, discursos y reuniones familiares.",
+    "pt": "O Quénia celebra dias nacionais como o Madaraka Day a 1 de junho, o Mashujaa Day a 20 de outubro e o Jamhuri Day a 12 de dezembro, com desfiles, discursos e reuniões de família.",
+    "pt_BR": "O Quênia celebra dias nacionais como o Madaraka Day em 1º de junho, o Mashujaa Day em 20 de outubro e o Jamhuri Day em 12 de dezembro, com desfiles, discursos e encontros de família.",
+    "fr": "Le Kenya célèbre des fêtes nationales comme le Madaraka Day le 1er juin, le Mashujaa Day le 20 octobre et le Jamhuri Day le 12 décembre, avec défilés, discours et réunions de famille.",
+    "de": "Kenia feiert Nationalfeiertage wie den Madaraka Day am 1. Juni, den Mashujaa Day am 20. Oktober und den Jamhuri Day am 12. Dezember mit Paraden, Reden und Familientreffen."
+   }
+  },
+  {
+   "id": "ct-KE-23",
+   "category": "festivals",
+   "text": {
+    "en": "At Christmas many Kenyans leave the cities to spend time with family in their rural home areas. Nyama choma is a popular festive meal, and churches hold night vigils.",
+    "it": "A Natale molti keniani lasciano le città per stare con la famiglia nelle zone rurali d'origine. La nyama choma è un piatto festivo molto diffuso e le chiese tengono veglie notturne.",
+    "es": "En Navidad muchos keniatas dejan las ciudades para pasar tiempo con la familia en sus zonas rurales de origen. La nyama choma es una comida festiva popular y las iglesias celebran vigilias nocturnas.",
+    "pt": "No Natal, muitos quenianos deixam as cidades para estar com a família nas zonas rurais de origem. A nyama choma é uma refeição festiva popular e as igrejas realizam vigílias noturnas.",
+    "pt_BR": "No Natal, muitos quenianos deixam as cidades para ficar com a família nas áreas rurais de origem. A nyama choma é uma refeição festiva popular e as igrejas fazem vigílias noturnas.",
+    "fr": "À Noël, de nombreux Kényans quittent les villes pour retrouver leur famille dans leur région rurale d'origine. La nyama choma est un repas de fête populaire et les églises organisent des veillées nocturnes.",
+    "de": "An Weihnachten verlassen viele Kenianer die Städte, um bei ihrer Familie in ihren ländlichen Heimatregionen zu sein. Nyama choma ist ein beliebtes Festessen, und die Kirchen halten Nachtwachen ab."
+   }
+  },
+  {
+   "id": "ct-KE-24",
+   "category": "family",
+   "text": {
+    "en": "Family ties are strong and often include extended relatives. Helping relatives, and being invited to meet them, is seen as a sign of warmth and trust.",
+    "it": "I legami familiari sono forti e spesso includono i parenti più ampi. Aiutare i parenti ed essere invitati a conoscerli è visto come segno di calore e fiducia.",
+    "es": "Los lazos familiares son fuertes y a menudo incluyen a los parientes extensos. Ayudar a los familiares y que te inviten a conocerlos se ve como una señal de cariño y confianza.",
+    "pt": "Os laços familiares são fortes e incluem muitas vezes a família alargada. Ajudar os familiares e ser convidado a conhecê-los é visto como sinal de carinho e confiança.",
+    "pt_BR": "Os laços familiares são fortes e muitas vezes incluem a família estendida. Ajudar parentes e ser convidado para conhecê-los é visto como sinal de carinho e confiança.",
+    "fr": "Les liens familiaux sont forts et incluent souvent la famille élargie. Aider ses proches et être invité à les rencontrer est vu comme un signe de chaleur et de confiance.",
+    "de": "Familienbande sind stark und schließen oft die weitere Verwandtschaft ein. Verwandten zu helfen und eingeladen zu werden, sie kennenzulernen, gilt als Zeichen von Herzlichkeit und Vertrauen."
+   }
+  },
+  {
+   "id": "ct-KE-25",
+   "category": "money",
+   "text": {
+    "en": "Mobile money is part of daily life: M-Pesa is widely used to pay bills, shops and even street vendors. Keep some small cash notes too for matatus and markets.",
+    "it": "Il denaro mobile fa parte della vita quotidiana: M-Pesa è molto usato per pagare bollette, negozi e persino venditori ambulanti. Tieni anche un po' di contanti in piccoli tagli per matatu e mercati.",
+    "es": "El dinero móvil forma parte de la vida diaria: M-Pesa se usa mucho para pagar facturas, tiendas e incluso vendedores ambulantes. Lleva también algo de efectivo en billetes pequeños para matatus y mercados.",
+    "pt": "O dinheiro móvel faz parte do dia a dia: o M-Pesa é muito usado para pagar contas, lojas e até vendedores de rua. Leva também algum dinheiro em notas pequenas para matatus e mercados.",
+    "pt_BR": "O dinheiro móvel faz parte do dia a dia: o M-Pesa é muito usado para pagar contas, lojas e até vendedores de rua. Leve também algum dinheiro em notas pequenas para matatus e mercados.",
+    "fr": "L'argent mobile fait partie du quotidien: M-Pesa est très utilisé pour payer les factures, les boutiques et même les vendeurs de rue. Garde aussi un peu d'espèces en petites coupures pour les matatus et les marchés.",
+    "de": "Mobiles Bezahlen gehört zum Alltag: M-Pesa wird vielfach für Rechnungen, Geschäfte und sogar Straßenhändler genutzt. Halte auch etwas Bargeld in kleinen Scheinen für Matatus und Märkte bereit."
+   }
+  },
+  {
+   "id": "ct-KE-26",
+   "category": "photography",
+   "text": {
+    "en": "Always ask before photographing people, especially in rural villages and Maasai communities, where a small payment may be expected. Respect a no.",
+    "it": "Chiedi sempre il permesso prima di fotografare le persone, soprattutto nei villaggi rurali e nelle comunità masai, dove può essere atteso un piccolo compenso. Rispetta un rifiuto.",
+    "es": "Pregunta siempre antes de fotografiar a las personas, sobre todo en pueblos rurales y comunidades masáis, donde puede esperarse un pequeño pago. Respeta un no.",
+    "pt": "Pergunta sempre antes de fotografar pessoas, sobretudo em aldeias rurais e comunidades massai, onde pode ser esperado um pequeno pagamento. Respeita um não.",
+    "pt_BR": "Pergunte sempre antes de fotografar pessoas, principalmente em vilarejos rurais e comunidades massai, onde pode haver expectativa de um pequeno pagamento. Respeite um não.",
+    "fr": "Demande toujours avant de photographier des personnes, surtout dans les villages ruraux et les communautés massaï, où une petite somme peut être attendue. Respecte un refus.",
+    "de": "Frag immer, bevor du Menschen fotografierst, besonders in ländlichen Dörfern und Massai-Gemeinschaften, wo eine kleine Bezahlung erwartet werden kann. Respektiere ein Nein."
+   }
+  },
+  {
+   "id": "ct-KE-27",
+   "category": "nightlife",
+   "text": {
+    "en": "Nairobi has a lively evening scene, from nyama choma restaurants to live music venues. Go in a group, use a trusted ride home and keep an eye on your drink.",
+    "it": "Nairobi ha una vivace vita serale, dai ristoranti di nyama choma ai locali di musica dal vivo. Vai in gruppo, usa un mezzo fidato per tornare a casa e tieni d'occhio il tuo drink.",
+    "es": "Nairobi tiene una animada vida nocturna, desde restaurantes de nyama choma hasta locales de música en directo. Ve en grupo, usa un transporte de confianza para volver a casa y vigila tu bebida.",
+    "pt": "Nairobi tem uma vida noturna animada, de restaurantes de nyama choma a locais de música ao vivo. Vai em grupo, usa um transporte de confiança para voltar a casa e vigia a tua bebida.",
+    "pt_BR": "Nairóbi tem uma vida noturna animada, de restaurantes de nyama choma a casas de música ao vivo. Vá em grupo, use um transporte de confiança para voltar para casa e fique de olho na sua bebida.",
+    "fr": "Nairobi a une vie nocturne animée, des restaurants de nyama choma aux salles de musique live. Sors en groupe, rentre avec un transport de confiance et garde un œil sur ton verre.",
+    "de": "Nairobi hat ein lebendiges Nachtleben, von Nyama-Choma-Restaurants bis zu Live-Musik-Lokalen. Geh in der Gruppe aus, nutze eine vertrauenswürdige Heimfahrt und behalte dein Getränk im Auge."
+   }
+  },
+  {
+   "id": "ct-KE-28",
+   "category": "nature",
+   "text": {
+    "en": "On safari, stay inside the vehicle unless your guide says otherwise, keep your voice low and never feed wildlife. Maasai Mara's wildebeest migration is usually seen from July to October.",
+    "it": "In safari resta dentro il veicolo salvo diversa indicazione della guida, parla a bassa voce e non dare mai da mangiare agli animali. La migrazione degli gnu nel Maasai Mara si vede di solito da luglio a ottobre.",
+    "es": "En un safari, quédate dentro del vehículo salvo que el guía diga lo contrario, habla en voz baja y nunca alimentes a los animales. La migración de los ñus en el Masái Mara suele verse de julio a octubre.",
+    "pt": "Num safari, fica dentro do veículo, a menos que o guia diga o contrário, fala baixo e nunca dês comida aos animais. A migração dos gnus no Masai Mara costuma ver-se de julho a outubro.",
+    "pt_BR": "Em um safári, fique dentro do veículo, a menos que o guia diga o contrário, fale baixo e nunca dê comida aos animais. A migração dos gnus no Masai Mara costuma ser vista de julho a outubro.",
+    "fr": "En safari, reste dans le véhicule sauf indication contraire du guide, parle à voix basse et ne nourris jamais les animaux. La migration des gnous au Masai Mara s'observe généralement de juillet à octobre.",
+    "de": "Bleib auf Safari im Fahrzeug, außer dein Guide sagt etwas anderes, sprich leise und füttere nie Wildtiere. Die Gnu-Wanderung in der Masai Mara ist meist von Juli bis Oktober zu sehen."
+   }
+  },
+  {
+   "id": "ct-KE-29",
+   "category": "safety",
+   "text": {
+    "en": "In big cities, avoid walking alone at night, keep your phone and valuables out of sight, and use registered taxis or ride-hailing apps. Ask your host about local advice.",
+    "it": "Nelle grandi città evita di camminare da solo di notte, tieni telefono e oggetti di valore fuori dalla vista e usa taxi registrati o app di trasporto. Chiedi consigli locali al tuo ospite.",
+    "es": "En las grandes ciudades, evita caminar solo de noche, mantén el móvil y los objetos de valor fuera de la vista y usa taxis registrados o aplicaciones de transporte. Pide consejo local a tu anfitrión.",
+    "pt": "Nas grandes cidades, evita andar sozinho à noite, mantém o telemóvel e os objetos de valor fora da vista e usa táxis registados ou aplicações de transporte. Pede conselhos locais ao teu anfitrião.",
+    "pt_BR": "Nas grandes cidades, evite andar sozinho à noite, mantenha celular e objetos de valor fora de vista e use táxis registrados ou aplicativos de transporte. Peça conselhos locais ao seu anfitrião.",
+    "fr": "Dans les grandes villes, évite de marcher seul la nuit, garde ton téléphone et tes objets de valeur hors de vue et utilise des taxis enregistrés ou des applications de VTC. Demande conseil à ton hôte.",
+    "de": "Geh in großen Städten nachts nicht allein zu Fuß, halte Handy und Wertsachen außer Sicht und nutze registrierte Taxis oder Fahrdienst-Apps. Frag deine Gastgeber nach lokalen Tipps."
+   }
+  },
+  {
+   "id": "ct-KE-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Kenya is proud of its world-class distance runners and of the word \"harambee\", meaning \"pulling together\", which reflects community spirit and helping one another.",
+    "it": "Il Kenya è orgoglioso dei suoi corridori di fondo di livello mondiale e della parola \"harambee\", che significa \"tirare insieme\", espressione dello spirito comunitario e dell'aiuto reciproco.",
+    "es": "Kenia está orgullosa de sus corredores de fondo de talla mundial y de la palabra \"harambee\", que significa \"tirar todos juntos\", reflejo del espíritu comunitario y de la ayuda mutua.",
+    "pt": "O Quénia orgulha-se dos seus corredores de fundo de classe mundial e da palavra \"harambee\", que significa \"puxar todos juntos\", reflexo do espírito comunitário e da entreajuda.",
+    "pt_BR": "O Quênia se orgulha de seus corredores de fundo de nível mundial e da palavra \"harambee\", que significa \"puxar todos juntos\", reflexo do espírito comunitário e da ajuda mútua.",
+    "fr": "Le Kenya est fier de ses coureurs de fond de classe mondiale et du mot \"harambee\", qui signifie \"tirer ensemble\", reflet de l'esprit communautaire et de l'entraide.",
+    "de": "Kenia ist stolz auf seine Langstreckenläufer von Weltklasse und auf das Wort \"Harambee\", das \"gemeinsam anpacken\" bedeutet und den Gemeinschaftsgeist und die gegenseitige Hilfe widerspiegelt."
+   }
+  }
+ ],
+ "KH": [
+  {
+   "id": "ct-KH-01",
+   "category": "greetings",
+   "text": {
+    "en": "The traditional greeting is the sampeah: palms pressed together in front of the chest, with a slight bow. The higher the hands, the greater the respect shown.",
+    "it": "Il saluto tradizionale è il sampeah: palmi uniti davanti al petto con un leggero inchino. Più le mani sono in alto, maggiore è il rispetto mostrato.",
+    "es": "El saludo tradicional es el sampeah: las palmas juntas frente al pecho y una ligera inclinación. Cuanto más altas están las manos, mayor es el respeto que se muestra.",
+    "pt": "A saudação tradicional é o sampeah: palmas das mãos juntas à frente do peito, com uma ligeira vénia. Quanto mais altas estiverem as mãos, maior é o respeito demonstrado.",
+    "pt_BR": "A saudação tradicional é o sampeah: palmas das mãos juntas à frente do peito, com uma leve reverência. Quanto mais altas estiverem as mãos, maior é o respeito demonstrado.",
+    "fr": "La salutation traditionnelle est le sampeah: les paumes jointes devant la poitrine, avec une légère inclinaison. Plus les mains sont hautes, plus on montre de respect.",
+    "de": "Der traditionelle Gruß ist das Sampeah: die Handflächen vor der Brust zusammengelegt, mit einer leichten Verbeugung. Je höher die Hände, desto größer der gezeigte Respekt."
+   }
+  },
+  {
+   "id": "ct-KH-02",
+   "category": "greetings",
+   "text": {
+    "en": "Cambodians use titles that reflect age and seniority before a name, such as \"Lok\" for a man or \"Lok Srey\" for a woman. Using the right title shows respect.",
+    "it": "I cambogiani usano prima del nome titoli che riflettono età e anzianità, come \"Lok\" per un uomo o \"Lok Srey\" per una donna. Usare il titolo giusto mostra rispetto.",
+    "es": "Los camboyanos usan antes del nombre títulos que reflejan la edad y la jerarquía, como \"Lok\" para un hombre o \"Lok Srey\" para una mujer. Usar el título correcto muestra respeto.",
+    "pt": "Os cambojanos usam antes do nome títulos que refletem a idade e a antiguidade, como \"Lok\" para um homem ou \"Lok Srey\" para uma mulher. Usar o título certo demonstra respeito.",
+    "pt_BR": "Os cambojanos usam antes do nome títulos que refletem a idade e a senioridade, como \"Lok\" para um homem ou \"Lok Srey\" para uma mulher. Usar o título certo demonstra respeito.",
+    "fr": "Les Cambodgiens emploient avant le nom des titres qui reflètent l'âge et l'ancienneté, comme \"Lok\" pour un homme ou \"Lok Srey\" pour une femme. Utiliser le bon titre montre du respect.",
+    "de": "Kambodschaner stellen dem Namen Anreden voran, die Alter und Rang widerspiegeln, etwa \"Lok\" für einen Mann oder \"Lok Srey\" für eine Frau. Die richtige Anrede zeigt Respekt."
+   }
+  },
+  {
+   "id": "ct-KH-03",
+   "category": "conversation",
+   "text": {
+    "en": "Khmer culture is hierarchical and values harmony. Speak gently, show patience, and avoid raising your voice or arguing openly, which can cause embarrassment.",
+    "it": "La cultura khmer è gerarchica e valorizza l'armonia. Parla con gentilezza, mostra pazienza ed evita di alzare la voce o di discutere apertamente, perché può creare imbarazzo.",
+    "es": "La cultura jemer es jerárquica y valora la armonía. Habla con suavidad, muestra paciencia y evita levantar la voz o discutir abiertamente, porque puede causar vergüenza.",
+    "pt": "A cultura khmer é hierárquica e valoriza a harmonia. Fala com suavidade, mostra paciência e evita levantar a voz ou discutir abertamente, porque pode causar constrangimento.",
+    "pt_BR": "A cultura khmer é hierárquica e valoriza a harmonia. Fale com suavidade, mostre paciência e evite levantar a voz ou discutir abertamente, porque isso pode causar constrangimento.",
+    "fr": "La culture khmère est hiérarchique et valorise l'harmonie. Parle doucement, fais preuve de patience et évite d'élever la voix ou de discuter ouvertement, ce qui peut gêner.",
+    "de": "Die Khmer-Kultur ist hierarchisch und schätzt Harmonie. Sprich freundlich, sei geduldig und vermeide es, laut zu werden oder offen zu streiten, da das peinlich sein kann."
+   }
+  },
+  {
+   "id": "ct-KH-04",
+   "category": "conversation",
+   "text": {
+    "en": "Questions about family, work and where you are from are common and friendly. It is also usual for people to ask whether you have eaten, as a caring greeting.",
+    "it": "Domande su famiglia, lavoro e provenienza sono comuni e amichevoli. È anche normale che chiedano se hai già mangiato, come saluto premuroso.",
+    "es": "Las preguntas sobre la familia, el trabajo y de dónde eres son habituales y amistosas. También es normal que te pregunten si ya has comido, como saludo afectuoso.",
+    "pt": "As perguntas sobre a família, o trabalho e a terra de origem são comuns e simpáticas. Também é normal perguntarem se já comeste, como cumprimento carinhoso.",
+    "pt_BR": "Perguntas sobre família, trabalho e de onde você é são comuns e simpáticas. Também é normal perguntarem se você já comeu, como cumprimento carinhoso.",
+    "fr": "Les questions sur la famille, le travail et ton pays d'origine sont courantes et amicales. Il est aussi habituel de te demander si tu as déjà mangé, comme salutation attentionnée.",
+    "de": "Fragen zu Familie, Arbeit und Herkunft sind üblich und freundlich. Man fragt auch oft, ob du schon gegessen hast, als fürsorgliche Begrüßung."
+   }
+  },
+  {
+   "id": "ct-KH-05",
+   "category": "dining",
+   "text": {
+    "en": "Rice is at the centre of most meals, shared with several dishes in the middle. Cambodians usually eat with a spoon and fork, using the fork to push food onto the spoon.",
+    "it": "Il riso è al centro della maggior parte dei pasti, condiviso con diversi piatti al centro. I cambogiani di solito mangiano con cucchiaio e forchetta, usando la forchetta per spingere il cibo sul cucchiaio.",
+    "es": "El arroz es el centro de la mayoría de las comidas, que se comparte con varios platos en el centro. Los camboyanos suelen comer con cuchara y tenedor, usando el tenedor para empujar la comida hacia la cuchara.",
+    "pt": "O arroz é o centro da maioria das refeições, partilhado com vários pratos ao meio. Os cambojanos costumam comer com colher e garfo, usando o garfo para empurrar a comida para a colher.",
+    "pt_BR": "O arroz é o centro da maioria das refeições, dividido com vários pratos no meio. Os cambojanos costumam comer com colher e garfo, usando o garfo para empurrar a comida para a colher.",
+    "fr": "Le riz est au centre de la plupart des repas, partagé avec plusieurs plats au milieu. Les Cambodgiens mangent généralement avec une cuillère et une fourchette, la fourchette servant à pousser la nourriture dans la cuillère.",
+    "de": "Reis steht im Mittelpunkt der meisten Mahlzeiten und wird mit mehreren Gerichten in der Tischmitte geteilt. Man isst meist mit Löffel und Gabel und schiebt das Essen mit der Gabel auf den Löffel."
+   }
+  },
+  {
+   "id": "ct-KH-06",
+   "category": "dining",
+   "text": {
+    "en": "Try amok, a steamed fish curry in coconut milk, and kuyteav, a rice noodle soup. Fish sauce is a key flavour, so ask if a dish is not to your taste.",
+    "it": "Assaggia l'amok, un curry di pesce cotto al vapore nel latte di cocco, e il kuyteav, una zuppa di noodle di riso. La salsa di pesce è un sapore chiave, quindi chiedi se un piatto non è di tuo gusto.",
+    "es": "Prueba el amok, un curry de pescado al vapor en leche de coco, y el kuyteav, una sopa de fideos de arroz. La salsa de pescado es un sabor clave, así que pregunta si un plato no es de tu gusto.",
+    "pt": "Experimenta o amok, um caril de peixe cozido a vapor em leite de coco, e o kuyteav, uma sopa de massa de arroz. O molho de peixe é um sabor essencial, por isso pergunta se um prato não for do teu agrado.",
+    "pt_BR": "Experimente o amok, um curry de peixe cozido no vapor em leite de coco, e o kuyteav, uma sopa de macarrão de arroz. O molho de peixe é um sabor essencial, então pergunte se um prato não for do seu agrado.",
+    "fr": "Goûte l'amok, un curry de poisson cuit à la vapeur dans du lait de coco, et le kuyteav, une soupe de nouilles de riz. La sauce de poisson est une saveur clé, alors demande si un plat ne te convient pas.",
+    "de": "Probiere Amok, ein gedämpftes Fischcurry in Kokosmilch, und Kuyteav, eine Reisnudelsuppe. Fischsauce ist ein Schlüsselaroma, frag also nach, wenn dir ein Gericht nicht zusagt."
+   }
+  },
+  {
+   "id": "ct-KH-07",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping is not required but is appreciated. Rounding up the bill or leaving a small amount, often in US dollars or riel, is a kind gesture for guides and drivers.",
+    "it": "La mancia non è obbligatoria ma è apprezzata. Arrotondare il conto o lasciare una piccola somma, spesso in dollari USA o riel, è un gesto gentile verso guide e autisti.",
+    "es": "La propina no es obligatoria, pero se agradece. Redondear la cuenta o dejar una pequeña cantidad, a menudo en dólares estadounidenses o rieles, es un gesto amable con guías y conductores.",
+    "pt": "A gorjeta não é obrigatória, mas é apreciada. Arredondar a conta ou deixar um pequeno valor, muitas vezes em dólares americanos ou riéis, é um gesto simpático para guias e motoristas.",
+    "pt_BR": "A gorjeta não é obrigatória, mas é apreciada. Arredondar a conta ou deixar um pequeno valor, muitas vezes em dólares americanos ou riéis, é um gesto simpático para guias e motoristas.",
+    "fr": "Le pourboire n'est pas obligatoire mais il est apprécié. Arrondir l'addition ou laisser une petite somme, souvent en dollars américains ou en riels, est un geste aimable envers les guides et les chauffeurs.",
+    "de": "Trinkgeld ist nicht verpflichtend, wird aber geschätzt. Die Rechnung aufzurunden oder einen kleinen Betrag, oft in US-Dollar oder Riel, zu geben, ist eine nette Geste für Guides und Fahrer."
+   }
+  },
+  {
+   "id": "ct-KH-08",
+   "category": "gifts",
+   "text": {
+    "en": "When visiting a home, bring a small gift such as fruit or sweets and offer it with both hands.",
+    "it": "Quando si visita una casa si porta un piccolo regalo, come frutta o dolci, e lo si offre con entrambe le mani.",
+    "es": "Al visitar una casa se lleva un pequeño regalo, como fruta o dulces, y se ofrece con ambas manos.",
+    "pt": "Ao visitar uma casa leva-se uma pequena lembrança, como fruta ou doces, e oferece-se com ambas as mãos.",
+    "pt_BR": "Ao visitar uma casa leva-se um pequeno presente, como frutas ou doces, e oferece-se com as duas mãos.",
+    "fr": "Quand on rend visite à quelqu'un, on apporte un petit cadeau, comme des fruits ou des sucreries, et on l'offre à deux mains.",
+    "de": "Bei einem Hausbesuch bringt man ein kleines Geschenk wie Obst oder Süßigkeiten mit und überreicht es mit beiden Händen."
+   }
+  },
+  {
+   "id": "ct-KH-09",
+   "category": "dress",
+   "text": {
+    "en": "The krama, a checkered scarf, is a symbol of Khmer identity. People use it as a head cover, towel, bag or sun protection, and it makes a lovely, practical souvenir.",
+    "it": "Il krama, una sciarpa a quadretti, è un simbolo dell'identità khmer. Si usa come copricapo, asciugamano, borsa o protezione dal sole ed è un souvenir bello e pratico.",
+    "es": "El krama, una bufanda de cuadros, es un símbolo de la identidad jemer. Se usa como cubrecabezas, toalla, bolsa o protección solar, y es un recuerdo bonito y práctico.",
+    "pt": "O krama, um lenço axadrezado, é um símbolo da identidade khmer. Usa-se como cobertura para a cabeça, toalha, saco ou proteção solar, e é uma lembrança bonita e prática.",
+    "pt_BR": "O krama, um lenço xadrez, é um símbolo da identidade khmer. É usado como cobertura para a cabeça, toalha, bolsa ou proteção solar, e é uma lembrança bonita e prática.",
+    "fr": "Le krama, une écharpe à carreaux, est un symbole de l'identité khmère. On l'utilise comme couvre-chef, serviette, sac ou protection solaire, et c'est un souvenir joli et pratique.",
+    "de": "Das Krama, ein karierter Schal, ist ein Symbol der Khmer-Identität. Man nutzt es als Kopfbedeckung, Handtuch, Tasche oder Sonnenschutz, und es ist ein schönes, praktisches Souvenir."
+   }
+  },
+  {
+   "id": "ct-KH-10",
+   "category": "dress",
+   "text": {
+    "en": "Dress modestly in towns and villages, with shoulders and knees covered. Light, breathable clothes help in the heat while still showing respect.",
+    "it": "Vestiti in modo sobrio in città e villaggi, con spalle e ginocchia coperte. Abiti leggeri e traspiranti aiutano con il caldo e mostrano comunque rispetto.",
+    "es": "Viste con recato en ciudades y pueblos, con hombros y rodillas cubiertos. La ropa ligera y transpirable ayuda con el calor y a la vez muestra respeto.",
+    "pt": "Veste-te com recato em cidades e aldeias, com ombros e joelhos cobertos. Roupa leve e respirável ajuda com o calor e demonstra respeito.",
+    "pt_BR": "Vista-se com recato em cidades e vilarejos, com ombros e joelhos cobertos. Roupas leves e respiráveis ajudam com o calor e ainda demonstram respeito.",
+    "fr": "Habille-toi pudiquement dans les villes et villages, épaules et genoux couverts. Des vêtements légers et respirants aident avec la chaleur tout en montrant du respect.",
+    "de": "Kleide dich in Städten und Dörfern dezent, mit bedeckten Schultern und Knien. Leichte, atmungsaktive Kleidung hilft bei der Hitze und zeigt trotzdem Respekt."
+   }
+  },
+  {
+   "id": "ct-KH-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Most Cambodians are Theravada Buddhist. At Angkor Wat and other temples, shoulders and knees must be covered, so carry a scarf or light cover-up.",
+    "it": "La maggior parte dei cambogiani è buddhista theravada. Ad Angkor Wat e negli altri templi spalle e ginocchia devono essere coperte, quindi porta con te una sciarpa o un coprispalle leggero.",
+    "es": "La mayoría de los camboyanos son budistas theravada. En Angkor Wat y otros templos hay que cubrirse hombros y rodillas, así que lleva un pañuelo o una prenda ligera.",
+    "pt": "A maioria dos cambojanos é budista theravada. Em Angkor Wat e noutros templos é obrigatório cobrir ombros e joelhos, por isso leva um lenço ou uma peça leve.",
+    "pt_BR": "A maioria dos cambojanos é budista theravada. Em Angkor Wat e em outros templos é preciso cobrir ombros e joelhos, então leve um lenço ou uma peça leve.",
+    "fr": "La plupart des Cambodgiens sont bouddhistes theravada. À Angkor Wat et dans les autres temples, il faut couvrir ses épaules et ses genoux, alors emporte un foulard ou une petite veste légère.",
+    "de": "Die meisten Kambodschaner sind Theravada-Buddhisten. In Angkor Wat und anderen Tempeln müssen Schultern und Knie bedeckt sein, nimm also ein Tuch oder eine leichte Jacke mit."
+   }
+  },
+  {
+   "id": "ct-KH-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "Monks are highly respected. Women should not touch a monk or hand him something directly, and everyone should stay quiet and remove shoes before entering a temple building.",
+    "it": "I monaci sono molto rispettati. Le donne non devono toccare un monaco né passargli qualcosa direttamente, e tutti devono fare silenzio e togliere le scarpe prima di entrare in un edificio del tempio.",
+    "es": "Los monjes son muy respetados. Las mujeres no deben tocar a un monje ni entregarle algo directamente, y todos deben guardar silencio y quitarse los zapatos antes de entrar en un edificio del templo.",
+    "pt": "Os monges são muito respeitados. As mulheres não devem tocar num monge nem entregar-lhe algo diretamente, e todos devem manter silêncio e tirar os sapatos antes de entrar num edifício do templo.",
+    "pt_BR": "Os monges são muito respeitados. As mulheres não devem tocar em um monge nem entregar algo diretamente a ele, e todos devem manter silêncio e tirar os sapatos antes de entrar em um prédio do templo.",
+    "fr": "Les moines sont très respectés. Les femmes ne doivent pas toucher un moine ni lui remettre quelque chose directement, et chacun doit rester silencieux et retirer ses chaussures avant d'entrer dans un bâtiment du temple.",
+    "de": "Mönche werden hoch geachtet. Frauen sollten einen Mönch nicht berühren oder ihm etwas direkt reichen, und alle sollten still sein und vor dem Betreten eines Tempelgebäudes die Schuhe ausziehen."
+   }
+  },
+  {
+   "id": "ct-KH-13",
+   "category": "gestures",
+   "text": {
+    "en": "The head is considered the most sacred part of the body, so avoid touching people's heads, including children's, even in a friendly way.",
+    "it": "La testa è considerata la parte più sacra del corpo, quindi evita di toccare la testa delle persone, anche dei bambini, pure in modo affettuoso.",
+    "es": "La cabeza se considera la parte más sagrada del cuerpo, así que evita tocar la cabeza de las personas, incluidos los niños, incluso de forma cariñosa.",
+    "pt": "A cabeça é considerada a parte mais sagrada do corpo, por isso evita tocar na cabeça das pessoas, incluindo crianças, mesmo de forma carinhosa.",
+    "pt_BR": "A cabeça é considerada a parte mais sagrada do corpo, então evite tocar na cabeça das pessoas, incluindo crianças, mesmo de forma carinhosa.",
+    "fr": "La tête est considérée comme la partie la plus sacrée du corps, alors évite de toucher la tête des gens, y compris celle des enfants, même de façon affectueuse.",
+    "de": "Der Kopf gilt als der heiligste Teil des Körpers, berühre also nicht den Kopf anderer Menschen, auch nicht den von Kindern, selbst nicht freundlich gemeint."
+   }
+  },
+  {
+   "id": "ct-KH-14",
+   "category": "gestures",
+   "text": {
+    "en": "Feet are seen as the lowest and least clean part of the body. Do not point your feet at people or Buddha images, and avoid using your feet to move objects.",
+    "it": "I piedi sono considerati la parte più bassa e meno pulita del corpo. Non puntare i piedi verso le persone o le immagini del Buddha ed evita di usarli per spostare oggetti.",
+    "es": "Los pies se consideran la parte más baja y menos limpia del cuerpo. No apuntes con los pies a las personas ni a las imágenes de Buda, y evita usarlos para mover objetos.",
+    "pt": "Os pés são vistos como a parte mais baixa e menos limpa do corpo. Não apontes os pés para pessoas ou imagens de Buda e evita usá-los para mover objetos.",
+    "pt_BR": "Os pés são vistos como a parte mais baixa e menos limpa do corpo. Não aponte os pés para pessoas ou imagens de Buda e evite usá-los para mover objetos.",
+    "fr": "Les pieds sont vus comme la partie la plus basse et la moins propre du corps. Ne les dirige pas vers les personnes ou les images de Bouddha et évite de t'en servir pour déplacer des objets.",
+    "de": "Füße gelten als der niedrigste und unreinste Teil des Körpers. Richte sie nicht auf Menschen oder Buddha-Bilder und benutze sie nicht, um Dinge zu verschieben."
+   }
+  },
+  {
+   "id": "ct-KH-15",
+   "category": "punctuality",
+   "text": {
+    "en": "For tours and business meetings, be on time. For social events such as weddings and family gatherings, start times are often flexible and people may arrive later.",
+    "it": "Per tour e riunioni di lavoro sii puntuale. Per eventi sociali come matrimoni e riunioni di famiglia gli orari d'inizio sono spesso flessibili e le persone possono arrivare più tardi.",
+    "es": "Para tours y reuniones de trabajo, sé puntual. En eventos sociales como bodas y reuniones familiares, las horas de inicio suelen ser flexibles y la gente puede llegar más tarde.",
+    "pt": "Para visitas guiadas e reuniões de trabalho, sê pontual. Em eventos sociais como casamentos e reuniões de família, as horas de início são muitas vezes flexíveis e as pessoas podem chegar mais tarde.",
+    "pt_BR": "Para passeios guiados e reuniões de trabalho, seja pontual. Em eventos sociais como casamentos e encontros de família, os horários de início costumam ser flexíveis e as pessoas podem chegar mais tarde.",
+    "fr": "Pour les visites guidées et les réunions de travail, sois à l'heure. Lors d'événements sociaux comme les mariages et les réunions de famille, les horaires de début sont souvent flexibles et on peut arriver plus tard.",
+    "de": "Bei Touren und Geschäftsterminen sei pünktlich. Bei gesellschaftlichen Anlässen wie Hochzeiten und Familientreffen sind die Anfangszeiten oft flexibel, und man kann später kommen."
+   }
+  },
+  {
+   "id": "ct-KH-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "Saving face matters. Stay calm and smile when something goes wrong, and avoid criticising people in public, because it can cause shame for everyone involved.",
+    "it": "Salvare la faccia conta. Mantieni la calma e sorridi quando qualcosa va storto ed evita di criticare le persone in pubblico, perché può causare vergogna a tutti i coinvolti.",
+    "es": "Salvar las apariencias importa. Mantén la calma y sonríe cuando algo sale mal, y evita criticar a las personas en público, porque puede avergonzar a todos los implicados.",
+    "pt": "Manter as aparências importa. Mantém a calma e sorri quando algo corre mal e evita criticar pessoas em público, porque pode causar vergonha a todos os envolvidos.",
+    "pt_BR": "Manter as aparências importa. Mantenha a calma e sorria quando algo der errado e evite criticar pessoas em público, porque isso pode causar vergonha a todos os envolvidos.",
+    "fr": "Sauver la face compte. Reste calme et souris quand quelque chose tourne mal, et évite de critiquer les gens en public, car cela peut faire honte à tous les intéressés.",
+    "de": "Das Gesicht zu wahren ist wichtig. Bleib ruhig und lächle, wenn etwas schiefgeht, und kritisiere niemanden in der Öffentlichkeit, denn das kann alle Beteiligten beschämen."
+   }
+  },
+  {
+   "id": "ct-KH-17",
+   "category": "public_behavior",
+   "text": {
+    "en": "Affection between people is usually kept discreet in public. Handholding between friends of the same gender is common, but open displays between couples are less usual.",
+    "it": "In pubblico l'affetto tra le persone è di solito discreto. Tenersi per mano tra amici dello stesso genere è comune, mentre le effusioni tra coppie sono meno usuali.",
+    "es": "En público el afecto entre personas suele ser discreto. Darse la mano entre amigos del mismo género es común, pero las muestras abiertas entre parejas son menos habituales.",
+    "pt": "Em público o afeto entre pessoas costuma ser discreto. Dar a mão entre amigos do mesmo género é comum, mas as demonstrações abertas entre casais são menos habituais.",
+    "pt_BR": "Em público o afeto entre pessoas costuma ser discreto. Dar as mãos entre amigos do mesmo gênero é comum, mas demonstrações abertas entre casais são menos habituais.",
+    "fr": "En public, l'affection entre les personnes reste généralement discrète. Se tenir la main entre amis du même genre est courant, mais les démonstrations ouvertes entre couples sont moins habituelles.",
+    "de": "Zuneigung wird in der Öffentlichkeit meist dezent gezeigt. Händchenhalten unter Freunden gleichen Geschlechts ist üblich, offene Zärtlichkeiten zwischen Paaren sind dagegen weniger gebräuchlich."
+   }
+  },
+  {
+   "id": "ct-KH-18",
+   "category": "transport",
+   "text": {
+    "en": "Tuk-tuks and motorbike taxis are everywhere. Agree on the fare before you start or use a ride-hailing app, and expect to bargain politely.",
+    "it": "Tuk-tuk e moto-taxi sono ovunque. Concorda la tariffa prima di partire o usa un'app di trasporto, e aspettati di contrattare con gentilezza.",
+    "es": "Los tuk-tuks y las mototaxis están por todas partes. Acuerda la tarifa antes de empezar o usa una aplicación de transporte, y espera regatear con amabilidad.",
+    "pt": "Os tuk-tuks e os mototáxis estão por todo o lado. Combina a tarifa antes de partir ou usa uma aplicação de transporte, e conta com negociar com educação.",
+    "pt_BR": "Os tuk-tuks e os mototáxis estão por toda parte. Combine a tarifa antes de partir ou use um aplicativo de transporte, e esteja preparado para negociar com educação.",
+    "fr": "Les tuk-tuks et les motos-taxis sont partout. Convenez du prix avant de partir ou utilise une application de VTC, et attends-toi à négocier poliment.",
+    "de": "Tuk-Tuks und Motorradtaxis gibt es überall. Vereinbare den Fahrpreis vor der Fahrt oder nutze eine Fahrdienst-App und rechne damit, höflich zu verhandeln."
+   }
+  },
+  {
+   "id": "ct-KH-19",
+   "category": "transport",
+   "text": {
+    "en": "Road traffic can be busy and unpredictable, with many motorbikes. Cross streets slowly and steadily so that drivers can see your path and go around you.",
+    "it": "Il traffico stradale può essere intenso e imprevedibile, con molte moto. Attraversa la strada lentamente e con passo costante, così i conducenti possono vedere il tuo percorso e aggirarti.",
+    "es": "El tráfico puede ser intenso e impredecible, con muchas motos. Cruza las calles despacio y con paso constante para que los conductores vean tu trayectoria y te esquiven.",
+    "pt": "O trânsito pode ser intenso e imprevisível, com muitas motas. Atravessa as ruas devagar e com passo constante para que os condutores vejam o teu trajeto e te contornem.",
+    "pt_BR": "O trânsito pode ser intenso e imprevisível, com muitas motos. Atravesse as ruas devagar e com passo constante para que os motoristas vejam seu trajeto e desviem de você.",
+    "fr": "La circulation peut être dense et imprévisible, avec beaucoup de motos. Traverse les rues lentement et d'un pas régulier pour que les conducteurs voient ta trajectoire et te contournent.",
+    "de": "Der Straßenverkehr kann dicht und unvorhersehbar sein, mit vielen Motorrollern. Überquere Straßen langsam und gleichmäßig, damit Fahrer deinen Weg sehen und dich umfahren können."
+   }
+  },
+  {
+   "id": "ct-KH-20",
+   "category": "language",
+   "text": {
+    "en": "The language is Khmer. Try \"Suosdei\" for hello, \"Orkun\" for thank you and \"Som toh\" for sorry or excuse me. English is understood in tourist areas.",
+    "it": "La lingua è il khmer. Prova \"Suosdei\" per ciao, \"Orkun\" per grazie e \"Som toh\" per scusa o permesso. L'inglese è capito nelle zone turistiche.",
+    "es": "El idioma es el jemer. Prueba \"Suosdei\" para hola, \"Orkun\" para gracias y \"Som toh\" para perdón o disculpa. El inglés se entiende en las zonas turísticas.",
+    "pt": "A língua é o khmer. Experimenta \"Suosdei\" para olá, \"Orkun\" para obrigado e \"Som toh\" para desculpa ou com licença. O inglês é compreendido nas zonas turísticas.",
+    "pt_BR": "A língua é o khmer. Experimente \"Suosdei\" para oi, \"Orkun\" para obrigado e \"Som toh\" para desculpa ou com licença. O inglês é entendido nas áreas turísticas.",
+    "fr": "La langue est le khmer. Essaie \"Suosdei\" pour bonjour, \"Orkun\" pour merci et \"Som toh\" pour pardon ou excusez-moi. L'anglais est compris dans les zones touristiques.",
+    "de": "Die Sprache ist Khmer. Probiere \"Suosdei\" für Hallo, \"Orkun\" für Danke und \"Som toh\" für Entschuldigung. In Touristengebieten wird Englisch verstanden."
+   }
+  },
+  {
+   "id": "ct-KH-21",
+   "category": "language",
+   "text": {
+    "en": "Khmer has polite words and special forms of \"you\" that depend on age and status. When unsure, use a respectful tone and let the other person set the level.",
+    "it": "Il khmer ha parole di cortesia e forme speciali di \"tu\" che dipendono da età e status. Nel dubbio usa un tono rispettoso e lascia che sia l'altra persona a stabilire il livello.",
+    "es": "El jemer tiene palabras de cortesía y formas especiales de \"tú\" que dependen de la edad y el estatus. Si dudas, usa un tono respetuoso y deja que la otra persona marque el nivel.",
+    "pt": "O khmer tem palavras de cortesia e formas especiais de \"tu\" que dependem da idade e do estatuto. Em caso de dúvida, usa um tom respeitoso e deixa que seja a outra pessoa a definir o nível.",
+    "pt_BR": "O khmer tem palavras de cortesia e formas especiais de \"você\" que dependem da idade e do status. Em caso de dúvida, use um tom respeitoso e deixe que a outra pessoa defina o nível.",
+    "fr": "Le khmer possède des mots de politesse et des formes spéciales de \"tu/vous\" qui dépendent de l'âge et du statut. Dans le doute, adopte un ton respectueux et laisse l'autre personne fixer le niveau.",
+    "de": "Khmer hat Höflichkeitswörter und besondere Formen für \"du/Sie\", die vom Alter und Status abhängen. Im Zweifel wähle einen respektvollen Ton und lass die andere Person das Niveau bestimmen."
+   }
+  },
+  {
+   "id": "ct-KH-22",
+   "category": "festivals",
+   "text": {
+    "en": "Khmer New Year takes place in April and lasts several days. Families visit temples, play traditional games and, in some places, hold events like ox cart races and wrestling.",
+    "it": "Il Capodanno khmer si celebra ad aprile e dura diversi giorni. Le famiglie visitano i templi, giocano a giochi tradizionali e in alcuni luoghi si tengono eventi come corse di carri a buoi e lotta.",
+    "es": "El Año Nuevo jemer se celebra en abril y dura varios días. Las familias visitan los templos, juegan a juegos tradicionales y, en algunos lugares, se celebran eventos como carreras de carretas de bueyes y lucha.",
+    "pt": "O Ano Novo khmer celebra-se em abril e dura vários dias. As famílias visitam os templos, jogam jogos tradicionais e, em alguns locais, realizam-se eventos como corridas de carros de bois e luta.",
+    "pt_BR": "O Ano Novo khmer é celebrado em abril e dura vários dias. As famílias visitam os templos, jogam jogos tradicionais e, em alguns lugares, há eventos como corridas de carros de boi e luta.",
+    "fr": "Le Nouvel An khmer a lieu en avril et dure plusieurs jours. Les familles visitent les temples, jouent à des jeux traditionnels et, par endroits, des événements comme les courses de chars à bœufs et la lutte ont lieu.",
+    "de": "Das Khmer-Neujahr findet im April statt und dauert mehrere Tage. Familien besuchen Tempel, spielen traditionelle Spiele, und an manchen Orten gibt es Ochsenkarrenrennen und Ringkämpfe."
+   }
+  },
+  {
+   "id": "ct-KH-23",
+   "category": "festivals",
+   "text": {
+    "en": "Pchum Ben, in autumn, is a festival to honour ancestors, when families bring food offerings to temples. The Water Festival in November features boat races in Phnom Penh.",
+    "it": "Il Pchum Ben, in autunno, è una festa in onore degli antenati in cui le famiglie portano offerte di cibo ai templi. Il Festival dell'acqua, a novembre, prevede regate a Phnom Penh.",
+    "es": "El Pchum Ben, en otoño, es una fiesta en honor de los antepasados en la que las familias llevan ofrendas de comida a los templos. El Festival del Agua, en noviembre, incluye regatas en Phnom Penh.",
+    "pt": "O Pchum Ben, no outono, é uma festa em honra dos antepassados em que as famílias levam oferendas de comida aos templos. O Festival da Água, em novembro, inclui regatas em Phnom Penh.",
+    "pt_BR": "O Pchum Ben, no outono, é uma festa em honra dos antepassados em que as famílias levam oferendas de comida aos templos. O Festival da Água, em novembro, inclui regatas em Phnom Penh.",
+    "fr": "Le Pchum Ben, en automne, est une fête en l'honneur des ancêtres où les familles apportent des offrandes de nourriture aux temples. La Fête de l'eau, en novembre, comprend des courses de bateaux à Phnom Penh.",
+    "de": "Pchum Ben im Herbst ist ein Fest zu Ehren der Ahnen, bei dem Familien Speiseopfer zu den Tempeln bringen. Das Wasserfest im November bietet Bootsrennen in Phnom Penh."
+   }
+  },
+  {
+   "id": "ct-KH-24",
+   "category": "family",
+   "text": {
+    "en": "Family is the centre of life, and several generations often live together. Children are expected to respect parents, and adult children usually care for their elders.",
+    "it": "La famiglia è il centro della vita e spesso vivono insieme più generazioni. Ai figli si chiede di rispettare i genitori e i figli adulti di solito si prendono cura degli anziani.",
+    "es": "La familia es el centro de la vida y a menudo conviven varias generaciones. Se espera que los hijos respeten a sus padres y los hijos adultos suelen cuidar de los mayores.",
+    "pt": "A família é o centro da vida e muitas vezes vivem juntas várias gerações. Espera-se que os filhos respeitem os pais e os filhos adultos costumam cuidar dos mais velhos.",
+    "pt_BR": "A família é o centro da vida e muitas vezes várias gerações vivem juntas. Espera-se que os filhos respeitem os pais e os filhos adultos costumam cuidar dos mais velhos.",
+    "fr": "La famille est au centre de la vie et plusieurs générations vivent souvent ensemble. On attend des enfants qu'ils respectent leurs parents, et les enfants adultes s'occupent généralement des aînés.",
+    "de": "Die Familie steht im Mittelpunkt des Lebens, und oft leben mehrere Generationen zusammen. Von Kindern wird Respekt gegenüber den Eltern erwartet, und erwachsene Kinder kümmern sich meist um die Älteren."
+   }
+  },
+  {
+   "id": "ct-KH-25",
+   "category": "money",
+   "text": {
+    "en": "The riel is the national currency, but US dollars are widely used for larger payments. Change is often given in riel, and clean, undamaged banknotes are preferred.",
+    "it": "La valuta nazionale è il riel, ma i dollari USA sono molto usati per i pagamenti più grandi. Il resto viene spesso dato in riel e si preferiscono banconote pulite e integre.",
+    "es": "La moneda nacional es el riel, pero los dólares estadounidenses se usan mucho para pagos mayores. El cambio suele darse en rieles y se prefieren billetes limpios y sin daños.",
+    "pt": "A moeda nacional é o riel, mas os dólares americanos são muito usados em pagamentos maiores. O troco é muitas vezes dado em riéis e preferem-se notas limpas e sem danos.",
+    "pt_BR": "A moeda nacional é o riel, mas os dólares americanos são muito usados em pagamentos maiores. O troco costuma ser dado em riéis e preferem-se notas limpas e sem danos.",
+    "fr": "La monnaie nationale est le riel, mais les dollars américains sont très utilisés pour les paiements plus importants. La monnaie est souvent rendue en riels et l'on préfère les billets propres et en bon état.",
+    "de": "Die Landeswährung ist der Riel, doch US-Dollar werden für größere Zahlungen häufig genutzt. Wechselgeld gibt es oft in Riel, und saubere, unbeschädigte Scheine werden bevorzugt."
+   }
+  },
+  {
+   "id": "ct-KH-26",
+   "category": "photography",
+   "text": {
+    "en": "Ask permission before photographing people, especially monks, and be discreet in temples. At Angkor and other heritage sites, check the rules on drones and tripods first.",
+    "it": "Chiedi il permesso prima di fotografare le persone, soprattutto i monaci, e sii discreto nei templi. Ad Angkor e negli altri siti storici controlla prima le regole su droni e treppiedi.",
+    "es": "Pide permiso antes de fotografiar a las personas, sobre todo a los monjes, y sé discreto en los templos. En Angkor y otros sitios patrimoniales, consulta antes las normas sobre drones y trípodes.",
+    "pt": "Pede autorização antes de fotografar pessoas, sobretudo monges, e sê discreto nos templos. Em Angkor e noutros locais de património, consulta primeiro as regras sobre drones e tripés.",
+    "pt_BR": "Peça permissão antes de fotografar pessoas, principalmente monges, e seja discreto nos templos. Em Angkor e em outros sítios históricos, consulte antes as regras sobre drones e tripés.",
+    "fr": "Demande la permission avant de photographier des personnes, surtout les moines, et sois discret dans les temples. À Angkor et sur d'autres sites du patrimoine, vérifie d'abord les règles sur les drones et les trépieds.",
+    "de": "Frag um Erlaubnis, bevor du Menschen fotografierst, besonders Mönche, und sei in Tempeln diskret. In Angkor und an anderen Kulturstätten prüfe vorher die Regeln für Drohnen und Stative."
+   }
+  },
+  {
+   "id": "ct-KH-27",
+   "category": "nightlife",
+   "text": {
+    "en": "Evenings are social. Night markets with street food and live music in cities like Siem Reap and Phnom Penh are relaxed places to meet locals and fellow travellers.",
+    "it": "Le serate sono sociali. I mercati notturni con cibo di strada e musica dal vivo in città come Siem Reap e Phnom Penh sono luoghi rilassati dove incontrare gente del posto e altri viaggiatori.",
+    "es": "Las noches son sociales. Los mercados nocturnos con comida callejera y música en directo en ciudades como Siem Reap y Phnom Penh son lugares relajados para conocer a gente local y a otros viajeros.",
+    "pt": "As noites são sociais. Os mercados noturnos com comida de rua e música ao vivo em cidades como Siem Reap e Phnom Penh são locais descontraídos para conhecer gente local e outros viajantes.",
+    "pt_BR": "As noites são sociais. Os mercados noturnos com comida de rua e música ao vivo em cidades como Siem Reap e Phnom Penh são lugares descontraídos para conhecer moradores locais e outros viajantes.",
+    "fr": "Les soirées sont conviviales. Les marchés nocturnes avec street food et musique live dans des villes comme Siem Reap et Phnom Penh sont des endroits détendus pour rencontrer des habitants et d'autres voyageurs.",
+    "de": "Die Abende sind gesellig. Nachtmärkte mit Streetfood und Livemusik in Städten wie Siem Reap und Phnom Penh sind entspannte Orte, um Einheimische und andere Reisende zu treffen."
+   }
+  },
+  {
+   "id": "ct-KH-28",
+   "category": "nature",
+   "text": {
+    "en": "The rainy season runs roughly from May to October and the dry season from November to April. Bring sun protection, water and a light rain jacket depending on the season.",
+    "it": "La stagione delle piogge va all'incirca da maggio a ottobre e la stagione secca da novembre ad aprile. Porta protezione solare, acqua e una leggera giacca antipioggia a seconda della stagione.",
+    "es": "La temporada de lluvias va aproximadamente de mayo a octubre y la temporada seca de noviembre a abril. Lleva protección solar, agua y un impermeable ligero según la estación.",
+    "pt": "A época das chuvas vai aproximadamente de maio a outubro e a época seca de novembro a abril. Leva proteção solar, água e um casaco impermeável leve conforme a estação.",
+    "pt_BR": "A estação das chuvas vai aproximadamente de maio a outubro e a estação seca de novembro a abril. Leve protetor solar, água e uma capa de chuva leve conforme a estação.",
+    "fr": "La saison des pluies va à peu près de mai à octobre et la saison sèche de novembre à avril. Emporte de la protection solaire, de l'eau et un imperméable léger selon la saison.",
+    "de": "Die Regenzeit dauert ungefähr von Mai bis Oktober, die Trockenzeit von November bis April. Nimm je nach Jahreszeit Sonnenschutz, Wasser und eine leichte Regenjacke mit."
+   }
+  },
+  {
+   "id": "ct-KH-29",
+   "category": "safety",
+   "text": {
+    "en": "In the countryside, stay on marked paths and obey warning signs, because landmines from past conflicts remain in some areas. In cities, hold your bag away from the road.",
+    "it": "In campagna resta sui sentieri segnalati e rispetta i cartelli di avvertimento, perché in alcune zone restano mine dei conflitti passati. In città tieni la borsa lontano dalla strada.",
+    "es": "En el campo, permanece en los senderos señalizados y obedece las señales de advertencia, porque en algunas zonas quedan minas de conflictos pasados. En las ciudades, lleva el bolso alejado de la calzada.",
+    "pt": "No campo, fica nos caminhos sinalizados e respeita os avisos, porque em algumas zonas ainda existem minas de conflitos passados. Nas cidades, leva a mala do lado oposto à estrada.",
+    "pt_BR": "No campo, fique nos caminhos sinalizados e respeite as placas de aviso, porque em algumas áreas ainda existem minas de conflitos passados. Nas cidades, leve a bolsa longe da rua.",
+    "fr": "À la campagne, reste sur les sentiers balisés et respecte les panneaux d'avertissement, car des mines de conflits passés subsistent dans certaines zones. En ville, tiens ton sac côté opposé à la route.",
+    "de": "Bleib auf dem Land auf markierten Wegen und beachte Warnschilder, denn in manchen Gebieten liegen noch Minen aus früheren Konflikten. Halte in Städten deine Tasche auf der straßenabgewandten Seite."
+   }
+  },
+  {
+   "id": "ct-KH-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Angkor Wat, a Khmer Empire temple from the Angkor period, appears on the national flag and is a source of great pride. Apsara dance and Khmer crafts also reflect this heritage.",
+    "it": "Angkor Wat, un tempio dell'Impero khmer del periodo di Angkor, compare sulla bandiera nazionale ed è motivo di grande orgoglio. Anche la danza Apsara e l'artigianato khmer riflettono questo patrimonio.",
+    "es": "Angkor Wat, un templo del Imperio jemer del período de Angkor, aparece en la bandera nacional y es motivo de gran orgullo. La danza Apsara y la artesanía jemer también reflejan este patrimonio.",
+    "pt": "Angkor Wat, um templo do Império khmer do período de Angkor, aparece na bandeira nacional e é motivo de grande orgulho. A dança Apsara e o artesanato khmer também refletem esta herança.",
+    "pt_BR": "Angkor Wat, um templo do Império khmer do período de Angkor, aparece na bandeira nacional e é motivo de grande orgulho. A dança Apsara e o artesanato khmer também refletem essa herança.",
+    "fr": "Angkor Wat, un temple de l'Empire khmer de la période d'Angkor, figure sur le drapeau national et suscite une grande fierté. La danse Apsara et l'artisanat khmer reflètent aussi cet héritage.",
+    "de": "Angkor Wat, ein Tempel des Khmer-Reiches aus der Angkor-Zeit, ist auf der Nationalflagge abgebildet und ein Quell großen Stolzes. Auch der Apsara-Tanz und das Khmer-Handwerk spiegeln dieses Erbe wider."
+   }
+  }
+ ]
+}

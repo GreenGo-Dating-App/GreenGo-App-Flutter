@@ -1,0 +1,1402 @@
+[
+{
+"id": "ss-food_talk-001",
+"topic": "food_talk",
+"level": "A1",
+"text": {
+"en": "I love pizza.",
+"it": "Adoro la pizza.",
+"es": "Me encanta la pizza.",
+"pt": "Adoro pizza.",
+"pt_BR": "Eu amo pizza.",
+"fr": "J'adore la pizza.",
+"de": "Ich liebe Pizza."
+}
+},
+{
+"id": "ss-food_talk-002",
+"topic": "food_talk",
+"level": "A1",
+"text": {
+"en": "What do you like to eat?",
+"it": "Cosa ti piace mangiare?",
+"es": "¿Qué te gusta comer?",
+"pt": "O que é que gostas de comer?",
+"pt_BR": "O que você gosta de comer?",
+"fr": "Qu'est-ce que tu aimes manger ?",
+"de": "Was isst du gern?"
+}
+},
+{
+"id": "ss-food_talk-003",
+"topic": "food_talk",
+"level": "A1",
+"text": {
+"en": "This is delicious!",
+"it": "È buonissimo!",
+"es": "¡Está delicioso!",
+"pt": "Está delicioso!",
+"pt_BR": "Está uma delícia!",
+"fr": "C'est délicieux !",
+"de": "Das schmeckt köstlich!"
+}
+},
+{
+"id": "ss-food_talk-004",
+"topic": "food_talk",
+"level": "A1",
+"text": {
+"en": "I am hungry.",
+"it": "Ho fame.",
+"es": "Tengo hambre.",
+"pt": "Tenho fome.",
+"pt_BR": "Estou com fome.",
+"fr": "J'ai faim.",
+"de": "Ich habe Hunger."
+}
+},
+{
+"id": "ss-food_talk-005",
+"topic": "food_talk",
+"level": "A1",
+"text": {
+"en": "Are you hungry?",
+"it": "Hai fame?",
+"es": "¿Tienes hambre?",
+"pt": "Tens fome?",
+"pt_BR": "Você está com fome?",
+"fr": "Tu as faim ?",
+"de": "Hast du Hunger?"
+}
+},
+{
+"id": "ss-food_talk-006",
+"topic": "food_talk",
+"level": "A1",
+"text": {
+"en": "I don't eat meat.",
+"it": "Non mangio carne.",
+"es": "No como carne.",
+"pt": "Não como carne.",
+"pt_BR": "Eu não como carne.",
+"fr": "Je ne mange pas de viande.",
+"de": "Ich esse kein Fleisch."
+}
+},
+{
+"id": "ss-food_talk-007",
+"topic": "food_talk",
+"level": "A1",
+"text": {
+"en": "Do you like spicy food?",
+"it": "Ti piace il cibo piccante?",
+"es": "¿Te gusta la comida picante?",
+"pt": "Gostas de comida picante?",
+"pt_BR": "Você gosta de comida picante?",
+"fr": "Tu aimes la cuisine épicée ?",
+"de": "Magst du scharfes Essen?"
+}
+},
+{
+"id": "ss-food_talk-008",
+"topic": "food_talk",
+"level": "A1",
+"text": {
+"en": "I like coffee with milk.",
+"it": "Mi piace il caffè con il latte.",
+"es": "Me gusta el café con leche.",
+"pt": "Gosto de café com leite.",
+"pt_BR": "Eu gosto de café com leite.",
+"fr": "J'aime le café au lait.",
+"de": "Ich mag Kaffee mit Milch."
+}
+},
+{
+"id": "ss-food_talk-009",
+"topic": "food_talk",
+"level": "A1",
+"text": {
+"en": "What is your favorite food?",
+"it": "Qual è il tuo cibo preferito?",
+"es": "¿Cuál es tu comida favorita?",
+"pt": "Qual é a tua comida preferida?",
+"pt_BR": "Qual é a sua comida favorita?",
+"fr": "Quel est ton plat préféré ?",
+"de": "Was ist dein Lieblingsessen?"
+}
+},
+{
+"id": "ss-food_talk-010",
+"topic": "food_talk",
+"level": "A1",
+"text": {
+"en": "I eat rice every day.",
+"it": "Mangio il riso ogni giorno.",
+"es": "Como arroz todos los días.",
+"pt": "Como arroz todos os dias.",
+"pt_BR": "Eu como arroz todo dia.",
+"fr": "Je mange du riz tous les jours.",
+"de": "Ich esse jeden Tag Reis."
+}
+},
+{
+"id": "ss-food_talk-011",
+"topic": "food_talk",
+"level": "A1",
+"text": {
+"en": "Do you cook?",
+"it": "Cucini?",
+"es": "¿Cocinas?",
+"pt": "Cozinhas?",
+"pt_BR": "Você cozinha?",
+"fr": "Tu cuisines ?",
+"de": "Kochst du?"
+}
+},
+{
+"id": "ss-food_talk-012",
+"topic": "food_talk",
+"level": "A1",
+"text": {
+"en": "I am thirsty. Let's drink some water.",
+"it": "Ho sete. Beviamo un po' d'acqua.",
+"es": "Tengo sed. Bebamos un poco de agua.",
+"pt": "Tenho sede. Vamos beber água.",
+"pt_BR": "Estou com sede. Vamos beber água.",
+"fr": "J'ai soif. Buvons un peu d'eau.",
+"de": "Ich habe Durst. Lass uns Wasser trinken."
+}
+},
+{
+"id": "ss-food_talk-013",
+"topic": "food_talk",
+"level": "A1",
+"text": {
+"en": "Breakfast is my favorite meal.",
+"it": "La colazione è il mio pasto preferito.",
+"es": "El desayuno es mi comida favorita.",
+"pt": "O pequeno-almoço é a minha refeição preferida.",
+"pt_BR": "O café da manhã é a minha refeição favorita.",
+"fr": "Le petit-déjeuner est mon repas préféré.",
+"de": "Frühstück ist meine Lieblingsmahlzeit."
+}
+},
+{
+"id": "ss-food_talk-014",
+"topic": "food_talk",
+"level": "A1",
+"text": {
+"en": "I like fruit.",
+"it": "Mi piace la frutta.",
+"es": "Me gusta la fruta.",
+"pt": "Gosto de fruta.",
+"pt_BR": "Eu gosto de fruta.",
+"fr": "J'aime les fruits.",
+"de": "Ich mag Obst."
+}
+},
+{
+"id": "ss-food_talk-015",
+"topic": "food_talk",
+"level": "A1",
+"text": {
+"en": "Is this sweet?",
+"it": "È dolce?",
+"es": "¿Esto es dulce?",
+"pt": "Isto é doce?",
+"pt_BR": "Isso é doce?",
+"fr": "C'est sucré ?",
+"de": "Ist das süß?"
+}
+},
+{
+"id": "ss-food_talk-016",
+"topic": "food_talk",
+"level": "A2",
+"text": {
+"en": "What did you have for lunch today?",
+"it": "Cos'hai mangiato oggi a pranzo?",
+"es": "¿Qué comiste hoy al mediodía?",
+"pt": "O que almoçaste hoje?",
+"pt_BR": "O que você almoçou hoje?",
+"fr": "Qu'est-ce que tu as mangé ce midi ?",
+"de": "Was hast du heute zu Mittag gegessen?"
+}
+},
+{
+"id": "ss-food_talk-017",
+"topic": "food_talk",
+"level": "A2",
+"text": {
+"en": "I'm allergic to nuts, so I have to be careful.",
+"it": "Sono allergico alla frutta a guscio, quindi devo fare attenzione.",
+"es": "Soy alérgico a los frutos secos, así que tengo que tener cuidado.",
+"pt": "Sou alérgico a frutos secos, por isso tenho de ter cuidado.",
+"pt_BR": "Sou alérgico a castanhas e nozes, então preciso ter cuidado.",
+"fr": "Je suis allergique aux fruits à coque, alors je dois faire attention.",
+"de": "Ich bin allergisch gegen Nüsse, deshalb muss ich aufpassen."
+}
+},
+{
+"id": "ss-food_talk-018",
+"topic": "food_talk",
+"level": "A2",
+"text": {
+"en": "Can you give me the recipe?",
+"it": "Mi puoi dare la ricetta?",
+"es": "¿Me puedes dar la receta?",
+"pt": "Podes dar-me a receita?",
+"pt_BR": "Você pode me passar a receita?",
+"fr": "Tu peux me donner la recette ?",
+"de": "Kannst du mir das Rezept geben?"
+}
+},
+{
+"id": "ss-food_talk-019",
+"topic": "food_talk",
+"level": "A2",
+"text": {
+"en": "In my country, we usually eat dinner around eight.",
+"it": "Nel mio paese di solito si cena verso le otto.",
+"es": "En mi país solemos cenar hacia las ocho.",
+"pt": "No meu país, costumamos jantar por volta das oito.",
+"pt_BR": "No meu país, a gente costuma jantar por volta das oito.",
+"fr": "Dans mon pays, on dîne généralement vers vingt heures.",
+"de": "In meinem Land isst man normalerweise gegen acht zu Abend."
+}
+},
+{
+"id": "ss-food_talk-020",
+"topic": "food_talk",
+"level": "A2",
+"text": {
+"en": "What is a typical dish from your city?",
+"it": "Qual è un piatto tipico della tua città?",
+"es": "¿Cuál es un plato típico de tu ciudad?",
+"pt": "Qual é um prato típico da tua cidade?",
+"pt_BR": "Qual é um prato típico da sua cidade?",
+"fr": "Quel est un plat typique de ta ville ?",
+"de": "Was ist ein typisches Gericht aus deiner Stadt?"
+}
+},
+{
+"id": "ss-food_talk-021",
+"topic": "food_talk",
+"level": "A2",
+"text": {
+"en": "I'm learning to cook pasta from scratch.",
+"it": "Sto imparando a fare la pasta fresca da zero.",
+"es": "Estoy aprendiendo a hacer pasta desde cero.",
+"pt": "Estou a aprender a fazer massa de raiz.",
+"pt_BR": "Estou aprendendo a fazer massa do zero.",
+"fr": "J'apprends à faire des pâtes à partir de zéro.",
+"de": "Ich lerne gerade, Nudeln von Grund auf selbst zu machen."
+}
+},
+{
+"id": "ss-food_talk-022",
+"topic": "food_talk",
+"level": "A2",
+"text": {
+"en": "I prefer home cooking to eating out.",
+"it": "Preferisco la cucina di casa a mangiare fuori.",
+"es": "Prefiero la comida casera a comer fuera.",
+"pt": "Prefiro comida caseira a comer fora.",
+"pt_BR": "Prefiro comida caseira a comer fora.",
+"fr": "Je préfère la cuisine maison aux repas au restaurant.",
+"de": "Ich esse lieber selbst gekocht als auswärts."
+}
+},
+{
+"id": "ss-food_talk-023",
+"topic": "food_talk",
+"level": "A2",
+"text": {
+"en": "Is it very spicy? I can't handle much heat.",
+"it": "È molto piccante? Non reggo bene il piccante.",
+"es": "¿Pica mucho? No aguanto mucho el picante.",
+"pt": "É muito picante? Não aguento muito picante.",
+"pt_BR": "É muito apimentado? Eu não aguento muita pimenta.",
+"fr": "C'est très épicé ? Je ne supporte pas bien le piment.",
+"de": "Ist es sehr scharf? Ich vertrage nicht viel Schärfe."
+}
+},
+{
+"id": "ss-food_talk-024",
+"topic": "food_talk",
+"level": "A2",
+"text": {
+"en": "Which cuisine do you like the most?",
+"it": "Quale cucina ti piace di più?",
+"es": "¿Qué cocina te gusta más?",
+"pt": "Que cozinha preferes?",
+"pt_BR": "De qual culinária você mais gosta?",
+"fr": "Quelle cuisine préfères-tu ?",
+"de": "Welche Küche magst du am liebsten?"
+}
+},
+{
+"id": "ss-food_talk-025",
+"topic": "food_talk",
+"level": "A2",
+"text": {
+"en": "I try to eat more vegetables these days.",
+"it": "In questo periodo cerco di mangiare più verdure.",
+"es": "Últimamente intento comer más verduras.",
+"pt": "Ultimamente tento comer mais legumes.",
+"pt_BR": "Ultimamente estou tentando comer mais legumes.",
+"fr": "Ces temps-ci, j'essaie de manger plus de légumes.",
+"de": "In letzter Zeit versuche ich, mehr Gemüse zu essen."
+}
+},
+{
+"id": "ss-food_talk-026",
+"topic": "food_talk",
+"level": "A2",
+"text": {
+"en": "My grandmother makes the best soup.",
+"it": "Mia nonna prepara la zuppa più buona.",
+"es": "Mi abuela hace la mejor sopa.",
+"pt": "A minha avó faz a melhor sopa.",
+"pt_BR": "Minha avó faz a melhor sopa.",
+"fr": "Ma grand-mère fait la meilleure soupe.",
+"de": "Meine Oma macht die beste Suppe."
+}
+},
+{
+"id": "ss-food_talk-027",
+"topic": "food_talk",
+"level": "A2",
+"text": {
+"en": "Do you usually have a big breakfast?",
+"it": "Di solito fai una colazione abbondante?",
+"es": "¿Sueles desayunar mucho?",
+"pt": "Costumas tomar um pequeno-almoço reforçado?",
+"pt_BR": "Você costuma tomar um café da manhã reforçado?",
+"fr": "Tu prends un gros petit-déjeuner en général ?",
+"de": "Frühstückst du normalerweise ausgiebig?"
+}
+},
+{
+"id": "ss-food_talk-028",
+"topic": "food_talk",
+"level": "A2",
+"text": {
+"en": "I've never tried that. What does it taste like?",
+"it": "Non l'ho mai provato. Che sapore ha?",
+"es": "Nunca lo he probado. ¿A qué sabe?",
+"pt": "Nunca provei isso. Que sabor tem?",
+"pt_BR": "Nunca provei isso. Que gosto tem?",
+"fr": "Je n'ai jamais goûté ça. Ça a quel goût ?",
+"de": "Das habe ich noch nie probiert. Wie schmeckt es?"
+}
+},
+{
+"id": "ss-food_talk-029",
+"topic": "food_talk",
+"level": "A2",
+"text": {
+"en": "Let's cook something together over a video call.",
+"it": "Cuciniamo qualcosa insieme in videochiamata.",
+"es": "Cocinemos algo juntos por videollamada.",
+"pt": "Vamos cozinhar algo juntos por videochamada.",
+"pt_BR": "Vamos cozinhar algo juntos por chamada de vídeo.",
+"fr": "Cuisinons quelque chose ensemble en appel vidéo.",
+"de": "Lass uns per Videoanruf zusammen etwas kochen."
+}
+},
+{
+"id": "ss-food_talk-030",
+"topic": "food_talk",
+"level": "A2",
+"text": {
+"en": "I'm vegetarian, but I eat eggs and cheese.",
+"it": "Sono vegetariano, ma mangio uova e formaggio.",
+"es": "Soy vegetariano, pero como huevos y queso.",
+"pt": "Sou vegetariano, mas como ovos e queijo.",
+"pt_BR": "Sou vegetariano, mas como ovos e queijo.",
+"fr": "Je suis végétarien, mais je mange des œufs et du fromage.",
+"de": "Ich bin Vegetarier, aber ich esse Eier und Käse."
+}
+},
+{
+"id": "ss-food_talk-031",
+"topic": "food_talk",
+"level": "B1",
+"text": {
+"en": "I'd love to try a traditional dish from your region. What would you recommend?",
+"it": "Mi piacerebbe provare un piatto tradizionale della tua regione. Cosa mi consigli?",
+"es": "Me encantaría probar un plato tradicional de tu región. ¿Qué me recomiendas?",
+"pt": "Adorava provar um prato tradicional da tua região. O que me recomendas?",
+"pt_BR": "Eu adoraria provar um prato tradicional da sua região. O que você recomenda?",
+"fr": "J'aimerais goûter un plat traditionnel de ta région. Que me conseillerais-tu ?",
+"de": "Ich würde gern ein traditionelles Gericht aus deiner Region probieren. Was empfiehlst du mir?"
+}
+},
+{
+"id": "ss-food_talk-032",
+"topic": "food_talk",
+"level": "B1",
+"text": {
+"en": "Where I come from, meals are a time to sit together and talk for hours.",
+"it": "Da dove vengo io, i pasti sono un momento per stare insieme e chiacchierare per ore.",
+"es": "De donde vengo, las comidas son un momento para sentarse juntos y charlar durante horas.",
+"pt": "Na minha terra, as refeições são um momento para nos sentarmos juntos e conversarmos durante horas.",
+"pt_BR": "De onde eu venho, as refeições são um momento para sentar junto e conversar por horas.",
+"fr": "Là d'où je viens, les repas sont un moment pour s'asseoir ensemble et discuter pendant des heures.",
+"de": "Wo ich herkomme, sind Mahlzeiten eine Gelegenheit, zusammenzusitzen und stundenlang zu reden."
+}
+},
+{
+"id": "ss-food_talk-033",
+"topic": "food_talk",
+"level": "B1",
+"text": {
+"en": "I'm trying to cut down on sugar, but it's hard to resist desserts.",
+"it": "Sto cercando di ridurre gli zuccheri, ma è difficile resistere ai dolci.",
+"es": "Estoy intentando reducir el azúcar, pero cuesta resistirse a los postres.",
+"pt": "Estou a tentar reduzir o açúcar, mas é difícil resistir às sobremesas.",
+"pt_BR": "Estou tentando reduzir o açúcar, mas é difícil resistir às sobremesas.",
+"fr": "J'essaie de réduire le sucre, mais il est difficile de résister aux desserts.",
+"de": "Ich versuche, weniger Zucker zu essen, aber Desserts sind schwer zu widerstehen."
+}
+},
+{
+"id": "ss-food_talk-034",
+"topic": "food_talk",
+"level": "B1",
+"text": {
+"en": "Could you describe how this dish is made, step by step?",
+"it": "Potresti descrivermi come si prepara questo piatto, passo dopo passo?",
+"es": "¿Podrías describirme cómo se hace este plato, paso a paso?",
+"pt": "Podes descrever-me como se faz este prato, passo a passo?",
+"pt_BR": "Você poderia me descrever como se faz esse prato, passo a passo?",
+"fr": "Pourrais-tu me décrire comment on prépare ce plat, étape par étape ?",
+"de": "Kannst du mir Schritt für Schritt beschreiben, wie man dieses Gericht zubereitet?"
+}
+},
+{
+"id": "ss-food_talk-035",
+"topic": "food_talk",
+"level": "B1",
+"text": {
+"en": "I find that street food often tastes better than fancy restaurant dishes.",
+"it": "Trovo che il cibo di strada sia spesso più buono dei piatti dei ristoranti eleganti.",
+"es": "Creo que la comida callejera suele saber mejor que los platos de restaurantes elegantes.",
+"pt": "Acho que a comida de rua muitas vezes sabe melhor do que os pratos de restaurantes sofisticados.",
+"pt_BR": "Acho que a comida de rua muitas vezes é mais gostosa do que os pratos de restaurantes chiques.",
+"fr": "Je trouve que la street food a souvent meilleur goût que les plats des restaurants chics.",
+"de": "Ich finde, Straßenessen schmeckt oft besser als die Gerichte in schicken Restaurants."
+}
+},
+{
+"id": "ss-food_talk-036",
+"topic": "food_talk",
+"level": "B1",
+"text": {
+"en": "What do people usually eat during holidays in your country?",
+"it": "Cosa si mangia di solito durante le feste nel tuo paese?",
+"es": "¿Qué se suele comer en las fiestas en tu país?",
+"pt": "O que é que as pessoas costumam comer nas festas no teu país?",
+"pt_BR": "O que as pessoas costumam comer nos feriados no seu país?",
+"fr": "Que mange-t-on habituellement pendant les fêtes dans ton pays ?",
+"de": "Was isst man in deinem Land normalerweise an Feiertagen?"
+}
+},
+{
+"id": "ss-food_talk-037",
+"topic": "food_talk",
+"level": "B1",
+"text": {
+"en": "I've been experimenting with spices I had never used before.",
+"it": "Sto sperimentando spezie che non avevo mai usato prima.",
+"es": "He estado experimentando con especias que nunca había usado.",
+"pt": "Tenho andado a experimentar especiarias que nunca tinha usado.",
+"pt_BR": "Tenho experimentado temperos que eu nunca tinha usado.",
+"fr": "J'ai expérimenté des épices que je n'avais jamais utilisées.",
+"de": "Ich experimentiere gerade mit Gewürzen, die ich noch nie benutzt hatte."
+}
+},
+{
+"id": "ss-food_talk-038",
+"topic": "food_talk",
+"level": "B1",
+"text": {
+"en": "Some ingredients are hard to find here, so I have to find substitutes.",
+"it": "Alcuni ingredienti qui sono difficili da trovare, quindi devo cercare dei sostituti.",
+"es": "Algunos ingredientes son difíciles de encontrar aquí, así que tengo que buscar sustitutos.",
+"pt": "Alguns ingredientes são difíceis de encontrar aqui, por isso tenho de arranjar substitutos.",
+"pt_BR": "Alguns ingredientes são difíceis de achar aqui, então preciso encontrar substitutos.",
+"fr": "Certains ingrédients sont difficiles à trouver ici, donc je dois chercher des substituts.",
+"de": "Manche Zutaten sind hier schwer zu finden, also muss ich Ersatz suchen."
+}
+},
+{
+"id": "ss-food_talk-039",
+"topic": "food_talk",
+"level": "B1",
+"text": {
+"en": "Do you have a family recipe that has been passed down for generations?",
+"it": "Hai una ricetta di famiglia tramandata da generazioni?",
+"es": "¿Tienes alguna receta familiar que se haya transmitido durante generaciones?",
+"pt": "Tens alguma receita de família que passe de geração em geração?",
+"pt_BR": "Você tem alguma receita de família que passa de geração em geração?",
+"fr": "As-tu une recette de famille transmise depuis des générations ?",
+"de": "Hast du ein Familienrezept, das seit Generationen weitergegeben wird?"
+}
+},
+{
+"id": "ss-food_talk-040",
+"topic": "food_talk",
+"level": "B1",
+"text": {
+"en": "I'm lactose intolerant, so I usually choose plant-based milk.",
+"it": "Sono intollerante al lattosio, quindi di solito scelgo il latte vegetale.",
+"es": "Soy intolerante a la lactosa, así que normalmente elijo leche vegetal.",
+"pt": "Sou intolerante à lactose, por isso costumo escolher leite vegetal.",
+"pt_BR": "Sou intolerante à lactose, então costumo escolher leite vegetal.",
+"fr": "Je suis intolérant au lactose, donc je choisis généralement du lait végétal.",
+"de": "Ich bin laktoseintolerant, deshalb nehme ich meistens pflanzliche Milch."
+}
+},
+{
+"id": "ss-food_talk-041",
+"topic": "food_talk",
+"level": "B1",
+"text": {
+"en": "The sauce needs a bit more salt, in my opinion.",
+"it": "Secondo me alla salsa manca un po' di sale.",
+"es": "En mi opinión, a la salsa le falta un poco de sal.",
+"pt": "Na minha opinião, o molho precisa de um pouco mais de sal.",
+"pt_BR": "Na minha opinião, o molho precisa de um pouco mais de sal.",
+"fr": "À mon avis, la sauce manque un peu de sel.",
+"de": "Meiner Meinung nach braucht die Soße noch etwas Salz."
+}
+},
+{
+"id": "ss-food_talk-042",
+"topic": "food_talk",
+"level": "B1",
+"text": {
+"en": "I'm curious how breakfast differs from country to country.",
+"it": "Sono curioso di sapere come cambia la colazione da un paese all'altro.",
+"es": "Tengo curiosidad por saber cómo cambia el desayuno de un país a otro.",
+"pt": "Tenho curiosidade em saber como o pequeno-almoço muda de país para país.",
+"pt_BR": "Tenho curiosidade de saber como o café da manhã muda de país para país.",
+"fr": "Je suis curieux de savoir en quoi le petit-déjeuner diffère d'un pays à l'autre.",
+"de": "Mich interessiert, wie sich das Frühstück von Land zu Land unterscheidet."
+}
+},
+{
+"id": "ss-food_talk-043",
+"topic": "food_talk",
+"level": "B2",
+"text": {
+"en": "I think food is one of the best ways to understand a culture without speaking the language.",
+"it": "Penso che il cibo sia uno dei modi migliori per capire una cultura senza parlarne la lingua.",
+"es": "Creo que la comida es una de las mejores formas de entender una cultura sin hablar su idioma.",
+"pt": "Acho que a comida é uma das melhores formas de perceber uma cultura sem falar a língua.",
+"pt_BR": "Acho que a comida é uma das melhores formas de entender uma cultura sem falar o idioma.",
+"fr": "Je pense que la nourriture est l'un des meilleurs moyens de comprendre une culture sans parler sa langue.",
+"de": "Ich glaube, Essen ist einer der besten Wege, eine Kultur zu verstehen, ohne ihre Sprache zu sprechen."
+}
+},
+{
+"id": "ss-food_talk-044",
+"topic": "food_talk",
+"level": "B2",
+"text": {
+"en": "The dish tastes simple, but the secret is in using really fresh, seasonal ingredients.",
+"it": "Il piatto sembra semplice, ma il segreto sta nell'usare ingredienti freschissimi e di stagione.",
+"es": "El plato parece sencillo, pero el secreto está en usar ingredientes muy frescos y de temporada.",
+"pt": "O prato sabe a coisa simples, mas o segredo está em usar ingredientes bem frescos e da época.",
+"pt_BR": "O prato parece simples, mas o segredo está em usar ingredientes bem frescos e da estação.",
+"fr": "Le plat paraît simple, mais le secret est d'utiliser des ingrédients très frais et de saison.",
+"de": "Das Gericht schmeckt einfach, aber das Geheimnis liegt in wirklich frischen, saisonalen Zutaten."
+}
+},
+{
+"id": "ss-food_talk-045",
+"topic": "food_talk",
+"level": "B2",
+"text": {
+"en": "I'd be happy to swap recipes if you'd like to share one that has a story behind it.",
+"it": "Scambiamoci volentieri le ricette, se ne vuoi condividere una che abbia una storia dietro.",
+"es": "Con gusto intercambiamos recetas si quieres compartir una que tenga una historia detrás.",
+"pt": "Teria todo o gosto em trocar receitas, se quiseres partilhar uma que tenha uma história por trás.",
+"pt_BR": "Eu adoraria trocar receitas, se você quiser compartilhar uma que tenha uma história por trás.",
+"fr": "Je serais ravi d'échanger des recettes si tu veux en partager une qui a une histoire.",
+"de": "Gern tauschen wir Rezepte, wenn du eins teilen möchtest, hinter dem eine Geschichte steckt."
+}
+},
+{
+"id": "ss-food_talk-046",
+"topic": "food_talk",
+"level": "B2",
+"text": {
+"en": "It's fascinating how the same ingredient can be prepared in completely different ways around the world.",
+"it": "È affascinante come lo stesso ingrediente possa essere preparato in modi completamente diversi nel mondo.",
+"es": "Es fascinante cómo un mismo ingrediente se puede preparar de formas completamente distintas en el mundo.",
+"pt": "É fascinante como o mesmo ingrediente pode ser preparado de formas completamente diferentes pelo mundo.",
+"pt_BR": "É fascinante como o mesmo ingrediente pode ser preparado de formas completamente diferentes pelo mundo.",
+"fr": "C'est fascinant de voir comment un même ingrédient peut être préparé de façons très différentes à travers le monde.",
+"de": "Es ist faszinierend, wie dieselbe Zutat auf der Welt auf völlig unterschiedliche Weise zubereitet wird."
+}
+},
+{
+"id": "ss-food_talk-047",
+"topic": "food_talk",
+"level": "B2",
+"text": {
+"en": "Although I don't usually like bitter flavors, this has grown on me over time.",
+"it": "Anche se di solito non amo i sapori amari, questo mi è piaciuto sempre di più col tempo.",
+"es": "Aunque normalmente no me gustan los sabores amargos, este me ha ido gustando con el tiempo.",
+"pt": "Embora normalmente não goste de sabores amargos, este foi-se entranhando em mim com o tempo.",
+"pt_BR": "Embora eu normalmente não goste de sabores amargos, esse foi me conquistando com o tempo.",
+"fr": "Même si je n'aime pas d'habitude les saveurs amères, celle-ci a fini par me plaire avec le temps.",
+"de": "Obwohl ich bittere Aromen normalerweise nicht mag, hat sich dieses mit der Zeit bei mir durchgesetzt."
+}
+},
+{
+"id": "ss-food_talk-048",
+"topic": "food_talk",
+"level": "B2",
+"text": {
+"en": "Whenever I travel, I try to eat where the locals eat rather than where the tourists go.",
+"it": "Quando viaggio cerco di mangiare dove mangiano i locali, non dove vanno i turisti.",
+"es": "Cuando viajo, intento comer donde comen los locales y no donde van los turistas.",
+"pt": "Quando viajo, tento comer onde comem os locais e não onde vão os turistas.",
+"pt_BR": "Quando viajo, tento comer onde os locais comem, e não onde os turistas vão.",
+"fr": "Quand je voyage, j'essaie de manger là où mangent les habitants plutôt que là où vont les touristes.",
+"de": "Wenn ich reise, versuche ich, dort zu essen, wo die Einheimischen essen, nicht dort, wo die Touristen hingehen."
+}
+},
+{
+"id": "ss-food_talk-049",
+"topic": "food_talk",
+"level": "B2",
+"text": {
+"en": "Eating slowly and paying attention to the flavors has really changed how I enjoy meals.",
+"it": "Mangiare lentamente e fare attenzione ai sapori ha cambiato davvero il modo in cui apprezzo i pasti.",
+"es": "Comer despacio y prestar atención a los sabores ha cambiado de verdad cómo disfruto las comidas.",
+"pt": "Comer devagar e prestar atenção aos sabores mudou mesmo a forma como aprecio as refeições.",
+"pt_BR": "Comer devagar e prestar atenção aos sabores mudou de verdade a forma como eu aproveito as refeições.",
+"fr": "Manger lentement et prêter attention aux saveurs a vraiment changé ma façon d'apprécier les repas.",
+"de": "Langsam zu essen und auf die Aromen zu achten, hat wirklich verändert, wie ich Mahlzeiten genieße."
+}
+},
+{
+"id": "ss-food_talk-050",
+"topic": "food_talk",
+"level": "B2",
+"text": {
+"en": "For me, cooking for friends is the most sincere way of showing hospitality.",
+"it": "Per me cucinare per gli amici è il modo più sincero di mostrare ospitalità.",
+"es": "Para mí, cocinar para los amigos es la forma más sincera de mostrar hospitalidad.",
+"pt": "Para mim, cozinhar para os amigos é a forma mais sincera de mostrar hospitalidade.",
+"pt_BR": "Para mim, cozinhar para os amigos é a forma mais sincera de mostrar hospitalidade.",
+"fr": "Pour moi, cuisiner pour des amis est la façon la plus sincère de montrer son hospitalité.",
+"de": "Für mich ist Kochen für Freunde die aufrichtigste Art, Gastfreundschaft zu zeigen."
+}
+},
+{
+"id": "ss-restaurant-001",
+"topic": "restaurant",
+"level": "A1",
+"text": {
+"en": "A table for two, please.",
+"it": "Un tavolo per due, per favore.",
+"es": "Una mesa para dos, por favor.",
+"pt": "Uma mesa para duas pessoas, por favor.",
+"pt_BR": "Uma mesa para dois, por favor.",
+"fr": "Une table pour deux, s'il vous plaît.",
+"de": "Einen Tisch für zwei, bitte."
+}
+},
+{
+"id": "ss-restaurant-002",
+"topic": "restaurant",
+"level": "A1",
+"text": {
+"en": "The menu, please.",
+"it": "Il menù, per favore.",
+"es": "La carta, por favor.",
+"pt": "A ementa, por favor.",
+"pt_BR": "O cardápio, por favor.",
+"fr": "La carte, s'il vous plaît.",
+"de": "Die Speisekarte, bitte."
+}
+},
+{
+"id": "ss-restaurant-003",
+"topic": "restaurant",
+"level": "A1",
+"text": {
+"en": "Water, please.",
+"it": "Dell'acqua, per favore.",
+"es": "Agua, por favor.",
+"pt": "Água, por favor.",
+"pt_BR": "Água, por favor.",
+"fr": "De l'eau, s'il vous plaît.",
+"de": "Wasser, bitte."
+}
+},
+{
+"id": "ss-restaurant-004",
+"topic": "restaurant",
+"level": "A1",
+"text": {
+"en": "I would like a coffee.",
+"it": "Vorrei un caffè.",
+"es": "Quisiera un café.",
+"pt": "Queria um café.",
+"pt_BR": "Eu gostaria de um café.",
+"fr": "Je voudrais un café.",
+"de": "Ich hätte gern einen Kaffee."
+}
+},
+{
+"id": "ss-restaurant-005",
+"topic": "restaurant",
+"level": "A1",
+"text": {
+"en": "The bill, please.",
+"it": "Il conto, per favore.",
+"es": "La cuenta, por favor.",
+"pt": "A conta, por favor.",
+"pt_BR": "A conta, por favor.",
+"fr": "L'addition, s'il vous plaît.",
+"de": "Die Rechnung, bitte."
+}
+},
+{
+"id": "ss-restaurant-006",
+"topic": "restaurant",
+"level": "A1",
+"text": {
+"en": "Is there a restaurant near here?",
+"it": "C'è un ristorante qui vicino?",
+"es": "¿Hay un restaurante cerca de aquí?",
+"pt": "Há algum restaurante aqui perto?",
+"pt_BR": "Tem algum restaurante aqui perto?",
+"fr": "Y a-t-il un restaurant près d'ici ?",
+"de": "Gibt es hier in der Nähe ein Restaurant?"
+}
+},
+{
+"id": "ss-restaurant-007",
+"topic": "restaurant",
+"level": "A1",
+"text": {
+"en": "I would like the soup.",
+"it": "Vorrei la zuppa.",
+"es": "Quisiera la sopa.",
+"pt": "Queria a sopa.",
+"pt_BR": "Eu queria a sopa.",
+"fr": "Je voudrais la soupe.",
+"de": "Ich nehme die Suppe."
+}
+},
+{
+"id": "ss-restaurant-008",
+"topic": "restaurant",
+"level": "A1",
+"text": {
+"en": "Excuse me, can you help me?",
+"it": "Scusi, può aiutarmi?",
+"es": "Disculpe, ¿puede ayudarme?",
+"pt": "Com licença, pode ajudar-me?",
+"pt_BR": "Com licença, o senhor pode me ajudar?",
+"fr": "Excusez-moi, pouvez-vous m'aider ?",
+"de": "Entschuldigung, können Sie mir helfen?"
+}
+},
+{
+"id": "ss-restaurant-009",
+"topic": "restaurant",
+"level": "A1",
+"text": {
+"en": "Thank you, the food was good.",
+"it": "Grazie, il cibo era buono.",
+"es": "Gracias, la comida estaba buena.",
+"pt": "Obrigado, a comida estava boa.",
+"pt_BR": "Obrigado, a comida estava boa.",
+"fr": "Merci, c'était bon.",
+"de": "Danke, das Essen war gut."
+}
+},
+{
+"id": "ss-restaurant-010",
+"topic": "restaurant",
+"level": "A1",
+"text": {
+"en": "How much is this?",
+"it": "Quanto costa questo?",
+"es": "¿Cuánto cuesta esto?",
+"pt": "Quanto custa isto?",
+"pt_BR": "Quanto custa isso?",
+"fr": "Combien ça coûte ?",
+"de": "Wie viel kostet das?"
+}
+},
+{
+"id": "ss-restaurant-011",
+"topic": "restaurant",
+"level": "A1",
+"text": {
+"en": "Do you have a free table?",
+"it": "Avete un tavolo libero?",
+"es": "¿Tienen una mesa libre?",
+"pt": "Têm uma mesa livre?",
+"pt_BR": "Vocês têm uma mesa livre?",
+"fr": "Avez-vous une table libre ?",
+"de": "Haben Sie einen freien Tisch?"
+}
+},
+{
+"id": "ss-restaurant-012",
+"topic": "restaurant",
+"level": "A1",
+"text": {
+"en": "I am vegetarian.",
+"it": "Sono vegetariano.",
+"es": "Soy vegetariano.",
+"pt": "Sou vegetariano.",
+"pt_BR": "Sou vegetariano.",
+"fr": "Je suis végétarien.",
+"de": "Ich bin Vegetarier."
+}
+},
+{
+"id": "ss-restaurant-013",
+"topic": "restaurant",
+"level": "A1",
+"text": {
+"en": "We are not ready yet.",
+"it": "Non siamo ancora pronti.",
+"es": "Todavía no estamos listos.",
+"pt": "Ainda não estamos prontos.",
+"pt_BR": "Ainda não estamos prontos.",
+"fr": "Nous ne sommes pas encore prêts.",
+"de": "Wir sind noch nicht so weit."
+}
+},
+{
+"id": "ss-restaurant-014",
+"topic": "restaurant",
+"level": "A1",
+"text": {
+"en": "The pizza, please.",
+"it": "La pizza, per favore.",
+"es": "La pizza, por favor.",
+"pt": "A pizza, por favor.",
+"pt_BR": "A pizza, por favor.",
+"fr": "La pizza, s'il vous plaît.",
+"de": "Die Pizza, bitte."
+}
+},
+{
+"id": "ss-restaurant-015",
+"topic": "restaurant",
+"level": "A1",
+"text": {
+"en": "Where is the restroom?",
+"it": "Dov'è il bagno?",
+"es": "¿Dónde está el baño?",
+"pt": "Onde é a casa de banho?",
+"pt_BR": "Onde fica o banheiro?",
+"fr": "Où sont les toilettes ?",
+"de": "Wo ist die Toilette?"
+}
+},
+{
+"id": "ss-restaurant-016",
+"topic": "restaurant",
+"level": "A2",
+"text": {
+"en": "Do you have a table for four people?",
+"it": "Avete un tavolo per quattro persone?",
+"es": "¿Tienen una mesa para cuatro personas?",
+"pt": "Têm uma mesa para quatro pessoas?",
+"pt_BR": "Vocês têm uma mesa para quatro pessoas?",
+"fr": "Avez-vous une table pour quatre personnes ?",
+"de": "Haben Sie einen Tisch für vier Personen?"
+}
+},
+{
+"id": "ss-restaurant-017",
+"topic": "restaurant",
+"level": "A2",
+"text": {
+"en": "What do you recommend?",
+"it": "Cosa ci consiglia?",
+"es": "¿Qué nos recomienda?",
+"pt": "O que nos recomenda?",
+"pt_BR": "O que você recomenda?",
+"fr": "Que nous conseillez-vous ?",
+"de": "Was empfehlen Sie uns?"
+}
+},
+{
+"id": "ss-restaurant-018",
+"topic": "restaurant",
+"level": "A2",
+"text": {
+"en": "Can I see the menu in English, please?",
+"it": "Posso vedere il menù in inglese, per favore?",
+"es": "¿Puedo ver la carta en inglés, por favor?",
+"pt": "Posso ver a ementa em inglês, por favor?",
+"pt_BR": "Posso ver o cardápio em inglês, por favor?",
+"fr": "Puis-je voir la carte en anglais, s'il vous plaît ?",
+"de": "Kann ich bitte die Speisekarte auf Englisch sehen?"
+}
+},
+{
+"id": "ss-restaurant-019",
+"topic": "restaurant",
+"level": "A2",
+"text": {
+"en": "I would like to order the chicken with potatoes.",
+"it": "Vorrei ordinare il pollo con le patate.",
+"es": "Quisiera pedir el pollo con patatas.",
+"pt": "Queria pedir o frango com batatas.",
+"pt_BR": "Eu gostaria de pedir o frango com batatas.",
+"fr": "Je voudrais commander le poulet avec des pommes de terre.",
+"de": "Ich möchte das Hähnchen mit Kartoffeln bestellen."
+}
+},
+{
+"id": "ss-restaurant-020",
+"topic": "restaurant",
+"level": "A2",
+"text": {
+"en": "Does this dish contain nuts?",
+"it": "Questo piatto contiene frutta a guscio?",
+"es": "¿Este plato lleva frutos secos?",
+"pt": "Este prato leva frutos secos?",
+"pt_BR": "Esse prato tem castanhas ou nozes?",
+"fr": "Ce plat contient-il des fruits à coque ?",
+"de": "Enthält dieses Gericht Nüsse?"
+}
+},
+{
+"id": "ss-restaurant-021",
+"topic": "restaurant",
+"level": "A2",
+"text": {
+"en": "Could we have some more water, please?",
+"it": "Potremmo avere ancora un po' d'acqua, per favore?",
+"es": "¿Nos puede traer más agua, por favor?",
+"pt": "Podia trazer-nos mais água, por favor?",
+"pt_BR": "Poderia nos trazer mais água, por favor?",
+"fr": "Pourrions-nous avoir un peu plus d'eau, s'il vous plaît ?",
+"de": "Könnten wir noch etwas Wasser haben, bitte?"
+}
+},
+{
+"id": "ss-restaurant-022",
+"topic": "restaurant",
+"level": "A2",
+"text": {
+"en": "Can we pay separately?",
+"it": "Possiamo pagare separatamente?",
+"es": "¿Podemos pagar por separado?",
+"pt": "Podemos pagar separadamente?",
+"pt_BR": "Podemos pagar separado?",
+"fr": "Pouvons-nous payer séparément ?",
+"de": "Können wir getrennt zahlen?"
+}
+},
+{
+"id": "ss-restaurant-023",
+"topic": "restaurant",
+"level": "A2",
+"text": {
+"en": "Is service included?",
+"it": "Il servizio è incluso?",
+"es": "¿El servicio está incluido?",
+"pt": "O serviço está incluído?",
+"pt_BR": "A taxa de serviço está incluída?",
+"fr": "Le service est-il compris ?",
+"de": "Ist die Bedienung inbegriffen?"
+}
+},
+{
+"id": "ss-restaurant-024",
+"topic": "restaurant",
+"level": "A2",
+"text": {
+"en": "Could you bring us the bill, please?",
+"it": "Ci porta il conto, per favore?",
+"es": "¿Nos trae la cuenta, por favor?",
+"pt": "Pode trazer-nos a conta, por favor?",
+"pt_BR": "Pode trazer a conta, por favor?",
+"fr": "Pouvez-vous nous apporter l'addition, s'il vous plaît ?",
+"de": "Könnten Sie uns bitte die Rechnung bringen?"
+}
+},
+{
+"id": "ss-restaurant-025",
+"topic": "restaurant",
+"level": "A2",
+"text": {
+"en": "I made a reservation under the name Silva.",
+"it": "Ho prenotato a nome Silva.",
+"es": "Hice una reserva a nombre de Silva.",
+"pt": "Fiz uma reserva em nome de Silva.",
+"pt_BR": "Fiz uma reserva no nome de Silva.",
+"fr": "J'ai réservé au nom de Silva.",
+"de": "Ich habe auf den Namen Silva reserviert."
+}
+},
+{
+"id": "ss-restaurant-026",
+"topic": "restaurant",
+"level": "A2",
+"text": {
+"en": "We would like to sit outside, if possible.",
+"it": "Vorremmo sederci fuori, se possibile.",
+"es": "Nos gustaría sentarnos fuera, si es posible.",
+"pt": "Gostaríamos de nos sentar lá fora, se possível.",
+"pt_BR": "Gostaríamos de sentar do lado de fora, se possível.",
+"fr": "Nous aimerions nous asseoir dehors, si possible.",
+"de": "Wir würden gern draußen sitzen, wenn möglich."
+}
+},
+{
+"id": "ss-restaurant-027",
+"topic": "restaurant",
+"level": "A2",
+"text": {
+"en": "This is not what I ordered.",
+"it": "Non è quello che ho ordinato.",
+"es": "Esto no es lo que pedí.",
+"pt": "Isto não é o que eu pedi.",
+"pt_BR": "Isso não é o que eu pedi.",
+"fr": "Ce n'est pas ce que j'ai commandé.",
+"de": "Das habe ich nicht bestellt."
+}
+},
+{
+"id": "ss-restaurant-028",
+"topic": "restaurant",
+"level": "A2",
+"text": {
+"en": "Is there a vegetarian option?",
+"it": "C'è un'opzione vegetariana?",
+"es": "¿Hay alguna opción vegetariana?",
+"pt": "Há alguma opção vegetariana?",
+"pt_BR": "Tem alguma opção vegetariana?",
+"fr": "Y a-t-il une option végétarienne ?",
+"de": "Gibt es eine vegetarische Option?"
+}
+},
+{
+"id": "ss-restaurant-029",
+"topic": "restaurant",
+"level": "A2",
+"text": {
+"en": "What is today's special?",
+"it": "Qual è il piatto del giorno?",
+"es": "¿Cuál es el plato del día?",
+"pt": "Qual é o prato do dia?",
+"pt_BR": "Qual é o prato do dia?",
+"fr": "Quel est le plat du jour ?",
+"de": "Was ist das Tagesgericht?"
+}
+},
+{
+"id": "ss-restaurant-030",
+"topic": "restaurant",
+"level": "A2",
+"text": {
+"en": "Let's meet at the restaurant at seven.",
+"it": "Ci vediamo al ristorante alle sette.",
+"es": "Quedamos en el restaurante a las siete.",
+"pt": "Encontramo-nos no restaurante às sete.",
+"pt_BR": "Vamos nos encontrar no restaurante às sete.",
+"fr": "Retrouvons-nous au restaurant à sept heures.",
+"de": "Treffen wir uns um sieben im Restaurant."
+}
+},
+{
+"id": "ss-restaurant-031",
+"topic": "restaurant",
+"level": "B1",
+"text": {
+"en": "Could you tell me what is in this dish? I have a food allergy.",
+"it": "Può dirmi cosa c'è in questo piatto? Ho un'allergia alimentare.",
+"es": "¿Puede decirme qué lleva este plato? Tengo una alergia alimentaria.",
+"pt": "Pode dizer-me o que leva este prato? Tenho uma alergia alimentar.",
+"pt_BR": "O senhor pode me dizer o que tem nesse prato? Tenho alergia alimentar.",
+"fr": "Pouvez-vous me dire ce que contient ce plat ? J'ai une allergie alimentaire.",
+"de": "Können Sie mir sagen, was in diesem Gericht enthalten ist? Ich habe eine Lebensmittelallergie."
+}
+},
+{
+"id": "ss-restaurant-032",
+"topic": "restaurant",
+"level": "B1",
+"text": {
+"en": "We're still deciding. Could you give us a few more minutes?",
+"it": "Stiamo ancora decidendo. Può darci ancora qualche minuto?",
+"es": "Todavía estamos decidiendo. ¿Nos da unos minutos más?",
+"pt": "Ainda estamos a decidir. Pode dar-nos mais uns minutos?",
+"pt_BR": "Ainda estamos decidindo. Pode nos dar mais alguns minutos?",
+"fr": "Nous hésitons encore. Pourriez-vous nous laisser quelques minutes de plus ?",
+"de": "Wir überlegen noch. Könnten Sie uns noch ein paar Minuten geben?"
+}
+},
+{
+"id": "ss-restaurant-033",
+"topic": "restaurant",
+"level": "B1",
+"text": {
+"en": "Would it be possible to change the side dish to a salad?",
+"it": "Sarebbe possibile sostituire il contorno con un'insalata?",
+"es": "¿Sería posible cambiar la guarnición por una ensalada?",
+"pt": "Seria possível trocar o acompanhamento por uma salada?",
+"pt_BR": "Seria possível trocar o acompanhamento por uma salada?",
+"fr": "Serait-il possible de remplacer l'accompagnement par une salade ?",
+"de": "Wäre es möglich, die Beilage durch einen Salat zu ersetzen?"
+}
+},
+{
+"id": "ss-restaurant-034",
+"topic": "restaurant",
+"level": "B1",
+"text": {
+"en": "I'd like my steak medium, please.",
+"it": "Vorrei la bistecca cotta a puntino, per favore.",
+"es": "Quisiera el filete a punto, por favor.",
+"pt": "Queria o bife no ponto, por favor.",
+"pt_BR": "Eu queria o bife ao ponto, por favor.",
+"fr": "Je voudrais mon steak à point, s'il vous plaît.",
+"de": "Ich hätte mein Steak gern medium, bitte."
+}
+},
+{
+"id": "ss-restaurant-035",
+"topic": "restaurant",
+"level": "B1",
+"text": {
+"en": "Excuse me, our food is taking a long time. Could you check on it?",
+"it": "Scusi, il nostro piatto sta tardando. Può controllare, per favore?",
+"es": "Disculpe, nuestra comida está tardando mucho. ¿Podría comprobarlo?",
+"pt": "Com licença, a nossa comida está a demorar. Pode verificar, por favor?",
+"pt_BR": "Com licença, nossa comida está demorando. O senhor pode verificar, por favor?",
+"fr": "Excusez-moi, notre plat tarde beaucoup. Pourriez-vous vérifier ?",
+"de": "Entschuldigung, unser Essen dauert recht lange. Könnten Sie bitte nachfragen?"
+}
+},
+{
+"id": "ss-restaurant-036",
+"topic": "restaurant",
+"level": "B1",
+"text": {
+"en": "Is there a restaurant around here that serves local specialties?",
+"it": "C'è qui intorno un ristorante che serve specialità locali?",
+"es": "¿Hay por aquí algún restaurante que sirva especialidades locales?",
+"pt": "Há por aqui algum restaurante que sirva especialidades locais?",
+"pt_BR": "Tem por aqui algum restaurante que sirva especialidades locais?",
+"fr": "Y a-t-il un restaurant par ici qui sert des spécialités locales ?",
+"de": "Gibt es hier in der Nähe ein Restaurant mit regionalen Spezialitäten?"
+}
+},
+{
+"id": "ss-restaurant-037",
+"topic": "restaurant",
+"level": "B1",
+"text": {
+"en": "The dish is a bit cold. Could you warm it up, please?",
+"it": "Il piatto è un po' freddo. Può riscaldarlo, per favore?",
+"es": "El plato está un poco frío. ¿Podría calentarlo, por favor?",
+"pt": "O prato está um pouco frio. Pode aquecê-lo, por favor?",
+"pt_BR": "O prato está um pouco frio. Pode esquentar, por favor?",
+"fr": "Le plat est un peu froid. Pourriez-vous le réchauffer, s'il vous plaît ?",
+"de": "Das Gericht ist etwas kalt. Könnten Sie es bitte aufwärmen?"
+}
+},
+{
+"id": "ss-restaurant-038",
+"topic": "restaurant",
+"level": "B1",
+"text": {
+"en": "Let's share a few starters and then order the mains.",
+"it": "Dividiamoci un po' di antipasti e poi ordiniamo i secondi.",
+"es": "Compartamos unos entrantes y luego pedimos los platos principales.",
+"pt": "Vamos partilhar algumas entradas e depois pedimos os pratos principais.",
+"pt_BR": "Vamos dividir algumas entradas e depois pedimos os pratos principais.",
+"fr": "Partageons quelques entrées, puis nous commanderons les plats.",
+"de": "Lass uns ein paar Vorspeisen teilen und danach die Hauptgerichte bestellen."
+}
+},
+{
+"id": "ss-restaurant-039",
+"topic": "restaurant",
+"level": "B1",
+"text": {
+"en": "Would you mind taking a photo of us before the food arrives?",
+"it": "Le dispiacerebbe farci una foto prima che arrivi il cibo?",
+"es": "¿Le importaría hacernos una foto antes de que llegue la comida?",
+"pt": "Importava-se de nos tirar uma fotografia antes de a comida chegar?",
+"pt_BR": "O senhor se importaria de tirar uma foto da gente antes de a comida chegar?",
+"fr": "Pourriez-vous nous prendre en photo avant l'arrivée des plats ?",
+"de": "Würden Sie ein Foto von uns machen, bevor das Essen kommt?"
+}
+},
+{
+"id": "ss-restaurant-040",
+"topic": "restaurant",
+"level": "B1",
+"text": {
+"en": "Do you accept credit cards, or should I pay in cash?",
+"it": "Accettate carte di credito o devo pagare in contanti?",
+"es": "¿Aceptan tarjeta de crédito o tengo que pagar en efectivo?",
+"pt": "Aceitam cartão de crédito ou tenho de pagar em dinheiro?",
+"pt_BR": "Vocês aceitam cartão de crédito ou preciso pagar em dinheiro?",
+"fr": "Acceptez-vous les cartes bancaires, ou dois-je payer en espèces ?",
+"de": "Akzeptieren Sie Kreditkarten, oder muss ich bar bezahlen?"
+}
+},
+{
+"id": "ss-restaurant-041",
+"topic": "restaurant",
+"level": "B1",
+"text": {
+"en": "Could you recommend a dessert that isn't too heavy?",
+"it": "Può consigliarmi un dolce non troppo pesante?",
+"es": "¿Podría recomendarme un postre que no sea demasiado pesado?",
+"pt": "Pode recomendar-me uma sobremesa que não seja muito pesada?",
+"pt_BR": "Pode me recomendar uma sobremesa que não seja muito pesada?",
+"fr": "Pourriez-vous me conseiller un dessert pas trop lourd ?",
+"de": "Können Sie mir ein Dessert empfehlen, das nicht zu schwer ist?"
+}
+},
+{
+"id": "ss-restaurant-042",
+"topic": "restaurant",
+"level": "B1",
+"text": {
+"en": "We booked a table for eight o'clock, but we arrived a little early.",
+"it": "Avevamo prenotato un tavolo per le otto, ma siamo arrivati un po' in anticipo.",
+"es": "Habíamos reservado una mesa para las ocho, pero hemos llegado un poco pronto.",
+"pt": "Reservámos uma mesa para as oito, mas chegámos um pouco mais cedo.",
+"pt_BR": "Reservamos uma mesa para as oito, mas chegamos um pouco cedo.",
+"fr": "Nous avions réservé une table pour vingt heures, mais nous sommes arrivés un peu en avance.",
+"de": "Wir haben einen Tisch für acht Uhr reserviert, sind aber etwas früher gekommen."
+}
+},
+{
+"id": "ss-restaurant-043",
+"topic": "restaurant",
+"level": "B2",
+"text": {
+"en": "I'd like to make a reservation for six people on Saturday evening, preferably near a window.",
+"it": "Vorrei prenotare un tavolo per sei persone sabato sera, possibilmente vicino a una finestra.",
+"es": "Quisiera reservar una mesa para seis personas el sábado por la noche, preferiblemente junto a una ventana.",
+"pt": "Gostaria de reservar uma mesa para seis pessoas no sábado à noite, de preferência junto a uma janela.",
+"pt_BR": "Gostaria de reservar uma mesa para seis pessoas no sábado à noite, de preferência perto de uma janela.",
+"fr": "Je voudrais réserver une table pour six personnes samedi soir, de préférence près d'une fenêtre.",
+"de": "Ich möchte für Samstagabend einen Tisch für sechs Personen reservieren, am liebsten am Fenster."
+}
+},
+{
+"id": "ss-restaurant-044",
+"topic": "restaurant",
+"level": "B2",
+"text": {
+"en": "Everything was excellent, and the staff were incredibly attentive. We'll definitely come back.",
+"it": "Era tutto eccellente e il personale è stato attentissimo. Torneremo sicuramente.",
+"es": "Todo estuvo excelente y el personal fue muy atento. Sin duda volveremos.",
+"pt": "Estava tudo excelente e o pessoal foi extremamente atencioso. Voltaremos de certeza.",
+"pt_BR": "Estava tudo excelente e a equipe foi extremamente atenciosa. Com certeza voltaremos.",
+"fr": "Tout était excellent et le personnel a été d'une grande attention. Nous reviendrons certainement.",
+"de": "Alles war ausgezeichnet, und das Personal war unglaublich aufmerksam. Wir kommen bestimmt wieder."
+}
+},
+{
+"id": "ss-restaurant-045",
+"topic": "restaurant",
+"level": "B2",
+"text": {
+"en": "I'm afraid there's a mistake on the bill. We were charged for a dish we didn't order.",
+"it": "Mi sa che c'è un errore nel conto. Ci è stato addebitato un piatto che non abbiamo ordinato.",
+"es": "Me temo que hay un error en la cuenta. Nos han cobrado un plato que no pedimos.",
+"pt": "Parece-me que há um erro na conta. Cobraram-nos um prato que não pedimos.",
+"pt_BR": "Acho que há um erro na conta. Cobraram um prato que a gente não pediu.",
+"fr": "Je crains qu'il y ait une erreur sur l'addition. On nous a facturé un plat que nous n'avons pas commandé.",
+"de": "Ich fürchte, auf der Rechnung ist ein Fehler. Man hat uns ein Gericht berechnet, das wir nicht bestellt haben."
+}
+},
+{
+"id": "ss-restaurant-046",
+"topic": "restaurant",
+"level": "B2",
+"text": {
+"en": "Since I have a gluten intolerance, could you make sure the kitchen avoids cross-contamination?",
+"it": "Siccome sono intollerante al glutine, può assicurarsi che la cucina eviti la contaminazione crociata?",
+"es": "Como soy intolerante al gluten, ¿podría asegurarse de que en la cocina eviten la contaminación cruzada?",
+"pt": "Como sou intolerante ao glúten, pode garantir que a cozinha evita a contaminação cruzada?",
+"pt_BR": "Como sou intolerante a glúten, o senhor pode garantir que a cozinha evite a contaminação cruzada?",
+"fr": "Comme je suis intolérant au gluten, pourriez-vous veiller à ce que la cuisine évite la contamination croisée ?",
+"de": "Da ich eine Glutenunverträglichkeit habe, könnten Sie bitte sicherstellen, dass die Küche Kreuzkontamination vermeidet?"
+}
+},
+{
+"id": "ss-restaurant-047",
+"topic": "restaurant",
+"level": "B2",
+"text": {
+"en": "Could you explain how this regional dish is traditionally prepared before I decide?",
+"it": "Può spiegarmi come si prepara tradizionalmente questo piatto regionale, prima che io scelga?",
+"es": "¿Podría explicarme cómo se prepara tradicionalmente este plato regional antes de que decida?",
+"pt": "Pode explicar-me como se prepara tradicionalmente este prato regional antes de eu decidir?",
+"pt_BR": "O senhor poderia me explicar como esse prato regional é preparado tradicionalmente antes de eu decidir?",
+"fr": "Pourriez-vous m'expliquer comment ce plat régional est préparé traditionnellement avant que je me décide ?",
+"de": "Könnten Sie mir erklären, wie dieses regionale Gericht traditionell zubereitet wird, bevor ich mich entscheide?"
+}
+},
+{
+"id": "ss-restaurant-048",
+"topic": "restaurant",
+"level": "B2",
+"text": {
+"en": "We had a lovely evening; please pass our compliments to the chef.",
+"it": "Abbiamo passato una serata splendida; porga i nostri complimenti allo chef.",
+"es": "Hemos pasado una noche encantadora; por favor, transmita nuestras felicitaciones al chef.",
+"pt": "Tivemos uma noite encantadora; por favor, transmita os nossos cumprimentos ao chefe de cozinha.",
+"pt_BR": "Tivemos uma noite encantadora; por favor, passe nossos cumprimentos ao chef.",
+"fr": "Nous avons passé une très belle soirée ; transmettez nos compliments au chef, s'il vous plaît.",
+"de": "Wir hatten einen wunderbaren Abend; bitte richten Sie dem Küchenchef unser Kompliment aus."
+}
+},
+{
+"id": "ss-restaurant-049",
+"topic": "restaurant",
+"level": "B2",
+"text": {
+"en": "If the place is fully booked, we wouldn't mind waiting at the bar for a table to free up.",
+"it": "Se il locale è al completo, non ci dispiace aspettare al bancone che si liberi un tavolo.",
+"es": "Si el local está completo, no nos importa esperar en la barra a que se libere una mesa.",
+"pt": "Se o restaurante estiver cheio, não nos importamos de esperar ao balcão até vagar uma mesa.",
+"pt_BR": "Se o restaurante estiver lotado, a gente não se importa de esperar no balcão até vagar uma mesa.",
+"fr": "Si l'établissement est complet, cela ne nous dérange pas d'attendre au bar qu'une table se libère.",
+"de": "Falls das Lokal ausgebucht ist, warten wir gern an der Bar, bis ein Tisch frei wird."
+}
+},
+{
+"id": "ss-restaurant-050",
+"topic": "restaurant",
+"level": "B2",
+"text": {
+"en": "I'd like to try something I've never had before, so surprise me with whatever the chef suggests.",
+"it": "Vorrei provare qualcosa che non ho mai assaggiato, quindi mi sorprenda con ciò che suggerisce lo chef.",
+"es": "Me gustaría probar algo que nunca haya comido, así que sorpréndame con lo que sugiera el chef.",
+"pt": "Gostaria de provar algo que nunca comi, por isso surpreenda-me com o que o chefe sugerir.",
+"pt_BR": "Gostaria de provar algo que nunca comi, então me surpreenda com o que o chef sugerir.",
+"fr": "J'aimerais goûter quelque chose de nouveau, alors surprenez-moi avec ce que propose le chef.",
+"de": "Ich möchte etwas probieren, das ich noch nie gegessen habe, also überraschen Sie mich mit dem, was der Küchenchef vorschlägt."
+}
+}
+]

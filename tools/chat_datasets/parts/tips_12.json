@@ -1,0 +1,1178 @@
+{
+ "HU": [
+  {
+   "id": "ct-HU-01",
+   "category": "greetings",
+   "text": {
+    "en": "A handshake is the usual greeting. Among friends, 'Szia' works for both hello and goodbye, while 'Jó napot kívánok' is the polite choice with strangers and elders.",
+    "it": "La stretta di mano è il saluto abituale. Tra amici 'Szia' vale sia per ciao sia per arrivederci, mentre 'Jó napot kívánok' è la scelta educata con sconosciuti e anziani.",
+    "es": "Lo habitual es dar la mano. Entre amigos, 'Szia' sirve para hola y adiós, y 'Jó napot kívánok' es la fórmula cortés con desconocidos y mayores.",
+    "pt": "O cumprimento habitual é o aperto de mão. Entre amigos, 'Szia' serve para olá e adeus, e 'Jó napot kívánok' é a forma educada com desconhecidos e pessoas mais velhas.",
+    "pt_BR": "O cumprimento habitual é o aperto de mão. Entre amigos, 'Szia' serve para oi e tchau, e 'Jó napot kívánok' é a forma educada com desconhecidos e pessoas mais velhas.",
+    "fr": "On se serre généralement la main. Entre amis, 'Szia' signifie à la fois salut et au revoir, tandis que 'Jó napot kívánok' est la formule polie avec les inconnus et les aînés.",
+    "de": "Üblich ist ein Händedruck. Unter Freunden passt 'Szia' für Hallo und Tschüss, 'Jó napot kívánok' ist die höfliche Form für Fremde und ältere Menschen."
+   }
+  },
+  {
+   "id": "ct-HU-02",
+   "category": "greetings",
+   "text": {
+    "en": "In Hungarian, the family name comes first and the given name second, so Kovács Anna is Anna Kovács. Ask how someone prefers to be addressed if you are unsure.",
+    "it": "In ungherese il cognome viene prima del nome: Kovács Anna è Anna Kovács. Se hai dubbi, chiedi come preferisce essere chiamata la persona.",
+    "es": "En húngaro el apellido va antes del nombre, así que Kovács Anna es Anna Kovács. Si tienes dudas, pregunta cómo prefiere que le llamen.",
+    "pt": "Em húngaro o apelido vem antes do nome próprio, por isso Kovács Anna é Anna Kovács. Se tiveres dúvidas, pergunta como a pessoa prefere ser tratada.",
+    "pt_BR": "Em húngaro o sobrenome vem antes do nome, então Kovács Anna é Anna Kovács. Se tiver dúvida, pergunte como a pessoa prefere ser chamada.",
+    "fr": "En hongrois, le nom de famille précède le prénom : Kovács Anna est donc Anna Kovács. Si vous hésitez, demandez comment la personne préfère être appelée.",
+    "de": "Im Ungarischen steht der Familienname vor dem Vornamen, Kovács Anna ist also Anna Kovács. Frag im Zweifel nach, wie die Person angesprochen werden möchte."
+   }
+  },
+  {
+   "id": "ct-HU-03",
+   "category": "conversation",
+   "text": {
+    "en": "Hungarian is unrelated to the neighbouring Slavic, Germanic and Romance languages, so it is very hard for visitors. Even a simple 'köszönöm' (thank you) is warmly appreciated.",
+    "it": "L'ungherese non è imparentato con le lingue slave, germaniche e romanze vicine, quindi è molto difficile per chi arriva. Anche un semplice 'köszönöm' (grazie) è molto apprezzato.",
+    "es": "El húngaro no tiene parentesco con las lenguas eslavas, germánicas y románicas vecinas, así que es muy difícil para los visitantes. Un simple 'köszönöm' (gracias) se agradece mucho.",
+    "pt": "O húngaro não tem parentesco com as línguas eslavas, germânicas e românicas vizinhas, por isso é muito difícil para quem visita. Até um simples 'köszönöm' (obrigado) é muito apreciado.",
+    "pt_BR": "O húngaro não tem parentesco com as línguas eslavas, germânicas e românicas vizinhas, então é muito difícil para quem visita. Até um simples 'köszönöm' (obrigado) é muito apreciado.",
+    "fr": "Le hongrois n'a aucun lien avec les langues slaves, germaniques et romanes voisines, il est donc très difficile pour les visiteurs. Un simple 'köszönöm' (merci) est très apprécié.",
+    "de": "Ungarisch ist mit den benachbarten slawischen, germanischen und romanischen Sprachen nicht verwandt und für Besucher daher sehr schwer. Schon ein einfaches 'köszönöm' (danke) kommt gut an."
+   }
+  },
+  {
+   "id": "ct-HU-04",
+   "category": "conversation",
+   "text": {
+    "en": "Food, thermal baths, music and local history are friendly topics to start a conversation. Many Hungarians enjoy explaining their traditions to curious visitors.",
+    "it": "Cibo, bagni termali, musica e storia locale sono argomenti ideali per iniziare una conversazione. A molti ungheresi piace spiegare le proprie tradizioni a chi è curioso.",
+    "es": "La comida, los baños termales, la música y la historia local son buenos temas para empezar a charlar. A muchos húngaros les gusta explicar sus tradiciones a los visitantes curiosos.",
+    "pt": "A comida, as termas, a música e a história local são bons temas para começar a conversa. Muitos húngaros gostam de explicar as suas tradições a quem tem curiosidade.",
+    "pt_BR": "A comida, as termas, a música e a história local são bons assuntos para começar a conversa. Muitos húngaros gostam de explicar suas tradições para quem tem curiosidade.",
+    "fr": "La cuisine, les bains thermaux, la musique et l'histoire locale sont de bons sujets pour engager la conversation. Beaucoup de Hongrois aiment expliquer leurs traditions aux visiteurs curieux.",
+    "de": "Essen, Thermalbäder, Musik und lokale Geschichte sind gute Gesprächsthemen. Viele Ungarn erklären neugierigen Besuchern gern ihre Traditionen."
+   }
+  },
+  {
+   "id": "ct-HU-05",
+   "category": "dining",
+   "text": {
+    "en": "Goulash (gulyás) is traditionally a soup or stew of meat and vegetables, not the thick dish served abroad. Paprika, a Hungarian staple, flavours many classic dishes.",
+    "it": "Il gulasch (gulyás) è tradizionalmente una zuppa o uno stufato di carne e verdure, non il piatto denso servito all'estero. La paprika, tipica ungherese, insaporisce molti piatti classici.",
+    "es": "El gulash (gulyás) es tradicionalmente una sopa o un guiso de carne y verduras, no el plato espeso que se sirve en el extranjero. El pimentón, básico en Hungría, da sabor a muchos platos clásicos.",
+    "pt": "O goulash (gulyás) é tradicionalmente uma sopa ou estufado de carne e legumes, e não o prato espesso servido no estrangeiro. O colorau húngaro (paprika) dá sabor a muitos pratos clássicos.",
+    "pt_BR": "O goulash (gulyás) é tradicionalmente uma sopa ou ensopado de carne e legumes, e não o prato grosso servido no exterior. A páprica, típica da Hungria, dá sabor a muitos pratos clássicos.",
+    "fr": "Le goulasch (gulyás) est traditionnellement une soupe ou un ragoût de viande et de légumes, pas le plat épais servi à l'étranger. Le paprika, incontournable en Hongrie, parfume de nombreux plats classiques.",
+    "de": "Gulasch (gulyás) ist traditionell eine Suppe oder ein Eintopf aus Fleisch und Gemüse, nicht das dicke Gericht, das man im Ausland kennt. Paprika würzt viele klassische ungarische Gerichte."
+   }
+  },
+  {
+   "id": "ct-HU-06",
+   "category": "dining",
+   "text": {
+    "en": "Some Hungarians avoid clinking beer glasses, a custom linked to 1849 history. With wine or pálinka, clinking and saying 'Egészségedre!' (to your health) is perfectly normal.",
+    "it": "Alcuni ungheresi evitano di far tintinnare i boccali di birra, un'usanza legata alla storia del 1849. Con vino o pálinka brindare dicendo 'Egészségedre!' (alla tua salute) è del tutto normale.",
+    "es": "Algunos húngaros evitan chocar las jarras de cerveza, una costumbre ligada a la historia de 1849. Con vino o pálinka, brindar diciendo '¡Egészségedre!' (¡por tu salud!) es totalmente normal.",
+    "pt": "Alguns húngaros evitam brindar com canecas de cerveja, um costume ligado à história de 1849. Com vinho ou pálinka, brindar dizendo 'Egészségedre!' (à tua saúde) é perfeitamente normal.",
+    "pt_BR": "Alguns húngaros evitam brindar com canecas de cerveja, um costume ligado à história de 1849. Com vinho ou pálinka, brindar dizendo 'Egészségedre!' (à sua saúde) é perfeitamente normal.",
+    "fr": "Certains Hongrois évitent de trinquer avec des chopes de bière, une coutume liée à l'histoire de 1849. Avec du vin ou de la pálinka, trinquer en disant 'Egészségedre !' (à ta santé) est tout à fait normal.",
+    "de": "Manche Ungarn stoßen nicht mit Bierkrügen an, ein Brauch, der mit der Geschichte von 1849 zusammenhängt. Mit Wein oder Pálinka ist Anstoßen mit 'Egészségedre!' (auf dein Wohl) völlig normal."
+   }
+  },
+  {
+   "id": "ct-HU-07",
+   "category": "dining",
+   "text": {
+    "en": "Pálinka is a fruit brandy, often apricot or plum, usually sipped slowly from small glasses. Nobody should feel pressured to drink it, and a polite refusal is fine.",
+    "it": "La pálinka è un distillato di frutta, spesso di albicocca o prugna, di solito sorseggiato lentamente da bicchierini. Nessuno deve sentirsi obbligato a berla, e un rifiuto gentile va benissimo.",
+    "es": "La pálinka es un aguardiente de fruta, a menudo de albaricoque o ciruela, que se bebe a sorbos en vasitos pequeños. Nadie debe sentirse presionado a beberla y rechazarla con educación es aceptable.",
+    "pt": "A pálinka é uma aguardente de fruta, muitas vezes de alperce ou ameixa, normalmente bebida devagar em copos pequenos. Ninguém deve sentir-se pressionado a bebê-la e recusar com educação é perfeitamente aceitável.",
+    "pt_BR": "A pálinka é uma aguardente de fruta, muitas vezes de damasco ou ameixa, normalmente bebida devagar em copinhos. Ninguém deve se sentir pressionado a beber, e recusar com educação é perfeitamente aceitável.",
+    "fr": "La pálinka est une eau-de-vie de fruits, souvent d'abricot ou de prune, que l'on déguste lentement dans de petits verres. Personne ne doit se sentir obligé d'en boire, et un refus poli est tout à fait acceptable.",
+    "de": "Pálinka ist ein Obstbrand, oft aus Aprikosen oder Pflaumen, der meist langsam aus kleinen Gläsern getrunken wird. Niemand muss sich zum Trinken gedrängt fühlen, ein höfliches Nein ist völlig in Ordnung."
+   }
+  },
+  {
+   "id": "ct-HU-08",
+   "category": "tipping",
+   "text": {
+    "en": "Many Hungarian restaurants add a service charge of around 10 to 15 percent to the bill. Check the receipt first, and if it is not included, about 10 percent is customary.",
+    "it": "Molti ristoranti ungheresi aggiungono al conto un servizio del 10-15 per cento circa. Controlla prima lo scontrino: se non è incluso, circa il 10 per cento è la consuetudine.",
+    "es": "Muchos restaurantes húngaros añaden al total un cargo por servicio de alrededor del 10 al 15 por ciento. Mira primero la cuenta; si no está incluido, lo habitual es dejar un 10 por ciento.",
+    "pt": "Muitos restaurantes húngaros acrescentam à conta uma taxa de serviço de cerca de 10 a 15 por cento. Vê primeiro o talão; se não estiver incluída, o costume é deixar cerca de 10 por cento.",
+    "pt_BR": "Muitos restaurantes húngaros acrescentam à conta uma taxa de serviço de cerca de 10 a 15 por cento. Veja primeiro a nota; se não estiver incluída, o costume é deixar cerca de 10 por cento.",
+    "fr": "Beaucoup de restaurants hongrois ajoutent à l'addition un service d'environ 10 à 15 pour cent. Vérifiez d'abord le ticket ; s'il n'est pas inclus, laisser environ 10 pour cent est d'usage.",
+    "de": "Viele ungarische Restaurants setzen eine Servicegebühr von etwa 10 bis 15 Prozent auf die Rechnung. Schau erst auf den Beleg; ist sie nicht enthalten, sind rund 10 Prozent Trinkgeld üblich."
+   }
+  },
+  {
+   "id": "ct-HU-09",
+   "category": "tipping",
+   "text": {
+    "en": "When paying the waiter in person, it is common to say the total you want to pay including the tip, rather than leaving coins on the table.",
+    "it": "Quando si paga di persona al cameriere, è comune dire l'importo totale che si vuole pagare, mancia compresa, invece di lasciare monete sul tavolo.",
+    "es": "Al pagar en persona al camarero, es habitual decir la cantidad total que quieres pagar, propina incluida, en lugar de dejar monedas en la mesa.",
+    "pt": "Ao pagar ao empregado, é comum dizer o valor total que se quer pagar, gorjeta incluída, em vez de deixar moedas em cima da mesa.",
+    "pt_BR": "Ao pagar ao garçom pessoalmente, é comum dizer o valor total que você quer pagar, gorjeta incluída, em vez de deixar moedas na mesa.",
+    "fr": "Lorsqu'on paie le serveur en personne, il est courant de lui annoncer la somme totale que l'on souhaite régler, pourboire compris, plutôt que de laisser des pièces sur la table.",
+    "de": "Wenn du direkt beim Kellner zahlst, nennst du üblicherweise den Gesamtbetrag samt Trinkgeld, statt Münzen auf dem Tisch zu lassen."
+   }
+  },
+  {
+   "id": "ct-HU-10",
+   "category": "gifts",
+   "text": {
+    "en": "If you are invited to a Hungarian home, bring flowers, chocolates or a bottle of good wine for the host. A small thoughtful gift from your own country is also welcome.",
+    "it": "Se sei invitato in una casa ungherese, porta fiori, cioccolatini o una bottiglia di buon vino per chi ti ospita. Anche un piccolo pensiero dal tuo paese è gradito.",
+    "es": "Si te invitan a una casa húngara, lleva flores, bombones o una botella de buen vino para quien te recibe. Un pequeño detalle de tu país también se agradece.",
+    "pt": "Se fores convidado para casa de húngaros, leva flores, chocolates ou uma garrafa de bom vinho para o anfitrião. Uma pequena lembrança do teu país também é bem-vinda.",
+    "pt_BR": "Se você for convidado para a casa de húngaros, leve flores, chocolates ou uma garrafa de bom vinho para o anfitrião. Uma lembrancinha do seu país também é bem-vinda.",
+    "fr": "Si vous êtes invité chez des Hongrois, apportez des fleurs, des chocolats ou une bonne bouteille de vin à votre hôte. Un petit présent de votre pays est aussi le bienvenu.",
+    "de": "Bist du in ein ungarisches Zuhause eingeladen, bring Blumen, Pralinen oder eine Flasche guten Wein mit. Auch ein kleines Mitbringsel aus deiner Heimat kommt gut an."
+   }
+  },
+  {
+   "id": "ct-HU-11",
+   "category": "dress",
+   "text": {
+    "en": "Dress is smart casual in cities. For thermal baths, bring swimwear, a towel and slippers, and note that some pools require a swimming cap for lap swimming.",
+    "it": "In città l'abbigliamento è smart casual. Per i bagni termali porta costume, asciugamano e ciabatte, e ricorda che in alcune piscine serve la cuffia per nuotare le vasche.",
+    "es": "En las ciudades se viste de manera informal elegante. Para los baños termales, lleva bañador, toalla y chanclas, y ten en cuenta que algunas piscinas exigen gorro para nadar largos.",
+    "pt": "Nas cidades veste-se de forma informal elegante. Para as termas, leva fato de banho, toalha e chinelos, e lembra-te de que algumas piscinas exigem touca para nadar.",
+    "pt_BR": "Nas cidades se veste de forma casual elegante. Para as termas, leve roupa de banho, toalha e chinelo, e lembre que algumas piscinas exigem touca para nadar.",
+    "fr": "En ville, la tenue est décontractée mais soignée. Pour les bains thermaux, prenez maillot, serviette et claquettes, et sachez que certaines piscines exigent un bonnet pour nager des longueurs.",
+    "de": "In Städten kleidet man sich leger-elegant. Für Thermalbäder brauchst du Badekleidung, Handtuch und Badeschlappen; in manchen Schwimmbädern ist zum Bahnenschwimmen eine Badekappe Pflicht."
+   }
+  },
+  {
+   "id": "ct-HU-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "Budapest's Dohány Street Synagogue is the largest in Europe, and Esztergom Basilica is among the biggest churches. Cover shoulders and knees, keep quiet and follow the posted rules.",
+    "it": "La Sinagoga di Dohány Street a Budapest è la più grande d'Europa e la Basilica di Esztergom è tra le chiese più grandi. Copri spalle e ginocchia, mantieni il silenzio e rispetta le regole indicate.",
+    "es": "La sinagoga de la calle Dohány, en Budapest, es la más grande de Europa, y la basílica de Esztergom es una de las iglesias mayores. Cubre hombros y rodillas, guarda silencio y sigue las normas indicadas.",
+    "pt": "A Sinagoga da Rua Dohány, em Budapeste, é a maior da Europa, e a Basílica de Esztergom é uma das maiores igrejas. Cobre ombros e joelhos, mantém o silêncio e segue as regras afixadas.",
+    "pt_BR": "A Sinagoga da Rua Dohány, em Budapeste, é a maior da Europa, e a Basílica de Esztergom é uma das maiores igrejas. Cubra ombros e joelhos, mantenha silêncio e siga as regras indicadas.",
+    "fr": "La synagogue de la rue Dohány à Budapest est la plus grande d'Europe, et la basilique d'Esztergom compte parmi les plus grandes églises. Couvrez épaules et genoux, restez silencieux et suivez les consignes.",
+    "de": "Die Synagoge in der Dohány-Straße in Budapest ist die größte Europas, die Basilika von Esztergom gehört zu den größten Kirchen. Bedecke Schultern und Knie, sei leise und beachte die Hinweise."
+   }
+  },
+  {
+   "id": "ct-HU-13",
+   "category": "gestures",
+   "text": {
+    "en": "Close friends often greet each other with a kiss on each cheek, but wait for the other person to lead. With new acquaintances, a handshake and eye contact are safest.",
+    "it": "Gli amici stretti spesso si salutano con un bacio su ogni guancia, ma aspetta che sia l'altra persona a iniziare. Con le nuove conoscenze, stretta di mano e contatto visivo sono la scelta più sicura.",
+    "es": "Los amigos cercanos suelen saludarse con un beso en cada mejilla, pero espera a que la otra persona dé el primer paso. Con conocidos nuevos, lo más seguro es un apretón de manos y contacto visual.",
+    "pt": "Os amigos próximos costumam cumprimentar-se com um beijo em cada face, mas espera que a outra pessoa tome a iniciativa. Com pessoas novas, o aperto de mão e o contacto visual são o mais seguro.",
+    "pt_BR": "Amigos próximos costumam se cumprimentar com um beijo em cada bochecha, mas espere a outra pessoa tomar a iniciativa. Com pessoas novas, aperto de mão e contato visual são o mais seguro.",
+    "fr": "Les amis proches se saluent souvent d'un baiser sur chaque joue, mais attendez que l'autre personne en prenne l'initiative. Avec de nouvelles connaissances, poignée de main et contact visuel sont le plus sûr.",
+    "de": "Enge Freunde begrüßen sich oft mit einem Kuss auf jede Wange, aber warte, bis die andere Person den ersten Schritt macht. Bei neuen Bekanntschaften sind Händedruck und Blickkontakt am sichersten."
+   }
+  },
+  {
+   "id": "ct-HU-14",
+   "category": "punctuality",
+   "text": {
+    "en": "Arriving on time is appreciated for work, appointments and tours. If you are running late, send a short message; at private visits a few minutes' delay is usually fine.",
+    "it": "Arrivare in orario è apprezzato per lavoro, appuntamenti e visite guidate. Se fai tardi, manda un breve messaggio; nelle visite private qualche minuto di ritardo di solito non è un problema.",
+    "es": "Se aprecia llegar puntual al trabajo, a las citas y a las visitas guiadas. Si vas a llegar tarde, avisa con un mensaje breve; en visitas privadas unos minutos de retraso suelen estar bien.",
+    "pt": "Chegar a horas é apreciado no trabalho, em marcações e visitas guiadas. Se te atrasares, envia uma mensagem curta; em visitas particulares uns minutos de atraso costumam ser aceitáveis.",
+    "pt_BR": "Chegar na hora é valorizado no trabalho, em compromissos e passeios guiados. Se for se atrasar, mande uma mensagem curta; em visitas particulares alguns minutos de atraso costumam ser tranquilos.",
+    "fr": "Arriver à l'heure est apprécié pour le travail, les rendez-vous et les visites guidées. Si vous êtes en retard, envoyez un court message ; pour une visite privée, quelques minutes de retard passent généralement bien.",
+    "de": "Pünktlichkeit wird bei der Arbeit, bei Terminen und Führungen geschätzt. Verspätest du dich, schick eine kurze Nachricht; bei privaten Besuchen sind ein paar Minuten meist kein Problem."
+   }
+  },
+  {
+   "id": "ct-HU-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "It is common to take off your shoes when entering a Hungarian home. Hosts often offer slippers, called 'papucs', so follow their lead.",
+    "it": "È comune togliersi le scarpe quando si entra in una casa ungherese. Spesso chi ospita offre delle pantofole, dette 'papucs': segui il suo esempio.",
+    "es": "Es habitual quitarse los zapatos al entrar en una casa húngara. Los anfitriones suelen ofrecer zapatillas, llamadas 'papucs', así que haz lo que ellos indiquen.",
+    "pt": "É comum tirar os sapatos ao entrar em casa de húngaros. Os anfitriões costumam oferecer pantufas, chamadas 'papucs', por isso faz como eles.",
+    "pt_BR": "É comum tirar os sapatos ao entrar na casa de húngaros. Os anfitriões costumam oferecer chinelos, chamados 'papucs', então faça como eles.",
+    "fr": "Il est courant de retirer ses chaussures en entrant chez des Hongrois. Les hôtes proposent souvent des pantoufles, appelées 'papucs' : suivez leur exemple.",
+    "de": "In ungarischen Wohnungen zieht man üblicherweise die Schuhe aus. Gastgeber bieten oft Hausschuhe an, 'papucs' genannt, richte dich also nach ihnen."
+   }
+  },
+  {
+   "id": "ct-HU-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "On trams, buses and the metro it is polite to offer your seat to older people, pregnant women and people with small children, and to keep phone calls short and quiet.",
+    "it": "Su tram, autobus e metropolitana è educato cedere il posto agli anziani, alle donne incinte e a chi ha bambini piccoli, e tenere le telefonate brevi e a voce bassa.",
+    "es": "En tranvías, autobuses y metro es de buena educación ceder el asiento a las personas mayores, embarazadas o con niños pequeños, y mantener las llamadas breves y en voz baja.",
+    "pt": "Nos elétricos, autocarros e metro é educado ceder o lugar a idosos, grávidas e pessoas com crianças pequenas, e manter as chamadas curtas e em voz baixa.",
+    "pt_BR": "Em bondes, ônibus e metrô é educado ceder o assento a idosos, grávidas e pessoas com crianças pequenas, e manter as ligações curtas e em voz baixa.",
+    "fr": "Dans les trams, bus et métros, il est poli de céder sa place aux personnes âgées, aux femmes enceintes et aux personnes avec de jeunes enfants, et de téléphoner brièvement et à voix basse.",
+    "de": "In Straßenbahn, Bus und U-Bahn überlässt man älteren Menschen, Schwangeren und Eltern mit kleinen Kindern höflich den Sitzplatz und telefoniert kurz und leise."
+   }
+  },
+  {
+   "id": "ct-HU-17",
+   "category": "transport",
+   "text": {
+    "en": "In Budapest you must buy a ticket or pass and validate it where required before travelling. Ticket inspectors check often, and fines for travelling without a valid ticket are high.",
+    "it": "A Budapest bisogna acquistare un biglietto o un abbonamento e convalidarlo dove richiesto prima di viaggiare. I controllori passano spesso e le multe per chi viaggia senza titolo valido sono alte.",
+    "es": "En Budapest hay que comprar un billete o abono y validarlo donde se exija antes de viajar. Los revisores pasan a menudo y las multas por viajar sin billete válido son altas.",
+    "pt": "Em Budapeste é preciso comprar um bilhete ou passe e validá-lo onde for exigido antes de viajar. Os fiscais passam com frequência e as multas por viajar sem título válido são elevadas.",
+    "pt_BR": "Em Budapeste é preciso comprar um bilhete ou passe e validá-lo onde for exigido antes de viajar. Os fiscais passam com frequência e as multas por viajar sem bilhete válido são altas.",
+    "fr": "À Budapest, il faut acheter un titre de transport et le valider là où c'est exigé avant de voyager. Les contrôleurs passent souvent et les amendes pour voyage sans titre valable sont élevées.",
+    "de": "In Budapest musst du vor der Fahrt einen Fahrschein kaufen und dort, wo es verlangt wird, entwerten. Kontrolleure sind oft unterwegs, und Bußgelder ohne gültigen Fahrschein sind hoch."
+   }
+  },
+  {
+   "id": "ct-HU-18",
+   "category": "transport",
+   "text": {
+    "en": "Budapest's Line M1, opened in 1896, is one of the oldest underground railways in continental Europe. Its small yellow trains are a charming way to reach Heroes' Square.",
+    "it": "La linea M1 di Budapest, aperta nel 1896, è una delle metropolitane più antiche dell'Europa continentale. I suoi piccoli treni gialli sono un modo affascinante per raggiungere Piazza degli Eroi.",
+    "es": "La línea M1 de Budapest, inaugurada en 1896, es uno de los metros más antiguos de la Europa continental. Sus pequeños trenes amarillos son una forma encantadora de llegar a la Plaza de los Héroes.",
+    "pt": "A linha M1 de Budapeste, inaugurada em 1896, é um dos metros mais antigos da Europa continental. Os seus pequenos comboios amarelos são uma forma encantadora de chegar à Praça dos Heróis.",
+    "pt_BR": "A linha M1 de Budapeste, inaugurada em 1896, é um dos metrôs mais antigos da Europa continental. Seus pequenos trens amarelos são uma forma charmosa de chegar à Praça dos Heróis.",
+    "fr": "La ligne M1 de Budapest, ouverte en 1896, est l'un des plus anciens métros d'Europe continentale. Ses petites rames jaunes sont une façon charmante de rejoindre la place des Héros.",
+    "de": "Die Linie M1 in Budapest, 1896 eröffnet, ist eine der ältesten U-Bahnen auf dem europäischen Festland. Mit den kleinen gelben Zügen gelangt man charmant zum Heldenplatz."
+   }
+  },
+  {
+   "id": "ct-HU-19",
+   "category": "language",
+   "text": {
+    "en": "Useful words are 'köszönöm' (thank you), 'kérem' (please) and 'bocsánat' (sorry). Many younger Hungarians speak some English, but a local word first always helps.",
+    "it": "Parole utili sono 'köszönöm' (grazie), 'kérem' (per favore) e 'bocsánat' (scusa). Molti ungheresi giovani parlano un po' di inglese, ma una parola in ungherese all'inizio aiuta sempre.",
+    "es": "Palabras útiles son 'köszönöm' (gracias), 'kérem' (por favor) y 'bocsánat' (perdón). Muchos húngaros jóvenes hablan algo de inglés, pero empezar con una palabra local siempre ayuda.",
+    "pt": "Palavras úteis são 'köszönöm' (obrigado), 'kérem' (por favor) e 'bocsánat' (desculpa). Muitos húngaros jovens falam algum inglês, mas começar com uma palavra local ajuda sempre.",
+    "pt_BR": "Palavras úteis são 'köszönöm' (obrigado), 'kérem' (por favor) e 'bocsánat' (desculpa). Muitos húngaros jovens falam algum inglês, mas começar com uma palavra local sempre ajuda.",
+    "fr": "Quelques mots utiles : 'köszönöm' (merci), 'kérem' (s'il vous plaît) et 'bocsánat' (pardon). Beaucoup de jeunes Hongrois parlent un peu anglais, mais un mot en hongrois pour commencer aide toujours.",
+    "de": "Nützliche Wörter sind 'köszönöm' (danke), 'kérem' (bitte) und 'bocsánat' (Entschuldigung). Viele junge Ungarn sprechen etwas Englisch, aber ein erstes Wort auf Ungarisch hilft immer."
+   }
+  },
+  {
+   "id": "ct-HU-20",
+   "category": "festivals",
+   "text": {
+    "en": "20 August is St Stephen's Day, Hungary's main national holiday, celebrating the founding of the state. Budapest hosts a large fireworks display over the Danube.",
+    "it": "Il 20 agosto è la festa di Santo Stefano, la principale festa nazionale ungherese, che celebra la fondazione dello Stato. A Budapest ci sono grandi fuochi d'artificio sul Danubio.",
+    "es": "El 20 de agosto es el día de San Esteban, la principal fiesta nacional de Hungría, que celebra la fundación del Estado. En Budapest hay grandes fuegos artificiales sobre el Danubio.",
+    "pt": "O dia 20 de agosto é o dia de Santo Estêvão, o principal feriado nacional da Hungria, que celebra a fundação do Estado. Em Budapeste há um grande espetáculo de fogo de artifício sobre o Danúbio.",
+    "pt_BR": "O dia 20 de agosto é o Dia de Santo Estêvão, o principal feriado nacional da Hungria, que celebra a fundação do Estado. Em Budapeste há um grande show de fogos de artifício sobre o Danúbio.",
+    "fr": "Le 20 août est la fête de la Saint-Étienne, principale fête nationale de la Hongrie, qui célèbre la fondation de l'État. Budapest organise un grand feu d'artifice au-dessus du Danube.",
+    "de": "Der 20. August ist der Stephanstag, Ungarns wichtigster Nationalfeiertag zur Staatsgründung. In Budapest gibt es ein großes Feuerwerk über der Donau."
+   }
+  },
+  {
+   "id": "ct-HU-21",
+   "category": "festivals",
+   "text": {
+    "en": "Many Hungarians celebrate their name day (névnap) as well as their birthday. A small gift, flowers or a kind message on that day is a pleasant gesture.",
+    "it": "Molti ungheresi festeggiano l'onomastico (névnap) oltre al compleanno. Un piccolo regalo, dei fiori o un messaggio gentile in quel giorno è un bel gesto.",
+    "es": "Muchos húngaros celebran el santo (névnap) además del cumpleaños. Un pequeño regalo, flores o un mensaje amable ese día es un gesto agradable.",
+    "pt": "Muitos húngaros celebram o dia do nome (névnap) além do aniversário. Uma pequena prenda, flores ou uma mensagem simpática nesse dia é um gesto agradável.",
+    "pt_BR": "Muitos húngaros comemoram o dia do nome (névnap) além do aniversário. Um presentinho, flores ou uma mensagem carinhosa nesse dia é um gesto agradável.",
+    "fr": "Beaucoup de Hongrois fêtent leur fête du prénom (névnap) en plus de leur anniversaire. Un petit cadeau, des fleurs ou un gentil message ce jour-là est un geste agréable.",
+    "de": "Viele Ungarn feiern neben dem Geburtstag auch ihren Namenstag (névnap). Ein kleines Geschenk, Blumen oder eine nette Nachricht an diesem Tag ist eine schöne Geste."
+   }
+  },
+  {
+   "id": "ct-HU-22",
+   "category": "festivals",
+   "text": {
+    "en": "In Hungary the main Christmas celebration is on 24 December, when children traditionally receive gifts from baby Jesus ('Jézuska') rather than on the morning of the 25th.",
+    "it": "In Ungheria la festa principale di Natale è il 24 dicembre, quando i bambini ricevono tradizionalmente i regali da Gesù Bambino ('Jézuska') e non la mattina del 25.",
+    "es": "En Hungría la celebración principal de Navidad es el 24 de diciembre, cuando los niños reciben tradicionalmente los regalos del Niño Jesús ('Jézuska') y no la mañana del 25.",
+    "pt": "Na Hungria, a principal celebração do Natal é a 24 de dezembro, quando as crianças recebem tradicionalmente as prendas do Menino Jesus ('Jézuska') e não na manhã do dia 25.",
+    "pt_BR": "Na Hungria, a principal celebração do Natal é em 24 de dezembro, quando as crianças recebem tradicionalmente os presentes do Menino Jesus ('Jézuska') e não na manhã do dia 25.",
+    "fr": "En Hongrie, la grande fête de Noël a lieu le 24 décembre : les enfants reçoivent traditionnellement leurs cadeaux de l'Enfant Jésus ('Jézuska') et non le matin du 25.",
+    "de": "In Ungarn wird Weihnachten vor allem am 24. Dezember gefeiert; die Kinder bekommen ihre Geschenke traditionell vom Christkind ('Jézuska') und nicht erst am Morgen des 25."
+   }
+  },
+  {
+   "id": "ct-HU-23",
+   "category": "family",
+   "text": {
+    "en": "Family ties are strong, and relatives often gather for long Sunday lunches that usually start with soup. If you are invited, expect generous portions and several courses.",
+    "it": "I legami familiari sono forti e i parenti si riuniscono spesso per lunghi pranzi domenicali che di solito iniziano con una zuppa. Se sei invitato, aspettati porzioni generose e più portate.",
+    "es": "Los lazos familiares son fuertes y los parientes suelen reunirse en largas comidas dominicales que normalmente empiezan con una sopa. Si te invitan, espera raciones generosas y varios platos.",
+    "pt": "Os laços familiares são fortes e os familiares reúnem-se muitas vezes em longos almoços de domingo, que normalmente começam com uma sopa. Se fores convidado, prepara-te para doses generosas e vários pratos.",
+    "pt_BR": "Os laços familiares são fortes e os parentes costumam se reunir em longos almoços de domingo, que geralmente começam com uma sopa. Se for convidado, espere porções generosas e vários pratos.",
+    "fr": "Les liens familiaux sont forts et les proches se retrouvent souvent pour de longs déjeuners dominicaux qui commencent généralement par une soupe. Si vous êtes invité, attendez-vous à des portions généreuses et à plusieurs plats.",
+    "de": "Familienbande sind eng, und Verwandte treffen sich oft zu langen Sonntagsmittagessen, die meist mit einer Suppe beginnen. Bist du eingeladen, erwarte große Portionen und mehrere Gänge."
+   }
+  },
+  {
+   "id": "ct-HU-24",
+   "category": "money",
+   "text": {
+    "en": "Hungary uses the forint (HUF), not the euro. Cards and contactless payments are widely accepted, but keep some cash for small shops, markets and public toilets.",
+    "it": "L'Ungheria usa il fiorino (HUF), non l'euro. Carte e pagamenti contactless sono ampiamente accettati, ma tieni un po' di contanti per negozietti, mercati e bagni pubblici.",
+    "es": "Hungría usa el forinto (HUF), no el euro. Las tarjetas y el pago sin contacto se aceptan mucho, pero lleva algo de efectivo para tiendas pequeñas, mercados y aseos públicos.",
+    "pt": "A Hungria usa o forint (HUF), não o euro. Os cartões e os pagamentos sem contacto são muito aceites, mas leva algum dinheiro para lojas pequenas, mercados e casas de banho públicas.",
+    "pt_BR": "A Hungria usa o florim húngaro (HUF), não o euro. Cartões e pagamentos por aproximação são muito aceitos, mas leve algum dinheiro para lojas pequenas, feiras e banheiros públicos.",
+    "fr": "La Hongrie utilise le forint (HUF), pas l'euro. Les cartes et le sans contact sont largement acceptés, mais gardez un peu d'espèces pour les petites boutiques, les marchés et les toilettes publiques.",
+    "de": "Ungarn zahlt mit Forint (HUF), nicht mit Euro. Karten und kontaktloses Bezahlen sind weit verbreitet, aber für kleine Läden, Märkte und öffentliche Toiletten solltest du etwas Bargeld dabeihaben."
+   }
+  },
+  {
+   "id": "ct-HU-25",
+   "category": "money",
+   "text": {
+    "en": "When changing money, compare rates and avoid street exchange offers with tempting headline rates. When paying by card abroad, choose to be charged in forints, not your home currency.",
+    "it": "Quando cambi denaro, confronta i tassi ed evita le offerte di cambio per strada con tassi troppo allettanti. Pagando con carta all'estero, scegli di essere addebitato in fiorini e non nella tua valuta.",
+    "es": "Al cambiar dinero, compara tipos y evita las ofertas de cambio en la calle con tasas demasiado atractivas. Al pagar con tarjeta en el extranjero, elige que te cobren en forintos y no en tu moneda.",
+    "pt": "Ao trocar dinheiro, compara as taxas e evita as ofertas de câmbio na rua com taxas demasiado tentadoras. Ao pagar com cartão no estrangeiro, escolhe ser cobrado em forints e não na tua moeda.",
+    "pt_BR": "Ao trocar dinheiro, compare as taxas e evite as ofertas de câmbio na rua com taxas tentadoras demais. Ao pagar com cartão no exterior, escolha ser cobrado em florins e não na sua moeda.",
+    "fr": "Pour changer de l'argent, comparez les taux et évitez les offres de change dans la rue aux taux trop alléchants. En payant par carte à l'étranger, choisissez d'être débité en forints plutôt que dans votre devise.",
+    "de": "Beim Geldwechsel solltest du Kurse vergleichen und Wechselangebote auf der Straße mit zu verlockenden Kursen meiden. Wähle bei Kartenzahlung die Abrechnung in Forint statt in deiner Heimatwährung."
+   }
+  },
+  {
+   "id": "ct-HU-26",
+   "category": "photography",
+   "text": {
+    "en": "Ask before photographing people, especially at weddings, churches and synagogues. Some museums and interiors restrict flash or photography, so check the signs.",
+    "it": "Chiedi il permesso prima di fotografare le persone, soprattutto a matrimoni, chiese e sinagoghe. Alcuni musei e interni vietano flash o fotografie: controlla i cartelli.",
+    "es": "Pide permiso antes de fotografiar a personas, sobre todo en bodas, iglesias y sinagogas. Algunos museos e interiores restringen el flash o las fotos, así que mira los carteles.",
+    "pt": "Pede autorização antes de fotografar pessoas, sobretudo em casamentos, igrejas e sinagogas. Alguns museus e interiores restringem o flash ou as fotografias, por isso vê os avisos.",
+    "pt_BR": "Peça permissão antes de fotografar pessoas, sobretudo em casamentos, igrejas e sinagogas. Alguns museus e interiores restringem o flash ou as fotos, então confira as placas.",
+    "fr": "Demandez la permission avant de photographier des personnes, surtout lors de mariages ou dans les églises et synagogues. Certains musées et intérieurs limitent le flash ou la photo : lisez les panneaux.",
+    "de": "Frag nach, bevor du Menschen fotografierst, besonders bei Hochzeiten sowie in Kirchen und Synagogen. Einige Museen und Innenräume beschränken Blitz oder Fotos, achte auf die Schilder."
+   }
+  },
+  {
+   "id": "ct-HU-27",
+   "category": "nightlife",
+   "text": {
+    "en": "Budapest is famous for its 'ruin pubs', bars set up in old buildings in the old Jewish Quarter. They are relaxed, mixed places, but venues can be busy, so go early for a seat.",
+    "it": "Budapest è famosa per i 'ruin pub', locali ricavati in vecchi edifici nell'antico quartiere ebraico. Sono posti rilassati e vari, ma possono essere affollati: arriva presto per trovare posto.",
+    "es": "Budapest es famosa por sus 'ruin pubs', bares montados en edificios antiguos del antiguo barrio judío. Son sitios relajados y variados, pero se llenan, así que ve pronto para encontrar sitio.",
+    "pt": "Budapeste é famosa pelos 'ruin pubs', bares instalados em edifícios antigos no velho bairro judaico. São locais descontraídos e variados, mas podem estar cheios, por isso vai cedo para arranjar lugar.",
+    "pt_BR": "Budapeste é famosa pelos 'ruin pubs', bares instalados em prédios antigos no antigo bairro judaico. São lugares descontraídos e variados, mas podem lotar, então vá cedo para conseguir lugar.",
+    "fr": "Budapest est connue pour ses 'ruin pubs', des bars installés dans d'anciens immeubles du vieux quartier juif. L'ambiance y est décontractée et variée, mais ils se remplissent vite : venez tôt pour avoir une place.",
+    "de": "Budapest ist bekannt für seine 'Ruinenkneipen', Bars in alten Gebäuden im ehemaligen jüdischen Viertel. Sie sind entspannt und bunt gemischt, aber oft voll; komm früh, um einen Platz zu bekommen."
+   }
+  },
+  {
+   "id": "ct-HU-28",
+   "category": "nature",
+   "text": {
+    "en": "Lake Balaton is the largest lake in Central Europe and a summer favourite for swimming and sailing. Lake Hévíz is a famous thermal lake you can bathe in even in cooler months.",
+    "it": "Il lago Balaton è il più grande dell'Europa centrale ed è un classico dell'estate per nuotare e fare vela. Il lago di Hévíz è un celebre lago termale in cui ci si può immergere anche nei mesi più freddi.",
+    "es": "El lago Balatón es el mayor de Europa central y un favorito del verano para nadar y navegar. El lago Hévíz es un famoso lago termal donde se puede bañar uno incluso en los meses más frescos.",
+    "pt": "O lago Balaton é o maior da Europa Central e um favorito do verão para nadar e velejar. O lago Hévíz é um famoso lago termal onde é possível tomar banho mesmo nos meses mais frescos.",
+    "pt_BR": "O lago Balaton é o maior da Europa Central e um favorito do verão para nadar e velejar. O lago Hévíz é um famoso lago termal onde dá para se banhar mesmo nos meses mais frescos.",
+    "fr": "Le lac Balaton est le plus grand d'Europe centrale et un classique de l'été pour la baignade et la voile. Le lac d'Hévíz est un célèbre lac thermal où l'on peut se baigner même par temps frais.",
+    "de": "Der Plattensee ist der größte See Mitteleuropas und im Sommer beliebt zum Baden und Segeln. Der Hévíz-See ist ein berühmter Thermalsee, in dem man auch in kühleren Monaten baden kann."
+   }
+  },
+  {
+   "id": "ct-HU-29",
+   "category": "safety",
+   "text": {
+    "en": "Budapest is generally safe for visitors. As in any busy city, watch your bag on crowded trams and near tourist spots, and use licensed taxis or ride-hailing apps.",
+    "it": "Budapest è in generale sicura per i visitatori. Come in ogni città affollata, tieni d'occhio la borsa sui tram pieni e vicino ai luoghi turistici, e usa taxi autorizzati o app di trasporto.",
+    "es": "Budapest es en general segura para los visitantes. Como en cualquier ciudad concurrida, vigila tu bolso en tranvías llenos y cerca de sitios turísticos, y usa taxis con licencia o aplicaciones de transporte.",
+    "pt": "Budapeste é, em geral, segura para os visitantes. Como em qualquer cidade movimentada, vigia a mala nos elétricos cheios e perto de zonas turísticas, e usa táxis licenciados ou aplicações de transporte.",
+    "pt_BR": "Budapeste é, em geral, segura para os visitantes. Como em qualquer cidade movimentada, fique de olho na bolsa em bondes lotados e perto de pontos turísticos, e use táxis licenciados ou aplicativos de transporte.",
+    "fr": "Budapest est globalement sûre pour les visiteurs. Comme dans toute ville animée, surveillez votre sac dans les trams bondés et près des sites touristiques, et utilisez des taxis agréés ou des applications de VTC.",
+    "de": "Budapest ist für Besucher im Allgemeinen sicher. Wie in jeder belebten Stadt achte in vollen Straßenbahnen und an Touristenorten auf deine Tasche und nutze lizenzierte Taxis oder Fahrdienst-Apps."
+   }
+  },
+  {
+   "id": "ct-HU-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Hungarians are proud of their scientific and sporting heritage, from footballer Ferenc Puskás and the Golden Team to inventions like the Rubik's Cube. Showing interest in these always goes down well.",
+    "it": "Gli ungheresi sono orgogliosi del loro patrimonio scientifico e sportivo, dal calciatore Ferenc Puskás e dalla Golden Team a invenzioni come il cubo di Rubik. Mostrare interesse per questi temi è sempre apprezzato.",
+    "es": "Los húngaros están orgullosos de su legado científico y deportivo, desde el futbolista Ferenc Puskás y el Equipo de Oro hasta inventos como el cubo de Rubik. Mostrar interés por ello siempre cae bien.",
+    "pt": "Os húngaros têm orgulho do seu património científico e desportivo, do futebolista Ferenc Puskás e da Golden Team a invenções como o cubo de Rubik. Mostrar interesse por estes temas cai sempre bem.",
+    "pt_BR": "Os húngaros têm orgulho de seu patrimônio científico e esportivo, do jogador Ferenc Puskás e da Golden Team a invenções como o cubo mágico. Mostrar interesse por esses temas sempre cai bem.",
+    "fr": "Les Hongrois sont fiers de leur patrimoine scientifique et sportif, du footballeur Ferenc Puskás et de la Golden Team à des inventions comme le Rubik's Cube. Montrer de l'intérêt pour tout cela fait toujours plaisir.",
+    "de": "Die Ungarn sind stolz auf ihr wissenschaftliches und sportliches Erbe, vom Fußballer Ferenc Puskás und dem Golden Team bis zu Erfindungen wie dem Zauberwürfel. Interesse daran kommt immer gut an."
+   }
+  }
+ ],
+ "ID": [
+  {
+   "id": "ct-ID-01",
+   "category": "greetings",
+   "text": {
+    "en": "A gentle, brief handshake with a smile is the usual greeting, often followed by a hand briefly touched to the chest. Time-of-day greetings like 'Selamat pagi' (good morning) are widely used.",
+    "it": "Un saluto tipico è una stretta di mano delicata e breve con un sorriso, spesso seguita da una mano portata al petto. Si usano molto i saluti legati all'ora, come 'Selamat pagi' (buongiorno).",
+    "es": "Lo habitual es un apretón de manos suave y breve con una sonrisa, a menudo seguido de la mano en el pecho. Se usan mucho los saludos según la hora, como 'Selamat pagi' (buenos días).",
+    "pt": "O cumprimento habitual é um aperto de mão suave e breve com um sorriso, muitas vezes seguido de uma mão levada ao peito. Usam-se muito saudações conforme a hora, como 'Selamat pagi' (bom dia).",
+    "pt_BR": "O cumprimento habitual é um aperto de mão suave e breve com um sorriso, muitas vezes seguido de uma mão levada ao peito. Usam-se muito saudações conforme o horário, como 'Selamat pagi' (bom dia).",
+    "fr": "La salutation habituelle est une poignée de main douce et brève avec un sourire, souvent suivie d'une main posée sur la poitrine. Les salutations selon l'heure, comme 'Selamat pagi' (bonjour), sont très courantes.",
+    "de": "Üblich ist ein sanfter, kurzer Händedruck mit einem Lächeln, oft gefolgt von der Hand kurz auf der Brust. Tageszeitgrüße wie 'Selamat pagi' (guten Morgen) sind weit verbreitet."
+   }
+  },
+  {
+   "id": "ct-ID-02",
+   "category": "greetings",
+   "text": {
+    "en": "In many communities, younger people greet elders by taking their hand and touching it briefly to the forehead or nose. If someone offers this, it is a sign of respect, not a handshake.",
+    "it": "In molte comunità i più giovani salutano gli anziani prendendo la loro mano e sfiorandola con la fronte o il naso. Se qualcuno lo fa, è un segno di rispetto, non una semplice stretta di mano.",
+    "es": "En muchas comunidades, los jóvenes saludan a los mayores tomando su mano y tocándola brevemente con la frente o la nariz. Si alguien te lo ofrece, es una muestra de respeto, no un apretón de manos.",
+    "pt": "Em muitas comunidades, os mais novos cumprimentam os mais velhos pegando-lhes na mão e tocando-a brevemente com a testa ou o nariz. Se alguém o fizer, é um sinal de respeito, não um simples aperto de mão.",
+    "pt_BR": "Em muitas comunidades, os mais jovens cumprimentam os mais velhos pegando a mão deles e tocando-a rapidamente com a testa ou o nariz. Se alguém fizer isso, é sinal de respeito, não um simples aperto de mão.",
+    "fr": "Dans de nombreuses communautés, les jeunes saluent les aînés en prenant leur main et en la touchant brièvement du front ou du nez. Si quelqu'un le fait, c'est une marque de respect, pas une simple poignée de main.",
+    "de": "In vielen Gemeinschaften begrüßen Jüngere Ältere, indem sie deren Hand nehmen und kurz an Stirn oder Nase führen. Das ist ein Zeichen von Respekt und kein gewöhnlicher Händedruck."
+   }
+  },
+  {
+   "id": "ct-ID-03",
+   "category": "conversation",
+   "text": {
+    "en": "Bahasa Indonesia is the shared national language across more than 600 ethnic groups, and many people also speak a regional language at home. Its spelling is quite phonetic, so it is friendly to learn.",
+    "it": "Il bahasa indonesiano è la lingua nazionale comune a oltre 600 gruppi etnici, e molte persone parlano anche una lingua regionale in casa. L'ortografia è piuttosto fonetica, quindi è facile da imparare.",
+    "es": "El bahasa indonesio es la lengua nacional compartida por más de 600 grupos étnicos, y mucha gente habla además una lengua regional en casa. Su ortografía es bastante fonética, así que es fácil de aprender.",
+    "pt": "O bahasa indonésio é a língua nacional partilhada por mais de 600 grupos étnicos, e muitas pessoas falam também uma língua regional em casa. A ortografia é bastante fonética, por isso é fácil de aprender.",
+    "pt_BR": "O bahasa indonésio é a língua nacional compartilhada por mais de 600 grupos étnicos, e muita gente fala também uma língua regional em casa. A ortografia é bem fonética, então é fácil de aprender.",
+    "fr": "Le bahasa indonésien est la langue nationale commune à plus de 600 groupes ethniques, et beaucoup de gens parlent aussi une langue régionale à la maison. Son orthographe est assez phonétique, donc facile à apprendre.",
+    "de": "Bahasa Indonesia ist die gemeinsame Landessprache von über 600 Volksgruppen, und viele sprechen zu Hause zusätzlich eine Regionalsprache. Die Schreibweise ist ziemlich lautgetreu und daher gut zu lernen."
+   }
+  },
+  {
+   "id": "ct-ID-04",
+   "category": "conversation",
+   "text": {
+    "en": "Many people prefer indirect, harmonious communication and avoid blunt refusals or public disagreement. A hesitant 'maybe' or 'we will see' can be a polite way of saying no.",
+    "it": "Molte persone preferiscono una comunicazione indiretta e armoniosa ed evitano rifiuti netti o disaccordi in pubblico. Un esitante 'forse' o 'vedremo' può essere un modo gentile per dire di no.",
+    "es": "Mucha gente prefiere una comunicación indirecta y armoniosa y evita los rechazos tajantes o el desacuerdo en público. Un 'quizá' o 'ya veremos' dudoso puede ser una forma cortés de decir que no.",
+    "pt": "Muitas pessoas preferem uma comunicação indireta e harmoniosa e evitam recusas diretas ou discordâncias em público. Um 'talvez' ou 'logo se vê' hesitante pode ser uma forma educada de dizer não.",
+    "pt_BR": "Muitas pessoas preferem uma comunicação indireta e harmoniosa e evitam recusas diretas ou discordâncias em público. Um 'talvez' ou 'vamos ver' hesitante pode ser um jeito educado de dizer não.",
+    "fr": "Beaucoup de gens préfèrent une communication indirecte et harmonieuse et évitent les refus brutaux ou le désaccord en public. Un 'peut-être' ou un 'on verra' hésitant peut être une façon polie de dire non.",
+    "de": "Viele bevorzugen eine indirekte, harmonische Kommunikation und vermeiden schroffe Absagen oder öffentlichen Widerspruch. Ein zögerliches 'vielleicht' oder 'mal sehen' kann eine höfliche Art sein, Nein zu sagen."
+   }
+  },
+  {
+   "id": "ct-ID-05",
+   "category": "conversation",
+   "text": {
+    "en": "'Sudah makan?' (Have you eaten yet?) is a very common friendly question, much like asking how you are. It is a caring greeting, not an invitation you must accept.",
+    "it": "'Sudah makan?' (Hai già mangiato?) è una domanda amichevole molto comune, simile a chiedere come stai. È un saluto affettuoso, non un invito che devi accettare.",
+    "es": "'Sudah makan?' (¿Ya comiste?) es una pregunta amistosa muy común, parecida a preguntar qué tal estás. Es un saludo afectuoso, no una invitación que debas aceptar.",
+    "pt": "'Sudah makan?' (Já comeste?) é uma pergunta simpática muito comum, semelhante a perguntar como estás. É um cumprimento carinhoso, não um convite que tenhas de aceitar.",
+    "pt_BR": "'Sudah makan?' (Você já comeu?) é uma pergunta simpática muito comum, parecida com perguntar como vai. É um cumprimento carinhoso, não um convite que você precise aceitar.",
+    "fr": "'Sudah makan ?' (Tu as déjà mangé ?) est une question amicale très courante, un peu comme demander comment ça va. C'est une salutation attentionnée, pas une invitation à accepter.",
+    "de": "'Sudah makan?' (Hast du schon gegessen?) ist eine sehr verbreitete freundliche Frage, ähnlich wie 'Wie geht's?'. Es ist ein fürsorglicher Gruß und keine Einladung, die man annehmen muss."
+   }
+  },
+  {
+   "id": "ct-ID-06",
+   "category": "dining",
+   "text": {
+    "en": "Eat and pass food with your right hand, as the left hand is considered less clean in many communities. Traditional meals eaten by hand, like nasi padang, also use the right hand only.",
+    "it": "Mangia e passa il cibo con la mano destra, perché in molte comunità la sinistra è considerata meno pulita. Anche nei pasti tradizionali mangiati con le mani, come il nasi padang, si usa solo la destra.",
+    "es": "Come y pasa la comida con la mano derecha, ya que en muchas comunidades la izquierda se considera menos limpia. En las comidas tradicionales con las manos, como el nasi padang, también se usa solo la derecha.",
+    "pt": "Come e passa a comida com a mão direita, pois em muitas comunidades a esquerda é considerada menos limpa. Nas refeições tradicionais comidas à mão, como o nasi padang, usa-se também apenas a direita.",
+    "pt_BR": "Coma e passe a comida com a mão direita, pois em muitas comunidades a esquerda é considerada menos limpa. Nas refeições tradicionais comidas com as mãos, como o nasi padang, também se usa só a direita.",
+    "fr": "Mangez et passez les plats de la main droite, car la gauche est jugée moins propre dans de nombreuses communautés. Pour les repas traditionnels pris avec les doigts, comme le nasi padang, on n'utilise aussi que la droite.",
+    "de": "Iss und reiche Speisen mit der rechten Hand, denn die linke gilt in vielen Gemeinschaften als weniger rein. Auch bei traditionellen Mahlzeiten mit den Fingern, etwa Nasi Padang, nutzt man nur die rechte Hand."
+   }
+  },
+  {
+   "id": "ct-ID-07",
+   "category": "dining",
+   "text": {
+    "en": "In most restaurants people eat with a spoon in the right hand and a fork in the left, using the fork to push food onto the spoon. Knives are rarely used at the table.",
+    "it": "Nella maggior parte dei ristoranti si mangia con il cucchiaio nella destra e la forchetta nella sinistra, usando la forchetta per spingere il cibo sul cucchiaio. I coltelli si usano raramente a tavola.",
+    "es": "En la mayoría de los restaurantes se come con la cuchara en la mano derecha y el tenedor en la izquierda, usando el tenedor para empujar la comida a la cuchara. Los cuchillos se usan poco en la mesa.",
+    "pt": "Na maioria dos restaurantes come-se com a colher na mão direita e o garfo na esquerda, usando o garfo para empurrar a comida para a colher. As facas raramente se usam à mesa.",
+    "pt_BR": "Na maioria dos restaurantes se come com a colher na mão direita e o garfo na esquerda, usando o garfo para empurrar a comida para a colher. Facas raramente são usadas à mesa.",
+    "fr": "Dans la plupart des restaurants, on mange avec la cuillère dans la main droite et la fourchette dans la gauche, en poussant la nourriture sur la cuillère avec la fourchette. Les couteaux sont rarement utilisés à table.",
+    "de": "In den meisten Restaurants isst man mit dem Löffel in der rechten und der Gabel in der linken Hand, wobei die Gabel das Essen auf den Löffel schiebt. Messer benutzt man am Tisch selten."
+   }
+  },
+  {
+   "id": "ct-ID-08",
+   "category": "dining",
+   "text": {
+    "en": "Indonesia has the world's largest Muslim population, so halal food is common and pork is rarely served outside non-Muslim areas such as Bali. Ask staff if you have dietary needs.",
+    "it": "L'Indonesia ha la più grande popolazione musulmana del mondo, quindi il cibo halal è diffuso e il maiale è raro fuori dalle zone non musulmane come Bali. Se hai esigenze alimentari, chiedi al personale.",
+    "es": "Indonesia tiene la mayor población musulmana del mundo, así que la comida halal es habitual y el cerdo se sirve poco fuera de zonas no musulmanas como Bali. Pregunta al personal si tienes necesidades dietéticas.",
+    "pt": "A Indonésia tem a maior população muçulmana do mundo, por isso a comida halal é comum e a carne de porco raramente se serve fora de zonas não muçulmanas como Bali. Pergunta ao pessoal se tiveres necessidades alimentares.",
+    "pt_BR": "A Indonésia tem a maior população muçulmana do mundo, por isso a comida halal é comum e a carne de porco raramente é servida fora de áreas não muçulmanas como Bali. Pergunte à equipe se tiver restrições alimentares.",
+    "fr": "L'Indonésie compte la plus grande population musulmane du monde : la nourriture halal est donc courante et le porc est rarement servi hors des zones non musulmanes comme Bali. Demandez au personnel si vous avez des besoins alimentaires.",
+    "de": "Indonesien hat die größte muslimische Bevölkerung der Welt, daher ist Halal-Essen üblich und Schweinefleisch außerhalb nichtmuslimischer Gebiete wie Bali selten. Frag das Personal bei besonderen Ernährungswünschen."
+   }
+  },
+  {
+   "id": "ct-ID-09",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping is not obligatory. Many restaurants already add a service charge to the bill, so check first; if not, leaving 5 to 10 percent for good service is appreciated.",
+    "it": "La mancia non è obbligatoria. Molti ristoranti aggiungono già il servizio al conto, quindi controlla prima; altrimenti lasciare il 5-10 per cento per un buon servizio è apprezzato.",
+    "es": "La propina no es obligatoria. Muchos restaurantes ya añaden un cargo por servicio a la cuenta, así que míralo primero; si no, dejar un 5 a 10 por ciento por buen servicio se agradece.",
+    "pt": "A gorjeta não é obrigatória. Muitos restaurantes já acrescentam uma taxa de serviço à conta, por isso vê primeiro; se não, deixar 5 a 10 por cento por um bom serviço é apreciado.",
+    "pt_BR": "A gorjeta não é obrigatória. Muitos restaurantes já incluem uma taxa de serviço na conta, então confira primeiro; se não incluir, deixar de 5 a 10 por cento por um bom atendimento é bem-vindo.",
+    "fr": "Le pourboire n'est pas obligatoire. Beaucoup de restaurants ajoutent déjà un service à l'addition : vérifiez d'abord ; sinon, laisser 5 à 10 pour cent pour un bon service est apprécié.",
+    "de": "Trinkgeld ist nicht Pflicht. Viele Restaurants setzen bereits eine Servicegebühr auf die Rechnung, schau also zuerst nach; wenn nicht, sind 5 bis 10 Prozent für guten Service willkommen."
+   }
+  },
+  {
+   "id": "ct-ID-10",
+   "category": "nightlife",
+   "text": {
+    "en": "Evening street-food stalls and night markets are social places where families and friends gather. Browsing, trying small portions and chatting with vendors is part of the fun.",
+    "it": "Le bancarelle di street food serali e i mercati notturni sono luoghi di ritrovo per famiglie e amici. Curiosare, assaggiare piccole porzioni e chiacchierare con i venditori fa parte del divertimento.",
+    "es": "Los puestos de comida callejera nocturnos y los mercados nocturnos son lugares sociales donde se reúnen familias y amigos. Curiosear, probar raciones pequeñas y charlar con los vendedores forma parte de la diversión.",
+    "pt": "As bancas de comida de rua ao fim do dia e os mercados noturnos são locais de convívio para famílias e amigos. Passear, provar pequenas porções e conversar com os vendedores faz parte da diversão.",
+    "pt_BR": "As barracas de comida de rua à noite e os mercados noturnos são lugares de convívio para famílias e amigos. Passear, provar porções pequenas e conversar com os vendedores faz parte da diversão.",
+    "fr": "Les stands de street food du soir et les marchés nocturnes sont des lieux de rencontre pour familles et amis. Flâner, goûter de petites portions et discuter avec les vendeurs fait partie du plaisir.",
+    "de": "Abendliche Straßenküchen und Nachtmärkte sind soziale Treffpunkte für Familien und Freunde. Bummeln, kleine Portionen probieren und mit den Händlern plaudern gehört zum Vergnügen."
+   }
+  },
+  {
+   "id": "ct-ID-11",
+   "category": "gifts",
+   "text": {
+    "en": "Offer and receive gifts with your right hand or both hands. Many people do not open a gift in front of the giver, so do not be surprised if it is set aside politely.",
+    "it": "Offri e ricevi i regali con la mano destra o con entrambe le mani. Molte persone non aprono il regalo davanti a chi lo fa, quindi non sorprenderti se viene messo da parte con garbo.",
+    "es": "Ofrece y recibe los regalos con la mano derecha o con ambas manos. Mucha gente no abre un regalo delante de quien lo da, así que no te sorprendas si lo apartan con educación.",
+    "pt": "Oferece e recebe presentes com a mão direita ou com as duas mãos. Muitas pessoas não abrem o presente à frente de quem o dá, por isso não estranhes se for posto de lado com delicadeza.",
+    "pt_BR": "Ofereça e receba presentes com a mão direita ou com as duas mãos. Muita gente não abre o presente na frente de quem deu, então não estranhe se ele for guardado com delicadeza.",
+    "fr": "Offrez et recevez les cadeaux de la main droite ou des deux mains. Beaucoup de gens n'ouvrent pas un cadeau devant celui qui l'offre : ne soyez pas surpris s'il est poliment mis de côté.",
+    "de": "Überreiche und nimm Geschenke mit der rechten oder mit beiden Händen entgegen. Viele öffnen ein Geschenk nicht vor dem Schenkenden, wundere dich also nicht, wenn es höflich beiseitegelegt wird."
+   }
+  },
+  {
+   "id": "ct-ID-12",
+   "category": "dress",
+   "text": {
+    "en": "Outside beach resorts, modest clothing is appreciated: shoulders and knees covered, especially in villages, mosques and temples. Light, breathable fabrics suit the tropical heat.",
+    "it": "Fuori dai resort di mare è apprezzato un abbigliamento sobrio: spalle e ginocchia coperte, soprattutto nei villaggi, nelle moschee e nei templi. I tessuti leggeri e traspiranti sono adatti al caldo tropicale.",
+    "es": "Fuera de los complejos de playa se agradece la ropa discreta: hombros y rodillas cubiertos, sobre todo en pueblos, mezquitas y templos. Los tejidos ligeros y transpirables van bien con el calor tropical.",
+    "pt": "Fora dos resorts de praia, a roupa discreta é apreciada: ombros e joelhos tapados, sobretudo em aldeias, mesquitas e templos. Tecidos leves e respiráveis são ideais para o calor tropical.",
+    "pt_BR": "Fora dos resorts de praia, roupas discretas são apreciadas: ombros e joelhos cobertos, principalmente em vilarejos, mesquitas e templos. Tecidos leves e respiráveis combinam com o calor tropical.",
+    "fr": "En dehors des stations balnéaires, une tenue modeste est appréciée : épaules et genoux couverts, surtout dans les villages, mosquées et temples. Les tissus légers et respirants conviennent à la chaleur tropicale.",
+    "de": "Außerhalb von Strandorten kommt dezente Kleidung gut an: Schultern und Knie bedeckt, besonders in Dörfern, Moscheen und Tempeln. Leichte, luftige Stoffe passen zur tropischen Hitze."
+   }
+  },
+  {
+   "id": "ct-ID-13",
+   "category": "religion_sites",
+   "text": {
+    "en": "Remove your shoes before entering a mosque and often a home. Women may be asked to cover their hair inside mosques, and it is respectful to stay quiet near people at prayer.",
+    "it": "Togli le scarpe prima di entrare in una moschea e spesso anche in una casa. Alle donne può essere chiesto di coprirsi i capelli nelle moschee, ed è rispettoso restare in silenzio vicino a chi prega.",
+    "es": "Quítate los zapatos antes de entrar en una mezquita y, a menudo, en una casa. A las mujeres se les puede pedir cubrirse el pelo en las mezquitas, y es respetuoso guardar silencio cerca de quien reza.",
+    "pt": "Tira os sapatos antes de entrar numa mesquita e muitas vezes numa casa. Às mulheres pode ser pedido que cubram o cabelo nas mesquitas, e é respeitoso manter silêncio perto de quem reza.",
+    "pt_BR": "Tire os sapatos antes de entrar em uma mesquita e muitas vezes em uma casa. Às mulheres pode ser pedido que cubram o cabelo nas mesquitas, e é respeitoso manter silêncio perto de quem está rezando.",
+    "fr": "Retirez vos chaussures avant d'entrer dans une mosquée et souvent dans une maison. On peut demander aux femmes de se couvrir les cheveux dans les mosquées, et il est respectueux de rester silencieux près de ceux qui prient.",
+    "de": "Zieh vor einer Moschee und oft auch vor einem Wohnhaus die Schuhe aus. Frauen werden in Moscheen manchmal gebeten, das Haar zu bedecken, und in der Nähe Betender ist es respektvoll, still zu sein."
+   }
+  },
+  {
+   "id": "ct-ID-14",
+   "category": "religion_sites",
+   "text": {
+    "en": "At Balinese Hindu temples, wear a sarong and sash, and step around the small daily offerings (canang sari) on the ground rather than over them. Follow local guidance at ceremonies.",
+    "it": "Nei templi indù di Bali indossa un sarong e una fascia, e aggira le piccole offerte quotidiane (canang sari) sul terreno invece di scavalcarle. Segui le indicazioni locali durante le cerimonie.",
+    "es": "En los templos hindúes de Bali, ponte un sarong y una faja, y rodea las pequeñas ofrendas diarias (canang sari) del suelo en lugar de pasar por encima. Sigue las indicaciones locales en las ceremonias.",
+    "pt": "Nos templos hindus de Bali, usa um sarongue e uma faixa, e contorna as pequenas oferendas diárias (canang sari) no chão em vez de passares por cima. Segue as indicações locais nas cerimónias.",
+    "pt_BR": "Nos templos hindus de Bali, use um sarongue e uma faixa, e contorne as pequenas oferendas diárias (canang sari) no chão em vez de passar por cima. Siga as orientações locais nas cerimônias.",
+    "fr": "Dans les temples hindous de Bali, portez un sarong et une ceinture, et contournez les petites offrandes quotidiennes (canang sari) posées au sol plutôt que de les enjamber. Suivez les consignes locales lors des cérémonies.",
+    "de": "In balinesischen Hindu-Tempeln trägt man Sarong und Schärpe und geht um die kleinen täglichen Opfergaben (Canang Sari) auf dem Boden herum, statt darüber zu steigen. Folge bei Zeremonien den Hinweisen vor Ort."
+   }
+  },
+  {
+   "id": "ct-ID-15",
+   "category": "gestures",
+   "text": {
+    "en": "Point with your thumb or an open hand rather than the index finger, and beckon someone with your palm facing down. These are considered more polite.",
+    "it": "Indica con il pollice o con la mano aperta invece che con l'indice, e chiama qualcuno con il palmo rivolto verso il basso. Sono gesti considerati più educati.",
+    "es": "Señala con el pulgar o con la mano abierta en lugar del dedo índice, y llama a alguien con la palma hacia abajo. Se consideran gestos más educados.",
+    "pt": "Aponta com o polegar ou com a mão aberta em vez do indicador, e chama alguém com a palma da mão virada para baixo. São gestos considerados mais educados.",
+    "pt_BR": "Aponte com o polegar ou com a mão aberta em vez do indicador, e chame alguém com a palma da mão virada para baixo. São gestos considerados mais educados.",
+    "fr": "Désignez avec le pouce ou la main ouverte plutôt qu'avec l'index, et appelez quelqu'un la paume tournée vers le bas. Ces gestes sont jugés plus polis.",
+    "de": "Zeige mit dem Daumen oder der offenen Hand statt mit dem Zeigefinger und winke jemanden mit der Handfläche nach unten heran. Das gilt als höflicher."
+   }
+  },
+  {
+   "id": "ct-ID-16",
+   "category": "gestures",
+   "text": {
+    "en": "The head is regarded as the most respected part of the body in many communities, so avoid touching or patting anyone's head, including children.",
+    "it": "In molte comunità la testa è considerata la parte più rispettata del corpo, quindi evita di toccare o accarezzare la testa di chiunque, bambini compresi.",
+    "es": "En muchas comunidades la cabeza se considera la parte más respetada del cuerpo, así que evita tocar o acariciar la cabeza de nadie, incluidos los niños.",
+    "pt": "Em muitas comunidades a cabeça é considerada a parte mais respeitada do corpo, por isso evita tocar ou fazer festas na cabeça de alguém, incluindo crianças.",
+    "pt_BR": "Em muitas comunidades a cabeça é considerada a parte mais respeitada do corpo, então evite tocar ou fazer carinho na cabeça de alguém, inclusive de crianças.",
+    "fr": "Dans de nombreuses communautés, la tête est la partie du corps la plus respectée : évitez de toucher ou de tapoter la tête de qui que ce soit, enfants compris.",
+    "de": "In vielen Gemeinschaften gilt der Kopf als der respektierteste Körperteil, berühre oder tätschle deshalb niemandem den Kopf, auch Kindern nicht."
+   }
+  },
+  {
+   "id": "ct-ID-17",
+   "category": "gestures",
+   "text": {
+    "en": "Avoid pointing the soles of your feet at people or religious objects, and do not use your feet to move things. Sit with your feet tucked down or to the side.",
+    "it": "Evita di puntare le piante dei piedi verso le persone o gli oggetti religiosi, e non usare i piedi per spostare le cose. Siediti con i piedi appoggiati a terra o di lato.",
+    "es": "Evita apuntar las plantas de los pies hacia personas u objetos religiosos, y no uses los pies para mover cosas. Siéntate con los pies hacia abajo o a un lado.",
+    "pt": "Evita apontar as solas dos pés para pessoas ou objetos religiosos, e não uses os pés para mover coisas. Senta-te com os pés no chão ou para o lado.",
+    "pt_BR": "Evite apontar a sola dos pés para pessoas ou objetos religiosos, e não use os pés para mover coisas. Sente-se com os pés no chão ou para o lado.",
+    "fr": "Évitez de pointer la plante des pieds vers des personnes ou des objets religieux, et n'utilisez pas vos pieds pour déplacer des objets. Asseyez-vous les pieds au sol ou sur le côté.",
+    "de": "Richte die Fußsohlen nicht auf Menschen oder religiöse Gegenstände und schiebe nichts mit den Füßen. Sitze mit den Füßen am Boden oder zur Seite."
+   }
+  },
+  {
+   "id": "ct-ID-18",
+   "category": "punctuality",
+   "text": {
+    "en": "Social events often start later than announced, a flexibility sometimes jokingly called 'rubber time' (jam karet). For business meetings and formal events, arriving on time is still expected.",
+    "it": "Gli eventi sociali spesso iniziano più tardi del previsto, una flessibilità chiamata scherzosamente 'ora di gomma' (jam karet). Per riunioni di lavoro ed eventi formali, però, si aspetta puntualità.",
+    "es": "Los eventos sociales suelen empezar más tarde de lo anunciado, una flexibilidad que a veces se llama en broma 'hora de goma' (jam karet). En reuniones de trabajo y actos formales se espera puntualidad.",
+    "pt": "Os eventos sociais costumam começar mais tarde do que o anunciado, uma flexibilidade a que se chama, a brincar, 'hora de borracha' (jam karet). Em reuniões de trabalho e eventos formais espera-se pontualidade.",
+    "pt_BR": "Eventos sociais costumam começar mais tarde do que o anunciado, uma flexibilidade chamada de brincadeira de 'hora de borracha' (jam karet). Em reuniões de trabalho e eventos formais, espera-se pontualidade.",
+    "fr": "Les événements sociaux commencent souvent plus tard que prévu, une souplesse parfois appelée en plaisantant 'l'heure élastique' (jam karet). Pour les réunions de travail et les événements formels, la ponctualité reste attendue.",
+    "de": "Gesellschaftliche Anlässe beginnen oft später als angekündigt, eine Flexibilität, die scherzhaft 'Gummizeit' (jam karet) heißt. Bei geschäftlichen Terminen und formellen Veranstaltungen wird dennoch Pünktlichkeit erwartet."
+   }
+  },
+  {
+   "id": "ct-ID-19",
+   "category": "public_behavior",
+   "text": {
+    "en": "Keeping a calm voice and a smile is valued, and raising your voice or showing anger in public is seen as rude. Stay patient and polite when something goes wrong.",
+    "it": "Mantenere un tono calmo e un sorriso è apprezzato, mentre alzare la voce o mostrare rabbia in pubblico è visto come maleducato. Resta paziente e cortese quando qualcosa va storto.",
+    "es": "Se valora mantener la voz tranquila y una sonrisa, y levantar la voz o mostrar enfado en público se ve como una grosería. Mantén la paciencia y la cortesía cuando algo sale mal.",
+    "pt": "Valoriza-se manter a voz calma e um sorriso, e levantar a voz ou mostrar zanga em público é visto como mal-educado. Mantém a paciência e a cortesia quando algo corre mal.",
+    "pt_BR": "Valoriza-se manter a voz calma e um sorriso, e levantar a voz ou mostrar raiva em público é visto como falta de educação. Mantenha a paciência e a cortesia quando algo der errado.",
+    "fr": "On valorise une voix calme et un sourire ; élever la voix ou montrer sa colère en public est jugé impoli. Restez patient et courtois quand quelque chose se passe mal.",
+    "de": "Eine ruhige Stimme und ein Lächeln werden geschätzt, laut zu werden oder in der Öffentlichkeit Ärger zu zeigen gilt als unhöflich. Bleib geduldig und höflich, wenn etwas schiefgeht."
+   }
+  },
+  {
+   "id": "ct-ID-20",
+   "category": "public_behavior",
+   "text": {
+    "en": "During Ramadan, many people fast from dawn to sunset. In more conservative areas, avoid eating, drinking or smoking openly in front of those fasting, and enjoy the lively evening meals if invited.",
+    "it": "Durante il Ramadan molte persone digiunano dall'alba al tramonto. Nelle zone più conservatrici evita di mangiare, bere o fumare apertamente davanti a chi digiuna, e goditi le vivaci cene serali se sei invitato.",
+    "es": "Durante el Ramadán, mucha gente ayuna desde el amanecer hasta el atardecer. En zonas más conservadoras, evita comer, beber o fumar abiertamente delante de quienes ayunan, y disfruta de las animadas cenas si te invitan.",
+    "pt": "Durante o Ramadão, muitas pessoas jejuam do amanhecer ao pôr do sol. Em zonas mais conservadoras, evita comer, beber ou fumar abertamente à frente de quem está em jejum, e aproveita os animados jantares se fores convidado.",
+    "pt_BR": "Durante o Ramadã, muitas pessoas jejuam do amanhecer ao pôr do sol. Em áreas mais conservadoras, evite comer, beber ou fumar abertamente na frente de quem está em jejum, e aproveite os animados jantares se for convidado.",
+    "fr": "Pendant le ramadan, beaucoup de personnes jeûnent de l'aube au coucher du soleil. Dans les régions plus conservatrices, évitez de manger, boire ou fumer ouvertement devant elles, et profitez des repas du soir animés si vous êtes invité.",
+    "de": "Im Ramadan fasten viele Menschen von der Morgendämmerung bis zum Sonnenuntergang. In konservativeren Gegenden solltest du vor Fastenden nicht offen essen, trinken oder rauchen und bei Einladung die lebhaften Abendessen genießen."
+   }
+  },
+  {
+   "id": "ct-ID-21",
+   "category": "transport",
+   "text": {
+    "en": "Ride-hailing apps such as Gojek and Grab are widely used for cars, motorbike taxis, food delivery and more. They show the price up front, which makes getting around simpler.",
+    "it": "Le app di trasporto come Gojek e Grab sono molto usate per auto, moto-taxi, consegne di cibo e altro. Mostrano il prezzo in anticipo, il che semplifica gli spostamenti.",
+    "es": "Las aplicaciones de transporte como Gojek y Grab se usan mucho para coches, mototaxis, comida a domicilio y más. Muestran el precio de antemano, lo que facilita moverse.",
+    "pt": "As aplicações de transporte como Gojek e Grab são muito usadas para carros, mototáxis, entrega de comida e mais. Mostram o preço de antemão, o que facilita as deslocações.",
+    "pt_BR": "Os aplicativos de transporte como Gojek e Grab são muito usados para carros, mototáxis, entrega de comida e mais. Mostram o preço antes, o que facilita se locomover.",
+    "fr": "Les applications de VTC comme Gojek et Grab sont très utilisées pour les voitures, les mototaxis, la livraison de repas et plus encore. Elles affichent le prix à l'avance, ce qui simplifie les déplacements.",
+    "de": "Fahrdienst-Apps wie Gojek und Grab werden viel genutzt, für Autos, Motorradtaxis, Essenslieferungen und mehr. Sie zeigen den Preis vorab an, was das Vorankommen erleichtert."
+   }
+  },
+  {
+   "id": "ct-ID-22",
+   "category": "nature",
+   "text": {
+    "en": "Indonesia has many active volcanoes and popular hiking trails. Check official park status and weather, hire local guides where required, and take your rubbish back down with you.",
+    "it": "L'Indonesia ha molti vulcani attivi e popolari sentieri escursionistici. Controlla lo stato ufficiale del parco e il meteo, assumi guide locali dove richiesto e riporta a valle i tuoi rifiuti.",
+    "es": "Indonesia tiene muchos volcanes activos y rutas de senderismo populares. Consulta el estado oficial del parque y el tiempo, contrata guías locales donde se exija y baja tu basura contigo.",
+    "pt": "A Indonésia tem muitos vulcões ativos e trilhos de caminhada populares. Consulta o estado oficial do parque e o tempo, contrata guias locais onde for exigido e leva o teu lixo contigo.",
+    "pt_BR": "A Indonésia tem muitos vulcões ativos e trilhas populares. Consulte o status oficial do parque e o tempo, contrate guias locais onde for exigido e leve seu lixo de volta com você.",
+    "fr": "L'Indonésie compte de nombreux volcans actifs et des sentiers de randonnée très prisés. Vérifiez l'état officiel du parc et la météo, engagez des guides locaux quand c'est exigé et redescendez avec vos déchets.",
+    "de": "Indonesien hat viele aktive Vulkane und beliebte Wanderwege. Informiere dich über den offiziellen Parkstatus und das Wetter, buche wo nötig lokale Guides und nimm deinen Müll wieder mit."
+   }
+  },
+  {
+   "id": "ct-ID-23",
+   "category": "language",
+   "text": {
+    "en": "Handy words are 'terima kasih' (thank you), 'tolong' (please), 'maaf' (sorry) and 'permisi' (excuse me). Address older people as 'Bapak' (sir) or 'Ibu' (madam) to show respect.",
+    "it": "Parole utili sono 'terima kasih' (grazie), 'tolong' (per favore), 'maaf' (scusa) e 'permisi' (permesso). Rivolgiti alle persone più anziane con 'Bapak' (signore) o 'Ibu' (signora) per rispetto.",
+    "es": "Palabras útiles son 'terima kasih' (gracias), 'tolong' (por favor), 'maaf' (perdón) y 'permisi' (con permiso). Dirígete a las personas mayores como 'Bapak' (señor) o 'Ibu' (señora) en señal de respeto.",
+    "pt": "Palavras úteis são 'terima kasih' (obrigado), 'tolong' (por favor), 'maaf' (desculpa) e 'permisi' (com licença). Trata as pessoas mais velhas por 'Bapak' (senhor) ou 'Ibu' (senhora) em sinal de respeito.",
+    "pt_BR": "Palavras úteis são 'terima kasih' (obrigado), 'tolong' (por favor), 'maaf' (desculpa) e 'permisi' (com licença). Trate as pessoas mais velhas por 'Bapak' (senhor) ou 'Ibu' (senhora) em sinal de respeito.",
+    "fr": "Mots utiles : 'terima kasih' (merci), 'tolong' (s'il vous plaît), 'maaf' (pardon) et 'permisi' (excusez-moi). Adressez-vous aux personnes plus âgées par 'Bapak' (monsieur) ou 'Ibu' (madame) par respect.",
+    "de": "Nützliche Wörter sind 'terima kasih' (danke), 'tolong' (bitte), 'maaf' (Entschuldigung) und 'permisi' (Verzeihung). Sprich ältere Menschen aus Respekt mit 'Bapak' (Herr) oder 'Ibu' (Frau) an."
+   }
+  },
+  {
+   "id": "ct-ID-24",
+   "category": "festivals",
+   "text": {
+    "en": "At Eid al-Fitr (Lebaran), millions travel to their home towns in a tradition called 'mudik'. A warm greeting is 'Selamat Lebaran', and people often ask forgiveness with 'mohon maaf lahir dan batin'.",
+    "it": "Per l'Eid al-Fitr (Lebaran) milioni di persone tornano ai paesi d'origine in una tradizione chiamata 'mudik'. Un saluto caloroso è 'Selamat Lebaran', e spesso si chiede perdono con 'mohon maaf lahir dan batin'.",
+    "es": "En el Eid al-Fitr (Lebaran), millones de personas viajan a sus pueblos de origen en una tradición llamada 'mudik'. Un saludo cálido es 'Selamat Lebaran', y a menudo se pide perdón con 'mohon maaf lahir dan batin'.",
+    "pt": "No Eid al-Fitr (Lebaran), milhões de pessoas viajam para as suas terras de origem numa tradição chamada 'mudik'. Uma saudação calorosa é 'Selamat Lebaran', e muitas vezes pede-se perdão com 'mohon maaf lahir dan batin'.",
+    "pt_BR": "No Eid al-Fitr (Lebaran), milhões de pessoas viajam para suas cidades de origem em uma tradição chamada 'mudik'. Uma saudação calorosa é 'Selamat Lebaran', e muitas vezes se pede perdão com 'mohon maaf lahir dan batin'.",
+    "fr": "Pour l'Aïd el-Fitr (Lebaran), des millions de personnes retournent dans leur ville d'origine, une tradition appelée 'mudik'. Un chaleureux 'Selamat Lebaran' est de mise, et l'on demande souvent pardon avec 'mohon maaf lahir dan batin'.",
+    "de": "Zum Eid al-Fitr (Lebaran) reisen Millionen Menschen in ihre Heimatorte, eine Tradition namens 'Mudik'. Ein herzlicher Gruß ist 'Selamat Lebaran', und oft bittet man mit 'mohon maaf lahir dan batin' um Verzeihung."
+   }
+  },
+  {
+   "id": "ct-ID-25",
+   "category": "festivals",
+   "text": {
+    "en": "Nyepi, the Balinese Day of Silence, is observed across the whole island: no travel, no lights and no noise outdoors, and the airport closes. Visitors are expected to stay in their accommodation.",
+    "it": "Nyepi, il Giorno del Silenzio balinese, è osservato su tutta l'isola: niente spostamenti, luci o rumori all'aperto, e l'aeroporto chiude. I visitatori sono tenuti a restare nel proprio alloggio.",
+    "es": "Nyepi, el Día del Silencio balinés, se observa en toda la isla: sin viajar, sin luces y sin ruido en el exterior, y el aeropuerto cierra. Se espera que los visitantes permanezcan en su alojamiento.",
+    "pt": "O Nyepi, o Dia do Silêncio balinês, é observado em toda a ilha: sem viagens, sem luzes e sem ruído no exterior, e o aeroporto fecha. Espera-se que os visitantes fiquem no alojamento.",
+    "pt_BR": "O Nyepi, o Dia do Silêncio balinês, é observado em toda a ilha: sem viagens, sem luzes e sem barulho do lado de fora, e o aeroporto fecha. Espera-se que os visitantes fiquem na hospedagem.",
+    "fr": "Nyepi, le Jour du Silence balinais, est observé sur toute l'île : pas de déplacements, ni lumières ni bruit à l'extérieur, et l'aéroport ferme. Les visiteurs sont censés rester dans leur hébergement.",
+    "de": "Nyepi, der balinesische Tag der Stille, gilt auf der ganzen Insel: keine Fahrten, kein Licht und kein Lärm draußen, der Flughafen schließt. Besucher bleiben in ihrer Unterkunft."
+   }
+  },
+  {
+   "id": "ct-ID-26",
+   "category": "family",
+   "text": {
+    "en": "Family is central to daily life, and several generations often live close together. Showing respect to elders, for example by greeting them first, makes a very good impression.",
+    "it": "La famiglia è centrale nella vita quotidiana e spesso più generazioni vivono vicine. Mostrare rispetto agli anziani, per esempio salutandoli per primi, fa un'ottima impressione.",
+    "es": "La familia es central en la vida diaria y a menudo varias generaciones viven cerca. Mostrar respeto a los mayores, por ejemplo saludándolos primero, causa muy buena impresión.",
+    "pt": "A família é central no dia a dia e várias gerações vivem muitas vezes perto umas das outras. Mostrar respeito pelos mais velhos, por exemplo cumprimentando-os primeiro, causa muito boa impressão.",
+    "pt_BR": "A família é central no dia a dia e várias gerações costumam morar perto umas das outras. Mostrar respeito pelos mais velhos, por exemplo cumprimentando-os primeiro, causa uma ótima impressão.",
+    "fr": "La famille est au cœur du quotidien et plusieurs générations vivent souvent à proximité. Montrer du respect aux aînés, par exemple en les saluant en premier, fait très bonne impression.",
+    "de": "Die Familie steht im Alltag im Mittelpunkt, und oft leben mehrere Generationen nah beieinander. Respekt gegenüber Älteren zu zeigen, etwa indem man sie zuerst grüßt, macht einen sehr guten Eindruck."
+   }
+  },
+  {
+   "id": "ct-ID-27",
+   "category": "money",
+   "text": {
+    "en": "The currency is the rupiah (IDR), with prices in large numbers. QRIS QR-code payments are widespread, but keep small cash for street stalls, parking and tips.",
+    "it": "La valuta è la rupia indonesiana (IDR), con prezzi a numeri molto alti. I pagamenti con codice QR QRIS sono diffusi, ma tieni dei contanti in piccoli tagli per bancarelle, parcheggi e mance.",
+    "es": "La moneda es la rupia indonesia (IDR), con precios en cifras grandes. Los pagos con código QR QRIS están muy extendidos, pero lleva efectivo suelto para puestos callejeros, aparcamientos y propinas.",
+    "pt": "A moeda é a rupia indonésia (IDR), com preços em números grandes. Os pagamentos com código QR QRIS estão muito difundidos, mas leva dinheiro miúdo para bancas de rua, estacionamento e gorjetas.",
+    "pt_BR": "A moeda é a rupia indonésia (IDR), com preços em números grandes. Os pagamentos por QR code QRIS são muito difundidos, mas leve dinheiro trocado para barracas de rua, estacionamento e gorjetas.",
+    "fr": "La monnaie est la roupie indonésienne (IDR), avec des prix en grands nombres. Les paiements par QR code QRIS sont très répandus, mais gardez de la petite monnaie pour les stands de rue, les parkings et les pourboires.",
+    "de": "Die Währung ist die Indonesische Rupiah (IDR), mit Preisen in großen Zahlen. QRIS-QR-Code-Zahlungen sind weit verbreitet, aber für Straßenstände, Parkplätze und Trinkgeld brauchst du etwas Kleingeld."
+   }
+  },
+  {
+   "id": "ct-ID-28",
+   "category": "photography",
+   "text": {
+    "en": "Always ask before photographing people, especially at ceremonies, in villages and in places of worship. At religious events, keep a respectful distance and never block worshippers.",
+    "it": "Chiedi sempre il permesso prima di fotografare le persone, soprattutto durante le cerimonie, nei villaggi e nei luoghi di culto. Agli eventi religiosi mantieni una distanza rispettosa e non ostacolare i fedeli.",
+    "es": "Pide siempre permiso antes de fotografiar a personas, sobre todo en ceremonias, pueblos y lugares de culto. En eventos religiosos, mantén una distancia respetuosa y nunca estorbes a los fieles.",
+    "pt": "Pede sempre autorização antes de fotografar pessoas, sobretudo em cerimónias, aldeias e locais de culto. Em eventos religiosos, mantém uma distância respeitosa e nunca bloqueies os fiéis.",
+    "pt_BR": "Peça sempre permissão antes de fotografar pessoas, principalmente em cerimônias, vilarejos e locais de culto. Em eventos religiosos, mantenha uma distância respeitosa e nunca atrapalhe os fiéis.",
+    "fr": "Demandez toujours la permission avant de photographier des personnes, surtout lors de cérémonies, dans les villages et les lieux de culte. Lors d'événements religieux, gardez une distance respectueuse et ne gênez jamais les fidèles.",
+    "de": "Frag immer um Erlaubnis, bevor du Menschen fotografierst, besonders bei Zeremonien, in Dörfern und an Gebetsstätten. Halte bei religiösen Anlässen respektvoll Abstand und blockiere nie die Gläubigen."
+   }
+  },
+  {
+   "id": "ct-ID-29",
+   "category": "safety",
+   "text": {
+    "en": "Tap water is generally not safe to drink, so use bottled or properly filtered water, including for brushing teeth if you have a sensitive stomach.",
+    "it": "L'acqua del rubinetto in genere non è potabile, quindi usa acqua in bottiglia o filtrata a dovere, anche per lavarti i denti se hai lo stomaco delicato.",
+    "es": "El agua del grifo en general no es potable, así que usa agua embotellada o bien filtrada, también para lavarte los dientes si tienes el estómago sensible.",
+    "pt": "A água da torneira geralmente não é segura para beber, por isso usa água engarrafada ou bem filtrada, inclusive para lavar os dentes se tiveres o estômago sensível.",
+    "pt_BR": "A água da torneira geralmente não é segura para beber, então use água engarrafada ou bem filtrada, inclusive para escovar os dentes se tiver o estômago sensível.",
+    "fr": "L'eau du robinet n'est généralement pas potable : utilisez de l'eau en bouteille ou bien filtrée, y compris pour vous brosser les dents si vous avez l'estomac sensible.",
+    "de": "Leitungswasser ist in der Regel nicht trinkbar, nutze also Flaschenwasser oder gut gefiltertes Wasser, bei empfindlichem Magen auch zum Zähneputzen."
+   }
+  },
+  {
+   "id": "ct-ID-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Indonesians take great pride in batik, wayang puppet theatre and angklung, all recognised by UNESCO. Many people wear batik on National Batik Day, 2 October, and love to explain its patterns.",
+    "it": "Gli indonesiani sono molto orgogliosi di batik, teatro delle marionette wayang e angklung, tutti riconosciuti dall'UNESCO. Molti indossano il batik il 2 ottobre, Giornata nazionale del batik, e amano spiegarne i motivi.",
+    "es": "Los indonesios están muy orgullosos del batik, el teatro de marionetas wayang y el angklung, todos reconocidos por la UNESCO. Mucha gente viste batik el 2 de octubre, Día Nacional del Batik, y le encanta explicar sus motivos.",
+    "pt": "Os indonésios têm grande orgulho no batik, no teatro de marionetas wayang e no angklung, todos reconhecidos pela UNESCO. Muita gente veste batik a 2 de outubro, Dia Nacional do Batik, e adora explicar os seus padrões.",
+    "pt_BR": "Os indonésios têm grande orgulho do batik, do teatro de bonecos wayang e do angklung, todos reconhecidos pela UNESCO. Muita gente veste batik em 2 de outubro, Dia Nacional do Batik, e adora explicar seus padrões.",
+    "fr": "Les Indonésiens sont très fiers du batik, du théâtre de marionnettes wayang et de l'angklung, tous reconnus par l'UNESCO. Beaucoup portent du batik le 2 octobre, Journée nationale du batik, et aiment en expliquer les motifs.",
+    "de": "Die Indonesier sind sehr stolz auf Batik, das Wayang-Puppentheater und das Angklung, alle von der UNESCO anerkannt. Viele tragen am 2. Oktober, dem Nationalen Batik-Tag, Batik und erklären gern die Muster."
+   }
+  }
+ ],
+ "IE": [
+  {
+   "id": "ct-IE-01",
+   "category": "greetings",
+   "text": {
+    "en": "'How's it going?' or 'Howya?' is usually a casual hello, not a request for a detailed answer. A relaxed reply like 'Grand, thanks, you?' is exactly what people expect.",
+    "it": "'How's it going?' o 'Howya?' di solito è un saluto informale, non una richiesta di risposta dettagliata. Una risposta rilassata come 'Grand, thanks, you?' è proprio ciò che ci si aspetta.",
+    "es": "'How's it going?' o 'Howya?' suele ser un saludo informal, no una petición de respuesta detallada. Una respuesta relajada como 'Grand, thanks, you?' es justo lo que se espera.",
+    "pt": "'How's it going?' ou 'Howya?' costuma ser um cumprimento informal, não um pedido de resposta detalhada. Uma resposta descontraída como 'Grand, thanks, you?' é exatamente o que se espera.",
+    "pt_BR": "'How's it going?' ou 'Howya?' costuma ser um cumprimento informal, não um pedido de resposta detalhada. Uma resposta descontraída como 'Grand, thanks, you?' é exatamente o que se espera.",
+    "fr": "'How's it going ?' ou 'Howya ?' est en général un salut décontracté, pas une demande de réponse détaillée. Une réponse simple comme 'Grand, thanks, you ?' est exactement ce qu'on attend.",
+    "de": "'How's it going?' oder 'Howya?' ist meist ein lockerer Gruß und keine Bitte um eine ausführliche Antwort. Eine entspannte Antwort wie 'Grand, thanks, you?' ist genau das, was man erwartet."
+   }
+  },
+  {
+   "id": "ct-IE-02",
+   "category": "greetings",
+   "text": {
+    "en": "People in Ireland usually move to first names quickly, even in work settings. A firm but friendly handshake and a smile are the normal way to meet someone new.",
+    "it": "In Irlanda si passa in fretta ai nomi di battesimo, anche sul lavoro. Una stretta di mano decisa ma amichevole e un sorriso sono il modo normale di conoscere qualcuno.",
+    "es": "En Irlanda se pasa pronto al nombre de pila, incluso en el trabajo. Un apretón de manos firme pero amistoso y una sonrisa son la forma normal de conocer a alguien.",
+    "pt": "Na Irlanda passa-se depressa aos nomes próprios, mesmo no trabalho. Um aperto de mão firme mas simpático e um sorriso são a forma normal de conhecer alguém.",
+    "pt_BR": "Na Irlanda se passa rápido para o primeiro nome, até no trabalho. Um aperto de mão firme mas simpático e um sorriso são a forma normal de conhecer alguém.",
+    "fr": "En Irlande, on passe vite aux prénoms, même au travail. Une poignée de main ferme mais amicale et un sourire sont la façon normale de rencontrer quelqu'un.",
+    "de": "In Irland wechselt man schnell zum Vornamen, selbst im Beruf. Ein fester, aber freundlicher Händedruck und ein Lächeln sind die normale Art, jemanden kennenzulernen."
+   }
+  },
+  {
+   "id": "ct-IE-03",
+   "category": "conversation",
+   "text": {
+    "en": "Small talk about the weather is a classic way to start a chat, since it changes so often. Follow with a question about where someone is from or what they like about their area.",
+    "it": "Chiacchierare del tempo è un classico modo per iniziare una conversazione, visto che cambia così spesso. Poi chiedi da dove viene la persona o cosa le piace della sua zona.",
+    "es": "Hablar del tiempo es una forma clásica de empezar la charla, ya que cambia tanto. Después pregunta de dónde es la persona o qué le gusta de su zona.",
+    "pt": "Falar do tempo é uma forma clássica de começar a conversa, já que muda tantas vezes. Depois pergunta de onde é a pessoa ou o que gosta na sua zona.",
+    "pt_BR": "Falar do tempo é um jeito clássico de começar a conversa, já que ele muda tanto. Depois pergunte de onde a pessoa é ou do que ela gosta na região dela.",
+    "fr": "Parler de la météo est une manière classique d'engager la conversation, car elle change si souvent. Demandez ensuite d'où vient la personne ou ce qu'elle aime dans sa région.",
+    "de": "Smalltalk über das Wetter ist ein klassischer Gesprächseinstieg, denn es wechselt so oft. Frag danach, woher jemand kommt oder was ihm an der Gegend gefällt."
+   }
+  },
+  {
+   "id": "ct-IE-04",
+   "category": "conversation",
+   "text": {
+    "en": "Friendly teasing, often called 'slagging', is common among friends and usually a sign of affection. Take it lightly, answer with humour, and never take it as a real insult.",
+    "it": "Prendersi bonariamente in giro, spesso chiamato 'slagging', è comune tra amici e di solito è segno di affetto. Prendilo con leggerezza, rispondi con umorismo e non considerarlo un vero insulto.",
+    "es": "Las bromas amistosas, a menudo llamadas 'slagging', son habituales entre amigos y suelen ser una muestra de cariño. Tómalo con ligereza, responde con humor y no lo tomes como un insulto real.",
+    "pt": "As piadas amigáveis, muitas vezes chamadas 'slagging', são comuns entre amigos e costumam ser sinal de carinho. Leva com leveza, responde com humor e não encares como um insulto a sério.",
+    "pt_BR": "As brincadeiras amigáveis, muitas vezes chamadas de 'slagging', são comuns entre amigos e costumam ser sinal de carinho. Leve numa boa, responda com humor e não encare como um insulto de verdade.",
+    "fr": "Les taquineries amicales, souvent appelées 'slagging', sont courantes entre amis et signe d'affection. Prenez-les avec légèreté, répondez avec humour et n'y voyez pas une vraie insulte.",
+    "de": "Freundliches Necken, oft 'Slagging' genannt, ist unter Freunden üblich und meist ein Zeichen von Zuneigung. Nimm es leicht, antworte mit Humor und fasse es nicht als echte Beleidigung auf."
+   }
+  },
+  {
+   "id": "ct-IE-05",
+   "category": "conversation",
+   "text": {
+    "en": "Storytelling and good conversation, or 'craic' (fun, good company), are highly valued. Sharing a funny story about yourself is a great way to connect.",
+    "it": "Il racconto di storie e la buona conversazione, o 'craic' (divertimento, buona compagnia), sono molto apprezzati. Raccontare una storia buffa su di te è un ottimo modo per creare legame.",
+    "es": "Contar historias y conversar bien, o 'craic' (diversión, buena compañía), se valora mucho. Compartir una anécdota graciosa sobre ti es una gran forma de conectar.",
+    "pt": "Contar histórias e conversar bem, ou 'craic' (diversão, boa companhia), é muito valorizado. Partilhar uma história engraçada sobre ti é uma ótima forma de criar ligação.",
+    "pt_BR": "Contar histórias e conversar bem, ou 'craic' (diversão, boa companhia), é muito valorizado. Compartilhar uma história engraçada sobre você é uma ótima forma de criar conexão.",
+    "fr": "Raconter des histoires et bien discuter, ou le 'craic' (plaisir, bonne compagnie), est très apprécié. Partager une anecdote drôle sur soi est une excellente façon de créer du lien.",
+    "de": "Geschichten erzählen und gute Gespräche, das 'Craic' (Spaß, gute Gesellschaft), werden sehr geschätzt. Eine lustige Anekdote über dich selbst ist eine tolle Art, Kontakt zu knüpfen."
+   }
+  },
+  {
+   "id": "ct-IE-06",
+   "category": "conversation",
+   "text": {
+    "en": "Ireland (the Republic) is an independent country, and Northern Ireland is part of the United Kingdom. Do not call Irish people British, and ask rather than assume which one someone means.",
+    "it": "L'Irlanda (la Repubblica) è un paese indipendente, mentre l'Irlanda del Nord fa parte del Regno Unito. Non chiamare britannici gli irlandesi e chiedi, senza dare per scontato, a quale delle due ci si riferisce.",
+    "es": "Irlanda (la República) es un país independiente, e Irlanda del Norte forma parte del Reino Unido. No llames británicos a los irlandeses y pregunta en lugar de suponer a cuál de las dos se refiere alguien.",
+    "pt": "A Irlanda (a República) é um país independente, e a Irlanda do Norte faz parte do Reino Unido. Não chames britânicos aos irlandeses e pergunta, em vez de presumires, a qual das duas alguém se refere.",
+    "pt_BR": "A Irlanda (a República) é um país independente, e a Irlanda do Norte faz parte do Reino Unido. Não chame os irlandeses de britânicos e pergunte, em vez de presumir, a qual das duas alguém se refere.",
+    "fr": "L'Irlande (la République) est un pays indépendant, et l'Irlande du Nord fait partie du Royaume-Uni. N'appelez pas les Irlandais des Britanniques et demandez plutôt que de supposer de laquelle on parle.",
+    "de": "Irland (die Republik) ist ein unabhängiger Staat, Nordirland gehört zum Vereinigten Königreich. Nenne Iren nicht Briten und frag lieber nach, statt anzunehmen, welches von beiden jemand meint."
+   }
+  },
+  {
+   "id": "ct-IE-07",
+   "category": "dining",
+   "text": {
+    "en": "Being offered a cup of tea is almost automatic when you visit an Irish home. Accepting is a friendly gesture, and a polite refusal is also fine; just do it warmly.",
+    "it": "Quando si visita una casa irlandese, l'offerta di una tazza di tè è quasi automatica. Accettare è un gesto cordiale, ma anche un rifiuto gentile va bene; basta farlo con calore.",
+    "es": "Cuando visitas una casa irlandesa, que te ofrezcan una taza de té es casi automático. Aceptar es un gesto amable, y rechazarlo con educación también vale; solo hazlo con cordialidad.",
+    "pt": "Quando se visita uma casa irlandesa, oferecerem-te uma chávena de chá é quase automático. Aceitar é um gesto simpático, e recusar com educação também está bem; basta fazê-lo com simpatia.",
+    "pt_BR": "Quando se visita uma casa irlandesa, oferecerem uma xícara de chá é quase automático. Aceitar é um gesto simpático, e recusar com educação também tudo bem; basta fazer isso com simpatia.",
+    "fr": "Quand on visite une maison irlandaise, on vous propose presque automatiquement une tasse de thé. Accepter est un geste amical, et un refus poli est tout aussi acceptable ; faites-le simplement chaleureusement.",
+    "de": "Wer ein irisches Zuhause besucht, bekommt fast automatisch eine Tasse Tee angeboten. Annehmen ist eine freundliche Geste, ein höfliches Nein ist aber auch in Ordnung; sag es einfach herzlich."
+   }
+  },
+  {
+   "id": "ct-IE-08",
+   "category": "dining",
+   "text": {
+    "en": "The potato remains central to Irish cooking, in dishes like colcannon, boxty and Irish stew. Brown soda bread and a full Irish breakfast are other classics worth trying.",
+    "it": "La patata resta al centro della cucina irlandese, in piatti come colcannon, boxty e Irish stew. Il pane scuro al bicarbonato e la full Irish breakfast sono altri classici da provare.",
+    "es": "La patata sigue siendo central en la cocina irlandesa, en platos como el colcannon, el boxty y el Irish stew. El pan de soda integral y el desayuno irlandés completo son otros clásicos que probar.",
+    "pt": "A batata continua central na cozinha irlandesa, em pratos como colcannon, boxty e Irish stew. O pão de soda integral e o pequeno-almoço irlandês completo são outros clássicos a experimentar.",
+    "pt_BR": "A batata continua central na cozinha irlandesa, em pratos como colcannon, boxty e Irish stew. O pão de soda integral e o café da manhã irlandês completo são outros clássicos para provar.",
+    "fr": "La pomme de terre reste au cœur de la cuisine irlandaise, dans des plats comme le colcannon, le boxty et l'Irish stew. Le pain de soude complet et le petit-déjeuner irlandais complet sont d'autres classiques à goûter.",
+    "de": "Die Kartoffel steht weiterhin im Zentrum der irischen Küche, in Gerichten wie Colcannon, Boxty und Irish Stew. Dunkles Sodabrot und das volle irische Frühstück sind weitere Klassiker zum Probieren."
+   }
+  },
+  {
+   "id": "ct-IE-09",
+   "category": "dining",
+   "text": {
+    "en": "Meal words can confuse visitors: in many families 'dinner' is the midday meal and 'tea' is the evening meal, while others use them the other way round. Ask what time food is planned.",
+    "it": "Le parole dei pasti possono confondere: in molte famiglie 'dinner' è il pasto di mezzogiorno e 'tea' quello serale, mentre altre li usano al contrario. Chiedi a che ora è previsto il pasto.",
+    "es": "Las palabras de las comidas pueden confundir: en muchas familias 'dinner' es la comida del mediodía y 'tea' la cena, mientras que otras los usan al revés. Pregunta a qué hora se come.",
+    "pt": "As palavras das refeições podem confundir: em muitas famílias 'dinner' é o almoço e 'tea' é o jantar, enquanto outras as usam ao contrário. Pergunta a que horas está prevista a refeição.",
+    "pt_BR": "As palavras das refeições podem confundir: em muitas famílias 'dinner' é o almoço e 'tea' é o jantar, enquanto outras as usam ao contrário. Pergunte a que horas a refeição está prevista.",
+    "fr": "Les mots des repas peuvent dérouter : dans beaucoup de familles, 'dinner' désigne le repas de midi et 'tea' celui du soir, d'autres font l'inverse. Demandez à quelle heure le repas est prévu.",
+    "de": "Die Mahlzeitenbegriffe können verwirren: In vielen Familien ist 'dinner' das Mittagessen und 'tea' das Abendessen, andere handhaben es umgekehrt. Frag nach, wann gegessen wird."
+   }
+  },
+  {
+   "id": "ct-IE-10",
+   "category": "nightlife",
+   "text": {
+    "en": "In pubs, people often buy drinks in rounds, so each person takes a turn paying for the group. Join in when it is your turn; soft drinks are just as welcome, and pub culture is about company, not alcohol.",
+    "it": "Nei pub spesso si offrono i drink a turno, e ognuno paga a rotazione per il gruppo. Partecipa quando tocca a te; vanno benissimo anche le bevande analcoliche, perché la cultura del pub è compagnia, non alcol.",
+    "es": "En los pubs es habitual pedir en rondas, y cada persona paga por turnos para el grupo. Únete cuando te toque; las bebidas sin alcohol son igual de bienvenidas, porque la cultura del pub es compañía, no alcohol.",
+    "pt": "Nos pubs é habitual pagar bebidas por rondas, e cada pessoa paga à vez para o grupo. Participa quando for a tua vez; as bebidas sem álcool são igualmente bem-vindas, porque a cultura do pub é companhia, não álcool.",
+    "pt_BR": "Nos pubs é comum pagar as bebidas em rodadas, e cada pessoa paga na sua vez para o grupo. Participe quando for a sua vez; bebidas sem álcool são igualmente bem-vindas, porque a cultura do pub é companhia, não álcool.",
+    "fr": "Dans les pubs, on offre souvent des tournées : chacun paie à son tour pour le groupe. Participez quand c'est votre tour ; les boissons sans alcool sont tout aussi bienvenues, car la culture du pub, c'est la compagnie, pas l'alcool.",
+    "de": "In Pubs kauft man Getränke oft in Runden, jeder bezahlt reihum für die Gruppe. Mach mit, wenn du dran bist; alkoholfreie Getränke sind genauso willkommen, denn in der Pubkultur geht es um Gesellschaft, nicht um Alkohol."
+   }
+  },
+  {
+   "id": "ct-IE-11",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping is appreciated but not obligatory in Ireland. In restaurants with table service, about 10 percent for good service is usual; check whether a service charge is already added, as it often is for large groups.",
+    "it": "La mancia in Irlanda è gradita ma non obbligatoria. Nei ristoranti con servizio al tavolo, circa il 10 per cento per un buon servizio è consuetudine; controlla se il servizio è già addebitato, come spesso accade per i gruppi numerosi.",
+    "es": "La propina en Irlanda se agradece, pero no es obligatoria. En restaurantes con servicio de mesa, lo habitual es dejar un 10 por ciento por buen servicio; comprueba si ya se ha añadido un cargo por servicio, como suele pasar con grupos grandes.",
+    "pt": "A gorjeta na Irlanda é apreciada, mas não obrigatória. Em restaurantes com serviço de mesa, cerca de 10 por cento por um bom serviço é habitual; vê se já foi acrescentada uma taxa de serviço, o que acontece muitas vezes com grupos grandes.",
+    "pt_BR": "A gorjeta na Irlanda é bem-vinda, mas não obrigatória. Em restaurantes com serviço de mesa, cerca de 10 por cento por um bom atendimento é comum; confira se a taxa de serviço já foi incluída, o que costuma acontecer com grupos grandes.",
+    "fr": "Le pourboire est apprécié en Irlande mais pas obligatoire. Dans les restaurants avec service à table, environ 10 pour cent pour un bon service est d'usage ; vérifiez si un service est déjà ajouté, ce qui arrive souvent pour les grands groupes.",
+    "de": "Trinkgeld wird in Irland geschätzt, ist aber nicht Pflicht. In Restaurants mit Tischservice sind etwa 10 Prozent für guten Service üblich; prüfe, ob schon eine Servicegebühr enthalten ist, wie es bei großen Gruppen oft der Fall ist."
+   }
+  },
+  {
+   "id": "ct-IE-12",
+   "category": "tipping",
+   "text": {
+    "en": "At the bar, tipping for a pint is not expected. For table service in a pub, or a taxi ride, rounding up to the next euro or adding a small tip is a friendly gesture.",
+    "it": "Al bancone non ci si aspetta la mancia per una pinta. Per il servizio al tavolo in un pub, o per una corsa in taxi, arrotondare all'euro successivo o lasciare una piccola mancia è un gesto cordiale.",
+    "es": "En la barra no se espera propina por una pinta. Por el servicio en mesa de un pub o un viaje en taxi, redondear al euro siguiente o dejar una pequeña propina es un gesto amable.",
+    "pt": "No balcão não se espera gorjeta por uma pint. Pelo serviço à mesa num pub ou numa viagem de táxi, arredondar para o euro seguinte ou deixar uma pequena gorjeta é um gesto simpático.",
+    "pt_BR": "No balcão não se espera gorjeta por uma pint. Pelo serviço à mesa em um pub ou por uma corrida de táxi, arredondar para o euro seguinte ou deixar uma gorjeta pequena é um gesto simpático.",
+    "fr": "Au comptoir, on ne s'attend pas à un pourboire pour une pinte. Pour le service à table dans un pub ou une course en taxi, arrondir à l'euro supérieur ou laisser un petit pourboire est un geste sympathique.",
+    "de": "An der Theke wird für ein Pint kein Trinkgeld erwartet. Für Tischservice im Pub oder eine Taxifahrt ist Aufrunden auf den nächsten Euro oder ein kleines Trinkgeld eine freundliche Geste."
+   }
+  },
+  {
+   "id": "ct-IE-13",
+   "category": "gifts",
+   "text": {
+    "en": "If you are invited to someone's home, bring something small like flowers, chocolates or a bottle of wine. Arriving empty-handed is not a disaster, but a small gesture is always appreciated.",
+    "it": "Se sei invitato a casa di qualcuno, porta qualcosa di piccolo come fiori, cioccolatini o una bottiglia di vino. Arrivare a mani vuote non è un dramma, ma un piccolo gesto è sempre gradito.",
+    "es": "Si te invitan a casa de alguien, lleva algo pequeño como flores, bombones o una botella de vino. Llegar con las manos vacías no es un desastre, pero un pequeño detalle siempre se agradece.",
+    "pt": "Se fores convidado para casa de alguém, leva algo pequeno como flores, chocolates ou uma garrafa de vinho. Chegar de mãos vazias não é um desastre, mas um pequeno gesto é sempre apreciado.",
+    "pt_BR": "Se for convidado para a casa de alguém, leve algo pequeno como flores, chocolates ou uma garrafa de vinho. Chegar de mãos vazias não é um desastre, mas um pequeno gesto é sempre apreciado.",
+    "fr": "Si vous êtes invité chez quelqu'un, apportez un petit présent comme des fleurs, des chocolats ou une bouteille de vin. Arriver les mains vides n'est pas dramatique, mais un petit geste est toujours apprécié.",
+    "de": "Wenn du bei jemandem zu Hause eingeladen bist, bring eine Kleinigkeit wie Blumen, Pralinen oder eine Flasche Wein mit. Mit leeren Händen zu kommen ist kein Drama, aber eine kleine Geste kommt immer gut an."
+   }
+  },
+  {
+   "id": "ct-IE-14",
+   "category": "dress",
+   "text": {
+    "en": "The weather can change within the hour, so dress in layers and always carry a light waterproof jacket. Smart casual is fine almost everywhere, including most restaurants and pubs.",
+    "it": "Il tempo può cambiare nel giro di un'ora, quindi vestiti a strati e porta sempre una giacca impermeabile leggera. Lo smart casual va bene quasi ovunque, compresi la maggior parte di ristoranti e pub.",
+    "es": "El tiempo puede cambiar en una hora, así que vístete por capas y lleva siempre un chubasquero ligero. La ropa informal elegante vale casi en todas partes, incluidos la mayoría de restaurantes y pubs.",
+    "pt": "O tempo pode mudar numa hora, por isso veste-te às camadas e leva sempre um casaco impermeável leve. O estilo informal elegante serve quase em todo o lado, incluindo a maioria dos restaurantes e pubs.",
+    "pt_BR": "O tempo pode mudar em uma hora, então vista-se em camadas e leve sempre uma jaqueta impermeável leve. O estilo casual elegante serve quase em todo lugar, inclusive na maioria dos restaurantes e pubs.",
+    "fr": "Le temps peut changer en une heure : habillez-vous en couches et ayez toujours un imperméable léger. Une tenue décontractée mais soignée convient presque partout, y compris dans la plupart des restaurants et pubs.",
+    "de": "Das Wetter kann sich innerhalb einer Stunde ändern, kleide dich also in Schichten und hab immer eine leichte Regenjacke dabei. Leger-elegant passt fast überall, auch in den meisten Restaurants und Pubs."
+   }
+  },
+  {
+   "id": "ct-IE-15",
+   "category": "religion_sites",
+   "text": {
+    "en": "Most people in the Republic of Ireland identify as Roman Catholic, and churches are active places of worship. Dress modestly, stay quiet, and avoid walking around during services.",
+    "it": "La maggior parte delle persone nella Repubblica d'Irlanda si dichiara cattolica, e le chiese sono luoghi di culto attivi. Vesti in modo sobrio, mantieni il silenzio ed evita di girare durante le funzioni.",
+    "es": "La mayoría de las personas en la República de Irlanda se identifica como católica, y las iglesias son lugares de culto activos. Viste con discreción, guarda silencio y evita pasear durante los oficios.",
+    "pt": "A maioria das pessoas na República da Irlanda identifica-se como católica, e as igrejas são locais de culto ativos. Veste-te de forma discreta, mantém o silêncio e evita andar de um lado para o outro durante as celebrações.",
+    "pt_BR": "A maioria das pessoas na República da Irlanda se identifica como católica, e as igrejas são locais de culto ativos. Vista-se com discrição, mantenha silêncio e evite circular durante as celebrações.",
+    "fr": "La plupart des habitants de la République d'Irlande se déclarent catholiques, et les églises sont des lieux de culte actifs. Habillez-vous de façon sobre, restez silencieux et évitez de circuler pendant les offices.",
+    "de": "Die meisten Menschen in der Republik Irland bezeichnen sich als römisch-katholisch, und Kirchen sind aktive Gotteshäuser. Kleide dich dezent, sei leise und geh während Gottesdiensten nicht herum."
+   }
+  },
+  {
+   "id": "ct-IE-16",
+   "category": "religion_sites",
+   "text": {
+    "en": "Early monastic sites and old graveyards, like Glendalough, are both heritage sites and sacred places. Stay on marked paths, do not climb on ruins or stones, and treat graves with respect.",
+    "it": "I siti monastici antichi e i vecchi cimiteri, come Glendalough, sono al tempo stesso siti storici e luoghi sacri. Resta sui sentieri segnati, non arrampicarti su rovine o pietre e rispetta le tombe.",
+    "es": "Los antiguos sitios monásticos y los viejos cementerios, como Glendalough, son a la vez patrimonio y lugares sagrados. Mantente en los senderos marcados, no te subas a ruinas o piedras y respeta las tumbas.",
+    "pt": "Os antigos locais monásticos e os velhos cemitérios, como Glendalough, são ao mesmo tempo património e lugares sagrados. Fica nos caminhos marcados, não subas a ruínas ou pedras e respeita as sepulturas.",
+    "pt_BR": "Os antigos sítios monásticos e os velhos cemitérios, como Glendalough, são ao mesmo tempo patrimônio e lugares sagrados. Fique nas trilhas marcadas, não suba em ruínas ou pedras e respeite os túmulos.",
+    "fr": "Les anciens sites monastiques et vieux cimetières, comme Glendalough, sont à la fois des sites patrimoniaux et des lieux sacrés. Restez sur les sentiers balisés, ne grimpez pas sur les ruines ou les pierres et respectez les tombes.",
+    "de": "Frühe Klosterstätten und alte Friedhöfe wie Glendalough sind zugleich Kulturerbe und heilige Orte. Bleib auf den markierten Wegen, klettere nicht auf Ruinen oder Steine und begegne Gräbern mit Respekt."
+   }
+  },
+  {
+   "id": "ct-IE-17",
+   "category": "gestures",
+   "text": {
+    "en": "On quiet country roads, drivers often lift a finger or two from the steering wheel to greet or thank passing drivers. It is a friendly habit, so feel free to return it.",
+    "it": "Sulle strade di campagna tranquille, gli automobilisti spesso sollevano uno o due dita dal volante per salutare o ringraziare chi passa. È un'abitudine cordiale, quindi ricambia pure.",
+    "es": "En las carreteras rurales tranquilas, los conductores suelen levantar uno o dos dedos del volante para saludar o dar las gracias a quien pasa. Es una costumbre amable, así que devuélvelo sin problema.",
+    "pt": "Nas estradas rurais tranquilas, os condutores costumam levantar um ou dois dedos do volante para cumprimentar ou agradecer a quem passa. É um hábito simpático, por isso podes retribuir à vontade.",
+    "pt_BR": "Nas estradas rurais tranquilas, os motoristas costumam levantar um ou dois dedos do volante para cumprimentar ou agradecer a quem passa. É um hábito simpático, então pode retribuir à vontade.",
+    "fr": "Sur les routes de campagne tranquilles, les conducteurs lèvent souvent un ou deux doigts du volant pour saluer ou remercier ceux qui passent. C'est une habitude sympathique : n'hésitez pas à y répondre.",
+    "de": "Auf ruhigen Landstraßen heben Autofahrer oft einen oder zwei Finger vom Lenkrad, um zu grüßen oder zu danken. Das ist eine freundliche Gewohnheit, du kannst gern zurückgrüßen."
+   }
+  },
+  {
+   "id": "ct-IE-18",
+   "category": "gestures",
+   "text": {
+    "en": "It is a charming habit to say 'thanks' or 'cheers' to the driver when you get off a bus. It takes a second and is very common across the country.",
+    "it": "Dire 'thanks' o 'cheers' all'autista quando si scende da un autobus è un'abitudine simpatica. Richiede un secondo ed è molto diffusa in tutto il paese.",
+    "es": "Decir 'thanks' o 'cheers' al conductor al bajar de un autobús es una costumbre encantadora. Lleva un segundo y está muy extendida por todo el país.",
+    "pt": "Dizer 'thanks' ou 'cheers' ao motorista ao sair do autocarro é um hábito simpático. Demora um segundo e é muito comum em todo o país.",
+    "pt_BR": "Dizer 'thanks' ou 'cheers' ao motorista ao descer do ônibus é um hábito simpático. Leva um segundo e é muito comum em todo o país.",
+    "fr": "Dire 'thanks' ou 'cheers' au conducteur en descendant du bus est une charmante habitude. Cela ne prend qu'une seconde et c'est très courant dans tout le pays.",
+    "de": "Beim Aussteigen aus dem Bus dem Fahrer 'thanks' oder 'cheers' zu sagen, ist eine nette Gewohnheit. Es dauert eine Sekunde und ist im ganzen Land sehr verbreitet."
+   }
+  },
+  {
+   "id": "ct-IE-19",
+   "category": "punctuality",
+   "text": {
+    "en": "Be on time for work, appointments and public transport. For social visits and parties, arriving 10 to 15 minutes after the stated time is perfectly normal.",
+    "it": "Sii puntuale per lavoro, appuntamenti e mezzi pubblici. Per visite sociali e feste, arrivare 10-15 minuti dopo l'orario indicato è del tutto normale.",
+    "es": "Sé puntual para el trabajo, las citas y el transporte público. Para visitas sociales y fiestas, llegar 10 o 15 minutos después de la hora indicada es perfectamente normal.",
+    "pt": "Sê pontual no trabalho, em marcações e nos transportes públicos. Em visitas sociais e festas, chegar 10 a 15 minutos depois da hora indicada é perfeitamente normal.",
+    "pt_BR": "Seja pontual no trabalho, em compromissos e no transporte público. Em visitas sociais e festas, chegar 10 a 15 minutos depois do horário indicado é perfeitamente normal.",
+    "fr": "Soyez ponctuel pour le travail, les rendez-vous et les transports publics. Pour des visites amicales et des fêtes, arriver 10 à 15 minutes après l'heure indiquée est tout à fait normal.",
+    "de": "Sei pünktlich bei der Arbeit, bei Terminen und im öffentlichen Verkehr. Bei privaten Besuchen und Feiern ist es völlig normal, 10 bis 15 Minuten nach der genannten Zeit einzutreffen."
+   }
+  },
+  {
+   "id": "ct-IE-20",
+   "category": "public_behavior",
+   "text": {
+    "en": "At traditional music sessions in pubs, listen quietly while a tune or song is performed and join in only if invited. Applaud between pieces and ask before filming the musicians.",
+    "it": "Alle sessioni di musica tradizionale nei pub, ascolta in silenzio mentre si suona un brano o si canta e unisciti solo se vieni invitato. Applaudi tra un pezzo e l'altro e chiedi prima di filmare i musicisti.",
+    "es": "En las sesiones de música tradicional de los pubs, escucha en silencio mientras suena una pieza o canción y únete solo si te invitan. Aplaude entre piezas y pide permiso antes de grabar a los músicos.",
+    "pt": "Nas sessões de música tradicional nos pubs, ouve em silêncio enquanto se toca uma música ou se canta e junta-te apenas se fores convidado. Aplaude entre peças e pede autorização antes de filmar os músicos.",
+    "pt_BR": "Nas sessões de música tradicional nos pubs, escute em silêncio enquanto se toca uma música ou se canta e só participe se for convidado. Aplauda entre as peças e peça permissão antes de filmar os músicos.",
+    "fr": "Lors des sessions de musique traditionnelle dans les pubs, écoutez en silence pendant un morceau ou une chanson et ne vous joignez que si on vous y invite. Applaudissez entre les pièces et demandez avant de filmer les musiciens.",
+    "de": "Bei traditionellen Musiksessions in Pubs hörst du still zu, während ein Stück oder Lied gespielt wird, und machst nur mit, wenn du eingeladen wirst. Applaudiere zwischen den Stücken und frag, bevor du die Musiker filmst."
+   }
+  },
+  {
+   "id": "ct-IE-21",
+   "category": "transport",
+   "text": {
+    "en": "Ireland drives on the left. In Dublin, a Leap Card or contactless payment makes buses, trams and trains cheaper and easier, and you should wave down a bus at the stop if you want it to halt.",
+    "it": "In Irlanda si guida a sinistra. A Dublino, una Leap Card o il pagamento contactless rendono autobus, tram e treni più economici e comodi, e alla fermata devi fare cenno all'autobus se vuoi che si fermi.",
+    "es": "En Irlanda se conduce por la izquierda. En Dublín, una Leap Card o el pago sin contacto hacen más baratos y cómodos autobuses, tranvías y trenes, y debes hacer señas al autobús en la parada si quieres que se detenga.",
+    "pt": "Na Irlanda conduz-se pela esquerda. Em Dublin, um Leap Card ou o pagamento sem contacto tornam autocarros, elétricos e comboios mais baratos e fáceis, e deves fazer sinal ao autocarro na paragem se quiseres que ele pare.",
+    "pt_BR": "Na Irlanda se dirige pela esquerda. Em Dublin, um Leap Card ou o pagamento por aproximação deixam ônibus, bondes e trens mais baratos e fáceis, e você deve acenar para o ônibus no ponto se quiser que ele pare.",
+    "fr": "En Irlande, on conduit à gauche. À Dublin, une Leap Card ou le paiement sans contact rendent bus, trams et trains moins chers et plus simples, et il faut faire signe au bus à l'arrêt si vous voulez qu'il s'arrête.",
+    "de": "In Irland herrscht Linksverkehr. In Dublin machen eine Leap Card oder kontaktloses Bezahlen Busse, Straßenbahnen und Züge günstiger und einfacher, und an der Haltestelle musst du dem Bus winken, wenn er halten soll."
+   }
+  },
+  {
+   "id": "ct-IE-22",
+   "category": "transport",
+   "text": {
+    "en": "Rural roads can be narrow, winding and shared with farm vehicles or sheep. Allow extra time for journeys, and note that speed limits are in kilometres per hour on modern signs.",
+    "it": "Le strade di campagna possono essere strette, tortuose e condivise con mezzi agricoli o pecore. Calcola più tempo per gli spostamenti e ricorda che i limiti di velocità sui cartelli moderni sono in chilometri orari.",
+    "es": "Las carreteras rurales pueden ser estrechas, sinuosas y compartirse con vehículos agrícolas u ovejas. Calcula más tiempo para los trayectos y ten en cuenta que los límites de velocidad de las señales modernas están en kilómetros por hora.",
+    "pt": "As estradas rurais podem ser estreitas, sinuosas e partilhadas com veículos agrícolas ou ovelhas. Conta com mais tempo para as viagens e lembra-te de que os limites de velocidade nos sinais modernos estão em quilómetros por hora.",
+    "pt_BR": "As estradas rurais podem ser estreitas, sinuosas e compartilhadas com veículos agrícolas ou ovelhas. Conte com mais tempo para as viagens e lembre que os limites de velocidade nas placas modernas estão em quilômetros por hora.",
+    "fr": "Les routes rurales peuvent être étroites, sinueuses et partagées avec des engins agricoles ou des moutons. Prévoyez plus de temps pour vos trajets et notez que les limitations de vitesse des panneaux modernes sont en kilomètres par heure.",
+    "de": "Landstraßen können schmal und kurvig sein und werden mit Landmaschinen oder Schafen geteilt. Plane mehr Zeit für Fahrten ein und beachte, dass Tempolimits auf modernen Schildern in Kilometern pro Stunde angegeben sind."
+   }
+  },
+  {
+   "id": "ct-IE-23",
+   "category": "language",
+   "text": {
+    "en": "Irish (Gaeilge) is the first official language, and you will see bilingual signs everywhere. In Gaeltacht regions many speak Irish daily, so 'go raibh maith agat' (thank you) is a lovely touch.",
+    "it": "L'irlandese (Gaeilge) è la prima lingua ufficiale e vedrai cartelli bilingui ovunque. L'inglese si parla ovunque, ma nelle regioni Gaeltacht molte persone parlano irlandese ogni giorno, quindi un 'go raibh maith agat' (grazie) è un bel gesto.",
+    "es": "El irlandés (Gaeilge) es la primera lengua oficial y verás carteles bilingües por todas partes. El inglés se habla en todas partes, pero en las regiones Gaeltacht mucha gente habla irlandés a diario, así que un 'go raibh maith agat' (gracias) es un detalle precioso.",
+    "pt": "O irlandês (Gaeilge) é a primeira língua oficial e verás sinais bilingues por todo o lado. O inglês fala-se em todo o lado, mas nas regiões Gaeltacht muita gente fala irlandês diariamente, por isso um 'go raibh maith agat' (obrigado) é um belo gesto.",
+    "pt_BR": "O irlandês (Gaeilge) é a primeira língua oficial e você verá placas bilíngues por toda parte. O inglês é falado em todo lugar, mas nas regiões Gaeltacht muita gente fala irlandês todos os dias, então um 'go raibh maith agat' (obrigado) é um gesto lindo.",
+    "fr": "L'irlandais (Gaeilge) est la première langue officielle et vous verrez des panneaux bilingues partout. L'anglais est parlé partout, mais dans les régions Gaeltacht beaucoup de gens parlent irlandais au quotidien : un 'go raibh maith agat' (merci) est un joli geste.",
+    "de": "Irisch (Gaeilge) ist die erste Amtssprache, und du siehst überall zweisprachige Schilder. Englisch wird überall gesprochen, aber in den Gaeltacht-Regionen sprechen viele täglich Irisch, ein 'go raibh maith agat' (danke) kommt daher sehr gut an."
+   }
+  },
+  {
+   "id": "ct-IE-24",
+   "category": "festivals",
+   "text": {
+    "en": "Saint Patrick's Day on 17 March is celebrated with parades and festivals across Ireland. People call it 'Paddy's Day', never 'Patty's Day', which is a common slip among visitors.",
+    "it": "Il giorno di San Patrizio, il 17 marzo, si celebra con parate e festival in tutta l'Irlanda. Gli irlandesi lo chiamano 'Paddy's Day', mai 'Patty's Day', un errore comune tra i visitatori.",
+    "es": "El día de San Patricio, el 17 de marzo, se celebra con desfiles y festivales por toda Irlanda. La gente lo llama 'Paddy's Day', nunca 'Patty's Day', un error habitual entre los visitantes.",
+    "pt": "O Dia de São Patrício, a 17 de março, celebra-se com desfiles e festivais por toda a Irlanda. As pessoas chamam-lhe 'Paddy's Day', nunca 'Patty's Day', um erro comum entre os visitantes.",
+    "pt_BR": "O Dia de São Patrício, em 17 de março, é celebrado com desfiles e festivais por toda a Irlanda. As pessoas chamam de 'Paddy's Day', nunca 'Patty's Day', um erro comum entre visitantes.",
+    "fr": "La Saint-Patrick, le 17 mars, est célébrée par des défilés et des festivals dans toute l'Irlande. On dit 'Paddy's Day', jamais 'Patty's Day', une erreur fréquente chez les visiteurs.",
+    "de": "Der St. Patrick's Day am 17. März wird in ganz Irland mit Paraden und Festen gefeiert. Man sagt 'Paddy's Day', nie 'Patty's Day', ein häufiger Fehler von Besuchern."
+   }
+  },
+  {
+   "id": "ct-IE-25",
+   "category": "festivals",
+   "text": {
+    "en": "Halloween has its roots in the ancient Irish festival of Samhain, on 31 October. Traditions include bonfires, costumes, and barmbrack, a fruit loaf that sometimes hides small tokens.",
+    "it": "Halloween ha origine dall'antica festa irlandese di Samhain, il 31 ottobre. Tra le tradizioni ci sono falò, costumi e il barmbrack, un pane alla frutta che a volte nasconde piccoli oggetti.",
+    "es": "Halloween tiene su origen en la antigua fiesta irlandesa de Samhain, el 31 de octubre. Entre sus tradiciones están las hogueras, los disfraces y el barmbrack, un pan de frutas que a veces esconde pequeños objetos.",
+    "pt": "O Halloween tem origem na antiga festa irlandesa de Samhain, a 31 de outubro. Entre as tradições há fogueiras, disfarces e o barmbrack, um pão de frutas que por vezes esconde pequenos objetos.",
+    "pt_BR": "O Halloween tem origem na antiga festa irlandesa de Samhain, em 31 de outubro. Entre as tradições há fogueiras, fantasias e o barmbrack, um pão de frutas que às vezes esconde pequenos objetos.",
+    "fr": "Halloween trouve ses racines dans l'ancienne fête irlandaise de Samhain, le 31 octobre. Parmi les traditions : feux de joie, déguisements et barmbrack, un pain aux fruits qui cache parfois de petits objets.",
+    "de": "Halloween hat seine Wurzeln im alten irischen Fest Samhain am 31. Oktober. Zu den Bräuchen gehören Feuer, Verkleidungen und Barmbrack, ein Früchtebrot, in dem manchmal kleine Gegenstände versteckt sind."
+   }
+  },
+  {
+   "id": "ct-IE-26",
+   "category": "festivals",
+   "text": {
+    "en": "26 December is Saint Stephen's Day, a public holiday in Ireland and the day after Christmas. Many families visit relatives, go for walks or watch sport, and some towns hold 'wren boys' traditions.",
+    "it": "Il 26 dicembre è il giorno di Santo Stefano, festa nazionale in Irlanda e giorno dopo Natale. Molte famiglie visitano i parenti, fanno passeggiate o guardano lo sport, e in alcune città si tengono le tradizioni dei 'wren boys'.",
+    "es": "El 26 de diciembre es el día de San Esteban, festivo en Irlanda y día siguiente a la Navidad. Muchas familias visitan a parientes, salen a caminar o ven deporte, y en algunas localidades se mantienen las tradiciones de los 'wren boys'.",
+    "pt": "O dia 26 de dezembro é o Dia de Santo Estêvão, feriado na Irlanda e dia a seguir ao Natal. Muitas famílias visitam familiares, passeiam ou veem desporto, e em algumas localidades mantêm-se as tradições dos 'wren boys'.",
+    "pt_BR": "O dia 26 de dezembro é o Dia de Santo Estêvão, feriado na Irlanda e dia seguinte ao Natal. Muitas famílias visitam parentes, passeiam ou assistem a esportes, e em algumas cidades se mantêm as tradições dos 'wren boys'.",
+    "fr": "Le 26 décembre est la Saint-Étienne, jour férié en Irlande et lendemain de Noël. Beaucoup de familles rendent visite à leurs proches, vont se promener ou regardent du sport, et certaines villes maintiennent la tradition des 'wren boys'.",
+    "de": "Der 26. Dezember ist der Stephanstag, ein Feiertag in Irland und der Tag nach Weihnachten. Viele Familien besuchen Verwandte, gehen spazieren oder schauen Sport, und in einigen Orten leben die 'Wren-Boys'-Bräuche fort."
+   }
+  },
+  {
+   "id": "ct-IE-27",
+   "category": "money",
+   "text": {
+    "en": "The Republic of Ireland uses the euro, but Northern Ireland uses the pound sterling. If you cross the border, bring or withdraw the right currency, as shops may not accept the other.",
+    "it": "La Repubblica d'Irlanda usa l'euro, mentre l'Irlanda del Nord usa la sterlina. Se attraversi il confine, porta o preleva la valuta giusta, perché i negozi potrebbero non accettare l'altra.",
+    "es": "La República de Irlanda usa el euro, pero Irlanda del Norte usa la libra esterlina. Si cruzas la frontera, lleva o retira la moneda correcta, porque las tiendas pueden no aceptar la otra.",
+    "pt": "A República da Irlanda usa o euro, mas a Irlanda do Norte usa a libra esterlina. Se atravessares a fronteira, leva ou levanta a moeda certa, pois as lojas podem não aceitar a outra.",
+    "pt_BR": "A República da Irlanda usa o euro, mas a Irlanda do Norte usa a libra esterlina. Se atravessar a fronteira, leve ou saque a moeda certa, pois as lojas podem não aceitar a outra.",
+    "fr": "La République d'Irlande utilise l'euro, mais l'Irlande du Nord utilise la livre sterling. Si vous passez la frontière, ayez ou retirez la bonne monnaie, car les commerces peuvent refuser l'autre.",
+    "de": "Die Republik Irland nutzt den Euro, Nordirland dagegen das Pfund Sterling. Wenn du die Grenze überquerst, nimm oder hebe die passende Währung ab, denn Geschäfte akzeptieren die andere eventuell nicht."
+   }
+  },
+  {
+   "id": "ct-IE-28",
+   "category": "nature",
+   "text": {
+    "en": "Ireland's coast is spectacular but exposed. At cliffs like the Cliffs of Moher, stay behind barriers and on marked paths, and swim only at beaches with lifeguards or clear local advice.",
+    "it": "La costa irlandese è spettacolare ma esposta. Su scogliere come le Cliffs of Moher, resta dietro le barriere e sui sentieri segnati, e nuota solo in spiagge con bagnini o chiare indicazioni locali.",
+    "es": "La costa irlandesa es espectacular pero está expuesta. En acantilados como los Cliffs of Moher, quédate tras las barreras y en los senderos marcados, y nada solo en playas con socorristas o indicaciones locales claras.",
+    "pt": "A costa irlandesa é espetacular mas exposta. Em falésias como as Cliffs of Moher, fica atrás das barreiras e nos caminhos marcados, e nada apenas em praias com nadadores-salvadores ou indicações locais claras.",
+    "pt_BR": "A costa irlandesa é espetacular, mas exposta. Em penhascos como os Cliffs of Moher, fique atrás das barreiras e nas trilhas marcadas, e nade apenas em praias com salva-vidas ou orientações locais claras.",
+    "fr": "La côte irlandaise est spectaculaire mais exposée. Sur des falaises comme les Cliffs of Moher, restez derrière les barrières et sur les sentiers balisés, et ne vous baignez que sur des plages surveillées ou avec des consignes locales claires.",
+    "de": "Irlands Küste ist spektakulär, aber exponiert. An Klippen wie den Cliffs of Moher bleibst du hinter den Absperrungen und auf markierten Wegen und schwimmst nur an Stränden mit Rettungsschwimmern oder klaren Hinweisen vor Ort."
+   }
+  },
+  {
+   "id": "ct-IE-29",
+   "category": "safety",
+   "text": {
+    "en": "Ireland is generally safe for visitors. As anywhere, keep valuables out of sight in cities, and call 112 or 999 for emergency services, which work for police, ambulance and fire.",
+    "it": "L'Irlanda è in generale sicura per i visitatori. Come ovunque, tieni gli oggetti di valore fuori vista nelle città e chiama il 112 o il 999 per i servizi di emergenza, validi per polizia, ambulanza e vigili del fuoco.",
+    "es": "Irlanda es en general segura para los visitantes. Como en cualquier lugar, no dejes objetos de valor a la vista en las ciudades y llama al 112 o al 999 para emergencias, válidos para policía, ambulancia y bomberos.",
+    "pt": "A Irlanda é em geral segura para os visitantes. Como em qualquer lugar, não deixes objetos de valor à vista nas cidades e liga 112 ou 999 para emergências, válidos para polícia, ambulância e bombeiros.",
+    "pt_BR": "A Irlanda é em geral segura para os visitantes. Como em qualquer lugar, não deixe objetos de valor à vista nas cidades e ligue 112 ou 999 para emergências, válidos para polícia, ambulância e bombeiros.",
+    "fr": "L'Irlande est globalement sûre pour les visiteurs. Comme partout, ne laissez pas d'objets de valeur visibles en ville et appelez le 112 ou le 999 en cas d'urgence, pour la police, les secours et les pompiers.",
+    "de": "Irland ist für Besucher im Allgemeinen sicher. Wie überall lässt du Wertsachen in Städten nicht sichtbar liegen und rufst im Notfall die 112 oder 999 an, für Polizei, Rettung und Feuerwehr."
+   }
+  },
+  {
+   "id": "ct-IE-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Gaelic games such as Gaelic football and hurling are a huge source of local pride. Players are amateurs representing their parish and county, so showing interest in the local team is a great conversation starter.",
+    "it": "I giochi gaelici come il Gaelic football e l'hurling sono un enorme motivo di orgoglio locale. I giocatori sono dilettanti che rappresentano la loro parrocchia e contea, quindi mostrare interesse per la squadra locale è un ottimo spunto di conversazione.",
+    "es": "Los juegos gaélicos, como el fútbol gaélico y el hurling, son una enorme fuente de orgullo local. Los jugadores son aficionados que representan a su parroquia y condado, así que interesarte por el equipo local es un gran tema de conversación.",
+    "pt": "Os jogos gaélicos, como o futebol gaélico e o hurling, são uma enorme fonte de orgulho local. Os jogadores são amadores que representam a sua paróquia e condado, por isso mostrar interesse pela equipa local é um ótimo tema de conversa.",
+    "pt_BR": "Os jogos gaélicos, como o futebol gaélico e o hurling, são uma enorme fonte de orgulho local. Os jogadores são amadores que representam sua paróquia e condado, então mostrar interesse pelo time local é um ótimo assunto de conversa.",
+    "fr": "Les jeux gaéliques, comme le football gaélique et le hurling, sont une immense source de fierté locale. Les joueurs sont des amateurs qui représentent leur paroisse et leur comté : s'intéresser à l'équipe locale est un excellent sujet de conversation.",
+    "de": "Gälische Sportarten wie Gaelic Football und Hurling sind eine große Quelle lokalen Stolzes. Die Spieler sind Amateure, die ihre Gemeinde und ihre Grafschaft vertreten; Interesse am örtlichen Team ist ein toller Gesprächseinstieg."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ss-making_plans-001",
+  "topic": "making_plans",
+  "level": "A1",
+  "text": {
+   "en": "What are you doing this weekend?",
+   "it": "Cosa fai questo weekend?",
+   "es": "¿Qué haces este fin de semana?",
+   "pt": "O que fazes este fim de semana?",
+   "pt_BR": "O que você vai fazer neste fim de semana?",
+   "fr": "Tu fais quoi ce week-end ?",
+   "de": "Was machst du dieses Wochenende?"
+  }
+ },
+ {
+  "id": "ss-making_plans-002",
+  "topic": "making_plans",
+  "level": "A1",
+  "text": {
+   "en": "Are you free tomorrow?",
+   "it": "Hai tempo domani?",
+   "es": "¿Tienes tiempo mañana?",
+   "pt": "Tens tempo amanhã?",
+   "pt_BR": "Você tem tempo amanhã?",
+   "fr": "Tu as du temps demain ?",
+   "de": "Hast du morgen Zeit?"
+  }
+ },
+ {
+  "id": "ss-making_plans-003",
+  "topic": "making_plans",
+  "level": "A1",
+  "text": {
+   "en": "Let's meet at 6.",
+   "it": "Ci vediamo alle 6.",
+   "es": "Quedamos a las 6.",
+   "pt": "Encontramo-nos às 6.",
+   "pt_BR": "Vamos nos encontrar às 6.",
+   "fr": "On se retrouve à 6 heures.",
+   "de": "Wir treffen uns um 6."
+  }
+ },
+ {
+  "id": "ss-making_plans-004",
+  "topic": "making_plans",
+  "level": "A1",
+  "text": {
+   "en": "Where do we meet?",
+   "it": "Dove ci vediamo?",
+   "es": "¿Dónde quedamos?",
+   "pt": "Onde nos encontramos?",
+   "pt_BR": "Onde a gente se encontra?",
+   "fr": "On se retrouve où ?",
+   "de": "Wo treffen wir uns?"
+  }
+ },
+ {
+  "id": "ss-making_plans-005",
+  "topic": "making_plans",
+  "level": "A1",
+  "text": {
+   "en": "Yes, that works for me.",
+   "it": "Sì, per me va bene.",
+   "es": "Sí, me viene bien.",
+   "pt": "Sim, por mim está bem.",
+   "pt_BR": "Sim, pra mim está ótimo.",
+   "fr": "Oui, ça me convient.",
+   "de": "Ja, das passt mir."
+  }
+ },
+ {
+  "id": "ss-making_plans-006",
+  "topic": "making_plans",
+  "level": "A1",
+  "text": {
+   "en": "I have a lot to do today.",
+   "it": "Oggi ho molto da fare.",
+   "es": "Hoy tengo mucho que hacer.",
+   "pt": "Hoje tenho muito que fazer.",
+   "pt_BR": "Hoje estou com a agenda cheia.",
+   "fr": "J'ai beaucoup à faire aujourd'hui.",
+   "de": "Ich habe heute viel zu tun."
+  }
+ },
+ {
+  "id": "ss-making_plans-007",
+  "topic": "making_plans",
+  "level": "A1",
+  "text": {
+   "en": "What time?",
+   "it": "A che ora?",
+   "es": "¿A qué hora?",
+   "pt": "A que horas?",
+   "pt_BR": "A que horas?",
+   "fr": "À quelle heure ?",
+   "de": "Um wie viel Uhr?"
+  }
+ },
+ {
+  "id": "ss-making_plans-008",
+  "topic": "making_plans",
+  "level": "A1",
+  "text": {
+   "en": "See you on Saturday!",
+   "it": "Ci vediamo sabato!",
+   "es": "¡Nos vemos el sábado!",
+   "pt": "Vemo-nos no sábado!",
+   "pt_BR": "A gente se vê no sábado!",
+   "fr": "On se voit samedi !",
+   "de": "Bis Samstag!"
+  }
+ },
+ {
+  "id": "ss-making_plans-009",
+  "topic": "making_plans",
+  "level": "A1",
+  "text": {
+   "en": "Good idea!",
+   "it": "Buona idea!",
+   "es": "¡Buena idea!",
+   "pt": "Boa ideia!",
+   "pt_BR": "Boa ideia!",
+   "fr": "Bonne idée !",
+   "de": "Gute Idee!"
+  }
+ },
+ {
+  "id": "ss-making_plans-010",
+  "topic": "making_plans",
+  "level": "A1",
+  "text": {
+   "en": "Let's go for a walk.",
+   "it": "Andiamo a fare una passeggiata.",
+   "es": "Vamos a dar un paseo.",
+   "pt": "Vamos dar um passeio.",
+   "pt_BR": "Vamos dar uma volta.",
+   "fr": "Allons nous promener.",
+   "de": "Lass uns spazieren gehen."
+  }
+ },
+ {
+  "id": "ss-making_plans-011",
+  "topic": "making_plans",
+  "level": "A1",
+  "text": {
+   "en": "I can't on Monday.",
+   "it": "Lunedì non posso.",
+   "es": "El lunes no puedo.",
+   "pt": "À segunda não posso.",
+   "pt_BR": "Na segunda não posso.",
+   "fr": "Lundi, je ne peux pas.",
+   "de": "Montag kann ich nicht."
+  }
+ },
+ {
+  "id": "ss-making_plans-012",
+  "topic": "making_plans",
+  "level": "A1",
+  "text": {
+   "en": "How about Sunday?",
+   "it": "E domenica?",
+   "es": "¿Y el domingo?",
+   "pt": "E no domingo?",
+   "pt_BR": "E domingo?",
+   "fr": "Et dimanche ?",
+   "de": "Wie wäre es mit Sonntag?"
+  }
+ },
+ {
+  "id": "ss-making_plans-013",
+  "topic": "making_plans",
+  "level": "A1",
+  "text": {
+   "en": "Let's have a coffee.",
+   "it": "Prendiamo un caffè.",
+   "es": "Vamos a tomar un café.",
+   "pt": "Vamos tomar uma bica.",
+   "pt_BR": "Vamos tomar um café.",
+   "fr": "Prenons un café.",
+   "de": "Lass uns einen Kaffee trinken."
+  }
+ },
+ {
+  "id": "ss-making_plans-014",
+  "topic": "making_plans",
+  "level": "A1",
+  "text": {
+   "en": "I'm free in the evening.",
+   "it": "La sera ho tempo.",
+   "es": "Por la noche estoy libre.",
+   "pt": "À noite estou livre.",
+   "pt_BR": "À noite estou livre.",
+   "fr": "Le soir, je suis libre.",
+   "de": "Am Abend habe ich Zeit."
+  }
+ },
+ {
+  "id": "ss-making_plans-015",
+  "topic": "making_plans",
+  "level": "A1",
+  "text": {
+   "en": "Send me the address, please.",
+   "it": "Mandami l'indirizzo, per favore.",
+   "es": "Mándame la dirección, por favor.",
+   "pt": "Manda-me a morada, por favor.",
+   "pt_BR": "Me manda o endereço, por favor.",
+   "fr": "Envoie-moi l'adresse, s'il te plaît.",
+   "de": "Schick mir bitte die Adresse."
+  }
+ },
+ {
+  "id": "ss-making_plans-016",
+  "topic": "making_plans",
+  "level": "A2",
+  "text": {
+   "en": "Do you want to go to the cinema tonight?",
+   "it": "Vuoi andare al cinema stasera?",
+   "es": "¿Quieres ir al cine esta noche?",
+   "pt": "Queres ir ao cinema hoje à noite?",
+   "pt_BR": "Quer ir ao cinema hoje à noite?",
+   "fr": "Tu veux aller au cinéma ce soir ?",
+   "de": "Hast du Lust, heute Abend ins Kino zu gehen?"
+  }
+ },
+ {
+  "id": "ss-making_plans-017",
+  "topic": "making_plans",
+  "level": "A2",
+  "text": {
+   "en": "What would you like to do on Saturday?",
+   "it": "Cosa ti va di fare sabato?",
+   "es": "¿Qué te gustaría hacer el sábado?",
+   "pt": "O que gostavas de fazer no sábado?",
+   "pt_BR": "O que você gostaria de fazer no sábado?",
+   "fr": "Qu'est-ce que tu aimerais faire samedi ?",
+   "de": "Was möchtest du am Samstag machen?"
+  }
+ },
+ {
+  "id": "ss-making_plans-018",
+  "topic": "making_plans",
+  "level": "A2",
+  "text": {
+   "en": "I'll be there in ten minutes.",
+   "it": "Arrivo tra dieci minuti.",
+   "es": "Llego en diez minutos.",
+   "pt": "Chego daqui a dez minutos.",
+   "pt_BR": "Chego aí em dez minutos.",
+   "fr": "J'arrive dans dix minutes.",
+   "de": "Ich bin in zehn Minuten da."
+  }
+ },
+ {
+  "id": "ss-making_plans-019",
+  "topic": "making_plans",
+  "level": "A2",
+  "text": {
+   "en": "Can we meet a bit later?",
+   "it": "Possiamo vederci un po' più tardi?",
+   "es": "¿Podemos quedar un poco más tarde?",
+   "pt": "Podemos encontrar-nos um pouco mais tarde?",
+   "pt_BR": "Podemos nos encontrar um pouco mais tarde?",
+   "fr": "On peut se retrouver un peu plus tard ?",
+   "de": "Können wir uns etwas später treffen?"
+  }
+ },
+ {
+  "id": "ss-making_plans-020",
+  "topic": "making_plans",
+  "level": "A2",
+  "text": {
+   "en": "I have to cancel, I'm sorry.",
+   "it": "Devo annullare, mi dispiace.",
+   "es": "Tengo que cancelar, lo siento.",
+   "pt": "Tenho de cancelar, desculpa.",
+   "pt_BR": "Preciso cancelar, desculpa.",
+   "fr": "Je dois annuler, pardon.",
+   "de": "Ich muss leider absagen."
+  }
+ },
+ {
+  "id": "ss-making_plans-021",
+  "topic": "making_plans",
+  "level": "A2",
+  "text": {
+   "en": "Let's meet in front of the station.",
+   "it": "Vediamoci davanti alla stazione.",
+   "es": "Quedemos delante de la estación.",
+   "pt": "Encontramo-nos em frente à estação.",
+   "pt_BR": "Vamos nos encontrar em frente à estação.",
+   "fr": "Retrouvons-nous devant la gare.",
+   "de": "Treffen wir uns vor dem Bahnhof."
+  }
+ },
+ {
+  "id": "ss-making_plans-022",
+  "topic": "making_plans",
+  "level": "A2",
+  "text": {
+   "en": "What time does it start?",
+   "it": "A che ora comincia?",
+   "es": "¿A qué hora empieza?",
+   "pt": "A que horas começa?",
+   "pt_BR": "A que horas começa?",
+   "fr": "Ça commence à quelle heure ?",
+   "de": "Wann fängt es an?"
+  }
+ },
+ {
+  "id": "ss-making_plans-023",
+  "topic": "making_plans",
+  "level": "A2",
+  "text": {
+   "en": "I'd love to, but I already have plans that day.",
+   "it": "Mi piacerebbe, ma quel giorno ho già un impegno.",
+   "es": "Me encantaría, pero ese día ya tengo planes.",
+   "pt": "Adorava, mas nesse dia já tenho planos.",
+   "pt_BR": "Eu adoraria, mas nesse dia já tenho compromisso.",
+   "fr": "Avec plaisir, mais j'ai déjà quelque chose de prévu ce jour-là.",
+   "de": "Gerne, aber an dem Tag habe ich schon etwas vor."
+  }
+ },
+ {
+  "id": "ss-making_plans-024",
+  "topic": "making_plans",
+  "level": "A2",
+  "text": {
+   "en": "Shall we have lunch together tomorrow?",
+   "it": "Pranziamo insieme domani?",
+   "es": "¿Comemos juntos mañana?",
+   "pt": "Almoçamos juntos amanhã?",
+   "pt_BR": "Vamos almoçar juntos amanhã?",
+   "fr": "On déjeune ensemble demain ?",
+   "de": "Sollen wir morgen zusammen zu Mittag essen?"
+  }
+ },
+ {
+  "id": "ss-making_plans-025",
+  "topic": "making_plans",
+  "level": "A2",
+  "text": {
+   "en": "Let me check my schedule.",
+   "it": "Fammi controllare i miei impegni.",
+   "es": "Déjame mirar mi agenda.",
+   "pt": "Deixa-me ver a minha agenda.",
+   "pt_BR": "Deixa eu ver a minha agenda.",
+   "fr": "Laisse-moi regarder mon agenda.",
+   "de": "Ich schaue kurz in meinen Kalender."
+  }
+ },
+ {
+  "id": "ss-making_plans-026",
+  "topic": "making_plans",
+  "level": "A2",
+  "text": {
+   "en": "Which day is better for you?",
+   "it": "Quale giorno ti è più comodo?",
+   "es": "¿Qué día te viene mejor?",
+   "pt": "Que dia é melhor para ti?",
+   "pt_BR": "Qual dia é melhor para você?",
+   "fr": "Quel jour t'arrange le mieux ?",
+   "de": "Welcher Tag passt dir besser?"
+  }
+ },
+ {
+  "id": "ss-making_plans-027",
+  "topic": "making_plans",
+  "level": "A2",
+  "text": {
+   "en": "I'll text you when I arrive.",
+   "it": "Ti scrivo quando arrivo.",
+   "es": "Te escribo cuando llegue.",
+   "pt": "Mando-te mensagem quando chegar.",
+   "pt_BR": "Te mando mensagem quando chegar.",
+   "fr": "Je t'envoie un message en arrivant.",
+   "de": "Ich schreibe dir, wenn ich ankomme."
+  }
+ },
+ {
+  "id": "ss-making_plans-028",
+  "topic": "making_plans",
+  "level": "A2",
+  "text": {
+   "en": "Let's go to the market on Sunday morning.",
+   "it": "Andiamo al mercato domenica mattina.",
+   "es": "Vamos al mercado el domingo por la mañana.",
+   "pt": "Vamos ao mercado no domingo de manhã.",
+   "pt_BR": "Vamos à feira no domingo de manhã.",
+   "fr": "Allons au marché dimanche matin.",
+   "de": "Gehen wir am Sonntagmorgen auf den Markt."
+  }
+ },
+ {
+  "id": "ss-making_plans-029",
+  "topic": "making_plans",
+  "level": "A2",
+  "text": {
+   "en": "I don't know yet. Can I tell you tomorrow?",
+   "it": "Non lo so ancora. Posso dirtelo domani?",
+   "es": "Aún no lo sé. ¿Te lo digo mañana?",
+   "pt": "Ainda não sei. Posso dizer-te amanhã?",
+   "pt_BR": "Ainda não sei. Posso te falar amanhã?",
+   "fr": "Je ne sais pas encore. Je te dis ça demain ?",
+   "de": "Ich weiß es noch nicht. Kann ich dir morgen Bescheid geben?"
+  }
+ },
+ {
+  "id": "ss-making_plans-030",
+  "topic": "making_plans",
+  "level": "A2",
+  "text": {
+   "en": "Should I bring anything?",
+   "it": "Devo portare qualcosa?",
+   "es": "¿Llevo algo?",
+   "pt": "Devo levar alguma coisa?",
+   "pt_BR": "Preciso levar alguma coisa?",
+   "fr": "Je dois apporter quelque chose ?",
+   "de": "Soll ich etwas mitbringen?"
+  }
+ },
+ {
+  "id": "ss-making_plans-031",
+  "topic": "making_plans",
+  "level": "B1",
+  "text": {
+   "en": "Do you have any plans for the holidays?",
+   "it": "Hai già dei programmi per le vacanze?",
+   "es": "¿Ya tienes planes para las vacaciones?",
+   "pt": "Já tens planos para as férias?",
+   "pt_BR": "Você já tem planos para as férias?",
+   "fr": "Tu as déjà prévu quelque chose pour les vacances ?",
+   "de": "Hast du schon Pläne für die Ferien?"
+  }
+ },
+ {
+  "id": "ss-making_plans-032",
+  "topic": "making_plans",
+  "level": "B1",
+  "text": {
+   "en": "Let's choose a place that is easy for both of us to reach.",
+   "it": "Scegliamo un posto facile da raggiungere per tutti e due.",
+   "es": "Elijamos un sitio fácil de alcanzar para los dos.",
+   "pt": "Escolhamos um sítio fácil de chegar para os dois.",
+   "pt_BR": "Vamos escolher um lugar fácil de chegar para nós dois.",
+   "fr": "Choisissons un endroit facile d'accès pour nous deux.",
+   "de": "Suchen wir einen Ort aus, der für uns beide gut erreichbar ist."
+  }
+ },
+ {
+  "id": "ss-making_plans-033",
+  "topic": "making_plans",
+  "level": "B1",
+  "text": {
+   "en": "I'd prefer something relaxed, nothing too crowded.",
+   "it": "Preferirei qualcosa di tranquillo, senza troppa gente.",
+   "es": "Preferiría algo tranquilo, sin demasiada gente.",
+   "pt": "Preferia algo descontraído, sem muita gente.",
+   "pt_BR": "Eu preferiria algo tranquilo, sem muita gente.",
+   "fr": "Je préférerais quelque chose de calme, sans trop de monde.",
+   "de": "Ich hätte lieber etwas Entspanntes, nicht zu voll."
+  }
+ },
+ {
+  "id": "ss-making_plans-034",
+  "topic": "making_plans",
+  "level": "B1",
+  "text": {
+   "en": "If it rains, we could go to a museum instead.",
+   "it": "Se piove, potremmo andare in un museo.",
+   "es": "Si llueve, podríamos ir a un museo.",
+   "pt": "Se chover, podemos ir a um museu.",
+   "pt_BR": "Se chover, a gente pode ir a um museu.",
+   "fr": "S'il pleut, on pourrait aller dans un musée.",
+   "de": "Wenn es regnet, könnten wir stattdessen in ein Museum gehen."
+  }
+ },
+ {
+  "id": "ss-making_plans-035",
+  "topic": "making_plans",
+  "level": "B1",
+  "text": {
+   "en": "Could we move it to next week? This week is packed.",
+   "it": "Possiamo spostarlo alla prossima settimana? Questa è piena.",
+   "es": "¿Podemos dejarlo para la semana que viene? Esta la tengo llena.",
+   "pt": "Podemos passar para a próxima semana? Esta está cheia.",
+   "pt_BR": "Podemos deixar para a semana que vem? Esta semana está lotada.",
+   "fr": "On peut le décaler à la semaine prochaine ? Celle-ci est chargée.",
+   "de": "Können wir es auf nächste Woche verschieben? Diese Woche ist voll."
+  }
+ },
+ {
+  "id": "ss-making_plans-036",
+  "topic": "making_plans",
+  "level": "B1",
+  "text": {
+   "en": "I'll book a table for four at eight.",
+   "it": "Prenoto un tavolo per quattro alle otto.",
+   "es": "Reservo una mesa para cuatro a las ocho.",
+   "pt": "Reservo uma mesa para quatro às oito.",
+   "pt_BR": "Vou reservar uma mesa para quatro às oito.",
+   "fr": "Je réserve une table pour quatre à huit heures.",
+   "de": "Ich reserviere einen Tisch für vier Personen um acht."
+  }
+ },
+ {
+  "id": "ss-making_plans-037",
+  "topic": "making_plans",
+  "level": "B1",
+  "text": {
+   "en": "Let's split the costs evenly.",
+   "it": "Dividiamo le spese in parti uguali.",
+   "es": "Dividamos los gastos a partes iguales.",
+   "pt": "Dividamos as despesas em partes iguais.",
+   "pt_BR": "Vamos dividir as despesas igualmente.",
+   "fr": "Partageons les frais à parts égales.",
+   "de": "Teilen wir die Kosten gleichmäßig auf."
+  }
+ },
+ {
+  "id": "ss-making_plans-038",
+  "topic": "making_plans",
+  "level": "B1",
+  "text": {
+   "en": "What time should we leave to avoid the traffic?",
+   "it": "A che ora conviene partire per evitare il traffico?",
+   "es": "¿A qué hora conviene salir para evitar el tráfico?",
+   "pt": "A que horas devemos sair para evitar o trânsito?",
+   "pt_BR": "A que horas a gente deve sair pra evitar o trânsito?",
+   "fr": "On part à quelle heure pour éviter les embouteillages ?",
+   "de": "Wann sollten wir losfahren, um den Verkehr zu vermeiden?"
+  }
+ },
+ {
+  "id": "ss-making_plans-039",
+  "topic": "making_plans",
+  "level": "B1",
+  "text": {
+   "en": "I'm happy to go along with whatever you suggest.",
+   "it": "Mi va bene qualsiasi cosa tu proponga.",
+   "es": "Me parece bien lo que propongas.",
+   "pt": "Fico bem com o que sugerires.",
+   "pt_BR": "Por mim, tudo bem com o que você sugerir.",
+   "fr": "Je suis partant pour ce que tu proposes.",
+   "de": "Ich bin mit allem einverstanden, was du vorschlägst."
+  }
+ },
+ {
+  "id": "ss-making_plans-040",
+  "topic": "making_plans",
+  "level": "B1",
+  "text": {
+   "en": "Let's keep the plan flexible in case something comes up.",
+   "it": "Teniamo il programma flessibile, nel caso succeda qualcosa.",
+   "es": "Dejemos el plan flexible por si surge algo.",
+   "pt": "Deixemos o plano flexível, caso surja alguma coisa.",
+   "pt_BR": "Vamos deixar o plano flexível, caso surja algum imprevisto.",
+   "fr": "Gardons le programme flexible au cas où quelque chose arriverait.",
+   "de": "Lassen wir den Plan flexibel, falls etwas dazwischenkommt."
+  }
+ },
+ {
+  "id": "ss-making_plans-041",
+  "topic": "making_plans",
+  "level": "B1",
+  "text": {
+   "en": "It will be my first time there, so I'm really looking forward to it.",
+   "it": "Per me sarà la prima volta, quindi non vedo l'ora.",
+   "es": "Será mi primera vez allí, así que tengo muchas ganas.",
+   "pt": "Vai ser a minha primeira vez lá, por isso mal posso esperar.",
+   "pt_BR": "Vai ser a minha primeira vez lá, então mal posso esperar.",
+   "fr": "Ce sera ma première fois, donc j'ai vraiment hâte.",
+   "de": "Es wird mein erstes Mal dort sein, ich freue mich schon sehr."
+  }
+ },
+ {
+  "id": "ss-making_plans-042",
+  "topic": "making_plans",
+  "level": "B1",
+  "text": {
+   "en": "Shall we make a list of what we want to see?",
+   "it": "Facciamo una lista di quello che vogliamo vedere?",
+   "es": "¿Hacemos una lista de lo que queremos ver?",
+   "pt": "Fazemos uma lista do que queremos ver?",
+   "pt_BR": "Vamos fazer uma lista do que queremos ver?",
+   "fr": "On fait une liste de ce qu'on veut voir ?",
+   "de": "Sollen wir eine Liste machen, was wir sehen wollen?"
+  }
+ },
+ {
+  "id": "ss-making_plans-043",
+  "topic": "making_plans",
+  "level": "B2",
+  "text": {
+   "en": "I'd rather not commit to anything until I know my work schedule.",
+   "it": "Preferirei non impegnarmi finché non conosco il mio orario di lavoro.",
+   "es": "Preferiría no comprometerme a nada hasta saber mi horario de trabajo.",
+   "pt": "Preferia não me comprometer com nada até saber o meu horário de trabalho.",
+   "pt_BR": "Prefiro não me comprometer com nada até saber minha escala de trabalho.",
+   "fr": "Je préférerais ne rien confirmer avant de connaître mon emploi du temps.",
+   "de": "Ich würde mich lieber noch nicht festlegen, bis ich meinen Dienstplan kenne."
+  }
+ },
+ {
+  "id": "ss-making_plans-044",
+  "topic": "making_plans",
+  "level": "B2",
+  "text": {
+   "en": "Given the forecast, it might be wiser to postpone the hike.",
+   "it": "Viste le previsioni, forse è più saggio rimandare l'escursione.",
+   "es": "Teniendo en cuenta el pronóstico, quizá sea más prudente aplazar la excursión.",
+   "pt": "Tendo em conta a previsão, talvez seja mais sensato adiar a caminhada.",
+   "pt_BR": "Considerando a previsão do tempo, talvez seja mais sensato adiar a trilha.",
+   "fr": "Vu la météo, il vaudrait peut-être mieux reporter la randonnée.",
+   "de": "Angesichts der Wettervorhersage wäre es vielleicht klüger, die Wanderung zu verschieben."
+  }
+ },
+ {
+  "id": "ss-making_plans-045",
+  "topic": "making_plans",
+  "level": "B2",
+  "text": {
+   "en": "Why don't we put together a rough itinerary and fine-tune it as we go?",
+   "it": "Perché non prepariamo un itinerario di massima e lo perfezioniamo strada facendo?",
+   "es": "¿Por qué no preparamos un itinerario aproximado y lo vamos ajustando sobre la marcha?",
+   "pt": "Porque não preparamos um itinerário provisório e vamos ajustando pelo caminho?",
+   "pt_BR": "Que tal prepararmos um roteiro provisório e ajustarmos pelo caminho?",
+   "fr": "Et si on préparait un itinéraire approximatif et qu'on l'ajustait au fur et à mesure ?",
+   "de": "Wie wäre es, wenn wir eine grobe Route planen und unterwegs feinjustieren?"
+  }
+ },
+ {
+  "id": "ss-making_plans-046",
+  "topic": "making_plans",
+  "level": "B2",
+  "text": {
+   "en": "Let's confirm the details the day before so nobody gets confused.",
+   "it": "Confermiamo i dettagli il giorno prima, così nessuno si confonde.",
+   "es": "Confirmemos los detalles el día anterior para que nadie se confunda.",
+   "pt": "Confirmemos os detalhes na véspera para ninguém se confundir.",
+   "pt_BR": "Vamos confirmar os detalhes na véspera para ninguém se confundir.",
+   "fr": "Confirmons les détails la veille pour que personne ne se perde.",
+   "de": "Bestätigen wir die Einzelheiten am Vortag, damit niemand durcheinanderkommt."
+  }
+ },
+ {
+  "id": "ss-making_plans-047",
+  "topic": "making_plans",
+  "level": "B2",
+  "text": {
+   "en": "I'm flexible on the date, but the afternoon would suit me better than the morning.",
+   "it": "Sono flessibile sulla data, ma il pomeriggio mi andrebbe meglio della mattina.",
+   "es": "Soy flexible con la fecha, pero la tarde me vendría mejor que la mañana.",
+   "pt": "Sou flexível quanto à data, mas a tarde convinha-me mais do que a manhã.",
+   "pt_BR": "Sou flexível com a data, mas a tarde seria melhor para mim do que a manhã.",
+   "fr": "Je suis flexible sur la date, mais l'après-midi m'arrangerait mieux que le matin.",
+   "de": "Beim Datum bin ich flexibel, aber der Nachmittag passt mir besser als der Vormittag."
+  }
+ },
+ {
+  "id": "ss-making_plans-048",
+  "topic": "making_plans",
+  "level": "B2",
+  "text": {
+   "en": "Since we live in different cities, let's meet halfway.",
+   "it": "Visto che abitiamo in città diverse, incontriamoci a metà strada.",
+   "es": "Como vivimos en ciudades distintas, quedemos a medio camino.",
+   "pt": "Como vivemos em cidades diferentes, encontremo-nos a meio caminho.",
+   "pt_BR": "Como moramos em cidades diferentes, vamos nos encontrar no meio do caminho.",
+   "fr": "Comme on habite dans des villes différentes, retrouvons-nous à mi-chemin.",
+   "de": "Da wir in verschiedenen Städten wohnen, treffen wir uns auf halber Strecke."
+  }
+ },
+ {
+  "id": "ss-making_plans-049",
+  "topic": "making_plans",
+  "level": "B2",
+  "text": {
+   "en": "If you can't make it, just let me know in advance and we'll find another time.",
+   "it": "Se non riesci a venire, avvisami in anticipo e troviamo un altro momento.",
+   "es": "Si no puedes venir, avísame con antelación y buscamos otro momento.",
+   "pt": "Se não puderes vir, avisa-me com antecedência e arranjamos outro dia.",
+   "pt_BR": "Se você não puder vir, me avisa com antecedência e a gente combina outro dia.",
+   "fr": "Si tu ne peux pas venir, préviens-moi à l'avance et on trouvera un autre moment.",
+   "de": "Wenn du nicht kommen kannst, sag mir bitte rechtzeitig Bescheid, dann finden wir einen anderen Termin."
+  }
+ },
+ {
+  "id": "ss-making_plans-050",
+  "topic": "making_plans",
+  "level": "B2",
+  "text": {
+   "en": "It would be great to plan something that lets us practise each other's language.",
+   "it": "Sarebbe bello organizzare qualcosa che ci permetta di praticare la lingua dell'altro.",
+   "es": "Sería genial planear algo que nos permita practicar el idioma del otro.",
+   "pt": "Seria ótimo planear algo que nos permita praticar a língua um do outro.",
+   "pt_BR": "Seria ótimo planejar algo que nos permita praticar o idioma um do outro.",
+   "fr": "Ce serait super de prévoir quelque chose qui nous permette de pratiquer la langue de l'autre.",
+   "de": "Es wäre toll, etwas zu planen, bei dem wir die Sprache des anderen üben können."
+  }
+ },
+ {
+  "id": "ss-inviting-001",
+  "topic": "inviting",
+  "level": "A1",
+  "text": {
+   "en": "Do you want to come?",
+   "it": "Vuoi venire?",
+   "es": "¿Quieres venir?",
+   "pt": "Queres vir?",
+   "pt_BR": "Quer vir?",
+   "fr": "Tu veux venir ?",
+   "de": "Willst du kommen?"
+  }
+ },
+ {
+  "id": "ss-inviting-002",
+  "topic": "inviting",
+  "level": "A1",
+  "text": {
+   "en": "Come with us!",
+   "it": "Vieni con noi!",
+   "es": "¡Ven con nosotros!",
+   "pt": "Anda connosco!",
+   "pt_BR": "Venha com a gente!",
+   "fr": "Viens avec nous !",
+   "de": "Komm mit uns!"
+  }
+ },
+ {
+  "id": "ss-inviting-003",
+  "topic": "inviting",
+  "level": "A1",
+  "text": {
+   "en": "We invite you.",
+   "it": "Ti invitiamo.",
+   "es": "Te invitamos.",
+   "pt": "Convidamos-te.",
+   "pt_BR": "Nós convidamos você.",
+   "fr": "On t'invite.",
+   "de": "Wir laden dich ein."
+  }
+ },
+ {
+  "id": "ss-inviting-004",
+  "topic": "inviting",
+  "level": "A1",
+  "text": {
+   "en": "Come to my house for dinner.",
+   "it": "Vieni a cena a casa mia.",
+   "es": "Ven a cenar a mi casa.",
+   "pt": "Anda jantar a minha casa.",
+   "pt_BR": "Venha jantar na minha casa.",
+   "fr": "Viens dîner chez moi.",
+   "de": "Komm zum Abendessen zu mir."
+  }
+ },
+ {
+  "id": "ss-inviting-005",
+  "topic": "inviting",
+  "level": "A1",
+  "text": {
+   "en": "Do you like pizza? Let's eat together.",
+   "it": "Ti piace la pizza? Mangiamo insieme.",
+   "es": "¿Te gusta la pizza? Comamos juntos.",
+   "pt": "Gostas de pizza? Vamos comer juntos.",
+   "pt_BR": "Você gosta de pizza? Vamos comer juntos.",
+   "fr": "Tu aimes la pizza ? Mangeons ensemble.",
+   "de": "Magst du Pizza? Lass uns zusammen essen."
+  }
+ },
+ {
+  "id": "ss-inviting-006",
+  "topic": "inviting",
+  "level": "A1",
+  "text": {
+   "en": "Join us for a coffee.",
+   "it": "Unisciti a noi per un caffè.",
+   "es": "Únete a nosotros para tomar un café.",
+   "pt": "Junta-te a nós para uma bica.",
+   "pt_BR": "Junte-se a nós para um café.",
+   "fr": "Rejoins-nous pour un café.",
+   "de": "Trink einen Kaffee mit uns."
+  }
+ },
+ {
+  "id": "ss-inviting-007",
+  "topic": "inviting",
+  "level": "A1",
+  "text": {
+   "en": "My birthday is on Friday.",
+   "it": "Venerdì è il mio compleanno.",
+   "es": "El viernes es mi cumpleaños.",
+   "pt": "Sexta-feira é o meu aniversário.",
+   "pt_BR": "Sexta-feira é meu aniversário.",
+   "fr": "C'est mon anniversaire vendredi.",
+   "de": "Am Freitag habe ich Geburtstag."
+  }
+ },
+ {
+  "id": "ss-inviting-008",
+  "topic": "inviting",
+  "level": "A1",
+  "text": {
+   "en": "Please come to my party.",
+   "it": "Vieni alla mia festa, per favore.",
+   "es": "Ven a mi fiesta, por favor.",
+   "pt": "Vem à minha festa, por favor.",
+   "pt_BR": "Venha à minha festa, por favor.",
+   "fr": "Viens à ma fête, s'il te plaît.",
+   "de": "Komm bitte zu meiner Party."
+  }
+ },
+ {
+  "id": "ss-inviting-009",
+  "topic": "inviting",
+  "level": "A1",
+  "text": {
+   "en": "Thank you for the invitation!",
+   "it": "Grazie dell'invito!",
+   "es": "¡Gracias por la invitación!",
+   "pt": "Agradeço o convite!",
+   "pt_BR": "Valeu pelo convite!",
+   "fr": "Merci pour l'invitation !",
+   "de": "Danke für die Einladung!"
+  }
+ },
+ {
+  "id": "ss-inviting-010",
+  "topic": "inviting",
+  "level": "A1",
+  "text": {
+   "en": "Yes, I'd love to!",
+   "it": "Sì, volentieri!",
+   "es": "¡Sí, me encantaría!",
+   "pt": "Sim, adorava!",
+   "pt_BR": "Sim, eu adoraria!",
+   "fr": "Oui, avec plaisir !",
+   "de": "Ja, sehr gerne!"
+  }
+ },
+ {
+  "id": "ss-inviting-011",
+  "topic": "inviting",
+  "level": "A1",
+  "text": {
+   "en": "Sorry, I can't come.",
+   "it": "Mi dispiace, non posso venire.",
+   "es": "Lo siento, no puedo ir.",
+   "pt": "Desculpa, não posso ir.",
+   "pt_BR": "Desculpa, não posso ir.",
+   "fr": "Pardon, je ne peux pas venir.",
+   "de": "Tut mir leid, ich kann nicht kommen."
+  }
+ },
+ {
+  "id": "ss-inviting-012",
+  "topic": "inviting",
+  "level": "A1",
+  "text": {
+   "en": "Who else is coming?",
+   "it": "Chi altro viene?",
+   "es": "¿Quién más viene?",
+   "pt": "Quem mais vem?",
+   "pt_BR": "Quem mais vai?",
+   "fr": "Qui d'autre vient ?",
+   "de": "Wer kommt noch?"
+  }
+ },
+ {
+  "id": "ss-inviting-013",
+  "topic": "inviting",
+  "level": "A1",
+  "text": {
+   "en": "Can I bring a friend?",
+   "it": "Posso portare un amico?",
+   "es": "¿Puedo llevar a un amigo?",
+   "pt": "Posso levar um amigo?",
+   "pt_BR": "Posso levar um amigo?",
+   "fr": "Je peux amener un ami ?",
+   "de": "Kann ich einen Freund mitbringen?"
+  }
+ },
+ {
+  "id": "ss-inviting-014",
+  "topic": "inviting",
+  "level": "A1",
+  "text": {
+   "en": "Come in and sit down.",
+   "it": "Entra, accomodati.",
+   "es": "Pasa y siéntate.",
+   "pt": "Entra e senta-te.",
+   "pt_BR": "Entre e sente-se.",
+   "fr": "Entre et assieds-toi.",
+   "de": "Komm rein und setz dich."
+  }
+ },
+ {
+  "id": "ss-inviting-015",
+  "topic": "inviting",
+  "level": "A1",
+  "text": {
+   "en": "Do you want some tea?",
+   "it": "Vuoi del tè?",
+   "es": "¿Quieres té?",
+   "pt": "Queres chá?",
+   "pt_BR": "Quer chá?",
+   "fr": "Tu veux du thé ?",
+   "de": "Möchtest du Tee?"
+  }
+ },
+ {
+  "id": "ss-inviting-016",
+  "topic": "inviting",
+  "level": "A2",
+  "text": {
+   "en": "We're going to the beach on Sunday. Do you want to join us?",
+   "it": "Domenica andiamo al mare. Vuoi unirti a noi?",
+   "es": "El domingo vamos a la playa. ¿Quieres venir con nosotros?",
+   "pt": "No domingo vamos à praia. Queres juntar-te a nós?",
+   "pt_BR": "No domingo a gente vai à praia. Quer vir com a gente?",
+   "fr": "Dimanche, on va à la plage. Tu veux venir avec nous ?",
+   "de": "Am Sonntag gehen wir an den Strand. Willst du mitkommen?"
+  }
+ },
+ {
+  "id": "ss-inviting-017",
+  "topic": "inviting",
+  "level": "A2",
+  "text": {
+   "en": "I'm having a small party at my place on Saturday.",
+   "it": "Sabato faccio una piccola festa a casa mia.",
+   "es": "El sábado hago una pequeña fiesta en mi casa.",
+   "pt": "No sábado faço uma pequena festa em minha casa.",
+   "pt_BR": "No sábado vou fazer uma festinha na minha casa.",
+   "fr": "Samedi, je fais une petite fête chez moi.",
+   "de": "Am Samstag gebe ich bei mir eine kleine Party."
+  }
+ },
+ {
+  "id": "ss-inviting-018",
+  "topic": "inviting",
+  "level": "A2",
+  "text": {
+   "en": "Would you like to have dinner with us?",
+   "it": "Ti va di cenare con noi?",
+   "es": "¿Te gustaría cenar con nosotros?",
+   "pt": "Gostavas de jantar connosco?",
+   "pt_BR": "Você gostaria de jantar com a gente?",
+   "fr": "Ça te dirait de dîner avec nous ?",
+   "de": "Hättest du Lust, mit uns zu Abend zu essen?"
+  }
+ },
+ {
+  "id": "ss-inviting-019",
+  "topic": "inviting",
+  "level": "A2",
+  "text": {
+   "en": "We'd be happy if you could come.",
+   "it": "Saremmo felici se tu potessi venire.",
+   "es": "Nos encantaría que pudieras venir.",
+   "pt": "Ficávamos felizes se pudesses vir.",
+   "pt_BR": "Ficaríamos felizes se você pudesse vir.",
+   "fr": "On serait ravis que tu puisses venir.",
+   "de": "Wir würden uns freuen, wenn du kommen könntest."
+  }
+ },
+ {
+  "id": "ss-inviting-020",
+  "topic": "inviting",
+  "level": "A2",
+  "text": {
+   "en": "Feel free to bring something to drink.",
+   "it": "Se vuoi, porta qualcosa da bere.",
+   "es": "Si quieres, trae algo de beber.",
+   "pt": "Se quiseres, traz algo para beber.",
+   "pt_BR": "Se quiser, traga algo para beber.",
+   "fr": "Si tu veux, apporte quelque chose à boire.",
+   "de": "Bring gern etwas zu trinken mit."
+  }
+ },
+ {
+  "id": "ss-inviting-021",
+  "topic": "inviting",
+  "level": "A2",
+  "text": {
+   "en": "The party starts at eight, but come whenever you like.",
+   "it": "La festa inizia alle otto, ma vieni quando vuoi.",
+   "es": "La fiesta empieza a las ocho, pero ven cuando quieras.",
+   "pt": "A festa começa às oito, mas vem quando quiseres.",
+   "pt_BR": "A festa começa às oito, mas pode vir quando quiser.",
+   "fr": "La fête commence à vingt heures, mais viens quand tu veux.",
+   "de": "Die Party beginnt um acht, aber komm, wann du willst."
+  }
+ },
+ {
+  "id": "ss-inviting-022",
+  "topic": "inviting",
+  "level": "A2",
+  "text": {
+   "en": "I'd love to come, but I have to work.",
+   "it": "Verrei volentieri, ma devo lavorare.",
+   "es": "Me encantaría ir, pero tengo que trabajar.",
+   "pt": "Adorava ir, mas tenho de trabalhar.",
+   "pt_BR": "Eu adoraria ir, mas preciso trabalhar.",
+   "fr": "J'aimerais bien venir, mais je dois travailler.",
+   "de": "Ich würde gern kommen, aber ich muss arbeiten."
+  }
+ },
+ {
+  "id": "ss-inviting-023",
+  "topic": "inviting",
+  "level": "A2",
+  "text": {
+   "en": "Maybe next time!",
+   "it": "Magari la prossima volta!",
+   "es": "¡Quizá la próxima vez!",
+   "pt": "Talvez da próxima!",
+   "pt_BR": "Quem sabe da próxima vez!",
+   "fr": "Peut-être la prochaine fois !",
+   "de": "Vielleicht beim nächsten Mal!"
+  }
+ },
+ {
+  "id": "ss-inviting-024",
+  "topic": "inviting",
+  "level": "A2",
+  "text": {
+   "en": "Please let me know if you can come.",
+   "it": "Fammi sapere se puoi venire, per favore.",
+   "es": "Avísame si puedes venir, por favor.",
+   "pt": "Diz-me se podes vir, por favor.",
+   "pt_BR": "Me avisa se você puder vir, por favor.",
+   "fr": "Dis-moi si tu peux venir, s'il te plaît.",
+   "de": "Sag mir bitte Bescheid, ob du kommen kannst."
+  }
+ },
+ {
+  "id": "ss-inviting-025",
+  "topic": "inviting",
+  "level": "A2",
+  "text": {
+   "en": "Do you have time this weekend? We're having a barbecue.",
+   "it": "Hai tempo questo weekend? Facciamo un barbecue.",
+   "es": "¿Tienes tiempo este fin de semana? Hacemos una barbacoa.",
+   "pt": "Tens tempo este fim de semana? Vamos fazer grelhados.",
+   "pt_BR": "Você tem tempo neste fim de semana? A gente vai fazer um churrasco.",
+   "fr": "Tu as du temps ce week-end ? On fait un barbecue.",
+   "de": "Hast du am Wochenende Zeit? Wir grillen."
+  }
+ },
+ {
+  "id": "ss-inviting-026",
+  "topic": "inviting",
+  "level": "A2",
+  "text": {
+   "en": "Do you want to try a traditional dish from my country?",
+   "it": "Vuoi provare un piatto tipico del mio paese?",
+   "es": "¿Quieres probar un plato típico de mi país?",
+   "pt": "Queres provar um prato típico do meu país?",
+   "pt_BR": "Quer experimentar um prato típico do meu país?",
+   "fr": "Tu veux goûter un plat traditionnel de mon pays ?",
+   "de": "Möchtest du ein traditionelles Gericht aus meinem Land probieren?"
+  }
+ },
+ {
+  "id": "ss-inviting-027",
+  "topic": "inviting",
+  "level": "A2",
+  "text": {
+   "en": "Would you like to come to a concert in the park with us?",
+   "it": "Ti va di venire con noi a un concerto nel parco?",
+   "es": "¿Te apetece venir con nosotros a un concierto en el parque?",
+   "pt": "Apetece-te vir connosco a um concerto no parque?",
+   "pt_BR": "Quer ir com a gente a um show no parque?",
+   "fr": "Ça te dit de venir avec nous à un concert dans le parc ?",
+   "de": "Hast du Lust, mit uns zu einem Konzert im Park zu kommen?"
+  }
+ },
+ {
+  "id": "ss-inviting-028",
+  "topic": "inviting",
+  "level": "A2",
+  "text": {
+   "en": "We meet every Thursday to practise English. Come along!",
+   "it": "Ci vediamo ogni giovedì per praticare l'inglese. Vieni anche tu!",
+   "es": "Quedamos todos los jueves para practicar inglés. ¡Apúntate!",
+   "pt": "Encontramo-nos todas as quintas para praticar inglês. Aparece!",
+   "pt_BR": "A gente se encontra toda quinta para praticar inglês. Apareça!",
+   "fr": "On se retrouve tous les jeudis pour pratiquer l'anglais. Viens !",
+   "de": "Wir treffen uns jeden Donnerstag, um Englisch zu üben. Komm vorbei!"
+  }
+ },
+ {
+  "id": "ss-inviting-029",
+  "topic": "inviting",
+  "level": "A2",
+  "text": {
+   "en": "That's very kind of you.",
+   "it": "È molto gentile da parte tua.",
+   "es": "Qué amable de tu parte.",
+   "pt": "É muito simpático da tua parte.",
+   "pt_BR": "É muito gentil da sua parte.",
+   "fr": "C'est très gentil de ta part.",
+   "de": "Das ist sehr nett von dir."
+  }
+ },
+ {
+  "id": "ss-inviting-030",
+  "topic": "inviting",
+  "level": "A2",
+  "text": {
+   "en": "Come over after work if you want.",
+   "it": "Passa da me dopo il lavoro, se ti va.",
+   "es": "Pásate por mi casa después del trabajo, si te apetece.",
+   "pt": "Aparece lá em casa depois do trabalho, se te apetecer.",
+   "pt_BR": "Passa lá em casa depois do trabalho, se quiser.",
+   "fr": "Passe chez moi après le travail si tu veux.",
+   "de": "Komm nach der Arbeit bei mir vorbei, wenn du magst."
+  }
+ },
+ {
+  "id": "ss-inviting-031",
+  "topic": "inviting",
+  "level": "B1",
+  "text": {
+   "en": "I'm organising a get-together for people who are learning languages. It would be great to have you there.",
+   "it": "Sto organizzando un incontro per chi studia le lingue. Sarebbe bello averti con noi.",
+   "es": "Estoy organizando un encuentro para gente que estudia idiomas. Sería genial contar contigo.",
+   "pt": "Estou a organizar um encontro para quem está a aprender línguas. Seria ótimo contar contigo.",
+   "pt_BR": "Estou organizando um encontro para quem está aprendendo idiomas. Seria ótimo contar com você.",
+   "fr": "J'organise une rencontre pour ceux qui apprennent des langues. Ce serait super de t'avoir avec nous.",
+   "de": "Ich organisiere ein Treffen für Leute, die Sprachen lernen. Es wäre schön, dich dabei zu haben."
+  }
+ },
+ {
+  "id": "ss-inviting-032",
+  "topic": "inviting",
+  "level": "B1",
+  "text": {
+   "en": "If you're ever in my city, I'd be glad to show you around.",
+   "it": "Se passi dalla mia città, mi farebbe piacere farti da guida.",
+   "es": "Si alguna vez pasas por mi ciudad, me encantaría enseñarte la zona.",
+   "pt": "Se alguma vez passares pela minha cidade, terei todo o gosto em mostrar-te os arredores.",
+   "pt_BR": "Se um dia você passar pela minha cidade, vou adorar te mostrar tudo por aqui.",
+   "fr": "Si tu passes un jour dans ma ville, ça me ferait plaisir de te la faire visiter.",
+   "de": "Wenn du mal in meiner Stadt bist, zeige ich dir gerne alles."
+  }
+ },
+ {
+  "id": "ss-inviting-033",
+  "topic": "inviting",
+  "level": "B1",
+  "text": {
+   "en": "We're planning a picnic by the river. Would you like to come along?",
+   "it": "Stiamo organizzando un picnic in riva al fiume. Ti va di unirti?",
+   "es": "Estamos organizando un picnic junto al río. ¿Te animas a venir?",
+   "pt": "Estamos a planear um piquenique à beira do rio. Queres vir?",
+   "pt_BR": "Estamos planejando um piquenique à beira do rio. Quer vir com a gente?",
+   "fr": "On organise un pique-nique au bord de la rivière. Ça te dit de venir ?",
+   "de": "Wir planen ein Picknick am Fluss. Hast du Lust mitzukommen?"
+  }
+ },
+ {
+  "id": "ss-inviting-034",
+  "topic": "inviting",
+  "level": "B1",
+  "text": {
+   "en": "Feel free to bring a friend, the more the merrier.",
+   "it": "Porta pure un amico, più siamo meglio è.",
+   "es": "Trae a un amigo si quieres, cuantos más seamos, mejor.",
+   "pt": "Se quiseres, traz um amigo, quantos mais formos, melhor.",
+   "pt_BR": "Pode trazer um amigo, quanto mais gente, melhor.",
+   "fr": "N'hésite pas à amener un ami, plus on est de fous, plus on rit.",
+   "de": "Bring gern einen Freund mit, je mehr, desto besser."
+  }
+ },
+ {
+  "id": "ss-inviting-035",
+  "topic": "inviting",
+  "level": "B1",
+  "text": {
+   "en": "I wanted to invite you to a small dinner with a few colleagues.",
+   "it": "Volevo invitarti a una piccola cena con alcuni colleghi.",
+   "es": "Quería invitarte a una pequeña cena con algunos compañeros de trabajo.",
+   "pt": "Queria convidar-te para um pequeno jantar com alguns colegas.",
+   "pt_BR": "Queria te convidar para um pequeno jantar com alguns colegas.",
+   "fr": "Je voulais t'inviter à un petit dîner avec quelques collègues.",
+   "de": "Ich wollte dich zu einem kleinen Abendessen mit ein paar Kollegen einladen."
+  }
+ },
+ {
+  "id": "ss-inviting-036",
+  "topic": "inviting",
+  "level": "B1",
+  "text": {
+   "en": "I really appreciate you thinking of me.",
+   "it": "Apprezzo molto che tu abbia pensato a me.",
+   "es": "Te agradezco mucho que hayas pensado en mí.",
+   "pt": "Agradeço-te por te teres lembrado de mim.",
+   "pt_BR": "Agradeço por ter se lembrado de mim.",
+   "fr": "Je te remercie d'avoir pensé à moi.",
+   "de": "Ich weiß es sehr zu schätzen, dass du an mich gedacht hast."
+  }
+ },
+ {
+  "id": "ss-inviting-037",
+  "topic": "inviting",
+  "level": "B1",
+  "text": {
+   "en": "I'd really like to come, but I'm not sure I can make it. Can I confirm tomorrow?",
+   "it": "Mi piacerebbe molto venire, ma non so se riesco. Posso confermarti domani?",
+   "es": "Me gustaría mucho ir, pero no sé si podré. ¿Puedo confirmártelo mañana?",
+   "pt": "Gostava muito de ir, mas não sei se consigo. Posso confirmar amanhã?",
+   "pt_BR": "Eu gostaria muito de ir, mas não sei se consigo. Posso confirmar amanhã?",
+   "fr": "J'aimerais beaucoup venir, mais je ne sais pas si je pourrai. Je peux confirmer demain ?",
+   "de": "Ich würde sehr gern kommen, weiß aber nicht, ob es klappt. Kann ich morgen zusagen?"
+  }
+ },
+ {
+  "id": "ss-inviting-038",
+  "topic": "inviting",
+  "level": "B1",
+  "text": {
+   "en": "Dress is casual, so just wear whatever is comfortable.",
+   "it": "Abbigliamento informale, metti quello che ti fa stare comodo.",
+   "es": "El código de vestimenta es informal, ponte lo que te resulte cómodo.",
+   "pt": "O traje é informal, vem com o que te for mais confortável.",
+   "pt_BR": "O traje é casual, venha com o que for mais confortável.",
+   "fr": "La tenue est décontractée, mets ce qui te met à l'aise.",
+   "de": "Die Kleidung ist ganz leger, zieh einfach an, was bequem ist."
+  }
+ },
+ {
+  "id": "ss-inviting-039",
+  "topic": "inviting",
+  "level": "B1",
+  "text": {
+   "en": "Let me know if you have any dietary requirements, and I'll take care of it.",
+   "it": "Fammi sapere se hai esigenze alimentari, così ci penso io.",
+   "es": "Avísame si tienes alguna restricción alimentaria y me encargo yo.",
+   "pt": "Diz-me se tens alguma restrição alimentar e eu trato disso.",
+   "pt_BR": "Me avisa se você tem alguma restrição alimentar que eu resolvo.",
+   "fr": "Dis-moi si tu as un régime alimentaire particulier, je m'en occupe.",
+   "de": "Sag mir Bescheid, falls du Essgewohnheiten oder Unverträglichkeiten hast, ich kümmere mich darum."
+  }
+ },
+ {
+  "id": "ss-inviting-040",
+  "topic": "inviting",
+  "level": "B1",
+  "text": {
+   "en": "We'd love to have you join us for the festival this weekend.",
+   "it": "Ci farebbe piacere se ti unissi a noi al festival di questo fine settimana.",
+   "es": "Nos encantaría que te unieras a nosotros en el festival de este fin de semana.",
+   "pt": "Gostávamos que te juntasses a nós no festival deste fim de semana.",
+   "pt_BR": "Adoraríamos ter você com a gente no festival deste fim de semana.",
+   "fr": "On serait ravis que tu nous rejoignes au festival ce week-end.",
+   "de": "Wir würden uns freuen, wenn du am Wochenende mit uns aufs Festival gehst."
+  }
+ },
+ {
+  "id": "ss-inviting-041",
+  "topic": "inviting",
+  "level": "B1",
+  "text": {
+   "en": "No pressure at all, but the invitation is open if you change your mind.",
+   "it": "Nessuna pressione, ma l'invito resta valido se cambi idea.",
+   "es": "Sin presión, pero la invitación sigue en pie si cambias de opinión.",
+   "pt": "Sem pressão, mas o convite continua de pé se mudares de ideias.",
+   "pt_BR": "Sem pressão, mas o convite continua de pé se você mudar de ideia.",
+   "fr": "Aucune pression, mais l'invitation tient toujours si tu changes d'avis.",
+   "de": "Kein Druck, aber die Einladung steht, falls du es dir anders überlegst."
+  }
+ },
+ {
+  "id": "ss-inviting-042",
+  "topic": "inviting",
+  "level": "B1",
+  "text": {
+   "en": "It's a pity you can't come. Let's find another occasion soon.",
+   "it": "Peccato che tu non possa venire. Troviamo presto un'altra occasione.",
+   "es": "Qué pena que no puedas venir. Busquemos otra ocasión pronto.",
+   "pt": "Que pena não poderes vir. Arranjamos outra ocasião em breve.",
+   "pt_BR": "Que pena que você não pode vir. Vamos arranjar outra ocasião em breve.",
+   "fr": "Dommage que tu ne puisses pas venir. Trouvons bientôt une autre occasion.",
+   "de": "Schade, dass du nicht kommen kannst. Lass uns bald eine andere Gelegenheit finden."
+  }
+ },
+ {
+  "id": "ss-inviting-043",
+  "topic": "inviting",
+  "level": "B2",
+  "text": {
+   "en": "I'd be delighted if you could join us for a small gathering to celebrate the end of the course.",
+   "it": "Sarei felice se potessi unirti a noi per un piccolo ritrovo per festeggiare la fine del corso.",
+   "es": "Me encantaría que pudieras unirte a nosotros en una pequeña reunión para celebrar el final del curso.",
+   "pt": "Teria todo o gosto em que te juntasses a nós num pequeno encontro para celebrar o fim do curso.",
+   "pt_BR": "Adoraria que você pudesse se juntar a nós numa pequena reunião para comemorar o fim do curso.",
+   "fr": "Ce serait un plaisir que tu te joignes à nous pour un petit rassemblement afin de fêter la fin du cours.",
+   "de": "Es würde mich sehr freuen, wenn du zu unserem kleinen Beisammensein zum Kursende kommen könntest."
+  }
+ },
+ {
+  "id": "ss-inviting-044",
+  "topic": "inviting",
+  "level": "B2",
+  "text": {
+   "en": "Since you haven't lived here long, we thought you might enjoy meeting some of our friends.",
+   "it": "Dato che vivi qui da poco, abbiamo pensato che ti farebbe piacere conoscere alcuni nostri amici.",
+   "es": "Como llevas poco tiempo viviendo aquí, pensamos que te gustaría conocer a algunos de nuestros amigos.",
+   "pt": "Como vives cá há pouco tempo, pensámos que gostarias de conhecer alguns amigos nossos.",
+   "pt_BR": "Como você mora aqui há pouco tempo, achamos que você gostaria de conhecer alguns amigos nossos.",
+   "fr": "Comme tu habites ici depuis peu, on s'est dit que tu aimerais rencontrer quelques-uns de nos amis.",
+   "de": "Da du noch nicht lange hier wohnst, dachten wir, du würdest gern ein paar unserer Freunde kennenlernen."
+  }
+ },
+ {
+  "id": "ss-inviting-045",
+  "topic": "inviting",
+  "level": "B2",
+  "text": {
+   "en": "We'd be honoured to have you at our table; it would mean a lot to my family.",
+   "it": "Sarebbe un onore averti alla nostra tavola; per la mia famiglia significherebbe molto.",
+   "es": "Sería un honor tenerte en nuestra mesa; significaría mucho para mi familia.",
+   "pt": "Seria uma honra receber-te à nossa mesa; significaria muito para a minha família.",
+   "pt_BR": "Seria uma honra receber você à nossa mesa; significaria muito para a minha família.",
+   "fr": "Ce serait un honneur de t'avoir à notre table ; cela compterait beaucoup pour ma famille.",
+   "de": "Es wäre uns eine Ehre, dich an unserem Tisch zu haben; es würde meiner Familie viel bedeuten."
+  }
+ },
+ {
+  "id": "ss-inviting-046",
+  "topic": "inviting",
+  "level": "B2",
+  "text": {
+   "en": "Although it's short notice, I hope you'll be able to make it.",
+   "it": "Anche se è all'ultimo momento, spero che tu riesca a venire.",
+   "es": "Aunque es con poca antelación, espero que puedas venir.",
+   "pt": "Apesar de ser em cima da hora, espero que consigas vir.",
+   "pt_BR": "Apesar de ser de última hora, espero que você consiga vir.",
+   "fr": "Même si c'est à la dernière minute, j'espère que tu pourras venir.",
+   "de": "Auch wenn es kurzfristig ist, hoffe ich, dass du kommen kannst."
+  }
+ },
+ {
+  "id": "ss-inviting-047",
+  "topic": "inviting",
+  "level": "B2",
+  "text": {
+   "en": "Unfortunately I have a prior commitment, but please keep me in mind for the next one.",
+   "it": "Purtroppo ho già un impegno, ma pensa a me per la prossima volta.",
+   "es": "Por desgracia ya tengo un compromiso, pero cuenta conmigo para la próxima.",
+   "pt": "Infelizmente já tenho um compromisso, mas conta comigo para a próxima.",
+   "pt_BR": "Infelizmente já tenho um compromisso, mas me chame na próxima.",
+   "fr": "Malheureusement, j'ai déjà un engagement, mais pense à moi pour la prochaine fois.",
+   "de": "Leider habe ich schon eine Verpflichtung, aber denk bitte beim nächsten Mal an mich."
+  }
+ },
+ {
+  "id": "ss-inviting-048",
+  "topic": "inviting",
+  "level": "B2",
+  "text": {
+   "en": "Everyone brings a dish from their own country, so we can share and learn about each other's cultures.",
+   "it": "Ognuno porta un piatto del proprio paese, così condividiamo e conosciamo le culture degli altri.",
+   "es": "Cada uno trae un plato de su país, así compartimos y conocemos las culturas de los demás.",
+   "pt": "Cada um traz um prato do seu país, para partilharmos e conhecermos as culturas uns dos outros.",
+   "pt_BR": "Cada um traz um prato do seu país, assim a gente compartilha e conhece a cultura dos outros.",
+   "fr": "Chacun apporte un plat de son pays, pour partager et découvrir la culture des autres.",
+   "de": "Jeder bringt ein Gericht aus seinem Land mit, damit wir teilen und die Kulturen der anderen kennenlernen."
+  }
+ },
+ {
+  "id": "ss-inviting-049",
+  "topic": "inviting",
+  "level": "B2",
+  "text": {
+   "en": "I'm hosting a language exchange evening; you can speak whichever language you're learning, and nobody will mind mistakes.",
+   "it": "Organizzo una serata di scambio linguistico; puoi parlare la lingua che stai studiando e nessuno farà caso agli errori.",
+   "es": "Organizo una noche de intercambio de idiomas; puedes hablar el idioma que estés aprendiendo y a nadie le importarán los errores.",
+   "pt": "Estou a organizar uma noite de intercâmbio linguístico; podes falar a língua que estás a aprender e ninguém se importa com os erros.",
+   "pt_BR": "Estou organizando uma noite de troca de idiomas; você pode falar o idioma que está aprendendo e ninguém liga para erros.",
+   "fr": "J'organise une soirée d'échange linguistique ; tu peux parler la langue que tu apprends et personne ne s'inquiétera des erreurs.",
+   "de": "Ich veranstalte einen Sprachaustausch-Abend; du kannst die Sprache sprechen, die du lernst, und niemand stört sich an Fehlern."
+  }
+ },
+ {
+  "id": "ss-inviting-050",
+  "topic": "inviting",
+  "level": "B2",
+  "text": {
+   "en": "Count me in; I'll gladly bring dessert if that's helpful.",
+   "it": "Conta su di me; porto volentieri il dolce, se può servire.",
+   "es": "Cuenta conmigo; llevo el postre con gusto, si te viene bien.",
+   "pt": "Podes contar comigo; levo a sobremesa com todo o gosto, se for útil.",
+   "pt_BR": "Pode contar comigo; levo a sobremesa com prazer, se ajudar.",
+   "fr": "Compte sur moi ; j'apporte volontiers le dessert si ça peut aider.",
+   "de": "Ich bin dabei; ich bringe gern einen Nachtisch mit, falls das hilft."
+  }
+ }
+]

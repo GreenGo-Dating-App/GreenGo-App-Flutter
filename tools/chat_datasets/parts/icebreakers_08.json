@@ -1,0 +1,1302 @@
+[
+ {
+  "id": "ib-dreams_goals-001",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's a dream you've had since childhood that you still think about?",
+   "it": "Qual è un sogno che hai fin da bambino e a cui ancora pensi?",
+   "es": "¿Cuál es un sueño que tienes desde la infancia y en el que todavía piensas?",
+   "pt": "Qual é um sonho que tens desde criança e em que ainda pensas?",
+   "pt_BR": "Qual é um sonho que você tem desde criança e ainda pensa nele?",
+   "fr": "Quel est le rêve que tu as depuis l'enfance et auquel tu penses encore ?",
+   "de": "Welchen Traum hast du seit deiner Kindheit und denkst immer noch daran?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-002",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's one goal you're working on this year?",
+   "it": "Qual è un obiettivo a cui stai lavorando quest'anno?",
+   "es": "¿Cuál es una meta en la que estás trabajando este año?",
+   "pt": "Qual é um objetivo em que estás a trabalhar este ano?",
+   "pt_BR": "Qual é uma meta em que você está trabalhando este ano?",
+   "fr": "Quel est un objectif sur lequel tu travailles cette année ?",
+   "de": "An welchem Ziel arbeitest du dieses Jahr?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-003",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "If you could master any skill overnight, what would it be?",
+   "it": "Se potessi padroneggiare qualsiasi abilità da un giorno all'altro, quale sceglieresti?",
+   "es": "Si pudieras dominar cualquier habilidad de la noche a la mañana, ¿cuál sería?",
+   "pt": "Se pudesses dominar qualquer competência de um dia para o outro, qual escolherias?",
+   "pt_BR": "Se você pudesse dominar qualquer habilidade da noite para o dia, qual seria?",
+   "fr": "Si tu pouvais maîtriser n'importe quelle compétence du jour au lendemain, laquelle choisirais-tu ?",
+   "de": "Wenn du über Nacht eine beliebige Fähigkeit meistern könntest, welche wäre es?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-004",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "Where do you hope to be living in ten years?",
+   "it": "Dove speri di vivere tra dieci anni?",
+   "es": "¿Dónde esperas estar viviendo dentro de diez años?",
+   "pt": "Onde esperas estar a viver daqui a dez anos?",
+   "pt_BR": "Onde você espera estar morando daqui a dez anos?",
+   "fr": "Où espères-tu vivre dans dix ans ?",
+   "de": "Wo möchtest du in zehn Jahren leben?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-005",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's a place you dream of visiting and why?",
+   "it": "Qual è un posto che sogni di visitare e perché?",
+   "es": "¿Cuál es un lugar que sueñas con visitar y por qué?",
+   "pt": "Qual é um sítio que sonhas visitar e porquê?",
+   "pt_BR": "Qual é um lugar que você sonha em visitar e por quê?",
+   "fr": "Quel est l'endroit que tu rêves de visiter, et pourquoi ?",
+   "de": "Welchen Ort träumst du davon zu besuchen, und warum?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-006",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's something you'd love to learn but haven't started yet?",
+   "it": "Che cosa ti piacerebbe imparare ma non hai ancora iniziato?",
+   "es": "¿Qué te encantaría aprender pero todavía no has empezado?",
+   "pt": "O que gostarias de aprender mas ainda não começaste?",
+   "pt_BR": "O que você adoraria aprender, mas ainda não começou?",
+   "fr": "Qu'aimerais-tu apprendre sans avoir encore commencé ?",
+   "de": "Was würdest du gern lernen, hast aber noch nicht angefangen?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-007",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What would your dream day off look like?",
+   "it": "Come sarebbe il tuo giorno libero ideale?",
+   "es": "¿Cómo sería tu día libre ideal?",
+   "pt": "Como seria o teu dia de folga de sonho?",
+   "pt_BR": "Como seria o seu dia de folga dos sonhos?",
+   "fr": "À quoi ressemblerait ton jour de congé idéal ?",
+   "de": "Wie sähe dein perfekter freier Tag aus?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-008",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's a small goal that would make you really proud?",
+   "it": "Qual è un piccolo obiettivo che ti renderebbe davvero orgoglioso?",
+   "es": "¿Qué pequeña meta te haría sentir muy orgulloso?",
+   "pt": "Que pequeno objetivo te deixaria mesmo orgulhoso?",
+   "pt_BR": "Que pequena meta deixaria você muito orgulhoso?",
+   "fr": "Quel petit objectif te rendrait vraiment fier ?",
+   "de": "Welches kleine Ziel würde dich wirklich stolz machen?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-009",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "If money weren't an issue, what would you spend your time on?",
+   "it": "Se i soldi non fossero un problema, a cosa dedicheresti il tuo tempo?",
+   "es": "Si el dinero no fuera un problema, ¿a qué dedicarías tu tiempo?",
+   "pt": "Se o dinheiro não fosse problema, a que dedicarias o teu tempo?",
+   "pt_BR": "Se dinheiro não fosse problema, a que você dedicaria o seu tempo?",
+   "fr": "Si l'argent n'était pas un problème, à quoi consacrerais-tu ton temps ?",
+   "de": "Wenn Geld keine Rolle spielte, womit würdest du deine Zeit verbringen?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-010",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's a language you'd love to speak fluently one day?",
+   "it": "Quale lingua ti piacerebbe parlare fluentemente un giorno?",
+   "es": "¿Qué idioma te encantaría hablar con fluidez algún día?",
+   "pt": "Que língua gostarias de falar fluentemente um dia?",
+   "pt_BR": "Que idioma você adoraria falar fluentemente um dia?",
+   "fr": "Quelle langue aimerais-tu parler couramment un jour ?",
+   "de": "Welche Sprache würdest du eines Tages gern fließend sprechen?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-011",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's on your bucket list that most people wouldn't expect?",
+   "it": "Che cosa c'è nella tua lista dei desideri che pochi si aspetterebbero?",
+   "es": "¿Qué hay en tu lista de deseos que poca gente esperaría?",
+   "pt": "O que há na tua lista de desejos que poucos esperariam?",
+   "pt_BR": "O que tem na sua lista de desejos que pouca gente esperaria?",
+   "fr": "Qu'y a-t-il sur ta liste de rêves que peu de gens imagineraient ?",
+   "de": "Was steht auf deiner Löffelliste, womit die meisten nicht rechnen würden?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-012",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's a project you'd start tomorrow if you had the time?",
+   "it": "Quale progetto inizieresti domani se avessi tempo?",
+   "es": "¿Qué proyecto empezarías mañana si tuvieras tiempo?",
+   "pt": "Que projeto começarias amanhã se tivesses tempo?",
+   "pt_BR": "Que projeto você começaria amanhã se tivesse tempo?",
+   "fr": "Quel projet commencerais-tu demain si tu en avais le temps ?",
+   "de": "Welches Projekt würdest du morgen starten, wenn du die Zeit hättest?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-013",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What did you want to be when you grew up?",
+   "it": "Che cosa volevi fare da grande?",
+   "es": "¿Qué querías ser de mayor?",
+   "pt": "O que querias ser quando fosses grande?",
+   "pt_BR": "O que você queria ser quando crescesse?",
+   "fr": "Que voulais-tu faire quand tu serais grand ?",
+   "de": "Was wolltest du werden, wenn du groß bist?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-014",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's the best advice you've received about chasing your goals?",
+   "it": "Qual è il miglior consiglio che hai ricevuto per inseguire i tuoi obiettivi?",
+   "es": "¿Cuál es el mejor consejo que te han dado para perseguir tus metas?",
+   "pt": "Qual é o melhor conselho que recebeste para perseguir os teus objetivos?",
+   "pt_BR": "Qual é o melhor conselho que você recebeu para correr atrás das suas metas?",
+   "fr": "Quel est le meilleur conseil qu'on t'ait donné pour poursuivre tes objectifs ?",
+   "de": "Was ist der beste Rat, den du zum Verfolgen deiner Ziele bekommen hast?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-015",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What would your dream home look like and where would it be?",
+   "it": "Come sarebbe la casa dei tuoi sogni e dove si troverebbe?",
+   "es": "¿Cómo sería tu casa soñada y dónde estaría?",
+   "pt": "Como seria a tua casa de sonho e onde ficaria?",
+   "pt_BR": "Como seria a casa dos seus sonhos e onde ela ficaria?",
+   "fr": "À quoi ressemblerait la maison de tes rêves et où serait-elle ?",
+   "de": "Wie sähe dein Traumhaus aus und wo stünde es?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-016",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's a goal you achieved that surprised even you?",
+   "it": "Qual è un obiettivo che hai raggiunto e che ha sorpreso persino te?",
+   "es": "¿Qué meta lograste que te sorprendió incluso a ti?",
+   "pt": "Que objetivo alcançaste que surpreendeu até a ti?",
+   "pt_BR": "Que meta você alcançou que surpreendeu até você mesmo?",
+   "fr": "Quel objectif as-tu atteint qui t'a surpris toi-même ?",
+   "de": "Welches Ziel hast du erreicht, das sogar dich überrascht hat?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-017",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "Is there a skill you'd like to teach others one day?",
+   "it": "C'è un'abilità che ti piacerebbe insegnare agli altri un giorno?",
+   "es": "¿Hay alguna habilidad que te gustaría enseñar a otros algún día?",
+   "pt": "Há alguma competência que gostasses de ensinar aos outros um dia?",
+   "pt_BR": "Tem alguma habilidade que você gostaria de ensinar aos outros um dia?",
+   "fr": "Y a-t-il une compétence que tu aimerais transmettre un jour ?",
+   "de": "Gibt es eine Fähigkeit, die du eines Tages anderen beibringen möchtest?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-018",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's a trip you're saving up or planning for?",
+   "it": "Qual è il viaggio per cui stai risparmiando o che stai programmando?",
+   "es": "¿Cuál es el viaje para el que estás ahorrando o que estás planeando?",
+   "pt": "Qual é a viagem para a qual estás a poupar ou a planear?",
+   "pt_BR": "Qual é a viagem para a qual você está juntando dinheiro ou planejando?",
+   "fr": "Quel est le voyage pour lequel tu économises ou que tu prépares ?",
+   "de": "Auf welche Reise sparst du oder planst du gerade?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-019",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What would you do with a whole year to chase one passion?",
+   "it": "Che cosa faresti con un anno intero per inseguire una passione?",
+   "es": "¿Qué harías con un año entero para perseguir una pasión?",
+   "pt": "O que farias com um ano inteiro para perseguir uma paixão?",
+   "pt_BR": "O que você faria com um ano inteiro para correr atrás de uma paixão?",
+   "fr": "Que ferais-tu d'une année entière pour poursuivre une passion ?",
+   "de": "Was würdest du mit einem ganzen Jahr für eine Leidenschaft anfangen?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-020",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's one habit you're trying to build right now?",
+   "it": "Qual è un'abitudine che stai cercando di costruire in questo momento?",
+   "es": "¿Qué hábito estás intentando crear ahora mismo?",
+   "pt": "Que hábito estás a tentar criar neste momento?",
+   "pt_BR": "Que hábito você está tentando criar agora?",
+   "fr": "Quelle habitude essaies-tu d'adopter en ce moment ?",
+   "de": "Welche Gewohnheit versuchst du gerade aufzubauen?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-021",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "Which famous place would you most like to see with your own eyes?",
+   "it": "Quale luogo famoso ti piacerebbe vedere con i tuoi occhi?",
+   "es": "¿Qué lugar famoso te gustaría ver con tus propios ojos?",
+   "pt": "Que lugar famoso gostarias mais de ver com os teus próprios olhos?",
+   "pt_BR": "Que lugar famoso você mais gostaria de ver com os próprios olhos?",
+   "fr": "Quel lieu célèbre aimerais-tu le plus voir de tes propres yeux ?",
+   "de": "Welchen berühmten Ort würdest du am liebsten mit eigenen Augen sehen?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-022",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's a dream that scares you a little but excites you more?",
+   "it": "Qual è un sogno che ti spaventa un po' ma ti entusiasma di più?",
+   "es": "¿Qué sueño te asusta un poco pero te emociona más?",
+   "pt": "Que sonho te assusta um pouco, mas te entusiasma mais?",
+   "pt_BR": "Que sonho assusta um pouco você, mas empolga ainda mais?",
+   "fr": "Quel rêve te fait un peu peur mais t'enthousiasme encore plus ?",
+   "de": "Welcher Traum macht dir ein bisschen Angst, begeistert dich aber noch mehr?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-023",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What do you want to be known for?",
+   "it": "Per che cosa vorresti essere ricordato?",
+   "es": "¿Por qué te gustaría ser recordado?",
+   "pt": "Pelo que gostarias de ser lembrado?",
+   "pt_BR": "Pelo que você gostaria de ser lembrado?",
+   "fr": "Pour quoi aimerais-tu qu'on se souvienne de toi ?",
+   "de": "Wofür möchtest du gern bekannt sein?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-024",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's a skill you've improved a lot recently?",
+   "it": "Qual è un'abilità in cui sei migliorato molto di recente?",
+   "es": "¿En qué habilidad has mejorado mucho últimamente?",
+   "pt": "Em que competência melhoraste muito recentemente?",
+   "pt_BR": "Em que habilidade você melhorou muito recentemente?",
+   "fr": "Dans quelle compétence as-tu beaucoup progressé récemment ?",
+   "de": "In welcher Fähigkeit hast du dich zuletzt stark verbessert?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-025",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "If you could start any business, what would it be?",
+   "it": "Se potessi avviare qualsiasi attività, quale sarebbe?",
+   "es": "Si pudieras montar cualquier negocio, ¿cuál sería?",
+   "pt": "Se pudesses abrir qualquer negócio, qual seria?",
+   "pt_BR": "Se você pudesse abrir qualquer negócio, qual seria?",
+   "fr": "Si tu pouvais lancer n'importe quelle entreprise, laquelle ce serait ?",
+   "de": "Wenn du ein beliebiges Unternehmen gründen könntest, welches wäre es?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-026",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's something you want to experience at least once in your life?",
+   "it": "Che cosa vuoi vivere almeno una volta nella vita?",
+   "es": "¿Qué quieres vivir al menos una vez en la vida?",
+   "pt": "O que queres viver pelo menos uma vez na vida?",
+   "pt_BR": "O que você quer viver pelo menos uma vez na vida?",
+   "fr": "Qu'aimerais-tu vivre au moins une fois dans ta vie ?",
+   "de": "Was möchtest du mindestens einmal im Leben erleben?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-027",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "Which book, film or song made you dream bigger?",
+   "it": "Quale libro, film o canzone ti ha fatto sognare più in grande?",
+   "es": "¿Qué libro, película o canción te hizo soñar más en grande?",
+   "pt": "Que livro, filme ou música te fez sonhar mais alto?",
+   "pt_BR": "Que livro, filme ou música fez você sonhar mais alto?",
+   "fr": "Quel livre, film ou chanson t'a fait rêver plus grand ?",
+   "de": "Welches Buch, welcher Film oder welches Lied hat dich größer träumen lassen?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-028",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's a goal you set that you're proud to have kept?",
+   "it": "Qual è un obiettivo che ti eri posto e di cui sei orgoglioso di aver tenuto fede?",
+   "es": "¿Qué meta te propusiste y te enorgullece haber cumplido?",
+   "pt": "Que objetivo definiste e te orgulhas de ter cumprido?",
+   "pt_BR": "Que meta você definiu e se orgulha de ter cumprido?",
+   "fr": "Quel objectif t'es-tu fixé et es-tu fier d'avoir tenu ?",
+   "de": "Welches Ziel hast du dir gesetzt und stolz durchgehalten?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-029",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What would be your perfect job if nothing held you back?",
+   "it": "Quale sarebbe il lavoro perfetto per te se niente ti trattenesse?",
+   "es": "¿Cuál sería tu trabajo perfecto si nada te limitara?",
+   "pt": "Qual seria o teu trabalho perfeito se nada te travasse?",
+   "pt_BR": "Qual seria o seu trabalho perfeito se nada o impedisse?",
+   "fr": "Quel serait ton métier idéal si rien ne te retenait ?",
+   "de": "Was wäre dein perfekter Job, wenn dich nichts bremsen würde?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-030",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "Is there a festival or event you dream of attending?",
+   "it": "C'è un festival o un evento a cui sogni di partecipare?",
+   "es": "¿Hay algún festival o evento al que sueñes con asistir?",
+   "pt": "Há algum festival ou evento a que sonhes assistir?",
+   "pt_BR": "Tem algum festival ou evento a que você sonha ir?",
+   "fr": "Y a-t-il un festival ou un événement auquel tu rêves d'assister ?",
+   "de": "Gibt es ein Festival oder Event, bei dem du unbedingt dabei sein möchtest?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-031",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's one thing you'd like to change about your daily routine?",
+   "it": "Che cosa ti piacerebbe cambiare nella tua routine quotidiana?",
+   "es": "¿Qué te gustaría cambiar de tu rutina diaria?",
+   "pt": "O que gostarias de mudar na tua rotina diária?",
+   "pt_BR": "O que você gostaria de mudar na sua rotina diária?",
+   "fr": "Qu'aimerais-tu changer dans ta routine quotidienne ?",
+   "de": "Was würdest du an deinem Alltag gern ändern?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-032",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's a creative project you'd love to finish someday?",
+   "it": "Qual è un progetto creativo che ti piacerebbe finire un giorno?",
+   "es": "¿Qué proyecto creativo te encantaría terminar algún día?",
+   "pt": "Que projeto criativo gostarias de terminar um dia?",
+   "pt_BR": "Que projeto criativo você adoraria terminar algum dia?",
+   "fr": "Quel projet créatif aimerais-tu terminer un jour ?",
+   "de": "Welches kreative Projekt würdest du gern eines Tages abschließen?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-033",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "Who inspires you to go after your dreams?",
+   "it": "Chi ti ispira a inseguire i tuoi sogni?",
+   "es": "¿Quién te inspira a perseguir tus sueños?",
+   "pt": "Quem te inspira a perseguir os teus sonhos?",
+   "pt_BR": "Quem inspira você a correr atrás dos seus sonhos?",
+   "fr": "Qui t'inspire à poursuivre tes rêves ?",
+   "de": "Wer inspiriert dich, deinen Träumen nachzugehen?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-034",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's a country you'd move to if you could pick any?",
+   "it": "In quale paese ti trasferiresti se potessi scegliere?",
+   "es": "¿A qué país te mudarías si pudieras elegir cualquiera?",
+   "pt": "Para que país te mudarias se pudesses escolher qualquer um?",
+   "pt_BR": "Para qual país você se mudaria se pudesse escolher qualquer um?",
+   "fr": "Dans quel pays déménagerais-tu si tu pouvais choisir ?",
+   "de": "In welches Land würdest du ziehen, wenn du frei wählen könntest?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-035",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's a big goal you've broken down into small steps?",
+   "it": "Qual è un grande obiettivo che hai diviso in piccoli passi?",
+   "es": "¿Qué gran meta has dividido en pequeños pasos?",
+   "pt": "Que grande objetivo dividiste em pequenos passos?",
+   "pt_BR": "Que grande meta você dividiu em pequenos passos?",
+   "fr": "Quel grand objectif as-tu découpé en petites étapes ?",
+   "de": "Welches große Ziel hast du in kleine Schritte aufgeteilt?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-036",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What kind of adventure are you hoping to have this year?",
+   "it": "Che tipo di avventura speri di vivere quest'anno?",
+   "es": "¿Qué tipo de aventura esperas vivir este año?",
+   "pt": "Que tipo de aventura esperas viver este ano?",
+   "pt_BR": "Que tipo de aventura você espera viver este ano?",
+   "fr": "Quel genre d'aventure espères-tu vivre cette année ?",
+   "de": "Was für ein Abenteuer wünschst du dir für dieses Jahr?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-037",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "If you could learn from any expert in the world, who would it be?",
+   "it": "Se potessi imparare da un esperto qualsiasi al mondo, chi sarebbe?",
+   "es": "Si pudieras aprender de cualquier experto del mundo, ¿quién sería?",
+   "pt": "Se pudesses aprender com qualquer especialista do mundo, quem seria?",
+   "pt_BR": "Se você pudesse aprender com qualquer especialista do mundo, quem seria?",
+   "fr": "Si tu pouvais apprendre auprès d'un expert du monde entier, ce serait qui ?",
+   "de": "Von welchem Experten der Welt würdest du gern lernen?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-038",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's a dish you'd love to learn to cook perfectly?",
+   "it": "Qual è un piatto che ti piacerebbe imparare a cucinare alla perfezione?",
+   "es": "¿Qué plato te encantaría aprender a cocinar a la perfección?",
+   "pt": "Que prato gostarias de aprender a cozinhar na perfeição?",
+   "pt_BR": "Que prato você adoraria aprender a cozinhar com perfeição?",
+   "fr": "Quel plat aimerais-tu apprendre à cuisiner à la perfection ?",
+   "de": "Welches Gericht würdest du gern perfekt kochen können?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-039",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's an instrument or hobby you wish you'd started earlier?",
+   "it": "Qual è uno strumento o hobby che vorresti aver iniziato prima?",
+   "es": "¿Qué instrumento o afición te gustaría haber empezado antes?",
+   "pt": "Que instrumento ou passatempo gostavas de ter começado mais cedo?",
+   "pt_BR": "Que instrumento ou hobby você gostaria de ter começado mais cedo?",
+   "fr": "Quel instrument ou loisir regrettes-tu de ne pas avoir commencé plus tôt ?",
+   "de": "Welches Instrument oder Hobby hättest du gern früher angefangen?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-040",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What does success mean to you, beyond work?",
+   "it": "Che cosa significa per te il successo, al di là del lavoro?",
+   "es": "¿Qué significa el éxito para ti, más allá del trabajo?",
+   "pt": "O que significa o sucesso para ti, para além do trabalho?",
+   "pt_BR": "O que significa sucesso para você, além do trabalho?",
+   "fr": "Que signifie la réussite pour toi, en dehors du travail ?",
+   "de": "Was bedeutet Erfolg für dich, abseits der Arbeit?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-041",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's a sport or physical challenge you'd like to try?",
+   "it": "Quale sport o sfida fisica ti piacerebbe provare?",
+   "es": "¿Qué deporte o reto físico te gustaría probar?",
+   "pt": "Que desporto ou desafio físico gostavas de experimentar?",
+   "pt_BR": "Que esporte ou desafio físico você gostaria de experimentar?",
+   "fr": "Quel sport ou défi physique aimerais-tu essayer ?",
+   "de": "Welche Sportart oder körperliche Herausforderung würdest du gern ausprobieren?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-042",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's a tradition from your culture you hope to pass on someday?",
+   "it": "Quale tradizione della tua cultura speri di tramandare un giorno?",
+   "es": "¿Qué tradición de tu cultura esperas transmitir algún día?",
+   "pt": "Que tradição da tua cultura esperas transmitir um dia?",
+   "pt_BR": "Que tradição da sua cultura você espera transmitir um dia?",
+   "fr": "Quelle tradition de ta culture espères-tu transmettre un jour ?",
+   "de": "Welche Tradition deiner Kultur möchtest du eines Tages weitergeben?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-043",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's one thing you'd tell your younger self about chasing dreams?",
+   "it": "Che cosa diresti al te stesso più giovane sull'inseguire i sogni?",
+   "es": "¿Qué le dirías a tu yo más joven sobre perseguir sueños?",
+   "pt": "O que dirias ao teu eu mais novo sobre perseguir sonhos?",
+   "pt_BR": "O que você diria ao seu eu mais jovem sobre correr atrás dos sonhos?",
+   "fr": "Que dirais-tu à ton moi plus jeune sur la poursuite des rêves ?",
+   "de": "Was würdest du deinem jüngeren Ich über das Verfolgen von Träumen sagen?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-044",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What would you like to be doing when you're 70?",
+   "it": "Che cosa ti piacerebbe fare a 70 anni?",
+   "es": "¿Qué te gustaría estar haciendo a los 70 años?",
+   "pt": "O que gostarias de estar a fazer aos 70 anos?",
+   "pt_BR": "O que você gostaria de estar fazendo aos 70 anos?",
+   "fr": "Que voudrais-tu faire à 70 ans ?",
+   "de": "Was möchtest du mit 70 gerade tun?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-045",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "Which city would you love to spend a month living in?",
+   "it": "In quale città ti piacerebbe vivere per un mese?",
+   "es": "¿En qué ciudad te encantaría vivir durante un mes?",
+   "pt": "Em que cidade gostavas de viver durante um mês?",
+   "pt_BR": "Em que cidade você adoraria morar por um mês?",
+   "fr": "Dans quelle ville aimerais-tu vivre pendant un mois ?",
+   "de": "In welcher Stadt würdest du gern einen Monat lang leben?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-046",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's a goal you'd like to reach together with friends or family?",
+   "it": "Qual è un obiettivo che ti piacerebbe raggiungere insieme ad amici o famiglia?",
+   "es": "¿Qué meta te gustaría alcanzar junto a amigos o familia?",
+   "pt": "Que objetivo gostavas de alcançar junto com amigos ou família?",
+   "pt_BR": "Que meta você gostaria de alcançar junto com amigos ou família?",
+   "fr": "Quel objectif aimerais-tu atteindre avec des amis ou ta famille ?",
+   "de": "Welches Ziel würdest du gern gemeinsam mit Freunden oder Familie erreichen?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-047",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's a challenge you took on that changed you?",
+   "it": "Qual è una sfida che hai affrontato e che ti ha cambiato?",
+   "es": "¿Qué reto asumiste que te cambió?",
+   "pt": "Que desafio enfrentaste que te mudou?",
+   "pt_BR": "Que desafio você enfrentou que mudou você?",
+   "fr": "Quel défi as-tu relevé qui t'a changé ?",
+   "de": "Welche Herausforderung hast du angenommen, die dich verändert hat?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-048",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "What's the next thing on your wish list, big or small?",
+   "it": "Qual è la prossima cosa nella tua lista dei desideri, grande o piccola?",
+   "es": "¿Cuál es lo próximo en tu lista de deseos, grande o pequeño?",
+   "pt": "Qual é a próxima coisa na tua lista de desejos, grande ou pequena?",
+   "pt_BR": "Qual é a próxima coisa na sua lista de desejos, grande ou pequena?",
+   "fr": "Quelle est la prochaine chose sur ta liste de souhaits, grande ou petite ?",
+   "de": "Was ist das Nächste auf deiner Wunschliste, groß oder klein?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-049",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "How do you like to celebrate when you reach a goal?",
+   "it": "Come ti piace festeggiare quando raggiungi un obiettivo?",
+   "es": "¿Cómo te gusta celebrar cuando alcanzas una meta?",
+   "pt": "Como gostas de celebrar quando alcanças um objetivo?",
+   "pt_BR": "Como você gosta de comemorar quando alcança uma meta?",
+   "fr": "Comment aimes-tu fêter l'atteinte d'un objectif ?",
+   "de": "Wie feierst du gern, wenn du ein Ziel erreicht hast?"
+  }
+ },
+ {
+  "id": "ib-dreams_goals-050",
+  "topic": "dreams_goals",
+  "text": {
+   "en": "If you could give the world one gift, what would it be?",
+   "it": "Se potessi fare un dono al mondo, quale sarebbe?",
+   "es": "Si pudieras hacerle un regalo al mundo, ¿cuál sería?",
+   "pt": "Se pudesses oferecer uma prenda ao mundo, qual seria?",
+   "pt_BR": "Se você pudesse dar um presente ao mundo, qual seria?",
+   "fr": "Si tu pouvais faire un cadeau au monde, ce serait lequel ?",
+   "de": "Wenn du der Welt ein Geschenk machen könntest, welches wäre es?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-001",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather live by the sea or in the mountains?",
+   "it": "Preferiresti vivere al mare o in montagna?",
+   "es": "¿Preferirías vivir junto al mar o en la montaña?",
+   "pt": "Preferias viver junto ao mar ou na montanha?",
+   "pt_BR": "Você preferiria morar perto do mar ou na montanha?",
+   "fr": "Tu préférerais vivre au bord de la mer ou à la montagne ?",
+   "de": "Würdest du lieber am Meer oder in den Bergen leben?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-002",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather travel the world for a year or have your dream home?",
+   "it": "Preferiresti viaggiare per il mondo per un anno o avere la casa dei tuoi sogni?",
+   "es": "¿Preferirías viajar por el mundo durante un año o tener la casa de tus sueños?",
+   "pt": "Preferias viajar pelo mundo durante um ano ou ter a casa dos teus sonhos?",
+   "pt_BR": "Você preferiria viajar pelo mundo por um ano ou ter a casa dos seus sonhos?",
+   "fr": "Tu préférerais voyager autour du monde pendant un an ou avoir la maison de tes rêves ?",
+   "de": "Würdest du lieber ein Jahr lang um die Welt reisen oder dein Traumhaus besitzen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-003",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather speak every language or play every instrument?",
+   "it": "Preferiresti parlare tutte le lingue o suonare tutti gli strumenti?",
+   "es": "¿Preferirías hablar todos los idiomas o tocar todos los instrumentos?",
+   "pt": "Preferias falar todas as línguas ou tocar todos os instrumentos?",
+   "pt_BR": "Você preferiria falar todos os idiomas ou tocar todos os instrumentos?",
+   "fr": "Tu préférerais parler toutes les langues ou jouer de tous les instruments ?",
+   "de": "Würdest du lieber alle Sprachen sprechen oder jedes Instrument spielen können?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-004",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather explore a big city or a quiet village on holiday?",
+   "it": "Preferiresti esplorare una grande città o un tranquillo paesino in vacanza?",
+   "es": "¿Preferirías explorar una gran ciudad o un pueblo tranquilo de vacaciones?",
+   "pt": "Preferias explorar uma grande cidade ou uma aldeia tranquila nas férias?",
+   "pt_BR": "Você preferiria explorar uma cidade grande ou uma vila tranquila nas férias?",
+   "fr": "Tu préférerais explorer une grande ville ou un village tranquille en vacances ?",
+   "de": "Würdest du im Urlaub lieber eine Großstadt oder ein ruhiges Dorf erkunden?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-005",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather be an early bird or a night owl forever?",
+   "it": "Preferiresti essere per sempre mattiniero o nottambulo?",
+   "es": "¿Preferirías ser madrugador o noctámbulo para siempre?",
+   "pt": "Preferias ser para sempre madrugador ou noctívago?",
+   "pt_BR": "Você preferiria ser para sempre madrugador ou noturno?",
+   "fr": "Tu préférerais être du matin ou du soir pour toujours ?",
+   "de": "Wärst du lieber für immer ein Frühaufsteher oder eine Nachteule?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-006",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather cook every meal yourself or eat out every day?",
+   "it": "Preferiresti cucinarti ogni pasto o mangiare fuori ogni giorno?",
+   "es": "¿Preferirías cocinar todas tus comidas o comer fuera cada día?",
+   "pt": "Preferias cozinhar todas as refeições ou comer fora todos os dias?",
+   "pt_BR": "Você preferiria cozinhar todas as refeições ou comer fora todo dia?",
+   "fr": "Tu préférerais cuisiner tous tes repas ou manger au restaurant tous les jours ?",
+   "de": "Würdest du lieber jede Mahlzeit selbst kochen oder jeden Tag auswärts essen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-007",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather have a pause button for time or a rewind button?",
+   "it": "Preferiresti avere un tasto pausa per il tempo o uno per riavvolgerlo?",
+   "es": "¿Preferirías tener un botón de pausa para el tiempo o uno de rebobinado?",
+   "pt": "Preferias ter um botão de pausa para o tempo ou um de retrocesso?",
+   "pt_BR": "Você preferiria ter um botão de pausa para o tempo ou um de retroceder?",
+   "fr": "Tu préférerais avoir un bouton pause pour le temps ou un bouton retour en arrière ?",
+   "de": "Hättest du lieber eine Pausetaste für die Zeit oder eine Zurückspultaste?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-008",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather visit the past or see the future?",
+   "it": "Preferiresti visitare il passato o vedere il futuro?",
+   "es": "¿Preferirías visitar el pasado o ver el futuro?",
+   "pt": "Preferias visitar o passado ou ver o futuro?",
+   "pt_BR": "Você preferiria visitar o passado ou ver o futuro?",
+   "fr": "Tu préférerais visiter le passé ou voir le futur ?",
+   "de": "Würdest du lieber die Vergangenheit besuchen oder die Zukunft sehen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-009",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather always be warm or always be cool?",
+   "it": "Preferiresti avere sempre caldo o sempre fresco?",
+   "es": "¿Preferirías tener siempre calor o siempre fresco?",
+   "pt": "Preferias ter sempre calor ou sempre fresco?",
+   "pt_BR": "Você preferiria estar sempre com calor ou sempre com fresco?",
+   "fr": "Tu préférerais avoir toujours chaud ou toujours frais ?",
+   "de": "Wäre dir lieber, immer warm oder immer kühl zu haben?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-010",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather read a great book or watch a great film tonight?",
+   "it": "Preferiresti leggere un bel libro o guardare un bel film stasera?",
+   "es": "¿Preferirías leer un gran libro o ver una gran película esta noche?",
+   "pt": "Preferias ler um grande livro ou ver um grande filme esta noite?",
+   "pt_BR": "Você preferiria ler um ótimo livro ou assistir a um ótimo filme hoje à noite?",
+   "fr": "Tu préférerais lire un super livre ou regarder un super film ce soir ?",
+   "de": "Würdest du heute Abend lieber ein tolles Buch lesen oder einen tollen Film sehen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-011",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather have breakfast in Paris or dinner in Tokyo?",
+   "it": "Preferiresti fare colazione a Parigi o cenare a Tokyo?",
+   "es": "¿Preferirías desayunar en París o cenar en Tokio?",
+   "pt": "Preferias tomar o pequeno-almoço em Paris ou jantar em Tóquio?",
+   "pt_BR": "Você preferiria tomar café da manhã em Paris ou jantar em Tóquio?",
+   "fr": "Tu préférerais prendre ton petit-déjeuner à Paris ou dîner à Tokyo ?",
+   "de": "Würdest du lieber in Paris frühstücken oder in Tokio zu Abend essen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-012",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather learn something new every day or relax every day?",
+   "it": "Preferiresti imparare qualcosa di nuovo ogni giorno o rilassarti ogni giorno?",
+   "es": "¿Preferirías aprender algo nuevo cada día o relajarte cada día?",
+   "pt": "Preferias aprender algo novo todos os dias ou relaxar todos os dias?",
+   "pt_BR": "Você preferiria aprender algo novo todo dia ou relaxar todo dia?",
+   "fr": "Tu préférerais apprendre quelque chose de nouveau chaque jour ou te détendre chaque jour ?",
+   "de": "Würdest du lieber jeden Tag etwas Neues lernen oder jeden Tag entspannen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-013",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather camp under the stars or stay in a cozy cabin?",
+   "it": "Preferiresti campeggiare sotto le stelle o stare in una baita accogliente?",
+   "es": "¿Preferirías acampar bajo las estrellas o quedarte en una cabaña acogedora?",
+   "pt": "Preferias acampar sob as estrelas ou ficar numa cabana acolhedora?",
+   "pt_BR": "Você preferiria acampar sob as estrelas ou ficar numa cabana aconchegante?",
+   "fr": "Tu préférerais camper sous les étoiles ou séjourner dans un chalet douillet ?",
+   "de": "Würdest du lieber unter den Sternen zelten oder in einer gemütlichen Hütte übernachten?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-014",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather talk to animals or understand every human language?",
+   "it": "Preferiresti parlare con gli animali o capire ogni lingua umana?",
+   "es": "¿Preferirías hablar con los animales o entender todos los idiomas humanos?",
+   "pt": "Preferias falar com os animais ou perceber todas as línguas humanas?",
+   "pt_BR": "Você preferiria falar com os animais ou entender todas as línguas humanas?",
+   "fr": "Tu préférerais parler aux animaux ou comprendre toutes les langues humaines ?",
+   "de": "Würdest du lieber mit Tieren sprechen oder jede menschliche Sprache verstehen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-015",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather take the train or a road trip for a long journey?",
+   "it": "Preferiresti il treno o un viaggio in macchina per un lungo tragitto?",
+   "es": "¿Preferirías el tren o un viaje por carretera para un trayecto largo?",
+   "pt": "Preferias o comboio ou uma viagem de carro para um longo trajeto?",
+   "pt_BR": "Você preferiria trem ou uma viagem de carro para um trajeto longo?",
+   "fr": "Tu préférerais le train ou un road trip pour un long trajet ?",
+   "de": "Würdest du für eine lange Strecke lieber den Zug oder einen Roadtrip nehmen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-016",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather have a personal chef or a personal driver?",
+   "it": "Preferiresti avere uno chef personale o un autista personale?",
+   "es": "¿Preferirías tener un chef personal o un chófer personal?",
+   "pt": "Preferias ter um chefe de cozinha pessoal ou um motorista pessoal?",
+   "pt_BR": "Você preferiria ter um chef pessoal ou um motorista pessoal?",
+   "fr": "Tu préférerais avoir un chef personnel ou un chauffeur personnel ?",
+   "de": "Hättest du lieber einen Privatkoch oder einen Privatfahrer?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-017",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather spend a day in a museum or at a market?",
+   "it": "Preferiresti passare una giornata in un museo o in un mercato?",
+   "es": "¿Preferirías pasar un día en un museo o en un mercado?",
+   "pt": "Preferias passar um dia num museu ou num mercado?",
+   "pt_BR": "Você preferiria passar um dia em um museu ou em uma feira?",
+   "fr": "Tu préférerais passer une journée dans un musée ou sur un marché ?",
+   "de": "Würdest du lieber einen Tag im Museum oder auf einem Markt verbringen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-018",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather be able to fly or breathe underwater?",
+   "it": "Preferiresti saper volare o respirare sott'acqua?",
+   "es": "¿Preferirías poder volar o respirar bajo el agua?",
+   "pt": "Preferias saber voar ou respirar debaixo de água?",
+   "pt_BR": "Você preferiria poder voar ou respirar debaixo d'água?",
+   "fr": "Tu préférerais pouvoir voler ou respirer sous l'eau ?",
+   "de": "Würdest du lieber fliegen oder unter Wasser atmen können?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-019",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather always have great weather or always have great food?",
+   "it": "Preferiresti avere sempre un bel tempo o sempre ottimo cibo?",
+   "es": "¿Preferirías tener siempre buen tiempo o siempre buena comida?",
+   "pt": "Preferias ter sempre bom tempo ou sempre boa comida?",
+   "pt_BR": "Você preferiria ter sempre tempo bom ou sempre comida ótima?",
+   "fr": "Tu préférerais avoir toujours beau temps ou toujours de la bonne cuisine ?",
+   "de": "Wäre dir lieber, immer gutes Wetter oder immer gutes Essen zu haben?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-020",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather learn to dance or learn to paint?",
+   "it": "Preferiresti imparare a ballare o a dipingere?",
+   "es": "¿Preferirías aprender a bailar o a pintar?",
+   "pt": "Preferias aprender a dançar ou a pintar?",
+   "pt_BR": "Você preferiria aprender a dançar ou a pintar?",
+   "fr": "Tu préférerais apprendre à danser ou à peindre ?",
+   "de": "Würdest du lieber tanzen oder malen lernen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-021",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather have a huge garden or a rooftop terrace with a view?",
+   "it": "Preferiresti avere un grande giardino o una terrazza panoramica sul tetto?",
+   "es": "¿Preferirías tener un gran jardín o una terraza en la azotea con vistas?",
+   "pt": "Preferias ter um grande jardim ou um terraço no telhado com vista?",
+   "pt_BR": "Você preferiria ter um grande jardim ou um terraço na cobertura com vista?",
+   "fr": "Tu préférerais avoir un grand jardin ou une terrasse sur le toit avec vue ?",
+   "de": "Hättest du lieber einen riesigen Garten oder eine Dachterrasse mit Aussicht?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-022",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather meet your hero or have lunch with a historical figure?",
+   "it": "Preferiresti incontrare il tuo idolo o pranzare con un personaggio storico?",
+   "es": "¿Preferirías conocer a tu ídolo o almorzar con un personaje histórico?",
+   "pt": "Preferias conhecer o teu ídolo ou almoçar com uma figura histórica?",
+   "pt_BR": "Você preferiria conhecer o seu ídolo ou almoçar com uma figura histórica?",
+   "fr": "Tu préférerais rencontrer ton idole ou déjeuner avec un personnage historique ?",
+   "de": "Würdest du lieber dein Idol treffen oder mit einer historischen Persönlichkeit zu Mittag essen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-023",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather have more free time or more energy?",
+   "it": "Preferiresti avere più tempo libero o più energia?",
+   "es": "¿Preferirías tener más tiempo libre o más energía?",
+   "pt": "Preferias ter mais tempo livre ou mais energia?",
+   "pt_BR": "Você preferiria ter mais tempo livre ou mais energia?",
+   "fr": "Tu préférerais avoir plus de temps libre ou plus d'énergie ?",
+   "de": "Hättest du lieber mehr Freizeit oder mehr Energie?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-024",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather join a local festival or explore a place alone in peace?",
+   "it": "Preferiresti partecipare a una festa locale o esplorare un posto da solo in tranquillità?",
+   "es": "¿Preferirías unirte a un festival local o explorar un lugar tranquilamente a solas?",
+   "pt": "Preferias participar numa festa local ou explorar um sítio sozinho em sossego?",
+   "pt_BR": "Você preferiria participar de um festival local ou explorar um lugar sozinho em paz?",
+   "fr": "Tu préférerais participer à une fête locale ou explorer un endroit seul au calme ?",
+   "de": "Würdest du lieber bei einem Dorffest mitfeiern oder einen Ort in Ruhe allein erkunden?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-025",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather sing in front of a crowd or give a speech?",
+   "it": "Preferiresti cantare davanti a una folla o tenere un discorso?",
+   "es": "¿Preferirías cantar delante de una multitud o dar un discurso?",
+   "pt": "Preferias cantar à frente de uma multidão ou fazer um discurso?",
+   "pt_BR": "Você preferiria cantar diante de uma multidão ou fazer um discurso?",
+   "fr": "Tu préférerais chanter devant une foule ou faire un discours ?",
+   "de": "Würdest du lieber vor Publikum singen oder eine Rede halten?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-026",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather never be lost again or never forget a name?",
+   "it": "Preferiresti non perderti mai più o non dimenticare mai un nome?",
+   "es": "¿Preferirías no perderte nunca más o no olvidar nunca un nombre?",
+   "pt": "Preferias nunca mais te perderes ou nunca esqueceres um nome?",
+   "pt_BR": "Você preferiria nunca mais se perder ou nunca esquecer um nome?",
+   "fr": "Tu préférerais ne plus jamais te perdre ou ne jamais oublier un prénom ?",
+   "de": "Wäre dir lieber, dich nie wieder zu verlaufen oder nie einen Namen zu vergessen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-027",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather spend a month on a tropical island or in a snowy forest?",
+   "it": "Preferiresti passare un mese su un'isola tropicale o in una foresta innevata?",
+   "es": "¿Preferirías pasar un mes en una isla tropical o en un bosque nevado?",
+   "pt": "Preferias passar um mês numa ilha tropical ou numa floresta nevada?",
+   "pt_BR": "Você preferiria passar um mês em uma ilha tropical ou em uma floresta coberta de neve?",
+   "fr": "Tu préférerais passer un mois sur une île tropicale ou dans une forêt enneigée ?",
+   "de": "Würdest du lieber einen Monat auf einer Tropeninsel oder in einem verschneiten Wald verbringen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-028",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather have a famous recipe named after you or a street?",
+   "it": "Preferiresti avere una famosa ricetta o una strada con il tuo nome?",
+   "es": "¿Preferirías que una receta famosa o una calle llevara tu nombre?",
+   "pt": "Preferias que uma receita famosa ou uma rua tivesse o teu nome?",
+   "pt_BR": "Você preferiria que uma receita famosa ou uma rua tivesse o seu nome?",
+   "fr": "Tu préférerais qu'une célèbre recette ou une rue porte ton nom ?",
+   "de": "Wäre dir lieber, ein berühmtes Rezept oder eine Straße würde deinen Namen tragen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-029",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather write a book or make a film?",
+   "it": "Preferiresti scrivere un libro o girare un film?",
+   "es": "¿Preferirías escribir un libro o hacer una película?",
+   "pt": "Preferias escrever um livro ou fazer um filme?",
+   "pt_BR": "Você preferiria escrever um livro ou fazer um filme?",
+   "fr": "Tu préférerais écrire un livre ou réaliser un film ?",
+   "de": "Würdest du lieber ein Buch schreiben oder einen Film drehen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-030",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather have a long weekend every week or a long holiday every year?",
+   "it": "Preferiresti un lungo weekend ogni settimana o una lunga vacanza ogni anno?",
+   "es": "¿Preferirías un fin de semana largo cada semana o unas vacaciones largas cada año?",
+   "pt": "Preferias um fim de semana prolongado todas as semanas ou umas férias longas todos os anos?",
+   "pt_BR": "Você preferiria um fim de semana prolongado toda semana ou umas férias longas todo ano?",
+   "fr": "Tu préférerais un long week-end chaque semaine ou de longues vacances chaque année ?",
+   "de": "Hättest du lieber jede Woche ein langes Wochenende oder jedes Jahr einen langen Urlaub?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-031",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather try a new food every day or keep your favourite forever?",
+   "it": "Preferiresti provare un cibo nuovo ogni giorno o tenere il tuo preferito per sempre?",
+   "es": "¿Preferirías probar una comida nueva cada día o quedarte con tu favorita para siempre?",
+   "pt": "Preferias provar uma comida nova todos os dias ou ficar com a tua favorita para sempre?",
+   "pt_BR": "Você preferiria experimentar uma comida nova todo dia ou ficar com a sua favorita para sempre?",
+   "fr": "Tu préférerais goûter un nouveau plat chaque jour ou garder ton préféré pour toujours ?",
+   "de": "Würdest du lieber jeden Tag etwas Neues essen oder für immer dein Lieblingsgericht behalten?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-032",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather be great at sports or great at music?",
+   "it": "Preferiresti essere bravissimo nello sport o nella musica?",
+   "es": "¿Preferirías ser genial en los deportes o en la música?",
+   "pt": "Preferias ser ótimo no desporto ou na música?",
+   "pt_BR": "Você preferiria ser ótimo nos esportes ou na música?",
+   "fr": "Tu préférerais exceller en sport ou en musique ?",
+   "de": "Wärst du lieber richtig gut im Sport oder in der Musik?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-033",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather live without a phone for a month or without music?",
+   "it": "Preferiresti vivere un mese senza telefono o senza musica?",
+   "es": "¿Preferirías vivir un mes sin móvil o sin música?",
+   "pt": "Preferias viver um mês sem telemóvel ou sem música?",
+   "pt_BR": "Você preferiria viver um mês sem celular ou sem música?",
+   "fr": "Tu préférerais vivre un mois sans téléphone ou sans musique ?",
+   "de": "Würdest du lieber einen Monat ohne Handy oder ohne Musik leben?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-034",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather walk everywhere or cycle everywhere?",
+   "it": "Preferiresti andare ovunque a piedi o ovunque in bicicletta?",
+   "es": "¿Preferirías ir a todas partes andando o en bicicleta?",
+   "pt": "Preferias ir a todo o lado a pé ou de bicicleta?",
+   "pt_BR": "Você preferiria ir a todo lugar a pé ou de bicicleta?",
+   "fr": "Tu préférerais tout faire à pied ou tout faire à vélo ?",
+   "de": "Würdest du lieber überall zu Fuß gehen oder überall mit dem Fahrrad fahren?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-035",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather see the northern lights or a total solar eclipse?",
+   "it": "Preferiresti vedere l'aurora boreale o un'eclissi solare totale?",
+   "es": "¿Preferirías ver la aurora boreal o un eclipse solar total?",
+   "pt": "Preferias ver a aurora boreal ou um eclipse solar total?",
+   "pt_BR": "Você preferiria ver a aurora boreal ou um eclipse solar total?",
+   "fr": "Tu préférerais voir une aurore boréale ou une éclipse solaire totale ?",
+   "de": "Würdest du lieber Polarlichter oder eine totale Sonnenfinsternis sehen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-036",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather spend an evening with board games or at a live concert?",
+   "it": "Preferiresti passare una serata con i giochi da tavolo o a un concerto dal vivo?",
+   "es": "¿Preferirías pasar una noche con juegos de mesa o en un concierto en directo?",
+   "pt": "Preferias passar uma noite com jogos de tabuleiro ou num concerto ao vivo?",
+   "pt_BR": "Você preferiria passar uma noite com jogos de tabuleiro ou em um show ao vivo?",
+   "fr": "Tu préférerais passer une soirée jeux de société ou à un concert en direct ?",
+   "de": "Würdest du lieber einen Abend mit Brettspielen oder bei einem Live-Konzert verbringen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-037",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather have a pet dragon or a pet unicorn?",
+   "it": "Preferiresti avere un drago o un unicorno come animale domestico?",
+   "es": "¿Preferirías tener un dragón o un unicornio como mascota?",
+   "pt": "Preferias ter um dragão ou um unicórnio como animal de estimação?",
+   "pt_BR": "Você preferiria ter um dragão ou um unicórnio como animal de estimação?",
+   "fr": "Tu préférerais avoir un dragon ou une licorne comme animal de compagnie ?",
+   "de": "Hättest du lieber einen Drachen oder ein Einhorn als Haustier?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-038",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather be fluent in a new language by next year or visit five new countries?",
+   "it": "Preferiresti parlare fluentemente una nuova lingua entro l'anno prossimo o visitare cinque nuovi paesi?",
+   "es": "¿Preferirías hablar con fluidez un idioma nuevo el año que viene o visitar cinco países nuevos?",
+   "pt": "Preferias falar fluentemente uma nova língua no próximo ano ou visitar cinco países novos?",
+   "pt_BR": "Você preferiria falar fluentemente um novo idioma até o ano que vem ou visitar cinco países novos?",
+   "fr": "Tu préférerais parler couramment une nouvelle langue d'ici l'an prochain ou visiter cinq nouveaux pays ?",
+   "de": "Würdest du lieber bis nächstes Jahr eine neue Sprache fließend sprechen oder fünf neue Länder bereisen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-039",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather swap lives for a day with a famous artist or a famous scientist?",
+   "it": "Preferiresti scambiare la vita per un giorno con un artista famoso o con uno scienziato famoso?",
+   "es": "¿Preferirías cambiar de vida por un día con un artista famoso o con un científico famoso?",
+   "pt": "Preferias trocar de vida por um dia com um artista famoso ou com um cientista famoso?",
+   "pt_BR": "Você preferiria trocar de vida por um dia com um artista famoso ou com um cientista famoso?",
+   "fr": "Tu préférerais échanger ta vie pour un jour avec un artiste célèbre ou un scientifique célèbre ?",
+   "de": "Würdest du lieber für einen Tag mit einem berühmten Künstler oder einem berühmten Wissenschaftler tauschen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-040",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather have a quiet picnic in a park or a big dinner with friends?",
+   "it": "Preferiresti un picnic tranquillo in un parco o una grande cena con gli amici?",
+   "es": "¿Preferirías un picnic tranquilo en un parque o una gran cena con amigos?",
+   "pt": "Preferias um piquenique tranquilo num parque ou um grande jantar com amigos?",
+   "pt_BR": "Você preferiria um piquenique tranquilo em um parque ou um grande jantar com amigos?",
+   "fr": "Tu préférerais un pique-nique tranquille dans un parc ou un grand dîner entre amis ?",
+   "de": "Würdest du lieber ein ruhiges Picknick im Park oder ein großes Abendessen mit Freunden haben?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-041",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather know how to fix anything or how to cook anything?",
+   "it": "Preferiresti saper riparare qualsiasi cosa o saper cucinare qualsiasi cosa?",
+   "es": "¿Preferirías saber arreglar cualquier cosa o saber cocinar cualquier cosa?",
+   "pt": "Preferias saber arranjar qualquer coisa ou saber cozinhar qualquer coisa?",
+   "pt_BR": "Você preferiria saber consertar qualquer coisa ou saber cozinhar qualquer coisa?",
+   "fr": "Tu préférerais savoir tout réparer ou savoir tout cuisiner ?",
+   "de": "Wäre dir lieber, alles reparieren oder alles kochen zu können?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-042",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather have summer all year or the four seasons?",
+   "it": "Preferiresti l'estate tutto l'anno o le quattro stagioni?",
+   "es": "¿Preferirías tener verano todo el año o las cuatro estaciones?",
+   "pt": "Preferias ter verão o ano todo ou as quatro estações?",
+   "pt_BR": "Você preferiria ter verão o ano todo ou as quatro estações?",
+   "fr": "Tu préférerais l'été toute l'année ou les quatre saisons ?",
+   "de": "Hättest du lieber das ganze Jahr Sommer oder die vier Jahreszeiten?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-043",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather volunteer abroad for a summer or take a creative course?",
+   "it": "Preferiresti fare volontariato all'estero per un'estate o seguire un corso creativo?",
+   "es": "¿Preferirías hacer voluntariado en el extranjero un verano o hacer un curso creativo?",
+   "pt": "Preferias fazer voluntariado no estrangeiro durante um verão ou fazer um curso criativo?",
+   "pt_BR": "Você preferiria fazer voluntariado no exterior por um verão ou fazer um curso criativo?",
+   "fr": "Tu préférerais faire du bénévolat à l'étranger pendant un été ou suivre un cours créatif ?",
+   "de": "Würdest du lieber einen Sommer lang im Ausland freiwillig helfen oder einen Kreativkurs besuchen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-044",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather have a window seat on a scenic train or a seat at a chef's table?",
+   "it": "Preferiresti un posto al finestrino su un treno panoramico o un posto al tavolo dello chef?",
+   "es": "¿Preferirías un asiento junto a la ventana en un tren panorámico o un sitio en la mesa del chef?",
+   "pt": "Preferias um lugar à janela num comboio panorâmico ou um lugar à mesa do chef?",
+   "pt_BR": "Você preferiria um assento na janela de um trem panorâmico ou um lugar na mesa do chef?",
+   "fr": "Tu préférerais une place côté fenêtre dans un train panoramique ou une place à la table du chef ?",
+   "de": "Hättest du lieber einen Fensterplatz in einem Panoramazug oder einen Platz am Chef's Table?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-045",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather master chess or master a musical instrument?",
+   "it": "Preferiresti padroneggiare gli scacchi o uno strumento musicale?",
+   "es": "¿Preferirías dominar el ajedrez o un instrumento musical?",
+   "pt": "Preferias dominar o xadrez ou um instrumento musical?",
+   "pt_BR": "Você preferiria dominar o xadrez ou um instrumento musical?",
+   "fr": "Tu préférerais maîtriser les échecs ou un instrument de musique ?",
+   "de": "Würdest du lieber Schach oder ein Musikinstrument meistern?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-046",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather spend a rainy day indoors with a good book or outside in the rain?",
+   "it": "Preferiresti passare una giornata di pioggia in casa con un buon libro o fuori sotto la pioggia?",
+   "es": "¿Preferirías pasar un día de lluvia en casa con un buen libro o fuera bajo la lluvia?",
+   "pt": "Preferias passar um dia de chuva em casa com um bom livro ou lá fora à chuva?",
+   "pt_BR": "Você preferiria passar um dia de chuva em casa com um bom livro ou na rua na chuva?",
+   "fr": "Tu préférerais passer une journée de pluie à l'intérieur avec un bon livre ou dehors sous la pluie ?",
+   "de": "Würdest du einen Regentag lieber drinnen mit einem guten Buch oder draußen im Regen verbringen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-047",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather have a bakery or a bookshop of your own?",
+   "it": "Preferiresti avere una panetteria o una libreria tutta tua?",
+   "es": "¿Preferirías tener una panadería o una librería propia?",
+   "pt": "Preferias ter uma padaria ou uma livraria só tua?",
+   "pt_BR": "Você preferiria ter uma padaria ou uma livraria só sua?",
+   "fr": "Tu préférerais avoir ta propre boulangerie ou ta propre librairie ?",
+   "de": "Hättest du lieber eine eigene Bäckerei oder eine eigene Buchhandlung?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-048",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather swim in the ocean or hike through a forest?",
+   "it": "Preferiresti nuotare nell'oceano o fare un'escursione in un bosco?",
+   "es": "¿Preferirías nadar en el océano o hacer senderismo por un bosque?",
+   "pt": "Preferias nadar no oceano ou fazer uma caminhada numa floresta?",
+   "pt_BR": "Você preferiria nadar no oceano ou fazer uma trilha em uma floresta?",
+   "fr": "Tu préférerais nager dans l'océan ou faire une randonnée en forêt ?",
+   "de": "Würdest du lieber im Ozean schwimmen oder durch einen Wald wandern?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-049",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather learn a local craft abroad or take a cooking class there?",
+   "it": "Preferiresti imparare un artigianato locale all'estero o seguire lì un corso di cucina?",
+   "es": "¿Preferirías aprender una artesanía local en el extranjero o hacer allí una clase de cocina?",
+   "pt": "Preferias aprender um artesanato local no estrangeiro ou fazer lá uma aula de cozinha?",
+   "pt_BR": "Você preferiria aprender um artesanato local no exterior ou fazer lá uma aula de culinária?",
+   "fr": "Tu préférerais apprendre un artisanat local à l'étranger ou y suivre un cours de cuisine ?",
+   "de": "Würdest du im Ausland lieber ein lokales Handwerk lernen oder dort einen Kochkurs besuchen?"
+  }
+ },
+ {
+  "id": "ib-would_you_rather-050",
+  "topic": "would_you_rather",
+  "text": {
+   "en": "Would you rather share your best story with one friend or a whole crowd?",
+   "it": "Preferiresti raccontare la tua storia migliore a un amico o a una folla intera?",
+   "es": "¿Preferirías contar tu mejor historia a un amigo o a toda una multitud?",
+   "pt": "Preferias contar a tua melhor história a um amigo ou a uma multidão inteira?",
+   "pt_BR": "Você preferiria contar a sua melhor história para um amigo ou para uma multidão inteira?",
+   "fr": "Tu préférerais raconter ta meilleure histoire à un ami ou à toute une foule ?",
+   "de": "Würdest du deine beste Geschichte lieber einem Freund oder einer ganzen Menge erzählen?"
+  }
+ }
+]

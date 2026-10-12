@@ -22,5 +22,6 @@ transport, language, festivals, family, money, photography, nightlife, nature, s
 Each tip one or two sentences, max ~220 characters in English, factual and respectful (no stereotypes;
 phrase as "It is common to...", "Many people..."). Use the Wikipedia articles "Culture of <country>" and
 "Etiquette in <region>" (WebFetch) to verify; don't invent laws or numbers.
+All 7 languages must say the SAME thing (if you shorten the English, shorten every language).
 Output is a JSON OBJECT keyed by ISO2: {"IT": [ ...30 items... ], "FR": [...], ...}.
 `id`: "ct-<ISO2>-<nn>", `category` = one of the keys above.

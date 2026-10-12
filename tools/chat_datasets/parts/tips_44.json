@@ -1,0 +1,394 @@
+{
+ "ZA": [
+  {
+   "id": "ct-ZA-01",
+   "category": "greetings",
+   "text": {
+    "en": "A handshake and a friendly \"How are you?\" are the normal way to start a conversation. It is polite to ask about the other person before getting to business.",
+    "it": "Una stretta di mano e un cordiale \"Come stai?\" sono il modo normale di iniziare. È educato chiedere come sta l'altra persona prima di passare agli affari.",
+    "es": "Un apretón de manos y un amable \"¿Cómo estás?\" son la forma habitual de empezar. Es de buena educación preguntar por la otra persona antes de ir al grano.",
+    "pt": "Um aperto de mão e um simpático \"Como estás?\" são a forma normal de começar. É educado perguntar pela outra pessoa antes de passar aos assuntos de trabalho.",
+    "pt_BR": "Um aperto de mão e um simpático \"Como você está?\" são a forma normal de começar. É educado perguntar pela outra pessoa antes de tratar de negócios.",
+    "fr": "Une poignée de main et un aimable \"Comment vas-tu ?\" sont la façon habituelle de commencer. Il est poli de prendre des nouvelles de l'autre avant de parler affaires.",
+    "de": "Ein Händedruck und ein freundliches \"Wie geht's dir?\" sind der übliche Einstieg. Es ist höflich, sich zuerst nach dem anderen zu erkundigen, bevor man zum Geschäftlichen kommt."
+   }
+  },
+  {
+   "id": "ct-ZA-02",
+   "category": "greetings",
+   "text": {
+    "en": "Among friends, \"Howzit?\" is a casual hello. Trying a greeting like \"Sawubona\" (Zulu) or \"Molo\" (Xhosa) is usually welcomed with a smile.",
+    "it": "Tra amici \"Howzit?\" è un saluto informale. Provare un saluto come \"Sawubona\" (zulu) o \"Molo\" (xhosa) di solito viene accolto con un sorriso.",
+    "es": "Entre amigos, \"Howzit?\" es un saludo informal. Probar un saludo como \"Sawubona\" (zulú) o \"Molo\" (xhosa) suele recibirse con una sonrisa.",
+    "pt": "Entre amigos, \"Howzit?\" é um cumprimento informal. Experimentar uma saudação como \"Sawubona\" (zulu) ou \"Molo\" (xhosa) costuma ser recebido com um sorriso.",
+    "pt_BR": "Entre amigos, \"Howzit?\" é uma saudação informal. Experimentar uma saudação como \"Sawubona\" (zulu) ou \"Molo\" (xhosa) costuma ser recebido com um sorriso.",
+    "fr": "Entre amis, \"Howzit ?\" est un salut décontracté. Essayer une salutation comme \"Sawubona\" (zoulou) ou \"Molo\" (xhosa) est généralement accueilli avec le sourire.",
+    "de": "Unter Freunden ist \"Howzit?\" ein lockerer Gruß. Wer es mit \"Sawubona\" (Zulu) oder \"Molo\" (Xhosa) versucht, wird meist mit einem Lächeln belohnt."
+   }
+  },
+  {
+   "id": "ct-ZA-03",
+   "category": "conversation",
+   "text": {
+    "en": "Many people enjoy chatting about sport, food, music and travel. Rugby, soccer and cricket are especially popular topics.",
+    "it": "A molti piace chiacchierare di sport, cibo, musica e viaggi. Rugby, calcio e cricket sono argomenti particolarmente popolari.",
+    "es": "A mucha gente le gusta hablar de deporte, comida, música y viajes. El rugby, el fútbol y el críquet son temas especialmente populares.",
+    "pt": "Muitas pessoas gostam de conversar sobre desporto, comida, música e viagens. O râguebi, o futebol e o críquete são temas particularmente populares.",
+    "pt_BR": "Muitas pessoas gostam de conversar sobre esporte, comida, música e viagens. O rúgbi, o futebol e o críquete são assuntos especialmente populares.",
+    "fr": "Beaucoup de gens aiment parler de sport, de cuisine, de musique et de voyages. Le rugby, le football et le cricket sont des sujets particulièrement populaires.",
+    "de": "Viele unterhalten sich gern über Sport, Essen, Musik und Reisen. Rugby, Fußball und Cricket sind besonders beliebte Themen."
+   }
+  },
+  {
+   "id": "ct-ZA-04",
+   "category": "conversation",
+   "text": {
+    "en": "South Africa's history of apartheid still shapes daily life. It is wise to listen respectfully and let locals raise the subject rather than asking strangers pointed questions.",
+    "it": "La storia dell'apartheid plasma ancora la vita quotidiana in Sudafrica. È saggio ascoltare con rispetto e lasciare che siano gli abitanti a toccare l'argomento, senza fare domande dirette a sconosciuti.",
+    "es": "La historia del apartheid sigue marcando la vida diaria en Sudáfrica. Conviene escuchar con respeto y dejar que sean los locales quienes saquen el tema, sin hacer preguntas directas a desconocidos.",
+    "pt": "A história do apartheid ainda marca o dia a dia na África do Sul. É prudente ouvir com respeito e deixar que sejam os locais a abordar o tema, sem fazer perguntas diretas a desconhecidos.",
+    "pt_BR": "A história do apartheid ainda marca o dia a dia na África do Sul. É prudente ouvir com respeito e deixar que os locais puxem o assunto, sem fazer perguntas diretas a desconhecidos.",
+    "fr": "L'histoire de l'apartheid marque encore le quotidien en Afrique du Sud. Il est sage d'écouter avec respect et de laisser les habitants aborder le sujet, sans poser de questions directes à des inconnus.",
+    "de": "Die Geschichte der Apartheid prägt in Südafrika bis heute den Alltag. Es ist klug, respektvoll zuzuhören und das Thema den Einheimischen zu überlassen, statt Fremden direkte Fragen zu stellen."
+   }
+  },
+  {
+   "id": "ct-ZA-05",
+   "category": "dining",
+   "text": {
+    "en": "A braai (barbecue) is a beloved social occasion, often with boerewors sausage. Guests commonly bring some meat or a side dish to share.",
+    "it": "Il braai (barbecue) è un amato momento di socialità, spesso con la salsiccia boerewors. Gli ospiti portano di solito della carne o un contorno da condividere.",
+    "es": "El braai (barbacoa) es una querida ocasión social, a menudo con salchicha boerewors. Es habitual que los invitados lleven carne o un acompañamiento para compartir.",
+    "pt": "O braai (churrasco) é um convívio muito apreciado, muitas vezes com salsicha boerewors. É comum os convidados levarem carne ou um acompanhamento para partilhar.",
+    "pt_BR": "O braai (churrasco) é um encontro muito querido, muitas vezes com linguiça boerewors. É comum os convidados levarem carne ou um acompanhamento para dividir.",
+    "fr": "Le braai (barbecue) est un moment de convivialité très apprécié, souvent avec de la saucisse boerewors. Les invités apportent généralement de la viande ou un accompagnement à partager.",
+    "de": "Ein Braai (Grillabend) ist ein beliebter geselliger Anlass, oft mit Boerewors-Wurst. Gäste bringen üblicherweise Fleisch oder eine Beilage zum Teilen mit."
+   }
+  },
+  {
+   "id": "ct-ZA-06",
+   "category": "dining",
+   "text": {
+    "en": "Be sure to try local treats such as koeksisters (syrupy fried pastries), melktert (milk tart) and biltong (dried cured meat).",
+    "it": "Assaggia i dolci e gli snack locali come i koeksister (dolci fritti allo sciroppo), la melktert (torta al latte) e il biltong (carne secca stagionata).",
+    "es": "No te pierdas las delicias locales como los koeksisters (dulces fritos con almíbar), la melktert (tarta de leche) y el biltong (carne seca curada).",
+    "pt": "Não deixes de provar iguarias locais como os koeksisters (doces fritos em calda), a melktert (tarte de leite) e o biltong (carne seca curada).",
+    "pt_BR": "Não deixe de provar delícias locais como os koeksisters (doces fritos com calda), a melktert (torta de leite) e o biltong (carne seca curada).",
+    "fr": "Goûte aux spécialités locales comme les koeksisters (beignets au sirop), la melktert (tarte au lait) et le biltong (viande séchée).",
+    "de": "Probier unbedingt lokale Spezialitäten wie Koeksisters (frittiertes Gebäck in Sirup), Melktert (Milchtarte) und Biltong (getrocknetes Pökelfleisch)."
+   }
+  },
+  {
+   "id": "ct-ZA-07",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping about 10 to 15 percent in restaurants is the norm. Check the bill first, as some places add a service charge for larger groups.",
+    "it": "Lasciare una mancia del 10-15 percento al ristorante è la norma. Controlla prima il conto, perché alcuni locali aggiungono un costo di servizio per i gruppi numerosi.",
+    "es": "Dejar una propina de entre el 10 y el 15 por ciento en los restaurantes es lo habitual. Revisa antes la cuenta, porque algunos sitios añaden un cargo por servicio a los grupos grandes.",
+    "pt": "Deixar uma gorjeta de 10 a 15 por cento nos restaurantes é o habitual. Confere primeiro a conta, porque alguns locais acrescentam uma taxa de serviço para grupos grandes.",
+    "pt_BR": "Deixar uma gorjeta de 10 a 15 por cento nos restaurantes é o habitual. Confira antes a conta, porque alguns lugares acrescentam uma taxa de serviço para grupos grandes.",
+    "fr": "Laisser un pourboire de 10 à 15 pour cent au restaurant est la norme. Vérifie d'abord l'addition, car certains établissements ajoutent un service pour les grands groupes.",
+    "de": "In Restaurants sind 10 bis 15 Prozent Trinkgeld üblich. Wirf zuerst einen Blick auf die Rechnung, denn manche Lokale berechnen bei größeren Gruppen eine Servicegebühr."
+   }
+  },
+  {
+   "id": "ct-ZA-08",
+   "category": "tipping",
+   "text": {
+    "en": "Petrol station attendants fill your tank and often clean the windscreen. A small tip in rand is customary, as it is for informal car guards.",
+    "it": "Gli addetti dei distributori fanno il pieno e spesso puliscono il parabrezza. È usanza lasciare una piccola mancia in rand, come ai guardiani informali dei parcheggi.",
+    "es": "Los empleados de las gasolineras llenan el depósito y suelen limpiar el parabrisas. Es costumbre dejar una pequeña propina en rands, igual que a los vigilantes informales de coches.",
+    "pt": "Os funcionários das bombas de gasolina abastecem o carro e costumam limpar o para-brisas. É habitual deixar uma pequena gorjeta em rands, tal como aos guardadores informais de carros.",
+    "pt_BR": "Os frentistas dos postos abastecem o carro e costumam limpar o para-brisa. É costume deixar uma pequena gorjeta em rands, assim como aos guardadores informais de carros.",
+    "fr": "Les pompistes font le plein et nettoient souvent le pare-brise. Il est d'usage de laisser un petit pourboire en rands, tout comme aux gardiens de voitures informels.",
+    "de": "Tankwarte betanken das Auto und putzen oft die Windschutzscheibe. Ein kleines Trinkgeld in Rand ist üblich, ebenso für die informellen Parkwächter."
+   }
+  },
+  {
+   "id": "ct-ZA-09",
+   "category": "gifts",
+   "text": {
+    "en": "If you are invited to someone's home, a small gift such as flowers, chocolates or a local treat is a warm, appreciated gesture.",
+    "it": "Se sei invitato a casa di qualcuno, un piccolo regalo come fiori, cioccolatini o una specialità locale è un gesto caloroso e apprezzato.",
+    "es": "Si te invitan a casa de alguien, un pequeño detalle como flores, bombones o una especialidad local es un gesto cálido y apreciado.",
+    "pt": "Se fores convidado para casa de alguém, uma pequena lembrança como flores, chocolates ou uma iguaria local é um gesto caloroso e apreciado.",
+    "pt_BR": "Se você for convidado para a casa de alguém, uma pequena lembrança como flores, chocolates ou uma delícia local é um gesto caloroso e apreciado.",
+    "fr": "Si tu es invité chez quelqu'un, un petit cadeau comme des fleurs, des chocolats ou une spécialité locale est un geste chaleureux et apprécié.",
+    "de": "Wenn du bei jemandem zu Hause eingeladen bist, ist ein kleines Mitbringsel wie Blumen, Pralinen oder eine lokale Spezialität eine herzliche, gern gesehene Geste."
+   }
+  },
+  {
+   "id": "ct-ZA-10",
+   "category": "dress",
+   "text": {
+    "en": "Dress is generally relaxed, and smart casual suits most restaurants. Bring layers, since evenings can be cool and the weather changes quickly in places like Cape Town.",
+    "it": "L'abbigliamento è in genere informale e lo smart casual va bene in quasi tutti i ristoranti. Porta degli strati, perché le sere possono essere fresche e il tempo cambia in fretta in posti come Città del Capo.",
+    "es": "La vestimenta suele ser informal y el estilo smart casual sirve para casi todos los restaurantes. Lleva capas, porque las noches pueden ser frescas y el tiempo cambia rápido en lugares como Ciudad del Cabo.",
+    "pt": "A forma de vestir é geralmente descontraída e o estilo smart casual serve para quase todos os restaurantes. Leva camadas de roupa, porque as noites podem ser frescas e o tempo muda depressa em sítios como a Cidade do Cabo.",
+    "pt_BR": "O jeito de se vestir costuma ser descontraído e o estilo esporte fino serve para quase todos os restaurantes. Leve roupas em camadas, porque as noites podem ser frescas e o tempo muda rápido em lugares como a Cidade do Cabo.",
+    "fr": "La tenue est en général décontractée et le smart casual convient à la plupart des restaurants. Prévois des couches, car les soirées peuvent être fraîches et le temps change vite dans des endroits comme Le Cap.",
+    "de": "Die Kleidung ist meist leger, und Smart Casual passt in die meisten Restaurants. Zwiebellook ist ratsam, denn die Abende können kühl sein und das Wetter schlägt an Orten wie Kapstadt schnell um."
+   }
+  },
+  {
+   "id": "ct-ZA-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "South Africans follow many faiths, and Christianity is widespread. Dress modestly and ask before entering places of worship, and remove your shoes where it is the custom.",
+    "it": "In Sudafrica si praticano molte fedi e il cristianesimo è molto diffuso. Vesti in modo sobrio e chiedi prima di entrare nei luoghi di culto, togliendo le scarpe dove è consuetudine.",
+    "es": "En Sudáfrica se practican muchas religiones y el cristianismo está muy extendido. Viste con modestia y pregunta antes de entrar en lugares de culto, quitándote los zapatos donde sea costumbre.",
+    "pt": "Na África do Sul praticam-se muitas religiões e o cristianismo é muito difundido. Veste-te com recato e pergunta antes de entrares em locais de culto, descalçando-te onde for costume.",
+    "pt_BR": "Na África do Sul são praticadas muitas religiões e o cristianismo é bastante difundido. Vista-se com discrição e pergunte antes de entrar em locais de culto, tirando os sapatos onde for costume.",
+    "fr": "On pratique de nombreuses religions en Afrique du Sud et le christianisme est très répandu. Habille-toi sobrement et demande avant d'entrer dans un lieu de culte, en te déchaussant là où c'est l'usage.",
+    "de": "In Südafrika werden viele Religionen gelebt, und das Christentum ist weit verbreitet. Kleide dich zurückhaltend, frag vor dem Betreten von Gotteshäusern nach und zieh die Schuhe aus, wo es üblich ist."
+   }
+  },
+  {
+   "id": "ct-ZA-12",
+   "category": "gestures",
+   "text": {
+    "en": "Greeting elders first and with extra respect is valued in many communities. In some traditional settings, people support the right forearm with the left hand while shaking hands.",
+    "it": "In molte comunità si apprezza salutare per primi gli anziani e con particolare rispetto. In alcuni contesti tradizionali, mentre si stringe la mano si sostiene l'avambraccio destro con la sinistra.",
+    "es": "En muchas comunidades se valora saludar primero a los mayores y con especial respeto. En algunos entornos tradicionales se sujeta el antebrazo derecho con la mano izquierda al dar la mano.",
+    "pt": "Em muitas comunidades valoriza-se cumprimentar primeiro os mais velhos e com especial respeito. Em alguns contextos tradicionais, apoia-se o antebraço direito com a mão esquerda ao apertar a mão.",
+    "pt_BR": "Em muitas comunidades valoriza-se cumprimentar primeiro os mais velhos e com especial respeito. Em alguns contextos tradicionais, apoia-se o antebraço direito com a mão esquerda ao apertar a mão.",
+    "fr": "Dans de nombreuses communautés, on apprécie de saluer d'abord les aînés, avec un respect particulier. Dans certains contextes traditionnels, on soutient l'avant-bras droit de la main gauche en serrant la main.",
+    "de": "In vielen Gemeinschaften wird geschätzt, zuerst die Älteren und mit besonderem Respekt zu begrüßen. In manchen traditionellen Zusammenhängen stützt man beim Händeschütteln den rechten Unterarm mit der linken Hand."
+   }
+  },
+  {
+   "id": "ct-ZA-13",
+   "category": "punctuality",
+   "text": {
+    "en": "Business meetings are expected to start on time, while social events such as a braai can be more relaxed. When unsure, arrive close to the agreed time and let your host know if you are delayed.",
+    "it": "Le riunioni di lavoro devono iniziare in orario, mentre gli eventi sociali come un braai possono essere più rilassati. Nel dubbio, arriva vicino all'orario concordato e avvisa chi ti ospita se fai tardi.",
+    "es": "Se espera que las reuniones de trabajo empiecen a la hora, mientras que los eventos sociales como un braai pueden ser más relajados. Si dudas, llega cerca de la hora acordada y avisa a tu anfitrión si te retrasas.",
+    "pt": "Espera-se que as reuniões de trabalho comecem a horas, enquanto os eventos sociais, como um braai, podem ser mais descontraídos. Em caso de dúvida, chega perto da hora combinada e avisa o anfitrião se te atrasares.",
+    "pt_BR": "Espera-se que as reuniões de trabalho comecem na hora, enquanto os eventos sociais, como um braai, podem ser mais descontraídos. Na dúvida, chegue perto do horário combinado e avise o anfitrião se se atrasar.",
+    "fr": "On attend que les réunions professionnelles commencent à l'heure, tandis que les événements sociaux comme un braai peuvent être plus détendus. En cas de doute, arrive près de l'heure convenue et préviens ton hôte si tu as du retard.",
+    "de": "Geschäftstermine sollen pünktlich beginnen, gesellige Anlässe wie ein Braai dürfen entspannter sein. Im Zweifel komm nahe an der vereinbarten Zeit und gib deinen Gastgebern Bescheid, wenn du dich verspätest."
+   }
+  },
+  {
+   "id": "ct-ZA-14",
+   "category": "public_behavior",
+   "text": {
+    "en": "Queueing patiently and saying \"please\" and \"thank you\" go a long way. Friendly chats with shop staff and strangers are common and usually welcome.",
+    "it": "Fare la fila con pazienza e dire \"per favore\" e \"grazie\" fa una grande differenza. Fare due chiacchiere con commessi e sconosciuti è comune e di solito gradito.",
+    "es": "Hacer cola con paciencia y decir \"por favor\" y \"gracias\" ayuda mucho. Charlar con dependientes y desconocidos es habitual y suele ser bien recibido.",
+    "pt": "Esperar na fila com paciência e dizer \"por favor\" e \"obrigado\" faz toda a diferença. Conversar com funcionários de lojas e desconhecidos é comum e costuma ser bem-vindo.",
+    "pt_BR": "Esperar na fila com paciência e dizer \"por favor\" e \"obrigado\" faz toda a diferença. Bater papo com atendentes e desconhecidos é comum e costuma ser bem-vindo.",
+    "fr": "Faire la queue patiemment et dire \"s'il te plaît\" et \"merci\" aide beaucoup. Discuter avec le personnel des magasins et des inconnus est courant et généralement bien vu.",
+    "de": "Geduldiges Anstehen und ein \"Bitte\" und \"Danke\" kommen gut an. Small Talk mit Verkaufspersonal und Fremden ist üblich und meist willkommen."
+   }
+  },
+  {
+   "id": "ct-ZA-15",
+   "category": "transport",
+   "text": {
+    "en": "South Africans drive on the left, with the steering wheel on the right. If you rent a car, take a little time to get used to it before heading onto busy roads.",
+    "it": "In Sudafrica si guida a sinistra, con il volante a destra. Se noleggi un'auto, prenditi un po' di tempo per abituarti prima di immetterti nelle strade trafficate.",
+    "es": "En Sudáfrica se conduce por la izquierda y el volante está a la derecha. Si alquilas un coche, tómate un tiempo para acostumbrarte antes de entrar en vías con mucho tráfico.",
+    "pt": "Na África do Sul conduz-se pela esquerda, com o volante à direita. Se alugares um carro, dedica algum tempo a habituares-te antes de entrares em estradas movimentadas.",
+    "pt_BR": "Na África do Sul se dirige pela esquerda, com o volante à direita. Se alugar um carro, reserve um tempo para se acostumar antes de pegar vias movimentadas.",
+    "fr": "En Afrique du Sud, on conduit à gauche, avec le volant à droite. Si tu loues une voiture, prends un peu de temps pour t'habituer avant de t'engager sur des routes fréquentées.",
+    "de": "In Südafrika herrscht Linksverkehr, das Lenkrad sitzt rechts. Wenn du ein Auto mietest, nimm dir etwas Zeit zur Gewöhnung, bevor du dich auf belebte Straßen wagst."
+   }
+  },
+  {
+   "id": "ct-ZA-16",
+   "category": "transport",
+   "text": {
+    "en": "Minibus taxis are a major form of public transport, with hand signals telling the driver where you want to go. Visitors often prefer ride-hailing apps for convenience.",
+    "it": "I minibus taxi sono un importante mezzo di trasporto pubblico e i segni con la mano indicano all'autista dove si vuole andare. I visitatori spesso preferiscono le app di trasporto per comodità.",
+    "es": "Los minibuses taxi son un medio de transporte público muy importante y los gestos con la mano indican al conductor adónde quieres ir. Los visitantes suelen preferir las apps de transporte por comodidad.",
+    "pt": "Os táxis de minibus são um meio de transporte público importante e os gestos com a mão indicam ao motorista para onde queres ir. Os visitantes costumam preferir as aplicações de transporte por comodidade.",
+    "pt_BR": "Os táxis-lotação em minivans são um meio de transporte público importante e os gestos com a mão indicam ao motorista para onde você quer ir. Os visitantes costumam preferir os aplicativos de transporte pela comodidade.",
+    "fr": "Les minibus-taxis sont un moyen de transport public majeur, et des gestes de la main indiquent au chauffeur où tu veux aller. Les visiteurs préfèrent souvent les applications de VTC pour plus de commodité.",
+    "de": "Minibus-Taxis sind ein wichtiges öffentliches Verkehrsmittel, und Handzeichen zeigen dem Fahrer, wohin man will. Besucher bevorzugen oft Fahrdienst-Apps, weil sie bequemer sind."
+   }
+  },
+  {
+   "id": "ct-ZA-17",
+   "category": "language",
+   "text": {
+    "en": "South Africa has twelve official languages, and English is widely understood and used in business and government. Learning a few words in Zulu, Xhosa or Afrikaans is a lovely gesture.",
+    "it": "Il Sudafrica ha dodici lingue ufficiali e l'inglese è ampiamente compreso e usato negli affari e nell'amministrazione. Imparare qualche parola di zulu, xhosa o afrikaans è un bel gesto.",
+    "es": "Sudáfrica tiene doce lenguas oficiales y el inglés se entiende y se usa mucho en los negocios y la administración. Aprender unas palabras de zulú, xhosa o afrikáans es un gesto encantador.",
+    "pt": "A África do Sul tem doze línguas oficiais e o inglês é amplamente compreendido e usado nos negócios e na administração. Aprender algumas palavras de zulu, xhosa ou africânder é um gesto simpático.",
+    "pt_BR": "A África do Sul tem doze línguas oficiais e o inglês é amplamente compreendido e usado nos negócios e no governo. Aprender algumas palavras de zulu, xhosa ou africâner é um gesto simpático.",
+    "fr": "L'Afrique du Sud compte douze langues officielles, et l'anglais y est très largement compris et utilisé dans les affaires et l'administration. Apprendre quelques mots de zoulou, de xhosa ou d'afrikaans est un beau geste.",
+    "de": "Südafrika hat zwölf Amtssprachen, und Englisch wird in Wirtschaft und Verwaltung weithin verstanden und genutzt. Ein paar Wörter Zulu, Xhosa oder Afrikaans zu lernen ist eine schöne Geste."
+   }
+  },
+  {
+   "id": "ct-ZA-18",
+   "category": "language",
+   "text": {
+    "en": "Local slang is part of the charm: \"lekker\" means nice or great, \"just now\" means sometime later, and \"now now\" means fairly soon, not immediately.",
+    "it": "Lo slang locale fa parte del fascino: \"lekker\" significa bello o fantastico, \"just now\" vuol dire più tardi e \"now now\" significa abbastanza presto, non subito.",
+    "es": "La jerga local forma parte del encanto: \"lekker\" significa agradable o genial, \"just now\" quiere decir más tarde y \"now now\" significa bastante pronto, no de inmediato.",
+    "pt": "O calão local faz parte do encanto: \"lekker\" quer dizer agradável ou ótimo, \"just now\" significa mais tarde e \"now now\" significa daqui a pouco, não de imediato.",
+    "pt_BR": "A gíria local faz parte do charme: \"lekker\" quer dizer agradável ou ótimo, \"just now\" significa mais tarde e \"now now\" significa daqui a pouco, não imediatamente.",
+    "fr": "L'argot local fait partie du charme : \"lekker\" veut dire agréable ou génial, \"just now\" signifie plus tard et \"now now\" signifie assez bientôt, pas tout de suite.",
+    "de": "Der lokale Slang gehört zum Charme: \"lekker\" heißt schön oder toll, \"just now\" bedeutet später und \"now now\" bedeutet ziemlich bald, nicht sofort."
+   }
+  },
+  {
+   "id": "ct-ZA-19",
+   "category": "festivals",
+   "text": {
+    "en": "Heritage Day on 24 September celebrates the country's diverse cultures and is also known as National Braai Day. Many families and friends gather around a fire.",
+    "it": "L'Heritage Day, il 24 settembre, celebra le diverse culture del paese ed è noto anche come National Braai Day. Molte famiglie e amici si riuniscono attorno al fuoco.",
+    "es": "El Heritage Day, el 24 de septiembre, celebra las diversas culturas del país y también se conoce como National Braai Day. Muchas familias y amigos se reúnen alrededor del fuego.",
+    "pt": "O Heritage Day, a 24 de setembro, celebra as diversas culturas do país e é também conhecido como National Braai Day. Muitas famílias e amigos reúnem-se em torno do fogo.",
+    "pt_BR": "O Heritage Day, em 24 de setembro, celebra as diversas culturas do país e também é conhecido como National Braai Day. Muitas famílias e amigos se reúnem em volta do fogo.",
+    "fr": "Le Heritage Day, le 24 septembre, célèbre les cultures variées du pays et s'appelle aussi National Braai Day. De nombreuses familles et amis se retrouvent autour du feu.",
+    "de": "Der Heritage Day am 24. September feiert die vielfältigen Kulturen des Landes und heißt auch National Braai Day. Viele Familien und Freunde versammeln sich ums Feuer."
+   }
+  },
+  {
+   "id": "ct-ZA-20",
+   "category": "festivals",
+   "text": {
+    "en": "Freedom Day on 27 April marks the first democratic elections in 1994. Public holidays like this are widely observed, and many shops and offices close.",
+    "it": "Il Freedom Day, il 27 aprile, ricorda le prime elezioni democratiche del 1994. Festività come questa sono molto sentite e molti negozi e uffici chiudono.",
+    "es": "El Freedom Day, el 27 de abril, conmemora las primeras elecciones democráticas de 1994. Estos festivos se respetan mucho y muchas tiendas y oficinas cierran.",
+    "pt": "O Freedom Day, a 27 de abril, assinala as primeiras eleições democráticas de 1994. Feriados como este são muito respeitados e muitas lojas e escritórios fecham.",
+    "pt_BR": "O Freedom Day, em 27 de abril, marca as primeiras eleições democráticas de 1994. Feriados como este são muito respeitados e muitas lojas e escritórios fecham.",
+    "fr": "Le Freedom Day, le 27 avril, marque les premières élections démocratiques de 1994. Ces jours fériés sont très suivis et beaucoup de magasins et de bureaux ferment.",
+    "de": "Der Freedom Day am 27. April erinnert an die ersten demokratischen Wahlen 1994. Solche Feiertage werden weithin begangen, und viele Geschäfte und Büros bleiben geschlossen."
+   }
+  },
+  {
+   "id": "ct-ZA-21",
+   "category": "family",
+   "text": {
+    "en": "The idea of ubuntu, often summed up as \"I am because we are\", reflects the value placed on community, hospitality and extended family.",
+    "it": "L'idea di ubuntu, spesso riassunta come \"io sono perché noi siamo\", riflette il valore attribuito alla comunità, all'ospitalità e alla famiglia allargata.",
+    "es": "La idea de ubuntu, a menudo resumida como \"yo soy porque nosotros somos\", refleja el valor que se da a la comunidad, la hospitalidad y la familia extensa.",
+    "pt": "A ideia de ubuntu, muitas vezes resumida como \"eu sou porque nós somos\", reflete o valor dado à comunidade, à hospitalidade e à família alargada.",
+    "pt_BR": "A ideia de ubuntu, muitas vezes resumida como \"eu sou porque nós somos\", reflete o valor dado à comunidade, à hospitalidade e à família estendida.",
+    "fr": "L'idée d'ubuntu, souvent résumée par \"je suis parce que nous sommes\", reflète l'importance accordée à la communauté, à l'hospitalité et à la famille élargie.",
+    "de": "Die Idee von Ubuntu, oft zusammengefasst als \"Ich bin, weil wir sind\", spiegelt den hohen Stellenwert von Gemeinschaft, Gastfreundschaft und Großfamilie wider."
+   }
+  },
+  {
+   "id": "ct-ZA-22",
+   "category": "money",
+   "text": {
+    "en": "The currency is the rand (ZAR). Cards are widely accepted in cities, but it helps to carry a little cash for small purchases, tips and rural areas.",
+    "it": "La valuta è il rand (ZAR). Le carte sono ampiamente accettate nelle città, ma conviene avere un po' di contanti per piccoli acquisti, mance e zone rurali.",
+    "es": "La moneda es el rand (ZAR). Las tarjetas se aceptan mucho en las ciudades, pero conviene llevar algo de efectivo para pequeñas compras, propinas y zonas rurales.",
+    "pt": "A moeda é o rand (ZAR). Os cartões são amplamente aceites nas cidades, mas convém levar algum dinheiro para pequenas compras, gorjetas e zonas rurais.",
+    "pt_BR": "A moeda é o rand (ZAR). Os cartões são amplamente aceitos nas cidades, mas convém levar um pouco de dinheiro para pequenas compras, gorjetas e áreas rurais.",
+    "fr": "La monnaie est le rand (ZAR). Les cartes sont largement acceptées en ville, mais il vaut mieux avoir un peu d'espèces pour les petits achats, les pourboires et les zones rurales.",
+    "de": "Die Währung ist der Rand (ZAR). In Städten werden Karten weithin akzeptiert, doch etwas Bargeld für Kleinigkeiten, Trinkgeld und ländliche Gegenden ist nützlich."
+   }
+  },
+  {
+   "id": "ct-ZA-23",
+   "category": "photography",
+   "text": {
+    "en": "Ask permission before photographing people, especially in townships and rural villages. A friendly chat first usually makes everyone more comfortable.",
+    "it": "Chiedi il permesso prima di fotografare le persone, soprattutto nelle township e nei villaggi rurali. Una chiacchierata cordiale prima di solito mette tutti più a proprio agio.",
+    "es": "Pide permiso antes de fotografiar a las personas, sobre todo en los townships y en los pueblos rurales. Charlar un rato antes suele hacer que todos se sientan más cómodos.",
+    "pt": "Pede autorização antes de fotografares pessoas, sobretudo nos townships e nas aldeias rurais. Uma conversa simpática antes costuma deixar toda a gente mais à vontade.",
+    "pt_BR": "Peça permissão antes de fotografar pessoas, principalmente nos townships e em vilarejos rurais. Uma conversa simpática antes costuma deixar todo mundo mais à vontade.",
+    "fr": "Demande la permission avant de photographier des personnes, surtout dans les townships et les villages ruraux. Une conversation amicale au préalable met en général tout le monde plus à l'aise.",
+    "de": "Frag um Erlaubnis, bevor du Menschen fotografierst, besonders in Townships und ländlichen Dörfern. Ein freundliches Gespräch vorab macht meist alle entspannter."
+   }
+  },
+  {
+   "id": "ct-ZA-24",
+   "category": "nightlife",
+   "text": {
+    "en": "Live music is a big part of going out, and the country has a proud jazz tradition. Plan a ride-hailing trip home rather than walking at night.",
+    "it": "La musica dal vivo è una parte importante delle serate fuori, e il paese ha un'orgogliosa tradizione jazz. Pianifica il ritorno con un'app di trasporto invece di tornare a piedi di notte.",
+    "es": "La música en vivo es una parte importante de salir de noche, y el país tiene una orgullosa tradición de jazz. Planea volver en una app de transporte en lugar de caminar de noche.",
+    "pt": "A música ao vivo é uma parte importante das saídas à noite, e o país tem uma orgulhosa tradição de jazz. Planeia o regresso com uma aplicação de transporte em vez de ires a pé à noite.",
+    "pt_BR": "A música ao vivo é uma parte importante das saídas à noite, e o país tem uma orgulhosa tradição de jazz. Planeje a volta com um aplicativo de transporte em vez de ir a pé à noite.",
+    "fr": "La musique live occupe une grande place dans les sorties, et le pays a une fière tradition de jazz. Prévois un retour en VTC plutôt que de rentrer à pied la nuit.",
+    "de": "Live-Musik gehört fest zum Ausgehen, und das Land hat eine stolze Jazztradition. Plane die Heimfahrt per Fahrdienst-App, statt nachts zu Fuß zu gehen."
+   }
+  },
+  {
+   "id": "ct-ZA-25",
+   "category": "nature",
+   "text": {
+    "en": "On safari, stay in your vehicle unless a ranger says otherwise, keep your voice down and never feed wildlife, including baboons and monkeys.",
+    "it": "In safari resta nel veicolo, a meno che una guida non dica altrimenti, tieni la voce bassa e non dare mai da mangiare agli animali selvatici, babbuini e scimmie compresi.",
+    "es": "En un safari, quédate en el vehículo salvo que un guarda indique lo contrario, habla en voz baja y nunca des de comer a los animales salvajes, incluidos babuinos y monos.",
+    "pt": "Num safari, fica no veículo, a não ser que um guarda diga o contrário, fala baixo e nunca dês de comer aos animais selvagens, incluindo babuínos e macacos.",
+    "pt_BR": "Em um safári, fique no veículo, a menos que um guarda diga o contrário, fale baixo e nunca dê comida aos animais selvagens, incluindo babuínos e macacos.",
+    "fr": "En safari, reste dans le véhicule sauf si un ranger te dit le contraire, parle à voix basse et ne nourris jamais les animaux sauvages, y compris les babouins et les singes.",
+    "de": "Bleib auf Safari im Fahrzeug, außer ein Ranger sagt etwas anderes, sprich leise und füttere niemals Wildtiere, auch keine Paviane oder Affen."
+   }
+  },
+  {
+   "id": "ct-ZA-26",
+   "category": "nature",
+   "text": {
+    "en": "Before hiking in places like Table Mountain, check the weather, carry water and layers, and avoid going alone, as conditions can change quickly.",
+    "it": "Prima di fare escursioni in luoghi come la Table Mountain, controlla il meteo, porta acqua e strati di abbigliamento ed evita di andare da solo, perché le condizioni possono cambiare in fretta.",
+    "es": "Antes de hacer senderismo en lugares como la Table Mountain, consulta el tiempo, lleva agua y ropa de abrigo, y evita ir solo, porque las condiciones pueden cambiar rápidamente.",
+    "pt": "Antes de fazeres caminhadas em locais como a Table Mountain, verifica a meteorologia, leva água e roupa para vestir por camadas e evita ir sozinho, porque as condições podem mudar depressa.",
+    "pt_BR": "Antes de fazer trilhas em lugares como a Table Mountain, confira a previsão do tempo, leve água e roupas em camadas e evite ir sozinho, porque as condições podem mudar rápido.",
+    "fr": "Avant de faire de la randonnée dans des endroits comme la Table Mountain, vérifie la météo, emporte de l'eau et des vêtements en couches, et évite d'y aller seul, car les conditions peuvent changer vite.",
+    "de": "Prüfe vor Wanderungen an Orten wie dem Tafelberg das Wetter, nimm Wasser und mehrere Kleidungsschichten mit und geh nicht allein, denn die Bedingungen können schnell umschlagen."
+   }
+  },
+  {
+   "id": "ct-ZA-27",
+   "category": "safety",
+   "text": {
+    "en": "Keep phones and valuables out of sight in busy areas, and ask your host or hotel which neighbourhoods are best to explore on foot.",
+    "it": "Tieni telefono e oggetti di valore fuori vista nelle zone affollate e chiedi al tuo ospite o all'hotel quali quartieri sia meglio esplorare a piedi.",
+    "es": "Mantén el teléfono y los objetos de valor fuera de la vista en zonas concurridas y pregunta a tu anfitrión o al hotel qué barrios conviene explorar a pie.",
+    "pt": "Mantém o telemóvel e os objetos de valor fora de vista em zonas movimentadas e pergunta ao anfitrião ou ao hotel quais os bairros mais indicados para explorar a pé.",
+    "pt_BR": "Mantenha o celular e os objetos de valor fora de vista em áreas movimentadas e pergunte ao anfitrião ou ao hotel quais bairros são melhores para explorar a pé.",
+    "fr": "Garde ton téléphone et tes objets de valeur hors de vue dans les zones animées, et demande à ton hôte ou à l'hôtel quels quartiers explorer à pied de préférence.",
+    "de": "Halte Handy und Wertsachen in belebten Gegenden außer Sicht und frag deine Gastgeber oder das Hotel, welche Viertel sich am besten zu Fuß erkunden lassen."
+   }
+  },
+  {
+   "id": "ct-ZA-28",
+   "category": "safety",
+   "text": {
+    "en": "When driving, keep doors locked and windows up in busy traffic, and never leave bags or devices visible in a parked car.",
+    "it": "Quando guidi, tieni le portiere chiuse e i finestrini alzati nel traffico intenso e non lasciare mai borse o dispositivi in vista nell'auto parcheggiata.",
+    "es": "Al conducir, mantén las puertas cerradas y las ventanillas subidas en el tráfico denso, y nunca dejes bolsos o dispositivos a la vista en un coche aparcado.",
+    "pt": "Ao conduzir, mantém as portas trancadas e os vidros levantados no trânsito intenso e nunca deixes malas ou aparelhos à vista num carro estacionado.",
+    "pt_BR": "Ao dirigir, mantenha as portas travadas e os vidros fechados no trânsito intenso e nunca deixe bolsas ou aparelhos à vista em um carro estacionado.",
+    "fr": "En conduisant, garde les portières verrouillées et les vitres fermées dans la circulation dense, et ne laisse jamais de sacs ou d'appareils visibles dans une voiture garée.",
+    "de": "Halte beim Fahren im dichten Verkehr Türen verriegelt und Fenster geschlossen, und lass in geparkten Autos nie Taschen oder Geräte sichtbar liegen."
+   }
+  },
+  {
+   "id": "ct-ZA-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Sport brings people together, and the Springboks rugby team is a source of great pride. Asking about the team or wearing green and gold usually starts a happy conversation.",
+    "it": "Lo sport unisce le persone e la squadra di rugby degli Springboks è motivo di grande orgoglio. Chiedere della squadra o indossare il verde e oro di solito avvia una conversazione allegra.",
+    "es": "El deporte une a la gente y el equipo de rugby de los Springboks es motivo de gran orgullo. Preguntar por el equipo o llevar el verde y dorado suele iniciar una conversación alegre.",
+    "pt": "O desporto une as pessoas e a equipa de râguebi dos Springboks é motivo de grande orgulho. Perguntar pela equipa ou vestir o verde e dourado costuma dar início a uma conversa animada.",
+    "pt_BR": "O esporte une as pessoas e a seleção de rúgbi dos Springboks é motivo de grande orgulho. Perguntar sobre a seleção ou vestir o verde e dourado costuma começar uma conversa animada.",
+    "fr": "Le sport rassemble les gens, et l'équipe de rugby des Springboks est une grande source de fierté. Poser des questions sur l'équipe ou porter du vert et or lance souvent une conversation joyeuse.",
+    "de": "Sport verbindet, und das Rugbyteam der Springboks ist eine große Quelle des Stolzes. Wer nach dem Team fragt oder Grün und Gold trägt, kommt meist schnell ins Gespräch."
+   }
+  },
+  {
+   "id": "ct-ZA-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Many people proudly call their country the \"Rainbow Nation\" for its diversity. Compliments about the food, music, landscapes and warm hospitality are always appreciated.",
+    "it": "Molte persone chiamano con orgoglio il proprio paese la \"Rainbow Nation\" per la sua diversità. I complimenti su cibo, musica, paesaggi e calorosa ospitalità sono sempre graditi.",
+    "es": "Mucha gente llama con orgullo a su país la \"Rainbow Nation\" por su diversidad. Los cumplidos sobre la comida, la música, los paisajes y la cálida hospitalidad siempre se agradecen.",
+    "pt": "Muitas pessoas chamam com orgulho ao seu país a \"Rainbow Nation\" pela sua diversidade. Elogios à comida, à música, às paisagens e à calorosa hospitalidade são sempre apreciados.",
+    "pt_BR": "Muitas pessoas chamam com orgulho o seu país de \"Rainbow Nation\" pela diversidade. Elogios à comida, à música, às paisagens e à calorosa hospitalidade são sempre bem-vindos.",
+    "fr": "Beaucoup de gens appellent fièrement leur pays la \"Rainbow Nation\" pour sa diversité. Les compliments sur la cuisine, la musique, les paysages et l'accueil chaleureux sont toujours appréciés.",
+    "de": "Viele nennen ihr Land stolz die \"Rainbow Nation\" wegen seiner Vielfalt. Komplimente zu Essen, Musik, Landschaften und herzlicher Gastfreundschaft kommen immer gut an."
+   }
+  }
+ ]
+}

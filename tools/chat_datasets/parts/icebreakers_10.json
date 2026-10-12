@@ -1,0 +1,1302 @@
+[
+ {
+  "id": "ib-art_museums-001",
+  "topic": "art_museums",
+  "text": {
+   "en": "What is the first museum you ever remember visiting?",
+   "it": "Qual è il primo museo che ricordi di aver visitato?",
+   "es": "¿Cuál es el primer museo que recuerdas haber visitado?",
+   "pt": "Qual é o primeiro museu de que te lembras de ter visitado?",
+   "pt_BR": "Qual é o primeiro museu de que você se lembra de ter visitado?",
+   "fr": "Quel est le premier musée dont tu te souviennes ?",
+   "de": "Welches ist das erste Museum, an das du dich erinnerst?"
+  }
+ },
+ {
+  "id": "ib-art_museums-002",
+  "topic": "art_museums",
+  "text": {
+   "en": "Is there a painting that always stops you in your tracks?",
+   "it": "C'è un dipinto che ti lascia sempre senza fiato?",
+   "es": "¿Hay algún cuadro que siempre te deja parado en seco?",
+   "pt": "Há algum quadro que te deixa sempre sem palavras?",
+   "pt_BR": "Tem algum quadro que sempre te deixa parado, admirando?",
+   "fr": "Y a-t-il un tableau qui te fait toujours t'arrêter net ?",
+   "de": "Gibt es ein Gemälde, vor dem du immer stehen bleibst?"
+  }
+ },
+ {
+  "id": "ib-art_museums-003",
+  "topic": "art_museums",
+  "text": {
+   "en": "Which museum in your country would you recommend to a first-time visitor?",
+   "it": "Quale museo del tuo paese consiglieresti a chi lo visita per la prima volta?",
+   "es": "¿Qué museo de tu país le recomendarías a alguien que lo visita por primera vez?",
+   "pt": "Que museu do teu país recomendarias a quem o visita pela primeira vez?",
+   "pt_BR": "Que museu do seu país você recomendaria a quem visita pela primeira vez?",
+   "fr": "Quel musée de ton pays recommanderais-tu à quelqu'un qui le visite pour la première fois ?",
+   "de": "Welches Museum in deinem Land würdest du Erstbesuchern empfehlen?"
+  }
+ },
+ {
+  "id": "ib-art_museums-004",
+  "topic": "art_museums",
+  "text": {
+   "en": "Do you prefer classical art or modern and contemporary art?",
+   "it": "Preferisci l'arte classica o quella moderna e contemporanea?",
+   "es": "¿Prefieres el arte clásico o el moderno y contemporáneo?",
+   "pt": "Preferes a arte clássica ou a arte moderna e contemporânea?",
+   "pt_BR": "Você prefere a arte clássica ou a arte moderna e contemporânea?",
+   "fr": "Tu préfères l'art classique ou l'art moderne et contemporain ?",
+   "de": "Magst du klassische Kunst lieber oder moderne und zeitgenössische?"
+  }
+ },
+ {
+  "id": "ib-art_museums-005",
+  "topic": "art_museums",
+  "text": {
+   "en": "What's the most surprising thing you've seen in a museum?",
+   "it": "Qual è la cosa più sorprendente che hai visto in un museo?",
+   "es": "¿Qué es lo más sorprendente que has visto en un museo?",
+   "pt": "Qual é a coisa mais surpreendente que já viste num museu?",
+   "pt_BR": "Qual é a coisa mais surpreendente que você já viu em um museu?",
+   "fr": "Quelle est la chose la plus surprenante que tu aies vue dans un musée ?",
+   "de": "Was ist das Überraschendste, das du je in einem Museum gesehen hast?"
+  }
+ },
+ {
+  "id": "ib-art_museums-006",
+  "topic": "art_museums",
+  "text": {
+   "en": "Do you like going to museums alone, or with friends?",
+   "it": "Ti piace visitare i musei da solo o con gli amici?",
+   "es": "¿Te gusta ir a los museos solo o con amigos?",
+   "pt": "Gostas de ir a museus sozinho ou com amigos?",
+   "pt_BR": "Você gosta de ir a museus sozinho ou com amigos?",
+   "fr": "Tu aimes visiter les musées seul ou entre amis ?",
+   "de": "Gehst du lieber allein oder mit Freunden ins Museum?"
+  }
+ },
+ {
+  "id": "ib-art_museums-007",
+  "topic": "art_museums",
+  "text": {
+   "en": "Which artist from your country should everyone know about?",
+   "it": "Quale artista del tuo paese dovrebbero conoscere tutti?",
+   "es": "¿Qué artista de tu país debería conocer todo el mundo?",
+   "pt": "Que artista do teu país devia ser conhecido por toda a gente?",
+   "pt_BR": "Que artista do seu país todo mundo deveria conhecer?",
+   "fr": "Quel artiste de ton pays tout le monde devrait-il connaître ?",
+   "de": "Welche Künstlerin oder welchen Künstler aus deinem Land sollte jeder kennen?"
+  }
+ },
+ {
+  "id": "ib-art_museums-008",
+  "topic": "art_museums",
+  "text": {
+   "en": "How long can you spend in a single museum before you need a coffee break?",
+   "it": "Quanto tempo riesci a stare in un museo prima di avere bisogno di una pausa caffè?",
+   "es": "¿Cuánto tiempo aguantas en un museo antes de necesitar una pausa para el café?",
+   "pt": "Quanto tempo aguentas num museu antes de precisares de uma pausa para o café?",
+   "pt_BR": "Quanto tempo você aguenta em um museu antes de precisar de uma pausa para o café?",
+   "fr": "Combien de temps tiens-tu dans un musée avant d'avoir besoin d'une pause café ?",
+   "de": "Wie lange hältst du es in einem Museum aus, bevor du eine Kaffeepause brauchst?"
+  }
+ },
+ {
+  "id": "ib-art_museums-009",
+  "topic": "art_museums",
+  "text": {
+   "en": "Have you ever tried drawing or painting something yourself?",
+   "it": "Hai mai provato a disegnare o dipingere qualcosa tu stesso?",
+   "es": "¿Alguna vez has intentado dibujar o pintar algo tú mismo?",
+   "pt": "Alguma vez tentaste desenhar ou pintar alguma coisa?",
+   "pt_BR": "Você já tentou desenhar ou pintar alguma coisa?",
+   "fr": "As-tu déjà essayé de dessiner ou de peindre quelque chose toi-même ?",
+   "de": "Hast du selbst schon einmal versucht, etwas zu zeichnen oder zu malen?"
+  }
+ },
+ {
+  "id": "ib-art_museums-010",
+  "topic": "art_museums",
+  "text": {
+   "en": "What kind of sculpture do you find most impressive?",
+   "it": "Quale tipo di scultura trovi più impressionante?",
+   "es": "¿Qué tipo de escultura te parece más impresionante?",
+   "pt": "Que tipo de escultura te parece mais impressionante?",
+   "pt_BR": "Que tipo de escultura você acha mais impressionante?",
+   "fr": "Quel type de sculpture trouves-tu le plus impressionnant ?",
+   "de": "Welche Art von Skulptur findest du am beeindruckendsten?"
+  }
+ },
+ {
+  "id": "ib-art_museums-011",
+  "topic": "art_museums",
+  "text": {
+   "en": "Is there a small local museum in your town that tourists usually miss?",
+   "it": "C'è un piccolo museo nella tua città che i turisti di solito si perdono?",
+   "es": "¿Hay algún museo pequeño en tu ciudad que los turistas suelen pasar por alto?",
+   "pt": "Há algum museu pequeno na tua cidade que os turistas costumam ignorar?",
+   "pt_BR": "Tem algum museu pequeno na sua cidade que os turistas costumam deixar passar?",
+   "fr": "Y a-t-il un petit musée dans ta ville que les touristes ratent souvent ?",
+   "de": "Gibt es in deiner Stadt ein kleines Museum, das Touristen meist übersehen?"
+  }
+ },
+ {
+  "id": "ib-art_museums-012",
+  "topic": "art_museums",
+  "text": {
+   "en": "Which art movement speaks to you the most, and why?",
+   "it": "Quale movimento artistico ti parla di più, e perché?",
+   "es": "¿Qué movimiento artístico te dice más y por qué?",
+   "pt": "Que movimento artístico te diz mais, e porquê?",
+   "pt_BR": "Qual movimento artístico mais fala com você, e por quê?",
+   "fr": "Quel mouvement artistique te parle le plus, et pourquoi ?",
+   "de": "Welche Kunstrichtung spricht dich am meisten an, und warum?"
+  }
+ },
+ {
+  "id": "ib-art_museums-013",
+  "topic": "art_museums",
+  "text": {
+   "en": "Do you read the labels next to the artworks or just look and feel?",
+   "it": "Leggi le didascalie accanto alle opere o ti limiti a guardare e sentire?",
+   "es": "¿Lees las fichas junto a las obras o prefieres mirar y sentir?",
+   "pt": "Lês as legendas junto às obras ou preferes apenas olhar e sentir?",
+   "pt_BR": "Você lê as legendas ao lado das obras ou prefere só olhar e sentir?",
+   "fr": "Tu lis les cartels à côté des œuvres ou tu regardes simplement ?",
+   "de": "Liest du die Texttafeln neben den Werken oder schaust du einfach und lässt es wirken?"
+  }
+ },
+ {
+  "id": "ib-art_museums-014",
+  "topic": "art_museums",
+  "text": {
+   "en": "What's the best exhibition you've seen in the last year?",
+   "it": "Qual è la mostra più bella che hai visto nell'ultimo anno?",
+   "es": "¿Cuál es la mejor exposición que has visto en el último año?",
+   "pt": "Qual foi a melhor exposição que viste no último ano?",
+   "pt_BR": "Qual foi a melhor exposição que você viu no último ano?",
+   "fr": "Quelle est la meilleure exposition que tu as vue cette dernière année ?",
+   "de": "Welche war die beste Ausstellung, die du im letzten Jahr gesehen hast?"
+  }
+ },
+ {
+  "id": "ib-art_museums-015",
+  "topic": "art_museums",
+  "text": {
+   "en": "If you could hang one painting in your living room, which would it be?",
+   "it": "Se potessi appendere un dipinto nel tuo salotto, quale sarebbe?",
+   "es": "Si pudieras colgar un cuadro en tu salón, ¿cuál sería?",
+   "pt": "Se pudesses pendurar um quadro na tua sala, qual seria?",
+   "pt_BR": "Se você pudesse pendurar um quadro na sua sala, qual seria?",
+   "fr": "Si tu pouvais accrocher un tableau dans ton salon, lequel choisirais-tu ?",
+   "de": "Wenn du ein Gemälde in dein Wohnzimmer hängen könntest, welches wäre es?"
+  }
+ },
+ {
+  "id": "ib-art_museums-016",
+  "topic": "art_museums",
+  "text": {
+   "en": "Do you enjoy street art and murals in your city?",
+   "it": "Ti piacciono la street art e i murales della tua città?",
+   "es": "¿Te gusta el arte urbano y los murales de tu ciudad?",
+   "pt": "Gostas da arte urbana e dos murais da tua cidade?",
+   "pt_BR": "Você gosta da arte de rua e dos murais da sua cidade?",
+   "fr": "Est-ce que tu aimes le street art et les fresques murales de ta ville ?",
+   "de": "Magst du die Street-Art und die Wandbilder in deiner Stadt?"
+  }
+ },
+ {
+  "id": "ib-art_museums-017",
+  "topic": "art_museums",
+  "text": {
+   "en": "What's a museum you dream of visiting one day?",
+   "it": "Qual è il museo che sogni di visitare un giorno?",
+   "es": "¿Con qué museo sueñas visitar algún día?",
+   "pt": "Com que museu sonhas visitar um dia?",
+   "pt_BR": "Com qual museu você sonha em visitar um dia?",
+   "fr": "Quel musée rêves-tu de visiter un jour ?",
+   "de": "Von welchem Museum träumst du, es eines Tages zu besuchen?"
+  }
+ },
+ {
+  "id": "ib-art_museums-018",
+  "topic": "art_museums",
+  "text": {
+   "en": "Do you think photography counts as art just as much as painting?",
+   "it": "Pensi che la fotografia sia arte tanto quanto la pittura?",
+   "es": "¿Crees que la fotografía es tan arte como la pintura?",
+   "pt": "Achas que a fotografia é tão arte como a pintura?",
+   "pt_BR": "Você acha que a fotografia é tão arte quanto a pintura?",
+   "fr": "Penses-tu que la photographie est un art au même titre que la peinture ?",
+   "de": "Findest du, dass Fotografie genauso Kunst ist wie Malerei?"
+  }
+ },
+ {
+  "id": "ib-art_museums-019",
+  "topic": "art_museums",
+  "text": {
+   "en": "Which colours do you notice most in the art you like?",
+   "it": "Quali colori noti di più nelle opere che ti piacciono?",
+   "es": "¿Qué colores notas más en el arte que te gusta?",
+   "pt": "Que cores notas mais na arte de que gostas?",
+   "pt_BR": "Que cores você mais nota na arte de que gosta?",
+   "fr": "Quelles couleurs remarques-tu le plus dans l'art que tu aimes ?",
+   "de": "Welche Farben fallen dir bei der Kunst, die du magst, am meisten auf?"
+  }
+ },
+ {
+  "id": "ib-art_museums-020",
+  "topic": "art_museums",
+  "text": {
+   "en": "What would you show me first if I visited the best gallery in your city?",
+   "it": "Cosa mi mostreresti per prima cosa se visitassi la migliore galleria della tua città?",
+   "es": "¿Qué me enseñarías primero si visitara la mejor galería de tu ciudad?",
+   "pt": "O que me mostrarias primeiro se eu visitasse a melhor galeria da tua cidade?",
+   "pt_BR": "O que você me mostraria primeiro se eu visitasse a melhor galeria da sua cidade?",
+   "fr": "Que me montrerais-tu en premier si je visitais la meilleure galerie de ta ville ?",
+   "de": "Was würdest du mir zuerst zeigen, wenn ich die beste Galerie deiner Stadt besuchen würde?"
+  }
+ },
+ {
+  "id": "ib-art_museums-021",
+  "topic": "art_museums",
+  "text": {
+   "en": "Do you collect postcards or small souvenirs from museum shops?",
+   "it": "Collezioni cartoline o piccoli souvenir dei negozi dei musei?",
+   "es": "¿Coleccionas postales o pequeños recuerdos de las tiendas de los museos?",
+   "pt": "Coleccionas postais ou pequenas lembranças das lojas dos museus?",
+   "pt_BR": "Você coleciona cartões-postais ou pequenas lembranças das lojas de museus?",
+   "fr": "Tu collectionnes les cartes postales ou les petits souvenirs des boutiques de musées ?",
+   "de": "Sammelst du Postkarten oder kleine Souvenirs aus Museumsshops?"
+  }
+ },
+ {
+  "id": "ib-art_museums-022",
+  "topic": "art_museums",
+  "text": {
+   "en": "What's an artwork that made you feel something unexpected?",
+   "it": "Qual è un'opera che ti ha fatto provare un'emozione inaspettata?",
+   "es": "¿Qué obra te hizo sentir algo inesperado?",
+   "pt": "Que obra te fez sentir algo inesperado?",
+   "pt_BR": "Que obra fez você sentir algo inesperado?",
+   "fr": "Quelle œuvre t'a fait ressentir quelque chose d'inattendu ?",
+   "de": "Welches Kunstwerk hat bei dir ein unerwartetes Gefühl ausgelöst?"
+  }
+ },
+ {
+  "id": "ib-art_museums-023",
+  "topic": "art_museums",
+  "text": {
+   "en": "Are there any museums near you with free entry days?",
+   "it": "Ci sono musei vicino a te con giorni di ingresso gratuito?",
+   "es": "¿Hay museos cerca de ti con días de entrada gratuita?",
+   "pt": "Há museus perto de ti com dias de entrada gratuita?",
+   "pt_BR": "Há museus perto de você com dias de entrada gratuita?",
+   "fr": "Y a-t-il des musées près de chez toi avec des jours d'entrée gratuite ?",
+   "de": "Gibt es bei dir in der Nähe Museen mit kostenlosen Eintrittstagen?"
+  }
+ },
+ {
+  "id": "ib-art_museums-024",
+  "topic": "art_museums",
+  "text": {
+   "en": "Which famous painting do you think is overrated, if any?",
+   "it": "Quale famoso dipinto pensi sia sopravvalutato, se ce n'è uno?",
+   "es": "¿Qué cuadro famoso crees que está sobrevalorado, si es que hay alguno?",
+   "pt": "Que quadro famoso achas sobrevalorizado, se é que há algum?",
+   "pt_BR": "Que quadro famoso você acha superestimado, se é que tem algum?",
+   "fr": "Quel tableau célèbre trouves-tu surcoté, s'il y en a un ?",
+   "de": "Welches berühmte Gemälde ist deiner Meinung nach überbewertet, falls überhaupt eines?"
+  }
+ },
+ {
+  "id": "ib-art_museums-025",
+  "topic": "art_museums",
+  "text": {
+   "en": "Do you prefer huge museums or small, quiet galleries?",
+   "it": "Preferisci i musei enormi o le gallerie piccole e tranquille?",
+   "es": "¿Prefieres museos enormes o galerías pequeñas y tranquilas?",
+   "pt": "Preferes museus enormes ou galerias pequenas e sossegadas?",
+   "pt_BR": "Você prefere museus enormes ou galerias pequenas e tranquilas?",
+   "fr": "Tu préfères les immenses musées ou les petites galeries tranquilles ?",
+   "de": "Magst du riesige Museen lieber oder kleine, ruhige Galerien?"
+  }
+ },
+ {
+  "id": "ib-art_museums-026",
+  "topic": "art_museums",
+  "text": {
+   "en": "What traditional craft or art form is your region known for?",
+   "it": "Per quale artigianato o forma d'arte tradizionale è nota la tua regione?",
+   "es": "¿Por qué artesanía o forma de arte tradicional es conocida tu región?",
+   "pt": "Por que artesanato ou forma de arte tradicional é conhecida a tua região?",
+   "pt_BR": "Por qual artesanato ou forma de arte tradicional a sua região é conhecida?",
+   "fr": "Pour quel artisanat ou quelle forme d'art traditionnel ta région est-elle connue ?",
+   "de": "Für welches traditionelle Handwerk oder welche Kunstform ist deine Region bekannt?"
+  }
+ },
+ {
+  "id": "ib-art_museums-027",
+  "topic": "art_museums",
+  "text": {
+   "en": "Did you learn about art at school, or did you discover it later?",
+   "it": "Hai imparato l'arte a scuola o l'hai scoperta più tardi?",
+   "es": "¿Aprendiste sobre arte en el colegio o lo descubriste más tarde?",
+   "pt": "Aprendeste sobre arte na escola ou descobriste-a mais tarde?",
+   "pt_BR": "Você aprendeu sobre arte na escola ou descobriu mais tarde?",
+   "fr": "As-tu découvert l'art à l'école ou plus tard ?",
+   "de": "Hast du Kunst in der Schule kennengelernt oder erst später entdeckt?"
+  }
+ },
+ {
+  "id": "ib-art_museums-028",
+  "topic": "art_museums",
+  "text": {
+   "en": "Is there an art museum building that you think is a masterpiece itself?",
+   "it": "C'è un edificio museale che secondo te è già un capolavoro di per sé?",
+   "es": "¿Hay algún edificio de museo de arte que te parezca una obra maestra en sí mismo?",
+   "pt": "Há algum edifício de museu de arte que achas uma obra-prima por si só?",
+   "pt_BR": "Tem algum prédio de museu de arte que você considera uma obra-prima por si só?",
+   "fr": "Y a-t-il un bâtiment de musée d'art qui est selon toi un chef-d'œuvre en soi ?",
+   "de": "Gibt es ein Kunstmuseum, dessen Gebäude für dich selbst schon ein Meisterwerk ist?"
+  }
+ },
+ {
+  "id": "ib-art_museums-029",
+  "topic": "art_museums",
+  "text": {
+   "en": "What do you usually do after a museum visit? Walk, eat, rest?",
+   "it": "Cosa fai di solito dopo una visita al museo? Passeggi, mangi, ti riposi?",
+   "es": "¿Qué sueles hacer después de visitar un museo? ¿Pasear, comer, descansar?",
+   "pt": "O que costumas fazer depois de uma visita a um museu? Passear, comer, descansar?",
+   "pt_BR": "O que você costuma fazer depois de visitar um museu? Passear, comer, descansar?",
+   "fr": "Que fais-tu d'habitude après une visite de musée ? Une balade, un repas, du repos ?",
+   "de": "Was machst du nach einem Museumsbesuch normalerweise? Spazieren, essen, ausruhen?"
+  }
+ },
+ {
+  "id": "ib-art_museums-030",
+  "topic": "art_museums",
+  "text": {
+   "en": "Do you enjoy audio guides, or do you prefer to explore on your own?",
+   "it": "Ti piacciono le audioguide o preferisci esplorare per conto tuo?",
+   "es": "¿Te gustan las audioguías o prefieres explorar por tu cuenta?",
+   "pt": "Gostas de audioguias ou preferes explorar por conta própria?",
+   "pt_BR": "Você gosta de audioguias ou prefere explorar por conta própria?",
+   "fr": "Tu aimes les audioguides ou tu préfères explorer par toi-même ?",
+   "de": "Magst du Audioguides oder erkundest du lieber auf eigene Faust?"
+  }
+ },
+ {
+  "id": "ib-art_museums-031",
+  "topic": "art_museums",
+  "text": {
+   "en": "What's the story behind your favourite artwork?",
+   "it": "Qual è la storia dietro la tua opera preferita?",
+   "es": "¿Cuál es la historia detrás de tu obra favorita?",
+   "pt": "Qual é a história por trás da tua obra preferida?",
+   "pt_BR": "Qual é a história por trás da sua obra favorita?",
+   "fr": "Quelle est l'histoire derrière ton œuvre préférée ?",
+   "de": "Was ist die Geschichte hinter deinem Lieblingskunstwerk?"
+  }
+ },
+ {
+  "id": "ib-art_museums-032",
+  "topic": "art_museums",
+  "text": {
+   "en": "Have you ever seen a famous artwork in person that looked totally different from photos?",
+   "it": "Hai mai visto dal vivo un'opera famosa che era completamente diversa dalle foto?",
+   "es": "¿Has visto alguna vez en persona una obra famosa que era totalmente distinta de las fotos?",
+   "pt": "Já viste ao vivo uma obra famosa que era completamente diferente das fotografias?",
+   "pt_BR": "Você já viu pessoalmente uma obra famosa que era totalmente diferente das fotos?",
+   "fr": "As-tu déjà vu en vrai une œuvre célèbre très différente de ses photos ?",
+   "de": "Hast du schon einmal ein berühmtes Kunstwerk live gesehen, das ganz anders aussah als auf Fotos?"
+  }
+ },
+ {
+  "id": "ib-art_museums-033",
+  "topic": "art_museums",
+  "text": {
+   "en": "Which museum has the best cafe or garden, in your opinion?",
+   "it": "Quale museo ha il caffè o il giardino più bello, secondo te?",
+   "es": "¿Qué museo tiene la mejor cafetería o el mejor jardín, en tu opinión?",
+   "pt": "Que museu tem o melhor café ou jardim, na tua opinião?",
+   "pt_BR": "Qual museu tem a melhor cafeteria ou o melhor jardim, na sua opinião?",
+   "fr": "Quel musée a le meilleur café ou le plus beau jardin, selon toi ?",
+   "de": "Welches Museum hat deiner Meinung nach das beste Café oder den schönsten Garten?"
+  }
+ },
+ {
+  "id": "ib-art_museums-034",
+  "topic": "art_museums",
+  "text": {
+   "en": "Is there an art style from another country that you'd love to learn more about?",
+   "it": "C'è uno stile artistico di un altro paese di cui ti piacerebbe saperne di più?",
+   "es": "¿Hay algún estilo artístico de otro país sobre el que te gustaría aprender más?",
+   "pt": "Há algum estilo artístico de outro país sobre o qual gostasses de saber mais?",
+   "pt_BR": "Tem algum estilo artístico de outro país sobre o qual você gostaria de saber mais?",
+   "fr": "Y a-t-il un style artistique d'un autre pays que tu aimerais mieux connaître ?",
+   "de": "Gibt es einen Kunststil aus einem anderen Land, über den du gern mehr erfahren würdest?"
+  }
+ },
+ {
+  "id": "ib-art_museums-035",
+  "topic": "art_museums",
+  "text": {
+   "en": "Do you like looking at portraits? Who is your favourite face in art?",
+   "it": "Ti piace guardare i ritratti? Qual è il tuo volto preferito nell'arte?",
+   "es": "¿Te gusta mirar retratos? ¿Cuál es tu rostro favorito del arte?",
+   "pt": "Gostas de ver retratos? Qual é o teu rosto preferido na arte?",
+   "pt_BR": "Você gosta de olhar retratos? Qual é o seu rosto favorito na arte?",
+   "fr": "Aimes-tu regarder les portraits ? Quel est ton visage préféré dans l'art ?",
+   "de": "Schaust du gern Porträts an? Wer ist dein liebstes Gesicht in der Kunst?"
+  }
+ },
+ {
+  "id": "ib-art_museums-036",
+  "topic": "art_museums",
+  "text": {
+   "en": "What was the last exhibition you saw that you'd tell a friend about?",
+   "it": "Qual è l'ultima mostra che hai visto e di cui parleresti a un amico?",
+   "es": "¿Cuál fue la última exposición que viste y que le contarías a un amigo?",
+   "pt": "Qual foi a última exposição que viste e de que falarias a um amigo?",
+   "pt_BR": "Qual foi a última exposição que você viu e sobre a qual falaria a um amigo?",
+   "fr": "Quelle est la dernière exposition que tu as vue et dont tu parlerais à un ami ?",
+   "de": "Welche war die letzte Ausstellung, die du gesehen hast und von der du einem Freund erzählen würdest?"
+  }
+ },
+ {
+  "id": "ib-art_museums-037",
+  "topic": "art_museums",
+  "text": {
+   "en": "Are museums popular with young people where you live?",
+   "it": "I musei sono popolari tra i giovani dove vivi?",
+   "es": "¿Los museos son populares entre los jóvenes en el lugar donde vives?",
+   "pt": "Os museus são populares entre os jovens onde vives?",
+   "pt_BR": "Os museus são populares entre os jovens onde você mora?",
+   "fr": "Les musées sont-ils populaires auprès des jeunes là où tu vis ?",
+   "de": "Sind Museen bei jungen Leuten dort, wo du wohnst, beliebt?"
+  }
+ },
+ {
+  "id": "ib-art_museums-038",
+  "topic": "art_museums",
+  "text": {
+   "en": "What's the most beautiful ceiling, door or staircase you've ever seen?",
+   "it": "Qual è il soffitto, la porta o la scalinata più bella che tu abbia mai visto?",
+   "es": "¿Cuál es el techo, la puerta o la escalera más bonita que has visto?",
+   "pt": "Qual é o teto, a porta ou a escadaria mais bonita que já viste?",
+   "pt_BR": "Qual é o teto, a porta ou a escada mais bonita que você já viu?",
+   "fr": "Quel est le plus beau plafond, la plus belle porte ou le plus bel escalier que tu aies vu ?",
+   "de": "Was ist die schönste Decke, Tür oder Treppe, die du je gesehen hast?"
+  }
+ },
+ {
+  "id": "ib-art_museums-039",
+  "topic": "art_museums",
+  "text": {
+   "en": "Would you rather see an artist at work or stand in front of a finished piece?",
+   "it": "Preferiresti vedere un artista al lavoro o stare davanti a un'opera finita?",
+   "es": "¿Preferirías ver a un artista trabajando o estar frente a una obra terminada?",
+   "pt": "Preferias ver um artista a trabalhar ou estar diante de uma obra terminada?",
+   "pt_BR": "Você preferiria ver um artista trabalhando ou ficar diante de uma obra pronta?",
+   "fr": "Préférerais-tu voir un artiste au travail ou te tenir devant une œuvre terminée ?",
+   "de": "Würdest du lieber einem Künstler bei der Arbeit zusehen oder vor einem fertigen Werk stehen?"
+  }
+ },
+ {
+  "id": "ib-art_museums-040",
+  "topic": "art_museums",
+  "text": {
+   "en": "Is there a museum in your city that tells the story of the place well?",
+   "it": "C'è un museo nella tua città che racconta bene la storia del luogo?",
+   "es": "¿Hay algún museo en tu ciudad que cuente bien la historia del lugar?",
+   "pt": "Há algum museu na tua cidade que conte bem a história do lugar?",
+   "pt_BR": "Tem algum museu na sua cidade que conta bem a história do lugar?",
+   "fr": "Y a-t-il un musée dans ta ville qui raconte bien l'histoire du lieu ?",
+   "de": "Gibt es in deiner Stadt ein Museum, das die Geschichte des Ortes gut erzählt?"
+  }
+ },
+ {
+  "id": "ib-art_museums-041",
+  "topic": "art_museums",
+  "text": {
+   "en": "Do you ever sketch while you travel or visit galleries?",
+   "it": "Ti capita di fare schizzi quando viaggi o visiti gallerie?",
+   "es": "¿Alguna vez haces bocetos cuando viajas o visitas galerías?",
+   "pt": "Costumas fazer esboços quando viajas ou visitas galerias?",
+   "pt_BR": "Você costuma fazer esboços quando viaja ou visita galerias?",
+   "fr": "T'arrive-t-il de faire des croquis en voyage ou dans les galeries ?",
+   "de": "Machst du manchmal Skizzen, wenn du reist oder Galerien besuchst?"
+  }
+ },
+ {
+  "id": "ib-art_museums-042",
+  "topic": "art_museums",
+  "text": {
+   "en": "Which art museum around the world would you most like to explore together virtually?",
+   "it": "Quale museo d'arte nel mondo ti piacerebbe esplorare insieme a me in modo virtuale?",
+   "es": "¿Qué museo de arte del mundo te gustaría explorar conmigo de forma virtual?",
+   "pt": "Que museu de arte do mundo gostarias de explorar comigo de forma virtual?",
+   "pt_BR": "Qual museu de arte do mundo você gostaria de explorar comigo de forma virtual?",
+   "fr": "Quel musée d'art dans le monde aimerais-tu explorer avec moi de façon virtuelle ?",
+   "de": "Welches Kunstmuseum der Welt würdest du gern mit mir virtuell erkunden?"
+  }
+ },
+ {
+  "id": "ib-art_museums-043",
+  "topic": "art_museums",
+  "text": {
+   "en": "What's a piece of art from your culture that has a fun story behind it?",
+   "it": "Qual è un'opera della tua cultura che ha una storia divertente alle spalle?",
+   "es": "¿Qué obra de arte de tu cultura tiene una historia divertida detrás?",
+   "pt": "Que obra de arte da tua cultura tem uma história divertida por trás?",
+   "pt_BR": "Que obra de arte da sua cultura tem uma história divertida por trás?",
+   "fr": "Quelle œuvre d'art de ta culture a une histoire amusante derrière elle ?",
+   "de": "Welches Kunstwerk aus deiner Kultur hat eine lustige Geschichte?"
+  }
+ },
+ {
+  "id": "ib-art_museums-044",
+  "topic": "art_museums",
+  "text": {
+   "en": "Do you prefer the quiet of a morning visit or the buzz of an afternoon one?",
+   "it": "Preferisci la calma di una visita mattutina o l'animazione di una pomeridiana?",
+   "es": "¿Prefieres la calma de una visita matutina o el bullicio de una por la tarde?",
+   "pt": "Preferes o sossego de uma visita de manhã ou a animação de uma à tarde?",
+   "pt_BR": "Você prefere a calma de uma visita de manhã ou a agitação de uma à tarde?",
+   "fr": "Tu préfères le calme d'une visite le matin ou l'animation d'une visite l'après-midi ?",
+   "de": "Magst du die Ruhe eines Besuchs am Morgen oder den Trubel am Nachmittag lieber?"
+  }
+ },
+ {
+  "id": "ib-art_museums-045",
+  "topic": "art_museums",
+  "text": {
+   "en": "What would you want to learn if someone gave you a day with a museum curator?",
+   "it": "Cosa vorresti imparare se qualcuno ti regalasse una giornata con un curatore di museo?",
+   "es": "¿Qué te gustaría aprender si alguien te regalara un día con un conservador de museo?",
+   "pt": "O que gostarias de aprender se alguém te oferecesse um dia com um curador de museu?",
+   "pt_BR": "O que você gostaria de aprender se alguém lhe desse um dia com um curador de museu?",
+   "fr": "Que voudrais-tu apprendre si on t'offrait une journée avec un conservateur de musée ?",
+   "de": "Was würdest du gern lernen, wenn dir jemand einen Tag mit einem Museumskurator schenken würde?"
+  }
+ },
+ {
+  "id": "ib-art_museums-046",
+  "topic": "art_museums",
+  "text": {
+   "en": "Have you ever been to a museum that completely changed how you see a topic?",
+   "it": "Sei mai stato in un museo che ha cambiato del tutto il tuo modo di vedere un argomento?",
+   "es": "¿Has estado alguna vez en un museo que cambió por completo tu forma de ver un tema?",
+   "pt": "Já estiveste num museu que mudou por completo a tua forma de ver um tema?",
+   "pt_BR": "Você já esteve em um museu que mudou completamente sua forma de ver um assunto?",
+   "fr": "As-tu déjà visité un musée qui a complètement changé ta façon de voir un sujet ?",
+   "de": "Warst du schon einmal in einem Museum, das deine Sicht auf ein Thema völlig verändert hat?"
+  }
+ },
+ {
+  "id": "ib-art_museums-047",
+  "topic": "art_museums",
+  "text": {
+   "en": "Which part of your country has the most interesting art scene right now?",
+   "it": "Quale parte del tuo paese ha la scena artistica più interessante in questo momento?",
+   "es": "¿Qué zona de tu país tiene ahora mismo la escena artística más interesante?",
+   "pt": "Que zona do teu país tem neste momento a cena artística mais interessante?",
+   "pt_BR": "Que parte do seu país tem a cena artística mais interessante no momento?",
+   "fr": "Quelle région de ton pays a la scène artistique la plus intéressante en ce moment ?",
+   "de": "Welcher Teil deines Landes hat gerade die interessanteste Kunstszene?"
+  }
+ },
+ {
+  "id": "ib-art_museums-048",
+  "topic": "art_museums",
+  "text": {
+   "en": "What do you think makes a good museum experience, not just a good collection?",
+   "it": "Secondo te cosa rende bella un'esperienza al museo, non solo una buona collezione?",
+   "es": "¿Qué crees que hace buena una experiencia en un museo, más allá de una buena colección?",
+   "pt": "O que achas que faz uma boa experiência num museu, para além de uma boa coleção?",
+   "pt_BR": "O que você acha que faz uma boa experiência em um museu, além de uma boa coleção?",
+   "fr": "Selon toi, qu'est-ce qui fait une belle visite de musée, au-delà d'une bonne collection ?",
+   "de": "Was macht für dich ein gutes Museumserlebnis aus, nicht nur eine gute Sammlung?"
+  }
+ },
+ {
+  "id": "ib-art_museums-049",
+  "topic": "art_museums",
+  "text": {
+   "en": "If you could spend one hour alone in any gallery, which one would you pick?",
+   "it": "Se potessi passare un'ora da solo in una galleria a tua scelta, quale sceglieresti?",
+   "es": "Si pudieras pasar una hora a solas en cualquier galería, ¿cuál elegirías?",
+   "pt": "Se pudesses passar uma hora sozinho em qualquer galeria, qual escolhias?",
+   "pt_BR": "Se você pudesse passar uma hora sozinho em qualquer galeria, qual escolheria?",
+   "fr": "Si tu pouvais passer une heure seul dans n'importe quelle galerie, laquelle choisirais-tu ?",
+   "de": "Wenn du eine Stunde allein in einer beliebigen Galerie verbringen könntest, welche würdest du wählen?"
+  }
+ },
+ {
+  "id": "ib-art_museums-050",
+  "topic": "art_museums",
+  "text": {
+   "en": "Is there an artwork you would love to see someday that you haven't yet?",
+   "it": "C'è un'opera che ti piacerebbe vedere un giorno e che non hai ancora visto?",
+   "es": "¿Hay alguna obra que te encantaría ver algún día y que todavía no has visto?",
+   "pt": "Há alguma obra que gostasses de ver um dia e que ainda não viste?",
+   "pt_BR": "Tem alguma obra que você gostaria de ver um dia e ainda não viu?",
+   "fr": "Y a-t-il une œuvre que tu aimerais voir un jour et que tu n'as pas encore vue ?",
+   "de": "Gibt es ein Kunstwerk, das du gern einmal sehen würdest und noch nicht gesehen hast?"
+  }
+ },
+ {
+  "id": "ib-local_tips-001",
+  "topic": "local_tips",
+  "text": {
+   "en": "What's your favourite local dish that tourists often miss?",
+   "it": "Qual è il tuo piatto locale preferito che i turisti spesso non provano?",
+   "es": "¿Cuál es tu plato local favorito que los turistas suelen perderse?",
+   "pt": "Qual é o teu prato local preferido que os turistas costumam ignorar?",
+   "pt_BR": "Qual é o seu prato local favorito que os turistas costumam deixar passar?",
+   "fr": "Quel est ton plat local préféré que les touristes ratent souvent ?",
+   "de": "Was ist dein liebstes lokales Gericht, das Touristen oft verpassen?"
+  }
+ },
+ {
+  "id": "ib-local_tips-002",
+  "topic": "local_tips",
+  "text": {
+   "en": "Where do locals go in your city when they want some peace and quiet?",
+   "it": "Dove vanno i local della tua città quando vogliono un po' di tranquillità?",
+   "es": "¿Adónde va la gente de tu ciudad cuando quiere un poco de tranquilidad?",
+   "pt": "Para onde vão os locais da tua cidade quando querem sossego?",
+   "pt_BR": "Para onde os moradores da sua cidade vão quando querem sossego?",
+   "fr": "Où vont les habitants de ta ville quand ils veulent un peu de calme ?",
+   "de": "Wohin gehen die Einheimischen in deiner Stadt, wenn sie Ruhe suchen?"
+  }
+ },
+ {
+  "id": "ib-local_tips-003",
+  "topic": "local_tips",
+  "text": {
+   "en": "What's one thing you'd tell a first-time visitor to your area to do?",
+   "it": "Qual è la cosa che consiglieresti di fare a chi visita la tua zona per la prima volta?",
+   "es": "¿Qué le dirías a alguien que visita tu zona por primera vez que no se pierda?",
+   "pt": "Qual é a coisa que dirias a quem visita a tua zona pela primeira vez para fazer?",
+   "pt_BR": "Qual é a coisa que você diria a quem visita sua região pela primeira vez para fazer?",
+   "fr": "Que conseillerais-tu de faire à quelqu'un qui découvre ta région pour la première fois ?",
+   "de": "Was würdest du jemandem raten, der zum ersten Mal in deine Gegend kommt?"
+  }
+ },
+ {
+  "id": "ib-local_tips-004",
+  "topic": "local_tips",
+  "text": {
+   "en": "Which neighbourhood in your city has the most character?",
+   "it": "Quale quartiere della tua città ha più carattere?",
+   "es": "¿Qué barrio de tu ciudad tiene más carácter?",
+   "pt": "Que bairro da tua cidade tem mais carácter?",
+   "pt_BR": "Que bairro da sua cidade tem mais personalidade?",
+   "fr": "Quel quartier de ta ville a le plus de caractère ?",
+   "de": "Welches Viertel deiner Stadt hat den meisten Charakter?"
+  }
+ },
+ {
+  "id": "ib-local_tips-005",
+  "topic": "local_tips",
+  "text": {
+   "en": "Where is the best place near you to watch the sunset?",
+   "it": "Qual è il posto migliore vicino a te per guardare il tramonto?",
+   "es": "¿Cuál es el mejor lugar cerca de ti para ver la puesta de sol?",
+   "pt": "Qual é o melhor sítio perto de ti para ver o pôr do sol?",
+   "pt_BR": "Qual é o melhor lugar perto de você para ver o pôr do sol?",
+   "fr": "Quel est le meilleur endroit près de chez toi pour regarder le coucher de soleil ?",
+   "de": "Wo kann man bei dir in der Nähe am besten den Sonnenuntergang beobachten?"
+  }
+ },
+ {
+  "id": "ib-local_tips-006",
+  "topic": "local_tips",
+  "text": {
+   "en": "What's a local habit that surprises most visitors?",
+   "it": "Qual è un'abitudine locale che sorprende la maggior parte dei visitatori?",
+   "es": "¿Qué costumbre local sorprende a la mayoría de los visitantes?",
+   "pt": "Qual é um hábito local que surpreende a maioria dos visitantes?",
+   "pt_BR": "Qual é um hábito local que surpreende a maioria dos visitantes?",
+   "fr": "Quelle habitude locale surprend la plupart des visiteurs ?",
+   "de": "Welche lokale Gewohnheit überrascht die meisten Besucher?"
+  }
+ },
+ {
+  "id": "ib-local_tips-007",
+  "topic": "local_tips",
+  "text": {
+   "en": "Which market or shop would you take a friend to for something authentic?",
+   "it": "In quale mercato o negozio porteresti un amico per qualcosa di autentico?",
+   "es": "¿A qué mercado o tienda llevarías a un amigo para encontrar algo auténtico?",
+   "pt": "A que mercado ou loja levarias um amigo para encontrar algo autêntico?",
+   "pt_BR": "A que mercado ou loja você levaria um amigo para encontrar algo autêntico?",
+   "fr": "Dans quel marché ou quelle boutique emmènerais-tu un ami pour trouver quelque chose d'authentique ?",
+   "de": "In welchen Markt oder Laden würdest du einen Freund für etwas Authentisches mitnehmen?"
+  }
+ },
+ {
+  "id": "ib-local_tips-008",
+  "topic": "local_tips",
+  "text": {
+   "en": "What's the best way to get around your city like a local?",
+   "it": "Qual è il modo migliore per muoversi nella tua città come un local?",
+   "es": "¿Cuál es la mejor forma de moverse por tu ciudad como un local?",
+   "pt": "Qual é a melhor forma de te deslocares na tua cidade como um local?",
+   "pt_BR": "Qual é a melhor forma de se locomover pela sua cidade como um morador?",
+   "fr": "Quelle est la meilleure façon de se déplacer dans ta ville comme un habitant ?",
+   "de": "Wie kommt man in deiner Stadt am besten wie ein Einheimischer von A nach B?"
+  }
+ },
+ {
+  "id": "ib-local_tips-009",
+  "topic": "local_tips",
+  "text": {
+   "en": "Is there a cafe or bakery you'd say is a local institution?",
+   "it": "C'è un bar o una pasticceria che definiresti un'istituzione locale?",
+   "es": "¿Hay alguna cafetería o panadería que dirías que es una institución local?",
+   "pt": "Há algum café ou pastelaria que dirias ser uma instituição local?",
+   "pt_BR": "Tem alguma cafeteria ou padaria que você diria ser uma instituição local?",
+   "fr": "Y a-t-il un café ou une boulangerie que tu dirais être une institution locale ?",
+   "de": "Gibt es ein Café oder eine Bäckerei, die du eine lokale Institution nennen würdest?"
+  }
+ },
+ {
+  "id": "ib-local_tips-010",
+  "topic": "local_tips",
+  "text": {
+   "en": "What time of year is the best to visit where you live, and why?",
+   "it": "Qual è il periodo migliore dell'anno per visitare il posto in cui vivi, e perché?",
+   "es": "¿Cuál es la mejor época del año para visitar el lugar donde vives y por qué?",
+   "pt": "Qual é a melhor altura do ano para visitar o sítio onde vives, e porquê?",
+   "pt_BR": "Qual é a melhor época do ano para visitar o lugar onde você mora, e por quê?",
+   "fr": "Quelle est la meilleure période de l'année pour visiter l'endroit où tu vis, et pourquoi ?",
+   "de": "Wann ist die beste Reisezeit für deinen Wohnort, und warum?"
+  }
+ },
+ {
+  "id": "ib-local_tips-011",
+  "topic": "local_tips",
+  "text": {
+   "en": "What's something locals know that guidebooks never mention?",
+   "it": "Cosa sanno i local che le guide turistiche non menzionano mai?",
+   "es": "¿Qué saben los locales que las guías nunca mencionan?",
+   "pt": "O que é que os locais sabem que os guias turísticos nunca mencionam?",
+   "pt_BR": "O que os moradores sabem que os guias de viagem nunca mencionam?",
+   "fr": "Qu'est-ce que les habitants savent et que les guides ne mentionnent jamais ?",
+   "de": "Was wissen Einheimische, was in keinem Reiseführer steht?"
+  }
+ },
+ {
+  "id": "ib-local_tips-012",
+  "topic": "local_tips",
+  "text": {
+   "en": "Which day trip from your town would you recommend the most?",
+   "it": "Quale gita in giornata dalla tua città consiglieresti di più?",
+   "es": "¿Qué excursión de un día desde tu ciudad recomendarías más?",
+   "pt": "Que excursão de um dia a partir da tua cidade recomendarias mais?",
+   "pt_BR": "Que bate-volta a partir da sua cidade você mais recomendaria?",
+   "fr": "Quelle excursion d'une journée au départ de ta ville recommanderais-tu le plus ?",
+   "de": "Welchen Tagesausflug von deiner Stadt aus würdest du am meisten empfehlen?"
+  }
+ },
+ {
+  "id": "ib-local_tips-013",
+  "topic": "local_tips",
+  "text": {
+   "en": "Where do people in your area go for a casual weekend lunch?",
+   "it": "Dove vanno le persone della tua zona per un pranzo informale nel fine settimana?",
+   "es": "¿Adónde va la gente de tu zona a comer sin complicaciones el fin de semana?",
+   "pt": "Para onde vão as pessoas da tua zona almoçar descontraidamente ao fim de semana?",
+   "pt_BR": "Para onde as pessoas da sua região vão para um almoço descontraído no fim de semana?",
+   "fr": "Où vont les gens de ta région pour un déjeuner décontracté le week-end ?",
+   "de": "Wohin geht man in deiner Gegend zu einem lockeren Mittagessen am Wochenende?"
+  }
+ },
+ {
+  "id": "ib-local_tips-014",
+  "topic": "local_tips",
+  "text": {
+   "en": "What's the most underrated place in your region?",
+   "it": "Qual è il posto più sottovalutato della tua regione?",
+   "es": "¿Cuál es el lugar más infravalorado de tu región?",
+   "pt": "Qual é o sítio mais subvalorizado da tua região?",
+   "pt_BR": "Qual é o lugar mais subestimado da sua região?",
+   "fr": "Quel est l'endroit le plus sous-estimé de ta région ?",
+   "de": "Was ist der am meisten unterschätzte Ort in deiner Region?"
+  }
+ },
+ {
+  "id": "ib-local_tips-015",
+  "topic": "local_tips",
+  "text": {
+   "en": "Is there a local festival or event you'd never want to miss?",
+   "it": "C'è una festa o un evento locale che non vorresti mai perdere?",
+   "es": "¿Hay alguna fiesta o evento local que nunca te querrías perder?",
+   "pt": "Há alguma festa ou evento local que nunca gostasses de perder?",
+   "pt_BR": "Tem alguma festa ou evento local que você nunca gostaria de perder?",
+   "fr": "Y a-t-il une fête ou un événement local que tu ne voudrais jamais manquer ?",
+   "de": "Gibt es ein Fest oder eine Veranstaltung vor Ort, die du niemals verpassen möchtest?"
+  }
+ },
+ {
+  "id": "ib-local_tips-016",
+  "topic": "local_tips",
+  "text": {
+   "en": "What's a phrase in your local dialect that every visitor should learn?",
+   "it": "Qual è un'espressione del tuo dialetto che ogni visitatore dovrebbe imparare?",
+   "es": "¿Qué expresión de tu dialecto local debería aprender todo visitante?",
+   "pt": "Que expressão do teu dialeto local deveria todo o visitante aprender?",
+   "pt_BR": "Que expressão do seu dialeto local todo visitante deveria aprender?",
+   "fr": "Quelle expression de ton dialecte local chaque visiteur devrait-il apprendre ?",
+   "de": "Welchen Ausdruck aus deinem Dialekt sollte jeder Besucher lernen?"
+  }
+ },
+ {
+  "id": "ib-local_tips-017",
+  "topic": "local_tips",
+  "text": {
+   "en": "Where would you take me for the best view of your city?",
+   "it": "Dove mi porteresti per avere la vista migliore sulla tua città?",
+   "es": "¿Adónde me llevarías para tener la mejor vista de tu ciudad?",
+   "pt": "Onde me levarias para ter a melhor vista da tua cidade?",
+   "pt_BR": "Aonde você me levaria para ter a melhor vista da sua cidade?",
+   "fr": "Où m'emmènerais-tu pour avoir la plus belle vue sur ta ville ?",
+   "de": "Wohin würdest du mich für die beste Aussicht auf deine Stadt mitnehmen?"
+  }
+ },
+ {
+  "id": "ib-local_tips-018",
+  "topic": "local_tips",
+  "text": {
+   "en": "What's the best local snack or street food to try on a budget?",
+   "it": "Qual è il miglior spuntino o cibo di strada locale da provare spendendo poco?",
+   "es": "¿Cuál es el mejor tentempié o comida callejera local para probar con poco presupuesto?",
+   "pt": "Qual é o melhor petisco ou comida de rua local para provar sem gastar muito?",
+   "pt_BR": "Qual é o melhor lanche ou comida de rua local para provar gastando pouco?",
+   "fr": "Quel est le meilleur en-cas ou plat de rue local à goûter avec un petit budget ?",
+   "de": "Was ist der beste lokale Snack oder das beste Streetfood, das man günstig probieren kann?"
+  }
+ },
+ {
+  "id": "ib-local_tips-019",
+  "topic": "local_tips",
+  "text": {
+   "en": "Which park or green space do you love most near you?",
+   "it": "Quale parco o area verde ami di più vicino a te?",
+   "es": "¿Qué parque o zona verde es el que más te gusta cerca de ti?",
+   "pt": "Que parque ou espaço verde amas mais perto de ti?",
+   "pt_BR": "Qual parque ou área verde você mais ama perto de você?",
+   "fr": "Quel parc ou espace vert aimes-tu le plus près de chez toi ?",
+   "de": "Welchen Park oder welche Grünfläche magst du bei dir in der Nähe am liebsten?"
+  }
+ },
+ {
+  "id": "ib-local_tips-020",
+  "topic": "local_tips",
+  "text": {
+   "en": "What would a perfect local Sunday look like where you live?",
+   "it": "Come sarebbe una domenica perfetta alla maniera locale dove vivi?",
+   "es": "¿Cómo sería un domingo local perfecto donde vives?",
+   "pt": "Como seria um domingo local perfeito onde vives?",
+   "pt_BR": "Como seria um domingo local perfeito onde você mora?",
+   "fr": "À quoi ressemblerait un dimanche parfait à la locale là où tu vis ?",
+   "de": "Wie sähe ein perfekter Sonntag nach Art der Einheimischen bei dir aus?"
+  }
+ },
+ {
+  "id": "ib-local_tips-021",
+  "topic": "local_tips",
+  "text": {
+   "en": "Is there a hidden viewpoint, courtyard or alley everyone should see?",
+   "it": "C'è un belvedere, un cortile o un vicolo nascosto che tutti dovrebbero vedere?",
+   "es": "¿Hay algún mirador, patio o callejón escondido que todo el mundo debería ver?",
+   "pt": "Há algum miradouro, pátio ou beco escondido que toda a gente devia ver?",
+   "pt_BR": "Tem algum mirante, pátio ou beco escondido que todo mundo deveria ver?",
+   "fr": "Y a-t-il un belvédère, une cour ou une ruelle cachée que tout le monde devrait voir ?",
+   "de": "Gibt es einen versteckten Aussichtspunkt, Hinterhof oder eine Gasse, die jeder sehen sollte?"
+  }
+ },
+ {
+  "id": "ib-local_tips-022",
+  "topic": "local_tips",
+  "text": {
+   "en": "What's the one souvenir from your area that is actually worth buying?",
+   "it": "Qual è l'unico souvenir della tua zona che vale davvero la pena comprare?",
+   "es": "¿Cuál es el único recuerdo de tu zona que realmente vale la pena comprar?",
+   "pt": "Qual é a única lembrança da tua zona que realmente vale a pena comprar?",
+   "pt_BR": "Qual é a única lembrança da sua região que realmente vale a pena comprar?",
+   "fr": "Quel est le seul souvenir de ta région qui vaut vraiment la peine d'être acheté ?",
+   "de": "Welches ist das eine Souvenir aus deiner Gegend, das sich wirklich zu kaufen lohnt?"
+  }
+ },
+ {
+  "id": "ib-local_tips-023",
+  "topic": "local_tips",
+  "text": {
+   "en": "How do locals usually spend a rainy day in your city?",
+   "it": "Come passano di solito una giornata di pioggia i local della tua città?",
+   "es": "¿Cómo suele pasar la gente de tu ciudad un día de lluvia?",
+   "pt": "Como costumam os locais passar um dia de chuva na tua cidade?",
+   "pt_BR": "Como os moradores costumam passar um dia de chuva na sua cidade?",
+   "fr": "Comment les habitants passent-ils d'habitude une journée de pluie dans ta ville ?",
+   "de": "Wie verbringen die Einheimischen in deiner Stadt normalerweise einen Regentag?"
+  }
+ },
+ {
+  "id": "ib-local_tips-024",
+  "topic": "local_tips",
+  "text": {
+   "en": "What's a walking route you'd recommend for discovering your town?",
+   "it": "Quale percorso a piedi consiglieresti per scoprire la tua città?",
+   "es": "¿Qué ruta a pie recomendarías para descubrir tu ciudad?",
+   "pt": "Que percurso a pé recomendarias para descobrir a tua cidade?",
+   "pt_BR": "Que roteiro a pé você recomendaria para descobrir sua cidade?",
+   "fr": "Quel parcours à pied recommanderais-tu pour découvrir ta ville ?",
+   "de": "Welche Route zu Fuß würdest du empfehlen, um deine Stadt zu entdecken?"
+  }
+ },
+ {
+  "id": "ib-local_tips-025",
+  "topic": "local_tips",
+  "text": {
+   "en": "Where can I try the most traditional local drink, non-alcoholic or not, in your area?",
+   "it": "Dove posso assaggiare la bevanda locale più tradizionale, analcolica o no, nella tua zona?",
+   "es": "¿Dónde puedo probar la bebida local más tradicional de tu zona, con alcohol o sin él?",
+   "pt": "Onde posso provar a bebida local mais tradicional da tua zona, com ou sem álcool?",
+   "pt_BR": "Onde posso experimentar a bebida local mais tradicional da sua região, com ou sem álcool?",
+   "fr": "Où puis-je goûter la boisson locale la plus traditionnelle de ta région, avec ou sans alcool ?",
+   "de": "Wo kann ich in deiner Gegend das traditionellste lokale Getränk probieren, mit oder ohne Alkohol?"
+  }
+ },
+ {
+  "id": "ib-local_tips-026",
+  "topic": "local_tips",
+  "text": {
+   "en": "What's a local tradition you grew up with that outsiders find unusual?",
+   "it": "Qual è una tradizione locale con cui sei cresciuto e che gli stranieri trovano insolita?",
+   "es": "¿Qué tradición local con la que creciste les parece rara a los de fuera?",
+   "pt": "Que tradição local com que cresceste os de fora acham invulgar?",
+   "pt_BR": "Que tradição local com a qual você cresceu os de fora acham incomum?",
+   "fr": "Quelle tradition locale avec laquelle tu as grandi paraît étrange aux gens de l'extérieur ?",
+   "de": "Welche lokale Tradition, mit der du aufgewachsen bist, finden Außenstehende ungewöhnlich?"
+  }
+ },
+ {
+  "id": "ib-local_tips-027",
+  "topic": "local_tips",
+  "text": {
+   "en": "Which bakery, farm shop or market stall has the freshest products near you?",
+   "it": "Quale panificio, negozio di prodotti agricoli o banco del mercato ha i prodotti più freschi vicino a te?",
+   "es": "¿Qué panadería, tienda de productos del campo o puesto del mercado tiene los productos más frescos cerca de ti?",
+   "pt": "Que padaria, loja de produtos agrícolas ou banca de mercado tem os produtos mais frescos perto de ti?",
+   "pt_BR": "Qual padaria, loja de produtos da roça ou barraca de feira tem os produtos mais frescos perto de você?",
+   "fr": "Quelle boulangerie, ferme ou étal de marché propose les produits les plus frais près de chez toi ?",
+   "de": "Welche Bäckerei, welcher Hofladen oder Marktstand hat bei dir die frischesten Produkte?"
+  }
+ },
+ {
+  "id": "ib-local_tips-028",
+  "topic": "local_tips",
+  "text": {
+   "en": "What's the friendliest part of town for a visitor on foot?",
+   "it": "Qual è la zona della città più accogliente per un visitatore a piedi?",
+   "es": "¿Cuál es la zona más amable de la ciudad para un visitante que va a pie?",
+   "pt": "Qual é a zona da cidade mais acolhedora para um visitante a pé?",
+   "pt_BR": "Qual é a parte da cidade mais acolhedora para um visitante a pé?",
+   "fr": "Quel est le quartier le plus accueillant pour un visiteur à pied ?",
+   "de": "Welcher Stadtteil ist für Besucher zu Fuß am einladendsten?"
+  }
+ },
+ {
+  "id": "ib-local_tips-029",
+  "topic": "local_tips",
+  "text": {
+   "en": "Is there a book, film or song that captures the spirit of your region?",
+   "it": "C'è un libro, un film o una canzone che cattura lo spirito della tua regione?",
+   "es": "¿Hay algún libro, película o canción que capte el espíritu de tu región?",
+   "pt": "Há algum livro, filme ou canção que capte o espírito da tua região?",
+   "pt_BR": "Tem algum livro, filme ou música que capta o espírito da sua região?",
+   "fr": "Y a-t-il un livre, un film ou une chanson qui capte l'esprit de ta région ?",
+   "de": "Gibt es ein Buch, einen Film oder ein Lied, das den Geist deiner Region einfängt?"
+  }
+ },
+ {
+  "id": "ib-local_tips-030",
+  "topic": "local_tips",
+  "text": {
+   "en": "What do you wish more tourists knew before coming to your town?",
+   "it": "Cosa vorresti che più turisti sapessero prima di venire nella tua città?",
+   "es": "¿Qué te gustaría que más turistas supieran antes de venir a tu ciudad?",
+   "pt": "O que gostavas que mais turistas soubessem antes de virem à tua cidade?",
+   "pt_BR": "O que você gostaria que mais turistas soubessem antes de vir à sua cidade?",
+   "fr": "Que voudrais-tu que plus de touristes sachent avant de venir dans ta ville ?",
+   "de": "Was wünschst du dir, dass mehr Touristen wüssten, bevor sie in deine Stadt kommen?"
+  }
+ },
+ {
+  "id": "ib-local_tips-031",
+  "topic": "local_tips",
+  "text": {
+   "en": "Which local specialty would you cook for a guest from abroad?",
+   "it": "Quale specialità locale cucineresti per un ospite straniero?",
+   "es": "¿Qué especialidad local cocinarías para un invitado del extranjero?",
+   "pt": "Que especialidade local cozinharias para um convidado estrangeiro?",
+   "pt_BR": "Que especialidade local você cozinharia para um convidado estrangeiro?",
+   "fr": "Quelle spécialité locale cuisinerais-tu pour un invité venu de l'étranger ?",
+   "de": "Welche lokale Spezialität würdest du für einen Gast aus dem Ausland kochen?"
+  }
+ },
+ {
+  "id": "ib-local_tips-032",
+  "topic": "local_tips",
+  "text": {
+   "en": "Where do you go to get away from the tourist crowds in your city?",
+   "it": "Dove vai per allontanarti dalla folla di turisti nella tua città?",
+   "es": "¿Adónde vas para escapar de las multitudes de turistas en tu ciudad?",
+   "pt": "Para onde vais para fugir às multidões de turistas na tua cidade?",
+   "pt_BR": "Para onde você vai para fugir das multidões de turistas na sua cidade?",
+   "fr": "Où vas-tu pour échapper à la foule de touristes dans ta ville ?",
+   "de": "Wohin gehst du, um den Touristenmassen in deiner Stadt zu entkommen?"
+  }
+ },
+ {
+  "id": "ib-local_tips-033",
+  "topic": "local_tips",
+  "text": {
+   "en": "What's the best season for hiking or being outdoors near you?",
+   "it": "Qual è la stagione migliore per fare escursioni o stare all'aperto vicino a te?",
+   "es": "¿Cuál es la mejor estación para hacer senderismo o estar al aire libre cerca de ti?",
+   "pt": "Qual é a melhor estação para fazer caminhadas ou estar ao ar livre perto de ti?",
+   "pt_BR": "Qual é a melhor estação para fazer trilhas ou ficar ao ar livre perto de você?",
+   "fr": "Quelle est la meilleure saison pour randonner ou profiter du plein air près de chez toi ?",
+   "de": "Welche Jahreszeit ist bei dir am besten zum Wandern oder für draußen?"
+  }
+ },
+ {
+  "id": "ib-local_tips-034",
+  "topic": "local_tips",
+  "text": {
+   "en": "Is there a local craft or product that your area is proud of?",
+   "it": "C'è un prodotto o un artigianato locale di cui la tua zona va fiera?",
+   "es": "¿Hay alguna artesanía o producto local del que tu zona se sienta orgullosa?",
+   "pt": "Há algum artesanato ou produto local de que a tua zona se orgulhe?",
+   "pt_BR": "Tem algum artesanato ou produto local do qual a sua região se orgulha?",
+   "fr": "Y a-t-il un artisanat ou un produit local dont ta région est fière ?",
+   "de": "Gibt es ein lokales Handwerk oder Produkt, auf das deine Gegend stolz ist?"
+  }
+ },
+ {
+  "id": "ib-local_tips-035",
+  "topic": "local_tips",
+  "text": {
+   "en": "How early should I get up to see your town at its best?",
+   "it": "A che ora dovrei alzarmi per vedere la tua città al meglio?",
+   "es": "¿A qué hora debería levantarme para ver tu ciudad en su mejor momento?",
+   "pt": "A que horas devia levantar-me para ver a tua cidade no seu melhor?",
+   "pt_BR": "A que horas eu deveria acordar para ver sua cidade no seu melhor?",
+   "fr": "À quelle heure devrais-je me lever pour voir ta ville sous son meilleur jour ?",
+   "de": "Wie früh sollte ich aufstehen, um deine Stadt von ihrer besten Seite zu sehen?"
+  }
+ },
+ {
+  "id": "ib-local_tips-036",
+  "topic": "local_tips",
+  "text": {
+   "en": "What's a local word or expression that doesn't translate well?",
+   "it": "Qual è una parola o espressione locale che non si traduce bene?",
+   "es": "¿Qué palabra o expresión local no se traduce bien?",
+   "pt": "Qual é uma palavra ou expressão local que não se traduz bem?",
+   "pt_BR": "Qual é uma palavra ou expressão local que não se traduz bem?",
+   "fr": "Quel mot ou quelle expression locale se traduit mal ?",
+   "de": "Welches Wort oder welcher Ausdruck aus deiner Gegend lässt sich schlecht übersetzen?"
+  }
+ },
+ {
+  "id": "ib-local_tips-037",
+  "topic": "local_tips",
+  "text": {
+   "en": "Where do families in your area like to go on weekends?",
+   "it": "Dove amano andare le famiglie della tua zona nei fine settimana?",
+   "es": "¿Adónde le gusta ir a las familias de tu zona los fines de semana?",
+   "pt": "Aonde gostam de ir as famílias da tua zona ao fim de semana?",
+   "pt_BR": "Aonde as famílias da sua região gostam de ir nos fins de semana?",
+   "fr": "Où les familles de ta région aiment-elles aller le week-end ?",
+   "de": "Wohin gehen Familien in deiner Gegend gern am Wochenende?"
+  }
+ },
+ {
+  "id": "ib-local_tips-038",
+  "topic": "local_tips",
+  "text": {
+   "en": "What local advice would you give about eating well without overspending?",
+   "it": "Quale consiglio da local daresti per mangiare bene senza spendere troppo?",
+   "es": "¿Qué consejo local darías para comer bien sin gastar de más?",
+   "pt": "Que conselho de local darias para comer bem sem gastar demais?",
+   "pt_BR": "Que conselho de morador você daria para comer bem sem gastar demais?",
+   "fr": "Quel conseil d'habitant donnerais-tu pour bien manger sans trop dépenser ?",
+   "de": "Welchen Tipp als Einheimischer hast du, um gut zu essen, ohne zu viel auszugeben?"
+  }
+ },
+ {
+  "id": "ib-local_tips-039",
+  "topic": "local_tips",
+  "text": {
+   "en": "Which small town or village nearby is worth a visit?",
+   "it": "Quale piccolo paese o borgo nelle vicinanze vale la pena visitare?",
+   "es": "¿Qué pueblo pequeño cercano merece una visita?",
+   "pt": "Que vila ou aldeia próxima vale a pena visitar?",
+   "pt_BR": "Que cidadezinha ou vilarejo próximo vale uma visita?",
+   "fr": "Quelle petite ville ou quel village des environs mérite une visite ?",
+   "de": "Welche kleine Stadt oder welches Dorf in der Nähe ist einen Besuch wert?"
+  }
+ },
+ {
+  "id": "ib-local_tips-040",
+  "topic": "local_tips",
+  "text": {
+   "en": "Is there a spot where musicians or street performers gather in your city?",
+   "it": "C'è un posto dove si riuniscono musicisti o artisti di strada nella tua città?",
+   "es": "¿Hay algún lugar donde se reúnan músicos o artistas callejeros en tu ciudad?",
+   "pt": "Há algum sítio onde se reúnam músicos ou artistas de rua na tua cidade?",
+   "pt_BR": "Tem algum lugar onde músicos ou artistas de rua se reúnem na sua cidade?",
+   "fr": "Y a-t-il un endroit où se retrouvent musiciens ou artistes de rue dans ta ville ?",
+   "de": "Gibt es in deiner Stadt einen Ort, an dem sich Musiker oder Straßenkünstler treffen?"
+  }
+ },
+ {
+  "id": "ib-local_tips-041",
+  "topic": "local_tips",
+  "text": {
+   "en": "What's the most welcoming thing about the people where you live?",
+   "it": "Qual è la cosa più accogliente delle persone del posto in cui vivi?",
+   "es": "¿Qué es lo más acogedor de la gente del lugar donde vives?",
+   "pt": "Qual é a coisa mais acolhedora das pessoas do sítio onde vives?",
+   "pt_BR": "Qual é a coisa mais acolhedora das pessoas do lugar onde você mora?",
+   "fr": "Qu'y a-t-il de plus accueillant chez les gens de l'endroit où tu vis ?",
+   "de": "Was ist das Einladendste an den Menschen dort, wo du wohnst?"
+  }
+ },
+ {
+  "id": "ib-local_tips-042",
+  "topic": "local_tips",
+  "text": {
+   "en": "Which local tip saved you time or money the most?",
+   "it": "Quale consiglio locale ti ha fatto risparmiare più tempo o denaro?",
+   "es": "¿Qué consejo local te ha ahorrado más tiempo o dinero?",
+   "pt": "Que dica local te poupou mais tempo ou dinheiro?",
+   "pt_BR": "Qual dica local mais economizou seu tempo ou dinheiro?",
+   "fr": "Quelle astuce locale t'a fait gagner le plus de temps ou d'argent ?",
+   "de": "Welcher Geheimtipp hat dir am meisten Zeit oder Geld gespart?"
+  }
+ },
+ {
+  "id": "ib-local_tips-043",
+  "topic": "local_tips",
+  "text": {
+   "en": "Where can a visitor see how people really live in your area?",
+   "it": "Dove può un visitatore vedere come vive davvero la gente nella tua zona?",
+   "es": "¿Dónde puede un visitante ver cómo vive realmente la gente en tu zona?",
+   "pt": "Onde pode um visitante ver como as pessoas realmente vivem na tua zona?",
+   "pt_BR": "Onde um visitante pode ver como as pessoas realmente vivem na sua região?",
+   "fr": "Où un visiteur peut-il voir comment les gens vivent vraiment dans ta région ?",
+   "de": "Wo kann ein Besucher sehen, wie die Menschen in deiner Gegend wirklich leben?"
+  }
+ },
+ {
+  "id": "ib-local_tips-044",
+  "topic": "local_tips",
+  "text": {
+   "en": "What's a great place for a first-time visitor to try local food without tourist prices?",
+   "it": "Qual è un ottimo posto dove un visitatore può provare il cibo locale senza prezzi da turista?",
+   "es": "¿Cuál es un buen sitio para que un visitante pruebe la comida local sin precios de turista?",
+   "pt": "Qual é um ótimo sítio para um visitante provar a comida local sem preços de turista?",
+   "pt_BR": "Qual é um ótimo lugar para um visitante experimentar a comida local sem preço de turista?",
+   "fr": "Quel est un bon endroit pour qu'un visiteur goûte la cuisine locale sans prix de touriste ?",
+   "de": "Wo kann ein Besucher lokales Essen ohne Touristenpreise probieren?"
+  }
+ },
+ {
+  "id": "ib-local_tips-045",
+  "topic": "local_tips",
+  "text": {
+   "en": "How do you usually greet friends or neighbours in your hometown?",
+   "it": "Come saluti di solito amici o vicini nella tua città natale?",
+   "es": "¿Cómo sueles saludar a los amigos o vecinos en tu ciudad natal?",
+   "pt": "Como costumas cumprimentar amigos ou vizinhos na tua terra natal?",
+   "pt_BR": "Como você costuma cumprimentar amigos ou vizinhos na sua cidade natal?",
+   "fr": "Comment salues-tu d'habitude amis ou voisins dans ta ville natale ?",
+   "de": "Wie begrüßt du Freunde oder Nachbarn normalerweise in deiner Heimatstadt?"
+  }
+ },
+ {
+  "id": "ib-local_tips-046",
+  "topic": "local_tips",
+  "text": {
+   "en": "Which season brings out the best in your city?",
+   "it": "Quale stagione fa emergere il meglio della tua città?",
+   "es": "¿Qué estación saca lo mejor de tu ciudad?",
+   "pt": "Que estação faz sobressair o melhor da tua cidade?",
+   "pt_BR": "Qual estação revela o melhor da sua cidade?",
+   "fr": "Quelle saison révèle le meilleur de ta ville ?",
+   "de": "Welche Jahreszeit bringt das Beste in deiner Stadt zum Vorschein?"
+  }
+ },
+ {
+  "id": "ib-local_tips-047",
+  "topic": "local_tips",
+  "text": {
+   "en": "If I had only one afternoon in your town, how would you plan it?",
+   "it": "Se avessi solo un pomeriggio nella tua città, come lo organizzeresti?",
+   "es": "Si solo tuviera una tarde en tu ciudad, ¿cómo la organizarías?",
+   "pt": "Se eu tivesse apenas uma tarde na tua cidade, como a planearias?",
+   "pt_BR": "Se eu tivesse apenas uma tarde na sua cidade, como você a planejaria?",
+   "fr": "Si je n'avais qu'un après-midi dans ta ville, comment le planifierais-tu ?",
+   "de": "Wenn ich nur einen Nachmittag in deiner Stadt hätte, wie würdest du ihn planen?"
+  }
+ },
+ {
+  "id": "ib-local_tips-048",
+  "topic": "local_tips",
+  "text": {
+   "en": "Which local festival food or sweet would you tell me to try?",
+   "it": "Quale cibo o dolce tipico delle feste locali mi consiglieresti di assaggiare?",
+   "es": "¿Qué comida o dulce típico de las fiestas locales me recomendarías probar?",
+   "pt": "Que comida ou doce típico das festas locais me recomendarias provar?",
+   "pt_BR": "Que comida ou doce típico das festas locais você me recomendaria experimentar?",
+   "fr": "Quel plat ou dessert typique des fêtes locales me conseillerais-tu de goûter ?",
+   "de": "Welches typische Festessen oder welche Süßspeise aus deiner Region würdest du mir zum Probieren empfehlen?"
+  }
+ },
+ {
+  "id": "ib-local_tips-049",
+  "topic": "local_tips",
+  "text": {
+   "en": "What's the best spot in your area for a relaxed evening walk?",
+   "it": "Qual è il posto migliore della tua zona per una passeggiata serale rilassata?",
+   "es": "¿Cuál es el mejor lugar de tu zona para un paseo tranquilo por la noche?",
+   "pt": "Qual é o melhor sítio da tua zona para um passeio tranquilo ao final do dia?",
+   "pt_BR": "Qual é o melhor lugar da sua região para uma caminhada tranquila no fim do dia?",
+   "fr": "Quel est le meilleur endroit de ta région pour une balade tranquille en soirée ?",
+   "de": "Wo ist der beste Ort in deiner Gegend für einen entspannten Abendspaziergang?"
+  }
+ },
+ {
+  "id": "ib-local_tips-050",
+  "topic": "local_tips",
+  "text": {
+   "en": "Is there a local museum, church or monument that surprised you the most?",
+   "it": "C'è un museo, una chiesa o un monumento locale che ti ha sorpreso più di tutti?",
+   "es": "¿Hay algún museo, iglesia o monumento local que te haya sorprendido más que ninguno?",
+   "pt": "Há algum museu, igreja ou monumento local que te tenha surpreendido mais do que todos?",
+   "pt_BR": "Tem algum museu, igreja ou monumento local que mais surpreendeu você?",
+   "fr": "Y a-t-il un musée, une église ou un monument local qui t'a le plus surpris ?",
+   "de": "Gibt es ein Museum, eine Kirche oder ein Denkmal vor Ort, das dich am meisten überrascht hat?"
+  }
+ }
+]

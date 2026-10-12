@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ss-culture_questions-001",
+  "topic": "culture_questions",
+  "level": "A1",
+  "text": {
+   "en": "What is your country famous for?",
+   "it": "Per cosa è famoso il tuo paese?",
+   "es": "¿Por qué es famoso tu país?",
+   "pt": "Pelo que é famoso o teu país?",
+   "pt_BR": "Pelo que o seu país é famoso?",
+   "fr": "Pour quoi ton pays est-il célèbre ?",
+   "de": "Wofür ist dein Land berühmt?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-002",
+  "topic": "culture_questions",
+  "level": "A1",
+  "text": {
+   "en": "What food do you like from your country?",
+   "it": "Quale cibo del tuo paese ti piace?",
+   "es": "¿Qué comida de tu país te gusta?",
+   "pt": "De que comida do teu país gostas?",
+   "pt_BR": "De qual comida do seu país você gosta?",
+   "fr": "Quel plat de ton pays aimes-tu ?",
+   "de": "Welches Essen aus deinem Land magst du?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-003",
+  "topic": "culture_questions",
+  "level": "A1",
+  "text": {
+   "en": "What music do you like?",
+   "it": "Che musica ti piace?",
+   "es": "¿Qué música te gusta?",
+   "pt": "De que música gostas?",
+   "pt_BR": "De que música você gosta?",
+   "fr": "Quelle musique aimes-tu ?",
+   "de": "Welche Musik magst du?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-004",
+  "topic": "culture_questions",
+  "level": "A1",
+  "text": {
+   "en": "Do you have a national dish?",
+   "it": "Avete un piatto nazionale?",
+   "es": "¿Tenéis un plato nacional?",
+   "pt": "Têm um prato nacional?",
+   "pt_BR": "Vocês têm um prato nacional?",
+   "fr": "Avez-vous un plat national ?",
+   "de": "Habt ihr ein Nationalgericht?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-005",
+  "topic": "culture_questions",
+  "level": "A1",
+  "text": {
+   "en": "What is your favorite holiday?",
+   "it": "Qual è la tua festa preferita?",
+   "es": "¿Cuál es tu fiesta favorita?",
+   "pt": "Qual é a tua festa preferida?",
+   "pt_BR": "Qual é a sua festa preferida?",
+   "fr": "Quelle est ta fête préférée ?",
+   "de": "Was ist dein liebster Feiertag?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-006",
+  "topic": "culture_questions",
+  "level": "A1",
+  "text": {
+   "en": "What language do people speak in your city?",
+   "it": "Che lingua si parla nella tua città?",
+   "es": "¿Qué idioma se habla en tu ciudad?",
+   "pt": "Que língua se fala na tua cidade?",
+   "pt_BR": "Que língua se fala na sua cidade?",
+   "fr": "Quelle langue parle-t-on dans ta ville ?",
+   "de": "Welche Sprache spricht man in deiner Stadt?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-007",
+  "topic": "culture_questions",
+  "level": "A1",
+  "text": {
+   "en": "Is your city big or small?",
+   "it": "La tua città è grande o piccola?",
+   "es": "¿Tu ciudad es grande o pequeña?",
+   "pt": "A tua cidade é grande ou pequena?",
+   "pt_BR": "A sua cidade é grande ou pequena?",
+   "fr": "Ta ville est-elle grande ou petite ?",
+   "de": "Ist deine Stadt groß oder klein?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-008",
+  "topic": "culture_questions",
+  "level": "A1",
+  "text": {
+   "en": "What do you eat for breakfast?",
+   "it": "Cosa mangi a colazione?",
+   "es": "¿Qué desayunas?",
+   "pt": "O que comes ao pequeno-almoço?",
+   "pt_BR": "O que você come no café da manhã?",
+   "fr": "Que manges-tu au petit-déjeuner ?",
+   "de": "Was isst du zum Frühstück?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-009",
+  "topic": "culture_questions",
+  "level": "A1",
+  "text": {
+   "en": "Do you celebrate birthdays?",
+   "it": "Festeggiate i compleanni?",
+   "es": "¿Celebráis los cumpleaños?",
+   "pt": "Celebram os aniversários?",
+   "pt_BR": "Vocês comemoram os aniversários?",
+   "fr": "Fêtez-vous les anniversaires ?",
+   "de": "Feiert ihr Geburtstage?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-010",
+  "topic": "culture_questions",
+  "level": "A1",
+  "text": {
+   "en": "What is a popular sport in your country?",
+   "it": "Qual è uno sport popolare nel tuo paese?",
+   "es": "¿Cuál es un deporte popular en tu país?",
+   "pt": "Qual é um desporto popular no teu país?",
+   "pt_BR": "Qual é um esporte popular no seu país?",
+   "fr": "Quel est un sport populaire dans ton pays ?",
+   "de": "Welche Sportart ist in deinem Land beliebt?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-011",
+  "topic": "culture_questions",
+  "level": "A1",
+  "text": {
+   "en": "What is the weather like there?",
+   "it": "Che tempo fa da te?",
+   "es": "¿Qué tiempo hace allí?",
+   "pt": "Como está o tempo aí?",
+   "pt_BR": "Como está o tempo aí?",
+   "fr": "Quel temps fait-il chez toi ?",
+   "de": "Wie ist das Wetter bei dir?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-012",
+  "topic": "culture_questions",
+  "level": "A1",
+  "text": {
+   "en": "What traditional clothes do you have?",
+   "it": "Che abiti tradizionali avete?",
+   "es": "¿Qué ropa tradicional tenéis?",
+   "pt": "Que roupa tradicional têm?",
+   "pt_BR": "Que roupa tradicional vocês têm?",
+   "fr": "Quels vêtements traditionnels avez-vous ?",
+   "de": "Welche traditionelle Kleidung habt ihr?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-013",
+  "topic": "culture_questions",
+  "level": "A1",
+  "text": {
+   "en": "Do you have a favorite festival?",
+   "it": "Hai una festa preferita?",
+   "es": "¿Tienes un festival favorito?",
+   "pt": "Tens um festival preferido?",
+   "pt_BR": "Você tem um festival preferido?",
+   "fr": "As-tu un festival préféré ?",
+   "de": "Hast du ein Lieblingsfest?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-014",
+  "topic": "culture_questions",
+  "level": "A1",
+  "text": {
+   "en": "What is a typical family dinner like?",
+   "it": "Com'è una tipica cena in famiglia?",
+   "es": "¿Cómo es una cena familiar típica?",
+   "pt": "Como é um jantar de família típico?",
+   "pt_BR": "Como é um jantar em família típico?",
+   "fr": "Comment se passe un dîner de famille typique ?",
+   "de": "Wie sieht ein typisches Abendessen in der Familie aus?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-015",
+  "topic": "culture_questions",
+  "level": "A1",
+  "text": {
+   "en": "How do you say hello in your language?",
+   "it": "Come si dice ciao nella tua lingua?",
+   "es": "¿Cómo se dice hola en tu idioma?",
+   "pt": "Como se diz olá na tua língua?",
+   "pt_BR": "Como se diz oi na sua língua?",
+   "fr": "Comment dit-on bonjour dans ta langue ?",
+   "de": "Wie sagt man Hallo in deiner Sprache?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-016",
+  "topic": "culture_questions",
+  "level": "A2",
+  "text": {
+   "en": "What do people usually do on weekends in your city?",
+   "it": "Cosa fa di solito la gente nel fine settimana nella tua città?",
+   "es": "¿Qué suele hacer la gente los fines de semana en tu ciudad?",
+   "pt": "O que costuma fazer-se ao fim de semana na tua cidade?",
+   "pt_BR": "O que as pessoas costumam fazer nos fins de semana na sua cidade?",
+   "fr": "Que fait-on d'habitude le week-end dans ta ville ?",
+   "de": "Was macht man in deiner Stadt normalerweise am Wochenende?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-017",
+  "topic": "culture_questions",
+  "level": "A2",
+  "text": {
+   "en": "Is there a traditional dance in your region?",
+   "it": "C'è una danza tradizionale nella tua regione?",
+   "es": "¿Hay un baile tradicional en tu región?",
+   "pt": "Há uma dança tradicional na tua região?",
+   "pt_BR": "Existe uma dança tradicional na sua região?",
+   "fr": "Y a-t-il une danse traditionnelle dans ta région ?",
+   "de": "Gibt es in deiner Region einen traditionellen Tanz?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-018",
+  "topic": "culture_questions",
+  "level": "A2",
+  "text": {
+   "en": "How do you celebrate New Year in your country?",
+   "it": "Come festeggiate il Capodanno nel tuo paese?",
+   "es": "¿Cómo celebráis el Año Nuevo en tu país?",
+   "pt": "Como celebram o Ano Novo no teu país?",
+   "pt_BR": "Como vocês comemoram o Ano-Novo no seu país?",
+   "fr": "Comment fêtez-vous le Nouvel An dans ton pays ?",
+   "de": "Wie feiert ihr Silvester in deinem Land?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-019",
+  "topic": "culture_questions",
+  "level": "A2",
+  "text": {
+   "en": "What is a good place to visit in your hometown?",
+   "it": "Qual è un bel posto da visitare nella tua città natale?",
+   "es": "¿Qué lugar recomiendas visitar en tu ciudad natal?",
+   "pt": "Qual é um bom sítio para visitar na tua terra natal?",
+   "pt_BR": "Qual é um bom lugar para visitar na sua cidade natal?",
+   "fr": "Quel est un bon endroit à visiter dans ta ville natale ?",
+   "de": "Welchen Ort sollte man in deiner Heimatstadt besuchen?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-020",
+  "topic": "culture_questions",
+  "level": "A2",
+  "text": {
+   "en": "Do people greet each other with a handshake or a kiss?",
+   "it": "Ci si saluta con una stretta di mano o con un bacio?",
+   "es": "¿Se saludan con un apretón de manos o con un beso?",
+   "pt": "Cumprimentam-se com um aperto de mão ou com um beijo?",
+   "pt_BR": "As pessoas se cumprimentam com um aperto de mão ou com um beijo?",
+   "fr": "Se salue-t-on avec une poignée de main ou une bise ?",
+   "de": "Begrüßt man sich mit Handschlag oder mit Küsschen?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-021",
+  "topic": "culture_questions",
+  "level": "A2",
+  "text": {
+   "en": "What time do people usually have dinner?",
+   "it": "A che ora si cena di solito?",
+   "es": "¿A qué hora se suele cenar?",
+   "pt": "A que horas se costuma jantar?",
+   "pt_BR": "A que horas as pessoas costumam jantar?",
+   "fr": "À quelle heure dîne-t-on d'habitude ?",
+   "de": "Um wie viel Uhr isst man normalerweise zu Abend?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-022",
+  "topic": "culture_questions",
+  "level": "A2",
+  "text": {
+   "en": "Can you teach me a typical expression from your region?",
+   "it": "Puoi insegnarmi un'espressione tipica della tua regione?",
+   "es": "¿Puedes enseñarme una expresión típica de tu región?",
+   "pt": "Podes ensinar-me uma expressão típica da tua região?",
+   "pt_BR": "Você pode me ensinar uma expressão típica da sua região?",
+   "fr": "Peux-tu m'apprendre une expression typique de ta région ?",
+   "de": "Kannst du mir einen typischen Ausdruck aus deiner Region beibringen?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-023",
+  "topic": "culture_questions",
+  "level": "A2",
+  "text": {
+   "en": "What is the most popular drink in your country?",
+   "it": "Qual è la bevanda più popolare nel tuo paese?",
+   "es": "¿Cuál es la bebida más popular en tu país?",
+   "pt": "Qual é a bebida mais popular no teu país?",
+   "pt_BR": "Qual é a bebida mais popular no seu país?",
+   "fr": "Quelle est la boisson la plus populaire dans ton pays ?",
+   "de": "Was ist das beliebteste Getränk in deinem Land?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-024",
+  "topic": "culture_questions",
+  "level": "A2",
+  "text": {
+   "en": "What did children play in the streets where you grew up?",
+   "it": "A cosa giocavano i bambini per strada dove sei cresciuto?",
+   "es": "¿A qué jugaban los niños en la calle donde creciste?",
+   "pt": "A que brincavam as crianças na rua onde cresceste?",
+   "pt_BR": "Com o que as crianças brincavam na rua onde você cresceu?",
+   "fr": "À quoi jouaient les enfants dans la rue où tu as grandi ?",
+   "de": "Was haben die Kinder dort, wo du aufgewachsen bist, auf der Straße gespielt?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-025",
+  "topic": "culture_questions",
+  "level": "A2",
+  "text": {
+   "en": "Which holiday do you like most and why?",
+   "it": "Quale festa ti piace di più e perché?",
+   "es": "¿Qué fiesta te gusta más y por qué?",
+   "pt": "De que festa gostas mais e porquê?",
+   "pt_BR": "De qual festa você mais gosta e por quê?",
+   "fr": "Quelle fête préfères-tu et pourquoi ?",
+   "de": "Welchen Feiertag magst du am liebsten und warum?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-026",
+  "topic": "culture_questions",
+  "level": "A2",
+  "text": {
+   "en": "Do you have any special foods for celebrations?",
+   "it": "Avete dei cibi speciali per le feste?",
+   "es": "¿Tenéis alguna comida especial para las celebraciones?",
+   "pt": "Têm alguma comida especial para as celebrações?",
+   "pt_BR": "Vocês têm alguma comida especial para as comemorações?",
+   "fr": "Avez-vous des plats spéciaux pour les fêtes ?",
+   "de": "Habt ihr besondere Gerichte für Feiern?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-027",
+  "topic": "culture_questions",
+  "level": "A2",
+  "text": {
+   "en": "How do people travel to work in your city?",
+   "it": "Come vanno al lavoro le persone nella tua città?",
+   "es": "¿Cómo va la gente al trabajo en tu ciudad?",
+   "pt": "Como é que as pessoas vão para o trabalho na tua cidade?",
+   "pt_BR": "Como as pessoas vão para o trabalho na sua cidade?",
+   "fr": "Comment les gens vont-ils au travail dans ta ville ?",
+   "de": "Wie kommen die Leute in deiner Stadt zur Arbeit?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-028",
+  "topic": "culture_questions",
+  "level": "A2",
+  "text": {
+   "en": "What should I try if I visit your country?",
+   "it": "Cosa dovrei provare se visito il tuo paese?",
+   "es": "¿Qué debería probar si visito tu país?",
+   "pt": "O que devo experimentar se visitar o teu país?",
+   "pt_BR": "O que devo experimentar se visitar o seu país?",
+   "fr": "Que devrais-je goûter si je visite ton pays ?",
+   "de": "Was sollte ich probieren, wenn ich dein Land besuche?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-029",
+  "topic": "culture_questions",
+  "level": "A2",
+  "text": {
+   "en": "Is it polite to bring a gift when you visit someone's home?",
+   "it": "È educato portare un regalo quando si va a casa di qualcuno?",
+   "es": "¿Es de buena educación llevar un regalo cuando visitas la casa de alguien?",
+   "pt": "É educado levar uma prenda quando se visita a casa de alguém?",
+   "pt_BR": "É educado levar um presente quando se visita a casa de alguém?",
+   "fr": "Est-il poli d'apporter un cadeau quand on est invité chez quelqu'un ?",
+   "de": "Ist es höflich, ein Geschenk mitzubringen, wenn man jemanden zu Hause besucht?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-030",
+  "topic": "culture_questions",
+  "level": "A2",
+  "text": {
+   "en": "What kind of films are popular in your country?",
+   "it": "Che tipo di film sono popolari nel tuo paese?",
+   "es": "¿Qué tipo de películas son populares en tu país?",
+   "pt": "Que tipo de filmes são populares no teu país?",
+   "pt_BR": "Que tipo de filmes são populares no seu país?",
+   "fr": "Quel genre de films est populaire dans ton pays ?",
+   "de": "Welche Art von Filmen ist in deinem Land beliebt?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-031",
+  "topic": "culture_questions",
+  "level": "B1",
+  "text": {
+   "en": "What are some customs that surprise visitors in your country?",
+   "it": "Quali usanze sorprendono i visitatori nel tuo paese?",
+   "es": "¿Qué costumbres sorprenden a los visitantes en tu país?",
+   "pt": "Que costumes surpreendem os visitantes no teu país?",
+   "pt_BR": "Quais costumes surpreendem os visitantes no seu país?",
+   "fr": "Quelles coutumes surprennent les visiteurs dans ton pays ?",
+   "de": "Welche Bräuche überraschen Besucher in deinem Land?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-032",
+  "topic": "culture_questions",
+  "level": "B1",
+  "text": {
+   "en": "How is a typical wedding celebrated where you live?",
+   "it": "Come si celebra un matrimonio tipico dove vivi?",
+   "es": "¿Cómo se celebra una boda típica donde vives?",
+   "pt": "Como se celebra um casamento típico onde vives?",
+   "pt_BR": "Como se comemora um casamento típico onde você mora?",
+   "fr": "Comment célèbre-t-on un mariage typique là où tu vis ?",
+   "de": "Wie wird dort, wo du lebst, eine typische Hochzeit gefeiert?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-033",
+  "topic": "culture_questions",
+  "level": "B1",
+  "text": {
+   "en": "Are there any local traditions that are disappearing?",
+   "it": "Ci sono tradizioni locali che stanno scomparendo?",
+   "es": "¿Hay tradiciones locales que se estén perdiendo?",
+   "pt": "Há tradições locais que estejam a desaparecer?",
+   "pt_BR": "Existem tradições locais que estão desaparecendo?",
+   "fr": "Y a-t-il des traditions locales qui disparaissent ?",
+   "de": "Gibt es lokale Traditionen, die verschwinden?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-034",
+  "topic": "culture_questions",
+  "level": "B1",
+  "text": {
+   "en": "How do people in your region feel about punctuality?",
+   "it": "Com'è considerata la puntualità nella tua regione?",
+   "es": "¿Cómo se ve la puntualidad en tu región?",
+   "pt": "Como é vista a pontualidade na tua região?",
+   "pt_BR": "Como a pontualidade é vista na sua região?",
+   "fr": "Comment la ponctualité est-elle perçue dans ta région ?",
+   "de": "Wie wichtig ist Pünktlichkeit in deiner Region?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-035",
+  "topic": "culture_questions",
+  "level": "B1",
+  "text": {
+   "en": "What is the story behind your favorite festival?",
+   "it": "Qual è la storia dietro la tua festa preferita?",
+   "es": "¿Cuál es la historia detrás de tu festival favorito?",
+   "pt": "Qual é a história por trás do teu festival preferido?",
+   "pt_BR": "Qual é a história por trás do seu festival preferido?",
+   "fr": "Quelle est l'histoire de ton festival préféré ?",
+   "de": "Was ist die Geschichte hinter deinem Lieblingsfest?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-036",
+  "topic": "culture_questions",
+  "level": "B1",
+  "text": {
+   "en": "How do different generations in your family see traditions differently?",
+   "it": "Come vedono le tradizioni in modo diverso le varie generazioni della tua famiglia?",
+   "es": "¿Cómo ven las tradiciones de forma distinta las generaciones de tu familia?",
+   "pt": "Como é que as diferentes gerações da tua família encaram as tradições?",
+   "pt_BR": "Como as diferentes gerações da sua família veem as tradições?",
+   "fr": "Comment les différentes générations de ta famille voient-elles les traditions ?",
+   "de": "Wie sehen die verschiedenen Generationen in deiner Familie die Traditionen?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-037",
+  "topic": "culture_questions",
+  "level": "B1",
+  "text": {
+   "en": "Which local dishes have a story or a legend behind them?",
+   "it": "Quali piatti locali hanno una storia o una leggenda alle spalle?",
+   "es": "¿Qué platos locales tienen una historia o una leyenda detrás?",
+   "pt": "Que pratos locais têm uma história ou uma lenda por trás?",
+   "pt_BR": "Quais pratos locais têm uma história ou uma lenda por trás?",
+   "fr": "Quels plats locaux ont une histoire ou une légende derrière eux ?",
+   "de": "Welche regionalen Gerichte haben eine Geschichte oder eine Legende?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-038",
+  "topic": "culture_questions",
+  "level": "B1",
+  "text": {
+   "en": "What is considered rude in your culture that might seem normal elsewhere?",
+   "it": "Cosa è considerato maleducato nella tua cultura ma potrebbe sembrare normale altrove?",
+   "es": "¿Qué se considera de mala educación en tu cultura y podría parecer normal en otros sitios?",
+   "pt": "O que é considerado indelicado na tua cultura mas pode parecer normal noutros sítios?",
+   "pt_BR": "O que é considerado indelicado na sua cultura, mas pode parecer normal em outros lugares?",
+   "fr": "Qu'est-ce qui est considéré comme impoli dans ta culture mais peut sembler normal ailleurs ?",
+   "de": "Was gilt in deiner Kultur als unhöflich, wirkt woanders aber vielleicht normal?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-039",
+  "topic": "culture_questions",
+  "level": "B1",
+  "text": {
+   "en": "How do people usually celebrate a big achievement in your family?",
+   "it": "Come si festeggia di solito un grande traguardo nella tua famiglia?",
+   "es": "¿Cómo se suele celebrar un gran logro en tu familia?",
+   "pt": "Como se costuma celebrar uma grande conquista na tua família?",
+   "pt_BR": "Como se costuma comemorar uma grande conquista na sua família?",
+   "fr": "Comment fête-t-on d'habitude une grande réussite dans ta famille ?",
+   "de": "Wie feiert man in deiner Familie normalerweise einen großen Erfolg?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-040",
+  "topic": "culture_questions",
+  "level": "B1",
+  "text": {
+   "en": "What are the differences between the north and the south of your country?",
+   "it": "Quali sono le differenze tra il nord e il sud del tuo paese?",
+   "es": "¿Qué diferencias hay entre el norte y el sur de tu país?",
+   "pt": "Quais são as diferenças entre o norte e o sul do teu país?",
+   "pt_BR": "Quais são as diferenças entre o norte e o sul do seu país?",
+   "fr": "Quelles sont les différences entre le nord et le sud de ton pays ?",
+   "de": "Was sind die Unterschiede zwischen dem Norden und dem Süden deines Landes?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-041",
+  "topic": "culture_questions",
+  "level": "B1",
+  "text": {
+   "en": "Is there a local craft or art form that your region is known for?",
+   "it": "C'è un artigianato o una forma d'arte per cui la tua regione è nota?",
+   "es": "¿Hay alguna artesanía o forma de arte por la que se conozca tu región?",
+   "pt": "Há algum artesanato ou forma de arte pelo qual a tua região seja conhecida?",
+   "pt_BR": "Existe algum artesanato ou forma de arte pela qual a sua região é conhecida?",
+   "fr": "Y a-t-il un artisanat ou un art pour lequel ta région est connue ?",
+   "de": "Gibt es ein Handwerk oder eine Kunstform, für die deine Region bekannt ist?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-042",
+  "topic": "culture_questions",
+  "level": "B1",
+  "text": {
+   "en": "How did you learn the traditions of your family?",
+   "it": "Come hai imparato le tradizioni della tua famiglia?",
+   "es": "¿Cómo aprendiste las tradiciones de tu familia?",
+   "pt": "Como aprendeste as tradições da tua família?",
+   "pt_BR": "Como você aprendeu as tradições da sua família?",
+   "fr": "Comment as-tu appris les traditions de ta famille ?",
+   "de": "Wie hast du die Traditionen deiner Familie gelernt?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-043",
+  "topic": "culture_questions",
+  "level": "B2",
+  "text": {
+   "en": "Which aspects of your culture do you think foreigners most often misunderstand?",
+   "it": "Quali aspetti della tua cultura credi che gli stranieri fraintendano più spesso?",
+   "es": "¿Qué aspectos de tu cultura crees que los extranjeros malinterpretan con más frecuencia?",
+   "pt": "Que aspetos da tua cultura achas que os estrangeiros mais interpretam mal?",
+   "pt_BR": "Quais aspectos da sua cultura você acha que os estrangeiros mais entendem errado?",
+   "fr": "Quels aspects de ta culture les étrangers comprennent-ils le plus souvent de travers, selon toi ?",
+   "de": "Welche Aspekte deiner Kultur werden deiner Meinung nach von Ausländern am häufigsten missverstanden?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-044",
+  "topic": "culture_questions",
+  "level": "B2",
+  "text": {
+   "en": "How has globalization changed the way people celebrate traditions where you live?",
+   "it": "In che modo la globalizzazione ha cambiato il modo di vivere le tradizioni dove abiti?",
+   "es": "¿Cómo ha cambiado la globalización la forma de celebrar las tradiciones donde vives?",
+   "pt": "De que forma a globalização mudou a maneira de celebrar as tradições onde vives?",
+   "pt_BR": "De que forma a globalização mudou a maneira de celebrar as tradições onde você mora?",
+   "fr": "Comment la mondialisation a-t-elle changé la façon de célébrer les traditions là où tu vis ?",
+   "de": "Wie hat die Globalisierung die Art verändert, Traditionen dort zu feiern, wo du lebst?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-045",
+  "topic": "culture_questions",
+  "level": "B2",
+  "text": {
+   "en": "What role does food play in bringing people together in your culture?",
+   "it": "Che ruolo ha il cibo nel riunire le persone nella tua cultura?",
+   "es": "¿Qué papel desempeña la comida a la hora de reunir a las personas en tu cultura?",
+   "pt": "Que papel tem a comida em juntar as pessoas na tua cultura?",
+   "pt_BR": "Que papel a comida tem em reunir as pessoas na sua cultura?",
+   "fr": "Quel rôle joue la nourriture pour rassembler les gens dans ta culture ?",
+   "de": "Welche Rolle spielt das Essen dabei, Menschen in deiner Kultur zusammenzubringen?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-046",
+  "topic": "culture_questions",
+  "level": "B2",
+  "text": {
+   "en": "How do regional dialects shape local identity in your country?",
+   "it": "In che modo i dialetti regionali influenzano l'identità locale nel tuo paese?",
+   "es": "¿Cómo influyen los dialectos regionales en la identidad local de tu país?",
+   "pt": "Como é que os dialetos regionais moldam a identidade local no teu país?",
+   "pt_BR": "Como os dialetos regionais moldam a identidade local no seu país?",
+   "fr": "Comment les dialectes régionaux façonnent-ils l'identité locale dans ton pays ?",
+   "de": "Wie prägen regionale Dialekte die lokale Identität in deinem Land?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-047",
+  "topic": "culture_questions",
+  "level": "B2",
+  "text": {
+   "en": "Are there customs from your culture that you would like others to know about?",
+   "it": "Ci sono usanze della tua cultura che vorresti far conoscere agli altri?",
+   "es": "¿Hay costumbres de tu cultura que te gustaría que otros conocieran?",
+   "pt": "Há costumes da tua cultura que gostasses que os outros conhecessem?",
+   "pt_BR": "Existem costumes da sua cultura que você gostaria que os outros conhecessem?",
+   "fr": "Y a-t-il des coutumes de ta culture que tu aimerais faire connaître aux autres ?",
+   "de": "Gibt es Bräuche aus deiner Kultur, die andere deiner Meinung nach kennen sollten?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-048",
+  "topic": "culture_questions",
+  "level": "B2",
+  "text": {
+   "en": "What books or authors best capture the spirit of your country?",
+   "it": "Quali libri o autori rappresentano meglio lo spirito del tuo paese?",
+   "es": "¿Qué libros o autores captan mejor el espíritu de tu país?",
+   "pt": "Que livros ou autores melhor captam o espírito do teu país?",
+   "pt_BR": "Quais livros ou autores melhor captam o espírito do seu país?",
+   "fr": "Quels livres ou auteurs expriment le mieux l'esprit de ton pays ?",
+   "de": "Welche Bücher oder Autoren fangen den Geist deines Landes am besten ein?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-049",
+  "topic": "culture_questions",
+  "level": "B2",
+  "text": {
+   "en": "How do the traditions in your hometown differ from those in the capital?",
+   "it": "In che cosa le tradizioni della tua città natale differiscono da quelle della capitale?",
+   "es": "¿En qué se diferencian las tradiciones de tu ciudad natal de las de la capital?",
+   "pt": "Em que é que as tradições da tua terra natal diferem das da capital?",
+   "pt_BR": "Em que as tradições da sua cidade natal diferem das da capital?",
+   "fr": "En quoi les traditions de ta ville natale diffèrent-elles de celles de la capitale ?",
+   "de": "Wie unterscheiden sich die Traditionen deiner Heimatstadt von denen der Hauptstadt?"
+  }
+ },
+ {
+  "id": "ss-culture_questions-050",
+  "topic": "culture_questions",
+  "level": "B2",
+  "text": {
+   "en": "What cultural habit did you find most surprising when you first visited another country?",
+   "it": "Quale abitudine culturale ti ha sorpreso di più la prima volta che hai visitato un altro paese?",
+   "es": "¿Qué costumbre cultural te sorprendió más la primera vez que visitaste otro país?",
+   "pt": "Que hábito cultural mais te surpreendeu na primeira vez que visitaste outro país?",
+   "pt_BR": "Qual hábito cultural mais surpreendeu você na primeira vez que visitou outro país?",
+   "fr": "Quelle habitude culturelle t'a le plus surpris(e) la première fois que tu as visité un autre pays ?",
+   "de": "Welche kulturelle Gewohnheit hat dich bei deinem ersten Besuch in einem anderen Land am meisten überrascht?"
+  }
+ },
+ {
+  "id": "ss-humor_reactions-001",
+  "topic": "humor_reactions",
+  "level": "A1",
+  "text": {
+   "en": "Haha, that's funny!",
+   "it": "Haha, che ridere!",
+   "es": "¡Jaja, qué gracioso!",
+   "pt": "Haha, que engraçado!",
+   "pt_BR": "Haha, que engraçado!",
+   "fr": "Haha, c'est drôle !",
+   "de": "Haha, das ist lustig!"
+  }
+ },
+ {
+  "id": "ss-humor_reactions-002",
+  "topic": "humor_reactions",
+  "level": "A1",
+  "text": {
+   "en": "I'm laughing!",
+   "it": "Sto ridendo!",
+   "es": "¡Me estoy riendo!",
+   "pt": "Estou a rir!",
+   "pt_BR": "Estou rindo!",
+   "fr": "Je rigole !",
+   "de": "Ich lache!"
+  }
+ },
+ {
+  "id": "ss-humor_reactions-003",
+  "topic": "humor_reactions",
+  "level": "A1",
+  "text": {
+   "en": "Good one!",
+   "it": "Bella questa!",
+   "es": "¡Buena!",
+   "pt": "Boa!",
+   "pt_BR": "Boa!",
+   "fr": "Bien joué !",
+   "de": "Guter Witz!"
+  }
+ },
+ {
+  "id": "ss-humor_reactions-004",
+  "topic": "humor_reactions",
+  "level": "A1",
+  "text": {
+   "en": "That made me smile.",
+   "it": "Mi hai fatto sorridere.",
+   "es": "Me has hecho sonreír.",
+   "pt": "Fizeste-me sorrir.",
+   "pt_BR": "Você me fez sorrir.",
+   "fr": "Ça m'a fait sourire.",
+   "de": "Das hat mich zum Lächeln gebracht."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-005",
+  "topic": "humor_reactions",
+  "level": "A1",
+  "text": {
+   "en": "You are so funny.",
+   "it": "Sei troppo simpatico e divertente.",
+   "es": "Eres muy gracioso.",
+   "pt": "Tu és muito engraçado.",
+   "pt_BR": "Você é muito engraçado.",
+   "fr": "Tu es très drôle.",
+   "de": "Du bist so witzig."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-006",
+  "topic": "humor_reactions",
+  "level": "A1",
+  "text": {
+   "en": "Ha ha ha!",
+   "it": "Ah ah ah!",
+   "es": "¡Ja, ja, ja!",
+   "pt": "Ah ah ah!",
+   "pt_BR": "Ha ha ha!",
+   "fr": "Ah ah ah !",
+   "de": "Ha ha ha!"
+  }
+ },
+ {
+  "id": "ss-humor_reactions-007",
+  "topic": "humor_reactions",
+  "level": "A1",
+  "text": {
+   "en": "That is a nice joke.",
+   "it": "È una bella battuta.",
+   "es": "Es un buen chiste.",
+   "pt": "É uma boa piada.",
+   "pt_BR": "É uma boa piada.",
+   "fr": "C'est une bonne blague.",
+   "de": "Das ist ein guter Witz."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-008",
+  "topic": "humor_reactions",
+  "level": "A1",
+  "text": {
+   "en": "I like your joke.",
+   "it": "Mi piace la tua battuta.",
+   "es": "Me gusta tu chiste.",
+   "pt": "Gosto da tua piada.",
+   "pt_BR": "Gostei da sua piada.",
+   "fr": "J'aime ta blague.",
+   "de": "Ich mag deinen Witz."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-009",
+  "topic": "humor_reactions",
+  "level": "A1",
+  "text": {
+   "en": "Very funny!",
+   "it": "Molto divertente!",
+   "es": "¡Muy divertido!",
+   "pt": "Muito divertido!",
+   "pt_BR": "Muito engraçado!",
+   "fr": "Très drôle !",
+   "de": "Sehr lustig!"
+  }
+ },
+ {
+  "id": "ss-humor_reactions-010",
+  "topic": "humor_reactions",
+  "level": "A1",
+  "text": {
+   "en": "I can't stop laughing.",
+   "it": "Non riesco a smettere di ridere.",
+   "es": "No puedo parar de reír.",
+   "pt": "Não consigo parar de rir.",
+   "pt_BR": "Não consigo parar de rir.",
+   "fr": "Je n'arrive pas à m'arrêter de rire.",
+   "de": "Ich kann nicht aufhören zu lachen."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-011",
+  "topic": "humor_reactions",
+  "level": "A1",
+  "text": {
+   "en": "Tell me another one!",
+   "it": "Raccontamene un'altra!",
+   "es": "¡Cuéntame otro!",
+   "pt": "Conta-me outra!",
+   "pt_BR": "Conta outra pra mim!",
+   "fr": "Raconte-m'en une autre !",
+   "de": "Erzähl mir noch einen!"
+  }
+ },
+ {
+  "id": "ss-humor_reactions-012",
+  "topic": "humor_reactions",
+  "level": "A1",
+  "text": {
+   "en": "That's silly, but I like it.",
+   "it": "È sciocca, ma mi piace.",
+   "es": "Es una tontería, pero me gusta.",
+   "pt": "É parvo, mas gosto.",
+   "pt_BR": "É bobo, mas eu gosto.",
+   "fr": "C'est bête, mais j'aime bien.",
+   "de": "Das ist albern, aber ich mag es."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-013",
+  "topic": "humor_reactions",
+  "level": "A1",
+  "text": {
+   "en": "Haha, I love it.",
+   "it": "Haha, mi piace tanto.",
+   "es": "Jaja, me encanta.",
+   "pt": "Haha, adorei.",
+   "pt_BR": "Haha, adorei.",
+   "fr": "Haha, j'adore.",
+   "de": "Haha, ich liebe es."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-014",
+  "topic": "humor_reactions",
+  "level": "A1",
+  "text": {
+   "en": "Funny story!",
+   "it": "Che storia divertente!",
+   "es": "¡Qué historia tan divertida!",
+   "pt": "Que história engraçada!",
+   "pt_BR": "Que história engraçada!",
+   "fr": "Quelle histoire drôle !",
+   "de": "Lustige Geschichte!"
+  }
+ },
+ {
+  "id": "ss-humor_reactions-015",
+  "topic": "humor_reactions",
+  "level": "A1",
+  "text": {
+   "en": "You made my day.",
+   "it": "Mi hai rallegrato la giornata.",
+   "es": "Me has alegrado el día.",
+   "pt": "Alegraste-me o dia.",
+   "pt_BR": "Você alegrou o meu dia.",
+   "fr": "Tu as égayé ma journée.",
+   "de": "Du hast mir den Tag versüßt."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-016",
+  "topic": "humor_reactions",
+  "level": "A2",
+  "text": {
+   "en": "I didn't get the joke. Can you explain it?",
+   "it": "Non ho capito la battuta. Me la puoi spiegare?",
+   "es": "No he entendido el chiste. ¿Me lo puedes explicar?",
+   "pt": "Não percebi a piada. Podes explicá-la?",
+   "pt_BR": "Não entendi a piada. Você pode explicar?",
+   "fr": "Je n'ai pas compris la blague. Tu peux me l'expliquer ?",
+   "de": "Ich habe den Witz nicht verstanden. Kannst du ihn mir erklären?"
+  }
+ },
+ {
+  "id": "ss-humor_reactions-017",
+  "topic": "humor_reactions",
+  "level": "A2",
+  "text": {
+   "en": "That joke is new to me. I love it!",
+   "it": "Questa battuta non la conoscevo. Mi piace!",
+   "es": "Ese chiste no lo conocía. ¡Me encanta!",
+   "pt": "Essa piada era nova para mim. Adorei!",
+   "pt_BR": "Essa piada era nova pra mim. Adorei!",
+   "fr": "Cette blague, je ne la connaissais pas. Elle est super !",
+   "de": "Diesen Witz kannte ich noch nicht. Ich liebe ihn!"
+  }
+ },
+ {
+  "id": "ss-humor_reactions-018",
+  "topic": "humor_reactions",
+  "level": "A2",
+  "text": {
+   "en": "Haha, now I'm laughing out loud.",
+   "it": "Haha, ora sto ridendo a crepapelle.",
+   "es": "Jaja, ahora me estoy riendo a carcajadas.",
+   "pt": "Haha, agora estou a rir às gargalhadas.",
+   "pt_BR": "Haha, agora estou rindo alto.",
+   "fr": "Haha, là je rigole aux éclats.",
+   "de": "Haha, jetzt lache ich laut los."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-019",
+  "topic": "humor_reactions",
+  "level": "A2",
+  "text": {
+   "en": "Your sense of humor is great.",
+   "it": "Hai un gran senso dell'umorismo.",
+   "es": "Tienes un gran sentido del humor.",
+   "pt": "Tens um grande sentido de humor.",
+   "pt_BR": "Você tem um ótimo senso de humor.",
+   "fr": "Tu as un super sens de l'humour.",
+   "de": "Du hast einen tollen Sinn für Humor."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-020",
+  "topic": "humor_reactions",
+  "level": "A2",
+  "text": {
+   "en": "We have a similar joke in my country.",
+   "it": "Nel mio paese c'è una battuta simile.",
+   "es": "En mi país hay un chiste parecido.",
+   "pt": "No meu país há uma piada parecida.",
+   "pt_BR": "No meu país tem uma piada parecida.",
+   "fr": "Dans mon pays, il y a une blague similaire.",
+   "de": "In meinem Land gibt es einen ähnlichen Witz."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-021",
+  "topic": "humor_reactions",
+  "level": "A2",
+  "text": {
+   "en": "I laughed so much that my stomach hurts.",
+   "it": "Ho riso così tanto che mi fa male la pancia.",
+   "es": "Me he reído tanto que me duele la barriga.",
+   "pt": "Ri tanto que me dói a barriga.",
+   "pt_BR": "Ri tanto que minha barriga está doendo.",
+   "fr": "J'ai tellement ri que j'ai mal au ventre.",
+   "de": "Ich habe so viel gelacht, dass mir der Bauch wehtut."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-022",
+  "topic": "humor_reactions",
+  "level": "A2",
+  "text": {
+   "en": "That was so unexpected!",
+   "it": "Non me l'aspettavo proprio!",
+   "es": "¡Eso fue muy inesperado!",
+   "pt": "Foi tão inesperado!",
+   "pt_BR": "Foi tão inesperado!",
+   "fr": "C'était tellement inattendu !",
+   "de": "Das war so unerwartet!"
+  }
+ },
+ {
+  "id": "ss-humor_reactions-023",
+  "topic": "humor_reactions",
+  "level": "A2",
+  "text": {
+   "en": "I'm going to tell that joke to my friends.",
+   "it": "Racconterò questa battuta ai miei amici.",
+   "es": "Voy a contarles ese chiste a mis amigos.",
+   "pt": "Vou contar essa piada aos meus amigos.",
+   "pt_BR": "Vou contar essa piada pros meus amigos.",
+   "fr": "Je vais raconter cette blague à mes amis.",
+   "de": "Ich werde diesen Witz meinen Freunden erzählen."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-024",
+  "topic": "humor_reactions",
+  "level": "A2",
+  "text": {
+   "en": "It sounds funnier in your language.",
+   "it": "Nella tua lingua suona più divertente.",
+   "es": "En tu idioma suena más gracioso.",
+   "pt": "Na tua língua soa mais engraçado.",
+   "pt_BR": "Na sua língua soa mais engraçado.",
+   "fr": "Dans ta langue, ça sonne plus drôle.",
+   "de": "In deiner Sprache klingt es lustiger."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-025",
+  "topic": "humor_reactions",
+  "level": "A2",
+  "text": {
+   "en": "Sorry, I think the joke got lost in translation.",
+   "it": "Scusa, credo che la battuta si sia persa nella traduzione.",
+   "es": "Perdona, creo que el chiste se perdió en la traducción.",
+   "pt": "Desculpa, acho que a piada se perdeu na tradução.",
+   "pt_BR": "Desculpa, acho que a piada se perdeu na tradução.",
+   "fr": "Désolé(e), je crois que la blague s'est perdue à la traduction.",
+   "de": "Tut mir leid, ich glaube, der Witz ist bei der Übersetzung verloren gegangen."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-026",
+  "topic": "humor_reactions",
+  "level": "A2",
+  "text": {
+   "en": "Do people say that as a joke in your country too?",
+   "it": "Anche nel tuo paese si dice questo per scherzo?",
+   "es": "¿En tu país también se dice eso en broma?",
+   "pt": "No teu país também se diz isso por brincadeira?",
+   "pt_BR": "No seu país também se diz isso de brincadeira?",
+   "fr": "Dans ton pays aussi, on dit ça pour plaisanter ?",
+   "de": "Sagt man das in deinem Land auch im Spaß?"
+  }
+ },
+ {
+  "id": "ss-humor_reactions-027",
+  "topic": "humor_reactions",
+  "level": "A2",
+  "text": {
+   "en": "That made my morning better.",
+   "it": "Mi hai fatto iniziare meglio la mattina.",
+   "es": "Me has mejorado la mañana.",
+   "pt": "Melhoraste-me a manhã.",
+   "pt_BR": "Você melhorou a minha manhã.",
+   "fr": "Ça a rendu ma matinée meilleure.",
+   "de": "Das hat meinen Morgen besser gemacht."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-028",
+  "topic": "humor_reactions",
+  "level": "A2",
+  "text": {
+   "en": "I think I understood it. Was it a play on words?",
+   "it": "Credo di aver capito. Era un gioco di parole?",
+   "es": "Creo que lo he entendido. ¿Era un juego de palabras?",
+   "pt": "Acho que percebi. Era um jogo de palavras?",
+   "pt_BR": "Acho que entendi. Era um jogo de palavras?",
+   "fr": "Je crois que j'ai compris. C'était un jeu de mots ?",
+   "de": "Ich glaube, ich habe es verstanden. War das ein Wortspiel?"
+  }
+ },
+ {
+  "id": "ss-humor_reactions-029",
+  "topic": "humor_reactions",
+  "level": "A2",
+  "text": {
+   "en": "Okay, that one was really bad, but I laughed anyway.",
+   "it": "Ok, questa era davvero pessima, ma ho riso lo stesso.",
+   "es": "Vale, ese era malísimo, pero me reí igual.",
+   "pt": "Está bem, essa era mesmo má, mas ri-me na mesma.",
+   "pt_BR": "Tá bom, essa foi muito ruim, mas eu ri mesmo assim.",
+   "fr": "Bon, celle-là était vraiment nulle, mais j'ai ri quand même.",
+   "de": "Okay, der war richtig schlecht, aber ich habe trotzdem gelacht."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-030",
+  "topic": "humor_reactions",
+  "level": "A2",
+  "text": {
+   "en": "Can you send me more jokes like that?",
+   "it": "Puoi mandarmi altre battute così?",
+   "es": "¿Me puedes mandar más chistes como ese?",
+   "pt": "Podes enviar-me mais piadas assim?",
+   "pt_BR": "Você pode me mandar mais piadas assim?",
+   "fr": "Tu peux m'envoyer d'autres blagues comme ça ?",
+   "de": "Kannst du mir mehr Witze wie diesen schicken?"
+  }
+ },
+ {
+  "id": "ss-humor_reactions-031",
+  "topic": "humor_reactions",
+  "level": "B1",
+  "text": {
+   "en": "Humor is hard to translate, but I think I got it, and it's hilarious.",
+   "it": "L'umorismo è difficile da tradurre, ma credo di aver capito ed è esilarante.",
+   "es": "El humor es difícil de traducir, pero creo que lo he captado y es hilarante.",
+   "pt": "O humor é difícil de traduzir, mas acho que percebi e é hilariante.",
+   "pt_BR": "O humor é difícil de traduzir, mas acho que entendi e é hilário.",
+   "fr": "L'humour est difficile à traduire, mais je crois avoir compris, et c'est hilarant.",
+   "de": "Humor lässt sich schwer übersetzen, aber ich glaube, ich habe es verstanden, und es ist urkomisch."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-032",
+  "topic": "humor_reactions",
+  "level": "B1",
+  "text": {
+   "en": "That's the kind of joke that gets funnier the more I think about it.",
+   "it": "È il tipo di battuta che fa ridere sempre di più quanto più ci penso.",
+   "es": "Es de esos chistes que tienen más gracia cuanto más lo pienso.",
+   "pt": "É o tipo de piada que fica mais engraçada quanto mais penso nela.",
+   "pt_BR": "É o tipo de piada que fica mais engraçada quanto mais eu penso nela.",
+   "fr": "C'est le genre de blague qui devient plus drôle plus j'y pense.",
+   "de": "Das ist so ein Witz, der immer lustiger wird, je länger ich darüber nachdenke."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-033",
+  "topic": "humor_reactions",
+  "level": "B1",
+  "text": {
+   "en": "I love how people in your country joke about everyday things.",
+   "it": "Mi piace come nel tuo paese si scherza sulle cose di tutti i giorni.",
+   "es": "Me encanta cómo bromea la gente de tu país sobre las cosas cotidianas.",
+   "pt": "Adoro como as pessoas no teu país brincam com as coisas do dia a dia.",
+   "pt_BR": "Adoro como as pessoas no seu país brincam com as coisas do dia a dia.",
+   "fr": "J'adore la façon dont les gens de ton pays plaisantent sur les choses du quotidien.",
+   "de": "Ich liebe es, wie die Leute in deinem Land über alltägliche Dinge scherzen."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-034",
+  "topic": "humor_reactions",
+  "level": "B1",
+  "text": {
+   "en": "Wait, was that a joke or were you serious? You got me!",
+   "it": "Aspetta, era una battuta o dicevi sul serio? Mi hai fregato!",
+   "es": "Espera, ¿era una broma o hablabas en serio? ¡Me has pillado!",
+   "pt": "Espera, era uma piada ou estavas a falar a sério? Apanhaste-me!",
+   "pt_BR": "Peraí, era uma piada ou você estava falando sério? Você me pegou!",
+   "fr": "Attends, c'était une blague ou tu étais sérieux(se) ? Tu m'as eu(e) !",
+   "de": "Moment, war das ein Witz oder war das ernst gemeint? Du hast mich erwischt!"
+  }
+ },
+ {
+  "id": "ss-humor_reactions-035",
+  "topic": "humor_reactions",
+  "level": "B1",
+  "text": {
+   "en": "I'm still smiling about that story from earlier.",
+   "it": "Sto ancora sorridendo per quella storia di prima.",
+   "es": "Sigo sonriendo por esa historia de antes.",
+   "pt": "Ainda estou a sorrir por causa daquela história de há bocado.",
+   "pt_BR": "Ainda estou sorrindo por causa daquela história de antes.",
+   "fr": "Je souris encore à cause de cette histoire de tout à l'heure.",
+   "de": "Ich muss immer noch über diese Geschichte von vorhin lächeln."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-036",
+  "topic": "humor_reactions",
+  "level": "B1",
+  "text": {
+   "en": "That pun doesn't work in my language, but I enjoyed the idea.",
+   "it": "Questo gioco di parole nella mia lingua non funziona, ma l'idea mi è piaciuta.",
+   "es": "Ese juego de palabras no funciona en mi idioma, pero me gustó la idea.",
+   "pt": "Esse trocadilho não funciona na minha língua, mas gostei da ideia.",
+   "pt_BR": "Esse trocadilho não funciona na minha língua, mas gostei da ideia.",
+   "fr": "Ce jeu de mots ne marche pas dans ma langue, mais l'idée m'a plu.",
+   "de": "Dieses Wortspiel funktioniert in meiner Sprache nicht, aber die Idee hat mir gefallen."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-037",
+  "topic": "humor_reactions",
+  "level": "B1",
+  "text": {
+   "en": "You have a dry sense of humor, and I really like it.",
+   "it": "Hai un umorismo secco e mi piace molto.",
+   "es": "Tienes un humor seco y me gusta mucho.",
+   "pt": "Tens um humor seco e eu gosto muito.",
+   "pt_BR": "Você tem um humor seco e eu gosto muito.",
+   "fr": "Tu as un humour pince-sans-rire, et j'aime beaucoup ça.",
+   "de": "Du hast einen trockenen Humor, und der gefällt mir sehr."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-038",
+  "topic": "humor_reactions",
+  "level": "B1",
+  "text": {
+   "en": "Teach me a funny phrase in your language so I can surprise my friends.",
+   "it": "Insegnami una frase divertente nella tua lingua così sorprendo i miei amici.",
+   "es": "Enséñame una frase graciosa en tu idioma para sorprender a mis amigos.",
+   "pt": "Ensina-me uma frase engraçada na tua língua para surpreender os meus amigos.",
+   "pt_BR": "Me ensina uma frase engraçada na sua língua pra eu surpreender meus amigos.",
+   "fr": "Apprends-moi une phrase drôle dans ta langue pour surprendre mes amis.",
+   "de": "Bring mir einen lustigen Satz in deiner Sprache bei, damit ich meine Freunde überraschen kann."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-039",
+  "topic": "humor_reactions",
+  "level": "B1",
+  "text": {
+   "en": "I almost spit out my coffee when I read that.",
+   "it": "Quando l'ho letto per poco non sputavo il caffè.",
+   "es": "Casi escupo el café cuando lo leí.",
+   "pt": "Quase deitei o café fora quando li isso.",
+   "pt_BR": "Quase cuspi o café quando li isso.",
+   "fr": "J'ai failli recracher mon café en lisant ça.",
+   "de": "Ich hätte fast meinen Kaffee ausgespuckt, als ich das gelesen habe."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-040",
+  "topic": "humor_reactions",
+  "level": "B1",
+  "text": {
+   "en": "We say something similar, but your version is much funnier.",
+   "it": "Noi diciamo una cosa simile, ma la tua versione è molto più divertente.",
+   "es": "Nosotros decimos algo parecido, pero tu versión es mucho más graciosa.",
+   "pt": "Nós dizemos algo parecido, mas a tua versão é muito mais engraçada.",
+   "pt_BR": "A gente diz algo parecido, mas a sua versão é muito mais engraçada.",
+   "fr": "On dit quelque chose de similaire, mais ta version est bien plus drôle.",
+   "de": "Wir sagen etwas Ähnliches, aber deine Version ist viel lustiger."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-041",
+  "topic": "humor_reactions",
+  "level": "B1",
+  "text": {
+   "en": "Jokes like that are why I love learning languages.",
+   "it": "Battute come questa sono il motivo per cui amo imparare le lingue.",
+   "es": "Chistes como ese son la razón por la que me encanta aprender idiomas.",
+   "pt": "Piadas como essa são a razão pela qual adoro aprender línguas.",
+   "pt_BR": "Piadas como essa são o motivo de eu adorar aprender idiomas.",
+   "fr": "Des blagues comme ça, voilà pourquoi j'aime apprendre les langues.",
+   "de": "Solche Witze sind der Grund, warum ich Sprachenlernen liebe."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-042",
+  "topic": "humor_reactions",
+  "level": "B1",
+  "text": {
+   "en": "I had no idea that word could be so funny. Thanks for the lesson!",
+   "it": "Non avevo idea che questa parola potesse essere così divertente. Grazie per la lezione!",
+   "es": "No tenía ni idea de que esa palabra pudiera ser tan graciosa. ¡Gracias por la lección!",
+   "pt": "Não fazia ideia de que essa palavra podia ser tão engraçada. Obrigado pela lição!",
+   "pt_BR": "Eu não fazia ideia de que essa palavra podia ser tão engraçada. Obrigado pela lição!",
+   "fr": "Je ne savais pas que ce mot pouvait être aussi drôle. Merci pour la leçon !",
+   "de": "Ich hatte keine Ahnung, dass dieses Wort so lustig sein kann. Danke für die Lektion!"
+  }
+ },
+ {
+  "id": "ss-humor_reactions-043",
+  "topic": "humor_reactions",
+  "level": "B2",
+  "text": {
+   "en": "It's fascinating how what makes people laugh changes from one culture to another.",
+   "it": "È affascinante come ciò che fa ridere cambi da una cultura all'altra.",
+   "es": "Es fascinante cómo lo que hace reír a la gente cambia de una cultura a otra.",
+   "pt": "É fascinante como aquilo que faz as pessoas rir muda de cultura para cultura.",
+   "pt_BR": "É fascinante como aquilo que faz as pessoas rirem muda de uma cultura para outra.",
+   "fr": "C'est fascinant de voir à quel point ce qui fait rire change d'une culture à l'autre.",
+   "de": "Es ist faszinierend, wie sich das, worüber Menschen lachen, von Kultur zu Kultur unterscheidet."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-044",
+  "topic": "humor_reactions",
+  "level": "B2",
+  "text": {
+   "en": "I appreciate that you explained the wordplay, because now it's even funnier.",
+   "it": "Apprezzo che tu mi abbia spiegato il gioco di parole, perché ora è ancora più divertente.",
+   "es": "Te agradezco que me hayas explicado el juego de palabras, porque ahora tiene aún más gracia.",
+   "pt": "Agradeço teres explicado o jogo de palavras, porque agora tem ainda mais piada.",
+   "pt_BR": "Agradeço por você ter explicado o jogo de palavras, porque agora ficou ainda mais engraçado.",
+   "fr": "Merci d'avoir expliqué le jeu de mots, parce que maintenant c'est encore plus drôle.",
+   "de": "Danke, dass du das Wortspiel erklärt hast, denn jetzt ist es noch lustiger."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-045",
+  "topic": "humor_reactions",
+  "level": "B2",
+  "text": {
+   "en": "Your story had perfect timing, and I couldn't help but laugh.",
+   "it": "La tua storia aveva un tempismo perfetto e non ho potuto fare a meno di ridere.",
+   "es": "Tu historia tenía un timing perfecto y no pude evitar reírme.",
+   "pt": "A tua história teve um timing perfeito e não consegui evitar rir.",
+   "pt_BR": "A sua história teve um timing perfeito e eu não consegui deixar de rir.",
+   "fr": "Ton histoire avait un timing parfait et je n'ai pas pu m'empêcher de rire.",
+   "de": "Deine Geschichte hatte ein perfektes Timing, und ich musste einfach lachen."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-046",
+  "topic": "humor_reactions",
+  "level": "B2",
+  "text": {
+   "en": "That was brilliantly ironic. Is that type of humor common where you live?",
+   "it": "È stata una battuta di una bellissima ironia. Questo tipo di umorismo è comune dove vivi?",
+   "es": "Eso fue brillantemente irónico. ¿Es común ese tipo de humor donde vives?",
+   "pt": "Isso foi brilhantemente irónico. Esse tipo de humor é comum onde vives?",
+   "pt_BR": "Isso foi brilhantemente irônico. Esse tipo de humor é comum onde você mora?",
+   "fr": "C'était brillamment ironique. Ce type d'humour est-il courant là où tu vis ?",
+   "de": "Das war brillant ironisch. Ist diese Art von Humor dort, wo du lebst, verbreitet?"
+  }
+ },
+ {
+  "id": "ss-humor_reactions-047",
+  "topic": "humor_reactions",
+  "level": "B2",
+  "text": {
+   "en": "I think the joke works better in your language, but the idea still made me laugh.",
+   "it": "Credo che la battuta funzioni meglio nella tua lingua, ma l'idea mi ha fatto ridere lo stesso.",
+   "es": "Creo que el chiste funciona mejor en tu idioma, pero la idea me hizo reír igualmente.",
+   "pt": "Acho que a piada resulta melhor na tua língua, mas a ideia fez-me rir na mesma.",
+   "pt_BR": "Acho que a piada funciona melhor na sua língua, mas a ideia me fez rir mesmo assim.",
+   "fr": "Je pense que la blague marche mieux dans ta langue, mais l'idée m'a quand même fait rire.",
+   "de": "Ich glaube, der Witz funktioniert in deiner Sprache besser, aber die Idee hat mich trotzdem zum Lachen gebracht."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-048",
+  "topic": "humor_reactions",
+  "level": "B2",
+  "text": {
+   "en": "Humor like this reminds me that laughing together needs no translation.",
+   "it": "Un umorismo così mi ricorda che ridere insieme non ha bisogno di traduzione.",
+   "es": "Un humor así me recuerda que reír juntos no necesita traducción.",
+   "pt": "Um humor assim lembra-me que rir em conjunto não precisa de tradução.",
+   "pt_BR": "Um humor assim me lembra que rir junto não precisa de tradução.",
+   "fr": "Un humour comme celui-ci me rappelle que rire ensemble n'a pas besoin de traduction.",
+   "de": "Humor wie dieser erinnert mich daran, dass gemeinsames Lachen keine Übersetzung braucht."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-049",
+  "topic": "humor_reactions",
+  "level": "B2",
+  "text": {
+   "en": "I'm impressed that you can be that funny in a second language.",
+   "it": "Sono colpito dal fatto che tu riesca a essere così divertente in una seconda lingua.",
+   "es": "Me impresiona que seas tan gracioso en un segundo idioma.",
+   "pt": "Estou impressionado por conseguires ser tão engraçado numa segunda língua.",
+   "pt_BR": "Estou impressionado por você conseguir ser tão engraçado em uma segunda língua.",
+   "fr": "Je suis impressionné(e) que tu puisses être aussi drôle dans une langue étrangère.",
+   "de": "Ich bin beeindruckt, dass du in einer Fremdsprache so witzig sein kannst."
+  }
+ },
+ {
+  "id": "ss-humor_reactions-050",
+  "topic": "humor_reactions",
+  "level": "B2",
+  "text": {
+   "en": "Let's swap our favorite jokes and see which ones survive the translation.",
+   "it": "Scambiamoci le nostre battute preferite e vediamo quali sopravvivono alla traduzione.",
+   "es": "Intercambiemos nuestros chistes favoritos y veamos cuáles sobreviven a la traducción.",
+   "pt": "Vamos trocar as nossas piadas preferidas e ver quais sobrevivem à tradução.",
+   "pt_BR": "Vamos trocar nossas piadas preferidas e ver quais sobrevivem à tradução.",
+   "fr": "Échangeons nos blagues préférées et voyons lesquelles survivent à la traduction.",
+   "de": "Lass uns unsere Lieblingswitze austauschen und sehen, welche die Übersetzung überleben."
+  }
+ }
+]

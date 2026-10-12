@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ss-feelings-001",
+  "topic": "feelings",
+  "level": "A1",
+  "text": {
+   "en": "I am happy today.",
+   "it": "Oggi sono felice.",
+   "es": "Hoy estoy feliz.",
+   "pt": "Hoje estou feliz.",
+   "pt_BR": "Hoje estou feliz.",
+   "fr": "Aujourd'hui, je suis de bonne humeur.",
+   "de": "Ich bin heute glücklich."
+  }
+ },
+ {
+  "id": "ss-feelings-002",
+  "topic": "feelings",
+  "level": "A1",
+  "text": {
+   "en": "I feel good.",
+   "it": "Sto bene.",
+   "es": "Me siento bien.",
+   "pt": "Sinto-me bem.",
+   "pt_BR": "Eu me sinto bem.",
+   "fr": "Je me sens bien.",
+   "de": "Ich fühle mich gut."
+  }
+ },
+ {
+  "id": "ss-feelings-003",
+  "topic": "feelings",
+  "level": "A1",
+  "text": {
+   "en": "I am a little sleepy.",
+   "it": "Ho un po' di sonno.",
+   "es": "Tengo un poco de sueño.",
+   "pt": "Tenho um pouco de sono.",
+   "pt_BR": "Estou com um pouco de sono.",
+   "fr": "J'ai un peu sommeil.",
+   "de": "Ich bin ein bisschen müde."
+  }
+ },
+ {
+  "id": "ss-feelings-004",
+  "topic": "feelings",
+  "level": "A1",
+  "text": {
+   "en": "I feel a bit anxious.",
+   "it": "Mi sento un po' in ansia.",
+   "es": "Siento un poco de ansiedad.",
+   "pt": "Sinto um pouco de ansiedade.",
+   "pt_BR": "Sinto um pouco de ansiedade.",
+   "fr": "Je ressens un peu d'anxiété.",
+   "de": "Ich fühle mich ein bisschen ängstlich."
+  }
+ },
+ {
+  "id": "ss-feelings-005",
+  "topic": "feelings",
+  "level": "A1",
+  "text": {
+   "en": "I can't wait!",
+   "it": "Non vedo l'ora!",
+   "es": "¡Qué ganas!",
+   "pt": "Mal posso esperar!",
+   "pt_BR": "Mal posso esperar!",
+   "fr": "J'ai hâte !",
+   "de": "Ich kann es kaum erwarten!"
+  }
+ },
+ {
+  "id": "ss-feelings-006",
+  "topic": "feelings",
+  "level": "A1",
+  "text": {
+   "en": "I feel sad today.",
+   "it": "Oggi mi sento triste.",
+   "es": "Hoy me siento triste.",
+   "pt": "Hoje sinto-me triste.",
+   "pt_BR": "Hoje estou me sentindo triste.",
+   "fr": "Aujourd'hui, je me sens triste.",
+   "de": "Heute fühle ich mich traurig."
+  }
+ },
+ {
+  "id": "ss-feelings-007",
+  "topic": "feelings",
+  "level": "A1",
+  "text": {
+   "en": "It is so nice to meet you!",
+   "it": "Che bello conoscerti!",
+   "es": "¡Qué gusto conocerte!",
+   "pt": "Que bom conhecer-te!",
+   "pt_BR": "Que bom te conhecer!",
+   "fr": "Ça me fait plaisir de te rencontrer !",
+   "de": "Schön, dich kennenzulernen!"
+  }
+ },
+ {
+  "id": "ss-feelings-008",
+  "topic": "feelings",
+  "level": "A1",
+  "text": {
+   "en": "I love this!",
+   "it": "Mi piace tantissimo!",
+   "es": "¡Me encanta!",
+   "pt": "Adoro isto!",
+   "pt_BR": "Eu amo isso!",
+   "fr": "J'adore ça !",
+   "de": "Das liebe ich!"
+  }
+ },
+ {
+  "id": "ss-feelings-009",
+  "topic": "feelings",
+  "level": "A1",
+  "text": {
+   "en": "I feel at peace.",
+   "it": "Mi sento in pace.",
+   "es": "Me siento en paz.",
+   "pt": "Sinto-me em paz.",
+   "pt_BR": "Eu me sinto em paz.",
+   "fr": "Je me sens apaisé.",
+   "de": "Ich fühle mich ruhig."
+  }
+ },
+ {
+  "id": "ss-feelings-010",
+  "topic": "feelings",
+  "level": "A1",
+  "text": {
+   "en": "I miss my family.",
+   "it": "Mi manca la mia famiglia.",
+   "es": "Extraño a mi familia.",
+   "pt": "Tenho saudades da minha família.",
+   "pt_BR": "Sinto saudade da minha família.",
+   "fr": "Ma famille me manque.",
+   "de": "Ich vermisse meine Familie."
+  }
+ },
+ {
+  "id": "ss-feelings-011",
+  "topic": "feelings",
+  "level": "A1",
+  "text": {
+   "en": "What a surprise!",
+   "it": "Che sorpresa!",
+   "es": "¡Qué sorpresa!",
+   "pt": "Que surpresa!",
+   "pt_BR": "Que surpresa!",
+   "fr": "Quelle surprise !",
+   "de": "Was für eine Überraschung!"
+  }
+ },
+ {
+  "id": "ss-feelings-012",
+  "topic": "feelings",
+  "level": "A1",
+  "text": {
+   "en": "I feel great!",
+   "it": "Mi sento benissimo!",
+   "es": "¡Me siento genial!",
+   "pt": "Sinto-me muito bem!",
+   "pt_BR": "Estou me sentindo muito bem!",
+   "fr": "Je me sens super bien !",
+   "de": "Ich fühle mich großartig!"
+  }
+ },
+ {
+  "id": "ss-feelings-013",
+  "topic": "feelings",
+  "level": "A1",
+  "text": {
+   "en": "That makes me very happy.",
+   "it": "Questo mi rende molto felice.",
+   "es": "Eso me hace muy feliz.",
+   "pt": "Isso deixa-me muito feliz.",
+   "pt_BR": "Isso me deixa muito feliz.",
+   "fr": "Ça me fait très plaisir.",
+   "de": "Das macht mich sehr glücklich."
+  }
+ },
+ {
+  "id": "ss-feelings-014",
+  "topic": "feelings",
+  "level": "A1",
+  "text": {
+   "en": "I don't feel well today.",
+   "it": "Oggi non mi sento bene.",
+   "es": "Hoy no me siento bien.",
+   "pt": "Hoje não me sinto bem.",
+   "pt_BR": "Hoje não estou me sentindo bem.",
+   "fr": "Aujourd'hui, je ne me sens pas bien.",
+   "de": "Heute fühle ich mich nicht gut."
+  }
+ },
+ {
+  "id": "ss-feelings-015",
+  "topic": "feelings",
+  "level": "A1",
+  "text": {
+   "en": "I am in a good mood.",
+   "it": "Sono di buon umore.",
+   "es": "Estoy de buen humor.",
+   "pt": "Estou de bom humor.",
+   "pt_BR": "Estou de bom humor.",
+   "fr": "Je suis de bonne humeur.",
+   "de": "Ich bin gut gelaunt."
+  }
+ },
+ {
+  "id": "ss-feelings-016",
+  "topic": "feelings",
+  "level": "A2",
+  "text": {
+   "en": "I was really scared, but now I feel better.",
+   "it": "Ho avuto molta paura, ma ora sto meglio.",
+   "es": "Tuve mucho miedo, pero ahora estoy mejor.",
+   "pt": "Tive muito medo, mas agora estou melhor.",
+   "pt_BR": "Tive muito medo, mas agora estou melhor.",
+   "fr": "J'ai eu très peur, mais je vais mieux maintenant.",
+   "de": "Ich hatte große Angst, aber jetzt geht es mir besser."
+  }
+ },
+ {
+  "id": "ss-feelings-017",
+  "topic": "feelings",
+  "level": "A2",
+  "text": {
+   "en": "I find it hard to know nobody in a new city.",
+   "it": "Non conoscere nessuno in una città nuova è un po' difficile per me.",
+   "es": "Me cuesta no conocer a nadie en una ciudad nueva.",
+   "pt": "Custa-me não conhecer ninguém numa cidade nova.",
+   "pt_BR": "Está sendo difícil não conhecer ninguém em uma cidade nova.",
+   "fr": "C'est difficile pour moi de ne connaître personne dans une nouvelle ville.",
+   "de": "Es fällt mir schwer, in einer neuen Stadt niemanden zu kennen."
+  }
+ },
+ {
+  "id": "ss-feelings-018",
+  "topic": "feelings",
+  "level": "A2",
+  "text": {
+   "en": "Talking with you makes my day better.",
+   "it": "Parlare con te mi migliora la giornata.",
+   "es": "Hablar contigo me mejora el día.",
+   "pt": "Falar contigo melhora o meu dia.",
+   "pt_BR": "Conversar com você melhora o meu dia.",
+   "fr": "Discuter avec toi améliore ma journée.",
+   "de": "Mit dir zu reden macht meinen Tag besser."
+  }
+ },
+ {
+  "id": "ss-feelings-019",
+  "topic": "feelings",
+  "level": "A2",
+  "text": {
+   "en": "Speaking a new language gives me butterflies.",
+   "it": "Parlare una lingua nuova mi fa venire le farfalle nello stomaco.",
+   "es": "Hablar un idioma nuevo me da mariposas en el estómago.",
+   "pt": "Falar uma língua nova dá-me um friozinho na barriga.",
+   "pt_BR": "Falar uma língua nova me dá um frio na barriga.",
+   "fr": "Parler une nouvelle langue me donne le trac.",
+   "de": "Wenn ich eine neue Sprache spreche, bin ich immer aufgeregt."
+  }
+ },
+ {
+  "id": "ss-feelings-020",
+  "topic": "feelings",
+  "level": "A2",
+  "text": {
+   "en": "I am really happy with my progress.",
+   "it": "Questi progressi mi fanno molto piacere.",
+   "es": "Mis avances me alegran mucho.",
+   "pt": "Os meus progressos deixam-me muito feliz.",
+   "pt_BR": "Meu progresso me deixa muito feliz.",
+   "fr": "Mes progrès me font vraiment plaisir.",
+   "de": "Über meine Fortschritte freue ich mich sehr."
+  }
+ },
+ {
+  "id": "ss-feelings-021",
+  "topic": "feelings",
+  "level": "A2",
+  "text": {
+   "en": "I feel homesick today.",
+   "it": "Oggi ho un po' di nostalgia di casa.",
+   "es": "Hoy echo de menos mi casa.",
+   "pt": "Hoje tenho saudades de casa.",
+   "pt_BR": "Hoje estou com saudade de casa.",
+   "fr": "Aujourd'hui, j'ai le mal du pays.",
+   "de": "Heute habe ich Heimweh."
+  }
+ },
+ {
+  "id": "ss-feelings-022",
+  "topic": "feelings",
+  "level": "A2",
+  "text": {
+   "en": "I am looking forward to our video call.",
+   "it": "Non vedo l'ora della nostra videochiamata.",
+   "es": "Tengo muchas ganas de nuestra videollamada.",
+   "pt": "Mal posso esperar pela nossa videochamada.",
+   "pt_BR": "Mal posso esperar pela nossa chamada de vídeo.",
+   "fr": "J'ai hâte de faire notre appel vidéo.",
+   "de": "Ich freue mich auf unseren Videoanruf."
+  }
+ },
+ {
+  "id": "ss-feelings-023",
+  "topic": "feelings",
+  "level": "A2",
+  "text": {
+   "en": "That story made me laugh a lot.",
+   "it": "Quella storia mi ha fatto ridere molto.",
+   "es": "Esa historia me hizo reír mucho.",
+   "pt": "Essa história fez-me rir muito.",
+   "pt_BR": "Essa história me fez rir muito.",
+   "fr": "Cette histoire m'a beaucoup fait rire.",
+   "de": "Diese Geschichte hat mich sehr zum Lachen gebracht."
+  }
+ },
+ {
+  "id": "ss-feelings-024",
+  "topic": "feelings",
+  "level": "A2",
+  "text": {
+   "en": "Music always lifts my mood.",
+   "it": "La musica mi risolleva sempre l'umore.",
+   "es": "La música siempre me levanta el ánimo.",
+   "pt": "A música anima-me sempre.",
+   "pt_BR": "A música sempre levanta o meu astral.",
+   "fr": "La musique me remonte toujours le moral.",
+   "de": "Musik hebt meine Stimmung immer."
+  }
+ },
+ {
+  "id": "ss-feelings-025",
+  "topic": "feelings",
+  "level": "A2",
+  "text": {
+   "en": "I was feeling down yesterday, but I'm fine now.",
+   "it": "Ieri ero giù di morale, ma ora sto bene.",
+   "es": "Ayer estaba de bajón, pero ahora estoy bien.",
+   "pt": "Ontem estava em baixo, mas agora estou bem.",
+   "pt_BR": "Ontem eu estava para baixo, mas agora estou bem.",
+   "fr": "Hier, je n'avais pas le moral, mais ça va mieux maintenant.",
+   "de": "Gestern war ich niedergeschlagen, aber jetzt geht es mir gut."
+  }
+ },
+ {
+  "id": "ss-feelings-026",
+  "topic": "feelings",
+  "level": "A2",
+  "text": {
+   "en": "Sorry, I'm in a bad mood today.",
+   "it": "Scusa, oggi sono di cattivo umore.",
+   "es": "Perdona, hoy estoy de mal humor.",
+   "pt": "Desculpa, hoje estou de mau humor.",
+   "pt_BR": "Desculpe, hoje estou de mau humor.",
+   "fr": "Désolé, je suis de mauvaise humeur aujourd'hui.",
+   "de": "Tut mir leid, ich habe heute schlechte Laune."
+  }
+ },
+ {
+  "id": "ss-feelings-027",
+  "topic": "feelings",
+  "level": "A2",
+  "text": {
+   "en": "I'm happy that we can chat like this.",
+   "it": "Mi fa piacere poter chiacchierare così.",
+   "es": "Me alegra que podamos charlar así.",
+   "pt": "Dá-me gosto poder conversar assim.",
+   "pt_BR": "Fico feliz de a gente poder conversar assim.",
+   "fr": "Ça me fait plaisir qu'on puisse discuter comme ça.",
+   "de": "Es freut mich, dass wir uns so unterhalten können."
+  }
+ },
+ {
+  "id": "ss-feelings-028",
+  "topic": "feelings",
+  "level": "A2",
+  "text": {
+   "en": "My confidence grows every day.",
+   "it": "La mia sicurezza cresce ogni giorno.",
+   "es": "Mi confianza crece cada día.",
+   "pt": "A minha confiança cresce a cada dia.",
+   "pt_BR": "Minha confiança cresce a cada dia.",
+   "fr": "Ma confiance grandit chaque jour.",
+   "de": "Mein Selbstvertrauen wächst jeden Tag."
+  }
+ },
+ {
+  "id": "ss-feelings-029",
+  "topic": "feelings",
+  "level": "A2",
+  "text": {
+   "en": "I worried a lot, but everything is fine now.",
+   "it": "Ero molto in pensiero, ma ora è tutto a posto.",
+   "es": "Me preocupé mucho, pero ahora todo está bien.",
+   "pt": "Preocupei-me muito, mas agora está tudo bem.",
+   "pt_BR": "Me preocupei muito, mas agora está tudo bem.",
+   "fr": "Je me suis fait beaucoup de souci, mais tout va bien maintenant.",
+   "de": "Ich habe mir große Sorgen gemacht, aber jetzt ist alles gut."
+  }
+ },
+ {
+  "id": "ss-feelings-030",
+  "topic": "feelings",
+  "level": "A2",
+  "text": {
+   "en": "What a beautiful day, I have so much energy!",
+   "it": "Che bella giornata, ho tanta energia!",
+   "es": "¡Qué buen día, tengo mucha energía!",
+   "pt": "Que dia bonito, tenho tanta energia!",
+   "pt_BR": "Que dia lindo, tenho tanta energia!",
+   "fr": "Quelle belle journée, j'ai plein d'énergie !",
+   "de": "Was für ein schöner Tag, ich habe so viel Energie!"
+  }
+ },
+ {
+  "id": "ss-feelings-031",
+  "topic": "feelings",
+  "level": "B1",
+  "text": {
+   "en": "When I have too much to do, I sometimes panic.",
+   "it": "Quando ho troppe cose da fare, a volte mi prende il panico.",
+   "es": "Cuando tengo demasiado que hacer, a veces me agobio.",
+   "pt": "Quando tenho demasiado que fazer, às vezes entro em pânico.",
+   "pt_BR": "Quando tenho coisas demais pra fazer, às vezes entro em pânico.",
+   "fr": "Quand j'ai trop de choses à faire, je panique parfois.",
+   "de": "Wenn ich zu viel zu tun habe, gerate ich manchmal in Panik."
+  }
+ },
+ {
+  "id": "ss-feelings-032",
+  "topic": "feelings",
+  "level": "B1",
+  "text": {
+   "en": "It took me a while to feel comfortable here.",
+   "it": "Ci è voluto un po' prima di sentirmi a mio agio qui.",
+   "es": "Me costó un tiempo sentirme a gusto aquí.",
+   "pt": "Demorei um pouco a sentir-me à vontade aqui.",
+   "pt_BR": "Demorei um pouco para me sentir à vontade aqui.",
+   "fr": "Il m'a fallu un moment pour me sentir à l'aise ici.",
+   "de": "Ich habe eine Weile gebraucht, um mich hier wohlzufühlen."
+  }
+ },
+ {
+  "id": "ss-feelings-033",
+  "topic": "feelings",
+  "level": "B1",
+  "text": {
+   "en": "Honestly, I feel a mix of excitement and fear before the move.",
+   "it": "Sinceramente, prima del trasloco provo un misto di entusiasmo e paura.",
+   "es": "Sinceramente, antes de la mudanza siento una mezcla de ilusión y miedo.",
+   "pt": "Sinceramente, antes da mudança sinto uma mistura de entusiasmo e medo.",
+   "pt_BR": "Sinceramente, antes da mudança sinto uma mistura de empolgação e medo.",
+   "fr": "Franchement, avant le déménagement, je ressens un mélange d'enthousiasme et de peur.",
+   "de": "Ehrlich gesagt habe ich vor dem Umzug eine Mischung aus Vorfreude und Angst."
+  }
+ },
+ {
+  "id": "ss-feelings-034",
+  "topic": "feelings",
+  "level": "B1",
+  "text": {
+   "en": "Your message made me smile after a long day.",
+   "it": "Il tuo messaggio mi ha fatto sorridere dopo una lunga giornata.",
+   "es": "Tu mensaje me hizo sonreír después de un día largo.",
+   "pt": "A tua mensagem fez-me sorrir depois de um dia longo.",
+   "pt_BR": "Sua mensagem me fez sorrir depois de um dia longo.",
+   "fr": "Ton message m'a fait sourire après une longue journée.",
+   "de": "Deine Nachricht hat mich nach einem langen Tag zum Lächeln gebracht."
+  }
+ },
+ {
+  "id": "ss-feelings-035",
+  "topic": "feelings",
+  "level": "B1",
+  "text": {
+   "en": "I get emotional when I hear my favourite song from home.",
+   "it": "Mi commuovo quando sento la mia canzone preferita di casa.",
+   "es": "Me emociono cuando oigo mi canción favorita de mi tierra.",
+   "pt": "Emociono-me quando ouço a minha canção preferida da minha terra.",
+   "pt_BR": "Eu me emociono quando ouço minha música preferida da minha terra.",
+   "fr": "Ça m'émeut quand j'entends ma chanson préférée de chez moi.",
+   "de": "Ich werde emotional, wenn ich mein Lieblingslied von zu Hause höre."
+  }
+ },
+ {
+  "id": "ss-feelings-036",
+  "topic": "feelings",
+  "level": "B1",
+  "text": {
+   "en": "The result disappointed me a bit, but I try to look on the bright side.",
+   "it": "Il risultato mi ha deluso un po', ma cerco di vedere il lato positivo.",
+   "es": "El resultado me decepcionó un poco, pero intento ver el lado positivo.",
+   "pt": "O resultado desiludiu-me um pouco, mas tento ver o lado positivo.",
+   "pt_BR": "O resultado me decepcionou um pouco, mas estou tentando ver o lado positivo.",
+   "fr": "Le résultat m'a un peu déçu, mais j'essaie de voir le bon côté.",
+   "de": "Das Ergebnis hat mich ein wenig enttäuscht, aber ich versuche, das Positive zu sehen."
+  }
+ },
+ {
+  "id": "ss-feelings-037",
+  "topic": "feelings",
+  "level": "B1",
+  "text": {
+   "en": "It's hard for me to express my feelings, but I'll try.",
+   "it": "Mi riesce difficile esprimere i miei sentimenti, ma ci provo.",
+   "es": "Me cuesta expresar mis sentimientos, pero lo intentaré.",
+   "pt": "Custa-me exprimir os meus sentimentos, mas vou tentar.",
+   "pt_BR": "É difícil pra mim expressar meus sentimentos, mas vou tentar.",
+   "fr": "J'ai du mal à exprimer mes sentiments, mais je vais essayer.",
+   "de": "Es fällt mir schwer, meine Gefühle auszudrücken, aber ich versuche es."
+  }
+ },
+ {
+  "id": "ss-feelings-038",
+  "topic": "feelings",
+  "level": "B1",
+  "text": {
+   "en": "Sometimes a simple chat is all I need to feel better.",
+   "it": "A volte basta una semplice chiacchierata per sentirmi meglio.",
+   "es": "A veces basta una charla sencilla para sentirme mejor.",
+   "pt": "Às vezes basta uma conversa simples para me sentir melhor.",
+   "pt_BR": "Às vezes basta uma conversa simples pra eu me sentir melhor.",
+   "fr": "Parfois, une simple discussion suffit pour que je me sente mieux.",
+   "de": "Manchmal reicht ein einfaches Gespräch, damit es mir besser geht."
+  }
+ },
+ {
+  "id": "ss-feelings-039",
+  "topic": "feelings",
+  "level": "B1",
+  "text": {
+   "en": "Before our first call, I felt curiosity and a few nerves.",
+   "it": "Prima della nostra prima chiamata provavo curiosità e un po' di agitazione.",
+   "es": "Antes de nuestra primera llamada sentía curiosidad y algo de nervios.",
+   "pt": "Antes da nossa primeira chamada sentia curiosidade e alguns nervos.",
+   "pt_BR": "Antes da nossa primeira ligação eu sentia curiosidade e um pouco de nervosismo.",
+   "fr": "Avant notre premier appel, je ressentais de la curiosité et un peu de trac.",
+   "de": "Vor unserem ersten Anruf war ich neugierig und ein bisschen aufgeregt."
+  }
+ },
+ {
+  "id": "ss-feelings-040",
+  "topic": "feelings",
+  "level": "B1",
+  "text": {
+   "en": "I really appreciate everyone who helped me settle in.",
+   "it": "Apprezzo davvero tutti quelli che mi hanno aiutato ad ambientarmi.",
+   "es": "Valoro mucho a todos los que me ayudaron a adaptarme.",
+   "pt": "Dou muito valor a todos os que me ajudaram a adaptar-me.",
+   "pt_BR": "Dou muito valor a todo mundo que me ajudou a me adaptar.",
+   "fr": "J'apprécie vraiment tous ceux qui m'ont aidé à m'installer.",
+   "de": "Ich schätze alle sehr, die mir beim Eingewöhnen geholfen haben."
+  }
+ },
+ {
+  "id": "ss-feelings-041",
+  "topic": "feelings",
+  "level": "B1",
+  "text": {
+   "en": "Being far from home is hard, but it is also making me stronger.",
+   "it": "Stare lontano da casa è difficile, ma mi sta anche rendendo più forte.",
+   "es": "Estar lejos de casa es difícil, pero también me está haciendo más fuerte.",
+   "pt": "Estar longe de casa é difícil, mas também está a tornar-me mais forte.",
+   "pt_BR": "Estar longe de casa é difícil, mas também está me deixando mais forte.",
+   "fr": "Être loin de chez soi est difficile, mais ça me rend aussi plus fort.",
+   "de": "Weit weg von zu Hause zu sein ist schwer, aber es macht mich auch stärker."
+  }
+ },
+ {
+  "id": "ss-feelings-042",
+  "topic": "feelings",
+  "level": "B1",
+  "text": {
+   "en": "I need a quiet evening to recharge after a busy week.",
+   "it": "Ho bisogno di una serata tranquilla per ricaricarmi dopo una settimana intensa.",
+   "es": "Necesito una noche tranquila para recargar pilas después de una semana ajetreada.",
+   "pt": "Preciso de uma noite sossegada para recarregar baterias depois de uma semana cheia.",
+   "pt_BR": "Preciso de uma noite tranquila pra recarregar as energias depois de uma semana cheia.",
+   "fr": "J'ai besoin d'une soirée tranquille pour me ressourcer après une semaine chargée.",
+   "de": "Ich brauche einen ruhigen Abend, um nach einer stressigen Woche Energie zu tanken."
+  }
+ },
+ {
+  "id": "ss-feelings-043",
+  "topic": "feelings",
+  "level": "B2",
+  "text": {
+   "en": "I have mixed feelings about leaving, since I'm going to miss everyone.",
+   "it": "Ho sentimenti contrastanti riguardo alla partenza, perché mi mancheranno tutti.",
+   "es": "Tengo sentimientos encontrados por irme, porque voy a echar de menos a todos.",
+   "pt": "Tenho sentimentos contraditórios em relação à partida, porque vou ter saudades de todos.",
+   "pt_BR": "Tenho sentimentos mistos sobre ir embora, porque vou sentir saudade de todo mundo.",
+   "fr": "J'ai des sentiments partagés à l'idée de partir, car tout le monde va me manquer.",
+   "de": "Ich habe gemischte Gefühle beim Abschied, weil mir alle fehlen werden."
+  }
+ },
+ {
+  "id": "ss-feelings-044",
+  "topic": "feelings",
+  "level": "B2",
+  "text": {
+   "en": "It's hard to describe how much this conversation means to me.",
+   "it": "È difficile descrivere quanto significhi per me questa conversazione.",
+   "es": "Es difícil describir cuánto significa para mí esta conversación.",
+   "pt": "É difícil descrever quanto esta conversa significa para mim.",
+   "pt_BR": "É difícil descrever o quanto essa conversa significa pra mim.",
+   "fr": "C'est difficile de décrire à quel point cette conversation compte pour moi.",
+   "de": "Es ist schwer zu beschreiben, wie viel mir dieses Gespräch bedeutet."
+  }
+ },
+ {
+  "id": "ss-feelings-045",
+  "topic": "feelings",
+  "level": "B2",
+  "text": {
+   "en": "I realised I had been stressed for weeks without noticing it.",
+   "it": "Ho capito di essere sotto stress da settimane senza accorgermene.",
+   "es": "Me di cuenta de que llevaba semanas con estrés sin notarlo.",
+   "pt": "Apercebi-me de que andava com stress há semanas sem dar por isso.",
+   "pt_BR": "Percebi que estava com estresse há semanas sem notar.",
+   "fr": "J'ai réalisé que je vivais du stress depuis des semaines sans m'en rendre compte.",
+   "de": "Mir wurde klar, dass ich seit Wochen gestresst war, ohne es zu merken."
+  }
+ },
+ {
+  "id": "ss-feelings-046",
+  "topic": "feelings",
+  "level": "B2",
+  "text": {
+   "en": "Even after such a long day, I feel deeply satisfied with what we achieved.",
+   "it": "Anche dopo una giornata così lunga, provo una profonda soddisfazione per ciò che abbiamo ottenuto.",
+   "es": "Incluso después de un día tan largo, siento una profunda satisfacción por lo que logramos.",
+   "pt": "Mesmo depois de um dia tão longo, sinto uma profunda satisfação pelo que conseguimos.",
+   "pt_BR": "Mesmo depois de um dia tão longo, sinto uma profunda satisfação com o que conseguimos.",
+   "fr": "Même après une si longue journée, je ressens une profonde satisfaction pour ce que nous avons accompli.",
+   "de": "Selbst nach einem so langen Tag empfinde ich tiefe Zufriedenheit über das, was wir erreicht haben."
+  }
+ },
+ {
+  "id": "ss-feelings-047",
+  "topic": "feelings",
+  "level": "B2",
+  "text": {
+   "en": "I tend to overthink things, so talking about them really helps.",
+   "it": "Tendo a rimuginare su tutto, quindi parlarne mi aiuta molto.",
+   "es": "Tiendo a darle demasiadas vueltas a todo, así que hablarlo me ayuda mucho.",
+   "pt": "Tenho tendência a pensar demais em tudo, por isso falar sobre isso ajuda-me muito.",
+   "pt_BR": "Tenho a tendência de pensar demais em tudo, então conversar sobre isso me ajuda muito.",
+   "fr": "J'ai tendance à trop réfléchir, donc en parler m'aide beaucoup.",
+   "de": "Ich neige dazu, alles zu zerdenken, deshalb hilft es mir sehr, darüber zu sprechen."
+  }
+ },
+ {
+  "id": "ss-feelings-048",
+  "topic": "feelings",
+  "level": "B2",
+  "text": {
+   "en": "Hearing your accent reminded me of a place I used to call home.",
+   "it": "Sentire il tuo accento mi ha ricordato un posto che chiamavo casa.",
+   "es": "Oír tu acento me recordó un lugar al que antes llamaba hogar.",
+   "pt": "Ouvir o teu sotaque lembrou-me um lugar que já chamei de casa.",
+   "pt_BR": "Ouvir seu sotaque me lembrou um lugar que eu já chamei de casa.",
+   "fr": "Entendre ton accent m'a rappelé un endroit que j'appelais autrefois chez moi.",
+   "de": "Dein Akzent hat mich an einen Ort erinnert, den ich früher mein Zuhause nannte."
+  }
+ },
+ {
+  "id": "ss-feelings-049",
+  "topic": "feelings",
+  "level": "B2",
+  "text": {
+   "en": "I'm trying to give myself time while I learn, even when it's frustrating.",
+   "it": "Cerco di darmi tempo mentre imparo, anche quando è frustrante.",
+   "es": "Intento darme tiempo mientras aprendo, aunque a veces sea frustrante.",
+   "pt": "Tento dar-me tempo enquanto aprendo, mesmo quando é frustrante.",
+   "pt_BR": "Estou tentando me dar tempo enquanto aprendo, mesmo quando é frustrante.",
+   "fr": "J'essaie de me laisser du temps pour apprendre, même quand c'est frustrant.",
+   "de": "Ich versuche, mir beim Lernen Zeit zu geben, auch wenn es frustrierend ist."
+  }
+ },
+ {
+  "id": "ss-feelings-050",
+  "topic": "feelings",
+  "level": "B2",
+  "text": {
+   "en": "Sharing how I feel with someone from another culture has been surprisingly freeing.",
+   "it": "Condividere ciò che provo con una persona di un'altra cultura è stato sorprendentemente liberatorio.",
+   "es": "Compartir lo que siento con alguien de otra cultura ha sido sorprendentemente liberador.",
+   "pt": "Partilhar o que sinto com alguém de outra cultura tem sido surpreendentemente libertador.",
+   "pt_BR": "Compartilhar o que sinto com alguém de outra cultura tem sido surpreendentemente libertador.",
+   "fr": "Partager ce que je ressens avec quelqu'un d'une autre culture a été étonnamment libérateur.",
+   "de": "Mit jemandem aus einer anderen Kultur zu teilen, was ich fühle, war überraschend befreiend."
+  }
+ },
+ {
+  "id": "ss-encouraging-001",
+  "topic": "encouraging",
+  "level": "A1",
+  "text": {
+   "en": "You can do it!",
+   "it": "Ce la puoi fare!",
+   "es": "¡Tú puedes!",
+   "pt": "Consegues!",
+   "pt_BR": "Você consegue!",
+   "fr": "Tu peux le faire !",
+   "de": "Du schaffst das!"
+  }
+ },
+ {
+  "id": "ss-encouraging-002",
+  "topic": "encouraging",
+  "level": "A1",
+  "text": {
+   "en": "Good job!",
+   "it": "Bel lavoro!",
+   "es": "¡Buen trabajo!",
+   "pt": "Bom trabalho!",
+   "pt_BR": "Bom trabalho!",
+   "fr": "Bon travail !",
+   "de": "Gute Arbeit!"
+  }
+ },
+ {
+  "id": "ss-encouraging-003",
+  "topic": "encouraging",
+  "level": "A1",
+  "text": {
+   "en": "Don't worry.",
+   "it": "Non ti preoccupare.",
+   "es": "No te preocupes.",
+   "pt": "Não te preocupes.",
+   "pt_BR": "Não se preocupe.",
+   "fr": "Ne t'inquiète pas.",
+   "de": "Mach dir keine Sorgen."
+  }
+ },
+ {
+  "id": "ss-encouraging-004",
+  "topic": "encouraging",
+  "level": "A1",
+  "text": {
+   "en": "You speak very well!",
+   "it": "Parli molto bene!",
+   "es": "¡Hablas muy bien!",
+   "pt": "Falas muito bem!",
+   "pt_BR": "Você fala muito bem!",
+   "fr": "Tu parles très bien !",
+   "de": "Du sprichst sehr gut!"
+  }
+ },
+ {
+  "id": "ss-encouraging-005",
+  "topic": "encouraging",
+  "level": "A1",
+  "text": {
+   "en": "Keep going!",
+   "it": "Continua così!",
+   "es": "¡Sigue así!",
+   "pt": "Continua assim!",
+   "pt_BR": "Continue assim!",
+   "fr": "Continue comme ça !",
+   "de": "Mach weiter so!"
+  }
+ },
+ {
+  "id": "ss-encouraging-006",
+  "topic": "encouraging",
+  "level": "A1",
+  "text": {
+   "en": "Don't give up!",
+   "it": "Non arrenderti!",
+   "es": "¡No te rindas!",
+   "pt": "Não desistas!",
+   "pt_BR": "Não desista!",
+   "fr": "Ne lâche rien !",
+   "de": "Gib nicht auf!"
+  }
+ },
+ {
+  "id": "ss-encouraging-007",
+  "topic": "encouraging",
+  "level": "A1",
+  "text": {
+   "en": "It's okay to make mistakes.",
+   "it": "Va bene sbagliare.",
+   "es": "Está bien equivocarse.",
+   "pt": "Não faz mal errar.",
+   "pt_BR": "Tudo bem errar.",
+   "fr": "Ce n'est pas grave de faire des erreurs.",
+   "de": "Fehler zu machen ist okay."
+  }
+ },
+ {
+  "id": "ss-encouraging-008",
+  "topic": "encouraging",
+  "level": "A1",
+  "text": {
+   "en": "I believe in you.",
+   "it": "Credo in te.",
+   "es": "Creo en ti.",
+   "pt": "Acredito em ti.",
+   "pt_BR": "Eu acredito em você.",
+   "fr": "Je crois en toi.",
+   "de": "Ich glaube an dich."
+  }
+ },
+ {
+  "id": "ss-encouraging-009",
+  "topic": "encouraging",
+  "level": "A1",
+  "text": {
+   "en": "Take your time.",
+   "it": "Prenditi il tuo tempo.",
+   "es": "Tómate tu tiempo.",
+   "pt": "Leva o teu tempo.",
+   "pt_BR": "Leve o tempo que precisar.",
+   "fr": "Prends ton temps.",
+   "de": "Lass dir Zeit."
+  }
+ },
+ {
+  "id": "ss-encouraging-010",
+  "topic": "encouraging",
+  "level": "A1",
+  "text": {
+   "en": "You are doing great!",
+   "it": "Stai andando benissimo!",
+   "es": "¡Lo estás haciendo genial!",
+   "pt": "Estás a ir muito bem!",
+   "pt_BR": "Você está indo muito bem!",
+   "fr": "Tu t'en sors très bien !",
+   "de": "Du machst das großartig!"
+  }
+ },
+ {
+  "id": "ss-encouraging-011",
+  "topic": "encouraging",
+  "level": "A1",
+  "text": {
+   "en": "Well done!",
+   "it": "Ben fatto!",
+   "es": "¡Bien hecho!",
+   "pt": "Muito bem!",
+   "pt_BR": "Muito bem!",
+   "fr": "Bien joué !",
+   "de": "Gut gemacht!"
+  }
+ },
+ {
+  "id": "ss-encouraging-012",
+  "topic": "encouraging",
+  "level": "A1",
+  "text": {
+   "en": "Good luck!",
+   "it": "Buona fortuna!",
+   "es": "¡Buena suerte!",
+   "pt": "Boa sorte!",
+   "pt_BR": "Boa sorte!",
+   "fr": "Bonne chance !",
+   "de": "Viel Glück!"
+  }
+ },
+ {
+  "id": "ss-encouraging-013",
+  "topic": "encouraging",
+  "level": "A1",
+  "text": {
+   "en": "Go on, give it a try!",
+   "it": "Dai, prova!",
+   "es": "¡Anímate, inténtalo!",
+   "pt": "Anda, experimenta!",
+   "pt_BR": "Vai, tenta!",
+   "fr": "Allez, essaie !",
+   "de": "Los, probier es aus!"
+  }
+ },
+ {
+  "id": "ss-encouraging-014",
+  "topic": "encouraging",
+  "level": "A1",
+  "text": {
+   "en": "We are here for you.",
+   "it": "Siamo qui per te.",
+   "es": "Estamos aquí para ti.",
+   "pt": "Estamos aqui para ti.",
+   "pt_BR": "Estamos aqui pra você.",
+   "fr": "Nous sommes là pour toi.",
+   "de": "Wir sind für dich da."
+  }
+ },
+ {
+  "id": "ss-encouraging-015",
+  "topic": "encouraging",
+  "level": "A1",
+  "text": {
+   "en": "One step at a time.",
+   "it": "Un passo alla volta.",
+   "es": "Paso a paso.",
+   "pt": "Um passo de cada vez.",
+   "pt_BR": "Um passo de cada vez.",
+   "fr": "Un pas après l'autre.",
+   "de": "Schritt für Schritt."
+  }
+ },
+ {
+  "id": "ss-encouraging-016",
+  "topic": "encouraging",
+  "level": "A2",
+  "text": {
+   "en": "Everyone starts as a beginner.",
+   "it": "Tutti iniziano da principianti.",
+   "es": "Todos empezamos siendo principiantes.",
+   "pt": "Todos começam como principiantes.",
+   "pt_BR": "Todo mundo começa como iniciante.",
+   "fr": "Tout le monde commence en tant que débutant.",
+   "de": "Alle fangen als Anfänger an."
+  }
+ },
+ {
+  "id": "ss-encouraging-017",
+  "topic": "encouraging",
+  "level": "A2",
+  "text": {
+   "en": "You are learning so fast!",
+   "it": "Stai imparando così in fretta!",
+   "es": "¡Estás aprendiendo tan rápido!",
+   "pt": "Estás a aprender tão depressa!",
+   "pt_BR": "Você está aprendendo tão rápido!",
+   "fr": "Tu apprends si vite !",
+   "de": "Du lernst so schnell!"
+  }
+ },
+ {
+  "id": "ss-encouraging-018",
+  "topic": "encouraging",
+  "level": "A2",
+  "text": {
+   "en": "I understand you perfectly.",
+   "it": "Ti capisco perfettamente.",
+   "es": "Te entiendo perfectamente.",
+   "pt": "Percebo-te perfeitamente.",
+   "pt_BR": "Eu entendo você perfeitamente.",
+   "fr": "Je te comprends parfaitement.",
+   "de": "Ich verstehe dich perfekt."
+  }
+ },
+ {
+  "id": "ss-encouraging-019",
+  "topic": "encouraging",
+  "level": "A2",
+  "text": {
+   "en": "Don't be afraid to make mistakes; that is how we learn.",
+   "it": "Non aver paura di sbagliare: è così che si impara.",
+   "es": "No tengas miedo de equivocarte: así se aprende.",
+   "pt": "Não tenhas medo de errar: é assim que se aprende.",
+   "pt_BR": "Não tenha medo de errar: é assim que se aprende.",
+   "fr": "N'aie pas peur de te tromper : c'est comme ça qu'on apprend.",
+   "de": "Hab keine Angst vor Fehlern: So lernt man."
+  }
+ },
+ {
+  "id": "ss-encouraging-020",
+  "topic": "encouraging",
+  "level": "A2",
+  "text": {
+   "en": "Every day you get a little better.",
+   "it": "Ogni giorno migliori un po'.",
+   "es": "Cada día mejoras un poco.",
+   "pt": "A cada dia melhoras um pouco.",
+   "pt_BR": "A cada dia você melhora um pouco.",
+   "fr": "Chaque jour, tu progresses un peu.",
+   "de": "Jeden Tag wirst du ein bisschen besser."
+  }
+ },
+ {
+  "id": "ss-encouraging-021",
+  "topic": "encouraging",
+  "level": "A2",
+  "text": {
+   "en": "That was a great try!",
+   "it": "È stato un ottimo tentativo!",
+   "es": "¡Fue un gran intento!",
+   "pt": "Foi uma ótima tentativa!",
+   "pt_BR": "Foi uma ótima tentativa!",
+   "fr": "C'était une belle tentative !",
+   "de": "Das war ein toller Versuch!"
+  }
+ },
+ {
+  "id": "ss-encouraging-022",
+  "topic": "encouraging",
+  "level": "A2",
+  "text": {
+   "en": "Please keep talking, I enjoy our chats.",
+   "it": "Continua a parlare, mi piace chiacchierare con te.",
+   "es": "Sigue hablando, me gusta charlar contigo.",
+   "pt": "Continua a falar, gosto de conversar contigo.",
+   "pt_BR": "Continue falando, eu gosto de conversar com você.",
+   "fr": "Continue à parler, j'aime discuter avec toi.",
+   "de": "Sprich ruhig weiter, ich unterhalte mich gern mit dir."
+  }
+ },
+ {
+  "id": "ss-encouraging-023",
+  "topic": "encouraging",
+  "level": "A2",
+  "text": {
+   "en": "You have worked hard, and it shows.",
+   "it": "Hai lavorato sodo e si vede.",
+   "es": "Has trabajado duro y se nota.",
+   "pt": "Trabalhaste muito e nota-se.",
+   "pt_BR": "Você trabalhou duro e dá para ver.",
+   "fr": "Tu as travaillé dur et ça se voit.",
+   "de": "Du hast hart gearbeitet, und man sieht es."
+  }
+ },
+ {
+  "id": "ss-encouraging-024",
+  "topic": "encouraging",
+  "level": "A2",
+  "text": {
+   "en": "Tomorrow will be easier.",
+   "it": "Domani sarà più facile.",
+   "es": "Mañana será más fácil.",
+   "pt": "Amanhã vai ser mais fácil.",
+   "pt_BR": "Amanhã vai ser mais fácil.",
+   "fr": "Demain sera plus facile.",
+   "de": "Morgen wird es leichter."
+  }
+ },
+ {
+  "id": "ss-encouraging-025",
+  "topic": "encouraging",
+  "level": "A2",
+  "text": {
+   "en": "It's normal to feel nervous at first.",
+   "it": "È normale sentirsi un po' agitati all'inizio.",
+   "es": "Es normal sentirse nervioso al principio.",
+   "pt": "É normal sentir nervosismo no início.",
+   "pt_BR": "É normal ficar nervoso no começo.",
+   "fr": "C'est normal d'être stressé au début.",
+   "de": "Am Anfang ist es normal, nervös zu sein."
+  }
+ },
+ {
+  "id": "ss-encouraging-026",
+  "topic": "encouraging",
+  "level": "A2",
+  "text": {
+   "en": "Your pronunciation is getting clearer.",
+   "it": "La tua pronuncia sta diventando più chiara.",
+   "es": "Tu pronunciación se está volviendo más clara.",
+   "pt": "A tua pronúncia está a ficar mais clara.",
+   "pt_BR": "Sua pronúncia está ficando mais clara.",
+   "fr": "Ta prononciation devient plus claire.",
+   "de": "Deine Aussprache wird immer klarer."
+  }
+ },
+ {
+  "id": "ss-encouraging-027",
+  "topic": "encouraging",
+  "level": "A2",
+  "text": {
+   "en": "Do you want to practise together?",
+   "it": "Vuoi esercitarti insieme?",
+   "es": "¿Quieres practicar juntos?",
+   "pt": "Queres praticar juntos?",
+   "pt_BR": "Quer praticar juntos?",
+   "fr": "Tu veux t'entraîner ensemble ?",
+   "de": "Möchtest du zusammen üben?"
+  }
+ },
+ {
+  "id": "ss-encouraging-028",
+  "topic": "encouraging",
+  "level": "A2",
+  "text": {
+   "en": "Rest if you need to, and try again later.",
+   "it": "Riposati se ne hai bisogno e riprova più tardi.",
+   "es": "Descansa si lo necesitas y vuelve a intentarlo más tarde.",
+   "pt": "Descansa se precisares e tenta outra vez mais tarde.",
+   "pt_BR": "Descanse se precisar e tente de novo mais tarde.",
+   "fr": "Repose-toi si tu en as besoin et réessaie plus tard.",
+   "de": "Ruh dich aus, wenn du willst, und versuch es später noch einmal."
+  }
+ },
+ {
+  "id": "ss-encouraging-029",
+  "topic": "encouraging",
+  "level": "A2",
+  "text": {
+   "en": "Your effort really inspires me.",
+   "it": "Il tuo impegno mi ispira davvero.",
+   "es": "Tu esfuerzo me inspira de verdad.",
+   "pt": "O teu esforço inspira-me mesmo.",
+   "pt_BR": "Seu esforço me inspira de verdade.",
+   "fr": "Tes efforts m'inspirent vraiment.",
+   "de": "Dein Einsatz inspiriert mich wirklich."
+  }
+ },
+ {
+  "id": "ss-encouraging-030",
+  "topic": "encouraging",
+  "level": "A2",
+  "text": {
+   "en": "You have already come so far!",
+   "it": "Hai già fatto tanta strada!",
+   "es": "¡Ya has avanzado muchísimo!",
+   "pt": "Já chegaste tão longe!",
+   "pt_BR": "Você já chegou tão longe!",
+   "fr": "Tu as déjà fait tellement de chemin !",
+   "de": "Du bist schon so weit gekommen!"
+  }
+ },
+ {
+  "id": "ss-encouraging-031",
+  "topic": "encouraging",
+  "level": "B1",
+  "text": {
+   "en": "Learning a language takes time, so be kind to yourself.",
+   "it": "Imparare una lingua richiede tempo, quindi sii gentile con te.",
+   "es": "Aprender un idioma lleva tiempo, así que sé amable contigo.",
+   "pt": "Aprender uma língua leva tempo, por isso sê gentil contigo.",
+   "pt_BR": "Aprender uma língua leva tempo, então seja gentil consigo.",
+   "fr": "Apprendre une langue prend du temps, alors sois indulgent avec toi.",
+   "de": "Eine Sprache zu lernen braucht Zeit, also sei nachsichtig mit dir."
+  }
+ },
+ {
+  "id": "ss-encouraging-032",
+  "topic": "encouraging",
+  "level": "B1",
+  "text": {
+   "en": "Even small steps count, so celebrate every one.",
+   "it": "Anche i piccoli passi contano, quindi festeggiali tutti.",
+   "es": "Hasta los pasos pequeños cuentan, así que celebra cada uno.",
+   "pt": "Até os pequenos passos contam, por isso celebra cada um.",
+   "pt_BR": "Até os passos pequenos contam, então comemore cada um.",
+   "fr": "Même les petits pas comptent, alors fête chacun d'eux.",
+   "de": "Auch kleine Schritte zählen, also feiere jeden einzelnen."
+  }
+ },
+ {
+  "id": "ss-encouraging-033",
+  "topic": "encouraging",
+  "level": "B1",
+  "text": {
+   "en": "If you get stuck, just describe the word using other words.",
+   "it": "Se ti blocchi, prova a descrivere la parola con altre parole.",
+   "es": "Si te atascas, intenta describir la palabra con otras palabras.",
+   "pt": "Se ficares bloqueado, tenta descrever a palavra com outras palavras.",
+   "pt_BR": "Se você travar, tente descrever a palavra com outras palavras.",
+   "fr": "Si tu bloques, essaie de décrire le mot avec d'autres mots.",
+   "de": "Wenn du nicht weiterweißt, versuch das Wort mit anderen Worten zu beschreiben."
+  }
+ },
+ {
+  "id": "ss-encouraging-034",
+  "topic": "encouraging",
+  "level": "B1",
+  "text": {
+   "en": "I'm sure you'll feel more confident after a few more conversations.",
+   "it": "Scommetto che ti sentirai più sicuro dopo qualche altra conversazione.",
+   "es": "Seguro que te sentirás más seguro después de algunas conversaciones más.",
+   "pt": "Tenho a certeza de que te vais sentir mais confiante depois de mais algumas conversas.",
+   "pt_BR": "Tenho certeza de que você vai se sentir mais confiante depois de mais algumas conversas.",
+   "fr": "Je suis sûr que tu te sentiras plus confiant après quelques conversations de plus.",
+   "de": "Ich bin sicher, dass du dich nach ein paar weiteren Gesprächen sicherer fühlen wirst."
+  }
+ },
+ {
+  "id": "ss-encouraging-035",
+  "topic": "encouraging",
+  "level": "B1",
+  "text": {
+   "en": "Don't compare yourself to others; you're on your own path.",
+   "it": "Non paragonarti agli altri: hai il tuo percorso.",
+   "es": "No te compares con los demás: tienes tu propio camino.",
+   "pt": "Não te compares com os outros: tens o teu próprio caminho.",
+   "pt_BR": "Não se compare aos outros: você tem o seu próprio caminho.",
+   "fr": "Ne te compare pas aux autres : tu as ton propre chemin.",
+   "de": "Vergleich dich nicht mit anderen: Du gehst deinen eigenen Weg."
+  }
+ },
+ {
+  "id": "ss-encouraging-036",
+  "topic": "encouraging",
+  "level": "B1",
+  "text": {
+   "en": "Mistakes are just proof that you are trying.",
+   "it": "Gli errori sono solo la prova che ci stai provando.",
+   "es": "Los errores son solo la prueba de que lo estás intentando.",
+   "pt": "Os erros são apenas a prova de que estás a tentar.",
+   "pt_BR": "Os erros são só a prova de que você está tentando.",
+   "fr": "Les erreurs sont simplement la preuve que tu essaies.",
+   "de": "Fehler sind nur der Beweis, dass du es versuchst."
+  }
+ },
+ {
+  "id": "ss-encouraging-037",
+  "topic": "encouraging",
+  "level": "B1",
+  "text": {
+   "en": "You explained that really well, I understood everything.",
+   "it": "Hai spiegato benissimo, ho capito tutto.",
+   "es": "Lo has explicado muy bien, lo he entendido todo.",
+   "pt": "Explicaste muito bem, percebi tudo.",
+   "pt_BR": "Você explicou muito bem, entendi tudo.",
+   "fr": "Tu l'as très bien expliqué, j'ai tout compris.",
+   "de": "Du hast das wirklich gut erklärt, ich habe alles verstanden."
+  }
+ },
+ {
+  "id": "ss-encouraging-038",
+  "topic": "encouraging",
+  "level": "B1",
+  "text": {
+   "en": "It takes courage to speak a language you're still learning.",
+   "it": "Ci vuole coraggio per parlare una lingua che stai ancora imparando.",
+   "es": "Hace falta valentía para hablar un idioma que todavía estás aprendiendo.",
+   "pt": "É preciso coragem para falar uma língua que ainda estás a aprender.",
+   "pt_BR": "É preciso coragem para falar uma língua que você ainda está aprendendo.",
+   "fr": "Il faut du courage pour parler une langue qu'on apprend encore.",
+   "de": "Es braucht Mut, eine Sprache zu sprechen, die man noch lernt."
+  }
+ },
+ {
+  "id": "ss-encouraging-039",
+  "topic": "encouraging",
+  "level": "B1",
+  "text": {
+   "en": "Whatever happens, remember that you have people on your side.",
+   "it": "Qualunque cosa succeda, ricorda che hai delle persone dalla tua parte.",
+   "es": "Pase lo que pase, recuerda que tienes gente de tu lado.",
+   "pt": "Aconteça o que acontecer, lembra-te de que tens pessoas ao teu lado.",
+   "pt_BR": "Aconteça o que acontecer, lembre-se de que você tem gente do seu lado.",
+   "fr": "Quoi qu'il arrive, souviens-toi que tu as des gens de ton côté.",
+   "de": "Was auch passiert, denk daran, dass du Menschen auf deiner Seite hast."
+  }
+ },
+ {
+  "id": "ss-encouraging-040",
+  "topic": "encouraging",
+  "level": "B1",
+  "text": {
+   "en": "Let's try again together, and I'll help you with the hard parts.",
+   "it": "Riproviamo insieme e ti aiuto con le parti difficili.",
+   "es": "Probemos otra vez juntos y te ayudo con las partes difíciles.",
+   "pt": "Vamos tentar outra vez juntos e eu ajudo-te nas partes difíceis.",
+   "pt_BR": "Vamos tentar de novo juntos, e eu te ajudo nas partes difíceis.",
+   "fr": "Réessayons ensemble, et je t'aiderai pour les passages difficiles.",
+   "de": "Lass es uns zusammen noch einmal versuchen, ich helfe dir bei den schwierigen Stellen."
+  }
+ },
+ {
+  "id": "ss-encouraging-041",
+  "topic": "encouraging",
+  "level": "B1",
+  "text": {
+   "en": "A bad day doesn't erase all the progress you've made.",
+   "it": "Una brutta giornata non cancella tutti i progressi che hai fatto.",
+   "es": "Un mal día no borra todo el progreso que has hecho.",
+   "pt": "Um dia mau não apaga todo o progresso que fizeste.",
+   "pt_BR": "Um dia ruim não apaga todo o progresso que você fez.",
+   "fr": "Une mauvaise journée n'efface pas tous les progrès que tu as faits.",
+   "de": "Ein schlechter Tag löscht nicht all deine Fortschritte aus."
+  }
+ },
+ {
+  "id": "ss-encouraging-042",
+  "topic": "encouraging",
+  "level": "B1",
+  "text": {
+   "en": "You don't need perfect grammar for people to understand and appreciate you.",
+   "it": "Non serve una grammatica perfetta perché gli altri ti capiscano e ti apprezzino.",
+   "es": "No hace falta una gramática perfecta para que te entiendan y te aprecien.",
+   "pt": "Não é preciso uma gramática perfeita para que as pessoas te compreendam e te apreciem.",
+   "pt_BR": "Você não precisa de uma gramática perfeita para as pessoas te entenderem e gostarem de você.",
+   "fr": "Pas besoin d'une grammaire parfaite pour que les gens te comprennent et t'apprécient.",
+   "de": "Du brauchst keine perfekte Grammatik, damit andere dich verstehen und schätzen."
+  }
+ },
+ {
+  "id": "ss-encouraging-043",
+  "topic": "encouraging",
+  "level": "B2",
+  "text": {
+   "en": "Progress rarely feels linear, but looking back, you'll see how far you've come.",
+   "it": "I progressi raramente sembrano lineari, ma guardando indietro vedrai quanta strada hai fatto.",
+   "es": "El progreso rara vez parece lineal, pero al mirar atrás verás cuánto has avanzado.",
+   "pt": "O progresso raramente parece linear, mas, quando olhares para trás, vais ver o quanto avançaste.",
+   "pt_BR": "O progresso raramente parece linear, mas, olhando para trás, você vai ver o quanto avançou.",
+   "fr": "Les progrès semblent rarement linéaires, mais en regardant en arrière, tu verras le chemin parcouru.",
+   "de": "Fortschritt fühlt sich selten linear an, aber im Rückblick siehst du, wie weit du gekommen bist."
+  }
+ },
+ {
+  "id": "ss-encouraging-044",
+  "topic": "encouraging",
+  "level": "B2",
+  "text": {
+   "en": "What matters most is that you keep showing up, even on the difficult days.",
+   "it": "Ciò che conta di più è che continui a esserci, anche nei giorni difficili.",
+   "es": "Lo que más importa es que sigas apareciendo, incluso en los días difíciles.",
+   "pt": "O que mais importa é que continues a aparecer, mesmo nos dias difíceis.",
+   "pt_BR": "O que mais importa é que você continue aparecendo, mesmo nos dias difíceis.",
+   "fr": "Ce qui compte le plus, c'est que tu continues à venir, même les jours difficiles.",
+   "de": "Am wichtigsten ist, dass du dranbleibst, auch an schwierigen Tagen."
+  }
+ },
+ {
+  "id": "ss-encouraging-045",
+  "topic": "encouraging",
+  "level": "B2",
+  "text": {
+   "en": "Don't let the fear of embarrassing yourself stop you from saying what you want to say.",
+   "it": "Non lasciare che la paura di fare una brutta figura ti impedisca di dire ciò che vuoi dire.",
+   "es": "No dejes que el miedo a quedar mal te impida decir lo que quieres decir.",
+   "pt": "Não deixes que o medo de fazer má figura te impeça de dizer o que queres.",
+   "pt_BR": "Não deixe o medo de pagar mico te impedir de dizer o que você quer.",
+   "fr": "Ne laisse pas la peur de te ridiculiser t'empêcher de dire ce que tu veux dire.",
+   "de": "Lass nicht zu, dass die Angst, dich zu blamieren, dich daran hindert zu sagen, was du sagen willst."
+  }
+ },
+ {
+  "id": "ss-encouraging-046",
+  "topic": "encouraging",
+  "level": "B2",
+  "text": {
+   "en": "I genuinely admire the determination you show in improving despite the obstacles.",
+   "it": "Ammiro sinceramente la determinazione con cui cerchi di migliorare nonostante gli ostacoli.",
+   "es": "Admiro sinceramente la determinación con la que intentas mejorar a pesar de los obstáculos.",
+   "pt": "Admiro sinceramente a determinação com que tentas melhorar apesar dos obstáculos.",
+   "pt_BR": "Admiro sinceramente a determinação com que você tenta melhorar apesar dos obstáculos.",
+   "fr": "J'admire sincèrement la détermination avec laquelle tu cherches à t'améliorer malgré les obstacles.",
+   "de": "Ich bewundere aufrichtig die Entschlossenheit, mit der du dich trotz aller Hindernisse verbesserst."
+  }
+ },
+ {
+  "id": "ss-encouraging-047",
+  "topic": "encouraging",
+  "level": "B2",
+  "text": {
+   "en": "Whenever you doubt yourself, remember how much you have already overcome.",
+   "it": "Ogni volta che dubiti di te, ricorda quanto hai già superato.",
+   "es": "Cada vez que dudes de ti, recuerda todo lo que ya has superado.",
+   "pt": "Sempre que duvidares de ti, lembra-te de tudo o que já superaste.",
+   "pt_BR": "Sempre que você duvidar de você, lembre-se de tudo que já superou.",
+   "fr": "Chaque fois que tu doutes de toi, rappelle-toi tout ce que tu as déjà surmonté.",
+   "de": "Immer wenn du an dir zweifelst, denk daran, wie viel du schon gemeistert hast."
+  }
+ },
+ {
+  "id": "ss-encouraging-048",
+  "topic": "encouraging",
+  "level": "B2",
+  "text": {
+   "en": "Taking a break is not failing; sometimes it's exactly what moves you forward.",
+   "it": "Fare una pausa non significa fallire: a volte è proprio ciò che ti fa andare avanti.",
+   "es": "Tomarse un descanso no es fracasar: a veces es justo lo que te hace avanzar.",
+   "pt": "Fazer uma pausa não é falhar: às vezes é exatamente o que te faz avançar.",
+   "pt_BR": "Fazer uma pausa não é fracassar: às vezes é exatamente o que faz você avançar.",
+   "fr": "Faire une pause, ce n'est pas échouer : parfois, c'est exactement ce qui te fait avancer.",
+   "de": "Eine Pause zu machen heißt nicht zu scheitern: Manchmal bringt sie dich genau weiter."
+  }
+ },
+ {
+  "id": "ss-encouraging-049",
+  "topic": "encouraging",
+  "level": "B2",
+  "text": {
+   "en": "Real conversations are the best teacher, and you're already having them.",
+   "it": "Le conversazioni vere sono il miglior insegnante, e tu le stai già facendo.",
+   "es": "Las conversaciones reales son el mejor maestro, y tú ya las estás teniendo.",
+   "pt": "As conversas reais são o melhor professor, e tu já as estás a ter.",
+   "pt_BR": "Conversas reais são o melhor professor, e você já está tendo várias.",
+   "fr": "Les vraies conversations sont le meilleur professeur, et tu en as déjà.",
+   "de": "Echte Gespräche sind der beste Lehrer, und du führst sie schon."
+  }
+ },
+ {
+  "id": "ss-encouraging-050",
+  "topic": "encouraging",
+  "level": "B2",
+  "text": {
+   "en": "It's perfectly fine not to have all the answers yet; curiosity will carry you further than perfection.",
+   "it": "Va benissimo non avere ancora tutte le risposte: la curiosità ti porterà più lontano della perfezione.",
+   "es": "Está perfectamente bien no tener todas las respuestas todavía: la curiosidad te llevará más lejos que la perfección.",
+   "pt": "Não faz mal não teres ainda todas as respostas: a curiosidade leva-te mais longe do que a perfeição.",
+   "pt_BR": "Não tem problema não ter todas as respostas ainda: a curiosidade leva você mais longe do que a perfeição.",
+   "fr": "Ce n'est pas grave de ne pas encore avoir toutes les réponses : la curiosité te mènera plus loin que la perfection.",
+   "de": "Es ist völlig in Ordnung, noch nicht alle Antworten zu haben: Neugier bringt dich weiter als Perfektion."
+  }
+ }
+]

@@ -1,0 +1,1302 @@
+[
+ {
+  "id": "ib-hometown-001",
+  "topic": "hometown",
+  "text": {
+   "en": "What's a dish from your hometown that everyone should try once?",
+   "it": "Qual è un piatto della tua città natale che tutti dovrebbero provare almeno una volta?",
+   "es": "¿Qué plato de tu ciudad natal debería probar todo el mundo al menos una vez?",
+   "pt": "Qual é um prato da tua terra que toda a gente devia provar pelo menos uma vez?",
+   "pt_BR": "Qual é um prato da sua cidade natal que todo mundo deveria provar pelo menos uma vez?",
+   "fr": "Quel plat de ta ville natale tout le monde devrait-il goûter au moins une fois ?",
+   "de": "Welches Gericht aus deiner Heimatstadt sollte jeder einmal probiert haben?"
+  }
+ },
+ {
+  "id": "ib-hometown-002",
+  "topic": "hometown",
+  "text": {
+   "en": "What is your hometown famous for?",
+   "it": "Per che cosa è famosa la tua città natale?",
+   "es": "¿Por qué es famosa tu ciudad natal?",
+   "pt": "Pelo que é famosa a tua terra?",
+   "pt_BR": "Pelo que a sua cidade natal é famosa?",
+   "fr": "Pour quoi ta ville natale est-elle célèbre ?",
+   "de": "Wofür ist deine Heimatstadt berühmt?"
+  }
+ },
+ {
+  "id": "ib-hometown-003",
+  "topic": "hometown",
+  "text": {
+   "en": "What's the best season to visit your hometown, and why?",
+   "it": "Qual è la stagione migliore per visitare la tua città natale, e perché?",
+   "es": "¿Cuál es la mejor época para visitar tu ciudad natal y por qué?",
+   "pt": "Qual é a melhor altura do ano para visitar a tua terra e porquê?",
+   "pt_BR": "Qual é a melhor época do ano para visitar a sua cidade natal e por quê?",
+   "fr": "Quelle est la meilleure saison pour visiter ta ville natale, et pourquoi ?",
+   "de": "Was ist die beste Jahreszeit, um deine Heimatstadt zu besuchen, und warum?"
+  }
+ },
+ {
+  "id": "ib-hometown-004",
+  "topic": "hometown",
+  "text": {
+   "en": "If I visited your hometown for one day, where would you take me first?",
+   "it": "Se visitassi la tua città natale per un giorno, dove mi porteresti per prima cosa?",
+   "es": "Si visitara tu ciudad natal por un día, ¿adónde me llevarías primero?",
+   "pt": "Se eu visitasse a tua terra por um dia, para onde me levarias primeiro?",
+   "pt_BR": "Se eu visitasse a sua cidade natal por um dia, aonde você me levaria primeiro?",
+   "fr": "Si je visitais ta ville natale pendant une journée, où m'emmènerais-tu en premier ?",
+   "de": "Wenn ich deine Heimatstadt einen Tag lang besuchen würde, wohin würdest du mich zuerst mitnehmen?"
+  }
+ },
+ {
+  "id": "ib-hometown-005",
+  "topic": "hometown",
+  "text": {
+   "en": "What is a local word or expression from your hometown that outsiders never understand?",
+   "it": "Qual è una parola o un'espressione della tua zona che chi viene da fuori non capisce mai?",
+   "es": "¿Cuál es una palabra o expresión de tu ciudad que los de fuera nunca entienden?",
+   "pt": "Qual é uma palavra ou expressão da tua terra que quem vem de fora nunca percebe?",
+   "pt_BR": "Qual é uma palavra ou expressão da sua cidade que quem é de fora nunca entende?",
+   "fr": "Quel mot ou quelle expression de ta région les gens de l'extérieur ne comprennent-ils jamais ?",
+   "de": "Welches Wort oder welchen Ausdruck aus deiner Heimat verstehen Auswärtige nie?"
+  }
+ },
+ {
+  "id": "ib-hometown-006",
+  "topic": "hometown",
+  "text": {
+   "en": "What's your favorite place in your hometown to just sit and relax?",
+   "it": "Qual è il tuo posto preferito della tua città dove sederti a rilassarti?",
+   "es": "¿Cuál es tu lugar favorito de tu ciudad para sentarte a relajarte?",
+   "pt": "Qual é o teu sítio preferido na tua terra para te sentares a relaxar?",
+   "pt_BR": "Qual é o seu lugar favorito na sua cidade para sentar e relaxar?",
+   "fr": "Quel est ton endroit préféré dans ta ville pour t'asseoir et te détendre ?",
+   "de": "Was ist dein Lieblingsplatz in deiner Heimatstadt, um einfach zu sitzen und zu entspannen?"
+  }
+ },
+ {
+  "id": "ib-hometown-007",
+  "topic": "hometown",
+  "text": {
+   "en": "How would you describe your hometown in three words?",
+   "it": "Come descriveresti la tua città natale in tre parole?",
+   "es": "¿Cómo describirías tu ciudad natal en tres palabras?",
+   "pt": "Como descreverias a tua terra em três palavras?",
+   "pt_BR": "Como você descreveria a sua cidade natal em três palavras?",
+   "fr": "Comment décrirais-tu ta ville natale en trois mots ?",
+   "de": "Wie würdest du deine Heimatstadt in drei Wörtern beschreiben?"
+  }
+ },
+ {
+  "id": "ib-hometown-008",
+  "topic": "hometown",
+  "text": {
+   "en": "Is there a festival in your hometown that you never miss?",
+   "it": "C'è una festa nella tua città natale che non perdi mai?",
+   "es": "¿Hay alguna fiesta en tu ciudad natal que nunca te pierdes?",
+   "pt": "Há alguma festa na tua terra que nunca perdes?",
+   "pt_BR": "Existe alguma festa na sua cidade natal que você nunca perde?",
+   "fr": "Y a-t-il une fête dans ta ville natale que tu ne rates jamais ?",
+   "de": "Gibt es in deiner Heimatstadt ein Fest, das du nie verpasst?"
+  }
+ },
+ {
+  "id": "ib-hometown-009",
+  "topic": "hometown",
+  "text": {
+   "en": "What do you love most about the place where you spent your childhood?",
+   "it": "Che cosa ami di più del posto in cui hai passato l'infanzia?",
+   "es": "¿Qué es lo que más te gusta del lugar donde pasaste tu infancia?",
+   "pt": "O que mais gostas do sítio onde passaste a infância?",
+   "pt_BR": "Do que você mais gosta no lugar onde passou a infância?",
+   "fr": "Qu'est-ce que tu aimes le plus dans l'endroit où tu as passé ton enfance ?",
+   "de": "Was gefällt dir am meisten an dem Ort, an dem du aufgewachsen bist?"
+  }
+ },
+ {
+  "id": "ib-hometown-010",
+  "topic": "hometown",
+  "text": {
+   "en": "What's a hidden spot in your town that tourists usually miss?",
+   "it": "Qual è un angolo nascosto della tua città che i turisti di solito non vedono?",
+   "es": "¿Cuál es un rincón escondido de tu ciudad que los turistas suelen pasar por alto?",
+   "pt": "Qual é um cantinho escondido da tua terra que os turistas costumam não ver?",
+   "pt_BR": "Qual é um cantinho escondido da sua cidade que os turistas costumam deixar passar?",
+   "fr": "Quel est un coin caché de ta ville que les touristes manquent souvent ?",
+   "de": "Welcher versteckte Ort in deiner Stadt wird von Touristen meistens übersehen?"
+  }
+ },
+ {
+  "id": "ib-hometown-011",
+  "topic": "hometown",
+  "text": {
+   "en": "What's the weather usually like where you're from?",
+   "it": "Com'è di solito il tempo dalle tue parti?",
+   "es": "¿Cómo suele ser el tiempo en tu tierra?",
+   "pt": "Como costuma ser o tempo na tua terra?",
+   "pt_BR": "Como costuma ser o clima na sua cidade?",
+   "fr": "Quel temps fait-il d'habitude chez toi ?",
+   "de": "Wie ist das Wetter bei dir zu Hause normalerweise?"
+  }
+ },
+ {
+  "id": "ib-hometown-012",
+  "topic": "hometown",
+  "text": {
+   "en": "What's the best street food or snack you can find in your hometown?",
+   "it": "Qual è il miglior cibo di strada o spuntino che si trova nella tua città?",
+   "es": "¿Cuál es la mejor comida callejera o merienda que se encuentra en tu ciudad?",
+   "pt": "Qual é a melhor comida de rua ou petisco que se encontra na tua terra?",
+   "pt_BR": "Qual é a melhor comida de rua ou lanche que dá para encontrar na sua cidade?",
+   "fr": "Quel est le meilleur street food ou en-cas qu'on trouve dans ta ville ?",
+   "de": "Was ist das beste Streetfood oder der beste Snack in deiner Heimatstadt?"
+  }
+ },
+ {
+  "id": "ib-hometown-013",
+  "topic": "hometown",
+  "text": {
+   "en": "Does your hometown have a local legend or story that people love to tell?",
+   "it": "La tua città ha una leggenda o una storia locale che la gente ama raccontare?",
+   "es": "¿Tiene tu ciudad alguna leyenda o historia local que a la gente le encante contar?",
+   "pt": "A tua terra tem alguma lenda ou história local que as pessoas gostem de contar?",
+   "pt_BR": "A sua cidade tem alguma lenda ou história local que as pessoas adoram contar?",
+   "fr": "Ta ville a-t-elle une légende ou une histoire locale que les gens aiment raconter ?",
+   "de": "Gibt es in deiner Heimatstadt eine Legende oder Geschichte, die die Leute gern erzählen?"
+  }
+ },
+ {
+  "id": "ib-hometown-014",
+  "topic": "hometown",
+  "text": {
+   "en": "How do people in your hometown usually spend a Sunday afternoon?",
+   "it": "Come passa di solito la domenica pomeriggio la gente della tua città?",
+   "es": "¿Cómo suele pasar la gente de tu ciudad el domingo por la tarde?",
+   "pt": "Como é que as pessoas da tua terra costumam passar a tarde de domingo?",
+   "pt_BR": "Como as pessoas da sua cidade costumam passar a tarde de domingo?",
+   "fr": "Comment les gens de ta ville passent-ils d'habitude le dimanche après-midi ?",
+   "de": "Wie verbringen die Leute in deiner Heimatstadt normalerweise den Sonntagnachmittag?"
+  }
+ },
+ {
+  "id": "ib-hometown-015",
+  "topic": "hometown",
+  "text": {
+   "en": "What's one thing about your hometown that surprises visitors?",
+   "it": "Che cosa della tua città natale sorprende di solito i visitatori?",
+   "es": "¿Qué es lo que más sorprende a los visitantes de tu ciudad natal?",
+   "pt": "O que é que costuma surpreender os visitantes da tua terra?",
+   "pt_BR": "O que costuma surpreender os visitantes da sua cidade natal?",
+   "fr": "Qu'est-ce qui surprend le plus les visiteurs dans ta ville natale ?",
+   "de": "Was überrascht Besucher in deiner Heimatstadt am meisten?"
+  }
+ },
+ {
+  "id": "ib-hometown-016",
+  "topic": "hometown",
+  "text": {
+   "en": "Which season is the most beautiful where you live?",
+   "it": "Qual è la stagione più bella dove vivi?",
+   "es": "¿Qué estación es la más bonita donde vives?",
+   "pt": "Qual é a estação mais bonita onde vives?",
+   "pt_BR": "Qual é a estação mais bonita onde você mora?",
+   "fr": "Quelle saison est la plus belle là où tu habites ?",
+   "de": "Welche Jahreszeit ist bei dir am schönsten?"
+  }
+ },
+ {
+  "id": "ib-hometown-017",
+  "topic": "hometown",
+  "text": {
+   "en": "What's the local accent like in your hometown?",
+   "it": "Com'è l'accento della tua zona?",
+   "es": "¿Cómo es el acento de tu zona?",
+   "pt": "Como é o sotaque da tua terra?",
+   "pt_BR": "Como é o sotaque da sua região?",
+   "fr": "Comment est l'accent de ta région ?",
+   "de": "Wie klingt der Dialekt oder Akzent in deiner Heimat?"
+  }
+ },
+ {
+  "id": "ib-hometown-018",
+  "topic": "hometown",
+  "text": {
+   "en": "Is your hometown a big city, a small town, or a village?",
+   "it": "La tua città natale è una grande città, una cittadina o un paese?",
+   "es": "¿Tu ciudad natal es una gran ciudad, un pueblo o una aldea?",
+   "pt": "A tua terra é uma cidade grande, uma vila ou uma aldeia?",
+   "pt_BR": "A sua cidade natal é uma cidade grande, uma cidadezinha ou uma vila?",
+   "fr": "Ta ville natale est-elle une grande ville, une petite ville ou un village ?",
+   "de": "Ist deine Heimat eine Großstadt, eine Kleinstadt oder ein Dorf?"
+  }
+ },
+ {
+  "id": "ib-hometown-019",
+  "topic": "hometown",
+  "text": {
+   "en": "What's a tradition from your hometown that you'd like to share with the world?",
+   "it": "Quale tradizione della tua città natale ti piacerebbe far conoscere al mondo?",
+   "es": "¿Qué tradición de tu ciudad natal te gustaría compartir con el mundo?",
+   "pt": "Que tradição da tua terra gostarias de partilhar com o mundo?",
+   "pt_BR": "Qual tradição da sua cidade natal você gostaria de compartilhar com o mundo?",
+   "fr": "Quelle tradition de ta ville natale aimerais-tu faire découvrir au monde ?",
+   "de": "Welche Tradition aus deiner Heimatstadt würdest du gern mit der Welt teilen?"
+  }
+ },
+ {
+  "id": "ib-hometown-020",
+  "topic": "hometown",
+  "text": {
+   "en": "Where would you recommend for the best view in your hometown?",
+   "it": "Dove consiglieresti di andare per il miglior panorama della tua città?",
+   "es": "¿Adónde recomendarías ir para disfrutar de la mejor vista de tu ciudad?",
+   "pt": "Onde recomendarias ir para ter a melhor vista da tua terra?",
+   "pt_BR": "Aonde você recomendaria ir para ter a melhor vista da sua cidade?",
+   "fr": "Où me recommandes-tu d'aller pour avoir la plus belle vue sur ta ville ?",
+   "de": "Wohin würdest du für die schönste Aussicht in deiner Heimatstadt gehen?"
+  }
+ },
+ {
+  "id": "ib-hometown-021",
+  "topic": "hometown",
+  "text": {
+   "en": "What's the nicest walk you can take in your hometown?",
+   "it": "Qual è la passeggiata più bella che si può fare nella tua città?",
+   "es": "¿Cuál es el paseo más bonito que se puede dar en tu ciudad?",
+   "pt": "Qual é o passeio a pé mais bonito que se pode fazer na tua terra?",
+   "pt_BR": "Qual é o passeio a pé mais bonito que dá para fazer na sua cidade?",
+   "fr": "Quelle est la plus belle promenade qu'on peut faire dans ta ville ?",
+   "de": "Welcher ist der schönste Spaziergang in deiner Heimatstadt?"
+  }
+ },
+ {
+  "id": "ib-hometown-022",
+  "topic": "hometown",
+  "text": {
+   "en": "What's your earliest memory of your hometown?",
+   "it": "Qual è il tuo primo ricordo della tua città natale?",
+   "es": "¿Cuál es tu primer recuerdo de tu ciudad natal?",
+   "pt": "Qual é a tua primeira memória da tua terra?",
+   "pt_BR": "Qual é a sua primeira lembrança da sua cidade natal?",
+   "fr": "Quel est ton plus ancien souvenir de ta ville natale ?",
+   "de": "Was ist deine früheste Erinnerung an deine Heimatstadt?"
+  }
+ },
+ {
+  "id": "ib-hometown-023",
+  "topic": "hometown",
+  "text": {
+   "en": "Is there a local market in your hometown? What do people buy there?",
+   "it": "C'è un mercato locale nella tua città? Che cosa si compra di solito?",
+   "es": "¿Hay un mercado local en tu ciudad? ¿Qué suele comprar la gente allí?",
+   "pt": "Há algum mercado local na tua terra? O que é que as pessoas costumam comprar lá?",
+   "pt_BR": "Existe algum mercado local na sua cidade? O que as pessoas costumam comprar lá?",
+   "fr": "Y a-t-il un marché local dans ta ville ? Qu'est-ce que les gens y achètent ?",
+   "de": "Gibt es in deiner Heimatstadt einen Markt? Was kauft man dort?"
+  }
+ },
+ {
+  "id": "ib-hometown-024",
+  "topic": "hometown",
+  "text": {
+   "en": "What's the one souvenir I should bring back from your hometown?",
+   "it": "Quale souvenir dovrei portare a casa dalla tua città natale?",
+   "es": "¿Qué recuerdo debería traerme de tu ciudad natal?",
+   "pt": "Que lembrança devo trazer da tua terra?",
+   "pt_BR": "Qual lembrancinha devo trazer da sua cidade natal?",
+   "fr": "Quel souvenir devrais-je rapporter de ta ville natale ?",
+   "de": "Welches Souvenir sollte ich aus deiner Heimatstadt mitbringen?"
+  }
+ },
+ {
+  "id": "ib-hometown-025",
+  "topic": "hometown",
+  "text": {
+   "en": "What do you miss most about your hometown when you're away?",
+   "it": "Che cosa ti manca di più della tua città natale quando non ci sei?",
+   "es": "¿Qué es lo que más echas de menos de tu ciudad natal cuando estás fuera?",
+   "pt": "O que é que mais te falta da tua terra quando estás longe?",
+   "pt_BR": "O que você mais sente falta da sua cidade natal quando está longe?",
+   "fr": "Qu'est-ce qui te manque le plus de ta ville natale quand tu es loin ?",
+   "de": "Was vermisst du an deiner Heimatstadt am meisten, wenn du weg bist?"
+  }
+ },
+ {
+  "id": "ib-hometown-026",
+  "topic": "hometown",
+  "text": {
+   "en": "What music or sounds remind you of home?",
+   "it": "Quale musica o quali suoni ti ricordano casa?",
+   "es": "¿Qué música o sonidos te recuerdan a casa?",
+   "pt": "Que música ou sons te fazem lembrar casa?",
+   "pt_BR": "Que música ou sons fazem você lembrar de casa?",
+   "fr": "Quelle musique ou quels sons te rappellent la maison ?",
+   "de": "Welche Musik oder Geräusche erinnern dich an zu Hause?"
+  }
+ },
+ {
+  "id": "ib-hometown-027",
+  "topic": "hometown",
+  "text": {
+   "en": "What's the best place in your hometown to meet friends?",
+   "it": "Qual è il posto migliore della tua città per ritrovarsi con gli amici?",
+   "es": "¿Cuál es el mejor sitio de tu ciudad para quedar con amigos?",
+   "pt": "Qual é o melhor sítio da tua terra para encontrar amigos?",
+   "pt_BR": "Qual é o melhor lugar da sua cidade para encontrar os amigos?",
+   "fr": "Quel est le meilleur endroit de ta ville pour retrouver des amis ?",
+   "de": "Was ist der beste Ort in deiner Heimatstadt, um Freunde zu treffen?"
+  }
+ },
+ {
+  "id": "ib-hometown-028",
+  "topic": "hometown",
+  "text": {
+   "en": "What's a local sport or game that people in your hometown love?",
+   "it": "Qual è lo sport o il gioco locale che la gente della tua città ama di più?",
+   "es": "¿Cuál es el deporte o juego local que más le gusta a la gente de tu ciudad?",
+   "pt": "Qual é o desporto ou jogo local de que as pessoas da tua terra mais gostam?",
+   "pt_BR": "Qual é o esporte ou jogo local de que as pessoas da sua cidade mais gostam?",
+   "fr": "Quel sport ou jeu local les gens de ta ville adorent-ils ?",
+   "de": "Welchen Sport oder welches Spiel lieben die Leute in deiner Heimatstadt besonders?"
+  }
+ },
+ {
+  "id": "ib-hometown-029",
+  "topic": "hometown",
+  "text": {
+   "en": "How do people in your hometown celebrate a special occasion?",
+   "it": "Come festeggiano le occasioni speciali nella tua città natale?",
+   "es": "¿Cómo celebran las ocasiones especiales en tu ciudad natal?",
+   "pt": "Como é que se celebram as ocasiões especiais na tua terra?",
+   "pt_BR": "Como as pessoas comemoram as ocasiões especiais na sua cidade natal?",
+   "fr": "Comment fête-t-on les grandes occasions dans ta ville natale ?",
+   "de": "Wie feiert man in deiner Heimatstadt besondere Anlässe?"
+  }
+ },
+ {
+  "id": "ib-hometown-030",
+  "topic": "hometown",
+  "text": {
+   "en": "Which famous person or artist comes from your hometown?",
+   "it": "Quale persona famosa o artista viene dalla tua città natale?",
+   "es": "¿Qué persona famosa o artista es de tu ciudad natal?",
+   "pt": "Que pessoa famosa ou artista é da tua terra?",
+   "pt_BR": "Que pessoa famosa ou artista é da sua cidade natal?",
+   "fr": "Quelle personnalité ou quel artiste est originaire de ta ville natale ?",
+   "de": "Welche berühmte Persönlichkeit oder welcher Künstler kommt aus deiner Heimatstadt?"
+  }
+ },
+ {
+  "id": "ib-hometown-031",
+  "topic": "hometown",
+  "text": {
+   "en": "What's the coffee or tea culture like where you live?",
+   "it": "Com'è la cultura del caffè o del tè dalle tue parti?",
+   "es": "¿Cómo es la cultura del café o del té donde vives?",
+   "pt": "Como é a cultura do café ou do chá onde vives?",
+   "pt_BR": "Como é a cultura do café ou do chá onde você mora?",
+   "fr": "Comment est la culture du café ou du thé là où tu habites ?",
+   "de": "Wie sieht die Kaffee- oder Teekultur bei dir aus?"
+  }
+ },
+ {
+  "id": "ib-hometown-032",
+  "topic": "hometown",
+  "text": {
+   "en": "What would a perfect weekend in your hometown look like?",
+   "it": "Come sarebbe un weekend perfetto nella tua città natale?",
+   "es": "¿Cómo sería un fin de semana perfecto en tu ciudad natal?",
+   "pt": "Como seria um fim de semana perfeito na tua terra?",
+   "pt_BR": "Como seria um fim de semana perfeito na sua cidade natal?",
+   "fr": "À quoi ressemblerait un week-end parfait dans ta ville natale ?",
+   "de": "Wie sähe ein perfektes Wochenende in deiner Heimatstadt aus?"
+  }
+ },
+ {
+  "id": "ib-hometown-033",
+  "topic": "hometown",
+  "text": {
+   "en": "What changes have you noticed in your hometown over the years?",
+   "it": "Quali cambiamenti hai notato nella tua città natale negli ultimi anni?",
+   "es": "¿Qué cambios has notado en tu ciudad natal con los años?",
+   "pt": "Que mudanças reparaste na tua terra ao longo dos anos?",
+   "pt_BR": "Que mudanças você percebeu na sua cidade natal ao longo dos anos?",
+   "fr": "Quels changements as-tu remarqués dans ta ville natale au fil des années ?",
+   "de": "Welche Veränderungen hast du in deiner Heimatstadt im Lauf der Jahre bemerkt?"
+  }
+ },
+ {
+  "id": "ib-hometown-034",
+  "topic": "hometown",
+  "text": {
+   "en": "Is there a river, sea, lake, or mountain near your hometown? What do you do there?",
+   "it": "C'è un fiume, un mare, un lago o una montagna vicino alla tua città? Che cosa ci fai?",
+   "es": "¿Hay un río, un mar, un lago o una montaña cerca de tu ciudad? ¿Qué haces allí?",
+   "pt": "Há algum rio, mar, lago ou montanha perto da tua terra? O que fazes lá?",
+   "pt_BR": "Tem algum rio, mar, lago ou montanha perto da sua cidade? O que você faz lá?",
+   "fr": "Y a-t-il une rivière, une mer, un lac ou une montagne près de ta ville ? Qu'y fais-tu ?",
+   "de": "Gibt es in der Nähe deiner Heimatstadt einen Fluss, ein Meer, einen See oder einen Berg? Was machst du dort?"
+  }
+ },
+ {
+  "id": "ib-hometown-035",
+  "topic": "hometown",
+  "text": {
+   "en": "What's a typical breakfast in your hometown?",
+   "it": "Com'è una colazione tipica nella tua città natale?",
+   "es": "¿Cómo es un desayuno típico en tu ciudad natal?",
+   "pt": "Como é um pequeno-almoço típico na tua terra?",
+   "pt_BR": "Como é um café da manhã típico na sua cidade natal?",
+   "fr": "À quoi ressemble un petit-déjeuner typique dans ta ville natale ?",
+   "de": "Wie sieht ein typisches Frühstück in deiner Heimatstadt aus?"
+  }
+ },
+ {
+  "id": "ib-hometown-036",
+  "topic": "hometown",
+  "text": {
+   "en": "What's a place in your hometown that has a special story for you?",
+   "it": "C'è un posto nella tua città natale che ha per te una storia speciale?",
+   "es": "¿Hay algún lugar de tu ciudad natal que tenga una historia especial para ti?",
+   "pt": "Há algum sítio na tua terra que tenha uma história especial para ti?",
+   "pt_BR": "Existe algum lugar na sua cidade natal que tenha uma história especial para você?",
+   "fr": "Y a-t-il un endroit de ta ville natale qui a une histoire particulière pour toi ?",
+   "de": "Gibt es einen Ort in deiner Heimatstadt, der für dich eine besondere Geschichte hat?"
+  }
+ },
+ {
+  "id": "ib-hometown-037",
+  "topic": "hometown",
+  "text": {
+   "en": "How do people greet each other in your hometown?",
+   "it": "Come ci si saluta nella tua città natale?",
+   "es": "¿Cómo se saluda la gente en tu ciudad natal?",
+   "pt": "Como é que as pessoas se cumprimentam na tua terra?",
+   "pt_BR": "Como as pessoas se cumprimentam na sua cidade natal?",
+   "fr": "Comment les gens se saluent-ils dans ta ville natale ?",
+   "de": "Wie begrüßt man sich in deiner Heimatstadt?"
+  }
+ },
+ {
+  "id": "ib-hometown-038",
+  "topic": "hometown",
+  "text": {
+   "en": "What's the best way to get around your hometown?",
+   "it": "Qual è il modo migliore per spostarsi nella tua città natale?",
+   "es": "¿Cuál es la mejor forma de moverse por tu ciudad natal?",
+   "pt": "Qual é a melhor maneira de se andar pela tua terra?",
+   "pt_BR": "Qual é a melhor forma de se locomover pela sua cidade natal?",
+   "fr": "Quelle est la meilleure façon de se déplacer dans ta ville natale ?",
+   "de": "Wie kommt man in deiner Heimatstadt am besten herum?"
+  }
+ },
+ {
+  "id": "ib-hometown-039",
+  "topic": "hometown",
+  "text": {
+   "en": "Which local dessert or sweet treat should I try first?",
+   "it": "Quale dolce tipico dovrei assaggiare per primo?",
+   "es": "¿Qué postre o dulce típico debería probar primero?",
+   "pt": "Que sobremesa ou doce típico devo provar primeiro?",
+   "pt_BR": "Qual sobremesa ou doce típico eu devo provar primeiro?",
+   "fr": "Quel dessert ou quelle douceur locale devrais-je goûter en premier ?",
+   "de": "Welches typische Dessert oder welche Süßigkeit sollte ich zuerst probieren?"
+  }
+ },
+ {
+  "id": "ib-hometown-040",
+  "topic": "hometown",
+  "text": {
+   "en": "What are people in your hometown most proud of?",
+   "it": "Di che cosa vanno più fieri gli abitanti della tua città natale?",
+   "es": "¿De qué están más orgullosos los habitantes de tu ciudad natal?",
+   "pt": "Do que é que as pessoas da tua terra mais se orgulham?",
+   "pt_BR": "Do que as pessoas da sua cidade natal mais se orgulham?",
+   "fr": "De quoi les gens de ta ville natale sont-ils le plus fiers ?",
+   "de": "Worauf sind die Leute in deiner Heimatstadt am meisten stolz?"
+  }
+ },
+ {
+  "id": "ib-hometown-041",
+  "topic": "hometown",
+  "text": {
+   "en": "What's one piece of advice you'd give a first-time visitor to your hometown?",
+   "it": "Quale consiglio daresti a chi visita per la prima volta la tua città natale?",
+   "es": "¿Qué consejo le darías a alguien que visita tu ciudad natal por primera vez?",
+   "pt": "Que conselho darias a quem visita a tua terra pela primeira vez?",
+   "pt_BR": "Que conselho você daria a quem visita a sua cidade natal pela primeira vez?",
+   "fr": "Quel conseil donnerais-tu à quelqu'un qui visite ta ville natale pour la première fois ?",
+   "de": "Welchen Rat würdest du jemandem geben, der deine Heimatstadt zum ersten Mal besucht?"
+  }
+ },
+ {
+  "id": "ib-hometown-042",
+  "topic": "hometown",
+  "text": {
+   "en": "Do you still live where you grew up, or did you move away?",
+   "it": "Abiti ancora nel posto dove hai passato l'infanzia o hai cambiato città?",
+   "es": "¿Sigues viviendo donde creciste o te mudaste?",
+   "pt": "Ainda vives onde cresceste ou mudaste-te?",
+   "pt_BR": "Você ainda mora onde cresceu ou se mudou?",
+   "fr": "Habites-tu toujours là où tu as grandi, ou as-tu déménagé ?",
+   "de": "Wohnst du noch dort, wo du aufgewachsen bist, oder bist du weggezogen?"
+  }
+ },
+ {
+  "id": "ib-hometown-043",
+  "topic": "hometown",
+  "text": {
+   "en": "What's a childhood game you played in the streets or fields near home?",
+   "it": "A che gioco giocavi da bambino nelle strade o nei campi vicino a casa?",
+   "es": "¿A qué jugabas de pequeño en las calles o en los campos cerca de casa?",
+   "pt": "A que brincavas em pequeno nas ruas ou nos campos perto de casa?",
+   "pt_BR": "Do que você brincava na infância pelas ruas ou campos perto de casa?",
+   "fr": "À quel jeu jouais-tu enfant dans les rues ou les champs près de chez toi ?",
+   "de": "Welches Spiel hast du als Kind auf der Straße oder auf den Feldern bei dir zu Hause gespielt?"
+  }
+ },
+ {
+  "id": "ib-hometown-044",
+  "topic": "hometown",
+  "text": {
+   "en": "What's a smell or taste that instantly takes you back to your hometown?",
+   "it": "Quale profumo o sapore ti riporta subito alla tua città natale?",
+   "es": "¿Qué olor o sabor te lleva al instante a tu ciudad natal?",
+   "pt": "Que cheiro ou sabor te leva logo de volta à tua terra?",
+   "pt_BR": "Que cheiro ou sabor leva você na hora de volta à sua cidade natal?",
+   "fr": "Quelle odeur ou quelle saveur te ramène aussitôt dans ta ville natale ?",
+   "de": "Welcher Geruch oder Geschmack versetzt dich sofort zurück in deine Heimatstadt?"
+  }
+ },
+ {
+  "id": "ib-hometown-045",
+  "topic": "hometown",
+  "text": {
+   "en": "What's the neighborhood of your childhood like?",
+   "it": "Com'è il quartiere della tua infanzia?",
+   "es": "¿Cómo es el barrio de tu infancia?",
+   "pt": "Como é o bairro da tua infância?",
+   "pt_BR": "Como é o bairro da sua infância?",
+   "fr": "Comment est le quartier de ton enfance ?",
+   "de": "Wie ist das Viertel, in dem du aufgewachsen bist?"
+  }
+ },
+ {
+  "id": "ib-hometown-046",
+  "topic": "hometown",
+  "text": {
+   "en": "Is there a local craft or product your region is known for?",
+   "it": "C'è un artigianato o un prodotto locale per cui la tua zona è conosciuta?",
+   "es": "¿Hay alguna artesanía o producto local por el que se conozca tu región?",
+   "pt": "Há algum artesanato ou produto local pelo qual a tua região seja conhecida?",
+   "pt_BR": "Existe algum artesanato ou produto local pelo qual a sua região é conhecida?",
+   "fr": "Y a-t-il un artisanat ou un produit local pour lequel ta région est connue ?",
+   "de": "Gibt es ein Handwerk oder Produkt, für das deine Region bekannt ist?"
+  }
+ },
+ {
+  "id": "ib-hometown-047",
+  "topic": "hometown",
+  "text": {
+   "en": "What kind of nature can you find around your hometown?",
+   "it": "Che tipo di natura si trova intorno alla tua città natale?",
+   "es": "¿Qué tipo de naturaleza se encuentra alrededor de tu ciudad natal?",
+   "pt": "Que tipo de natureza se encontra à volta da tua terra?",
+   "pt_BR": "Que tipo de natureza dá para encontrar ao redor da sua cidade natal?",
+   "fr": "Quel type de nature trouve-t-on autour de ta ville natale ?",
+   "de": "Welche Natur findet man rund um deine Heimatstadt?"
+  }
+ },
+ {
+  "id": "ib-hometown-048",
+  "topic": "hometown",
+  "text": {
+   "en": "Do you know how your hometown got its name?",
+   "it": "Sai come ha preso il nome la tua città natale?",
+   "es": "¿Sabes cómo recibió su nombre tu ciudad natal?",
+   "pt": "Sabes como é que a tua terra recebeu o seu nome?",
+   "pt_BR": "Você sabe como a sua cidade natal recebeu esse nome?",
+   "fr": "Sais-tu d'où vient le nom de ta ville natale ?",
+   "de": "Weißt du, wie deine Heimatstadt zu ihrem Namen gekommen ist?"
+  }
+ },
+ {
+  "id": "ib-hometown-049",
+  "topic": "hometown",
+  "text": {
+   "en": "What's a typical summer evening like in your hometown?",
+   "it": "Com'è una tipica sera d'estate nella tua città natale?",
+   "es": "¿Cómo es una noche de verano típica en tu ciudad natal?",
+   "pt": "Como é uma noite de verão típica na tua terra?",
+   "pt_BR": "Como é uma noite de verão típica na sua cidade natal?",
+   "fr": "Comment se passe une soirée d'été typique dans ta ville natale ?",
+   "de": "Wie sieht ein typischer Sommerabend in deiner Heimatstadt aus?"
+  }
+ },
+ {
+  "id": "ib-hometown-050",
+  "topic": "hometown",
+  "text": {
+   "en": "If you could show one corner of your hometown to the world, which would it be?",
+   "it": "Se potessi mostrare al mondo un angolo della tua città natale, quale sarebbe?",
+   "es": "Si pudieras enseñar al mundo un rincón de tu ciudad natal, ¿cuál sería?",
+   "pt": "Se pudesses mostrar ao mundo um cantinho da tua terra, qual seria?",
+   "pt_BR": "Se você pudesse mostrar ao mundo um cantinho da sua cidade natal, qual seria?",
+   "fr": "Si tu pouvais montrer un coin de ta ville natale au monde entier, lequel serait-ce ?",
+   "de": "Wenn du der Welt eine Ecke deiner Heimatstadt zeigen könntest, welche wäre es?"
+  }
+ },
+ {
+  "id": "ib-work_studies-001",
+  "topic": "work_studies",
+  "text": {
+   "en": "What do you do for work or study, and what do you enjoy most about it?",
+   "it": "Di cosa ti occupi, lavoro o studio, e cosa ti piace di più?",
+   "es": "¿A qué te dedicas, trabajas o estudias, y qué es lo que más te gusta?",
+   "pt": "O que fazes, trabalhas ou estudas, e do que mais gostas?",
+   "pt_BR": "O que você faz, trabalha ou estuda, e do que mais gosta?",
+   "fr": "Que fais-tu, comme travail ou comme études, et qu'est-ce que tu préfères là-dedans ?",
+   "de": "Was machst du beruflich oder im Studium, und was gefällt dir daran am besten?"
+  }
+ },
+ {
+  "id": "ib-work_studies-002",
+  "topic": "work_studies",
+  "text": {
+   "en": "What made you choose your field of work or study?",
+   "it": "Perché hai scelto il tuo campo di lavoro o di studi?",
+   "es": "¿Por qué elegiste tu campo de trabajo o estudio?",
+   "pt": "Porque escolheste a tua área de trabalho ou de estudo?",
+   "pt_BR": "Por que você escolheu a sua área de trabalho ou de estudo?",
+   "fr": "Pourquoi as-tu choisi ton domaine de travail ou d'études ?",
+   "de": "Warum hast du dich für dein Arbeits- oder Studienfeld entschieden?"
+  }
+ },
+ {
+  "id": "ib-work_studies-003",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's a typical day like in your job or studies?",
+   "it": "Com'è una giornata tipo nel tuo lavoro o nei tuoi studi?",
+   "es": "¿Cómo es un día típico en tu trabajo o tus estudios?",
+   "pt": "Como é um dia típico no teu trabalho ou nos teus estudos?",
+   "pt_BR": "Como é um dia típico no seu trabalho ou nos seus estudos?",
+   "fr": "À quoi ressemble une journée type dans ton travail ou tes études ?",
+   "de": "Wie sieht ein typischer Tag in deinem Job oder Studium aus?"
+  }
+ },
+ {
+  "id": "ib-work_studies-004",
+  "topic": "work_studies",
+  "text": {
+   "en": "What was your favorite subject at school?",
+   "it": "Qual era la tua materia preferita a scuola?",
+   "es": "¿Cuál era tu asignatura favorita en el colegio?",
+   "pt": "Qual era a tua disciplina preferida na escola?",
+   "pt_BR": "Qual era a sua matéria favorita na escola?",
+   "fr": "Quelle était ta matière préférée à l'école ?",
+   "de": "Was war dein Lieblingsfach in der Schule?"
+  }
+ },
+ {
+  "id": "ib-work_studies-005",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's the most interesting thing you've learned recently?",
+   "it": "Qual è la cosa più interessante che hai imparato di recente?",
+   "es": "¿Qué es lo más interesante que has aprendido últimamente?",
+   "pt": "Qual é a coisa mais interessante que aprendeste recentemente?",
+   "pt_BR": "Qual é a coisa mais interessante que você aprendeu recentemente?",
+   "fr": "Quelle est la chose la plus intéressante que tu as apprise récemment ?",
+   "de": "Was ist das Interessanteste, was du in letzter Zeit gelernt hast?"
+  }
+ },
+ {
+  "id": "ib-work_studies-006",
+  "topic": "work_studies",
+  "text": {
+   "en": "If you could try a completely different career, what would it be?",
+   "it": "Se potessi provare una carriera completamente diversa, quale sarebbe?",
+   "es": "Si pudieras probar una carrera completamente distinta, ¿cuál sería?",
+   "pt": "Se pudesses experimentar uma carreira completamente diferente, qual seria?",
+   "pt_BR": "Se você pudesse experimentar uma carreira completamente diferente, qual seria?",
+   "fr": "Si tu pouvais essayer une carrière complètement différente, laquelle choisirais-tu ?",
+   "de": "Wenn du eine ganz andere Laufbahn ausprobieren könntest, welche wäre es?"
+  }
+ },
+ {
+  "id": "ib-work_studies-007",
+  "topic": "work_studies",
+  "text": {
+   "en": "What did you want to be when you grew up?",
+   "it": "Che cosa volevi fare da grande?",
+   "es": "¿Qué querías ser de mayor?",
+   "pt": "O que querias ser quando fosses grande?",
+   "pt_BR": "O que você queria ser quando crescesse?",
+   "fr": "Que voulais-tu faire plus tard, quand tu étais enfant ?",
+   "de": "Was wolltest du als Kind später einmal werden?"
+  }
+ },
+ {
+  "id": "ib-work_studies-008",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's the most unusual job you've ever had or heard about?",
+   "it": "Qual è il lavoro più insolito che hai fatto o di cui hai sentito parlare?",
+   "es": "¿Cuál es el trabajo más inusual que has tenido o del que has oído hablar?",
+   "pt": "Qual é o trabalho mais invulgar que já tiveste ou de que já ouviste falar?",
+   "pt_BR": "Qual é o trabalho mais incomum que você já teve ou de que já ouviu falar?",
+   "fr": "Quel est le métier le plus insolite que tu aies exercé ou dont tu aies entendu parler ?",
+   "de": "Was ist der ungewöhnlichste Job, den du je hattest oder von dem du gehört hast?"
+  }
+ },
+ {
+  "id": "ib-work_studies-009",
+  "topic": "work_studies",
+  "text": {
+   "en": "What skill would you love to learn for your work or studies?",
+   "it": "Quale competenza ti piacerebbe imparare per il tuo lavoro o i tuoi studi?",
+   "es": "¿Qué habilidad te encantaría aprender para tu trabajo o tus estudios?",
+   "pt": "Que competência gostarias de aprender para o teu trabalho ou estudos?",
+   "pt_BR": "Que habilidade você adoraria aprender para o seu trabalho ou estudos?",
+   "fr": "Quelle compétence aimerais-tu apprendre pour ton travail ou tes études ?",
+   "de": "Welche Fähigkeit würdest du gern für Beruf oder Studium lernen?"
+  }
+ },
+ {
+  "id": "ib-work_studies-010",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's the best part of your workday?",
+   "it": "Qual è la parte migliore della tua giornata di lavoro?",
+   "es": "¿Cuál es la mejor parte de tu jornada laboral?",
+   "pt": "Qual é a melhor parte do teu dia de trabalho?",
+   "pt_BR": "Qual é a melhor parte do seu dia de trabalho?",
+   "fr": "Quel est le meilleur moment de ta journée de travail ?",
+   "de": "Was ist der schönste Teil deines Arbeitstages?"
+  }
+ },
+ {
+  "id": "ib-work_studies-011",
+  "topic": "work_studies",
+  "text": {
+   "en": "How do you like to recharge after a busy day at work or class?",
+   "it": "Come ti piace ricaricarti dopo una giornata intensa di lavoro o di lezioni?",
+   "es": "¿Cómo te gusta recargar energías después de un día intenso de trabajo o clases?",
+   "pt": "Como gostas de recarregar energias depois de um dia cheio de trabalho ou aulas?",
+   "pt_BR": "Como você gosta de recarregar as energias depois de um dia cheio de trabalho ou aula?",
+   "fr": "Comment aimes-tu te ressourcer après une journée chargée de travail ou de cours ?",
+   "de": "Wie lädst du nach einem vollen Tag bei der Arbeit oder in der Uni deine Batterien wieder auf?"
+  }
+ },
+ {
+  "id": "ib-work_studies-012",
+  "topic": "work_studies",
+  "text": {
+   "en": "Do you prefer working independently or in a team, and why?",
+   "it": "Preferisci lavorare in autonomia o in squadra, e perché?",
+   "es": "¿Prefieres trabajar en solitario o en equipo, y por qué?",
+   "pt": "Preferes trabalhar de forma independente ou em equipa, e porquê?",
+   "pt_BR": "Você prefere trabalhar de forma independente ou em equipe, e por quê?",
+   "fr": "Préfères-tu travailler en autonomie ou en équipe, et pourquoi ?",
+   "de": "Arbeitest du lieber allein oder im Team, und warum?"
+  }
+ },
+ {
+  "id": "ib-work_studies-013",
+  "topic": "work_studies",
+  "text": {
+   "en": "Which project has been the most satisfying for you?",
+   "it": "Quale progetto ti ha dato più soddisfazione?",
+   "es": "¿Qué proyecto te ha dado más satisfacción?",
+   "pt": "Que projeto te deu mais satisfação?",
+   "pt_BR": "Qual projeto te deu mais satisfação?",
+   "fr": "Quel projet t'a procuré le plus de satisfaction ?",
+   "de": "Welches Projekt hat dir am meisten Freude gemacht?"
+  }
+ },
+ {
+  "id": "ib-work_studies-014",
+  "topic": "work_studies",
+  "text": {
+   "en": "What does your workplace or university look like?",
+   "it": "Com'è il tuo posto di lavoro o la tua università?",
+   "es": "¿Cómo es tu lugar de trabajo o tu universidad?",
+   "pt": "Como é o teu local de trabalho ou a tua universidade?",
+   "pt_BR": "Como é o seu local de trabalho ou a sua universidade?",
+   "fr": "À quoi ressemble ton lieu de travail ou ton université ?",
+   "de": "Wie sieht dein Arbeitsplatz oder deine Uni aus?"
+  }
+ },
+ {
+  "id": "ib-work_studies-015",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's a word from your work vocabulary that's hard to translate?",
+   "it": "Qual è una parola del tuo lavoro che è difficile da tradurre?",
+   "es": "¿Cuál es una palabra de tu trabajo que es difícil de traducir?",
+   "pt": "Qual é uma palavra do teu trabalho que é difícil de traduzir?",
+   "pt_BR": "Qual é uma palavra do seu trabalho que é difícil de traduzir?",
+   "fr": "Quel mot de ton domaine est difficile à traduire ?",
+   "de": "Welches Wort aus deinem Berufsalltag ist schwer zu übersetzen?"
+  }
+ },
+ {
+  "id": "ib-work_studies-016",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's the best advice you've received about your career or studies?",
+   "it": "Qual è il miglior consiglio che hai ricevuto sulla tua carriera o sui tuoi studi?",
+   "es": "¿Cuál es el mejor consejo que te han dado sobre tu carrera o tus estudios?",
+   "pt": "Qual é o melhor conselho que recebeste sobre a tua carreira ou os teus estudos?",
+   "pt_BR": "Qual é o melhor conselho que você recebeu sobre a sua carreira ou os seus estudos?",
+   "fr": "Quel est le meilleur conseil qu'on t'ait donné sur ta carrière ou tes études ?",
+   "de": "Was ist der beste Rat, den du für deine Karriere oder dein Studium bekommen hast?"
+  }
+ },
+ {
+  "id": "ib-work_studies-017",
+  "topic": "work_studies",
+  "text": {
+   "en": "How do you learn new things most effectively?",
+   "it": "Come impari meglio le cose nuove?",
+   "es": "¿Cómo aprendes mejor las cosas nuevas?",
+   "pt": "Como aprendes melhor coisas novas?",
+   "pt_BR": "Como você aprende melhor coisas novas?",
+   "fr": "Comment apprends-tu le mieux de nouvelles choses ?",
+   "de": "Wie lernst du neue Dinge am besten?"
+  }
+ },
+ {
+  "id": "ib-work_studies-018",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's something people often misunderstand about your profession?",
+   "it": "Che cosa si fraintende spesso della tua professione?",
+   "es": "¿Qué es lo que la gente suele malinterpretar sobre tu profesión?",
+   "pt": "O que é que as pessoas costumam perceber mal sobre a tua profissão?",
+   "pt_BR": "O que as pessoas costumam entender errado sobre a sua profissão?",
+   "fr": "Qu'est-ce que les gens comprennent souvent de travers à propos de ton métier ?",
+   "de": "Was wird an deinem Beruf oft missverstanden?"
+  }
+ },
+ {
+  "id": "ib-work_studies-019",
+  "topic": "work_studies",
+  "text": {
+   "en": "Which language would be most useful in your field?",
+   "it": "Quale lingua sarebbe più utile nel tuo settore?",
+   "es": "¿Qué idioma sería más útil en tu sector?",
+   "pt": "Que língua seria mais útil na tua área?",
+   "pt_BR": "Qual idioma seria mais útil na sua área?",
+   "fr": "Quelle langue serait la plus utile dans ton domaine ?",
+   "de": "Welche Sprache wäre in deinem Fachgebiet am nützlichsten?"
+  }
+ },
+ {
+  "id": "ib-work_studies-020",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's the most rewarding moment you've had at work or in class?",
+   "it": "Qual è stato il momento più gratificante che hai vissuto al lavoro o a lezione?",
+   "es": "¿Cuál ha sido el momento más gratificante que has vivido en el trabajo o en clase?",
+   "pt": "Qual foi o momento mais gratificante que viveste no trabalho ou nas aulas?",
+   "pt_BR": "Qual foi o momento mais gratificante que você viveu no trabalho ou na aula?",
+   "fr": "Quel a été le moment le plus gratifiant que tu as vécu au travail ou en cours ?",
+   "de": "Was war der erfüllendste Moment, den du bei der Arbeit oder im Unterricht erlebt hast?"
+  }
+ },
+ {
+  "id": "ib-work_studies-021",
+  "topic": "work_studies",
+  "text": {
+   "en": "Do you work or study from home, or do you go somewhere?",
+   "it": "Lavori o studi da casa o ti sposti in un altro posto?",
+   "es": "¿Trabajas o estudias desde casa o vas a algún sitio?",
+   "pt": "Trabalhas ou estudas em casa ou deslocas-te a algum lado?",
+   "pt_BR": "Você trabalha ou estuda em casa ou sai para algum lugar?",
+   "fr": "Travailles-tu ou étudies-tu à la maison, ou te déplaces-tu quelque part ?",
+   "de": "Arbeitest oder studierst du von zu Hause aus oder gehst du irgendwohin?"
+  }
+ },
+ {
+  "id": "ib-work_studies-022",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's lunchtime like at your workplace or school?",
+   "it": "Com'è la pausa pranzo nel tuo posto di lavoro o nella tua scuola?",
+   "es": "¿Cómo es la hora de comer en tu trabajo o en tu centro de estudios?",
+   "pt": "Como é a hora de almoço no teu trabalho ou na tua escola?",
+   "pt_BR": "Como é o horário de almoço no seu trabalho ou na sua escola?",
+   "fr": "Comment se passe la pause déjeuner à ton travail ou à ton école ?",
+   "de": "Wie läuft die Mittagspause bei deiner Arbeit oder in deiner Schule ab?"
+  }
+ },
+ {
+  "id": "ib-work_studies-023",
+  "topic": "work_studies",
+  "text": {
+   "en": "What topic could you talk about for hours?",
+   "it": "Di quale argomento potresti parlare per ore?",
+   "es": "¿De qué tema podrías hablar durante horas?",
+   "pt": "De que assunto poderias falar durante horas?",
+   "pt_BR": "Sobre qual assunto você poderia falar por horas?",
+   "fr": "De quel sujet pourrais-tu parler pendant des heures ?",
+   "de": "Über welches Thema könntest du stundenlang reden?"
+  }
+ },
+ {
+  "id": "ib-work_studies-024",
+  "topic": "work_studies",
+  "text": {
+   "en": "What did you study, and would you choose the same again?",
+   "it": "Che cosa hai studiato, e sceglieresti di nuovo lo stesso percorso?",
+   "es": "¿Qué estudiaste y volverías a elegir lo mismo?",
+   "pt": "O que estudaste e voltarias a escolher o mesmo?",
+   "pt_BR": "O que você estudou e escolheria a mesma coisa de novo?",
+   "fr": "Qu'as-tu étudié, et referais-tu le même choix ?",
+   "de": "Was hast du studiert, und würdest du es wieder wählen?"
+  }
+ },
+ {
+  "id": "ib-work_studies-025",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's a tool or app you couldn't work or study without?",
+   "it": "Qual è uno strumento o un'app senza cui non potresti lavorare o studiare?",
+   "es": "¿Qué herramienta o aplicación no podrías dejar de usar para trabajar o estudiar?",
+   "pt": "Qual é uma ferramenta ou aplicação sem a qual não conseguirias trabalhar ou estudar?",
+   "pt_BR": "Qual é uma ferramenta ou aplicativo sem o qual você não conseguiria trabalhar ou estudar?",
+   "fr": "Quel outil ou quelle appli te serait indispensable pour travailler ou étudier ?",
+   "de": "Auf welches Tool oder welche App könntest du bei Arbeit oder Studium nicht verzichten?"
+  }
+ },
+ {
+  "id": "ib-work_studies-026",
+  "topic": "work_studies",
+  "text": {
+   "en": "What would your dream workplace look like?",
+   "it": "Come sarebbe il posto di lavoro dei tuoi sogni?",
+   "es": "¿Cómo sería el lugar de trabajo de tus sueños?",
+   "pt": "Como seria o local de trabalho dos teus sonhos?",
+   "pt_BR": "Como seria o local de trabalho dos seus sonhos?",
+   "fr": "À quoi ressemblerait le lieu de travail de tes rêves ?",
+   "de": "Wie sähe dein Traumarbeitsplatz aus?"
+  }
+ },
+ {
+  "id": "ib-work_studies-027",
+  "topic": "work_studies",
+  "text": {
+   "en": "Is there a teacher or mentor who changed the way you think?",
+   "it": "C'è un insegnante o un mentore che ha cambiato il tuo modo di pensare?",
+   "es": "¿Hay algún profesor o mentor que cambió tu forma de pensar?",
+   "pt": "Há algum professor ou mentor que mudou a tua maneira de pensar?",
+   "pt_BR": "Existe algum professor ou mentor que mudou a sua maneira de pensar?",
+   "fr": "Y a-t-il un enseignant ou un mentor qui a changé ta façon de penser ?",
+   "de": "Gibt es einen Lehrer oder Mentor, der deine Denkweise verändert hat?"
+  }
+ },
+ {
+  "id": "ib-work_studies-028",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's a typical work schedule where you live?",
+   "it": "Com'è un tipico orario di lavoro dalle tue parti?",
+   "es": "¿Cómo es un horario de trabajo típico donde vives?",
+   "pt": "Como é um horário de trabalho típico onde vives?",
+   "pt_BR": "Como é um horário de trabalho típico onde você mora?",
+   "fr": "À quoi ressemble un horaire de travail typique chez toi ?",
+   "de": "Wie sehen typische Arbeitszeiten bei dir im Land aus?"
+  }
+ },
+ {
+  "id": "ib-work_studies-029",
+  "topic": "work_studies",
+  "text": {
+   "en": "How do people in your country usually choose their careers?",
+   "it": "Come scelgono di solito la loro carriera le persone nel tuo paese?",
+   "es": "¿Cómo suele elegir la gente su carrera en tu país?",
+   "pt": "Como é que as pessoas no teu país costumam escolher a carreira?",
+   "pt_BR": "Como as pessoas no seu país costumam escolher a carreira?",
+   "fr": "Comment les gens choisissent-ils d'habitude leur carrière dans ton pays ?",
+   "de": "Wie wählen die Menschen in deinem Land normalerweise ihren Beruf?"
+  }
+ },
+ {
+  "id": "ib-work_studies-030",
+  "topic": "work_studies",
+  "text": {
+   "en": "What goal are you working towards at the moment?",
+   "it": "Qual è l'obiettivo a cui stai lavorando in questo periodo?",
+   "es": "¿Qué objetivo estás persiguiendo en este momento?",
+   "pt": "Que objetivo estás a perseguir neste momento?",
+   "pt_BR": "Qual objetivo você está buscando neste momento?",
+   "fr": "Quel objectif poursuis-tu en ce moment ?",
+   "de": "Auf welches Ziel arbeitest du gerade hin?"
+  }
+ },
+ {
+  "id": "ib-work_studies-031",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's the funniest thing that ever happened at your work or school?",
+   "it": "Qual è la cosa più divertente che sia mai successa al tuo lavoro o a scuola?",
+   "es": "¿Cuál es la cosa más divertida que te ha pasado en el trabajo o en el colegio?",
+   "pt": "Qual foi a coisa mais engraçada que já aconteceu no teu trabalho ou na escola?",
+   "pt_BR": "Qual foi a coisa mais engraçada que já aconteceu no seu trabalho ou na escola?",
+   "fr": "Quelle est la chose la plus drôle qui te soit arrivée au travail ou à l'école ?",
+   "de": "Was ist das Lustigste, das dir bei der Arbeit oder in der Schule passiert ist?"
+  }
+ },
+ {
+  "id": "ib-work_studies-032",
+  "topic": "work_studies",
+  "text": {
+   "en": "How do you stay focused when you have lots to do?",
+   "it": "Come mantieni la concentrazione quando hai tante cose da fare?",
+   "es": "¿Cómo mantienes la concentración cuando tienes mucho que hacer?",
+   "pt": "Como manténs a concentração quando tens muito para fazer?",
+   "pt_BR": "Como você mantém o foco quando tem muita coisa para fazer?",
+   "fr": "Comment gardes-tu ta concentration quand tu as beaucoup à faire ?",
+   "de": "Wie bleibst du konzentriert, wenn du viel zu tun hast?"
+  }
+ },
+ {
+  "id": "ib-work_studies-033",
+  "topic": "work_studies",
+  "text": {
+   "en": "How would you explain your job to a ten-year-old?",
+   "it": "Come spiegheresti il tuo lavoro a un bambino di dieci anni?",
+   "es": "¿Cómo le explicarías tu trabajo a un niño de diez años?",
+   "pt": "Como explicarias o teu trabalho a uma criança de dez anos?",
+   "pt_BR": "Como você explicaria o seu trabalho para uma criança de dez anos?",
+   "fr": "Comment expliquerais-tu ton métier à un enfant de dix ans ?",
+   "de": "Wie würdest du einem Zehnjährigen deinen Beruf erklären?"
+  }
+ },
+ {
+  "id": "ib-work_studies-034",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's a hobby you wish could become your job?",
+   "it": "Qual è un hobby che vorresti diventasse il tuo lavoro?",
+   "es": "¿Qué afición te gustaría que se convirtiera en tu trabajo?",
+   "pt": "Que passatempo gostarias que se tornasse o teu trabalho?",
+   "pt_BR": "Qual hobby você gostaria que virasse o seu trabalho?",
+   "fr": "Quel loisir aimerais-tu transformer en métier ?",
+   "de": "Welches Hobby würdest du gern zum Beruf machen?"
+  }
+ },
+ {
+  "id": "ib-work_studies-035",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's the school or university system like in your country?",
+   "it": "Com'è il sistema scolastico o universitario nel tuo paese?",
+   "es": "¿Cómo es el sistema escolar o universitario en tu país?",
+   "pt": "Como é o sistema escolar ou universitário no teu país?",
+   "pt_BR": "Como é o sistema escolar ou universitário no seu país?",
+   "fr": "Comment fonctionne le système scolaire ou universitaire dans ton pays ?",
+   "de": "Wie funktioniert das Schul- oder Hochschulsystem in deinem Land?"
+  }
+ },
+ {
+  "id": "ib-work_studies-036",
+  "topic": "work_studies",
+  "text": {
+   "en": "What new skill have you picked up in the last year?",
+   "it": "Quale nuova competenza hai acquisito nell'ultimo anno?",
+   "es": "¿Qué nueva habilidad has adquirido en el último año?",
+   "pt": "Que nova competência adquiriste no último ano?",
+   "pt_BR": "Que nova habilidade você adquiriu no último ano?",
+   "fr": "Quelle nouvelle compétence as-tu acquise cette dernière année ?",
+   "de": "Welche neue Fähigkeit hast du im letzten Jahr erworben?"
+  }
+ },
+ {
+  "id": "ib-work_studies-037",
+  "topic": "work_studies",
+  "text": {
+   "en": "What do you like to do during a break from work or studies?",
+   "it": "Che cosa ti piace fare durante una pausa dal lavoro o dallo studio?",
+   "es": "¿Qué te gusta hacer durante un descanso del trabajo o del estudio?",
+   "pt": "O que gostas de fazer durante uma pausa do trabalho ou do estudo?",
+   "pt_BR": "O que você gosta de fazer durante uma pausa do trabalho ou dos estudos?",
+   "fr": "Qu'aimes-tu faire pendant une pause de ton travail ou de tes études ?",
+   "de": "Was machst du gern in einer Pause von Arbeit oder Studium?"
+  }
+ },
+ {
+  "id": "ib-work_studies-038",
+  "topic": "work_studies",
+  "text": {
+   "en": "Is there a book or course that inspired you professionally?",
+   "it": "C'è un libro o un corso che ti ha ispirato professionalmente?",
+   "es": "¿Hay algún libro o curso que te haya inspirado profesionalmente?",
+   "pt": "Há algum livro ou curso que te tenha inspirado profissionalmente?",
+   "pt_BR": "Existe algum livro ou curso que inspirou você profissionalmente?",
+   "fr": "Y a-t-il un livre ou un cours qui t'a inspiré dans ta vie professionnelle ?",
+   "de": "Gibt es ein Buch oder einen Kurs, der dich beruflich inspiriert hat?"
+  }
+ },
+ {
+  "id": "ib-work_studies-039",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's the best thing about your colleagues or classmates?",
+   "it": "Qual è la cosa migliore dei tuoi colleghi o compagni di classe?",
+   "es": "¿Qué es lo mejor de tus compañeros de trabajo o de clase?",
+   "pt": "Qual é a melhor coisa dos teus colegas de trabalho ou de turma?",
+   "pt_BR": "Qual é a melhor coisa dos seus colegas de trabalho ou de turma?",
+   "fr": "Quelle est la meilleure chose chez tes collègues ou camarades de classe ?",
+   "de": "Was ist das Beste an deinen Kollegen oder Mitstudierenden?"
+  }
+ },
+ {
+  "id": "ib-work_studies-040",
+  "topic": "work_studies",
+  "text": {
+   "en": "Do you use a foreign language at work or in your studies?",
+   "it": "Usi una lingua straniera al lavoro o nello studio?",
+   "es": "¿Usas un idioma extranjero en el trabajo o en tus estudios?",
+   "pt": "Usas uma língua estrangeira no trabalho ou nos estudos?",
+   "pt_BR": "Você usa uma língua estrangeira no trabalho ou nos estudos?",
+   "fr": "Utilises-tu une langue étrangère dans ton travail ou tes études ?",
+   "de": "Benutzt du bei der Arbeit oder im Studium eine Fremdsprache?"
+  }
+ },
+ {
+  "id": "ib-work_studies-041",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's one thing you'd change about the way people work today?",
+   "it": "Che cosa cambieresti del modo in cui si lavora oggi?",
+   "es": "¿Qué cambiarías de la forma en que se trabaja hoy en día?",
+   "pt": "O que mudarias na forma como as pessoas trabalham hoje em dia?",
+   "pt_BR": "O que você mudaria na forma como as pessoas trabalham hoje em dia?",
+   "fr": "Qu'est-ce que tu changerais dans la façon dont on travaille aujourd'hui ?",
+   "de": "Was würdest du an der heutigen Arbeitsweise ändern?"
+  }
+ },
+ {
+  "id": "ib-work_studies-042",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's a challenge you've overcome in your career or studies?",
+   "it": "Qual è una sfida che hai superato nella tua carriera o nei tuoi studi?",
+   "es": "¿Cuál es un reto que has superado en tu carrera o estudios?",
+   "pt": "Qual é um desafio que superaste na tua carreira ou nos teus estudos?",
+   "pt_BR": "Qual é um desafio que você superou na sua carreira ou nos seus estudos?",
+   "fr": "Quel défi as-tu surmonté dans ta carrière ou tes études ?",
+   "de": "Welche Herausforderung hast du in deiner Karriere oder deinem Studium gemeistert?"
+  }
+ },
+ {
+  "id": "ib-work_studies-043",
+  "topic": "work_studies",
+  "text": {
+   "en": "What does a good day at work or school feel like for you?",
+   "it": "Com'è per te una bella giornata di lavoro o di scuola?",
+   "es": "¿Cómo es para ti un buen día de trabajo o de clase?",
+   "pt": "Como é, para ti, um bom dia de trabalho ou de escola?",
+   "pt_BR": "Como é, para você, um bom dia de trabalho ou de escola?",
+   "fr": "À quoi ressemble pour toi une bonne journée de travail ou de cours ?",
+   "de": "Wie fühlt sich für dich ein guter Tag bei der Arbeit oder in der Schule an?"
+  }
+ },
+ {
+  "id": "ib-work_studies-044",
+  "topic": "work_studies",
+  "text": {
+   "en": "Which job do you think is the most underrated?",
+   "it": "Quale lavoro pensi sia il più sottovalutato?",
+   "es": "¿Qué trabajo crees que es el más infravalorado?",
+   "pt": "Que profissão achas que é a mais subvalorizada?",
+   "pt_BR": "Qual profissão você acha que é a mais subestimada?",
+   "fr": "Selon toi, quel métier est le plus sous-estimé ?",
+   "de": "Welcher Beruf wird deiner Meinung nach am meisten unterschätzt?"
+  }
+ },
+ {
+  "id": "ib-work_studies-045",
+  "topic": "work_studies",
+  "text": {
+   "en": "Are there any traditions at your workplace or university?",
+   "it": "Ci sono tradizioni particolari nel tuo posto di lavoro o nella tua università?",
+   "es": "¿Hay alguna tradición en tu lugar de trabajo o en tu universidad?",
+   "pt": "Há alguma tradição no teu local de trabalho ou na tua universidade?",
+   "pt_BR": "Existe alguma tradição no seu local de trabalho ou na sua universidade?",
+   "fr": "Y a-t-il des traditions sur ton lieu de travail ou dans ton université ?",
+   "de": "Gibt es an deinem Arbeitsplatz oder deiner Uni besondere Traditionen?"
+  }
+ },
+ {
+  "id": "ib-work_studies-046",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's your favorite thing to learn about at the moment?",
+   "it": "Che cosa ti piace imparare di più in questo periodo?",
+   "es": "¿Qué es lo que más te gusta aprender en este momento?",
+   "pt": "O que mais gostas de aprender neste momento?",
+   "pt_BR": "O que você mais gosta de aprender neste momento?",
+   "fr": "Qu'aimes-tu le plus apprendre en ce moment ?",
+   "de": "Was lernst du im Moment am liebsten?"
+  }
+ },
+ {
+  "id": "ib-work_studies-047",
+  "topic": "work_studies",
+  "text": {
+   "en": "How do you celebrate after finishing a big project or exam?",
+   "it": "Come festeggi dopo aver finito un grande progetto o un esame?",
+   "es": "¿Cómo lo celebras cuando terminas un gran proyecto o un examen?",
+   "pt": "Como festejas quando terminas um grande projeto ou um exame?",
+   "pt_BR": "Como você comemora quando termina um grande projeto ou uma prova?",
+   "fr": "Comment fêtes-tu la fin d'un gros projet ou d'un examen ?",
+   "de": "Wie feierst du, wenn du ein großes Projekt oder eine Prüfung geschafft hast?"
+  }
+ },
+ {
+  "id": "ib-work_studies-048",
+  "topic": "work_studies",
+  "text": {
+   "en": "If you could study anything for a year, what would it be?",
+   "it": "Se potessi studiare qualsiasi cosa per un anno, che cosa sceglieresti?",
+   "es": "Si pudieras estudiar lo que quisieras durante un año, ¿qué sería?",
+   "pt": "Se pudesses estudar o que quisesses durante um ano, o que seria?",
+   "pt_BR": "Se você pudesse estudar o que quisesse por um ano, o que seria?",
+   "fr": "Si tu pouvais étudier ce que tu veux pendant un an, ce serait quoi ?",
+   "de": "Wenn du ein Jahr lang alles studieren könntest, was wäre es?"
+  }
+ },
+ {
+  "id": "ib-work_studies-049",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's the most useful thing you've learned outside the classroom?",
+   "it": "Qual è la cosa più utile che hai imparato fuori dall'aula?",
+   "es": "¿Qué es lo más útil que has aprendido fuera del aula?",
+   "pt": "Qual é a coisa mais útil que aprendeste fora da sala de aula?",
+   "pt_BR": "Qual é a coisa mais útil que você aprendeu fora da sala de aula?",
+   "fr": "Quelle est la chose la plus utile que tu as apprise en dehors de la salle de classe ?",
+   "de": "Was ist das Nützlichste, das du außerhalb des Klassenzimmers gelernt hast?"
+  }
+ },
+ {
+  "id": "ib-work_studies-050",
+  "topic": "work_studies",
+  "text": {
+   "en": "What's your commute to work or school like?",
+   "it": "Com'è il tuo tragitto per andare al lavoro o a scuola?",
+   "es": "¿Cómo es tu trayecto al trabajo o al colegio?",
+   "pt": "Como é o teu trajeto para o trabalho ou para a escola?",
+   "pt_BR": "Como é o seu trajeto para o trabalho ou para a escola?",
+   "fr": "Comment se passe ton trajet pour aller au travail ou à l'école ?",
+   "de": "Wie sieht dein Weg zur Arbeit oder zur Schule aus?"
+  }
+ }
+]

@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ss-time_dates-001",
+  "topic": "time_dates",
+  "level": "A1",
+  "text": {
+   "en": "What time is it?",
+   "it": "Che ore sono?",
+   "es": "¿Qué hora es?",
+   "pt": "Que horas são?",
+   "pt_BR": "Que horas são?",
+   "fr": "Quelle heure est-il ?",
+   "de": "Wie spät ist es?"
+  }
+ },
+ {
+  "id": "ss-time_dates-002",
+  "topic": "time_dates",
+  "level": "A1",
+  "text": {
+   "en": "Today is Monday.",
+   "it": "Oggi è lunedì.",
+   "es": "Hoy es lunes.",
+   "pt": "Hoje é segunda-feira.",
+   "pt_BR": "Hoje é segunda-feira.",
+   "fr": "Aujourd'hui, c'est lundi.",
+   "de": "Heute ist Montag."
+  }
+ },
+ {
+  "id": "ss-time_dates-003",
+  "topic": "time_dates",
+  "level": "A1",
+  "text": {
+   "en": "See you tomorrow!",
+   "it": "Ci vediamo domani!",
+   "es": "¡Hasta mañana!",
+   "pt": "Até amanhã!",
+   "pt_BR": "Até amanhã!",
+   "fr": "À demain !",
+   "de": "Bis morgen!"
+  }
+ },
+ {
+  "id": "ss-time_dates-004",
+  "topic": "time_dates",
+  "level": "A1",
+  "text": {
+   "en": "My birthday is in May.",
+   "it": "Il mio compleanno è a maggio.",
+   "es": "Mi cumpleaños es en mayo.",
+   "pt": "O meu aniversário é em maio.",
+   "pt_BR": "Meu aniversário é em maio.",
+   "fr": "Mon anniversaire est en mai.",
+   "de": "Mein Geburtstag ist im Mai."
+  }
+ },
+ {
+  "id": "ss-time_dates-005",
+  "topic": "time_dates",
+  "level": "A1",
+  "text": {
+   "en": "I have time on Saturday.",
+   "it": "Sabato ho tempo.",
+   "es": "El sábado tengo tiempo.",
+   "pt": "No sábado tenho tempo.",
+   "pt_BR": "No sábado eu tenho tempo.",
+   "fr": "J'ai du temps samedi.",
+   "de": "Am Samstag habe ich Zeit."
+  }
+ },
+ {
+  "id": "ss-time_dates-006",
+  "topic": "time_dates",
+  "level": "A1",
+  "text": {
+   "en": "It is half past three.",
+   "it": "Sono le tre e mezza.",
+   "es": "Son las tres y media.",
+   "pt": "São três e meia.",
+   "pt_BR": "São três e meia.",
+   "fr": "Il est trois heures et demie.",
+   "de": "Es ist halb vier."
+  }
+ },
+ {
+  "id": "ss-time_dates-007",
+  "topic": "time_dates",
+  "level": "A1",
+  "text": {
+   "en": "What day is it today?",
+   "it": "Che giorno è oggi?",
+   "es": "¿Qué día es hoy?",
+   "pt": "Que dia é hoje?",
+   "pt_BR": "Que dia é hoje?",
+   "fr": "Quel jour sommes-nous ?",
+   "de": "Welcher Tag ist heute?"
+  }
+ },
+ {
+  "id": "ss-time_dates-008",
+  "topic": "time_dates",
+  "level": "A1",
+  "text": {
+   "en": "Let's meet at noon.",
+   "it": "Vediamoci a mezzogiorno.",
+   "es": "Quedemos a mediodía.",
+   "pt": "Encontramo-nos ao meio-dia.",
+   "pt_BR": "Vamos nos encontrar ao meio-dia.",
+   "fr": "Retrouvons-nous à midi.",
+   "de": "Treffen wir uns um zwölf Uhr mittags."
+  }
+ },
+ {
+  "id": "ss-time_dates-009",
+  "topic": "time_dates",
+  "level": "A1",
+  "text": {
+   "en": "I wake up at seven.",
+   "it": "Mi sveglio alle sette.",
+   "es": "Me despierto a las siete.",
+   "pt": "Acordo às sete.",
+   "pt_BR": "Eu acordo às sete.",
+   "fr": "Je me réveille à sept heures.",
+   "de": "Ich wache um sieben Uhr auf."
+  }
+ },
+ {
+  "id": "ss-time_dates-010",
+  "topic": "time_dates",
+  "level": "A1",
+  "text": {
+   "en": "Yesterday was Sunday.",
+   "it": "Ieri era domenica.",
+   "es": "Ayer fue domingo.",
+   "pt": "Ontem foi domingo.",
+   "pt_BR": "Ontem foi domingo.",
+   "fr": "Hier, c'était dimanche.",
+   "de": "Gestern war Sonntag."
+  }
+ },
+ {
+  "id": "ss-time_dates-011",
+  "topic": "time_dates",
+  "level": "A1",
+  "text": {
+   "en": "Is it early or late?",
+   "it": "È presto o tardi?",
+   "es": "¿Es temprano o tarde?",
+   "pt": "É cedo ou tarde?",
+   "pt_BR": "É cedo ou tarde?",
+   "fr": "C'est tôt ou tard ?",
+   "de": "Ist es früh oder spät?"
+  }
+ },
+ {
+  "id": "ss-time_dates-012",
+  "topic": "time_dates",
+  "level": "A1",
+  "text": {
+   "en": "The week has seven days.",
+   "it": "La settimana ha sette giorni.",
+   "es": "La semana tiene siete días.",
+   "pt": "A semana tem sete dias.",
+   "pt_BR": "A semana tem sete dias.",
+   "fr": "La semaine compte sept jours.",
+   "de": "Die Woche hat sieben Tage."
+  }
+ },
+ {
+  "id": "ss-time_dates-013",
+  "topic": "time_dates",
+  "level": "A1",
+  "text": {
+   "en": "I have plans tonight.",
+   "it": "Stasera ho un impegno.",
+   "es": "Esta noche tengo un compromiso.",
+   "pt": "Esta noite tenho um compromisso.",
+   "pt_BR": "Hoje à noite eu tenho um compromisso.",
+   "fr": "Ce soir, j'ai quelque chose de prévu.",
+   "de": "Heute Abend habe ich schon etwas vor."
+  }
+ },
+ {
+  "id": "ss-time_dates-014",
+  "topic": "time_dates",
+  "level": "A1",
+  "text": {
+   "en": "See you next week!",
+   "it": "Ci vediamo la settimana prossima!",
+   "es": "¡Nos vemos la semana que viene!",
+   "pt": "Vemo-nos para a semana!",
+   "pt_BR": "A gente se vê na semana que vem!",
+   "fr": "À la semaine prochaine !",
+   "de": "Bis nächste Woche!"
+  }
+ },
+ {
+  "id": "ss-time_dates-015",
+  "topic": "time_dates",
+  "level": "A1",
+  "text": {
+   "en": "My class starts at nine.",
+   "it": "La mia lezione inizia alle nove.",
+   "es": "Mi clase empieza a las nueve.",
+   "pt": "A minha aula começa às nove.",
+   "pt_BR": "Minha aula começa às nove.",
+   "fr": "Mon cours commence à neuf heures.",
+   "de": "Mein Kurs beginnt um neun Uhr."
+  }
+ },
+ {
+  "id": "ss-time_dates-016",
+  "topic": "time_dates",
+  "level": "A2",
+  "text": {
+   "en": "What time does the museum open?",
+   "it": "A che ora apre il museo?",
+   "es": "¿A qué hora abre el museo?",
+   "pt": "A que horas abre o museu?",
+   "pt_BR": "A que horas o museu abre?",
+   "fr": "À quelle heure ouvre le musée ?",
+   "de": "Um wie viel Uhr öffnet das Museum?"
+  }
+ },
+ {
+  "id": "ss-time_dates-017",
+  "topic": "time_dates",
+  "level": "A2",
+  "text": {
+   "en": "Do you have time this weekend?",
+   "it": "Hai tempo questo fine settimana?",
+   "es": "¿Tienes tiempo este fin de semana?",
+   "pt": "Tens tempo este fim de semana?",
+   "pt_BR": "Você tem tempo neste fim de semana?",
+   "fr": "Tu as du temps ce week-end ?",
+   "de": "Hast du dieses Wochenende Zeit?"
+  }
+ },
+ {
+  "id": "ss-time_dates-018",
+  "topic": "time_dates",
+  "level": "A2",
+  "text": {
+   "en": "What's the date today?",
+   "it": "Che data è oggi?",
+   "es": "¿A qué fecha estamos hoy?",
+   "pt": "Em que dia estamos hoje?",
+   "pt_BR": "Qual é a data de hoje?",
+   "fr": "Quelle est la date aujourd'hui ?",
+   "de": "Welches Datum haben wir heute?"
+  }
+ },
+ {
+  "id": "ss-time_dates-019",
+  "topic": "time_dates",
+  "level": "A2",
+  "text": {
+   "en": "I usually go to bed around eleven.",
+   "it": "Di solito vado a letto verso le undici.",
+   "es": "Normalmente me acuesto sobre las once.",
+   "pt": "Normalmente deito-me por volta das onze.",
+   "pt_BR": "Normalmente eu vou dormir por volta das onze.",
+   "fr": "D'habitude, je me couche vers onze heures.",
+   "de": "Normalerweise gehe ich gegen elf Uhr ins Bett."
+  }
+ },
+ {
+  "id": "ss-time_dates-020",
+  "topic": "time_dates",
+  "level": "A2",
+  "text": {
+   "en": "The train leaves at a quarter past eight.",
+   "it": "Il treno parte alle otto e un quarto.",
+   "es": "El tren sale a las ocho y cuarto.",
+   "pt": "O comboio parte às oito e um quarto.",
+   "pt_BR": "O trem sai às oito e quinze.",
+   "fr": "Le train part à huit heures et quart.",
+   "de": "Der Zug fährt um Viertel nach acht ab."
+  }
+ },
+ {
+  "id": "ss-time_dates-021",
+  "topic": "time_dates",
+  "level": "A2",
+  "text": {
+   "en": "Can we meet a bit later?",
+   "it": "Possiamo vederci un po' più tardi?",
+   "es": "¿Podemos vernos un poco más tarde?",
+   "pt": "Podemos encontrar-nos um pouco mais tarde?",
+   "pt_BR": "Podemos nos encontrar um pouco mais tarde?",
+   "fr": "On peut se voir un peu plus tard ?",
+   "de": "Können wir uns etwas später treffen?"
+  }
+ },
+ {
+  "id": "ss-time_dates-022",
+  "topic": "time_dates",
+  "level": "A2",
+  "text": {
+   "en": "I'll be there in ten minutes.",
+   "it": "Sarò lì tra dieci minuti.",
+   "es": "Estaré ahí en diez minutos.",
+   "pt": "Estou aí em dez minutos.",
+   "pt_BR": "Chego aí em dez minutos.",
+   "fr": "J'arrive dans dix minutes.",
+   "de": "Ich bin in zehn Minuten da."
+  }
+ },
+ {
+  "id": "ss-time_dates-023",
+  "topic": "time_dates",
+  "level": "A2",
+  "text": {
+   "en": "My flight is on March 3rd.",
+   "it": "Il mio volo è il 3 marzo.",
+   "es": "Mi vuelo es el 3 de marzo.",
+   "pt": "O meu voo é a 3 de março.",
+   "pt_BR": "Meu voo é no dia 3 de março.",
+   "fr": "Mon vol est le 3 mars.",
+   "de": "Mein Flug geht am 3. März."
+  }
+ },
+ {
+  "id": "ss-time_dates-024",
+  "topic": "time_dates",
+  "level": "A2",
+  "text": {
+   "en": "What time zone are you in?",
+   "it": "In che fuso orario sei?",
+   "es": "¿En qué zona horaria estás?",
+   "pt": "Em que fuso horário estás?",
+   "pt_BR": "Em que fuso horário você está?",
+   "fr": "Dans quel fuseau horaire es-tu ?",
+   "de": "In welcher Zeitzone bist du?"
+  }
+ },
+ {
+  "id": "ss-time_dates-025",
+  "topic": "time_dates",
+  "level": "A2",
+  "text": {
+   "en": "Sorry, I'll be a bit late.",
+   "it": "Scusa, farò un po' tardi.",
+   "es": "Perdona, voy a llegar un poco tarde.",
+   "pt": "Desculpa, vou chegar um pouco tarde.",
+   "pt_BR": "Desculpa, vou chegar um pouco tarde.",
+   "fr": "Pardon, je vais avoir un peu de retard.",
+   "de": "Entschuldige, ich komme etwas später."
+  }
+ },
+ {
+  "id": "ss-time_dates-026",
+  "topic": "time_dates",
+  "level": "A2",
+  "text": {
+   "en": "We have class every Tuesday and Thursday.",
+   "it": "Abbiamo lezione ogni martedì e giovedì.",
+   "es": "Tenemos clase todos los martes y jueves.",
+   "pt": "Temos aula todas as terças e quintas.",
+   "pt_BR": "Temos aula toda terça e quinta.",
+   "fr": "Nous avons cours tous les mardis et jeudis.",
+   "de": "Wir haben jeden Dienstag und Donnerstag Unterricht."
+  }
+ },
+ {
+  "id": "ss-time_dates-027",
+  "topic": "time_dates",
+  "level": "A2",
+  "text": {
+   "en": "How long does it take?",
+   "it": "Quanto tempo ci vuole?",
+   "es": "¿Cuánto tiempo se tarda?",
+   "pt": "Quanto tempo demora?",
+   "pt_BR": "Quanto tempo leva?",
+   "fr": "Combien de temps ça prend ?",
+   "de": "Wie lange dauert das?"
+  }
+ },
+ {
+  "id": "ss-time_dates-028",
+  "topic": "time_dates",
+  "level": "A2",
+  "text": {
+   "en": "Tomorrow is a public holiday, so most shops will be closed.",
+   "it": "Domani è festivo, quindi la maggior parte dei negozi sarà chiusa.",
+   "es": "Mañana es festivo, así que la mayoría de las tiendas estarán cerradas.",
+   "pt": "Amanhã é feriado, por isso a maioria das lojas vai estar fechada.",
+   "pt_BR": "Amanhã é feriado, então a maioria das lojas vai estar fechada.",
+   "fr": "Demain est férié, donc la plupart des magasins seront fermés.",
+   "de": "Morgen ist ein Feiertag, deshalb sind die meisten Geschäfte geschlossen."
+  }
+ },
+ {
+  "id": "ss-time_dates-029",
+  "topic": "time_dates",
+  "level": "A2",
+  "text": {
+   "en": "Let's talk again on Friday evening.",
+   "it": "Risentiamoci venerdì sera.",
+   "es": "Hablemos otra vez el viernes por la noche.",
+   "pt": "Falamos outra vez na sexta à noite.",
+   "pt_BR": "Vamos conversar de novo na sexta à noite.",
+   "fr": "Reparlons-nous vendredi soir.",
+   "de": "Lass uns Freitagabend wieder sprechen."
+  }
+ },
+ {
+  "id": "ss-time_dates-030",
+  "topic": "time_dates",
+  "level": "A2",
+  "text": {
+   "en": "I'm planning a trip for the first week of July.",
+   "it": "Sto organizzando un viaggio per la prima settimana di luglio.",
+   "es": "Estoy planeando un viaje para la primera semana de julio.",
+   "pt": "Estou a planear uma viagem para a primeira semana de julho.",
+   "pt_BR": "Estou planejando uma viagem para a primeira semana de julho.",
+   "fr": "Je prévois un voyage pour la première semaine de juillet.",
+   "de": "Ich plane eine Reise für die erste Juliwoche."
+  }
+ },
+ {
+  "id": "ss-time_dates-031",
+  "topic": "time_dates",
+  "level": "B1",
+  "text": {
+   "en": "Could you tell me what time it is where you are?",
+   "it": "Mi dici che ore sono da te?",
+   "es": "¿Me dices qué hora es allí donde estás?",
+   "pt": "Podes dizer-me que horas são aí?",
+   "pt_BR": "Você pode me dizer que horas são aí?",
+   "fr": "Peux-tu me dire quelle heure il est chez toi ?",
+   "de": "Kannst du mir sagen, wie spät es bei dir ist?"
+  }
+ },
+ {
+  "id": "ss-time_dates-032",
+  "topic": "time_dates",
+  "level": "B1",
+  "text": {
+   "en": "There is a six-hour time difference between us, so let's find a time that works for both.",
+   "it": "Tra noi ci sono sei ore di differenza, quindi troviamo un orario che vada bene a entrambi.",
+   "es": "Hay seis horas de diferencia entre nosotros, así que busquemos una hora que nos venga bien a los dos.",
+   "pt": "Há seis horas de diferença entre nós, por isso vamos arranjar uma hora que sirva aos dois.",
+   "pt_BR": "Há seis horas de diferença entre nós, então vamos achar um horário que sirva para os dois.",
+   "fr": "Il y a six heures de décalage entre nous, alors trouvons un horaire qui convienne aux deux.",
+   "de": "Wir haben sechs Stunden Zeitunterschied, also suchen wir eine Zeit, die uns beiden passt."
+  }
+ },
+ {
+  "id": "ss-time_dates-033",
+  "topic": "time_dates",
+  "level": "B1",
+  "text": {
+   "en": "Do you mind if we move our call to next Wednesday?",
+   "it": "Ti dispiace se spostiamo la chiamata a mercoledì prossimo?",
+   "es": "¿Te importa si movemos la llamada al próximo miércoles?",
+   "pt": "Importas-te que passemos a chamada para a próxima quarta-feira?",
+   "pt_BR": "Você se importa se a gente mudar a ligação para a próxima quarta-feira?",
+   "fr": "Ça te dérange si on déplace notre appel à mercredi prochain ?",
+   "de": "Hast du etwas dagegen, wenn wir unser Telefonat auf nächsten Mittwoch verschieben?"
+  }
+ },
+ {
+  "id": "ss-time_dates-034",
+  "topic": "time_dates",
+  "level": "B1",
+  "text": {
+   "en": "The deadline is the end of the month.",
+   "it": "La scadenza è a fine mese.",
+   "es": "La fecha límite es a finales de mes.",
+   "pt": "O prazo é no final do mês.",
+   "pt_BR": "O prazo é no fim do mês.",
+   "fr": "La date limite est la fin du mois.",
+   "de": "Die Frist ist Ende des Monats."
+  }
+ },
+ {
+  "id": "ss-time_dates-035",
+  "topic": "time_dates",
+  "level": "B1",
+  "text": {
+   "en": "I've been learning your language since January.",
+   "it": "Imparo la tua lingua da gennaio.",
+   "es": "Llevo aprendiendo tu idioma desde enero.",
+   "pt": "Estou a aprender a tua língua desde janeiro.",
+   "pt_BR": "Estou aprendendo a sua língua desde janeiro.",
+   "fr": "J'apprends ta langue depuis janvier.",
+   "de": "Ich lerne deine Sprache seit Januar."
+  }
+ },
+ {
+  "id": "ss-time_dates-036",
+  "topic": "time_dates",
+  "level": "B1",
+  "text": {
+   "en": "How do you write the date in your country?",
+   "it": "Come si scrive la data nel tuo paese?",
+   "es": "¿Cómo se escribe la fecha en tu país?",
+   "pt": "Como se escreve a data no teu país?",
+   "pt_BR": "Como se escreve a data no seu país?",
+   "fr": "Comment écrit-on la date dans ton pays ?",
+   "de": "Wie schreibt man in deinem Land das Datum?"
+  }
+ },
+ {
+  "id": "ss-time_dates-037",
+  "topic": "time_dates",
+  "level": "B1",
+  "text": {
+   "en": "In many countries the day is written before the month, but not in all of them.",
+   "it": "In molti paesi il giorno si scrive prima del mese, ma non in tutti.",
+   "es": "En muchos países el día se escribe antes que el mes, pero no en todos.",
+   "pt": "Em muitos países, o dia escreve-se antes do mês, mas não em todos.",
+   "pt_BR": "Em muitos países o dia é escrito antes do mês, mas não em todos.",
+   "fr": "Dans beaucoup de pays, le jour s'écrit avant le mois, mais pas partout.",
+   "de": "In vielen Ländern steht der Tag vor dem Monat, aber nicht überall."
+  }
+ },
+ {
+  "id": "ss-time_dates-038",
+  "topic": "time_dates",
+  "level": "B1",
+  "text": {
+   "en": "Shall we plan something for the long weekend?",
+   "it": "Programmiamo qualcosa per il fine settimana lungo?",
+   "es": "¿Planeamos algo para el fin de semana largo?",
+   "pt": "Vamos planear algo para o fim de semana prolongado?",
+   "pt_BR": "Vamos planejar algo para o feriadão?",
+   "fr": "On organise quelque chose pour le week-end prolongé ?",
+   "de": "Sollen wir etwas für das lange Wochenende planen?"
+  }
+ },
+ {
+  "id": "ss-time_dates-039",
+  "topic": "time_dates",
+  "level": "B1",
+  "text": {
+   "en": "I can't make it on the 15th, but the 16th works.",
+   "it": "Il 15 non posso, ma il 16 va bene.",
+   "es": "El 15 no puedo, pero el 16 me va bien.",
+   "pt": "No dia 15 não posso, mas o dia 16 dá-me jeito.",
+   "pt_BR": "No dia 15 eu não posso, mas o dia 16 funciona.",
+   "fr": "Le 15, je ne peux pas, mais le 16 me convient.",
+   "de": "Am 15. kann ich nicht, aber der 16. passt."
+  }
+ },
+ {
+  "id": "ss-time_dates-040",
+  "topic": "time_dates",
+  "level": "B1",
+  "text": {
+   "en": "Let's set a fixed time to practice together every week.",
+   "it": "Fissiamo un orario per esercitarci insieme ogni settimana.",
+   "es": "Fijemos una hora para practicar juntos cada semana.",
+   "pt": "Vamos marcar uma hora fixa para praticar juntos todas as semanas.",
+   "pt_BR": "Vamos marcar um horário fixo para praticar juntos toda semana.",
+   "fr": "Fixons un horaire pour pratiquer ensemble chaque semaine.",
+   "de": "Lass uns jede Woche eine feste Zeit zum gemeinsamen Üben vereinbaren."
+  }
+ },
+ {
+  "id": "ss-time_dates-041",
+  "topic": "time_dates",
+  "level": "B1",
+  "text": {
+   "en": "Time flies when we chat like this.",
+   "it": "Il tempo vola quando chiacchieriamo così.",
+   "es": "El tiempo vuela cuando charlamos así.",
+   "pt": "O tempo voa quando conversamos assim.",
+   "pt_BR": "O tempo voa quando a gente conversa assim.",
+   "fr": "Le temps passe vite quand on discute comme ça.",
+   "de": "Die Zeit vergeht wie im Flug, wenn wir so plaudern."
+  }
+ },
+ {
+  "id": "ss-time_dates-042",
+  "topic": "time_dates",
+  "level": "B1",
+  "text": {
+   "en": "What are the public holidays in your country this month?",
+   "it": "Quali sono le festività nazionali nel tuo paese questo mese?",
+   "es": "¿Cuáles son los festivos nacionales de tu país este mes?",
+   "pt": "Quais são os feriados nacionais no teu país este mês?",
+   "pt_BR": "Quais são os feriados nacionais no seu país este mês?",
+   "fr": "Quels sont les jours fériés dans ton pays ce mois-ci ?",
+   "de": "Welche gesetzlichen Feiertage gibt es diesen Monat in deinem Land?"
+  }
+ },
+ {
+  "id": "ss-time_dates-043",
+  "topic": "time_dates",
+  "level": "B1",
+  "text": {
+   "en": "Remind me the day before, in case I forget.",
+   "it": "Ricordamelo il giorno prima, nel caso me ne dimentichi.",
+   "es": "Recuérdamelo el día anterior, por si se me olvida.",
+   "pt": "Lembra-me no dia anterior, caso me esqueça.",
+   "pt_BR": "Me lembra no dia anterior, caso eu esqueça.",
+   "fr": "Rappelle-le-moi la veille, au cas où j'oublierais.",
+   "de": "Erinnere mich am Tag davor, falls ich es vergesse."
+  }
+ },
+ {
+  "id": "ss-time_dates-044",
+  "topic": "time_dates",
+  "level": "B2",
+  "text": {
+   "en": "Would it be possible to reschedule for sometime early next month?",
+   "it": "Sarebbe possibile spostare l'appuntamento a inizio del mese prossimo?",
+   "es": "¿Sería posible reprogramarlo para principios del mes que viene?",
+   "pt": "Seria possível remarcar para o início do próximo mês?",
+   "pt_BR": "Seria possível remarcar para o começo do mês que vem?",
+   "fr": "Serait-il possible de le reporter au début du mois prochain ?",
+   "de": "Wäre es möglich, den Termin auf Anfang nächsten Monats zu verschieben?"
+  }
+ },
+ {
+  "id": "ss-time_dates-045",
+  "topic": "time_dates",
+  "level": "B2",
+  "text": {
+   "en": "Because of the time difference, I may only be able to join the call after nine, my time.",
+   "it": "Per via del fuso orario, potrei collegarmi alla chiamata solo dopo le nove, ora locale.",
+   "es": "Por la diferencia horaria, quizá solo pueda conectarme a la llamada después de las nueve, hora local.",
+   "pt": "Por causa da diferença horária, talvez só consiga entrar na chamada depois das nove, hora local.",
+   "pt_BR": "Por causa do fuso horário, talvez eu só consiga entrar na chamada depois das nove, no meu horário.",
+   "fr": "À cause du décalage horaire, je ne pourrai peut-être me connecter qu'après neuf heures, heure locale.",
+   "de": "Wegen der Zeitverschiebung kann ich mich vielleicht erst nach neun Uhr Ortszeit zuschalten."
+  }
+ },
+ {
+  "id": "ss-time_dates-046",
+  "topic": "time_dates",
+  "level": "B2",
+  "text": {
+   "en": "Clocks change soon in some countries, so our time difference may shift by an hour for a few weeks.",
+   "it": "Presto in alcuni paesi si cambia l'ora, quindi per qualche settimana la differenza tra noi potrebbe variare di un'ora.",
+   "es": "Pronto cambia la hora en algunos países, así que durante unas semanas nuestra diferencia horaria podría variar una hora.",
+   "pt": "Em breve, a hora muda em alguns países, por isso, durante algumas semanas, a nossa diferença horária pode variar uma hora.",
+   "pt_BR": "Em breve o horário muda em alguns países, então por algumas semanas a nossa diferença de fuso pode variar em uma hora.",
+   "fr": "L'heure va bientôt changer dans certains pays, donc notre décalage pourrait varier d'une heure pendant quelques semaines.",
+   "de": "Bald wird in manchen Ländern die Uhr umgestellt, daher kann sich unser Zeitunterschied für ein paar Wochen um eine Stunde verändern."
+  }
+ },
+ {
+  "id": "ss-time_dates-047",
+  "topic": "time_dates",
+  "level": "B2",
+  "text": {
+   "en": "I'd rather not fix a date yet; let's see how the next few weeks go.",
+   "it": "Preferirei non fissare ancora una data: vediamo come vanno le prossime settimane.",
+   "es": "Prefiero no fijar todavía una fecha; veamos cómo van las próximas semanas.",
+   "pt": "Prefiro não marcar ainda uma data; vamos ver como correm as próximas semanas.",
+   "pt_BR": "Prefiro não marcar uma data ainda; vamos ver como vão as próximas semanas.",
+   "fr": "Je préfère ne pas fixer de date pour l'instant ; voyons comment se passent les prochaines semaines.",
+   "de": "Ich möchte noch kein Datum festlegen; schauen wir erst, wie die nächsten Wochen laufen."
+  }
+ },
+ {
+  "id": "ss-time_dates-048",
+  "topic": "time_dates",
+  "level": "B2",
+  "text": {
+   "en": "By the time you arrive, the festival will have already started.",
+   "it": "Quando arriverai, il festival sarà già iniziato.",
+   "es": "Cuando llegues, el festival ya habrá empezado.",
+   "pt": "Quando chegares, o festival já terá começado.",
+   "pt_BR": "Quando você chegar, o festival já terá começado.",
+   "fr": "Le temps que tu arrives, le festival aura déjà commencé.",
+   "de": "Bis du ankommst, hat das Festival schon begonnen."
+  }
+ },
+ {
+  "id": "ss-time_dates-049",
+  "topic": "time_dates",
+  "level": "B2",
+  "text": {
+   "en": "Could you confirm the exact dates so I can book my time off?",
+   "it": "Puoi confermarmi le date esatte così posso prenotare le ferie?",
+   "es": "¿Puedes confirmarme las fechas exactas para pedir los días libres?",
+   "pt": "Podes confirmar-me as datas exatas para eu marcar as férias?",
+   "pt_BR": "Você pode confirmar as datas exatas para eu pedir folga?",
+   "fr": "Peux-tu me confirmer les dates exactes pour que je pose mes congés ?",
+   "de": "Kannst du mir die genauen Termine bestätigen, damit ich Urlaub einreichen kann?"
+  }
+ },
+ {
+  "id": "ss-time_dates-050",
+  "topic": "time_dates",
+  "level": "B2",
+  "text": {
+   "en": "Whenever you have a spare half hour, I'd love to hear how your week went.",
+   "it": "Quando hai mezz'ora libera, mi farebbe piacere sapere com'è andata la tua settimana.",
+   "es": "Cuando tengas media hora libre, me encantaría saber cómo te fue la semana.",
+   "pt": "Quando tiveres meia hora livre, adorava saber como correu a tua semana.",
+   "pt_BR": "Quando você tiver meia hora livre, adoraria saber como foi a sua semana.",
+   "fr": "Quand tu as une demi-heure de libre, j'aimerais savoir comment s'est passée ta semaine.",
+   "de": "Wenn du mal eine halbe Stunde Zeit hast, würde ich gern hören, wie deine Woche war."
+  }
+ },
+ {
+  "id": "ss-money_prices-001",
+  "topic": "money_prices",
+  "level": "A1",
+  "text": {
+   "en": "How much is this?",
+   "it": "Quanto costa questo?",
+   "es": "¿Cuánto cuesta esto?",
+   "pt": "Quanto custa isto?",
+   "pt_BR": "Quanto custa isso?",
+   "fr": "Combien ça coûte ?",
+   "de": "Wie viel kostet das?"
+  }
+ },
+ {
+  "id": "ss-money_prices-002",
+  "topic": "money_prices",
+  "level": "A1",
+  "text": {
+   "en": "It costs ten euros.",
+   "it": "Costa dieci euro.",
+   "es": "Cuesta diez euros.",
+   "pt": "Custa dez euros.",
+   "pt_BR": "Custa dez euros.",
+   "fr": "Ça coûte dix euros.",
+   "de": "Das kostet zehn Euro."
+  }
+ },
+ {
+  "id": "ss-money_prices-003",
+  "topic": "money_prices",
+  "level": "A1",
+  "text": {
+   "en": "Can I pay by card?",
+   "it": "Posso pagare con la carta?",
+   "es": "¿Puedo pagar con tarjeta?",
+   "pt": "Posso pagar com cartão?",
+   "pt_BR": "Posso pagar com cartão?",
+   "fr": "Je peux payer par carte ?",
+   "de": "Kann ich mit Karte zahlen?"
+  }
+ },
+ {
+  "id": "ss-money_prices-004",
+  "topic": "money_prices",
+  "level": "A1",
+  "text": {
+   "en": "Can I pay in cash?",
+   "it": "Posso pagare in contanti?",
+   "es": "¿Puedo pagar en efectivo?",
+   "pt": "Posso pagar em dinheiro?",
+   "pt_BR": "Posso pagar em dinheiro?",
+   "fr": "Je peux payer en espèces ?",
+   "de": "Kann ich bar bezahlen?"
+  }
+ },
+ {
+  "id": "ss-money_prices-005",
+  "topic": "money_prices",
+  "level": "A1",
+  "text": {
+   "en": "It's too expensive.",
+   "it": "È troppo caro.",
+   "es": "Es demasiado caro.",
+   "pt": "É demasiado caro.",
+   "pt_BR": "É caro demais.",
+   "fr": "C'est trop cher.",
+   "de": "Das ist zu teuer."
+  }
+ },
+ {
+  "id": "ss-money_prices-006",
+  "topic": "money_prices",
+  "level": "A1",
+  "text": {
+   "en": "That is cheap.",
+   "it": "È economico.",
+   "es": "Es barato.",
+   "pt": "É barato.",
+   "pt_BR": "É barato.",
+   "fr": "C'est bon marché.",
+   "de": "Das ist günstig."
+  }
+ },
+ {
+  "id": "ss-money_prices-007",
+  "topic": "money_prices",
+  "level": "A1",
+  "text": {
+   "en": "Where is the ATM?",
+   "it": "Dov'è il bancomat?",
+   "es": "¿Dónde hay un cajero automático?",
+   "pt": "Onde fica o multibanco?",
+   "pt_BR": "Onde fica o caixa eletrônico?",
+   "fr": "Où est le distributeur de billets ?",
+   "de": "Wo ist der Geldautomat?"
+  }
+ },
+ {
+  "id": "ss-money_prices-008",
+  "topic": "money_prices",
+  "level": "A1",
+  "text": {
+   "en": "The bill, please.",
+   "it": "Il conto, per favore.",
+   "es": "La cuenta, por favor.",
+   "pt": "A conta, por favor.",
+   "pt_BR": "A conta, por favor.",
+   "fr": "L'addition, s'il vous plaît.",
+   "de": "Die Rechnung, bitte."
+  }
+ },
+ {
+  "id": "ss-money_prices-009",
+  "topic": "money_prices",
+  "level": "A1",
+  "text": {
+   "en": "Do you have change?",
+   "it": "Hai degli spiccioli?",
+   "es": "¿Tienes cambio?",
+   "pt": "Tens troco?",
+   "pt_BR": "Você tem troco?",
+   "fr": "Tu as de la monnaie ?",
+   "de": "Hast du Wechselgeld?"
+  }
+ },
+ {
+  "id": "ss-money_prices-010",
+  "topic": "money_prices",
+  "level": "A1",
+  "text": {
+   "en": "Keep the change.",
+   "it": "Tieni il resto.",
+   "es": "Quédate con el cambio.",
+   "pt": "Fica com o troco.",
+   "pt_BR": "Pode ficar com o troco.",
+   "fr": "Garde la monnaie.",
+   "de": "Stimmt so."
+  }
+ },
+ {
+  "id": "ss-money_prices-011",
+  "topic": "money_prices",
+  "level": "A1",
+  "text": {
+   "en": "I don't have any cash.",
+   "it": "Non ho contanti.",
+   "es": "No tengo efectivo.",
+   "pt": "Não tenho dinheiro vivo.",
+   "pt_BR": "Não tenho dinheiro em espécie.",
+   "fr": "Je n'ai pas d'espèces.",
+   "de": "Ich habe kein Bargeld."
+  }
+ },
+ {
+  "id": "ss-money_prices-012",
+  "topic": "money_prices",
+  "level": "A1",
+  "text": {
+   "en": "Is breakfast included?",
+   "it": "La colazione è inclusa?",
+   "es": "¿El desayuno está incluido?",
+   "pt": "O pequeno-almoço está incluído?",
+   "pt_BR": "O café da manhã está incluído?",
+   "fr": "Le petit-déjeuner est-il inclus ?",
+   "de": "Ist das Frühstück inklusive?"
+  }
+ },
+ {
+  "id": "ss-money_prices-013",
+  "topic": "money_prices",
+  "level": "A1",
+  "text": {
+   "en": "What is the price?",
+   "it": "Qual è il prezzo?",
+   "es": "¿Cuál es el precio?",
+   "pt": "Qual é o preço?",
+   "pt_BR": "Qual é o preço?",
+   "fr": "Quel est le prix ?",
+   "de": "Wie hoch ist der Preis?"
+  }
+ },
+ {
+  "id": "ss-money_prices-014",
+  "topic": "money_prices",
+  "level": "A1",
+  "text": {
+   "en": "Can I have a receipt, please?",
+   "it": "Posso avere lo scontrino, per favore?",
+   "es": "¿Me puedes dar el ticket, por favor?",
+   "pt": "Pode dar-me o talão, por favor?",
+   "pt_BR": "Pode me dar o recibo, por favor?",
+   "fr": "Je peux avoir un reçu, s'il vous plaît ?",
+   "de": "Kann ich bitte einen Beleg haben?"
+  }
+ },
+ {
+  "id": "ss-money_prices-015",
+  "topic": "money_prices",
+  "level": "A1",
+  "text": {
+   "en": "It's free.",
+   "it": "È gratis.",
+   "es": "Es gratis.",
+   "pt": "É grátis.",
+   "pt_BR": "É grátis.",
+   "fr": "C'est gratuit.",
+   "de": "Das ist kostenlos."
+  }
+ },
+ {
+  "id": "ss-money_prices-016",
+  "topic": "money_prices",
+  "level": "A2",
+  "text": {
+   "en": "Is there a student discount?",
+   "it": "C'è uno sconto per studenti?",
+   "es": "¿Hay descuento para estudiantes?",
+   "pt": "Há desconto para estudantes?",
+   "pt_BR": "Tem desconto para estudantes?",
+   "fr": "Y a-t-il une réduction pour les étudiants ?",
+   "de": "Gibt es einen Studentenrabatt?"
+  }
+ },
+ {
+  "id": "ss-money_prices-017",
+  "topic": "money_prices",
+  "level": "A2",
+  "text": {
+   "en": "How much is a bus ticket?",
+   "it": "Quanto costa un biglietto dell'autobus?",
+   "es": "¿Cuánto cuesta un billete de autobús?",
+   "pt": "Quanto custa um bilhete de autocarro?",
+   "pt_BR": "Quanto custa uma passagem de ônibus?",
+   "fr": "Combien coûte un ticket de bus ?",
+   "de": "Was kostet ein Busticket?"
+  }
+ },
+ {
+  "id": "ss-money_prices-018",
+  "topic": "money_prices",
+  "level": "A2",
+  "text": {
+   "en": "Can we split the bill?",
+   "it": "Possiamo dividere il conto?",
+   "es": "¿Podemos dividir la cuenta?",
+   "pt": "Podemos dividir a conta?",
+   "pt_BR": "Podemos dividir a conta?",
+   "fr": "On peut partager l'addition ?",
+   "de": "Können wir die Rechnung teilen?"
+  }
+ },
+ {
+  "id": "ss-money_prices-019",
+  "topic": "money_prices",
+  "level": "A2",
+  "text": {
+   "en": "I'll pay for the coffee.",
+   "it": "Il caffè lo pago io.",
+   "es": "El café lo pago yo.",
+   "pt": "O café pago eu.",
+   "pt_BR": "O café eu pago.",
+   "fr": "Le café, c'est pour moi.",
+   "de": "Den Kaffee zahle ich."
+  }
+ },
+ {
+  "id": "ss-money_prices-020",
+  "topic": "money_prices",
+  "level": "A2",
+  "text": {
+   "en": "What is today's exchange rate for the dollar?",
+   "it": "Qual è il cambio del dollaro oggi?",
+   "es": "¿A cuánto está hoy el cambio del dólar?",
+   "pt": "Qual é hoje o câmbio do dólar?",
+   "pt_BR": "Qual é a cotação do dólar hoje?",
+   "fr": "Quel est le taux de change du dollar aujourd'hui ?",
+   "de": "Wie ist heute der Wechselkurs für den Dollar?"
+  }
+ },
+ {
+  "id": "ss-money_prices-021",
+  "topic": "money_prices",
+  "level": "A2",
+  "text": {
+   "en": "Where can I change money?",
+   "it": "Dove posso cambiare i soldi?",
+   "es": "¿Dónde puedo cambiar dinero?",
+   "pt": "Onde posso trocar dinheiro?",
+   "pt_BR": "Onde posso trocar dinheiro?",
+   "fr": "Où puis-je changer de l'argent ?",
+   "de": "Wo kann ich Geld wechseln?"
+  }
+ },
+ {
+  "id": "ss-money_prices-022",
+  "topic": "money_prices",
+  "level": "A2",
+  "text": {
+   "en": "The prices here are quite reasonable.",
+   "it": "I prezzi qui sono abbastanza ragionevoli.",
+   "es": "Los precios aquí son bastante razonables.",
+   "pt": "Os preços aqui são bastante razoáveis.",
+   "pt_BR": "Os preços aqui são bem razoáveis.",
+   "fr": "Les prix ici sont plutôt raisonnables.",
+   "de": "Die Preise hier sind ziemlich vernünftig."
+  }
+ },
+ {
+  "id": "ss-money_prices-023",
+  "topic": "money_prices",
+  "level": "A2",
+  "text": {
+   "en": "Can you give me a better price if I buy two?",
+   "it": "Mi fai un prezzo migliore se ne prendo due?",
+   "es": "¿Me haces mejor precio si llevo dos?",
+   "pt": "Fazes-me um preço melhor se levar dois?",
+   "pt_BR": "Você faz um preço melhor se eu levar dois?",
+   "fr": "Tu me fais un meilleur prix si j'en prends deux ?",
+   "de": "Machst du mir einen besseren Preis, wenn ich zwei nehme?"
+  }
+ },
+ {
+  "id": "ss-money_prices-024",
+  "topic": "money_prices",
+  "level": "A2",
+  "text": {
+   "en": "My card was declined.",
+   "it": "La mia carta è stata rifiutata.",
+   "es": "Me han rechazado la tarjeta.",
+   "pt": "O meu cartão foi recusado.",
+   "pt_BR": "Meu cartão foi recusado.",
+   "fr": "Ma carte a été refusée.",
+   "de": "Meine Karte wurde abgelehnt."
+  }
+ },
+ {
+  "id": "ss-money_prices-025",
+  "topic": "money_prices",
+  "level": "A2",
+  "text": {
+   "en": "Does the price include tax?",
+   "it": "Il prezzo include l'IVA?",
+   "es": "¿El precio incluye impuestos?",
+   "pt": "O preço inclui impostos?",
+   "pt_BR": "O preço inclui impostos?",
+   "fr": "Le prix inclut-il les taxes ?",
+   "de": "Ist die Steuer im Preis enthalten?"
+  }
+ },
+ {
+  "id": "ss-money_prices-026",
+  "topic": "money_prices",
+  "level": "A2",
+  "text": {
+   "en": "How much is the entrance fee?",
+   "it": "Quanto costa l'ingresso?",
+   "es": "¿Cuánto cuesta la entrada?",
+   "pt": "Quanto custa a entrada?",
+   "pt_BR": "Quanto custa a entrada?",
+   "fr": "Combien coûte l'entrée ?",
+   "de": "Was kostet der Eintritt?"
+  }
+ },
+ {
+  "id": "ss-money_prices-027",
+  "topic": "money_prices",
+  "level": "A2",
+  "text": {
+   "en": "I'm saving money for a trip.",
+   "it": "Sto risparmiando per un viaggio.",
+   "es": "Estoy ahorrando para un viaje.",
+   "pt": "Estou a poupar dinheiro para uma viagem.",
+   "pt_BR": "Estou economizando para uma viagem.",
+   "fr": "J'économise pour un voyage.",
+   "de": "Ich spare für eine Reise."
+  }
+ },
+ {
+  "id": "ss-money_prices-028",
+  "topic": "money_prices",
+  "level": "A2",
+  "text": {
+   "en": "Is tipping customary here?",
+   "it": "Qui si usa lasciare la mancia?",
+   "es": "¿Aquí es costumbre dejar propina?",
+   "pt": "Aqui é costume deixar gorjeta?",
+   "pt_BR": "Aqui é costume deixar gorjeta?",
+   "fr": "Ici, on laisse un pourboire d'habitude ?",
+   "de": "Ist es hier üblich, Trinkgeld zu geben?"
+  }
+ },
+ {
+  "id": "ss-money_prices-029",
+  "topic": "money_prices",
+  "level": "A2",
+  "text": {
+   "en": "Where can I find a cheap place to eat?",
+   "it": "Dove posso trovare un posto economico dove mangiare?",
+   "es": "¿Dónde puedo encontrar un sitio barato para comer?",
+   "pt": "Onde posso encontrar um sítio barato para comer?",
+   "pt_BR": "Onde posso encontrar um lugar barato para comer?",
+   "fr": "Où puis-je trouver un endroit pas cher pour manger ?",
+   "de": "Wo finde ich ein günstiges Lokal zum Essen?"
+  }
+ },
+ {
+  "id": "ss-money_prices-030",
+  "topic": "money_prices",
+  "level": "A2",
+  "text": {
+   "en": "Can I get my money back?",
+   "it": "Posso riavere i soldi?",
+   "es": "¿Me pueden devolver el dinero?",
+   "pt": "Posso receber o dinheiro de volta?",
+   "pt_BR": "Posso receber meu dinheiro de volta?",
+   "fr": "Je peux me faire rembourser ?",
+   "de": "Kann ich mein Geld zurückbekommen?"
+  }
+ },
+ {
+  "id": "ss-money_prices-031",
+  "topic": "money_prices",
+  "level": "B1",
+  "text": {
+   "en": "Is it cheaper to pay online or at the counter?",
+   "it": "Costa meno pagare online o allo sportello?",
+   "es": "¿Es más barato pagar en línea o en ventanilla?",
+   "pt": "Sai mais barato pagar online ou no balcão?",
+   "pt_BR": "Sai mais barato pagar online ou no balcão?",
+   "fr": "C'est moins cher de payer en ligne ou au guichet ?",
+   "de": "Ist es günstiger, online oder am Schalter zu bezahlen?"
+  }
+ },
+ {
+  "id": "ss-money_prices-032",
+  "topic": "money_prices",
+  "level": "B1",
+  "text": {
+   "en": "I'd like to return this and get a refund, please.",
+   "it": "Vorrei restituire questo articolo e ottenere un rimborso, per favore.",
+   "es": "Quisiera devolver esto y que me reembolsen el dinero, por favor.",
+   "pt": "Gostava de devolver isto e receber o reembolso, por favor.",
+   "pt_BR": "Gostaria de devolver isto e receber o reembolso, por favor.",
+   "fr": "Je voudrais rendre cet article et obtenir un remboursement, s'il vous plaît.",
+   "de": "Ich möchte das zurückgeben und mein Geld erstattet bekommen, bitte."
+  }
+ },
+ {
+  "id": "ss-money_prices-033",
+  "topic": "money_prices",
+  "level": "B1",
+  "text": {
+   "en": "How much do you usually spend on groceries each week?",
+   "it": "Quanto spendi di solito per la spesa ogni settimana?",
+   "es": "¿Cuánto gastas normalmente en comida cada semana?",
+   "pt": "Quanto gastas normalmente em compras de supermercado por semana?",
+   "pt_BR": "Quanto você costuma gastar com mercado por semana?",
+   "fr": "Tu dépenses combien en courses chaque semaine, en général ?",
+   "de": "Wie viel gibst du normalerweise pro Woche für Lebensmittel aus?"
+  }
+ },
+ {
+  "id": "ss-money_prices-034",
+  "topic": "money_prices",
+  "level": "B1",
+  "text": {
+   "en": "In big cities, rent is usually the biggest monthly expense.",
+   "it": "Nelle grandi città l'affitto è di solito la spesa mensile più grande.",
+   "es": "En las grandes ciudades, el alquiler suele ser el mayor gasto mensual.",
+   "pt": "Nas grandes cidades, a renda costuma ser a maior despesa mensal.",
+   "pt_BR": "Nas grandes cidades, o aluguel costuma ser a maior despesa do mês.",
+   "fr": "Dans les grandes villes, le loyer est généralement la plus grosse dépense du mois.",
+   "de": "In Großstädten ist die Miete meist die größte monatliche Ausgabe."
+  }
+ },
+ {
+  "id": "ss-money_prices-035",
+  "topic": "money_prices",
+  "level": "B1",
+  "text": {
+   "en": "Prices are higher in the tourist areas, so try the side streets.",
+   "it": "I prezzi sono più alti nelle zone turistiche, quindi prova le vie laterali.",
+   "es": "Los precios son más altos en las zonas turísticas, así que prueba las calles laterales.",
+   "pt": "Os preços são mais altos nas zonas turísticas, por isso experimenta as ruas secundárias.",
+   "pt_BR": "Os preços são mais altos nas áreas turísticas, então experimente as ruas laterais.",
+   "fr": "Les prix sont plus élevés dans les quartiers touristiques, alors essaie les petites rues.",
+   "de": "In den Touristengegenden sind die Preise höher, probier also lieber die Seitenstraßen."
+  }
+ },
+ {
+  "id": "ss-money_prices-036",
+  "topic": "money_prices",
+  "level": "B1",
+  "text": {
+   "en": "Do I need to pay a deposit when I book?",
+   "it": "Devo versare una caparra quando prenoto?",
+   "es": "¿Tengo que pagar un depósito al reservar?",
+   "pt": "Tenho de pagar um depósito ao reservar?",
+   "pt_BR": "Preciso pagar um sinal ao reservar?",
+   "fr": "Dois-je verser un acompte en réservant ?",
+   "de": "Muss ich bei der Buchung eine Anzahlung leisten?"
+  }
+ },
+ {
+  "id": "ss-money_prices-037",
+  "topic": "money_prices",
+  "level": "B1",
+  "text": {
+   "en": "There's a small fee for withdrawing cash abroad.",
+   "it": "C'è una piccola commissione per prelevare contanti all'estero.",
+   "es": "Hay una pequeña comisión por sacar dinero en efectivo en el extranjero.",
+   "pt": "Há uma pequena comissão por levantar dinheiro no estrangeiro.",
+   "pt_BR": "Há uma pequena taxa para sacar dinheiro no exterior.",
+   "fr": "Il y a de petits frais pour retirer de l'argent à l'étranger.",
+   "de": "Für Bargeldabhebungen im Ausland fällt eine kleine Gebühr an."
+  }
+ },
+ {
+  "id": "ss-money_prices-038",
+  "topic": "money_prices",
+  "level": "B1",
+  "text": {
+   "en": "Could you send me the price in your currency?",
+   "it": "Puoi mandarmi il prezzo nella tua valuta?",
+   "es": "¿Puedes enviarme el precio en tu moneda?",
+   "pt": "Podes enviar-me o preço na tua moeda?",
+   "pt_BR": "Você pode me enviar o preço na sua moeda?",
+   "fr": "Peux-tu m'envoyer le prix dans ta monnaie ?",
+   "de": "Kannst du mir den Preis in deiner Währung schicken?"
+  }
+ },
+ {
+  "id": "ss-money_prices-039",
+  "topic": "money_prices",
+  "level": "B1",
+  "text": {
+   "en": "I try to stick to a monthly budget.",
+   "it": "Cerco di rispettare un budget mensile.",
+   "es": "Intento ceñirme a un presupuesto mensual.",
+   "pt": "Tento cumprir um orçamento mensal.",
+   "pt_BR": "Tento seguir um orçamento mensal.",
+   "fr": "J'essaie de respecter un budget mensuel.",
+   "de": "Ich versuche, mich an ein monatliches Budget zu halten."
+  }
+ },
+ {
+  "id": "ss-money_prices-040",
+  "topic": "money_prices",
+  "level": "B1",
+  "text": {
+   "en": "That is a fair price for handmade work.",
+   "it": "È un prezzo giusto per un lavoro fatto a mano.",
+   "es": "Es un precio justo para un trabajo hecho a mano.",
+   "pt": "É um preço justo para um trabalho feito à mão.",
+   "pt_BR": "É um preço justo para um trabalho feito à mão.",
+   "fr": "C'est un prix correct pour un travail fait main.",
+   "de": "Das ist ein fairer Preis für Handarbeit."
+  }
+ },
+ {
+  "id": "ss-money_prices-041",
+  "topic": "money_prices",
+  "level": "B1",
+  "text": {
+   "en": "Is there a cheaper option with the same features?",
+   "it": "C'è un'opzione più economica con le stesse caratteristiche?",
+   "es": "¿Hay una opción más barata con las mismas características?",
+   "pt": "Há uma opção mais barata com as mesmas características?",
+   "pt_BR": "Tem uma opção mais barata com as mesmas características?",
+   "fr": "Y a-t-il une option moins chère avec les mêmes fonctionnalités ?",
+   "de": "Gibt es eine günstigere Variante mit denselben Funktionen?"
+  }
+ },
+ {
+  "id": "ss-money_prices-042",
+  "topic": "money_prices",
+  "level": "B1",
+  "text": {
+   "en": "Paying by card is easier, but some small shops only accept cash.",
+   "it": "Pagare con la carta è più comodo, ma alcuni negozietti accettano solo contanti.",
+   "es": "Pagar con tarjeta es más cómodo, pero algunas tiendas pequeñas solo aceptan efectivo.",
+   "pt": "Pagar com cartão é mais fácil, mas algumas lojas pequenas só aceitam dinheiro.",
+   "pt_BR": "Pagar com cartão é mais fácil, mas algumas lojinhas só aceitam dinheiro.",
+   "fr": "Payer par carte est plus simple, mais certains petits commerces n'acceptent que les espèces.",
+   "de": "Mit Karte zu bezahlen ist einfacher, aber manche kleine Läden nehmen nur Bargeld."
+  }
+ },
+ {
+  "id": "ss-money_prices-043",
+  "topic": "money_prices",
+  "level": "B1",
+  "text": {
+   "en": "Let's agree on a price before we start.",
+   "it": "Mettiamoci d'accordo sul prezzo prima di iniziare.",
+   "es": "Pongámonos de acuerdo en el precio antes de empezar.",
+   "pt": "Vamos combinar o preço antes de começar.",
+   "pt_BR": "Vamos combinar o preço antes de começar.",
+   "fr": "Mettons-nous d'accord sur le prix avant de commencer.",
+   "de": "Lass uns den Preis vereinbaren, bevor wir anfangen."
+  }
+ },
+ {
+  "id": "ss-money_prices-044",
+  "topic": "money_prices",
+  "level": "B2",
+  "text": {
+   "en": "Prices went up a lot last year, so everyday life has become more expensive.",
+   "it": "Lo scorso anno i prezzi sono saliti molto, quindi la vita quotidiana è diventata più cara.",
+   "es": "El año pasado los precios subieron mucho, así que la vida diaria se ha vuelto más cara.",
+   "pt": "No ano passado os preços subiram muito, por isso o dia a dia ficou mais caro.",
+   "pt_BR": "No ano passado os preços subiram muito, então o dia a dia ficou mais caro.",
+   "fr": "Les prix ont beaucoup augmenté l'an dernier, donc la vie quotidienne est devenue plus chère.",
+   "de": "Letztes Jahr sind die Preise stark gestiegen, deshalb ist der Alltag teurer geworden."
+  }
+ },
+ {
+  "id": "ss-money_prices-045",
+  "topic": "money_prices",
+  "level": "B2",
+  "text": {
+   "en": "Could you break down the total so I understand what each charge covers?",
+   "it": "Puoi dettagliare il totale così capisco a cosa corrisponde ogni addebito?",
+   "es": "¿Puedes desglosar el total para que entienda a qué corresponde cada cargo?",
+   "pt": "Podes detalhar o total para eu perceber a que corresponde cada cobrança?",
+   "pt_BR": "Você pode detalhar o total para eu entender a que se refere cada cobrança?",
+   "fr": "Peux-tu détailler le total pour que je comprenne à quoi correspond chaque ligne ?",
+   "de": "Kannst du den Gesamtbetrag aufschlüsseln, damit ich verstehe, wofür jede Gebühr anfällt?"
+  }
+ },
+ {
+  "id": "ss-money_prices-046",
+  "topic": "money_prices",
+  "level": "B2",
+  "text": {
+   "en": "It's worth paying a bit more for something that will last for years.",
+   "it": "Vale la pena spendere un po' di più per qualcosa che dura anni.",
+   "es": "Vale la pena pagar un poco más por algo que dure años.",
+   "pt": "Vale a pena pagar um pouco mais por algo que dure anos.",
+   "pt_BR": "Vale a pena pagar um pouco mais por algo que dure anos.",
+   "fr": "Ça vaut la peine de payer un peu plus pour quelque chose qui durera des années.",
+   "de": "Es lohnt sich, etwas mehr für etwas zu bezahlen, das jahrelang hält."
+  }
+ },
+ {
+  "id": "ss-money_prices-047",
+  "topic": "money_prices",
+  "level": "B2",
+  "text": {
+   "en": "The exchange rate fluctuates, so check it before you transfer the money.",
+   "it": "Il tasso di cambio varia, quindi controllalo prima di trasferire il denaro.",
+   "es": "El tipo de cambio fluctúa, así que compruébalo antes de transferir el dinero.",
+   "pt": "A taxa de câmbio varia, por isso verifica-a antes de transferires o dinheiro.",
+   "pt_BR": "A taxa de câmbio oscila, então confira antes de transferir o dinheiro.",
+   "fr": "Le taux de change varie, alors vérifie-le avant de faire le virement.",
+   "de": "Der Wechselkurs schwankt, also prüf ihn, bevor du das Geld überweist."
+  }
+ },
+ {
+  "id": "ss-money_prices-048",
+  "topic": "money_prices",
+  "level": "B2",
+  "text": {
+   "en": "Before we split the cost of the trip, let's list what each of us has paid so far.",
+   "it": "Prima di dividere le spese del viaggio, elenchiamo quanto ha pagato ciascuno finora.",
+   "es": "Antes de repartir los gastos del viaje, hagamos una lista de lo que ha pagado cada uno hasta ahora.",
+   "pt": "Antes de dividirmos as despesas da viagem, vamos listar o que cada um pagou até agora.",
+   "pt_BR": "Antes de dividirmos os custos da viagem, vamos listar o que cada um pagou até agora.",
+   "fr": "Avant de partager les frais du voyage, listons ce que chacun a payé jusqu'ici.",
+   "de": "Bevor wir die Reisekosten teilen, lass uns aufschreiben, was jeder bisher bezahlt hat."
+  }
+ },
+ {
+  "id": "ss-money_prices-049",
+  "topic": "money_prices",
+  "level": "B2",
+  "text": {
+   "en": "I'd rather pay a bit extra than deal with hidden fees later.",
+   "it": "Preferisco pagare un po' di più piuttosto che avere a che fare con costi nascosti in seguito.",
+   "es": "Prefiero pagar un poco más que lidiar con cargos ocultos después.",
+   "pt": "Prefiro pagar um pouco mais do que lidar com custos escondidos mais tarde.",
+   "pt_BR": "Prefiro pagar um pouco mais do que lidar com taxas ocultas depois.",
+   "fr": "Je préfère payer un peu plus que de devoir gérer des frais cachés plus tard.",
+   "de": "Ich zahle lieber etwas mehr, als mich später mit versteckten Gebühren herumzuärgern."
+  }
+ },
+ {
+  "id": "ss-money_prices-050",
+  "topic": "money_prices",
+  "level": "B2",
+  "text": {
+   "en": "The cost of living varies a lot from country to country, so the same amount of money goes further in some places.",
+   "it": "Il costo della vita varia molto da paese a paese, quindi la stessa somma può bastare di più in certi posti.",
+   "es": "El costo de vida varía mucho de un país a otro, así que la misma cantidad de dinero rinde más en unos lugares.",
+   "pt": "O custo de vida varia muito de país para país, por isso a mesma quantia rende mais em alguns sítios.",
+   "pt_BR": "O custo de vida varia muito de país para país, então a mesma quantia rende mais em alguns lugares.",
+   "fr": "Le coût de la vie varie beaucoup d'un pays à l'autre, donc la même somme va plus loin à certains endroits.",
+   "de": "Die Lebenshaltungskosten unterscheiden sich stark von Land zu Land, daher reicht dasselbe Geld an manchen Orten weiter."
+  }
+ }
+]

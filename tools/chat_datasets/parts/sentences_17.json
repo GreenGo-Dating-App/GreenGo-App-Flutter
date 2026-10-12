@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ss-goodbyes-001",
+  "topic": "goodbyes",
+  "level": "A1",
+  "text": {
+   "en": "Goodbye!",
+   "it": "Arrivederci!",
+   "es": "¡Adiós!",
+   "pt": "Adeus!",
+   "pt_BR": "Tchau!",
+   "fr": "Au revoir !",
+   "de": "Auf Wiedersehen!"
+  }
+ },
+ {
+  "id": "ss-goodbyes-002",
+  "topic": "goodbyes",
+  "level": "A1",
+  "text": {
+   "en": "See you tomorrow.",
+   "it": "Ci vediamo domani.",
+   "es": "Hasta mañana.",
+   "pt": "Até amanhã.",
+   "pt_BR": "Até amanhã.",
+   "fr": "À demain.",
+   "de": "Bis morgen."
+  }
+ },
+ {
+  "id": "ss-goodbyes-003",
+  "topic": "goodbyes",
+  "level": "A1",
+  "text": {
+   "en": "Bye, have a nice day!",
+   "it": "Ciao, buona giornata!",
+   "es": "¡Chao, que tengas un buen día!",
+   "pt": "Adeus, tem um bom dia!",
+   "pt_BR": "Tchau, tenha um ótimo dia!",
+   "fr": "Salut, bonne journée !",
+   "de": "Tschüss, schönen Tag noch!"
+  }
+ },
+ {
+  "id": "ss-goodbyes-004",
+  "topic": "goodbyes",
+  "level": "A1",
+  "text": {
+   "en": "Good night!",
+   "it": "Buonanotte!",
+   "es": "¡Buenas noches!",
+   "pt": "Boa noite!",
+   "pt_BR": "Boa noite!",
+   "fr": "Bonne nuit !",
+   "de": "Gute Nacht!"
+  }
+ },
+ {
+  "id": "ss-goodbyes-005",
+  "topic": "goodbyes",
+  "level": "A1",
+  "text": {
+   "en": "See you soon!",
+   "it": "A presto!",
+   "es": "¡Hasta pronto!",
+   "pt": "Até breve!",
+   "pt_BR": "Até breve!",
+   "fr": "À bientôt !",
+   "de": "Bis bald!"
+  }
+ },
+ {
+  "id": "ss-goodbyes-006",
+  "topic": "goodbyes",
+  "level": "A1",
+  "text": {
+   "en": "Take care!",
+   "it": "Stammi bene!",
+   "es": "¡Cuídate!",
+   "pt": "Cuida-te!",
+   "pt_BR": "Se cuida!",
+   "fr": "Prends soin de toi !",
+   "de": "Pass auf dich auf!"
+  }
+ },
+ {
+  "id": "ss-goodbyes-007",
+  "topic": "goodbyes",
+  "level": "A1",
+  "text": {
+   "en": "I have to go now.",
+   "it": "Devo andare adesso.",
+   "es": "Tengo que irme ahora.",
+   "pt": "Tenho de ir agora.",
+   "pt_BR": "Preciso ir agora.",
+   "fr": "Je dois y aller maintenant.",
+   "de": "Ich muss jetzt los."
+  }
+ },
+ {
+  "id": "ss-goodbyes-008",
+  "topic": "goodbyes",
+  "level": "A1",
+  "text": {
+   "en": "Thank you, bye!",
+   "it": "Grazie, ciao!",
+   "es": "¡Gracias, adiós!",
+   "pt": "Obrigado, adeus!",
+   "pt_BR": "Obrigado, tchau!",
+   "fr": "Merci, au revoir !",
+   "de": "Danke, tschüss!"
+  }
+ },
+ {
+  "id": "ss-goodbyes-009",
+  "topic": "goodbyes",
+  "level": "A1",
+  "text": {
+   "en": "See you later.",
+   "it": "Ci vediamo dopo.",
+   "es": "Hasta luego.",
+   "pt": "Até logo.",
+   "pt_BR": "Até mais tarde.",
+   "fr": "À tout à l'heure.",
+   "de": "Bis später."
+  }
+ },
+ {
+  "id": "ss-goodbyes-010",
+  "topic": "goodbyes",
+  "level": "A1",
+  "text": {
+   "en": "Have a good weekend!",
+   "it": "Buon fine settimana!",
+   "es": "¡Buen fin de semana!",
+   "pt": "Bom fim de semana!",
+   "pt_BR": "Bom fim de semana!",
+   "fr": "Bon week-end !",
+   "de": "Schönes Wochenende!"
+  }
+ },
+ {
+  "id": "ss-goodbyes-011",
+  "topic": "goodbyes",
+  "level": "A1",
+  "text": {
+   "en": "Good night, sleep well.",
+   "it": "Buonanotte, dormi bene.",
+   "es": "Buenas noches, que descanses.",
+   "pt": "Boa noite, dorme bem.",
+   "pt_BR": "Boa noite, durma bem.",
+   "fr": "Bonne nuit, dors bien.",
+   "de": "Gute Nacht, schlaf gut."
+  }
+ },
+ {
+  "id": "ss-goodbyes-012",
+  "topic": "goodbyes",
+  "level": "A1",
+  "text": {
+   "en": "Talk to you tomorrow.",
+   "it": "Ci sentiamo domani.",
+   "es": "Hablamos mañana.",
+   "pt": "Falamos amanhã.",
+   "pt_BR": "A gente se fala amanhã.",
+   "fr": "On se parle demain.",
+   "de": "Wir sprechen morgen."
+  }
+ },
+ {
+  "id": "ss-goodbyes-013",
+  "topic": "goodbyes",
+  "level": "A1",
+  "text": {
+   "en": "It was nice to talk to you.",
+   "it": "È stato bello parlare con te.",
+   "es": "Ha sido un placer hablar contigo.",
+   "pt": "Foi um prazer falar contigo.",
+   "pt_BR": "Foi um prazer conversar com você.",
+   "fr": "C'était un plaisir de discuter avec toi.",
+   "de": "Es war schön, mit dir zu reden."
+  }
+ },
+ {
+  "id": "ss-goodbyes-014",
+  "topic": "goodbyes",
+  "level": "A1",
+  "text": {
+   "en": "Bye for now!",
+   "it": "Ciao per ora!",
+   "es": "¡Chao por ahora!",
+   "pt": "Adeus por agora!",
+   "pt_BR": "Tchau por enquanto!",
+   "fr": "À plus tard !",
+   "de": "Bis dann!"
+  }
+ },
+ {
+  "id": "ss-goodbyes-015",
+  "topic": "goodbyes",
+  "level": "A1",
+  "text": {
+   "en": "See you next week.",
+   "it": "Ci vediamo la settimana prossima.",
+   "es": "Nos vemos la semana que viene.",
+   "pt": "Vemo-nos na próxima semana.",
+   "pt_BR": "A gente se vê semana que vem.",
+   "fr": "À la semaine prochaine.",
+   "de": "Bis nächste Woche."
+  }
+ },
+ {
+  "id": "ss-goodbyes-016",
+  "topic": "goodbyes",
+  "level": "A2",
+  "text": {
+   "en": "I have to go, my bus is coming.",
+   "it": "Devo andare, sta arrivando il mio autobus.",
+   "es": "Tengo que irme, viene mi autobús.",
+   "pt": "Tenho de ir, o meu autocarro está a chegar.",
+   "pt_BR": "Preciso ir, meu ônibus está chegando.",
+   "fr": "Je dois y aller, mon bus arrive.",
+   "de": "Ich muss los, mein Bus kommt."
+  }
+ },
+ {
+  "id": "ss-goodbyes-017",
+  "topic": "goodbyes",
+  "level": "A2",
+  "text": {
+   "en": "Thanks for the chat, I really enjoyed it.",
+   "it": "Grazie per la chiacchierata, mi è piaciuta molto.",
+   "es": "Gracias por la charla, la disfruté mucho.",
+   "pt": "Obrigado pela conversa, gostei mesmo muito.",
+   "pt_BR": "Obrigado pelo papo, gostei muito.",
+   "fr": "Merci pour la discussion, j'ai beaucoup aimé.",
+   "de": "Danke für das Gespräch, es hat mir wirklich gut gefallen."
+  }
+ },
+ {
+  "id": "ss-goodbyes-018",
+  "topic": "goodbyes",
+  "level": "A2",
+  "text": {
+   "en": "Let's talk again tomorrow evening.",
+   "it": "Riparliamoci domani sera.",
+   "es": "Hablemos otra vez mañana por la noche.",
+   "pt": "Falamos outra vez amanhã à noite.",
+   "pt_BR": "Vamos conversar de novo amanhã à noite.",
+   "fr": "On se reparle demain soir.",
+   "de": "Lass uns morgen Abend wieder sprechen."
+  }
+ },
+ {
+  "id": "ss-goodbyes-019",
+  "topic": "goodbyes",
+  "level": "A2",
+  "text": {
+   "en": "I'm going to bed now, it's late here.",
+   "it": "Vado a letto, qui è tardi.",
+   "es": "Me voy a la cama, aquí ya es tarde.",
+   "pt": "Vou para a cama, aqui já é tarde.",
+   "pt_BR": "Vou dormir agora, aqui já está tarde.",
+   "fr": "Je vais me coucher, il est tard ici.",
+   "de": "Ich gehe jetzt ins Bett, es ist spät hier."
+  }
+ },
+ {
+  "id": "ss-goodbyes-020",
+  "topic": "goodbyes",
+  "level": "A2",
+  "text": {
+   "en": "Have a safe trip home!",
+   "it": "Buon viaggio di ritorno!",
+   "es": "¡Que tengas un buen viaje de vuelta a casa!",
+   "pt": "Boa viagem de regresso a casa!",
+   "pt_BR": "Boa viagem de volta para casa!",
+   "fr": "Bon retour chez toi !",
+   "de": "Gute Heimreise!"
+  }
+ },
+ {
+  "id": "ss-goodbyes-021",
+  "topic": "goodbyes",
+  "level": "A2",
+  "text": {
+   "en": "Say hello to your family for me.",
+   "it": "Salutami la tua famiglia.",
+   "es": "Saluda a tu familia de mi parte.",
+   "pt": "Dá cumprimentos à tua família da minha parte.",
+   "pt_BR": "Dê um oi para a sua família por mim.",
+   "fr": "Dis bonjour à ta famille de ma part.",
+   "de": "Grüß deine Familie von mir."
+  }
+ },
+ {
+  "id": "ss-goodbyes-022",
+  "topic": "goodbyes",
+  "level": "A2",
+  "text": {
+   "en": "I'll write to you after work.",
+   "it": "Ti scrivo dopo il lavoro.",
+   "es": "Te escribo después del trabajo.",
+   "pt": "Escrevo-te depois do trabalho.",
+   "pt_BR": "Te escrevo depois do trabalho.",
+   "fr": "Je t'écris après le travail.",
+   "de": "Ich schreibe dir nach der Arbeit."
+  }
+ },
+ {
+  "id": "ss-goodbyes-023",
+  "topic": "goodbyes",
+  "level": "A2",
+  "text": {
+   "en": "Sorry, I need to step away for a moment.",
+   "it": "Scusa, devo allontanarmi un attimo.",
+   "es": "Perdona, tengo que ausentarme un momento.",
+   "pt": "Desculpa, tenho de me ausentar um momento.",
+   "pt_BR": "Desculpe, preciso sair por um instante.",
+   "fr": "Excuse-moi, je dois m'absenter un instant.",
+   "de": "Entschuldige, ich muss kurz weg."
+  }
+ },
+ {
+  "id": "ss-goodbyes-024",
+  "topic": "goodbyes",
+  "level": "A2",
+  "text": {
+   "en": "Enjoy your holiday!",
+   "it": "Goditi le vacanze!",
+   "es": "¡Disfruta de tus vacaciones!",
+   "pt": "Aproveita as férias!",
+   "pt_BR": "Aproveite as férias!",
+   "fr": "Profite bien de tes vacances !",
+   "de": "Genieß deinen Urlaub!"
+  }
+ },
+ {
+  "id": "ss-goodbyes-025",
+  "topic": "goodbyes",
+  "level": "A2",
+  "text": {
+   "en": "Good luck with your exam tomorrow!",
+   "it": "In bocca al lupo per l'esame di domani!",
+   "es": "¡Mucha suerte con tu examen de mañana!",
+   "pt": "Boa sorte para o teu exame de amanhã!",
+   "pt_BR": "Boa sorte na sua prova amanhã!",
+   "fr": "Bonne chance pour ton examen demain !",
+   "de": "Viel Glück bei deiner Prüfung morgen!"
+  }
+ },
+ {
+  "id": "ss-goodbyes-026",
+  "topic": "goodbyes",
+  "level": "A2",
+  "text": {
+   "en": "It's very late here, so I'll say goodnight.",
+   "it": "Qui è molto tardi, quindi ti auguro la buonanotte.",
+   "es": "Aquí es muy tarde, así que te digo buenas noches.",
+   "pt": "Aqui é muito tarde, por isso vou dizer boa noite.",
+   "pt_BR": "Aqui está bem tarde, então vou dizer boa noite.",
+   "fr": "Il est très tard ici, alors je te dis bonne nuit.",
+   "de": "Es ist sehr spät hier, deshalb sage ich gute Nacht."
+  }
+ },
+ {
+  "id": "ss-goodbyes-027",
+  "topic": "goodbyes",
+  "level": "A2",
+  "text": {
+   "en": "Thank you for helping me practise.",
+   "it": "Grazie per l'aiuto nell'esercitarmi.",
+   "es": "Gracias por ayudarme a practicar.",
+   "pt": "Obrigado por me ajudares a praticar.",
+   "pt_BR": "Obrigado por me ajudar a praticar.",
+   "fr": "Merci de m'aider à m'entraîner.",
+   "de": "Danke, dass du mir beim Üben hilfst."
+  }
+ },
+ {
+  "id": "ss-goodbyes-028",
+  "topic": "goodbyes",
+  "level": "A2",
+  "text": {
+   "en": "Have fun at the party tonight!",
+   "it": "Divertiti alla festa stasera!",
+   "es": "¡Que te diviertas en la fiesta de esta noche!",
+   "pt": "Diverte-te na festa de hoje à noite!",
+   "pt_BR": "Divirta-se na festa hoje à noite!",
+   "fr": "Amuse-toi bien à la fête ce soir !",
+   "de": "Viel Spaß auf der Party heute Abend!"
+  }
+ },
+ {
+  "id": "ss-goodbyes-029",
+  "topic": "goodbyes",
+  "level": "A2",
+  "text": {
+   "en": "I'll be offline for a few days.",
+   "it": "Starò offline per qualche giorno.",
+   "es": "No estaré conectado durante unos días.",
+   "pt": "Vou estar offline durante alguns dias.",
+   "pt_BR": "Vou ficar offline por alguns dias.",
+   "fr": "Je serai hors ligne quelques jours.",
+   "de": "Ich bin ein paar Tage offline."
+  }
+ },
+ {
+  "id": "ss-goodbyes-030",
+  "topic": "goodbyes",
+  "level": "A2",
+  "text": {
+   "en": "Good luck with your new job!",
+   "it": "Buona fortuna con il tuo nuovo lavoro!",
+   "es": "¡Mucha suerte con tu nuevo trabajo!",
+   "pt": "Boa sorte com o teu novo emprego!",
+   "pt_BR": "Boa sorte no seu novo emprego!",
+   "fr": "Bonne chance pour ton nouveau travail !",
+   "de": "Viel Erfolg bei deinem neuen Job!"
+  }
+ },
+ {
+  "id": "ss-goodbyes-031",
+  "topic": "goodbyes",
+  "level": "B1",
+  "text": {
+   "en": "I'd love to keep talking, but I have to get up early tomorrow.",
+   "it": "Continuerei volentieri a parlare, ma domani devo alzarmi presto.",
+   "es": "Me encantaría seguir hablando, pero mañana tengo que madrugar.",
+   "pt": "Gostava de continuar a falar, mas amanhã tenho de me levantar cedo.",
+   "pt_BR": "Eu adoraria continuar conversando, mas amanhã preciso acordar cedo.",
+   "fr": "J'aimerais continuer à discuter, mais je dois me lever tôt demain.",
+   "de": "Ich würde gern weiterreden, aber morgen muss ich früh aufstehen."
+  }
+ },
+ {
+  "id": "ss-goodbyes-032",
+  "topic": "goodbyes",
+  "level": "B1",
+  "text": {
+   "en": "Thank you for your patience with my mistakes today.",
+   "it": "Grazie per la pazienza con i miei errori di oggi.",
+   "es": "Gracias por tu paciencia con mis errores de hoy.",
+   "pt": "Obrigado pela tua paciência com os meus erros de hoje.",
+   "pt_BR": "Obrigado pela paciência com meus erros de hoje.",
+   "fr": "Merci de ta patience avec mes erreurs aujourd'hui.",
+   "de": "Danke für deine Geduld mit meinen Fehlern heute."
+  }
+ },
+ {
+  "id": "ss-goodbyes-033",
+  "topic": "goodbyes",
+  "level": "B1",
+  "text": {
+   "en": "I have to run to a meeting, but let's continue this later.",
+   "it": "Devo correre a una riunione, ma continuiamo più tardi.",
+   "es": "Tengo que correr a una reunión, pero sigamos más tarde.",
+   "pt": "Tenho de correr para uma reunião, mas continuamos mais tarde.",
+   "pt_BR": "Preciso correr para uma reunião, mas continuamos mais tarde.",
+   "fr": "Je dois filer à une réunion, mais on continue plus tard.",
+   "de": "Ich muss zu einem Meeting, aber wir machen später weiter."
+  }
+ },
+ {
+  "id": "ss-goodbyes-034",
+  "topic": "goodbyes",
+  "level": "B1",
+  "text": {
+   "en": "Let's finish here for today and pick it up again on Friday.",
+   "it": "Chiudiamo qui per oggi e riprendiamo venerdì.",
+   "es": "Terminemos aquí por hoy y retomemos el viernes.",
+   "pt": "Ficamos por aqui hoje e retomamos na sexta-feira.",
+   "pt_BR": "Vamos parar por aqui hoje e retomar na sexta-feira.",
+   "fr": "On s'arrête là pour aujourd'hui et on reprend vendredi.",
+   "de": "Lass uns für heute Schluss machen und am Freitag weitermachen."
+  }
+ },
+ {
+  "id": "ss-goodbyes-035",
+  "topic": "goodbyes",
+  "level": "B1",
+  "text": {
+   "en": "I'm sorry to cut this short, something has come up.",
+   "it": "Scusa se interrompo, è successo un imprevisto.",
+   "es": "Siento cortar la conversación, ha surgido algo.",
+   "pt": "Desculpa interromper, surgiu um imprevisto.",
+   "pt_BR": "Desculpe interromper, surgiu um imprevisto.",
+   "fr": "Excuse-moi de couper court, il y a eu un imprévu.",
+   "de": "Tut mir leid, dass ich abbrechen muss, es ist etwas dazwischengekommen."
+  }
+ },
+ {
+  "id": "ss-goodbyes-036",
+  "topic": "goodbyes",
+  "level": "B1",
+  "text": {
+   "en": "Safe travels, and let me know when you land!",
+   "it": "Buon viaggio, e fammi sapere quando atterri!",
+   "es": "¡Buen viaje, y avísame cuando aterrices!",
+   "pt": "Boa viagem, e avisa-me quando aterrares!",
+   "pt_BR": "Boa viagem, e me avise quando você pousar!",
+   "fr": "Bon voyage, et dis-moi quand tu atterris !",
+   "de": "Gute Reise, und sag Bescheid, wenn du gelandet bist!"
+  }
+ },
+ {
+  "id": "ss-goodbyes-037",
+  "topic": "goodbyes",
+  "level": "B1",
+  "text": {
+   "en": "I enjoyed our conversation so much that the time flew by.",
+   "it": "Mi è piaciuto così tanto parlare con te che il tempo è volato.",
+   "es": "Disfruté tanto de nuestra conversación que el tiempo voló.",
+   "pt": "Gostei tanto da nossa conversa que o tempo voou.",
+   "pt_BR": "Gostei tanto do nosso papo que o tempo voou.",
+   "fr": "J'ai tellement apprécié notre conversation que le temps a filé.",
+   "de": "Das Gespräch hat mir so gut gefallen, dass die Zeit wie im Flug verging."
+  }
+ },
+ {
+  "id": "ss-goodbyes-038",
+  "topic": "goodbyes",
+  "level": "B1",
+  "text": {
+   "en": "Before I go, thank you for all your corrections.",
+   "it": "Prima di andare, grazie per tutte le tue correzioni.",
+   "es": "Antes de irme, gracias por todas tus correcciones.",
+   "pt": "Antes de me ir, obrigado por todas as tuas correções.",
+   "pt_BR": "Antes de ir, obrigado por todas as suas correções.",
+   "fr": "Avant de partir, merci pour toutes tes corrections.",
+   "de": "Bevor ich gehe, danke für all deine Korrekturen."
+  }
+ },
+ {
+  "id": "ss-goodbyes-039",
+  "topic": "goodbyes",
+  "level": "B1",
+  "text": {
+   "en": "Have a wonderful trip, and send me a photo of the view!",
+   "it": "Fai un viaggio meraviglioso e mandami una foto del panorama!",
+   "es": "¡Que tengas un viaje maravilloso y mándame una foto de las vistas!",
+   "pt": "Boa viagem e envia-me uma fotografia da paisagem!",
+   "pt_BR": "Ótima viagem, e me manda uma foto da paisagem!",
+   "fr": "Fais un merveilleux voyage et envoie-moi une photo du paysage !",
+   "de": "Hab eine wunderbare Reise und schick mir ein Foto von der Aussicht!"
+  }
+ },
+ {
+  "id": "ss-goodbyes-040",
+  "topic": "goodbyes",
+  "level": "B1",
+  "text": {
+   "en": "I'm heading out now, but I'll read your messages when I'm back.",
+   "it": "Esco adesso, ma leggerò i tuoi messaggi quando torno.",
+   "es": "Me voy ahora, pero leeré tus mensajes cuando vuelva.",
+   "pt": "Vou sair agora, mas leio as tuas mensagens quando voltar.",
+   "pt_BR": "Vou sair agora, mas leio suas mensagens quando voltar.",
+   "fr": "Je sors maintenant, mais je lirai tes messages à mon retour.",
+   "de": "Ich gehe jetzt los, lese aber deine Nachrichten, wenn ich zurück bin."
+  }
+ },
+ {
+  "id": "ss-goodbyes-041",
+  "topic": "goodbyes",
+  "level": "B1",
+  "text": {
+   "en": "It was great to finally meet you, even if only online.",
+   "it": "È stato bello conoscerti finalmente, anche se solo online.",
+   "es": "Me alegra conocerte por fin, aunque sea solo en línea.",
+   "pt": "Foi ótimo finalmente conhecer-te, mesmo que só online.",
+   "pt_BR": "Foi ótimo finalmente conhecer você, mesmo que só online.",
+   "fr": "Ravi de te rencontrer enfin, même si ce n'est qu'en ligne.",
+   "de": "Schön, dich endlich kennenzulernen, auch wenn nur online."
+  }
+ },
+ {
+  "id": "ss-goodbyes-042",
+  "topic": "goodbyes",
+  "level": "B1",
+  "text": {
+   "en": "I have to log off now, my battery is almost dead.",
+   "it": "Devo disconnettermi, la batteria sta per finire.",
+   "es": "Tengo que desconectarme, casi no me queda batería.",
+   "pt": "Tenho de sair, a bateria está quase no fim.",
+   "pt_BR": "Preciso sair, minha bateria está quase acabando.",
+   "fr": "Je dois me déconnecter, ma batterie est presque à plat.",
+   "de": "Ich muss mich abmelden, mein Akku ist fast leer."
+  }
+ },
+ {
+  "id": "ss-goodbyes-043",
+  "topic": "goodbyes",
+  "level": "B2",
+  "text": {
+   "en": "I'm afraid I have to wrap up here, but I've really valued this exchange.",
+   "it": "Purtroppo devo concludere qui, ma ho davvero apprezzato questo scambio.",
+   "es": "Me temo que tengo que despedirme aquí, pero he valorado mucho este intercambio.",
+   "pt": "Receio ter de terminar por aqui, mas valorizei mesmo este intercâmbio.",
+   "pt_BR": "Infelizmente preciso encerrar por aqui, mas valorizei muito essa troca.",
+   "fr": "Je dois malheureusement m'arrêter là, mais j'ai vraiment apprécié cet échange.",
+   "de": "Ich muss hier leider Schluss machen, aber ich habe diesen Austausch sehr geschätzt."
+  }
+ },
+ {
+  "id": "ss-goodbyes-044",
+  "topic": "goodbyes",
+  "level": "B2",
+  "text": {
+   "en": "Let's call it a day; we've covered a lot and my brain needs a rest.",
+   "it": "Per oggi basta: abbiamo fatto tanto e il mio cervello ha bisogno di riposo.",
+   "es": "Dejémoslo por hoy; hemos visto mucho y mi cerebro necesita descansar.",
+   "pt": "Por hoje chega; fizemos muito e o meu cérebro precisa de descansar.",
+   "pt_BR": "Por hoje chega; vimos muita coisa e meu cérebro precisa descansar.",
+   "fr": "On s'arrête là pour aujourd'hui ; on a vu beaucoup de choses et mon cerveau a besoin de repos.",
+   "de": "Machen wir für heute Schluss; wir haben viel geschafft und mein Kopf braucht eine Pause."
+  }
+ },
+ {
+  "id": "ss-goodbyes-045",
+  "topic": "goodbyes",
+  "level": "B2",
+  "text": {
+   "en": "I'll be travelling next week with little signal, so please don't worry if I go quiet.",
+   "it": "La prossima settimana viaggerò con poco segnale, quindi non preoccuparti se non mi faccio sentire.",
+   "es": "La próxima semana viajaré con poca cobertura, así que no te preocupes si no doy señales de vida.",
+   "pt": "Na próxima semana vou viajar com pouca rede, por isso não te preocupes se não der notícias.",
+   "pt_BR": "Na semana que vem vou viajar com pouco sinal, então não se preocupe se eu sumir um pouco.",
+   "fr": "Je voyage la semaine prochaine avec peu de réseau, alors ne t'inquiète pas si je ne donne pas de nouvelles.",
+   "de": "Nächste Woche bin ich unterwegs und habe wenig Empfang, mach dir also keine Sorgen, wenn ich mich nicht melde."
+  }
+ },
+ {
+  "id": "ss-goodbyes-046",
+  "topic": "goodbyes",
+  "level": "B2",
+  "text": {
+   "en": "Thank you for such an inspiring conversation, I learned a great deal from you.",
+   "it": "Grazie per una conversazione così stimolante, ho imparato moltissimo da te.",
+   "es": "Gracias por una conversación tan inspiradora, he aprendido muchísimo de ti.",
+   "pt": "Obrigado por uma conversa tão inspiradora, aprendi imenso contigo.",
+   "pt_BR": "Obrigado por uma conversa tão inspiradora, aprendi muito com você.",
+   "fr": "Merci pour cette conversation si inspirante, j'ai énormément appris grâce à toi.",
+   "de": "Danke für dieses inspirierende Gespräch, ich habe sehr viel von dir gelernt."
+  }
+ },
+ {
+  "id": "ss-goodbyes-047",
+  "topic": "goodbyes",
+  "level": "B2",
+  "text": {
+   "en": "I wish you all the best with everything you have planned this year.",
+   "it": "Ti auguro il meglio per tutto ciò che hai in programma quest'anno.",
+   "es": "Te deseo lo mejor con todo lo que tienes planeado este año.",
+   "pt": "Desejo-te o melhor para tudo o que tens planeado este ano.",
+   "pt_BR": "Desejo o melhor para tudo o que você planejou para este ano.",
+   "fr": "Je te souhaite le meilleur pour tout ce que tu as prévu cette année.",
+   "de": "Ich wünsche dir alles Gute für alles, was du dieses Jahr vorhast."
+  }
+ },
+ {
+  "id": "ss-goodbyes-048",
+  "topic": "goodbyes",
+  "level": "B2",
+  "text": {
+   "en": "It has been a pleasure getting to know you, and I look forward to our next chat.",
+   "it": "È stato un piacere conoscerti e non vedo l'ora della nostra prossima chiacchierata.",
+   "es": "Ha sido un placer conocerte y espero con ganas nuestra próxima charla.",
+   "pt": "Foi um prazer conhecer-te e já estou a contar com a nossa próxima conversa.",
+   "pt_BR": "Foi um prazer conhecer você e já estou ansioso pela nossa próxima conversa.",
+   "fr": "Ce fut un plaisir de faire ta connaissance et j'ai hâte de notre prochaine discussion.",
+   "de": "Es war mir eine Freude, dich kennenzulernen, und ich freue mich auf unser nächstes Gespräch."
+  }
+ },
+ {
+  "id": "ss-goodbyes-049",
+  "topic": "goodbyes",
+  "level": "B2",
+  "text": {
+   "en": "Unfortunately I must dash off, but I'll reply to everything properly tomorrow.",
+   "it": "Purtroppo devo scappare, ma domani ti rispondo con calma su tutto.",
+   "es": "Por desgracia tengo que salir corriendo, pero mañana te respondo a todo con calma.",
+   "pt": "Infelizmente tenho de sair a correr, mas amanhã respondo a tudo com calma.",
+   "pt_BR": "Infelizmente preciso sair correndo, mas amanhã respondo a tudo com calma.",
+   "fr": "Malheureusement je dois filer, mais je te répondrai à tout calmement demain.",
+   "de": "Leider muss ich weg, aber ich antworte dir morgen in Ruhe auf alles."
+  }
+ },
+ {
+  "id": "ss-goodbyes-050",
+  "topic": "goodbyes",
+  "level": "B2",
+  "text": {
+   "en": "I hope the rest of your week goes smoothly, and thanks again for your time.",
+   "it": "Spero che il resto della settimana vada liscio e grazie ancora per il tuo tempo.",
+   "es": "Espero que el resto de tu semana vaya bien y gracias de nuevo por tu tiempo.",
+   "pt": "Espero que o resto da tua semana corra bem e obrigado novamente pelo teu tempo.",
+   "pt_BR": "Espero que o resto da sua semana seja tranquilo e obrigado de novo pelo seu tempo.",
+   "fr": "J'espère que le reste de ta semaine se passera bien, et merci encore pour ton temps.",
+   "de": "Ich hoffe, der Rest deiner Woche verläuft reibungslos, und danke nochmals für deine Zeit."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-001",
+  "topic": "keeping_in_touch",
+  "level": "A1",
+  "text": {
+   "en": "Let's keep in touch!",
+   "it": "Restiamo in contatto!",
+   "es": "¡Sigamos en contacto!",
+   "pt": "Vamos manter o contacto!",
+   "pt_BR": "Vamos manter contato!",
+   "fr": "Restons en contact !",
+   "de": "Lass uns in Kontakt bleiben!"
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-002",
+  "topic": "keeping_in_touch",
+  "level": "A1",
+  "text": {
+   "en": "Write to me soon!",
+   "it": "Scrivimi presto!",
+   "es": "¡Escríbeme pronto!",
+   "pt": "Escreve-me em breve!",
+   "pt_BR": "Me escreve logo!",
+   "fr": "Écris-moi bientôt !",
+   "de": "Schreib mir bald!"
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-003",
+  "topic": "keeping_in_touch",
+  "level": "A1",
+  "text": {
+   "en": "Send me a message.",
+   "it": "Mandami un messaggio.",
+   "es": "Envíame un mensaje.",
+   "pt": "Envia-me uma mensagem.",
+   "pt_BR": "Me manda uma mensagem.",
+   "fr": "Envoie-moi un message.",
+   "de": "Schick mir eine Nachricht."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-004",
+  "topic": "keeping_in_touch",
+  "level": "A1",
+  "text": {
+   "en": "I'll message you tomorrow.",
+   "it": "Ti scrivo domani.",
+   "es": "Te escribo mañana.",
+   "pt": "Mando-te mensagem amanhã.",
+   "pt_BR": "Te mando mensagem amanhã.",
+   "fr": "Je t'envoie un message demain.",
+   "de": "Ich schreibe dir morgen."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-005",
+  "topic": "keeping_in_touch",
+  "level": "A1",
+  "text": {
+   "en": "I miss our chats.",
+   "it": "Mi mancano le nostre chiacchierate.",
+   "es": "Echo de menos nuestras charlas.",
+   "pt": "Tenho saudades das nossas conversas.",
+   "pt_BR": "Sinto falta dos nossos papos.",
+   "fr": "Nos discussions me manquent.",
+   "de": "Ich vermisse unsere Gespräche."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-006",
+  "topic": "keeping_in_touch",
+  "level": "A1",
+  "text": {
+   "en": "Please write back.",
+   "it": "Rispondimi, per favore.",
+   "es": "Respóndeme, por favor.",
+   "pt": "Responde-me, por favor.",
+   "pt_BR": "Me responde, por favor.",
+   "fr": "Réponds-moi, s'il te plaît.",
+   "de": "Bitte schreib zurück."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-007",
+  "topic": "keeping_in_touch",
+  "level": "A1",
+  "text": {
+   "en": "Let's talk again soon.",
+   "it": "Riparliamoci presto.",
+   "es": "Hablemos de nuevo pronto.",
+   "pt": "Falamos outra vez em breve.",
+   "pt_BR": "Vamos conversar de novo em breve.",
+   "fr": "On se reparle bientôt.",
+   "de": "Lass uns bald wieder sprechen."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-008",
+  "topic": "keeping_in_touch",
+  "level": "A1",
+  "text": {
+   "en": "Send me a photo of your city.",
+   "it": "Mandami una foto della tua città.",
+   "es": "Envíame una foto de tu ciudad.",
+   "pt": "Envia-me uma fotografia da tua cidade.",
+   "pt_BR": "Me manda uma foto da sua cidade.",
+   "fr": "Envoie-moi une photo de ta ville.",
+   "de": "Schick mir ein Foto von deiner Stadt."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-009",
+  "topic": "keeping_in_touch",
+  "level": "A1",
+  "text": {
+   "en": "Call me this weekend.",
+   "it": "Chiamami questo fine settimana.",
+   "es": "Llámame este fin de semana.",
+   "pt": "Liga-me este fim de semana.",
+   "pt_BR": "Me liga neste fim de semana.",
+   "fr": "Appelle-moi ce week-end.",
+   "de": "Ruf mich dieses Wochenende an."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-010",
+  "topic": "keeping_in_touch",
+  "level": "A1",
+  "text": {
+   "en": "I'll send you the link.",
+   "it": "Ti mando il link.",
+   "es": "Te envío el enlace.",
+   "pt": "Envio-te o link.",
+   "pt_BR": "Te envio o link.",
+   "fr": "Je t'envoie le lien.",
+   "de": "Ich schicke dir den Link."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-011",
+  "topic": "keeping_in_touch",
+  "level": "A1",
+  "text": {
+   "en": "Thanks for your message.",
+   "it": "Grazie per il tuo messaggio.",
+   "es": "Gracias por tu mensaje.",
+   "pt": "Obrigado pela tua mensagem.",
+   "pt_BR": "Obrigado pela sua mensagem.",
+   "fr": "Merci pour ton message.",
+   "de": "Danke für deine Nachricht."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-012",
+  "topic": "keeping_in_touch",
+  "level": "A1",
+  "text": {
+   "en": "Are you free to chat today?",
+   "it": "Hai tempo per chiacchierare oggi?",
+   "es": "¿Tienes tiempo para charlar hoy?",
+   "pt": "Tens tempo para conversar hoje?",
+   "pt_BR": "Você tem tempo para conversar hoje?",
+   "fr": "Tu as le temps de discuter aujourd'hui ?",
+   "de": "Hast du heute Zeit zum Plaudern?"
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-013",
+  "topic": "keeping_in_touch",
+  "level": "A1",
+  "text": {
+   "en": "Write to me when you can.",
+   "it": "Scrivimi quando puoi.",
+   "es": "Escríbeme cuando puedas.",
+   "pt": "Escreve-me quando puderes.",
+   "pt_BR": "Me escreve quando puder.",
+   "fr": "Écris-moi quand tu peux.",
+   "de": "Schreib mir, wenn du kannst."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-014",
+  "topic": "keeping_in_touch",
+  "level": "A1",
+  "text": {
+   "en": "Tell me your news!",
+   "it": "Raccontami le tue novità!",
+   "es": "¡Cuéntame tus novedades!",
+   "pt": "Conta-me as novidades!",
+   "pt_BR": "Me conta as novidades!",
+   "fr": "Donne-moi de tes nouvelles !",
+   "de": "Erzähl mir deine Neuigkeiten!"
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-015",
+  "topic": "keeping_in_touch",
+  "level": "A1",
+  "text": {
+   "en": "I'm happy to hear from you.",
+   "it": "Sono felice di sentirti.",
+   "es": "Me alegra saber de ti.",
+   "pt": "Fico feliz por ter notícias tuas.",
+   "pt_BR": "Fico feliz em ter notícias suas.",
+   "fr": "Je suis content d'avoir de tes nouvelles.",
+   "de": "Ich freue mich, von dir zu hören."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-016",
+  "topic": "keeping_in_touch",
+  "level": "A2",
+  "text": {
+   "en": "I'll send you a message when I arrive.",
+   "it": "Ti mando un messaggio quando arrivo.",
+   "es": "Te mando un mensaje cuando llegue.",
+   "pt": "Envio-te uma mensagem quando chegar.",
+   "pt_BR": "Te mando uma mensagem quando chegar.",
+   "fr": "Je t'envoie un message quand j'arrive.",
+   "de": "Ich schreibe dir, wenn ich ankomme."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-017",
+  "topic": "keeping_in_touch",
+  "level": "A2",
+  "text": {
+   "en": "Do you want to have a video call on Sunday?",
+   "it": "Vuoi fare una videochiamata domenica?",
+   "es": "¿Quieres hacer una videollamada el domingo?",
+   "pt": "Queres fazer uma videochamada no domingo?",
+   "pt_BR": "Você quer fazer uma chamada de vídeo no domingo?",
+   "fr": "Tu veux faire un appel vidéo dimanche ?",
+   "de": "Möchtest du am Sonntag einen Videoanruf machen?"
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-018",
+  "topic": "keeping_in_touch",
+  "level": "A2",
+  "text": {
+   "en": "Sorry for the late reply, I had a lot to do.",
+   "it": "Scusa il ritardo nella risposta, avevo un sacco da fare.",
+   "es": "Perdona la tardanza en responder, tuve mucho que hacer.",
+   "pt": "Desculpa a demora na resposta, tive muito que fazer.",
+   "pt_BR": "Desculpe a demora para responder, tive muita coisa para fazer.",
+   "fr": "Désolé pour la réponse tardive, j'avais beaucoup à faire.",
+   "de": "Entschuldige die späte Antwort, ich hatte viel zu tun."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-019",
+  "topic": "keeping_in_touch",
+  "level": "A2",
+  "text": {
+   "en": "I'd like to practise with you every week.",
+   "it": "Mi piacerebbe fare pratica con te ogni settimana.",
+   "es": "Me gustaría practicar contigo cada semana.",
+   "pt": "Gostava de praticar contigo todas as semanas.",
+   "pt_BR": "Eu gostaria de praticar com você toda semana.",
+   "fr": "J'aimerais m'entraîner avec toi chaque semaine.",
+   "de": "Ich würde gern jede Woche mit dir üben."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-020",
+  "topic": "keeping_in_touch",
+  "level": "A2",
+  "text": {
+   "en": "Let's chat again on the same day next week.",
+   "it": "Chiacchieriamo di nuovo lo stesso giorno la prossima settimana.",
+   "es": "Charlemos de nuevo el mismo día la semana que viene.",
+   "pt": "Conversamos outra vez no mesmo dia da próxima semana.",
+   "pt_BR": "Vamos conversar de novo no mesmo dia da semana que vem.",
+   "fr": "Rediscutons le même jour la semaine prochaine.",
+   "de": "Lass uns nächste Woche am selben Tag wieder plaudern."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-021",
+  "topic": "keeping_in_touch",
+  "level": "A2",
+  "text": {
+   "en": "Can you recommend a song from your country?",
+   "it": "Puoi consigliarmi una canzone del tuo paese?",
+   "es": "¿Me puedes recomendar una canción de tu país?",
+   "pt": "Podes recomendar-me uma canção do teu país?",
+   "pt_BR": "Você pode me recomendar uma música do seu país?",
+   "fr": "Tu peux me recommander une chanson de ton pays ?",
+   "de": "Kannst du mir ein Lied aus deinem Land empfehlen?"
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-022",
+  "topic": "keeping_in_touch",
+  "level": "A2",
+  "text": {
+   "en": "I'll send you some photos from my trip.",
+   "it": "Ti mando qualche foto del mio viaggio.",
+   "es": "Te mando unas fotos de mi viaje.",
+   "pt": "Envio-te algumas fotografias da minha viagem.",
+   "pt_BR": "Te mando algumas fotos da minha viagem.",
+   "fr": "Je t'envoie quelques photos de mon voyage.",
+   "de": "Ich schicke dir ein paar Fotos von meiner Reise."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-023",
+  "topic": "keeping_in_touch",
+  "level": "A2",
+  "text": {
+   "en": "What is the best time to call you?",
+   "it": "Qual è il momento migliore per chiamarti?",
+   "es": "¿Cuál es la mejor hora para llamarte?",
+   "pt": "Qual é a melhor hora para te ligar?",
+   "pt_BR": "Qual é o melhor horário para te ligar?",
+   "fr": "Quel est le meilleur moment pour t'appeler ?",
+   "de": "Wann kann ich dich am besten anrufen?"
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-024",
+  "topic": "keeping_in_touch",
+  "level": "A2",
+  "text": {
+   "en": "I haven't heard from you in a while. How are you?",
+   "it": "Non ho tue notizie da un po'. Come stai?",
+   "es": "Hace tiempo que no sé de ti. ¿Cómo estás?",
+   "pt": "Há algum tempo que não tenho notícias tuas. Como estás?",
+   "pt_BR": "Faz um tempo que não tenho notícias suas. Como você está?",
+   "fr": "Je n'ai pas eu de tes nouvelles depuis un moment. Comment vas-tu ?",
+   "de": "Ich habe schon länger nichts von dir gehört. Wie geht es dir?"
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-025",
+  "topic": "keeping_in_touch",
+  "level": "A2",
+  "text": {
+   "en": "Let's make a plan to talk every Saturday.",
+   "it": "Facciamo un programma per sentirci ogni sabato.",
+   "es": "Hagamos un plan para hablar todos los sábados.",
+   "pt": "Vamos combinar falar todos os sábados.",
+   "pt_BR": "Vamos combinar de conversar todo sábado.",
+   "fr": "Prévoyons de nous parler chaque samedi.",
+   "de": "Lass uns verabreden, jeden Samstag zu sprechen."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-026",
+  "topic": "keeping_in_touch",
+  "level": "A2",
+  "text": {
+   "en": "Tell me when you have time to chat.",
+   "it": "Dimmi quando hai tempo per chiacchierare.",
+   "es": "Dime cuándo tienes tiempo para charlar.",
+   "pt": "Diz-me quando tiveres tempo para conversar.",
+   "pt_BR": "Me avise quando tiver tempo para conversar.",
+   "fr": "Dis-moi quand tu as le temps de discuter.",
+   "de": "Sag mir, wann du Zeit zum Reden hast."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-027",
+  "topic": "keeping_in_touch",
+  "level": "A2",
+  "text": {
+   "en": "I was thinking about our last chat. How are you?",
+   "it": "Pensavo alla nostra ultima chiacchierata. Come stai?",
+   "es": "Estaba pensando en nuestra última charla. ¿Cómo estás?",
+   "pt": "Estava a pensar na nossa última conversa. Como estás?",
+   "pt_BR": "Estava pensando no nosso último papo. Como você está?",
+   "fr": "Je repensais à notre dernière discussion. Comment vas-tu ?",
+   "de": "Ich habe an unser letztes Gespräch gedacht. Wie geht es dir?"
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-028",
+  "topic": "keeping_in_touch",
+  "level": "A2",
+  "text": {
+   "en": "Please send me news from your city.",
+   "it": "Mandami per favore notizie dalla tua città.",
+   "es": "Envíame noticias de tu ciudad, por favor.",
+   "pt": "Envia-me novidades da tua cidade, por favor.",
+   "pt_BR": "Me manda novidades da sua cidade, por favor.",
+   "fr": "Envoie-moi des nouvelles de ta ville, s'il te plaît.",
+   "de": "Schick mir bitte Neuigkeiten aus deiner Stadt."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-029",
+  "topic": "keeping_in_touch",
+  "level": "A2",
+  "text": {
+   "en": "I'll add you to our group chat.",
+   "it": "Ti aggiungo alla nostra chat di gruppo.",
+   "es": "Te añado a nuestro chat de grupo.",
+   "pt": "Vou adicionar-te ao nosso grupo.",
+   "pt_BR": "Vou te adicionar ao nosso grupo.",
+   "fr": "Je t'ajoute à notre discussion de groupe.",
+   "de": "Ich füge dich unserem Gruppenchat hinzu."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-030",
+  "topic": "keeping_in_touch",
+  "level": "A2",
+  "text": {
+   "en": "Thanks for keeping in touch with me.",
+   "it": "Grazie per rimanere in contatto con me.",
+   "es": "Gracias por seguir en contacto conmigo.",
+   "pt": "Obrigado por manteres o contacto comigo.",
+   "pt_BR": "Obrigado por manter contato comigo.",
+   "fr": "Merci de garder le contact avec moi.",
+   "de": "Danke, dass du mit mir in Kontakt bleibst."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-031",
+  "topic": "keeping_in_touch",
+  "level": "B1",
+  "text": {
+   "en": "Let's set a regular time to practise together, maybe every Thursday evening.",
+   "it": "Fissiamo un orario fisso per esercitarci insieme, magari ogni giovedì sera.",
+   "es": "Fijemos una hora regular para practicar juntos, quizá los jueves por la noche.",
+   "pt": "Vamos marcar um horário fixo para praticar juntos, talvez todas as quintas à noite.",
+   "pt_BR": "Vamos marcar um horário fixo para praticar juntos, talvez toda quinta à noite.",
+   "fr": "Fixons un créneau régulier pour nous entraîner ensemble, peut-être le jeudi soir.",
+   "de": "Lass uns eine feste Zeit zum gemeinsamen Üben ausmachen, vielleicht jeden Donnerstagabend."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-032",
+  "topic": "keeping_in_touch",
+  "level": "B1",
+  "text": {
+   "en": "Sorry for the silence; things have been hectic lately.",
+   "it": "Scusa il silenzio: ultimamente è stato un periodo frenetico.",
+   "es": "Perdona mi silencio; últimamente todo ha sido muy movido.",
+   "pt": "Desculpa o silêncio; ultimamente tem sido tudo muito agitado.",
+   "pt_BR": "Desculpe o sumiço; ultimamente as coisas andaram bem corridas.",
+   "fr": "Pardon pour mon silence ; ces derniers temps ont été très agités.",
+   "de": "Entschuldige mein Schweigen; in letzter Zeit war es ziemlich hektisch."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-033",
+  "topic": "keeping_in_touch",
+  "level": "B1",
+  "text": {
+   "en": "If you ever visit my city, let me know and I'll show you around.",
+   "it": "Se mai visiterai la mia città, fammelo sapere e ti farò da guida.",
+   "es": "Si alguna vez visitas mi ciudad, avísame y te la enseñaré.",
+   "pt": "Se alguma vez visitares a minha cidade, avisa-me e mostro-te a cidade.",
+   "pt_BR": "Se um dia você visitar minha cidade, me avise que eu te mostro tudo.",
+   "fr": "Si tu visites un jour ma ville, dis-le-moi et je te la ferai découvrir.",
+   "de": "Falls du jemals meine Stadt besuchst, sag mir Bescheid, dann zeige ich dir alles."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-034",
+  "topic": "keeping_in_touch",
+  "level": "B1",
+  "text": {
+   "en": "Let's not lose contact, even when our schedules get busy.",
+   "it": "Non perdiamoci di vista, anche quando gli impegni aumentano.",
+   "es": "No perdamos el contacto, aunque tengamos la agenda llena.",
+   "pt": "Não percamos o contacto, mesmo quando a agenda estiver cheia.",
+   "pt_BR": "Não vamos perder o contato, mesmo quando a agenda estiver cheia.",
+   "fr": "Ne perdons pas le contact, même quand nos emplois du temps sont chargés.",
+   "de": "Lass uns den Kontakt nicht verlieren, auch wenn es zeitlich eng wird."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-035",
+  "topic": "keeping_in_touch",
+  "level": "B1",
+  "text": {
+   "en": "Send me a voice message when you have a minute, I'd love to hear you speak.",
+   "it": "Mandami un messaggio vocale quando hai un attimo, mi piacerebbe sentirti parlare.",
+   "es": "Mándame un mensaje de voz cuando tengas un momento, me encantaría oírte hablar.",
+   "pt": "Manda-me uma mensagem de voz quando tiveres um minuto, adorava ouvir-te falar.",
+   "pt_BR": "Me manda um áudio quando tiver um minuto, eu adoraria te ouvir falar.",
+   "fr": "Envoie-moi un message vocal quand tu as une minute, j'aimerais t'entendre parler.",
+   "de": "Schick mir eine Sprachnachricht, wenn du kurz Zeit hast, ich würde dich gern sprechen hören."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-036",
+  "topic": "keeping_in_touch",
+  "level": "B1",
+  "text": {
+   "en": "I'll send you a postcard from my next trip.",
+   "it": "Ti manderò una cartolina dal mio prossimo viaggio.",
+   "es": "Te enviaré una postal de mi próximo viaje.",
+   "pt": "Vou enviar-te um postal da minha próxima viagem.",
+   "pt_BR": "Vou te mandar um cartão-postal da minha próxima viagem.",
+   "fr": "Je t'enverrai une carte postale de mon prochain voyage.",
+   "de": "Ich schicke dir eine Postkarte von meiner nächsten Reise."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-037",
+  "topic": "keeping_in_touch",
+  "level": "B1",
+  "text": {
+   "en": "Do you prefer messages or voice notes for keeping in touch?",
+   "it": "Per restare in contatto preferisci i messaggi o i vocali?",
+   "es": "¿Prefieres mensajes o notas de voz para mantenernos en contacto?",
+   "pt": "Preferes mensagens ou mensagens de voz para mantermos o contacto?",
+   "pt_BR": "Você prefere mensagens ou áudios para a gente manter contato?",
+   "fr": "Pour garder le contact, tu préfères les messages ou les vocaux ?",
+   "de": "Zum Kontakthalten: Magst du lieber Nachrichten oder Sprachnachrichten?"
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-038",
+  "topic": "keeping_in_touch",
+  "level": "B1",
+  "text": {
+   "en": "Remind me to ask you about your project next time we talk.",
+   "it": "Ricordami di chiederti del tuo progetto la prossima volta che ci sentiamo.",
+   "es": "Recuérdame preguntarte por tu proyecto la próxima vez que hablemos.",
+   "pt": "Lembra-me de te perguntar pelo teu projeto da próxima vez que falarmos.",
+   "pt_BR": "Me lembra de perguntar sobre o seu projeto na próxima vez que a gente conversar.",
+   "fr": "Rappelle-moi de te demander des nouvelles de ton projet la prochaine fois.",
+   "de": "Erinnere mich daran, dich beim nächsten Mal nach deinem Projekt zu fragen."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-039",
+  "topic": "keeping_in_touch",
+  "level": "B1",
+  "text": {
+   "en": "I'll tell you how my interview went.",
+   "it": "Ti racconterò com'è andato il mio colloquio.",
+   "es": "Te cuento cómo me fue en la entrevista.",
+   "pt": "Conto-te como correu a minha entrevista.",
+   "pt_BR": "Te conto como foi minha entrevista.",
+   "fr": "Je te raconterai comment s'est passé mon entretien.",
+   "de": "Ich erzähle dir, wie mein Vorstellungsgespräch gelaufen ist."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-040",
+  "topic": "keeping_in_touch",
+  "level": "B1",
+  "text": {
+   "en": "Why don't we exchange emails in case the app stops working?",
+   "it": "Perché non ci scambiamo le email, nel caso l'app smetta di funzionare?",
+   "es": "¿Por qué no intercambiamos correos por si la aplicación deja de funcionar?",
+   "pt": "Porque não trocamos emails, caso a aplicação deixe de funcionar?",
+   "pt_BR": "Por que não trocamos e-mails, caso o aplicativo pare de funcionar?",
+   "fr": "Et si on échangeait nos e-mails au cas où l'appli ne fonctionnerait plus ?",
+   "de": "Wollen wir E-Mail-Adressen austauschen, falls die App mal nicht mehr funktioniert?"
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-041",
+  "topic": "keeping_in_touch",
+  "level": "B1",
+  "text": {
+   "en": "I'd be happy to help whenever you have questions about my language.",
+   "it": "Sarò felice di aiutarti ogni volta che hai domande sulla mia lingua.",
+   "es": "Con gusto te ayudo cuando tengas dudas sobre mi idioma.",
+   "pt": "Ajudo-te com todo o gosto sempre que tiveres dúvidas sobre a minha língua.",
+   "pt_BR": "Fico feliz em ajudar sempre que você tiver dúvidas sobre a minha língua.",
+   "fr": "Je t'aiderai volontiers chaque fois que tu auras des questions sur ma langue.",
+   "de": "Ich helfe dir gern, wann immer du Fragen zu meiner Sprache hast."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-042",
+  "topic": "keeping_in_touch",
+  "level": "B1",
+  "text": {
+   "en": "Let me know how your trip went when you're back.",
+   "it": "Fammi sapere com'è andato il viaggio quando torni.",
+   "es": "Cuéntame qué tal el viaje cuando vuelvas.",
+   "pt": "Diz-me como correu a viagem quando voltares.",
+   "pt_BR": "Me conta como foi a viagem quando você voltar.",
+   "fr": "Dis-moi comment s'est passé ton voyage à ton retour.",
+   "de": "Erzähl mir, wie deine Reise war, wenn du zurück bist."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-043",
+  "topic": "keeping_in_touch",
+  "level": "B2",
+  "text": {
+   "en": "Even though we live far apart, I hope we can keep up this friendship for years.",
+   "it": "Anche se viviamo lontani, spero che potremo coltivare questa amicizia per anni.",
+   "es": "Aunque vivamos lejos, espero que podamos mantener esta amistad durante años.",
+   "pt": "Mesmo vivendo longe um do outro, espero que possamos manter esta amizade durante anos.",
+   "pt_BR": "Mesmo morando longe um do outro, espero que a gente consiga manter essa amizade por anos.",
+   "fr": "Même si nous vivons loin l'un de l'autre, j'espère que nous pourrons entretenir cette amitié pendant des années.",
+   "de": "Auch wenn wir weit voneinander entfernt leben, hoffe ich, dass wir diese Freundschaft über Jahre pflegen können."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-044",
+  "topic": "keeping_in_touch",
+  "level": "B2",
+  "text": {
+   "en": "I apologise for taking so long to get back to you; your message slipped through the cracks.",
+   "it": "Mi scuso per averci messo tanto a risponderti: il tuo messaggio mi era sfuggito.",
+   "es": "Te pido disculpas por tardar tanto en responderte; tu mensaje se me pasó por alto.",
+   "pt": "Peço desculpa por ter demorado tanto a responder-te; a tua mensagem passou-me ao lado.",
+   "pt_BR": "Peço desculpas por ter demorado tanto para responder; sua mensagem acabou passando batido.",
+   "fr": "Je m'excuse d'avoir mis autant de temps à te répondre ; ton message m'avait échappé.",
+   "de": "Entschuldige, dass ich so lange gebraucht habe, um zu antworten; deine Nachricht ist mir durchgerutscht."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-045",
+  "topic": "keeping_in_touch",
+  "level": "B2",
+  "text": {
+   "en": "It would be great to turn these chats into a regular language exchange.",
+   "it": "Sarebbe bello trasformare queste chiacchierate in uno scambio linguistico regolare.",
+   "es": "Sería genial convertir estas charlas en un intercambio de idiomas regular.",
+   "pt": "Seria ótimo transformar estas conversas num intercâmbio linguístico regular.",
+   "pt_BR": "Seria ótimo transformar esses papos num intercâmbio de idiomas regular.",
+   "fr": "Ce serait super de transformer ces discussions en un véritable échange linguistique régulier.",
+   "de": "Es wäre toll, diese Gespräche zu einem regelmäßigen Sprachaustausch zu machen."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-046",
+  "topic": "keeping_in_touch",
+  "level": "B2",
+  "text": {
+   "en": "Let's schedule a call once a month so that we both keep improving.",
+   "it": "Fissiamo una chiamata una volta al mese così miglioriamo entrambi.",
+   "es": "Programemos una llamada una vez al mes para que los dos sigamos mejorando.",
+   "pt": "Vamos marcar uma chamada uma vez por mês para que os dois continuemos a melhorar.",
+   "pt_BR": "Vamos marcar uma ligação uma vez por mês para que nós dois continuemos melhorando.",
+   "fr": "Programmons un appel une fois par mois pour que nous continuions tous les deux à progresser.",
+   "de": "Lass uns einmal im Monat einen Anruf vereinbaren, damit wir beide besser werden."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-047",
+  "topic": "keeping_in_touch",
+  "level": "B2",
+  "text": {
+   "en": "Whenever you're in town, please get in touch; it would be lovely to meet in person.",
+   "it": "Quando sei in città, fatti sentire: sarebbe bello incontrarci di persona.",
+   "es": "Cuando estés por aquí, ponte en contacto; sería genial vernos en persona.",
+   "pt": "Sempre que estiveres na cidade, dá notícias; seria ótimo encontrarmo-nos pessoalmente.",
+   "pt_BR": "Sempre que você estiver na cidade, me avise; seria ótimo nos encontrarmos pessoalmente.",
+   "fr": "Quand tu seras en ville, fais-moi signe ; ce serait super de se voir en personne.",
+   "de": "Wenn du mal in der Stadt bist, melde dich gern; es wäre schön, sich persönlich zu treffen."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-048",
+  "topic": "keeping_in_touch",
+  "level": "B2",
+  "text": {
+   "en": "I really appreciate how you always find time to write, despite your busy schedule.",
+   "it": "Apprezzo molto che trovi sempre il tempo di scrivere, nonostante i tuoi impegni.",
+   "es": "Aprecio mucho que siempre encuentres tiempo para escribir, a pesar de tu agenda apretada.",
+   "pt": "Agradeço muito que arranjes sempre tempo para escrever, apesar da tua agenda preenchida.",
+   "pt_BR": "Agradeço muito por você sempre arrumar tempo para escrever, apesar da agenda cheia.",
+   "fr": "J'apprécie vraiment que tu trouves toujours le temps d'écrire, malgré ton emploi du temps chargé.",
+   "de": "Ich schätze es sehr, dass du trotz deines vollen Terminkalenders immer Zeit zum Schreiben findest."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-049",
+  "topic": "keeping_in_touch",
+  "level": "B2",
+  "text": {
+   "en": "Feel free to reach out whenever you want to talk, no matter the time zone.",
+   "it": "Scrivimi pure quando vuoi parlare, a prescindere dal fuso orario.",
+   "es": "Escríbeme cuando quieras hablar, sin importar la zona horaria.",
+   "pt": "Escreve-me quando quiseres falar, independentemente do fuso horário.",
+   "pt_BR": "Me escreva quando quiser conversar, não importa o fuso horário.",
+   "fr": "N'hésite pas à me contacter quand tu veux discuter, quel que soit le décalage horaire.",
+   "de": "Melde dich gern, wann immer du reden möchtest, egal in welcher Zeitzone."
+  }
+ },
+ {
+  "id": "ss-keeping_in_touch-050",
+  "topic": "keeping_in_touch",
+  "level": "B2",
+  "text": {
+   "en": "I'll keep you posted on how things develop, and I'd love to hear your updates as well.",
+   "it": "Ti terrò al corrente di come vanno le cose e mi farebbe piacere ricevere anche i tuoi aggiornamenti.",
+   "es": "Te mantendré al tanto de cómo avanzan las cosas y me encantaría saber también las tuyas.",
+   "pt": "Vou manter-te a par do que for acontecendo e adorava saber também as tuas novidades.",
+   "pt_BR": "Vou te manter informado de como as coisas evoluem e adoraria saber das suas novidades também.",
+   "fr": "Je te tiendrai au courant de l'évolution des choses et j'aimerais aussi avoir de tes nouvelles.",
+   "de": "Ich halte dich auf dem Laufenden und würde mich freuen, auch von dir Neuigkeiten zu hören."
+  }
+ }
+]

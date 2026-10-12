@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ss-hobbies-001",
+  "topic": "hobbies",
+  "level": "A1",
+  "text": {
+   "en": "What do you like to do?",
+   "it": "Cosa ti piace fare?",
+   "es": "¿Qué te gusta hacer?",
+   "pt": "O que gostas de fazer?",
+   "pt_BR": "O que você gosta de fazer?",
+   "fr": "Qu'est-ce que tu aimes faire ?",
+   "de": "Was machst du gern?"
+  }
+ },
+ {
+  "id": "ss-hobbies-002",
+  "topic": "hobbies",
+  "level": "A1",
+  "text": {
+   "en": "I like reading books.",
+   "it": "Mi piace leggere libri.",
+   "es": "Me gusta leer libros.",
+   "pt": "Gosto de ler livros.",
+   "pt_BR": "Eu gosto de ler livros.",
+   "fr": "J'aime lire des livres.",
+   "de": "Ich lese gern Bücher."
+  }
+ },
+ {
+  "id": "ss-hobbies-003",
+  "topic": "hobbies",
+  "level": "A1",
+  "text": {
+   "en": "Do you like music?",
+   "it": "Ti piace la musica?",
+   "es": "¿Te gusta la música?",
+   "pt": "Gostas de música?",
+   "pt_BR": "Você gosta de música?",
+   "fr": "Tu aimes la musique ?",
+   "de": "Magst du Musik?"
+  }
+ },
+ {
+  "id": "ss-hobbies-004",
+  "topic": "hobbies",
+  "level": "A1",
+  "text": {
+   "en": "I play the guitar.",
+   "it": "Suono la chitarra.",
+   "es": "Toco la guitarra.",
+   "pt": "Toco guitarra.",
+   "pt_BR": "Eu toco guitarra.",
+   "fr": "Je joue de la guitare.",
+   "de": "Ich spiele Gitarre."
+  }
+ },
+ {
+  "id": "ss-hobbies-005",
+  "topic": "hobbies",
+  "level": "A1",
+  "text": {
+   "en": "I love cooking.",
+   "it": "Adoro cucinare.",
+   "es": "Me encanta cocinar.",
+   "pt": "Adoro cozinhar.",
+   "pt_BR": "Eu adoro cozinhar.",
+   "fr": "J'adore cuisiner.",
+   "de": "Ich koche leidenschaftlich gern."
+  }
+ },
+ {
+  "id": "ss-hobbies-006",
+  "topic": "hobbies",
+  "level": "A1",
+  "text": {
+   "en": "Do you like sports?",
+   "it": "Ti piace lo sport?",
+   "es": "¿Te gusta el deporte?",
+   "pt": "Gostas de desporto?",
+   "pt_BR": "Você gosta de esportes?",
+   "fr": "Tu aimes le sport ?",
+   "de": "Machst du gern Sport?"
+  }
+ },
+ {
+  "id": "ss-hobbies-007",
+  "topic": "hobbies",
+  "level": "A1",
+  "text": {
+   "en": "I like to walk in the park.",
+   "it": "Mi piace passeggiare nel parco.",
+   "es": "Me gusta pasear por el parque.",
+   "pt": "Gosto de passear no parque.",
+   "pt_BR": "Eu gosto de passear no parque.",
+   "fr": "J'aime me promener dans le parc.",
+   "de": "Ich gehe gern im Park spazieren."
+  }
+ },
+ {
+  "id": "ss-hobbies-008",
+  "topic": "hobbies",
+  "level": "A1",
+  "text": {
+   "en": "My hobby is photography.",
+   "it": "Il mio hobby è la fotografia.",
+   "es": "Mi afición es la fotografía.",
+   "pt": "O meu passatempo é a fotografia.",
+   "pt_BR": "Meu hobby é fotografia.",
+   "fr": "Mon passe-temps, c'est la photographie.",
+   "de": "Mein Hobby ist die Fotografie."
+  }
+ },
+ {
+  "id": "ss-hobbies-009",
+  "topic": "hobbies",
+  "level": "A1",
+  "text": {
+   "en": "Do you have a hobby?",
+   "it": "Hai un hobby?",
+   "es": "¿Tienes algún pasatiempo?",
+   "pt": "Tens algum passatempo?",
+   "pt_BR": "Você tem algum hobby?",
+   "fr": "Tu as un passe-temps ?",
+   "de": "Hast du ein Hobby?"
+  }
+ },
+ {
+  "id": "ss-hobbies-010",
+  "topic": "hobbies",
+  "level": "A1",
+  "text": {
+   "en": "I like swimming.",
+   "it": "Mi piace nuotare.",
+   "es": "Me gusta nadar.",
+   "pt": "Gosto de nadar.",
+   "pt_BR": "Eu gosto de nadar.",
+   "fr": "J'aime nager.",
+   "de": "Ich schwimme gern."
+  }
+ },
+ {
+  "id": "ss-hobbies-011",
+  "topic": "hobbies",
+  "level": "A1",
+  "text": {
+   "en": "I draw every day.",
+   "it": "Disegno ogni giorno.",
+   "es": "Dibujo todos los días.",
+   "pt": "Desenho todos os dias.",
+   "pt_BR": "Eu desenho todos os dias.",
+   "fr": "Je dessine tous les jours.",
+   "de": "Ich zeichne jeden Tag."
+  }
+ },
+ {
+  "id": "ss-hobbies-012",
+  "topic": "hobbies",
+  "level": "A1",
+  "text": {
+   "en": "Do you like movies?",
+   "it": "Ti piacciono i film?",
+   "es": "¿Te gustan las películas?",
+   "pt": "Gostas de filmes?",
+   "pt_BR": "Você gosta de filmes?",
+   "fr": "Tu aimes les films ?",
+   "de": "Magst du Filme?"
+  }
+ },
+ {
+  "id": "ss-hobbies-013",
+  "topic": "hobbies",
+  "level": "A1",
+  "text": {
+   "en": "I play football on Sundays.",
+   "it": "La domenica gioco a calcio.",
+   "es": "Los domingos juego al fútbol.",
+   "pt": "Jogo futebol aos domingos.",
+   "pt_BR": "Eu jogo futebol aos domingos.",
+   "fr": "Je joue au foot le dimanche.",
+   "de": "Sonntags spiele ich Fußball."
+  }
+ },
+ {
+  "id": "ss-hobbies-014",
+  "topic": "hobbies",
+  "level": "A1",
+  "text": {
+   "en": "I like dancing.",
+   "it": "Mi piace ballare.",
+   "es": "Me gusta bailar.",
+   "pt": "Gosto de dançar.",
+   "pt_BR": "Eu gosto de dançar.",
+   "fr": "J'aime danser.",
+   "de": "Ich tanze gern."
+  }
+ },
+ {
+  "id": "ss-hobbies-015",
+  "topic": "hobbies",
+  "level": "A1",
+  "text": {
+   "en": "I like plants and gardening.",
+   "it": "Mi piacciono le piante e il giardinaggio.",
+   "es": "Me gustan las plantas y la jardinería.",
+   "pt": "Gosto de plantas e de jardinagem.",
+   "pt_BR": "Eu gosto de plantas e de jardinagem.",
+   "fr": "J'aime les plantes et le jardinage.",
+   "de": "Ich mag Pflanzen und Gartenarbeit."
+  }
+ },
+ {
+  "id": "ss-hobbies-016",
+  "topic": "hobbies",
+  "level": "A2",
+  "text": {
+   "en": "What do you do in your free time?",
+   "it": "Cosa fai nel tempo libero?",
+   "es": "¿Qué haces en tu tiempo libre?",
+   "pt": "O que fazes nos tempos livres?",
+   "pt_BR": "O que você faz no tempo livre?",
+   "fr": "Que fais-tu pendant ton temps libre ?",
+   "de": "Was machst du in deiner Freizeit?"
+  }
+ },
+ {
+  "id": "ss-hobbies-017",
+  "topic": "hobbies",
+  "level": "A2",
+  "text": {
+   "en": "I started learning the piano last year.",
+   "it": "Ho iniziato a imparare il pianoforte l'anno scorso.",
+   "es": "Empecé a aprender piano el año pasado.",
+   "pt": "Comecei a aprender piano no ano passado.",
+   "pt_BR": "Comecei a aprender piano ano passado.",
+   "fr": "J'ai commencé à apprendre le piano l'année dernière.",
+   "de": "Ich habe letztes Jahr angefangen, Klavier zu lernen."
+  }
+ },
+ {
+  "id": "ss-hobbies-018",
+  "topic": "hobbies",
+  "level": "A2",
+  "text": {
+   "en": "Do you prefer being outdoors or at home?",
+   "it": "Preferisci stare all'aperto o a casa?",
+   "es": "¿Prefieres estar al aire libre o en casa?",
+   "pt": "Preferes estar ao ar livre ou em casa?",
+   "pt_BR": "Você prefere ficar ao ar livre ou em casa?",
+   "fr": "Tu préfères être dehors ou à la maison ?",
+   "de": "Bist du lieber draußen oder zu Hause?"
+  }
+ },
+ {
+  "id": "ss-hobbies-019",
+  "topic": "hobbies",
+  "level": "A2",
+  "text": {
+   "en": "I go running three times a week.",
+   "it": "Vado a correre tre volte a settimana.",
+   "es": "Salgo a correr tres veces por semana.",
+   "pt": "Vou correr três vezes por semana.",
+   "pt_BR": "Eu saio para correr três vezes por semana.",
+   "fr": "Je vais courir trois fois par semaine.",
+   "de": "Ich gehe dreimal pro Woche joggen."
+  }
+ },
+ {
+  "id": "ss-hobbies-020",
+  "topic": "hobbies",
+  "level": "A2",
+  "text": {
+   "en": "Can you recommend a good book?",
+   "it": "Puoi consigliarmi un bel libro?",
+   "es": "¿Puedes recomendarme un buen libro?",
+   "pt": "Podes recomendar-me um bom livro?",
+   "pt_BR": "Você pode me recomendar um bom livro?",
+   "fr": "Peux-tu me recommander un bon livre ?",
+   "de": "Kannst du mir ein gutes Buch empfehlen?"
+  }
+ },
+ {
+  "id": "ss-hobbies-021",
+  "topic": "hobbies",
+  "level": "A2",
+  "text": {
+   "en": "I collect old postcards from different countries.",
+   "it": "Colleziono vecchie cartoline di paesi diversi.",
+   "es": "Colecciono postales antiguas de distintos países.",
+   "pt": "Coleciono postais antigos de diferentes países.",
+   "pt_BR": "Eu coleciono cartões-postais antigos de vários países.",
+   "fr": "Je collectionne de vieilles cartes postales de différents pays.",
+   "de": "Ich sammle alte Postkarten aus verschiedenen Ländern."
+  }
+ },
+ {
+  "id": "ss-hobbies-022",
+  "topic": "hobbies",
+  "level": "A2",
+  "text": {
+   "en": "Do you play any board games?",
+   "it": "Giochi a qualche gioco da tavolo?",
+   "es": "¿Juegas a algún juego de mesa?",
+   "pt": "Jogas algum jogo de tabuleiro?",
+   "pt_BR": "Você joga algum jogo de tabuleiro?",
+   "fr": "Tu joues à des jeux de société ?",
+   "de": "Spielst du Brettspiele?"
+  }
+ },
+ {
+  "id": "ss-hobbies-023",
+  "topic": "hobbies",
+  "level": "A2",
+  "text": {
+   "en": "I like baking bread on the weekend.",
+   "it": "Mi piace fare il pane nel fine settimana.",
+   "es": "Me gusta hacer pan los fines de semana.",
+   "pt": "Gosto de fazer pão ao fim de semana.",
+   "pt_BR": "Eu gosto de fazer pão no fim de semana.",
+   "fr": "J'aime faire du pain le week-end.",
+   "de": "Am Wochenende backe ich gern Brot."
+  }
+ },
+ {
+  "id": "ss-hobbies-024",
+  "topic": "hobbies",
+  "level": "A2",
+  "text": {
+   "en": "How long have you been painting?",
+   "it": "Da quanto tempo dipingi?",
+   "es": "¿Cuánto tiempo llevas pintando?",
+   "pt": "Há quanto tempo pintas?",
+   "pt_BR": "Há quanto tempo você pinta?",
+   "fr": "Depuis combien de temps peins-tu ?",
+   "de": "Wie lange malst du schon?"
+  }
+ },
+ {
+  "id": "ss-hobbies-025",
+  "topic": "hobbies",
+  "level": "A2",
+  "text": {
+   "en": "I'm in a small hiking group.",
+   "it": "Faccio parte di un piccolo gruppo di escursionisti.",
+   "es": "Estoy en un pequeño grupo de senderismo.",
+   "pt": "Estou num pequeno grupo de caminhadas.",
+   "pt_BR": "Eu participo de um pequeno grupo de trilhas.",
+   "fr": "Je fais partie d'un petit groupe de randonnée.",
+   "de": "Ich bin in einer kleinen Wandergruppe."
+  }
+ },
+ {
+  "id": "ss-hobbies-026",
+  "topic": "hobbies",
+  "level": "A2",
+  "text": {
+   "en": "Which instrument would you like to learn?",
+   "it": "Quale strumento ti piacerebbe imparare?",
+   "es": "¿Qué instrumento te gustaría aprender?",
+   "pt": "Que instrumento gostarias de aprender?",
+   "pt_BR": "Que instrumento você gostaria de aprender?",
+   "fr": "Quel instrument aimerais-tu apprendre ?",
+   "de": "Welches Instrument würdest du gern lernen?"
+  }
+ },
+ {
+  "id": "ss-hobbies-027",
+  "topic": "hobbies",
+  "level": "A2",
+  "text": {
+   "en": "I watch a lot of documentaries.",
+   "it": "Guardo molti documentari.",
+   "es": "Veo muchos documentales.",
+   "pt": "Vejo muitos documentários.",
+   "pt_BR": "Eu assisto a muitos documentários.",
+   "fr": "Je regarde beaucoup de documentaires.",
+   "de": "Ich schaue viele Dokumentationen."
+  }
+ },
+ {
+  "id": "ss-hobbies-028",
+  "topic": "hobbies",
+  "level": "A2",
+  "text": {
+   "en": "Do you want to play chess online sometime?",
+   "it": "Ti va di giocare a scacchi online qualche volta?",
+   "es": "¿Quieres jugar al ajedrez en línea algún día?",
+   "pt": "Queres jogar xadrez online um dia destes?",
+   "pt_BR": "Quer jogar xadrez online qualquer dia?",
+   "fr": "Ça te dit de jouer aux échecs en ligne un de ces jours ?",
+   "de": "Hast du Lust, irgendwann online Schach zu spielen?"
+  }
+ },
+ {
+  "id": "ss-hobbies-029",
+  "topic": "hobbies",
+  "level": "A2",
+  "text": {
+   "en": "I knit scarves for my friends.",
+   "it": "Faccio sciarpe a maglia per i miei amici.",
+   "es": "Tejo bufandas para mis amigos.",
+   "pt": "Faço cachecóis de malha para os meus amigos.",
+   "pt_BR": "Eu tricoto cachecóis para os meus amigos.",
+   "fr": "Je tricote des écharpes pour mes amis.",
+   "de": "Ich stricke Schals für meine Freunde."
+  }
+ },
+ {
+  "id": "ss-hobbies-030",
+  "topic": "hobbies",
+  "level": "A2",
+  "text": {
+   "en": "My favorite hobby is cycling around the city.",
+   "it": "Il mio hobby preferito è girare in bici per la città.",
+   "es": "Mi pasatiempo favorito es pasear en bici por la ciudad.",
+   "pt": "O meu passatempo preferido é andar de bicicleta pela cidade.",
+   "pt_BR": "Meu hobby favorito é andar de bicicleta pela cidade.",
+   "fr": "Mon loisir préféré, c'est de faire du vélo en ville.",
+   "de": "Mein liebstes Hobby ist es, mit dem Rad durch die Stadt zu fahren."
+  }
+ },
+ {
+  "id": "ss-hobbies-031",
+  "topic": "hobbies",
+  "level": "B1",
+  "text": {
+   "en": "I've been trying to find a hobby that helps me relax after work.",
+   "it": "Sto cercando un hobby che mi aiuti a rilassarmi dopo il lavoro.",
+   "es": "Estoy intentando encontrar un pasatiempo que me ayude a relajarme después del trabajo.",
+   "pt": "Ando à procura de um passatempo que me ajude a relaxar depois do trabalho.",
+   "pt_BR": "Estou tentando encontrar um hobby que me ajude a relaxar depois do trabalho.",
+   "fr": "J'essaie de trouver un loisir qui m'aide à me détendre après le travail.",
+   "de": "Ich versuche, ein Hobby zu finden, das mir hilft, nach der Arbeit abzuschalten."
+  }
+ },
+ {
+  "id": "ss-hobbies-032",
+  "topic": "hobbies",
+  "level": "B1",
+  "text": {
+   "en": "Photography taught me to notice small details in everyday life.",
+   "it": "La fotografia mi ha insegnato a notare i piccoli dettagli della vita quotidiana.",
+   "es": "La fotografía me enseñó a fijarme en los pequeños detalles de la vida diaria.",
+   "pt": "A fotografia ensinou-me a reparar nos pequenos detalhes do dia a dia.",
+   "pt_BR": "A fotografia me ensinou a reparar nos pequenos detalhes do dia a dia.",
+   "fr": "La photographie m'a appris à remarquer les petits détails du quotidien.",
+   "de": "Die Fotografie hat mir beigebracht, auf kleine Details im Alltag zu achten."
+  }
+ },
+ {
+  "id": "ss-hobbies-033",
+  "topic": "hobbies",
+  "level": "B1",
+  "text": {
+   "en": "Shall we swap favorite recipes and cook them this weekend?",
+   "it": "Ci scambiamo le ricette preferite e le cuciniamo questo fine settimana?",
+   "es": "¿Intercambiamos recetas favoritas y las cocinamos este fin de semana?",
+   "pt": "Que tal trocarmos receitas preferidas e cozinhá-las este fim de semana?",
+   "pt_BR": "Que tal trocarmos receitas favoritas e cozinhá-las neste fim de semana?",
+   "fr": "On échange nos recettes préférées et on les cuisine ce week-end ?",
+   "de": "Sollen wir unsere Lieblingsrezepte tauschen und sie dieses Wochenende kochen?"
+  }
+ },
+ {
+  "id": "ss-hobbies-034",
+  "topic": "hobbies",
+  "level": "B1",
+  "text": {
+   "en": "I started a pottery class, and it's harder than it looks.",
+   "it": "Ho iniziato un corso di ceramica ed è più difficile di quel che sembra.",
+   "es": "Empecé una clase de cerámica y es más difícil de lo que parece.",
+   "pt": "Comecei a ter aulas de cerâmica e é mais difícil do que parece.",
+   "pt_BR": "Comecei um curso de cerâmica e é mais difícil do que parece.",
+   "fr": "J'ai commencé un cours de poterie, et c'est plus difficile qu'il n'y paraît.",
+   "de": "Ich habe einen Töpferkurs begonnen, und er ist schwieriger, als er aussieht."
+  }
+ },
+ {
+  "id": "ss-hobbies-035",
+  "topic": "hobbies",
+  "level": "B1",
+  "text": {
+   "en": "What got you interested in that hobby?",
+   "it": "Cosa ti ha avvicinato a quell'hobby?",
+   "es": "¿Qué te llevó a interesarte por ese pasatiempo?",
+   "pt": "O que te despertou o interesse por esse passatempo?",
+   "pt_BR": "O que despertou seu interesse nesse hobby?",
+   "fr": "Qu'est-ce qui t'a donné envie de te lancer dans ce loisir ?",
+   "de": "Wie bist du zu diesem Hobby gekommen?"
+  }
+ },
+ {
+  "id": "ss-hobbies-036",
+  "topic": "hobbies",
+  "level": "B1",
+  "text": {
+   "en": "I usually spend my weekends exploring trails near the city.",
+   "it": "Di solito passo i fine settimana a esplorare i sentieri vicino alla città.",
+   "es": "Normalmente paso los fines de semana explorando senderos cerca de la ciudad.",
+   "pt": "Normalmente passo os fins de semana a explorar trilhos perto da cidade.",
+   "pt_BR": "Geralmente passo os fins de semana explorando trilhas perto da cidade.",
+   "fr": "En général, je passe mes week-ends à explorer des sentiers près de la ville.",
+   "de": "Meistens verbringe ich die Wochenenden damit, Wanderwege in der Nähe der Stadt zu erkunden."
+  }
+ },
+ {
+  "id": "ss-hobbies-037",
+  "topic": "hobbies",
+  "level": "B1",
+  "text": {
+   "en": "I'm saving up to buy a better camera.",
+   "it": "Sto risparmiando per comprare una fotocamera migliore.",
+   "es": "Estoy ahorrando para comprar una cámara mejor.",
+   "pt": "Estou a poupar para comprar uma máquina fotográfica melhor.",
+   "pt_BR": "Estou economizando para comprar uma câmera melhor.",
+   "fr": "Je fais des économies pour acheter un meilleur appareil photo.",
+   "de": "Ich spare auf eine bessere Kamera."
+  }
+ },
+ {
+  "id": "ss-hobbies-038",
+  "topic": "hobbies",
+  "level": "B1",
+  "text": {
+   "en": "Do you know any good places to learn rock climbing?",
+   "it": "Conosci dei posti dove imparare l'arrampicata?",
+   "es": "¿Conoces algún buen sitio para aprender escalada?",
+   "pt": "Conheces bons sítios para aprender escalada?",
+   "pt_BR": "Você conhece bons lugares para aprender escalada?",
+   "fr": "Tu connais de bons endroits pour apprendre l'escalade ?",
+   "de": "Kennst du gute Orte, um Klettern zu lernen?"
+  }
+ },
+ {
+  "id": "ss-hobbies-039",
+  "topic": "hobbies",
+  "level": "B1",
+  "text": {
+   "en": "I write short stories, but I've never shown them to anyone.",
+   "it": "Scrivo racconti brevi, ma non li ho mai mostrati a nessuno.",
+   "es": "Escribo cuentos cortos, pero nunca se los he enseñado a nadie.",
+   "pt": "Escrevo contos, mas nunca os mostrei a ninguém.",
+   "pt_BR": "Eu escrevo contos, mas nunca mostrei para ninguém.",
+   "fr": "J'écris des nouvelles, mais je ne les ai jamais montrées à personne.",
+   "de": "Ich schreibe Kurzgeschichten, habe sie aber noch nie jemandem gezeigt."
+  }
+ },
+ {
+  "id": "ss-hobbies-040",
+  "topic": "hobbies",
+  "level": "B1",
+  "text": {
+   "en": "I like hobbies where I can make something with my hands.",
+   "it": "Mi piacciono gli hobby in cui posso creare qualcosa con le mie mani.",
+   "es": "Me gustan los pasatiempos en los que puedo crear algo con las manos.",
+   "pt": "Gosto de passatempos em que posso fazer algo com as mãos.",
+   "pt_BR": "Eu gosto de hobbies em que posso fazer algo com as mãos.",
+   "fr": "J'aime les loisirs où je peux fabriquer quelque chose de mes mains.",
+   "de": "Ich mag Hobbys, bei denen ich etwas mit den Händen herstellen kann."
+  }
+ },
+ {
+  "id": "ss-hobbies-041",
+  "topic": "hobbies",
+  "level": "B1",
+  "text": {
+   "en": "If you have a favorite playlist, I'd love to listen to it.",
+   "it": "Se hai una playlist preferita, mi piacerebbe ascoltarla.",
+   "es": "Si tienes una lista de reproducción favorita, me encantaría escucharla.",
+   "pt": "Se tiveres uma playlist favorita, adorava ouvi-la.",
+   "pt_BR": "Se você tiver uma playlist favorita, eu adoraria ouvir.",
+   "fr": "Si tu as une playlist préférée, j'adorerais l'écouter.",
+   "de": "Wenn du eine Lieblingsplaylist hast, würde ich sie gern hören."
+  }
+ },
+ {
+  "id": "ss-hobbies-042",
+  "topic": "hobbies",
+  "level": "B1",
+  "text": {
+   "en": "Our book club meets once a month to discuss a new novel.",
+   "it": "Il nostro club del libro si riunisce una volta al mese per discutere un nuovo romanzo.",
+   "es": "Nuestro club de lectura se reúne una vez al mes para comentar una novela nueva.",
+   "pt": "O nosso clube de leitura reúne-se uma vez por mês para falar de um novo romance.",
+   "pt_BR": "Nosso clube do livro se reúne uma vez por mês para discutir um novo romance.",
+   "fr": "Notre club de lecture se réunit une fois par mois pour discuter d'un nouveau roman.",
+   "de": "Unser Buchclub trifft sich einmal im Monat, um einen neuen Roman zu besprechen."
+  }
+ },
+ {
+  "id": "ss-hobbies-043",
+  "topic": "hobbies",
+  "level": "B1",
+  "text": {
+   "en": "I've always wanted to try surfing, but I haven't had the chance yet.",
+   "it": "Ho sempre voluto provare il surf, ma non ne ho ancora avuto l'occasione.",
+   "es": "Siempre he querido probar el surf, pero todavía no he tenido la oportunidad.",
+   "pt": "Sempre quis experimentar surf, mas ainda não tive oportunidade.",
+   "pt_BR": "Sempre quis experimentar surfe, mas ainda não tive a chance.",
+   "fr": "J'ai toujours voulu essayer le surf, mais je n'en ai pas encore eu l'occasion.",
+   "de": "Ich wollte schon immer mal Surfen ausprobieren, hatte aber noch keine Gelegenheit dazu."
+  }
+ },
+ {
+  "id": "ss-hobbies-044",
+  "topic": "hobbies",
+  "level": "B2",
+  "text": {
+   "en": "Having a hobby has helped me disconnect from screens and be more present.",
+   "it": "Avere un hobby mi ha aiutato a staccare dagli schermi e a essere più presente.",
+   "es": "Tener un pasatiempo me ha ayudado a desconectar de las pantallas y a estar más presente.",
+   "pt": "Ter um passatempo ajudou-me a desligar dos ecrãs e a estar mais presente.",
+   "pt_BR": "Ter um hobby me ajudou a me desconectar das telas e a estar mais presente.",
+   "fr": "Avoir un loisir m'a aidé à me déconnecter des écrans et à être plus présent.",
+   "de": "Ein Hobby hat mir geholfen, mich von Bildschirmen zu lösen und präsenter zu sein."
+  }
+ },
+ {
+  "id": "ss-hobbies-045",
+  "topic": "hobbies",
+  "level": "B2",
+  "text": {
+   "en": "I'm not very talented, but I enjoy painting just for the pleasure of doing it.",
+   "it": "Non ho molto talento, ma mi piace dipingere solo per il piacere di farlo.",
+   "es": "No tengo mucho talento, pero disfruto pintando por el simple placer de hacerlo.",
+   "pt": "Não tenho grande talento, mas gosto de pintar só pelo prazer de o fazer.",
+   "pt_BR": "Não tenho muito talento, mas gosto de pintar só pelo prazer de fazer.",
+   "fr": "Je n'ai pas beaucoup de talent, mais j'aime peindre pour le simple plaisir de le faire.",
+   "de": "Ich bin nicht besonders talentiert, aber ich male einfach gern aus Freude daran."
+  }
+ },
+ {
+  "id": "ss-hobbies-046",
+  "topic": "hobbies",
+  "level": "B2",
+  "text": {
+   "en": "It took me years to find something I'm passionate about, and it was worth the wait.",
+   "it": "Ci ho messo anni a trovare qualcosa che mi appassiona, ma ne è valsa la pena.",
+   "es": "Tardé años en encontrar algo que me apasiona, y valió la pena esperar.",
+   "pt": "Demorei anos a encontrar algo que me apaixona, e valeu a pena esperar.",
+   "pt_BR": "Levei anos para encontrar algo que me apaixona, e valeu a espera.",
+   "fr": "J'ai mis des années à trouver quelque chose qui me passionne, et ça valait la peine d'attendre.",
+   "de": "Ich habe Jahre gebraucht, um etwas zu finden, wofür ich brenne, und das Warten hat sich gelohnt."
+  }
+ },
+ {
+  "id": "ss-hobbies-047",
+  "topic": "hobbies",
+  "level": "B2",
+  "text": {
+   "en": "Learning to play an instrument as an adult requires patience, but the progress feels rewarding.",
+   "it": "Imparare a suonare uno strumento da adulti richiede pazienza, ma i progressi danno molta soddisfazione.",
+   "es": "Aprender a tocar un instrumento de adulto requiere paciencia, pero los avances resultan muy gratificantes.",
+   "pt": "Aprender a tocar um instrumento em adulto exige paciência, mas os progressos são muito gratificantes.",
+   "pt_BR": "Aprender a tocar um instrumento na idade adulta exige paciência, mas o progresso é muito gratificante.",
+   "fr": "Apprendre un instrument à l'âge adulte demande de la patience, mais les progrès sont très gratifiants.",
+   "de": "Als Erwachsener ein Instrument zu lernen erfordert Geduld, aber die Fortschritte sind sehr erfüllend."
+  }
+ },
+ {
+  "id": "ss-hobbies-048",
+  "topic": "hobbies",
+  "level": "B2",
+  "text": {
+   "en": "I'd love to hear how people in your country spend their free time, because it's probably quite different from mine.",
+   "it": "Mi piacerebbe sapere come si passa il tempo libero nel tuo paese, perché probabilmente è molto diverso dal mio.",
+   "es": "Me encantaría saber cómo pasa la gente su tiempo libre en tu país, porque seguramente es bastante distinto del mío.",
+   "pt": "Gostava de saber como as pessoas do teu país ocupam os tempos livres, porque deve ser bastante diferente do meu.",
+   "pt_BR": "Eu adoraria saber como as pessoas do seu país passam o tempo livre, porque deve ser bem diferente do meu.",
+   "fr": "J'aimerais savoir comment les gens de ton pays occupent leur temps libre, car c'est sûrement très différent du mien.",
+   "de": "Ich würde gern wissen, wie die Leute in deinem Land ihre Freizeit verbringen, denn das ist bestimmt ganz anders als bei mir."
+  }
+ },
+ {
+  "id": "ss-hobbies-049",
+  "topic": "hobbies",
+  "level": "B2",
+  "text": {
+   "en": "Some of my best friendships started in a community workshop, where we shared a common interest.",
+   "it": "Alcune delle mie migliori amicizie sono nate in un laboratorio di quartiere, dove condividevamo la stessa passione.",
+   "es": "Algunas de mis mejores amistades nacieron en un taller comunitario, donde compartíamos un interés común.",
+   "pt": "Algumas das minhas melhores amizades nasceram numa oficina comunitária, onde partilhávamos um interesse comum.",
+   "pt_BR": "Algumas das minhas melhores amizades começaram em uma oficina comunitária, onde a gente compartilhava um interesse em comum.",
+   "fr": "Certaines de mes meilleures amitiés sont nées dans un atelier de quartier, où nous partagions un intérêt commun.",
+   "de": "Einige meiner besten Freundschaften sind in einer Gemeinschaftswerkstatt entstanden, wo wir ein gemeinsames Interesse teilten."
+  }
+ },
+ {
+  "id": "ss-hobbies-050",
+  "topic": "hobbies",
+  "level": "B2",
+  "text": {
+   "en": "Whatever the hobby is, I think what matters is that it makes you lose track of time.",
+   "it": "Qualunque sia l'hobby, penso che l'importante sia che ti faccia perdere la cognizione del tempo.",
+   "es": "Sea cual sea el pasatiempo, creo que lo importante es que te haga perder la noción del tiempo.",
+   "pt": "Seja qual for o passatempo, acho que o importante é que te faça perder a noção do tempo.",
+   "pt_BR": "Seja qual for o hobby, acho que o importante é que ele te faça perder a noção do tempo.",
+   "fr": "Quel que soit le loisir, je pense que l'essentiel est qu'il te fasse perdre la notion du temps.",
+   "de": "Egal, was das Hobby ist, wichtig ist meiner Meinung nach, dass man dabei die Zeit vergisst."
+  }
+ },
+ {
+  "id": "ss-travel_stories-001",
+  "topic": "travel_stories",
+  "level": "A1",
+  "text": {
+   "en": "I love to travel.",
+   "it": "Amo viaggiare.",
+   "es": "Me encanta viajar.",
+   "pt": "Adoro viajar.",
+   "pt_BR": "Eu adoro viajar.",
+   "fr": "J'adore voyager.",
+   "de": "Ich reise sehr gern."
+  }
+ },
+ {
+  "id": "ss-travel_stories-002",
+  "topic": "travel_stories",
+  "level": "A1",
+  "text": {
+   "en": "Where did you spend your holiday?",
+   "it": "Dove hai passato le vacanze?",
+   "es": "¿Dónde pasaste las vacaciones?",
+   "pt": "Onde passaste as férias?",
+   "pt_BR": "Onde você passou as férias?",
+   "fr": "Où as-tu passé tes vacances ?",
+   "de": "Wo hast du deinen Urlaub verbracht?"
+  }
+ },
+ {
+  "id": "ss-travel_stories-003",
+  "topic": "travel_stories",
+  "level": "A1",
+  "text": {
+   "en": "I visited Spain last summer.",
+   "it": "Ho visitato la Spagna l'estate scorsa.",
+   "es": "Visité España el verano pasado.",
+   "pt": "Visitei a Espanha no verão passado.",
+   "pt_BR": "Visitei a Espanha no verão passado.",
+   "fr": "J'ai visité l'Espagne l'été dernier.",
+   "de": "Letzten Sommer habe ich Spanien besucht."
+  }
+ },
+ {
+  "id": "ss-travel_stories-004",
+  "topic": "travel_stories",
+  "level": "A1",
+  "text": {
+   "en": "The trip was very good.",
+   "it": "Il viaggio è stato molto bello.",
+   "es": "El viaje fue muy bueno.",
+   "pt": "A viagem foi muito boa.",
+   "pt_BR": "A viagem foi muito boa.",
+   "fr": "Le voyage s'est très bien passé.",
+   "de": "Die Reise war sehr schön."
+  }
+ },
+ {
+  "id": "ss-travel_stories-005",
+  "topic": "travel_stories",
+  "level": "A1",
+  "text": {
+   "en": "I took many photos.",
+   "it": "Ho fatto molte foto.",
+   "es": "Hice muchas fotos.",
+   "pt": "Tirei muitas fotografias.",
+   "pt_BR": "Tirei muitas fotos.",
+   "fr": "J'ai pris beaucoup de photos.",
+   "de": "Ich habe viele Fotos gemacht."
+  }
+ },
+ {
+  "id": "ss-travel_stories-006",
+  "topic": "travel_stories",
+  "level": "A1",
+  "text": {
+   "en": "Have you ever visited Italy?",
+   "it": "Hai mai visitato l'Italia?",
+   "es": "¿Has estado alguna vez en Italia?",
+   "pt": "Já estiveste em Itália?",
+   "pt_BR": "Você já esteve na Itália?",
+   "fr": "Tu as déjà visité l'Italie ?",
+   "de": "Warst du schon mal in Italien?"
+  }
+ },
+ {
+  "id": "ss-travel_stories-007",
+  "topic": "travel_stories",
+  "level": "A1",
+  "text": {
+   "en": "The food was delicious.",
+   "it": "Il cibo era delizioso.",
+   "es": "La comida estaba deliciosa.",
+   "pt": "A comida estava deliciosa.",
+   "pt_BR": "A comida estava uma delícia.",
+   "fr": "La nourriture était délicieuse.",
+   "de": "Das Essen war köstlich."
+  }
+ },
+ {
+  "id": "ss-travel_stories-008",
+  "topic": "travel_stories",
+  "level": "A1",
+  "text": {
+   "en": "We went to the beach.",
+   "it": "Siamo andati in spiaggia.",
+   "es": "Fuimos a la playa.",
+   "pt": "Fomos à praia.",
+   "pt_BR": "Fomos à praia.",
+   "fr": "Nous sommes allés à la plage.",
+   "de": "Wir waren am Strand."
+  }
+ },
+ {
+  "id": "ss-travel_stories-009",
+  "topic": "travel_stories",
+  "level": "A1",
+  "text": {
+   "en": "I traveled by train.",
+   "it": "Ho viaggiato in treno.",
+   "es": "Viajé en tren.",
+   "pt": "Viajei de comboio.",
+   "pt_BR": "Viajei de trem.",
+   "fr": "J'ai voyagé en train.",
+   "de": "Ich bin mit dem Zug gefahren."
+  }
+ },
+ {
+  "id": "ss-travel_stories-010",
+  "topic": "travel_stories",
+  "level": "A1",
+  "text": {
+   "en": "The people were very kind.",
+   "it": "Le persone erano molto gentili.",
+   "es": "La gente era muy amable.",
+   "pt": "As pessoas eram muito simpáticas.",
+   "pt_BR": "As pessoas eram muito simpáticas.",
+   "fr": "Les gens étaient très gentils.",
+   "de": "Die Leute waren sehr freundlich."
+  }
+ },
+ {
+  "id": "ss-travel_stories-011",
+  "topic": "travel_stories",
+  "level": "A1",
+  "text": {
+   "en": "I want to visit Japan.",
+   "it": "Voglio visitare il Giappone.",
+   "es": "Quiero visitar Japón.",
+   "pt": "Quero visitar o Japão.",
+   "pt_BR": "Quero visitar o Japão.",
+   "fr": "Je veux visiter le Japon.",
+   "de": "Ich möchte Japan besuchen."
+  }
+ },
+ {
+  "id": "ss-travel_stories-012",
+  "topic": "travel_stories",
+  "level": "A1",
+  "text": {
+   "en": "It was my first trip abroad.",
+   "it": "È stato il mio primo viaggio all'estero.",
+   "es": "Fue mi primer viaje al extranjero.",
+   "pt": "Foi a minha primeira viagem ao estrangeiro.",
+   "pt_BR": "Foi minha primeira viagem ao exterior.",
+   "fr": "C'était mon premier voyage à l'étranger.",
+   "de": "Es war meine erste Reise ins Ausland."
+  }
+ },
+ {
+  "id": "ss-travel_stories-013",
+  "topic": "travel_stories",
+  "level": "A1",
+  "text": {
+   "en": "What is your favorite city?",
+   "it": "Qual è la tua città preferita?",
+   "es": "¿Cuál es tu ciudad favorita?",
+   "pt": "Qual é a tua cidade preferida?",
+   "pt_BR": "Qual é a sua cidade favorita?",
+   "fr": "Quelle est ta ville préférée ?",
+   "de": "Was ist deine Lieblingsstadt?"
+  }
+ },
+ {
+  "id": "ss-travel_stories-014",
+  "topic": "travel_stories",
+  "level": "A1",
+  "text": {
+   "en": "The hotel was near the sea.",
+   "it": "L'hotel era vicino al mare.",
+   "es": "El hotel estaba cerca del mar.",
+   "pt": "O hotel ficava perto do mar.",
+   "pt_BR": "O hotel ficava perto do mar.",
+   "fr": "L'hôtel était près de la mer.",
+   "de": "Das Hotel lag in der Nähe des Meeres."
+  }
+ },
+ {
+  "id": "ss-travel_stories-015",
+  "topic": "travel_stories",
+  "level": "A1",
+  "text": {
+   "en": "I met a nice family there.",
+   "it": "Lì ho conosciuto una bella famiglia.",
+   "es": "Allí conocí a una familia encantadora.",
+   "pt": "Lá conheci uma família simpática.",
+   "pt_BR": "Lá eu conheci uma família muito simpática.",
+   "fr": "J'y ai rencontré une famille sympathique.",
+   "de": "Dort habe ich eine nette Familie kennengelernt."
+  }
+ },
+ {
+  "id": "ss-travel_stories-016",
+  "topic": "travel_stories",
+  "level": "A2",
+  "text": {
+   "en": "Last year I traveled to Portugal with my friends.",
+   "it": "L'anno scorso ho viaggiato in Portogallo con i miei amici.",
+   "es": "El año pasado viajé a Portugal con mis amigos.",
+   "pt": "No ano passado viajei até Portugal com os meus amigos.",
+   "pt_BR": "Ano passado eu viajei para Portugal com meus amigos.",
+   "fr": "L'année dernière, j'ai voyagé au Portugal avec mes amis.",
+   "de": "Letztes Jahr bin ich mit meinen Freunden nach Portugal gereist."
+  }
+ },
+ {
+  "id": "ss-travel_stories-017",
+  "topic": "travel_stories",
+  "level": "A2",
+  "text": {
+   "en": "We got lost, but a kind person helped us.",
+   "it": "Ci siamo persi, ma una persona gentile ci ha aiutato.",
+   "es": "Nos perdimos, pero una persona amable nos ayudó.",
+   "pt": "Perdemo-nos, mas uma pessoa simpática ajudou-nos.",
+   "pt_BR": "A gente se perdeu, mas uma pessoa gentil nos ajudou.",
+   "fr": "On s'est perdus, mais une personne gentille nous a aidés.",
+   "de": "Wir haben uns verlaufen, aber eine freundliche Person hat uns geholfen."
+  }
+ },
+ {
+  "id": "ss-travel_stories-018",
+  "topic": "travel_stories",
+  "level": "A2",
+  "text": {
+   "en": "What was the best part of your trip?",
+   "it": "Qual è stata la parte migliore del tuo viaggio?",
+   "es": "¿Cuál fue la mejor parte de tu viaje?",
+   "pt": "Qual foi a melhor parte da tua viagem?",
+   "pt_BR": "Qual foi a melhor parte da sua viagem?",
+   "fr": "Quel a été le meilleur moment de ton voyage ?",
+   "de": "Was war das Beste an deiner Reise?"
+  }
+ },
+ {
+  "id": "ss-travel_stories-019",
+  "topic": "travel_stories",
+  "level": "A2",
+  "text": {
+   "en": "I tried a new dish that I'd never eaten before.",
+   "it": "Ho provato un piatto nuovo che non avevo mai mangiato.",
+   "es": "Probé un plato nuevo que nunca había comido.",
+   "pt": "Provei um prato novo que nunca tinha comido.",
+   "pt_BR": "Experimentei um prato novo que eu nunca tinha comido.",
+   "fr": "J'ai goûté un nouveau plat que je n'avais jamais mangé.",
+   "de": "Ich habe ein neues Gericht probiert, das ich noch nie gegessen hatte."
+  }
+ },
+ {
+  "id": "ss-travel_stories-020",
+  "topic": "travel_stories",
+  "level": "A2",
+  "text": {
+   "en": "The weather was terrible, but we still had fun.",
+   "it": "Il tempo era pessimo, ma ci siamo divertiti lo stesso.",
+   "es": "El tiempo fue horrible, pero nos divertimos igualmente.",
+   "pt": "O tempo estava horrível, mas divertimo-nos na mesma.",
+   "pt_BR": "O tempo estava horrível, mas a gente se divertiu mesmo assim.",
+   "fr": "Il faisait un temps affreux, mais on s'est quand même amusés.",
+   "de": "Das Wetter war schrecklich, aber wir hatten trotzdem Spaß."
+  }
+ },
+ {
+  "id": "ss-travel_stories-021",
+  "topic": "travel_stories",
+  "level": "A2",
+  "text": {
+   "en": "We spent three days in the mountains.",
+   "it": "Abbiamo passato tre giorni in montagna.",
+   "es": "Pasamos tres días en la montaña.",
+   "pt": "Passámos três dias na montanha.",
+   "pt_BR": "Passamos três dias na montanha.",
+   "fr": "Nous avons passé trois jours à la montagne.",
+   "de": "Wir haben drei Tage in den Bergen verbracht."
+  }
+ },
+ {
+  "id": "ss-travel_stories-022",
+  "topic": "travel_stories",
+  "level": "A2",
+  "text": {
+   "en": "I missed my train, so I had to wait two hours.",
+   "it": "Ho perso il treno, così ho dovuto aspettare due ore.",
+   "es": "Perdí el tren, así que tuve que esperar dos horas.",
+   "pt": "Perdi o comboio, por isso tive de esperar duas horas.",
+   "pt_BR": "Perdi o trem, então tive que esperar duas horas.",
+   "fr": "J'ai raté mon train, donc j'ai dû attendre deux heures.",
+   "de": "Ich habe meinen Zug verpasst und musste zwei Stunden warten."
+  }
+ },
+ {
+  "id": "ss-travel_stories-023",
+  "topic": "travel_stories",
+  "level": "A2",
+  "text": {
+   "en": "Which country would you like to visit next?",
+   "it": "Quale paese ti piacerebbe visitare la prossima volta?",
+   "es": "¿Qué país te gustaría visitar la próxima vez?",
+   "pt": "Que país gostarias de visitar a seguir?",
+   "pt_BR": "Qual país você gostaria de visitar na próxima?",
+   "fr": "Quel pays aimerais-tu visiter ensuite ?",
+   "de": "Welches Land würdest du als Nächstes gern besuchen?"
+  }
+ },
+ {
+  "id": "ss-travel_stories-024",
+  "topic": "travel_stories",
+  "level": "A2",
+  "text": {
+   "en": "I bought a small gift for my family.",
+   "it": "Ho comprato un piccolo regalo per la mia famiglia.",
+   "es": "Compré un pequeño regalo para mi familia.",
+   "pt": "Comprei uma pequena lembrança para a minha família.",
+   "pt_BR": "Comprei uma lembrancinha para a minha família.",
+   "fr": "J'ai acheté un petit cadeau pour ma famille.",
+   "de": "Ich habe ein kleines Geschenk für meine Familie gekauft."
+  }
+ },
+ {
+  "id": "ss-travel_stories-025",
+  "topic": "travel_stories",
+  "level": "A2",
+  "text": {
+   "en": "The view from the top was amazing.",
+   "it": "La vista dalla cima era incredibile.",
+   "es": "Las vistas desde la cima eran increíbles.",
+   "pt": "A vista lá de cima era incrível.",
+   "pt_BR": "A vista lá de cima era incrível.",
+   "fr": "La vue depuis le sommet était incroyable.",
+   "de": "Die Aussicht von oben war unglaublich."
+  }
+ },
+ {
+  "id": "ss-travel_stories-026",
+  "topic": "travel_stories",
+  "level": "A2",
+  "text": {
+   "en": "I stayed with a local family for a week.",
+   "it": "Ho alloggiato per una settimana presso una famiglia del posto.",
+   "es": "Me alojé una semana con una familia local.",
+   "pt": "Fiquei uma semana em casa de uma família local.",
+   "pt_BR": "Fiquei uma semana na casa de uma família local.",
+   "fr": "J'ai logé une semaine chez une famille locale.",
+   "de": "Ich habe eine Woche bei einer einheimischen Familie gewohnt."
+  }
+ },
+ {
+  "id": "ss-travel_stories-027",
+  "topic": "travel_stories",
+  "level": "A2",
+  "text": {
+   "en": "We walked around the old town all afternoon.",
+   "it": "Abbiamo camminato per il centro storico tutto il pomeriggio.",
+   "es": "Caminamos por el casco antiguo toda la tarde.",
+   "pt": "Passeámos pela cidade velha toda a tarde.",
+   "pt_BR": "Passeamos pela cidade antiga a tarde toda.",
+   "fr": "Nous avons marché dans la vieille ville tout l'après-midi.",
+   "de": "Wir sind den ganzen Nachmittag durch die Altstadt gelaufen."
+  }
+ },
+ {
+  "id": "ss-travel_stories-028",
+  "topic": "travel_stories",
+  "level": "A2",
+  "text": {
+   "en": "My flight was late, so I arrived at night.",
+   "it": "Il mio volo era in ritardo e l'arrivo è stato di notte.",
+   "es": "Mi vuelo se retrasó, así que llegué de noche.",
+   "pt": "O meu voo atrasou-se, por isso cheguei à noite.",
+   "pt_BR": "Meu voo atrasou, então cheguei à noite.",
+   "fr": "Mon vol a eu du retard, j'ai donc atterri de nuit.",
+   "de": "Mein Flug hatte Verspätung, deshalb bin ich erst nachts angekommen."
+  }
+ },
+ {
+  "id": "ss-travel_stories-029",
+  "topic": "travel_stories",
+  "level": "A2",
+  "text": {
+   "en": "Do you prefer cities or small villages when you travel?",
+   "it": "Quando viaggi preferisci le città o i piccoli paesi?",
+   "es": "Cuando viajas, ¿prefieres las ciudades o los pueblos pequeños?",
+   "pt": "Quando viajas, preferes cidades ou aldeias pequenas?",
+   "pt_BR": "Quando você viaja, prefere cidades ou vilarejos?",
+   "fr": "Quand tu voyages, tu préfères les villes ou les petits villages ?",
+   "de": "Bevorzugst du auf Reisen Städte oder kleine Dörfer?"
+  }
+ },
+ {
+  "id": "ss-travel_stories-030",
+  "topic": "travel_stories",
+  "level": "A2",
+  "text": {
+   "en": "I learned a few words of the local language.",
+   "it": "Ho imparato qualche parola della lingua locale.",
+   "es": "Aprendí algunas palabras del idioma local.",
+   "pt": "Aprendi algumas palavras da língua local.",
+   "pt_BR": "Aprendi algumas palavras do idioma local.",
+   "fr": "J'ai appris quelques mots de la langue locale.",
+   "de": "Ich habe ein paar Wörter der Landessprache gelernt."
+  }
+ },
+ {
+  "id": "ss-travel_stories-031",
+  "topic": "travel_stories",
+  "level": "B1",
+  "text": {
+   "en": "The best part of my trip was talking with locals at a small market.",
+   "it": "La parte più bella del mio viaggio è stata chiacchierare con la gente del posto in un piccolo mercato.",
+   "es": "Lo mejor de mi viaje fue charlar con la gente local en un mercadillo.",
+   "pt": "O melhor da minha viagem foi conversar com os locais num mercadinho.",
+   "pt_BR": "A melhor parte da minha viagem foi conversar com os moradores locais em uma feirinha.",
+   "fr": "Le meilleur moment de mon voyage, c'était de discuter avec les habitants sur un petit marché.",
+   "de": "Das Schönste an meiner Reise war, auf einem kleinen Markt mit Einheimischen zu plaudern."
+  }
+ },
+ {
+  "id": "ss-travel_stories-032",
+  "topic": "travel_stories",
+  "level": "B1",
+  "text": {
+   "en": "I had never felt so far from home, but it was a wonderful feeling.",
+   "it": "Non avevo mai sentito casa così lontana, ma era una sensazione meravigliosa.",
+   "es": "Nunca me había sentido tan lejos de casa, pero fue una sensación maravillosa.",
+   "pt": "Nunca me tinha sentido tão longe de casa, mas foi uma sensação maravilhosa.",
+   "pt_BR": "Eu nunca tinha me sentido tão longe de casa, mas foi uma sensação maravilhosa.",
+   "fr": "Je ne m'étais jamais senti aussi loin de chez moi, mais c'était une sensation merveilleuse.",
+   "de": "Ich habe mich noch nie so weit weg von zu Hause gefühlt, aber es war ein wunderbares Gefühl."
+  }
+ },
+ {
+  "id": "ss-travel_stories-033",
+  "topic": "travel_stories",
+  "level": "B1",
+  "text": {
+   "en": "We took a wrong bus and ended up in a beautiful village that wasn't on the map.",
+   "it": "Abbiamo preso l'autobus sbagliato e siamo finiti in un bellissimo paesino che non era sulla mappa.",
+   "es": "Cogimos el autobús equivocado y acabamos en un pueblo precioso que no aparecía en el mapa.",
+   "pt": "Apanhámos o autocarro errado e fomos parar a uma aldeia linda que não vinha no mapa.",
+   "pt_BR": "Pegamos o ônibus errado e fomos parar em um vilarejo lindo que não estava no mapa.",
+   "fr": "On a pris le mauvais bus et on a fini dans un joli village qui n'était pas sur la carte.",
+   "de": "Wir haben den falschen Bus genommen und sind in einem wunderschönen Dorf gelandet, das nicht auf der Karte stand."
+  }
+ },
+ {
+  "id": "ss-travel_stories-034",
+  "topic": "travel_stories",
+  "level": "B1",
+  "text": {
+   "en": "Traveling alone taught me to trust myself more.",
+   "it": "Viaggiare in solitaria mi ha insegnato ad avere più fiducia in me.",
+   "es": "Viajar sin compañía me enseñó a confiar más en mí.",
+   "pt": "Viajar sem companhia ensinou-me a confiar mais em mim.",
+   "pt_BR": "Viajar sem companhia me ensinou a confiar mais em mim.",
+   "fr": "Voyager en solo m'a appris à avoir plus confiance en moi.",
+   "de": "Allein zu reisen hat mich gelehrt, mir selbst mehr zu vertrauen."
+  }
+ },
+ {
+  "id": "ss-travel_stories-035",
+  "topic": "travel_stories",
+  "level": "B1",
+  "text": {
+   "en": "Have you ever had a trip that didn't go as planned but turned out great?",
+   "it": "Ti è mai capitato un viaggio che non è andato come previsto ma è finito benissimo?",
+   "es": "¿Alguna vez has tenido un viaje que no salió como esperabas pero acabó siendo genial?",
+   "pt": "Alguma vez tiveste uma viagem que não correu como planeado mas acabou por ser ótima?",
+   "pt_BR": "Você já teve uma viagem que não saiu como o planejado, mas acabou sendo ótima?",
+   "fr": "As-tu déjà fait un voyage qui ne s'est pas passé comme prévu mais qui s'est avéré génial ?",
+   "de": "Hattest du schon mal eine Reise, die nicht wie geplant lief, aber am Ende großartig war?"
+  }
+ },
+ {
+  "id": "ss-travel_stories-036",
+  "topic": "travel_stories",
+  "level": "B1",
+  "text": {
+   "en": "I tried to speak the local language, and everyone was very patient with me.",
+   "it": "Ho provato a parlare la lingua locale e tutti sono stati molto pazienti con me.",
+   "es": "Intenté hablar el idioma local y todos fueron muy pacientes conmigo.",
+   "pt": "Tentei falar a língua local e todos foram muito pacientes comigo.",
+   "pt_BR": "Tentei falar o idioma local e todo mundo foi muito paciente comigo.",
+   "fr": "J'ai essayé de parler la langue locale et tout le monde a été très patient avec moi.",
+   "de": "Ich habe versucht, die Landessprache zu sprechen, und alle waren sehr geduldig mit mir."
+  }
+ },
+ {
+  "id": "ss-travel_stories-037",
+  "topic": "travel_stories",
+  "level": "B1",
+  "text": {
+   "en": "We watched the sunrise from a hill after waking up at four in the morning.",
+   "it": "Abbiamo guardato l'alba da una collina dopo esserci svegliati alle quattro del mattino.",
+   "es": "Vimos el amanecer desde una colina después de levantarnos a las cuatro de la madrugada.",
+   "pt": "Vimos o nascer do sol numa colina depois de acordarmos às quatro da manhã.",
+   "pt_BR": "Vimos o nascer do sol de uma colina depois de acordar às quatro da manhã.",
+   "fr": "Nous avons regardé le lever du soleil depuis une colline après nous être levés à quatre heures du matin.",
+   "de": "Nach dem Aufstehen um vier Uhr morgens haben wir den Sonnenaufgang von einem Hügel aus gesehen."
+  }
+ },
+ {
+  "id": "ss-travel_stories-038",
+  "topic": "travel_stories",
+  "level": "B1",
+  "text": {
+   "en": "One of my favorite memories is sharing a meal with strangers who became friends.",
+   "it": "Uno dei miei ricordi preferiti è un pasto condiviso con degli sconosciuti diventati amici.",
+   "es": "Uno de mis recuerdos favoritos es compartir una comida con desconocidos que se hicieron amigos.",
+   "pt": "Uma das minhas memórias preferidas é partilhar uma refeição com desconhecidos que se tornaram amigos.",
+   "pt_BR": "Uma das minhas lembranças favoritas é dividir uma refeição com desconhecidos que viraram amigos.",
+   "fr": "L'un de mes souvenirs préférés, c'est un repas partagé avec des inconnus devenus des amis.",
+   "de": "Eine meiner schönsten Erinnerungen ist ein Essen mit Fremden, die zu Freunden wurden."
+  }
+ },
+ {
+  "id": "ss-travel_stories-039",
+  "topic": "travel_stories",
+  "level": "B1",
+  "text": {
+   "en": "I'd recommend avoiding the main sights at midday, when they're most crowded.",
+   "it": "Ti consiglio di evitare le attrazioni principali a mezzogiorno, quando sono più affollate.",
+   "es": "Te recomiendo evitar las atracciones principales a mediodía, cuando hay más gente.",
+   "pt": "Aconselho-te a evitar as principais atrações ao meio-dia, quando estão mais cheias.",
+   "pt_BR": "Recomendo evitar as principais atrações ao meio-dia, quando estão mais lotadas.",
+   "fr": "Je te conseille d'éviter les principaux sites touristiques à midi, quand il y a le plus de monde.",
+   "de": "Ich würde empfehlen, die Hauptsehenswürdigkeiten mittags zu meiden, wenn am meisten los ist."
+  }
+ },
+ {
+  "id": "ss-travel_stories-040",
+  "topic": "travel_stories",
+  "level": "B1",
+  "text": {
+   "en": "My bag got lost at the airport, but it arrived two days later.",
+   "it": "Il mio bagaglio si è perso all'aeroporto, ma è arrivato due giorni dopo.",
+   "es": "Mi equipaje se perdió en el aeropuerto, pero llegó dos días después.",
+   "pt": "A minha mala perdeu-se no aeroporto, mas chegou dois dias depois.",
+   "pt_BR": "Minha mala foi extraviada no aeroporto, mas chegou dois dias depois.",
+   "fr": "Mon bagage s'est perdu à l'aéroport, mais il est arrivé deux jours plus tard.",
+   "de": "Mein Gepäck ging am Flughafen verloren, kam aber zwei Tage später an."
+  }
+ },
+ {
+  "id": "ss-travel_stories-041",
+  "topic": "travel_stories",
+  "level": "B1",
+  "text": {
+   "en": "What's the most unforgettable place you've ever visited?",
+   "it": "Qual è il posto più indimenticabile che tu abbia mai visitato?",
+   "es": "¿Cuál es el lugar más inolvidable que has visitado?",
+   "pt": "Qual é o lugar mais inesquecível que já visitaste?",
+   "pt_BR": "Qual é o lugar mais inesquecível que você já visitou?",
+   "fr": "Quel est l'endroit le plus inoubliable que tu aies visité ?",
+   "de": "Was ist der unvergesslichste Ort, den du je besucht hast?"
+  }
+ },
+ {
+  "id": "ss-travel_stories-042",
+  "topic": "travel_stories",
+  "level": "B1",
+  "text": {
+   "en": "I always try to find a small local restaurant instead of a tourist one.",
+   "it": "Cerco sempre di trovare un piccolo ristorante locale invece di uno turistico.",
+   "es": "Siempre intento encontrar un restaurante local pequeño en lugar de uno turístico.",
+   "pt": "Tento sempre encontrar um restaurante local pequeno em vez de um turístico.",
+   "pt_BR": "Eu sempre tento encontrar um restaurante local pequeno em vez de um turístico.",
+   "fr": "J'essaie toujours de trouver un petit restaurant local plutôt qu'un restaurant pour touristes.",
+   "de": "Ich suche mir immer ein kleines einheimisches Restaurant statt eines touristischen."
+  }
+ },
+ {
+  "id": "ss-travel_stories-043",
+  "topic": "travel_stories",
+  "level": "B2",
+  "text": {
+   "en": "A shopkeeper invited us for tea, and we ended up chatting for an hour.",
+   "it": "Un negoziante ci ha invitati a prendere il tè e abbiamo finito per chiacchierare per un'ora.",
+   "es": "Un tendero nos invitó a té y acabamos charlando una hora.",
+   "pt": "Um comerciante convidou-nos para um chá e acabámos a conversar durante uma hora.",
+   "pt_BR": "Um lojista nos convidou para um chá e acabamos conversando por uma hora.",
+   "fr": "Un commerçant nous a invités à prendre le thé et nous avons fini par discuter pendant une heure.",
+   "de": "Ein Ladenbesitzer hat uns zum Tee eingeladen, und wir haben am Ende eine Stunde geplaudert."
+  }
+ },
+ {
+  "id": "ss-travel_stories-044",
+  "topic": "travel_stories",
+  "level": "B2",
+  "text": {
+   "en": "What stayed with me from that journey wasn't the monuments, but the everyday moments with the people I met.",
+   "it": "Di quel viaggio non mi sono rimasti i monumenti, ma i momenti quotidiani con le persone che ho conosciuto.",
+   "es": "De aquel viaje no me quedaron los monumentos, sino los momentos cotidianos con la gente que conocí.",
+   "pt": "Daquela viagem não guardei os monumentos, mas sim os momentos do dia a dia com as pessoas que conheci.",
+   "pt_BR": "Daquela viagem, o que ficou comigo não foram os monumentos, mas os momentos do dia a dia com as pessoas que conheci.",
+   "fr": "Ce que je retiens de ce voyage, ce ne sont pas les monuments, mais les moments du quotidien avec les gens que j'ai rencontrés.",
+   "de": "Von dieser Reise sind mir nicht die Denkmäler in Erinnerung geblieben, sondern die Alltagsmomente mit den Menschen, die ich getroffen habe."
+  }
+ },
+ {
+  "id": "ss-travel_stories-045",
+  "topic": "travel_stories",
+  "level": "B2",
+  "text": {
+   "en": "Misunderstandings in a foreign language can be embarrassing, but they often turn into the funniest stories.",
+   "it": "I malintesi in una lingua straniera possono imbarazzare, ma spesso diventano le storie più divertenti.",
+   "es": "Los malentendidos en un idioma extranjero pueden dar vergüenza, pero a menudo acaban siendo las historias más divertidas.",
+   "pt": "Os mal-entendidos numa língua estrangeira podem ser embaraçosos, mas muitas vezes tornam-se as histórias mais engraçadas.",
+   "pt_BR": "Mal-entendidos em outro idioma podem ser constrangedores, mas muitas vezes viram as histórias mais engraçadas.",
+   "fr": "Les malentendus dans une langue étrangère peuvent être gênants, mais ils deviennent souvent les histoires les plus drôles.",
+   "de": "Missverständnisse in einer Fremdsprache können peinlich sein, werden aber oft zu den lustigsten Geschichten."
+  }
+ },
+ {
+  "id": "ss-travel_stories-046",
+  "topic": "travel_stories",
+  "level": "B2",
+  "text": {
+   "en": "After spending a month abroad, I started seeing my own city with fresh eyes.",
+   "it": "Dopo un mese all'estero ho iniziato a guardare la mia città con occhi nuovi.",
+   "es": "Después de pasar un mes en el extranjero, empecé a ver mi propia ciudad con otros ojos.",
+   "pt": "Depois de passar um mês no estrangeiro, comecei a ver a minha cidade com outros olhos.",
+   "pt_BR": "Depois de passar um mês no exterior, comecei a ver minha própria cidade com outros olhos.",
+   "fr": "Après un mois à l'étranger, j'ai commencé à voir ma propre ville d'un œil neuf.",
+   "de": "Nach einem Monat im Ausland habe ich angefangen, meine eigene Stadt mit neuen Augen zu sehen."
+  }
+ },
+ {
+  "id": "ss-travel_stories-047",
+  "topic": "travel_stories",
+  "level": "B2",
+  "text": {
+   "en": "I used to plan every detail, but now I leave room for surprises, because that's where the best memories come from.",
+   "it": "Prima pianificavo ogni dettaglio, ma ora lascio spazio alle sorprese, perché è da lì che nascono i ricordi più belli.",
+   "es": "Antes planeaba cada detalle, pero ahora dejo espacio para las sorpresas, porque de ahí salen los mejores recuerdos.",
+   "pt": "Antes planeava todos os detalhes, mas agora deixo espaço para surpresas, porque é daí que vêm as melhores memórias.",
+   "pt_BR": "Eu planejava cada detalhe, mas agora deixo espaço para surpresas, porque é delas que vêm as melhores lembranças.",
+   "fr": "Avant, je planifiais chaque détail, mais maintenant je laisse de la place aux surprises, car c'est de là que viennent les meilleurs souvenirs.",
+   "de": "Früher habe ich jedes Detail geplant, aber jetzt lasse ich Raum für Überraschungen, denn daraus entstehen die schönsten Erinnerungen."
+  }
+ },
+ {
+  "id": "ss-travel_stories-048",
+  "topic": "travel_stories",
+  "level": "B2",
+  "text": {
+   "en": "Traveling slowly and staying in one place for a while gave me a much deeper understanding of the local way of life.",
+   "it": "Viaggiare lentamente e fermarmi a lungo in un posto mi ha fatto capire molto meglio lo stile di vita locale.",
+   "es": "Viajar despacio y quedarme un tiempo en un mismo lugar me hizo entender mucho mejor la forma de vida local.",
+   "pt": "Viajar devagar e ficar algum tempo no mesmo sítio fez-me compreender muito melhor o modo de vida local.",
+   "pt_BR": "Viajar devagar e ficar um tempo no mesmo lugar me fez entender muito melhor o modo de vida local.",
+   "fr": "Voyager lentement et rester un moment au même endroit m'a fait comprendre bien mieux le mode de vie local.",
+   "de": "Langsam zu reisen und eine Weile an einem Ort zu bleiben, hat mir ein viel tieferes Verständnis für die lokale Lebensweise gegeben."
+  }
+ },
+ {
+  "id": "ss-travel_stories-049",
+  "topic": "travel_stories",
+  "level": "B2",
+  "text": {
+   "en": "I'd love to hear about a trip that changed the way you see the world.",
+   "it": "Mi piacerebbe sentire di un viaggio che ha cambiato il tuo modo di vedere il mondo.",
+   "es": "Me encantaría oír hablar de un viaje que haya cambiado tu forma de ver el mundo.",
+   "pt": "Gostava de ouvir falar de uma viagem que tenha mudado a tua maneira de ver o mundo.",
+   "pt_BR": "Eu adoraria ouvir sobre uma viagem que mudou sua maneira de ver o mundo.",
+   "fr": "J'aimerais entendre parler d'un voyage qui a changé ta façon de voir le monde.",
+   "de": "Ich würde gern von einer Reise hören, die deine Sicht auf die Welt verändert hat."
+  }
+ },
+ {
+  "id": "ss-travel_stories-050",
+  "topic": "travel_stories",
+  "level": "B2",
+  "text": {
+   "en": "Even though the journey was exhausting, I wouldn't trade those memories for anything.",
+   "it": "Anche se il viaggio è stato estenuante, non scambierei quei ricordi per nulla al mondo.",
+   "es": "Aunque el viaje fue agotador, no cambiaría esos recuerdos por nada.",
+   "pt": "Apesar de a viagem ter sido exaustiva, não trocava aquelas memórias por nada.",
+   "pt_BR": "Embora a viagem tenha sido exaustiva, eu não trocaria essas lembranças por nada.",
+   "fr": "Même si le voyage était épuisant, je n'échangerais ces souvenirs contre rien au monde.",
+   "de": "Auch wenn die Reise anstrengend war, würde ich diese Erinnerungen gegen nichts eintauschen."
+  }
+ }
+]

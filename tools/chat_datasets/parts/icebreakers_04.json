@@ -1,0 +1,1302 @@
+[
+ {
+  "id": "ib-languages-001",
+  "topic": "languages",
+  "text": {
+   "en": "What's a word in your language that's hard to translate into English?",
+   "it": "Qual è una parola della tua lingua difficile da tradurre in inglese?",
+   "es": "¿Cuál es una palabra de tu idioma difícil de traducir al inglés?",
+   "pt": "Qual é uma palavra da tua língua que é difícil de traduzir para inglês?",
+   "pt_BR": "Qual é uma palavra da sua língua que é difícil de traduzir para o inglês?",
+   "fr": "Quel mot de ta langue est difficile à traduire en anglais ?",
+   "de": "Welches Wort aus deiner Sprache lässt sich kaum ins Englische übersetzen?"
+  }
+ },
+ {
+  "id": "ib-languages-002",
+  "topic": "languages",
+  "text": {
+   "en": "What was the first phrase you learned in a foreign language?",
+   "it": "Qual è stata la prima frase che hai imparato in una lingua straniera?",
+   "es": "¿Cuál fue la primera frase que aprendiste en un idioma extranjero?",
+   "pt": "Qual foi a primeira frase que aprendeste numa língua estrangeira?",
+   "pt_BR": "Qual foi a primeira frase que você aprendeu em uma língua estrangeira?",
+   "fr": "Quelle est la première phrase que tu as apprise dans une langue étrangère ?",
+   "de": "Was war der erste Satz, den du in einer Fremdsprache gelernt hast?"
+  }
+ },
+ {
+  "id": "ib-languages-003",
+  "topic": "languages",
+  "text": {
+   "en": "Which language do you dream of learning next, and why?",
+   "it": "Quale lingua sogni di imparare prossimamente, e perché?",
+   "es": "¿Qué idioma sueñas con aprender después y por qué?",
+   "pt": "Que língua sonhas aprender a seguir e porquê?",
+   "pt_BR": "Que língua você sonha em aprender em seguida e por quê?",
+   "fr": "Quelle langue rêves-tu d'apprendre ensuite, et pourquoi ?",
+   "de": "Welche Sprache möchtest du als Nächstes unbedingt lernen, und warum?"
+  }
+ },
+ {
+  "id": "ib-languages-004",
+  "topic": "languages",
+  "text": {
+   "en": "Does your region have a dialect or accent that people love to imitate?",
+   "it": "Nella tua zona c'è un dialetto o un accento che tutti amano imitare?",
+   "es": "¿En tu región hay un dialecto o un acento que a la gente le encanta imitar?",
+   "pt": "Na tua região há algum dialeto ou sotaque que toda a gente adora imitar?",
+   "pt_BR": "Na sua região existe algum dialeto ou sotaque que todo mundo adora imitar?",
+   "fr": "Dans ta région, y a-t-il un dialecte ou un accent que tout le monde adore imiter ?",
+   "de": "Gibt es in deiner Gegend einen Dialekt oder Akzent, den alle gern nachmachen?"
+  }
+ },
+ {
+  "id": "ib-languages-005",
+  "topic": "languages",
+  "text": {
+   "en": "What's the funniest language mix-up you've ever had?",
+   "it": "Qual è il malinteso linguistico più divertente che ti sia mai capitato?",
+   "es": "¿Cuál es el malentendido con un idioma más gracioso que has tenido?",
+   "pt": "Qual foi o mal-entendido linguístico mais engraçado que já te aconteceu?",
+   "pt_BR": "Qual foi o mal-entendido de idioma mais engraçado que já aconteceu com você?",
+   "fr": "Quel est le quiproquo linguistique le plus drôle qui te soit arrivé ?",
+   "de": "Was war dein lustigstes Sprachmissverständnis?"
+  }
+ },
+ {
+  "id": "ib-languages-006",
+  "topic": "languages",
+  "text": {
+   "en": "Which expression from your language would you teach me first?",
+   "it": "Quale espressione della tua lingua mi insegneresti per prima?",
+   "es": "¿Qué expresión de tu idioma me enseñarías primero?",
+   "pt": "Que expressão da tua língua me ensinarias primeiro?",
+   "pt_BR": "Que expressão da sua língua você me ensinaria primeiro?",
+   "fr": "Quelle expression de ta langue m'apprendrais-tu en premier ?",
+   "de": "Welchen Ausdruck aus deiner Sprache würdest du mir als Erstes beibringen?"
+  }
+ },
+ {
+  "id": "ib-languages-007",
+  "topic": "languages",
+  "text": {
+   "en": "How many languages do you speak, even just a little?",
+   "it": "Quante lingue parli, anche solo un po'?",
+   "es": "¿Cuántos idiomas hablas, aunque sea un poquito?",
+   "pt": "Quantas línguas falas, mesmo que só um bocadinho?",
+   "pt_BR": "Quantas línguas você fala, mesmo que só um pouquinho?",
+   "fr": "Combien de langues parles-tu, même un tout petit peu ?",
+   "de": "Wie viele Sprachen sprichst du, und sei es nur ein bisschen?"
+  }
+ },
+ {
+  "id": "ib-languages-008",
+  "topic": "languages",
+  "text": {
+   "en": "What's your favorite way to practice a new language?",
+   "it": "Qual è il tuo modo preferito per esercitarti con una nuova lingua?",
+   "es": "¿Cuál es tu forma favorita de practicar un idioma nuevo?",
+   "pt": "Qual é a tua maneira preferida de praticar uma língua nova?",
+   "pt_BR": "Qual é a sua forma favorita de praticar uma língua nova?",
+   "fr": "Quelle est ta façon préférée de pratiquer une nouvelle langue ?",
+   "de": "Wie übst du am liebsten eine neue Sprache?"
+  }
+ },
+ {
+  "id": "ib-languages-009",
+  "topic": "languages",
+  "text": {
+   "en": "Is there a song in your language that every learner should hear?",
+   "it": "C'è una canzone nella tua lingua che ogni studente dovrebbe ascoltare?",
+   "es": "¿Hay una canción en tu idioma que todo estudiante debería escuchar?",
+   "pt": "Há alguma canção na tua língua que todos os estudantes deviam ouvir?",
+   "pt_BR": "Existe alguma música na sua língua que todo estudante deveria ouvir?",
+   "fr": "Y a-t-il une chanson dans ta langue que tous les apprenants devraient écouter ?",
+   "de": "Gibt es ein Lied in deiner Sprache, das jeder Lernende hören sollte?"
+  }
+ },
+ {
+  "id": "ib-languages-010",
+  "topic": "languages",
+  "text": {
+   "en": "What's the hardest sound in your language for foreigners to pronounce?",
+   "it": "Qual è il suono più difficile della tua lingua da pronunciare per gli stranieri?",
+   "es": "¿Cuál es el sonido de tu idioma más difícil de pronunciar para los extranjeros?",
+   "pt": "Qual é o som da tua língua mais difícil de pronunciar para os estrangeiros?",
+   "pt_BR": "Qual é o som da sua língua mais difícil de pronunciar para estrangeiros?",
+   "fr": "Quel est le son de ta langue le plus difficile à prononcer pour les étrangers ?",
+   "de": "Welcher Laut in deiner Sprache ist für Ausländer am schwersten auszusprechen?"
+  }
+ },
+ {
+  "id": "ib-languages-011",
+  "topic": "languages",
+  "text": {
+   "en": "Do you have a favorite word just because of how it sounds?",
+   "it": "Hai una parola preferita solo per come suona?",
+   "es": "¿Tienes una palabra favorita solo por cómo suena?",
+   "pt": "Tens uma palavra preferida só pelo som que tem?",
+   "pt_BR": "Você tem uma palavra favorita só pelo som dela?",
+   "fr": "As-tu un mot préféré rien que pour sa sonorité ?",
+   "de": "Hast du ein Lieblingswort, nur weil es so schön klingt?"
+  }
+ },
+ {
+  "id": "ib-languages-012",
+  "topic": "languages",
+  "text": {
+   "en": "Which language did you grow up hearing at home?",
+   "it": "Quale lingua sentivi parlare in casa mentre crescevi?",
+   "es": "¿Qué idioma escuchabas en casa mientras crecías?",
+   "pt": "Que língua ouvias em casa quando eras criança?",
+   "pt_BR": "Que língua você ouvia em casa quando era criança?",
+   "fr": "Quelle langue entendais-tu à la maison en grandissant ?",
+   "de": "Welche Sprache hast du als Kind zu Hause gehört?"
+  }
+ },
+ {
+  "id": "ib-languages-013",
+  "topic": "languages",
+  "text": {
+   "en": "What's a slang word from your region that I won't find in a textbook?",
+   "it": "Qual è una parola gergale della tua zona che non troverei in nessun manuale?",
+   "es": "¿Qué palabra de jerga de tu región no encontraría en ningún libro de texto?",
+   "pt": "Qual é uma gíria da tua região que não encontraria em nenhum manual?",
+   "pt_BR": "Qual é uma gíria da sua região que eu não encontraria em nenhum livro didático?",
+   "fr": "Quel mot d'argot de ta région ne trouverais-je dans aucun manuel ?",
+   "de": "Welches Slangwort aus deiner Gegend würde ich in keinem Lehrbuch finden?"
+  }
+ },
+ {
+  "id": "ib-languages-014",
+  "topic": "languages",
+  "text": {
+   "en": "How do people greet each other in your language, formally and casually?",
+   "it": "Come ci si saluta nella tua lingua, in modo formale e informale?",
+   "es": "¿Cómo se saluda la gente en tu idioma, de forma formal e informal?",
+   "pt": "Como é que as pessoas se cumprimentam na tua língua, de forma formal e informal?",
+   "pt_BR": "Como as pessoas se cumprimentam na sua língua, de forma formal e informal?",
+   "fr": "Comment se salue-t-on dans ta langue, de façon formelle et décontractée ?",
+   "de": "Wie begrüßt man sich in deiner Sprache, förmlich und locker?"
+  }
+ },
+ {
+  "id": "ib-languages-015",
+  "topic": "languages",
+  "text": {
+   "en": "What helped you most when you learned English?",
+   "it": "Che cosa ti ha aiutato di più quando hai imparato l'inglese?",
+   "es": "¿Qué fue lo que más te ayudó cuando aprendiste inglés?",
+   "pt": "O que mais te ajudou quando aprendeste inglês?",
+   "pt_BR": "O que mais ajudou você quando aprendeu inglês?",
+   "fr": "Qu'est-ce qui t'a le plus aidé quand tu as appris l'anglais ?",
+   "de": "Was hat dir beim Englischlernen am meisten geholfen?"
+  }
+ },
+ {
+  "id": "ib-languages-016",
+  "topic": "languages",
+  "text": {
+   "en": "Is there a tongue twister in your language you can share?",
+   "it": "Hai uno scioglilingua nella tua lingua da condividere?",
+   "es": "¿Tienes algún trabalenguas en tu idioma que puedas compartir?",
+   "pt": "Tens algum trava-línguas na tua língua que possas partilhar?",
+   "pt_BR": "Você tem algum trava-língua na sua língua para compartilhar?",
+   "fr": "As-tu un virelangue dans ta langue à partager ?",
+   "de": "Kennst du einen Zungenbrecher in deiner Sprache, den du teilen magst?"
+  }
+ },
+ {
+  "id": "ib-languages-017",
+  "topic": "languages",
+  "text": {
+   "en": "What's a phrase in your language that sounds poetic when translated literally?",
+   "it": "Quale frase della tua lingua suona poetica se tradotta alla lettera?",
+   "es": "¿Qué frase de tu idioma suena poética traducida literalmente?",
+   "pt": "Que frase da tua língua soa poética quando traduzida à letra?",
+   "pt_BR": "Que frase da sua língua soa poética quando traduzida literalmente?",
+   "fr": "Quelle expression de ta langue paraît poétique traduite mot à mot ?",
+   "de": "Welche Redewendung aus deiner Sprache klingt wörtlich übersetzt poetisch?"
+  }
+ },
+ {
+  "id": "ib-languages-018",
+  "topic": "languages",
+  "text": {
+   "en": "Which language sounds the most beautiful to you?",
+   "it": "Quale lingua ti suona più bella?",
+   "es": "¿Qué idioma te suena más bonito?",
+   "pt": "Que língua te soa mais bonita?",
+   "pt_BR": "Qual língua soa mais bonita para você?",
+   "fr": "Quelle langue te semble la plus belle à l'oreille ?",
+   "de": "Welche Sprache klingt für dich am schönsten?"
+  }
+ },
+ {
+  "id": "ib-languages-019",
+  "topic": "languages",
+  "text": {
+   "en": "What do you say in your language when something surprises you?",
+   "it": "Che cosa dici nella tua lingua quando qualcosa ti sorprende?",
+   "es": "¿Qué dices en tu idioma cuando algo te sorprende?",
+   "pt": "O que dizes na tua língua quando algo te surpreende?",
+   "pt_BR": "O que você diz na sua língua quando algo te surpreende?",
+   "fr": "Que dis-tu dans ta langue quand quelque chose te surprend ?",
+   "de": "Was sagst du in deiner Sprache, wenn dich etwas überrascht?"
+  }
+ },
+ {
+  "id": "ib-languages-020",
+  "topic": "languages",
+  "text": {
+   "en": "Do you think in your native language or in the one you're learning?",
+   "it": "Pensi nella tua lingua madre o in quella che stai imparando?",
+   "es": "¿Piensas en tu lengua materna o en la que estás aprendiendo?",
+   "pt": "Pensas na tua língua materna ou na que estás a aprender?",
+   "pt_BR": "Você pensa na sua língua materna ou na que está aprendendo?",
+   "fr": "Penses-tu dans ta langue maternelle ou dans celle que tu apprends ?",
+   "de": "Denkst du in deiner Muttersprache oder in der, die du gerade lernst?"
+  }
+ },
+ {
+  "id": "ib-languages-021",
+  "topic": "languages",
+  "text": {
+   "en": "What's the nicest way to say thank you in your language?",
+   "it": "Qual è il modo più bello per dire grazie nella tua lingua?",
+   "es": "¿Cuál es la forma más bonita de dar las gracias en tu idioma?",
+   "pt": "Qual é a forma mais bonita de agradecer na tua língua?",
+   "pt_BR": "Qual é a forma mais bonita de agradecer na sua língua?",
+   "fr": "Quelle est la plus jolie façon de dire merci dans ta langue ?",
+   "de": "Wie sagt man in deiner Sprache am schönsten Danke?"
+  }
+ },
+ {
+  "id": "ib-languages-022",
+  "topic": "languages",
+  "text": {
+   "en": "Have you ever tried to learn a language that turned out to be really tough?",
+   "it": "Hai mai provato a imparare una lingua che si è rivelata davvero difficile?",
+   "es": "¿Alguna vez has intentado aprender un idioma que resultó ser muy difícil?",
+   "pt": "Já tentaste aprender uma língua que se revelou mesmo difícil?",
+   "pt_BR": "Você já tentou aprender uma língua que se revelou muito difícil?",
+   "fr": "As-tu déjà essayé d'apprendre une langue qui s'est avérée vraiment difficile ?",
+   "de": "Hast du je versucht, eine Sprache zu lernen, die sich als richtig schwer herausgestellt hat?"
+  }
+ },
+ {
+  "id": "ib-languages-023",
+  "topic": "languages",
+  "text": {
+   "en": "Which words from your language have become popular in other countries?",
+   "it": "Quali parole della tua lingua sono diventate popolari in altri paesi?",
+   "es": "¿Qué palabras de tu idioma se han hecho populares en otros países?",
+   "pt": "Que palavras da tua língua se tornaram populares noutros países?",
+   "pt_BR": "Que palavras da sua língua se tornaram populares em outros países?",
+   "fr": "Quels mots de ta langue sont devenus populaires dans d'autres pays ?",
+   "de": "Welche Wörter aus deiner Sprache sind in anderen Ländern beliebt geworden?"
+  }
+ },
+ {
+  "id": "ib-languages-024",
+  "topic": "languages",
+  "text": {
+   "en": "What's a funny false friend between your language and English?",
+   "it": "Qual è un divertente falso amico tra la tua lingua e l'inglese?",
+   "es": "¿Cuál es un falso amigo divertido entre tu idioma y el inglés?",
+   "pt": "Qual é um falso amigo divertido entre a tua língua e o inglês?",
+   "pt_BR": "Qual é um falso cognato engraçado entre a sua língua e o inglês?",
+   "fr": "Quel est un faux ami amusant entre ta langue et l'anglais ?",
+   "de": "Was ist ein lustiger falscher Freund zwischen deiner Sprache und dem Englischen?"
+  }
+ },
+ {
+  "id": "ib-languages-025",
+  "topic": "languages",
+  "text": {
+   "en": "Do you prefer learning from books, apps, movies, or conversations?",
+   "it": "Preferisci imparare con i libri, le app, i film o le conversazioni?",
+   "es": "¿Prefieres aprender con libros, apps, películas o conversaciones?",
+   "pt": "Preferes aprender com livros, aplicações, filmes ou conversas?",
+   "pt_BR": "Você prefere aprender com livros, aplicativos, filmes ou conversas?",
+   "fr": "Tu préfères apprendre avec des livres, des applis, des films ou des conversations ?",
+   "de": "Lernst du lieber mit Büchern, Apps, Filmen oder im Gespräch?"
+  }
+ },
+ {
+  "id": "ib-languages-026",
+  "topic": "languages",
+  "text": {
+   "en": "How do you say \"good luck\" in your language?",
+   "it": "Come si dice \"buona fortuna\" nella tua lingua?",
+   "es": "¿Cómo se dice \"buena suerte\" en tu idioma?",
+   "pt": "Como se diz \"boa sorte\" na tua língua?",
+   "pt_BR": "Como se diz \"boa sorte\" na sua língua?",
+   "fr": "Comment dit-on \"bonne chance\" dans ta langue ?",
+   "de": "Wie sagt man in deiner Sprache \"viel Glück\"?"
+  }
+ },
+ {
+  "id": "ib-languages-027",
+  "topic": "languages",
+  "text": {
+   "en": "Is there a language in your country besides the main one that I should know about?",
+   "it": "C'è, nel tuo paese, una lingua oltre a quella principale di cui dovrei sapere qualcosa?",
+   "es": "¿Hay en tu país algún idioma, además del principal, que debería conocer?",
+   "pt": "Há no teu país alguma língua, além da principal, que eu devesse conhecer?",
+   "pt_BR": "Existe no seu país alguma língua, além da principal, que eu deveria conhecer?",
+   "fr": "Y a-t-il dans ton pays une langue, en plus de la principale, que je devrais connaître ?",
+   "de": "Gibt es in deinem Land neben der Hauptsprache noch eine Sprache, die ich kennen sollte?"
+  }
+ },
+ {
+  "id": "ib-languages-028",
+  "topic": "languages",
+  "text": {
+   "en": "What's a children's story or nursery rhyme everyone knows in your language?",
+   "it": "Qual è una fiaba o filastrocca che tutti conoscono nella tua lingua?",
+   "es": "¿Qué cuento infantil o canción de cuna conoce todo el mundo en tu idioma?",
+   "pt": "Qual é uma história ou lengalenga infantil que toda a gente conhece na tua língua?",
+   "pt_BR": "Qual é uma história infantil ou cantiga de ninar que todo mundo conhece na sua língua?",
+   "fr": "Quelle histoire ou comptine pour enfants tout le monde connaît-il dans ta langue ?",
+   "de": "Welche Kindergeschichte oder welchen Kinderreim kennt in deiner Sprache jeder?"
+  }
+ },
+ {
+  "id": "ib-languages-029",
+  "topic": "languages",
+  "text": {
+   "en": "Do you use different words when texting friends than when speaking?",
+   "it": "Usi parole diverse quando scrivi ai tuoi amici rispetto a quando parli?",
+   "es": "¿Usas palabras diferentes cuando escribes a tus amigos que cuando hablas?",
+   "pt": "Usas palavras diferentes quando escreves aos amigos e quando falas?",
+   "pt_BR": "Você usa palavras diferentes quando manda mensagem para os amigos e quando fala?",
+   "fr": "Utilises-tu d'autres mots quand tu écris à tes amis que quand tu parles ?",
+   "de": "Benutzt du andere Wörter, wenn du Freunden schreibst, als wenn du sprichst?"
+  }
+ },
+ {
+  "id": "ib-languages-030",
+  "topic": "languages",
+  "text": {
+   "en": "What's the most useful phrase to know before visiting your country?",
+   "it": "Qual è la frase più utile da conoscere prima di visitare il tuo paese?",
+   "es": "¿Cuál es la frase más útil que conocer antes de visitar tu país?",
+   "pt": "Qual é a frase mais útil para saber antes de visitar o teu país?",
+   "pt_BR": "Qual é a frase mais útil para saber antes de visitar o seu país?",
+   "fr": "Quelle est la phrase la plus utile à connaître avant de visiter ton pays ?",
+   "de": "Welcher Satz ist am nützlichsten, bevor man dein Land besucht?"
+  }
+ },
+ {
+  "id": "ib-languages-031",
+  "topic": "languages",
+  "text": {
+   "en": "Have you ever been complimented on your accent?",
+   "it": "Ti hanno mai fatto i complimenti per il tuo accento?",
+   "es": "¿Alguna vez te han felicitado por tu acento?",
+   "pt": "Já te elogiaram o sotaque?",
+   "pt_BR": "Você já recebeu elogios pelo seu sotaque?",
+   "fr": "T'a-t-on déjà complimenté sur ton accent ?",
+   "de": "Hat dich schon mal jemand für deinen Akzent gelobt?"
+  }
+ },
+ {
+  "id": "ib-languages-032",
+  "topic": "languages",
+  "text": {
+   "en": "What's a word in your language with several meanings that confuses learners?",
+   "it": "Quale parola della tua lingua ha più significati e manda in confusione chi la studia?",
+   "es": "¿Qué palabra de tu idioma tiene varios significados y confunde a quienes lo estudian?",
+   "pt": "Que palavra da tua língua tem vários significados e confunde quem a estuda?",
+   "pt_BR": "Que palavra da sua língua tem vários significados e confunde quem a estuda?",
+   "fr": "Quel mot de ta langue a plusieurs sens et déroute ceux qui l'apprennent ?",
+   "de": "Welches Wort in deiner Sprache hat mehrere Bedeutungen und verwirrt Lernende?"
+  }
+ },
+ {
+  "id": "ib-languages-033",
+  "topic": "languages",
+  "text": {
+   "en": "Do you have a nickname in your language that has a story behind it?",
+   "it": "Hai un soprannome nella tua lingua con una storia dietro?",
+   "es": "¿Tienes un apodo en tu idioma que tenga una historia detrás?",
+   "pt": "Tens alguma alcunha na tua língua com uma história por trás?",
+   "pt_BR": "Você tem algum apelido na sua língua com uma história por trás?",
+   "fr": "As-tu un surnom dans ta langue qui cache une histoire ?",
+   "de": "Hast du einen Spitznamen, hinter dem eine Geschichte steckt?"
+  }
+ },
+ {
+  "id": "ib-languages-034",
+  "topic": "languages",
+  "text": {
+   "en": "Which language would you love to hear spoken fluently by a native speaker?",
+   "it": "Quale lingua ti piacerebbe sentir parlare alla perfezione da un madrelingua?",
+   "es": "¿Qué idioma te encantaría oír hablado con fluidez por un nativo?",
+   "pt": "Que língua adorarias ouvir falada com fluência por um nativo?",
+   "pt_BR": "Que língua você adoraria ouvir falada com fluência por um nativo?",
+   "fr": "Quelle langue aimerais-tu entendre parler couramment par un natif ?",
+   "de": "Welche Sprache würdest du gern von Muttersprachlern fließend sprechen hören?"
+  }
+ },
+ {
+  "id": "ib-languages-035",
+  "topic": "languages",
+  "text": {
+   "en": "What's the best compliment someone can give in your language?",
+   "it": "Qual è il complimento più bello che si può fare nella tua lingua?",
+   "es": "¿Cuál es el mejor cumplido que se puede decir en tu idioma?",
+   "pt": "Qual é o melhor elogio que se pode fazer na tua língua?",
+   "pt_BR": "Qual é o melhor elogio que se pode fazer na sua língua?",
+   "fr": "Quel est le plus beau compliment que l'on puisse faire dans ta langue ?",
+   "de": "Was ist das schönste Kompliment, das man in deiner Sprache machen kann?"
+  }
+ },
+ {
+  "id": "ib-languages-036",
+  "topic": "languages",
+  "text": {
+   "en": "How did you end up learning the languages you speak?",
+   "it": "Come hai finito per imparare le lingue che parli?",
+   "es": "¿Cómo acabaste aprendiendo los idiomas que hablas?",
+   "pt": "Como é que acabaste por aprender as línguas que falas?",
+   "pt_BR": "Como você acabou aprendendo as línguas que fala?",
+   "fr": "Comment as-tu fini par apprendre les langues que tu parles ?",
+   "de": "Wie kam es dazu, dass du die Sprachen gelernt hast, die du sprichst?"
+  }
+ },
+ {
+  "id": "ib-languages-037",
+  "topic": "languages",
+  "text": {
+   "en": "Is your language written in the Latin alphabet, or something else?",
+   "it": "La tua lingua si scrive con l'alfabeto latino o con qualcos'altro?",
+   "es": "¿Tu idioma se escribe con el alfabeto latino o con otro?",
+   "pt": "A tua língua escreve-se com o alfabeto latino ou com outro?",
+   "pt_BR": "A sua língua é escrita com o alfabeto latino ou com outro?",
+   "fr": "Ta langue s'écrit-elle avec l'alphabet latin ou avec autre chose ?",
+   "de": "Wird deine Sprache mit lateinischen Buchstaben geschrieben oder mit etwas anderem?"
+  }
+ },
+ {
+  "id": "ib-languages-038",
+  "topic": "languages",
+  "text": {
+   "en": "What's a saying from your language about friendship?",
+   "it": "Qual è un proverbio della tua lingua sull'amicizia?",
+   "es": "¿Qué refrán de tu idioma habla de la amistad?",
+   "pt": "Qual é um provérbio da tua língua sobre a amizade?",
+   "pt_BR": "Qual é um ditado da sua língua sobre amizade?",
+   "fr": "Quel proverbe de ta langue parle d'amitié ?",
+   "de": "Welches Sprichwort in deiner Sprache handelt von Freundschaft?"
+  }
+ },
+ {
+  "id": "ib-languages-039",
+  "topic": "languages",
+  "text": {
+   "en": "Do you ever mix two languages in one sentence?",
+   "it": "Ti capita di mescolare due lingue nella stessa frase?",
+   "es": "¿Te pasa mezclar dos idiomas en una misma frase?",
+   "pt": "Acontece-te misturar duas línguas na mesma frase?",
+   "pt_BR": "Você às vezes mistura duas línguas na mesma frase?",
+   "fr": "T'arrive-t-il de mélanger deux langues dans une même phrase ?",
+   "de": "Mischst du manchmal zwei Sprachen in einem Satz?"
+  }
+ },
+ {
+  "id": "ib-languages-040",
+  "topic": "languages",
+  "text": {
+   "en": "What's the most surprising thing about your language's grammar?",
+   "it": "Qual è la cosa più sorprendente della grammatica della tua lingua?",
+   "es": "¿Qué es lo más sorprendente de la gramática de tu idioma?",
+   "pt": "O que há de mais surpreendente na gramática da tua língua?",
+   "pt_BR": "O que há de mais surpreendente na gramática da sua língua?",
+   "fr": "Quelle est la chose la plus surprenante dans la grammaire de ta langue ?",
+   "de": "Was ist das Überraschendste an der Grammatik deiner Sprache?"
+  }
+ },
+ {
+  "id": "ib-languages-041",
+  "topic": "languages",
+  "text": {
+   "en": "Which movie or series helped you improve a foreign language?",
+   "it": "Quale film o serie ti ha aiutato a migliorare una lingua straniera?",
+   "es": "¿Qué película o serie te ayudó a mejorar un idioma extranjero?",
+   "pt": "Que filme ou série te ajudou a melhorar numa língua estrangeira?",
+   "pt_BR": "Que filme ou série ajudou você a melhorar em uma língua estrangeira?",
+   "fr": "Quel film ou quelle série t'a aidé à progresser dans une langue étrangère ?",
+   "de": "Welcher Film oder welche Serie hat dir geholfen, dich in einer Fremdsprache zu verbessern?"
+  }
+ },
+ {
+  "id": "ib-languages-042",
+  "topic": "languages",
+  "text": {
+   "en": "How do you say \"enjoy your meal\" in your language?",
+   "it": "Come si dice \"buon appetito\" nella tua lingua?",
+   "es": "¿Cómo se dice \"que aproveche\" en tu idioma?",
+   "pt": "Como se diz \"bom apetite\" na tua língua?",
+   "pt_BR": "Como se diz \"bom apetite\" na sua língua?",
+   "fr": "Comment dit-on \"bon appétit\" dans ta langue ?",
+   "de": "Wie sagt man in deiner Sprache \"guten Appetit\"?"
+  }
+ },
+ {
+  "id": "ib-languages-043",
+  "topic": "languages",
+  "text": {
+   "en": "What's the funniest name of a place or thing in your language?",
+   "it": "Qual è il nome più buffo di un luogo o di una cosa nella tua lingua?",
+   "es": "¿Cuál es el nombre más gracioso de un lugar o de una cosa en tu idioma?",
+   "pt": "Qual é o nome mais engraçado de um lugar ou de uma coisa na tua língua?",
+   "pt_BR": "Qual é o nome mais engraçado de um lugar ou de uma coisa na sua língua?",
+   "fr": "Quel est le nom le plus drôle d'un lieu ou d'un objet dans ta langue ?",
+   "de": "Was ist der lustigste Name für einen Ort oder eine Sache in deiner Sprache?"
+  }
+ },
+ {
+  "id": "ib-languages-044",
+  "topic": "languages",
+  "text": {
+   "en": "Did you learn languages at school, or somewhere else?",
+   "it": "Hai imparato le lingue a scuola o altrove?",
+   "es": "¿Aprendiste idiomas en la escuela o en otro lugar?",
+   "pt": "Aprendeste línguas na escola ou noutro sítio?",
+   "pt_BR": "Você aprendeu línguas na escola ou em outro lugar?",
+   "fr": "As-tu appris les langues à l'école ou ailleurs ?",
+   "de": "Hast du Sprachen in der Schule gelernt oder anderswo?"
+  }
+ },
+ {
+  "id": "ib-languages-045",
+  "topic": "languages",
+  "text": {
+   "en": "Do you read books or news in more than one language?",
+   "it": "Leggi libri o notizie in più di una lingua?",
+   "es": "¿Lees libros o noticias en más de un idioma?",
+   "pt": "Lês livros ou notícias em mais do que uma língua?",
+   "pt_BR": "Você lê livros ou notícias em mais de uma língua?",
+   "fr": "Lis-tu des livres ou des actualités dans plus d'une langue ?",
+   "de": "Liest du Bücher oder Nachrichten in mehr als einer Sprache?"
+  }
+ },
+ {
+  "id": "ib-languages-046",
+  "topic": "languages",
+  "text": {
+   "en": "Does your language have a polite way of speaking that I should learn?",
+   "it": "Nella tua lingua c'è un modo educato di parlare che dovrei imparare?",
+   "es": "¿Hay en tu idioma una forma educada de hablar que debería aprender?",
+   "pt": "Na tua língua há uma maneira educada de falar que eu devesse aprender?",
+   "pt_BR": "Na sua língua existe uma maneira educada de falar que eu deveria aprender?",
+   "fr": "Dans ta langue, existe-t-il une façon polie de parler que je devrais apprendre ?",
+   "de": "Gibt es in deiner Sprache eine höfliche Ausdrucksweise, die ich lernen sollte?"
+  }
+ },
+ {
+  "id": "ib-languages-047",
+  "topic": "languages",
+  "text": {
+   "en": "What's the oldest word or expression in your language that you still use?",
+   "it": "Qual è la parola o espressione più antica della tua lingua che usi ancora?",
+   "es": "¿Cuál es la palabra o expresión más antigua de tu idioma que todavía usas?",
+   "pt": "Qual é a palavra ou expressão mais antiga da tua língua que ainda usas?",
+   "pt_BR": "Qual é a palavra ou expressão mais antiga da sua língua que você ainda usa?",
+   "fr": "Quel est le mot ou l'expression la plus ancienne de ta langue que tu utilises encore ?",
+   "de": "Was ist das älteste Wort oder der älteste Ausdruck in deiner Sprache, den du noch benutzt?"
+  }
+ },
+ {
+  "id": "ib-languages-048",
+  "topic": "languages",
+  "text": {
+   "en": "How would you describe the sound of your language to someone who has never heard it?",
+   "it": "Come descriveresti il suono della tua lingua a chi non l'ha mai sentita?",
+   "es": "¿Cómo describirías el sonido de tu idioma a alguien que nunca lo ha oído?",
+   "pt": "Como descreverias o som da tua língua a alguém que nunca a ouviu?",
+   "pt_BR": "Como você descreveria o som da sua língua para alguém que nunca a ouviu?",
+   "fr": "Comment décrirais-tu le son de ta langue à quelqu'un qui ne l'a jamais entendue ?",
+   "de": "Wie würdest du jemandem, der sie nie gehört hat, den Klang deiner Sprache beschreiben?"
+  }
+ },
+ {
+  "id": "ib-languages-049",
+  "topic": "languages",
+  "text": {
+   "en": "What's your favorite word to say out loud in any language?",
+   "it": "Qual è la tua parola preferita da dire ad alta voce, in qualsiasi lingua?",
+   "es": "¿Cuál es tu palabra favorita para decir en voz alta, en cualquier idioma?",
+   "pt": "Qual é a tua palavra preferida para dizer em voz alta, em qualquer língua?",
+   "pt_BR": "Qual é a sua palavra favorita para dizer em voz alta, em qualquer língua?",
+   "fr": "Quel est ton mot préféré à prononcer à voix haute, dans n'importe quelle langue ?",
+   "de": "Was ist dein Lieblingswort zum Laut-Aussprechen, in irgendeiner Sprache?"
+  }
+ },
+ {
+  "id": "ib-languages-050",
+  "topic": "languages",
+  "text": {
+   "en": "What would you like to be able to say fluently a year from now?",
+   "it": "Che cosa vorresti saper dire con scioltezza tra un anno?",
+   "es": "¿Qué te gustaría poder decir con fluidez dentro de un año?",
+   "pt": "O que gostarias de conseguir dizer com fluência daqui a um ano?",
+   "pt_BR": "O que você gostaria de conseguir dizer com fluência daqui a um ano?",
+   "fr": "Que voudrais-tu savoir dire couramment dans un an ?",
+   "de": "Was möchtest du in einem Jahr fließend sagen können?"
+  }
+ },
+ {
+  "id": "ib-traditions-001",
+  "topic": "traditions",
+  "text": {
+   "en": "What's a family tradition that you look forward to every year?",
+   "it": "Qual è una tradizione di famiglia che aspetti con ansia ogni anno?",
+   "es": "¿Qué tradición familiar esperas con ilusión cada año?",
+   "pt": "Qual é a tradição de família que esperas com mais entusiasmo todos os anos?",
+   "pt_BR": "Qual é uma tradição de família que você espera com ansiedade todo ano?",
+   "fr": "Quelle tradition familiale attends-tu avec impatience chaque année ?",
+   "de": "Auf welche Familientradition freust du dich jedes Jahr?"
+  }
+ },
+ {
+  "id": "ib-traditions-002",
+  "topic": "traditions",
+  "text": {
+   "en": "How do people celebrate New Year's where you live?",
+   "it": "Come si festeggia il Capodanno dove vivi?",
+   "es": "¿Cómo se celebra el Año Nuevo donde vives?",
+   "pt": "Como se festeja o Ano Novo onde vives?",
+   "pt_BR": "Como se comemora o Ano-Novo onde você mora?",
+   "fr": "Comment fête-t-on le Nouvel An là où tu vis ?",
+   "de": "Wie feiert man dort, wo du lebst, Silvester?"
+  }
+ },
+ {
+  "id": "ib-traditions-003",
+  "topic": "traditions",
+  "text": {
+   "en": "Is there a festival in your town that visitors shouldn't miss?",
+   "it": "C'è una festa nella tua città che i visitatori non dovrebbero perdere?",
+   "es": "¿Hay alguna fiesta en tu ciudad que los visitantes no deberían perderse?",
+   "pt": "Há alguma festa na tua cidade que os visitantes não deviam perder?",
+   "pt_BR": "Existe alguma festa na sua cidade que os visitantes não podem perder?",
+   "fr": "Y a-t-il dans ta ville une fête que les visiteurs ne devraient pas manquer ?",
+   "de": "Gibt es in deiner Stadt ein Fest, das Besucher nicht verpassen sollten?"
+  }
+ },
+ {
+  "id": "ib-traditions-004",
+  "topic": "traditions",
+  "text": {
+   "en": "What's a traditional dish your family makes for special occasions?",
+   "it": "Quale piatto tradizionale prepara la tua famiglia nelle occasioni speciali?",
+   "es": "¿Qué plato tradicional prepara tu familia en las ocasiones especiales?",
+   "pt": "Que prato tradicional a tua família prepara nas ocasiões especiais?",
+   "pt_BR": "Que prato tradicional a sua família prepara em ocasiões especiais?",
+   "fr": "Quel plat traditionnel ta famille prépare-t-elle pour les grandes occasions ?",
+   "de": "Welches traditionelle Gericht kocht deine Familie zu besonderen Anlässen?"
+  }
+ },
+ {
+  "id": "ib-traditions-005",
+  "topic": "traditions",
+  "text": {
+   "en": "Is there a traditional costume from your region? When is it worn?",
+   "it": "Nella tua regione c'è un costume tradizionale? Quando lo si indossa?",
+   "es": "¿Hay un traje tradicional en tu región? ¿Cuándo se lleva?",
+   "pt": "Há um traje tradicional na tua região? Quando é que se usa?",
+   "pt_BR": "Existe uma roupa tradicional na sua região? Quando ela é usada?",
+   "fr": "Y a-t-il un costume traditionnel dans ta région ? Quand le porte-t-on ?",
+   "de": "Gibt es in deiner Region eine traditionelle Tracht? Wann wird sie getragen?"
+  }
+ },
+ {
+  "id": "ib-traditions-006",
+  "topic": "traditions",
+  "text": {
+   "en": "What's the most colorful celebration in your country?",
+   "it": "Qual è la celebrazione più colorata del tuo paese?",
+   "es": "¿Cuál es la celebración más colorida de tu país?",
+   "pt": "Qual é a celebração mais colorida do teu país?",
+   "pt_BR": "Qual é a celebração mais colorida do seu país?",
+   "fr": "Quelle est la fête la plus colorée de ton pays ?",
+   "de": "Welches ist das farbenprächtigste Fest in deinem Land?"
+  }
+ },
+ {
+  "id": "ib-traditions-007",
+  "topic": "traditions",
+  "text": {
+   "en": "How are birthdays usually celebrated in your family?",
+   "it": "Come si festeggiano di solito i compleanni nella tua famiglia?",
+   "es": "¿Cómo se suelen celebrar los cumpleaños en tu familia?",
+   "pt": "Como se costumam festejar os aniversários na tua família?",
+   "pt_BR": "Como os aniversários costumam ser comemorados na sua família?",
+   "fr": "Comment fête-t-on d'habitude les anniversaires dans ta famille ?",
+   "de": "Wie werden Geburtstage bei euch in der Familie normalerweise gefeiert?"
+  }
+ },
+ {
+  "id": "ib-traditions-008",
+  "topic": "traditions",
+  "text": {
+   "en": "Is there a local custom that surprises first-time visitors?",
+   "it": "C'è un'usanza locale che sorprende chi viene per la prima volta?",
+   "es": "¿Hay alguna costumbre local que sorprenda a quienes visitan por primera vez?",
+   "pt": "Há algum costume local que surpreenda quem visita pela primeira vez?",
+   "pt_BR": "Existe algum costume local que surpreende quem visita pela primeira vez?",
+   "fr": "Y a-t-il une coutume locale qui surprend ceux qui viennent pour la première fois ?",
+   "de": "Gibt es einen lokalen Brauch, der Erstbesucher überrascht?"
+  }
+ },
+ {
+  "id": "ib-traditions-009",
+  "topic": "traditions",
+  "text": {
+   "en": "What's the story behind a holiday you love?",
+   "it": "Qual è la storia dietro una festività che ami?",
+   "es": "¿Cuál es la historia detrás de una festividad que te encanta?",
+   "pt": "Qual é a história por trás de um feriado de que gostas especialmente?",
+   "pt_BR": "Qual é a história por trás de um feriado de que você gosta?",
+   "fr": "Quelle est l'histoire derrière une fête que tu adores ?",
+   "de": "Welche Geschichte steckt hinter einem Feiertag, den du liebst?"
+  }
+ },
+ {
+  "id": "ib-traditions-010",
+  "topic": "traditions",
+  "text": {
+   "en": "Do you have any traditions for welcoming guests into your home?",
+   "it": "Hai delle tradizioni per accogliere gli ospiti a casa?",
+   "es": "¿Tienes alguna tradición para recibir invitados en casa?",
+   "pt": "Tens alguma tradição para receber convidados em casa?",
+   "pt_BR": "Você tem alguma tradição para receber convidados em casa?",
+   "fr": "As-tu des traditions pour accueillir des invités chez toi ?",
+   "de": "Hast du Traditionen, wenn Gäste zu dir nach Hause kommen?"
+  }
+ },
+ {
+  "id": "ib-traditions-011",
+  "topic": "traditions",
+  "text": {
+   "en": "What's a wedding tradition from your culture that you find beautiful?",
+   "it": "Quale tradizione di matrimonio della tua cultura trovi bellissima?",
+   "es": "¿Qué tradición de boda de tu cultura te parece preciosa?",
+   "pt": "Que tradição de casamento da tua cultura achas linda?",
+   "pt_BR": "Que tradição de casamento da sua cultura você acha linda?",
+   "fr": "Quelle tradition de mariage de ta culture trouves-tu belle ?",
+   "de": "Welchen Hochzeitsbrauch aus deiner Kultur findest du wunderschön?"
+  }
+ },
+ {
+  "id": "ib-traditions-012",
+  "topic": "traditions",
+  "text": {
+   "en": "What traditional music or dance is part of the celebrations in your country?",
+   "it": "Quale musica o danza tradizionale fa parte delle feste del tuo paese?",
+   "es": "¿Qué música o baile tradicional forma parte de las fiestas de tu país?",
+   "pt": "Que música ou dança tradicional faz parte das festas do teu país?",
+   "pt_BR": "Que música ou dança tradicional faz parte das festas do seu país?",
+   "fr": "Quelle musique ou danse traditionnelle fait partie des fêtes de ton pays ?",
+   "de": "Welche traditionelle Musik oder welcher Tanz gehört zu den Festen in deinem Land?"
+  }
+ },
+ {
+  "id": "ib-traditions-013",
+  "topic": "traditions",
+  "text": {
+   "en": "Is there a seasonal tradition you love, like harvest time or the first snow?",
+   "it": "C'è una tradizione stagionale che ami, come il raccolto o la prima neve?",
+   "es": "¿Hay una tradición de temporada que te guste, como la cosecha o la primera nevada?",
+   "pt": "Há alguma tradição sazonal de que gostes, como a colheita ou a primeira neve?",
+   "pt_BR": "Existe alguma tradição de estação de que você goste, como a colheita ou a primeira neve?",
+   "fr": "Y a-t-il une tradition saisonnière que tu aimes, comme la récolte ou la première neige ?",
+   "de": "Gibt es eine Tradition im Jahreslauf, die du magst, etwa die Ernte oder den ersten Schnee?"
+  }
+ },
+ {
+  "id": "ib-traditions-014",
+  "topic": "traditions",
+  "text": {
+   "en": "What do people give each other during the biggest holiday in your country?",
+   "it": "Che cosa ci si regala durante la festa più importante del tuo paese?",
+   "es": "¿Qué se regala la gente en la fiesta más importante de tu país?",
+   "pt": "O que as pessoas oferecem umas às outras na maior festa do teu país?",
+   "pt_BR": "O que as pessoas dão de presente umas às outras na maior festa do seu país?",
+   "fr": "Que s'offre-t-on pendant la plus grande fête de ton pays ?",
+   "de": "Was schenkt man sich beim wichtigsten Fest in deinem Land?"
+  }
+ },
+ {
+  "id": "ib-traditions-015",
+  "topic": "traditions",
+  "text": {
+   "en": "Which tradition from your childhood do you miss the most?",
+   "it": "Quale tradizione della tua infanzia ti manca di più?",
+   "es": "¿Qué tradición de tu infancia es la que más echas de menos?",
+   "pt": "Que tradição da tua infância mais saudades te deixa?",
+   "pt_BR": "De qual tradição da sua infância você sente mais saudade?",
+   "fr": "Quelle tradition de ton enfance te manque le plus ?",
+   "de": "Welche Tradition aus deiner Kindheit vermisst du am meisten?"
+  }
+ },
+ {
+  "id": "ib-traditions-016",
+  "topic": "traditions",
+  "text": {
+   "en": "Are there special foods you eat only on certain days of the year?",
+   "it": "Ci sono cibi speciali che mangi solo in certi giorni dell'anno?",
+   "es": "¿Hay comidas especiales que solo comes en determinados días del año?",
+   "pt": "Há comidas especiais que só comes em certos dias do ano?",
+   "pt_BR": "Existem comidas especiais que você só come em certos dias do ano?",
+   "fr": "Y a-t-il des plats spéciaux que tu ne manges que certains jours de l'année ?",
+   "de": "Gibt es besondere Speisen, die du nur an bestimmten Tagen im Jahr isst?"
+  }
+ },
+ {
+  "id": "ib-traditions-017",
+  "topic": "traditions",
+  "text": {
+   "en": "How does your town welcome the summer?",
+   "it": "Come si dà il benvenuto all'estate nella tua città?",
+   "es": "¿Cómo se da la bienvenida al verano en tu ciudad?",
+   "pt": "Como se dão as boas-vindas ao verão na tua cidade?",
+   "pt_BR": "Como se dá as boas-vindas ao verão na sua cidade?",
+   "fr": "Comment accueille-t-on l'été dans ta ville ?",
+   "de": "Wie begrüßt man in deiner Stadt den Sommer?"
+  }
+ },
+ {
+  "id": "ib-traditions-018",
+  "topic": "traditions",
+  "text": {
+   "en": "Is there a traditional craft from your region that people still make by hand?",
+   "it": "C'è un artigianato tradizionale della tua regione ancora fatto a mano?",
+   "es": "¿Hay una artesanía tradicional de tu región que todavía se haga a mano?",
+   "pt": "Há algum artesanato tradicional da tua região que ainda se faça à mão?",
+   "pt_BR": "Existe algum artesanato tradicional da sua região que ainda é feito à mão?",
+   "fr": "Y a-t-il un artisanat traditionnel de ta région encore fait à la main ?",
+   "de": "Gibt es in deiner Region ein traditionelles Handwerk, das noch von Hand gemacht wird?"
+  }
+ },
+ {
+  "id": "ib-traditions-019",
+  "topic": "traditions",
+  "text": {
+   "en": "What's a fun superstition people believe in where you're from?",
+   "it": "Qual è una superstizione divertente in cui credono le persone dalle tue parti?",
+   "es": "¿Cuál es una superstición divertida en la que cree la gente de tu tierra?",
+   "pt": "Qual é uma superstição divertida em que as pessoas acreditam na tua terra?",
+   "pt_BR": "Qual é uma superstição divertida em que as pessoas acreditam na sua terra?",
+   "fr": "Quelle superstition amusante les gens de chez toi croient-ils ?",
+   "de": "Welchen lustigen Aberglauben gibt es bei dir zu Hause?"
+  }
+ },
+ {
+  "id": "ib-traditions-020",
+  "topic": "traditions",
+  "text": {
+   "en": "How do children celebrate holidays in your culture?",
+   "it": "Come festeggiano le feste i bambini nella tua cultura?",
+   "es": "¿Cómo celebran las fiestas los niños en tu cultura?",
+   "pt": "Como é que as crianças celebram as festas na tua cultura?",
+   "pt_BR": "Como as crianças comemoram as festas na sua cultura?",
+   "fr": "Comment les enfants fêtent-ils les jours de fête dans ta culture ?",
+   "de": "Wie feiern Kinder in deiner Kultur die Feiertage?"
+  }
+ },
+ {
+  "id": "ib-traditions-021",
+  "topic": "traditions",
+  "text": {
+   "en": "What's a tradition your family has that other people find unusual?",
+   "it": "Quale tradizione ha la tua famiglia che agli altri sembra insolita?",
+   "es": "¿Qué tradición tiene tu familia que a otros les parece rara?",
+   "pt": "Que tradição tem a tua família que os outros acham invulgar?",
+   "pt_BR": "Que tradição a sua família tem que outras pessoas acham incomum?",
+   "fr": "Quelle tradition de ta famille semble inhabituelle aux autres ?",
+   "de": "Welche Tradition hat deine Familie, die andere ungewöhnlich finden?"
+  }
+ },
+ {
+  "id": "ib-traditions-022",
+  "topic": "traditions",
+  "text": {
+   "en": "Is there a traditional way of drinking tea or coffee in your country?",
+   "it": "Nel tuo paese c'è un modo tradizionale di bere tè o caffè?",
+   "es": "¿En tu país hay una forma tradicional de tomar té o café?",
+   "pt": "No teu país há uma maneira tradicional de tomar chá ou café?",
+   "pt_BR": "No seu país existe uma maneira tradicional de tomar chá ou café?",
+   "fr": "Dans ton pays, y a-t-il une façon traditionnelle de boire le thé ou le café ?",
+   "de": "Gibt es in deinem Land eine traditionelle Art, Tee oder Kaffee zu trinken?"
+  }
+ },
+ {
+  "id": "ib-traditions-023",
+  "topic": "traditions",
+  "text": {
+   "en": "Which national holiday do you enjoy the most?",
+   "it": "Quale festa nazionale ti piace di più?",
+   "es": "¿Qué fiesta nacional disfrutas más?",
+   "pt": "De que feriado nacional gostas mais?",
+   "pt_BR": "De qual feriado nacional você mais gosta?",
+   "fr": "Quel jour férié national préfères-tu ?",
+   "de": "Welcher Nationalfeiertag gefällt dir am besten?"
+  }
+ },
+ {
+  "id": "ib-traditions-024",
+  "topic": "traditions",
+  "text": {
+   "en": "How do you decorate your home for special celebrations?",
+   "it": "Come addobbi la casa per le feste speciali?",
+   "es": "¿Cómo decoras tu casa en las celebraciones especiales?",
+   "pt": "Como decoras a tua casa nas celebrações especiais?",
+   "pt_BR": "Como você decora sua casa nas celebrações especiais?",
+   "fr": "Comment décores-tu ta maison pour les fêtes ?",
+   "de": "Wie dekorierst du dein Zuhause für besondere Feste?"
+  }
+ },
+ {
+  "id": "ib-traditions-025",
+  "topic": "traditions",
+  "text": {
+   "en": "What's a tradition in your town that is hundreds of years old?",
+   "it": "Qual è una tradizione della tua città che ha centinaia di anni?",
+   "es": "¿Qué tradición de tu ciudad tiene cientos de años?",
+   "pt": "Que tradição da tua cidade tem centenas de anos?",
+   "pt_BR": "Que tradição da sua cidade tem centenas de anos?",
+   "fr": "Quelle tradition de ta ville a des centaines d'années ?",
+   "de": "Welche Tradition in deiner Stadt ist Hunderte von Jahren alt?"
+  }
+ },
+ {
+  "id": "ib-traditions-026",
+  "topic": "traditions",
+  "text": {
+   "en": "Is there a traditional song everyone sings together at celebrations?",
+   "it": "C'è una canzone tradizionale che tutti cantano insieme alle feste?",
+   "es": "¿Hay una canción tradicional que todos cantan juntos en las fiestas?",
+   "pt": "Há alguma canção tradicional que todos cantam juntos nas festas?",
+   "pt_BR": "Existe alguma música tradicional que todo mundo canta junto nas festas?",
+   "fr": "Y a-t-il une chanson traditionnelle que tout le monde chante ensemble lors des fêtes ?",
+   "de": "Gibt es ein traditionelles Lied, das bei Festen alle gemeinsam singen?"
+  }
+ },
+ {
+  "id": "ib-traditions-027",
+  "topic": "traditions",
+  "text": {
+   "en": "How do you mark the end of the school year or a big achievement?",
+   "it": "Come si festeggia la fine dell'anno scolastico o un traguardo importante?",
+   "es": "¿Cómo se celebra el final del curso o un gran logro?",
+   "pt": "Como se celebra o fim do ano letivo ou uma grande conquista?",
+   "pt_BR": "Como se comemora o fim do ano letivo ou uma grande conquista?",
+   "fr": "Comment marque-t-on la fin de l'année scolaire ou une grande réussite ?",
+   "de": "Wie feiert man das Ende des Schuljahrs oder einen großen Erfolg?"
+  }
+ },
+ {
+  "id": "ib-traditions-028",
+  "topic": "traditions",
+  "text": {
+   "en": "What's the best part of the holiday season where you live?",
+   "it": "Qual è la parte più bella delle feste di fine anno dove vivi?",
+   "es": "¿Cuál es la mejor parte de las fiestas de fin de año donde vives?",
+   "pt": "Qual é a melhor parte da época festiva onde vives?",
+   "pt_BR": "Qual é a melhor parte das festas de fim de ano onde você mora?",
+   "fr": "Quelle est la meilleure partie des fêtes de fin d'année là où tu vis ?",
+   "de": "Was ist das Schönste an der Festtagszeit bei dir?"
+  }
+ },
+ {
+  "id": "ib-traditions-029",
+  "topic": "traditions",
+  "text": {
+   "en": "Do you have a lucky ritual or habit for important days?",
+   "it": "Hai un rito o un'abitudine portafortuna per i giorni importanti?",
+   "es": "¿Tienes algún ritual o costumbre de buena suerte para los días importantes?",
+   "pt": "Tens algum ritual ou hábito de boa sorte para dias importantes?",
+   "pt_BR": "Você tem algum ritual ou hábito de boa sorte para dias importantes?",
+   "fr": "As-tu un rituel ou une habitude porte-bonheur pour les jours importants ?",
+   "de": "Hast du ein Glücksritual oder eine Gewohnheit für wichtige Tage?"
+  }
+ },
+ {
+  "id": "ib-traditions-030",
+  "topic": "traditions",
+  "text": {
+   "en": "What do people do to remember loved ones in your culture?",
+   "it": "Che cosa si fa nella tua cultura per ricordare i propri cari?",
+   "es": "¿Qué se hace en tu cultura para recordar a los seres queridos?",
+   "pt": "O que se faz na tua cultura para recordar os entes queridos?",
+   "pt_BR": "O que se faz na sua cultura para lembrar dos entes queridos?",
+   "fr": "Que fait-on dans ta culture pour se souvenir des proches disparus ?",
+   "de": "Was tut man in deiner Kultur, um sich an geliebte Menschen zu erinnern?"
+  }
+ },
+ {
+  "id": "ib-traditions-031",
+  "topic": "traditions",
+  "text": {
+   "en": "Which traditional game did you play in your childhood?",
+   "it": "A quale gioco tradizionale giocavi nell'infanzia?",
+   "es": "¿A qué juego tradicional jugabas en tu infancia?",
+   "pt": "A que jogo tradicional jogavas na infância?",
+   "pt_BR": "Com qual brincadeira tradicional você brincava na infância?",
+   "fr": "À quel jeu traditionnel jouais-tu pendant ton enfance ?",
+   "de": "Welches traditionelle Spiel hast du als Kind gespielt?"
+  }
+ },
+ {
+  "id": "ib-traditions-032",
+  "topic": "traditions",
+  "text": {
+   "en": "How is harvest time or a farming season celebrated in your area?",
+   "it": "Come si celebra il periodo del raccolto dalle tue parti?",
+   "es": "¿Cómo se celebra la época de la cosecha en tu zona?",
+   "pt": "Como se celebra a época da colheita na tua zona?",
+   "pt_BR": "Como se celebra a época da colheita na sua região?",
+   "fr": "Comment célèbre-t-on la période des récoltes dans ta région ?",
+   "de": "Wie wird in deiner Gegend die Erntezeit gefeiert?"
+  }
+ },
+ {
+  "id": "ib-traditions-033",
+  "topic": "traditions",
+  "text": {
+   "en": "What's a tradition you'd love to share with someone from another country?",
+   "it": "Quale tradizione ti piacerebbe condividere con una persona di un altro paese?",
+   "es": "¿Qué tradición te encantaría compartir con alguien de otro país?",
+   "pt": "Que tradição adorarias partilhar com alguém de outro país?",
+   "pt_BR": "Que tradição você adoraria compartilhar com alguém de outro país?",
+   "fr": "Quelle tradition aimerais-tu partager avec quelqu'un d'un autre pays ?",
+   "de": "Welche Tradition würdest du gern mit jemandem aus einem anderen Land teilen?"
+  }
+ },
+ {
+  "id": "ib-traditions-034",
+  "topic": "traditions",
+  "text": {
+   "en": "Have you ever joined a tradition from another culture?",
+   "it": "Hai mai partecipato a una tradizione di un'altra cultura?",
+   "es": "¿Has participado alguna vez en una tradición de otra cultura?",
+   "pt": "Já participaste numa tradição de outra cultura?",
+   "pt_BR": "Você já participou de uma tradição de outra cultura?",
+   "fr": "As-tu déjà participé à une tradition d'une autre culture ?",
+   "de": "Hast du schon einmal bei einer Tradition aus einer anderen Kultur mitgemacht?"
+  }
+ },
+ {
+  "id": "ib-traditions-035",
+  "topic": "traditions",
+  "text": {
+   "en": "What happens at a typical family gathering in your culture?",
+   "it": "Che cosa succede a un tipico raduno di famiglia nella tua cultura?",
+   "es": "¿Qué ocurre en una reunión familiar típica de tu cultura?",
+   "pt": "O que acontece num encontro de família típico na tua cultura?",
+   "pt_BR": "O que acontece em uma reunião de família típica na sua cultura?",
+   "fr": "Que se passe-t-il lors d'une réunion de famille typique dans ta culture ?",
+   "de": "Was passiert bei einem typischen Familientreffen in deiner Kultur?"
+  }
+ },
+ {
+  "id": "ib-traditions-036",
+  "topic": "traditions",
+  "text": {
+   "en": "Is there a local legend or folk tale that people tell during holidays?",
+   "it": "C'è una leggenda locale o una fiaba popolare che si racconta durante le feste?",
+   "es": "¿Hay una leyenda local o un cuento popular que se cuenta en las fiestas?",
+   "pt": "Há alguma lenda local ou conto popular que se conta nas festas?",
+   "pt_BR": "Existe alguma lenda local ou conto popular que se conta durante as festas?",
+   "fr": "Y a-t-il une légende locale ou un conte populaire que l'on raconte pendant les fêtes ?",
+   "de": "Gibt es eine lokale Legende oder ein Volksmärchen, das an Festtagen erzählt wird?"
+  }
+ },
+ {
+  "id": "ib-traditions-037",
+  "topic": "traditions",
+  "text": {
+   "en": "How do people light up the night at celebrations in your country, with lanterns, fireworks, or candles?",
+   "it": "Come si illumina la notte durante le feste del tuo paese: con lanterne, fuochi d'artificio o candele?",
+   "es": "¿Cómo se ilumina la noche en las fiestas de tu país: con farolillos, fuegos artificiales o velas?",
+   "pt": "Como se ilumina a noite nas festas do teu país: com lanternas, fogo de artifício ou velas?",
+   "pt_BR": "Como se ilumina a noite nas festas do seu país: com lanternas, fogos de artifício ou velas?",
+   "fr": "Comment éclaire-t-on la nuit lors des fêtes de ton pays : lanternes, feux d'artifice ou bougies ?",
+   "de": "Wie erhellt man bei Festen in deinem Land die Nacht: mit Laternen, Feuerwerk oder Kerzen?"
+  }
+ },
+ {
+  "id": "ib-traditions-038",
+  "topic": "traditions",
+  "text": {
+   "en": "What's a food tradition that brings your whole neighborhood together?",
+   "it": "Quale tradizione culinaria riunisce tutto il tuo quartiere?",
+   "es": "¿Qué tradición gastronómica une a todo tu barrio?",
+   "pt": "Que tradição gastronómica une todo o teu bairro?",
+   "pt_BR": "Que tradição gastronômica une todo o seu bairro?",
+   "fr": "Quelle tradition culinaire rassemble tout ton quartier ?",
+   "de": "Welche kulinarische Tradition bringt dein ganzes Viertel zusammen?"
+  }
+ },
+ {
+  "id": "ib-traditions-039",
+  "topic": "traditions",
+  "text": {
+   "en": "Is there a traditional way of thanking someone in your culture?",
+   "it": "Nella tua cultura c'è un modo tradizionale per ringraziare qualcuno?",
+   "es": "¿En tu cultura hay una forma tradicional de agradecer a alguien?",
+   "pt": "Na tua cultura há uma forma tradicional de agradecer a alguém?",
+   "pt_BR": "Na sua cultura existe uma forma tradicional de agradecer a alguém?",
+   "fr": "Dans ta culture, existe-t-il une façon traditionnelle de remercier quelqu'un ?",
+   "de": "Gibt es in deiner Kultur eine traditionelle Art, sich bei jemandem zu bedanken?"
+  }
+ },
+ {
+  "id": "ib-traditions-040",
+  "topic": "traditions",
+  "text": {
+   "en": "What's the oldest tradition you know of that is still alive today?",
+   "it": "Qual è la tradizione più antica che conosci e che esiste ancora oggi?",
+   "es": "¿Cuál es la tradición más antigua que conoces y que sigue viva hoy?",
+   "pt": "Qual é a tradição mais antiga que conheces e que ainda hoje se mantém viva?",
+   "pt_BR": "Qual é a tradição mais antiga que você conhece e que continua viva hoje?",
+   "fr": "Quelle est la plus ancienne tradition que tu connaisses et qui existe encore aujourd'hui ?",
+   "de": "Was ist die älteste Tradition, die du kennst und die heute noch gelebt wird?"
+  }
+ },
+ {
+  "id": "ib-traditions-041",
+  "topic": "traditions",
+  "text": {
+   "en": "How does your family say goodbye to someone leaving on a trip, or welcome them back?",
+   "it": "Come si saluta in famiglia chi parte per un viaggio o chi torna?",
+   "es": "¿Cómo se despide en tu familia a quien se va de viaje, o se le da la bienvenida al volver?",
+   "pt": "Como é que na tua família se despede quem parte de viagem ou se recebe quem regressa?",
+   "pt_BR": "Como a sua família se despede de quem sai de viagem ou recebe quem volta?",
+   "fr": "Comment ta famille dit-elle au revoir à quelqu'un qui part en voyage, ou bon retour à celui qui rentre ?",
+   "de": "Wie verabschiedet deine Familie jemanden, der verreist, oder empfängt ihn bei der Rückkehr?"
+  }
+ },
+ {
+  "id": "ib-traditions-042",
+  "topic": "traditions",
+  "text": {
+   "en": "Is there a traditional market or fair in your area? What do people buy there?",
+   "it": "C'è un mercato o una fiera tradizionale dalle tue parti? Che cosa si compra?",
+   "es": "¿Hay un mercado o feria tradicional por tu zona? ¿Qué se compra allí?",
+   "pt": "Há algum mercado ou feira tradicional na tua zona? O que é que lá se compra?",
+   "pt_BR": "Existe algum mercado ou feira tradicional na sua região? O que as pessoas compram lá?",
+   "fr": "Y a-t-il un marché ou une foire traditionnelle près de chez toi ? Qu'y achète-t-on ?",
+   "de": "Gibt es in deiner Gegend einen traditionellen Markt oder eine Messe? Was kauft man dort?"
+  }
+ },
+ {
+  "id": "ib-traditions-043",
+  "topic": "traditions",
+  "text": {
+   "en": "What colors or symbols are lucky in your culture?",
+   "it": "Quali colori o simboli portano fortuna nella tua cultura?",
+   "es": "¿Qué colores o símbolos dan buena suerte en tu cultura?",
+   "pt": "Que cores ou símbolos dão sorte na tua cultura?",
+   "pt_BR": "Que cores ou símbolos dão sorte na sua cultura?",
+   "fr": "Quelles couleurs ou quels symboles portent chance dans ta culture ?",
+   "de": "Welche Farben oder Symbole bringen in deiner Kultur Glück?"
+  }
+ },
+ {
+  "id": "ib-traditions-044",
+  "topic": "traditions",
+  "text": {
+   "en": "Does your family have a recipe that has been passed down for generations?",
+   "it": "La tua famiglia ha una ricetta tramandata da generazioni?",
+   "es": "¿Tu familia tiene una receta que se transmite de generación en generación?",
+   "pt": "A tua família tem uma receita passada de geração em geração?",
+   "pt_BR": "A sua família tem uma receita passada de geração em geração?",
+   "fr": "Ta famille a-t-elle une recette transmise de génération en génération ?",
+   "de": "Hat deine Familie ein Rezept, das seit Generationen weitergegeben wird?"
+  }
+ },
+ {
+  "id": "ib-traditions-045",
+  "topic": "traditions",
+  "text": {
+   "en": "What do people wear for the biggest celebration of the year?",
+   "it": "Che cosa si indossa per la festa più grande dell'anno?",
+   "es": "¿Qué se pone la gente para la celebración más grande del año?",
+   "pt": "O que as pessoas vestem na maior celebração do ano?",
+   "pt_BR": "O que as pessoas usam na maior celebração do ano?",
+   "fr": "Que porte-t-on pour la plus grande fête de l'année ?",
+   "de": "Was zieht man zum größten Fest des Jahres an?"
+  }
+ },
+ {
+  "id": "ib-traditions-046",
+  "topic": "traditions",
+  "text": {
+   "en": "Is there a custom about taking off your shoes or bringing something when visiting a home?",
+   "it": "C'è un'usanza riguardo al togliersi le scarpe o al portare qualcosa quando si va a casa di qualcuno?",
+   "es": "¿Hay alguna costumbre sobre quitarse los zapatos o llevar algo cuando se visita una casa?",
+   "pt": "Há algum costume sobre tirar os sapatos ou levar alguma coisa quando se visita uma casa?",
+   "pt_BR": "Existe algum costume sobre tirar os sapatos ou levar algo quando se visita uma casa?",
+   "fr": "Y a-t-il une coutume pour se déchausser ou apporter quelque chose quand on rend visite à quelqu'un ?",
+   "de": "Gibt es einen Brauch, die Schuhe auszuziehen oder etwas mitzubringen, wenn man zu Besuch kommt?"
+  }
+ },
+ {
+  "id": "ib-traditions-047",
+  "topic": "traditions",
+  "text": {
+   "en": "What's a traditional sport or outdoor activity people enjoy at festivals?",
+   "it": "Qual è uno sport o un'attività all'aperto tradizionale che si pratica alle feste?",
+   "es": "¿Qué deporte o actividad al aire libre tradicional se disfruta en las fiestas?",
+   "pt": "Que desporto ou atividade ao ar livre tradicional se pratica nas festas?",
+   "pt_BR": "Que esporte ou atividade ao ar livre tradicional as pessoas curtem nas festas?",
+   "fr": "Quel sport ou quelle activité de plein air traditionnelle apprécie-t-on pendant les fêtes ?",
+   "de": "Welche traditionelle Sportart oder Aktivität im Freien gehört zu euren Festen?"
+  }
+ },
+ {
+  "id": "ib-traditions-048",
+  "topic": "traditions",
+  "text": {
+   "en": "How did your grandparents celebrate, and what has changed since?",
+   "it": "Come festeggiavano i tuoi nonni, e che cosa è cambiato da allora?",
+   "es": "¿Cómo celebraban tus abuelos y qué ha cambiado desde entonces?",
+   "pt": "Como é que os teus avós festejavam e o que mudou desde então?",
+   "pt_BR": "Como seus avós comemoravam e o que mudou desde então?",
+   "fr": "Comment tes grands-parents fêtaient-ils, et qu'est-ce qui a changé depuis ?",
+   "de": "Wie haben deine Großeltern gefeiert, und was hat sich seitdem verändert?"
+  }
+ },
+ {
+  "id": "ib-traditions-049",
+  "topic": "traditions",
+  "text": {
+   "en": "Which tradition from another country would you love to experience?",
+   "it": "Quale tradizione di un altro paese ti piacerebbe vivere?",
+   "es": "¿Qué tradición de otro país te encantaría vivir?",
+   "pt": "Que tradição de outro país adorarias viver?",
+   "pt_BR": "Que tradição de outro país você adoraria viver?",
+   "fr": "Quelle tradition d'un autre pays aimerais-tu vivre ?",
+   "de": "Welche Tradition aus einem anderen Land würdest du gern einmal erleben?"
+  }
+ },
+ {
+  "id": "ib-traditions-050",
+  "topic": "traditions",
+  "text": {
+   "en": "What's your favorite tradition, big or small?",
+   "it": "Qual è la tua tradizione preferita, grande o piccola?",
+   "es": "¿Cuál es tu tradición favorita, grande o pequeña?",
+   "pt": "Qual é a tua tradição preferida, grande ou pequena?",
+   "pt_BR": "Qual é a sua tradição favorita, grande ou pequena?",
+   "fr": "Quelle est ta tradition préférée, grande ou petite ?",
+   "de": "Was ist deine Lieblingstradition, ob groß oder klein?"
+  }
+ }
+]

@@ -1,0 +1,1302 @@
+[
+ {
+  "id": "ib-books-001",
+  "topic": "books",
+  "text": {
+   "en": "What book have you read more than once, and why does it keep pulling you back?",
+   "it": "Quale libro hai letto più di una volta, e perché continua ad attirarti?",
+   "es": "¿Qué libro has leído más de una vez y por qué sigues volviendo a él?",
+   "pt": "Que livro já leste mais do que uma vez e porque é que continuas a voltar a ele?",
+   "pt_BR": "Que livro você já leu mais de uma vez e por que continua voltando a ele?",
+   "fr": "Quel livre as-tu lu plus d'une fois, et pourquoi y reviens-tu toujours ?",
+   "de": "Welches Buch hast du schon mehr als einmal gelesen, und warum zieht es dich immer wieder an?"
+  }
+ },
+ {
+  "id": "ib-books-002",
+  "topic": "books",
+  "text": {
+   "en": "Which author from your country would you recommend to someone who has never read their work?",
+   "it": "Quale autore del tuo paese consiglieresti a chi non ha mai letto le sue opere?",
+   "es": "¿Qué autor de tu país le recomendarías a alguien que nunca ha leído su obra?",
+   "pt": "Que autor do teu país recomendarias a quem nunca leu a sua obra?",
+   "pt_BR": "Que autor do seu país você recomendaria a quem nunca leu a obra dele?",
+   "fr": "Quel auteur de ton pays recommanderais-tu à quelqu'un qui ne l'a jamais lu ?",
+   "de": "Welchen Autor aus deinem Land würdest du jemandem empfehlen, der noch nie etwas von ihm gelesen hat?"
+  }
+ },
+ {
+  "id": "ib-books-003",
+  "topic": "books",
+  "text": {
+   "en": "What are you reading right now, and are you enjoying it?",
+   "it": "Cosa stai leggendo in questo momento, e ti piace?",
+   "es": "¿Qué estás leyendo ahora mismo y te está gustando?",
+   "pt": "O que estás a ler neste momento e estás a gostar?",
+   "pt_BR": "O que você está lendo agora e está gostando?",
+   "fr": "Qu'est-ce que tu lis en ce moment, et est-ce que ça te plaît ?",
+   "de": "Was liest du gerade, und gefällt es dir?"
+  }
+ },
+ {
+  "id": "ib-books-004",
+  "topic": "books",
+  "text": {
+   "en": "Do you prefer paper books, e-readers or audiobooks?",
+   "it": "Preferisci i libri di carta, gli e-reader o gli audiolibri?",
+   "es": "¿Prefieres los libros en papel, los lectores electrónicos o los audiolibros?",
+   "pt": "Preferes livros em papel, leitores eletrónicos ou audiolivros?",
+   "pt_BR": "Você prefere livros de papel, e-readers ou audiolivros?",
+   "fr": "Tu préfères les livres papier, les liseuses ou les livres audio ?",
+   "de": "Magst du lieber gedruckte Bücher, E-Reader oder Hörbücher?"
+  }
+ },
+ {
+  "id": "ib-books-005",
+  "topic": "books",
+  "text": {
+   "en": "What was the first book you remember loving as a child?",
+   "it": "Qual è il primo libro che ricordi di aver amato da bambino?",
+   "es": "¿Cuál es el primer libro que recuerdas haber amado de niño?",
+   "pt": "Qual é o primeiro livro de que te lembras de ter adorado em criança?",
+   "pt_BR": "Qual é o primeiro livro de que você se lembra de ter amado quando criança?",
+   "fr": "Quel est le premier livre que tu te souviens d'avoir adoré enfant ?",
+   "de": "Welches Buch war das erste, das du als Kind geliebt hast?"
+  }
+ },
+ {
+  "id": "ib-books-006",
+  "topic": "books",
+  "text": {
+   "en": "If you could spend an evening with a character from a novel, who would it be?",
+   "it": "Se potessi passare una serata con un personaggio di un romanzo, chi sceglieresti?",
+   "es": "Si pudieras pasar una tarde con un personaje de una novela, ¿quién sería?",
+   "pt": "Se pudesses passar uma noite com uma personagem de um romance, quem seria?",
+   "pt_BR": "Se você pudesse passar uma noite com um personagem de um romance, quem seria?",
+   "fr": "Si tu pouvais passer une soirée avec un personnage de roman, ce serait qui ?",
+   "de": "Wenn du einen Abend mit einer Romanfigur verbringen könntest, wer wäre es?"
+  }
+ },
+ {
+  "id": "ib-books-007",
+  "topic": "books",
+  "text": {
+   "en": "Where is your favorite place to read, and what makes it special?",
+   "it": "Qual è il tuo posto preferito per leggere, e cosa lo rende speciale?",
+   "es": "¿Cuál es tu lugar favorito para leer y qué lo hace especial?",
+   "pt": "Qual é o teu sítio preferido para ler e o que o torna especial?",
+   "pt_BR": "Qual é o seu lugar favorito para ler e o que o torna especial?",
+   "fr": "Où aimes-tu lire le plus, et qu'est-ce qui rend cet endroit spécial ?",
+   "de": "Wo liest du am liebsten, und was macht diesen Ort besonders?"
+  }
+ },
+ {
+  "id": "ib-books-008",
+  "topic": "books",
+  "text": {
+   "en": "Is there a book that changed the way you see the world?",
+   "it": "C'è un libro che ha cambiato il tuo modo di vedere il mondo?",
+   "es": "¿Hay algún libro que haya cambiado tu forma de ver el mundo?",
+   "pt": "Há algum livro que tenha mudado a tua forma de ver o mundo?",
+   "pt_BR": "Existe algum livro que mudou a sua forma de ver o mundo?",
+   "fr": "Y a-t-il un livre qui a changé ta façon de voir le monde ?",
+   "de": "Gibt es ein Buch, das deine Sicht auf die Welt verändert hat?"
+  }
+ },
+ {
+  "id": "ib-books-009",
+  "topic": "books",
+  "text": {
+   "en": "Which book would you give to a friend who says they do not enjoy reading?",
+   "it": "Quale libro regaleresti a un amico che dice di non amare la lettura?",
+   "es": "¿Qué libro le regalarías a un amigo que dice que no le gusta leer?",
+   "pt": "Que livro oferecerias a um amigo que diz não gostar de ler?",
+   "pt_BR": "Que livro você daria a um amigo que diz não gostar de ler?",
+   "fr": "Quel livre offrirais-tu à un ami qui dit ne pas aimer lire ?",
+   "de": "Welches Buch würdest du einem Freund schenken, der sagt, er lese nicht gern?"
+  }
+ },
+ {
+  "id": "ib-books-010",
+  "topic": "books",
+  "text": {
+   "en": "What is a classic everyone talks about that you have never managed to finish?",
+   "it": "Qual è un classico di cui tutti parlano e che non sei mai riuscito a finire?",
+   "es": "¿Cuál es ese clásico del que todos hablan y que nunca has conseguido terminar?",
+   "pt": "Qual é o clássico de que todos falam e que nunca conseguiste acabar?",
+   "pt_BR": "Qual é aquele clássico de que todo mundo fala e que você nunca conseguiu terminar?",
+   "fr": "Quel classique dont tout le monde parle n'as-tu jamais réussi à terminer ?",
+   "de": "Welchen Klassiker, über den alle reden, hast du nie zu Ende gelesen?"
+  }
+ },
+ {
+  "id": "ib-books-011",
+  "topic": "books",
+  "text": {
+   "en": "Do you have a local bookshop or library you love? What is it like?",
+   "it": "Hai una libreria o una biblioteca del posto che ami? Com'è?",
+   "es": "¿Tienes una librería o biblioteca local que te encante? ¿Cómo es?",
+   "pt": "Tens uma livraria ou biblioteca local de que gostes muito? Como é?",
+   "pt_BR": "Você tem uma livraria ou biblioteca local de que gosta muito? Como ela é?",
+   "fr": "As-tu une librairie ou une bibliothèque de quartier que tu adores ? Comment est-elle ?",
+   "de": "Hast du eine Lieblingsbuchhandlung oder Bibliothek in deiner Nähe? Wie ist sie?"
+  }
+ },
+ {
+  "id": "ib-books-012",
+  "topic": "books",
+  "text": {
+   "en": "What genre do you always go back to, and which one do you want to explore more?",
+   "it": "Quale genere scegli sempre, e quale vorresti esplorare di più?",
+   "es": "¿A qué género vuelves siempre y cuál te gustaría explorar más?",
+   "pt": "A que género voltas sempre e qual gostarias de explorar mais?",
+   "pt_BR": "A qual gênero você sempre volta e qual gostaria de explorar mais?",
+   "fr": "Quel genre retrouves-tu toujours, et lequel aimerais-tu explorer davantage ?",
+   "de": "Zu welchem Genre greifst du immer wieder, und welches würdest du gern mehr entdecken?"
+  }
+ },
+ {
+  "id": "ib-books-013",
+  "topic": "books",
+  "text": {
+   "en": "Which book do you wish more people in your country had read?",
+   "it": "Quale libro vorresti che più persone nel tuo paese avessero letto?",
+   "es": "¿Qué libro te gustaría que más gente de tu país hubiera leído?",
+   "pt": "Que livro gostarias que mais pessoas no teu país tivessem lido?",
+   "pt_BR": "Que livro você gostaria que mais gente no seu país tivesse lido?",
+   "fr": "Quel livre aimerais-tu que plus de gens dans ton pays aient lu ?",
+   "de": "Welches Buch sollten deiner Meinung nach mehr Menschen in deinem Land lesen?"
+  }
+ },
+ {
+  "id": "ib-books-014",
+  "topic": "books",
+  "text": {
+   "en": "Have you ever read a book in a language that is not your own? How did it go?",
+   "it": "Hai mai letto un libro in una lingua che non è la tua? Com'è andata?",
+   "es": "¿Alguna vez has leído un libro en un idioma que no es el tuyo? ¿Cómo te fue?",
+   "pt": "Alguma vez leste um livro numa língua que não é a tua? Como correu?",
+   "pt_BR": "Você já leu um livro em um idioma que não é o seu? Como foi?",
+   "fr": "As-tu déjà lu un livre dans une langue qui n'est pas la tienne ? Comment ça s'est passé ?",
+   "de": "Hast du schon mal ein Buch in einer Fremdsprache gelesen? Wie lief das?"
+  }
+ },
+ {
+  "id": "ib-books-015",
+  "topic": "books",
+  "text": {
+   "en": "What is the best book you have ever received as a gift?",
+   "it": "Qual è il libro più bello che tu abbia mai ricevuto in regalo?",
+   "es": "¿Cuál es el mejor libro que te han regalado?",
+   "pt": "Qual é o melhor livro que já recebeste como presente?",
+   "pt_BR": "Qual é o melhor livro que você já ganhou de presente?",
+   "fr": "Quel est le plus beau livre qu'on t'ait jamais offert ?",
+   "de": "Welches ist das beste Buch, das du je geschenkt bekommen hast?"
+  }
+ },
+ {
+  "id": "ib-books-016",
+  "topic": "books",
+  "text": {
+   "en": "Do you finish every book you start, or do you let some go?",
+   "it": "Finisci ogni libro che inizi, o a volte li abbandoni?",
+   "es": "¿Terminas todos los libros que empiezas o dejas algunos a medias?",
+   "pt": "Acabas todos os livros que começas ou deixas alguns a meio?",
+   "pt_BR": "Você termina todo livro que começa ou abandona alguns no meio?",
+   "fr": "Termines-tu tous les livres que tu commences, ou en abandonnes-tu parfois ?",
+   "de": "Liest du jedes Buch zu Ende, das du anfängst, oder legst du manche weg?"
+  }
+ },
+ {
+  "id": "ib-books-017",
+  "topic": "books",
+  "text": {
+   "en": "Which book would you most like to see turned into a film, and who would you cast?",
+   "it": "Quale libro vorresti vedere trasformato in un film, e chi sceglieresti come attori?",
+   "es": "¿Qué libro te gustaría ver convertido en película y a quién pondrías en el reparto?",
+   "pt": "Que livro gostarias de ver transformado em filme e quem escolherias para o elenco?",
+   "pt_BR": "Que livro você mais gostaria de ver virar filme e quem escalaria no elenco?",
+   "fr": "Quel livre aimerais-tu voir adapté au cinéma, et qui choisirais-tu comme acteurs ?",
+   "de": "Welches Buch würdest du gern verfilmt sehen, und wen würdest du besetzen?"
+  }
+ },
+ {
+  "id": "ib-books-018",
+  "topic": "books",
+  "text": {
+   "en": "What is a children's book from your country that adults still love?",
+   "it": "Qual è un libro per bambini del tuo paese che piace ancora agli adulti?",
+   "es": "¿Qué libro infantil de tu país sigue gustando a los adultos?",
+   "pt": "Qual é um livro infantil do teu país de que os adultos ainda gostam?",
+   "pt_BR": "Qual é um livro infantil do seu país de que os adultos ainda gostam?",
+   "fr": "Quel livre pour enfants de ton pays plaît encore aux adultes ?",
+   "de": "Welches Kinderbuch aus deinem Land lieben Erwachsene bis heute?"
+  }
+ },
+ {
+  "id": "ib-books-019",
+  "topic": "books",
+  "text": {
+   "en": "Do you read before bed, on your commute, or whenever you find a free moment?",
+   "it": "Leggi prima di dormire, durante il tragitto o quando trovi un momento libero?",
+   "es": "¿Lees antes de dormir, en el trayecto o cuando encuentras un rato libre?",
+   "pt": "Lês antes de dormir, no caminho para o trabalho ou quando tens um momento livre?",
+   "pt_BR": "Você lê antes de dormir, no trajeto ou sempre que tem um tempinho livre?",
+   "fr": "Lis-tu avant de dormir, dans les transports ou dès que tu as un moment ?",
+   "de": "Liest du vor dem Schlafen, auf dem Weg zur Arbeit oder wann immer du Zeit findest?"
+  }
+ },
+ {
+  "id": "ib-books-020",
+  "topic": "books",
+  "text": {
+   "en": "What is the most beautiful sentence you have ever read in a book?",
+   "it": "Qual è la frase più bella che tu abbia mai letto in un libro?",
+   "es": "¿Cuál es la frase más bonita que has leído en un libro?",
+   "pt": "Qual é a frase mais bonita que já leste num livro?",
+   "pt_BR": "Qual é a frase mais bonita que você já leu em um livro?",
+   "fr": "Quelle est la plus belle phrase que tu aies lue dans un livre ?",
+   "de": "Welcher ist der schönste Satz, den du je in einem Buch gelesen hast?"
+  }
+ },
+ {
+  "id": "ib-books-021",
+  "topic": "books",
+  "text": {
+   "en": "Which novel would you recommend to someone who wants to understand your culture?",
+   "it": "Quale romanzo consiglieresti a chi vuole capire la tua cultura?",
+   "es": "¿Qué novela le recomendarías a alguien que quiera entender tu cultura?",
+   "pt": "Que romance recomendarias a quem quer compreender a tua cultura?",
+   "pt_BR": "Que romance você recomendaria a quem quer entender a sua cultura?",
+   "fr": "Quel roman recommanderais-tu à quelqu'un qui veut comprendre ta culture ?",
+   "de": "Welchen Roman würdest du jemandem empfehlen, der deine Kultur verstehen möchte?"
+  }
+ },
+ {
+  "id": "ib-books-022",
+  "topic": "books",
+  "text": {
+   "en": "Are you more of a story person or a facts-and-ideas person when it comes to books?",
+   "it": "Sei più da storie o più da fatti e idee quando si parla di libri?",
+   "es": "Con los libros, ¿eres más de historias o de datos e ideas?",
+   "pt": "Quando se trata de livros, és mais de histórias ou de factos e ideias?",
+   "pt_BR": "Quando o assunto é livro, você é mais de histórias ou de fatos e ideias?",
+   "fr": "En matière de livres, es-tu plutôt histoires ou faits et idées ?",
+   "de": "Bist du bei Büchern eher der Geschichten-Typ oder der Fakten-und-Ideen-Typ?"
+  }
+ },
+ {
+  "id": "ib-books-023",
+  "topic": "books",
+  "text": {
+   "en": "What is the thickest book you have ever read, and was it worth it?",
+   "it": "Qual è il libro più lungo che tu abbia mai letto, e ne è valsa la pena?",
+   "es": "¿Cuál es el libro más largo que has leído y mereció la pena?",
+   "pt": "Qual é o livro mais grosso que já leste e valeu a pena?",
+   "pt_BR": "Qual é o livro mais grosso que você já leu e valeu a pena?",
+   "fr": "Quel est le livre le plus épais que tu aies lu, et en valait-il la peine ?",
+   "de": "Was ist das dickste Buch, das du je gelesen hast, und hat es sich gelohnt?"
+  }
+ },
+ {
+  "id": "ib-books-024",
+  "topic": "books",
+  "text": {
+   "en": "Do you write in the margins of your books, or do you keep them spotless?",
+   "it": "Scrivi sui margini dei tuoi libri o li tieni immacolati?",
+   "es": "¿Escribes en los márgenes de tus libros o los mantienes impecables?",
+   "pt": "Escreves nas margens dos teus livros ou manténs tudo impecável?",
+   "pt_BR": "Você escreve nas margens dos seus livros ou os mantém impecáveis?",
+   "fr": "Écris-tu dans les marges de tes livres, ou les gardes-tu impeccables ?",
+   "de": "Schreibst du in die Ränder deiner Bücher oder hältst du sie makellos?"
+  }
+ },
+ {
+  "id": "ib-books-025",
+  "topic": "books",
+  "text": {
+   "en": "What is a book that made you laugh out loud?",
+   "it": "Qual è un libro che ti ha fatto ridere a crepapelle?",
+   "es": "¿Qué libro te hizo reír a carcajadas?",
+   "pt": "Qual é um livro que te fez rir às gargalhadas?",
+   "pt_BR": "Qual é um livro que fez você dar gargalhadas?",
+   "fr": "Quel livre t'a fait rire aux éclats ?",
+   "de": "Welches Buch hat dich laut zum Lachen gebracht?"
+  }
+ },
+ {
+  "id": "ib-books-026",
+  "topic": "books",
+  "text": {
+   "en": "Which poet or poem from your country should I know about?",
+   "it": "Quale poeta o poesia del tuo paese dovrei conoscere?",
+   "es": "¿Qué poeta o poema de tu país debería conocer?",
+   "pt": "Que poeta ou poema do teu país devo conhecer?",
+   "pt_BR": "Que poeta ou poema do seu país eu deveria conhecer?",
+   "fr": "Quel poète ou quel poème de ton pays devrais-je connaître ?",
+   "de": "Welchen Dichter oder welches Gedicht aus deinem Land sollte ich kennen?"
+  }
+ },
+ {
+  "id": "ib-books-027",
+  "topic": "books",
+  "text": {
+   "en": "Have you ever visited a place because you read about it in a book?",
+   "it": "Hai mai visitato un luogo perché ne avevi letto in un libro?",
+   "es": "¿Alguna vez has visitado un lugar porque leíste sobre él en un libro?",
+   "pt": "Alguma vez visitaste um lugar por teres lido sobre ele num livro?",
+   "pt_BR": "Você já visitou um lugar porque leu sobre ele em um livro?",
+   "fr": "As-tu déjà visité un endroit parce que tu en avais lu la description dans un livre ?",
+   "de": "Hast du schon mal einen Ort besucht, weil du in einem Buch von ihm gelesen hast?"
+  }
+ },
+ {
+  "id": "ib-books-028",
+  "topic": "books",
+  "text": {
+   "en": "What is on your to-read pile at the moment?",
+   "it": "Cosa c'è nella tua pila di libri da leggere in questo momento?",
+   "es": "¿Qué hay ahora mismo en tu pila de libros pendientes?",
+   "pt": "O que há neste momento na tua pilha de livros por ler?",
+   "pt_BR": "O que tem na sua pilha de livros para ler agora?",
+   "fr": "Qu'y a-t-il en ce moment dans ta pile de livres à lire ?",
+   "de": "Was liegt gerade auf deinem Stapel ungelesener Bücher?"
+  }
+ },
+ {
+  "id": "ib-books-029",
+  "topic": "books",
+  "text": {
+   "en": "Do you have a favorite bookstore or library you would show a visitor?",
+   "it": "Hai una libreria o biblioteca preferita che mostreresti a un visitatore?",
+   "es": "¿Tienes una librería o biblioteca favorita que le enseñarías a un visitante?",
+   "pt": "Tens uma livraria ou biblioteca preferida que mostrarias a um visitante?",
+   "pt_BR": "Você tem uma livraria ou biblioteca favorita que mostraria a um visitante?",
+   "fr": "As-tu une librairie ou une bibliothèque préférée que tu ferais découvrir à un visiteur ?",
+   "de": "Hast du eine Lieblingsbuchhandlung oder Bibliothek, die du einem Besucher zeigen würdest?"
+  }
+ },
+ {
+  "id": "ib-books-030",
+  "topic": "books",
+  "text": {
+   "en": "Which translated book has impressed you the most?",
+   "it": "Quale libro tradotto ti ha colpito di più?",
+   "es": "¿Qué libro traducido te ha impresionado más?",
+   "pt": "Que livro traduzido mais te impressionou?",
+   "pt_BR": "Qual livro traduzido mais impressionou você?",
+   "fr": "Quel livre traduit t'a le plus impressionné ?",
+   "de": "Welches übersetzte Buch hat dich am meisten beeindruckt?"
+  }
+ },
+ {
+  "id": "ib-books-031",
+  "topic": "books",
+  "text": {
+   "en": "If you wrote a book, what would it be about?",
+   "it": "Se scrivessi un libro, di cosa parlerebbe?",
+   "es": "Si escribieras un libro, ¿de qué trataría?",
+   "pt": "Se escrevesses um livro, sobre o que seria?",
+   "pt_BR": "Se você escrevesse um livro, sobre o que seria?",
+   "fr": "Si tu écrivais un livre, de quoi parlerait-il ?",
+   "de": "Wenn du ein Buch schreiben würdest, wovon würde es handeln?"
+  }
+ },
+ {
+  "id": "ib-books-032",
+  "topic": "books",
+  "text": {
+   "en": "What is a book you read in school that you ended up loving?",
+   "it": "Qual è un libro letto a scuola che alla fine hai amato?",
+   "es": "¿Qué libro leído en el colegio acabaste adorando?",
+   "pt": "Qual é um livro que leste na escola e acabaste por adorar?",
+   "pt_BR": "Qual é um livro que você leu na escola e acabou adorando?",
+   "fr": "Quel livre lu à l'école as-tu fini par adorer ?",
+   "de": "Welches Buch aus der Schulzeit hast du am Ende doch geliebt?"
+  }
+ },
+ {
+  "id": "ib-books-033",
+  "topic": "books",
+  "text": {
+   "en": "Do you prefer a book that makes you think or one that helps you escape?",
+   "it": "Preferisci un libro che ti fa pensare o uno che ti fa evadere?",
+   "es": "¿Prefieres un libro que te haga pensar o uno que te ayude a evadirte?",
+   "pt": "Preferes um livro que te faça pensar ou um que te ajude a evadir?",
+   "pt_BR": "Você prefere um livro que faz pensar ou um que ajuda a fugir da rotina?",
+   "fr": "Tu préfères un livre qui fait réfléchir ou un livre qui permet de s'évader ?",
+   "de": "Magst du lieber ein Buch, das zum Nachdenken anregt, oder eins, mit dem du abschalten kannst?"
+  }
+ },
+ {
+  "id": "ib-books-034",
+  "topic": "books",
+  "text": {
+   "en": "Which author would you love to have dinner with, and what would you ask?",
+   "it": "Con quale autore ti piacerebbe cenare, e cosa gli chiederesti?",
+   "es": "¿Con qué autor te gustaría cenar y qué le preguntarías?",
+   "pt": "Com que autor gostarias de jantar e o que lhe perguntarias?",
+   "pt_BR": "Com qual autor você gostaria de jantar e o que perguntaria a ele?",
+   "fr": "Avec quel auteur aimerais-tu dîner, et que lui demanderais-tu ?",
+   "de": "Mit welchem Autor würdest du gern zu Abend essen, und was würdest du fragen?"
+  }
+ },
+ {
+  "id": "ib-books-035",
+  "topic": "books",
+  "text": {
+   "en": "Is there a book series you could happily read all over again?",
+   "it": "C'è una saga di libri che rileggeresti volentieri da capo?",
+   "es": "¿Hay alguna saga de libros que releerías encantado desde el principio?",
+   "pt": "Há alguma saga de livros que relerias com todo o gosto desde o início?",
+   "pt_BR": "Existe alguma série de livros que você releria com prazer desde o começo?",
+   "fr": "Y a-t-il une saga que tu relirais avec plaisir depuis le début ?",
+   "de": "Gibt es eine Buchreihe, die du jederzeit gern noch einmal von vorn lesen würdest?"
+  }
+ },
+ {
+  "id": "ib-books-036",
+  "topic": "books",
+  "text": {
+   "en": "What book are you most embarrassed to say you enjoyed?",
+   "it": "Di quale libro ti vergogni di più ad ammettere che ti è piaciuto?",
+   "es": "¿De qué libro te da más vergüenza decir que te gustó?",
+   "pt": "De que livro tens mais vergonha de dizer que gostaste?",
+   "pt_BR": "De qual livro você mais tem vergonha de dizer que gostou?",
+   "fr": "De quel livre as-tu le plus honte d'avouer qu'il t'a plu ?",
+   "de": "Bei welchem Buch ist es dir am peinlichsten zuzugeben, dass es dir gefallen hat?"
+  }
+ },
+ {
+  "id": "ib-books-037",
+  "topic": "books",
+  "text": {
+   "en": "Do you belong to a book club, or would you like to join one?",
+   "it": "Fai parte di un gruppo di lettura o ti piacerebbe entrarne in uno?",
+   "es": "¿Perteneces a algún club de lectura o te gustaría unirte a uno?",
+   "pt": "Fazes parte de algum clube de leitura ou gostarias de entrar num?",
+   "pt_BR": "Você participa de algum clube do livro ou gostaria de entrar em um?",
+   "fr": "Fais-tu partie d'un club de lecture, ou aimerais-tu en rejoindre un ?",
+   "de": "Bist du in einem Buchclub, oder würdest du gern einem beitreten?"
+  }
+ },
+ {
+  "id": "ib-books-038",
+  "topic": "books",
+  "text": {
+   "en": "What is a story from your culture that every child grows up hearing?",
+   "it": "Qual è una storia della tua cultura che ogni bambino ascolta crescendo?",
+   "es": "¿Qué historia de tu cultura escucha todo niño al crecer?",
+   "pt": "Que história da tua cultura é ouvida por todas as crianças ao crescer?",
+   "pt_BR": "Que história da sua cultura toda criança ouve ao crescer?",
+   "fr": "Quelle histoire de ta culture tous les enfants entendent-ils en grandissant ?",
+   "de": "Welche Geschichte aus deiner Kultur hört jedes Kind beim Aufwachsen?"
+  }
+ },
+ {
+  "id": "ib-books-039",
+  "topic": "books",
+  "text": {
+   "en": "Which book cover is so beautiful you bought the book because of it?",
+   "it": "Quale copertina è così bella che hai comprato il libro solo per quella?",
+   "es": "¿Qué portada te pareció tan bonita que compraste el libro por ella?",
+   "pt": "Qual capa era tão bonita que compraste o livro só por causa dela?",
+   "pt_BR": "Qual capa era tão bonita que você comprou o livro por causa dela?",
+   "fr": "Quelle couverture était si belle que tu as acheté le livre pour elle ?",
+   "de": "Welches Cover war so schön, dass du das Buch deswegen gekauft hast?"
+  }
+ },
+ {
+  "id": "ib-books-040",
+  "topic": "books",
+  "text": {
+   "en": "Do you like reading non-fiction, like history or travel stories? Any favorites?",
+   "it": "Ti piace leggere saggistica, come storia o racconti di viaggio? Qualche preferito?",
+   "es": "¿Te gusta leer no ficción, como historia o relatos de viaje? ¿Algún favorito?",
+   "pt": "Gostas de ler não ficção, como história ou relatos de viagem? Tens algum favorito?",
+   "pt_BR": "Você gosta de ler não ficção, como história ou relatos de viagem? Tem algum favorito?",
+   "fr": "Aimes-tu lire des essais, comme de l'histoire ou des récits de voyage ? Des favoris ?",
+   "de": "Liest du gern Sachbücher, etwa Geschichte oder Reiseberichte? Hast du Favoriten?"
+  }
+ },
+ {
+  "id": "ib-books-041",
+  "topic": "books",
+  "text": {
+   "en": "What is the best book you have read this year?",
+   "it": "Qual è il libro più bello che hai letto quest'anno?",
+   "es": "¿Cuál es el mejor libro que has leído este año?",
+   "pt": "Qual é o melhor livro que leste este ano?",
+   "pt_BR": "Qual é o melhor livro que você leu este ano?",
+   "fr": "Quel est le meilleur livre que tu aies lu cette année ?",
+   "de": "Welches ist das beste Buch, das du dieses Jahr gelesen hast?"
+  }
+ },
+ {
+  "id": "ib-books-042",
+  "topic": "books",
+  "text": {
+   "en": "If you could instantly speak one more language, which book would you read in the original?",
+   "it": "Se potessi parlare all'istante un'altra lingua, quale libro leggeresti in originale?",
+   "es": "Si pudieras hablar otro idioma al instante, ¿qué libro leerías en versión original?",
+   "pt": "Se pudesses falar mais uma língua de imediato, que livro lerias no original?",
+   "pt_BR": "Se você pudesse falar mais um idioma instantaneamente, qual livro leria no original?",
+   "fr": "Si tu pouvais parler une langue de plus instantanément, quel livre lirais-tu en version originale ?",
+   "de": "Wenn du sofort eine weitere Sprache sprechen könntest, welches Buch würdest du im Original lesen?"
+  }
+ },
+ {
+  "id": "ib-books-043",
+  "topic": "books",
+  "text": {
+   "en": "How did you become a reader? Was it a person, a place or a single book?",
+   "it": "Come sei diventato un lettore? È stata una persona, un luogo o un solo libro?",
+   "es": "¿Cómo te hiciste lector? ¿Fue una persona, un lugar o un solo libro?",
+   "pt": "Como te tornaste leitor? Foi uma pessoa, um lugar ou um único livro?",
+   "pt_BR": "Como você se tornou leitor? Foi uma pessoa, um lugar ou um único livro?",
+   "fr": "Comment es-tu devenu lecteur ? Une personne, un lieu ou un seul livre ?",
+   "de": "Wie bist du zum Leser geworden? Durch einen Menschen, einen Ort oder ein einziges Buch?"
+  }
+ },
+ {
+  "id": "ib-books-044",
+  "topic": "books",
+  "text": {
+   "en": "Which book should I pick up if I want to practice reading in your language?",
+   "it": "Quale libro dovrei prendere se voglio esercitarmi a leggere nella tua lingua?",
+   "es": "¿Qué libro debería elegir si quiero practicar la lectura en tu idioma?",
+   "pt": "Que livro devo escolher se quiser praticar a leitura na tua língua?",
+   "pt_BR": "Que livro devo escolher se quiser praticar leitura no seu idioma?",
+   "fr": "Quel livre devrais-je choisir pour m'entraîner à lire dans ta langue ?",
+   "de": "Welches Buch sollte ich nehmen, wenn ich in deiner Sprache lesen üben möchte?"
+  }
+ },
+ {
+  "id": "ib-books-045",
+  "topic": "books",
+  "text": {
+   "en": "Do you remember a book that kept you up way too late at night?",
+   "it": "Ricordi un libro che ti ha tenuto sveglio fino a tardi?",
+   "es": "¿Recuerdas algún libro que te mantuvo despierto hasta muy tarde?",
+   "pt": "Lembras-te de algum livro que te manteve acordado até demasiado tarde?",
+   "pt_BR": "Você se lembra de algum livro que o deixou acordado até muito tarde?",
+   "fr": "Te souviens-tu d'un livre qui t'a fait veiller beaucoup trop tard ?",
+   "de": "Erinnerst du dich an ein Buch, das dich viel zu lange wach gehalten hat?"
+  }
+ },
+ {
+  "id": "ib-books-046",
+  "topic": "books",
+  "text": {
+   "en": "What is a book with a great ending, and one with an ending that disappointed you?",
+   "it": "Qual è un libro con un finale bellissimo e uno con un finale che ti ha deluso?",
+   "es": "¿Cuál es un libro con un gran final y otro cuyo final te decepcionó?",
+   "pt": "Qual é um livro com um final fantástico e outro com um final que te desiludiu?",
+   "pt_BR": "Qual é um livro com um final ótimo e outro com um final que decepcionou você?",
+   "fr": "Quel livre a une superbe fin, et lequel t'a déçu par sa fin ?",
+   "de": "Welches Buch hat ein tolles Ende, und bei welchem warst du vom Schluss enttäuscht?"
+  }
+ },
+ {
+  "id": "ib-books-047",
+  "topic": "books",
+  "text": {
+   "en": "Who in your life first put a book in your hands?",
+   "it": "Chi nella tua vita ti ha messo per primo un libro tra le mani?",
+   "es": "¿Quién fue la primera persona que te puso un libro en las manos?",
+   "pt": "Quem foi a primeira pessoa que te pôs um livro nas mãos?",
+   "pt_BR": "Quem foi a primeira pessoa que colocou um livro nas suas mãos?",
+   "fr": "Qui t'a mis un livre entre les mains pour la première fois ?",
+   "de": "Wer hat dir zum ersten Mal ein Buch in die Hand gedrückt?"
+  }
+ },
+ {
+  "id": "ib-books-048",
+  "topic": "books",
+  "text": {
+   "en": "Is there a bestselling book in your country right now that everyone is talking about?",
+   "it": "C'è un bestseller nel tuo paese di cui parlano tutti in questo momento?",
+   "es": "¿Hay ahora un superventas en tu país del que hable todo el mundo?",
+   "pt": "Há neste momento algum best-seller no teu país de que toda a gente fale?",
+   "pt_BR": "Existe algum best-seller no seu país de que todo mundo está falando agora?",
+   "fr": "Y a-t-il un best-seller dans ton pays dont tout le monde parle en ce moment ?",
+   "de": "Gibt es in deinem Land gerade einen Bestseller, über den alle sprechen?"
+  }
+ },
+ {
+  "id": "ib-books-049",
+  "topic": "books",
+  "text": {
+   "en": "What kind of stories do you find yourself reading again and again: mysteries, adventures, history?",
+   "it": "Che tipo di storie rileggi sempre: gialli, avventure, storia?",
+   "es": "¿Qué tipo de historias acabas leyendo una y otra vez: misterio, aventuras, historia?",
+   "pt": "Que tipo de histórias acabas por ler vezes sem conta: policiais, aventuras, história?",
+   "pt_BR": "Que tipo de história você acaba lendo sempre: mistério, aventura, história?",
+   "fr": "Quel genre d'histoires lis-tu sans cesse : polars, aventures, histoire ?",
+   "de": "Welche Art von Geschichten liest du immer wieder: Krimis, Abenteuer, Geschichte?"
+  }
+ },
+ {
+  "id": "ib-books-050",
+  "topic": "books",
+  "text": {
+   "en": "What is a short book or story you think anyone could enjoy in one sitting?",
+   "it": "Qual è un libro o racconto breve che secondo te chiunque potrebbe gustarsi in una sola seduta?",
+   "es": "¿Qué libro o relato corto crees que cualquiera podría disfrutar de una sentada?",
+   "pt": "Qual é um livro ou conto curto que achas que qualquer pessoa poderia apreciar de uma assentada?",
+   "pt_BR": "Qual é um livro ou conto curto que você acha que qualquer pessoa curtiria de uma só vez?",
+   "fr": "Quel livre ou quelle nouvelle courte pourrait, selon toi, plaire à tout le monde en une seule séance ?",
+   "de": "Welches kurze Buch oder welche Kurzgeschichte könnte deiner Meinung nach jeder in einem Rutsch genießen?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-001",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What sport or workout do you enjoy most, and how did you get into it?",
+   "it": "Quale sport o allenamento ti piace di più, e come hai iniziato?",
+   "es": "¿Qué deporte o entrenamiento disfrutas más y cómo empezaste?",
+   "pt": "De que desporto ou treino gostas mais e como começaste?",
+   "pt_BR": "De qual esporte ou treino você mais gosta e como começou?",
+   "fr": "Quel sport ou quel entraînement préfères-tu, et comment t'y es-tu mis ?",
+   "de": "Welchen Sport oder welches Training magst du am liebsten, und wie bist du dazu gekommen?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-002",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What is the most popular sport in your country, and do you follow it?",
+   "it": "Qual è lo sport più popolare nel tuo paese, e lo segui?",
+   "es": "¿Cuál es el deporte más popular en tu país y lo sigues?",
+   "pt": "Qual é o desporto mais popular no teu país e acompanhas?",
+   "pt_BR": "Qual é o esporte mais popular no seu país e você acompanha?",
+   "fr": "Quel est le sport le plus populaire dans ton pays, et le suis-tu ?",
+   "de": "Was ist die beliebteste Sportart in deinem Land, und verfolgst du sie?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-003",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Do you prefer exercising alone, with a friend, or in a group?",
+   "it": "Preferisci allenarti da solo, con un amico o in gruppo?",
+   "es": "¿Prefieres entrenar solo, con un amigo o en grupo?",
+   "pt": "Preferes treinar sozinho, com um amigo ou em grupo?",
+   "pt_BR": "Você prefere treinar sozinho, com um amigo ou em grupo?",
+   "fr": "Tu préfères t'entraîner seul, avec un ami ou en groupe ?",
+   "de": "Trainierst du lieber allein, mit einem Freund oder in der Gruppe?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-004",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What is a traditional sport or game from your region that visitors should try?",
+   "it": "Qual è uno sport o gioco tradizionale della tua regione che i visitatori dovrebbero provare?",
+   "es": "¿Qué deporte o juego tradicional de tu región deberían probar los visitantes?",
+   "pt": "Qual é um desporto ou jogo tradicional da tua região que os visitantes deviam experimentar?",
+   "pt_BR": "Qual é um esporte ou jogo tradicional da sua região que os visitantes deveriam experimentar?",
+   "fr": "Quel sport ou jeu traditionnel de ta région les visiteurs devraient-ils essayer ?",
+   "de": "Welchen traditionellen Sport oder welches Spiel aus deiner Region sollten Besucher ausprobieren?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-005",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Are you a morning workout person or an evening one?",
+   "it": "Sei uno da allenamento al mattino o alla sera?",
+   "es": "¿Eres de entrenar por la mañana o por la tarde-noche?",
+   "pt": "És de treinar de manhã ou ao fim do dia?",
+   "pt_BR": "Você é de treinar de manhã ou à noite?",
+   "fr": "Tu es plutôt entraînement du matin ou du soir ?",
+   "de": "Trainierst du eher morgens oder abends?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-006",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What is the best sporting event you have ever watched or taken part in?",
+   "it": "Qual è il miglior evento sportivo a cui hai assistito o partecipato?",
+   "es": "¿Cuál es el mejor evento deportivo que has visto o en el que has participado?",
+   "pt": "Qual foi o melhor evento desportivo a que assististe ou em que participaste?",
+   "pt_BR": "Qual foi o melhor evento esportivo a que você assistiu ou de que participou?",
+   "fr": "Quel est le meilleur événement sportif que tu aies vu ou auquel tu aies participé ?",
+   "de": "Welches ist das beste Sportereignis, das du je gesehen oder bei dem du mitgemacht hast?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-007",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Which team do you support, and what is the story behind it?",
+   "it": "Per quale squadra tifi, e qual è la storia dietro questa scelta?",
+   "es": "¿De qué equipo eres y cuál es la historia detrás de esa elección?",
+   "pt": "De que equipa és adepto e qual é a história por trás disso?",
+   "pt_BR": "Para qual time você torce e qual é a história por trás disso?",
+   "fr": "Quelle équipe supportes-tu, et quelle est l'histoire derrière ce choix ?",
+   "de": "Welche Mannschaft unterstützt du, und was ist die Geschichte dahinter?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-008",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Have you ever tried a sport that turned out to be much harder than you expected?",
+   "it": "Hai mai provato uno sport che si è rivelato molto più difficile del previsto?",
+   "es": "¿Has probado alguna vez un deporte que resultó ser mucho más difícil de lo que esperabas?",
+   "pt": "Já experimentaste algum desporto que se revelou muito mais difícil do que esperavas?",
+   "pt_BR": "Você já experimentou um esporte que se mostrou bem mais difícil do que esperava?",
+   "fr": "As-tu déjà essayé un sport bien plus difficile que prévu ?",
+   "de": "Hast du schon mal eine Sportart ausprobiert, die viel schwerer war als gedacht?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-009",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What is your favorite way to stay active when the weather is bad?",
+   "it": "Qual è il tuo modo preferito per restare in movimento quando il tempo è brutto?",
+   "es": "¿Cuál es tu forma favorita de mantenerte activo cuando hace mal tiempo?",
+   "pt": "Qual é a tua maneira preferida de te manteres ativo quando o tempo está mau?",
+   "pt_BR": "Qual é sua forma preferida de se manter ativo quando o tempo está ruim?",
+   "fr": "Quelle est ta façon préférée de rester actif quand il fait mauvais ?",
+   "de": "Wie bleibst du am liebsten in Bewegung, wenn das Wetter schlecht ist?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-010",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Is there a beautiful place in your area for running, cycling or walking?",
+   "it": "C'è un bel posto dalle tue parti per correre, andare in bici o camminare?",
+   "es": "¿Hay un lugar bonito en tu zona para correr, ir en bici o caminar?",
+   "pt": "Há um sítio bonito na tua zona para correr, andar de bicicleta ou caminhar?",
+   "pt_BR": "Existe um lugar bonito na sua região para correr, pedalar ou caminhar?",
+   "fr": "Y a-t-il un bel endroit près de chez toi pour courir, faire du vélo ou marcher ?",
+   "de": "Gibt es bei dir in der Nähe einen schönen Ort zum Laufen, Radfahren oder Spazieren?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-011",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What sport did you play as a kid, and do you still play it?",
+   "it": "Che sport facevi da bambino, e lo pratichi ancora?",
+   "es": "¿Qué deporte practicabas de niño y todavía lo practicas?",
+   "pt": "Que desporto praticavas em criança e ainda o praticas?",
+   "pt_BR": "Que esporte você praticava quando criança e ainda pratica?",
+   "fr": "Quel sport pratiquais-tu enfant, et le pratiques-tu encore ?",
+   "de": "Welchen Sport hast du als Kind gemacht, und machst du ihn noch?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-012",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Do you have a fitness goal you are working toward right now?",
+   "it": "Hai un obiettivo di fitness a cui stai lavorando adesso?",
+   "es": "¿Tienes algún objetivo de forma física en el que estés trabajando ahora?",
+   "pt": "Tens algum objetivo de condição física em que estejas a trabalhar agora?",
+   "pt_BR": "Você tem alguma meta de condicionamento físico em que está trabalhando agora?",
+   "fr": "As-tu un objectif de forme physique sur lequel tu travailles en ce moment ?",
+   "de": "Hast du gerade ein Fitnessziel, auf das du hinarbeitest?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-013",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What is the funniest or most memorable thing that has happened to you during a game or race?",
+   "it": "Qual è la cosa più divertente o memorabile che ti è successa durante una partita o una gara?",
+   "es": "¿Qué es lo más divertido o memorable que te ha pasado durante un partido o una carrera?",
+   "pt": "Qual foi a coisa mais engraçada ou memorável que te aconteceu durante um jogo ou uma corrida?",
+   "pt_BR": "Qual foi a coisa mais engraçada ou memorável que aconteceu com você durante um jogo ou uma corrida?",
+   "fr": "Quelle est la chose la plus drôle ou la plus marquante qui te soit arrivée pendant un match ou une course ?",
+   "de": "Was ist das Lustigste oder Unvergesslichste, das dir bei einem Spiel oder Rennen passiert ist?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-014",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Which athlete from your country are people most proud of?",
+   "it": "Di quale atleta del tuo paese le persone vanno più fiere?",
+   "es": "¿De qué deportista de tu país está más orgullosa la gente?",
+   "pt": "De que atleta do teu país as pessoas mais se orgulham?",
+   "pt_BR": "De qual atleta do seu país as pessoas mais se orgulham?",
+   "fr": "De quel sportif de ton pays les gens sont-ils les plus fiers ?",
+   "de": "Auf welchen Sportler aus deinem Land sind die Leute besonders stolz?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-015",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Have you ever run, cycled or swum in an organized event?",
+   "it": "Hai mai partecipato a una corsa, una gara in bici o a nuoto organizzata?",
+   "es": "¿Has participado alguna vez en una carrera, ruta ciclista o prueba de natación organizada?",
+   "pt": "Já participaste numa corrida, prova de ciclismo ou de natação organizada?",
+   "pt_BR": "Você já participou de uma corrida, prova de ciclismo ou natação organizada?",
+   "fr": "As-tu déjà participé à une course, une sortie à vélo ou une épreuve de natation organisée ?",
+   "de": "Hast du schon mal an einem organisierten Lauf, einer Radtour oder einem Schwimmwettbewerb teilgenommen?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-016",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What do you listen to while you work out: music, podcasts, or nothing at all?",
+   "it": "Cosa ascolti mentre ti alleni: musica, podcast o niente?",
+   "es": "¿Qué escuchas mientras entrenas: música, pódcasts o nada?",
+   "pt": "O que ouves enquanto treinas: música, podcasts ou nada?",
+   "pt_BR": "O que você escuta enquanto treina: música, podcasts ou nada?",
+   "fr": "Qu'écoutes-tu pendant l'entraînement : de la musique, des podcasts, ou rien ?",
+   "de": "Was hörst du beim Training: Musik, Podcasts oder gar nichts?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-017",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "If you could try any sport for a day, which one would you pick?",
+   "it": "Se potessi provare qualsiasi sport per un giorno, quale sceglieresti?",
+   "es": "Si pudieras probar cualquier deporte durante un día, ¿cuál elegirías?",
+   "pt": "Se pudesses experimentar qualquer desporto durante um dia, qual escolherias?",
+   "pt_BR": "Se você pudesse experimentar qualquer esporte por um dia, qual escolheria?",
+   "fr": "Si tu pouvais essayer n'importe quel sport pendant une journée, lequel choisirais-tu ?",
+   "de": "Wenn du einen Tag lang jede Sportart ausprobieren könntest, welche würdest du wählen?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-018",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "How do people in your city usually stay fit: gyms, parks, the beach, the mountains?",
+   "it": "Come si tengono in forma di solito le persone nella tua città: palestre, parchi, mare, montagna?",
+   "es": "¿Cómo suele mantenerse en forma la gente de tu ciudad: gimnasios, parques, playa, montaña?",
+   "pt": "Como é que as pessoas da tua cidade costumam manter a forma: ginásios, parques, praia, montanha?",
+   "pt_BR": "Como as pessoas da sua cidade costumam se manter em forma: academias, parques, praia, montanha?",
+   "fr": "Comment les gens de ta ville se maintiennent-ils en forme : salles de sport, parcs, plage, montagne ?",
+   "de": "Wie halten sich die Leute in deiner Stadt fit: Fitnessstudios, Parks, Strand, Berge?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-019",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What is the best advice anyone has given you about training or staying motivated?",
+   "it": "Qual è il miglior consiglio che ti hanno dato su allenamento o motivazione?",
+   "es": "¿Cuál es el mejor consejo que te han dado sobre entrenar o mantener la motivación?",
+   "pt": "Qual é o melhor conselho que já te deram sobre treino ou motivação?",
+   "pt_BR": "Qual é o melhor conselho que já lhe deram sobre treino ou motivação?",
+   "fr": "Quel est le meilleur conseil qu'on t'ait donné sur l'entraînement ou la motivation ?",
+   "de": "Was ist der beste Rat, den man dir zum Training oder zur Motivation gegeben hat?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-020",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Do you watch sports on TV, or do you prefer to go to the stadium?",
+   "it": "Guardi lo sport in TV o preferisci andare allo stadio?",
+   "es": "¿Ves el deporte por televisión o prefieres ir al estadio?",
+   "pt": "Vês desporto na televisão ou preferes ir ao estádio?",
+   "pt_BR": "Você assiste esporte na TV ou prefere ir ao estádio?",
+   "fr": "Tu regardes le sport à la télé, ou préfères-tu aller au stade ?",
+   "de": "Schaust du Sport lieber im Fernsehen oder gehst du lieber ins Stadion?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-021",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What is a stretch or exercise you secretly love doing?",
+   "it": "Qual è uno stretching o un esercizio che ami fare in segreto?",
+   "es": "¿Qué estiramiento o ejercicio te encanta hacer en secreto?",
+   "pt": "Qual é o alongamento ou exercício que adoras fazer em segredo?",
+   "pt_BR": "Qual é o alongamento ou exercício que você adora fazer em segredo?",
+   "fr": "Quel étirement ou exercice adores-tu faire en secret ?",
+   "de": "Welche Dehnübung oder welche Übung machst du heimlich unglaublich gern?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-022",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Have you ever hiked or climbed somewhere that took your breath away?",
+   "it": "Hai mai fatto un'escursione o una scalata che ti ha tolto il fiato?",
+   "es": "¿Has hecho alguna vez una caminata o escalada que te dejó sin aliento?",
+   "pt": "Já fizeste alguma caminhada ou escalada que te deixou sem fôlego?",
+   "pt_BR": "Você já fez alguma trilha ou escalada que tirou o seu fôlego?",
+   "fr": "As-tu déjà fait une randonnée ou une escalade qui t'a coupé le souffle ?",
+   "de": "Bist du schon mal irgendwo gewandert oder geklettert, wo dir der Atem stockte?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-023",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What sport would you like to learn but have not had the chance yet?",
+   "it": "Quale sport vorresti imparare ma non ne hai ancora avuto l'occasione?",
+   "es": "¿Qué deporte te gustaría aprender pero aún no has tenido la oportunidad?",
+   "pt": "Que desporto gostarias de aprender mas ainda não tiveste oportunidade?",
+   "pt_BR": "Que esporte você gostaria de aprender, mas ainda não teve oportunidade?",
+   "fr": "Quel sport aimerais-tu apprendre sans en avoir encore eu l'occasion ?",
+   "de": "Welche Sportart würdest du gern lernen, hattest aber noch keine Gelegenheit dazu?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-024",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "How do you spend a typical Sunday: active, relaxed, or a bit of both?",
+   "it": "Come passi una domenica tipica: attivo, rilassato o un po' di entrambi?",
+   "es": "¿Cómo pasas un domingo típico: activo, relajado o un poco de ambas cosas?",
+   "pt": "Como passas um domingo típico: ativo, descansado ou um pouco de ambos?",
+   "pt_BR": "Como você passa um domingo típico: ativo, relaxado ou um pouco dos dois?",
+   "fr": "Comment passes-tu un dimanche type : actif, tranquille, ou un peu des deux ?",
+   "de": "Wie verbringst du einen typischen Sonntag: aktiv, entspannt oder ein bisschen von beidem?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-025",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What is the most important sporting rivalry in your country, and how do people react to it?",
+   "it": "Qual è la rivalità sportiva più importante nel tuo paese, e come la vivono le persone?",
+   "es": "¿Cuál es la rivalidad deportiva más importante de tu país y cómo la vive la gente?",
+   "pt": "Qual é a rivalidade desportiva mais importante no teu país e como é que as pessoas a vivem?",
+   "pt_BR": "Qual é a rivalidade esportiva mais importante no seu país e como as pessoas a vivem?",
+   "fr": "Quelle est la plus grande rivalité sportive de ton pays, et comment les gens la vivent-ils ?",
+   "de": "Welche ist die wichtigste sportliche Rivalität in deinem Land, und wie gehen die Leute damit um?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-026",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Do you stretch, warm up, or just jump right in?",
+   "it": "Fai stretching, riscaldamento o parti subito?",
+   "es": "¿Estiras, calientas o te lanzas directamente?",
+   "pt": "Fazes alongamentos, aquecimento ou começas logo a sério?",
+   "pt_BR": "Você alonga, aquece ou já vai direto ao treino?",
+   "fr": "Tu t'étires, tu t'échauffes, ou tu te lances directement ?",
+   "de": "Dehnst du dich, wärmst du dich auf, oder legst du einfach los?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-027",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What healthy habit are you proudest of keeping up?",
+   "it": "Di quale abitudine sana vai più fiero per averla mantenuta?",
+   "es": "¿De qué hábito saludable estás más orgulloso por mantenerlo?",
+   "pt": "De que hábito saudável mais te orgulhas por o teres mantido?",
+   "pt_BR": "De qual hábito saudável você mais se orgulha por ter mantido?",
+   "fr": "De quelle bonne habitude es-tu le plus fier de l'avoir gardée ?",
+   "de": "Auf welche gesunde Gewohnheit, die du durchhältst, bist du am stolzesten?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-028",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Is there a local sports club or community group you would recommend to newcomers?",
+   "it": "C'è un club sportivo o gruppo locale che consiglieresti a chi arriva da fuori?",
+   "es": "¿Hay algún club deportivo o grupo local que recomendarías a los recién llegados?",
+   "pt": "Há algum clube desportivo ou grupo local que recomendarias a quem acabou de chegar?",
+   "pt_BR": "Existe algum clube esportivo ou grupo local que você recomendaria a quem acabou de chegar?",
+   "fr": "Y a-t-il un club de sport ou un groupe local que tu recommanderais aux nouveaux venus ?",
+   "de": "Gibt es einen Sportverein oder eine lokale Gruppe, die du Neuankömmlingen empfehlen würdest?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-029",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What is the longest distance you have ever walked, run or cycled in one go?",
+   "it": "Qual è la distanza più lunga che hai percorso a piedi, di corsa o in bici in un colpo solo?",
+   "es": "¿Cuál es la distancia más larga que has caminado, corrido o pedaleado de una vez?",
+   "pt": "Qual é a maior distância que já percorreste a pé, a correr ou de bicicleta de uma só vez?",
+   "pt_BR": "Qual é a maior distância que você já percorreu a pé, correndo ou de bicicleta de uma vez só?",
+   "fr": "Quelle est la plus longue distance que tu aies parcourue à pied, en courant ou à vélo d'une seule traite ?",
+   "de": "Was ist die längste Strecke, die du je auf einmal gelaufen, gerannt oder geradelt bist?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-030",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Do you follow any sport with a big international event, like the Olympics or a World Cup?",
+   "it": "Segui qualche sport con un grande evento internazionale, come le Olimpiadi o un Mondiale?",
+   "es": "¿Sigues algún deporte con un gran evento internacional, como los Juegos Olímpicos o un Mundial?",
+   "pt": "Acompanhas algum desporto com um grande evento internacional, como os Jogos Olímpicos ou um Mundial?",
+   "pt_BR": "Você acompanha algum esporte com um grande evento internacional, como as Olimpíadas ou uma Copa do Mundo?",
+   "fr": "Suis-tu un sport avec un grand événement international, comme les Jeux olympiques ou une Coupe du monde ?",
+   "de": "Verfolgst du eine Sportart mit einem großen internationalen Turnier, etwa Olympia oder eine Weltmeisterschaft?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-031",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What is the hardest workout you have ever done, and would you do it again?",
+   "it": "Qual è l'allenamento più duro che tu abbia mai fatto, e lo rifaresti?",
+   "es": "¿Cuál es el entrenamiento más duro que has hecho y lo repetirías?",
+   "pt": "Qual foi o treino mais duro que já fizeste e repetirias?",
+   "pt_BR": "Qual foi o treino mais pesado que você já fez e repetiria?",
+   "fr": "Quel est l'entraînement le plus dur que tu aies fait, et le referais-tu ?",
+   "de": "Was war das härteste Training, das du je gemacht hast, und würdest du es wiederholen?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-032",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Yoga, swimming, football, dancing: what makes you feel most alive?",
+   "it": "Yoga, nuoto, calcio, danza: cosa ti fa sentire più vivo?",
+   "es": "Yoga, natación, fútbol, baile: ¿qué te hace sentir más vivo?",
+   "pt": "Ioga, natação, futebol, dança: o que te faz sentir mais vivo?",
+   "pt_BR": "Ioga, natação, futebol, dança: o que faz você se sentir mais vivo?",
+   "fr": "Yoga, natation, football, danse : qu'est-ce qui te fait te sentir le plus vivant ?",
+   "de": "Yoga, Schwimmen, Fußball, Tanzen: Was gibt dir das Gefühl, am lebendigsten zu sein?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-033",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Did you ever play in a team, and what role did you have?",
+   "it": "Hai mai giocato in una squadra, e che ruolo avevi?",
+   "es": "¿Has jugado alguna vez en un equipo y qué papel tenías?",
+   "pt": "Alguma vez jogaste numa equipa e que posição tinhas?",
+   "pt_BR": "Você já jogou em um time e que posição tinha?",
+   "fr": "As-tu déjà joué dans une équipe, et quel rôle avais-tu ?",
+   "de": "Hast du schon mal in einer Mannschaft gespielt, und welche Rolle hattest du?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-034",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What local dish or snack do people eat after a big game or a long hike?",
+   "it": "Quale piatto o spuntino locale si mangia dopo una grande partita o una lunga escursione?",
+   "es": "¿Qué plato o aperitivo local se come después de un gran partido o una larga caminata?",
+   "pt": "Que prato ou petisco local se come depois de um grande jogo ou de uma longa caminhada?",
+   "pt_BR": "Que prato ou lanche local se come depois de um grande jogo ou de uma longa trilha?",
+   "fr": "Quel plat ou en-cas local mange-t-on après un grand match ou une longue randonnée ?",
+   "de": "Welches Gericht oder welchen Snack isst man bei euch nach einem großen Spiel oder einer langen Wanderung?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-035",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Do you think sports bring people from different countries closer together?",
+   "it": "Pensi che lo sport avvicini le persone di paesi diversi?",
+   "es": "¿Crees que el deporte acerca a personas de distintos países?",
+   "pt": "Achas que o desporto aproxima pessoas de países diferentes?",
+   "pt_BR": "Você acha que o esporte aproxima pessoas de países diferentes?",
+   "fr": "Penses-tu que le sport rapproche les gens de pays différents ?",
+   "de": "Glaubst du, dass Sport Menschen aus verschiedenen Ländern näher zusammenbringt?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-036",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What was the last new activity you tried that got you moving?",
+   "it": "Qual è l'ultima nuova attività che hai provato e che ti ha fatto muovere?",
+   "es": "¿Cuál fue la última actividad nueva que probaste y que te puso en movimiento?",
+   "pt": "Qual foi a última atividade nova que experimentaste e que te pôs a mexer?",
+   "pt_BR": "Qual foi a última atividade nova que você experimentou e que o colocou em movimento?",
+   "fr": "Quelle est la dernière nouvelle activité que tu as essayée et qui t'a fait bouger ?",
+   "de": "Welche neue Aktivität hast du zuletzt ausprobiert, die dich in Bewegung gebracht hat?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-037",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Are you a runner who loves a good route, or someone who prefers the treadmill?",
+   "it": "Sei un runner che ama un bel percorso o uno che preferisce il tapis roulant?",
+   "es": "¿Eres de los que disfrutan de una buena ruta al aire libre o prefieres la cinta de correr?",
+   "pt": "És daqueles pessoas que adoram um bom percurso ou preferes a passadeira?",
+   "pt_BR": "Você é do tipo que ama um bom percurso ao ar livre ou prefere a esteira?",
+   "fr": "Tu es plutôt coureur de beaux parcours en plein air ou adepte du tapis de course ?",
+   "de": "Läufst du lieber draußen auf schönen Strecken oder bist du eher der Laufband-Typ?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-038",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What sports did your grandparents or parents love, and did you inherit any of it?",
+   "it": "Quali sport amavano i tuoi nonni o genitori, e ne hai ereditato qualcosa?",
+   "es": "¿Qué deportes amaban tus abuelos o tus padres y heredaste algo de eso?",
+   "pt": "Que desportos adoravam os teus avós ou pais e herdaste algum deles?",
+   "pt_BR": "Quais esportes seus avós ou pais amavam e você herdou algum deles?",
+   "fr": "Quels sports tes grands-parents ou tes parents adoraient-ils, et en as-tu hérité un peu ?",
+   "de": "Welche Sportarten liebten deine Großeltern oder Eltern, und hast du etwas davon geerbt?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-039",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Which sport is the most fun to watch live, in your opinion?",
+   "it": "Quale sport è il più divertente da guardare dal vivo, secondo te?",
+   "es": "¿Qué deporte es el más divertido de ver en directo, en tu opinión?",
+   "pt": "Que desporto é mais divertido ver ao vivo, na tua opinião?",
+   "pt_BR": "Qual esporte é o mais divertido de assistir ao vivo, na sua opinião?",
+   "fr": "À ton avis, quel sport est le plus amusant à regarder en direct ?",
+   "de": "Welche Sportart macht dir live am meisten Spaß zuzuschauen?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-040",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What do you do to wind down after an intense training session?",
+   "it": "Cosa fai per rilassarti dopo un allenamento intenso?",
+   "es": "¿Qué haces para relajarte después de un entrenamiento intenso?",
+   "pt": "O que fazes para relaxar depois de um treino intenso?",
+   "pt_BR": "O que você faz para relaxar depois de um treino intenso?",
+   "fr": "Que fais-tu pour décompresser après un entraînement intense ?",
+   "de": "Was machst du, um nach einem intensiven Training runterzukommen?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-041",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Have you ever picked up a new sport because of a friend or a trip abroad?",
+   "it": "Hai mai iniziato un nuovo sport grazie a un amico o a un viaggio all'estero?",
+   "es": "¿Has empezado alguna vez un deporte nuevo por un amigo o por un viaje al extranjero?",
+   "pt": "Já começaste um desporto novo por causa de um amigo ou de uma viagem ao estrangeiro?",
+   "pt_BR": "Você já começou um esporte novo por causa de um amigo ou de uma viagem ao exterior?",
+   "fr": "As-tu déjà commencé un nouveau sport grâce à un ami ou à un voyage à l'étranger ?",
+   "de": "Hast du schon mal wegen eines Freundes oder einer Auslandsreise eine neue Sportart angefangen?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-042",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What is the most beautiful sports venue you have ever visited?",
+   "it": "Qual è l'impianto sportivo più bello che tu abbia mai visitato?",
+   "es": "¿Cuál es la instalación deportiva más bonita que has visitado?",
+   "pt": "Qual é o recinto desportivo mais bonito que já visitaste?",
+   "pt_BR": "Qual é o local esportivo mais bonito que você já visitou?",
+   "fr": "Quel est le plus beau lieu sportif que tu aies visité ?",
+   "de": "Welche ist die schönste Sportstätte, die du je besucht hast?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-043",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Do you play any games with friends, like volleyball on the beach or a pickup match in the park?",
+   "it": "Giochi con gli amici, come beach volley o una partitella al parco?",
+   "es": "¿Juegas con amigos, por ejemplo vóley playa o un partidillo en el parque?",
+   "pt": "Jogas com amigos, por exemplo voleibol de praia ou um joguinho no parque?",
+   "pt_BR": "Você joga com amigos, como vôlei de praia ou uma pelada no parque?",
+   "fr": "Joues-tu avec des amis, par exemple au beach-volley ou à un match improvisé au parc ?",
+   "de": "Spielst du mit Freunden, zum Beispiel Beachvolleyball oder ein spontanes Match im Park?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-044",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What small change in your routine has made you feel healthier lately?",
+   "it": "Quale piccolo cambiamento nella tua routine ti ha fatto sentire più in salute ultimamente?",
+   "es": "¿Qué pequeño cambio en tu rutina te ha hecho sentir más sano últimamente?",
+   "pt": "Que pequena mudança na tua rotina te fez sentir mais saudável ultimamente?",
+   "pt_BR": "Que pequena mudança na sua rotina fez você se sentir mais saudável ultimamente?",
+   "fr": "Quel petit changement dans ta routine t'a fait te sentir en meilleure santé récemment ?",
+   "de": "Welche kleine Veränderung in deinem Alltag hat dich zuletzt gesünder fühlen lassen?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-045",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Do you cheer loudly at games, or do you stay calm and just enjoy?",
+   "it": "Fai il tifo a squarciagola alle partite o stai tranquillo e te la godi?",
+   "es": "¿Animas a gritos en los partidos o te mantienes tranquilo y lo disfrutas?",
+   "pt": "Gritas muito nos jogos ou ficas calmo e limitas-te a desfrutar?",
+   "pt_BR": "Você grita bastante nos jogos ou fica tranquilo e só curte?",
+   "fr": "Tu encourages bruyamment pendant les matchs, ou tu restes calme et tu savoures ?",
+   "de": "Feuerst du bei Spielen laut an, oder bleibst du ruhig und genießt einfach?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-046",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What is the best outdoor activity in your region for a first-time visitor?",
+   "it": "Qual è la migliore attività all'aperto nella tua regione per chi la visita per la prima volta?",
+   "es": "¿Cuál es la mejor actividad al aire libre en tu región para un visitante primerizo?",
+   "pt": "Qual é a melhor atividade ao ar livre na tua região para quem a visita pela primeira vez?",
+   "pt_BR": "Qual é a melhor atividade ao ar livre na sua região para quem a visita pela primeira vez?",
+   "fr": "Quelle est la meilleure activité de plein air de ta région pour un visiteur qui vient pour la première fois ?",
+   "de": "Welche Outdoor-Aktivität in deiner Region ist am besten für Erstbesucher?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-047",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "If we met up in your city, which active plan would you suggest, a walk, a swim or a match?",
+   "it": "Se ci incontrassimo nella tua città, quale attività proporresti: una camminata, una nuotata o una partita?",
+   "es": "Si nos viéramos en tu ciudad, ¿qué plan activo propondrías: un paseo, un baño o un partido?",
+   "pt": "Se nos encontrássemos na tua cidade, que plano ativo sugeririas: um passeio, um mergulho ou um jogo?",
+   "pt_BR": "Se nos encontrássemos na sua cidade, que programa ativo você sugeriria: uma caminhada, um mergulho ou um jogo?",
+   "fr": "Si on se retrouvait dans ta ville, quel plan actif proposerais-tu : une balade, une baignade ou un match ?",
+   "de": "Wenn wir uns in deiner Stadt treffen würden, welchen aktiven Plan würdest du vorschlagen: einen Spaziergang, Schwimmen oder ein Spiel?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-048",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Which word or phrase from your favorite sport would be fun to teach me in your language?",
+   "it": "Quale parola o espressione del tuo sport preferito sarebbe divertente insegnarmi nella tua lingua?",
+   "es": "¿Qué palabra o expresión de tu deporte favorito sería divertido enseñarme en tu idioma?",
+   "pt": "Que palavra ou expressão do teu desporto preferido seria divertido ensinares-me na tua língua?",
+   "pt_BR": "Que palavra ou expressão do seu esporte preferido seria divertido me ensinar no seu idioma?",
+   "fr": "Quel mot ou quelle expression de ton sport préféré serait amusant de m'apprendre dans ta langue ?",
+   "de": "Welches Wort oder welche Redewendung aus deinem Lieblingssport könntest du mir in deiner Sprache beibringen?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-049",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "What does a perfect active weekend look like for you?",
+   "it": "Com'è per te un weekend attivo perfetto?",
+   "es": "¿Cómo es para ti un fin de semana activo perfecto?",
+   "pt": "Como é para ti um fim de semana ativo perfeito?",
+   "pt_BR": "Como é para você um fim de semana ativo perfeito?",
+   "fr": "À quoi ressemble ton week-end actif idéal ?",
+   "de": "Wie sieht für dich ein perfektes aktives Wochenende aus?"
+  }
+ },
+ {
+  "id": "ib-sports_fitness-050",
+  "topic": "sports_fitness",
+  "text": {
+   "en": "Which sport do you think is underrated and deserves more fans?",
+   "it": "Quale sport secondo te è sottovalutato e meriterebbe più appassionati?",
+   "es": "¿Qué deporte crees que está infravalorado y merece más aficionados?",
+   "pt": "Que desporto achas que é subvalorizado e merecia mais adeptos?",
+   "pt_BR": "Qual esporte você acha que é subestimado e merecia mais fãs?",
+   "fr": "Quel sport te semble sous-estimé et mériterait plus de fans ?",
+   "de": "Welche Sportart wird deiner Meinung nach unterschätzt und hätte mehr Fans verdient?"
+  }
+ }
+]

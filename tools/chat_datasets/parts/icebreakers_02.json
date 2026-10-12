@@ -1,0 +1,1302 @@
+[
+ {
+  "id": "ib-music-001",
+  "topic": "music",
+  "text": {
+   "en": "Which song never gets old for you, no matter how many times you hear it?",
+   "it": "Quale canzone non ti stanca mai, per quante volte la ascolti?",
+   "es": "¿Qué canción nunca se te hace pesada, por muchas veces que la escuches?",
+   "pt": "Qual é a música que nunca te cansa, por muitas vezes que a ouças?",
+   "pt_BR": "Qual música nunca enjoa pra você, não importa quantas vezes escute?",
+   "fr": "Quelle chanson ne te lasse jamais, même après l'avoir écoutée cent fois ?",
+   "de": "Welches Lied wird für dich nie langweilig, egal wie oft du es hörst?"
+  }
+ },
+ {
+  "id": "ib-music-002",
+  "topic": "music",
+  "text": {
+   "en": "What was the first concert you ever went to?",
+   "it": "Qual è stato il primo concerto a cui sei andato/a?",
+   "es": "¿Cuál fue el primer concierto al que fuiste?",
+   "pt": "Qual foi o primeiro concerto a que foste?",
+   "pt_BR": "Qual foi o primeiro show a que você foi?",
+   "fr": "Quel a été le premier concert auquel tu as assisté ?",
+   "de": "Was war das erste Konzert, auf dem du warst?"
+  }
+ },
+ {
+  "id": "ib-music-003",
+  "topic": "music",
+  "text": {
+   "en": "Which song from your country should everyone in the world know?",
+   "it": "Quale canzone del tuo paese dovrebbero conoscere tutti nel mondo?",
+   "es": "¿Qué canción de tu país debería conocer todo el mundo?",
+   "pt": "Que música do teu país devia ser conhecida em todo o mundo?",
+   "pt_BR": "Que música do seu país todo mundo deveria conhecer?",
+   "fr": "Quelle chanson de ton pays tout le monde devrait-il connaître ?",
+   "de": "Welches Lied aus deinem Land sollte jeder auf der Welt kennen?"
+  }
+ },
+ {
+  "id": "ib-music-004",
+  "topic": "music",
+  "text": {
+   "en": "What music do you put on when you need to focus?",
+   "it": "Che musica metti quando hai bisogno di concentrarti?",
+   "es": "¿Qué música pones cuando necesitas concentrarte?",
+   "pt": "Que música pões quando precisas de te concentrar?",
+   "pt_BR": "Que música você coloca quando precisa se concentrar?",
+   "fr": "Quelle musique mets-tu quand tu as besoin de te concentrer ?",
+   "de": "Welche Musik hörst du, wenn du dich konzentrieren musst?"
+  }
+ },
+ {
+  "id": "ib-music-005",
+  "topic": "music",
+  "text": {
+   "en": "Do you play an instrument, or is there one you'd love to learn?",
+   "it": "Suoni uno strumento, o ce n'è uno che ti piacerebbe imparare?",
+   "es": "¿Tocas algún instrumento o hay alguno que te gustaría aprender?",
+   "pt": "Tocas algum instrumento, ou há algum que gostasses de aprender?",
+   "pt_BR": "Você toca algum instrumento, ou tem algum que gostaria de aprender?",
+   "fr": "Joues-tu d'un instrument, ou y en a-t-il un que tu aimerais apprendre ?",
+   "de": "Spielst du ein Instrument, oder gibt es eines, das du gern lernen würdest?"
+  }
+ },
+ {
+  "id": "ib-music-006",
+  "topic": "music",
+  "text": {
+   "en": "Which song instantly takes you back to your childhood?",
+   "it": "Quale canzone ti riporta subito all'infanzia?",
+   "es": "¿Qué canción te devuelve de golpe a tu infancia?",
+   "pt": "Que música te leva logo de volta à infância?",
+   "pt_BR": "Que música te leva na hora de volta para a infância?",
+   "fr": "Quelle chanson te ramène tout de suite en enfance ?",
+   "de": "Welches Lied versetzt dich sofort zurück in deine Kindheit?"
+  }
+ },
+ {
+  "id": "ib-music-007",
+  "topic": "music",
+  "text": {
+   "en": "Which artist from your country would you recommend I listen to first?",
+   "it": "Quale artista del tuo paese mi consiglieresti di ascoltare per primo?",
+   "es": "¿Qué artista de tu país me recomendarías escuchar primero?",
+   "pt": "Que artista do teu país me recomendarias ouvir primeiro?",
+   "pt_BR": "Que artista do seu país você me recomendaria ouvir primeiro?",
+   "fr": "Quel artiste de ton pays me conseillerais-tu d'écouter en premier ?",
+   "de": "Welche Künstlerin oder welchen Künstler aus deinem Land sollte ich zuerst hören?"
+  }
+ },
+ {
+  "id": "ib-music-008",
+  "topic": "music",
+  "text": {
+   "en": "What's the best song to sing along to in the car?",
+   "it": "Qual è la canzone migliore da cantare a squarciagola in macchina?",
+   "es": "¿Cuál es la mejor canción para cantar a todo pulmón en el coche?",
+   "pt": "Qual é a melhor música para cantar a plenos pulmões no carro?",
+   "pt_BR": "Qual é a melhor música para cantar junto no carro?",
+   "fr": "Quelle est la meilleure chanson à chanter à tue-tête en voiture ?",
+   "de": "Welches Lied singt man am besten im Auto lauthals mit?"
+  }
+ },
+ {
+  "id": "ib-music-009",
+  "topic": "music",
+  "text": {
+   "en": "Is there a traditional music style from your region that you love?",
+   "it": "C'è uno stile di musica tradizionale della tua regione che ami?",
+   "es": "¿Hay algún estilo de música tradicional de tu región que te encante?",
+   "pt": "Há algum estilo de música tradicional da tua região de que gostes muito?",
+   "pt_BR": "Existe algum estilo de música tradicional da sua região de que você goste muito?",
+   "fr": "Y a-t-il un style de musique traditionnelle de ta région que tu adores ?",
+   "de": "Gibt es einen traditionellen Musikstil aus deiner Region, den du liebst?"
+  }
+ },
+ {
+  "id": "ib-music-010",
+  "topic": "music",
+  "text": {
+   "en": "Which song are you listening to on repeat this week?",
+   "it": "Quale canzone stai ascoltando in loop questa settimana?",
+   "es": "¿Qué canción estás escuchando en bucle esta semana?",
+   "pt": "Que música estás a ouvir em loop esta semana?",
+   "pt_BR": "Que música você está ouvindo em loop essa semana?",
+   "fr": "Quelle chanson écoutes-tu en boucle cette semaine ?",
+   "de": "Welches Lied hörst du diese Woche in Dauerschleife?"
+  }
+ },
+ {
+  "id": "ib-music-011",
+  "topic": "music",
+  "text": {
+   "en": "What music did your family play at home when you were growing up?",
+   "it": "Che musica si ascoltava a casa tua quando eri piccolo/a?",
+   "es": "¿Qué música se escuchaba en tu casa cuando eras pequeño/a?",
+   "pt": "Que música se ouvia lá em casa quando eras pequeno/a?",
+   "pt_BR": "Que música tocava na sua casa quando você era criança?",
+   "fr": "Quelle musique écoutait-on chez toi quand tu étais petit(e) ?",
+   "de": "Welche Musik lief bei euch zu Hause, als du aufgewachsen bist?"
+  }
+ },
+ {
+  "id": "ib-music-012",
+  "topic": "music",
+  "text": {
+   "en": "If you could see any artist or band live, who would it be?",
+   "it": "Se potessi vedere dal vivo qualsiasi artista o gruppo, chi sceglieresti?",
+   "es": "Si pudieras ver en directo a cualquier artista o grupo, ¿a quién elegirías?",
+   "pt": "Se pudesses ver ao vivo qualquer artista ou banda, quem escolhias?",
+   "pt_BR": "Se você pudesse ver ao vivo qualquer artista ou banda, quem escolheria?",
+   "fr": "Si tu pouvais voir n'importe quel artiste ou groupe en concert, lequel choisirais-tu ?",
+   "de": "Wenn du irgendeinen Künstler oder eine Band live sehen könntest, wen würdest du wählen?"
+  }
+ },
+ {
+  "id": "ib-music-013",
+  "topic": "music",
+  "text": {
+   "en": "Is there a song in a language you don't speak that you still love?",
+   "it": "C'è una canzone in una lingua che non parli ma che ami lo stesso?",
+   "es": "¿Hay alguna canción en un idioma que no hablas y que aun así te encanta?",
+   "pt": "Há alguma música numa língua que não falas e de que gostas mesmo assim?",
+   "pt_BR": "Tem alguma música em uma língua que você não fala e que mesmo assim adora?",
+   "fr": "Y a-t-il une chanson dans une langue que tu ne parles pas mais que tu adores quand même ?",
+   "de": "Gibt es ein Lied in einer Sprache, die du nicht sprichst, das du trotzdem liebst?"
+  }
+ },
+ {
+  "id": "ib-music-014",
+  "topic": "music",
+  "text": {
+   "en": "Which album do you think everyone should hear from start to finish?",
+   "it": "Quale album secondo te tutti dovrebbero ascoltare dall'inizio alla fine?",
+   "es": "¿Qué álbum crees que todo el mundo debería escuchar de principio a fin?",
+   "pt": "Que álbum achas que toda a gente devia ouvir do princípio ao fim?",
+   "pt_BR": "Que álbum você acha que todo mundo deveria ouvir do começo ao fim?",
+   "fr": "Quel album tout le monde devrait-il écouter du début à la fin, selon toi ?",
+   "de": "Welches Album sollte man deiner Meinung nach von Anfang bis Ende hören?"
+  }
+ },
+ {
+  "id": "ib-music-015",
+  "topic": "music",
+  "text": {
+   "en": "What song always lifts your mood?",
+   "it": "Quale canzone ti tira sempre su di morale?",
+   "es": "¿Qué canción te levanta siempre el ánimo?",
+   "pt": "Que música te anima sempre?",
+   "pt_BR": "Que música sempre melhora o seu humor?",
+   "fr": "Quelle chanson te remonte toujours le moral ?",
+   "de": "Welches Lied hebt immer deine Stimmung?"
+  }
+ },
+ {
+  "id": "ib-music-016",
+  "topic": "music",
+  "text": {
+   "en": "What's the most memorable live performance you've ever seen?",
+   "it": "Qual è l'esibizione dal vivo più memorabile che tu abbia mai visto?",
+   "es": "¿Cuál es la actuación en directo más memorable que has visto?",
+   "pt": "Qual foi a atuação ao vivo mais memorável a que já assististe?",
+   "pt_BR": "Qual foi a apresentação ao vivo mais memorável a que você já assistiu?",
+   "fr": "Quelle est la prestation en live la plus mémorable que tu aies vue ?",
+   "de": "Welcher Live-Auftritt ist dir am stärksten in Erinnerung geblieben?"
+  }
+ },
+ {
+  "id": "ib-music-017",
+  "topic": "music",
+  "text": {
+   "en": "Do you prefer listening to music alone with headphones or out loud with others?",
+   "it": "Preferisci ascoltare musica da solo/a con le cuffie o ad alto volume con altre persone?",
+   "es": "¿Prefieres escuchar música a solas con auriculares o en voz alta con otras personas?",
+   "pt": "Preferes ouvir música sozinho/a com auscultadores ou em voz alta com outras pessoas?",
+   "pt_BR": "Você prefere ouvir música sozinho/a com fones de ouvido ou em voz alta com outras pessoas?",
+   "fr": "Tu préfères écouter de la musique seul(e) au casque ou à fond avec d'autres ?",
+   "de": "Hörst du Musik lieber allein mit Kopfhörern oder laut mit anderen zusammen?"
+  }
+ },
+ {
+  "id": "ib-music-018",
+  "topic": "music",
+  "text": {
+   "en": "Has a song ever taught you a few words in another language?",
+   "it": "Una canzone ti ha mai insegnato qualche parola in un'altra lingua?",
+   "es": "¿Alguna canción te ha enseñado alguna vez unas palabras en otro idioma?",
+   "pt": "Alguma música já te ensinou algumas palavras noutra língua?",
+   "pt_BR": "Alguma música já te ensinou algumas palavras em outra língua?",
+   "fr": "Une chanson t'a-t-elle déjà appris quelques mots dans une autre langue ?",
+   "de": "Hat dir ein Lied schon mal ein paar Wörter in einer anderen Sprache beigebracht?"
+  }
+ },
+ {
+  "id": "ib-music-019",
+  "topic": "music",
+  "text": {
+   "en": "What do you listen to while cooking or cleaning?",
+   "it": "Cosa ascolti mentre cucini o fai le pulizie?",
+   "es": "¿Qué escuchas mientras cocinas o limpias?",
+   "pt": "O que ouves enquanto cozinhas ou limpas a casa?",
+   "pt_BR": "O que você escuta enquanto cozinha ou faz faxina?",
+   "fr": "Qu'est-ce que tu écoutes quand tu cuisines ou fais le ménage ?",
+   "de": "Was hörst du beim Kochen oder Putzen?"
+  }
+ },
+ {
+  "id": "ib-music-020",
+  "topic": "music",
+  "text": {
+   "en": "Which music genre surprised you by becoming a favourite?",
+   "it": "Quale genere musicale ti ha sorpreso diventando uno dei tuoi preferiti?",
+   "es": "¿Qué género musical te sorprendió al convertirse en uno de tus favoritos?",
+   "pt": "Que género musical te surpreendeu ao tornar-se um dos teus preferidos?",
+   "pt_BR": "Que gênero musical te surpreendeu ao virar um dos seus preferidos?",
+   "fr": "Quel genre musical t'a surpris en devenant l'un de tes préférés ?",
+   "de": "Welches Musikgenre hat dich überrascht, weil es zu einem deiner Favoriten wurde?"
+  }
+ },
+ {
+  "id": "ib-music-021",
+  "topic": "music",
+  "text": {
+   "en": "Is there a song whose lyrics you know completely by heart?",
+   "it": "C'è una canzone di cui sai tutte le parole a memoria?",
+   "es": "¿Hay alguna canción cuya letra te sepas completamente de memoria?",
+   "pt": "Há alguma música cuja letra saibas de cor?",
+   "pt_BR": "Tem alguma música cuja letra você sabe de cor?",
+   "fr": "Y a-t-il une chanson dont tu connais toutes les paroles par cœur ?",
+   "de": "Gibt es ein Lied, dessen Text du komplett auswendig kannst?"
+  }
+ },
+ {
+  "id": "ib-music-022",
+  "topic": "music",
+  "text": {
+   "en": "Which lesser-known artist do you think deserves many more listeners?",
+   "it": "Quale artista poco conosciuto secondo te meriterebbe molti più ascoltatori?",
+   "es": "¿Qué artista poco conocido crees que merecería muchos más oyentes?",
+   "pt": "Que artista pouco conhecido achas que merecia muito mais ouvintes?",
+   "pt_BR": "Que artista pouco conhecido você acha que merecia muito mais ouvintes?",
+   "fr": "Quel artiste peu connu mériterait selon toi beaucoup plus d'auditeurs ?",
+   "de": "Welcher weniger bekannte Künstler verdient deiner Meinung nach viel mehr Zuhörer?"
+  }
+ },
+ {
+  "id": "ib-music-023",
+  "topic": "music",
+  "text": {
+   "en": "What kind of music is popular in your city right now?",
+   "it": "Che tipo di musica va per la maggiore nella tua città in questo periodo?",
+   "es": "¿Qué tipo de música está de moda ahora mismo en tu ciudad?",
+   "pt": "Que tipo de música está na moda agora na tua cidade?",
+   "pt_BR": "Que tipo de música está em alta agora na sua cidade?",
+   "fr": "Quel genre de musique est populaire en ce moment dans ta ville ?",
+   "de": "Welche Musik ist gerade in deiner Stadt angesagt?"
+  }
+ },
+ {
+  "id": "ib-music-024",
+  "topic": "music",
+  "text": {
+   "en": "What songs would be on your perfect road trip playlist?",
+   "it": "Quali canzoni ci sarebbero nella tua playlist perfetta per un viaggio in macchina?",
+   "es": "¿Qué canciones estarían en tu playlist perfecta para un viaje por carretera?",
+   "pt": "Que músicas estariam na tua playlist perfeita para uma viagem de carro?",
+   "pt_BR": "Quais músicas estariam na sua playlist perfeita para uma viagem de carro?",
+   "fr": "Quelles chansons figureraient dans ta playlist parfaite pour un road trip ?",
+   "de": "Welche Songs wären auf deiner perfekten Roadtrip-Playlist?"
+  }
+ },
+ {
+  "id": "ib-music-025",
+  "topic": "music",
+  "text": {
+   "en": "Have you ever found a great song by pure accident? How?",
+   "it": "Hai mai scoperto una bella canzone per puro caso? Come?",
+   "es": "¿Has descubierto alguna vez una gran canción por pura casualidad? ¿Cómo?",
+   "pt": "Já descobriste uma grande música por mero acaso? Como?",
+   "pt_BR": "Você já descobriu uma ótima música por puro acaso? Como foi?",
+   "fr": "As-tu déjà découvert une super chanson par pur hasard ? Comment ?",
+   "de": "Hast du schon mal durch puren Zufall einen tollen Song entdeckt? Wie?"
+  }
+ },
+ {
+  "id": "ib-music-026",
+  "topic": "music",
+  "text": {
+   "en": "Do you remember a lullaby or children's song from your country?",
+   "it": "Ti ricordi una ninna nanna o una canzone per bambini del tuo paese?",
+   "es": "¿Recuerdas alguna nana o canción infantil de tu país?",
+   "pt": "Lembras-te de alguma canção de embalar ou música infantil do teu país?",
+   "pt_BR": "Você se lembra de alguma cantiga de ninar ou música infantil do seu país?",
+   "fr": "Te souviens-tu d'une berceuse ou d'une comptine de ton pays ?",
+   "de": "Erinnerst du dich an ein Schlaf- oder Kinderlied aus deinem Land?"
+  }
+ },
+ {
+  "id": "ib-music-027",
+  "topic": "music",
+  "text": {
+   "en": "Which instrument do you find the most beautiful to listen to?",
+   "it": "Quale strumento trovi più bello da ascoltare?",
+   "es": "¿Qué instrumento te parece el más bonito de escuchar?",
+   "pt": "Que instrumento achas mais bonito de ouvir?",
+   "pt_BR": "Qual instrumento você acha mais bonito de ouvir?",
+   "fr": "Quel instrument trouves-tu le plus beau à écouter ?",
+   "de": "Welches Instrument klingt für dich am schönsten?"
+  }
+ },
+ {
+  "id": "ib-music-028",
+  "topic": "music",
+  "text": {
+   "en": "What music do you turn to on a tough day?",
+   "it": "Che musica ascolti quando hai una giornata difficile?",
+   "es": "¿Qué música escuchas cuando tienes un día difícil?",
+   "pt": "Que música ouves quando tens um dia difícil?",
+   "pt_BR": "Que música você escuta quando está num dia difícil?",
+   "fr": "Quelle musique écoutes-tu quand tu passes une journée difficile ?",
+   "de": "Welche Musik hörst du an einem schwierigen Tag?"
+  }
+ },
+ {
+  "id": "ib-music-029",
+  "topic": "music",
+  "text": {
+   "en": "Have you ever been to a music festival? Would you recommend one?",
+   "it": "Sei mai stato/a a un festival musicale? Ne consiglieresti uno?",
+   "es": "¿Has ido alguna vez a un festival de música? ¿Recomendarías alguno?",
+   "pt": "Já foste a algum festival de música? Recomendavas algum?",
+   "pt_BR": "Você já foi a algum festival de música? Recomendaria algum?",
+   "fr": "As-tu déjà été à un festival de musique ? Peux-tu m'en recommander un ?",
+   "de": "Warst du schon mal auf einem Musikfestival? Kannst du eines empfehlen?"
+  }
+ },
+ {
+  "id": "ib-music-030",
+  "topic": "music",
+  "text": {
+   "en": "What was the song of your last summer?",
+   "it": "Qual è stata la canzone della tua ultima estate?",
+   "es": "¿Cuál fue la canción de tu último verano?",
+   "pt": "Qual foi a música do teu último verão?",
+   "pt_BR": "Qual foi a música do seu último verão?",
+   "fr": "Quelle a été la chanson de ton dernier été ?",
+   "de": "Was war der Song deines letzten Sommers?"
+  }
+ },
+ {
+  "id": "ib-music-031",
+  "topic": "music",
+  "text": {
+   "en": "Is there a type of music that always plays at celebrations in your country?",
+   "it": "C'è un tipo di musica che si sente sempre alle feste nel tuo paese?",
+   "es": "¿Hay algún tipo de música que siempre suena en las celebraciones de tu país?",
+   "pt": "Há algum tipo de música que toca sempre nas celebrações do teu país?",
+   "pt_BR": "Existe algum tipo de música que sempre toca nas comemorações do seu país?",
+   "fr": "Y a-t-il un type de musique qu'on entend toujours lors des fêtes dans ton pays ?",
+   "de": "Gibt es eine Musikart, die in deinem Land bei Feiern immer gespielt wird?"
+  }
+ },
+ {
+  "id": "ib-music-032",
+  "topic": "music",
+  "text": {
+   "en": "What's your favourite song to start the morning with?",
+   "it": "Qual è la tua canzone preferita per iniziare la mattina?",
+   "es": "¿Cuál es tu canción favorita para empezar la mañana?",
+   "pt": "Qual é a tua música preferida para começar a manhã?",
+   "pt_BR": "Qual é a sua música preferida para começar a manhã?",
+   "fr": "Quelle est ta chanson préférée pour bien commencer la matinée ?",
+   "de": "Mit welchem Lied startest du am liebsten in den Morgen?"
+  }
+ },
+ {
+  "id": "ib-music-033",
+  "topic": "music",
+  "text": {
+   "en": "Which instrumental piece gives you goosebumps?",
+   "it": "Quale brano strumentale ti fa venire la pelle d'oca?",
+   "es": "¿Qué pieza instrumental te pone la piel de gallina?",
+   "pt": "Que peça instrumental te arrepia?",
+   "pt_BR": "Qual peça instrumental te arrepia?",
+   "fr": "Quel morceau instrumental te donne la chair de poule ?",
+   "de": "Welches Instrumentalstück verursacht bei dir eine Gänsehaut?"
+  }
+ },
+ {
+  "id": "ib-music-034",
+  "topic": "music",
+  "text": {
+   "en": "Have you ever sung in a choir or played in a band?",
+   "it": "Hai mai cantato in un coro o suonato in una band?",
+   "es": "¿Has cantado alguna vez en un coro o tocado en un grupo?",
+   "pt": "Já cantaste num coro ou tocaste numa banda?",
+   "pt_BR": "Você já cantou em um coral ou tocou em uma banda?",
+   "fr": "As-tu déjà chanté dans une chorale ou joué dans un groupe ?",
+   "de": "Hast du schon mal in einem Chor gesungen oder in einer Band gespielt?"
+  }
+ },
+ {
+  "id": "ib-music-035",
+  "topic": "music",
+  "text": {
+   "en": "Which song would you pick to introduce your culture to a stranger?",
+   "it": "Quale canzone sceglieresti per presentare la tua cultura a uno sconosciuto?",
+   "es": "¿Qué canción elegirías para presentar tu cultura a un desconocido?",
+   "pt": "Que música escolhias para apresentar a tua cultura a um desconhecido?",
+   "pt_BR": "Que música você escolheria para apresentar a sua cultura a um desconhecido?",
+   "fr": "Quelle chanson choisirais-tu pour présenter ta culture à un inconnu ?",
+   "de": "Welches Lied würdest du wählen, um jemandem deine Kultur vorzustellen?"
+  }
+ },
+ {
+  "id": "ib-music-036",
+  "topic": "music",
+  "text": {
+   "en": "How do you usually discover new music?",
+   "it": "Come scopri di solito nuova musica?",
+   "es": "¿Cómo sueles descubrir música nueva?",
+   "pt": "Como costumas descobrir música nova?",
+   "pt_BR": "Como você costuma descobrir música nova?",
+   "fr": "Comment découvres-tu d'habitude de nouvelles musiques ?",
+   "de": "Wie entdeckst du normalerweise neue Musik?"
+  }
+ },
+ {
+  "id": "ib-music-037",
+  "topic": "music",
+  "text": {
+   "en": "Which song reminds you of a special trip?",
+   "it": "Quale canzone ti ricorda un viaggio speciale?",
+   "es": "¿Qué canción te recuerda a un viaje especial?",
+   "pt": "Que música te lembra uma viagem especial?",
+   "pt_BR": "Que música te lembra uma viagem especial?",
+   "fr": "Quelle chanson te rappelle un voyage particulier ?",
+   "de": "Welches Lied erinnert dich an eine besondere Reise?"
+  }
+ },
+ {
+  "id": "ib-music-038",
+  "topic": "music",
+  "text": {
+   "en": "Which decade do you think had the best music?",
+   "it": "Quale decennio secondo te ha avuto la musica migliore?",
+   "es": "¿Qué década crees que tuvo la mejor música?",
+   "pt": "Que década achas que teve a melhor música?",
+   "pt_BR": "Que década você acha que teve a melhor música?",
+   "fr": "Selon toi, quelle décennie a eu la meilleure musique ?",
+   "de": "Welches Jahrzehnt hatte deiner Meinung nach die beste Musik?"
+  }
+ },
+ {
+  "id": "ib-music-039",
+  "topic": "music",
+  "text": {
+   "en": "Is there a traditional dance that goes with the music of your region?",
+   "it": "C'è una danza tradizionale che accompagna la musica della tua regione?",
+   "es": "¿Hay algún baile tradicional que acompañe la música de tu región?",
+   "pt": "Existe alguma dança tradicional que acompanhe a música da tua região?",
+   "pt_BR": "Existe alguma dança tradicional que acompanha a música da sua região?",
+   "fr": "Existe-t-il une danse traditionnelle qui accompagne la musique de ta région ?",
+   "de": "Gibt es einen traditionellen Tanz, der zur Musik deiner Region gehört?"
+  }
+ },
+ {
+  "id": "ib-music-040",
+  "topic": "music",
+  "text": {
+   "en": "Do you remember the first song or album you ever bought or saved?",
+   "it": "Ti ricordi la prima canzone o il primo album che hai comprato o salvato?",
+   "es": "¿Recuerdas la primera canción o álbum que compraste o guardaste?",
+   "pt": "Lembras-te da primeira música ou álbum que compraste ou guardaste?",
+   "pt_BR": "Você se lembra da primeira música ou álbum que comprou ou salvou?",
+   "fr": "Te souviens-tu de la première chanson ou du premier album que tu as acheté ou enregistré ?",
+   "de": "Erinnerst du dich an den ersten Song oder das erste Album, das du gekauft oder gespeichert hast?"
+  }
+ },
+ {
+  "id": "ib-music-041",
+  "topic": "music",
+  "text": {
+   "en": "What would you play on a long, relaxing walk?",
+   "it": "Cosa ascolteresti durante una lunga passeggiata rilassante?",
+   "es": "¿Qué escucharías en un largo paseo tranquilo?",
+   "pt": "O que ouvirias durante um longo passeio descontraído?",
+   "pt_BR": "O que você ouviria durante uma longa caminhada tranquila?",
+   "fr": "Que mettrais-tu comme musique pour une longue promenade tranquille ?",
+   "de": "Was würdest du auf einem langen, entspannten Spaziergang hören?"
+  }
+ },
+ {
+  "id": "ib-music-042",
+  "topic": "music",
+  "text": {
+   "en": "Whose voice could you listen to all day?",
+   "it": "Di chi potresti ascoltare la voce tutto il giorno?",
+   "es": "¿De quién podrías escuchar la voz todo el día?",
+   "pt": "A voz de quem poderias ouvir o dia todo?",
+   "pt_BR": "A voz de quem você poderia ouvir o dia inteiro?",
+   "fr": "La voix de qui pourrais-tu écouter toute la journée ?",
+   "de": "Wessen Stimme könntest du den ganzen Tag hören?"
+  }
+ },
+ {
+  "id": "ib-music-043",
+  "topic": "music",
+  "text": {
+   "en": "What's the funniest or strangest song you know?",
+   "it": "Qual è la canzone più divertente o più strana che conosci?",
+   "es": "¿Cuál es la canción más divertida o más rara que conoces?",
+   "pt": "Qual é a música mais engraçada ou mais estranha que conheces?",
+   "pt_BR": "Qual é a música mais engraçada ou mais esquisita que você conhece?",
+   "fr": "Quelle est la chanson la plus drôle ou la plus étrange que tu connaisses ?",
+   "de": "Was ist das lustigste oder seltsamste Lied, das du kennst?"
+  }
+ },
+ {
+  "id": "ib-music-044",
+  "topic": "music",
+  "text": {
+   "en": "Do you enjoy singing along with a whole crowd at a concert?",
+   "it": "Ti piace cantare insieme a tutta la folla a un concerto?",
+   "es": "¿Te gusta cantar junto a todo el público en un concierto?",
+   "pt": "Gostas de cantar com toda a multidão num concerto?",
+   "pt_BR": "Você gosta de cantar junto com a plateia toda em um show?",
+   "fr": "Aimes-tu chanter avec toute la foule lors d'un concert ?",
+   "de": "Singst du gern mit der ganzen Menge auf einem Konzert mit?"
+  }
+ },
+ {
+  "id": "ib-music-045",
+  "topic": "music",
+  "text": {
+   "en": "Which song would you most like to learn to play or sing?",
+   "it": "Quale canzone ti piacerebbe di più imparare a suonare o cantare?",
+   "es": "¿Qué canción te gustaría más aprender a tocar o cantar?",
+   "pt": "Que música gostarias mais de aprender a tocar ou cantar?",
+   "pt_BR": "Que música você mais gostaria de aprender a tocar ou cantar?",
+   "fr": "Quelle chanson aimerais-tu le plus apprendre à jouer ou à chanter ?",
+   "de": "Welches Lied würdest du am liebsten spielen oder singen können?"
+  }
+ },
+ {
+  "id": "ib-music-046",
+  "topic": "music",
+  "text": {
+   "en": "Which song does everyone in your country seem to know the words to?",
+   "it": "Quale canzone sembra conoscere a memoria tutto il tuo paese?",
+   "es": "¿Qué canción parece que se sabe de memoria todo tu país?",
+   "pt": "Que música parece que todo o teu país sabe de cor?",
+   "pt_BR": "Qual música parece que todo mundo no seu país sabe de cor?",
+   "fr": "Quelle chanson tout le monde semble-t-il connaître par cœur dans ton pays ?",
+   "de": "Welches Lied scheint in deinem Land jeder auswendig zu können?"
+  }
+ },
+ {
+  "id": "ib-music-047",
+  "topic": "music",
+  "text": {
+   "en": "Do you listen to music when you travel? What's on your playlist?",
+   "it": "Ascolti musica quando viaggi? Cosa c'è nella tua playlist?",
+   "es": "¿Escuchas música cuando viajas? ¿Qué hay en tu playlist?",
+   "pt": "Ouves música quando viajas? O que tens na tua playlist?",
+   "pt_BR": "Você escuta música quando viaja? O que tem na sua playlist?",
+   "fr": "Écoutes-tu de la musique en voyage ? Qu'y a-t-il dans ta playlist ?",
+   "de": "Hörst du auf Reisen Musik? Was ist auf deiner Playlist?"
+  }
+ },
+ {
+  "id": "ib-music-048",
+  "topic": "music",
+  "text": {
+   "en": "What song did you love as a teenager and still enjoy today?",
+   "it": "Quale canzone amavi da adolescente e ascolti ancora volentieri oggi?",
+   "es": "¿Qué canción te encantaba de adolescente y todavía disfrutas hoy?",
+   "pt": "Que música adoravas em adolescente e ainda gostas de ouvir hoje?",
+   "pt_BR": "Que música você adorava na adolescência e ainda curte hoje?",
+   "fr": "Quelle chanson adorais-tu à l'adolescence et apprécies-tu encore aujourd'hui ?",
+   "de": "Welches Lied hast du als Teenager geliebt und magst du bis heute?"
+  }
+ },
+ {
+  "id": "ib-music-049",
+  "topic": "music",
+  "text": {
+   "en": "Which musical instrument is typical of your country or region?",
+   "it": "Qual è lo strumento musicale tipico del tuo paese o della tua regione?",
+   "es": "¿Cuál es el instrumento musical típico de tu país o región?",
+   "pt": "Qual é o instrumento musical típico do teu país ou região?",
+   "pt_BR": "Qual é o instrumento musical típico do seu país ou região?",
+   "fr": "Quel est l'instrument de musique typique de ton pays ou de ta région ?",
+   "de": "Welches Musikinstrument ist typisch für dein Land oder deine Region?"
+  }
+ },
+ {
+  "id": "ib-music-050",
+  "topic": "music",
+  "text": {
+   "en": "If your life had a theme song, what would it be?",
+   "it": "Se la tua vita avesse una colonna sonora, quale sarebbe?",
+   "es": "Si tu vida tuviera una banda sonora, ¿cuál sería?",
+   "pt": "Se a tua vida tivesse uma banda sonora, qual seria?",
+   "pt_BR": "Se a sua vida tivesse uma trilha sonora, qual seria?",
+   "fr": "Si ta vie avait une bande-son, quelle serait-elle ?",
+   "de": "Wenn dein Leben einen Titelsong hätte, welcher wäre es?"
+  }
+ },
+ {
+  "id": "ib-movies_series-001",
+  "topic": "movies_series",
+  "text": {
+   "en": "What's a film you could watch again and again?",
+   "it": "Qual è un film che potresti guardare all'infinito?",
+   "es": "¿Cuál es una película que podrías ver una y otra vez?",
+   "pt": "Qual é um filme que podias ver vezes sem conta?",
+   "pt_BR": "Qual é um filme que você assistiria mil vezes?",
+   "fr": "Quel est un film que tu pourrais revoir encore et encore ?",
+   "de": "Welchen Film könntest du immer wieder anschauen?"
+  }
+ },
+ {
+  "id": "ib-movies_series-002",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which series have you binge-watched most recently?",
+   "it": "Quale serie hai guardato tutta d'un fiato di recente?",
+   "es": "¿Qué serie has devorado más recientemente?",
+   "pt": "Que série viste de seguida mais recentemente?",
+   "pt_BR": "Qual série você maratonou mais recentemente?",
+   "fr": "Quelle série as-tu enchaînée le plus récemment ?",
+   "de": "Welche Serie hast du zuletzt am Stück durchgeschaut?"
+  }
+ },
+ {
+  "id": "ib-movies_series-003",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which movie from your country would you recommend to a visitor?",
+   "it": "Quale film del tuo paese consiglieresti a un visitatore?",
+   "es": "¿Qué película de tu país le recomendarías a un visitante?",
+   "pt": "Que filme do teu país recomendarias a um visitante?",
+   "pt_BR": "Que filme do seu país você recomendaria a um visitante?",
+   "fr": "Quel film de ton pays recommanderais-tu à un visiteur ?",
+   "de": "Welchen Film aus deinem Land würdest du einem Besucher empfehlen?"
+  }
+ },
+ {
+  "id": "ib-movies_series-004",
+  "topic": "movies_series",
+  "text": {
+   "en": "What's the best film you've seen this year?",
+   "it": "Qual è il film più bello che hai visto quest'anno?",
+   "es": "¿Cuál es la mejor película que has visto este año?",
+   "pt": "Qual foi o melhor filme que viste este ano?",
+   "pt_BR": "Qual foi o melhor filme que você viu este ano?",
+   "fr": "Quel est le meilleur film que tu aies vu cette année ?",
+   "de": "Was ist der beste Film, den du dieses Jahr gesehen hast?"
+  }
+ },
+ {
+  "id": "ib-movies_series-005",
+  "topic": "movies_series",
+  "text": {
+   "en": "Do you prefer watching movies at the cinema or at home?",
+   "it": "Preferisci guardare i film al cinema o a casa?",
+   "es": "¿Prefieres ver películas en el cine o en casa?",
+   "pt": "Preferes ver filmes no cinema ou em casa?",
+   "pt_BR": "Você prefere assistir a filmes no cinema ou em casa?",
+   "fr": "Tu préfères regarder des films au cinéma ou à la maison ?",
+   "de": "Schaust du Filme lieber im Kino oder zu Hause?"
+  }
+ },
+ {
+  "id": "ib-movies_series-006",
+  "topic": "movies_series",
+  "text": {
+   "en": "Has a TV series ever helped you learn another language?",
+   "it": "Una serie TV ti ha mai aiutato a imparare un'altra lingua?",
+   "es": "¿Alguna serie te ha ayudado alguna vez a aprender otro idioma?",
+   "pt": "Alguma série já te ajudou a aprender outra língua?",
+   "pt_BR": "Alguma série já te ajudou a aprender outra língua?",
+   "fr": "Une série t'a-t-elle déjà aidé(e) à apprendre une autre langue ?",
+   "de": "Hat dir eine Serie schon mal geholfen, eine andere Sprache zu lernen?"
+  }
+ },
+ {
+  "id": "ib-movies_series-007",
+  "topic": "movies_series",
+  "text": {
+   "en": "Who's your favourite character from a film or series, and why?",
+   "it": "Chi è il tuo personaggio preferito di un film o di una serie, e perché?",
+   "es": "¿Quién es tu personaje favorito de una película o serie y por qué?",
+   "pt": "Quem é a tua personagem preferida de um filme ou série, e porquê?",
+   "pt_BR": "Quem é o seu personagem preferido de um filme ou série, e por quê?",
+   "fr": "Qui est ton personnage préféré dans un film ou une série, et pourquoi ?",
+   "de": "Wer ist deine Lieblingsfigur aus einem Film oder einer Serie, und warum?"
+  }
+ },
+ {
+  "id": "ib-movies_series-008",
+  "topic": "movies_series",
+  "text": {
+   "en": "What series is everyone around you talking about right now?",
+   "it": "Di quale serie parlano tutti intorno a te in questo momento?",
+   "es": "¿De qué serie habla todo el mundo a tu alrededor ahora mismo?",
+   "pt": "De que série toda a gente à tua volta está a falar neste momento?",
+   "pt_BR": "De qual série todo mundo ao seu redor está falando agora?",
+   "fr": "De quelle série tout le monde parle-t-il autour de toi en ce moment ?",
+   "de": "Über welche Serie sprechen gerade alle um dich herum?"
+  }
+ },
+ {
+  "id": "ib-movies_series-009",
+  "topic": "movies_series",
+  "text": {
+   "en": "Do you watch films with subtitles or dubbed? Which do you prefer?",
+   "it": "Guardi i film con i sottotitoli o doppiati? Quale preferisci?",
+   "es": "¿Ves las películas con subtítulos o dobladas? ¿Cuál prefieres?",
+   "pt": "Vês os filmes com legendas ou dobrados? Qual preferes?",
+   "pt_BR": "Você assiste a filmes com legenda ou dublados? Qual prefere?",
+   "fr": "Tu regardes les films en version sous-titrée ou doublée ? Laquelle préfères-tu ?",
+   "de": "Schaust du Filme mit Untertiteln oder synchronisiert? Was ist dir lieber?"
+  }
+ },
+ {
+  "id": "ib-movies_series-010",
+  "topic": "movies_series",
+  "text": {
+   "en": "What's the first movie you remember watching as a child?",
+   "it": "Qual è il primo film che ricordi di aver visto da bambino/a?",
+   "es": "¿Cuál es la primera película que recuerdas haber visto de niño/a?",
+   "pt": "Qual é o primeiro filme de que te lembras de ter visto em criança?",
+   "pt_BR": "Qual é o primeiro filme de que você se lembra de ter visto quando criança?",
+   "fr": "Quel est le premier film dont tu te souviens avoir vu enfant ?",
+   "de": "Welchen Film hast du als Kind zuerst gesehen, an den du dich erinnerst?"
+  }
+ },
+ {
+  "id": "ib-movies_series-011",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which film has made you laugh the most?",
+   "it": "Quale film ti ha fatto ridere di più?",
+   "es": "¿Qué película te ha hecho reír más?",
+   "pt": "Que filme te fez rir mais?",
+   "pt_BR": "Qual filme te fez rir mais?",
+   "fr": "Quel film t'a fait le plus rire ?",
+   "de": "Welcher Film hat dich am meisten zum Lachen gebracht?"
+  }
+ },
+ {
+  "id": "ib-movies_series-012",
+  "topic": "movies_series",
+  "text": {
+   "en": "Is there a movie that moved you so much you almost cried?",
+   "it": "C'è un film che ti ha commosso così tanto da farti quasi piangere?",
+   "es": "¿Hay alguna película que te emocionó tanto que casi lloras?",
+   "pt": "Há algum filme que te emocionou tanto que quase choraste?",
+   "pt_BR": "Tem algum filme que te emocionou tanto que você quase chorou?",
+   "fr": "Y a-t-il un film qui t'a tellement ému(e) que tu as failli pleurer ?",
+   "de": "Gibt es einen Film, der dich so berührt hat, dass du fast geweint hättest?"
+  }
+ },
+ {
+  "id": "ib-movies_series-013",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which documentary taught you something that surprised you?",
+   "it": "Quale documentario ti ha insegnato qualcosa che ti ha sorpreso?",
+   "es": "¿Qué documental te enseñó algo que te sorprendió?",
+   "pt": "Que documentário te ensinou algo que te surpreendeu?",
+   "pt_BR": "Qual documentário te ensinou algo que te surpreendeu?",
+   "fr": "Quel documentaire t'a appris quelque chose qui t'a surpris(e) ?",
+   "de": "Welche Dokumentation hat dir etwas beigebracht, das dich überrascht hat?"
+  }
+ },
+ {
+  "id": "ib-movies_series-014",
+  "topic": "movies_series",
+  "text": {
+   "en": "If you could live inside any film or series for a day, which would it be?",
+   "it": "Se potessi vivere un giorno dentro un film o una serie, quale sceglieresti?",
+   "es": "Si pudieras vivir un día dentro de una película o serie, ¿cuál elegirías?",
+   "pt": "Se pudesses viver um dia dentro de um filme ou série, qual escolhias?",
+   "pt_BR": "Se você pudesse viver um dia dentro de um filme ou série, qual escolheria?",
+   "fr": "Si tu pouvais vivre une journée dans un film ou une série, lequel choisirais-tu ?",
+   "de": "Wenn du einen Tag in einem Film oder einer Serie verbringen könntest, in welchem wäre das?"
+  }
+ },
+ {
+  "id": "ib-movies_series-015",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which classic film do you think everyone should watch at least once?",
+   "it": "Quale film classico secondo te tutti dovrebbero vedere almeno una volta?",
+   "es": "¿Qué película clásica crees que todo el mundo debería ver al menos una vez?",
+   "pt": "Que filme clássico achas que toda a gente devia ver pelo menos uma vez?",
+   "pt_BR": "Que filme clássico você acha que todo mundo deveria assistir pelo menos uma vez?",
+   "fr": "Quel film classique tout le monde devrait-il voir au moins une fois, selon toi ?",
+   "de": "Welchen Klassiker sollte man deiner Meinung nach mindestens einmal gesehen haben?"
+  }
+ },
+ {
+  "id": "ib-movies_series-016",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which actor would you most love to meet in person?",
+   "it": "Quale attore o attrice ti piacerebbe di più incontrare di persona?",
+   "es": "¿A qué actor o actriz te encantaría conocer en persona?",
+   "pt": "Que ator ou atriz gostarias mais de conhecer pessoalmente?",
+   "pt_BR": "Qual ator ou atriz você mais gostaria de conhecer pessoalmente?",
+   "fr": "Quel acteur ou quelle actrice aimerais-tu le plus rencontrer en personne ?",
+   "de": "Welchen Schauspieler oder welche Schauspielerin würdest du am liebsten persönlich treffen?"
+  }
+ },
+ {
+  "id": "ib-movies_series-017",
+  "topic": "movies_series",
+  "text": {
+   "en": "What's your comfort show when you just want to relax?",
+   "it": "Qual è la tua serie rilassante quando vuoi solo staccare?",
+   "es": "¿Cuál es tu serie de siempre cuando solo quieres relajarte?",
+   "pt": "Qual é a tua série de conforto quando só queres descontrair?",
+   "pt_BR": "Qual é a sua série de conforto quando só quer relaxar?",
+   "fr": "Quelle est ta série doudou quand tu veux juste te détendre ?",
+   "de": "Welche Serie schaust du zum Entspannen immer wieder?"
+  }
+ },
+ {
+  "id": "ib-movies_series-018",
+  "topic": "movies_series",
+  "text": {
+   "en": "What's a hidden gem of a film that few people know about?",
+   "it": "Qual è un film poco conosciuto che per te è una vera perla?",
+   "es": "¿Cuál es una joya escondida de película que poca gente conoce?",
+   "pt": "Qual é uma pérola escondida de filme que pouca gente conhece?",
+   "pt_BR": "Qual é uma pérola escondida de filme que pouca gente conhece?",
+   "fr": "Quel est un film méconnu qui est un vrai trésor caché ?",
+   "de": "Welcher Film ist ein echter Geheimtipp, den kaum jemand kennt?"
+  }
+ },
+ {
+  "id": "ib-movies_series-019",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which animated film do you love, even as an adult?",
+   "it": "Quale film d'animazione ami ancora, anche da adulto/a?",
+   "es": "¿Qué película de animación sigues queriendo, incluso de adulto/a?",
+   "pt": "Que filme de animação continuas a adorar, mesmo em adulto/a?",
+   "pt_BR": "Qual filme de animação você ainda adora, mesmo adulto?",
+   "fr": "Quel film d'animation adores-tu encore, même adulte ?",
+   "de": "Welchen Animationsfilm magst du auch als Erwachsener noch?"
+  }
+ },
+ {
+  "id": "ib-movies_series-020",
+  "topic": "movies_series",
+  "text": {
+   "en": "What's a famous movie quote in your language?",
+   "it": "Qual è una battuta di film famosa nella tua lingua?",
+   "es": "¿Cuál es una frase famosa de película en tu idioma?",
+   "pt": "Qual é uma frase famosa de um filme na tua língua?",
+   "pt_BR": "Qual é uma frase famosa de filme na sua língua?",
+   "fr": "Quelle est une réplique de film célèbre dans ta langue ?",
+   "de": "Was ist ein berühmtes Filmzitat in deiner Sprache?"
+  }
+ },
+ {
+  "id": "ib-movies_series-021",
+  "topic": "movies_series",
+  "text": {
+   "en": "Is there a series from your country you'd love the world to see?",
+   "it": "C'è una serie del tuo paese che vorresti far vedere a tutto il mondo?",
+   "es": "¿Hay alguna serie de tu país que te gustaría que viera todo el mundo?",
+   "pt": "Há alguma série do teu país que gostasses que o mundo inteiro visse?",
+   "pt_BR": "Existe alguma série do seu país que você gostaria que o mundo todo visse?",
+   "fr": "Y a-t-il une série de ton pays que tu aimerais faire découvrir au monde entier ?",
+   "de": "Gibt es eine Serie aus deinem Land, die die ganze Welt sehen sollte?"
+  }
+ },
+ {
+  "id": "ib-movies_series-022",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which film do you think has the best soundtrack?",
+   "it": "Quale film secondo te ha la colonna sonora più bella?",
+   "es": "¿Qué película crees que tiene la mejor banda sonora?",
+   "pt": "Que filme achas que tem a melhor banda sonora?",
+   "pt_BR": "Qual filme você acha que tem a melhor trilha sonora?",
+   "fr": "Quel film a selon toi la meilleure bande originale ?",
+   "de": "Welcher Film hat deiner Meinung nach den besten Soundtrack?"
+  }
+ },
+ {
+  "id": "ib-movies_series-023",
+  "topic": "movies_series",
+  "text": {
+   "en": "Is there a film you liked even more than the book it was based on?",
+   "it": "C'è un film che ti è piaciuto più del libro da cui è tratto?",
+   "es": "¿Hay alguna película que te gustó más que el libro en que se basa?",
+   "pt": "Há algum filme de que gostaste mais do que do livro em que se baseia?",
+   "pt_BR": "Tem algum filme de que você gostou mais do que do livro em que ele se baseia?",
+   "fr": "Y a-t-il un film que tu as préféré au livre dont il est tiré ?",
+   "de": "Gibt es einen Film, der dir besser gefallen hat als das Buch, auf dem er basiert?"
+  }
+ },
+ {
+  "id": "ib-movies_series-024",
+  "topic": "movies_series",
+  "text": {
+   "en": "What's your favourite genre: comedy, drama, sci-fi, thriller, something else?",
+   "it": "Qual è il tuo genere preferito: commedia, dramma, fantascienza, thriller, altro?",
+   "es": "¿Cuál es tu género favorito: comedia, drama, ciencia ficción, suspense u otro?",
+   "pt": "Qual é o teu género preferido: comédia, drama, ficção científica, thriller ou outro?",
+   "pt_BR": "Qual é o seu gênero preferido: comédia, drama, ficção científica, suspense ou outro?",
+   "fr": "Quel est ton genre préféré : comédie, drame, science-fiction, thriller, autre ?",
+   "de": "Was ist dein Lieblingsgenre: Komödie, Drama, Science-Fiction, Thriller oder etwas anderes?"
+  }
+ },
+ {
+  "id": "ib-movies_series-025",
+  "topic": "movies_series",
+  "text": {
+   "en": "What snack do people usually eat on movie night in your country?",
+   "it": "Che snack si mangia di solito la sera del film nel tuo paese?",
+   "es": "¿Qué se suele picar en la noche de cine en tu país?",
+   "pt": "Que petisco se costuma comer na noite de cinema no teu país?",
+   "pt_BR": "Que petisco as pessoas costumam comer na noite de cinema no seu país?",
+   "fr": "Que grignote-t-on d'habitude lors d'une soirée cinéma dans ton pays ?",
+   "de": "Was wird in deinem Land normalerweise am Filmabend geknabbert?"
+  }
+ },
+ {
+  "id": "ib-movies_series-026",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which film do you connect with a special memory?",
+   "it": "Quale film associ a un ricordo speciale?",
+   "es": "¿Qué película asocias con un recuerdo especial?",
+   "pt": "Que filme associas a uma memória especial?",
+   "pt_BR": "Qual filme você associa a uma lembrança especial?",
+   "fr": "Quel film associes-tu à un souvenir particulier ?",
+   "de": "Welchen Film verbindest du mit einer besonderen Erinnerung?"
+  }
+ },
+ {
+  "id": "ib-movies_series-027",
+  "topic": "movies_series",
+  "text": {
+   "en": "What was the last movie that really surprised you with its ending?",
+   "it": "Qual è stato l'ultimo film che ti ha davvero sorpreso con il finale?",
+   "es": "¿Cuál fue la última película que de verdad te sorprendió con su final?",
+   "pt": "Qual foi o último filme que realmente te surpreendeu com o final?",
+   "pt_BR": "Qual foi o último filme que realmente te surpreendeu com o final?",
+   "fr": "Quel est le dernier film dont la fin t'a vraiment surpris(e) ?",
+   "de": "Welcher Film hat dich zuletzt mit seinem Ende wirklich überrascht?"
+  }
+ },
+ {
+  "id": "ib-movies_series-028",
+  "topic": "movies_series",
+  "text": {
+   "en": "Do you usually watch with friends and family, or on your own?",
+   "it": "Di solito guardi i film con amici e famiglia o da solo/a?",
+   "es": "¿Sueles ver las películas con amigos y familia o a solas?",
+   "pt": "Costumas ver filmes com amigos e família ou sozinho/a?",
+   "pt_BR": "Você costuma assistir a filmes com amigos e família ou sozinho/a?",
+   "fr": "Tu regardes plutôt des films avec des amis et la famille, ou seul(e) ?",
+   "de": "Schaust du meistens mit Freunden und Familie oder allein?"
+  }
+ },
+ {
+  "id": "ib-movies_series-029",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which series would you recommend to someone learning your language?",
+   "it": "Quale serie consiglieresti a chi sta imparando la tua lingua?",
+   "es": "¿Qué serie le recomendarías a alguien que está aprendiendo tu idioma?",
+   "pt": "Que série recomendarias a alguém que está a aprender a tua língua?",
+   "pt_BR": "Qual série você recomendaria para quem está aprendendo a sua língua?",
+   "fr": "Quelle série recommanderais-tu à quelqu'un qui apprend ta langue ?",
+   "de": "Welche Serie würdest du jemandem empfehlen, der deine Sprache lernt?"
+  }
+ },
+ {
+  "id": "ib-movies_series-030",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which film is set in a place you'd love to visit?",
+   "it": "Quale film è ambientato in un posto che ti piacerebbe visitare?",
+   "es": "¿Qué película está ambientada en un lugar que te encantaría visitar?",
+   "pt": "Que filme se passa num lugar que gostarias de visitar?",
+   "pt_BR": "Qual filme se passa em um lugar que você adoraria visitar?",
+   "fr": "Quel film se déroule dans un endroit que tu aimerais visiter ?",
+   "de": "Welcher Film spielt an einem Ort, den du gern besuchen würdest?"
+  }
+ },
+ {
+  "id": "ib-movies_series-031",
+  "topic": "movies_series",
+  "text": {
+   "en": "What was your favourite cartoon as a kid?",
+   "it": "Qual era il tuo cartone animato preferito da piccolo/a?",
+   "es": "¿Cuál era tu dibujo animado favorito de pequeño/a?",
+   "pt": "Qual era o teu desenho animado preferido em pequeno/a?",
+   "pt_BR": "Qual era o seu desenho animado preferido quando criança?",
+   "fr": "Quel était ton dessin animé préféré quand tu étais petit(e) ?",
+   "de": "Was war als Kind dein liebster Zeichentrickfilm?"
+  }
+ },
+ {
+  "id": "ib-movies_series-032",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which film do you think shows your country's culture well?",
+   "it": "Quale film secondo te racconta bene la cultura del tuo paese?",
+   "es": "¿Qué película crees que muestra bien la cultura de tu país?",
+   "pt": "Que filme achas que mostra bem a cultura do teu país?",
+   "pt_BR": "Qual filme você acha que mostra bem a cultura do seu país?",
+   "fr": "Quel film montre bien, selon toi, la culture de ton pays ?",
+   "de": "Welcher Film zeigt deiner Meinung nach die Kultur deines Landes gut?"
+  }
+ },
+ {
+  "id": "ib-movies_series-033",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which movie did you expect to dislike but ended up loving?",
+   "it": "Quale film pensavi non ti sarebbe piaciuto e invece hai adorato?",
+   "es": "¿Qué película pensabas que no te iba a gustar y acabaste adorando?",
+   "pt": "Que filme pensavas que não ias gostar e acabaste a adorar?",
+   "pt_BR": "Qual filme você achou que não ia gostar e acabou adorando?",
+   "fr": "Quel film pensais-tu ne pas aimer, mais as finalement adoré ?",
+   "de": "Welchen Film hast du erst für schlecht gehalten und am Ende geliebt?"
+  }
+ },
+ {
+  "id": "ib-movies_series-034",
+  "topic": "movies_series",
+  "text": {
+   "en": "Is there a cinema or film festival in your city that you like?",
+   "it": "C'è un cinema o un festival del cinema nella tua città che ti piace?",
+   "es": "¿Hay algún cine o festival de cine en tu ciudad que te guste?",
+   "pt": "Há algum cinema ou festival de cinema na tua cidade de que gostes?",
+   "pt_BR": "Tem algum cinema ou festival de cinema na sua cidade de que você goste?",
+   "fr": "Y a-t-il un cinéma ou un festival de cinéma dans ta ville que tu aimes ?",
+   "de": "Gibt es in deiner Stadt ein Kino oder Filmfestival, das du magst?"
+  }
+ },
+ {
+  "id": "ib-movies_series-035",
+  "topic": "movies_series",
+  "text": {
+   "en": "Whose films do you always want to see, no matter what?",
+   "it": "I film di quale regista vuoi sempre vedere, qualunque cosa succeda?",
+   "es": "¿De qué director quieres ver siempre las películas, pase lo que pase?",
+   "pt": "Dos filmes de que realizador queres sempre ver, aconteça o que acontecer?",
+   "pt_BR": "De qual diretor você sempre quer ver os filmes, aconteça o que acontecer?",
+   "fr": "Les films de quel réalisateur as-tu toujours envie de voir, quoi qu'il arrive ?",
+   "de": "Von welchem Regisseur willst du unbedingt jeden Film sehen?"
+  }
+ },
+ {
+  "id": "ib-movies_series-036",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which series do you wish had more seasons?",
+   "it": "Di quale serie vorresti ci fossero più stagioni?",
+   "es": "¿De qué serie te gustaría que hubiera más temporadas?",
+   "pt": "De que série gostavas que houvesse mais temporadas?",
+   "pt_BR": "De qual série você gostaria que tivesse mais temporadas?",
+   "fr": "De quelle série aimerais-tu qu'il y ait plus de saisons ?",
+   "de": "Von welcher Serie hättest du gern mehr Staffeln?"
+  }
+ },
+ {
+  "id": "ib-movies_series-037",
+  "topic": "movies_series",
+  "text": {
+   "en": "What's the best family movie you've ever seen?",
+   "it": "Qual è il miglior film per tutta la famiglia che tu abbia mai visto?",
+   "es": "¿Cuál es la mejor película familiar que has visto nunca?",
+   "pt": "Qual é o melhor filme para toda a família que já viste?",
+   "pt_BR": "Qual é o melhor filme para toda a família que você já viu?",
+   "fr": "Quel est le meilleur film familial que tu aies jamais vu ?",
+   "de": "Was ist der beste Familienfilm, den du je gesehen hast?"
+  }
+ },
+ {
+  "id": "ib-movies_series-038",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which historical film or series did you enjoy the most?",
+   "it": "Quale film o serie storica ti è piaciuto di più?",
+   "es": "¿Qué película o serie histórica has disfrutado más?",
+   "pt": "De que filme ou série histórica gostaste mais?",
+   "pt_BR": "De qual filme ou série histórica você mais gostou?",
+   "fr": "Quel film ou quelle série historique as-tu le plus aimé ?",
+   "de": "Welchen historischen Film oder welche historische Serie mochtest du am liebsten?"
+  }
+ },
+ {
+  "id": "ib-movies_series-039",
+  "topic": "movies_series",
+  "text": {
+   "en": "Has a movie ever inspired you to try something new?",
+   "it": "Un film ti ha mai ispirato a provare qualcosa di nuovo?",
+   "es": "¿Alguna película te ha inspirado alguna vez a probar algo nuevo?",
+   "pt": "Algum filme já te inspirou a experimentar algo novo?",
+   "pt_BR": "Algum filme já te inspirou a tentar algo novo?",
+   "fr": "Un film t'a-t-il déjà donné envie d'essayer quelque chose de nouveau ?",
+   "de": "Hat dich ein Film schon mal dazu inspiriert, etwas Neues auszuprobieren?"
+  }
+ },
+ {
+  "id": "ib-movies_series-040",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which sci-fi or fantasy world would you most like to explore?",
+   "it": "Quale mondo fantascientifico o fantasy ti piacerebbe di più esplorare?",
+   "es": "¿Qué mundo de ciencia ficción o fantasía te gustaría explorar más?",
+   "pt": "Que mundo de ficção científica ou fantasia gostarias mais de explorar?",
+   "pt_BR": "Qual mundo de ficção científica ou fantasia você mais gostaria de explorar?",
+   "fr": "Quel univers de science-fiction ou de fantasy aimerais-tu le plus explorer ?",
+   "de": "Welche Science-Fiction- oder Fantasywelt würdest du am liebsten erkunden?"
+  }
+ },
+ {
+  "id": "ib-movies_series-041",
+  "topic": "movies_series",
+  "text": {
+   "en": "What's the funniest scene you can remember from a film?",
+   "it": "Qual è la scena più divertente che ricordi in un film?",
+   "es": "¿Cuál es la escena más divertida que recuerdas de una película?",
+   "pt": "Qual é a cena mais engraçada de que te lembras num filme?",
+   "pt_BR": "Qual é a cena mais engraçada de que você se lembra em um filme?",
+   "fr": "Quelle est la scène la plus drôle dont tu te souviennes dans un film ?",
+   "de": "Welche Filmszene ist dir als die lustigste in Erinnerung geblieben?"
+  }
+ },
+ {
+  "id": "ib-movies_series-042",
+  "topic": "movies_series",
+  "text": {
+   "en": "Do you have a favourite movie trilogy or saga?",
+   "it": "Hai una trilogia o una saga cinematografica preferita?",
+   "es": "¿Tienes una trilogía o saga de películas favorita?",
+   "pt": "Tens uma trilogia ou saga de filmes preferida?",
+   "pt_BR": "Você tem uma trilogia ou saga de filmes preferida?",
+   "fr": "As-tu une trilogie ou une saga de films préférée ?",
+   "de": "Hast du eine Lieblingstrilogie oder -saga im Kino?"
+  }
+ },
+ {
+  "id": "ib-movies_series-043",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which foreign film or series have you enjoyed the most?",
+   "it": "Quale film o serie straniera ti è piaciuta di più?",
+   "es": "¿Qué película o serie extranjera has disfrutado más?",
+   "pt": "De que filme ou série estrangeira gostaste mais?",
+   "pt_BR": "De qual filme ou série estrangeira você mais gostou?",
+   "fr": "Quel film ou quelle série étrangère as-tu le plus aimé ?",
+   "de": "Welchen ausländischen Film oder welche Serie mochtest du am meisten?"
+  }
+ },
+ {
+  "id": "ib-movies_series-044",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which series did you start watching because a friend recommended it?",
+   "it": "Quale serie hai iniziato a guardare perché te l'ha consigliata un amico?",
+   "es": "¿Qué serie empezaste a ver porque te la recomendó un amigo?",
+   "pt": "Que série começaste a ver porque um amigo ta recomendou?",
+   "pt_BR": "Qual série você começou a assistir porque um amigo recomendou?",
+   "fr": "Quelle série as-tu commencé à regarder sur le conseil d'un ami ?",
+   "de": "Welche Serie hast du angefangen, weil ein Freund sie empfohlen hat?"
+  }
+ },
+ {
+  "id": "ib-movies_series-045",
+  "topic": "movies_series",
+  "text": {
+   "en": "Is there a movie you watch every year around the holidays?",
+   "it": "C'è un film che guardi ogni anno durante le feste?",
+   "es": "¿Hay alguna película que veas todos los años en estas fechas festivas?",
+   "pt": "Há algum filme que vejas todos os anos na época das festas?",
+   "pt_BR": "Tem algum filme que você assiste todo ano na época das festas?",
+   "fr": "Y a-t-il un film que tu regardes chaque année pendant les fêtes ?",
+   "de": "Gibt es einen Film, den du jedes Jahr rund um die Feiertage schaust?"
+  }
+ },
+ {
+  "id": "ib-movies_series-046",
+  "topic": "movies_series",
+  "text": {
+   "en": "What would the title of a film about your life be?",
+   "it": "Quale sarebbe il titolo di un film sulla tua vita?",
+   "es": "¿Cuál sería el título de una película sobre tu vida?",
+   "pt": "Qual seria o título de um filme sobre a tua vida?",
+   "pt_BR": "Qual seria o título de um filme sobre a sua vida?",
+   "fr": "Quel serait le titre d'un film sur ta vie ?",
+   "de": "Wie würde der Titel eines Films über dein Leben lauten?"
+  }
+ },
+ {
+  "id": "ib-movies_series-047",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which TV show do you remember from your childhood afternoons?",
+   "it": "Quale programma TV ricordi dei pomeriggi della tua infanzia?",
+   "es": "¿Qué programa de televisión recuerdas de las tardes de tu infancia?",
+   "pt": "Que programa de televisão recordas das tardes da tua infância?",
+   "pt_BR": "Qual programa de TV você lembra das tardes da sua infância?",
+   "fr": "Quelle émission de télé te rappelle les après-midis de ton enfance ?",
+   "de": "Welche Fernsehsendung fällt dir zu den Nachmittagen deiner Kindheit ein?"
+  }
+ },
+ {
+  "id": "ib-movies_series-048",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which film has the most beautiful scenery you've ever seen?",
+   "it": "Quale film ha i paesaggi più belli che tu abbia mai visto?",
+   "es": "¿Qué película tiene los paisajes más bonitos que has visto?",
+   "pt": "Que filme tem as paisagens mais bonitas que já viste?",
+   "pt_BR": "Qual filme tem as paisagens mais bonitas que você já viu?",
+   "fr": "Quel film a les plus beaux paysages que tu aies jamais vus ?",
+   "de": "Welcher Film hat die schönsten Landschaften, die du je gesehen hast?"
+  }
+ },
+ {
+  "id": "ib-movies_series-049",
+  "topic": "movies_series",
+  "text": {
+   "en": "Which actor or actress from your country should I know about?",
+   "it": "Quale attore o attrice del tuo paese dovrei conoscere?",
+   "es": "¿Qué actor o actriz de tu país debería conocer?",
+   "pt": "Que ator ou atriz do teu país devia conhecer?",
+   "pt_BR": "Qual ator ou atriz do seu país eu deveria conhecer?",
+   "fr": "Quel acteur ou quelle actrice de ton pays devrais-je connaître ?",
+   "de": "Welchen Schauspieler oder welche Schauspielerin aus deinem Land sollte ich kennen?"
+  }
+ },
+ {
+  "id": "ib-movies_series-050",
+  "topic": "movies_series",
+  "text": {
+   "en": "What are you planning to watch this weekend?",
+   "it": "Cosa hai in programma di guardare questo weekend?",
+   "es": "¿Qué piensas ver este fin de semana?",
+   "pt": "O que estás a pensar ver este fim de semana?",
+   "pt_BR": "O que você está pensando em assistir neste fim de semana?",
+   "fr": "Qu'est-ce que tu comptes regarder ce week-end ?",
+   "de": "Was willst du dir dieses Wochenende anschauen?"
+  }
+ }
+]

@@ -1,0 +1,1178 @@
+{
+ "CR": [
+  {
+   "id": "ct-CR-01",
+   "category": "greetings",
+   "text": {
+    "en": "Costa Ricans often greet with a handshake, and friends or acquaintances usually add a single kiss on the cheek. A warm \"Buenos días\" or \"Buenas\" when entering a shop is appreciated.",
+    "it": "I costaricani si salutano spesso con una stretta di mano e tra amici o conoscenti si aggiunge di solito un solo bacio sulla guancia. Un caloroso \"Buenos días\" o \"Buenas\" entrando in un negozio è molto apprezzato.",
+    "es": "Los costarricenses suelen saludar con un apretón de manos, y entre amigos o conocidos se añade un solo beso en la mejilla. Un \"Buenos días\" o \"Buenas\" al entrar a una tienda se agradece.",
+    "pt": "Os costa-riquenhos cumprimentam muitas vezes com um aperto de mão e, entre amigos ou conhecidos, junta-se um único beijo na face. Dizer \"Buenos días\" ou \"Buenas\" ao entrar numa loja é apreciado.",
+    "pt_BR": "Os costarriquenhos costumam cumprimentar com um aperto de mão e, entre amigos ou conhecidos, soma-se um único beijo no rosto. Dizer \"Buenos días\" ou \"Buenas\" ao entrar em uma loja é bem-visto.",
+    "fr": "Les Costaricains se saluent souvent d'une poignée de main, et entre amis ou connaissances on ajoute une seule bise sur la joue. Un \"Buenos días\" ou \"Buenas\" en entrant dans un magasin est apprécié.",
+    "de": "Costa Ricaner begrüßen sich oft mit Handschlag, unter Freunden und Bekannten kommt meist ein einzelner Wangenkuss dazu. Ein freundliches \"Buenos días\" oder \"Buenas\" beim Betreten eines Ladens kommt gut an."
+   }
+  },
+  {
+   "id": "ct-CR-02",
+   "category": "greetings",
+   "text": {
+    "en": "\"Pura vida\" (pure life) works as a hello, a goodbye, a thank-you or an answer to \"How are you?\". Using it shows you've picked up the relaxed local spirit.",
+    "it": "\"Pura vida\" (vita pura) funziona come saluto, addio, ringraziamento o risposta a \"Come stai?\". Usarla mostra che hai colto lo spirito rilassato del posto.",
+    "es": "\"Pura vida\" sirve como saludo, despedida, agradecimiento o respuesta a \"¿Cómo está?\". Usarla muestra que captaste el espíritu relajado del país.",
+    "pt": "\"Pura vida\" (vida pura) serve de olá, adeus, agradecimento ou resposta a \"Como estás?\". Usá-la mostra que apanhaste o espírito descontraído do país.",
+    "pt_BR": "\"Pura vida\" (vida pura) serve como oi, tchau, agradecimento ou resposta a \"Como vai?\". Usar a expressão mostra que você pegou o espírito tranquilo do país.",
+    "fr": "\"Pura vida\" (vie pure) sert de bonjour, d'au revoir, de merci ou de réponse à \"Comment ça va ?\". L'employer montre que tu as saisi l'esprit décontracté du pays.",
+    "de": "\"Pura vida\" (reines Leben) dient als Gruß, Abschied, Dank oder Antwort auf \"Wie geht's?\". Wer es benutzt, zeigt, dass er den entspannten Geist des Landes verstanden hat."
+   }
+  },
+  {
+   "id": "ct-CR-03",
+   "category": "conversation",
+   "text": {
+    "en": "Small talk about family, food, football and nature is welcome. Costa Ricans are usually proud to hear that you enjoy their country and its landscapes.",
+    "it": "Le chiacchiere su famiglia, cibo, calcio e natura sono ben accette. I costaricani sono di solito orgogliosi di sentire che apprezzi il loro paese e i suoi paesaggi.",
+    "es": "La conversación ligera sobre familia, comida, fútbol y naturaleza es bienvenida. A los ticos suele darles orgullo oír que disfrutas su país y sus paisajes.",
+    "pt": "Conversa leve sobre família, comida, futebol e natureza é bem-vinda. Os costa-riquenhos costumam ficar orgulhosos ao ouvir que gostas do país e das suas paisagens.",
+    "pt_BR": "Papo leve sobre família, comida, futebol e natureza é bem-vindo. Os costarriquenhos costumam se orgulhar de ouvir que você gosta do país e das paisagens.",
+    "fr": "Parler de famille, de cuisine, de football et de nature est bienvenu. Les Costaricains sont généralement fiers d'entendre que tu aimes leur pays et ses paysages.",
+    "de": "Smalltalk über Familie, Essen, Fußball und Natur ist willkommen. Costa Ricaner freuen sich meist, wenn man ihr Land und seine Landschaften lobt."
+   }
+  },
+  {
+   "id": "ct-CR-04",
+   "category": "conversation",
+   "text": {
+    "en": "Many Costa Ricans use \"usted\" even with friends, family and children, so it does not signal distance. Locals call themselves \"ticos\", a friendly term you can use too.",
+    "it": "Molti costaricani usano \"usted\" anche con amici, familiari e bambini, quindi non indica distanza. Gli abitanti si chiamano \"ticos\", un termine affettuoso che puoi usare anche tu.",
+    "es": "Muchos costarricenses usan el \"usted\" incluso con amigos, familiares y niños, así que no implica distancia. Los locales se llaman a sí mismos \"ticos\", un término cariñoso que tú también puedes usar.",
+    "pt": "Muitos costa-riquenhos usam \"usted\" mesmo com amigos, família e crianças, por isso não indica distância. Os locais chamam-se \"ticos\", um termo simpático que também podes usar.",
+    "pt_BR": "Muitos costarriquenhos usam \"usted\" até com amigos, família e crianças, então isso não indica distância. Os locais se chamam de \"ticos\", um termo carinhoso que você também pode usar.",
+    "fr": "Beaucoup de Costaricains emploient \"usted\" même avec leurs amis, leur famille et les enfants, ce qui n'est pas une marque de distance. Les habitants se disent \"ticos\", un terme amical que tu peux employer aussi.",
+    "de": "Viele Costa Ricaner sagen auch zu Freunden, Familie und Kindern \"usted\", das bedeutet also keine Distanz. Die Einheimischen nennen sich \"Ticos\", ein freundlicher Begriff, den man auch selbst verwenden kann."
+   }
+  },
+  {
+   "id": "ct-CR-05",
+   "category": "dining",
+   "text": {
+    "en": "Breakfast often features gallo pinto, a mix of rice and black beans, with eggs and fried plantain. Lunch is commonly a \"casado\": rice, beans, a protein and a side salad on one plate.",
+    "it": "La colazione prevede spesso il gallo pinto, un misto di riso e fagioli neri, con uova e platano fritto. A pranzo si mangia di solito un \"casado\": riso, fagioli, una proteina e un'insalata in un unico piatto.",
+    "es": "El desayuno suele incluir gallo pinto, una mezcla de arroz y frijoles negros, con huevos y plátano frito. El almuerzo común es un \"casado\": arroz, frijoles, una proteína y ensalada en un solo plato.",
+    "pt": "O pequeno-almoço inclui muitas vezes gallo pinto, uma mistura de arroz e feijão preto, com ovos e banana-da-terra frita. O almoço típico é um \"casado\": arroz, feijão, uma proteína e salada no mesmo prato.",
+    "pt_BR": "O café da manhã costuma ter gallo pinto, uma mistura de arroz e feijão preto, com ovos e banana-da-terra frita. O almoço típico é um \"casado\": arroz, feijão, uma proteína e salada no mesmo prato.",
+    "fr": "Le petit-déjeuner comprend souvent du gallo pinto, un mélange de riz et de haricots noirs, avec des œufs et de la banane plantain frite. Le déjeuner typique est un \"casado\" : riz, haricots, une protéine et une salade dans la même assiette.",
+    "de": "Zum Frühstück gibt es oft Gallo Pinto, eine Mischung aus Reis und schwarzen Bohnen, mit Eiern und gebratener Kochbanane. Mittags isst man häufig einen \"Casado\": Reis, Bohnen, Fleisch oder Fisch und Salat auf einem Teller."
+   }
+  },
+  {
+   "id": "ct-CR-06",
+   "category": "dining",
+   "text": {
+    "en": "In many restaurants the bill is not brought until you ask for it, as lingering is considered polite. Just say \"La cuenta, por favor\" when you are ready.",
+    "it": "In molti ristoranti il conto non arriva finché non lo chiedi, perché trattenersi a tavola è considerato educato. Quando sei pronto, basta dire \"La cuenta, por favor\".",
+    "es": "En muchos restaurantes no traen la cuenta hasta que la pides, porque quedarse de sobremesa se considera cortés. Cuando estés listo, di \"La cuenta, por favor\".",
+    "pt": "Em muitos restaurantes a conta só vem quando a pedes, porque ficar à mesa com calma é considerado cortês. Quando quiseres, diz \"La cuenta, por favor\".",
+    "pt_BR": "Em muitos restaurantes a conta só vem quando você pede, porque ficar à mesa sem pressa é considerado educado. Quando estiver pronto, diga \"La cuenta, por favor\".",
+    "fr": "Dans beaucoup de restaurants, l'addition n'arrive que si tu la demandes, car s'attarder à table est jugé poli. Quand tu es prêt, dis simplement \"La cuenta, por favor\".",
+    "de": "In vielen Restaurants wird die Rechnung erst gebracht, wenn man darum bittet, denn langes Sitzenbleiben gilt als höflich. Sagen Sie einfach \"La cuenta, por favor\", wenn Sie bereit sind."
+   }
+  },
+  {
+   "id": "ct-CR-07",
+   "category": "tipping",
+   "text": {
+    "en": "Restaurant bills normally already include 13% tax and a 10% service charge, so an extra tip is optional. Leaving a little more for great service is appreciated.",
+    "it": "I conti dei ristoranti includono di norma il 13% di imposte e il 10% di servizio, quindi una mancia extra è facoltativa. Lasciare qualcosa in più per un ottimo servizio è gradito.",
+    "es": "La cuenta del restaurante normalmente ya incluye 13% de impuesto y 10% de servicio, así que una propina adicional es opcional. Dejar un poco más por un servicio excelente se agradece.",
+    "pt": "A conta do restaurante já inclui normalmente 13% de imposto e 10% de serviço, pelo que uma gorjeta extra é opcional. Deixar um pouco mais por um serviço excelente é apreciado.",
+    "pt_BR": "A conta do restaurante normalmente já inclui 13% de imposto e 10% de serviço, então uma gorjeta extra é opcional. Deixar um pouco mais por um ótimo atendimento é bem-visto.",
+    "fr": "L'addition au restaurant inclut normalement 13 % de taxes et 10 % de service, un pourboire supplémentaire est donc facultatif. Laisser un peu plus pour un service excellent est apprécié.",
+    "de": "Die Restaurantrechnung enthält normalerweise bereits 13 % Steuer und 10 % Service, ein zusätzliches Trinkgeld ist daher freiwillig. Für besonders guten Service freut man sich über ein wenig mehr."
+   }
+  },
+  {
+   "id": "ct-CR-08",
+   "category": "gifts",
+   "text": {
+    "en": "If invited to a home, bring a small gift such as flowers, sweets, or locally roasted coffee. Hosts usually receive it with thanks and may not open it right away.",
+    "it": "Se sei invitato a casa di qualcuno, porta un piccolo regalo come fiori, dolci o caffè tostato localmente. I padroni di casa di solito ringraziano e possono non aprirlo subito.",
+    "es": "Si te invitan a una casa, lleva un detalle como flores, dulces o café tostado localmente. Los anfitriones suelen agradecerlo y quizá no lo abran de inmediato.",
+    "pt": "Se fores convidado a casa de alguém, leva uma lembrança como flores, doces ou café torrado localmente. Os anfitriões costumam agradecer e podem não abrir logo.",
+    "pt_BR": "Se for convidado para a casa de alguém, leve uma lembrança como flores, doces ou café torrado localmente. Os anfitriões costumam agradecer e podem não abrir na hora.",
+    "fr": "Si tu es invité chez quelqu'un, apporte un petit cadeau comme des fleurs, des douceurs ou du café torréfié localement. Les hôtes remercient souvent et n'ouvrent pas forcément tout de suite.",
+    "de": "Bei einer Einladung nach Hause bringt man eine Kleinigkeit mit, etwa Blumen, Süßes oder lokal gerösteten Kaffee. Gastgeber bedanken sich meist und öffnen das Geschenk nicht unbedingt sofort."
+   }
+  },
+  {
+   "id": "ct-CR-09",
+   "category": "dress",
+   "text": {
+    "en": "Everyday dress is casual and practical. Swimwear and bare chests are for the beach and pool only; in towns, churches and restaurants it is better to wear a shirt and shoes or sandals.",
+    "it": "L'abbigliamento quotidiano è casual e pratico. Costume e torso nudo vanno bene solo in spiaggia e in piscina; in città, chiese e ristoranti è meglio indossare maglietta e scarpe o sandali.",
+    "es": "La vestimenta diaria es casual y práctica. El traje de baño y andar sin camiseta son solo para la playa y la piscina; en pueblos, iglesias y restaurantes es mejor llevar camisa y calzado o sandalias.",
+    "pt": "O vestuário do dia a dia é descontraído e prático. Fato de banho e tronco nu são só para a praia e a piscina; em vilas, igrejas e restaurantes é melhor usar camisola e sapatos ou sandálias.",
+    "pt_BR": "A roupa do dia a dia é casual e prática. Roupa de banho e peito nu valem só para a praia e a piscina; em cidades, igrejas e restaurantes é melhor usar camiseta e sapato ou sandália.",
+    "fr": "La tenue de tous les jours est décontractée et pratique. Maillot de bain et torse nu sont réservés à la plage et à la piscine ; en ville, à l'église et au restaurant, mieux vaut porter un t-shirt et des chaussures ou sandales.",
+    "de": "Die Alltagskleidung ist leger und praktisch. Badekleidung und freier Oberkörper sind nur am Strand und am Pool üblich; in Ortschaften, Kirchen und Restaurants trägt man besser ein Shirt und Schuhe oder Sandalen."
+   }
+  },
+  {
+   "id": "ct-CR-10",
+   "category": "religion_sites",
+   "text": {
+    "en": "Roman Catholicism is the traditional majority faith, and many towns are built around a central church. Visitors are welcome inside; keep your voice low and avoid walking around during Mass.",
+    "it": "Il cattolicesimo è la fede tradizionalmente maggioritaria e molte città sono costruite attorno a una chiesa centrale. I visitatori sono benvenuti; parla a bassa voce ed evita di muoverti durante la messa.",
+    "es": "El catolicismo es la fe mayoritaria tradicional y muchos pueblos se organizan alrededor de una iglesia central. Los visitantes son bienvenidos; habla en voz baja y evita circular durante la misa.",
+    "pt": "O catolicismo é a fé maioritária tradicional e muitas localidades organizam-se em torno de uma igreja central. Os visitantes são bem-vindos; fala baixo e evita circular durante a missa.",
+    "pt_BR": "O catolicismo é a fé majoritária tradicional e muitas cidades se organizam em torno de uma igreja central. Os visitantes são bem-vindos; fale baixo e evite circular durante a missa.",
+    "fr": "Le catholicisme est la foi traditionnellement majoritaire et de nombreuses villes s'organisent autour d'une église centrale. Les visiteurs sont les bienvenus ; parle à voix basse et évite de te déplacer pendant la messe.",
+    "de": "Der Katholizismus ist der traditionell größte Glaube, und viele Orte sind um eine zentrale Kirche herum gebaut. Besucher sind willkommen; sprechen Sie leise und gehen Sie während der Messe nicht umher."
+   }
+  },
+  {
+   "id": "ct-CR-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "The Basilica of Our Lady of the Angels in Cartago is the country's most important pilgrimage site. Each year on 2 August, many people walk to it from across the country.",
+    "it": "La Basilica di Nostra Signora degli Angeli a Cartago è il principale luogo di pellegrinaggio del paese. Ogni anno il 2 agosto molte persone ci arrivano a piedi da tutto il paese.",
+    "es": "La Basílica de Nuestra Señora de los Ángeles, en Cartago, es el principal sitio de peregrinación del país. Cada 2 de agosto muchas personas caminan hasta allí desde todo el país.",
+    "pt": "A Basílica de Nossa Senhora dos Anjos, em Cartago, é o principal local de peregrinação do país. Todos os anos, a 2 de agosto, muitas pessoas chegam lá a pé de todo o país.",
+    "pt_BR": "A Basílica de Nossa Senhora dos Anjos, em Cartago, é o principal local de peregrinação do país. Todo ano, em 2 de agosto, muita gente caminha até lá de todas as partes do país.",
+    "fr": "La basilique Notre-Dame-des-Anges à Cartago est le principal lieu de pèlerinage du pays. Chaque 2 août, beaucoup de personnes s'y rendent à pied depuis tout le pays.",
+    "de": "Die Basilika Unserer Lieben Frau der Engel in Cartago ist der wichtigste Wallfahrtsort des Landes. Jedes Jahr am 2. August wandern viele Menschen aus dem ganzen Land dorthin."
+   }
+  },
+  {
+   "id": "ct-CR-12",
+   "category": "gestures",
+   "text": {
+    "en": "Many people point by pursing their lips toward something instead of using a finger. Beckoning is done with the palm facing down and fingers waving toward yourself.",
+    "it": "Molte persone indicano qualcosa con le labbra protese anziché con il dito. Per chiamare qualcuno si usa il palmo rivolto verso il basso e le dita che si muovono verso di sé.",
+    "es": "Mucha gente señala frunciendo los labios hacia algo en lugar de usar el dedo. Para llamar a alguien se usa la palma hacia abajo moviendo los dedos hacia uno mismo.",
+    "pt": "Muitas pessoas apontam com os lábios em bico em vez de usar o dedo. Para chamar alguém, usa-se a palma da mão virada para baixo, com os dedos a acenar na tua direção.",
+    "pt_BR": "Muita gente aponta franzindo os lábios em direção a algo em vez de usar o dedo. Para chamar alguém, usa-se a palma da mão virada para baixo, com os dedos acenando em sua direção.",
+    "fr": "Beaucoup de gens désignent quelque chose en avançant les lèvres plutôt qu'avec le doigt. Pour appeler quelqu'un, on tourne la paume vers le bas et on agite les doigts vers soi.",
+    "de": "Viele Menschen zeigen mit gespitzten Lippen auf etwas, statt den Finger zu benutzen. Zum Heranwinken hält man die Handfläche nach unten und bewegt die Finger zu sich hin."
+   }
+  },
+  {
+   "id": "ct-CR-13",
+   "category": "gestures",
+   "text": {
+    "en": "A thumbs-up and a smile are widely understood as \"all good\", fitting the pura vida attitude. Handing objects directly is more polite than tossing them to someone.",
+    "it": "Il pollice alzato e un sorriso significano ovunque \"tutto bene\", in linea con l'atteggiamento pura vida. Passare gli oggetti di mano in mano è più educato che lanciarli.",
+    "es": "El pulgar arriba y una sonrisa se entienden como \"todo bien\", en línea con la actitud pura vida. Entregar los objetos en la mano es más cortés que lanzarlos.",
+    "pt": "O polegar para cima e um sorriso são entendidos como \"está tudo bem\", em linha com a atitude pura vida. Entregar os objetos em mão é mais cortês do que atirá-los.",
+    "pt_BR": "O joinha e um sorriso são entendidos como \"tudo certo\", combinando com a atitude pura vida. Entregar objetos direto na mão é mais educado do que jogá-los para alguém.",
+    "fr": "Le pouce levé et un sourire se comprennent comme \"tout va bien\", dans l'esprit pura vida. Remettre un objet en main propre est plus poli que de le lancer.",
+    "de": "Ein Daumen nach oben und ein Lächeln bedeuten allgemein \"alles gut\", passend zur Pura-vida-Haltung. Gegenstände direkt zu übergeben ist höflicher, als sie jemandem zuzuwerfen."
+   }
+  },
+  {
+   "id": "ct-CR-14",
+   "category": "punctuality",
+   "text": {
+    "en": "Social gatherings often start later than announced, and arriving 15 to 30 minutes late is normal. For business meetings, medical appointments and tours, be on time.",
+    "it": "Gli eventi sociali spesso iniziano più tardi dell'orario annunciato e arrivare con 15-30 minuti di ritardo è normale. Per riunioni di lavoro, visite mediche e tour, sii puntuale.",
+    "es": "Las reuniones sociales suelen empezar más tarde de lo anunciado y llegar 15 o 30 minutos tarde es normal. Para reuniones de trabajo, citas médicas y tours, sé puntual.",
+    "pt": "Os encontros sociais costumam começar mais tarde do que o anunciado e chegar 15 a 30 minutos depois é normal. Para reuniões de trabalho, consultas e passeios organizados, sê pontual.",
+    "pt_BR": "Os encontros sociais costumam começar mais tarde do que o combinado e chegar 15 a 30 minutos depois é normal. Para reuniões de trabalho, consultas médicas e passeios guiados, seja pontual.",
+    "fr": "Les réunions entre amis commencent souvent plus tard que prévu et arriver avec 15 à 30 minutes de retard est normal. Pour les rendez-vous professionnels, médicaux et les excursions, sois à l'heure.",
+    "de": "Private Treffen beginnen oft später als angekündigt, und 15 bis 30 Minuten Verspätung sind normal. Bei Geschäftsterminen, Arztterminen und Touren sollte man pünktlich sein."
+   }
+  },
+  {
+   "id": "ct-CR-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "Many places, especially in older buildings, ask you to put used toilet paper in the bin instead of the toilet because the pipes are narrow. Look for a sign and follow it.",
+    "it": "In molti luoghi, soprattutto negli edifici più vecchi, si chiede di gettare la carta igienica usata nel cestino anziché nel water perché le tubature sono strette. Cerca il cartello e seguilo.",
+    "es": "En muchos lugares, sobre todo en edificios antiguos, se pide echar el papel higiénico usado en el basurero y no en el inodoro porque las tuberías son angostas. Busca el aviso y síguelo.",
+    "pt": "Em muitos locais, sobretudo em edifícios antigos, pede-se que o papel higiénico usado vá para o cesto e não para a sanita, porque os canos são estreitos. Procura o aviso e segue-o.",
+    "pt_BR": "Em muitos lugares, principalmente em prédios antigos, pede-se jogar o papel higiênico usado na lixeira e não no vaso, porque os canos são estreitos. Procure o aviso e siga a orientação.",
+    "fr": "Dans de nombreux endroits, surtout les bâtiments anciens, on demande de jeter le papier toilette usagé dans la poubelle plutôt que dans les toilettes, car les canalisations sont étroites. Cherche l'affiche et suis-la.",
+    "de": "An vielen Orten, vor allem in älteren Gebäuden, soll benutztes Toilettenpapier in den Eimer statt in die Toilette, da die Rohre schmal sind. Achten Sie auf ein Schild und befolgen Sie es."
+   }
+  },
+  {
+   "id": "ct-CR-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "Costa Ricans generally value calm and courtesy. Say \"con permiso\" when passing through a crowd, and a thanks of \"gracias\" is usually answered with \"con mucho gusto\".",
+    "it": "I costaricani in genere apprezzano calma e cortesia. Di' \"con permiso\" per passare tra la gente, e a un \"gracias\" si risponde di solito con \"con mucho gusto\".",
+    "es": "Los costarricenses valoran en general la calma y la cortesía. Di \"con permiso\" para pasar entre la gente, y a un \"gracias\" suelen responder \"con mucho gusto\".",
+    "pt": "Os costa-riquenhos valorizam em geral a calma e a cortesia. Diz \"con permiso\" ao passar por entre as pessoas, e a um \"gracias\" costuma responder-se \"con mucho gusto\".",
+    "pt_BR": "Os costarriquenhos valorizam em geral a calma e a cortesia. Diga \"con permiso\" ao passar no meio das pessoas, e a um \"gracias\" costumam responder \"con mucho gusto\".",
+    "fr": "Les Costaricains apprécient en général le calme et la courtoisie. Dis \"con permiso\" pour passer dans la foule, et un \"gracias\" reçoit d'ordinaire la réponse \"con mucho gusto\".",
+    "de": "Costa Ricaner schätzen im Allgemeinen Ruhe und Höflichkeit. Sagen Sie \"con permiso\", wenn Sie sich durch eine Menge schieben, auf ein \"gracias\" folgt meist \"con mucho gusto\"."
+   }
+  },
+  {
+   "id": "ct-CR-17",
+   "category": "transport",
+   "text": {
+    "en": "Public buses connect most towns and are cheap, but they can be slow. Keep small bills and coins in colones for the fare, and ask the driver or a passenger where to get off.",
+    "it": "Gli autobus pubblici collegano la maggior parte delle località e costano poco, ma possono essere lenti. Tieni banconote e monete piccole in colones per la tariffa e chiedi all'autista o a un passeggero dove scendere.",
+    "es": "Los buses públicos conectan la mayoría de los pueblos y son baratos, pero pueden ser lentos. Lleva billetes y monedas pequeños en colones para el pasaje y pregunta al chofer o a un pasajero dónde bajarte.",
+    "pt": "Os autocarros públicos ligam a maioria das localidades e são baratos, mas podem ser lentos. Leva notas e moedas pequenas em colones para o bilhete e pergunta ao motorista ou a um passageiro onde sair.",
+    "pt_BR": "Os ônibus públicos ligam a maioria das cidades e são baratos, mas podem ser lentos. Leve notas e moedas pequenas em colones para a passagem e pergunte ao motorista ou a um passageiro onde descer.",
+    "fr": "Les bus publics relient la plupart des villes et sont bon marché, mais ils peuvent être lents. Garde de petits billets et pièces en colones pour le trajet et demande au chauffeur ou à un passager où descendre.",
+    "de": "Öffentliche Busse verbinden die meisten Orte und sind günstig, aber oft langsam. Halten Sie kleine Scheine und Münzen in Colones für den Fahrpreis bereit und fragen Sie Fahrer oder Mitfahrer, wo Sie aussteigen müssen."
+   }
+  },
+  {
+   "id": "ct-CR-18",
+   "category": "transport",
+   "text": {
+    "en": "Most addresses have no street numbers. Locals give directions by landmarks, such as \"200 metres north of the church\", so ask for a nearby reference point.",
+    "it": "La maggior parte degli indirizzi non ha numeri civici. La gente dà indicazioni con punti di riferimento, come \"200 metri a nord della chiesa\", quindi chiedi un riferimento vicino.",
+    "es": "La mayoría de las direcciones no tiene numeración de calles. La gente da indicaciones con puntos de referencia, como \"200 metros al norte de la iglesia\", así que pide una referencia cercana.",
+    "pt": "A maioria das moradas não tem número de porta. As pessoas dão indicações com pontos de referência, como \"200 metros a norte da igreja\", por isso pede uma referência próxima.",
+    "pt_BR": "A maioria dos endereços não tem número. As pessoas dão orientações com pontos de referência, como \"200 metros ao norte da igreja\", então peça uma referência próxima.",
+    "fr": "La plupart des adresses n'ont pas de numéro de rue. Les gens indiquent le chemin avec des repères, comme \"200 mètres au nord de l'église\" ; demande donc un point de repère proche.",
+    "de": "Die meisten Adressen haben keine Hausnummern. Wegbeschreibungen erfolgen über Orientierungspunkte wie \"200 Meter nördlich der Kirche\", fragen Sie also nach einem Anhaltspunkt in der Nähe."
+   }
+  },
+  {
+   "id": "ct-CR-19",
+   "category": "language",
+   "text": {
+    "en": "Spanish is the official language, and English is common in tourist areas. Locals enjoy any effort in Spanish; \"mae\" is friendly slang for \"dude\" among peers, so avoid it with elders.",
+    "it": "La lingua ufficiale è lo spagnolo e l'inglese è diffuso nelle zone turistiche. Chi parla un po' di spagnolo viene apprezzato; \"mae\" è un termine gergale amichevole per \"amico\" tra coetanei, da evitare con gli anziani.",
+    "es": "El español es el idioma oficial y el inglés es común en zonas turísticas. A la gente le gusta cualquier esfuerzo en español; \"mae\" es una jerga amistosa tipo \"amigo\" entre iguales, mejor evitarla con personas mayores.",
+    "pt": "O espanhol é a língua oficial e o inglês é comum nas zonas turísticas. As pessoas gostam de qualquer esforço em espanhol; \"mae\" é gíria simpática para \"amigo\" entre pares, a evitar com pessoas mais velhas.",
+    "pt_BR": "O espanhol é o idioma oficial e o inglês é comum nas áreas turísticas. As pessoas gostam de qualquer esforço em espanhol; \"mae\" é gíria simpática para \"cara\" entre colegas, melhor evitar com pessoas mais velhas.",
+    "fr": "L'espagnol est la langue officielle et l'anglais est courant dans les zones touristiques. Tout effort en espagnol est apprécié ; \"mae\" est un argot amical pour \"mec\" entre pairs, à éviter avec les aînés.",
+    "de": "Amtssprache ist Spanisch, in Touristengebieten ist Englisch verbreitet. Jeder Versuch auf Spanisch kommt gut an; \"mae\" ist freundlicher Slang für \"Kumpel\" unter Gleichaltrigen und sollte bei Älteren vermieden werden."
+   }
+  },
+  {
+   "id": "ct-CR-20",
+   "category": "festivals",
+   "text": {
+    "en": "On 15 September, Independence Day, schoolchildren parade and the evening before many families walk with handmade lanterns called \"faroles\". It is a family-friendly national celebration.",
+    "it": "Il 15 settembre, Giorno dell'Indipendenza, gli scolari sfilano e la sera prima molte famiglie camminano con lanterne fatte a mano chiamate \"faroles\". È una festa nazionale adatta alle famiglie.",
+    "es": "El 15 de setiembre, Día de la Independencia, los escolares desfilan y la noche anterior muchas familias caminan con faroles hechos a mano. Es una celebración nacional para toda la familia.",
+    "pt": "A 15 de setembro, Dia da Independência, os alunos desfilam e na véspera à noite muitas famílias caminham com lanternas feitas à mão, chamadas \"faroles\". É uma celebração nacional para toda a família.",
+    "pt_BR": "Em 15 de setembro, Dia da Independência, os alunos desfilam e na noite anterior muitas famílias caminham com lanternas feitas à mão, chamadas \"faroles\". É uma celebração nacional para toda a família.",
+    "fr": "Le 15 septembre, jour de l'Indépendance, les écoliers défilent et la veille au soir beaucoup de familles marchent avec des lanternes faites main appelées \"faroles\". C'est une fête nationale familiale.",
+    "de": "Am 15. September, dem Unabhängigkeitstag, marschieren Schulkinder, und am Abend zuvor ziehen viele Familien mit selbstgebastelten Laternen, den \"Faroles\", durch die Straßen. Es ist ein familienfreundliches Nationalfest."
+   }
+  },
+  {
+   "id": "ct-CR-21",
+   "category": "festivals",
+   "text": {
+    "en": "Holy Week (Semana Santa) is a major holiday period. Many shops and offices close on Thursday and Friday, and buses and beaches get busy, so plan ahead.",
+    "it": "La Settimana Santa è un importante periodo di festa. Molti negozi e uffici chiudono giovedì e venerdì, e autobus e spiagge sono affollati, quindi pianifica con anticipo.",
+    "es": "La Semana Santa es un periodo de feriado importante. Muchos comercios y oficinas cierran el jueves y el viernes, y los buses y las playas se llenan, así que planifica con tiempo.",
+    "pt": "A Semana Santa é um período de feriados importante. Muitas lojas e escritórios fecham à quinta e à sexta-feira, e os autocarros e as praias enchem-se, por isso planeia com antecedência.",
+    "pt_BR": "A Semana Santa é um período importante de feriados. Muitas lojas e escritórios fecham na quinta e na sexta, e ônibus e praias ficam lotados, então planeje com antecedência.",
+    "fr": "La Semaine sainte est une grande période de vacances. Beaucoup de commerces et de bureaux ferment le jeudi et le vendredi, et bus et plages sont bondés ; prévois donc à l'avance.",
+    "de": "Die Karwoche (Semana Santa) ist eine wichtige Ferienzeit. Viele Geschäfte und Büros schließen am Donnerstag und Freitag, Busse und Strände sind voll, also lieber frühzeitig planen."
+   }
+  },
+  {
+   "id": "ct-CR-22",
+   "category": "family",
+   "text": {
+    "en": "Family ties are strong, and Sunday lunch with relatives is a common tradition. Costa Ricans use two surnames, the father's first and then the mother's.",
+    "it": "I legami familiari sono forti e il pranzo domenicale con i parenti è una tradizione diffusa. I costaricani usano due cognomi: prima quello del padre, poi quello della madre.",
+    "es": "Los lazos familiares son fuertes y el almuerzo dominical con los parientes es una tradición común. Los costarricenses usan dos apellidos: primero el del padre y luego el de la madre.",
+    "pt": "Os laços familiares são fortes e o almoço de domingo com os parentes é uma tradição comum. Os costa-riquenhos usam dois apelidos: primeiro o do pai e depois o da mãe.",
+    "pt_BR": "Os laços familiares são fortes e o almoço de domingo com os parentes é uma tradição comum. Os costarriquenhos usam dois sobrenomes: primeiro o do pai e depois o da mãe.",
+    "fr": "Les liens familiaux sont forts et le déjeuner dominical avec les proches est une tradition courante. Les Costaricains portent deux noms de famille : d'abord celui du père, puis celui de la mère.",
+    "de": "Die Familienbande sind eng, und das Sonntagsessen mit Verwandten ist eine verbreitete Tradition. Costa Ricaner tragen zwei Nachnamen: zuerst den des Vaters, dann den der Mutter."
+   }
+  },
+  {
+   "id": "ct-CR-23",
+   "category": "money",
+   "text": {
+    "en": "The currency is the Costa Rican colón. US dollars are accepted in many tourist places, but change usually comes back in colones and rates vary, so carry some local cash.",
+    "it": "La valuta è il colón costaricano. I dollari statunitensi sono accettati in molti luoghi turistici, ma il resto torna di solito in colones e i cambi variano, quindi porta con te un po' di contanti locali.",
+    "es": "La moneda es el colón costarricense. Los dólares estadounidenses se aceptan en muchos sitios turísticos, pero el vuelto suele darse en colones y el tipo de cambio varía, así que lleva algo de efectivo local.",
+    "pt": "A moeda é o colón costa-riquenho. Os dólares americanos são aceites em muitos locais turísticos, mas o troco costuma vir em colones e as taxas variam, por isso leva algum dinheiro local.",
+    "pt_BR": "A moeda é o colón costarriquenho. Dólares americanos são aceitos em muitos locais turísticos, mas o troco costuma vir em colones e as taxas variam, então leve algum dinheiro local.",
+    "fr": "La monnaie est le colón costaricien. Les dollars américains sont acceptés dans de nombreux lieux touristiques, mais la monnaie est souvent rendue en colones et les taux varient ; garde un peu d'espèces locales.",
+    "de": "Die Währung ist der Costa-Rica-Colón. US-Dollar werden an vielen touristischen Orten akzeptiert, das Wechselgeld kommt aber meist in Colones und die Kurse schwanken, also etwas Bargeld in Landeswährung mitführen."
+   }
+  },
+  {
+   "id": "ct-CR-24",
+   "category": "photography",
+   "text": {
+    "en": "Ask before photographing people, especially children and members of indigenous communities. A smile and a quick \"¿Puedo tomarle una foto?\" is usually all it takes.",
+    "it": "Chiedi il permesso prima di fotografare le persone, soprattutto bambini e membri di comunità indigene. Di solito basta un sorriso e un rapido \"¿Puedo tomarle una foto?\".",
+    "es": "Pide permiso antes de fotografiar personas, sobre todo niños y miembros de comunidades indígenas. Normalmente basta una sonrisa y un rápido \"¿Puedo tomarle una foto?\".",
+    "pt": "Pede licença antes de fotografar pessoas, sobretudo crianças e membros de comunidades indígenas. Costuma bastar um sorriso e um rápido \"¿Puedo tomarle una foto?\".",
+    "pt_BR": "Peça permissão antes de fotografar pessoas, principalmente crianças e membros de comunidades indígenas. Em geral basta um sorriso e um rápido \"¿Puedo tomarle una foto?\".",
+    "fr": "Demande l'autorisation avant de photographier des personnes, surtout des enfants et des membres des communautés autochtones. Un sourire et un rapide \"¿Puedo tomarle una foto ?\" suffisent généralement.",
+    "de": "Fragen Sie vor Fotos von Menschen um Erlaubnis, besonders bei Kindern und Angehörigen indigener Gemeinschaften. Ein Lächeln und ein kurzes \"¿Puedo tomarle una foto?\" genügen meist."
+   }
+  },
+  {
+   "id": "ct-CR-25",
+   "category": "nightlife",
+   "text": {
+    "en": "Nights out are lively on Fridays and Saturdays, with live music and dancing to salsa, merengue and cumbia. Many locals also enjoy relaxed evenings at a \"soda\" or a friend's home.",
+    "it": "Le serate fuori sono vivaci il venerdì e il sabato, con musica dal vivo e balli di salsa, merengue e cumbia. Molti locali apprezzano anche serate tranquille in una \"soda\" o a casa di amici.",
+    "es": "Las salidas nocturnas son animadas los viernes y sábados, con música en vivo y baile de salsa, merengue y cumbia. Muchos también disfrutan de veladas tranquilas en una \"soda\" o en casa de amigos.",
+    "pt": "As saídas à noite animam-se às sextas e sábados, com música ao vivo e dança de salsa, merengue e cumbia. Muitos locais também gostam de serões descontraídos numa \"soda\" ou em casa de amigos.",
+    "pt_BR": "As saídas à noite ficam animadas nas sextas e sábados, com música ao vivo e dança de salsa, merengue e cumbia. Muitos locais também curtem noites tranquilas numa \"soda\" ou na casa de amigos.",
+    "fr": "Les sorties sont animées les vendredis et samedis, avec musique live et danse sur de la salsa, du merengue et de la cumbia. Beaucoup apprécient aussi les soirées tranquilles dans une \"soda\" ou chez des amis.",
+    "de": "Freitag- und Samstagabende sind lebhaft, mit Livemusik und Tanz zu Salsa, Merengue und Cumbia. Viele Einheimische genießen auch ruhige Abende in einer \"Soda\" oder bei Freunden zu Hause."
+   }
+  },
+  {
+   "id": "ct-CR-26",
+   "category": "nature",
+   "text": {
+    "en": "Several national parks limit daily visitors, so book entry tickets in advance and stay on marked trails. A local guide can help you spot wildlife without disturbing it.",
+    "it": "Diversi parchi nazionali limitano i visitatori giornalieri, quindi prenota i biglietti in anticipo e resta sui sentieri segnalati. Una guida locale ti aiuta a vedere gli animali senza disturbarli.",
+    "es": "Varios parques nacionales limitan los visitantes diarios, así que reserva las entradas con antelación y permanece en los senderos marcados. Un guía local ayuda a ver fauna sin molestarla.",
+    "pt": "Vários parques nacionais limitam os visitantes diários, por isso reserva os bilhetes com antecedência e fica nos trilhos marcados. Um guia local ajuda a ver a fauna sem a perturbar.",
+    "pt_BR": "Vários parques nacionais limitam os visitantes por dia, então reserve os ingressos com antecedência e fique nas trilhas sinalizadas. Um guia local ajuda a ver a fauna sem perturbá-la.",
+    "fr": "Plusieurs parcs nationaux limitent le nombre de visiteurs par jour ; réserve donc ton billet à l'avance et reste sur les sentiers balisés. Un guide local aide à observer la faune sans la déranger.",
+    "de": "Mehrere Nationalparks begrenzen die täglichen Besucher, also Tickets rechtzeitig buchen und auf markierten Wegen bleiben. Ein einheimischer Guide hilft, Tiere zu entdecken, ohne sie zu stören."
+   }
+  },
+  {
+   "id": "ct-CR-27",
+   "category": "nature",
+   "text": {
+    "en": "Do not feed monkeys or other wild animals, even if they approach you. Human food harms their health and changes their natural behavior.",
+    "it": "Non dare da mangiare a scimmie o altri animali selvatici, anche se si avvicinano. Il cibo umano danneggia la loro salute e ne altera il comportamento naturale.",
+    "es": "No alimentes a monos ni a otros animales silvestres, aunque se acerquen. La comida humana daña su salud y cambia su comportamiento natural.",
+    "pt": "Não alimentes macacos nem outros animais selvagens, mesmo que se aproximem. A comida humana prejudica a saúde deles e altera o comportamento natural.",
+    "pt_BR": "Não alimente macacos nem outros animais silvestres, mesmo que eles se aproximem. A comida humana prejudica a saúde deles e altera o comportamento natural.",
+    "fr": "Ne nourris pas les singes ni les autres animaux sauvages, même s'ils s'approchent. La nourriture humaine nuit à leur santé et modifie leur comportement naturel.",
+    "de": "Füttern Sie keine Affen oder andere Wildtiere, auch wenn sie sich nähern. Menschliche Nahrung schadet ihrer Gesundheit und verändert ihr natürliches Verhalten."
+   }
+  },
+  {
+   "id": "ct-CR-28",
+   "category": "safety",
+   "text": {
+    "en": "Many beaches, especially on the Pacific coast, have strong rip currents. Swim where lifeguards are present or locals are swimming, and ask about conditions first.",
+    "it": "Molte spiagge, soprattutto sulla costa del Pacifico, hanno forti correnti di risacca. Nuota dove ci sono bagnini o dove fanno il bagno i locali e informati prima sulle condizioni.",
+    "es": "Muchas playas, sobre todo en la costa del Pacífico, tienen corrientes de resaca fuertes. Nada donde haya salvavidas o donde se bañe la gente local, y pregunta antes por las condiciones.",
+    "pt": "Muitas praias, sobretudo na costa do Pacífico, têm correntes de retorno fortes. Nada onde haja nadadores-salvadores ou onde os locais se banhem, e pergunta antes pelas condições.",
+    "pt_BR": "Muitas praias, principalmente na costa do Pacífico, têm correntes de retorno fortes. Nade onde houver salva-vidas ou onde os locais estejam nadando, e pergunte antes sobre as condições.",
+    "fr": "De nombreuses plages, surtout sur la côte Pacifique, ont de forts courants d'arrachement. Baigne-toi là où il y a des sauveteurs ou des habitants, et renseigne-toi d'abord sur les conditions.",
+    "de": "Viele Strände, besonders an der Pazifikküste, haben starke Rippströmungen. Baden Sie dort, wo Rettungsschwimmer sind oder Einheimische schwimmen, und erkundigen Sie sich vorher nach den Bedingungen."
+   }
+  },
+  {
+   "id": "ct-CR-29",
+   "category": "safety",
+   "text": {
+    "en": "Petty theft happens, so avoid leaving bags or electronics visible in parked cars or on beach towels. Keep a copy of your passport and carry valuables discreetly.",
+    "it": "Piccoli furti accadono, quindi evita di lasciare borse o dispositivi elettronici in vista in auto o sull'asciugamano in spiaggia. Tieni una copia del passaporto e porta gli oggetti di valore con discrezione.",
+    "es": "Ocurren hurtos menores, así que evita dejar bolsos o aparatos electrónicos a la vista en carros estacionados o sobre la toalla en la playa. Guarda una copia del pasaporte y lleva los objetos de valor con discreción.",
+    "pt": "Acontecem pequenos furtos, por isso evita deixar malas ou aparelhos eletrónicos à vista em carros estacionados ou na toalha da praia. Guarda uma cópia do passaporte e leva os objetos de valor com discrição.",
+    "pt_BR": "Furtos pequenos acontecem, então evite deixar bolsas ou eletrônicos à vista em carros estacionados ou na canga na praia. Guarde uma cópia do passaporte e leve os objetos de valor com discrição.",
+    "fr": "Les petits vols existent, évite donc de laisser sacs ou appareils électroniques visibles dans une voiture garée ou sur ta serviette de plage. Garde une copie de ton passeport et porte tes objets de valeur discrètement.",
+    "de": "Kleinere Diebstähle kommen vor, lassen Sie daher keine Taschen oder Elektronik sichtbar im geparkten Auto oder auf dem Strandtuch liegen. Bewahren Sie eine Passkopie auf und tragen Sie Wertsachen unauffällig."
+   }
+  },
+  {
+   "id": "ct-CR-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Costa Ricans take pride in having abolished their army in 1948 and in their protected nature. Praising peace, education and the country's rainforests is a warm way to connect.",
+    "it": "I costaricani sono orgogliosi di aver abolito l'esercito nel 1948 e della loro natura protetta. Elogiare la pace, l'istruzione e le foreste pluviali del paese è un modo caloroso di creare un legame.",
+    "es": "Los costarricenses se enorgullecen de haber abolido su ejército en 1948 y de su naturaleza protegida. Elogiar la paz, la educación y los bosques lluviosos del país es una forma cálida de conectar.",
+    "pt": "Os costa-riquenhos têm orgulho de ter abolido o exército em 1948 e da sua natureza protegida. Elogiar a paz, a educação e as florestas tropicais do país é uma forma calorosa de criar ligação.",
+    "pt_BR": "Os costarriquenhos têm orgulho de ter abolido o exército em 1948 e da sua natureza protegida. Elogiar a paz, a educação e as florestas tropicais do país é uma forma calorosa de criar conexão.",
+    "fr": "Les Costaricains sont fiers d'avoir aboli leur armée en 1948 et de leur nature protégée. Saluer la paix, l'éducation et les forêts tropicales du pays est une façon chaleureuse de créer un lien.",
+    "de": "Costa Ricaner sind stolz darauf, 1948 ihre Armee abgeschafft zu haben, und auf ihre geschützte Natur. Frieden, Bildung und die Regenwälder des Landes zu loben, ist ein herzlicher Weg, Kontakt zu knüpfen."
+   }
+  }
+ ],
+ "CY": [
+  {
+   "id": "ct-CY-01",
+   "category": "greetings",
+   "text": {
+    "en": "A firm handshake with eye contact is the usual greeting. Friends often add a hug or a kiss on both cheeks. In Greek, \"Yia sou\" is hello and \"Kalimera\" means good morning.",
+    "it": "La solita forma di saluto è una stretta di mano decisa con contatto visivo. Tra amici si aggiunge spesso un abbraccio o un bacio su entrambe le guance. In greco \"Yia sou\" è ciao e \"Kalimera\" è buongiorno.",
+    "es": "El saludo habitual es un apretón de manos firme con contacto visual. Entre amigos suele añadirse un abrazo o un beso en ambas mejillas. En griego, \"Yia sou\" es hola y \"Kalimera\" significa buenos días.",
+    "pt": "O cumprimento habitual é um aperto de mão firme, com contacto visual. Entre amigos junta-se muitas vezes um abraço ou um beijo em ambas as faces. Em grego, \"Yia sou\" é olá e \"Kalimera\" é bom dia.",
+    "pt_BR": "O cumprimento habitual é um aperto de mão firme, com contato visual. Entre amigos costuma-se somar um abraço ou um beijo nas duas bochechas. Em grego, \"Yia sou\" é oi e \"Kalimera\" é bom dia.",
+    "fr": "La salutation habituelle est une poignée de main ferme avec contact visuel. Entre amis, on ajoute souvent une accolade ou une bise sur les deux joues. En grec, \"Yia sou\" veut dire salut et \"Kalimera\" bonjour.",
+    "de": "Üblich ist ein fester Händedruck mit Blickkontakt. Unter Freunden kommt oft eine Umarmung oder ein Wangenkuss auf beide Seiten dazu. Auf Griechisch heißt \"Yia sou\" Hallo und \"Kalimera\" Guten Morgen."
+   }
+  },
+  {
+   "id": "ct-CY-02",
+   "category": "greetings",
+   "text": {
+    "en": "Greek Cypriots and Turkish Cypriots speak different languages, so it helps to ask which one a person prefers. A greeting in their language, like \"Merhaba\" or \"Yia sou\", is warmly received.",
+    "it": "I greco-ciprioti e i turco-ciprioti parlano lingue diverse, quindi è utile chiedere quale preferisca la persona. Un saluto nella sua lingua, come \"Merhaba\" o \"Yia sou\", è accolto con calore.",
+    "es": "Los grecochipriotas y los turcochipriotas hablan idiomas distintos, así que conviene preguntar cuál prefiere cada persona. Un saludo en su idioma, como \"Merhaba\" o \"Yia sou\", se recibe con cariño.",
+    "pt": "Os cipriotas gregos e os cipriotas turcos falam línguas diferentes, por isso ajuda perguntar qual a pessoa prefere. Um cumprimento na sua língua, como \"Merhaba\" ou \"Yia sou\", é recebido com carinho.",
+    "pt_BR": "Cipriotas gregos e cipriotas turcos falam idiomas diferentes, então ajuda perguntar qual a pessoa prefere. Um cumprimento no idioma dela, como \"Merhaba\" ou \"Yia sou\", é recebido com carinho.",
+    "fr": "Les Chypriotes grecs et turcs parlent des langues différentes, il est donc utile de demander laquelle la personne préfère. Une salutation dans sa langue, comme \"Merhaba\" ou \"Yia sou\", est très bien accueillie.",
+    "de": "Griechische und türkische Zyprer sprechen verschiedene Sprachen, es hilft also zu fragen, welche die Person bevorzugt. Ein Gruß in ihrer Sprache wie \"Merhaba\" oder \"Yia sou\" kommt herzlich an."
+   }
+  },
+  {
+   "id": "ct-CY-03",
+   "category": "conversation",
+   "text": {
+    "en": "People enjoy asking where you are from and what you think of the island. Food, family, the weather and local villages make easy, friendly topics.",
+    "it": "Alla gente piace chiedere da dove vieni e cosa pensi dell'isola. Cibo, famiglia, tempo e villaggi locali sono argomenti semplici e cordiali.",
+    "es": "A la gente le gusta preguntar de dónde eres y qué piensas de la isla. La comida, la familia, el clima y los pueblos locales son temas fáciles y amistosos.",
+    "pt": "As pessoas gostam de perguntar de onde és e o que achas da ilha. Comida, família, clima e aldeias locais são temas fáceis e simpáticos.",
+    "pt_BR": "As pessoas gostam de perguntar de onde você é e o que acha da ilha. Comida, família, clima e vilarejos locais são assuntos fáceis e simpáticos.",
+    "fr": "On aime te demander d'où tu viens et ce que tu penses de l'île. La cuisine, la famille, la météo et les villages locaux sont des sujets simples et conviviaux.",
+    "de": "Man fragt gern, woher Sie kommen und was Sie von der Insel halten. Essen, Familie, Wetter und die Dörfer sind einfache, freundliche Themen."
+   }
+  },
+  {
+   "id": "ct-CY-04",
+   "category": "conversation",
+   "text": {
+    "en": "The division of the island is a sensitive topic. Listen respectfully, avoid taking sides, and let your local contact decide whether to discuss it.",
+    "it": "La divisione dell'isola è un argomento delicato. Ascolta con rispetto, evita di schierarti e lascia che sia il tuo interlocutore locale a decidere se parlarne.",
+    "es": "La división de la isla es un tema delicado. Escucha con respeto, evita tomar partido y deja que tu contacto local decida si quiere hablar de ello.",
+    "pt": "A divisão da ilha é um tema sensível. Ouve com respeito, evita tomar partido e deixa que o teu contacto local decida se quer falar disso.",
+    "pt_BR": "A divisão da ilha é um assunto delicado. Ouça com respeito, evite tomar partido e deixe que seu contato local decida se quer falar sobre isso.",
+    "fr": "La division de l'île est un sujet sensible. Écoute avec respect, évite de prendre parti et laisse ton interlocuteur local décider s'il veut en parler.",
+    "de": "Die Teilung der Insel ist ein heikles Thema. Hören Sie respektvoll zu, ergreifen Sie keine Partei und überlassen Sie Ihrem Gegenüber, ob darüber gesprochen wird."
+   }
+  },
+  {
+   "id": "ct-CY-05",
+   "category": "dining",
+   "text": {
+    "en": "Meze is a long meal of many small dishes brought to the table in turn, such as halloumi, dips, grilled meats and salads. Pace yourself, as the main dishes come last.",
+    "it": "Il meze è un lungo pasto di tanti piccoli piatti portati a tavola uno dopo l'altro, come halloumi, salse, carni alla griglia e insalate. Dosati, perché i piatti principali arrivano per ultimi.",
+    "es": "El meze es una comida larga con muchos platos pequeños que llegan a la mesa uno tras otro, como halloumi, salsas, carnes a la parrilla y ensaladas. Dosifícate, porque los platos fuertes llegan al final.",
+    "pt": "O meze é uma refeição longa de muitos pratos pequenos servidos à vez, como halloumi, molhos, carnes grelhadas e saladas. Vai com calma, porque os pratos principais chegam no fim.",
+    "pt_BR": "O meze é uma refeição longa com muitos pratinhos servidos um após o outro, como halloumi, pastas, carnes grelhadas e saladas. Vá com calma, porque os pratos principais vêm por último.",
+    "fr": "Le meze est un long repas composé de nombreux petits plats servis à tour de rôle, comme le halloumi, des tartinades, des grillades et des salades. Vas-y doucement, car les plats principaux arrivent à la fin.",
+    "de": "Meze ist ein langes Essen aus vielen kleinen Gerichten, die nacheinander kommen, etwa Halloumi, Dips, Grillfleisch und Salate. Teilen Sie sich das Essen ein, denn die Hauptgerichte kommen zuletzt."
+   }
+  },
+  {
+   "id": "ct-CY-06",
+   "category": "dining",
+   "text": {
+    "en": "Cypriot coffee is served in a small cup with the grounds left at the bottom, so stop before the last sip. Ask for it \"sketos\" (no sugar), \"metrios\" (medium) or \"glykos\" (sweet).",
+    "it": "Il caffè cipriota si serve in una tazzina con i fondi sul fondo, quindi fermati prima dell'ultimo sorso. Chiedilo \"sketos\" (senza zucchero), \"metrios\" (medio) o \"glykos\" (dolce).",
+    "es": "El café chipriota se sirve en una taza pequeña con los posos en el fondo, así que detente antes del último sorbo. Pídelo \"sketos\" (sin azúcar), \"metrios\" (medio) o \"glykos\" (dulce).",
+    "pt": "O café cipriota serve-se numa chávena pequena com a borra no fundo, por isso pára antes do último gole. Pede-o \"sketos\" (sem açúcar), \"metrios\" (médio) ou \"glykos\" (doce).",
+    "pt_BR": "O café cipriota é servido em uma xícara pequena com a borra no fundo, então pare antes do último gole. Peça \"sketos\" (sem açúcar), \"metrios\" (médio) ou \"glykos\" (doce).",
+    "fr": "Le café chypriote est servi dans une petite tasse avec le marc au fond ; arrête-toi avant la dernière gorgée. Demande-le \"sketos\" (sans sucre), \"metrios\" (moyen) ou \"glykos\" (sucré).",
+    "de": "Zyprischer Kaffee kommt in einer kleinen Tasse mit Kaffeesatz am Boden, hören Sie also vor dem letzten Schluck auf. Bestellen Sie ihn \"sketos\" (ohne Zucker), \"metrios\" (mittel) oder \"glykos\" (süß)."
+   }
+  },
+  {
+   "id": "ct-CY-07",
+   "category": "tipping",
+   "text": {
+    "en": "In restaurants, a tip of around 10% is customary if no service charge is on the bill. In cafés and taxis, rounding up the amount is common.",
+    "it": "Nei ristoranti è usuale una mancia di circa il 10% se il servizio non è incluso nel conto. In caffè e taxi si usa arrotondare l'importo.",
+    "es": "En los restaurantes es habitual dejar una propina de alrededor del 10% si la cuenta no incluye servicio. En cafés y taxis es común redondear la cantidad.",
+    "pt": "Nos restaurantes é costume deixar cerca de 10% de gorjeta se a conta não incluir serviço. Em cafés e táxis é comum arredondar o valor.",
+    "pt_BR": "Nos restaurantes é costume deixar cerca de 10% de gorjeta se a conta não incluir serviço. Em cafés e táxis é comum arredondar o valor.",
+    "fr": "Au restaurant, un pourboire d'environ 10 % est d'usage si l'addition n'inclut pas le service. Dans les cafés et les taxis, on arrondit souvent la somme.",
+    "de": "Im Restaurant sind etwa 10 % Trinkgeld üblich, wenn kein Servicezuschlag auf der Rechnung steht. In Cafés und Taxis rundet man häufig den Betrag auf."
+   }
+  },
+  {
+   "id": "ct-CY-08",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to a home, bring something small like pastries, flowers, or a box of local sweets. Hosts are very generous, and refusing food or drink politely may take a few tries.",
+    "it": "Se sei invitato a casa, porta qualcosa di piccolo come pasticcini, fiori o una scatola di dolci locali. I padroni di casa sono molto generosi e rifiutare cibo o bevande con garbo può richiedere qualche tentativo.",
+    "es": "Si te invitan a una casa, lleva algo pequeño como pasteles, flores o una caja de dulces locales. Los anfitriones son muy generosos y rechazar comida o bebida con cortesía puede requerir varios intentos.",
+    "pt": "Se fores convidado a casa de alguém, leva algo pequeno como pastéis, flores ou uma caixa de doces locais. Os anfitriões são muito generosos e recusar comida ou bebida com educação pode exigir várias tentativas.",
+    "pt_BR": "Se for convidado para a casa de alguém, leve algo pequeno como flores ou uma caixa de doces locais. Os anfitriões são muito generosos e recusar comida ou bebida com educação pode exigir algumas tentativas.",
+    "fr": "Si tu es invité chez quelqu'un, apporte un petit présent comme des pâtisseries, des fleurs ou une boîte de douceurs locales. Les hôtes sont très généreux et refuser poliment à manger ou à boire peut demander plusieurs essais.",
+    "de": "Bei Einladungen bringt man eine Kleinigkeit mit, etwa Gebäck, Blumen oder eine Schachtel lokaler Süßigkeiten. Gastgeber sind sehr großzügig, und höfliches Ablehnen von Essen oder Getränken kann mehrere Anläufe brauchen."
+   }
+  },
+  {
+   "id": "ct-CY-09",
+   "category": "dress",
+   "text": {
+    "en": "Light, breathable clothing suits the hot summers, and beachwear belongs at the beach. Away from the coast, in towns and villages, people dress a bit more modestly.",
+    "it": "Abiti leggeri e traspiranti sono adatti alle estati calde e l'abbigliamento da spiaggia va tenuto in spiaggia. Lontano dalla costa, in città e villaggi, ci si veste in modo un po' più sobrio.",
+    "es": "La ropa ligera y transpirable es ideal para los veranos calurosos, y la ropa de playa se queda en la playa. Lejos de la costa, en ciudades y pueblos, se viste con algo más de recato.",
+    "pt": "Roupa leve e respirável convém aos verões quentes, e a roupa de praia fica na praia. Longe da costa, em cidades e aldeias, as pessoas vestem-se de forma um pouco mais discreta.",
+    "pt_BR": "Roupas leves e respiráveis combinam com os verões quentes, e roupa de praia fica na praia. Longe do litoral, em cidades e vilarejos, as pessoas se vestem de forma um pouco mais discreta.",
+    "fr": "Des vêtements légers et respirants conviennent aux étés chauds, et la tenue de plage reste à la plage. Loin de la côte, dans les villes et villages, on s'habille un peu plus sobrement.",
+    "de": "Leichte, luftige Kleidung passt zu den heißen Sommern, Strandkleidung bleibt am Strand. Abseits der Küste, in Städten und Dörfern, kleidet man sich etwas zurückhaltender."
+   }
+  },
+  {
+   "id": "ct-CY-10",
+   "category": "religion_sites",
+   "text": {
+    "en": "Most Greek Cypriots belong to the Orthodox Church. In churches and monasteries, cover your shoulders and knees, speak quietly and ask before taking photos inside.",
+    "it": "La maggior parte dei greco-ciprioti appartiene alla Chiesa ortodossa. In chiese e monasteri copri spalle e ginocchia, parla piano e chiedi prima di fare foto all'interno.",
+    "es": "La mayoría de los grecochipriotas pertenece a la Iglesia ortodoxa. En iglesias y monasterios cubre hombros y rodillas, habla bajo y pregunta antes de fotografiar el interior.",
+    "pt": "A maioria dos cipriotas gregos pertence à Igreja Ortodoxa. Em igrejas e mosteiros, cobre os ombros e os joelhos, fala baixo e pergunta antes de fotografar o interior.",
+    "pt_BR": "A maioria dos cipriotas gregos pertence à Igreja Ortodoxa. Em igrejas e mosteiros, cubra ombros e joelhos, fale baixo e pergunte antes de fotografar o interior.",
+    "fr": "La plupart des Chypriotes grecs appartiennent à l'Église orthodoxe. Dans les églises et monastères, couvre-toi les épaules et les genoux, parle bas et demande avant de photographier l'intérieur.",
+    "de": "Die meisten griechischen Zyprer gehören der orthodoxen Kirche an. In Kirchen und Klöstern Schultern und Knie bedecken, leise sprechen und vor Fotos im Innenraum fragen."
+   }
+  },
+  {
+   "id": "ct-CY-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "The Troodos Mountains hold several painted Byzantine churches listed by UNESCO. They are small working places of worship, so respect services and posted visiting hours.",
+    "it": "Sui monti Troodos si trovano diverse chiese bizantine dipinte inserite dall'UNESCO nel patrimonio mondiale. Sono piccoli luoghi di culto attivi, quindi rispetta le funzioni e gli orari di visita indicati.",
+    "es": "En las montañas de Troodos hay varias iglesias bizantinas pintadas reconocidas por la UNESCO. Son pequeños lugares de culto en uso, así que respeta los servicios y los horarios de visita indicados.",
+    "pt": "Nas montanhas de Troodos há várias igrejas bizantinas pintadas classificadas pela UNESCO. São pequenos locais de culto ainda em uso, por isso respeita as cerimónias e os horários de visita afixados.",
+    "pt_BR": "Nas montanhas de Troodos há várias igrejas bizantinas pintadas reconhecidas pela UNESCO. São pequenos locais de culto ainda em uso, então respeite as cerimônias e os horários de visita afixados.",
+    "fr": "Les monts Troodos abritent plusieurs églises byzantines peintes inscrites par l'UNESCO. Ce sont de petits lieux de culte en activité ; respecte donc les offices et les horaires de visite affichés.",
+    "de": "Im Troodos-Gebirge stehen mehrere bemalte byzantinische Kirchen, die zum UNESCO-Welterbe gehören. Es sind kleine, aktive Gotteshäuser, achten Sie daher Gottesdienste und ausgehängte Besuchszeiten."
+   }
+  },
+  {
+   "id": "ct-CY-12",
+   "category": "gestures",
+   "text": {
+    "en": "Nodding up and clicking the tongue can mean \"no\" in Greek-speaking areas, while a downward nod means \"yes\". An open palm pushed toward someone's face is rude, so avoid it.",
+    "it": "Nelle zone di lingua greca un cenno della testa verso l'alto con uno schiocco della lingua può significare \"no\", mentre un cenno verso il basso significa \"sì\". Il palmo aperto spinto verso il viso di qualcuno è maleducato, evitalo.",
+    "es": "En zonas de habla griega, levantar la cabeza chasqueando la lengua puede significar \"no\", mientras que un asentimiento hacia abajo significa \"sí\". La palma abierta hacia la cara de alguien es de mala educación, evítala.",
+    "pt": "Em zonas de língua grega, levantar a cabeça estalando a língua pode significar \"não\", enquanto um aceno para baixo significa \"sim\". A palma aberta empurrada para a cara de alguém é indelicada, evita-a.",
+    "pt_BR": "Em áreas de língua grega, levantar a cabeça estalando a língua pode significar \"não\", enquanto um aceno para baixo significa \"sim\". A palma aberta apontada para o rosto de alguém é rude, evite.",
+    "fr": "Dans les zones hellénophones, relever la tête en claquant la langue peut signifier \"non\", tandis qu'un hochement vers le bas veut dire \"oui\". La paume ouverte tendue vers le visage de quelqu'un est impolie, évite-la.",
+    "de": "In griechischsprachigen Gegenden kann ein Kopfnicken nach oben mit Zungenschnalzen \"nein\" bedeuten, ein Nicken nach unten \"ja\". Eine offene Handfläche vor dem Gesicht eines anderen gilt als unhöflich, vermeiden Sie das."
+   }
+  },
+  {
+   "id": "ct-CY-13",
+   "category": "gestures",
+   "text": {
+    "en": "Cypriots tend to speak expressively with their hands and stand close during conversation. This usually shows interest and warmth, so there is no need to step back.",
+    "it": "I ciprioti tendono a parlare con le mani in modo espressivo e a stare vicini durante la conversazione. Di solito è segno di interesse e calore, quindi non serve allontanarsi.",
+    "es": "Los chipriotas suelen hablar con las manos de forma expresiva y se colocan cerca al conversar. Normalmente es señal de interés y calidez, así que no hace falta retroceder.",
+    "pt": "Os cipriotas tendem a falar com as mãos de forma expressiva e a ficar perto durante a conversa. Costuma ser sinal de interesse e simpatia, por isso não é preciso recuar.",
+    "pt_BR": "Os cipriotas costumam falar com as mãos de forma expressiva e ficar perto durante a conversa. Em geral é sinal de interesse e simpatia, então não precisa recuar.",
+    "fr": "Les Chypriotes parlent volontiers avec les mains et se tiennent près de leur interlocuteur. C'est généralement un signe d'intérêt et de chaleur, inutile de reculer.",
+    "de": "Zyprer sprechen oft ausdrucksvoll mit den Händen und stehen im Gespräch nah beieinander. Das zeigt meist Interesse und Wärme, man muss also nicht zurückweichen."
+   }
+  },
+  {
+   "id": "ct-CY-14",
+   "category": "punctuality",
+   "text": {
+    "en": "Social events often start a little late and no one minds if you arrive 15 minutes after the agreed time. For business meetings and flights, aim to be on time.",
+    "it": "Gli eventi sociali spesso iniziano un po' in ritardo e nessuno si offende se arrivi 15 minuti dopo l'orario concordato. Per riunioni di lavoro e voli, cerca di essere puntuale.",
+    "es": "Los eventos sociales suelen empezar algo tarde y a nadie le molesta que llegues 15 minutos después de la hora acordada. Para reuniones de trabajo y vuelos, procura ser puntual.",
+    "pt": "Os eventos sociais costumam começar um pouco tarde e ninguém se importa se chegares 15 minutos depois da hora combinada. Para reuniões de trabalho e voos, procura ser pontual.",
+    "pt_BR": "Os eventos sociais costumam começar um pouco atrasados e ninguém se importa se você chegar 15 minutos depois do combinado. Para reuniões de trabalho e voos, procure ser pontual.",
+    "fr": "Les événements entre amis commencent souvent un peu en retard et personne ne s'offusque si tu arrives 15 minutes après l'heure convenue. Pour les rendez-vous professionnels et les vols, sois à l'heure.",
+    "de": "Private Treffen beginnen oft etwas später, und niemand stört sich an 15 Minuten Verspätung. Bei Geschäftsterminen und Flügen sollte man pünktlich sein."
+   }
+  },
+  {
+   "id": "ct-CY-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "Siesta hours matter in small towns: many shops close for a few hours in the afternoon and some also close earlier on Wednesdays or Saturdays. Check opening times.",
+    "it": "Le ore della siesta contano nelle piccole città: molti negozi chiudono per qualche ora nel pomeriggio e alcuni chiudono prima il mercoledì o il sabato. Controlla gli orari di apertura.",
+    "es": "El horario de siesta importa en los pueblos pequeños: muchas tiendas cierran unas horas por la tarde y algunas cierran antes los miércoles o sábados. Consulta los horarios.",
+    "pt": "O horário da sesta conta nas localidades pequenas: muitas lojas fecham algumas horas à tarde e algumas fecham mais cedo às quartas ou sábados. Confirma os horários de abertura.",
+    "pt_BR": "O horário da sesta conta em cidades pequenas: muitas lojas fecham por algumas horas à tarde e algumas fecham mais cedo às quartas ou sábados. Confira os horários de funcionamento.",
+    "fr": "Les heures de sieste comptent dans les petites villes : beaucoup de commerces ferment quelques heures l'après-midi et certains ferment plus tôt le mercredi ou le samedi. Vérifie les horaires.",
+    "de": "In kleineren Orten zählt die Siesta: Viele Geschäfte schließen nachmittags für einige Stunden, manche mittwochs oder samstags früher. Prüfen Sie die Öffnungszeiten."
+   }
+  },
+  {
+   "id": "ct-CY-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "Cypriots are very hospitable and may strike up a chat with strangers or offer help unprompted. Greeting people politely when entering a shop or waiting room is expected.",
+    "it": "I ciprioti sono molto ospitali e possono attaccare discorso con degli sconosciuti o offrire aiuto spontaneamente. Salutare con cortesia entrando in un negozio o in una sala d'attesa è la norma.",
+    "es": "Los chipriotas son muy hospitalarios y pueden entablar conversación con desconocidos u ofrecer ayuda sin que se la pidan. Se espera saludar con cortesía al entrar en una tienda o sala de espera.",
+    "pt": "Os cipriotas são muito hospitaleiros e podem puxar conversa com desconhecidos ou oferecer ajuda sem que lha peçam. Espera-se um cumprimento cortês ao entrar numa loja ou sala de espera.",
+    "pt_BR": "Os cipriotas são muito hospitaleiros e podem puxar conversa com desconhecidos ou oferecer ajuda sem que ninguém peça. É esperado cumprimentar com educação ao entrar em uma loja ou sala de espera.",
+    "fr": "Les Chypriotes sont très accueillants et peuvent engager la conversation avec des inconnus ou proposer leur aide spontanément. On s'attend à un salut poli en entrant dans un magasin ou une salle d'attente.",
+    "de": "Zyprer sind sehr gastfreundlich, sprechen Fremde gern an oder bieten ungefragt Hilfe an. Beim Betreten eines Geschäfts oder Wartezimmers wird ein höflicher Gruß erwartet."
+   }
+  },
+  {
+   "id": "ct-CY-17",
+   "category": "transport",
+   "text": {
+    "en": "Traffic drives on the left, as in the UK. If you rent a car, take extra care at roundabouts and when crossing roads as a pedestrian.",
+    "it": "Si guida a sinistra, come nel Regno Unito. Se noleggi un'auto, fai particolare attenzione alle rotatorie e quando attraversi la strada a piedi.",
+    "es": "Se conduce por la izquierda, como en el Reino Unido. Si alquilas un coche, ten especial cuidado en las rotondas y al cruzar las calles como peatón.",
+    "pt": "Conduz-se pela esquerda, como no Reino Unido. Se alugares um carro, tem cuidado extra nas rotundas e ao atravessar a rua como peão.",
+    "pt_BR": "Dirige-se pela esquerda, como no Reino Unido. Se alugar um carro, tenha cuidado extra nas rotatórias e ao atravessar a rua como pedestre.",
+    "fr": "On roule à gauche, comme au Royaume-Uni. Si tu loues une voiture, fais très attention aux ronds-points et quand tu traverses la rue à pied.",
+    "de": "Es herrscht Linksverkehr wie in Großbritannien. Wer ein Auto mietet, sollte an Kreisverkehren und als Fußgänger beim Überqueren der Straße besonders aufpassen."
+   }
+  },
+  {
+   "id": "ct-CY-18",
+   "category": "transport",
+   "text": {
+    "en": "There are no trains on the island. Intercity buses and taxis are the main public options, but many visitors rent a car to reach villages and mountain areas.",
+    "it": "Sull'isola non ci sono treni. Autobus interurbani e taxi sono le principali opzioni pubbliche, ma molti visitatori noleggiano un'auto per raggiungere villaggi e zone montane.",
+    "es": "En la isla no hay trenes. Los autobuses interurbanos y los taxis son las principales opciones públicas, pero muchos visitantes alquilan un coche para llegar a pueblos y zonas de montaña.",
+    "pt": "Não há comboios na ilha. Os autocarros interurbanos e os táxis são as principais opções públicas, mas muitos visitantes alugam carro para chegar às aldeias e à montanha.",
+    "pt_BR": "Não há trens na ilha. Ônibus intermunicipais e táxis são as principais opções públicas, mas muitos visitantes alugam um carro para chegar a vilarejos e áreas de montanha.",
+    "fr": "Il n'y a pas de trains sur l'île. Les bus interurbains et les taxis sont les principales options publiques, mais beaucoup de visiteurs louent une voiture pour rejoindre les villages et la montagne.",
+    "de": "Auf der Insel gibt es keine Züge. Überlandbusse und Taxis sind die wichtigsten öffentlichen Verkehrsmittel, doch viele Besucher mieten ein Auto, um Dörfer und Berge zu erreichen."
+   }
+  },
+  {
+   "id": "ct-CY-19",
+   "category": "language",
+   "text": {
+    "en": "Greek and Turkish are the official languages, and English is widely spoken because of the island's British past. Learning \"efharisto\" (thank you) or \"teşekkürler\" earns smiles.",
+    "it": "Greco e turco sono le lingue ufficiali e l'inglese è molto diffuso per il passato britannico dell'isola. Imparare \"efharisto\" (grazie) o \"teşekkürler\" fa guadagnare sorrisi.",
+    "es": "El griego y el turco son los idiomas oficiales, y el inglés se habla mucho por el pasado británico de la isla. Aprender \"efharisto\" (gracias) o \"teşekkürler\" te granjea sonrisas.",
+    "pt": "O grego e o turco são as línguas oficiais e o inglês é muito falado devido ao passado britânico da ilha. Aprender \"efharisto\" (obrigado) ou \"teşekkürler\" rende sorrisos.",
+    "pt_BR": "O grego e o turco são os idiomas oficiais e o inglês é muito falado por causa do passado britânico da ilha. Aprender \"efharisto\" (obrigado) ou \"teşekkürler\" rende sorrisos.",
+    "fr": "Le grec et le turc sont les langues officielles, et l'anglais est très répandu en raison du passé britannique de l'île. Apprendre \"efharisto\" (merci) ou \"teşekkürler\" te vaudra des sourires.",
+    "de": "Griechisch und Türkisch sind Amtssprachen, und Englisch wird wegen der britischen Vergangenheit der Insel viel gesprochen. Wer \"efharisto\" (danke) oder \"teşekkürler\" lernt, erntet Lächeln."
+   }
+  },
+  {
+   "id": "ct-CY-20",
+   "category": "festivals",
+   "text": {
+    "en": "Orthodox Easter is the biggest celebration of the year. Families attend a midnight service, share red-dyed eggs, and bake flaounes, savory cheese pastries.",
+    "it": "La Pasqua ortodossa è la festa più grande dell'anno. Le famiglie partecipano alla funzione di mezzanotte, condividono uova tinte di rosso e preparano le flaounes, dolci salati al formaggio.",
+    "es": "La Pascua ortodoxa es la mayor celebración del año. Las familias asisten a la misa de medianoche, comparten huevos teñidos de rojo y hornean flaounes, pasteles salados de queso.",
+    "pt": "A Páscoa ortodoxa é a maior celebração do ano. As famílias assistem à cerimónia da meia-noite, partilham ovos pintados de vermelho e fazem flaounes, pastéis salgados de queijo.",
+    "pt_BR": "A Páscoa ortodoxa é a maior celebração do ano. As famílias assistem à missa da meia-noite, dividem ovos tingidos de vermelho e assam flaounes, tortinhas salgadas de queijo.",
+    "fr": "Les Pâques orthodoxes sont la plus grande fête de l'année. Les familles assistent à l'office de minuit, partagent des œufs teints en rouge et cuisent des flaounes, petits chaussons salés au fromage.",
+    "de": "Das orthodoxe Osterfest ist das größte Fest des Jahres. Familien besuchen den Mitternachtsgottesdienst, teilen rot gefärbte Eier und backen Flaounes, herzhafte Käsetaschen."
+   }
+  },
+  {
+   "id": "ct-CY-21",
+   "category": "festivals",
+   "text": {
+    "en": "Kataklysmos, the Festival of the Flood, takes place in early summer with water games, music and food, especially in coastal towns like Larnaca. Expect to get splashed.",
+    "it": "Il Kataklysmos, la Festa del Diluvio, si tiene all'inizio dell'estate con giochi d'acqua, musica e cibo, soprattutto nelle città costiere come Larnaca. Aspettati di essere spruzzato.",
+    "es": "El Kataklysmos, la Fiesta del Diluvio, se celebra a principios del verano con juegos de agua, música y comida, sobre todo en ciudades costeras como Larnaca. Prepárate para mojarte.",
+    "pt": "O Kataklysmos, a Festa do Dilúvio, realiza-se no início do verão com jogos de água, música e comida, sobretudo em cidades costeiras como Larnaca. Prepara-te para ficar molhado.",
+    "pt_BR": "O Kataklysmos, a Festa do Dilúvio, acontece no começo do verão com brincadeiras com água, música e comida, principalmente em cidades litorâneas como Larnaca. Prepare-se para se molhar.",
+    "fr": "Le Kataklysmos, la fête du Déluge, a lieu au début de l'été avec jeux d'eau, musique et cuisine, surtout dans les villes côtières comme Larnaca. Prépare-toi à être éclaboussé.",
+    "de": "Das Kataklysmos-Fest, das Fest der Sintflut, findet im Frühsommer mit Wasserspielen, Musik und Essen statt, besonders in Küstenstädten wie Larnaka. Rechnen Sie damit, nass zu werden."
+   }
+  },
+  {
+   "id": "ct-CY-22",
+   "category": "family",
+   "text": {
+    "en": "Family is central, and relatives often live close together. Sunday lunches with grandparents, aunts and cousins are common, and elders are treated with great respect.",
+    "it": "La famiglia è centrale e i parenti vivono spesso vicini. I pranzi della domenica con nonni, zii e cugini sono frequenti e gli anziani sono trattati con grande rispetto.",
+    "es": "La familia es central y los parientes suelen vivir cerca. Son comunes los almuerzos dominicales con abuelos, tíos y primos, y a los mayores se les trata con gran respeto.",
+    "pt": "A família é central e os parentes costumam viver perto uns dos outros. São comuns os almoços de domingo com avós, tios e primos, e os mais velhos são tratados com grande respeito.",
+    "pt_BR": "A família é central e os parentes costumam morar perto uns dos outros. São comuns os almoços de domingo com avós, tios e primos, e os mais velhos são tratados com grande respeito.",
+    "fr": "La famille est centrale et les proches vivent souvent près les uns des autres. Les déjeuners dominicaux avec grands-parents, oncles, tantes et cousins sont courants, et les aînés sont traités avec beaucoup de respect.",
+    "de": "Die Familie steht im Mittelpunkt, Verwandte wohnen oft nah beieinander. Sonntagsessen mit Großeltern, Tanten, Onkeln und Cousins sind üblich, und Älteren begegnet man mit großem Respekt."
+   }
+  },
+  {
+   "id": "ct-CY-23",
+   "category": "money",
+   "text": {
+    "en": "Cyprus uses the euro, and cards are accepted in most hotels, shops and restaurants. Carry some cash for small villages, kiosks, bakeries and local buses.",
+    "it": "Cipro usa l'euro e le carte sono accettate nella maggior parte di hotel, negozi e ristoranti. Porta un po' di contanti per i piccoli villaggi, i chioschi, i forni e gli autobus locali.",
+    "es": "Chipre usa el euro y se aceptan tarjetas en la mayoría de hoteles, tiendas y restaurantes. Lleva algo de efectivo para pueblos pequeños, quioscos, panaderías y autobuses locales.",
+    "pt": "Chipre usa o euro e os cartões são aceites na maioria dos hotéis, lojas e restaurantes. Leva algum dinheiro para aldeias pequenas, quiosques, padarias e autocarros locais.",
+    "pt_BR": "Chipre usa o euro e os cartões são aceitos na maioria dos hotéis, lojas e restaurantes. Leve algum dinheiro em espécie para vilarejos pequenos, quiosques, padarias e ônibus locais.",
+    "fr": "Chypre utilise l'euro et les cartes sont acceptées dans la plupart des hôtels, boutiques et restaurants. Prévois un peu d'espèces pour les petits villages, kiosques, boulangeries et bus locaux.",
+    "de": "Zypern nutzt den Euro, und Karten werden in den meisten Hotels, Geschäften und Restaurants akzeptiert. Etwas Bargeld ist für kleine Dörfer, Kioske, Bäckereien und Ortsbusse sinnvoll."
+   }
+  },
+  {
+   "id": "ct-CY-24",
+   "category": "photography",
+   "text": {
+    "en": "Do not photograph military installations or posts along the UN buffer zone, and follow signs. Ask before photographing people, especially older villagers and religious services.",
+    "it": "Non fotografare installazioni militari né postazioni lungo la zona cuscinetto dell'ONU e segui i cartelli. Chiedi prima di fotografare le persone, in particolare gli anziani dei villaggi e le funzioni religiose.",
+    "es": "No fotografíes instalaciones militares ni puestos a lo largo de la zona de amortiguación de la ONU, y sigue las señales. Pide permiso antes de fotografiar a personas, sobre todo a mayores de los pueblos y servicios religiosos.",
+    "pt": "Não fotografes instalações militares nem postos ao longo da zona tampão da ONU e segue a sinalização. Pede licença antes de fotografar pessoas, sobretudo idosos das aldeias e cerimónias religiosas.",
+    "pt_BR": "Não fotografe instalações militares nem postos ao longo da zona-tampão da ONU e siga a sinalização. Peça permissão antes de fotografar pessoas, principalmente idosos dos vilarejos e cerimônias religiosas.",
+    "fr": "Ne photographie pas les installations militaires ni les postes le long de la zone tampon de l'ONU, et suis les panneaux. Demande avant de photographier des personnes, surtout des villageois âgés et des offices religieux.",
+    "de": "Fotografieren Sie keine Militäranlagen oder Posten entlang der UN-Pufferzone und beachten Sie die Schilder. Fragen Sie vor Fotos von Menschen, besonders älteren Dorfbewohnern und Gottesdiensten."
+   }
+  },
+  {
+   "id": "ct-CY-25",
+   "category": "nightlife",
+   "text": {
+    "en": "Dinner often starts late, around 8 or 9 pm, and evenings last long in warm months. Seaside towns like Ayia Napa and Limassol have busy bars and clubs in summer.",
+    "it": "La cena spesso inizia tardi, verso le 20 o 21, e nei mesi caldi le serate durano a lungo. Le località di mare come Ayia Napa e Limassol hanno bar e locali molto animati in estate.",
+    "es": "La cena suele empezar tarde, hacia las 8 o 9 de la noche, y en los meses cálidos las veladas se alargan. Ciudades costeras como Ayia Napa y Limasol tienen bares y discotecas muy animados en verano.",
+    "pt": "O jantar começa muitas vezes tarde, por volta das 20h ou 21h, e nos meses quentes as noites prolongam-se. Localidades costeiras como Ayia Napa e Limassol têm bares e discotecas muito animados no verão.",
+    "pt_BR": "O jantar costuma começar tarde, por volta das 20h ou 21h, e nos meses quentes as noites se prolongam. Cidades litorâneas como Ayia Napa e Limassol têm bares e baladas movimentados no verão.",
+    "fr": "Le dîner commence souvent tard, vers 20 ou 21 heures, et les soirées s'étirent pendant les mois chauds. Les villes balnéaires comme Ayia Napa et Limassol ont des bars et des clubs animés en été.",
+    "de": "Das Abendessen beginnt oft spät, gegen 20 oder 21 Uhr, und in den warmen Monaten dauern die Abende lange. Küstenorte wie Ayia Napa und Limassol haben im Sommer belebte Bars und Clubs."
+   }
+  },
+  {
+   "id": "ct-CY-26",
+   "category": "nature",
+   "text": {
+    "en": "The Troodos Mountains and the Akamas Peninsula offer excellent hiking. Bring water and sun protection, and start early, since summer heat can be intense.",
+    "it": "I monti Troodos e la penisola di Akamas offrono ottime escursioni. Porta acqua e protezione solare e parti presto, perché il caldo estivo può essere intenso.",
+    "es": "Las montañas de Troodos y la península de Akamas ofrecen excelentes rutas de senderismo. Lleva agua y protección solar y sal temprano, porque el calor del verano puede ser intenso.",
+    "pt": "As montanhas de Troodos e a península de Akamas oferecem excelentes percursos de caminhada. Leva água e proteção solar e parte cedo, porque o calor do verão pode ser intenso.",
+    "pt_BR": "As montanhas de Troodos e a península de Akamas oferecem ótimas trilhas. Leve água e protetor solar e saia cedo, porque o calor do verão pode ser intenso.",
+    "fr": "Les monts Troodos et la péninsule d'Akamas offrent d'excellentes randonnées. Emporte de l'eau et une protection solaire, et pars tôt, car la chaleur estivale peut être intense.",
+    "de": "Das Troodos-Gebirge und die Akamas-Halbinsel bieten ausgezeichnete Wandermöglichkeiten. Nehmen Sie Wasser und Sonnenschutz mit und starten Sie früh, denn die Sommerhitze kann stark sein."
+   }
+  },
+  {
+   "id": "ct-CY-27",
+   "category": "nature",
+   "text": {
+    "en": "Sea turtles nest on some Cypriot beaches in summer. Keep away from marked nests, avoid bright lights at night, and do not disturb turtles or hatchlings.",
+    "it": "In estate le tartarughe marine nidificano su alcune spiagge cipriote. Stai lontano dai nidi segnalati, evita luci forti di notte e non disturbare tartarughe e piccoli appena nati.",
+    "es": "En verano, las tortugas marinas anidan en algunas playas chipriotas. Mantente lejos de los nidos señalizados, evita luces intensas por la noche y no molestes a las tortugas ni a las crías.",
+    "pt": "No verão, as tartarugas-marinhas nidificam em algumas praias cipriotas. Mantém-te longe dos ninhos assinalados, evita luzes fortes à noite e não perturbes tartarugas nem crias.",
+    "pt_BR": "No verão, as tartarugas-marinhas desovam em algumas praias cipriotas. Fique longe dos ninhos sinalizados, evite luzes fortes à noite e não perturbe tartarugas nem filhotes.",
+    "fr": "En été, des tortues marines nichent sur certaines plages chypriotes. Reste loin des nids balisés, évite les lumières vives la nuit et ne dérange ni les tortues ni les bébés tortues.",
+    "de": "Im Sommer nisten Meeresschildkröten an einigen zyprischen Stränden. Halten Sie Abstand zu markierten Nestern, vermeiden Sie nachts helles Licht und stören Sie weder Schildkröten noch Jungtiere."
+   }
+  },
+  {
+   "id": "ct-CY-28",
+   "category": "safety",
+   "text": {
+    "en": "Cyprus is generally considered safe, but summer sun is strong. Drink plenty of water, use sunscreen and avoid the midday hours outdoors to prevent heat exhaustion.",
+    "it": "Cipro è generalmente considerata sicura, ma il sole estivo è forte. Bevi molta acqua, usa la crema solare ed evita le ore centrali della giornata all'aperto per prevenire i colpi di calore.",
+    "es": "Chipre se considera en general segura, pero el sol del verano es fuerte. Bebe mucha agua, usa protector solar y evita las horas centrales del día al aire libre para prevenir el agotamiento por calor.",
+    "pt": "Chipre é geralmente considerado seguro, mas o sol de verão é forte. Bebe muita água, usa protetor solar e evita as horas do meio-dia ao ar livre para prevenir a exaustão pelo calor.",
+    "pt_BR": "Chipre é geralmente considerado seguro, mas o sol de verão é forte. Beba muita água, use protetor solar e evite as horas do meio-dia ao ar livre para prevenir a exaustão por calor.",
+    "fr": "Chypre est généralement considérée comme sûre, mais le soleil d'été est fort. Bois beaucoup d'eau, mets de la crème solaire et évite les heures de midi dehors pour prévenir les coups de chaleur.",
+    "de": "Zypern gilt allgemein als sicher, doch die Sommersonne ist stark. Trinken Sie viel Wasser, nutzen Sie Sonnencreme und meiden Sie die Mittagsstunden im Freien, um Hitzeerschöpfung vorzubeugen."
+   }
+  },
+  {
+   "id": "ct-CY-29",
+   "category": "safety",
+   "text": {
+    "en": "Crossing points along the UN buffer zone are open, and you need a valid passport or ID card to use them. Check current rules and car insurance requirements before driving across.",
+    "it": "I valichi lungo la zona cuscinetto dell'ONU sono aperti e serve un passaporto o una carta d'identità valida per usarli. Controlla le regole attuali e l'assicurazione auto prima di attraversare in macchina.",
+    "es": "Los pasos fronterizos a lo largo de la zona de amortiguación de la ONU están abiertos y se necesita pasaporte o documento de identidad válido para usarlos. Consulta las normas vigentes y el seguro del coche antes de cruzar conduciendo.",
+    "pt": "Os pontos de passagem ao longo da zona tampão da ONU estão abertos e é preciso passaporte ou cartão de cidadão válido para os usar. Verifica as regras atuais e o seguro automóvel antes de atravessar de carro.",
+    "pt_BR": "Os pontos de passagem ao longo da zona-tampão da ONU estão abertos e é preciso passaporte ou documento de identidade válido para usá-los. Verifique as regras atuais e o seguro do carro antes de atravessar dirigindo.",
+    "fr": "Les points de passage le long de la zone tampon de l'ONU sont ouverts, et il faut un passeport ou une carte d'identité valide pour les emprunter. Vérifie les règles actuelles et l'assurance auto avant de passer en voiture.",
+    "de": "Die Übergänge entlang der UN-Pufferzone sind geöffnet, und man braucht einen gültigen Pass oder Personalausweis. Prüfen Sie vor der Fahrt hinüber die aktuellen Regeln und den Versicherungsschutz fürs Auto."
+   }
+  },
+  {
+   "id": "ct-CY-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Cypriots are proud of halloumi, Commandaria sweet wine, and the island's legend as the birthplace of Aphrodite near Paphos. Asking about local specialties is a great conversation starter.",
+    "it": "I ciprioti vanno fieri dell'halloumi, del vino dolce Commandaria e della leggenda dell'isola come luogo di nascita di Afrodite vicino a Pafo. Chiedere delle specialità locali è un ottimo modo per iniziare a parlare.",
+    "es": "Los chipriotas se enorgullecen del halloumi, del vino dulce Commandaria y de la leyenda de la isla como lugar de nacimiento de Afrodita cerca de Pafos. Preguntar por las especialidades locales es un gran inicio de conversación.",
+    "pt": "Os cipriotas orgulham-se do halloumi, do vinho doce Commandaria e da lenda da ilha como local de nascimento de Afrodite perto de Pafos. Perguntar pelas especialidades locais é um ótimo início de conversa.",
+    "pt_BR": "Os cipriotas se orgulham do halloumi, do vinho doce Commandaria e da lenda da ilha como local de nascimento de Afrodite perto de Pafos. Perguntar sobre as especialidades locais é um ótimo começo de conversa.",
+    "fr": "Les Chypriotes sont fiers du halloumi, du vin doux Commandaria et de la légende de l'île comme lieu de naissance d'Aphrodite près de Paphos. Interroger sur les spécialités locales est un excellent sujet de conversation.",
+    "de": "Zyprer sind stolz auf Halloumi, den Süßwein Commandaria und die Legende, dass Aphrodite bei Paphos geboren wurde. Nach lokalen Spezialitäten zu fragen, ist ein guter Gesprächseinstieg."
+   }
+  }
+ ],
+ "CZ": [
+  {
+   "id": "ct-CZ-01",
+   "category": "greetings",
+   "text": {
+    "en": "A handshake with eye contact is the standard greeting, and \"Dobrý den\" is the polite hello. Among friends and younger people, \"Ahoj\" works for both hello and goodbye.",
+    "it": "La stretta di mano con contatto visivo è il saluto standard e \"Dobrý den\" è il saluto educato. Tra amici e giovani, \"Ahoj\" vale sia per ciao sia per arrivederci.",
+    "es": "El saludo estándar es un apretón de manos con contacto visual, y \"Dobrý den\" es el saludo cortés. Entre amigos y jóvenes, \"Ahoj\" sirve tanto para hola como para adiós.",
+    "pt": "O cumprimento habitual é um aperto de mão com contacto visual, e \"Dobrý den\" é o olá educado. Entre amigos e jovens, \"Ahoj\" serve tanto para olá como para adeus.",
+    "pt_BR": "O cumprimento padrão é um aperto de mão com contato visual, e \"Dobrý den\" é o oi educado. Entre amigos e jovens, \"Ahoj\" serve tanto para oi quanto para tchau.",
+    "fr": "La poignée de main avec contact visuel est la salutation habituelle, et \"Dobrý den\" est le bonjour poli. Entre amis et jeunes, \"Ahoj\" sert aussi bien pour salut que pour au revoir.",
+    "de": "Üblich ist ein Händedruck mit Blickkontakt, und \"Dobrý den\" ist der höfliche Gruß. Unter Freunden und jungen Leuten gilt \"Ahoj\" sowohl als Hallo als auch als Tschüss."
+   }
+  },
+  {
+   "id": "ct-CZ-02",
+   "category": "greetings",
+   "text": {
+    "en": "Czechs often greet shopkeepers, doctors' waiting rooms and even lift neighbours with a quiet \"Dobrý den\" and say \"Na shledanou\" when leaving. Skipping it can seem cold.",
+    "it": "I cechi salutano spesso con un tranquillo \"Dobrý den\" commessi, sale d'attesa e anche i vicini in ascensore, e dicono \"Na shledanou\" andando via. Omettere il saluto può sembrare freddo.",
+    "es": "Los checos suelen saludar con un tranquilo \"Dobrý den\" a dependientes, salas de espera e incluso vecinos en el ascensor, y dicen \"Na shledanou\" al irse. Omitirlo puede parecer frío.",
+    "pt": "Os checos costumam cumprimentar com um tranquilo \"Dobrý den\" lojistas, salas de espera e até vizinhos no elevador, e dizem \"Na shledanou\" ao sair. Omitir o cumprimento pode parecer frio.",
+    "pt_BR": "Os tchecos costumam cumprimentar com um tranquilo \"Dobrý den\" atendentes, salas de espera e até vizinhos no elevador, e dizem \"Na shledanou\" ao sair. Deixar de cumprimentar pode parecer frio.",
+    "fr": "Les Tchèques saluent souvent d'un discret \"Dobrý den\" les commerçants, les salles d'attente et même les voisins dans l'ascenseur, et disent \"Na shledanou\" en partant. Omettre ce salut peut paraître froid.",
+    "de": "Tschechen grüßen Verkäufer, Wartezimmer und sogar Nachbarn im Aufzug oft mit einem leisen \"Dobrý den\" und sagen beim Gehen \"Na shledanou\". Wer das weglässt, wirkt schnell kühl."
+   }
+  },
+  {
+   "id": "ct-CZ-03",
+   "category": "conversation",
+   "text": {
+    "en": "Czechs can seem reserved at first but warm up once trust is built. Dry humor and irony are common, and honest, modest talk is valued more than boasting.",
+    "it": "I cechi possono sembrare riservati all'inizio, ma si aprono una volta creata fiducia. Umorismo asciutto e ironia sono comuni, e si apprezza di più un discorso onesto e modesto che il vantarsi.",
+    "es": "Los checos pueden parecer reservados al principio, pero se abren cuando hay confianza. El humor seco y la ironía son comunes, y se valora más la conversación honesta y modesta que presumir.",
+    "pt": "Os checos podem parecer reservados ao início, mas abrem-se quando há confiança. O humor seco e a ironia são comuns, e a conversa honesta e modesta é mais valorizada do que a gabarolice.",
+    "pt_BR": "Os tchecos podem parecer reservados no início, mas se abrem quando há confiança. Humor seco e ironia são comuns, e uma conversa honesta e modesta é mais valorizada do que se gabar.",
+    "fr": "Les Tchèques peuvent paraître réservés au début mais se détendent une fois la confiance établie. L'humour pince-sans-rire et l'ironie sont courants, et l'on apprécie davantage la franchise modeste que la vantardise.",
+    "de": "Tschechen wirken anfangs oft zurückhaltend, werden aber warm, sobald Vertrauen da ist. Trockener Humor und Ironie sind üblich, und ehrliche, bescheidene Gespräche zählen mehr als Angeberei."
+   }
+  },
+  {
+   "id": "ct-CZ-04",
+   "category": "conversation",
+   "text": {
+    "en": "Say \"Czechia\" or \"the Czech Republic\" for the country, and \"Czech\" for the language. Many Czechs prefer to be described as Central European rather than Eastern European.",
+    "it": "Per il paese usa \"Cechia\" o \"Repubblica Ceca\" e \"ceco\" per la lingua. Molti cechi preferiscono essere descritti come mitteleuropei piuttosto che dell'Europa orientale.",
+    "es": "Para el país di \"Chequia\" o \"República Checa\" y \"checo\" para el idioma. Muchos checos prefieren que los describan como centroeuropeos y no como europeos del este.",
+    "pt": "Para o país diz \"Chéquia\" ou \"República Checa\" e \"checo\" para a língua. Muitos checos preferem ser descritos como centro-europeus e não como europeus de leste.",
+    "pt_BR": "Para o país diga \"Tchéquia\" ou \"República Tcheca\" e \"tcheco\" para o idioma. Muitos tchecos preferem ser descritos como centro-europeus, e não como europeus do leste.",
+    "fr": "Dis \"Tchéquie\" ou \"République tchèque\" pour le pays et \"tchèque\" pour la langue. Beaucoup de Tchèques préfèrent être décrits comme Européens centraux plutôt qu'orientaux.",
+    "de": "Für das Land sagt man \"Tschechien\" oder \"Tschechische Republik\", für die Sprache \"Tschechisch\". Viele Tschechen werden lieber als mitteleuropäisch denn als osteuropäisch bezeichnet."
+   }
+  },
+  {
+   "id": "ct-CZ-05",
+   "category": "dining",
+   "text": {
+    "en": "A traditional meal often begins with soup, followed by a main dish like svíčková with bread dumplings or roast pork with sauerkraut. Wish others \"Dobrou chuť\" before eating.",
+    "it": "Un pasto tradizionale inizia spesso con una zuppa, seguita da un piatto principale come la svíčková con canederli di pane o arrosto di maiale con crauti. Prima di mangiare si dice \"Dobrou chuť\" agli altri.",
+    "es": "Una comida tradicional suele empezar con una sopa, seguida de un plato principal como la svíčková con albóndigas de pan o cerdo asado con chucrut. Antes de comer se desea \"Dobrou chuť\" a los demás.",
+    "pt": "Uma refeição tradicional começa muitas vezes com sopa, seguida de um prato principal como svíčková com knedlíky de pão ou porco assado com chucrute. Antes de comer, deseja-se \"Dobrou chuť\" aos outros.",
+    "pt_BR": "Uma refeição tradicional costuma começar com sopa, seguida de um prato principal como svíčková com bolinhos de pão ou porco assado com chucrute. Antes de comer, deseja-se \"Dobrou chuť\" aos outros.",
+    "fr": "Un repas traditionnel commence souvent par une soupe, suivie d'un plat comme la svíčková avec des quenelles de pain ou du rôti de porc avec de la choucroute. Avant de manger, on dit \"Dobrou chuť\" aux autres.",
+    "de": "Ein traditionelles Essen beginnt oft mit einer Suppe, gefolgt von einem Hauptgericht wie Svíčková mit Knödeln oder Schweinebraten mit Sauerkraut. Vor dem Essen wünscht man sich \"Dobrou chuť\"."
+   }
+  },
+  {
+   "id": "ct-CZ-06",
+   "category": "dining",
+   "text": {
+    "en": "Czechs are among the world's biggest beer drinkers, and Pilsner style comes from Plzeň. In a pub, the waiter often keeps bringing a new glass until you say no or put a coaster on top.",
+    "it": "I cechi sono tra i maggiori bevitori di birra al mondo e lo stile Pilsner nasce a Plzeň. In un pub il cameriere porta spesso un nuovo boccale finché non dici di no o non metti un sottobicchiere sopra.",
+    "es": "Los checos están entre los mayores bebedores de cerveza del mundo, y el estilo Pilsner nació en Plzeň. En un pub, el camarero suele traer otra jarra hasta que dices que no o pones un posavasos encima.",
+    "pt": "Os checos estão entre os maiores consumidores de cerveja do mundo, e o estilo Pilsner nasceu em Plzeň. Num pub, o empregado costuma trazer outro copo até dizeres que não ou pores uma bolacha em cima.",
+    "pt_BR": "Os tchecos estão entre os maiores consumidores de cerveja do mundo, e o estilo Pilsner nasceu em Plzeň. Num pub, o garçom costuma trazer outro copo até você dizer que não ou pôr um descanso de copo em cima.",
+    "fr": "Les Tchèques comptent parmi les plus grands buveurs de bière au monde et le style Pilsner est né à Plzeň. Dans un pub, le serveur apporte souvent un autre verre tant que tu ne dis pas non ou ne poses pas un dessous-de-verre dessus.",
+    "de": "Tschechen gehören zu den größten Biertrinkern der Welt, und das Pilsner stammt aus Pilsen. In einer Kneipe bringt der Kellner oft immer wieder ein neues Glas, bis man Nein sagt oder einen Bierdeckel darauflegt."
+   }
+  },
+  {
+   "id": "ct-CZ-07",
+   "category": "tipping",
+   "text": {
+    "en": "A tip of about 10% is customary in restaurants. Say the total including tip when paying, rather than leaving coins on the table, e.g. \"Dáme 500\".",
+    "it": "Nei ristoranti è usuale una mancia di circa il 10%. Quando paghi, di' il totale comprensivo di mancia anziché lasciare monete sul tavolo, per esempio \"Dáme 500\".",
+    "es": "En los restaurantes se acostumbra dejar una propina de alrededor del 10%. Al pagar, di el total con la propina incluida en lugar de dejar monedas en la mesa, por ejemplo \"Dáme 500\".",
+    "pt": "Nos restaurantes é costume deixar cerca de 10% de gorjeta. Ao pagar, diz o total já com a gorjeta em vez de deixares moedas na mesa, por exemplo \"Dáme 500\".",
+    "pt_BR": "Nos restaurantes é costume deixar cerca de 10% de gorjeta. Ao pagar, diga o total já com a gorjeta em vez de deixar moedas na mesa, por exemplo \"Dáme 500\".",
+    "fr": "Un pourboire d'environ 10 % est d'usage au restaurant. En payant, annonce le total pourboire compris au lieu de laisser des pièces sur la table, par exemple \"Dáme 500\".",
+    "de": "Im Restaurant sind etwa 10 % Trinkgeld üblich. Beim Bezahlen nennt man den Gesamtbetrag samt Trinkgeld, statt Münzen auf dem Tisch zu lassen, etwa \"Dáme 500\"."
+   }
+  },
+  {
+   "id": "ct-CZ-08",
+   "category": "gifts",
+   "text": {
+    "en": "When visiting a home, bring flowers, chocolates or a small treat. Give an odd number of flowers, since even numbers are traditionally for funerals.",
+    "it": "Quando vai a casa di qualcuno, porta fiori, cioccolatini o un piccolo dolce. Regala un numero dispari di fiori, perché i numeri pari sono tradizionalmente legati ai funerali.",
+    "es": "Al visitar una casa, lleva flores, bombones o un pequeño detalle. Regala un número impar de flores, ya que los pares se asocian tradicionalmente con funerales.",
+    "pt": "Ao visitar uma casa, leva flores, chocolates ou uma pequena lembrança. Oferece um número ímpar de flores, porque os números pares estão tradicionalmente ligados a funerais.",
+    "pt_BR": "Ao visitar uma casa, leve flores, chocolates ou uma lembrancinha. Dê um número ímpar de flores, pois os números pares estão tradicionalmente ligados a funerais.",
+    "fr": "Quand tu rends visite à quelqu'un, apporte des fleurs, des chocolats ou une petite attention. Offre un nombre impair de fleurs, car les nombres pairs sont traditionnellement réservés aux enterrements.",
+    "de": "Bei einem Hausbesuch bringt man Blumen, Pralinen oder eine Kleinigkeit mit. Schenken Sie eine ungerade Zahl an Blumen, denn gerade Zahlen sind traditionell Beerdigungen vorbehalten."
+   }
+  },
+  {
+   "id": "ct-CZ-09",
+   "category": "dress",
+   "text": {
+    "en": "Czechs dress smart-casual in cities and practical outdoors. Layers help because weather changes quickly, and comfortable shoes are essential for Prague's cobblestones.",
+    "it": "I cechi si vestono smart casual in città e in modo pratico all'aperto. Vestirsi a strati aiuta perché il tempo cambia in fretta, e scarpe comode sono essenziali per i sampietrini di Praga.",
+    "es": "Los checos visten de manera casual elegante en la ciudad y práctica al aire libre. Ir en capas ayuda porque el tiempo cambia rápido, y el calzado cómodo es esencial para los adoquines de Praga.",
+    "pt": "Os checos vestem-se de forma casual elegante na cidade e prática ao ar livre. Vestir por camadas ajuda porque o tempo muda depressa, e calçado confortável é essencial para a calçada de Praga.",
+    "pt_BR": "Os tchecos se vestem de forma casual elegante na cidade e prática ao ar livre. Vestir-se em camadas ajuda porque o tempo muda rápido, e sapatos confortáveis são essenciais para as ruas de pedra de Praga.",
+    "fr": "Les Tchèques s'habillent de façon décontractée chic en ville et pratique en plein air. Superposer les couches aide car le temps change vite, et des chaussures confortables sont indispensables pour les pavés de Prague.",
+    "de": "Tschechen kleiden sich in der Stadt leger-elegant und draußen praktisch. Zwiebellook hilft, weil das Wetter schnell wechselt, und bequeme Schuhe sind für Prags Kopfsteinpflaster unerlässlich."
+   }
+  },
+  {
+   "id": "ct-CZ-10",
+   "category": "religion_sites",
+   "text": {
+    "en": "The Czech Republic is one of Europe's least religious countries, yet its churches and cathedrals are cherished heritage. Keep quiet during services and avoid flash photography inside.",
+    "it": "La Repubblica Ceca è uno dei paesi meno religiosi d'Europa, ma chiese e cattedrali sono un patrimonio molto caro. Mantieni il silenzio durante le funzioni ed evita il flash all'interno.",
+    "es": "La República Checa es uno de los países menos religiosos de Europa, pero sus iglesias y catedrales son un patrimonio muy querido. Guarda silencio durante los oficios y evita el flash en el interior.",
+    "pt": "A República Checa é um dos países menos religiosos da Europa, mas as suas igrejas e catedrais são um património muito querido. Mantém o silêncio durante as cerimónias e evita o flash no interior.",
+    "pt_BR": "A República Tcheca é um dos países menos religiosos da Europa, mas suas igrejas e catedrais são um patrimônio muito querido. Mantenha silêncio durante as cerimônias e evite flash no interior.",
+    "fr": "La République tchèque est l'un des pays les moins religieux d'Europe, mais ses églises et cathédrales sont un patrimoine chéri. Reste silencieux pendant les offices et évite le flash à l'intérieur.",
+    "de": "Tschechien gehört zu den am wenigsten religiösen Ländern Europas, doch Kirchen und Kathedralen sind geschätztes Kulturerbe. Seien Sie bei Gottesdiensten leise und fotografieren Sie drinnen ohne Blitz."
+   }
+  },
+  {
+   "id": "ct-CZ-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Landmarks like St. Vitus Cathedral in Prague Castle and the Church of St. Barbara in Kutná Hora are active heritage sites. Check opening hours, as some areas close for services.",
+    "it": "Luoghi come la Cattedrale di San Vito al Castello di Praga e la chiesa di Santa Barbara a Kutná Hora sono siti patrimonio ancora attivi. Controlla gli orari, perché alcune aree chiudono durante le funzioni.",
+    "es": "Lugares como la catedral de San Vito en el Castillo de Praga y la iglesia de Santa Bárbara en Kutná Hora son sitios patrimoniales aún activos. Consulta los horarios, porque algunas zonas cierran durante los oficios.",
+    "pt": "Locais como a Catedral de São Vito no Castelo de Praga e a Igreja de Santa Bárbara em Kutná Hora são sítios patrimoniais ainda ativos. Confirma os horários, porque algumas zonas fecham durante as cerimónias.",
+    "pt_BR": "Locais como a Catedral de São Vito no Castelo de Praga e a Igreja de Santa Bárbara em Kutná Hora são sítios históricos ainda em atividade. Confira os horários, pois algumas áreas fecham durante as cerimônias.",
+    "fr": "Des lieux comme la cathédrale Saint-Guy au château de Prague et l'église Sainte-Barbe de Kutná Hora sont des sites patrimoniaux toujours actifs. Vérifie les horaires, car certaines zones ferment pendant les offices.",
+    "de": "Orte wie der Veitsdom auf der Prager Burg und die Barbarakirche in Kutná Hora sind weiterhin aktive Denkmäler. Prüfen Sie die Öffnungszeiten, denn manche Bereiche sind während Gottesdiensten gesperrt."
+   }
+  },
+  {
+   "id": "ct-CZ-12",
+   "category": "gestures",
+   "text": {
+    "en": "Czechs generally keep gestures modest and personal space respectful. Pointing at people with a finger or loudly gesturing in public may seem impolite.",
+    "it": "I cechi in genere usano gesti misurati e rispettano lo spazio personale. Indicare le persone con il dito o gesticolare ad alta voce in pubblico può sembrare scortese.",
+    "es": "Los checos suelen usar gestos moderados y respetar el espacio personal. Señalar a la gente con el dedo o gesticular con ruido en público puede parecer descortés.",
+    "pt": "Os checos costumam usar gestos moderados e respeitar o espaço pessoal. Apontar o dedo a pessoas ou gesticular alto em público pode parecer indelicado.",
+    "pt_BR": "Os tchecos costumam usar gestos moderados e respeitar o espaço pessoal. Apontar o dedo para pessoas ou gesticular alto em público pode parecer deselegante.",
+    "fr": "Les Tchèques gardent en général des gestes mesurés et respectent l'espace personnel. Pointer quelqu'un du doigt ou gesticuler bruyamment en public peut sembler impoli.",
+    "de": "Tschechen halten Gesten meist dezent und respektieren den persönlichen Raum. Mit dem Finger auf Menschen zu zeigen oder laut zu gestikulieren, kann in der Öffentlichkeit unhöflich wirken."
+   }
+  },
+  {
+   "id": "ct-CZ-13",
+   "category": "gestures",
+   "text": {
+    "en": "When toasting, say \"Na zdraví\" and look each person in the eye as you clink glasses. Avoid crossing arms with someone else's while clinking.",
+    "it": "Quando si brinda, si dice \"Na zdraví\" e si guarda negli occhi ogni persona mentre si fanno tintinnare i bicchieri. Evita di incrociare le braccia con quelle di un altro mentre brindi.",
+    "es": "Al brindar, se dice \"Na zdraví\" y se mira a cada persona a los ojos mientras se chocan las copas. Evita cruzar los brazos con los de otra persona al brindar.",
+    "pt": "Ao brindar, diz-se \"Na zdraví\" e olha-se cada pessoa nos olhos enquanto se tocam os copos. Evita cruzar os braços com os de outra pessoa ao brindar.",
+    "pt_BR": "Ao brindar, diz-se \"Na zdraví\" e olha-se cada pessoa nos olhos enquanto os copos se tocam. Evite cruzar os braços com os de outra pessoa ao brindar.",
+    "fr": "Pour trinquer, on dit \"Na zdraví\" en regardant chaque personne dans les yeux en faisant tinter les verres. Évite de croiser les bras avec ceux d'un autre en trinquant.",
+    "de": "Beim Anstoßen sagt man \"Na zdraví\" und schaut jeder Person beim Zuprosten in die Augen. Vermeiden Sie es, dabei die Arme mit jemand anderem zu kreuzen."
+   }
+  },
+  {
+   "id": "ct-CZ-14",
+   "category": "punctuality",
+   "text": {
+    "en": "Punctuality is valued. Arrive on time for meetings and appointments, and send a message if you will be late. Even social meetups usually start close to the agreed time.",
+    "it": "La puntualità è apprezzata. Arriva in orario a riunioni e appuntamenti e manda un messaggio se farai tardi. Anche gli incontri tra amici di solito iniziano vicino all'ora concordata.",
+    "es": "Se valora la puntualidad. Llega a tiempo a reuniones y citas y envía un mensaje si vas a retrasarte. Incluso las quedadas sociales suelen empezar cerca de la hora acordada.",
+    "pt": "A pontualidade é valorizada. Chega a horas a reuniões e compromissos e envia uma mensagem se te atrasares. Mesmo os encontros sociais costumam começar perto da hora combinada.",
+    "pt_BR": "A pontualidade é valorizada. Chegue na hora a reuniões e compromissos e mande uma mensagem se for se atrasar. Até os encontros sociais costumam começar perto do horário combinado.",
+    "fr": "La ponctualité est valorisée. Arrive à l'heure aux réunions et rendez-vous, et envoie un message si tu as du retard. Même les rencontres entre amis commencent généralement près de l'heure convenue.",
+    "de": "Pünktlichkeit wird geschätzt. Kommen Sie zu Terminen rechtzeitig und melden Sie sich, wenn Sie sich verspäten. Auch private Treffen beginnen meist nahe der vereinbarten Zeit."
+   }
+  },
+  {
+   "id": "ct-CZ-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "When entering a Czech home, it is very common to take off your shoes in the hallway, and hosts often offer slippers. Look at what others do, or just ask.",
+    "it": "Entrando in una casa ceca è molto comune togliersi le scarpe nell'ingresso e i padroni di casa spesso offrono delle pantofole. Guarda cosa fanno gli altri o chiedi semplicemente.",
+    "es": "Al entrar en una casa checa es muy común quitarse los zapatos en el recibidor, y los anfitriones suelen ofrecer zapatillas. Observa lo que hacen los demás o simplemente pregunta.",
+    "pt": "Ao entrar numa casa checa é muito comum tirar os sapatos no corredor, e os anfitriões costumam oferecer pantufas. Vê o que os outros fazem ou pergunta simplesmente.",
+    "pt_BR": "Ao entrar numa casa tcheca é muito comum tirar os sapatos no corredor, e os anfitriões costumam oferecer chinelos. Veja o que os outros fazem ou simplesmente pergunte.",
+    "fr": "En entrant chez des Tchèques, il est très courant d'enlever ses chaussures dans l'entrée, et les hôtes proposent souvent des chaussons. Observe ce que font les autres ou demande simplement.",
+    "de": "Beim Betreten einer tschechischen Wohnung zieht man sehr oft im Flur die Schuhe aus, und Gastgeber bieten meist Hausschuhe an. Beobachten Sie die anderen oder fragen Sie einfach."
+   }
+  },
+  {
+   "id": "ct-CZ-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "On trams, buses and metro, keep your voice low and offer your seat to older people, pregnant women and people with small children. Stand on the right of escalators.",
+    "it": "Su tram, autobus e metropolitana tieni la voce bassa e offri il posto agli anziani, alle donne incinte e a chi ha bambini piccoli. Sulle scale mobili stai sul lato destro.",
+    "es": "En tranvías, autobuses y metro mantén la voz baja y cede el asiento a personas mayores, embarazadas y quienes llevan niños pequeños. En las escaleras mecánicas colócate a la derecha.",
+    "pt": "Nos elétricos, autocarros e metro, fala baixo e cede o lugar a pessoas mais velhas, grávidas e a quem leva crianças pequenas. Nas escadas rolantes fica do lado direito.",
+    "pt_BR": "Em bondes, ônibus e metrô, fale baixo e ofereça o assento a idosos, grávidas e quem está com crianças pequenas. Nas escadas rolantes fique do lado direito.",
+    "fr": "Dans les trams, bus et métros, parle à voix basse et cède ta place aux personnes âgées, aux femmes enceintes et aux personnes avec de jeunes enfants. Sur les escalators, tiens-toi à droite.",
+    "de": "In Straßenbahn, Bus und U-Bahn leise sprechen und älteren Menschen, Schwangeren und Personen mit kleinen Kindern den Sitzplatz anbieten. Auf Rolltreppen steht man rechts."
+   }
+  },
+  {
+   "id": "ct-CZ-17",
+   "category": "transport",
+   "text": {
+    "en": "Public transport in Prague is efficient. Buy your ticket before boarding or via an app, and validate paper tickets in the machine at the start of your trip; inspectors check often.",
+    "it": "Il trasporto pubblico a Praga è efficiente. Compra il biglietto prima di salire o con un'app e convalida quelli cartacei nella macchinetta all'inizio del viaggio; i controllori passano spesso.",
+    "es": "El transporte público en Praga es eficiente. Compra el billete antes de subir o con una app y valida los de papel en la máquina al inicio del viaje; los inspectores controlan con frecuencia.",
+    "pt": "Os transportes públicos em Praga são eficientes. Compra o bilhete antes de entrar ou numa aplicação e valida os de papel na máquina no início da viagem; os fiscais passam com frequência.",
+    "pt_BR": "O transporte público em Praga é eficiente. Compre o bilhete antes de embarcar ou pelo aplicativo e valide os de papel na máquina no início da viagem; os fiscais passam com frequência.",
+    "fr": "Les transports publics de Prague sont efficaces. Achète ton billet avant de monter ou via une appli et valide les billets papier dans la machine au début du trajet ; les contrôleurs passent souvent.",
+    "de": "Der öffentliche Nahverkehr in Prag ist effizient. Kaufen Sie das Ticket vor dem Einsteigen oder per App und entwerten Sie Papiertickets zu Fahrtbeginn im Automaten; Kontrolleure sind oft unterwegs."
+   }
+  },
+  {
+   "id": "ct-CZ-18",
+   "category": "transport",
+   "text": {
+    "en": "Trains and buses connect nearly every town, and many Czechs travel by rail for weekend trips. Use licensed taxis or ride-hailing apps rather than hailing cabs on the street.",
+    "it": "Treni e autobus collegano quasi ogni città e molti cechi viaggiano in treno per le gite del fine settimana. Usa taxi autorizzati o app di trasporto anziché fermare un taxi per strada.",
+    "es": "Trenes y autobuses conectan casi todas las ciudades, y muchos checos viajan en tren para sus escapadas de fin de semana. Usa taxis con licencia o apps de transporte en lugar de parar taxis en la calle.",
+    "pt": "Comboios e autocarros ligam quase todas as localidades, e muitos checos viajam de comboio nas escapadas de fim de semana. Usa táxis licenciados ou aplicações de transporte em vez de chamar táxis na rua.",
+    "pt_BR": "Trens e ônibus ligam quase todas as cidades, e muitos tchecos viajam de trem nos passeios de fim de semana. Use táxis licenciados ou aplicativos de transporte em vez de chamar táxis na rua.",
+    "fr": "Trains et bus relient presque toutes les villes, et beaucoup de Tchèques voyagent en train pour leurs escapades du week-end. Utilise des taxis agréés ou des applis de VTC plutôt que de héler un taxi dans la rue.",
+    "de": "Züge und Busse verbinden fast jede Stadt, und viele Tschechen fahren für Wochenendausflüge mit der Bahn. Nutzen Sie lizenzierte Taxis oder Fahrdienst-Apps, statt Taxis auf der Straße anzuhalten."
+   }
+  },
+  {
+   "id": "ct-CZ-19",
+   "category": "language",
+   "text": {
+    "en": "Czech is not Slovak, though the two are closely related. Try \"děkuji\" (thank you) and \"prosím\" (please); the letter ř is notoriously hard, and locals enjoy your attempt.",
+    "it": "Il ceco non è lo slovacco, anche se le due lingue sono molto affini. Prova \"děkuji\" (grazie) e \"prosím\" (per favore); la lettera ř è notoriamente difficile e i locali apprezzano il tentativo.",
+    "es": "El checo no es el eslovaco, aunque ambos están muy emparentados. Prueba \"děkuji\" (gracias) y \"prosím\" (por favor); la letra ř es famosamente difícil y los locales aprecian tu intento.",
+    "pt": "O checo não é o eslovaco, embora as duas línguas sejam muito próximas. Experimenta \"děkuji\" (obrigado) e \"prosím\" (por favor); a letra ř é famosamente difícil e os locais gostam da tentativa.",
+    "pt_BR": "O tcheco não é o eslovaco, embora as duas línguas sejam muito próximas. Experimente \"děkuji\" (obrigado) e \"prosím\" (por favor); a letra ř é famosamente difícil e os locais gostam da tentativa.",
+    "fr": "Le tchèque n'est pas le slovaque, bien que les deux langues soient très proches. Essaie \"děkuji\" (merci) et \"prosím\" (s'il te plaît) ; la lettre ř est réputée difficile et les locaux apprécient l'effort.",
+    "de": "Tschechisch ist nicht Slowakisch, obwohl beide eng verwandt sind. Probieren Sie \"děkuji\" (danke) und \"prosím\" (bitte); der Buchstabe ř ist berüchtigt schwer, und Einheimische freuen sich über den Versuch."
+   }
+  },
+  {
+   "id": "ct-CZ-20",
+   "category": "festivals",
+   "text": {
+    "en": "Christmas is celebrated mainly on 24 December. Many families eat fried carp with potato salad, and gifts are said to be brought by Ježíšek, the Baby Jesus, in the evening.",
+    "it": "Il Natale si festeggia soprattutto il 24 dicembre. Molte famiglie mangiano carpa fritta con insalata di patate e si dice che i regali li porti la sera Ježíšek, Gesù Bambino.",
+    "es": "La Navidad se celebra sobre todo el 24 de diciembre. Muchas familias comen carpa frita con ensalada de patata, y se dice que los regalos los trae por la noche Ježíšek, el Niño Jesús.",
+    "pt": "O Natal celebra-se sobretudo a 24 de dezembro. Muitas famílias comem carpa frita com salada de batata, e diz-se que os presentes são trazidos à noite por Ježíšek, o Menino Jesus.",
+    "pt_BR": "O Natal é celebrado principalmente em 24 de dezembro. Muitas famílias comem carpa frita com salada de batata, e diz-se que os presentes são trazidos à noite por Ježíšek, o Menino Jesus.",
+    "fr": "Noël se célèbre surtout le 24 décembre. Beaucoup de familles mangent de la carpe frite avec de la salade de pommes de terre, et les cadeaux sont censés être apportés le soir par Ježíšek, l'Enfant Jésus.",
+    "de": "Weihnachten wird vor allem am 24. Dezember gefeiert. Viele Familien essen gebackenen Karpfen mit Kartoffelsalat, und die Geschenke bringt am Abend angeblich das Ježíšek, das Christkind."
+   }
+  },
+  {
+   "id": "ct-CZ-21",
+   "category": "festivals",
+   "text": {
+    "en": "On 5 December, St. Nicholas Eve, people dressed as Mikuláš, an angel and a devil visit children. On 30 April, the Witches' Night bonfires (Čarodějnice) mark the arrival of spring.",
+    "it": "Il 5 dicembre, vigilia di San Nicola, persone vestite da Mikuláš, angelo e diavolo visitano i bambini. Il 30 aprile i falò della Notte delle streghe (Čarodějnice) segnano l'arrivo della primavera.",
+    "es": "El 5 de diciembre, víspera de San Nicolás, personas disfrazadas de Mikuláš, ángel y diablo visitan a los niños. El 30 de abril, las hogueras de la Noche de las Brujas (Čarodějnice) marcan la llegada de la primavera.",
+    "pt": "A 5 de dezembro, véspera de São Nicolau, pessoas vestidas de Mikuláš, anjo e diabo visitam as crianças. A 30 de abril, as fogueiras da Noite das Bruxas (Čarodějnice) assinalam a chegada da primavera.",
+    "pt_BR": "Em 5 de dezembro, véspera de São Nicolau, pessoas vestidas de Mikuláš, anjo e diabo visitam as crianças. Em 30 de abril, as fogueiras da Noite das Bruxas (Čarodějnice) marcam a chegada da primavera.",
+    "fr": "Le 5 décembre, veille de la Saint-Nicolas, des personnes déguisées en Mikuláš, ange et diable rendent visite aux enfants. Le 30 avril, les feux de joie de la Nuit des sorcières (Čarodějnice) marquent l'arrivée du printemps.",
+    "de": "Am 5. Dezember, dem Nikolausabend, besuchen als Mikuláš, Engel und Teufel verkleidete Personen die Kinder. Am 30. April markieren die Feuer der Hexennacht (Čarodějnice) den Frühlingsbeginn."
+   }
+  },
+  {
+   "id": "ct-CZ-22",
+   "category": "family",
+   "text": {
+    "en": "Many Czech families own a weekend cottage (chata or chalupa) in the countryside. Heading out of town on Friday afternoon to hike, garden or mushroom-pick is a beloved routine.",
+    "it": "Molte famiglie ceche possiedono una casetta di campagna per il fine settimana (chata o chalupa). Lasciare la città il venerdì pomeriggio per camminare, fare giardinaggio o cercare funghi è un'abitudine amata.",
+    "es": "Muchas familias checas tienen una casita de fin de semana (chata o chalupa) en el campo. Salir de la ciudad el viernes por la tarde para caminar, hacer jardinería o buscar setas es una rutina querida.",
+    "pt": "Muitas famílias checas têm uma casa de campo para o fim de semana (chata ou chalupa). Sair da cidade à sexta à tarde para caminhar, tratar do jardim ou apanhar cogumelos é uma rotina muito querida.",
+    "pt_BR": "Muitas famílias tchecas têm uma casa de campo para o fim de semana (chata ou chalupa). Sair da cidade na sexta à tarde para caminhar, cuidar do jardim ou colher cogumelos é uma rotina muito querida.",
+    "fr": "Beaucoup de familles tchèques possèdent une maison de campagne pour le week-end (chata ou chalupa). Quitter la ville le vendredi après-midi pour randonner, jardiner ou cueillir des champignons est une habitude chérie.",
+    "de": "Viele tschechische Familien besitzen ein Wochenendhaus auf dem Land (Chata oder Chalupa). Freitagnachmittag aus der Stadt zu fahren, um zu wandern, zu gärtnern oder Pilze zu sammeln, ist eine beliebte Routine."
+   }
+  },
+  {
+   "id": "ct-CZ-23",
+   "category": "money",
+   "text": {
+    "en": "The Czech Republic uses the koruna (CZK), not the euro. Cards and contactless payments are widely accepted, but avoid exchanging cash at street booths and use banks or ATMs.",
+    "it": "La Repubblica Ceca usa la corona (CZK), non l'euro. Carte e pagamenti contactless sono ampiamente accettati, ma evita di cambiare contanti nelle casotte per strada e usa banche o bancomat.",
+    "es": "La República Checa usa la corona (CZK), no el euro. Las tarjetas y los pagos sin contacto son muy aceptados, pero evita cambiar efectivo en casetas callejeras y usa bancos o cajeros.",
+    "pt": "A República Checa usa a coroa (CZK) e não o euro. Cartões e pagamentos sem contacto são amplamente aceites, mas evita trocar dinheiro em quiosques de rua e usa bancos ou caixas automáticas.",
+    "pt_BR": "A República Tcheca usa a coroa (CZK) e não o euro. Cartões e pagamento por aproximação são amplamente aceitos, mas evite trocar dinheiro em quiosques de rua e use bancos ou caixas eletrônicos.",
+    "fr": "La République tchèque utilise la couronne (CZK), pas l'euro. Les cartes et le sans contact sont largement acceptés, mais évite de changer de l'argent dans les kiosques de rue et préfère les banques ou distributeurs.",
+    "de": "Tschechien nutzt die Krone (CZK), nicht den Euro. Karten und kontaktloses Bezahlen sind weit verbreitet, doch wechseln Sie Bargeld nicht an Straßenständen, sondern nutzen Sie Banken oder Geldautomaten."
+   }
+  },
+  {
+   "id": "ct-CZ-24",
+   "category": "photography",
+   "text": {
+    "en": "Photography is welcome in most public spaces, but many museums and castles charge a fee or restrict photos and flash. Ask before photographing strangers up close.",
+    "it": "Fotografare è gradito nella maggior parte degli spazi pubblici, ma molti musei e castelli richiedono un supplemento o limitano foto e flash. Chiedi prima di fotografare da vicino degli sconosciuti.",
+    "es": "Se puede fotografiar en la mayoría de los espacios públicos, pero muchos museos y castillos cobran un extra o limitan las fotos y el flash. Pregunta antes de fotografiar de cerca a desconocidos.",
+    "pt": "Fotografar é bem-vindo na maioria dos espaços públicos, mas muitos museus e castelos cobram uma taxa ou limitam fotos e flash. Pede licença antes de fotografar desconhecidos de perto.",
+    "pt_BR": "Fotografar é bem-vindo na maioria dos espaços públicos, mas muitos museus e castelos cobram uma taxa ou limitam fotos e flash. Peça permissão antes de fotografar desconhecidos de perto.",
+    "fr": "La photo est bienvenue dans la plupart des espaces publics, mais de nombreux musées et châteaux font payer un supplément ou limitent photos et flash. Demande avant de photographier des inconnus de près.",
+    "de": "Fotografieren ist in den meisten öffentlichen Räumen willkommen, doch viele Museen und Burgen verlangen eine Gebühr oder beschränken Fotos und Blitz. Fragen Sie, bevor Sie Fremde aus der Nähe fotografieren."
+   }
+  },
+  {
+   "id": "ct-CZ-25",
+   "category": "nightlife",
+   "text": {
+    "en": "The pub (hospoda) is the social heart of Czech evenings, and friends often gather there for hours. Beer halls, jazz clubs and live music venues are popular in Prague and Brno.",
+    "it": "Il pub (hospoda) è il cuore sociale delle serate ceche e gli amici vi si ritrovano spesso per ore. Birrerie, jazz club e locali di musica dal vivo sono popolari a Praga e a Brno.",
+    "es": "El pub (hospoda) es el corazón social de las noches checas, y los amigos suelen reunirse allí durante horas. Las cervecerías, los clubes de jazz y los locales de música en vivo son populares en Praga y Brno.",
+    "pt": "O pub (hospoda) é o coração social das noites checas e os amigos juntam-se lá muitas vezes durante horas. Cervejarias, clubes de jazz e salas de música ao vivo são populares em Praga e Brno.",
+    "pt_BR": "O pub (hospoda) é o coração social das noites tchecas e os amigos costumam se reunir lá por horas. Cervejarias, clubes de jazz e casas de música ao vivo são populares em Praga e Brno.",
+    "fr": "Le pub (hospoda) est le cœur social des soirées tchèques, et les amis s'y retrouvent souvent des heures. Brasseries, clubs de jazz et salles de concerts sont populaires à Prague et à Brno.",
+    "de": "Die Kneipe (Hospoda) ist das gesellschaftliche Herz tschechischer Abende, Freunde sitzen dort oft stundenlang. Bierhallen, Jazzclubs und Livemusik-Lokale sind in Prag und Brünn beliebt."
+   }
+  },
+  {
+   "id": "ct-CZ-26",
+   "category": "nature",
+   "text": {
+    "en": "Hiking trails are marked by the Czech Tourist Club with coloured stripes on trees and posts. Follow one colour at a time and check a map, as some routes cross forest and fields.",
+    "it": "I sentieri sono segnalati dal Club turistico ceco con strisce colorate su alberi e pali. Segui un colore alla volta e controlla la mappa, perché alcuni percorsi attraversano boschi e campi.",
+    "es": "Los senderos están señalizados por el Club Turístico Checo con franjas de colores en árboles y postes. Sigue un color a la vez y consulta un mapa, porque algunas rutas cruzan bosques y campos.",
+    "pt": "Os trilhos estão sinalizados pelo Clube de Turismo Checo com faixas coloridas em árvores e postes. Segue uma cor de cada vez e consulta um mapa, porque alguns percursos atravessam florestas e campos.",
+    "pt_BR": "As trilhas são sinalizadas pelo Clube de Turismo Tcheco com faixas coloridas em árvores e postes. Siga uma cor de cada vez e consulte um mapa, pois alguns percursos atravessam florestas e campos.",
+    "fr": "Les sentiers sont balisés par le Club touristique tchèque avec des bandes colorées sur les arbres et poteaux. Suis une couleur à la fois et consulte une carte, car certains itinéraires traversent forêts et champs.",
+    "de": "Wanderwege sind vom Tschechischen Touristenklub mit farbigen Streifen an Bäumen und Pfosten markiert. Folgen Sie jeweils einer Farbe und prüfen Sie die Karte, denn manche Routen führen durch Wald und Felder."
+   }
+  },
+  {
+   "id": "ct-CZ-27",
+   "category": "nature",
+   "text": {
+    "en": "Mushroom picking in autumn is a cherished tradition, but only pick species you can identify with certainty. In national parks, stay on marked paths and take your litter home.",
+    "it": "La raccolta dei funghi in autunno è una tradizione amata, ma raccogli solo specie che sai riconoscere con certezza. Nei parchi nazionali resta sui sentieri segnalati e porta via i rifiuti.",
+    "es": "Recoger setas en otoño es una tradición querida, pero recoge solo especies que puedas identificar con certeza. En los parques nacionales permanece en los senderos marcados y llévate la basura.",
+    "pt": "Apanhar cogumelos no outono é uma tradição querida, mas só apanha espécies que consigas identificar com certeza. Nos parques nacionais fica nos caminhos marcados e leva o lixo contigo.",
+    "pt_BR": "Colher cogumelos no outono é uma tradição querida, mas só colha espécies que você consiga identificar com certeza. Em parques nacionais fique nos caminhos sinalizados e leve o lixo embora.",
+    "fr": "La cueillette des champignons en automne est une tradition chérie, mais ne ramasse que les espèces que tu sais identifier avec certitude. Dans les parcs nationaux, reste sur les sentiers balisés et remporte tes déchets.",
+    "de": "Pilzesammeln im Herbst ist eine geliebte Tradition, aber sammeln Sie nur Arten, die Sie sicher bestimmen können. In Nationalparks auf markierten Wegen bleiben und den Müll mitnehmen."
+   }
+  },
+  {
+   "id": "ct-CZ-28",
+   "category": "safety",
+   "text": {
+    "en": "The Czech Republic is generally safe, but pickpockets operate in crowded tourist spots in Prague, on trams and at stations. Keep bags closed in front of you.",
+    "it": "La Repubblica Ceca è generalmente sicura, ma i borseggiatori operano nei luoghi turistici affollati di Praga, sui tram e nelle stazioni. Tieni le borse chiuse davanti a te.",
+    "es": "La República Checa es en general segura, pero hay carteristas en lugares turísticos concurridos de Praga, en tranvías y en estaciones. Lleva los bolsos cerrados delante de ti.",
+    "pt": "A República Checa é geralmente segura, mas há carteiristas em locais turísticos cheios de Praga, nos elétricos e nas estações. Mantém as malas fechadas à tua frente.",
+    "pt_BR": "A República Tcheca é geralmente segura, mas há batedores de carteira em pontos turísticos lotados de Praga, nos bondes e nas estações. Mantenha as bolsas fechadas à sua frente.",
+    "fr": "La République tchèque est globalement sûre, mais des pickpockets opèrent dans les lieux touristiques bondés de Prague, dans les trams et les gares. Garde tes sacs fermés devant toi.",
+    "de": "Tschechien ist im Allgemeinen sicher, doch in überfüllten Touristenorten Prags, in Straßenbahnen und an Bahnhöfen sind Taschendiebe unterwegs. Tragen Sie Taschen geschlossen vor dem Körper."
+   }
+  },
+  {
+   "id": "ct-CZ-29",
+   "category": "safety",
+   "text": {
+    "en": "Winters can be cold and icy. Wear shoes with good grip, and in the mountains check the weather and avalanche or trail warnings before heading out.",
+    "it": "Gli inverni possono essere freddi e ghiacciati. Indossa scarpe con buona aderenza e in montagna controlla meteo e avvisi su valanghe o sentieri prima di partire.",
+    "es": "Los inviernos pueden ser fríos y con hielo. Usa calzado con buen agarre y, en la montaña, consulta el tiempo y los avisos de avalanchas o senderos antes de salir.",
+    "pt": "Os invernos podem ser frios e com gelo. Usa calçado com boa aderência e, na montanha, consulta o tempo e os avisos de avalanches ou trilhos antes de sair.",
+    "pt_BR": "Os invernos podem ser frios e com gelo. Use calçados com boa aderência e, na montanha, confira o clima e os avisos de avalanches ou trilhas antes de sair.",
+    "fr": "Les hivers peuvent être froids et verglacés. Porte des chaussures bien adhérentes et, en montagne, vérifie la météo et les alertes d'avalanche ou de sentiers avant de partir.",
+    "de": "Winter können kalt und eisig sein. Tragen Sie Schuhe mit gutem Profil und prüfen Sie in den Bergen vor dem Aufbruch Wetter sowie Lawinen- und Wegwarnungen."
+   }
+  },
+  {
+   "id": "ct-CZ-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Czechs are proud of their heritage: 16 UNESCO sites, Pilsner beer, Prague's architecture, and cultural figures like Dvořák, Mucha, Havel and the beloved cartoon Krteček, the Little Mole.",
+    "it": "I cechi sono orgogliosi del loro patrimonio: 16 siti UNESCO, la birra Pilsner, l'architettura di Praga e figure culturali come Dvořák, Mucha, Havel e l'amato cartone Krteček, la Talpa.",
+    "es": "Los checos se enorgullecen de su patrimonio: 16 sitios de la UNESCO, la cerveza Pilsner, la arquitectura de Praga y figuras culturales como Dvořák, Mucha, Havel y el querido dibujo animado Krteček, el Topito.",
+    "pt": "Os checos orgulham-se do seu património: 16 locais da UNESCO, a cerveja Pilsner, a arquitetura de Praga e figuras culturais como Dvořák, Mucha, Havel e o querido desenho animado Krteček, a Toupeirinha.",
+    "pt_BR": "Os tchecos têm orgulho do seu patrimônio: 16 sítios da UNESCO, a cerveja Pilsner, a arquitetura de Praga e figuras culturais como Dvořák, Mucha, Havel e o querido desenho Krteček, a Toupeira.",
+    "fr": "Les Tchèques sont fiers de leur patrimoine : 16 sites de l'UNESCO, la bière Pilsner, l'architecture de Prague et des figures comme Dvořák, Mucha, Havel et le célèbre dessin animé Krteček, la Petite Taupe.",
+    "de": "Tschechen sind stolz auf ihr Erbe: 16 UNESCO-Stätten, das Pilsner Bier, Prags Architektur und Kulturgrößen wie Dvořák, Mucha, Havel und den beliebten Zeichentrickfilm Krteček, den kleinen Maulwurf."
+   }
+  }
+ ]
+}

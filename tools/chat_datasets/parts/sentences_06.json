@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ss-directions_meeting-001",
+  "topic": "directions_meeting",
+  "level": "A1",
+  "text": {
+   "en": "Where are you?",
+   "it": "Dove sei?",
+   "es": "¿Dónde estás?",
+   "pt": "Onde estás?",
+   "pt_BR": "Onde você está?",
+   "fr": "Où es-tu ?",
+   "de": "Wo bist du?"
+  }
+ },
+ {
+  "id": "ss-directions_meeting-002",
+  "topic": "directions_meeting",
+  "level": "A1",
+  "text": {
+   "en": "I am here.",
+   "it": "Sono qui.",
+   "es": "Estoy aquí.",
+   "pt": "Estou aqui.",
+   "pt_BR": "Estou aqui.",
+   "fr": "Je suis ici.",
+   "de": "Ich bin hier."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-003",
+  "topic": "directions_meeting",
+  "level": "A1",
+  "text": {
+   "en": "Turn left.",
+   "it": "Gira a sinistra.",
+   "es": "Gira a la izquierda.",
+   "pt": "Vira à esquerda.",
+   "pt_BR": "Vire à esquerda.",
+   "fr": "Tourne à gauche.",
+   "de": "Biege links ab."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-004",
+  "topic": "directions_meeting",
+  "level": "A1",
+  "text": {
+   "en": "Turn right.",
+   "it": "Gira a destra.",
+   "es": "Gira a la derecha.",
+   "pt": "Vira à direita.",
+   "pt_BR": "Vire à direita.",
+   "fr": "Tourne à droite.",
+   "de": "Biege rechts ab."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-005",
+  "topic": "directions_meeting",
+  "level": "A1",
+  "text": {
+   "en": "Go straight ahead.",
+   "it": "Vai dritto.",
+   "es": "Sigue recto.",
+   "pt": "Segue em frente.",
+   "pt_BR": "Siga em frente.",
+   "fr": "Va tout droit.",
+   "de": "Geh geradeaus."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-006",
+  "topic": "directions_meeting",
+  "level": "A1",
+  "text": {
+   "en": "See you at 6.",
+   "it": "Ci vediamo alle 6.",
+   "es": "Nos vemos a las 6.",
+   "pt": "Vemo-nos às 6.",
+   "pt_BR": "A gente se vê às 6.",
+   "fr": "On se voit à 18 h.",
+   "de": "Wir sehen uns um 6."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-007",
+  "topic": "directions_meeting",
+  "level": "A1",
+  "text": {
+   "en": "Where do we meet?",
+   "it": "Dove ci incontriamo?",
+   "es": "¿Dónde quedamos?",
+   "pt": "Onde nos encontramos?",
+   "pt_BR": "Onde a gente se encontra?",
+   "fr": "Où est-ce qu'on se retrouve ?",
+   "de": "Wo treffen wir uns?"
+  }
+ },
+ {
+  "id": "ss-directions_meeting-008",
+  "topic": "directions_meeting",
+  "level": "A1",
+  "text": {
+   "en": "I'll be late. Sorry!",
+   "it": "Farò tardi. Scusa!",
+   "es": "Llegaré tarde. ¡Perdona!",
+   "pt": "Vou chegar tarde. Desculpa!",
+   "pt_BR": "Vou chegar tarde. Desculpa!",
+   "fr": "Je vais être en retard. Excuse-moi !",
+   "de": "Ich komme später. Tut mir leid!"
+  }
+ },
+ {
+  "id": "ss-directions_meeting-009",
+  "topic": "directions_meeting",
+  "level": "A1",
+  "text": {
+   "en": "I am almost there.",
+   "it": "Ci sono quasi.",
+   "es": "Ya casi llego.",
+   "pt": "Já estou quase a chegar.",
+   "pt_BR": "Já estou quase chegando.",
+   "fr": "J'arrive bientôt.",
+   "de": "Ich bin gleich da."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-010",
+  "topic": "directions_meeting",
+  "level": "A1",
+  "text": {
+   "en": "Is it far?",
+   "it": "È lontano?",
+   "es": "¿Está lejos?",
+   "pt": "Fica longe?",
+   "pt_BR": "Fica longe?",
+   "fr": "C'est loin ?",
+   "de": "Ist es weit?"
+  }
+ },
+ {
+  "id": "ss-directions_meeting-011",
+  "topic": "directions_meeting",
+  "level": "A1",
+  "text": {
+   "en": "It is close.",
+   "it": "È vicino.",
+   "es": "Está cerca.",
+   "pt": "Fica perto.",
+   "pt_BR": "Fica perto.",
+   "fr": "C'est près d'ici.",
+   "de": "Es ist ganz in der Nähe."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-012",
+  "topic": "directions_meeting",
+  "level": "A1",
+  "text": {
+   "en": "Wait for me here.",
+   "it": "Aspettami qui.",
+   "es": "Espérame aquí.",
+   "pt": "Espera por mim aqui.",
+   "pt_BR": "Espere por mim aqui.",
+   "fr": "Attends-moi ici.",
+   "de": "Warte hier auf mich."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-013",
+  "topic": "directions_meeting",
+  "level": "A1",
+  "text": {
+   "en": "Where is the station?",
+   "it": "Dov'è la stazione?",
+   "es": "¿Dónde está la estación?",
+   "pt": "Onde fica a estação?",
+   "pt_BR": "Onde fica a estação?",
+   "fr": "Où est la gare ?",
+   "de": "Wo ist der Bahnhof?"
+  }
+ },
+ {
+  "id": "ss-directions_meeting-014",
+  "topic": "directions_meeting",
+  "level": "A1",
+  "text": {
+   "en": "Let's meet tomorrow.",
+   "it": "Vediamoci domani.",
+   "es": "Quedemos mañana.",
+   "pt": "Vamos encontrar-nos amanhã.",
+   "pt_BR": "Vamos nos encontrar amanhã.",
+   "fr": "Retrouvons-nous demain.",
+   "de": "Lass uns morgen treffen."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-015",
+  "topic": "directions_meeting",
+  "level": "A1",
+  "text": {
+   "en": "Send me your location.",
+   "it": "Mandami la tua posizione.",
+   "es": "Mándame tu ubicación.",
+   "pt": "Envia-me a tua localização.",
+   "pt_BR": "Me manda sua localização.",
+   "fr": "Envoie-moi ta position.",
+   "de": "Schick mir deinen Standort."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-016",
+  "topic": "directions_meeting",
+  "level": "A2",
+  "text": {
+   "en": "Meet me in front of the café.",
+   "it": "Ci vediamo davanti al bar.",
+   "es": "Nos vemos delante de la cafetería.",
+   "pt": "Encontramo-nos à frente do café.",
+   "pt_BR": "A gente se encontra em frente ao café.",
+   "fr": "On se retrouve devant le café.",
+   "de": "Wir treffen uns vor dem Café."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-017",
+  "topic": "directions_meeting",
+  "level": "A2",
+  "text": {
+   "en": "Is this the right way to the museum?",
+   "it": "È la strada giusta per il museo?",
+   "es": "¿Es este el camino al museo?",
+   "pt": "É este o caminho para o museu?",
+   "pt_BR": "É esse o caminho para o museu?",
+   "fr": "C'est le bon chemin pour aller au musée ?",
+   "de": "Ist das der richtige Weg zum Museum?"
+  }
+ },
+ {
+  "id": "ss-directions_meeting-018",
+  "topic": "directions_meeting",
+  "level": "A2",
+  "text": {
+   "en": "Take the second street on the left.",
+   "it": "Prendi la seconda strada a sinistra.",
+   "es": "Toma la segunda calle a la izquierda.",
+   "pt": "Apanha a segunda rua à esquerda.",
+   "pt_BR": "Pegue a segunda rua à esquerda.",
+   "fr": "Prends la deuxième rue à gauche.",
+   "de": "Nimm die zweite Straße links."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-019",
+  "topic": "directions_meeting",
+  "level": "A2",
+  "text": {
+   "en": "I think I took a wrong turn.",
+   "it": "Credo di aver sbagliato strada.",
+   "es": "Creo que me he equivocado de camino.",
+   "pt": "Acho que me enganei no caminho.",
+   "pt_BR": "Acho que errei o caminho.",
+   "fr": "Je crois que je me suis trompé de chemin.",
+   "de": "Ich glaube, ich bin falsch abgebogen."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-020",
+  "topic": "directions_meeting",
+  "level": "A2",
+  "text": {
+   "en": "How long does it take to walk there?",
+   "it": "Quanto ci vuole a piedi?",
+   "es": "¿Cuánto se tarda andando?",
+   "pt": "Quanto tempo leva a pé?",
+   "pt_BR": "Quanto tempo leva a pé?",
+   "fr": "Combien de temps faut-il à pied ?",
+   "de": "Wie lange braucht man zu Fuß?"
+  }
+ },
+ {
+  "id": "ss-directions_meeting-021",
+  "topic": "directions_meeting",
+  "level": "A2",
+  "text": {
+   "en": "It's about ten minutes from here.",
+   "it": "Sono circa dieci minuti da qui.",
+   "es": "Está a unos diez minutos de aquí.",
+   "pt": "Fica a cerca de dez minutos daqui.",
+   "pt_BR": "Fica a uns dez minutos daqui.",
+   "fr": "C'est à environ dix minutes d'ici.",
+   "de": "Es sind etwa zehn Minuten von hier."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-022",
+  "topic": "directions_meeting",
+  "level": "A2",
+  "text": {
+   "en": "Let's meet at the main square at 6.",
+   "it": "Ci vediamo in piazza principale alle 6.",
+   "es": "Quedemos en la plaza principal a las 6.",
+   "pt": "Encontramo-nos na praça principal às 6.",
+   "pt_BR": "Vamos nos encontrar na praça principal às 6.",
+   "fr": "Retrouvons-nous sur la place principale à 18 h.",
+   "de": "Treffen wir uns um 6 auf dem Hauptplatz."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-023",
+  "topic": "directions_meeting",
+  "level": "A2",
+  "text": {
+   "en": "Which exit should I take?",
+   "it": "Quale uscita devo prendere?",
+   "es": "¿Qué salida tengo que tomar?",
+   "pt": "Que saída devo apanhar?",
+   "pt_BR": "Qual saída devo pegar?",
+   "fr": "Quelle sortie dois-je prendre ?",
+   "de": "Welchen Ausgang soll ich nehmen?"
+  }
+ },
+ {
+  "id": "ss-directions_meeting-024",
+  "topic": "directions_meeting",
+  "level": "A2",
+  "text": {
+   "en": "Can you show me on the map?",
+   "it": "Puoi mostrarmelo sulla mappa?",
+   "es": "¿Puedes enseñármelo en el mapa?",
+   "pt": "Podes mostrar-me no mapa?",
+   "pt_BR": "Você pode me mostrar no mapa?",
+   "fr": "Peux-tu me le montrer sur la carte ?",
+   "de": "Kannst du es mir auf der Karte zeigen?"
+  }
+ },
+ {
+  "id": "ss-directions_meeting-025",
+  "topic": "directions_meeting",
+  "level": "A2",
+  "text": {
+   "en": "I'll wait for you at the entrance.",
+   "it": "Ti aspetto all'ingresso.",
+   "es": "Te espero en la entrada.",
+   "pt": "Espero por ti à entrada.",
+   "pt_BR": "Espero você na entrada.",
+   "fr": "Je t'attends à l'entrée.",
+   "de": "Ich warte am Eingang auf dich."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-026",
+  "topic": "directions_meeting",
+  "level": "A2",
+  "text": {
+   "en": "Are you on your way?",
+   "it": "Sei in arrivo?",
+   "es": "¿Ya vienes de camino?",
+   "pt": "Já vens a caminho?",
+   "pt_BR": "Você já está a caminho?",
+   "fr": "Tu es en route ?",
+   "de": "Bist du schon unterwegs?"
+  }
+ },
+ {
+  "id": "ss-directions_meeting-027",
+  "topic": "directions_meeting",
+  "level": "A2",
+  "text": {
+   "en": "The bus stop is next to the pharmacy.",
+   "it": "La fermata dell'autobus è accanto alla farmacia.",
+   "es": "La parada del autobús está al lado de la farmacia.",
+   "pt": "A paragem de autocarro fica ao lado da farmácia.",
+   "pt_BR": "O ponto de ônibus fica ao lado da farmácia.",
+   "fr": "L'arrêt de bus est à côté de la pharmacie.",
+   "de": "Die Bushaltestelle ist neben der Apotheke."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-028",
+  "topic": "directions_meeting",
+  "level": "A2",
+  "text": {
+   "en": "Can we meet a bit later?",
+   "it": "Possiamo vederci un po' più tardi?",
+   "es": "¿Podemos vernos un poco más tarde?",
+   "pt": "Podemos encontrar-nos um pouco mais tarde?",
+   "pt_BR": "A gente pode se encontrar um pouco mais tarde?",
+   "fr": "On peut se retrouver un peu plus tard ?",
+   "de": "Können wir uns etwas später treffen?"
+  }
+ },
+ {
+  "id": "ss-directions_meeting-029",
+  "topic": "directions_meeting",
+  "level": "A2",
+  "text": {
+   "en": "Cross the bridge and keep going.",
+   "it": "Attraversa il ponte e continua.",
+   "es": "Cruza el puente y sigue adelante.",
+   "pt": "Atravessa a ponte e continua.",
+   "pt_BR": "Atravesse a ponte e continue.",
+   "fr": "Traverse le pont et continue.",
+   "de": "Geh über die Brücke und weiter."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-030",
+  "topic": "directions_meeting",
+  "level": "A2",
+  "text": {
+   "en": "I'm at the front, wearing a blue jacket.",
+   "it": "Sono davanti, con una giacca blu.",
+   "es": "Estoy delante, con una chaqueta azul.",
+   "pt": "Estou à frente, com um casaco azul.",
+   "pt_BR": "Estou na frente, com uma jaqueta azul.",
+   "fr": "Je suis devant, avec une veste bleue.",
+   "de": "Ich stehe vorne und trage eine blaue Jacke."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-031",
+  "topic": "directions_meeting",
+  "level": "B1",
+  "text": {
+   "en": "Could you tell me how to get to the old town from here?",
+   "it": "Potresti dirmi come arrivare al centro storico da qui?",
+   "es": "¿Podrías decirme cómo llegar al casco antiguo desde aquí?",
+   "pt": "Podes dizer-me como chegar ao centro histórico a partir daqui?",
+   "pt_BR": "Você pode me dizer como chegar ao centro histórico daqui?",
+   "fr": "Pourrais-tu m'indiquer comment aller dans la vieille ville d'ici ?",
+   "de": "Kannst du mir sagen, wie ich von hier in die Altstadt komme?"
+  }
+ },
+ {
+  "id": "ss-directions_meeting-032",
+  "topic": "directions_meeting",
+  "level": "B1",
+  "text": {
+   "en": "I'll be about ten minutes late because of the traffic.",
+   "it": "Farò circa dieci minuti di ritardo per il traffico.",
+   "es": "Llegaré unos diez minutos tarde por el tráfico.",
+   "pt": "Vou chegar com uns dez minutos de atraso por causa do trânsito.",
+   "pt_BR": "Vou me atrasar uns dez minutos por causa do trânsito.",
+   "fr": "J'aurai environ dix minutes de retard à cause de la circulation.",
+   "de": "Ich komme wegen des Verkehrs etwa zehn Minuten später."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-033",
+  "topic": "directions_meeting",
+  "level": "B1",
+  "text": {
+   "en": "Let's meet halfway so neither of us has to travel too far.",
+   "it": "Incontriamoci a metà strada così nessuno dei due deve fare troppa strada.",
+   "es": "Quedemos a medio camino para que ninguno tenga que viajar mucho.",
+   "pt": "Encontremo-nos a meio caminho para que nenhum de nós tenha de andar muito.",
+   "pt_BR": "Vamos nos encontrar no meio do caminho para nenhum de nós ter que andar muito.",
+   "fr": "Retrouvons-nous à mi-chemin pour qu'aucun de nous n'ait trop de route à faire.",
+   "de": "Treffen wir uns auf halber Strecke, dann muss keiner von uns weit fahren."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-034",
+  "topic": "directions_meeting",
+  "level": "B1",
+  "text": {
+   "en": "Do you know if there is a metro station near the museum?",
+   "it": "Sai se c'è una fermata della metro vicino al museo?",
+   "es": "¿Sabes si hay una estación de metro cerca del museo?",
+   "pt": "Sabes se há uma estação de metro perto do museu?",
+   "pt_BR": "Você sabe se tem uma estação de metrô perto do museu?",
+   "fr": "Sais-tu s'il y a une station de métro près du musée ?",
+   "de": "Weißt du, ob es in der Nähe des Museums eine U-Bahn-Station gibt?"
+  }
+ },
+ {
+  "id": "ss-directions_meeting-035",
+  "topic": "directions_meeting",
+  "level": "B1",
+  "text": {
+   "en": "If you get off at the wrong stop, just text me and I'll guide you.",
+   "it": "Se scendi alla fermata sbagliata, scrivimi e ti guido io.",
+   "es": "Si te bajas en la parada equivocada, escríbeme y te guío.",
+   "pt": "Se saíres na paragem errada, escreve-me e eu oriento-te.",
+   "pt_BR": "Se você descer no ponto errado, me escreve que eu te oriento.",
+   "fr": "Si tu descends au mauvais arrêt, écris-moi et je te guiderai.",
+   "de": "Wenn du an der falschen Haltestelle aussteigst, schreib mir einfach, dann lotse ich dich."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-036",
+  "topic": "directions_meeting",
+  "level": "B1",
+  "text": {
+   "en": "The entrance is on the side street, not on the main road.",
+   "it": "L'ingresso è nella via laterale, non sulla strada principale.",
+   "es": "La entrada está en la calle lateral, no en la calle principal.",
+   "pt": "A entrada fica na rua lateral, não na rua principal.",
+   "pt_BR": "A entrada fica na rua lateral, não na avenida principal.",
+   "fr": "L'entrée est dans la rue latérale, pas sur la rue principale.",
+   "de": "Der Eingang liegt in der Seitenstraße, nicht an der Hauptstraße."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-037",
+  "topic": "directions_meeting",
+  "level": "B1",
+  "text": {
+   "en": "Let's confirm the time and place again the day before.",
+   "it": "Riconfermiamo orario e luogo il giorno prima.",
+   "es": "Confirmemos de nuevo la hora y el lugar el día antes.",
+   "pt": "Voltamos a confirmar a hora e o local na véspera.",
+   "pt_BR": "Vamos confirmar de novo o horário e o local na véspera.",
+   "fr": "Reconfirmons l'heure et le lieu la veille.",
+   "de": "Lass uns Zeit und Ort am Tag davor noch einmal bestätigen."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-038",
+  "topic": "directions_meeting",
+  "level": "B1",
+  "text": {
+   "en": "I can't find the entrance. Can you come out and meet me?",
+   "it": "Non trovo l'ingresso. Puoi uscire a prendermi?",
+   "es": "No encuentro la entrada. ¿Puedes salir a buscarme?",
+   "pt": "Não encontro a entrada. Podes sair para me encontrares?",
+   "pt_BR": "Não estou achando a entrada. Você pode sair para me encontrar?",
+   "fr": "Je ne trouve pas l'entrée. Tu peux sortir me chercher ?",
+   "de": "Ich finde den Eingang nicht. Kannst du rauskommen und mich abholen?"
+  }
+ },
+ {
+  "id": "ss-directions_meeting-039",
+  "topic": "directions_meeting",
+  "level": "B1",
+  "text": {
+   "en": "It's easy to miss, so look for the green door.",
+   "it": "È facile non vederlo, cerca la porta verde.",
+   "es": "Es fácil pasarlo por alto, busca la puerta verde.",
+   "pt": "É fácil passar sem ver, procura a porta verde.",
+   "pt_BR": "É fácil passar direto, procure a porta verde.",
+   "fr": "On peut facilement le manquer, cherche la porte verte.",
+   "de": "Man übersieht es leicht, achte auf die grüne Tür."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-040",
+  "topic": "directions_meeting",
+  "level": "B1",
+  "text": {
+   "en": "How about we meet near the station and then walk together?",
+   "it": "Che ne dici di vederci vicino alla stazione e poi andare insieme a piedi?",
+   "es": "¿Qué tal si nos vemos cerca de la estación y luego vamos andando juntos?",
+   "pt": "Que tal encontrarmo-nos perto da estação e depois irmos a pé juntos?",
+   "pt_BR": "Que tal a gente se encontrar perto da estação e depois ir a pé juntos?",
+   "fr": "Et si on se retrouvait près de la gare, puis qu'on marchait ensemble ?",
+   "de": "Wie wäre es, wenn wir uns in der Nähe des Bahnhofs treffen und dann zusammen zu Fuß gehen?"
+  }
+ },
+ {
+  "id": "ss-directions_meeting-041",
+  "topic": "directions_meeting",
+  "level": "B1",
+  "text": {
+   "en": "My phone is almost dead, so I may not be able to answer.",
+   "it": "Il telefono è quasi scarico, quindi potrei non riuscire a rispondere.",
+   "es": "Mi móvil casi no tiene batería, así que quizá no pueda contestar.",
+   "pt": "O telemóvel está quase sem bateria, por isso talvez não consiga responder.",
+   "pt_BR": "Meu celular está quase sem bateria, então talvez eu não consiga responder.",
+   "fr": "Mon téléphone n'a presque plus de batterie, je ne pourrai peut-être pas répondre.",
+   "de": "Mein Handy ist fast leer, deshalb kann ich vielleicht nicht antworten."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-042",
+  "topic": "directions_meeting",
+  "level": "B1",
+  "text": {
+   "en": "Is there a shortcut through the park?",
+   "it": "C'è una scorciatoia attraverso il parco?",
+   "es": "¿Hay algún atajo por el parque?",
+   "pt": "Há algum atalho pelo parque?",
+   "pt_BR": "Tem algum atalho pelo parque?",
+   "fr": "Y a-t-il un raccourci par le parc ?",
+   "de": "Gibt es eine Abkürzung durch den Park?"
+  }
+ },
+ {
+  "id": "ss-directions_meeting-043",
+  "topic": "directions_meeting",
+  "level": "B1",
+  "text": {
+   "en": "We should leave early to avoid the crowds.",
+   "it": "Dovremmo partire presto per evitare la folla.",
+   "es": "Deberíamos salir temprano para evitar las multitudes.",
+   "pt": "Devíamos sair cedo para evitar as multidões.",
+   "pt_BR": "A gente devia sair cedo para evitar as multidões.",
+   "fr": "On devrait partir tôt pour éviter la foule.",
+   "de": "Wir sollten früh losgehen, um die Menschenmassen zu vermeiden."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-044",
+  "topic": "directions_meeting",
+  "level": "B2",
+  "text": {
+   "en": "Instead of the original plan, would it be easier if I came to your neighbourhood?",
+   "it": "Invece del piano iniziale, sarebbe più comodo se venissi io nel tuo quartiere?",
+   "es": "En lugar del plan inicial, ¿te vendría mejor que fuera yo a tu barrio?",
+   "pt": "Em vez do plano inicial, seria mais fácil se eu fosse ao teu bairro?",
+   "pt_BR": "Em vez do plano inicial, seria mais fácil se eu fosse ao seu bairro?",
+   "fr": "Plutôt que le plan initial, ce serait plus simple si je venais dans ton quartier ?",
+   "de": "Statt des ursprünglichen Plans: Wäre es einfacher, wenn ich in dein Viertel käme?"
+  }
+ },
+ {
+  "id": "ss-directions_meeting-045",
+  "topic": "directions_meeting",
+  "level": "B2",
+  "text": {
+   "en": "The map shows a different route, but I'd rather follow the signs along the river.",
+   "it": "La mappa indica un altro percorso, ma preferirei seguire i cartelli lungo il fiume.",
+   "es": "El mapa indica otra ruta, pero preferiría seguir las señales junto al río.",
+   "pt": "O mapa indica outro percurso, mas preferia seguir as indicações ao longo do rio.",
+   "pt_BR": "O mapa indica outro trajeto, mas eu preferiria seguir as placas ao longo do rio.",
+   "fr": "La carte indique un autre itinéraire, mais je préférerais suivre les panneaux le long de la rivière.",
+   "de": "Die Karte zeigt eine andere Route, aber ich würde lieber den Schildern am Fluss entlang folgen."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-046",
+  "topic": "directions_meeting",
+  "level": "B2",
+  "text": {
+   "en": "Since the trains are delayed, let's postpone the meeting by an hour, if that works for you.",
+   "it": "Visto che i treni sono in ritardo, rimandiamo l'incontro di un'ora, se per te va bene.",
+   "es": "Como los trenes van con retraso, aplacemos la cita una hora, si te viene bien.",
+   "pt": "Como os comboios estão atrasados, adiemos o encontro uma hora, se te der jeito.",
+   "pt_BR": "Como os trens estão atrasados, vamos adiar o encontro por uma hora, se for bom para você.",
+   "fr": "Comme les trains ont du retard, reportons notre rendez-vous d'une heure, si ça te convient.",
+   "de": "Da die Züge Verspätung haben, lass uns das Treffen um eine Stunde verschieben, wenn es dir passt."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-047",
+  "topic": "directions_meeting",
+  "level": "B2",
+  "text": {
+   "en": "I'll send you a pin on the map, as the street names are hard to pronounce.",
+   "it": "Ti mando un punto sulla mappa, perché i nomi delle strade sono difficili da pronunciare.",
+   "es": "Te envío un marcador en el mapa, porque los nombres de las calles son difíciles de pronunciar.",
+   "pt": "Envio-te um ponto no mapa, porque os nomes das ruas são difíceis de pronunciar.",
+   "pt_BR": "Vou te mandar um ponto no mapa, porque os nomes das ruas são difíceis de pronunciar.",
+   "fr": "Je t'envoie un repère sur la carte, car les noms de rues sont difficiles à prononcer.",
+   "de": "Ich schicke dir eine Markierung auf der Karte, weil die Straßennamen schwer auszusprechen sind."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-048",
+  "topic": "directions_meeting",
+  "level": "B2",
+  "text": {
+   "en": "If you reach the roundabout, you've gone too far; turn back and take the first street on the right.",
+   "it": "Se arrivi alla rotonda, hai superato il punto: torna indietro e prendi la prima strada a destra.",
+   "es": "Si llegas a la rotonda, te has pasado: da la vuelta y toma la primera calle a la derecha.",
+   "pt": "Se chegares à rotunda, passaste do sítio: volta atrás e apanha a primeira rua à direita.",
+   "pt_BR": "Se chegar à rotatória, você passou do ponto: volte e pegue a primeira rua à direita.",
+   "fr": "Si tu arrives au rond-point, tu es allé trop loin : reviens en arrière et prends la première rue à droite.",
+   "de": "Wenn du den Kreisverkehr erreichst, bist du zu weit gegangen: Geh zurück und nimm die erste Straße rechts."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-049",
+  "topic": "directions_meeting",
+  "level": "B2",
+  "text": {
+   "en": "It would be great to meet up before the event starts so we can find our seats together.",
+   "it": "Sarebbe bello trovarsi prima dell'inizio dell'evento per cercare i posti insieme.",
+   "es": "Sería genial vernos antes de que empiece el evento para buscar los asientos juntos.",
+   "pt": "Seria ótimo encontrarmo-nos antes de o evento começar para procurarmos os lugares juntos.",
+   "pt_BR": "Seria ótimo a gente se encontrar antes de o evento começar para procurar os lugares juntos.",
+   "fr": "Ce serait super de se retrouver avant le début de l'événement pour chercher nos places ensemble.",
+   "de": "Es wäre toll, wenn wir uns vor Beginn der Veranstaltung treffen und gemeinsam unsere Plätze suchen."
+  }
+ },
+ {
+  "id": "ss-directions_meeting-050",
+  "topic": "directions_meeting",
+  "level": "B2",
+  "text": {
+   "en": "Thanks for waiting, and sorry I kept you here so long.",
+   "it": "Grazie per aver aspettato, e scusa se ti ho fatto aspettare così tanto.",
+   "es": "Gracias por esperar, y perdona que te haya hecho esperar tanto.",
+   "pt": "Agradeço teres esperado, e desculpa ter-te feito esperar tanto.",
+   "pt_BR": "Valeu por ter esperado, e desculpa por ter feito você esperar tanto.",
+   "fr": "Merci d'avoir attendu, et excuse-moi de t'avoir fait attendre si longtemps.",
+   "de": "Danke fürs Warten, und tut mir leid, dass du so lange warten musstest."
+  }
+ },
+ {
+  "id": "ss-weather-001",
+  "topic": "weather",
+  "level": "A1",
+  "text": {
+   "en": "It is sunny today.",
+   "it": "Oggi c'è il sole.",
+   "es": "Hoy hace sol.",
+   "pt": "Hoje está sol.",
+   "pt_BR": "Hoje está ensolarado.",
+   "fr": "Il y a du soleil aujourd'hui.",
+   "de": "Heute scheint die Sonne."
+  }
+ },
+ {
+  "id": "ss-weather-002",
+  "topic": "weather",
+  "level": "A1",
+  "text": {
+   "en": "It is raining.",
+   "it": "Piove.",
+   "es": "Está lloviendo.",
+   "pt": "Está a chover.",
+   "pt_BR": "Está chovendo.",
+   "fr": "Il pleut.",
+   "de": "Es regnet."
+  }
+ },
+ {
+  "id": "ss-weather-003",
+  "topic": "weather",
+  "level": "A1",
+  "text": {
+   "en": "It is cold.",
+   "it": "Fa freddo.",
+   "es": "Hace frío.",
+   "pt": "Está frio.",
+   "pt_BR": "Está frio.",
+   "fr": "Il fait froid.",
+   "de": "Es ist kalt."
+  }
+ },
+ {
+  "id": "ss-weather-004",
+  "topic": "weather",
+  "level": "A1",
+  "text": {
+   "en": "It is hot.",
+   "it": "Fa caldo.",
+   "es": "Hace calor.",
+   "pt": "Está calor.",
+   "pt_BR": "Está calor.",
+   "fr": "Il fait chaud.",
+   "de": "Es ist heiß."
+  }
+ },
+ {
+  "id": "ss-weather-005",
+  "topic": "weather",
+  "level": "A1",
+  "text": {
+   "en": "What is the weather like today?",
+   "it": "Che tempo fa oggi?",
+   "es": "¿Qué tiempo hace hoy?",
+   "pt": "Como está o tempo hoje?",
+   "pt_BR": "Como está o tempo hoje?",
+   "fr": "Quel temps fait-il aujourd'hui ?",
+   "de": "Wie ist das Wetter heute?"
+  }
+ },
+ {
+  "id": "ss-weather-006",
+  "topic": "weather",
+  "level": "A1",
+  "text": {
+   "en": "It is windy.",
+   "it": "C'è vento.",
+   "es": "Hace viento.",
+   "pt": "Está vento.",
+   "pt_BR": "Está ventando.",
+   "fr": "Il y a du vent.",
+   "de": "Es ist windig."
+  }
+ },
+ {
+  "id": "ss-weather-007",
+  "topic": "weather",
+  "level": "A1",
+  "text": {
+   "en": "It is snowing.",
+   "it": "Nevica.",
+   "es": "Está nevando.",
+   "pt": "Está a nevar.",
+   "pt_BR": "Está nevando.",
+   "fr": "Il neige.",
+   "de": "Es schneit."
+  }
+ },
+ {
+  "id": "ss-weather-008",
+  "topic": "weather",
+  "level": "A1",
+  "text": {
+   "en": "I like the sun.",
+   "it": "Mi piace il sole.",
+   "es": "Me gusta el sol.",
+   "pt": "Gosto do sol.",
+   "pt_BR": "Gosto do sol.",
+   "fr": "J'aime le soleil.",
+   "de": "Ich mag die Sonne."
+  }
+ },
+ {
+  "id": "ss-weather-009",
+  "topic": "weather",
+  "level": "A1",
+  "text": {
+   "en": "Good weather today!",
+   "it": "Bel tempo oggi!",
+   "es": "¡Hace buen tiempo hoy!",
+   "pt": "Está bom tempo hoje!",
+   "pt_BR": "Está um dia lindo hoje!",
+   "fr": "Beau temps aujourd'hui !",
+   "de": "Heute ist schönes Wetter!"
+  }
+ },
+ {
+  "id": "ss-weather-010",
+  "topic": "weather",
+  "level": "A1",
+  "text": {
+   "en": "Do you have an umbrella?",
+   "it": "Hai un ombrello?",
+   "es": "¿Tienes paraguas?",
+   "pt": "Tens um guarda-chuva?",
+   "pt_BR": "Você tem um guarda-chuva?",
+   "fr": "Tu as un parapluie ?",
+   "de": "Hast du einen Regenschirm?"
+  }
+ },
+ {
+  "id": "ss-weather-011",
+  "topic": "weather",
+  "level": "A1",
+  "text": {
+   "en": "It is cloudy.",
+   "it": "È nuvoloso.",
+   "es": "Está nublado.",
+   "pt": "Está nublado.",
+   "pt_BR": "Está nublado.",
+   "fr": "Le ciel est nuageux.",
+   "de": "Es ist bewölkt."
+  }
+ },
+ {
+  "id": "ss-weather-012",
+  "topic": "weather",
+  "level": "A1",
+  "text": {
+   "en": "How is the weather there?",
+   "it": "Com'è il tempo da te?",
+   "es": "¿Cómo está el tiempo por allí?",
+   "pt": "Como está o tempo por aí?",
+   "pt_BR": "Como está o tempo aí?",
+   "fr": "Quel temps fait-il chez toi ?",
+   "de": "Wie ist das Wetter bei dir?"
+  }
+ },
+ {
+  "id": "ss-weather-013",
+  "topic": "weather",
+  "level": "A1",
+  "text": {
+   "en": "It is a nice day.",
+   "it": "È una bella giornata.",
+   "es": "Es un buen día.",
+   "pt": "É um dia bonito.",
+   "pt_BR": "É um dia bonito.",
+   "fr": "C'est une belle journée.",
+   "de": "Es ist ein schöner Tag."
+  }
+ },
+ {
+  "id": "ss-weather-014",
+  "topic": "weather",
+  "level": "A1",
+  "text": {
+   "en": "Is it warm there?",
+   "it": "Fa caldo lì?",
+   "es": "¿Hace calor ahí?",
+   "pt": "Está calor aí?",
+   "pt_BR": "Está quente aí?",
+   "fr": "Il fait chaud chez toi ?",
+   "de": "Ist es bei dir warm?"
+  }
+ },
+ {
+  "id": "ss-weather-015",
+  "topic": "weather",
+  "level": "A1",
+  "text": {
+   "en": "It is very cold tonight.",
+   "it": "Stanotte fa molto freddo.",
+   "es": "Esta noche hace mucho frío.",
+   "pt": "Esta noite está muito frio.",
+   "pt_BR": "Hoje à noite está muito frio.",
+   "fr": "Il fait très froid cette nuit.",
+   "de": "Heute Nacht ist es sehr kalt."
+  }
+ },
+ {
+  "id": "ss-weather-016",
+  "topic": "weather",
+  "level": "A2",
+  "text": {
+   "en": "Will it rain tomorrow?",
+   "it": "Domani pioverà?",
+   "es": "¿Va a llover mañana?",
+   "pt": "Vai chover amanhã?",
+   "pt_BR": "Vai chover amanhã?",
+   "fr": "Est-ce qu'il va pleuvoir demain ?",
+   "de": "Regnet es morgen?"
+  }
+ },
+ {
+  "id": "ss-weather-017",
+  "topic": "weather",
+  "level": "A2",
+  "text": {
+   "en": "Don't forget your jacket, it's cold outside.",
+   "it": "Non dimenticare la giacca, fuori fa freddo.",
+   "es": "No olvides la chaqueta, hace frío fuera.",
+   "pt": "Não te esqueças do casaco, está frio lá fora.",
+   "pt_BR": "Não esqueça a jaqueta, está frio lá fora.",
+   "fr": "N'oublie pas ta veste, il fait froid dehors.",
+   "de": "Vergiss deine Jacke nicht, draußen ist es kalt."
+  }
+ },
+ {
+  "id": "ss-weather-018",
+  "topic": "weather",
+  "level": "A2",
+  "text": {
+   "en": "The weather is great for a walk.",
+   "it": "Il tempo è perfetto per una passeggiata.",
+   "es": "El tiempo es ideal para dar un paseo.",
+   "pt": "O tempo está ótimo para um passeio.",
+   "pt_BR": "O tempo está ótimo para um passeio.",
+   "fr": "Il fait un temps idéal pour se promener.",
+   "de": "Das Wetter ist perfekt für einen Spaziergang."
+  }
+ },
+ {
+  "id": "ss-weather-019",
+  "topic": "weather",
+  "level": "A2",
+  "text": {
+   "en": "What's the forecast for the weekend?",
+   "it": "Come sono le previsioni per il fine settimana?",
+   "es": "¿Cuál es el pronóstico para el fin de semana?",
+   "pt": "Qual é a previsão para o fim de semana?",
+   "pt_BR": "Qual é a previsão para o fim de semana?",
+   "fr": "Quelle est la météo pour le week-end ?",
+   "de": "Wie ist die Wettervorhersage fürs Wochenende?"
+  }
+ },
+ {
+  "id": "ss-weather-020",
+  "topic": "weather",
+  "level": "A2",
+  "text": {
+   "en": "It's about 20 degrees here.",
+   "it": "Qui ci sono circa 20 gradi.",
+   "es": "Aquí hay unos 20 grados.",
+   "pt": "Aqui estão cerca de 20 graus.",
+   "pt_BR": "Aqui está fazendo uns 20 graus.",
+   "fr": "Il fait environ 20 degrés ici.",
+   "de": "Hier hat es etwa 20 Grad."
+  }
+ },
+ {
+  "id": "ss-weather-021",
+  "topic": "weather",
+  "level": "A2",
+  "text": {
+   "en": "It was very hot yesterday.",
+   "it": "Ieri faceva molto caldo.",
+   "es": "Ayer hizo mucho calor.",
+   "pt": "Ontem esteve muito calor.",
+   "pt_BR": "Ontem fez muito calor.",
+   "fr": "Il faisait très chaud hier.",
+   "de": "Gestern war es sehr heiß."
+  }
+ },
+ {
+  "id": "ss-weather-022",
+  "topic": "weather",
+  "level": "A2",
+  "text": {
+   "en": "The sky is clear tonight.",
+   "it": "Il cielo è sereno stasera.",
+   "es": "El cielo está despejado esta noche.",
+   "pt": "O céu está limpo esta noite.",
+   "pt_BR": "O céu está limpo hoje à noite.",
+   "fr": "Le ciel est dégagé ce soir.",
+   "de": "Der Himmel ist heute Abend klar."
+  }
+ },
+ {
+  "id": "ss-weather-023",
+  "topic": "weather",
+  "level": "A2",
+  "text": {
+   "en": "I don't like the rain much.",
+   "it": "Non mi piace molto la pioggia.",
+   "es": "No me gusta mucho la lluvia.",
+   "pt": "Não gosto muito da chuva.",
+   "pt_BR": "Não gosto muito da chuva.",
+   "fr": "Je n'aime pas trop la pluie.",
+   "de": "Ich mag den Regen nicht besonders."
+  }
+ },
+ {
+  "id": "ss-weather-024",
+  "topic": "weather",
+  "level": "A2",
+  "text": {
+   "en": "Winters here are very cold.",
+   "it": "Gli inverni qui sono molto freddi.",
+   "es": "Los inviernos aquí son muy fríos.",
+   "pt": "Os invernos aqui são muito frios.",
+   "pt_BR": "Os invernos aqui são muito frios.",
+   "fr": "Les hivers ici sont très froids.",
+   "de": "Die Winter hier sind sehr kalt."
+  }
+ },
+ {
+  "id": "ss-weather-025",
+  "topic": "weather",
+  "level": "A2",
+  "text": {
+   "en": "What is the weather like in your city in summer?",
+   "it": "Com'è il tempo nella tua città d'estate?",
+   "es": "¿Cómo es el tiempo en tu ciudad en verano?",
+   "pt": "Como é o tempo na tua cidade no verão?",
+   "pt_BR": "Como é o tempo na sua cidade no verão?",
+   "fr": "Quel temps fait-il dans ta ville en été ?",
+   "de": "Wie ist das Wetter in deiner Stadt im Sommer?"
+  }
+ },
+ {
+  "id": "ss-weather-026",
+  "topic": "weather",
+  "level": "A2",
+  "text": {
+   "en": "It looks like it's going to rain.",
+   "it": "Sembra che stia per piovere.",
+   "es": "Parece que va a llover.",
+   "pt": "Parece que vai chover.",
+   "pt_BR": "Parece que vai chover.",
+   "fr": "On dirait qu'il va pleuvoir.",
+   "de": "Es sieht nach Regen aus."
+  }
+ },
+ {
+  "id": "ss-weather-027",
+  "topic": "weather",
+  "level": "A2",
+  "text": {
+   "en": "The sun sets early in winter.",
+   "it": "In inverno il sole tramonta presto.",
+   "es": "En invierno el sol se pone temprano.",
+   "pt": "No inverno o sol põe-se cedo.",
+   "pt_BR": "No inverno o sol se põe cedo.",
+   "fr": "En hiver, le soleil se couche tôt.",
+   "de": "Im Winter geht die Sonne früh unter."
+  }
+ },
+ {
+  "id": "ss-weather-028",
+  "topic": "weather",
+  "level": "A2",
+  "text": {
+   "en": "Autumn is my favourite season.",
+   "it": "L'autunno è la mia stagione preferita.",
+   "es": "El otoño es mi estación favorita.",
+   "pt": "O outono é a minha estação preferida.",
+   "pt_BR": "O outono é minha estação preferida.",
+   "fr": "L'automne est ma saison préférée.",
+   "de": "Der Herbst ist meine Lieblingsjahreszeit."
+  }
+ },
+ {
+  "id": "ss-weather-029",
+  "topic": "weather",
+  "level": "A2",
+  "text": {
+   "en": "There was a lot of fog this morning.",
+   "it": "Stamattina c'era molta nebbia.",
+   "es": "Esta mañana había mucha niebla.",
+   "pt": "Esta manhã havia muito nevoeiro.",
+   "pt_BR": "Hoje de manhã tinha muita neblina.",
+   "fr": "Il y avait beaucoup de brouillard ce matin.",
+   "de": "Heute Morgen war es sehr neblig."
+  }
+ },
+ {
+  "id": "ss-weather-030",
+  "topic": "weather",
+  "level": "A2",
+  "text": {
+   "en": "Bring sunscreen, the sun is strong.",
+   "it": "Porta la crema solare, il sole è forte.",
+   "es": "Trae protector solar, el sol es fuerte.",
+   "pt": "Leva protetor solar, o sol está forte.",
+   "pt_BR": "Leve protetor solar, o sol está forte.",
+   "fr": "Apporte de la crème solaire, le soleil est fort.",
+   "de": "Nimm Sonnencreme mit, die Sonne ist stark."
+  }
+ },
+ {
+  "id": "ss-weather-031",
+  "topic": "weather",
+  "level": "B1",
+  "text": {
+   "en": "They say it's going to be a lot warmer next week.",
+   "it": "Dicono che la prossima settimana sarà molto più caldo.",
+   "es": "Dicen que la semana que viene hará mucho más calor.",
+   "pt": "Dizem que na próxima semana vai estar muito mais calor.",
+   "pt_BR": "Dizem que na semana que vem vai estar bem mais quente.",
+   "fr": "On dit qu'il fera beaucoup plus chaud la semaine prochaine.",
+   "de": "Es heißt, nächste Woche wird es deutlich wärmer."
+  }
+ },
+ {
+  "id": "ss-weather-032",
+  "topic": "weather",
+  "level": "B1",
+  "text": {
+   "en": "The weather changes quickly here, so it's best to bring a jacket just in case.",
+   "it": "Il tempo cambia in fretta qui, quindi è meglio portare una giacca per sicurezza.",
+   "es": "Aquí el tiempo cambia rápido, así que mejor llevar una chaqueta por si acaso.",
+   "pt": "Aqui o tempo muda depressa, por isso é melhor levar um casaco por precaução.",
+   "pt_BR": "Aqui o tempo muda rápido, então é melhor levar uma jaqueta por precaução.",
+   "fr": "Ici, le temps change vite, alors mieux vaut prendre une veste au cas où.",
+   "de": "Das Wetter wechselt hier schnell, deshalb nimmt man besser vorsichtshalber eine Jacke mit."
+  }
+ },
+ {
+  "id": "ss-weather-033",
+  "topic": "weather",
+  "level": "B1",
+  "text": {
+   "en": "If it rains on Saturday, we can visit a museum instead.",
+   "it": "Se sabato piove, possiamo visitare un museo.",
+   "es": "Si el sábado llueve, podemos visitar un museo.",
+   "pt": "Se chover no sábado, podemos visitar um museu.",
+   "pt_BR": "Se chover no sábado, podemos visitar um museu.",
+   "fr": "S'il pleut samedi, on pourra visiter un musée à la place.",
+   "de": "Wenn es am Samstag regnet, können wir stattdessen ein Museum besuchen."
+  }
+ },
+ {
+  "id": "ss-weather-034",
+  "topic": "weather",
+  "level": "B1",
+  "text": {
+   "en": "Such humid weather is new to me.",
+   "it": "Un clima così umido per me è una novità.",
+   "es": "Este clima tan húmedo es nuevo para mí.",
+   "pt": "Este clima tão húmido é novo para mim.",
+   "pt_BR": "Esse clima tão úmido é novo pra mim.",
+   "fr": "Ce climat si humide est nouveau pour moi.",
+   "de": "Ein so feuchtes Klima bin ich nicht gewohnt."
+  }
+ },
+ {
+  "id": "ss-weather-035",
+  "topic": "weather",
+  "level": "B1",
+  "text": {
+   "en": "The temperature dropped a lot after the storm.",
+   "it": "La temperatura è scesa molto dopo il temporale.",
+   "es": "La temperatura bajó mucho después de la tormenta.",
+   "pt": "A temperatura desceu muito depois da tempestade.",
+   "pt_BR": "A temperatura caiu muito depois da tempestade.",
+   "fr": "La température a beaucoup baissé après l'orage.",
+   "de": "Nach dem Gewitter ist die Temperatur stark gefallen."
+  }
+ },
+ {
+  "id": "ss-weather-036",
+  "topic": "weather",
+  "level": "B1",
+  "text": {
+   "en": "Spring is lovely here, with flowers everywhere.",
+   "it": "La primavera qui è splendida, con fiori ovunque.",
+   "es": "La primavera aquí es preciosa, con flores por todas partes.",
+   "pt": "A primavera aqui é linda, com flores por todo o lado.",
+   "pt_BR": "A primavera aqui é linda, com flores por toda parte.",
+   "fr": "Le printemps est magnifique ici, avec des fleurs partout.",
+   "de": "Der Frühling ist hier herrlich, überall blühen Blumen."
+  }
+ },
+ {
+  "id": "ss-weather-037",
+  "topic": "weather",
+  "level": "B1",
+  "text": {
+   "en": "I checked the forecast, and it should be sunny all afternoon.",
+   "it": "Ho controllato le previsioni: dovrebbe esserci il sole tutto il pomeriggio.",
+   "es": "He mirado el pronóstico y debería hacer sol toda la tarde.",
+   "pt": "Vi a previsão e deve estar sol toda a tarde.",
+   "pt_BR": "Olhei a previsão e deve fazer sol a tarde toda.",
+   "fr": "J'ai regardé la météo : il devrait y avoir du soleil tout l'après-midi.",
+   "de": "Ich habe die Vorhersage gecheckt: Es soll den ganzen Nachmittag sonnig sein."
+  }
+ },
+ {
+  "id": "ss-weather-038",
+  "topic": "weather",
+  "level": "B1",
+  "text": {
+   "en": "We had to cancel the picnic because of the strong wind.",
+   "it": "Abbiamo dovuto annullare il picnic per il forte vento.",
+   "es": "Tuvimos que cancelar el picnic por el fuerte viento.",
+   "pt": "Tivemos de cancelar o piquenique por causa do vento forte.",
+   "pt_BR": "Tivemos que cancelar o piquenique por causa do vento forte.",
+   "fr": "Nous avons dû annuler le pique-nique à cause du vent fort.",
+   "de": "Wir mussten das Picknick wegen des starken Winds absagen."
+  }
+ },
+ {
+  "id": "ss-weather-039",
+  "topic": "weather",
+  "level": "B1",
+  "text": {
+   "en": "In my country it rarely snows, so snow is a big event for us.",
+   "it": "Nel mio paese nevica raramente, quindi la neve per noi è un grande evento.",
+   "es": "En mi país casi nunca nieva, así que la nieve es todo un acontecimiento.",
+   "pt": "No meu país raramente neva, por isso a neve é um grande acontecimento.",
+   "pt_BR": "No meu país raramente neva, então a neve é um grande acontecimento.",
+   "fr": "Dans mon pays, il neige rarement, donc la neige est un grand événement pour nous.",
+   "de": "In meinem Land schneit es selten, deshalb ist Schnee für uns etwas ganz Besonderes."
+  }
+ },
+ {
+  "id": "ss-weather-040",
+  "topic": "weather",
+  "level": "B1",
+  "text": {
+   "en": "Which season do you think is the best time to visit your region?",
+   "it": "Quale stagione pensi sia la migliore per visitare la tua regione?",
+   "es": "¿Qué estación crees que es la mejor para visitar tu región?",
+   "pt": "Que estação achas que é a melhor para visitar a tua região?",
+   "pt_BR": "Qual estação você acha que é a melhor para visitar a sua região?",
+   "fr": "Selon toi, quelle est la meilleure saison pour visiter ta région ?",
+   "de": "Welche Jahreszeit ist deiner Meinung nach die beste, um deine Region zu besuchen?"
+  }
+ },
+ {
+  "id": "ss-weather-041",
+  "topic": "weather",
+  "level": "B1",
+  "text": {
+   "en": "The sky is supposed to clear up in the evening.",
+   "it": "Dovrebbe schiarire in serata.",
+   "es": "Se supone que el cielo se despejará por la noche.",
+   "pt": "O céu deve limpar à noite.",
+   "pt_BR": "O céu deve abrir à noite.",
+   "fr": "Le ciel devrait se dégager en soirée.",
+   "de": "Am Abend soll es aufklaren."
+  }
+ },
+ {
+  "id": "ss-weather-042",
+  "topic": "weather",
+  "level": "B1",
+  "text": {
+   "en": "A heat wave is expected, so remember to drink plenty of water.",
+   "it": "È prevista un'ondata di caldo, quindi ricordati di bere molta acqua.",
+   "es": "Se espera una ola de calor, así que recuerda beber mucha agua.",
+   "pt": "Está prevista uma onda de calor, por isso lembra-te de beber muita água.",
+   "pt_BR": "Está prevista uma onda de calor, então lembre de beber bastante água.",
+   "fr": "Une vague de chaleur est prévue, pense donc à boire beaucoup d'eau.",
+   "de": "Es wird eine Hitzewelle erwartet, trink also unbedingt genug Wasser."
+  }
+ },
+ {
+  "id": "ss-weather-043",
+  "topic": "weather",
+  "level": "B1",
+  "text": {
+   "en": "The mornings are cool, but it gets warm by noon.",
+   "it": "Le mattine sono fresche, ma a mezzogiorno fa caldo.",
+   "es": "Las mañanas son frescas, pero a mediodía hace calor.",
+   "pt": "As manhãs são frescas, mas ao meio-dia fica quente.",
+   "pt_BR": "As manhãs são frescas, mas ao meio-dia fica quente.",
+   "fr": "Les matins sont frais, mais il fait chaud vers midi.",
+   "de": "Die Morgen sind kühl, aber gegen Mittag wird es warm."
+  }
+ },
+ {
+  "id": "ss-weather-044",
+  "topic": "weather",
+  "level": "B2",
+  "text": {
+   "en": "Despite the forecast, it stayed dry all day, which was a pleasant surprise.",
+   "it": "Nonostante le previsioni, è rimasto asciutto tutto il giorno, una piacevole sorpresa.",
+   "es": "A pesar del pronóstico, no llovió en todo el día, lo cual fue una grata sorpresa.",
+   "pt": "Apesar da previsão, não choveu o dia todo, o que foi uma agradável surpresa.",
+   "pt_BR": "Apesar da previsão, não choveu o dia todo, o que foi uma agradável surpresa.",
+   "fr": "Malgré les prévisions, il n'a pas plu de la journée, ce qui a été une agréable surprise.",
+   "de": "Trotz der Vorhersage blieb es den ganzen Tag trocken, was eine angenehme Überraschung war."
+  }
+ },
+ {
+  "id": "ss-weather-045",
+  "topic": "weather",
+  "level": "B2",
+  "text": {
+   "en": "The climate in my region has become noticeably less predictable over the past few years.",
+   "it": "Il clima nella mia regione è diventato sensibilmente meno prevedibile negli ultimi anni.",
+   "es": "El clima de mi región se ha vuelto notablemente menos predecible en los últimos años.",
+   "pt": "O clima na minha região tornou-se visivelmente menos previsível nos últimos anos.",
+   "pt_BR": "O clima na minha região ficou visivelmente menos previsível nos últimos anos.",
+   "fr": "Le climat de ma région est devenu nettement moins prévisible ces dernières années.",
+   "de": "Das Klima in meiner Region ist in den letzten Jahren spürbar unberechenbarer geworden."
+  }
+ },
+ {
+  "id": "ss-weather-046",
+  "topic": "weather",
+  "level": "B2",
+  "text": {
+   "en": "Although it's freezing, the clear sky makes the walk worth it.",
+   "it": "Anche se si gela, il cielo limpido rende comunque valida la passeggiata.",
+   "es": "Aunque hace un frío helador, el cielo despejado hace que el paseo merezca la pena.",
+   "pt": "Embora esteja um frio de rachar, o céu limpo faz com que o passeio valha a pena.",
+   "pt_BR": "Embora esteja um frio de congelar, o céu limpo faz o passeio valer a pena.",
+   "fr": "Même s'il gèle, le ciel dégagé vaut bien la promenade.",
+   "de": "Obwohl es eisig kalt ist, lohnt sich der Spaziergang wegen des klaren Himmels."
+  }
+ },
+ {
+  "id": "ss-weather-047",
+  "topic": "weather",
+  "level": "B2",
+  "text": {
+   "en": "If the storm gets worse, we should stay indoors until it passes.",
+   "it": "Se il temporale peggiora, dovremmo restare in casa finché non passa.",
+   "es": "Si la tormenta empeora, deberíamos quedarnos en casa hasta que pase.",
+   "pt": "Se a tempestade piorar, devíamos ficar em casa até passar.",
+   "pt_BR": "Se a tempestade piorar, a gente devia ficar em casa até passar.",
+   "fr": "Si l'orage s'aggrave, nous ferions mieux de rester à l'intérieur jusqu'à ce qu'il passe.",
+   "de": "Wenn das Gewitter schlimmer wird, sollten wir drinnen bleiben, bis es vorbei ist."
+  }
+ },
+ {
+  "id": "ss-weather-048",
+  "topic": "weather",
+  "level": "B2",
+  "text": {
+   "en": "What I miss most about home is the dry summer air rather than the humidity here.",
+   "it": "Di casa mi manca soprattutto l'aria asciutta dell'estate, più che l'umidità di qui.",
+   "es": "Lo que más echo de menos de casa es el aire seco del verano, más que la humedad de aquí.",
+   "pt": "O que mais me faz falta de casa é o ar seco do verão, e não a humidade daqui.",
+   "pt_BR": "O que mais me faz falta de casa é o ar seco do verão, e não a umidade daqui.",
+   "fr": "Ce qui me manque le plus de chez moi, c'est l'air sec de l'été plutôt que l'humidité d'ici.",
+   "de": "Was mir von zu Hause am meisten fehlt, ist die trockene Sommerluft statt der Feuchtigkeit hier."
+  }
+ },
+ {
+  "id": "ss-weather-049",
+  "topic": "weather",
+  "level": "B2",
+  "text": {
+   "en": "Depending on the weather, we might have to change our plans at the last minute.",
+   "it": "A seconda del tempo, potremmo dover cambiare i piani all'ultimo minuto.",
+   "es": "Dependiendo del tiempo, quizá tengamos que cambiar de planes a última hora.",
+   "pt": "Dependendo do tempo, talvez tenhamos de mudar os planos à última hora.",
+   "pt_BR": "Dependendo do tempo, talvez a gente tenha que mudar os planos na última hora.",
+   "fr": "Selon la météo, nous devrons peut-être changer nos plans à la dernière minute.",
+   "de": "Je nach Wetter müssen wir unsere Pläne eventuell kurzfristig ändern."
+  }
+ },
+ {
+  "id": "ss-weather-050",
+  "topic": "weather",
+  "level": "B2",
+  "text": {
+   "en": "The first snowfall of the year always makes the whole city feel quieter.",
+   "it": "La prima nevicata dell'anno rende sempre tutta la città più silenziosa.",
+   "es": "La primera nevada del año siempre hace que toda la ciudad parezca más tranquila.",
+   "pt": "A primeira nevada do ano faz sempre com que a cidade inteira pareça mais silenciosa.",
+   "pt_BR": "A primeira nevada do ano sempre deixa a cidade inteira mais silenciosa.",
+   "fr": "La première chute de neige de l'année rend toujours toute la ville plus silencieuse.",
+   "de": "Der erste Schneefall des Jahres lässt die ganze Stadt immer ruhiger wirken."
+  }
+ }
+]

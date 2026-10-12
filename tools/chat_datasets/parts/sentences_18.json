@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ss-video_calls-001",
+  "topic": "video_calls",
+  "level": "A1",
+  "text": {
+   "en": "Can you hear me?",
+   "it": "Mi senti?",
+   "es": "¿Me oyes?",
+   "pt": "Ouves-me?",
+   "pt_BR": "Você está me ouvindo?",
+   "fr": "Tu m'entends ?",
+   "de": "Hörst du mich?"
+  }
+ },
+ {
+  "id": "ss-video_calls-002",
+  "topic": "video_calls",
+  "level": "A1",
+  "text": {
+   "en": "Can you see me?",
+   "it": "Mi vedi?",
+   "es": "¿Me ves?",
+   "pt": "Vês-me?",
+   "pt_BR": "Você está me vendo?",
+   "fr": "Tu me vois ?",
+   "de": "Siehst du mich?"
+  }
+ },
+ {
+  "id": "ss-video_calls-003",
+  "topic": "video_calls",
+  "level": "A1",
+  "text": {
+   "en": "Hello! Nice to see you.",
+   "it": "Ciao! Che bello vederti.",
+   "es": "¡Hola! Qué bueno verte.",
+   "pt": "Olá! Que bom ver-te.",
+   "pt_BR": "Oi! Que bom te ver.",
+   "fr": "Salut ! Content de te voir.",
+   "de": "Hallo! Schön, dich zu sehen."
+  }
+ },
+ {
+  "id": "ss-video_calls-004",
+  "topic": "video_calls",
+  "level": "A1",
+  "text": {
+   "en": "Wait, I'm turning on my camera.",
+   "it": "Aspetta, accendo la videocamera.",
+   "es": "Espera, voy a encender la cámara.",
+   "pt": "Espera, vou ligar a câmara.",
+   "pt_BR": "Espera, vou ligar a câmera.",
+   "fr": "Attends, j'allume ma caméra.",
+   "de": "Warte, ich schalte meine Kamera ein."
+  }
+ },
+ {
+  "id": "ss-video_calls-005",
+  "topic": "video_calls",
+  "level": "A1",
+  "text": {
+   "en": "Sorry, my microphone is off.",
+   "it": "Scusa, il mio microfono è spento.",
+   "es": "Perdona, tengo el micrófono apagado.",
+   "pt": "Desculpa, o meu microfone está desligado.",
+   "pt_BR": "Desculpa, meu microfone está desligado.",
+   "fr": "Désolé, mon micro est coupé.",
+   "de": "Entschuldige, mein Mikrofon ist aus."
+  }
+ },
+ {
+  "id": "ss-video_calls-006",
+  "topic": "video_calls",
+  "level": "A1",
+  "text": {
+   "en": "The sound is not working.",
+   "it": "L'audio non funziona.",
+   "es": "El sonido no funciona.",
+   "pt": "O som não está a funcionar.",
+   "pt_BR": "O som não está funcionando.",
+   "fr": "Le son ne marche pas.",
+   "de": "Der Ton funktioniert nicht."
+  }
+ },
+ {
+  "id": "ss-video_calls-007",
+  "topic": "video_calls",
+  "level": "A1",
+  "text": {
+   "en": "Can you repeat, please?",
+   "it": "Puoi ripetere, per favore?",
+   "es": "¿Puedes repetir, por favor?",
+   "pt": "Podes repetir, por favor?",
+   "pt_BR": "Você pode repetir, por favor?",
+   "fr": "Tu peux répéter, s'il te plaît ?",
+   "de": "Kannst du das bitte wiederholen?"
+  }
+ },
+ {
+  "id": "ss-video_calls-008",
+  "topic": "video_calls",
+  "level": "A1",
+  "text": {
+   "en": "Shall we start?",
+   "it": "Iniziamo?",
+   "es": "¿Empezamos?",
+   "pt": "Começamos?",
+   "pt_BR": "Vamos começar?",
+   "fr": "On commence ?",
+   "de": "Fangen wir an?"
+  }
+ },
+ {
+  "id": "ss-video_calls-009",
+  "topic": "video_calls",
+  "level": "A1",
+  "text": {
+   "en": "I can't see you.",
+   "it": "Non ti vedo.",
+   "es": "No te veo.",
+   "pt": "Não te vejo.",
+   "pt_BR": "Não estou te vendo.",
+   "fr": "Je ne te vois pas.",
+   "de": "Ich sehe dich nicht."
+  }
+ },
+ {
+  "id": "ss-video_calls-010",
+  "topic": "video_calls",
+  "level": "A1",
+  "text": {
+   "en": "Your voice is very clear.",
+   "it": "La tua voce è molto chiara.",
+   "es": "Tu voz se oye muy clara.",
+   "pt": "A tua voz está muito clara.",
+   "pt_BR": "Sua voz está bem clara.",
+   "fr": "Ta voix est très claire.",
+   "de": "Deine Stimme ist sehr klar."
+  }
+ },
+ {
+  "id": "ss-video_calls-011",
+  "topic": "video_calls",
+  "level": "A1",
+  "text": {
+   "en": "Let me call you back.",
+   "it": "Ti richiamo io.",
+   "es": "Te vuelvo a llamar yo.",
+   "pt": "Eu ligo-te de volta.",
+   "pt_BR": "Eu te ligo de volta.",
+   "fr": "Je te rappelle.",
+   "de": "Ich rufe dich zurück."
+  }
+ },
+ {
+  "id": "ss-video_calls-012",
+  "topic": "video_calls",
+  "level": "A1",
+  "text": {
+   "en": "One moment, please.",
+   "it": "Un attimo, per favore.",
+   "es": "Un momento, por favor.",
+   "pt": "Um momento, por favor.",
+   "pt_BR": "Um momento, por favor.",
+   "fr": "Un instant, s'il te plaît.",
+   "de": "Einen Moment, bitte."
+  }
+ },
+ {
+  "id": "ss-video_calls-013",
+  "topic": "video_calls",
+  "level": "A1",
+  "text": {
+   "en": "Is this a good time to talk?",
+   "it": "È un buon momento per parlare?",
+   "es": "¿Es buen momento para hablar?",
+   "pt": "É boa altura para falar?",
+   "pt_BR": "É um bom momento para conversar?",
+   "fr": "C'est le bon moment pour parler ?",
+   "de": "Passt es dir gerade zum Reden?"
+  }
+ },
+ {
+  "id": "ss-video_calls-014",
+  "topic": "video_calls",
+  "level": "A1",
+  "text": {
+   "en": "It was great talking to you!",
+   "it": "È stato bello parlare con te!",
+   "es": "¡Qué bueno hablar contigo!",
+   "pt": "Foi ótimo falar contigo!",
+   "pt_BR": "Foi ótimo conversar com você!",
+   "fr": "C'était super de te parler !",
+   "de": "Es war schön, mit dir zu sprechen!"
+  }
+ },
+ {
+  "id": "ss-video_calls-015",
+  "topic": "video_calls",
+  "level": "A1",
+  "text": {
+   "en": "See you next time!",
+   "it": "Alla prossima!",
+   "es": "¡Hasta la próxima!",
+   "pt": "Até à próxima!",
+   "pt_BR": "Até a próxima!",
+   "fr": "À la prochaine !",
+   "de": "Bis zum nächsten Mal!"
+  }
+ },
+ {
+  "id": "ss-video_calls-016",
+  "topic": "video_calls",
+  "level": "A2",
+  "text": {
+   "en": "My internet is slow today, so the video might freeze.",
+   "it": "Oggi il mio internet è lento, quindi il video potrebbe bloccarsi.",
+   "es": "Hoy mi internet va lento, así que el vídeo puede congelarse.",
+   "pt": "A minha internet está lenta hoje, por isso o vídeo pode bloquear.",
+   "pt_BR": "Minha internet está lenta hoje, então o vídeo pode travar.",
+   "fr": "Ma connexion est lente aujourd'hui, donc la vidéo risque de se figer.",
+   "de": "Mein Internet ist heute langsam, deshalb könnte das Video hängen bleiben."
+  }
+ },
+ {
+  "id": "ss-video_calls-017",
+  "topic": "video_calls",
+  "level": "A2",
+  "text": {
+   "en": "Could you speak a bit louder? I can barely hear you.",
+   "it": "Potresti parlare un po' più forte? Ti sento a malapena.",
+   "es": "¿Podrías hablar un poco más alto? Apenas te oigo.",
+   "pt": "Podes falar um pouco mais alto? Mal te ouço.",
+   "pt_BR": "Você poderia falar um pouco mais alto? Mal consigo te ouvir.",
+   "fr": "Tu pourrais parler un peu plus fort ? Je t'entends à peine.",
+   "de": "Könntest du etwas lauter sprechen? Ich höre dich kaum."
+  }
+ },
+ {
+  "id": "ss-video_calls-018",
+  "topic": "video_calls",
+  "level": "A2",
+  "text": {
+   "en": "Can you turn on your camera? It's easier to understand when I can see your face.",
+   "it": "Puoi accendere la videocamera? Capisco meglio se vedo il tuo viso.",
+   "es": "¿Puedes encender la cámara? Entiendo mejor si veo tu cara.",
+   "pt": "Podes ligar a câmara? Percebo melhor se vir a tua cara.",
+   "pt_BR": "Você pode ligar a câmera? Eu entendo melhor quando vejo seu rosto.",
+   "fr": "Tu peux allumer ta caméra ? Je comprends mieux quand je vois ton visage.",
+   "de": "Kannst du deine Kamera einschalten? Ich verstehe besser, wenn ich dein Gesicht sehe."
+  }
+ },
+ {
+  "id": "ss-video_calls-019",
+  "topic": "video_calls",
+  "level": "A2",
+  "text": {
+   "en": "The connection is bad. Let's try again.",
+   "it": "La connessione è pessima. Riproviamo.",
+   "es": "La conexión es mala. Probemos otra vez.",
+   "pt": "A ligação está má. Vamos tentar outra vez.",
+   "pt_BR": "A conexão está ruim. Vamos tentar de novo.",
+   "fr": "La connexion est mauvaise. Réessayons.",
+   "de": "Die Verbindung ist schlecht. Versuchen wir es noch einmal."
+  }
+ },
+ {
+  "id": "ss-video_calls-020",
+  "topic": "video_calls",
+  "level": "A2",
+  "text": {
+   "en": "I'll send you the link for the call in a minute.",
+   "it": "Ti mando il link per la chiamata tra un minuto.",
+   "es": "Te mando el enlace de la llamada en un minuto.",
+   "pt": "Envio-te o link da chamada daqui a um minuto.",
+   "pt_BR": "Te mando o link da chamada em um minuto.",
+   "fr": "Je t'envoie le lien de l'appel dans une minute.",
+   "de": "Ich schicke dir in einer Minute den Link zum Anruf."
+  }
+ },
+ {
+  "id": "ss-video_calls-021",
+  "topic": "video_calls",
+  "level": "A2",
+  "text": {
+   "en": "What time is it for you right now?",
+   "it": "Che ore sono da te adesso?",
+   "es": "¿Qué hora es ahí ahora mismo?",
+   "pt": "Que horas são aí agora?",
+   "pt_BR": "Que horas são aí agora?",
+   "fr": "Quelle heure est-il chez toi en ce moment ?",
+   "de": "Wie spät ist es gerade bei dir?"
+  }
+ },
+ {
+  "id": "ss-video_calls-022",
+  "topic": "video_calls",
+  "level": "A2",
+  "text": {
+   "en": "Could you mute yourself? There's some background noise.",
+   "it": "Potresti disattivare il microfono? C'è un po' di rumore di fondo.",
+   "es": "¿Podrías silenciar el micrófono? Hay algo de ruido de fondo.",
+   "pt": "Podes silenciar o microfone? Há algum ruído de fundo.",
+   "pt_BR": "Você pode silenciar o microfone? Tem um pouco de barulho de fundo.",
+   "fr": "Tu pourrais couper ton micro ? Il y a du bruit de fond.",
+   "de": "Könntest du dich stummschalten? Es gibt etwas Hintergrundlärm."
+  }
+ },
+ {
+  "id": "ss-video_calls-023",
+  "topic": "video_calls",
+  "level": "A2",
+  "text": {
+   "en": "Let me move to a quieter room.",
+   "it": "Vado in una stanza più silenziosa.",
+   "es": "Voy a una habitación más tranquila.",
+   "pt": "Vou para uma sala mais silenciosa.",
+   "pt_BR": "Vou para um cômodo mais silencioso.",
+   "fr": "Je vais dans une pièce plus calme.",
+   "de": "Ich gehe in einen ruhigeren Raum."
+  }
+ },
+ {
+  "id": "ss-video_calls-024",
+  "topic": "video_calls",
+  "level": "A2",
+  "text": {
+   "en": "Your picture is frozen. Can you see me?",
+   "it": "La tua immagine è bloccata. Mi vedi?",
+   "es": "Tu imagen se ha congelado. ¿Me ves?",
+   "pt": "A tua imagem está congelada. Consegues ver-me?",
+   "pt_BR": "Sua imagem congelou. Você consegue me ver?",
+   "fr": "Ton image est figée. Tu me vois ?",
+   "de": "Dein Bild steht still. Siehst du mich?"
+  }
+ },
+ {
+  "id": "ss-video_calls-025",
+  "topic": "video_calls",
+  "level": "A2",
+  "text": {
+   "en": "Shall we call again tomorrow at the same time?",
+   "it": "Ci sentiamo di nuovo domani alla stessa ora?",
+   "es": "¿Hablamos otra vez mañana a la misma hora?",
+   "pt": "Falamos outra vez amanhã à mesma hora?",
+   "pt_BR": "Conversamos de novo amanhã no mesmo horário?",
+   "fr": "On s'appelle demain à la même heure ?",
+   "de": "Sprechen wir morgen zur gleichen Zeit noch einmal?"
+  }
+ },
+ {
+  "id": "ss-video_calls-026",
+  "topic": "video_calls",
+  "level": "A2",
+  "text": {
+   "en": "I'm going to share my screen, okay?",
+   "it": "Condivido lo schermo, va bene?",
+   "es": "Voy a compartir mi pantalla, ¿vale?",
+   "pt": "Vou partilhar o meu ecrã, pode ser?",
+   "pt_BR": "Vou compartilhar minha tela, pode ser?",
+   "fr": "Je vais partager mon écran, d'accord ?",
+   "de": "Ich teile jetzt meinen Bildschirm, okay?"
+  }
+ },
+ {
+  "id": "ss-video_calls-027",
+  "topic": "video_calls",
+  "level": "A2",
+  "text": {
+   "en": "Sorry I'm late, my last call took longer than planned.",
+   "it": "Scusa il ritardo, la chiamata precedente è durata più del previsto.",
+   "es": "Perdona el retraso, mi llamada anterior se alargó más de lo previsto.",
+   "pt": "Desculpa o atraso, a chamada anterior demorou mais do que o previsto.",
+   "pt_BR": "Desculpa o atraso, minha ligação anterior demorou mais do que o previsto.",
+   "fr": "Désolé pour le retard, mon appel précédent a duré plus longtemps que prévu.",
+   "de": "Entschuldige die Verspätung, mein letzter Anruf hat länger gedauert als geplant."
+  }
+ },
+ {
+  "id": "ss-video_calls-028",
+  "topic": "video_calls",
+  "level": "A2",
+  "text": {
+   "en": "Can we switch to audio only? The video keeps lagging.",
+   "it": "Possiamo passare solo all'audio? Il video va a scatti.",
+   "es": "¿Podemos pasar solo a audio? El vídeo va a trompicones.",
+   "pt": "Podemos passar só para áudio? O vídeo está sempre a bloquear.",
+   "pt_BR": "Podemos mudar para só áudio? O vídeo está travando toda hora.",
+   "fr": "On peut passer en audio seulement ? La vidéo saccade.",
+   "de": "Können wir nur mit Ton weitermachen? Das Video ruckelt ständig."
+  }
+ },
+ {
+  "id": "ss-video_calls-029",
+  "topic": "video_calls",
+  "level": "A2",
+  "text": {
+   "en": "Let me show you my city through the camera.",
+   "it": "Ti faccio vedere la mia città con la videocamera.",
+   "es": "Te enseño mi ciudad a través de la cámara.",
+   "pt": "Deixa-me mostrar-te a minha cidade pela câmara.",
+   "pt_BR": "Deixa eu te mostrar minha cidade pela câmera.",
+   "fr": "Je te montre ma ville avec la caméra.",
+   "de": "Ich zeige dir meine Stadt über die Kamera."
+  }
+ },
+ {
+  "id": "ss-video_calls-030",
+  "topic": "video_calls",
+  "level": "A2",
+  "text": {
+   "en": "Let's practice together for half an hour.",
+   "it": "Facciamo pratica insieme per mezz'ora.",
+   "es": "Practiquemos juntos media hora.",
+   "pt": "Vamos praticar juntos durante meia hora.",
+   "pt_BR": "Vamos praticar juntos por meia hora.",
+   "fr": "Pratiquons ensemble pendant une demi-heure.",
+   "de": "Lass uns eine halbe Stunde zusammen üben."
+  }
+ },
+ {
+  "id": "ss-video_calls-031",
+  "topic": "video_calls",
+  "level": "B1",
+  "text": {
+   "en": "Sorry, I think we got disconnected. I'll rejoin the call right away.",
+   "it": "Scusa, credo che siamo stati disconnessi. Rientro subito nella chiamata.",
+   "es": "Perdona, creo que nos hemos desconectado. Vuelvo a entrar en la llamada enseguida.",
+   "pt": "Desculpa, acho que fomos desligados. Volto a entrar na chamada já a seguir.",
+   "pt_BR": "Desculpa, acho que a gente caiu. Já volto para a chamada.",
+   "fr": "Désolé, je crois qu'on a été déconnectés. Je me reconnecte tout de suite.",
+   "de": "Entschuldige, ich glaube, wir wurden getrennt. Ich komme sofort wieder in den Anruf."
+  }
+ },
+ {
+  "id": "ss-video_calls-032",
+  "topic": "video_calls",
+  "level": "B1",
+  "text": {
+   "en": "It's late where you are, so we can keep it short if you want.",
+   "it": "Da te è tardi, quindi possiamo fare in fretta se preferisci.",
+   "es": "Allí es tarde, así que podemos acortar la llamada si quieres.",
+   "pt": "Aí já é tarde, por isso podemos ser breves, se quiseres.",
+   "pt_BR": "Aí já está tarde, então podemos ser breves, se você quiser.",
+   "fr": "Il est tard chez toi, donc on peut faire court si tu veux.",
+   "de": "Bei dir ist es spät, wir können es also kurz halten, wenn du möchtest."
+  }
+ },
+ {
+  "id": "ss-video_calls-033",
+  "topic": "video_calls",
+  "level": "B1",
+  "text": {
+   "en": "Would you mind if I recorded the call to review the vocabulary later?",
+   "it": "Ti dispiace se registro la chiamata per rivedere il vocabolario più tardi?",
+   "es": "¿Te importa si grabo la llamada para repasar el vocabulario después?",
+   "pt": "Importas-te que grave a chamada para rever o vocabulário mais tarde?",
+   "pt_BR": "Você se importa se eu gravar a chamada para revisar o vocabulário depois?",
+   "fr": "Ça te dérange si j'enregistre l'appel pour réviser le vocabulaire plus tard ?",
+   "de": "Hast du etwas dagegen, wenn ich das Gespräch aufnehme, um den Wortschatz später zu wiederholen?"
+  }
+ },
+ {
+  "id": "ss-video_calls-034",
+  "topic": "video_calls",
+  "level": "B1",
+  "text": {
+   "en": "I can hear an echo. Could you use headphones?",
+   "it": "Sento un'eco. Potresti usare le cuffie?",
+   "es": "Oigo eco. ¿Podrías usar auriculares?",
+   "pt": "Ouço eco. Podes usar auscultadores?",
+   "pt_BR": "Estou ouvindo eco. Você poderia usar fones de ouvido?",
+   "fr": "J'entends un écho. Tu pourrais mettre un casque ?",
+   "de": "Ich höre ein Echo. Könntest du Kopfhörer benutzen?"
+  }
+ },
+ {
+  "id": "ss-video_calls-035",
+  "topic": "video_calls",
+  "level": "B1",
+  "text": {
+   "en": "Let's speak English for the first half and switch to my language for the second.",
+   "it": "Parliamo inglese nella prima metà e passiamo alla mia lingua nella seconda.",
+   "es": "Hablemos inglés la primera mitad y pasemos a mi idioma en la segunda.",
+   "pt": "Falamos inglês na primeira metade e passamos para a minha língua na segunda.",
+   "pt_BR": "Vamos falar inglês na primeira metade e mudar para a minha língua na segunda.",
+   "fr": "Parlons anglais la première moitié, puis passons à ma langue pour la seconde.",
+   "de": "Lass uns in der ersten Hälfte Englisch sprechen und in der zweiten zu meiner Sprache wechseln."
+  }
+ },
+ {
+  "id": "ss-video_calls-036",
+  "topic": "video_calls",
+  "level": "B1",
+  "text": {
+   "en": "My battery is almost dead, so I'll plug in my phone and call you back.",
+   "it": "La batteria è quasi scarica, quindi attacco il telefono alla corrente e ti richiamo.",
+   "es": "Casi no me queda batería, así que enchufo el móvil y te vuelvo a llamar.",
+   "pt": "A bateria está quase no fim, por isso vou ligar o telemóvel ao carregador e volto a ligar-te.",
+   "pt_BR": "Minha bateria está quase acabando, então vou ligar o celular na tomada e te ligo de volta.",
+   "fr": "Ma batterie est presque à plat, je branche mon téléphone et je te rappelle.",
+   "de": "Mein Akku ist fast leer, ich stecke das Handy ein und rufe dich zurück."
+  }
+ },
+ {
+  "id": "ss-video_calls-037",
+  "topic": "video_calls",
+  "level": "B1",
+  "text": {
+   "en": "The picture is blurry on my side. Could you move closer to the light?",
+   "it": "L'immagine è sfocata da me. Potresti avvicinarti alla luce?",
+   "es": "Aquí la imagen se ve borrosa. ¿Podrías acercarte a la luz?",
+   "pt": "Aqui a imagem está desfocada. Podes aproximar-te da luz?",
+   "pt_BR": "Aqui a imagem está embaçada. Você pode chegar mais perto da luz?",
+   "fr": "Chez moi l'image est floue. Tu pourrais te rapprocher de la lumière ?",
+   "de": "Bei mir ist das Bild unscharf. Könntest du näher ans Licht gehen?"
+  }
+ },
+ {
+  "id": "ss-video_calls-038",
+  "topic": "video_calls",
+  "level": "B1",
+  "text": {
+   "en": "Let's schedule a call this weekend, whenever works for you with the time difference.",
+   "it": "Fissiamo una chiamata questo fine settimana, quando ti va meglio con la differenza di fuso orario.",
+   "es": "Quedemos para una llamada este fin de semana, cuando te venga bien con la diferencia horaria.",
+   "pt": "Marquemos uma chamada neste fim de semana, quando te der jeito com a diferença horária.",
+   "pt_BR": "Vamos marcar uma chamada neste fim de semana, no horário que for melhor para você com a diferença de fuso.",
+   "fr": "Fixons un appel ce week-end, à l'heure qui t'arrange avec le décalage horaire.",
+   "de": "Lass uns am Wochenende telefonieren, wann es dir mit der Zeitverschiebung passt."
+  }
+ },
+ {
+  "id": "ss-video_calls-039",
+  "topic": "video_calls",
+  "level": "B1",
+  "text": {
+   "en": "I'll put the subtitles on, just in case I miss a word.",
+   "it": "Attivo i sottotitoli, nel caso mi perda qualche parola.",
+   "es": "Voy a activar los subtítulos por si se me escapa alguna palabra.",
+   "pt": "Vou ativar as legendas, para o caso de me escapar alguma palavra.",
+   "pt_BR": "Vou ativar as legendas, caso eu perca alguma palavra.",
+   "fr": "J'active les sous-titres, au cas où un mot m'échapperait.",
+   "de": "Ich schalte die Untertitel ein, falls mir ein Wort entgeht."
+  }
+ },
+ {
+  "id": "ss-video_calls-040",
+  "topic": "video_calls",
+  "level": "B1",
+  "text": {
+   "en": "Could you share your screen so we can look at the map together?",
+   "it": "Potresti condividere lo schermo così guardiamo la mappa insieme?",
+   "es": "¿Podrías compartir tu pantalla para mirar el mapa juntos?",
+   "pt": "Podes partilhar o ecrã para vermos o mapa juntos?",
+   "pt_BR": "Você pode compartilhar a tela para olharmos o mapa juntos?",
+   "fr": "Tu pourrais partager ton écran pour qu'on regarde la carte ensemble ?",
+   "de": "Könntest du deinen Bildschirm teilen, damit wir uns die Karte zusammen ansehen?"
+  }
+ },
+ {
+  "id": "ss-video_calls-041",
+  "topic": "video_calls",
+  "level": "B1",
+  "text": {
+   "en": "Let me show you around my neighborhood with my phone camera.",
+   "it": "Ti faccio fare un giro del mio quartiere con la fotocamera del telefono.",
+   "es": "Te enseño mi barrio con la cámara del móvil.",
+   "pt": "Deixa-me mostrar-te o meu bairro com a câmara do telemóvel.",
+   "pt_BR": "Deixa eu te mostrar meu bairro com a câmera do celular.",
+   "fr": "Je te fais visiter mon quartier avec la caméra de mon téléphone.",
+   "de": "Ich zeige dir mit der Handykamera meine Nachbarschaft."
+  }
+ },
+ {
+  "id": "ss-video_calls-042",
+  "topic": "video_calls",
+  "level": "B1",
+  "text": {
+   "en": "I enjoyed the chat, I learned a lot of new expressions today.",
+   "it": "Mi è piaciuta la chiacchierata, oggi ho imparato tante espressioni nuove.",
+   "es": "Me ha gustado la charla, hoy he aprendido muchas expresiones nuevas.",
+   "pt": "Gostei da conversa, hoje aprendi muitas expressões novas.",
+   "pt_BR": "Gostei da conversa, hoje aprendi muitas expressões novas.",
+   "fr": "J'ai aimé notre discussion, j'ai appris plein de nouvelles expressions aujourd'hui.",
+   "de": "Das Gespräch hat mir gefallen, ich habe heute viele neue Ausdrücke gelernt."
+  }
+ },
+ {
+  "id": "ss-video_calls-043",
+  "topic": "video_calls",
+  "level": "B2",
+  "text": {
+   "en": "Since we're in different time zones, would it be easier to settle on a fixed weekly slot?",
+   "it": "Visto che siamo in fusi orari diversi, sarebbe più semplice fissare un appuntamento settimanale?",
+   "es": "Como estamos en zonas horarias distintas, ¿sería más fácil fijar un horario semanal?",
+   "pt": "Como estamos em fusos horários diferentes, seria mais fácil combinarmos um horário semanal fixo?",
+   "pt_BR": "Como estamos em fusos horários diferentes, seria mais fácil combinar um horário fixo toda semana?",
+   "fr": "Comme on est dans des fuseaux horaires différents, ce serait plus simple de fixer un créneau hebdomadaire ?",
+   "de": "Da wir in unterschiedlichen Zeitzonen leben, wäre es einfacher, einen festen wöchentlichen Termin zu vereinbaren?"
+  }
+ },
+ {
+  "id": "ss-video_calls-044",
+  "topic": "video_calls",
+  "level": "B2",
+  "text": {
+   "en": "The connection keeps dropping, so let's continue by voice message and try the video again later.",
+   "it": "La connessione continua a cadere, quindi continuiamo con i messaggi vocali e riproviamo con il video più tardi.",
+   "es": "La conexión se corta todo el rato, así que sigamos con mensajes de voz y probemos el vídeo más tarde.",
+   "pt": "A ligação continua a cair, por isso continuemos com mensagens de voz e tentamos o vídeo mais tarde.",
+   "pt_BR": "A conexão continua caindo, então vamos continuar por mensagem de voz e tentar o vídeo mais tarde.",
+   "fr": "La connexion n'arrête pas de couper, alors continuons par messages vocaux et réessayons la vidéo plus tard.",
+   "de": "Die Verbindung bricht ständig ab, also machen wir mit Sprachnachrichten weiter und versuchen es später noch mal mit Video."
+  }
+ },
+ {
+  "id": "ss-video_calls-045",
+  "topic": "video_calls",
+  "level": "B2",
+  "text": {
+   "en": "I'd rather keep my camera off for now because my connection can't handle both.",
+   "it": "Preferisco tenere la videocamera spenta per ora, perché la mia connessione non regge entrambe.",
+   "es": "Prefiero dejar la cámara apagada por ahora porque mi conexión no aguanta las dos cosas.",
+   "pt": "Prefiro manter a câmara desligada por agora, porque a minha ligação não aguenta as duas coisas.",
+   "pt_BR": "Prefiro deixar a câmera desligada por enquanto, porque minha conexão não aguenta as duas coisas.",
+   "fr": "Je préfère garder ma caméra éteinte pour l'instant, ma connexion ne supporte pas les deux.",
+   "de": "Ich lasse meine Kamera lieber erst mal aus, weil meine Verbindung beides nicht schafft."
+  }
+ },
+ {
+  "id": "ss-video_calls-046",
+  "topic": "video_calls",
+  "level": "B2",
+  "text": {
+   "en": "Could you type the word in the chat? I don't know how to spell what you just said.",
+   "it": "Potresti scrivere la parola in chat? Non so come si scriva quello che hai appena detto.",
+   "es": "¿Podrías escribir la palabra en el chat? No sé cómo se escribe lo que acabas de decir.",
+   "pt": "Podes escrever a palavra no chat? Não sei como se escreve o que acabaste de dizer.",
+   "pt_BR": "Você pode escrever a palavra no chat? Não sei como se escreve o que você acabou de dizer.",
+   "fr": "Tu pourrais écrire le mot dans le chat ? Je ne sais pas comment s'écrit ce que tu viens de dire.",
+   "de": "Könntest du das Wort in den Chat schreiben? Ich weiß nicht, wie man schreibt, was du gerade gesagt hast."
+  }
+ },
+ {
+  "id": "ss-video_calls-047",
+  "topic": "video_calls",
+  "level": "B2",
+  "text": {
+   "en": "I'll send you a calendar invite so we both remember the time, even when the clocks change.",
+   "it": "Ti mando un invito sul calendario così ricordiamo entrambi l'orario, anche quando cambia l'ora.",
+   "es": "Te mando una invitación de calendario para que ambos recordemos la hora, incluso cuando cambie la hora.",
+   "pt": "Envio-te um convite de calendário para os dois nos lembrarmos da hora, mesmo quando mudar a hora.",
+   "pt_BR": "Vou te mandar um convite de calendário para nós dois lembrarmos do horário, mesmo quando o horário mudar.",
+   "fr": "Je t'envoie une invitation de calendrier pour qu'on se souvienne tous les deux de l'heure, même quand l'heure change.",
+   "de": "Ich schicke dir eine Kalendereinladung, damit wir beide die Uhrzeit nicht vergessen, auch wenn die Uhren umgestellt werden."
+  }
+ },
+ {
+  "id": "ss-video_calls-048",
+  "topic": "video_calls",
+  "level": "B2",
+  "text": {
+   "en": "It's great to finally put a face to the name after so many weeks of messaging.",
+   "it": "È bello dare finalmente un volto al tuo nome dopo tante settimane di messaggi.",
+   "es": "Es genial poder ponerle por fin cara a tu nombre después de tantas semanas de mensajes.",
+   "pt": "Que bom poder finalmente pôr uma cara ao teu nome depois de tantas semanas de mensagens.",
+   "pt_BR": "Que bom finalmente colocar um rosto no seu nome depois de tantas semanas trocando mensagens.",
+   "fr": "C'est super de pouvoir enfin mettre un visage sur ton nom après tant de semaines de messages.",
+   "de": "Schön, nach so vielen Wochen Nachrichtenaustausch endlich ein Gesicht zu deinem Namen zu sehen."
+  }
+ },
+ {
+  "id": "ss-video_calls-049",
+  "topic": "video_calls",
+  "level": "B2",
+  "text": {
+   "en": "If the call freezes again, I'll restart my router and be back in a few minutes.",
+   "it": "Se la chiamata si blocca di nuovo, riavvio il router e torno tra qualche minuto.",
+   "es": "Si la llamada se congela otra vez, reinicio el router y vuelvo en unos minutos.",
+   "pt": "Se a chamada bloquear outra vez, reinicio o router e volto dentro de alguns minutos.",
+   "pt_BR": "Se a chamada travar de novo, eu reinicio o roteador e volto em alguns minutos.",
+   "fr": "Si l'appel se fige encore, je redémarre ma box et je reviens dans quelques minutes.",
+   "de": "Wenn der Anruf wieder hängt, starte ich meinen Router neu und bin in ein paar Minuten zurück."
+  }
+ },
+ {
+  "id": "ss-video_calls-050",
+  "topic": "video_calls",
+  "level": "B2",
+  "text": {
+   "en": "Let's use this call to practice: you correct my mistakes, and I'll correct yours.",
+   "it": "Usiamo questa chiamata per fare pratica: tu correggi i miei errori e io correggo i tuoi.",
+   "es": "Usemos esta llamada para practicar: tú corriges mis errores y yo corrijo los tuyos.",
+   "pt": "Vamos usar esta chamada para praticar: tu corriges os meus erros e eu corrijo os teus.",
+   "pt_BR": "Vamos usar esta chamada para praticar: você corrige meus erros e eu corrijo os seus.",
+   "fr": "Utilisons cet appel pour pratiquer : tu corriges mes erreurs et je corrige les tiennes.",
+   "de": "Nutzen wir diesen Anruf zum Üben: Du korrigierst meine Fehler, und ich korrigiere deine."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-001",
+  "topic": "sharing_photos",
+  "level": "A1",
+  "text": {
+   "en": "I'll send you a photo.",
+   "it": "Ti mando una foto.",
+   "es": "Te mando una foto.",
+   "pt": "Envio-te uma foto.",
+   "pt_BR": "Vou te mandar uma foto.",
+   "fr": "Je t'envoie une photo.",
+   "de": "Ich schicke dir ein Foto."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-002",
+  "topic": "sharing_photos",
+  "level": "A1",
+  "text": {
+   "en": "Look at this picture!",
+   "it": "Guarda questa foto!",
+   "es": "¡Mira esta foto!",
+   "pt": "Olha para esta foto!",
+   "pt_BR": "Olha essa foto!",
+   "fr": "Regarde cette photo !",
+   "de": "Schau dir dieses Foto an!"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-003",
+  "topic": "sharing_photos",
+  "level": "A1",
+  "text": {
+   "en": "This is my family.",
+   "it": "Questa è la mia famiglia.",
+   "es": "Esta es mi familia.",
+   "pt": "Esta é a minha família.",
+   "pt_BR": "Esta é minha família.",
+   "fr": "Voici ma famille.",
+   "de": "Das ist meine Familie."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-004",
+  "topic": "sharing_photos",
+  "level": "A1",
+  "text": {
+   "en": "This is my city.",
+   "it": "Questa è la mia città.",
+   "es": "Esta es mi ciudad.",
+   "pt": "Esta é a minha cidade.",
+   "pt_BR": "Esta é minha cidade.",
+   "fr": "Voici ma ville.",
+   "de": "Das ist meine Stadt."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-005",
+  "topic": "sharing_photos",
+  "level": "A1",
+  "text": {
+   "en": "Do you like this photo?",
+   "it": "Ti piace questa foto?",
+   "es": "¿Te gusta esta foto?",
+   "pt": "Gostas desta foto?",
+   "pt_BR": "Você gosta dessa foto?",
+   "fr": "Tu aimes cette photo ?",
+   "de": "Gefällt dir dieses Foto?"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-006",
+  "topic": "sharing_photos",
+  "level": "A1",
+  "text": {
+   "en": "Nice photo!",
+   "it": "Bella foto!",
+   "es": "¡Qué buena foto!",
+   "pt": "Que bela foto!",
+   "pt_BR": "Que foto bonita!",
+   "fr": "Belle photo !",
+   "de": "Tolles Foto!"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-007",
+  "topic": "sharing_photos",
+  "level": "A1",
+  "text": {
+   "en": "Where is this?",
+   "it": "Dov'è questo posto?",
+   "es": "¿Dónde es esto?",
+   "pt": "Onde é isto?",
+   "pt_BR": "Onde é isso?",
+   "fr": "C'est où ?",
+   "de": "Wo ist das?"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-008",
+  "topic": "sharing_photos",
+  "level": "A1",
+  "text": {
+   "en": "Who is this?",
+   "it": "Chi è?",
+   "es": "¿Quién es?",
+   "pt": "Quem é?",
+   "pt_BR": "Quem é?",
+   "fr": "C'est qui ?",
+   "de": "Wer ist das?"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-009",
+  "topic": "sharing_photos",
+  "level": "A1",
+  "text": {
+   "en": "This is my dog.",
+   "it": "Questo è il mio cane.",
+   "es": "Este es mi perro.",
+   "pt": "Este é o meu cão.",
+   "pt_BR": "Este é meu cachorro.",
+   "fr": "Voici mon chien.",
+   "de": "Das ist mein Hund."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-010",
+  "topic": "sharing_photos",
+  "level": "A1",
+  "text": {
+   "en": "I took this today.",
+   "it": "L'ho scattata oggi.",
+   "es": "La hice hoy.",
+   "pt": "Tirei-a hoje.",
+   "pt_BR": "Tirei hoje.",
+   "fr": "Je l'ai prise aujourd'hui.",
+   "de": "Ich habe das heute aufgenommen."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-011",
+  "topic": "sharing_photos",
+  "level": "A1",
+  "text": {
+   "en": "Send me more photos, please.",
+   "it": "Mandami altre foto, per favore.",
+   "es": "Mándame más fotos, por favor.",
+   "pt": "Manda-me mais fotos, por favor.",
+   "pt_BR": "Me manda mais fotos, por favor.",
+   "fr": "Envoie-moi d'autres photos, s'il te plaît.",
+   "de": "Schick mir bitte noch mehr Fotos."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-012",
+  "topic": "sharing_photos",
+  "level": "A1",
+  "text": {
+   "en": "It's so beautiful!",
+   "it": "Che bello!",
+   "es": "¡Qué bonito!",
+   "pt": "Que bonito!",
+   "pt_BR": "Que lindo!",
+   "fr": "C'est magnifique !",
+   "de": "Das ist wunderschön!"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-013",
+  "topic": "sharing_photos",
+  "level": "A1",
+  "text": {
+   "en": "This is my favorite place.",
+   "it": "Questo è il mio posto preferito.",
+   "es": "Este es mi lugar favorito.",
+   "pt": "Este é o meu sítio preferido.",
+   "pt_BR": "Este é meu lugar favorito.",
+   "fr": "C'est mon endroit préféré.",
+   "de": "Das ist mein Lieblingsort."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-014",
+  "topic": "sharing_photos",
+  "level": "A1",
+  "text": {
+   "en": "I love the photo you sent!",
+   "it": "Adoro la foto che mi hai mandato!",
+   "es": "¡Me encanta la foto que me has mandado!",
+   "pt": "Adoro a foto que me enviaste!",
+   "pt_BR": "Adorei a foto que você me mandou!",
+   "fr": "J'adore la photo que tu m'as envoyée !",
+   "de": "Ich liebe das Foto, das du mir geschickt hast!"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-015",
+  "topic": "sharing_photos",
+  "level": "A1",
+  "text": {
+   "en": "Is this your house?",
+   "it": "È casa tua?",
+   "es": "¿Es tu casa?",
+   "pt": "É a tua casa?",
+   "pt_BR": "Essa é a sua casa?",
+   "fr": "C'est ta maison ?",
+   "de": "Ist das dein Haus?"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-016",
+  "topic": "sharing_photos",
+  "level": "A2",
+  "text": {
+   "en": "I took this photo last summer on holiday.",
+   "it": "Ho scattato questa foto l'estate scorsa in vacanza.",
+   "es": "Hice esta foto el verano pasado de vacaciones.",
+   "pt": "Tirei esta foto no verão passado, de férias.",
+   "pt_BR": "Tirei essa foto no verão passado, nas férias.",
+   "fr": "J'ai pris cette photo l'été dernier en vacances.",
+   "de": "Ich habe dieses Foto letzten Sommer im Urlaub gemacht."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-017",
+  "topic": "sharing_photos",
+  "level": "A2",
+  "text": {
+   "en": "This is the view from my window.",
+   "it": "Questa è la vista dalla mia finestra.",
+   "es": "Esta es la vista desde mi ventana.",
+   "pt": "Esta é a vista da minha janela.",
+   "pt_BR": "Esta é a vista da minha janela.",
+   "fr": "Voici la vue depuis ma fenêtre.",
+   "de": "Das ist die Aussicht aus meinem Fenster."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-018",
+  "topic": "sharing_photos",
+  "level": "A2",
+  "text": {
+   "en": "Can you send me a picture of your hometown?",
+   "it": "Puoi mandarmi una foto della tua città natale?",
+   "es": "¿Puedes mandarme una foto de tu ciudad natal?",
+   "pt": "Podes enviar-me uma foto da tua terra natal?",
+   "pt_BR": "Você pode me mandar uma foto da sua cidade natal?",
+   "fr": "Tu peux m'envoyer une photo de ta ville natale ?",
+   "de": "Kannst du mir ein Foto deiner Heimatstadt schicken?"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-019",
+  "topic": "sharing_photos",
+  "level": "A2",
+  "text": {
+   "en": "What a beautiful place! Where did you take it?",
+   "it": "Che bel posto! Dove l'hai scattata?",
+   "es": "¡Qué lugar tan bonito! ¿Dónde la hiciste?",
+   "pt": "Que lugar tão bonito! Onde tiraste a foto?",
+   "pt_BR": "Que lugar lindo! Onde você tirou a foto?",
+   "fr": "Quel bel endroit ! Où as-tu pris cette photo ?",
+   "de": "Was für ein schöner Ort! Wo hast du das Foto gemacht?"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-020",
+  "topic": "sharing_photos",
+  "level": "A2",
+  "text": {
+   "en": "This is the dish I cooked yesterday.",
+   "it": "Questo è il piatto che ho cucinato ieri.",
+   "es": "Este es el plato que cociné ayer.",
+   "pt": "Este é o prato que cozinhei ontem.",
+   "pt_BR": "Esse é o prato que eu cozinhei ontem.",
+   "fr": "Voici le plat que j'ai cuisiné hier.",
+   "de": "Das ist das Gericht, das ich gestern gekocht habe."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-021",
+  "topic": "sharing_photos",
+  "level": "A2",
+  "text": {
+   "en": "Do you want to see more photos from my trip?",
+   "it": "Vuoi vedere altre foto del mio viaggio?",
+   "es": "¿Quieres ver más fotos de mi viaje?",
+   "pt": "Queres ver mais fotos da minha viagem?",
+   "pt_BR": "Quer ver mais fotos da minha viagem?",
+   "fr": "Tu veux voir d'autres photos de mon voyage ?",
+   "de": "Möchtest du mehr Fotos von meiner Reise sehen?"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-022",
+  "topic": "sharing_photos",
+  "level": "A2",
+  "text": {
+   "en": "The photo didn't send. I'll try again.",
+   "it": "La foto non è partita. Riprovo.",
+   "es": "La foto no se ha enviado. Lo intento de nuevo.",
+   "pt": "A foto não foi enviada. Vou tentar outra vez.",
+   "pt_BR": "A foto não foi enviada. Vou tentar de novo.",
+   "fr": "La photo ne s'est pas envoyée. Je réessaie.",
+   "de": "Das Foto wurde nicht gesendet. Ich versuche es noch einmal."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-023",
+  "topic": "sharing_photos",
+  "level": "A2",
+  "text": {
+   "en": "Your photos are amazing. Do you like photography?",
+   "it": "Le tue foto sono bellissime. Ti piace la fotografia?",
+   "es": "Tus fotos son increíbles. ¿Te gusta la fotografía?",
+   "pt": "As tuas fotos são incríveis. Gostas de fotografia?",
+   "pt_BR": "Suas fotos são incríveis. Você gosta de fotografia?",
+   "fr": "Tes photos sont superbes. Tu aimes la photographie ?",
+   "de": "Deine Fotos sind toll. Fotografierst du gern?"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-024",
+  "topic": "sharing_photos",
+  "level": "A2",
+  "text": {
+   "en": "This is a street near my house.",
+   "it": "Questa è una strada vicino a casa mia.",
+   "es": "Esta es una calle cerca de mi casa.",
+   "pt": "Esta é uma rua perto da minha casa.",
+   "pt_BR": "Esta é uma rua perto da minha casa.",
+   "fr": "Voici une rue près de chez moi.",
+   "de": "Das ist eine Straße in der Nähe meines Hauses."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-025",
+  "topic": "sharing_photos",
+  "level": "A2",
+  "text": {
+   "en": "Is it okay if I send you a few pictures of the festival?",
+   "it": "Posso mandarti qualche foto del festival?",
+   "es": "¿Te parece bien si te mando unas fotos del festival?",
+   "pt": "Posso enviar-te algumas fotos do festival?",
+   "pt_BR": "Posso te mandar algumas fotos do festival?",
+   "fr": "Je peux t'envoyer quelques photos du festival ?",
+   "de": "Darf ich dir ein paar Fotos vom Festival schicken?"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-026",
+  "topic": "sharing_photos",
+  "level": "A2",
+  "text": {
+   "en": "This is me with my friends at the park.",
+   "it": "Questo sono io con i miei amici al parco.",
+   "es": "Este soy yo con mis amigos en el parque.",
+   "pt": "Este sou eu com os meus amigos no parque.",
+   "pt_BR": "Este sou eu com meus amigos no parque.",
+   "fr": "Voici moi avec mes amis au parc.",
+   "de": "Das bin ich mit meinen Freunden im Park."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-027",
+  "topic": "sharing_photos",
+  "level": "A2",
+  "text": {
+   "en": "I can't open the picture. Can you send it again?",
+   "it": "Non riesco ad aprire la foto. Puoi rimandarla?",
+   "es": "No puedo abrir la foto. ¿Puedes enviarla otra vez?",
+   "pt": "Não consigo abrir a foto. Podes enviá-la outra vez?",
+   "pt_BR": "Não consigo abrir a foto. Você pode mandar de novo?",
+   "fr": "Je n'arrive pas à ouvrir la photo. Tu peux la renvoyer ?",
+   "de": "Ich kann das Foto nicht öffnen. Kannst du es noch einmal schicken?"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-028",
+  "topic": "sharing_photos",
+  "level": "A2",
+  "text": {
+   "en": "The sunset was incredible that evening.",
+   "it": "Il tramonto era incredibile quella sera.",
+   "es": "La puesta de sol fue increíble esa tarde.",
+   "pt": "Naquele fim de tarde o pôr do sol estava incrível.",
+   "pt_BR": "O pôr do sol estava incrível naquele fim de tarde.",
+   "fr": "Le coucher de soleil était incroyable ce soir-là.",
+   "de": "Der Sonnenuntergang war an dem Abend unglaublich."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-029",
+  "topic": "sharing_photos",
+  "level": "A2",
+  "text": {
+   "en": "Can I see a photo of the local food where you live?",
+   "it": "Posso vedere una foto del cibo tipico del posto dove vivi?",
+   "es": "¿Puedo ver una foto de la comida típica de donde vives?",
+   "pt": "Posso ver uma foto da comida típica da tua zona?",
+   "pt_BR": "Posso ver uma foto da comida típica da sua região?",
+   "fr": "Je peux voir une photo de la cuisine locale de chez toi ?",
+   "de": "Kann ich ein Foto vom typischen Essen bei dir in der Gegend sehen?"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-030",
+  "topic": "sharing_photos",
+  "level": "A2",
+  "text": {
+   "en": "Here is a picture of where I work.",
+   "it": "Ecco una foto del posto dove lavoro.",
+   "es": "Aquí tienes una foto de donde trabajo.",
+   "pt": "Aqui está uma foto do sítio onde trabalho.",
+   "pt_BR": "Aqui está uma foto de onde eu trabalho.",
+   "fr": "Voici une photo de mon lieu de travail.",
+   "de": "Hier ist ein Foto von meinem Arbeitsplatz."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-031",
+  "topic": "sharing_photos",
+  "level": "B1",
+  "text": {
+   "en": "I'll send you a few pictures so you can see what the market looks like.",
+   "it": "Ti mando qualche foto così vedi com'è il mercato.",
+   "es": "Te mando unas fotos para que veas cómo es el mercado.",
+   "pt": "Envio-te algumas fotos para veres como é o mercado.",
+   "pt_BR": "Vou te mandar algumas fotos para você ver como é o mercado.",
+   "fr": "Je t'envoie quelques photos pour que tu voies à quoi ressemble le marché.",
+   "de": "Ich schicke dir ein paar Fotos, damit du siehst, wie der Markt aussieht."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-032",
+  "topic": "sharing_photos",
+  "level": "B1",
+  "text": {
+   "en": "Is it okay if I share the photo you sent me with my friends?",
+   "it": "Va bene se condivido con i miei amici la foto che mi hai mandato?",
+   "es": "¿Te parece bien que comparta con mis amigos la foto que me enviaste?",
+   "pt": "Importas-te que partilhe com os meus amigos a foto que me enviaste?",
+   "pt_BR": "Tudo bem se eu compartilhar com meus amigos a foto que você me mandou?",
+   "fr": "Ça te va si je partage avec mes amis la photo que tu m'as envoyée ?",
+   "de": "Ist es okay, wenn ich das Foto, das du mir geschickt hast, mit meinen Freunden teile?"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-033",
+  "topic": "sharing_photos",
+  "level": "B1",
+  "text": {
+   "en": "Please don't share my pictures with anyone else.",
+   "it": "Per favore, non condividere le mie foto con nessun altro.",
+   "es": "Por favor, no compartas mis fotos con nadie más.",
+   "pt": "Por favor, não partilhes as minhas fotos com mais ninguém.",
+   "pt_BR": "Por favor, não compartilhe minhas fotos com mais ninguém.",
+   "fr": "S'il te plaît, ne partage mes photos avec personne d'autre.",
+   "de": "Bitte teile meine Fotos mit niemand anderem."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-034",
+  "topic": "sharing_photos",
+  "level": "B1",
+  "text": {
+   "en": "The photo is too big. I'll send it in a smaller size.",
+   "it": "La foto è troppo pesante. La mando in una dimensione più piccola.",
+   "es": "La foto es demasiado grande. La envío en un tamaño más pequeño.",
+   "pt": "A foto é demasiado grande. Envio-a num tamanho mais pequeno.",
+   "pt_BR": "A foto é grande demais. Vou mandar em um tamanho menor.",
+   "fr": "La photo est trop lourde. Je l'envoie en plus petit format.",
+   "de": "Das Foto ist zu groß. Ich schicke es in kleinerer Größe."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-035",
+  "topic": "sharing_photos",
+  "level": "B1",
+  "text": {
+   "en": "I'd love to see what a typical street looks like where you live.",
+   "it": "Mi piacerebbe vedere com'è una strada tipica dove vivi.",
+   "es": "Me encantaría ver cómo es una calle típica donde vives.",
+   "pt": "Gostava de ver como é uma rua típica onde vives.",
+   "pt_BR": "Eu adoraria ver como é uma rua típica onde você mora.",
+   "fr": "J'aimerais bien voir à quoi ressemble une rue typique chez toi.",
+   "de": "Ich würde gern sehen, wie eine typische Straße bei dir aussieht."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-036",
+  "topic": "sharing_photos",
+  "level": "B1",
+  "text": {
+   "en": "This photo was taken at the old town square during a local festival.",
+   "it": "Questa foto è stata scattata nella piazza del centro storico durante una festa locale.",
+   "es": "Esta foto se hizo en la plaza del casco antiguo durante una fiesta local.",
+   "pt": "Esta foto foi tirada na praça do centro histórico durante uma festa local.",
+   "pt_BR": "Essa foto foi tirada na praça do centro histórico durante uma festa local.",
+   "fr": "Cette photo a été prise sur la place de la vieille ville pendant une fête locale.",
+   "de": "Dieses Foto wurde auf dem Altstadtplatz während eines lokalen Festes aufgenommen."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-037",
+  "topic": "sharing_photos",
+  "level": "B1",
+  "text": {
+   "en": "Could you tell me about the place in the picture?",
+   "it": "Mi racconti qualcosa del posto nella foto?",
+   "es": "¿Podrías contarme algo del lugar de la foto?",
+   "pt": "Podes falar-me do lugar que aparece na foto?",
+   "pt_BR": "Você pode me contar sobre o lugar da foto?",
+   "fr": "Tu pourrais me parler de l'endroit sur la photo ?",
+   "de": "Könntest du mir etwas über den Ort auf dem Foto erzählen?"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-038",
+  "topic": "sharing_photos",
+  "level": "B1",
+  "text": {
+   "en": "I took this on a hike last weekend; the view from the top was worth it.",
+   "it": "Ho scattato questa foto in un'escursione lo scorso fine settimana: la vista dalla cima valeva la fatica.",
+   "es": "Hice esta foto en una excursión el fin de semana pasado; las vistas desde la cima merecieron la pena.",
+   "pt": "Tirei esta foto numa caminhada no fim de semana passado; a vista lá de cima valeu a pena.",
+   "pt_BR": "Tirei essa foto numa trilha no fim de semana passado; a vista lá de cima valeu a pena.",
+   "fr": "J'ai pris cette photo lors d'une randonnée le week-end dernier ; la vue depuis le sommet en valait la peine.",
+   "de": "Ich habe dieses Foto letztes Wochenende bei einer Wanderung gemacht; die Aussicht vom Gipfel hat sich gelohnt."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-039",
+  "topic": "sharing_photos",
+  "level": "B1",
+  "text": {
+   "en": "I don't post pictures of other people without asking them first.",
+   "it": "Non pubblico foto di altre persone senza prima chiederglielo.",
+   "es": "No publico fotos de otras personas sin preguntarles antes.",
+   "pt": "Não publico fotos de outras pessoas sem lhes perguntar primeiro.",
+   "pt_BR": "Não publico fotos de outras pessoas sem perguntar antes.",
+   "fr": "Je ne publie pas de photos d'autres personnes sans leur demander d'abord.",
+   "de": "Ich veröffentliche keine Fotos von anderen Leuten, ohne sie vorher zu fragen."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-040",
+  "topic": "sharing_photos",
+  "level": "B1",
+  "text": {
+   "en": "What's your favorite photo of your country?",
+   "it": "Qual è la tua foto preferita del tuo paese?",
+   "es": "¿Cuál es tu foto favorita de tu país?",
+   "pt": "Qual é a tua foto preferida do teu país?",
+   "pt_BR": "Qual é a sua foto favorita do seu país?",
+   "fr": "Quelle est ta photo préférée de ton pays ?",
+   "de": "Welches ist dein Lieblingsfoto von deinem Land?"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-041",
+  "topic": "sharing_photos",
+  "level": "B1",
+  "text": {
+   "en": "I'm sending you a photo of the entrance so you can recognize the place easily.",
+   "it": "Ti mando una foto dell'ingresso così riconosci il posto facilmente.",
+   "es": "Te mando una foto de la entrada para que reconozcas el sitio fácilmente.",
+   "pt": "Envio-te uma foto da entrada para reconheceres facilmente o sítio.",
+   "pt_BR": "Vou te mandar uma foto da entrada para você reconhecer o lugar facilmente.",
+   "fr": "Je t'envoie une photo de l'entrée pour que tu reconnaisses facilement l'endroit.",
+   "de": "Ich schicke dir ein Foto vom Eingang, damit du den Ort leicht erkennst."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-042",
+  "topic": "sharing_photos",
+  "level": "B1",
+  "text": {
+   "en": "What is the traditional clothing in this photo called?",
+   "it": "Come si chiama l'abito tradizionale in questa foto?",
+   "es": "¿Cómo se llama la ropa tradicional de esta foto?",
+   "pt": "Como se chama a roupa tradicional desta foto?",
+   "pt_BR": "Como se chama a roupa tradicional dessa foto?",
+   "fr": "Comment s'appelle le vêtement traditionnel sur cette photo ?",
+   "de": "Wie nennt man die traditionelle Kleidung auf diesem Foto?"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-043",
+  "topic": "sharing_photos",
+  "level": "B2",
+  "text": {
+   "en": "I'd prefer not to send personal photos yet, but I'm happy to share pictures of places I love.",
+   "it": "Preferisco non mandare ancora foto personali, ma condivido volentieri foto dei posti che amo.",
+   "es": "Prefiero no enviar fotos personales todavía, pero con gusto comparto fotos de lugares que me encantan.",
+   "pt": "Prefiro não enviar fotos pessoais por enquanto, mas partilho com prazer fotos de sítios de que gosto.",
+   "pt_BR": "Prefiro não mandar fotos pessoais por enquanto, mas compartilho com prazer fotos de lugares de que gosto.",
+   "fr": "Je préfère ne pas envoyer de photos personnelles pour l'instant, mais je partage volontiers des photos d'endroits que j'aime.",
+   "de": "Ich möchte noch keine persönlichen Fotos schicken, teile aber gern Bilder von Orten, die ich mag."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-044",
+  "topic": "sharing_photos",
+  "level": "B2",
+  "text": {
+   "en": "Your photo reminded me of a small town I visited years ago; it looked almost the same.",
+   "it": "La tua foto mi ha ricordato un paesino che ho visitato anni fa: sembrava quasi identico.",
+   "es": "Tu foto me ha recordado a un pueblo que visité hace años; era casi igual.",
+   "pt": "A tua foto fez-me lembrar uma vila que visitei há anos; era quase igual.",
+   "pt_BR": "Sua foto me lembrou uma cidadezinha que visitei anos atrás; era quase igual.",
+   "fr": "Ta photo m'a rappelé une petite ville que j'ai visitée il y a des années ; elle ressemblait presque à celle-ci.",
+   "de": "Dein Foto hat mich an eine Kleinstadt erinnert, die ich vor Jahren besucht habe; sie sah fast genauso aus."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-045",
+  "topic": "sharing_photos",
+  "level": "B2",
+  "text": {
+   "en": "Would you mind if I used one of your photos as a reference for my drawing?",
+   "it": "Ti dispiace se uso una tua foto come riferimento per un mio disegno?",
+   "es": "¿Te importa si uso una de tus fotos como referencia para un dibujo?",
+   "pt": "Importas-te se usar uma das tuas fotos como referência para um desenho meu?",
+   "pt_BR": "Você se importa se eu usar uma das suas fotos como referência para um desenho meu?",
+   "fr": "Ça te dérange si j'utilise une de tes photos comme référence pour un dessin ?",
+   "de": "Hättest du etwas dagegen, wenn ich eines deiner Fotos als Vorlage für eine Zeichnung benutzen würde?"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-046",
+  "topic": "sharing_photos",
+  "level": "B2",
+  "text": {
+   "en": "I caught the exact moment the fireworks started.",
+   "it": "Ho catturato proprio il momento in cui sono iniziati i fuochi d'artificio.",
+   "es": "Pillé justo el momento en que empezaron los fuegos artificiales.",
+   "pt": "Apanhei mesmo o momento em que começaram os fogos de artifício.",
+   "pt_BR": "Captei o exato momento em que os fogos de artifício começaram.",
+   "fr": "J'ai saisi le moment exact où le feu d'artifice a commencé.",
+   "de": "Ich habe genau den Moment erwischt, in dem das Feuerwerk begann."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-047",
+  "topic": "sharing_photos",
+  "level": "B2",
+  "text": {
+   "en": "Could you tell me the story behind this picture? It seems to mean a lot to you.",
+   "it": "Mi racconti la storia dietro questa foto? Sembra significare molto per te.",
+   "es": "¿Me cuentas la historia detrás de esta foto? Parece significar mucho para ti.",
+   "pt": "Contas-me a história por trás desta foto? Parece ter muito significado para ti.",
+   "pt_BR": "Você me conta a história por trás dessa foto? Parece significar muito para você.",
+   "fr": "Tu peux me raconter l'histoire derrière cette photo ? Elle a l'air de compter beaucoup pour toi.",
+   "de": "Könntest du mir die Geschichte hinter diesem Foto erzählen? Sie scheint dir viel zu bedeuten."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-048",
+  "topic": "sharing_photos",
+  "level": "B2",
+  "text": {
+   "en": "The lighting in your photo is stunning; did you edit it or is it natural?",
+   "it": "La luce nella tua foto è stupenda: l'hai modificata o è naturale?",
+   "es": "La luz de tu foto es impresionante; ¿la has retocado o es natural?",
+   "pt": "A luz da tua foto é deslumbrante; editaste-a ou é natural?",
+   "pt_BR": "A luz da sua foto está deslumbrante; você editou ou é natural?",
+   "fr": "La lumière de ta photo est superbe ; tu l'as retouchée ou c'est naturel ?",
+   "de": "Das Licht in deinem Foto ist atemberaubend; hast du es bearbeitet, oder ist es natürlich?"
+  }
+ },
+ {
+  "id": "ss-sharing_photos-049",
+  "topic": "sharing_photos",
+  "level": "B2",
+  "text": {
+   "en": "Before I post this, I'll make sure nobody's face is visible without their permission.",
+   "it": "Prima di pubblicarla, mi assicuro che nessun volto sia riconoscibile senza il permesso della persona.",
+   "es": "Antes de publicarla, me aseguro de que no se vea la cara de nadie sin su permiso.",
+   "pt": "Antes de a publicar, vou garantir que não se vê a cara de ninguém sem a sua permissão.",
+   "pt_BR": "Antes de publicar, vou garantir que o rosto de ninguém apareça sem a permissão da pessoa.",
+   "fr": "Avant de la publier, je m'assure que le visage de personne n'est visible sans son accord.",
+   "de": "Bevor ich es poste, achte ich darauf, dass kein Gesicht ohne Erlaubnis erkennbar ist."
+  }
+ },
+ {
+  "id": "ss-sharing_photos-050",
+  "topic": "sharing_photos",
+  "level": "B2",
+  "text": {
+   "en": "Photos are a great way to learn vocabulary: send me one and I'll try to describe it in your language.",
+   "it": "Le foto sono un ottimo modo per imparare il vocabolario: mandamene una e proverò a descriverla nella tua lingua.",
+   "es": "Las fotos son una gran forma de aprender vocabulario: mándame una e intentaré describirla en tu idioma.",
+   "pt": "As fotos são uma ótima forma de aprender vocabulário: envia-me uma e vou tentar descrevê-la na tua língua.",
+   "pt_BR": "As fotos são uma ótima forma de aprender vocabulário: me mande uma e vou tentar descrevê-la na sua língua.",
+   "fr": "Les photos sont un excellent moyen d'apprendre du vocabulaire : envoie-m'en une et j'essaierai de la décrire dans ta langue.",
+   "de": "Fotos sind eine tolle Möglichkeit, Vokabeln zu lernen: Schick mir eins, und ich versuche, es in deiner Sprache zu beschreiben."
+  }
+ }
+]

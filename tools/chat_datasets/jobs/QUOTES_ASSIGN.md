@@ -30,3 +30,7 @@
 28: Augustine of Hippo, Thomas Aquinas, Francis of Assisi, Teresa of Ávila, Hildegard of Bingen, Thomas à Kempis, Meister Eckhart, John of the Cross, Ignatius of Loyola, Kabir
 29: Fridtjof Nansen, Roald Amundsen, Ernest Shackleton, Gregor Mendel, Antoine Lavoisier, Carl Linnaeus, John Muir, Jean-Henri Fabre, Ibn Khaldun, Alexander Graham Bell
 30: PROVERBS (10 each): Italian, Spanish, French, German, Portuguese, English, Japanese, Chinese, Arabic, Russian (from the Wikiquote "<X> proverbs" pages)
+31: Plutarch, Aeschylus, Democritus, Xenophon, Pliny the Elder, Quintilian, Sallust, Livy, Tacitus, Menander
+32: Anatole France, Paul Valéry, Romain Rolland, André Gide, Colette, Guillaume Apollinaire, Jules Verne, Alfred de Vigny, Alphonse de Lamartine, François-René de Chateaubriand
+33: Giovanni Verga, Giosuè Carducci, Giovanni Pascoli, Trilussa, Benedetto Croce, Benito Pérez Galdós, Ramón del Valle-Inclán, Almeida Garrett, Antero de Quental, Gil Vicente
+34: Theodor Fontane, Wilhelm Busch, Georg Büchner, E. T. A. Hoffmann, Matthias Claudius, Jean Paul, Friedrich Rückert, Theodor Storm, Gottfried Keller, Christian Morgenstern

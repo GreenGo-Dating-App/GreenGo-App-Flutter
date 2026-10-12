@@ -1,0 +1,1178 @@
+{
+ "ME": [
+  {
+   "id": "ct-ME-01",
+   "category": "greetings",
+   "text": {
+    "en": "A firm handshake with eye contact and a friendly smile is the standard greeting. Close friends often add kisses on the cheek.",
+    "it": "Una stretta di mano salda con contatto visivo e un sorriso è il saluto standard. Tra amici stretti si aggiungono spesso i baci sulla guancia.",
+    "es": "Un apretón de manos firme con contacto visual y una sonrisa es el saludo habitual. Entre amigos cercanos suelen añadirse besos en la mejilla.",
+    "pt": "Um aperto de mão firme, com contacto visual e um sorriso, é a saudação habitual. Entre amigos próximos juntam-se muitas vezes beijos na face.",
+    "pt_BR": "Um aperto de mão firme, com contato visual e um sorriso, é a saudação padrão. Entre amigos próximos, costumam vir também beijos no rosto.",
+    "fr": "Une poignée de main ferme, avec un regard franc et un sourire, est la salutation habituelle. Entre amis proches, on y ajoute souvent la bise.",
+    "de": "Ein fester Händedruck mit Blickkontakt und einem freundlichen Lächeln ist die übliche Begrüßung. Enge Freunde geben sich oft zusätzlich Wangenküsse."
+   }
+  },
+  {
+   "id": "ct-ME-02",
+   "category": "greetings",
+   "text": {
+    "en": "Learning a few words like Dobar dan (good day) and Hvala (thank you) is warmly appreciated by locals.",
+    "it": "Imparare qualche parola come Dobar dan (buongiorno) e Hvala (grazie) viene molto apprezzato dalla gente del posto.",
+    "es": "Aprender unas palabras como Dobar dan (buen día) y Hvala (gracias) es muy apreciado por la gente local.",
+    "pt": "Aprender algumas palavras como Dobar dan (bom dia) e Hvala (obrigado) é muito apreciado pelos locais.",
+    "pt_BR": "Aprender algumas palavras como Dobar dan (bom dia) e Hvala (obrigado) é muito apreciado pelos moradores locais.",
+    "fr": "Apprendre quelques mots comme Dobar dan (bonjour) et Hvala (merci) est très apprécié des habitants.",
+    "de": "Ein paar Wörter wie Dobar dan (guten Tag) und Hvala (danke) zu lernen, kommt bei den Einheimischen sehr gut an."
+   }
+  },
+  {
+   "id": "ct-ME-03",
+   "category": "conversation",
+   "text": {
+    "en": "Many people enjoy long conversations over coffee about family, food, travel and local landscapes. Showing real interest goes a long way.",
+    "it": "A molte persone piace chiacchierare a lungo davanti a un caffè di famiglia, cibo, viaggi e paesaggi locali. Mostrare vero interesse conta molto.",
+    "es": "A mucha gente le gusta conversar largo rato con un café sobre familia, comida, viajes y paisajes locales. Mostrar interés sincero ayuda mucho.",
+    "pt": "Muita gente gosta de conversas longas à volta de um café sobre família, comida, viagens e paisagens locais. Mostrar interesse genuíno vale muito.",
+    "pt_BR": "Muita gente gosta de longas conversas num café sobre família, comida, viagens e paisagens locais. Mostrar interesse de verdade ajuda muito.",
+    "fr": "Beaucoup de gens aiment discuter longuement autour d'un café de famille, de cuisine, de voyages et de paysages. Un intérêt sincère compte beaucoup.",
+    "de": "Viele Menschen unterhalten sich gern lange bei einem Kaffee über Familie, Essen, Reisen und Landschaften. Echtes Interesse kommt gut an."
+   }
+  },
+  {
+   "id": "ct-ME-04",
+   "category": "conversation",
+   "text": {
+    "en": "Montenegro is a small country with a proud history, and many people like to talk about their mountains and coast. Asking about their hometown is a friendly opener.",
+    "it": "Il Montenegro è un piccolo paese con una storia di cui andare fieri, e a molti piace parlare di montagne e costa. Chiedere della loro città è un'apertura cordiale.",
+    "es": "Montenegro es un país pequeño con una historia de la que sentirse orgulloso, y a muchos les gusta hablar de sus montañas y su costa. Preguntar por su ciudad natal es un buen comienzo amable.",
+    "pt": "O Montenegro é um país pequeno com uma história de que se orgulha, e muita gente gosta de falar das montanhas e da costa. Perguntar pela terra natal é uma abertura simpática.",
+    "pt_BR": "Montenegro é um país pequeno com uma história da qual as pessoas se orgulham, e muita gente gosta de falar das montanhas e do litoral. Perguntar sobre a cidade natal é um bom começo simpático.",
+    "fr": "Le Monténégro est un petit pays à l'histoire dont on est fier, et beaucoup aiment parler de leurs montagnes et de leur côte. Demander d'où l'on vient est une entrée en matière chaleureuse.",
+    "de": "Montenegro ist ein kleines Land mit stolzer Geschichte, und viele sprechen gern über Berge und Küste. Nach der Heimatstadt zu fragen, ist ein freundlicher Gesprächseinstieg."
+   }
+  },
+  {
+   "id": "ct-ME-05",
+   "category": "dining",
+   "text": {
+    "en": "Hospitality is generous: hosts often keep offering food, and politely accepting at least a little is seen as a sign of appreciation.",
+    "it": "L'ospitalità è generosa: chi ospita continua spesso a offrire cibo, e accettarne almeno un po' con garbo è segno di apprezzamento.",
+    "es": "La hospitalidad es generosa: los anfitriones suelen seguir ofreciendo comida, y aceptar al menos un poco con educación se ve como señal de aprecio.",
+    "pt": "A hospitalidade é generosa: os anfitriões continuam muitas vezes a oferecer comida, e aceitar pelo menos um pouco, com educação, é visto como sinal de apreço.",
+    "pt_BR": "A hospitalidade é generosa: os anfitriões costumam continuar oferecendo comida, e aceitar pelo menos um pouco, com educação, é visto como sinal de apreço.",
+    "fr": "L'hospitalité est généreuse : les hôtes proposent souvent de la nourriture à répétition, et en accepter au moins un peu avec courtoisie est un signe de reconnaissance.",
+    "de": "Die Gastfreundschaft ist großzügig: Gastgeber bieten oft immer wieder Essen an, und zumindest ein wenig höflich anzunehmen gilt als Zeichen der Wertschätzung."
+   }
+  },
+  {
+   "id": "ct-ME-06",
+   "category": "dining",
+   "text": {
+    "en": "Try local specialties such as Njeguši ham and cheese, kajmak, burek and grilled meats. Seafood is the highlight along the Adriatic coast.",
+    "it": "Assaggia le specialità locali come prosciutto e formaggio di Njeguši, kajmak, burek e carni alla griglia. Sulla costa adriatica il pesce è il protagonista.",
+    "es": "Prueba especialidades locales como el jamón y el queso de Njeguši, el kajmak, el burek y las carnes a la parrilla. En la costa adriática, el marisco y el pescado destacan.",
+    "pt": "Experimenta especialidades locais como o presunto e o queijo de Njeguši, o kajmak, o burek e as carnes grelhadas. Na costa do Adriático, o peixe e o marisco são os destaques.",
+    "pt_BR": "Experimente especialidades locais como o presunto e o queijo de Njeguši, o kajmak, o burek e as carnes grelhadas. No litoral do Adriático, os frutos do mar são os destaques.",
+    "fr": "Goûtez les spécialités locales comme le jambon et le fromage de Njeguši, le kajmak, le burek et les grillades. Sur la côte adriatique, les produits de la mer sont à l'honneur.",
+    "de": "Probiere lokale Spezialitäten wie Njeguši-Schinken und -Käse, Kajmak, Burek und gegrilltes Fleisch. An der Adriaküste stehen Fisch und Meeresfrüchte im Mittelpunkt."
+   }
+  },
+  {
+   "id": "ct-ME-07",
+   "category": "tipping",
+   "text": {
+    "en": "In restaurants it is common to leave about 10 percent or round up the bill if service was good. It is appreciated rather than strictly required.",
+    "it": "Nei ristoranti è comune lasciare circa il 10 per cento o arrotondare il conto se il servizio è stato buono. È gradito più che obbligatorio.",
+    "es": "En los restaurantes es común dejar alrededor del 10 por ciento o redondear la cuenta si el servicio fue bueno. Se agradece más que se exige.",
+    "pt": "Nos restaurantes é comum deixar cerca de 10 por cento ou arredondar a conta se o serviço foi bom. É apreciado, mas não obrigatório.",
+    "pt_BR": "Nos restaurantes é comum deixar cerca de 10 por cento ou arredondar a conta se o atendimento foi bom. É apreciado, mas não obrigatório.",
+    "fr": "Au restaurant, il est courant de laisser environ 10 pour cent ou d'arrondir l'addition si le service était bon. C'est apprécié plutôt qu'exigé.",
+    "de": "In Restaurants ist es üblich, bei gutem Service etwa 10 Prozent Trinkgeld zu geben oder die Rechnung aufzurunden. Es wird geschätzt, aber nicht streng erwartet."
+   }
+  },
+  {
+   "id": "ct-ME-08",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to someone's home, it is common to bring a small gift such as sweets, flowers or something local for the hosts.",
+    "it": "Quando si è invitati a casa di qualcuno è comune portare un piccolo regalo, come dolci, fiori o qualcosa di locale per i padroni di casa.",
+    "es": "Cuando te invitan a una casa, es común llevar un pequeño detalle como dulces, flores o algo local para los anfitriones.",
+    "pt": "Quando se é convidado para casa de alguém, é comum levar uma pequena lembrança, como doces, flores ou algo local para os anfitriões.",
+    "pt_BR": "Quando você é convidado para a casa de alguém, é comum levar uma lembrança, como doces, flores ou algo típico da região para os anfitriões.",
+    "fr": "Lorsqu'on est invité chez quelqu'un, il est courant d'apporter un petit cadeau, comme des douceurs, des fleurs ou un produit local pour les hôtes.",
+    "de": "Wer privat eingeladen wird, bringt üblicherweise ein kleines Geschenk mit, etwa Süßigkeiten, Blumen oder etwas Regionales für die Gastgeber."
+   }
+  },
+  {
+   "id": "ct-ME-09",
+   "category": "dress",
+   "text": {
+    "en": "Beachwear is fine at the beach and on promenades, but in towns and when visiting religious sites people tend to dress more modestly.",
+    "it": "L'abbigliamento da spiaggia va bene in spiaggia e sui lungomare, ma in città e nei luoghi religiosi ci si veste in modo più sobrio.",
+    "es": "La ropa de playa está bien en la playa y los paseos marítimos, pero en las ciudades y al visitar lugares religiosos se suele vestir con más recato.",
+    "pt": "A roupa de praia é adequada na praia e nos passeios marítimos, mas nas cidades e em locais religiosos costuma vestir-se de forma mais recatada.",
+    "pt_BR": "Roupa de praia é adequada na praia e nos calçadões, mas nas cidades e em locais religiosos as pessoas costumam se vestir de forma mais recatada.",
+    "fr": "La tenue de plage convient à la plage et sur les fronts de mer, mais en ville et dans les lieux religieux, on s'habille plutôt sobrement.",
+    "de": "Strandkleidung ist am Strand und auf Promenaden in Ordnung, aber in Städten und an religiösen Stätten kleidet man sich eher zurückhaltend."
+   }
+  },
+  {
+   "id": "ct-ME-10",
+   "category": "religion_sites",
+   "text": {
+    "en": "At monasteries such as Ostrog, visitors are expected to cover shoulders and knees and keep their voice low. Many pilgrims visit, so be patient with queues.",
+    "it": "Nei monasteri come Ostrog si deve coprire spalle e ginocchia e parlare a bassa voce. Molti pellegrini li visitano, quindi abbi pazienza con le code.",
+    "es": "En monasterios como Ostrog se espera cubrir hombros y rodillas y hablar en voz baja. Hay muchos peregrinos, así que ten paciencia con las colas.",
+    "pt": "Em mosteiros como Ostrog espera-se que se cubram os ombros e os joelhos e se fale baixo. Há muitos peregrinos, por isso tenha paciência com as filas.",
+    "pt_BR": "Em mosteiros como Ostrog espera-se cobrir ombros e joelhos e falar baixo. Há muitos peregrinos, então tenha paciência com as filas.",
+    "fr": "Dans les monastères comme Ostrog, on couvre ses épaules et ses genoux et on parle à voix basse. Les pèlerins sont nombreux, alors armez-vous de patience dans les files.",
+    "de": "In Klöstern wie Ostrog bedeckt man Schultern und Knie und spricht leise. Es kommen viele Pilger, daher braucht man Geduld in den Schlangen."
+   }
+  },
+  {
+   "id": "ct-ME-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Montenegro is home to Orthodox, Catholic and Muslim communities. Visitors are welcome in many churches and mosques if they behave respectfully.",
+    "it": "In Montenegro vivono comunità ortodosse, cattoliche e musulmane. I visitatori sono benvenuti in molte chiese e moschee se si comportano con rispetto.",
+    "es": "En Montenegro conviven comunidades ortodoxas, católicas y musulmanas. Los visitantes son bienvenidos en muchas iglesias y mezquitas si se comportan con respeto.",
+    "pt": "No Montenegro vivem comunidades ortodoxas, católicas e muçulmanas. Os visitantes são bem-vindos em muitas igrejas e mesquitas se se comportarem com respeito.",
+    "pt_BR": "Em Montenegro vivem comunidades ortodoxas, católicas e muçulmanas. Os visitantes são bem-vindos em muitas igrejas e mesquitas se se comportarem com respeito.",
+    "fr": "Le Monténégro abrite des communautés orthodoxes, catholiques et musulmanes. Les visiteurs sont les bienvenus dans de nombreuses églises et mosquées s'ils se montrent respectueux.",
+    "de": "In Montenegro leben orthodoxe, katholische und muslimische Gemeinschaften. Besucher sind in vielen Kirchen und Moscheen willkommen, wenn sie sich respektvoll verhalten."
+   }
+  },
+  {
+   "id": "ct-ME-12",
+   "category": "gestures",
+   "text": {
+    "en": "Direct eye contact while talking and while clinking glasses is considered a sign of sincerity and respect.",
+    "it": "Il contatto visivo diretto mentre si parla e quando si brinda è considerato segno di sincerità e rispetto.",
+    "es": "El contacto visual directo al hablar y al brindar se considera una muestra de sinceridad y respeto.",
+    "pt": "O contacto visual direto ao falar e ao brindar é considerado sinal de sinceridade e respeito.",
+    "pt_BR": "O contato visual direto ao conversar e ao brindar é considerado sinal de sinceridade e respeito.",
+    "fr": "Le contact visuel direct pendant la conversation et en trinquant est vu comme un signe de sincérité et de respect.",
+    "de": "Direkter Blickkontakt beim Sprechen und beim Anstoßen gilt als Zeichen von Aufrichtigkeit und Respekt."
+   }
+  },
+  {
+   "id": "ct-ME-13",
+   "category": "punctuality",
+   "text": {
+    "en": "Social meetings often start a little later than planned, and a few minutes of delay is usually taken calmly. For tours and ferries, however, be on time.",
+    "it": "Gli incontri sociali spesso iniziano un po' dopo l'orario previsto e qualche minuto di ritardo viene di solito preso con calma. Per escursioni e traghetti, invece, sii puntuale.",
+    "es": "Las quedadas sociales suelen empezar algo más tarde de lo previsto y unos minutos de retraso se toman con calma. Para excursiones y ferris, en cambio, sé puntual.",
+    "pt": "Os encontros sociais costumam começar um pouco mais tarde do que o combinado e uns minutos de atraso são geralmente encarados com calma. Para passeios e ferries, porém, seja pontual.",
+    "pt_BR": "Encontros sociais costumam começar um pouco mais tarde do que o combinado, e alguns minutos de atraso geralmente são encarados com calma. Para passeios e balsas, porém, seja pontual.",
+    "fr": "Les rencontres entre amis commencent souvent un peu plus tard que prévu, et quelques minutes de retard sont généralement prises avec calme. Pour les excursions et les ferries, soyez toutefois à l'heure.",
+    "de": "Private Treffen beginnen oft etwas später als geplant, und ein paar Minuten Verspätung nimmt man meist gelassen. Bei Touren und Fähren sollte man aber pünktlich sein."
+   }
+  },
+  {
+   "id": "ct-ME-14",
+   "category": "public_behavior",
+   "text": {
+    "en": "Café life is central: people sit for hours over one coffee, and rushing the table or the conversation is not common.",
+    "it": "La vita da caffè è centrale: ci si siede per ore davanti a un solo caffè, e non è usuale mettere fretta al tavolo o alla conversazione.",
+    "es": "La vida de café es central: la gente se sienta horas con un solo café y no es habitual apresurar la mesa ni la conversación.",
+    "pt": "A vida de café é central: as pessoas ficam horas com um só café e não é habitual apressar a mesa nem a conversa.",
+    "pt_BR": "A vida de café é central: as pessoas ficam horas com um único café, e não é comum apressar a mesa nem a conversa.",
+    "fr": "La vie de café est essentielle : on reste des heures devant un seul café, et il n'est pas courant de presser la table ou la conversation.",
+    "de": "Das Kaffeehausleben ist zentral: Man sitzt stundenlang bei einem Kaffee, und niemand drängt zur Eile."
+   }
+  },
+  {
+   "id": "ct-ME-15",
+   "category": "transport",
+   "text": {
+    "en": "Public transport between towns relies mostly on buses, and the mountain roads can be winding and narrow. Allow extra travel time.",
+    "it": "I trasporti pubblici tra le città si basano soprattutto sugli autobus, e le strade di montagna possono essere tortuose e strette. Prevedi più tempo per gli spostamenti.",
+    "es": "El transporte público entre ciudades se basa sobre todo en autobuses y las carreteras de montaña pueden ser sinuosas y estrechas. Calcula más tiempo para los trayectos.",
+    "pt": "Os transportes públicos entre cidades dependem sobretudo dos autocarros, e as estradas de montanha podem ser sinuosas e estreitas. Conte com mais tempo de viagem.",
+    "pt_BR": "O transporte público entre cidades depende sobretudo de ônibus, e as estradas de montanha podem ser sinuosas e estreitas. Conte com mais tempo de viagem.",
+    "fr": "Les transports publics entre les villes reposent surtout sur les bus, et les routes de montagne peuvent être sinueuses et étroites. Prévoyez plus de temps de trajet.",
+    "de": "Der öffentliche Verkehr zwischen den Städten läuft vor allem über Busse, und die Bergstraßen können kurvig und eng sein. Plane mehr Reisezeit ein."
+   }
+  },
+  {
+   "id": "ct-ME-16",
+   "category": "transport",
+   "text": {
+    "en": "With taxis, it is wise to agree on the price or check that the meter is running before you set off.",
+    "it": "Con i taxi è saggio concordare il prezzo o controllare che il tassametro sia acceso prima di partire.",
+    "es": "Con los taxis conviene acordar el precio o comprobar que el taxímetro esté en marcha antes de salir.",
+    "pt": "Nos táxis, convém combinar o preço ou verificar se o taxímetro está ligado antes de partir.",
+    "pt_BR": "Nos táxis, vale combinar o preço ou conferir se o taxímetro está ligado antes de partir.",
+    "fr": "En taxi, mieux vaut convenir du prix ou vérifier que le compteur tourne avant de partir.",
+    "de": "Bei Taxis ist es ratsam, vor der Fahrt den Preis zu vereinbaren oder zu prüfen, ob das Taxameter läuft."
+   }
+  },
+  {
+   "id": "ct-ME-17",
+   "category": "language",
+   "text": {
+    "en": "The official language is Montenegrin, and Serbian, Bosnian, Albanian and Croatian are also spoken. Many younger people speak some English.",
+    "it": "La lingua ufficiale è il montenegrino, e si parlano anche serbo, bosniaco, albanese e croato. Molti giovani parlano un po' di inglese.",
+    "es": "El idioma oficial es el montenegrino, y también se hablan serbio, bosnio, albanés y croata. Muchos jóvenes hablan algo de inglés.",
+    "pt": "A língua oficial é o montenegrino, e também se falam sérvio, bósnio, albanês e croata. Muitos jovens falam algum inglês.",
+    "pt_BR": "A língua oficial é o montenegrino, e também se falam sérvio, bósnio, albanês e croata. Muitos jovens falam um pouco de inglês.",
+    "fr": "La langue officielle est le monténégrin, et l'on parle aussi serbe, bosniaque, albanais et croate. Beaucoup de jeunes parlent un peu anglais.",
+    "de": "Amtssprache ist Montenegrinisch, außerdem werden Serbisch, Bosnisch, Albanisch und Kroatisch gesprochen. Viele Jüngere sprechen etwas Englisch."
+   }
+  },
+  {
+   "id": "ct-ME-18",
+   "category": "language",
+   "text": {
+    "en": "Both Latin and Cyrillic scripts appear in Montenegro, though the Latin alphabet is more common on signs, menus and in daily life.",
+    "it": "In Montenegro compaiono sia l'alfabeto latino sia quello cirillico, anche se il latino è più comune su insegne, menu e nella vita quotidiana.",
+    "es": "En Montenegro aparecen tanto el alfabeto latino como el cirílico, aunque el latino es más común en carteles, menús y en la vida diaria.",
+    "pt": "No Montenegro aparecem tanto o alfabeto latino como o cirílico, embora o latino seja mais comum em placas, ementas e no dia a dia.",
+    "pt_BR": "Em Montenegro aparecem tanto o alfabeto latino quanto o cirílico, embora o latino seja mais comum em placas, cardápios e no dia a dia.",
+    "fr": "Au Monténégro, on voit à la fois l'alphabet latin et le cyrillique, mais le latin est plus courant sur les panneaux, les menus et dans la vie quotidienne.",
+    "de": "In Montenegro begegnen einem sowohl die lateinische als auch die kyrillische Schrift, doch die lateinische ist auf Schildern, Speisekarten und im Alltag verbreiteter."
+   }
+  },
+  {
+   "id": "ct-ME-19",
+   "category": "festivals",
+   "text": {
+    "en": "Independence Day on 21 May marks the 2006 referendum, and Statehood Day on 13 July is another major national holiday. Expect events and closed offices.",
+    "it": "Il 21 maggio si celebra l'indipendenza in ricordo del referendum del 2006, e il 13 luglio è un'altra grande festa nazionale. Aspettati eventi e uffici chiusi.",
+    "es": "El 21 de mayo se celebra la independencia, en recuerdo del referéndum de 2006, y el 13 de julio es otra gran fiesta nacional. Habrá eventos y oficinas cerradas.",
+    "pt": "A 21 de maio celebra-se a independência, em memória do referendo de 2006, e 13 de julho é outro grande feriado nacional. Espere eventos e repartições fechadas.",
+    "pt_BR": "Em 21 de maio celebra-se a independência, em memória do referendo de 2006, e 13 de julho é outro grande feriado nacional. Espere eventos e repartições fechadas.",
+    "fr": "Le 21 mai marque l'indépendance, en souvenir du référendum de 2006, et le 13 juillet est une autre grande fête nationale. Attendez-vous à des événements et à des bureaux fermés.",
+    "de": "Am 21. Mai wird die Unabhängigkeit nach dem Referendum von 2006 gefeiert, und der 13. Juli ist ein weiterer großer Nationalfeiertag. Es gibt Veranstaltungen, Ämter bleiben geschlossen."
+   }
+  },
+  {
+   "id": "ct-ME-20",
+   "category": "festivals",
+   "text": {
+    "en": "Orthodox Christmas is celebrated on 7 January, and on Christmas Eve families traditionally bring in the badnjak, a young oak branch placed on the fire.",
+    "it": "Il Natale ortodosso si festeggia il 7 gennaio, e alla vigilia le famiglie portano tradizionalmente in casa il badnjak, un ramo di quercia messo sul fuoco.",
+    "es": "La Navidad ortodoxa se celebra el 7 de enero y en Nochebuena las familias llevan tradicionalmente el badnjak, una rama joven de roble que se coloca en el fuego.",
+    "pt": "O Natal ortodoxo celebra-se a 7 de janeiro e, na consoada, as famílias levam tradicionalmente para casa o badnjak, um ramo jovem de carvalho posto na lareira.",
+    "pt_BR": "O Natal ortodoxo é celebrado em 7 de janeiro e, na véspera, as famílias tradicionalmente levam para casa o badnjak, um ramo jovem de carvalho colocado no fogo.",
+    "fr": "Noël orthodoxe se fête le 7 janvier, et la veille, les familles apportent traditionnellement le badnjak, une jeune branche de chêne posée sur le feu.",
+    "de": "Das orthodoxe Weihnachtsfest wird am 7. Januar gefeiert, und am Heiligabend bringen Familien traditionell den Badnjak ins Haus, einen jungen Eichenzweig, der ins Feuer gelegt wird."
+   }
+  },
+  {
+   "id": "ct-ME-21",
+   "category": "family",
+   "text": {
+    "en": "Family ties are strong, and many Orthodox families celebrate a Slava, a yearly feast day for the family's patron saint, with relatives and guests.",
+    "it": "I legami familiari sono forti, e molte famiglie ortodosse celebrano la Slava, la festa annuale del santo patrono della famiglia, con parenti e ospiti.",
+    "es": "Los lazos familiares son fuertes, y muchas familias ortodoxas celebran la Slava, la fiesta anual del santo patrón de la familia, con parientes e invitados.",
+    "pt": "Os laços familiares são fortes, e muitas famílias ortodoxas celebram a Slava, a festa anual do santo padroeiro da família, com parentes e convidados.",
+    "pt_BR": "Os laços familiares são fortes, e muitas famílias ortodoxas celebram a Slava, a festa anual do santo padroeiro da família, com parentes e convidados.",
+    "fr": "Les liens familiaux sont forts, et de nombreuses familles orthodoxes célèbrent la Slava, la fête annuelle du saint patron de la famille, avec parents et invités.",
+    "de": "Familienbande sind eng, und viele orthodoxe Familien feiern die Slava, das jährliche Fest des Familienheiligen, mit Verwandten und Gästen."
+   }
+  },
+  {
+   "id": "ct-ME-22",
+   "category": "family",
+   "text": {
+    "en": "A charming local custom is for newlyweds to plant an olive tree on their wedding day, a symbol of a lasting life together.",
+    "it": "Un'usanza locale affascinante è che gli sposi piantino un ulivo il giorno delle nozze, simbolo di una vita insieme duratura.",
+    "es": "Una costumbre local encantadora es que los recién casados planten un olivo el día de su boda, símbolo de una vida en común duradera.",
+    "pt": "Um costume local encantador é os recém-casados plantarem uma oliveira no dia do casamento, símbolo de uma vida em comum duradoura.",
+    "pt_BR": "Um costume local encantador é os recém-casados plantarem uma oliveira no dia do casamento, símbolo de uma vida a dois duradoura.",
+    "fr": "Une jolie coutume locale veut que les jeunes mariés plantent un olivier le jour de leur mariage, symbole d'une vie commune durable.",
+    "de": "Ein hübscher lokaler Brauch ist, dass Frischvermählte am Hochzeitstag einen Olivenbaum pflanzen, als Symbol für ein langes gemeinsames Leben."
+   }
+  },
+  {
+   "id": "ct-ME-23",
+   "category": "money",
+   "text": {
+    "en": "The euro is used in Montenegro even though the country is not an EU member. Cards are widely accepted in towns, but carry some cash for small cafes and villages.",
+    "it": "In Montenegro si usa l'euro anche se il paese non fa parte dell'UE. Le carte sono accettate nelle città, ma porta contanti per piccoli bar e villaggi.",
+    "es": "En Montenegro se usa el euro aunque el país no es miembro de la UE. Las tarjetas se aceptan en las ciudades, pero lleva algo de efectivo para cafeterías pequeñas y pueblos.",
+    "pt": "No Montenegro usa-se o euro, embora o país não seja membro da UE. Os cartões são aceites nas cidades, mas leve algum dinheiro para cafés pequenos e aldeias.",
+    "pt_BR": "Em Montenegro usa-se o euro, embora o país não seja membro da UE. Cartões são aceitos nas cidades, mas leve algum dinheiro para cafés pequenos e vilarejos.",
+    "fr": "Le Monténégro utilise l'euro bien qu'il ne soit pas membre de l'UE. Les cartes sont largement acceptées en ville, mais prévoyez des espèces pour les petits cafés et les villages.",
+    "de": "In Montenegro zahlt man mit dem Euro, obwohl das Land nicht zur EU gehört. In Städten werden Karten meist akzeptiert, für kleine Cafés und Dörfer lohnt sich Bargeld."
+   }
+  },
+  {
+   "id": "ct-ME-24",
+   "category": "photography",
+   "text": {
+    "en": "It is polite to ask before photographing people, and inside monasteries and churches photography may be limited, so follow the signs.",
+    "it": "È educato chiedere prima di fotografare le persone, e dentro monasteri e chiese le foto possono essere limitate: segui i cartelli.",
+    "es": "Es de buena educación preguntar antes de fotografiar a personas, y dentro de monasterios e iglesias la fotografía puede estar limitada, así que sigue los carteles.",
+    "pt": "É educado pedir antes de fotografar pessoas, e dentro de mosteiros e igrejas a fotografia pode ser limitada, por isso siga a sinalização.",
+    "pt_BR": "É educado pedir antes de fotografar pessoas, e dentro de mosteiros e igrejas a fotografia pode ser limitada, então siga as placas.",
+    "fr": "Il est poli de demander avant de photographier des personnes, et la photographie peut être limitée dans les monastères et les églises : suivez les panneaux.",
+    "de": "Es ist höflich, vor Fotos von Menschen zu fragen, und in Klöstern und Kirchen kann Fotografieren eingeschränkt sein. Beachte die Hinweisschilder."
+   }
+  },
+  {
+   "id": "ct-ME-25",
+   "category": "nightlife",
+   "text": {
+    "en": "Coastal towns like Budva have lively summer nightlife with beach bars and open-air venues, while Kotor and Cetinje are calmer and more cultural.",
+    "it": "Le località costiere come Budva hanno una vivace vita notturna estiva con beach bar e locali all'aperto, mentre Kotor e Cetinje sono più tranquille e culturali.",
+    "es": "Las localidades costeras como Budva tienen una animada vida nocturna en verano con chiringuitos y locales al aire libre, mientras que Kotor y Cetinje son más tranquilas y culturales.",
+    "pt": "As localidades costeiras como Budva têm uma animada vida noturna no verão, com bares de praia e espaços ao ar livre, enquanto Kotor e Cetinje são mais calmas e culturais.",
+    "pt_BR": "Cidades litorâneas como Budva têm uma animada vida noturna no verão, com bares de praia e espaços ao ar livre, enquanto Kotor e Cetinje são mais calmas e culturais.",
+    "fr": "Les villes côtières comme Budva ont une vie nocturne estivale animée, avec bars de plage et lieux en plein air, tandis que Kotor et Cetinje sont plus calmes et culturelles.",
+    "de": "Küstenorte wie Budva haben im Sommer ein lebhaftes Nachtleben mit Strandbars und Open-Air-Lokalen, während Kotor und Cetinje ruhiger und kulturell geprägter sind."
+   }
+  },
+  {
+   "id": "ct-ME-26",
+   "category": "nature",
+   "text": {
+    "en": "The country offers mountains, canyons and lakes in a small area, including Durmitor National Park, the Tara River Canyon and Lake Skadar.",
+    "it": "Il paese offre montagne, canyon e laghi in poco spazio, tra cui il Parco Nazionale del Durmitor, il canyon del fiume Tara e il lago di Scutari.",
+    "es": "El país ofrece montañas, cañones y lagos en poco espacio, entre ellos el Parque Nacional de Durmitor, el cañón del río Tara y el lago Skadar.",
+    "pt": "O país oferece montanhas, desfiladeiros e lagos num espaço pequeno, incluindo o Parque Nacional de Durmitor, o desfiladeiro do rio Tara e o lago Escútari.",
+    "pt_BR": "O país oferece montanhas, cânions e lagos num espaço pequeno, incluindo o Parque Nacional de Durmitor, o cânion do rio Tara e o lago Skadar.",
+    "fr": "Le pays réunit montagnes, canyons et lacs sur un petit territoire, dont le parc national du Durmitor, le canyon de la Tara et le lac de Skadar.",
+    "de": "Auf kleinem Raum bietet das Land Berge, Schluchten und Seen, darunter den Durmitor-Nationalpark, die Tara-Schlucht und den Skutarisee."
+   }
+  },
+  {
+   "id": "ct-ME-27",
+   "category": "safety",
+   "text": {
+    "en": "The emergency number is 112. In the mountains the weather can change quickly, so check conditions and tell someone your hiking plan.",
+    "it": "Il numero di emergenza è 112. In montagna il tempo può cambiare in fretta: controlla le condizioni e comunica a qualcuno il tuo percorso.",
+    "es": "El número de emergencias es el 112. En la montaña el tiempo puede cambiar rápido, así que consulta las condiciones y avisa a alguien de tu ruta.",
+    "pt": "O número de emergência é o 112. Na montanha o tempo pode mudar depressa, por isso verifique as condições e diga a alguém qual é o seu percurso.",
+    "pt_BR": "O número de emergência é o 112. Na montanha o tempo pode mudar rápido, então confira as condições e avise alguém sobre o seu trajeto.",
+    "fr": "Le numéro d'urgence est le 112. En montagne, le temps peut changer vite : vérifiez les conditions et prévenez quelqu'un de votre itinéraire.",
+    "de": "Die Notrufnummer ist 112. In den Bergen kann das Wetter schnell umschlagen. Prüfe die Bedingungen und sag jemandem, welche Wanderroute du planst."
+   }
+  },
+  {
+   "id": "ct-ME-28",
+   "category": "local_pride",
+   "text": {
+    "en": "Many Montenegrins are proud of their history of independence in the mountains, and the epic songs accompanied by the one-string gusle keep that heritage alive.",
+    "it": "Molti montenegrini sono orgogliosi della loro storia di indipendenza tra le montagne, e i canti epici accompagnati dalla gusle a una corda ne mantengono viva l'eredità.",
+    "es": "Muchos montenegrinos están orgullosos de su historia de independencia en las montañas, y los cantos épicos acompañados de la gusle, de una sola cuerda, mantienen vivo ese legado.",
+    "pt": "Muitos montenegrinos orgulham-se da sua história de independência nas montanhas, e os cantos épicos acompanhados pela gusle, de uma só corda, mantêm vivo esse legado.",
+    "pt_BR": "Muitos montenegrinos se orgulham da sua história de independência nas montanhas, e os cantos épicos acompanhados pela gusle, de uma corda só, mantêm vivo esse legado.",
+    "fr": "Beaucoup de Monténégrins sont fiers de leur histoire d'indépendance dans les montagnes, et les chants épiques accompagnés de la gusle, à une seule corde, perpétuent cet héritage.",
+    "de": "Viele Montenegriner sind stolz auf ihre Geschichte der Unabhängigkeit in den Bergen, und die Heldenlieder mit der einsaitigen Gusle halten dieses Erbe lebendig."
+   }
+  },
+  {
+   "id": "ct-ME-29",
+   "category": "local_pride",
+   "text": {
+    "en": "The Bay of Kotor, with its Venetian-era old town and Cathedral of Saint Tryphon, is a source of great local pride and a UNESCO-listed area.",
+    "it": "La baia di Cattaro, con il suo centro storico di epoca veneziana e la Cattedrale di San Trifone, è motivo di grande orgoglio locale ed è un sito UNESCO.",
+    "es": "La bahía de Kotor, con su casco antiguo de época veneciana y la catedral de San Trifón, es motivo de gran orgullo local y un sitio Patrimonio de la UNESCO.",
+    "pt": "A baía de Kotor, com o seu centro histórico da época veneziana e a Catedral de São Trifão, é motivo de grande orgulho local e património da UNESCO.",
+    "pt_BR": "A baía de Kotor, com seu centro histórico da época veneziana e a Catedral de São Trifão, é motivo de grande orgulho local e patrimônio da UNESCO.",
+    "fr": "La baie de Kotor, avec sa vieille ville de l'époque vénitienne et la cathédrale Saint-Tryphon, est une grande fierté locale et un site classé à l'UNESCO.",
+    "de": "Die Bucht von Kotor mit ihrer Altstadt aus venezianischer Zeit und der Tryphonskathedrale ist ein großer Stolz der Einheimischen und UNESCO-Welterbe."
+   }
+  },
+  {
+   "id": "ct-ME-30",
+   "category": "festivals",
+   "text": {
+    "en": "Folk dances such as the kolo, called oro in Montenegro, are danced in a circle holding hands. If invited to join, it is a friendly gesture to try.",
+    "it": "Danze popolari come il kolo, chiamato oro in Montenegro, si ballano in cerchio tenendosi per mano. Se ti invitano a unirti, provare è un gesto cordiale.",
+    "es": "Los bailes populares como el kolo, llamado oro en Montenegro, se bailan en círculo cogidos de la mano. Si te invitan a unirte, probar es un gesto amable.",
+    "pt": "As danças populares como o kolo, chamado oro no Montenegro, dançam-se em roda de mãos dadas. Se o convidarem a juntar-se, experimentar é um gesto simpático.",
+    "pt_BR": "Danças folclóricas como o kolo, chamado oro em Montenegro, são dançadas em roda, de mãos dadas. Se você for convidado a entrar, tentar é um gesto simpático.",
+    "fr": "Les danses folkloriques comme le kolo, appelé oro au Monténégro, se dansent en cercle en se tenant par la main. Si on vous invite à vous joindre, essayer est un geste amical.",
+    "de": "Volkstänze wie der Kolo, in Montenegro Oro genannt, werden im Kreis an den Händen gehalten getanzt. Wenn man dich einlädt, mitzumachen, ist Ausprobieren eine freundliche Geste."
+   }
+  }
+ ],
+ "MK": [
+  {
+   "id": "ct-MK-01",
+   "category": "greetings",
+   "text": {
+    "en": "A handshake with eye contact is the usual greeting. Friends and relatives often hug or kiss on the cheek, and people may greet elders first.",
+    "it": "La stretta di mano con contatto visivo è il saluto abituale. Amici e parenti spesso si abbracciano o si baciano sulla guancia, e si tende a salutare prima gli anziani.",
+    "es": "El saludo habitual es un apretón de manos con contacto visual. Amigos y familiares suelen abrazarse o darse besos en la mejilla, y es normal saludar primero a los mayores.",
+    "pt": "O cumprimento habitual é um aperto de mão com contacto visual. Amigos e familiares abraçam-se ou dão beijos na face, e costuma cumprimentar-se primeiro os mais velhos.",
+    "pt_BR": "O cumprimento habitual é um aperto de mão com contato visual. Amigos e parentes costumam se abraçar ou dar beijos no rosto, e é comum cumprimentar primeiro os mais velhos.",
+    "fr": "La salutation habituelle est une poignée de main avec un regard franc. Amis et proches s'embrassent ou se font la bise, et l'on salue souvent les aînés en premier.",
+    "de": "Üblich ist ein Händedruck mit Blickkontakt. Freunde und Verwandte umarmen sich oder geben sich Wangenküsse, und oft werden zuerst die Älteren begrüßt."
+   }
+  },
+  {
+   "id": "ct-MK-02",
+   "category": "greetings",
+   "text": {
+    "en": "Saying Zdravo (hello) or Dobar den (good day) and Blagodaram (thank you) in Macedonian is always welcomed with a smile.",
+    "it": "Dire Zdravo (ciao) o Dobar den (buongiorno) e Blagodaram (grazie) in macedone viene sempre accolto con un sorriso.",
+    "es": "Decir Zdravo (hola) o Dobar den (buen día) y Blagodaram (gracias) en macedonio siempre se recibe con una sonrisa.",
+    "pt": "Dizer Zdravo (olá) ou Dobar den (bom dia) e Blagodaram (obrigado) em macedónio é sempre recebido com um sorriso.",
+    "pt_BR": "Dizer Zdravo (oi) ou Dobar den (bom dia) e Blagodaram (obrigado) em macedônio é sempre recebido com um sorriso.",
+    "fr": "Dire Zdravo (salut) ou Dobar den (bonjour) et Blagodaram (merci) en macédonien est toujours accueilli avec un sourire.",
+    "de": "Zdravo (hallo) oder Dobar den (guten Tag) und Blagodaram (danke) auf Mazedonisch zu sagen, wird immer mit einem Lächeln aufgenommen."
+   }
+  },
+  {
+   "id": "ct-MK-03",
+   "category": "conversation",
+   "text": {
+    "en": "Many people are happy to chat about food, music, nature and their hometown. Showing curiosity about local traditions makes a warm impression.",
+    "it": "Molte persone parlano volentieri di cibo, musica, natura e della propria città. Mostrare curiosità per le tradizioni locali lascia un'impressione calorosa.",
+    "es": "Mucha gente habla con gusto de comida, música, naturaleza y su ciudad. Mostrar curiosidad por las tradiciones locales causa una impresión cálida.",
+    "pt": "Muita gente gosta de conversar sobre comida, música, natureza e a sua terra. Mostrar curiosidade pelas tradições locais deixa uma boa impressão.",
+    "pt_BR": "Muita gente gosta de conversar sobre comida, música, natureza e sua cidade. Mostrar curiosidade pelas tradições locais causa uma ótima impressão.",
+    "fr": "Beaucoup de gens parlent volontiers de cuisine, de musique, de nature et de leur ville. Montrer de la curiosité pour les traditions locales fait bonne impression.",
+    "de": "Viele sprechen gern über Essen, Musik, Natur und ihre Heimatstadt. Neugier auf lokale Traditionen hinterlässt einen herzlichen Eindruck."
+   }
+  },
+  {
+   "id": "ct-MK-04",
+   "category": "conversation",
+   "text": {
+    "en": "North Macedonia is home to Macedonian, Albanian, Turkish and other communities. Being curious and respectful about this diversity is appreciated.",
+    "it": "La Macedonia del Nord ospita comunità macedoni, albanesi, turche e di altri gruppi. Mostrarsi curiosi e rispettosi verso questa diversità è apprezzato.",
+    "es": "Macedonia del Norte alberga comunidades macedonias, albanesas, turcas y de otros grupos. Se aprecia mostrar curiosidad y respeto por esta diversidad.",
+    "pt": "A Macedónia do Norte é lar de comunidades macedónias, albanesas, turcas e de outros grupos. Mostrar curiosidade e respeito por esta diversidade é apreciado.",
+    "pt_BR": "A Macedônia do Norte abriga comunidades macedônias, albanesas, turcas e de outros grupos. Mostrar curiosidade e respeito por essa diversidade é apreciado.",
+    "fr": "La Macédoine du Nord abrite des communautés macédonienne, albanaise, turque et d'autres groupes. Se montrer curieux et respectueux envers cette diversité est apprécié.",
+    "de": "In Nordmazedonien leben mazedonische, albanische, türkische und andere Gemeinschaften. Neugier und Respekt gegenüber dieser Vielfalt kommen gut an."
+   }
+  },
+  {
+   "id": "ct-MK-05",
+   "category": "dining",
+   "text": {
+    "en": "Hosts like to feed guests generously, and it is polite to try a bit of everything. Declining a second helping may be met with friendly insistence.",
+    "it": "Chi ospita ama far mangiare gli ospiti in abbondanza, ed è cortese assaggiare un po' di tutto. Rifiutare il bis può incontrare una cordiale insistenza.",
+    "es": "A los anfitriones les gusta alimentar generosamente a los invitados y es cortés probar un poco de todo. Rechazar repetir puede encontrarse con una insistencia amistosa.",
+    "pt": "Os anfitriões gostam de fazer comer os convidados em abundância, e é educado provar um pouco de tudo. Recusar repetir pode ser recebido com uma insistência amigável.",
+    "pt_BR": "Os anfitriões gostam de alimentar bem os convidados, e é educado provar um pouco de tudo. Recusar repetir pode encontrar uma insistência simpática.",
+    "fr": "Les hôtes aiment bien nourrir leurs invités et il est poli de goûter un peu de tout. Refuser un second service peut se heurter à une insistance amicale.",
+    "de": "Gastgeber füttern ihre Gäste gern reichlich, und es ist höflich, von allem etwas zu probieren. Wer Nachschlag ablehnt, stößt oft auf freundliches Drängen."
+   }
+  },
+  {
+   "id": "ct-MK-06",
+   "category": "dining",
+   "text": {
+    "en": "Try tavče gravče (baked beans), ajvar (roasted pepper spread), shopska salad and burek. Many cafes serve strong coffee in the Turkish style.",
+    "it": "Assaggia il tavče gravče (fagioli al forno), l'ajvar (crema di peperoni arrostiti), l'insalata shopska e il burek. Molti caffè servono caffè forte alla turca.",
+    "es": "Prueba el tavče gravče (alubias al horno), el ajvar (crema de pimientos asados), la ensalada shopska y el burek. Muchos cafés sirven café fuerte al estilo turco.",
+    "pt": "Experimente o tavče gravče (feijão no forno), o ajvar (creme de pimento assado), a salada shopska e o burek. Muitos cafés servem café forte à moda turca.",
+    "pt_BR": "Experimente o tavče gravče (feijão assado), o ajvar (pasta de pimentão assado), a salada shopska e o burek. Muitos cafés servem café forte ao estilo turco.",
+    "fr": "Goûtez le tavče gravče (haricots au four), l'ajvar (purée de poivrons grillés), la salade shopska et le burek. Beaucoup de cafés servent un café fort à la turque.",
+    "de": "Probiere Tavče Gravče (Ofenbohnen), Ajvar (Paprikamus), Schopska-Salat und Burek. Viele Cafés servieren starken Kaffee nach türkischer Art."
+   }
+  },
+  {
+   "id": "ct-MK-07",
+   "category": "tipping",
+   "text": {
+    "en": "Leaving around 10 percent in restaurants or rounding up the bill is customary for good service. For taxis, rounding up is enough.",
+    "it": "Lasciare circa il 10 per cento nei ristoranti o arrotondare il conto è usuale per un buon servizio. Per i taxi basta arrotondare.",
+    "es": "Dejar alrededor del 10 por ciento en los restaurantes o redondear la cuenta es habitual si el servicio es bueno. En los taxis basta con redondear.",
+    "pt": "Deixar cerca de 10 por cento nos restaurantes ou arredondar a conta é habitual quando o serviço é bom. Nos táxis basta arredondar.",
+    "pt_BR": "Deixar cerca de 10 por cento nos restaurantes ou arredondar a conta é comum quando o atendimento é bom. Nos táxis, basta arredondar.",
+    "fr": "Laisser environ 10 pour cent au restaurant ou arrondir l'addition est d'usage pour un bon service. En taxi, arrondir suffit.",
+    "de": "In Restaurants sind etwa 10 Prozent Trinkgeld oder aufgerundete Beträge bei gutem Service üblich. Beim Taxi reicht Aufrunden."
+   }
+  },
+  {
+   "id": "ct-MK-08",
+   "category": "gifts",
+   "text": {
+    "en": "If invited to a home, bring a small gift such as sweets, coffee, flowers or a local treat. It is also common to bring something for any children.",
+    "it": "Se sei invitato a casa di qualcuno, porta un piccolo regalo come dolci, caffè, fiori o una specialità locale. È comune portare qualcosa anche per i bambini.",
+    "es": "Si te invitan a una casa, lleva un detalle como dulces, café, flores o algo típico. También es habitual llevar algo para los niños.",
+    "pt": "Se for convidado para casa de alguém, leve uma pequena lembrança, como doces, café, flores ou uma especialidade local. É também comum levar algo para as crianças.",
+    "pt_BR": "Se você for convidado para a casa de alguém, leve uma lembrança, como doces, café, flores ou uma especialidade local. Também é comum levar algo para as crianças.",
+    "fr": "Si vous êtes invité chez quelqu'un, apportez un petit cadeau comme des douceurs, du café, des fleurs ou une spécialité locale. Il est aussi courant d'apporter quelque chose pour les enfants.",
+    "de": "Bei einer Einladung nach Hause bringt man ein kleines Geschenk mit, etwa Süßigkeiten, Kaffee, Blumen oder eine regionale Spezialität. Für Kinder etwas mitzubringen ist ebenfalls üblich."
+   }
+  },
+  {
+   "id": "ct-MK-09",
+   "category": "dress",
+   "text": {
+    "en": "People dress smart-casual in cities, and many like to look put together when going out. At beaches and lakes, casual summer clothing is fine.",
+    "it": "Nelle città ci si veste in modo smart casual, e molti ci tengono a essere curati quando escono. Su spiagge e laghi vanno bene abiti estivi informali.",
+    "es": "En las ciudades se viste de forma smart casual y a muchos les gusta ir arreglados al salir. En playas y lagos, la ropa informal de verano está bien.",
+    "pt": "Nas cidades veste-se de forma smart casual, e muita gente gosta de se apresentar bem quando sai. Nas praias e lagos, roupa informal de verão é adequada.",
+    "pt_BR": "Nas cidades as pessoas se vestem de forma casual elegante, e muitos gostam de sair bem arrumados. Em praias e lagos, roupa de verão informal é adequada.",
+    "fr": "En ville, la tenue est plutôt décontractée chic, et beaucoup aiment être soignés pour sortir. Sur les plages et au bord des lacs, une tenue d'été décontractée convient.",
+    "de": "In Städten kleidet man sich leger-elegant, und viele legen Wert auf ein gepflegtes Auftreten beim Ausgehen. An Stränden und Seen ist lockere Sommerkleidung in Ordnung."
+   }
+  },
+  {
+   "id": "ct-MK-10",
+   "category": "religion_sites",
+   "text": {
+    "en": "In mosques, remove your shoes and dress modestly, and women are usually asked to cover their hair. In Orthodox churches, cover shoulders and knees.",
+    "it": "Nelle moschee ci si toglie le scarpe e ci si veste con modestia, e alle donne di solito si chiede di coprire i capelli. Nelle chiese ortodosse si coprono spalle e ginocchia.",
+    "es": "En las mezquitas hay que quitarse los zapatos y vestir con recato, y a las mujeres suelen pedirles cubrirse el cabello. En las iglesias ortodoxas se cubren hombros y rodillas.",
+    "pt": "Nas mesquitas descalçam-se os sapatos e veste-se de forma recatada, e às mulheres costuma pedir-se que cubram o cabelo. Nas igrejas ortodoxas cobrem-se os ombros e os joelhos.",
+    "pt_BR": "Nas mesquitas tiram-se os sapatos e veste-se de forma recatada, e as mulheres costumam ser convidadas a cobrir o cabelo. Nas igrejas ortodoxas, cobrem-se ombros e joelhos.",
+    "fr": "Dans les mosquées, on se déchausse et on s'habille modestement, et l'on demande généralement aux femmes de couvrir leurs cheveux. Dans les églises orthodoxes, on couvre épaules et genoux.",
+    "de": "In Moscheen zieht man die Schuhe aus und kleidet sich bescheiden, Frauen werden meist gebeten, das Haar zu bedecken. In orthodoxen Kirchen bedeckt man Schultern und Knie."
+   }
+  },
+  {
+   "id": "ct-MK-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Ohrid has more than thirty churches, including Saint Sophia and Saint Jovan at Kaneo. Inside, be quiet and check whether photography is allowed.",
+    "it": "Ohrid ha più di trenta chiese, tra cui Santa Sofia e San Giovanni a Kaneo. All'interno mantieni il silenzio e verifica se si può fotografare.",
+    "es": "Ohrid tiene más de treinta iglesias, entre ellas Santa Sofía y San Juan de Kaneo. Dentro, guarda silencio y comprueba si se permite fotografiar.",
+    "pt": "Ohrid tem mais de trinta igrejas, incluindo Santa Sofia e São João de Kaneo. No interior, fique em silêncio e verifique se é permitido fotografar.",
+    "pt_BR": "Ohrid tem mais de trinta igrejas, incluindo Santa Sofia e São João de Kaneo. No interior, fique em silêncio e confira se é permitido fotografar.",
+    "fr": "Ohrid compte plus de trente églises, dont Sainte-Sophie et Saint-Jean de Kaneo. À l'intérieur, restez silencieux et vérifiez si la photo est autorisée.",
+    "de": "Ohrid hat mehr als dreißig Kirchen, darunter Sophienkirche und St. Johannes in Kaneo. Drinnen bleibt man leise und prüft, ob Fotografieren erlaubt ist."
+   }
+  },
+  {
+   "id": "ct-MK-12",
+   "category": "gestures",
+   "text": {
+    "en": "When toasting, say Nazdravje (cheers) and look the other person in the eye. Many people also like to clink glasses with everyone at the table.",
+    "it": "Quando si brinda si dice Nazdravje (salute) e si guarda l'altra persona negli occhi. A molti piace anche brindare con tutti al tavolo.",
+    "es": "Al brindar se dice Nazdravje (salud) y se mira a los ojos a la otra persona. A muchos también les gusta chocar copas con todos en la mesa.",
+    "pt": "Ao brindar diz-se Nazdravje (saúde) e olha-se a outra pessoa nos olhos. Muita gente gosta também de brindar com todos à mesa.",
+    "pt_BR": "Ao brindar, diz-se Nazdravje (saúde) e olha-se a outra pessoa nos olhos. Muita gente também gosta de brindar com todos à mesa.",
+    "fr": "Quand on trinque, on dit Nazdravje (santé) en regardant l'autre dans les yeux. Beaucoup aiment aussi trinquer avec tous les convives.",
+    "de": "Beim Anstoßen sagt man Nazdravje (Prost) und schaut der anderen Person in die Augen. Viele stoßen gern mit allen am Tisch an."
+   }
+  },
+  {
+   "id": "ct-MK-13",
+   "category": "punctuality",
+   "text": {
+    "en": "Casual meetups can run a little late and are usually taken in stride, but arrive on time for business meetings, buses and guided tours.",
+    "it": "Gli incontri informali possono slittare un po' e di solito si prendono con serenità, ma sii puntuale per riunioni di lavoro, autobus e visite guidate.",
+    "es": "Las quedadas informales pueden retrasarse un poco y se suelen tomar con calma, pero llega a tiempo a reuniones de trabajo, autobuses y visitas guiadas.",
+    "pt": "Os encontros informais podem atrasar-se um pouco e costumam ser encarados com calma, mas seja pontual em reuniões de trabalho, autocarros e visitas guiadas.",
+    "pt_BR": "Encontros informais podem atrasar um pouco e costumam ser encarados com tranquilidade, mas seja pontual em reuniões de trabalho, ônibus e visitas guiadas.",
+    "fr": "Les rendez-vous informels peuvent glisser un peu et sont généralement pris avec calme, mais soyez à l'heure pour les réunions de travail, les bus et les visites guidées.",
+    "de": "Lockere Treffen können sich etwas verspäten und werden meist gelassen genommen, aber zu Geschäftsterminen, Bussen und Führungen sollte man pünktlich sein."
+   }
+  },
+  {
+   "id": "ct-MK-14",
+   "category": "public_behavior",
+   "text": {
+    "en": "Giving up your seat to older people, pregnant women and parents with small children on public transport is the polite thing to do.",
+    "it": "Cedere il posto ad anziani, donne in gravidanza e genitori con bambini piccoli sui mezzi pubblici è un gesto di buona educazione.",
+    "es": "Ceder el asiento a personas mayores, embarazadas y padres con niños pequeños en el transporte público es lo educado.",
+    "pt": "Ceder o lugar a idosos, grávidas e pais com crianças pequenas nos transportes públicos é uma questão de boa educação.",
+    "pt_BR": "Ceder o lugar a idosos, grávidas e pais com crianças pequenas no transporte público é uma questão de boa educação.",
+    "fr": "Céder sa place aux personnes âgées, aux femmes enceintes et aux parents avec de jeunes enfants dans les transports en commun est une marque de politesse.",
+    "de": "In öffentlichen Verkehrsmitteln den Sitzplatz für Ältere, Schwangere und Eltern mit kleinen Kindern anzubieten, gehört zum guten Ton."
+   }
+  },
+  {
+   "id": "ct-MK-15",
+   "category": "transport",
+   "text": {
+    "en": "Skopje, Ohrid and other cities are linked mainly by buses and minibuses. In taxis, ask for the meter or agree on a price first.",
+    "it": "Skopje, Ohrid e altre città sono collegate soprattutto da autobus e minibus. Sui taxi chiedi il tassametro o concorda prima il prezzo.",
+    "es": "Skopie, Ohrid y otras ciudades están conectadas sobre todo por autobuses y microbuses. En los taxis, pide el taxímetro o acuerda antes el precio.",
+    "pt": "Escópia, Ohrid e outras cidades estão ligadas sobretudo por autocarros e miniautocarros. Nos táxis, peça o taxímetro ou combine antes o preço.",
+    "pt_BR": "Skopje, Ohrid e outras cidades são ligadas principalmente por ônibus e micro-ônibus. Nos táxis, peça o taxímetro ou combine o preço antes.",
+    "fr": "Skopje, Ohrid et d'autres villes sont reliées surtout par des bus et des minibus. En taxi, demandez le compteur ou convenez du prix avant.",
+    "de": "Skopje, Ohrid und andere Städte sind vor allem durch Busse und Minibusse verbunden. Beim Taxi bittet man um das Taxameter oder vereinbart vorher den Preis."
+   }
+  },
+  {
+   "id": "ct-MK-16",
+   "category": "language",
+   "text": {
+    "en": "The official language is Macedonian, written in Cyrillic. Albanian is widely spoken too, especially in the west, and many young people speak English.",
+    "it": "La lingua ufficiale è il macedone, scritto in cirillico. Si parla molto anche l'albanese, soprattutto a ovest, e molti giovani parlano inglese.",
+    "es": "El idioma oficial es el macedonio, escrito en cirílico. También se habla mucho albanés, sobre todo en el oeste, y muchos jóvenes hablan inglés.",
+    "pt": "A língua oficial é o macedónio, escrito em cirílico. O albanês também é muito falado, sobretudo no oeste, e muitos jovens falam inglês.",
+    "pt_BR": "A língua oficial é o macedônio, escrito em cirílico. O albanês também é muito falado, principalmente no oeste, e muitos jovens falam inglês.",
+    "fr": "La langue officielle est le macédonien, écrit en cyrillique. L'albanais est aussi très parlé, surtout à l'ouest, et beaucoup de jeunes parlent anglais.",
+    "de": "Amtssprache ist Mazedonisch in kyrillischer Schrift. Auch Albanisch wird viel gesprochen, vor allem im Westen, und viele Junge sprechen Englisch."
+   }
+  },
+  {
+   "id": "ct-MK-17",
+   "category": "language",
+   "text": {
+    "en": "Street signs often use Cyrillic, so learning to read the letters helps with maps and menus. Many tourist places also show Latin letters.",
+    "it": "I cartelli stradali usano spesso il cirillico, quindi imparare le lettere aiuta con mappe e menu. Molti luoghi turistici mostrano anche l'alfabeto latino.",
+    "es": "Los carteles suelen usar cirílico, así que aprender las letras ayuda con mapas y menús. Muchos lugares turísticos también muestran letras latinas.",
+    "pt": "As placas de rua usam muitas vezes o cirílico, por isso aprender as letras ajuda com mapas e ementas. Muitos locais turísticos mostram também o alfabeto latino.",
+    "pt_BR": "As placas de rua costumam usar o cirílico, então aprender as letras ajuda com mapas e cardápios. Muitos locais turísticos também exibem o alfabeto latino.",
+    "fr": "Les panneaux utilisent souvent le cyrillique, donc apprendre les lettres aide pour les cartes et les menus. De nombreux lieux touristiques affichent aussi l'alphabet latin.",
+    "de": "Straßenschilder nutzen oft kyrillische Schrift, daher helfen Buchstabenkenntnisse bei Karten und Speisekarten. Viele touristische Orte zeigen auch lateinische Buchstaben."
+   }
+  },
+  {
+   "id": "ct-MK-18",
+   "category": "festivals",
+   "text": {
+    "en": "Ilinden, on 2 August, is a major national holiday with ceremonies and gatherings. Expect closed offices and commemorative events.",
+    "it": "Ilinden, il 2 agosto, è una grande festa nazionale con cerimonie e raduni. Aspettati uffici chiusi ed eventi commemorativi.",
+    "es": "Ilinden, el 2 de agosto, es una gran fiesta nacional con ceremonias y reuniones. Habrá oficinas cerradas y actos conmemorativos.",
+    "pt": "O Ilinden, a 2 de agosto, é um grande feriado nacional com cerimónias e encontros. Espere repartições fechadas e eventos comemorativos.",
+    "pt_BR": "O Ilinden, em 2 de agosto, é um grande feriado nacional com cerimônias e encontros. Espere repartições fechadas e eventos comemorativos.",
+    "fr": "Ilinden, le 2 août, est une grande fête nationale avec cérémonies et rassemblements. Attendez-vous à des bureaux fermés et à des commémorations.",
+    "de": "Ilinden am 2. August ist ein großer Nationalfeiertag mit Zeremonien und Zusammenkünften. Ämter sind geschlossen, es gibt Gedenkveranstaltungen."
+   }
+  },
+  {
+   "id": "ct-MK-19",
+   "category": "festivals",
+   "text": {
+    "en": "Orthodox Christmas on 7 January and Orthodox Easter are celebrated with family meals, while Muslim communities mark Eid holidays. Greeting people on these days is kind.",
+    "it": "Il Natale ortodosso del 7 gennaio e la Pasqua ortodossa si celebrano con pasti in famiglia, mentre le comunità musulmane festeggiano l'Eid. Fare gli auguri in quei giorni è un bel gesto.",
+    "es": "La Navidad ortodoxa del 7 de enero y la Pascua ortodoxa se celebran con comidas familiares, mientras las comunidades musulmanas celebran el Eid. Felicitar en esos días es un bonito gesto.",
+    "pt": "O Natal ortodoxo de 7 de janeiro e a Páscoa ortodoxa celebram-se com refeições em família, enquanto as comunidades muçulmanas assinalam o Eid. Desejar felicidades nesses dias é um gesto simpático.",
+    "pt_BR": "O Natal ortodoxo de 7 de janeiro e a Páscoa ortodoxa são celebrados com refeições em família, enquanto as comunidades muçulmanas celebram o Eid. Desejar felicidades nesses dias é um gesto simpático.",
+    "fr": "Noël orthodoxe, le 7 janvier, et Pâques orthodoxe se célèbrent en famille autour d'un repas, tandis que les communautés musulmanes fêtent l'Aïd. Souhaiter de bonnes fêtes ces jours-là est un geste aimable.",
+    "de": "Das orthodoxe Weihnachtsfest am 7. Januar und Ostern werden mit Familienessen gefeiert, während muslimische Gemeinschaften die Eid-Feste begehen. An diesen Tagen Glückwünsche auszusprechen, ist eine nette Geste."
+   }
+  },
+  {
+   "id": "ct-MK-20",
+   "category": "festivals",
+   "text": {
+    "en": "Summer brings cultural events in Ohrid and Struga, such as the Ohrid Summer Festival and the Struga Poetry Evenings. Book lodging early for August.",
+    "it": "L'estate porta eventi culturali a Ohrid e Struga, come l'Ohrid Summer Festival e le Serate di poesia di Struga. Prenota l'alloggio per tempo per agosto.",
+    "es": "El verano trae eventos culturales a Ohrid y Struga, como el Ohrid Summer Festival y las Veladas de Poesía de Struga. Reserva alojamiento con antelación para agosto.",
+    "pt": "O verão traz eventos culturais a Ohrid e Struga, como o Ohrid Summer Festival e as Noites de Poesia de Struga. Reserve o alojamento com antecedência para agosto.",
+    "pt_BR": "O verão traz eventos culturais a Ohrid e Struga, como o Ohrid Summer Festival e as Noites de Poesia de Struga. Reserve a hospedagem com antecedência para agosto.",
+    "fr": "L'été apporte des événements culturels à Ohrid et Struga, comme l'Ohrid Summer Festival et les Soirées poétiques de Struga. Réservez tôt votre hébergement pour août.",
+    "de": "Im Sommer gibt es in Ohrid und Struga Kulturveranstaltungen wie das Ohrid Summer Festival und die Strugaer Dichterabende. Für August früh eine Unterkunft buchen."
+   }
+  },
+  {
+   "id": "ct-MK-21",
+   "category": "family",
+   "text": {
+    "en": "Family ties are close, and several generations often live nearby or together. Relatives gather often for meals and celebrations.",
+    "it": "I legami familiari sono stretti e spesso più generazioni vivono vicine o insieme. I parenti si riuniscono spesso per pasti e celebrazioni.",
+    "es": "Los lazos familiares son estrechos y a menudo varias generaciones viven cerca o juntas. Los parientes se reúnen con frecuencia para comidas y celebraciones.",
+    "pt": "Os laços familiares são estreitos e muitas vezes várias gerações vivem perto ou juntas. Os familiares reúnem-se com frequência para refeições e celebrações.",
+    "pt_BR": "Os laços familiares são estreitos e muitas vezes várias gerações moram perto ou juntas. Os parentes se reúnem com frequência para refeições e comemorações.",
+    "fr": "Les liens familiaux sont étroits, et plusieurs générations vivent souvent à proximité ou ensemble. Les proches se retrouvent souvent pour des repas et des fêtes.",
+    "de": "Die Familienbande sind eng, und oft leben mehrere Generationen nah beieinander oder zusammen. Verwandte treffen sich häufig zu Essen und Feiern."
+   }
+  },
+  {
+   "id": "ct-MK-22",
+   "category": "money",
+   "text": {
+    "en": "The currency is the Macedonian denar. Cards are accepted in most cities, but keep some cash for markets, small cafes and rural areas.",
+    "it": "La valuta è il denaro macedone. Le carte sono accettate nella maggior parte delle città, ma tieni dei contanti per mercati, piccoli bar e zone rurali.",
+    "es": "La moneda es el denar macedonio. Las tarjetas se aceptan en la mayoría de las ciudades, pero ten algo de efectivo para mercados, cafeterías pequeñas y zonas rurales.",
+    "pt": "A moeda é o dinar macedónio. Os cartões são aceites na maioria das cidades, mas leve algum dinheiro para mercados, cafés pequenos e zonas rurais.",
+    "pt_BR": "A moeda é o denar macedônio. Cartões são aceitos na maioria das cidades, mas leve algum dinheiro para mercados, cafés pequenos e áreas rurais.",
+    "fr": "La monnaie est le denar macédonien. Les cartes sont acceptées dans la plupart des villes, mais gardez des espèces pour les marchés, les petits cafés et les zones rurales.",
+    "de": "Die Währung ist der mazedonische Denar. In den meisten Städten werden Karten akzeptiert, aber für Märkte, kleine Cafés und ländliche Gegenden braucht man Bargeld."
+   }
+  },
+  {
+   "id": "ct-MK-23",
+   "category": "photography",
+   "text": {
+    "en": "Landscapes, old towns and street scenes are great photo subjects, but ask permission before taking close-ups of people.",
+    "it": "Paesaggi, centri storici e scene di strada sono ottimi soggetti, ma chiedi il permesso prima di fare primi piani alle persone.",
+    "es": "Los paisajes, los cascos antiguos y las escenas callejeras son buenos motivos, pero pide permiso antes de hacer primeros planos de personas.",
+    "pt": "Paisagens, centros históricos e cenas de rua são ótimos motivos, mas peça licença antes de fotografar pessoas de perto.",
+    "pt_BR": "Paisagens, centros históricos e cenas de rua são ótimos temas, mas peça permissão antes de fazer closes de pessoas.",
+    "fr": "Les paysages, vieux quartiers et scènes de rue font de beaux sujets, mais demandez la permission avant de photographier des personnes de près.",
+    "de": "Landschaften, Altstädte und Straßenszenen sind schöne Motive, aber vor Nahaufnahmen von Menschen sollte man um Erlaubnis bitten."
+   }
+  },
+  {
+   "id": "ct-MK-24",
+   "category": "nightlife",
+   "text": {
+    "en": "Evenings are social: people gather in cafes and restaurants, and in summer Ohrid has lively lakeside bars. Skopje has a busy scene in the city centre.",
+    "it": "Le serate sono sociali: ci si ritrova in caffè e ristoranti, e d'estate Ohrid ha vivaci locali sul lago. Skopje ha una scena animata in centro.",
+    "es": "Las noches son sociales: la gente se reúne en cafés y restaurantes, y en verano Ohrid tiene animados bares junto al lago. Skopie tiene una escena activa en el centro.",
+    "pt": "As noites são sociais: as pessoas encontram-se em cafés e restaurantes, e no verão Ohrid tem animados bares junto ao lago. Escópia tem uma cena movimentada no centro.",
+    "pt_BR": "As noites são sociais: as pessoas se reúnem em cafés e restaurantes, e no verão Ohrid tem animados bares à beira do lago. Skopje tem uma cena movimentada no centro.",
+    "fr": "Les soirées sont sociales : on se retrouve dans les cafés et restaurants, et en été Ohrid a des bars animés au bord du lac. Skopje a une scène active dans le centre.",
+    "de": "Die Abende sind gesellig: Man trifft sich in Cafés und Restaurants, und im Sommer hat Ohrid lebhafte Bars am See. Skopje hat ein reges Treiben im Zentrum."
+   }
+  },
+  {
+   "id": "ct-MK-25",
+   "category": "nature",
+   "text": {
+    "en": "Lake Ohrid, Matka Canyon near Skopje and the Mavrovo and Pelister national parks are loved for hiking, boating and quiet nature escapes.",
+    "it": "Il lago di Ohrid, il canyon Matka vicino a Skopje e i parchi nazionali di Mavrovo e Pelister sono amati per escursioni, gite in barca e fughe nella natura.",
+    "es": "El lago Ohrid, el cañón de Matka cerca de Skopie y los parques nacionales de Mavrovo y Pelister son muy queridos para el senderismo, los paseos en barca y la naturaleza tranquila.",
+    "pt": "O lago Ohrid, o desfiladeiro de Matka perto de Escópia e os parques nacionais de Mavrovo e Pelister são muito apreciados para caminhadas, passeios de barco e escapadas à natureza.",
+    "pt_BR": "O lago Ohrid, o cânion de Matka perto de Skopje e os parques nacionais de Mavrovo e Pelister são muito queridos para trilhas, passeios de barco e escapadas na natureza.",
+    "fr": "Le lac d'Ohrid, le canyon de Matka près de Skopje et les parcs nationaux de Mavrovo et de Pelister sont appréciés pour la randonnée, les balades en bateau et les escapades nature.",
+    "de": "Der Ohridsee, die Matka-Schlucht bei Skopje sowie die Nationalparks Mavrovo und Pelister sind beliebt zum Wandern, Bootfahren und für ruhige Naturausflüge."
+   }
+  },
+  {
+   "id": "ct-MK-26",
+   "category": "safety",
+   "text": {
+    "en": "The general emergency number is 112. Take usual precautions in crowded areas, and keep copies of your documents separate from the originals.",
+    "it": "Il numero di emergenza generale è 112. Prendi le consuete precauzioni nei luoghi affollati e tieni copie dei documenti separate dagli originali.",
+    "es": "El número general de emergencias es el 112. Toma las precauciones habituales en zonas concurridas y guarda copias de tus documentos separadas de los originales.",
+    "pt": "O número geral de emergência é o 112. Tome as precauções habituais em locais movimentados e guarde cópias dos documentos separadas dos originais.",
+    "pt_BR": "O número geral de emergência é o 112. Tome as precauções habituais em locais cheios e guarde cópias dos documentos separadas dos originais.",
+    "fr": "Le numéro d'urgence général est le 112. Prenez les précautions habituelles dans les lieux fréquentés et gardez des copies de vos documents séparées des originaux.",
+    "de": "Die allgemeine Notrufnummer ist 112. In belebten Gegenden gelten die üblichen Vorsichtsmaßnahmen, und Kopien der Dokumente bewahrt man getrennt von den Originalen auf."
+   }
+  },
+  {
+   "id": "ct-MK-27",
+   "category": "local_pride",
+   "text": {
+    "en": "Many people take pride in Ohrid, a UNESCO-listed city and lake, known for its churches, old town and the legacy of Saint Clement.",
+    "it": "Molti sono orgogliosi di Ohrid, città e lago patrimonio UNESCO, nota per le sue chiese, il centro storico e l'eredità di San Clemente.",
+    "es": "Mucha gente está orgullosa de Ohrid, ciudad y lago Patrimonio de la UNESCO, conocida por sus iglesias, su casco antiguo y el legado de San Clemente.",
+    "pt": "Muita gente se orgulha de Ohrid, cidade e lago classificados pela UNESCO, conhecida pelas igrejas, pelo centro histórico e pelo legado de São Clemente.",
+    "pt_BR": "Muita gente se orgulha de Ohrid, cidade e lago tombados pela UNESCO, conhecida pelas igrejas, pelo centro histórico e pelo legado de São Clemente.",
+    "fr": "Beaucoup sont fiers d'Ohrid, ville et lac classés à l'UNESCO, connue pour ses églises, sa vieille ville et l'héritage de saint Clément.",
+    "de": "Viele sind stolz auf Ohrid, die UNESCO-geschützte Stadt mit See, bekannt für Kirchen, Altstadt und das Erbe des heiligen Klemens."
+   }
+  },
+  {
+   "id": "ct-MK-28",
+   "category": "local_pride",
+   "text": {
+    "en": "Mother Teresa was born in Skopje, and a memorial house in the city honors her. Many locals are happy to point visitors there.",
+    "it": "Madre Teresa è nata a Skopje, e in città una casa memoriale la ricorda. Molti abitanti indicano volentieri il luogo ai visitatori.",
+    "es": "La Madre Teresa nació en Skopie, y una casa memorial en la ciudad le rinde homenaje. Muchos vecinos indican con gusto el lugar a los visitantes.",
+    "pt": "Madre Teresa nasceu em Escópia, e uma casa memorial na cidade presta-lhe homenagem. Muitos habitantes indicam com gosto o local aos visitantes.",
+    "pt_BR": "Madre Teresa nasceu em Skopje, e uma casa memorial na cidade presta homenagem a ela. Muitos moradores indicam o local com prazer aos visitantes.",
+    "fr": "Mère Teresa est née à Skopje, et une maison-mémorial lui rend hommage dans la ville. Beaucoup d'habitants indiquent volontiers l'endroit aux visiteurs.",
+    "de": "Mutter Teresa wurde in Skopje geboren, und ein Gedenkhaus in der Stadt ehrt sie. Viele Einheimische zeigen Besuchern gern den Weg dorthin."
+   }
+  },
+  {
+   "id": "ct-MK-29",
+   "category": "local_pride",
+   "text": {
+    "en": "The Manaki brothers made what is considered the first film in the region in 1895 in Bitola, and film is a point of pride in Macedonian culture.",
+    "it": "I fratelli Manaki girarono a Bitola, nel 1895, quello che è considerato il primo film della regione, e il cinema è un motivo di orgoglio nella cultura macedone.",
+    "es": "Los hermanos Manaki rodaron en Bitola, en 1895, lo que se considera la primera película de la región, y el cine es motivo de orgullo en la cultura macedonia.",
+    "pt": "Os irmãos Manaki realizaram em Bitola, em 1895, aquele que é considerado o primeiro filme da região, e o cinema é motivo de orgulho na cultura macedónia.",
+    "pt_BR": "Os irmãos Manaki fizeram em Bitola, em 1895, o que é considerado o primeiro filme da região, e o cinema é motivo de orgulho na cultura macedônia.",
+    "fr": "Les frères Manaki ont réalisé à Bitola, en 1895, ce qui est considéré comme le premier film de la région, et le cinéma est une fierté de la culture macédonienne.",
+    "de": "Die Brüder Manaki drehten 1895 in Bitola den ersten Film der Region, und das Kino ist ein Stolz der mazedonischen Kultur."
+   }
+  },
+  {
+   "id": "ct-MK-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Folk music and dance are cherished, and ensembles like Tanec keep traditional songs alive. Joining a circle dance at a celebration is a warm experience.",
+    "it": "La musica e la danza popolari sono molto amate, e gruppi come Tanec mantengono vive le canzoni tradizionali. Unirsi a un ballo in cerchio a una festa è un'esperienza calorosa.",
+    "es": "La música y la danza populares son muy queridas, y conjuntos como Tanec mantienen vivas las canciones tradicionales. Unirse a un baile en círculo en una fiesta es una experiencia cálida.",
+    "pt": "A música e a dança populares são muito queridas, e conjuntos como o Tanec mantêm vivas as canções tradicionais. Juntar-se a uma dança em roda numa festa é uma experiência calorosa.",
+    "pt_BR": "A música e a dança folclóricas são muito queridas, e grupos como o Tanec mantêm vivas as canções tradicionais. Entrar numa dança em roda numa festa é uma experiência calorosa.",
+    "fr": "La musique et la danse folkloriques sont très appréciées, et des ensembles comme Tanec font vivre les chansons traditionnelles. Rejoindre une danse en cercle lors d'une fête est un moment chaleureux.",
+    "de": "Volksmusik und Volkstanz werden geschätzt, und Ensembles wie Tanec halten traditionelle Lieder lebendig. Bei einem Fest in einen Reigentanz einzusteigen, ist ein herzliches Erlebnis."
+   }
+  }
+ ],
+ "MT": [
+  {
+   "id": "ct-MT-01",
+   "category": "greetings",
+   "text": {
+    "en": "A handshake and a warm smile are the usual greeting. Among friends and family, a kiss on the cheek is also common.",
+    "it": "Una stretta di mano e un sorriso caloroso sono il saluto abituale. Tra amici e familiari è comune anche un bacio sulla guancia.",
+    "es": "Un apretón de manos y una sonrisa cálida son el saludo habitual. Entre amigos y familiares también es común un beso en la mejilla.",
+    "pt": "Um aperto de mão e um sorriso caloroso são a saudação habitual. Entre amigos e familiares, é também comum um beijo na face.",
+    "pt_BR": "Um aperto de mão e um sorriso caloroso são a saudação habitual. Entre amigos e familiares, também é comum um beijo no rosto.",
+    "fr": "Une poignée de main et un sourire chaleureux sont la salutation habituelle. Entre amis et en famille, la bise est aussi courante.",
+    "de": "Ein Händedruck und ein warmes Lächeln sind die übliche Begrüßung. Unter Freunden und in der Familie ist auch ein Wangenkuss verbreitet."
+   }
+  },
+  {
+   "id": "ct-MT-02",
+   "category": "greetings",
+   "text": {
+    "en": "Saying Bonġu (good morning) or Grazzi (thank you) in Maltese is a lovely way to connect, even if people also answer in English.",
+    "it": "Dire Bonġu (buongiorno) o Grazzi (grazie) in maltese è un bel modo di creare un legame, anche se la gente risponde pure in inglese.",
+    "es": "Decir Bonġu (buenos días) o Grazzi (gracias) en maltés es una bonita forma de conectar, aunque la gente también responda en inglés.",
+    "pt": "Dizer Bonġu (bom dia) ou Grazzi (obrigado) em maltês é uma forma bonita de criar ligação, mesmo que as pessoas respondam também em inglês.",
+    "pt_BR": "Dizer Bonġu (bom dia) ou Grazzi (obrigado) em maltês é uma forma bonita de criar conexão, mesmo que as pessoas respondam também em inglês.",
+    "fr": "Dire Bonġu (bonjour) ou Grazzi (merci) en maltais est une belle façon de créer du lien, même si l'on vous répond aussi en anglais.",
+    "de": "Bonġu (guten Morgen) oder Grazzi (danke) auf Maltesisch zu sagen, schafft eine schöne Verbindung, auch wenn man oft auf Englisch antwortet."
+   }
+  },
+  {
+   "id": "ct-MT-03",
+   "category": "conversation",
+   "text": {
+    "en": "Many Maltese switch easily between Maltese and English, sometimes in the same sentence. Feel free to speak English and ask about the Maltese words you hear.",
+    "it": "Molti maltesi passano con facilità dal maltese all'inglese, a volte nella stessa frase. Parla pure inglese e chiedi delle parole maltesi che senti.",
+    "es": "Muchos malteses pasan con facilidad del maltés al inglés, a veces en la misma frase. Habla en inglés con confianza y pregunta por las palabras malteses que oigas.",
+    "pt": "Muitos malteses passam facilmente do maltês para o inglês, por vezes na mesma frase. Fale à vontade em inglês e pergunte pelas palavras maltesas que ouvir.",
+    "pt_BR": "Muitos malteses alternam facilmente entre maltês e inglês, às vezes na mesma frase. Fale à vontade em inglês e pergunte sobre as palavras maltesas que ouvir.",
+    "fr": "Beaucoup de Maltais passent facilement du maltais à l'anglais, parfois dans la même phrase. Parlez anglais sans hésiter et demandez le sens des mots maltais que vous entendez.",
+    "de": "Viele Malteser wechseln mühelos zwischen Maltesisch und Englisch, manchmal im selben Satz. Sprich ruhig Englisch und frag nach den maltesischen Wörtern, die du hörst."
+   }
+  },
+  {
+   "id": "ct-MT-04",
+   "category": "conversation",
+   "text": {
+    "en": "Malta is small, and people often know each other. Asking which town or village someone is from, and what their local festa is like, is a great opener.",
+    "it": "Malta è piccola e spesso ci si conosce tutti. Chiedere da quale città o paese si viene e com'è la festa locale è un ottimo modo per iniziare.",
+    "es": "Malta es pequeña y la gente suele conocerse. Preguntar de qué pueblo o ciudad es alguien y cómo es su fiesta local es un gran comienzo.",
+    "pt": "Malta é pequena e as pessoas conhecem-se muitas vezes. Perguntar de que cidade ou aldeia alguém é e como é a festa local é uma ótima abertura.",
+    "pt_BR": "Malta é pequena e as pessoas muitas vezes se conhecem. Perguntar de qual cidade ou vilarejo alguém é e como é a festa local é um ótimo começo de conversa.",
+    "fr": "Malte est petite et les gens se connaissent souvent. Demander de quelle ville ou village on vient et comment est la fête locale est une excellente entrée en matière.",
+    "de": "Malta ist klein, und man kennt sich oft. Zu fragen, aus welchem Ort jemand stammt und wie das örtliche Fest ist, ist ein toller Gesprächseinstieg."
+   }
+  },
+  {
+   "id": "ct-MT-05",
+   "category": "dining",
+   "text": {
+    "en": "Pastizzi, flaky pastries filled with ricotta or peas, are a classic cheap snack found at small pastizzerija shops across the islands.",
+    "it": "I pastizzi, sfogliatine ripiene di ricotta o piselli, sono un classico spuntino economico nelle piccole pastizzerija di tutte le isole.",
+    "es": "Los pastizzi, hojaldres rellenos de ricotta o guisantes, son un clásico tentempié barato que se encuentra en las pequeñas pastizzerija de las islas.",
+    "pt": "Os pastizzi, folhados recheados com ricota ou ervilhas, são um clássico petisco barato das pequenas pastizzerija por todas as ilhas.",
+    "pt_BR": "Os pastizzi, massas folhadas recheadas com ricota ou ervilhas, são um clássico lanche barato das pequenas pastizzerija por todas as ilhas.",
+    "fr": "Les pastizzi, feuilletés fourrés à la ricotta ou aux petits pois, sont un classique bon marché des petites pastizzerija sur toutes les îles.",
+    "de": "Pastizzi, Blätterteigtaschen mit Ricotta oder Erbsen, sind ein klassischer günstiger Snack aus den kleinen Pastizzerija auf allen Inseln."
+   }
+  },
+  {
+   "id": "ct-MT-06",
+   "category": "dining",
+   "text": {
+    "en": "Also try ftira (a local bread, often topped with tomato, tuna and olives), hobz biz-zejt, and rabbit stew, a traditional dish often called the national dish.",
+    "it": "Assaggia anche la ftira (pane locale, spesso con pomodoro, tonno e olive), l'hobz biz-zejt e lo stufato di coniglio, piatto tradizionale spesso considerato nazionale.",
+    "es": "Prueba también la ftira (pan local, a menudo con tomate, atún y aceitunas), el hobz biz-zejt y el estofado de conejo, un plato tradicional considerado a menudo nacional.",
+    "pt": "Experimente também a ftira (pão local, muitas vezes com tomate, atum e azeitonas), o hobz biz-zejt e o estufado de coelho, um prato tradicional muitas vezes considerado nacional.",
+    "pt_BR": "Experimente também a ftira (pão local, muitas vezes com tomate, atum e azeitonas), o hobz biz-zejt e o ensopado de coelho, um prato tradicional muitas vezes considerado nacional.",
+    "fr": "Goûtez aussi la ftira (pain local, souvent garni de tomate, thon et olives), le hobz biz-zejt et le ragoût de lapin, un plat traditionnel souvent considéré comme national.",
+    "de": "Probiere auch Ftira (lokales Brot, oft mit Tomate, Thunfisch und Oliven), Hobz biz-zejt und Kaninchenragout, ein traditionelles Gericht, das oft als Nationalgericht gilt."
+   }
+  },
+  {
+   "id": "ct-MT-07",
+   "category": "tipping",
+   "text": {
+    "en": "A tip of about 10 percent is customary in restaurants if no service charge is added. Check the bill first, and round up for taxis.",
+    "it": "Una mancia di circa il 10 per cento è consuetudine nei ristoranti se non è già incluso il servizio. Controlla prima il conto e arrotonda per i taxi.",
+    "es": "Una propina de alrededor del 10 por ciento es habitual en los restaurantes si no se añade cargo por servicio. Revisa antes la cuenta y redondea en los taxis.",
+    "pt": "Uma gorjeta de cerca de 10 por cento é habitual nos restaurantes se não estiver incluída a taxa de serviço. Veja primeiro a conta e arredonde nos táxis.",
+    "pt_BR": "Uma gorjeta de cerca de 10 por cento é comum nos restaurantes se não houver taxa de serviço incluída. Confira antes a conta e arredonde nos táxis.",
+    "fr": "Un pourboire d'environ 10 pour cent est d'usage au restaurant si aucun service n'est ajouté. Vérifiez d'abord l'addition et arrondissez pour les taxis.",
+    "de": "Etwa 10 Prozent Trinkgeld sind in Restaurants üblich, wenn keine Servicegebühr berechnet wird. Prüfe zuerst die Rechnung und runde bei Taxis auf."
+   }
+  },
+  {
+   "id": "ct-MT-08",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to someone's home, a small gift such as pastries, sweets or flowers is a thoughtful gesture that hosts appreciate.",
+    "it": "Quando si è invitati a casa di qualcuno, un piccolo regalo come dolci, pasticcini o fiori è un gesto gentile apprezzato dai padroni di casa.",
+    "es": "Cuando te invitan a una casa, un pequeño detalle como pasteles, dulces o flores es un gesto considerado que los anfitriones agradecen.",
+    "pt": "Quando se é convidado para casa de alguém, uma pequena lembrança como pastéis, doces ou flores é um gesto atencioso que os anfitriões apreciam.",
+    "pt_BR": "Quando você é convidado para a casa de alguém, uma lembrança como doces, salgados ou flores é um gesto atencioso que os anfitriões apreciam.",
+    "fr": "Lorsqu'on est invité chez quelqu'un, un petit cadeau comme des pâtisseries, des douceurs ou des fleurs est un geste attentionné qui fait plaisir aux hôtes.",
+    "de": "Bei einer Einladung nach Hause ist ein kleines Mitbringsel wie Gebäck, Süßigkeiten oder Blumen eine aufmerksame Geste, über die sich Gastgeber freuen."
+   }
+  },
+  {
+   "id": "ct-MT-09",
+   "category": "dress",
+   "text": {
+    "en": "For churches, cover your shoulders and knees. Even in hot weather, many churches and religious sites do not allow beachwear or sleeveless tops.",
+    "it": "Per entrare nelle chiese copri spalle e ginocchia. Anche con il caldo, molte chiese e luoghi religiosi non ammettono abbigliamento da spiaggia o top senza maniche.",
+    "es": "Para las iglesias, cúbrete hombros y rodillas. Incluso con calor, muchas iglesias y lugares religiosos no admiten ropa de playa ni camisetas sin mangas.",
+    "pt": "Para entrar nas igrejas, cubra os ombros e os joelhos. Mesmo com calor, muitas igrejas e locais religiosos não aceitam roupa de praia nem tops sem mangas.",
+    "pt_BR": "Para entrar nas igrejas, cubra ombros e joelhos. Mesmo no calor, muitas igrejas e locais religiosos não aceitam roupa de praia nem regatas.",
+    "fr": "Pour les églises, couvrez épaules et genoux. Même par forte chaleur, beaucoup d'églises et de lieux religieux n'admettent pas les tenues de plage ni les hauts sans manches.",
+    "de": "Für Kirchen bedeckt man Schultern und Knie. Selbst bei Hitze lassen viele Kirchen und religiöse Stätten keine Strandkleidung oder ärmellose Tops zu."
+   }
+  },
+  {
+   "id": "ct-MT-10",
+   "category": "dress",
+   "text": {
+    "en": "Swimwear is meant for the beach and boats. In towns, shops and restaurants, people usually put on a shirt or cover-up.",
+    "it": "Il costume da bagno è per la spiaggia e le barche. In città, nei negozi e nei ristoranti di solito si indossa una maglietta o un copricostume.",
+    "es": "El bañador es para la playa y los barcos. En las ciudades, tiendas y restaurantes se suele llevar camiseta o algo encima.",
+    "pt": "O fato de banho é para a praia e os barcos. Nas cidades, lojas e restaurantes costuma vestir-se uma t-shirt ou uma peça por cima.",
+    "pt_BR": "A roupa de banho é para a praia e os barcos. Em cidades, lojas e restaurantes, as pessoas costumam vestir uma camiseta ou uma saída de praia.",
+    "fr": "Le maillot de bain est fait pour la plage et les bateaux. En ville, dans les magasins et les restaurants, on enfile généralement un t-shirt ou un paréo.",
+    "de": "Badekleidung ist für Strand und Boot gedacht. In Städten, Geschäften und Restaurants zieht man in der Regel ein Shirt oder Überwurf an."
+   }
+  },
+  {
+   "id": "ct-MT-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "The parish church sits at the heart of every town and village, and church bells are a familiar part of daily life. Visitors are welcome if respectful.",
+    "it": "La chiesa parrocchiale è il cuore di ogni città e paese, e le campane fanno parte della vita quotidiana. I visitatori sono benvenuti se rispettosi.",
+    "es": "La iglesia parroquial está en el corazón de cada pueblo y ciudad, y las campanas forman parte de la vida diaria. Los visitantes son bienvenidos si son respetuosos.",
+    "pt": "A igreja paroquial fica no coração de cada cidade e aldeia, e os sinos fazem parte do dia a dia. Os visitantes são bem-vindos se forem respeitosos.",
+    "pt_BR": "A igreja paroquial fica no coração de cada cidade e vilarejo, e os sinos fazem parte do cotidiano. Os visitantes são bem-vindos se forem respeitosos.",
+    "fr": "L'église paroissiale se trouve au cœur de chaque ville et village, et les cloches font partie du quotidien. Les visiteurs sont les bienvenus s'ils se montrent respectueux.",
+    "de": "Die Pfarrkirche steht im Zentrum jedes Ortes, und Kirchenglocken gehören zum Alltag. Besucher sind willkommen, wenn sie sich respektvoll verhalten."
+   }
+  },
+  {
+   "id": "ct-MT-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "Most Maltese are Catholic, and religion is part of public life. Avoid loud behavior during Mass or processions, and ask before entering during services.",
+    "it": "La maggior parte dei maltesi è cattolica e la religione fa parte della vita pubblica. Evita comportamenti rumorosi durante la messa o le processioni e chiedi prima di entrare durante le funzioni.",
+    "es": "La mayoría de los malteses son católicos y la religión forma parte de la vida pública. Evita el comportamiento ruidoso durante la misa o las procesiones y pregunta antes de entrar durante los oficios.",
+    "pt": "A maioria dos malteses é católica e a religião faz parte da vida pública. Evite comportamentos ruidosos durante a missa ou as procissões e pergunte antes de entrar durante as celebrações.",
+    "pt_BR": "A maioria dos malteses é católica e a religião faz parte da vida pública. Evite comportamento barulhento durante a missa ou as procissões e pergunte antes de entrar durante as celebrações.",
+    "fr": "La plupart des Maltais sont catholiques et la religion fait partie de la vie publique. Évitez le bruit pendant la messe ou les processions et demandez avant d'entrer pendant les offices.",
+    "de": "Die meisten Malteser sind katholisch, und Religion gehört zum öffentlichen Leben. Vermeide Lärm bei Messen und Prozessionen und frag, bevor du während eines Gottesdienstes eintrittst."
+   }
+  },
+  {
+   "id": "ct-MT-13",
+   "category": "gestures",
+   "text": {
+    "en": "Conversations can be lively and animated, and people may speak at the same time. Often this shows interest rather than rudeness.",
+    "it": "Le conversazioni possono essere vivaci e animate, e a volte si parla tutti insieme. Spesso è segno di interesse, non di maleducazione.",
+    "es": "Las conversaciones pueden ser animadas y vivas, y a veces se habla a la vez. A menudo es señal de interés y no de mala educación.",
+    "pt": "As conversas podem ser animadas e vivas, e as pessoas por vezes falam ao mesmo tempo. Muitas vezes é sinal de interesse e não de má educação.",
+    "pt_BR": "As conversas podem ser animadas e vivas, e às vezes as pessoas falam ao mesmo tempo. Muitas vezes é sinal de interesse, não de falta de educação.",
+    "fr": "Les conversations peuvent être animées et vives, et il arrive qu'on parle en même temps. C'est souvent un signe d'intérêt plutôt que d'impolitesse.",
+    "de": "Gespräche können lebhaft sein, und manchmal reden mehrere gleichzeitig. Oft zeigt das Interesse und keine Unhöflichkeit."
+   }
+  },
+  {
+   "id": "ct-MT-14",
+   "category": "punctuality",
+   "text": {
+    "en": "The pace is relaxed, and social plans can start a little late. For ferries, tours and appointments, however, arrive on time.",
+    "it": "Il ritmo è rilassato e gli impegni sociali possono iniziare un po' in ritardo. Per traghetti, escursioni e appuntamenti, invece, arriva puntuale.",
+    "es": "El ritmo es relajado y los planes sociales pueden empezar algo tarde. Para ferris, excursiones y citas, en cambio, llega a tiempo.",
+    "pt": "O ritmo é descontraído e os planos sociais podem começar um pouco tarde. Para ferries, passeios e consultas, porém, chegue a horas.",
+    "pt_BR": "O ritmo é descontraído e os encontros sociais podem começar um pouco atrasados. Para balsas, passeios e compromissos, porém, chegue na hora.",
+    "fr": "Le rythme est détendu et les rendez-vous entre amis peuvent commencer un peu en retard. Pour les ferries, les excursions et les rendez-vous, soyez toutefois à l'heure.",
+    "de": "Das Tempo ist entspannt, und private Verabredungen können etwas später beginnen. Bei Fähren, Touren und Terminen sollte man aber pünktlich sein."
+   }
+  },
+  {
+   "id": "ct-MT-15",
+   "category": "transport",
+   "text": {
+    "en": "Malta drives on the left, a legacy of British rule. Roads can be narrow and busy, so take extra care as a pedestrian and when driving.",
+    "it": "A Malta si guida a sinistra, eredità del dominio britannico. Le strade possono essere strette e trafficate, quindi fai attenzione sia da pedone sia alla guida.",
+    "es": "En Malta se conduce por la izquierda, herencia del dominio británico. Las carreteras pueden ser estrechas y estar concurridas, así que ten cuidado como peatón y al conducir.",
+    "pt": "Em Malta conduz-se pela esquerda, herança do domínio britânico. As estradas podem ser estreitas e movimentadas, por isso tenha cuidado como peão e ao conduzir.",
+    "pt_BR": "Em Malta se dirige pela esquerda, herança do domínio britânico. As ruas podem ser estreitas e movimentadas, então tenha cuidado como pedestre e ao dirigir.",
+    "fr": "À Malte, on conduit à gauche, héritage de la domination britannique. Les routes peuvent être étroites et fréquentées : soyez très prudent en tant que piéton et au volant.",
+    "de": "In Malta herrscht Linksverkehr, ein Erbe der britischen Herrschaft. Die Straßen können eng und stark befahren sein, daher ist als Fußgänger und beim Fahren besondere Vorsicht geboten."
+   }
+  },
+  {
+   "id": "ct-MT-16",
+   "category": "transport",
+   "text": {
+    "en": "Buses reach most towns, and a regular ferry links Malta with Gozo. Check schedules ahead, especially in the busy summer months.",
+    "it": "Gli autobus raggiungono la maggior parte delle località e un traghetto regolare collega Malta a Gozo. Controlla gli orari in anticipo, soprattutto nei mesi estivi affollati.",
+    "es": "Los autobuses llegan a la mayoría de las localidades y un ferri regular une Malta con Gozo. Consulta los horarios con antelación, sobre todo en los meses de verano.",
+    "pt": "Os autocarros chegam à maioria das localidades e um ferry regular liga Malta a Gozo. Consulte os horários com antecedência, sobretudo nos meses de verão.",
+    "pt_BR": "Os ônibus chegam à maioria das localidades e uma balsa regular liga Malta a Gozo. Confira os horários com antecedência, principalmente nos meses de verão.",
+    "fr": "Les bus desservent la plupart des localités et un ferry régulier relie Malte à Gozo. Vérifiez les horaires à l'avance, surtout en été.",
+    "de": "Busse erreichen die meisten Orte, und eine regelmäßige Fähre verbindet Malta mit Gozo. Prüfe die Fahrpläne vorab, besonders in den belebten Sommermonaten."
+   }
+  },
+  {
+   "id": "ct-MT-17",
+   "category": "language",
+   "text": {
+    "en": "Maltese and English are the two official languages, so English is widely spoken. Maltese is the only official Semitic language in the European Union.",
+    "it": "Maltese e inglese sono le due lingue ufficiali, quindi l'inglese è molto diffuso. Il maltese è l'unica lingua semitica ufficiale dell'Unione Europea.",
+    "es": "El maltés y el inglés son los dos idiomas oficiales, así que el inglés se habla mucho. El maltés es la única lengua semítica oficial de la Unión Europea.",
+    "pt": "O maltês e o inglês são as duas línguas oficiais, por isso o inglês é muito falado. O maltês é a única língua semítica oficial da União Europeia.",
+    "pt_BR": "O maltês e o inglês são as duas línguas oficiais, então o inglês é muito falado. O maltês é a única língua semítica oficial da União Europeia.",
+    "fr": "Le maltais et l'anglais sont les deux langues officielles, l'anglais est donc très répandu. Le maltais est la seule langue sémitique officielle de l'Union européenne.",
+    "de": "Maltesisch und Englisch sind die beiden Amtssprachen, daher wird viel Englisch gesprochen. Maltesisch ist die einzige offizielle semitische Sprache der Europäischen Union."
+   }
+  },
+  {
+   "id": "ct-MT-18",
+   "category": "language",
+   "text": {
+    "en": "Maltese uses special letters such as ċ, ġ, ħ and ż. Place names like Mellieħa or Żejtun are easier to pronounce if you ask a local.",
+    "it": "Il maltese usa lettere speciali come ċ, ġ, ħ e ż. Nomi di luogo come Mellieħa o Żejtun sono più facili da pronunciare se chiedi a un abitante.",
+    "es": "El maltés usa letras especiales como ċ, ġ, ħ y ż. Nombres de lugares como Mellieħa o Żejtun son más fáciles de pronunciar si preguntas a un local.",
+    "pt": "O maltês usa letras especiais como ċ, ġ, ħ e ż. Nomes de lugares como Mellieħa ou Żejtun são mais fáceis de pronunciar se perguntar a um local.",
+    "pt_BR": "O maltês usa letras especiais como ċ, ġ, ħ e ż. Nomes de lugares como Mellieħa ou Żejtun ficam mais fáceis de pronunciar se você perguntar a um morador.",
+    "fr": "Le maltais utilise des lettres spéciales comme ċ, ġ, ħ et ż. Des noms de lieux comme Mellieħa ou Żejtun se prononcent plus facilement en demandant à un habitant.",
+    "de": "Maltesisch verwendet Sonderbuchstaben wie ċ, ġ, ħ und ż. Ortsnamen wie Mellieħa oder Żejtun lassen sich leichter aussprechen, wenn man einen Einheimischen fragt."
+   }
+  },
+  {
+   "id": "ct-MT-19",
+   "category": "festivals",
+   "text": {
+    "en": "In summer, towns and villages hold a festa honoring their patron saint, with decorated streets, brass bands, fireworks and processions. Joining in is welcome.",
+    "it": "In estate, città e paesi organizzano la festa in onore del santo patrono, con strade addobbate, bande musicali, fuochi d'artificio e processioni. Partecipare è ben accetto.",
+    "es": "En verano, los pueblos y ciudades celebran una festa en honor a su santo patrón, con calles decoradas, bandas de música, fuegos artificiales y procesiones. Se agradece que participes.",
+    "pt": "No verão, as localidades celebram uma festa em honra do santo padroeiro, com ruas decoradas, bandas filarmónicas, fogo de artifício e procissões. Participar é bem-vindo.",
+    "pt_BR": "No verão, as cidades e vilarejos realizam uma festa em honra ao santo padroeiro, com ruas decoradas, bandas, fogos de artifício e procissões. Participar é bem-vindo.",
+    "fr": "En été, villes et villages organisent une festa en l'honneur de leur saint patron, avec rues décorées, fanfares, feux d'artifice et processions. Y participer est bienvenu.",
+    "de": "Im Sommer feiern Städte und Dörfer eine Festa zu Ehren ihres Schutzpatrons, mit geschmückten Straßen, Blaskapellen, Feuerwerk und Prozessionen. Mitmachen ist willkommen."
+   }
+  },
+  {
+   "id": "ct-MT-20",
+   "category": "festivals",
+   "text": {
+    "en": "Easter is a major occasion, with Good Friday processions in many towns, and at Christmas, nativity cribs are a cherished tradition.",
+    "it": "La Pasqua è un momento importante, con processioni del Venerdì Santo in molti centri, e a Natale i presepi sono una tradizione molto cara.",
+    "es": "La Semana Santa es una ocasión importante, con procesiones del Viernes Santo en muchas localidades, y en Navidad los belenes son una tradición muy querida.",
+    "pt": "A Páscoa é uma ocasião importante, com procissões de Sexta-feira Santa em muitas localidades, e no Natal os presépios são uma tradição muito querida.",
+    "pt_BR": "A Páscoa é uma ocasião importante, com procissões da Sexta-feira Santa em muitas cidades, e no Natal os presépios são uma tradição muito querida.",
+    "fr": "Pâques est un moment important, avec des processions du Vendredi saint dans de nombreuses villes, et à Noël, les crèches sont une tradition chérie.",
+    "de": "Ostern ist ein bedeutender Anlass, mit Karfreitagsprozessionen in vielen Orten, und zu Weihnachten sind Krippen eine geschätzte Tradition."
+   }
+  },
+  {
+   "id": "ct-MT-21",
+   "category": "festivals",
+   "text": {
+    "en": "Carnival before Lent brings colorful floats, costumes and dancing, with celebrations in Valletta and the village of Nadur on Gozo.",
+    "it": "Il Carnevale prima della Quaresima porta carri colorati, costumi e balli, con festeggiamenti a La Valletta e nel villaggio di Nadur a Gozo.",
+    "es": "El Carnaval antes de la Cuaresma trae carrozas coloridas, disfraces y baile, con celebraciones en La Valeta y en el pueblo de Nadur, en Gozo.",
+    "pt": "O Carnaval antes da Quaresma traz carros alegóricos coloridos, fantasias e dança, com festejos em Valeta e na aldeia de Nadur, em Gozo.",
+    "pt_BR": "O Carnaval antes da Quaresma traz carros alegóricos coloridos, fantasias e dança, com celebrações em Valeta e no vilarejo de Nadur, em Gozo.",
+    "fr": "Le carnaval avant le carême apporte chars colorés, costumes et danse, avec des festivités à La Valette et dans le village de Nadur, à Gozo.",
+    "de": "Der Karneval vor der Fastenzeit bringt bunte Wagen, Kostüme und Tanz, mit Feiern in Valletta und im Dorf Nadur auf Gozo."
+   }
+  },
+  {
+   "id": "ct-MT-22",
+   "category": "festivals",
+   "text": {
+    "en": "Independence Day on 21 September celebrates Malta's independence from Britain in 1964. Expect public events and closed offices.",
+    "it": "Il 21 settembre si celebra l'indipendenza di Malta dalla Gran Bretagna nel 1964. Aspettati eventi pubblici e uffici chiusi.",
+    "es": "El 21 de septiembre se celebra la independencia de Malta del Reino Unido en 1964. Habrá actos públicos y oficinas cerradas.",
+    "pt": "A 21 de setembro celebra-se a independência de Malta do Reino Unido em 1964. Espere eventos públicos e repartições fechadas.",
+    "pt_BR": "Em 21 de setembro celebra-se a independência de Malta do Reino Unido em 1964. Espere eventos públicos e repartições fechadas.",
+    "fr": "Le 21 septembre célèbre l'indépendance de Malte vis-à-vis du Royaume-Uni en 1964. Attendez-vous à des événements publics et à des bureaux fermés.",
+    "de": "Am 21. September wird die Unabhängigkeit Maltas von Großbritannien im Jahr 1964 gefeiert. Es gibt öffentliche Veranstaltungen, Ämter bleiben geschlossen."
+   }
+  },
+  {
+   "id": "ct-MT-23",
+   "category": "family",
+   "text": {
+    "en": "Family is very important, and Sunday lunch with relatives is a common tradition. Invitations to a family meal are a real sign of warmth.",
+    "it": "La famiglia è molto importante e il pranzo della domenica con i parenti è una tradizione diffusa. Un invito a un pasto di famiglia è un vero segno di calore.",
+    "es": "La familia es muy importante y la comida del domingo con los parientes es una tradición habitual. Una invitación a una comida familiar es una verdadera muestra de cariño.",
+    "pt": "A família é muito importante e o almoço de domingo com os familiares é uma tradição comum. Um convite para uma refeição em família é um verdadeiro sinal de carinho.",
+    "pt_BR": "A família é muito importante e o almoço de domingo com os parentes é uma tradição comum. Um convite para uma refeição em família é um verdadeiro sinal de carinho.",
+    "fr": "La famille est très importante et le déjeuner dominical avec les proches est une tradition courante. Une invitation à un repas de famille est un vrai signe de chaleur.",
+    "de": "Familie ist sehr wichtig, und das Sonntagsessen mit Verwandten ist eine verbreitete Tradition. Eine Einladung zu einem Familienessen ist ein echtes Zeichen von Herzlichkeit."
+   }
+  },
+  {
+   "id": "ct-MT-24",
+   "category": "money",
+   "text": {
+    "en": "Malta uses the euro. Cards are widely accepted, but carry a little cash for small kiosks, village shops and some buses.",
+    "it": "Malta usa l'euro. Le carte sono ampiamente accettate, ma porta un po' di contanti per chioschi, negozi di paese e alcuni autobus.",
+    "es": "Malta usa el euro. Las tarjetas se aceptan ampliamente, pero lleva algo de efectivo para quioscos, tiendas de pueblo y algunos autobuses.",
+    "pt": "Malta usa o euro. Os cartões são amplamente aceites, mas leve algum dinheiro para quiosques, lojas de aldeia e alguns autocarros.",
+    "pt_BR": "Malta usa o euro. Cartões são amplamente aceitos, mas leve algum dinheiro para quiosques, lojinhas de vilarejo e alguns ônibus.",
+    "fr": "Malte utilise l'euro. Les cartes sont largement acceptées, mais prévoyez un peu d'espèces pour les kiosques, les boutiques de village et certains bus.",
+    "de": "Malta nutzt den Euro. Karten werden weitgehend akzeptiert, aber für Kioske, Dorfläden und einige Busse lohnt sich etwas Bargeld."
+   }
+  },
+  {
+   "id": "ct-MT-25",
+   "category": "photography",
+   "text": {
+    "en": "The old towns, honey-colored limestone buildings and harbors are great to photograph. Be mindful of signs in churches and museums, and ask people before taking close-ups.",
+    "it": "I centri storici, gli edifici di pietra calcarea color miele e i porti sono ottimi da fotografare. Rispetta i cartelli in chiese e musei e chiedi alle persone prima di fare primi piani.",
+    "es": "Los cascos antiguos, los edificios de piedra caliza color miel y los puertos son estupendos para fotografiar. Respeta los carteles en iglesias y museos y pide permiso antes de hacer primeros planos de personas.",
+    "pt": "Os centros históricos, os edifícios de calcário cor de mel e os portos são ótimos para fotografar. Respeite a sinalização em igrejas e museus e peça licença antes de fotografar pessoas de perto.",
+    "pt_BR": "Os centros históricos, os prédios de calcário cor de mel e os portos são ótimos para fotografar. Respeite as placas em igrejas e museus e peça permissão antes de fazer closes de pessoas.",
+    "fr": "Les vieilles villes, les bâtiments en calcaire couleur miel et les ports sont superbes à photographier. Respectez les panneaux dans les églises et musées et demandez avant de photographier des personnes de près.",
+    "de": "Altstädte, honigfarbene Kalksteingebäude und Häfen sind tolle Fotomotive. Beachte die Hinweise in Kirchen und Museen und frag Menschen, bevor du Nahaufnahmen machst."
+   }
+  },
+  {
+   "id": "ct-MT-26",
+   "category": "nightlife",
+   "text": {
+    "en": "Paceville, near St Julian's, is the best-known nightlife area, with many bars and clubs. Quieter evenings are easy in Valletta, Mdina or small seaside restaurants.",
+    "it": "Paceville, vicino a St Julian's, è la zona della vita notturna più nota, con molti bar e locali. Serate più tranquille sono facili a La Valletta, Mdina o in piccoli ristoranti sul mare.",
+    "es": "Paceville, cerca de St Julian's, es la zona de ocio nocturno más conocida, con muchos bares y discotecas. Para noches más tranquilas hay La Valeta, Mdina o pequeños restaurantes junto al mar.",
+    "pt": "Paceville, perto de St Julian's, é a zona de vida noturna mais conhecida, com muitos bares e discotecas. Noites mais calmas são fáceis em Valeta, Mdina ou em pequenos restaurantes à beira-mar.",
+    "pt_BR": "Paceville, perto de St Julian's, é a área de vida noturna mais conhecida, com muitos bares e baladas. Noites mais tranquilas são fáceis em Valeta, Mdina ou em pequenos restaurantes à beira-mar.",
+    "fr": "Paceville, près de St Julian's, est le quartier de vie nocturne le plus connu, avec de nombreux bars et clubs. Les soirées plus calmes se trouvent à La Valette, Mdina ou dans de petits restaurants en bord de mer.",
+    "de": "Paceville bei St. Julian's ist das bekannteste Nachtleben-Viertel mit vielen Bars und Clubs. Ruhigere Abende gibt es in Valletta, Mdina oder in kleinen Restaurants am Meer."
+   }
+  },
+  {
+   "id": "ct-MT-27",
+   "category": "nature",
+   "text": {
+    "en": "Gozo and Comino offer coves, cliffs and quieter countryside. Bring a hat, sunscreen and water, as summer sun is strong and shade is limited.",
+    "it": "Gozo e Comino offrono calette, scogliere e campagna più tranquilla. Porta cappello, crema solare e acqua: il sole estivo è forte e l'ombra è poca.",
+    "es": "Gozo y Comino ofrecen calas, acantilados y un campo más tranquilo. Lleva sombrero, protector solar y agua, porque el sol de verano es fuerte y hay poca sombra.",
+    "pt": "Gozo e Comino oferecem enseadas, falésias e um campo mais tranquilo. Leve chapéu, protetor solar e água, pois o sol de verão é forte e há pouca sombra.",
+    "pt_BR": "Gozo e Comino oferecem enseadas, falésias e um interior mais tranquilo. Leve chapéu, protetor solar e água, porque o sol de verão é forte e há pouca sombra.",
+    "fr": "Gozo et Comino offrent criques, falaises et campagne plus tranquille. Prenez chapeau, crème solaire et eau, car le soleil d'été est fort et l'ombre rare.",
+    "de": "Gozo und Comino bieten Buchten, Klippen und ruhigere Landschaft. Nimm Hut, Sonnencreme und Wasser mit, denn die Sommersonne ist stark und Schatten selten."
+   }
+  },
+  {
+   "id": "ct-MT-28",
+   "category": "safety",
+   "text": {
+    "en": "The emergency number is 112. In summer, drink plenty of water, avoid the midday sun, and take care near cliff edges and rocky shores.",
+    "it": "Il numero di emergenza è 112. D'estate bevi molta acqua, evita il sole di mezzogiorno e fai attenzione vicino ai bordi delle scogliere e alle coste rocciose.",
+    "es": "El número de emergencias es el 112. En verano, bebe mucha agua, evita el sol del mediodía y ten cuidado cerca de los bordes de los acantilados y las costas rocosas.",
+    "pt": "O número de emergência é o 112. No verão, beba bastante água, evite o sol do meio-dia e tenha cuidado junto às bordas das falésias e às costas rochosas.",
+    "pt_BR": "O número de emergência é o 112. No verão, beba bastante água, evite o sol do meio-dia e tenha cuidado perto das bordas das falésias e de costas rochosas.",
+    "fr": "Le numéro d'urgence est le 112. En été, buvez beaucoup d'eau, évitez le soleil de midi et soyez prudent près des bords de falaise et des côtes rocheuses.",
+    "de": "Die Notrufnummer ist 112. Im Sommer viel Wasser trinken, die Mittagssonne meiden und an Klippenrändern und felsigen Küsten vorsichtig sein."
+   }
+  },
+  {
+   "id": "ct-MT-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Malta's Neolithic temples, such as Ġgantija on Gozo and Ħaġar Qim, are older than the Egyptian pyramids, and many Maltese are proud of this ancient heritage.",
+    "it": "I templi neolitici di Malta, come Ġgantija a Gozo e Ħaġar Qim, sono più antichi delle piramidi egizie, e molti maltesi sono orgogliosi di questa antica eredità.",
+    "es": "Los templos neolíticos de Malta, como Ġgantija en Gozo y Ħaġar Qim, son más antiguos que las pirámides egipcias, y muchos malteses se sienten orgullosos de esta herencia antigua.",
+    "pt": "Os templos neolíticos de Malta, como Ġgantija em Gozo e Ħaġar Qim, são mais antigos do que as pirâmides do Egito, e muitos malteses orgulham-se desta herança antiga.",
+    "pt_BR": "Os templos neolíticos de Malta, como Ġgantija em Gozo e Ħaġar Qim, são mais antigos do que as pirâmides do Egito, e muitos malteses se orgulham dessa herança antiga.",
+    "fr": "Les temples néolithiques de Malte, comme Ġgantija à Gozo et Ħaġar Qim, sont plus anciens que les pyramides d'Égypte, et beaucoup de Maltais sont fiers de cet héritage ancien.",
+    "de": "Maltas neolithische Tempel wie Ġgantija auf Gozo und Ħaġar Qim sind älter als die ägyptischen Pyramiden, und viele Malteser sind stolz auf dieses uralte Erbe."
+   }
+  },
+  {
+   "id": "ct-MT-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Valletta, built by the Knights of St John, is a UNESCO World Heritage city and a source of great national pride. Locals enjoy sharing its history.",
+    "it": "La Valletta, costruita dai Cavalieri di San Giovanni, è una città patrimonio mondiale UNESCO e motivo di grande orgoglio nazionale. Gli abitanti raccontano volentieri la sua storia.",
+    "es": "La Valeta, construida por los Caballeros de San Juan, es una ciudad Patrimonio de la Humanidad de la UNESCO y motivo de gran orgullo nacional. A los vecinos les gusta compartir su historia.",
+    "pt": "Valeta, construída pelos Cavaleiros de São João, é uma cidade Património Mundial da UNESCO e motivo de grande orgulho nacional. Os habitantes gostam de partilhar a sua história.",
+    "pt_BR": "Valeta, construída pelos Cavaleiros de São João, é uma cidade Patrimônio Mundial da UNESCO e motivo de grande orgulho nacional. Os moradores gostam de compartilhar a sua história.",
+    "fr": "La Valette, bâtie par les chevaliers de Saint-Jean, est une ville classée au patrimoine mondial de l'UNESCO et une grande fierté nationale. Les habitants aiment en partager l'histoire.",
+    "de": "Valletta, von den Johanniterrittern erbaut, ist eine UNESCO-Welterbestadt und ein großer Nationalstolz. Einheimische erzählen gern ihre Geschichte."
+   }
+  }
+ ]
+}

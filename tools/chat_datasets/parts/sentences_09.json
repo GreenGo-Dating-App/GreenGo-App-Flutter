@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ss-accommodation-001",
+  "topic": "accommodation",
+  "level": "A1",
+  "text": {
+   "en": "Hello, I have a reservation.",
+   "it": "Buongiorno, ho una prenotazione.",
+   "es": "Hola, tengo una reserva.",
+   "pt": "Olá, tenho uma reserva.",
+   "pt_BR": "Olá, eu tenho uma reserva.",
+   "fr": "Bonjour, j'ai une réservation.",
+   "de": "Hallo, ich habe eine Reservierung."
+  }
+ },
+ {
+  "id": "ss-accommodation-002",
+  "topic": "accommodation",
+  "level": "A1",
+  "text": {
+   "en": "Do you have a free room?",
+   "it": "Avete una camera libera?",
+   "es": "¿Tienen una habitación libre?",
+   "pt": "Têm um quarto livre?",
+   "pt_BR": "Vocês têm um quarto livre?",
+   "fr": "Avez-vous une chambre libre ?",
+   "de": "Haben Sie ein Zimmer frei?"
+  }
+ },
+ {
+  "id": "ss-accommodation-003",
+  "topic": "accommodation",
+  "level": "A1",
+  "text": {
+   "en": "What time is check-in?",
+   "it": "A che ora è il check-in?",
+   "es": "¿A qué hora es el check-in?",
+   "pt": "A que horas é o check-in?",
+   "pt_BR": "Que horas é o check-in?",
+   "fr": "À quelle heure est l'enregistrement ?",
+   "de": "Um wie viel Uhr ist der Check-in?"
+  }
+ },
+ {
+  "id": "ss-accommodation-004",
+  "topic": "accommodation",
+  "level": "A1",
+  "text": {
+   "en": "What is the Wi-Fi password?",
+   "it": "Qual è la password del Wi-Fi?",
+   "es": "¿Cuál es la contraseña del wifi?",
+   "pt": "Qual é a palavra-passe do Wi-Fi?",
+   "pt_BR": "Qual é a senha do Wi-Fi?",
+   "fr": "Quel est le mot de passe du Wi-Fi ?",
+   "de": "Wie lautet das WLAN-Passwort?"
+  }
+ },
+ {
+  "id": "ss-accommodation-005",
+  "topic": "accommodation",
+  "level": "A1",
+  "text": {
+   "en": "Is breakfast included?",
+   "it": "La colazione è inclusa?",
+   "es": "¿El desayuno está incluido?",
+   "pt": "O pequeno-almoço está incluído?",
+   "pt_BR": "O café da manhã está incluído?",
+   "fr": "Le petit-déjeuner est-il inclus ?",
+   "de": "Ist das Frühstück inklusive?"
+  }
+ },
+ {
+  "id": "ss-accommodation-006",
+  "topic": "accommodation",
+  "level": "A1",
+  "text": {
+   "en": "Where is the elevator?",
+   "it": "Dov'è l'ascensore?",
+   "es": "¿Dónde está el ascensor?",
+   "pt": "Onde é o elevador?",
+   "pt_BR": "Onde fica o elevador?",
+   "fr": "Où est l'ascenseur ?",
+   "de": "Wo ist der Aufzug?"
+  }
+ },
+ {
+  "id": "ss-accommodation-007",
+  "topic": "accommodation",
+  "level": "A1",
+  "text": {
+   "en": "I need a towel, please.",
+   "it": "Mi serve un asciugamano, per favore.",
+   "es": "Necesito una toalla, por favor.",
+   "pt": "Preciso de uma toalha, por favor.",
+   "pt_BR": "Eu preciso de uma toalha, por favor.",
+   "fr": "J'ai besoin d'une serviette, s'il vous plaît.",
+   "de": "Ich brauche bitte ein Handtuch."
+  }
+ },
+ {
+  "id": "ss-accommodation-008",
+  "topic": "accommodation",
+  "level": "A1",
+  "text": {
+   "en": "The room is very clean.",
+   "it": "La camera è molto pulita.",
+   "es": "La habitación está muy limpia.",
+   "pt": "O quarto está muito limpo.",
+   "pt_BR": "O quarto está bem limpinho.",
+   "fr": "La chambre est très propre.",
+   "de": "Das Zimmer ist sehr sauber."
+  }
+ },
+ {
+  "id": "ss-accommodation-009",
+  "topic": "accommodation",
+  "level": "A1",
+  "text": {
+   "en": "How much is one night?",
+   "it": "Quanto costa una notte?",
+   "es": "¿Cuánto cuesta una noche?",
+   "pt": "Quanto custa uma noite?",
+   "pt_BR": "Quanto é a diária?",
+   "fr": "Combien coûte une nuit ?",
+   "de": "Wie viel kostet eine Nacht?"
+  }
+ },
+ {
+  "id": "ss-accommodation-010",
+  "topic": "accommodation",
+  "level": "A1",
+  "text": {
+   "en": "I would like a single room.",
+   "it": "Vorrei una camera singola.",
+   "es": "Quisiera una habitación individual.",
+   "pt": "Gostaria de um quarto individual.",
+   "pt_BR": "Eu gostaria de um quarto de solteiro.",
+   "fr": "Je voudrais une chambre simple.",
+   "de": "Ich hätte gern ein Einzelzimmer."
+  }
+ },
+ {
+  "id": "ss-accommodation-011",
+  "topic": "accommodation",
+  "level": "A1",
+  "text": {
+   "en": "We are two people.",
+   "it": "Siamo in due.",
+   "es": "Somos dos personas.",
+   "pt": "Somos duas pessoas.",
+   "pt_BR": "Somos em dois.",
+   "fr": "Nous sommes deux.",
+   "de": "Wir sind zu zweit."
+  }
+ },
+ {
+  "id": "ss-accommodation-012",
+  "topic": "accommodation",
+  "level": "A1",
+  "text": {
+   "en": "The bed is very comfortable.",
+   "it": "Il letto è molto comodo.",
+   "es": "La cama es muy cómoda.",
+   "pt": "A cama é muito confortável.",
+   "pt_BR": "A cama é super confortável.",
+   "fr": "Le lit est très confortable.",
+   "de": "Das Bett ist sehr bequem."
+  }
+ },
+ {
+  "id": "ss-accommodation-013",
+  "topic": "accommodation",
+  "level": "A1",
+  "text": {
+   "en": "Where is the breakfast room?",
+   "it": "Dov'è la sala colazione?",
+   "es": "¿Dónde está el comedor del desayuno?",
+   "pt": "Onde é a sala do pequeno-almoço?",
+   "pt_BR": "Onde fica o salão do café da manhã?",
+   "fr": "Où se trouve la salle du petit-déjeuner ?",
+   "de": "Wo ist der Frühstücksraum?"
+  }
+ },
+ {
+  "id": "ss-accommodation-014",
+  "topic": "accommodation",
+  "level": "A1",
+  "text": {
+   "en": "Can I have another pillow?",
+   "it": "Posso avere un altro cuscino?",
+   "es": "¿Me puede dar otra almohada?",
+   "pt": "Pode dar-me outra almofada?",
+   "pt_BR": "Você pode me dar outro travesseiro?",
+   "fr": "Pourrais-je avoir un autre oreiller ?",
+   "de": "Könnte ich noch ein Kissen haben?"
+  }
+ },
+ {
+  "id": "ss-accommodation-015",
+  "topic": "accommodation",
+  "level": "A1",
+  "text": {
+   "en": "I am staying for three nights.",
+   "it": "Mi fermo per tre notti.",
+   "es": "Me quedo tres noches.",
+   "pt": "Fico três noites.",
+   "pt_BR": "Vou ficar três noites.",
+   "fr": "Je reste trois nuits.",
+   "de": "Ich bleibe drei Nächte."
+  }
+ },
+ {
+  "id": "ss-accommodation-016",
+  "topic": "accommodation",
+  "level": "A2",
+  "text": {
+   "en": "My room key does not work.",
+   "it": "La chiave della mia camera non funziona.",
+   "es": "Mi llave de la habitación no funciona.",
+   "pt": "A chave do meu quarto não funciona.",
+   "pt_BR": "A chave do meu quarto não está funcionando.",
+   "fr": "Ma clé de chambre ne fonctionne pas.",
+   "de": "Mein Zimmerschlüssel funktioniert nicht."
+  }
+ },
+ {
+  "id": "ss-accommodation-017",
+  "topic": "accommodation",
+  "level": "A2",
+  "text": {
+   "en": "Could I check in a little earlier?",
+   "it": "Potrei fare il check-in un po' prima?",
+   "es": "¿Podría hacer el check-in un poco antes?",
+   "pt": "Podia fazer o check-in um pouco mais cedo?",
+   "pt_BR": "Eu poderia fazer o check-in um pouco mais cedo?",
+   "fr": "Puis-je m'enregistrer un peu plus tôt ?",
+   "de": "Könnte ich etwas früher einchecken?"
+  }
+ },
+ {
+  "id": "ss-accommodation-018",
+  "topic": "accommodation",
+  "level": "A2",
+  "text": {
+   "en": "What time do I have to leave the room?",
+   "it": "A che ora devo lasciare la camera?",
+   "es": "¿A qué hora hay que dejar la habitación?",
+   "pt": "A que horas tenho de deixar o quarto?",
+   "pt_BR": "A que horas preciso deixar o quarto?",
+   "fr": "À quelle heure dois-je libérer la chambre ?",
+   "de": "Bis wann muss ich auschecken?"
+  }
+ },
+ {
+  "id": "ss-accommodation-019",
+  "topic": "accommodation",
+  "level": "A2",
+  "text": {
+   "en": "Can I leave my luggage here after check-out?",
+   "it": "Posso lasciare qui i bagagli dopo il check-out?",
+   "es": "¿Puedo dejar aquí mis maletas después de salir?",
+   "pt": "Posso deixar aqui as malas depois do check-out?",
+   "pt_BR": "Posso deixar minha bagagem aqui depois do check-out?",
+   "fr": "Puis-je laisser mes bagages ici après le départ ?",
+   "de": "Kann ich mein Gepäck nach dem Check-out hier lassen?"
+  }
+ },
+ {
+  "id": "ss-accommodation-020",
+  "topic": "accommodation",
+  "level": "A2",
+  "text": {
+   "en": "The air conditioning is not working.",
+   "it": "L'aria condizionata non funziona.",
+   "es": "El aire acondicionado no funciona.",
+   "pt": "O ar condicionado não funciona.",
+   "pt_BR": "O ar-condicionado não está funcionando.",
+   "fr": "La climatisation ne marche pas.",
+   "de": "Die Klimaanlage funktioniert nicht."
+  }
+ },
+ {
+  "id": "ss-accommodation-021",
+  "topic": "accommodation",
+  "level": "A2",
+  "text": {
+   "en": "There is no hot water in my room.",
+   "it": "Nella mia camera non c'è acqua calda.",
+   "es": "No hay agua caliente en mi habitación.",
+   "pt": "Não há água quente no meu quarto.",
+   "pt_BR": "Não tem água quente no meu quarto.",
+   "fr": "Il n'y a pas d'eau chaude dans ma chambre.",
+   "de": "In meinem Zimmer gibt es kein warmes Wasser."
+  }
+ },
+ {
+  "id": "ss-accommodation-022",
+  "topic": "accommodation",
+  "level": "A2",
+  "text": {
+   "en": "Could you recommend a good restaurant nearby?",
+   "it": "Può consigliarmi un buon ristorante qui vicino?",
+   "es": "¿Podría recomendarme un buen restaurante cerca de aquí?",
+   "pt": "Podia recomendar-me um bom restaurante aqui perto?",
+   "pt_BR": "Você poderia me recomendar um bom restaurante por aqui?",
+   "fr": "Pourriez-vous me recommander un bon restaurant près d'ici ?",
+   "de": "Können Sie mir ein gutes Restaurant in der Nähe empfehlen?"
+  }
+ },
+ {
+  "id": "ss-accommodation-023",
+  "topic": "accommodation",
+  "level": "A2",
+  "text": {
+   "en": "Is there a laundry service?",
+   "it": "C'è un servizio di lavanderia?",
+   "es": "¿Hay servicio de lavandería?",
+   "pt": "Existe serviço de lavandaria?",
+   "pt_BR": "Tem serviço de lavanderia?",
+   "fr": "Y a-t-il un service de blanchisserie ?",
+   "de": "Gibt es einen Wäscheservice?"
+  }
+ },
+ {
+  "id": "ss-accommodation-024",
+  "topic": "accommodation",
+  "level": "A2",
+  "text": {
+   "en": "I booked a room for two nights.",
+   "it": "Ho prenotato una camera per due notti.",
+   "es": "He reservado una habitación para dos noches.",
+   "pt": "Reservei um quarto para duas noites.",
+   "pt_BR": "Eu reservei um quarto por duas noites.",
+   "fr": "J'ai réservé une chambre pour deux nuits.",
+   "de": "Ich habe ein Zimmer für zwei Nächte gebucht."
+  }
+ },
+ {
+  "id": "ss-accommodation-025",
+  "topic": "accommodation",
+  "level": "A2",
+  "text": {
+   "en": "Is there parking at the hotel?",
+   "it": "C'è un parcheggio in hotel?",
+   "es": "¿Hay aparcamiento en el hotel?",
+   "pt": "Há estacionamento no hotel?",
+   "pt_BR": "Tem estacionamento no hotel?",
+   "fr": "Y a-t-il un parking à l'hôtel ?",
+   "de": "Gibt es einen Parkplatz am Hotel?"
+  }
+ },
+ {
+  "id": "ss-accommodation-026",
+  "topic": "accommodation",
+  "level": "A2",
+  "text": {
+   "en": "Does the room have a private bathroom?",
+   "it": "La camera ha il bagno privato?",
+   "es": "¿La habitación tiene baño privado?",
+   "pt": "O quarto tem casa de banho privativa?",
+   "pt_BR": "O quarto tem banheiro privativo?",
+   "fr": "La chambre a-t-elle une salle de bain privée ?",
+   "de": "Hat das Zimmer ein eigenes Bad?"
+  }
+ },
+ {
+  "id": "ss-accommodation-027",
+  "topic": "accommodation",
+  "level": "A2",
+  "text": {
+   "en": "Could we have a room with a view?",
+   "it": "Potremmo avere una camera con vista?",
+   "es": "¿Podríamos tener una habitación con vistas?",
+   "pt": "Podíamos ter um quarto com vista?",
+   "pt_BR": "Poderíamos ficar com um quarto com vista?",
+   "fr": "Pourrions-nous avoir une chambre avec vue ?",
+   "de": "Könnten wir ein Zimmer mit Aussicht haben?"
+  }
+ },
+ {
+  "id": "ss-accommodation-028",
+  "topic": "accommodation",
+  "level": "A2",
+  "text": {
+   "en": "The room next door is very noisy.",
+   "it": "La camera accanto è molto rumorosa.",
+   "es": "La habitación de al lado hace mucho ruido.",
+   "pt": "O quarto ao lado faz muito barulho.",
+   "pt_BR": "O quarto ao lado está muito barulhento.",
+   "fr": "La chambre d'à côté est très bruyante.",
+   "de": "Das Zimmer nebenan ist sehr laut."
+  }
+ },
+ {
+  "id": "ss-accommodation-029",
+  "topic": "accommodation",
+  "level": "A2",
+  "text": {
+   "en": "Can you call a taxi for me?",
+   "it": "Può chiamarmi un taxi?",
+   "es": "¿Puede llamarme un taxi?",
+   "pt": "Pode chamar-me um táxi?",
+   "pt_BR": "Pode chamar um táxi para mim?",
+   "fr": "Pouvez-vous m'appeler un taxi ?",
+   "de": "Können Sie mir ein Taxi rufen?"
+  }
+ },
+ {
+  "id": "ss-accommodation-030",
+  "topic": "accommodation",
+  "level": "A2",
+  "text": {
+   "en": "Where can I find the nearest supermarket?",
+   "it": "Dove posso trovare il supermercato più vicino?",
+   "es": "¿Dónde puedo encontrar el supermercado más cercano?",
+   "pt": "Onde posso encontrar o supermercado mais próximo?",
+   "pt_BR": "Onde fica o mercado mais perto daqui?",
+   "fr": "Où puis-je trouver le supermarché le plus proche ?",
+   "de": "Wo finde ich den nächsten Supermarkt?"
+  }
+ },
+ {
+  "id": "ss-accommodation-031",
+  "topic": "accommodation",
+  "level": "B1",
+  "text": {
+   "en": "I would like to extend my stay by one night.",
+   "it": "Vorrei prolungare il soggiorno di una notte.",
+   "es": "Me gustaría alargar mi estancia una noche.",
+   "pt": "Gostaria de prolongar a estadia por mais uma noite.",
+   "pt_BR": "Gostaria de estender minha estadia por mais uma noite.",
+   "fr": "Je voudrais prolonger mon séjour d'une nuit.",
+   "de": "Ich möchte meinen Aufenthalt um eine Nacht verlängern."
+  }
+ },
+ {
+  "id": "ss-accommodation-032",
+  "topic": "accommodation",
+  "level": "B1",
+  "text": {
+   "en": "Could you wake me up at seven tomorrow morning?",
+   "it": "Potrebbe svegliarmi domani mattina alle sette?",
+   "es": "¿Podría despertarme mañana a las siete?",
+   "pt": "Podia acordar-me amanhã às sete da manhã?",
+   "pt_BR": "Você poderia me acordar amanhã às sete da manhã?",
+   "fr": "Pourriez-vous me réveiller demain matin à sept heures ?",
+   "de": "Könnten Sie mich morgen früh um sieben Uhr wecken?"
+  }
+ },
+ {
+  "id": "ss-accommodation-033",
+  "topic": "accommodation",
+  "level": "B1",
+  "text": {
+   "en": "I booked online, but I can't find the confirmation email.",
+   "it": "Ho prenotato online, ma non trovo l'email di conferma.",
+   "es": "He reservado por internet, pero no encuentro el correo de confirmación.",
+   "pt": "Reservei online, mas não encontro o email de confirmação.",
+   "pt_BR": "Reservei online, mas não estou achando o e-mail de confirmação.",
+   "fr": "J'ai réservé en ligne, mais je ne retrouve pas l'e-mail de confirmation.",
+   "de": "Ich habe online gebucht, finde aber die Bestätigungsmail nicht."
+  }
+ },
+ {
+  "id": "ss-accommodation-034",
+  "topic": "accommodation",
+  "level": "B1",
+  "text": {
+   "en": "Is it possible to change to a quieter room?",
+   "it": "È possibile cambiare con una camera più tranquilla?",
+   "es": "¿Es posible cambiar a una habitación más tranquila?",
+   "pt": "É possível mudar para um quarto mais sossegado?",
+   "pt_BR": "É possível trocar por um quarto mais silencioso?",
+   "fr": "Est-il possible de changer pour une chambre plus calme ?",
+   "de": "Ist es möglich, in ein ruhigeres Zimmer zu wechseln?"
+  }
+ },
+ {
+  "id": "ss-accommodation-035",
+  "topic": "accommodation",
+  "level": "B1",
+  "text": {
+   "en": "Does the price include the tourist tax?",
+   "it": "Il prezzo include la tassa di soggiorno?",
+   "es": "¿El precio incluye la tasa turística?",
+   "pt": "O preço inclui a taxa turística?",
+   "pt_BR": "O valor inclui a taxa de turismo?",
+   "fr": "Le prix comprend-il la taxe de séjour ?",
+   "de": "Ist die City-Tax im Preis enthalten?"
+  }
+ },
+ {
+  "id": "ss-accommodation-036",
+  "topic": "accommodation",
+  "level": "B1",
+  "text": {
+   "en": "We would like to cancel our booking free of charge.",
+   "it": "Vorremmo cancellare la prenotazione senza costi.",
+   "es": "Nos gustaría cancelar la reserva sin coste.",
+   "pt": "Gostávamos de cancelar a reserva sem custos.",
+   "pt_BR": "Gostaríamos de cancelar a reserva sem custo.",
+   "fr": "Nous aimerions annuler notre réservation sans frais.",
+   "de": "Wir möchten unsere Buchung kostenlos stornieren."
+  }
+ },
+ {
+  "id": "ss-accommodation-037",
+  "topic": "accommodation",
+  "level": "B1",
+  "text": {
+   "en": "Could you keep my bag until my train leaves this evening?",
+   "it": "Potrebbe tenere la mia borsa fino alla partenza del treno stasera?",
+   "es": "¿Podría guardar mi bolsa hasta que salga mi tren esta tarde?",
+   "pt": "Podia guardar a minha mala até o meu comboio partir esta noite?",
+   "pt_BR": "Você poderia guardar minha mala até meu trem sair hoje à noite?",
+   "fr": "Pourriez-vous garder mon sac jusqu'au départ de mon train ce soir ?",
+   "de": "Könnten Sie meine Tasche aufbewahren, bis mein Zug heute Abend fährt?"
+  }
+ },
+ {
+  "id": "ss-accommodation-038",
+  "topic": "accommodation",
+  "level": "B1",
+  "text": {
+   "en": "The shower drain is blocked, could someone take a look?",
+   "it": "Lo scarico della doccia è intasato, qualcuno può dare un'occhiata?",
+   "es": "El desagüe de la ducha está atascado, ¿alguien puede echarle un vistazo?",
+   "pt": "O ralo do duche está entupido, alguém pode ver?",
+   "pt_BR": "O ralo do chuveiro está entupido, alguém pode dar uma olhada?",
+   "fr": "L'évacuation de la douche est bouchée, quelqu'un peut-il jeter un œil ?",
+   "de": "Der Abfluss in der Dusche ist verstopft, kann sich das jemand ansehen?"
+  }
+ },
+ {
+  "id": "ss-accommodation-039",
+  "topic": "accommodation",
+  "level": "B1",
+  "text": {
+   "en": "Is there a quiet place where I can work with my laptop?",
+   "it": "C'è un posto tranquillo dove posso lavorare con il portatile?",
+   "es": "¿Hay algún lugar tranquilo donde pueda trabajar con el portátil?",
+   "pt": "Há algum sítio sossegado onde possa trabalhar com o portátil?",
+   "pt_BR": "Tem algum lugar tranquilo onde eu possa trabalhar com o notebook?",
+   "fr": "Y a-t-il un endroit calme où je peux travailler avec mon ordinateur portable ?",
+   "de": "Gibt es einen ruhigen Ort, an dem ich mit meinem Laptop arbeiten kann?"
+  }
+ },
+ {
+  "id": "ss-accommodation-040",
+  "topic": "accommodation",
+  "level": "B1",
+  "text": {
+   "en": "What are the house rules about quiet hours?",
+   "it": "Quali sono le regole della casa sugli orari del silenzio?",
+   "es": "¿Cuáles son las normas de la casa sobre las horas de silencio?",
+   "pt": "Quais são as regras da casa sobre o horário de silêncio?",
+   "pt_BR": "Quais são as regras da casa sobre os horários de silêncio?",
+   "fr": "Quelles sont les règles de la maison concernant le calme nocturne ?",
+   "de": "Wie lauten die Hausregeln zu den Ruhezeiten?"
+  }
+ },
+ {
+  "id": "ss-accommodation-041",
+  "topic": "accommodation",
+  "level": "B1",
+  "text": {
+   "en": "I'm looking for a hostel in the city center for next weekend.",
+   "it": "Cerco un ostello in centro città per il prossimo weekend.",
+   "es": "Busco un albergue en el centro para el próximo fin de semana.",
+   "pt": "Procuro um hostel no centro da cidade para o próximo fim de semana.",
+   "pt_BR": "Estou procurando um hostel no centro da cidade para o próximo fim de semana.",
+   "fr": "Je cherche une auberge de jeunesse dans le centre-ville pour le week-end prochain.",
+   "de": "Ich suche für nächstes Wochenende ein Hostel im Stadtzentrum."
+  }
+ },
+ {
+  "id": "ss-accommodation-042",
+  "topic": "accommodation",
+  "level": "B1",
+  "text": {
+   "en": "Could you send the invoice to my email address?",
+   "it": "Potrebbe inviare la fattura al mio indirizzo email?",
+   "es": "¿Podría enviar la factura a mi correo electrónico?",
+   "pt": "Podia enviar a fatura para o meu email?",
+   "pt_BR": "Você poderia enviar a nota fiscal para o meu e-mail?",
+   "fr": "Pourriez-vous envoyer la facture à mon adresse e-mail ?",
+   "de": "Könnten Sie die Rechnung an meine E-Mail-Adresse schicken?"
+  }
+ },
+ {
+  "id": "ss-accommodation-043",
+  "topic": "accommodation",
+  "level": "B1",
+  "text": {
+   "en": "How far is the hotel from the train station?",
+   "it": "Quanto dista l'hotel dalla stazione ferroviaria?",
+   "es": "¿A qué distancia está el hotel de la estación de tren?",
+   "pt": "A que distância fica o hotel da estação de comboios?",
+   "pt_BR": "Qual é a distância do hotel até a estação de trem?",
+   "fr": "À quelle distance de la gare se trouve l'hôtel ?",
+   "de": "Wie weit ist das Hotel vom Bahnhof entfernt?"
+  }
+ },
+ {
+  "id": "ss-accommodation-044",
+  "topic": "accommodation",
+  "level": "B2",
+  "text": {
+   "en": "I'd like to dispute a charge on my bill that I don't recognize.",
+   "it": "Vorrei contestare un addebito sul conto che non riconosco.",
+   "es": "Me gustaría reclamar un cargo en la factura que no reconozco.",
+   "pt": "Gostaria de contestar um valor na conta que não reconheço.",
+   "pt_BR": "Gostaria de contestar uma cobrança na conta que não reconheço.",
+   "fr": "Je voudrais contester un montant sur ma note que je ne reconnais pas.",
+   "de": "Ich möchte eine Position auf meiner Rechnung beanstanden, die ich nicht kenne."
+  }
+ },
+ {
+  "id": "ss-accommodation-045",
+  "topic": "accommodation",
+  "level": "B2",
+  "text": {
+   "en": "The room doesn't match the photos on the listing, so I'd like a partial refund.",
+   "it": "La camera non corrisponde alle foto dell'annuncio, quindi vorrei un rimborso parziale.",
+   "es": "La habitación no se parece a las fotos del anuncio, así que me gustaría un reembolso parcial.",
+   "pt": "O quarto não corresponde às fotografias do anúncio, por isso gostaria de um reembolso parcial.",
+   "pt_BR": "O quarto não corresponde às fotos do anúncio, então gostaria de um reembolso parcial.",
+   "fr": "La chambre ne correspond pas aux photos de l'annonce, je souhaiterais donc un remboursement partiel.",
+   "de": "Das Zimmer entspricht nicht den Fotos der Anzeige, deshalb möchte ich eine teilweise Erstattung."
+  }
+ },
+ {
+  "id": "ss-accommodation-046",
+  "topic": "accommodation",
+  "level": "B2",
+  "text": {
+   "en": "I'll arrive after midnight, so could you leave the key somewhere safe for me?",
+   "it": "Arriverò dopo mezzanotte: potreste lasciarmi la chiave in un posto sicuro?",
+   "es": "Llegaré pasada la medianoche, ¿podrían dejarme la llave en un lugar seguro?",
+   "pt": "Chegarei depois da meia-noite; podiam deixar-me a chave num sítio seguro?",
+   "pt_BR": "Vou chegar depois da meia-noite; vocês poderiam deixar a chave em um lugar seguro para mim?",
+   "fr": "J'arriverai après minuit : pourriez-vous me laisser la clé dans un endroit sûr ?",
+   "de": "Ich komme erst nach Mitternacht an. Könnten Sie den Schlüssel an einem sicheren Ort hinterlegen?"
+  }
+ },
+ {
+  "id": "ss-accommodation-047",
+  "topic": "accommodation",
+  "level": "B2",
+  "text": {
+   "en": "Would it be possible to upgrade us to a larger room if one becomes available?",
+   "it": "Sarebbe possibile passare a una camera più grande, se se ne libera una?",
+   "es": "¿Sería posible cambiarnos a una habitación más grande si queda alguna libre?",
+   "pt": "Seria possível mudarem-nos para um quarto maior, se ficar algum livre?",
+   "pt_BR": "Seria possível trocar para um quarto maior, caso algum fique disponível?",
+   "fr": "Serait-il possible de nous surclasser dans une chambre plus grande si une se libère ?",
+   "de": "Wäre es möglich, uns in ein größeres Zimmer umzuquartieren, falls eines frei wird?"
+  }
+ },
+ {
+  "id": "ss-accommodation-048",
+  "topic": "accommodation",
+  "level": "B2",
+  "text": {
+   "en": "I'm planning to stay for a month, so do you offer a discount for long stays?",
+   "it": "Ho intenzione di fermarmi un mese: fate sconti per soggiorni lunghi?",
+   "es": "Pienso quedarme un mes, ¿ofrecen descuento por estancias largas?",
+   "pt": "Pretendo ficar um mês; têm desconto para estadias longas?",
+   "pt_BR": "Pretendo ficar um mês; vocês oferecem desconto para estadias longas?",
+   "fr": "Je compte rester un mois : proposez-vous une réduction pour les longs séjours ?",
+   "de": "Ich plane, einen Monat zu bleiben. Bieten Sie einen Rabatt für längere Aufenthalte an?"
+  }
+ },
+ {
+  "id": "ss-accommodation-049",
+  "topic": "accommodation",
+  "level": "B2",
+  "text": {
+   "en": "Before I sign the rental agreement, could you clarify what the deposit covers and when it's returned?",
+   "it": "Prima di firmare il contratto d'affitto, può chiarire cosa copre la caparra e quando viene restituita?",
+   "es": "Antes de firmar el contrato de alquiler, ¿podría aclarar qué cubre la fianza y cuándo se devuelve?",
+   "pt": "Antes de assinar o contrato de arrendamento, podia esclarecer o que a caução cobre e quando é devolvida?",
+   "pt_BR": "Antes de assinar o contrato de aluguel, você poderia esclarecer o que o depósito caução cobre e quando ele é devolvido?",
+   "fr": "Avant de signer le bail, pourriez-vous préciser ce que couvre la caution et quand elle est restituée ?",
+   "de": "Bevor ich den Mietvertrag unterschreibe, könnten Sie erklären, was die Kaution abdeckt und wann sie zurückgezahlt wird?"
+  }
+ },
+ {
+  "id": "ss-accommodation-050",
+  "topic": "accommodation",
+  "level": "B2",
+  "text": {
+   "en": "We had problems with the heating all night, and nobody answered the reception phone.",
+   "it": "Abbiamo avuto problemi con il riscaldamento tutta la notte e nessuno rispondeva al telefono della reception.",
+   "es": "Tuvimos problemas con la calefacción toda la noche y nadie contestaba el teléfono de recepción.",
+   "pt": "Tivemos problemas com o aquecimento a noite toda e ninguém atendia o telefone da receção.",
+   "pt_BR": "Tivemos problemas com o aquecimento a noite toda e ninguém atendia o telefone da recepção.",
+   "fr": "Nous avons eu des problèmes de chauffage toute la nuit et personne ne répondait au téléphone de la réception.",
+   "de": "Wir hatten die ganze Nacht Probleme mit der Heizung, und niemand ging an das Rezeptionstelefon."
+  }
+ },
+ {
+  "id": "ss-health_emergency-001",
+  "topic": "health_emergency",
+  "level": "A1",
+  "text": {
+   "en": "I need help.",
+   "it": "Ho bisogno di aiuto.",
+   "es": "Necesito ayuda.",
+   "pt": "Preciso de ajuda.",
+   "pt_BR": "Eu preciso de ajuda.",
+   "fr": "J'ai besoin d'aide.",
+   "de": "Ich brauche Hilfe."
+  }
+ },
+ {
+  "id": "ss-health_emergency-002",
+  "topic": "health_emergency",
+  "level": "A1",
+  "text": {
+   "en": "Please call an ambulance.",
+   "it": "Chiami un'ambulanza, per favore.",
+   "es": "Llame a una ambulancia, por favor.",
+   "pt": "Por favor, chame uma ambulância.",
+   "pt_BR": "Chame uma ambulância, por favor.",
+   "fr": "Appelez une ambulance, s'il vous plaît.",
+   "de": "Rufen Sie bitte einen Krankenwagen."
+  }
+ },
+ {
+  "id": "ss-health_emergency-003",
+  "topic": "health_emergency",
+  "level": "A1",
+  "text": {
+   "en": "I am not feeling well.",
+   "it": "Non mi sento bene.",
+   "es": "No me siento bien.",
+   "pt": "Não me sinto bem.",
+   "pt_BR": "Eu não estou me sentindo bem.",
+   "fr": "Je ne me sens pas bien.",
+   "de": "Ich fühle mich nicht gut."
+  }
+ },
+ {
+  "id": "ss-health_emergency-004",
+  "topic": "health_emergency",
+  "level": "A1",
+  "text": {
+   "en": "Where is the hospital?",
+   "it": "Dov'è l'ospedale?",
+   "es": "¿Dónde está el hospital?",
+   "pt": "Onde fica o hospital?",
+   "pt_BR": "Onde é o hospital?",
+   "fr": "Où est l'hôpital ?",
+   "de": "Wo ist das Krankenhaus?"
+  }
+ },
+ {
+  "id": "ss-health_emergency-005",
+  "topic": "health_emergency",
+  "level": "A1",
+  "text": {
+   "en": "I need a doctor.",
+   "it": "Ho bisogno di un medico.",
+   "es": "Necesito un médico.",
+   "pt": "Preciso de um médico.",
+   "pt_BR": "Eu preciso de um médico.",
+   "fr": "J'ai besoin d'un médecin.",
+   "de": "Ich brauche einen Arzt."
+  }
+ },
+ {
+  "id": "ss-health_emergency-006",
+  "topic": "health_emergency",
+  "level": "A1",
+  "text": {
+   "en": "My head hurts.",
+   "it": "Mi fa male la testa.",
+   "es": "Me duele la cabeza.",
+   "pt": "Dói-me a cabeça.",
+   "pt_BR": "Estou com dor de cabeça.",
+   "fr": "J'ai mal à la tête.",
+   "de": "Ich habe Kopfschmerzen."
+  }
+ },
+ {
+  "id": "ss-health_emergency-007",
+  "topic": "health_emergency",
+  "level": "A1",
+  "text": {
+   "en": "My stomach hurts.",
+   "it": "Mi fa male lo stomaco.",
+   "es": "Me duele el estómago.",
+   "pt": "Dói-me o estômago.",
+   "pt_BR": "Estou com dor de estômago.",
+   "fr": "J'ai mal au ventre.",
+   "de": "Ich habe Bauchschmerzen."
+  }
+ },
+ {
+  "id": "ss-health_emergency-008",
+  "topic": "health_emergency",
+  "level": "A1",
+  "text": {
+   "en": "I have a fever.",
+   "it": "Ho la febbre.",
+   "es": "Tengo fiebre.",
+   "pt": "Tenho febre.",
+   "pt_BR": "Estou com febre.",
+   "fr": "J'ai de la fièvre.",
+   "de": "Ich habe Fieber."
+  }
+ },
+ {
+  "id": "ss-health_emergency-009",
+  "topic": "health_emergency",
+  "level": "A1",
+  "text": {
+   "en": "I am allergic to penicillin.",
+   "it": "Ho un'allergia alla penicillina.",
+   "es": "Tengo alergia a la penicilina.",
+   "pt": "Tenho alergia à penicilina.",
+   "pt_BR": "Tenho alergia a penicilina.",
+   "fr": "J'ai une allergie à la pénicilline.",
+   "de": "Ich bin allergisch gegen Penicillin."
+  }
+ },
+ {
+  "id": "ss-health_emergency-010",
+  "topic": "health_emergency",
+  "level": "A1",
+  "text": {
+   "en": "Please call the police.",
+   "it": "Chiami la polizia, per favore.",
+   "es": "Llame a la policía, por favor.",
+   "pt": "Por favor, chame a polícia.",
+   "pt_BR": "Chame a polícia, por favor.",
+   "fr": "Appelez la police, s'il vous plaît.",
+   "de": "Rufen Sie bitte die Polizei."
+  }
+ },
+ {
+  "id": "ss-health_emergency-011",
+  "topic": "health_emergency",
+  "level": "A1",
+  "text": {
+   "en": "It hurts here.",
+   "it": "Mi fa male qui.",
+   "es": "Me duele aquí.",
+   "pt": "Dói-me aqui.",
+   "pt_BR": "Dói aqui.",
+   "fr": "J'ai mal ici.",
+   "de": "Es tut hier weh."
+  }
+ },
+ {
+  "id": "ss-health_emergency-012",
+  "topic": "health_emergency",
+  "level": "A1",
+  "text": {
+   "en": "Where is the pharmacy?",
+   "it": "Dov'è la farmacia?",
+   "es": "¿Dónde está la farmacia?",
+   "pt": "Onde fica a farmácia?",
+   "pt_BR": "Onde tem uma farmácia?",
+   "fr": "Où est la pharmacie ?",
+   "de": "Wo ist die Apotheke?"
+  }
+ },
+ {
+  "id": "ss-health_emergency-013",
+  "topic": "health_emergency",
+  "level": "A1",
+  "text": {
+   "en": "I cannot breathe well.",
+   "it": "Non riesco a respirare bene.",
+   "es": "No puedo respirar bien.",
+   "pt": "Não consigo respirar bem.",
+   "pt_BR": "Não consigo respirar direito.",
+   "fr": "Je n'arrive pas à bien respirer.",
+   "de": "Ich bekomme schlecht Luft."
+  }
+ },
+ {
+  "id": "ss-health_emergency-014",
+  "topic": "health_emergency",
+  "level": "A1",
+  "text": {
+   "en": "I feel dizzy.",
+   "it": "Mi gira la testa.",
+   "es": "Me da vueltas la cabeza.",
+   "pt": "Sinto tonturas.",
+   "pt_BR": "Estou com tontura.",
+   "fr": "J'ai la tête qui tourne.",
+   "de": "Mir ist schwindelig."
+  }
+ },
+ {
+  "id": "ss-health_emergency-015",
+  "topic": "health_emergency",
+  "level": "A1",
+  "text": {
+   "en": "Is there a doctor here?",
+   "it": "C'è un medico qui?",
+   "es": "¿Hay algún médico aquí?",
+   "pt": "Há aqui algum médico?",
+   "pt_BR": "Tem algum médico aqui?",
+   "fr": "Y a-t-il un médecin ici ?",
+   "de": "Gibt es hier einen Arzt?"
+  }
+ },
+ {
+  "id": "ss-health_emergency-016",
+  "topic": "health_emergency",
+  "level": "A2",
+  "text": {
+   "en": "I have felt sick since yesterday.",
+   "it": "Sto male da ieri.",
+   "es": "Me encuentro mal desde ayer.",
+   "pt": "Sinto-me mal desde ontem.",
+   "pt_BR": "Estou passando mal desde ontem.",
+   "fr": "Je ne me sens pas bien depuis hier.",
+   "de": "Mir geht es seit gestern schlecht."
+  }
+ },
+ {
+  "id": "ss-health_emergency-017",
+  "topic": "health_emergency",
+  "level": "A2",
+  "text": {
+   "en": "I need to see a dentist.",
+   "it": "Devo andare dal dentista.",
+   "es": "Necesito ir al dentista.",
+   "pt": "Preciso de ir ao dentista.",
+   "pt_BR": "Preciso ir ao dentista.",
+   "fr": "Je dois aller chez le dentiste.",
+   "de": "Ich muss zum Zahnarzt."
+  }
+ },
+ {
+  "id": "ss-health_emergency-018",
+  "topic": "health_emergency",
+  "level": "A2",
+  "text": {
+   "en": "Someone has fainted, please help us.",
+   "it": "Qualcuno è svenuto, per favore aiutateci.",
+   "es": "Alguien se ha desmayado, por favor ayúdennos.",
+   "pt": "Alguém desmaiou, por favor ajudem-nos.",
+   "pt_BR": "Alguém desmaiou, por favor nos ajudem.",
+   "fr": "Quelqu'un s'est évanoui, aidez-nous s'il vous plaît.",
+   "de": "Jemand ist ohnmächtig geworden, bitte helfen Sie uns."
+  }
+ },
+ {
+  "id": "ss-health_emergency-019",
+  "topic": "health_emergency",
+  "level": "A2",
+  "text": {
+   "en": "I have a cut on my hand and it is bleeding.",
+   "it": "Ho un taglio alla mano e sanguina.",
+   "es": "Tengo un corte en la mano y sangra.",
+   "pt": "Tenho um corte na mão e está a sangrar.",
+   "pt_BR": "Estou com um corte na mão e está sangrando.",
+   "fr": "J'ai une coupure à la main et elle saigne.",
+   "de": "Ich habe eine Schnittwunde an der Hand, und sie blutet."
+  }
+ },
+ {
+  "id": "ss-health_emergency-020",
+  "topic": "health_emergency",
+  "level": "A2",
+  "text": {
+   "en": "I need to take my medicine.",
+   "it": "Devo prendere la mia medicina.",
+   "es": "Tengo que tomar mi medicación.",
+   "pt": "Tenho de tomar a minha medicação.",
+   "pt_BR": "Preciso tomar o meu remédio.",
+   "fr": "Je dois prendre mon médicament.",
+   "de": "Ich muss meine Medikamente nehmen."
+  }
+ },
+ {
+  "id": "ss-health_emergency-021",
+  "topic": "health_emergency",
+  "level": "A2",
+  "text": {
+   "en": "Do you have something for a headache?",
+   "it": "Ha qualcosa per il mal di testa?",
+   "es": "¿Tiene algo para el dolor de cabeza?",
+   "pt": "Tem alguma coisa para as dores de cabeça?",
+   "pt_BR": "Você tem algo para dor de cabeça?",
+   "fr": "Avez-vous quelque chose contre le mal de tête ?",
+   "de": "Haben Sie etwas gegen Kopfschmerzen?"
+  }
+ },
+ {
+  "id": "ss-health_emergency-022",
+  "topic": "health_emergency",
+  "level": "A2",
+  "text": {
+   "en": "I think I have food poisoning.",
+   "it": "Credo di avere un'intossicazione alimentare.",
+   "es": "Creo que tengo una intoxicación alimentaria.",
+   "pt": "Acho que tenho uma intoxicação alimentar.",
+   "pt_BR": "Acho que estou com intoxicação alimentar.",
+   "fr": "Je crois que j'ai une intoxication alimentaire.",
+   "de": "Ich glaube, ich habe eine Lebensmittelvergiftung."
+  }
+ },
+ {
+  "id": "ss-health_emergency-023",
+  "topic": "health_emergency",
+  "level": "A2",
+  "text": {
+   "en": "How long do I have to wait?",
+   "it": "Quanto devo aspettare?",
+   "es": "¿Cuánto tengo que esperar?",
+   "pt": "Quanto tempo tenho de esperar?",
+   "pt_BR": "Quanto tempo vou ter que esperar?",
+   "fr": "Combien de temps dois-je attendre ?",
+   "de": "Wie lange muss ich warten?"
+  }
+ },
+ {
+  "id": "ss-health_emergency-024",
+  "topic": "health_emergency",
+  "level": "A2",
+  "text": {
+   "en": "Does anyone here speak English?",
+   "it": "C'è qualcuno che parla inglese?",
+   "es": "¿Alguien habla inglés aquí?",
+   "pt": "Alguém aqui fala inglês?",
+   "pt_BR": "Tem alguém aqui que fale inglês?",
+   "fr": "Quelqu'un parle-t-il anglais ici ?",
+   "de": "Spricht hier jemand Englisch?"
+  }
+ },
+ {
+  "id": "ss-health_emergency-025",
+  "topic": "health_emergency",
+  "level": "A2",
+  "text": {
+   "en": "I have a very bad toothache.",
+   "it": "Ho un fortissimo mal di denti.",
+   "es": "Tengo un dolor de muelas terrible.",
+   "pt": "Tenho uma dor de dentes horrível.",
+   "pt_BR": "Estou com uma dor de dente horrível.",
+   "fr": "J'ai très mal aux dents.",
+   "de": "Ich habe starke Zahnschmerzen."
+  }
+ },
+ {
+  "id": "ss-health_emergency-026",
+  "topic": "health_emergency",
+  "level": "A2",
+  "text": {
+   "en": "I twisted my ankle.",
+   "it": "Ho preso una storta alla caviglia.",
+   "es": "Me he torcido el tobillo.",
+   "pt": "Torci o tornozelo.",
+   "pt_BR": "Eu torci o tornozelo.",
+   "fr": "Je me suis tordu la cheville.",
+   "de": "Ich habe mir den Knöchel verstaucht."
+  }
+ },
+ {
+  "id": "ss-health_emergency-027",
+  "topic": "health_emergency",
+  "level": "A2",
+  "text": {
+   "en": "Where is the emergency room?",
+   "it": "Dov'è il pronto soccorso?",
+   "es": "¿Dónde están las urgencias?",
+   "pt": "Onde fica o serviço de urgência?",
+   "pt_BR": "Onde fica o pronto-socorro?",
+   "fr": "Où sont les urgences ?",
+   "de": "Wo ist die Notaufnahme?"
+  }
+ },
+ {
+  "id": "ss-health_emergency-028",
+  "topic": "health_emergency",
+  "level": "A2",
+  "text": {
+   "en": "I need a prescription for my medicine.",
+   "it": "Mi serve una ricetta per il mio farmaco.",
+   "es": "Necesito una receta para mi medicamento.",
+   "pt": "Preciso de uma receita para o meu medicamento.",
+   "pt_BR": "Preciso de uma receita para o meu remédio.",
+   "fr": "J'ai besoin d'une ordonnance pour mon médicament.",
+   "de": "Ich brauche ein Rezept für mein Medikament."
+  }
+ },
+ {
+  "id": "ss-health_emergency-029",
+  "topic": "health_emergency",
+  "level": "A2",
+  "text": {
+   "en": "The baby has a high fever.",
+   "it": "Il bebè ha la febbre alta.",
+   "es": "El bebé tiene fiebre alta.",
+   "pt": "O bebé tem febre alta.",
+   "pt_BR": "O bebê está com febre alta.",
+   "fr": "Le bébé a de la fièvre.",
+   "de": "Das Baby hat hohes Fieber."
+  }
+ },
+ {
+  "id": "ss-health_emergency-030",
+  "topic": "health_emergency",
+  "level": "A2",
+  "text": {
+   "en": "Please stay with me until the ambulance arrives.",
+   "it": "Resti con me finché non arriva l'ambulanza, per favore.",
+   "es": "Quédese conmigo hasta que llegue la ambulancia, por favor.",
+   "pt": "Por favor, fique comigo até chegar a ambulância.",
+   "pt_BR": "Fique comigo até a ambulância chegar, por favor.",
+   "fr": "Restez avec moi jusqu'à l'arrivée de l'ambulance, s'il vous plaît.",
+   "de": "Bleiben Sie bitte bei mir, bis der Krankenwagen kommt."
+  }
+ },
+ {
+  "id": "ss-health_emergency-031",
+  "topic": "health_emergency",
+  "level": "B1",
+  "text": {
+   "en": "I need to find a pharmacy that is open at night.",
+   "it": "Devo trovare una farmacia aperta di notte.",
+   "es": "Necesito encontrar una farmacia de guardia.",
+   "pt": "Preciso de encontrar uma farmácia aberta à noite.",
+   "pt_BR": "Preciso encontrar uma farmácia aberta à noite.",
+   "fr": "Je dois trouver une pharmacie ouverte la nuit.",
+   "de": "Ich muss eine Apotheke finden, die nachts geöffnet hat."
+  }
+ },
+ {
+  "id": "ss-health_emergency-032",
+  "topic": "health_emergency",
+  "level": "B1",
+  "text": {
+   "en": "I have been taking this medication for two weeks.",
+   "it": "Prendo questo farmaco da due settimane.",
+   "es": "Llevo dos semanas tomando este medicamento.",
+   "pt": "Tomo este medicamento há duas semanas.",
+   "pt_BR": "Estou tomando este remédio há duas semanas.",
+   "fr": "Je prends ce médicament depuis deux semaines.",
+   "de": "Ich nehme dieses Medikament seit zwei Wochen."
+  }
+ },
+ {
+  "id": "ss-health_emergency-033",
+  "topic": "health_emergency",
+  "level": "B1",
+  "text": {
+   "en": "Could you explain the side effects of this medicine?",
+   "it": "Può spiegarmi gli effetti collaterali di questo farmaco?",
+   "es": "¿Podría explicarme los efectos secundarios de este medicamento?",
+   "pt": "Podia explicar-me os efeitos secundários deste medicamento?",
+   "pt_BR": "Você poderia me explicar os efeitos colaterais deste remédio?",
+   "fr": "Pourriez-vous m'expliquer les effets secondaires de ce médicament ?",
+   "de": "Könnten Sie mir die Nebenwirkungen dieses Medikaments erklären?"
+  }
+ },
+ {
+  "id": "ss-health_emergency-034",
+  "topic": "health_emergency",
+  "level": "B1",
+  "text": {
+   "en": "I have a chronic condition and I need to keep taking my medication.",
+   "it": "Ho una malattia cronica e devo continuare a prendere i miei farmaci.",
+   "es": "Tengo una enfermedad crónica y necesito seguir tomando mi medicación.",
+   "pt": "Tenho uma doença crónica e preciso de continuar a tomar a minha medicação.",
+   "pt_BR": "Tenho uma doença crônica e preciso continuar tomando meus remédios.",
+   "fr": "J'ai une maladie chronique et je dois continuer à prendre mon traitement.",
+   "de": "Ich habe eine chronische Erkrankung und muss meine Medikamente weiter einnehmen."
+  }
+ },
+ {
+  "id": "ss-health_emergency-035",
+  "topic": "health_emergency",
+  "level": "B1",
+  "text": {
+   "en": "Does my travel insurance cover this treatment?",
+   "it": "La mia assicurazione di viaggio copre questa cura?",
+   "es": "¿Mi seguro de viaje cubre este tratamiento?",
+   "pt": "O meu seguro de viagem cobre este tratamento?",
+   "pt_BR": "O meu seguro viagem cobre este tratamento?",
+   "fr": "Mon assurance voyage couvre-t-elle ce traitement ?",
+   "de": "Deckt meine Reiseversicherung diese Behandlung ab?"
+  }
+ },
+ {
+  "id": "ss-health_emergency-036",
+  "topic": "health_emergency",
+  "level": "B1",
+  "text": {
+   "en": "Can I get a medical certificate for my employer?",
+   "it": "Posso avere un certificato medico per il mio datore di lavoro?",
+   "es": "¿Me puede dar un justificante médico para mi trabajo?",
+   "pt": "Pode passar-me um atestado médico para a minha entidade patronal?",
+   "pt_BR": "Posso pegar um atestado médico para o meu trabalho?",
+   "fr": "Puis-je avoir un certificat médical pour mon employeur ?",
+   "de": "Kann ich eine Krankschreibung für meinen Arbeitgeber bekommen?"
+  }
+ },
+ {
+  "id": "ss-health_emergency-037",
+  "topic": "health_emergency",
+  "level": "B1",
+  "text": {
+   "en": "The pain started suddenly about an hour ago.",
+   "it": "Il dolore è iniziato all'improvviso circa un'ora fa.",
+   "es": "El dolor empezó de repente hace una hora más o menos.",
+   "pt": "A dor começou de repente há cerca de uma hora.",
+   "pt_BR": "A dor começou de repente há mais ou menos uma hora.",
+   "fr": "La douleur a commencé brusquement il y a environ une heure.",
+   "de": "Der Schmerz hat vor etwa einer Stunde plötzlich angefangen."
+  }
+ },
+ {
+  "id": "ss-health_emergency-038",
+  "topic": "health_emergency",
+  "level": "B1",
+  "text": {
+   "en": "I need someone who can translate for me at the clinic.",
+   "it": "Ho bisogno di qualcuno che mi faccia da interprete in ambulatorio.",
+   "es": "Necesito a alguien que me traduzca en la clínica.",
+   "pt": "Preciso de alguém que me sirva de intérprete na clínica.",
+   "pt_BR": "Preciso de alguém que traduza para mim na clínica.",
+   "fr": "J'ai besoin de quelqu'un pour me servir d'interprète à la clinique.",
+   "de": "Ich brauche jemanden, der in der Klinik für mich dolmetscht."
+  }
+ },
+ {
+  "id": "ss-health_emergency-039",
+  "topic": "health_emergency",
+  "level": "B1",
+  "text": {
+   "en": "Is it serious, or can it wait until tomorrow?",
+   "it": "È grave o può aspettare fino a domani?",
+   "es": "¿Es grave o puede esperar hasta mañana?",
+   "pt": "É grave ou pode esperar até amanhã?",
+   "pt_BR": "Isso é grave ou pode esperar até amanhã?",
+   "fr": "Est-ce grave, ou cela peut-il attendre demain ?",
+   "de": "Ist es ernst, oder kann es bis morgen warten?"
+  }
+ },
+ {
+  "id": "ss-health_emergency-040",
+  "topic": "health_emergency",
+  "level": "B1",
+  "text": {
+   "en": "I lost my glasses and I can't see well without them.",
+   "it": "Ho perso gli occhiali e senza non vedo bene.",
+   "es": "He perdido las gafas y sin ellas no veo bien.",
+   "pt": "Perdi os óculos e sem eles não vejo bem.",
+   "pt_BR": "Perdi meus óculos e sem eles não enxergo bem.",
+   "fr": "J'ai perdu mes lunettes et je ne vois pas bien sans.",
+   "de": "Ich habe meine Brille verloren und sehe ohne sie schlecht."
+  }
+ },
+ {
+  "id": "ss-health_emergency-041",
+  "topic": "health_emergency",
+  "level": "B1",
+  "text": {
+   "en": "I have diabetes, so I need to eat something soon.",
+   "it": "Ho il diabete, quindi devo mangiare qualcosa presto.",
+   "es": "Tengo diabetes, así que necesito comer algo pronto.",
+   "pt": "Tenho diabetes, por isso preciso de comer algo em breve.",
+   "pt_BR": "Tenho diabetes, então preciso comer alguma coisa logo.",
+   "fr": "J'ai du diabète, donc je dois manger quelque chose rapidement.",
+   "de": "Ich habe Diabetes, deshalb muss ich bald etwas essen."
+  }
+ },
+ {
+  "id": "ss-health_emergency-042",
+  "topic": "health_emergency",
+  "level": "B1",
+  "text": {
+   "en": "Could you write down the doctor's instructions for me?",
+   "it": "Può scrivermi le istruzioni del medico?",
+   "es": "¿Podría escribirme las indicaciones del médico?",
+   "pt": "Podia escrever-me as indicações do médico?",
+   "pt_BR": "Você poderia anotar as instruções do médico para mim?",
+   "fr": "Pourriez-vous m'écrire les instructions du médecin ?",
+   "de": "Könnten Sie mir die Anweisungen des Arztes aufschreiben?"
+  }
+ },
+ {
+  "id": "ss-health_emergency-043",
+  "topic": "health_emergency",
+  "level": "B1",
+  "text": {
+   "en": "A wasp stung me and my arm is swelling.",
+   "it": "Mi ha punto una vespa e il braccio si sta gonfiando.",
+   "es": "Me ha picado una avispa y el brazo se me está hinchando.",
+   "pt": "Uma vespa picou-me e o braço está a inchar.",
+   "pt_BR": "Uma vespa me picou e meu braço está inchando.",
+   "fr": "Une guêpe m'a piqué et mon bras gonfle.",
+   "de": "Eine Wespe hat mich gestochen, und mein Arm schwillt an."
+  }
+ },
+ {
+  "id": "ss-health_emergency-044",
+  "topic": "health_emergency",
+  "level": "B2",
+  "text": {
+   "en": "I have a severe nut allergy, so please check that this medicine contains none.",
+   "it": "Ho una grave allergia alla frutta secca, quindi controlli per favore che questo farmaco non ne contenga.",
+   "es": "Tengo una alergia grave a los frutos secos, así que compruebe, por favor, que este medicamento no contiene ninguno.",
+   "pt": "Tenho uma alergia grave a frutos secos, por isso verifique, por favor, se este medicamento não os contém.",
+   "pt_BR": "Tenho uma alergia grave a oleaginosas, então verifique, por favor, se este remédio não contém nenhuma.",
+   "fr": "J'ai une allergie grave aux fruits à coque, alors vérifiez s'il vous plaît que ce médicament n'en contient pas.",
+   "de": "Ich habe eine schwere Nussallergie, bitte prüfen Sie daher, ob dieses Medikament keine enthält."
+  }
+ },
+ {
+  "id": "ss-health_emergency-045",
+  "topic": "health_emergency",
+  "level": "B2",
+  "text": {
+   "en": "I would like a second opinion before agreeing to the surgery.",
+   "it": "Vorrei un secondo parere prima di accettare l'intervento.",
+   "es": "Me gustaría una segunda opinión antes de aceptar la operación.",
+   "pt": "Gostaria de uma segunda opinião antes de aceitar a cirurgia.",
+   "pt_BR": "Eu gostaria de pedir uma segunda opinião antes de concordar com a cirurgia.",
+   "fr": "Je voudrais un deuxième avis avant d'accepter l'opération.",
+   "de": "Ich möchte eine zweite Meinung einholen, bevor ich der Operation zustimme."
+  }
+ },
+ {
+  "id": "ss-health_emergency-046",
+  "topic": "health_emergency",
+  "level": "B2",
+  "text": {
+   "en": "Please contact my family and let them know where I am.",
+   "it": "Per favore, contatti la mia famiglia e le dica dove mi trovo.",
+   "es": "Por favor, contacte con mi familia y avíseles de dónde estoy.",
+   "pt": "Por favor, contacte a minha família e diga-lhes onde estou.",
+   "pt_BR": "Por favor, entre em contato com minha família e avise onde estou.",
+   "fr": "Veuillez contacter ma famille et lui dire où je suis.",
+   "de": "Bitte kontaktieren Sie meine Familie und sagen Sie ihr, wo ich bin."
+  }
+ },
+ {
+  "id": "ss-health_emergency-047",
+  "topic": "health_emergency",
+  "level": "B2",
+  "text": {
+   "en": "I need to know whether I can fly after this treatment.",
+   "it": "Devo sapere se posso prendere l'aereo dopo questa cura.",
+   "es": "Necesito saber si puedo viajar en avión después de este tratamiento.",
+   "pt": "Preciso de saber se posso viajar de avião depois deste tratamento.",
+   "pt_BR": "Preciso saber se posso viajar de avião depois deste tratamento.",
+   "fr": "J'ai besoin de savoir si je peux prendre l'avion après ce traitement.",
+   "de": "Ich muss wissen, ob ich nach dieser Behandlung fliegen darf."
+  }
+ },
+ {
+  "id": "ss-health_emergency-048",
+  "topic": "health_emergency",
+  "level": "B2",
+  "text": {
+   "en": "My symptoms have gotten worse since this morning, and the medicine isn't helping.",
+   "it": "I sintomi sono peggiorati da stamattina e il farmaco non aiuta.",
+   "es": "Mis síntomas han empeorado desde esta mañana y la medicina no me hace efecto.",
+   "pt": "Os meus sintomas pioraram desde esta manhã e o medicamento não está a fazer efeito.",
+   "pt_BR": "Meus sintomas pioraram desde esta manhã e o remédio não está fazendo efeito.",
+   "fr": "Mes symptômes ont empiré depuis ce matin et le médicament ne fait aucun effet.",
+   "de": "Meine Symptome haben sich seit heute Morgen verschlimmert, und das Medikament hilft nicht."
+  }
+ },
+ {
+  "id": "ss-health_emergency-049",
+  "topic": "health_emergency",
+  "level": "B2",
+  "text": {
+   "en": "Could you give me a detailed report so my doctor back home can follow up?",
+   "it": "Potrebbe darmi un referto dettagliato così il mio medico a casa può proseguire la cura?",
+   "es": "¿Podría darme un informe detallado para que mi médico en mi país pueda hacer el seguimiento?",
+   "pt": "Podia dar-me um relatório detalhado para que o meu médico no meu país possa dar seguimento?",
+   "pt_BR": "Você poderia me dar um laudo detalhado para que meu médico no meu país possa acompanhar o caso?",
+   "fr": "Pourriez-vous me remettre un compte rendu détaillé pour que mon médecin puisse assurer le suivi chez moi ?",
+   "de": "Könnten Sie mir einen ausführlichen Bericht mitgeben, damit mein Arzt zu Hause die Behandlung weiterführen kann?"
+  }
+ },
+ {
+  "id": "ss-health_emergency-050",
+  "topic": "health_emergency",
+  "level": "B2",
+  "text": {
+   "en": "I don't have my insurance card with me, but I can pay now and claim the money back later.",
+   "it": "Non ho con me la tessera dell'assicurazione, ma posso pagare ora e chiedere il rimborso dopo.",
+   "es": "No llevo la tarjeta del seguro, pero puedo pagar ahora y pedir el reembolso después.",
+   "pt": "Não tenho comigo o cartão do seguro, mas posso pagar agora e pedir o reembolso depois.",
+   "pt_BR": "Não estou com o cartão do seguro, mas posso pagar agora e pedir o reembolso depois.",
+   "fr": "Je n'ai pas ma carte d'assurance sur moi, mais je peux payer maintenant et me faire rembourser ensuite.",
+   "de": "Ich habe meine Versicherungskarte nicht dabei, kann aber jetzt zahlen und mir das Geld später erstatten lassen."
+  }
+ }
+]

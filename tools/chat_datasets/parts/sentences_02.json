@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ss-agree_disagree-001",
+  "topic": "agree_disagree",
+  "level": "A1",
+  "text": {
+   "en": "Yes, I agree.",
+   "it": "Sì, sono d'accordo.",
+   "es": "Sí, estoy de acuerdo.",
+   "pt": "Sim, concordo.",
+   "pt_BR": "Sim, concordo.",
+   "fr": "Oui, je suis d'accord.",
+   "de": "Ja, ich stimme zu."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-002",
+  "topic": "agree_disagree",
+  "level": "A1",
+  "text": {
+   "en": "No, I don't agree.",
+   "it": "No, non sono d'accordo.",
+   "es": "No, no estoy de acuerdo.",
+   "pt": "Não, não concordo.",
+   "pt_BR": "Não, não concordo.",
+   "fr": "Non, je ne suis pas d'accord.",
+   "de": "Nein, da stimme ich nicht zu."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-003",
+  "topic": "agree_disagree",
+  "level": "A1",
+  "text": {
+   "en": "You are right.",
+   "it": "Hai ragione.",
+   "es": "Tienes razón.",
+   "pt": "Tens razão.",
+   "pt_BR": "Você tem razão.",
+   "fr": "Tu as raison.",
+   "de": "Du hast recht."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-004",
+  "topic": "agree_disagree",
+  "level": "A1",
+  "text": {
+   "en": "I think so too.",
+   "it": "Lo penso anch'io.",
+   "es": "Yo también lo creo.",
+   "pt": "Também acho.",
+   "pt_BR": "Eu também acho.",
+   "fr": "Je le pense aussi.",
+   "de": "Das denke ich auch."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-005",
+  "topic": "agree_disagree",
+  "level": "A1",
+  "text": {
+   "en": "Me too!",
+   "it": "Anch'io!",
+   "es": "¡Yo también!",
+   "pt": "Eu também!",
+   "pt_BR": "Eu também!",
+   "fr": "Moi aussi !",
+   "de": "Ich auch!"
+  }
+ },
+ {
+  "id": "ss-agree_disagree-006",
+  "topic": "agree_disagree",
+  "level": "A1",
+  "text": {
+   "en": "Good idea!",
+   "it": "Buona idea!",
+   "es": "¡Buena idea!",
+   "pt": "Boa ideia!",
+   "pt_BR": "Boa ideia!",
+   "fr": "Bonne idée !",
+   "de": "Gute Idee!"
+  }
+ },
+ {
+  "id": "ss-agree_disagree-007",
+  "topic": "agree_disagree",
+  "level": "A1",
+  "text": {
+   "en": "That is true.",
+   "it": "È vero.",
+   "es": "Es verdad.",
+   "pt": "É verdade.",
+   "pt_BR": "É verdade.",
+   "fr": "C'est vrai.",
+   "de": "Das stimmt."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-008",
+  "topic": "agree_disagree",
+  "level": "A1",
+  "text": {
+   "en": "I am not sure.",
+   "it": "Non ne sono sicuro.",
+   "es": "No estoy seguro.",
+   "pt": "Não tenho a certeza.",
+   "pt_BR": "Não tenho certeza.",
+   "fr": "Je n'en suis pas sûr.",
+   "de": "Da bin ich mir nicht sicher."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-009",
+  "topic": "agree_disagree",
+  "level": "A1",
+  "text": {
+   "en": "I don't think so.",
+   "it": "Non credo.",
+   "es": "No lo creo.",
+   "pt": "Acho que não.",
+   "pt_BR": "Acho que não.",
+   "fr": "Je ne crois pas.",
+   "de": "Das glaube ich nicht."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-010",
+  "topic": "agree_disagree",
+  "level": "A1",
+  "text": {
+   "en": "Maybe.",
+   "it": "Forse.",
+   "es": "Quizás.",
+   "pt": "Talvez.",
+   "pt_BR": "Talvez.",
+   "fr": "Peut-être.",
+   "de": "Vielleicht."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-011",
+  "topic": "agree_disagree",
+  "level": "A1",
+  "text": {
+   "en": "Exactly!",
+   "it": "Esatto!",
+   "es": "¡Exacto!",
+   "pt": "Exatamente!",
+   "pt_BR": "Exatamente!",
+   "fr": "Exactement !",
+   "de": "Genau!"
+  }
+ },
+ {
+  "id": "ss-agree_disagree-012",
+  "topic": "agree_disagree",
+  "level": "A1",
+  "text": {
+   "en": "Of course!",
+   "it": "Certo!",
+   "es": "¡Claro!",
+   "pt": "Claro!",
+   "pt_BR": "Claro!",
+   "fr": "Bien sûr !",
+   "de": "Natürlich!"
+  }
+ },
+ {
+  "id": "ss-agree_disagree-013",
+  "topic": "agree_disagree",
+  "level": "A1",
+  "text": {
+   "en": "I like your idea.",
+   "it": "Mi piace la tua idea.",
+   "es": "Me gusta tu idea.",
+   "pt": "Gosto da tua ideia.",
+   "pt_BR": "Gosto da sua ideia.",
+   "fr": "J'aime ton idée.",
+   "de": "Ich mag deine Idee."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-014",
+  "topic": "agree_disagree",
+  "level": "A1",
+  "text": {
+   "en": "That is not true.",
+   "it": "Non è vero.",
+   "es": "No es verdad.",
+   "pt": "Não é verdade.",
+   "pt_BR": "Não é verdade.",
+   "fr": "Ce n'est pas vrai.",
+   "de": "Das stimmt nicht."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-015",
+  "topic": "agree_disagree",
+  "level": "A1",
+  "text": {
+   "en": "I think it is different.",
+   "it": "Penso che sia diverso.",
+   "es": "Creo que es diferente.",
+   "pt": "Acho que é diferente.",
+   "pt_BR": "Acho que é diferente.",
+   "fr": "Je pense que c'est différent.",
+   "de": "Ich denke, es ist anders."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-016",
+  "topic": "agree_disagree",
+  "level": "A2",
+  "text": {
+   "en": "I totally agree with you.",
+   "it": "Sono completamente d'accordo con te.",
+   "es": "Estoy totalmente de acuerdo contigo.",
+   "pt": "Concordo totalmente contigo.",
+   "pt_BR": "Concordo totalmente com você.",
+   "fr": "Je suis complètement d'accord avec toi.",
+   "de": "Da stimme ich dir völlig zu."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-017",
+  "topic": "agree_disagree",
+  "level": "A2",
+  "text": {
+   "en": "I see it a little differently.",
+   "it": "Io la vedo un po' diversamente.",
+   "es": "Yo lo veo un poco distinto.",
+   "pt": "Eu vejo isso de forma um pouco diferente.",
+   "pt_BR": "Eu vejo isso de um jeito um pouco diferente.",
+   "fr": "Moi, je le vois un peu différemment.",
+   "de": "Ich sehe das ein bisschen anders."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-018",
+  "topic": "agree_disagree",
+  "level": "A2",
+  "text": {
+   "en": "That is a good point.",
+   "it": "Questo è un buon punto.",
+   "es": "Es un buen punto.",
+   "pt": "É um bom ponto.",
+   "pt_BR": "É um bom ponto.",
+   "fr": "C'est un bon point.",
+   "de": "Das ist ein gutes Argument."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-019",
+  "topic": "agree_disagree",
+  "level": "A2",
+  "text": {
+   "en": "I understand, but I prefer the other option.",
+   "it": "Capisco, ma preferisco l'altra opzione.",
+   "es": "Lo entiendo, pero prefiero la otra opción.",
+   "pt": "Percebo, mas prefiro a outra opção.",
+   "pt_BR": "Entendo, mas prefiro a outra opção.",
+   "fr": "Je comprends, mais je préfère l'autre option.",
+   "de": "Ich verstehe, aber ich bevorzuge die andere Option."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-020",
+  "topic": "agree_disagree",
+  "level": "A2",
+  "text": {
+   "en": "I have the same opinion.",
+   "it": "Ho la tua stessa opinione.",
+   "es": "Tengo la misma opinión.",
+   "pt": "Tenho a mesma opinião.",
+   "pt_BR": "Tenho a mesma opinião.",
+   "fr": "J'ai la même opinion.",
+   "de": "Ich bin derselben Meinung."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-021",
+  "topic": "agree_disagree",
+  "level": "A2",
+  "text": {
+   "en": "I'm not so sure about that.",
+   "it": "Non ne sono così sicuro.",
+   "es": "No estoy tan seguro de eso.",
+   "pt": "Não tenho tanta certeza disso.",
+   "pt_BR": "Não tenho tanta certeza disso.",
+   "fr": "Je n'en suis pas si sûr.",
+   "de": "Da bin ich mir nicht so sicher."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-022",
+  "topic": "agree_disagree",
+  "level": "A2",
+  "text": {
+   "en": "You may be right.",
+   "it": "Forse hai ragione.",
+   "es": "Puede que tengas razón.",
+   "pt": "Talvez tenhas razão.",
+   "pt_BR": "Talvez você tenha razão.",
+   "fr": "Tu as peut-être raison.",
+   "de": "Vielleicht hast du recht."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-023",
+  "topic": "agree_disagree",
+  "level": "A2",
+  "text": {
+   "en": "I agree with most of it.",
+   "it": "Sono d'accordo con quasi tutto.",
+   "es": "Estoy de acuerdo con casi todo.",
+   "pt": "Concordo com quase tudo.",
+   "pt_BR": "Concordo com quase tudo.",
+   "fr": "Je suis d'accord avec presque tout.",
+   "de": "Ich stimme fast allem zu."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-024",
+  "topic": "agree_disagree",
+  "level": "A2",
+  "text": {
+   "en": "That's what I was thinking!",
+   "it": "Era proprio quello che pensavo!",
+   "es": "¡Eso es justo lo que pensaba!",
+   "pt": "Era mesmo isso que eu estava a pensar!",
+   "pt_BR": "Era justamente isso que eu estava pensando!",
+   "fr": "C'est exactement ce que je pensais !",
+   "de": "Genau das habe ich auch gedacht!"
+  }
+ },
+ {
+  "id": "ss-agree_disagree-025",
+  "topic": "agree_disagree",
+  "level": "A2",
+  "text": {
+   "en": "I don't really agree with that.",
+   "it": "Non sono molto d'accordo su questo.",
+   "es": "No estoy muy de acuerdo con eso.",
+   "pt": "Não concordo muito com isso.",
+   "pt_BR": "Não concordo muito com isso.",
+   "fr": "Je ne suis pas vraiment d'accord avec ça.",
+   "de": "Dem stimme ich nicht wirklich zu."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-026",
+  "topic": "agree_disagree",
+  "level": "A2",
+  "text": {
+   "en": "We have different opinions, and that's fine.",
+   "it": "Abbiamo opinioni diverse, ed è okay.",
+   "es": "Tenemos opiniones distintas, y no pasa nada.",
+   "pt": "Temos opiniões diferentes, e não faz mal.",
+   "pt_BR": "Temos opiniões diferentes, e tudo bem.",
+   "fr": "Nous avons des avis différents, et ce n'est pas grave.",
+   "de": "Wir haben unterschiedliche Meinungen, und das ist in Ordnung."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-027",
+  "topic": "agree_disagree",
+  "level": "A2",
+  "text": {
+   "en": "Why do you think that?",
+   "it": "Perché lo pensi?",
+   "es": "¿Por qué piensas eso?",
+   "pt": "Porque é que pensas isso?",
+   "pt_BR": "Por que você pensa isso?",
+   "fr": "Pourquoi penses-tu cela ?",
+   "de": "Warum denkst du das?"
+  }
+ },
+ {
+  "id": "ss-agree_disagree-028",
+  "topic": "agree_disagree",
+  "level": "A2",
+  "text": {
+   "en": "I think you're wrong about this.",
+   "it": "Penso che su questo ti sbagli.",
+   "es": "Creo que en esto te equivocas.",
+   "pt": "Acho que nisto estás enganado.",
+   "pt_BR": "Acho que nisso você está enganado.",
+   "fr": "Je pense que tu te trompes sur ce point.",
+   "de": "Ich glaube, da irrst du dich."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-029",
+  "topic": "agree_disagree",
+  "level": "A2",
+  "text": {
+   "en": "That makes sense.",
+   "it": "Ha senso.",
+   "es": "Tiene sentido.",
+   "pt": "Faz sentido.",
+   "pt_BR": "Faz sentido.",
+   "fr": "Ça a du sens.",
+   "de": "Das ergibt Sinn."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-030",
+  "topic": "agree_disagree",
+  "level": "A2",
+  "text": {
+   "en": "I'd say the same.",
+   "it": "Direi lo stesso.",
+   "es": "Yo diría lo mismo.",
+   "pt": "Eu diria o mesmo.",
+   "pt_BR": "Eu diria o mesmo.",
+   "fr": "Je dirais la même chose.",
+   "de": "Das würde ich auch sagen."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-031",
+  "topic": "agree_disagree",
+  "level": "B1",
+  "text": {
+   "en": "I see your point, but I'm not convinced.",
+   "it": "Capisco il tuo punto di vista, ma non mi hai convinto.",
+   "es": "Entiendo tu punto de vista, pero no me convence.",
+   "pt": "Percebo o teu ponto de vista, mas não me convences.",
+   "pt_BR": "Entendo o seu ponto de vista, mas não me convenceu.",
+   "fr": "Je comprends ton point de vue, mais je ne suis pas convaincu.",
+   "de": "Ich verstehe deinen Standpunkt, aber ich bin nicht überzeugt."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-032",
+  "topic": "agree_disagree",
+  "level": "B1",
+  "text": {
+   "en": "I agree in general, but there is one thing I would change.",
+   "it": "In generale sono d'accordo, ma c'è una cosa che cambierei.",
+   "es": "En general estoy de acuerdo, pero hay una cosa que cambiaría.",
+   "pt": "Em geral concordo, mas há uma coisa que mudaria.",
+   "pt_BR": "Em geral concordo, mas tem uma coisa que eu mudaria.",
+   "fr": "En général je suis d'accord, mais il y a une chose que je changerais.",
+   "de": "Im Großen und Ganzen stimme ich zu, aber eine Sache würde ich ändern."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-033",
+  "topic": "agree_disagree",
+  "level": "B1",
+  "text": {
+   "en": "It depends on how you look at it.",
+   "it": "Dipende da come la si guarda.",
+   "es": "Depende de cómo se mire.",
+   "pt": "Depende de como se olha para isso.",
+   "pt_BR": "Depende de como você olha para isso.",
+   "fr": "Ça dépend de la façon dont on voit les choses.",
+   "de": "Das hängt davon ab, wie man es betrachtet."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-034",
+  "topic": "agree_disagree",
+  "level": "B1",
+  "text": {
+   "en": "I used to think the same, but I've changed my mind.",
+   "it": "Prima la pensavo allo stesso modo, ma ho cambiato idea.",
+   "es": "Antes pensaba lo mismo, pero he cambiado de opinión.",
+   "pt": "Eu pensava o mesmo, mas mudei de ideias.",
+   "pt_BR": "Eu pensava a mesma coisa, mas mudei de ideia.",
+   "fr": "Je pensais la même chose avant, mais j'ai changé d'avis.",
+   "de": "Früher habe ich das auch gedacht, aber ich habe meine Meinung geändert."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-035",
+  "topic": "agree_disagree",
+  "level": "B1",
+  "text": {
+   "en": "Honestly, I think both sides have a point.",
+   "it": "Sinceramente, penso che entrambe le parti abbiano ragione.",
+   "es": "Sinceramente, creo que ambas partes tienen su parte de razón.",
+   "pt": "Sinceramente, acho que ambos os lados têm a sua razão.",
+   "pt_BR": "Sinceramente, acho que os dois lados têm um pouco de razão.",
+   "fr": "Honnêtement, je pense que les deux côtés ont raison en partie.",
+   "de": "Ehrlich gesagt denke ich, dass beide Seiten recht haben."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-036",
+  "topic": "agree_disagree",
+  "level": "B1",
+  "text": {
+   "en": "That's not how it works where I live.",
+   "it": "Dove vivo io non funziona così.",
+   "es": "Donde yo vivo no funciona así.",
+   "pt": "Onde eu vivo não funciona assim.",
+   "pt_BR": "Onde eu moro não funciona assim.",
+   "fr": "Là où j'habite, ça ne se passe pas comme ça.",
+   "de": "Da, wo ich wohne, läuft das anders."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-037",
+  "topic": "agree_disagree",
+  "level": "B1",
+  "text": {
+   "en": "I'm with you on that one.",
+   "it": "Su questo sono con te.",
+   "es": "En eso estoy contigo.",
+   "pt": "Nisso estou contigo.",
+   "pt_BR": "Nisso estou com você.",
+   "fr": "Sur ce point, je suis avec toi.",
+   "de": "Da bin ich ganz bei dir."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-038",
+  "topic": "agree_disagree",
+  "level": "B1",
+  "text": {
+   "en": "I'd be happy to hear a different opinion.",
+   "it": "Mi farebbe piacere ascoltare un'altra opinione.",
+   "es": "Me encantaría escuchar otra opinión.",
+   "pt": "Gostava de ouvir outra opinião.",
+   "pt_BR": "Eu adoraria ouvir outra opinião.",
+   "fr": "Je serais heureux d'entendre un autre avis.",
+   "de": "Ich würde gern eine andere Meinung hören."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-039",
+  "topic": "agree_disagree",
+  "level": "B1",
+  "text": {
+   "en": "I don't mind if we disagree.",
+   "it": "Non mi dispiace se non siamo d'accordo.",
+   "es": "No me importa que no estemos de acuerdo.",
+   "pt": "Não me importo que não concordemos.",
+   "pt_BR": "Não me importo se a gente não concordar.",
+   "fr": "Ça ne me dérange pas qu'on ne soit pas d'accord.",
+   "de": "Es macht mir nichts aus, wenn wir uns nicht einig sind."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-040",
+  "topic": "agree_disagree",
+  "level": "B1",
+  "text": {
+   "en": "Could you explain why you think so?",
+   "it": "Potresti spiegarmi perché la pensi così?",
+   "es": "¿Podrías explicarme por qué piensas así?",
+   "pt": "Podes explicar-me porque pensas assim?",
+   "pt_BR": "Você pode me explicar por que pensa assim?",
+   "fr": "Peux-tu m'expliquer pourquoi tu penses ça ?",
+   "de": "Kannst du mir erklären, warum du das so siehst?"
+  }
+ },
+ {
+  "id": "ss-agree_disagree-041",
+  "topic": "agree_disagree",
+  "level": "B1",
+  "text": {
+   "en": "You've convinced me.",
+   "it": "Mi hai convinto.",
+   "es": "Me has convencido.",
+   "pt": "Convenceste-me.",
+   "pt_BR": "Você me convenceu.",
+   "fr": "Tu m'as convaincu.",
+   "de": "Du hast mich überzeugt."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-042",
+  "topic": "agree_disagree",
+  "level": "B1",
+  "text": {
+   "en": "I think that's a bit exaggerated.",
+   "it": "Penso che sia un po' esagerato.",
+   "es": "Creo que es un poco exagerado.",
+   "pt": "Acho que é um pouco exagerado.",
+   "pt_BR": "Acho que é um pouco exagerado.",
+   "fr": "Je pense que c'est un peu exagéré.",
+   "de": "Ich finde, das ist ein bisschen übertrieben."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-043",
+  "topic": "agree_disagree",
+  "level": "B1",
+  "text": {
+   "en": "We'll just have to agree to disagree.",
+   "it": "Dovremo semplicemente accettare di non essere d'accordo.",
+   "es": "Tendremos que aceptar que no estamos de acuerdo.",
+   "pt": "Teremos de aceitar que não concordamos.",
+   "pt_BR": "Vamos ter que aceitar que não concordamos.",
+   "fr": "On devra simplement accepter de ne pas être d'accord.",
+   "de": "Wir müssen wohl akzeptieren, dass wir unterschiedlicher Meinung sind."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-044",
+  "topic": "agree_disagree",
+  "level": "B2",
+  "text": {
+   "en": "I partly agree, although I think the situation is more complicated than that.",
+   "it": "Sono in parte d'accordo, anche se credo che la situazione sia più complessa.",
+   "es": "Estoy en parte de acuerdo, aunque creo que la situación es más complicada.",
+   "pt": "Concordo em parte, embora ache que a situação é mais complicada.",
+   "pt_BR": "Concordo em parte, embora ache que a situação seja mais complicada.",
+   "fr": "Je suis en partie d'accord, même si je pense que la situation est plus compliquée.",
+   "de": "Ich stimme teilweise zu, obwohl ich glaube, dass die Lage komplizierter ist."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-045",
+  "topic": "agree_disagree",
+  "level": "B2",
+  "text": {
+   "en": "I take your point, but I'd argue the opposite is true.",
+   "it": "Capisco quello che dici, ma io direi che è vero il contrario.",
+   "es": "Entiendo lo que dices, pero yo diría que ocurre lo contrario.",
+   "pt": "Percebo o que dizes, mas eu diria que é precisamente o contrário.",
+   "pt_BR": "Entendo o que você diz, mas eu diria que é exatamente o contrário.",
+   "fr": "Je comprends ce que tu dis, mais je dirais que c'est le contraire.",
+   "de": "Ich verstehe, was du meinst, aber ich würde sagen, dass das Gegenteil stimmt."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-046",
+  "topic": "agree_disagree",
+  "level": "B2",
+  "text": {
+   "en": "That's a fair argument, and it has made me reconsider my view.",
+   "it": "È un argomento valido e mi ha fatto riconsiderare il mio punto di vista.",
+   "es": "Es un argumento razonable y me ha hecho replantear mi postura.",
+   "pt": "É um argumento justo e fez-me repensar a minha posição.",
+   "pt_BR": "É um argumento justo e me fez repensar meu ponto de vista.",
+   "fr": "C'est un argument valable, et il m'a fait reconsidérer mon point de vue.",
+   "de": "Das ist ein faires Argument, und es hat mich dazu gebracht, meine Sichtweise zu überdenken."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-047",
+  "topic": "agree_disagree",
+  "level": "B2",
+  "text": {
+   "en": "I'd go even further and say that it's essential.",
+   "it": "Mi spingerei oltre e direi che è essenziale.",
+   "es": "Yo iría más lejos y diría que es esencial.",
+   "pt": "Eu iria mais longe e diria que é essencial.",
+   "pt_BR": "Eu iria mais longe e diria que é essencial.",
+   "fr": "J'irais même plus loin et je dirais que c'est essentiel.",
+   "de": "Ich würde sogar noch weiter gehen und sagen, dass es unverzichtbar ist."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-048",
+  "topic": "agree_disagree",
+  "level": "B2",
+  "text": {
+   "en": "It's hard to say, since it varies a lot from one culture to another.",
+   "it": "È difficile dirlo, perché varia molto da una cultura all'altra.",
+   "es": "Es difícil decirlo, porque varía mucho de una cultura a otra.",
+   "pt": "É difícil dizer, porque varia muito de cultura para cultura.",
+   "pt_BR": "É difícil dizer, porque varia muito de uma cultura para outra.",
+   "fr": "C'est difficile à dire, car cela varie beaucoup d'une culture à l'autre.",
+   "de": "Das lässt sich schwer sagen, weil es von Kultur zu Kultur sehr unterschiedlich ist."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-049",
+  "topic": "agree_disagree",
+  "level": "B2",
+  "text": {
+   "en": "I respect your opinion, even though I see things differently.",
+   "it": "Rispetto la tua opinione, anche se io vedo le cose in modo diverso.",
+   "es": "Respeto tu opinión, aunque yo veo las cosas de otra manera.",
+   "pt": "Respeito a tua opinião, mesmo que veja as coisas de outra maneira.",
+   "pt_BR": "Respeito a sua opinião, mesmo vendo as coisas de outra maneira.",
+   "fr": "Je respecte ton opinion, même si je vois les choses autrement.",
+   "de": "Ich respektiere deine Meinung, auch wenn ich die Dinge anders sehe."
+  }
+ },
+ {
+  "id": "ss-agree_disagree-050",
+  "topic": "agree_disagree",
+  "level": "B2",
+  "text": {
+   "en": "In theory you're right, but in practice it's not that simple.",
+   "it": "In teoria hai ragione, ma in pratica non è così semplice.",
+   "es": "En teoría tienes razón, pero en la práctica no es tan sencillo.",
+   "pt": "Em teoria tens razão, mas na prática não é assim tão simples.",
+   "pt_BR": "Na teoria você tem razão, mas na prática não é tão simples.",
+   "fr": "En théorie tu as raison, mais en pratique ce n'est pas si simple.",
+   "de": "Theoretisch hast du recht, aber in der Praxis ist es nicht so einfach."
+  }
+ },
+ {
+  "id": "ss-compliments-001",
+  "topic": "compliments",
+  "level": "A1",
+  "text": {
+   "en": "Thank you!",
+   "it": "Grazie!",
+   "es": "¡Gracias!",
+   "pt": "Obrigado!",
+   "pt_BR": "Obrigado!",
+   "fr": "Merci !",
+   "de": "Danke!"
+  }
+ },
+ {
+  "id": "ss-compliments-002",
+  "topic": "compliments",
+  "level": "A1",
+  "text": {
+   "en": "Great!",
+   "it": "Fantastico!",
+   "es": "¡Genial!",
+   "pt": "Fantástico!",
+   "pt_BR": "Ótimo!",
+   "fr": "Super !",
+   "de": "Toll!"
+  }
+ },
+ {
+  "id": "ss-compliments-003",
+  "topic": "compliments",
+  "level": "A1",
+  "text": {
+   "en": "Very good!",
+   "it": "Molto bene!",
+   "es": "¡Muy bien!",
+   "pt": "Muito bem!",
+   "pt_BR": "Muito bem!",
+   "fr": "Très bien !",
+   "de": "Sehr gut!"
+  }
+ },
+ {
+  "id": "ss-compliments-004",
+  "topic": "compliments",
+  "level": "A1",
+  "text": {
+   "en": "You are kind.",
+   "it": "Sei gentile.",
+   "es": "Eres amable.",
+   "pt": "És simpático.",
+   "pt_BR": "Você é gentil.",
+   "fr": "Tu es gentil.",
+   "de": "Du bist nett."
+  }
+ },
+ {
+  "id": "ss-compliments-005",
+  "topic": "compliments",
+  "level": "A1",
+  "text": {
+   "en": "Your English is good.",
+   "it": "Il tuo inglese è buono.",
+   "es": "Tu inglés es bueno.",
+   "pt": "O teu inglês é bom.",
+   "pt_BR": "Seu inglês é bom.",
+   "fr": "Ton anglais est bon.",
+   "de": "Dein Englisch ist gut."
+  }
+ },
+ {
+  "id": "ss-compliments-006",
+  "topic": "compliments",
+  "level": "A1",
+  "text": {
+   "en": "I like your photo.",
+   "it": "Mi piace la tua foto.",
+   "es": "Me gusta tu foto.",
+   "pt": "Gosto da tua fotografia.",
+   "pt_BR": "Gosto da sua foto.",
+   "fr": "J'aime ta photo.",
+   "de": "Ich mag dein Foto."
+  }
+ },
+ {
+  "id": "ss-compliments-007",
+  "topic": "compliments",
+  "level": "A1",
+  "text": {
+   "en": "Your city is beautiful.",
+   "it": "La tua città è bellissima.",
+   "es": "Tu ciudad es preciosa.",
+   "pt": "A tua cidade é linda.",
+   "pt_BR": "Sua cidade é linda.",
+   "fr": "Ta ville est magnifique.",
+   "de": "Deine Stadt ist wunderschön."
+  }
+ },
+ {
+  "id": "ss-compliments-008",
+  "topic": "compliments",
+  "level": "A1",
+  "text": {
+   "en": "You are funny.",
+   "it": "Sei divertente.",
+   "es": "Eres divertido.",
+   "pt": "És engraçado.",
+   "pt_BR": "Você é engraçado.",
+   "fr": "Tu es drôle.",
+   "de": "Du bist lustig."
+  }
+ },
+ {
+  "id": "ss-compliments-009",
+  "topic": "compliments",
+  "level": "A1",
+  "text": {
+   "en": "Nice to meet you!",
+   "it": "Piacere di conoscerti!",
+   "es": "¡Encantado de conocerte!",
+   "pt": "Prazer em conhecer-te!",
+   "pt_BR": "Prazer em te conhecer!",
+   "fr": "Enchanté de te rencontrer !",
+   "de": "Schön, dich kennenzulernen!"
+  }
+ },
+ {
+  "id": "ss-compliments-010",
+  "topic": "compliments",
+  "level": "A1",
+  "text": {
+   "en": "That looks delicious.",
+   "it": "Sembra buonissimo.",
+   "es": "Se ve delicioso.",
+   "pt": "Parece delicioso.",
+   "pt_BR": "Parece delicioso.",
+   "fr": "Ça a l'air délicieux.",
+   "de": "Das sieht lecker aus."
+  }
+ },
+ {
+  "id": "ss-compliments-011",
+  "topic": "compliments",
+  "level": "A1",
+  "text": {
+   "en": "Good job!",
+   "it": "Bel lavoro!",
+   "es": "¡Buen trabajo!",
+   "pt": "Bom trabalho!",
+   "pt_BR": "Bom trabalho!",
+   "fr": "Bon travail !",
+   "de": "Gut gemacht!"
+  }
+ },
+ {
+  "id": "ss-compliments-012",
+  "topic": "compliments",
+  "level": "A1",
+  "text": {
+   "en": "I love your country.",
+   "it": "Amo il tuo paese.",
+   "es": "Me encanta tu país.",
+   "pt": "Adoro o teu país.",
+   "pt_BR": "Adoro o seu país.",
+   "fr": "J'adore ton pays.",
+   "de": "Ich liebe dein Land."
+  }
+ },
+ {
+  "id": "ss-compliments-013",
+  "topic": "compliments",
+  "level": "A1",
+  "text": {
+   "en": "You are very nice.",
+   "it": "Sei molto simpatico.",
+   "es": "Eres muy simpático.",
+   "pt": "És muito simpático.",
+   "pt_BR": "Você é muito simpático.",
+   "fr": "Tu es très sympa.",
+   "de": "Du bist sehr nett."
+  }
+ },
+ {
+  "id": "ss-compliments-014",
+  "topic": "compliments",
+  "level": "A1",
+  "text": {
+   "en": "What a nice place!",
+   "it": "Che bel posto!",
+   "es": "¡Qué lugar tan bonito!",
+   "pt": "Que sítio bonito!",
+   "pt_BR": "Que lugar bonito!",
+   "fr": "Quel bel endroit !",
+   "de": "Was für ein schöner Ort!"
+  }
+ },
+ {
+  "id": "ss-compliments-015",
+  "topic": "compliments",
+  "level": "A1",
+  "text": {
+   "en": "Good idea, thanks!",
+   "it": "Bella idea, grazie!",
+   "es": "¡Buena idea, gracias!",
+   "pt": "Boa ideia, obrigado!",
+   "pt_BR": "Boa ideia, obrigado!",
+   "fr": "Bonne idée, merci !",
+   "de": "Gute Idee, danke!"
+  }
+ },
+ {
+  "id": "ss-compliments-016",
+  "topic": "compliments",
+  "level": "A2",
+  "text": {
+   "en": "You speak very well!",
+   "it": "Parli molto bene!",
+   "es": "¡Hablas muy bien!",
+   "pt": "Falas muito bem!",
+   "pt_BR": "Você fala muito bem!",
+   "fr": "Tu parles très bien !",
+   "de": "Du sprichst sehr gut!"
+  }
+ },
+ {
+  "id": "ss-compliments-017",
+  "topic": "compliments",
+  "level": "A2",
+  "text": {
+   "en": "Your pronunciation is really clear.",
+   "it": "La tua pronuncia è davvero chiara.",
+   "es": "Tu pronunciación es muy clara.",
+   "pt": "A tua pronúncia é mesmo clara.",
+   "pt_BR": "Sua pronúncia é muito clara.",
+   "fr": "Ta prononciation est vraiment claire.",
+   "de": "Deine Aussprache ist wirklich klar."
+  }
+ },
+ {
+  "id": "ss-compliments-018",
+  "topic": "compliments",
+  "level": "A2",
+  "text": {
+   "en": "Thank you, that was very kind of you.",
+   "it": "Grazie, è stato molto gentile da parte tua.",
+   "es": "Gracias, fue muy amable de tu parte.",
+   "pt": "Obrigado, foi muito simpático da tua parte.",
+   "pt_BR": "Obrigado, foi muito gentil da sua parte.",
+   "fr": "Merci, c'était très gentil de ta part.",
+   "de": "Danke, das war sehr nett von dir."
+  }
+ },
+ {
+  "id": "ss-compliments-019",
+  "topic": "compliments",
+  "level": "A2",
+  "text": {
+   "en": "You took a great photo!",
+   "it": "Hai fatto una bellissima foto!",
+   "es": "¡Has sacado una foto preciosa!",
+   "pt": "Tiraste uma fotografia linda!",
+   "pt_BR": "Você tirou uma foto linda!",
+   "fr": "Tu as pris une superbe photo !",
+   "de": "Du hast ein tolles Foto gemacht!"
+  }
+ },
+ {
+  "id": "ss-compliments-020",
+  "topic": "compliments",
+  "level": "A2",
+  "text": {
+   "en": "You cook really well.",
+   "it": "Cucini davvero bene.",
+   "es": "Cocinas muy bien.",
+   "pt": "Cozinhas mesmo bem.",
+   "pt_BR": "Você cozinha muito bem.",
+   "fr": "Tu cuisines vraiment bien.",
+   "de": "Du kochst wirklich gut."
+  }
+ },
+ {
+  "id": "ss-compliments-021",
+  "topic": "compliments",
+  "level": "A2",
+  "text": {
+   "en": "Your hometown looks amazing.",
+   "it": "La tua città natale sembra stupenda.",
+   "es": "Tu ciudad natal se ve increíble.",
+   "pt": "A tua terra natal parece incrível.",
+   "pt_BR": "Sua cidade natal parece incrível.",
+   "fr": "Ta ville natale a l'air superbe.",
+   "de": "Deine Heimatstadt sieht toll aus."
+  }
+ },
+ {
+  "id": "ss-compliments-022",
+  "topic": "compliments",
+  "level": "A2",
+  "text": {
+   "en": "I learn a lot from you.",
+   "it": "Imparo molto da te.",
+   "es": "Aprendo mucho de ti.",
+   "pt": "Aprendo muito contigo.",
+   "pt_BR": "Aprendo muito com você.",
+   "fr": "J'apprends beaucoup avec toi.",
+   "de": "Ich lerne viel von dir."
+  }
+ },
+ {
+  "id": "ss-compliments-023",
+  "topic": "compliments",
+  "level": "A2",
+  "text": {
+   "en": "You are a great teacher.",
+   "it": "Sei un ottimo insegnante.",
+   "es": "Eres un gran profesor.",
+   "pt": "És um ótimo professor.",
+   "pt_BR": "Você é um ótimo professor.",
+   "fr": "Tu es un super professeur.",
+   "de": "Du bist ein toller Lehrer."
+  }
+ },
+ {
+  "id": "ss-compliments-024",
+  "topic": "compliments",
+  "level": "A2",
+  "text": {
+   "en": "I really like your sense of humor.",
+   "it": "Mi piace molto il tuo senso dell'umorismo.",
+   "es": "Me gusta mucho tu sentido del humor.",
+   "pt": "Gosto muito do teu sentido de humor.",
+   "pt_BR": "Gosto muito do seu senso de humor.",
+   "fr": "J'aime beaucoup ton sens de l'humour.",
+   "de": "Ich mag deinen Humor sehr."
+  }
+ },
+ {
+  "id": "ss-compliments-025",
+  "topic": "compliments",
+  "level": "A2",
+  "text": {
+   "en": "That is a very interesting story.",
+   "it": "È una storia molto interessante.",
+   "es": "Es una historia muy interesante.",
+   "pt": "É uma história muito interessante.",
+   "pt_BR": "É uma história muito interessante.",
+   "fr": "C'est une histoire très intéressante.",
+   "de": "Das ist eine sehr interessante Geschichte."
+  }
+ },
+ {
+  "id": "ss-compliments-026",
+  "topic": "compliments",
+  "level": "A2",
+  "text": {
+   "en": "You have a lovely voice.",
+   "it": "Hai una bella voce.",
+   "es": "Tienes una voz preciosa.",
+   "pt": "Tens uma voz bonita.",
+   "pt_BR": "Você tem uma voz bonita.",
+   "fr": "Tu as une belle voix.",
+   "de": "Du hast eine schöne Stimme."
+  }
+ },
+ {
+  "id": "ss-compliments-027",
+  "topic": "compliments",
+  "level": "A2",
+  "text": {
+   "en": "Your English is better than mine!",
+   "it": "Il tuo inglese è migliore del mio!",
+   "es": "¡Tu inglés es mejor que el mío!",
+   "pt": "O teu inglês é melhor do que o meu!",
+   "pt_BR": "Seu inglês é melhor do que o meu!",
+   "fr": "Ton anglais est meilleur que le mien !",
+   "de": "Dein Englisch ist besser als meins!"
+  }
+ },
+ {
+  "id": "ss-compliments-028",
+  "topic": "compliments",
+  "level": "A2",
+  "text": {
+   "en": "Thank you for being so patient with me.",
+   "it": "Grazie per essere così paziente con me.",
+   "es": "Gracias por ser tan paciente conmigo.",
+   "pt": "Obrigado por seres tão paciente comigo.",
+   "pt_BR": "Obrigado por ser tão paciente comigo.",
+   "fr": "Merci d'être si patient avec moi.",
+   "de": "Danke, dass du so geduldig mit mir bist."
+  }
+ },
+ {
+  "id": "ss-compliments-029",
+  "topic": "compliments",
+  "level": "A2",
+  "text": {
+   "en": "What a great idea!",
+   "it": "Che idea fantastica!",
+   "es": "¡Qué gran idea!",
+   "pt": "Que grande ideia!",
+   "pt_BR": "Que ótima ideia!",
+   "fr": "Quelle excellente idée !",
+   "de": "Was für eine tolle Idee!"
+  }
+ },
+ {
+  "id": "ss-compliments-030",
+  "topic": "compliments",
+  "level": "A2",
+  "text": {
+   "en": "You always make me smile.",
+   "it": "Mi fai sempre sorridere.",
+   "es": "Siempre me haces sonreír.",
+   "pt": "Fazes-me sempre sorrir.",
+   "pt_BR": "Você sempre me faz sorrir.",
+   "fr": "Tu me fais toujours sourire.",
+   "de": "Du bringst mich immer zum Lächeln."
+  }
+ },
+ {
+  "id": "ss-compliments-031",
+  "topic": "compliments",
+  "level": "B1",
+  "text": {
+   "en": "You have made so much progress since we started.",
+   "it": "Hai fatto tanti progressi da quando abbiamo iniziato.",
+   "es": "Has progresado muchísimo desde que empezamos.",
+   "pt": "Fizeste muitos progressos desde que começámos.",
+   "pt_BR": "Você fez muito progresso desde que começamos.",
+   "fr": "Tu as fait beaucoup de progrès depuis qu'on a commencé.",
+   "de": "Du hast seit unserem Anfang große Fortschritte gemacht."
+  }
+ },
+ {
+  "id": "ss-compliments-032",
+  "topic": "compliments",
+  "level": "B1",
+  "text": {
+   "en": "I really admire how hard you work on your languages.",
+   "it": "Ammiro molto quanto ti impegni con le lingue.",
+   "es": "Admiro mucho lo que te esfuerzas con los idiomas.",
+   "pt": "Admiro muito o esforço que dedicas às línguas.",
+   "pt_BR": "Admiro muito o quanto você se dedica aos idiomas.",
+   "fr": "J'admire beaucoup tes efforts pour apprendre les langues.",
+   "de": "Ich bewundere, wie viel Mühe du dir mit den Sprachen gibst."
+  }
+ },
+ {
+  "id": "ss-compliments-033",
+  "topic": "compliments",
+  "level": "B1",
+  "text": {
+   "en": "Thank you for explaining that so clearly.",
+   "it": "Grazie per avermelo spiegato in modo così chiaro.",
+   "es": "Gracias por explicármelo con tanta claridad.",
+   "pt": "Obrigado por me explicares isso tão claramente.",
+   "pt_BR": "Obrigado por me explicar isso com tanta clareza.",
+   "fr": "Merci de me l'avoir expliqué aussi clairement.",
+   "de": "Danke, dass du mir das so klar erklärt hast."
+  }
+ },
+ {
+  "id": "ss-compliments-034",
+  "topic": "compliments",
+  "level": "B1",
+  "text": {
+   "en": "The pictures of your trip are absolutely stunning.",
+   "it": "Le foto del tuo viaggio sono semplicemente stupende.",
+   "es": "Las fotos de tu viaje son impresionantes.",
+   "pt": "As fotografias da tua viagem são simplesmente deslumbrantes.",
+   "pt_BR": "As fotos da sua viagem são simplesmente deslumbrantes.",
+   "fr": "Les photos de ton voyage sont absolument magnifiques.",
+   "de": "Die Bilder von deiner Reise sind einfach atemberaubend."
+  }
+ },
+ {
+  "id": "ss-compliments-035",
+  "topic": "compliments",
+  "level": "B1",
+  "text": {
+   "en": "It's a pleasure talking to you; you're easy to chat with.",
+   "it": "È un piacere parlare con te, è facile chiacchierare con te.",
+   "es": "Es un placer hablar contigo, es fácil charlar contigo.",
+   "pt": "É um prazer falar contigo, é fácil conversar contigo.",
+   "pt_BR": "É um prazer conversar com você, é fácil bater papo com você.",
+   "fr": "C'est un plaisir de parler avec toi, c'est facile de discuter avec toi.",
+   "de": "Es ist ein Vergnügen, mit dir zu reden, man kann sich leicht mit dir unterhalten."
+  }
+ },
+ {
+  "id": "ss-compliments-036",
+  "topic": "compliments",
+  "level": "B1",
+  "text": {
+   "en": "You know so much about your culture, and I love hearing about it.",
+   "it": "Sai così tante cose sulla tua cultura e adoro ascoltarti.",
+   "es": "Sabes tanto sobre tu cultura y me encanta escucharte.",
+   "pt": "Sabes tanto sobre a tua cultura e adoro ouvir-te.",
+   "pt_BR": "Você sabe tanto sobre a sua cultura e eu adoro ouvir.",
+   "fr": "Tu connais tellement de choses sur ta culture, et j'adore t'écouter.",
+   "de": "Du weißt so viel über deine Kultur, und ich höre dir gern zu."
+  }
+ },
+ {
+  "id": "ss-compliments-037",
+  "topic": "compliments",
+  "level": "B1",
+  "text": {
+   "en": "That recipe sounds wonderful. Thanks for sharing it!",
+   "it": "Questa ricetta sembra meravigliosa. Grazie per averla condivisa!",
+   "es": "Esa receta suena maravillosa. ¡Gracias por compartirla!",
+   "pt": "Essa receita parece maravilhosa. Obrigado por a partilhares!",
+   "pt_BR": "Essa receita parece maravilhosa. Obrigado por compartilhar!",
+   "fr": "Cette recette a l'air merveilleuse. Merci de l'avoir partagée !",
+   "de": "Das Rezept klingt wunderbar. Danke, dass du es teilst!"
+  }
+ },
+ {
+  "id": "ss-compliments-038",
+  "topic": "compliments",
+  "level": "B1",
+  "text": {
+   "en": "You have a great way of telling stories.",
+   "it": "Hai un ottimo modo di raccontare le storie.",
+   "es": "Tienes una forma estupenda de contar historias.",
+   "pt": "Tens uma ótima maneira de contar histórias.",
+   "pt_BR": "Você tem um jeito ótimo de contar histórias.",
+   "fr": "Tu as une très belle façon de raconter les histoires.",
+   "de": "Du kannst wirklich toll Geschichten erzählen."
+  }
+ },
+ {
+  "id": "ss-compliments-039",
+  "topic": "compliments",
+  "level": "B1",
+  "text": {
+   "en": "Your advice really helped me. Thank you so much.",
+   "it": "Il tuo consiglio mi ha aiutato davvero. Grazie mille.",
+   "es": "Tu consejo me ayudó mucho. Muchas gracias.",
+   "pt": "O teu conselho ajudou-me mesmo. Muito obrigado.",
+   "pt_BR": "Seu conselho me ajudou muito. Muito obrigado.",
+   "fr": "Ton conseil m'a vraiment aidé. Merci beaucoup.",
+   "de": "Dein Rat hat mir wirklich geholfen. Vielen Dank."
+  }
+ },
+ {
+  "id": "ss-compliments-040",
+  "topic": "compliments",
+  "level": "B1",
+  "text": {
+   "en": "I'm impressed by how many languages you speak.",
+   "it": "Sono colpito da quante lingue parli.",
+   "es": "Me impresiona cuántos idiomas hablas.",
+   "pt": "Impressiona-me quantas línguas falas.",
+   "pt_BR": "Fico impressionado com quantos idiomas você fala.",
+   "fr": "Je suis impressionné par le nombre de langues que tu parles.",
+   "de": "Ich bin beeindruckt, wie viele Sprachen du sprichst."
+  }
+ },
+ {
+  "id": "ss-compliments-041",
+  "topic": "compliments",
+  "level": "B1",
+  "text": {
+   "en": "Thanks to you, I feel much more confident speaking.",
+   "it": "Grazie a te mi sento molto più sicuro quando parlo.",
+   "es": "Gracias a ti me siento mucho más seguro al hablar.",
+   "pt": "Graças a ti sinto-me muito mais seguro a falar.",
+   "pt_BR": "Graças a você me sinto muito mais seguro para falar.",
+   "fr": "Grâce à toi, je me sens bien plus à l'aise pour parler.",
+   "de": "Dank dir fühle ich mich beim Sprechen viel sicherer."
+  }
+ },
+ {
+  "id": "ss-compliments-042",
+  "topic": "compliments",
+  "level": "B1",
+  "text": {
+   "en": "What a thoughtful thing to do. I really appreciate it.",
+   "it": "Che gesto premuroso. Lo apprezzo davvero.",
+   "es": "Qué detalle tan considerado. Lo agradezco de verdad.",
+   "pt": "Que gesto atencioso. Agradeço mesmo.",
+   "pt_BR": "Que gesto atencioso. Eu agradeço de verdade.",
+   "fr": "Quelle attention délicate. Je l'apprécie vraiment.",
+   "de": "Wie aufmerksam von dir. Ich weiß das wirklich zu schätzen."
+  }
+ },
+ {
+  "id": "ss-compliments-043",
+  "topic": "compliments",
+  "level": "B1",
+  "text": {
+   "en": "Your energy is contagious; talking to you cheers me up.",
+   "it": "La tua energia è contagiosa, parlare con te mi mette di buon umore.",
+   "es": "Tu energía es contagiosa, hablar contigo me anima.",
+   "pt": "A tua energia é contagiante, falar contigo põe-me bem-disposto.",
+   "pt_BR": "Sua energia é contagiante, conversar com você me deixa de bom humor.",
+   "fr": "Ton énergie est contagieuse, discuter avec toi me remonte le moral.",
+   "de": "Deine Energie ist ansteckend, mit dir zu reden hebt meine Laune."
+  }
+ },
+ {
+  "id": "ss-compliments-044",
+  "topic": "compliments",
+  "level": "B2",
+  "text": {
+   "en": "I'm genuinely impressed by how naturally you express yourself in a second language.",
+   "it": "Sono davvero colpito da quanto ti esprimi con naturalezza in una seconda lingua.",
+   "es": "Me impresiona de verdad lo natural que te expresas en un segundo idioma.",
+   "pt": "Fico genuinamente impressionado com a naturalidade com que te expressas numa segunda língua.",
+   "pt_BR": "Fico realmente impressionado com a naturalidade com que você se expressa em uma segunda língua.",
+   "fr": "Je suis vraiment impressionné par le naturel avec lequel tu t'exprimes dans une langue étrangère.",
+   "de": "Ich bin wirklich beeindruckt, wie natürlich du dich in einer Fremdsprache ausdrückst."
+  }
+ },
+ {
+  "id": "ss-compliments-045",
+  "topic": "compliments",
+  "level": "B2",
+  "text": {
+   "en": "Learning from someone as generous with their time as you has been a real privilege.",
+   "it": "Imparare da una persona così generosa con il proprio tempo è stato un vero privilegio.",
+   "es": "Aprender de alguien tan generoso con su tiempo como tú ha sido un verdadero privilegio.",
+   "pt": "Aprender com alguém tão generoso com o seu tempo como tu foi um verdadeiro privilégio.",
+   "pt_BR": "Aprender com alguém tão generoso com o próprio tempo como você foi um verdadeiro privilégio.",
+   "fr": "Apprendre auprès de quelqu'un d'aussi généreux de son temps que toi a été un vrai privilège.",
+   "de": "Von jemandem zu lernen, der so großzügig mit seiner Zeit ist wie du, war ein echtes Privileg."
+  }
+ },
+ {
+  "id": "ss-compliments-046",
+  "topic": "compliments",
+  "level": "B2",
+  "text": {
+   "en": "You explained the cultural background so well that I now see the tradition in a new light.",
+   "it": "Hai spiegato così bene il contesto culturale che ora vedo la tradizione sotto una luce nuova.",
+   "es": "Explicaste tan bien el contexto cultural que ahora veo la tradición con otros ojos.",
+   "pt": "Explicaste tão bem o contexto cultural que agora vejo a tradição de outra forma.",
+   "pt_BR": "Você explicou tão bem o contexto cultural que agora vejo a tradição de outra forma.",
+   "fr": "Tu as si bien expliqué le contexte culturel que je vois maintenant cette tradition sous un nouveau jour.",
+   "de": "Du hast den kulturellen Hintergrund so gut erklärt, dass ich die Tradition nun mit anderen Augen sehe."
+  }
+ },
+ {
+  "id": "ss-compliments-047",
+  "topic": "compliments",
+  "level": "B2",
+  "text": {
+   "en": "It's rare to meet someone so curious and open-minded. It makes our conversations a pleasure.",
+   "it": "È raro incontrare una persona così curiosa e di mentalità aperta. Rende le nostre conversazioni un piacere.",
+   "es": "Es raro encontrar a alguien tan curioso y de mente abierta. Hace que nuestras conversaciones sean un placer.",
+   "pt": "É raro encontrar alguém tão curioso e de mente aberta. Torna as nossas conversas um prazer.",
+   "pt_BR": "É raro encontrar alguém tão curioso e de mente aberta. Isso torna nossas conversas um prazer.",
+   "fr": "Il est rare de rencontrer quelqu'un d'aussi curieux et ouvert d'esprit. Cela rend nos conversations très agréables.",
+   "de": "Es ist selten, jemanden zu treffen, der so neugierig und aufgeschlossen ist. Das macht unsere Gespräche zu einem Vergnügen."
+  }
+ },
+ {
+  "id": "ss-compliments-048",
+  "topic": "compliments",
+  "level": "B2",
+  "text": {
+   "en": "Your writing is so vivid that I felt as if I were walking through your neighborhood.",
+   "it": "La tua scrittura è così vivida che mi è sembrato di camminare nel tuo quartiere.",
+   "es": "Tu forma de escribir es tan vívida que sentí como si caminara por tu barrio.",
+   "pt": "A tua escrita é tão vívida que senti que estava a passear pelo teu bairro.",
+   "pt_BR": "Sua escrita é tão vívida que senti como se estivesse caminhando pelo seu bairro.",
+   "fr": "Ton écriture est si vivante que j'ai eu l'impression de me promener dans ton quartier.",
+   "de": "Dein Schreibstil ist so lebendig, dass ich das Gefühl hatte, durch dein Viertel zu spazieren."
+  }
+ },
+ {
+  "id": "ss-compliments-049",
+  "topic": "compliments",
+  "level": "B2",
+  "text": {
+   "en": "I can't thank you enough for the effort you put into helping me improve.",
+   "it": "Non finirò mai di ringraziarti per l'impegno che metti nell'aiutarmi a migliorare.",
+   "es": "No sé cómo agradecerte el esfuerzo que pones en ayudarme a mejorar.",
+   "pt": "Não tenho como agradecer o esforço que fazes para me ajudar a melhorar.",
+   "pt_BR": "Não tenho como agradecer o esforço que você faz para me ajudar a melhorar.",
+   "fr": "Je ne te remercierai jamais assez pour les efforts que tu fais pour m'aider à progresser.",
+   "de": "Ich kann dir gar nicht genug danken für die Mühe, die du dir gibst, mir beim Besserwerden zu helfen."
+  }
+ },
+ {
+  "id": "ss-compliments-050",
+  "topic": "compliments",
+  "level": "B2",
+  "text": {
+   "en": "What I admire most is how you stay positive even when the conversation gets difficult.",
+   "it": "Quello che ammiro di più è come resti positivo anche quando la conversazione si fa difficile.",
+   "es": "Lo que más admiro es que sigues siendo positivo incluso cuando la conversación se complica.",
+   "pt": "O que mais admiro é que continuas positivo mesmo quando a conversa fica difícil.",
+   "pt_BR": "O que mais admiro é que você continua positivo mesmo quando a conversa fica difícil.",
+   "fr": "Ce que j'admire le plus, c'est que tu restes positif même quand la conversation devient difficile.",
+   "de": "Was ich am meisten bewundere: Du bleibst positiv, selbst wenn das Gespräch schwierig wird."
+  }
+ }
+]

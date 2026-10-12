@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ss-shopping-001",
+  "topic": "shopping",
+  "level": "A1",
+  "text": {
+   "en": "How much is this?",
+   "it": "Quanto costa questo?",
+   "es": "¿Cuánto cuesta esto?",
+   "pt": "Quanto custa isto?",
+   "pt_BR": "Quanto custa isso?",
+   "fr": "Combien ça coûte ?",
+   "de": "Wie viel kostet das?"
+  }
+ },
+ {
+  "id": "ss-shopping-002",
+  "topic": "shopping",
+  "level": "A1",
+  "text": {
+   "en": "I like it.",
+   "it": "Mi piace.",
+   "es": "Me gusta.",
+   "pt": "Gosto disto.",
+   "pt_BR": "Gostei disso.",
+   "fr": "Ça me plaît.",
+   "de": "Das gefällt mir."
+  }
+ },
+ {
+  "id": "ss-shopping-003",
+  "topic": "shopping",
+  "level": "A1",
+  "text": {
+   "en": "Where is the market?",
+   "it": "Dov'è il mercato?",
+   "es": "¿Dónde está el mercado?",
+   "pt": "Onde fica o mercado?",
+   "pt_BR": "Onde fica o mercado?",
+   "fr": "Où est le marché ?",
+   "de": "Wo ist der Markt?"
+  }
+ },
+ {
+  "id": "ss-shopping-004",
+  "topic": "shopping",
+  "level": "A1",
+  "text": {
+   "en": "I want two, please.",
+   "it": "Ne vorrei due, per favore.",
+   "es": "Quiero dos, por favor.",
+   "pt": "Queria dois, por favor.",
+   "pt_BR": "Quero dois, por favor.",
+   "fr": "J'en voudrais deux, s'il vous plaît.",
+   "de": "Ich möchte zwei, bitte."
+  }
+ },
+ {
+  "id": "ss-shopping-005",
+  "topic": "shopping",
+  "level": "A1",
+  "text": {
+   "en": "Is it open today?",
+   "it": "È aperto oggi?",
+   "es": "¿Está abierto hoy?",
+   "pt": "Está aberto hoje?",
+   "pt_BR": "Está aberto hoje?",
+   "fr": "C'est ouvert aujourd'hui ?",
+   "de": "Ist heute geöffnet?"
+  }
+ },
+ {
+  "id": "ss-shopping-006",
+  "topic": "shopping",
+  "level": "A1",
+  "text": {
+   "en": "Can I pay by card?",
+   "it": "Posso pagare con la carta?",
+   "es": "¿Puedo pagar con tarjeta?",
+   "pt": "Posso pagar com cartão?",
+   "pt_BR": "Posso pagar no cartão?",
+   "fr": "Puis-je payer par carte ?",
+   "de": "Kann ich mit Karte zahlen?"
+  }
+ },
+ {
+  "id": "ss-shopping-007",
+  "topic": "shopping",
+  "level": "A1",
+  "text": {
+   "en": "It is too expensive.",
+   "it": "È troppo caro.",
+   "es": "Es demasiado caro.",
+   "pt": "É demasiado caro.",
+   "pt_BR": "É caro demais.",
+   "fr": "C'est trop cher.",
+   "de": "Das ist zu teuer."
+  }
+ },
+ {
+  "id": "ss-shopping-008",
+  "topic": "shopping",
+  "level": "A1",
+  "text": {
+   "en": "Do you have milk?",
+   "it": "Avete il latte?",
+   "es": "¿Tienen leche?",
+   "pt": "Têm leite?",
+   "pt_BR": "Vocês têm leite?",
+   "fr": "Avez-vous du lait ?",
+   "de": "Haben Sie Milch?"
+  }
+ },
+ {
+  "id": "ss-shopping-009",
+  "topic": "shopping",
+  "level": "A1",
+  "text": {
+   "en": "I need a bag, please.",
+   "it": "Mi serve una borsa, per favore.",
+   "es": "Necesito una bolsa, por favor.",
+   "pt": "Preciso de um saco, por favor.",
+   "pt_BR": "Preciso de uma sacola, por favor.",
+   "fr": "J'ai besoin d'un sac, s'il vous plaît.",
+   "de": "Ich brauche eine Tüte, bitte."
+  }
+ },
+ {
+  "id": "ss-shopping-010",
+  "topic": "shopping",
+  "level": "A1",
+  "text": {
+   "en": "What time does the shop open?",
+   "it": "A che ora apre il negozio?",
+   "es": "¿A qué hora abre la tienda?",
+   "pt": "A que horas abre a loja?",
+   "pt_BR": "A que horas a loja abre?",
+   "fr": "À quelle heure le magasin ouvre-t-il ?",
+   "de": "Wann öffnet der Laden?"
+  }
+ },
+ {
+  "id": "ss-shopping-011",
+  "topic": "shopping",
+  "level": "A1",
+  "text": {
+   "en": "I am just looking, thanks.",
+   "it": "Sto solo guardando, grazie.",
+   "es": "Solo estoy mirando, gracias.",
+   "pt": "Estou só a ver, obrigado.",
+   "pt_BR": "Estou só olhando, obrigado.",
+   "fr": "Je regarde seulement, merci.",
+   "de": "Ich schaue nur, danke."
+  }
+ },
+ {
+  "id": "ss-shopping-012",
+  "topic": "shopping",
+  "level": "A1",
+  "text": {
+   "en": "Where can I buy bread?",
+   "it": "Dove posso comprare il pane?",
+   "es": "¿Dónde puedo comprar pan?",
+   "pt": "Onde posso comprar pão?",
+   "pt_BR": "Onde posso comprar pão?",
+   "fr": "Où puis-je acheter du pain ?",
+   "de": "Wo kann ich Brot kaufen?"
+  }
+ },
+ {
+  "id": "ss-shopping-013",
+  "topic": "shopping",
+  "level": "A1",
+  "text": {
+   "en": "This is very cheap.",
+   "it": "Questo è molto economico.",
+   "es": "Esto es muy barato.",
+   "pt": "Isto é muito barato.",
+   "pt_BR": "Isso é muito barato.",
+   "fr": "C'est très bon marché.",
+   "de": "Das ist sehr günstig."
+  }
+ },
+ {
+  "id": "ss-shopping-014",
+  "topic": "shopping",
+  "level": "A1",
+  "text": {
+   "en": "Do you sell water?",
+   "it": "Vendete acqua?",
+   "es": "¿Venden agua?",
+   "pt": "Vendem água?",
+   "pt_BR": "Vocês vendem água?",
+   "fr": "Vendez-vous de l'eau ?",
+   "de": "Verkaufen Sie Wasser?"
+  }
+ },
+ {
+  "id": "ss-shopping-015",
+  "topic": "shopping",
+  "level": "A1",
+  "text": {
+   "en": "Where do I pay?",
+   "it": "Dove si paga?",
+   "es": "¿Dónde se paga?",
+   "pt": "Onde se paga?",
+   "pt_BR": "Onde eu pago?",
+   "fr": "Où doit-on payer ?",
+   "de": "Wo bezahlt man?"
+  }
+ },
+ {
+  "id": "ss-shopping-016",
+  "topic": "shopping",
+  "level": "A2",
+  "text": {
+   "en": "Do you have this in a bigger size?",
+   "it": "Avete questo in una taglia più grande?",
+   "es": "¿Tienen esto en una talla más grande?",
+   "pt": "Têm isto num tamanho maior?",
+   "pt_BR": "Vocês têm isso em um tamanho maior?",
+   "fr": "Avez-vous ceci en plus grand ?",
+   "de": "Haben Sie das in einer größeren Größe?"
+  }
+ },
+ {
+  "id": "ss-shopping-017",
+  "topic": "shopping",
+  "level": "A2",
+  "text": {
+   "en": "Can I try it on?",
+   "it": "Posso provarlo?",
+   "es": "¿Puedo probármelo?",
+   "pt": "Posso experimentar?",
+   "pt_BR": "Posso provar?",
+   "fr": "Puis-je l'essayer ?",
+   "de": "Kann ich es anprobieren?"
+  }
+ },
+ {
+  "id": "ss-shopping-018",
+  "topic": "shopping",
+  "level": "A2",
+  "text": {
+   "en": "Do you accept cash?",
+   "it": "Accettate contanti?",
+   "es": "¿Aceptan efectivo?",
+   "pt": "Aceitam dinheiro?",
+   "pt_BR": "Vocês aceitam dinheiro?",
+   "fr": "Acceptez-vous les espèces ?",
+   "de": "Nehmen Sie Bargeld an?"
+  }
+ },
+ {
+  "id": "ss-shopping-019",
+  "topic": "shopping",
+  "level": "A2",
+  "text": {
+   "en": "Can I have a receipt, please?",
+   "it": "Posso avere lo scontrino, per favore?",
+   "es": "¿Me da el recibo, por favor?",
+   "pt": "Pode dar-me o talão, por favor?",
+   "pt_BR": "Pode me dar o recibo, por favor?",
+   "fr": "Puis-je avoir un reçu, s'il vous plaît ?",
+   "de": "Kann ich bitte einen Beleg haben?"
+  }
+ },
+ {
+  "id": "ss-shopping-020",
+  "topic": "shopping",
+  "level": "A2",
+  "text": {
+   "en": "Is there a discount today?",
+   "it": "C'è qualche sconto oggi?",
+   "es": "¿Hay algún descuento hoy?",
+   "pt": "Há algum desconto hoje?",
+   "pt_BR": "Tem algum desconto hoje?",
+   "fr": "Y a-t-il une réduction aujourd'hui ?",
+   "de": "Gibt es heute einen Rabatt?"
+  }
+ },
+ {
+  "id": "ss-shopping-021",
+  "topic": "shopping",
+  "level": "A2",
+  "text": {
+   "en": "I am looking for a gift for a friend.",
+   "it": "Cerco un regalo per un amico.",
+   "es": "Busco un regalo para un amigo.",
+   "pt": "Procuro uma prenda para um amigo.",
+   "pt_BR": "Estou procurando um presente para um amigo.",
+   "fr": "Je cherche un cadeau pour un ami.",
+   "de": "Ich suche ein Geschenk für einen Freund."
+  }
+ },
+ {
+  "id": "ss-shopping-022",
+  "topic": "shopping",
+  "level": "A2",
+  "text": {
+   "en": "Where is the nearest pharmacy?",
+   "it": "Dov'è la farmacia più vicina?",
+   "es": "¿Dónde está la farmacia más cercana?",
+   "pt": "Onde fica a farmácia mais próxima?",
+   "pt_BR": "Onde fica a farmácia mais próxima?",
+   "fr": "Où est la pharmacie la plus proche ?",
+   "de": "Wo ist die nächste Apotheke?"
+  }
+ },
+ {
+  "id": "ss-shopping-023",
+  "topic": "shopping",
+  "level": "A2",
+  "text": {
+   "en": "Do you have a different colour?",
+   "it": "Avete un altro colore?",
+   "es": "¿Tienen otro color?",
+   "pt": "Têm outra cor?",
+   "pt_BR": "Vocês têm outra cor?",
+   "fr": "Avez-vous une autre couleur ?",
+   "de": "Haben Sie eine andere Farbe?"
+  }
+ },
+ {
+  "id": "ss-shopping-024",
+  "topic": "shopping",
+  "level": "A2",
+  "text": {
+   "en": "Could you wrap it as a gift?",
+   "it": "Può incartarlo come regalo?",
+   "es": "¿Podría envolverlo para regalo?",
+   "pt": "Pode embrulhar para oferta?",
+   "pt_BR": "Pode embrulhar para presente?",
+   "fr": "Pouvez-vous en faire un paquet cadeau ?",
+   "de": "Könnten Sie es als Geschenk einpacken?"
+  }
+ },
+ {
+  "id": "ss-shopping-025",
+  "topic": "shopping",
+  "level": "A2",
+  "text": {
+   "en": "I would like to buy some fruit.",
+   "it": "Vorrei comprare un po' di frutta.",
+   "es": "Quisiera comprar algo de fruta.",
+   "pt": "Gostaria de comprar fruta.",
+   "pt_BR": "Gostaria de comprar frutas.",
+   "fr": "Je voudrais acheter des fruits.",
+   "de": "Ich möchte etwas Obst kaufen."
+  }
+ },
+ {
+  "id": "ss-shopping-026",
+  "topic": "shopping",
+  "level": "A2",
+  "text": {
+   "en": "Is this on sale?",
+   "it": "È in saldo?",
+   "es": "¿Está en oferta?",
+   "pt": "Está em promoção?",
+   "pt_BR": "Está em promoção?",
+   "fr": "Est-ce en solde ?",
+   "de": "Ist das im Angebot?"
+  }
+ },
+ {
+  "id": "ss-shopping-027",
+  "topic": "shopping",
+  "level": "A2",
+  "text": {
+   "en": "How much is it per kilo?",
+   "it": "Quanto costa al chilo?",
+   "es": "¿Cuánto cuesta el kilo?",
+   "pt": "Quanto custa o quilo?",
+   "pt_BR": "Quanto custa o quilo?",
+   "fr": "Combien coûte le kilo ?",
+   "de": "Wie viel kostet das Kilo?"
+  }
+ },
+ {
+  "id": "ss-shopping-028",
+  "topic": "shopping",
+  "level": "A2",
+  "text": {
+   "en": "Where can I find the shoes?",
+   "it": "Dove trovo le scarpe?",
+   "es": "¿Dónde encuentro los zapatos?",
+   "pt": "Onde encontro os sapatos?",
+   "pt_BR": "Onde encontro os sapatos?",
+   "fr": "Où trouver les chaussures ?",
+   "de": "Wo finde ich die Schuhe?"
+  }
+ },
+ {
+  "id": "ss-shopping-029",
+  "topic": "shopping",
+  "level": "A2",
+  "text": {
+   "en": "I forgot my bag at home.",
+   "it": "Ho dimenticato la borsa a casa.",
+   "es": "Olvidé mi bolsa en casa.",
+   "pt": "Esqueci-me do saco em casa.",
+   "pt_BR": "Esqueci minha sacola em casa.",
+   "fr": "J'ai oublié mon sac à la maison.",
+   "de": "Ich habe meine Tasche zu Hause vergessen."
+  }
+ },
+ {
+  "id": "ss-shopping-030",
+  "topic": "shopping",
+  "level": "A2",
+  "text": {
+   "en": "Does the shop close for lunch?",
+   "it": "Il negozio chiude per pranzo?",
+   "es": "¿La tienda cierra a la hora de comer?",
+   "pt": "A loja fecha para o almoço?",
+   "pt_BR": "A loja fecha para o almoço?",
+   "fr": "Le magasin ferme-t-il à midi ?",
+   "de": "Macht der Laden über Mittag zu?"
+  }
+ },
+ {
+  "id": "ss-shopping-031",
+  "topic": "shopping",
+  "level": "B1",
+  "text": {
+   "en": "Could you tell me where the souvenir shops are?",
+   "it": "Mi sa dire dove sono i negozi di souvenir?",
+   "es": "¿Podría decirme dónde están las tiendas de souvenirs?",
+   "pt": "Pode dizer-me onde ficam as lojas de lembranças?",
+   "pt_BR": "Pode me dizer onde ficam as lojas de souvenirs?",
+   "fr": "Pourriez-vous me dire où se trouvent les boutiques de souvenirs ?",
+   "de": "Können Sie mir sagen, wo die Souvenirläden sind?"
+  }
+ },
+ {
+  "id": "ss-shopping-032",
+  "topic": "shopping",
+  "level": "B1",
+  "text": {
+   "en": "I bought this yesterday, but it does not fit. Can I exchange it?",
+   "it": "L'ho comprato ieri, ma non mi va bene. Posso cambiarlo?",
+   "es": "Lo compré ayer, pero no me queda bien. ¿Puedo cambiarlo?",
+   "pt": "Comprei isto ontem, mas não me serve. Posso trocá-lo?",
+   "pt_BR": "Comprei isso ontem, mas não serve. Posso trocar?",
+   "fr": "Je l'ai acheté hier, mais ça ne me va pas. Puis-je l'échanger ?",
+   "de": "Ich habe das gestern gekauft, aber es passt nicht. Kann ich es umtauschen?"
+  }
+ },
+ {
+  "id": "ss-shopping-033",
+  "topic": "shopping",
+  "level": "B1",
+  "text": {
+   "en": "Is it possible to get a refund if I change my mind?",
+   "it": "È possibile avere un rimborso se cambio idea?",
+   "es": "¿Es posible que me devuelvan el dinero si cambio de opinión?",
+   "pt": "É possível obter um reembolso se mudar de ideias?",
+   "pt_BR": "É possível receber reembolso se eu mudar de ideia?",
+   "fr": "Est-il possible d'être remboursé si je change d'avis ?",
+   "de": "Kann ich mein Geld zurückbekommen, wenn ich es mir anders überlege?"
+  }
+ },
+ {
+  "id": "ss-shopping-034",
+  "topic": "shopping",
+  "level": "B1",
+  "text": {
+   "en": "What do people usually buy here as a souvenir?",
+   "it": "Cosa si compra di solito qui come souvenir?",
+   "es": "¿Qué suele comprar la gente aquí como recuerdo?",
+   "pt": "O que é que as pessoas costumam comprar aqui como lembrança?",
+   "pt_BR": "O que as pessoas costumam comprar aqui de lembrança?",
+   "fr": "Que achète-t-on généralement ici comme souvenir ?",
+   "de": "Was kauft man hier üblicherweise als Souvenir?"
+  }
+ },
+ {
+  "id": "ss-shopping-035",
+  "topic": "shopping",
+  "level": "B1",
+  "text": {
+   "en": "Do you know a good local market for fresh vegetables?",
+   "it": "Conosci un buon mercato locale per le verdure fresche?",
+   "es": "¿Conoces un buen mercado local para verduras frescas?",
+   "pt": "Conheces um bom mercado local para legumes frescos?",
+   "pt_BR": "Você conhece um bom mercado local para legumes frescos?",
+   "fr": "Connais-tu un bon marché local pour des légumes frais ?",
+   "de": "Kennst du einen guten Markt für frisches Gemüse?"
+  }
+ },
+ {
+  "id": "ss-shopping-036",
+  "topic": "shopping",
+  "level": "B1",
+  "text": {
+   "en": "Could you give me a better price if I buy three?",
+   "it": "Può farmi un prezzo migliore se ne prendo tre?",
+   "es": "¿Me haría un mejor precio si compro tres?",
+   "pt": "Faz-me um preço melhor se levar três?",
+   "pt_BR": "Você faz um preço melhor se eu levar três?",
+   "fr": "Pouvez-vous me faire un meilleur prix si j'en prends trois ?",
+   "de": "Können Sie mir einen besseren Preis machen, wenn ich drei nehme?"
+  }
+ },
+ {
+  "id": "ss-shopping-037",
+  "topic": "shopping",
+  "level": "B1",
+  "text": {
+   "en": "Is tax included in the price?",
+   "it": "Le tasse sono incluse nel prezzo?",
+   "es": "¿Los impuestos están incluidos en el precio?",
+   "pt": "Os impostos estão incluídos no preço?",
+   "pt_BR": "Os impostos estão incluídos no preço?",
+   "fr": "Les taxes sont-elles comprises dans le prix ?",
+   "de": "Sind die Steuern im Preis enthalten?"
+  }
+ },
+ {
+  "id": "ss-shopping-038",
+  "topic": "shopping",
+  "level": "B1",
+  "text": {
+   "en": "Can you recommend a shop that sells local crafts?",
+   "it": "Puoi consigliarmi un negozio che vende artigianato locale?",
+   "es": "¿Puedes recomendarme una tienda de artesanía local?",
+   "pt": "Podes recomendar-me uma loja de artesanato local?",
+   "pt_BR": "Você pode me recomendar uma loja de artesanato local?",
+   "fr": "Peux-tu me recommander une boutique d'artisanat local ?",
+   "de": "Kannst du mir einen Laden für lokales Kunsthandwerk empfehlen?"
+  }
+ },
+ {
+  "id": "ss-shopping-039",
+  "topic": "shopping",
+  "level": "B1",
+  "text": {
+   "en": "I would like to see something a bit cheaper.",
+   "it": "Vorrei vedere qualcosa di un po' più economico.",
+   "es": "Me gustaría ver algo un poco más barato.",
+   "pt": "Gostaria de ver algo um pouco mais barato.",
+   "pt_BR": "Gostaria de ver algo um pouco mais barato.",
+   "fr": "Je voudrais voir quelque chose d'un peu moins cher.",
+   "de": "Ich würde gern etwas Günstigeres sehen."
+  }
+ },
+ {
+  "id": "ss-shopping-040",
+  "topic": "shopping",
+  "level": "B1",
+  "text": {
+   "en": "Does this come with a warranty?",
+   "it": "Ha la garanzia?",
+   "es": "¿Tiene garantía?",
+   "pt": "Tem garantia?",
+   "pt_BR": "Tem garantia?",
+   "fr": "Est-ce garanti ?",
+   "de": "Gibt es darauf Garantie?"
+  }
+ },
+ {
+  "id": "ss-shopping-041",
+  "topic": "shopping",
+  "level": "B1",
+  "text": {
+   "en": "Do you deliver to my hotel?",
+   "it": "Consegnate al mio hotel?",
+   "es": "¿Entregan en mi hotel?",
+   "pt": "Entregam no meu hotel?",
+   "pt_BR": "Vocês entregam no meu hotel?",
+   "fr": "Livrez-vous à mon hôtel ?",
+   "de": "Liefern Sie zu meinem Hotel?"
+  }
+ },
+ {
+  "id": "ss-shopping-042",
+  "topic": "shopping",
+  "level": "B1",
+  "text": {
+   "en": "Are there any shops open on Sunday near here?",
+   "it": "Ci sono negozi aperti la domenica qui vicino?",
+   "es": "¿Hay tiendas abiertas el domingo por aquí cerca?",
+   "pt": "Há lojas abertas ao domingo aqui perto?",
+   "pt_BR": "Tem lojas abertas no domingo aqui perto?",
+   "fr": "Y a-t-il des magasins ouverts le dimanche près d'ici ?",
+   "de": "Gibt es hier in der Nähe Geschäfte, die sonntags geöffnet haben?"
+  }
+ },
+ {
+  "id": "ss-shopping-043",
+  "topic": "shopping",
+  "level": "B2",
+  "text": {
+   "en": "I would like to return this item because it was damaged when I opened it.",
+   "it": "Vorrei restituire questo articolo perché era danneggiato quando l'ho aperto.",
+   "es": "Me gustaría devolver este artículo porque estaba dañado cuando lo abrí.",
+   "pt": "Gostaria de devolver este artigo porque estava danificado quando o abri.",
+   "pt_BR": "Gostaria de devolver este item porque estava danificado quando o abri.",
+   "fr": "Je voudrais retourner cet article, car il était abîmé quand je l'ai ouvert.",
+   "de": "Ich möchte diesen Artikel zurückgeben, weil er beim Öffnen beschädigt war."
+  }
+ },
+ {
+  "id": "ss-shopping-044",
+  "topic": "shopping",
+  "level": "B2",
+  "text": {
+   "en": "Could you check whether you have it in stock at another branch?",
+   "it": "Potrebbe controllare se è disponibile in un'altra filiale?",
+   "es": "¿Podría comprobar si lo tienen en stock en otra sucursal?",
+   "pt": "Podia verificar se o têm em stock noutra loja?",
+   "pt_BR": "Poderia verificar se tem em estoque em outra filial?",
+   "fr": "Pourriez-vous vérifier si vous l'avez en stock dans un autre magasin ?",
+   "de": "Könnten Sie prüfen, ob es in einer anderen Filiale vorrätig ist?"
+  }
+ },
+ {
+  "id": "ss-shopping-045",
+  "topic": "shopping",
+  "level": "B2",
+  "text": {
+   "en": "Is it normal to negotiate the price at this market, or are prices fixed?",
+   "it": "È normale contrattare il prezzo in questo mercato o i prezzi sono fissi?",
+   "es": "¿Es normal regatear el precio en este mercado o los precios son fijos?",
+   "pt": "É normal regatear o preço neste mercado ou os preços são fixos?",
+   "pt_BR": "É normal pechinchar neste mercado ou os preços são fixos?",
+   "fr": "Est-il courant de marchander sur ce marché, ou les prix sont-ils fixes ?",
+   "de": "Ist es auf diesem Markt üblich zu handeln, oder sind die Preise fest?"
+  }
+ },
+ {
+  "id": "ss-shopping-046",
+  "topic": "shopping",
+  "level": "B2",
+  "text": {
+   "en": "I am comparing a few options, so I will think about it and come back later.",
+   "it": "Sto confrontando alcune opzioni, quindi ci penso e torno più tardi.",
+   "es": "Estoy comparando algunas opciones, así que lo pensaré y volveré más tarde.",
+   "pt": "Estou a comparar algumas opções, por isso vou pensar e volto mais tarde.",
+   "pt_BR": "Estou comparando algumas opções, então vou pensar e volto mais tarde.",
+   "fr": "Je compare plusieurs options, alors je vais réfléchir et revenir plus tard.",
+   "de": "Ich vergleiche gerade einige Optionen, deshalb überlege ich es mir und komme später wieder."
+  }
+ },
+ {
+  "id": "ss-shopping-047",
+  "topic": "shopping",
+  "level": "B2",
+  "text": {
+   "en": "Could you explain the difference between these two models before I decide?",
+   "it": "Potrebbe spiegarmi la differenza tra questi due modelli prima che io decida?",
+   "es": "¿Podría explicarme la diferencia entre estos dos modelos antes de decidirme?",
+   "pt": "Podia explicar-me a diferença entre estes dois modelos antes de eu decidir?",
+   "pt_BR": "Poderia me explicar a diferença entre esses dois modelos antes de eu decidir?",
+   "fr": "Pourriez-vous m'expliquer la différence entre ces deux modèles avant que je décide ?",
+   "de": "Könnten Sie mir den Unterschied zwischen diesen beiden Modellen erklären, bevor ich mich entscheide?"
+  }
+ },
+ {
+  "id": "ss-shopping-048",
+  "topic": "shopping",
+  "level": "B2",
+  "text": {
+   "en": "Do you offer tax-free shopping for tourists, and what documents do I need?",
+   "it": "Offrite lo shopping detax per i turisti e quali documenti servono?",
+   "es": "¿Ofrecen compras libres de impuestos para turistas y qué documentos necesito?",
+   "pt": "Oferecem compras sem impostos para turistas e que documentos preciso?",
+   "pt_BR": "Vocês oferecem compras sem impostos para turistas e quais documentos eu preciso?",
+   "fr": "Proposez-vous la détaxe pour les touristes, et de quels documents ai-je besoin ?",
+   "de": "Bieten Sie steuerfreies Einkaufen für Touristen an, und welche Unterlagen brauche ich?"
+  }
+ },
+ {
+  "id": "ss-shopping-049",
+  "topic": "shopping",
+  "level": "B2",
+  "text": {
+   "en": "The label says it is handmade; could you tell me where it was made?",
+   "it": "L'etichetta dice che è fatto a mano; sa dirmi dove è stato prodotto?",
+   "es": "La etiqueta dice que es artesanal; ¿podría decirme dónde se fabricó?",
+   "pt": "A etiqueta diz que é feito à mão; pode dizer-me onde foi fabricado?",
+   "pt_BR": "A etiqueta diz que é feito à mão; você pode me dizer onde foi fabricado?",
+   "fr": "L'étiquette indique que c'est fait main ; pouvez-vous me dire où il a été fabriqué ?",
+   "de": "Auf dem Etikett steht, dass es handgemacht ist; können Sie mir sagen, wo es hergestellt wurde?"
+  }
+ },
+ {
+  "id": "ss-shopping-050",
+  "topic": "shopping",
+  "level": "B2",
+  "text": {
+   "en": "I would appreciate it if you could keep it aside for me until this afternoon.",
+   "it": "Le sarei grato se potesse metterlo da parte per me fino a questo pomeriggio.",
+   "es": "Le agradecería que pudiera guardármelo hasta esta tarde.",
+   "pt": "Agradecia que o pudesse guardar para mim até esta tarde.",
+   "pt_BR": "Eu agradeceria se você pudesse guardar para mim até esta tarde.",
+   "fr": "Je vous serais reconnaissant de bien vouloir me le mettre de côté jusqu'à cet après-midi.",
+   "de": "Ich wäre dankbar, wenn Sie es mir bis heute Nachmittag zurücklegen könnten."
+  }
+ },
+ {
+  "id": "ss-transport-001",
+  "topic": "transport",
+  "level": "A1",
+  "text": {
+   "en": "Where is the bus stop?",
+   "it": "Dov'è la fermata dell'autobus?",
+   "es": "¿Dónde está la parada de autobús?",
+   "pt": "Onde fica a paragem de autocarro?",
+   "pt_BR": "Onde fica o ponto de ônibus?",
+   "fr": "Où est l'arrêt de bus ?",
+   "de": "Wo ist die Bushaltestelle?"
+  }
+ },
+ {
+  "id": "ss-transport-002",
+  "topic": "transport",
+  "level": "A1",
+  "text": {
+   "en": "One ticket, please.",
+   "it": "Un biglietto, per favore.",
+   "es": "Un billete, por favor.",
+   "pt": "Um bilhete, por favor.",
+   "pt_BR": "Uma passagem, por favor.",
+   "fr": "Un billet, s'il vous plaît.",
+   "de": "Eine Fahrkarte, bitte."
+  }
+ },
+ {
+  "id": "ss-transport-003",
+  "topic": "transport",
+  "level": "A1",
+  "text": {
+   "en": "Where is the train station?",
+   "it": "Dov'è la stazione ferroviaria?",
+   "es": "¿Dónde está la estación de tren?",
+   "pt": "Onde fica a estação de comboios?",
+   "pt_BR": "Onde fica a estação de trem?",
+   "fr": "Où est la gare ?",
+   "de": "Wo ist der Bahnhof?"
+  }
+ },
+ {
+  "id": "ss-transport-004",
+  "topic": "transport",
+  "level": "A1",
+  "text": {
+   "en": "Is this the right bus?",
+   "it": "È questo l'autobus giusto?",
+   "es": "¿Es este el autobús correcto?",
+   "pt": "Este é o autocarro certo?",
+   "pt_BR": "Este é o ônibus certo?",
+   "fr": "C'est le bon bus ?",
+   "de": "Ist das der richtige Bus?"
+  }
+ },
+ {
+  "id": "ss-transport-005",
+  "topic": "transport",
+  "level": "A1",
+  "text": {
+   "en": "How much is the ticket?",
+   "it": "Quanto costa il biglietto?",
+   "es": "¿Cuánto cuesta el billete?",
+   "pt": "Quanto custa o bilhete?",
+   "pt_BR": "Quanto custa a passagem?",
+   "fr": "Combien coûte le billet ?",
+   "de": "Wie viel kostet die Fahrkarte?"
+  }
+ },
+ {
+  "id": "ss-transport-006",
+  "topic": "transport",
+  "level": "A1",
+  "text": {
+   "en": "I need a taxi.",
+   "it": "Mi serve un taxi.",
+   "es": "Necesito un taxi.",
+   "pt": "Preciso de um táxi.",
+   "pt_BR": "Preciso de um táxi.",
+   "fr": "J'ai besoin d'un taxi.",
+   "de": "Ich brauche ein Taxi."
+  }
+ },
+ {
+  "id": "ss-transport-007",
+  "topic": "transport",
+  "level": "A1",
+  "text": {
+   "en": "Where is the metro?",
+   "it": "Dov'è la metropolitana?",
+   "es": "¿Dónde está el metro?",
+   "pt": "Onde fica o metro?",
+   "pt_BR": "Onde fica o metrô?",
+   "fr": "Où est le métro ?",
+   "de": "Wo ist die U-Bahn?"
+  }
+ },
+ {
+  "id": "ss-transport-008",
+  "topic": "transport",
+  "level": "A1",
+  "text": {
+   "en": "Stop here, please.",
+   "it": "Si fermi qui, per favore.",
+   "es": "Pare aquí, por favor.",
+   "pt": "Pare aqui, por favor.",
+   "pt_BR": "Pare aqui, por favor.",
+   "fr": "Arrêtez-vous ici, s'il vous plaît.",
+   "de": "Bitte halten Sie hier an."
+  }
+ },
+ {
+  "id": "ss-transport-009",
+  "topic": "transport",
+  "level": "A1",
+  "text": {
+   "en": "Is it far?",
+   "it": "È lontano?",
+   "es": "¿Está lejos?",
+   "pt": "É longe?",
+   "pt_BR": "É longe?",
+   "fr": "C'est loin ?",
+   "de": "Ist es weit?"
+  }
+ },
+ {
+  "id": "ss-transport-010",
+  "topic": "transport",
+  "level": "A1",
+  "text": {
+   "en": "Which platform?",
+   "it": "Quale binario?",
+   "es": "¿Qué andén?",
+   "pt": "Em que linha?",
+   "pt_BR": "Qual plataforma?",
+   "fr": "Quel quai ?",
+   "de": "Welches Gleis?"
+  }
+ },
+ {
+  "id": "ss-transport-011",
+  "topic": "transport",
+  "level": "A1",
+  "text": {
+   "en": "Where is the airport?",
+   "it": "Dov'è l'aeroporto?",
+   "es": "¿Dónde está el aeropuerto?",
+   "pt": "Onde fica o aeroporto?",
+   "pt_BR": "Onde fica o aeroporto?",
+   "fr": "Où est l'aéroport ?",
+   "de": "Wo ist der Flughafen?"
+  }
+ },
+ {
+  "id": "ss-transport-012",
+  "topic": "transport",
+  "level": "A1",
+  "text": {
+   "en": "I am lost.",
+   "it": "Mi sono perso.",
+   "es": "Estoy perdido.",
+   "pt": "Estou perdido.",
+   "pt_BR": "Estou perdido.",
+   "fr": "Je suis perdu.",
+   "de": "Ich habe mich verlaufen."
+  }
+ },
+ {
+  "id": "ss-transport-013",
+  "topic": "transport",
+  "level": "A1",
+  "text": {
+   "en": "Turn left.",
+   "it": "Giri a sinistra.",
+   "es": "Gire a la izquierda.",
+   "pt": "Vire à esquerda.",
+   "pt_BR": "Vire à esquerda.",
+   "fr": "Tournez à gauche.",
+   "de": "Biegen Sie links ab."
+  }
+ },
+ {
+  "id": "ss-transport-014",
+  "topic": "transport",
+  "level": "A1",
+  "text": {
+   "en": "Go straight.",
+   "it": "Vada dritto.",
+   "es": "Siga recto.",
+   "pt": "Siga em frente.",
+   "pt_BR": "Siga em frente.",
+   "fr": "Allez tout droit.",
+   "de": "Gehen Sie geradeaus."
+  }
+ },
+ {
+  "id": "ss-transport-015",
+  "topic": "transport",
+  "level": "A1",
+  "text": {
+   "en": "What time is the next train?",
+   "it": "A che ora è il prossimo treno?",
+   "es": "¿A qué hora sale el próximo tren?",
+   "pt": "A que horas é o próximo comboio?",
+   "pt_BR": "A que horas sai o próximo trem?",
+   "fr": "À quelle heure est le prochain train ?",
+   "de": "Wann fährt der nächste Zug?"
+  }
+ },
+ {
+  "id": "ss-transport-016",
+  "topic": "transport",
+  "level": "A2",
+  "text": {
+   "en": "Does this bus go to the city centre?",
+   "it": "Questo autobus va in centro?",
+   "es": "¿Este autobús va al centro?",
+   "pt": "Este autocarro vai para o centro da cidade?",
+   "pt_BR": "Esse ônibus vai para o centro?",
+   "fr": "Ce bus va-t-il au centre-ville ?",
+   "de": "Fährt dieser Bus ins Stadtzentrum?"
+  }
+ },
+ {
+  "id": "ss-transport-017",
+  "topic": "transport",
+  "level": "A2",
+  "text": {
+   "en": "How long does it take to get there?",
+   "it": "Quanto ci vuole per arrivarci?",
+   "es": "¿Cuánto se tarda en llegar?",
+   "pt": "Quanto tempo demora a chegar lá?",
+   "pt_BR": "Quanto tempo leva para chegar lá?",
+   "fr": "Combien de temps faut-il pour y aller ?",
+   "de": "Wie lange dauert es bis dorthin?"
+  }
+ },
+ {
+  "id": "ss-transport-018",
+  "topic": "transport",
+  "level": "A2",
+  "text": {
+   "en": "Where can I buy a ticket?",
+   "it": "Dove posso comprare un biglietto?",
+   "es": "¿Dónde puedo comprar un billete?",
+   "pt": "Onde posso comprar um bilhete?",
+   "pt_BR": "Onde posso comprar uma passagem?",
+   "fr": "Où puis-je acheter un billet ?",
+   "de": "Wo kann ich eine Fahrkarte kaufen?"
+  }
+ },
+ {
+  "id": "ss-transport-019",
+  "topic": "transport",
+  "level": "A2",
+  "text": {
+   "en": "Do I need to change trains?",
+   "it": "Devo cambiare treno?",
+   "es": "¿Tengo que hacer transbordo?",
+   "pt": "Tenho de mudar de comboio?",
+   "pt_BR": "Preciso fazer baldeação?",
+   "fr": "Dois-je changer de train ?",
+   "de": "Muss ich umsteigen?"
+  }
+ },
+ {
+  "id": "ss-transport-020",
+  "topic": "transport",
+  "level": "A2",
+  "text": {
+   "en": "Can you tell me when to get off?",
+   "it": "Può dirmi quando devo scendere?",
+   "es": "¿Puede decirme cuándo tengo que bajarme?",
+   "pt": "Pode dizer-me quando devo sair?",
+   "pt_BR": "Pode me dizer quando devo descer?",
+   "fr": "Pouvez-vous me dire quand descendre ?",
+   "de": "Können Sie mir sagen, wann ich aussteigen muss?"
+  }
+ },
+ {
+  "id": "ss-transport-021",
+  "topic": "transport",
+  "level": "A2",
+  "text": {
+   "en": "Is there a bus to the airport?",
+   "it": "C'è un autobus per l'aeroporto?",
+   "es": "¿Hay un autobús al aeropuerto?",
+   "pt": "Há algum autocarro para o aeroporto?",
+   "pt_BR": "Tem ônibus para o aeroporto?",
+   "fr": "Y a-t-il un bus pour l'aéroport ?",
+   "de": "Gibt es einen Bus zum Flughafen?"
+  }
+ },
+ {
+  "id": "ss-transport-022",
+  "topic": "transport",
+  "level": "A2",
+  "text": {
+   "en": "What is the next stop?",
+   "it": "Qual è la prossima fermata?",
+   "es": "¿Cuál es la próxima parada?",
+   "pt": "Qual é a próxima paragem?",
+   "pt_BR": "Qual é a próxima parada?",
+   "fr": "Quel est le prochain arrêt ?",
+   "de": "Was ist die nächste Haltestelle?"
+  }
+ },
+ {
+  "id": "ss-transport-023",
+  "topic": "transport",
+  "level": "A2",
+  "text": {
+   "en": "Could you take me to this address, please?",
+   "it": "Può portarmi a questo indirizzo, per favore?",
+   "es": "¿Podría llevarme a esta dirección, por favor?",
+   "pt": "Pode levar-me a esta morada, por favor?",
+   "pt_BR": "Pode me levar a este endereço, por favor?",
+   "fr": "Pouvez-vous m'emmener à cette adresse, s'il vous plaît ?",
+   "de": "Könnten Sie mich bitte zu dieser Adresse bringen?"
+  }
+ },
+ {
+  "id": "ss-transport-024",
+  "topic": "transport",
+  "level": "A2",
+  "text": {
+   "en": "How much is a day pass?",
+   "it": "Quanto costa un biglietto giornaliero?",
+   "es": "¿Cuánto cuesta un pase de un día?",
+   "pt": "Quanto custa um passe diário?",
+   "pt_BR": "Quanto custa um bilhete diário?",
+   "fr": "Combien coûte un pass pour la journée ?",
+   "de": "Wie viel kostet eine Tageskarte?"
+  }
+ },
+ {
+  "id": "ss-transport-025",
+  "topic": "transport",
+  "level": "A2",
+  "text": {
+   "en": "The train is ten minutes late.",
+   "it": "Il treno è in ritardo di dieci minuti.",
+   "es": "El tren lleva diez minutos de retraso.",
+   "pt": "O comboio está dez minutos atrasado.",
+   "pt_BR": "O trem está dez minutos atrasado.",
+   "fr": "Le train a dix minutes de retard.",
+   "de": "Der Zug hat zehn Minuten Verspätung."
+  }
+ },
+ {
+  "id": "ss-transport-026",
+  "topic": "transport",
+  "level": "A2",
+  "text": {
+   "en": "Where can I rent a bike?",
+   "it": "Dove posso noleggiare una bici?",
+   "es": "¿Dónde puedo alquilar una bicicleta?",
+   "pt": "Onde posso alugar uma bicicleta?",
+   "pt_BR": "Onde posso alugar uma bicicleta?",
+   "fr": "Où puis-je louer un vélo ?",
+   "de": "Wo kann ich ein Fahrrad mieten?"
+  }
+ },
+ {
+  "id": "ss-transport-027",
+  "topic": "transport",
+  "level": "A2",
+  "text": {
+   "en": "Is this seat free?",
+   "it": "Questo posto è libero?",
+   "es": "¿Está libre este asiento?",
+   "pt": "Este lugar está livre?",
+   "pt_BR": "Este lugar está livre?",
+   "fr": "Cette place est-elle libre ?",
+   "de": "Ist dieser Platz frei?"
+  }
+ },
+ {
+  "id": "ss-transport-028",
+  "topic": "transport",
+  "level": "A2",
+  "text": {
+   "en": "I missed my bus.",
+   "it": "Ho perso l'autobus.",
+   "es": "He perdido el autobús.",
+   "pt": "Perdi o autocarro.",
+   "pt_BR": "Perdi o ônibus.",
+   "fr": "J'ai raté mon bus.",
+   "de": "Ich habe meinen Bus verpasst."
+  }
+ },
+ {
+  "id": "ss-transport-029",
+  "topic": "transport",
+  "level": "A2",
+  "text": {
+   "en": "Which line goes to the museum?",
+   "it": "Quale linea va al museo?",
+   "es": "¿Qué línea va al museo?",
+   "pt": "Qual é a linha para o museu?",
+   "pt_BR": "Qual linha vai para o museu?",
+   "fr": "Quelle ligne va au musée ?",
+   "de": "Welche Linie fährt zum Museum?"
+  }
+ },
+ {
+  "id": "ss-transport-030",
+  "topic": "transport",
+  "level": "A2",
+  "text": {
+   "en": "Is there a taxi stand nearby?",
+   "it": "C'è un posteggio dei taxi qui vicino?",
+   "es": "¿Hay una parada de taxis cerca?",
+   "pt": "Há alguma praça de táxis por perto?",
+   "pt_BR": "Tem algum ponto de táxi por perto?",
+   "fr": "Y a-t-il une station de taxis près d'ici ?",
+   "de": "Gibt es in der Nähe einen Taxistand?"
+  }
+ },
+ {
+  "id": "ss-transport-031",
+  "topic": "transport",
+  "level": "B1",
+  "text": {
+   "en": "Is it better to take the train or the bus to get there?",
+   "it": "È meglio andarci in treno o in autobus?",
+   "es": "¿Es mejor ir en tren o en autobús?",
+   "pt": "É melhor ir de comboio ou de autocarro?",
+   "pt_BR": "É melhor ir de trem ou de ônibus?",
+   "fr": "Vaut-il mieux y aller en train ou en bus ?",
+   "de": "Ist es besser, mit dem Zug oder mit dem Bus hinzufahren?"
+  }
+ },
+ {
+  "id": "ss-transport-032",
+  "topic": "transport",
+  "level": "B1",
+  "text": {
+   "en": "Could you tell me where to validate my ticket?",
+   "it": "Può dirmi dove devo convalidare il biglietto?",
+   "es": "¿Podría decirme dónde validar mi billete?",
+   "pt": "Pode dizer-me onde devo validar o meu bilhete?",
+   "pt_BR": "Pode me dizer onde devo validar minha passagem?",
+   "fr": "Pourriez-vous me dire où composter mon billet ?",
+   "de": "Können Sie mir sagen, wo ich meine Fahrkarte entwerten muss?"
+  }
+ },
+ {
+  "id": "ss-transport-033",
+  "topic": "transport",
+  "level": "B1",
+  "text": {
+   "en": "My train was cancelled. What are my options?",
+   "it": "Il mio treno è stato cancellato. Quali alternative ho?",
+   "es": "Han cancelado mi tren. ¿Qué opciones tengo?",
+   "pt": "O meu comboio foi cancelado. Que opções tenho?",
+   "pt_BR": "Meu trem foi cancelado. Quais são minhas opções?",
+   "fr": "Mon train a été annulé. Quelles sont mes options ?",
+   "de": "Mein Zug wurde gestrichen. Welche Möglichkeiten habe ich?"
+  }
+ },
+ {
+  "id": "ss-transport-034",
+  "topic": "transport",
+  "level": "B1",
+  "text": {
+   "en": "Is there a cheaper way to get from the airport to the centre?",
+   "it": "C'è un modo più economico per andare dall'aeroporto al centro?",
+   "es": "¿Hay una forma más barata de ir del aeropuerto al centro?",
+   "pt": "Há uma forma mais barata de ir do aeroporto para o centro?",
+   "pt_BR": "Existe uma forma mais barata de ir do aeroporto ao centro?",
+   "fr": "Existe-t-il un moyen moins cher d'aller de l'aéroport au centre ?",
+   "de": "Gibt es eine günstigere Möglichkeit, vom Flughafen ins Zentrum zu kommen?"
+  }
+ },
+ {
+  "id": "ss-transport-035",
+  "topic": "transport",
+  "level": "B1",
+  "text": {
+   "en": "Do you know if the metro runs late at night?",
+   "it": "Sai se la metropolitana funziona fino a tardi la notte?",
+   "es": "¿Sabes si el metro funciona hasta tarde por la noche?",
+   "pt": "Sabes se o metro funciona até tarde à noite?",
+   "pt_BR": "Você sabe se o metrô funciona até tarde da noite?",
+   "fr": "Sais-tu si le métro circule tard le soir ?",
+   "de": "Weißt du, ob die U-Bahn nachts lange fährt?"
+  }
+ },
+ {
+  "id": "ss-transport-036",
+  "topic": "transport",
+  "level": "B1",
+  "text": {
+   "en": "Can I pay for the ride by card?",
+   "it": "Posso pagare la corsa con la carta?",
+   "es": "¿Puedo pagar el viaje con tarjeta?",
+   "pt": "Posso pagar a viagem com cartão?",
+   "pt_BR": "Posso pagar a corrida no cartão?",
+   "fr": "Puis-je payer la course par carte ?",
+   "de": "Kann ich die Fahrt mit Karte bezahlen?"
+  }
+ },
+ {
+  "id": "ss-transport-037",
+  "topic": "transport",
+  "level": "B1",
+  "text": {
+   "en": "Where is the best place to park near the old town?",
+   "it": "Qual è il posto migliore per parcheggiare vicino al centro storico?",
+   "es": "¿Dónde es mejor aparcar cerca del casco antiguo?",
+   "pt": "Qual é o melhor sítio para estacionar perto do centro histórico?",
+   "pt_BR": "Qual é o melhor lugar para estacionar perto do centro histórico?",
+   "fr": "Où vaut-il mieux se garer près du centre historique ?",
+   "de": "Wo parkt man am besten in der Nähe der Altstadt?"
+  }
+ },
+ {
+  "id": "ss-transport-038",
+  "topic": "transport",
+  "level": "B1",
+  "text": {
+   "en": "I would like a return ticket for tomorrow morning.",
+   "it": "Vorrei un biglietto di andata e ritorno per domani mattina.",
+   "es": "Quisiera un billete de ida y vuelta para mañana por la mañana.",
+   "pt": "Queria um bilhete de ida e volta para amanhã de manhã.",
+   "pt_BR": "Quero uma passagem de ida e volta para amanhã de manhã.",
+   "fr": "Je voudrais un billet aller-retour pour demain matin.",
+   "de": "Ich möchte eine Hin- und Rückfahrkarte für morgen früh."
+  }
+ },
+ {
+  "id": "ss-transport-039",
+  "topic": "transport",
+  "level": "B1",
+  "text": {
+   "en": "How often do the buses run on weekends?",
+   "it": "Ogni quanto passano gli autobus nel fine settimana?",
+   "es": "¿Cada cuánto pasan los autobuses los fines de semana?",
+   "pt": "Com que frequência passam os autocarros ao fim de semana?",
+   "pt_BR": "Com que frequência passam os ônibus nos fins de semana?",
+   "fr": "À quelle fréquence passent les bus le week-end ?",
+   "de": "Wie oft fahren die Busse am Wochenende?"
+  }
+ },
+ {
+  "id": "ss-transport-040",
+  "topic": "transport",
+  "level": "B1",
+  "text": {
+   "en": "Could you please put my suitcase in the trunk?",
+   "it": "Può mettere la mia valigia nel bagagliaio, per favore?",
+   "es": "¿Podría poner mi maleta en el maletero, por favor?",
+   "pt": "Pode pôr a minha mala na bagageira, por favor?",
+   "pt_BR": "Pode colocar minha mala no porta-malas, por favor?",
+   "fr": "Pourriez-vous mettre ma valise dans le coffre, s'il vous plaît ?",
+   "de": "Könnten Sie bitte meinen Koffer in den Kofferraum legen?"
+  }
+ },
+ {
+  "id": "ss-transport-041",
+  "topic": "transport",
+  "level": "B1",
+  "text": {
+   "en": "Is there a direct connection, or do I have to change?",
+   "it": "C'è un collegamento diretto o devo cambiare?",
+   "es": "¿Hay una conexión directa o tengo que hacer transbordo?",
+   "pt": "Há ligação direta ou tenho de mudar?",
+   "pt_BR": "Tem ligação direta ou preciso fazer baldeação?",
+   "fr": "Y a-t-il une liaison directe, ou dois-je changer ?",
+   "de": "Gibt es eine Direktverbindung, oder muss ich umsteigen?"
+  }
+ },
+ {
+  "id": "ss-transport-042",
+  "topic": "transport",
+  "level": "B1",
+  "text": {
+   "en": "Is it safe to cycle in the city centre?",
+   "it": "È sicuro andare in bicicletta in centro?",
+   "es": "¿Es seguro ir en bici por el centro?",
+   "pt": "É seguro andar de bicicleta no centro da cidade?",
+   "pt_BR": "É seguro andar de bicicleta no centro da cidade?",
+   "fr": "Est-il sûr de faire du vélo dans le centre-ville ?",
+   "de": "Ist es sicher, im Stadtzentrum Rad zu fahren?"
+  }
+ },
+ {
+  "id": "ss-transport-043",
+  "topic": "transport",
+  "level": "B2",
+  "text": {
+   "en": "Could you help me find out why the bus has been delayed for so long?",
+   "it": "Potrebbe aiutarmi a capire perché l'autobus è in ritardo da così tanto?",
+   "es": "¿Podría ayudarme a averiguar por qué el autobús lleva tanto retraso?",
+   "pt": "Pode ajudar-me a perceber porque é que o autocarro está tão atrasado?",
+   "pt_BR": "Pode me ajudar a descobrir por que o ônibus está tão atrasado?",
+   "fr": "Pourriez-vous m'aider à comprendre pourquoi le bus a un tel retard ?",
+   "de": "Könnten Sie mir helfen herauszufinden, warum der Bus so lange Verspätung hat?"
+  }
+ },
+ {
+  "id": "ss-transport-044",
+  "topic": "transport",
+  "level": "B2",
+  "text": {
+   "en": "I think I took the wrong train; how can I get back to the right route?",
+   "it": "Credo di aver preso il treno sbagliato; come posso tornare sul percorso giusto?",
+   "es": "Creo que me he equivocado de tren; ¿cómo puedo volver a la ruta correcta?",
+   "pt": "Acho que apanhei o comboio errado; como posso voltar ao percurso certo?",
+   "pt_BR": "Acho que peguei o trem errado; como posso voltar ao trajeto certo?",
+   "fr": "Je crois que j'ai pris le mauvais train ; comment puis-je retrouver le bon itinéraire ?",
+   "de": "Ich glaube, ich bin in den falschen Zug gestiegen; wie komme ich zurück auf die richtige Strecke?"
+  }
+ },
+ {
+  "id": "ss-transport-045",
+  "topic": "transport",
+  "level": "B2",
+  "text": {
+   "en": "Do you know whether a strike is affecting public transport this week?",
+   "it": "Sai se questa settimana uno sciopero sta interessando i trasporti pubblici?",
+   "es": "¿Sabes si hay alguna huelga que afecte al transporte público esta semana?",
+   "pt": "Sabes se há alguma greve a afetar os transportes públicos esta semana?",
+   "pt_BR": "Você sabe se há alguma greve afetando o transporte público esta semana?",
+   "fr": "Sais-tu si une grève perturbe les transports en commun cette semaine ?",
+   "de": "Weißt du, ob diese Woche ein Streik den öffentlichen Nahverkehr beeinträchtigt?"
+  }
+ },
+ {
+  "id": "ss-transport-046",
+  "topic": "transport",
+  "level": "B2",
+  "text": {
+   "en": "Would it be quicker to walk, or should I wait for the next tram?",
+   "it": "Sarebbe più veloce andare a piedi o conviene aspettare il prossimo tram?",
+   "es": "¿Sería más rápido ir andando o debería esperar al próximo tranvía?",
+   "pt": "Seria mais rápido ir a pé ou devo esperar pelo próximo elétrico?",
+   "pt_BR": "Seria mais rápido ir a pé ou devo esperar o próximo bonde?",
+   "fr": "Serait-il plus rapide d'y aller à pied, ou dois-je attendre le prochain tram ?",
+   "de": "Wäre es schneller zu Fuß zu gehen, oder soll ich auf die nächste Straßenbahn warten?"
+  }
+ },
+ {
+  "id": "ss-transport-047",
+  "topic": "transport",
+  "level": "B2",
+  "text": {
+   "en": "I booked a seat, but someone else is sitting in it. What should I do?",
+   "it": "Ho prenotato un posto, ma qualcun altro è seduto lì. Cosa devo fare?",
+   "es": "Reservé un asiento, pero otra persona está sentada en él. ¿Qué debo hacer?",
+   "pt": "Reservei um lugar, mas está lá outra pessoa sentada. O que devo fazer?",
+   "pt_BR": "Reservei um assento, mas outra pessoa está sentada nele. O que devo fazer?",
+   "fr": "J'ai réservé une place, mais quelqu'un d'autre est assis dessus. Que dois-je faire ?",
+   "de": "Ich habe einen Platz reserviert, aber dort sitzt jemand anderes. Was soll ich tun?"
+  }
+ },
+ {
+  "id": "ss-transport-048",
+  "topic": "transport",
+  "level": "B2",
+  "text": {
+   "en": "Could you explain how the ticket zones work in this city?",
+   "it": "Potrebbe spiegarmi come funzionano le zone tariffarie in questa città?",
+   "es": "¿Podría explicarme cómo funcionan las zonas de tarifas en esta ciudad?",
+   "pt": "Pode explicar-me como funcionam as zonas de bilhetes nesta cidade?",
+   "pt_BR": "Pode me explicar como funcionam as zonas de tarifa nesta cidade?",
+   "fr": "Pourriez-vous m'expliquer comment fonctionnent les zones tarifaires dans cette ville ?",
+   "de": "Könnten Sie mir erklären, wie die Tarifzonen in dieser Stadt funktionieren?"
+  }
+ },
+ {
+  "id": "ss-transport-049",
+  "topic": "transport",
+  "level": "B2",
+  "text": {
+   "en": "I left my backpack on the train; where should I report it?",
+   "it": "Ho lasciato lo zaino sul treno; dove devo segnalarlo?",
+   "es": "He dejado la mochila en el tren; ¿dónde debo comunicarlo?",
+   "pt": "Deixei a mochila no comboio; onde devo comunicar?",
+   "pt_BR": "Deixei minha mochila no trem; onde devo avisar?",
+   "fr": "J'ai laissé mon sac à dos dans le train ; où dois-je le signaler ?",
+   "de": "Ich habe meinen Rucksack im Zug vergessen; wo muss ich das melden?"
+  }
+ },
+ {
+  "id": "ss-transport-050",
+  "topic": "transport",
+  "level": "B2",
+  "text": {
+   "en": "If we split the cost of a taxi, it would be cheaper than taking the train.",
+   "it": "Se dividiamo il costo di un taxi, costerebbe meno del treno.",
+   "es": "Si dividimos el coste de un taxi, saldría más barato que el tren.",
+   "pt": "Se dividirmos o custo de um táxi, fica mais barato do que o comboio.",
+   "pt_BR": "Se dividirmos o custo de um táxi, sai mais barato do que de trem.",
+   "fr": "Si nous partageons le prix d'un taxi, ce serait moins cher que le train.",
+   "de": "Wenn wir uns die Kosten für ein Taxi teilen, ist es günstiger als der Zug."
+  }
+ }
+]

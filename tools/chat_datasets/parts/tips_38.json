@@ -1,0 +1,1178 @@
+{
+ "RO": [
+  {
+   "id": "ct-RO-01",
+   "category": "greetings",
+   "text": {
+    "en": "A firm handshake with eye contact is the usual greeting. Close friends often kiss on both cheeks, and Bună ziua (good day) is a polite opener.",
+    "it": "La stretta di mano decisa con contatto visivo è il saluto abituale. Gli amici stretti si baciano spesso sulle guance, e Bună ziua (buongiorno) è un'apertura cortese.",
+    "es": "Lo habitual es un apretón de manos firme con contacto visual. Los amigos cercanos suelen darse un beso en cada mejilla, y Bună ziua (buenos días) es un saludo cortés.",
+    "pt": "O cumprimento habitual é um aperto de mão firme, com contacto visual. Amigos próximos costumam dar um beijo em cada face, e Bună ziua (bom dia) é uma abertura cortês.",
+    "pt_BR": "O cumprimento habitual é um aperto de mão firme, com contato visual. Amigos próximos costumam dar um beijo em cada bochecha, e Bună ziua (bom dia) é uma abertura educada.",
+    "fr": "On se salue d'ordinaire par une poignée de main ferme en regardant dans les yeux. Les amis proches font souvent la bise, et Bună ziua (bonjour) est une formule polie.",
+    "de": "Üblich ist ein fester Händedruck mit Blickkontakt. Enge Freunde geben sich oft Wangenküsse, und Bună ziua (guten Tag) ist ein höflicher Einstieg."
+   }
+  },
+  {
+   "id": "ct-RO-02",
+   "category": "greetings",
+   "text": {
+    "en": "With older people or in formal settings, many Romanians use Domnul or Doamna with the surname until they are invited to use first names.",
+    "it": "Con le persone anziane o in contesti formali, molti rumeni usano Domnul o Doamna con il cognome finché non vengono invitati a usare il nome.",
+    "es": "Con personas mayores o en situaciones formales, muchos rumanos usan Domnul o Doamna con el apellido hasta que les invitan a tutear por el nombre.",
+    "pt": "Com pessoas mais velhas ou em situações formais, muitos romenos usam Domnul ou Doamna com o apelido até serem convidados a usar o primeiro nome.",
+    "pt_BR": "Com pessoas mais velhas ou em situações formais, muitos romenos usam Domnul ou Doamna com o sobrenome até serem convidados a usar o primeiro nome.",
+    "fr": "Avec les personnes âgées ou en contexte formel, beaucoup de Roumains disent Domnul ou Doamna suivi du nom de famille jusqu'à ce qu'on les invite à utiliser le prénom.",
+    "de": "Bei älteren Menschen oder in formellen Situationen verwenden viele Rumänen Domnul oder Doamna mit dem Nachnamen, bis man ihnen das Vornamen-Du anbietet."
+   }
+  },
+  {
+   "id": "ct-RO-03",
+   "category": "conversation",
+   "text": {
+    "en": "Food, family, football, travel and the countryside are easy, friendly topics. Many people enjoy hearing what you like about Romania.",
+    "it": "Cibo, famiglia, calcio, viaggi e campagna sono argomenti facili e amichevoli. A molti piace sapere cosa ti piace della Romania.",
+    "es": "La comida, la familia, el fútbol, los viajes y el campo son temas fáciles y amistosos. A muchos les gusta saber qué te gusta de Rumanía.",
+    "pt": "Comida, família, futebol, viagens e campo são temas fáceis e simpáticos. Muita gente gosta de saber o que achas de bom na Roménia.",
+    "pt_BR": "Comida, família, futebol, viagens e interior são assuntos fáceis e simpáticos. Muita gente gosta de saber o que você curte na Romênia.",
+    "fr": "La cuisine, la famille, le football, les voyages et la campagne sont des sujets simples et conviviaux. Beaucoup aiment savoir ce que vous appréciez en Roumanie.",
+    "de": "Essen, Familie, Fußball, Reisen und das Landleben sind unkomplizierte, freundliche Themen. Viele hören gern, was dir an Rumänien gefällt."
+   }
+  },
+  {
+   "id": "ct-RO-04",
+   "category": "conversation",
+   "text": {
+    "en": "Asking about someone's region, such as Transylvania, Moldavia or Oltenia, and its local dishes is a good way to start a chat.",
+    "it": "Chiedere della regione di qualcuno, come Transilvania, Moldavia o Oltenia, e dei suoi piatti tipici è un buon modo per iniziare a chiacchierare.",
+    "es": "Preguntar por la región de alguien, como Transilvania, Moldavia u Oltenia, y por sus platos típicos es una buena forma de empezar una charla.",
+    "pt": "Perguntar pela região de alguém, como a Transilvânia, a Moldávia ou a Olténia, e pelos pratos típicos é uma boa forma de começar a conversa.",
+    "pt_BR": "Perguntar sobre a região de alguém, como a Transilvânia, a Moldávia ou a Olténia, e sobre os pratos típicos é uma boa forma de puxar assunto.",
+    "fr": "Demander quelle est la région de quelqu'un, comme la Transylvanie, la Moldavie ou l'Olténie, et ses plats locaux est une bonne façon d'engager la conversation.",
+    "de": "Nach der Region des Gegenübers zu fragen, etwa Siebenbürgen, der Moldau oder Oltenien, und nach den regionalen Gerichten ist ein guter Gesprächseinstieg."
+   }
+  },
+  {
+   "id": "ct-RO-05",
+   "category": "dining",
+   "text": {
+    "en": "Hosts often serve generous portions and encourage seconds. Trying a little of each dish, such as sarmale or mămăligă, shows appreciation.",
+    "it": "I padroni di casa servono spesso porzioni abbondanti e insistono per il bis. Assaggiare un po' di ogni piatto, come sarmale o mămăligă, mostra apprezzamento.",
+    "es": "Los anfitriones suelen servir raciones generosas e insistir en repetir. Probar un poco de cada plato, como sarmale o mămăligă, demuestra aprecio.",
+    "pt": "Os anfitriões costumam servir porções generosas e insistir para repetires. Provar um pouco de cada prato, como sarmale ou mămăligă, mostra apreço.",
+    "pt_BR": "Os anfitriões costumam servir porções generosas e insistir para repetir. Provar um pouco de cada prato, como sarmale ou mămăligă, mostra apreço.",
+    "fr": "Les hôtes servent souvent de généreuses portions et incitent à se resservir. Goûter un peu de chaque plat, comme les sarmale ou la mămăligă, montre votre reconnaissance.",
+    "de": "Gastgeber servieren oft große Portionen und bieten Nachschlag an. Von jedem Gericht, etwa Sarmale oder Mămăligă, etwas zu probieren, zeigt Wertschätzung."
+   }
+  },
+  {
+   "id": "ct-RO-06",
+   "category": "dining",
+   "text": {
+    "en": "Before eating, people often say Poftă bună (enjoy your meal). Waiting for everyone to be served before you start is polite.",
+    "it": "Prima di mangiare si dice spesso Poftă bună (buon appetito). È cortese aspettare che tutti siano serviti prima di iniziare.",
+    "es": "Antes de comer, la gente suele decir Poftă bună (buen provecho). Es de buena educación esperar a que todos estén servidos antes de empezar.",
+    "pt": "Antes de comer, as pessoas costumam dizer Poftă bună (bom apetite). É cortês esperar que todos estejam servidos antes de começar.",
+    "pt_BR": "Antes de comer, as pessoas costumam dizer Poftă bună (bom apetite). É educado esperar todo mundo ser servido antes de começar.",
+    "fr": "Avant de manger, on dit souvent Poftă bună (bon appétit). Il est poli d'attendre que tout le monde soit servi avant de commencer.",
+    "de": "Vor dem Essen sagt man oft Poftă bună (guten Appetit). Es ist höflich, zu warten, bis alle bedient sind, bevor man anfängt."
+   }
+  },
+  {
+   "id": "ct-RO-07",
+   "category": "tipping",
+   "text": {
+    "en": "In restaurants, about 10% is a common tip for good service, so check if a service charge is already included. Rounding up is fine in cafés and taxis.",
+    "it": "Nei ristoranti una mancia di circa il 10% è comune per un buon servizio: controlla se il servizio è già incluso. Arrotondare il conto va bene nei caffè e nei taxi.",
+    "es": "En los restaurantes, una propina de alrededor del 10% es habitual si el servicio fue bueno; comprueba si ya incluyen el servicio. Redondear la cuenta está bien en cafés y taxis.",
+    "pt": "Nos restaurantes, uma gorjeta de cerca de 10% é comum por um bom serviço; vê se o serviço já está incluído. Arredondar o valor é aceitável em cafés e táxis.",
+    "pt_BR": "Em restaurantes, uma gorjeta de cerca de 10% é comum por um bom atendimento; confira se o serviço já está incluído. Arredondar o valor é aceitável em cafés e táxis.",
+    "fr": "Au restaurant, un pourboire d'environ 10 % est courant pour un bon service ; vérifiez si le service est déjà compris. Arrondir l'addition suffit dans les cafés et les taxis.",
+    "de": "Im Restaurant sind etwa 10 % Trinkgeld bei gutem Service üblich; prüfe, ob eine Servicegebühr schon enthalten ist. In Cafés und Taxis genügt Aufrunden."
+   }
+  },
+  {
+   "id": "ct-RO-08",
+   "category": "gifts",
+   "text": {
+    "en": "If invited to a home, bring a small gift for the host, such as flowers, chocolates or a dessert.",
+    "it": "Se sei invitato a casa di qualcuno, porta un piccolo regalo per chi ti ospita, come fiori, cioccolatini o un dolce.",
+    "es": "Si te invitan a una casa, lleva un pequeño detalle para el anfitrión, como flores, bombones o un postre.",
+    "pt": "Se fores convidado a casa de alguém, leva uma pequena lembrança para o anfitrião, como flores, bombons ou uma sobremesa.",
+    "pt_BR": "Se for convidado para a casa de alguém, leve uma lembrança para o anfitrião, como flores, bombons ou uma sobremesa.",
+    "fr": "Si vous êtes invité chez quelqu'un, apportez un petit cadeau à l'hôte, comme des fleurs, des chocolats ou un dessert.",
+    "de": "Wenn du zu jemandem nach Hause eingeladen bist, bring dem Gastgeber eine Kleinigkeit mit, etwa Blumen, Pralinen oder einen Nachtisch."
+   }
+  },
+  {
+   "id": "ct-RO-09",
+   "category": "gifts",
+   "text": {
+    "en": "Flowers are traditionally given in odd numbers, as even numbers are for funerals. Around 1 March, red-and-white Mărțișor charms are a lovely gift.",
+    "it": "I fiori si regalano tradizionalmente in numero dispari, perché quelli pari sono per i funerali. Intorno al 1° marzo i portafortuna rosso-bianchi Mărțișor sono un bel regalo.",
+    "es": "Tradicionalmente se regalan flores en número impar, ya que el par es para los funerales. Hacia el 1 de marzo, los amuletos rojiblancos Mărțișor son un bonito regalo.",
+    "pt": "Tradicionalmente oferecem-se flores em número ímpar, pois o par é para funerais. Por volta de 1 de março, os amuletos vermelhos e brancos Mărțișor são uma bela prenda.",
+    "pt_BR": "Tradicionalmente dão-se flores em número ímpar, pois o par é para funerais. Por volta de 1º de março, os amuletos vermelhos e brancos Mărțișor são um belo presente.",
+    "fr": "Traditionnellement, on offre des fleurs en nombre impair, le nombre pair étant réservé aux funérailles. Vers le 1er mars, les porte-bonheur rouge et blanc Mărțișor font un joli cadeau.",
+    "de": "Blumen schenkt man traditionell in ungerader Anzahl, gerade Zahlen sind für Beerdigungen. Um den 1. März sind die rot-weißen Mărțișor-Glücksbringer ein schönes Geschenk."
+   }
+  },
+  {
+   "id": "ct-RO-10",
+   "category": "dress",
+   "text": {
+    "en": "Smart-casual clothing is normal in cities. Dress up a little for the theatre or a nice restaurant, and pack a warm layer for mountain evenings.",
+    "it": "Nelle città l'abbigliamento smart casual è normale. Vestiti un po' meglio per il teatro o un bel ristorante e porta uno strato caldo per le sere in montagna.",
+    "es": "En las ciudades la ropa informal elegante es lo normal. Arréglate un poco para el teatro o un buen restaurante y lleva una capa de abrigo para las tardes en la montaña.",
+    "pt": "Nas cidades, o vestuário smart casual é normal. Veste-te um pouco melhor para o teatro ou um bom restaurante e leva uma camada quente para as noites na montanha.",
+    "pt_BR": "Nas cidades, o traje esporte fino é normal. Vista-se um pouco melhor para o teatro ou um bom restaurante e leve uma camada de agasalho para as noites na montanha.",
+    "fr": "Dans les villes, une tenue décontractée mais soignée est la norme. Habillez-vous un peu plus pour le théâtre ou un bon restaurant, et prévoyez une couche chaude pour les soirées en montagne.",
+    "de": "In den Städten ist Smart Casual üblich. Für Theater oder ein gutes Restaurant zieht man sich etwas schicker an, und für Abende in den Bergen gehört eine warme Schicht ins Gepäck."
+   }
+  },
+  {
+   "id": "ct-RO-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Most Romanians are Orthodox Christians. In churches and monasteries, cover your shoulders and knees, and men should remove their hats.",
+    "it": "La maggior parte dei rumeni è cristiana ortodossa. In chiese e monasteri copri spalle e ginocchia, e gli uomini devono togliersi il cappello.",
+    "es": "La mayoría de los rumanos son cristianos ortodoxos. En iglesias y monasterios cúbrete hombros y rodillas, y los hombres deben quitarse el sombrero.",
+    "pt": "A maioria dos romenos é cristã ortodoxa. Em igrejas e mosteiros, cobre os ombros e os joelhos, e os homens devem tirar o chapéu.",
+    "pt_BR": "A maioria dos romenos é cristã ortodoxa. Em igrejas e mosteiros, cubra os ombros e os joelhos, e os homens devem tirar o chapéu.",
+    "fr": "La plupart des Roumains sont chrétiens orthodoxes. Dans les églises et monastères, couvrez-vous les épaules et les genoux, et les hommes doivent ôter leur chapeau.",
+    "de": "Die meisten Rumänen sind orthodoxe Christen. In Kirchen und Klöstern bedeckst du Schultern und Knie, und Männer nehmen den Hut ab."
+   }
+  },
+  {
+   "id": "ct-RO-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "Many people make the sign of the cross when passing a church. Visitors are not expected to, but should stay quiet and respectful during services.",
+    "it": "Molte persone si fanno il segno della croce passando davanti a una chiesa. I visitatori non sono tenuti a farlo, ma devono restare in silenzio e rispettosi durante le funzioni.",
+    "es": "Mucha gente se santigua al pasar frente a una iglesia. A los visitantes no se les exige, pero deben guardar silencio y respeto durante los oficios.",
+    "pt": "Muita gente faz o sinal da cruz ao passar por uma igreja. Não se espera isso dos visitantes, mas devem manter-se calados e respeitosos durante as celebrações.",
+    "pt_BR": "Muita gente faz o sinal da cruz ao passar por uma igreja. Não se espera isso dos visitantes, mas eles devem ficar em silêncio e ser respeitosos durante as celebrações.",
+    "fr": "Beaucoup de gens font le signe de croix en passant devant une église. On n'attend pas cela des visiteurs, mais ils doivent rester silencieux et respectueux pendant les offices.",
+    "de": "Viele bekreuzigen sich, wenn sie an einer Kirche vorbeigehen. Von Besuchern wird das nicht erwartet, aber sie sollten bei Gottesdiensten leise und respektvoll sein."
+   }
+  },
+  {
+   "id": "ct-RO-13",
+   "category": "gestures",
+   "text": {
+    "en": "When clinking glasses, look the other person in the eye. It is also fine to toast with juice or water if you prefer.",
+    "it": "Quando si brinda, guarda negli occhi l'altra persona. Va benissimo brindare anche con succo o acqua, se preferisci.",
+    "es": "Al brindar, mira a los ojos a la otra persona. También está bien brindar con zumo o agua si lo prefieres.",
+    "pt": "Ao brindar, olha a outra pessoa nos olhos. Também não há problema em brindar com sumo ou água, se preferires.",
+    "pt_BR": "Ao brindar, olhe a outra pessoa nos olhos. Também não tem problema brindar com suco ou água, se preferir.",
+    "fr": "En trinquant, regardez l'autre personne dans les yeux. On peut aussi trinquer avec un jus ou de l'eau si on préfère.",
+    "de": "Beim Anstoßen schaut man der anderen Person in die Augen. Man kann auch gern mit Saft oder Wasser anstoßen, wenn man das möchte."
+   }
+  },
+  {
+   "id": "ct-RO-14",
+   "category": "punctuality",
+   "text": {
+    "en": "Be on time for business meetings and appointments. For social visits, arriving a few minutes late is usually fine.",
+    "it": "Sii puntuale a riunioni di lavoro e appuntamenti. Per le visite tra amici, qualche minuto di ritardo di solito non è un problema.",
+    "es": "Sé puntual en reuniones de trabajo y citas. En visitas sociales, llegar unos minutos tarde suele estar bien.",
+    "pt": "Sê pontual em reuniões de trabalho e consultas. Em visitas sociais, chegar uns minutos atrasado costuma ser aceitável.",
+    "pt_BR": "Seja pontual em reuniões de trabalho e compromissos. Em visitas sociais, chegar alguns minutos atrasado costuma ser aceitável.",
+    "fr": "Soyez ponctuel pour les réunions de travail et les rendez-vous. Pour une visite entre amis, quelques minutes de retard ne posent généralement pas de problème.",
+    "de": "Sei bei Geschäftsterminen und Verabredungen pünktlich. Bei privaten Besuchen sind ein paar Minuten Verspätung meist in Ordnung."
+   }
+  },
+  {
+   "id": "ct-RO-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "When visiting a home, take off your shoes at the door unless the host says otherwise. Guests are often offered slippers.",
+    "it": "Quando visiti una casa, togliti le scarpe all'ingresso a meno che il padrone di casa non dica altrimenti. Agli ospiti spesso vengono offerte delle pantofole.",
+    "es": "Al visitar una casa, quítate los zapatos en la entrada salvo que el anfitrión diga lo contrario. A menudo ofrecen zapatillas de casa.",
+    "pt": "Ao visitar uma casa, tira os sapatos à entrada, a menos que o anfitrião diga o contrário. Os convidados costumam receber pantufas.",
+    "pt_BR": "Ao visitar uma casa, tire os sapatos na entrada, a menos que o anfitrião diga o contrário. Os convidados costumam receber chinelos.",
+    "fr": "Quand vous visitez un logement, retirez vos chaussures à l'entrée sauf si l'hôte dit le contraire. On propose souvent des chaussons aux invités.",
+    "de": "Wenn du jemanden besuchst, zieh die Schuhe an der Tür aus, sofern der Gastgeber nichts anderes sagt. Gästen werden oft Hausschuhe angeboten."
+   }
+  },
+  {
+   "id": "ct-RO-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "Offering your seat on buses, trams and the metro to older people, pregnant women and parents with small children is expected.",
+    "it": "Cedere il posto su autobus, tram e metro agli anziani, alle donne incinte e ai genitori con bambini piccoli è la regola.",
+    "es": "Se espera que cedas el asiento en autobuses, tranvías y metro a personas mayores, embarazadas y padres con niños pequeños.",
+    "pt": "Espera-se que cedas o lugar nos autocarros, elétricos e no metro a idosos, grávidas e pais com crianças pequenas.",
+    "pt_BR": "Espera-se que você ceda o lugar nos ônibus, bondes e no metrô a idosos, grávidas e pais com crianças pequenas.",
+    "fr": "On s'attend à ce que vous cédiez votre place dans les bus, les tramways et le métro aux personnes âgées, aux femmes enceintes et aux parents avec de jeunes enfants.",
+    "de": "Es wird erwartet, in Bus, Straßenbahn und U-Bahn älteren Menschen, Schwangeren und Eltern mit kleinen Kindern den Platz anzubieten."
+   }
+  },
+  {
+   "id": "ct-RO-17",
+   "category": "transport",
+   "text": {
+    "en": "Validate your ticket when boarding buses, trams and trolleybuses. Inspectors do check, and fines for travelling without a valid ticket are real.",
+    "it": "Convalida il biglietto quando sali su autobus, tram e filobus. I controllori fanno davvero i controlli e le multe per chi viaggia senza biglietto valido esistono.",
+    "es": "Valida tu billete al subir a autobuses, tranvías y trolebuses. Los inspectores sí controlan y las multas por viajar sin billete válido son reales.",
+    "pt": "Valida o bilhete ao entrar em autocarros, elétricos e troleicarros. Os fiscais fazem mesmo inspeções e as multas por viajar sem bilhete válido existem.",
+    "pt_BR": "Valide o bilhete ao entrar em ônibus, bondes e trólebus. Os fiscais realmente conferem, e as multas por viajar sem bilhete válido existem.",
+    "fr": "Compostez ou validez votre titre en montant dans les bus, tramways et trolleybus. Les contrôleurs passent vraiment, et les amendes pour absence de titre valide sont réelles.",
+    "de": "Entwerte dein Ticket beim Einsteigen in Bus, Straßenbahn und Oberleitungsbus. Es wird kontrolliert, und Bußgelder für Fahren ohne gültiges Ticket gibt es wirklich."
+   }
+  },
+  {
+   "id": "ct-RO-18",
+   "category": "transport",
+   "text": {
+    "en": "For taxis, use a ride-hailing app or a licensed company, and check that the meter is running or the price is agreed in advance.",
+    "it": "Per i taxi usa un'app o una compagnia autorizzata e verifica che il tassametro sia acceso o che il prezzo sia concordato in anticipo.",
+    "es": "Para los taxis, usa una aplicación o una empresa con licencia, y comprueba que el taxímetro esté en marcha o que el precio esté acordado de antemano.",
+    "pt": "Para táxis, usa uma aplicação ou uma empresa licenciada e confirma que o taxímetro está ligado ou que o preço foi combinado antes.",
+    "pt_BR": "Para táxis, use um aplicativo ou uma empresa licenciada e confirme se o taxímetro está ligado ou se o preço foi combinado antes.",
+    "fr": "Pour les taxis, utilisez une application ou une compagnie agréée, et vérifiez que le compteur tourne ou que le prix est convenu à l'avance.",
+    "de": "Nimm für Taxis eine App oder ein lizenziertes Unternehmen und achte darauf, dass das Taxameter läuft oder der Preis vorher vereinbart ist."
+   }
+  },
+  {
+   "id": "ct-RO-19",
+   "category": "language",
+   "text": {
+    "en": "Romanian is a Romance language, so speakers of Italian, Spanish, French or Portuguese will spot familiar words like pâine (bread) and apă (water).",
+    "it": "Il rumeno è una lingua romanza, quindi chi parla italiano, spagnolo, francese o portoghese riconoscerà parole familiari come pâine (pane) e apă (acqua).",
+    "es": "El rumano es una lengua romance, así que quien hable italiano, español, francés o portugués reconocerá palabras como pâine (pan) y apă (agua).",
+    "pt": "O romeno é uma língua românica, por isso quem fala italiano, espanhol, francês ou português reconhecerá palavras como pâine (pão) e apă (água).",
+    "pt_BR": "O romeno é uma língua românica, então quem fala italiano, espanhol, francês ou português vai reconhecer palavras como pâine (pão) e apă (água).",
+    "fr": "Le roumain est une langue romane : les locuteurs d'italien, d'espagnol, de français ou de portugais y reconnaîtront des mots comme pâine (pain) et apă (eau).",
+    "de": "Rumänisch ist eine romanische Sprache, daher erkennen Sprecher von Italienisch, Spanisch, Französisch oder Portugiesisch Wörter wie pâine (Brot) und apă (Wasser)."
+   }
+  },
+  {
+   "id": "ct-RO-20",
+   "category": "language",
+   "text": {
+    "en": "Many younger Romanians speak good English, and some also speak French, Italian or German. A simple Mulțumesc (thank you) is always appreciated.",
+    "it": "Molti rumeni giovani parlano bene l'inglese e alcuni anche francese, italiano o tedesco. Un semplice Mulțumesc (grazie) è sempre apprezzato.",
+    "es": "Muchos rumanos jóvenes hablan bien inglés y algunos también francés, italiano o alemán. Un simple Mulțumesc (gracias) siempre se agradece.",
+    "pt": "Muitos romenos mais jovens falam bem inglês e alguns também francês, italiano ou alemão. Um simples Mulțumesc (obrigado) é sempre apreciado.",
+    "pt_BR": "Muitos romenos mais jovens falam bem inglês e alguns também francês, italiano ou alemão. Um simples Mulțumesc (obrigado) é sempre apreciado.",
+    "fr": "Beaucoup de jeunes Roumains parlent bien anglais, et certains aussi français, italien ou allemand. Un simple Mulțumesc (merci) est toujours apprécié.",
+    "de": "Viele jüngere Rumänen sprechen gut Englisch, manche auch Französisch, Italienisch oder Deutsch. Ein einfaches Mulțumesc (danke) kommt immer gut an."
+   }
+  },
+  {
+   "id": "ct-RO-21",
+   "category": "festivals",
+   "text": {
+    "en": "At Easter, people greet each other with Hristos a înviat! and reply Adevărat a înviat! Dyed eggs, often red, are cracked together.",
+    "it": "A Pasqua ci si saluta con Hristos a înviat! (Cristo è risorto) e si risponde Adevărat a înviat!. Si fanno toccare le uova colorate, spesso rosse.",
+    "es": "En Pascua, la gente se saluda con Hristos a înviat! (Cristo ha resucitado) y se responde Adevărat a înviat!. Se chocan huevos teñidos, a menudo rojos.",
+    "pt": "Na Páscoa, as pessoas cumprimentam-se com Hristos a înviat! (Cristo ressuscitou) e respondem Adevărat a înviat!. Batem-se ovos tingidos, muitas vezes vermelhos.",
+    "pt_BR": "Na Páscoa, as pessoas se cumprimentam com Hristos a înviat! (Cristo ressuscitou) e respondem Adevărat a înviat!. Batem-se ovos tingidos, muitas vezes vermelhos.",
+    "fr": "À Pâques, on se salue par Hristos a înviat! (Christ est ressuscité) et on répond Adevărat a înviat!. On fait s'entrechoquer des œufs teints, souvent rouges.",
+    "de": "Zu Ostern grüßt man sich mit Hristos a înviat! (Christus ist auferstanden) und antwortet Adevărat a înviat!. Gefärbte, oft rote Eier werden aneinandergeschlagen."
+   }
+  },
+  {
+   "id": "ct-RO-22",
+   "category": "festivals",
+   "text": {
+    "en": "On 1 March, the Mărțișor custom welcomes spring with red-and-white strings and small charms. In December, groups sing colinde (carols).",
+    "it": "Il 1° marzo la tradizione del Mărțișor accoglie la primavera con fili rosso-bianchi e piccoli portafortuna. A dicembre i gruppi cantano le colinde (canti natalizi).",
+    "es": "El 1 de marzo, la tradición del Mărțișor da la bienvenida a la primavera con cordones rojiblancos y pequeños amuletos. En diciembre, los grupos cantan colinde (villancicos).",
+    "pt": "A 1 de março, a tradição do Mărțișor dá as boas-vindas à primavera com fios vermelhos e brancos e pequenos amuletos. Em dezembro, grupos cantam colinde (cânticos de Natal).",
+    "pt_BR": "No dia 1º de março, a tradição do Mărțișor dá boas-vindas à primavera com fios vermelhos e brancos e pequenos amuletos. Em dezembro, grupos cantam colinde (cantos de Natal).",
+    "fr": "Le 1er mars, la tradition du Mărțișor accueille le printemps avec des cordons rouge et blanc et de petits porte-bonheur. En décembre, des groupes chantent des colinde (chants de Noël).",
+    "de": "Am 1. März begrüßt der Brauch Mărțișor den Frühling mit rot-weißen Schnüren und kleinen Glücksbringern. Im Dezember singen Gruppen Colinde (Weihnachtslieder)."
+   }
+  },
+  {
+   "id": "ct-RO-23",
+   "category": "family",
+   "text": {
+    "en": "Family ties are strong. Sunday meals with grandparents and relatives are common, and guests are usually welcomed warmly into the family circle.",
+    "it": "I legami familiari sono forti. I pranzi domenicali con nonni e parenti sono comuni e gli ospiti sono di solito accolti con calore nella cerchia familiare.",
+    "es": "Los lazos familiares son fuertes. Son habituales las comidas dominicales con abuelos y parientes, y a los invitados se les suele acoger con calidez en el círculo familiar.",
+    "pt": "Os laços familiares são fortes. As refeições de domingo com avós e familiares são comuns, e os convidados costumam ser recebidos com carinho no círculo familiar.",
+    "pt_BR": "Os laços familiares são fortes. As refeições de domingo com avós e parentes são comuns, e os convidados costumam ser recebidos com carinho no círculo familiar.",
+    "fr": "Les liens familiaux sont forts. Les repas du dimanche avec grands-parents et proches sont courants, et les invités sont généralement chaleureusement accueillis dans le cercle familial.",
+    "de": "Familienbande sind eng. Sonntagsessen mit Großeltern und Verwandten sind üblich, und Gäste werden meist herzlich in den Familienkreis aufgenommen."
+   }
+  },
+  {
+   "id": "ct-RO-24",
+   "category": "money",
+   "text": {
+    "en": "The currency is the leu (RON). Cards are widely accepted in cities, but carry some cash for villages, markets and small guesthouses.",
+    "it": "La valuta è il leu (RON). Le carte sono ampiamente accettate nelle città, ma porta un po' di contanti per villaggi, mercati e piccole pensioni.",
+    "es": "La moneda es el leu (RON). Las tarjetas se aceptan ampliamente en las ciudades, pero lleva algo de efectivo para pueblos, mercados y pequeñas pensiones.",
+    "pt": "A moeda é o leu (RON). Os cartões são amplamente aceites nas cidades, mas leva algum dinheiro vivo para aldeias, mercados e pequenas pensões.",
+    "pt_BR": "A moeda é o leu (RON). Os cartões são bem aceitos nas cidades, mas leve algum dinheiro em espécie para vilarejos, mercados e pequenas pousadas.",
+    "fr": "La monnaie est le leu (RON). Les cartes sont largement acceptées en ville, mais gardez un peu d'espèces pour les villages, les marchés et les petites pensions.",
+    "de": "Die Währung ist der Leu (RON). In Städten werden Karten weitgehend akzeptiert, aber für Dörfer, Märkte und kleine Pensionen ist etwas Bargeld nützlich."
+   }
+  },
+  {
+   "id": "ct-RO-25",
+   "category": "photography",
+   "text": {
+    "en": "Ask before taking photos inside churches and monasteries, and always ask people for permission before photographing them, especially in villages.",
+    "it": "Chiedi il permesso prima di fotografare dentro chiese e monasteri, e chiedi sempre alle persone prima di fotografarle, soprattutto nei villaggi.",
+    "es": "Pide permiso antes de hacer fotos dentro de iglesias y monasterios, y pregunta siempre a las personas antes de fotografiarlas, sobre todo en los pueblos.",
+    "pt": "Pede autorização antes de tirar fotografias dentro de igrejas e mosteiros e pergunta sempre às pessoas antes de as fotografar, sobretudo nas aldeias.",
+    "pt_BR": "Peça autorização antes de tirar fotos dentro de igrejas e mosteiros e pergunte sempre às pessoas antes de fotografá-las, principalmente nos vilarejos.",
+    "fr": "Demandez la permission avant de photographier dans les églises et monastères, et demandez toujours aux personnes avant de les photographier, surtout dans les villages.",
+    "de": "Frage in Kirchen und Klöstern vor dem Fotografieren um Erlaubnis und bitte Menschen immer um Zustimmung, bevor du sie fotografierst, besonders in Dörfern."
+   }
+  },
+  {
+   "id": "ct-RO-26",
+   "category": "nightlife",
+   "text": {
+    "en": "Bucharest's Old Town has many bars, cafés and clubs, and evenings out often start late. Keep your belongings close in crowded places.",
+    "it": "Il centro storico di Bucarest ha molti bar, caffè e locali, e le serate spesso iniziano tardi. Tieni gli oggetti personali vicino a te nei posti affollati.",
+    "es": "El casco antiguo de Bucarest tiene muchos bares, cafés y discotecas, y las noches suelen empezar tarde. Mantén tus pertenencias cerca en lugares concurridos.",
+    "pt": "O centro histórico de Bucareste tem muitos bares, cafés e discotecas, e as noites costumam começar tarde. Mantém os teus pertences por perto em locais cheios.",
+    "pt_BR": "O centro histórico de Bucareste tem muitos bares, cafés e baladas, e as noites costumam começar tarde. Mantenha seus pertences por perto em locais cheios.",
+    "fr": "La vieille ville de Bucarest compte de nombreux bars, cafés et clubs, et les soirées commencent souvent tard. Gardez vos affaires près de vous dans les endroits bondés.",
+    "de": "Die Altstadt von Bukarest hat viele Bars, Cafés und Clubs, und Abende beginnen oft spät. Halte deine Sachen an belebten Orten dicht bei dir."
+   }
+  },
+  {
+   "id": "ct-RO-27",
+   "category": "nature",
+   "text": {
+    "en": "In the Carpathians, keep a safe distance from wildlife and never feed bears. Store food securely and follow local advice when hiking.",
+    "it": "Sui Carpazi mantieni una distanza di sicurezza dagli animali selvatici e non dare mai da mangiare agli orsi. Conserva il cibo in sicurezza e segui i consigli locali durante le escursioni.",
+    "es": "En los Cárpatos mantén una distancia segura de la fauna y nunca alimentes a los osos. Guarda la comida de forma segura y sigue los consejos locales al hacer senderismo.",
+    "pt": "Nos Cárpatos, mantém uma distância segura dos animais selvagens e nunca alimentes os ursos. Guarda a comida em segurança e segue os conselhos locais ao fazer caminhadas.",
+    "pt_BR": "Nos Cárpatos, mantenha uma distância segura dos animais selvagens e nunca alimente os ursos. Guarde a comida com segurança e siga as orientações locais ao fazer trilhas.",
+    "fr": "Dans les Carpates, gardez une distance de sécurité avec la faune et ne nourrissez jamais les ours. Rangez la nourriture en sécurité et suivez les conseils locaux en randonnée.",
+    "de": "Halte in den Karpaten sicheren Abstand zu Wildtieren und füttere nie Bären. Verwahre Essen sicher und befolge beim Wandern die Hinweise vor Ort."
+   }
+  },
+  {
+   "id": "ct-RO-28",
+   "category": "safety",
+   "text": {
+    "en": "The emergency number is 112. Watch your belongings in busy train stations and crowded transport, and use official taxis.",
+    "it": "Il numero di emergenza è il 112. Fai attenzione ai tuoi effetti personali nelle stazioni affollate e sui mezzi pieni, e usa taxi ufficiali.",
+    "es": "El número de emergencias es el 112. Vigila tus pertenencias en estaciones concurridas y transporte lleno, y usa taxis oficiales.",
+    "pt": "O número de emergência é o 112. Vigia os teus pertences em estações movimentadas e transportes cheios, e usa táxis oficiais.",
+    "pt_BR": "O número de emergência é o 112. Fique de olho nos seus pertences em estações movimentadas e transportes lotados, e use táxis oficiais.",
+    "fr": "Le numéro d'urgence est le 112. Surveillez vos affaires dans les gares animées et les transports bondés, et utilisez des taxis officiels.",
+    "de": "Die Notrufnummer ist 112. Achte in belebten Bahnhöfen und vollen Verkehrsmitteln auf deine Sachen und nutze offizielle Taxis."
+   }
+  },
+  {
+   "id": "ct-RO-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Romanians are proud of their traditional folk costume. The ie, an embroidered blouse, is celebrated each year on the Universal Day of the Romanian Blouse.",
+    "it": "I rumeni sono orgogliosi del loro costume popolare. La ie, una camicia ricamata, viene celebrata ogni anno nella Giornata universale della camicia rumena.",
+    "es": "Los rumanos están orgullosos de su traje popular. La ie, una blusa bordada, se celebra cada año en el Día Universal de la Blusa Rumana.",
+    "pt": "Os romenos têm orgulho do seu traje tradicional. A ie, uma blusa bordada, é celebrada todos os anos no Dia Universal da Blusa Romena.",
+    "pt_BR": "Os romenos têm orgulho do seu traje tradicional. A ie, uma blusa bordada, é celebrada todos os anos no Dia Universal da Blusa Romena.",
+    "fr": "Les Roumains sont fiers de leur costume traditionnel. L'ie, une blouse brodée, est célébrée chaque année lors de la Journée universelle de la blouse roumaine.",
+    "de": "Die Rumänen sind stolz auf ihre Volkstracht. Die Ie, eine bestickte Bluse, wird jedes Jahr am Welttag der rumänischen Bluse gefeiert."
+   }
+  },
+  {
+   "id": "ct-RO-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Romanians are proud of the painted monasteries of Bucovina and the beauty of the Carpathians. Sincere praise for them is always welcome.",
+    "it": "I rumeni sono orgogliosi dei monasteri dipinti della Bucovina e della bellezza dei Carpazi. Un elogio sincero è sempre gradito.",
+    "es": "Los rumanos están orgullosos de los monasterios pintados de Bucovina y de la belleza de los Cárpatos. Un elogio sincero siempre se agradece.",
+    "pt": "Os romenos têm orgulho dos mosteiros pintados da Bucovina e da beleza dos Cárpatos. Um elogio sincero é sempre bem-vindo.",
+    "pt_BR": "Os romenos têm orgulho dos mosteiros pintados da Bucovina e da beleza dos Cárpatos. Um elogio sincero é sempre bem-vindo.",
+    "fr": "Les Roumains sont fiers des monastères peints de Bucovine et de la beauté des Carpates. Un compliment sincère est toujours bienvenu.",
+    "de": "Die Rumänen sind stolz auf die bemalten Klöster der Bukowina und die Schönheit der Karpaten. Aufrichtiges Lob kommt immer gut an."
+   }
+  }
+ ],
+ "RS": [
+  {
+   "id": "ct-RS-01",
+   "category": "greetings",
+   "text": {
+    "en": "A handshake with eye contact is the usual greeting. Close friends and relatives often kiss on the cheek, commonly three times, alternating sides.",
+    "it": "La stretta di mano con contatto visivo è il saluto abituale. Amici stretti e parenti si baciano spesso sulla guancia, di solito tre volte, alternando i lati.",
+    "es": "Lo habitual es un apretón de manos con contacto visual. Los amigos cercanos y familiares suelen darse besos en la mejilla, normalmente tres, alternando los lados.",
+    "pt": "O cumprimento habitual é um aperto de mão com contacto visual. Amigos próximos e familiares costumam dar beijos na face, normalmente três, alternando os lados.",
+    "pt_BR": "O cumprimento habitual é um aperto de mão com contato visual. Amigos próximos e parentes costumam dar beijos na bochecha, normalmente três, alternando os lados.",
+    "fr": "On se salue d'habitude par une poignée de main en regardant dans les yeux. Amis proches et famille s'embrassent souvent sur la joue, généralement trois fois, en alternant les côtés.",
+    "de": "Üblich ist ein Händedruck mit Blickkontakt. Enge Freunde und Verwandte geben sich oft Wangenküsse, meist dreimal im Wechsel der Seiten."
+   }
+  },
+  {
+   "id": "ct-RS-02",
+   "category": "greetings",
+   "text": {
+    "en": "Zdravo or Ćao work with friends, while Dobar dan (good day) is better with strangers and older people.",
+    "it": "Zdravo o Ćao vanno bene con gli amici, mentre Dobar dan (buongiorno) è meglio con sconosciuti e persone anziane.",
+    "es": "Zdravo o Ćao sirven con amigos, mientras que Dobar dan (buenos días) es mejor con desconocidos y personas mayores.",
+    "pt": "Zdravo ou Ćao servem entre amigos, enquanto Dobar dan (bom dia) é melhor com desconhecidos e pessoas mais velhas.",
+    "pt_BR": "Zdravo ou Ćao servem entre amigos, enquanto Dobar dan (bom dia) é melhor com desconhecidos e pessoas mais velhas.",
+    "fr": "Zdravo ou Ćao conviennent entre amis, tandis que Dobar dan (bonjour) est préférable avec des inconnus et des personnes âgées.",
+    "de": "Zdravo oder Ćao passen unter Freunden, während Dobar dan (guten Tag) bei Fremden und älteren Menschen besser ist."
+   }
+  },
+  {
+   "id": "ct-RS-03",
+   "category": "conversation",
+   "text": {
+    "en": "Football, music, food and local traditions are friendly topics. Many Serbs love hearing what visitors think of their country and cuisine.",
+    "it": "Calcio, musica, cibo e tradizioni locali sono argomenti amichevoli. A molti serbi piace sapere cosa pensano i visitatori del loro paese e della loro cucina.",
+    "es": "El fútbol, la música, la comida y las tradiciones locales son temas amistosos. A muchos serbios les encanta saber qué piensan los visitantes de su país y su cocina.",
+    "pt": "Futebol, música, comida e tradições locais são temas simpáticos. Muitos sérvios adoram saber o que os visitantes pensam do seu país e da sua cozinha.",
+    "pt_BR": "Futebol, música, comida e tradições locais são assuntos simpáticos. Muitos sérvios adoram saber o que os visitantes acham do país e da culinária.",
+    "fr": "Le football, la musique, la cuisine et les traditions locales sont des sujets conviviaux. Beaucoup de Serbes aiment savoir ce que les visiteurs pensent de leur pays et de leur cuisine.",
+    "de": "Fußball, Musik, Essen und lokale Traditionen sind freundliche Themen. Viele Serben hören gern, was Besucher von ihrem Land und ihrer Küche halten."
+   }
+  },
+  {
+   "id": "ct-RS-04",
+   "category": "conversation",
+   "text": {
+    "en": "Asking about someone's hometown or family slava is a warm way to start talking. Long, relaxed conversations are valued.",
+    "it": "Chiedere della città natale di qualcuno o della slava della sua famiglia è un modo caloroso per iniziare a parlare. Le conversazioni lunghe e rilassate sono apprezzate.",
+    "es": "Preguntar por la ciudad natal de alguien o por la slava de su familia es una forma cálida de empezar a hablar. Se valoran las conversaciones largas y relajadas.",
+    "pt": "Perguntar pela cidade natal de alguém ou pela slava da sua família é uma forma calorosa de começar a conversa. As conversas longas e descontraídas são valorizadas.",
+    "pt_BR": "Perguntar sobre a cidade natal de alguém ou sobre a slava da família é uma forma calorosa de começar a conversa. Conversas longas e descontraídas são valorizadas.",
+    "fr": "Demander à quelqu'un d'où il vient ou quelle est la slava de sa famille est une manière chaleureuse d'entamer la discussion. Les conversations longues et détendues sont appréciées.",
+    "de": "Nach der Heimatstadt oder der Familien-Slava zu fragen, ist ein herzlicher Gesprächseinstieg. Lange, entspannte Gespräche werden geschätzt."
+   }
+  },
+  {
+   "id": "ct-RS-05",
+   "category": "dining",
+   "text": {
+    "en": "Hosts often serve plenty of food and encourage seconds. Try everything, such as ćevapi, sarma or ajvar, and compliment the cook.",
+    "it": "I padroni di casa servono spesso molto cibo e insistono per il bis. Assaggia tutto, come ćevapi, sarma o ajvar, e fai i complimenti a chi ha cucinato.",
+    "es": "Los anfitriones suelen servir mucha comida e insistir en repetir. Prueba de todo, como ćevapi, sarma o ajvar, y felicita al cocinero.",
+    "pt": "Os anfitriões costumam servir muita comida e insistir para repetires. Prova de tudo, como ćevapi, sarma ou ajvar, e elogia quem cozinhou.",
+    "pt_BR": "Os anfitriões costumam servir muita comida e insistir para repetir. Experimente de tudo, como ćevapi, sarma ou ajvar, e elogie quem cozinhou.",
+    "fr": "Les hôtes servent souvent beaucoup à manger et incitent à se resservir. Goûtez à tout, comme les ćevapi, la sarma ou l'ajvar, et complimentez le cuisinier.",
+    "de": "Gastgeber tischen oft reichlich auf und bieten Nachschlag an. Probiere alles, etwa Ćevapi, Sarma oder Ajvar, und lobe die Köchin oder den Koch."
+   }
+  },
+  {
+   "id": "ct-RS-06",
+   "category": "dining",
+   "text": {
+    "en": "Coffee is a social ritual in Serbia. Meeting for a coffee can last an hour or two, so there is no need to hurry.",
+    "it": "Il caffè è un rito sociale in Serbia. Un incontro per un caffè può durare un'ora o due, quindi non c'è bisogno di avere fretta.",
+    "es": "El café es un ritual social en Serbia. Quedar para un café puede durar una hora o dos, así que no hace falta apresurarse.",
+    "pt": "O café é um ritual social na Sérvia. Um encontro para tomar café pode durar uma ou duas horas, por isso não é preciso ter pressa.",
+    "pt_BR": "O café é um ritual social na Sérvia. Um encontro para tomar café pode durar uma ou duas horas, então não precisa ter pressa.",
+    "fr": "Le café est un rituel social en Serbie. Un rendez-vous autour d'un café peut durer une heure ou deux, inutile donc de se presser.",
+    "de": "Kaffee ist in Serbien ein soziales Ritual. Ein Kaffeetreffen kann ein bis zwei Stunden dauern, man muss sich also nicht beeilen."
+   }
+  },
+  {
+   "id": "ct-RS-07",
+   "category": "tipping",
+   "text": {
+    "en": "Leaving about 10% in restaurants is common, or rounding up the bill. Check whether a service charge is already included.",
+    "it": "Lasciare circa il 10% nei ristoranti è comune, oppure si arrotonda il conto. Controlla se il servizio è già incluso.",
+    "es": "Dejar alrededor del 10% en los restaurantes es habitual, o redondear la cuenta. Comprueba si el servicio ya está incluido.",
+    "pt": "Deixar cerca de 10% nos restaurantes é comum, ou arredondar a conta. Vê se o serviço já está incluído.",
+    "pt_BR": "Deixar cerca de 10% em restaurantes é comum, ou arredondar a conta. Confira se o serviço já está incluído.",
+    "fr": "Laisser environ 10 % au restaurant est courant, ou arrondir l'addition. Vérifiez si le service est déjà compris.",
+    "de": "In Restaurants sind etwa 10 % Trinkgeld üblich, oder man rundet die Rechnung auf. Prüfe, ob eine Servicegebühr schon enthalten ist."
+   }
+  },
+  {
+   "id": "ct-RS-08",
+   "category": "gifts",
+   "text": {
+    "en": "A traditional welcome is bread and salt. If you are greeted this way, accept the gesture warmly.",
+    "it": "Un benvenuto tradizionale è con pane e sale. Se vieni accolto così, accetta il gesto con calore.",
+    "es": "Una bienvenida tradicional es con pan y sal. Si te reciben así, acepta el gesto con cariño.",
+    "pt": "Uma receção tradicional é feita com pão e sal. Se fores recebido assim, aceita o gesto com carinho.",
+    "pt_BR": "Uma recepção tradicional é feita com pão e sal. Se você for recebido assim, aceite o gesto com carinho.",
+    "fr": "L'accueil traditionnel se fait avec du pain et du sel. Si on vous accueille ainsi, acceptez ce geste chaleureusement.",
+    "de": "Ein traditioneller Empfang erfolgt mit Brot und Salz. Wirst du so begrüßt, nimm die Geste herzlich an."
+   }
+  },
+  {
+   "id": "ct-RS-09",
+   "category": "gifts",
+   "text": {
+    "en": "When visiting a home, bring flowers, chocolates or a dessert. Sweets for the children are always appreciated.",
+    "it": "Quando vai a casa di qualcuno, porta fiori, cioccolatini o un dolce. Dolcetti per i bambini sono sempre graditi.",
+    "es": "Al visitar una casa, lleva flores, bombones o un postre. Los dulces para los niños siempre se agradecen.",
+    "pt": "Ao visitar uma casa, leva flores, bombons ou uma sobremesa. Doces para as crianças são sempre bem-vindos.",
+    "pt_BR": "Ao visitar uma casa, leve flores, bombons ou uma sobremesa. Doces para as crianças são sempre bem-vindos.",
+    "fr": "Quand vous rendez visite à quelqu'un, apportez des fleurs, des chocolats ou un dessert. Des friandises pour les enfants sont toujours appréciées.",
+    "de": "Wenn du jemanden besuchst, bring Blumen, Pralinen oder einen Nachtisch mit. Süßigkeiten für die Kinder kommen immer gut an."
+   }
+  },
+  {
+   "id": "ct-RS-10",
+   "category": "dress",
+   "text": {
+    "en": "Clothing is smart-casual, and people in Belgrade and Novi Sad often dress up to go out. Cover shoulders and knees at monasteries.",
+    "it": "L'abbigliamento è smart casual e a Belgrado e Novi Sad la gente si veste spesso bene per uscire. Copri spalle e ginocchia nei monasteri.",
+    "es": "La ropa es informal elegante, y en Belgrado y Novi Sad la gente suele arreglarse para salir. Cúbrete hombros y rodillas en los monasterios.",
+    "pt": "A roupa é smart casual, e em Belgrado e Novi Sad as pessoas costumam arranjar-se para sair. Cobre os ombros e os joelhos nos mosteiros.",
+    "pt_BR": "A roupa é esporte fino, e em Belgrado e Novi Sad as pessoas costumam se arrumar para sair. Cubra os ombros e os joelhos nos mosteiros.",
+    "fr": "La tenue est décontractée mais soignée, et à Belgrade et Novi Sad on s'habille souvent pour sortir. Couvrez-vous les épaules et les genoux dans les monastères.",
+    "de": "Die Kleidung ist Smart Casual, und in Belgrad und Novi Sad macht man sich zum Ausgehen oft schick. In Klöstern bedeckst du Schultern und Knie."
+   }
+  },
+  {
+   "id": "ct-RS-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Most Serbs are Orthodox Christians. In churches and monasteries, dress modestly, speak quietly and, for men, remove your hat.",
+    "it": "La maggior parte dei serbi è cristiana ortodossa. In chiese e monasteri vestiti in modo sobrio, parla a bassa voce e, se sei un uomo, togliti il cappello.",
+    "es": "La mayoría de los serbios son cristianos ortodoxos. En iglesias y monasterios viste con modestia, habla en voz baja y, si eres hombre, quítate el sombrero.",
+    "pt": "A maioria dos sérvios é cristã ortodoxa. Em igrejas e mosteiros, veste-te com recato, fala baixo e, se fores homem, tira o chapéu.",
+    "pt_BR": "A maioria dos sérvios é cristã ortodoxa. Em igrejas e mosteiros, vista-se com recato, fale baixo e, se for homem, tire o chapéu.",
+    "fr": "La plupart des Serbes sont chrétiens orthodoxes. Dans les églises et monastères, habillez-vous modestement, parlez doucement et, pour les hommes, ôtez votre chapeau.",
+    "de": "Die meisten Serben sind orthodoxe Christen. In Kirchen und Klöstern kleidet man sich dezent, spricht leise und nimmt als Mann den Hut ab."
+   }
+  },
+  {
+   "id": "ct-RS-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "Slava, a family feast for its patron saint, is an important tradition that UNESCO has recognised. Being invited to one is an honour.",
+    "it": "La slava, la festa di famiglia in onore del santo patrono, è un'importante tradizione riconosciuta dall'UNESCO. Essere invitati è un onore.",
+    "es": "La slava, la fiesta familiar en honor del santo patrón, es una tradición importante reconocida por la UNESCO. Que te inviten es un honor.",
+    "pt": "A slava, a festa de família em honra do santo padroeiro, é uma tradição importante reconhecida pela UNESCO. Ser convidado é uma honra.",
+    "pt_BR": "A slava, a festa de família em honra do santo padroeiro, é uma tradição importante reconhecida pela UNESCO. Ser convidado é uma honra.",
+    "fr": "La slava, fête de famille en l'honneur du saint patron, est une tradition importante reconnue par l'UNESCO. Y être invité est un honneur.",
+    "de": "Die Slava, das Familienfest zu Ehren des Schutzheiligen, ist eine wichtige, von der UNESCO anerkannte Tradition. Eine Einladung ist eine Ehre."
+   }
+  },
+  {
+   "id": "ct-RS-13",
+   "category": "gestures",
+   "text": {
+    "en": "When glasses are raised, people say Živeli (cheers) and look each other in the eye. Toasting with juice or water is perfectly fine.",
+    "it": "Quando si alzano i bicchieri si dice Živeli (cin cin) guardandosi negli occhi. Brindare con succo o acqua va benissimo.",
+    "es": "Al alzar las copas se dice Živeli (salud) mirándose a los ojos. Brindar con zumo o agua está perfectamente bien.",
+    "pt": "Quando se levantam os copos, diz-se Živeli (saúde) olhando-se nos olhos. Brindar com sumo ou água está perfeitamente bem.",
+    "pt_BR": "Quando se levantam os copos, diz-se Živeli (saúde) olhando nos olhos. Brindar com suco ou água é perfeitamente aceitável.",
+    "fr": "Quand on lève son verre, on dit Živeli (santé) en se regardant dans les yeux. Trinquer avec du jus ou de l'eau est tout à fait acceptable.",
+    "de": "Beim Anstoßen sagt man Živeli (Prost) und sieht sich in die Augen. Mit Saft oder Wasser anzustoßen ist völlig in Ordnung."
+   }
+  },
+  {
+   "id": "ct-RS-14",
+   "category": "punctuality",
+   "text": {
+    "en": "Be on time for business and official appointments. Meeting friends is more relaxed, and a short delay is usually accepted.",
+    "it": "Sii puntuale per appuntamenti di lavoro e ufficiali. Con gli amici ci si incontra in modo più rilassato e un breve ritardo di solito è accettato.",
+    "es": "Sé puntual en citas de trabajo y oficiales. Con amigos todo es más relajado y un pequeño retraso suele aceptarse.",
+    "pt": "Sê pontual em compromissos profissionais e oficiais. Com amigos, é mais descontraído e um pequeno atraso costuma ser aceite.",
+    "pt_BR": "Seja pontual em compromissos profissionais e oficiais. Com amigos é mais descontraído, e um pequeno atraso costuma ser aceito.",
+    "fr": "Soyez ponctuel pour les rendez-vous professionnels et officiels. Entre amis, c'est plus décontracté et un petit retard est généralement toléré.",
+    "de": "Sei bei geschäftlichen und amtlichen Terminen pünktlich. Unter Freunden geht es entspannter zu, und eine kleine Verspätung wird meist akzeptiert."
+   }
+  },
+  {
+   "id": "ct-RS-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "Take off your shoes when entering a home. Hosts often offer slippers to guests.",
+    "it": "Togliti le scarpe quando entri in una casa. I padroni di casa spesso offrono delle pantofole agli ospiti.",
+    "es": "Quítate los zapatos al entrar en una casa. Los anfitriones suelen ofrecer zapatillas a los invitados.",
+    "pt": "Tira os sapatos ao entrar em casa de alguém. Os anfitriões costumam oferecer pantufas aos convidados.",
+    "pt_BR": "Tire os sapatos ao entrar na casa de alguém. Os anfitriões costumam oferecer chinelos aos convidados.",
+    "fr": "Retirez vos chaussures en entrant dans un logement. Les hôtes proposent souvent des chaussons à leurs invités.",
+    "de": "Zieh die Schuhe aus, wenn du eine Wohnung betrittst. Gastgeber bieten Gästen oft Hausschuhe an."
+   }
+  },
+  {
+   "id": "ct-RS-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "Give up your seat on buses and trams to older people, pregnant women and parents with small children.",
+    "it": "Cedi il posto su autobus e tram agli anziani, alle donne incinte e ai genitori con bambini piccoli.",
+    "es": "Cede tu asiento en autobuses y tranvías a personas mayores, embarazadas y padres con niños pequeños.",
+    "pt": "Cede o lugar nos autocarros e elétricos a idosos, grávidas e pais com crianças pequenas.",
+    "pt_BR": "Ceda o lugar nos ônibus e bondes a idosos, grávidas e pais com crianças pequenas.",
+    "fr": "Cédez votre place dans les bus et tramways aux personnes âgées, aux femmes enceintes et aux parents avec de jeunes enfants.",
+    "de": "Biete in Bus und Straßenbahn älteren Menschen, Schwangeren und Eltern mit kleinen Kindern deinen Platz an."
+   }
+  },
+  {
+   "id": "ct-RS-17",
+   "category": "transport",
+   "text": {
+    "en": "Make sure you have a valid ticket or card for city buses and trams, because inspectors do check.",
+    "it": "Assicurati di avere un biglietto o una tessera validi per autobus e tram urbani, perché i controllori fanno davvero i controlli.",
+    "es": "Asegúrate de llevar un billete o tarjeta válidos en los autobuses y tranvías urbanos, porque los inspectores sí controlan.",
+    "pt": "Certifica-te de que tens um bilhete ou cartão válido nos autocarros e elétricos da cidade, porque os fiscais fazem mesmo inspeções.",
+    "pt_BR": "Certifique-se de ter um bilhete ou cartão válido nos ônibus e bondes da cidade, porque os fiscais realmente conferem.",
+    "fr": "Assurez-vous d'avoir un titre ou une carte valide dans les bus et tramways urbains, car les contrôleurs passent vraiment.",
+    "de": "Sorge in Stadtbussen und Straßenbahnen für ein gültiges Ticket oder eine Karte, denn es wird tatsächlich kontrolliert."
+   }
+  },
+  {
+   "id": "ct-RS-18",
+   "category": "transport",
+   "text": {
+    "en": "For taxis, use a taxi app or a licensed company, and make sure the meter is running or the price is agreed first.",
+    "it": "Per i taxi usa un'app o una compagnia autorizzata e controlla che il tassametro sia acceso o che il prezzo sia concordato prima.",
+    "es": "Para los taxis, usa una aplicación o una empresa con licencia, y asegúrate de que el taxímetro esté en marcha o de acordar el precio antes.",
+    "pt": "Para táxis, usa uma aplicação ou uma empresa licenciada e garante que o taxímetro está ligado ou que o preço foi combinado antes.",
+    "pt_BR": "Para táxis, use um aplicativo ou uma empresa licenciada e garanta que o taxímetro esteja ligado ou que o preço tenha sido combinado antes.",
+    "fr": "Pour les taxis, utilisez une application ou une compagnie agréée, et assurez-vous que le compteur tourne ou que le prix est convenu au préalable.",
+    "de": "Nutze für Taxis eine App oder ein lizenziertes Unternehmen und achte darauf, dass das Taxameter läuft oder der Preis vorher feststeht."
+   }
+  },
+  {
+   "id": "ct-RS-19",
+   "category": "language",
+   "text": {
+    "en": "Serbian is written in both Cyrillic and Latin script, so signs may use either. Learning a few Cyrillic letters helps a lot.",
+    "it": "Il serbo si scrive sia in cirillico sia in alfabeto latino, quindi i cartelli possono usare l'uno o l'altro. Imparare qualche lettera cirillica aiuta molto.",
+    "es": "El serbio se escribe tanto en cirílico como en alfabeto latino, así que los carteles pueden usar cualquiera. Aprender unas cuantas letras cirílicas ayuda mucho.",
+    "pt": "O sérvio escreve-se tanto em cirílico como em alfabeto latino, por isso os cartazes podem usar qualquer um. Aprender algumas letras cirílicas ajuda muito.",
+    "pt_BR": "O sérvio é escrito tanto em cirílico quanto em alfabeto latino, então as placas podem usar qualquer um. Aprender algumas letras cirílicas ajuda muito.",
+    "fr": "Le serbe s'écrit en cyrillique comme en alphabet latin, donc les panneaux peuvent utiliser l'un ou l'autre. Apprendre quelques lettres cyrilliques aide beaucoup.",
+    "de": "Serbisch wird sowohl kyrillisch als auch lateinisch geschrieben, Schilder können also beides nutzen. Ein paar kyrillische Buchstaben zu lernen hilft sehr."
+   }
+  },
+  {
+   "id": "ct-RS-20",
+   "category": "language",
+   "text": {
+    "en": "Hvala (thank you), molim (please) and izvolite (here you are) are simple words that locals appreciate hearing from visitors.",
+    "it": "Hvala (grazie), molim (prego) e izvolite (ecco a lei) sono parole semplici che la gente del posto apprezza sentire dai visitatori.",
+    "es": "Hvala (gracias), molim (por favor) e izvolite (aquí tiene) son palabras sencillas que la gente local agradece oír a los visitantes.",
+    "pt": "Hvala (obrigado), molim (por favor) e izvolite (aqui tem) são palavras simples que os locais gostam de ouvir dos visitantes.",
+    "pt_BR": "Hvala (obrigado), molim (por favor) e izvolite (aqui está) são palavras simples que os locais gostam de ouvir dos visitantes.",
+    "fr": "Hvala (merci), molim (s'il vous plaît) et izvolite (tenez) sont des mots simples que les habitants aiment entendre de la part des visiteurs.",
+    "de": "Hvala (danke), molim (bitte) und izvolite (bitte sehr) sind einfache Wörter, die Einheimische bei Besuchern gern hören."
+   }
+  },
+  {
+   "id": "ct-RS-21",
+   "category": "festivals",
+   "text": {
+    "en": "Orthodox Christmas is celebrated on 7 January. At Easter, dyed eggs, often red, are tapped against each other.",
+    "it": "Il Natale ortodosso si celebra il 7 gennaio. A Pasqua si fanno toccare le uova colorate, spesso rosse.",
+    "es": "La Navidad ortodoxa se celebra el 7 de enero. En Pascua se chocan huevos teñidos, a menudo rojos.",
+    "pt": "O Natal ortodoxo celebra-se a 7 de janeiro. Na Páscoa, batem-se ovos tingidos, muitas vezes vermelhos, uns contra os outros.",
+    "pt_BR": "O Natal ortodoxo é celebrado em 7 de janeiro. Na Páscoa, batem-se ovos tingidos, muitas vezes vermelhos, uns contra os outros.",
+    "fr": "Noël orthodoxe se fête le 7 janvier. À Pâques, on fait s'entrechoquer des œufs teints, souvent rouges.",
+    "de": "Das orthodoxe Weihnachtsfest wird am 7. Januar gefeiert. An Ostern schlägt man gefärbte, oft rote Eier gegeneinander."
+   }
+  },
+  {
+   "id": "ct-RS-22",
+   "category": "festivals",
+   "text": {
+    "en": "Music festivals such as Exit in Novi Sad and the Guča Trumpet Festival welcome visitors from many countries.",
+    "it": "Festival musicali come l'Exit a Novi Sad e il Festival delle trombe di Guča accolgono visitatori da molti paesi.",
+    "es": "Festivales de música como el Exit en Novi Sad y el Festival de Trompetas de Guča reciben visitantes de muchos países.",
+    "pt": "Festivais de música como o Exit, em Novi Sad, e o Festival de Trompetas de Guča recebem visitantes de muitos países.",
+    "pt_BR": "Festivais de música como o Exit, em Novi Sad, e o Festival de Trompetes de Guča recebem visitantes de muitos países.",
+    "fr": "Des festivals de musique comme l'Exit à Novi Sad et le Festival de trompettes de Guča accueillent des visiteurs de nombreux pays.",
+    "de": "Musikfestivals wie das Exit in Novi Sad und das Trompetenfestival in Guča begrüßen Besucher aus vielen Ländern."
+   }
+  },
+  {
+   "id": "ct-RS-23",
+   "category": "family",
+   "text": {
+    "en": "Family is central. Relatives often gather for Sunday meals and holidays, and visitors are treated as honoured guests.",
+    "it": "La famiglia è centrale. I parenti si riuniscono spesso per i pranzi della domenica e le feste, e i visitatori sono trattati come ospiti d'onore.",
+    "es": "La familia es central. Los parientes suelen reunirse en las comidas del domingo y en las fiestas, y a los visitantes se les trata como invitados de honor.",
+    "pt": "A família é central. Os familiares reúnem-se muitas vezes ao domingo e nas festas, e os visitantes são tratados como convidados de honra.",
+    "pt_BR": "A família é central. Os parentes costumam se reunir aos domingos e nos feriados, e os visitantes são tratados como convidados de honra.",
+    "fr": "La famille est centrale. Les proches se réunissent souvent pour les repas du dimanche et les fêtes, et les visiteurs sont traités en invités d'honneur.",
+    "de": "Die Familie steht im Mittelpunkt. Verwandte treffen sich oft zum Sonntagsessen und an Feiertagen, und Besucher werden als Ehrengäste behandelt."
+   }
+  },
+  {
+   "id": "ct-RS-24",
+   "category": "money",
+   "text": {
+    "en": "The currency is the Serbian dinar (RSD). Cards are widely accepted in cities, but carry some cash for small shops and markets.",
+    "it": "La valuta è il dinaro serbo (RSD). Le carte sono ampiamente accettate nelle città, ma porta un po' di contanti per piccoli negozi e mercati.",
+    "es": "La moneda es el dinar serbio (RSD). Las tarjetas se aceptan ampliamente en las ciudades, pero lleva algo de efectivo para tiendas pequeñas y mercados.",
+    "pt": "A moeda é o dinar sérvio (RSD). Os cartões são amplamente aceites nas cidades, mas leva algum dinheiro vivo para pequenas lojas e mercados.",
+    "pt_BR": "A moeda é o dinar sérvio (RSD). Os cartões são bem aceitos nas cidades, mas leve algum dinheiro em espécie para lojinhas e mercados.",
+    "fr": "La monnaie est le dinar serbe (RSD). Les cartes sont largement acceptées en ville, mais gardez des espèces pour les petites boutiques et les marchés.",
+    "de": "Die Währung ist der serbische Dinar (RSD). In Städten werden Karten weitgehend akzeptiert, aber für kleine Läden und Märkte ist etwas Bargeld nützlich."
+   }
+  },
+  {
+   "id": "ct-RS-25",
+   "category": "photography",
+   "text": {
+    "en": "Ask before photographing people, and check whether photography is allowed inside churches and monasteries.",
+    "it": "Chiedi prima di fotografare le persone e controlla se si può fotografare dentro chiese e monasteri.",
+    "es": "Pregunta antes de fotografiar a las personas y comprueba si se permite fotografiar dentro de iglesias y monasterios.",
+    "pt": "Pergunta antes de fotografar pessoas e verifica se é permitido tirar fotografias dentro de igrejas e mosteiros.",
+    "pt_BR": "Pergunte antes de fotografar pessoas e confira se é permitido tirar fotos dentro de igrejas e mosteiros.",
+    "fr": "Demandez avant de photographier des personnes et vérifiez si la photo est autorisée dans les églises et monastères.",
+    "de": "Frage, bevor du Menschen fotografierst, und prüfe, ob in Kirchen und Klöstern fotografiert werden darf."
+   }
+  },
+  {
+   "id": "ct-RS-26",
+   "category": "nightlife",
+   "text": {
+    "en": "Belgrade is known for lively nightlife, including clubs and floating river venues called splavovi. Nights out start late.",
+    "it": "Belgrado è nota per la vita notturna vivace, con locali e club galleggianti sul fiume chiamati splavovi. Le serate iniziano tardi.",
+    "es": "Belgrado es conocida por su animada vida nocturna, con locales y clubes flotantes en el río llamados splavovi. Las noches empiezan tarde.",
+    "pt": "Belgrado é conhecida pela animada vida noturna, com clubes e espaços flutuantes no rio chamados splavovi. As noites começam tarde.",
+    "pt_BR": "Belgrado é conhecida pela animada vida noturna, com baladas e espaços flutuantes no rio chamados splavovi. As noites começam tarde.",
+    "fr": "Belgrade est réputée pour sa vie nocturne animée, avec des clubs et des lieux flottants sur le fleuve appelés splavovi. Les soirées commencent tard.",
+    "de": "Belgrad ist für sein lebhaftes Nachtleben bekannt, mit Clubs und schwimmenden Lokalen am Fluss, den Splavovi. Die Abende beginnen spät."
+   }
+  },
+  {
+   "id": "ct-RS-27",
+   "category": "nature",
+   "text": {
+    "en": "Serbia has national parks such as Tara and Đerdap, with hiking and river views. Stay on marked paths and carry water.",
+    "it": "La Serbia ha parchi nazionali come Tara e Đerdap, con escursioni e vedute sul fiume. Resta sui sentieri segnalati e porta con te dell'acqua.",
+    "es": "Serbia tiene parques nacionales como Tara y Đerdap, con senderismo y vistas al río. Mantente en los senderos marcados y lleva agua.",
+    "pt": "A Sérvia tem parques nacionais como Tara e Đerdap, com caminhadas e vistas sobre o rio. Fica nos trilhos sinalizados e leva água.",
+    "pt_BR": "A Sérvia tem parques nacionais como Tara e Đerdap, com trilhas e vistas do rio. Fique nos caminhos sinalizados e leve água.",
+    "fr": "La Serbie compte des parcs nationaux comme Tara et Đerdap, avec randonnées et vues sur le fleuve. Restez sur les sentiers balisés et emportez de l'eau.",
+    "de": "Serbien hat Nationalparks wie Tara und Đerdap mit Wanderwegen und Flussblicken. Bleib auf markierten Wegen und nimm Wasser mit."
+   }
+  },
+  {
+   "id": "ct-RS-28",
+   "category": "safety",
+   "text": {
+    "en": "The emergency number is 112. Serbia is generally welcoming to visitors, but keep an eye on your belongings in crowded places.",
+    "it": "Il numero di emergenza è il 112. La Serbia è in genere accogliente con i visitatori, ma tieni d'occhio i tuoi effetti personali nei posti affollati.",
+    "es": "El número de emergencias es el 112. Serbia suele ser acogedora con los visitantes, pero vigila tus pertenencias en lugares concurridos.",
+    "pt": "O número de emergência é o 112. A Sérvia é geralmente acolhedora para os visitantes, mas vigia os teus pertences em locais cheios.",
+    "pt_BR": "O número de emergência é o 112. A Sérvia costuma ser acolhedora com os visitantes, mas fique de olho nos seus pertences em locais cheios.",
+    "fr": "Le numéro d'urgence est le 112. La Serbie est en général accueillante envers les visiteurs, mais surveillez vos affaires dans les endroits bondés.",
+    "de": "Die Notrufnummer ist 112. Serbien ist Besuchern gegenüber meist gastfreundlich, aber achte an belebten Orten auf deine Sachen."
+   }
+  },
+  {
+   "id": "ct-RS-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Serbs are proud of their hospitality and of the kolo, a traditional circle dance. Joining in with a smile is welcomed.",
+    "it": "I serbi sono orgogliosi della loro ospitalità e del kolo, una danza tradizionale in cerchio. Unirsi con un sorriso è ben accetto.",
+    "es": "Los serbios están orgullosos de su hospitalidad y del kolo, una danza tradicional en círculo. Unirse con una sonrisa es bien recibido.",
+    "pt": "Os sérvios têm orgulho da sua hospitalidade e do kolo, uma dança tradicional em círculo. Juntares-te com um sorriso é bem-vindo.",
+    "pt_BR": "Os sérvios têm orgulho da hospitalidade e do kolo, uma dança tradicional em círculo. Entrar na roda com um sorriso é bem-vindo.",
+    "fr": "Les Serbes sont fiers de leur hospitalité et du kolo, une danse traditionnelle en cercle. Se joindre à eux avec le sourire est bienvenu.",
+    "de": "Die Serben sind stolz auf ihre Gastfreundschaft und den Kolo, einen traditionellen Reigentanz. Mitzutanzen und dabei zu lächeln ist willkommen."
+   }
+  },
+  {
+   "id": "ct-RS-30",
+   "category": "local_pride",
+   "text": {
+    "en": "The traditional opanak shoe, with its curled-back tip, is a symbol of Serbian folk culture. You may see it in museums and at festivals.",
+    "it": "L'opanak, la scarpa tradizionale con la punta arricciata all'indietro, è un simbolo della cultura popolare serba. Puoi vederla nei musei e nei festival.",
+    "es": "El opanak, el calzado tradicional con la punta curvada hacia atrás, es un símbolo de la cultura popular serbia. Puedes verlo en museos y festivales.",
+    "pt": "O opanak, o calçado tradicional com a ponta curvada para trás, é um símbolo da cultura popular sérvia. Podes vê-lo em museus e festivais.",
+    "pt_BR": "O opanak, o calçado tradicional com a ponta curvada para trás, é um símbolo da cultura popular sérvia. Você pode vê-lo em museus e festivais.",
+    "fr": "L'opanak, la chaussure traditionnelle à bout recourbé vers l'arrière, est un symbole de la culture populaire serbe. On peut le voir dans les musées et lors des festivals.",
+    "de": "Der Opanak, der traditionelle Schuh mit nach hinten gebogener Spitze, ist ein Symbol der serbischen Volkskultur. Man sieht ihn in Museen und bei Festen."
+   }
+  }
+ ],
+ "RU": [
+  {
+   "id": "ct-RU-01",
+   "category": "greetings",
+   "text": {
+    "en": "A firm handshake is the usual greeting, especially between men. Some people avoid shaking hands across a doorway, so step inside first.",
+    "it": "La stretta di mano decisa è il saluto abituale, soprattutto tra uomini. Alcune persone evitano di stringersi la mano attraverso la soglia, quindi entra prima.",
+    "es": "Un apretón de manos firme es el saludo habitual, sobre todo entre hombres. Algunas personas evitan darse la mano por encima del umbral, así que entra primero.",
+    "pt": "Um aperto de mão firme é o cumprimento habitual, sobretudo entre homens. Algumas pessoas evitam apertar a mão por cima da soleira, por isso entra primeiro.",
+    "pt_BR": "Um aperto de mão firme é o cumprimento habitual, principalmente entre homens. Algumas pessoas evitam apertar a mão por cima da soleira, então entre primeiro.",
+    "fr": "Une poignée de main ferme est le salut habituel, surtout entre hommes. Certaines personnes évitent de se serrer la main par-dessus le seuil, alors entrez d'abord.",
+    "de": "Ein fester Händedruck ist die übliche Begrüßung, besonders unter Männern. Manche vermeiden es, sich über die Türschwelle die Hand zu geben, also tritt zuerst ein."
+   }
+  },
+  {
+   "id": "ct-RU-02",
+   "category": "greetings",
+   "text": {
+    "en": "In formal settings, people use a first name plus patronymic, such as Ivan Petrovich, and the polite vy. Switch to ty only when invited.",
+    "it": "In contesti formali si usano nome e patronimico, come Ivan Petrovič, e il vy di cortesia. Passa al ty solo se vieni invitato.",
+    "es": "En situaciones formales se usa el nombre más el patronímico, como Iván Petróvich, y el vy de cortesía. Pasa al ty solo si te lo proponen.",
+    "pt": "Em situações formais usa-se o nome próprio com o patronímico, como Ivan Petrovitch, e o vy de cortesia. Passa ao ty só quando te convidarem.",
+    "pt_BR": "Em situações formais usa-se o primeiro nome com o patronímico, como Ivan Petrovich, e o vy de cortesia. Passe ao ty só quando for convidado.",
+    "fr": "Dans les situations formelles, on utilise le prénom suivi du patronyme, comme Ivan Petrovitch, et le vy de politesse. Passez au ty seulement si on vous y invite.",
+    "de": "In formellen Situationen verwendet man Vornamen plus Vatersnamen, etwa Iwan Petrowitsch, und das höfliche Wy. Wechsle erst zum Ty, wenn es dir angeboten wird."
+   }
+  },
+  {
+   "id": "ct-RU-03",
+   "category": "conversation",
+   "text": {
+    "en": "Literature, music, ballet, travel and food are good topics. Many Russians are proud of cultural figures like Tolstoy and Tchaikovsky.",
+    "it": "Letteratura, musica, balletto, viaggi e cibo sono buoni argomenti. Molti russi sono orgogliosi di figure culturali come Tolstoj e Čajkovskij.",
+    "es": "La literatura, la música, el ballet, los viajes y la comida son buenos temas. Muchos rusos se sienten orgullosos de figuras culturales como Tolstói y Chaikovski.",
+    "pt": "Literatura, música, ballet, viagens e comida são bons temas. Muitos russos têm orgulho de figuras culturais como Tolstói e Tchaikovski.",
+    "pt_BR": "Literatura, música, balé, viagens e comida são bons assuntos. Muitos russos têm orgulho de figuras culturais como Tolstói e Tchaikovski.",
+    "fr": "La littérature, la musique, le ballet, les voyages et la cuisine sont de bons sujets. Beaucoup de Russes sont fiers de figures culturelles comme Tolstoï et Tchaïkovski.",
+    "de": "Literatur, Musik, Ballett, Reisen und Essen sind gute Themen. Viele Russen sind stolz auf Kulturgrößen wie Tolstoi und Tschaikowski."
+   }
+  },
+  {
+   "id": "ct-RU-04",
+   "category": "conversation",
+   "text": {
+    "en": "Russians may seem reserved with strangers but warm up quickly among friends. Not smiling constantly in public is normal, not unfriendly.",
+    "it": "I russi possono sembrare riservati con gli sconosciuti ma si aprono in fretta tra amici. Non sorridere di continuo in pubblico è normale, non scortese.",
+    "es": "Los rusos pueden parecer reservados con desconocidos, pero se abren rápido entre amigos. No sonreír constantemente en público es normal, no es antipatía.",
+    "pt": "Os russos podem parecer reservados com desconhecidos, mas abrem-se depressa entre amigos. Não sorrir constantemente em público é normal, não é antipatia.",
+    "pt_BR": "Os russos podem parecer reservados com desconhecidos, mas se abrem rápido entre amigos. Não sorrir o tempo todo em público é normal, não é antipatia.",
+    "fr": "Les Russes peuvent sembler réservés avec les inconnus mais s'ouvrent vite entre amis. Ne pas sourire en permanence en public est normal, pas hostile.",
+    "de": "Russen wirken auf Fremde manchmal zurückhaltend, tauen unter Freunden aber schnell auf. Wer in der Öffentlichkeit nicht ständig lächelt, ist nicht unfreundlich."
+   }
+  },
+  {
+   "id": "ct-RU-05",
+   "category": "dining",
+   "text": {
+    "en": "Tea is central to hospitality. Hosts often set a table full of food and sweets, and it is polite to try a bit of everything.",
+    "it": "Il tè è centrale nell'ospitalità. I padroni di casa spesso imbandiscono una tavola piena di cibo e dolci ed è cortese assaggiare un po' di tutto.",
+    "es": "El té es central en la hospitalidad. Los anfitriones suelen poner una mesa llena de comida y dulces, y es de buena educación probar un poco de todo.",
+    "pt": "O chá é central na hospitalidade. Os anfitriões costumam pôr uma mesa cheia de comida e doces, e é cortês provar um pouco de tudo.",
+    "pt_BR": "O chá é central na hospitalidade. Os anfitriões costumam pôr uma mesa cheia de comida e doces, e é educado provar um pouco de tudo.",
+    "fr": "Le thé est au cœur de l'hospitalité. Les hôtes dressent souvent une table remplie de plats et de douceurs, et il est poli de goûter un peu de tout.",
+    "de": "Tee ist zentral für die Gastfreundschaft. Gastgeber decken oft einen Tisch voller Speisen und Süßigkeiten, und es ist höflich, von allem etwas zu probieren."
+   }
+  },
+  {
+   "id": "ct-RU-06",
+   "category": "dining",
+   "text": {
+    "en": "Typical dishes include borscht, pelmeni and blini, and kvass is a popular non-alcoholic drink. Toasting with tea or juice is fine.",
+    "it": "Piatti tipici sono il borsč, i pelmeni e i blini, e il kvas è una bevanda analcolica molto diffusa. Brindare con tè o succo va benissimo.",
+    "es": "Platos típicos son el borsch, los pelmeni y los blini, y el kvas es una bebida sin alcohol muy popular. Brindar con té o zumo está bien.",
+    "pt": "Pratos típicos incluem borscht, pelmeni e blini, e o kvas é uma bebida sem álcool muito popular. Brindar com chá ou sumo é perfeitamente aceitável.",
+    "pt_BR": "Pratos típicos incluem borscht, pelmeni e blini, e o kvas é uma bebida sem álcool muito popular. Brindar com chá ou suco é perfeitamente aceitável.",
+    "fr": "Les plats typiques comprennent le bortsch, les pelmeni et les blinis, et le kvas est une boisson sans alcool très populaire. Trinquer avec du thé ou du jus est tout à fait acceptable.",
+    "de": "Typische Gerichte sind Borschtsch, Pelmeni und Blini, und Kwas ist ein beliebtes alkoholfreies Getränk. Mit Tee oder Saft anzustoßen ist völlig in Ordnung."
+   }
+  },
+  {
+   "id": "ct-RU-07",
+   "category": "tipping",
+   "text": {
+    "en": "About 10% is common in restaurants if service is not already included. Small tips are fine in cafés.",
+    "it": "Circa il 10% è comune nei ristoranti se il servizio non è già incluso. Piccole mance vanno bene nei caffè.",
+    "es": "Alrededor del 10% es habitual en los restaurantes si el servicio no está incluido. Las propinas pequeñas están bien en las cafeterías.",
+    "pt": "Cerca de 10% é comum nos restaurantes se o serviço não estiver incluído. Pequenas gorjetas são aceitáveis em cafés.",
+    "pt_BR": "Cerca de 10% é comum em restaurantes se o serviço não estiver incluído. Gorjetas pequenas são aceitáveis em cafés.",
+    "fr": "Environ 10 % est courant au restaurant si le service n'est pas déjà compris. De petits pourboires suffisent dans les cafés.",
+    "de": "Etwa 10 % sind im Restaurant üblich, wenn der Service nicht schon enthalten ist. In Cafés genügen kleine Trinkgelder."
+   }
+  },
+  {
+   "id": "ct-RU-08",
+   "category": "gifts",
+   "text": {
+    "en": "When visiting a home, bring flowers, chocolates or a cake. Give an odd number of flowers, because even numbers are for funerals.",
+    "it": "Quando vai a casa di qualcuno, porta fiori, cioccolatini o una torta. Regala un numero dispari di fiori, perché quelli pari sono per i funerali.",
+    "es": "Al visitar una casa, lleva flores, bombones o una tarta. Regala un número impar de flores, porque el par es para los funerales.",
+    "pt": "Ao visitar uma casa, leva flores, bombons ou um bolo. Oferece um número ímpar de flores, pois o par é para funerais.",
+    "pt_BR": "Ao visitar uma casa, leve flores, bombons ou um bolo. Dê um número ímpar de flores, pois o par é para funerais.",
+    "fr": "Quand vous rendez visite à quelqu'un, apportez des fleurs, des chocolats ou un gâteau. Offrez un nombre impair de fleurs, car le nombre pair est réservé aux funérailles.",
+    "de": "Wenn du jemanden besuchst, bring Blumen, Pralinen oder einen Kuchen mit. Schenke eine ungerade Anzahl Blumen, denn gerade Zahlen sind für Beerdigungen."
+   }
+  },
+  {
+   "id": "ct-RU-09",
+   "category": "gifts",
+   "text": {
+    "en": "Small souvenirs from your own country, such as sweets or a postcard, are warmly welcomed as gifts.",
+    "it": "Piccoli souvenir del tuo paese, come dolci o una cartolina, sono molto graditi come regali.",
+    "es": "Pequeños recuerdos de tu país, como dulces o una postal, se reciben con mucho cariño como regalo.",
+    "pt": "Pequenas lembranças do teu país, como doces ou um postal, são recebidas com carinho como prenda.",
+    "pt_BR": "Pequenas lembranças do seu país, como doces ou um cartão-postal, são recebidas com carinho como presente.",
+    "fr": "De petits souvenirs de votre pays, comme des friandises ou une carte postale, sont très bien accueillis en cadeau.",
+    "de": "Kleine Souvenirs aus deinem Land, etwa Süßigkeiten oder eine Postkarte, werden als Geschenk gern angenommen."
+   }
+  },
+  {
+   "id": "ct-RU-10",
+   "category": "dress",
+   "text": {
+    "en": "People often dress smartly in cities. In winter wear a hat, gloves and layers, and leave your coat at the cloakroom in theatres and museums.",
+    "it": "In città la gente si veste spesso con cura. D'inverno porta cappello, guanti e strati, e lascia il cappotto al guardaroba nei teatri e nei musei.",
+    "es": "En las ciudades la gente suele vestir con elegancia. En invierno usa gorro, guantes y capas, y deja el abrigo en el guardarropa de teatros y museos.",
+    "pt": "Nas cidades, as pessoas costumam vestir-se com cuidado. No inverno usa gorro, luvas e várias camadas, e deixa o casaco no bengaleiro dos teatros e museus.",
+    "pt_BR": "Nas cidades, as pessoas costumam se vestir com capricho. No inverno use gorro, luvas e várias camadas, e deixe o casaco no guarda-volumes de teatros e museus.",
+    "fr": "En ville, on s'habille souvent avec soin. En hiver, portez bonnet, gants et plusieurs couches, et laissez votre manteau au vestiaire des théâtres et musées.",
+    "de": "In Städten kleidet man sich oft sorgfältig. Im Winter trägst du Mütze, Handschuhe und mehrere Schichten, und in Theatern und Museen gibst du den Mantel an der Garderobe ab."
+   }
+  },
+  {
+   "id": "ct-RU-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "In Orthodox churches, women often cover their hair with a scarf and wear a skirt or dress, and men remove their hats.",
+    "it": "Nelle chiese ortodosse le donne spesso coprono i capelli con un foulard e indossano gonna o vestito, e gli uomini si tolgono il cappello.",
+    "es": "En las iglesias ortodoxas, las mujeres suelen cubrirse el pelo con un pañuelo y llevar falda o vestido, y los hombres se quitan el sombrero.",
+    "pt": "Nas igrejas ortodoxas, as mulheres costumam cobrir o cabelo com um lenço e usar saia ou vestido, e os homens tiram o chapéu.",
+    "pt_BR": "Nas igrejas ortodoxas, as mulheres costumam cobrir o cabelo com um lenço e usar saia ou vestido, e os homens tiram o chapéu.",
+    "fr": "Dans les églises orthodoxes, les femmes couvrent souvent leurs cheveux d'un foulard et portent une jupe ou une robe, et les hommes ôtent leur chapeau.",
+    "de": "In orthodoxen Kirchen bedecken Frauen oft ihr Haar mit einem Tuch und tragen Rock oder Kleid, und Männer nehmen den Hut ab."
+   }
+  },
+  {
+   "id": "ct-RU-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "Orthodox services are long and mostly held standing. Visitors may watch quietly from the side and should not walk in front of worshippers.",
+    "it": "Le funzioni ortodosse sono lunghe e in gran parte si svolgono in piedi. I visitatori possono osservare in silenzio da un lato e non devono passare davanti ai fedeli.",
+    "es": "Los oficios ortodoxos son largos y en su mayoría se celebran de pie. Los visitantes pueden observar en silencio desde un lado y no deben cruzar por delante de los fieles.",
+    "pt": "As celebrações ortodoxas são longas e decorrem sobretudo de pé. Os visitantes podem observar em silêncio de lado e não devem passar à frente dos fiéis.",
+    "pt_BR": "As celebrações ortodoxas são longas e acontecem em grande parte em pé. Os visitantes podem observar em silêncio de lado e não devem passar na frente dos fiéis.",
+    "fr": "Les offices orthodoxes sont longs et se déroulent surtout debout. Les visiteurs peuvent observer en silence depuis le côté et ne doivent pas passer devant les fidèles.",
+    "de": "Orthodoxe Gottesdienste sind lang und finden überwiegend im Stehen statt. Besucher können still am Rand zuschauen und sollten nicht vor den Gläubigen entlanggehen."
+   }
+  },
+  {
+   "id": "ct-RU-13",
+   "category": "gestures",
+   "text": {
+    "en": "Pointing with a finger and making the fig sign with the thumb between two fingers are considered rude. Use an open hand to show direction.",
+    "it": "Indicare col dito e fare la «fica» con il pollice tra due dita sono considerati scortesi. Usa la mano aperta per indicare una direzione.",
+    "es": "Señalar con el dedo y hacer la «higa» con el pulgar entre dos dedos se consideran groseros. Usa la mano abierta para indicar una dirección.",
+    "pt": "Apontar com o dedo e fazer a «figa» com o polegar entre dois dedos são considerados rudes. Usa a mão aberta para indicar uma direção.",
+    "pt_BR": "Apontar com o dedo e fazer a «figa» com o polegar entre dois dedos são considerados rudes. Use a mão aberta para indicar uma direção.",
+    "fr": "Montrer du doigt et faire la «figue» avec le pouce entre deux doigts sont jugés impolis. Indiquez une direction de la main ouverte.",
+    "de": "Mit dem Finger zu zeigen oder die «Feige» mit dem Daumen zwischen zwei Fingern zu machen, gilt als unhöflich. Zeige die Richtung mit offener Hand."
+   }
+  },
+  {
+   "id": "ct-RU-14",
+   "category": "punctuality",
+   "text": {
+    "en": "Be punctual for business and official meetings. For social visits, a short delay is fine, but call if you will be very late.",
+    "it": "Sii puntuale a riunioni di lavoro e ufficiali. Per le visite tra amici un breve ritardo va bene, ma chiama se farai molto tardi.",
+    "es": "Sé puntual en reuniones de trabajo y oficiales. En visitas sociales un breve retraso está bien, pero llama si vas a llegar muy tarde.",
+    "pt": "Sê pontual em reuniões profissionais e oficiais. Em visitas sociais, um pequeno atraso é aceitável, mas liga se fores chegar muito tarde.",
+    "pt_BR": "Seja pontual em reuniões profissionais e oficiais. Em visitas sociais, um pequeno atraso é aceitável, mas ligue se for chegar muito tarde.",
+    "fr": "Soyez ponctuel pour les réunions professionnelles et officielles. Pour une visite entre amis, un petit retard est acceptable, mais appelez si vous avez beaucoup de retard.",
+    "de": "Sei bei geschäftlichen und offiziellen Terminen pünktlich. Bei privaten Besuchen ist eine kleine Verspätung in Ordnung, aber ruf an, wenn es deutlich später wird."
+   }
+  },
+  {
+   "id": "ct-RU-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "Take off your shoes at the door when visiting a home. Hosts commonly provide slippers called tapochki.",
+    "it": "Togliti le scarpe alla porta quando visiti una casa. I padroni di casa di solito offrono delle pantofole chiamate tapochki.",
+    "es": "Quítate los zapatos en la puerta al visitar una casa. Los anfitriones suelen ofrecer zapatillas llamadas tapochki.",
+    "pt": "Tira os sapatos à porta quando visitares uma casa. Os anfitriões costumam oferecer pantufas chamadas tapochki.",
+    "pt_BR": "Tire os sapatos na porta ao visitar uma casa. Os anfitriões costumam oferecer chinelos chamados tapochki.",
+    "fr": "Retirez vos chaussures à la porte quand vous visitez un logement. Les hôtes fournissent souvent des chaussons appelés tapochki.",
+    "de": "Zieh beim Besuch einer Wohnung die Schuhe an der Tür aus. Gastgeber stellen meist Hausschuhe namens Tapotschki bereit."
+   }
+  },
+  {
+   "id": "ct-RU-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "Giving up your seat on the metro and buses to older people, pregnant women and parents with children is expected.",
+    "it": "Cedere il posto in metro e sugli autobus agli anziani, alle donne incinte e ai genitori con bambini è la regola.",
+    "es": "Se espera que cedas el asiento en el metro y los autobuses a personas mayores, embarazadas y padres con niños.",
+    "pt": "Espera-se que cedas o lugar no metro e nos autocarros a idosos, grávidas e pais com crianças.",
+    "pt_BR": "Espera-se que você ceda o lugar no metrô e nos ônibus a idosos, grávidas e pais com crianças.",
+    "fr": "On s'attend à ce que vous cédiez votre place dans le métro et les bus aux personnes âgées, aux femmes enceintes et aux parents avec enfants.",
+    "de": "Es wird erwartet, in U-Bahn und Bus älteren Menschen, Schwangeren und Eltern mit Kindern den Platz anzubieten."
+   }
+  },
+  {
+   "id": "ct-RU-17",
+   "category": "transport",
+   "text": {
+    "en": "The Moscow and St Petersburg metros are fast and beautiful. Stand on the right on escalators, and expect announcements in Russian.",
+    "it": "Le metropolitane di Mosca e San Pietroburgo sono veloci e bellissime. Sulle scale mobili stai a destra e aspettati annunci in russo.",
+    "es": "Los metros de Moscú y San Petersburgo son rápidos y preciosos. Colócate a la derecha en las escaleras mecánicas y espera anuncios en ruso.",
+    "pt": "Os metros de Moscovo e São Petersburgo são rápidos e lindos. Fica do lado direito nas escadas rolantes e conta com anúncios em russo.",
+    "pt_BR": "Os metrôs de Moscou e São Petersburgo são rápidos e lindos. Fique do lado direito nas escadas rolantes e espere anúncios em russo.",
+    "fr": "Les métros de Moscou et de Saint-Pétersbourg sont rapides et magnifiques. Tenez-vous à droite sur les escaliers mécaniques et attendez-vous à des annonces en russe.",
+    "de": "Die U-Bahnen in Moskau und Sankt Petersburg sind schnell und prachtvoll. Steh auf Rolltreppen rechts und rechne mit Durchsagen auf Russisch."
+   }
+  },
+  {
+   "id": "ct-RU-18",
+   "category": "transport",
+   "text": {
+    "en": "Use a taxi app instead of hailing cars on the street, so the price and route are clear from the start.",
+    "it": "Usa un'app per i taxi invece di fermare auto per strada, così prezzo e percorso sono chiari fin dall'inizio.",
+    "es": "Usa una aplicación de taxi en lugar de parar coches en la calle, así el precio y la ruta quedan claros desde el principio.",
+    "pt": "Usa uma aplicação de táxi em vez de parar carros na rua, para que o preço e o trajeto fiquem claros desde o início.",
+    "pt_BR": "Use um aplicativo de táxi em vez de parar carros na rua, para que o preço e o trajeto fiquem claros desde o início.",
+    "fr": "Utilisez une application de taxi plutôt que de héler des voitures dans la rue, afin que le prix et l'itinéraire soient clairs dès le départ.",
+    "de": "Nutze eine Taxi-App, statt Autos auf der Straße anzuhalten, dann sind Preis und Route von Anfang an klar."
+   }
+  },
+  {
+   "id": "ct-RU-19",
+   "category": "language",
+   "text": {
+    "en": "Learning the Cyrillic alphabet takes only a short time and makes signs, menus and metro maps much easier to read.",
+    "it": "Imparare l'alfabeto cirillico richiede poco tempo e rende molto più facile leggere cartelli, menu e mappe della metro.",
+    "es": "Aprender el alfabeto cirílico lleva poco tiempo y facilita mucho la lectura de carteles, menús y planos del metro.",
+    "pt": "Aprender o alfabeto cirílico leva pouco tempo e torna muito mais fácil ler placas, ementas e mapas do metro.",
+    "pt_BR": "Aprender o alfabeto cirílico leva pouco tempo e facilita muito a leitura de placas, cardápios e mapas do metrô.",
+    "fr": "Apprendre l'alphabet cyrillique prend peu de temps et facilite beaucoup la lecture des panneaux, des menus et des plans de métro.",
+    "de": "Das kyrillische Alphabet ist schnell gelernt und macht Schilder, Speisekarten und U-Bahn-Pläne viel leichter lesbar."
+   }
+  },
+  {
+   "id": "ct-RU-20",
+   "category": "language",
+   "text": {
+    "en": "English is more common among young people in big cities than in small towns, so a translation app and a few words like spasibo (thank you) help.",
+    "it": "L'inglese è più diffuso tra i giovani nelle grandi città che nei piccoli centri, quindi un'app di traduzione e qualche parola come spasibo (grazie) aiutano.",
+    "es": "El inglés está más extendido entre los jóvenes de las grandes ciudades que en los pueblos pequeños, así que una aplicación de traducción y algunas palabras como spasibo (gracias) ayudan.",
+    "pt": "O inglês é mais comum entre os jovens das grandes cidades do que nas vilas pequenas, por isso uma aplicação de tradução e algumas palavras como spasibo (obrigado) ajudam.",
+    "pt_BR": "O inglês é mais comum entre os jovens das grandes cidades do que em cidades pequenas, então um aplicativo de tradução e algumas palavras como spasibo (obrigado) ajudam.",
+    "fr": "L'anglais est plus répandu chez les jeunes des grandes villes que dans les petites villes, donc une application de traduction et quelques mots comme spasibo (merci) aident.",
+    "de": "Englisch ist bei jungen Leuten in Großstädten verbreiteter als in Kleinstädten, daher helfen eine Übersetzungs-App und ein paar Wörter wie Spasibo (danke)."
+   }
+  },
+  {
+   "id": "ct-RU-21",
+   "category": "festivals",
+   "text": {
+    "en": "Maslenitsa, in the week before Lent, is celebrated with blini (pancakes), folk games and street fairs.",
+    "it": "La Maslenitsa, nella settimana prima della Quaresima, si celebra con i blini (frittelle), giochi popolari e fiere di strada.",
+    "es": "La Maslenitsa, la semana previa a la Cuaresma, se celebra con blini (tortitas), juegos populares y ferias callejeras.",
+    "pt": "A Maslenitsa, na semana antes da Quaresma, celebra-se com blini (panquecas), jogos populares e feiras de rua.",
+    "pt_BR": "A Maslenitsa, na semana antes da Quaresma, é celebrada com blini (panquecas), jogos populares e feiras de rua.",
+    "fr": "La Maslenitsa, la semaine précédant le Carême, se célèbre avec des blinis (crêpes), des jeux populaires et des foires de rue.",
+    "de": "Die Maslenitsa in der Woche vor der Fastenzeit wird mit Blini (Pfannkuchen), Volksspielen und Straßenmärkten gefeiert."
+   }
+  },
+  {
+   "id": "ct-RU-22",
+   "category": "festivals",
+   "text": {
+    "en": "New Year is the biggest family holiday, with a decorated tree and Ded Moroz (Grandfather Frost). Orthodox Christmas is on 7 January.",
+    "it": "Il Capodanno è la festa di famiglia più importante, con l'albero addobbato e Ded Moroz (Nonno Gelo). Il Natale ortodosso è il 7 gennaio.",
+    "es": "El Año Nuevo es la mayor fiesta familiar, con árbol decorado y Ded Moroz (Abuelo Escarcha). La Navidad ortodoxa es el 7 de enero.",
+    "pt": "O Ano Novo é a maior festa de família, com árvore decorada e Ded Moroz (Avô Gelo). O Natal ortodoxo é a 7 de janeiro.",
+    "pt_BR": "O Ano Novo é a maior festa de família, com árvore decorada e Ded Moroz (Vovô Gelo). O Natal ortodoxo é em 7 de janeiro.",
+    "fr": "Le Nouvel An est la plus grande fête de famille, avec un sapin décoré et Ded Moroz (le Grand-père Gel). Le Noël orthodoxe a lieu le 7 janvier.",
+    "de": "Neujahr ist das größte Familienfest, mit geschmücktem Baum und Ded Moros (Väterchen Frost). Das orthodoxe Weihnachtsfest ist am 7. Januar."
+   }
+  },
+  {
+   "id": "ct-RU-23",
+   "category": "family",
+   "text": {
+    "en": "Many families spend summer weekends at a dacha, a country house with a garden, and guests may be invited to join.",
+    "it": "Molte famiglie trascorrono i fine settimana estivi in una dacia, una casa di campagna con giardino, e a volte invitano anche gli ospiti.",
+    "es": "Muchas familias pasan los fines de semana de verano en una dacha, una casa de campo con huerto, y a veces invitan a los amigos a unirse.",
+    "pt": "Muitas famílias passam os fins de semana de verão numa dacha, uma casa de campo com jardim, e por vezes convidam os amigos a juntar-se.",
+    "pt_BR": "Muitas famílias passam os fins de semana de verão numa dacha, uma casa de campo com jardim, e às vezes convidam os amigos para ir junto.",
+    "fr": "Beaucoup de familles passent les week-ends d'été dans une datcha, une maison de campagne avec jardin, et invitent parfois des amis à se joindre à elles.",
+    "de": "Viele Familien verbringen Sommerwochenenden in einer Datscha, einem Landhaus mit Garten, und laden manchmal Gäste ein, mitzukommen."
+   }
+  },
+  {
+   "id": "ct-RU-24",
+   "category": "money",
+   "text": {
+    "en": "The currency is the rouble (RUB). Check in advance which payment cards and apps work for you, and keep some cash as a backup.",
+    "it": "La valuta è il rublo (RUB). Verifica in anticipo quali carte e app di pagamento funzionano per te e tieni un po' di contanti come riserva.",
+    "es": "La moneda es el rublo (RUB). Comprueba de antemano qué tarjetas y aplicaciones de pago te funcionan y guarda algo de efectivo de reserva.",
+    "pt": "A moeda é o rublo (RUB). Verifica com antecedência que cartões e aplicações de pagamento funcionam para ti e guarda algum dinheiro vivo como reserva.",
+    "pt_BR": "A moeda é o rublo (RUB). Verifique com antecedência quais cartões e aplicativos de pagamento funcionam para você e guarde algum dinheiro em espécie de reserva.",
+    "fr": "La monnaie est le rouble (RUB). Vérifiez à l'avance quelles cartes et applications de paiement fonctionnent pour vous et gardez un peu d'espèces en secours.",
+    "de": "Die Währung ist der Rubel (RUB). Prüfe vorab, welche Zahlungskarten und Apps bei dir funktionieren, und halte etwas Bargeld als Reserve bereit."
+   }
+  },
+  {
+   "id": "ct-RU-25",
+   "category": "photography",
+   "text": {
+    "en": "Ask before photographing people. Avoid photographing military sites and government buildings, and follow posted signs.",
+    "it": "Chiedi prima di fotografare le persone. Evita di fotografare siti militari ed edifici governativi e rispetta i cartelli.",
+    "es": "Pregunta antes de fotografiar a las personas. Evita fotografiar instalaciones militares y edificios gubernamentales, y respeta los carteles.",
+    "pt": "Pergunta antes de fotografar pessoas. Evita fotografar instalações militares e edifícios governamentais e respeita a sinalização.",
+    "pt_BR": "Pergunte antes de fotografar pessoas. Evite fotografar instalações militares e prédios governamentais e respeite as placas.",
+    "fr": "Demandez avant de photographier des personnes. Évitez de photographier les sites militaires et les bâtiments gouvernementaux, et respectez les panneaux.",
+    "de": "Frage, bevor du Menschen fotografierst. Vermeide Fotos von Militäranlagen und Regierungsgebäuden und beachte die Schilder."
+   }
+  },
+  {
+   "id": "ct-RU-26",
+   "category": "nightlife",
+   "text": {
+    "en": "Big cities have lively bars, clubs and late-night cafés. The Moscow metro closes overnight, so plan how to get home.",
+    "it": "Le grandi città hanno bar, locali e caffè aperti fino a tardi. La metropolitana di Mosca chiude di notte, quindi pianifica come tornare a casa.",
+    "es": "Las grandes ciudades tienen bares, discotecas y cafeterías abiertas hasta tarde. El metro de Moscú cierra por la noche, así que planea cómo volver a casa.",
+    "pt": "As grandes cidades têm bares, discotecas e cafés abertos até tarde. O metro de Moscovo fecha durante a noite, por isso planeia como voltar para casa.",
+    "pt_BR": "As grandes cidades têm bares, baladas e cafés abertos até tarde. O metrô de Moscou fecha durante a noite, então planeje como voltar para casa.",
+    "fr": "Les grandes villes ont des bars, des clubs et des cafés ouverts tard. Le métro de Moscou ferme la nuit, prévoyez donc comment rentrer.",
+    "de": "Große Städte haben lebhafte Bars, Clubs und Cafés bis spät in die Nacht. Die Moskauer U-Bahn schließt nachts, plane also deinen Heimweg."
+   }
+  },
+  {
+   "id": "ct-RU-27",
+   "category": "nature",
+   "text": {
+    "en": "Russia has vast nature, from Lake Baikal to the forests of Karelia. In remote areas, travel with a guide and check the weather.",
+    "it": "La Russia ha una natura immensa, dal lago Bajkal alle foreste della Carelia. Nelle zone remote viaggia con una guida e controlla il meteo.",
+    "es": "Rusia tiene una naturaleza inmensa, desde el lago Baikal hasta los bosques de Carelia. En zonas remotas viaja con guía y consulta el tiempo.",
+    "pt": "A Rússia tem uma natureza imensa, do lago Baikal às florestas da Carélia. Em zonas remotas viaja com um guia e consulta a meteorologia.",
+    "pt_BR": "A Rússia tem uma natureza imensa, do lago Baikal às florestas da Carélia. Em áreas remotas viaje com um guia e confira a previsão do tempo.",
+    "fr": "La Russie offre une nature immense, du lac Baïkal aux forêts de Carélie. Dans les régions isolées, voyagez avec un guide et vérifiez la météo.",
+    "de": "Russland hat eine riesige Natur, vom Baikalsee bis zu den Wäldern Kareliens. In abgelegenen Gegenden reist man mit Guide und prüft das Wetter."
+   }
+  },
+  {
+   "id": "ct-RU-28",
+   "category": "safety",
+   "text": {
+    "en": "The emergency number is 112. Carry ID or a copy of your passport, and keep an eye on your belongings in crowded places.",
+    "it": "Il numero di emergenza è il 112. Porta con te un documento o una copia del passaporto e tieni d'occhio i tuoi effetti personali nei posti affollati.",
+    "es": "El número de emergencias es el 112. Lleva un documento de identidad o una copia del pasaporte y vigila tus pertenencias en lugares concurridos.",
+    "pt": "O número de emergência é o 112. Leva um documento de identificação ou uma cópia do passaporte e vigia os teus pertences em locais cheios.",
+    "pt_BR": "O número de emergência é o 112. Leve um documento de identificação ou uma cópia do passaporte e fique de olho nos seus pertences em locais cheios.",
+    "fr": "Le numéro d'urgence est le 112. Ayez sur vous une pièce d'identité ou une copie de votre passeport, et surveillez vos affaires dans les endroits bondés.",
+    "de": "Die Notrufnummer ist 112. Trage einen Ausweis oder eine Passkopie bei dir und achte an belebten Orten auf deine Sachen."
+   }
+  },
+  {
+   "id": "ct-RU-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Russians are proud of their literature, ballet and classical music. Sincere praise for the Bolshoi Theatre or writers like Pushkin is welcome.",
+    "it": "I russi sono orgogliosi della loro letteratura, del balletto e della musica classica. Un elogio sincero al Teatro Bolscioi o a scrittori come Puškin è gradito.",
+    "es": "Los rusos están orgullosos de su literatura, su ballet y su música clásica. Un elogio sincero al Teatro Bolshói o a escritores como Pushkin es bien recibido.",
+    "pt": "Os russos têm orgulho da sua literatura, do ballet e da música clássica. Um elogio sincero ao Teatro Bolshoi ou a escritores como Pushkin é bem-vindo.",
+    "pt_BR": "Os russos têm orgulho da sua literatura, do balé e da música clássica. Um elogio sincero ao Teatro Bolshoi ou a escritores como Púchkin é bem-vindo.",
+    "fr": "Les Russes sont fiers de leur littérature, de leur ballet et de leur musique classique. Un compliment sincère sur le théâtre Bolchoï ou sur des écrivains comme Pouchkine est bienvenu.",
+    "de": "Die Russen sind stolz auf ihre Literatur, ihr Ballett und ihre klassische Musik. Aufrichtiges Lob für das Bolschoi-Theater oder Schriftsteller wie Puschkin kommt gut an."
+   }
+  },
+  {
+   "id": "ct-RU-30",
+   "category": "local_pride",
+   "text": {
+    "en": "The banya, a traditional steam bath, is a favourite way to socialise. Bring flip-flops, a towel and a felt hat to protect your head from the heat.",
+    "it": "La banya, il tradizionale bagno di vapore, è un modo molto amato di socializzare. Porta ciabatte, un asciugamano e un cappello di feltro per proteggere la testa dal calore.",
+    "es": "La banya, el tradicional baño de vapor, es una forma muy querida de socializar. Lleva chanclas, una toalla y un gorro de fieltro para proteger la cabeza del calor.",
+    "pt": "A banya, o tradicional banho de vapor, é uma forma muito apreciada de convívio. Leva chinelos, uma toalha e um chapéu de feltro para proteger a cabeça do calor.",
+    "pt_BR": "A banya, o tradicional banho de vapor, é uma forma muito apreciada de socializar. Leve chinelos, uma toalha e um chapéu de feltro para proteger a cabeça do calor.",
+    "fr": "Le banya, le bain de vapeur traditionnel, est une façon très appréciée de se retrouver. Apportez des tongs, une serviette et un chapeau de feutre pour protéger la tête de la chaleur.",
+    "de": "Die Banja, das traditionelle Dampfbad, ist eine beliebte Art, Zeit mit anderen zu verbringen. Bring Badeschlappen, ein Handtuch und eine Filzmütze als Hitzeschutz für den Kopf mit."
+   }
+  }
+ ]
+}

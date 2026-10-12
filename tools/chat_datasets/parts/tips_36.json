@@ -1,0 +1,1178 @@
+{
+ "NO": [
+  {
+   "id": "ct-NO-01",
+   "category": "greetings",
+   "text": {
+    "en": "A handshake with eye contact and a friendly 'hei' is the usual way to greet someone. Hugs are for close friends.",
+    "it": "Si saluta con una stretta di mano, guardandosi negli occhi, e un 'hei' cordiale. Gli abbracci sono per gli amici stretti.",
+    "es": "Lo habitual es saludar con un apretón de manos, mirando a los ojos, y un 'hei' amable. Los abrazos se reservan para los amigos cercanos.",
+    "pt": "O habitual é cumprimentar com um aperto de mão, olhando nos olhos, e um 'hei' simpático. Os abraços ficam para os amigos próximos.",
+    "pt_BR": "O comum é cumprimentar com um aperto de mão, olhando nos olhos, e um 'hei' simpático. Abraços ficam para os amigos próximos.",
+    "fr": "On salue généralement par une poignée de main, en regardant dans les yeux, et un 'hei' amical. Les accolades sont réservées aux proches.",
+    "de": "Üblich sind ein Händedruck mit Blickkontakt und ein freundliches 'hei'. Umarmungen sind engen Freunden vorbehalten."
+   }
+  },
+  {
+   "id": "ct-NO-02",
+   "category": "greetings",
+   "text": {
+    "en": "Norwegians usually use first names and the informal 'du', even with older people or at work, so don't be surprised by the casual tone.",
+    "it": "In Norvegia si usano di solito i nomi di battesimo e il 'du' informale, anche con le persone anziane o al lavoro: il tono informale è normale.",
+    "es": "Los noruegos suelen usar el nombre de pila y el 'du' informal, incluso con personas mayores o en el trabajo, así que no te extrañe el tono casual.",
+    "pt": "Os noruegueses costumam usar o primeiro nome e o 'du' informal, mesmo com pessoas mais velhas ou no trabalho, por isso não estranhes o tom descontraído.",
+    "pt_BR": "Os noruegueses costumam usar o primeiro nome e o 'du' informal, mesmo com pessoas mais velhas ou no trabalho, então não estranhe o tom descontraído.",
+    "fr": "Les Norvégiens utilisent en général le prénom et le 'du' informel, même avec des personnes âgées ou au travail : ce ton décontracté est normal.",
+    "de": "Man verwendet meist den Vornamen und das informelle 'du', auch gegenüber älteren Menschen oder im Beruf. Der lockere Ton ist ganz normal."
+   }
+  },
+  {
+   "id": "ct-NO-03",
+   "category": "conversation",
+   "text": {
+    "en": "Small talk with strangers is less common than in many countries, and comfortable silence is normal, not a sign of unfriendliness.",
+    "it": "Fare chiacchiere con gli sconosciuti è meno comune che in molti altri paesi, e un silenzio tranquillo è normale, non è segno di freddezza.",
+    "es": "Charlar con desconocidos es menos habitual que en muchos países, y el silencio cómodo es normal, no una señal de frialdad.",
+    "pt": "Conversar com desconhecidos é menos comum do que em muitos países, e o silêncio confortável é normal, não sinal de frieza.",
+    "pt_BR": "Bater papo com desconhecidos é menos comum do que em muitos países, e o silêncio confortável é normal, não sinal de frieza.",
+    "fr": "Faire la conversation avec des inconnus est moins courant que dans beaucoup de pays, et un silence confortable est normal, pas un signe de froideur.",
+    "de": "Smalltalk mit Fremden ist weniger verbreitet als in vielen anderen Ländern, und angenehmes Schweigen ist normal und kein Zeichen von Unfreundlichkeit."
+   }
+  },
+  {
+   "id": "ct-NO-04",
+   "category": "conversation",
+   "text": {
+    "en": "Hiking, skiing and weekend trips outdoors are easy topics. Many Norwegians enjoy sharing their favourite trails and viewpoints.",
+    "it": "Escursioni, sci e gite nella natura sono argomenti facili. A molti norvegesi piace condividere i loro sentieri e punti panoramici preferiti.",
+    "es": "Las excursiones, el esquí y las escapadas al aire libre son temas fáciles. A muchos noruegos les gusta compartir sus rutas y miradores favoritos.",
+    "pt": "Caminhadas, esqui e escapadas ao ar livre são temas fáceis. Muitos noruegueses gostam de partilhar os seus trilhos e miradouros preferidos.",
+    "pt_BR": "Caminhadas, esqui e passeios ao ar livre são assuntos fáceis. Muitos noruegueses gostam de compartilhar suas trilhas e mirantes favoritos.",
+    "fr": "Randonnée, ski et escapades en plein air sont des sujets faciles. Beaucoup de Norvégiens aiment partager leurs sentiers et points de vue préférés.",
+    "de": "Wandern, Skifahren und Ausflüge in die Natur sind leichte Gesprächsthemen. Viele Norweger erzählen gern von ihren Lieblingswegen und Aussichtspunkten."
+   }
+  },
+  {
+   "id": "ct-NO-05",
+   "category": "dining",
+   "text": {
+    "en": "Many people eat a simple packed lunch, often open sandwiches (smørbrød), at work or school. A big hot lunch is not the norm.",
+    "it": "Molti mangiano un pranzo al sacco semplice, spesso panini aperti (smørbrød), al lavoro o a scuola. Un grande pranzo caldo non è la norma.",
+    "es": "Muchas personas comen un almuerzo sencillo que llevan de casa, a menudo bocadillos abiertos (smørbrød), en el trabajo o el colegio. Una comida caliente abundante no es lo habitual.",
+    "pt": "Muita gente almoça uma refeição simples levada de casa, muitas vezes sanduíches abertas (smørbrød), no trabalho ou na escola. Um grande almoço quente não é a norma.",
+    "pt_BR": "Muita gente almoça uma refeição simples levada de casa, geralmente sanduíches abertos (smørbrød), no trabalho ou na escola. Um grande almoço quente não é a norma.",
+    "fr": "Beaucoup de gens mangent un déjeuner simple apporté de la maison, souvent des tartines ouvertes (smørbrød), au travail ou à l'école. Un grand repas chaud n'est pas la norme.",
+    "de": "Viele essen mittags eine einfache mitgebrachte Mahlzeit, oft belegte Brote (smørbrød), bei der Arbeit oder in der Schule. Ein üppiges warmes Mittagessen ist nicht die Regel."
+   }
+  },
+  {
+   "id": "ct-NO-06",
+   "category": "dining",
+   "text": {
+    "en": "Dinner is often eaten earlier than in southern Europe, so check the time when you are invited to someone's home.",
+    "it": "La cena si consuma spesso prima che nel sud Europa, quindi controlla l'orario quando sei invitato a casa di qualcuno.",
+    "es": "La cena suele ser más temprano que en el sur de Europa, así que confirma la hora cuando te inviten a casa de alguien.",
+    "pt": "O jantar costuma ser mais cedo do que no sul da Europa, por isso confirma a hora quando fores convidado para casa de alguém.",
+    "pt_BR": "O jantar costuma ser mais cedo do que no sul da Europa, então confirme o horário quando for convidado para a casa de alguém.",
+    "fr": "Le dîner se prend souvent plus tôt que dans le sud de l'Europe : vérifie l'heure quand on t'invite chez quelqu'un.",
+    "de": "Das Abendessen findet oft früher statt als in Südeuropa. Frag also nach der Uhrzeit, wenn du zu jemandem nach Hause eingeladen bist."
+   }
+  },
+  {
+   "id": "ct-NO-07",
+   "category": "dining",
+   "text": {
+    "en": "After a meal at someone's home, it is polite to say 'takk for maten' (thanks for the food) to your host.",
+    "it": "Dopo un pasto a casa di qualcuno è educato dire 'takk for maten' (grazie per il cibo) a chi ti ha invitato.",
+    "es": "Tras una comida en casa de alguien, es educado decir 'takk for maten' (gracias por la comida) al anfitrión.",
+    "pt": "Depois de uma refeição em casa de alguém, é educado dizer 'takk for maten' (obrigado pela comida) ao anfitrião.",
+    "pt_BR": "Depois de uma refeição na casa de alguém, é educado dizer 'takk for maten' (obrigado pela comida) ao anfitrião.",
+    "fr": "Après un repas chez quelqu'un, il est poli de dire 'takk for maten' (merci pour le repas) à son hôte.",
+    "de": "Nach einem Essen bei jemandem zu Hause ist es höflich, dem Gastgeber 'takk for maten' (danke für das Essen) zu sagen."
+   }
+  },
+  {
+   "id": "ct-NO-08",
+   "category": "tipping",
+   "text": {
+    "en": "Service is included in prices, so tipping is not required. Rounding up or leaving about 5-10% for good service in a restaurant is appreciated.",
+    "it": "Il servizio è incluso nei prezzi, quindi la mancia non è obbligatoria. Arrotondare o lasciare il 5-10% per un buon servizio al ristorante è gradito.",
+    "es": "El servicio está incluido en los precios, así que la propina no es obligatoria. Redondear o dejar un 5-10 % por un buen servicio en un restaurante se agradece.",
+    "pt": "O serviço está incluído nos preços, por isso a gorjeta não é obrigatória. Arredondar ou deixar 5-10% por um bom serviço num restaurante é apreciado.",
+    "pt_BR": "O serviço está incluído nos preços, então a gorjeta não é obrigatória. Arredondar ou deixar de 5 a 10% por um bom atendimento em um restaurante é apreciado.",
+    "fr": "Le service est inclus dans les prix, le pourboire n'est donc pas obligatoire. Arrondir ou laisser 5 à 10 % pour un bon service au restaurant est apprécié.",
+    "de": "Der Service ist im Preis enthalten, Trinkgeld ist also nicht Pflicht. Aufrunden oder 5-10 % für guten Service im Restaurant wird gern gesehen."
+   }
+  },
+  {
+   "id": "ct-NO-09",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to someone's home, a small gift such as flowers, chocolate or something from your own country is welcome.",
+    "it": "Quando sei invitato a casa di qualcuno, un piccolo regalo come fiori, cioccolato o qualcosa del tuo paese è gradito.",
+    "es": "Cuando te invitan a casa de alguien, un pequeño regalo como flores, chocolate o algo de tu país es bien recibido.",
+    "pt": "Quando és convidado para casa de alguém, uma pequena lembrança como flores, chocolate ou algo do teu país é bem-vinda.",
+    "pt_BR": "Quando você é convidado para a casa de alguém, um pequeno presente como flores, chocolate ou algo do seu país é bem-vindo.",
+    "fr": "Lorsqu'on t'invite chez quelqu'un, un petit cadeau comme des fleurs, du chocolat ou quelque chose de ton pays est le bienvenu.",
+    "de": "Wenn du zu jemandem nach Hause eingeladen bist, sind kleine Mitbringsel wie Blumen, Schokolade oder etwas aus deiner Heimat willkommen."
+   }
+  },
+  {
+   "id": "ct-NO-10",
+   "category": "dress",
+   "text": {
+    "en": "Practical, layered clothing is the norm because the weather changes quickly. Outdoor jackets and sturdy shoes are fine in most everyday places.",
+    "it": "L'abbigliamento pratico a strati è la norma perché il tempo cambia in fretta. Giacche da outdoor e scarpe robuste vanno bene quasi ovunque.",
+    "es": "La ropa práctica y por capas es lo normal porque el tiempo cambia rápido. Las chaquetas de montaña y el calzado resistente sirven en casi cualquier sitio.",
+    "pt": "A roupa prática e em camadas é a norma, porque o tempo muda depressa. Casacos de montanha e sapatos resistentes servem em quase todo o lado.",
+    "pt_BR": "Roupas práticas e em camadas são a norma, porque o tempo muda rápido. Jaquetas de trilha e calçados resistentes servem em quase qualquer lugar.",
+    "fr": "Les vêtements pratiques et superposables sont la norme, car le temps change vite. Les vestes d'extérieur et les chaussures solides conviennent presque partout.",
+    "de": "Praktische Kleidung im Zwiebellook ist normal, weil das Wetter schnell umschlägt. Outdoorjacken und feste Schuhe sind fast überall in Ordnung."
+   }
+  },
+  {
+   "id": "ct-NO-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Historic churches, including old wooden stave churches, welcome visitors. Keep your voice low and ask before taking photos inside.",
+    "it": "Le chiese storiche, comprese le antiche chiese di legno (stavkirke), accolgono i visitatori. Parla a bassa voce e chiedi prima di fare foto all'interno.",
+    "es": "Las iglesias históricas, incluidas las antiguas iglesias de madera (stavkirke), reciben visitantes. Habla en voz baja y pregunta antes de hacer fotos dentro.",
+    "pt": "As igrejas históricas, incluindo as antigas igrejas de madeira (stavkirke), recebem visitantes. Fala baixo e pergunta antes de tirar fotografias no interior.",
+    "pt_BR": "As igrejas históricas, incluindo as antigas igrejas de madeira (stavkirke), recebem visitantes. Fale baixo e pergunte antes de tirar fotos lá dentro.",
+    "fr": "Les églises historiques, dont les anciennes églises en bois debout (stavkirke), accueillent les visiteurs. Parle à voix basse et demande avant de photographier à l'intérieur.",
+    "de": "Historische Kirchen, auch die alten Stabkirchen aus Holz, stehen Besuchern offen. Sprich leise und frag nach, bevor du drinnen fotografierst."
+   }
+  },
+  {
+   "id": "ct-NO-12",
+   "category": "gestures",
+   "text": {
+    "en": "Norwegians tend to use few hand gestures and value personal space. Standing at a comfortable distance in a queue is normal.",
+    "it": "I norvegesi tendono a gesticolare poco e danno valore allo spazio personale. In coda è normale mantenere una distanza confortevole.",
+    "es": "Los noruegos suelen gesticular poco y valoran el espacio personal. En una cola es normal mantener una distancia cómoda.",
+    "pt": "Os noruegueses tendem a gesticular pouco e valorizam o espaço pessoal. Numa fila é normal manter uma distância confortável.",
+    "pt_BR": "Os noruegueses tendem a gesticular pouco e valorizam o espaço pessoal. Em uma fila é normal manter uma distância confortável.",
+    "fr": "Les Norvégiens gesticulent peu et tiennent à leur espace personnel. Dans une file d'attente, il est normal de garder une distance confortable.",
+    "de": "Norweger gestikulieren eher wenig und schätzen persönlichen Freiraum. In einer Schlange hält man ganz selbstverständlich angenehmen Abstand."
+   }
+  },
+  {
+   "id": "ct-NO-13",
+   "category": "punctuality",
+   "text": {
+    "en": "Being on time is expected for meetings, dinners and appointments. If you are going to be late, send a message to let people know.",
+    "it": "La puntualità è attesa per riunioni, cene e appuntamenti. Se stai per fare tardi, manda un messaggio per avvisare.",
+    "es": "Se espera puntualidad en reuniones, cenas y citas. Si vas a llegar tarde, avisa con un mensaje.",
+    "pt": "Espera-se pontualidade em reuniões, jantares e compromissos. Se fores chegar atrasado, avisa com uma mensagem.",
+    "pt_BR": "Espera-se pontualidade em reuniões, jantares e compromissos. Se for se atrasar, avise com uma mensagem.",
+    "fr": "La ponctualité est attendue pour les réunions, les dîners et les rendez-vous. Si tu vas être en retard, envoie un message pour prévenir.",
+    "de": "Pünktlichkeit wird bei Treffen, Abendessen und Terminen erwartet. Wenn du dich verspätest, gib kurz per Nachricht Bescheid."
+   }
+  },
+  {
+   "id": "ct-NO-14",
+   "category": "public_behavior",
+   "text": {
+    "en": "Take your shoes off when you enter someone's home. Many hosts have a spot by the door, and guests often bring clean indoor socks.",
+    "it": "Togliti le scarpe quando entri in casa di qualcuno. Molti padroni di casa hanno un angolo vicino alla porta, e gli ospiti spesso portano calzini puliti.",
+    "es": "Quítate los zapatos al entrar en casa de alguien. Muchos anfitriones tienen un sitio junto a la puerta, y a menudo los invitados llevan calcetines limpios.",
+    "pt": "Tira os sapatos ao entrar em casa de alguém. Muitos anfitriões têm um canto junto à porta, e os convidados levam muitas vezes meias limpas.",
+    "pt_BR": "Tire os sapatos ao entrar na casa de alguém. Muitos anfitriões têm um cantinho perto da porta, e os convidados costumam levar meias limpas.",
+    "fr": "Retire tes chaussures en entrant chez quelqu'un. Beaucoup d'hôtes ont un coin près de la porte, et les invités apportent souvent des chaussettes propres.",
+    "de": "Zieh die Schuhe aus, wenn du eine Wohnung betrittst. Viele Gastgeber haben dafür eine Ecke an der Tür, und Gäste bringen oft saubere Socken mit."
+   }
+  },
+  {
+   "id": "ct-NO-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "In shops, pharmacies and public offices, wait for your turn and respect the queue or take a number if there is a ticket machine.",
+    "it": "Nei negozi, in farmacia e negli uffici pubblici aspetta il tuo turno e rispetta la fila oppure prendi il numero se c'è il distributore di biglietti.",
+    "es": "En tiendas, farmacias y oficinas públicas espera tu turno y respeta la cola, o coge número si hay máquina de turnos.",
+    "pt": "Em lojas, farmácias e serviços públicos espera pela tua vez e respeita a fila, ou tira senha se houver máquina.",
+    "pt_BR": "Em lojas, farmácias e repartições públicas espere a sua vez e respeite a fila, ou retire uma senha se houver máquina.",
+    "fr": "Dans les magasins, les pharmacies et les administrations, attends ton tour et respecte la file, ou prends un ticket s'il y a un distributeur.",
+    "de": "In Geschäften, Apotheken und Ämtern wartest du, bis du dran bist, und hältst dich an die Schlange, oder du ziehst eine Nummer, falls es einen Automaten gibt."
+   }
+  },
+  {
+   "id": "ct-NO-16",
+   "category": "transport",
+   "text": {
+    "en": "Ferries are part of everyday transport along the coast and fjords. Check timetables in advance, especially outside the busy season.",
+    "it": "I traghetti fanno parte dei trasporti quotidiani lungo la costa e i fiordi. Controlla gli orari in anticipo, soprattutto fuori stagione.",
+    "es": "Los ferris forman parte del transporte diario a lo largo de la costa y los fiordos. Consulta los horarios con antelación, sobre todo fuera de temporada.",
+    "pt": "Os ferries fazem parte do transporte diário ao longo da costa e dos fiordes. Consulta os horários com antecedência, sobretudo fora da época alta.",
+    "pt_BR": "As balsas fazem parte do transporte diário ao longo da costa e dos fiordes. Consulte os horários com antecedência, principalmente fora da alta temporada.",
+    "fr": "Les ferries font partie du quotidien le long de la côte et des fjords. Vérifie les horaires à l'avance, surtout hors saison.",
+    "de": "Fähren gehören entlang der Küste und der Fjorde zum Alltag. Informiere dich vorher über die Fahrpläne, besonders außerhalb der Hauptsaison."
+   }
+  },
+  {
+   "id": "ct-NO-17",
+   "category": "language",
+   "text": {
+    "en": "Norwegian has two written standards, bokmål and nynorsk. Sami languages are also spoken in the north.",
+    "it": "Il norvegese ha due standard scritti, il bokmål e il nynorsk. Nel nord si parlano anche le lingue sami.",
+    "es": "El noruego tiene dos estándares escritos, el bokmål y el nynorsk. En el norte también se hablan lenguas sami.",
+    "pt": "O norueguês tem duas normas escritas, o bokmål e o nynorsk. No norte falam-se também línguas sami.",
+    "pt_BR": "O norueguês tem dois padrões escritos, o bokmål e o nynorsk. No norte também se falam línguas sámi.",
+    "fr": "Le norvégien a deux normes écrites, le bokmål et le nynorsk. Dans le nord, on parle aussi des langues sames.",
+    "de": "Norwegisch hat zwei Schriftstandards, Bokmål und Nynorsk. Im Norden werden außerdem samische Sprachen gesprochen."
+   }
+  },
+  {
+   "id": "ct-NO-18",
+   "category": "language",
+   "text": {
+    "en": "Most Norwegians speak very good English, but a few words like 'hei' and 'takk' (thanks) are always appreciated.",
+    "it": "La maggior parte dei norvegesi parla molto bene l'inglese, ma qualche parola come 'hei' e 'takk' (grazie) è sempre apprezzata.",
+    "es": "La mayoría de los noruegos habla muy bien inglés, pero unas pocas palabras como 'hei' y 'takk' (gracias) siempre se agradecen.",
+    "pt": "A maioria dos noruegueses fala muito bem inglês, mas umas quantas palavras como 'hei' e 'takk' (obrigado) são sempre apreciadas.",
+    "pt_BR": "A maioria dos noruegueses fala muito bem inglês, mas algumas palavras como 'hei' e 'takk' (obrigado) são sempre apreciadas.",
+    "fr": "La plupart des Norvégiens parlent très bien anglais, mais quelques mots comme 'hei' et 'takk' (merci) sont toujours appréciés.",
+    "de": "Die meisten Norweger sprechen sehr gut Englisch, aber ein paar Wörter wie 'hei' und 'takk' (danke) kommen immer gut an."
+   }
+  },
+  {
+   "id": "ct-NO-19",
+   "category": "festivals",
+   "text": {
+    "en": "On 17 May, Constitution Day, many people wear the traditional bunad and watch or join the children's parades in towns and cities.",
+    "it": "Il 17 maggio, Giorno della Costituzione, molti indossano il bunad tradizionale e guardano o partecipano alle sfilate dei bambini in città e paesi.",
+    "es": "El 17 de mayo, Día de la Constitución, muchas personas visten el bunad tradicional y ven o participan en los desfiles infantiles de pueblos y ciudades.",
+    "pt": "A 17 de maio, Dia da Constituição, muitas pessoas vestem o bunad tradicional e assistem ou participam nos desfiles de crianças nas cidades e vilas.",
+    "pt_BR": "Em 17 de maio, Dia da Constituição, muitas pessoas vestem o bunad tradicional e assistem ou participam dos desfiles de crianças nas cidades.",
+    "fr": "Le 17 mai, jour de la Constitution, beaucoup de gens portent le bunad traditionnel et regardent ou rejoignent les défilés d'enfants dans les villes et villages.",
+    "de": "Am 17. Mai, dem Verfassungstag, tragen viele die traditionelle Tracht Bunad und sehen den Kinderumzügen in Städten und Dörfern zu oder machen mit."
+   }
+  },
+  {
+   "id": "ct-NO-20",
+   "category": "festivals",
+   "text": {
+    "en": "Christmas (jul) and Easter (påske) are the most important Christian holidays. Lefse, a soft flatbread, is a common treat around Christmas.",
+    "it": "Natale (jul) e Pasqua (påske) sono le feste cristiane più importanti. La lefse, una morbida focaccia piatta, è un dolce tipico del periodo natalizio.",
+    "es": "La Navidad (jul) y la Pascua (påske) son las fiestas cristianas más importantes. La lefse, un pan plano blando, es un manjar típico en Navidad.",
+    "pt": "O Natal (jul) e a Páscoa (påske) são as festas cristãs mais importantes. A lefse, um pão achatado macio, é uma iguaria típica do Natal.",
+    "pt_BR": "O Natal (jul) e a Páscoa (påske) são as festas cristãs mais importantes. A lefse, um pão achatado macio, é uma iguaria típica do Natal.",
+    "fr": "Noël (jul) et Pâques (påske) sont les fêtes chrétiennes les plus importantes. La lefse, une galette souple, est une gourmandise courante à Noël.",
+    "de": "Weihnachten (jul) und Ostern (påske) sind die wichtigsten christlichen Feiertage. Lefse, ein weiches Fladenbrot, ist rund um Weihnachten ein beliebter Leckerbissen."
+   }
+  },
+  {
+   "id": "ct-NO-21",
+   "category": "family",
+   "text": {
+    "en": "Shared parental leave is common, and many fathers take an active part in childcare, so it is normal to hear dads talk about their kids.",
+    "it": "Il congedo parentale condiviso è comune e molti padri partecipano attivamente alla cura dei figli, quindi è normale sentire i papà parlare dei loro bambini.",
+    "es": "El permiso parental compartido es habitual y muchos padres participan activamente en el cuidado de los hijos, así que es normal oír a los padres hablar de sus peques.",
+    "pt": "A licença parental partilhada é comum e muitos pais participam ativamente nos cuidados com os filhos, por isso é normal ouvir os pais falarem dos seus filhos.",
+    "pt_BR": "A licença parental compartilhada é comum e muitos pais participam ativamente dos cuidados com os filhos, então é normal ouvir os pais falando dos seus filhos.",
+    "fr": "Le congé parental partagé est courant et beaucoup de pères s'impliquent dans la garde des enfants : il est normal d'entendre les papas parler de leurs petits.",
+    "de": "Geteilte Elternzeit ist üblich, und viele Väter kümmern sich aktiv um die Kinder. Es ist also normal, Väter über ihren Nachwuchs sprechen zu hören."
+   }
+  },
+  {
+   "id": "ct-NO-22",
+   "category": "money",
+   "text": {
+    "en": "Norway uses the krone (NOK). Cards and mobile payments are accepted almost everywhere, even for small amounts, so you rarely need cash.",
+    "it": "In Norvegia si usa la corona (NOK). Carte e pagamenti da smartphone sono accettati quasi ovunque, anche per piccole cifre, quindi il contante serve di rado.",
+    "es": "Noruega usa la corona (NOK). Las tarjetas y los pagos con el móvil se aceptan casi en todas partes, incluso para importes pequeños, así que rara vez hace falta efectivo.",
+    "pt": "A Noruega usa a coroa (NOK). Os cartões e os pagamentos por telemóvel são aceites quase em todo o lado, mesmo para pequenos valores, por isso raramente é preciso dinheiro vivo.",
+    "pt_BR": "A Noruega usa a coroa (NOK). Cartões e pagamentos por celular são aceitos quase em todo lugar, até para valores pequenos, então raramente é preciso dinheiro em espécie.",
+    "fr": "La Norvège utilise la couronne (NOK). Les cartes et les paiements mobiles sont acceptés presque partout, même pour de petits montants : on a rarement besoin d'espèces.",
+    "de": "In Norwegen zahlt man mit der Krone (NOK). Karten und mobiles Bezahlen werden fast überall akzeptiert, selbst für kleine Beträge, Bargeld braucht man selten."
+   }
+  },
+  {
+   "id": "ct-NO-23",
+   "category": "photography",
+   "text": {
+    "en": "Ask before photographing people, especially children, and respect privacy at private cabins and homes along scenic routes.",
+    "it": "Chiedi prima di fotografare le persone, soprattutto i bambini, e rispetta la privacy di case e cabine private lungo i percorsi panoramici.",
+    "es": "Pregunta antes de fotografiar a personas, sobre todo a niños, y respeta la privacidad de las casas y cabañas particulares en las rutas panorámicas.",
+    "pt": "Pergunta antes de fotografar pessoas, sobretudo crianças, e respeita a privacidade de casas e cabanas particulares nos percursos panorâmicos.",
+    "pt_BR": "Pergunte antes de fotografar pessoas, principalmente crianças, e respeite a privacidade de casas e cabanas particulares nos trajetos panorâmicos.",
+    "fr": "Demande avant de photographier des personnes, surtout des enfants, et respecte la vie privée des maisons et chalets privés le long des routes panoramiques.",
+    "de": "Frag nach, bevor du Menschen, besonders Kinder, fotografierst, und respektiere die Privatsphäre von Wohnhäusern und Hütten an Aussichtsstrecken."
+   }
+  },
+  {
+   "id": "ct-NO-24",
+   "category": "nightlife",
+   "text": {
+    "en": "Evenings out are often relaxed: cafés, concerts and gatherings at home are popular, and bars can be pricey.",
+    "it": "Le serate fuori sono spesso rilassate: caffè, concerti e incontri a casa sono molto diffusi, e i locali possono essere cari.",
+    "es": "Las salidas nocturnas suelen ser tranquilas: cafés, conciertos y reuniones en casa son muy populares, y los bares pueden ser caros.",
+    "pt": "As saídas à noite costumam ser descontraídas: cafés, concertos e encontros em casa são populares, e os bares podem ser caros.",
+    "pt_BR": "As saídas à noite costumam ser descontraídas: cafés, shows e encontros em casa são populares, e os bares podem ser caros.",
+    "fr": "Les soirées sont souvent détendues : cafés, concerts et réunions à la maison sont très appréciés, et les bars peuvent être chers.",
+    "de": "Abende verlaufen oft entspannt: Cafés, Konzerte und Treffen zu Hause sind beliebt, und Bars können teuer sein."
+   }
+  },
+  {
+   "id": "ct-NO-25",
+   "category": "nature",
+   "text": {
+    "en": "Under the right to roam (allemannsretten), you can walk in uncultivated land, but you must respect nature, keep a distance from homes and take your litter with you.",
+    "it": "Grazie al diritto di accesso alla natura (allemannsretten) si può camminare nei terreni non coltivati, ma occorre rispettare la natura, stare lontani dalle case e portare via i rifiuti.",
+    "es": "Gracias al derecho de acceso a la naturaleza (allemannsretten) se puede caminar por terrenos sin cultivar, pero hay que respetar el entorno, mantener distancia de las casas y llevarse la basura.",
+    "pt": "Graças ao direito de acesso à natureza (allemannsretten) pode-se caminhar em terrenos não cultivados, mas é preciso respeitar a natureza, manter distância das casas e levar o lixo.",
+    "pt_BR": "Graças ao direito de acesso à natureza (allemannsretten) é possível caminhar em terrenos não cultivados, mas é preciso respeitar a natureza, manter distância das casas e levar o lixo embora.",
+    "fr": "Grâce au droit d'accès à la nature (allemannsretten), on peut marcher sur les terrains non cultivés, mais il faut respecter la nature, rester loin des maisons et emporter ses déchets.",
+    "de": "Dank des Jedermannsrechts (allemannsretten) darf man unbebautes Land betreten, muss aber die Natur respektieren, Abstand zu Häusern halten und den Müll mitnehmen."
+   }
+  },
+  {
+   "id": "ct-NO-26",
+   "category": "nature",
+   "text": {
+    "en": "Many Norwegians own ski equipment and spend weekends hiking or skiing. Ask a local about favourite trails and you may get a great tip.",
+    "it": "Molti norvegesi possiedono attrezzatura da sci e trascorrono i fine settimana tra escursioni e sci. Chiedi a un locale i suoi sentieri preferiti e potresti ricevere un ottimo consiglio.",
+    "es": "Muchos noruegos tienen equipo de esquí y pasan los fines de semana de excursión o esquiando. Pregunta a un local por sus rutas favoritas y quizá te dé un buen consejo.",
+    "pt": "Muitos noruegueses têm equipamento de esqui e passam os fins de semana a caminhar ou a esquiar. Pergunta a um local pelos seus trilhos favoritos e talvez recebas uma ótima dica.",
+    "pt_BR": "Muitos noruegueses têm equipamento de esqui e passam os fins de semana fazendo trilhas ou esquiando. Pergunte a um local sobre as trilhas favoritas e talvez ganhe uma ótima dica.",
+    "fr": "Beaucoup de Norvégiens possèdent du matériel de ski et passent leurs week-ends à randonner ou à skier. Demande à un habitant ses sentiers préférés : tu auras peut-être un excellent conseil.",
+    "de": "Viele Norweger besitzen Skiausrüstung und verbringen Wochenenden mit Wandern oder Skifahren. Frag Einheimische nach ihren Lieblingswegen, vielleicht bekommst du einen guten Tipp."
+   }
+  },
+  {
+   "id": "ct-NO-27",
+   "category": "safety",
+   "text": {
+    "en": "Mountain weather can change fast. Check the forecast, tell someone your route and bring warm layers even for a short hike.",
+    "it": "Il tempo in montagna può cambiare in fretta. Controlla le previsioni, avvisa qualcuno del tuo percorso e porta strati caldi anche per una breve escursione.",
+    "es": "El tiempo en la montaña puede cambiar rápido. Consulta la previsión, avisa a alguien de tu ruta y lleva ropa de abrigo incluso en una excursión corta.",
+    "pt": "O tempo na montanha pode mudar depressa. Consulta a previsão, avisa alguém do teu percurso e leva roupa quente mesmo numa caminhada curta.",
+    "pt_BR": "O tempo na montanha pode mudar rápido. Confira a previsão, avise alguém sobre o seu trajeto e leve roupas quentes mesmo em uma caminhada curta.",
+    "fr": "Le temps en montagne peut changer vite. Consulte la météo, indique ton itinéraire à quelqu'un et emporte des couches chaudes même pour une courte randonnée.",
+    "de": "Das Wetter in den Bergen kann schnell umschlagen. Prüfe die Vorhersage, sag jemandem, wohin du gehst, und nimm auch für kurze Wanderungen warme Kleidung mit."
+   }
+  },
+  {
+   "id": "ct-NO-28",
+   "category": "safety",
+   "text": {
+    "en": "The emergency numbers are 112 for police, 113 for medical emergencies and 110 for fire. Mountain rescue is organised through the police.",
+    "it": "I numeri di emergenza sono 112 per la polizia, 113 per le emergenze mediche e 110 per i vigili del fuoco. Il soccorso alpino passa attraverso la polizia.",
+    "es": "Los números de emergencia son el 112 para la policía, el 113 para urgencias médicas y el 110 para bomberos. El rescate en montaña se organiza a través de la policía.",
+    "pt": "Os números de emergência são o 112 para a polícia, o 113 para emergências médicas e o 110 para os bombeiros. O salvamento em montanha é organizado através da polícia.",
+    "pt_BR": "Os números de emergência são 112 para a polícia, 113 para emergências médicas e 110 para os bombeiros. O resgate na montanha é organizado pela polícia.",
+    "fr": "Les numéros d'urgence sont le 112 pour la police, le 113 pour les urgences médicales et le 110 pour les pompiers. Le secours en montagne passe par la police.",
+    "de": "Die Notrufnummern lauten 112 für die Polizei, 113 für medizinische Notfälle und 110 für die Feuerwehr. Die Bergrettung läuft über die Polizei."
+   }
+  },
+  {
+   "id": "ct-NO-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Norwegians are proud of their landscapes, from fjords to mountains. Sincere compliments about the nature are warmly received.",
+    "it": "I norvegesi sono orgogliosi dei loro paesaggi, dai fiordi alle montagne. I complimenti sinceri sulla natura sono accolti con calore.",
+    "es": "Los noruegos están orgullosos de sus paisajes, de los fiordos a las montañas. Los cumplidos sinceros sobre la naturaleza se reciben con cariño.",
+    "pt": "Os noruegueses têm orgulho das suas paisagens, dos fiordes às montanhas. Os elogios sinceros à natureza são recebidos com carinho.",
+    "pt_BR": "Os noruegueses têm orgulho das suas paisagens, dos fiordes às montanhas. Elogios sinceros à natureza são recebidos com carinho.",
+    "fr": "Les Norvégiens sont fiers de leurs paysages, des fjords aux montagnes. Les compliments sincères sur la nature sont accueillis chaleureusement.",
+    "de": "Norweger sind stolz auf ihre Landschaften, von den Fjorden bis zu den Bergen. Aufrichtige Komplimente über die Natur kommen sehr gut an."
+   }
+  },
+  {
+   "id": "ct-NO-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Many Norwegians value modesty and equality, so bragging about wealth or achievements can come across badly.",
+    "it": "Molti norvegesi apprezzano la modestia e l'uguaglianza, quindi vantarsi di ricchezza o successi può fare una brutta impressione.",
+    "es": "Muchos noruegos valoran la modestia y la igualdad, así que presumir de dinero o de logros puede dar mala impresión.",
+    "pt": "Muitos noruegueses valorizam a modéstia e a igualdade, por isso gabar-se de riqueza ou de conquistas pode causar má impressão.",
+    "pt_BR": "Muitos noruegueses valorizam a modéstia e a igualdade, então se gabar de riqueza ou conquistas pode causar má impressão.",
+    "fr": "Beaucoup de Norvégiens valorisent la modestie et l'égalité : se vanter de sa richesse ou de ses réussites peut mal passer.",
+    "de": "Vielen Norwegern sind Bescheidenheit und Gleichheit wichtig, daher kann Prahlen mit Reichtum oder Erfolgen schlecht ankommen."
+   }
+  }
+ ],
+ "NZ": [
+  {
+   "id": "ct-NZ-01",
+   "category": "greetings",
+   "text": {
+    "en": "A friendly 'kia ora' works as hello and thanks. People also shake hands, with eye contact and a smile.",
+    "it": "Un cordiale 'kia ora' vale sia come ciao sia come grazie. Ci si stringe anche la mano, guardandosi negli occhi e sorridendo.",
+    "es": "Un amable 'kia ora' sirve como saludo y como agradecimiento. También se da la mano, mirando a los ojos y sonriendo.",
+    "pt": "Um simpático 'kia ora' serve de olá e de obrigado. Também se aperta a mão, olhando nos olhos e sorrindo.",
+    "pt_BR": "Um simpático 'kia ora' serve como oi e como obrigado. Também se aperta a mão, olhando nos olhos e sorrindo.",
+    "fr": "Un 'kia ora' amical sert à la fois de bonjour et de merci. On se serre aussi la main, en regardant dans les yeux et en souriant.",
+    "de": "Ein freundliches 'kia ora' bedeutet sowohl Hallo als auch Danke. Man gibt sich auch die Hand, mit Blickkontakt und einem Lächeln."
+   }
+  },
+  {
+   "id": "ct-NZ-02",
+   "category": "greetings",
+   "text": {
+    "en": "The hongi, pressing noses and foreheads together, is a traditional Māori greeting. At formal events, follow your host's lead.",
+    "it": "L'hongi, in cui si premono naso e fronte l'uno contro l'altro, è un saluto tradizionale maori. Alle cerimonie formali segui l'esempio di chi ti ospita.",
+    "es": "El hongi, en el que se juntan nariz y frente, es un saludo tradicional maorí. En actos formales, sigue el ejemplo de tu anfitrión.",
+    "pt": "O hongi, em que se encostam o nariz e a testa, é uma saudação tradicional maori. Em eventos formais, segue o exemplo do anfitrião.",
+    "pt_BR": "O hongi, em que se encostam o nariz e a testa, é uma saudação tradicional maori. Em eventos formais, siga o exemplo do anfitrião.",
+    "fr": "Le hongi, où l'on presse nez et front l'un contre l'autre, est une salutation traditionnelle maorie. Lors des événements formels, suis l'exemple de ton hôte.",
+    "de": "Der Hongi, bei dem man Nase und Stirn aneinanderdrückt, ist ein traditioneller Māori-Gruß. Bei formellen Anlässen richte dich nach deinem Gastgeber."
+   }
+  },
+  {
+   "id": "ct-NZ-03",
+   "category": "conversation",
+   "text": {
+    "en": "New Zealanders are usually friendly, relaxed and direct. Travel, the outdoors and the weather are easy topics to start with.",
+    "it": "I neozelandesi sono di solito cordiali, rilassati e diretti. Viaggi, natura e meteo sono argomenti facili per iniziare.",
+    "es": "Los neozelandeses suelen ser amables, relajados y directos. Los viajes, el aire libre y el tiempo son temas fáciles para empezar.",
+    "pt": "Os neozelandeses costumam ser simpáticos, descontraídos e diretos. Viagens, natureza e meteorologia são temas fáceis para começar.",
+    "pt_BR": "Os neozelandeses costumam ser simpáticos, descontraídos e diretos. Viagens, natureza e clima são assuntos fáceis para começar.",
+    "fr": "Les Néo-Zélandais sont généralement chaleureux, détendus et directs. Les voyages, la nature et la météo sont des sujets faciles pour commencer.",
+    "de": "Neuseeländer sind meist freundlich, entspannt und direkt. Reisen, Natur und Wetter sind leichte Einstiegsthemen."
+   }
+  },
+  {
+   "id": "ct-NZ-04",
+   "category": "conversation",
+   "text": {
+    "en": "Equality is valued, so showing off is frowned upon. Being humble about your achievements goes down well.",
+    "it": "L'uguaglianza è un valore, quindi mettersi in mostra non è ben visto. Restare umili riguardo ai propri successi viene apprezzato.",
+    "es": "Se valora la igualdad, así que presumir está mal visto. Ser humilde con tus logros cae bien.",
+    "pt": "A igualdade é valorizada, por isso exibir-se é mal visto. Ser humilde quanto às tuas conquistas é bem recebido.",
+    "pt_BR": "A igualdade é valorizada, então se exibir é malvisto. Ser humilde com as suas conquistas cai bem.",
+    "fr": "L'égalité est une valeur importante, donc se mettre en avant est mal vu. Rester humble à propos de ses réussites est apprécié.",
+    "de": "Gleichheit hat einen hohen Stellenwert, deshalb wirkt Angeberei unangenehm. Bescheidenheit bei eigenen Erfolgen kommt gut an."
+   }
+  },
+  {
+   "id": "ct-NZ-05",
+   "category": "dining",
+   "text": {
+    "en": "If a host says 'bring a plate', they mean a dish of food to share, not an empty plate. Barbecues are a classic way to socialise.",
+    "it": "Se chi ti invita dice 'bring a plate', intende un piatto di cibo da condividere, non un piatto vuoto. I barbecue sono un classico modo di ritrovarsi.",
+    "es": "Si el anfitrión dice 'bring a plate', se refiere a un plato de comida para compartir, no a un plato vacío. Las barbacoas son una forma clásica de reunirse.",
+    "pt": "Se o anfitrião disser 'bring a plate', quer dizer um prato de comida para partilhar, não um prato vazio. Os churrascos são uma forma clássica de convívio.",
+    "pt_BR": "Se o anfitrião disser 'bring a plate', quer dizer um prato de comida para compartilhar, não um prato vazio. Churrascos são um jeito clássico de reunir as pessoas.",
+    "fr": "Si l'hôte dit 'bring a plate', il veut dire un plat à partager, pas une assiette vide. Les barbecues sont une façon classique de se retrouver.",
+    "de": "Wenn der Gastgeber 'bring a plate' sagt, meint er ein Gericht zum Teilen, keinen leeren Teller. Grillabende sind ein klassischer Treffpunkt."
+   }
+  },
+  {
+   "id": "ct-NZ-06",
+   "category": "dining",
+   "text": {
+    "en": "A hāngī is a traditional Māori meal cooked in an earth oven. If you are invited to one, accept gratefully and wait for the host to begin.",
+    "it": "L'hāngī è un pasto tradizionale maori cotto in un forno di terra. Se sei invitato, accetta con gratitudine e aspetta che chi ospita inizi.",
+    "es": "El hāngī es una comida tradicional maorí cocinada en un horno de tierra. Si te invitan a uno, acepta con gratitud y espera a que el anfitrión empiece.",
+    "pt": "O hāngī é uma refeição tradicional maori cozinhada num forno de terra. Se fores convidado, aceita com gratidão e espera que o anfitrião comece.",
+    "pt_BR": "O hāngī é uma refeição tradicional maori cozida em um forno de terra. Se for convidado, aceite com gratidão e espere o anfitrião começar.",
+    "fr": "Le hāngī est un repas traditionnel maori cuit dans un four en terre. Si on t'invite, accepte avec gratitude et attends que l'hôte commence.",
+    "de": "Ein Hāngī ist ein traditionelles Māori-Essen aus dem Erdofen. Wenn du eingeladen wirst, nimm dankbar an und warte, bis der Gastgeber beginnt."
+   }
+  },
+  {
+   "id": "ct-NZ-07",
+   "category": "dining",
+   "text": {
+    "en": "Coffee culture is strong, and a flat white is a local favourite. Cafés are common places to meet new people.",
+    "it": "La cultura del caffè è forte e il flat white è uno dei preferiti locali. I caffè sono luoghi comuni per conoscere nuove persone.",
+    "es": "La cultura del café es fuerte y el flat white es uno de los favoritos locales. Las cafeterías son sitios habituales para conocer gente nueva.",
+    "pt": "A cultura do café é forte e o flat white é um dos preferidos locais. Os cafés são sítios comuns para conhecer pessoas novas.",
+    "pt_BR": "A cultura do café é forte e o flat white é um dos preferidos locais. Cafés são lugares comuns para conhecer gente nova.",
+    "fr": "La culture du café est forte, et le flat white est un favori local. Les cafés sont des lieux courants pour rencontrer de nouvelles personnes.",
+    "de": "Die Kaffeekultur ist ausgeprägt, und der Flat White ist ein lokaler Favorit. Cafés sind gängige Orte, um neue Leute kennenzulernen."
+   }
+  },
+  {
+   "id": "ct-NZ-08",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping is not expected, as wages and service are included in prices. Rounding up for great service is welcome but optional.",
+    "it": "La mancia non è attesa, perché stipendi e servizio sono inclusi nei prezzi. Arrotondare per un servizio eccellente è gradito ma facoltativo.",
+    "es": "No se espera propina, porque los salarios y el servicio están incluidos en los precios. Redondear por un servicio excelente se agradece, pero es opcional.",
+    "pt": "Não se espera gorjeta, porque os salários e o serviço estão incluídos nos preços. Arredondar por um serviço excelente é bem-vindo, mas opcional.",
+    "pt_BR": "Não se espera gorjeta, porque salários e serviço estão incluídos nos preços. Arredondar por um atendimento excelente é bem-vindo, mas opcional.",
+    "fr": "Le pourboire n'est pas attendu, car les salaires et le service sont inclus dans les prix. Arrondir pour un service remarquable est bienvenu mais facultatif.",
+    "de": "Trinkgeld wird nicht erwartet, da Löhne und Service im Preis enthalten sind. Aufrunden bei hervorragendem Service ist willkommen, aber freiwillig."
+   }
+  },
+  {
+   "id": "ct-NZ-09",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to a home, bring a small gift such as chocolate, flowers or something from your own country.",
+    "it": "Quando sei invitato a casa di qualcuno, porta un piccolo regalo come cioccolato, fiori o qualcosa del tuo paese.",
+    "es": "Cuando te invitan a una casa, lleva un pequeño regalo como chocolate, flores o algo de tu país.",
+    "pt": "Quando fores convidado para casa de alguém, leva uma pequena lembrança, como chocolate, flores ou algo do teu país.",
+    "pt_BR": "Quando for convidado para a casa de alguém, leve um pequeno presente, como chocolate, flores ou algo do seu país.",
+    "fr": "Quand on t'invite chez quelqu'un, apporte un petit cadeau comme du chocolat, des fleurs ou quelque chose de ton pays.",
+    "de": "Wenn du zu jemandem eingeladen bist, bring ein kleines Geschenk mit, etwa Schokolade, Blumen oder etwas aus deiner Heimat."
+   }
+  },
+  {
+   "id": "ct-NZ-10",
+   "category": "gifts",
+   "text": {
+    "en": "Visitors to a marae traditionally leave a koha, a gift or donation, as a sign of respect. Ask your host how it is usually done.",
+    "it": "I visitatori di un marae lasciano tradizionalmente un koha, un dono o un'offerta, in segno di rispetto. Chiedi a chi ti ospita come si fa di solito.",
+    "es": "Los visitantes de un marae dejan tradicionalmente un koha, un regalo o donación, en señal de respeto. Pregunta a tu anfitrión cómo se suele hacer.",
+    "pt": "Os visitantes de um marae deixam tradicionalmente um koha, uma oferta ou donativo, em sinal de respeito. Pergunta ao anfitrião como se costuma fazer.",
+    "pt_BR": "Os visitantes de um marae deixam tradicionalmente um koha, uma oferta ou doação, em sinal de respeito. Pergunte ao anfitrião como isso costuma ser feito.",
+    "fr": "Les visiteurs d'un marae laissent traditionnellement un koha, un cadeau ou un don, en signe de respect. Demande à ton hôte comment cela se fait habituellement.",
+    "de": "Besucher eines Marae hinterlassen traditionell ein Koha, ein Geschenk oder eine Spende, als Zeichen des Respekts. Frag deinen Gastgeber, wie es üblicherweise gemacht wird."
+   }
+  },
+  {
+   "id": "ct-NZ-11",
+   "category": "dress",
+   "text": {
+    "en": "Casual clothing is accepted almost everywhere. Bring layers, because the weather can change quickly in a single day.",
+    "it": "L'abbigliamento informale è accettato quasi ovunque. Porta strati di vestiti, perché il tempo può cambiare rapidamente nel giro di una giornata.",
+    "es": "La ropa informal se acepta casi en todas partes. Lleva capas, porque el tiempo puede cambiar rápidamente en un mismo día.",
+    "pt": "A roupa informal é aceite quase em todo o lado. Leva camadas, porque o tempo pode mudar depressa num só dia.",
+    "pt_BR": "Roupas casuais são aceitas quase em todo lugar. Leve camadas, porque o tempo pode mudar rápido em um único dia.",
+    "fr": "Les tenues décontractées sont acceptées presque partout. Prends plusieurs couches, car le temps peut changer rapidement en une seule journée.",
+    "de": "Lässige Kleidung ist fast überall in Ordnung. Nimm mehrere Schichten mit, denn das Wetter kann sich an einem Tag schnell ändern."
+   }
+  },
+  {
+   "id": "ct-NZ-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "At a marae, visitors follow protocol: you are welcomed first, and you take off your shoes before entering the meeting house (wharenui).",
+    "it": "In un marae i visitatori seguono il protocollo: prima si viene accolti, e ci si toglie le scarpe prima di entrare nella casa comune (wharenui).",
+    "es": "En un marae los visitantes siguen el protocolo: primero se te da la bienvenida y te quitas los zapatos antes de entrar en la casa comunal (wharenui).",
+    "pt": "Num marae os visitantes seguem o protocolo: primeiro são recebidos e tiram os sapatos antes de entrar na casa comum (wharenui).",
+    "pt_BR": "Em um marae os visitantes seguem o protocolo: primeiro são recebidos e tiram os sapatos antes de entrar na casa comunitária (wharenui).",
+    "fr": "Dans un marae, les visiteurs suivent le protocole : on est d'abord accueilli, puis on retire ses chaussures avant d'entrer dans la maison commune (wharenui).",
+    "de": "Auf einem Marae folgen Besucher dem Protokoll: Zuerst wird man willkommen geheißen, dann zieht man die Schuhe aus, bevor man das Versammlungshaus (Wharenui) betritt."
+   }
+  },
+  {
+   "id": "ct-NZ-13",
+   "category": "religion_sites",
+   "text": {
+    "en": "In Māori tradition the head is tapu (sacred). Avoid touching someone's head or passing items over it, and follow signs at culturally important sites.",
+    "it": "Nella tradizione maori la testa è tapu (sacra). Evita di toccare la testa di qualcuno o di passarci sopra degli oggetti, e rispetta i cartelli nei luoghi culturalmente importanti.",
+    "es": "En la tradición maorí la cabeza es tapu (sagrada). Evita tocar la cabeza de alguien o pasar objetos por encima, y sigue los carteles en los lugares de importancia cultural.",
+    "pt": "Na tradição maori a cabeça é tapu (sagrada). Evita tocar na cabeça de alguém ou passar objetos por cima dela, e segue os avisos em locais culturalmente importantes.",
+    "pt_BR": "Na tradição maori a cabeça é tapu (sagrada). Evite tocar na cabeça de alguém ou passar objetos por cima dela, e siga as placas em locais culturalmente importantes.",
+    "fr": "Dans la tradition maorie, la tête est tapu (sacrée). Évite de toucher la tête de quelqu'un ou de faire passer des objets au-dessus, et suis les panneaux sur les sites culturellement importants.",
+    "de": "In der Māori-Tradition ist der Kopf tapu (heilig). Berühre niemandes Kopf und reiche nichts darüber hinweg, und beachte die Schilder an kulturell wichtigen Orten."
+   }
+  },
+  {
+   "id": "ct-NZ-14",
+   "category": "gestures",
+   "text": {
+    "en": "The haka is a ceremonial Māori performance, not just a show. Watch it respectfully and don't imitate it jokingly.",
+    "it": "L'haka è una performance cerimoniale maori, non solo uno spettacolo. Guardala con rispetto e non imitarla per scherzo.",
+    "es": "El haka es una representación ceremonial maorí, no solo un espectáculo. Míralo con respeto y no lo imites en broma.",
+    "pt": "O haka é uma performance cerimonial maori, não apenas um espetáculo. Vê-o com respeito e não o imites a brincar.",
+    "pt_BR": "O haka é uma apresentação cerimonial maori, não apenas um show. Assista com respeito e não imite de brincadeira.",
+    "fr": "Le haka est une performance cérémonielle maorie, pas seulement un spectacle. Regarde-le avec respect et ne l'imite pas pour plaisanter.",
+    "de": "Der Haka ist eine zeremonielle Māori-Darbietung und keine bloße Show. Sieh ihn respektvoll an und äffe ihn nicht scherzhaft nach."
+   }
+  },
+  {
+   "id": "ct-NZ-15",
+   "category": "gestures",
+   "text": {
+    "en": "A firm handshake, eye contact and a relaxed smile make a good first impression. Personal space is fairly generous.",
+    "it": "Una stretta di mano decisa, il contatto visivo e un sorriso rilassato fanno una buona prima impressione. Lo spazio personale è piuttosto ampio.",
+    "es": "Un apretón de manos firme, contacto visual y una sonrisa relajada causan buena primera impresión. El espacio personal es bastante amplio.",
+    "pt": "Um aperto de mão firme, contacto visual e um sorriso descontraído causam boa primeira impressão. O espaço pessoal é bastante generoso.",
+    "pt_BR": "Um aperto de mão firme, contato visual e um sorriso tranquilo causam boa primeira impressão. O espaço pessoal é bem generoso.",
+    "fr": "Une poignée de main ferme, un regard franc et un sourire détendu font bonne impression. L'espace personnel est assez large.",
+    "de": "Ein fester Händedruck, Blickkontakt und ein entspanntes Lächeln hinterlassen einen guten ersten Eindruck. Der persönliche Freiraum ist ziemlich groß."
+   }
+  },
+  {
+   "id": "ct-NZ-16",
+   "category": "punctuality",
+   "text": {
+    "en": "Be on time for work, appointments and tours. Social gatherings can be more relaxed, but let your host know if you will be late.",
+    "it": "Sii puntuale per lavoro, appuntamenti e tour. Gli incontri sociali possono essere più rilassati, ma avvisa chi ti ospita se farai tardi.",
+    "es": "Sé puntual en el trabajo, las citas y las excursiones. Las reuniones sociales pueden ser más relajadas, pero avisa a tu anfitrión si llegas tarde.",
+    "pt": "Sê pontual no trabalho, em compromissos e em visitas guiadas. Os encontros sociais podem ser mais descontraídos, mas avisa o anfitrião se te atrasares.",
+    "pt_BR": "Seja pontual no trabalho, em compromissos e passeios guiados. Encontros sociais podem ser mais tranquilos, mas avise o anfitrião se for se atrasar.",
+    "fr": "Sois ponctuel pour le travail, les rendez-vous et les visites. Les rencontres entre amis peuvent être plus souples, mais préviens ton hôte si tu es en retard.",
+    "de": "Sei pünktlich bei der Arbeit, bei Terminen und Touren. Private Treffen sind lockerer, aber sag deinem Gastgeber Bescheid, wenn du dich verspätest."
+   }
+  },
+  {
+   "id": "ct-NZ-17",
+   "category": "public_behavior",
+   "text": {
+    "en": "It is common to say 'thanks' to the bus driver when you get off. Small courtesies like this are noticed and appreciated.",
+    "it": "È comune dire 'thanks' all'autista dell'autobus quando si scende. Piccole cortesie come questa vengono notate e apprezzate.",
+    "es": "Es habitual decir 'thanks' al conductor del autobús al bajar. Estas pequeñas cortesías se notan y se aprecian.",
+    "pt": "É comum dizer 'thanks' ao motorista do autocarro quando se sai. Pequenas cortesias como esta são notadas e apreciadas.",
+    "pt_BR": "É comum dizer 'thanks' ao motorista do ônibus ao descer. Pequenas gentilezas como essa são notadas e apreciadas.",
+    "fr": "Il est courant de dire 'thanks' au chauffeur de bus en descendant. Ces petites politesses sont remarquées et appréciées.",
+    "de": "Es ist üblich, beim Aussteigen dem Busfahrer 'thanks' zu sagen. Solche kleinen Höflichkeiten fallen auf und kommen gut an."
+   }
+  },
+  {
+   "id": "ct-NZ-18",
+   "category": "transport",
+   "text": {
+    "en": "New Zealanders drive on the left. Winding roads and scenery mean journeys take longer than the map suggests, so plan extra time.",
+    "it": "In Nuova Zelanda si guida a sinistra. Le strade tortuose e i paesaggi allungano i viaggi rispetto a quanto indica la mappa, quindi prevedi più tempo.",
+    "es": "En Nueva Zelanda se conduce por la izquierda. Las carreteras sinuosas y los paisajes alargan los trayectos más de lo que indica el mapa, así que calcula tiempo extra.",
+    "pt": "Na Nova Zelândia conduz-se pela esquerda. As estradas sinuosas e as paisagens tornam as viagens mais longas do que o mapa sugere, por isso prevê tempo extra.",
+    "pt_BR": "Na Nova Zelândia dirige-se pela esquerda. Estradas sinuosas e paisagens deixam as viagens mais longas do que o mapa sugere, então planeje tempo extra.",
+    "fr": "En Nouvelle-Zélande, on conduit à gauche. Les routes sinueuses et les paysages allongent les trajets par rapport à la carte : prévois du temps en plus.",
+    "de": "In Neuseeland herrscht Linksverkehr. Kurvige Straßen und Landschaft machen die Fahrten länger, als die Karte vermuten lässt, plane also Zusatzzeit ein."
+   }
+  },
+  {
+   "id": "ct-NZ-19",
+   "category": "language",
+   "text": {
+    "en": "New Zealand has three official languages: English, te reo Māori and New Zealand Sign Language.",
+    "it": "La Nuova Zelanda ha tre lingue ufficiali: inglese, te reo maori e lingua dei segni neozelandese.",
+    "es": "Nueva Zelanda tiene tres lenguas oficiales: el inglés, el te reo maorí y la lengua de signos neozelandesa.",
+    "pt": "A Nova Zelândia tem três línguas oficiais: o inglês, o te reo maori e a língua gestual neozelandesa.",
+    "pt_BR": "A Nova Zelândia tem três línguas oficiais: o inglês, o te reo maori e a língua de sinais neozelandesa.",
+    "fr": "La Nouvelle-Zélande a trois langues officielles : l'anglais, le te reo maori et la langue des signes néo-zélandaise.",
+    "de": "Neuseeland hat drei Amtssprachen: Englisch, Te Reo Māori und die neuseeländische Gebärdensprache."
+   }
+  },
+  {
+   "id": "ct-NZ-20",
+   "category": "language",
+   "text": {
+    "en": "Learning a few Māori words shows respect: 'kia ora' (hello, thanks), 'ka kite' (see you) and 'aroha' (love, compassion).",
+    "it": "Imparare qualche parola maori è segno di rispetto: 'kia ora' (ciao, grazie), 'ka kite' (a presto) e 'aroha' (amore, compassione).",
+    "es": "Aprender unas palabras maoríes muestra respeto: 'kia ora' (hola, gracias), 'ka kite' (hasta pronto) y 'aroha' (amor, compasión).",
+    "pt": "Aprender algumas palavras maori mostra respeito: 'kia ora' (olá, obrigado), 'ka kite' (até breve) e 'aroha' (amor, compaixão).",
+    "pt_BR": "Aprender algumas palavras maori mostra respeito: 'kia ora' (oi, obrigado), 'ka kite' (até logo) e 'aroha' (amor, compaixão).",
+    "fr": "Apprendre quelques mots maoris est une marque de respect : 'kia ora' (bonjour, merci), 'ka kite' (à bientôt) et 'aroha' (amour, compassion).",
+    "de": "Ein paar Māori-Wörter zu lernen zeigt Respekt: 'kia ora' (Hallo, Danke), 'ka kite' (bis bald) und 'aroha' (Liebe, Mitgefühl)."
+   }
+  },
+  {
+   "id": "ct-NZ-21",
+   "category": "festivals",
+   "text": {
+    "en": "Waitangi Day on 6 February and Anzac Day on 25 April are the two national days of remembrance, marked with ceremonies and reflection.",
+    "it": "Il Waitangi Day (6 febbraio) e l'Anzac Day (25 aprile) sono le due giornate nazionali della memoria, segnate da cerimonie e momenti di riflessione.",
+    "es": "El Waitangi Day (6 de febrero) y el Anzac Day (25 de abril) son los dos días nacionales de conmemoración, con ceremonias y momentos de reflexión.",
+    "pt": "O Waitangi Day (6 de fevereiro) e o Anzac Day (25 de abril) são os dois dias nacionais de memória, assinalados com cerimónias e momentos de reflexão.",
+    "pt_BR": "O Waitangi Day (6 de fevereiro) e o Anzac Day (25 de abril) são os dois dias nacionais de memória, marcados por cerimônias e momentos de reflexão.",
+    "fr": "Le Waitangi Day (6 février) et l'Anzac Day (25 avril) sont les deux journées nationales du souvenir, marquées par des cérémonies et des moments de recueillement.",
+    "de": "Der Waitangi Day (6. Februar) und der Anzac Day (25. April) sind die beiden nationalen Gedenktage, begleitet von Zeremonien und besinnlichen Momenten."
+   }
+  },
+  {
+   "id": "ct-NZ-22",
+   "category": "festivals",
+   "text": {
+    "en": "Matariki, the Māori New Year, is marked in mid-year with a public holiday, family gatherings and star-gazing.",
+    "it": "Il Matariki, il capodanno maori, si celebra a metà anno con un giorno festivo, incontri di famiglia e osservazione delle stelle.",
+    "es": "El Matariki, el Año Nuevo maorí, se celebra a mediados de año con un día festivo, reuniones familiares y observación de las estrellas.",
+    "pt": "O Matariki, o Ano Novo maori, assinala-se a meio do ano com um feriado, encontros de família e observação das estrelas.",
+    "pt_BR": "O Matariki, o Ano-Novo maori, é celebrado no meio do ano com um feriado, encontros de família e observação das estrelas.",
+    "fr": "Le Matariki, le Nouvel An maori, est célébré en milieu d'année avec un jour férié, des repas de famille et l'observation des étoiles.",
+    "de": "Matariki, das Māori-Neujahr, wird in der Jahresmitte mit einem Feiertag, Familientreffen und Sternenbeobachtung begangen."
+   }
+  },
+  {
+   "id": "ct-NZ-23",
+   "category": "family",
+   "text": {
+    "en": "Whānau (extended family) is central in Māori culture, and many young Kiwis take an 'OE' (overseas experience) in their twenties.",
+    "it": "La whānau (famiglia allargata) è centrale nella cultura maori, e molti giovani neozelandesi fanno una 'OE' (esperienza all'estero) intorno ai vent'anni.",
+    "es": "La whānau (familia extensa) es central en la cultura maorí, y muchos jóvenes neozelandeses hacen una 'OE' (experiencia en el extranjero) en la veintena.",
+    "pt": "A whānau (família alargada) é central na cultura maori, e muitos jovens neozelandeses fazem uma 'OE' (experiência no estrangeiro) por volta dos vinte anos.",
+    "pt_BR": "A whānau (família estendida) é central na cultura maori, e muitos jovens neozelandeses fazem um 'OE' (experiência no exterior) por volta dos vinte anos.",
+    "fr": "La whānau (famille élargie) est centrale dans la culture maorie, et beaucoup de jeunes Néo-Zélandais font un 'OE' (expérience à l'étranger) dans la vingtaine.",
+    "de": "Die Whānau (Großfamilie) ist in der Māori-Kultur zentral, und viele junge Kiwis machen in ihren Zwanzigern eine 'OE' (Auslandserfahrung)."
+   }
+  },
+  {
+   "id": "ct-NZ-24",
+   "category": "money",
+   "text": {
+    "en": "The currency is the New Zealand dollar (NZD). Cards and contactless payments are accepted almost everywhere.",
+    "it": "La valuta è il dollaro neozelandese (NZD). Carte e pagamenti contactless sono accettati quasi ovunque.",
+    "es": "La moneda es el dólar neozelandés (NZD). Las tarjetas y los pagos sin contacto se aceptan casi en todas partes.",
+    "pt": "A moeda é o dólar neozelandês (NZD). Os cartões e os pagamentos sem contacto são aceites quase em todo o lado.",
+    "pt_BR": "A moeda é o dólar neozelandês (NZD). Cartões e pagamentos por aproximação são aceitos quase em todo lugar.",
+    "fr": "La monnaie est le dollar néo-zélandais (NZD). Les cartes et le paiement sans contact sont acceptés presque partout.",
+    "de": "Die Währung ist der Neuseeland-Dollar (NZD). Karten und kontaktloses Bezahlen werden fast überall akzeptiert."
+   }
+  },
+  {
+   "id": "ct-NZ-25",
+   "category": "photography",
+   "text": {
+    "en": "Ask permission before photographing or filming a Māori ceremony or inside a marae, and follow any signs at cultural sites.",
+    "it": "Chiedi il permesso prima di fotografare o filmare una cerimonia maori o l'interno di un marae, e rispetta i cartelli nei luoghi culturali.",
+    "es": "Pide permiso antes de fotografiar o grabar una ceremonia maorí o el interior de un marae, y sigue las indicaciones en los sitios culturales.",
+    "pt": "Pede autorização antes de fotografar ou filmar uma cerimónia maori ou o interior de um marae, e segue os avisos nos locais culturais.",
+    "pt_BR": "Peça permissão antes de fotografar ou filmar uma cerimônia maori ou o interior de um marae, e siga as placas nos locais culturais.",
+    "fr": "Demande la permission avant de photographier ou filmer une cérémonie maorie ou l'intérieur d'un marae, et suis les panneaux sur les sites culturels.",
+    "de": "Frag um Erlaubnis, bevor du eine Māori-Zeremonie oder das Innere eines Marae fotografierst oder filmst, und beachte die Hinweise an kulturellen Stätten."
+   }
+  },
+  {
+   "id": "ct-NZ-26",
+   "category": "nightlife",
+   "text": {
+    "en": "Many Kiwis socialise in casual ways: pubs with live music, barbecues and get-togethers with friends. Dress is relaxed.",
+    "it": "Molti neozelandesi socializzano in modo informale: pub con musica dal vivo, barbecue e ritrovi con gli amici. L'abbigliamento è rilassato.",
+    "es": "Muchos neozelandeses socializan de forma informal: pubs con música en vivo, barbacoas y reuniones con amigos. La vestimenta es relajada.",
+    "pt": "Muitos neozelandeses convivem de forma descontraída: pubs com música ao vivo, churrascos e encontros com amigos. O vestuário é informal.",
+    "pt_BR": "Muitos neozelandeses socializam de forma descontraída: pubs com música ao vivo, churrascos e encontros com amigos. O visual é informal.",
+    "fr": "Beaucoup de Néo-Zélandais se retrouvent de façon décontractée : pubs avec musique live, barbecues et soirées entre amis. La tenue est détendue.",
+    "de": "Viele Kiwis treffen sich ganz locker: in Pubs mit Livemusik, beim Grillen oder mit Freunden. Die Kleidung ist leger."
+   }
+  },
+  {
+   "id": "ct-NZ-27",
+   "category": "nature",
+   "text": {
+    "en": "New Zealand has strict biosecurity. Clean your boots, tents and gear before hiking, and declare food and outdoor equipment at the border.",
+    "it": "La Nuova Zelanda ha controlli di biosicurezza severi. Pulisci scarponi, tende e attrezzatura prima di camminare e dichiara cibo e attrezzatura outdoor alla frontiera.",
+    "es": "Nueva Zelanda tiene una bioseguridad estricta. Limpia las botas, las tiendas y el equipo antes de caminar, y declara alimentos y equipo de exterior en la frontera.",
+    "pt": "A Nova Zelândia tem uma biossegurança rigorosa. Limpa as botas, as tendas e o equipamento antes de caminhar e declara alimentos e material de exterior na fronteira.",
+    "pt_BR": "A Nova Zelândia tem uma biossegurança rigorosa. Limpe botas, barracas e equipamentos antes de caminhar e declare alimentos e equipamentos de ar livre na fronteira.",
+    "fr": "La Nouvelle-Zélande applique une biosécurité stricte. Nettoie tes chaussures, ta tente et ton matériel avant de randonner, et déclare nourriture et équipement de plein air à la frontière.",
+    "de": "Neuseeland hat strenge Biosicherheitsregeln. Reinige Schuhe, Zelt und Ausrüstung vor dem Wandern und gib Lebensmittel und Outdoor-Ausrüstung an der Grenze an."
+   }
+  },
+  {
+   "id": "ct-NZ-28",
+   "category": "nature",
+   "text": {
+    "en": "Stay on marked tracks and follow signs at national parks. Mountain weather can turn quickly, so check conditions before you set out.",
+    "it": "Resta sui sentieri segnalati e segui i cartelli nei parchi nazionali. Il tempo in montagna può cambiare in fretta, quindi controlla le condizioni prima di partire.",
+    "es": "Mantente en los senderos señalizados y sigue los carteles en los parques nacionales. El tiempo en la montaña puede cambiar rápido, así que consulta las condiciones antes de salir.",
+    "pt": "Fica nos trilhos sinalizados e segue os avisos nos parques nacionais. O tempo na montanha pode mudar depressa, por isso consulta as condições antes de partir.",
+    "pt_BR": "Fique nas trilhas sinalizadas e siga as placas nos parques nacionais. O tempo na montanha pode mudar rápido, então confira as condições antes de sair.",
+    "fr": "Reste sur les sentiers balisés et suis les panneaux dans les parcs nationaux. Le temps en montagne peut tourner vite : vérifie les conditions avant de partir.",
+    "de": "Bleib auf markierten Wegen und beachte die Schilder in den Nationalparks. Das Bergwetter kann schnell umschlagen, prüfe also vor dem Start die Bedingungen."
+   }
+  },
+  {
+   "id": "ct-NZ-29",
+   "category": "safety",
+   "text": {
+    "en": "The sun is very strong, so use sunscreen, a hat and sunglasses, even on cloudy days.",
+    "it": "Il sole è molto forte, quindi usa crema solare, cappello e occhiali da sole, anche nelle giornate nuvolose.",
+    "es": "El sol es muy fuerte, así que usa protector solar, gorra y gafas de sol, incluso en días nublados.",
+    "pt": "O sol é muito forte, por isso usa protetor solar, chapéu e óculos de sol, mesmo em dias nublados.",
+    "pt_BR": "O sol é muito forte, então use protetor solar, chapéu e óculos de sol, mesmo em dias nublados.",
+    "fr": "Le soleil est très fort : utilise de la crème solaire, un chapeau et des lunettes de soleil, même par temps nuageux.",
+    "de": "Die Sonne ist sehr stark, also nutze Sonnencreme, Hut und Sonnenbrille, auch an bewölkten Tagen."
+   }
+  },
+  {
+   "id": "ct-NZ-30",
+   "category": "local_pride",
+   "text": {
+    "en": "New Zealanders happily call themselves 'Kiwis', after the flightless bird that is a national symbol, and enjoy sharing the nickname.",
+    "it": "I neozelandesi si definiscono volentieri 'Kiwi', dal nome dell'uccello senza ali che è un simbolo nazionale, e amano condividere questo soprannome.",
+    "es": "Los neozelandeses se llaman con gusto 'Kiwis', por el ave no voladora que es símbolo nacional, y disfrutan compartir el apodo.",
+    "pt": "Os neozelandeses chamam-se com gosto 'Kiwis', por causa da ave que não voa e é símbolo nacional, e gostam de partilhar o apelido.",
+    "pt_BR": "Os neozelandeses se chamam com orgulho de 'Kiwis', por causa da ave que não voa e é símbolo nacional, e gostam de compartilhar o apelido.",
+    "fr": "Les Néo-Zélandais s'appellent volontiers 'Kiwis', du nom de l'oiseau incapable de voler qui est un symbole national, et aiment partager ce surnom.",
+    "de": "Neuseeländer nennen sich gern 'Kiwis', nach dem flugunfähigen Vogel, der ein Nationalsymbol ist, und teilen den Spitznamen gern."
+   }
+  }
+ ],
+ "PE": [
+  {
+   "id": "ct-PE-01",
+   "category": "greetings",
+   "text": {
+    "en": "Friends often greet with a single kiss on the right cheek, or a hug. In formal or business settings, a handshake is the norm.",
+    "it": "Tra amici ci si saluta spesso con un bacio sulla guancia destra o con un abbraccio. In contesti formali o di lavoro si usa la stretta di mano.",
+    "es": "Entre amigos es habitual saludarse con un beso en la mejilla derecha o con un abrazo. En ambientes formales o de negocios se da la mano.",
+    "pt": "Entre amigos é habitual cumprimentar com um beijo na face direita ou um abraço. Em contextos formais ou de negócios aperta-se a mão.",
+    "pt_BR": "Entre amigos é comum cumprimentar com um beijo na bochecha direita ou um abraço. Em contextos formais ou de negócios, aperta-se a mão.",
+    "fr": "Entre amis, on se salue souvent d'une bise sur la joue droite ou d'une accolade. Dans un cadre formel ou professionnel, on se serre la main.",
+    "de": "Unter Freunden begrüßt man sich oft mit einem Kuss auf die rechte Wange oder einer Umarmung. Im formellen oder geschäftlichen Umfeld gibt man sich die Hand."
+   }
+  },
+  {
+   "id": "ct-PE-02",
+   "category": "greetings",
+   "text": {
+    "en": "It is polite to say 'buenos días' or 'buenas tardes' when you enter a shop, a taxi or a small restaurant.",
+    "it": "È educato dire 'buenos días' o 'buenas tardes' quando si entra in un negozio, in un taxi o in un piccolo ristorante.",
+    "es": "Es de buena educación decir 'buenos días' o 'buenas tardes' al entrar en una tienda, un taxi o un restaurante pequeño.",
+    "pt": "É educado dizer 'buenos días' ou 'buenas tardes' ao entrar numa loja, num táxi ou num pequeno restaurante.",
+    "pt_BR": "É educado dizer 'buenos días' ou 'buenas tardes' ao entrar em uma loja, em um táxi ou em um pequeno restaurante.",
+    "fr": "Il est poli de dire 'buenos días' ou 'buenas tardes' en entrant dans une boutique, un taxi ou un petit restaurant.",
+    "de": "Es ist höflich, beim Betreten eines Ladens, Taxis oder kleinen Restaurants 'buenos días' oder 'buenas tardes' zu sagen."
+   }
+  },
+  {
+   "id": "ct-PE-03",
+   "category": "conversation",
+   "text": {
+    "en": "Football is the most popular sport in Peru, and chatting about teams or the national side is an easy way to connect.",
+    "it": "Il calcio è lo sport più popolare del Perù, e parlare di squadre o della nazionale è un modo facile per creare un legame.",
+    "es": "El fútbol es el deporte más popular de Perú, y charlar sobre equipos o la selección es una forma fácil de conectar.",
+    "pt": "O futebol é o desporto mais popular do Peru, e conversar sobre equipas ou a seleção é uma forma fácil de criar ligação.",
+    "pt_BR": "O futebol é o esporte mais popular do Peru, e conversar sobre times ou a seleção é um jeito fácil de se conectar.",
+    "fr": "Le football est le sport le plus populaire du Pérou, et parler des équipes ou de la sélection est un moyen facile de créer du lien.",
+    "de": "Fußball ist der beliebteste Sport in Peru, und ein Gespräch über Vereine oder die Nationalmannschaft ist ein leichter Einstieg."
+   }
+  },
+  {
+   "id": "ct-PE-04",
+   "category": "conversation",
+   "text": {
+    "en": "Food is a favourite topic. Peruvians are proud of their cuisine, so asking for recommendations is usually met with enthusiasm.",
+    "it": "Il cibo è un argomento amatissimo. I peruviani sono orgogliosi della loro cucina, quindi chiedere consigli di solito accende l'entusiasmo.",
+    "es": "La comida es un tema favorito. Los peruanos están orgullosos de su cocina, así que pedir recomendaciones suele recibirse con entusiasmo.",
+    "pt": "A comida é um tema favorito. Os peruanos têm orgulho da sua cozinha, por isso pedir recomendações costuma ser recebido com entusiasmo.",
+    "pt_BR": "A comida é um assunto favorito. Os peruanos têm orgulho da sua culinária, então pedir recomendações costuma ser recebido com entusiasmo.",
+    "fr": "La cuisine est un sujet favori. Les Péruviens sont fiers de leur gastronomie : demander des conseils est généralement accueilli avec enthousiasme.",
+    "de": "Essen ist ein Lieblingsthema. Peruaner sind stolz auf ihre Küche, daher stößt die Bitte um Empfehlungen meist auf Begeisterung."
+   }
+  },
+  {
+   "id": "ct-PE-05",
+   "category": "dining",
+   "text": {
+    "en": "Ceviche, fish marinated in lime juice, is a national dish and is traditionally eaten at lunchtime. Try it at a local cevichería.",
+    "it": "Il ceviche, pesce marinato nel succo di lime, è un piatto nazionale e si mangia tradizionalmente a pranzo. Provalo in una cevichería locale.",
+    "es": "El ceviche, pescado marinado en jugo de limón, es un plato nacional y tradicionalmente se come al mediodía. Pruébalo en una cevichería local.",
+    "pt": "O ceviche, peixe marinado em sumo de lima, é um prato nacional e come-se tradicionalmente ao almoço. Experimenta-o numa cevichería local.",
+    "pt_BR": "O ceviche, peixe marinado em suco de limão, é um prato nacional e tradicionalmente é comido no almoço. Experimente em uma cevichería local.",
+    "fr": "Le ceviche, du poisson mariné au jus de citron vert, est un plat national traditionnellement mangé le midi. Goûte-le dans une cevichería locale.",
+    "de": "Ceviche, in Limettensaft marinierter Fisch, ist ein Nationalgericht und wird traditionell mittags gegessen. Probier es in einer lokalen Cevichería."
+   }
+  },
+  {
+   "id": "ct-PE-06",
+   "category": "dining",
+   "text": {
+    "en": "Lunch is often the main meal of the day, and many restaurants offer a good-value set menu (menú) at midday.",
+    "it": "Il pranzo è spesso il pasto principale della giornata e molti ristoranti offrono a mezzogiorno un menù fisso conveniente.",
+    "es": "El almuerzo suele ser la comida principal del día, y muchos restaurantes ofrecen un menú de buen precio al mediodía.",
+    "pt": "O almoço é muitas vezes a refeição principal do dia, e muitos restaurantes oferecem ao meio-dia uma ementa fixa a bom preço (menú).",
+    "pt_BR": "O almoço costuma ser a refeição principal do dia, e muitos restaurantes oferecem ao meio-dia um menu executivo (menú) com bom preço.",
+    "fr": "Le déjeuner est souvent le repas principal de la journée, et beaucoup de restaurants proposent à midi un menu à bon prix.",
+    "de": "Das Mittagessen ist oft die Hauptmahlzeit des Tages, und viele Restaurants bieten mittags ein günstiges Menü an."
+   }
+  },
+  {
+   "id": "ct-PE-07",
+   "category": "dining",
+   "text": {
+    "en": "Guinea pig (cuy) is a traditional dish in the Andes. If you are offered some, it is a sign of hospitality; trying a bite is appreciated.",
+    "it": "La cavia (cuy) è un piatto tradizionale delle Ande. Se te ne offrono, è un segno di ospitalità; assaggiarne un boccone è molto apprezzato.",
+    "es": "El cuy es un plato tradicional de los Andes. Si te lo ofrecen, es un gesto de hospitalidad; probar un bocado se agradece.",
+    "pt": "O porquinho-da-índia (cuy) é um prato tradicional dos Andes. Se te oferecerem, é um sinal de hospitalidade; provar um pedaço é apreciado.",
+    "pt_BR": "A cobaia (cuy) é um prato tradicional dos Andes. Se lhe oferecerem, é sinal de hospitalidade; experimentar um pedaço é apreciado.",
+    "fr": "Le cochon d'Inde (cuy) est un plat traditionnel des Andes. S'il t'est offert, c'est un signe d'hospitalité : en goûter une bouchée est apprécié.",
+    "de": "Meerschweinchen (cuy) ist ein traditionelles Gericht der Anden. Wird es dir angeboten, ist das ein Zeichen von Gastfreundschaft; einen Bissen zu probieren kommt gut an."
+   }
+  },
+  {
+   "id": "ct-PE-08",
+   "category": "dining",
+   "text": {
+    "en": "Before eating, wait until everyone is served or the host invites you to start, and say 'buen provecho' to the people at the table.",
+    "it": "Prima di mangiare aspetta che tutti siano serviti o che chi ospita ti inviti a iniziare, e augura 'buen provecho' ai presenti.",
+    "es": "Antes de comer, espera a que todos estén servidos o a que el anfitrión te invite a empezar, y di 'buen provecho' a los de la mesa.",
+    "pt": "Antes de comer, espera que todos estejam servidos ou que o anfitrião te convide a começar, e diz 'buen provecho' às pessoas à mesa.",
+    "pt_BR": "Antes de comer, espere todos serem servidos ou o anfitrião convidar você a começar, e diga 'buen provecho' às pessoas à mesa.",
+    "fr": "Avant de manger, attends que tout le monde soit servi ou que l'hôte t'invite à commencer, et dis 'buen provecho' aux convives.",
+    "de": "Warte vor dem Essen, bis alle bedient sind oder der Gastgeber zum Beginnen einlädt, und wünsche den anderen am Tisch 'buen provecho'."
+   }
+  },
+  {
+   "id": "ct-PE-09",
+   "category": "tipping",
+   "text": {
+    "en": "A tip of around 10% is common in restaurants when service is not already included. Check the bill first.",
+    "it": "Una mancia di circa il 10% è comune nei ristoranti quando il servizio non è già incluso. Controlla prima il conto.",
+    "es": "Una propina de alrededor del 10 % es habitual en los restaurantes cuando el servicio no está incluido. Revisa antes la cuenta.",
+    "pt": "Uma gorjeta de cerca de 10% é comum nos restaurantes quando o serviço não está incluído. Verifica primeiro a conta.",
+    "pt_BR": "Uma gorjeta de cerca de 10% é comum nos restaurantes quando o serviço não está incluído. Confira a conta antes.",
+    "fr": "Un pourboire d'environ 10 % est courant au restaurant quand le service n'est pas déjà compris. Vérifie d'abord l'addition.",
+    "de": "Ein Trinkgeld von rund 10 % ist in Restaurants üblich, wenn der Service nicht schon enthalten ist. Prüfe zuerst die Rechnung."
+   }
+  },
+  {
+   "id": "ct-PE-10",
+   "category": "gifts",
+   "text": {
+    "en": "If you are invited to a home, a small gift such as sweets, flowers or something from your country is a thoughtful gesture.",
+    "it": "Se sei invitato a casa di qualcuno, un piccolo regalo come dolci, fiori o qualcosa del tuo paese è un gesto gentile.",
+    "es": "Si te invitan a una casa, un pequeño regalo como dulces, flores o algo de tu país es un detalle atento.",
+    "pt": "Se fores convidado para casa de alguém, uma pequena lembrança como doces, flores ou algo do teu país é um gesto atencioso.",
+    "pt_BR": "Se for convidado para a casa de alguém, um pequeno presente como doces, flores ou algo do seu país é um gesto atencioso.",
+    "fr": "Si on t'invite chez quelqu'un, un petit cadeau comme des sucreries, des fleurs ou quelque chose de ton pays est une attention appréciée.",
+    "de": "Wenn du zu jemandem nach Hause eingeladen bist, ist ein kleines Mitbringsel wie Süßigkeiten, Blumen oder etwas aus deiner Heimat eine nette Geste."
+   }
+  },
+  {
+   "id": "ct-PE-11",
+   "category": "dress",
+   "text": {
+    "en": "In Lima and on the coast, casual but neat clothes are normal. In the highlands, nights are cold, so bring warm layers.",
+    "it": "A Lima e sulla costa l'abbigliamento informale ma curato è normale. Sugli altopiani le notti sono fredde, quindi porta strati caldi.",
+    "es": "En Lima y en la costa la ropa informal pero cuidada es lo normal. En la sierra las noches son frías, así que lleva capas de abrigo.",
+    "pt": "Em Lima e na costa a roupa informal mas cuidada é normal. Na serra as noites são frias, por isso leva camadas quentes.",
+    "pt_BR": "Em Lima e no litoral, roupas casuais mas arrumadas são normais. Na serra as noites são frias, então leve camadas de agasalho.",
+    "fr": "À Lima et sur la côte, une tenue décontractée mais soignée est normale. Dans les hautes terres, les nuits sont froides : prends des couches chaudes.",
+    "de": "In Lima und an der Küste ist lässige, aber gepflegte Kleidung normal. Im Hochland sind die Nächte kalt, nimm also warme Schichten mit."
+   }
+  },
+  {
+   "id": "ct-PE-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "Catholic traditions such as Holy Week and Corpus Christi are important. Dress modestly and stay quiet when visiting churches.",
+    "it": "Le tradizioni cattoliche come la Settimana Santa e il Corpus Domini sono importanti. Vestiti in modo sobrio e mantieni il silenzio nelle chiese.",
+    "es": "Las tradiciones católicas como la Semana Santa y el Corpus Christi son importantes. Viste con modestia y guarda silencio al visitar iglesias.",
+    "pt": "As tradições católicas, como a Semana Santa e o Corpus Christi, são importantes. Veste-te com modéstia e mantém o silêncio nas igrejas.",
+    "pt_BR": "As tradições católicas, como a Semana Santa e o Corpus Christi, são importantes. Vista-se com discrição e mantenha silêncio nas igrejas.",
+    "fr": "Les traditions catholiques comme la Semaine sainte et la Fête-Dieu sont importantes. Habille-toi sobrement et reste silencieux dans les églises.",
+    "de": "Katholische Traditionen wie die Karwoche und Fronleichnam sind wichtig. Kleide dich dezent und sei in Kirchen leise."
+   }
+  },
+  {
+   "id": "ct-PE-13",
+   "category": "religion_sites",
+   "text": {
+    "en": "At archaeological sites such as Machu Picchu, follow the staff's instructions, stay on the paths and don't climb or lean on the ancient walls.",
+    "it": "Nei siti archeologici come Machu Picchu segui le indicazioni del personale, resta sui sentieri e non arrampicarti né appoggiarti ai muri antichi.",
+    "es": "En sitios arqueológicos como Machu Picchu, sigue las indicaciones del personal, mantente en los senderos y no te subas ni te apoyes en los muros antiguos.",
+    "pt": "Em sítios arqueológicos como Machu Picchu, segue as indicações do pessoal, fica nos caminhos e não subas nem te apoies nas muralhas antigas.",
+    "pt_BR": "Em sítios arqueológicos como Machu Picchu, siga as orientações da equipe, fique nas trilhas e não suba nem se apoie nos muros antigos.",
+    "fr": "Sur les sites archéologiques comme le Machu Picchu, suis les consignes du personnel, reste sur les chemins et ne grimpe pas sur les murs anciens et ne t'y appuie pas.",
+    "de": "An archäologischen Stätten wie Machu Picchu befolge die Anweisungen des Personals, bleib auf den Wegen und klettere oder lehne dich nicht an die alten Mauern."
+   }
+  },
+  {
+   "id": "ct-PE-14",
+   "category": "gestures",
+   "text": {
+    "en": "People stand a bit closer when talking than in northern Europe. Stepping back can seem distant, so a little closeness is normal.",
+    "it": "Parlando, le persone stanno un po' più vicine rispetto al nord Europa. Fare un passo indietro può sembrare distacco, quindi un po' di vicinanza è normale.",
+    "es": "Al hablar, la gente se pone algo más cerca que en el norte de Europa. Retroceder puede parecer distante, así que algo de cercanía es normal.",
+    "pt": "Ao conversar, as pessoas ficam um pouco mais perto do que no norte da Europa. Recuar pode parecer distante, por isso alguma proximidade é normal.",
+    "pt_BR": "Ao conversar, as pessoas ficam um pouco mais perto do que no norte da Europa. Dar um passo para trás pode parecer distanciamento, então uma certa proximidade é normal.",
+    "fr": "En parlant, les gens se tiennent un peu plus près que dans le nord de l'Europe. Reculer peut paraître distant, une certaine proximité est donc normale.",
+    "de": "Beim Sprechen steht man etwas näher beieinander als in Nordeuropa. Zurückweichen kann distanziert wirken, etwas Nähe ist also normal."
+   }
+  },
+  {
+   "id": "ct-PE-15",
+   "category": "punctuality",
+   "text": {
+    "en": "Social events often start later than the stated time, sometimes jokingly called 'hora peruana'. For work meetings and tours, be on time.",
+    "it": "Gli eventi sociali spesso iniziano dopo l'orario indicato, a volte chiamato per scherzo 'hora peruana'. Per riunioni di lavoro e tour sii puntuale.",
+    "es": "Los eventos sociales suelen empezar más tarde de la hora indicada, a veces llamada en broma 'hora peruana'. Para reuniones de trabajo y excursiones, sé puntual.",
+    "pt": "Os eventos sociais costumam começar depois da hora marcada, a que por vezes se chama a brincar 'hora peruana'. Para reuniões de trabalho e visitas, sê pontual.",
+    "pt_BR": "Eventos sociais costumam começar depois do horário combinado, às vezes chamado de brincadeira de 'hora peruana'. Em reuniões de trabalho e passeios, seja pontual.",
+    "fr": "Les événements sociaux commencent souvent après l'heure annoncée, parfois appelée en plaisantant 'hora peruana'. Pour les réunions de travail et les visites, sois ponctuel.",
+    "de": "Gesellige Treffen beginnen oft später als angegeben, scherzhaft 'hora peruana' genannt. Bei Arbeitsterminen und Touren sei pünktlich."
+   }
+  },
+  {
+   "id": "ct-PE-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "Offer your seat on buses to older people, pregnant women and people with small children. It is a common courtesy.",
+    "it": "Cedi il posto sugli autobus agli anziani, alle donne incinte e a chi ha bambini piccoli. È una cortesia comune.",
+    "es": "Cede tu asiento en los autobuses a personas mayores, embarazadas y a quienes llevan niños pequeños. Es una cortesía habitual.",
+    "pt": "Cede o teu lugar nos autocarros a pessoas idosas, grávidas e a quem leva crianças pequenas. É uma cortesia comum.",
+    "pt_BR": "Ceda o seu lugar nos ônibus a idosos, grávidas e pessoas com crianças pequenas. É uma gentileza comum.",
+    "fr": "Cède ta place dans les bus aux personnes âgées, aux femmes enceintes et aux personnes avec de jeunes enfants. C'est une politesse courante.",
+    "de": "Biete in Bussen älteren Menschen, Schwangeren und Personen mit kleinen Kindern deinen Sitzplatz an. Das ist eine übliche Höflichkeit."
+   }
+  },
+  {
+   "id": "ct-PE-17",
+   "category": "transport",
+   "text": {
+    "en": "For taxis, agree on the fare before you get in or use a ride-hailing app. Use registered taxis, especially at night.",
+    "it": "Per i taxi, concorda la tariffa prima di salire oppure usa un'app di trasporto. Scegli taxi registrati, soprattutto di notte.",
+    "es": "En los taxis, acuerda la tarifa antes de subir o usa una aplicación de transporte. Elige taxis registrados, sobre todo de noche.",
+    "pt": "Nos táxis, combina o preço antes de entrar ou usa uma aplicação de transporte. Escolhe táxis registados, sobretudo à noite.",
+    "pt_BR": "Nos táxis, combine o preço antes de entrar ou use um aplicativo de transporte. Escolha táxis registrados, principalmente à noite.",
+    "fr": "Pour les taxis, convenez du tarif avant de monter ou utilise une application de VTC. Choisis des taxis enregistrés, surtout la nuit.",
+    "de": "Vereinbare bei Taxis den Preis vor dem Einsteigen oder nutze eine Fahrdienst-App. Wähle registrierte Taxis, besonders nachts."
+   }
+  },
+  {
+   "id": "ct-PE-18",
+   "category": "language",
+   "text": {
+    "en": "Spanish is the main language, while Quechua and Aymara are also spoken, especially in the Andes. Respect for all of them is appreciated.",
+    "it": "Lo spagnolo è la lingua principale, ma si parlano anche il quechua e l'aymara, soprattutto sulle Ande. Il rispetto per tutte è apprezzato.",
+    "es": "El español es la lengua principal, pero también se hablan el quechua y el aimara, sobre todo en los Andes. Se aprecia el respeto hacia todas ellas.",
+    "pt": "O espanhol é a língua principal, mas também se falam o quéchua e o aimará, sobretudo nos Andes. O respeito por todas elas é apreciado.",
+    "pt_BR": "O espanhol é a língua principal, mas também se falam o quíchua e o aimará, principalmente nos Andes. O respeito por todas elas é apreciado.",
+    "fr": "L'espagnol est la langue principale, mais on parle aussi le quechua et l'aymara, surtout dans les Andes. Le respect pour toutes ces langues est apprécié.",
+    "de": "Spanisch ist die Hauptsprache, doch vor allem in den Anden werden auch Quechua und Aymara gesprochen. Respekt vor allen Sprachen kommt gut an."
+   }
+  },
+  {
+   "id": "ct-PE-19",
+   "category": "language",
+   "text": {
+    "en": "Some people in tourist areas speak English, but a few Spanish phrases like 'por favor' and 'gracias' are warmly welcomed.",
+    "it": "Nelle zone turistiche alcune persone parlano inglese, ma qualche frase in spagnolo come 'por favor' e 'gracias' è accolta con calore.",
+    "es": "En zonas turísticas algunas personas hablan inglés, pero unas frases en español como 'por favor' y 'gracias' se reciben con cariño.",
+    "pt": "Nas zonas turísticas algumas pessoas falam inglês, mas umas frases em espanhol como 'por favor' e 'gracias' são recebidas com carinho.",
+    "pt_BR": "Em áreas turísticas algumas pessoas falam inglês, mas algumas frases em espanhol como 'por favor' e 'gracias' são recebidas com carinho.",
+    "fr": "Dans les zones touristiques, certaines personnes parlent anglais, mais quelques phrases en espagnol comme 'por favor' et 'gracias' sont très bien accueillies.",
+    "de": "In Touristengebieten sprechen manche Englisch, aber ein paar spanische Sätze wie 'por favor' und 'gracias' werden herzlich aufgenommen."
+   }
+  },
+  {
+   "id": "ct-PE-20",
+   "category": "festivals",
+   "text": {
+    "en": "Inti Raymi, the Inca festival of the sun, is held in Cusco on 24 June with processions and ceremonies. Book ahead if you plan to attend.",
+    "it": "L'Inti Raymi, la festa inca del sole, si tiene a Cusco il 24 giugno con processioni e cerimonie. Prenota in anticipo se vuoi partecipare.",
+    "es": "El Inti Raymi, la fiesta inca del sol, se celebra en Cusco el 24 de junio con procesiones y ceremonias. Reserva con antelación si quieres asistir.",
+    "pt": "O Inti Raymi, a festa inca do sol, realiza-se em Cusco a 24 de junho com procissões e cerimónias. Reserva com antecedência se quiseres assistir.",
+    "pt_BR": "O Inti Raymi, a festa inca do sol, acontece em Cusco no dia 24 de junho, com procissões e cerimônias. Reserve com antecedência se quiser assistir.",
+    "fr": "L'Inti Raymi, la fête inca du soleil, a lieu à Cusco le 24 juin avec des processions et des cérémonies. Réserve à l'avance si tu veux y assister.",
+    "de": "Das Inti Raymi, das Sonnenfest der Inka, findet am 24. Juni in Cusco mit Prozessionen und Zeremonien statt. Buche früh, wenn du teilnehmen möchtest."
+   }
+  },
+  {
+   "id": "ct-PE-21",
+   "category": "festivals",
+   "text": {
+    "en": "In October, Lima's Señor de los Milagros procession fills the streets with people in purple. Be respectful and expect crowds.",
+    "it": "A ottobre la processione del Señor de los Milagros riempie le strade di Lima di persone vestite di viola. Mostra rispetto e prevedi molta folla.",
+    "es": "En octubre, la procesión del Señor de los Milagros llena las calles de Lima de personas vestidas de morado. Sé respetuoso y espera multitudes.",
+    "pt": "Em outubro, a procissão do Señor de los Milagros enche as ruas de Lima de pessoas vestidas de roxo. Sê respeitoso e prepara-te para multidões.",
+    "pt_BR": "Em outubro, a procissão do Señor de los Milagros enche as ruas de Lima de pessoas vestidas de roxo. Seja respeitoso e espere multidões.",
+    "fr": "En octobre, la procession du Señor de los Milagros remplit les rues de Lima de personnes vêtues de violet. Sois respectueux et prévois de la foule.",
+    "de": "Im Oktober füllt die Prozession des Señor de los Milagros Limas Straßen mit Menschen in Violett. Sei respektvoll und rechne mit Menschenmengen."
+   }
+  },
+  {
+   "id": "ct-PE-22",
+   "category": "festivals",
+   "text": {
+    "en": "Peru celebrates Independence Day on 28 and 29 July, known as Fiestas Patrias, with parades, flags and family meals.",
+    "it": "Il Perù festeggia l'Indipendenza il 28 e 29 luglio, le Fiestas Patrias, con sfilate, bandiere e pranzi in famiglia.",
+    "es": "Perú celebra su Independencia el 28 y 29 de julio, las Fiestas Patrias, con desfiles, banderas y comidas familiares.",
+    "pt": "O Peru celebra a Independência a 28 e 29 de julho, as Fiestas Patrias, com desfiles, bandeiras e refeições em família.",
+    "pt_BR": "O Peru celebra a Independência em 28 e 29 de julho, as Fiestas Patrias, com desfiles, bandeiras e refeições em família.",
+    "fr": "Le Pérou célèbre son indépendance les 28 et 29 juillet, les Fiestas Patrias, avec des défilés, des drapeaux et des repas en famille.",
+    "de": "Peru feiert seine Unabhängigkeit am 28. und 29. Juli, die Fiestas Patrias, mit Paraden, Flaggen und Familienessen."
+   }
+  },
+  {
+   "id": "ct-PE-23",
+   "category": "family",
+   "text": {
+    "en": "Family ties are strong, and relatives often get together for long Sunday lunches. Being invited to one is a warm sign of friendship.",
+    "it": "I legami familiari sono forti e i parenti si riuniscono spesso per lunghi pranzi domenicali. Essere invitati è un caloroso segno di amicizia.",
+    "es": "Los lazos familiares son fuertes y los parientes suelen reunirse en largos almuerzos de domingo. Que te inviten es una cálida muestra de amistad.",
+    "pt": "Os laços familiares são fortes e os parentes reúnem-se muitas vezes em longos almoços de domingo. Ser convidado é um caloroso sinal de amizade.",
+    "pt_BR": "Os laços familiares são fortes e os parentes costumam se reunir em longos almoços de domingo. Ser convidado é um caloroso sinal de amizade.",
+    "fr": "Les liens familiaux sont forts et la famille se retrouve souvent pour de longs déjeuners dominicaux. Être invité est un chaleureux signe d'amitié.",
+    "de": "Familienbande sind eng, und Verwandte treffen sich oft zu langen Sonntagsessen. Eine Einladung dazu ist ein herzliches Zeichen von Freundschaft."
+   }
+  },
+  {
+   "id": "ct-PE-24",
+   "category": "money",
+   "text": {
+    "en": "The currency is the sol (PEN). Carry small bills and coins, since many small shops and market stalls cannot change large notes.",
+    "it": "La valuta è il sol (PEN). Porta banconote piccole e monete, perché molti negozietti e bancarelle non riescono a dare il resto di banconote grandi.",
+    "es": "La moneda es el sol (PEN). Lleva billetes pequeños y monedas, porque muchas tiendas pequeñas y puestos de mercado no pueden cambiar billetes grandes.",
+    "pt": "A moeda é o sol (PEN). Leva notas pequenas e moedas, porque muitas lojas pequenas e bancas de mercado não conseguem trocar notas grandes.",
+    "pt_BR": "A moeda é o sol (PEN). Leve notas pequenas e moedas, porque muitas lojinhas e barracas de mercado não conseguem dar troco de notas grandes.",
+    "fr": "La monnaie est le sol (PEN). Prends de petites coupures et de la monnaie, car beaucoup de petites boutiques et d'étals ne peuvent pas rendre la monnaie sur de gros billets.",
+    "de": "Die Währung ist der Sol (PEN). Hab kleine Scheine und Münzen dabei, denn viele kleine Läden und Marktstände können große Scheine nicht wechseln."
+   }
+  },
+  {
+   "id": "ct-PE-25",
+   "category": "photography",
+   "text": {
+    "en": "Ask before photographing people, especially in traditional dress in the Andes. Some may ask for a small tip, which is fair.",
+    "it": "Chiedi prima di fotografare le persone, soprattutto quelle in abiti tradizionali sulle Ande. Alcune potrebbero chiedere una piccola mancia, ed è giusto.",
+    "es": "Pregunta antes de fotografiar a personas, sobre todo con trajes tradicionales en los Andes. Algunas pueden pedir una pequeña propina, y es razonable.",
+    "pt": "Pergunta antes de fotografar pessoas, sobretudo com trajes tradicionais nos Andes. Algumas podem pedir uma pequena gorjeta, o que é justo.",
+    "pt_BR": "Pergunte antes de fotografar pessoas, principalmente com trajes tradicionais nos Andes. Algumas podem pedir uma pequena gorjeta, o que é justo.",
+    "fr": "Demande avant de photographier des personnes, surtout en tenue traditionnelle dans les Andes. Certaines peuvent demander un petit pourboire, ce qui est légitime.",
+    "de": "Frag nach, bevor du Menschen fotografierst, besonders in traditioneller Kleidung in den Anden. Manche bitten um ein kleines Trinkgeld, das ist in Ordnung."
+   }
+  },
+  {
+   "id": "ct-PE-26",
+   "category": "nightlife",
+   "text": {
+    "en": "A peña criolla is a lively evening of live music, with dances such as the marinera. It is a fun way to experience local culture.",
+    "it": "La peña criolla è una vivace serata di musica dal vivo, con balli come la marinera. È un modo divertente di conoscere la cultura locale.",
+    "es": "Una peña criolla es una animada velada de música en vivo, con bailes como la marinera. Es una forma divertida de conocer la cultura local.",
+    "pt": "Uma peña criolla é uma animada noite de música ao vivo, com danças como a marinera. É uma forma divertida de conhecer a cultura local.",
+    "pt_BR": "Uma peña criolla é uma noite animada de música ao vivo, com danças como a marinera. É um jeito divertido de conhecer a cultura local.",
+    "fr": "Une peña criolla est une soirée animée de musique live, avec des danses comme la marinera. C'est une façon sympa de découvrir la culture locale.",
+    "de": "Eine Peña criolla ist ein lebhafter Abend mit Livemusik und Tänzen wie der Marinera. So lernt man die lokale Kultur auf unterhaltsame Weise kennen."
+   }
+  },
+  {
+   "id": "ct-PE-27",
+   "category": "nature",
+   "text": {
+    "en": "Cusco lies at over 3,000 metres. Take it easy on your first day, drink plenty of water and ask locals about coca tea, a common remedy for altitude.",
+    "it": "Cusco si trova a oltre 3.000 metri. Il primo giorno vai piano, bevi molta acqua e chiedi ai locali del tè di coca, un rimedio comune contro il mal d'altura.",
+    "es": "Cusco está a más de 3000 metros. Tómatelo con calma el primer día, bebe mucha agua y pregunta a los locales por el mate de coca, un remedio habitual contra la altura.",
+    "pt": "Cusco fica a mais de 3000 metros. Vai com calma no primeiro dia, bebe muita água e pergunta aos locais pelo chá de coca, um remédio comum contra a altitude.",
+    "pt_BR": "Cusco fica a mais de 3000 metros. Vá com calma no primeiro dia, beba bastante água e pergunte aos locais sobre o chá de coca, um remédio comum contra a altitude.",
+    "fr": "Cusco se trouve à plus de 3 000 mètres. Vas-y doucement le premier jour, bois beaucoup d'eau et demande aux habitants le maté de coca, un remède courant contre l'altitude.",
+    "de": "Cusco liegt auf über 3000 Metern. Geh den ersten Tag ruhig an, trink viel Wasser und frag Einheimische nach Coca-Tee, einem verbreiteten Mittel gegen die Höhe."
+   }
+  },
+  {
+   "id": "ct-PE-28",
+   "category": "safety",
+   "text": {
+    "en": "In crowded markets and buses, keep your phone and wallet in a front pocket or zipped bag and stay aware of your belongings.",
+    "it": "Nei mercati affollati e sugli autobus tieni telefono e portafoglio in una tasca davanti o in una borsa con la zip, e fai attenzione ai tuoi effetti personali.",
+    "es": "En mercados y autobuses llenos, guarda el móvil y la cartera en un bolsillo delantero o en una bolsa con cremallera y vigila tus pertenencias.",
+    "pt": "Em mercados e autocarros cheios, guarda o telemóvel e a carteira num bolso da frente ou numa mala com fecho e fica atento aos teus pertences.",
+    "pt_BR": "Em mercados e ônibus lotados, guarde o celular e a carteira em um bolso da frente ou em uma bolsa com zíper e fique atento aos seus pertences.",
+    "fr": "Dans les marchés et les bus bondés, garde ton téléphone et ton portefeuille dans une poche avant ou un sac zippé et surveille tes affaires.",
+    "de": "Auf vollen Märkten und in Bussen trage Handy und Geldbeutel in der vorderen Tasche oder in einer Tasche mit Reißverschluss und achte auf deine Sachen."
+   }
+  },
+  {
+   "id": "ct-PE-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Peruvians are proud of regional differences across the coast, the Andes and the Amazon. Asking where someone is from often starts a great story.",
+    "it": "I peruviani sono orgogliosi delle differenze regionali tra costa, Ande e Amazzonia. Chiedere da dove viene qualcuno spesso dà inizio a una bella storia.",
+    "es": "Los peruanos están orgullosos de las diferencias regionales entre la costa, los Andes y la Amazonía. Preguntar de dónde es alguien suele abrir una gran historia.",
+    "pt": "Os peruanos têm orgulho das diferenças regionais entre a costa, os Andes e a Amazónia. Perguntar de onde alguém é costuma abrir uma boa história.",
+    "pt_BR": "Os peruanos têm orgulho das diferenças regionais entre a costa, os Andes e a Amazônia. Perguntar de onde alguém é costuma abrir uma boa história.",
+    "fr": "Les Péruviens sont fiers des différences régionales entre la côte, les Andes et l'Amazonie. Demander d'où vient quelqu'un lance souvent une belle histoire.",
+    "de": "Peruaner sind stolz auf die regionalen Unterschiede zwischen Küste, Anden und Amazonas. Die Frage, woher jemand kommt, eröffnet oft eine schöne Geschichte."
+   }
+  },
+  {
+   "id": "ct-PE-30",
+   "category": "nature",
+   "text": {
+    "en": "Hiking the Inca Trail requires a permit booked well in advance, and you must go with a licensed operator. Book early, especially for the dry season.",
+    "it": "Per percorrere il Cammino Inca serve un permesso prenotato con largo anticipo, e bisogna andare con un operatore autorizzato. Prenota presto, soprattutto per la stagione secca.",
+    "es": "Para hacer el Camino Inca se necesita un permiso reservado con mucha antelación y hay que ir con un operador autorizado. Reserva pronto, sobre todo para la temporada seca.",
+    "pt": "Para fazer o Caminho Inca é preciso uma licença reservada com muita antecedência e ir com um operador autorizado. Reserva cedo, sobretudo para a estação seca.",
+    "pt_BR": "Para fazer a Trilha Inca é preciso uma licença reservada com bastante antecedência e ir com uma operadora autorizada. Reserve cedo, principalmente para a estação seca.",
+    "fr": "Pour faire le chemin de l'Inca, il faut un permis réservé très longtemps à l'avance et partir avec un opérateur agréé. Réserve tôt, surtout pour la saison sèche.",
+    "de": "Für den Inka-Trail braucht man eine lange im Voraus gebuchte Genehmigung und einen zugelassenen Veranstalter. Buche früh, vor allem für die Trockenzeit."
+   }
+  }
+ ]
+}

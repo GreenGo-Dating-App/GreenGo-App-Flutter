@@ -1,0 +1,1178 @@
+{
+ "BE": [
+  {
+   "id": "ct-BE-01",
+   "category": "greetings",
+   "text": {
+    "en": "A handshake is the usual greeting at first meetings. Among friends, cheek kisses are common, and how many varies by region and person, so follow the other person's lead.",
+    "it": "All'inizio ci si saluta di solito con una stretta di mano. Tra amici sono comuni i baci sulla guancia, ma il numero varia da regione a regione: segui l'esempio dell'altra persona.",
+    "es": "El saludo habitual en un primer encuentro es el apretón de manos. Entre amigos son comunes los besos en la mejilla, y su número varía según la región y la persona, así que sigue el ejemplo del otro.",
+    "pt": "Num primeiro encontro cumprimenta-se normalmente com um aperto de mão. Entre amigos são comuns os beijos na face, e o número varia consoante a região e a pessoa, por isso segue o exemplo do outro.",
+    "pt_BR": "Num primeiro encontro, o cumprimento comum é o aperto de mão. Entre amigos são comuns os beijos no rosto, e o número varia conforme a região e a pessoa, então siga o exemplo do outro.",
+    "fr": "Une poignée de main est la façon habituelle de se saluer lors d'une première rencontre. Entre amis, on s'embrasse souvent sur la joue, le nombre de bises variant selon la région et la personne : suis l'autre.",
+    "de": "Beim ersten Treffen begrüßt man sich meist mit Handschlag. Unter Freunden sind Wangenküsse üblich, wobei die Anzahl je nach Region und Person variiert. Richte dich am besten nach deinem Gegenüber."
+   }
+  },
+  {
+   "id": "ct-BE-02",
+   "category": "greetings",
+   "text": {
+    "en": "It is polite to say hello when you enter a small shop, bakery or waiting room, and goodbye when you leave. Use the language of the region: bonjour, goedendag or guten Tag.",
+    "it": "È cortese salutare quando si entra in un piccolo negozio, in una panetteria o in una sala d'attesa, e salutare di nuovo uscendo. Usa la lingua della zona: bonjour, goedendag o guten Tag.",
+    "es": "Es de buena educación saludar al entrar en una tienda pequeña, una panadería o una sala de espera, y despedirse al salir. Usa el idioma de la zona: bonjour, goedendag o guten Tag.",
+    "pt": "É educado cumprimentar ao entrar numa loja pequena, numa padaria ou numa sala de espera, e despedir-se ao sair. Usa a língua da região: bonjour, goedendag ou guten Tag.",
+    "pt_BR": "É educado cumprimentar ao entrar numa loja pequena, padaria ou sala de espera, e se despedir ao sair. Use o idioma da região: bonjour, goedendag ou guten Tag.",
+    "fr": "Il est poli de dire bonjour en entrant dans un petit commerce, une boulangerie ou une salle d'attente, et au revoir en partant. Utilise la langue de la région : bonjour, goedendag ou guten Tag.",
+    "de": "Es ist höflich, beim Betreten eines kleinen Ladens, einer Bäckerei oder eines Wartezimmers zu grüßen und sich beim Gehen zu verabschieden. Nutze die Sprache der Region: bonjour, goedendag oder guten Tag."
+   }
+  },
+  {
+   "id": "ct-BE-03",
+   "category": "language",
+   "text": {
+    "en": "Belgium has three official languages: Dutch, French and German. Do not assume everyone speaks French; in Flanders it is kinder to ask first, 'Do you speak English?'",
+    "it": "Il Belgio ha tre lingue ufficiali: olandese, francese e tedesco. Non dare per scontato che tutti parlino francese; nelle Fiandre è più gentile chiedere prima: 'Parli inglese?'",
+    "es": "Bélgica tiene tres lenguas oficiales: neerlandés, francés y alemán. No des por hecho que todos hablan francés; en Flandes es más amable preguntar primero: '¿Hablas inglés?'",
+    "pt": "A Bélgica tem três línguas oficiais: neerlandês, francês e alemão. Não presumas que todos falam francês; na Flandres é mais simpático perguntar primeiro: 'Falas inglês?'",
+    "pt_BR": "A Bélgica tem três idiomas oficiais: neerlandês, francês e alemão. Não presuma que todos falam francês; em Flandres é mais gentil perguntar antes: 'Você fala inglês?'",
+    "fr": "La Belgique compte trois langues officielles : le néerlandais, le français et l'allemand. Ne suppose pas que tout le monde parle français ; en Flandre, il est plus aimable de demander d'abord : 'Tu parles anglais ?'",
+    "de": "Belgien hat drei Amtssprachen: Niederländisch, Französisch und Deutsch. Gehe nicht davon aus, dass alle Französisch sprechen; in Flandern ist es netter, zuerst zu fragen: 'Sprichst du Englisch?'"
+   }
+  },
+  {
+   "id": "ct-BE-04",
+   "category": "language",
+   "text": {
+    "en": "Brussels is officially bilingual in French and Dutch, and street signs and metro stops show both. Many locals switch easily between languages, so don't be surprised by mixed conversations.",
+    "it": "Bruxelles è ufficialmente bilingue, francese e olandese, e cartelli stradali e fermate della metro riportano entrambe le lingue. Molti passano con facilità da una lingua all'altra, quindi non stupirti delle conversazioni miste.",
+    "es": "Bruselas es oficialmente bilingüe, en francés y neerlandés, y tanto los carteles como las paradas de metro muestran ambos idiomas. Muchos cambian de lengua con facilidad, así que no te sorprendan las conversaciones mixtas.",
+    "pt": "Bruxelas é oficialmente bilingue, em francês e neerlandês, e as placas e as paragens de metro mostram as duas línguas. Muitos passam facilmente de uma língua para outra, por isso não estranhes conversas mistas.",
+    "pt_BR": "Bruxelas é oficialmente bilíngue, em francês e neerlandês, e as placas e as estações de metrô mostram os dois idiomas. Muita gente alterna facilmente entre as línguas, então não estranhe conversas mistas.",
+    "fr": "Bruxelles est officiellement bilingue, en français et en néerlandais, et les panneaux comme les stations de métro affichent les deux langues. Beaucoup passent aisément de l'une à l'autre : ne sois pas surpris(e) par les conversations mixtes.",
+    "de": "Brüssel ist offiziell zweisprachig, Französisch und Niederländisch, und Straßenschilder und Metrohaltestellen zeigen beide Sprachen. Viele wechseln mühelos zwischen den Sprachen, lass dich von gemischten Gesprächen also nicht irritieren."
+   }
+  },
+  {
+   "id": "ct-BE-05",
+   "category": "language",
+   "text": {
+    "en": "With older people or strangers, many Belgians use the formal 'vous' in French and 'u' in Dutch until invited to switch to 'tu' or 'je'. Let them make the first move.",
+    "it": "Con le persone anziane o con gli sconosciuti, molti belgi usano il 'vous' formale in francese e 'u' in olandese finché non vengono invitati al 'tu' o 'je'. Lascia che sia l'altro a proporlo.",
+    "es": "Con personas mayores o desconocidos, muchos belgas usan el 'vous' formal en francés y 'u' en neerlandés hasta que les proponen pasar a 'tu' o 'je'. Deja que la otra persona dé el primer paso.",
+    "pt": "Com pessoas mais velhas ou desconhecidos, muitos belgas usam o 'vous' formal em francês e o 'u' em neerlandês até lhes proporem passar ao 'tu' ou 'je'. Deixa que a outra pessoa dê o primeiro passo.",
+    "pt_BR": "Com pessoas mais velhas ou desconhecidos, muitos belgas usam o 'vous' formal em francês e o 'u' em neerlandês até serem convidados a passar para o 'tu' ou 'je'. Deixe a outra pessoa dar o primeiro passo.",
+    "fr": "Avec les personnes âgées ou les inconnus, beaucoup de Belges disent 'vous' en français et 'u' en néerlandais jusqu'à ce qu'on leur propose le 'tu' ou le 'je'. Laisse l'autre faire le premier pas.",
+    "de": "Bei älteren Menschen oder Fremden sagen viele Belgier auf Französisch 'vous' und auf Niederländisch 'u', bis das 'tu' oder 'je' angeboten wird. Überlass deinem Gegenüber den ersten Schritt."
+   }
+  },
+  {
+   "id": "ct-BE-06",
+   "category": "conversation",
+   "text": {
+    "en": "Food, cycling, comics, football and travel are easy conversation topics. Many people prefer not to debate the Flemish-Walloon divide with newcomers, so let locals bring it up if they wish.",
+    "it": "Cibo, ciclismo, fumetti, calcio e viaggi sono argomenti facili. Molti preferiscono non discutere con i nuovi arrivati della divisione tra fiamminghi e valloni: lascia che siano loro a toccare l'argomento.",
+    "es": "La comida, el ciclismo, los cómics, el fútbol y los viajes son temas fáciles. Muchos prefieren no debatir la división entre flamencos y valones con los recién llegados, así que deja que lo saquen ellos.",
+    "pt": "Comida, ciclismo, banda desenhada, futebol e viagens são temas fáceis. Muitos preferem não debater a divisão entre flamengos e valões com quem acabou de chegar, por isso deixa que sejam eles a levantar o assunto.",
+    "pt_BR": "Comida, ciclismo, quadrinhos, futebol e viagens são assuntos fáceis. Muita gente prefere não debater a divisão entre flamengos e valões com recém-chegados, então deixe que eles puxem o assunto.",
+    "fr": "La cuisine, le cyclisme, la bande dessinée, le football et les voyages sont des sujets faciles. Beaucoup préfèrent ne pas débattre de la division flamands-wallons avec les nouveaux venus : laisse-les en parler s'ils le souhaitent.",
+    "de": "Essen, Radsport, Comics, Fußball und Reisen sind leichte Gesprächsthemen. Viele möchten mit Neuankömmlingen nicht über den Gegensatz zwischen Flamen und Wallonen diskutieren; überlass es ihnen, das Thema anzusprechen."
+   }
+  },
+  {
+   "id": "ct-BE-07",
+   "category": "conversation",
+   "text": {
+    "en": "Belgians are often reserved at first but warm up once you show genuine interest. Avoid mixing them up with the Dutch or French; Belgium has its own identity and humour.",
+    "it": "I belgi sono spesso riservati all'inizio, ma si aprono quando mostri un interesse sincero. Evita di confonderli con olandesi o francesi: il Belgio ha una propria identità e un proprio umorismo.",
+    "es": "Los belgas suelen ser reservados al principio, pero se abren cuando muestras un interés sincero. Evita confundirlos con holandeses o franceses: Bélgica tiene su propia identidad y su propio humor.",
+    "pt": "Os belgas costumam ser reservados ao início, mas abrem-se quando mostras interesse genuíno. Evita confundi-los com holandeses ou franceses: a Bélgica tem a sua própria identidade e o seu próprio humor.",
+    "pt_BR": "Os belgas costumam ser reservados no início, mas se abrem quando você demonstra interesse genuíno. Evite confundi-los com holandeses ou franceses: a Bélgica tem identidade e humor próprios.",
+    "fr": "Les Belges sont souvent réservés au début, mais s'ouvrent quand tu montres un intérêt sincère. Évite de les confondre avec les Néerlandais ou les Français : la Belgique a sa propre identité et son propre humour.",
+    "de": "Belgier sind anfangs oft zurückhaltend, tauen aber auf, wenn du echtes Interesse zeigst. Verwechsle sie nicht mit Niederländern oder Franzosen; Belgien hat eine eigene Identität und einen eigenen Humor."
+   }
+  },
+  {
+   "id": "ct-BE-08",
+   "category": "dining",
+   "text": {
+    "en": "Fries are a national favourite, usually served in a paper cone with mayonnaise or another sauce. Moules-frites, mussels with fries, is another classic dish.",
+    "it": "Le patatine fritte sono un'icona nazionale, di solito servite in un cono di carta con maionese o un'altra salsa. Le moules-frites, cozze con patatine, sono un altro piatto classico.",
+    "es": "Las patatas fritas son un favorito nacional y suelen servirse en un cucurucho de papel con mayonesa u otra salsa. Los moules-frites, mejillones con patatas fritas, son otro plato clásico.",
+    "pt": "As batatas fritas são um favorito nacional, normalmente servidas num cone de papel com maionese ou outro molho. Os moules-frites, mexilhões com batatas fritas, são outro prato clássico.",
+    "pt_BR": "As batatas fritas são um favorito nacional, geralmente servidas num cone de papel com maionese ou outro molho. O moules-frites, mexilhões com batata frita, é outro prato clássico.",
+    "fr": "Les frites sont une star nationale, souvent servies dans un cornet de papier avec de la mayonnaise ou une autre sauce. Les moules-frites sont un autre grand classique.",
+    "de": "Pommes frites sind ein Nationalgericht, meist in einer Papiertüte mit Mayonnaise oder anderer Soße serviert. Moules-frites, Miesmuscheln mit Pommes, sind ein weiterer Klassiker."
+   }
+  },
+  {
+   "id": "ct-BE-09",
+   "category": "dining",
+   "text": {
+    "en": "Not all waffles are alike: Brussels waffles are light and rectangular, while Liège waffles are denser, sweeter and caramelised. Ask locals which they prefer and why.",
+    "it": "Non tutti i waffle sono uguali: quelli di Bruxelles sono leggeri e rettangolari, quelli di Liegi più densi, dolci e caramellati. Chiedi ai locali quale preferiscono e perché.",
+    "es": "No todos los gofres son iguales: los de Bruselas son ligeros y rectangulares, mientras que los de Lieja son más densos, dulces y caramelizados. Pregunta a los locales cuál prefieren y por qué.",
+    "pt": "Nem todas as waffles são iguais: as de Bruxelas são leves e retangulares, enquanto as de Liège são mais densas, doces e caramelizadas. Pergunta aos locais qual preferem e porquê.",
+    "pt_BR": "Nem todos os waffles são iguais: os de Bruxelas são leves e retangulares, já os de Liège são mais densos, doces e caramelizados. Pergunte aos locais qual preferem e por quê.",
+    "fr": "Toutes les gaufres ne se ressemblent pas : celle de Bruxelles est légère et rectangulaire, celle de Liège plus dense, sucrée et caramélisée. Demande aux habitants laquelle ils préfèrent et pourquoi.",
+    "de": "Waffel ist nicht gleich Waffel: Brüsseler Waffeln sind leicht und rechteckig, Lütticher Waffeln dichter, süßer und karamellisiert. Frag Einheimische, welche sie bevorzugen und warum."
+   }
+  },
+  {
+   "id": "ct-BE-10",
+   "category": "dining",
+   "text": {
+    "en": "In restaurants, the waiter often will not bring the bill until you ask for it. Lingering over a meal is normal, so say 'the bill, please' when you are ready to leave.",
+    "it": "Nei ristoranti il cameriere spesso non porta il conto finché non lo chiedi. Trattenersi a tavola è normale, perciò chiedi 'il conto, per favore' quando sei pronto ad andare.",
+    "es": "En los restaurantes, el camarero a menudo no trae la cuenta hasta que la pides. Alargar la sobremesa es normal, así que pide 'la cuenta, por favor' cuando quieras irte.",
+    "pt": "Nos restaurantes, o empregado muitas vezes só traz a conta quando a pedes. Demorar-se à mesa é normal, por isso pede 'a conta, por favor' quando quiseres sair.",
+    "pt_BR": "Nos restaurantes, o garçom muitas vezes só traz a conta quando você pede. Ficar um tempão à mesa é normal, então peça 'a conta, por favor' quando quiser sair.",
+    "fr": "Au restaurant, le serveur n'apporte souvent l'addition que si on la demande. S'attarder à table est normal : dis 'l'addition, s'il vous plaît' quand tu es prêt(e) à partir.",
+    "de": "Im Restaurant bringt der Kellner die Rechnung oft erst, wenn man danach fragt. Lange sitzen zu bleiben ist normal; sag 'die Rechnung, bitte', wenn du gehen möchtest."
+   }
+  },
+  {
+   "id": "ct-BE-11",
+   "category": "tipping",
+   "text": {
+    "en": "Service is already included in restaurant and café prices, so tipping is not required. Many people round up the bill or leave a few coins for good service.",
+    "it": "Il servizio è già incluso nei prezzi di ristoranti e caffè, quindi la mancia non è obbligatoria. Molti arrotondano il conto o lasciano qualche moneta per un buon servizio.",
+    "es": "El servicio ya está incluido en los precios de restaurantes y cafés, por lo que la propina no es obligatoria. Muchos redondean la cuenta o dejan unas monedas por un buen servicio.",
+    "pt": "O serviço já está incluído nos preços de restaurantes e cafés, por isso a gorjeta não é obrigatória. Muitas pessoas arredondam a conta ou deixam algumas moedas por um bom serviço.",
+    "pt_BR": "O serviço já está incluído nos preços de restaurantes e cafés, então a gorjeta não é obrigatória. Muita gente arredonda a conta ou deixa algumas moedas por um bom atendimento.",
+    "fr": "Le service est déjà compris dans les prix des restaurants et cafés, le pourboire n'est donc pas obligatoire. Beaucoup arrondissent l'addition ou laissent quelques pièces pour un bon service.",
+    "de": "Der Service ist in den Preisen von Restaurants und Cafés bereits enthalten, ein Trinkgeld ist daher nicht nötig. Viele runden die Rechnung auf oder lassen für guten Service ein paar Münzen da."
+   }
+  },
+  {
+   "id": "ct-BE-12",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to someone's home, bring flowers, chocolates or a dessert. Avoid chrysanthemums, which are traditionally associated with funerals and cemeteries.",
+    "it": "Se sei invitato a casa di qualcuno, porta fiori, cioccolatini o un dolce. Evita i crisantemi, tradizionalmente legati a funerali e cimiteri.",
+    "es": "Si te invitan a casa de alguien, lleva flores, bombones o un postre. Evita los crisantemos, tradicionalmente asociados con funerales y cementerios.",
+    "pt": "Quando fores convidado para a casa de alguém, leva flores, chocolates ou uma sobremesa. Evita crisântemos, tradicionalmente associados a funerais e cemitérios.",
+    "pt_BR": "Ao ser convidado para a casa de alguém, leve flores, chocolates ou uma sobremesa. Evite crisântemos, tradicionalmente associados a funerais e cemitérios.",
+    "fr": "Quand tu es invité(e) chez quelqu'un, apporte des fleurs, des chocolats ou un dessert. Évite les chrysanthèmes, traditionnellement associés aux funérailles et aux cimetières.",
+    "de": "Wenn du zu jemandem nach Hause eingeladen bist, bring Blumen, Pralinen oder einen Nachtisch mit. Vermeide Chrysanthemen, die traditionell mit Beerdigungen und Friedhöfen verbunden sind."
+   }
+  },
+  {
+   "id": "ct-BE-13",
+   "category": "gifts",
+   "text": {
+    "en": "Belgian chocolate and pralines make a well-loved gift. Boxes from well-known chocolatiers are appreciated, but a small box from a local artisan shop shows extra thought.",
+    "it": "Il cioccolato e le praline belghe sono un regalo molto gradito. Le scatole delle cioccolaterie più note piacciono, ma una piccola confezione di un artigiano locale dimostra ancora più attenzione.",
+    "es": "El chocolate y las pralinas belgas son un regalo muy apreciado. Las cajas de chocolateros conocidos gustan, pero una caja pequeña de un artesano local demuestra aún más cuidado.",
+    "pt": "O chocolate e as pralinas belgas são uma prenda muito apreciada. As caixas de chocolateiros conhecidos agradam, mas uma caixa pequena de um artesão local mostra ainda mais carinho.",
+    "pt_BR": "O chocolate e os pralinés belgas são um presente muito apreciado. Caixas de chocolateiros conhecidos agradam, mas uma caixinha de um artesão local mostra ainda mais carinho.",
+    "fr": "Le chocolat et les pralines belges font un cadeau très apprécié. Les boîtes de grandes maisons plaisent, mais une petite boîte d'un artisan local montre encore plus d'attention.",
+    "de": "Belgische Schokolade und Pralinen sind ein beliebtes Geschenk. Schachteln bekannter Chocolatiers kommen gut an, doch eine kleine Packung vom lokalen Handwerker zeigt noch mehr Aufmerksamkeit."
+   }
+  },
+  {
+   "id": "ct-BE-14",
+   "category": "dress",
+   "text": {
+    "en": "People tend to dress neatly but casually; smart casual works almost everywhere. The weather changes quickly, so a light rain jacket or umbrella is a good idea in any season.",
+    "it": "Ci si veste in modo curato ma casual; lo smart casual va bene quasi ovunque. Il tempo cambia in fretta, quindi una giacca leggera impermeabile o un ombrello sono utili in ogni stagione.",
+    "es": "La gente suele vestir de forma cuidada pero informal; el estilo smart casual sirve casi en todas partes. El tiempo cambia rápido, así que un chubasquero ligero o un paraguas es buena idea en cualquier estación.",
+    "pt": "As pessoas vestem-se de forma cuidada mas descontraída; o estilo smart casual serve quase em todo o lado. O tempo muda depressa, por isso um impermeável leve ou um guarda-chuva é boa ideia em qualquer estação.",
+    "pt_BR": "As pessoas se vestem de forma arrumada mas despojada; o estilo esporte fino serve quase em todo lugar. O tempo muda rápido, então uma capa de chuva leve ou um guarda-chuva é boa ideia em qualquer estação.",
+    "fr": "On s'habille de façon soignée mais décontractée ; le smart casual convient presque partout. Le temps change vite : un imperméable léger ou un parapluie est une bonne idée en toute saison.",
+    "de": "Man kleidet sich gepflegt, aber leger; Smart Casual passt fast überall. Das Wetter schlägt schnell um, daher sind eine leichte Regenjacke oder ein Schirm zu jeder Jahreszeit sinnvoll."
+   }
+  },
+  {
+   "id": "ct-BE-15",
+   "category": "religion_sites",
+   "text": {
+    "en": "Belgium's cathedrals and churches are open to visitors, but many are active places of worship. Speak quietly, cover bare shoulders if you can, and avoid walking around during services.",
+    "it": "Le cattedrali e le chiese del Belgio sono aperte ai visitatori, ma molte sono luoghi di culto attivi. Parla a bassa voce, copri le spalle se puoi ed evita di girare durante le funzioni.",
+    "es": "Las catedrales e iglesias de Bélgica están abiertas a los visitantes, pero muchas son lugares de culto activos. Habla en voz baja, cúbrete los hombros si puedes y evita pasear durante los oficios.",
+    "pt": "As catedrais e igrejas da Bélgica estão abertas aos visitantes, mas muitas são locais de culto ativos. Fala baixo, tapa os ombros se puderes e evita circular durante as cerimónias.",
+    "pt_BR": "As catedrais e igrejas da Bélgica estão abertas aos visitantes, mas muitas são locais de culto ativos. Fale baixo, cubra os ombros se puder e evite circular durante as celebrações.",
+    "fr": "Les cathédrales et églises de Belgique sont ouvertes aux visiteurs, mais beaucoup sont des lieux de culte actifs. Parle doucement, couvre tes épaules si possible et évite de circuler pendant les offices.",
+    "de": "Belgiens Kathedralen und Kirchen stehen Besuchern offen, doch viele sind aktive Gotteshäuser. Sprich leise, bedecke wenn möglich die Schultern und geh während der Gottesdienste nicht umher."
+   }
+  },
+  {
+   "id": "ct-BE-16",
+   "category": "gestures",
+   "text": {
+    "en": "Belgians tend to speak at a moderate volume and use few big gestures. Keep your voice calm in public, especially on trains and trams, where people often prefer quiet.",
+    "it": "I belgi tendono a parlare a volume moderato e a gesticolare poco. In pubblico mantieni la voce calma, soprattutto su treni e tram, dove spesso si preferisce il silenzio.",
+    "es": "Los belgas suelen hablar en un volumen moderado y gesticular poco. Mantén la voz tranquila en público, sobre todo en trenes y tranvías, donde a menudo se prefiere el silencio.",
+    "pt": "Os belgas tendem a falar num volume moderado e a gesticular pouco. Mantém a voz calma em público, sobretudo em comboios e elétricos, onde muitas vezes se prefere o silêncio.",
+    "pt_BR": "Os belgas costumam falar em volume moderado e gesticular pouco. Mantenha a voz calma em público, principalmente em trens e bondes, onde muitas vezes se prefere o silêncio.",
+    "fr": "Les Belges parlent en général à volume modéré et gesticulent peu. Garde une voix calme en public, surtout dans les trains et les trams, où l'on apprécie souvent le calme.",
+    "de": "Belgier sprechen meist mit mäßiger Lautstärke und gestikulieren wenig. Bleib in der Öffentlichkeit leise, besonders in Zügen und Trams, wo Ruhe oft geschätzt wird."
+   }
+  },
+  {
+   "id": "ct-BE-17",
+   "category": "punctuality",
+   "text": {
+    "en": "Being on time matters for appointments, work meetings and dinner invitations. If you are running late, send a quick message instead of arriving without notice.",
+    "it": "La puntualità conta per appuntamenti, riunioni di lavoro e inviti a cena. Se sei in ritardo, manda un breve messaggio invece di presentarti senza avvisare.",
+    "es": "La puntualidad importa en citas, reuniones de trabajo e invitaciones a cenar. Si vas a llegar tarde, envía un mensaje rápido en lugar de aparecer sin avisar.",
+    "pt": "A pontualidade é importante em marcações, reuniões de trabalho e convites para jantar. Se te atrasares, envia uma mensagem rápida em vez de chegares sem avisar.",
+    "pt_BR": "A pontualidade importa em compromissos, reuniões de trabalho e convites para jantar. Se for se atrasar, mande uma mensagem rápida em vez de chegar sem avisar.",
+    "fr": "La ponctualité compte pour les rendez-vous, les réunions de travail et les invitations à dîner. Si tu as du retard, envoie un petit message plutôt que d'arriver sans prévenir.",
+    "de": "Pünktlichkeit zählt bei Terminen, Arbeitsbesprechungen und Einladungen zum Essen. Wenn du dich verspätest, schreib kurz Bescheid, statt unangekündigt aufzutauchen."
+   }
+  },
+  {
+   "id": "ct-BE-18",
+   "category": "public_behavior",
+   "text": {
+    "en": "Waste sorting is taken seriously, with separate bags or bins for different materials, such as the blue bag for plastic bottles, metal cans and drink cartons. Ask your host or landlord for the local rules.",
+    "it": "La raccolta differenziata è presa sul serio, con sacchi o bidoni separati per i diversi materiali, come il sacco blu per bottiglie di plastica, lattine e cartoni per bevande. Chiedi le regole locali a chi ti ospita.",
+    "es": "La separación de residuos se toma en serio, con bolsas o contenedores distintos según el material, como la bolsa azul para botellas de plástico, latas y briks. Pregunta las normas locales a tu anfitrión o casero.",
+    "pt": "A separação de lixo é levada a sério, com sacos ou contentores distintos para cada material, como o saco azul para garrafas de plástico, latas e embalagens de bebidas. Pergunta as regras locais a quem te recebe.",
+    "pt_BR": "A separação do lixo é levada a sério, com sacos ou lixeiras diferentes para cada material, como o saco azul para garrafas plásticas, latas e caixas de bebida. Pergunte as regras locais a quem te recebe.",
+    "fr": "Le tri des déchets est pris au sérieux, avec des sacs ou poubelles distincts selon les matières, comme le sac bleu pour les bouteilles en plastique, canettes et cartons à boisson. Demande les règles locales à ton hôte.",
+    "de": "Mülltrennung wird ernst genommen, mit getrennten Säcken oder Tonnen je nach Material, etwa dem blauen Sack für Plastikflaschen, Metalldosen und Getränkekartons. Frag deine Gastgeber nach den örtlichen Regeln."
+   }
+  },
+  {
+   "id": "ct-BE-19",
+   "category": "transport",
+   "text": {
+    "en": "Buy your train ticket before boarding, because purchasing it on the train can cost extra. Check the platform on the screens, as it can change shortly before departure.",
+    "it": "Compra il biglietto del treno prima di salire, perché acquistarlo a bordo può costare di più. Controlla il binario sugli schermi, perché può cambiare poco prima della partenza.",
+    "es": "Compra el billete de tren antes de subir, porque comprarlo a bordo puede costar más. Comprueba el andén en las pantallas, ya que puede cambiar poco antes de la salida.",
+    "pt": "Compra o bilhete de comboio antes de embarcar, porque comprá-lo a bordo pode custar mais. Confirma a linha nos ecrãs, pois pode mudar pouco antes da partida.",
+    "pt_BR": "Compre a passagem de trem antes de embarcar, porque comprar a bordo pode custar mais. Confira a plataforma nos painéis, pois ela pode mudar pouco antes da partida.",
+    "fr": "Achète ton billet de train avant de monter, car l'acheter à bord peut coûter plus cher. Vérifie le quai sur les écrans, car il peut changer peu avant le départ.",
+    "de": "Kauf dein Zugticket vor dem Einsteigen, denn im Zug kann es teurer sein. Prüf das Gleis auf den Anzeigen, es kann sich kurz vor der Abfahrt ändern."
+   }
+  },
+  {
+   "id": "ct-BE-20",
+   "category": "transport",
+   "text": {
+    "en": "Cycling is hugely popular, and cyclists often have their own lanes. Look carefully before crossing a bike lane or opening a car door, and keep to the right when you cycle.",
+    "it": "Il ciclismo è molto popolare e i ciclisti hanno spesso corsie dedicate. Guarda bene prima di attraversare una pista ciclabile o aprire la portiera di un'auto e, se pedali, tieni la destra.",
+    "es": "El ciclismo es muy popular y los ciclistas suelen tener carriles propios. Mira bien antes de cruzar un carril bici o abrir la puerta de un coche, y circula por la derecha si vas en bici.",
+    "pt": "O ciclismo é muito popular e os ciclistas têm muitas vezes ciclovias próprias. Olha bem antes de atravessar uma ciclovia ou abrir a porta de um carro, e circula pela direita se andares de bicicleta.",
+    "pt_BR": "O ciclismo é muito popular e os ciclistas costumam ter ciclovias próprias. Olhe bem antes de atravessar uma ciclovia ou abrir a porta de um carro, e siga pela direita se for pedalar.",
+    "fr": "Le vélo est très populaire et les cyclistes ont souvent leurs propres pistes. Regarde bien avant de traverser une piste cyclable ou d'ouvrir une portière, et roule à droite à vélo.",
+    "de": "Radfahren ist sehr beliebt, und Radfahrer haben oft eigene Spuren. Schau genau, bevor du einen Radweg überquerst oder eine Autotür öffnest, und fahr mit dem Rad rechts."
+   }
+  },
+  {
+   "id": "ct-BE-21",
+   "category": "festivals",
+   "text": {
+    "en": "The three-day Carnival of Binche, with its costumed Gilles in tall plumed hats, is one of the best-known folk festivals in Belgium. Locals are proud of it, so show real curiosity.",
+    "it": "Il Carnevale di Binche, di tre giorni, con i suoi Gilles in costume e alti cappelli piumati, è una delle feste popolari più note del Belgio. I locali ne vanno fieri: mostra vera curiosità.",
+    "es": "El Carnaval de Binche, de tres días, con sus Gilles disfrazados y altos sombreros de plumas, es una de las fiestas populares más conocidas de Bélgica. Los locales están orgullosos de él: muestra curiosidad sincera.",
+    "pt": "O Carnaval de Binche, de três dias, com os seus Gilles trajados e altos chapéus de penas, é uma das festas populares mais conhecidas da Bélgica. Os locais têm orgulho nele, por isso mostra curiosidade genuína.",
+    "pt_BR": "O Carnaval de Binche, de três dias, com seus Gilles fantasiados e altos chapéus de plumas, é uma das festas populares mais conhecidas da Bélgica. Os locais têm orgulho dele, então mostre curiosidade genuína.",
+    "fr": "Le Carnaval de Binche, qui dure trois jours, avec ses Gilles costumés et leurs hauts chapeaux à plumes, est l'une des fêtes populaires les plus connues de Belgique. Les habitants en sont fiers : montre une vraie curiosité.",
+    "de": "Der dreitägige Karneval von Binche mit seinen kostümierten Gilles und hohen Federhüten ist eines der bekanntesten Volksfeste Belgiens. Die Einheimischen sind stolz darauf, zeig also echtes Interesse."
+   }
+  },
+  {
+   "id": "ct-BE-22",
+   "category": "festivals",
+   "text": {
+    "en": "Saint Nicholas Day on 6 December is a children's festival. On the evening of 5 December, many children put out a shoe with a carrot for the saint's horse, hoping to find sweets and small gifts.",
+    "it": "Il giorno di San Nicola, il 6 dicembre, è una festa per bambini. La sera del 5 dicembre molti bambini mettono fuori una scarpa con una carota per il cavallo del santo, sperando di trovare dolci e piccoli regali.",
+    "es": "El día de San Nicolás, el 6 de diciembre, es una fiesta infantil. La noche del 5 de diciembre muchos niños dejan un zapato con una zanahoria para el caballo del santo, esperando encontrar dulces y pequeños regalos.",
+    "pt": "O dia de São Nicolau, a 6 de dezembro, é uma festa para crianças. Na noite de 5 de dezembro, muitas crianças deixam um sapato com uma cenoura para o cavalo do santo, na esperança de encontrar doces e pequenas prendas.",
+    "pt_BR": "O dia de São Nicolau, 6 de dezembro, é uma festa para crianças. Na noite de 5 de dezembro, muitas crianças deixam um sapato com uma cenoura para o cavalo do santo, na esperança de encontrar doces e pequenos presentes.",
+    "fr": "La Saint-Nicolas, le 6 décembre, est une fête pour les enfants. Le soir du 5 décembre, beaucoup d'enfants posent un soulier avec une carotte pour le cheval du saint, en espérant y trouver des friandises et de petits cadeaux.",
+    "de": "Der Nikolaustag am 6. Dezember ist ein Fest für Kinder. Am Abend des 5. Dezember stellen viele Kinder einen Schuh mit einer Karotte für das Pferd des Heiligen hin und hoffen auf Süßigkeiten und kleine Geschenke."
+   }
+  },
+  {
+   "id": "ct-BE-23",
+   "category": "family",
+   "text": {
+    "en": "Many Belgians value their privacy and family time, so it is usual to arrange visits in advance rather than dropping by unannounced. A set time for coffee or dinner is common.",
+    "it": "Molti belgi tengono alla privacy e al tempo in famiglia, quindi di solito le visite si concordano in anticipo invece di presentarsi senza preavviso. È comune fissare un orario per un caffè o una cena.",
+    "es": "Muchos belgas valoran su intimidad y el tiempo en familia, por lo que lo habitual es concertar las visitas con antelación en lugar de presentarse sin avisar. Es común quedar a una hora fija para un café o una cena.",
+    "pt": "Muitos belgas valorizam a privacidade e o tempo em família, pelo que é habitual combinar as visitas com antecedência em vez de aparecer sem avisar. É comum marcar uma hora para um café ou jantar.",
+    "pt_BR": "Muitos belgas valorizam a privacidade e o tempo em família, então o costume é combinar as visitas com antecedência em vez de aparecer sem avisar. É comum marcar um horário para um café ou jantar.",
+    "fr": "Beaucoup de Belges tiennent à leur intimité et au temps en famille : on convient donc en général des visites à l'avance plutôt que de passer à l'improviste. Fixer une heure pour un café ou un dîner est courant.",
+    "de": "Vielen Belgiern sind Privatsphäre und Familienzeit wichtig, daher verabredet man Besuche meist im Voraus, statt unangemeldet vorbeizukommen. Eine feste Uhrzeit für Kaffee oder Abendessen ist üblich."
+   }
+  },
+  {
+   "id": "ct-BE-24",
+   "category": "money",
+   "text": {
+    "en": "Belgium uses the euro. Cards and contactless payments are widely accepted, and Bancontact is the common local debit card; a few small shops and markets still prefer cash.",
+    "it": "Il Belgio usa l'euro. Carte e pagamenti contactless sono ampiamente accettati e Bancontact è la comune carta di debito locale; alcuni piccoli negozi e mercati preferiscono ancora i contanti.",
+    "es": "Bélgica usa el euro. Las tarjetas y los pagos sin contacto se aceptan ampliamente, y Bancontact es la tarjeta de débito local más común; algunas tiendas pequeñas y mercados aún prefieren efectivo.",
+    "pt": "A Bélgica usa o euro. Os cartões e os pagamentos sem contacto são amplamente aceites, e o Bancontact é o cartão de débito local mais comum; algumas lojas pequenas e mercados ainda preferem dinheiro.",
+    "pt_BR": "A Bélgica usa o euro. Cartões e pagamentos por aproximação são amplamente aceitos, e o Bancontact é o cartão de débito local mais comum; algumas lojinhas e feiras ainda preferem dinheiro.",
+    "fr": "La Belgique utilise l'euro. Les cartes et le paiement sans contact sont largement acceptés, et Bancontact est la carte de débit locale la plus courante ; quelques petits commerces et marchés préfèrent encore l'espèce.",
+    "de": "Belgien nutzt den Euro. Karten und kontaktloses Bezahlen werden weitgehend akzeptiert, Bancontact ist die gängige lokale Debitkarte; einige kleine Läden und Märkte bevorzugen noch Bargeld."
+   }
+  },
+  {
+   "id": "ct-BE-25",
+   "category": "photography",
+   "text": {
+    "en": "Ask before photographing people, especially children, and respect any no-photo signs in museums and churches. Many people value their privacy and are sensitive about it.",
+    "it": "Chiedi il permesso prima di fotografare le persone, soprattutto i bambini, e rispetta i cartelli di divieto di fotografare in musei e chiese. Molti tengono alla propria privacy.",
+    "es": "Pide permiso antes de fotografiar a personas, sobre todo a niños, y respeta los carteles de prohibido fotografiar en museos e iglesias. Muchos valoran su privacidad y son sensibles a ello.",
+    "pt": "Pede licença antes de fotografar pessoas, sobretudo crianças, e respeita os avisos de proibição de fotografias em museus e igrejas. Muitos valorizam a sua privacidade.",
+    "pt_BR": "Peça licença antes de fotografar pessoas, principalmente crianças, e respeite as placas de proibido fotografar em museus e igrejas. Muita gente valoriza a própria privacidade.",
+    "fr": "Demande avant de photographier des personnes, surtout des enfants, et respecte les panneaux interdisant les photos dans les musées et les églises. Beaucoup tiennent à leur vie privée.",
+    "de": "Frag nach, bevor du Menschen, besonders Kinder, fotografierst, und beachte Fotoverbotsschilder in Museen und Kirchen. Vielen ist ihre Privatsphäre wichtig."
+   }
+  },
+  {
+   "id": "ct-BE-26",
+   "category": "nightlife",
+   "text": {
+    "en": "Cafés and pubs are social hubs, and staff usually serve you at your table. You are not expected to leave quickly after finishing a drink; locals often stay for hours chatting.",
+    "it": "Caffè e pub sono luoghi di ritrovo e il personale di solito serve al tavolo. Non ci si aspetta che tu vada via subito dopo aver finito la consumazione: spesso si resta ore a chiacchierare.",
+    "es": "Los cafés y pubs son lugares de encuentro, y el personal suele atenderte en la mesa. No se espera que te vayas enseguida al terminar la consumición; los locales suelen quedarse horas charlando.",
+    "pt": "Os cafés e pubs são pontos de encontro e os empregados costumam servir à mesa. Não se espera que saias logo depois de acabares a bebida; os locais ficam muitas vezes horas a conversar.",
+    "pt_BR": "Cafés e pubs são pontos de encontro, e os atendentes costumam servir na mesa. Não se espera que você saia logo depois de terminar a bebida; os locais costumam ficar horas conversando.",
+    "fr": "Les cafés et les pubs sont des lieux de rencontre, et le personnel te sert en général à table. On ne s'attend pas à ce que tu partes dès ton verre fini : les habitants restent souvent des heures à discuter.",
+    "de": "Cafés und Kneipen sind Treffpunkte, und das Personal bedient meist am Tisch. Man erwartet nicht, dass du nach dem Austrinken sofort gehst; Einheimische sitzen oft stundenlang beim Plaudern zusammen."
+   }
+  },
+  {
+   "id": "ct-BE-27",
+   "category": "nature",
+   "text": {
+    "en": "The Ardennes in southern Belgium are popular for hiking, forests and river valleys, and the Flemish coast has long sandy beaches. Follow marked trails and take your litter with you.",
+    "it": "Le Ardenne, nel sud del Belgio, sono popolari per escursioni, foreste e valli fluviali, mentre la costa fiamminga ha lunghe spiagge sabbiose. Segui i sentieri segnalati e porta via i rifiuti.",
+    "es": "Las Ardenas, en el sur de Bélgica, son populares para el senderismo, con bosques y valles fluviales, y la costa flamenca tiene largas playas de arena. Sigue los senderos señalizados y llévate la basura.",
+    "pt": "As Ardenas, no sul da Bélgica, são populares para caminhadas, com florestas e vales fluviais, e a costa flamenga tem longas praias de areia. Segue os trilhos sinalizados e leva o lixo contigo.",
+    "pt_BR": "As Ardenas, no sul da Bélgica, são populares para caminhadas, com florestas e vales de rios, e a costa flamenga tem longas praias de areia. Siga as trilhas sinalizadas e leve seu lixo com você.",
+    "fr": "Les Ardennes, dans le sud de la Belgique, sont prisées pour la randonnée, avec leurs forêts et vallées, et la côte flamande offre de longues plages de sable. Suis les sentiers balisés et emporte tes déchets.",
+    "de": "Die Ardennen im Süden Belgiens sind mit ihren Wäldern und Flusstälern ein beliebtes Wandergebiet, und die flämische Küste bietet lange Sandstrände. Bleib auf markierten Wegen und nimm deinen Müll mit."
+   }
+  },
+  {
+   "id": "ct-BE-28",
+   "category": "safety",
+   "text": {
+    "en": "The emergency number is 112. Belgium is generally safe, but keep an eye on your phone and bag in busy places such as big train stations and crowded trams.",
+    "it": "Il numero di emergenza è il 112. Il Belgio è in genere sicuro, ma tieni d'occhio telefono e borsa nei luoghi affollati, come le grandi stazioni e i tram pieni.",
+    "es": "El número de emergencias es el 112. Bélgica es en general segura, pero vigila el móvil y el bolso en lugares concurridos, como las grandes estaciones y los tranvías llenos.",
+    "pt": "O número de emergência é o 112. A Bélgica é geralmente segura, mas vigia o telemóvel e a mala em locais movimentados, como grandes estações e elétricos cheios.",
+    "pt_BR": "O número de emergência é 112. A Bélgica é em geral segura, mas fique de olho no celular e na bolsa em lugares movimentados, como grandes estações e bondes lotados.",
+    "fr": "Le numéro d'urgence est le 112. La Belgique est généralement sûre, mais garde un oeil sur ton téléphone et ton sac dans les lieux animés, comme les grandes gares et les trams bondés.",
+    "de": "Die Notrufnummer ist 112. Belgien ist im Allgemeinen sicher, doch achte an belebten Orten wie großen Bahnhöfen und vollen Trams auf Handy und Tasche."
+   }
+  },
+  {
+   "id": "ct-BE-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Belgium is proud of its comic-strip tradition, from Tintin to the Smurfs. Telling a local which comic you grew up with is a friendly way to start a conversation.",
+    "it": "Il Belgio è fiero della sua tradizione fumettistica, da Tintin ai Puffi. Dire a un locale con quale fumetto sei cresciuto è un modo simpatico per iniziare a parlare.",
+    "es": "Bélgica está orgullosa de su tradición del cómic, desde Tintín hasta los Pitufos. Contarle a un local con qué cómic creciste es una forma amable de empezar una conversación.",
+    "pt": "A Bélgica orgulha-se da sua tradição de banda desenhada, de Tintim aos Estrunfes. Contar a um local com que banda desenhada cresceste é uma forma simpática de começar conversa.",
+    "pt_BR": "A Bélgica se orgulha de sua tradição de quadrinhos, de Tintim aos Smurfs. Contar a um local com qual quadrinho você cresceu é uma forma simpática de puxar conversa.",
+    "fr": "La Belgique est fière de sa tradition de la bande dessinée, de Tintin aux Schtroumpfs. Dire à un habitant avec quelle BD tu as grandi est une façon sympathique d'engager la conversation.",
+    "de": "Belgien ist stolz auf seine Comictradition, von Tim und Struppi bis zu den Schlümpfen. Einem Einheimischen zu erzählen, mit welchem Comic du aufgewachsen bist, ist ein freundlicher Gesprächseinstieg."
+   }
+  },
+  {
+   "id": "ct-BE-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Many Belgian towns have their own folklore, with processions, giants and parades such as ommegangs and ducasses. Asking about your host's local tradition is usually welcomed.",
+    "it": "Molte città belghe hanno un proprio folclore, con processioni, giganti e sfilate come gli ommegang e le ducasse. Chiedere della tradizione locale di chi ti ospita è di solito molto gradito.",
+    "es": "Muchas ciudades belgas tienen su propio folclore, con procesiones, gigantes y desfiles como los ommegang y las ducasses. Preguntar por la tradición local de tu anfitrión suele ser bien recibido.",
+    "pt": "Muitas cidades belgas têm o seu próprio folclore, com procissões, gigantes e desfiles como os ommegang e as ducasses. Perguntar pela tradição local de quem te recebe costuma ser bem-vindo.",
+    "pt_BR": "Muitas cidades belgas têm folclore próprio, com procissões, gigantes e desfiles como os ommegang e as ducasses. Perguntar sobre a tradição local de quem te recebe costuma ser bem-vindo.",
+    "fr": "De nombreuses villes belges ont leur propre folklore, avec processions, géants et cortèges comme les ommegangs et les ducasses. Interroger ton hôte sur la tradition locale est généralement bien accueilli.",
+    "de": "Viele belgische Städte haben eigenes Brauchtum mit Prozessionen, Riesen und Umzügen wie Ommegang und Ducasse. Nach der Tradition vor Ort zu fragen, kommt bei Gastgebern meist gut an."
+   }
+  }
+ ],
+ "BG": [
+  {
+   "id": "ct-BG-01",
+   "category": "greetings",
+   "text": {
+    "en": "A firm handshake with eye contact is the usual greeting. Close friends often hug or kiss on the cheek. Use 'Zdraveyte' with strangers and the casual 'Zdravey' or 'Ciao' with friends.",
+    "it": "La solita forma di saluto è una stretta di mano decisa con contatto visivo. Gli amici stretti spesso si abbracciano o si baciano sulla guancia. Usa 'Zdraveyte' con gli sconosciuti e il più informale 'Zdravey' o 'Ciao' con gli amici.",
+    "es": "El saludo habitual es un apretón de manos firme con contacto visual. Los amigos cercanos suelen abrazarse o darse un beso en la mejilla. Usa 'Zdraveyte' con desconocidos y el informal 'Zdravey' o 'Ciao' con amigos.",
+    "pt": "O cumprimento habitual é um aperto de mão firme com contacto visual. Os amigos próximos costumam abraçar-se ou dar um beijo na face. Usa 'Zdraveyte' com desconhecidos e o informal 'Zdravey' ou 'Ciao' com amigos.",
+    "pt_BR": "O cumprimento comum é um aperto de mão firme com contato visual. Amigos próximos costumam se abraçar ou dar um beijo no rosto. Use 'Zdraveyte' com desconhecidos e o informal 'Zdravey' ou 'Ciao' com amigos.",
+    "fr": "La salutation habituelle est une poignée de main ferme avec contact visuel. Les amis proches s'embrassent ou se font la bise. Utilise 'Zdraveyte' avec les inconnus et le familier 'Zdravey' ou 'Ciao' avec les amis.",
+    "de": "Üblich ist ein fester Händedruck mit Blickkontakt. Enge Freunde umarmen sich oft oder küssen sich auf die Wange. Sag 'Zdraveyte' zu Fremden und das lockere 'Zdravey' oder 'Ciao' zu Freunden."
+   }
+  },
+  {
+   "id": "ct-BG-02",
+   "category": "greetings",
+   "text": {
+    "en": "With older people or in formal situations, many Bulgarians use polite forms such as 'gospodin' (Mr) and 'gospozha' (Mrs) plus the plural 'Vie' for 'you' until a more casual tone is suggested.",
+    "it": "Con persone anziane o in situazioni formali, molti bulgari usano forme di cortesia come 'gospodin' (signor) e 'gospozha' (signora) e il 'Vie' plurale per dare del lei, finché non si propone un tono più informale.",
+    "es": "Con personas mayores o en situaciones formales, muchos búlgaros usan fórmulas de cortesía como 'gospodin' (señor) y 'gospozha' (señora) y el plural 'Vie' para tratar de usted, hasta que se propone un tono más informal.",
+    "pt": "Com pessoas mais velhas ou em situações formais, muitos búlgaros usam formas de cortesia como 'gospodin' (senhor) e 'gospozha' (senhora) e o plural 'Vie' para tratar por 'você', até lhes sugerirem um tom mais informal.",
+    "pt_BR": "Com pessoas mais velhas ou em situações formais, muitos búlgaros usam formas de cortesia como 'gospodin' (senhor) e 'gospozha' (senhora) e o plural 'Vie' para tratar por 'o senhor/a senhora', até alguém sugerir um tom mais informal.",
+    "fr": "Avec les personnes âgées ou dans les situations formelles, beaucoup de Bulgares emploient des formules de politesse comme 'gospodin' (monsieur) et 'gospozha' (madame) et le pluriel 'Vie' pour vouvoyer, jusqu'à ce qu'on propose un ton plus décontracté.",
+    "de": "Bei älteren Menschen oder in formellen Situationen verwenden viele Bulgaren Höflichkeitsformen wie 'gospodin' (Herr) und 'gospozha' (Frau) sowie das Plural-'Vie' zum Siezen, bis ein lockerer Ton angeboten wird."
+   }
+  },
+  {
+   "id": "ct-BG-03",
+   "category": "gestures",
+   "text": {
+    "en": "In Bulgaria, shaking the head from side to side often means 'yes', and a nod often means 'no'. This can be confusing, so confirm with words such as 'da' (yes) and 'ne' (no).",
+    "it": "In Bulgaria scuotere la testa da un lato all'altro spesso significa 'sì', mentre un cenno in giù spesso significa 'no'. Può confondere, quindi conferma con le parole 'da' (sì) e 'ne' (no).",
+    "es": "En Bulgaria, mover la cabeza de lado a lado suele significar 'sí', y asentir suele significar 'no'. Puede confundir, así que confirma con palabras como 'da' (sí) y 'ne' (no).",
+    "pt": "Na Bulgária, abanar a cabeça de um lado para o outro significa muitas vezes 'sim', e acenar com a cabeça significa muitas vezes 'não'. Pode confundir, por isso confirma com palavras como 'da' (sim) e 'ne' (não).",
+    "pt_BR": "Na Bulgária, balançar a cabeça de um lado para o outro muitas vezes significa 'sim', e acenar com a cabeça muitas vezes significa 'não'. Pode confundir, então confirme com palavras como 'da' (sim) e 'ne' (não).",
+    "fr": "En Bulgarie, secouer la tête de gauche à droite signifie souvent 'oui', et hocher la tête signifie souvent 'non'. Cela peut prêter à confusion : confirme avec les mots 'da' (oui) et 'ne' (non).",
+    "de": "In Bulgarien bedeutet seitliches Kopfschütteln oft 'ja', und Nicken oft 'nein'. Das kann verwirren, bestätige daher mit den Wörtern 'da' (ja) und 'ne' (nein)."
+   }
+  },
+  {
+   "id": "ct-BG-04",
+   "category": "conversation",
+   "text": {
+    "en": "Many Bulgarians enjoy talking about food, family, football, music and their country's history. Show interest in local traditions and ask for recommendations; people are usually happy to share.",
+    "it": "Molti bulgari amano parlare di cibo, famiglia, calcio, musica e storia del proprio paese. Mostra interesse per le tradizioni locali e chiedi consigli: di solito le persone condividono volentieri.",
+    "es": "A muchos búlgaros les gusta hablar de comida, familia, fútbol, música y la historia de su país. Muestra interés por las tradiciones locales y pide recomendaciones; la gente suele compartir con gusto.",
+    "pt": "Muitos búlgaros gostam de falar de comida, família, futebol, música e da história do seu país. Mostra interesse pelas tradições locais e pede recomendações; as pessoas costumam partilhar de bom grado.",
+    "pt_BR": "Muitos búlgaros gostam de falar sobre comida, família, futebol, música e a história do país. Mostre interesse pelas tradições locais e peça recomendações; as pessoas costumam compartilhar com prazer.",
+    "fr": "Beaucoup de Bulgares aiment parler de cuisine, de famille, de football, de musique et de l'histoire de leur pays. Montre de l'intérêt pour les traditions locales et demande des conseils : on aime en général partager.",
+    "de": "Viele Bulgaren sprechen gern über Essen, Familie, Fußball, Musik und die Geschichte ihres Landes. Zeig Interesse an lokalen Traditionen und frag nach Empfehlungen; man teilt meist gern."
+   }
+  },
+  {
+   "id": "ct-BG-05",
+   "category": "language",
+   "text": {
+    "en": "Bulgarian is written in the Cyrillic alphabet. Learning to read it helps with street signs and menus, and saying 'blagodarya' (thank you) and 'molya' (please) is always appreciated.",
+    "it": "Il bulgaro si scrive con l'alfabeto cirillico. Imparare a leggerlo aiuta con i cartelli stradali e i menù, e dire 'blagodarya' (grazie) e 'molya' (per favore) è sempre apprezzato.",
+    "es": "El búlgaro se escribe con el alfabeto cirílico. Aprender a leerlo ayuda con los carteles y las cartas, y decir 'blagodarya' (gracias) y 'molya' (por favor) siempre se agradece.",
+    "pt": "O búlgaro escreve-se com o alfabeto cirílico. Aprender a lê-lo ajuda com placas e ementas, e dizer 'blagodarya' (obrigado) e 'molya' (por favor) é sempre apreciado.",
+    "pt_BR": "O búlgaro é escrito com o alfabeto cirílico. Aprender a lê-lo ajuda com placas e cardápios, e dizer 'blagodarya' (obrigado) e 'molya' (por favor) é sempre apreciado.",
+    "fr": "Le bulgare s'écrit avec l'alphabet cyrillique. Apprendre à le lire aide pour les panneaux et les menus, et dire 'blagodarya' (merci) et 'molya' (s'il vous plaît) est toujours apprécié.",
+    "de": "Bulgarisch wird in kyrillischer Schrift geschrieben. Wer sie lesen kann, kommt mit Straßenschildern und Speisekarten besser zurecht, und 'blagodarya' (danke) sowie 'molya' (bitte) kommen immer gut an."
+   }
+  },
+  {
+   "id": "ct-BG-06",
+   "category": "dining",
+   "text": {
+    "en": "Bulgarian meals often include fresh salads, and shopska salad with tomato, cucumber and white cheese is a favourite. Sharing several starters in the middle of the table is common.",
+    "it": "I pasti bulgari includono spesso insalate fresche, e la shopska con pomodoro, cetriolo e formaggio bianco è tra le preferite. È comune condividere diversi antipasti al centro della tavola.",
+    "es": "Las comidas búlgaras suelen incluir ensaladas frescas, y la ensalada shopska, con tomate, pepino y queso blanco, es una favorita. Es común compartir varios entrantes en el centro de la mesa.",
+    "pt": "As refeições búlgaras incluem muitas vezes saladas frescas, e a salada shopska, com tomate, pepino e queijo branco, é uma favorita. É comum partilhar várias entradas no centro da mesa.",
+    "pt_BR": "As refeições búlgaras costumam incluir saladas frescas, e a salada shopska, com tomate, pepino e queijo branco, é uma favorita. É comum compartilhar várias entradas no centro da mesa.",
+    "fr": "Les repas bulgares comprennent souvent des salades fraîches, et la salade shopska, avec tomate, concombre et fromage blanc, est une favorite. Partager plusieurs entrées au centre de la table est courant.",
+    "de": "Bulgarische Mahlzeiten enthalten oft frische Salate, und der Schopska-Salat mit Tomate, Gurke und Weißkäse ist ein Favorit. Mehrere Vorspeisen in der Tischmitte zu teilen ist üblich."
+   }
+  },
+  {
+   "id": "ct-BG-07",
+   "category": "dining",
+   "text": {
+    "en": "Banitsa, a flaky pastry with cheese, is a classic breakfast, often eaten with plain yogurt or ayran. Trying it from a local bakery is an easy way to taste everyday Bulgarian food.",
+    "it": "La banitsa, una sfoglia con formaggio, è una classica colazione, spesso accompagnata da yogurt bianco o ayran. Provarla in un forno locale è un modo semplice per assaggiare il cibo quotidiano bulgaro.",
+    "es": "La banitsa, un hojaldre con queso, es un desayuno clásico, a menudo acompañado de yogur natural o ayran. Probarla en una panadería local es una forma fácil de conocer la comida cotidiana búlgara.",
+    "pt": "A banitsa, uma massa folhada com queijo, é um pequeno-almoço clássico, muitas vezes acompanhada de iogurte natural ou ayran. Prová-la numa padaria local é uma forma fácil de conhecer a comida do dia a dia búlgara.",
+    "pt_BR": "A banitsa, uma massa folhada com queijo, é um café da manhã clássico, muitas vezes acompanhada de iogurte natural ou ayran. Experimentá-la numa padaria local é um jeito fácil de conhecer a comida do dia a dia búlgara.",
+    "fr": "La banitsa, un feuilleté au fromage, est un petit-déjeuner classique, souvent accompagné de yaourt nature ou d'ayran. La goûter dans une boulangerie locale est un bon moyen de découvrir la cuisine bulgare quotidienne.",
+    "de": "Banitsa, ein Blätterteiggebäck mit Käse, ist ein klassisches Frühstück, oft mit Naturjoghurt oder Ayran. Sie in einer lokalen Bäckerei zu probieren ist ein einfacher Weg, den bulgarischen Alltag zu schmecken."
+   }
+  },
+  {
+   "id": "ct-BG-08",
+   "category": "dining",
+   "text": {
+    "en": "Bulgaria is proud of its yogurt, and sour milk products are part of daily life. Tarator, a cold soup of yogurt, cucumber and garlic, is a popular summer dish.",
+    "it": "La Bulgaria è fiera del suo yogurt e i latticini fermentati fanno parte della vita quotidiana. Il tarator, una zuppa fredda di yogurt, cetriolo e aglio, è un piatto estivo molto amato.",
+    "es": "Bulgaria está orgullosa de su yogur y los lácteos fermentados forman parte de la vida diaria. El tarator, una sopa fría de yogur, pepino y ajo, es un plato popular de verano.",
+    "pt": "A Bulgária orgulha-se do seu iogurte e os lacticínios fermentados fazem parte do dia a dia. O tarator, uma sopa fria de iogurte, pepino e alho, é um prato de verão muito popular.",
+    "pt_BR": "A Bulgária se orgulha do seu iogurte, e os laticínios fermentados fazem parte do dia a dia. O tarator, uma sopa fria de iogurte, pepino e alho, é um prato de verão muito popular.",
+    "fr": "La Bulgarie est fière de son yaourt, et les produits laitiers fermentés font partie du quotidien. Le tarator, une soupe froide de yaourt, concombre et ail, est un plat d'été très prisé.",
+    "de": "Bulgarien ist stolz auf seinen Joghurt, und Sauermilchprodukte gehören zum Alltag. Tarator, eine kalte Suppe aus Joghurt, Gurke und Knoblauch, ist ein beliebtes Sommergericht."
+   }
+  },
+  {
+   "id": "ct-BG-09",
+   "category": "tipping",
+   "text": {
+    "en": "In restaurants, leaving around 10 percent is customary if service is not already added. In taxis and cafés, many people simply round up the amount.",
+    "it": "Nei ristoranti è consuetudine lasciare circa il 10 per cento se il servizio non è già incluso. In taxi e nei caffè molti si limitano ad arrotondare l'importo.",
+    "es": "En los restaurantes es costumbre dejar alrededor del 10 por ciento si el servicio no está ya incluido. En taxis y cafés, muchos simplemente redondean la cantidad.",
+    "pt": "Nos restaurantes é costume deixar cerca de 10 por cento se o serviço não estiver já incluído. Em táxis e cafés, muitas pessoas limitam-se a arredondar o valor.",
+    "pt_BR": "Nos restaurantes é costume deixar cerca de 10 por cento se o serviço não estiver incluído. Em táxis e cafés, muita gente simplesmente arredonda o valor.",
+    "fr": "Au restaurant, il est d'usage de laisser environ 10 pour cent si le service n'est pas déjà ajouté. Dans les taxis et les cafés, beaucoup se contentent d'arrondir la somme.",
+    "de": "Im Restaurant ist es üblich, etwa 10 Prozent zu geben, wenn der Service nicht schon enthalten ist. In Taxis und Cafés runden viele einfach auf."
+   }
+  },
+  {
+   "id": "ct-BG-10",
+   "category": "gifts",
+   "text": {
+    "en": "If invited to a Bulgarian home, bring flowers, sweets or a small gift. Give an odd number of flowers, as even numbers are traditionally for funerals.",
+    "it": "Se sei invitato in una casa bulgara, porta fiori, dolci o un piccolo regalo. Regala un numero dispari di fiori, perché i numeri pari sono tradizionalmente per i funerali.",
+    "es": "Si te invitan a una casa búlgara, lleva flores, dulces o un pequeño regalo. Regala un número impar de flores, ya que los números pares se reservan tradicionalmente para los funerales.",
+    "pt": "Se fores convidado para uma casa búlgara, leva flores, doces ou uma pequena prenda. Oferece um número ímpar de flores, porque os números pares são tradicionalmente para funerais.",
+    "pt_BR": "Se for convidado para uma casa búlgara, leve flores, doces ou um pequeno presente. Dê um número ímpar de flores, porque os números pares são tradicionalmente usados em funerais.",
+    "fr": "Si tu es invité(e) dans une maison bulgare, apporte des fleurs, des douceurs ou un petit cadeau. Offre un nombre impair de fleurs, car les nombres pairs sont traditionnellement réservés aux funérailles.",
+    "de": "Wenn du in ein bulgarisches Zuhause eingeladen bist, bring Blumen, Süßes oder ein kleines Geschenk mit. Schenke eine ungerade Anzahl Blumen, denn gerade Zahlen sind traditionell Beerdigungen vorbehalten."
+   }
+  },
+  {
+   "id": "ct-BG-11",
+   "category": "gifts",
+   "text": {
+    "en": "On 1 March, friends and family exchange martenitsas, red and white threads or small ornaments, as symbols of health and good luck. Accepting and wearing one is a warm gesture.",
+    "it": "Il 1 marzo amici e parenti si scambiano le martenitsa, fili o piccoli ornamenti rossi e bianchi, simbolo di salute e buona fortuna. Accettarne una e indossarla è un gesto caloroso.",
+    "es": "El 1 de marzo, amigos y familiares intercambian martenitsas, hilos o pequeños adornos rojos y blancos, como símbolo de salud y buena suerte. Aceptar una y llevarla es un gesto cálido.",
+    "pt": "A 1 de março, amigos e familiares trocam martenitsas, fios ou pequenos adornos vermelhos e brancos, como símbolo de saúde e boa sorte. Aceitar uma e usá-la é um gesto caloroso.",
+    "pt_BR": "No dia 1º de março, amigos e familiares trocam martenitsas, fios ou pequenos enfeites vermelhos e brancos, como símbolo de saúde e boa sorte. Aceitar uma e usá-la é um gesto caloroso.",
+    "fr": "Le 1er mars, amis et famille s'offrent des martenitsas, fils ou petits ornements rouges et blancs, symboles de santé et de chance. En accepter une et la porter est un geste chaleureux.",
+    "de": "Am 1. März tauschen Freunde und Familie Martenitsas aus, rote und weiße Fäden oder kleine Anhänger, als Symbole für Gesundheit und Glück. Eine anzunehmen und zu tragen ist eine herzliche Geste."
+   }
+  },
+  {
+   "id": "ct-BG-12",
+   "category": "dress",
+   "text": {
+    "en": "People in cities tend to dress neatly, and smart casual is fine for most restaurants and offices. Pack warm layers for winter in the mountains and comfortable shoes for cobbled old towns.",
+    "it": "Nelle città ci si veste in modo curato e lo smart casual va bene per la maggior parte di ristoranti e uffici. In inverno in montagna porta strati caldi e porta scarpe comode per le città vecchie acciottolate.",
+    "es": "En las ciudades la gente suele vestir de forma cuidada y el smart casual vale para casi todos los restaurantes y oficinas. Lleva capas de abrigo para el invierno en la montaña y calzado cómodo para los cascos antiguos empedrados.",
+    "pt": "Nas cidades as pessoas vestem-se de forma cuidada e o smart casual serve para a maioria dos restaurantes e escritórios. Leva camadas quentes para o inverno na montanha e sapatos confortáveis para as cidades antigas empedradas.",
+    "pt_BR": "Nas cidades as pessoas se vestem de forma arrumada, e o estilo esporte fino serve para a maioria dos restaurantes e escritórios. Leve camadas quentes para o inverno na montanha e calçados confortáveis para as cidades antigas de pedra.",
+    "fr": "En ville, on s'habille de façon soignée, et le smart casual convient à la plupart des restaurants et bureaux. Prévois des couches chaudes pour l'hiver en montagne et des chaussures confortables pour les vieilles villes pavées.",
+    "de": "In den Städten kleidet man sich gepflegt, und Smart Casual passt für die meisten Restaurants und Büros. Pack warme Schichten für den Winter in den Bergen und bequeme Schuhe für gepflasterte Altstädte ein."
+   }
+  },
+  {
+   "id": "ct-BG-13",
+   "category": "religion_sites",
+   "text": {
+    "en": "The Rila Monastery, a UNESCO site, is an active Bulgarian Orthodox monastery. Dress modestly with shoulders and knees covered, speak quietly, and check where photography is not allowed.",
+    "it": "Il Monastero di Rila, sito UNESCO, è un monastero ortodosso bulgaro ancora in attività. Vesti in modo sobrio con spalle e ginocchia coperte, parla piano e controlla dove non è permesso fotografare.",
+    "es": "El Monasterio de Rila, sitio de la UNESCO, es un monasterio ortodoxo búlgaro en activo. Vístete con modestia, con hombros y rodillas cubiertos, habla en voz baja y comprueba dónde no se puede fotografiar.",
+    "pt": "O Mosteiro de Rila, Património da UNESCO, é um mosteiro ortodoxo búlgaro ainda ativo. Veste-te de forma discreta, com ombros e joelhos tapados, fala baixo e verifica onde não é permitido fotografar.",
+    "pt_BR": "O Mosteiro de Rila, Patrimônio da UNESCO, é um mosteiro ortodoxo búlgaro ainda em atividade. Vista-se com discrição, com ombros e joelhos cobertos, fale baixo e confira onde não é permitido fotografar.",
+    "fr": "Le monastère de Rila, site de l'UNESCO, est un monastère orthodoxe bulgare toujours actif. Habille-toi sobrement, épaules et genoux couverts, parle doucement et vérifie où la photo est interdite.",
+    "de": "Das Rila-Kloster, ein UNESCO-Welterbe, ist ein aktives bulgarisch-orthodoxes Kloster. Kleide dich dezent mit bedeckten Schultern und Knien, sprich leise und prüfe, wo Fotografieren nicht erlaubt ist."
+   }
+  },
+  {
+   "id": "ct-BG-14",
+   "category": "religion_sites",
+   "text": {
+    "en": "Bulgaria also has a Muslim community, and some mosques, such as Banya Bashi in Sofia, welcome respectful visitors. Remove your shoes where asked and dress modestly.",
+    "it": "La Bulgaria ha anche una comunità musulmana e alcune moschee, come la Banya Bashi a Sofia, accolgono visitatori rispettosi. Togli le scarpe dove richiesto e vesti in modo sobrio.",
+    "es": "Bulgaria también tiene una comunidad musulmana, y algunas mezquitas, como la Banya Bashi en Sofía, reciben a visitantes respetuosos. Quítate los zapatos donde te lo pidan y vístete con modestia.",
+    "pt": "A Bulgária tem também uma comunidade muçulmana, e algumas mesquitas, como a Banya Bashi em Sófia, recebem visitantes respeitadores. Tira os sapatos onde for pedido e veste-te de forma discreta.",
+    "pt_BR": "A Bulgária também tem uma comunidade muçulmana, e algumas mesquitas, como a Banya Bashi em Sófia, recebem visitantes respeitosos. Tire os sapatos onde for pedido e vista-se com discrição.",
+    "fr": "La Bulgarie compte aussi une communauté musulmane, et certaines mosquées, comme Banya Bashi à Sofia, accueillent les visiteurs respectueux. Enlève tes chaussures là où on te le demande et habille-toi sobrement.",
+    "de": "Bulgarien hat auch eine muslimische Gemeinschaft, und manche Moscheen, etwa die Banja-Baschi-Moschee in Sofia, empfangen respektvolle Besucher. Zieh die Schuhe aus, wo es verlangt wird, und kleide dich dezent."
+   }
+  },
+  {
+   "id": "ct-BG-15",
+   "category": "punctuality",
+   "text": {
+    "en": "Be on time for business meetings and appointments. For social gatherings with friends, arriving 10 to 15 minutes late is often tolerated, but let your host know if you will be later.",
+    "it": "Sii puntuale a riunioni di lavoro e appuntamenti. Per gli incontri tra amici un ritardo di 10-15 minuti è spesso tollerato, ma avvisa chi ti ospita se farai più tardi.",
+    "es": "Sé puntual en reuniones de trabajo y citas. En reuniones sociales con amigos, llegar 10 o 15 minutos tarde suele tolerarse, pero avisa a tu anfitrión si vas a llegar más tarde.",
+    "pt": "Sê pontual em reuniões de trabalho e marcações. Em encontros sociais com amigos, chegar 10 a 15 minutos atrasado costuma ser tolerado, mas avisa quem te recebe se fores chegar mais tarde.",
+    "pt_BR": "Seja pontual em reuniões de trabalho e compromissos. Em encontros sociais com amigos, chegar 10 a 15 minutos atrasado costuma ser tolerado, mas avise quem recebe se for chegar mais tarde.",
+    "fr": "Sois ponctuel(le) pour les réunions de travail et les rendez-vous. Pour les rencontres entre amis, 10 à 15 minutes de retard sont souvent tolérés, mais préviens ton hôte si tu auras plus de retard.",
+    "de": "Sei bei geschäftlichen Treffen und Terminen pünktlich. Bei privaten Treffen mit Freunden sind 10 bis 15 Minuten Verspätung oft in Ordnung, doch sag dem Gastgeber Bescheid, wenn es später wird."
+   }
+  },
+  {
+   "id": "ct-BG-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "It is expected that younger people give up their seats on buses, trams and the metro to older people, pregnant women and people with small children.",
+    "it": "Ci si aspetta che i più giovani cedano il posto su autobus, tram e metropolitana ad anziani, donne incinte e persone con bambini piccoli.",
+    "es": "Se espera que los más jóvenes cedan el asiento en autobuses, tranvías y metro a personas mayores, mujeres embarazadas y personas con niños pequeños.",
+    "pt": "Espera-se que os mais novos cedam o lugar em autocarros, elétricos e metro a pessoas mais velhas, grávidas e pessoas com crianças pequenas.",
+    "pt_BR": "Espera-se que os mais jovens cedam o lugar em ônibus, bondes e metrô a idosos, grávidas e pessoas com crianças pequenas.",
+    "fr": "On attend des plus jeunes qu'ils cèdent leur place dans les bus, trams et métros aux personnes âgées, aux femmes enceintes et aux personnes avec de jeunes enfants.",
+    "de": "Von Jüngeren wird erwartet, in Bussen, Straßenbahnen und der U-Bahn älteren Menschen, Schwangeren und Personen mit kleinen Kindern den Sitzplatz zu überlassen."
+   }
+  },
+  {
+   "id": "ct-BG-17",
+   "category": "transport",
+   "text": {
+    "en": "On city buses and trams, validate your ticket in the machine on board, as inspectors do check. The Sofia metro is modern and a quick way to cross the capital.",
+    "it": "Su autobus e tram cittadini, convalida il biglietto nell'apposita macchinetta a bordo, perché i controllori effettuano verifiche. La metropolitana di Sofia è moderna ed è un modo veloce per attraversare la capitale.",
+    "es": "En autobuses y tranvías urbanos, valida el billete en la máquina a bordo, ya que los inspectores sí controlan. El metro de Sofía es moderno y una forma rápida de cruzar la capital.",
+    "pt": "Nos autocarros e elétricos urbanos, valida o bilhete na máquina a bordo, pois os fiscais fazem controlo. O metro de Sófia é moderno e uma forma rápida de atravessar a capital.",
+    "pt_BR": "Em ônibus e bondes urbanos, valide o bilhete na máquina a bordo, pois os fiscais fazem verificações. O metrô de Sófia é moderno e uma forma rápida de atravessar a capital.",
+    "fr": "Dans les bus et tramways urbains, valide ton ticket dans la machine à bord, car les contrôleurs vérifient. Le métro de Sofia est moderne et un moyen rapide de traverser la capitale.",
+    "de": "In Stadtbussen und Straßenbahnen entwertest du dein Ticket im Automaten an Bord, denn es wird kontrolliert. Die Metro in Sofia ist modern und ein schneller Weg durch die Hauptstadt."
+   }
+  },
+  {
+   "id": "ct-BG-18",
+   "category": "transport",
+   "text": {
+    "en": "For taxis, it is wise to book through an app or call a reputable company, and make sure the meter is running. Ask for the approximate fare before long rides.",
+    "it": "Per i taxi è meglio prenotare tramite app o chiamare una compagnia affidabile e assicurarsi che il tassametro sia attivo. Prima di corse lunghe chiedi il prezzo approssimativo.",
+    "es": "Para los taxis conviene reservar con una app o llamar a una empresa fiable, y asegurarse de que el taxímetro esté en marcha. Antes de trayectos largos, pregunta la tarifa aproximada.",
+    "pt": "Para táxis, convém reservar através de uma app ou ligar para uma empresa de confiança e garantir que o taxímetro está ligado. Antes de viagens longas, pergunta o preço aproximado.",
+    "pt_BR": "Para táxis, convém pedir por aplicativo ou ligar para uma empresa confiável e garantir que o taxímetro esteja ligado. Antes de corridas longas, pergunte o valor aproximado.",
+    "fr": "Pour les taxis, mieux vaut réserver via une appli ou appeler une société fiable, et vérifier que le compteur tourne. Avant un long trajet, demande le tarif approximatif.",
+    "de": "Bei Taxis ist es ratsam, über eine App zu buchen oder ein seriöses Unternehmen anzurufen und darauf zu achten, dass das Taxameter läuft. Frag vor langen Fahrten nach dem ungefähren Preis."
+   }
+  },
+  {
+   "id": "ct-BG-19",
+   "category": "festivals",
+   "text": {
+    "en": "Kukeri are costumed men in fur and bells who perform rituals to scare away evil spirits and bring a good harvest. The Surva festival in Pernik, in late January, is a major gathering of them.",
+    "it": "I kukeri sono uomini mascherati con pellicce e campanacci che compiono rituali per scacciare gli spiriti maligni e propiziare un buon raccolto. Il festival Surva a Pernik, a fine gennaio, è un grande raduno.",
+    "es": "Los kukeri son hombres disfrazados con pieles y cascabeles que realizan rituales para ahuyentar a los malos espíritus y atraer una buena cosecha. El festival Surva en Pernik, a finales de enero, reúne a muchos de ellos.",
+    "pt": "Os kukeri são homens mascarados com peles e sinos que realizam rituais para afastar os maus espíritos e trazer boas colheitas. O festival Surva em Pernik, no final de janeiro, é um grande encontro.",
+    "pt_BR": "Os kukeri são homens fantasiados com peles e sinos que realizam rituais para afastar maus espíritos e trazer boa colheita. O festival Surva em Pernik, no fim de janeiro, é um grande encontro.",
+    "fr": "Les kukeri sont des hommes costumés en fourrures et clochettes qui accomplissent des rituels pour chasser les mauvais esprits et favoriser une bonne récolte. Le festival Surva à Pernik, fin janvier, en est un grand rassemblement.",
+    "de": "Kukeri sind kostümierte Männer in Fellen und mit Glocken, die Rituale vollführen, um böse Geister zu vertreiben und eine gute Ernte zu bringen. Das Surva-Festival in Pernik Ende Januar ist ein großes Treffen."
+   }
+  },
+  {
+   "id": "ct-BG-20",
+   "category": "festivals",
+   "text": {
+    "en": "On Baba Marta Day, 1 March, people wear martenitsas until they see a stork or a blossoming tree. Then it is traditional to tie them to a branch as a wish for health.",
+    "it": "Il giorno di Baba Marta, il 1 marzo, si indossano le martenitsa finché non si vede una cicogna o un albero in fiore. Poi è tradizione legarle a un ramo come augurio di salute.",
+    "es": "En el Día de Baba Marta, el 1 de marzo, se llevan las martenitsas hasta ver una cigüeña o un árbol en flor. Entonces es tradición atarlas a una rama como deseo de salud.",
+    "pt": "No Dia de Baba Marta, a 1 de março, usam-se as martenitsas até se ver uma cegonha ou uma árvore em flor. Depois, é tradição atá-las a um ramo como desejo de saúde.",
+    "pt_BR": "No Dia de Baba Marta, 1º de março, usam-se as martenitsas até ver uma cegonha ou uma árvore florida. Depois, é tradição amarrá-las a um galho como desejo de saúde.",
+    "fr": "Le jour de Baba Marta, le 1er mars, on porte les martenitsas jusqu'à voir une cigogne ou un arbre en fleurs. Il est alors de tradition de les attacher à une branche en souhait de santé.",
+    "de": "Am Baba-Marta-Tag, dem 1. März, trägt man die Martenitsas, bis man einen Storch oder einen blühenden Baum sieht. Dann bindet man sie traditionell als Gesundheitswunsch an einen Zweig."
+   }
+  },
+  {
+   "id": "ct-BG-21",
+   "category": "family",
+   "text": {
+    "en": "Name days, celebrated on the feast day of a saint with the same name, are important in Bulgaria, sometimes as much as birthdays. A call or a greeting is a thoughtful gesture.",
+    "it": "Gli onomastici, celebrati nel giorno del santo omonimo, sono importanti in Bulgaria, a volte quanto i compleanni. Una telefonata o un augurio sono un gesto premuroso.",
+    "es": "Los santos o días del nombre, que se celebran en la fiesta del santo del mismo nombre, son importantes en Bulgaria, a veces tanto como los cumpleaños. Una llamada o una felicitación es un gesto atento.",
+    "pt": "Os dias do nome, celebrados na festa do santo com o mesmo nome, são importantes na Bulgária, por vezes tanto como os aniversários. Uma chamada ou uma felicitação é um gesto atencioso.",
+    "pt_BR": "Os dias do nome, celebrados na festa do santo de mesmo nome, são importantes na Bulgária, às vezes tanto quanto os aniversários. Uma ligação ou uma felicitação é um gesto atencioso.",
+    "fr": "Les fêtes de prénom, célébrées le jour du saint du même nom, sont importantes en Bulgarie, parfois autant que les anniversaires. Un appel ou un message de voeux est une attention appréciée.",
+    "de": "Namenstage, gefeiert am Gedenktag des gleichnamigen Heiligen, sind in Bulgarien wichtig, manchmal so sehr wie Geburtstage. Ein Anruf oder ein Glückwunsch ist eine aufmerksame Geste."
+   }
+  },
+  {
+   "id": "ct-BG-22",
+   "category": "family",
+   "text": {
+    "en": "Family ties are strong, and grandparents often help care for children. Showing respect to elders, by greeting them first and letting them speak, is highly valued.",
+    "it": "I legami familiari sono forti e i nonni spesso aiutano a occuparsi dei bambini. Mostrare rispetto agli anziani, salutandoli per primi e lasciandoli parlare, è molto apprezzato.",
+    "es": "Los lazos familiares son fuertes y los abuelos suelen ayudar a cuidar de los niños. Mostrar respeto a los mayores, saludándolos primero y dejándolos hablar, se valora mucho.",
+    "pt": "Os laços familiares são fortes e os avós ajudam muitas vezes a cuidar das crianças. Mostrar respeito pelos mais velhos, cumprimentando-os primeiro e deixando-os falar, é muito valorizado.",
+    "pt_BR": "Os laços familiares são fortes, e os avós costumam ajudar a cuidar das crianças. Mostrar respeito pelos mais velhos, cumprimentando-os primeiro e deixando-os falar, é muito valorizado.",
+    "fr": "Les liens familiaux sont forts et les grands-parents aident souvent à garder les enfants. Montrer du respect aux aînés, en les saluant d'abord et en les laissant parler, est très apprécié.",
+    "de": "Familienbande sind eng, und Großeltern helfen oft bei der Kinderbetreuung. Respekt gegenüber Älteren, etwa indem man sie zuerst grüßt und sie ausreden lässt, wird sehr geschätzt."
+   }
+  },
+  {
+   "id": "ct-BG-23",
+   "category": "money",
+   "text": {
+    "en": "Cards are widely accepted in cities and tourist areas, but it is smart to carry some cash for small villages, markets and local buses. ATMs are easy to find in towns.",
+    "it": "Le carte sono ampiamente accettate in città e nelle zone turistiche, ma conviene avere un po' di contanti per i piccoli villaggi, i mercati e gli autobus locali. I bancomat sono facili da trovare nelle città.",
+    "es": "Las tarjetas se aceptan ampliamente en ciudades y zonas turísticas, pero conviene llevar algo de efectivo para pueblos pequeños, mercados y autobuses locales. Los cajeros son fáciles de encontrar en las ciudades.",
+    "pt": "Os cartões são amplamente aceites em cidades e zonas turísticas, mas convém levar algum dinheiro para aldeias pequenas, mercados e autocarros locais. As caixas multibanco são fáceis de encontrar nas cidades.",
+    "pt_BR": "Os cartões são amplamente aceitos em cidades e áreas turísticas, mas convém levar algum dinheiro para vilarejos, feiras e ônibus locais. Os caixas eletrônicos são fáceis de achar nas cidades.",
+    "fr": "Les cartes sont largement acceptées en ville et dans les zones touristiques, mais il est sage d'avoir un peu d'espèces pour les petits villages, les marchés et les bus locaux. Les distributeurs sont faciles à trouver en ville.",
+    "de": "Karten werden in Städten und Touristengebieten weitgehend akzeptiert, doch für kleine Dörfer, Märkte und Lokalbusse ist etwas Bargeld ratsam. Geldautomaten sind in Städten leicht zu finden."
+   }
+  },
+  {
+   "id": "ct-BG-24",
+   "category": "photography",
+   "text": {
+    "en": "Ask permission before photographing people, especially in villages and at religious ceremonies. Inside churches and monasteries, photography or flash is often restricted, so look for signs.",
+    "it": "Chiedi il permesso prima di fotografare le persone, soprattutto nei villaggi e durante le cerimonie religiose. Dentro chiese e monasteri fotografie o flash sono spesso limitati: cerca i cartelli.",
+    "es": "Pide permiso antes de fotografiar a personas, sobre todo en pueblos y en ceremonias religiosas. Dentro de iglesias y monasterios, la fotografía o el flash suelen estar restringidos, así que busca los carteles.",
+    "pt": "Pede licença antes de fotografar pessoas, sobretudo em aldeias e em cerimónias religiosas. Dentro de igrejas e mosteiros, as fotografias ou o flash são muitas vezes restritos, por isso procura os avisos.",
+    "pt_BR": "Peça licença antes de fotografar pessoas, principalmente em vilarejos e cerimônias religiosas. Dentro de igrejas e mosteiros, fotos ou flash costumam ser restritos, então procure as placas.",
+    "fr": "Demande la permission avant de photographier des personnes, surtout dans les villages et lors de cérémonies religieuses. Dans les églises et monastères, la photo ou le flash sont souvent limités : cherche les panneaux.",
+    "de": "Frag um Erlaubnis, bevor du Menschen fotografierst, besonders in Dörfern und bei religiösen Zeremonien. In Kirchen und Klöstern sind Fotos oder Blitz oft eingeschränkt, achte auf Hinweisschilder."
+   }
+  },
+  {
+   "id": "ct-BG-25",
+   "category": "nightlife",
+   "text": {
+    "en": "A mehana is a traditional tavern, often with folk music and grilled dishes. Evenings start late, and groups of friends tend to share food and conversation for hours.",
+    "it": "La mehana è una taverna tradizionale, spesso con musica popolare e piatti alla griglia. Le serate iniziano tardi e i gruppi di amici condividono volentieri cibo e chiacchiere per ore.",
+    "es": "La mehana es una taberna tradicional, a menudo con música folclórica y platos a la parrilla. Las veladas empiezan tarde y los grupos de amigos suelen compartir comida y charla durante horas.",
+    "pt": "A mehana é uma taberna tradicional, muitas vezes com música folclórica e pratos grelhados. As noites começam tarde e os grupos de amigos costumam partilhar comida e conversa durante horas.",
+    "pt_BR": "A mehana é uma taverna tradicional, muitas vezes com música folclórica e pratos grelhados. As noites começam tarde, e grupos de amigos costumam dividir comida e conversa por horas.",
+    "fr": "La mehana est une taverne traditionnelle, souvent avec de la musique folklorique et des grillades. Les soirées commencent tard, et les groupes d'amis partagent volontiers nourriture et conversation pendant des heures.",
+    "de": "Eine Mehana ist ein traditionelles Wirtshaus, oft mit Volksmusik und Gegrilltem. Die Abende beginnen spät, und Freundesgruppen teilen Essen und Gespräche gern über Stunden."
+   }
+  },
+  {
+   "id": "ct-BG-26",
+   "category": "nature",
+   "text": {
+    "en": "The Rila and Pirin mountains offer excellent hiking, including the Seven Rila Lakes. Check the weather, stay on marked trails, and carry water, as conditions can change quickly.",
+    "it": "I monti Rila e Pirin offrono ottime escursioni, tra cui i Sette Laghi di Rila. Controlla il meteo, resta sui sentieri segnalati e porta acqua, perché le condizioni possono cambiare in fretta.",
+    "es": "Las montañas de Rila y Pirin ofrecen excelentes rutas, entre ellas los Siete Lagos de Rila. Consulta el tiempo, sigue los senderos señalizados y lleva agua, porque las condiciones pueden cambiar rápido.",
+    "pt": "As montanhas de Rila e Pirin oferecem excelentes percursos, incluindo os Sete Lagos de Rila. Consulta o tempo, segue os trilhos sinalizados e leva água, porque as condições podem mudar depressa.",
+    "pt_BR": "As montanhas de Rila e Pirin oferecem ótimas trilhas, incluindo os Sete Lagos de Rila. Confira o tempo, siga as trilhas sinalizadas e leve água, porque as condições podem mudar rápido.",
+    "fr": "Les montagnes de Rila et du Pirin offrent d'excellentes randonnées, dont celle des Sept Lacs de Rila. Vérifie la météo, reste sur les sentiers balisés et emporte de l'eau, car les conditions peuvent changer vite.",
+    "de": "Das Rila- und das Pirin-Gebirge bieten hervorragende Wanderungen, darunter die Sieben Rila-Seen. Prüfe das Wetter, bleib auf markierten Wegen und nimm Wasser mit, denn die Bedingungen können schnell umschlagen."
+   }
+  },
+  {
+   "id": "ct-BG-27",
+   "category": "safety",
+   "text": {
+    "en": "The European emergency number 112 works across Bulgaria. Keep your valuables secure in crowded places such as markets, stations and public transport, as you would in any big city.",
+    "it": "Il numero di emergenza europeo 112 funziona in tutta la Bulgaria. Tieni al sicuro i tuoi oggetti di valore nei luoghi affollati come mercati, stazioni e mezzi pubblici, come faresti in qualsiasi grande città.",
+    "es": "El número de emergencias europeo 112 funciona en toda Bulgaria. Mantén tus objetos de valor a salvo en lugares concurridos como mercados, estaciones y transporte público, como harías en cualquier gran ciudad.",
+    "pt": "O número europeu de emergência 112 funciona em toda a Bulgária. Mantém os teus objetos de valor seguros em locais movimentados, como mercados, estações e transportes públicos, tal como farias em qualquer grande cidade.",
+    "pt_BR": "O número europeu de emergência 112 funciona em toda a Bulgária. Mantenha seus objetos de valor seguros em locais movimentados, como feiras, estações e transporte público, como faria em qualquer grande cidade.",
+    "fr": "Le numéro d'urgence européen 112 fonctionne dans toute la Bulgarie. Garde tes objets de valeur en sécurité dans les lieux bondés comme les marchés, gares et transports en commun, comme dans n'importe quelle grande ville.",
+    "de": "Die europäische Notrufnummer 112 gilt in ganz Bulgarien. Bewahre Wertsachen an belebten Orten wie Märkten, Bahnhöfen und im Nahverkehr sicher auf, wie in jeder Großstadt."
+   }
+  },
+  {
+   "id": "ct-BG-28",
+   "category": "local_pride",
+   "text": {
+    "en": "Bulgarians are proud that the Cyrillic script has its roots in medieval Bulgaria. On 24 May, they celebrate the alphabet, education and culture, so it is a lovely day to say hello.",
+    "it": "I bulgari sono orgogliosi che l'alfabeto cirillico abbia radici nella Bulgaria medievale. Il 24 maggio celebrano l'alfabeto, l'istruzione e la cultura, quindi è un bel giorno per fare gli auguri.",
+    "es": "Los búlgaros están orgullosos de que el alfabeto cirílico tenga sus raíces en la Bulgaria medieval. El 24 de mayo celebran el alfabeto, la educación y la cultura, por lo que es un bonito día para saludar.",
+    "pt": "Os búlgaros têm orgulho de o alfabeto cirílico ter raízes na Bulgária medieval. A 24 de maio celebram o alfabeto, a educação e a cultura, por isso é um dia simpático para cumprimentar.",
+    "pt_BR": "Os búlgaros têm orgulho de o alfabeto cirílico ter raízes na Bulgária medieval. No dia 24 de maio celebram o alfabeto, a educação e a cultura, então é um dia simpático para desejar felicidades.",
+    "fr": "Les Bulgares sont fiers que l'alphabet cyrillique ait ses racines dans la Bulgarie médiévale. Le 24 mai, ils célèbrent l'alphabet, l'éducation et la culture : c'est un beau jour pour envoyer ses voeux.",
+    "de": "Die Bulgaren sind stolz darauf, dass die kyrillische Schrift ihre Wurzeln im mittelalterlichen Bulgarien hat. Am 24. Mai feiern sie Alphabet, Bildung und Kultur, ein schöner Tag für einen Gruß."
+   }
+  },
+  {
+   "id": "ct-BG-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Bulgaria's Thracian heritage, with tombs and gold treasures, and its Rose Valley, known for rose oil, are sources of local pride. Asking about them is a good way to start a chat.",
+    "it": "L'eredità tracia della Bulgaria, con tombe e tesori d'oro, e la Valle delle Rose, nota per l'olio di rosa, sono motivo di orgoglio locale. Chiederne è un buon modo per iniziare una conversazione.",
+    "es": "La herencia tracia de Bulgaria, con tumbas y tesoros de oro, y su Valle de las Rosas, conocido por el aceite de rosa, son motivo de orgullo local. Preguntar por ellos es una buena forma de iniciar una charla.",
+    "pt": "A herança trácia da Bulgária, com túmulos e tesouros de ouro, e o seu Vale das Rosas, conhecido pelo óleo de rosa, são motivo de orgulho local. Perguntar por eles é uma boa forma de começar conversa.",
+    "pt_BR": "A herança trácia da Bulgária, com túmulos e tesouros de ouro, e o seu Vale das Rosas, conhecido pelo óleo de rosa, são motivo de orgulho local. Perguntar sobre eles é um bom jeito de puxar conversa.",
+    "fr": "Le patrimoine thrace de la Bulgarie, avec ses tombes et ses trésors d'or, et sa Vallée des roses, connue pour l'huile de rose, sont une source de fierté locale. En parler est un bon moyen d'engager la conversation.",
+    "de": "Das thrakische Erbe Bulgariens mit seinen Gräbern und Goldschätzen sowie das Rosental, bekannt für Rosenöl, sind Quellen lokalen Stolzes. Danach zu fragen ist ein guter Gesprächseinstieg."
+   }
+  },
+  {
+   "id": "ct-BG-30",
+   "category": "festivals",
+   "text": {
+    "en": "3 March is Liberation Day, a national holiday marking the end of Ottoman rule in 1878. Expect public events, flags and ceremonies, and many businesses may be closed.",
+    "it": "Il 3 marzo è la Festa della Liberazione, festa nazionale che segna la fine del dominio ottomano nel 1878. Aspettati eventi pubblici, bandiere e cerimonie, e molte attività potrebbero essere chiuse.",
+    "es": "El 3 de marzo es el Día de la Liberación, fiesta nacional que marca el fin del dominio otomano en 1878. Habrá actos públicos, banderas y ceremonias, y muchos comercios pueden estar cerrados.",
+    "pt": "O dia 3 de março é o Dia da Libertação, feriado nacional que assinala o fim do domínio otomano em 1878. Esperam-se eventos públicos, bandeiras e cerimónias, e muitos estabelecimentos podem estar fechados.",
+    "pt_BR": "O dia 3 de março é o Dia da Libertação, feriado nacional que marca o fim do domínio otomano em 1878. Espere eventos públicos, bandeiras e cerimônias, e muitos estabelecimentos podem estar fechados.",
+    "fr": "Le 3 mars est la fête de la Libération, jour férié national marquant la fin de la domination ottomane en 1878. Attends-toi à des événements publics, des drapeaux et des cérémonies, et à des commerces parfois fermés.",
+    "de": "Der 3. März ist der Tag der Befreiung, ein Nationalfeiertag zum Ende der osmanischen Herrschaft 1878. Rechne mit öffentlichen Veranstaltungen, Fahnen und Zeremonien; viele Geschäfte können geschlossen sein."
+   }
+  }
+ ],
+ "BR": [
+  {
+   "id": "ct-BR-01",
+   "category": "greetings",
+   "text": {
+    "en": "Brazilians are warm greeters. Friends often hug or exchange cheek kisses, and the number varies by region. With new people, a handshake and a smile are always safe.",
+    "it": "I brasiliani salutano con calore. Gli amici spesso si abbracciano o si scambiano baci sulla guancia, e il numero varia da regione a regione. Con le persone nuove, una stretta di mano e un sorriso vanno sempre bene.",
+    "es": "Los brasileños saludan con calidez. Los amigos suelen abrazarse o darse besos en la mejilla, y el número varía según la región. Con gente nueva, un apretón de manos y una sonrisa siempre funcionan.",
+    "pt": "Os brasileiros cumprimentam com calor. Os amigos costumam abraçar-se ou dar beijos na face, e o número varia consoante a região. Com pessoas novas, um aperto de mão e um sorriso funcionam sempre.",
+    "pt_BR": "Brasileiros cumprimentam com calor. Amigos costumam se abraçar ou trocar beijos no rosto, e o número varia conforme a região. Com gente nova, um aperto de mão e um sorriso sempre funcionam.",
+    "fr": "Les Brésiliens saluent chaleureusement. Les amis se font souvent un câlin ou la bise, dont le nombre varie selon la région. Avec les nouvelles personnes, une poignée de main et un sourire marchent toujours.",
+    "de": "Brasilianer begrüßen herzlich. Freunde umarmen sich oft oder geben sich Wangenküsse, deren Anzahl je nach Region variiert. Bei neuen Bekanntschaften sind Handschlag und Lächeln immer sicher."
+   }
+  },
+  {
+   "id": "ct-BR-02",
+   "category": "greetings",
+   "text": {
+    "en": "Personal space is smaller than in many countries, and light touches on the arm during conversation are common. This is usually friendliness, so there's no need to step back.",
+    "it": "Lo spazio personale è più ridotto che in molti paesi e durante la conversazione sono comuni leggeri tocchi sul braccio. Di solito è cordialità, quindi non serve allontanarsi.",
+    "es": "El espacio personal es menor que en muchos países y es común que te toquen ligeramente el brazo al conversar. Suele ser simpatía, así que no hace falta apartarse.",
+    "pt": "O espaço pessoal é menor do que em muitos países e é comum tocarem ao de leve no braço durante a conversa. Normalmente é simpatia, por isso não é preciso afastares-te.",
+    "pt_BR": "O espaço pessoal é menor do que em muitos países, e é comum tocarem de leve no braço durante a conversa. Geralmente é simpatia, então não precisa se afastar.",
+    "fr": "L'espace personnel est plus réduit que dans de nombreux pays, et de légers contacts sur le bras pendant la conversation sont courants. C'est généralement de la sympathie : inutile de reculer.",
+    "de": "Der persönliche Abstand ist kleiner als in vielen Ländern, und leichte Berührungen am Arm im Gespräch sind üblich. Meist ist das Freundlichkeit, du musst also nicht zurückweichen."
+   }
+  },
+  {
+   "id": "ct-BR-03",
+   "category": "language",
+   "text": {
+    "en": "Brazilians speak Portuguese, not Spanish, and many are happy to hear a few words of it. Try 'oi' (hi), 'tudo bem?' (how are you?) and 'obrigado' or 'obrigada' (thank you).",
+    "it": "I brasiliani parlano portoghese, non spagnolo, e molti sono felici di sentire qualche parola in portoghese. Prova 'oi' (ciao), 'tudo bem?' (come va?) e 'obrigado' o 'obrigada' (grazie).",
+    "es": "Los brasileños hablan portugués, no español, y a muchos les encanta oír unas palabras en su idioma. Prueba con 'oi' (hola), 'tudo bem?' (¿qué tal?) y 'obrigado' u 'obrigada' (gracias).",
+    "pt": "Os brasileiros falam português e muitos gostam de ouvir algumas palavras na sua língua. Experimenta 'oi', 'tudo bem?' e 'obrigado' ou 'obrigada'. Repara que o português do Brasil difere do europeu em vários termos.",
+    "pt_BR": "Os brasileiros falam português, não espanhol, e muita gente gosta de ouvir algumas palavras no próprio idioma. Experimente 'oi', 'tudo bem?' e 'obrigado' ou 'obrigada'.",
+    "fr": "Les Brésiliens parlent portugais, pas espagnol, et beaucoup aiment entendre quelques mots dans leur langue. Essaie 'oi' (salut), 'tudo bem ?' (ça va ?) et 'obrigado' ou 'obrigada' (merci).",
+    "de": "Brasilianer sprechen Portugiesisch, nicht Spanisch, und viele freuen sich über ein paar Worte in ihrer Sprache. Probier 'oi' (hallo), 'tudo bem?' (wie geht's?) und 'obrigado' oder 'obrigada' (danke)."
+   }
+  },
+  {
+   "id": "ct-BR-04",
+   "category": "language",
+   "text": {
+    "en": "Brazilian Portuguese has regional accents and slang. If you don't understand, ask 'Pode repetir mais devagar?' (could you repeat that more slowly?). People are usually patient with learners.",
+    "it": "Il portoghese brasiliano ha accenti e gerghi regionali. Se non capisci, chiedi 'Pode repetir mais devagar?' (puoi ripetere più lentamente?). Di solito le persone sono pazienti con chi impara.",
+    "es": "El portugués brasileño tiene acentos y jergas regionales. Si no entiendes, pregunta 'Pode repetir mais devagar?' (¿puedes repetir más despacio?). La gente suele tener paciencia con quien aprende.",
+    "pt": "O português do Brasil tem sotaques e gírias regionais. Se não perceberes, pergunta 'Pode repetir mais devagar?'. As pessoas costumam ter paciência com quem está a aprender.",
+    "pt_BR": "O português do Brasil tem sotaques e gírias regionais. Se não entender, pergunte 'Pode repetir mais devagar?'. As pessoas costumam ter paciência com quem está aprendendo.",
+    "fr": "Le portugais brésilien a des accents et un argot régionaux. Si tu ne comprends pas, demande 'Pode repetir mais devagar ?' (peux-tu répéter plus lentement ?). On est en général patient avec ceux qui apprennent.",
+    "de": "Brasilianisches Portugiesisch hat regionale Akzente und Slang. Wenn du etwas nicht verstehst, frag 'Pode repetir mais devagar?' (Kannst du das langsamer wiederholen?). Lernenden gegenüber ist man meist geduldig."
+   }
+  },
+  {
+   "id": "ct-BR-05",
+   "category": "conversation",
+   "text": {
+    "en": "Brazilians love small talk about family, food, music and football, and often ask where you are from. Brazil is very regionally diverse, so asking where someone is from is also a good opener.",
+    "it": "I brasiliani amano la conversazione leggera su famiglia, cibo, musica e calcio e spesso chiedono da dove vieni. Il Brasile è molto vario tra regioni, quindi chiedere da dove viene qualcuno è un buon modo per iniziare.",
+    "es": "A los brasileños les encanta charlar sobre familia, comida, música y fútbol, y a menudo preguntan de dónde eres. Brasil es muy diverso regionalmente, así que preguntar de dónde es alguien es también un buen comienzo.",
+    "pt": "Os brasileiros adoram conversa leve sobre família, comida, música e futebol, e perguntam muitas vezes de onde és. O Brasil é muito diverso por regiões, por isso perguntar de onde alguém é também é um bom início.",
+    "pt_BR": "Os brasileiros adoram um papo leve sobre família, comida, música e futebol, e costumam perguntar de onde você é. O Brasil é muito diverso por regiões, então perguntar de onde alguém é também é um bom começo.",
+    "fr": "Les Brésiliens adorent la conversation légère sur la famille, la cuisine, la musique et le football, et demandent souvent d'où tu viens. Le Brésil est très varié selon les régions : demander d'où vient quelqu'un est aussi une bonne entrée en matière.",
+    "de": "Brasilianer lieben Small Talk über Familie, Essen, Musik und Fußball und fragen oft, woher du kommst. Brasilien ist regional sehr vielfältig; die Frage, woher jemand stammt, ist deshalb auch ein guter Einstieg."
+   }
+  },
+  {
+   "id": "ct-BR-06",
+   "category": "dining",
+   "text": {
+    "en": "Rice and beans are everyday staples, and feijoada, a black bean and pork stew, is regarded as the national dish. It is often served at long family lunches or on Saturdays.",
+    "it": "Riso e fagioli sono alimenti di base quotidiani e la feijoada, uno stufato di fagioli neri e maiale, è considerata il piatto nazionale. Spesso si serve a lunghi pranzi in famiglia o il sabato.",
+    "es": "El arroz con frijoles es básico a diario, y la feijoada, un guiso de frijoles negros y cerdo, se considera el plato nacional. A menudo se sirve en largos almuerzos familiares o los sábados.",
+    "pt": "O arroz com feijão é básico no dia a dia, e a feijoada, um guisado de feijão preto com carne de porco, é considerada o prato nacional. Serve-se muitas vezes em longos almoços de família ou ao sábado.",
+    "pt_BR": "Arroz com feijão é básico do dia a dia, e a feijoada, um cozido de feijão preto com carne de porco, é considerada o prato nacional. É comum em almoços longos de família ou aos sábados.",
+    "fr": "Le riz et les haricots sont des bases quotidiennes, et la feijoada, un ragoût de haricots noirs et de porc, est considérée comme le plat national. Elle est souvent servie lors de longs déjeuners en famille ou le samedi.",
+    "de": "Reis und Bohnen sind Alltagskost, und die Feijoada, ein Eintopf aus schwarzen Bohnen und Schweinefleisch, gilt als Nationalgericht. Sie wird oft bei langen Familienessen oder samstags serviert."
+   }
+  },
+  {
+   "id": "ct-BR-07",
+   "category": "dining",
+   "text": {
+    "en": "At a churrascaria, waiters bring skewers of grilled meat to your table. Many places give you a card or token, with one side to signal you want more and the other to say you are done.",
+    "it": "Nelle churrascarias i camerieri portano al tavolo spiedi di carne alla griglia. In molti locali ricevi una card o un gettone: un lato indica che ne vuoi ancora, l'altro che hai finito.",
+    "es": "En las churrascarias, los camareros llevan a la mesa brochetas de carne a la parrilla. En muchos sitios te dan una tarjeta o ficha: un lado indica que quieres más y el otro que has terminado.",
+    "pt": "Nas churrascarias, os empregados trazem espetos de carne grelhada à mesa. Em muitos sítios dão-te um cartão ou ficha: um lado indica que queres mais e o outro que já acabaste.",
+    "pt_BR": "Nas churrascarias, os garçons levam espetos de carne grelhada até a mesa. Em muitos lugares você recebe um cartão ou ficha: um lado indica que quer mais e o outro que já terminou.",
+    "fr": "Dans les churrascarias, les serveurs apportent des brochettes de viande grillée à ta table. Beaucoup d'endroits te donnent une carte ou un jeton : un côté pour dire que tu en veux encore, l'autre que tu as fini.",
+    "de": "In Churrascarias bringen Kellner gegrilltes Fleisch am Spieß an den Tisch. Vielerorts bekommst du eine Karte oder Marke: eine Seite zeigt, dass du mehr möchtest, die andere, dass du fertig bist."
+   }
+  },
+  {
+   "id": "ct-BR-08",
+   "category": "dining",
+   "text": {
+    "en": "Pao de queijo, a chewy cheese bread from Minas Gerais, is a favourite snack. Offering a small cup of strong, sweet coffee, a cafezinho, is a common gesture of hospitality.",
+    "it": "Il pao de queijo, un pane al formaggio gommoso originario del Minas Gerais, è uno spuntino amatissimo. Offrire una tazzina di caffè forte e zuccherato, il cafezinho, è un gesto comune di ospitalità.",
+    "es": "El pão de queijo, un pan de queso elástico de Minas Gerais, es un tentempié favorito. Ofrecer una tacita de café fuerte y dulce, un cafezinho, es un gesto común de hospitalidad.",
+    "pt": "O pão de queijo, um pãozinho de queijo elástico originário de Minas Gerais, é um lanche favorito. Oferecer uma chávena pequena de café forte e doce, um cafezinho, é um gesto comum de hospitalidade.",
+    "pt_BR": "O pão de queijo, um pãozinho macio de queijo de Minas Gerais, é um lanche favorito. Oferecer uma xicrinha de café forte e doce, um cafezinho, é um gesto comum de hospitalidade.",
+    "fr": "Le pão de queijo, un petit pain moelleux au fromage venu du Minas Gerais, est un en-cas très apprécié. Offrir une petite tasse de café fort et sucré, un cafezinho, est un geste courant d'hospitalité.",
+    "de": "Pão de queijo, ein weiches Käsebrötchen aus Minas Gerais, ist ein beliebter Snack. Ein Tässchen starken, süßen Kaffee, ein Cafezinho, anzubieten ist eine übliche Geste der Gastfreundschaft."
+   }
+  },
+  {
+   "id": "ct-BR-09",
+   "category": "tipping",
+   "text": {
+    "en": "Restaurant bills in Brazil often include a 10 percent service charge, shown as 'serviço'. It is optional by custom, so check your bill before adding anything more.",
+    "it": "I conti dei ristoranti in Brasile includono spesso un servizio del 10 per cento, indicato come 'serviço'. Per consuetudine è facoltativo, quindi controlla il conto prima di aggiungere altro.",
+    "es": "Las cuentas de los restaurantes en Brasil suelen incluir un 10 por ciento de servicio, indicado como 'serviço'. Por costumbre es opcional, así que revisa la cuenta antes de añadir algo más.",
+    "pt": "As contas dos restaurantes no Brasil incluem muitas vezes 10 por cento de serviço, indicado como 'serviço'. Por costume é opcional, por isso confere a conta antes de acrescentares algo mais.",
+    "pt_BR": "As contas dos restaurantes no Brasil geralmente incluem 10 por cento de serviço, indicado como 'serviço'. Por costume é opcional, então confira a conta antes de acrescentar algo mais.",
+    "fr": "Les additions des restaurants brésiliens comprennent souvent 10 pour cent de service, indiqué 'serviço'. C'est facultatif par usage : vérifie ta note avant d'ajouter quoi que ce soit.",
+    "de": "Restaurantrechnungen in Brasilien enthalten oft 10 Prozent Service, ausgewiesen als 'serviço'. Er ist üblicherweise freiwillig; prüfe die Rechnung, bevor du etwas dazugibst."
+   }
+  },
+  {
+   "id": "ct-BR-10",
+   "category": "gifts",
+   "text": {
+    "en": "If you are invited to a home, bring a small gift such as dessert, chocolates or flowers. Brigadeiros, chocolate fudge balls, are a classic treat at birthdays and celebrations.",
+    "it": "Se sei invitato a casa di qualcuno, porta un piccolo regalo come un dolce, cioccolatini o fiori. I brigadeiros, palline di cioccolato e latte condensato, sono un classico di compleanni e feste.",
+    "es": "Si te invitan a una casa, lleva un pequeño regalo como postre, bombones o flores. Los brigadeiros, bolitas de chocolate y leche condensada, son un clásico en cumpleaños y celebraciones.",
+    "pt": "Se fores convidado para uma casa, leva uma pequena prenda, como sobremesa, chocolates ou flores. Os brigadeiros, bolinhas de chocolate e leite condensado, são um clássico em aniversários e festas.",
+    "pt_BR": "Se for convidado para uma casa, leve um mimo, como sobremesa, chocolates ou flores. Os brigadeiros, docinhos de chocolate com leite condensado, são clássicos em aniversários e festas.",
+    "fr": "Si tu es invité(e) chez quelqu'un, apporte un petit cadeau comme un dessert, des chocolats ou des fleurs. Les brigadeiros, boules de chocolat au lait concentré, sont un classique des anniversaires et des fêtes.",
+    "de": "Bist du zu jemandem eingeladen, bring ein kleines Geschenk wie Nachtisch, Pralinen oder Blumen mit. Brigadeiros, Schokoladenkugeln mit Kondensmilch, sind ein Klassiker bei Geburtstagen und Feiern."
+   }
+  },
+  {
+   "id": "ct-BR-11",
+   "category": "dress",
+   "text": {
+    "en": "Beachwear belongs on the beach: put on a shirt and shoes when you head to a shop or restaurant. In cities, people tend to dress neatly, especially in the evening.",
+    "it": "L'abbigliamento da spiaggia è per la spiaggia: indossa maglietta e scarpe quando vai in un negozio o in un ristorante. In città ci si veste in modo curato, soprattutto la sera.",
+    "es": "La ropa de playa es para la playa: ponte camiseta y zapatos al ir a una tienda o restaurante. En las ciudades la gente suele vestir de forma cuidada, sobre todo por la noche.",
+    "pt": "A roupa de praia é para a praia: veste uma camisa e calça sapatos quando fores a uma loja ou restaurante. Nas cidades, as pessoas costumam vestir-se de forma cuidada, sobretudo à noite.",
+    "pt_BR": "Roupa de praia é para a praia: vista uma camiseta e calce algo nos pés ao ir a uma loja ou restaurante. Nas cidades, as pessoas costumam se arrumar, principalmente à noite.",
+    "fr": "La tenue de plage est pour la plage : enfile un t-shirt et des chaussures pour aller dans un magasin ou un restaurant. En ville, on s'habille plutôt soigneusement, surtout le soir.",
+    "de": "Strandkleidung gehört an den Strand: Zieh Shirt und Schuhe an, wenn du in ein Geschäft oder Restaurant gehst. In den Städten kleidet man sich gepflegt, besonders abends."
+   }
+  },
+  {
+   "id": "ct-BR-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "About two thirds of Brazilians are Catholic, and a growing share are Protestant. The Afro-Brazilian faith Candomblé is important in Bahia. Show respect and ask before joining or photographing ceremonies.",
+    "it": "Circa due terzi dei brasiliani sono cattolici e una quota crescente è protestante. La religione afro-brasiliana del Candomblé è importante a Bahia. Mostra rispetto e chiedi prima di partecipare alle cerimonie o fotografarle.",
+    "es": "Cerca de dos tercios de los brasileños son católicos y una parte creciente es protestante. La religión afrobrasileña del candomblé es importante en Bahía. Muestra respeto y pregunta antes de asistir a ceremonias o fotografiarlas.",
+    "pt": "Cerca de dois terços dos brasileiros são católicos e uma parte crescente é protestante. A religião afro-brasileira do candomblé é importante na Bahia. Mostra respeito e pergunta antes de participar em cerimónias ou fotografá-las.",
+    "pt_BR": "Cerca de dois terços dos brasileiros são católicos, e uma parcela crescente é protestante. A religião afro-brasileira do candomblé é importante na Bahia. Mostre respeito e pergunte antes de participar de cerimônias ou fotografá-las.",
+    "fr": "Environ les deux tiers des Brésiliens sont catholiques et une part croissante est protestante. La religion afro-brésilienne du candomblé est importante à Bahia. Montre du respect et demande avant d'assister aux cérémonies ou de les photographier.",
+    "de": "Etwa zwei Drittel der Brasilianer sind katholisch, ein wachsender Anteil ist protestantisch. Die afrobrasilianische Religion Candomblé ist in Bahia wichtig. Zeig Respekt und frag, bevor du an Zeremonien teilnimmst oder sie fotografierst."
+   }
+  },
+  {
+   "id": "ct-BR-13",
+   "category": "religion_sites",
+   "text": {
+    "en": "The Basilica of Aparecida in Sao Paulo state is among Brazil's major pilgrimage sites. Dress modestly in churches, keep your voice low, and avoid walking around during Mass.",
+    "it": "La Basilica di Aparecida, nello stato di San Paolo, è tra i principali luoghi di pellegrinaggio del Brasile. Vesti in modo sobrio nelle chiese, tieni la voce bassa ed evita di girare durante la messa.",
+    "es": "La Basílica de Aparecida, en el estado de São Paulo, es uno de los principales lugares de peregrinación de Brasil. Vístete con modestia en las iglesias, habla bajo y evita pasear durante la misa.",
+    "pt": "A Basílica de Aparecida, no estado de São Paulo, é um dos principais locais de peregrinação do Brasil. Veste-te de forma discreta nas igrejas, fala baixo e evita circular durante a missa.",
+    "pt_BR": "A Basílica de Aparecida, no estado de São Paulo, é um dos principais locais de peregrinação do Brasil. Vista-se com discrição nas igrejas, fale baixo e evite circular durante a missa.",
+    "fr": "La basilique d'Aparecida, dans l'État de São Paulo, est l'un des grands lieux de pèlerinage du Brésil. Habille-toi sobrement dans les églises, parle doucement et évite de te déplacer pendant la messe.",
+    "de": "Die Basilika von Aparecida im Bundesstaat São Paulo gehört zu den wichtigsten Pilgerstätten Brasiliens. Kleide dich in Kirchen dezent, sprich leise und geh während der Messe nicht umher."
+   }
+  },
+  {
+   "id": "ct-BR-14",
+   "category": "gestures",
+   "text": {
+    "en": "A thumbs-up is a very common sign of approval in Brazil. The circle 'OK' gesture made with thumb and finger is considered rude there, so avoid it.",
+    "it": "Il pollice alzato è un segno di approvazione molto comune in Brasile. Il gesto 'OK' a cerchio con pollice e indice è considerato maleducato, quindi evitalo.",
+    "es": "El pulgar hacia arriba es un signo de aprobación muy común en Brasil. El gesto 'OK' en círculo con el pulgar y el índice se considera grosero allí, así que evítalo.",
+    "pt": "O polegar para cima é um sinal de aprovação muito comum no Brasil. O gesto 'OK' em círculo com o polegar e o indicador é considerado rude lá, por isso evita-o.",
+    "pt_BR": "O polegar para cima é um sinal de aprovação muito comum no Brasil. O gesto de 'OK' em círculo com polegar e indicador é considerado rude, então evite.",
+    "fr": "Le pouce levé est un signe d'approbation très courant au Brésil. Le geste 'OK' en cercle avec le pouce et l'index y est jugé grossier : évite-le.",
+    "de": "Der Daumen nach oben ist in Brasilien ein sehr gängiges Zeichen der Zustimmung. Die 'OK'-Geste als Kreis aus Daumen und Zeigefinger gilt dort als unhöflich, vermeide sie."
+   }
+  },
+  {
+   "id": "ct-BR-15",
+   "category": "punctuality",
+   "text": {
+    "en": "For work meetings, be on time. For parties and friends' get-togethers, arriving 15 to 30 minutes after the stated time is common, but ask your host if you're unsure.",
+    "it": "Per le riunioni di lavoro sii puntuale. Per feste e ritrovi tra amici è comune arrivare 15-30 minuti dopo l'orario indicato, ma chiedi a chi ti ospita se hai dubbi.",
+    "es": "Para reuniones de trabajo, sé puntual. En fiestas y encuentros entre amigos es común llegar entre 15 y 30 minutos después de la hora indicada, pero pregunta a tu anfitrión si dudas.",
+    "pt": "Para reuniões de trabalho, sê pontual. Em festas e encontros de amigos é comum chegar 15 a 30 minutos depois da hora indicada, mas pergunta a quem te recebe se tiveres dúvidas.",
+    "pt_BR": "Para reuniões de trabalho, seja pontual. Em festas e encontros de amigos, é comum chegar de 15 a 30 minutos depois da hora marcada, mas pergunte ao anfitrião se tiver dúvida.",
+    "fr": "Pour les réunions de travail, sois ponctuel(le). Pour les fêtes et les soirées entre amis, arriver 15 à 30 minutes après l'heure annoncée est courant, mais demande à ton hôte en cas de doute.",
+    "de": "Sei bei Arbeitsterminen pünktlich. Zu Partys und Treffen mit Freunden kommt man oft 15 bis 30 Minuten nach der angegebenen Zeit, doch frag bei Unsicherheit deine Gastgeber."
+   }
+  },
+  {
+   "id": "ct-BR-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "Brazil has priority queues and seats for older people, pregnant women, people with disabilities and people with small children. Using them without need is frowned upon.",
+    "it": "In Brasile esistono code e posti prioritari per anziani, donne incinte, persone con disabilità e persone con bambini piccoli. Usarli senza necessità è mal visto.",
+    "es": "Brasil tiene filas y asientos prioritarios para personas mayores, embarazadas, personas con discapacidad y personas con niños pequeños. Usarlos sin necesidad está mal visto.",
+    "pt": "O Brasil tem filas e lugares prioritários para pessoas mais velhas, grávidas, pessoas com deficiência e pessoas com crianças pequenas. Usá-los sem necessidade é mal visto.",
+    "pt_BR": "O Brasil tem filas e assentos prioritários para idosos, grávidas, pessoas com deficiência e pessoas com crianças pequenas. Usá-los sem necessidade é mal visto.",
+    "fr": "Le Brésil prévoit des files et des places prioritaires pour les personnes âgées, les femmes enceintes, les personnes handicapées et celles avec de jeunes enfants. Les occuper sans besoin est mal vu.",
+    "de": "In Brasilien gibt es Vorrangschlangen und Sitzplätze für ältere Menschen, Schwangere, Menschen mit Behinderung und Personen mit kleinen Kindern. Sie ohne Bedarf zu nutzen, gilt als unhöflich."
+   }
+  },
+  {
+   "id": "ct-BR-17",
+   "category": "transport",
+   "text": {
+    "en": "Ride-hailing apps are widely used in Brazilian cities, and the metros in Sao Paulo and Rio are practical. Check the route and the plate or driver name before getting into a car.",
+    "it": "Le app di trasporto privato sono molto usate nelle città brasiliane e le metropolitane di San Paolo e Rio sono pratiche. Controlla il percorso e la targa o il nome dell'autista prima di salire in auto.",
+    "es": "Las aplicaciones de transporte privado se usan mucho en las ciudades brasileñas, y los metros de São Paulo y Río son prácticos. Comprueba la ruta y la matrícula o el nombre del conductor antes de subir al coche.",
+    "pt": "As aplicações de transporte privado são muito usadas nas cidades brasileiras, e os metros de São Paulo e do Rio são práticos. Confirma o percurso e a matrícula ou o nome do condutor antes de entrares no carro.",
+    "pt_BR": "Os aplicativos de transporte são muito usados nas cidades brasileiras, e os metrôs de São Paulo e do Rio são práticos. Confira a rota e a placa ou o nome do motorista antes de entrar no carro.",
+    "fr": "Les applications de VTC sont très utilisées dans les villes brésiliennes, et les métros de São Paulo et de Rio sont pratiques. Vérifie l'itinéraire et la plaque ou le nom du chauffeur avant de monter.",
+    "de": "Fahrdienst-Apps werden in brasilianischen Städten viel genutzt, und die U-Bahnen in São Paulo und Rio sind praktisch. Prüfe vor dem Einsteigen Route sowie Kennzeichen oder Namen des Fahrers."
+   }
+  },
+  {
+   "id": "ct-BR-18",
+   "category": "transport",
+   "text": {
+    "en": "Brazil is huge, and long-distance buses are a comfortable, common way to travel. Intercity coaches leave from a bus terminal, called a rodoviaria, so check which one you need.",
+    "it": "Il Brasile è enorme e gli autobus a lunga percorrenza sono un modo comodo e diffuso di viaggiare. I pullman interurbani partono da un terminal, detto rodoviária: controlla quale ti serve.",
+    "es": "Brasil es enorme y los autobuses de larga distancia son una forma cómoda y común de viajar. Los autocares interurbanos salen de una terminal llamada rodoviária, así que comprueba cuál necesitas.",
+    "pt": "O Brasil é enorme e os autocarros de longa distância são uma forma cómoda e comum de viajar. Os autocarros interurbanos partem de um terminal chamado rodoviária, por isso confirma qual precisas.",
+    "pt_BR": "O Brasil é enorme, e os ônibus de longa distância são uma forma confortável e comum de viajar. Os ônibus intermunicipais saem de um terminal chamado rodoviária, então confira qual você precisa.",
+    "fr": "Le Brésil est immense et les bus longue distance sont un moyen de voyager confortable et courant. Les autocars interurbains partent d'une gare routière, la rodoviária : vérifie laquelle tu dois prendre.",
+    "de": "Brasilien ist riesig, und Fernbusse sind eine bequeme, gängige Reiseart. Überlandbusse fahren von einem Busbahnhof, der Rodoviária, ab; prüfe, welcher für dich der richtige ist."
+   }
+  },
+  {
+   "id": "ct-BR-19",
+   "category": "festivals",
+   "text": {
+    "en": "Carnival is held forty-six days before Easter and is the best-known holiday, with festivities lasting almost a week. Styles differ by region: samba in Rio, frevo and maracatu in Recife, axé in Salvador.",
+    "it": "Il Carnevale si tiene quarantasei giorni prima di Pasqua ed è la festa più nota, con celebrazioni che durano quasi una settimana. Gli stili cambiano per regione: samba a Rio, frevo e maracatu a Recife, axé a Salvador.",
+    "es": "El Carnaval se celebra cuarenta y seis días antes de Semana Santa y es la fiesta más conocida, con festejos que duran casi una semana. Los estilos cambian según la región: samba en Río, frevo y maracatu en Recife, axé en Salvador.",
+    "pt": "O Carnaval celebra-se quarenta e seis dias antes da Páscoa e é a festa mais conhecida, com festejos que duram quase uma semana. Os estilos mudam consoante a região: samba no Rio, frevo e maracatu no Recife, axé em Salvador.",
+    "pt_BR": "O Carnaval acontece quarenta e seis dias antes da Páscoa e é o feriado mais conhecido, com festas que duram quase uma semana. Os estilos mudam por região: samba no Rio, frevo e maracatu no Recife, axé em Salvador.",
+    "fr": "Le Carnaval a lieu quarante-six jours avant Pâques et c'est la fête la plus connue, avec des festivités durant presque une semaine. Les styles varient selon la région : samba à Rio, frevo et maracatu à Recife, axé à Salvador.",
+    "de": "Der Karneval findet sechsundvierzig Tage vor Ostern statt und ist der bekannteste Feiertag, mit Feiern, die fast eine Woche dauern. Die Stile variieren: Samba in Rio, Frevo und Maracatu in Recife, Axé in Salvador."
+   }
+  },
+  {
+   "id": "ct-BR-20",
+   "category": "festivals",
+   "text": {
+    "en": "Festa Junina in June features country-style costumes, square dancing, bonfires and treats made with corn. It is a family-friendly celebration, and visitors are usually welcome to join.",
+    "it": "La Festa Junina di giugno prevede costumi in stile campagnolo, balli di gruppo, falò e dolci a base di mais. È una festa per famiglie e in genere i visitatori sono ben accetti.",
+    "es": "La Festa Junina de junio incluye trajes de estilo campesino, bailes en cuadrilla, hogueras y dulces de maíz. Es una celebración familiar y los visitantes suelen ser bienvenidos.",
+    "pt": "A Festa Junina de junho tem trajes de estilo campestre, danças de grupo, fogueiras e doces de milho. É uma celebração em família e os visitantes costumam ser bem-vindos.",
+    "pt_BR": "A Festa Junina de junho tem roupas de estilo caipira, quadrilha, fogueiras e doces de milho. É uma celebração em família, e os visitantes costumam ser bem-vindos.",
+    "fr": "La Festa Junina de juin propose des costumes campagnards, des danses en quadrille, des feux de joie et des douceurs à base de maïs. C'est une fête familiale où les visiteurs sont généralement les bienvenus.",
+    "de": "Die Festa Junina im Juni bietet ländliche Kostüme, Quadrilha-Tänze, Lagerfeuer und Süßes aus Mais. Es ist ein familienfreundliches Fest, bei dem Besucher meist willkommen sind."
+   }
+  },
+  {
+   "id": "ct-BR-21",
+   "category": "festivals",
+   "text": {
+    "en": "On New Year's Eve, many Brazilians wear white for peace and gather on beaches. Some leave flowers as offerings to Iemanja, the sea goddess of Afro-Brazilian faiths.",
+    "it": "A Capodanno molti brasiliani indossano il bianco per la pace e si riuniscono sulle spiagge. Alcuni lasciano fiori in offerta a Iemanjá, la dea del mare delle religioni afro-brasiliane.",
+    "es": "En Nochevieja, muchos brasileños visten de blanco por la paz y se reúnen en las playas. Algunos dejan flores como ofrenda a Iemanjá, la diosa del mar de las religiones afrobrasileñas.",
+    "pt": "Na passagem de ano, muitos brasileiros vestem-se de branco pela paz e reúnem-se nas praias. Alguns deixam flores como oferenda a Iemanjá, a deusa do mar das religiões afro-brasileiras.",
+    "pt_BR": "No Réveillon, muitos brasileiros se vestem de branco pela paz e se reúnem nas praias. Alguns deixam flores como oferenda a Iemanjá, a deusa do mar das religiões afro-brasileiras.",
+    "fr": "Au Nouvel An, beaucoup de Brésiliens s'habillent en blanc pour la paix et se retrouvent sur les plages. Certains offrent des fleurs à Iemanjá, la déesse de la mer des religions afro-brésiliennes.",
+    "de": "An Silvester tragen viele Brasilianer Weiß für den Frieden und treffen sich an Stränden. Manche legen Blumen als Opfergabe für Iemanjá nieder, die Meeresgöttin der afrobrasilianischen Religionen."
+   }
+  },
+  {
+   "id": "ct-BR-22",
+   "category": "family",
+   "text": {
+    "en": "Family and friends are central to daily life, and Brazilians often organise their time around them. Sunday lunch with relatives is a common tradition, and visitors may be invited along.",
+    "it": "Famiglia e amici sono centrali nella vita quotidiana e i brasiliani spesso organizzano il proprio tempo attorno a loro. Il pranzo domenicale con i parenti è una tradizione diffusa e i visitatori possono essere invitati.",
+    "es": "La familia y los amigos son centrales en la vida diaria, y los brasileños suelen organizar su tiempo en torno a ellos. El almuerzo del domingo con los parientes es una tradición común, y a los visitantes pueden invitarlos.",
+    "pt": "A família e os amigos são centrais no dia a dia, e os brasileiros organizam muitas vezes o seu tempo em torno deles. O almoço de domingo com os familiares é uma tradição comum, e os visitantes podem ser convidados.",
+    "pt_BR": "Família e amigos são centrais no dia a dia, e os brasileiros costumam organizar o tempo em torno deles. O almoço de domingo com os parentes é uma tradição comum, e os visitantes podem ser convidados.",
+    "fr": "La famille et les amis sont au centre de la vie quotidienne, et les Brésiliens organisent souvent leur temps autour d'eux. Le déjeuner dominical avec les proches est une tradition courante, et les visiteurs peuvent y être invités.",
+    "de": "Familie und Freunde stehen im Alltag im Mittelpunkt, und Brasilianer richten ihre Zeit oft nach ihnen aus. Das Sonntagsessen mit Verwandten ist eine verbreitete Tradition, zu der auch Besucher eingeladen werden können."
+   }
+  },
+  {
+   "id": "ct-BR-23",
+   "category": "money",
+   "text": {
+    "en": "The currency is the real (R$). Cards are widely accepted, and many people use Pix, an instant payment system, even at small stalls. Carry a little cash for markets and tips.",
+    "it": "La valuta è il real (R$). Le carte sono ampiamente accettate e molti usano Pix, un sistema di pagamento istantaneo, anche nelle piccole bancarelle. Porta un po' di contanti per i mercati e le mance.",
+    "es": "La moneda es el real (R$). Las tarjetas se aceptan ampliamente y muchos usan Pix, un sistema de pago instantáneo, incluso en puestos pequeños. Lleva algo de efectivo para mercados y propinas.",
+    "pt": "A moeda é o real (R$). Os cartões são amplamente aceites e muitos usam o Pix, um sistema de pagamento instantâneo, até em bancas pequenas. Leva algum dinheiro para mercados e gorjetas.",
+    "pt_BR": "A moeda é o real (R$). Os cartões são amplamente aceitos, e muita gente usa o Pix, um sistema de pagamento instantâneo, até em barraquinhas. Leve um pouco de dinheiro para feiras e gorjetas.",
+    "fr": "La monnaie est le real (R$). Les cartes sont largement acceptées et beaucoup utilisent Pix, un système de paiement instantané, même sur de petits étals. Garde un peu d'espèces pour les marchés et les pourboires.",
+    "de": "Die Währung ist der Real (R$). Karten werden weitgehend akzeptiert, und viele nutzen Pix, ein Sofortzahlungssystem, sogar an kleinen Ständen. Halte etwas Bargeld für Märkte und Trinkgelder bereit."
+   }
+  },
+  {
+   "id": "ct-BR-24",
+   "category": "photography",
+   "text": {
+    "en": "Ask before photographing people, especially at religious ceremonies and in Indigenous communities. In busy cities, avoid holding out your phone or camera carelessly on the street.",
+    "it": "Chiedi il permesso prima di fotografare le persone, soprattutto durante cerimonie religiose e nelle comunità indigene. Nelle città affollate evita di tenere telefono o fotocamera in bella vista per strada.",
+    "es": "Pide permiso antes de fotografiar a personas, sobre todo en ceremonias religiosas y comunidades indígenas. En ciudades concurridas, evita sacar el móvil o la cámara sin cuidado en la calle.",
+    "pt": "Pede licença antes de fotografar pessoas, sobretudo em cerimónias religiosas e comunidades indígenas. Em cidades movimentadas, evita exibir o telemóvel ou a máquina fotográfica de forma descuidada na rua.",
+    "pt_BR": "Peça licença antes de fotografar pessoas, principalmente em cerimônias religiosas e comunidades indígenas. Em cidades movimentadas, evite exibir o celular ou a câmera de forma descuidada na rua.",
+    "fr": "Demande avant de photographier des personnes, surtout lors de cérémonies religieuses et dans les communautés autochtones. Dans les villes animées, évite de sortir ton téléphone ou ton appareil sans précaution dans la rue.",
+    "de": "Frag nach, bevor du Menschen fotografierst, besonders bei religiösen Zeremonien und in indigenen Gemeinschaften. In belebten Städten solltest du Handy oder Kamera auf der Straße nicht unachtsam zeigen."
+   }
+  },
+  {
+   "id": "ct-BR-25",
+   "category": "nightlife",
+   "text": {
+    "en": "Botecos, casual neighbourhood bars with snacks, are popular places to chat with friends. A roda de samba, where people gather to play and sing together, is a lively way to enjoy local music.",
+    "it": "I boteco, bar di quartiere informali con stuzzichini, sono luoghi popolari per chiacchierare con gli amici. Una roda de samba, dove le persone si riuniscono a suonare e cantare insieme, è un modo vivace di godersi la musica locale.",
+    "es": "Los botecos, bares de barrio informales con tapas, son lugares populares para charlar con amigos. Una roda de samba, donde la gente se reúne a tocar y cantar, es una forma animada de disfrutar la música local.",
+    "pt": "Os botecos, bares de bairro informais com petiscos, são locais populares para conversar com amigos. Uma roda de samba, onde as pessoas se juntam para tocar e cantar, é uma forma animada de apreciar a música local.",
+    "pt_BR": "Os botecos, bares de bairro informais com petiscos, são lugares populares para bater papo com os amigos. Uma roda de samba, onde as pessoas se reúnem para tocar e cantar, é um jeito animado de curtir a música local.",
+    "fr": "Les botecos, bars de quartier décontractés avec des en-cas, sont des lieux prisés pour discuter entre amis. Une roda de samba, où l'on se réunit pour jouer et chanter ensemble, est une façon animée de découvrir la musique locale.",
+    "de": "Botecos, lockere Viertelkneipen mit Snacks, sind beliebte Orte zum Plaudern mit Freunden. Eine Roda de Samba, bei der man gemeinsam spielt und singt, ist eine lebendige Art, lokale Musik zu erleben."
+   }
+  },
+  {
+   "id": "ct-BR-26",
+   "category": "nature",
+   "text": {
+    "en": "Brazil's natural wonders include the Amazon, the Pantanal and Iguacu Falls. For jungle or wetland trips, use licensed guides, and note that visiting some Indigenous lands needs official permission.",
+    "it": "Tra le meraviglie naturali del Brasile ci sono l'Amazzonia, il Pantanal e le cascate dell'Iguaçu. Per escursioni nella giungla o nelle zone umide usa guide autorizzate e ricorda che per visitare alcune terre indigene serve un permesso ufficiale.",
+    "es": "Entre las maravillas naturales de Brasil están la Amazonia, el Pantanal y las cataratas de Iguazú. Para viajes a la selva o a los humedales, usa guías autorizados, y ten en cuenta que visitar algunas tierras indígenas requiere permiso oficial.",
+    "pt": "Entre as maravilhas naturais do Brasil estão a Amazónia, o Pantanal e as cataratas do Iguaçu. Para viagens à selva ou a zonas húmidas, usa guias autorizados, e tem em conta que visitar algumas terras indígenas exige autorização oficial.",
+    "pt_BR": "As maravilhas naturais do Brasil incluem a Amazônia, o Pantanal e as Cataratas do Iguaçu. Para passeios na selva ou em áreas alagadas, contrate guias credenciados, e lembre que visitar algumas terras indígenas exige autorização oficial.",
+    "fr": "Parmi les merveilles naturelles du Brésil figurent l'Amazonie, le Pantanal et les chutes d'Iguaçu. Pour la jungle ou les zones humides, passe par des guides agréés, et sache que visiter certaines terres autochtones requiert une autorisation officielle.",
+    "de": "Zu Brasiliens Naturwundern zählen der Amazonas, das Pantanal und die Iguaçu-Fälle. Für Dschungel- oder Feuchtgebietstouren nutze zugelassene Guides, und beachte, dass der Besuch mancher indigener Gebiete eine offizielle Genehmigung erfordert."
+   }
+  },
+  {
+   "id": "ct-BR-27",
+   "category": "safety",
+   "text": {
+    "en": "The police emergency number is 190, and 192 is for medical emergencies. In big cities, keep your phone and valuables out of sight, and ask locals or your hotel which areas to avoid at night.",
+    "it": "Il numero di emergenza della polizia è 190 e il 192 serve per le emergenze mediche. Nelle grandi città tieni telefono e oggetti di valore fuori vista e chiedi a locali o all'hotel quali zone evitare di notte.",
+    "es": "El número de emergencia de la policía es el 190, y el 192 es para emergencias médicas. En las grandes ciudades, mantén el móvil y los objetos de valor fuera de la vista y pregunta a locales o al hotel qué zonas evitar de noche.",
+    "pt": "O número de emergência da polícia é o 190, e o 192 serve para emergências médicas. Nas grandes cidades, mantém o telemóvel e os objetos de valor fora de vista e pergunta a locais ou ao hotel que zonas evitar à noite.",
+    "pt_BR": "O número de emergência da polícia é 190, e o 192 é para emergências médicas. Nas grandes cidades, mantenha o celular e os objetos de valor fora de vista e pergunte a moradores ou ao hotel quais áreas evitar à noite.",
+    "fr": "Le numéro d'urgence de la police est le 190, et le 192 sert aux urgences médicales. Dans les grandes villes, garde ton téléphone et tes objets de valeur hors de vue, et demande aux habitants ou à l'hôtel quels quartiers éviter la nuit.",
+    "de": "Die Notrufnummer der Polizei ist 190, und 192 gilt für medizinische Notfälle. Halte in Großstädten Handy und Wertsachen außer Sicht und frag Einheimische oder dein Hotel, welche Gegenden du nachts meiden solltest."
+   }
+  },
+  {
+   "id": "ct-BR-28",
+   "category": "local_pride",
+   "text": {
+    "en": "Football is the most popular sport in Brazil, and the national team is a source of great pride. Talking about your favourite players or clubs is an easy way to make friends.",
+    "it": "Il calcio è lo sport più popolare in Brasile e la nazionale è motivo di grande orgoglio. Parlare dei tuoi giocatori o club preferiti è un modo facile per fare amicizia.",
+    "es": "El fútbol es el deporte más popular de Brasil, y la selección nacional es motivo de gran orgullo. Hablar de tus jugadores o clubes favoritos es una forma fácil de hacer amigos.",
+    "pt": "O futebol é o desporto mais popular do Brasil, e a seleção nacional é motivo de grande orgulho. Falar dos teus jogadores ou clubes favoritos é uma forma fácil de fazer amigos.",
+    "pt_BR": "O futebol é o esporte mais popular do Brasil, e a seleção é motivo de grande orgulho. Falar dos seus jogadores ou clubes favoritos é um jeito fácil de fazer amigos.",
+    "fr": "Le football est le sport le plus populaire au Brésil, et la sélection nationale est une grande fierté. Parler de tes joueurs ou clubs préférés est un moyen facile de se faire des amis.",
+    "de": "Fußball ist der beliebteste Sport in Brasilien, und die Nationalmannschaft ist ein Quell großen Stolzes. Über deine Lieblingsspieler oder -vereine zu sprechen, ist ein leichter Weg, Freunde zu finden."
+   }
+  },
+  {
+   "id": "ct-BR-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Samba is widely seen as Brazil's national music style, and capoeira, a martial art mixing dance and music, was developed there. Showing curiosity about them delights many Brazilians.",
+    "it": "Il samba è considerato lo stile musicale nazionale del Brasile e la capoeira, un'arte marziale che unisce danza e musica, si è sviluppata lì. Mostrare curiosità per entrambi fa piacere a molti brasiliani.",
+    "es": "El samba se considera ampliamente el estilo musical nacional de Brasil, y la capoeira, un arte marcial que combina baile y música, se desarrolló allí. Mostrar curiosidad por ambos alegra a muchos brasileños.",
+    "pt": "O samba é amplamente visto como o estilo musical nacional do Brasil, e a capoeira, uma arte marcial que mistura dança e música, desenvolveu-se lá. Mostrar curiosidade por ambos agrada a muitos brasileiros.",
+    "pt_BR": "O samba é amplamente visto como o estilo musical nacional do Brasil, e a capoeira, uma arte marcial que mistura dança e música, foi desenvolvida aqui. Mostrar curiosidade por ambos agrada a muitos brasileiros.",
+    "fr": "La samba est largement considérée comme le style musical national du Brésil, et la capoeira, un art martial mêlant danse et musique, y a été développée. Montrer de la curiosité pour les deux ravit de nombreux Brésiliens.",
+    "de": "Samba gilt weithin als Brasiliens nationaler Musikstil, und Capoeira, eine Kampfkunst aus Tanz und Musik, wurde dort entwickelt. Neugier darauf erfreut viele Brasilianer."
+   }
+  },
+  {
+   "id": "ct-BR-30",
+   "category": "conversation",
+   "text": {
+    "en": "Brazilians often use humour and friendly nicknames, and a relaxed, open attitude is appreciated. Avoid assuming that all of Brazil is like Rio or Sao Paulo, since regions differ a lot.",
+    "it": "I brasiliani usano spesso umorismo e soprannomi affettuosi e un atteggiamento rilassato e aperto è apprezzato. Evita di pensare che tutto il Brasile sia come Rio o San Paolo, perché le regioni sono molto diverse.",
+    "es": "Los brasileños suelen usar humor y apodos cariñosos, y se aprecia una actitud relajada y abierta. Evita suponer que todo Brasil es como Río o São Paulo, ya que las regiones difieren mucho.",
+    "pt": "Os brasileiros usam muitas vezes humor e alcunhas carinhosas, e uma atitude descontraída e aberta é apreciada. Evita pensar que todo o Brasil é como o Rio ou São Paulo, pois as regiões diferem muito.",
+    "pt_BR": "Os brasileiros costumam usar humor e apelidos carinhosos, e uma atitude descontraída e aberta é apreciada. Evite achar que o Brasil inteiro é como o Rio ou São Paulo, pois as regiões diferem muito.",
+    "fr": "Les Brésiliens recourent souvent à l'humour et aux surnoms affectueux, et une attitude détendue et ouverte est appréciée. Évite de croire que tout le Brésil ressemble à Rio ou São Paulo, car les régions diffèrent beaucoup.",
+    "de": "Brasilianer nutzen oft Humor und freundliche Spitznamen, und eine entspannte, offene Haltung kommt gut an. Geh nicht davon aus, dass ganz Brasilien wie Rio oder São Paulo ist, denn die Regionen unterscheiden sich stark."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1302 @@
+[
+ {
+  "id": "ib-travel-001",
+  "topic": "travel",
+  "text": {
+   "en": "What's the best trip you've ever taken?",
+   "it": "Qual è il viaggio più bello che tu abbia mai fatto?",
+   "es": "¿Cuál ha sido el mejor viaje que has hecho?",
+   "pt": "Qual foi a melhor viagem que já fizeste?",
+   "pt_BR": "Qual foi a melhor viagem que você já fez?",
+   "fr": "Quel est le plus beau voyage que tu aies fait ?",
+   "de": "Was war die schönste Reise, die du je gemacht hast?"
+  }
+ },
+ {
+  "id": "ib-travel-002",
+  "topic": "travel",
+  "text": {
+   "en": "Where would you go tomorrow if you could travel anywhere?",
+   "it": "Dove andresti domani se potessi viaggiare ovunque?",
+   "es": "Si pudieras viajar a cualquier lugar, ¿adónde irías mañana?",
+   "pt": "Se pudesses viajar para qualquer lugar, para onde irias amanhã?",
+   "pt_BR": "Se você pudesse viajar para qualquer lugar, para onde iria amanhã?",
+   "fr": "Où irais-tu demain si tu pouvais voyager n'importe où ?",
+   "de": "Wohin würdest du morgen reisen, wenn du überall hinkönntest?"
+  }
+ },
+ {
+  "id": "ib-travel-003",
+  "topic": "travel",
+  "text": {
+   "en": "What's a place in your country that tourists often miss but you love?",
+   "it": "C'è un posto nel tuo paese che i turisti spesso ignorano ma che ami?",
+   "es": "¿Qué lugar de tu país suelen pasar por alto los turistas pero a ti te encanta?",
+   "pt": "Qual é um sítio do teu país que os turistas costumam ignorar mas que tu adoras?",
+   "pt_BR": "Qual é um lugar do seu país que os turistas costumam ignorar, mas que você adora?",
+   "fr": "Quel endroit de ton pays les touristes ratent souvent, mais que tu adores ?",
+   "de": "Welchen Ort in deinem Land übersehen Touristen oft, obwohl du ihn liebst?"
+  }
+ },
+ {
+  "id": "ib-travel-004",
+  "topic": "travel",
+  "text": {
+   "en": "Do you prefer big cities or small villages when you travel?",
+   "it": "Quando viaggi preferisci le grandi città o i piccoli villaggi?",
+   "es": "Cuando viajas, ¿prefieres las grandes ciudades o los pueblos pequeños?",
+   "pt": "Quando viajas, preferes cidades grandes ou aldeias pequenas?",
+   "pt_BR": "Quando você viaja, prefere cidades grandes ou vilarejos pequenos?",
+   "fr": "Quand tu voyages, tu préfères les grandes villes ou les petits villages ?",
+   "de": "Bevorzugst du beim Reisen große Städte oder kleine Dörfer?"
+  }
+ },
+ {
+  "id": "ib-travel-005",
+  "topic": "travel",
+  "text": {
+   "en": "What's the most unexpected thing that ever happened to you on a trip?",
+   "it": "Qual è la cosa più inaspettata che ti sia capitata in viaggio?",
+   "es": "¿Qué es lo más inesperado que te ha pasado en un viaje?",
+   "pt": "Qual foi a coisa mais inesperada que te aconteceu numa viagem?",
+   "pt_BR": "Qual foi a coisa mais inesperada que aconteceu com você em uma viagem?",
+   "fr": "Quelle est la chose la plus inattendue qui t'est arrivée en voyage ?",
+   "de": "Was ist das Unerwartetste, das dir auf einer Reise passiert ist?"
+  }
+ },
+ {
+  "id": "ib-travel-006",
+  "topic": "travel",
+  "text": {
+   "en": "Which country has surprised you the most so far?",
+   "it": "Quale paese ti ha sorpreso di più finora?",
+   "es": "¿Qué país te ha sorprendido más hasta ahora?",
+   "pt": "Que país te surpreendeu mais até agora?",
+   "pt_BR": "Que país mais te surpreendeu até agora?",
+   "fr": "Quel pays t'a le plus surpris jusqu'à présent ?",
+   "de": "Welches Land hat dich bisher am meisten überrascht?"
+  }
+ },
+ {
+  "id": "ib-travel-007",
+  "topic": "travel",
+  "text": {
+   "en": "What's one place you keep dreaming about visiting?",
+   "it": "C'è un posto che sogni da sempre di visitare?",
+   "es": "¿Hay algún lugar que sueñas con visitar desde hace tiempo?",
+   "pt": "Há algum sítio que sonhas visitar há muito tempo?",
+   "pt_BR": "Tem algum lugar que você sonha em visitar há muito tempo?",
+   "fr": "Y a-t-il un endroit que tu rêves de visiter depuis longtemps ?",
+   "de": "Gibt es einen Ort, den du schon lange gern besuchen würdest?"
+  }
+ },
+ {
+  "id": "ib-travel-008",
+  "topic": "travel",
+  "text": {
+   "en": "Are you more of a planner or a spontaneous traveler?",
+   "it": "Sei più il tipo che pianifica tutto o che viaggia in modo spontaneo?",
+   "es": "¿Eres más de planificar o de viajar con espontaneidad?",
+   "pt": "És mais de planear tudo ou de viajar ao sabor do momento?",
+   "pt_BR": "Você é mais de planejar tudo ou de viajar na espontaneidade?",
+   "fr": "Tu es plutôt du genre à tout planifier ou à voyager à l'improviste ?",
+   "de": "Planst du lieber alles oder reist du eher spontan?"
+  }
+ },
+ {
+  "id": "ib-travel-009",
+  "topic": "travel",
+  "text": {
+   "en": "What's your favorite way to get around when you travel: train, bus, bike, or on foot?",
+   "it": "Qual è il tuo modo preferito di spostarti in viaggio: treno, autobus, bici o a piedi?",
+   "es": "¿Cuál es tu forma favorita de moverte cuando viajas: tren, autobús, bici o a pie?",
+   "pt": "Qual é a tua forma preferida de te deslocares em viagem: comboio, autocarro, bicicleta ou a pé?",
+   "pt_BR": "Qual é seu jeito favorito de se locomover em viagem: trem, ônibus, bicicleta ou a pé?",
+   "fr": "Quel est ton moyen de déplacement préféré en voyage : train, bus, vélo ou à pied ?",
+   "de": "Wie bist du auf Reisen am liebsten unterwegs: mit Zug, Bus, Fahrrad oder zu Fuß?"
+  }
+ },
+ {
+  "id": "ib-travel-010",
+  "topic": "travel",
+  "text": {
+   "en": "What do you always pack that you can't travel without?",
+   "it": "Che cosa metti sempre in valigia e non può mai mancare?",
+   "es": "¿Qué metes siempre en la maleta y no puede faltar?",
+   "pt": "O que levas sempre na mala e não pode faltar?",
+   "pt_BR": "O que você sempre leva na mala e não pode faltar?",
+   "fr": "Qu'est-ce que tu mets toujours dans ta valise et dont tu ne peux pas te passer ?",
+   "de": "Was packst du immer ein und kannst nicht darauf verzichten?"
+  }
+ },
+ {
+  "id": "ib-travel-011",
+  "topic": "travel",
+  "text": {
+   "en": "What's the best piece of travel advice you've ever received?",
+   "it": "Qual è il miglior consiglio di viaggio che ti abbiano mai dato?",
+   "es": "¿Cuál es el mejor consejo de viaje que te han dado?",
+   "pt": "Qual foi o melhor conselho de viagem que já te deram?",
+   "pt_BR": "Qual foi o melhor conselho de viagem que você já recebeu?",
+   "fr": "Quel est le meilleur conseil de voyage qu'on t'ait donné ?",
+   "de": "Was war der beste Reisetipp, den du je bekommen hast?"
+  }
+ },
+ {
+  "id": "ib-travel-012",
+  "topic": "travel",
+  "text": {
+   "en": "Which landscape do you like most: mountains, sea, forests or desert?",
+   "it": "Quale paesaggio ti piace di più: montagna, mare, boschi o deserto?",
+   "es": "¿Qué paisaje te gusta más: montañas, mar, bosques o desierto?",
+   "pt": "Que paisagem preferes: montanhas, mar, florestas ou deserto?",
+   "pt_BR": "Qual paisagem você mais gosta: montanhas, mar, florestas ou deserto?",
+   "fr": "Quel paysage préfères-tu : la montagne, la mer, la forêt ou le désert ?",
+   "de": "Welche Landschaft magst du am liebsten: Berge, Meer, Wälder oder Wüste?"
+  }
+ },
+ {
+  "id": "ib-travel-013",
+  "topic": "travel",
+  "text": {
+   "en": "If I visited your hometown for one weekend, what should I see?",
+   "it": "Se visitassi la tua città per un weekend, che cosa dovrei vedere?",
+   "es": "Si visitara tu ciudad natal un fin de semana, ¿qué debería ver?",
+   "pt": "Se eu visitasse a tua terra durante um fim de semana, o que devia ver?",
+   "pt_BR": "Se eu visitasse sua cidade natal por um fim de semana, o que eu deveria ver?",
+   "fr": "Si je visitais ta ville natale pendant un week-end, que devrais-je voir ?",
+   "de": "Wenn ich deine Heimatstadt ein Wochenende lang besuchen würde, was sollte ich sehen?"
+  }
+ },
+ {
+  "id": "ib-travel-014",
+  "topic": "travel",
+  "text": {
+   "en": "What's a souvenir you bought that you still treasure?",
+   "it": "Qual è un souvenir che hai comprato e che custodisci ancora con affetto?",
+   "es": "¿Qué recuerdo de viaje compraste y todavía conservas con cariño?",
+   "pt": "Que recordação de viagem compraste e ainda guardas com carinho?",
+   "pt_BR": "Que lembrancinha de viagem você comprou e ainda guarda com carinho?",
+   "fr": "Quel souvenir de voyage as-tu rapporté et gardes-tu précieusement ?",
+   "de": "Welches Souvenir hast du gekauft und hütest du bis heute?"
+  }
+ },
+ {
+  "id": "ib-travel-015",
+  "topic": "travel",
+  "text": {
+   "en": "Have you ever traveled solo? How was it?",
+   "it": "Hai mai fatto un viaggio in solitaria? Com'è andata?",
+   "es": "¿Alguna vez has hecho un viaje en solitario? ¿Cómo fue?",
+   "pt": "Já fizeste uma viagem em solitário? Como foi?",
+   "pt_BR": "Você já fez uma viagem solo? Como foi?",
+   "fr": "As-tu déjà voyagé en solo ? Comment c'était ?",
+   "de": "Bist du schon einmal allein gereist? Wie war das?"
+  }
+ },
+ {
+  "id": "ib-travel-016",
+  "topic": "travel",
+  "text": {
+   "en": "What's the longest journey you've ever made?",
+   "it": "Qual è il viaggio più lungo che tu abbia mai fatto?",
+   "es": "¿Cuál es el viaje más largo que has hecho?",
+   "pt": "Qual foi a viagem mais longa que já fizeste?",
+   "pt_BR": "Qual foi a viagem mais longa que você já fez?",
+   "fr": "Quel est le plus long voyage que tu aies fait ?",
+   "de": "Was war die längste Reise, die du je gemacht hast?"
+  }
+ },
+ {
+  "id": "ib-travel-017",
+  "topic": "travel",
+  "text": {
+   "en": "Have you ever tried speaking a local language while traveling? How did it go?",
+   "it": "Hai mai provato a parlare la lingua locale mentre viaggiavi? Com'è andata?",
+   "es": "¿Alguna vez has intentado hablar el idioma local durante un viaje? ¿Cómo te fue?",
+   "pt": "Já tentaste falar a língua local numa viagem? Como correu?",
+   "pt_BR": "Você já tentou falar o idioma local durante uma viagem? Como foi?",
+   "fr": "As-tu déjà essayé de parler la langue locale en voyage ? Comment ça s'est passé ?",
+   "de": "Hast du auf Reisen schon einmal versucht, die Landessprache zu sprechen? Wie lief es?"
+  }
+ },
+ {
+  "id": "ib-travel-018",
+  "topic": "travel",
+  "text": {
+   "en": "What's a small town you'd recommend to anyone?",
+   "it": "Quale piccola città consiglieresti a chiunque?",
+   "es": "¿Qué pueblo pequeño le recomendarías a cualquiera?",
+   "pt": "Que vila ou cidade pequena recomendarias a qualquer pessoa?",
+   "pt_BR": "Que cidadezinha você recomendaria a qualquer pessoa?",
+   "fr": "Quelle petite ville recommanderais-tu à tout le monde ?",
+   "de": "Welche Kleinstadt würdest du jedem empfehlen?"
+  }
+ },
+ {
+  "id": "ib-travel-019",
+  "topic": "travel",
+  "text": {
+   "en": "What's your favorite memory from a road trip?",
+   "it": "Qual è il tuo ricordo preferito di un viaggio in macchina?",
+   "es": "¿Cuál es tu mejor recuerdo de un viaje por carretera?",
+   "pt": "Qual é a tua melhor memória de uma viagem de carro?",
+   "pt_BR": "Qual é sua melhor lembrança de uma viagem de carro?",
+   "fr": "Quel est ton meilleur souvenir de road trip ?",
+   "de": "Was ist deine schönste Erinnerung an einen Roadtrip?"
+  }
+ },
+ {
+  "id": "ib-travel-020",
+  "topic": "travel",
+  "text": {
+   "en": "Do you like to travel in summer or in winter?",
+   "it": "Ti piace viaggiare d'estate o d'inverno?",
+   "es": "¿Te gusta más viajar en verano o en invierno?",
+   "pt": "Gostas mais de viajar no verão ou no inverno?",
+   "pt_BR": "Você gosta mais de viajar no verão ou no inverno?",
+   "fr": "Tu préfères voyager en été ou en hiver ?",
+   "de": "Reist du lieber im Sommer oder im Winter?"
+  }
+ },
+ {
+  "id": "ib-travel-021",
+  "topic": "travel",
+  "text": {
+   "en": "What's the most beautiful sunrise or sunset you've ever seen?",
+   "it": "Qual è l'alba o il tramonto più bello che tu abbia mai visto?",
+   "es": "¿Cuál es el amanecer o atardecer más bonito que has visto?",
+   "pt": "Qual foi o nascer ou o pôr do sol mais bonito que já viste?",
+   "pt_BR": "Qual foi o nascer ou o pôr do sol mais bonito que você já viu?",
+   "fr": "Quel est le plus beau lever ou coucher de soleil que tu aies vu ?",
+   "de": "Was war der schönste Sonnenaufgang oder Sonnenuntergang, den du je gesehen hast?"
+  }
+ },
+ {
+  "id": "ib-travel-022",
+  "topic": "travel",
+  "text": {
+   "en": "Which place felt like home even though you were just visiting?",
+   "it": "Quale posto ti è sembrato casa pur essendoci solo di passaggio?",
+   "es": "¿Qué lugar te hizo sentir como en casa aunque solo estabas de visita?",
+   "pt": "Que lugar te fez sentir em casa, mesmo estando só de visita?",
+   "pt_BR": "Que lugar fez você se sentir em casa, mesmo estando só de visita?",
+   "fr": "Quel endroit t'a donné l'impression d'être chez toi alors que tu n'étais que de passage ?",
+   "de": "Welcher Ort hat sich wie ein Zuhause angefühlt, obwohl du nur zu Besuch warst?"
+  }
+ },
+ {
+  "id": "ib-travel-023",
+  "topic": "travel",
+  "text": {
+   "en": "What's your dream itinerary for a two-week trip?",
+   "it": "Qual è il tuo itinerario ideale per un viaggio di due settimane?",
+   "es": "¿Cuál sería tu itinerario ideal para un viaje de dos semanas?",
+   "pt": "Qual seria o teu itinerário de sonho para uma viagem de duas semanas?",
+   "pt_BR": "Qual seria seu roteiro dos sonhos para uma viagem de duas semanas?",
+   "fr": "Quel serait ton itinéraire de rêve pour un voyage de deux semaines ?",
+   "de": "Wie sähe deine Traumroute für eine zweiwöchige Reise aus?"
+  }
+ },
+ {
+  "id": "ib-travel-024",
+  "topic": "travel",
+  "text": {
+   "en": "What's the best view you've ever had from a train or plane window?",
+   "it": "Qual è il panorama più bello che hai visto dal finestrino di un treno o di un aereo?",
+   "es": "¿Cuál es la mejor vista que has tenido desde la ventanilla de un tren o un avión?",
+   "pt": "Qual foi a melhor vista que já tiveste da janela de um comboio ou de um avião?",
+   "pt_BR": "Qual foi a melhor vista que você já teve da janela de um trem ou de um avião?",
+   "fr": "Quelle est la plus belle vue que tu aies eue depuis la fenêtre d'un train ou d'un avion ?",
+   "de": "Welche Aussicht aus einem Zug- oder Flugzeugfenster hat dich am meisten beeindruckt?"
+  }
+ },
+ {
+  "id": "ib-travel-025",
+  "topic": "travel",
+  "text": {
+   "en": "Which city would you love to live in for a year?",
+   "it": "In quale città ti piacerebbe vivere per un anno?",
+   "es": "¿En qué ciudad te encantaría vivir durante un año?",
+   "pt": "Em que cidade gostarias de viver durante um ano?",
+   "pt_BR": "Em qual cidade você gostaria de morar por um ano?",
+   "fr": "Dans quelle ville aimerais-tu vivre pendant un an ?",
+   "de": "In welcher Stadt würdest du gern ein Jahr lang leben?"
+  }
+ },
+ {
+  "id": "ib-travel-026",
+  "topic": "travel",
+  "text": {
+   "en": "Do you take lots of photos when you travel, or just enjoy the moment?",
+   "it": "Quando viaggi fai tante foto o preferisci goderti il momento?",
+   "es": "Cuando viajas, ¿haces muchas fotos o prefieres disfrutar del momento?",
+   "pt": "Quando viajas, tiras muitas fotografias ou preferes aproveitar o momento?",
+   "pt_BR": "Quando viaja, você tira muitas fotos ou prefere curtir o momento?",
+   "fr": "En voyage, tu prends beaucoup de photos ou tu préfères profiter de l'instant ?",
+   "de": "Machst du auf Reisen viele Fotos oder genießt du lieber den Moment?"
+  }
+ },
+ {
+  "id": "ib-travel-027",
+  "topic": "travel",
+  "text": {
+   "en": "What's the funniest travel mishap you've had?",
+   "it": "Qual è la disavventura di viaggio più divertente che ti sia capitata?",
+   "es": "¿Cuál ha sido tu percance de viaje más divertido?",
+   "pt": "Qual foi o contratempo de viagem mais engraçado que te aconteceu?",
+   "pt_BR": "Qual foi o perrengue de viagem mais engraçado que você já passou?",
+   "fr": "Quelle est la mésaventure de voyage la plus drôle qui te soit arrivée ?",
+   "de": "Was war dein lustigstes Reisemissgeschick?"
+  }
+ },
+ {
+  "id": "ib-travel-028",
+  "topic": "travel",
+  "text": {
+   "en": "What's a hidden gem in your region that locals love?",
+   "it": "Qual è un gioiello nascosto della tua zona che i locali adorano?",
+   "es": "¿Qué joya escondida de tu región adoran los locales?",
+   "pt": "Qual é uma joia escondida da tua região que os locais adoram?",
+   "pt_BR": "Qual é uma joia escondida da sua região que os moradores adoram?",
+   "fr": "Quelle pépite méconnue de ta région les habitants adorent-ils ?",
+   "de": "Welches Juwel in deiner Region lieben die Einheimischen, obwohl es kaum jemand kennt?"
+  }
+ },
+ {
+  "id": "ib-travel-029",
+  "topic": "travel",
+  "text": {
+   "en": "What do you like to do first when you arrive in a new city?",
+   "it": "Che cosa ti piace fare per prima cosa quando arrivi in una nuova città?",
+   "es": "¿Qué te gusta hacer primero al llegar a una ciudad nueva?",
+   "pt": "O que gostas de fazer primeiro quando chegas a uma cidade nova?",
+   "pt_BR": "O que você gosta de fazer primeiro quando chega a uma cidade nova?",
+   "fr": "Quelle est la première chose que tu aimes faire en arrivant dans une nouvelle ville ?",
+   "de": "Was machst du als Erstes, wenn du in einer neuen Stadt ankommst?"
+  }
+ },
+ {
+  "id": "ib-travel-030",
+  "topic": "travel",
+  "text": {
+   "en": "Which national park or nature spot would you recommend?",
+   "it": "Quale parco nazionale o angolo di natura mi consiglieresti?",
+   "es": "¿Qué parque nacional o rincón de la naturaleza me recomendarías?",
+   "pt": "Que parque nacional ou recanto da natureza me recomendarias?",
+   "pt_BR": "Que parque nacional ou cantinho da natureza você me recomendaria?",
+   "fr": "Quel parc national ou coin de nature me recommanderais-tu ?",
+   "de": "Welchen Nationalpark oder Naturort würdest du mir empfehlen?"
+  }
+ },
+ {
+  "id": "ib-travel-031",
+  "topic": "travel",
+  "text": {
+   "en": "Have you ever gotten lost in a foreign city? What happened?",
+   "it": "Ti è mai capitato di perderti in una città straniera? Cos'è successo?",
+   "es": "¿Alguna vez te has perdido en una ciudad extranjera? ¿Qué pasó?",
+   "pt": "Já te perdeste numa cidade estrangeira? O que aconteceu?",
+   "pt_BR": "Você já se perdeu em uma cidade estrangeira? O que aconteceu?",
+   "fr": "Ça t'est déjà arrivé de te perdre dans une ville étrangère ? Que s'est-il passé ?",
+   "de": "Hast du dich schon einmal in einer fremden Stadt verlaufen? Was ist passiert?"
+  }
+ },
+ {
+  "id": "ib-travel-032",
+  "topic": "travel",
+  "text": {
+   "en": "Which festival or event would you travel across the world to see?",
+   "it": "Per quale festival o evento attraverseresti il mondo?",
+   "es": "¿Por qué festival o evento viajarías al otro lado del mundo?",
+   "pt": "Para ver que festival ou evento viajarias até ao outro lado do mundo?",
+   "pt_BR": "Para ver qual festival ou evento você viajaria até o outro lado do mundo?",
+   "fr": "Pour quel festival ou événement traverserais-tu la planète ?",
+   "de": "Für welches Festival oder Event würdest du um die halbe Welt reisen?"
+  }
+ },
+ {
+  "id": "ib-travel-033",
+  "topic": "travel",
+  "text": {
+   "en": "What do you think makes a trip truly unforgettable?",
+   "it": "Secondo te, che cosa rende un viaggio davvero indimenticabile?",
+   "es": "¿Qué crees que hace que un viaje sea realmente inolvidable?",
+   "pt": "Na tua opinião, o que torna uma viagem verdadeiramente inesquecível?",
+   "pt_BR": "Na sua opinião, o que torna uma viagem realmente inesquecível?",
+   "fr": "Selon toi, qu'est-ce qui rend un voyage vraiment inoubliable ?",
+   "de": "Was macht eine Reise deiner Meinung nach wirklich unvergesslich?"
+  }
+ },
+ {
+  "id": "ib-travel-034",
+  "topic": "travel",
+  "text": {
+   "en": "What's the best day trip you can take from where you live?",
+   "it": "Qual è la migliore gita di un giorno che si può fare da dove vivi?",
+   "es": "¿Cuál es la mejor excursión de un día que se puede hacer desde donde vives?",
+   "pt": "Qual é a melhor excursão de um dia que se pode fazer a partir de onde vives?",
+   "pt_BR": "Qual é o melhor bate-volta que dá para fazer a partir de onde você mora?",
+   "fr": "Quelle est la meilleure excursion d'une journée à faire près de chez toi ?",
+   "de": "Was ist der schönste Tagesausflug von deinem Wohnort aus?"
+  }
+ },
+ {
+  "id": "ib-travel-035",
+  "topic": "travel",
+  "text": {
+   "en": "Do you prefer hotels, hostels, or cozy apartments when you travel?",
+   "it": "Quando viaggi preferisci hotel, ostelli o appartamenti accoglienti?",
+   "es": "Cuando viajas, ¿prefieres hoteles, albergues o apartamentos acogedores?",
+   "pt": "Quando viajas, preferes hotéis, hostels ou apartamentos acolhedores?",
+   "pt_BR": "Quando viaja, você prefere hotéis, hostels ou apartamentos aconchegantes?",
+   "fr": "En voyage, tu préfères les hôtels, les auberges de jeunesse ou les appartements cosy ?",
+   "de": "Übernachtest du auf Reisen lieber im Hotel, im Hostel oder in einer gemütlichen Wohnung?"
+  }
+ },
+ {
+  "id": "ib-travel-036",
+  "topic": "travel",
+  "text": {
+   "en": "What's something you learned about yourself while traveling?",
+   "it": "Che cosa hai imparato su di te viaggiando?",
+   "es": "¿Qué has descubierto sobre ti viajando?",
+   "pt": "O que descobriste sobre ti ao viajar?",
+   "pt_BR": "O que você descobriu sobre si mesmo viajando?",
+   "fr": "Qu'as-tu appris sur toi-même en voyageant ?",
+   "de": "Was hast du auf Reisen über dich selbst gelernt?"
+  }
+ },
+ {
+  "id": "ib-travel-037",
+  "topic": "travel",
+  "text": {
+   "en": "Which place on your bucket list is the hardest to reach?",
+   "it": "Quale posto della tua lista dei desideri è il più difficile da raggiungere?",
+   "es": "¿Cuál es el lugar más difícil de alcanzar de tu lista de sueños?",
+   "pt": "Qual é o lugar mais difícil de alcançar da tua lista de sonhos?",
+   "pt_BR": "Qual é o lugar mais difícil de alcançar da sua lista de desejos?",
+   "fr": "Quel endroit de ta liste de rêves est le plus difficile à atteindre ?",
+   "de": "Welcher Ort auf deiner Wunschliste ist am schwersten zu erreichen?"
+  }
+ },
+ {
+  "id": "ib-travel-038",
+  "topic": "travel",
+  "text": {
+   "en": "What music do you listen to on a long journey?",
+   "it": "Che musica ascolti durante un lungo viaggio?",
+   "es": "¿Qué música escuchas en un viaje largo?",
+   "pt": "Que música ouves numa viagem longa?",
+   "pt_BR": "Que música você escuta em uma viagem longa?",
+   "fr": "Quelle musique écoutes-tu pendant un long trajet ?",
+   "de": "Welche Musik hörst du auf langen Reisen?"
+  }
+ },
+ {
+  "id": "ib-travel-039",
+  "topic": "travel",
+  "text": {
+   "en": "Which country do you think everyone should visit at least once?",
+   "it": "Quale paese pensi che tutti dovrebbero visitare almeno una volta?",
+   "es": "¿Qué país crees que todo el mundo debería visitar al menos una vez?",
+   "pt": "Que país achas que toda a gente devia visitar pelo menos uma vez?",
+   "pt_BR": "Que país você acha que todo mundo deveria visitar pelo menos uma vez?",
+   "fr": "Quel pays tout le monde devrait-il visiter au moins une fois, selon toi ?",
+   "de": "Welches Land sollte deiner Meinung nach jeder mindestens einmal besuchen?"
+  }
+ },
+ {
+  "id": "ib-travel-040",
+  "topic": "travel",
+  "text": {
+   "en": "What's the friendliest place you've ever visited?",
+   "it": "Qual è il posto più accogliente che tu abbia mai visitato?",
+   "es": "¿Cuál es el lugar más acogedor que has visitado?",
+   "pt": "Qual é o lugar mais acolhedor que já visitaste?",
+   "pt_BR": "Qual é o lugar mais acolhedor que você já visitou?",
+   "fr": "Quel est l'endroit le plus accueillant que tu aies visité ?",
+   "de": "Was ist der herzlichste Ort, den du je besucht hast?"
+  }
+ },
+ {
+  "id": "ib-travel-041",
+  "topic": "travel",
+  "text": {
+   "en": "If you planned a trip for me in your country, where would you send me?",
+   "it": "Se dovessi organizzarmi un viaggio nel tuo paese, dove mi manderesti?",
+   "es": "Si me organizaras un viaje por tu país, ¿adónde me enviarías?",
+   "pt": "Se me organizasses uma viagem pelo teu país, para onde me mandavas?",
+   "pt_BR": "Se você planejasse uma viagem para mim no seu país, para onde me mandaria?",
+   "fr": "Si tu m'organisais un voyage dans ton pays, où m'enverrais-tu ?",
+   "de": "Wenn du für mich eine Reise in deinem Land planen würdest, wohin würdest du mich schicken?"
+  }
+ },
+ {
+  "id": "ib-travel-042",
+  "topic": "travel",
+  "text": {
+   "en": "What was your first trip abroad like?",
+   "it": "Com'è stato il tuo primo viaggio all'estero?",
+   "es": "¿Cómo fue tu primer viaje al extranjero?",
+   "pt": "Como foi a tua primeira viagem ao estrangeiro?",
+   "pt_BR": "Como foi sua primeira viagem ao exterior?",
+   "fr": "Comment s'est passé ton premier voyage à l'étranger ?",
+   "de": "Wie war deine erste Reise ins Ausland?"
+  }
+ },
+ {
+  "id": "ib-travel-043",
+  "topic": "travel",
+  "text": {
+   "en": "What's the best season to visit your hometown?",
+   "it": "Qual è la stagione migliore per visitare la tua città?",
+   "es": "¿Cuál es la mejor época del año para visitar tu ciudad?",
+   "pt": "Qual é a melhor altura do ano para visitar a tua terra?",
+   "pt_BR": "Qual é a melhor época do ano para visitar sua cidade?",
+   "fr": "Quelle est la meilleure saison pour visiter ta ville natale ?",
+   "de": "Welche Jahreszeit eignet sich am besten für einen Besuch in deiner Heimatstadt?"
+  }
+ },
+ {
+  "id": "ib-travel-044",
+  "topic": "travel",
+  "text": {
+   "en": "Which island would you love to explore?",
+   "it": "Quale isola ti piacerebbe esplorare?",
+   "es": "¿Qué isla te encantaría explorar?",
+   "pt": "Que ilha gostarias de explorar?",
+   "pt_BR": "Que ilha você gostaria de explorar?",
+   "fr": "Quelle île aimerais-tu explorer ?",
+   "de": "Welche Insel würdest du gern erkunden?"
+  }
+ },
+ {
+  "id": "ib-travel-045",
+  "topic": "travel",
+  "text": {
+   "en": "What's your favorite thing about coming home after a long trip?",
+   "it": "Qual è la cosa che preferisci del tornare a casa dopo un lungo viaggio?",
+   "es": "¿Qué es lo que más te gusta de volver a casa después de un viaje largo?",
+   "pt": "O que é que mais gostas quando voltas a casa depois de uma viagem longa?",
+   "pt_BR": "Do que você mais gosta ao voltar para casa depois de uma viagem longa?",
+   "fr": "Qu'est-ce que tu préfères en rentrant chez toi après un long voyage ?",
+   "de": "Was gefällt dir am meisten daran, nach einer langen Reise nach Hause zu kommen?"
+  }
+ },
+ {
+  "id": "ib-travel-046",
+  "topic": "travel",
+  "text": {
+   "en": "Do you have a travel ritual, like something you always do before leaving?",
+   "it": "Hai un rituale di viaggio, qualcosa che fai sempre prima di partire?",
+   "es": "¿Tienes algún ritual de viaje, algo que haces siempre antes de salir?",
+   "pt": "Tens algum ritual de viagem, algo que fazes sempre antes de partir?",
+   "pt_BR": "Você tem algum ritual de viagem, algo que sempre faz antes de partir?",
+   "fr": "As-tu un rituel de voyage, quelque chose que tu fais toujours avant de partir ?",
+   "de": "Hast du ein Reiseritual, etwas, das du vor der Abreise immer machst?"
+  }
+ },
+ {
+  "id": "ib-travel-047",
+  "topic": "travel",
+  "text": {
+   "en": "What's a museum or historic site that really impressed you?",
+   "it": "Quale museo o sito storico ti ha davvero colpito?",
+   "es": "¿Qué museo o sitio histórico te impresionó de verdad?",
+   "pt": "Que museu ou local histórico te impressionou a sério?",
+   "pt_BR": "Que museu ou sítio histórico realmente impressionou você?",
+   "fr": "Quel musée ou site historique t'a vraiment impressionné ?",
+   "de": "Welches Museum oder welche historische Stätte hat dich wirklich beeindruckt?"
+  }
+ },
+ {
+  "id": "ib-travel-048",
+  "topic": "travel",
+  "text": {
+   "en": "Which place would you like to revisit someday?",
+   "it": "Quale posto ti piacerebbe rivisitare un giorno?",
+   "es": "¿A qué lugar te gustaría volver algún día?",
+   "pt": "A que lugar gostarias de voltar um dia?",
+   "pt_BR": "A que lugar você gostaria de voltar algum dia?",
+   "fr": "Quel endroit aimerais-tu revoir un jour ?",
+   "de": "Welchen Ort würdest du gern eines Tages noch einmal besuchen?"
+  }
+ },
+ {
+  "id": "ib-travel-049",
+  "topic": "travel",
+  "text": {
+   "en": "Have you ever taken a trip with no plan at all?",
+   "it": "Hai mai fatto un viaggio senza alcun programma?",
+   "es": "¿Alguna vez has hecho un viaje sin ningún plan?",
+   "pt": "Já fizeste alguma viagem sem plano nenhum?",
+   "pt_BR": "Você já fez alguma viagem sem plano nenhum?",
+   "fr": "As-tu déjà fait un voyage sans aucun plan ?",
+   "de": "Hast du schon einmal eine Reise ganz ohne Plan unternommen?"
+  }
+ },
+ {
+  "id": "ib-travel-050",
+  "topic": "travel",
+  "text": {
+   "en": "What's one thing travel has taught you about other cultures?",
+   "it": "Che cosa ti ha insegnato viaggiare sulle altre culture?",
+   "es": "¿Qué te ha enseñado viajar sobre otras culturas?",
+   "pt": "O que é que viajar te ensinou sobre outras culturas?",
+   "pt_BR": "O que viajar ensinou a você sobre outras culturas?",
+   "fr": "Qu'est-ce que le voyage t'a appris sur les autres cultures ?",
+   "de": "Was hat dir das Reisen über andere Kulturen beigebracht?"
+  }
+ },
+ {
+  "id": "ib-food-001",
+  "topic": "food",
+  "text": {
+   "en": "What's a dish from your hometown everyone should try once?",
+   "it": "Qual è un piatto della tua città che tutti dovrebbero assaggiare almeno una volta?",
+   "es": "¿Qué plato de tu ciudad debería probar todo el mundo al menos una vez?",
+   "pt": "Qual é um prato da tua terra que toda a gente devia provar pelo menos uma vez?",
+   "pt_BR": "Qual é um prato da sua cidade que todo mundo deveria provar pelo menos uma vez?",
+   "fr": "Quel plat de ta ville natale tout le monde devrait-il goûter au moins une fois ?",
+   "de": "Welches Gericht aus deiner Heimatstadt sollte jeder einmal probiert haben?"
+  }
+ },
+ {
+  "id": "ib-food-002",
+  "topic": "food",
+  "text": {
+   "en": "What's your ultimate comfort food?",
+   "it": "Qual è il tuo piatto del cuore, quello che ti consola sempre?",
+   "es": "¿Cuál es tu comida reconfortante favorita?",
+   "pt": "Qual é a tua comida reconfortante preferida?",
+   "pt_BR": "Qual é sua comfort food preferida?",
+   "fr": "Quel est ton plat réconfort préféré ?",
+   "de": "Was ist dein liebstes Wohlfühlessen?"
+  }
+ },
+ {
+  "id": "ib-food-003",
+  "topic": "food",
+  "text": {
+   "en": "What did you have for breakfast today?",
+   "it": "Che cosa hai mangiato a colazione oggi?",
+   "es": "¿Qué has desayunado hoy?",
+   "pt": "O que comeste ao pequeno-almoço hoje?",
+   "pt_BR": "O que você comeu no café da manhã hoje?",
+   "fr": "Qu'as-tu pris au petit-déjeuner aujourd'hui ?",
+   "de": "Was hast du heute zum Frühstück gegessen?"
+  }
+ },
+ {
+  "id": "ib-food-004",
+  "topic": "food",
+  "text": {
+   "en": "What's the best meal you've ever eaten while traveling?",
+   "it": "Qual è il miglior pasto che hai mangiato in viaggio?",
+   "es": "¿Cuál ha sido la mejor comida que has probado de viaje?",
+   "pt": "Qual foi a melhor refeição que comeste em viagem?",
+   "pt_BR": "Qual foi a melhor refeição que você comeu em viagem?",
+   "fr": "Quel est le meilleur repas que tu aies fait en voyage ?",
+   "de": "Was war das beste Essen, das du auf Reisen hattest?"
+  }
+ },
+ {
+  "id": "ib-food-005",
+  "topic": "food",
+  "text": {
+   "en": "Do you enjoy cooking, and what's your signature dish?",
+   "it": "Ti piace cucinare? Qual è il tuo piatto forte?",
+   "es": "¿Te gusta cocinar? ¿Cuál es tu plato estrella?",
+   "pt": "Gostas de cozinhar? Qual é o teu prato forte?",
+   "pt_BR": "Você gosta de cozinhar? Qual é o seu carro-chefe na cozinha?",
+   "fr": "Tu aimes cuisiner ? Quel est ton plat signature ?",
+   "de": "Kochst du gern? Was ist dein Spezialgericht?"
+  }
+ },
+ {
+  "id": "ib-food-006",
+  "topic": "food",
+  "text": {
+   "en": "What's a traditional recipe your family has passed down?",
+   "it": "Qual è una ricetta tradizionale tramandata nella tua famiglia?",
+   "es": "¿Qué receta tradicional se ha transmitido en tu familia?",
+   "pt": "Que receita tradicional passou de geração em geração na tua família?",
+   "pt_BR": "Que receita tradicional passa de geração em geração na sua família?",
+   "fr": "Quelle recette traditionnelle se transmet dans ta famille ?",
+   "de": "Welches traditionelle Rezept wird in deiner Familie weitergegeben?"
+  }
+ },
+ {
+  "id": "ib-food-007",
+  "topic": "food",
+  "text": {
+   "en": "Which food from another country have you fallen in love with?",
+   "it": "Quale cibo di un altro paese ti ha conquistato?",
+   "es": "¿Qué comida de otro país te ha enamorado?",
+   "pt": "Que comida de outro país te conquistou?",
+   "pt_BR": "Que comida de outro país conquistou você?",
+   "fr": "Quel plat d'un autre pays t'a conquis ?",
+   "de": "In welches Essen aus einem anderen Land hast du dich verliebt?"
+  }
+ },
+ {
+  "id": "ib-food-008",
+  "topic": "food",
+  "text": {
+   "en": "What's the strangest food you've ever tried?",
+   "it": "Qual è il cibo più strano che hai mai provato?",
+   "es": "¿Cuál es la comida más rara que has probado?",
+   "pt": "Qual é a comida mais estranha que já provaste?",
+   "pt_BR": "Qual é a comida mais estranha que você já provou?",
+   "fr": "Quel est l'aliment le plus étrange que tu aies goûté ?",
+   "de": "Was ist das seltsamste Essen, das du je probiert hast?"
+  }
+ },
+ {
+  "id": "ib-food-009",
+  "topic": "food",
+  "text": {
+   "en": "Sweet or savory: which one wins for you?",
+   "it": "Dolce o salato: quale vince per te?",
+   "es": "¿Dulce o salado: cuál gana para ti?",
+   "pt": "Doce ou salgado: qual ganha para ti?",
+   "pt_BR": "Doce ou salgado: qual ganha para você?",
+   "fr": "Sucré ou salé : lequel l'emporte pour toi ?",
+   "de": "Süß oder herzhaft: was gewinnt bei dir?"
+  }
+ },
+ {
+  "id": "ib-food-010",
+  "topic": "food",
+  "text": {
+   "en": "What does a typical Sunday lunch look like in your home?",
+   "it": "Com'è un tipico pranzo della domenica a casa tua?",
+   "es": "¿Cómo es una comida de domingo típica en tu casa?",
+   "pt": "Como é um almoço de domingo típico lá em casa?",
+   "pt_BR": "Como é um almoço de domingo típico na sua casa?",
+   "fr": "À quoi ressemble un déjeuner du dimanche typique chez toi ?",
+   "de": "Wie sieht ein typisches Sonntagsessen bei dir zu Hause aus?"
+  }
+ },
+ {
+  "id": "ib-food-011",
+  "topic": "food",
+  "text": {
+   "en": "What's a street food you'd recommend to any visitor?",
+   "it": "Quale cibo di strada consiglieresti a qualsiasi visitatore?",
+   "es": "¿Qué comida callejera le recomendarías a cualquier visitante?",
+   "pt": "Que comida de rua recomendarias a qualquer visitante?",
+   "pt_BR": "Que comida de rua você recomendaria a qualquer visitante?",
+   "fr": "Quelle street food recommanderais-tu à tout visiteur ?",
+   "de": "Welches Streetfood würdest du jedem Besucher empfehlen?"
+  }
+ },
+ {
+  "id": "ib-food-012",
+  "topic": "food",
+  "text": {
+   "en": "Which spice or herb can you not live without in the kitchen?",
+   "it": "Quale spezia o erba aromatica non può mancare nella tua cucina?",
+   "es": "¿Qué especia o hierba no puede faltar en tu cocina?",
+   "pt": "Que especiaria ou erva aromática não pode faltar na tua cozinha?",
+   "pt_BR": "Que tempero ou erva não pode faltar na sua cozinha?",
+   "fr": "Quelle épice ou quelle herbe ne peut pas manquer dans ta cuisine ?",
+   "de": "Welches Gewürz oder Kraut darf in deiner Küche nie fehlen?"
+  }
+ },
+ {
+  "id": "ib-food-013",
+  "topic": "food",
+  "text": {
+   "en": "What's your favorite dessert from your country?",
+   "it": "Qual è il tuo dolce preferito del tuo paese?",
+   "es": "¿Cuál es tu postre favorito de tu país?",
+   "pt": "Qual é a tua sobremesa preferida do teu país?",
+   "pt_BR": "Qual é sua sobremesa preferida do seu país?",
+   "fr": "Quel est ton dessert préféré dans ton pays ?",
+   "de": "Was ist dein liebstes Dessert aus deinem Land?"
+  }
+ },
+ {
+  "id": "ib-food-014",
+  "topic": "food",
+  "text": {
+   "en": "What's the first thing you'd cook for a friend visiting you?",
+   "it": "Qual è la prima cosa che cucineresti per un amico che viene a trovarti?",
+   "es": "¿Qué sería lo primero que cocinarías para un amigo que te visita?",
+   "pt": "Qual seria a primeira coisa que cozinharias para um amigo que te visitasse?",
+   "pt_BR": "Qual seria a primeira coisa que você cozinharia para um amigo que viesse te visitar?",
+   "fr": "Quelle serait la première chose que tu cuisinerais pour un ami qui vient te voir ?",
+   "de": "Was würdest du als Erstes für einen Freund kochen, der dich besucht?"
+  }
+ },
+ {
+  "id": "ib-food-015",
+  "topic": "food",
+  "text": {
+   "en": "Is there a food you hated as a child but love now?",
+   "it": "C'è un cibo che odiavi da bambino ma che ora ami?",
+   "es": "¿Hay alguna comida que odiabas de niño y ahora te encanta?",
+   "pt": "Há alguma comida que odiavas em criança e agora adoras?",
+   "pt_BR": "Tem alguma comida que você odiava na infância e agora adora?",
+   "fr": "Y a-t-il un aliment que tu détestais enfant et que tu adores maintenant ?",
+   "de": "Gibt es ein Essen, das du als Kind gehasst hast und heute liebst?"
+  }
+ },
+ {
+  "id": "ib-food-016",
+  "topic": "food",
+  "text": {
+   "en": "What's your go-to snack when you're working or studying?",
+   "it": "Qual è il tuo snack preferito quando lavori o studi?",
+   "es": "¿Cuál es tu snack favorito cuando trabajas o estudias?",
+   "pt": "Qual é o teu lanche preferido quando trabalhas ou estudas?",
+   "pt_BR": "Qual é seu lanchinho preferido quando você trabalha ou estuda?",
+   "fr": "Quel est ton en-cas préféré quand tu travailles ou étudies ?",
+   "de": "Was ist dein liebster Snack beim Arbeiten oder Lernen?"
+  }
+ },
+ {
+  "id": "ib-food-017",
+  "topic": "food",
+  "text": {
+   "en": "What time do people usually have dinner where you live?",
+   "it": "A che ora si cena di solito dove vivi?",
+   "es": "¿A qué hora se suele cenar donde vives?",
+   "pt": "A que horas se costuma jantar onde vives?",
+   "pt_BR": "A que horas as pessoas costumam jantar onde você mora?",
+   "fr": "À quelle heure dîne-t-on en général là où tu vis ?",
+   "de": "Um wie viel Uhr isst man bei dir normalerweise zu Abend?"
+  }
+ },
+ {
+  "id": "ib-food-018",
+  "topic": "food",
+  "text": {
+   "en": "What's a local ingredient that's special in your region?",
+   "it": "Qual è un ingrediente locale speciale della tua zona?",
+   "es": "¿Qué ingrediente local es especial en tu región?",
+   "pt": "Que ingrediente local é especial na tua região?",
+   "pt_BR": "Que ingrediente local é especial na sua região?",
+   "fr": "Quel ingrédient local est typique de ta région ?",
+   "de": "Welche lokale Zutat ist in deiner Region etwas Besonderes?"
+  }
+ },
+ {
+  "id": "ib-food-019",
+  "topic": "food",
+  "text": {
+   "en": "Do you prefer eating at home or trying new restaurants?",
+   "it": "Preferisci mangiare a casa o provare nuovi ristoranti?",
+   "es": "¿Prefieres comer en casa o probar restaurantes nuevos?",
+   "pt": "Preferes comer em casa ou experimentar restaurantes novos?",
+   "pt_BR": "Você prefere comer em casa ou experimentar restaurantes novos?",
+   "fr": "Tu préfères manger chez toi ou essayer de nouveaux restaurants ?",
+   "de": "Isst du lieber zu Hause oder probierst du gern neue Restaurants aus?"
+  }
+ },
+ {
+  "id": "ib-food-020",
+  "topic": "food",
+  "text": {
+   "en": "What's the best coffee or tea you've ever had, and where?",
+   "it": "Qual è il miglior caffè o tè che hai mai bevuto, e dove?",
+   "es": "¿Cuál es el mejor café o té que has tomado, y dónde?",
+   "pt": "Qual foi o melhor café ou chá que já bebeste, e onde?",
+   "pt_BR": "Qual foi o melhor café ou chá que você já tomou, e onde?",
+   "fr": "Quel est le meilleur café ou thé que tu aies bu, et où ?",
+   "de": "Was war der beste Kaffee oder Tee, den du je getrunken hast, und wo?"
+  }
+ },
+ {
+  "id": "ib-food-021",
+  "topic": "food",
+  "text": {
+   "en": "Which dish reminds you most of your childhood?",
+   "it": "Quale piatto ti ricorda di più la tua infanzia?",
+   "es": "¿Qué plato te recuerda más a tu infancia?",
+   "pt": "Que prato te lembra mais a tua infância?",
+   "pt_BR": "Que prato mais lembra a sua infância?",
+   "fr": "Quel plat te rappelle le plus ton enfance ?",
+   "de": "Welches Gericht erinnert dich am meisten an deine Kindheit?"
+  }
+ },
+ {
+  "id": "ib-food-022",
+  "topic": "food",
+  "text": {
+   "en": "What's a food tradition you have for holidays or celebrations?",
+   "it": "Qual è una tradizione culinaria che hai per le feste o le celebrazioni?",
+   "es": "¿Qué tradición gastronómica tienes en fiestas o celebraciones?",
+   "pt": "Que tradição gastronómica tens nas festas ou celebrações?",
+   "pt_BR": "Que tradição culinária você tem nas festas ou comemorações?",
+   "fr": "Quelle tradition culinaire as-tu pour les fêtes ou les célébrations ?",
+   "de": "Welche kulinarische Tradition pflegst du an Feiertagen oder bei Feiern?"
+  }
+ },
+ {
+  "id": "ib-food-023",
+  "topic": "food",
+  "text": {
+   "en": "If you could learn to cook one national cuisine, which would it be?",
+   "it": "Se potessi imparare a cucinare una cucina nazionale, quale sceglieresti?",
+   "es": "Si pudieras aprender a cocinar una cocina nacional, ¿cuál elegirías?",
+   "pt": "Se pudesses aprender a cozinhar uma gastronomia nacional, qual escolhias?",
+   "pt_BR": "Se pudesse aprender a cozinhar uma culinária nacional, qual você escolheria?",
+   "fr": "Si tu pouvais apprendre une cuisine nationale, laquelle choisirais-tu ?",
+   "de": "Welche Landesküche würdest du gern kochen können?"
+  }
+ },
+ {
+  "id": "ib-food-024",
+  "topic": "food",
+  "text": {
+   "en": "What's your favorite market or food shop in your city?",
+   "it": "Qual è il tuo mercato o negozio di alimentari preferito della tua città?",
+   "es": "¿Cuál es tu mercado o tienda de alimentación favorita de tu ciudad?",
+   "pt": "Qual é o teu mercado ou loja de produtos alimentares preferida na tua cidade?",
+   "pt_BR": "Qual é seu mercado ou loja de alimentos preferido na sua cidade?",
+   "fr": "Quel est ton marché ou ton commerce alimentaire préféré dans ta ville ?",
+   "de": "Was ist dein Lieblingsmarkt oder Lieblingsladen für Lebensmittel in deiner Stadt?"
+  }
+ },
+ {
+  "id": "ib-food-025",
+  "topic": "food",
+  "text": {
+   "en": "What's a simple recipe you make when the fridge is almost empty?",
+   "it": "Qual è una ricetta semplice che prepari quando il frigo è quasi vuoto?",
+   "es": "¿Qué receta sencilla haces cuando la nevera está casi vacía?",
+   "pt": "Que receita simples fazes quando o frigorífico está quase vazio?",
+   "pt_BR": "Que receita simples você faz quando a geladeira está quase vazia?",
+   "fr": "Quelle recette simple fais-tu quand le frigo est presque vide ?",
+   "de": "Welches einfache Rezept kochst du, wenn der Kühlschrank fast leer ist?"
+  }
+ },
+ {
+  "id": "ib-food-026",
+  "topic": "food",
+  "text": {
+   "en": "What's the best sandwich you've ever had?",
+   "it": "Qual è il miglior panino che hai mai mangiato?",
+   "es": "¿Cuál es el mejor bocadillo que has comido?",
+   "pt": "Qual foi a melhor sandes que já comeste?",
+   "pt_BR": "Qual foi o melhor sanduíche que você já comeu?",
+   "fr": "Quel est le meilleur sandwich que tu aies mangé ?",
+   "de": "Was war das beste Sandwich, das du je gegessen hast?"
+  }
+ },
+ {
+  "id": "ib-food-027",
+  "topic": "food",
+  "text": {
+   "en": "Which fruit or vegetable do you look forward to each season?",
+   "it": "Quale frutta o verdura aspetti con ansia ogni stagione?",
+   "es": "¿Qué fruta o verdura esperas con ganas en cada estación?",
+   "pt": "Que fruta ou legume esperas com mais entusiasmo em cada estação?",
+   "pt_BR": "Que fruta ou legume você espera ansiosamente em cada estação?",
+   "fr": "Quel fruit ou légume attends-tu avec impatience à chaque saison ?",
+   "de": "Auf welches Obst oder Gemüse freust du dich jede Saison?"
+  }
+ },
+ {
+  "id": "ib-food-028",
+  "topic": "food",
+  "text": {
+   "en": "How do people in your country usually eat bread?",
+   "it": "Come si mangia di solito il pane nel tuo paese?",
+   "es": "¿Cómo se suele comer el pan en tu país?",
+   "pt": "Como é que se costuma comer pão no teu país?",
+   "pt_BR": "Como as pessoas costumam comer pão no seu país?",
+   "fr": "Comment mange-t-on le pain en général dans ton pays ?",
+   "de": "Wie isst man in deinem Land normalerweise Brot?"
+  }
+ },
+ {
+  "id": "ib-food-029",
+  "topic": "food",
+  "text": {
+   "en": "What's the spiciest thing you've ever eaten?",
+   "it": "Qual è la cosa più piccante che hai mai mangiato?",
+   "es": "¿Qué es lo más picante que has comido?",
+   "pt": "Qual foi a coisa mais picante que já comeste?",
+   "pt_BR": "Qual foi a coisa mais apimentada que você já comeu?",
+   "fr": "Quel est le plat le plus épicé que tu aies mangé ?",
+   "de": "Was ist das Schärfste, das du je gegessen hast?"
+  }
+ },
+ {
+  "id": "ib-food-030",
+  "topic": "food",
+  "text": {
+   "en": "What would you cook to introduce your culture to a stranger?",
+   "it": "Che cosa cucineresti per far conoscere la tua cultura a uno sconosciuto?",
+   "es": "¿Qué cocinarías para dar a conocer tu cultura a un desconocido?",
+   "pt": "O que cozinharias para dar a conhecer a tua cultura a um desconhecido?",
+   "pt_BR": "O que você cozinharia para apresentar sua cultura a um estranho?",
+   "fr": "Que cuisinerais-tu pour faire découvrir ta culture à un inconnu ?",
+   "de": "Was würdest du kochen, um einem Fremden deine Kultur näherzubringen?"
+  }
+ },
+ {
+  "id": "ib-food-031",
+  "topic": "food",
+  "text": {
+   "en": "Do you have a favorite family restaurant? What do you order there?",
+   "it": "Hai un ristorante del cuore dove vai con la famiglia? Che cosa ordini?",
+   "es": "¿Tienes un restaurante familiar favorito? ¿Qué pides allí?",
+   "pt": "Tens um restaurante preferido para ires em família? O que pedes lá?",
+   "pt_BR": "Você tem um restaurante preferido para ir em família? O que pede lá?",
+   "fr": "As-tu un restaurant familial préféré ? Qu'y commandes-tu ?",
+   "de": "Hast du ein Lieblingsrestaurant für die Familie? Was bestellst du dort?"
+  }
+ },
+ {
+  "id": "ib-food-032",
+  "topic": "food",
+  "text": {
+   "en": "What's a food you can only find in your country?",
+   "it": "C'è un cibo che si trova solo nel tuo paese?",
+   "es": "¿Hay alguna comida que solo se encuentre en tu país?",
+   "pt": "Há alguma comida que só se encontre no teu país?",
+   "pt_BR": "Tem alguma comida que só se encontra no seu país?",
+   "fr": "Y a-t-il un aliment qu'on ne trouve que dans ton pays ?",
+   "de": "Gibt es ein Essen, das man nur in deinem Land findet?"
+  }
+ },
+ {
+  "id": "ib-food-033",
+  "topic": "food",
+  "text": {
+   "en": "Do you follow any cooks or food channels that inspire you?",
+   "it": "Segui qualche cuoco o canale di cucina che ti ispira?",
+   "es": "¿Sigues a algún cocinero o canal de cocina que te inspire?",
+   "pt": "Segues algum cozinheiro ou canal de culinária que te inspire?",
+   "pt_BR": "Você segue algum cozinheiro ou canal de culinária que te inspire?",
+   "fr": "Suis-tu des cuisiniers ou des chaînes de cuisine qui t'inspirent ?",
+   "de": "Folgst du Köchen oder Kochkanälen, die dich inspirieren?"
+  }
+ },
+ {
+  "id": "ib-food-034",
+  "topic": "food",
+  "text": {
+   "en": "What's your favorite soup or stew for a cold day?",
+   "it": "Qual è la tua zuppa o il tuo stufato preferito per una giornata fredda?",
+   "es": "¿Cuál es tu sopa o guiso favorito para un día frío?",
+   "pt": "Qual é a tua sopa ou o teu guisado preferido para um dia frio?",
+   "pt_BR": "Qual é sua sopa ou ensopado preferido para um dia frio?",
+   "fr": "Quelle est ta soupe ou ton ragoût préféré pour une journée froide ?",
+   "de": "Welche Suppe oder welchen Eintopf magst du an kalten Tagen am liebsten?"
+  }
+ },
+ {
+  "id": "ib-food-035",
+  "topic": "food",
+  "text": {
+   "en": "What's the most delicious thing you've ever cooked?",
+   "it": "Qual è la cosa più buona che tu abbia mai cucinato?",
+   "es": "¿Qué es lo más delicioso que has cocinado alguna vez?",
+   "pt": "Qual foi a coisa mais deliciosa que já cozinhaste?",
+   "pt_BR": "Qual foi a coisa mais deliciosa que você já cozinhou?",
+   "fr": "Quelle est la chose la plus délicieuse que tu aies jamais cuisinée ?",
+   "de": "Was ist das Leckerste, das du je gekocht hast?"
+  }
+ },
+ {
+  "id": "ib-food-036",
+  "topic": "food",
+  "text": {
+   "en": "What's your favorite thing to eat for breakfast on a lazy weekend?",
+   "it": "Che cosa ti piace mangiare a colazione nei weekend pigri?",
+   "es": "¿Qué te gusta desayunar un fin de semana tranquilo?",
+   "pt": "O que gostas de comer ao pequeno-almoço num fim de semana descansado?",
+   "pt_BR": "O que você gosta de comer no café da manhã em um fim de semana tranquilo?",
+   "fr": "Qu'aimes-tu manger au petit-déjeuner lors d'un week-end tranquille ?",
+   "de": "Was isst du am liebsten zum Frühstück an einem gemütlichen Wochenende?"
+  }
+ },
+ {
+  "id": "ib-food-037",
+  "topic": "food",
+  "text": {
+   "en": "Which ice cream flavor do you always choose?",
+   "it": "Quale gusto di gelato scegli sempre?",
+   "es": "¿Qué sabor de helado eliges siempre?",
+   "pt": "Que sabor de gelado escolhes sempre?",
+   "pt_BR": "Que sabor de sorvete você sempre escolhe?",
+   "fr": "Quel parfum de glace choisis-tu toujours ?",
+   "de": "Welche Eissorte wählst du immer?"
+  }
+ },
+ {
+  "id": "ib-food-038",
+  "topic": "food",
+  "text": {
+   "en": "What's a dish that always brings people together at your table?",
+   "it": "Qual è un piatto che riunisce sempre tutti intorno alla tua tavola?",
+   "es": "¿Qué plato reúne siempre a todos alrededor de tu mesa?",
+   "pt": "Que prato junta sempre toda a gente à tua mesa?",
+   "pt_BR": "Que prato sempre reúne todo mundo à sua mesa?",
+   "fr": "Quel plat réunit toujours tout le monde autour de ta table ?",
+   "de": "Welches Gericht bringt an deinem Tisch immer alle zusammen?"
+  }
+ },
+ {
+  "id": "ib-food-039",
+  "topic": "food",
+  "text": {
+   "en": "What's the best homemade dish you've eaten at a friend's place?",
+   "it": "Qual è il miglior piatto fatto in casa che hai mangiato da un amico?",
+   "es": "¿Cuál es el mejor plato casero que has comido en casa de un amigo?",
+   "pt": "Qual foi o melhor prato caseiro que comeste em casa de um amigo?",
+   "pt_BR": "Qual foi o melhor prato caseiro que você comeu na casa de um amigo?",
+   "fr": "Quel est le meilleur plat maison que tu aies mangé chez un ami ?",
+   "de": "Was war das beste selbstgemachte Gericht, das du bei Freunden gegessen hast?"
+  }
+ },
+ {
+  "id": "ib-food-040",
+  "topic": "food",
+  "text": {
+   "en": "Is there a dish in your culture that is traditionally eaten with your hands?",
+   "it": "C'è un piatto della tua cultura che si mangia tradizionalmente con le mani?",
+   "es": "¿Hay algún plato de tu cultura que se coma tradicionalmente con las manos?",
+   "pt": "Há algum prato da tua cultura que se coma tradicionalmente com as mãos?",
+   "pt_BR": "Tem algum prato da sua cultura que tradicionalmente se come com as mãos?",
+   "fr": "Y a-t-il un plat de ta culture qui se mange traditionnellement avec les mains ?",
+   "de": "Gibt es in deiner Kultur ein Gericht, das traditionell mit den Händen gegessen wird?"
+  }
+ },
+ {
+  "id": "ib-food-041",
+  "topic": "food",
+  "text": {
+   "en": "What snack do you miss most when you're away from home?",
+   "it": "Quale snack ti manca di più quando sei lontano da casa?",
+   "es": "¿Qué snack echas más de menos cuando estás lejos de casa?",
+   "pt": "Que snack mais te faz falta quando estás longe de casa?",
+   "pt_BR": "Que petisco mais faz falta quando você está longe de casa?",
+   "fr": "Quel en-cas te manque le plus quand tu es loin de chez toi ?",
+   "de": "Welcher Snack fehlt dir am meisten, wenn du von zu Hause weg bist?"
+  }
+ },
+ {
+  "id": "ib-food-042",
+  "topic": "food",
+  "text": {
+   "en": "Which cuisine would you eat every week if you could?",
+   "it": "Quale cucina mangeresti ogni settimana, se potessi?",
+   "es": "¿Qué cocina comerías cada semana si pudieras?",
+   "pt": "Que gastronomia comerias todas as semanas, se pudesses?",
+   "pt_BR": "Que culinária você comeria toda semana, se pudesse?",
+   "fr": "Quelle cuisine mangerais-tu chaque semaine si tu le pouvais ?",
+   "de": "Welche Küche würdest du jede Woche essen, wenn du könntest?"
+  }
+ },
+ {
+  "id": "ib-food-043",
+  "topic": "food",
+  "text": {
+   "en": "What's the best food festival or fair you've been to?",
+   "it": "Qual è la migliore sagra o fiera gastronomica a cui sei stato?",
+   "es": "¿Cuál es el mejor festival o feria gastronómica al que has ido?",
+   "pt": "Qual foi o melhor festival ou feira gastronómica a que foste?",
+   "pt_BR": "Qual foi o melhor festival ou feira gastronômica a que você foi?",
+   "fr": "Quel est le meilleur festival ou salon gastronomique auquel tu sois allé ?",
+   "de": "Welches Food-Festival oder welche Genussmesse hat dir am besten gefallen?"
+  }
+ },
+ {
+  "id": "ib-food-044",
+  "topic": "food",
+  "text": {
+   "en": "What's your favorite vegetarian dish?",
+   "it": "Qual è il tuo piatto vegetariano preferito?",
+   "es": "¿Cuál es tu plato vegetariano favorito?",
+   "pt": "Qual é o teu prato vegetariano preferido?",
+   "pt_BR": "Qual é seu prato vegetariano preferido?",
+   "fr": "Quel est ton plat végétarien préféré ?",
+   "de": "Was ist dein liebstes vegetarisches Gericht?"
+  }
+ },
+ {
+  "id": "ib-food-045",
+  "topic": "food",
+  "text": {
+   "en": "What do people usually eat at birthday parties in your country?",
+   "it": "Che cosa si mangia di solito alle feste di compleanno nel tuo paese?",
+   "es": "¿Qué se suele comer en las fiestas de cumpleaños en tu país?",
+   "pt": "O que se costuma comer nas festas de aniversário no teu país?",
+   "pt_BR": "O que as pessoas costumam comer em festas de aniversário no seu país?",
+   "fr": "Que mange-t-on en général aux fêtes d'anniversaire dans ton pays ?",
+   "de": "Was isst man in deinem Land üblicherweise auf Geburtstagsfeiern?"
+  }
+ },
+ {
+  "id": "ib-food-046",
+  "topic": "food",
+  "text": {
+   "en": "What was the first thing you learned to cook, and who taught you?",
+   "it": "Qual è stata la prima cosa che hai imparato a cucinare, e chi te l'ha insegnata?",
+   "es": "¿Qué fue lo primero que aprendiste a cocinar y quién te lo enseñó?",
+   "pt": "Qual foi a primeira coisa que aprendeste a cozinhar e quem te ensinou?",
+   "pt_BR": "Qual foi a primeira coisa que você aprendeu a cozinhar e quem te ensinou?",
+   "fr": "Quelle est la première chose que tu as appris à cuisiner, et qui te l'a enseignée ?",
+   "de": "Was hast du als Erstes kochen gelernt, und wer hat es dir beigebracht?"
+  }
+ },
+ {
+  "id": "ib-food-047",
+  "topic": "food",
+  "text": {
+   "en": "What's the best thing you've eaten from a food truck or street stall?",
+   "it": "Qual è la cosa migliore che hai mangiato da un furgoncino o da una bancarella di strada?",
+   "es": "¿Qué es lo mejor que has comido en un food truck o puesto callejero?",
+   "pt": "Qual foi a melhor coisa que comeste numa roulote ou banca de rua?",
+   "pt_BR": "Qual foi a melhor coisa que você comeu em um food truck ou barraquinha de rua?",
+   "fr": "Quel est le meilleur plat que tu aies mangé dans un food truck ou sur un stand de rue ?",
+   "de": "Was war das Beste, das du je an einem Foodtruck oder Straßenstand gegessen hast?"
+  }
+ },
+ {
+  "id": "ib-food-048",
+  "topic": "food",
+  "text": {
+   "en": "Which breakfast from around the world would you most like to try?",
+   "it": "Quale colazione del mondo ti piacerebbe provare di più?",
+   "es": "¿Qué desayuno del mundo te gustaría probar más?",
+   "pt": "Que pequeno-almoço do mundo gostarias mais de provar?",
+   "pt_BR": "Que café da manhã do mundo você mais gostaria de provar?",
+   "fr": "Quel petit-déjeuner du monde aimerais-tu le plus goûter ?",
+   "de": "Welches Frühstück der Welt würdest du am liebsten einmal probieren?"
+  }
+ },
+ {
+  "id": "ib-food-049",
+  "topic": "food",
+  "text": {
+   "en": "What's a dish that's hard to explain to someone who's never had it?",
+   "it": "Qual è un piatto difficile da spiegare a chi non l'ha mai assaggiato?",
+   "es": "¿Qué plato es difícil de explicar a alguien que nunca lo ha probado?",
+   "pt": "Que prato é difícil de explicar a quem nunca o provou?",
+   "pt_BR": "Que prato é difícil de explicar para quem nunca provou?",
+   "fr": "Quel plat est difficile à expliquer à quelqu'un qui n'en a jamais goûté ?",
+   "de": "Welches Gericht lässt sich jemandem schwer erklären, der es nie probiert hat?"
+  }
+ },
+ {
+  "id": "ib-food-050",
+  "topic": "food",
+  "text": {
+   "en": "What's the one food you could eat every day without getting tired of it?",
+   "it": "Qual è il cibo che mangeresti ogni giorno senza stancarti mai?",
+   "es": "¿Qué comida podrías comer todos los días sin cansarte?",
+   "pt": "Que comida poderias comer todos os dias sem te cansares?",
+   "pt_BR": "Que comida você poderia comer todo dia sem se cansar?",
+   "fr": "Quel aliment pourrais-tu manger tous les jours sans t'en lasser ?",
+   "de": "Welches Essen könntest du jeden Tag essen, ohne es leid zu werden?"
+  }
+ }
+]

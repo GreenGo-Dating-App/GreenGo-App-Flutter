@@ -1,0 +1,1178 @@
+{
+ "LT": [
+  {
+   "id": "ct-LT-01",
+   "category": "greetings",
+   "text": {
+    "en": "A firm handshake with eye contact is the usual greeting when meeting someone, for both men and women.",
+    "it": "Quando si incontra qualcuno, il saluto abituale è una stretta di mano decisa con contatto visivo, sia per uomini che per donne.",
+    "es": "Al conocer a alguien, lo habitual es un apretón de manos firme con contacto visual, tanto para hombres como para mujeres.",
+    "pt": "Ao conhecer alguém, o cumprimento habitual é um aperto de mão firme com contacto visual, tanto para homens como para mulheres.",
+    "pt_BR": "Ao conhecer alguém, o cumprimento habitual é um aperto de mão firme com contato visual, tanto para homens quanto para mulheres.",
+    "fr": "Pour se saluer, on se serre généralement la main fermement en regardant l'autre dans les yeux, hommes comme femmes.",
+    "de": "Zur Begrüßung gibt man sich meist mit festem Händedruck und Blickkontakt die Hand, Männer wie Frauen."
+   }
+  },
+  {
+   "id": "ct-LT-02",
+   "category": "greetings",
+   "text": {
+    "en": "Among friends, a simple \"Labas\" is the casual hello. With people you do not know, \"Laba diena\" (good day) is more polite.",
+    "it": "Tra amici basta un semplice \"Labas\" per salutare. Con chi non si conosce è più cortese \"Laba diena\" (buongiorno).",
+    "es": "Entre amigos basta un simple \"Labas\" para saludar. Con desconocidos es más educado decir \"Laba diena\" (buen día).",
+    "pt": "Entre amigos, um simples \"Labas\" serve de olá. Com quem não se conhece, \"Laba diena\" (bom dia) é mais educado.",
+    "pt_BR": "Entre amigos, um simples \"Labas\" serve de oi. Com quem você não conhece, \"Laba diena\" (bom dia) é mais educado.",
+    "fr": "Entre amis, un simple \"Labas\" suffit pour dire bonjour. Avec des inconnus, \"Laba diena\" (bonne journée) est plus poli.",
+    "de": "Unter Freunden reicht ein schlichtes \"Labas\" als Gruß. Bei Fremden ist \"Laba diena\" (guten Tag) höflicher."
+   }
+  },
+  {
+   "id": "ct-LT-03",
+   "category": "conversation",
+   "text": {
+    "en": "Many Lithuanians seem reserved at first but open up warmly once a conversation gets going. Do not mistake early quietness for coldness.",
+    "it": "Molti lituani all'inizio sembrano riservati, ma si aprono con calore quando la conversazione parte. Non scambiare il silenzio iniziale per freddezza.",
+    "es": "Muchos lituanos parecen reservados al principio, pero se abren con calidez cuando la conversación arranca. No confundas ese silencio inicial con frialdad.",
+    "pt": "Muitos lituanos parecem reservados ao início, mas abrem-se com simpatia quando a conversa arranca. Não confundas o silêncio inicial com frieza.",
+    "pt_BR": "Muitos lituanos parecem reservados no início, mas se abrem com simpatia quando a conversa engrena. Não confunda o silêncio inicial com frieza.",
+    "fr": "Beaucoup de Lituaniens paraissent réservés au premier abord, mais s'ouvrent chaleureusement une fois la conversation lancée. Ce silence n'est pas de la froideur.",
+    "de": "Viele Litauer wirken anfangs zurückhaltend, werden aber herzlich, sobald das Gespräch in Gang kommt. Anfängliche Stille ist keine Kälte."
+   }
+  },
+  {
+   "id": "ct-LT-04",
+   "category": "conversation",
+   "text": {
+    "en": "Lithuania is a Baltic country with its own language and history. Many people appreciate it when visitors do not group it together with its neighbours.",
+    "it": "La Lituania è un paese baltico con una lingua e una storia proprie. Molti apprezzano che i visitatori non la mettano nello stesso mucchio dei paesi vicini.",
+    "es": "Lituania es un país báltico con su propio idioma e historia. A muchos les gusta que los visitantes no lo metan en el mismo saco que sus vecinos.",
+    "pt": "A Lituânia é um país báltico com língua e história próprias. Muitos apreciam que os visitantes não a ponham no mesmo saco que os países vizinhos.",
+    "pt_BR": "A Lituânia é um país báltico com língua e história próprias. Muita gente gosta quando os visitantes não a misturam com os países vizinhos.",
+    "fr": "La Lituanie est un pays balte avec sa propre langue et son histoire. Beaucoup apprécient qu'on ne la range pas dans le même panier que ses voisins.",
+    "de": "Litauen ist ein baltisches Land mit eigener Sprache und Geschichte. Viele freuen sich, wenn Besucher es nicht mit seinen Nachbarn in einen Topf werfen."
+   }
+  },
+  {
+   "id": "ct-LT-05",
+   "category": "conversation",
+   "text": {
+    "en": "Nature, food, travel and sport are easy, friendly topics. The Soviet period is a sensitive subject, so it is polite to let locals bring it up first.",
+    "it": "Natura, cibo, viaggi e sport sono argomenti facili e cordiali. Il periodo sovietico è un tema delicato, quindi è cortese lasciare che siano i locali a toccarlo per primi.",
+    "es": "La naturaleza, la comida, los viajes y el deporte son temas fáciles y amables. El periodo soviético es un tema delicado, así que es cortés dejar que los locales lo mencionen primero.",
+    "pt": "A natureza, a comida, as viagens e o desporto são temas fáceis e simpáticos. O período soviético é um assunto sensível, por isso é educado deixar que sejam os locais a abordá-lo primeiro.",
+    "pt_BR": "Natureza, comida, viagens e esporte são assuntos fáceis e simpáticos. O período soviético é um tema sensível, então é educado deixar que os locais toquem nele primeiro.",
+    "fr": "La nature, la cuisine, les voyages et le sport sont des sujets faciles et conviviaux. La période soviétique est un sujet sensible : mieux vaut laisser les habitants l'aborder en premier.",
+    "de": "Natur, Essen, Reisen und Sport sind unkomplizierte, freundliche Themen. Die Sowjetzeit ist ein heikles Thema, daher ist es höflich, es zuerst den Einheimischen zu überlassen."
+   }
+  },
+  {
+   "id": "ct-LT-06",
+   "category": "dining",
+   "text": {
+    "en": "Cepelinai, large potato dumplings stuffed with meat, mushrooms or cheese and served with sour cream, are a classic dish worth trying.",
+    "it": "I cepelinai, grossi gnocchi di patate ripieni di carne, funghi o formaggio e serviti con panna acida, sono un piatto classico da assaggiare.",
+    "es": "Los cepelinai, grandes albóndigas de patata rellenas de carne, setas o queso y servidas con nata agria, son un plato clásico que merece la pena probar.",
+    "pt": "Os cepelinai, grandes bolas de batata recheadas com carne, cogumelos ou queijo e servidas com natas azedas, são um prato clássico que vale a pena provar.",
+    "pt_BR": "Os cepelinai, grandes bolinhos de batata recheados com carne, cogumelos ou queijo e servidos com creme azedo, são um prato clássico que vale a pena provar.",
+    "fr": "Les cepelinai, de grosses quenelles de pomme de terre farcies à la viande, aux champignons ou au fromage et servies avec de la crème aigre, sont un plat classique à goûter.",
+    "de": "Cepelinai, große Kartoffelklöße mit Fleisch-, Pilz- oder Käsefüllung und saurer Sahne, sind ein klassisches Gericht, das man probieren sollte."
+   }
+  },
+  {
+   "id": "ct-LT-07",
+   "category": "dining",
+   "text": {
+    "en": "In summer, many people enjoy šaltibarščiai, a cold bright pink beetroot soup made with kefir, often served with warm boiled potatoes.",
+    "it": "In estate molti gustano lo šaltibarščiai, una zuppa fredda di barbabietola rosa acceso fatta con kefir, spesso servita con patate lesse calde.",
+    "es": "En verano, mucha gente disfruta del šaltibarščiai, una sopa fría de remolacha de color rosa intenso hecha con kéfir, a menudo con patatas cocidas calientes.",
+    "pt": "No verão, muita gente gosta de šaltibarščiai, uma sopa fria de beterraba cor-de-rosa intensa feita com quefir, muitas vezes servida com batatas cozidas quentes.",
+    "pt_BR": "No verão, muita gente gosta de šaltibarščiai, uma sopa fria de beterraba rosa-choque feita com kefir, geralmente servida com batatas cozidas quentes.",
+    "fr": "En été, beaucoup apprécient le šaltibarščiai, une soupe froide de betterave d'un rose vif préparée avec du kéfir, souvent servie avec des pommes de terre bouillies chaudes.",
+    "de": "Im Sommer essen viele gern Šaltibarščiai, eine kalte, leuchtend rosa Rote-Bete-Suppe mit Kefir, oft mit heißen Pellkartoffeln serviert."
+   }
+  },
+  {
+   "id": "ct-LT-08",
+   "category": "dining",
+   "text": {
+    "en": "Kibinai, baked pastries filled with meat or vegetables, came to Lithuania through the Karaite community and are a popular snack, especially in Trakai.",
+    "it": "I kibinai, pasticcini al forno ripieni di carne o verdure, sono arrivati in Lituania con la comunità caraita e sono uno spuntino popolare, soprattutto a Trakai.",
+    "es": "Los kibinai, pastelillos horneados rellenos de carne o verduras, llegaron a Lituania con la comunidad caraíta y son un tentempié popular, sobre todo en Trakai.",
+    "pt": "Os kibinai, pastéis cozidos no forno recheados com carne ou legumes, chegaram à Lituânia através da comunidade caraíta e são um petisco popular, sobretudo em Trakai.",
+    "pt_BR": "Os kibinai, pastéis assados recheados com carne ou legumes, chegaram à Lituânia pela comunidade caraíta e são um lanche popular, principalmente em Trakai.",
+    "fr": "Les kibinai, petits chaussons cuits au four fourrés à la viande ou aux légumes, sont arrivés en Lituanie avec la communauté karaïte et sont un en-cas apprécié, surtout à Trakai.",
+    "de": "Kibinai, gebackene Teigtaschen mit Fleisch- oder Gemüsefüllung, kamen durch die karaimische Gemeinde nach Litauen und sind ein beliebter Imbiss, besonders in Trakai."
+   }
+  },
+  {
+   "id": "ct-LT-09",
+   "category": "tipping",
+   "text": {
+    "en": "In restaurants, many people leave around 10 percent or round up the bill when the service was good. Tipping is appreciated but not mandatory.",
+    "it": "Nei ristoranti molti lasciano circa il 10 per cento o arrotondano il conto se il servizio è stato buono. La mancia è gradita ma non obbligatoria.",
+    "es": "En los restaurantes, mucha gente deja alrededor del 10 por ciento o redondea la cuenta si el servicio fue bueno. La propina se agradece, pero no es obligatoria.",
+    "pt": "Nos restaurantes, muita gente deixa cerca de 10 por cento ou arredonda a conta quando o serviço foi bom. A gorjeta é apreciada, mas não é obrigatória.",
+    "pt_BR": "Nos restaurantes, muita gente deixa cerca de 10 por cento ou arredonda a conta quando o atendimento foi bom. A gorjeta é bem-vinda, mas não é obrigatória.",
+    "fr": "Au restaurant, beaucoup laissent environ 10 pour cent ou arrondissent l'addition quand le service était bon. Le pourboire est apprécié, mais pas obligatoire.",
+    "de": "In Restaurants lassen viele bei gutem Service etwa 10 Prozent Trinkgeld da oder runden die Rechnung auf. Trinkgeld wird geschätzt, ist aber nicht verpflichtend."
+   }
+  },
+  {
+   "id": "ct-LT-10",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to a home, it is common to bring flowers for the host. Give an odd number of stems, since even numbers are traditionally for funerals.",
+    "it": "Quando si è invitati a casa di qualcuno è usuale portare dei fiori a chi ospita. Si regala un numero dispari di steli: i pari sono tradizionalmente per i funerali.",
+    "es": "Cuando te invitan a una casa, es habitual llevar flores a los anfitriones. Se regala un número impar de tallos, porque el número par se reserva tradicionalmente para los funerales.",
+    "pt": "Quando és convidado para casa de alguém, é comum levar flores para os anfitriões. Oferece-se um número ímpar de flores, pois o número par é tradicionalmente para funerais.",
+    "pt_BR": "Quando você é convidado para a casa de alguém, é comum levar flores para os anfitriões. Dá-se um número ímpar de flores, pois o número par é tradicionalmente para funerais.",
+    "fr": "Quand on est invité chez quelqu'un, il est courant d'apporter des fleurs à l'hôte. On offre un nombre impair de tiges, car le nombre pair est traditionnellement réservé aux funérailles.",
+    "de": "Bei Einladungen bringt man den Gastgebern üblicherweise Blumen mit. Man schenkt eine ungerade Anzahl Stiele, denn gerade Zahlen sind traditionell für Beerdigungen."
+   }
+  },
+  {
+   "id": "ct-LT-11",
+   "category": "dress",
+   "text": {
+    "en": "In Lithuanian homes people usually take off their shoes at the door, and hosts often offer you slippers to wear inside.",
+    "it": "Nelle case lituane di solito ci si toglie le scarpe all'ingresso, e spesso i padroni di casa offrono delle pantofole da usare dentro.",
+    "es": "En las casas lituanas la gente suele quitarse los zapatos en la entrada, y los anfitriones a menudo ofrecen zapatillas de casa.",
+    "pt": "Nas casas lituanas costuma-se tirar os sapatos à porta, e os anfitriões muitas vezes oferecem pantufas para usar lá dentro.",
+    "pt_BR": "Nas casas lituanas costuma-se tirar os sapatos na porta, e os anfitriões muitas vezes oferecem chinelos para usar lá dentro.",
+    "fr": "Dans les foyers lituaniens, on enlève généralement ses chaussures à l'entrée, et les hôtes proposent souvent des chaussons.",
+    "de": "In litauischen Wohnungen zieht man an der Tür meist die Schuhe aus, und die Gastgeber bieten oft Hausschuhe an."
+   }
+  },
+  {
+   "id": "ct-LT-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "Most Lithuanians are Roman Catholic, and churches are active places of worship. Dress modestly, keep your voice low and avoid walking around during services.",
+    "it": "La maggior parte dei lituani è cattolica e le chiese sono luoghi di culto attivi. Vesti in modo sobrio, abbassa la voce ed evita di girare durante le funzioni.",
+    "es": "La mayoría de los lituanos son católicos y las iglesias son lugares de culto activos. Viste con sencillez, habla en voz baja y evita pasearte durante los oficios.",
+    "pt": "A maioria dos lituanos é católica e as igrejas são locais de culto ativos. Veste-te com discrição, fala baixo e evita andar de um lado para o outro durante as cerimónias.",
+    "pt_BR": "A maioria dos lituanos é católica e as igrejas são locais de culto ativos. Vista-se com discrição, fale baixo e evite andar de um lado para o outro durante os cultos.",
+    "fr": "La plupart des Lituaniens sont catholiques et les églises sont des lieux de culte actifs. Habillez-vous sobrement, parlez à voix basse et évitez de circuler pendant les offices.",
+    "de": "Die meisten Litauer sind römisch-katholisch, und Kirchen sind aktive Gotteshäuser. Kleide dich dezent, sprich leise und gehe während der Gottesdienste nicht umher."
+   }
+  },
+  {
+   "id": "ct-LT-13",
+   "category": "religion_sites",
+   "text": {
+    "en": "The Hill of Crosses near Šiauliai is a pilgrimage site with thousands of crosses. Visit quietly and respectfully, as it is deeply meaningful to many Lithuanians.",
+    "it": "La Collina delle Croci vicino a Šiauliai è un luogo di pellegrinaggio con migliaia di croci. Si visita in silenzio e con rispetto, perché per molti lituani ha un significato profondo.",
+    "es": "La Colina de las Cruces, cerca de Šiauliai, es un lugar de peregrinación con miles de cruces. Se visita en silencio y con respeto, porque tiene un significado profundo para muchos lituanos.",
+    "pt": "A Colina das Cruzes, perto de Šiauliai, é um local de peregrinação com milhares de cruzes. Visita-se em silêncio e com respeito, porque tem um significado profundo para muitos lituanos.",
+    "pt_BR": "A Colina das Cruzes, perto de Šiauliai, é um local de peregrinação com milhares de cruzes. Visita-se em silêncio e com respeito, porque tem um significado profundo para muitos lituanos.",
+    "fr": "La Colline des Croix, près de Šiauliai, est un lieu de pèlerinage avec des milliers de croix. On la visite en silence et avec respect, car elle a un sens profond pour beaucoup de Lituaniens.",
+    "de": "Der Berg der Kreuze bei Šiauliai ist ein Wallfahrtsort mit Tausenden Kreuzen. Man besucht ihn ruhig und respektvoll, denn er ist für viele Litauer sehr bedeutsam."
+   }
+  },
+  {
+   "id": "ct-LT-14",
+   "category": "gestures",
+   "text": {
+    "en": "Smiling at strangers is less common than in some countries. A neutral face in public is usually not unfriendliness, just local habit.",
+    "it": "Sorridere agli sconosciuti è meno comune che in altri paesi. Un'espressione neutra in pubblico di solito non è antipatia, ma semplice abitudine locale.",
+    "es": "Sonreír a desconocidos es menos habitual que en otros países. Una cara neutra en público normalmente no es antipatía, sino costumbre local.",
+    "pt": "Sorrir a desconhecidos é menos comum do que noutros países. Uma cara neutra em público normalmente não é antipatia, é apenas hábito local.",
+    "pt_BR": "Sorrir para desconhecidos é menos comum do que em outros países. Uma expressão neutra em público normalmente não é antipatia, é só costume local.",
+    "fr": "Sourire aux inconnus est moins courant que dans d'autres pays. Un visage neutre en public n'est généralement pas de l'hostilité, juste une habitude locale.",
+    "de": "Fremde anzulächeln ist weniger üblich als in manchen anderen Ländern. Ein neutraler Gesichtsausdruck in der Öffentlichkeit ist meist keine Unfreundlichkeit, sondern lokale Gewohnheit."
+   }
+  },
+  {
+   "id": "ct-LT-15",
+   "category": "punctuality",
+   "text": {
+    "en": "Being on time is valued for appointments, business meetings and meals. If you are going to be late, a short message is expected.",
+    "it": "Essere puntuali è apprezzato per appuntamenti, riunioni di lavoro e pasti. Se farai tardi, ci si aspetta un breve messaggio.",
+    "es": "Se valora la puntualidad en citas, reuniones de trabajo y comidas. Si vas a llegar tarde, se espera un mensaje breve.",
+    "pt": "A pontualidade é valorizada em marcações, reuniões de trabalho e refeições. Se fores chegar atrasado, espera-se uma mensagem curta.",
+    "pt_BR": "A pontualidade é valorizada em compromissos, reuniões de trabalho e refeições. Se você vai se atrasar, espera-se uma mensagem curta.",
+    "fr": "La ponctualité est appréciée pour les rendez-vous, les réunions de travail et les repas. Si vous êtes en retard, un petit message est attendu.",
+    "de": "Pünktlichkeit wird bei Terminen, Geschäftstreffen und Essen geschätzt. Wer sich verspätet, schickt kurz eine Nachricht."
+   }
+  },
+  {
+   "id": "ct-LT-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "Public spaces and public transport are generally calm and quiet. Speaking loudly on the phone is frowned upon, and giving your seat to older people is expected.",
+    "it": "Gli spazi pubblici e i mezzi sono in genere calmi e silenziosi. Parlare forte al telefono è mal visto e cedere il posto agli anziani è la norma.",
+    "es": "Los espacios públicos y el transporte suelen ser tranquilos y silenciosos. Hablar alto por teléfono está mal visto y se espera ceder el asiento a las personas mayores.",
+    "pt": "Os espaços públicos e os transportes são geralmente calmos e silenciosos. Falar alto ao telefone é mal visto e espera-se que se ceda o lugar a pessoas mais velhas.",
+    "pt_BR": "Os espaços públicos e o transporte coletivo costumam ser calmos e silenciosos. Falar alto ao telefone é mal visto e espera-se que se ceda o lugar a pessoas idosas.",
+    "fr": "Les espaces publics et les transports sont en général calmes et silencieux. Parler fort au téléphone est mal vu et on s'attend à céder sa place aux personnes âgées.",
+    "de": "Öffentliche Räume und Verkehrsmittel sind meist ruhig. Lautes Telefonieren ist unerwünscht, und älteren Menschen überlässt man den Sitzplatz."
+   }
+  },
+  {
+   "id": "ct-LT-17",
+   "category": "transport",
+   "text": {
+    "en": "Cities like Vilnius and Kaunas have buses and trolleybuses. Check the local ticket or app system before boarding, and validate your ticket if the system asks for it.",
+    "it": "Città come Vilnius e Kaunas hanno autobus e filobus. Prima di salire controlla il sistema locale di biglietti o app, e convalida il biglietto se richiesto.",
+    "es": "Ciudades como Vilna y Kaunas tienen autobuses y trolebuses. Comprueba el sistema local de billetes o aplicaciones antes de subir y valida el billete si te lo piden.",
+    "pt": "Cidades como Vílnius e Kaunas têm autocarros e troleicarros. Confirma o sistema local de bilhetes ou aplicações antes de entrar e valida o bilhete se for pedido.",
+    "pt_BR": "Cidades como Vilnius e Kaunas têm ônibus e trólebus. Confira o sistema local de bilhetes ou aplicativos antes de embarcar e valide o bilhete se for exigido.",
+    "fr": "Des villes comme Vilnius et Kaunas ont des bus et des trolleybus. Vérifiez le système local de billets ou d'applications avant de monter et validez votre billet si nécessaire.",
+    "de": "Städte wie Vilnius und Kaunas haben Busse und Oberleitungsbusse. Informiere dich vor dem Einsteigen über das örtliche Ticket- oder App-System und entwerte dein Ticket, falls verlangt."
+   }
+  },
+  {
+   "id": "ct-LT-18",
+   "category": "language",
+   "text": {
+    "en": "Lithuanian is an Indo-European Baltic language that keeps very old features, and it is unrelated to Russian. Even a simple \"Ačiū\" (thank you) earns smiles.",
+    "it": "Il lituano è una lingua baltica indoeuropea che conserva tratti molto antichi e non è imparentata con il russo. Anche un semplice \"Ačiū\" (grazie) strappa sorrisi.",
+    "es": "El lituano es una lengua báltica indoeuropea que conserva rasgos muy antiguos y no está emparentada con el ruso. Hasta un simple \"Ačiū\" (gracias) arranca sonrisas.",
+    "pt": "O lituano é uma língua báltica indo-europeia que conserva traços muito antigos e não tem parentesco com o russo. Até um simples \"Ačiū\" (obrigado) arranca sorrisos.",
+    "pt_BR": "O lituano é uma língua báltica indo-europeia que conserva traços muito antigos e não tem parentesco com o russo. Até um simples \"Ačiū\" (obrigado) arranca sorrisos.",
+    "fr": "Le lituanien est une langue balte indo-européenne qui garde des traits très anciens et n'a aucun lien avec le russe. Un simple \"Ačiū\" (merci) fait déjà sourire.",
+    "de": "Litauisch ist eine indoeuropäische baltische Sprache mit sehr altertümlichen Merkmalen und nicht mit dem Russischen verwandt. Schon ein schlichtes \"Ačiū\" (danke) zaubert ein Lächeln hervor."
+   }
+  },
+  {
+   "id": "ct-LT-19",
+   "category": "festivals",
+   "text": {
+    "en": "Joninės, the midsummer feast on 24 June, is celebrated with bonfires, wreaths of flowers and songs. It is also called the Day of Dew, from its older roots.",
+    "it": "Joninės, la festa di mezza estate del 24 giugno, si celebra con falò, ghirlande di fiori e canti. Viene chiamata anche Giorno della Rugiada, dalle sue radici più antiche.",
+    "es": "Joninės, la fiesta de pleno verano del 24 de junio, se celebra con hogueras, coronas de flores y canciones. También se llama Día del Rocío, por sus raíces más antiguas.",
+    "pt": "As Joninės, a festa do solstício de verão a 24 de junho, celebram-se com fogueiras, coroas de flores e canções. Também se chama Dia do Orvalho, pelas suas raízes mais antigas.",
+    "pt_BR": "As Joninės, a festa do solstício de verão em 24 de junho, são celebradas com fogueiras, coroas de flores e canções. Também é chamada de Dia do Orvalho, por suas raízes mais antigas.",
+    "fr": "Les Joninės, la fête de la mi-été du 24 juin, se célèbrent avec des feux de joie, des couronnes de fleurs et des chants. On l'appelle aussi le Jour de la rosée, d'après ses racines anciennes.",
+    "de": "Joninės, das Mittsommerfest am 24. Juni, wird mit Feuern, Blumenkränzen und Liedern gefeiert. Wegen seiner alten Wurzeln heißt es auch Tag des Taus."
+   }
+  },
+  {
+   "id": "ct-LT-20",
+   "category": "festivals",
+   "text": {
+    "en": "Užgavėnės, the pre-Lent carnival in late winter, features masks, loud parades and pancakes. Joining in with a pancake is a friendly way to take part.",
+    "it": "Užgavėnės, il carnevale prima della Quaresima a fine inverno, prevede maschere, sfilate rumorose e frittelle. Assaggiare una frittella è un modo cordiale per partecipare.",
+    "es": "Užgavėnės, el carnaval previo a la Cuaresma a finales del invierno, incluye máscaras, desfiles ruidosos y tortitas. Probar una tortita es una forma amistosa de participar.",
+    "pt": "As Užgavėnės, o carnaval antes da Quaresma no fim do inverno, têm máscaras, desfiles ruidosos e panquecas. Provar uma panqueca é uma forma simpática de participar.",
+    "pt_BR": "As Užgavėnės, o carnaval antes da Quaresma no fim do inverno, têm máscaras, desfiles barulhentos e panquecas. Provar uma panqueca é uma forma simpática de participar.",
+    "fr": "Užgavėnės, le carnaval d'avant le Carême à la fin de l'hiver, comporte des masques, des défilés bruyants et des crêpes. Goûter une crêpe est une façon sympathique de participer.",
+    "de": "Užgavėnės, der Fastnachtsbrauch vor der Fastenzeit am Winterende, bringt Masken, laute Umzüge und Pfannkuchen. Einen Pfannkuchen mitzuessen ist eine freundliche Art mitzumachen."
+   }
+  },
+  {
+   "id": "ct-LT-21",
+   "category": "festivals",
+   "text": {
+    "en": "On Christmas Eve, many families share Kūčios, a traditional meatless dinner with many small dishes. Being invited to one is a warm sign of friendship.",
+    "it": "La vigilia di Natale molte famiglie condividono i Kūčios, una cena tradizionale senza carne con molti piccoli piatti. Essere invitati è un segno caloroso di amicizia.",
+    "es": "En Nochebuena, muchas familias comparten los Kūčios, una cena tradicional sin carne con muchos platos pequeños. Que te inviten es una cálida señal de amistad.",
+    "pt": "Na véspera de Natal, muitas famílias partilham os Kūčios, um jantar tradicional sem carne com muitos pratos pequenos. Ser convidado é um sinal caloroso de amizade.",
+    "pt_BR": "Na véspera de Natal, muitas famílias compartilham os Kūčios, um jantar tradicional sem carne com muitos pratos pequenos. Ser convidado é um sinal caloroso de amizade.",
+    "fr": "Le soir du 24 décembre, de nombreuses familles partagent les Kūčios, un dîner traditionnel sans viande avec beaucoup de petits plats. Y être invité est un geste chaleureux d'amitié.",
+    "de": "Am Heiligabend teilen viele Familien Kūčios, ein traditionelles fleischloses Abendessen mit vielen kleinen Gerichten. Eine Einladung dazu ist ein herzliches Zeichen von Freundschaft."
+   }
+  },
+  {
+   "id": "ct-LT-22",
+   "category": "family",
+   "text": {
+    "en": "Name days (vardadieniai) are widely celebrated alongside birthdays. A small gift or greeting on someone's name day is a thoughtful gesture.",
+    "it": "Gli onomastici (vardadieniai) si festeggiano molto accanto ai compleanni. Un piccolo regalo o un augurio nel giorno dell'onomastico è un gesto gentile.",
+    "es": "Los santos (vardadieniai) se celebran mucho junto a los cumpleaños. Un pequeño regalo o una felicitación en el día del santo es un gesto atento.",
+    "pt": "Os dias do nome (vardadieniai) são muito celebrados a par dos aniversários. Uma pequena prenda ou uma saudação no dia do nome é um gesto atencioso.",
+    "pt_BR": "Os dias do nome (vardadieniai) são muito comemorados junto com os aniversários. Um pequeno presente ou uma saudação no dia do nome é um gesto atencioso.",
+    "fr": "Les fêtes des prénoms (vardadieniai) sont très célébrées, en plus des anniversaires. Un petit cadeau ou un message ce jour-là est une attention appréciée.",
+    "de": "Namenstage (vardadieniai) werden neben Geburtstagen häufig gefeiert. Ein kleines Geschenk oder ein Gruß am Namenstag ist eine aufmerksame Geste."
+   }
+  },
+  {
+   "id": "ct-LT-23",
+   "category": "money",
+   "text": {
+    "en": "Lithuania uses the euro, and cards and contactless payments are accepted almost everywhere, though a little cash is handy at small markets and rural spots.",
+    "it": "La Lituania usa l'euro, e carte e pagamenti contactless sono accettati quasi ovunque, anche se un po' di contanti torna utile nei piccoli mercati e in campagna.",
+    "es": "Lituania usa el euro, y las tarjetas y los pagos sin contacto se aceptan casi en todas partes, aunque un poco de efectivo viene bien en mercadillos y zonas rurales.",
+    "pt": "A Lituânia usa o euro, e cartões e pagamentos por aproximação são aceites quase em todo o lado, embora um pouco de dinheiro venha a calhar em mercados pequenos e zonas rurais.",
+    "pt_BR": "A Lituânia usa o euro, e cartões e pagamentos por aproximação são aceitos quase em todo lugar, embora um pouco de dinheiro vivo ajude em mercados pequenos e áreas rurais.",
+    "fr": "La Lituanie utilise l'euro, et les cartes et le paiement sans contact sont acceptés presque partout, mais un peu d'espèces est utile sur les petits marchés et à la campagne.",
+    "de": "Litauen nutzt den Euro, und Karten sowie kontaktloses Bezahlen werden fast überall akzeptiert, doch etwas Bargeld ist auf kleinen Märkten und auf dem Land praktisch."
+   }
+  },
+  {
+   "id": "ct-LT-24",
+   "category": "photography",
+   "text": {
+    "en": "Ask before photographing people, and avoid taking photos during church services. Most Lithuanians are happy to help if you ask politely.",
+    "it": "Chiedi prima di fotografare le persone ed evita di scattare foto durante le funzioni in chiesa. La maggior parte dei lituani aiuta volentieri se chiedi con gentilezza.",
+    "es": "Pregunta antes de fotografiar a las personas y evita hacer fotos durante los oficios religiosos. La mayoría de los lituanos ayudan con gusto si preguntas con amabilidad.",
+    "pt": "Pergunta antes de fotografar pessoas e evita tirar fotografias durante as cerimónias religiosas. A maioria dos lituanos ajuda de bom grado se pedires com educação.",
+    "pt_BR": "Pergunte antes de fotografar pessoas e evite tirar fotos durante cultos religiosos. A maioria dos lituanos ajuda com prazer se você pedir com educação.",
+    "fr": "Demandez avant de photographier des personnes et évitez les photos pendant les offices. La plupart des Lituaniens aident volontiers si vous demandez poliment.",
+    "de": "Frage, bevor du Menschen fotografierst, und mache keine Fotos während Gottesdiensten. Die meisten Litauer helfen gern, wenn man höflich fragt."
+   }
+  },
+  {
+   "id": "ct-LT-25",
+   "category": "nightlife",
+   "text": {
+    "en": "In Vilnius and Kaunas, evenings often mean cafés, bars and live music in the old towns. Carry an ID, since venues may check your age.",
+    "it": "A Vilnius e Kaunas le serate sono spesso fatte di caffè, bar e musica dal vivo nei centri storici. Porta con te un documento, perché i locali possono controllare l'età.",
+    "es": "En Vilna y Kaunas, las noches suelen consistir en cafés, bares y música en directo en los cascos antiguos. Lleva un documento de identidad, porque los locales pueden comprobar la edad.",
+    "pt": "Em Vílnius e Kaunas, as noites costumam ser de cafés, bares e música ao vivo nos centros históricos. Leva um documento de identificação, porque os locais podem verificar a idade.",
+    "pt_BR": "Em Vilnius e Kaunas, as noites costumam ser de cafés, bares e música ao vivo nos centros históricos. Leve um documento de identidade, porque os locais podem conferir a idade.",
+    "fr": "À Vilnius et Kaunas, les soirées riment souvent avec cafés, bars et musique live dans les vieilles villes. Gardez une pièce d'identité, car les établissements peuvent vérifier l'âge.",
+    "de": "In Vilnius und Kaunas bedeuten Abende oft Cafés, Bars und Livemusik in den Altstädten. Habe einen Ausweis dabei, denn Lokale können das Alter prüfen."
+   }
+  },
+  {
+   "id": "ct-LT-26",
+   "category": "nature",
+   "text": {
+    "en": "Forests are loved in Lithuania, and many people enjoy picking mushrooms and berries. If you join in, ask locals which areas and species are fine to pick.",
+    "it": "In Lituania i boschi sono molto amati e a molti piace raccogliere funghi e frutti di bosco. Se ti unisci, chiedi ai locali quali zone e specie si possono raccogliere.",
+    "es": "En Lituania se aman los bosques y a mucha gente le gusta recoger setas y bayas. Si te unes, pregunta a los lugareños qué zonas y especies se pueden recoger.",
+    "pt": "Os lituanos adoram as florestas e muita gente gosta de apanhar cogumelos e frutos silvestres. Se te juntares, pergunta aos locais que zonas e espécies se podem apanhar.",
+    "pt_BR": "Os lituanos adoram as florestas e muita gente gosta de colher cogumelos e frutas silvestres. Se for junto, pergunte aos locais quais áreas e espécies podem ser colhidas.",
+    "fr": "Les Lituaniens adorent leurs forêts et beaucoup aiment cueillir champignons et baies. Si vous vous joignez à eux, demandez aux habitants quelles zones et espèces peuvent être cueillies.",
+    "de": "Wälder sind in Litauen sehr beliebt, und viele sammeln gern Pilze und Beeren. Wenn du mitmachst, frage Einheimische, wo und welche Arten man sammeln darf."
+   }
+  },
+  {
+   "id": "ct-LT-27",
+   "category": "safety",
+   "text": {
+    "en": "Lithuania is generally safe for visitors. Use normal city precautions with valuables, and call 112 for any emergency.",
+    "it": "La Lituania è in genere sicura per i visitatori. Usa le normali precauzioni cittadine con gli oggetti di valore e chiama il 112 per qualsiasi emergenza.",
+    "es": "Lituania es en general segura para los visitantes. Toma las precauciones habituales de ciudad con tus objetos de valor y llama al 112 en caso de emergencia.",
+    "pt": "A Lituânia é geralmente segura para os visitantes. Toma as precauções normais de cidade com os objetos de valor e liga para o 112 em caso de emergência.",
+    "pt_BR": "A Lituânia é geralmente segura para os visitantes. Tome as precauções normais de cidade com objetos de valor e ligue para o 112 em caso de emergência.",
+    "fr": "La Lituanie est généralement sûre pour les visiteurs. Prenez les précautions urbaines habituelles avec vos objets de valeur et appelez le 112 en cas d'urgence.",
+    "de": "Litauen gilt für Besucher als sicher. Triff die üblichen Vorsichtsmaßnahmen mit Wertsachen und wähle in Notfällen die 112."
+   }
+  },
+  {
+   "id": "ct-LT-28",
+   "category": "local_pride",
+   "text": {
+    "en": "Lithuanian song festivals and multipart folk songs are recognised by UNESCO. Showing interest in the singing tradition is a great way to connect with locals.",
+    "it": "Le feste del canto lituane e i canti popolari polifonici sono riconosciuti dall'UNESCO. Mostrare interesse per la tradizione canora è un ottimo modo per entrare in sintonia con la gente del posto.",
+    "es": "Los festivales de canto lituanos y las canciones populares polifónicas están reconocidos por la UNESCO. Mostrar interés por la tradición del canto es una gran forma de conectar con la gente local.",
+    "pt": "Os festivais de canto lituanos e as canções populares polifónicas são reconhecidos pela UNESCO. Mostrar interesse pela tradição do canto é uma ótima forma de criar laços com os locais.",
+    "pt_BR": "Os festivais de canto lituanos e as canções populares polifônicas são reconhecidos pela UNESCO. Mostrar interesse pela tradição do canto é uma ótima forma de se aproximar dos locais.",
+    "fr": "Les fêtes du chant lituaniennes et les chants populaires polyphoniques sont reconnus par l'UNESCO. S'intéresser à la tradition du chant est un excellent moyen de créer des liens avec les habitants.",
+    "de": "Litauische Sängerfeste und mehrstimmige Volkslieder sind von der UNESCO anerkannt. Interesse an der Gesangstradition ist ein schöner Weg, mit Einheimischen ins Gespräch zu kommen."
+   }
+  },
+  {
+   "id": "ct-LT-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Basketball is a national passion in Lithuania. Asking about a favourite team such as Žalgiris is an easy way to start a friendly conversation.",
+    "it": "Il basket è una passione nazionale in Lituania. Chiedere della squadra del cuore, come lo Žalgiris, è un modo facile per iniziare una conversazione amichevole.",
+    "es": "El baloncesto es una pasión nacional en Lituania. Preguntar por el equipo favorito, como el Žalgiris, es una manera fácil de empezar una conversación amistosa.",
+    "pt": "O basquetebol é uma paixão nacional na Lituânia. Perguntar pela equipa favorita, como o Žalgiris, é uma forma fácil de começar uma conversa amigável.",
+    "pt_BR": "O basquete é uma paixão nacional na Lituânia. Perguntar pelo time favorito, como o Žalgiris, é um jeito fácil de começar uma conversa amigável.",
+    "fr": "Le basket-ball est une passion nationale en Lituanie. Demander quelle équipe on soutient, comme le Žalgiris, est un moyen facile d'engager une conversation amicale.",
+    "de": "Basketball ist in Litauen eine Nationalleidenschaft. Die Frage nach dem Lieblingsteam, etwa Žalgiris, ist ein einfacher Gesprächseinstieg."
+   }
+  },
+  {
+   "id": "ct-LT-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Amber from the Baltic coast is a source of pride, and the Palanga Amber Museum is a popular visit. Amber jewellery makes a typical keepsake.",
+    "it": "L'ambra della costa baltica è motivo di orgoglio, e il Museo dell'Ambra di Palanga è una visita molto popolare. I gioielli d'ambra sono un souvenir tipico.",
+    "es": "El ámbar de la costa báltica es motivo de orgullo, y el Museo del Ámbar de Palanga es una visita muy popular. Las joyas de ámbar son un recuerdo típico.",
+    "pt": "O âmbar da costa báltica é motivo de orgulho, e o Museu do Âmbar de Palanga é uma visita muito popular. As joias de âmbar são uma recordação típica.",
+    "pt_BR": "O âmbar da costa báltica é motivo de orgulho, e o Museu do Âmbar de Palanga é uma visita muito popular. As joias de âmbar são uma lembrança típica.",
+    "fr": "L'ambre de la côte balte est une fierté, et le musée de l'Ambre de Palanga est une visite très prisée. Les bijoux en ambre font un souvenir typique.",
+    "de": "Bernstein von der baltischen Küste ist ein Quell des Stolzes, und das Bernsteinmuseum in Palanga ist ein beliebtes Ausflugsziel. Bernsteinschmuck ist ein typisches Souvenir."
+   }
+  }
+ ],
+ "LU": [
+  {
+   "id": "ct-LU-01",
+   "category": "greetings",
+   "text": {
+    "en": "A handshake is the standard greeting, and it is polite to greet everyone in a small group when you arrive and say goodbye to them when you leave.",
+    "it": "La stretta di mano è il saluto standard, ed è cortese salutare tutti in un piccolo gruppo quando si arriva e congedarsi da ciascuno quando si va via.",
+    "es": "El apretón de manos es el saludo habitual, y es cortés saludar a todos en un grupo pequeño al llegar y despedirse de cada uno al irse.",
+    "pt": "O aperto de mão é o cumprimento habitual, e é educado cumprimentar todos num grupo pequeno à chegada e despedir-se de cada um à saída.",
+    "pt_BR": "O aperto de mão é o cumprimento habitual, e é educado cumprimentar todo mundo em um grupo pequeno na chegada e se despedir de cada um na saída.",
+    "fr": "La poignée de main est le salut habituel, et il est poli de saluer tout le monde dans un petit groupe à l'arrivée et de dire au revoir à chacun en partant.",
+    "de": "Der Händedruck ist die übliche Begrüßung, und in einer kleinen Runde ist es höflich, alle bei der Ankunft zu begrüßen und sich beim Gehen von jedem zu verabschieden."
+   }
+  },
+  {
+   "id": "ct-LU-02",
+   "category": "greetings",
+   "text": {
+    "en": "Greeting shop staff when you walk in, with \"Moien\" or \"Bonjour\", and saying goodbye when you leave, is a basic courtesy.",
+    "it": "Salutare il personale di un negozio quando si entra, con \"Moien\" o \"Bonjour\", e congedarsi uscendo è una cortesia di base.",
+    "es": "Saludar al personal de una tienda al entrar, con \"Moien\" o \"Bonjour\", y despedirse al salir es una cortesía básica.",
+    "pt": "Cumprimentar o pessoal de uma loja ao entrar, com \"Moien\" ou \"Bonjour\", e despedir-se à saída é uma cortesia básica.",
+    "pt_BR": "Cumprimentar os atendentes de uma loja ao entrar, com \"Moien\" ou \"Bonjour\", e se despedir na saída é uma cortesia básica.",
+    "fr": "Saluer le personnel d'un magasin en entrant, avec \"Moien\" ou \"Bonjour\", et dire au revoir en sortant est une politesse de base.",
+    "de": "Das Personal eines Geschäfts beim Eintreten mit \"Moien\" oder \"Bonjour\" zu grüßen und sich beim Gehen zu verabschieden, gehört zur Grundhöflichkeit."
+   }
+  },
+  {
+   "id": "ct-LU-03",
+   "category": "conversation",
+   "text": {
+    "en": "Most people in Luxembourg speak Luxembourgish, French and German, so switching languages mid-conversation is normal. It is fine to ask which one they prefer.",
+    "it": "La maggior parte delle persone in Lussemburgo parla lussemburghese, francese e tedesco, quindi cambiare lingua durante la conversazione è normale. Si può chiedere quale preferiscono.",
+    "es": "La mayoría de las personas en Luxemburgo hablan luxemburgués, francés y alemán, así que cambiar de idioma en plena conversación es normal. Puedes preguntar cuál prefieren.",
+    "pt": "A maioria das pessoas no Luxemburgo fala luxemburguês, francês e alemão, por isso mudar de língua a meio da conversa é normal. Podes perguntar qual preferem.",
+    "pt_BR": "A maioria das pessoas em Luxemburgo fala luxemburguês, francês e alemão, então trocar de idioma no meio da conversa é normal. Você pode perguntar qual elas preferem.",
+    "fr": "La plupart des gens au Luxembourg parlent luxembourgeois, français et allemand, donc changer de langue en pleine conversation est normal. On peut demander laquelle ils préfèrent.",
+    "de": "Die meisten Menschen in Luxemburg sprechen Luxemburgisch, Französisch und Deutsch, daher ist ein Sprachwechsel mitten im Gespräch normal. Man kann ruhig fragen, welche Sprache sie bevorzugen."
+   }
+  },
+  {
+   "id": "ct-LU-04",
+   "category": "conversation",
+   "text": {
+    "en": "Luxembourgers tend to value privacy. Questions about salary or personal finances are best avoided, while travel, food and hiking are easy topics.",
+    "it": "I lussemburghesi tendono a tenere alla privacy. Meglio evitare domande su stipendio o finanze personali, mentre viaggi, cibo ed escursioni sono argomenti facili.",
+    "es": "Los luxemburgueses tienden a valorar la privacidad. Mejor evitar preguntas sobre el sueldo o las finanzas personales; los viajes, la comida y el senderismo son temas fáciles.",
+    "pt": "Os luxemburgueses tendem a valorizar a privacidade. É melhor evitar perguntas sobre salário ou finanças pessoais, enquanto viagens, comida e caminhadas são temas fáceis.",
+    "pt_BR": "Os luxemburgueses tendem a valorizar a privacidade. É melhor evitar perguntas sobre salário ou finanças pessoais, enquanto viagens, comida e trilhas são assuntos fáceis.",
+    "fr": "Les Luxembourgeois tiennent généralement à leur vie privée. Mieux vaut éviter les questions sur le salaire ou les finances personnelles ; voyages, cuisine et randonnée sont des sujets faciles.",
+    "de": "Luxemburger legen tendenziell Wert auf Privatsphäre. Fragen zu Gehalt oder Finanzen lässt man besser, während Reisen, Essen und Wandern unkomplizierte Themen sind."
+   }
+  },
+  {
+   "id": "ct-LU-05",
+   "category": "dining",
+   "text": {
+    "en": "Judd mat Gaardebounen, smoked pork neck with broad beans, is often called the national dish. It is usually served with boiled potatoes.",
+    "it": "Il Judd mat Gaardebounen, collo di maiale affumicato con fave, è spesso considerato il piatto nazionale. Di solito si serve con patate lesse.",
+    "es": "El Judd mat Gaardebounen, cuello de cerdo ahumado con habas, suele considerarse el plato nacional. Normalmente se sirve con patatas cocidas.",
+    "pt": "O Judd mat Gaardebounen, pescoço de porco fumado com favas, é muitas vezes considerado o prato nacional. Costuma servir-se com batatas cozidas.",
+    "pt_BR": "O Judd mat Gaardebounen, pescoço de porco defumado com favas, costuma ser considerado o prato nacional. Geralmente é servido com batatas cozidas.",
+    "fr": "Le Judd mat Gaardebounen, collier de porc fumé aux fèves, est souvent considéré comme le plat national. Il est généralement servi avec des pommes de terre bouillies.",
+    "de": "Judd mat Gaardebounen, geräucherter Schweinenacken mit dicken Bohnen, gilt oft als Nationalgericht. Meist wird er mit Salzkartoffeln serviert."
+   }
+  },
+  {
+   "id": "ct-LU-06",
+   "category": "dining",
+   "text": {
+    "en": "Gromperekichelcher, spiced fried potato pancakes with onion and parsley, are sold at fairs and roadside stands and are a tasty local snack to try.",
+    "it": "I Gromperekichelcher, frittelle di patate speziate con cipolla e prezzemolo, si vendono alle fiere e alle bancarelle lungo la strada e sono uno spuntino locale da provare.",
+    "es": "Los Gromperekichelcher, tortitas de patata fritas con especias, cebolla y perejil, se venden en ferias y puestos callejeros y son un tentempié local que merece la pena probar.",
+    "pt": "Os Gromperekichelcher, panquecas de batata fritas com especiarias, cebola e salsa, vendem-se em feiras e bancas à beira da estrada e são um petisco local que vale a pena provar.",
+    "pt_BR": "Os Gromperekichelcher, panquecas de batata fritas com temperos, cebola e salsinha, são vendidos em feiras e barracas de beira de estrada e são um lanche local que vale a pena provar.",
+    "fr": "Les Gromperekichelcher, galettes de pommes de terre frites, épicées, à l'oignon et au persil, se vendent dans les foires et sur les stands au bord des routes. Un en-cas local à goûter.",
+    "de": "Gromperekichelcher, gewürzte frittierte Kartoffelpuffer mit Zwiebeln und Petersilie, gibt es auf Jahrmärkten und an Imbissständen; ein leckerer lokaler Snack zum Probieren."
+   }
+  },
+  {
+   "id": "ct-LU-07",
+   "category": "dining",
+   "text": {
+    "en": "In September, small plum tarts made with Quetsch plums are a seasonal treat. Locals are happy to recommend their favourite bakery.",
+    "it": "A settembre le tortine di prugne Quetsch sono una delizia di stagione. La gente del posto consiglia volentieri la propria pasticceria preferita.",
+    "es": "En septiembre, las tartaletas de ciruelas Quetsch son un capricho de temporada. La gente local recomienda con gusto su pastelería favorita.",
+    "pt": "Em setembro, as tartes pequenas de ameixa Quetsch são uma delícia da estação. Os locais recomendam de bom grado a sua pastelaria preferida.",
+    "pt_BR": "Em setembro, as tortinhas de ameixa Quetsch são uma delícia da estação. Os moradores recomendam com prazer a sua confeitaria preferida.",
+    "fr": "En septembre, les petites tartes aux prunes Quetsch sont une gourmandise de saison. Les habitants recommandent volontiers leur pâtisserie préférée.",
+    "de": "Im September sind kleine Zwetschgenkuchen mit Quetsch-Pflaumen eine saisonale Spezialität. Einheimische empfehlen gern ihre Lieblingsbäckerei."
+   }
+  },
+  {
+   "id": "ct-LU-08",
+   "category": "tipping",
+   "text": {
+    "en": "Service is normally included in restaurant prices, so tipping is optional. Rounding up or leaving a few euros for good service is appreciated.",
+    "it": "Il servizio è di norma incluso nei prezzi dei ristoranti, quindi la mancia è facoltativa. Arrotondare o lasciare qualche euro per un buon servizio è apprezzato.",
+    "es": "El servicio normalmente está incluido en los precios de los restaurantes, así que la propina es opcional. Redondear o dejar unos euros por un buen servicio se agradece.",
+    "pt": "O serviço normalmente está incluído nos preços dos restaurantes, por isso a gorjeta é opcional. Arredondar ou deixar alguns euros por um bom serviço é apreciado.",
+    "pt_BR": "O serviço normalmente está incluído nos preços dos restaurantes, então a gorjeta é opcional. Arredondar ou deixar alguns euros por um bom atendimento é bem-vindo.",
+    "fr": "Le service est normalement inclus dans les prix au restaurant, donc le pourboire est facultatif. Arrondir ou laisser quelques euros pour un bon service est apprécié.",
+    "de": "Die Bedienung ist in Restaurants normalerweise im Preis enthalten, Trinkgeld ist also freiwillig. Aufrunden oder ein paar Euro für guten Service sind willkommen."
+   }
+  },
+  {
+   "id": "ct-LU-09",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to someone's home, a small gift such as flowers, chocolates or a good bottle for the table is welcome. Unwrap nothing until the host does.",
+    "it": "Quando si è invitati a casa di qualcuno, un piccolo regalo come fiori, cioccolatini o una buona bottiglia per la tavola è gradito. Non aprire nulla finché non lo fa chi ospita.",
+    "es": "Cuando te invitan a una casa, un pequeño detalle como flores, bombones o una buena botella para la mesa se agradece. No abras nada hasta que lo haga el anfitrión.",
+    "pt": "Quando és convidado para casa de alguém, uma pequena lembrança como flores, chocolates ou uma boa garrafa para a mesa é bem-vinda. Não abras nada antes de o anfitrião o fazer.",
+    "pt_BR": "Quando você é convidado para a casa de alguém, um pequeno presente como flores, chocolates ou uma boa garrafa para a mesa é bem-vindo. Não abra nada antes de o anfitrião abrir.",
+    "fr": "Quand on est invité chez quelqu'un, un petit cadeau comme des fleurs, des chocolats ou une bonne bouteille pour la table est bienvenu. N'ouvrez rien avant que l'hôte ne le fasse.",
+    "de": "Bei Einladungen sind ein kleines Mitbringsel wie Blumen, Pralinen oder eine gute Flasche für den Tisch willkommen. Packe nichts aus, bevor es die Gastgeber tun."
+   }
+  },
+  {
+   "id": "ct-LU-10",
+   "category": "dress",
+   "text": {
+    "en": "Luxembourg City is a business and finance hub, so smart casual clothing is common in the evening and at work. Neat, tidy dress is always a safe choice.",
+    "it": "Lussemburgo città è un polo d'affari e finanza, quindi di sera e al lavoro è comune l'abbigliamento smart casual. Un look curato è sempre una scelta sicura.",
+    "es": "La ciudad de Luxemburgo es un centro de negocios y finanzas, así que la ropa smart casual es habitual por la noche y en el trabajo. Ir arreglado siempre es una opción segura.",
+    "pt": "A cidade do Luxemburgo é um centro de negócios e finanças, por isso a roupa smart casual é comum à noite e no trabalho. Vestir-se de forma cuidada é sempre uma escolha segura.",
+    "pt_BR": "A cidade de Luxemburgo é um centro de negócios e finanças, então a roupa esporte fino é comum à noite e no trabalho. Vestir-se de forma cuidada é sempre uma escolha segura.",
+    "fr": "La ville de Luxembourg est un centre d'affaires et de finance, donc la tenue smart casual est courante le soir et au travail. Une tenue soignée est toujours un choix sûr.",
+    "de": "Luxemburg-Stadt ist ein Wirtschafts- und Finanzzentrum, daher ist Smart Casual abends und bei der Arbeit üblich. Gepflegte Kleidung ist immer eine sichere Wahl."
+   }
+  },
+  {
+   "id": "ct-LU-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Luxembourg has a Catholic heritage, and churches such as the Echternach Basilica welcome visitors outside services. Keep your voice low and dress modestly.",
+    "it": "Il Lussemburgo ha un'eredità cattolica, e chiese come la Basilica di Echternach accolgono i visitatori fuori dalle funzioni. Abbassa la voce e vesti in modo sobrio.",
+    "es": "Luxemburgo tiene una herencia católica, y iglesias como la basílica de Echternach reciben visitantes fuera de los oficios. Habla en voz baja y viste con sencillez.",
+    "pt": "O Luxemburgo tem uma herança católica, e igrejas como a Basílica de Echternach recebem visitantes fora das cerimónias. Fala baixo e veste-te com discrição.",
+    "pt_BR": "Luxemburgo tem uma herança católica, e igrejas como a Basílica de Echternach recebem visitantes fora dos cultos. Fale baixo e vista-se com discrição.",
+    "fr": "Le Luxembourg a un héritage catholique, et des églises comme la basilique d'Echternach accueillent les visiteurs hors des offices. Parlez bas et habillez-vous sobrement.",
+    "de": "Luxemburg hat ein katholisches Erbe, und Kirchen wie die Basilika von Echternach empfangen Besucher außerhalb der Gottesdienste. Sprich leise und kleide dich dezent."
+   }
+  },
+  {
+   "id": "ct-LU-12",
+   "category": "gestures",
+   "text": {
+    "en": "Luxembourgers are generally calm and reserved in gestures. Keeping a measured tone and avoiding loud, dramatic body language is the safest approach.",
+    "it": "I lussemburghesi sono in genere calmi e sobri nei gesti. Mantenere un tono misurato ed evitare un linguaggio del corpo rumoroso ed eccessivo è l'approccio più sicuro.",
+    "es": "Los luxemburgueses suelen ser tranquilos y reservados con los gestos. Mantener un tono moderado y evitar un lenguaje corporal ruidoso y dramático es lo más seguro.",
+    "pt": "Os luxemburgueses são geralmente calmos e reservados nos gestos. Manter um tom moderado e evitar linguagem corporal ruidosa e dramática é a abordagem mais segura.",
+    "pt_BR": "Os luxemburgueses costumam ser calmos e reservados nos gestos. Manter um tom moderado e evitar linguagem corporal barulhenta e dramática é a abordagem mais segura.",
+    "fr": "Les Luxembourgeois sont en général calmes et réservés dans leurs gestes. Garder un ton mesuré et éviter un langage corporel bruyant et théâtral est le plus sûr.",
+    "de": "Luxemburger sind in ihren Gesten meist ruhig und zurückhaltend. Ein maßvoller Ton und das Vermeiden lauter, dramatischer Körpersprache sind am sichersten."
+   }
+  },
+  {
+   "id": "ct-LU-13",
+   "category": "punctuality",
+   "text": {
+    "en": "Punctuality matters for work, appointments and dinners. If you will be late, it is polite to call or text to let people know.",
+    "it": "La puntualità conta per lavoro, appuntamenti e cene. Se farai tardi, è cortese chiamare o scrivere per avvisare.",
+    "es": "La puntualidad importa en el trabajo, las citas y las cenas. Si vas a llegar tarde, es cortés llamar o escribir para avisar.",
+    "pt": "A pontualidade conta no trabalho, em marcações e jantares. Se fores chegar atrasado, é educado ligar ou enviar mensagem para avisar.",
+    "pt_BR": "A pontualidade conta no trabalho, em compromissos e jantares. Se você vai se atrasar, é educado ligar ou mandar mensagem para avisar.",
+    "fr": "La ponctualité compte pour le travail, les rendez-vous et les dîners. Si vous êtes en retard, il est poli d'appeler ou d'envoyer un message.",
+    "de": "Pünktlichkeit zählt bei Arbeit, Terminen und Abendessen. Wer sich verspätet, ruft höflicherweise an oder schreibt kurz."
+   }
+  },
+  {
+   "id": "ct-LU-14",
+   "category": "public_behavior",
+   "text": {
+    "en": "Public spaces are clean and orderly, and waste sorting is taken seriously. Queue patiently and keep voices down on buses, trams and trains.",
+    "it": "Gli spazi pubblici sono puliti e ordinati, e la raccolta differenziata è presa sul serio. Fai la fila con pazienza e abbassa la voce su autobus, tram e treni.",
+    "es": "Los espacios públicos están limpios y ordenados, y la separación de residuos se toma en serio. Haz cola con paciencia y baja la voz en autobuses, tranvías y trenes.",
+    "pt": "Os espaços públicos são limpos e ordenados, e a separação de resíduos é levada a sério. Espera na fila com paciência e fala baixo em autocarros, elétricos e comboios.",
+    "pt_BR": "Os espaços públicos são limpos e organizados, e a separação do lixo é levada a sério. Espere na fila com paciência e fale baixo em ônibus, bondes e trens.",
+    "fr": "Les espaces publics sont propres et ordonnés, et le tri des déchets est pris au sérieux. Faites la queue patiemment et parlez bas dans les bus, trams et trains.",
+    "de": "Öffentliche Räume sind sauber und geordnet, und Mülltrennung wird ernst genommen. Stelle dich geduldig an und sprich in Bussen, Straßenbahnen und Zügen leise."
+   }
+  },
+  {
+   "id": "ct-LU-15",
+   "category": "transport",
+   "text": {
+    "en": "Public transport (trains, trams and buses) has been free across the country since March 2020, though first class on trains is paid. Cross-border commuters use it a lot.",
+    "it": "I trasporti pubblici (treni, tram e autobus) sono gratuiti in tutto il paese da marzo 2020, anche se la prima classe sui treni è a pagamento. I pendolari transfrontalieri li usano molto.",
+    "es": "El transporte público (trenes, tranvías y autobuses) es gratuito en todo el país desde marzo de 2020, aunque la primera clase en los trenes es de pago. Lo usan mucho los trabajadores transfronterizos.",
+    "pt": "Os transportes públicos (comboios, elétricos e autocarros) são gratuitos em todo o país desde março de 2020, embora a primeira classe nos comboios seja paga. Os trabalhadores transfronteiriços usam-nos muito.",
+    "pt_BR": "O transporte público (trens, bondes e ônibus) é gratuito em todo o país desde março de 2020, embora a primeira classe nos trens seja paga. Os trabalhadores transfronteiriços o usam bastante.",
+    "fr": "Les transports publics (trains, trams et bus) sont gratuits dans tout le pays depuis mars 2020, sauf la première classe dans les trains. Les frontaliers les utilisent beaucoup.",
+    "de": "Der öffentliche Nahverkehr (Züge, Straßenbahnen und Busse) ist seit März 2020 im ganzen Land kostenlos, nur die erste Klasse im Zug kostet. Grenzpendler nutzen ihn viel."
+   }
+  },
+  {
+   "id": "ct-LU-16",
+   "category": "language",
+   "text": {
+    "en": "Luxembourgish is a Germanic language. Trying a few words such as \"Moien\" (hello), \"Merci\" (thank you) and \"Äddi\" (goodbye) is always appreciated.",
+    "it": "Il lussemburghese è una lingua germanica. Provare qualche parola come \"Moien\" (ciao), \"Merci\" (grazie) e \"Äddi\" (arrivederci) è sempre apprezzato.",
+    "es": "El luxemburgués es una lengua germánica. Intentar unas palabras como \"Moien\" (hola), \"Merci\" (gracias) y \"Äddi\" (adiós) siempre se agradece.",
+    "pt": "O luxemburguês é uma língua germânica. Tentar algumas palavras como \"Moien\" (olá), \"Merci\" (obrigado) e \"Äddi\" (adeus) é sempre apreciado.",
+    "pt_BR": "O luxemburguês é uma língua germânica. Tentar algumas palavras como \"Moien\" (oi), \"Merci\" (obrigado) e \"Äddi\" (tchau) é sempre apreciado.",
+    "fr": "Le luxembourgeois est une langue germanique. Essayer quelques mots comme \"Moien\" (bonjour), \"Merci\" et \"Äddi\" (au revoir) est toujours apprécié.",
+    "de": "Luxemburgisch ist eine germanische Sprache. Ein paar Wörter wie \"Moien\" (Hallo), \"Merci\" (Danke) und \"Äddi\" (Tschüss) auszuprobieren kommt immer gut an."
+   }
+  },
+  {
+   "id": "ct-LU-17",
+   "category": "festivals",
+   "text": {
+    "en": "On 23 June, National Day celebrates the Grand Duke's official birthday with fireworks, concerts and events across the country.",
+    "it": "Il 23 giugno la Festa nazionale celebra il compleanno ufficiale del Granduca con fuochi d'artificio, concerti ed eventi in tutto il paese.",
+    "es": "El 23 de junio, el Día Nacional celebra el cumpleaños oficial del Gran Duque con fuegos artificiales, conciertos y eventos por todo el país.",
+    "pt": "A 23 de junho, o Dia Nacional celebra o aniversário oficial do Grão-Duque com fogos de artifício, concertos e eventos em todo o país.",
+    "pt_BR": "Em 23 de junho, o Dia Nacional celebra o aniversário oficial do Grão-Duque com fogos de artifício, shows e eventos em todo o país.",
+    "fr": "Le 23 juin, la Fête nationale célèbre l'anniversaire officiel du Grand-Duc avec feux d'artifice, concerts et événements dans tout le pays.",
+    "de": "Am 23. Juni feiert der Nationalfeiertag den offiziellen Geburtstag des Großherzogs mit Feuerwerk, Konzerten und Veranstaltungen im ganzen Land."
+   }
+  },
+  {
+   "id": "ct-LU-18",
+   "category": "festivals",
+   "text": {
+    "en": "The dancing procession of Echternach, held each year on Whit Tuesday, is on UNESCO's intangible heritage list. Dancers hop through the town streets.",
+    "it": "La processione danzante di Echternach, che si tiene ogni anno il martedì di Pentecoste, è nella lista UNESCO del patrimonio immateriale. I danzatori saltellano per le vie della città.",
+    "es": "La procesión danzante de Echternach, que se celebra cada año el martes de Pentecostés, figura en la lista de patrimonio inmaterial de la UNESCO. Los bailarines avanzan a saltitos por las calles.",
+    "pt": "A procissão dançante de Echternach, realizada todos os anos na terça-feira de Pentecostes, consta da lista do património imaterial da UNESCO. Os dançarinos avançam aos saltos pelas ruas da cidade.",
+    "pt_BR": "A procissão dançante de Echternach, realizada todos os anos na terça-feira de Pentecostes, consta da lista de patrimônio imaterial da UNESCO. Os dançarinos avançam aos pulinhos pelas ruas da cidade.",
+    "fr": "La procession dansante d'Echternach, organisée chaque année le mardi de la Pentecôte, figure sur la liste du patrimoine immatériel de l'UNESCO. Les danseurs sautillent dans les rues de la ville.",
+    "de": "Die Echternacher Springprozession, die jedes Jahr am Pfingstdienstag stattfindet, steht auf der UNESCO-Liste des immateriellen Kulturerbes. Die Tänzer hüpfen durch die Straßen der Stadt."
+   }
+  },
+  {
+   "id": "ct-LU-19",
+   "category": "festivals",
+   "text": {
+    "en": "The Schueberfouer, a big funfair held in Luxembourg City from late August into September, is a long-running tradition where families eat, ride and meet friends.",
+    "it": "La Schueberfouer, un grande luna park che si tiene a Lussemburgo città da fine agosto a settembre, è una tradizione antica in cui le famiglie mangiano, si divertono e incontrano gli amici.",
+    "es": "La Schueberfouer, una gran feria que se celebra en la ciudad de Luxemburgo desde finales de agosto hasta septiembre, es una tradición de larga data donde las familias comen, se divierten y quedan con amigos.",
+    "pt": "A Schueberfouer, uma grande feira popular realizada na cidade do Luxemburgo do fim de agosto a setembro, é uma tradição antiga onde as famílias comem, se divertem e encontram amigos.",
+    "pt_BR": "A Schueberfouer, uma grande feira popular realizada na cidade de Luxemburgo do fim de agosto a setembro, é uma tradição antiga em que as famílias comem, se divertem e encontram os amigos.",
+    "fr": "La Schueberfouer, grande fête foraine organisée à Luxembourg-Ville de fin août à septembre, est une tradition ancienne où les familles mangent, s'amusent et retrouvent leurs amis.",
+    "de": "Die Schueberfouer, ein großer Jahrmarkt in Luxemburg-Stadt von Ende August bis in den September, ist eine alte Tradition, bei der Familien essen, Karussell fahren und Freunde treffen."
+   }
+  },
+  {
+   "id": "ct-LU-20",
+   "category": "festivals",
+   "text": {
+    "en": "On Easter Monday, the Emaischen market in Luxembourg City sells the Péckvillercher, small colourful clay bird whistles. They make a charming local souvenir.",
+    "it": "Il lunedì di Pasquetta il mercato Emaischen a Lussemburgo città vende i Péckvillercher, piccoli fischietti di argilla a forma di uccellino. Sono un simpatico souvenir locale.",
+    "es": "El Lunes de Pascua, el mercado Emaischen de la ciudad de Luxemburgo vende los Péckvillercher, pequeños silbatos de arcilla en forma de pájaro. Son un encantador recuerdo local.",
+    "pt": "Na segunda-feira de Páscoa, o mercado Emaischen na cidade do Luxemburgo vende os Péckvillercher, pequenos apitos de barro em forma de pássaro. São uma lembrança local encantadora.",
+    "pt_BR": "Na segunda-feira de Páscoa, o mercado Emaischen na cidade de Luxemburgo vende os Péckvillercher, pequenos apitos de barro em forma de passarinho. São uma lembrança local encantadora.",
+    "fr": "Le lundi de Pâques, le marché Emaischen de Luxembourg-Ville vend les Péckvillercher, de petits sifflets en argile en forme d'oiseau. Un charmant souvenir local.",
+    "de": "Am Ostermontag verkauft der Emaischen-Markt in Luxemburg-Stadt die Péckvillercher, kleine Tonpfeifen in Vogelform. Sie sind ein charmantes lokales Souvenir."
+   }
+  },
+  {
+   "id": "ct-LU-21",
+   "category": "family",
+   "text": {
+    "en": "Family time matters, and many families still enjoy long Sunday lunches together. Luxembourg is also very international, with many families of Portuguese, Italian and other origins.",
+    "it": "Il tempo in famiglia conta, e molte famiglie amano ancora i lunghi pranzi domenicali. Il Lussemburgo è anche molto internazionale, con molte famiglie di origine portoghese, italiana e altre.",
+    "es": "El tiempo en familia importa, y muchas familias siguen disfrutando de largas comidas dominicales. Luxemburgo también es muy internacional, con muchas familias de origen portugués, italiano y otros.",
+    "pt": "O tempo em família é importante, e muitas famílias ainda apreciam os longos almoços de domingo. O Luxemburgo é também muito internacional, com muitas famílias de origem portuguesa, italiana e outras.",
+    "pt_BR": "O tempo em família é importante, e muitas famílias ainda curtem longos almoços de domingo. Luxemburgo também é muito internacional, com muitas famílias de origem portuguesa, italiana e outras.",
+    "fr": "Le temps en famille compte, et beaucoup de familles apprécient encore les longs déjeuners du dimanche. Le Luxembourg est aussi très international, avec de nombreuses familles d'origine portugaise, italienne et autres.",
+    "de": "Familienzeit ist wichtig, und viele Familien genießen noch lange Sonntagsessen. Luxemburg ist zudem sehr international, mit vielen Familien portugiesischer, italienischer und anderer Herkunft."
+   }
+  },
+  {
+   "id": "ct-LU-22",
+   "category": "money",
+   "text": {
+    "en": "Luxembourg uses the euro, and cards and contactless payments are accepted almost everywhere. Prices can be higher than in neighbouring countries.",
+    "it": "Il Lussemburgo usa l'euro, e carte e pagamenti contactless sono accettati quasi ovunque. I prezzi possono essere più alti che nei paesi vicini.",
+    "es": "Luxemburgo usa el euro, y las tarjetas y los pagos sin contacto se aceptan casi en todas partes. Los precios pueden ser más altos que en los países vecinos.",
+    "pt": "O Luxemburgo usa o euro, e cartões e pagamentos por aproximação são aceites quase em todo o lado. Os preços podem ser mais altos do que nos países vizinhos.",
+    "pt_BR": "Luxemburgo usa o euro, e cartões e pagamentos por aproximação são aceitos quase em todo lugar. Os preços podem ser mais altos do que nos países vizinhos.",
+    "fr": "Le Luxembourg utilise l'euro, et les cartes et le paiement sans contact sont acceptés presque partout. Les prix peuvent être plus élevés que dans les pays voisins.",
+    "de": "Luxemburg nutzt den Euro, und Karten sowie kontaktloses Bezahlen werden fast überall akzeptiert. Die Preise können höher sein als in den Nachbarländern."
+   }
+  },
+  {
+   "id": "ct-LU-23",
+   "category": "photography",
+   "text": {
+    "en": "The Bock Casemates and the old fortifications of Luxembourg City offer famous views to photograph. As elsewhere, ask before taking close-up photos of people.",
+    "it": "Le Casematte del Bock e le antiche fortificazioni di Lussemburgo città offrono panorami famosi da fotografare. Come altrove, chiedi prima di fare foto ravvicinate alle persone.",
+    "es": "Las Casamatas del Bock y las antiguas fortificaciones de la ciudad de Luxemburgo ofrecen vistas famosas para fotografiar. Como en otros sitios, pregunta antes de hacer fotos de cerca a las personas.",
+    "pt": "As Casamatas do Bock e as antigas fortificações da cidade do Luxemburgo oferecem vistas famosas para fotografar. Como noutros sítios, pergunta antes de tirar fotografias de perto a pessoas.",
+    "pt_BR": "As Casamatas do Bock e as antigas fortificações da cidade de Luxemburgo oferecem vistas famosas para fotografar. Como em qualquer lugar, pergunte antes de tirar fotos de perto de pessoas.",
+    "fr": "Les casemates du Bock et les anciennes fortifications de Luxembourg-Ville offrent des vues célèbres à photographier. Comme ailleurs, demandez avant de prendre des gros plans de personnes.",
+    "de": "Die Bock-Kasematten und die alten Befestigungen von Luxemburg-Stadt bieten berühmte Fotomotive. Wie überall gilt: Frage, bevor du Menschen aus der Nähe fotografierst."
+   }
+  },
+  {
+   "id": "ct-LU-24",
+   "category": "nightlife",
+   "text": {
+    "en": "Evening life in Luxembourg City is centred on spots like the Grund and Clausen districts, with cafés, bars and live music. Carry an ID, since venues may check your age.",
+    "it": "La vita serale a Lussemburgo città si concentra in zone come i quartieri Grund e Clausen, con caffè, bar e musica dal vivo. Porta un documento, perché i locali possono controllare l'età.",
+    "es": "La vida nocturna de la ciudad de Luxemburgo se concentra en zonas como los barrios de Grund y Clausen, con cafés, bares y música en directo. Lleva un documento, porque los locales pueden comprobar la edad.",
+    "pt": "A vida noturna na cidade do Luxemburgo concentra-se em zonas como os bairros de Grund e Clausen, com cafés, bares e música ao vivo. Leva um documento, porque os locais podem verificar a idade.",
+    "pt_BR": "A vida noturna na cidade de Luxemburgo se concentra em áreas como os bairros de Grund e Clausen, com cafés, bares e música ao vivo. Leve um documento, porque os locais podem conferir a idade.",
+    "fr": "La vie nocturne à Luxembourg-Ville se concentre dans des quartiers comme le Grund et Clausen, avec cafés, bars et musique live. Gardez une pièce d'identité, car les établissements peuvent vérifier l'âge.",
+    "de": "Das Abendleben in Luxemburg-Stadt konzentriert sich auf Viertel wie Grund und Clausen mit Cafés, Bars und Livemusik. Habe einen Ausweis dabei, denn Lokale können das Alter prüfen."
+   }
+  },
+  {
+   "id": "ct-LU-25",
+   "category": "nature",
+   "text": {
+    "en": "The Mullerthal region, nicknamed Little Switzerland, is known for forests, rocky gorges and marked hiking trails. Stay on the paths and take your litter with you.",
+    "it": "La regione del Mullerthal, soprannominata Piccola Svizzera, è nota per boschi, gole rocciose e sentieri escursionistici segnalati. Resta sui sentieri e porta via i rifiuti.",
+    "es": "La región de Mullerthal, apodada la Pequeña Suiza, es conocida por sus bosques, desfiladeros rocosos y senderos señalizados. Mantente en los caminos y llévate tu basura.",
+    "pt": "A região de Mullerthal, apelidada de Pequena Suíça, é conhecida pelas florestas, gargantas rochosas e trilhos sinalizados. Fica nos caminhos e leva o lixo contigo.",
+    "pt_BR": "A região de Mullerthal, apelidada de Pequena Suíça, é conhecida por florestas, desfiladeiros rochosos e trilhas sinalizadas. Fique nos caminhos e leve seu lixo com você.",
+    "fr": "La région du Mullerthal, surnommée la Petite Suisse, est connue pour ses forêts, ses gorges rocheuses et ses sentiers balisés. Restez sur les chemins et emportez vos déchets.",
+    "de": "Die Region Mullerthal, auch Kleine Luxemburger Schweiz genannt, ist für Wälder, felsige Schluchten und markierte Wanderwege bekannt. Bleibe auf den Wegen und nimm deinen Müll mit."
+   }
+  },
+  {
+   "id": "ct-LU-26",
+   "category": "safety",
+   "text": {
+    "en": "Luxembourg is among the safer countries for visitors. Normal city precautions apply, for example with phones and bags at stations, and 112 is the emergency number.",
+    "it": "Il Lussemburgo è tra i paesi più sicuri per i visitatori. Valgono le normali precauzioni cittadine, ad esempio con telefoni e borse nelle stazioni, e il 112 è il numero di emergenza.",
+    "es": "Luxemburgo es uno de los países más seguros para los visitantes. Se aplican las precauciones normales de ciudad, por ejemplo con móviles y bolsos en las estaciones, y el 112 es el número de emergencias.",
+    "pt": "O Luxemburgo está entre os países mais seguros para os visitantes. Aplicam-se as precauções normais de cidade, por exemplo com telemóveis e malas nas estações, e o 112 é o número de emergência.",
+    "pt_BR": "Luxemburgo está entre os países mais seguros para os visitantes. Valem as precauções normais de cidade, por exemplo com celulares e bolsas nas estações, e o 112 é o número de emergência.",
+    "fr": "Le Luxembourg compte parmi les pays les plus sûrs pour les visiteurs. Les précautions urbaines habituelles s'appliquent, par exemple avec téléphones et sacs dans les gares, et le 112 est le numéro d'urgence.",
+    "de": "Luxemburg gehört zu den sichereren Ländern für Besucher. Es gelten die üblichen Vorsichtsmaßnahmen, etwa mit Handys und Taschen an Bahnhöfen; die Notrufnummer ist 112."
+   }
+  },
+  {
+   "id": "ct-LU-27",
+   "category": "local_pride",
+   "text": {
+    "en": "The national motto, \"Mir wëlle bleiwe wat mir sinn\" (we want to remain what we are), reflects pride in the country's identity and language.",
+    "it": "Il motto nazionale, \"Mir wëlle bleiwe wat mir sinn\" (vogliamo restare ciò che siamo), riflette l'orgoglio per l'identità e la lingua del paese.",
+    "es": "El lema nacional, \"Mir wëlle bleiwe wat mir sinn\" (queremos seguir siendo lo que somos), refleja el orgullo por la identidad y la lengua del país.",
+    "pt": "O lema nacional, \"Mir wëlle bleiwe wat mir sinn\" (queremos continuar a ser o que somos), reflete o orgulho na identidade e na língua do país.",
+    "pt_BR": "O lema nacional, \"Mir wëlle bleiwe wat mir sinn\" (queremos continuar sendo o que somos), reflete o orgulho pela identidade e pela língua do país.",
+    "fr": "La devise nationale, \"Mir wëlle bleiwe wat mir sinn\" (nous voulons rester ce que nous sommes), reflète la fierté pour l'identité et la langue du pays.",
+    "de": "Das Nationalmotto \"Mir wëlle bleiwe wat mir sinn\" (Wir wollen bleiben, was wir sind) spiegelt den Stolz auf die Identität und Sprache des Landes wider."
+   }
+  },
+  {
+   "id": "ct-LU-28",
+   "category": "local_pride",
+   "text": {
+    "en": "Locals are proud of their castles, such as Vianden Castle, and of the old fortress heritage of Luxembourg City. Showing interest in the history is a good way to chat.",
+    "it": "La gente del posto è orgogliosa dei propri castelli, come quello di Vianden, e dell'antico patrimonio di fortezze di Lussemburgo città. Mostrare interesse per la storia è un buon modo per chiacchierare.",
+    "es": "La gente local está orgullosa de sus castillos, como el de Vianden, y del antiguo patrimonio de fortalezas de la ciudad de Luxemburgo. Mostrar interés por la historia es una buena forma de charlar.",
+    "pt": "Os locais têm orgulho dos seus castelos, como o de Vianden, e do antigo património de fortalezas da cidade do Luxemburgo. Mostrar interesse pela história é uma boa forma de conversar.",
+    "pt_BR": "Os moradores têm orgulho dos seus castelos, como o de Vianden, e do antigo patrimônio de fortalezas da cidade de Luxemburgo. Mostrar interesse pela história é uma boa forma de conversar.",
+    "fr": "Les habitants sont fiers de leurs châteaux, comme celui de Vianden, et de l'ancien patrimoine de forteresses de Luxembourg-Ville. S'intéresser à l'histoire est une bonne façon de discuter.",
+    "de": "Die Einheimischen sind stolz auf ihre Burgen, etwa Schloss Vianden, und auf das alte Festungserbe von Luxemburg-Stadt. Interesse an der Geschichte ist ein guter Gesprächseinstieg."
+   }
+  },
+  {
+   "id": "ct-LU-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Luxembourg was a founding participant of the Eurovision Song Contest, and music is a big part of local life, with hundreds of choirs, bands and music societies.",
+    "it": "Il Lussemburgo è stato tra i paesi fondatori dell'Eurovision Song Contest, e la musica è parte importante della vita locale, con centinaia di cori, bande e società musicali.",
+    "es": "Luxemburgo fue uno de los participantes fundadores del Festival de Eurovisión, y la música es una parte importante de la vida local, con cientos de coros, bandas y sociedades musicales.",
+    "pt": "O Luxemburgo foi um dos participantes fundadores do Festival Eurovisão da Canção, e a música é uma parte importante da vida local, com centenas de coros, bandas e sociedades musicais.",
+    "pt_BR": "Luxemburgo foi um dos participantes fundadores do Festival Eurovisão da Canção, e a música é uma parte importante da vida local, com centenas de coros, bandas e sociedades musicais.",
+    "fr": "Le Luxembourg a été l'un des participants fondateurs du Concours Eurovision de la chanson, et la musique occupe une grande place dans la vie locale, avec des centaines de chorales, fanfares et sociétés musicales.",
+    "de": "Luxemburg gehörte zu den Gründungsteilnehmern des Eurovision Song Contests, und Musik spielt im Alltag eine große Rolle, mit Hunderten von Chören, Kapellen und Musikvereinen."
+   }
+  },
+  {
+   "id": "ct-LU-30",
+   "category": "dining",
+   "text": {
+    "en": "Kachkéis, a soft cooked cheese spread, is a traditional Luxembourg specialty often served on bread. Bouneschlupp, a green bean soup, is another local classic.",
+    "it": "Il Kachkéis, un formaggio cotto spalmabile, è una specialità tradizionale lussemburghese, spesso servita sul pane. Il Bouneschlupp, una zuppa di fagiolini, è un altro classico locale.",
+    "es": "El Kachkéis, un queso cocido untable, es una especialidad tradicional de Luxemburgo que suele servirse sobre pan. El Bouneschlupp, una sopa de judías verdes, es otro clásico local.",
+    "pt": "O Kachkéis, um queijo cozido de barrar, é uma especialidade tradicional do Luxemburgo, muitas vezes servida em pão. O Bouneschlupp, uma sopa de feijão-verde, é outro clássico local.",
+    "pt_BR": "O Kachkéis, um queijo cozido de passar, é uma especialidade tradicional de Luxemburgo, muitas vezes servida no pão. O Bouneschlupp, uma sopa de vagem, é outro clássico local.",
+    "fr": "Le Kachkéis, un fromage cuit à tartiner, est une spécialité traditionnelle luxembourgeoise souvent servie sur du pain. Le Bouneschlupp, une soupe de haricots verts, est un autre classique local.",
+    "de": "Kachkéis, ein weicher Kochkäse zum Streichen, ist eine traditionelle luxemburgische Spezialität, oft auf Brot. Bouneschlupp, eine Suppe aus grünen Bohnen, ist ein weiterer lokaler Klassiker."
+   }
+  }
+ ],
+ "LV": [
+  {
+   "id": "ct-LV-01",
+   "category": "greetings",
+   "text": {
+    "en": "A firm handshake with eye contact is the usual greeting. \"Sveiki\" is a friendly hello that works with almost anyone.",
+    "it": "Una stretta di mano decisa con contatto visivo è il saluto abituale. \"Sveiki\" è un saluto cordiale che va bene con quasi tutti.",
+    "es": "Un apretón de manos firme con contacto visual es el saludo habitual. \"Sveiki\" es un saludo amistoso que sirve con casi cualquiera.",
+    "pt": "Um aperto de mão firme com contacto visual é o cumprimento habitual. \"Sveiki\" é um olá simpático que serve com quase toda a gente.",
+    "pt_BR": "Um aperto de mão firme com contato visual é o cumprimento habitual. \"Sveiki\" é um oi simpático que serve com quase todo mundo.",
+    "fr": "Une poignée de main ferme en regardant l'autre dans les yeux est le salut habituel. \"Sveiki\" est un bonjour amical qui convient à presque tout le monde.",
+    "de": "Ein fester Händedruck mit Blickkontakt ist die übliche Begrüßung. \"Sveiki\" ist ein freundliches Hallo, das fast immer passt."
+   }
+  },
+  {
+   "id": "ct-LV-02",
+   "category": "greetings",
+   "text": {
+    "en": "When you enter a shop, café or small office, a quick greeting such as \"Labdien\" (good day) is a normal courtesy, and a \"Paldies\" when leaving is appreciated.",
+    "it": "Quando si entra in un negozio, un caffè o un piccolo ufficio, un rapido saluto come \"Labdien\" (buongiorno) è una cortesia normale, e un \"Paldies\" all'uscita è gradito.",
+    "es": "Al entrar en una tienda, café o pequeña oficina, un saludo rápido como \"Labdien\" (buenos días) es una cortesía normal, y un \"Paldies\" al salir se agradece.",
+    "pt": "Ao entrar numa loja, café ou pequeno escritório, um cumprimento rápido como \"Labdien\" (bom dia) é uma cortesia normal, e um \"Paldies\" à saída é apreciado.",
+    "pt_BR": "Ao entrar em uma loja, café ou pequeno escritório, um cumprimento rápido como \"Labdien\" (bom dia) é uma cortesia normal, e um \"Paldies\" na saída é bem-vindo.",
+    "fr": "En entrant dans une boutique, un café ou un petit bureau, un bref salut comme \"Labdien\" (bonjour) est une politesse normale, et un \"Paldies\" en partant est apprécié.",
+    "de": "Beim Betreten eines Geschäfts, Cafés oder kleinen Büros ist ein kurzer Gruß wie \"Labdien\" (guten Tag) normale Höflichkeit, und ein \"Paldies\" beim Gehen kommt gut an."
+   }
+  },
+  {
+   "id": "ct-LV-03",
+   "category": "conversation",
+   "text": {
+    "en": "Latvians often value calm and personal space, and a little silence in conversation is comfortable rather than awkward. Give people time to answer.",
+    "it": "I lettoni spesso apprezzano la calma e lo spazio personale, e un po' di silenzio nella conversazione è tranquillo, non imbarazzante. Lascia alle persone il tempo di rispondere.",
+    "es": "Los letones suelen valorar la calma y el espacio personal, y un poco de silencio en la conversación resulta cómodo, no incómodo. Da tiempo a la gente para responder.",
+    "pt": "Os letões costumam valorizar a calma e o espaço pessoal, e algum silêncio na conversa é confortável, não constrangedor. Dá tempo às pessoas para responder.",
+    "pt_BR": "Os letões costumam valorizar a calma e o espaço pessoal, e um pouco de silêncio na conversa é confortável, não constrangedor. Dê tempo às pessoas para responder.",
+    "fr": "Les Lettons apprécient souvent le calme et l'espace personnel, et un peu de silence dans la conversation est agréable plutôt que gênant. Laissez aux gens le temps de répondre.",
+    "de": "Letten schätzen oft Ruhe und persönlichen Freiraum, und etwas Schweigen im Gespräch ist angenehm statt peinlich. Gib den Leuten Zeit zu antworten."
+   }
+  },
+  {
+   "id": "ct-LV-04",
+   "category": "conversation",
+   "text": {
+    "en": "Latvia is a Baltic country with its own language and history, distinct from Estonia, Lithuania and Russia. Many people like it when visitors show they know the difference.",
+    "it": "La Lettonia è un paese baltico con una lingua e una storia proprie, distinte da Estonia, Lituania e Russia. A molti fa piacere se i visitatori dimostrano di conoscere la differenza.",
+    "es": "Letonia es un país báltico con su propio idioma e historia, distintos de los de Estonia, Lituania y Rusia. A mucha gente le gusta que los visitantes demuestren conocer la diferencia.",
+    "pt": "A Letónia é um país báltico com língua e história próprias, distintas das da Estónia, da Lituânia e da Rússia. Muita gente gosta que os visitantes mostrem saber a diferença.",
+    "pt_BR": "A Letônia é um país báltico com língua e história próprias, distintas das da Estônia, da Lituânia e da Rússia. Muita gente gosta quando os visitantes mostram saber a diferença.",
+    "fr": "La Lettonie est un pays balte avec sa propre langue et son histoire, distinctes de celles de l'Estonie, de la Lituanie et de la Russie. Beaucoup aiment que les visiteurs montrent qu'ils connaissent la différence.",
+    "de": "Lettland ist ein baltisches Land mit eigener Sprache und Geschichte, die sich von Estland, Litauen und Russland unterscheiden. Vielen gefällt es, wenn Besucher den Unterschied kennen."
+   }
+  },
+  {
+   "id": "ct-LV-05",
+   "category": "conversation",
+   "text": {
+    "en": "Latvia has five historical regions: Vidzeme, Latgale, Kurzeme, Zemgale and Sēlija. Asking people which region they come from is a nice way to start talking.",
+    "it": "La Lettonia ha cinque regioni storiche: Vidzeme, Latgale, Kurzeme, Zemgale e Sēlija. Chiedere alle persone da quale regione vengono è un bel modo per iniziare a parlare.",
+    "es": "Letonia tiene cinco regiones históricas: Vidzeme, Latgale, Kurzeme, Zemgale y Sēlija. Preguntar a la gente de qué región es resulta una bonita forma de empezar a charlar.",
+    "pt": "A Letónia tem cinco regiões históricas: Vidzeme, Latgale, Curlândia (Kurzeme), Zemgale e Sēlija. Perguntar às pessoas de que região são é uma boa forma de começar a conversar.",
+    "pt_BR": "A Letônia tem cinco regiões históricas: Vidzeme, Latgale, Curlândia (Kurzeme), Zemgale e Sēlija. Perguntar de que região a pessoa vem é um jeito legal de começar a conversar.",
+    "fr": "La Lettonie compte cinq régions historiques : Vidzeme, Latgale, Courlande (Kurzeme), Zemgale et Sēlija. Demander aux gens de quelle région ils viennent est une belle façon d'engager la conversation.",
+    "de": "Lettland hat fünf historische Regionen: Vidzeme, Latgale, Kurland (Kurzeme), Zemgale und Selonien (Sēlija). Die Frage, aus welcher Region jemand stammt, ist ein schöner Gesprächseinstieg."
+   }
+  },
+  {
+   "id": "ct-LV-06",
+   "category": "dining",
+   "text": {
+    "en": "Rupjmaize, dark rye bread, is considered a Latvian specialty and appears at most meals. It is a good thing to taste and to praise to your hosts.",
+    "it": "La rupjmaize, il pane di segale scuro, è considerata una specialità lettone e compare nella maggior parte dei pasti. Vale la pena assaggiarla e farne i complimenti ai padroni di casa.",
+    "es": "La rupjmaize, el pan oscuro de centeno, se considera una especialidad letona y aparece en la mayoría de las comidas. Conviene probarla y elogiarla ante los anfitriones.",
+    "pt": "A rupjmaize, o pão escuro de centeio, é considerada uma especialidade letã e aparece na maioria das refeições. Vale a pena prová-la e elogiá-la aos anfitriões.",
+    "pt_BR": "A rupjmaize, o pão escuro de centeio, é considerada uma especialidade letã e aparece na maioria das refeições. Vale a pena provar e elogiar aos anfitriões.",
+    "fr": "Le rupjmaize, pain de seigle foncé, est considéré comme une spécialité lettone et apparaît à la plupart des repas. Il vaut la peine de le goûter et de le complimenter auprès de ses hôtes.",
+    "de": "Rupjmaize, dunkles Roggenbrot, gilt als lettische Spezialität und kommt bei den meisten Mahlzeiten auf den Tisch. Probiere es und lobe es bei deinen Gastgebern."
+   }
+  },
+  {
+   "id": "ct-LV-07",
+   "category": "dining",
+   "text": {
+    "en": "Pīrāgi, small baked buns filled with bacon and onion (speķrauši), are a traditional Latvian snack and a common thing to be offered at gatherings.",
+    "it": "I pīrāgi, piccoli panini al forno ripieni di pancetta e cipolla (speķrauši), sono uno spuntino tradizionale lettone e si offrono spesso durante i ritrovi.",
+    "es": "Los pīrāgi, pequeños bollos horneados rellenos de panceta y cebolla (speķrauši), son un aperitivo tradicional letón y es común que se ofrezcan en las reuniones.",
+    "pt": "Os pīrāgi, pãezinhos cozidos no forno recheados com toucinho e cebola (speķrauši), são um petisco tradicional letão e costumam ser oferecidos em encontros.",
+    "pt_BR": "Os pīrāgi, pãezinhos assados recheados com bacon e cebola (speķrauši), são um petisco tradicional letão e costumam ser oferecidos em encontros.",
+    "fr": "Les pīrāgi, petits pains cuits au four fourrés au lard et à l'oignon (speķrauši), sont un en-cas traditionnel letton qu'on offre souvent lors des réunions.",
+    "de": "Pīrāgi, kleine gebackene Teigtaschen mit Speck und Zwiebeln (speķrauši), sind ein traditioneller lettischer Snack und werden bei Treffen oft angeboten."
+   }
+  },
+  {
+   "id": "ct-LV-08",
+   "category": "dining",
+   "text": {
+    "en": "In summer, aukstā zupa, a cold pink beetroot soup made with kefir or soured milk, is a refreshing local favourite, often eaten with boiled potatoes.",
+    "it": "In estate l'aukstā zupa, una zuppa fredda rosa di barbabietola con kefir o latte acido, è un rinfrescante piatto locale preferito, spesso mangiato con patate lesse.",
+    "es": "En verano, la aukstā zupa, una sopa fría rosa de remolacha con kéfir o leche agria, es un refrescante favorito local, que a menudo se come con patatas cocidas.",
+    "pt": "No verão, a aukstā zupa, uma sopa fria cor-de-rosa de beterraba com quefir ou leite azedo, é uma refrescante favorita local, muitas vezes comida com batatas cozidas.",
+    "pt_BR": "No verão, a aukstā zupa, uma sopa fria rosa de beterraba com kefir ou leite azedo, é uma refrescante favorita local, geralmente comida com batatas cozidas.",
+    "fr": "En été, l'aukstā zupa, une soupe froide rose de betterave au kéfir ou au lait aigre, est une favorite locale rafraîchissante, souvent mangée avec des pommes de terre bouillies.",
+    "de": "Im Sommer ist Aukstā zupa, eine kalte rosa Rote-Bete-Suppe mit Kefir oder Sauermilch, ein erfrischender lokaler Favorit, oft mit Pellkartoffeln gegessen."
+   }
+  },
+  {
+   "id": "ct-LV-09",
+   "category": "tipping",
+   "text": {
+    "en": "In restaurants, many people leave around 10 percent or round up the bill if the service was good. Check whether a service charge is already included.",
+    "it": "Nei ristoranti molti lasciano circa il 10 per cento o arrotondano il conto se il servizio è stato buono. Controlla se il servizio è già incluso.",
+    "es": "En los restaurantes, mucha gente deja alrededor del 10 por ciento o redondea la cuenta si el servicio fue bueno. Comprueba si el servicio ya está incluido.",
+    "pt": "Nos restaurantes, muita gente deixa cerca de 10 por cento ou arredonda a conta se o serviço foi bom. Confirma se o serviço já está incluído.",
+    "pt_BR": "Nos restaurantes, muita gente deixa cerca de 10 por cento ou arredonda a conta se o atendimento foi bom. Confira se a taxa de serviço já está incluída.",
+    "fr": "Au restaurant, beaucoup laissent environ 10 pour cent ou arrondissent l'addition si le service était bon. Vérifiez si le service est déjà inclus.",
+    "de": "In Restaurants lassen viele bei gutem Service etwa 10 Prozent Trinkgeld da oder runden auf. Prüfe, ob eine Servicegebühr schon enthalten ist."
+   }
+  },
+  {
+   "id": "ct-LV-10",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to a home, bring flowers for the host, in an odd number, as even numbers are traditionally for funerals. Chocolates or a local treat are also welcome.",
+    "it": "Quando si è invitati a casa di qualcuno, porta dei fiori a chi ospita, in numero dispari, perché i numeri pari sono tradizionalmente per i funerali. Anche cioccolatini o una specialità locale sono graditi.",
+    "es": "Cuando te invitan a una casa, lleva flores a los anfitriones, en número impar, ya que los pares se reservan tradicionalmente para los funerales. También se agradecen bombones o una especialidad local.",
+    "pt": "Quando és convidado para casa de alguém, leva flores para os anfitriões, em número ímpar, pois os números pares são tradicionalmente para funerais. Chocolates ou uma especialidade local também são bem-vindos.",
+    "pt_BR": "Quando você é convidado para a casa de alguém, leve flores para os anfitriões, em número ímpar, pois os números pares são tradicionalmente para funerais. Chocolates ou uma especialidade local também são bem-vindos.",
+    "fr": "Quand on est invité chez quelqu'un, apportez des fleurs à l'hôte, en nombre impair, car les nombres pairs sont traditionnellement réservés aux funérailles. Des chocolats ou une spécialité locale sont aussi les bienvenus.",
+    "de": "Bei Einladungen bringt man den Gastgebern Blumen in ungerader Anzahl mit, da gerade Zahlen traditionell für Beerdigungen sind. Auch Pralinen oder eine lokale Spezialität sind willkommen."
+   }
+  },
+  {
+   "id": "ct-LV-11",
+   "category": "dress",
+   "text": {
+    "en": "In Latvian homes people usually take off their outdoor shoes at the door. Hosts often provide slippers, and wearing clean socks is a good idea.",
+    "it": "Nelle case lettoni di solito ci si toglie le scarpe da strada all'ingresso. Spesso chi ospita offre delle pantofole, ed è bene avere calzini puliti.",
+    "es": "En las casas letonas la gente suele quitarse los zapatos de calle en la entrada. Los anfitriones suelen ofrecer zapatillas, y conviene llevar calcetines limpios.",
+    "pt": "Nas casas letãs costuma-se tirar os sapatos de rua à porta. Os anfitriões muitas vezes oferecem pantufas, e convém usar meias limpas.",
+    "pt_BR": "Nas casas letãs costuma-se tirar os sapatos de rua na porta. Os anfitriões muitas vezes oferecem chinelos, e é bom estar com meias limpas.",
+    "fr": "Dans les foyers lettons, on enlève généralement ses chaussures de ville à l'entrée. Les hôtes proposent souvent des chaussons, et il vaut mieux porter des chaussettes propres.",
+    "de": "In lettischen Wohnungen zieht man die Straßenschuhe an der Tür meist aus. Gastgeber bieten oft Hausschuhe an, und saubere Socken sind eine gute Idee."
+   }
+  },
+  {
+   "id": "ct-LV-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "Latvia has Lutheran, Catholic, Orthodox and Old Believer communities. In churches, dress modestly, speak quietly and avoid walking around during services.",
+    "it": "La Lettonia ha comunità luterane, cattoliche, ortodosse e di Vecchi Credenti. Nelle chiese vesti in modo sobrio, parla piano ed evita di girare durante le funzioni.",
+    "es": "Letonia tiene comunidades luteranas, católicas, ortodoxas y de Viejos Creyentes. En las iglesias, viste con sencillez, habla en voz baja y evita pasearte durante los oficios.",
+    "pt": "A Letónia tem comunidades luteranas, católicas, ortodoxas e de Velhos Crentes. Nas igrejas, veste-te com discrição, fala baixo e evita andar de um lado para o outro durante as cerimónias.",
+    "pt_BR": "A Letônia tem comunidades luteranas, católicas, ortodoxas e de Velhos Crentes. Nas igrejas, vista-se com discrição, fale baixo e evite andar de um lado para o outro durante os cultos.",
+    "fr": "La Lettonie compte des communautés luthériennes, catholiques, orthodoxes et de vieux-croyants. Dans les églises, habillez-vous sobrement, parlez bas et évitez de circuler pendant les offices.",
+    "de": "Lettland hat lutherische, katholische, orthodoxe und altgläubige Gemeinden. In Kirchen kleide dich dezent, sprich leise und gehe während der Gottesdienste nicht umher."
+   }
+  },
+  {
+   "id": "ct-LV-13",
+   "category": "gestures",
+   "text": {
+    "en": "Latvians are usually not very demonstrative in public. Calm gestures and a moderate voice are the norm, and loud or flashy behaviour can feel out of place.",
+    "it": "I lettoni di solito non sono molto espansivi in pubblico. Gesti calmi e voce moderata sono la norma, e un comportamento rumoroso o appariscente può sembrare fuori luogo.",
+    "es": "Los letones no suelen ser muy expresivos en público. Los gestos tranquilos y la voz moderada son la norma, y un comportamiento ruidoso o llamativo puede parecer fuera de lugar.",
+    "pt": "Os letões normalmente não são muito expansivos em público. Gestos calmos e voz moderada são a norma, e um comportamento barulhento ou exibicionista pode parecer deslocado.",
+    "pt_BR": "Os letões geralmente não são muito expansivos em público. Gestos calmos e voz moderada são a norma, e um comportamento barulhento ou chamativo pode parecer deslocado.",
+    "fr": "Les Lettons ne sont généralement pas très démonstratifs en public. Des gestes calmes et une voix modérée sont la norme, et un comportement bruyant ou tape-à-l'œil peut sembler déplacé.",
+    "de": "Letten sind in der Öffentlichkeit meist wenig demonstrativ. Ruhige Gesten und eine maßvolle Stimme sind üblich, lautes oder auffälliges Verhalten wirkt leicht fehl am Platz."
+   }
+  },
+  {
+   "id": "ct-LV-14",
+   "category": "punctuality",
+   "text": {
+    "en": "Arriving on time is expected for appointments and work meetings, and also for dinner invitations. If you are delayed, send a message.",
+    "it": "Arrivare in orario è previsto per appuntamenti e riunioni di lavoro, e anche per gli inviti a cena. Se sei in ritardo, manda un messaggio.",
+    "es": "Se espera llegar a tiempo a las citas y reuniones de trabajo, y también a las cenas. Si te retrasas, envía un mensaje.",
+    "pt": "Espera-se chegar a horas a marcações e reuniões de trabalho, e também a jantares. Se te atrasares, envia uma mensagem.",
+    "pt_BR": "Espera-se chegar no horário a compromissos e reuniões de trabalho, e também a jantares. Se você se atrasar, mande uma mensagem.",
+    "fr": "On attend de la ponctualité pour les rendez-vous et réunions de travail, ainsi que pour les invitations à dîner. En cas de retard, envoyez un message.",
+    "de": "Pünktliches Erscheinen wird bei Terminen, Arbeitstreffen und auch Abendeinladungen erwartet. Bei Verspätung schreibe kurz Bescheid."
+   }
+  },
+  {
+   "id": "ct-LV-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "On public transport and in queues, people keep to themselves and speak quietly. Offering your seat to older people, pregnant women or parents with small children is expected.",
+    "it": "Sui mezzi pubblici e in coda le persone stanno per conto proprio e parlano piano. Ci si aspetta che si ceda il posto ad anziani, donne incinte o genitori con bambini piccoli.",
+    "es": "En el transporte público y en las colas, la gente se mantiene discreta y habla bajo. Se espera ceder el asiento a personas mayores, embarazadas o padres con niños pequeños.",
+    "pt": "Nos transportes públicos e nas filas, as pessoas mantêm-se discretas e falam baixo. Espera-se que se ceda o lugar a pessoas mais velhas, grávidas ou pais com crianças pequenas.",
+    "pt_BR": "No transporte público e nas filas, as pessoas ficam na delas e falam baixo. Espera-se que se ceda o lugar a idosos, grávidas ou pais com crianças pequenas.",
+    "fr": "Dans les transports et les files d'attente, les gens restent discrets et parlent bas. On s'attend à céder sa place aux personnes âgées, aux femmes enceintes ou aux parents avec de jeunes enfants.",
+    "de": "In Verkehrsmitteln und Warteschlangen halten sich die Leute zurück und sprechen leise. Älteren Menschen, Schwangeren oder Eltern mit kleinen Kindern überlässt man den Sitzplatz."
+   }
+  },
+  {
+   "id": "ct-LV-16",
+   "category": "transport",
+   "text": {
+    "en": "In Riga, buses, trams and trolleybuses are widely used. Find out how to buy and register a ticket before boarding, as the system uses e-tickets or cards.",
+    "it": "A Riga autobus, tram e filobus sono molto usati. Informati su come acquistare e registrare il biglietto prima di salire, perché il sistema usa biglietti elettronici o carte.",
+    "es": "En Riga se usan mucho los autobuses, tranvías y trolebuses. Infórmate de cómo comprar y registrar el billete antes de subir, pues el sistema funciona con billetes electrónicos o tarjetas.",
+    "pt": "Em Riga, autocarros, elétricos e troleicarros são muito usados. Informa-te sobre como comprar e registar o bilhete antes de entrar, porque o sistema usa bilhetes eletrónicos ou cartões.",
+    "pt_BR": "Em Riga, ônibus, bondes e trólebus são muito usados. Informe-se sobre como comprar e registrar o bilhete antes de embarcar, porque o sistema usa bilhetes eletrônicos ou cartões.",
+    "fr": "À Riga, bus, trams et trolleybus sont très utilisés. Renseignez-vous sur l'achat et l'enregistrement du billet avant de monter, car le système repose sur des billets électroniques ou des cartes.",
+    "de": "In Riga sind Busse, Straßenbahnen und Oberleitungsbusse stark genutzt. Informiere dich vor dem Einsteigen, wie man ein Ticket kauft und registriert, da das System mit E-Tickets oder Karten arbeitet."
+   }
+  },
+  {
+   "id": "ct-LV-17",
+   "category": "language",
+   "text": {
+    "en": "Latvian is an Indo-European Baltic language, and the state also protects Latgalian and Livonian. A friendly \"Paldies\" (thank you) goes a long way.",
+    "it": "Il lettone è una lingua baltica indoeuropea, e lo Stato tutela anche il latgalico e il livone. Un cordiale \"Paldies\" (grazie) fa molta strada.",
+    "es": "El letón es una lengua báltica indoeuropea, y el Estado también protege el latgalo y el livonio. Un cordial \"Paldies\" (gracias) hace mucho.",
+    "pt": "O letão é uma língua báltica indo-europeia, e o Estado protege também o latgalo e o livónio. Um simpático \"Paldies\" (obrigado) vale muito.",
+    "pt_BR": "O letão é uma língua báltica indo-europeia, e o Estado também protege o latgálio e o lívio. Um simpático \"Paldies\" (obrigado) ajuda muito.",
+    "fr": "Le letton est une langue balte indo-européenne, et l'État protège aussi le latgalien et le live. Un cordial \"Paldies\" (merci) fait beaucoup.",
+    "de": "Lettisch ist eine indoeuropäische baltische Sprache, und der Staat schützt auch das Lettgallische und das Livische. Ein freundliches \"Paldies\" (danke) bewirkt viel."
+   }
+  },
+  {
+   "id": "ct-LV-18",
+   "category": "festivals",
+   "text": {
+    "en": "Jāņi, around the summer solstice on 23 and 24 June, involves wreaths, bonfires, singing and staying up until sunrise. Caraway cheese and beer are the traditional treats.",
+    "it": "Jāņi, intorno al solstizio d'estate il 23 e 24 giugno, comprende ghirlande, falò, canti e una veglia fino all'alba. Formaggio al cumino e birra sono i cibi tradizionali.",
+    "es": "Jāņi, en torno al solsticio de verano, el 23 y 24 de junio, incluye coronas, hogueras, canciones y una velada hasta el amanecer. El queso con comino y la cerveza son los manjares tradicionales.",
+    "pt": "O Jāņi, por volta do solstício de verão, a 23 e 24 de junho, inclui coroas de flores, fogueiras, canções e uma vigília até ao nascer do sol. O queijo com cominhos e a cerveja são as iguarias tradicionais.",
+    "pt_BR": "O Jāņi, por volta do solstício de verão, em 23 e 24 de junho, inclui coroas de flores, fogueiras, canções e uma vigília até o nascer do sol. O queijo com cominho e a cerveja são as comidas tradicionais.",
+    "fr": "Les Jāņi, autour du solstice d'été les 23 et 24 juin, comprennent couronnes, feux de joie, chants et une veillée jusqu'à l'aube. Le fromage au cumin et la bière sont les mets traditionnels.",
+    "de": "Jāņi, rund um die Sommersonnenwende am 23. und 24. Juni, bedeutet Kränze, Feuer, Gesang und eine Nacht bis zum Sonnenaufgang. Kümmelkäse und Bier sind die traditionellen Leckereien."
+   }
+  },
+  {
+   "id": "ct-LV-19",
+   "category": "festivals",
+   "text": {
+    "en": "The Latvian Song and Dance Celebration, held about every five years, gathers huge choirs and dance groups and is part of UNESCO heritage. Locals love to talk about it.",
+    "it": "La Festa del canto e della danza lettone, che si tiene circa ogni cinque anni, riunisce enormi cori e gruppi di danza ed è patrimonio UNESCO. Alla gente del posto piace parlarne.",
+    "es": "La Fiesta de la Canción y la Danza de Letonia, que se celebra aproximadamente cada cinco años, reúne enormes coros y grupos de baile y es patrimonio de la UNESCO. A la gente local le encanta hablar de ella.",
+    "pt": "A Festa da Canção e da Dança da Letónia, realizada aproximadamente de cinco em cinco anos, reúne enormes coros e grupos de dança e é património da UNESCO. Os locais adoram falar dela.",
+    "pt_BR": "A Festa da Canção e da Dança da Letônia, realizada aproximadamente a cada cinco anos, reúne enormes coros e grupos de dança e é patrimônio da UNESCO. Os moradores adoram falar dela.",
+    "fr": "La Fête du chant et de la danse de Lettonie, organisée environ tous les cinq ans, rassemble d'immenses chœurs et groupes de danse et fait partie du patrimoine de l'UNESCO. Les habitants adorent en parler.",
+    "de": "Das lettische Gesangs- und Tanzfest, das etwa alle fünf Jahre stattfindet, versammelt riesige Chöre und Tanzgruppen und gehört zum UNESCO-Erbe. Einheimische sprechen gern darüber."
+   }
+  },
+  {
+   "id": "ct-LV-20",
+   "category": "festivals",
+   "text": {
+    "en": "On 18 November, Latvians celebrate Proclamation Day, marking the independence declared in 1918. Candles, concerts and quiet walks along the Riga riverfront are common.",
+    "it": "Il 18 novembre i lettoni celebrano il Giorno della Proclamazione, che ricorda l'indipendenza dichiarata nel 1918. Sono comuni candele, concerti e passeggiate tranquille lungo il fiume a Riga.",
+    "es": "El 18 de noviembre los letones celebran el Día de la Proclamación, que recuerda la independencia declarada en 1918. Son habituales las velas, los conciertos y los paseos tranquilos junto al río en Riga.",
+    "pt": "A 18 de novembro, os letões celebram o Dia da Proclamação, que assinala a independência declarada em 1918. São comuns as velas, os concertos e os passeios tranquilos junto ao rio em Riga.",
+    "pt_BR": "Em 18 de novembro, os letões celebram o Dia da Proclamação, que marca a independência declarada em 1918. São comuns as velas, os shows e os passeios tranquilos à beira do rio em Riga.",
+    "fr": "Le 18 novembre, les Lettons célèbrent la Fête de la proclamation, qui marque l'indépendance déclarée en 1918. Bougies, concerts et promenades tranquilles au bord du fleuve à Riga sont courants.",
+    "de": "Am 18. November feiern die Letten den Proklamationstag, der an die 1918 erklärte Unabhängigkeit erinnert. Kerzen, Konzerte und ruhige Spaziergänge am Rigaer Flussufer sind üblich."
+   }
+  },
+  {
+   "id": "ct-LV-21",
+   "category": "family",
+   "text": {
+    "en": "Name days (vārda dienas) are celebrated in Latvia, often with flowers and small gifts. Wishing a friend a happy name day is a thoughtful gesture.",
+    "it": "Gli onomastici (vārda dienas) si festeggiano in Lettonia, spesso con fiori e piccoli regali. Fare gli auguri a un amico nel giorno del suo onomastico è un gesto gentile.",
+    "es": "Los santos (vārda dienas) se celebran en Letonia, a menudo con flores y pequeños regalos. Felicitar a un amigo por su santo es un gesto atento.",
+    "pt": "Os dias do nome (vārda dienas) celebram-se na Letónia, muitas vezes com flores e pequenas prendas. Dar os parabéns a um amigo no seu dia do nome é um gesto atencioso.",
+    "pt_BR": "Os dias do nome (vārda dienas) são comemorados na Letônia, muitas vezes com flores e pequenos presentes. Desejar parabéns a um amigo no dia do nome dele é um gesto atencioso.",
+    "fr": "Les fêtes des prénoms (vārda dienas) sont célébrées en Lettonie, souvent avec des fleurs et de petits cadeaux. Souhaiter bonne fête à un ami est une attention appréciée.",
+    "de": "Namenstage (vārda dienas) werden in Lettland gefeiert, oft mit Blumen und kleinen Geschenken. Einem Freund zum Namenstag zu gratulieren ist eine aufmerksame Geste."
+   }
+  },
+  {
+   "id": "ct-LV-22",
+   "category": "money",
+   "text": {
+    "en": "Latvia uses the euro, and cards and contactless payments are accepted almost everywhere, including in many small shops and cafés.",
+    "it": "La Lettonia usa l'euro, e carte e pagamenti contactless sono accettati quasi ovunque, anche in molti piccoli negozi e caffè.",
+    "es": "Letonia usa el euro, y las tarjetas y los pagos sin contacto se aceptan casi en todas partes, también en muchas tiendas pequeñas y cafés.",
+    "pt": "A Letónia usa o euro, e cartões e pagamentos por aproximação são aceites quase em todo o lado, inclusive em muitas lojas pequenas e cafés.",
+    "pt_BR": "A Letônia usa o euro, e cartões e pagamentos por aproximação são aceitos quase em todo lugar, inclusive em muitas lojinhas e cafés.",
+    "fr": "La Lettonie utilise l'euro, et les cartes et le paiement sans contact sont acceptés presque partout, y compris dans beaucoup de petits commerces et cafés.",
+    "de": "Lettland nutzt den Euro, und Karten sowie kontaktloses Bezahlen werden fast überall akzeptiert, auch in vielen kleinen Läden und Cafés."
+   }
+  },
+  {
+   "id": "ct-LV-23",
+   "category": "photography",
+   "text": {
+    "en": "Riga's historic centre is a UNESCO site with rich Art Nouveau buildings, and photographing the facades is fine. Ask before photographing people, and avoid photos inside churches during services.",
+    "it": "Il centro storico di Riga è patrimonio UNESCO, con ricchi edifici Art Nouveau, e fotografarne le facciate va bene. Chiedi prima di fotografare le persone ed evita le foto in chiesa durante le funzioni.",
+    "es": "El centro histórico de Riga es patrimonio de la UNESCO, con ricos edificios modernistas, y fotografiar las fachadas está bien. Pregunta antes de fotografiar a personas y evita hacer fotos dentro de las iglesias durante los oficios.",
+    "pt": "O centro histórico de Riga é Património da UNESCO, com ricos edifícios Arte Nova, e fotografar as fachadas não há problema. Pergunta antes de fotografar pessoas e evita fotografias dentro das igrejas durante as cerimónias.",
+    "pt_BR": "O centro histórico de Riga é Patrimônio da UNESCO, com ricos edifícios Art Nouveau, e fotografar as fachadas não tem problema. Pergunte antes de fotografar pessoas e evite fotos dentro das igrejas durante os cultos.",
+    "fr": "Le centre historique de Riga est classé à l'UNESCO, avec de riches bâtiments Art nouveau, et photographier les façades est possible. Demandez avant de photographier des personnes et évitez les photos dans les églises pendant les offices.",
+    "de": "Das historische Zentrum von Riga ist UNESCO-Welterbe mit prächtigen Jugendstilbauten, und Fassaden zu fotografieren ist in Ordnung. Frage, bevor du Menschen fotografierst, und mache keine Fotos in Kirchen während der Gottesdienste."
+   }
+  },
+  {
+   "id": "ct-LV-24",
+   "category": "nightlife",
+   "text": {
+    "en": "The Old Town of Riga has plenty of bars, cafés and live music in the evenings. Carry an ID, since venues may check your age.",
+    "it": "La Città Vecchia di Riga ha molti bar, caffè e musica dal vivo la sera. Porta con te un documento, perché i locali possono controllare l'età.",
+    "es": "El casco antiguo de Riga tiene muchos bares, cafés y música en directo por las noches. Lleva un documento de identidad, porque los locales pueden comprobar la edad.",
+    "pt": "A Cidade Velha de Riga tem muitos bares, cafés e música ao vivo à noite. Leva um documento de identificação, porque os locais podem verificar a idade.",
+    "pt_BR": "A Cidade Velha de Riga tem muitos bares, cafés e música ao vivo à noite. Leve um documento de identidade, porque os locais podem conferir a idade.",
+    "fr": "La vieille ville de Riga compte de nombreux bars, cafés et concerts le soir. Gardez une pièce d'identité, car les établissements peuvent vérifier l'âge.",
+    "de": "In der Rigaer Altstadt gibt es abends viele Bars, Cafés und Livemusik. Habe einen Ausweis dabei, denn Lokale können das Alter prüfen."
+   }
+  },
+  {
+   "id": "ct-LV-25",
+   "category": "nature",
+   "text": {
+    "en": "Gauja National Park, with its forests, sandstone cliffs and trails, is a favourite for weekend outings. Stay on marked paths and take your litter home.",
+    "it": "Il Parco Nazionale di Gauja, con i suoi boschi, le scogliere di arenaria e i sentieri, è una meta preferita per le gite del fine settimana. Resta sui sentieri segnalati e porta via i rifiuti.",
+    "es": "El Parque Nacional de Gauja, con sus bosques, acantilados de arenisca y senderos, es un favorito para las excursiones de fin de semana. Mantente en los senderos señalizados y llévate la basura.",
+    "pt": "O Parque Nacional de Gauja, com as suas florestas, falésias de arenito e trilhos, é um favorito para passeios de fim de semana. Fica nos trilhos sinalizados e leva o lixo contigo.",
+    "pt_BR": "O Parque Nacional de Gauja, com suas florestas, penhascos de arenito e trilhas, é um dos favoritos para passeios de fim de semana. Fique nas trilhas sinalizadas e leve seu lixo com você.",
+    "fr": "Le parc national de la Gauja, avec ses forêts, ses falaises de grès et ses sentiers, est un favori pour les sorties du week-end. Restez sur les sentiers balisés et emportez vos déchets.",
+    "de": "Der Gauja-Nationalpark mit Wäldern, Sandsteinfelsen und Wanderwegen ist ein Favorit für Wochenendausflüge. Bleibe auf markierten Wegen und nimm deinen Müll mit."
+   }
+  },
+  {
+   "id": "ct-LV-26",
+   "category": "safety",
+   "text": {
+    "en": "Latvia is generally safe for visitors. Use normal city sense in busy tourist areas and at night, keep valuables close, and call 112 for emergencies.",
+    "it": "La Lettonia è in genere sicura per i visitatori. Usa il normale buon senso cittadino nelle zone turistiche affollate e di notte, tieni a portata di mano gli oggetti di valore e chiama il 112 in caso di emergenza.",
+    "es": "Letonia es en general segura para los visitantes. Usa el sentido común habitual de ciudad en zonas turísticas concurridas y de noche, mantén cerca tus objetos de valor y llama al 112 en emergencias.",
+    "pt": "A Letónia é geralmente segura para os visitantes. Usa o bom senso normal de cidade em zonas turísticas movimentadas e à noite, mantém os objetos de valor por perto e liga para o 112 em caso de emergência.",
+    "pt_BR": "A Letônia é geralmente segura para os visitantes. Use o bom senso normal de cidade em áreas turísticas movimentadas e à noite, mantenha os objetos de valor por perto e ligue para o 112 em emergências.",
+    "fr": "La Lettonie est généralement sûre pour les visiteurs. Faites preuve du bon sens habituel en ville dans les zones touristiques animées et la nuit, gardez vos objets de valeur près de vous et appelez le 112 en cas d'urgence.",
+    "de": "Lettland gilt für Besucher als sicher. Nutze den üblichen Stadtverstand in belebten Touristengegenden und nachts, halte Wertsachen nah bei dir und wähle in Notfällen die 112."
+   }
+  },
+  {
+   "id": "ct-LV-27",
+   "category": "local_pride",
+   "text": {
+    "en": "Latvians are proud of their dainas, short folk-song verses collected in the Cabinet of Folksongs, which holds nearly 218,000 texts. Asking about a favourite daina can spark a warm conversation.",
+    "it": "I lettoni sono orgogliosi delle loro dainas, brevi versi di canti popolari raccolti nel Gabinetto dei canti popolari, che conserva quasi 218.000 testi. Chiedere una daina preferita può dare il via a una conversazione calorosa.",
+    "es": "Los letones están orgullosos de sus dainas, breves versos de canciones populares reunidos en el Gabinete de Canciones Populares, que guarda casi 218 000 textos. Preguntar por una daina favorita puede abrir una conversación cálida.",
+    "pt": "Os letões têm orgulho das suas dainas, breves versos de canções populares reunidos no Gabinete de Canções Populares, que guarda quase 218 000 textos. Perguntar por uma daina favorita pode abrir uma conversa calorosa.",
+    "pt_BR": "Os letões têm orgulho das suas dainas, breves versos de canções populares reunidos no Gabinete de Canções Populares, que guarda quase 218 000 textos. Perguntar por uma daina favorita pode abrir uma conversa calorosa.",
+    "fr": "Les Lettons sont fiers de leurs dainas, courts vers de chansons populaires réunis dans le Cabinet des chansons populaires, qui conserve près de 218 000 textes. Demander une daina préférée peut lancer une conversation chaleureuse.",
+    "de": "Die Letten sind stolz auf ihre Dainas, kurze Volksliedverse aus dem Schrank der Volkslieder mit fast 218 000 Texten. Die Frage nach einer Lieblings-Daina kann ein herzliches Gespräch eröffnen."
+   }
+  },
+  {
+   "id": "ct-LV-28",
+   "category": "local_pride",
+   "text": {
+    "en": "Regional folk costumes, based on festive and working dress of past centuries, are worn with pride at celebrations. Compliments on a costume are always welcome.",
+    "it": "I costumi popolari regionali, basati sugli abiti da festa e da lavoro dei secoli passati, si indossano con orgoglio alle celebrazioni. I complimenti per un costume sono sempre graditi.",
+    "es": "Los trajes populares regionales, basados en la ropa festiva y de trabajo de siglos pasados, se lucen con orgullo en las celebraciones. Los cumplidos sobre un traje siempre se agradecen.",
+    "pt": "Os trajes populares regionais, baseados na roupa festiva e de trabalho de séculos passados, são usados com orgulho nas celebrações. Elogios a um traje são sempre bem-vindos.",
+    "pt_BR": "Os trajes populares regionais, baseados na roupa festiva e de trabalho de séculos passados, são usados com orgulho nas celebrações. Elogios a um traje são sempre bem-vindos.",
+    "fr": "Les costumes folkloriques régionaux, inspirés des tenues de fête et de travail des siècles passés, sont portés avec fierté lors des célébrations. Les compliments sur un costume sont toujours bienvenus.",
+    "de": "Regionale Volkstrachten, die auf Fest- und Arbeitskleidung vergangener Jahrhunderte beruhen, werden bei Feiern mit Stolz getragen. Komplimente zu einer Tracht sind immer willkommen."
+   }
+  },
+  {
+   "id": "ct-LV-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Choir singing is a source of national pride, with a nationwide network of amateur choirs and dance groups behind the Song and Dance Celebration. Joining a sing-along is a lovely way to connect.",
+    "it": "Il canto corale è motivo di orgoglio nazionale, con una rete in tutto il paese di cori e gruppi di danza amatoriali dietro la Festa del canto e della danza. Unirsi a un canto collettivo è un bel modo di creare legami.",
+    "es": "El canto coral es motivo de orgullo nacional, con una red de coros y grupos de baile aficionados en todo el país detrás de la Fiesta de la Canción y la Danza. Unirse a un canto colectivo es una bonita forma de conectar.",
+    "pt": "O canto coral é motivo de orgulho nacional, com uma rede de coros e grupos de dança amadores em todo o país por trás da Festa da Canção e da Dança. Juntar-se a um canto coletivo é uma bonita forma de criar laços.",
+    "pt_BR": "O canto coral é motivo de orgulho nacional, com uma rede de coros e grupos de dança amadores em todo o país por trás da Festa da Canção e da Dança. Participar de um canto coletivo é um jeito bonito de se aproximar.",
+    "fr": "Le chant choral est une fierté nationale, avec un réseau de chœurs et de groupes de danse amateurs dans tout le pays derrière la Fête du chant et de la danse. Se joindre à un chant collectif est une belle façon de créer des liens.",
+    "de": "Chorgesang ist ein Quell des Nationalstolzes, mit einem landesweiten Netz von Laienchören und Tanzgruppen hinter dem Gesangs- und Tanzfest. Beim gemeinsamen Singen mitzumachen ist ein schöner Weg, Kontakt zu knüpfen."
+   }
+  },
+  {
+   "id": "ct-LV-30",
+   "category": "conversation",
+   "text": {
+    "en": "Nature, forests, the Baltic coast, food and sport such as ice hockey and basketball are easy, friendly topics for starting a chat with Latvians.",
+    "it": "Natura, boschi, costa baltica, cibo e sport come hockey su ghiaccio e basket sono argomenti facili e cordiali per iniziare una chiacchierata con i lettoni.",
+    "es": "La naturaleza, los bosques, la costa báltica, la comida y deportes como el hockey sobre hielo y el baloncesto son temas fáciles y amables para empezar a charlar con letones.",
+    "pt": "A natureza, as florestas, a costa báltica, a comida e desportos como o hóquei no gelo e o basquetebol são temas fáceis e simpáticos para começar a conversar com letões.",
+    "pt_BR": "Natureza, florestas, a costa báltica, comida e esportes como hóquei no gelo e basquete são assuntos fáceis e simpáticos para puxar conversa com letões.",
+    "fr": "La nature, les forêts, la côte balte, la cuisine et des sports comme le hockey sur glace et le basket-ball sont des sujets faciles et conviviaux pour discuter avec des Lettons.",
+    "de": "Natur, Wälder, die Ostseeküste, Essen und Sportarten wie Eishockey und Basketball sind einfache, freundliche Themen, um mit Letten ins Gespräch zu kommen."
+   }
+  }
+ ]
+}

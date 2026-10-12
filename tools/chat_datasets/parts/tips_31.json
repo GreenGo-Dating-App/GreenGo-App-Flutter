@@ -1,0 +1,1178 @@
+{
+ "KR": [
+  {
+   "id": "ct-KR-01",
+   "category": "greetings",
+   "text": {
+    "en": "A slight bow is the traditional Korean greeting, often combined with a handshake. With elders, it is polite to support your right forearm with your left hand while shaking.",
+    "it": "Un leggero inchino è il saluto tradizionale coreano, spesso accompagnato da una stretta di mano. Con gli anziani è educato sostenere l'avambraccio destro con la mano sinistra mentre si stringe la mano.",
+    "es": "Una ligera reverencia es el saludo tradicional coreano, a menudo junto con un apretón de manos. Con personas mayores es de buena educación sujetar el antebrazo derecho con la mano izquierda al saludar.",
+    "pt": "Uma ligeira vénia é a saudação tradicional coreana, muitas vezes acompanhada de um aperto de mão. Com pessoas mais velhas, é educado apoiar o antebraço direito com a mão esquerda ao cumprimentar.",
+    "pt_BR": "Uma leve reverência é a saudação tradicional coreana, muitas vezes acompanhada de um aperto de mão. Com pessoas mais velhas, é educado apoiar o antebraço direito com a mão esquerda ao cumprimentar.",
+    "fr": "Une légère inclinaison est le salut traditionnel coréen, souvent accompagnée d'une poignée de main. Avec les aînés, il est poli de soutenir son avant-bras droit avec la main gauche en serrant la main.",
+    "de": "Eine leichte Verbeugung ist die traditionelle koreanische Begrüßung, oft mit einem Händedruck verbunden. Bei Älteren ist es höflich, beim Händeschütteln den rechten Unterarm mit der linken Hand zu stützen."
+   }
+  },
+  {
+   "id": "ct-KR-02",
+   "category": "greetings",
+   "text": {
+    "en": "Saying \"annyeonghaseyo\" with a smile is the standard polite hello. Locals really appreciate visitors who try a few words of Korean.",
+    "it": "Dire \"annyeonghaseyo\" con un sorriso è il saluto cortese standard. Chi prova a dire qualche parola di coreano è molto apprezzato dai locali.",
+    "es": "Decir \"annyeonghaseyo\" con una sonrisa es el saludo cortés estándar. Los locales aprecian mucho que los visitantes intenten decir unas palabras en coreano.",
+    "pt": "Dizer \"annyeonghaseyo\" com um sorriso é a saudação cortês habitual. Os locais apreciam muito quando os visitantes tentam dizer algumas palavras em coreano.",
+    "pt_BR": "Dizer \"annyeonghaseyo\" com um sorriso é a saudação educada padrão. Os locais gostam muito quando os visitantes tentam falar algumas palavras em coreano.",
+    "fr": "Dire \"annyeonghaseyo\" avec un sourire est la formule de politesse standard. Les Coréens apprécient beaucoup les visiteurs qui essaient quelques mots de coréen.",
+    "de": "\"Annyeonghaseyo\" mit einem Lächeln ist die übliche höfliche Begrüßung. Einheimische freuen sich sehr, wenn Besucher ein paar Worte Koreanisch versuchen."
+   }
+  },
+  {
+   "id": "ct-KR-03",
+   "category": "conversation",
+   "text": {
+    "en": "Age and seniority matter in Korean society, so people often ask your age early on to choose the right level of speech. It is a social custom, not nosiness.",
+    "it": "In Corea età e anzianità contano, quindi spesso si chiede l'età all'inizio per scegliere il giusto livello di cortesia nel parlare. È un'usanza sociale, non indiscrezione.",
+    "es": "En Corea la edad y la antigüedad importan, así que a menudo preguntan la edad al principio para elegir el nivel de cortesía al hablar. Es una costumbre social, no indiscreción.",
+    "pt": "Na Coreia, a idade e a antiguidade contam, por isso é comum perguntarem a idade logo no início para escolher o nível de tratamento certo. É um costume social, não indiscrição.",
+    "pt_BR": "Na Coreia, a idade e a hierarquia contam, por isso é comum perguntarem a idade logo no início para escolher o nível de tratamento certo. É um costume social, não indiscrição.",
+    "fr": "En Corée, l'âge et l'ancienneté comptent, donc on demande souvent votre âge dès le début pour choisir le bon niveau de langage. C'est une coutume sociale, pas de l'indiscrétion.",
+    "de": "In Korea zählen Alter und Rang, deshalb wird oft früh nach dem Alter gefragt, um die passende Höflichkeitsstufe zu wählen. Das ist ein soziales Ritual, keine Neugier."
+   }
+  },
+  {
+   "id": "ct-KR-04",
+   "category": "conversation",
+   "text": {
+    "en": "Many Koreans address each other by title or role, such as a teacher or manager, or with \"-ssi\" after the name, rather than by first name alone, especially at first.",
+    "it": "Molti coreani si rivolgono agli altri con il titolo o il ruolo, come insegnante o direttore, oppure con \"-ssi\" dopo il nome, e non solo con il nome di battesimo, soprattutto all'inizio.",
+    "es": "Muchos coreanos se dirigen a los demás por su título o cargo, como profesor o gerente, o con \"-ssi\" tras el nombre, y no solo por el nombre de pila, sobre todo al principio.",
+    "pt": "Muitos coreanos tratam os outros pelo título ou função, como professor ou gerente, ou com \"-ssi\" depois do nome, e não apenas pelo primeiro nome, sobretudo no início.",
+    "pt_BR": "Muitos coreanos tratam os outros pelo título ou função, como professor ou gerente, ou com \"-ssi\" depois do nome, e não só pelo primeiro nome, principalmente no início.",
+    "fr": "Beaucoup de Coréens s'adressent aux autres par leur titre ou leur fonction, comme professeur ou directeur, ou avec \"-ssi\" après le nom, plutôt que par le seul prénom, surtout au début.",
+    "de": "Viele Koreaner sprechen andere mit Titel oder Funktion an, etwa Lehrer oder Abteilungsleiter, oder mit \"-ssi\" nach dem Namen, statt nur mit dem Vornamen, besonders am Anfang."
+   }
+  },
+  {
+   "id": "ct-KR-05",
+   "category": "dining",
+   "text": {
+    "en": "In traditional restaurants and homes with a raised heated floor (ondol), you take off your shoes before stepping onto it. Look for shoes lined up at the entrance.",
+    "it": "Nei ristoranti tradizionali e nelle case con pavimento rialzato riscaldato (ondol) ci si toglie le scarpe prima di salire. Se vedi scarpe allineate all'ingresso, fai lo stesso.",
+    "es": "En restaurantes tradicionales y casas con suelo elevado y calefactado (ondol) se quita uno los zapatos antes de subir. Si ves zapatos alineados en la entrada, haz lo mismo.",
+    "pt": "Nos restaurantes tradicionais e nas casas com piso elevado aquecido (ondol), tiram-se os sapatos antes de subir. Se vires sapatos alinhados à entrada, faz o mesmo.",
+    "pt_BR": "Em restaurantes tradicionais e casas com piso elevado aquecido (ondol), tiram-se os sapatos antes de subir. Se você vir sapatos alinhados na entrada, faça o mesmo.",
+    "fr": "Dans les restaurants traditionnels et les maisons à plancher surélevé chauffé (ondol), on retire ses chaussures avant de monter. Si vous voyez des chaussures alignées à l'entrée, faites de même.",
+    "de": "In traditionellen Restaurants und Häusern mit erhöhtem, beheiztem Boden (Ondol) zieht man die Schuhe aus, bevor man ihn betritt. Stehen am Eingang aufgereihte Schuhe, macht man es genauso."
+   }
+  },
+  {
+   "id": "ct-KR-06",
+   "category": "dining",
+   "text": {
+    "en": "Koreans do not lift the rice bowl to the mouth; bowls stay on the table. Use the spoon for rice and soup and chopsticks for side dishes.",
+    "it": "I coreani non sollevano la ciotola di riso verso la bocca: le ciotole restano sul tavolo. Il cucchiaio si usa per riso e zuppa, le bacchette per i contorni.",
+    "es": "Los coreanos no levantan el cuenco de arroz hasta la boca; los cuencos se quedan en la mesa. La cuchara se usa para el arroz y la sopa, y los palillos para los acompañamientos.",
+    "pt": "Os coreanos não levam a taça de arroz à boca; as taças ficam na mesa. A colher usa-se para o arroz e a sopa, e os pauzinhos para os acompanhamentos.",
+    "pt_BR": "Os coreanos não levantam a tigela de arroz até a boca; as tigelas ficam na mesa. A colher é usada para o arroz e a sopa, e os hashis para os acompanhamentos.",
+    "fr": "Les Coréens ne portent pas le bol de riz à la bouche : les bols restent sur la table. La cuillère sert pour le riz et la soupe, les baguettes pour les accompagnements.",
+    "de": "Koreaner heben die Reisschale nicht an den Mund; die Schalen bleiben auf dem Tisch. Der Löffel dient für Reis und Suppe, die Stäbchen für die Beilagen."
+   }
+  },
+  {
+   "id": "ct-KR-07",
+   "category": "dining",
+   "text": {
+    "en": "Never stick chopsticks upright in a bowl of rice, since this resembles incense offered at ancestral rites. Rest them on the table or chopstick rest instead.",
+    "it": "Non infilare mai le bacchette in verticale nella ciotola di riso: ricorda l'incenso delle cerimonie per gli antenati. Appoggiale sul tavolo o sul poggiabacchette.",
+    "es": "Nunca claves los palillos en vertical en el cuenco de arroz, pues recuerda al incienso de los ritos a los antepasados. Déjalos sobre la mesa o en el soporte.",
+    "pt": "Nunca espetes os pauzinhos na vertical na taça de arroz, pois lembra o incenso dos ritos dos antepassados. Pousa-os na mesa ou no descanso próprio.",
+    "pt_BR": "Nunca espete os hashis na vertical na tigela de arroz, pois lembra o incenso dos ritos aos antepassados. Deixe-os sobre a mesa ou no apoio próprio.",
+    "fr": "Ne plantez jamais vos baguettes à la verticale dans le bol de riz : cela rappelle l'encens des rites pour les ancêtres. Posez-les sur la table ou sur un repose-baguettes.",
+    "de": "Steck die Stäbchen niemals senkrecht in die Reisschale, das erinnert an Räucherstäbchen bei Ahnenritualen. Leg sie auf den Tisch oder auf eine Ablage."
+   }
+  },
+  {
+   "id": "ct-KR-08",
+   "category": "dining",
+   "text": {
+    "en": "Pouring your own drink is considered a faux pas. Fill others' glasses, hold the bottle with both hands, and expect them to pour yours in return.",
+    "it": "Versarsi da soli da bere è considerato una gaffe. Riempi i bicchieri degli altri, tieni la bottiglia con due mani e aspettati che ricambino.",
+    "es": "Servirse uno mismo la bebida se considera una torpeza. Llena los vasos de los demás, sujeta la botella con las dos manos y espera que ellos llenen el tuyo.",
+    "pt": "Servires a ti próprio uma bebida é considerado uma gafe. Enche os copos dos outros, segura a garrafa com as duas mãos e espera que encham o teu.",
+    "pt_BR": "Servir a própria bebida é considerado uma gafe. Encha os copos dos outros, segure a garrafa com as duas mãos e espere que encham o seu em troca.",
+    "fr": "Se servir soi-même à boire est considéré comme une gaffe. Remplissez les verres des autres, tenez la bouteille à deux mains et attendez qu'on remplisse le vôtre.",
+    "de": "Sich selbst einzuschenken gilt als Fauxpas. Schenk den anderen ein, halte die Flasche mit beiden Händen und erwarte, dass sie dir ebenfalls einschenken."
+   }
+  },
+  {
+   "id": "ct-KR-09",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping is not customary in South Korea. Restaurants, taxis and hotels generally include service in their prices, and leaving extra money can cause confusion.",
+    "it": "In Corea del Sud la mancia non è consuetudine. Ristoranti, taxi e hotel di solito includono il servizio nei prezzi e lasciare soldi in più può creare confusione.",
+    "es": "En Corea del Sur no se acostumbra dejar propina. Restaurantes, taxis y hoteles suelen incluir el servicio en el precio, y dejar dinero extra puede causar confusión.",
+    "pt": "Na Coreia do Sul não é costume deixar gorjeta. Restaurantes, táxis e hotéis geralmente incluem o serviço nos preços, e deixar dinheiro extra pode causar confusão.",
+    "pt_BR": "Na Coreia do Sul não é costume deixar gorjeta. Restaurantes, táxis e hotéis geralmente incluem o serviço nos preços, e deixar dinheiro extra pode causar confusão.",
+    "fr": "Le pourboire n'est pas d'usage en Corée du Sud. Restaurants, taxis et hôtels incluent généralement le service dans leurs prix, et laisser de l'argent en plus peut prêter à confusion.",
+    "de": "Trinkgeld ist in Südkorea nicht üblich. Restaurants, Taxis und Hotels rechnen den Service meist in die Preise ein, und zusätzliches Geld kann Verwirrung stiften."
+   }
+  },
+  {
+   "id": "ct-KR-10",
+   "category": "gifts",
+   "text": {
+    "en": "Gifts are normally given and received with both hands as a sign of respect. Popular gifts include fruit, quality snacks or small items from your home country.",
+    "it": "I regali si danno e si ricevono di norma con due mani in segno di rispetto. Sono apprezzati frutta, buoni dolci o piccoli oggetti del proprio paese.",
+    "es": "Los regalos se dan y reciben normalmente con las dos manos en señal de respeto. Gustan la fruta, los dulces de calidad o pequeños objetos de tu país.",
+    "pt": "As prendas costumam dar-se e receber-se com as duas mãos, em sinal de respeito. Frutas, doces de qualidade ou pequenos objetos do teu país são bem-vindos.",
+    "pt_BR": "Os presentes costumam ser dados e recebidos com as duas mãos, em sinal de respeito. Frutas, doces de qualidade ou pequenos objetos do seu país são bem-vindos.",
+    "fr": "On donne et reçoit généralement les cadeaux à deux mains, en signe de respect. Les fruits, de bonnes douceurs ou de petits objets de votre pays sont appréciés.",
+    "de": "Geschenke gibt und nimmt man üblicherweise mit beiden Händen, als Zeichen des Respekts. Beliebt sind Obst, gute Süßigkeiten oder kleine Dinge aus deinem Heimatland."
+   }
+  },
+  {
+   "id": "ct-KR-11",
+   "category": "gifts",
+   "text": {
+    "en": "The number four is considered unlucky because it sounds like the word for death, so gifts are rarely given in sets of four. Some buildings even skip the fourth floor.",
+    "it": "Il numero quattro porta sfortuna perché suona come la parola per morte, quindi i regali raramente sono in set da quattro. Alcuni edifici saltano persino il quarto piano.",
+    "es": "El número cuatro da mala suerte porque suena como la palabra para muerte, por eso rara vez se regalan juegos de cuatro. Algunos edificios incluso omiten el cuarto piso.",
+    "pt": "O número quatro dá azar porque soa como a palavra para morte, por isso raramente se oferecem conjuntos de quatro. Alguns edifícios chegam a não ter o quarto andar.",
+    "pt_BR": "O número quatro dá azar porque soa como a palavra para morte, por isso raramente se dão conjuntos de quatro. Alguns prédios até pulam o quarto andar.",
+    "fr": "Le chiffre quatre porte malheur car il sonne comme le mot pour mort ; on offre donc rarement des cadeaux par quatre. Certains immeubles omettent même le quatrième étage.",
+    "de": "Die Zahl Vier gilt als Unglückszahl, weil sie wie das Wort für Tod klingt; deshalb verschenkt man selten Vierersets. Manche Gebäude haben sogar kein viertes Stockwerk."
+   }
+  },
+  {
+   "id": "ct-KR-12",
+   "category": "dress",
+   "text": {
+    "en": "Dressing neatly is seen as a sign of respect, and many people in Seoul take care over their appearance. Smart, tidy clothes are a safe choice for meeting new people.",
+    "it": "Vestirsi in modo curato è segno di rispetto e molti a Seul curano molto l'aspetto. Abiti ordinati ed eleganti sono una scelta sicura quando si conoscono nuove persone.",
+    "es": "Vestir con esmero se ve como señal de respeto y muchas personas en Seúl cuidan su aspecto. La ropa pulcra y arreglada es una opción segura para conocer gente nueva.",
+    "pt": "Vestir com cuidado é visto como sinal de respeito e muitas pessoas em Seul cuidam da aparência. Roupa arranjada e limpa é uma escolha segura para conhecer pessoas novas.",
+    "pt_BR": "Vestir-se com capricho é visto como sinal de respeito e muita gente em Seul cuida da aparência. Roupas arrumadas e limpas são uma escolha segura para conhecer gente nova.",
+    "fr": "S'habiller avec soin est un signe de respect et beaucoup de gens à Séoul soignent leur apparence. Des vêtements propres et soignés sont un choix sûr pour rencontrer de nouvelles personnes.",
+    "de": "Gepflegte Kleidung gilt als Zeichen von Respekt, und viele Menschen in Seoul achten auf ihr Äußeres. Ordentliche Kleidung ist eine sichere Wahl, wenn man neue Leute trifft."
+   }
+  },
+  {
+   "id": "ct-KR-13",
+   "category": "religion_sites",
+   "text": {
+    "en": "At Buddhist temples, dress modestly, speak quietly and remove your shoes before entering prayer halls. Follow signs about where photos and entry are allowed.",
+    "it": "Nei templi buddhisti vesti in modo sobrio, parla a bassa voce e togliti le scarpe prima di entrare nelle sale di preghiera. Segui i cartelli su foto e accessi.",
+    "es": "En los templos budistas viste con recato, habla en voz baja y quítate los zapatos antes de entrar en las salas de oración. Sigue las señales sobre fotos y accesos.",
+    "pt": "Nos templos budistas, veste-te com recato, fala baixo e tira os sapatos antes de entrar nas salas de oração. Segue os avisos sobre fotografias e acessos.",
+    "pt_BR": "Em templos budistas, vista-se com discrição, fale baixo e tire os sapatos antes de entrar nos salões de oração. Siga as placas sobre fotos e acessos.",
+    "fr": "Dans les temples bouddhistes, habillez-vous modestement, parlez doucement et retirez vos chaussures avant d'entrer dans les salles de prière. Suivez les panneaux sur les photos et l'accès.",
+    "de": "In buddhistischen Tempeln kleidet man sich dezent, spricht leise und zieht vor den Gebetshallen die Schuhe aus. Beachte die Schilder zu Fotos und Zutritt."
+   }
+  },
+  {
+   "id": "ct-KR-14",
+   "category": "gestures",
+   "text": {
+    "en": "To call someone over, Koreans beckon with the palm facing down and fingers waving. Waving with the palm up, like in many Western countries, can look rude.",
+    "it": "Per chiamare qualcuno i coreani fanno cenno con il palmo rivolto verso il basso e le dita che si muovono. Il gesto con il palmo in su, tipico dell'Occidente, può sembrare scortese.",
+    "es": "Para llamar a alguien, los coreanos hacen señas con la palma hacia abajo y los dedos moviéndose. Hacerlo con la palma hacia arriba, como en Occidente, puede parecer grosero.",
+    "pt": "Para chamar alguém, os coreanos fazem sinal com a palma virada para baixo e os dedos a mexer. O gesto com a palma para cima, comum no Ocidente, pode parecer indelicado.",
+    "pt_BR": "Para chamar alguém, os coreanos fazem sinal com a palma virada para baixo e os dedos se mexendo. O gesto com a palma para cima, comum no Ocidente, pode parecer grosseiro.",
+    "fr": "Pour appeler quelqu'un, les Coréens font signe paume vers le bas en agitant les doigts. Le geste paume vers le haut, courant en Occident, peut sembler impoli.",
+    "de": "Um jemanden heranzuwinken, winken Koreaner mit der Handfläche nach unten und bewegten Fingern. Die Geste mit der Handfläche nach oben, wie im Westen, kann unhöflich wirken."
+   }
+  },
+  {
+   "id": "ct-KR-15",
+   "category": "punctuality",
+   "text": {
+    "en": "Being on time is valued for work meetings and appointments, and arriving a few minutes early is seen as respectful. Lateness can be read as lack of consideration.",
+    "it": "La puntualità è apprezzata per riunioni di lavoro e appuntamenti, e arrivare qualche minuto prima è visto come rispettoso. Il ritardo può sembrare mancanza di riguardo.",
+    "es": "La puntualidad se valora en reuniones de trabajo y citas, y llegar unos minutos antes se ve como respetuoso. El retraso puede interpretarse como falta de consideración.",
+    "pt": "A pontualidade é valorizada em reuniões de trabalho e compromissos, e chegar uns minutos antes é visto como respeitoso. O atraso pode ser entendido como falta de consideração.",
+    "pt_BR": "A pontualidade é valorizada em reuniões de trabalho e compromissos, e chegar alguns minutos antes é visto como respeitoso. O atraso pode ser entendido como falta de consideração.",
+    "fr": "La ponctualité est valorisée pour les réunions de travail et les rendez-vous, et arriver quelques minutes en avance est vu comme respectueux. Un retard peut passer pour un manque d'égards.",
+    "de": "Pünktlichkeit wird bei Arbeitsterminen und Verabredungen geschätzt, und ein paar Minuten früher zu kommen gilt als respektvoll. Verspätung kann als Rücksichtslosigkeit gelten."
+   }
+  },
+  {
+   "id": "ct-KR-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "On the subway, seats marked for seniors, pregnant women and people with disabilities are kept free. Many people keep their voices down and take calls quietly.",
+    "it": "In metropolitana i posti riservati ad anziani, donne incinte e persone con disabilità vengono lasciati liberi. Molti abbassano la voce e rispondono al telefono a bassa voce.",
+    "es": "En el metro, los asientos reservados para mayores, embarazadas y personas con discapacidad se dejan libres. Muchos bajan la voz y atienden las llamadas en voz baja.",
+    "pt": "No metro, os lugares reservados a idosos, grávidas e pessoas com deficiência ficam livres. Muitas pessoas baixam a voz e atendem chamadas em tom discreto.",
+    "pt_BR": "No metrô, os assentos reservados a idosos, gestantes e pessoas com deficiência ficam livres. Muita gente fala baixo e atende ligações em tom discreto.",
+    "fr": "Dans le métro, les places réservées aux seniors, aux femmes enceintes et aux personnes handicapées restent libres. Beaucoup de gens parlent bas et téléphonent discrètement.",
+    "de": "In der U-Bahn bleiben die Plätze für Senioren, Schwangere und Menschen mit Behinderung frei. Viele sprechen leise und telefonieren dezent."
+   }
+  },
+  {
+   "id": "ct-KR-17",
+   "category": "transport",
+   "text": {
+    "en": "A rechargeable T-money card works on Seoul's subway and buses and in many other cities, and it is also accepted by many taxis and convenience stores.",
+    "it": "La carta ricaricabile T-money funziona su metro e autobus di Seul e di molte altre città, ed è accettata anche da molti taxi e minimarket.",
+    "es": "La tarjeta recargable T-money funciona en el metro y los autobuses de Seúl y de muchas otras ciudades, y también la aceptan muchos taxis y tiendas de conveniencia.",
+    "pt": "O cartão recarregável T-money funciona no metro e nos autocarros de Seul e de muitas outras cidades, e também é aceite em muitos táxis e lojas de conveniência.",
+    "pt_BR": "O cartão recarregável T-money funciona no metrô e nos ônibus de Seul e de muitas outras cidades, e também é aceito em muitos táxis e lojas de conveniência.",
+    "fr": "La carte rechargeable T-money fonctionne dans le métro et les bus de Séoul et de nombreuses autres villes, et elle est aussi acceptée dans beaucoup de taxis et de supérettes.",
+    "de": "Die aufladbare T-money-Karte funktioniert in Seouls U-Bahn und Bussen sowie in vielen anderen Städten und wird auch von vielen Taxis und Convenience-Stores akzeptiert."
+   }
+  },
+  {
+   "id": "ct-KR-18",
+   "category": "language",
+   "text": {
+    "en": "Hangul, the Korean alphabet, was created in the 15th century under King Sejong and is built on logical sounds, so many learners can read it after a short study.",
+    "it": "L'hangul, l'alfabeto coreano, fu creato nel XV secolo sotto il re Sejong ed è basato su suoni logici, così molti studenti imparano a leggerlo dopo un breve studio.",
+    "es": "El hangul, el alfabeto coreano, se creó en el siglo XV bajo el rey Sejong y se basa en sonidos lógicos, por lo que muchos estudiantes pueden leerlo tras un breve estudio.",
+    "pt": "O hangul, o alfabeto coreano, foi criado no século XV sob o rei Sejong e baseia-se em sons lógicos, por isso muitos estudantes conseguem lê-lo após um breve estudo.",
+    "pt_BR": "O hangul, o alfabeto coreano, foi criado no século XV sob o rei Sejong e é baseado em sons lógicos, por isso muitos estudantes conseguem lê-lo após um breve estudo.",
+    "fr": "Le hangeul, l'alphabet coréen, a été créé au XVe siècle sous le roi Sejong et repose sur des sons logiques ; beaucoup d'apprenants savent le lire après une courte étude.",
+    "de": "Hangeul, das koreanische Alphabet, wurde im 15. Jahrhundert unter König Sejong geschaffen und beruht auf logischen Lauten, sodass viele Lernende es nach kurzem Üben lesen können."
+   }
+  },
+  {
+   "id": "ct-KR-19",
+   "category": "festivals",
+   "text": {
+    "en": "Seollal, the Lunar New Year, is one of the biggest holidays. Families honour ancestors, play games such as yut nori and traditionally eat tteokguk, rice cake soup.",
+    "it": "Seollal, il Capodanno lunare, è una delle feste più importanti. Le famiglie onorano gli antenati, giocano a yut nori e mangiano tradizionalmente il tteokguk, zuppa di gnocchi di riso.",
+    "es": "Seollal, el Año Nuevo lunar, es una de las fiestas más importantes. Las familias honran a los antepasados, juegan al yut nori y tradicionalmente comen tteokguk, sopa de pastel de arroz.",
+    "pt": "O Seollal, o Ano Novo lunar, é uma das maiores festas. As famílias homenageiam os antepassados, jogam yut nori e comem tradicionalmente tteokguk, sopa de bolo de arroz.",
+    "pt_BR": "O Seollal, o Ano Novo lunar, é uma das maiores festas. As famílias homenageiam os antepassados, jogam yut nori e tradicionalmente comem tteokguk, sopa de bolinho de arroz.",
+    "fr": "Seollal, le Nouvel An lunaire, est l'une des plus grandes fêtes. Les familles honorent leurs ancêtres, jouent au yut nori et mangent traditionnellement le tteokguk, une soupe de galettes de riz.",
+    "de": "Seollal, das Mondneujahr, ist eines der größten Feste. Familien ehren die Ahnen, spielen Yut Nori und essen traditionell Tteokguk, eine Reiskuchensuppe."
+   }
+  },
+  {
+   "id": "ct-KR-20",
+   "category": "festivals",
+   "text": {
+    "en": "Chuseok, the autumn harvest festival, lasts three days. Families gather to give thanks, remember ancestors and eat songpyeon, so travel and roads are very busy then.",
+    "it": "Chuseok, la festa del raccolto autunnale, dura tre giorni. Le famiglie si riuniscono per ringraziare, ricordare gli antenati e mangiare songpyeon, perciò viaggi e strade sono molto trafficati.",
+    "es": "Chuseok, la fiesta de la cosecha de otoño, dura tres días. Las familias se reúnen para dar gracias, recordar a los antepasados y comer songpyeon, por lo que los viajes y las carreteras se saturan.",
+    "pt": "O Chuseok, a festa da colheita de outono, dura três dias. As famílias reúnem-se para agradecer, recordar os antepassados e comer songpyeon, por isso as viagens e as estradas ficam muito cheias.",
+    "pt_BR": "O Chuseok, a festa da colheita de outono, dura três dias. As famílias se reúnem para agradecer, lembrar os antepassados e comer songpyeon, então as viagens e as estradas ficam muito cheias.",
+    "fr": "Chuseok, la fête des récoltes d'automne, dure trois jours. Les familles se réunissent pour remercier, se souvenir des ancêtres et manger des songpyeon ; les trajets et les routes sont alors très chargés.",
+    "de": "Chuseok, das herbstliche Erntedankfest, dauert drei Tage. Familien kommen zusammen, um zu danken, der Ahnen zu gedenken und Songpyeon zu essen; Reisen und Straßen sind dann sehr voll."
+   }
+  },
+  {
+   "id": "ct-KR-21",
+   "category": "family",
+   "text": {
+    "en": "Family milestones are celebrated with tradition: the doljanchi marks a baby's first birthday, and the hwangab, the 60th birthday, celebrates a long life.",
+    "it": "Le tappe della famiglia si celebrano con tradizione: il doljanchi segna il primo compleanno di un bambino e lo hwangab, il 60º compleanno, celebra una lunga vita.",
+    "es": "Los hitos familiares se celebran con tradición: el doljanchi marca el primer cumpleaños de un bebé y el hwangab, el cumpleaños 60, celebra una vida larga.",
+    "pt": "Os marcos familiares celebram-se com tradição: o doljanchi assinala o primeiro aniversário de um bebé e o hwangab, os 60 anos, celebra uma vida longa.",
+    "pt_BR": "Os marcos familiares são celebrados com tradição: o doljanchi marca o primeiro aniversário de um bebê e o hwangab, os 60 anos, celebra uma vida longa.",
+    "fr": "Les étapes de la vie familiale se fêtent avec tradition : le doljanchi marque le premier anniversaire d'un bébé et le hwangab, les 60 ans, célèbre une longue vie.",
+    "de": "Familienmeilensteine werden traditionell gefeiert: Das Doljanchi markiert den ersten Geburtstag eines Babys, das Hwangab, der 60. Geburtstag, feiert ein langes Leben."
+   }
+  },
+  {
+   "id": "ct-KR-22",
+   "category": "money",
+   "text": {
+    "en": "The currency is the won. Cards and mobile payments are accepted almost everywhere, though a bit of cash helps at small markets and street stalls.",
+    "it": "La valuta è il won. Carte e pagamenti mobili sono accettati quasi ovunque, ma un po' di contanti serve nei piccoli mercati e alle bancarelle.",
+    "es": "La moneda es el won. Se aceptan tarjetas y pagos móviles casi en todas partes, aunque algo de efectivo viene bien en mercados pequeños y puestos callejeros.",
+    "pt": "A moeda é o won. Cartões e pagamentos móveis são aceites quase em todo o lado, mas um pouco de dinheiro vivo ajuda em mercados pequenos e bancas de rua.",
+    "pt_BR": "A moeda é o won. Cartões e pagamentos por celular são aceitos quase em todo lugar, mas um pouco de dinheiro vivo ajuda em feiras pequenas e barracas de rua.",
+    "fr": "La monnaie est le won. Les cartes et les paiements mobiles sont acceptés presque partout, mais un peu d'espèces aide dans les petits marchés et sur les stands de rue.",
+    "de": "Die Währung ist der Won. Karten und mobiles Bezahlen werden fast überall akzeptiert, ein bisschen Bargeld hilft aber auf kleinen Märkten und an Straßenständen."
+   }
+  },
+  {
+   "id": "ct-KR-23",
+   "category": "photography",
+   "text": {
+    "en": "Ask before photographing people, and respect signs that limit photos inside temples, museums and at ceremonies. Quietly keep distance during funerals or rituals.",
+    "it": "Chiedi prima di fotografare le persone e rispetta i cartelli che limitano le foto in templi, musei e cerimonie. Mantieni discrezione e distanza durante funerali o riti.",
+    "es": "Pregunta antes de fotografiar a personas y respeta los carteles que limitan las fotos en templos, museos y ceremonias. Mantén discreción y distancia en funerales o rituales.",
+    "pt": "Pergunta antes de fotografar pessoas e respeita os avisos que limitam fotografias em templos, museus e cerimónias. Mantém discrição e distância em funerais ou rituais.",
+    "pt_BR": "Pergunte antes de fotografar pessoas e respeite as placas que limitam fotos em templos, museus e cerimônias. Mantenha discrição e distância em funerais ou rituais.",
+    "fr": "Demandez avant de photographier des personnes et respectez les panneaux limitant les photos dans les temples, les musées et lors des cérémonies. Restez discret et à distance lors des funérailles ou rituels.",
+    "de": "Frag, bevor du Menschen fotografierst, und beachte Schilder, die Fotos in Tempeln, Museen und bei Zeremonien einschränken. Halte bei Beerdigungen oder Ritualen diskret Abstand."
+   }
+  },
+  {
+   "id": "ct-KR-24",
+   "category": "nightlife",
+   "text": {
+    "en": "Noraebang, private karaoke rooms rented by the hour, are a popular way for friends and colleagues to spend the evening together. Joining in, even off-key, is part of the fun.",
+    "it": "Il noraebang, le sale karaoke private affittate a ore, è un modo molto amato per passare la serata con amici e colleghi. Partecipare, anche stonati, fa parte del divertimento.",
+    "es": "El noraebang, salas privadas de karaoke que se alquilan por horas, es una forma popular de pasar la noche con amigos y compañeros. Participar, aunque desafines, es parte de la diversión.",
+    "pt": "O noraebang, salas privadas de karaoke alugadas à hora, é uma forma popular de passar a noite com amigos e colegas. Participar, mesmo desafinado, faz parte da diversão.",
+    "pt_BR": "O noraebang, salas privativas de karaokê alugadas por hora, é uma forma popular de passar a noite com amigos e colegas. Participar, mesmo desafinando, faz parte da diversão.",
+    "fr": "Le noraebang, des salles de karaoké privées louées à l'heure, est une façon populaire de passer la soirée entre amis ou collègues. Participer, même faux, fait partie du plaisir.",
+    "de": "Noraebang, private Karaoke-Räume, die man stundenweise mietet, sind ein beliebter Abendspaß unter Freunden und Kollegen. Mitmachen, auch schief, gehört zum Spaß."
+   }
+  },
+  {
+   "id": "ct-KR-25",
+   "category": "nature",
+   "text": {
+    "en": "Hiking is a hugely popular pastime, and mountains such as those in Seoraksan National Park have well-marked trails. Wear sturdy shoes and carry water.",
+    "it": "L'escursionismo è un passatempo molto popolare e montagne come quelle del Parco Nazionale di Seoraksan hanno sentieri ben segnalati. Porta scarpe robuste e acqua.",
+    "es": "El senderismo es un pasatiempo muy popular y montañas como las del Parque Nacional Seoraksan tienen senderos bien señalizados. Lleva calzado resistente y agua.",
+    "pt": "O pedestrianismo é um passatempo muito popular e montanhas como as do Parque Nacional de Seoraksan têm trilhos bem sinalizados. Leva calçado resistente e água.",
+    "pt_BR": "A trilha é um passatempo muito popular e montanhas como as do Parque Nacional de Seoraksan têm caminhos bem sinalizados. Leve calçado resistente e água.",
+    "fr": "La randonnée est un loisir très populaire et des montagnes comme celles du parc national de Seoraksan offrent des sentiers bien balisés. Prenez de bonnes chaussures et de l'eau.",
+    "de": "Wandern ist ein sehr beliebtes Hobby, und Berge wie im Seorak-san-Nationalpark haben gut markierte Wege. Trag feste Schuhe und nimm Wasser mit."
+   }
+  },
+  {
+   "id": "ct-KR-26",
+   "category": "safety",
+   "text": {
+    "en": "South Korea is widely regarded as safe, including in cities at night. Normal precautions still apply, and the emergency numbers are 112 for police and 119 for fire and ambulance.",
+    "it": "La Corea del Sud è considerata sicura, anche di notte nelle città. Valgono comunque le normali precauzioni; i numeri di emergenza sono 112 per la polizia e 119 per vigili del fuoco e ambulanza.",
+    "es": "Corea del Sur se considera segura, también de noche en las ciudades. Aun así rigen las precauciones normales; los números de emergencia son el 112 para la policía y el 119 para bomberos y ambulancia.",
+    "pt": "A Coreia do Sul é considerada segura, inclusive à noite nas cidades. Aplicam-se as precauções normais; os números de emergência são o 112 para a polícia e o 119 para bombeiros e ambulância.",
+    "pt_BR": "A Coreia do Sul é considerada segura, inclusive à noite nas cidades. Valem as precauções normais; os números de emergência são 112 para a polícia e 119 para bombeiros e ambulância.",
+    "fr": "La Corée du Sud est considérée comme sûre, y compris la nuit en ville. Les précautions habituelles restent de mise ; les numéros d'urgence sont le 112 pour la police et le 119 pour les pompiers et le SAMU.",
+    "de": "Südkorea gilt als sicher, auch nachts in den Städten. Normale Vorsicht gilt trotzdem; die Notrufnummern sind 112 für die Polizei und 119 für Feuerwehr und Rettungsdienst."
+   }
+  },
+  {
+   "id": "ct-KR-27",
+   "category": "local_pride",
+   "text": {
+    "en": "Many Koreans take great pride in hangul, which is celebrated on Hangul Day each October. Showing interest in the alphabet is a lovely way to start a conversation.",
+    "it": "Molti coreani sono molto orgogliosi dell'hangul, celebrato ogni ottobre nella Giornata dell'hangul. Mostrare interesse per l'alfabeto è un bel modo per iniziare una conversazione.",
+    "es": "Muchos coreanos están muy orgullosos del hangul, que se celebra cada octubre en el Día del Hangul. Mostrar interés por el alfabeto es una buena forma de empezar una conversación.",
+    "pt": "Muitos coreanos têm grande orgulho no hangul, celebrado todos os outubros no Dia do Hangul. Mostrar interesse pelo alfabeto é uma boa forma de iniciar uma conversa.",
+    "pt_BR": "Muitos coreanos têm grande orgulho do hangul, celebrado todo outubro no Dia do Hangul. Mostrar interesse pelo alfabeto é uma ótima forma de começar uma conversa.",
+    "fr": "Beaucoup de Coréens sont très fiers du hangeul, fêté chaque octobre lors de la Journée du hangeul. Montrer de l'intérêt pour l'alphabet est une belle façon d'entamer la conversation.",
+    "de": "Viele Koreaner sind sehr stolz auf Hangeul, das jeden Oktober am Hangeul-Tag gefeiert wird. Interesse am Alphabet zu zeigen ist ein schöner Gesprächseinstieg."
+   }
+  },
+  {
+   "id": "ct-KR-28",
+   "category": "local_pride",
+   "text": {
+    "en": "Korean food and pop culture are a source of national pride. Kimchi, a fermented side dish, comes with most meals, and chatting about favourite dishes or K-dramas is welcomed.",
+    "it": "Cucina e cultura pop coreane sono motivo di orgoglio nazionale. Il kimchi, contorno fermentato, accompagna quasi ogni pasto, e parlare di piatti o K-drama preferiti è gradito.",
+    "es": "La comida y la cultura pop coreanas son motivo de orgullo nacional. El kimchi, un acompañamiento fermentado, está en casi todas las comidas, y hablar de platos favoritos o K-dramas se agradece.",
+    "pt": "A comida e a cultura pop coreanas são motivo de orgulho nacional. O kimchi, um acompanhamento fermentado, está presente na maioria das refeições, e conversar sobre pratos ou K-dramas favoritos é bem-vindo.",
+    "pt_BR": "A comida e a cultura pop coreanas são motivo de orgulho nacional. O kimchi, um acompanhamento fermentado, está presente na maioria das refeições, e conversar sobre pratos ou K-dramas favoritos é bem-vindo.",
+    "fr": "La cuisine et la culture pop coréennes sont une fierté nationale. Le kimchi, un accompagnement fermenté, figure à la plupart des repas, et parler de plats ou de K-dramas préférés est bienvenu.",
+    "de": "Koreanisches Essen und Popkultur sind Quellen nationalen Stolzes. Kimchi, eine fermentierte Beilage, gehört zu fast jeder Mahlzeit, und Gespräche über Lieblingsgerichte oder K-Dramen sind willkommen."
+   }
+  },
+  {
+   "id": "ct-KR-29",
+   "category": "dining",
+   "text": {
+    "en": "At a group meal, it is polite to wait for the eldest person to pick up their spoon or chopsticks before you start eating.",
+    "it": "A un pasto di gruppo è cortese aspettare che la persona più anziana prenda cucchiaio o bacchette prima di iniziare a mangiare.",
+    "es": "En una comida en grupo, es de buena educación esperar a que la persona de más edad tome la cuchara o los palillos antes de empezar a comer.",
+    "pt": "Numa refeição em grupo, é educado esperar que a pessoa mais velha pegue na colher ou nos pauzinhos antes de começares a comer.",
+    "pt_BR": "Em uma refeição em grupo, é educado esperar que a pessoa mais velha pegue a colher ou os hashis antes de você começar a comer.",
+    "fr": "Lors d'un repas en groupe, il est poli d'attendre que la personne la plus âgée prenne sa cuillère ou ses baguettes avant de commencer à manger.",
+    "de": "Bei einem Essen in der Gruppe ist es höflich zu warten, bis die älteste Person Löffel oder Stäbchen in die Hand nimmt, bevor man selbst beginnt."
+   }
+  },
+  {
+   "id": "ct-KR-30",
+   "category": "transport",
+   "text": {
+    "en": "Seoul's subway is easy to use: stations have signs and announcements in Korean and English, and lines are numbered and colour-coded.",
+    "it": "La metropolitana di Seul è facile da usare: le stazioni hanno cartelli e annunci in coreano e inglese e le linee sono numerate e colorate.",
+    "es": "El metro de Seúl es fácil de usar: las estaciones tienen carteles y avisos en coreano e inglés, y las líneas están numeradas y codificadas por colores.",
+    "pt": "O metro de Seul é fácil de usar: as estações têm sinais e avisos em coreano e inglês, e as linhas são numeradas e identificadas por cores.",
+    "pt_BR": "O metrô de Seul é fácil de usar: as estações têm placas e avisos em coreano e inglês, e as linhas são numeradas e identificadas por cores.",
+    "fr": "Le métro de Séoul est facile à utiliser : les stations ont des panneaux et des annonces en coréen et en anglais, et les lignes sont numérotées et codées par couleur.",
+    "de": "Seouls U-Bahn ist leicht zu nutzen: Die Stationen haben Schilder und Durchsagen auf Koreanisch und Englisch, und die Linien sind nummeriert und farbig gekennzeichnet."
+   }
+  }
+ ],
+ "LI": [
+  {
+   "id": "ct-LI-01",
+   "category": "greetings",
+   "text": {
+    "en": "A firm handshake with eye contact and a friendly \"Grüezi\" or \"Guten Tag\" is the usual way to greet someone. Handshakes are also common when leaving.",
+    "it": "Una stretta di mano decisa con contatto visivo e un cordiale \"Grüezi\" o \"Guten Tag\" è il modo abituale di salutare. La stretta di mano si usa anche quando ci si congeda.",
+    "es": "Un apretón de manos firme con contacto visual y un amable \"Grüezi\" o \"Guten Tag\" es la forma habitual de saludar. El apretón de manos también se usa al despedirse.",
+    "pt": "Um aperto de mão firme com contacto visual e um simpático \"Grüezi\" ou \"Guten Tag\" é a forma habitual de cumprimentar. O aperto de mão também se usa ao despedir.",
+    "pt_BR": "Um aperto de mão firme com contato visual e um simpático \"Grüezi\" ou \"Guten Tag\" é a forma habitual de cumprimentar. O aperto de mão também é usado na despedida.",
+    "fr": "Une poignée de main ferme avec contact visuel et un aimable \"Grüezi\" ou \"Guten Tag\" est la façon habituelle de saluer. On se serre aussi la main en partant.",
+    "de": "Ein fester Händedruck mit Blickkontakt und ein freundliches \"Grüezi\" oder \"Guten Tag\" sind die übliche Begrüßung. Auch zum Abschied gibt man sich die Hand."
+   }
+  },
+  {
+   "id": "ct-LI-02",
+   "category": "greetings",
+   "text": {
+    "en": "When you arrive somewhere small, such as a shop or café, it is polite to greet staff and others with a short hello, and to say goodbye when you leave.",
+    "it": "Quando si entra in un posto piccolo, come un negozio o un caffè, è cortese salutare il personale con un breve saluto e dire arrivederci uscendo.",
+    "es": "Al entrar en un sitio pequeño, como una tienda o un café, es de buena educación saludar al personal con un breve saludo y despedirse al salir.",
+    "pt": "Ao entrar num sítio pequeno, como uma loja ou um café, é educado cumprimentar os funcionários com um breve olá e despedir-se ao sair.",
+    "pt_BR": "Ao entrar em um lugar pequeno, como uma loja ou um café, é educado cumprimentar os funcionários com um breve olá e se despedir ao sair.",
+    "fr": "En entrant dans un petit endroit, comme une boutique ou un café, il est poli de saluer le personnel d'un bref bonjour et de dire au revoir en partant.",
+    "de": "Betrittst du einen kleinen Ort wie ein Geschäft oder Café, ist es höflich, das Personal kurz zu grüßen und sich beim Gehen zu verabschieden."
+   }
+  },
+  {
+   "id": "ct-LI-03",
+   "category": "conversation",
+   "text": {
+    "en": "With people you do not know, the formal \"Sie\" is the safe choice in German. Switch to \"du\" only when the other person offers it, which often happens quickly among younger people.",
+    "it": "Con le persone che non si conoscono il \"Sie\" formale è la scelta sicura in tedesco. Passa al \"du\" solo quando lo propone l'altro, cosa che tra i giovani avviene spesso in fretta.",
+    "es": "Con desconocidos, el \"Sie\" formal es la opción segura en alemán. Pasa al \"du\" solo cuando la otra persona lo ofrezca, algo que entre jóvenes ocurre a menudo enseguida.",
+    "pt": "Com pessoas desconhecidas, o \"Sie\" formal é a escolha segura em alemão. Passa ao \"du\" só quando a outra pessoa o propuser, o que entre os mais jovens acontece muitas vezes depressa.",
+    "pt_BR": "Com pessoas desconhecidas, o \"Sie\" formal é a escolha segura em alemão. Passe para o \"du\" só quando a outra pessoa propuser, o que entre os mais jovens costuma acontecer rápido.",
+    "fr": "Avec des inconnus, le \"Sie\" de politesse est le choix sûr en allemand. Ne passez au \"du\" que si l'autre le propose, ce qui arrive souvent vite chez les jeunes.",
+    "de": "Bei Unbekannten ist das förmliche \"Sie\" die sichere Wahl. Zum \"du\" wechselt man erst, wenn das Gegenüber es anbietet, was unter Jüngeren oft schnell geschieht."
+   }
+  },
+  {
+   "id": "ct-LI-04",
+   "category": "conversation",
+   "text": {
+    "en": "Many people in this small country are discreet about money and private life. It is better to talk about hobbies, mountains, travel or food than to ask about income or wealth.",
+    "it": "Molte persone in questo piccolo paese sono riservate su denaro e vita privata. Meglio parlare di hobby, montagne, viaggi o cibo che chiedere di reddito o ricchezze.",
+    "es": "Muchas personas de este pequeño país son discretas con el dinero y la vida privada. Es mejor hablar de aficiones, montañas, viajes o comida que preguntar por ingresos o riqueza.",
+    "pt": "Muitas pessoas deste pequeno país são discretas quanto ao dinheiro e à vida privada. É melhor falar de passatempos, montanhas, viagens ou comida do que perguntar por rendimentos ou riqueza.",
+    "pt_BR": "Muitas pessoas deste pequeno país são discretas quanto a dinheiro e vida privada. É melhor falar de hobbies, montanhas, viagens ou comida do que perguntar sobre renda ou riqueza.",
+    "fr": "Beaucoup de gens dans ce petit pays restent discrets sur l'argent et la vie privée. Mieux vaut parler de loisirs, de montagnes, de voyages ou de cuisine que de revenus ou de fortune.",
+    "de": "Viele Menschen in diesem kleinen Land sind bei Geld und Privatleben diskret. Sprich lieber über Hobbys, Berge, Reisen oder Essen als über Einkommen oder Vermögen."
+   }
+  },
+  {
+   "id": "ct-LI-05",
+   "category": "dining",
+   "text": {
+    "en": "Local specialities include Käsknöpfle, small cheese dumplings usually served with apple sauce, and Ribel, a dish made from coarse corn semolina. They are worth trying.",
+    "it": "Tra le specialità locali ci sono i Käsknöpfle, piccoli gnocchetti al formaggio di solito serviti con salsa di mele, e il Ribel, un piatto a base di semola di mais grossa. Vale la pena assaggiarli.",
+    "es": "Entre las especialidades locales están los Käsknöpfle, pequeños ñoquis de queso que suelen servirse con puré de manzana, y el Ribel, un plato de sémola gruesa de maíz. Vale la pena probarlos.",
+    "pt": "Entre as especialidades locais estão os Käsknöpfle, pequenos nhoques de queijo geralmente servidos com puré de maçã, e o Ribel, um prato de sêmola grossa de milho. Vale a pena experimentar.",
+    "pt_BR": "Entre as especialidades locais estão os Käsknöpfle, pequenos nhoques de queijo geralmente servidos com purê de maçã, e o Ribel, um prato de sêmola grossa de milho. Vale a pena experimentar.",
+    "fr": "Parmi les spécialités locales, on trouve les Käsknöpfle, petits gnocchis au fromage généralement servis avec de la compote de pommes, et le Ribel, un plat de semoule de maïs grossière. Ils valent le détour.",
+    "de": "Zu den lokalen Spezialitäten zählen Käsknöpfle, kleine Käsespätzle, meist mit Apfelmus serviert, und Ribel, ein Gericht aus grobem Maisgrieß. Beides ist einen Versuch wert."
+   }
+  },
+  {
+   "id": "ct-LI-06",
+   "category": "dining",
+   "text": {
+    "en": "It is common to wish everyone \"Guten Appetit\" before starting to eat, and to wait until all guests are served. When toasting, say \"Prost\" and look people in the eye.",
+    "it": "È usanza augurare a tutti \"Guten Appetit\" prima di iniziare a mangiare e aspettare che tutti siano serviti. Brindando si dice \"Prost\" guardando negli occhi.",
+    "es": "Es habitual desear a todos \"Guten Appetit\" antes de empezar a comer y esperar a que todos estén servidos. Al brindar se dice \"Prost\" mirando a los ojos.",
+    "pt": "É costume desejar a todos \"Guten Appetit\" antes de começar a comer e esperar que todos estejam servidos. Ao brindar, diz-se \"Prost\" olhando nos olhos.",
+    "pt_BR": "É costume desejar a todos \"Guten Appetit\" antes de começar a comer e esperar que todos estejam servidos. Ao brindar, diz-se \"Prost\" olhando nos olhos.",
+    "fr": "Il est courant de souhaiter \"Guten Appetit\" à tous avant de commencer à manger et d'attendre que chacun soit servi. En trinquant, on dit \"Prost\" en regardant dans les yeux.",
+    "de": "Üblich ist es, allen vor dem Essen \"Guten Appetit\" zu wünschen und zu warten, bis alle bedient sind. Beim Anstoßen sagt man \"Prost\" und schaut sich in die Augen."
+   }
+  },
+  {
+   "id": "ct-LI-07",
+   "category": "dining",
+   "text": {
+    "en": "Table manners are fairly formal: keep your hands visible above the table, use cutlery for most dishes and do not start before the host. Chew with your mouth closed.",
+    "it": "Le maniere a tavola sono piuttosto formali: tieni le mani visibili sopra il tavolo, usa le posate per la maggior parte dei piatti e non iniziare prima dell'ospite. Mastica a bocca chiusa.",
+    "es": "Los modales en la mesa son bastante formales: mantén las manos visibles sobre la mesa, usa cubiertos para la mayoría de los platos y no empieces antes que el anfitrión. Mastica con la boca cerrada.",
+    "pt": "As maneiras à mesa são bastante formais: mantém as mãos visíveis sobre a mesa, usa talheres para a maioria dos pratos e não comeces antes do anfitrião. Mastiga de boca fechada.",
+    "pt_BR": "Os modos à mesa são bastante formais: mantenha as mãos visíveis sobre a mesa, use talheres para a maioria dos pratos e não comece antes do anfitrião. Mastigue de boca fechada.",
+    "fr": "Les manières à table sont assez formelles : gardez les mains visibles au-dessus de la table, utilisez des couverts pour la plupart des plats et ne commencez pas avant l'hôte. Mâchez la bouche fermée.",
+    "de": "Die Tischmanieren sind recht förmlich: Hände sichtbar auf dem Tisch halten, bei den meisten Gerichten Besteck benutzen und nicht vor dem Gastgeber beginnen. Mit geschlossenem Mund kauen."
+   }
+  },
+  {
+   "id": "ct-LI-08",
+   "category": "tipping",
+   "text": {
+    "en": "Service is already included in restaurant prices. Rounding up the bill or leaving a small extra amount for good service is appreciated but never required.",
+    "it": "Il servizio è già incluso nei prezzi dei ristoranti. Arrotondare il conto o lasciare un piccolo extra per un buon servizio è gradito ma mai obbligatorio.",
+    "es": "El servicio ya está incluido en los precios de los restaurantes. Redondear la cuenta o dejar un pequeño extra por un buen servicio se agradece, pero nunca es obligatorio.",
+    "pt": "O serviço já está incluído nos preços dos restaurantes. Arredondar a conta ou deixar um pequeno extra por um bom serviço é apreciado, mas nunca obrigatório.",
+    "pt_BR": "O serviço já está incluído nos preços dos restaurantes. Arredondar a conta ou deixar um pequeno extra por um bom atendimento é apreciado, mas nunca obrigatório.",
+    "fr": "Le service est déjà inclus dans les prix des restaurants. Arrondir l'addition ou laisser un petit supplément pour un bon service est apprécié, mais jamais obligatoire.",
+    "de": "Der Service ist bereits in den Restaurantpreisen enthalten. Aufrunden oder ein kleines Extra für guten Service wird geschätzt, ist aber nie Pflicht."
+   }
+  },
+  {
+   "id": "ct-LI-09",
+   "category": "gifts",
+   "text": {
+    "en": "If you are invited to someone's home, bring a small gift such as flowers, chocolates or a local product. Hand over the flowers without the wrapping paper.",
+    "it": "Se sei invitato a casa di qualcuno, porta un piccolo regalo come fiori, cioccolatini o un prodotto locale. Consegna i fiori senza la carta da regalo.",
+    "es": "Si te invitan a casa de alguien, lleva un pequeño regalo como flores, bombones o un producto local. Entrega las flores sin el papel de envolver.",
+    "pt": "Se fores convidado a casa de alguém, leva uma pequena lembrança como flores, bombons ou um produto local. Entrega as flores sem o papel de embrulho.",
+    "pt_BR": "Se for convidado para a casa de alguém, leve uma pequena lembrança como flores, bombons ou um produto local. Entregue as flores sem o papel de embrulho.",
+    "fr": "Si vous êtes invité chez quelqu'un, apportez un petit cadeau comme des fleurs, des chocolats ou un produit local. Remettez les fleurs sans leur papier d'emballage.",
+    "de": "Wenn du bei jemandem zu Hause eingeladen bist, bring ein kleines Geschenk mit, etwa Blumen, Pralinen oder ein regionales Produkt. Die Blumen übergibt man ohne Papier."
+   }
+  },
+  {
+   "id": "ct-LI-10",
+   "category": "dress",
+   "text": {
+    "en": "Everyday dress is smart casual and tidy. In the mountains, practical hiking clothes and sturdy shoes are normal, but for dinners, church or business a neater outfit is expected.",
+    "it": "L'abbigliamento quotidiano è casual elegante e curato. In montagna sono normali abiti da escursione pratici e scarpe robuste, ma per cene, chiesa o lavoro ci si aspetta un look più curato.",
+    "es": "La ropa diaria es informal elegante y cuidada. En la montaña es normal llevar ropa de senderismo práctica y calzado resistente, pero para cenas, iglesia o trabajo se espera algo más arreglado.",
+    "pt": "A roupa do dia a dia é casual elegante e cuidada. Na montanha é normal usar roupa prática de caminhada e calçado resistente, mas para jantares, igreja ou trabalho espera-se algo mais arranjado.",
+    "pt_BR": "A roupa do dia a dia é casual elegante e arrumada. Na montanha é normal usar roupa prática de trilha e calçado resistente, mas para jantares, igreja ou trabalho espera-se algo mais arrumado.",
+    "fr": "La tenue quotidienne est décontractée mais soignée. En montagne, des vêtements de randonnée pratiques et de bonnes chaussures sont normaux, mais pour un dîner, l'église ou le travail, une tenue plus soignée est attendue.",
+    "de": "Alltagskleidung ist gepflegt und leger-elegant. In den Bergen sind praktische Wanderkleidung und feste Schuhe normal, für Abendessen, Kirche oder Geschäftliches erwartet man aber ein gepflegteres Outfit."
+   }
+  },
+  {
+   "id": "ct-LI-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Catholicism is the state church, and churches such as St. Florin Cathedral in Vaduz are active places of worship. Dress modestly, stay quiet and avoid visiting during services.",
+    "it": "Il cattolicesimo è la religione di Stato e chiese come la cattedrale di San Fiorino a Vaduz sono luoghi di culto attivi. Vesti in modo sobrio, mantieni il silenzio ed evita le visite durante le funzioni.",
+    "es": "El catolicismo es la religión del Estado y iglesias como la catedral de San Florín en Vaduz son lugares de culto activos. Viste con recato, guarda silencio y evita visitarlas durante los oficios.",
+    "pt": "O catolicismo é a religião do Estado e igrejas como a catedral de São Florino, em Vaduz, são locais de culto ativos. Veste-te com recato, mantém o silêncio e evita visitar durante as celebrações.",
+    "pt_BR": "O catolicismo é a religião do Estado e igrejas como a catedral de São Florino, em Vaduz, são locais de culto ativos. Vista-se com discrição, mantenha silêncio e evite visitar durante as celebrações.",
+    "fr": "Le catholicisme est la religion d'État et des églises comme la cathédrale Saint-Florin à Vaduz sont des lieux de culte actifs. Habillez-vous modestement, restez silencieux et évitez de visiter pendant les offices.",
+    "de": "Der Katholizismus ist Staatskirche, und Kirchen wie die Kathedrale St. Florin in Vaduz sind aktive Gotteshäuser. Kleide dich dezent, bleib leise und besuche sie nicht während des Gottesdienstes."
+   }
+  },
+  {
+   "id": "ct-LI-12",
+   "category": "gestures",
+   "text": {
+    "en": "Keep gestures modest. Pointing at people, loud laughter in quiet places and standing too close to others are not appreciated; leave a comfortable personal space.",
+    "it": "Mantieni i gesti sobri. Indicare le persone, ridere forte in luoghi tranquilli o stare troppo vicini agli altri non è gradito; lascia un comodo spazio personale.",
+    "es": "Mantén los gestos discretos. Señalar a las personas, reír fuerte en lugares tranquilos y acercarse demasiado no se aprecia; deja un espacio personal cómodo.",
+    "pt": "Mantém os gestos discretos. Apontar para as pessoas, rir alto em locais calmos e ficar demasiado perto dos outros não é apreciado; deixa um espaço pessoal confortável.",
+    "pt_BR": "Mantenha os gestos discretos. Apontar para as pessoas, rir alto em lugares calmos e ficar perto demais dos outros não é bem visto; deixe um espaço pessoal confortável.",
+    "fr": "Gardez des gestes mesurés. Pointer les gens du doigt, rire fort dans les lieux calmes et se tenir trop près des autres n'est pas apprécié ; laissez un espace personnel confortable.",
+    "de": "Halte Gesten dezent. Mit dem Finger auf Menschen zeigen, laut lachen an ruhigen Orten oder zu dicht stehen kommt nicht gut an; lass einen angenehmen persönlichen Abstand."
+   }
+  },
+  {
+   "id": "ct-LI-13",
+   "category": "punctuality",
+   "text": {
+    "en": "Punctuality is taken seriously, as in neighbouring Switzerland and Austria. Arrive on time for appointments and dinners, and send a message if you will be late.",
+    "it": "La puntualità è presa sul serio, come nella vicina Svizzera e in Austria. Arriva in orario ad appuntamenti e cene e avvisa se farai tardi.",
+    "es": "La puntualidad se toma en serio, como en la vecina Suiza y en Austria. Llega a tiempo a citas y cenas y avisa si vas a retrasarte.",
+    "pt": "A pontualidade é levada a sério, como na vizinha Suíça e na Áustria. Chega a horas a compromissos e jantares e avisa se te atrasares.",
+    "pt_BR": "A pontualidade é levada a sério, como na vizinha Suíça e na Áustria. Chegue na hora em compromissos e jantares e avise se for se atrasar.",
+    "fr": "La ponctualité est prise au sérieux, comme dans la Suisse et l'Autriche voisines. Arrivez à l'heure aux rendez-vous et dîners et prévenez en cas de retard.",
+    "de": "Pünktlichkeit wird ernst genommen, wie in der benachbarten Schweiz und in Österreich. Komm pünktlich zu Terminen und Essen und gib Bescheid, wenn du dich verspätest."
+   }
+  },
+  {
+   "id": "ct-LI-14",
+   "category": "public_behavior",
+   "text": {
+    "en": "Many shops are closed on Sundays and public holidays, so plan ahead. Keep noise down in residential areas, especially in the evening and on Sunday.",
+    "it": "Molti negozi sono chiusi la domenica e nei giorni festivi, quindi pianifica in anticipo. Mantieni basso il rumore nei quartieri residenziali, soprattutto la sera e la domenica.",
+    "es": "Muchas tiendas cierran los domingos y festivos, así que planifica con antelación. Evita el ruido en zonas residenciales, sobre todo por la noche y los domingos.",
+    "pt": "Muitas lojas fecham aos domingos e feriados, por isso planeia com antecedência. Evita fazer barulho em zonas residenciais, sobretudo à noite e ao domingo.",
+    "pt_BR": "Muitas lojas fecham aos domingos e feriados, então planeje com antecedência. Evite fazer barulho em áreas residenciais, principalmente à noite e aos domingos.",
+    "fr": "De nombreux magasins sont fermés le dimanche et les jours fériés, alors planifiez à l'avance. Évitez le bruit dans les quartiers résidentiels, surtout le soir et le dimanche.",
+    "de": "Viele Geschäfte sind sonn- und feiertags geschlossen, plane also voraus. Halte die Lautstärke in Wohngebieten niedrig, besonders abends und sonntags."
+   }
+  },
+  {
+   "id": "ct-LI-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "Orderliness is valued: keep public spaces clean, follow recycling rules where you stay and wait your turn in queues. Many locals appreciate it when visitors do the same.",
+    "it": "L'ordine è apprezzato: tieni puliti gli spazi pubblici, segui le regole sul riciclo dove alloggi e aspetta il tuo turno in coda. Molti locali apprezzano che i visitatori facciano lo stesso.",
+    "es": "Se valora el orden: mantén limpios los espacios públicos, sigue las normas de reciclaje donde te alojes y espera tu turno en las colas. A muchos locales les gusta que los visitantes hagan lo mismo.",
+    "pt": "Valoriza-se a ordem: mantém os espaços públicos limpos, segue as regras de reciclagem onde estiveres alojado e espera pela tua vez nas filas. Muitos locais apreciam que os visitantes façam o mesmo.",
+    "pt_BR": "Valoriza-se a ordem: mantenha os espaços públicos limpos, siga as regras de reciclagem onde estiver hospedado e espere a sua vez nas filas. Muitos locais gostam quando os visitantes fazem o mesmo.",
+    "fr": "L'ordre est valorisé : gardez les espaces publics propres, suivez les règles de recyclage de votre hébergement et attendez votre tour dans les files. Beaucoup d'habitants apprécient que les visiteurs en fassent autant.",
+    "de": "Ordnung wird geschätzt: Halte öffentliche Räume sauber, befolge am Aufenthaltsort die Recyclingregeln und warte in Schlangen, bis du dran bist. Viele Einheimische freuen sich, wenn Besucher das ebenso tun."
+   }
+  },
+  {
+   "id": "ct-LI-16",
+   "category": "transport",
+   "text": {
+    "en": "Liechtenstein Bus is a dense public bus network that connects to the Swiss bus and train system at Buchs and Sargans, so you can easily go on to Switzerland.",
+    "it": "Liechtenstein Bus è una fitta rete di autobus pubblici che si collega al sistema svizzero di bus e treni a Buchs e Sargans, così è facile proseguire verso la Svizzera.",
+    "es": "Liechtenstein Bus es una amplia red de autobuses públicos que conecta con el sistema suizo de autobuses y trenes en Buchs y Sargans, así que es fácil continuar hacia Suiza.",
+    "pt": "O Liechtenstein Bus é uma rede de autocarros públicos que se liga ao sistema suíço de autocarros e comboios em Buchs e Sargans, por isso é fácil seguir para a Suíça.",
+    "pt_BR": "O Liechtenstein Bus é uma rede de ônibus públicos que se conecta ao sistema suíço de ônibus e trens em Buchs e Sargans, então é fácil seguir para a Suíça.",
+    "fr": "Liechtenstein Bus est un réseau de bus publics qui se raccorde au système suisse de bus et de trains à Buchs et Sargans, ce qui facilite la suite du voyage vers la Suisse.",
+    "de": "Liechtenstein Bus ist ein dichtes öffentliches Busnetz, das in Buchs und Sargans an das Schweizer Bus- und Bahnnetz anschließt, sodass die Weiterreise in die Schweiz einfach ist."
+   }
+  },
+  {
+   "id": "ct-LI-17",
+   "category": "transport",
+   "text": {
+    "en": "The only railway line is the Feldkirch–Buchs line, with a stop at Schaan-Vaduz. Most local trips are by bus, and many distances in the country are short enough to walk or cycle.",
+    "it": "L'unica linea ferroviaria è la Feldkirch–Buchs, con una fermata a Schaan-Vaduz. La maggior parte degli spostamenti locali avviene in autobus e molte distanze sono brevi da fare a piedi o in bici.",
+    "es": "La única línea de tren es la Feldkirch–Buchs, con parada en Schaan-Vaduz. La mayoría de los viajes locales se hacen en autobús y muchas distancias son lo bastante cortas para ir a pie o en bici.",
+    "pt": "A única linha ferroviária é a Feldkirch–Buchs, com paragem em Schaan-Vaduz. A maior parte das viagens locais faz-se de autocarro e muitas distâncias são curtas o suficiente para ir a pé ou de bicicleta.",
+    "pt_BR": "A única linha ferroviária é a Feldkirch–Buchs, com parada em Schaan-Vaduz. A maior parte das viagens locais é de ônibus e muitas distâncias são curtas o bastante para ir a pé ou de bicicleta.",
+    "fr": "La seule ligne ferroviaire est la ligne Feldkirch–Buchs, avec un arrêt à Schaan-Vaduz. La plupart des trajets locaux se font en bus et beaucoup de distances sont assez courtes pour se faire à pied ou à vélo.",
+    "de": "Die einzige Bahnlinie ist die Strecke Feldkirch–Buchs mit Halt in Schaan-Vaduz. Die meisten lokalen Fahrten gehen per Bus, und viele Strecken sind kurz genug zum Gehen oder Radfahren."
+   }
+  },
+  {
+   "id": "ct-LI-18",
+   "category": "language",
+   "text": {
+    "en": "German is the official language, but most people speak an Alemannic dialect at home that differs a lot from Standard German. Locals usually switch to standard German with visitors.",
+    "it": "Il tedesco è la lingua ufficiale, ma la maggior parte delle persone parla in casa un dialetto alemanno molto diverso dal tedesco standard. Con i visitatori di solito si passa al tedesco standard.",
+    "es": "El alemán es la lengua oficial, pero la mayoría habla en casa un dialecto alemánico muy distinto del alemán estándar. Con los visitantes, los locales suelen pasar al alemán estándar.",
+    "pt": "O alemão é a língua oficial, mas a maioria fala em casa um dialeto alemânico muito diferente do alemão padrão. Com os visitantes, os locais costumam passar para o alemão padrão.",
+    "pt_BR": "O alemão é a língua oficial, mas a maioria fala em casa um dialeto alemânico muito diferente do alemão padrão. Com os visitantes, os locais costumam passar para o alemão padrão.",
+    "fr": "L'allemand est la langue officielle, mais la plupart des gens parlent chez eux un dialecte alémanique très différent de l'allemand standard. Avec les visiteurs, on passe généralement à l'allemand standard.",
+    "de": "Deutsch ist Amtssprache, aber die meisten sprechen zu Hause einen alemannischen Dialekt, der sich stark vom Hochdeutschen unterscheidet. Mit Besuchern wechseln Einheimische meist ins Hochdeutsche."
+   }
+  },
+  {
+   "id": "ct-LI-19",
+   "category": "language",
+   "text": {
+    "en": "In tourism and business, English is often understood, but starting with a few words of German such as \"bitte\", \"danke\" and \"Grüezi\" is always welcome.",
+    "it": "Nel turismo e negli affari l'inglese è spesso compreso, ma iniziare con qualche parola di tedesco come \"bitte\", \"danke\" e \"Grüezi\" è sempre gradito.",
+    "es": "En turismo y negocios a menudo se entiende el inglés, pero empezar con unas palabras de alemán como \"bitte\", \"danke\" y \"Grüezi\" siempre se agradece.",
+    "pt": "No turismo e nos negócios o inglês é muitas vezes compreendido, mas começar com algumas palavras de alemão como \"bitte\", \"danke\" e \"Grüezi\" é sempre bem-vindo.",
+    "pt_BR": "No turismo e nos negócios o inglês costuma ser compreendido, mas começar com algumas palavras de alemão como \"bitte\", \"danke\" e \"Grüezi\" é sempre bem-vindo.",
+    "fr": "Dans le tourisme et les affaires, l'anglais est souvent compris, mais commencer par quelques mots d'allemand comme \"bitte\", \"danke\" et \"Grüezi\" est toujours apprécié.",
+    "de": "In Tourismus und Geschäftsleben wird oft Englisch verstanden, doch ein paar deutsche Wörter wie \"bitte\", \"danke\" und \"Grüezi\" kommen immer gut an."
+   }
+  },
+  {
+   "id": "ct-LI-20",
+   "category": "festivals",
+   "text": {
+    "en": "National Day on 15 August is the biggest celebration, with events in Vaduz, speeches by the Prince and fireworks. Many locals join, so book accommodation early.",
+    "it": "La Festa nazionale del 15 agosto è la celebrazione principale, con eventi a Vaduz, discorsi del Principe e fuochi d'artificio. Molti locali partecipano, quindi prenota l'alloggio per tempo.",
+    "es": "El Día Nacional, el 15 de agosto, es la mayor celebración, con actos en Vaduz, discursos del Príncipe y fuegos artificiales. Muchos locales participan, así que reserva alojamiento con tiempo.",
+    "pt": "O Dia Nacional, a 15 de agosto, é a maior celebração, com eventos em Vaduz, discursos do Príncipe e fogo de artifício. Muitos locais participam, por isso reserva o alojamento com antecedência.",
+    "pt_BR": "O Dia Nacional, em 15 de agosto, é a maior celebração, com eventos em Vaduz, discursos do Príncipe e fogos de artifício. Muitos locais participam, então reserve a hospedagem com antecedência.",
+    "fr": "La fête nationale du 15 août est la plus grande célébration, avec des événements à Vaduz, des discours du Prince et un feu d'artifice. Beaucoup d'habitants y participent, réservez donc tôt votre hébergement.",
+    "de": "Der Staatsfeiertag am 15. August ist das größte Fest mit Veranstaltungen in Vaduz, Reden des Fürsten und Feuerwerk. Viele Einheimische machen mit, buche deine Unterkunft also früh."
+   }
+  },
+  {
+   "id": "ct-LI-21",
+   "category": "festivals",
+   "text": {
+    "en": "Fasnacht, the pre-Lent carnival, brings costumes, music and parades to villages in the country. Joining in with a costume or a good mood is welcomed.",
+    "it": "La Fasnacht, il carnevale prima della Quaresima, porta costumi, musica e sfilate nei paesi. Partecipare con un costume o buon umore è ben accetto.",
+    "es": "La Fasnacht, el carnaval previo a la Cuaresma, trae disfraces, música y desfiles a los pueblos. Participar con un disfraz o buen ánimo es bien recibido.",
+    "pt": "A Fasnacht, o carnaval antes da Quaresma, traz trajes, música e desfiles às aldeias. Participar com um disfarce ou bom humor é bem-vindo.",
+    "pt_BR": "A Fasnacht, o carnaval antes da Quaresma, traz fantasias, música e desfiles às vilas. Participar com uma fantasia ou bom humor é bem-vindo.",
+    "fr": "La Fasnacht, le carnaval d'avant le Carême, apporte costumes, musique et défilés dans les villages. Participer en costume ou avec bonne humeur est bienvenu.",
+    "de": "Die Fasnacht, der Karneval vor der Fastenzeit, bringt Kostüme, Musik und Umzüge in die Dörfer. Wer verkleidet oder gut gelaunt mitmacht, ist willkommen."
+   }
+  },
+  {
+   "id": "ct-LI-22",
+   "category": "family",
+   "text": {
+    "en": "Local clubs (Vereine) for music, sport, carnival or traditions are a big part of community life, and family and neighbours often take part together.",
+    "it": "I club locali (Vereine) di musica, sport, carnevale o tradizioni sono una parte importante della vita comunitaria e spesso famiglia e vicini partecipano insieme.",
+    "es": "Los clubes locales (Vereine) de música, deporte, carnaval o tradiciones son una parte importante de la vida comunitaria, y a menudo familia y vecinos participan juntos.",
+    "pt": "Os clubes locais (Vereine) de música, desporto, carnaval ou tradições são uma parte importante da vida comunitária, e família e vizinhos participam muitas vezes juntos.",
+    "pt_BR": "Os clubes locais (Vereine) de música, esporte, carnaval ou tradições são uma parte importante da vida comunitária, e família e vizinhos costumam participar juntos.",
+    "fr": "Les associations locales (Vereine) de musique, de sport, de carnaval ou de traditions occupent une grande place dans la vie communautaire, et famille et voisins y participent souvent ensemble.",
+    "de": "Örtliche Vereine für Musik, Sport, Fasnacht oder Brauchtum prägen das Gemeinschaftsleben stark, und oft machen Familie und Nachbarn gemeinsam mit."
+   }
+  },
+  {
+   "id": "ct-LI-23",
+   "category": "money",
+   "text": {
+    "en": "Liechtenstein uses the Swiss franc, not the euro, and is in a customs union with Switzerland. Cards are widely accepted, and euros are not always taken, so check before paying.",
+    "it": "Il Liechtenstein usa il franco svizzero, non l'euro, ed è in unione doganale con la Svizzera. Le carte sono ampiamente accettate e gli euro non sempre, quindi controlla prima di pagare.",
+    "es": "Liechtenstein usa el franco suizo, no el euro, y está en unión aduanera con Suiza. Las tarjetas se aceptan ampliamente y los euros no siempre, así que comprueba antes de pagar.",
+    "pt": "O Liechtenstein usa o franco suíço, não o euro, e está em união aduaneira com a Suíça. Os cartões são amplamente aceites e os euros nem sempre, por isso confirma antes de pagar.",
+    "pt_BR": "Liechtenstein usa o franco suíço, não o euro, e está em união aduaneira com a Suíça. Cartões são amplamente aceitos e euros nem sempre, então confirme antes de pagar.",
+    "fr": "Le Liechtenstein utilise le franc suisse, pas l'euro, et forme une union douanière avec la Suisse. Les cartes sont largement acceptées, les euros pas toujours : vérifiez avant de payer.",
+    "de": "Liechtenstein nutzt den Schweizer Franken, nicht den Euro, und bildet mit der Schweiz eine Zollunion. Karten werden breit akzeptiert, Euro nicht immer, frag also vor dem Bezahlen nach."
+   }
+  },
+  {
+   "id": "ct-LI-24",
+   "category": "photography",
+   "text": {
+    "en": "Vaduz Castle overlooks the capital and is the Prince's residence, closed to the public, so it is best photographed from outside. Ask before photographing people.",
+    "it": "Il castello di Vaduz domina la capitale ed è la residenza del Principe, chiusa al pubblico, quindi si fotografa meglio da fuori. Chiedi prima di fotografare le persone.",
+    "es": "El castillo de Vaduz domina la capital y es la residencia del Príncipe, cerrada al público, por lo que conviene fotografiarlo desde fuera. Pregunta antes de fotografiar a personas.",
+    "pt": "O castelo de Vaduz domina a capital e é a residência do Príncipe, fechada ao público, por isso é melhor fotografá-lo do exterior. Pergunta antes de fotografar pessoas.",
+    "pt_BR": "O castelo de Vaduz domina a capital e é a residência do Príncipe, fechada ao público, então é melhor fotografá-lo de fora. Pergunte antes de fotografar pessoas.",
+    "fr": "Le château de Vaduz domine la capitale et est la résidence du Prince, fermée au public ; il se photographie donc depuis l'extérieur. Demandez avant de photographier des personnes.",
+    "de": "Schloss Vaduz überragt die Hauptstadt und ist die Residenz des Fürsten, für Besucher geschlossen, daher fotografiert man es am besten von außen. Frag, bevor du Menschen fotografierst."
+   }
+  },
+  {
+   "id": "ct-LI-25",
+   "category": "nightlife",
+   "text": {
+    "en": "Evenings are generally quiet and low-key, with dinners, cafés and a few bars in Vaduz and Schaan. Many people head to nearby Swiss or Austrian towns for bigger nights out.",
+    "it": "Le serate sono in genere tranquille e sobrie, con cene, caffè e qualche locale a Vaduz e Schaan. Molti vanno nelle vicine città svizzere o austriache per serate più animate.",
+    "es": "Las noches suelen ser tranquilas y discretas, con cenas, cafés y algunos bares en Vaduz y Schaan. Muchos van a localidades suizas o austriacas cercanas para salidas más animadas.",
+    "pt": "As noites são geralmente calmas e discretas, com jantares, cafés e alguns bares em Vaduz e Schaan. Muitos vão a cidades suíças ou austríacas próximas para saídas mais animadas.",
+    "pt_BR": "As noites costumam ser calmas e discretas, com jantares, cafés e alguns bares em Vaduz e Schaan. Muita gente vai a cidades suíças ou austríacas próximas para saídas mais animadas.",
+    "fr": "Les soirées sont généralement calmes et sobres, avec des dîners, des cafés et quelques bars à Vaduz et Schaan. Beaucoup vont dans les villes suisses ou autrichiennes voisines pour des sorties plus animées.",
+    "de": "Die Abende sind meist ruhig und unaufgeregt, mit Essen, Cafés und einigen Bars in Vaduz und Schaan. Für größere Ausgehabende fahren viele in nahe Schweizer oder österreichische Städte."
+   }
+  },
+  {
+   "id": "ct-LI-26",
+   "category": "nature",
+   "text": {
+    "en": "The Alpine landscape is made for hiking, and Malbun is the country's only ski area. Check the weather before going up and keep to marked trails.",
+    "it": "Il paesaggio alpino è fatto per le escursioni e Malbun è l'unica area sciistica del paese. Controlla il meteo prima di salire e resta sui sentieri segnalati.",
+    "es": "El paisaje alpino es ideal para el senderismo, y Malbun es la única zona de esquí del país. Consulta el tiempo antes de subir y mantente en los senderos señalizados.",
+    "pt": "A paisagem alpina é feita para caminhadas, e Malbun é a única zona de esqui do país. Consulta a meteorologia antes de subir e fica nos trilhos sinalizados.",
+    "pt_BR": "A paisagem alpina é feita para trilhas, e Malbun é a única área de esqui do país. Confira a previsão do tempo antes de subir e fique nas trilhas sinalizadas.",
+    "fr": "Le paysage alpin est fait pour la randonnée, et Malbun est la seule station de ski du pays. Consultez la météo avant de monter et restez sur les sentiers balisés.",
+    "de": "Die Alpenlandschaft ist zum Wandern wie gemacht, und Malbun ist das einzige Skigebiet des Landes. Prüfe vor dem Aufstieg das Wetter und bleibe auf markierten Wegen."
+   }
+  },
+  {
+   "id": "ct-LI-27",
+   "category": "nature",
+   "text": {
+    "en": "The Rhine, which forms the western border with Switzerland, has paths popular with walkers and cyclists. The flat valley makes for easy rides across the country.",
+    "it": "Il Reno, che forma il confine occidentale con la Svizzera, ha percorsi molto frequentati da escursionisti e ciclisti. La valle pianeggiante rende facili le uscite in bici in tutto il paese.",
+    "es": "El Rin, que forma la frontera occidental con Suiza, tiene caminos muy frecuentados por senderistas y ciclistas. El valle llano facilita los paseos en bici por todo el país.",
+    "pt": "O Reno, que forma a fronteira ocidental com a Suíça, tem caminhos muito procurados por caminhantes e ciclistas. O vale plano facilita os passeios de bicicleta por todo o país.",
+    "pt_BR": "O Reno, que forma a fronteira ocidental com a Suíça, tem caminhos muito procurados por caminhantes e ciclistas. O vale plano facilita os passeios de bicicleta por todo o país.",
+    "fr": "Le Rhin, qui forme la frontière ouest avec la Suisse, offre des chemins très prisés des marcheurs et des cyclistes. La vallée plate facilite les sorties à vélo dans tout le pays.",
+    "de": "Der Rhein, der die Westgrenze zur Schweiz bildet, hat Wege, die bei Spaziergängern und Radfahrern beliebt sind. Das flache Tal macht Radtouren durch das ganze Land leicht."
+   }
+  },
+  {
+   "id": "ct-LI-28",
+   "category": "safety",
+   "text": {
+    "en": "Liechtenstein is very safe, but mountain weather changes quickly. The European emergency number is 112; tell someone your hiking route and carry layers and water.",
+    "it": "Il Liechtenstein è molto sicuro, ma il tempo in montagna cambia in fretta. Il numero europeo di emergenza è 112; comunica a qualcuno il tuo percorso e porta strati di vestiti e acqua.",
+    "es": "Liechtenstein es muy seguro, pero el tiempo en montaña cambia rápido. El número europeo de emergencias es el 112; avisa a alguien de tu ruta y lleva capas de ropa y agua.",
+    "pt": "O Liechtenstein é muito seguro, mas o tempo na montanha muda depressa. O número europeu de emergência é o 112; avisa alguém do teu percurso e leva camadas de roupa e água.",
+    "pt_BR": "Liechtenstein é muito seguro, mas o tempo na montanha muda rápido. O número europeu de emergência é o 112; avise alguém do seu percurso e leve camadas de roupa e água.",
+    "fr": "Le Liechtenstein est très sûr, mais le temps change vite en montagne. Le numéro d'urgence européen est le 112 ; prévenez quelqu'un de votre itinéraire et emportez des couches de vêtements et de l'eau.",
+    "de": "Liechtenstein ist sehr sicher, aber das Bergwetter schlägt schnell um. Die europäische Notrufnummer ist die 112; sag jemandem, welche Route du wanderst, und nimm Kleidung zum Wechseln und Wasser mit."
+   }
+  },
+  {
+   "id": "ct-LI-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Locals are proud that their small principality is a sovereign state, with a prince living in the castle above Vaduz. Showing interest in how such a small country works usually starts a good chat.",
+    "it": "Gli abitanti sono fieri che il loro piccolo principato sia uno Stato sovrano, con un principe che vive nel castello sopra Vaduz. Mostrare interesse per come funziona un paese così piccolo avvia spesso una bella conversazione.",
+    "es": "Los habitantes están orgullosos de que su pequeño principado sea un Estado soberano, con un príncipe que vive en el castillo sobre Vaduz. Mostrar interés por cómo funciona un país tan pequeño suele abrir una buena charla.",
+    "pt": "Os habitantes têm orgulho de o seu pequeno principado ser um Estado soberano, com um príncipe que vive no castelo sobre Vaduz. Mostrar interesse por como funciona um país tão pequeno costuma abrir boa conversa.",
+    "pt_BR": "Os habitantes têm orgulho de o seu pequeno principado ser um Estado soberano, com um príncipe que vive no castelo acima de Vaduz. Mostrar interesse em como funciona um país tão pequeno costuma render uma boa conversa.",
+    "fr": "Les habitants sont fiers que leur petite principauté soit un État souverain, avec un prince vivant dans le château au-dessus de Vaduz. S'intéresser au fonctionnement d'un si petit pays lance souvent une bonne discussion.",
+    "de": "Die Einheimischen sind stolz darauf, dass ihr kleines Fürstentum ein souveräner Staat ist, mit einem Fürsten, der im Schloss über Vaduz lebt. Interesse daran, wie ein so kleines Land funktioniert, führt oft zu einem guten Gespräch."
+   }
+  },
+  {
+   "id": "ct-LI-30",
+   "category": "local_pride",
+   "text": {
+    "en": "In Triesenberg, a village on the mountainside, people keep alive a Walser heritage and dialect brought by settlers centuries ago. Asking about local history there is usually welcomed.",
+    "it": "A Triesenberg, paese sul pendio della montagna, si mantengono vivi il patrimonio e il dialetto walser portati da coloni secoli fa. Chiedere della storia locale lì è di solito gradito.",
+    "es": "En Triesenberg, un pueblo en la ladera de la montaña, se mantienen vivos el patrimonio y el dialecto walser traídos por colonos hace siglos. Preguntar por la historia local allí suele agradecerse.",
+    "pt": "Em Triesenberg, uma aldeia na encosta da montanha, mantêm-se vivos o património e o dialeto walser trazidos por colonos há séculos. Perguntar pela história local aí costuma ser bem-vindo.",
+    "pt_BR": "Em Triesenberg, uma vila na encosta da montanha, mantêm-se vivos o patrimônio e o dialeto walser trazidos por colonos séculos atrás. Perguntar sobre a história local lá costuma ser bem-vindo.",
+    "fr": "À Triesenberg, village à flanc de montagne, on garde vivants le patrimoine et le dialecte walser apportés par des colons il y a des siècles. Poser des questions sur l'histoire locale y est généralement bien accueilli.",
+    "de": "In Triesenberg, einem Dorf am Berghang, pflegt man das Walser Erbe und den Dialekt, die vor Jahrhunderten von Siedlern mitgebracht wurden. Fragen zur Ortsgeschichte sind dort meist willkommen."
+   }
+  }
+ ],
+ "LK": [
+  {
+   "id": "ct-LK-01",
+   "category": "greetings",
+   "text": {
+    "en": "\"Ayubowan\" is the traditional Sinhala greeting, said with palms pressed together near the chest. In Tamil-speaking areas, \"Vanakkam\" is used with the same gesture.",
+    "it": "\"Ayubowan\" è il saluto tradizionale singalese, detto con i palmi uniti all'altezza del petto. Nelle zone di lingua tamil si usa \"Vanakkam\" con lo stesso gesto.",
+    "es": "\"Ayubowan\" es el saludo tradicional cingalés, que se dice con las palmas juntas a la altura del pecho. En las zonas de habla tamil se usa \"Vanakkam\" con el mismo gesto.",
+    "pt": "\"Ayubowan\" é a saudação tradicional cingalesa, dita com as palmas das mãos unidas junto ao peito. Nas zonas de língua tâmil usa-se \"Vanakkam\" com o mesmo gesto.",
+    "pt_BR": "\"Ayubowan\" é a saudação tradicional cingalesa, dita com as palmas das mãos unidas junto ao peito. Nas regiões de língua tâmil usa-se \"Vanakkam\" com o mesmo gesto.",
+    "fr": "\"Ayubowan\" est le salut traditionnel cinghalais, prononcé les paumes jointes près de la poitrine. Dans les régions tamoules, on dit \"Vanakkam\" avec le même geste.",
+    "de": "\"Ayubowan\" ist der traditionelle singhalesische Gruß, gesprochen mit vor der Brust zusammengelegten Handflächen. In tamilischsprachigen Gebieten sagt man \"Vanakkam\" mit derselben Geste."
+   }
+  },
+  {
+   "id": "ct-LK-02",
+   "category": "greetings",
+   "text": {
+    "en": "Handshakes are common in cities, especially in business. Wait for a woman or an elder to offer a hand first; otherwise a smile and a small nod are always polite.",
+    "it": "Le strette di mano sono comuni in città, soprattutto negli affari. Aspetta che una donna o un anziano porga la mano per primo; altrimenti un sorriso e un cenno del capo sono sempre cortesi.",
+    "es": "Los apretones de manos son comunes en las ciudades, sobre todo en los negocios. Espera a que una mujer o una persona mayor ofrezca la mano primero; si no, una sonrisa y un leve asentimiento siempre son corteses.",
+    "pt": "Os apertos de mão são comuns nas cidades, sobretudo nos negócios. Espera que uma mulher ou uma pessoa mais velha estenda a mão primeiro; caso contrário, um sorriso e um leve aceno de cabeça são sempre corteses.",
+    "pt_BR": "Apertos de mão são comuns nas cidades, principalmente nos negócios. Espere uma mulher ou uma pessoa mais velha estender a mão primeiro; senão, um sorriso e um leve aceno de cabeça são sempre educados.",
+    "fr": "Les poignées de main sont courantes en ville, surtout dans les affaires. Attendez qu'une femme ou un aîné tende la main en premier ; sinon, un sourire et un petit signe de tête sont toujours polis.",
+    "de": "Händeschütteln ist in Städten üblich, besonders im Geschäftsleben. Warte, bis eine Frau oder ein älterer Mensch zuerst die Hand reicht; sonst sind ein Lächeln und ein leichtes Nicken immer höflich."
+   }
+  },
+  {
+   "id": "ct-LK-03",
+   "category": "conversation",
+   "text": {
+    "en": "Cricket is a national passion, and chatting about matches or favourite players is an easy way to connect with almost anyone, from tuk-tuk drivers to students.",
+    "it": "Il cricket è una passione nazionale e parlare di partite o giocatori preferiti è un modo facile per entrare in sintonia con quasi chiunque, dai tassisti di tuk-tuk agli studenti.",
+    "es": "El críquet es una pasión nacional, y hablar de partidos o jugadores favoritos es una forma fácil de conectar con casi cualquiera, desde taxistas de tuk-tuk hasta estudiantes.",
+    "pt": "O críquete é uma paixão nacional, e conversar sobre jogos ou jogadores favoritos é uma forma fácil de criar ligação com quase qualquer pessoa, desde condutores de tuk-tuk a estudantes.",
+    "pt_BR": "O críquete é uma paixão nacional, e conversar sobre jogos ou jogadores favoritos é uma forma fácil de se aproximar de quase qualquer pessoa, de motoristas de tuk-tuk a estudantes.",
+    "fr": "Le cricket est une passion nationale, et parler de matchs ou de joueurs préférés est un moyen facile d'engager la conversation avec presque tout le monde, des chauffeurs de tuk-tuk aux étudiants.",
+    "de": "Cricket ist eine Nationalleidenschaft, und Gespräche über Spiele oder Lieblingsspieler sind ein leichter Draht zu fast jedem, vom Tuk-Tuk-Fahrer bis zum Studenten."
+   }
+  },
+  {
+   "id": "ct-LK-04",
+   "category": "conversation",
+   "text": {
+    "en": "Many people are curious and friendly toward visitors and may ask where you are from, whether you are travelling alone and about your family. It is meant warmly.",
+    "it": "Molte persone sono curiose e cordiali con i visitatori e possono chiedere da dove vieni, se viaggi da solo e della tua famiglia. È detto con calore.",
+    "es": "Muchas personas son curiosas y amables con los visitantes y pueden preguntar de dónde eres, si viajas solo y por tu familia. Se dice con cariño.",
+    "pt": "Muitas pessoas são curiosas e simpáticas com os visitantes e podem perguntar de onde és, se viajas sozinho e pela tua família. É dito com carinho.",
+    "pt_BR": "Muitas pessoas são curiosas e simpáticas com os visitantes e podem perguntar de onde você é, se viaja sozinho e sobre sua família. É dito com carinho.",
+    "fr": "Beaucoup de gens sont curieux et chaleureux envers les visiteurs et peuvent demander d'où vous venez, si vous voyagez seul et des nouvelles de votre famille. C'est dit avec bienveillance.",
+    "de": "Viele Menschen sind Besuchern gegenüber neugierig und freundlich und fragen vielleicht, woher du kommst, ob du allein reist und nach deiner Familie. Das ist herzlich gemeint."
+   }
+  },
+  {
+   "id": "ct-LK-05",
+   "category": "dining",
+   "text": {
+    "en": "A typical meal is rice served with several curries, sambols and mallung (chopped leaves with coconut). Many people eat with their right hand, and it is fine to ask for cutlery.",
+    "it": "Un pasto tipico è riso servito con diversi curry, sambol e mallung (foglie tritate con cocco). Molti mangiano con la mano destra, ed è normale chiedere le posate.",
+    "es": "Una comida típica es arroz servido con varios currys, sambols y mallung (hojas picadas con coco). Muchos comen con la mano derecha, y es normal pedir cubiertos.",
+    "pt": "Uma refeição típica é arroz servido com vários caris, sambols e mallung (folhas picadas com coco). Muitas pessoas comem com a mão direita, e é normal pedir talheres.",
+    "pt_BR": "Uma refeição típica é arroz servido com vários currys, sambols e mallung (folhas picadas com coco). Muita gente come com a mão direita, e é normal pedir talheres.",
+    "fr": "Un repas typique est du riz servi avec plusieurs currys, des sambols et du mallung (feuilles hachées au coco). Beaucoup mangent de la main droite, et il est normal de demander des couverts.",
+    "de": "Eine typische Mahlzeit ist Reis mit mehreren Currys, Sambols und Mallung (gehackte Blätter mit Kokos). Viele essen mit der rechten Hand, und es ist völlig in Ordnung, nach Besteck zu fragen."
+   }
+  },
+  {
+   "id": "ct-LK-06",
+   "category": "dining",
+   "text": {
+    "en": "Use your right hand to eat, give, receive and pass food, since the left hand is traditionally seen as less clean. Wash your hands before and after eating.",
+    "it": "Usa la mano destra per mangiare, dare, ricevere e passare il cibo, perché la sinistra è tradizionalmente considerata meno pulita. Lavati le mani prima e dopo il pasto.",
+    "es": "Usa la mano derecha para comer, dar, recibir y pasar comida, ya que la izquierda se considera tradicionalmente menos limpia. Lávate las manos antes y después de comer.",
+    "pt": "Usa a mão direita para comer, dar, receber e passar comida, pois a esquerda é tradicionalmente vista como menos limpa. Lava as mãos antes e depois de comer.",
+    "pt_BR": "Use a mão direita para comer, dar, receber e passar comida, pois a esquerda é tradicionalmente vista como menos limpa. Lave as mãos antes e depois de comer.",
+    "fr": "Utilisez la main droite pour manger, donner, recevoir et passer la nourriture, car la gauche est traditionnellement jugée moins propre. Lavez-vous les mains avant et après le repas.",
+    "de": "Iss, gib, nimm und reiche Essen mit der rechten Hand, denn die linke gilt traditionell als weniger rein. Wasche dir vor und nach dem Essen die Hände."
+   }
+  },
+  {
+   "id": "ct-LK-07",
+   "category": "dining",
+   "text": {
+    "en": "Tea is served to guests as soon as they arrive, and at festivals and gatherings. Accepting a cup is a polite way to show appreciation for the host's hospitality.",
+    "it": "Il tè viene servito agli ospiti appena arrivano, e durante feste e incontri. Accettare una tazza è un modo cortese di apprezzare l'ospitalità di chi ti accoglie.",
+    "es": "El té se sirve a los invitados en cuanto llegan y también en fiestas y reuniones. Aceptar una taza es una forma cortés de agradecer la hospitalidad del anfitrión.",
+    "pt": "O chá é servido aos convidados assim que chegam e também em festas e reuniões. Aceitar uma chávena é uma forma educada de agradecer a hospitalidade do anfitrião.",
+    "pt_BR": "O chá é servido aos convidados assim que chegam e também em festas e encontros. Aceitar uma xícara é uma forma educada de agradecer a hospitalidade do anfitrião.",
+    "fr": "Le thé est servi aux invités dès leur arrivée, ainsi que lors des fêtes et des réunions. Accepter une tasse est une manière polie de remercier l'hôte de son hospitalité.",
+    "de": "Tee wird Gästen gleich nach ihrer Ankunft sowie bei Festen und Treffen serviert. Eine Tasse anzunehmen ist eine höfliche Art, die Gastfreundschaft des Gastgebers zu würdigen."
+   }
+  },
+  {
+   "id": "ct-LK-08",
+   "category": "tipping",
+   "text": {
+    "en": "Many hotels and restaurants add a service charge of about 10 percent to the bill. If it is not included, leaving around 10 percent for good service is appreciated.",
+    "it": "Molti hotel e ristoranti aggiungono al conto un servizio di circa il 10 per cento. Se non è incluso, lasciare circa il 10 per cento per un buon servizio è apprezzato.",
+    "es": "Muchos hoteles y restaurantes añaden a la cuenta un cargo por servicio de alrededor del 10 por ciento. Si no está incluido, dejar cerca del 10 por ciento por un buen servicio se agradece.",
+    "pt": "Muitos hotéis e restaurantes acrescentam à conta uma taxa de serviço de cerca de 10 por cento. Se não estiver incluída, deixar cerca de 10 por cento por um bom serviço é apreciado.",
+    "pt_BR": "Muitos hotéis e restaurantes acrescentam à conta uma taxa de serviço de cerca de 10 por cento. Se não estiver incluída, deixar cerca de 10 por cento por um bom atendimento é apreciado.",
+    "fr": "De nombreux hôtels et restaurants ajoutent à l'addition un service d'environ 10 pour cent. S'il n'est pas inclus, laisser environ 10 pour cent pour un bon service est apprécié.",
+    "de": "Viele Hotels und Restaurants schlagen etwa 10 Prozent Servicegebühr auf die Rechnung. Ist sie nicht enthalten, wird ein Trinkgeld von rund 10 Prozent für guten Service geschätzt."
+   }
+  },
+  {
+   "id": "ct-LK-09",
+   "category": "gifts",
+   "text": {
+    "en": "When visiting a home, bring a small gift such as sweets, fruit or tea, and offer it with both hands or the right hand. Gifts are often opened later, not in front of the giver.",
+    "it": "Quando visiti una casa, porta un piccolo regalo come dolci, frutta o tè e offrilo con entrambe le mani o con la destra. I regali spesso si aprono dopo, non davanti a chi li ha fatti.",
+    "es": "Al visitar una casa, lleva un pequeño regalo como dulces, fruta o té y ofrécelo con ambas manos o con la derecha. Los regalos suelen abrirse más tarde, no delante de quien los da.",
+    "pt": "Ao visitar uma casa, leva uma pequena lembrança como doces, fruta ou chá e oferece-a com ambas as mãos ou com a direita. Os presentes costumam abrir-se depois, e não à frente de quem os dá.",
+    "pt_BR": "Ao visitar uma casa, leve uma pequena lembrança como doces, frutas ou chá e ofereça com as duas mãos ou com a direita. Os presentes costumam ser abertos depois, e não na frente de quem deu.",
+    "fr": "En visite chez quelqu'un, apportez un petit cadeau comme des sucreries, des fruits ou du thé et offrez-le des deux mains ou de la main droite. Les cadeaux s'ouvrent souvent plus tard, pas devant celui qui les offre.",
+    "de": "Bei einem Hausbesuch bringst du ein kleines Geschenk wie Süßigkeiten, Obst oder Tee mit und übergibst es mit beiden Händen oder der rechten Hand. Geschenke werden oft später geöffnet, nicht vor den Augen des Schenkenden."
+   }
+  },
+  {
+   "id": "ct-LK-10",
+   "category": "dress",
+   "text": {
+    "en": "Modest clothing that covers shoulders and knees is the norm for both men and women, especially outside beach resorts. Light cotton or linen keeps you cool in the heat.",
+    "it": "Un abbigliamento sobrio che copre spalle e ginocchia è la norma per uomini e donne, soprattutto fuori dalle località balneari. Cotone o lino leggero aiutano con il caldo.",
+    "es": "La ropa recatada que cubre hombros y rodillas es la norma para hombres y mujeres, sobre todo fuera de los centros de playa. El algodón o el lino ligero ayudan con el calor.",
+    "pt": "A roupa recatada que cobre ombros e joelhos é a norma para homens e mulheres, sobretudo fora das zonas balneares. O algodão ou o linho leve ajudam com o calor.",
+    "pt_BR": "Roupas discretas que cobrem ombros e joelhos são a norma para homens e mulheres, principalmente fora de resorts de praia. Algodão ou linho leve ajudam com o calor.",
+    "fr": "Des vêtements modestes couvrant épaules et genoux sont la norme pour les hommes comme pour les femmes, surtout hors des stations balnéaires. Le coton ou le lin léger aident face à la chaleur.",
+    "de": "Dezente Kleidung, die Schultern und Knie bedeckt, ist für Männer und Frauen die Norm, besonders abseits der Badeorte. Leichte Baumwolle oder Leinen hilft gegen die Hitze."
+   }
+  },
+  {
+   "id": "ct-LK-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Remove your shoes and hat before entering Buddhist and Hindu temples, and also mosques. Many people wear white for temple visits, and covered shoulders and knees are expected.",
+    "it": "Togliti scarpe e cappello prima di entrare nei templi buddhisti e indù e nelle moschee. Molti vestono di bianco per le visite ai templi e si aspettano spalle e ginocchia coperte.",
+    "es": "Quítate los zapatos y el sombrero antes de entrar en templos budistas e hindúes y en mezquitas. Muchos visten de blanco para visitar templos, y se esperan hombros y rodillas cubiertos.",
+    "pt": "Tira os sapatos e o chapéu antes de entrar em templos budistas e hindus e em mesquitas. Muitas pessoas vestem branco para visitar templos, e esperam-se ombros e joelhos cobertos.",
+    "pt_BR": "Tire os sapatos e o chapéu antes de entrar em templos budistas e hindus e em mesquitas. Muita gente veste branco para visitar templos, e espera-se ombros e joelhos cobertos.",
+    "fr": "Retirez chaussures et chapeau avant d'entrer dans les temples bouddhistes et hindous ainsi que dans les mosquées. Beaucoup portent du blanc pour visiter les temples, et épaules et genoux couverts sont attendus.",
+    "de": "Zieh vor buddhistischen und hinduistischen Tempeln sowie Moscheen Schuhe und Hut aus. Viele tragen beim Tempelbesuch Weiß, und bedeckte Schultern und Knie werden erwartet."
+   }
+  },
+  {
+   "id": "ct-LK-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "Never pose for photos with your back to a Buddha statue, and do not climb on or touch statues. Buddhism is deeply respected, so treat images and monks with care.",
+    "it": "Non metterti in posa con le spalle a una statua del Buddha e non salire né toccare le statue. Il buddhismo è profondamente rispettato, quindi tratta immagini e monaci con cura.",
+    "es": "No poses para fotos dándole la espalda a una estatua de Buda y no te subas ni toques las estatuas. El budismo es muy respetado, así que trata con cuidado las imágenes y a los monjes.",
+    "pt": "Não posses para fotografias de costas para uma estátua de Buda e não subas nem toques nas estátuas. O budismo é muito respeitado, por isso trata com cuidado as imagens e os monges.",
+    "pt_BR": "Não posicione para fotos de costas para uma estátua de Buda e não suba nem toque nas estátuas. O budismo é muito respeitado, então trate com cuidado as imagens e os monges.",
+    "fr": "Ne posez jamais pour une photo le dos tourné à une statue de Bouddha, et ne montez pas dessus et ne la touchez pas. Le bouddhisme est profondément respecté ; traitez images et moines avec égards.",
+    "de": "Posiere nie mit dem Rücken zu einer Buddha-Statue für Fotos und klettere nicht auf Statuen oder berühre sie. Der Buddhismus wird tief respektiert, geh also achtsam mit Bildern und Mönchen um."
+   }
+  },
+  {
+   "id": "ct-LK-13",
+   "category": "gestures",
+   "text": {
+    "en": "A side-to-side head wobble often means yes, agreement or just \"I'm listening\", not no. Use your right hand, or both hands, to give and receive items.",
+    "it": "Un movimento della testa da un lato all'altro spesso significa sì, accordo o semplicemente \"ti ascolto\", non no. Usa la mano destra, o entrambe, per dare e ricevere oggetti.",
+    "es": "Un movimiento de cabeza de lado a lado suele significar sí, acuerdo o simplemente \"te escucho\", no un no. Usa la mano derecha, o ambas, para dar y recibir objetos.",
+    "pt": "Um movimento da cabeça de um lado para o outro significa muitas vezes sim, concordância ou apenas \"estou a ouvir\", não um não. Usa a mão direita, ou ambas, para dar e receber objetos.",
+    "pt_BR": "Um balanço da cabeça de um lado para o outro muitas vezes significa sim, concordância ou apenas \"estou ouvindo\", não um não. Use a mão direita, ou as duas, para dar e receber objetos.",
+    "fr": "Un balancement de la tête d'un côté à l'autre signifie souvent oui, accord ou simplement \"je vous écoute\", pas non. Utilisez la main droite, ou les deux, pour donner et recevoir des objets.",
+    "de": "Ein seitliches Kopfwackeln bedeutet oft Ja, Zustimmung oder einfach \"ich höre zu\", nicht Nein. Gib und nimm Dinge mit der rechten Hand oder beiden Händen."
+   }
+  },
+  {
+   "id": "ct-LK-14",
+   "category": "punctuality",
+   "text": {
+    "en": "For business and official appointments, arrive on time. Social events can start later than announced, so a little flexibility helps, but let hosts know if you will be late.",
+    "it": "Per appuntamenti di lavoro e ufficiali, arriva in orario. Gli eventi sociali possono iniziare più tardi del previsto, quindi un po' di flessibilità aiuta, ma avvisa se farai tardi.",
+    "es": "Para citas de trabajo y oficiales, llega a tiempo. Los eventos sociales pueden empezar más tarde de lo anunciado, así que algo de flexibilidad ayuda, pero avisa si vas a retrasarte.",
+    "pt": "Para compromissos de trabalho e oficiais, chega a horas. Os eventos sociais podem começar mais tarde do que anunciado, por isso alguma flexibilidade ajuda, mas avisa se te atrasares.",
+    "pt_BR": "Para compromissos de trabalho e oficiais, chegue na hora. Eventos sociais podem começar mais tarde que o anunciado, então um pouco de flexibilidade ajuda, mas avise se for se atrasar.",
+    "fr": "Pour les rendez-vous professionnels et officiels, soyez à l'heure. Les événements sociaux peuvent commencer plus tard qu'annoncé, un peu de souplesse aide donc, mais prévenez en cas de retard.",
+    "de": "Zu geschäftlichen und offiziellen Terminen kommt man pünktlich. Gesellschaftliche Anlässe beginnen oft später als angekündigt, etwas Flexibilität hilft also, aber sag Bescheid, wenn du dich verspätest."
+   }
+  },
+  {
+   "id": "ct-LK-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "Public displays of affection are generally frowned upon, and speaking calmly and politely is valued. Raising your voice or showing anger in public can cause embarrassment.",
+    "it": "Le manifestazioni pubbliche di affetto sono in genere mal viste e si apprezza parlare con calma e cortesia. Alzare la voce o mostrare rabbia in pubblico può creare imbarazzo.",
+    "es": "Las muestras públicas de afecto suelen estar mal vistas y se valora hablar con calma y cortesía. Levantar la voz o mostrar enfado en público puede causar vergüenza.",
+    "pt": "As demonstrações públicas de afeto são geralmente mal vistas e valoriza-se falar com calma e cortesia. Levantar a voz ou mostrar raiva em público pode causar constrangimento.",
+    "pt_BR": "Demonstrações públicas de afeto geralmente são mal vistas e valoriza-se falar com calma e educação. Levantar a voz ou demonstrar raiva em público pode causar constrangimento.",
+    "fr": "Les démonstrations publiques d'affection sont généralement mal vues, et parler calmement et poliment est valorisé. Hausser la voix ou montrer sa colère en public peut gêner.",
+    "de": "Öffentliche Zärtlichkeiten werden meist missbilligt, und ruhiges, höfliches Sprechen wird geschätzt. Lautes Sprechen oder öffentlicher Ärger kann peinlich wirken."
+   }
+  },
+  {
+   "id": "ct-LK-16",
+   "category": "transport",
+   "text": {
+    "en": "For tuk-tuks, agree on the fare before you start or use a taxi app, since many drivers do not use meters. Comparing a price or two helps avoid surprises.",
+    "it": "Per i tuk-tuk concorda la tariffa prima di partire o usa un'app di taxi, perché molti autisti non usano il tassametro. Confrontare un paio di prezzi aiuta a evitare sorprese.",
+    "es": "En los tuk-tuks, acuerda la tarifa antes de empezar o usa una aplicación de taxi, porque muchos conductores no usan taxímetro. Comparar un par de precios ayuda a evitar sorpresas.",
+    "pt": "Nos tuk-tuks, combina o preço antes de começar ou usa uma aplicação de táxi, porque muitos condutores não usam taxímetro. Comparar um ou dois preços ajuda a evitar surpresas.",
+    "pt_BR": "Nos tuk-tuks, combine o preço antes de começar ou use um aplicativo de táxi, porque muitos motoristas não usam taxímetro. Comparar um ou dois preços ajuda a evitar surpresas.",
+    "fr": "Pour les tuk-tuks, convenez du tarif avant de partir ou utilisez une application de taxi, car beaucoup de chauffeurs n'utilisent pas de compteur. Comparer un ou deux prix évite les surprises.",
+    "de": "Bei Tuk-Tuks vereinbarst du den Fahrpreis vor der Fahrt oder nutzt eine Taxi-App, denn viele Fahrer haben kein Taxameter. Ein oder zwei Preisvergleiche helfen, Überraschungen zu vermeiden."
+   }
+  },
+  {
+   "id": "ct-LK-17",
+   "category": "transport",
+   "text": {
+    "en": "Trains are a scenic way to travel, especially through the tea hills. Seats on popular routes can sell out, so book reserved seats ahead where possible.",
+    "it": "I treni sono un modo panoramico di viaggiare, soprattutto tra le colline del tè. I posti sulle tratte più richieste possono esaurirsi, quindi prenota in anticipo dove puoi.",
+    "es": "Los trenes son una forma panorámica de viajar, sobre todo por las colinas del té. Los asientos de las rutas populares pueden agotarse, así que reserva con antelación cuando puedas.",
+    "pt": "Os comboios são uma forma panorâmica de viajar, sobretudo pelas colinas do chá. Os lugares nas rotas mais populares podem esgotar, por isso reserva com antecedência sempre que possível.",
+    "pt_BR": "Os trens são uma forma panorâmica de viajar, principalmente pelas colinas do chá. Os assentos em rotas populares podem esgotar, então reserve com antecedência sempre que possível.",
+    "fr": "Les trains sont une façon pittoresque de voyager, surtout à travers les collines de thé. Les places sur les lignes populaires peuvent être complètes ; réservez à l'avance si possible.",
+    "de": "Züge sind eine landschaftlich schöne Art zu reisen, besonders durch die Teeberge. Plätze auf beliebten Strecken können ausverkauft sein, reserviere daher möglichst im Voraus."
+   }
+  },
+  {
+   "id": "ct-LK-18",
+   "category": "language",
+   "text": {
+    "en": "Sinhala and Tamil are the main languages, and English is widely understood in cities and tourist areas. A few words such as \"stuti\" (thank you in Sinhala) are warmly received.",
+    "it": "Il singalese e il tamil sono le lingue principali e l'inglese è molto compreso nelle città e nelle zone turistiche. Poche parole come \"stuti\" (grazie in singalese) sono accolte con calore.",
+    "es": "El cingalés y el tamil son las lenguas principales, y el inglés se entiende mucho en ciudades y zonas turísticas. Unas pocas palabras como \"stuti\" (gracias en cingalés) se reciben con cariño.",
+    "pt": "O cingalês e o tâmil são as línguas principais, e o inglês é bastante compreendido nas cidades e zonas turísticas. Algumas palavras como \"stuti\" (obrigado em cingalês) são recebidas com carinho.",
+    "pt_BR": "O cingalês e o tâmil são as línguas principais, e o inglês é bastante compreendido nas cidades e áreas turísticas. Algumas palavras como \"stuti\" (obrigado em cingalês) são recebidas com carinho.",
+    "fr": "Le cinghalais et le tamoul sont les langues principales, et l'anglais est largement compris dans les villes et les zones touristiques. Quelques mots comme \"stuti\" (merci en cinghalais) sont chaleureusement accueillis.",
+    "de": "Singhalesisch und Tamil sind die Hauptsprachen, und Englisch wird in Städten und Touristengebieten oft verstanden. Ein paar Wörter wie \"stuti\" (Danke auf Singhalesisch) kommen herzlich an."
+   }
+  },
+  {
+   "id": "ct-LK-19",
+   "category": "festivals",
+   "text": {
+    "en": "The Sinhala and Tamil New Year in April is one of the biggest celebrations. Families follow auspicious times for rituals, share traditional sweets and visit relatives.",
+    "it": "Il Capodanno singalese e tamil di aprile è una delle feste più grandi. Le famiglie seguono orari propizi per i rituali, condividono dolci tradizionali e visitano i parenti.",
+    "es": "El Año Nuevo cingalés y tamil de abril es una de las mayores celebraciones. Las familias siguen horarios propicios para los rituales, comparten dulces tradicionales y visitan a los parientes.",
+    "pt": "O Ano Novo cingalês e tâmil, em abril, é uma das maiores celebrações. As famílias seguem horários auspiciosos para os rituais, partilham doces tradicionais e visitam os familiares.",
+    "pt_BR": "O Ano Novo cingalês e tâmil, em abril, é uma das maiores celebrações. As famílias seguem horários auspiciosos para os rituais, compartilham doces tradicionais e visitam os parentes.",
+    "fr": "Le Nouvel An cinghalais et tamoul, en avril, est l'une des plus grandes fêtes. Les familles suivent des horaires propices pour les rituels, partagent des douceurs traditionnelles et rendent visite à leurs proches.",
+    "de": "Das singhalesische und tamilische Neujahr im April ist eines der größten Feste. Familien richten Rituale nach günstigen Zeiten aus, teilen traditionelle Süßigkeiten und besuchen Verwandte."
+   }
+  },
+  {
+   "id": "ct-LK-20",
+   "category": "festivals",
+   "text": {
+    "en": "Every full-moon day is a Buddhist holiday called Poya. Many people visit temples and dress in white, and some places are quieter or closed on those days.",
+    "it": "Ogni giorno di luna piena è una festa buddhista chiamata Poya. Molte persone visitano i templi e vestono di bianco, e alcuni luoghi sono più tranquilli o chiusi in quei giorni.",
+    "es": "Cada día de luna llena es una fiesta budista llamada Poya. Mucha gente visita templos y viste de blanco, y algunos lugares están más tranquilos o cerrados esos días.",
+    "pt": "Cada dia de lua cheia é um feriado budista chamado Poya. Muitas pessoas visitam templos e vestem-se de branco, e alguns locais ficam mais calmos ou fechados nesses dias.",
+    "pt_BR": "Cada dia de lua cheia é um feriado budista chamado Poya. Muita gente visita templos e se veste de branco, e alguns lugares ficam mais calmos ou fechados nesses dias.",
+    "fr": "Chaque jour de pleine lune est une fête bouddhiste appelée Poya. Beaucoup de gens visitent les temples et s'habillent en blanc, et certains endroits sont plus calmes ou fermés ces jours-là.",
+    "de": "Jeder Vollmondtag ist ein buddhistischer Feiertag namens Poya. Viele besuchen Tempel und tragen Weiß, und manche Orte sind an diesen Tagen ruhiger oder geschlossen."
+   }
+  },
+  {
+   "id": "ct-LK-21",
+   "category": "festivals",
+   "text": {
+    "en": "Vesak, the Buddhist festival marking the Buddha's birth, enlightenment and passing, brings colourful lanterns and decorations to towns and villages in May.",
+    "it": "Vesak, la festa buddhista che ricorda nascita, illuminazione e morte del Buddha, porta lanterne colorate e decorazioni in città e villaggi a maggio.",
+    "es": "Vesak, la fiesta budista que recuerda el nacimiento, la iluminación y la muerte de Buda, llena de farolillos de colores y decoraciones ciudades y pueblos en mayo.",
+    "pt": "O Vesak, a festa budista que assinala o nascimento, a iluminação e a morte de Buda, enche cidades e aldeias de lanternas coloridas e decorações em maio.",
+    "pt_BR": "O Vesak, a festa budista que marca o nascimento, a iluminação e a morte de Buda, enche cidades e vilas de lanternas coloridas e decorações em maio.",
+    "fr": "Vesak, la fête bouddhiste qui célèbre la naissance, l'éveil et la mort du Bouddha, apporte lanternes colorées et décorations aux villes et villages en mai.",
+    "de": "Vesak, das buddhistische Fest zu Geburt, Erleuchtung und Tod des Buddha, bringt im Mai bunte Laternen und Dekorationen in Städte und Dörfer."
+   }
+  },
+  {
+   "id": "ct-LK-22",
+   "category": "family",
+   "text": {
+    "en": "Family is central, and respecting elders is important. Younger people often address older ones with kinship terms, and families commonly share meals and decisions together.",
+    "it": "La famiglia è centrale e rispettare gli anziani è importante. I giovani si rivolgono spesso agli adulti con termini di parentela, e le famiglie condividono spesso pasti e decisioni.",
+    "es": "La familia es central y respetar a los mayores es importante. Los jóvenes suelen dirigirse a los mayores con términos de parentesco, y las familias suelen compartir comidas y decisiones.",
+    "pt": "A família é central e respeitar os mais velhos é importante. Os mais novos tratam muitas vezes os mais velhos por termos de parentesco, e as famílias costumam partilhar refeições e decisões.",
+    "pt_BR": "A família é central e respeitar os mais velhos é importante. Os mais jovens costumam tratar os mais velhos por termos de parentesco, e as famílias costumam compartilhar refeições e decisões.",
+    "fr": "La famille est centrale et le respect des aînés est important. Les plus jeunes s'adressent souvent aux plus âgés avec des termes de parenté, et les familles partagent couramment repas et décisions.",
+    "de": "Die Familie steht im Mittelpunkt, und Respekt vor Älteren ist wichtig. Jüngere sprechen Ältere oft mit Verwandtschaftsbezeichnungen an, und Familien teilen gewöhnlich Mahlzeiten und Entscheidungen."
+   }
+  },
+  {
+   "id": "ct-LK-23",
+   "category": "money",
+   "text": {
+    "en": "The currency is the Sri Lankan rupee. ATMs are common in towns, but carry some cash for small shops, tuk-tuks and rural areas, where cards may not be accepted.",
+    "it": "La valuta è la rupia dello Sri Lanka. I bancomat sono comuni nelle città, ma porta un po' di contanti per piccoli negozi, tuk-tuk e zone rurali, dove le carte potrebbero non essere accettate.",
+    "es": "La moneda es la rupia de Sri Lanka. Los cajeros automáticos abundan en las ciudades, pero lleva algo de efectivo para tiendas pequeñas, tuk-tuks y zonas rurales, donde quizá no acepten tarjetas.",
+    "pt": "A moeda é a rupia do Sri Lanka. Os multibancos são comuns nas cidades, mas leva algum dinheiro vivo para lojas pequenas, tuk-tuks e zonas rurais, onde os cartões podem não ser aceites.",
+    "pt_BR": "A moeda é a rupia do Sri Lanka. Caixas eletrônicos são comuns nas cidades, mas leve algum dinheiro vivo para lojas pequenas, tuk-tuks e áreas rurais, onde cartões podem não ser aceitos.",
+    "fr": "La monnaie est la roupie sri-lankaise. Les distributeurs sont courants dans les villes, mais emportez des espèces pour les petites boutiques, les tuk-tuks et les zones rurales, où les cartes peuvent ne pas être acceptées.",
+    "de": "Die Währung ist die Sri-Lanka-Rupie. Geldautomaten gibt es in Städten häufig, doch nimm etwas Bargeld für kleine Läden, Tuk-Tuks und ländliche Gegenden mit, wo Karten oft nicht akzeptiert werden."
+   }
+  },
+  {
+   "id": "ct-LK-24",
+   "category": "photography",
+   "text": {
+    "en": "Ask permission before photographing monks and local people, and avoid taking photos of military sites or government buildings. Do not use flash at religious sites.",
+    "it": "Chiedi il permesso prima di fotografare monaci e abitanti e evita di fotografare siti militari o edifici governativi. Non usare il flash nei luoghi religiosi.",
+    "es": "Pide permiso antes de fotografiar a monjes y a vecinos, y evita fotografiar instalaciones militares o edificios gubernamentales. No uses flash en lugares religiosos.",
+    "pt": "Pede licença antes de fotografar monges e habitantes locais e evita fotografar instalações militares ou edifícios governamentais. Não uses flash em locais religiosos.",
+    "pt_BR": "Peça licença antes de fotografar monges e moradores locais e evite fotografar instalações militares ou prédios do governo. Não use flash em locais religiosos.",
+    "fr": "Demandez la permission avant de photographier moines et habitants, et évitez de photographier les sites militaires ou les bâtiments officiels. N'utilisez pas le flash dans les lieux religieux.",
+    "de": "Frag um Erlaubnis, bevor du Mönche und Einheimische fotografierst, und vermeide Fotos von Militäranlagen oder Regierungsgebäuden. Benutze an religiösen Stätten keinen Blitz."
+   }
+  },
+  {
+   "id": "ct-LK-25",
+   "category": "nightlife",
+   "text": {
+    "en": "Alcohol is not sold on Poya days, so plan evenings accordingly. Nightlife is lively in Colombo and beach towns but generally quieter and more family-oriented elsewhere.",
+    "it": "Nei giorni Poya non si vendono alcolici, quindi organizza di conseguenza le serate. La vita notturna è vivace a Colombo e nelle località di mare, ma altrove è più tranquilla e per famiglie.",
+    "es": "En los días Poya no se venden bebidas alcohólicas, así que planifica las noches en consecuencia. La vida nocturna es animada en Colombo y en pueblos de playa, pero en otros sitios es más tranquila y familiar.",
+    "pt": "Nos dias Poya não se vendem bebidas alcoólicas, por isso planeia as noites em conformidade. A vida noturna é animada em Colombo e nas vilas de praia, mas noutros locais é mais calma e familiar.",
+    "pt_BR": "Nos dias Poya não se vendem bebidas alcoólicas, então planeje as noites de acordo. A vida noturna é animada em Colombo e em cidades de praia, mas em outros lugares é mais tranquila e familiar.",
+    "fr": "Les jours de Poya, l'alcool n'est pas vendu ; organisez donc vos soirées en conséquence. La vie nocturne est animée à Colombo et dans les villes balnéaires, mais plus calme et familiale ailleurs.",
+    "de": "An Poya-Tagen wird kein Alkohol verkauft, plane deine Abende also entsprechend. Das Nachtleben ist in Colombo und Strandorten lebhaft, anderswo meist ruhiger und familiärer."
+   }
+  },
+  {
+   "id": "ct-LK-26",
+   "category": "nature",
+   "text": {
+    "en": "National parks such as Yala and Udawalawe offer safaris with elephants and leopards. Keep a respectful distance, stay quiet and follow your guide's instructions.",
+    "it": "Parchi nazionali come Yala e Udawalawe offrono safari con elefanti e leopardi. Mantieni una distanza rispettosa, resta in silenzio e segui le istruzioni della guida.",
+    "es": "Parques nacionales como Yala y Udawalawe ofrecen safaris con elefantes y leopardos. Mantén una distancia respetuosa, guarda silencio y sigue las indicaciones del guía.",
+    "pt": "Parques nacionais como Yala e Udawalawe oferecem safaris com elefantes e leopardos. Mantém uma distância respeitosa, fica em silêncio e segue as indicações do guia.",
+    "pt_BR": "Parques nacionais como Yala e Udawalawe oferecem safáris com elefantes e leopardos. Mantenha uma distância respeitosa, fique em silêncio e siga as orientações do guia.",
+    "fr": "Des parcs nationaux comme Yala et Udawalawe proposent des safaris avec éléphants et léopards. Gardez une distance respectueuse, restez silencieux et suivez les consignes du guide.",
+    "de": "Nationalparks wie Yala und Udawalawe bieten Safaris mit Elefanten und Leoparden. Halte respektvollen Abstand, bleib leise und folge den Anweisungen deines Guides."
+   }
+  },
+  {
+   "id": "ct-LK-27",
+   "category": "safety",
+   "text": {
+    "en": "Ocean currents can be strong on many beaches, so swim where lifeguards or locals indicate it is safe. In an emergency, dial 119 for the police.",
+    "it": "Le correnti oceaniche possono essere forti su molte spiagge, quindi nuota dove bagnini o locali indicano che è sicuro. In caso di emergenza chiama il 119 per la polizia.",
+    "es": "Las corrientes del océano pueden ser fuertes en muchas playas, así que nada donde los socorristas o los locales indiquen que es seguro. En una emergencia, marca el 119 para la policía.",
+    "pt": "As correntes do oceano podem ser fortes em muitas praias, por isso nada onde os nadadores-salvadores ou os locais indiquem que é seguro. Numa emergência, liga 119 para a polícia.",
+    "pt_BR": "As correntes do oceano podem ser fortes em muitas praias, então nade onde salva-vidas ou moradores indicarem que é seguro. Em uma emergência, ligue 119 para a polícia.",
+    "fr": "Les courants océaniques peuvent être forts sur de nombreuses plages ; baignez-vous là où les maîtres-nageurs ou les habitants indiquent que c'est sûr. En cas d'urgence, composez le 119 pour la police.",
+    "de": "Meeresströmungen können an vielen Stränden stark sein, schwimme also dort, wo Rettungsschwimmer oder Einheimische es für sicher erklären. Im Notfall wähle 119 für die Polizei."
+   }
+  },
+  {
+   "id": "ct-LK-28",
+   "category": "local_pride",
+   "text": {
+    "en": "Sri Lankans are proud of Ceylon tea and of cinnamon, which is native to the island. Asking about a tea estate or a spice garden is a friendly conversation starter.",
+    "it": "Gli srilankesi sono orgogliosi del tè di Ceylon e della cannella, originaria dell'isola. Chiedere di una piantagione di tè o di un giardino di spezie è un buon modo per iniziare a parlare.",
+    "es": "Los esrilanqueses están orgullosos del té de Ceilán y de la canela, originaria de la isla. Preguntar por una plantación de té o un jardín de especias es una buena forma de empezar a charlar.",
+    "pt": "Os cingaleses têm orgulho do chá do Ceilão e da canela, nativa da ilha. Perguntar por uma plantação de chá ou um jardim de especiarias é uma boa forma de começar conversa.",
+    "pt_BR": "Os cingaleses têm orgulho do chá do Ceilão e da canela, nativa da ilha. Perguntar por uma plantação de chá ou um jardim de especiarias é uma boa forma de puxar conversa.",
+    "fr": "Les Sri-Lankais sont fiers du thé de Ceylan et de la cannelle, originaire de l'île. Poser des questions sur une plantation de thé ou un jardin d'épices est une façon amicale d'entamer la conversation.",
+    "de": "Die Sri-Lanker sind stolz auf Ceylon-Tee und auf Zimt, der auf der Insel heimisch ist. Eine Frage nach einer Teeplantage oder einem Gewürzgarten ist ein freundlicher Gesprächseinstieg."
+   }
+  },
+  {
+   "id": "ct-LK-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Sri Lankans take pride in a long history: Buddhism arrived on the island in the 3rd century BCE, and Sirimavo Bandaranaike became the world's first female prime minister.",
+    "it": "Gli srilankesi sono orgogliosi di una lunga storia: il buddhismo giunse sull'isola nel III secolo a.C. e Sirimavo Bandaranaike divenne la prima donna primo ministro al mondo.",
+    "es": "Los esrilanqueses se enorgullecen de una larga historia: el budismo llegó a la isla en el siglo III a. C. y Sirimavo Bandaranaike fue la primera mujer primera ministra del mundo.",
+    "pt": "Os cingaleses orgulham-se de uma longa história: o budismo chegou à ilha no século III a.C. e Sirimavo Bandaranaike foi a primeira mulher primeira-ministra do mundo.",
+    "pt_BR": "Os cingaleses se orgulham de uma longa história: o budismo chegou à ilha no século III a.C. e Sirimavo Bandaranaike foi a primeira mulher primeira-ministra do mundo.",
+    "fr": "Les Sri-Lankais sont fiers d'une longue histoire : le bouddhisme est arrivé sur l'île au IIIe siècle avant notre ère, et Sirimavo Bandaranaike est devenue la première femme Première ministre au monde.",
+    "de": "Die Sri-Lanker sind stolz auf eine lange Geschichte: Der Buddhismus kam im 3. Jahrhundert v. Chr. auf die Insel, und Sirimavo Bandaranaike wurde die erste Premierministerin der Welt."
+   }
+  },
+  {
+   "id": "ct-LK-30",
+   "category": "festivals",
+   "text": {
+    "en": "The Esala Perahera in Kandy, a grand summer procession with drummers, dancers and decorated elephants, honours the sacred Tooth Relic. Arrive early, as viewing spots fill up.",
+    "it": "L'Esala Perahera a Kandy, grande processione estiva con tamburini, danzatori ed elefanti decorati, onora la sacra reliquia del Dente. Arriva presto, perché i posti per guardare si riempiono.",
+    "es": "El Esala Perahera de Kandy, una gran procesión de verano con tamborileros, bailarines y elefantes decorados, honra la sagrada Reliquia del Diente. Llega temprano, porque los sitios para verla se llenan.",
+    "pt": "O Esala Perahera em Kandy, uma grande procissão de verão com tambores, dançarinos e elefantes decorados, honra a sagrada Relíquia do Dente. Chega cedo, porque os lugares para ver ficam cheios.",
+    "pt_BR": "O Esala Perahera em Kandy, uma grande procissão de verão com tambores, dançarinos e elefantes decorados, honra a sagrada Relíquia do Dente. Chegue cedo, porque os lugares para assistir lotam.",
+    "fr": "L'Esala Perahera à Kandy, grande procession d'été avec tambours, danseurs et éléphants décorés, honore la sainte relique de la Dent. Arrivez tôt, car les places pour regarder se remplissent vite.",
+    "de": "Das Esala Perahera in Kandy, eine große Sommerprozession mit Trommlern, Tänzern und geschmückten Elefanten, ehrt die heilige Zahnreliquie. Komm früh, denn die Zuschauerplätze füllen sich schnell."
+   }
+  }
+ ]
+}

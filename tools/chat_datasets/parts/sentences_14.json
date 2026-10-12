@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ss-language_help-001",
+  "topic": "language_help",
+  "level": "A1",
+  "text": {
+   "en": "How do you say \"hello\" in your language?",
+   "it": "Come si dice \"ciao\" nella tua lingua?",
+   "es": "¿Cómo se dice \"hola\" en tu idioma?",
+   "pt": "Como é que se diz \"olá\" na tua língua?",
+   "pt_BR": "Como se diz \"olá\" na sua língua?",
+   "fr": "Comment dit-on \"bonjour\" dans ta langue ?",
+   "de": "Wie sagt man \"hallo\" in deiner Sprache?"
+  }
+ },
+ {
+  "id": "ss-language_help-002",
+  "topic": "language_help",
+  "level": "A1",
+  "text": {
+   "en": "I am learning your language.",
+   "it": "Sto imparando la tua lingua.",
+   "es": "Estoy aprendiendo tu idioma.",
+   "pt": "Estou a aprender a tua língua.",
+   "pt_BR": "Estou aprendendo a sua língua.",
+   "fr": "J'apprends ta langue.",
+   "de": "Ich lerne deine Sprache."
+  }
+ },
+ {
+  "id": "ss-language_help-003",
+  "topic": "language_help",
+  "level": "A1",
+  "text": {
+   "en": "Can you help me, please?",
+   "it": "Puoi aiutarmi, per favore?",
+   "es": "¿Puedes ayudarme, por favor?",
+   "pt": "Podes ajudar-me, por favor?",
+   "pt_BR": "Você pode me ajudar, por favor?",
+   "fr": "Peux-tu m'aider, s'il te plaît ?",
+   "de": "Kannst du mir bitte helfen?"
+  }
+ },
+ {
+  "id": "ss-language_help-004",
+  "topic": "language_help",
+  "level": "A1",
+  "text": {
+   "en": "What does this word mean?",
+   "it": "Che cosa significa questa parola?",
+   "es": "¿Qué significa esta palabra?",
+   "pt": "O que significa esta palavra?",
+   "pt_BR": "O que significa esta palavra?",
+   "fr": "Que veut dire ce mot ?",
+   "de": "Was bedeutet dieses Wort?"
+  }
+ },
+ {
+  "id": "ss-language_help-005",
+  "topic": "language_help",
+  "level": "A1",
+  "text": {
+   "en": "Please speak more slowly.",
+   "it": "Parla più lentamente, per favore.",
+   "es": "Habla más despacio, por favor.",
+   "pt": "Fala mais devagar, por favor.",
+   "pt_BR": "Fale mais devagar, por favor.",
+   "fr": "Parle plus lentement, s'il te plaît.",
+   "de": "Sprich bitte langsamer."
+  }
+ },
+ {
+  "id": "ss-language_help-006",
+  "topic": "language_help",
+  "level": "A1",
+  "text": {
+   "en": "I don't understand.",
+   "it": "Non capisco.",
+   "es": "No entiendo.",
+   "pt": "Não percebo.",
+   "pt_BR": "Não entendo.",
+   "fr": "Je ne comprends pas.",
+   "de": "Ich verstehe das nicht."
+  }
+ },
+ {
+  "id": "ss-language_help-007",
+  "topic": "language_help",
+  "level": "A1",
+  "text": {
+   "en": "Can you repeat that, please?",
+   "it": "Puoi ripetere, per favore?",
+   "es": "¿Puedes repetirlo, por favor?",
+   "pt": "Podes repetir, por favor?",
+   "pt_BR": "Você pode repetir, por favor?",
+   "fr": "Peux-tu répéter, s'il te plaît ?",
+   "de": "Kannst du das bitte wiederholen?"
+  }
+ },
+ {
+  "id": "ss-language_help-008",
+  "topic": "language_help",
+  "level": "A1",
+  "text": {
+   "en": "How do you spell that?",
+   "it": "Come si scrive?",
+   "es": "¿Cómo se escribe?",
+   "pt": "Como se escreve?",
+   "pt_BR": "Como se escreve?",
+   "fr": "Comment ça s'écrit ?",
+   "de": "Wie schreibt man das?"
+  }
+ },
+ {
+  "id": "ss-language_help-009",
+  "topic": "language_help",
+  "level": "A1",
+  "text": {
+   "en": "Is this correct?",
+   "it": "È corretto?",
+   "es": "¿Es correcto?",
+   "pt": "Está correto?",
+   "pt_BR": "Está correto?",
+   "fr": "Est-ce correct ?",
+   "de": "Ist das richtig?"
+  }
+ },
+ {
+  "id": "ss-language_help-010",
+  "topic": "language_help",
+  "level": "A1",
+  "text": {
+   "en": "Thank you for your help!",
+   "it": "Grazie per il tuo aiuto!",
+   "es": "¡Gracias por tu ayuda!",
+   "pt": "Obrigado pela tua ajuda!",
+   "pt_BR": "Obrigado pela sua ajuda!",
+   "fr": "Merci pour ton aide !",
+   "de": "Danke für deine Hilfe!"
+  }
+ },
+ {
+  "id": "ss-language_help-011",
+  "topic": "language_help",
+  "level": "A1",
+  "text": {
+   "en": "Sorry, my English is not good.",
+   "it": "Scusa, il mio inglese non è buono.",
+   "es": "Perdona, mi inglés no es bueno.",
+   "pt": "Desculpa, o meu inglês não é bom.",
+   "pt_BR": "Desculpe, meu inglês não é bom.",
+   "fr": "Désolé, mon anglais n'est pas bon.",
+   "de": "Entschuldigung, mein Englisch ist nicht gut."
+  }
+ },
+ {
+  "id": "ss-language_help-012",
+  "topic": "language_help",
+  "level": "A1",
+  "text": {
+   "en": "What is this called?",
+   "it": "Come si chiama questo?",
+   "es": "¿Cómo se llama esto?",
+   "pt": "Como se chama isto?",
+   "pt_BR": "Como se chama isto?",
+   "fr": "Comment ça s'appelle ?",
+   "de": "Wie heißt das?"
+  }
+ },
+ {
+  "id": "ss-language_help-013",
+  "topic": "language_help",
+  "level": "A1",
+  "text": {
+   "en": "Can you write it down?",
+   "it": "Puoi scriverlo?",
+   "es": "¿Puedes escribirlo?",
+   "pt": "Podes escrever isso?",
+   "pt_BR": "Você pode escrever isso?",
+   "fr": "Peux-tu l'écrire ?",
+   "de": "Kannst du das aufschreiben?"
+  }
+ },
+ {
+  "id": "ss-language_help-014",
+  "topic": "language_help",
+  "level": "A1",
+  "text": {
+   "en": "Yes, I understand now.",
+   "it": "Sì, ora ho capito.",
+   "es": "Sí, ya lo entiendo.",
+   "pt": "Sim, agora percebi.",
+   "pt_BR": "Sim, agora entendi.",
+   "fr": "Oui, j'ai compris maintenant.",
+   "de": "Ja, jetzt verstehe ich es."
+  }
+ },
+ {
+  "id": "ss-language_help-015",
+  "topic": "language_help",
+  "level": "A1",
+  "text": {
+   "en": "How do you say \"thank you\" in your language?",
+   "it": "Come si dice \"grazie\" nella tua lingua?",
+   "es": "¿Cómo se dice \"gracias\" en tu idioma?",
+   "pt": "Como é que se diz \"obrigado\" na tua língua?",
+   "pt_BR": "Como se diz \"obrigado\" na sua língua?",
+   "fr": "Comment dit-on \"merci\" dans ta langue ?",
+   "de": "Wie sagt man \"danke\" in deiner Sprache?"
+  }
+ },
+ {
+  "id": "ss-language_help-016",
+  "topic": "language_help",
+  "level": "A2",
+  "text": {
+   "en": "Could you say that more slowly, please?",
+   "it": "Potresti dirlo più lentamente, per favore?",
+   "es": "¿Podrías decirlo más despacio, por favor?",
+   "pt": "Podias dizer isso mais devagar, por favor?",
+   "pt_BR": "Você poderia dizer isso mais devagar, por favor?",
+   "fr": "Pourrais-tu le dire plus lentement, s'il te plaît ?",
+   "de": "Könntest du das bitte langsamer sagen?"
+  }
+ },
+ {
+  "id": "ss-language_help-017",
+  "topic": "language_help",
+  "level": "A2",
+  "text": {
+   "en": "How do you pronounce this word?",
+   "it": "Come si pronuncia questa parola?",
+   "es": "¿Cómo se pronuncia esta palabra?",
+   "pt": "Como se pronuncia esta palavra?",
+   "pt_BR": "Como se pronuncia esta palavra?",
+   "fr": "Comment se prononce ce mot ?",
+   "de": "Wie spricht man dieses Wort aus?"
+  }
+ },
+ {
+  "id": "ss-language_help-018",
+  "topic": "language_help",
+  "level": "A2",
+  "text": {
+   "en": "Can you correct my mistakes?",
+   "it": "Puoi correggere i miei errori?",
+   "es": "¿Puedes corregir mis errores?",
+   "pt": "Podes corrigir os meus erros?",
+   "pt_BR": "Você pode corrigir meus erros?",
+   "fr": "Peux-tu corriger mes erreurs ?",
+   "de": "Kannst du meine Fehler korrigieren?"
+  }
+ },
+ {
+  "id": "ss-language_help-019",
+  "topic": "language_help",
+  "level": "A2",
+  "text": {
+   "en": "I don't know this word. Can you explain it?",
+   "it": "Non conosco questa parola. Puoi spiegarmela?",
+   "es": "No conozco esta palabra. ¿Puedes explicármela?",
+   "pt": "Não conheço esta palavra. Podes explicá-la?",
+   "pt_BR": "Não conheço esta palavra. Você pode explicá-la?",
+   "fr": "Je ne connais pas ce mot. Peux-tu me l'expliquer ?",
+   "de": "Ich kenne dieses Wort nicht. Kannst du es mir erklären?"
+  }
+ },
+ {
+  "id": "ss-language_help-020",
+  "topic": "language_help",
+  "level": "A2",
+  "text": {
+   "en": "Is this sentence correct or wrong?",
+   "it": "Questa frase è giusta o sbagliata?",
+   "es": "¿Esta frase es correcta o incorrecta?",
+   "pt": "Esta frase está certa ou errada?",
+   "pt_BR": "Esta frase está certa ou errada?",
+   "fr": "Cette phrase est-elle correcte ou fausse ?",
+   "de": "Ist dieser Satz richtig oder falsch?"
+  }
+ },
+ {
+  "id": "ss-language_help-021",
+  "topic": "language_help",
+  "level": "A2",
+  "text": {
+   "en": "What is the difference between these two words?",
+   "it": "Qual è la differenza tra queste due parole?",
+   "es": "¿Cuál es la diferencia entre estas dos palabras?",
+   "pt": "Qual é a diferença entre estas duas palavras?",
+   "pt_BR": "Qual é a diferença entre essas duas palavras?",
+   "fr": "Quelle est la différence entre ces deux mots ?",
+   "de": "Was ist der Unterschied zwischen diesen beiden Wörtern?"
+  }
+ },
+ {
+  "id": "ss-language_help-022",
+  "topic": "language_help",
+  "level": "A2",
+  "text": {
+   "en": "Can you give me an example sentence?",
+   "it": "Puoi farmi una frase di esempio?",
+   "es": "¿Puedes darme una frase de ejemplo?",
+   "pt": "Podes dar-me uma frase de exemplo?",
+   "pt_BR": "Você pode me dar uma frase de exemplo?",
+   "fr": "Peux-tu me donner une phrase d'exemple ?",
+   "de": "Kannst du mir einen Beispielsatz geben?"
+  }
+ },
+ {
+  "id": "ss-language_help-023",
+  "topic": "language_help",
+  "level": "A2",
+  "text": {
+   "en": "How do you say \"see you tomorrow\" in your language?",
+   "it": "Come si dice \"a domani\" nella tua lingua?",
+   "es": "¿Cómo se dice \"hasta mañana\" en tu idioma?",
+   "pt": "Como é que se diz \"até amanhã\" na tua língua?",
+   "pt_BR": "Como se diz \"até amanhã\" na sua língua?",
+   "fr": "Comment dit-on \"à demain\" dans ta langue ?",
+   "de": "Wie sagt man \"bis morgen\" in deiner Sprache?"
+  }
+ },
+ {
+  "id": "ss-language_help-024",
+  "topic": "language_help",
+  "level": "A2",
+  "text": {
+   "en": "Can we practice together every week?",
+   "it": "Possiamo esercitarci insieme ogni settimana?",
+   "es": "¿Podemos practicar juntos cada semana?",
+   "pt": "Podemos praticar juntos todas as semanas?",
+   "pt_BR": "Podemos praticar juntos toda semana?",
+   "fr": "Peut-on s'entraîner ensemble chaque semaine ?",
+   "de": "Können wir jede Woche zusammen üben?"
+  }
+ },
+ {
+  "id": "ss-language_help-025",
+  "topic": "language_help",
+  "level": "A2",
+  "text": {
+   "en": "I am a beginner, so please use simple words.",
+   "it": "Sono un principiante, quindi usa parole semplici, per favore.",
+   "es": "Soy principiante, así que usa palabras sencillas, por favor.",
+   "pt": "Sou principiante, por isso usa palavras simples, por favor.",
+   "pt_BR": "Sou iniciante, então use palavras simples, por favor.",
+   "fr": "Je suis débutant, alors utilise des mots simples, s'il te plaît.",
+   "de": "Ich bin Anfänger, also benutze bitte einfache Wörter."
+  }
+ },
+ {
+  "id": "ss-language_help-026",
+  "topic": "language_help",
+  "level": "A2",
+  "text": {
+   "en": "Can you send me a voice message so I can hear it?",
+   "it": "Puoi mandarmi un messaggio vocale così lo sento?",
+   "es": "¿Puedes mandarme un mensaje de voz para escucharlo?",
+   "pt": "Podes enviar-me uma mensagem de voz para eu ouvir?",
+   "pt_BR": "Você pode me mandar uma mensagem de voz para eu ouvir?",
+   "fr": "Peux-tu m'envoyer un message vocal pour que je l'entende ?",
+   "de": "Kannst du mir eine Sprachnachricht schicken, damit ich es hören kann?"
+  }
+ },
+ {
+  "id": "ss-language_help-027",
+  "topic": "language_help",
+  "level": "A2",
+  "text": {
+   "en": "What does this expression mean?",
+   "it": "Che cosa significa questa espressione?",
+   "es": "¿Qué significa esta expresión?",
+   "pt": "O que significa esta expressão?",
+   "pt_BR": "O que significa essa expressão?",
+   "fr": "Que signifie cette expression ?",
+   "de": "Was bedeutet dieser Ausdruck?"
+  }
+ },
+ {
+  "id": "ss-language_help-028",
+  "topic": "language_help",
+  "level": "A2",
+  "text": {
+   "en": "Do you say it like this in your country?",
+   "it": "Si dice così nel tuo paese?",
+   "es": "¿Se dice así en tu país?",
+   "pt": "Diz-se assim no teu país?",
+   "pt_BR": "Fala-se assim no seu país?",
+   "fr": "Est-ce qu'on dit ça comme ça dans ton pays ?",
+   "de": "Sagt man das in deinem Land so?"
+  }
+ },
+ {
+  "id": "ss-language_help-029",
+  "topic": "language_help",
+  "level": "A2",
+  "text": {
+   "en": "I forgot the word. Can you help me?",
+   "it": "Ho dimenticato la parola. Puoi aiutarmi?",
+   "es": "Olvidé la palabra. ¿Puedes ayudarme?",
+   "pt": "Esqueci-me da palavra. Podes ajudar-me?",
+   "pt_BR": "Esqueci a palavra. Você pode me ajudar?",
+   "fr": "J'ai oublié le mot. Peux-tu m'aider ?",
+   "de": "Ich habe das Wort vergessen. Kannst du mir helfen?"
+  }
+ },
+ {
+  "id": "ss-language_help-030",
+  "topic": "language_help",
+  "level": "A2",
+  "text": {
+   "en": "Can you translate this sentence for me?",
+   "it": "Puoi tradurre questa frase per me?",
+   "es": "¿Puedes traducirme esta frase?",
+   "pt": "Podes traduzir-me esta frase?",
+   "pt_BR": "Você pode traduzir esta frase para mim?",
+   "fr": "Peux-tu me traduire cette phrase ?",
+   "de": "Kannst du diesen Satz für mich übersetzen?"
+  }
+ },
+ {
+  "id": "ss-language_help-031",
+  "topic": "language_help",
+  "level": "B1",
+  "text": {
+   "en": "Could you correct my sentence and tell me what I did wrong?",
+   "it": "Potresti correggere la mia frase e dirmi cosa ho sbagliato?",
+   "es": "¿Podrías corregir mi frase y decirme qué hice mal?",
+   "pt": "Podias corrigir a minha frase e dizer-me o que fiz de errado?",
+   "pt_BR": "Você poderia corrigir minha frase e me dizer o que fiz de errado?",
+   "fr": "Pourrais-tu corriger ma phrase et me dire ce que j'ai fait de travers ?",
+   "de": "Könntest du meinen Satz korrigieren und mir sagen, was ich falsch gemacht habe?"
+  }
+ },
+ {
+  "id": "ss-language_help-032",
+  "topic": "language_help",
+  "level": "B1",
+  "text": {
+   "en": "Is this expression polite, or is it too informal?",
+   "it": "Questa espressione è educata o è troppo informale?",
+   "es": "¿Esta expresión es educada o demasiado informal?",
+   "pt": "Esta expressão é educada ou é demasiado informal?",
+   "pt_BR": "Essa expressão é educada ou é informal demais?",
+   "fr": "Cette expression est-elle polie, ou trop familière ?",
+   "de": "Ist dieser Ausdruck höflich, oder ist er zu umgangssprachlich?"
+  }
+ },
+ {
+  "id": "ss-language_help-033",
+  "topic": "language_help",
+  "level": "B1",
+  "text": {
+   "en": "I often mix up these two words. Do you have a trick to remember them?",
+   "it": "Confondo spesso queste due parole. Hai un trucco per ricordarle?",
+   "es": "Confundo a menudo estas dos palabras. ¿Tienes algún truco para recordarlas?",
+   "pt": "Troco muitas vezes estas duas palavras. Tens algum truque para as fixar?",
+   "pt_BR": "Eu sempre confundo essas duas palavras. Você tem algum truque para lembrar?",
+   "fr": "Je confonds souvent ces deux mots. Tu as une astuce pour s'en souvenir ?",
+   "de": "Ich verwechsle diese beiden Wörter oft. Hast du einen Trick, um sie mir zu merken?"
+  }
+ },
+ {
+  "id": "ss-language_help-034",
+  "topic": "language_help",
+  "level": "B1",
+  "text": {
+   "en": "Would you mind correcting my mistakes while we chat?",
+   "it": "Ti dispiacerebbe correggere i miei errori mentre chiacchieriamo?",
+   "es": "¿Te importaría corregir mis errores mientras charlamos?",
+   "pt": "Importas-te de corrigir os meus erros enquanto conversamos?",
+   "pt_BR": "Você se importa de corrigir meus erros enquanto a gente conversa?",
+   "fr": "Ça te dérangerait de corriger mes erreurs pendant qu'on discute ?",
+   "de": "Würde es dir etwas ausmachen, meine Fehler zu korrigieren, während wir chatten?"
+  }
+ },
+ {
+  "id": "ss-language_help-035",
+  "topic": "language_help",
+  "level": "B1",
+  "text": {
+   "en": "Can you recommend a good song or show to improve my listening?",
+   "it": "Puoi consigliarmi una bella canzone o una serie per migliorare l'ascolto?",
+   "es": "¿Puedes recomendarme una buena canción o serie para mejorar mi comprensión auditiva?",
+   "pt": "Podes recomendar-me uma boa música ou série para melhorar a minha compreensão oral?",
+   "pt_BR": "Você pode me recomendar uma boa música ou série para melhorar minha compreensão auditiva?",
+   "fr": "Peux-tu me recommander une bonne chanson ou série pour améliorer mon écoute ?",
+   "de": "Kannst du mir ein gutes Lied oder eine Serie empfehlen, um mein Hörverstehen zu verbessern?"
+  }
+ },
+ {
+  "id": "ss-language_help-036",
+  "topic": "language_help",
+  "level": "B1",
+  "text": {
+   "en": "How would a native speaker say this in everyday conversation?",
+   "it": "Come lo direbbe un madrelingua nella conversazione di tutti i giorni?",
+   "es": "¿Cómo diría esto un hablante nativo en una conversación cotidiana?",
+   "pt": "Como é que um falante nativo diria isto no dia a dia?",
+   "pt_BR": "Como um falante nativo diria isso no dia a dia?",
+   "fr": "Comment un locuteur natif dirait ça dans la conversation de tous les jours ?",
+   "de": "Wie würde ein Muttersprachler das im Alltag sagen?"
+  }
+ },
+ {
+  "id": "ss-language_help-037",
+  "topic": "language_help",
+  "level": "B1",
+  "text": {
+   "en": "Is it okay if I write in your language and you answer in mine?",
+   "it": "Va bene se scrivo nella tua lingua e tu rispondi nella mia?",
+   "es": "¿Te parece bien si escribo en tu idioma y tú respondes en el mío?",
+   "pt": "Está bem se eu escrever na tua língua e tu responderes na minha?",
+   "pt_BR": "Tudo bem se eu escrever na sua língua e você responder na minha?",
+   "fr": "Ça te va si j'écris dans ta langue et que tu réponds dans la mienne ?",
+   "de": "Ist es okay, wenn ich in deiner Sprache schreibe und du in meiner antwortest?"
+  }
+ },
+ {
+  "id": "ss-language_help-038",
+  "topic": "language_help",
+  "level": "B1",
+  "text": {
+   "en": "I understood the meaning, but I don't know how to use the word in a sentence.",
+   "it": "Ho capito il significato, ma non so come usare la parola in una frase.",
+   "es": "Entendí el significado, pero no sé cómo usar la palabra en una frase.",
+   "pt": "Percebi o significado, mas não sei como usar a palavra numa frase.",
+   "pt_BR": "Entendi o significado, mas não sei como usar a palavra numa frase.",
+   "fr": "J'ai compris le sens, mais je ne sais pas comment utiliser ce mot dans une phrase.",
+   "de": "Ich habe die Bedeutung verstanden, aber ich weiß nicht, wie ich das Wort in einem Satz benutze."
+  }
+ },
+ {
+  "id": "ss-language_help-039",
+  "topic": "language_help",
+  "level": "B1",
+  "text": {
+   "en": "Could you explain why we use this tense here?",
+   "it": "Potresti spiegarmi perché usiamo questo tempo verbale qui?",
+   "es": "¿Podrías explicarme por qué usamos este tiempo verbal aquí?",
+   "pt": "Podias explicar-me porque é que usamos este tempo verbal aqui?",
+   "pt_BR": "Você poderia me explicar por que usamos este tempo verbal aqui?",
+   "fr": "Pourrais-tu m'expliquer pourquoi on utilise ce temps ici ?",
+   "de": "Könntest du erklären, warum wir hier diese Zeitform benutzen?"
+  }
+ },
+ {
+  "id": "ss-language_help-040",
+  "topic": "language_help",
+  "level": "B1",
+  "text": {
+   "en": "Which words do people really use in daily life, and which ones sound like a textbook?",
+   "it": "Quali parole si usano davvero nella vita di tutti i giorni e quali sembrano da libro di testo?",
+   "es": "¿Qué palabras se usan de verdad en el día a día y cuáles suenan a libro de texto?",
+   "pt": "Que palavras se usam mesmo no dia a dia e quais soam a manual escolar?",
+   "pt_BR": "Quais palavras as pessoas realmente usam no dia a dia e quais soam como livro didático?",
+   "fr": "Quels mots utilise-t-on vraiment au quotidien, et lesquels sonnent comme dans un manuel ?",
+   "de": "Welche Wörter benutzt man im Alltag wirklich, und welche klingen nach Lehrbuch?"
+  }
+ },
+ {
+  "id": "ss-language_help-041",
+  "topic": "language_help",
+  "level": "B1",
+  "text": {
+   "en": "Let's chat half in my language and half in yours, so we both learn.",
+   "it": "Chiacchieriamo metà nella mia lingua e metà nella tua, così impariamo entrambi.",
+   "es": "Charlemos mitad en mi idioma y mitad en el tuyo, así aprendemos los dos.",
+   "pt": "Vamos conversar metade na minha língua e metade na tua, para aprendermos os dois.",
+   "pt_BR": "Vamos conversar metade na minha língua e metade na sua, assim nós dois aprendemos.",
+   "fr": "Discutons moitié dans ma langue, moitié dans la tienne, comme ça on apprend tous les deux.",
+   "de": "Lass uns halb in meiner und halb in deiner Sprache schreiben, dann lernen wir beide."
+  }
+ },
+ {
+  "id": "ss-language_help-042",
+  "topic": "language_help",
+  "level": "B1",
+  "text": {
+   "en": "Do you have any tips for learning to pronounce the difficult sounds in your language?",
+   "it": "Hai qualche consiglio per imparare a pronunciare i suoni difficili della tua lingua?",
+   "es": "¿Tienes algún consejo para aprender a pronunciar los sonidos difíciles de tu idioma?",
+   "pt": "Tens alguma dica para aprender a pronunciar os sons difíceis da tua língua?",
+   "pt_BR": "Você tem alguma dica para aprender a pronunciar os sons difíceis da sua língua?",
+   "fr": "As-tu des conseils pour apprendre à prononcer les sons difficiles de ta langue ?",
+   "de": "Hast du Tipps, wie ich die schwierigen Laute in deiner Sprache aussprechen lernen kann?"
+  }
+ },
+ {
+  "id": "ss-language_help-043",
+  "topic": "language_help",
+  "level": "B2",
+  "text": {
+   "en": "I'd appreciate it if you could point out any phrases that sound unnatural, even if they're grammatically correct.",
+   "it": "Mi farebbe piacere se mi segnalassi le frasi che suonano poco naturali, anche se sono grammaticalmente corrette.",
+   "es": "Te agradecería que me señalaras las frases que suenen poco naturales, aunque sean gramaticalmente correctas.",
+   "pt": "Agradecia que me indicasses as frases que soam pouco naturais, mesmo que estejam gramaticalmente corretas.",
+   "pt_BR": "Eu agradeceria se você apontasse as frases que soam pouco naturais, mesmo que estejam gramaticalmente corretas.",
+   "fr": "J'apprécierais que tu me signales les phrases qui sonnent peu naturelles, même si elles sont grammaticalement correctes.",
+   "de": "Ich wäre dir dankbar, wenn du mich auf Formulierungen hinweisen könntest, die unnatürlich klingen, auch wenn sie grammatikalisch korrekt sind."
+  }
+ },
+ {
+  "id": "ss-language_help-044",
+  "topic": "language_help",
+  "level": "B2",
+  "text": {
+   "en": "Is there a regional difference in how this word is used, or is it the same everywhere in your country?",
+   "it": "C'è una differenza regionale nell'uso di questa parola, o è uguale in tutto il tuo paese?",
+   "es": "¿Hay alguna diferencia regional en el uso de esta palabra, o es igual en todo tu país?",
+   "pt": "Há diferenças regionais no uso desta palavra, ou é igual em todo o teu país?",
+   "pt_BR": "Existe diferença regional no uso dessa palavra, ou é igual em todo o seu país?",
+   "fr": "Y a-t-il une différence régionale dans l'emploi de ce mot, ou est-ce pareil partout dans ton pays ?",
+   "de": "Gibt es regionale Unterschiede bei der Verwendung dieses Wortes, oder ist es in deinem ganzen Land gleich?"
+  }
+ },
+ {
+  "id": "ss-language_help-045",
+  "topic": "language_help",
+  "level": "B2",
+  "text": {
+   "en": "Could you explain the nuance between these two near-synonyms? I can't feel the difference yet.",
+   "it": "Potresti spiegarmi la sfumatura tra questi due quasi-sinonimi? Non ne sento ancora la differenza.",
+   "es": "¿Podrías explicarme el matiz entre estos dos casi sinónimos? Todavía no noto la diferencia.",
+   "pt": "Podias explicar-me a nuance entre estes dois quase-sinónimos? Ainda não sinto a diferença.",
+   "pt_BR": "Você poderia explicar a nuance entre esses dois quase-sinônimos? Ainda não sinto a diferença.",
+   "fr": "Pourrais-tu m'expliquer la nuance entre ces deux quasi-synonymes ? Je ne sens pas encore la différence.",
+   "de": "Könntest du mir die Nuance zwischen diesen beiden fast gleichbedeutenden Wörtern erklären? Ich spüre den Unterschied noch nicht."
+  }
+ },
+ {
+  "id": "ss-language_help-046",
+  "topic": "language_help",
+  "level": "B2",
+  "text": {
+   "en": "I've been struggling with this grammar rule for weeks. Could you walk me through it with a few examples?",
+   "it": "È da settimane che faccio fatica con questa regola grammaticale. Potresti spiegarmela con qualche esempio?",
+   "es": "Llevo semanas con problemas con esta regla gramatical. ¿Podrías explicármela con algunos ejemplos?",
+   "pt": "Há semanas que tenho dificuldade com esta regra gramatical. Podias explicá-la com alguns exemplos?",
+   "pt_BR": "Faz semanas que tenho dificuldade com essa regra gramatical. Você poderia explicá-la com alguns exemplos?",
+   "fr": "Je peine avec cette règle de grammaire depuis des semaines. Pourrais-tu me l'expliquer avec quelques exemples ?",
+   "de": "Mit dieser Grammatikregel kämpfe ich schon seit Wochen. Könntest du sie mir mit ein paar Beispielen erklären?"
+  }
+ },
+ {
+  "id": "ss-language_help-047",
+  "topic": "language_help",
+  "level": "B2",
+  "text": {
+   "en": "How do you usually express this idea in an idiom, rather than saying it literally?",
+   "it": "Come si esprime di solito questa idea con un modo di dire, invece di dirla alla lettera?",
+   "es": "¿Cómo se suele expresar esta idea con una expresión idiomática, en vez de decirla literalmente?",
+   "pt": "Como é que normalmente se exprime esta ideia com um idiomatismo, em vez de a dizer literalmente?",
+   "pt_BR": "Como normalmente se expressa essa ideia com um idiomatismo, em vez de dizê-la literalmente?",
+   "fr": "Comment exprime-t-on d'habitude cette idée avec une expression idiomatique, plutôt que littéralement ?",
+   "de": "Wie drückt man diesen Gedanken üblicherweise mit einer Redewendung aus, statt ihn wörtlich zu sagen?"
+  }
+ },
+ {
+  "id": "ss-language_help-048",
+  "topic": "language_help",
+  "level": "B2",
+  "text": {
+   "en": "Whenever I speak, I translate in my head first. How can I start thinking directly in the new language?",
+   "it": "Quando parlo, traduco prima nella mia testa. Come posso iniziare a pensare direttamente nella nuova lingua?",
+   "es": "Cuando hablo, primero traduzco en mi cabeza. ¿Cómo puedo empezar a pensar directamente en el nuevo idioma?",
+   "pt": "Quando falo, traduzo primeiro na minha cabeça. Como posso começar a pensar diretamente na nova língua?",
+   "pt_BR": "Quando eu falo, primeiro traduzo na cabeça. Como posso começar a pensar direto na nova língua?",
+   "fr": "Quand je parle, je traduis d'abord dans ma tête. Comment puis-je commencer à penser directement dans la nouvelle langue ?",
+   "de": "Wenn ich spreche, übersetze ich zuerst im Kopf. Wie kann ich anfangen, direkt in der neuen Sprache zu denken?"
+  }
+ },
+ {
+  "id": "ss-language_help-049",
+  "topic": "language_help",
+  "level": "B2",
+  "text": {
+   "en": "Please don't hold back: tell me honestly if my accent makes me hard to understand.",
+   "it": "Non farti problemi: dimmi sinceramente se il mio accento mi rende difficile da capire.",
+   "es": "No te cortes: dime con sinceridad si mi acento dificulta que me entiendan.",
+   "pt": "Não te contenhas: diz-me com sinceridade se o meu sotaque me torna difícil de perceber.",
+   "pt_BR": "Não se segure: me diga com sinceridade se o meu sotaque dificulta me entender.",
+   "fr": "Ne te retiens pas : dis-moi honnêtement si mon accent me rend difficile à comprendre.",
+   "de": "Halte dich bitte nicht zurück: Sag mir ehrlich, ob man mich wegen meines Akzents schwer versteht."
+  }
+ },
+ {
+  "id": "ss-language_help-050",
+  "topic": "language_help",
+  "level": "B2",
+  "text": {
+   "en": "Could we do a short role-play, for example ordering at a restaurant, so I can practise real situations?",
+   "it": "Potremmo fare un breve gioco di ruolo, ad esempio ordinare al ristorante, così mi alleno in situazioni reali?",
+   "es": "¿Podríamos hacer un breve juego de roles, por ejemplo pedir en un restaurante, para practicar situaciones reales?",
+   "pt": "Podíamos fazer um pequeno jogo de papéis, por exemplo pedir num restaurante, para eu praticar situações reais?",
+   "pt_BR": "A gente poderia fazer uma breve encenação, por exemplo pedir num restaurante, para eu praticar situações reais?",
+   "fr": "Pourrait-on faire un petit jeu de rôle, par exemple commander au restaurant, pour que je m'entraîne à des situations réelles ?",
+   "de": "Könnten wir ein kurzes Rollenspiel machen, zum Beispiel im Restaurant bestellen, damit ich echte Situationen üben kann?"
+  }
+ },
+ {
+  "id": "ss-clarifying-001",
+  "topic": "clarifying",
+  "level": "A1",
+  "text": {
+   "en": "What do you mean?",
+   "it": "Cosa intendi?",
+   "es": "¿Qué quieres decir?",
+   "pt": "O que queres dizer?",
+   "pt_BR": "O que você quer dizer?",
+   "fr": "Qu'est-ce que tu veux dire ?",
+   "de": "Was meinst du damit?"
+  }
+ },
+ {
+  "id": "ss-clarifying-002",
+  "topic": "clarifying",
+  "level": "A1",
+  "text": {
+   "en": "Sorry, what?",
+   "it": "Scusa, come?",
+   "es": "Perdona, ¿cómo?",
+   "pt": "Desculpa, como?",
+   "pt_BR": "Desculpe, como?",
+   "fr": "Pardon, comment ?",
+   "de": "Wie bitte?"
+  }
+ },
+ {
+  "id": "ss-clarifying-003",
+  "topic": "clarifying",
+  "level": "A1",
+  "text": {
+   "en": "Can you say that again?",
+   "it": "Puoi dirlo di nuovo?",
+   "es": "¿Puedes decirlo otra vez?",
+   "pt": "Podes dizer outra vez?",
+   "pt_BR": "Você pode dizer de novo?",
+   "fr": "Peux-tu le redire ?",
+   "de": "Kannst du das noch einmal sagen?"
+  }
+ },
+ {
+  "id": "ss-clarifying-004",
+  "topic": "clarifying",
+  "level": "A1",
+  "text": {
+   "en": "I'm not sure I understand.",
+   "it": "Non sono sicuro di aver capito.",
+   "es": "No estoy seguro de haber entendido.",
+   "pt": "Não tenho a certeza de ter percebido.",
+   "pt_BR": "Não tenho certeza se entendi.",
+   "fr": "Je ne suis pas sûr d'avoir compris.",
+   "de": "Ich bin nicht sicher, ob ich das verstanden habe."
+  }
+ },
+ {
+  "id": "ss-clarifying-005",
+  "topic": "clarifying",
+  "level": "A1",
+  "text": {
+   "en": "Do you mean today?",
+   "it": "Intendi oggi?",
+   "es": "¿Quieres decir hoy?",
+   "pt": "Queres dizer hoje?",
+   "pt_BR": "Você quer dizer hoje?",
+   "fr": "Tu veux dire aujourd'hui ?",
+   "de": "Meinst du heute?"
+  }
+ },
+ {
+  "id": "ss-clarifying-006",
+  "topic": "clarifying",
+  "level": "A1",
+  "text": {
+   "en": "Yes, that's right.",
+   "it": "Sì, è giusto.",
+   "es": "Sí, eso es.",
+   "pt": "Sim, é isso.",
+   "pt_BR": "Sim, é isso.",
+   "fr": "Oui, c'est ça.",
+   "de": "Ja, genau."
+  }
+ },
+ {
+  "id": "ss-clarifying-007",
+  "topic": "clarifying",
+  "level": "A1",
+  "text": {
+   "en": "No, not that.",
+   "it": "No, quello no.",
+   "es": "No, eso no.",
+   "pt": "Não, isso não.",
+   "pt_BR": "Não, isso não.",
+   "fr": "Non, pas ça.",
+   "de": "Nein, nicht das."
+  }
+ },
+ {
+  "id": "ss-clarifying-008",
+  "topic": "clarifying",
+  "level": "A1",
+  "text": {
+   "en": "Which one?",
+   "it": "Quale?",
+   "es": "¿Cuál?",
+   "pt": "Qual?",
+   "pt_BR": "Qual?",
+   "fr": "Lequel ?",
+   "de": "Welches?"
+  }
+ },
+ {
+  "id": "ss-clarifying-009",
+  "topic": "clarifying",
+  "level": "A1",
+  "text": {
+   "en": "Where exactly?",
+   "it": "Dove, esattamente?",
+   "es": "¿Dónde exactamente?",
+   "pt": "Onde, exatamente?",
+   "pt_BR": "Onde, exatamente?",
+   "fr": "Où exactement ?",
+   "de": "Wo genau?"
+  }
+ },
+ {
+  "id": "ss-clarifying-010",
+  "topic": "clarifying",
+  "level": "A1",
+  "text": {
+   "en": "At what time?",
+   "it": "A che ora?",
+   "es": "¿A qué hora?",
+   "pt": "A que horas?",
+   "pt_BR": "A que horas?",
+   "fr": "À quelle heure ?",
+   "de": "Um wie viel Uhr?"
+  }
+ },
+ {
+  "id": "ss-clarifying-011",
+  "topic": "clarifying",
+  "level": "A1",
+  "text": {
+   "en": "Wait, one moment, please.",
+   "it": "Aspetta, un attimo, per favore.",
+   "es": "Espera, un momento, por favor.",
+   "pt": "Espera, um momento, por favor.",
+   "pt_BR": "Espere, um momento, por favor.",
+   "fr": "Attends, un instant, s'il te plaît.",
+   "de": "Warte, einen Moment bitte."
+  }
+ },
+ {
+  "id": "ss-clarifying-012",
+  "topic": "clarifying",
+  "level": "A1",
+  "text": {
+   "en": "Is that a question?",
+   "it": "Questa è una domanda?",
+   "es": "¿Eso es una pregunta?",
+   "pt": "Isso é uma pergunta?",
+   "pt_BR": "Isso é uma pergunta?",
+   "fr": "C'est une question ?",
+   "de": "Ist das eine Frage?"
+  }
+ },
+ {
+  "id": "ss-clarifying-013",
+  "topic": "clarifying",
+  "level": "A1",
+  "text": {
+   "en": "Do you mean this one?",
+   "it": "Intendi questo?",
+   "es": "¿Te refieres a este?",
+   "pt": "Referes-te a este?",
+   "pt_BR": "Você está falando deste?",
+   "fr": "Tu parles de celui-ci ?",
+   "de": "Meinst du diesen hier?"
+  }
+ },
+ {
+  "id": "ss-clarifying-014",
+  "topic": "clarifying",
+  "level": "A1",
+  "text": {
+   "en": "Who is that?",
+   "it": "Chi è?",
+   "es": "¿Quién es?",
+   "pt": "Quem é?",
+   "pt_BR": "Quem é?",
+   "fr": "C'est qui ?",
+   "de": "Wer ist das?"
+  }
+ },
+ {
+  "id": "ss-clarifying-015",
+  "topic": "clarifying",
+  "level": "A1",
+  "text": {
+   "en": "Sorry, I made a mistake.",
+   "it": "Scusa, ho fatto un errore.",
+   "es": "Perdona, me equivoqué.",
+   "pt": "Desculpa, enganei-me.",
+   "pt_BR": "Desculpe, eu errei.",
+   "fr": "Désolé, je me suis trompé.",
+   "de": "Entschuldigung, ich habe einen Fehler gemacht."
+  }
+ },
+ {
+  "id": "ss-clarifying-016",
+  "topic": "clarifying",
+  "level": "A2",
+  "text": {
+   "en": "Sorry, I think I misunderstood. Can you explain again?",
+   "it": "Scusa, penso di aver frainteso. Puoi spiegare di nuovo?",
+   "es": "Perdona, creo que lo entendí mal. ¿Puedes explicarlo otra vez?",
+   "pt": "Desculpa, acho que percebi mal. Podes explicar outra vez?",
+   "pt_BR": "Desculpe, acho que entendi errado. Você pode explicar de novo?",
+   "fr": "Désolé, je crois que j'ai mal compris. Peux-tu réexpliquer ?",
+   "de": "Entschuldigung, ich glaube, ich habe das falsch verstanden. Kannst du es noch einmal erklären?"
+  }
+ },
+ {
+  "id": "ss-clarifying-017",
+  "topic": "clarifying",
+  "level": "A2",
+  "text": {
+   "en": "Do you mean tomorrow or the day after?",
+   "it": "Intendi domani o dopodomani?",
+   "es": "¿Quieres decir mañana o pasado mañana?",
+   "pt": "Queres dizer amanhã ou depois de amanhã?",
+   "pt_BR": "Você quer dizer amanhã ou depois de amanhã?",
+   "fr": "Tu veux dire demain ou après-demain ?",
+   "de": "Meinst du morgen oder übermorgen?"
+  }
+ },
+ {
+  "id": "ss-clarifying-018",
+  "topic": "clarifying",
+  "level": "A2",
+  "text": {
+   "en": "Just to check, we meet at six, right?",
+   "it": "Solo per conferma, ci vediamo alle sei, giusto?",
+   "es": "Solo para confirmar, quedamos a las seis, ¿verdad?",
+   "pt": "Só para confirmar, encontramo-nos às seis, certo?",
+   "pt_BR": "Só para confirmar, a gente se encontra às seis, certo?",
+   "fr": "Juste pour vérifier, on se retrouve à six heures, c'est bien ça ?",
+   "de": "Nur zur Sicherheit: Wir treffen uns um sechs, oder?"
+  }
+ },
+ {
+  "id": "ss-clarifying-019",
+  "topic": "clarifying",
+  "level": "A2",
+  "text": {
+   "en": "Can you give me more details?",
+   "it": "Puoi darmi più dettagli?",
+   "es": "¿Puedes darme más detalles?",
+   "pt": "Podes dar-me mais detalhes?",
+   "pt_BR": "Você pode me dar mais detalhes?",
+   "fr": "Peux-tu me donner plus de détails ?",
+   "de": "Kannst du mir mehr Details geben?"
+  }
+ },
+ {
+  "id": "ss-clarifying-020",
+  "topic": "clarifying",
+  "level": "A2",
+  "text": {
+   "en": "I'm not sure which place you mean.",
+   "it": "Non sono sicuro di quale posto intendi.",
+   "es": "No estoy seguro de a qué lugar te refieres.",
+   "pt": "Não tenho a certeza de que sítio queres dizer.",
+   "pt_BR": "Não tenho certeza de qual lugar você quer dizer.",
+   "fr": "Je ne sais pas trop de quel endroit tu parles.",
+   "de": "Ich bin nicht sicher, welchen Ort du meinst."
+  }
+ },
+ {
+  "id": "ss-clarifying-021",
+  "topic": "clarifying",
+  "level": "A2",
+  "text": {
+   "en": "Is that \"yes\" or \"maybe\"?",
+   "it": "È un \"sì\" o un \"forse\"?",
+   "es": "¿Eso es un \"sí\" o un \"quizás\"?",
+   "pt": "Isso é um \"sim\" ou um \"talvez\"?",
+   "pt_BR": "Isso é um \"sim\" ou um \"talvez\"?",
+   "fr": "C'est un \"oui\" ou un \"peut-être\" ?",
+   "de": "Heißt das \"ja\" oder \"vielleicht\"?"
+  }
+ },
+ {
+  "id": "ss-clarifying-022",
+  "topic": "clarifying",
+  "level": "A2",
+  "text": {
+   "en": "What do you mean by that word?",
+   "it": "Cosa intendi con quella parola?",
+   "es": "¿Qué quieres decir con esa palabra?",
+   "pt": "O que queres dizer com essa palavra?",
+   "pt_BR": "O que você quer dizer com essa palavra?",
+   "fr": "Que veux-tu dire par ce mot ?",
+   "de": "Was meinst du mit diesem Wort?"
+  }
+ },
+ {
+  "id": "ss-clarifying-023",
+  "topic": "clarifying",
+  "level": "A2",
+  "text": {
+   "en": "Let me check if I understood correctly.",
+   "it": "Lascia che controlli se ho capito bene.",
+   "es": "Déjame comprobar si lo entendí bien.",
+   "pt": "Deixa-me ver se percebi bem.",
+   "pt_BR": "Deixe-me ver se entendi direito.",
+   "fr": "Laisse-moi vérifier si j'ai bien compris.",
+   "de": "Lass mich kurz prüfen, ob ich es richtig verstanden habe."
+  }
+ },
+ {
+  "id": "ss-clarifying-024",
+  "topic": "clarifying",
+  "level": "A2",
+  "text": {
+   "en": "Can you send me the address in writing?",
+   "it": "Puoi mandarmi l'indirizzo per iscritto?",
+   "es": "¿Puedes mandarme la dirección por escrito?",
+   "pt": "Podes enviar-me a morada por escrito?",
+   "pt_BR": "Você pode me mandar o endereço por escrito?",
+   "fr": "Peux-tu m'envoyer l'adresse par écrit ?",
+   "de": "Kannst du mir die Adresse schriftlich schicken?"
+  }
+ },
+ {
+  "id": "ss-clarifying-025",
+  "topic": "clarifying",
+  "level": "A2",
+  "text": {
+   "en": "Do you mean the one near the station?",
+   "it": "Intendi quello vicino alla stazione?",
+   "es": "¿Te refieres al que está cerca de la estación?",
+   "pt": "Referes-te ao que fica perto da estação?",
+   "pt_BR": "Você quer dizer o que fica perto da estação?",
+   "fr": "Tu parles de celui près de la gare ?",
+   "de": "Meinst du den in der Nähe vom Bahnhof?"
+  }
+ },
+ {
+  "id": "ss-clarifying-026",
+  "topic": "clarifying",
+  "level": "A2",
+  "text": {
+   "en": "Sorry, that was not what I meant.",
+   "it": "Scusa, non intendevo questo.",
+   "es": "Perdona, no quería decir eso.",
+   "pt": "Desculpa, não era isso que eu queria dizer.",
+   "pt_BR": "Desculpe, não era isso que eu queria dizer.",
+   "fr": "Désolé, ce n'est pas ce que je voulais dire.",
+   "de": "Entschuldigung, das habe ich nicht gemeint."
+  }
+ },
+ {
+  "id": "ss-clarifying-027",
+  "topic": "clarifying",
+  "level": "A2",
+  "text": {
+   "en": "Could you give me an example?",
+   "it": "Potresti farmi un esempio?",
+   "es": "¿Podrías ponerme un ejemplo?",
+   "pt": "Podias dar-me um exemplo?",
+   "pt_BR": "Você poderia me dar um exemplo?",
+   "fr": "Pourrais-tu me donner un exemple ?",
+   "de": "Könntest du mir ein Beispiel geben?"
+  }
+ },
+ {
+  "id": "ss-clarifying-028",
+  "topic": "clarifying",
+  "level": "A2",
+  "text": {
+   "en": "Are you talking about last week or next week?",
+   "it": "Parli della settimana scorsa o di quella prossima?",
+   "es": "¿Hablas de la semana pasada o de la próxima?",
+   "pt": "Estás a falar da semana passada ou da próxima?",
+   "pt_BR": "Você está falando da semana passada ou da próxima?",
+   "fr": "Tu parles de la semaine dernière ou de la semaine prochaine ?",
+   "de": "Sprichst du von letzter Woche oder von nächster Woche?"
+  }
+ },
+ {
+  "id": "ss-clarifying-029",
+  "topic": "clarifying",
+  "level": "A2",
+  "text": {
+   "en": "I didn't catch the last part.",
+   "it": "Non ho capito l'ultima parte.",
+   "es": "No he entendido la última parte.",
+   "pt": "Não apanhei a última parte.",
+   "pt_BR": "Não entendi a última parte.",
+   "fr": "Je n'ai pas saisi la dernière partie.",
+   "de": "Den letzten Teil habe ich nicht mitbekommen."
+  }
+ },
+ {
+  "id": "ss-clarifying-030",
+  "topic": "clarifying",
+  "level": "A2",
+  "text": {
+   "en": "Is it okay if I ask one more question?",
+   "it": "Posso farti ancora una domanda?",
+   "es": "¿Te parece bien si hago una pregunta más?",
+   "pt": "Posso fazer-te mais uma pergunta?",
+   "pt_BR": "Posso fazer mais uma pergunta?",
+   "fr": "Je peux te poser encore une question ?",
+   "de": "Darf ich noch eine Frage stellen?"
+  }
+ },
+ {
+  "id": "ss-clarifying-031",
+  "topic": "clarifying",
+  "level": "B1",
+  "text": {
+   "en": "If I understand correctly, you are saying that we should meet earlier. Is that right?",
+   "it": "Se ho capito bene, dici che dovremmo vederci prima. È così?",
+   "es": "Si lo entiendo bien, dices que deberíamos vernos antes. ¿Es así?",
+   "pt": "Se percebi bem, estás a dizer que devíamos encontrar-nos mais cedo. É isso?",
+   "pt_BR": "Se entendi direito, você está dizendo que deveríamos nos encontrar mais cedo. É isso?",
+   "fr": "Si je comprends bien, tu dis qu'on devrait se voir plus tôt. C'est ça ?",
+   "de": "Wenn ich richtig verstehe, sagst du, wir sollten uns früher treffen. Stimmt das?"
+  }
+ },
+ {
+  "id": "ss-clarifying-032",
+  "topic": "clarifying",
+  "level": "B1",
+  "text": {
+   "en": "Sorry for the confusion. What I meant was that I can't come on Friday.",
+   "it": "Scusa per la confusione. Intendevo che venerdì non posso venire.",
+   "es": "Perdona la confusión. Lo que quería decir es que el viernes no puedo ir.",
+   "pt": "Desculpa a confusão. O que eu queria dizer é que na sexta-feira não posso ir.",
+   "pt_BR": "Desculpe a confusão. O que eu queria dizer é que na sexta não posso ir.",
+   "fr": "Désolé pour la confusion. Ce que je voulais dire, c'est que je ne peux pas venir vendredi.",
+   "de": "Entschuldige die Verwirrung. Ich wollte sagen, dass ich am Freitag nicht kommen kann."
+  }
+ },
+ {
+  "id": "ss-clarifying-033",
+  "topic": "clarifying",
+  "level": "B1",
+  "text": {
+   "en": "Could you rephrase that? I'm not sure I got the main point.",
+   "it": "Potresti riformulare? Non sono sicuro di aver colto il punto principale.",
+   "es": "¿Podrías decirlo con otras palabras? No estoy seguro de haber captado la idea principal.",
+   "pt": "Podias reformular? Não tenho a certeza de ter percebido a ideia principal.",
+   "pt_BR": "Você poderia reformular? Não tenho certeza se entendi a ideia principal.",
+   "fr": "Pourrais-tu reformuler ? Je ne suis pas sûr d'avoir saisi l'essentiel.",
+   "de": "Könntest du das anders formulieren? Ich bin nicht sicher, ob ich den Kern verstanden habe."
+  }
+ },
+ {
+  "id": "ss-clarifying-034",
+  "topic": "clarifying",
+  "level": "B1",
+  "text": {
+   "en": "When you say \"soon\", how soon do you mean?",
+   "it": "Quando dici \"presto\", quanto presto intendi?",
+   "es": "Cuando dices \"pronto\", ¿cómo de pronto es?",
+   "pt": "Quando dizes \"em breve\", quão breve queres dizer?",
+   "pt_BR": "Quando você diz \"logo\", quão logo você quer dizer?",
+   "fr": "Quand tu dis \"bientôt\", c'est dans combien de temps ?",
+   "de": "Wenn du \"bald\" sagst, wie bald meinst du das?"
+  }
+ },
+ {
+  "id": "ss-clarifying-035",
+  "topic": "clarifying",
+  "level": "B1",
+  "text": {
+   "en": "I think we are talking about different things. Let me explain what I meant.",
+   "it": "Penso che stiamo parlando di cose diverse. Lascia che ti spieghi cosa intendevo.",
+   "es": "Creo que estamos hablando de cosas distintas. Déjame explicarte lo que quería decir.",
+   "pt": "Acho que estamos a falar de coisas diferentes. Deixa-me explicar o que queria dizer.",
+   "pt_BR": "Acho que estamos falando de coisas diferentes. Deixe-me explicar o que eu quis dizer.",
+   "fr": "Je crois qu'on parle de choses différentes. Laisse-moi t'expliquer ce que je voulais dire.",
+   "de": "Ich glaube, wir reden über verschiedene Dinge. Lass mich erklären, was ich gemeint habe."
+  }
+ },
+ {
+  "id": "ss-clarifying-036",
+  "topic": "clarifying",
+  "level": "B1",
+  "text": {
+   "en": "Is this a joke, or are you being serious? It's hard to tell in writing.",
+   "it": "È una battuta o dici sul serio? È difficile capirlo per iscritto.",
+   "es": "¿Es una broma o hablas en serio? Es difícil saberlo por escrito.",
+   "pt": "Isso é uma brincadeira ou estás a falar a sério? É difícil perceber por escrito.",
+   "pt_BR": "Isso é uma brincadeira ou você está falando sério? É difícil saber por escrito.",
+   "fr": "C'est une blague ou tu es sérieux ? C'est difficile à dire à l'écrit.",
+   "de": "Ist das ein Witz, oder meinst du es ernst? Schriftlich ist das schwer zu erkennen."
+  }
+ },
+ {
+  "id": "ss-clarifying-037",
+  "topic": "clarifying",
+  "level": "B1",
+  "text": {
+   "en": "Can you tell me more about what you have in mind?",
+   "it": "Puoi dirmi di più su cosa hai in mente?",
+   "es": "¿Puedes contarme más sobre lo que tienes en mente?",
+   "pt": "Podes contar-me mais sobre o que tens em mente?",
+   "pt_BR": "Você pode me contar mais sobre o que tem em mente?",
+   "fr": "Peux-tu m'en dire plus sur ce que tu as en tête ?",
+   "de": "Kannst du mir mehr darüber sagen, was du dir vorstellst?"
+  }
+ },
+ {
+  "id": "ss-clarifying-038",
+  "topic": "clarifying",
+  "level": "B1",
+  "text": {
+   "en": "I read your message twice, but I still don't get it. Could you explain it differently?",
+   "it": "Ho letto il tuo messaggio due volte, ma ancora non lo capisco. Potresti spiegarlo in un altro modo?",
+   "es": "He leído tu mensaje dos veces, pero sigo sin entenderlo. ¿Podrías explicarlo de otra manera?",
+   "pt": "Li a tua mensagem duas vezes, mas continuo sem perceber. Podias explicar de outra maneira?",
+   "pt_BR": "Li sua mensagem duas vezes, mas continuo sem entender. Você poderia explicar de outro jeito?",
+   "fr": "J'ai lu ton message deux fois, mais je ne comprends toujours pas. Pourrais-tu l'expliquer autrement ?",
+   "de": "Ich habe deine Nachricht zweimal gelesen, verstehe sie aber immer noch nicht. Könntest du es anders erklären?"
+  }
+ },
+ {
+  "id": "ss-clarifying-039",
+  "topic": "clarifying",
+  "level": "B1",
+  "text": {
+   "en": "Do you mean that literally, or is it an expression?",
+   "it": "Lo intendi alla lettera o è un modo di dire?",
+   "es": "¿Lo dices literalmente o es una expresión?",
+   "pt": "Queres dizer isso literalmente ou é uma expressão?",
+   "pt_BR": "Você quer dizer isso literalmente ou é uma expressão?",
+   "fr": "Tu veux dire ça littéralement, ou c'est une expression ?",
+   "de": "Meinst du das wörtlich, oder ist es eine Redewendung?"
+  }
+ },
+ {
+  "id": "ss-clarifying-040",
+  "topic": "clarifying",
+  "level": "B1",
+  "text": {
+   "en": "Just so we're on the same page, are we meeting at the café or at the park?",
+   "it": "Giusto per essere d'accordo, ci vediamo al bar o al parco?",
+   "es": "Para que estemos de acuerdo, ¿quedamos en la cafetería o en el parque?",
+   "pt": "Só para estarmos de acordo, encontramo-nos no café ou no parque?",
+   "pt_BR": "Só para a gente estar alinhado, vamos nos encontrar no café ou no parque?",
+   "fr": "Pour être sûrs de nous comprendre, on se retrouve au café ou au parc ?",
+   "de": "Nur damit wir uns einig sind: Treffen wir uns im Café oder im Park?"
+  }
+ },
+ {
+  "id": "ss-clarifying-041",
+  "topic": "clarifying",
+  "level": "B1",
+  "text": {
+   "en": "I may have translated that wrongly. What did you want to say?",
+   "it": "Forse ho tradotto male. Cosa volevi dire?",
+   "es": "Puede que lo haya traducido mal. ¿Qué querías decir?",
+   "pt": "Pode ser que tenha traduzido mal. O que querias dizer?",
+   "pt_BR": "Posso ter traduzido errado. O que você queria dizer?",
+   "fr": "Je l'ai peut-être mal traduit. Qu'est-ce que tu voulais dire ?",
+   "de": "Vielleicht habe ich das falsch übersetzt. Was wolltest du sagen?"
+  }
+ },
+ {
+  "id": "ss-clarifying-042",
+  "topic": "clarifying",
+  "level": "B1",
+  "text": {
+   "en": "Which of the two options do you prefer? I'm not sure which one you chose.",
+   "it": "Quale delle due opzioni preferisci? Non sono sicuro di quale hai scelto.",
+   "es": "¿Cuál de las dos opciones prefieres? No estoy seguro de cuál elegiste.",
+   "pt": "Qual das duas opções preferes? Não tenho a certeza de qual escolheste.",
+   "pt_BR": "Qual das duas opções você prefere? Não tenho certeza de qual você escolheu.",
+   "fr": "Laquelle des deux options préfères-tu ? Je ne suis pas sûr de celle que tu as choisie.",
+   "de": "Welche der beiden Möglichkeiten gefällt dir besser? Ich bin nicht sicher, welche du gewählt hast."
+  }
+ },
+ {
+  "id": "ss-clarifying-043",
+  "topic": "clarifying",
+  "level": "B2",
+  "text": {
+   "en": "I want to make sure I haven't misread your tone. Were you being sarcastic, or did you mean it sincerely?",
+   "it": "Voglio essere sicuro di non aver frainteso il tuo tono. Eri sarcastico o dicevi sul serio?",
+   "es": "Quiero asegurarme de no haber interpretado mal tu tono. ¿Eras sarcástico o lo decías en serio?",
+   "pt": "Quero ter a certeza de que não interpretei mal o teu tom. Estavas a ser sarcástico ou falavas a sério?",
+   "pt_BR": "Quero ter certeza de que não interpretei mal o seu tom. Você estava sendo sarcástico ou falava sério?",
+   "fr": "Je veux m'assurer de ne pas avoir mal interprété ton ton. Tu étais sarcastique, ou tu le pensais sincèrement ?",
+   "de": "Ich möchte sichergehen, dass ich deinen Ton nicht falsch gedeutet habe. Warst du sarkastisch, oder hast du es ernst gemeint?"
+  }
+ },
+ {
+  "id": "ss-clarifying-044",
+  "topic": "clarifying",
+  "level": "B2",
+  "text": {
+   "en": "Could you clarify what you expect from me? I don't want to assume anything and get it wrong.",
+   "it": "Potresti chiarire cosa ti aspetti da me? Non voglio dare nulla per scontato e sbagliare.",
+   "es": "¿Podrías aclararme qué esperas de mí? No quiero suponer nada y equivocarme.",
+   "pt": "Podias esclarecer o que esperas de mim? Não quero presumir nada e enganar-me.",
+   "pt_BR": "Você poderia esclarecer o que espera de mim? Não quero presumir nada e acabar errando.",
+   "fr": "Pourrais-tu préciser ce que tu attends de moi ? Je ne veux rien supposer et me tromper.",
+   "de": "Könntest du klarstellen, was du von mir erwartest? Ich möchte nichts annehmen und dann falschliegen."
+  }
+ },
+ {
+  "id": "ss-clarifying-045",
+  "topic": "clarifying",
+  "level": "B2",
+  "text": {
+   "en": "It seems that the translation changed the meaning of your message. Could you put it in simpler words?",
+   "it": "Sembra che la traduzione abbia cambiato il senso del tuo messaggio. Potresti dirlo con parole più semplici?",
+   "es": "Parece que la traducción cambió el sentido de tu mensaje. ¿Podrías decirlo con palabras más sencillas?",
+   "pt": "Parece que a tradução mudou o sentido da tua mensagem. Podias dizê-lo com palavras mais simples?",
+   "pt_BR": "Parece que a tradução mudou o sentido da sua mensagem. Você poderia dizer com palavras mais simples?",
+   "fr": "On dirait que la traduction a changé le sens de ton message. Pourrais-tu le dire avec des mots plus simples ?",
+   "de": "Es scheint, dass die Übersetzung den Sinn deiner Nachricht verändert hat. Könntest du es mit einfacheren Worten sagen?"
+  }
+ },
+ {
+  "id": "ss-clarifying-046",
+  "topic": "clarifying",
+  "level": "B2",
+  "text": {
+   "en": "Before we go on, let me summarise what we agreed so that nothing gets lost in translation.",
+   "it": "Prima di continuare, lascia che riassuma quello che abbiamo concordato, così non si perde nulla nella traduzione.",
+   "es": "Antes de seguir, déjame resumir lo que acordamos para que nada se pierda en la traducción.",
+   "pt": "Antes de continuarmos, deixa-me resumir o que combinámos para que nada se perca na tradução.",
+   "pt_BR": "Antes de continuarmos, deixe-me resumir o que combinamos para que nada se perca na tradução.",
+   "fr": "Avant de continuer, laisse-moi résumer ce dont on est convenus pour que rien ne se perde dans la traduction.",
+   "de": "Bevor wir weitermachen, fasse ich kurz zusammen, was wir vereinbart haben, damit bei der Übersetzung nichts verloren geht."
+  }
+ },
+ {
+  "id": "ss-clarifying-047",
+  "topic": "clarifying",
+  "level": "B2",
+  "text": {
+   "en": "I'm sorry if my earlier message sounded rude. That wasn't my intention, and I probably chose the wrong words.",
+   "it": "Mi dispiace se il mio messaggio di prima è sembrato scortese. Non era la mia intenzione e probabilmente ho scelto le parole sbagliate.",
+   "es": "Siento si mi mensaje anterior sonó grosero. No era mi intención y seguramente elegí mal las palabras.",
+   "pt": "Lamento se a minha mensagem anterior soou rude. Não era essa a minha intenção e provavelmente escolhi mal as palavras.",
+   "pt_BR": "Sinto muito se minha mensagem anterior soou grosseira. Não era a minha intenção e provavelmente escolhi as palavras erradas.",
+   "fr": "Je suis désolé si mon message de tout à l'heure t'a paru impoli. Ce n'était pas mon intention, et j'ai sans doute mal choisi mes mots.",
+   "de": "Es tut mir leid, falls meine frühere Nachricht unhöflich klang. Das war nicht meine Absicht, und ich habe wohl die falschen Worte gewählt."
+  }
+ },
+ {
+  "id": "ss-clarifying-048",
+  "topic": "clarifying",
+  "level": "B2",
+  "text": {
+   "en": "You mentioned \"next weekend\". Do you mean this coming Saturday or the one after that?",
+   "it": "Hai detto \"il prossimo weekend\". Intendi questo sabato o quello dopo?",
+   "es": "Mencionaste \"el próximo fin de semana\". ¿Te refieres a este sábado o al siguiente?",
+   "pt": "Mencionaste \"o próximo fim de semana\". Queres dizer este sábado ou o seguinte?",
+   "pt_BR": "Você mencionou \"o próximo fim de semana\". Quer dizer este sábado ou o seguinte?",
+   "fr": "Tu as parlé de \"le week-end prochain\". Tu veux dire ce samedi ou celui d'après ?",
+   "de": "Du hast \"nächstes Wochenende\" erwähnt. Meinst du diesen Samstag oder den danach?"
+  }
+ },
+ {
+  "id": "ss-clarifying-049",
+  "topic": "clarifying",
+  "level": "B2",
+  "text": {
+   "en": "I'm not sure whether that expression is positive or negative in your culture. Could you tell me how it is perceived?",
+   "it": "Non so se quell'espressione sia positiva o negativa nella tua cultura. Potresti dirmi come viene percepita?",
+   "es": "No sé si esa expresión es positiva o negativa en tu cultura. ¿Podrías decirme cómo se percibe?",
+   "pt": "Não sei se essa expressão é positiva ou negativa na tua cultura. Podias dizer-me como é percebida?",
+   "pt_BR": "Não sei se essa expressão é positiva ou negativa na sua cultura. Você poderia me dizer como ela é percebida?",
+   "fr": "Je ne sais pas si cette expression est positive ou négative dans ta culture. Pourrais-tu me dire comment elle est perçue ?",
+   "de": "Ich bin nicht sicher, ob dieser Ausdruck in deiner Kultur positiv oder negativ ist. Könntest du mir sagen, wie er wahrgenommen wird?"
+  }
+ },
+ {
+  "id": "ss-clarifying-050",
+  "topic": "clarifying",
+  "level": "B2",
+  "text": {
+   "en": "Let's go through it step by step, so we are both sure we understand each other's plans.",
+   "it": "Vediamolo passo per passo, così siamo sicuri entrambi di aver capito i piani dell'altro.",
+   "es": "Repasémoslo paso a paso, así los dos estamos seguros de entender los planes del otro.",
+   "pt": "Vamos vê-lo passo a passo, para termos ambos a certeza de que percebemos os planos um do outro.",
+   "pt_BR": "Vamos ver passo a passo, para os dois terem certeza de que entenderam os planos um do outro.",
+   "fr": "Reprenons cela étape par étape, pour être sûrs tous les deux de bien comprendre les projets de l'autre.",
+   "de": "Gehen wir es Schritt für Schritt durch, damit wir beide sicher sind, die Pläne des anderen zu verstehen."
+  }
+ }
+]

@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ss-small_talk-001",
+  "topic": "small_talk",
+  "level": "A1",
+  "text": {
+   "en": "Hi, how are you today?",
+   "it": "Ciao, come stai oggi?",
+   "es": "Hola, ¿cómo estás hoy?",
+   "pt": "Olá, como estás hoje?",
+   "pt_BR": "Oi, como você está hoje?",
+   "fr": "Salut, comment vas-tu aujourd'hui ?",
+   "de": "Hallo, wie geht es dir heute?"
+  }
+ },
+ {
+  "id": "ss-small_talk-002",
+  "topic": "small_talk",
+  "level": "A1",
+  "text": {
+   "en": "Nice to meet you.",
+   "it": "Piacere di conoscerti.",
+   "es": "Encantado de conocerte.",
+   "pt": "Prazer em conhecer-te.",
+   "pt_BR": "Prazer em te conhecer.",
+   "fr": "Enchanté de faire ta connaissance.",
+   "de": "Schön, dich kennenzulernen."
+  }
+ },
+ {
+  "id": "ss-small_talk-003",
+  "topic": "small_talk",
+  "level": "A1",
+  "text": {
+   "en": "What is your name?",
+   "it": "Come ti chiami?",
+   "es": "¿Cómo te llamas?",
+   "pt": "Como te chamas?",
+   "pt_BR": "Qual é o seu nome?",
+   "fr": "Comment tu t'appelles ?",
+   "de": "Wie heißt du?"
+  }
+ },
+ {
+  "id": "ss-small_talk-004",
+  "topic": "small_talk",
+  "level": "A1",
+  "text": {
+   "en": "I am fine, thank you.",
+   "it": "Sto bene, grazie.",
+   "es": "Estoy bien, gracias.",
+   "pt": "Estou bem, obrigado.",
+   "pt_BR": "Estou bem, obrigado.",
+   "fr": "Je vais bien, merci.",
+   "de": "Mir geht es gut, danke."
+  }
+ },
+ {
+  "id": "ss-small_talk-005",
+  "topic": "small_talk",
+  "level": "A1",
+  "text": {
+   "en": "Where are you from?",
+   "it": "Di dove sei?",
+   "es": "¿De dónde eres?",
+   "pt": "De onde és?",
+   "pt_BR": "De onde você é?",
+   "fr": "Tu viens d'où ?",
+   "de": "Woher kommst du?"
+  }
+ },
+ {
+  "id": "ss-small_talk-006",
+  "topic": "small_talk",
+  "level": "A1",
+  "text": {
+   "en": "Do you like music?",
+   "it": "Ti piace la musica?",
+   "es": "¿Te gusta la música?",
+   "pt": "Gostas de música?",
+   "pt_BR": "Você gosta de música?",
+   "fr": "Tu aimes la musique ?",
+   "de": "Magst du Musik?"
+  }
+ },
+ {
+  "id": "ss-small_talk-007",
+  "topic": "small_talk",
+  "level": "A1",
+  "text": {
+   "en": "Have a nice day!",
+   "it": "Buona giornata!",
+   "es": "¡Que tengas un buen día!",
+   "pt": "Tem um bom dia!",
+   "pt_BR": "Tenha um ótimo dia!",
+   "fr": "Bonne journée !",
+   "de": "Einen schönen Tag noch!"
+  }
+ },
+ {
+  "id": "ss-small_talk-008",
+  "topic": "small_talk",
+  "level": "A1",
+  "text": {
+   "en": "It is a beautiful day.",
+   "it": "È una bella giornata.",
+   "es": "Hace un día precioso.",
+   "pt": "Está um dia lindo.",
+   "pt_BR": "Está um dia lindo.",
+   "fr": "C'est une belle journée.",
+   "de": "Es ist ein schöner Tag."
+  }
+ },
+ {
+  "id": "ss-small_talk-009",
+  "topic": "small_talk",
+  "level": "A1",
+  "text": {
+   "en": "I like coffee.",
+   "it": "Mi piace il caffè.",
+   "es": "Me gusta el café.",
+   "pt": "Gosto de café.",
+   "pt_BR": "Eu gosto de café.",
+   "fr": "J'aime le café.",
+   "de": "Ich mag Kaffee."
+  }
+ },
+ {
+  "id": "ss-small_talk-010",
+  "topic": "small_talk",
+  "level": "A1",
+  "text": {
+   "en": "See you tomorrow!",
+   "it": "A domani!",
+   "es": "¡Hasta mañana!",
+   "pt": "Até amanhã!",
+   "pt_BR": "Até amanhã!",
+   "fr": "À demain !",
+   "de": "Bis morgen!"
+  }
+ },
+ {
+  "id": "ss-small_talk-011",
+  "topic": "small_talk",
+  "level": "A1",
+  "text": {
+   "en": "Do you speak English?",
+   "it": "Parli inglese?",
+   "es": "¿Hablas inglés?",
+   "pt": "Falas inglês?",
+   "pt_BR": "Você fala inglês?",
+   "fr": "Tu parles anglais ?",
+   "de": "Sprichst du Englisch?"
+  }
+ },
+ {
+  "id": "ss-small_talk-012",
+  "topic": "small_talk",
+  "level": "A1",
+  "text": {
+   "en": "Good morning!",
+   "it": "Buongiorno!",
+   "es": "¡Buenos días!",
+   "pt": "Bom dia!",
+   "pt_BR": "Bom dia!",
+   "fr": "Bonjour !",
+   "de": "Guten Morgen!"
+  }
+ },
+ {
+  "id": "ss-small_talk-013",
+  "topic": "small_talk",
+  "level": "A1",
+  "text": {
+   "en": "I am happy to talk with you.",
+   "it": "Sono felice di parlare con te.",
+   "es": "Me alegra hablar contigo.",
+   "pt": "Fico contente por falar contigo.",
+   "pt_BR": "Fico feliz em conversar com você.",
+   "fr": "Je suis content de discuter avec toi.",
+   "de": "Ich freue mich, mit dir zu sprechen."
+  }
+ },
+ {
+  "id": "ss-small_talk-014",
+  "topic": "small_talk",
+  "level": "A1",
+  "text": {
+   "en": "What time is it there?",
+   "it": "Che ore sono da te?",
+   "es": "¿Qué hora es allí?",
+   "pt": "Que horas são aí?",
+   "pt_BR": "Que horas são aí?",
+   "fr": "Quelle heure est-il chez toi ?",
+   "de": "Wie spät ist es bei dir?"
+  }
+ },
+ {
+  "id": "ss-small_talk-015",
+  "topic": "small_talk",
+  "level": "A1",
+  "text": {
+   "en": "Thank you very much.",
+   "it": "Grazie mille.",
+   "es": "Muchas gracias.",
+   "pt": "Muito obrigado.",
+   "pt_BR": "Muito obrigado.",
+   "fr": "Merci beaucoup.",
+   "de": "Vielen Dank."
+  }
+ },
+ {
+  "id": "ss-small_talk-016",
+  "topic": "small_talk",
+  "level": "A2",
+  "text": {
+   "en": "How was your weekend?",
+   "it": "Com'è andato il tuo fine settimana?",
+   "es": "¿Qué tal tu fin de semana?",
+   "pt": "Como foi o teu fim de semana?",
+   "pt_BR": "Como foi o seu fim de semana?",
+   "fr": "Comment s'est passé ton week-end ?",
+   "de": "Wie war dein Wochenende?"
+  }
+ },
+ {
+  "id": "ss-small_talk-017",
+  "topic": "small_talk",
+  "level": "A2",
+  "text": {
+   "en": "What are you doing this evening?",
+   "it": "Cosa fai stasera?",
+   "es": "¿Qué haces esta noche?",
+   "pt": "O que vais fazer logo à noite?",
+   "pt_BR": "O que você vai fazer hoje à noite?",
+   "fr": "Qu'est-ce que tu fais ce soir ?",
+   "de": "Was machst du heute Abend?"
+  }
+ },
+ {
+  "id": "ss-small_talk-018",
+  "topic": "small_talk",
+  "level": "A2",
+  "text": {
+   "en": "Is the weather nice where you live?",
+   "it": "Dove abiti c'è bel tempo?",
+   "es": "¿Hace buen tiempo donde vives?",
+   "pt": "Onde vives está bom tempo?",
+   "pt_BR": "O tempo está bom onde você mora?",
+   "fr": "Il fait beau là où tu habites ?",
+   "de": "Ist das Wetter dort, wo du wohnst, schön?"
+  }
+ },
+ {
+  "id": "ss-small_talk-019",
+  "topic": "small_talk",
+  "level": "A2",
+  "text": {
+   "en": "I am learning your language, but I am still a beginner.",
+   "it": "Sto imparando la tua lingua, ma sono ancora un principiante.",
+   "es": "Estoy aprendiendo tu idioma, pero todavía soy principiante.",
+   "pt": "Estou a aprender a tua língua, mas ainda sou principiante.",
+   "pt_BR": "Estou aprendendo a sua língua, mas ainda sou iniciante.",
+   "fr": "J'apprends ta langue, mais je suis encore débutant.",
+   "de": "Ich lerne deine Sprache, aber ich bin noch Anfänger."
+  }
+ },
+ {
+  "id": "ss-small_talk-020",
+  "topic": "small_talk",
+  "level": "A2",
+  "text": {
+   "en": "What do you like to do in your free time?",
+   "it": "Cosa ti piace fare nel tempo libero?",
+   "es": "¿Qué te gusta hacer en tu tiempo libre?",
+   "pt": "O que gostas de fazer nos tempos livres?",
+   "pt_BR": "O que você gosta de fazer no tempo livre?",
+   "fr": "Qu'est-ce que tu aimes faire pendant ton temps libre ?",
+   "de": "Was machst du gern in deiner Freizeit?"
+  }
+ },
+ {
+  "id": "ss-small_talk-021",
+  "topic": "small_talk",
+  "level": "A2",
+  "text": {
+   "en": "Can you recommend a good movie?",
+   "it": "Puoi consigliarmi un bel film?",
+   "es": "¿Me puedes recomendar una buena película?",
+   "pt": "Podes recomendar-me um bom filme?",
+   "pt_BR": "Você pode me recomendar um bom filme?",
+   "fr": "Tu peux me recommander un bon film ?",
+   "de": "Kannst du mir einen guten Film empfehlen?"
+  }
+ },
+ {
+  "id": "ss-small_talk-022",
+  "topic": "small_talk",
+  "level": "A2",
+  "text": {
+   "en": "Do you have any plans for the holidays?",
+   "it": "Hai dei programmi per le vacanze?",
+   "es": "¿Tienes planes para las vacaciones?",
+   "pt": "Tens planos para as férias?",
+   "pt_BR": "Você tem planos para as férias?",
+   "fr": "Tu as des projets pour les vacances ?",
+   "de": "Hast du Pläne für die Ferien?"
+  }
+ },
+ {
+  "id": "ss-small_talk-023",
+  "topic": "small_talk",
+  "level": "A2",
+  "text": {
+   "en": "I work in an office near the city center.",
+   "it": "Lavoro in un ufficio vicino al centro città.",
+   "es": "Trabajo en una oficina cerca del centro de la ciudad.",
+   "pt": "Trabalho num escritório perto do centro da cidade.",
+   "pt_BR": "Trabalho em um escritório perto do centro da cidade.",
+   "fr": "Je travaille dans un bureau près du centre-ville.",
+   "de": "Ich arbeite in einem Büro in der Nähe des Stadtzentrums."
+  }
+ },
+ {
+  "id": "ss-small_talk-024",
+  "topic": "small_talk",
+  "level": "A2",
+  "text": {
+   "en": "It has been raining all week here.",
+   "it": "Qui piove da una settimana.",
+   "es": "Aquí ha estado lloviendo toda la semana.",
+   "pt": "Aqui tem chovido a semana toda.",
+   "pt_BR": "Aqui tem chovido a semana inteira.",
+   "fr": "Chez moi, il pleut toute la semaine.",
+   "de": "Hier regnet es die ganze Woche."
+  }
+ },
+ {
+  "id": "ss-small_talk-025",
+  "topic": "small_talk",
+  "level": "A2",
+  "text": {
+   "en": "What kind of food do you like?",
+   "it": "Che tipo di cibo ti piace?",
+   "es": "¿Qué tipo de comida te gusta?",
+   "pt": "Que tipo de comida gostas?",
+   "pt_BR": "Que tipo de comida você gosta?",
+   "fr": "Quel genre de cuisine tu aimes ?",
+   "de": "Welches Essen magst du?"
+  }
+ },
+ {
+  "id": "ss-small_talk-026",
+  "topic": "small_talk",
+  "level": "A2",
+  "text": {
+   "en": "Sorry, I did not understand. Could you repeat that?",
+   "it": "Scusa, non ho capito. Puoi ripetere?",
+   "es": "Perdona, no he entendido. ¿Puedes repetirlo?",
+   "pt": "Desculpa, não percebi. Podes repetir?",
+   "pt_BR": "Desculpe, não entendi. Você pode repetir?",
+   "fr": "Désolé, je n'ai pas compris. Tu peux répéter ?",
+   "de": "Entschuldige, ich habe das nicht verstanden. Kannst du das wiederholen?"
+  }
+ },
+ {
+  "id": "ss-small_talk-027",
+  "topic": "small_talk",
+  "level": "A2",
+  "text": {
+   "en": "Could you speak a little more slowly, please?",
+   "it": "Potresti parlare un po' più lentamente, per favore?",
+   "es": "¿Podrías hablar un poco más despacio, por favor?",
+   "pt": "Podes falar um pouco mais devagar, por favor?",
+   "pt_BR": "Você poderia falar um pouco mais devagar, por favor?",
+   "fr": "Tu pourrais parler un peu plus lentement, s'il te plaît ?",
+   "de": "Könntest du bitte etwas langsamer sprechen?"
+  }
+ },
+ {
+  "id": "ss-small_talk-028",
+  "topic": "small_talk",
+  "level": "A2",
+  "text": {
+   "en": "I just got home from work.",
+   "it": "Sono appena tornato a casa dal lavoro.",
+   "es": "Acabo de llegar a casa del trabajo.",
+   "pt": "Acabei de chegar a casa do trabalho.",
+   "pt_BR": "Acabei de chegar em casa do trabalho.",
+   "fr": "Je viens de rentrer du travail.",
+   "de": "Ich bin gerade von der Arbeit nach Hause gekommen."
+  }
+ },
+ {
+  "id": "ss-small_talk-029",
+  "topic": "small_talk",
+  "level": "A2",
+  "text": {
+   "en": "How long have you lived in your city?",
+   "it": "Da quanto tempo vivi nella tua città?",
+   "es": "¿Cuánto tiempo llevas viviendo en tu ciudad?",
+   "pt": "Há quanto tempo vives na tua cidade?",
+   "pt_BR": "Há quanto tempo você mora na sua cidade?",
+   "fr": "Depuis combien de temps tu habites dans ta ville ?",
+   "de": "Wie lange wohnst du schon in deiner Stadt?"
+  }
+ },
+ {
+  "id": "ss-small_talk-030",
+  "topic": "small_talk",
+  "level": "A2",
+  "text": {
+   "en": "Let's talk again soon.",
+   "it": "Parliamo di nuovo presto.",
+   "es": "Hablemos de nuevo pronto.",
+   "pt": "Falamos outra vez em breve.",
+   "pt_BR": "Vamos conversar de novo em breve.",
+   "fr": "On se reparle bientôt.",
+   "de": "Lass uns bald wieder schreiben."
+  }
+ },
+ {
+  "id": "ss-small_talk-031",
+  "topic": "small_talk",
+  "level": "B1",
+  "text": {
+   "en": "I would love to hear more about the place where you grew up.",
+   "it": "Mi piacerebbe sapere di più sul posto in cui sei cresciuto.",
+   "es": "Me encantaría saber más sobre el lugar donde creciste.",
+   "pt": "Gostava de saber mais sobre o sítio onde cresceste.",
+   "pt_BR": "Eu adoraria saber mais sobre o lugar onde você cresceu.",
+   "fr": "J'aimerais en savoir plus sur l'endroit où tu as grandi.",
+   "de": "Ich würde gern mehr über den Ort erfahren, an dem du aufgewachsen bist."
+  }
+ },
+ {
+  "id": "ss-small_talk-032",
+  "topic": "small_talk",
+  "level": "B1",
+  "text": {
+   "en": "I have always wanted to visit your country. What should I see first?",
+   "it": "Ho sempre desiderato visitare il tuo paese. Cosa dovrei vedere per primo?",
+   "es": "Siempre he querido visitar tu país. ¿Qué debería ver primero?",
+   "pt": "Sempre quis visitar o teu país. O que devo ver primeiro?",
+   "pt_BR": "Sempre quis visitar o seu país. O que eu devo ver primeiro?",
+   "fr": "J'ai toujours voulu visiter ton pays. Que dois-je voir en premier ?",
+   "de": "Ich wollte schon immer dein Land besuchen. Was sollte ich zuerst sehen?"
+  }
+ },
+ {
+  "id": "ss-small_talk-033",
+  "topic": "small_talk",
+  "level": "B1",
+  "text": {
+   "en": "It is funny how a small chat can brighten the whole day.",
+   "it": "È curioso come una piccola chiacchierata possa rallegrare tutta la giornata.",
+   "es": "Es curioso cómo una pequeña charla puede alegrar todo el día.",
+   "pt": "É curioso como uma pequena conversa pode alegrar o dia inteiro.",
+   "pt_BR": "É engraçado como uma conversinha pode alegrar o dia todo.",
+   "fr": "C'est drôle de voir comme une petite discussion peut égayer toute la journée.",
+   "de": "Es ist lustig, wie ein kurzes Gespräch den ganzen Tag aufhellen kann."
+  }
+ },
+ {
+  "id": "ss-small_talk-034",
+  "topic": "small_talk",
+  "level": "B1",
+  "text": {
+   "en": "Sorry for the late reply, I have been really busy this week.",
+   "it": "Scusa il ritardo nella risposta, questa settimana sono stato molto impegnato.",
+   "es": "Perdona la tardanza en responder, he estado muy ocupado esta semana.",
+   "pt": "Desculpa a demora a responder, tenho estado muito ocupado esta semana.",
+   "pt_BR": "Desculpe a demora para responder, estive muito ocupado esta semana.",
+   "fr": "Désolé pour ma réponse tardive, j'ai été très occupé cette semaine.",
+   "de": "Entschuldige die späte Antwort, ich hatte diese Woche viel zu tun."
+  }
+ },
+ {
+  "id": "ss-small_talk-035",
+  "topic": "small_talk",
+  "level": "B1",
+  "text": {
+   "en": "What is something you have learned recently that surprised you?",
+   "it": "Cosa hai imparato di recente che ti ha sorpreso?",
+   "es": "¿Qué has aprendido últimamente que te haya sorprendido?",
+   "pt": "O que aprendeste recentemente que te surpreendeu?",
+   "pt_BR": "O que você aprendeu recentemente que te surpreendeu?",
+   "fr": "Qu'as-tu appris récemment qui t'a surpris ?",
+   "de": "Was hast du kürzlich gelernt, das dich überrascht hat?"
+  }
+ },
+ {
+  "id": "ss-small_talk-036",
+  "topic": "small_talk",
+  "level": "B1",
+  "text": {
+   "en": "If you have time, I would like to practice speaking with you.",
+   "it": "Se hai tempo, mi piacerebbe fare pratica di conversazione con te.",
+   "es": "Si tienes tiempo, me gustaría practicar la conversación contigo.",
+   "pt": "Se tiveres tempo, gostava de praticar a conversação contigo.",
+   "pt_BR": "Se você tiver tempo, eu gostaria de praticar conversação com você.",
+   "fr": "Si tu as le temps, j'aimerais m'entraîner à parler avec toi.",
+   "de": "Wenn du Zeit hast, würde ich gern mit dir das Sprechen üben."
+  }
+ },
+ {
+  "id": "ss-small_talk-037",
+  "topic": "small_talk",
+  "level": "B1",
+  "text": {
+   "en": "I am not sure how to say this in your language, but I will try.",
+   "it": "Non so bene come dirlo nella tua lingua, ma ci provo.",
+   "es": "No estoy seguro de cómo decir esto en tu idioma, pero lo intentaré.",
+   "pt": "Não sei bem como dizer isto na tua língua, mas vou tentar.",
+   "pt_BR": "Não sei bem como dizer isso na sua língua, mas vou tentar.",
+   "fr": "Je ne sais pas trop comment dire ça dans ta langue, mais je vais essayer.",
+   "de": "Ich weiß nicht genau, wie ich das in deiner Sprache sagen soll, aber ich versuche es."
+  }
+ },
+ {
+  "id": "ss-small_talk-038",
+  "topic": "small_talk",
+  "level": "B1",
+  "text": {
+   "en": "Do you have a favorite local tradition that you look forward to every year?",
+   "it": "Hai una tradizione locale preferita che aspetti con ansia ogni anno?",
+   "es": "¿Tienes alguna tradición local favorita que esperas con ganas cada año?",
+   "pt": "Tens alguma tradição local favorita que esperas com ansiedade todos os anos?",
+   "pt_BR": "Você tem alguma tradição local favorita que espera ansiosamente todo ano?",
+   "fr": "As-tu une tradition locale préférée que tu attends avec impatience chaque année ?",
+   "de": "Hast du eine lokale Lieblingstradition, auf die du dich jedes Jahr freust?"
+  }
+ },
+ {
+  "id": "ss-small_talk-039",
+  "topic": "small_talk",
+  "level": "B1",
+  "text": {
+   "en": "It is great to chat with someone from a different culture.",
+   "it": "È bello chiacchierare con qualcuno di un'altra cultura.",
+   "es": "Es genial charlar con alguien de otra cultura.",
+   "pt": "É ótimo conversar com alguém de uma cultura diferente.",
+   "pt_BR": "É ótimo conversar com alguém de uma cultura diferente.",
+   "fr": "C'est super de discuter avec quelqu'un d'une autre culture.",
+   "de": "Es ist toll, sich mit jemandem aus einer anderen Kultur zu unterhalten."
+  }
+ },
+ {
+  "id": "ss-small_talk-040",
+  "topic": "small_talk",
+  "level": "B1",
+  "text": {
+   "en": "What does a typical weekend look like for you?",
+   "it": "Com'è un tuo fine settimana tipico?",
+   "es": "¿Cómo es un fin de semana típico para ti?",
+   "pt": "Como é um fim de semana típico para ti?",
+   "pt_BR": "Como é um fim de semana típico para você?",
+   "fr": "À quoi ressemble un week-end typique pour toi ?",
+   "de": "Wie sieht ein typisches Wochenende bei dir aus?"
+  }
+ },
+ {
+  "id": "ss-small_talk-041",
+  "topic": "small_talk",
+  "level": "B1",
+  "text": {
+   "en": "I heard that the weather there is quite different from here.",
+   "it": "Ho sentito che il clima da te è molto diverso da qui.",
+   "es": "He oído que el clima allí es bastante distinto al de aquí.",
+   "pt": "Ouvi dizer que o clima aí é bastante diferente do daqui.",
+   "pt_BR": "Ouvi dizer que o clima aí é bem diferente do daqui.",
+   "fr": "J'ai entendu dire que le climat chez toi est assez différent d'ici.",
+   "de": "Ich habe gehört, dass das Wetter bei dir ganz anders ist als hier."
+  }
+ },
+ {
+  "id": "ss-small_talk-042",
+  "topic": "small_talk",
+  "level": "B1",
+  "text": {
+   "en": "Let me know if I make any mistakes, I would really like to improve.",
+   "it": "Fammi sapere se faccio errori, mi piacerebbe davvero migliorare.",
+   "es": "Avísame si cometo algún error, me gustaría mejorar de verdad.",
+   "pt": "Avisa-me se cometer algum erro, gostava mesmo de melhorar.",
+   "pt_BR": "Me avise se eu cometer algum erro, eu quero muito melhorar.",
+   "fr": "Dis-moi si je fais des erreurs, j'aimerais vraiment progresser.",
+   "de": "Sag mir Bescheid, wenn ich Fehler mache, ich möchte mich wirklich verbessern."
+  }
+ },
+ {
+  "id": "ss-small_talk-043",
+  "topic": "small_talk",
+  "level": "B1",
+  "text": {
+   "en": "I am glad we got to know each other through this app.",
+   "it": "Sono contento che ci siamo conosciuti tramite questa app.",
+   "es": "Me alegra que nos hayamos conocido a través de esta aplicación.",
+   "pt": "Estou contente por nos termos conhecido através desta aplicação.",
+   "pt_BR": "Fico feliz que a gente tenha se conhecido por este aplicativo.",
+   "fr": "Je suis content que nous nous soyons connus grâce à cette appli.",
+   "de": "Ich bin froh, dass wir uns über diese App kennengelernt haben."
+  }
+ },
+ {
+  "id": "ss-small_talk-044",
+  "topic": "small_talk",
+  "level": "B2",
+  "text": {
+   "en": "Whenever I talk to people from other countries, I realize how many things we have in common.",
+   "it": "Ogni volta che parlo con persone di altri paesi mi accorgo di quante cose abbiamo in comune.",
+   "es": "Cada vez que hablo con gente de otros países me doy cuenta de cuántas cosas tenemos en común.",
+   "pt": "Sempre que falo com pessoas de outros países, apercebo-me de quantas coisas temos em comum.",
+   "pt_BR": "Sempre que converso com pessoas de outros países, percebo quantas coisas temos em comum.",
+   "fr": "Chaque fois que je parle avec des gens d'autres pays, je me rends compte de tout ce que nous avons en commun.",
+   "de": "Immer wenn ich mit Menschen aus anderen Ländern spreche, merke ich, wie viel wir gemeinsam haben."
+  }
+ },
+ {
+  "id": "ss-small_talk-045",
+  "topic": "small_talk",
+  "level": "B2",
+  "text": {
+   "en": "Although my vocabulary is limited, I will do my best to keep the conversation going.",
+   "it": "Anche se il mio vocabolario è limitato, farò del mio meglio per mandare avanti la conversazione.",
+   "es": "Aunque mi vocabulario es limitado, haré lo posible por mantener la conversación.",
+   "pt": "Embora o meu vocabulário seja limitado, vou fazer o possível para manter a conversa.",
+   "pt_BR": "Embora meu vocabulário seja limitado, farei o possível para manter a conversa.",
+   "fr": "Même si mon vocabulaire est limité, je ferai de mon mieux pour que la conversation continue.",
+   "de": "Auch wenn mein Wortschatz begrenzt ist, werde ich mein Bestes tun, das Gespräch am Laufen zu halten."
+  }
+ },
+ {
+  "id": "ss-small_talk-046",
+  "topic": "small_talk",
+  "level": "B2",
+  "text": {
+   "en": "It would be wonderful if we could swap stories about our everyday lives.",
+   "it": "Sarebbe meraviglioso se potessimo scambiarci racconti sulla nostra vita quotidiana.",
+   "es": "Sería maravilloso que pudiéramos intercambiar historias sobre nuestra vida cotidiana.",
+   "pt": "Seria maravilhoso se pudéssemos trocar histórias sobre o nosso dia a dia.",
+   "pt_BR": "Seria maravilhoso se pudéssemos trocar histórias sobre o nosso dia a dia.",
+   "fr": "Ce serait formidable si nous pouvions échanger des histoires sur notre quotidien.",
+   "de": "Es wäre wunderbar, wenn wir Geschichten aus unserem Alltag austauschen könnten."
+  }
+ },
+ {
+  "id": "ss-small_talk-047",
+  "topic": "small_talk",
+  "level": "B2",
+  "text": {
+   "en": "I have been meaning to ask you what daily life is really like in your part of the world.",
+   "it": "Volevo chiederti da un po' com'è davvero la vita quotidiana dalle tue parti.",
+   "es": "Hace tiempo que quería preguntarte cómo es realmente la vida diaria en tu parte del mundo.",
+   "pt": "Há algum tempo que queria perguntar-te como é realmente a vida quotidiana na tua zona do mundo.",
+   "pt_BR": "Há um tempo eu queria te perguntar como é realmente a vida cotidiana na sua parte do mundo.",
+   "fr": "Je voulais te demander depuis un moment à quoi ressemble vraiment la vie quotidienne dans ta région du monde.",
+   "de": "Ich wollte dich schon länger fragen, wie der Alltag in deinem Teil der Welt wirklich aussieht."
+  }
+ },
+ {
+  "id": "ss-small_talk-048",
+  "topic": "small_talk",
+  "level": "B2",
+  "text": {
+   "en": "Please do not hesitate to correct me, since that is the best way for me to learn.",
+   "it": "Non esitare a correggermi, è il modo migliore per me di imparare.",
+   "es": "No dudes en corregirme, ya que es la mejor manera de que aprenda.",
+   "pt": "Não hesites em corrigir-me, pois é a melhor maneira de eu aprender.",
+   "pt_BR": "Não hesite em me corrigir, porque é a melhor forma de eu aprender.",
+   "fr": "N'hésite pas à me corriger, c'est la meilleure façon pour moi d'apprendre.",
+   "de": "Zögere bitte nicht, mich zu korrigieren, denn so lerne ich am besten."
+  }
+ },
+ {
+  "id": "ss-small_talk-049",
+  "topic": "small_talk",
+  "level": "B2",
+  "text": {
+   "en": "Despite the time difference, I am happy we managed to find a moment to chat.",
+   "it": "Nonostante il fuso orario, sono felice che siamo riusciti a trovare un momento per chiacchierare.",
+   "es": "A pesar de la diferencia horaria, me alegra que hayamos encontrado un momento para charlar.",
+   "pt": "Apesar da diferença horária, fico contente por termos conseguido arranjar um momento para conversar.",
+   "pt_BR": "Apesar da diferença de fuso horário, fico feliz que tenhamos conseguido arranjar um momento para conversar.",
+   "fr": "Malgré le décalage horaire, je suis content que nous ayons trouvé un moment pour discuter.",
+   "de": "Trotz des Zeitunterschieds bin ich froh, dass wir einen Moment zum Plaudern gefunden haben."
+  }
+ },
+ {
+  "id": "ss-small_talk-050",
+  "topic": "small_talk",
+  "level": "B2",
+  "text": {
+   "en": "Language is such a fascinating bridge; it lets us understand each other's worlds.",
+   "it": "La lingua è un ponte affascinante: ci permette di capire i mondi degli altri.",
+   "es": "El idioma es un puente fascinante: nos permite entender el mundo del otro.",
+   "pt": "A língua é uma ponte fascinante: permite-nos compreender o mundo uns dos outros.",
+   "pt_BR": "A língua é uma ponte fascinante: ela nos permite entender o mundo uns dos outros.",
+   "fr": "La langue est un pont fascinant : elle nous permet de comprendre le monde de l'autre.",
+   "de": "Sprache ist eine faszinierende Brücke: Sie lässt uns die Welt des anderen verstehen."
+  }
+ },
+ {
+  "id": "ss-family-001",
+  "topic": "family",
+  "level": "A1",
+  "text": {
+   "en": "This is my family.",
+   "it": "Questa è la mia famiglia.",
+   "es": "Esta es mi familia.",
+   "pt": "Esta é a minha família.",
+   "pt_BR": "Esta é a minha família.",
+   "fr": "Voici ma famille.",
+   "de": "Das ist meine Familie."
+  }
+ },
+ {
+  "id": "ss-family-002",
+  "topic": "family",
+  "level": "A1",
+  "text": {
+   "en": "I have two brothers.",
+   "it": "Ho due fratelli.",
+   "es": "Tengo dos hermanos.",
+   "pt": "Tenho dois irmãos.",
+   "pt_BR": "Tenho dois irmãos.",
+   "fr": "J'ai deux frères.",
+   "de": "Ich habe zwei Brüder."
+  }
+ },
+ {
+  "id": "ss-family-003",
+  "topic": "family",
+  "level": "A1",
+  "text": {
+   "en": "I have one sister.",
+   "it": "Ho una sorella.",
+   "es": "Tengo una hermana.",
+   "pt": "Tenho uma irmã.",
+   "pt_BR": "Tenho uma irmã.",
+   "fr": "J'ai une sœur.",
+   "de": "Ich habe eine Schwester."
+  }
+ },
+ {
+  "id": "ss-family-004",
+  "topic": "family",
+  "level": "A1",
+  "text": {
+   "en": "My mother is a teacher.",
+   "it": "Mia madre è insegnante.",
+   "es": "Mi madre es profesora.",
+   "pt": "A minha mãe é professora.",
+   "pt_BR": "Minha mãe é professora.",
+   "fr": "Ma mère est professeure.",
+   "de": "Meine Mutter ist Lehrerin."
+  }
+ },
+ {
+  "id": "ss-family-005",
+  "topic": "family",
+  "level": "A1",
+  "text": {
+   "en": "My father likes to cook.",
+   "it": "A mio padre piace cucinare.",
+   "es": "A mi padre le gusta cocinar.",
+   "pt": "O meu pai gosta de cozinhar.",
+   "pt_BR": "Meu pai gosta de cozinhar.",
+   "fr": "Mon père aime cuisiner.",
+   "de": "Mein Vater kocht gern."
+  }
+ },
+ {
+  "id": "ss-family-006",
+  "topic": "family",
+  "level": "A1",
+  "text": {
+   "en": "Do you have children?",
+   "it": "Hai figli?",
+   "es": "¿Tienes hijos?",
+   "pt": "Tens filhos?",
+   "pt_BR": "Você tem filhos?",
+   "fr": "Tu as des enfants ?",
+   "de": "Hast du Kinder?"
+  }
+ },
+ {
+  "id": "ss-family-007",
+  "topic": "family",
+  "level": "A1",
+  "text": {
+   "en": "My grandmother is eighty years old.",
+   "it": "Mia nonna ha ottant'anni.",
+   "es": "Mi abuela tiene ochenta años.",
+   "pt": "A minha avó tem oitenta anos.",
+   "pt_BR": "Minha avó tem oitenta anos.",
+   "fr": "Ma grand-mère a quatre-vingts ans.",
+   "de": "Meine Oma ist achtzig Jahre alt."
+  }
+ },
+ {
+  "id": "ss-family-008",
+  "topic": "family",
+  "level": "A1",
+  "text": {
+   "en": "We are a big family.",
+   "it": "Siamo una famiglia numerosa.",
+   "es": "Somos una familia grande.",
+   "pt": "Somos uma família grande.",
+   "pt_BR": "Somos uma família grande.",
+   "fr": "Nous sommes une grande famille.",
+   "de": "Wir sind eine große Familie."
+  }
+ },
+ {
+  "id": "ss-family-009",
+  "topic": "family",
+  "level": "A1",
+  "text": {
+   "en": "How many people are in your family?",
+   "it": "Quante persone ci sono nella tua famiglia?",
+   "es": "¿Cuántas personas hay en tu familia?",
+   "pt": "Quantas pessoas há na tua família?",
+   "pt_BR": "Quantas pessoas tem na sua família?",
+   "fr": "Combien de personnes y a-t-il dans ta famille ?",
+   "de": "Wie viele Personen gehören zu deiner Familie?"
+  }
+ },
+ {
+  "id": "ss-family-010",
+  "topic": "family",
+  "level": "A1",
+  "text": {
+   "en": "This is my son.",
+   "it": "Questo è mio figlio.",
+   "es": "Este es mi hijo.",
+   "pt": "Este é o meu filho.",
+   "pt_BR": "Este é o meu filho.",
+   "fr": "Voici mon fils.",
+   "de": "Das ist mein Sohn."
+  }
+ },
+ {
+  "id": "ss-family-011",
+  "topic": "family",
+  "level": "A1",
+  "text": {
+   "en": "I live with my parents.",
+   "it": "Vivo con i miei genitori.",
+   "es": "Vivo con mis padres.",
+   "pt": "Vivo com os meus pais.",
+   "pt_BR": "Moro com os meus pais.",
+   "fr": "J'habite avec mes parents.",
+   "de": "Ich wohne bei meinen Eltern."
+  }
+ },
+ {
+  "id": "ss-family-012",
+  "topic": "family",
+  "level": "A1",
+  "text": {
+   "en": "I have a younger brother.",
+   "it": "Ho un fratello più piccolo.",
+   "es": "Tengo un hermano menor.",
+   "pt": "Tenho um irmão mais novo.",
+   "pt_BR": "Tenho um irmão mais novo.",
+   "fr": "J'ai un petit frère.",
+   "de": "Ich habe einen jüngeren Bruder."
+  }
+ },
+ {
+  "id": "ss-family-013",
+  "topic": "family",
+  "level": "A1",
+  "text": {
+   "en": "My family lives in a small town.",
+   "it": "La mia famiglia vive in una piccola città.",
+   "es": "Mi familia vive en un pueblo pequeño.",
+   "pt": "A minha família vive numa vila pequena.",
+   "pt_BR": "Minha família mora em uma cidade pequena.",
+   "fr": "Ma famille habite dans une petite ville.",
+   "de": "Meine Familie lebt in einer Kleinstadt."
+  }
+ },
+ {
+  "id": "ss-family-014",
+  "topic": "family",
+  "level": "A1",
+  "text": {
+   "en": "Do you have a big family?",
+   "it": "Hai una famiglia numerosa?",
+   "es": "¿Tienes una familia grande?",
+   "pt": "Tens uma família grande?",
+   "pt_BR": "Você tem uma família grande?",
+   "fr": "Tu as une grande famille ?",
+   "de": "Hast du eine große Familie?"
+  }
+ },
+ {
+  "id": "ss-family-015",
+  "topic": "family",
+  "level": "A1",
+  "text": {
+   "en": "I love my family.",
+   "it": "Voglio bene alla mia famiglia.",
+   "es": "Quiero mucho a mi familia.",
+   "pt": "Gosto muito da minha família.",
+   "pt_BR": "Eu amo a minha família.",
+   "fr": "J'aime ma famille.",
+   "de": "Ich liebe meine Familie."
+  }
+ },
+ {
+  "id": "ss-family-016",
+  "topic": "family",
+  "level": "A2",
+  "text": {
+   "en": "My parents live in another city.",
+   "it": "I miei genitori vivono in un'altra città.",
+   "es": "Mis padres viven en otra ciudad.",
+   "pt": "Os meus pais vivem noutra cidade.",
+   "pt_BR": "Meus pais moram em outra cidade.",
+   "fr": "Mes parents habitent dans une autre ville.",
+   "de": "Meine Eltern wohnen in einer anderen Stadt."
+  }
+ },
+ {
+  "id": "ss-family-017",
+  "topic": "family",
+  "level": "A2",
+  "text": {
+   "en": "We have lunch together every Sunday.",
+   "it": "Pranziamo insieme ogni domenica.",
+   "es": "Comemos juntos todos los domingos.",
+   "pt": "Almoçamos juntos todos os domingos.",
+   "pt_BR": "A gente almoça junto todo domingo.",
+   "fr": "Nous déjeunons ensemble tous les dimanches.",
+   "de": "Wir essen jeden Sonntag zusammen zu Mittag."
+  }
+ },
+ {
+  "id": "ss-family-018",
+  "topic": "family",
+  "level": "A2",
+  "text": {
+   "en": "My grandfather tells great stories.",
+   "it": "Mio nonno racconta storie bellissime.",
+   "es": "Mi abuelo cuenta historias estupendas.",
+   "pt": "O meu avô conta histórias fantásticas.",
+   "pt_BR": "Meu avô conta histórias incríveis.",
+   "fr": "Mon grand-père raconte des histoires formidables.",
+   "de": "Mein Opa erzählt tolle Geschichten."
+  }
+ },
+ {
+  "id": "ss-family-019",
+  "topic": "family",
+  "level": "A2",
+  "text": {
+   "en": "Are you close to your cousins?",
+   "it": "Sei legato ai tuoi cugini?",
+   "es": "¿Tienes buena relación con tus primos?",
+   "pt": "És próximo dos teus primos?",
+   "pt_BR": "Você é próximo dos seus primos?",
+   "fr": "Es-tu proche de tes cousins ?",
+   "de": "Hast du ein enges Verhältnis zu deinen Cousins?"
+  }
+ },
+ {
+  "id": "ss-family-020",
+  "topic": "family",
+  "level": "A2",
+  "text": {
+   "en": "My sister is studying at university.",
+   "it": "Mia sorella studia all'università.",
+   "es": "Mi hermana estudia en la universidad.",
+   "pt": "A minha irmã estuda na universidade.",
+   "pt_BR": "Minha irmã estuda na universidade.",
+   "fr": "Ma sœur fait des études à l'université.",
+   "de": "Meine Schwester studiert an der Universität."
+  }
+ },
+ {
+  "id": "ss-family-021",
+  "topic": "family",
+  "level": "A2",
+  "text": {
+   "en": "We visit my grandparents during the holidays.",
+   "it": "Andiamo a trovare i nonni durante le vacanze.",
+   "es": "Visitamos a mis abuelos durante las vacaciones.",
+   "pt": "Visitamos os meus avós durante as férias.",
+   "pt_BR": "A gente visita meus avós durante as férias.",
+   "fr": "Nous rendons visite à mes grands-parents pendant les vacances.",
+   "de": "In den Ferien besuchen wir meine Großeltern."
+  }
+ },
+ {
+  "id": "ss-family-022",
+  "topic": "family",
+  "level": "A2",
+  "text": {
+   "en": "My little nephew is learning to walk.",
+   "it": "Il mio nipotino sta imparando a camminare.",
+   "es": "Mi sobrinito está aprendiendo a caminar.",
+   "pt": "O meu sobrinho pequeno está a aprender a andar.",
+   "pt_BR": "Meu sobrinho pequeno está aprendendo a andar.",
+   "fr": "Mon petit neveu apprend à marcher.",
+   "de": "Mein kleiner Neffe lernt gerade laufen."
+  }
+ },
+ {
+  "id": "ss-family-023",
+  "topic": "family",
+  "level": "A2",
+  "text": {
+   "en": "Who cooks at your home?",
+   "it": "Chi cucina a casa tua?",
+   "es": "¿Quién cocina en tu casa?",
+   "pt": "Quem cozinha lá em casa?",
+   "pt_BR": "Quem cozinha na sua casa?",
+   "fr": "Qui cuisine chez toi ?",
+   "de": "Wer kocht bei dir zu Hause?"
+  }
+ },
+ {
+  "id": "ss-family-024",
+  "topic": "family",
+  "level": "A2",
+  "text": {
+   "en": "My family is coming to visit next week.",
+   "it": "La mia famiglia viene a trovarmi la settimana prossima.",
+   "es": "Mi familia viene a visitarme la semana que viene.",
+   "pt": "A minha família vem visitar-me na próxima semana.",
+   "pt_BR": "Minha família vem me visitar na semana que vem.",
+   "fr": "Ma famille vient me rendre visite la semaine prochaine.",
+   "de": "Meine Familie kommt nächste Woche zu Besuch."
+  }
+ },
+ {
+  "id": "ss-family-025",
+  "topic": "family",
+  "level": "A2",
+  "text": {
+   "en": "I call my mother every evening.",
+   "it": "Chiamo mia madre ogni sera.",
+   "es": "Llamo a mi madre todas las noches.",
+   "pt": "Ligo à minha mãe todas as noites.",
+   "pt_BR": "Ligo para minha mãe toda noite.",
+   "fr": "J'appelle ma mère tous les soirs.",
+   "de": "Ich rufe meine Mutter jeden Abend an."
+  }
+ },
+ {
+  "id": "ss-family-026",
+  "topic": "family",
+  "level": "A2",
+  "text": {
+   "en": "What is your family like?",
+   "it": "Com'è la tua famiglia?",
+   "es": "¿Cómo es tu familia?",
+   "pt": "Como é a tua família?",
+   "pt_BR": "Como é a sua família?",
+   "fr": "Comment est ta famille ?",
+   "de": "Wie ist deine Familie?"
+  }
+ },
+ {
+  "id": "ss-family-027",
+  "topic": "family",
+  "level": "A2",
+  "text": {
+   "en": "My aunt lives near the sea.",
+   "it": "Mia zia vive vicino al mare.",
+   "es": "Mi tía vive cerca del mar.",
+   "pt": "A minha tia vive perto do mar.",
+   "pt_BR": "Minha tia mora perto do mar.",
+   "fr": "Ma tante habite près de la mer.",
+   "de": "Meine Tante wohnt in der Nähe des Meeres."
+  }
+ },
+ {
+  "id": "ss-family-028",
+  "topic": "family",
+  "level": "A2",
+  "text": {
+   "en": "We celebrate birthdays with a big dinner.",
+   "it": "Festeggiamo i compleanni con una grande cena.",
+   "es": "Celebramos los cumpleaños con una gran cena.",
+   "pt": "Celebramos os aniversários com um grande jantar.",
+   "pt_BR": "A gente comemora os aniversários com um grande jantar.",
+   "fr": "Nous fêtons les anniversaires avec un grand dîner.",
+   "de": "Geburtstage feiern wir mit einem großen Abendessen."
+  }
+ },
+ {
+  "id": "ss-family-029",
+  "topic": "family",
+  "level": "A2",
+  "text": {
+   "en": "My cousin and I grew up together.",
+   "it": "Io e mio cugino siamo cresciuti insieme.",
+   "es": "Mi primo y yo crecimos juntos.",
+   "pt": "Eu e o meu primo crescemos juntos.",
+   "pt_BR": "Eu e meu primo crescemos juntos.",
+   "fr": "Mon cousin et moi, nous avons grandi ensemble.",
+   "de": "Mein Cousin und ich sind zusammen aufgewachsen."
+  }
+ },
+ {
+  "id": "ss-family-030",
+  "topic": "family",
+  "level": "A2",
+  "text": {
+   "en": "I miss my family when I travel.",
+   "it": "Mi manca la mia famiglia quando viaggio.",
+   "es": "Echo de menos a mi familia cuando viajo.",
+   "pt": "Tenho saudades da minha família quando viajo.",
+   "pt_BR": "Sinto saudades da minha família quando viajo.",
+   "fr": "Ma famille me manque quand je voyage.",
+   "de": "Wenn ich verreise, vermisse ich meine Familie."
+  }
+ },
+ {
+  "id": "ss-family-031",
+  "topic": "family",
+  "level": "B1",
+  "text": {
+   "en": "My grandmother taught me how to cook her favorite recipes.",
+   "it": "Mia nonna mi ha insegnato a cucinare le sue ricette preferite.",
+   "es": "Mi abuela me enseñó a cocinar sus recetas favoritas.",
+   "pt": "A minha avó ensinou-me a cozinhar as suas receitas favoritas.",
+   "pt_BR": "Minha avó me ensinou a cozinhar as receitas favoritas dela.",
+   "fr": "Ma grand-mère m'a appris à cuisiner ses recettes préférées.",
+   "de": "Meine Oma hat mir beigebracht, ihre Lieblingsrezepte zu kochen."
+  }
+ },
+ {
+  "id": "ss-family-032",
+  "topic": "family",
+  "level": "B1",
+  "text": {
+   "en": "In my family, everybody gets together for the big holidays.",
+   "it": "Nella mia famiglia ci si riunisce tutti per le grandi feste.",
+   "es": "En mi familia nos reunimos todos para las fiestas importantes.",
+   "pt": "Na minha família, juntamo-nos todos nas grandes festas.",
+   "pt_BR": "Na minha família, todo mundo se reúne nas grandes festas.",
+   "fr": "Dans ma famille, tout le monde se réunit pour les grandes fêtes.",
+   "de": "In meiner Familie kommen alle zu den großen Feiertagen zusammen."
+  }
+ },
+ {
+  "id": "ss-family-033",
+  "topic": "family",
+  "level": "B1",
+  "text": {
+   "en": "I am the youngest in my family, so I was always spoiled a little.",
+   "it": "Sono il più piccolo della famiglia, quindi sono sempre stato un po' coccolato.",
+   "es": "Soy el menor de mi familia, así que siempre me mimaron un poco.",
+   "pt": "Sou o mais novo da família, por isso fui sempre um pouco mimado.",
+   "pt_BR": "Sou o caçula da família, então sempre fui um pouco mimado.",
+   "fr": "Je suis le plus jeune de ma famille, alors j'ai toujours été un peu gâté.",
+   "de": "Ich bin der Jüngste in meiner Familie und wurde deshalb immer ein bisschen verwöhnt."
+  }
+ },
+ {
+  "id": "ss-family-034",
+  "topic": "family",
+  "level": "B1",
+  "text": {
+   "en": "What traditions does your family keep at special celebrations?",
+   "it": "Quali tradizioni segue la tua famiglia nelle occasioni speciali?",
+   "es": "¿Qué tradiciones mantiene tu familia en las celebraciones especiales?",
+   "pt": "Que tradições a tua família mantém nas celebrações especiais?",
+   "pt_BR": "Que tradições a sua família mantém nas comemorações especiais?",
+   "fr": "Quelles traditions ta famille perpétue-t-elle lors des fêtes spéciales ?",
+   "de": "Welche Traditionen pflegt deine Familie bei besonderen Feiern?"
+  }
+ },
+ {
+  "id": "ss-family-035",
+  "topic": "family",
+  "level": "B1",
+  "text": {
+   "en": "My parents moved to a new city when I was a child.",
+   "it": "I miei genitori si sono trasferiti in una nuova città quando ero bambino.",
+   "es": "Mis padres se mudaron a una ciudad nueva cuando yo era niño.",
+   "pt": "Os meus pais mudaram-se para uma nova cidade quando eu era criança.",
+   "pt_BR": "Meus pais se mudaram para uma nova cidade quando eu era criança.",
+   "fr": "Mes parents ont déménagé dans une nouvelle ville quand j'étais enfant.",
+   "de": "Meine Eltern sind in eine neue Stadt gezogen, als ich ein Kind war."
+  }
+ },
+ {
+  "id": "ss-family-036",
+  "topic": "family",
+  "level": "B1",
+  "text": {
+   "en": "Family dinners are the best moment of my week.",
+   "it": "Le cene in famiglia sono il momento migliore della mia settimana.",
+   "es": "Las cenas en familia son el mejor momento de mi semana.",
+   "pt": "Os jantares em família são o melhor momento da minha semana.",
+   "pt_BR": "Os jantares em família são o melhor momento da minha semana.",
+   "fr": "Les dîners en famille sont le meilleur moment de ma semaine.",
+   "de": "Das Abendessen mit der Familie ist der schönste Moment meiner Woche."
+  }
+ },
+ {
+  "id": "ss-family-037",
+  "topic": "family",
+  "level": "B1",
+  "text": {
+   "en": "I have a big family, and it is never quiet at home.",
+   "it": "Ho una famiglia numerosa e a casa non c'è mai silenzio.",
+   "es": "Tengo una familia numerosa y en casa nunca hay silencio.",
+   "pt": "Tenho uma família numerosa e em casa nunca há sossego.",
+   "pt_BR": "Tenho uma família grande e em casa nunca fica quieto.",
+   "fr": "J'ai une grande famille et il n'y a jamais de calme à la maison.",
+   "de": "Ich habe eine große Familie, und bei uns zu Hause ist es nie leise."
+  }
+ },
+ {
+  "id": "ss-family-038",
+  "topic": "family",
+  "level": "B1",
+  "text": {
+   "en": "Do you get along well with your siblings?",
+   "it": "Vai d'accordo con i tuoi fratelli e sorelle?",
+   "es": "¿Te llevas bien con tus hermanos?",
+   "pt": "Dás-te bem com os teus irmãos?",
+   "pt_BR": "Você se dá bem com os seus irmãos?",
+   "fr": "Tu t'entends bien avec tes frères et sœurs ?",
+   "de": "Verstehst du dich gut mit deinen Geschwistern?"
+  }
+ },
+ {
+  "id": "ss-family-039",
+  "topic": "family",
+  "level": "B1",
+  "text": {
+   "en": "My dad and I go hiking together whenever we can.",
+   "it": "Io e mio padre andiamo a fare escursioni insieme ogni volta che possiamo.",
+   "es": "Mi padre y yo vamos de excursión juntos siempre que podemos.",
+   "pt": "Eu e o meu pai vamos fazer caminhadas juntos sempre que podemos.",
+   "pt_BR": "Eu e meu pai fazemos trilhas juntos sempre que podemos.",
+   "fr": "Mon père et moi allons faire de la randonnée ensemble dès que possible.",
+   "de": "Mein Vater und ich gehen wandern, sooft wir können."
+  }
+ },
+ {
+  "id": "ss-family-040",
+  "topic": "family",
+  "level": "B1",
+  "text": {
+   "en": "Who in your family is the best storyteller?",
+   "it": "Chi è il miglior narratore nella tua famiglia?",
+   "es": "¿Quién es el mejor contador de historias de tu familia?",
+   "pt": "Quem é o melhor contador de histórias da tua família?",
+   "pt_BR": "Quem é o melhor contador de histórias da sua família?",
+   "fr": "Qui est le meilleur conteur de ta famille ?",
+   "de": "Wer erzählt in deiner Familie am besten Geschichten?"
+  }
+ },
+ {
+  "id": "ss-family-041",
+  "topic": "family",
+  "level": "B1",
+  "text": {
+   "en": "My children are learning two languages at the same time.",
+   "it": "I miei figli stanno imparando due lingue contemporaneamente.",
+   "es": "Mis hijos están aprendiendo dos idiomas a la vez.",
+   "pt": "Os meus filhos estão a aprender duas línguas ao mesmo tempo.",
+   "pt_BR": "Meus filhos estão aprendendo dois idiomas ao mesmo tempo.",
+   "fr": "Mes enfants apprennent deux langues en même temps.",
+   "de": "Meine Kinder lernen gleichzeitig zwei Sprachen."
+  }
+ },
+ {
+  "id": "ss-family-042",
+  "topic": "family",
+  "level": "B1",
+  "text": {
+   "en": "We video call my relatives abroad every weekend.",
+   "it": "Ogni fine settimana facciamo una videochiamata con i parenti all'estero.",
+   "es": "Cada fin de semana hacemos una videollamada con mis parientes en el extranjero.",
+   "pt": "Todos os fins de semana fazemos videochamada com os meus familiares no estrangeiro.",
+   "pt_BR": "Todo fim de semana a gente faz videochamada com meus parentes no exterior.",
+   "fr": "Chaque week-end, nous faisons un appel vidéo avec mes proches à l'étranger.",
+   "de": "Jedes Wochenende telefonieren wir per Video mit meinen Verwandten im Ausland."
+  }
+ },
+ {
+  "id": "ss-family-043",
+  "topic": "family",
+  "level": "B1",
+  "text": {
+   "en": "My family has a recipe that has been passed down for generations.",
+   "it": "La mia famiglia ha una ricetta tramandata da generazioni.",
+   "es": "Mi familia tiene una receta que se transmite desde hace generaciones.",
+   "pt": "A minha família tem uma receita que passa de geração em geração.",
+   "pt_BR": "Minha família tem uma receita que passa de geração em geração.",
+   "fr": "Ma famille a une recette qui se transmet depuis des générations.",
+   "de": "Meine Familie hat ein Rezept, das seit Generationen weitergegeben wird."
+  }
+ },
+ {
+  "id": "ss-family-044",
+  "topic": "family",
+  "level": "B2",
+  "text": {
+   "en": "Growing up with my grandparents nearby shaped the way I see family and community.",
+   "it": "Crescere con i nonni vicini ha plasmato il mio modo di vedere la famiglia e la comunità.",
+   "es": "Crecer con mis abuelos cerca marcó mi manera de entender la familia y la comunidad.",
+   "pt": "Crescer com os meus avós por perto moldou a minha forma de ver a família e a comunidade.",
+   "pt_BR": "Crescer com meus avós por perto moldou a minha maneira de ver a família e a comunidade.",
+   "fr": "Grandir avec mes grands-parents à proximité a façonné ma façon de voir la famille et la communauté.",
+   "de": "Dass meine Großeltern in der Nähe waren, hat geprägt, wie ich Familie und Gemeinschaft sehe."
+  }
+ },
+ {
+  "id": "ss-family-045",
+  "topic": "family",
+  "level": "B2",
+  "text": {
+   "en": "In my culture, relatives often play a big role in important decisions; is it the same in yours?",
+   "it": "Nella mia cultura i parenti hanno spesso un ruolo importante nelle decisioni importanti: è lo stesso nella tua?",
+   "es": "En mi cultura, los parientes suelen tener un gran papel en las decisiones importantes; ¿es igual en la tuya?",
+   "pt": "Na minha cultura, os familiares costumam ter um grande papel nas decisões importantes; na tua é igual?",
+   "pt_BR": "Na minha cultura, os parentes costumam ter um grande papel nas decisões importantes; na sua é a mesma coisa?",
+   "fr": "Dans ma culture, les proches jouent souvent un grand rôle dans les décisions importantes ; est-ce pareil dans la tienne ?",
+   "de": "In meiner Kultur spielen Verwandte oft eine große Rolle bei wichtigen Entscheidungen; ist das bei dir auch so?"
+  }
+ },
+ {
+  "id": "ss-family-046",
+  "topic": "family",
+  "level": "B2",
+  "text": {
+   "en": "Although we live far apart, my siblings and I stay close through daily messages.",
+   "it": "Anche se viviamo lontani, io e i miei fratelli restiamo vicini grazie ai messaggi di ogni giorno.",
+   "es": "Aunque vivimos lejos, mis hermanos y yo seguimos cerca gracias a los mensajes diarios.",
+   "pt": "Embora vivamos longe uns dos outros, eu e os meus irmãos mantemo-nos próximos através de mensagens diárias.",
+   "pt_BR": "Embora a gente more longe, eu e meus irmãos continuamos próximos por meio de mensagens diárias.",
+   "fr": "Même si nous vivons loin les uns des autres, mes frères et sœurs et moi restons proches grâce aux messages quotidiens.",
+   "de": "Obwohl wir weit voneinander entfernt leben, bleiben meine Geschwister und ich durch tägliche Nachrichten verbunden."
+  }
+ },
+ {
+  "id": "ss-family-047",
+  "topic": "family",
+  "level": "B2",
+  "text": {
+   "en": "I would be curious to know how families celebrate special occasions in your country.",
+   "it": "Sarei curioso di sapere come le famiglie festeggiano le occasioni speciali nel tuo paese.",
+   "es": "Me daría curiosidad saber cómo celebran las familias las ocasiones especiales en tu país.",
+   "pt": "Teria curiosidade em saber como as famílias celebram as ocasiões especiais no teu país.",
+   "pt_BR": "Eu teria curiosidade de saber como as famílias comemoram as ocasiões especiais no seu país.",
+   "fr": "Je serais curieux de savoir comment les familles fêtent les grandes occasions dans ton pays.",
+   "de": "Mich würde interessieren, wie Familien in deinem Land besondere Anlässe feiern."
+  }
+ },
+ {
+  "id": "ss-family-048",
+  "topic": "family",
+  "level": "B2",
+  "text": {
+   "en": "Raising children between two languages is challenging, but it has been very rewarding.",
+   "it": "Crescere i figli tra due lingue è impegnativo, ma è stato molto gratificante.",
+   "es": "Criar a los hijos entre dos idiomas es un reto, pero ha sido muy gratificante.",
+   "pt": "Criar filhos entre duas línguas é um desafio, mas tem sido muito gratificante.",
+   "pt_BR": "Criar filhos entre dois idiomas é um desafio, mas tem sido muito gratificante.",
+   "fr": "Élever des enfants entre deux langues est un défi, mais c'est très gratifiant.",
+   "de": "Kinder zweisprachig aufzuziehen ist eine Herausforderung, aber es war sehr lohnend."
+  }
+ },
+ {
+  "id": "ss-family-049",
+  "topic": "family",
+  "level": "B2",
+  "text": {
+   "en": "Our family reunions can get quite lively, with relatives arriving from all over.",
+   "it": "I nostri raduni di famiglia possono diventare piuttosto animati, con parenti che arrivano da ogni parte.",
+   "es": "Nuestras reuniones familiares pueden ser bastante animadas, con parientes que llegan de todas partes.",
+   "pt": "Os nossos encontros de família podem ser bastante animados, com familiares a chegar de todo o lado.",
+   "pt_BR": "Nossas reuniões de família podem ser bem animadas, com parentes chegando de todo lugar.",
+   "fr": "Nos réunions de famille peuvent être assez animées, avec des proches qui arrivent de partout.",
+   "de": "Unsere Familientreffen können ziemlich lebhaft werden, wenn Verwandte von überall anreisen."
+  }
+ },
+ {
+  "id": "ss-family-050",
+  "topic": "family",
+  "level": "B2",
+  "text": {
+   "en": "Looking at old photo albums with my parents always brings back wonderful memories.",
+   "it": "Sfogliare vecchi album di foto con i miei genitori mi riporta sempre alla mente ricordi meravigliosi.",
+   "es": "Mirar viejos álbumes de fotos con mis padres siempre me trae recuerdos maravillosos.",
+   "pt": "Ver álbuns de fotografias antigos com os meus pais traz-me sempre recordações maravilhosas.",
+   "pt_BR": "Olhar álbuns de fotos antigos com meus pais sempre traz lembranças maravilhosas.",
+   "fr": "Feuilleter de vieux albums photo avec mes parents me rappelle toujours de merveilleux souvenirs.",
+   "de": "Alte Fotoalben mit meinen Eltern anzuschauen weckt immer wunderbare Erinnerungen."
+  }
+ }
+]

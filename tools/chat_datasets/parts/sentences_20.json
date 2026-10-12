@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ss-events_rsvp-001",
+  "topic": "events_rsvp",
+  "level": "A1",
+  "text": {
+   "en": "I'm coming!",
+   "it": "Vengo!",
+   "es": "¡Voy!",
+   "pt": "Eu vou!",
+   "pt_BR": "Eu vou!",
+   "fr": "Je viens !",
+   "de": "Ich komme!"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-002",
+  "topic": "events_rsvp",
+  "level": "A1",
+  "text": {
+   "en": "Yes, I'll be there.",
+   "it": "Sì, ci sarò.",
+   "es": "Sí, allí estaré.",
+   "pt": "Sim, lá estarei.",
+   "pt_BR": "Sim, eu estarei lá.",
+   "fr": "Oui, je serai là.",
+   "de": "Ja, ich bin dabei."
+  }
+ },
+ {
+  "id": "ss-events_rsvp-003",
+  "topic": "events_rsvp",
+  "level": "A1",
+  "text": {
+   "en": "Sorry, I can't come.",
+   "it": "Mi dispiace, non posso venire.",
+   "es": "Lo siento, no puedo ir.",
+   "pt": "Não posso ir, desculpa.",
+   "pt_BR": "Desculpa, não posso ir.",
+   "fr": "Je ne peux malheureusement pas venir.",
+   "de": "Tut mir leid, ich kann nicht kommen."
+  }
+ },
+ {
+  "id": "ss-events_rsvp-004",
+  "topic": "events_rsvp",
+  "level": "A1",
+  "text": {
+   "en": "What time does it start?",
+   "it": "A che ora inizia?",
+   "es": "¿A qué hora empieza?",
+   "pt": "A que horas começa?",
+   "pt_BR": "A que horas começa?",
+   "fr": "À quelle heure ça commence ?",
+   "de": "Um wie viel Uhr geht es los?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-005",
+  "topic": "events_rsvp",
+  "level": "A1",
+  "text": {
+   "en": "Where is the event?",
+   "it": "Dov'è l'evento?",
+   "es": "¿Dónde es el evento?",
+   "pt": "Onde é o evento?",
+   "pt_BR": "Onde fica o evento?",
+   "fr": "Où a lieu l'événement ?",
+   "de": "Wo findet die Veranstaltung statt?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-006",
+  "topic": "events_rsvp",
+  "level": "A1",
+  "text": {
+   "en": "Can I bring a friend?",
+   "it": "Posso portare un amico?",
+   "es": "¿Puedo llevar a un amigo?",
+   "pt": "Posso levar um amigo?",
+   "pt_BR": "Posso levar um amigo?",
+   "fr": "Je peux amener un ami ?",
+   "de": "Kann ich einen Freund mitbringen?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-007",
+  "topic": "events_rsvp",
+  "level": "A1",
+  "text": {
+   "en": "Thank you for the invitation!",
+   "it": "Grazie per l'invito!",
+   "es": "¡Gracias por la invitación!",
+   "pt": "Agradeço o convite!",
+   "pt_BR": "Valeu pelo convite!",
+   "fr": "Merci pour l'invitation !",
+   "de": "Danke für die Einladung!"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-008",
+  "topic": "events_rsvp",
+  "level": "A1",
+  "text": {
+   "en": "See you there!",
+   "it": "Ci vediamo lì!",
+   "es": "¡Nos vemos allí!",
+   "pt": "Até lá!",
+   "pt_BR": "A gente se vê lá!",
+   "fr": "On se voit là-bas !",
+   "de": "Wir sehen uns dort!"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-009",
+  "topic": "events_rsvp",
+  "level": "A1",
+  "text": {
+   "en": "Is it free?",
+   "it": "È gratuito?",
+   "es": "¿Es gratis?",
+   "pt": "É gratuito?",
+   "pt_BR": "É de graça?",
+   "fr": "C'est gratuit ?",
+   "de": "Ist das kostenlos?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-010",
+  "topic": "events_rsvp",
+  "level": "A1",
+  "text": {
+   "en": "I'm on my way.",
+   "it": "Sono in arrivo.",
+   "es": "Ya voy para allá.",
+   "pt": "Estou a caminho.",
+   "pt_BR": "Estou indo.",
+   "fr": "Je suis en route.",
+   "de": "Ich bin unterwegs."
+  }
+ },
+ {
+  "id": "ss-events_rsvp-011",
+  "topic": "events_rsvp",
+  "level": "A1",
+  "text": {
+   "en": "Maybe. I'll tell you later.",
+   "it": "Forse. Ti farò sapere più tardi.",
+   "es": "Quizás. Te aviso más tarde.",
+   "pt": "Talvez. Digo-te mais tarde.",
+   "pt_BR": "Talvez. Te aviso mais tarde.",
+   "fr": "Peut-être. Je te dis ça plus tard.",
+   "de": "Vielleicht. Ich sage dir später Bescheid."
+  }
+ },
+ {
+  "id": "ss-events_rsvp-012",
+  "topic": "events_rsvp",
+  "level": "A1",
+  "text": {
+   "en": "How many people are coming?",
+   "it": "Quante persone vengono?",
+   "es": "¿Cuánta gente viene?",
+   "pt": "Quantas pessoas vêm?",
+   "pt_BR": "Quantas pessoas vão?",
+   "fr": "Combien de personnes viennent ?",
+   "de": "Wie viele Leute kommen?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-013",
+  "topic": "events_rsvp",
+  "level": "A1",
+  "text": {
+   "en": "Who else is going?",
+   "it": "Chi altro viene?",
+   "es": "¿Quién más va?",
+   "pt": "Quem mais vai?",
+   "pt_BR": "Quem mais vai?",
+   "fr": "Qui d'autre y va ?",
+   "de": "Wer geht noch hin?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-014",
+  "topic": "events_rsvp",
+  "level": "A1",
+  "text": {
+   "en": "I'm here!",
+   "it": "Sono qui!",
+   "es": "¡Ya estoy aquí!",
+   "pt": "Já cheguei!",
+   "pt_BR": "Cheguei!",
+   "fr": "Je suis là !",
+   "de": "Ich bin da!"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-015",
+  "topic": "events_rsvp",
+  "level": "A1",
+  "text": {
+   "en": "Is it open to everyone?",
+   "it": "È aperto a tutti?",
+   "es": "¿Está abierto a todos?",
+   "pt": "É aberto a todos?",
+   "pt_BR": "É aberto a todo mundo?",
+   "fr": "C'est ouvert à tout le monde ?",
+   "de": "Ist das für alle offen?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-016",
+  "topic": "events_rsvp",
+  "level": "A2",
+  "text": {
+   "en": "I'd love to come to the event on Saturday.",
+   "it": "Mi piacerebbe venire all'evento di sabato.",
+   "es": "Me encantaría ir al evento del sábado.",
+   "pt": "Gostava de ir ao evento de sábado.",
+   "pt_BR": "Eu adoraria ir ao evento de sábado.",
+   "fr": "J'aimerais beaucoup venir à l'événement de samedi.",
+   "de": "Ich würde sehr gern zur Veranstaltung am Samstag kommen."
+  }
+ },
+ {
+  "id": "ss-events_rsvp-017",
+  "topic": "events_rsvp",
+  "level": "A2",
+  "text": {
+   "en": "Sorry, I have other plans that day.",
+   "it": "Scusa, quel giorno ho altri programmi.",
+   "es": "Lo siento, ese día tengo otros planes.",
+   "pt": "Desculpa, nesse dia tenho outros planos.",
+   "pt_BR": "Desculpa, nesse dia eu já tenho outros planos.",
+   "fr": "Pardon, j'ai déjà d'autres projets ce jour-là.",
+   "de": "Tut mir leid, an dem Tag habe ich schon etwas vor."
+  }
+ },
+ {
+  "id": "ss-events_rsvp-018",
+  "topic": "events_rsvp",
+  "level": "A2",
+  "text": {
+   "en": "Do I need to sign up in advance?",
+   "it": "Devo iscrivermi in anticipo?",
+   "es": "¿Tengo que apuntarme con antelación?",
+   "pt": "Preciso de me inscrever com antecedência?",
+   "pt_BR": "Preciso me inscrever com antecedência?",
+   "fr": "Je dois m'inscrire à l'avance ?",
+   "de": "Muss ich mich vorher anmelden?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-019",
+  "topic": "events_rsvp",
+  "level": "A2",
+  "text": {
+   "en": "Could you send me the address, please?",
+   "it": "Potresti mandarmi l'indirizzo, per favore?",
+   "es": "¿Me puedes mandar la dirección, por favor?",
+   "pt": "Podes enviar-me a morada, por favor?",
+   "pt_BR": "Você pode me mandar o endereço, por favor?",
+   "fr": "Tu peux m'envoyer l'adresse, s'il te plaît ?",
+   "de": "Könntest du mir bitte die Adresse schicken?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-020",
+  "topic": "events_rsvp",
+  "level": "A2",
+  "text": {
+   "en": "I'll be about ten minutes late.",
+   "it": "Farò circa dieci minuti di ritardo.",
+   "es": "Llegaré unos diez minutos tarde.",
+   "pt": "Vou chegar com uns dez minutos de atraso.",
+   "pt_BR": "Vou me atrasar uns dez minutos.",
+   "fr": "J'aurai environ dix minutes de retard.",
+   "de": "Ich komme etwa zehn Minuten zu spät."
+  }
+ },
+ {
+  "id": "ss-events_rsvp-021",
+  "topic": "events_rsvp",
+  "level": "A2",
+  "text": {
+   "en": "Can I change my answer to “yes”?",
+   "it": "Posso cambiare la risposta in “sì”?",
+   "es": "¿Puedo cambiar mi respuesta a “sí”?",
+   "pt": "Posso mudar a minha resposta para “sim”?",
+   "pt_BR": "Posso mudar minha resposta para “sim”?",
+   "fr": "Je peux changer ma réponse en « oui » ?",
+   "de": "Kann ich meine Antwort auf „Ja“ ändern?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-022",
+  "topic": "events_rsvp",
+  "level": "A2",
+  "text": {
+   "en": "Is there anything I should bring?",
+   "it": "C'è qualcosa che devo portare?",
+   "es": "¿Hay algo que deba llevar?",
+   "pt": "Há alguma coisa que deva levar?",
+   "pt_BR": "Tem alguma coisa que eu deva levar?",
+   "fr": "Y a-t-il quelque chose que je dois apporter ?",
+   "de": "Gibt es etwas, das ich mitbringen soll?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-023",
+  "topic": "events_rsvp",
+  "level": "A2",
+  "text": {
+   "en": "How long does the event last?",
+   "it": "Quanto dura l'evento?",
+   "es": "¿Cuánto dura el evento?",
+   "pt": "Quanto tempo dura o evento?",
+   "pt_BR": "Quanto tempo dura o evento?",
+   "fr": "Combien de temps dure l'événement ?",
+   "de": "Wie lange dauert die Veranstaltung?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-024",
+  "topic": "events_rsvp",
+  "level": "A2",
+  "text": {
+   "en": "I'm not sure yet. Can I confirm tomorrow?",
+   "it": "Non ho ancora deciso. Posso confermare domani?",
+   "es": "Todavía no lo sé. ¿Puedo confirmar mañana?",
+   "pt": "Ainda não sei. Posso confirmar amanhã?",
+   "pt_BR": "Ainda não sei. Posso confirmar amanhã?",
+   "fr": "Je ne sais pas encore. Je peux confirmer demain ?",
+   "de": "Ich bin noch nicht sicher. Kann ich morgen zusagen?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-025",
+  "topic": "events_rsvp",
+  "level": "A2",
+  "text": {
+   "en": "Thanks for organizing this!",
+   "it": "Grazie per aver organizzato tutto!",
+   "es": "¡Gracias por organizarlo!",
+   "pt": "Agradeço-te por organizares isto!",
+   "pt_BR": "Valeu por organizar isso!",
+   "fr": "Merci d'organiser ça !",
+   "de": "Danke, dass du das organisierst!"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-026",
+  "topic": "events_rsvp",
+  "level": "A2",
+  "text": {
+   "en": "Where should we meet before the event?",
+   "it": "Dove ci incontriamo prima dell'evento?",
+   "es": "¿Dónde quedamos antes del evento?",
+   "pt": "Onde nos encontramos antes do evento?",
+   "pt_BR": "Onde a gente se encontra antes do evento?",
+   "fr": "Où est-ce qu'on se retrouve avant l'événement ?",
+   "de": "Wo treffen wir uns vor der Veranstaltung?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-027",
+  "topic": "events_rsvp",
+  "level": "A2",
+  "text": {
+   "en": "Is there parking nearby?",
+   "it": "C'è un parcheggio nelle vicinanze?",
+   "es": "¿Hay aparcamiento cerca?",
+   "pt": "Há estacionamento perto?",
+   "pt_BR": "Tem estacionamento por perto?",
+   "fr": "Y a-t-il un parking à proximité ?",
+   "de": "Gibt es in der Nähe einen Parkplatz?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-028",
+  "topic": "events_rsvp",
+  "level": "A2",
+  "text": {
+   "en": "I can't make it, but have a great time!",
+   "it": "Non riesco a venire, ma divertitevi!",
+   "es": "No puedo ir, ¡pero pasadlo genial!",
+   "pt": "Não consigo ir, mas divirtam-se!",
+   "pt_BR": "Não vou conseguir ir, mas aproveitem muito!",
+   "fr": "Je ne peux pas venir, mais amusez-vous bien !",
+   "de": "Ich schaffe es leider nicht, aber habt viel Spaß!"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-029",
+  "topic": "events_rsvp",
+  "level": "A2",
+  "text": {
+   "en": "Do you know if it's indoors or outdoors?",
+   "it": "Sai se è al chiuso o all'aperto?",
+   "es": "¿Sabes si es en interior o al aire libre?",
+   "pt": "Sabes se é dentro de portas ou ao ar livre?",
+   "pt_BR": "Você sabe se é num local fechado ou ao ar livre?",
+   "fr": "Tu sais si c'est en intérieur ou en extérieur ?",
+   "de": "Weißt du, ob es drinnen oder draußen stattfindet?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-030",
+  "topic": "events_rsvp",
+  "level": "A2",
+  "text": {
+   "en": "I just registered. See you on Friday!",
+   "it": "Ho appena fatto l'iscrizione. Ci vediamo venerdì!",
+   "es": "Acabo de apuntarme. ¡Nos vemos el viernes!",
+   "pt": "Acabei de fazer a inscrição. Vemo-nos na sexta!",
+   "pt_BR": "Acabei de me inscrever. Te vejo na sexta!",
+   "fr": "Je viens de m'inscrire. À vendredi !",
+   "de": "Ich habe mich gerade angemeldet. Bis Freitag!"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-031",
+  "topic": "events_rsvp",
+  "level": "B1",
+  "text": {
+   "en": "I'd like to join, but I need to check my schedule first. Can I reply by tomorrow?",
+   "it": "Mi piacerebbe partecipare, ma prima devo controllare i miei impegni. Posso risponderti entro domani?",
+   "es": "Me gustaría apuntarme, pero primero tengo que mirar mi agenda. ¿Puedo responderte antes de mañana?",
+   "pt": "Gostava de participar, mas primeiro tenho de ver a minha agenda. Posso responder-te até amanhã?",
+   "pt_BR": "Eu gostaria de participar, mas primeiro preciso ver minha agenda. Posso te responder até amanhã?",
+   "fr": "J'aimerais bien participer, mais je dois d'abord vérifier mon emploi du temps. Je peux te répondre d'ici demain ?",
+   "de": "Ich würde gern teilnehmen, muss aber erst in meinen Terminkalender schauen. Kann ich dir bis morgen antworten?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-032",
+  "topic": "events_rsvp",
+  "level": "B1",
+  "text": {
+   "en": "Unfortunately, something came up and I can't make it anymore. I'm really sorry.",
+   "it": "Purtroppo mi è saltato fuori un impegno e non posso più venire. Mi dispiace tanto.",
+   "es": "Por desgracia me ha surgido algo y ya no puedo ir. Lo siento muchísimo.",
+   "pt": "Infelizmente surgiu-me um imprevisto e já não posso ir. Peço imensa desculpa.",
+   "pt_BR": "Infelizmente surgiu um imprevisto e não vou mais poder ir. Sinto muito mesmo.",
+   "fr": "Malheureusement, j'ai un imprévu et je ne peux plus venir. Toutes mes excuses, vraiment.",
+   "de": "Leider ist mir etwas dazwischengekommen und ich kann nicht mehr kommen. Es tut mir wirklich leid."
+  }
+ },
+ {
+  "id": "ss-events_rsvp-033",
+  "topic": "events_rsvp",
+  "level": "B1",
+  "text": {
+   "en": "Could you add my name to the list? I'm coming with one friend.",
+   "it": "Puoi aggiungere il mio nome alla lista? Vengo con un amico.",
+   "es": "¿Puedes añadir mi nombre a la lista? Voy con un amigo.",
+   "pt": "Podes acrescentar o meu nome à lista? Vou com um amigo.",
+   "pt_BR": "Você pode colocar meu nome na lista? Vou com um amigo.",
+   "fr": "Tu peux ajouter mon nom à la liste ? Je viens avec un ami.",
+   "de": "Kannst du meinen Namen auf die Liste setzen? Ich komme mit einem Freund."
+  }
+ },
+ {
+  "id": "ss-events_rsvp-034",
+  "topic": "events_rsvp",
+  "level": "B1",
+  "text": {
+   "en": "Is there a dress code, or can I just come as I am?",
+   "it": "C'è un dress code o posso venire come sono?",
+   "es": "¿Hay código de vestimenta o puedo ir tal cual?",
+   "pt": "Há código de vestuário ou posso ir como estou?",
+   "pt_BR": "Tem dress code ou posso ir do jeito que estou?",
+   "fr": "Y a-t-il un code vestimentaire, ou je peux venir comme je suis ?",
+   "de": "Gibt es einen Dresscode, oder kann ich einfach so kommen, wie ich bin?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-035",
+  "topic": "events_rsvp",
+  "level": "B1",
+  "text": {
+   "en": "If the plan changes, please let me know as soon as possible.",
+   "it": "Se il programma cambia, fammelo sapere il prima possibile.",
+   "es": "Si cambian los planes, avísame cuanto antes, por favor.",
+   "pt": "Se o plano mudar, avisa-me o mais depressa possível, por favor.",
+   "pt_BR": "Se o plano mudar, me avise o quanto antes, por favor.",
+   "fr": "Si le programme change, préviens-moi dès que possible, s'il te plaît.",
+   "de": "Falls sich der Plan ändert, sag mir bitte so bald wie möglich Bescheid."
+  }
+ },
+ {
+  "id": "ss-events_rsvp-036",
+  "topic": "events_rsvp",
+  "level": "B1",
+  "text": {
+   "en": "I'll arrive a bit early so I can help set things up.",
+   "it": "Arriverò un po' prima per aiutare con i preparativi.",
+   "es": "Llegaré un poco antes para ayudar a preparar todo.",
+   "pt": "Chego um pouco mais cedo para ajudar a preparar tudo.",
+   "pt_BR": "Vou chegar um pouco mais cedo para ajudar a organizar tudo.",
+   "fr": "J'arriverai un peu en avance pour aider à tout installer.",
+   "de": "Ich komme etwas früher, um beim Aufbau zu helfen."
+  }
+ },
+ {
+  "id": "ss-events_rsvp-037",
+  "topic": "events_rsvp",
+  "level": "B1",
+  "text": {
+   "en": "Do you know if there will be vegetarian options?",
+   "it": "Sai se ci saranno opzioni vegetariane?",
+   "es": "¿Sabes si habrá opciones vegetarianas?",
+   "pt": "Sabes se vai haver opções vegetarianas?",
+   "pt_BR": "Você sabe se vai ter opções vegetarianas?",
+   "fr": "Tu sais s'il y aura des options végétariennes ?",
+   "de": "Weißt du, ob es vegetarische Optionen geben wird?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-038",
+  "topic": "events_rsvp",
+  "level": "B1",
+  "text": {
+   "en": "Is the venue accessible for people who use a wheelchair?",
+   "it": "Il locale è accessibile a chi usa la sedia a rotelle?",
+   "es": "¿El lugar es accesible para personas que usan silla de ruedas?",
+   "pt": "O local é acessível a pessoas que usam cadeira de rodas?",
+   "pt_BR": "O local é acessível para cadeirantes?",
+   "fr": "Le lieu est-il accessible aux personnes en fauteuil roulant ?",
+   "de": "Ist der Veranstaltungsort für Menschen im Rollstuhl zugänglich?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-039",
+  "topic": "events_rsvp",
+  "level": "B1",
+  "text": {
+   "en": "I haven't been to this part of town before. What's the best way to get there?",
+   "it": "Questa zona della città per me è nuova. Qual è il modo migliore per arrivarci?",
+   "es": "No conozco esta parte de la ciudad. ¿Cuál es la mejor forma de llegar?",
+   "pt": "Não conheço esta zona da cidade. Qual é a melhor maneira de lá chegar?",
+   "pt_BR": "Não conheço essa região da cidade. Qual é a melhor forma de chegar lá?",
+   "fr": "Je ne connais pas ce quartier. Quel est le meilleur moyen d'y aller ?",
+   "de": "Dieses Viertel kenne ich noch nicht. Wie komme ich am besten dorthin?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-040",
+  "topic": "events_rsvp",
+  "level": "B1",
+  "text": {
+   "en": "Thanks for the reminder! I'm still planning to come.",
+   "it": "Grazie del promemoria! Ho ancora intenzione di venire.",
+   "es": "¡Gracias por el recordatorio! Sigo con la idea de ir.",
+   "pt": "Ainda bem que me lembraste! Continuo a contar ir.",
+   "pt_BR": "Valeu pelo lembrete! Continuo planejando ir.",
+   "fr": "Merci pour le rappel ! Je compte toujours venir.",
+   "de": "Danke für die Erinnerung! Ich habe weiterhin vor zu kommen."
+  }
+ },
+ {
+  "id": "ss-events_rsvp-041",
+  "topic": "events_rsvp",
+  "level": "B1",
+  "text": {
+   "en": "Would it be okay if I left early? I have to get up early tomorrow.",
+   "it": "Va bene se vado via presto? Domani devo alzarmi presto.",
+   "es": "¿Te parece bien si me voy pronto? Mañana tengo que madrugar.",
+   "pt": "Haveria problema se saísse mais cedo? Amanhã tenho de me levantar cedo.",
+   "pt_BR": "Tudo bem se eu sair mais cedo? Amanhã preciso acordar cedo.",
+   "fr": "Ça ne te dérange pas si je pars tôt ? Je dois me lever tôt demain.",
+   "de": "Ist es okay, wenn ich früher gehe? Ich muss morgen früh aufstehen."
+  }
+ },
+ {
+  "id": "ss-events_rsvp-042",
+  "topic": "events_rsvp",
+  "level": "B1",
+  "text": {
+   "en": "Can you share the link so I can invite a couple of friends too?",
+   "it": "Puoi condividere il link così posso invitare anche un paio di amici?",
+   "es": "¿Puedes compartir el enlace para invitar también a un par de amigos?",
+   "pt": "Podes partilhar a ligação para eu convidar também alguns amigos?",
+   "pt_BR": "Você pode compartilhar o link para eu convidar alguns amigos também?",
+   "fr": "Tu peux partager le lien pour que j'invite aussi quelques amis ?",
+   "de": "Kannst du den Link teilen, damit ich auch ein paar Freunde einladen kann?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-043",
+  "topic": "events_rsvp",
+  "level": "B1",
+  "text": {
+   "en": "I just realized the event has moved to another day. Is that right?",
+   "it": "Ho appena visto che l'evento è stato spostato a un altro giorno. È corretto?",
+   "es": "Acabo de ver que el evento se ha movido a otro día. ¿Es correcto?",
+   "pt": "Acabei de ver que o evento passou para outro dia. Está certo?",
+   "pt_BR": "Acabei de perceber que o evento foi para outro dia. Isso está certo?",
+   "fr": "Je viens de voir que l'événement a été déplacé à un autre jour. C'est bien ça ?",
+   "de": "Mir ist gerade aufgefallen, dass die Veranstaltung auf einen anderen Tag verschoben wurde. Stimmt das?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-044",
+  "topic": "events_rsvp",
+  "level": "B2",
+  "text": {
+   "en": "I'm afraid I won't be able to attend after all, but please keep me in mind for the next one.",
+   "it": "Temo di non riuscire a partecipare dopotutto, ma ti prego di tenermi presente per il prossimo.",
+   "es": "Me temo que al final no podré asistir, pero cuenta conmigo para la próxima, por favor.",
+   "pt": "Receio que, afinal, não vá conseguir comparecer, mas conta comigo para a próxima.",
+   "pt_BR": "Receio que, no fim das contas, eu não vá conseguir comparecer, mas conte comigo na próxima.",
+   "fr": "J'ai bien peur de ne finalement pas pouvoir venir, mais pense à moi pour la prochaine fois.",
+   "de": "Ich fürchte, ich kann doch nicht teilnehmen, aber denk bitte beim nächsten Mal wieder an mich."
+  }
+ },
+ {
+  "id": "ss-events_rsvp-045",
+  "topic": "events_rsvp",
+  "level": "B2",
+  "text": {
+   "en": "Would you mind confirming the final headcount with the venue? I'd hate for us to be short of seats.",
+   "it": "Ti dispiacerebbe confermare al locale il numero definitivo di persone? Non vorrei che mancassero i posti.",
+   "es": "¿Te importaría confirmar con el local el número final de asistentes? No quisiera que faltaran sitios.",
+   "pt": "Importas-te de confirmar com o local o número final de pessoas? Não gostava que faltassem lugares.",
+   "pt_BR": "Você se importa de confirmar com o local o número final de pessoas? Eu odiaria que faltassem lugares.",
+   "fr": "Ça te dérangerait de confirmer le nombre final de personnes avec le lieu ? Je détesterais qu'on manque de places.",
+   "de": "Könntest du die endgültige Personenzahl mit dem Veranstaltungsort abklären? Es wäre schade, wenn die Plätze nicht reichen."
+  }
+ },
+ {
+  "id": "ss-events_rsvp-046",
+  "topic": "events_rsvp",
+  "level": "B2",
+  "text": {
+   "en": "I'd be happy to help with the organization if you need an extra pair of hands.",
+   "it": "Aiuto volentieri con l'organizzazione, se ti serve una mano in più.",
+   "es": "Con gusto ayudo con la organización si necesitas un par de manos más.",
+   "pt": "Ajudo com todo o gosto na organização, se precisares de mais uma ajuda.",
+   "pt_BR": "Fico feliz em ajudar na organização se você precisar de mais uma pessoa.",
+   "fr": "Je t'aiderai volontiers pour l'organisation si tu as besoin d'un coup de main.",
+   "de": "Ich helfe gern bei der Organisation, falls du noch eine helfende Hand brauchst."
+  }
+ },
+ {
+  "id": "ss-events_rsvp-047",
+  "topic": "events_rsvp",
+  "level": "B2",
+  "text": {
+   "en": "Given the weather forecast, do you think the event will still go ahead as planned?",
+   "it": "Viste le previsioni del tempo, pensi che l'evento si farà comunque come previsto?",
+   "es": "Viendo el pronóstico del tiempo, ¿crees que el evento se hará igualmente como estaba previsto?",
+   "pt": "Com a previsão do tempo, achas que o evento se vai realizar como planeado?",
+   "pt_BR": "Com a previsão do tempo, você acha que o evento vai acontecer como planejado?",
+   "fr": "Vu la météo annoncée, tu penses que l'événement aura quand même lieu comme prévu ?",
+   "de": "Glaubst du, dass die Veranstaltung bei dieser Wettervorhersage trotzdem wie geplant stattfindet?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-048",
+  "topic": "events_rsvp",
+  "level": "B2",
+  "text": {
+   "en": "Since I'm still undecided, could you put me down as a “maybe” until the end of the week?",
+   "it": "Visto che non ho ancora deciso, potresti segnarmi come “forse” fino alla fine della settimana?",
+   "es": "Como aún no lo tengo decidido, ¿podrías apuntarme como “quizás” hasta el final de la semana?",
+   "pt": "Como ainda não decidi, podes pôr-me como “talvez” até ao fim da semana?",
+   "pt_BR": "Como ainda não decidi, você pode me colocar como “talvez” até o fim da semana?",
+   "fr": "Comme je n'ai pas encore décidé, tu pourrais me noter en « peut-être » jusqu'à la fin de la semaine ?",
+   "de": "Da ich mich noch nicht entschieden habe, könntest du mich bis Ende der Woche als „Vielleicht“ eintragen?"
+  }
+ },
+ {
+  "id": "ss-events_rsvp-049",
+  "topic": "events_rsvp",
+  "level": "B2",
+  "text": {
+   "en": "I'd appreciate it if you could let me know whether there is a cancellation policy.",
+   "it": "Mi faresti un favore facendomi sapere se esiste una politica di cancellazione.",
+   "es": "Te agradecería que me dijeras si existe una política de cancelación.",
+   "pt": "Agradecia que me dissesses se existe uma política de cancelamento.",
+   "pt_BR": "Eu agradeceria se você me dissesse se existe uma política de cancelamento.",
+   "fr": "Ce serait très gentil de me dire s'il existe des conditions d'annulation.",
+   "de": "Ich wäre dir dankbar, wenn du mir sagen könntest, ob es eine Stornoregelung gibt."
+  }
+ },
+ {
+  "id": "ss-events_rsvp-050",
+  "topic": "events_rsvp",
+  "level": "B2",
+  "text": {
+   "en": "It was a wonderful evening, thank you for inviting me. I hope we can do it again soon.",
+   "it": "È stata una serata meravigliosa, grazie dell'invito. Spero che possiamo rifarlo presto.",
+   "es": "Ha sido una noche maravillosa, gracias por invitarme. Espero que podamos repetirlo pronto.",
+   "pt": "Foi uma noite maravilhosa, e agradeço o convite. Espero que possamos repetir em breve.",
+   "pt_BR": "Foi uma noite maravilhosa, valeu pelo convite. Espero que a gente repita em breve.",
+   "fr": "C'était une soirée merveilleuse, merci pour l'invitation. J'espère que nous pourrons recommencer bientôt.",
+   "de": "Es war ein wunderbarer Abend, danke für die Einladung. Ich hoffe, wir können das bald wiederholen."
+  }
+ },
+ {
+  "id": "ss-language_progress-001",
+  "topic": "language_progress",
+  "level": "A1",
+  "text": {
+   "en": "I'm learning English.",
+   "it": "Sto imparando l'inglese.",
+   "es": "Estoy aprendiendo inglés.",
+   "pt": "Estou a aprender inglês.",
+   "pt_BR": "Estou aprendendo inglês.",
+   "fr": "J'apprends l'anglais.",
+   "de": "Ich lerne Englisch."
+  }
+ },
+ {
+  "id": "ss-language_progress-002",
+  "topic": "language_progress",
+  "level": "A1",
+  "text": {
+   "en": "I speak a little Italian.",
+   "it": "Parlo un po' di italiano.",
+   "es": "Hablo un poco de italiano.",
+   "pt": "Falo um pouco de italiano.",
+   "pt_BR": "Falo um pouco de italiano.",
+   "fr": "Je parle un peu italien.",
+   "de": "Ich spreche ein bisschen Italienisch."
+  }
+ },
+ {
+  "id": "ss-language_progress-003",
+  "topic": "language_progress",
+  "level": "A1",
+  "text": {
+   "en": "I understand a little.",
+   "it": "Capisco un po'.",
+   "es": "Entiendo un poco.",
+   "pt": "Percebo um pouco.",
+   "pt_BR": "Entendo um pouco.",
+   "fr": "Je comprends un peu.",
+   "de": "Ich verstehe ein bisschen."
+  }
+ },
+ {
+  "id": "ss-language_progress-004",
+  "topic": "language_progress",
+  "level": "A1",
+  "text": {
+   "en": "I'm just starting out.",
+   "it": "Sono agli inizi.",
+   "es": "Estoy empezando.",
+   "pt": "Estou a começar.",
+   "pt_BR": "Estou começando.",
+   "fr": "Je débute.",
+   "de": "Ich fange gerade erst an."
+  }
+ },
+ {
+  "id": "ss-language_progress-005",
+  "topic": "language_progress",
+  "level": "A1",
+  "text": {
+   "en": "Can you help me?",
+   "it": "Puoi aiutarmi?",
+   "es": "¿Me puedes ayudar?",
+   "pt": "Podes ajudar-me?",
+   "pt_BR": "Você pode me ajudar?",
+   "fr": "Tu peux m'aider ?",
+   "de": "Kannst du mir helfen?"
+  }
+ },
+ {
+  "id": "ss-language_progress-006",
+  "topic": "language_progress",
+  "level": "A1",
+  "text": {
+   "en": "My English is not good yet.",
+   "it": "Il mio inglese non è ancora buono.",
+   "es": "Mi inglés todavía no es bueno.",
+   "pt": "O meu inglês ainda não é bom.",
+   "pt_BR": "Meu inglês ainda não é bom.",
+   "fr": "Mon anglais n'est pas encore bon.",
+   "de": "Mein Englisch ist noch nicht gut."
+  }
+ },
+ {
+  "id": "ss-language_progress-007",
+  "topic": "language_progress",
+  "level": "A1",
+  "text": {
+   "en": "I learn new words every day.",
+   "it": "Imparo parole nuove ogni giorno.",
+   "es": "Aprendo palabras nuevas cada día.",
+   "pt": "Aprendo palavras novas todos os dias.",
+   "pt_BR": "Aprendo palavras novas todos os dias.",
+   "fr": "J'apprends de nouveaux mots chaque jour.",
+   "de": "Ich lerne jeden Tag neue Wörter."
+  }
+ },
+ {
+  "id": "ss-language_progress-008",
+  "topic": "language_progress",
+  "level": "A1",
+  "text": {
+   "en": "Please speak slowly.",
+   "it": "Parla lentamente, per favore.",
+   "es": "Habla despacio, por favor.",
+   "pt": "Fala devagar, por favor.",
+   "pt_BR": "Fale devagar, por favor.",
+   "fr": "Parle lentement, s'il te plaît.",
+   "de": "Sprich bitte langsam."
+  }
+ },
+ {
+  "id": "ss-language_progress-009",
+  "topic": "language_progress",
+  "level": "A1",
+  "text": {
+   "en": "What does this word mean?",
+   "it": "Cosa significa questa parola?",
+   "es": "¿Qué significa esta palabra?",
+   "pt": "O que significa esta palavra?",
+   "pt_BR": "O que significa essa palavra?",
+   "fr": "Que veut dire ce mot ?",
+   "de": "Was bedeutet dieses Wort?"
+  }
+ },
+ {
+  "id": "ss-language_progress-010",
+  "topic": "language_progress",
+  "level": "A1",
+  "text": {
+   "en": "How do you say this in your language?",
+   "it": "Come si dice questo nella tua lingua?",
+   "es": "¿Cómo se dice esto en tu idioma?",
+   "pt": "Como se diz isto na tua língua?",
+   "pt_BR": "Como se diz isso na sua língua?",
+   "fr": "Comment dit-on ça dans ta langue ?",
+   "de": "Wie sagt man das in deiner Sprache?"
+  }
+ },
+ {
+  "id": "ss-language_progress-011",
+  "topic": "language_progress",
+  "level": "A1",
+  "text": {
+   "en": "I study every day.",
+   "it": "Studio ogni giorno.",
+   "es": "Estudio todos los días.",
+   "pt": "Estudo todos os dias.",
+   "pt_BR": "Estudo todos os dias.",
+   "fr": "J'étudie tous les jours.",
+   "de": "Ich lerne jeden Tag."
+  }
+ },
+ {
+  "id": "ss-language_progress-012",
+  "topic": "language_progress",
+  "level": "A1",
+  "text": {
+   "en": "Is this correct?",
+   "it": "È corretto?",
+   "es": "¿Esto es correcto?",
+   "pt": "Está correto?",
+   "pt_BR": "Está certo?",
+   "fr": "C'est correct ?",
+   "de": "Ist das richtig?"
+  }
+ },
+ {
+  "id": "ss-language_progress-013",
+  "topic": "language_progress",
+  "level": "A1",
+  "text": {
+   "en": "Thank you for your help!",
+   "it": "Grazie per il tuo aiuto!",
+   "es": "¡Gracias por tu ayuda!",
+   "pt": "Agradeço a tua ajuda!",
+   "pt_BR": "Valeu pela ajuda!",
+   "fr": "Merci pour ton aide !",
+   "de": "Danke für deine Hilfe!"
+  }
+ },
+ {
+  "id": "ss-language_progress-014",
+  "topic": "language_progress",
+  "level": "A1",
+  "text": {
+   "en": "I want to practice with you.",
+   "it": "Voglio fare pratica con te.",
+   "es": "Quiero practicar contigo.",
+   "pt": "Quero praticar contigo.",
+   "pt_BR": "Quero praticar com você.",
+   "fr": "Je veux m'entraîner avec toi.",
+   "de": "Ich möchte mit dir üben."
+  }
+ },
+ {
+  "id": "ss-language_progress-015",
+  "topic": "language_progress",
+  "level": "A1",
+  "text": {
+   "en": "I know a hundred words now.",
+   "it": "Ora conosco cento parole.",
+   "es": "Ahora conozco cien palabras.",
+   "pt": "Já sei cem palavras.",
+   "pt_BR": "Agora eu sei cem palavras.",
+   "fr": "Je connais cent mots maintenant.",
+   "de": "Ich kenne jetzt hundert Wörter."
+  }
+ },
+ {
+  "id": "ss-language_progress-016",
+  "topic": "language_progress",
+  "level": "A2",
+  "text": {
+   "en": "I've been studying Spanish for six months.",
+   "it": "Studio spagnolo da sei mesi.",
+   "es": "Llevo seis meses estudiando español.",
+   "pt": "Estudo espanhol há seis meses.",
+   "pt_BR": "Estudo espanhol há seis meses.",
+   "fr": "J'étudie l'espagnol depuis six mois.",
+   "de": "Ich lerne seit sechs Monaten Spanisch."
+  }
+ },
+ {
+  "id": "ss-language_progress-017",
+  "topic": "language_progress",
+  "level": "A2",
+  "text": {
+   "en": "My pronunciation is getting better.",
+   "it": "La mia pronuncia sta migliorando.",
+   "es": "Mi pronunciación está mejorando.",
+   "pt": "A minha pronúncia está a melhorar.",
+   "pt_BR": "Minha pronúncia está melhorando.",
+   "fr": "Ma prononciation s'améliore.",
+   "de": "Meine Aussprache wird besser."
+  }
+ },
+ {
+  "id": "ss-language_progress-018",
+  "topic": "language_progress",
+  "level": "A2",
+  "text": {
+   "en": "Can you correct my mistakes, please?",
+   "it": "Puoi correggere i miei errori, per favore?",
+   "es": "¿Puedes corregir mis errores, por favor?",
+   "pt": "Podes corrigir os meus erros, por favor?",
+   "pt_BR": "Você pode corrigir meus erros, por favor?",
+   "fr": "Tu peux corriger mes erreurs, s'il te plaît ?",
+   "de": "Kannst du bitte meine Fehler korrigieren?"
+  }
+ },
+ {
+  "id": "ss-language_progress-019",
+  "topic": "language_progress",
+  "level": "A2",
+  "text": {
+   "en": "I understand more than I can say.",
+   "it": "Capisco più di quanto riesca a dire.",
+   "es": "Entiendo más de lo que sé decir.",
+   "pt": "Percebo mais do que consigo dizer.",
+   "pt_BR": "Entendo mais do que consigo falar.",
+   "fr": "Je comprends plus que je ne sais dire.",
+   "de": "Ich verstehe mehr, als ich sagen kann."
+  }
+ },
+ {
+  "id": "ss-language_progress-020",
+  "topic": "language_progress",
+  "level": "A2",
+  "text": {
+   "en": "I practice for twenty minutes every morning.",
+   "it": "Mi esercito per venti minuti ogni mattina.",
+   "es": "Practico veinte minutos cada mañana.",
+   "pt": "Pratico vinte minutos todas as manhãs.",
+   "pt_BR": "Pratico vinte minutos toda manhã.",
+   "fr": "Je m'entraîne vingt minutes chaque matin.",
+   "de": "Ich übe jeden Morgen zwanzig Minuten."
+  }
+ },
+ {
+  "id": "ss-language_progress-021",
+  "topic": "language_progress",
+  "level": "A2",
+  "text": {
+   "en": "Reading is easier for me than speaking.",
+   "it": "Leggere è più facile per me che parlare.",
+   "es": "Leer me resulta más fácil que hablar.",
+   "pt": "Ler é mais fácil para mim do que falar.",
+   "pt_BR": "Pra mim, ler é mais fácil do que falar.",
+   "fr": "Lire est plus facile pour moi que parler.",
+   "de": "Lesen fällt mir leichter als Sprechen."
+  }
+ },
+ {
+  "id": "ss-language_progress-022",
+  "topic": "language_progress",
+  "level": "A2",
+  "text": {
+   "en": "Did I say that correctly?",
+   "it": "L'ho detto correttamente?",
+   "es": "¿Lo dije bien?",
+   "pt": "Disse isso corretamente?",
+   "pt_BR": "Falei isso direito?",
+   "fr": "Est-ce que je l'ai bien dit ?",
+   "de": "Habe ich das richtig gesagt?"
+  }
+ },
+ {
+  "id": "ss-language_progress-023",
+  "topic": "language_progress",
+  "level": "A2",
+  "text": {
+   "en": "I watched a movie without subtitles today!",
+   "it": "Oggi ho guardato un film senza sottotitoli!",
+   "es": "¡Hoy vi una película sin subtítulos!",
+   "pt": "Hoje vi um filme sem legendas!",
+   "pt_BR": "Hoje assisti a um filme sem legendas!",
+   "fr": "J'ai regardé un film sans sous-titres aujourd'hui !",
+   "de": "Heute habe ich einen Film ohne Untertitel geschaut!"
+  }
+ },
+ {
+  "id": "ss-language_progress-024",
+  "topic": "language_progress",
+  "level": "A2",
+  "text": {
+   "en": "Can we speak only in French for ten minutes?",
+   "it": "Possiamo parlare solo in francese per dieci minuti?",
+   "es": "¿Podemos hablar solo en francés durante diez minutos?",
+   "pt": "Podemos falar só em francês durante dez minutos?",
+   "pt_BR": "A gente pode falar só em francês por dez minutos?",
+   "fr": "On peut parler uniquement en français pendant dix minutes ?",
+   "de": "Können wir zehn Minuten lang nur Französisch sprechen?"
+  }
+ },
+ {
+  "id": "ss-language_progress-025",
+  "topic": "language_progress",
+  "level": "A2",
+  "text": {
+   "en": "I still make a lot of mistakes with verbs.",
+   "it": "Faccio ancora molti errori con i verbi.",
+   "es": "Todavía cometo muchos errores con los verbos.",
+   "pt": "Ainda cometo muitos erros com os verbos.",
+   "pt_BR": "Ainda cometo muitos erros com os verbos.",
+   "fr": "Je fais encore beaucoup d'erreurs avec les verbes.",
+   "de": "Bei den Verben mache ich noch viele Fehler."
+  }
+ },
+ {
+  "id": "ss-language_progress-026",
+  "topic": "language_progress",
+  "level": "A2",
+  "text": {
+   "en": "I'm trying to learn five new words a week.",
+   "it": "Cerco di imparare cinque parole nuove a settimana.",
+   "es": "Intento aprender cinco palabras nuevas por semana.",
+   "pt": "Tento aprender cinco palavras novas por semana.",
+   "pt_BR": "Estou tentando aprender cinco palavras novas por semana.",
+   "fr": "J'essaie d'apprendre cinq nouveaux mots par semaine.",
+   "de": "Ich versuche, jede Woche fünf neue Wörter zu lernen."
+  }
+ },
+ {
+  "id": "ss-language_progress-027",
+  "topic": "language_progress",
+  "level": "A2",
+  "text": {
+   "en": "Your English is very good. How did you learn?",
+   "it": "Il tuo inglese è molto buono. Come l'hai imparato?",
+   "es": "Tu inglés es muy bueno. ¿Cómo lo aprendiste?",
+   "pt": "O teu inglês é muito bom. Como aprendeste?",
+   "pt_BR": "Seu inglês é muito bom. Como você aprendeu?",
+   "fr": "Ton anglais est très bon. Comment tu l'as appris ?",
+   "de": "Dein Englisch ist sehr gut. Wie hast du es gelernt?"
+  }
+ },
+ {
+  "id": "ss-language_progress-028",
+  "topic": "language_progress",
+  "level": "A2",
+  "text": {
+   "en": "Let's practice together every week.",
+   "it": "Facciamo pratica insieme ogni settimana.",
+   "es": "Practiquemos juntos cada semana.",
+   "pt": "Vamos praticar juntos todas as semanas.",
+   "pt_BR": "Vamos praticar juntos toda semana.",
+   "fr": "Entraînons-nous ensemble chaque semaine.",
+   "de": "Lass uns jede Woche zusammen üben."
+  }
+ },
+ {
+  "id": "ss-language_progress-029",
+  "topic": "language_progress",
+  "level": "A2",
+  "text": {
+   "en": "I had butterflies, but I kept talking the whole time.",
+   "it": "Avevo le farfalle nello stomaco, ma ho continuato a parlare per tutto il tempo.",
+   "es": "Tenía mariposas en el estómago, pero seguí hablando todo el rato.",
+   "pt": "Fiquei com um nervoso miudinho, mas continuei a falar o tempo todo.",
+   "pt_BR": "Deu um frio na barriga, mas continuei falando o tempo todo.",
+   "fr": "J'avais le trac, mais j'ai continué à parler tout du long.",
+   "de": "Ich hatte Lampenfieber, aber ich habe die ganze Zeit weitergesprochen."
+  }
+ },
+ {
+  "id": "ss-language_progress-030",
+  "topic": "language_progress",
+  "level": "A2",
+  "text": {
+   "en": "This app helps me a lot.",
+   "it": "Questa app mi aiuta molto.",
+   "es": "Esta app me ayuda mucho.",
+   "pt": "Esta aplicação ajuda-me muito.",
+   "pt_BR": "Este app me ajuda muito.",
+   "fr": "Cette appli m'aide beaucoup.",
+   "de": "Diese App hilft mir sehr."
+  }
+ },
+ {
+  "id": "ss-language_progress-031",
+  "topic": "language_progress",
+  "level": "B1",
+  "text": {
+   "en": "I can have a simple conversation now, but I still struggle when people talk fast.",
+   "it": "Ora riesco a fare una conversazione semplice, ma ho ancora difficoltà quando le persone parlano veloce.",
+   "es": "Ya puedo mantener una conversación sencilla, pero todavía me cuesta cuando la gente habla rápido.",
+   "pt": "Já consigo ter uma conversa simples, mas ainda tenho dificuldade quando as pessoas falam depressa.",
+   "pt_BR": "Já consigo ter uma conversa simples, mas ainda tenho dificuldade quando as pessoas falam rápido.",
+   "fr": "Je peux maintenant avoir une conversation simple, mais j'ai encore du mal quand les gens parlent vite.",
+   "de": "Ich kann jetzt ein einfaches Gespräch führen, aber wenn die Leute schnell sprechen, tue ich mich noch schwer."
+  }
+ },
+ {
+  "id": "ss-language_progress-032",
+  "topic": "language_progress",
+  "level": "B1",
+  "text": {
+   "en": "Could you explain the difference between these two words?",
+   "it": "Potresti spiegarmi la differenza tra queste due parole?",
+   "es": "¿Podrías explicarme la diferencia entre estas dos palabras?",
+   "pt": "Podias explicar-me a diferença entre estas duas palavras?",
+   "pt_BR": "Você poderia me explicar a diferença entre essas duas palavras?",
+   "fr": "Peux-tu m'expliquer la différence entre ces deux mots ?",
+   "de": "Könntest du mir den Unterschied zwischen diesen beiden Wörtern erklären?"
+  }
+ },
+ {
+  "id": "ss-language_progress-033",
+  "topic": "language_progress",
+  "level": "B1",
+  "text": {
+   "en": "I ordered food entirely in Portuguese yesterday, and it felt great!",
+   "it": "Ieri ho ordinato da mangiare interamente in portoghese ed è stata una bella sensazione!",
+   "es": "Ayer pedí la comida completamente en portugués, ¡y fue una sensación genial!",
+   "pt": "Ontem pedi comida inteiramente em português e soube-me mesmo bem!",
+   "pt_BR": "Ontem pedi comida inteiramente em português e foi uma sensação ótima!",
+   "fr": "Hier, j'ai commandé à manger entièrement en portugais, et ça faisait vraiment du bien !",
+   "de": "Gestern habe ich mein Essen komplett auf Portugiesisch bestellt, und es hat sich großartig angefühlt!"
+  }
+ },
+ {
+  "id": "ss-language_progress-034",
+  "topic": "language_progress",
+  "level": "B1",
+  "text": {
+   "en": "Please tell me when I make a mistake. I really want to improve.",
+   "it": "Dimmi quando sbaglio, per favore. Voglio davvero migliorare.",
+   "es": "Dime cuando me equivoque, por favor. De verdad quiero mejorar.",
+   "pt": "Diz-me quando me enganar, por favor. Quero mesmo melhorar.",
+   "pt_BR": "Me diga quando eu errar, por favor. Eu quero muito melhorar.",
+   "fr": "Dis-moi quand je fais une erreur, s'il te plaît. Je veux vraiment progresser.",
+   "de": "Sag mir bitte, wenn ich einen Fehler mache. Ich möchte mich wirklich verbessern."
+  }
+ },
+ {
+  "id": "ss-language_progress-035",
+  "topic": "language_progress",
+  "level": "B1",
+  "text": {
+   "en": "I find grammar difficult, but I'm getting more confident.",
+   "it": "Trovo difficile la grammatica, ma sto prendendo più sicurezza.",
+   "es": "La gramática se me hace difícil, pero cada vez tengo más seguridad.",
+   "pt": "Acho a gramática difícil, mas estou a ganhar mais confiança.",
+   "pt_BR": "Acho a gramática difícil, mas estou ganhando mais confiança.",
+   "fr": "La grammaire me paraît difficile, mais je prends de l'assurance.",
+   "de": "Grammatik finde ich schwierig, aber ich werde immer sicherer."
+  }
+ },
+ {
+  "id": "ss-language_progress-036",
+  "topic": "language_progress",
+  "level": "B1",
+  "text": {
+   "en": "What's the best way to remember new vocabulary?",
+   "it": "Qual è il modo migliore per ricordare il vocabolario nuovo?",
+   "es": "¿Cuál es la mejor forma de recordar vocabulario nuevo?",
+   "pt": "Qual é a melhor maneira de fixar vocabulário novo?",
+   "pt_BR": "Qual é a melhor forma de memorizar vocabulário novo?",
+   "fr": "Quelle est la meilleure façon de retenir du nouveau vocabulaire ?",
+   "de": "Wie merkt man sich neue Vokabeln am besten?"
+  }
+ },
+ {
+  "id": "ss-language_progress-037",
+  "topic": "language_progress",
+  "level": "B1",
+  "text": {
+   "en": "I've noticed that I can understand songs better than before.",
+   "it": "Ho notato che capisco le canzoni meglio di prima.",
+   "es": "He notado que entiendo las canciones mejor que antes.",
+   "pt": "Reparei que percebo melhor as canções do que antes.",
+   "pt_BR": "Percebi que entendo as músicas melhor do que antes.",
+   "fr": "J'ai remarqué que je comprends mieux les chansons qu'avant.",
+   "de": "Mir ist aufgefallen, dass ich Lieder besser verstehe als früher."
+  }
+ },
+ {
+  "id": "ss-language_progress-038",
+  "topic": "language_progress",
+  "level": "B1",
+  "text": {
+   "en": "Sometimes I know the word in my head, but I can't say it fast enough.",
+   "it": "A volte la parola ce l'ho in testa, ma non riesco a dirla abbastanza in fretta.",
+   "es": "A veces tengo la palabra en la cabeza, pero no me sale lo bastante rápido.",
+   "pt": "Às vezes tenho a palavra na cabeça, mas não consigo dizê-la a tempo.",
+   "pt_BR": "Às vezes eu tenho a palavra na cabeça, mas não consigo falar rápido o bastante.",
+   "fr": "Parfois, j'ai le mot en tête, mais je n'arrive pas à le dire assez vite.",
+   "de": "Manchmal habe ich das Wort im Kopf, aber ich bekomme es nicht schnell genug heraus."
+  }
+ },
+ {
+  "id": "ss-language_progress-039",
+  "topic": "language_progress",
+  "level": "B1",
+  "text": {
+   "en": "Could we switch languages halfway through? Half in yours, half in mine.",
+   "it": "Possiamo cambiare lingua a metà? Metà nella tua, metà nella mia.",
+   "es": "¿Podemos cambiar de idioma a la mitad? Mitad en el tuyo, mitad en el mío.",
+   "pt": "Podemos mudar de língua a meio? Metade na tua, metade na minha.",
+   "pt_BR": "A gente pode trocar de idioma na metade? Metade no seu, metade no meu.",
+   "fr": "On peut changer de langue à mi-chemin ? Moitié dans la tienne, moitié dans la mienne.",
+   "de": "Können wir in der Mitte die Sprache wechseln? Eine Hälfte in deiner, eine in meiner."
+  }
+ },
+ {
+  "id": "ss-language_progress-040",
+  "topic": "language_progress",
+  "level": "B1",
+  "text": {
+   "en": "I keep a notebook where I write down new expressions.",
+   "it": "Ho un quaderno dove scrivo le espressioni nuove.",
+   "es": "Tengo un cuaderno donde apunto las expresiones nuevas.",
+   "pt": "Tenho um caderno onde escrevo as expressões novas.",
+   "pt_BR": "Tenho um caderno onde anoto as expressões novas.",
+   "fr": "J'ai un carnet où je note les nouvelles expressions.",
+   "de": "Ich führe ein Notizbuch, in das ich neue Ausdrücke schreibe."
+  }
+ },
+ {
+  "id": "ss-language_progress-041",
+  "topic": "language_progress",
+  "level": "B1",
+  "text": {
+   "en": "My goal is to follow a TV series without subtitles by the end of the year.",
+   "it": "Il mio obiettivo è seguire una serie TV senza sottotitoli entro la fine dell'anno.",
+   "es": "Mi objetivo es poder seguir una serie sin subtítulos antes de que acabe el año.",
+   "pt": "O meu objetivo é conseguir ver uma série sem legendas até ao fim do ano.",
+   "pt_BR": "Minha meta é conseguir acompanhar uma série sem legendas até o fim do ano.",
+   "fr": "Mon objectif est de suivre une série sans sous-titres d'ici la fin de l'année.",
+   "de": "Mein Ziel ist es, bis Ende des Jahres eine Serie ohne Untertitel verfolgen zu können."
+  }
+ },
+ {
+  "id": "ss-language_progress-042",
+  "topic": "language_progress",
+  "level": "B1",
+  "text": {
+   "en": "How did you get such a natural accent? Mine is still very strong.",
+   "it": "Come hai fatto ad avere un accento così naturale? Il mio è ancora molto marcato.",
+   "es": "¿Cómo conseguiste un acento tan natural? El mío todavía es muy marcado.",
+   "pt": "Como conseguiste ter um sotaque tão natural? O meu ainda é muito carregado.",
+   "pt_BR": "Como você conseguiu ter um sotaque tão natural? O meu ainda é muito forte.",
+   "fr": "Comment as-tu fait pour avoir un accent aussi naturel ? Le mien est encore très marqué.",
+   "de": "Wie hast du einen so natürlichen Akzent bekommen? Meiner ist noch ziemlich stark."
+  }
+ },
+ {
+  "id": "ss-language_progress-043",
+  "topic": "language_progress",
+  "level": "B1",
+  "text": {
+   "en": "I used to freeze up when speaking, but practicing with people like you really helps.",
+   "it": "Prima mi bloccavo quando parlavo, ma fare pratica con persone come te aiuta davvero.",
+   "es": "Antes me bloqueaba al hablar, pero practicar con gente como tú ayuda de verdad.",
+   "pt": "Antes bloqueava quando falava, mas praticar com pessoas como tu ajuda mesmo.",
+   "pt_BR": "Eu travava quando falava, mas praticar com pessoas como você ajuda de verdade.",
+   "fr": "Avant, je bloquais quand je parlais, mais m'entraîner avec des gens comme toi aide vraiment.",
+   "de": "Früher habe ich beim Sprechen blockiert, aber mit Leuten wie dir zu üben hilft wirklich."
+  }
+ },
+ {
+  "id": "ss-language_progress-044",
+  "topic": "language_progress",
+  "level": "B2",
+  "text": {
+   "en": "I can handle most conversations now, but idioms and slang still catch me off guard.",
+   "it": "Ormai me la cavo nella maggior parte delle conversazioni, ma modi di dire e slang mi colgono ancora di sorpresa.",
+   "es": "Ya me defiendo en casi todas las conversaciones, pero los modismos y la jerga todavía me toman por sorpresa.",
+   "pt": "Já me desenrasco na maioria das conversas, mas as expressões idiomáticas e o calão ainda me apanham de surpresa.",
+   "pt_BR": "Já me viro na maioria das conversas, mas expressões idiomáticas e gírias ainda me pegam de surpresa.",
+   "fr": "Je me débrouille dans la plupart des conversations, mais les expressions idiomatiques et l'argot me prennent encore au dépourvu.",
+   "de": "Ich komme inzwischen in den meisten Gesprächen gut zurecht, aber Redewendungen und Slang überraschen mich noch."
+  }
+ },
+ {
+  "id": "ss-language_progress-045",
+  "topic": "language_progress",
+  "level": "B2",
+  "text": {
+   "en": "Would you mind giving me feedback on how natural my phrasing sounds?",
+   "it": "Ti dispiacerebbe dirmi quanto suona naturale il mio modo di esprimermi?",
+   "es": "¿Te importaría decirme lo natural que suena mi forma de expresarme?",
+   "pt": "Importas-te de me dar a tua opinião sobre o quão natural soa a minha forma de falar?",
+   "pt_BR": "Você se importaria de me dar um feedback sobre o quanto minhas frases soam naturais?",
+   "fr": "Ça te dérangerait de me dire si ma façon de formuler les choses sonne naturelle ?",
+   "de": "Würde es dir etwas ausmachen, mir Feedback dazu zu geben, wie natürlich meine Formulierungen klingen?"
+  }
+ },
+ {
+  "id": "ss-language_progress-046",
+  "topic": "language_progress",
+  "level": "B2",
+  "text": {
+   "en": "It took me a while to realize that translating word for word doesn't work; thinking in the language helps far more.",
+   "it": "Ci ho messo un po' a capire che tradurre parola per parola non funziona: pensare nella lingua aiuta molto di più.",
+   "es": "Tardé en darme cuenta de que traducir palabra por palabra no funciona; pensar en el idioma ayuda mucho más.",
+   "pt": "Demorei a perceber que traduzir palavra por palavra não funciona; pensar na língua ajuda muito mais.",
+   "pt_BR": "Demorei para perceber que traduzir palavra por palavra não funciona; pensar no idioma ajuda muito mais.",
+   "fr": "J'ai mis du temps à comprendre que traduire mot à mot ne marche pas ; penser dans la langue aide beaucoup plus.",
+   "de": "Es hat eine Weile gedauert, bis ich gemerkt habe, dass Wort-für-Wort-Übersetzen nicht funktioniert; in der Sprache zu denken hilft viel mehr."
+  }
+ },
+ {
+  "id": "ss-language_progress-047",
+  "topic": "language_progress",
+  "level": "B2",
+  "text": {
+   "en": "I've hit a plateau lately, so I'd welcome any tips to get past it.",
+   "it": "Ultimamente sono in una fase di stallo, quindi ogni consiglio per superarla è benvenuto.",
+   "es": "Últimamente estoy en una meseta, así que cualquier consejo para superarla es bienvenido.",
+   "pt": "Ultimamente estou num patamar sem evolução, por isso qualquer dica para o ultrapassar é bem-vinda.",
+   "pt_BR": "Ultimamente cheguei a um platô, então qualquer dica para superá-lo é bem-vinda.",
+   "fr": "Je suis dans une phase de stagnation en ce moment, alors toutes les astuces pour la dépasser sont les bienvenues.",
+   "de": "Ich stecke gerade auf einem Plateau fest, deshalb freue ich mich über jeden Tipp, wie ich es überwinden kann."
+  }
+ },
+ {
+  "id": "ss-language_progress-048",
+  "topic": "language_progress",
+  "level": "B2",
+  "text": {
+   "en": "Looking back at where I started a year ago, the progress is hard to believe.",
+   "it": "Se ripenso a dove ero partito un anno fa, faccio fatica a credere ai progressi.",
+   "es": "Si miro atrás, a dónde empecé hace un año, cuesta creer lo que he avanzado.",
+   "pt": "Quando penso no ponto de onde parti há um ano, custa-me a acreditar no progresso.",
+   "pt_BR": "Olhando para onde comecei há um ano, é difícil acreditar no progresso.",
+   "fr": "Quand je repense à mon point de départ il y a un an, j'ai du mal à croire aux progrès réalisés.",
+   "de": "Wenn ich daran zurückdenke, wo ich vor einem Jahr angefangen habe, kann ich den Fortschritt kaum glauben."
+  }
+ },
+ {
+  "id": "ss-language_progress-049",
+  "topic": "language_progress",
+  "level": "B2",
+  "text": {
+   "en": "I'd like to focus on sounding more natural rather than just being grammatically correct.",
+   "it": "Vorrei concentrarmi sul suonare più naturale, non solo sulla correttezza grammaticale.",
+   "es": "Quiero centrarme en sonar más natural y no solo en hablar con corrección gramatical.",
+   "pt": "Quero concentrar-me em soar mais natural e não apenas em falar com correção gramatical.",
+   "pt_BR": "Quero focar em soar mais natural, e não só em falar com correção gramatical.",
+   "fr": "Je voudrais me concentrer sur un ton plus naturel plutôt que sur la seule correction grammaticale.",
+   "de": "Ich möchte mich darauf konzentrieren, natürlicher zu klingen, statt nur grammatikalisch korrekt zu sprechen."
+  }
+ },
+ {
+  "id": "ss-language_progress-050",
+  "topic": "language_progress",
+  "level": "B2",
+  "text": {
+   "en": "Being corrected by a native speaker is the fastest way I've found to improve, so please don't hold back.",
+   "it": "Essere corretti da un madrelingua è il modo più veloce che ho trovato per migliorare, quindi non trattenerti.",
+   "es": "Que te corrija un hablante nativo es la forma más rápida que he encontrado de mejorar, así que no te cortes.",
+   "pt": "Ser corrigido por um falante nativo é a forma mais rápida que encontrei de melhorar, por isso não te contenhas.",
+   "pt_BR": "Ser corrigido por um falante nativo é a forma mais rápida que encontrei de melhorar, então não se segure.",
+   "fr": "Se faire corriger par un locuteur natif est le moyen le plus rapide que j'aie trouvé pour progresser, alors ne te retiens pas.",
+   "de": "Von Muttersprachlern korrigiert zu werden ist der schnellste Weg, den ich gefunden habe, um besser zu werden, also halte dich bitte nicht zurück."
+  }
+ }
+]

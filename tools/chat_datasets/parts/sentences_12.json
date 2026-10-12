@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ss-work-001",
+  "topic": "work",
+  "level": "A1",
+  "text": {
+   "en": "I work in an office.",
+   "it": "Lavoro in un ufficio.",
+   "es": "Trabajo en una oficina.",
+   "pt": "Trabalho num escritório.",
+   "pt_BR": "Trabalho em um escritório.",
+   "fr": "Je travaille dans un bureau.",
+   "de": "Ich arbeite in einem Büro."
+  }
+ },
+ {
+  "id": "ss-work-002",
+  "topic": "work",
+  "level": "A1",
+  "text": {
+   "en": "What do you do for a living?",
+   "it": "Che lavoro fai?",
+   "es": "¿A qué te dedicas?",
+   "pt": "O que fazes da vida?",
+   "pt_BR": "O que você faz da vida?",
+   "fr": "Qu'est-ce que tu fais comme travail ?",
+   "de": "Was machst du beruflich?"
+  }
+ },
+ {
+  "id": "ss-work-003",
+  "topic": "work",
+  "level": "A1",
+  "text": {
+   "en": "I start work at nine.",
+   "it": "Comincio a lavorare alle nove.",
+   "es": "Empiezo a trabajar a las nueve.",
+   "pt": "Começo a trabalhar às nove.",
+   "pt_BR": "Começo a trabalhar às nove.",
+   "fr": "Je commence à travailler à neuf heures.",
+   "de": "Ich fange um neun Uhr an zu arbeiten."
+  }
+ },
+ {
+  "id": "ss-work-004",
+  "topic": "work",
+  "level": "A1",
+  "text": {
+   "en": "I finish at five.",
+   "it": "Finisco alle cinque.",
+   "es": "Termino a las cinco.",
+   "pt": "Acabo às cinco.",
+   "pt_BR": "Termino às cinco.",
+   "fr": "Je finis à cinq heures.",
+   "de": "Ich habe um fünf Uhr Feierabend."
+  }
+ },
+ {
+  "id": "ss-work-005",
+  "topic": "work",
+  "level": "A1",
+  "text": {
+   "en": "My boss is very kind.",
+   "it": "Il mio capo è molto gentile.",
+   "es": "Mi jefe es muy amable.",
+   "pt": "O meu chefe é muito simpático.",
+   "pt_BR": "Meu chefe é muito simpático.",
+   "fr": "Mon chef est très gentil.",
+   "de": "Mein Chef ist sehr nett."
+  }
+ },
+ {
+  "id": "ss-work-006",
+  "topic": "work",
+  "level": "A1",
+  "text": {
+   "en": "I work from home today.",
+   "it": "Oggi lavoro da casa.",
+   "es": "Hoy trabajo desde casa.",
+   "pt": "Hoje trabalho a partir de casa.",
+   "pt_BR": "Hoje eu trabalho de casa.",
+   "fr": "Aujourd'hui, je travaille à la maison.",
+   "de": "Heute arbeite ich von zu Hause aus."
+  }
+ },
+ {
+  "id": "ss-work-007",
+  "topic": "work",
+  "level": "A1",
+  "text": {
+   "en": "Do you like your job?",
+   "it": "Ti piace il tuo lavoro?",
+   "es": "¿Te gusta tu trabajo?",
+   "pt": "Gostas do teu trabalho?",
+   "pt_BR": "Você gosta do seu trabalho?",
+   "fr": "Tu aimes ton travail ?",
+   "de": "Gefällt dir dein Job?"
+  }
+ },
+ {
+  "id": "ss-work-008",
+  "topic": "work",
+  "level": "A1",
+  "text": {
+   "en": "I am a nurse.",
+   "it": "Sono un infermiere.",
+   "es": "Soy enfermero.",
+   "pt": "Sou enfermeiro.",
+   "pt_BR": "Sou enfermeiro.",
+   "fr": "Je suis infirmier.",
+   "de": "Ich bin Krankenpfleger."
+  }
+ },
+ {
+  "id": "ss-work-009",
+  "topic": "work",
+  "level": "A1",
+  "text": {
+   "en": "I have a meeting today.",
+   "it": "Oggi ho una riunione.",
+   "es": "Hoy tengo una reunión.",
+   "pt": "Hoje tenho uma reunião.",
+   "pt_BR": "Hoje eu tenho uma reunião.",
+   "fr": "J'ai une réunion aujourd'hui.",
+   "de": "Ich habe heute ein Meeting."
+  }
+ },
+ {
+  "id": "ss-work-010",
+  "topic": "work",
+  "level": "A1",
+  "text": {
+   "en": "I am on a break.",
+   "it": "Sono in pausa.",
+   "es": "Estoy en un descanso.",
+   "pt": "Estou num intervalo.",
+   "pt_BR": "Estou em uma pausa.",
+   "fr": "Je suis en pause.",
+   "de": "Ich mache gerade Pause."
+  }
+ },
+ {
+  "id": "ss-work-011",
+  "topic": "work",
+  "level": "A1",
+  "text": {
+   "en": "My job is interesting.",
+   "it": "Il mio lavoro è interessante.",
+   "es": "Mi trabajo es interesante.",
+   "pt": "O meu trabalho é interessante.",
+   "pt_BR": "Meu trabalho é interessante.",
+   "fr": "Mon travail est intéressant.",
+   "de": "Meine Arbeit ist interessant."
+  }
+ },
+ {
+  "id": "ss-work-012",
+  "topic": "work",
+  "level": "A1",
+  "text": {
+   "en": "I work with computers.",
+   "it": "Lavoro con i computer.",
+   "es": "Trabajo con ordenadores.",
+   "pt": "Trabalho com computadores.",
+   "pt_BR": "Trabalho com computadores.",
+   "fr": "Je travaille avec des ordinateurs.",
+   "de": "Ich arbeite mit Computern."
+  }
+ },
+ {
+  "id": "ss-work-013",
+  "topic": "work",
+  "level": "A1",
+  "text": {
+   "en": "I work five days a week.",
+   "it": "Lavoro cinque giorni a settimana.",
+   "es": "Trabajo cinco días a la semana.",
+   "pt": "Trabalho cinco dias por semana.",
+   "pt_BR": "Trabalho cinco dias por semana.",
+   "fr": "Je travaille cinq jours par semaine.",
+   "de": "Ich arbeite fünf Tage die Woche."
+  }
+ },
+ {
+  "id": "ss-work-014",
+  "topic": "work",
+  "level": "A1",
+  "text": {
+   "en": "Where do you work?",
+   "it": "Dove lavori?",
+   "es": "¿Dónde trabajas?",
+   "pt": "Onde trabalhas?",
+   "pt_BR": "Onde você trabalha?",
+   "fr": "Où est-ce que tu travailles ?",
+   "de": "Wo arbeitest du?"
+  }
+ },
+ {
+  "id": "ss-work-015",
+  "topic": "work",
+  "level": "A1",
+  "text": {
+   "en": "I am tired after work.",
+   "it": "Sono stanco dopo il lavoro.",
+   "es": "Estoy cansado después del trabajo.",
+   "pt": "Estou cansado depois do trabalho.",
+   "pt_BR": "Estou cansado depois do trabalho.",
+   "fr": "Je suis fatigué après le travail.",
+   "de": "Nach der Arbeit bin ich müde."
+  }
+ },
+ {
+  "id": "ss-work-016",
+  "topic": "work",
+  "level": "A2",
+  "text": {
+   "en": "I have been working here for two years.",
+   "it": "Lavoro qui da due anni.",
+   "es": "Llevo dos años trabajando aquí.",
+   "pt": "Trabalho aqui há dois anos.",
+   "pt_BR": "Trabalho aqui há dois anos.",
+   "fr": "Je travaille ici depuis deux ans.",
+   "de": "Ich arbeite hier seit zwei Jahren."
+  }
+ },
+ {
+  "id": "ss-work-017",
+  "topic": "work",
+  "level": "A2",
+  "text": {
+   "en": "Is your job difficult?",
+   "it": "Il tuo lavoro è difficile?",
+   "es": "¿Es difícil tu trabajo?",
+   "pt": "O teu trabalho é difícil?",
+   "pt_BR": "Seu trabalho é difícil?",
+   "fr": "Est-ce que ton travail est difficile ?",
+   "de": "Ist dein Job schwierig?"
+  }
+ },
+ {
+  "id": "ss-work-018",
+  "topic": "work",
+  "level": "A2",
+  "text": {
+   "en": "I take the bus to work every morning.",
+   "it": "Ogni mattina vado al lavoro in autobus.",
+   "es": "Cada mañana voy al trabajo en autobús.",
+   "pt": "Todas as manhãs vou para o trabalho de autocarro.",
+   "pt_BR": "Toda manhã eu vou para o trabalho de ônibus.",
+   "fr": "Tous les matins, je vais au travail en bus.",
+   "de": "Jeden Morgen fahre ich mit dem Bus zur Arbeit."
+  }
+ },
+ {
+  "id": "ss-work-019",
+  "topic": "work",
+  "level": "A2",
+  "text": {
+   "en": "My colleagues are friendly and helpful.",
+   "it": "I miei colleghi sono simpatici e disponibili.",
+   "es": "Mis compañeros de trabajo son amables y serviciales.",
+   "pt": "Os meus colegas são simpáticos e prestáveis.",
+   "pt_BR": "Meus colegas são simpáticos e prestativos.",
+   "fr": "Mes collègues sont sympathiques et serviables.",
+   "de": "Meine Kollegen sind freundlich und hilfsbereit."
+  }
+ },
+ {
+  "id": "ss-work-020",
+  "topic": "work",
+  "level": "A2",
+  "text": {
+   "en": "What time do you usually finish work?",
+   "it": "A che ora finisci di solito il lavoro?",
+   "es": "¿A qué hora sueles terminar de trabajar?",
+   "pt": "A que horas costumas acabar de trabalhar?",
+   "pt_BR": "A que horas você costuma sair do trabalho?",
+   "fr": "À quelle heure est-ce que tu finis le travail d'habitude ?",
+   "de": "Wann hast du normalerweise Feierabend?"
+  }
+ },
+ {
+  "id": "ss-work-021",
+  "topic": "work",
+  "level": "A2",
+  "text": {
+   "en": "I'm looking for a new job.",
+   "it": "Sto cercando un nuovo lavoro.",
+   "es": "Estoy buscando un nuevo trabajo.",
+   "pt": "Estou à procura de um novo emprego.",
+   "pt_BR": "Estou procurando um novo emprego.",
+   "fr": "Je cherche un nouveau travail.",
+   "de": "Ich suche einen neuen Job."
+  }
+ },
+ {
+  "id": "ss-work-022",
+  "topic": "work",
+  "level": "A2",
+  "text": {
+   "en": "I have a day off on Friday.",
+   "it": "Venerdì sono a casa dal lavoro.",
+   "es": "El viernes tengo el día libre.",
+   "pt": "Na sexta-feira tenho folga.",
+   "pt_BR": "Na sexta-feira eu tenho folga.",
+   "fr": "J'ai un jour de congé vendredi.",
+   "de": "Am Freitag habe ich frei."
+  }
+ },
+ {
+  "id": "ss-work-023",
+  "topic": "work",
+  "level": "A2",
+  "text": {
+   "en": "Do you work in a team or alone?",
+   "it": "Lavori in squadra o da solo?",
+   "es": "¿Trabajas en equipo o solo?",
+   "pt": "Trabalhas em equipa ou sozinho?",
+   "pt_BR": "Você trabalha em equipe ou sozinho?",
+   "fr": "Tu travailles en équipe ou seul ?",
+   "de": "Arbeitest du im Team oder allein?"
+  }
+ },
+ {
+  "id": "ss-work-024",
+  "topic": "work",
+  "level": "A2",
+  "text": {
+   "en": "I have lunch with my colleagues at noon.",
+   "it": "A mezzogiorno pranzo con i miei colleghi.",
+   "es": "Almuerzo con mis compañeros a mediodía.",
+   "pt": "Almoço com os meus colegas ao meio-dia.",
+   "pt_BR": "Almoço com meus colegas ao meio-dia.",
+   "fr": "Je déjeune avec mes collègues à midi.",
+   "de": "Mittags esse ich mit meinen Kollegen."
+  }
+ },
+ {
+  "id": "ss-work-025",
+  "topic": "work",
+  "level": "A2",
+  "text": {
+   "en": "I have an interview tomorrow morning.",
+   "it": "Domani mattina ho un colloquio di lavoro.",
+   "es": "Mañana por la mañana tengo una entrevista de trabajo.",
+   "pt": "Amanhã de manhã tenho uma entrevista de emprego.",
+   "pt_BR": "Amanhã de manhã eu tenho uma entrevista de emprego.",
+   "fr": "J'ai un entretien d'embauche demain matin.",
+   "de": "Morgen früh habe ich ein Vorstellungsgespräch."
+  }
+ },
+ {
+  "id": "ss-work-026",
+  "topic": "work",
+  "level": "A2",
+  "text": {
+   "en": "Sorry, I can't talk now, I'm in a meeting.",
+   "it": "Scusa, adesso non posso parlare, sono in riunione.",
+   "es": "Perdona, ahora no puedo hablar, estoy en una reunión.",
+   "pt": "Desculpa, agora não posso falar, estou numa reunião.",
+   "pt_BR": "Desculpe, agora não posso falar, estou em uma reunião.",
+   "fr": "Désolé, je ne peux pas parler maintenant, je suis en réunion.",
+   "de": "Entschuldige, ich kann gerade nicht reden, ich bin in einem Meeting."
+  }
+ },
+ {
+  "id": "ss-work-027",
+  "topic": "work",
+  "level": "A2",
+  "text": {
+   "en": "What are you working on at the moment?",
+   "it": "A cosa stai lavorando in questo periodo?",
+   "es": "¿En qué estás trabajando ahora?",
+   "pt": "Em que estás a trabalhar neste momento?",
+   "pt_BR": "No que você está trabalhando agora?",
+   "fr": "Sur quoi est-ce que tu travailles en ce moment ?",
+   "de": "Woran arbeitest du gerade?"
+  }
+ },
+ {
+  "id": "ss-work-028",
+  "topic": "work",
+  "level": "A2",
+  "text": {
+   "en": "I usually work from nine to five.",
+   "it": "Di solito lavoro dalle nove alle cinque.",
+   "es": "Normalmente trabajo de nueve a cinco.",
+   "pt": "Normalmente trabalho das nove às cinco.",
+   "pt_BR": "Normalmente trabalho das nove às cinco.",
+   "fr": "Je travaille généralement de neuf heures à dix-sept heures.",
+   "de": "Normalerweise arbeite ich von neun bis fünf."
+  }
+ },
+ {
+  "id": "ss-work-029",
+  "topic": "work",
+  "level": "A2",
+  "text": {
+   "en": "I'm going on holiday next week.",
+   "it": "La prossima settimana vado in vacanza.",
+   "es": "La semana que viene me voy de vacaciones.",
+   "pt": "Na próxima semana vou de férias.",
+   "pt_BR": "Na semana que vem eu vou tirar férias.",
+   "fr": "Je pars en vacances la semaine prochaine.",
+   "de": "Nächste Woche fahre ich in den Urlaub."
+  }
+ },
+ {
+  "id": "ss-work-030",
+  "topic": "work",
+  "level": "A2",
+  "text": {
+   "en": "I don't have much work today.",
+   "it": "Oggi non ho molto lavoro.",
+   "es": "Hoy no tengo mucho trabajo.",
+   "pt": "Hoje não tenho muito trabalho.",
+   "pt_BR": "Hoje eu não tenho muito trabalho.",
+   "fr": "Je n'ai pas beaucoup de travail aujourd'hui.",
+   "de": "Heute habe ich nicht viel zu tun."
+  }
+ },
+ {
+  "id": "ss-work-031",
+  "topic": "work",
+  "level": "B1",
+  "text": {
+   "en": "I'd like to change careers, but I'm not sure where to start.",
+   "it": "Vorrei cambiare carriera, ma non so da dove cominciare.",
+   "es": "Me gustaría cambiar de carrera, pero no sé por dónde empezar.",
+   "pt": "Gostava de mudar de carreira, mas não sei por onde começar.",
+   "pt_BR": "Eu gostaria de mudar de carreira, mas não sei por onde começar.",
+   "fr": "J'aimerais changer de carrière, mais je ne sais pas par où commencer.",
+   "de": "Ich würde gern den Beruf wechseln, weiß aber nicht, wo ich anfangen soll."
+  }
+ },
+ {
+  "id": "ss-work-032",
+  "topic": "work",
+  "level": "B1",
+  "text": {
+   "en": "How do people usually find jobs in your country?",
+   "it": "Come si trova di solito lavoro nel tuo paese?",
+   "es": "¿Cómo suele encontrar trabajo la gente en tu país?",
+   "pt": "Como é que as pessoas costumam encontrar emprego no teu país?",
+   "pt_BR": "Como as pessoas costumam encontrar emprego no seu país?",
+   "fr": "Comment est-ce que les gens trouvent du travail en général dans ton pays ?",
+   "de": "Wie finden die Leute in deinem Land normalerweise einen Job?"
+  }
+ },
+ {
+  "id": "ss-work-033",
+  "topic": "work",
+  "level": "B1",
+  "text": {
+   "en": "I spend a lot of time answering emails.",
+   "it": "Passo molto tempo a rispondere alle email.",
+   "es": "Paso mucho tiempo contestando correos.",
+   "pt": "Passo muito tempo a responder a emails.",
+   "pt_BR": "Passo muito tempo respondendo e-mails.",
+   "fr": "Je passe beaucoup de temps à répondre à des e-mails.",
+   "de": "Ich verbringe viel Zeit damit, E-Mails zu beantworten."
+  }
+ },
+ {
+  "id": "ss-work-034",
+  "topic": "work",
+  "level": "B1",
+  "text": {
+   "en": "Working from home has pros and cons for me.",
+   "it": "Lavorare da casa per me ha lati positivi e negativi.",
+   "es": "Trabajar desde casa tiene ventajas e inconvenientes para mí.",
+   "pt": "Trabalhar a partir de casa tem vantagens e desvantagens para mim.",
+   "pt_BR": "Trabalhar de casa tem vantagens e desvantagens para mim.",
+   "fr": "Pour moi, le télétravail a des avantages et des inconvénients.",
+   "de": "Von zu Hause aus zu arbeiten hat für mich Vor- und Nachteile."
+  }
+ },
+ {
+  "id": "ss-work-035",
+  "topic": "work",
+  "level": "B1",
+  "text": {
+   "en": "Could you send me the report by the end of the day?",
+   "it": "Potresti mandarmi il rapporto entro la fine della giornata?",
+   "es": "¿Podrías enviarme el informe antes de que acabe el día?",
+   "pt": "Podes enviar-me o relatório até ao fim do dia?",
+   "pt_BR": "Você pode me enviar o relatório até o fim do dia?",
+   "fr": "Pourrais-tu m'envoyer le rapport d'ici la fin de la journée ?",
+   "de": "Könntest du mir den Bericht bis Ende des Tages schicken?"
+  }
+ },
+ {
+  "id": "ss-work-036",
+  "topic": "work",
+  "level": "B1",
+  "text": {
+   "en": "I'm learning English to improve my career opportunities.",
+   "it": "Sto imparando l'inglese per migliorare le mie opportunità di carriera.",
+   "es": "Estoy aprendiendo inglés para mejorar mis oportunidades profesionales.",
+   "pt": "Estou a aprender inglês para melhorar as minhas oportunidades de carreira.",
+   "pt_BR": "Estou aprendendo inglês para melhorar minhas oportunidades de carreira.",
+   "fr": "J'apprends l'anglais pour améliorer mes perspectives de carrière.",
+   "de": "Ich lerne Englisch, um meine Karrierechancen zu verbessern."
+  }
+ },
+ {
+  "id": "ss-work-037",
+  "topic": "work",
+  "level": "B1",
+  "text": {
+   "en": "What does a typical working day look like for you?",
+   "it": "Com'è una tua tipica giornata di lavoro?",
+   "es": "¿Cómo es un día de trabajo típico para ti?",
+   "pt": "Como é um dia de trabalho típico para ti?",
+   "pt_BR": "Como é um dia de trabalho típico para você?",
+   "fr": "À quoi ressemble une journée de travail typique pour toi ?",
+   "de": "Wie sieht ein typischer Arbeitstag bei dir aus?"
+  }
+ },
+ {
+  "id": "ss-work-038",
+  "topic": "work",
+  "level": "B1",
+  "text": {
+   "en": "My company is hiring, so I can pass on your CV if you like.",
+   "it": "La mia azienda sta assumendo, quindi se vuoi posso girare il tuo CV.",
+   "es": "Mi empresa está contratando, así que, si quieres, puedo pasar tu currículum.",
+   "pt": "A minha empresa está a contratar, por isso, se quiseres, posso passar o teu currículo.",
+   "pt_BR": "Minha empresa está contratando, então, se você quiser, posso passar o seu currículo.",
+   "fr": "Mon entreprise recrute, donc je peux transmettre ton CV si tu veux.",
+   "de": "Meine Firma stellt gerade ein, also kann ich deinen Lebenslauf weitergeben, wenn du möchtest."
+  }
+ },
+ {
+  "id": "ss-work-039",
+  "topic": "work",
+  "level": "B1",
+  "text": {
+   "en": "How many days of paid holiday do people get in your country?",
+   "it": "Quanti giorni di ferie pagate si hanno nel tuo paese?",
+   "es": "¿Cuántos días de vacaciones pagadas tiene la gente en tu país?",
+   "pt": "Quantos dias de férias pagas têm as pessoas no teu país?",
+   "pt_BR": "Quantos dias de férias remuneradas as pessoas têm no seu país?",
+   "fr": "Combien de jours de congés payés les gens ont-ils dans ton pays ?",
+   "de": "Wie viele Tage bezahlten Urlaub hat man in deinem Land?"
+  }
+ },
+ {
+  "id": "ss-work-040",
+  "topic": "work",
+  "level": "B1",
+  "text": {
+   "en": "I get nervous before job interviews.",
+   "it": "Prima dei colloqui di lavoro divento nervoso.",
+   "es": "Me pongo nervioso antes de las entrevistas de trabajo.",
+   "pt": "Fico nervoso antes das entrevistas de emprego.",
+   "pt_BR": "Fico nervoso antes das entrevistas de emprego.",
+   "fr": "Je suis nerveux avant les entretiens d'embauche.",
+   "de": "Vor Vorstellungsgesprächen werde ich nervös."
+  }
+ },
+ {
+  "id": "ss-work-041",
+  "topic": "work",
+  "level": "B1",
+  "text": {
+   "en": "I had a long day, but I finished the project on time.",
+   "it": "È stata una giornata lunga, ma ho finito il progetto in tempo.",
+   "es": "Ha sido un día largo, pero terminé el proyecto a tiempo.",
+   "pt": "Foi um dia longo, mas acabei o projeto a tempo.",
+   "pt_BR": "Foi um dia longo, mas terminei o projeto no prazo.",
+   "fr": "La journée a été longue, mais j'ai terminé le projet à temps.",
+   "de": "Es war ein langer Tag, aber ich habe das Projekt rechtzeitig fertiggestellt."
+  }
+ },
+ {
+  "id": "ss-work-042",
+  "topic": "work",
+  "level": "B1",
+  "text": {
+   "en": "What do you enjoy most about your job?",
+   "it": "Cosa ti piace di più del tuo lavoro?",
+   "es": "¿Qué es lo que más disfrutas de tu trabajo?",
+   "pt": "O que mais gostas no teu trabalho?",
+   "pt_BR": "O que você mais gosta no seu trabalho?",
+   "fr": "Qu'est-ce que tu préfères dans ton travail ?",
+   "de": "Was gefällt dir an deiner Arbeit am besten?"
+  }
+ },
+ {
+  "id": "ss-work-043",
+  "topic": "work",
+  "level": "B2",
+  "text": {
+   "en": "I'm trying to find a better balance between my work and my personal life.",
+   "it": "Sto cercando di trovare un equilibrio migliore tra lavoro e vita privata.",
+   "es": "Estoy intentando encontrar un mejor equilibrio entre mi trabajo y mi vida personal.",
+   "pt": "Estou a tentar encontrar um melhor equilíbrio entre o trabalho e a vida pessoal.",
+   "pt_BR": "Estou tentando encontrar um equilíbrio melhor entre o trabalho e a vida pessoal.",
+   "fr": "J'essaie de mieux équilibrer ma vie professionnelle et ma vie personnelle.",
+   "de": "Ich versuche, ein besseres Gleichgewicht zwischen Beruf und Privatleben zu finden."
+  }
+ },
+ {
+  "id": "ss-work-044",
+  "topic": "work",
+  "level": "B2",
+  "text": {
+   "en": "After years in the same company, I decided it was time for a new challenge.",
+   "it": "Dopo anni nella stessa azienda, ho deciso che era ora di una nuova sfida.",
+   "es": "Después de años en la misma empresa, decidí que era hora de un nuevo reto.",
+   "pt": "Depois de anos na mesma empresa, decidi que era altura de um novo desafio.",
+   "pt_BR": "Depois de anos na mesma empresa, decidi que era hora de um novo desafio.",
+   "fr": "Après des années dans la même entreprise, j'ai décidé qu'il était temps de relever un nouveau défi.",
+   "de": "Nach Jahren im selben Unternehmen habe ich beschlossen, dass es Zeit für eine neue Herausforderung ist."
+  }
+ },
+ {
+  "id": "ss-work-045",
+  "topic": "work",
+  "level": "B2",
+  "text": {
+   "en": "I'm thinking about asking my manager for a raise, but I'm not sure how to bring it up.",
+   "it": "Sto pensando di chiedere un aumento al mio responsabile, ma non so come affrontare l'argomento.",
+   "es": "Estoy pensando en pedirle un aumento a mi jefe, pero no sé cómo planteárselo.",
+   "pt": "Estou a pensar pedir um aumento ao meu chefe, mas não sei como abordar o assunto.",
+   "pt_BR": "Estou pensando em pedir um aumento ao meu gerente, mas não sei como tocar no assunto.",
+   "fr": "Je pense demander une augmentation à mon responsable, mais je ne sais pas comment aborder le sujet.",
+   "de": "Ich überlege, meinen Vorgesetzten um eine Gehaltserhöhung zu bitten, weiß aber nicht, wie ich das ansprechen soll."
+  }
+ },
+ {
+  "id": "ss-work-046",
+  "topic": "work",
+  "level": "B2",
+  "text": {
+   "en": "Would you mind giving me some feedback on my presentation?",
+   "it": "Ti dispiacerebbe darmi un parere sulla mia presentazione?",
+   "es": "¿Te importaría darme tu opinión sobre mi presentación?",
+   "pt": "Importavas-te de me dar a tua opinião sobre a minha apresentação?",
+   "pt_BR": "Você se importaria de me dar um feedback sobre a minha apresentação?",
+   "fr": "Est-ce que ça te dérangerait de me donner ton avis sur ma présentation ?",
+   "de": "Würde es dir etwas ausmachen, mir Feedback zu meiner Präsentation zu geben?"
+  }
+ },
+ {
+  "id": "ss-work-047",
+  "topic": "work",
+  "level": "B2",
+  "text": {
+   "en": "Our team is under a lot of pressure to meet the deadline.",
+   "it": "Il nostro team è sotto molta pressione per rispettare la scadenza.",
+   "es": "Nuestro equipo está sometido a mucha presión para cumplir el plazo.",
+   "pt": "A nossa equipa está sob muita pressão para cumprir o prazo.",
+   "pt_BR": "Nossa equipe está sob muita pressão para cumprir o prazo.",
+   "fr": "Notre équipe est sous forte pression pour respecter l'échéance.",
+   "de": "Unser Team steht unter großem Druck, die Frist einzuhalten."
+  }
+ },
+ {
+  "id": "ss-work-048",
+  "topic": "work",
+  "level": "B2",
+  "text": {
+   "en": "Do people in your country often work overtime, or do they usually leave on time?",
+   "it": "Nel tuo paese si fanno spesso gli straordinari o di solito si esce in orario?",
+   "es": "¿En tu país se suelen hacer horas extra o la gente sale normalmente a su hora?",
+   "pt": "No teu país costuma fazer-se horas extra ou as pessoas saem normalmente à hora certa?",
+   "pt_BR": "No seu país as pessoas costumam fazer hora extra ou saem normalmente no horário?",
+   "fr": "Dans ton pays, est-ce que les gens font souvent des heures supplémentaires ou partent-ils plutôt à l'heure ?",
+   "de": "Machen die Leute in deinem Land oft Überstunden, oder gehen sie normalerweise pünktlich nach Hause?"
+  }
+ },
+ {
+  "id": "ss-work-049",
+  "topic": "work",
+  "level": "B2",
+  "text": {
+   "en": "I'd love to learn how work culture differs between our two countries.",
+   "it": "Mi piacerebbe scoprire come cambia la cultura del lavoro tra i nostri due paesi.",
+   "es": "Me encantaría saber en qué se diferencia la cultura laboral entre nuestros dos países.",
+   "pt": "Gostava muito de saber como é que a cultura de trabalho difere entre os nossos dois países.",
+   "pt_BR": "Eu adoraria saber como a cultura de trabalho difere entre os nossos dois países.",
+   "fr": "J'aimerais bien savoir en quoi la culture du travail diffère entre nos deux pays.",
+   "de": "Ich würde gern erfahren, wie sich die Arbeitskultur in unseren beiden Ländern unterscheidet."
+  }
+ },
+ {
+  "id": "ss-work-050",
+  "topic": "work",
+  "level": "B2",
+  "text": {
+   "en": "I've been offered a position abroad, and I'm weighing the pros and cons.",
+   "it": "Mi hanno offerto un posto all'estero e sto valutando i pro e i contro.",
+   "es": "Me han ofrecido un puesto en el extranjero y estoy sopesando los pros y los contras.",
+   "pt": "Ofereceram-me um cargo no estrangeiro e estou a ponderar os prós e os contras.",
+   "pt_BR": "Me ofereceram uma vaga no exterior e estou avaliando os prós e os contras.",
+   "fr": "On m'a proposé un poste à l'étranger et je suis en train de peser le pour et le contre.",
+   "de": "Mir wurde eine Stelle im Ausland angeboten, und ich wäge gerade das Für und Wider ab."
+  }
+ },
+ {
+  "id": "ss-studies-001",
+  "topic": "studies",
+  "level": "A1",
+  "text": {
+   "en": "I am a student.",
+   "it": "Sono uno studente.",
+   "es": "Soy estudiante.",
+   "pt": "Sou estudante.",
+   "pt_BR": "Sou estudante.",
+   "fr": "Je suis étudiant.",
+   "de": "Ich bin Student."
+  }
+ },
+ {
+  "id": "ss-studies-002",
+  "topic": "studies",
+  "level": "A1",
+  "text": {
+   "en": "What do you study?",
+   "it": "Cosa studi?",
+   "es": "¿Qué estudias?",
+   "pt": "O que estudas?",
+   "pt_BR": "O que você estuda?",
+   "fr": "Qu'est-ce que tu étudies ?",
+   "de": "Was studierst du?"
+  }
+ },
+ {
+  "id": "ss-studies-003",
+  "topic": "studies",
+  "level": "A1",
+  "text": {
+   "en": "I study history.",
+   "it": "Studio storia.",
+   "es": "Estudio historia.",
+   "pt": "Estudo história.",
+   "pt_BR": "Estudo história.",
+   "fr": "J'étudie l'histoire.",
+   "de": "Ich studiere Geschichte."
+  }
+ },
+ {
+  "id": "ss-studies-004",
+  "topic": "studies",
+  "level": "A1",
+  "text": {
+   "en": "I go to university.",
+   "it": "Vado all'università.",
+   "es": "Voy a la universidad.",
+   "pt": "Vou à universidade.",
+   "pt_BR": "Vou à universidade.",
+   "fr": "Je vais à l'université.",
+   "de": "Ich gehe zur Universität."
+  }
+ },
+ {
+  "id": "ss-studies-005",
+  "topic": "studies",
+  "level": "A1",
+  "text": {
+   "en": "I have a class at ten.",
+   "it": "Ho lezione alle dieci.",
+   "es": "Tengo clase a las diez.",
+   "pt": "Tenho aula às dez.",
+   "pt_BR": "Tenho aula às dez.",
+   "fr": "J'ai cours à dix heures.",
+   "de": "Ich habe um zehn Uhr Unterricht."
+  }
+ },
+ {
+  "id": "ss-studies-006",
+  "topic": "studies",
+  "level": "A1",
+  "text": {
+   "en": "My teacher is great.",
+   "it": "La mia insegnante è fantastica.",
+   "es": "Mi profesora es genial.",
+   "pt": "A minha professora é ótima.",
+   "pt_BR": "Minha professora é ótima.",
+   "fr": "Ma professeure est super.",
+   "de": "Meine Lehrerin ist toll."
+  }
+ },
+ {
+  "id": "ss-studies-007",
+  "topic": "studies",
+  "level": "A1",
+  "text": {
+   "en": "I like to read books.",
+   "it": "Mi piace leggere libri.",
+   "es": "Me gusta leer libros.",
+   "pt": "Gosto de ler livros.",
+   "pt_BR": "Gosto de ler livros.",
+   "fr": "J'aime lire des livres.",
+   "de": "Ich lese gern Bücher."
+  }
+ },
+ {
+  "id": "ss-studies-008",
+  "topic": "studies",
+  "level": "A1",
+  "text": {
+   "en": "I have homework today.",
+   "it": "Oggi ho i compiti.",
+   "es": "Hoy tengo deberes.",
+   "pt": "Hoje tenho trabalhos de casa.",
+   "pt_BR": "Hoje eu tenho lição de casa.",
+   "fr": "J'ai des devoirs aujourd'hui.",
+   "de": "Heute habe ich Hausaufgaben."
+  }
+ },
+ {
+  "id": "ss-studies-009",
+  "topic": "studies",
+  "level": "A1",
+  "text": {
+   "en": "Where is the library?",
+   "it": "Dov'è la biblioteca?",
+   "es": "¿Dónde está la biblioteca?",
+   "pt": "Onde fica a biblioteca?",
+   "pt_BR": "Onde fica a biblioteca?",
+   "fr": "Où est la bibliothèque ?",
+   "de": "Wo ist die Bibliothek?"
+  }
+ },
+ {
+  "id": "ss-studies-010",
+  "topic": "studies",
+  "level": "A1",
+  "text": {
+   "en": "I have an exam tomorrow.",
+   "it": "Domani ho un esame.",
+   "es": "Mañana tengo un examen.",
+   "pt": "Amanhã tenho um exame.",
+   "pt_BR": "Amanhã eu tenho uma prova.",
+   "fr": "J'ai un examen demain.",
+   "de": "Morgen habe ich eine Prüfung."
+  }
+ },
+ {
+  "id": "ss-studies-011",
+  "topic": "studies",
+  "level": "A1",
+  "text": {
+   "en": "I study every day.",
+   "it": "Studio ogni giorno.",
+   "es": "Estudio todos los días.",
+   "pt": "Estudo todos os dias.",
+   "pt_BR": "Estudo todos os dias.",
+   "fr": "J'étudie tous les jours.",
+   "de": "Ich lerne jeden Tag."
+  }
+ },
+ {
+  "id": "ss-studies-012",
+  "topic": "studies",
+  "level": "A1",
+  "text": {
+   "en": "This subject is difficult.",
+   "it": "Questa materia è difficile.",
+   "es": "Esta asignatura es difícil.",
+   "pt": "Esta disciplina é difícil.",
+   "pt_BR": "Esta matéria é difícil.",
+   "fr": "Cette matière est difficile.",
+   "de": "Dieses Fach ist schwierig."
+  }
+ },
+ {
+  "id": "ss-studies-013",
+  "topic": "studies",
+  "level": "A1",
+  "text": {
+   "en": "I am learning English.",
+   "it": "Sto imparando l'inglese.",
+   "es": "Estoy aprendiendo inglés.",
+   "pt": "Estou a aprender inglês.",
+   "pt_BR": "Estou aprendendo inglês.",
+   "fr": "J'apprends l'anglais.",
+   "de": "Ich lerne Englisch."
+  }
+ },
+ {
+  "id": "ss-studies-014",
+  "topic": "studies",
+  "level": "A1",
+  "text": {
+   "en": "I like my school.",
+   "it": "Mi piace la mia scuola.",
+   "es": "Me gusta mi colegio.",
+   "pt": "Gosto da minha escola.",
+   "pt_BR": "Gosto da minha escola.",
+   "fr": "J'aime mon école.",
+   "de": "Ich mag meine Schule."
+  }
+ },
+ {
+  "id": "ss-studies-015",
+  "topic": "studies",
+  "level": "A1",
+  "text": {
+   "en": "Can you help me, please?",
+   "it": "Puoi aiutarmi, per favore?",
+   "es": "¿Puedes ayudarme, por favor?",
+   "pt": "Podes ajudar-me, por favor?",
+   "pt_BR": "Você pode me ajudar, por favor?",
+   "fr": "Tu peux m'aider, s'il te plaît ?",
+   "de": "Kannst du mir bitte helfen?"
+  }
+ },
+ {
+  "id": "ss-studies-016",
+  "topic": "studies",
+  "level": "A2",
+  "text": {
+   "en": "I'm in my second year of university.",
+   "it": "Sono al secondo anno di università.",
+   "es": "Estoy en segundo curso de la universidad.",
+   "pt": "Estou no segundo ano da universidade.",
+   "pt_BR": "Estou no segundo ano da faculdade.",
+   "fr": "Je suis en deuxième année d'université.",
+   "de": "Ich bin im zweiten Studienjahr."
+  }
+ },
+ {
+  "id": "ss-studies-017",
+  "topic": "studies",
+  "level": "A2",
+  "text": {
+   "en": "What's your favourite subject?",
+   "it": "Qual è la tua materia preferita?",
+   "es": "¿Cuál es tu asignatura favorita?",
+   "pt": "Qual é a tua disciplina preferida?",
+   "pt_BR": "Qual é a sua matéria favorita?",
+   "fr": "Quelle est ta matière préférée ?",
+   "de": "Was ist dein Lieblingsfach?"
+  }
+ },
+ {
+  "id": "ss-studies-018",
+  "topic": "studies",
+  "level": "A2",
+  "text": {
+   "en": "I'm studying for an exam this week.",
+   "it": "Questa settimana sto studiando per un esame.",
+   "es": "Esta semana estoy estudiando para un examen.",
+   "pt": "Esta semana estou a estudar para um exame.",
+   "pt_BR": "Esta semana estou estudando para uma prova.",
+   "fr": "Cette semaine, je révise pour un examen.",
+   "de": "Diese Woche lerne ich für eine Prüfung."
+  }
+ },
+ {
+  "id": "ss-studies-019",
+  "topic": "studies",
+  "level": "A2",
+  "text": {
+   "en": "Do you study in the morning or in the evening?",
+   "it": "Studi la mattina o la sera?",
+   "es": "¿Estudias por la mañana o por la noche?",
+   "pt": "Estudas de manhã ou à noite?",
+   "pt_BR": "Você estuda de manhã ou à noite?",
+   "fr": "Tu étudies le matin ou le soir ?",
+   "de": "Lernst du morgens oder abends?"
+  }
+ },
+ {
+  "id": "ss-studies-020",
+  "topic": "studies",
+  "level": "A2",
+  "text": {
+   "en": "I'm learning Italian, and I'd love to practise with you.",
+   "it": "Sto imparando l'italiano e mi piacerebbe fare pratica con te.",
+   "es": "Estoy aprendiendo italiano y me encantaría practicar contigo.",
+   "pt": "Estou a aprender italiano e gostava muito de praticar contigo.",
+   "pt_BR": "Estou aprendendo italiano e adoraria praticar com você.",
+   "fr": "J'apprends l'italien et j'aimerais beaucoup pratiquer avec toi.",
+   "de": "Ich lerne Italienisch und würde gern mit dir üben."
+  }
+ },
+ {
+  "id": "ss-studies-021",
+  "topic": "studies",
+  "level": "A2",
+  "text": {
+   "en": "My classes finish at four o'clock.",
+   "it": "Le mie lezioni finiscono alle quattro.",
+   "es": "Mis clases terminan a las cuatro.",
+   "pt": "As minhas aulas acabam às quatro.",
+   "pt_BR": "Minhas aulas terminam às quatro.",
+   "fr": "Mes cours finissent à seize heures.",
+   "de": "Mein Unterricht endet um vier Uhr."
+  }
+ },
+ {
+  "id": "ss-studies-022",
+  "topic": "studies",
+  "level": "A2",
+  "text": {
+   "en": "Could you explain this word to me?",
+   "it": "Potresti spiegarmi questa parola?",
+   "es": "¿Podrías explicarme esta palabra?",
+   "pt": "Podes explicar-me esta palavra?",
+   "pt_BR": "Você poderia me explicar esta palavra?",
+   "fr": "Pourrais-tu m'expliquer ce mot ?",
+   "de": "Könntest du mir dieses Wort erklären?"
+  }
+ },
+ {
+  "id": "ss-studies-023",
+  "topic": "studies",
+  "level": "A2",
+  "text": {
+   "en": "I'm writing an essay about the environment.",
+   "it": "Sto scrivendo un saggio sull'ambiente.",
+   "es": "Estoy escribiendo un ensayo sobre el medio ambiente.",
+   "pt": "Estou a escrever um ensaio sobre o ambiente.",
+   "pt_BR": "Estou escrevendo uma redação sobre o meio ambiente.",
+   "fr": "J'écris une dissertation sur l'environnement.",
+   "de": "Ich schreibe einen Aufsatz über die Umwelt."
+  }
+ },
+ {
+  "id": "ss-studies-024",
+  "topic": "studies",
+  "level": "A2",
+  "text": {
+   "en": "I'm studying with a friend at the library.",
+   "it": "Sto studiando con un amico in biblioteca.",
+   "es": "Estoy estudiando con un amigo en la biblioteca.",
+   "pt": "Estou a estudar com um amigo na biblioteca.",
+   "pt_BR": "Estou estudando com um amigo na biblioteca.",
+   "fr": "J'étudie avec un ami à la bibliothèque.",
+   "de": "Ich lerne mit einem Freund in der Bibliothek."
+  }
+ },
+ {
+  "id": "ss-studies-025",
+  "topic": "studies",
+  "level": "A2",
+  "text": {
+   "en": "How long have you been learning English?",
+   "it": "Da quanto tempo impari l'inglese?",
+   "es": "¿Cuánto tiempo llevas aprendiendo inglés?",
+   "pt": "Há quanto tempo aprendes inglês?",
+   "pt_BR": "Há quanto tempo você aprende inglês?",
+   "fr": "Ça fait combien de temps que tu apprends l'anglais ?",
+   "de": "Wie lange lernst du schon Englisch?"
+  }
+ },
+ {
+  "id": "ss-studies-026",
+  "topic": "studies",
+  "level": "A2",
+  "text": {
+   "en": "I don't understand this exercise.",
+   "it": "Non capisco questo esercizio.",
+   "es": "No entiendo este ejercicio.",
+   "pt": "Não percebo este exercício.",
+   "pt_BR": "Não entendo este exercício.",
+   "fr": "Je ne comprends pas cet exercice.",
+   "de": "Ich verstehe diese Aufgabe nicht."
+  }
+ },
+ {
+  "id": "ss-studies-027",
+  "topic": "studies",
+  "level": "A2",
+  "text": {
+   "en": "I take notes during every lecture.",
+   "it": "Prendo appunti durante ogni lezione.",
+   "es": "Tomo apuntes en todas las clases.",
+   "pt": "Tomo apontamentos em todas as aulas.",
+   "pt_BR": "Faço anotações em todas as aulas.",
+   "fr": "Je prends des notes à chaque cours.",
+   "de": "Ich mache mir in jeder Vorlesung Notizen."
+  }
+ },
+ {
+  "id": "ss-studies-028",
+  "topic": "studies",
+  "level": "A2",
+  "text": {
+   "en": "Our teacher gives us a lot of homework.",
+   "it": "La nostra insegnante ci dà molti compiti.",
+   "es": "Nuestra profesora nos pone muchos deberes.",
+   "pt": "A nossa professora dá-nos muitos trabalhos de casa.",
+   "pt_BR": "Nossa professora nos dá muita lição de casa.",
+   "fr": "Notre professeure nous donne beaucoup de devoirs.",
+   "de": "Unsere Lehrerin gibt uns viele Hausaufgaben."
+  }
+ },
+ {
+  "id": "ss-studies-029",
+  "topic": "studies",
+  "level": "A2",
+  "text": {
+   "en": "Which university do you go to?",
+   "it": "A quale università vai?",
+   "es": "¿A qué universidad vas?",
+   "pt": "Em que universidade andas?",
+   "pt_BR": "Em qual faculdade você estuda?",
+   "fr": "Dans quelle université est-ce que tu étudies ?",
+   "de": "An welcher Universität studierst du?"
+  }
+ },
+ {
+  "id": "ss-studies-030",
+  "topic": "studies",
+  "level": "A2",
+  "text": {
+   "en": "I finish my studies next year.",
+   "it": "L'anno prossimo finisco gli studi.",
+   "es": "El año que viene termino mis estudios.",
+   "pt": "No próximo ano termino os estudos.",
+   "pt_BR": "Ano que vem eu termino os estudos.",
+   "fr": "Je termine mes études l'année prochaine.",
+   "de": "Nächstes Jahr schließe ich mein Studium ab."
+  }
+ },
+ {
+  "id": "ss-studies-031",
+  "topic": "studies",
+  "level": "B1",
+  "text": {
+   "en": "I'm thinking about doing a master's degree abroad.",
+   "it": "Sto pensando di fare un master all'estero.",
+   "es": "Estoy pensando en hacer un máster en el extranjero.",
+   "pt": "Estou a pensar em fazer um mestrado no estrangeiro.",
+   "pt_BR": "Estou pensando em fazer um mestrado no exterior.",
+   "fr": "Je pense faire un master à l'étranger.",
+   "de": "Ich überlege, einen Master im Ausland zu machen."
+  }
+ },
+ {
+  "id": "ss-studies-032",
+  "topic": "studies",
+  "level": "B1",
+  "text": {
+   "en": "What is the education system like in your country?",
+   "it": "Com'è il sistema scolastico nel tuo paese?",
+   "es": "¿Cómo es el sistema educativo en tu país?",
+   "pt": "Como é o sistema de ensino no teu país?",
+   "pt_BR": "Como é o sistema de ensino no seu país?",
+   "fr": "Comment fonctionne le système éducatif dans ton pays ?",
+   "de": "Wie ist das Bildungssystem in deinem Land?"
+  }
+ },
+ {
+  "id": "ss-studies-033",
+  "topic": "studies",
+  "level": "B1",
+  "text": {
+   "en": "I find it hard to stay focused when I study at home.",
+   "it": "Faccio fatica a concentrarmi quando studio a casa.",
+   "es": "Me cuesta concentrarme cuando estudio en casa.",
+   "pt": "Custa-me manter a concentração quando estudo em casa.",
+   "pt_BR": "Tenho dificuldade de me concentrar quando estudo em casa.",
+   "fr": "J'ai du mal à rester concentré quand j'étudie à la maison.",
+   "de": "Es fällt mir schwer, mich zu konzentrieren, wenn ich zu Hause lerne."
+  }
+ },
+ {
+  "id": "ss-studies-034",
+  "topic": "studies",
+  "level": "B1",
+  "text": {
+   "en": "Could we practise speaking for twenty minutes every week?",
+   "it": "Potremmo esercitarci a parlare per venti minuti ogni settimana?",
+   "es": "¿Podríamos practicar la conversación veinte minutos cada semana?",
+   "pt": "Podíamos praticar a conversação durante vinte minutos por semana?",
+   "pt_BR": "A gente poderia praticar conversação por vinte minutos toda semana?",
+   "fr": "Est-ce qu'on pourrait s'entraîner à parler vingt minutes chaque semaine ?",
+   "de": "Könnten wir jede Woche zwanzig Minuten Sprechen üben?"
+  }
+ },
+ {
+  "id": "ss-studies-035",
+  "topic": "studies",
+  "level": "B1",
+  "text": {
+   "en": "I'm preparing a presentation for my class on Friday.",
+   "it": "Sto preparando una presentazione per la mia classe di venerdì.",
+   "es": "Estoy preparando una presentación para mi clase del viernes.",
+   "pt": "Estou a preparar uma apresentação para a minha turma de sexta-feira.",
+   "pt_BR": "Estou preparando uma apresentação para a minha turma de sexta-feira.",
+   "fr": "Je prépare un exposé pour mon cours de vendredi.",
+   "de": "Ich bereite eine Präsentation für meinen Kurs am Freitag vor."
+  }
+ },
+ {
+  "id": "ss-studies-036",
+  "topic": "studies",
+  "level": "B1",
+  "text": {
+   "en": "How do students usually choose their degree in your country?",
+   "it": "Come scelgono di solito il corso di laurea gli studenti nel tuo paese?",
+   "es": "¿Cómo suelen elegir su carrera los estudiantes en tu país?",
+   "pt": "Como é que os estudantes costumam escolher o curso no teu país?",
+   "pt_BR": "Como os estudantes costumam escolher o curso no seu país?",
+   "fr": "Comment les étudiants choisissent-ils en général leurs études dans ton pays ?",
+   "de": "Wie wählen Studierende in deinem Land normalerweise ihren Studiengang?"
+  }
+ },
+ {
+  "id": "ss-studies-037",
+  "topic": "studies",
+  "level": "B1",
+  "text": {
+   "en": "I'd like to apply for a scholarship, but I don't know how.",
+   "it": "Vorrei fare domanda per una borsa di studio, ma non so come.",
+   "es": "Me gustaría solicitar una beca, pero no sé cómo.",
+   "pt": "Gostava de me candidatar a uma bolsa de estudo, mas não sei como.",
+   "pt_BR": "Eu gostaria de me candidatar a uma bolsa de estudos, mas não sei como.",
+   "fr": "J'aimerais demander une bourse, mais je ne sais pas comment faire.",
+   "de": "Ich würde mich gern um ein Stipendium bewerben, weiß aber nicht, wie."
+  }
+ },
+ {
+  "id": "ss-studies-038",
+  "topic": "studies",
+  "level": "B1",
+  "text": {
+   "en": "Do you prefer studying alone or in a group?",
+   "it": "Preferisci studiare da solo o in gruppo?",
+   "es": "¿Prefieres estudiar solo o en grupo?",
+   "pt": "Preferes estudar sozinho ou em grupo?",
+   "pt_BR": "Você prefere estudar sozinho ou em grupo?",
+   "fr": "Tu préfères étudier seul ou en groupe ?",
+   "de": "Lernst du lieber allein oder in der Gruppe?"
+  }
+ },
+ {
+  "id": "ss-studies-039",
+  "topic": "studies",
+  "level": "B1",
+  "text": {
+   "en": "I passed my exam, and I'm really happy!",
+   "it": "Ho superato l'esame e sono davvero contento!",
+   "es": "He aprobado el examen y estoy muy contento.",
+   "pt": "Passei no exame e estou mesmo contente!",
+   "pt_BR": "Passei na prova e estou muito feliz!",
+   "fr": "J'ai réussi mon examen et je suis vraiment content !",
+   "de": "Ich habe die Prüfung bestanden und freue mich riesig!"
+  }
+ },
+ {
+  "id": "ss-studies-040",
+  "topic": "studies",
+  "level": "B1",
+  "text": {
+   "en": "Could you correct my mistakes when I write to you?",
+   "it": "Potresti correggere i miei errori quando ti scrivo?",
+   "es": "¿Podrías corregirme los errores cuando te escriba?",
+   "pt": "Podes corrigir-me os erros quando te escrevo?",
+   "pt_BR": "Você poderia corrigir meus erros quando eu escrever para você?",
+   "fr": "Pourrais-tu corriger mes erreurs quand je t'écris ?",
+   "de": "Könntest du meine Fehler korrigieren, wenn ich dir schreibe?"
+  }
+ },
+ {
+  "id": "ss-studies-041",
+  "topic": "studies",
+  "level": "B1",
+  "text": {
+   "en": "I'm doing an internship as part of my course.",
+   "it": "Sto facendo un tirocinio come parte del mio corso.",
+   "es": "Estoy haciendo unas prácticas como parte de mi carrera.",
+   "pt": "Estou a fazer um estágio como parte do meu curso.",
+   "pt_BR": "Estou fazendo um estágio como parte do meu curso.",
+   "fr": "Je fais un stage dans le cadre de ma formation.",
+   "de": "Ich mache ein Praktikum im Rahmen meines Studiums."
+  }
+ },
+ {
+  "id": "ss-studies-042",
+  "topic": "studies",
+  "level": "B1",
+  "text": {
+   "en": "What was your favourite subject at school?",
+   "it": "Qual era la tua materia preferita a scuola?",
+   "es": "¿Cuál era tu asignatura favorita en el colegio?",
+   "pt": "Qual era a tua disciplina preferida na escola?",
+   "pt_BR": "Qual era a sua matéria favorita na escola?",
+   "fr": "Quelle était ta matière préférée à l'école ?",
+   "de": "Was war dein Lieblingsfach in der Schule?"
+  }
+ },
+ {
+  "id": "ss-studies-043",
+  "topic": "studies",
+  "level": "B2",
+  "text": {
+   "en": "I'm struggling to balance my studies with a part-time job.",
+   "it": "Faccio fatica a conciliare lo studio con un lavoro part-time.",
+   "es": "Me cuesta compaginar los estudios con un trabajo a tiempo parcial.",
+   "pt": "Tenho dificuldade em conciliar os estudos com um trabalho a tempo parcial.",
+   "pt_BR": "Estou com dificuldade de conciliar os estudos com um trabalho de meio período.",
+   "fr": "J'ai du mal à concilier mes études et un travail à temps partiel.",
+   "de": "Es fällt mir schwer, mein Studium mit einem Teilzeitjob zu vereinbaren."
+  }
+ },
+ {
+  "id": "ss-studies-044",
+  "topic": "studies",
+  "level": "B2",
+  "text": {
+   "en": "My thesis is about language learning, and I'd love to hear your experience.",
+   "it": "La mia tesi riguarda l'apprendimento delle lingue e mi piacerebbe sentire la tua esperienza.",
+   "es": "Mi tesis trata sobre el aprendizaje de idiomas y me encantaría conocer tu experiencia.",
+   "pt": "A minha tese é sobre a aprendizagem de línguas e gostava muito de ouvir a tua experiência.",
+   "pt_BR": "Minha tese é sobre o aprendizado de idiomas e eu adoraria ouvir a sua experiência.",
+   "fr": "Ma thèse porte sur l'apprentissage des langues et j'aimerais beaucoup entendre ton expérience.",
+   "de": "In meiner Abschlussarbeit geht es um das Sprachenlernen, und ich würde gern von deinen Erfahrungen hören."
+  }
+ },
+ {
+  "id": "ss-studies-045",
+  "topic": "studies",
+  "level": "B2",
+  "text": {
+   "en": "It would be great if you could give me feedback on my pronunciation.",
+   "it": "Sarebbe fantastico se potessi darmi un parere sulla mia pronuncia.",
+   "es": "Sería genial que me dieras tu opinión sobre mi pronunciación.",
+   "pt": "Era ótimo se me pudesses dar a tua opinião sobre a minha pronúncia.",
+   "pt_BR": "Seria ótimo se você pudesse me dar um feedback sobre a minha pronúncia.",
+   "fr": "Ce serait génial si tu pouvais me donner ton avis sur ma prononciation.",
+   "de": "Es wäre toll, wenn du mir Feedback zu meiner Aussprache geben könntest."
+  }
+ },
+ {
+  "id": "ss-studies-046",
+  "topic": "studies",
+  "level": "B2",
+  "text": {
+   "en": "I think learning by talking to real people is more effective than only using textbooks.",
+   "it": "Penso che imparare parlando con persone reali sia più efficace che usare solo i libri di testo.",
+   "es": "Creo que aprender hablando con gente real es más eficaz que usar solo libros de texto.",
+   "pt": "Acho que aprender a falar com pessoas reais é mais eficaz do que usar apenas manuais.",
+   "pt_BR": "Acho que aprender conversando com pessoas reais é mais eficaz do que usar só livros didáticos.",
+   "fr": "Je pense qu'apprendre en parlant avec de vraies personnes est plus efficace que d'utiliser uniquement des manuels.",
+   "de": "Ich glaube, dass Lernen im Gespräch mit echten Menschen effektiver ist, als nur mit Lehrbüchern zu arbeiten."
+  }
+ },
+ {
+  "id": "ss-studies-047",
+  "topic": "studies",
+  "level": "B2",
+  "text": {
+   "en": "I'm wondering whether to specialise in one field or keep my options open.",
+   "it": "Mi chiedo se specializzarmi in un campo o tenere aperte le mie opzioni.",
+   "es": "Me pregunto si especializarme en un campo o mantener mis opciones abiertas.",
+   "pt": "Pergunto-me se devo especializar-me numa área ou manter as minhas opções em aberto.",
+   "pt_BR": "Estou me perguntando se devo me especializar em uma área ou manter minhas opções em aberto.",
+   "fr": "Je me demande si je dois me spécialiser dans un domaine ou garder mes options ouvertes.",
+   "de": "Ich frage mich, ob ich mich auf ein Gebiet spezialisieren oder mir alle Möglichkeiten offenhalten soll."
+  }
+ },
+ {
+  "id": "ss-studies-048",
+  "topic": "studies",
+  "level": "B2",
+  "text": {
+   "en": "Could you recommend some good resources for improving my vocabulary?",
+   "it": "Potresti consigliarmi delle buone risorse per migliorare il mio vocabolario?",
+   "es": "¿Podrías recomendarme buenos recursos para mejorar mi vocabulario?",
+   "pt": "Podes recomendar-me bons recursos para melhorar o meu vocabulário?",
+   "pt_BR": "Você poderia me recomendar bons recursos para melhorar meu vocabulário?",
+   "fr": "Pourrais-tu me recommander de bonnes ressources pour enrichir mon vocabulaire ?",
+   "de": "Könntest du mir gute Materialien empfehlen, um meinen Wortschatz zu verbessern?"
+  }
+ },
+ {
+  "id": "ss-studies-049",
+  "topic": "studies",
+  "level": "B2",
+  "text": {
+   "en": "The deadline for my research project is approaching, and I still have a lot to do.",
+   "it": "La scadenza del mio progetto di ricerca si avvicina e ho ancora molto da fare.",
+   "es": "Se acerca la fecha de entrega de mi proyecto de investigación y aún me queda mucho por hacer.",
+   "pt": "O prazo do meu projeto de investigação aproxima-se e ainda tenho muito para fazer.",
+   "pt_BR": "O prazo do meu projeto de pesquisa está chegando e ainda tenho muito a fazer.",
+   "fr": "La date limite de mon projet de recherche approche et il me reste encore beaucoup à faire.",
+   "de": "Die Abgabefrist für mein Forschungsprojekt rückt näher, und ich habe noch viel zu tun."
+  }
+ },
+ {
+  "id": "ss-studies-050",
+  "topic": "studies",
+  "level": "B2",
+  "text": {
+   "en": "I've always wanted to study abroad, so any advice would be really helpful.",
+   "it": "Ho sempre voluto studiare all'estero, quindi qualsiasi consiglio mi sarebbe davvero utile.",
+   "es": "Siempre he querido estudiar en el extranjero, así que cualquier consejo me vendría genial.",
+   "pt": "Sempre quis estudar no estrangeiro, por isso qualquer conselho seria muito útil.",
+   "pt_BR": "Sempre quis estudar no exterior, então qualquer conselho seria muito útil.",
+   "fr": "J'ai toujours voulu étudier à l'étranger, donc tous tes conseils me seraient très utiles.",
+   "de": "Ich wollte schon immer im Ausland studieren, daher wäre mir jeder Rat eine große Hilfe."
+  }
+ }
+]

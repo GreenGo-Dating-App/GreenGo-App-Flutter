@@ -1,0 +1,1302 @@
+[
+ {
+  "id": "ib-hobbies_creativity-001",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What hobby could you happily spend a whole weekend on without noticing the time?",
+   "it": "Qual hobby potresti portare avanti per un intero weekend senza accorgerti del tempo che passa?",
+   "es": "¿Qué afición podrías practicar un fin de semana entero sin darte cuenta de cómo pasa el tiempo?",
+   "pt": "Que passatempo conseguirias fazer um fim de semana inteiro sem dares pelo tempo passar?",
+   "pt_BR": "Que hobby você conseguiria curtir um fim de semana inteiro sem perceber o tempo passar?",
+   "fr": "Quel loisir pourrais-tu pratiquer tout un week-end sans voir le temps passer ?",
+   "de": "Welches Hobby könntest du ein ganzes Wochenende lang machen, ohne zu merken, wie die Zeit vergeht?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-002",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Have you made something with your hands recently that you're proud of?",
+   "it": "Hai fatto qualcosa con le tue mani di recente di cui vai fiero?",
+   "es": "¿Has hecho algo con tus manos últimamente de lo que te sientas orgulloso?",
+   "pt": "Fizeste algo com as tuas mãos recentemente de que te orgulhes?",
+   "pt_BR": "Você fez alguma coisa com as próprias mãos recentemente que te deixou orgulhoso?",
+   "fr": "As-tu fabriqué quelque chose de tes mains récemment dont tu es fier ?",
+   "de": "Hast du in letzter Zeit etwas mit deinen eigenen Händen gemacht, auf das du stolz bist?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-003",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What's a creative project you've been dreaming of starting?",
+   "it": "Qual è un progetto creativo che sogni di iniziare da tempo?",
+   "es": "¿Qué proyecto creativo llevas tiempo soñando con empezar?",
+   "pt": "Que projeto criativo andas a sonhar começar há algum tempo?",
+   "pt_BR": "Qual é o projeto criativo que você sonha em começar há tempos?",
+   "fr": "Quel projet créatif rêves-tu de lancer depuis un moment ?",
+   "de": "Von welchem kreativen Projekt träumst du schon lange, es endlich anzufangen?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-004",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "If you could master any art or craft overnight, which would it be?",
+   "it": "Se potessi diventare esperto di un'arte o di un mestiere dall'oggi al domani, quale sceglieresti?",
+   "es": "Si pudieras dominar de la noche a la mañana cualquier arte u oficio, ¿cuál elegirías?",
+   "pt": "Se pudesses dominar uma arte ou ofício de um dia para o outro, qual escolherias?",
+   "pt_BR": "Se você pudesse dominar uma arte ou ofício da noite para o dia, qual escolheria?",
+   "fr": "Si tu pouvais maîtriser un art ou un artisanat du jour au lendemain, lequel choisirais-tu ?",
+   "de": "Wenn du über Nacht eine Kunst oder ein Handwerk perfekt beherrschen könntest, welches wäre es?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-005",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What's the last thing you learned to do just for fun?",
+   "it": "Qual è l'ultima cosa che hai imparato a fare solo per divertimento?",
+   "es": "¿Qué es lo último que aprendiste a hacer solo por diversión?",
+   "pt": "Qual foi a última coisa que aprendeste a fazer só por diversão?",
+   "pt_BR": "Qual foi a última coisa que você aprendeu a fazer só por diversão?",
+   "fr": "Quelle est la dernière chose que tu as apprise juste pour le plaisir ?",
+   "de": "Was hast du zuletzt einfach nur aus Spaß gelernt?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-006",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Do you play an instrument, or is there one you'd love to learn?",
+   "it": "Suoni uno strumento o ce n'è uno che ti piacerebbe imparare?",
+   "es": "¿Tocas algún instrumento o hay alguno que te gustaría aprender?",
+   "pt": "Tocas algum instrumento ou há algum que gostasses de aprender?",
+   "pt_BR": "Você toca algum instrumento ou tem algum que gostaria de aprender?",
+   "fr": "Joues-tu d'un instrument, ou y en a-t-il un que tu aimerais apprendre ?",
+   "de": "Spielst du ein Instrument, oder gibt es eines, das du gern lernen würdest?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-007",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What kind of music do you put on when you want to create or focus?",
+   "it": "Che tipo di musica metti quando vuoi creare o concentrarti?",
+   "es": "¿Qué tipo de música pones cuando quieres crear o concentrarte?",
+   "pt": "Que tipo de música pões quando queres criar ou concentrar-te?",
+   "pt_BR": "Que tipo de música você coloca quando quer criar ou se concentrar?",
+   "fr": "Quel genre de musique mets-tu quand tu veux créer ou te concentrer ?",
+   "de": "Welche Musik legst du auf, wenn du kreativ sein oder dich konzentrieren willst?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-008",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Is there a traditional craft from your region that people still practice?",
+   "it": "C'è un mestiere artigianale tradizionale della tua zona che si pratica ancora oggi?",
+   "es": "¿Hay alguna artesanía tradicional de tu región que todavía se practique?",
+   "pt": "Há algum artesanato tradicional da tua região que ainda se pratique?",
+   "pt_BR": "Existe algum artesanato tradicional da sua região que as pessoas ainda praticam?",
+   "fr": "Y a-t-il un artisanat traditionnel de ta région que l'on pratique encore ?",
+   "de": "Gibt es in deiner Region ein traditionelles Handwerk, das heute noch ausgeübt wird?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-009",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What's the best thing you've ever cooked or baked from scratch?",
+   "it": "Qual è la cosa migliore che hai cucinato o infornato partendo da zero?",
+   "es": "¿Qué es lo mejor que has cocinado u horneado desde cero?",
+   "pt": "Qual é a melhor coisa que já cozinhaste ou fizeste no forno de raiz?",
+   "pt_BR": "Qual é a melhor coisa que você já cozinhou ou assou do zero?",
+   "fr": "Quelle est la meilleure chose que tu aies jamais cuisinée ou pâtissée de A à Z ?",
+   "de": "Was ist das Beste, das du jemals von Grund auf gekocht oder gebacken hast?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-010",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Do you draw or doodle? What do you usually end up sketching?",
+   "it": "Disegni o scarabocchi? Che cosa finisci di solito per schizzare?",
+   "es": "¿Dibujas o garabateas? ¿Qué sueles terminar dibujando?",
+   "pt": "Desenhas ou fazes rabiscos? O que costumas acabar por desenhar?",
+   "pt_BR": "Você desenha ou rabisca? O que costuma acabar desenhando?",
+   "fr": "Tu dessines ou tu griffonnes ? Qu'est-ce que tu finis souvent par croquer ?",
+   "de": "Zeichnest oder kritzelst du? Was landet meistens auf dem Papier?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-011",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What book, film or song has recently sparked an idea for you?",
+   "it": "Quale libro, film o canzone ti ha dato di recente un'idea?",
+   "es": "¿Qué libro, película o canción te ha dado una idea últimamente?",
+   "pt": "Que livro, filme ou música te deu recentemente uma ideia?",
+   "pt_BR": "Que livro, filme ou música te deu uma ideia recentemente?",
+   "fr": "Quel livre, film ou chanson t'a récemment donné une idée ?",
+   "de": "Welches Buch, welcher Film oder welcher Song hat dich zuletzt auf eine Idee gebracht?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-012",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What hobby of yours surprises people when they find out?",
+   "it": "Quale tuo hobby sorprende le persone quando lo scoprono?",
+   "es": "¿Qué afición tuya sorprende a la gente cuando se entera?",
+   "pt": "Que passatempo teu surpreende as pessoas quando descobrem?",
+   "pt_BR": "Qual hobby seu surpreende as pessoas quando elas descobrem?",
+   "fr": "Quel est ton loisir qui surprend les gens quand ils le découvrent ?",
+   "de": "Welches deiner Hobbys überrascht die Leute, wenn sie davon erfahren?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-013",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Is there a skill you inherited from a parent or grandparent?",
+   "it": "C'è un'abilità che hai ereditato da un genitore o da un nonno?",
+   "es": "¿Hay alguna habilidad que hayas heredado de tus padres o abuelos?",
+   "pt": "Há alguma habilidade que herdaste de um dos teus pais ou avós?",
+   "pt_BR": "Existe alguma habilidade que você herdou de um dos seus pais ou avós?",
+   "fr": "Y a-t-il un savoir-faire que tu as hérité d'un parent ou d'un grand-parent ?",
+   "de": "Gibt es eine Fähigkeit, die du von einem Elternteil oder den Großeltern geerbt hast?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-014",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What's your favorite way to relax creatively after a long day?",
+   "it": "Qual è il tuo modo preferito per rilassarti in modo creativo dopo una lunga giornata?",
+   "es": "¿Cuál es tu forma favorita de relajarte creando algo después de un día largo?",
+   "pt": "Qual é a tua forma preferida de relaxar de forma criativa depois de um dia longo?",
+   "pt_BR": "Qual é o seu jeito favorito de relaxar de forma criativa depois de um dia longo?",
+   "fr": "Quelle est ta façon préférée de te détendre en créant après une longue journée ?",
+   "de": "Wie entspannst du dich nach einem langen Tag am liebsten auf kreative Weise?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-015",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Do you take photos? What's the story behind a favorite picture of yours?",
+   "it": "Fai fotografie? Qual è la storia dietro una tua foto preferita?",
+   "es": "¿Haces fotos? ¿Cuál es la historia detrás de una de tus fotos favoritas?",
+   "pt": "Tiras fotografias? Qual é a história por trás de uma das tuas fotos preferidas?",
+   "pt_BR": "Você tira fotos? Qual é a história por trás de uma das suas fotos favoritas?",
+   "fr": "Tu prends des photos ? Quelle est l'histoire derrière l'une de tes photos préférées ?",
+   "de": "Fotografierst du? Welche Geschichte steckt hinter einem deiner Lieblingsfotos?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-016",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What would you build if you had a free workshop and a month?",
+   "it": "Che cosa costruiresti se avessi un laboratorio a disposizione e un mese di tempo?",
+   "es": "¿Qué construirías si tuvieras un taller libre y un mes entero?",
+   "pt": "O que construirias se tivesses uma oficina livre e um mês inteiro?",
+   "pt_BR": "O que você construiria se tivesse uma oficina livre e um mês inteiro?",
+   "fr": "Que construirais-tu si tu avais un atelier à disposition et un mois devant toi ?",
+   "de": "Was würdest du bauen, wenn du eine freie Werkstatt und einen Monat Zeit hättest?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-017",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Which hobby did you try once and fall in love with?",
+   "it": "Quale hobby hai provato una volta e di cui ti sei innamorato?",
+   "es": "¿Qué afición probaste una vez y te enamoró?",
+   "pt": "Que passatempo experimentaste uma vez e acabaste por adorar?",
+   "pt_BR": "Qual hobby você experimentou uma vez e se apaixonou?",
+   "fr": "Quel loisir as-tu essayé une fois et adoré tout de suite ?",
+   "de": "Welches Hobby hast du einmal ausprobiert und sofort geliebt?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-018",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Do you write anything, like stories, poems or a journal?",
+   "it": "Scrivi qualcosa, come racconti, poesie o un diario?",
+   "es": "¿Escribes algo, como cuentos, poemas o un diario?",
+   "pt": "Escreves alguma coisa, como contos, poemas ou um diário?",
+   "pt_BR": "Você escreve alguma coisa, como contos, poemas ou um diário?",
+   "fr": "Écris-tu quelque chose, comme des histoires, des poèmes ou un journal ?",
+   "de": "Schreibst du etwas, zum Beispiel Geschichten, Gedichte oder ein Tagebuch?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-019",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What's a hobby you tried and were terrible at, but enjoyed anyway?",
+   "it": "Qual è un hobby in cui eri un disastro ma che ti è piaciuto lo stesso?",
+   "es": "¿Qué afición probaste en la que eras malísimo, pero que disfrutaste igualmente?",
+   "pt": "Qual foi um passatempo em que eras péssimo, mas de que gostaste na mesma?",
+   "pt_BR": "Qual foi um hobby em que você era péssimo, mas que curtiu mesmo assim?",
+   "fr": "Quel est un loisir où tu étais nul mais qui t'a plu quand même ?",
+   "de": "Welches Hobby hast du ausprobiert, obwohl du darin schrecklich warst, und trotzdem genossen?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-020",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Is there a local fair in your town where artists and makers show their work?",
+   "it": "Nella tua città c'è una fiera locale dove artisti e artigiani mostrano i loro lavori?",
+   "es": "¿Hay en tu ciudad alguna feria local donde artistas y artesanos muestren su trabajo?",
+   "pt": "Há na tua cidade alguma feira local onde artistas e artesãos mostrem o seu trabalho?",
+   "pt_BR": "Tem na sua cidade alguma feira local onde artistas e artesãos mostram seus trabalhos?",
+   "fr": "Y a-t-il dans ta ville un marché ou une foire où artistes et artisans exposent leurs créations ?",
+   "de": "Gibt es in deiner Stadt einen Markt, auf dem Künstler und Handwerker ihre Arbeiten zeigen?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-021",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What's the most patient hobby you know of: knitting, puzzles, gardening?",
+   "it": "Qual è l'hobby che richiede più pazienza che conosci: maglia, puzzle, giardinaggio?",
+   "es": "¿Cuál es la afición que más paciencia requiere: tejer, puzles, jardinería?",
+   "pt": "Qual é o passatempo que exige mais paciência: tricô, puzzles, jardinagem?",
+   "pt_BR": "Qual é o hobby que mais exige paciência: tricô, quebra-cabeças, jardinagem?",
+   "fr": "Quel est le loisir qui demande le plus de patience : tricot, puzzles, jardinage ?",
+   "de": "Welches Hobby verlangt am meisten Geduld: Stricken, Puzzeln, Gärtnern?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-022",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Do you collect anything, and what's the story of your favorite piece?",
+   "it": "Collezioni qualcosa? Qual è la storia del tuo pezzo preferito?",
+   "es": "¿Coleccionas algo? ¿Cuál es la historia de tu pieza favorita?",
+   "pt": "Coleccionas alguma coisa? Qual é a história da tua peça preferida?",
+   "pt_BR": "Você coleciona alguma coisa? Qual é a história da sua peça favorita?",
+   "fr": "Collectionnes-tu quelque chose ? Quelle est l'histoire de ta pièce préférée ?",
+   "de": "Sammelst du etwas, und welche Geschichte hat dein Lieblingsstück?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-023",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What's a song you'd love to learn to play or sing?",
+   "it": "Qual è una canzone che ti piacerebbe imparare a suonare o cantare?",
+   "es": "¿Qué canción te encantaría aprender a tocar o cantar?",
+   "pt": "Que música gostarias de aprender a tocar ou cantar?",
+   "pt_BR": "Que música você adoraria aprender a tocar ou cantar?",
+   "fr": "Quelle chanson aimerais-tu apprendre à jouer ou à chanter ?",
+   "de": "Welches Lied würdest du gern spielen oder singen können?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-024",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Have you ever tried pottery, painting or woodworking? How did it go?",
+   "it": "Hai mai provato la ceramica, la pittura o la falegnameria? Com'è andata?",
+   "es": "¿Has probado alguna vez la cerámica, la pintura o la carpintería? ¿Cómo te fue?",
+   "pt": "Alguma vez experimentaste cerâmica, pintura ou carpintaria? Como correu?",
+   "pt_BR": "Você já experimentou cerâmica, pintura ou marcenaria? Como foi?",
+   "fr": "As-tu déjà essayé la poterie, la peinture ou la menuiserie ? Comment ça s'est passé ?",
+   "de": "Hast du schon mal Töpfern, Malen oder Holzarbeiten ausprobiert? Wie lief es?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-025",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Which museum or gallery has inspired you the most?",
+   "it": "Quale museo o galleria ti ha ispirato di più?",
+   "es": "¿Qué museo o galería te ha inspirado más?",
+   "pt": "Que museu ou galeria te inspirou mais?",
+   "pt_BR": "Qual museu ou galeria mais inspirou você?",
+   "fr": "Quel musée ou quelle galerie t'a le plus inspiré ?",
+   "de": "Welches Museum oder welche Galerie hat dich am meisten inspiriert?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-026",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What's a board game or card game you could teach me in five minutes?",
+   "it": "Qual è un gioco da tavolo o di carte che potresti insegnarmi in cinque minuti?",
+   "es": "¿Qué juego de mesa o de cartas podrías enseñarme en cinco minutos?",
+   "pt": "Que jogo de tabuleiro ou de cartas me poderias ensinar em cinco minutos?",
+   "pt_BR": "Que jogo de tabuleiro ou de cartas você poderia me ensinar em cinco minutos?",
+   "fr": "Quel jeu de société ou de cartes pourrais-tu m'apprendre en cinq minutes ?",
+   "de": "Welches Brett- oder Kartenspiel könntest du mir in fünf Minuten beibringen?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-027",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "How did you first get into your favorite hobby?",
+   "it": "Come hai iniziato con il tuo hobby preferito?",
+   "es": "¿Cómo empezaste con tu afición favorita?",
+   "pt": "Como começaste o teu passatempo preferido?",
+   "pt_BR": "Como você começou no seu hobby favorito?",
+   "fr": "Comment as-tu découvert ton loisir préféré ?",
+   "de": "Wie bist du zu deinem Lieblingshobby gekommen?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-028",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What's a creative tradition your family keeps at holidays?",
+   "it": "Qual è una tradizione creativa che la tua famiglia mantiene durante le feste?",
+   "es": "¿Qué tradición creativa mantiene tu familia en las fiestas?",
+   "pt": "Que tradição criativa a tua família mantém nas festas?",
+   "pt_BR": "Qual tradição criativa a sua família mantém nas festas de fim de ano?",
+   "fr": "Quelle tradition créative ta famille perpétue-t-elle pendant les fêtes ?",
+   "de": "Welche kreative Tradition pflegt deine Familie an Feiertagen?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-029",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "If you opened a small workshop or studio, what would it make?",
+   "it": "Se aprissi un piccolo laboratorio o studio, che cosa produrrebbe?",
+   "es": "Si abrieras un pequeño taller o estudio, ¿qué haría?",
+   "pt": "Se abrisses uma pequena oficina ou estúdio, o que produziria?",
+   "pt_BR": "Se você abrisse uma pequena oficina ou ateliê, o que ela produziria?",
+   "fr": "Si tu ouvrais un petit atelier, que fabriquerait-il ?",
+   "de": "Wenn du eine kleine Werkstatt oder ein Atelier eröffnen würdest, was würde dort entstehen?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-030",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Do you dance, and what style would you love to try?",
+   "it": "Balli? E quale stile ti piacerebbe provare?",
+   "es": "¿Bailas? ¿Y qué estilo te gustaría probar?",
+   "pt": "Danças? E que estilo gostarias de experimentar?",
+   "pt_BR": "Você dança? E que estilo adoraria experimentar?",
+   "fr": "Tu danses ? Et quel style aimerais-tu essayer ?",
+   "de": "Tanzt du, und welchen Stil würdest du gern mal ausprobieren?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-031",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What's the most useful thing you've ever made yourself?",
+   "it": "Qual è la cosa più utile che ti sei fatto da solo?",
+   "es": "¿Cuál es la cosa más útil que has hecho tú mismo?",
+   "pt": "Qual é a coisa mais útil que já fizeste tu mesmo?",
+   "pt_BR": "Qual é a coisa mais útil que você já fez com as próprias mãos?",
+   "fr": "Quelle est la chose la plus utile que tu aies fabriquée toi-même ?",
+   "de": "Was ist das Nützlichste, das du jemals selbst gemacht hast?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-032",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Have you ever turned a hobby into a little side project or shop?",
+   "it": "Hai mai trasformato un hobby in un piccolo progetto parallelo o in un negozietto?",
+   "es": "¿Alguna vez has convertido una afición en un pequeño proyecto o tienda?",
+   "pt": "Alguma vez transformaste um passatempo num pequeno projeto paralelo ou loja?",
+   "pt_BR": "Você já transformou um hobby em um pequeno projeto paralelo ou loja?",
+   "fr": "As-tu déjà transformé un loisir en petit projet ou en petite boutique ?",
+   "de": "Hast du aus einem Hobby schon mal ein kleines Nebenprojekt oder einen Shop gemacht?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-033",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Which hobby do you think everyone should try at least once?",
+   "it": "Quale hobby pensi che tutti dovrebbero provare almeno una volta?",
+   "es": "¿Qué afición crees que todo el mundo debería probar al menos una vez?",
+   "pt": "Que passatempo achas que toda a gente devia experimentar pelo menos uma vez?",
+   "pt_BR": "Qual hobby você acha que todo mundo deveria experimentar pelo menos uma vez?",
+   "fr": "Quel loisir tout le monde devrait-il essayer au moins une fois, selon toi ?",
+   "de": "Welches Hobby sollte deiner Meinung nach jeder mindestens einmal ausprobieren?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-034",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Do you have a creative corner at home? What does it look like?",
+   "it": "Hai un angolo creativo a casa? Com'è fatto?",
+   "es": "¿Tienes un rincón creativo en casa? ¿Cómo es?",
+   "pt": "Tens um cantinho criativo em casa? Como é?",
+   "pt_BR": "Você tem um cantinho criativo em casa? Como ele é?",
+   "fr": "As-tu un coin créatif chez toi ? À quoi ressemble-t-il ?",
+   "de": "Hast du zu Hause eine kreative Ecke? Wie sieht sie aus?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-035",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What's one handmade gift you've given or received that stuck with you?",
+   "it": "Qual è un regalo fatto a mano che hai dato o ricevuto e che ti è rimasto nel cuore?",
+   "es": "¿Qué regalo hecho a mano has dado o recibido que se te haya quedado grabado?",
+   "pt": "Que presente feito à mão deste ou recebeste e ficou contigo?",
+   "pt_BR": "Que presente feito à mão você deu ou recebeu e nunca esqueceu?",
+   "fr": "Quel cadeau fait main as-tu offert ou reçu et t'a marqué ?",
+   "de": "Welches selbstgemachte Geschenk, das du verschenkt oder bekommen hast, ist dir in Erinnerung geblieben?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-036",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What's something you're slowly getting better at these days?",
+   "it": "In che cosa stai migliorando piano piano in questo periodo?",
+   "es": "¿En qué estás mejorando poco a poco últimamente?",
+   "pt": "Em que estás a melhorar aos poucos nos últimos tempos?",
+   "pt_BR": "Em que você está melhorando aos poucos ultimamente?",
+   "fr": "Dans quoi progresses-tu doucement ces temps-ci ?",
+   "de": "Worin wirst du in letzter Zeit langsam besser?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-037",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Are there traditional songs or dances from your area that you enjoy?",
+   "it": "Ci sono canzoni o danze tradizionali della tua zona che ti piacciono?",
+   "es": "¿Hay canciones o bailes tradicionales de tu zona que disfrutes?",
+   "pt": "Há canções ou danças tradicionais da tua zona de que gostes?",
+   "pt_BR": "Existem músicas ou danças tradicionais da sua região de que você gosta?",
+   "fr": "Existe-t-il des chansons ou des danses traditionnelles de ta région que tu aimes ?",
+   "de": "Gibt es traditionelle Lieder oder Tänze aus deiner Gegend, die du gern magst?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-038",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Do you like jigsaw puzzles, crosswords or other brain games?",
+   "it": "Ti piacciono i puzzle, le parole crociate o altri giochi di logica?",
+   "es": "¿Te gustan los puzles, los crucigramas u otros juegos de ingenio?",
+   "pt": "Gostas de puzzles, de palavras cruzadas ou de outros jogos de raciocínio?",
+   "pt_BR": "Você gosta de quebra-cabeças, palavras cruzadas ou outros jogos de raciocínio?",
+   "fr": "Aimes-tu les puzzles, les mots croisés ou d'autres jeux de réflexion ?",
+   "de": "Magst du Puzzles, Kreuzworträtsel oder andere Denkspiele?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-039",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What fictional world would you love to draw, write or build?",
+   "it": "Quale mondo immaginario ti piacerebbe disegnare, scrivere o costruire?",
+   "es": "¿Qué mundo ficticio te encantaría dibujar, escribir o construir?",
+   "pt": "Que mundo fictício gostarias de desenhar, escrever ou construir?",
+   "pt_BR": "Que mundo fictício você adoraria desenhar, escrever ou construir?",
+   "fr": "Quel monde imaginaire aimerais-tu dessiner, écrire ou construire ?",
+   "de": "Welche erfundene Welt würdest du gern zeichnen, schreiben oder bauen?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-040",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Which artist or maker do you admire most, and why?",
+   "it": "Quale artista o artigiano ammiri di più, e perché?",
+   "es": "¿Qué artista o artesano admiras más y por qué?",
+   "pt": "Que artista ou artesão admiras mais, e porquê?",
+   "pt_BR": "Qual artista ou artesão você mais admira, e por quê?",
+   "fr": "Quel artiste ou artisan admires-tu le plus, et pourquoi ?",
+   "de": "Welchen Künstler oder Handwerker bewunderst du am meisten, und warum?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-041",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What hobby would you take up if money and time weren't a problem?",
+   "it": "Quale hobby inizieresti se denaro e tempo non fossero un problema?",
+   "es": "¿Qué afición empezarías si el dinero y el tiempo no fueran un problema?",
+   "pt": "Que passatempo começarias se o dinheiro e o tempo não fossem problema?",
+   "pt_BR": "Que hobby você começaria se dinheiro e tempo não fossem um problema?",
+   "fr": "Quel loisir te lancerais-tu si l'argent et le temps n'étaient pas un problème ?",
+   "de": "Welches Hobby würdest du anfangen, wenn Geld und Zeit keine Rolle spielten?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-042",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Have you ever made a video, a podcast or a blog? What was it about?",
+   "it": "Hai mai fatto un video, un podcast o un blog? Di che parlava?",
+   "es": "¿Has hecho alguna vez un vídeo, un pódcast o un blog? ¿De qué trataba?",
+   "pt": "Já fizeste um vídeo, um podcast ou um blogue? Sobre o quê?",
+   "pt_BR": "Você já fez um vídeo, um podcast ou um blog? Sobre o quê?",
+   "fr": "As-tu déjà réalisé une vidéo, un podcast ou un blog ? Sur quoi ?",
+   "de": "Hast du schon mal ein Video, einen Podcast oder einen Blog gemacht? Worum ging es?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-043",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What's the best thing you've fixed or upcycled instead of throwing away?",
+   "it": "Qual è la cosa migliore che hai riparato o riciclato in modo creativo invece di buttarla?",
+   "es": "¿Qué es lo mejor que has arreglado o reciclado en lugar de tirarlo?",
+   "pt": "Qual é a melhor coisa que arranjaste ou reaproveitaste em vez de deitar fora?",
+   "pt_BR": "Qual é a melhor coisa que você consertou ou reaproveitou em vez de jogar fora?",
+   "fr": "Quelle est la meilleure chose que tu aies réparée ou détournée au lieu de la jeter ?",
+   "de": "Was ist das Beste, das du repariert oder umfunktioniert hast, statt es wegzuwerfen?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-044",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Do you prefer creating alone, or with friends?",
+   "it": "Preferisci creare da solo o con gli amici?",
+   "es": "¿Prefieres crear solo o con amigos?",
+   "pt": "Preferes criar sozinho ou com amigos?",
+   "pt_BR": "Você prefere criar sozinho ou com amigos?",
+   "fr": "Préfères-tu créer seul ou avec des amis ?",
+   "de": "Bist du lieber allein kreativ oder mit Freunden?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-045",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What's a craft from your culture you'd love to teach me?",
+   "it": "Qual è un mestiere artigianale della tua cultura che ti piacerebbe insegnarmi?",
+   "es": "¿Qué artesanía de tu cultura te encantaría enseñarme?",
+   "pt": "Que artesanato da tua cultura gostarias de me ensinar?",
+   "pt_BR": "Que artesanato da sua cultura você adoraria me ensinar?",
+   "fr": "Quel artisanat de ta culture aimerais-tu m'apprendre ?",
+   "de": "Welches Handwerk aus deiner Kultur würdest du mir gern beibringen?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-046",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What's the strangest material you've ever made art or crafts from?",
+   "it": "Qual è il materiale più strano con cui hai fatto arte o lavoretti?",
+   "es": "¿Cuál es el material más raro con el que has hecho arte o manualidades?",
+   "pt": "Qual é o material mais estranho com que já fizeste arte ou trabalhos manuais?",
+   "pt_BR": "Qual é o material mais estranho com que você já fez arte ou artesanato?",
+   "fr": "Quel est le matériau le plus étrange avec lequel tu aies créé de l'art ou du bricolage ?",
+   "de": "Was ist das seltsamste Material, aus dem du jemals etwas gebastelt oder gestaltet hast?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-047",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Have you ever learned a skill from a video tutorial? How did it turn out?",
+   "it": "Hai mai imparato un'abilità con un video tutorial? Com'è andata?",
+   "es": "¿Has aprendido alguna vez una habilidad con un videotutorial? ¿Cómo salió?",
+   "pt": "Alguma vez aprendeste uma competência com um vídeo tutorial? Como correu?",
+   "pt_BR": "Você já aprendeu alguma habilidade com um vídeo tutorial? Deu certo?",
+   "fr": "As-tu déjà appris une compétence grâce à un tutoriel vidéo ? Qu'est-ce que ça a donné ?",
+   "de": "Hast du schon mal etwas mit einem Video-Tutorial gelernt? Wie ist es gelaufen?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-048",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Do you do any sewing, embroidery or other fabric crafts?",
+   "it": "Ti dedichi al cucito, al ricamo o ad altri lavori con la stoffa?",
+   "es": "¿Haces costura, bordado u otras manualidades con tela?",
+   "pt": "Fazes costura, bordados ou outros trabalhos com tecido?",
+   "pt_BR": "Você faz costura, bordado ou outros trabalhos com tecido?",
+   "fr": "Fais-tu de la couture, de la broderie ou d'autres travaux avec du tissu ?",
+   "de": "Nähst oder stickst du, oder machst du andere Stoffarbeiten?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-049",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "What's a small thing you make or do that always makes you smile?",
+   "it": "Qual è una piccola cosa che fai o crei e che ti fa sempre sorridere?",
+   "es": "¿Qué cosa pequeña haces o creas que siempre te saca una sonrisa?",
+   "pt": "Que coisa pequena fazes ou crias que te põe sempre a sorrir?",
+   "pt_BR": "Qual coisa pequena você faz ou cria que sempre te faz sorrir?",
+   "fr": "Quelle petite chose fais-tu ou crées-tu qui te fait toujours sourire ?",
+   "de": "Was ist etwas Kleines, das du machst oder erschaffst und das dich immer zum Lächeln bringt?"
+  }
+ },
+ {
+  "id": "ib-hobbies_creativity-050",
+  "topic": "hobbies_creativity",
+  "text": {
+   "en": "Is there a hobby you'd like to swap tips on with someone from another country?",
+   "it": "C'è un hobby su cui ti piacerebbe scambiare consigli con qualcuno di un altro Paese?",
+   "es": "¿Hay alguna afición sobre la que te gustaría intercambiar consejos con alguien de otro país?",
+   "pt": "Há algum passatempo sobre o qual gostasses de trocar dicas com alguém de outro país?",
+   "pt_BR": "Existe algum hobby sobre o qual você gostaria de trocar dicas com alguém de outro país?",
+   "fr": "Y a-t-il un loisir sur lequel tu aimerais échanger des astuces avec quelqu'un d'un autre pays ?",
+   "de": "Gibt es ein Hobby, bei dem du dich gern mit jemandem aus einem anderen Land austauschen würdest?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-001",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What's your favorite spot in nature near where you live?",
+   "it": "Qual è il tuo posto preferito nella natura vicino a dove vivi?",
+   "es": "¿Cuál es tu lugar favorito en la naturaleza cerca de donde vives?",
+   "pt": "Qual é o teu sítio preferido na natureza perto de onde vives?",
+   "pt_BR": "Qual é o seu lugar favorito na natureza perto de onde você mora?",
+   "fr": "Quel est ton endroit préféré dans la nature près de chez toi ?",
+   "de": "Was ist dein Lieblingsplatz in der Natur in der Nähe deines Wohnorts?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-002",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Do you prefer mountains, sea, forest or desert, and why?",
+   "it": "Preferisci la montagna, il mare, il bosco o il deserto, e perché?",
+   "es": "¿Prefieres la montaña, el mar, el bosque o el desierto, y por qué?",
+   "pt": "Preferes a montanha, o mar, a floresta ou o deserto, e porquê?",
+   "pt_BR": "Você prefere montanha, mar, floresta ou deserto, e por quê?",
+   "fr": "Tu préfères la montagne, la mer, la forêt ou le désert, et pourquoi ?",
+   "de": "Magst du Berge, Meer, Wald oder Wüste am liebsten, und warum?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-003",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What's the most beautiful sunrise or sunset you've ever seen?",
+   "it": "Qual è l'alba o il tramonto più bello che tu abbia mai visto?",
+   "es": "¿Cuál es el amanecer o atardecer más bonito que has visto nunca?",
+   "pt": "Qual é o nascer ou pôr do sol mais bonito que já viste?",
+   "pt_BR": "Qual é o nascer ou pôr do sol mais bonito que você já viu?",
+   "fr": "Quel est le plus beau lever ou coucher de soleil que tu aies jamais vu ?",
+   "de": "Was ist der schönste Sonnenaufgang oder Sonnenuntergang, den du je gesehen hast?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-004",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Have you ever gone camping? What's your best memory from it?",
+   "it": "Sei mai stato in campeggio? Qual è il tuo ricordo più bello?",
+   "es": "¿Has ido alguna vez de acampada? ¿Cuál es tu mejor recuerdo?",
+   "pt": "Já foste acampar? Qual é a tua melhor memória?",
+   "pt_BR": "Você já acampou? Qual é a sua melhor lembrança?",
+   "fr": "As-tu déjà fait du camping ? Quel est ton meilleur souvenir ?",
+   "de": "Warst du schon mal zelten? Was ist deine schönste Erinnerung daran?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-005",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What's a hike you'd recommend to anyone visiting your region?",
+   "it": "Quale escursione consiglieresti a chiunque visiti la tua zona?",
+   "es": "¿Qué ruta de senderismo recomendarías a cualquiera que visite tu región?",
+   "pt": "Que caminhada recomendarias a quem visita a tua região?",
+   "pt_BR": "Qual trilha você recomendaria a quem visita a sua região?",
+   "fr": "Quelle randonnée recommanderais-tu à quiconque visite ta région ?",
+   "de": "Welche Wanderung würdest du jedem empfehlen, der deine Region besucht?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-006",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Which animals do you often see where you live?",
+   "it": "Quali animali vedi spesso dove vivi?",
+   "es": "¿Qué animales ves a menudo donde vives?",
+   "pt": "Que animais vês com frequência onde vives?",
+   "pt_BR": "Quais animais você costuma ver onde mora?",
+   "fr": "Quels animaux vois-tu souvent là où tu habites ?",
+   "de": "Welche Tiere siehst du oft dort, wo du wohnst?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-007",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Do you have plants or a garden at home? What do you grow?",
+   "it": "Hai piante o un giardino a casa? Che cosa coltivi?",
+   "es": "¿Tienes plantas o un jardín en casa? ¿Qué cultivas?",
+   "pt": "Tens plantas ou um jardim em casa? O que cultivas?",
+   "pt_BR": "Você tem plantas ou um jardim em casa? O que cultiva?",
+   "fr": "As-tu des plantes ou un jardin chez toi ? Que cultives-tu ?",
+   "de": "Hast du Pflanzen oder einen Garten zu Hause? Was baust du an?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-008",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What's the best day trip into nature from your city?",
+   "it": "Qual è la migliore gita di un giorno nella natura partendo dalla tua città?",
+   "es": "¿Cuál es la mejor excursión de un día a la naturaleza desde tu ciudad?",
+   "pt": "Qual é o melhor passeio de um dia na natureza a partir da tua cidade?",
+   "pt_BR": "Qual é o melhor bate-volta na natureza a partir da sua cidade?",
+   "fr": "Quelle est la meilleure excursion d'une journée dans la nature depuis ta ville ?",
+   "de": "Was ist der schönste Tagesausflug in die Natur von deiner Stadt aus?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-009",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "How do you like to spend a rainy day outdoors, if at all?",
+   "it": "Come ti piace passare una giornata di pioggia all'aperto, se ti piace?",
+   "es": "¿Cómo te gusta pasar un día de lluvia al aire libre, si es que te gusta?",
+   "pt": "Como gostas de passar um dia de chuva ao ar livre, se é que gostas?",
+   "pt_BR": "Como você gosta de passar um dia de chuva ao ar livre, se é que gosta?",
+   "fr": "Comment aimes-tu passer une journée de pluie dehors, si tu aimes ça ?",
+   "de": "Wie verbringst du einen Regentag gern draußen, falls überhaupt?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-010",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Which season do you enjoy most outside, and what do you do then?",
+   "it": "Quale stagione preferisci per stare all'aperto, e che cosa fai in quel periodo?",
+   "es": "¿Qué estación disfrutas más al aire libre y qué haces entonces?",
+   "pt": "Que estação do ano gostas mais de aproveitar ao ar livre e o que fazes então?",
+   "pt_BR": "Qual estação você mais curte ao ar livre e o que faz nela?",
+   "fr": "Quelle saison préfères-tu pour être dehors, et que fais-tu à ce moment-là ?",
+   "de": "Welche Jahreszeit magst du draußen am liebsten, und was machst du dann?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-011",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Have you ever seen a night sky so full of stars it took your breath away?",
+   "it": "Hai mai visto un cielo notturno così pieno di stelle da toglierti il fiato?",
+   "es": "¿Has visto alguna vez un cielo nocturno tan lleno de estrellas que te dejó sin aliento?",
+   "pt": "Alguma vez viste um céu noturno tão cheio de estrelas que ficaste sem fôlego?",
+   "pt_BR": "Você já viu um céu noturno tão cheio de estrelas que ficou sem fôlego?",
+   "fr": "As-tu déjà vu un ciel nocturne si plein d'étoiles qu'il t'a coupé le souffle ?",
+   "de": "Hast du schon mal einen Nachthimmel voller Sterne gesehen, der dir den Atem verschlagen hat?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-012",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What's the most remote place you've ever visited?",
+   "it": "Qual è il posto più isolato che tu abbia mai visitato?",
+   "es": "¿Cuál es el lugar más remoto que has visitado?",
+   "pt": "Qual é o lugar mais remoto que já visitaste?",
+   "pt_BR": "Qual é o lugar mais remoto que você já visitou?",
+   "fr": "Quel est l'endroit le plus isolé que tu aies visité ?",
+   "de": "Was ist der abgelegenste Ort, den du je besucht hast?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-013",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Do you swim in lakes, rivers or the sea? Where's your favorite place?",
+   "it": "Fai il bagno in laghi, fiumi o nel mare? Qual è il tuo posto preferito?",
+   "es": "¿Te bañas en lagos, ríos o en el mar? ¿Cuál es tu lugar favorito?",
+   "pt": "Tomas banho em lagos, rios ou no mar? Qual é o teu sítio preferido?",
+   "pt_BR": "Você nada em lagos, rios ou no mar? Qual é o seu lugar favorito?",
+   "fr": "Te baignes-tu dans les lacs, les rivières ou la mer ? Quel est ton endroit préféré ?",
+   "de": "Schwimmst du in Seen, Flüssen oder im Meer? Wo gefällt es dir am besten?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-014",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What's a tree, flower or plant that reminds you of home?",
+   "it": "Qual è un albero, un fiore o una pianta che ti ricorda casa?",
+   "es": "¿Qué árbol, flor o planta te recuerda a tu hogar?",
+   "pt": "Que árvore, flor ou planta te lembra a tua terra?",
+   "pt_BR": "Que árvore, flor ou planta te lembra a sua terra?",
+   "fr": "Quel arbre, quelle fleur ou quelle plante te rappelle ton pays ou ta maison ?",
+   "de": "Welcher Baum, welche Blume oder Pflanze erinnert dich an zu Hause?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-015",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Do you like birdwatching? What's the most interesting bird you've seen?",
+   "it": "Ti piace osservare gli uccelli? Qual è l'uccello più interessante che hai visto?",
+   "es": "¿Te gusta observar aves? ¿Cuál es el ave más interesante que has visto?",
+   "pt": "Gostas de observar aves? Qual foi a ave mais interessante que já viste?",
+   "pt_BR": "Você gosta de observar pássaros? Qual foi o mais interessante que já viu?",
+   "fr": "Aimes-tu observer les oiseaux ? Quel est l'oiseau le plus intéressant que tu aies vu ?",
+   "de": "Beobachtest du gern Vögel? Welcher war der interessanteste, den du je gesehen hast?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-016",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What's your favorite thing to pack for a day outdoors?",
+   "it": "Qual è la tua cosa preferita da mettere nello zaino per una giornata all'aperto?",
+   "es": "¿Qué es lo que más te gusta llevar para un día al aire libre?",
+   "pt": "Qual é a tua coisa preferida para levar num dia ao ar livre?",
+   "pt_BR": "Qual é a sua coisa favorita para levar em um dia ao ar livre?",
+   "fr": "Quelle est ta chose préférée à emporter pour une journée en plein air ?",
+   "de": "Was nimmst du für einen Tag draußen am liebsten mit?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-017",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Is there a national park or nature reserve in your country you love?",
+   "it": "C'è un parco nazionale o una riserva naturale nel tuo Paese che ami?",
+   "es": "¿Hay algún parque nacional o reserva natural de tu país que te encante?",
+   "pt": "Há algum parque nacional ou reserva natural no teu país de que gostes muito?",
+   "pt_BR": "Existe algum parque nacional ou reserva natural no seu país de que você goste muito?",
+   "fr": "Y a-t-il un parc national ou une réserve naturelle dans ton pays que tu adores ?",
+   "de": "Gibt es in deinem Land einen Nationalpark oder ein Naturschutzgebiet, das du liebst?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-018",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Have you ever watched a storm from somewhere safe and cozy?",
+   "it": "Hai mai guardato un temporale da un posto sicuro e accogliente?",
+   "es": "¿Has visto alguna vez una tormenta desde un lugar seguro y acogedor?",
+   "pt": "Alguma vez viste uma tempestade de um sítio seguro e aconchegante?",
+   "pt_BR": "Você já assistiu a uma tempestade de um lugar seguro e aconchegante?",
+   "fr": "As-tu déjà regardé un orage depuis un endroit sûr et douillet ?",
+   "de": "Hast du schon mal ein Gewitter von einem sicheren, gemütlichen Platz aus beobachtet?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-019",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What do you do to enjoy the snow, if it snows where you live?",
+   "it": "Che cosa fai per goderti la neve, se nevica dove vivi?",
+   "es": "¿Qué haces para disfrutar de la nieve, si nieva donde vives?",
+   "pt": "O que fazes para aproveitar a neve, se neva onde vives?",
+   "pt_BR": "O que você faz para curtir a neve, se neva onde você mora?",
+   "fr": "Que fais-tu pour profiter de la neige, s'il neige là où tu vis ?",
+   "de": "Was machst du, um den Schnee zu genießen, falls es bei dir schneit?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-020",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What's your favorite outdoor sport or activity?",
+   "it": "Qual è il tuo sport o la tua attività all'aperto preferita?",
+   "es": "¿Cuál es tu deporte o actividad favorita al aire libre?",
+   "pt": "Qual é o teu desporto ou atividade preferida ao ar livre?",
+   "pt_BR": "Qual é o seu esporte ou atividade favorita ao ar livre?",
+   "fr": "Quel est ton sport ou ton activité de plein air préféré ?",
+   "de": "Was ist dein liebster Outdoor-Sport oder deine liebste Aktivität im Freien?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-021",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Have you ever done a long bike ride? Where would you love to go?",
+   "it": "Hai mai fatto un lungo giro in bicicletta? Dove ti piacerebbe andare?",
+   "es": "¿Has hecho alguna vez una ruta larga en bici? ¿Adónde te gustaría ir?",
+   "pt": "Já fizeste um grande passeio de bicicleta? Para onde gostarias de ir?",
+   "pt_BR": "Você já fez um longo passeio de bicicleta? Aonde gostaria de ir?",
+   "fr": "As-tu déjà fait une longue balade à vélo ? Où aimerais-tu aller ?",
+   "de": "Hast du schon mal eine lange Radtour gemacht? Wohin würdest du gern fahren?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-022",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What's the best picnic spot you know?",
+   "it": "Qual è il miglior posto per un picnic che conosci?",
+   "es": "¿Cuál es el mejor sitio para un picnic que conoces?",
+   "pt": "Qual é o melhor sítio para um piquenique que conheces?",
+   "pt_BR": "Qual é o melhor lugar para um piquenique que você conhece?",
+   "fr": "Quel est le meilleur endroit que tu connaisses pour un pique-nique ?",
+   "de": "Was ist der beste Picknickplatz, den du kennst?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-023",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Do people where you live go foraging for mushrooms or berries? What's the tradition like?",
+   "it": "Dove vivi si va a raccogliere funghi o bacche? Com'è la tradizione?",
+   "es": "¿En tu zona la gente va a recoger setas o bayas? ¿Cómo es la tradición?",
+   "pt": "Onde vives costuma-se ir apanhar cogumelos ou frutos silvestres? Como é a tradição?",
+   "pt_BR": "Onde você mora as pessoas costumam colher cogumelos ou frutas silvestres? Como é a tradição?",
+   "fr": "Dans ta région, va-t-on cueillir des champignons ou des baies ? Comment est la tradition ?",
+   "de": "Gehen die Leute bei dir zum Pilze- oder Beerensammeln? Wie ist die Tradition?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-024",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What's an unforgettable moment you've had with wildlife?",
+   "it": "Qual è un momento indimenticabile che hai vissuto con la fauna selvatica?",
+   "es": "¿Cuál es un momento inolvidable que has vivido con la fauna salvaje?",
+   "pt": "Qual foi um momento inesquecível que viveste com a vida selvagem?",
+   "pt_BR": "Qual foi um momento inesquecível que você viveu com a vida selvagem?",
+   "fr": "Quel moment inoubliable as-tu vécu avec la faune sauvage ?",
+   "de": "Welchen unvergesslichen Moment hattest du mit wilden Tieren?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-025",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Do you prefer walking in nature alone or with company?",
+   "it": "Preferisci camminare nella natura da solo o in compagnia?",
+   "es": "¿Prefieres caminar por la naturaleza solo o acompañado?",
+   "pt": "Preferes caminhar na natureza sozinho ou acompanhado?",
+   "pt_BR": "Você prefere caminhar na natureza sozinho ou acompanhado?",
+   "fr": "Préfères-tu marcher dans la nature seul ou accompagné ?",
+   "de": "Gehst du in der Natur lieber allein oder in Gesellschaft spazieren?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-026",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What does the countryside near your hometown look like?",
+   "it": "Com'è la campagna vicino alla tua città natale?",
+   "es": "¿Cómo es el campo cerca de tu ciudad natal?",
+   "pt": "Como é o campo perto da tua terra natal?",
+   "pt_BR": "Como é o campo perto da sua cidade natal?",
+   "fr": "À quoi ressemble la campagne près de ta ville natale ?",
+   "de": "Wie sieht die Landschaft in der Nähe deiner Heimatstadt aus?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-027",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What's the most challenging trail or climb you've ever finished?",
+   "it": "Qual è il sentiero o la salita più impegnativa che tu abbia mai portato a termine?",
+   "es": "¿Cuál es el sendero o la subida más exigente que has terminado?",
+   "pt": "Qual foi o trilho ou a subida mais exigente que já completaste?",
+   "pt_BR": "Qual foi a trilha ou a subida mais desafiadora que você já completou?",
+   "fr": "Quel est le sentier ou l'ascension le plus difficile que tu aies terminé ?",
+   "de": "Was ist der anspruchsvollste Weg oder Aufstieg, den du je geschafft hast?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-028",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "How do you look after nature in small ways in your daily life?",
+   "it": "In che modo ti prendi cura della natura con piccoli gesti quotidiani?",
+   "es": "¿De qué pequeñas maneras cuidas la naturaleza en tu día a día?",
+   "pt": "De que pequenas formas cuidas da natureza no teu dia a dia?",
+   "pt_BR": "De que pequenas formas você cuida da natureza no seu dia a dia?",
+   "fr": "De quelles petites façons prends-tu soin de la nature au quotidien ?",
+   "de": "Wie schützt du die Natur im Alltag mit kleinen Dingen?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-029",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Is there a river, lake or beach that holds special memories for you?",
+   "it": "C'è un fiume, un lago o una spiaggia che custodisce ricordi speciali per te?",
+   "es": "¿Hay algún río, lago o playa que guarde recuerdos especiales para ti?",
+   "pt": "Há algum rio, lago ou praia que guarde memórias especiais para ti?",
+   "pt_BR": "Existe algum rio, lago ou praia que guarda lembranças especiais para você?",
+   "fr": "Y a-t-il une rivière, un lac ou une plage qui garde des souvenirs spéciaux pour toi ?",
+   "de": "Gibt es einen Fluss, See oder Strand, der besondere Erinnerungen für dich birgt?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-030",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Which natural wonder is on your bucket list?",
+   "it": "Quale meraviglia naturale è nella tua lista dei desideri?",
+   "es": "¿Qué maravilla natural está en tu lista de deseos?",
+   "pt": "Que maravilha natural está na tua lista de desejos?",
+   "pt_BR": "Qual maravilha natural está na sua lista de sonhos?",
+   "fr": "Quelle merveille naturelle figure sur ta liste de rêves ?",
+   "de": "Welches Naturwunder steht auf deiner Wunschliste?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-031",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Which sound of nature do you love most: waves, rain or birdsong?",
+   "it": "Quale suono della natura ami di più: le onde, la pioggia o il canto degli uccelli?",
+   "es": "¿Qué sonido de la naturaleza te gusta más: las olas, la lluvia o el canto de los pájaros?",
+   "pt": "Qual é o som da natureza de que mais gostas: as ondas, a chuva ou o canto das aves?",
+   "pt_BR": "Qual som da natureza você mais ama: as ondas, a chuva ou o canto dos pássaros?",
+   "fr": "Quel bruit de la nature préfères-tu : les vagues, la pluie ou le chant des oiseaux ?",
+   "de": "Welches Geräusch der Natur liebst du am meisten: Wellen, Regen oder Vogelgesang?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-032",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Do you have a favorite place to watch the stars?",
+   "it": "Hai un posto preferito per guardare le stelle?",
+   "es": "¿Tienes un lugar favorito para mirar las estrellas?",
+   "pt": "Tens um sítio preferido para ver as estrelas?",
+   "pt_BR": "Você tem um lugar favorito para observar as estrelas?",
+   "fr": "As-tu un endroit préféré pour regarder les étoiles ?",
+   "de": "Hast du einen Lieblingsplatz zum Sternegucken?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-033",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Have you ever tried kayaking, canoeing or paddleboarding?",
+   "it": "Hai mai provato il kayak, la canoa o il paddleboard?",
+   "es": "¿Has probado alguna vez el kayak, la canoa o el paddle surf?",
+   "pt": "Já experimentaste caiaque, canoagem ou paddleboard?",
+   "pt_BR": "Você já experimentou caiaque, canoagem ou stand up paddle?",
+   "fr": "As-tu déjà essayé le kayak, le canoë ou le paddle ?",
+   "de": "Hast du schon mal Kajak, Kanu oder Stand-up-Paddling ausprobiert?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-034",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What's a nature tradition in your family, like a yearly walk or picnic?",
+   "it": "Qual è una tradizione legata alla natura nella tua famiglia, come una passeggiata o un picnic annuale?",
+   "es": "¿Qué tradición relacionada con la naturaleza tiene tu familia, como un paseo o un picnic anual?",
+   "pt": "Que tradição ligada à natureza tem a tua família, como um passeio ou piquenique anual?",
+   "pt_BR": "Que tradição ligada à natureza tem a sua família, como um passeio ou piquenique anual?",
+   "fr": "Quelle tradition liée à la nature existe dans ta famille, comme une balade ou un pique-nique annuel ?",
+   "de": "Welche Natur-Tradition gibt es in deiner Familie, etwa einen jährlichen Spaziergang oder ein Picknick?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-035",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What's the weather like in your area right now, and how does it shape your plans?",
+   "it": "Che tempo fa nella tua zona adesso, e come influenza i tuoi programmi?",
+   "es": "¿Qué tiempo hace ahora en tu zona y cómo influye en tus planes?",
+   "pt": "Como está o tempo na tua zona neste momento e como é que isso influencia os teus planos?",
+   "pt_BR": "Como está o tempo na sua região agora e como isso influencia seus planos?",
+   "fr": "Quel temps fait-il chez toi en ce moment, et comment influence-t-il tes projets ?",
+   "de": "Wie ist das Wetter bei dir gerade, und wie beeinflusst es deine Pläne?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-036",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What's the most surprising thing you've seen on a nature walk?",
+   "it": "Qual è la cosa più sorprendente che hai visto durante una passeggiata nella natura?",
+   "es": "¿Qué es lo más sorprendente que has visto en un paseo por la naturaleza?",
+   "pt": "Qual foi a coisa mais surpreendente que viste num passeio na natureza?",
+   "pt_BR": "Qual foi a coisa mais surpreendente que você viu em uma caminhada na natureza?",
+   "fr": "Quelle est la chose la plus surprenante que tu aies vue lors d'une balade dans la nature ?",
+   "de": "Was ist das Überraschendste, das du auf einem Naturspaziergang gesehen hast?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-037",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Do you like fishing, or have you ever tried it?",
+   "it": "Ti piace pescare, o l'hai mai provato?",
+   "es": "¿Te gusta pescar o lo has probado alguna vez?",
+   "pt": "Gostas de pescar ou já experimentaste?",
+   "pt_BR": "Você gosta de pescar ou já experimentou?",
+   "fr": "Aimes-tu pêcher, ou as-tu déjà essayé ?",
+   "de": "Gehst du gern angeln, oder hast du es schon mal probiert?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-038",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Where in nature do you feel most calm?",
+   "it": "In quale luogo nella natura ti senti più tranquillo?",
+   "es": "¿En qué lugar de la naturaleza te sientes más tranquilo?",
+   "pt": "Em que lugar da natureza te sentes mais tranquilo?",
+   "pt_BR": "Em que lugar da natureza você se sente mais tranquilo?",
+   "fr": "Où te sens-tu le plus serein dans la nature ?",
+   "de": "Wo in der Natur fühlst du dich am ruhigsten?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-039",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Do you have a pet that loves the outdoors?",
+   "it": "Hai un animale domestico che ama stare all'aperto?",
+   "es": "¿Tienes una mascota a la que le encante estar al aire libre?",
+   "pt": "Tens algum animal de estimação que adore o ar livre?",
+   "pt_BR": "Você tem um bichinho de estimação que adora ficar ao ar livre?",
+   "fr": "As-tu un animal de compagnie qui adore être dehors ?",
+   "de": "Hast du ein Haustier, das gern draußen ist?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-040",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What's the best thing to eat after a long day outdoors?",
+   "it": "Qual è la cosa migliore da mangiare dopo una lunga giornata all'aperto?",
+   "es": "¿Qué es lo mejor para comer después de un largo día al aire libre?",
+   "pt": "O que é melhor comer depois de um longo dia ao ar livre?",
+   "pt_BR": "O que é melhor comer depois de um longo dia ao ar livre?",
+   "fr": "Quelle est la meilleure chose à manger après une longue journée dehors ?",
+   "de": "Was isst du am liebsten nach einem langen Tag draußen?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-041",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Which animal would you most love to see in the wild?",
+   "it": "Quale animale ti piacerebbe di più vedere in natura?",
+   "es": "¿Qué animal te encantaría ver más en libertad?",
+   "pt": "Que animal gostarias mais de ver em liberdade?",
+   "pt_BR": "Qual animal você mais adoraria ver na natureza?",
+   "fr": "Quel animal aimerais-tu le plus voir à l'état sauvage ?",
+   "de": "Welches Tier würdest du am liebsten in freier Wildbahn sehen?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-042",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What are the best viewpoints in your region?",
+   "it": "Quali sono i migliori punti panoramici della tua zona?",
+   "es": "¿Cuáles son los mejores miradores de tu región?",
+   "pt": "Quais são os melhores miradouros da tua região?",
+   "pt_BR": "Quais são os melhores mirantes da sua região?",
+   "fr": "Quels sont les plus beaux points de vue de ta région ?",
+   "de": "Welche sind die besten Aussichtspunkte in deiner Region?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-043",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "How do people in your area enjoy spring blossoms or autumn colors?",
+   "it": "Come si godono la fioritura primaverile o i colori dell'autunno dalle tue parti?",
+   "es": "¿Cómo disfruta la gente de tu zona de la floración primaveral o los colores del otoño?",
+   "pt": "Como é que as pessoas da tua zona aproveitam as flores da primavera ou as cores do outono?",
+   "pt_BR": "Como as pessoas da sua região curtem as flores da primavera ou as cores do outono?",
+   "fr": "Comment les gens de ta région profitent-ils des fleurs du printemps ou des couleurs de l'automne ?",
+   "de": "Wie genießen die Leute bei dir die Frühlingsblüte oder die Herbstfarben?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-044",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Have you ever got lost on a trail? What happened?",
+   "it": "Ti sei mai perso su un sentiero? Che cosa è successo?",
+   "es": "¿Te has perdido alguna vez en un sendero? ¿Qué pasó?",
+   "pt": "Já te perdeste num trilho? O que aconteceu?",
+   "pt_BR": "Você já se perdeu em uma trilha? O que aconteceu?",
+   "fr": "T'es-tu déjà perdu sur un sentier ? Que s'est-il passé ?",
+   "de": "Hast du dich schon mal auf einem Wanderweg verlaufen? Was ist passiert?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-045",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What would you like to learn about plants or animals?",
+   "it": "Che cosa ti piacerebbe imparare sulle piante o sugli animali?",
+   "es": "¿Qué te gustaría aprender sobre plantas o animales?",
+   "pt": "O que gostarias de aprender sobre plantas ou animais?",
+   "pt_BR": "O que você gostaria de aprender sobre plantas ou animais?",
+   "fr": "Qu'aimerais-tu apprendre sur les plantes ou les animaux ?",
+   "de": "Was würdest du gern über Pflanzen oder Tiere lernen?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-046",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Do you prefer a lazy beach day or an active day in the hills?",
+   "it": "Preferisci una giornata pigra in spiaggia o una giornata attiva in collina?",
+   "es": "¿Prefieres un día tranquilo en la playa o un día activo en las colinas?",
+   "pt": "Preferes um dia descontraído na praia ou um dia ativo nas colinas?",
+   "pt_BR": "Você prefere um dia tranquilo na praia ou um dia ativo nas colinas?",
+   "fr": "Tu préfères une journée tranquille à la plage ou une journée active dans les collines ?",
+   "de": "Verbringst du lieber einen faulen Strandtag oder einen aktiven Tag in den Hügeln?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-047",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "Is there a small park in your city you consider a hidden gem?",
+   "it": "C'è un piccolo parco nella tua città che consideri un gioiello nascosto?",
+   "es": "¿Hay algún parque pequeño en tu ciudad que consideres un tesoro escondido?",
+   "pt": "Há algum parque pequeno na tua cidade que consideres uma joia escondida?",
+   "pt_BR": "Existe algum parquinho na sua cidade que você considera uma joia escondida?",
+   "fr": "Y a-t-il un petit parc dans ta ville que tu considères comme un trésor caché ?",
+   "de": "Gibt es in deiner Stadt einen kleinen Park, den du für einen Geheimtipp hältst?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-048",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What's a camping or hiking tip you learned the hard way?",
+   "it": "Qual è un consiglio su campeggio o escursionismo che hai imparato a tue spese?",
+   "es": "¿Qué consejo de acampada o senderismo aprendiste por las malas?",
+   "pt": "Que dica de campismo ou caminhada aprendeste da pior maneira?",
+   "pt_BR": "Que dica de camping ou trilha você aprendeu do jeito difícil?",
+   "fr": "Quel conseil de camping ou de randonnée as-tu appris à tes dépens ?",
+   "de": "Welchen Camping- oder Wandertipp hast du auf die harte Tour gelernt?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-049",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "What's the most beautiful waterfall, cave or canyon you've seen?",
+   "it": "Qual è la cascata, la grotta o il canyon più bello che hai visto?",
+   "es": "¿Cuál es la cascada, cueva o cañón más bonito que has visto?",
+   "pt": "Qual é a cascata, gruta ou desfiladeiro mais bonito que já viste?",
+   "pt_BR": "Qual é a cachoeira, caverna ou cânion mais bonito que você já viu?",
+   "fr": "Quelle est la plus belle cascade, grotte ou le plus beau canyon que tu aies vu ?",
+   "de": "Was ist der schönste Wasserfall, die schönste Höhle oder Schlucht, die du gesehen hast?"
+  }
+ },
+ {
+  "id": "ib-nature_outdoors-050",
+  "topic": "nature_outdoors",
+  "text": {
+   "en": "If you could spend a week in any landscape in the world, where would it be?",
+   "it": "Se potessi passare una settimana in qualsiasi paesaggio del mondo, dove andresti?",
+   "es": "Si pudieras pasar una semana en cualquier paisaje del mundo, ¿dónde sería?",
+   "pt": "Se pudesses passar uma semana em qualquer paisagem do mundo, onde seria?",
+   "pt_BR": "Se você pudesse passar uma semana em qualquer paisagem do mundo, onde seria?",
+   "fr": "Si tu pouvais passer une semaine dans n'importe quel paysage du monde, ce serait où ?",
+   "de": "Wenn du eine Woche in einer beliebigen Landschaft der Welt verbringen könntest, wo wäre das?"
+  }
+ }
+]

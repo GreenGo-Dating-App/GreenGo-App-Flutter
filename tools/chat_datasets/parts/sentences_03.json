@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "ss-apologizing-001",
+  "topic": "apologizing",
+  "level": "A1",
+  "text": {
+   "en": "I'm sorry.",
+   "it": "Mi dispiace.",
+   "es": "Lo siento.",
+   "pt": "Desculpa.",
+   "pt_BR": "Desculpe.",
+   "fr": "Désolé.",
+   "de": "Es tut mir leid."
+  }
+ },
+ {
+  "id": "ss-apologizing-002",
+  "topic": "apologizing",
+  "level": "A1",
+  "text": {
+   "en": "Sorry, I'm late.",
+   "it": "Scusa, sono in ritardo.",
+   "es": "Perdona, llego tarde.",
+   "pt": "Desculpa o atraso.",
+   "pt_BR": "Desculpe, me atrasei.",
+   "fr": "Pardon pour le retard.",
+   "de": "Entschuldige, ich bin zu spät."
+  }
+ },
+ {
+  "id": "ss-apologizing-003",
+  "topic": "apologizing",
+  "level": "A1",
+  "text": {
+   "en": "Sorry, I don't understand.",
+   "it": "Scusa, non capisco.",
+   "es": "Perdona, no entiendo.",
+   "pt": "Desculpa, não percebo.",
+   "pt_BR": "Desculpe, não entendo.",
+   "fr": "Pardon, je ne comprends pas.",
+   "de": "Entschuldige, ich verstehe das nicht."
+  }
+ },
+ {
+  "id": "ss-apologizing-004",
+  "topic": "apologizing",
+  "level": "A1",
+  "text": {
+   "en": "Oops, sorry!",
+   "it": "Ops, scusa!",
+   "es": "¡Ay, perdón!",
+   "pt": "Ops, desculpa!",
+   "pt_BR": "Ops, desculpe!",
+   "fr": "Oups, pardon !",
+   "de": "Hoppla, Entschuldigung!"
+  }
+ },
+ {
+  "id": "ss-apologizing-005",
+  "topic": "apologizing",
+  "level": "A1",
+  "text": {
+   "en": "I'm so sorry!",
+   "it": "Mi dispiace tanto!",
+   "es": "¡Lo siento muchísimo!",
+   "pt": "Peço imensa desculpa!",
+   "pt_BR": "Sinto muito!",
+   "fr": "Je suis vraiment désolé !",
+   "de": "Das tut mir so leid!"
+  }
+ },
+ {
+  "id": "ss-apologizing-006",
+  "topic": "apologizing",
+  "level": "A1",
+  "text": {
+   "en": "Sorry, my mistake.",
+   "it": "Scusa, è colpa mia.",
+   "es": "Perdona, fue mi error.",
+   "pt": "Desculpa, o erro foi meu.",
+   "pt_BR": "Desculpe, o erro foi meu.",
+   "fr": "Pardon, c'est mon erreur.",
+   "de": "Entschuldige, mein Fehler."
+  }
+ },
+ {
+  "id": "ss-apologizing-007",
+  "topic": "apologizing",
+  "level": "A1",
+  "text": {
+   "en": "Sorry, I can't today.",
+   "it": "Scusa, oggi non posso.",
+   "es": "Lo siento, hoy no puedo.",
+   "pt": "Desculpa, hoje não posso.",
+   "pt_BR": "Desculpe, hoje não posso.",
+   "fr": "Désolé, aujourd'hui je ne peux pas.",
+   "de": "Tut mir leid, heute kann ich nicht."
+  }
+ },
+ {
+  "id": "ss-apologizing-008",
+  "topic": "apologizing",
+  "level": "A1",
+  "text": {
+   "en": "Please forgive me.",
+   "it": "Perdonami, per favore.",
+   "es": "Perdóname, por favor.",
+   "pt": "Perdoa-me, por favor.",
+   "pt_BR": "Me perdoe, por favor.",
+   "fr": "Pardonne-moi, s'il te plaît.",
+   "de": "Bitte verzeih mir."
+  }
+ },
+ {
+  "id": "ss-apologizing-009",
+  "topic": "apologizing",
+  "level": "A1",
+  "text": {
+   "en": "Sorry, I didn't see your message.",
+   "it": "Scusa, non ho visto il tuo messaggio.",
+   "es": "Perdona, no vi tu mensaje.",
+   "pt": "Desculpa, não vi a tua mensagem.",
+   "pt_BR": "Desculpe, não vi sua mensagem.",
+   "fr": "Pardon, je n'ai pas vu ton message.",
+   "de": "Entschuldige, ich habe deine Nachricht nicht gesehen."
+  }
+ },
+ {
+  "id": "ss-apologizing-010",
+  "topic": "apologizing",
+  "level": "A1",
+  "text": {
+   "en": "It's okay, no problem.",
+   "it": "Va bene, nessun problema.",
+   "es": "Está bien, no pasa nada.",
+   "pt": "Está bem, sem problema.",
+   "pt_BR": "Tudo bem, sem problema.",
+   "fr": "Ce n'est pas grave, pas de souci.",
+   "de": "Schon gut, kein Problem."
+  }
+ },
+ {
+  "id": "ss-apologizing-011",
+  "topic": "apologizing",
+  "level": "A1",
+  "text": {
+   "en": "Sorry, wrong word.",
+   "it": "Scusa, ho sbagliato parola.",
+   "es": "Perdona, me equivoqué de palabra.",
+   "pt": "Desculpa, enganei-me na palavra.",
+   "pt_BR": "Desculpe, errei a palavra.",
+   "fr": "Pardon, j'ai employé le mauvais mot.",
+   "de": "Entschuldige, falsches Wort."
+  }
+ },
+ {
+  "id": "ss-apologizing-012",
+  "topic": "apologizing",
+  "level": "A1",
+  "text": {
+   "en": "Sorry for the wait.",
+   "it": "Scusa per l'attesa.",
+   "es": "Perdona la espera.",
+   "pt": "Desculpa a demora.",
+   "pt_BR": "Desculpe a demora.",
+   "fr": "Désolé pour l'attente.",
+   "de": "Entschuldige das Warten."
+  }
+ },
+ {
+  "id": "ss-apologizing-013",
+  "topic": "apologizing",
+  "level": "A1",
+  "text": {
+   "en": "Sorry, can you repeat that?",
+   "it": "Scusa, puoi ripetere?",
+   "es": "Perdona, ¿puedes repetirlo?",
+   "pt": "Desculpa, podes repetir?",
+   "pt_BR": "Desculpe, você pode repetir?",
+   "fr": "Pardon, tu peux répéter ?",
+   "de": "Entschuldige, kannst du das wiederholen?"
+  }
+ },
+ {
+  "id": "ss-apologizing-014",
+  "topic": "apologizing",
+  "level": "A1",
+  "text": {
+   "en": "Sorry, I don't have time right now.",
+   "it": "Scusa, adesso non ho tempo.",
+   "es": "Lo siento, ahora no tengo tiempo.",
+   "pt": "Desculpa, agora não tenho tempo.",
+   "pt_BR": "Desculpe, agora não tenho tempo.",
+   "fr": "Désolé, je n'ai pas le temps maintenant.",
+   "de": "Tut mir leid, ich habe gerade keine Zeit."
+  }
+ },
+ {
+  "id": "ss-apologizing-015",
+  "topic": "apologizing",
+  "level": "A1",
+  "text": {
+   "en": "Sorry, I made a typo.",
+   "it": "Scusa, ho sbagliato a scrivere.",
+   "es": "Perdona, me equivoqué al escribir.",
+   "pt": "Desculpa, enganei-me a escrever.",
+   "pt_BR": "Desculpe, errei ao digitar.",
+   "fr": "Pardon, j'ai fait une faute de frappe.",
+   "de": "Entschuldige, ich habe mich vertippt."
+  }
+ },
+ {
+  "id": "ss-apologizing-016",
+  "topic": "apologizing",
+  "level": "A2",
+  "text": {
+   "en": "Sorry for the late reply.",
+   "it": "Scusa il ritardo nel risponderti.",
+   "es": "Perdona la tardanza en responder.",
+   "pt": "Desculpa a demora em responder.",
+   "pt_BR": "Desculpe a demora para responder.",
+   "fr": "Désolé pour ma réponse tardive.",
+   "de": "Entschuldige die späte Antwort."
+  }
+ },
+ {
+  "id": "ss-apologizing-017",
+  "topic": "apologizing",
+  "level": "A2",
+  "text": {
+   "en": "I'm sorry, I forgot to answer you.",
+   "it": "Scusa, ho dimenticato di risponderti.",
+   "es": "Perdona, se me olvidó contestarte.",
+   "pt": "Desculpa, esqueci-me de te responder.",
+   "pt_BR": "Desculpe, esqueci de te responder.",
+   "fr": "Pardon, j'ai oublié de te répondre.",
+   "de": "Tut mir leid, ich habe vergessen, dir zu antworten."
+  }
+ },
+ {
+  "id": "ss-apologizing-018",
+  "topic": "apologizing",
+  "level": "A2",
+  "text": {
+   "en": "Sorry, I didn't mean to say that.",
+   "it": "Scusa, non volevo dirlo.",
+   "es": "Perdona, no quise decir eso.",
+   "pt": "Desculpa, não quis dizer isso.",
+   "pt_BR": "Desculpe, não quis dizer isso.",
+   "fr": "Pardon, je ne voulais pas dire ça.",
+   "de": "Entschuldige, das wollte ich nicht sagen."
+  }
+ },
+ {
+  "id": "ss-apologizing-019",
+  "topic": "apologizing",
+  "level": "A2",
+  "text": {
+   "en": "Sorry, my English is not very good yet.",
+   "it": "Scusa, il mio inglese non è ancora molto buono.",
+   "es": "Perdona, mi inglés todavía no es muy bueno.",
+   "pt": "Desculpa, o meu inglês ainda não é muito bom.",
+   "pt_BR": "Desculpe, meu inglês ainda não é muito bom.",
+   "fr": "Pardon, mon anglais n'est pas encore très bon.",
+   "de": "Entschuldige, mein Englisch ist noch nicht so gut."
+  }
+ },
+ {
+  "id": "ss-apologizing-020",
+  "topic": "apologizing",
+  "level": "A2",
+  "text": {
+   "en": "I'm sorry I missed your call.",
+   "it": "Scusa se non ho risposto alla tua chiamata.",
+   "es": "Perdona, no pude contestar tu llamada.",
+   "pt": "Desculpa não ter atendido a tua chamada.",
+   "pt_BR": "Desculpe não ter atendido sua ligação.",
+   "fr": "Désolé d'avoir manqué ton appel.",
+   "de": "Tut mir leid, dass ich deinen Anruf verpasst habe."
+  }
+ },
+ {
+  "id": "ss-apologizing-021",
+  "topic": "apologizing",
+  "level": "A2",
+  "text": {
+   "en": "Sorry for the confusion.",
+   "it": "Scusa per la confusione.",
+   "es": "Perdona la confusión.",
+   "pt": "Desculpa a confusão.",
+   "pt_BR": "Desculpe a confusão.",
+   "fr": "Désolé pour la confusion.",
+   "de": "Entschuldige die Verwirrung."
+  }
+ },
+ {
+  "id": "ss-apologizing-022",
+  "topic": "apologizing",
+  "level": "A2",
+  "text": {
+   "en": "Sorry, I wrote to the wrong person.",
+   "it": "Scusa, ho scritto alla persona sbagliata.",
+   "es": "Perdona, escribí a la persona equivocada.",
+   "pt": "Desculpa, escrevi à pessoa errada.",
+   "pt_BR": "Desculpe, escrevi para a pessoa errada.",
+   "fr": "Pardon, j'ai écrit à la mauvaise personne.",
+   "de": "Entschuldige, ich habe der falschen Person geschrieben."
+  }
+ },
+ {
+  "id": "ss-apologizing-023",
+  "topic": "apologizing",
+  "level": "A2",
+  "text": {
+   "en": "I'm sorry, I can't come tomorrow.",
+   "it": "Mi dispiace, domani non posso venire.",
+   "es": "Lo siento, mañana no puedo ir.",
+   "pt": "Desculpa, amanhã não posso ir.",
+   "pt_BR": "Desculpe, amanhã não posso ir.",
+   "fr": "Désolé, je ne peux pas venir demain.",
+   "de": "Tut mir leid, ich kann morgen nicht kommen."
+  }
+ },
+ {
+  "id": "ss-apologizing-024",
+  "topic": "apologizing",
+  "level": "A2",
+  "text": {
+   "en": "Sorry, my phone died.",
+   "it": "Scusa, mi si è scaricato il telefono.",
+   "es": "Perdona, me quedé sin batería.",
+   "pt": "Desculpa, o telemóvel ficou sem bateria.",
+   "pt_BR": "Desculpe, meu celular ficou sem bateria.",
+   "fr": "Pardon, mon téléphone n'avait plus de batterie.",
+   "de": "Entschuldige, mein Handy-Akku war leer."
+  }
+ },
+ {
+  "id": "ss-apologizing-025",
+  "topic": "apologizing",
+  "level": "A2",
+  "text": {
+   "en": "Don't worry, it's not your fault.",
+   "it": "Non preoccuparti, non è colpa tua.",
+   "es": "No te preocupes, no es culpa tuya.",
+   "pt": "Não te preocupes, a culpa não é tua.",
+   "pt_BR": "Não se preocupe, a culpa não é sua.",
+   "fr": "Ne t'inquiète pas, ce n'est pas ta faute.",
+   "de": "Keine Sorge, du bist nicht schuld."
+  }
+ },
+ {
+  "id": "ss-apologizing-026",
+  "topic": "apologizing",
+  "level": "A2",
+  "text": {
+   "en": "I'm sorry if that sounded rude.",
+   "it": "Mi dispiace se è suonato scortese.",
+   "es": "Lo siento si sonó grosero.",
+   "pt": "Desculpa se soou indelicado.",
+   "pt_BR": "Desculpe se soou grosseiro.",
+   "fr": "Désolé si ça a paru impoli.",
+   "de": "Tut mir leid, falls das unhöflich klang."
+  }
+ },
+ {
+  "id": "ss-apologizing-027",
+  "topic": "apologizing",
+  "level": "A2",
+  "text": {
+   "en": "Sorry, I need to cancel our plan.",
+   "it": "Scusa, devo annullare il nostro programma.",
+   "es": "Perdona, tengo que cancelar nuestro plan.",
+   "pt": "Desculpa, tenho de cancelar o nosso plano.",
+   "pt_BR": "Desculpe, preciso cancelar nosso plano.",
+   "fr": "Pardon, je dois annuler notre programme.",
+   "de": "Entschuldige, ich muss unsere Verabredung absagen."
+  }
+ },
+ {
+  "id": "ss-apologizing-028",
+  "topic": "apologizing",
+  "level": "A2",
+  "text": {
+   "en": "Sorry for interrupting you.",
+   "it": "Scusa se ti interrompo.",
+   "es": "Perdona que te interrumpa.",
+   "pt": "Desculpa interromper-te.",
+   "pt_BR": "Desculpe interromper você.",
+   "fr": "Désolé de t'interrompre.",
+   "de": "Entschuldige, dass ich dich unterbreche."
+  }
+ },
+ {
+  "id": "ss-apologizing-029",
+  "topic": "apologizing",
+  "level": "A2",
+  "text": {
+   "en": "Sorry, I sent that message by mistake.",
+   "it": "Scusa, ho mandato quel messaggio per sbaglio.",
+   "es": "Perdona, mandé ese mensaje por error.",
+   "pt": "Desculpa, enviei essa mensagem por engano.",
+   "pt_BR": "Desculpe, mandei essa mensagem sem querer.",
+   "fr": "Pardon, j'ai envoyé ce message par erreur.",
+   "de": "Entschuldige, ich habe die Nachricht aus Versehen geschickt."
+  }
+ },
+ {
+  "id": "ss-apologizing-030",
+  "topic": "apologizing",
+  "level": "A2",
+  "text": {
+   "en": "No worries, everyone makes mistakes.",
+   "it": "Nessun problema, sbagliamo tutti.",
+   "es": "No pasa nada, todos nos equivocamos.",
+   "pt": "Não faz mal, toda a gente se engana.",
+   "pt_BR": "Sem problemas, todo mundo erra.",
+   "fr": "Pas de souci, tout le monde fait des erreurs.",
+   "de": "Kein Problem, jeder macht mal Fehler."
+  }
+ },
+ {
+  "id": "ss-apologizing-031",
+  "topic": "apologizing",
+  "level": "B1",
+  "text": {
+   "en": "I'm sorry for the misunderstanding; I'll try to explain it better.",
+   "it": "Mi dispiace per l'equivoco, cercherò di spiegarmi meglio.",
+   "es": "Lamento el malentendido; intentaré explicarme mejor.",
+   "pt": "Peço desculpa pelo mal-entendido; vou tentar explicar-me melhor.",
+   "pt_BR": "Desculpe pelo mal-entendido; vou tentar me explicar melhor.",
+   "fr": "Je suis désolé pour le malentendu, je vais essayer de mieux m'expliquer.",
+   "de": "Das Missverständnis tut mir leid, ich versuche, es besser zu erklären."
+  }
+ },
+ {
+  "id": "ss-apologizing-032",
+  "topic": "apologizing",
+  "level": "B1",
+  "text": {
+   "en": "Sorry for keeping you waiting so long.",
+   "it": "Scusa se ti ho fatto aspettare così tanto.",
+   "es": "Perdona por hacerte esperar tanto.",
+   "pt": "Desculpa por te ter feito esperar tanto tempo.",
+   "pt_BR": "Desculpe por ter feito você esperar tanto.",
+   "fr": "Désolé de t'avoir fait attendre si longtemps.",
+   "de": "Entschuldige, dass du so lange warten musstest."
+  }
+ },
+ {
+  "id": "ss-apologizing-033",
+  "topic": "apologizing",
+  "level": "B1",
+  "text": {
+   "en": "I apologize if my question was too personal.",
+   "it": "Mi scuso se la mia domanda era troppo personale.",
+   "es": "Me disculpo si mi pregunta fue demasiado personal.",
+   "pt": "Peço desculpa se a minha pergunta foi demasiado pessoal.",
+   "pt_BR": "Peço desculpas se minha pergunta foi pessoal demais.",
+   "fr": "Je m'excuse si ma question était trop personnelle.",
+   "de": "Ich entschuldige mich, falls meine Frage zu persönlich war."
+  }
+ },
+ {
+  "id": "ss-apologizing-034",
+  "topic": "apologizing",
+  "level": "B1",
+  "text": {
+   "en": "I'm really sorry, but I have to reschedule our call.",
+   "it": "Mi dispiace davvero, ma devo spostare la nostra chiamata.",
+   "es": "Lo siento mucho, pero tengo que reprogramar nuestra llamada.",
+   "pt": "Lamento muito, mas tenho de reagendar a nossa chamada.",
+   "pt_BR": "Sinto muito, mas preciso reagendar nossa ligação.",
+   "fr": "Je suis vraiment désolé, mais je dois reporter notre appel.",
+   "de": "Es tut mir wirklich leid, aber ich muss unseren Anruf verschieben."
+  }
+ },
+ {
+  "id": "ss-apologizing-035",
+  "topic": "apologizing",
+  "level": "B1",
+  "text": {
+   "en": "Sorry, I didn't realize it was a sensitive topic.",
+   "it": "Scusa, non sapevo che fosse un argomento delicato.",
+   "es": "Perdona, no sabía que era un tema delicado.",
+   "pt": "Desculpa, não sabia que era um assunto delicado.",
+   "pt_BR": "Desculpe, não sabia que era um assunto delicado.",
+   "fr": "Pardon, je ne savais pas que c'était un sujet sensible.",
+   "de": "Entschuldige, ich wusste nicht, dass das ein heikles Thema ist."
+  }
+ },
+ {
+  "id": "ss-apologizing-036",
+  "topic": "apologizing",
+  "level": "B1",
+  "text": {
+   "en": "I feel bad about missing our chat, and it won't happen again.",
+   "it": "Mi dispiace aver saltato la nostra chiacchierata, non succederà più.",
+   "es": "Me siento mal por faltar a nuestra charla; no volverá a pasar.",
+   "pt": "Sinto-me mal por ter faltado à nossa conversa; não volta a acontecer.",
+   "pt_BR": "Me sinto mal por ter faltado à nossa conversa; não vai acontecer de novo.",
+   "fr": "Je m'en veux d'avoir raté notre discussion, ça n'arrivera plus.",
+   "de": "Es tut mir leid, dass ich unser Gespräch verpasst habe. Das passiert nicht wieder."
+  }
+ },
+ {
+  "id": "ss-apologizing-037",
+  "topic": "apologizing",
+  "level": "B1",
+  "text": {
+   "en": "Please accept my apologies for the delay.",
+   "it": "Ti prego di accettare le mie scuse per il ritardo.",
+   "es": "Por favor, acepta mis disculpas por la demora.",
+   "pt": "Aceita as minhas desculpas pela demora, por favor.",
+   "pt_BR": "Por favor, aceite minhas desculpas pela demora.",
+   "fr": "Je te prie d'accepter mes excuses pour le retard.",
+   "de": "Bitte entschuldige die Verzögerung."
+  }
+ },
+ {
+  "id": "ss-apologizing-038",
+  "topic": "apologizing",
+  "level": "B1",
+  "text": {
+   "en": "I'm sorry, I got the time zone wrong.",
+   "it": "Scusa, ho sbagliato fuso orario.",
+   "es": "Perdona, me equivoqué con la zona horaria.",
+   "pt": "Desculpa, enganei-me no fuso horário.",
+   "pt_BR": "Desculpe, errei o fuso horário.",
+   "fr": "Pardon, je me suis trompé de fuseau horaire.",
+   "de": "Tut mir leid, ich habe mich in der Zeitzone geirrt."
+  }
+ },
+ {
+  "id": "ss-apologizing-039",
+  "topic": "apologizing",
+  "level": "B1",
+  "text": {
+   "en": "Sorry, I think I used the wrong word and it came out strange.",
+   "it": "Scusa, credo di aver usato la parola sbagliata e suonava strano.",
+   "es": "Perdona, creo que usé la palabra equivocada y sonó raro.",
+   "pt": "Desculpa, acho que usei a palavra errada e soou estranho.",
+   "pt_BR": "Desculpe, acho que usei a palavra errada e ficou estranho.",
+   "fr": "Pardon, je crois avoir employé le mauvais mot et ça a sonné bizarre.",
+   "de": "Entschuldige, ich glaube, ich habe das falsche Wort benutzt und es klang seltsam."
+  }
+ },
+ {
+  "id": "ss-apologizing-040",
+  "topic": "apologizing",
+  "level": "B1",
+  "text": {
+   "en": "Sorry for the trouble; let me make it up to you.",
+   "it": "Scusa il disturbo, lascia che mi faccia perdonare.",
+   "es": "Perdona las molestias; deja que te lo compense.",
+   "pt": "Desculpa o incómodo; deixa-me compensar-te.",
+   "pt_BR": "Desculpe o incômodo; deixe eu compensar você.",
+   "fr": "Désolé pour le dérangement, laisse-moi me rattraper.",
+   "de": "Entschuldige die Umstände, lass mich das wiedergutmachen."
+  }
+ },
+ {
+  "id": "ss-apologizing-041",
+  "topic": "apologizing",
+  "level": "B1",
+  "text": {
+   "en": "I'm sorry I wasn't more helpful earlier.",
+   "it": "Mi dispiace di non averti aiutato di più prima.",
+   "es": "Lamento no haber sido más útil antes.",
+   "pt": "Desculpa não ter sido mais útil antes.",
+   "pt_BR": "Desculpe não ter ajudado mais antes.",
+   "fr": "Désolé de ne pas t'avoir mieux aidé tout à l'heure.",
+   "de": "Tut mir leid, dass ich vorhin nicht hilfreicher war."
+  }
+ },
+ {
+  "id": "ss-apologizing-042",
+  "topic": "apologizing",
+  "level": "B1",
+  "text": {
+   "en": "It was careless of me, and I'm sorry.",
+   "it": "È stata una mia distrazione, e mi dispiace.",
+   "es": "Fue un descuido mío y lo siento.",
+   "pt": "Foi um descuido meu e peço desculpa.",
+   "pt_BR": "Foi um descuido meu e peço desculpas.",
+   "fr": "C'était un manque d'attention de ma part, pardon.",
+   "de": "Das war unachtsam von mir, es tut mir leid."
+  }
+ },
+ {
+  "id": "ss-apologizing-043",
+  "topic": "apologizing",
+  "level": "B1",
+  "text": {
+   "en": "There's no need to apologize, it was an easy mistake.",
+   "it": "Non devi scusarti, è un errore facilissimo.",
+   "es": "No hace falta que te disculpes, es un error fácil.",
+   "pt": "Não precisas de pedir desculpa, é um erro fácil.",
+   "pt_BR": "Não precisa pedir desculpa, é um erro fácil.",
+   "fr": "Pas besoin de t'excuser, c'est une erreur facile à faire.",
+   "de": "Du musst dich nicht entschuldigen, das ist ein leichter Fehler."
+  }
+ },
+ {
+  "id": "ss-apologizing-044",
+  "topic": "apologizing",
+  "level": "B2",
+  "text": {
+   "en": "I owe you an apology for my tone yesterday; I was under stress, but that's no excuse.",
+   "it": "Ti devo delle scuse per il tono di ieri: ero sotto stress, ma non è una giustificazione.",
+   "es": "Te debo una disculpa por mi tono de ayer; estaba bajo mucho estrés, pero eso no es excusa.",
+   "pt": "Devo-te um pedido de desculpa pelo meu tom de ontem; estava sob stress, mas isso não é desculpa.",
+   "pt_BR": "Te devo um pedido de desculpas pelo meu tom de ontem; eu estava sob estresse, mas isso não é desculpa.",
+   "fr": "Je te dois des excuses pour mon ton d'hier ; j'étais sous pression, mais ce n'est pas une excuse.",
+   "de": "Ich schulde dir eine Entschuldigung für meinen Ton gestern; ich stand unter Stress, aber das ist keine Entschuldigung."
+  }
+ },
+ {
+  "id": "ss-apologizing-045",
+  "topic": "apologizing",
+  "level": "B2",
+  "text": {
+   "en": "I sincerely apologize for any offense my comment may have caused.",
+   "it": "Mi scuso sinceramente per l'eventuale offesa causata dal mio commento.",
+   "es": "Pido sinceras disculpas por cualquier ofensa que mi comentario haya podido causar.",
+   "pt": "Peço sinceras desculpas por qualquer ofensa que o meu comentário possa ter causado.",
+   "pt_BR": "Peço sinceras desculpas por qualquer ofensa que meu comentário possa ter causado.",
+   "fr": "Je m'excuse sincèrement pour toute offense que mon commentaire aurait pu causer.",
+   "de": "Ich entschuldige mich aufrichtig, falls mein Kommentar jemanden verletzt hat."
+  }
+ },
+ {
+  "id": "ss-apologizing-046",
+  "topic": "apologizing",
+  "level": "B2",
+  "text": {
+   "en": "I regret not telling you sooner that I couldn't make it.",
+   "it": "Mi dispiace di non averti avvisato prima che non potevo venire.",
+   "es": "Lamento no haberte avisado antes de que no podía ir.",
+   "pt": "Lamento não te ter avisado mais cedo de que não podia ir.",
+   "pt_BR": "Lamento não ter avisado antes que eu não podia ir.",
+   "fr": "Je regrette de ne pas t'avoir prévenu plus tôt que je ne pouvais pas venir.",
+   "de": "Es tut mir leid, dass ich dir nicht früher Bescheid gesagt habe, dass ich nicht kommen kann."
+  }
+ },
+ {
+  "id": "ss-apologizing-047",
+  "topic": "apologizing",
+  "level": "B2",
+  "text": {
+   "en": "Apologies for the inconvenience; I should have confirmed the details beforehand.",
+   "it": "Scusa il disagio, avrei dovuto confermare i dettagli in anticipo.",
+   "es": "Disculpa las molestias; debería haber confirmado los detalles de antemano.",
+   "pt": "Desculpa o transtorno; devia ter confirmado os detalhes antes.",
+   "pt_BR": "Desculpe o transtorno; eu deveria ter confirmado os detalhes antes.",
+   "fr": "Toutes mes excuses pour la gêne ; j'aurais dû confirmer les détails à l'avance.",
+   "de": "Entschuldige die Unannehmlichkeiten; ich hätte die Details vorher bestätigen sollen."
+  }
+ },
+ {
+  "id": "ss-apologizing-048",
+  "topic": "apologizing",
+  "level": "B2",
+  "text": {
+   "en": "I'd like to make amends for the mix-up, if you'll let me.",
+   "it": "Vorrei rimediare al disguido, se me lo permetti.",
+   "es": "Me gustaría enmendar el malentendido, si me lo permites.",
+   "pt": "Gostava de reparar a confusão, se me deixares.",
+   "pt_BR": "Gostaria de reparar a confusão, se você deixar.",
+   "fr": "J'aimerais réparer cette confusion, si tu me le permets.",
+   "de": "Ich würde das Durcheinander gern wiedergutmachen, wenn du mich lässt."
+  }
+ },
+ {
+  "id": "ss-apologizing-049",
+  "topic": "apologizing",
+  "level": "B2",
+  "text": {
+   "en": "Please don't take it personally; I expressed myself badly.",
+   "it": "Non prenderla sul personale, ho formulato male la frase.",
+   "es": "Por favor, no lo tomes como algo personal; me expresé mal.",
+   "pt": "Por favor, não leves a mal; expressei-me mal.",
+   "pt_BR": "Por favor, não leve para o lado pessoal; eu me expressei mal.",
+   "fr": "Ne le prends pas personnellement, j'ai mal formulé ma phrase.",
+   "de": "Nimm es bitte nicht persönlich; ich habe mich schlecht ausgedrückt."
+  }
+ },
+ {
+  "id": "ss-apologizing-050",
+  "topic": "apologizing",
+  "level": "B2",
+  "text": {
+   "en": "I take full responsibility for the misunderstanding, and I'm sorry it caused trouble.",
+   "it": "Mi assumo tutta la responsabilità dell'equivoco e mi dispiace che abbia creato problemi.",
+   "es": "Asumo toda la responsabilidad del malentendido y lamento que haya causado problemas.",
+   "pt": "Assumo toda a responsabilidade pelo mal-entendido e lamento que tenha causado problemas.",
+   "pt_BR": "Assumo toda a responsabilidade pelo mal-entendido e sinto muito por ter causado problemas.",
+   "fr": "J'assume l'entière responsabilité de ce malentendu et je suis désolé qu'il ait causé des ennuis.",
+   "de": "Ich übernehme die volle Verantwortung für das Missverständnis und bedaure, dass es Ärger verursacht hat."
+  }
+ },
+ {
+  "id": "ss-thanking-001",
+  "topic": "thanking",
+  "level": "A1",
+  "text": {
+   "en": "Thank you!",
+   "it": "Grazie!",
+   "es": "¡Gracias!",
+   "pt": "Obrigado!",
+   "pt_BR": "Obrigado!",
+   "fr": "Merci !",
+   "de": "Danke!"
+  }
+ },
+ {
+  "id": "ss-thanking-002",
+  "topic": "thanking",
+  "level": "A1",
+  "text": {
+   "en": "Thanks a lot!",
+   "it": "Grazie mille!",
+   "es": "¡Muchas gracias!",
+   "pt": "Muito obrigado!",
+   "pt_BR": "Muito obrigado!",
+   "fr": "Merci beaucoup !",
+   "de": "Vielen Dank!"
+  }
+ },
+ {
+  "id": "ss-thanking-003",
+  "topic": "thanking",
+  "level": "A1",
+  "text": {
+   "en": "Thank you very much.",
+   "it": "Ti ringrazio molto.",
+   "es": "Te lo agradezco mucho.",
+   "pt": "Agradeço-te muito.",
+   "pt_BR": "Agradeço muito.",
+   "fr": "Je te remercie beaucoup.",
+   "de": "Ich danke dir sehr."
+  }
+ },
+ {
+  "id": "ss-thanking-004",
+  "topic": "thanking",
+  "level": "A1",
+  "text": {
+   "en": "Thanks for your help.",
+   "it": "Grazie per il tuo aiuto.",
+   "es": "Gracias por tu ayuda.",
+   "pt": "Obrigado pela tua ajuda.",
+   "pt_BR": "Obrigado pela sua ajuda.",
+   "fr": "Merci pour ton aide.",
+   "de": "Danke für deine Hilfe."
+  }
+ },
+ {
+  "id": "ss-thanking-005",
+  "topic": "thanking",
+  "level": "A1",
+  "text": {
+   "en": "Thank you, that's kind.",
+   "it": "Grazie, sei gentile.",
+   "es": "Gracias, qué amable.",
+   "pt": "Obrigado, que simpatia!",
+   "pt_BR": "Obrigado, que gentileza!",
+   "fr": "Merci, c'est gentil.",
+   "de": "Danke, das ist nett."
+  }
+ },
+ {
+  "id": "ss-thanking-006",
+  "topic": "thanking",
+  "level": "A1",
+  "text": {
+   "en": "Thanks, my friend!",
+   "it": "Grazie, amico mio!",
+   "es": "¡Gracias, amigo!",
+   "pt": "Obrigado, amigo!",
+   "pt_BR": "Valeu, meu amigo!",
+   "fr": "Merci, mon ami !",
+   "de": "Danke, mein Freund!"
+  }
+ },
+ {
+  "id": "ss-thanking-007",
+  "topic": "thanking",
+  "level": "A1",
+  "text": {
+   "en": "Thank you for the message.",
+   "it": "Grazie per il messaggio.",
+   "es": "Gracias por el mensaje.",
+   "pt": "Obrigado pela mensagem.",
+   "pt_BR": "Obrigado pela mensagem.",
+   "fr": "Merci pour le message.",
+   "de": "Danke für die Nachricht."
+  }
+ },
+ {
+  "id": "ss-thanking-008",
+  "topic": "thanking",
+  "level": "A1",
+  "text": {
+   "en": "You're welcome!",
+   "it": "Prego!",
+   "es": "¡De nada!",
+   "pt": "De nada!",
+   "pt_BR": "De nada!",
+   "fr": "Je t'en prie !",
+   "de": "Gern geschehen!"
+  }
+ },
+ {
+  "id": "ss-thanking-009",
+  "topic": "thanking",
+  "level": "A1",
+  "text": {
+   "en": "Thanks, good idea!",
+   "it": "Grazie, bella idea!",
+   "es": "¡Gracias, buena idea!",
+   "pt": "Obrigado, boa ideia!",
+   "pt_BR": "Obrigado, boa ideia!",
+   "fr": "Merci, bonne idée !",
+   "de": "Danke, gute Idee!"
+  }
+ },
+ {
+  "id": "ss-thanking-010",
+  "topic": "thanking",
+  "level": "A1",
+  "text": {
+   "en": "Thank you, see you soon!",
+   "it": "Grazie, a presto!",
+   "es": "¡Gracias, hasta pronto!",
+   "pt": "Obrigado, até breve!",
+   "pt_BR": "Obrigado, até logo!",
+   "fr": "Merci, à bientôt !",
+   "de": "Danke, bis bald!"
+  }
+ },
+ {
+  "id": "ss-thanking-011",
+  "topic": "thanking",
+  "level": "A1",
+  "text": {
+   "en": "Thanks for the photo.",
+   "it": "Grazie per la foto.",
+   "es": "Gracias por la foto.",
+   "pt": "Obrigado pela foto.",
+   "pt_BR": "Obrigado pela foto.",
+   "fr": "Merci pour la photo.",
+   "de": "Danke für das Foto."
+  }
+ },
+ {
+  "id": "ss-thanking-012",
+  "topic": "thanking",
+  "level": "A1",
+  "text": {
+   "en": "Thank you for the answer.",
+   "it": "Grazie per la risposta.",
+   "es": "Gracias por la respuesta.",
+   "pt": "Obrigado pela resposta.",
+   "pt_BR": "Obrigado pela resposta.",
+   "fr": "Merci pour la réponse.",
+   "de": "Danke für die Antwort."
+  }
+ },
+ {
+  "id": "ss-thanking-013",
+  "topic": "thanking",
+  "level": "A1",
+  "text": {
+   "en": "Thank you, I like it.",
+   "it": "Grazie, mi piace.",
+   "es": "Gracias, me gusta.",
+   "pt": "Obrigado, gosto muito.",
+   "pt_BR": "Obrigado, gostei muito.",
+   "fr": "Merci, j'aime beaucoup.",
+   "de": "Danke, das gefällt mir."
+  }
+ },
+ {
+  "id": "ss-thanking-014",
+  "topic": "thanking",
+  "level": "A1",
+  "text": {
+   "en": "Thanks, have a nice day!",
+   "it": "Grazie, buona giornata!",
+   "es": "¡Gracias, que tengas un buen día!",
+   "pt": "Obrigado, e um bom dia para ti!",
+   "pt_BR": "Obrigado, tenha um ótimo dia!",
+   "fr": "Merci, bonne journée !",
+   "de": "Danke, schönen Tag noch!"
+  }
+ },
+ {
+  "id": "ss-thanking-015",
+  "topic": "thanking",
+  "level": "A1",
+  "text": {
+   "en": "Thank you for today.",
+   "it": "Grazie per oggi.",
+   "es": "Gracias por hoy.",
+   "pt": "Obrigado por hoje.",
+   "pt_BR": "Obrigado por hoje.",
+   "fr": "Merci pour aujourd'hui.",
+   "de": "Danke für heute."
+  }
+ },
+ {
+  "id": "ss-thanking-016",
+  "topic": "thanking",
+  "level": "A2",
+  "text": {
+   "en": "Thank you for teaching me a new word.",
+   "it": "Grazie per avermi insegnato una parola nuova.",
+   "es": "Gracias por enseñarme una palabra nueva.",
+   "pt": "Obrigado por me teres ensinado uma palavra nova.",
+   "pt_BR": "Obrigado por me ensinar uma palavra nova.",
+   "fr": "Merci de m'avoir appris un nouveau mot.",
+   "de": "Danke, dass du mir ein neues Wort beigebracht hast."
+  }
+ },
+ {
+  "id": "ss-thanking-017",
+  "topic": "thanking",
+  "level": "A2",
+  "text": {
+   "en": "Thanks for being so patient with me.",
+   "it": "Grazie per essere così paziente con me.",
+   "es": "Gracias por tener tanta paciencia conmigo.",
+   "pt": "Obrigado por teres tanta paciência comigo.",
+   "pt_BR": "Obrigado por ter tanta paciência comigo.",
+   "fr": "Merci d'être si patient avec moi.",
+   "de": "Danke, dass du so geduldig mit mir bist."
+  }
+ },
+ {
+  "id": "ss-thanking-018",
+  "topic": "thanking",
+  "level": "A2",
+  "text": {
+   "en": "Thank you for the recommendation.",
+   "it": "Grazie per la raccomandazione.",
+   "es": "Gracias por la recomendación.",
+   "pt": "Obrigado pela recomendação.",
+   "pt_BR": "Obrigado pela recomendação.",
+   "fr": "Merci pour la recommandation.",
+   "de": "Danke für die Empfehlung."
+  }
+ },
+ {
+  "id": "ss-thanking-019",
+  "topic": "thanking",
+  "level": "A2",
+  "text": {
+   "en": "Thanks for showing me your city.",
+   "it": "Grazie per avermi mostrato la tua città.",
+   "es": "Gracias por enseñarme tu ciudad.",
+   "pt": "Obrigado por me mostrares a tua cidade.",
+   "pt_BR": "Obrigado por me mostrar sua cidade.",
+   "fr": "Merci de m'avoir fait découvrir ta ville.",
+   "de": "Danke, dass du mir deine Stadt gezeigt hast."
+  }
+ },
+ {
+  "id": "ss-thanking-020",
+  "topic": "thanking",
+  "level": "A2",
+  "text": {
+   "en": "Thank you for correcting my mistakes.",
+   "it": "Grazie per aver corretto i miei errori.",
+   "es": "Gracias por corregir mis errores.",
+   "pt": "Obrigado por corrigires os meus erros.",
+   "pt_BR": "Obrigado por corrigir meus erros.",
+   "fr": "Merci de corriger mes erreurs.",
+   "de": "Danke, dass du meine Fehler korrigierst."
+  }
+ },
+ {
+  "id": "ss-thanking-021",
+  "topic": "thanking",
+  "level": "A2",
+  "text": {
+   "en": "Thanks for the invitation!",
+   "it": "Grazie per l'invito!",
+   "es": "¡Gracias por la invitación!",
+   "pt": "Obrigado pelo convite!",
+   "pt_BR": "Obrigado pelo convite!",
+   "fr": "Merci pour l'invitation !",
+   "de": "Danke für die Einladung!"
+  }
+ },
+ {
+  "id": "ss-thanking-022",
+  "topic": "thanking",
+  "level": "A2",
+  "text": {
+   "en": "Thank you for replying so quickly.",
+   "it": "Grazie per aver risposto così in fretta.",
+   "es": "Gracias por responder tan rápido.",
+   "pt": "Obrigado por responderes tão depressa.",
+   "pt_BR": "Obrigado por responder tão rápido.",
+   "fr": "Merci d'avoir répondu si vite.",
+   "de": "Danke für die schnelle Antwort."
+  }
+ },
+ {
+  "id": "ss-thanking-023",
+  "topic": "thanking",
+  "level": "A2",
+  "text": {
+   "en": "I really appreciate your help.",
+   "it": "Apprezzo davvero il tuo aiuto.",
+   "es": "De verdad aprecio tu ayuda.",
+   "pt": "Agradeço mesmo a tua ajuda.",
+   "pt_BR": "Agradeço muito a sua ajuda.",
+   "fr": "J'apprécie vraiment ton aide.",
+   "de": "Ich schätze deine Hilfe wirklich sehr."
+  }
+ },
+ {
+  "id": "ss-thanking-024",
+  "topic": "thanking",
+  "level": "A2",
+  "text": {
+   "en": "Thanks for the nice chat today.",
+   "it": "Grazie per la bella chiacchierata di oggi.",
+   "es": "Gracias por la agradable charla de hoy.",
+   "pt": "Obrigado pela boa conversa de hoje.",
+   "pt_BR": "Obrigado pelo bom papo de hoje.",
+   "fr": "Merci pour cette belle discussion aujourd'hui.",
+   "de": "Danke für das nette Gespräch heute."
+  }
+ },
+ {
+  "id": "ss-thanking-025",
+  "topic": "thanking",
+  "level": "A2",
+  "text": {
+   "en": "Thank you for explaining it so clearly.",
+   "it": "Grazie per avermelo spiegato così chiaramente.",
+   "es": "Gracias por explicármelo tan claro.",
+   "pt": "Obrigado por me explicares isso tão bem.",
+   "pt_BR": "Obrigado por me explicar isso tão bem.",
+   "fr": "Merci de me l'avoir expliqué si clairement.",
+   "de": "Danke, dass du es so klar erklärt hast."
+  }
+ },
+ {
+  "id": "ss-thanking-026",
+  "topic": "thanking",
+  "level": "A2",
+  "text": {
+   "en": "Thanks for sharing your recipe.",
+   "it": "Grazie per aver condiviso la tua ricetta.",
+   "es": "Gracias por compartir tu receta.",
+   "pt": "Obrigado por partilhares a tua receita.",
+   "pt_BR": "Obrigado por compartilhar sua receita.",
+   "fr": "Merci d'avoir partagé ta recette.",
+   "de": "Danke, dass du dein Rezept geteilt hast."
+  }
+ },
+ {
+  "id": "ss-thanking-027",
+  "topic": "thanking",
+  "level": "A2",
+  "text": {
+   "en": "Thanks, that was very useful.",
+   "it": "Grazie, è stato molto utile.",
+   "es": "Gracias, fue muy útil.",
+   "pt": "Obrigado, foi muito útil.",
+   "pt_BR": "Obrigado, foi muito útil.",
+   "fr": "Merci, c'était très utile.",
+   "de": "Danke, das war sehr nützlich."
+  }
+ },
+ {
+  "id": "ss-thanking-028",
+  "topic": "thanking",
+  "level": "A2",
+  "text": {
+   "en": "Thank you for the tip about the museum.",
+   "it": "Grazie per il consiglio sul museo.",
+   "es": "Gracias por el consejo sobre el museo.",
+   "pt": "Obrigado pela dica sobre o museu.",
+   "pt_BR": "Obrigado pela dica sobre o museu.",
+   "fr": "Merci pour le conseil sur le musée.",
+   "de": "Danke für den Tipp zum Museum."
+  }
+ },
+ {
+  "id": "ss-thanking-029",
+  "topic": "thanking",
+  "level": "A2",
+  "text": {
+   "en": "Thanks for thinking of me.",
+   "it": "Grazie per aver pensato a me.",
+   "es": "Gracias por acordarte de mí.",
+   "pt": "Obrigado por te lembrares de mim.",
+   "pt_BR": "Obrigado por se lembrar de mim.",
+   "fr": "Merci d'avoir pensé à moi.",
+   "de": "Danke, dass du an mich gedacht hast."
+  }
+ },
+ {
+  "id": "ss-thanking-030",
+  "topic": "thanking",
+  "level": "A2",
+  "text": {
+   "en": "Thank you, it was a pleasure to talk to you.",
+   "it": "Grazie, è stato un piacere parlare con te.",
+   "es": "Gracias, fue un placer hablar contigo.",
+   "pt": "Obrigado, foi um prazer falar contigo.",
+   "pt_BR": "Obrigado, foi um prazer conversar com você.",
+   "fr": "Merci, c'était un plaisir de discuter avec toi.",
+   "de": "Danke, es war schön, mit dir zu sprechen."
+  }
+ },
+ {
+  "id": "ss-thanking-031",
+  "topic": "thanking",
+  "level": "B1",
+  "text": {
+   "en": "Thank you for taking the time to answer all my questions.",
+   "it": "Grazie per aver trovato il tempo di rispondere a tutte le mie domande.",
+   "es": "Gracias por tomarte el tiempo de responder a todas mis preguntas.",
+   "pt": "Obrigado por teres arranjado tempo para responder a todas as minhas perguntas.",
+   "pt_BR": "Obrigado por ter tirado um tempo para responder a todas as minhas perguntas.",
+   "fr": "Merci d'avoir pris le temps de répondre à toutes mes questions.",
+   "de": "Danke, dass du dir die Zeit genommen hast, alle meine Fragen zu beantworten."
+  }
+ },
+ {
+  "id": "ss-thanking-032",
+  "topic": "thanking",
+  "level": "B1",
+  "text": {
+   "en": "Thank you for your advice about learning languages.",
+   "it": "Grazie dei tuoi consigli su come imparare le lingue.",
+   "es": "Gracias por tus consejos para aprender idiomas.",
+   "pt": "Obrigado pelos teus conselhos para aprender línguas.",
+   "pt_BR": "Obrigado pelos seus conselhos para aprender idiomas.",
+   "fr": "Merci pour tes conseils pour apprendre les langues.",
+   "de": "Danke für deine Tipps zum Sprachenlernen."
+  }
+ },
+ {
+  "id": "ss-thanking-033",
+  "topic": "thanking",
+  "level": "B1",
+  "text": {
+   "en": "Thanks for helping me practice; I feel more confident now.",
+   "it": "Grazie per avermi aiutato a esercitarmi, ora ho più fiducia.",
+   "es": "Gracias por ayudarme a practicar; ahora tengo más confianza.",
+   "pt": "Obrigado por me ajudares a praticar; agora tenho mais confiança.",
+   "pt_BR": "Obrigado por me ajudar a praticar; agora tenho mais confiança.",
+   "fr": "Merci de m'avoir aidé à m'entraîner ; j'ai plus confiance en moi maintenant.",
+   "de": "Danke, dass du mir beim Üben geholfen hast; jetzt fühle ich mich sicherer."
+  }
+ },
+ {
+  "id": "ss-thanking-034",
+  "topic": "thanking",
+  "level": "B1",
+  "text": {
+   "en": "Thank you for introducing me to your culture.",
+   "it": "Grazie per avermi fatto conoscere la tua cultura.",
+   "es": "Gracias por presentarme tu cultura.",
+   "pt": "Obrigado por me teres apresentado a tua cultura.",
+   "pt_BR": "Obrigado por me apresentar a sua cultura.",
+   "fr": "Merci de m'avoir fait découvrir ta culture.",
+   "de": "Danke, dass du mir deine Kultur nähergebracht hast."
+  }
+ },
+ {
+  "id": "ss-thanking-035",
+  "topic": "thanking",
+  "level": "B1",
+  "text": {
+   "en": "I appreciate you sharing your story with me.",
+   "it": "Apprezzo che tu abbia condiviso la tua storia con me.",
+   "es": "Aprecio que hayas compartido tu historia conmigo.",
+   "pt": "Agradeço por teres partilhado a tua história comigo.",
+   "pt_BR": "Agradeço por ter compartilhado sua história comigo.",
+   "fr": "J'apprécie que tu m'aies raconté ton histoire.",
+   "de": "Ich schätze es, dass du deine Geschichte mit mir geteilt hast."
+  }
+ },
+ {
+  "id": "ss-thanking-036",
+  "topic": "thanking",
+  "level": "B1",
+  "text": {
+   "en": "Thanks for the warm welcome to the group.",
+   "it": "Grazie per il caloroso benvenuto nel gruppo.",
+   "es": "Gracias por la cálida bienvenida al grupo.",
+   "pt": "Obrigado pela calorosa receção no grupo.",
+   "pt_BR": "Obrigado pela calorosa recepção no grupo.",
+   "fr": "Merci pour l'accueil chaleureux dans le groupe.",
+   "de": "Danke für den herzlichen Empfang in der Gruppe."
+  }
+ },
+ {
+  "id": "ss-thanking-037",
+  "topic": "thanking",
+  "level": "B1",
+  "text": {
+   "en": "It means a lot that you took the time to help me.",
+   "it": "Significa molto che tu abbia trovato il tempo per aiutarmi.",
+   "es": "Significa mucho que te hayas tomado el tiempo de ayudarme.",
+   "pt": "Significa muito que tenhas arranjado tempo para me ajudar.",
+   "pt_BR": "Significa muito que você tenha tirado um tempo para me ajudar.",
+   "fr": "Ça compte beaucoup que tu aies pris le temps de m'aider.",
+   "de": "Es bedeutet mir viel, dass du dir die Zeit genommen hast, mir zu helfen."
+  }
+ },
+ {
+  "id": "ss-thanking-038",
+  "topic": "thanking",
+  "level": "B1",
+  "text": {
+   "en": "Thank you for the detailed directions; they were really helpful.",
+   "it": "Grazie per le indicazioni dettagliate, sono state davvero utili.",
+   "es": "Gracias por las indicaciones detalladas; fueron muy útiles.",
+   "pt": "Obrigado pelas indicações detalhadas; foram mesmo úteis.",
+   "pt_BR": "Obrigado pelas instruções detalhadas; foram muito úteis.",
+   "fr": "Merci pour les indications détaillées, elles m'ont vraiment aidé.",
+   "de": "Danke für die genaue Wegbeschreibung, sie war wirklich hilfreich."
+  }
+ },
+ {
+  "id": "ss-thanking-039",
+  "topic": "thanking",
+  "level": "B1",
+  "text": {
+   "en": "Thanks for understanding when I had to cancel.",
+   "it": "Grazie per aver capito quando ho dovuto annullare.",
+   "es": "Gracias por entender cuando tuve que cancelar.",
+   "pt": "Obrigado por teres compreendido quando tive de cancelar.",
+   "pt_BR": "Obrigado por ter entendido quando precisei cancelar.",
+   "fr": "Merci d'avoir compris quand j'ai dû annuler.",
+   "de": "Danke für dein Verständnis, als ich absagen musste."
+  }
+ },
+ {
+  "id": "ss-thanking-040",
+  "topic": "thanking",
+  "level": "B1",
+  "text": {
+   "en": "I can't thank you enough for your support this week.",
+   "it": "Non so come ringraziarti abbastanza per il tuo sostegno questa settimana.",
+   "es": "No sé cómo agradecerte tu apoyo esta semana.",
+   "pt": "Não tenho como agradecer o teu apoio esta semana.",
+   "pt_BR": "Não sei como agradecer o seu apoio esta semana.",
+   "fr": "Je ne sais pas comment te remercier pour ton soutien cette semaine.",
+   "de": "Ich kann dir für deine Unterstützung diese Woche gar nicht genug danken."
+  }
+ },
+ {
+  "id": "ss-thanking-041",
+  "topic": "thanking",
+  "level": "B1",
+  "text": {
+   "en": "Thanks for your honesty; I value it.",
+   "it": "Grazie per la tua sincerità, la apprezzo molto.",
+   "es": "Gracias por tu sinceridad; la valoro mucho.",
+   "pt": "Obrigado pela tua sinceridade; valorizo-a muito.",
+   "pt_BR": "Obrigado pela sua sinceridade; eu valorizo isso.",
+   "fr": "Merci pour ta franchise, je l'apprécie.",
+   "de": "Danke für deine Ehrlichkeit, die schätze ich sehr."
+  }
+ },
+ {
+  "id": "ss-thanking-042",
+  "topic": "thanking",
+  "level": "B1",
+  "text": {
+   "en": "Thank you for making me feel at home in this conversation.",
+   "it": "Grazie per avermi fatto sentire a casa in questa conversazione.",
+   "es": "Gracias por hacerme sentir como en casa en esta conversación.",
+   "pt": "Obrigado por me fazeres sentir em casa nesta conversa.",
+   "pt_BR": "Obrigado por me fazer sentir em casa nesta conversa.",
+   "fr": "Merci de m'avoir fait sentir comme chez moi dans cette conversation.",
+   "de": "Danke, dass ich mich in diesem Gespräch wie zu Hause fühlen darf."
+  }
+ },
+ {
+  "id": "ss-thanking-043",
+  "topic": "thanking",
+  "level": "B1",
+  "text": {
+   "en": "Thanks to you, I learned something new today.",
+   "it": "Grazie a te, oggi ho imparato qualcosa di nuovo.",
+   "es": "Gracias a ti, hoy aprendí algo nuevo.",
+   "pt": "Graças a ti, aprendi hoje algo novo.",
+   "pt_BR": "Graças a você, aprendi algo novo hoje.",
+   "fr": "Grâce à toi, j'ai appris quelque chose de nouveau aujourd'hui.",
+   "de": "Dank dir habe ich heute etwas Neues gelernt."
+  }
+ },
+ {
+  "id": "ss-thanking-044",
+  "topic": "thanking",
+  "level": "B2",
+  "text": {
+   "en": "I'm deeply grateful for your generosity and for the time you've devoted to helping me.",
+   "it": "Ti ringrazio di cuore per la tua generosità e per il tempo che mi hai dedicato.",
+   "es": "Te agradezco profundamente tu generosidad y el tiempo que me has dedicado.",
+   "pt": "Agradeço-te profundamente a tua generosidade e o tempo que me dedicaste.",
+   "pt_BR": "Agradeço profundamente a sua generosidade e o tempo que você dedicou para me ajudar.",
+   "fr": "Je te remercie du fond du cœur pour ta générosité et le temps que tu m'as consacré.",
+   "de": "Ich bin dir von Herzen dankbar für deine Großzügigkeit und die Zeit, die du mir gewidmet hast."
+  }
+ },
+ {
+  "id": "ss-thanking-045",
+  "topic": "thanking",
+  "level": "B2",
+  "text": {
+   "en": "Your feedback made a real difference to my progress, and I truly appreciate it.",
+   "it": "Il tuo feedback ha fatto davvero la differenza nei miei progressi e lo apprezzo molto.",
+   "es": "Tus comentarios marcaron una verdadera diferencia en mi progreso y lo aprecio de verdad.",
+   "pt": "O teu feedback fez mesmo a diferença no meu progresso e agradeço-te por isso.",
+   "pt_BR": "Seu feedback fez muita diferença no meu progresso, e eu agradeço de verdade.",
+   "fr": "Tes retours ont vraiment fait la différence dans mes progrès, et je l'apprécie vraiment.",
+   "de": "Dein Feedback hat meinen Fortschritt wirklich vorangebracht, und ich weiß das sehr zu schätzen."
+  }
+ },
+ {
+  "id": "ss-thanking-046",
+  "topic": "thanking",
+  "level": "B2",
+  "text": {
+   "en": "I'm at a loss for words to thank you for your kindness.",
+   "it": "Non ho parole per ringraziarti della tua gentilezza.",
+   "es": "No tengo palabras para agradecerte tu amabilidad.",
+   "pt": "Não tenho palavras para agradecer a tua gentileza.",
+   "pt_BR": "Não tenho palavras para agradecer a sua gentileza.",
+   "fr": "Je n'ai pas de mots pour te remercier de ta gentillesse.",
+   "de": "Mir fehlen die Worte, um dir für deine Freundlichkeit zu danken."
+  }
+ },
+ {
+  "id": "ss-thanking-047",
+  "topic": "thanking",
+  "level": "B2",
+  "text": {
+   "en": "I'd like to express my gratitude for everything you've taught me about your language.",
+   "it": "Vorrei esprimere la mia gratitudine per tutto ciò che mi hai insegnato sulla tua lingua.",
+   "es": "Quisiera expresar mi gratitud por todo lo que me has enseñado sobre tu idioma.",
+   "pt": "Gostava de expressar a minha gratidão por tudo o que me ensinaste sobre a tua língua.",
+   "pt_BR": "Gostaria de expressar minha gratidão por tudo o que você me ensinou sobre o seu idioma.",
+   "fr": "Je voudrais exprimer ma gratitude pour tout ce que tu m'as appris sur ta langue.",
+   "de": "Ich möchte dir für alles danken, was du mir über deine Sprache beigebracht hast."
+  }
+ },
+ {
+  "id": "ss-thanking-048",
+  "topic": "thanking",
+  "level": "B2",
+  "text": {
+   "en": "Thank you for going out of your way to help; I won't forget it.",
+   "it": "Grazie per l'impegno che ci hai messo nell'aiutarmi, non lo dimenticherò.",
+   "es": "Gracias por esforzarte tanto en ayudarme; no lo olvidaré.",
+   "pt": "Obrigado por teres feito tanto para me ajudar; não me vou esquecer.",
+   "pt_BR": "Obrigado por todo o esforço para me ajudar; não vou esquecer.",
+   "fr": "Merci de t'être donné tant de mal pour m'aider ; je ne l'oublierai pas.",
+   "de": "Danke, dass du dir so viel Mühe gegeben hast, mir zu helfen; das vergesse ich nicht."
+  }
+ },
+ {
+  "id": "ss-thanking-049",
+  "topic": "thanking",
+  "level": "B2",
+  "text": {
+   "en": "I appreciate your patience and your willingness to meet me halfway in a language I'm still learning.",
+   "it": "Apprezzo la tua pazienza e la tua disponibilità a venirmi incontro in una lingua che sto ancora imparando.",
+   "es": "Aprecio tu paciencia y tu disposición a adaptarte a mí en un idioma que todavía estoy aprendiendo.",
+   "pt": "Agradeço a tua paciência e a tua disponibilidade para vires ao meu encontro numa língua que ainda estou a aprender.",
+   "pt_BR": "Agradeço a sua paciência e a sua disposição de me encontrar no meio do caminho em um idioma que ainda estou aprendendo.",
+   "fr": "J'apprécie ta patience et ta volonté de faire un bout de chemin vers moi dans une langue que j'apprends encore.",
+   "de": "Ich schätze deine Geduld und dein Entgegenkommen in einer Sprache, die ich noch lerne."
+  }
+ },
+ {
+  "id": "ss-thanking-050",
+  "topic": "thanking",
+  "level": "B2",
+  "text": {
+   "en": "Please pass on my thanks to your family for their hospitality.",
+   "it": "Per favore, ringrazia da parte mia la tua famiglia per l'ospitalità.",
+   "es": "Por favor, dale las gracias de mi parte a tu familia por su hospitalidad.",
+   "pt": "Por favor, agradece de minha parte à tua família pela hospitalidade.",
+   "pt_BR": "Por favor, agradeça à sua família por mim pela hospitalidade.",
+   "fr": "Transmets mes remerciements à ta famille pour son hospitalité.",
+   "de": "Bitte richte deiner Familie meinen Dank für die Gastfreundschaft aus."
+  }
+ }
+]

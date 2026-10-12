@@ -1,0 +1,982 @@
+[
+ {
+  "id": "ss-topup-001",
+  "topic": "greetings_intro",
+  "level": "A1",
+  "text": {
+   "en": "Good morning! How did you sleep?",
+   "it": "Buongiorno! Come hai dormito?",
+   "es": "¡Buenos días! ¿Cómo dormiste?",
+   "pt": "Bom dia! Como dormiste?",
+   "pt_BR": "Bom dia! Como você dormiu?",
+   "fr": "Bonjour ! Tu as bien dormi ?",
+   "de": "Guten Morgen! Wie hast du geschlafen?"
+  }
+ },
+ {
+  "id": "ss-topup-002",
+  "topic": "greetings_intro",
+  "level": "A1",
+  "text": {
+   "en": "Hi there, I'm new to this app.",
+   "it": "Ciao, sono nuovo in questa app.",
+   "es": "Hola, soy nuevo en esta app.",
+   "pt": "Olá, sou novo nesta app.",
+   "pt_BR": "Oi, sou novo neste app.",
+   "fr": "Salut, je suis nouveau sur cette appli.",
+   "de": "Hallo, ich bin neu in dieser App."
+  }
+ },
+ {
+  "id": "ss-topup-003",
+  "topic": "greetings_intro",
+  "level": "A2",
+  "text": {
+   "en": "I'm from Brazil, but I live in Berlin now.",
+   "it": "Vengo dal Brasile, ma ora vivo a Berlino.",
+   "es": "Soy de Brasil, pero ahora vivo en Berlín.",
+   "pt": "Sou do Brasil, mas agora vivo em Berlim.",
+   "pt_BR": "Sou do Brasil, mas agora moro em Berlim.",
+   "fr": "Je viens du Brésil, mais j'habite à Berlin maintenant.",
+   "de": "Ich komme aus Brasilien, wohne aber jetzt in Berlin."
+  }
+ },
+ {
+  "id": "ss-topup-004",
+  "topic": "greetings_intro",
+  "level": "B1",
+  "text": {
+   "en": "I've been wanting to practice with someone from another country, so I'm glad we matched.",
+   "it": "Volevo esercitarmi con qualcuno di un altro paese, quindi sono contento che ci siamo trovati.",
+   "es": "Tenía ganas de practicar con alguien de otro país, así que me alegra que hayamos coincidido.",
+   "pt": "Tinha vontade de praticar com alguém de outro país, por isso fico contente por termos dado match.",
+   "pt_BR": "Eu queria praticar com alguém de outro país, então fico feliz por a gente ter dado match.",
+   "fr": "J'avais envie de pratiquer avec quelqu'un d'un autre pays, alors je suis content que nous nous soyons trouvés.",
+   "de": "Ich wollte schon lange mit jemandem aus einem anderen Land üben, deshalb freue ich mich, dass wir uns gefunden haben."
+  }
+ },
+ {
+  "id": "ss-topup-005",
+  "topic": "greetings_intro",
+  "level": "B2",
+  "text": {
+   "en": "It's a pleasure to connect with someone who shares my curiosity about other cultures.",
+   "it": "È un piacere entrare in contatto con qualcuno che condivide la mia curiosità per le altre culture.",
+   "es": "Es un placer conectar con alguien que comparte mi curiosidad por otras culturas.",
+   "pt": "É um prazer conectar com alguém que partilha a minha curiosidade por outras culturas.",
+   "pt_BR": "É um prazer me conectar com alguém que compartilha a minha curiosidade por outras culturas.",
+   "fr": "C'est un plaisir d'échanger avec quelqu'un qui partage ma curiosité pour les autres cultures.",
+   "de": "Es freut mich, mit jemandem in Kontakt zu kommen, der meine Neugier auf andere Kulturen teilt."
+  }
+ },
+ {
+  "id": "ss-topup-006",
+  "topic": "getting_to_know",
+  "level": "A1",
+  "text": {
+   "en": "Do you have any pets?",
+   "it": "Hai animali domestici?",
+   "es": "¿Tienes mascotas?",
+   "pt": "Tens animais de estimação?",
+   "pt_BR": "Você tem animais de estimação?",
+   "fr": "Tu as des animaux de compagnie ?",
+   "de": "Hast du Haustiere?"
+  }
+ },
+ {
+  "id": "ss-topup-007",
+  "topic": "getting_to_know",
+  "level": "A2",
+  "text": {
+   "en": "What do you usually do on weekends?",
+   "it": "Cosa fai di solito nel fine settimana?",
+   "es": "¿Qué sueles hacer los fines de semana?",
+   "pt": "O que costumas fazer ao fim de semana?",
+   "pt_BR": "O que você costuma fazer nos fins de semana?",
+   "fr": "Qu'est-ce que tu fais d'habitude le week-end ?",
+   "de": "Was machst du normalerweise am Wochenende?"
+  }
+ },
+ {
+  "id": "ss-topup-008",
+  "topic": "getting_to_know",
+  "level": "A2",
+  "text": {
+   "en": "Do you live in a house or an apartment?",
+   "it": "Vivi in una casa o in un appartamento?",
+   "es": "¿Vives en una casa o en un piso?",
+   "pt": "Vives numa casa ou num apartamento?",
+   "pt_BR": "Você mora em uma casa ou em um apartamento?",
+   "fr": "Tu habites dans une maison ou dans un appartement ?",
+   "de": "Wohnst du in einem Haus oder in einer Wohnung?"
+  }
+ },
+ {
+  "id": "ss-topup-009",
+  "topic": "getting_to_know",
+  "level": "B1",
+  "text": {
+   "en": "What made you decide to learn a new language?",
+   "it": "Cosa ti ha spinto a imparare una nuova lingua?",
+   "es": "¿Qué te llevó a decidir aprender un idioma nuevo?",
+   "pt": "O que te levou a decidir aprender uma nova língua?",
+   "pt_BR": "O que levou você a decidir aprender uma nova língua?",
+   "fr": "Qu'est-ce qui t'a poussé à apprendre une nouvelle langue ?",
+   "de": "Was hat dich dazu gebracht, eine neue Sprache zu lernen?"
+  }
+ },
+ {
+  "id": "ss-topup-010",
+  "topic": "getting_to_know",
+  "level": "B2",
+  "text": {
+   "en": "I'd love to hear what a typical day looks like for you.",
+   "it": "Mi piacerebbe sapere com'è una tua giornata tipo.",
+   "es": "Me encantaría saber cómo es un día normal para ti.",
+   "pt": "Gostava de saber como é um dia normal para ti.",
+   "pt_BR": "Eu adoraria saber como é um dia normal para você.",
+   "fr": "J'aimerais bien savoir à quoi ressemble une journée type pour toi.",
+   "de": "Ich würde gern hören, wie ein typischer Tag bei dir aussieht."
+  }
+ },
+ {
+  "id": "ss-topup-011",
+  "topic": "making_plans",
+  "level": "A1",
+  "text": {
+   "en": "Are you free on Saturday?",
+   "it": "Sei libero sabato?",
+   "es": "¿Estás libre el sábado?",
+   "pt": "Estás livre no sábado?",
+   "pt_BR": "Você está livre no sábado?",
+   "fr": "Tu es libre samedi ?",
+   "de": "Hast du am Samstag Zeit?"
+  }
+ },
+ {
+  "id": "ss-topup-012",
+  "topic": "making_plans",
+  "level": "A2",
+  "text": {
+   "en": "Let's meet at the station at half past five.",
+   "it": "Vediamoci alla stazione alle cinque e mezza.",
+   "es": "Quedemos en la estación a las cinco y media.",
+   "pt": "Encontramo-nos na estação às cinco e meia.",
+   "pt_BR": "Vamos nos encontrar na estação às cinco e meia.",
+   "fr": "Retrouvons-nous à la gare à cinq heures et demie.",
+   "de": "Treffen wir uns um halb sechs am Bahnhof."
+  }
+ },
+ {
+  "id": "ss-topup-013",
+  "topic": "making_plans",
+  "level": "A2",
+  "text": {
+   "en": "Shall we go for a walk in the park tomorrow?",
+   "it": "Facciamo una passeggiata al parco domani?",
+   "es": "¿Damos un paseo por el parque mañana?",
+   "pt": "Vamos dar um passeio no parque amanhã?",
+   "pt_BR": "Vamos dar uma caminhada no parque amanhã?",
+   "fr": "On va se promener au parc demain ?",
+   "de": "Sollen wir morgen im Park spazieren gehen?"
+  }
+ },
+ {
+  "id": "ss-topup-014",
+  "topic": "making_plans",
+  "level": "B1",
+  "text": {
+   "en": "Could we move our call to an hour later? Something came up.",
+   "it": "Possiamo spostare la nostra chiamata di un'ora? È saltato fuori un imprevisto.",
+   "es": "¿Podemos retrasar la llamada una hora? Ha surgido algo.",
+   "pt": "Podemos adiar a nossa chamada uma hora? Surgiu um imprevisto.",
+   "pt_BR": "Podemos adiar nossa ligação em uma hora? Surgiu um imprevisto.",
+   "fr": "On peut décaler notre appel d'une heure ? Un imprévu est survenu.",
+   "de": "Können wir unseren Anruf um eine Stunde verschieben? Mir ist etwas dazwischengekommen."
+  }
+ },
+ {
+  "id": "ss-topup-015",
+  "topic": "making_plans",
+  "level": "B2",
+  "text": {
+   "en": "If the weather turns bad, we could always switch to a museum instead.",
+   "it": "Se il tempo peggiora, possiamo sempre ripiegare su un museo.",
+   "es": "Si el tiempo empeora, siempre podemos cambiar el plan y ir a un museo.",
+   "pt": "Se o tempo piorar, podemos sempre optar por um museu.",
+   "pt_BR": "Se o tempo piorar, a gente sempre pode trocar por um museu.",
+   "fr": "Si le temps se gâte, on pourra toujours se rabattre sur un musée.",
+   "de": "Falls das Wetter schlecht wird, könnten wir stattdessen immer noch ein Museum besuchen."
+  }
+ },
+ {
+  "id": "ss-topup-016",
+  "topic": "recommendations",
+  "level": "A1",
+  "text": {
+   "en": "Can you recommend a good café?",
+   "it": "Puoi consigliarmi un bel caffè?",
+   "es": "¿Me puedes recomendar una buena cafetería?",
+   "pt": "Podes recomendar-me um bom café?",
+   "pt_BR": "Você pode me recomendar uma boa cafeteria?",
+   "fr": "Tu peux me recommander un bon café ?",
+   "de": "Kannst du mir ein gutes Café empfehlen?"
+  }
+ },
+ {
+  "id": "ss-topup-017",
+  "topic": "recommendations",
+  "level": "A2",
+  "text": {
+   "en": "Which part of town is best for a short visit?",
+   "it": "Quale zona della città è la migliore per una visita breve?",
+   "es": "¿Qué zona de la ciudad es mejor para una visita corta?",
+   "pt": "Qual é a melhor zona da cidade para uma visita curta?",
+   "pt_BR": "Qual é a melhor região da cidade para uma visita curta?",
+   "fr": "Quel quartier est le meilleur pour une courte visite ?",
+   "de": "Welcher Stadtteil eignet sich am besten für einen kurzen Besuch?"
+  }
+ },
+ {
+  "id": "ss-topup-018",
+  "topic": "recommendations",
+  "level": "A2",
+  "text": {
+   "en": "Is there a book you think I should read?",
+   "it": "C'è un libro che secondo te dovrei leggere?",
+   "es": "¿Hay algún libro que creas que debería leer?",
+   "pt": "Há algum livro que achas que eu devia ler?",
+   "pt_BR": "Tem algum livro que você acha que eu deveria ler?",
+   "fr": "Y a-t-il un livre que je devrais lire, selon toi ?",
+   "de": "Gibt es ein Buch, das ich deiner Meinung nach lesen sollte?"
+  }
+ },
+ {
+  "id": "ss-topup-019",
+  "topic": "recommendations",
+  "level": "B1",
+  "text": {
+   "en": "What's one local experience I shouldn't miss in your city?",
+   "it": "Qual è un'esperienza locale che non dovrei perdermi nella tua città?",
+   "es": "¿Qué experiencia local no debería perderme en tu ciudad?",
+   "pt": "Qual é a experiência local que não devo perder na tua cidade?",
+   "pt_BR": "Qual experiência local eu não deveria perder na sua cidade?",
+   "fr": "Quelle expérience locale ne devrais-je pas manquer dans ta ville ?",
+   "de": "Welches lokale Erlebnis sollte ich in deiner Stadt auf keinen Fall verpassen?"
+  }
+ },
+ {
+  "id": "ss-topup-020",
+  "topic": "recommendations",
+  "level": "B2",
+  "text": {
+   "en": "Do you know any hidden gems that tourists usually overlook?",
+   "it": "Conosci qualche posto nascosto che i turisti di solito ignorano?",
+   "es": "¿Conoces algún rincón escondido que los turistas suelan pasar por alto?",
+   "pt": "Conheces algum recanto escondido que os turistas costumam ignorar?",
+   "pt_BR": "Você conhece algum lugar escondido que os turistas costumam ignorar?",
+   "fr": "Connais-tu des endroits secrets que les touristes ignorent souvent ?",
+   "de": "Kennst du versteckte Geheimtipps, die Touristen meistens übersehen?"
+  }
+ },
+ {
+  "id": "ss-topup-021",
+  "topic": "food_talk",
+  "level": "A1",
+  "text": {
+   "en": "I'd like a cup of tea.",
+   "it": "Vorrei una tazza di tè.",
+   "es": "Quisiera una taza de té.",
+   "pt": "Queria uma chávena de chá.",
+   "pt_BR": "Eu queria uma xícara de chá.",
+   "fr": "Je voudrais une tasse de thé.",
+   "de": "Ich hätte gern eine Tasse Tee."
+  }
+ },
+ {
+  "id": "ss-topup-022",
+  "topic": "food_talk",
+  "level": "A2",
+  "text": {
+   "en": "What's your go-to snack?",
+   "it": "Qual è il tuo spuntino preferito?",
+   "es": "¿Cuál es tu tentempié de siempre?",
+   "pt": "Qual é o teu lanche de eleição?",
+   "pt_BR": "Qual é o seu lanche de sempre?",
+   "fr": "C'est quoi ton en-cas préféré ?",
+   "de": "Was ist dein Lieblingssnack?"
+  }
+ },
+ {
+  "id": "ss-topup-023",
+  "topic": "food_talk",
+  "level": "A2",
+  "text": {
+   "en": "Could you pass me the salt, please?",
+   "it": "Mi passi il sale, per favore?",
+   "es": "¿Me pasas la sal, por favor?",
+   "pt": "Podes passar-me o sal, por favor?",
+   "pt_BR": "Você pode me passar o sal, por favor?",
+   "fr": "Tu peux me passer le sel, s'il te plaît ?",
+   "de": "Kannst du mir bitte das Salz reichen?"
+  }
+ },
+ {
+  "id": "ss-topup-024",
+  "topic": "food_talk",
+  "level": "B1",
+  "text": {
+   "en": "I usually skip lunch, but I always have a big dinner.",
+   "it": "Di solito salto il pranzo, ma faccio sempre una cena abbondante.",
+   "es": "Normalmente me salto el almuerzo, pero siempre ceno mucho.",
+   "pt": "Normalmente salto o almoço, mas faço sempre um jantar reforçado.",
+   "pt_BR": "Normalmente eu pulo o almoço, mas sempre faço um jantar bem farto.",
+   "fr": "En général, je saute le déjeuner, mais je dîne toujours copieusement.",
+   "de": "Normalerweise lasse ich das Mittagessen aus, aber abends esse ich immer viel."
+  }
+ },
+ {
+  "id": "ss-topup-025",
+  "topic": "food_talk",
+  "level": "B2",
+  "text": {
+   "en": "I'm intrigued by how many different kinds of bread exist across Europe.",
+   "it": "Mi incuriosisce quanti tipi diversi di pane esistano in Europa.",
+   "es": "Me intriga cuántos tipos distintos de pan existen en Europa.",
+   "pt": "Intriga-me quantos tipos diferentes de pão existem na Europa.",
+   "pt_BR": "Fico intrigado com quantos tipos diferentes de pão existem na Europa.",
+   "fr": "Je suis intrigué par le nombre de pains différents qui existent en Europe.",
+   "de": "Mich fasziniert, wie viele verschiedene Brotsorten es in Europa gibt."
+  }
+ },
+ {
+  "id": "ss-topup-026",
+  "topic": "transport",
+  "level": "A1",
+  "text": {
+   "en": "Is this the right platform?",
+   "it": "È questo il binario giusto?",
+   "es": "¿Es este el andén correcto?",
+   "pt": "É este o cais certo?",
+   "pt_BR": "É esta a plataforma certa?",
+   "fr": "C'est bien le bon quai ?",
+   "de": "Ist das der richtige Bahnsteig?"
+  }
+ },
+ {
+  "id": "ss-topup-027",
+  "topic": "transport",
+  "level": "A2",
+  "text": {
+   "en": "How much is a ticket to the airport?",
+   "it": "Quanto costa un biglietto per l'aeroporto?",
+   "es": "¿Cuánto cuesta un billete al aeropuerto?",
+   "pt": "Quanto custa um bilhete para o aeroporto?",
+   "pt_BR": "Quanto custa uma passagem para o aeroporto?",
+   "fr": "Combien coûte un billet pour l'aéroport ?",
+   "de": "Wie viel kostet eine Fahrkarte zum Flughafen?"
+  }
+ },
+ {
+  "id": "ss-topup-028",
+  "topic": "transport",
+  "level": "A2",
+  "text": {
+   "en": "The bus to the museum leaves every twenty minutes.",
+   "it": "L'autobus per il museo parte ogni venti minuti.",
+   "es": "El autobús al museo sale cada veinte minutos.",
+   "pt": "O autocarro para o museu sai de vinte em vinte minutos.",
+   "pt_BR": "O ônibus para o museu sai a cada vinte minutos.",
+   "fr": "Le bus pour le musée part toutes les vingt minutes.",
+   "de": "Der Bus zum Museum fährt alle zwanzig Minuten."
+  }
+ },
+ {
+  "id": "ss-topup-029",
+  "topic": "transport",
+  "level": "B1",
+  "text": {
+   "en": "Do I need to validate my ticket before boarding?",
+   "it": "Devo convalidare il biglietto prima di salire?",
+   "es": "¿Tengo que validar el billete antes de subir?",
+   "pt": "Preciso de validar o bilhete antes de entrar?",
+   "pt_BR": "Preciso validar o bilhete antes de embarcar?",
+   "fr": "Dois-je composter mon billet avant de monter ?",
+   "de": "Muss ich meine Fahrkarte vor dem Einsteigen entwerten?"
+  }
+ },
+ {
+  "id": "ss-topup-030",
+  "topic": "transport",
+  "level": "B2",
+  "text": {
+   "en": "Public transport here is so reliable that I rarely need a car.",
+   "it": "Qui i mezzi pubblici sono così affidabili che raramente ho bisogno dell'auto.",
+   "es": "Aquí el transporte público es tan fiable que casi nunca necesito coche.",
+   "pt": "Aqui os transportes públicos são tão fiáveis que raramente preciso de carro.",
+   "pt_BR": "Aqui o transporte público é tão confiável que raramente preciso de carro.",
+   "fr": "Ici, les transports en commun sont si fiables que j'ai rarement besoin d'une voiture.",
+   "de": "Der öffentliche Nahverkehr ist hier so zuverlässig, dass ich selten ein Auto brauche."
+  }
+ },
+ {
+  "id": "ss-topup-031",
+  "topic": "feelings",
+  "level": "A1",
+  "text": {
+   "en": "I'm so happy today!",
+   "it": "Oggi sono felicissimo!",
+   "es": "¡Hoy estoy muy feliz!",
+   "pt": "Hoje estou tão feliz!",
+   "pt_BR": "Hoje estou muito feliz!",
+   "fr": "Je suis tellement content aujourd'hui !",
+   "de": "Ich bin heute so glücklich!"
+  }
+ },
+ {
+  "id": "ss-topup-032",
+  "topic": "feelings",
+  "level": "A2",
+  "text": {
+   "en": "I feel a little tired this week.",
+   "it": "Questa settimana mi sento un po' stanco.",
+   "es": "Esta semana me siento un poco cansado.",
+   "pt": "Esta semana sinto-me um pouco cansado.",
+   "pt_BR": "Esta semana estou me sentindo um pouco cansado.",
+   "fr": "Je me sens un peu fatigué cette semaine.",
+   "de": "Diese Woche fühle ich mich etwas müde."
+  }
+ },
+ {
+  "id": "ss-topup-033",
+  "topic": "feelings",
+  "level": "A2",
+  "text": {
+   "en": "I'm nervous about my exam tomorrow.",
+   "it": "Sono agitato per l'esame di domani.",
+   "es": "Estoy nervioso por mi examen de mañana.",
+   "pt": "Estou nervoso com o meu exame de amanhã.",
+   "pt_BR": "Estou nervoso com a minha prova de amanhã.",
+   "fr": "Je suis stressé par mon examen de demain.",
+   "de": "Ich bin wegen meiner Prüfung morgen nervös."
+  }
+ },
+ {
+  "id": "ss-topup-034",
+  "topic": "feelings",
+  "level": "B1",
+  "text": {
+   "en": "I've been feeling homesick lately, but talking with you helps.",
+   "it": "Ultimamente ho nostalgia di casa, ma parlare con te mi aiuta.",
+   "es": "Últimamente echo de menos mi casa, pero hablar contigo me ayuda.",
+   "pt": "Ultimamente tenho tido saudades de casa, mas falar contigo ajuda.",
+   "pt_BR": "Ultimamente tenho sentido saudade de casa, mas conversar com você ajuda.",
+   "fr": "Ces derniers temps, j'ai le mal du pays, mais parler avec toi m'aide.",
+   "de": "In letzter Zeit habe ich Heimweh, aber mit dir zu reden hilft mir."
+  }
+ },
+ {
+  "id": "ss-topup-035",
+  "topic": "feelings",
+  "level": "B2",
+  "text": {
+   "en": "I was overwhelmed at first, but I'm slowly finding my rhythm.",
+   "it": "All'inizio ero sopraffatto, ma piano piano sto trovando il mio ritmo.",
+   "es": "Al principio me sentí abrumado, pero poco a poco estoy encontrando mi ritmo.",
+   "pt": "No início senti-me sobrecarregado, mas aos poucos estou a encontrar o meu ritmo.",
+   "pt_BR": "No começo eu me senti sobrecarregado, mas aos poucos estou encontrando meu ritmo.",
+   "fr": "Au début, j'étais submergé, mais je trouve peu à peu mon rythme.",
+   "de": "Anfangs war ich überfordert, aber langsam finde ich meinen Rhythmus."
+  }
+ },
+ {
+  "id": "ss-topup-036",
+  "topic": "small_talk",
+  "level": "A1",
+  "text": {
+   "en": "It's a beautiful day, isn't it?",
+   "it": "È una bella giornata, vero?",
+   "es": "Hace un día precioso, ¿verdad?",
+   "pt": "Está um dia lindo, não está?",
+   "pt_BR": "Está um dia lindo, não é?",
+   "fr": "Il fait beau aujourd'hui, non ?",
+   "de": "Es ist ein schöner Tag, oder?"
+  }
+ },
+ {
+  "id": "ss-topup-037",
+  "topic": "small_talk",
+  "level": "A2",
+  "text": {
+   "en": "Did you do anything fun last night?",
+   "it": "Hai fatto qualcosa di divertente ieri sera?",
+   "es": "¿Hiciste algo divertido anoche?",
+   "pt": "Fizeste algo divertido ontem à noite?",
+   "pt_BR": "Você fez algo divertido ontem à noite?",
+   "fr": "Tu as fait quelque chose de sympa hier soir ?",
+   "de": "Hast du gestern Abend etwas Lustiges gemacht?"
+  }
+ },
+ {
+  "id": "ss-topup-038",
+  "topic": "small_talk",
+  "level": "A2",
+  "text": {
+   "en": "Have you watched any good series lately?",
+   "it": "Hai visto qualche bella serie ultimamente?",
+   "es": "¿Has visto alguna serie buena últimamente?",
+   "pt": "Tens visto alguma série boa ultimamente?",
+   "pt_BR": "Você tem assistido a alguma série boa ultimamente?",
+   "fr": "Tu as regardé de bonnes séries dernièrement ?",
+   "de": "Hast du in letzter Zeit gute Serien gesehen?"
+  }
+ },
+ {
+  "id": "ss-topup-039",
+  "topic": "small_talk",
+  "level": "B1",
+  "text": {
+   "en": "Busy week? I feel like time is flying by.",
+   "it": "Settimana piena? A me sembra che il tempo voli.",
+   "es": "¿Semana ocupada? Siento que el tiempo vuela.",
+   "pt": "Semana atarefada? Parece-me que o tempo voa.",
+   "pt_BR": "Semana corrida? Parece que o tempo voa.",
+   "fr": "Semaine chargée ? J'ai l'impression que le temps file.",
+   "de": "Viel los diese Woche? Mir kommt es vor, als würde die Zeit rasen."
+  }
+ },
+ {
+  "id": "ss-topup-040",
+  "topic": "small_talk",
+  "level": "B2",
+  "text": {
+   "en": "It's funny how a simple conversation can brighten up the whole day.",
+   "it": "È curioso come una semplice chiacchierata possa illuminare l'intera giornata.",
+   "es": "Es curioso cómo una simple conversación puede alegrar todo el día.",
+   "pt": "É curioso como uma simples conversa pode alegrar o dia inteiro.",
+   "pt_BR": "É engraçado como uma simples conversa pode alegrar o dia inteiro.",
+   "fr": "C'est drôle de voir comment une simple conversation peut égayer toute la journée.",
+   "de": "Es ist lustig, wie ein einfaches Gespräch den ganzen Tag aufhellen kann."
+  }
+ },
+ {
+  "id": "ss-topup-041",
+  "topic": "language_help",
+  "level": "A1",
+  "text": {
+   "en": "Can you teach me a useful phrase in your language?",
+   "it": "Puoi insegnarmi una frase utile nella tua lingua?",
+   "es": "¿Puedes enseñarme una frase útil en tu idioma?",
+   "pt": "Podes ensinar-me uma frase útil na tua língua?",
+   "pt_BR": "Você pode me ensinar uma frase útil na sua língua?",
+   "fr": "Tu peux m'apprendre une phrase utile dans ta langue ?",
+   "de": "Kannst du mir einen nützlichen Satz in deiner Sprache beibringen?"
+  }
+ },
+ {
+  "id": "ss-topup-042",
+  "topic": "language_help",
+  "level": "A2",
+  "text": {
+   "en": "Please tell me if my sentence sounds strange.",
+   "it": "Dimmi pure se la mia frase suona strana.",
+   "es": "Dime si mi frase suena rara, por favor.",
+   "pt": "Diz-me se a minha frase soa estranha, por favor.",
+   "pt_BR": "Me diga se minha frase soa estranha, por favor.",
+   "fr": "Dis-moi si ma phrase sonne bizarre, s'il te plaît.",
+   "de": "Sag mir bitte, wenn mein Satz komisch klingt."
+  }
+ },
+ {
+  "id": "ss-topup-043",
+  "topic": "language_help",
+  "level": "A2",
+  "text": {
+   "en": "Could you record yourself saying it so I can listen?",
+   "it": "Puoi registrarti mentre lo dici così posso ascoltarlo?",
+   "es": "¿Puedes grabarte diciéndolo para que pueda escucharlo?",
+   "pt": "Podes gravar-te a dizê-lo para eu poder ouvir?",
+   "pt_BR": "Você pode se gravar dizendo isso para eu ouvir?",
+   "fr": "Tu peux t'enregistrer en train de le dire pour que je l'écoute ?",
+   "de": "Kannst du dich aufnehmen, wie du es sagst, damit ich zuhören kann?"
+  }
+ },
+ {
+  "id": "ss-topup-044",
+  "topic": "language_help",
+  "level": "B1",
+  "text": {
+   "en": "Is there a difference between these two words, or can I use either?",
+   "it": "C'è differenza tra queste due parole, o posso usare l'una o l'altra?",
+   "es": "¿Hay alguna diferencia entre estas dos palabras o puedo usar cualquiera?",
+   "pt": "Há diferença entre estas duas palavras, ou posso usar qualquer uma?",
+   "pt_BR": "Tem diferença entre essas duas palavras, ou posso usar qualquer uma?",
+   "fr": "Y a-t-il une différence entre ces deux mots, ou puis-je utiliser l'un ou l'autre ?",
+   "de": "Gibt es einen Unterschied zwischen diesen beiden Wörtern, oder kann ich beide benutzen?"
+  }
+ },
+ {
+  "id": "ss-topup-045",
+  "topic": "language_help",
+  "level": "B2",
+  "text": {
+   "en": "Would you mind explaining when it's appropriate to use the formal form?",
+   "it": "Ti dispiacerebbe spiegarmi quando è appropriato usare la forma di cortesia?",
+   "es": "¿Te importaría explicarme cuándo es apropiado usar la forma formal?",
+   "pt": "Importas-te de me explicar quando é apropriado usar a forma de tratamento formal?",
+   "pt_BR": "Você poderia me explicar quando é apropriado usar a forma formal?",
+   "fr": "Pourrais-tu m'expliquer quand il convient d'utiliser la forme polie ?",
+   "de": "Könntest du mir erklären, wann es angebracht ist, die Höflichkeitsform zu benutzen?"
+  }
+ },
+ {
+  "id": "ss-topup-046",
+  "topic": "clarifying",
+  "level": "A1",
+  "text": {
+   "en": "Is it today or tomorrow?",
+   "it": "È oggi o domani?",
+   "es": "¿Es hoy o mañana?",
+   "pt": "É hoje ou amanhã?",
+   "pt_BR": "É hoje ou amanhã?",
+   "fr": "C'est aujourd'hui ou demain ?",
+   "de": "Ist es heute oder morgen?"
+  }
+ },
+ {
+  "id": "ss-topup-047",
+  "topic": "clarifying",
+  "level": "A2",
+  "text": {
+   "en": "Do you mean the red one?",
+   "it": "Intendi quello rosso?",
+   "es": "¿Te refieres al rojo?",
+   "pt": "Referes-te ao vermelho?",
+   "pt_BR": "Você quer dizer o vermelho?",
+   "fr": "Tu parles du rouge ?",
+   "de": "Meinst du den roten?"
+  }
+ },
+ {
+  "id": "ss-topup-048",
+  "topic": "clarifying",
+  "level": "A2",
+  "text": {
+   "en": "Can you spell that for me?",
+   "it": "Me lo puoi sillabare?",
+   "es": "¿Me lo puedes deletrear?",
+   "pt": "Podes soletrar-me isso?",
+   "pt_BR": "Você pode soletrar isso para mim?",
+   "fr": "Tu peux me l'épeler ?",
+   "de": "Kannst du das für mich buchstabieren?"
+  }
+ },
+ {
+  "id": "ss-topup-049",
+  "topic": "clarifying",
+  "level": "B1",
+  "text": {
+   "en": "Could you repeat the name of the place? I want to write it down.",
+   "it": "Puoi ripetere il nome del posto? Voglio scriverlo.",
+   "es": "¿Puedes repetir el nombre del lugar? Quiero apuntarlo.",
+   "pt": "Podes repetir o nome do sítio? Quero apontá-lo.",
+   "pt_BR": "Você pode repetir o nome do lugar? Quero anotar.",
+   "fr": "Tu peux répéter le nom de l'endroit ? Je voudrais le noter.",
+   "de": "Kannst du den Namen des Ortes wiederholen? Ich möchte ihn aufschreiben."
+  }
+ },
+ {
+  "id": "ss-topup-050",
+  "topic": "clarifying",
+  "level": "B2",
+  "text": {
+   "en": "I'm not certain I follow; are you suggesting we postpone the trip?",
+   "it": "Non sono sicuro di seguirti: stai suggerendo di rimandare il viaggio?",
+   "es": "No estoy seguro de seguirte; ¿propones que aplacemos el viaje?",
+   "pt": "Não tenho a certeza de que te estou a acompanhar; estás a sugerir que adiemos a viagem?",
+   "pt_BR": "Não tenho certeza se estou acompanhando; você está sugerindo que a gente adie a viagem?",
+   "fr": "Je ne suis pas sûr de te suivre ; tu proposes de reporter le voyage ?",
+   "de": "Ich bin nicht sicher, ob ich dir folgen kann; schlägst du vor, die Reise zu verschieben?"
+  }
+ },
+ {
+  "id": "ss-topup-051",
+  "topic": "travel_stories",
+  "level": "A1",
+  "text": {
+   "en": "I went to Spain last summer.",
+   "it": "L'estate scorsa sono andato in Spagna.",
+   "es": "El verano pasado fui a España.",
+   "pt": "No verão passado fui a Espanha.",
+   "pt_BR": "No verão passado eu fui para a Espanha.",
+   "fr": "L'été dernier, je suis allé en Espagne.",
+   "de": "Letzten Sommer war ich in Spanien."
+  }
+ },
+ {
+  "id": "ss-topup-052",
+  "topic": "travel_stories",
+  "level": "A2",
+  "text": {
+   "en": "We got lost, but we found a lovely little restaurant.",
+   "it": "Ci siamo persi, ma abbiamo trovato un grazioso ristorantino.",
+   "es": "Nos perdimos, pero encontramos un restaurante pequeño y encantador.",
+   "pt": "Perdemo-nos, mas encontrámos um pequeno restaurante encantador.",
+   "pt_BR": "A gente se perdeu, mas achou um restaurantezinho encantador.",
+   "fr": "Nous nous sommes perdus, mais nous avons trouvé un petit restaurant charmant.",
+   "de": "Wir haben uns verlaufen, aber ein reizendes kleines Restaurant gefunden."
+  }
+ },
+ {
+  "id": "ss-topup-053",
+  "topic": "travel_stories",
+  "level": "A2",
+  "text": {
+   "en": "The train ride through the mountains was amazing.",
+   "it": "Il viaggio in treno tra le montagne è stato stupendo.",
+   "es": "El viaje en tren por las montañas fue increíble.",
+   "pt": "A viagem de comboio pelas montanhas foi incrível.",
+   "pt_BR": "A viagem de trem pelas montanhas foi incrível.",
+   "fr": "Le trajet en train à travers les montagnes était magnifique.",
+   "de": "Die Zugfahrt durch die Berge war großartig."
+  }
+ },
+ {
+  "id": "ss-topup-054",
+  "topic": "travel_stories",
+  "level": "B1",
+  "text": {
+   "en": "My most memorable trip was a week of hiking with a group of strangers.",
+   "it": "Il viaggio più memorabile è stato una settimana di escursioni con un gruppo di sconosciuti.",
+   "es": "Mi viaje más memorable fue una semana de senderismo con un grupo de desconocidos.",
+   "pt": "A viagem mais memorável foi uma semana de caminhadas com um grupo de desconhecidos.",
+   "pt_BR": "A viagem mais memorável foi uma semana de trilhas com um grupo de desconhecidos.",
+   "fr": "Mon voyage le plus mémorable a été une semaine de randonnée avec un groupe d'inconnus.",
+   "de": "Meine denkwürdigste Reise war eine Woche Wandern mit einer Gruppe von Fremden."
+  }
+ },
+ {
+  "id": "ss-topup-055",
+  "topic": "travel_stories",
+  "level": "B2",
+  "text": {
+   "en": "Missing my connecting flight turned out to be the best thing that happened on that trip.",
+   "it": "Perdere la coincidenza si è rivelata la cosa migliore di quel viaggio.",
+   "es": "Perder mi vuelo de conexión resultó ser lo mejor de aquel viaje.",
+   "pt": "Perder o voo de ligação acabou por ser a melhor coisa daquela viagem.",
+   "pt_BR": "Perder o voo de conexão acabou sendo a melhor coisa daquela viagem.",
+   "fr": "Rater ma correspondance s'est avéré être le meilleur moment de ce voyage.",
+   "de": "Meinen Anschlussflug zu verpassen, war am Ende das Beste an dieser Reise."
+  }
+ },
+ {
+  "id": "ss-topup-056",
+  "topic": "culture_questions",
+  "level": "A1",
+  "text": {
+   "en": "What is a popular holiday in your country?",
+   "it": "Qual è una festa popolare nel tuo paese?",
+   "es": "¿Cuál es una fiesta popular en tu país?",
+   "pt": "Qual é uma festa popular no teu país?",
+   "pt_BR": "Qual é uma festa popular no seu país?",
+   "fr": "Quelle est une fête populaire dans ton pays ?",
+   "de": "Was ist ein beliebter Feiertag in deinem Land?"
+  }
+ },
+ {
+  "id": "ss-topup-057",
+  "topic": "culture_questions",
+  "level": "A2",
+  "text": {
+   "en": "Do people there usually greet each other with a handshake?",
+   "it": "Lì di solito ci si saluta con una stretta di mano?",
+   "es": "¿Allí la gente suele saludarse con un apretón de manos?",
+   "pt": "Aí as pessoas costumam cumprimentar-se com um aperto de mão?",
+   "pt_BR": "Aí as pessoas costumam se cumprimentar com um aperto de mão?",
+   "fr": "Là-bas, les gens se saluent-ils généralement par une poignée de main ?",
+   "de": "Begrüßen sich die Leute dort normalerweise mit einem Handschlag?"
+  }
+ },
+ {
+  "id": "ss-topup-058",
+  "topic": "culture_questions",
+  "level": "A2",
+  "text": {
+   "en": "What kind of music is typical in your region?",
+   "it": "Che tipo di musica è tipica della tua regione?",
+   "es": "¿Qué tipo de música es típica de tu región?",
+   "pt": "Que tipo de música é típica da tua região?",
+   "pt_BR": "Que tipo de música é típica da sua região?",
+   "fr": "Quel genre de musique est typique de ta région ?",
+   "de": "Welche Art von Musik ist typisch für deine Region?"
+  }
+ },
+ {
+  "id": "ss-topup-059",
+  "topic": "culture_questions",
+  "level": "B1",
+  "text": {
+   "en": "Is there a tradition in your family that you're especially fond of?",
+   "it": "C'è una tradizione della tua famiglia a cui sei particolarmente legato?",
+   "es": "¿Hay alguna tradición en tu familia a la que le tengas especial cariño?",
+   "pt": "Há alguma tradição na tua família de que gostes especialmente?",
+   "pt_BR": "Existe alguma tradição na sua família da qual você goste especialmente?",
+   "fr": "Y a-t-il une tradition dans ta famille à laquelle tu tiens particulièrement ?",
+   "de": "Gibt es eine Tradition in deiner Familie, an der du besonders hängst?"
+  }
+ },
+ {
+  "id": "ss-topup-060",
+  "topic": "culture_questions",
+  "level": "B2",
+  "text": {
+   "en": "How do younger generations in your country feel about preserving old customs?",
+   "it": "Cosa pensano le giovani generazioni del tuo paese della conservazione delle vecchie usanze?",
+   "es": "¿Qué opinan las generaciones jóvenes de tu país sobre conservar las costumbres antiguas?",
+   "pt": "O que pensam as gerações mais novas do teu país sobre a preservação dos costumes antigos?",
+   "pt_BR": "O que as gerações mais novas do seu país pensam sobre preservar os costumes antigos?",
+   "fr": "Que pensent les jeunes générations de ton pays de la préservation des anciennes coutumes ?",
+   "de": "Wie denken die jüngeren Generationen in deinem Land darüber, alte Bräuche zu bewahren?"
+  }
+ },
+ {
+  "id": "ss-topup-061",
+  "topic": "goodbyes",
+  "level": "A1",
+  "text": {
+   "en": "Goodbye! See you soon.",
+   "it": "Addio! A presto.",
+   "es": "¡Adiós! Hasta pronto.",
+   "pt": "Adeus! Até breve.",
+   "pt_BR": "Tchau! Até breve.",
+   "fr": "Au revoir ! À bientôt.",
+   "de": "Auf Wiedersehen! Bis bald."
+  }
+ },
+ {
+  "id": "ss-topup-062",
+  "topic": "goodbyes",
+  "level": "A1",
+  "text": {
+   "en": "Take care, and have a great weekend!",
+   "it": "Abbi cura di te e buon fine settimana!",
+   "es": "¡Cuídate y que tengas un buen fin de semana!",
+   "pt": "Cuida-te e bom fim de semana!",
+   "pt_BR": "Se cuida e tenha um ótimo fim de semana!",
+   "fr": "Prends soin de toi et passe un très bon week-end !",
+   "de": "Pass auf dich auf und ein schönes Wochenende!"
+  }
+ },
+ {
+  "id": "ss-topup-063",
+  "topic": "goodbyes",
+  "level": "A2",
+  "text": {
+   "en": "I have to go now, but let's talk tomorrow.",
+   "it": "Ora devo andare, ma parliamo domani.",
+   "es": "Tengo que irme ya, pero hablamos mañana.",
+   "pt": "Tenho de ir agora, mas falamos amanhã.",
+   "pt_BR": "Preciso ir agora, mas a gente conversa amanhã.",
+   "fr": "Je dois y aller, mais on se parle demain.",
+   "de": "Ich muss jetzt los, aber wir sprechen morgen."
+  }
+ },
+ {
+  "id": "ss-topup-064",
+  "topic": "goodbyes",
+  "level": "B1",
+  "text": {
+   "en": "It was wonderful chatting with you; I really enjoyed it.",
+   "it": "È stato bellissimo chiacchierare con te, mi sono divertito molto.",
+   "es": "Ha sido maravilloso charlar contigo; lo he disfrutado mucho.",
+   "pt": "Foi ótimo conversar contigo; gostei mesmo muito.",
+   "pt_BR": "Foi ótimo conversar com você; eu gostei muito.",
+   "fr": "C'était super de discuter avec toi, j'ai vraiment apprécié.",
+   "de": "Es war schön, mit dir zu plaudern; es hat mir richtig Spaß gemacht."
+  }
+ },
+ {
+  "id": "ss-topup-065",
+  "topic": "goodbyes",
+  "level": "B2",
+  "text": {
+   "en": "I'll let you get back to your evening, but thanks for such a lovely conversation.",
+   "it": "Ti lascio alla tua serata, ma grazie per questa conversazione così piacevole.",
+   "es": "Te dejo seguir con tu tarde, pero gracias por una conversación tan agradable.",
+   "pt": "Deixo-te continuar o teu serão, mas obrigado por uma conversa tão agradável.",
+   "pt_BR": "Vou deixar você voltar à sua noite, mas obrigado por uma conversa tão agradável.",
+   "fr": "Je te laisse profiter de ta soirée, mais merci pour cette conversation si agréable.",
+   "de": "Ich lasse dich deinen Abend weiter genießen, aber danke für das schöne Gespräch."
+  }
+ },
+ {
+  "id": "ss-topup-066",
+  "topic": "keeping_in_touch",
+  "level": "A1",
+  "text": {
+   "en": "Send me a message soon!",
+   "it": "Scrivimi presto!",
+   "es": "¡Mándame un mensaje pronto!",
+   "pt": "Manda-me uma mensagem em breve!",
+   "pt_BR": "Me mande uma mensagem em breve!",
+   "fr": "Envoie-moi un message bientôt !",
+   "de": "Schreib mir bald!"
+  }
+ },
+ {
+  "id": "ss-topup-067",
+  "topic": "keeping_in_touch",
+  "level": "A2",
+  "text": {
+   "en": "Let's talk again next week.",
+   "it": "Parliamoci di nuovo la settimana prossima.",
+   "es": "Volvamos a hablar la semana que viene.",
+   "pt": "Voltamos a falar na semana que vem.",
+   "pt_BR": "Vamos conversar de novo na semana que vem.",
+   "fr": "Reparlons-nous la semaine prochaine.",
+   "de": "Lass uns nächste Woche wieder sprechen."
+  }
+ },
+ {
+  "id": "ss-topup-068",
+  "topic": "keeping_in_touch",
+  "level": "A2",
+  "text": {
+   "en": "I'll write to you when I get home.",
+   "it": "Ti scrivo quando arrivo a casa.",
+   "es": "Te escribo cuando llegue a casa.",
+   "pt": "Escrevo-te quando chegar a casa.",
+   "pt_BR": "Escrevo para você quando chegar em casa.",
+   "fr": "Je t'écris quand je rentre à la maison.",
+   "de": "Ich schreibe dir, wenn ich zu Hause bin."
+  }
+ },
+ {
+  "id": "ss-topup-069",
+  "topic": "keeping_in_touch",
+  "level": "B1",
+  "text": {
+   "en": "Even when we're busy, let's try to catch up once a month.",
+   "it": "Anche quando siamo impegnati, proviamo a sentirci una volta al mese.",
+   "es": "Aunque estemos ocupados, intentemos ponernos al día una vez al mes.",
+   "pt": "Mesmo quando estamos ocupados, vamos tentar pôr a conversa em dia uma vez por mês.",
+   "pt_BR": "Mesmo quando estivermos ocupados, vamos tentar botar o papo em dia uma vez por mês.",
+   "fr": "Même quand on est occupés, essayons de prendre des nouvelles une fois par mois.",
+   "de": "Auch wenn wir viel zu tun haben, lass uns versuchen, uns einmal im Monat auszutauschen."
+  }
+ },
+ {
+  "id": "ss-topup-070",
+  "topic": "keeping_in_touch",
+  "level": "B2",
+  "text": {
+   "en": "Distance doesn't matter much if we keep making the effort to stay in touch.",
+   "it": "La distanza conta poco se continuiamo a impegnarci per restare in contatto.",
+   "es": "La distancia importa poco si seguimos esforzándonos por mantener el contacto.",
+   "pt": "A distância importa pouco se continuarmos a esforçar-nos por manter o contacto.",
+   "pt_BR": "A distância importa pouco se continuarmos nos esforçando para manter contato.",
+   "fr": "La distance compte peu si nous continuons à faire l'effort de rester en contact.",
+   "de": "Die Entfernung spielt kaum eine Rolle, solange wir uns bemühen, in Kontakt zu bleiben."
+  }
+ }
+]

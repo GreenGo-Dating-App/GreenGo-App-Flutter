@@ -1,0 +1,1178 @@
+{
+ "AM": [
+  {
+   "id": "ct-AM-01",
+   "category": "greetings",
+   "text": {
+    "en": "Barev is the common hello in Armenian. A handshake with eye contact is normal, and friends often greet with a hug or cheek kisses.",
+    "it": "Barev è il saluto comune in armeno. È normale una stretta di mano con contatto visivo; tra amici ci si abbraccia o ci si bacia sulle guance.",
+    "es": "Barev es el saludo habitual en armenio. Es normal un apretón de manos con contacto visual, y entre amigos se suele abrazar o besar en las mejillas.",
+    "pt": "Barev é a saudação habitual em arménio. É normal um aperto de mão com contacto visual, e entre amigos é frequente o abraço ou o beijo na face.",
+    "pt_BR": "Barev é a saudação comum em armênio. Um aperto de mão com contato visual é normal, e entre amigos é frequente o abraço ou o beijo no rosto.",
+    "fr": "Barev est la salutation courante en arménien. Une poignée de main en regardant dans les yeux est normale, et entre amis on s'embrasse souvent sur la joue.",
+    "de": "Barev ist der übliche Gruß auf Armenisch. Ein Händedruck mit Blickkontakt ist normal, unter Freunden gibt es oft eine Umarmung oder Wangenküsse."
+   }
+  },
+  {
+   "id": "ct-AM-02",
+   "category": "greetings",
+   "text": {
+    "en": "It is respectful to greet older people first and to use a polite form of address with them. Elders are often given the best seat.",
+    "it": "È segno di rispetto salutare per primi gli anziani e rivolgersi a loro con la forma di cortesia. Agli anziani spesso si offre il posto migliore.",
+    "es": "Es respetuoso saludar primero a las personas mayores y tratarlas de usted. A los mayores se les suele ofrecer el mejor asiento.",
+    "pt": "É respeitoso cumprimentar primeiro as pessoas mais velhas e tratá-las com a forma de cortesia. Aos mais velhos oferece-se muitas vezes o melhor lugar.",
+    "pt_BR": "É respeitoso cumprimentar primeiro as pessoas mais velhas e tratá-las com a forma de cortesia. Aos mais velhos costuma-se oferecer o melhor lugar.",
+    "fr": "Il est respectueux de saluer d'abord les personnes âgées et de les vouvoyer. On offre souvent aux aînés la meilleure place.",
+    "de": "Es gilt als respektvoll, ältere Menschen zuerst zu begrüßen und sie höflich zu siezen. Älteren wird oft der beste Platz angeboten."
+   }
+  },
+  {
+   "id": "ct-AM-03",
+   "category": "conversation",
+   "text": {
+    "en": "Armenians are usually proud to talk about their history, the alphabet, food and music. Many people also enjoy chatting about chess, which is hugely popular.",
+    "it": "Gli armeni parlano volentieri di storia, alfabeto, cucina e musica. Molti amano chiacchierare anche di scacchi, molto popolari nel paese.",
+    "es": "A los armenios suele gustarles hablar de su historia, su alfabeto, su comida y su música. A muchos también les encanta charlar de ajedrez, muy popular allí.",
+    "pt": "Os arménios costumam gostar de falar da sua história, do alfabeto, da comida e da música. Muitos também gostam de conversar sobre xadrez, que é muito popular.",
+    "pt_BR": "Os armênios costumam gostar de falar da sua história, do alfabeto, da comida e da música. Muitos também gostam de conversar sobre xadrez, que é muito popular.",
+    "fr": "Les Arméniens aiment souvent parler de leur histoire, de leur alphabet, de leur cuisine et de leur musique. Beaucoup apprécient aussi discuter des échecs, très populaires.",
+    "de": "Armenier sprechen oft gern über ihre Geschichte, ihre Schrift, das Essen und die Musik. Auch über Schach, das sehr beliebt ist, unterhalten sich viele gern."
+   }
+  },
+  {
+   "id": "ct-AM-04",
+   "category": "conversation",
+   "text": {
+    "en": "Regional conflicts and border issues are sensitive topics. It is wise to let your host raise them first and to listen more than you speak.",
+    "it": "I conflitti regionali e le questioni di confine sono temi delicati. È saggio lasciare che sia chi ti ospita ad affrontarli e ascoltare più che parlare.",
+    "es": "Los conflictos regionales y las fronteras son temas delicados. Conviene dejar que sea tu anfitrión quien los plantee y escuchar más que hablar.",
+    "pt": "Os conflitos regionais e as questões de fronteira são temas sensíveis. É prudente deixar que seja o anfitrião a abordá-los e ouvir mais do que falar.",
+    "pt_BR": "Os conflitos regionais e as questões de fronteira são temas sensíveis. É prudente deixar que o anfitrião toque no assunto primeiro e ouvir mais do que falar.",
+    "fr": "Les conflits régionaux et les questions de frontières sont des sujets sensibles. Mieux vaut laisser votre hôte les aborder et écouter plus que parler.",
+    "de": "Regionale Konflikte und Grenzfragen sind heikle Themen. Es ist klug, dass zuerst dein Gastgeber sie anspricht, und mehr zuzuhören als zu reden."
+   }
+  },
+  {
+   "id": "ct-AM-05",
+   "category": "dining",
+   "text": {
+    "en": "Hospitality is central: hosts often keep refilling your plate and insist you eat more. Leaving a little food and saying you are full is a polite way to stop.",
+    "it": "L'ospitalità è fondamentale: chi ti ospita continua a riempirti il piatto e insiste perché tu mangi di più. Per fermarsi con gentilezza basta dire che si è sazi.",
+    "es": "La hospitalidad es fundamental: los anfitriones suelen rellenar tu plato y insistir en que comas más. Decir con amabilidad que estás lleno es una forma cortés de parar.",
+    "pt": "A hospitalidade é fundamental: os anfitriões costumam voltar a encher o prato e insistir para comeres mais. Dizer com simpatia que já estás cheio é uma forma educada de parar.",
+    "pt_BR": "A hospitalidade é fundamental: os anfitriões costumam encher o prato de novo e insistir para você comer mais. Dizer com simpatia que já está satisfeito é uma forma educada de parar.",
+    "fr": "L'hospitalité est essentielle : les hôtes remplissent souvent votre assiette et insistent pour que vous mangiez davantage. Dire poliment que vous êtes rassasié permet de s'arrêter.",
+    "de": "Gastfreundschaft ist zentral: Gastgeber füllen den Teller oft wieder auf und bestehen darauf, dass du mehr isst. Freundlich zu sagen, dass du satt bist, ist eine höfliche Art aufzuhören."
+   }
+  },
+  {
+   "id": "ct-AM-06",
+   "category": "dining",
+   "text": {
+    "en": "Lavash, the traditional flatbread recognised by UNESCO, is served with almost every meal. It is often used to wrap herbs, cheese or grilled meat.",
+    "it": "Il lavash, il pane piatto tradizionale riconosciuto dall'UNESCO, accompagna quasi ogni pasto. Spesso si usa per avvolgere erbe, formaggio o carne alla griglia.",
+    "es": "El lavash, el pan plano tradicional reconocido por la UNESCO, acompaña casi todas las comidas. Suele usarse para envolver hierbas, queso o carne a la parrilla.",
+    "pt": "O lavash, o pão achatado tradicional reconhecido pela UNESCO, acompanha quase todas as refeições. É frequente usá-lo para enrolar ervas, queijo ou carne grelhada.",
+    "pt_BR": "O lavash, o pão achatado tradicional reconhecido pela UNESCO, acompanha quase todas as refeições. É comum usá-lo para enrolar ervas, queijo ou carne grelhada.",
+    "fr": "Le lavash, pain plat traditionnel reconnu par l'UNESCO, accompagne presque tous les repas. On s'en sert souvent pour envelopper des herbes, du fromage ou de la viande grillée.",
+    "de": "Lavash, das traditionelle und von der UNESCO anerkannte Fladenbrot, gehört zu fast jeder Mahlzeit. Oft wickelt man Kräuter, Käse oder Grillfleisch darin ein."
+   }
+  },
+  {
+   "id": "ct-AM-07",
+   "category": "dining",
+   "text": {
+    "en": "At a festive table, toasts are an important ritual and are usually led by a chosen toastmaster. Wait for the toast before drinking and look people in the eye when you clink glasses.",
+    "it": "A tavola, nelle occasioni di festa, i brindisi sono un rito importante e di solito li guida un tamada scelto. Aspetta il brindisi prima di bere e guarda negli occhi chi brinda con te.",
+    "es": "En una mesa festiva, los brindis son un ritual importante y suele dirigirlos un maestro de ceremonias elegido. Espera al brindis antes de beber y mira a los ojos al chocar las copas.",
+    "pt": "À mesa, em ocasiões festivas, os brindes são um ritual importante e costumam ser conduzidos por um mestre de cerimónias escolhido. Espera pelo brinde antes de beber e olha nos olhos ao brindar.",
+    "pt_BR": "À mesa, em ocasiões festivas, os brindes são um ritual importante e costumam ser conduzidos por um mestre de cerimônias escolhido. Espere o brinde antes de beber e olhe nos olhos ao brindar.",
+    "fr": "À table, lors des fêtes, les toasts sont un rituel important, généralement menés par un maître de cérémonie désigné. Attendez le toast avant de boire et regardez dans les yeux en trinquant.",
+    "de": "An festlichen Tischen sind Trinksprüche ein wichtiges Ritual, meist von einem bestimmten Tischmeister angeführt. Warte den Trinkspruch ab und schau beim Anstoßen in die Augen."
+   }
+  },
+  {
+   "id": "ct-AM-08",
+   "category": "tipping",
+   "text": {
+    "en": "In restaurants a tip of around 10 percent is customary if a service charge is not already added. Check the bill first, and leave it in cash.",
+    "it": "Nei ristoranti è usuale lasciare circa il 10 per cento di mancia se il servizio non è già incluso. Controlla prima il conto e lasciala in contanti.",
+    "es": "En los restaurantes es habitual dejar una propina de alrededor del 10 por ciento si no se ha añadido ya el servicio. Revisa antes la cuenta y déjala en efectivo.",
+    "pt": "Nos restaurantes é habitual deixar cerca de 10 por cento de gorjeta se o serviço não estiver já incluído. Confirma primeiro a conta e deixa em dinheiro.",
+    "pt_BR": "Nos restaurantes é comum deixar cerca de 10 por cento de gorjeta se o serviço não estiver incluído. Confira a conta primeiro e deixe em dinheiro.",
+    "fr": "Au restaurant, il est d'usage de laisser environ 10 pour cent de pourboire si le service n'est pas déjà compté. Vérifiez l'addition et laissez-le en espèces.",
+    "de": "In Restaurants sind etwa 10 Prozent Trinkgeld üblich, wenn keine Servicegebühr aufgeschlagen wurde. Prüfe zuerst die Rechnung und gib es bar."
+   }
+  },
+  {
+   "id": "ct-AM-09",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to a home, bring sweets, fruit, flowers or a good local brandy. Flowers are traditionally given in odd numbers, with even numbers kept for funerals.",
+    "it": "Se sei invitato a casa di qualcuno, porta dolci, frutta, fiori o un buon brandy locale. I fiori si regalano tradizionalmente in numero dispari; quelli pari sono per i funerali.",
+    "es": "Si te invitan a una casa, lleva dulces, fruta, flores o un buen brandy local. Tradicionalmente las flores se regalan en número impar; el par se reserva para los funerales.",
+    "pt": "Quando fores convidado para uma casa, leva doces, fruta, flores ou um bom brandy local. As flores oferecem-se tradicionalmente em número ímpar; o par fica para os funerais.",
+    "pt_BR": "Quando for convidado para uma casa, leve doces, frutas, flores ou um bom conhaque local. Tradicionalmente as flores são dadas em número ímpar; o par fica para funerais.",
+    "fr": "Si vous êtes invité chez quelqu'un, apportez des sucreries, des fruits, des fleurs ou un bon brandy local. On offre traditionnellement un nombre impair de fleurs ; le nombre pair est réservé aux funérailles.",
+    "de": "Bei einer Einladung nach Hause bringt man Süßigkeiten, Obst, Blumen oder einen guten einheimischen Brandy mit. Blumen schenkt man traditionell in ungerader Zahl; gerade Zahlen sind Beerdigungen vorbehalten."
+   }
+  },
+  {
+   "id": "ct-AM-10",
+   "category": "dress",
+   "text": {
+    "en": "Yerevan is stylish, and many people dress smartly even for casual outings. Shorts and beachwear are best kept for sport or the lakeside.",
+    "it": "Yerevan è elegante e molti si vestono con cura anche per uscite informali. Pantaloncini e abiti da spiaggia sono meglio riservati allo sport o al lago.",
+    "es": "Ereván es elegante y mucha gente se arregla incluso para salidas informales. Los pantalones cortos y la ropa de playa quedan mejor para el deporte o el lago.",
+    "pt": "Erevan é elegante e muita gente veste-se com cuidado mesmo em saídas informais. Calções e roupa de praia ficam melhor para o desporto ou para o lago.",
+    "pt_BR": "Erevan é elegante e muita gente se veste bem mesmo em passeios informais. Bermudas e roupa de praia ficam melhor para esporte ou para o lago.",
+    "fr": "Erevan est élégante et beaucoup de gens s'habillent avec soin même pour une sortie décontractée. Shorts et tenues de plage sont plutôt réservés au sport ou au lac.",
+    "de": "Jerewan ist stilbewusst, und viele ziehen sich auch für lockere Ausflüge gepflegt an. Shorts und Strandkleidung passen eher zum Sport oder an den See."
+   }
+  },
+  {
+   "id": "ct-AM-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Armenia was one of the first countries to adopt Christianity as a state religion. In monasteries and churches, dress modestly, cover bare shoulders and keep your voice low.",
+    "it": "L'Armenia è stato uno dei primi paesi ad adottare il cristianesimo come religione di Stato. Nei monasteri e nelle chiese vestiti in modo sobrio, copri le spalle e parla a bassa voce.",
+    "es": "Armenia fue uno de los primeros países en adoptar el cristianismo como religión de Estado. En monasterios e iglesias viste con recato, cubre los hombros y habla en voz baja.",
+    "pt": "A Arménia foi um dos primeiros países a adotar o cristianismo como religião de Estado. Em mosteiros e igrejas, veste-te com recato, tapa os ombros e fala baixo.",
+    "pt_BR": "A Armênia foi um dos primeiros países a adotar o cristianismo como religião de Estado. Em mosteiros e igrejas, vista-se com discrição, cubra os ombros e fale baixo.",
+    "fr": "L'Arménie fut l'un des premiers pays à adopter le christianisme comme religion d'État. Dans les monastères et les églises, habillez-vous sobrement, couvrez vos épaules et parlez doucement.",
+    "de": "Armenien war eines der ersten Länder mit dem Christentum als Staatsreligion. In Klöstern und Kirchen kleidet man sich dezent, bedeckt die Schultern und spricht leise."
+   }
+  },
+  {
+   "id": "ct-AM-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "Khachkars, the carved stone crosses found across the country, are sacred. Admire them freely, but do not climb on them or lean against them.",
+    "it": "I khachkar, le croci di pietra scolpite presenti in tutto il paese, sono sacri. Puoi ammirarli liberamente, ma non arrampicarti né appoggiarti.",
+    "es": "Los jachkar, las cruces de piedra talladas que se ven por todo el país, son sagrados. Puedes admirarlos con libertad, pero no te subas ni te apoyes en ellos.",
+    "pt": "Os khachkars, as cruzes de pedra esculpidas que se encontram por todo o país, são sagrados. Podes admirá-los à vontade, mas não subas nem te encostes a eles.",
+    "pt_BR": "Os khachkars, as cruzes de pedra esculpidas que se encontram por todo o país, são sagrados. Pode admirá-los à vontade, mas não suba neles nem se apoie.",
+    "fr": "Les khatchkars, ces croix de pierre sculptées présentes dans tout le pays, sont sacrés. Admirez-les librement, mais ne grimpez pas dessus et ne vous appuyez pas contre eux.",
+    "de": "Chatschkare, die in ganz Armenien stehenden Steinkreuze, sind heilig. Du kannst sie in Ruhe bewundern, solltest aber weder darauf klettern noch dich daran lehnen."
+   }
+  },
+  {
+   "id": "ct-AM-13",
+   "category": "gestures",
+   "text": {
+    "en": "Armenians often speak with expressive hand gestures. Pointing at someone with a finger is considered impolite; use an open hand instead.",
+    "it": "Gli armeni parlano spesso con gesti espressivi delle mani. Indicare qualcuno col dito è considerato scortese; meglio usare la mano aperta.",
+    "es": "Los armenios suelen hablar con gestos expresivos de las manos. Señalar a alguien con el dedo se considera descortés; es mejor usar la mano abierta.",
+    "pt": "Os arménios falam muitas vezes com gestos expressivos das mãos. Apontar o dedo a alguém é considerado indelicado; usa antes a mão aberta.",
+    "pt_BR": "Os armênios costumam falar com gestos expressivos das mãos. Apontar o dedo para alguém é considerado indelicado; use a mão aberta.",
+    "fr": "Les Arméniens parlent souvent avec des gestes expressifs. Pointer quelqu'un du doigt est jugé impoli ; utilisez plutôt la main ouverte.",
+    "de": "Armenier sprechen oft mit ausdrucksvollen Handbewegungen. Mit dem Finger auf jemanden zu zeigen gilt als unhöflich; nimm lieber die offene Hand."
+   }
+  },
+  {
+   "id": "ct-AM-14",
+   "category": "punctuality",
+   "text": {
+    "en": "For business and official appointments, arrive on time. For social visits and parties, a delay of fifteen to thirty minutes is usually fine.",
+    "it": "Per appuntamenti di lavoro e ufficiali arriva puntuale. Per visite e feste tra amici un ritardo di quindici o trenta minuti di solito va bene.",
+    "es": "Para citas de trabajo y oficiales, llega puntual. En visitas y fiestas entre amigos, un retraso de quince a treinta minutos suele estar bien.",
+    "pt": "Em compromissos profissionais e oficiais, chega a horas. Em visitas e festas entre amigos, um atraso de quinze a trinta minutos costuma ser aceitável.",
+    "pt_BR": "Em compromissos profissionais e oficiais, chegue na hora. Em visitas e festas entre amigos, um atraso de quinze a trinta minutos costuma ser aceitável.",
+    "fr": "Pour un rendez-vous professionnel ou officiel, soyez à l'heure. Pour une visite ou une fête entre amis, un retard de quinze à trente minutes est généralement toléré.",
+    "de": "Zu geschäftlichen und offiziellen Terminen kommt man pünktlich. Bei privaten Besuchen und Feiern ist eine Verspätung von fünfzehn bis dreißig Minuten meist in Ordnung."
+   }
+  },
+  {
+   "id": "ct-AM-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "Offering your seat on buses and the metro to older people, pregnant women and parents with small children is the norm.",
+    "it": "Cedere il posto su autobus e metropolitana ad anziani, donne incinte e genitori con bambini piccoli è la norma.",
+    "es": "Ceder el asiento en autobuses y metro a personas mayores, embarazadas y padres con niños pequeños es lo habitual.",
+    "pt": "Ceder o lugar em autocarros e no metro a pessoas idosas, grávidas e pais com crianças pequenas é a norma.",
+    "pt_BR": "Ceder o lugar em ônibus e no metrô a idosos, grávidas e pais com crianças pequenas é a regra.",
+    "fr": "Céder sa place dans le bus et le métro aux personnes âgées, aux femmes enceintes et aux parents avec de jeunes enfants est la norme.",
+    "de": "Älteren Menschen, Schwangeren und Eltern mit kleinen Kindern in Bus und Metro den Sitzplatz anzubieten, ist selbstverständlich."
+   }
+  },
+  {
+   "id": "ct-AM-16",
+   "category": "transport",
+   "text": {
+    "en": "Yerevan has a single metro line and many minibuses called marshrutkas. Taxi apps are widely used and usually cheaper and clearer than hailing a cab on the street.",
+    "it": "Erevan ha una sola linea di metropolitana e molti minibus chiamati marshrutka. Le app per i taxi sono molto usate e di solito più economiche e chiare dei taxi fermati per strada.",
+    "es": "Ereván tiene una sola línea de metro y muchos minibuses llamados marshrutkas. Las aplicaciones de taxi se usan mucho y suelen ser más baratas y claras que parar un taxi en la calle.",
+    "pt": "Erevan tem uma única linha de metro e muitas minivans chamadas marshrutkas. As aplicações de táxi são muito usadas e costumam ser mais baratas e claras do que chamar um táxi na rua.",
+    "pt_BR": "Erevan tem uma única linha de metrô e muitas vans chamadas marshrutkas. Os aplicativos de táxi são muito usados e costumam ser mais baratos e claros do que parar um táxi na rua.",
+    "fr": "Erevan n'a qu'une seule ligne de métro et de nombreux minibus appelés marchroutkas. Les applications de taxi sont très utilisées, souvent moins chères et plus claires que de héler un taxi.",
+    "de": "Jerewan hat nur eine Metrolinie und viele Minibusse, sogenannte Marschrutkas. Taxi-Apps sind weit verbreitet und meist günstiger und klarer als ein Taxi auf der Straße."
+   }
+  },
+  {
+   "id": "ct-AM-17",
+   "category": "language",
+   "text": {
+    "en": "Armenian has its own alphabet, created by Mesrop Mashtots in 405. Even a simple Shnorhakalutyun (thank you) is warmly appreciated by locals.",
+    "it": "L'armeno ha un alfabeto proprio, creato da Mesrop Mashtots nel 405. Anche un semplice Shnorhakalutyun (grazie) è accolto con calore.",
+    "es": "El armenio tiene su propio alfabeto, creado por Mesrop Mashtots en el año 405. Incluso un simple Shnorhakalutyun (gracias) se agradece mucho.",
+    "pt": "O arménio tem um alfabeto próprio, criado por Mesrop Mashtots em 405. Até um simples Shnorhakalutyun (obrigado) é recebido com carinho.",
+    "pt_BR": "O armênio tem um alfabeto próprio, criado por Mesrop Mashtots em 405. Até um simples Shnorhakalutyun (obrigado) é recebido com carinho.",
+    "fr": "L'arménien a son propre alphabet, créé par Mesrop Machtots en 405. Même un simple Shnorhakalutyun (merci) est accueilli chaleureusement.",
+    "de": "Armenisch hat eine eigene Schrift, die Mesrop Maschtoz im Jahr 405 schuf. Schon ein einfaches Shnorhakalutyun (danke) wird herzlich aufgenommen."
+   }
+  },
+  {
+   "id": "ct-AM-18",
+   "category": "language",
+   "text": {
+    "en": "Russian is still understood by many people, especially older generations, while young people in Yerevan often speak some English. Start with a polite question before assuming either.",
+    "it": "Il russo è ancora compreso da molte persone, soprattutto dalle generazioni più anziane, mentre i giovani di Erevan spesso parlano un po' di inglese. Chiedi con gentilezza prima di dare per scontata una lingua.",
+    "es": "El ruso aún lo entiende mucha gente, sobre todo las generaciones mayores, mientras que los jóvenes de Ereván suelen hablar algo de inglés. Pregunta con amabilidad antes de dar una lengua por supuesta.",
+    "pt": "O russo ainda é compreendido por muita gente, sobretudo pelas gerações mais velhas, enquanto os jovens de Erevan costumam falar algum inglês. Pergunta com delicadeza antes de presumir uma língua.",
+    "pt_BR": "O russo ainda é compreendido por muita gente, principalmente pelas gerações mais velhas, enquanto os jovens de Erevan costumam falar algum inglês. Pergunte com educação antes de presumir uma língua.",
+    "fr": "Le russe est encore compris par beaucoup de gens, surtout les plus âgés, tandis que les jeunes d'Erevan parlent souvent un peu d'anglais. Demandez poliment avant de supposer une langue.",
+    "de": "Russisch wird noch von vielen verstanden, vor allem von Älteren, während junge Leute in Jerewan oft etwas Englisch sprechen. Frag höflich nach, bevor du eine Sprache voraussetzt."
+   }
+  },
+  {
+   "id": "ct-AM-19",
+   "category": "festivals",
+   "text": {
+    "en": "Vardavar, held in summer about 14 weeks after Easter, is a joyful water festival. Expect to get soaked by friends and strangers, so keep your phone protected.",
+    "it": "Il Vardavar, che si celebra in estate circa 14 settimane dopo la Pasqua, è una gioiosa festa dell'acqua. Aspettati di essere bagnato da amici e sconosciuti: proteggi il telefono.",
+    "es": "El Vardavar, que se celebra en verano unas 14 semanas después de Semana Santa, es una alegre fiesta del agua. Prepárate para que te mojen amigos y desconocidos; protege tu móvil.",
+    "pt": "O Vardavar, que se celebra no verão cerca de 14 semanas depois da Páscoa, é uma alegre festa da água. Prepara-te para ser molhado por amigos e desconhecidos; protege o telemóvel.",
+    "pt_BR": "O Vardavar, celebrado no verão cerca de 14 semanas depois da Páscoa, é uma alegre festa da água. Prepare-se para ser molhado por amigos e desconhecidos; proteja o celular.",
+    "fr": "Le Vardavar, célébré en été environ 14 semaines après Pâques, est une joyeuse fête de l'eau. Attendez-vous à être arrosé par des amis comme des inconnus ; protégez votre téléphone.",
+    "de": "Wardawar, im Sommer etwa 14 Wochen nach Ostern gefeiert, ist ein fröhliches Wasserfest. Rechne damit, von Freunden und Fremden nassgespritzt zu werden, und schütze dein Handy."
+   }
+  },
+  {
+   "id": "ct-AM-20",
+   "category": "festivals",
+   "text": {
+    "en": "The Armenian Apostolic Church celebrates Christmas on 6 January. New Year, on the other hand, is the biggest family celebration, with a lavish table and gifts.",
+    "it": "La Chiesa apostolica armena celebra il Natale il 6 gennaio. Il Capodanno, invece, è la festa familiare più grande, con una tavola ricchissima e molti regali.",
+    "es": "La Iglesia apostólica armenia celebra la Navidad el 6 de enero. En cambio, el Año Nuevo es la mayor fiesta familiar, con una mesa abundante y regalos.",
+    "pt": "A Igreja Apostólica Arménia celebra o Natal a 6 de janeiro. Já o Ano Novo é a maior festa familiar, com uma mesa farta e presentes.",
+    "pt_BR": "A Igreja Apostólica Armênia celebra o Natal em 6 de janeiro. Já o Ano-Novo é a maior festa em família, com mesa farta e presentes.",
+    "fr": "L'Église apostolique arménienne fête Noël le 6 janvier. Le Nouvel An est en revanche la plus grande fête familiale, avec une table généreuse et des cadeaux.",
+    "de": "Die Armenisch-Apostolische Kirche feiert Weihnachten am 6. Januar. Das Neujahrsfest ist dagegen das größte Familienfest, mit reich gedecktem Tisch und Geschenken."
+   }
+  },
+  {
+   "id": "ct-AM-21",
+   "category": "festivals",
+   "text": {
+    "en": "On 24 April, Armenians commemorate the victims of the Armenian Genocide. It is a solemn day, and visitors are welcome to show respect at the memorial in Yerevan.",
+    "it": "Il 24 aprile gli armeni commemorano le vittime del genocidio armeno. È una giornata solenne e i visitatori possono rendere omaggio al memoriale di Erevan.",
+    "es": "El 24 de abril los armenios conmemoran a las víctimas del genocidio armenio. Es un día solemne y los visitantes pueden rendir homenaje en el memorial de Ereván.",
+    "pt": "A 24 de abril, os arménios recordam as vítimas do genocídio arménio. É um dia solene e os visitantes podem prestar homenagem no memorial de Erevan.",
+    "pt_BR": "Em 24 de abril, os armênios lembram as vítimas do genocídio armênio. É um dia solene, e os visitantes podem prestar homenagem no memorial de Erevan.",
+    "fr": "Le 24 avril, les Arméniens commémorent les victimes du génocide arménien. C'est un jour solennel, et les visiteurs peuvent se recueillir au mémorial d'Erevan.",
+    "de": "Am 24. April gedenken Armenier der Opfer des Völkermords an den Armeniern. Es ist ein ernster Tag, und Besucher können am Mahnmal in Jerewan ihren Respekt zeigen."
+   }
+  },
+  {
+   "id": "ct-AM-22",
+   "category": "family",
+   "text": {
+    "en": "Family ties are very strong, and several generations often live close together. Relatives regularly gather for meals, and visits without much notice are common.",
+    "it": "I legami familiari sono molto forti e spesso più generazioni vivono vicine. I parenti si riuniscono spesso a tavola e le visite con poco preavviso sono frequenti.",
+    "es": "Los lazos familiares son muy fuertes y a menudo varias generaciones viven cerca. Los parientes se reúnen con frecuencia a comer y son habituales las visitas con poco aviso.",
+    "pt": "Os laços familiares são muito fortes e várias gerações vivem muitas vezes perto umas das outras. Os familiares reúnem-se com frequência para comer e as visitas sem muito aviso são comuns.",
+    "pt_BR": "Os laços familiares são muito fortes e várias gerações costumam morar perto umas das outras. Os parentes se reúnem com frequência para comer e visitas sem muito aviso são comuns.",
+    "fr": "Les liens familiaux sont très forts et plusieurs générations vivent souvent à proximité. Les proches se retrouvent régulièrement à table et les visites avec peu de préavis sont courantes.",
+    "de": "Die Familienbande sind sehr eng, und oft leben mehrere Generationen nah beieinander. Verwandte treffen sich regelmäßig zum Essen, und spontane Besuche sind üblich."
+   }
+  },
+  {
+   "id": "ct-AM-23",
+   "category": "family",
+   "text": {
+    "en": "When entering an Armenian home, it is common to take off your shoes and be offered slippers. Say yes to coffee or tea, since refusing everything may seem cold.",
+    "it": "Entrando in una casa armena è comune togliersi le scarpe e ricevere delle pantofole. Accetta il caffè o il tè: rifiutare tutto può sembrare freddo.",
+    "es": "Al entrar en una casa armenia es habitual quitarse los zapatos y que te ofrezcan zapatillas. Acepta el café o el té, porque rechazarlo todo puede parecer frío.",
+    "pt": "Ao entrar numa casa arménia, é comum tirar os sapatos e receber pantufas. Aceita o café ou o chá, pois recusar tudo pode parecer frieza.",
+    "pt_BR": "Ao entrar numa casa armênia, é comum tirar os sapatos e receber chinelos. Aceite o café ou o chá, porque recusar tudo pode parecer frieza.",
+    "fr": "En entrant dans une maison arménienne, on retire souvent ses chaussures et on vous propose des chaussons. Acceptez le café ou le thé : tout refuser peut paraître froid.",
+    "de": "Beim Betreten eines armenischen Hauses zieht man meist die Schuhe aus und bekommt Hausschuhe angeboten. Nimm Kaffee oder Tee an, denn alles abzulehnen wirkt schnell kühl."
+   }
+  },
+  {
+   "id": "ct-AM-24",
+   "category": "money",
+   "text": {
+    "en": "The currency is the Armenian dram (AMD). Cards are widely accepted in Yerevan, but carry some cash for markets, small towns and marshrutkas.",
+    "it": "La valuta è il dram armeno (AMD). A Erevan le carte sono molto accettate, ma porta un po' di contanti per mercati, piccoli centri e marshrutka.",
+    "es": "La moneda es el dram armenio (AMD). En Ereván se aceptan mucho las tarjetas, pero lleva algo de efectivo para mercados, pueblos y marshrutkas.",
+    "pt": "A moeda é o dram arménio (AMD). Em Erevan aceitam-se muito os cartões, mas leva algum dinheiro para mercados, vilas e marshrutkas.",
+    "pt_BR": "A moeda é o dram armênio (AMD). Em Erevan os cartões são bem aceitos, mas leve algum dinheiro para mercados, cidades pequenas e marshrutkas.",
+    "fr": "La monnaie est le dram arménien (AMD). Les cartes sont très acceptées à Erevan, mais gardez un peu d'espèces pour les marchés, les petites villes et les marchroutkas.",
+    "de": "Die Währung ist der armenische Dram (AMD). In Jerewan werden Karten häufig akzeptiert, aber für Märkte, Kleinstädte und Marschrutkas braucht man etwas Bargeld."
+   }
+  },
+  {
+   "id": "ct-AM-25",
+   "category": "photography",
+   "text": {
+    "en": "Always ask before photographing people, especially older villagers and women. Avoid photographing military sites and border areas.",
+    "it": "Chiedi sempre il permesso prima di fotografare le persone, soprattutto gli anziani dei villaggi e le donne. Evita di fotografare siti militari e zone di confine.",
+    "es": "Pide siempre permiso antes de fotografiar a las personas, sobre todo a los mayores de los pueblos y a las mujeres. Evita fotografiar instalaciones militares y zonas fronterizas.",
+    "pt": "Pede sempre autorização antes de fotografar pessoas, sobretudo idosos das aldeias e mulheres. Evita fotografar instalações militares e zonas de fronteira.",
+    "pt_BR": "Peça sempre autorização antes de fotografar pessoas, principalmente idosos de vilarejos e mulheres. Evite fotografar instalações militares e zonas de fronteira.",
+    "fr": "Demandez toujours la permission avant de photographier des gens, en particulier les personnes âgées des villages et les femmes. Évitez de photographier les sites militaires et les zones frontalières.",
+    "de": "Frag immer um Erlaubnis, bevor du Menschen fotografierst, besonders ältere Dorfbewohner und Frauen. Vermeide Fotos von Militäranlagen und Grenzgebieten."
+   }
+  },
+  {
+   "id": "ct-AM-26",
+   "category": "nightlife",
+   "text": {
+    "en": "Yerevan has a lively evening scene, with open-air cafes, wine bars and live music around the Cascade and Northern Avenue. Locals often stay out late, especially in summer.",
+    "it": "Erevan ha una vita serale vivace, con caffè all'aperto, enoteche e musica dal vivo intorno alla Cascade e a Northern Avenue. I locali restano fuori fino a tardi, soprattutto d'estate.",
+    "es": "Ereván tiene una vida nocturna animada, con cafés al aire libre, bares de vinos y música en directo alrededor de la Cascade y Northern Avenue. La gente suele salir hasta tarde, sobre todo en verano.",
+    "pt": "Erevan tem uma vida noturna animada, com esplanadas, bares de vinho e música ao vivo à volta da Cascade e da Northern Avenue. As pessoas ficam na rua até tarde, sobretudo no verão.",
+    "pt_BR": "Erevan tem uma vida noturna animada, com cafés ao ar livre, bares de vinho e música ao vivo em volta da Cascade e da Northern Avenue. As pessoas ficam na rua até tarde, principalmente no verão.",
+    "fr": "Erevan a une vie nocturne animée, avec des cafés en terrasse, des bars à vin et de la musique live autour de la Cascade et de Northern Avenue. On sort tard, surtout l'été.",
+    "de": "Jerewan hat ein lebendiges Abendleben mit Straßencafés, Weinbars und Livemusik rund um die Kaskade und die Northern Avenue. Besonders im Sommer bleibt man gern lange draußen."
+   }
+  },
+  {
+   "id": "ct-AM-27",
+   "category": "nature",
+   "text": {
+    "en": "Armenia is mountainous, so weather can change quickly. Bring layers and sturdy shoes for hikes at Lake Sevan, Dilijan or Mount Aragats.",
+    "it": "L'Armenia è montuosa e il tempo può cambiare in fretta. Porta strati di vestiti e scarpe robuste per le escursioni al lago Sevan, a Dilijan o sul monte Aragats.",
+    "es": "Armenia es montañosa y el tiempo puede cambiar deprisa. Lleva capas de ropa y calzado resistente para las excursiones al lago Sevan, Dilizhán o el monte Aragats.",
+    "pt": "A Arménia é montanhosa e o tempo pode mudar depressa. Leva camadas de roupa e calçado resistente para caminhadas no lago Sevan, em Dilijan ou no monte Aragats.",
+    "pt_BR": "A Armênia é montanhosa e o tempo pode mudar rápido. Leve camadas de roupa e calçado resistente para trilhas no lago Sevan, em Dilijan ou no monte Aragats.",
+    "fr": "L'Arménie est montagneuse et le temps peut changer vite. Prévoyez des couches de vêtements et de bonnes chaussures pour randonner au lac Sevan, à Dilidjan ou au mont Aragats.",
+    "de": "Armenien ist bergig, daher kann das Wetter schnell umschlagen. Nimm Kleidung zum Schichten und feste Schuhe für Wanderungen am Sewansee, in Dilidschan oder am Aragaz mit."
+   }
+  },
+  {
+   "id": "ct-AM-28",
+   "category": "safety",
+   "text": {
+    "en": "Armenia is generally welcoming and safe for visitors. Use normal precautions in crowds, and check local advice before travelling near the borders.",
+    "it": "L'Armenia è in genere accogliente e sicura per i visitatori. Usa le normali precauzioni tra la folla e informati sulle indicazioni locali prima di viaggiare vicino ai confini.",
+    "es": "Armenia suele ser acogedora y segura para los visitantes. Toma las precauciones normales entre multitudes y consulta las recomendaciones locales antes de viajar cerca de las fronteras.",
+    "pt": "A Arménia é geralmente acolhedora e segura para os visitantes. Toma as precauções habituais no meio de multidões e informa-te localmente antes de viajar perto das fronteiras.",
+    "pt_BR": "A Armênia é geralmente acolhedora e segura para visitantes. Tome as precauções normais em meio a multidões e se informe sobre as orientações locais antes de viajar perto das fronteiras.",
+    "fr": "L'Arménie est généralement accueillante et sûre pour les visiteurs. Prenez les précautions habituelles dans la foule et vérifiez les conseils locaux avant de voyager près des frontières.",
+    "de": "Armenien gilt für Besucher meist als gastfreundlich und sicher. Sei in Menschenmengen wie überall aufmerksam und informiere dich vor Reisen nahe der Grenzen über lokale Hinweise."
+   }
+  },
+  {
+   "id": "ct-AM-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Mount Ararat, visible from Yerevan, is a deeply cherished national symbol, even though it lies across the border. Locals are happy to point out the best viewpoints.",
+    "it": "Il monte Ararat, visibile da Erevan, è un amatissimo simbolo nazionale, anche se si trova oltre il confine. I locali indicano volentieri i punti panoramici migliori.",
+    "es": "El monte Ararat, visible desde Ereván, es un querido símbolo nacional, aunque quede al otro lado de la frontera. La gente local indica con gusto los mejores miradores.",
+    "pt": "O monte Ararat, visível de Erevan, é um símbolo nacional muito querido, embora fique do outro lado da fronteira. Os locais indicam com gosto os melhores miradouros.",
+    "pt_BR": "O monte Ararat, visível de Erevan, é um símbolo nacional muito querido, embora fique do outro lado da fronteira. Os moradores indicam com prazer os melhores mirantes.",
+    "fr": "Le mont Ararat, visible depuis Erevan, est un symbole national très cher, bien qu'il se trouve de l'autre côté de la frontière. Les habitants indiquent volontiers les meilleurs points de vue.",
+    "de": "Der Ararat, von Jerewan aus sichtbar, ist ein tief verehrtes Nationalsymbol, auch wenn er jenseits der Grenze liegt. Einheimische zeigen gern die besten Aussichtspunkte."
+   }
+  },
+  {
+   "id": "ct-AM-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Armenians take pride in their chess culture, their brandy and the Matenadaran manuscript library. Showing interest in these is an easy way to start a warm conversation.",
+    "it": "Gli armeni sono orgogliosi della loro cultura degli scacchi, del loro brandy e della biblioteca di manoscritti Matenadaran. Mostrare interesse è un modo facile per iniziare una conversazione cordiale.",
+    "es": "Los armenios se enorgullecen de su cultura del ajedrez, de su brandy y de la biblioteca de manuscritos Matenadarán. Mostrar interés por ellos es una forma fácil de iniciar una conversación cálida.",
+    "pt": "Os arménios têm orgulho da sua cultura de xadrez, do seu brandy e da biblioteca de manuscritos Matenadaran. Mostrar interesse é uma forma fácil de começar uma conversa calorosa.",
+    "pt_BR": "Os armênios têm orgulho da sua cultura de xadrez, do seu conhaque e da biblioteca de manuscritos Matenadaran. Mostrar interesse é um jeito fácil de começar uma conversa calorosa.",
+    "fr": "Les Arméniens sont fiers de leur culture des échecs, de leur brandy et de la bibliothèque de manuscrits du Matenadaran. S'y intéresser est une façon simple d'engager une conversation chaleureuse.",
+    "de": "Armenier sind stolz auf ihre Schachkultur, ihren Brandy und die Handschriftenbibliothek Matenadaran. Interesse daran zu zeigen ist ein leichter Einstieg in ein herzliches Gespräch."
+   }
+  }
+ ],
+ "AR": [
+  {
+   "id": "ct-AR-01",
+   "category": "greetings",
+   "text": {
+    "en": "Argentines usually greet with a single kiss on the right cheek, including between men and women, and between close male friends. A handshake is common in formal settings.",
+    "it": "Gli argentini si salutano di solito con un solo bacio sulla guancia destra, anche tra uomini e donne e tra amici maschi stretti. Nei contesti formali è comune la stretta di mano.",
+    "es": "Los argentinos suelen saludarse con un solo beso en la mejilla derecha, también entre hombres y mujeres y entre amigos varones cercanos. En contextos formales es común el apretón de manos.",
+    "pt": "Os argentinos costumam cumprimentar-se com um único beijo na face direita, também entre homens e mulheres e entre amigos homens próximos. Em contextos formais é comum o aperto de mão.",
+    "pt_BR": "Os argentinos costumam se cumprimentar com um único beijo no rosto direito, inclusive entre homens e mulheres e entre amigos homens próximos. Em contextos formais é comum o aperto de mão.",
+    "fr": "Les Argentins se saluent généralement par un seul baiser sur la joue droite, y compris entre hommes et femmes et entre amis masculins proches. Dans les contextes formels, la poignée de main est courante.",
+    "de": "Argentinier begrüßen sich meist mit einem Kuss auf die rechte Wange, auch zwischen Männern und Frauen und unter engen männlichen Freunden. In formellen Situationen ist der Händedruck üblich."
+   }
+  },
+  {
+   "id": "ct-AR-02",
+   "category": "greetings",
+   "text": {
+    "en": "Greetings matter: it is polite to say hello and goodbye to everyone when you join or leave a group, even in a small shop or office.",
+    "it": "I saluti contano: è educato salutare tutti quando ci si unisce a un gruppo o si va via, anche in un piccolo negozio o ufficio.",
+    "es": "Los saludos importan: es de buena educación saludar y despedirse de todos al unirte a un grupo o al irte, incluso en una tienda u oficina pequeña.",
+    "pt": "Os cumprimentos contam: é educado dizer olá e adeus a todos quando se junta ou sai de um grupo, mesmo numa pequena loja ou escritório.",
+    "pt_BR": "Os cumprimentos contam: é educado dizer oi e tchau para todos ao chegar ou sair de um grupo, mesmo numa loja ou escritório pequeno.",
+    "fr": "Les salutations comptent : il est poli de dire bonjour et au revoir à tout le monde en rejoignant ou en quittant un groupe, même dans une petite boutique ou un bureau.",
+    "de": "Begrüßungen sind wichtig: Es ist höflich, beim Dazukommen oder Gehen alle zu grüßen und sich zu verabschieden, selbst in einem kleinen Laden oder Büro."
+   }
+  },
+  {
+   "id": "ct-AR-03",
+   "category": "conversation",
+   "text": {
+    "en": "Argentines love lively conversation, football, food and debating ideas, and often talk at length over a long sobremesa. Interrupting is usually a sign of interest, not rudeness.",
+    "it": "Gli argentini amano la conversazione vivace, il calcio, il cibo e il dibattito di idee, e spesso chiacchierano a lungo durante la sobremesa. Interrompere di solito è segno di interesse, non di maleducazione.",
+    "es": "A los argentinos les encanta la conversación animada, el fútbol, la comida y debatir ideas, y suelen hablar largo rato en la sobremesa. Interrumpir suele ser señal de interés, no de mala educación.",
+    "pt": "Os argentinos adoram a conversa animada, o futebol, a comida e debater ideias, e costumam falar muito tempo na sobremesa. Interromper costuma ser sinal de interesse, não de má educação.",
+    "pt_BR": "Os argentinos adoram uma conversa animada, futebol, comida e debater ideias, e costumam conversar por muito tempo na sobremesa. Interromper costuma ser sinal de interesse, não de falta de educação.",
+    "fr": "Les Argentins aiment les conversations animées, le football, la cuisine et le débat d'idées, et discutent souvent longuement à la sobremesa. Interrompre est généralement un signe d'intérêt, pas de grossièreté.",
+    "de": "Argentinier lieben lebhafte Gespräche, Fußball, Essen und Ideendebatten und reden bei der Sobremesa oft lange. Unterbrechen ist meist ein Zeichen von Interesse, nicht von Unhöflichkeit."
+   }
+  },
+  {
+   "id": "ct-AR-04",
+   "category": "conversation",
+   "text": {
+    "en": "Ask about regional food, tango or Patagonia to spark a friendly chat. Local politics and the economy are very passionate topics, so let others lead.",
+    "it": "Chiedi della cucina regionale, del tango o della Patagonia per avviare una chiacchierata cordiale. Politica locale ed economia sono temi molto accesi: lascia che siano gli altri a introdurli.",
+    "es": "Pregunta por la comida regional, el tango o la Patagonia para iniciar una charla amable. La política local y la economía son temas muy apasionados; deja que otros los introduzcan.",
+    "pt": "Pergunta pela comida regional, pelo tango ou pela Patagónia para começar uma conversa simpática. A política local e a economia são temas muito apaixonados; deixa que sejam os outros a abordá-los.",
+    "pt_BR": "Pergunte sobre a comida regional, o tango ou a Patagônia para começar uma conversa amigável. Política local e economia são temas muito apaixonados; deixe que os outros puxem o assunto.",
+    "fr": "Interrogez sur la cuisine régionale, le tango ou la Patagonie pour lancer une discussion amicale. La politique locale et l'économie sont des sujets très passionnés : laissez les autres les aborder.",
+    "de": "Frag nach regionalem Essen, Tango oder Patagonien, um ein freundliches Gespräch zu beginnen. Lokale Politik und Wirtschaft sind sehr emotionale Themen; überlass anderen den Einstieg."
+   }
+  },
+  {
+   "id": "ct-AR-05",
+   "category": "dining",
+   "text": {
+    "en": "Dinner is late: restaurants often fill up around 9 or 10 pm. Lunch is usually between 1 and 3 pm.",
+    "it": "Si cena tardi: i ristoranti spesso si riempiono verso le 21 o le 22. Il pranzo di solito è tra le 13 e le 15.",
+    "es": "Se cena tarde: los restaurantes suelen llenarse hacia las 21 o 22 h. El almuerzo suele ser entre las 13 y las 15 h.",
+    "pt": "Janta-se tarde: os restaurantes costumam encher por volta das 21 ou 22 h. O almoço é normalmente entre as 13 e as 15 h.",
+    "pt_BR": "Janta-se tarde: os restaurantes costumam encher por volta das 21 ou 22 h. O almoço costuma ser entre 13 e 15 h.",
+    "fr": "On dîne tard : les restaurants se remplissent souvent vers 21 ou 22 heures. Le déjeuner a généralement lieu entre 13 et 15 heures.",
+    "de": "Man isst spät zu Abend: Restaurants füllen sich oft gegen 21 oder 22 Uhr. Das Mittagessen findet meist zwischen 13 und 15 Uhr statt."
+   }
+  },
+  {
+   "id": "ct-AR-06",
+   "category": "dining",
+   "text": {
+    "en": "Asado, the Argentine barbecue, is a social ritual, often shared on Sundays with family. The asador (grill master) is respected, so let him serve and do not rush the meal.",
+    "it": "L'asado, il barbecue argentino, è un rito sociale, spesso condiviso la domenica in famiglia. L'asador è rispettato: lascia che sia lui a servire e non avere fretta.",
+    "es": "El asado, la parrillada argentina, es un ritual social que a menudo se comparte los domingos en familia. El asador es muy respetado: deja que sea él quien sirva y no apures la comida.",
+    "pt": "O asado, o churrasco argentino, é um ritual social que muitas vezes se partilha ao domingo em família. O asador é respeitado: deixa que seja ele a servir e não apresses a refeição.",
+    "pt_BR": "O asado, o churrasco argentino, é um ritual social muitas vezes compartilhado aos domingos em família. O asador é respeitado: deixe que ele sirva e não apresse a refeição.",
+    "fr": "L'asado, le barbecue argentin, est un rituel social souvent partagé en famille le dimanche. L'asador est respecté : laissez-le servir et ne pressez pas le repas.",
+    "de": "Das Asado, das argentinische Grillen, ist ein soziales Ritual, das oft sonntags mit der Familie geteilt wird. Der Asador wird respektiert: Lass ihn servieren und dränge das Essen nicht."
+   }
+  },
+  {
+   "id": "ct-AR-07",
+   "category": "dining",
+   "text": {
+    "en": "Mate is shared from one gourd and passed around in a circle. Do not stir the bombilla (straw), and say gracias only when you want to stop being served.",
+    "it": "Il mate si condivide da un'unica zucca e passa di mano in mano in cerchio. Non muovere la bombilla (cannuccia) e di' gracias solo quando non ne vuoi più.",
+    "es": "El mate se comparte con un solo recipiente y circula en ronda. No muevas la bombilla y di gracias solo cuando no quieras que te sigan sirviendo.",
+    "pt": "O mate partilha-se numa única cabaça e passa de mão em mão em roda. Não mexas na bombilla (palhinha) e diz gracias apenas quando não quiseres mais.",
+    "pt_BR": "O mate é compartilhado em uma única cuia e passa de mão em mão em roda. Não mexa a bombilla (canudo) e diga gracias só quando não quiser mais.",
+    "fr": "Le maté se partage dans une seule calebasse qui circule en cercle. Ne remuez pas la bombilla (paille) et ne dites gracias que lorsque vous ne voulez plus qu'on vous serve.",
+    "de": "Mate wird aus einem einzigen Gefäß geteilt und reihum weitergereicht. Rühre die Bombilla (Trinkhalm) nicht um und sage nur dann gracias, wenn du keinen mehr möchtest."
+   }
+  },
+  {
+   "id": "ct-AR-08",
+   "category": "tipping",
+   "text": {
+    "en": "In restaurants a tip of about 10 percent is customary and is usually not included. A cubierto charge for bread and table service may appear, but it is not a tip.",
+    "it": "Nei ristoranti è usuale una mancia di circa il 10 per cento, di solito non inclusa. Può comparire un cubierto per pane e servizio al tavolo, ma non è la mancia.",
+    "es": "En los restaurantes es habitual dejar una propina de alrededor del 10 por ciento, que normalmente no está incluida. Puede aparecer un cubierto por el pan y el servicio de mesa, pero no es la propina.",
+    "pt": "Nos restaurantes é habitual deixar cerca de 10 por cento de gorjeta, normalmente não incluída. Pode aparecer um cubierto pelo pão e pelo serviço de mesa, mas não é a gorjeta.",
+    "pt_BR": "Nos restaurantes é comum deixar cerca de 10 por cento de gorjeta, normalmente não incluída. Pode aparecer um cubierto pelo pão e pelo serviço de mesa, mas ele não é a gorjeta.",
+    "fr": "Au restaurant, un pourboire d'environ 10 pour cent est d'usage et n'est généralement pas inclus. Un cubierto pour le pain et le service peut figurer sur la note, mais ce n'est pas le pourboire.",
+    "de": "In Restaurants sind etwa 10 Prozent Trinkgeld üblich und meist nicht enthalten. Ein Cubierto für Brot und Tischservice kann auf der Rechnung stehen, ist aber kein Trinkgeld."
+   }
+  },
+  {
+   "id": "ct-AR-09",
+   "category": "gifts",
+   "text": {
+    "en": "If invited to an asado or a family home, bring dessert, wine or something sweet like alfajores. Arriving empty-handed is possible but a small gift is appreciated.",
+    "it": "Se sei invitato a un asado o in una casa di famiglia, porta un dolce, del vino o qualcosa di dolce come gli alfajores. Presentarsi a mani vuote si può, ma un piccolo regalo è apprezzato.",
+    "es": "Si te invitan a un asado o a una casa de familia, lleva postre, vino o algo dulce como alfajores. Llegar con las manos vacías es posible, pero se agradece un detalle.",
+    "pt": "Se fores convidado para um asado ou para casa de uma família, leva sobremesa, vinho ou algo doce como alfajores. Chegar de mãos vazias é possível, mas uma pequena lembrança é apreciada.",
+    "pt_BR": "Se for convidado para um asado ou para a casa de uma família, leve sobremesa, vinho ou algo doce como alfajores. Chegar de mãos vazias é possível, mas um pequeno presente é apreciado.",
+    "fr": "Si vous êtes invité à un asado ou chez une famille, apportez un dessert, du vin ou une douceur comme des alfajores. Venir les mains vides est possible, mais un petit cadeau est apprécié.",
+    "de": "Bei einer Einladung zu einem Asado oder in eine Familie bringt man Nachtisch, Wein oder Süßes wie Alfajores mit. Mit leeren Händen zu kommen ist möglich, ein kleines Geschenk wird aber geschätzt."
+   }
+  },
+  {
+   "id": "ct-AR-10",
+   "category": "dress",
+   "text": {
+    "en": "Buenos Aires is fashion-conscious, and locals tend to dress neatly, usually in smart casual. Layers help, since weather varies a lot from north to south.",
+    "it": "Buenos Aires è attenta alla moda e i locali si vestono con cura, di solito in stile smart casual. Vestirsi a strati aiuta, perché il clima varia molto da nord a sud.",
+    "es": "Buenos Aires es muy consciente de la moda y la gente suele vestirse con cuidado, normalmente en un estilo casual elegante. Ir con capas ayuda, porque el clima varía mucho de norte a sur.",
+    "pt": "Buenos Aires é muito atenta à moda e os locais costumam vestir-se com cuidado, normalmente num estilo casual elegante. Vestir em camadas ajuda, porque o clima varia muito de norte a sul.",
+    "pt_BR": "Buenos Aires é muito ligada em moda e os moradores costumam se vestir com capricho, geralmente em estilo casual elegante. Roupas em camadas ajudam, pois o clima varia muito do norte ao sul.",
+    "fr": "Buenos Aires est attentive à la mode et les habitants s'habillent soigneusement, souvent dans un style décontracté chic. Superposer les vêtements aide, car le climat varie beaucoup du nord au sud.",
+    "de": "Buenos Aires ist modebewusst, und die Einheimischen kleiden sich meist gepflegt im Smart-Casual-Stil. Zwiebellook hilft, denn das Wetter ändert sich von Nord nach Süd stark."
+   }
+  },
+  {
+   "id": "ct-AR-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Most Argentines are Catholic, and cathedrals and churches are active places of worship. Dress modestly and be quiet during Mass.",
+    "it": "La maggior parte degli argentini è cattolica e cattedrali e chiese sono luoghi di culto attivi. Vestiti in modo sobrio e fai silenzio durante la messa.",
+    "es": "La mayoría de los argentinos son católicos y las catedrales e iglesias son lugares de culto activos. Viste con recato y guarda silencio durante la misa.",
+    "pt": "A maioria dos argentinos é católica e as catedrais e igrejas são locais de culto ativos. Veste-te com recato e mantém silêncio durante a missa.",
+    "pt_BR": "A maioria dos argentinos é católica, e catedrais e igrejas são locais de culto ativos. Vista-se com discrição e fique em silêncio durante a missa.",
+    "fr": "La plupart des Argentins sont catholiques et les cathédrales et églises sont des lieux de culte actifs. Habillez-vous sobrement et restez silencieux pendant la messe.",
+    "de": "Die meisten Argentinier sind katholisch, und Kathedralen und Kirchen sind aktive Gotteshäuser. Kleide dich dezent und sei während der Messe leise."
+   }
+  },
+  {
+   "id": "ct-AR-12",
+   "category": "gestures",
+   "text": {
+    "en": "Argentines often stand close when talking and may touch your arm. Stepping back may seem cold, so a little closeness is normal.",
+    "it": "Gli argentini spesso stanno vicini quando parlano e possono toccarti il braccio. Allontanarsi può sembrare freddezza: un po' di vicinanza è normale.",
+    "es": "Los argentinos suelen hablar de cerca y pueden tocarte el brazo. Alejarse puede parecer frialdad, así que cierta cercanía es normal.",
+    "pt": "Os argentinos costumam falar de perto e podem tocar-te no braço. Afastares-te pode parecer frieza, por isso alguma proximidade é normal.",
+    "pt_BR": "Os argentinos costumam conversar de perto e podem tocar no seu braço. Se afastar pode parecer frieza, então certa proximidade é normal.",
+    "fr": "Les Argentins se tiennent souvent près de leur interlocuteur et peuvent toucher votre bras. Reculer peut sembler froid ; un peu de proximité est normal.",
+    "de": "Argentinier stehen beim Reden oft nah beieinander und berühren manchmal den Arm. Zurückzuweichen kann kühl wirken, etwas Nähe ist also normal."
+   }
+  },
+  {
+   "id": "ct-AR-13",
+   "category": "gestures",
+   "text": {
+    "en": "Saying che is a friendly way to get someone's attention among friends. Use it only in casual situations, not with elders or in formal settings.",
+    "it": "Dire che è un modo amichevole per attirare l'attenzione tra amici. Usalo solo in situazioni informali, non con persone anziane o in contesti formali.",
+    "es": "Decir che es una forma amistosa de llamar la atención entre amigos. Úsalo solo en situaciones informales, no con mayores ni en contextos formales.",
+    "pt": "Dizer che é uma forma amigável de chamar a atenção entre amigos. Usa só em situações informais, não com pessoas mais velhas nem em contextos formais.",
+    "pt_BR": "Dizer che é um jeito amigável de chamar a atenção entre amigos. Use só em situações informais, não com idosos nem em contextos formais.",
+    "fr": "Dire che est une façon amicale d'attirer l'attention entre amis. Utilisez-le seulement dans des situations décontractées, pas avec des aînés ni dans un cadre formel.",
+    "de": "Che zu sagen ist unter Freunden eine freundliche Art, Aufmerksamkeit zu bekommen. Verwende es nur in lockeren Situationen, nicht bei Älteren oder in formellen Rahmen."
+   }
+  },
+  {
+   "id": "ct-AR-14",
+   "category": "punctuality",
+   "text": {
+    "en": "For social gatherings, arriving 15 to 30 minutes late is normal and often expected. For business meetings and tours, be on time.",
+    "it": "Per gli incontri sociali arrivare con 15-30 minuti di ritardo è normale e spesso previsto. Per riunioni di lavoro e visite guidate sii puntuale.",
+    "es": "En reuniones sociales, llegar 15 a 30 minutos tarde es normal y a menudo se espera. Para reuniones de trabajo y visitas guiadas, sé puntual.",
+    "pt": "Em encontros sociais, chegar 15 a 30 minutos atrasado é normal e muitas vezes esperado. Em reuniões de trabalho e visitas guiadas, sê pontual.",
+    "pt_BR": "Em encontros sociais, chegar 15 a 30 minutos atrasado é normal e muitas vezes esperado. Em reuniões de trabalho e passeios guiados, seja pontual.",
+    "fr": "Pour les réunions entre amis, arriver avec 15 à 30 minutes de retard est normal et souvent attendu. Pour les rendez-vous professionnels et les visites guidées, soyez à l'heure.",
+    "de": "Zu privaten Treffen ist eine Verspätung von 15 bis 30 Minuten normal und oft sogar erwartet. Zu Geschäftsterminen und Führungen kommt man pünktlich."
+   }
+  },
+  {
+   "id": "ct-AR-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "Shops in smaller towns may close for a midday break. Many places also close on Sundays or have shorter hours, so check opening times.",
+    "it": "I negozi nelle città più piccole possono chiudere per una pausa di mezzogiorno. Molti locali chiudono anche la domenica o hanno orari ridotti: controlla gli orari.",
+    "es": "Las tiendas de pueblos y ciudades pequeñas pueden cerrar al mediodía. Muchos lugares también cierran los domingos o tienen horarios reducidos, así que revisa los horarios.",
+    "pt": "As lojas em localidades mais pequenas podem fechar na pausa do meio-dia. Muitos locais também fecham ao domingo ou têm horário reduzido, por isso confirma os horários.",
+    "pt_BR": "As lojas em cidades menores podem fechar na pausa do meio-dia. Muitos lugares também fecham aos domingos ou têm horário reduzido, então confira os horários.",
+    "fr": "Les magasins des petites villes peuvent fermer pour une pause à midi. Beaucoup d'endroits ferment aussi le dimanche ou ont des horaires réduits ; vérifiez les heures d'ouverture.",
+    "de": "Geschäfte in kleineren Orten schließen mittags oft für eine Pause. Viele Läden haben sonntags zu oder verkürzte Zeiten, also prüfe die Öffnungszeiten."
+   }
+  },
+  {
+   "id": "ct-AR-16",
+   "category": "transport",
+   "text": {
+    "en": "In Buenos Aires, buses and the subte (metro) work with the rechargeable SUBE card. Buses usually do not give change, so keep your card topped up.",
+    "it": "A Buenos Aires autobus e subte (metropolitana) funzionano con la carta ricaricabile SUBE. Gli autobus di solito non danno resto, quindi tieni la carta sempre carica.",
+    "es": "En Buenos Aires, los colectivos y el subte funcionan con la tarjeta recargable SUBE. Los colectivos normalmente no dan vuelto, así que mantén la tarjeta con saldo.",
+    "pt": "Em Buenos Aires, os autocarros e o subte (metro) funcionam com o cartão recarregável SUBE. Os autocarros normalmente não dão troco, por isso mantém o cartão carregado.",
+    "pt_BR": "Em Buenos Aires, os ônibus e o subte (metrô) funcionam com o cartão recarregável SUBE. Os ônibus normalmente não dão troco, então mantenha o cartão com saldo.",
+    "fr": "À Buenos Aires, les bus et le subte (métro) fonctionnent avec la carte rechargeable SUBE. Les bus ne rendent généralement pas la monnaie, gardez donc votre carte approvisionnée.",
+    "de": "In Buenos Aires funktionieren Busse und die Subte (U-Bahn) mit der aufladbaren SUBE-Karte. Busse geben meist kein Wechselgeld, also halte die Karte aufgeladen."
+   }
+  },
+  {
+   "id": "ct-AR-17",
+   "category": "language",
+   "text": {
+    "en": "Argentines use voseo: vos instead of tú, with forms like vos tenés. Rioplatense Spanish also pronounces ll and y like the s in vision, a sound that surprises learners.",
+    "it": "Gli argentini usano il voseo: vos al posto di tú, con forme come vos tenés. Lo spagnolo rioplatense pronuncia ll e y come la s di vision, un suono che sorprende chi impara.",
+    "es": "Los argentinos usan el voseo: vos en lugar de tú, con formas como vos tenés. El español rioplatense pronuncia ll e y como la s de vision en inglés, un sonido que sorprende a quienes aprenden.",
+    "pt": "Os argentinos usam o voseo: vos em vez de tú, com formas como vos tenés. O espanhol rio-platense pronuncia ll e y como o s de vision em inglês, um som que surpreende quem aprende.",
+    "pt_BR": "Os argentinos usam o voseo: vos no lugar de tú, com formas como vos tenés. O espanhol rio-platense pronuncia ll e y como o s de vision em inglês, um som que surpreende quem está aprendendo.",
+    "fr": "Les Argentins emploient le voseo : vos au lieu de tú, avec des formes comme vos tenés. L'espagnol rioplatense prononce ll et y comme le s de vision en anglais, un son qui surprend les apprenants.",
+    "de": "Argentinier verwenden das Voseo: vos statt tú, mit Formen wie vos tenés. Im Rioplatense-Spanisch werden ll und y wie das s in englisch vision gesprochen, was Lernende oft überrascht."
+   }
+  },
+  {
+   "id": "ct-AR-18",
+   "category": "language",
+   "text": {
+    "en": "Many Argentines have Italian roots, and Italian words and gestures have shaped local speech. Lunfardo, the Buenos Aires slang born in tango lyrics, adds words like laburo for work.",
+    "it": "Molti argentini hanno radici italiane e parole e gesti italiani hanno influenzato il parlato locale. Il lunfardo, gergo di Buenos Aires nato nei testi del tango, aggiunge parole come laburo per lavoro.",
+    "es": "Muchos argentinos tienen raíces italianas, y palabras y gestos italianos han marcado el habla local. El lunfardo, la jerga de Buenos Aires nacida en las letras del tango, añade palabras como laburo para trabajo.",
+    "pt": "Muitos argentinos têm raízes italianas, e palavras e gestos italianos marcaram a fala local. O lunfardo, gíria de Buenos Aires nascida nas letras do tango, acrescenta palavras como laburo para trabalho.",
+    "pt_BR": "Muitos argentinos têm raízes italianas, e palavras e gestos italianos marcaram a fala local. O lunfardo, gíria de Buenos Aires nascida nas letras de tango, traz palavras como laburo para trabalho.",
+    "fr": "Beaucoup d'Argentins ont des racines italiennes, et des mots et gestes italiens ont marqué le parler local. Le lunfardo, argot de Buenos Aires né dans les paroles de tango, apporte des mots comme laburo pour travail.",
+    "de": "Viele Argentinier haben italienische Wurzeln, und italienische Wörter und Gesten prägen die Sprache. Das Lunfardo, der in Tangotexten entstandene Slang von Buenos Aires, bringt Wörter wie laburo für Arbeit."
+   }
+  },
+  {
+   "id": "ct-AR-19",
+   "category": "festivals",
+   "text": {
+    "en": "The summer Carnival, public holidays like 25 May and 9 July, and local fiestas are big occasions. Expect many shops to close and plan transport ahead.",
+    "it": "Il Carnevale estivo, le feste nazionali come il 25 maggio e il 9 luglio e le feste locali sono grandi occasioni. Molti negozi chiudono: pianifica per tempo i trasporti.",
+    "es": "El Carnaval de verano, los feriados como el 25 de mayo y el 9 de julio y las fiestas locales son grandes ocasiones. Muchos comercios cierran, así que planifica el transporte con tiempo.",
+    "pt": "O Carnaval de verão, feriados como 25 de maio e 9 de julho e as festas locais são grandes ocasiões. Muitas lojas fecham, por isso planeia os transportes com antecedência.",
+    "pt_BR": "O Carnaval de verão, feriados como 25 de maio e 9 de julho e as festas locais são grandes ocasiões. Muitas lojas fecham, então planeje o transporte com antecedência.",
+    "fr": "Le Carnaval d'été, les jours fériés comme le 25 mai et le 9 juillet et les fêtes locales sont de grands moments. Beaucoup de magasins ferment ; prévoyez vos transports à l'avance.",
+    "de": "Der Sommerkarneval, Feiertage wie der 25. Mai und der 9. Juli und lokale Feste sind große Anlässe. Viele Geschäfte schließen, plane den Transport also rechtzeitig."
+   }
+  },
+  {
+   "id": "ct-AR-20",
+   "category": "festivals",
+   "text": {
+    "en": "Christmas and New Year are celebrated at midnight with family dinners, toasts and fireworks. People often eat late and stay up until dawn.",
+    "it": "Natale e Capodanno si festeggiano a mezzanotte con cene di famiglia, brindisi e fuochi d'artificio. Spesso si cena tardi e si resta svegli fino all'alba.",
+    "es": "La Navidad y el Año Nuevo se celebran a medianoche con cenas familiares, brindis y fuegos artificiales. Se suele cenar tarde y quedarse despierto hasta el amanecer.",
+    "pt": "O Natal e o Ano Novo celebram-se à meia-noite com jantares de família, brindes e fogo de artifício. Janta-se muitas vezes tarde e fica-se acordado até ao amanhecer.",
+    "pt_BR": "O Natal e o Ano-Novo são celebrados à meia-noite com jantares em família, brindes e fogos de artifício. É comum jantar tarde e ficar acordado até o amanhecer.",
+    "fr": "Noël et le Nouvel An se fêtent à minuit avec des dîners en famille, des toasts et des feux d'artifice. On dîne souvent tard et on veille jusqu'à l'aube.",
+    "de": "Weihnachten und Neujahr werden um Mitternacht mit Familienessen, Trinksprüchen und Feuerwerk gefeiert. Man isst oft spät und bleibt bis zum Morgengrauen wach."
+   }
+  },
+  {
+   "id": "ct-AR-21",
+   "category": "family",
+   "text": {
+    "en": "Sunday family lunches around the asado are a cherished tradition. If you are invited, expect a long, relaxed afternoon with several generations at the table.",
+    "it": "I pranzi familiari della domenica intorno all'asado sono una tradizione amata. Se sei invitato, aspettati un pomeriggio lungo e rilassato con più generazioni a tavola.",
+    "es": "Los almuerzos familiares de domingo alrededor del asado son una tradición muy querida. Si te invitan, espera una tarde larga y tranquila con varias generaciones en la mesa.",
+    "pt": "Os almoços de família ao domingo à volta do asado são uma tradição muito querida. Se fores convidado, conta com uma tarde longa e descontraída com várias gerações à mesa.",
+    "pt_BR": "Os almoços de família aos domingos em volta do asado são uma tradição muito querida. Se for convidado, espere uma tarde longa e tranquila com várias gerações à mesa.",
+    "fr": "Les déjeuners de famille du dimanche autour de l'asado sont une tradition chérie. Si vous êtes invité, attendez-vous à un après-midi long et détendu avec plusieurs générations à table.",
+    "de": "Sonntägliche Familienessen rund ums Asado sind eine geliebte Tradition. Bei einer Einladung kannst du mit einem langen, entspannten Nachmittag mit mehreren Generationen am Tisch rechnen."
+   }
+  },
+  {
+   "id": "ct-AR-22",
+   "category": "family",
+   "text": {
+    "en": "Friendships are close and warm, and friends often meet weekly. A casual invitation to meet up usually means it is genuine, so say yes if you can.",
+    "it": "Le amicizie sono strette e calorose e gli amici si vedono spesso ogni settimana. Un invito informale a vedersi di solito è sincero: di' di sì, se puoi.",
+    "es": "Las amistades son cercanas y cálidas, y los amigos suelen verse cada semana. Una invitación informal a juntarse suele ser sincera, así que di que sí si puedes.",
+    "pt": "As amizades são próximas e calorosas, e os amigos costumam encontrar-se todas as semanas. Um convite informal para sair costuma ser sincero, por isso aceita se puderes.",
+    "pt_BR": "As amizades são próximas e calorosas, e os amigos costumam se encontrar toda semana. Um convite informal para sair costuma ser sincero, então aceite se puder.",
+    "fr": "Les amitiés sont proches et chaleureuses, et les amis se voient souvent chaque semaine. Une invitation informelle à se retrouver est généralement sincère ; acceptez si vous le pouvez.",
+    "de": "Freundschaften sind eng und herzlich, und Freunde treffen sich oft wöchentlich. Eine lockere Einladung zum Treffen ist meist ernst gemeint, also sag zu, wenn du kannst."
+   }
+  },
+  {
+   "id": "ct-AR-23",
+   "category": "money",
+   "text": {
+    "en": "Argentina's currency is the peso. Prices and exchange rates can change quickly, so compare official and card rates and avoid changing money with strangers on the street.",
+    "it": "La valuta argentina è il peso. Prezzi e cambi possono variare in fretta: confronta i tassi ufficiali e quelli della carta ed evita di cambiare denaro con sconosciuti per strada.",
+    "es": "La moneda argentina es el peso. Los precios y los tipos de cambio pueden variar rápido, así que compara las cotizaciones oficiales y las de tarjeta y evita cambiar dinero con desconocidos en la calle.",
+    "pt": "A moeda argentina é o peso. Os preços e as taxas de câmbio podem mudar depressa, por isso compara as taxas oficiais e as do cartão e evita trocar dinheiro com desconhecidos na rua.",
+    "pt_BR": "A moeda argentina é o peso. Preços e câmbio podem mudar rápido, então compare as taxas oficiais e as do cartão e evite trocar dinheiro com desconhecidos na rua.",
+    "fr": "La monnaie argentine est le peso. Les prix et les taux de change peuvent changer vite ; comparez les taux officiels et ceux de la carte, et évitez de changer de l'argent avec des inconnus dans la rue.",
+    "de": "Die Währung Argentiniens ist der Peso. Preise und Wechselkurse können sich schnell ändern, also vergleiche offizielle Kurse und Kartenkurse und tausche kein Geld bei Fremden auf der Straße."
+   }
+  },
+  {
+   "id": "ct-AR-24",
+   "category": "photography",
+   "text": {
+    "en": "Photography is welcome in plazas, markets and at football matches. Ask first before photographing people, and be discreet near government buildings.",
+    "it": "Fotografare è ben accetto in piazze, mercati e alle partite di calcio. Chiedi il permesso prima di fotografare le persone e sii discreto vicino agli edifici governativi.",
+    "es": "Fotografiar es bien recibido en plazas, mercados y partidos de fútbol. Pide permiso antes de fotografiar a las personas y sé discreto cerca de edificios gubernamentales.",
+    "pt": "Fotografar é bem-vindo em praças, mercados e jogos de futebol. Pede autorização antes de fotografar pessoas e sê discreto junto de edifícios governamentais.",
+    "pt_BR": "Fotografar é bem-vindo em praças, mercados e jogos de futebol. Peça permissão antes de fotografar pessoas e seja discreto perto de prédios do governo.",
+    "fr": "La photographie est bienvenue sur les places, les marchés et lors des matchs de football. Demandez la permission avant de photographier des gens et soyez discret près des bâtiments gouvernementaux.",
+    "de": "Fotografieren ist auf Plätzen, Märkten und bei Fußballspielen willkommen. Frag vor Porträts um Erlaubnis und sei bei Regierungsgebäuden zurückhaltend."
+   }
+  },
+  {
+   "id": "ct-AR-25",
+   "category": "nightlife",
+   "text": {
+    "en": "Nightlife starts very late: bars fill around midnight, and clubs often get busy after 2 am. Plan your return trip, as nights can run until sunrise.",
+    "it": "La vita notturna inizia molto tardi: i bar si riempiono verso mezzanotte e le discoteche spesso dopo le 2. Pianifica il rientro, perché le serate possono durare fino all'alba.",
+    "es": "La vida nocturna empieza muy tarde: los bares se llenan hacia medianoche y las discotecas suelen animarse después de las 2. Planifica la vuelta, porque las noches pueden durar hasta el amanecer.",
+    "pt": "A vida noturna começa muito tarde: os bares enchem por volta da meia-noite e as discotecas costumam animar depois das 2 h. Planeia o regresso, porque as noites podem ir até ao amanhecer.",
+    "pt_BR": "A vida noturna começa bem tarde: os bares enchem por volta da meia-noite e as baladas costumam esquentar depois das 2 h. Planeje a volta, porque as noites podem durar até o amanhecer.",
+    "fr": "La vie nocturne commence très tard : les bars se remplissent vers minuit et les clubs s'animent souvent après 2 heures. Prévoyez votre retour, car les nuits peuvent durer jusqu'à l'aube.",
+    "de": "Das Nachtleben beginnt sehr spät: Bars füllen sich gegen Mitternacht, Clubs oft erst nach 2 Uhr. Plane die Heimfahrt, denn die Nächte können bis zum Sonnenaufgang gehen."
+   }
+  },
+  {
+   "id": "ct-AR-26",
+   "category": "nightlife",
+   "text": {
+    "en": "At a milonga, a tango dance night, people often invite a partner with a look and a nod, called cabeceo. Watch the etiquette and respect a quiet decline.",
+    "it": "In una milonga, serata di tango, spesso si invita il partner con uno sguardo e un cenno del capo, chiamato cabeceo. Osserva l'etichetta e rispetta un rifiuto silenzioso.",
+    "es": "En una milonga, noche de baile de tango, a menudo se invita a la pareja con una mirada y un gesto de cabeza llamado cabeceo. Observa la etiqueta y respeta un rechazo silencioso.",
+    "pt": "Numa milonga, noite de dança de tango, é frequente convidar o par com um olhar e um aceno de cabeça, chamado cabeceo. Observa a etiqueta e respeita uma recusa silenciosa.",
+    "pt_BR": "Em uma milonga, noite de dança de tango, é comum convidar o par com um olhar e um aceno de cabeça, chamado cabeceo. Observe a etiqueta e respeite uma recusa silenciosa.",
+    "fr": "Dans une milonga, soirée de tango, on invite souvent un partenaire par un regard et un hochement de tête appelé cabeceo. Observez l'étiquette et respectez un refus silencieux.",
+    "de": "In einer Milonga, einem Tangoabend, lädt man oft mit Blick und Kopfnicken zum Tanz ein, dem sogenannten Cabeceo. Beobachte die Etikette und respektiere eine stille Absage."
+   }
+  },
+  {
+   "id": "ct-AR-27",
+   "category": "nature",
+   "text": {
+    "en": "Argentina spans huge climates, from Iguazú's subtropical jungle to Patagonian glaciers. Check seasons and pack accordingly, as it is summer in December and winter in July.",
+    "it": "L'Argentina comprende climi enormemente diversi, dalla giungla subtropicale di Iguazú ai ghiacciai della Patagonia. Controlla le stagioni e prepara i bagagli: è estate a dicembre e inverno a luglio.",
+    "es": "Argentina abarca climas enormemente distintos, desde la selva subtropical de Iguazú hasta los glaciares patagónicos. Revisa las estaciones y haz el equipaje en consecuencia: es verano en diciembre e invierno en julio.",
+    "pt": "A Argentina abrange climas muito diferentes, da selva subtropical de Iguazú aos glaciares da Patagónia. Verifica as estações e faz a mala em conformidade: é verão em dezembro e inverno em julho.",
+    "pt_BR": "A Argentina abrange climas muito diferentes, da selva subtropical de Iguazú às geleiras da Patagônia. Confira as estações e arrume a mala de acordo: é verão em dezembro e inverno em julho.",
+    "fr": "L'Argentine couvre des climats très variés, de la jungle subtropicale d'Iguazú aux glaciers de Patagonie. Vérifiez les saisons et préparez vos bagages : c'est l'été en décembre et l'hiver en juillet.",
+    "de": "Argentinien umfasst sehr unterschiedliche Klimazonen, vom subtropischen Dschungel von Iguazú bis zu Patagoniens Gletschern. Prüfe die Jahreszeiten und pack entsprechend: im Dezember ist Sommer, im Juli Winter."
+   }
+  },
+  {
+   "id": "ct-AR-28",
+   "category": "safety",
+   "text": {
+    "en": "In large cities, keep your phone and bag close in crowded areas and on the street. Avoid using your phone near the curb, as snatch thefts do happen.",
+    "it": "Nelle grandi città tieni telefono e borsa vicini nelle zone affollate e per strada. Evita di usare il telefono vicino al marciapiede: gli scippi accadono.",
+    "es": "En las grandes ciudades, mantén el móvil y el bolso cerca en zonas concurridas y en la calle. Evita usar el teléfono al borde de la acera, porque ocurren arrebatos.",
+    "pt": "Nas grandes cidades, mantém o telemóvel e a mala por perto em zonas movimentadas e na rua. Evita usar o telemóvel junto ao passeio, porque há furtos por arrebatamento.",
+    "pt_BR": "Nas grandes cidades, mantenha o celular e a bolsa por perto em áreas movimentadas e na rua. Evite usar o celular na beira da calçada, pois acontecem furtos de arrancada.",
+    "fr": "Dans les grandes villes, gardez votre téléphone et votre sac près de vous dans les endroits fréquentés et dans la rue. Évitez d'utiliser votre téléphone au bord du trottoir : les vols à l'arraché existent.",
+    "de": "In großen Städten halte Handy und Tasche in Menschenmengen und auf der Straße nah bei dir. Nutze das Handy nicht am Bordstein, denn Handtaschenraub und Handydiebstahl kommen vor."
+   }
+  },
+  {
+   "id": "ct-AR-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Football is a passion, and the national team has won three World Cups. Asking about someone's club is a great conversation starter, but avoid mocking rival teams.",
+    "it": "Il calcio è una passione e la nazionale ha vinto tre Mondiali. Chiedere della squadra del cuore è un ottimo modo per iniziare a parlare, ma evita di prendere in giro le squadre rivali.",
+    "es": "El fútbol es una pasión y la selección ha ganado tres Mundiales. Preguntar por el club de alguien es un excelente inicio de conversación, pero evita burlarte de los equipos rivales.",
+    "pt": "O futebol é uma paixão e a seleção ganhou três Mundiais. Perguntar pelo clube de alguém é um ótimo início de conversa, mas evita troçar das equipas rivais.",
+    "pt_BR": "O futebol é uma paixão e a seleção ganhou três Copas do Mundo. Perguntar pelo clube de alguém é um ótimo começo de conversa, mas evite zombar dos times rivais.",
+    "fr": "Le football est une passion, et l'équipe nationale a remporté trois Coupes du monde. Demander le club préféré de quelqu'un est une excellente entrée en matière, mais évitez de vous moquer des équipes rivales.",
+    "de": "Fußball ist eine Leidenschaft, und die Nationalmannschaft hat dreimal die Weltmeisterschaft gewonnen. Nach dem Lieblingsklub zu fragen ist ein guter Gesprächseinstieg, doch mach dich nicht über Rivalen lustig."
+   }
+  },
+  {
+   "id": "ct-AR-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Argentines are proud of tango, the Teatro Colón, dulce de leche and their wines such as Malbec. Complimenting these is always welcome.",
+    "it": "Gli argentini sono orgogliosi del tango, del Teatro Colón, del dulce de leche e dei loro vini come il Malbec. I complimenti su questi temi sono sempre graditi.",
+    "es": "Los argentinos se enorgullecen del tango, el Teatro Colón, el dulce de leche y sus vinos como el Malbec. Elogiar estas cosas siempre es bienvenido.",
+    "pt": "Os argentinos têm orgulho do tango, do Teatro Colón, do doce de leite e dos seus vinhos, como o Malbec. Elogiar estas coisas é sempre bem-vindo.",
+    "pt_BR": "Os argentinos têm orgulho do tango, do Teatro Colón, do doce de leite e dos seus vinhos, como o Malbec. Elogiar essas coisas é sempre bem-vindo.",
+    "fr": "Les Argentins sont fiers du tango, du Teatro Colón, du dulce de leche et de leurs vins comme le Malbec. Les compliments à ce sujet sont toujours bienvenus.",
+    "de": "Argentinier sind stolz auf Tango, das Teatro Colón, Dulce de Leche und ihre Weine wie den Malbec. Lob dafür kommt immer gut an."
+   }
+  }
+ ],
+ "AT": [
+  {
+   "id": "ct-AT-01",
+   "category": "greetings",
+   "text": {
+    "en": "In Austria, a firm handshake with eye contact is the standard greeting, for men and women alike. Greet everyone in a small group individually.",
+    "it": "In Austria la stretta di mano decisa con contatto visivo è il saluto standard, per uomini e donne. In un piccolo gruppo si saluta ciascuno singolarmente.",
+    "es": "En Austria, un apretón de manos firme con contacto visual es el saludo habitual, tanto para hombres como para mujeres. En un grupo pequeño se saluda a cada persona por separado.",
+    "pt": "Na Áustria, um aperto de mão firme com contacto visual é a saudação habitual, para homens e mulheres. Num grupo pequeno cumprimenta-se cada pessoa individualmente.",
+    "pt_BR": "Na Áustria, um aperto de mão firme com contato visual é a saudação padrão, para homens e mulheres. Em um grupo pequeno, cumprimenta-se cada pessoa individualmente.",
+    "fr": "En Autriche, une poignée de main ferme en regardant dans les yeux est la salutation habituelle, pour les hommes comme pour les femmes. Dans un petit groupe, on salue chacun individuellement.",
+    "de": "In Österreich ist ein fester Händedruck mit Blickkontakt der übliche Gruß, für Männer wie Frauen. In einer kleinen Gruppe begrüßt man jede Person einzeln."
+   }
+  },
+  {
+   "id": "ct-AT-02",
+   "category": "greetings",
+   "text": {
+    "en": "Grüß Gott and Servus are common greetings, with Grüß Gott more common in rural and southern areas. Servus is informal and also means goodbye among friends.",
+    "it": "Grüß Gott e Servus sono saluti comuni; Grüß Gott è più diffuso nelle zone rurali e del sud. Servus è informale e tra amici vale anche come arrivederci.",
+    "es": "Grüß Gott y Servus son saludos comunes; Grüß Gott es más habitual en zonas rurales y del sur. Servus es informal y entre amigos también significa adiós.",
+    "pt": "Grüß Gott e Servus são saudações comuns; Grüß Gott é mais habitual nas zonas rurais e do sul. Servus é informal e, entre amigos, também serve de despedida.",
+    "pt_BR": "Grüß Gott e Servus são saudações comuns; Grüß Gott é mais comum em áreas rurais e no sul. Servus é informal e, entre amigos, também serve como tchau.",
+    "fr": "Grüß Gott et Servus sont des salutations courantes ; Grüß Gott est plus répandu dans les zones rurales et du sud. Servus est informel et signifie aussi au revoir entre amis.",
+    "de": "Grüß Gott und Servus sind übliche Grußformeln, wobei Grüß Gott auf dem Land und im Süden häufiger ist. Servus ist informell und heißt unter Freunden auch Tschüss."
+   }
+  },
+  {
+   "id": "ct-AT-03",
+   "category": "conversation",
+   "text": {
+    "en": "Austrians often use formal Sie and professional titles like Herr Doktor or Frau Magister. Wait for the other person to offer du before switching.",
+    "it": "Gli austriaci usano spesso il Sie di cortesia e titoli professionali come Herr Doktor o Frau Magister. Aspetta che sia l'altra persona a proporre il du prima di passare al tu.",
+    "es": "Los austriacos suelen usar el trato formal Sie y títulos profesionales como Herr Doktor o Frau Magister. Espera a que la otra persona proponga el du antes de pasar al tuteo.",
+    "pt": "Os austríacos usam muitas vezes o tratamento formal Sie e títulos profissionais como Herr Doktor ou Frau Magister. Espera que a outra pessoa proponha o du antes de passares ao tu.",
+    "pt_BR": "Os austríacos costumam usar o tratamento formal Sie e títulos profissionais como Herr Doktor ou Frau Magister. Espere a outra pessoa propor o du antes de passar ao tratamento informal.",
+    "fr": "Les Autrichiens emploient souvent le Sie de politesse et des titres professionnels comme Herr Doktor ou Frau Magister. Attendez que l'autre propose le du avant de passer au tutoiement.",
+    "de": "Österreicher verwenden oft das förmliche Sie und Titel wie Herr Doktor oder Frau Magister. Warte, bis dir das Du angeboten wird, bevor du wechselst."
+   }
+  },
+  {
+   "id": "ct-AT-04",
+   "category": "conversation",
+   "text": {
+    "en": "Music, hiking, food and coffee-house culture are safe, enjoyable topics. Jokes about the Nazi era are not welcome, so avoid them.",
+    "it": "Musica, escursioni, cucina e cultura dei caffè storici sono argomenti sicuri e piacevoli. Le battute sull'era nazista non sono gradite: evitale.",
+    "es": "La música, el senderismo, la comida y la cultura de los cafés son temas seguros y agradables. Las bromas sobre la época nazi no son bienvenidas, así que evítalas.",
+    "pt": "Música, caminhadas, comida e cultura dos cafés históricos são temas seguros e agradáveis. As piadas sobre a era nazi não são bem-vindas, por isso evita-as.",
+    "pt_BR": "Música, trilhas, comida e cultura dos cafés históricos são temas seguros e agradáveis. Piadas sobre a era nazista não são bem-vindas, então evite-as.",
+    "fr": "La musique, la randonnée, la cuisine et la culture des cafés sont des sujets sûrs et agréables. Les plaisanteries sur l'époque nazie ne sont pas bienvenues ; évitez-les.",
+    "de": "Musik, Wandern, Essen und die Kaffeehauskultur sind sichere, angenehme Themen. Witze über die NS-Zeit sind nicht erwünscht, also lass sie weg."
+   }
+  },
+  {
+   "id": "ct-AT-05",
+   "category": "dining",
+   "text": {
+    "en": "Say Mahlzeit or Guten Appetit before eating, and make eye contact when clinking glasses with Prost. Keep your hands visible and wait until everyone is served.",
+    "it": "Prima di mangiare si dice Mahlzeit o Guten Appetit e, brindando con Prost, si guarda negli occhi. Tieni le mani visibili e aspetta che tutti siano serviti.",
+    "es": "Antes de comer se dice Mahlzeit o Guten Appetit, y al brindar con Prost se mira a los ojos. Mantén las manos visibles y espera a que todos estén servidos.",
+    "pt": "Antes de comer diz-se Mahlzeit ou Guten Appetit e, ao brindar com Prost, olha-se nos olhos. Mantém as mãos visíveis e espera que todos estejam servidos.",
+    "pt_BR": "Antes de comer diz-se Mahlzeit ou Guten Appetit e, ao brindar com Prost, olha-se nos olhos. Mantenha as mãos visíveis e espere até todos serem servidos.",
+    "fr": "On dit Mahlzeit ou Guten Appetit avant de manger, et on regarde dans les yeux en trinquant avec Prost. Gardez les mains visibles et attendez que tout le monde soit servi.",
+    "de": "Vor dem Essen sagt man Mahlzeit oder Guten Appetit, und beim Anstoßen mit Prost schaut man sich in die Augen. Lass die Hände sichtbar und warte, bis alle bedient sind."
+   }
+  },
+  {
+   "id": "ct-AT-06",
+   "category": "dining",
+   "text": {
+    "en": "In a traditional Viennese coffee house, no one rushes you. Order a Melange or a Einspänner, enjoy a glass of water, and stay as long as you like.",
+    "it": "In un caffè viennese tradizionale nessuno ti mette fretta. Ordina una Melange o un Einspänner, goditi il bicchiere d'acqua e resta quanto vuoi.",
+    "es": "En un café vienés tradicional nadie te apura. Pide una Melange o un Einspänner, disfruta del vaso de agua y quédate el tiempo que quieras.",
+    "pt": "Num café vienense tradicional ninguém te apressa. Pede uma Melange ou um Einspänner, desfruta do copo de água e fica o tempo que quiseres.",
+    "pt_BR": "Em um café vienense tradicional, ninguém apressa você. Peça uma Melange ou um Einspänner, aproveite o copo d'água e fique o tempo que quiser.",
+    "fr": "Dans un café viennois traditionnel, personne ne vous presse. Commandez une Melange ou un Einspänner, savourez le verre d'eau et restez aussi longtemps que vous voulez.",
+    "de": "Im traditionellen Wiener Kaffeehaus drängt dich niemand. Bestell eine Melange oder einen Einspänner, genieße das Glas Wasser und bleib, so lange du magst."
+   }
+  },
+  {
+   "id": "ct-AT-07",
+   "category": "dining",
+   "text": {
+    "en": "To get the bill, ask for Zahlen, bitte. Waiters usually do not bring it unprompted, since rushing guests is considered rude.",
+    "it": "Per avere il conto, chiedi Zahlen, bitte. I camerieri di solito non lo portano di propria iniziativa, perché mettere fretta agli ospiti è considerato scortese.",
+    "es": "Para pedir la cuenta, di Zahlen, bitte. Los camareros normalmente no la traen por iniciativa propia, porque apurar a los clientes se considera descortés.",
+    "pt": "Para pedir a conta, diz Zahlen, bitte. Os empregados normalmente não a trazem por iniciativa própria, porque apressar os clientes é considerado indelicado.",
+    "pt_BR": "Para pedir a conta, diga Zahlen, bitte. Os garçons normalmente não a trazem por conta própria, porque apressar os clientes é considerado indelicado.",
+    "fr": "Pour demander l'addition, dites Zahlen, bitte. Les serveurs ne l'apportent généralement pas d'eux-mêmes, car presser les clients est jugé impoli.",
+    "de": "Um die Rechnung zu bekommen, sag Zahlen, bitte. Kellner bringen sie meist nicht ungefragt, denn Gäste zu drängen gilt als unhöflich."
+   }
+  },
+  {
+   "id": "ct-AT-08",
+   "category": "tipping",
+   "text": {
+    "en": "Tips of 5 to 10 percent are common in restaurants and cafes. Round up the bill and say the final amount to the waiter when paying, rather than leaving coins on the table.",
+    "it": "Nei ristoranti e nei caffè sono comuni mance del 5-10 per cento. Arrotonda il conto e comunica la cifra finale al cameriere al momento di pagare, invece di lasciare monete sul tavolo.",
+    "es": "En restaurantes y cafés son habituales las propinas del 5 al 10 por ciento. Redondea la cuenta y di al camarero la cantidad final al pagar, en lugar de dejar monedas en la mesa.",
+    "pt": "Em restaurantes e cafés são comuns gorjetas de 5 a 10 por cento. Arredonda a conta e diz ao empregado o valor final ao pagar, em vez de deixar moedas na mesa.",
+    "pt_BR": "Em restaurantes e cafés são comuns gorjetas de 5 a 10 por cento. Arredonde a conta e diga ao garçom o valor final ao pagar, em vez de deixar moedas na mesa.",
+    "fr": "Dans les restaurants et cafés, un pourboire de 5 à 10 pour cent est courant. Arrondissez l'addition et annoncez le montant final au serveur en payant, plutôt que de laisser des pièces sur la table.",
+    "de": "In Restaurants und Cafés sind 5 bis 10 Prozent Trinkgeld üblich. Runde die Rechnung auf und nenne dem Kellner beim Bezahlen den Endbetrag, statt Münzen auf dem Tisch zu lassen."
+   }
+  },
+  {
+   "id": "ct-AT-09",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to someone's home, bring flowers, good chocolates or a bottle of wine. Unwrap flowers before handing them over, and avoid red roses, which signal romance.",
+    "it": "Se sei invitato a casa di qualcuno, porta fiori, cioccolatini di qualità o una bottiglia di vino. Togli la carta ai fiori prima di consegnarli ed evita le rose rosse, simbolo romantico.",
+    "es": "Si te invitan a una casa, lleva flores, buenos bombones o una botella de vino. Quita el envoltorio de las flores antes de entregarlas y evita las rosas rojas, que tienen connotación romántica.",
+    "pt": "Quando fores convidado para uma casa, leva flores, bons chocolates ou uma garrafa de vinho. Tira o papel às flores antes de as entregares e evita rosas vermelhas, que têm conotação romântica.",
+    "pt_BR": "Quando for convidado para uma casa, leve flores, bons chocolates ou uma garrafa de vinho. Tire o papel das flores antes de entregá-las e evite rosas vermelhas, que têm conotação romântica.",
+    "fr": "Si vous êtes invité chez quelqu'un, apportez des fleurs, de bons chocolats ou une bouteille de vin. Retirez l'emballage des fleurs avant de les offrir et évitez les roses rouges, symbole romantique.",
+    "de": "Bei einer Einladung nach Hause bringt man Blumen, gute Pralinen oder eine Flasche Wein mit. Nimm die Blumen vor der Übergabe aus dem Papier und vermeide rote Rosen, die als romantisch gelten."
+   }
+  },
+  {
+   "id": "ct-AT-10",
+   "category": "dress",
+   "text": {
+    "en": "Austrians tend to dress neatly, and smart casual is fine for most occasions. Opera, concerts and balls call for formal wear, and a traditional dirndl or Lederhose is often worn at festivals.",
+    "it": "Gli austriaci tendono a vestirsi in modo curato e lo smart casual va bene nella maggior parte delle occasioni. Opera, concerti e balli richiedono abiti formali; ai festival si indossano spesso dirndl e Lederhose tradizionali.",
+    "es": "Los austriacos tienden a vestir con pulcritud y el estilo casual elegante vale para casi todo. Para la ópera, los conciertos y los bailes se requiere ropa formal, y en las fiestas se suele llevar dirndl o Lederhose tradicionales.",
+    "pt": "Os austríacos tendem a vestir-se com cuidado e o estilo casual elegante serve para quase tudo. Ópera, concertos e bailes pedem roupa formal, e nas festas usa-se muitas vezes o dirndl ou a Lederhose tradicionais.",
+    "pt_BR": "Os austríacos tendem a se vestir com capricho, e o estilo casual elegante serve para quase tudo. Ópera, concertos e bailes pedem roupa formal, e em festas costuma-se usar dirndl ou Lederhose tradicionais.",
+    "fr": "Les Autrichiens s'habillent généralement avec soin et le style décontracté chic convient à presque tout. L'opéra, les concerts et les bals exigent une tenue formelle, et le dirndl ou la Lederhose traditionnels se portent souvent aux fêtes.",
+    "de": "Österreicher kleiden sich meist gepflegt, und Smart Casual passt zu fast jedem Anlass. Für Oper, Konzerte und Bälle ist formelle Kleidung gefragt, bei Festen trägt man oft Dirndl oder Lederhose."
+   }
+  },
+  {
+   "id": "ct-AT-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Most Austrians are Roman Catholic, and landmarks like St. Stephen's Cathedral are active churches. Be quiet, remove hats and avoid photos during services.",
+    "it": "La maggior parte degli austriaci è cattolica e luoghi simbolo come il duomo di Santo Stefano sono chiese attive. Fai silenzio, togliti il cappello ed evita le foto durante le funzioni.",
+    "es": "La mayoría de los austriacos son católicos y lugares emblemáticos como la catedral de San Esteban son iglesias activas. Guarda silencio, quítate el sombrero y evita las fotos durante los oficios.",
+    "pt": "A maioria dos austríacos é católica e monumentos como a Catedral de Santo Estêvão são igrejas ativas. Mantém silêncio, tira o chapéu e evita fotografias durante as celebrações.",
+    "pt_BR": "A maioria dos austríacos é católica, e marcos como a Catedral de Santo Estêvão são igrejas ativas. Fique em silêncio, tire o chapéu e evite fotos durante as celebrações.",
+    "fr": "La plupart des Autrichiens sont catholiques et des monuments comme la cathédrale Saint-Étienne sont des églises en activité. Restez silencieux, retirez votre chapeau et évitez les photos pendant les offices.",
+    "de": "Die meisten Österreicher sind römisch-katholisch, und Wahrzeichen wie der Stephansdom sind aktive Kirchen. Sei leise, nimm den Hut ab und verzichte während der Gottesdienste auf Fotos."
+   }
+  },
+  {
+   "id": "ct-AT-12",
+   "category": "gestures",
+   "text": {
+    "en": "Austrians value personal space and a calm, reserved manner. Loud speech or big gestures in public can attract disapproving looks.",
+    "it": "Gli austriaci apprezzano lo spazio personale e un modo di fare calmo e riservato. Parlare ad alta voce o gesticolare molto in pubblico può attirare sguardi di disapprovazione.",
+    "es": "Los austriacos valoran el espacio personal y un trato tranquilo y reservado. Hablar muy alto o gesticular mucho en público puede provocar miradas de desaprobación.",
+    "pt": "Os austríacos valorizam o espaço pessoal e um modo calmo e reservado. Falar alto ou gesticular muito em público pode atrair olhares de desaprovação.",
+    "pt_BR": "Os austríacos valorizam o espaço pessoal e um jeito calmo e reservado. Falar alto ou gesticular muito em público pode atrair olhares de desaprovação.",
+    "fr": "Les Autrichiens apprécient l'espace personnel et une attitude calme et réservée. Parler fort ou faire de grands gestes en public peut attirer des regards désapprobateurs.",
+    "de": "Österreicher schätzen persönlichen Freiraum und ein ruhiges, zurückhaltendes Auftreten. Lautes Sprechen oder große Gesten in der Öffentlichkeit können missbilligende Blicke ernten."
+   }
+  },
+  {
+   "id": "ct-AT-13",
+   "category": "punctuality",
+   "text": {
+    "en": "Punctuality is taken seriously, both for business and for social plans. If you will be late, send a message in advance.",
+    "it": "La puntualità è presa sul serio, sia per il lavoro sia per gli impegni sociali. Se farai tardi, avvisa con un messaggio in anticipo.",
+    "es": "La puntualidad se toma muy en serio, tanto en el trabajo como en los planes sociales. Si vas a llegar tarde, avisa con un mensaje antes.",
+    "pt": "A pontualidade é levada a sério, tanto no trabalho como nos compromissos sociais. Se fores chegar atrasado, avisa por mensagem com antecedência.",
+    "pt_BR": "A pontualidade é levada a sério, tanto no trabalho quanto nos compromissos sociais. Se for se atrasar, avise por mensagem com antecedência.",
+    "fr": "La ponctualité est prise au sérieux, aussi bien pour le travail que pour les rendez-vous privés. Si vous aurez du retard, prévenez par message à l'avance.",
+    "de": "Pünktlichkeit wird ernst genommen, sowohl im Beruf als auch bei privaten Verabredungen. Wenn du dich verspätest, schreib vorher eine Nachricht."
+   }
+  },
+  {
+   "id": "ct-AT-14",
+   "category": "public_behavior",
+   "text": {
+    "en": "Most shops are closed on Sundays and public holidays, and many people keep quiet hours in apartment buildings, especially at night and on Sundays. Plan your shopping accordingly.",
+    "it": "La maggior parte dei negozi è chiusa la domenica e nei giorni festivi, e molti rispettano le ore di silenzio nei condomini, soprattutto di notte e la domenica. Organizza di conseguenza la spesa.",
+    "es": "La mayoría de las tiendas cierran los domingos y festivos, y muchas personas respetan las horas de silencio en los edificios, sobre todo por la noche y los domingos. Planifica tus compras en consecuencia.",
+    "pt": "A maioria das lojas está fechada aos domingos e feriados, e muitas pessoas respeitam as horas de silêncio nos prédios, sobretudo à noite e ao domingo. Planeia as compras em conformidade.",
+    "pt_BR": "A maioria das lojas fecha aos domingos e feriados, e muita gente respeita os horários de silêncio nos prédios, principalmente à noite e aos domingos. Planeje suas compras de acordo.",
+    "fr": "La plupart des magasins sont fermés le dimanche et les jours fériés, et beaucoup respectent les heures de silence dans les immeubles, surtout la nuit et le dimanche. Planifiez vos courses en conséquence.",
+    "de": "Die meisten Geschäfte sind sonntags und an Feiertagen geschlossen, und viele halten in Mehrfamilienhäusern Ruhezeiten ein, besonders nachts und sonntags. Plane deine Einkäufe entsprechend."
+   }
+  },
+  {
+   "id": "ct-AT-15",
+   "category": "transport",
+   "text": {
+    "en": "Public transport is reliable and often runs on a ticket honour system with random inspections. Validate paper tickets where required, as fines for travelling without a valid ticket apply.",
+    "it": "Il trasporto pubblico è affidabile e spesso funziona sulla fiducia, con controlli a campione. Convalida i biglietti cartacei dove richiesto: viaggiare senza biglietto valido comporta multe.",
+    "es": "El transporte público es fiable y suele funcionar con un sistema de confianza, con inspecciones aleatorias. Valida los billetes de papel donde sea necesario, porque viajar sin billete válido se multa.",
+    "pt": "Os transportes públicos são fiáveis e funcionam muitas vezes com um sistema de confiança, com fiscalização aleatória. Valida os bilhetes de papel onde for exigido, pois viajar sem bilhete válido dá multa.",
+    "pt_BR": "O transporte público é confiável e muitas vezes funciona no sistema de confiança, com fiscalizações aleatórias. Valide os bilhetes de papel onde for exigido, pois viajar sem bilhete válido gera multa.",
+    "fr": "Les transports publics sont fiables et fonctionnent souvent sur la confiance, avec des contrôles aléatoires. Compostez les billets papier là où c'est requis : voyager sans titre valable est puni d'une amende.",
+    "de": "Der öffentliche Verkehr ist zuverlässig und läuft oft auf Vertrauensbasis mit Stichprobenkontrollen. Entwerte Papiertickets, wo es nötig ist, denn Fahren ohne gültigen Fahrschein kostet Strafe."
+   }
+  },
+  {
+   "id": "ct-AT-16",
+   "category": "transport",
+   "text": {
+    "en": "On escalators, stand on the right and leave the left side for people who walk. At pedestrian crossings, many people wait for the green light even when the street is empty.",
+    "it": "Sulle scale mobili tieni la destra e lascia la sinistra a chi cammina. Agli attraversamenti pedonali molti aspettano il verde anche quando la strada è vuota.",
+    "es": "En las escaleras mecánicas, ponte a la derecha y deja la izquierda para quienes caminan. En los pasos de peatones, mucha gente espera al verde aunque la calle esté vacía.",
+    "pt": "Nas escadas rolantes, fica à direita e deixa a esquerda para quem caminha. Nas passadeiras, muita gente espera pelo verde mesmo com a rua vazia.",
+    "pt_BR": "Em escadas rolantes, fique à direita e deixe a esquerda para quem caminha. Nas faixas de pedestres, muita gente espera o sinal verde mesmo com a rua vazia.",
+    "fr": "Dans les escaliers mécaniques, tenez-vous à droite et laissez la gauche à ceux qui marchent. Aux passages piétons, beaucoup attendent le feu vert même quand la rue est vide.",
+    "de": "Auf Rolltreppen steht man rechts und lässt links Platz für Gehende. An Fußgängerampeln warten viele auf Grün, auch wenn die Straße leer ist."
+   }
+  },
+  {
+   "id": "ct-AT-17",
+   "category": "language",
+   "text": {
+    "en": "Austrian German differs from German in Germany: Paradeiser means tomato, Erdäpfel potatoes and Jänner January. Locals appreciate the effort to learn these words.",
+    "it": "Il tedesco austriaco differisce da quello della Germania: Paradeiser significa pomodoro, Erdäpfel patate e Jänner gennaio. I locali apprezzano lo sforzo di imparare queste parole.",
+    "es": "El alemán de Austria difiere del de Alemania: Paradeiser significa tomate, Erdäpfel patatas y Jänner enero. Los locales aprecian el esfuerzo por aprender estas palabras.",
+    "pt": "O alemão da Áustria difere do da Alemanha: Paradeiser significa tomate, Erdäpfel batatas e Jänner janeiro. Os locais apreciam o esforço de aprender estas palavras.",
+    "pt_BR": "O alemão da Áustria difere do da Alemanha: Paradeiser significa tomate, Erdäpfel batatas e Jänner janeiro. Os moradores apreciam o esforço de aprender essas palavras.",
+    "fr": "L'allemand d'Autriche diffère de celui d'Allemagne : Paradeiser signifie tomate, Erdäpfel pommes de terre et Jänner janvier. Les habitants apprécient l'effort d'apprendre ces mots.",
+    "de": "Das österreichische Deutsch unterscheidet sich vom deutschen: Paradeiser heißt Tomate, Erdäpfel Kartoffeln und Jänner Januar. Einheimische schätzen es, wenn man diese Wörter lernt."
+   }
+  },
+  {
+   "id": "ct-AT-18",
+   "category": "festivals",
+   "text": {
+    "en": "Christmas markets from late November are a beloved tradition, with punch, roasted chestnuts and handmade crafts. Most open daily until Christmas Eve or early January.",
+    "it": "I mercatini di Natale da fine novembre sono una tradizione amata, con punch, caldarroste e artigianato. La maggior parte apre ogni giorno fino alla vigilia di Natale o a inizio gennaio.",
+    "es": "Los mercadillos navideños desde finales de noviembre son una tradición muy querida, con ponche, castañas asadas y artesanía. La mayoría abre a diario hasta Nochebuena o principios de enero.",
+    "pt": "Os mercados de Natal a partir do final de novembro são uma tradição muito querida, com ponche, castanhas assadas e artesanato. A maioria abre todos os dias até à véspera de Natal ou ao início de janeiro.",
+    "pt_BR": "As feiras de Natal a partir do fim de novembro são uma tradição muito querida, com ponche, castanhas assadas e artesanato. A maioria abre todos os dias até a véspera de Natal ou o início de janeiro.",
+    "fr": "Les marchés de Noël, dès fin novembre, sont une tradition très aimée, avec du punch, des marrons grillés et de l'artisanat. La plupart ouvrent tous les jours jusqu'à la veille de Noël ou début janvier.",
+    "de": "Weihnachtsmärkte ab Ende November sind eine beliebte Tradition mit Punsch, gebratenen Maroni und Kunsthandwerk. Die meisten haben täglich bis Heiligabend oder Anfang Januar geöffnet."
+   }
+  },
+  {
+   "id": "ct-AT-19",
+   "category": "festivals",
+   "text": {
+    "en": "Krampus processions on 5 December, with people in horned costumes, are a traditional alpine custom linked to St. Nicholas. They can be loud and dramatic, so stay at a distance if you are with young children.",
+    "it": "Le sfilate dei Krampus il 5 dicembre, con persone in costumi con le corna, sono un'usanza alpina tradizionale legata a San Nicola. Possono essere rumorose e spettacolari: se hai bambini piccoli, resta a distanza.",
+    "es": "Los desfiles de Krampus del 5 de diciembre, con personas disfrazadas con cuernos, son una costumbre alpina tradicional vinculada a San Nicolás. Pueden ser ruidosos y dramáticos; si vas con niños pequeños, mantente a distancia.",
+    "pt": "Os desfiles de Krampus a 5 de dezembro, com pessoas em trajes com cornos, são um costume alpino tradicional ligado a São Nicolau. Podem ser ruidosos e dramáticos; se fores com crianças pequenas, mantém-te à distância.",
+    "pt_BR": "Os desfiles de Krampus em 5 de dezembro, com pessoas fantasiadas com chifres, são um costume alpino tradicional ligado a São Nicolau. Podem ser barulhentos e dramáticos; se estiver com crianças pequenas, mantenha distância.",
+    "fr": "Les défilés de Krampus du 5 décembre, avec des gens en costumes à cornes, sont une coutume alpine traditionnelle liée à saint Nicolas. Ils peuvent être bruyants et impressionnants ; gardez vos distances avec de jeunes enfants.",
+    "de": "Krampusumzüge am 5. Dezember mit Menschen in gehörnten Kostümen sind ein alpiner Brauch rund um den heiligen Nikolaus. Sie können laut und dramatisch sein, halte also mit kleinen Kindern Abstand."
+   }
+  },
+  {
+   "id": "ct-AT-20",
+   "category": "festivals",
+   "text": {
+    "en": "Carnival season, called Fasching, and the Vienna Opera Ball on the Thursday before Ash Wednesday are highlights of winter. Balls are a social tradition, and waltz lessons are widely taken.",
+    "it": "La stagione di Carnevale, detta Fasching, e il Ballo dell'Opera di Vienna del giovedì prima del Mercoledì delle Ceneri sono momenti clou dell'inverno. I balli sono una tradizione sociale e i corsi di valzer sono molto diffusi.",
+    "es": "La temporada de carnaval, llamada Fasching, y el Baile de la Ópera de Viena, el jueves antes del Miércoles de Ceniza, son momentos destacados del invierno. Los bailes son una tradición social y los cursos de vals son muy habituales.",
+    "pt": "A época de Carnaval, chamada Fasching, e o Baile da Ópera de Viena, na quinta-feira antes da Quarta-feira de Cinzas, são momentos altos do inverno. Os bailes são uma tradição social e as aulas de valsa são muito comuns.",
+    "pt_BR": "A temporada de Carnaval, chamada Fasching, e o Baile da Ópera de Viena, na quinta-feira antes da Quarta-feira de Cinzas, são destaques do inverno. Os bailes são uma tradição social e as aulas de valsa são muito comuns.",
+    "fr": "La saison du carnaval, appelée Fasching, et le Bal de l'Opéra de Vienne, le jeudi précédant le mercredi des Cendres, sont des temps forts de l'hiver. Les bals sont une tradition sociale et les cours de valse sont très répandus.",
+    "de": "Die Faschingszeit und der Wiener Opernball am Donnerstag vor Aschermittwoch sind Höhepunkte des Winters. Bälle sind eine gesellschaftliche Tradition, und Walzerkurse sind weit verbreitet."
+   }
+  },
+  {
+   "id": "ct-AT-21",
+   "category": "family",
+   "text": {
+    "en": "Christmas Eve on 24 December is the main family celebration, often at home with a quiet dinner and gifts. Many shops close early that day.",
+    "it": "La vigilia di Natale, il 24 dicembre, è la principale festa di famiglia, spesso a casa con una cena tranquilla e i regali. Molti negozi chiudono presto quel giorno.",
+    "es": "Nochebuena, el 24 de diciembre, es la principal celebración familiar, a menudo en casa con una cena tranquila y regalos. Muchas tiendas cierran temprano ese día.",
+    "pt": "A véspera de Natal, a 24 de dezembro, é a principal celebração familiar, muitas vezes em casa com um jantar tranquilo e presentes. Muitas lojas fecham cedo nesse dia.",
+    "pt_BR": "A véspera de Natal, em 24 de dezembro, é a principal celebração em família, muitas vezes em casa com um jantar tranquilo e presentes. Muitas lojas fecham cedo nesse dia.",
+    "fr": "Le réveillon du 24 décembre est la principale fête de famille, souvent à la maison avec un dîner tranquille et des cadeaux. Beaucoup de magasins ferment tôt ce jour-là.",
+    "de": "Heiligabend am 24. Dezember ist das wichtigste Familienfest, oft zu Hause mit einem ruhigen Essen und Bescherung. Viele Geschäfte schließen an diesem Tag früh."
+   }
+  },
+  {
+   "id": "ct-AT-22",
+   "category": "family",
+   "text": {
+    "en": "If you are invited home, it is common to take off your shoes at the door and accept slippers. Compliment the cooking, as your host will likely have put in real effort.",
+    "it": "Se sei invitato a casa, è usuale togliersi le scarpe all'ingresso e accettare le pantofole. Fai i complimenti per la cucina: chi ti ospita probabilmente si è impegnato molto.",
+    "es": "Si te invitan a una casa, es habitual quitarse los zapatos en la entrada y aceptar las zapatillas. Elogia la comida, pues tu anfitrión probablemente se habrá esforzado mucho.",
+    "pt": "Se fores convidado para uma casa, é habitual tirar os sapatos à entrada e aceitar as pantufas. Elogia a comida, pois o anfitrião provavelmente teve muito trabalho.",
+    "pt_BR": "Se for convidado para uma casa, é comum tirar os sapatos na entrada e aceitar os chinelos. Elogie a comida, pois o anfitrião provavelmente se empenhou bastante.",
+    "fr": "Si vous êtes invité chez quelqu'un, il est courant d'enlever ses chaussures à l'entrée et d'accepter des chaussons. Complimentez la cuisine : votre hôte s'est probablement beaucoup investi.",
+    "de": "Bei einer Einladung nach Hause zieht man an der Tür meist die Schuhe aus und nimmt Hausschuhe an. Lobe das Essen, denn dein Gastgeber hat sich vermutlich viel Mühe gegeben."
+   }
+  },
+  {
+   "id": "ct-AT-23",
+   "category": "money",
+   "text": {
+    "en": "Austria uses the euro. Cards are widely accepted, but small shops, mountain huts and some Heurigen prefer cash, so carry some coins and notes.",
+    "it": "L'Austria usa l'euro. Le carte sono molto accettate, ma piccoli negozi, rifugi di montagna e alcuni Heuriger preferiscono i contanti: porta con te monete e banconote.",
+    "es": "Austria usa el euro. Las tarjetas se aceptan mucho, pero las tiendas pequeñas, los refugios de montaña y algunos Heurigen prefieren efectivo, así que lleva monedas y billetes.",
+    "pt": "A Áustria usa o euro. Os cartões são muito aceites, mas lojas pequenas, refúgios de montanha e alguns Heurigen preferem dinheiro, por isso leva moedas e notas.",
+    "pt_BR": "A Áustria usa o euro. Os cartões são bem aceitos, mas lojas pequenas, refúgios de montanha e alguns Heurigen preferem dinheiro, então leve moedas e notas.",
+    "fr": "L'Autriche utilise l'euro. Les cartes sont très acceptées, mais les petits commerces, les refuges de montagne et certains Heurigen préfèrent les espèces ; ayez des pièces et des billets.",
+    "de": "Österreich nutzt den Euro. Karten werden weithin akzeptiert, aber kleine Läden, Berghütten und manche Heurigen bevorzugen Bargeld, also hab Münzen und Scheine dabei."
+   }
+  },
+  {
+   "id": "ct-AT-24",
+   "category": "photography",
+   "text": {
+    "en": "Photography is usually fine in public spaces, but many concert halls, museums and churches restrict it. Ask before photographing strangers, especially children.",
+    "it": "Fotografare è di solito consentito negli spazi pubblici, ma molte sale da concerto, musei e chiese lo limitano. Chiedi prima di fotografare sconosciuti, soprattutto bambini.",
+    "es": "Fotografiar suele estar permitido en espacios públicos, pero muchas salas de concierto, museos e iglesias lo restringen. Pregunta antes de fotografiar a desconocidos, sobre todo a niños.",
+    "pt": "Fotografar costuma ser permitido em espaços públicos, mas muitas salas de concerto, museus e igrejas restringem-no. Pergunta antes de fotografar desconhecidos, sobretudo crianças.",
+    "pt_BR": "Fotografar costuma ser permitido em espaços públicos, mas muitas salas de concerto, museus e igrejas restringem. Pergunte antes de fotografar desconhecidos, principalmente crianças.",
+    "fr": "La photographie est généralement permise dans les espaces publics, mais de nombreuses salles de concert, musées et églises la limitent. Demandez avant de photographier des inconnus, surtout des enfants.",
+    "de": "Fotografieren ist im öffentlichen Raum meist in Ordnung, doch viele Konzertsäle, Museen und Kirchen schränken es ein. Frag, bevor du Fremde fotografierst, besonders Kinder."
+   }
+  },
+  {
+   "id": "ct-AT-25",
+   "category": "nightlife",
+   "text": {
+    "en": "A Heuriger is a wine tavern where local winemakers serve their own wine and simple food. Many are open only on certain days, so check the schedule before heading out.",
+    "it": "Un Heuriger è una taverna del vino in cui i viticoltori locali servono il proprio vino e cibo semplice. Molti aprono solo in certi giorni: controlla il calendario prima di andare.",
+    "es": "Un Heuriger es una taberna de vino donde los viticultores locales sirven su propio vino y comida sencilla. Muchos abren solo ciertos días, así que revisa el calendario antes de ir.",
+    "pt": "Um Heuriger é uma taberna de vinho onde os viticultores locais servem o seu próprio vinho e comida simples. Muitos só abrem em certos dias, por isso confirma o calendário antes de ir.",
+    "pt_BR": "Um Heuriger é uma taberna de vinho em que os vinicultores locais servem o próprio vinho e comida simples. Muitos só abrem em certos dias, então confira o calendário antes de ir.",
+    "fr": "Un Heuriger est une taverne à vin où les vignerons locaux servent leur propre vin et des plats simples. Beaucoup n'ouvrent que certains jours ; vérifiez le calendrier avant d'y aller.",
+    "de": "Ein Heuriger ist ein Weinlokal, in dem Winzer ihren eigenen Wein und einfache Speisen ausschenken. Viele haben nur an bestimmten Tagen geöffnet, also prüfe vorher den Kalender."
+   }
+  },
+  {
+   "id": "ct-AT-26",
+   "category": "nightlife",
+   "text": {
+    "en": "Vienna offers a lively evening scene with concerts, opera and bars. At concerts and the opera, applause is saved for the end of a piece, not between movements.",
+    "it": "Vienna offre una vita serale vivace con concerti, opera e bar. Ai concerti e all'opera gli applausi si riservano alla fine del brano, non tra un movimento e l'altro.",
+    "es": "Viena ofrece una vida nocturna animada con conciertos, ópera y bares. En los conciertos y la ópera, los aplausos se guardan para el final de la pieza, no entre movimientos.",
+    "pt": "Viena oferece uma vida noturna animada com concertos, ópera e bares. Em concertos e na ópera, os aplausos guardam-se para o final da peça, não entre os andamentos.",
+    "pt_BR": "Viena oferece uma vida noturna animada com concertos, ópera e bares. Em concertos e na ópera, os aplausos ficam para o fim da peça, não entre os movimentos.",
+    "fr": "Vienne offre une vie nocturne animée avec concerts, opéra et bars. Aux concerts et à l'opéra, on réserve les applaudissements pour la fin de l'œuvre, pas entre les mouvements.",
+    "de": "Wien bietet ein lebendiges Abendleben mit Konzerten, Oper und Bars. In Konzert und Oper spart man sich den Applaus für das Ende des Stücks auf, nicht zwischen den Sätzen."
+   }
+  },
+  {
+   "id": "ct-AT-27",
+   "category": "nature",
+   "text": {
+    "en": "Hiking is a national pastime, and hikers on mountain paths usually greet each other with Grüß Gott or Servus. Weather changes quickly in the Alps, so carry layers and check forecasts.",
+    "it": "L'escursionismo è un passatempo nazionale e sui sentieri di montagna ci si saluta di solito con Grüß Gott o Servus. Il tempo sulle Alpi cambia in fretta: porta strati di vestiti e controlla le previsioni.",
+    "es": "El senderismo es un pasatiempo nacional y en los senderos de montaña la gente suele saludarse con Grüß Gott o Servus. El tiempo cambia deprisa en los Alpes, así que lleva capas y consulta la previsión.",
+    "pt": "As caminhadas são um passatempo nacional e, nos trilhos de montanha, as pessoas costumam cumprimentar-se com Grüß Gott ou Servus. O tempo muda depressa nos Alpes, por isso leva camadas de roupa e consulta a previsão.",
+    "pt_BR": "As trilhas são um passatempo nacional e, nos caminhos de montanha, as pessoas costumam se cumprimentar com Grüß Gott ou Servus. O tempo muda rápido nos Alpes, então leve camadas de roupa e confira a previsão.",
+    "fr": "La randonnée est un passe-temps national, et sur les sentiers de montagne on se salue généralement par Grüß Gott ou Servus. Le temps change vite dans les Alpes ; prévoyez des couches de vêtements et consultez la météo.",
+    "de": "Wandern ist ein Nationalsport, und auf Bergwegen grüßt man sich meist mit Grüß Gott oder Servus. Das Wetter in den Alpen schlägt schnell um, also nimm Schichten mit und prüfe die Vorhersage."
+   }
+  },
+  {
+   "id": "ct-AT-28",
+   "category": "safety",
+   "text": {
+    "en": "Austria is generally very safe. The European emergency number 112 works everywhere, and mountain rescue services are well organised, so tell someone your hiking route in advance.",
+    "it": "L'Austria è in genere molto sicura. Il numero di emergenza europeo 112 funziona ovunque e i servizi di soccorso alpino sono ben organizzati: comunica a qualcuno il tuo itinerario prima di partire.",
+    "es": "Austria suele ser muy segura. El número de emergencias europeo 112 funciona en todas partes y los servicios de rescate de montaña están bien organizados; avisa a alguien de tu ruta antes de salir de excursión.",
+    "pt": "A Áustria é geralmente muito segura. O número de emergência europeu 112 funciona em todo o lado e os serviços de resgate de montanha são bem organizados; avisa alguém do teu percurso antes de partir.",
+    "pt_BR": "A Áustria é geralmente muito segura. O número de emergência europeu 112 funciona em todo lugar, e os serviços de resgate na montanha são bem organizados; avise alguém sobre seu trajeto antes de sair para a trilha.",
+    "fr": "L'Autriche est généralement très sûre. Le numéro d'urgence européen 112 fonctionne partout et les secours en montagne sont bien organisés ; indiquez votre itinéraire à quelqu'un avant de partir en randonnée.",
+    "de": "Österreich gilt allgemein als sehr sicher. Die europäische Notrufnummer 112 funktioniert überall, und die Bergrettung ist gut organisiert; sag vor der Wanderung jemandem Bescheid, welche Route du gehst."
+   }
+  },
+  {
+   "id": "ct-AT-29",
+   "category": "local_pride",
+   "text": {
+    "en": "Austria is proud of its musical heritage, from Mozart and Strauss to the Vienna Philharmonic. Asking about a favourite composer or concert hall is a great way to connect.",
+    "it": "L'Austria è orgogliosa del suo patrimonio musicale, da Mozart e Strauss ai Wiener Philharmoniker. Chiedere del compositore o della sala da concerto preferiti è un ottimo modo per entrare in sintonia.",
+    "es": "Austria se enorgullece de su patrimonio musical, de Mozart y Strauss a la Filarmónica de Viena. Preguntar por el compositor o la sala de conciertos favoritos es una buena forma de conectar.",
+    "pt": "A Áustria tem orgulho do seu património musical, de Mozart e Strauss à Filarmónica de Viena. Perguntar pelo compositor ou pela sala de concertos preferidos é uma ótima forma de criar ligação.",
+    "pt_BR": "A Áustria tem orgulho do seu patrimônio musical, de Mozart e Strauss à Filarmônica de Viena. Perguntar pelo compositor ou pela sala de concertos favoritos é um ótimo jeito de criar conexão.",
+    "fr": "L'Autriche est fière de son patrimoine musical, de Mozart et Strauss à l'Orchestre philharmonique de Vienne. Demander le compositeur ou la salle de concert préférés est un excellent moyen de créer un lien.",
+    "de": "Österreich ist stolz auf sein musikalisches Erbe, von Mozart und Strauss bis zu den Wiener Philharmonikern. Nach dem Lieblingskomponisten oder Konzertsaal zu fragen, schafft schnell Verbindung."
+   }
+  },
+  {
+   "id": "ct-AT-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Austrians are proud of their food traditions, such as Wiener Schnitzel, Apfelstrudel and Sachertorte. Trying local specialties and praising them is always appreciated.",
+    "it": "Gli austriaci sono orgogliosi delle loro tradizioni gastronomiche, come la Wiener Schnitzel, l'Apfelstrudel e la Sachertorte. Assaggiare le specialità locali e apprezzarle è sempre gradito.",
+    "es": "Los austriacos se enorgullecen de sus tradiciones gastronómicas, como el Wiener Schnitzel, el Apfelstrudel y la Sachertorte. Probar las especialidades locales y elogiarlas siempre se agradece.",
+    "pt": "Os austríacos têm orgulho das suas tradições gastronómicas, como o Wiener Schnitzel, o Apfelstrudel e a Sachertorte. Provar as especialidades locais e elogiá-las é sempre apreciado.",
+    "pt_BR": "Os austríacos têm orgulho das suas tradições gastronômicas, como o Wiener Schnitzel, o Apfelstrudel e a Sachertorte. Provar as especialidades locais e elogiá-las é sempre apreciado.",
+    "fr": "Les Autrichiens sont fiers de leurs traditions culinaires, comme le Wiener Schnitzel, l'Apfelstrudel et la Sachertorte. Goûter les spécialités locales et les féliciter est toujours apprécié.",
+    "de": "Österreicher sind stolz auf ihre kulinarischen Traditionen wie Wiener Schnitzel, Apfelstrudel und Sachertorte. Einheimische Spezialitäten zu probieren und zu loben kommt immer gut an."
+   }
+  }
+ ]
+}

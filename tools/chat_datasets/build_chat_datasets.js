@@ -135,8 +135,14 @@ function plainWiki(w) {
   return norm(String(w)
     .replace(/\[\[(?:[^|\]]*\|)?([^\]]*)\]\]/g, '$1') // [[link|text]]
     .replace(/'''?/g, '')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/\{\{[^}]*\}\}/g, ' '));
+    // Real tags only: a stray '<' on a page must not swallow the rest of it.
+    .replace(/<\/?[a-zA-Z][^<>]{0,300}>/g, ' ')
+    .replace(/&nbsp;|&mdash;|&ndash;|&hellip;/g, ' ')
+    // Keep the TEXT of templates ({{citation|...}}, {{Citazione|...}}):
+    // fr/it/es/de Wikiquote wrap most quotes in them. Drop only the
+    // template name and the separators.
+    .replace(/\{\{[^|{}]*\|/g, ' ')
+    .replace(/\{\{|\}\}|\|/g, ' '));
 }
 
 async function verifyQuote(q) {

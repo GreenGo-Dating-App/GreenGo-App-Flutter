@@ -1,0 +1,1302 @@
+[
+ {
+  "id": "ib-festivals-001",
+  "topic": "festivals",
+  "text": {
+   "en": "What is the biggest festival in your hometown, and what is it like?",
+   "it": "Qual è il festival più grande della tua città e com'è?",
+   "es": "¿Cuál es el festival más grande de tu ciudad y cómo es?",
+   "pt": "Qual é o maior festival da tua cidade e como é?",
+   "pt_BR": "Qual é o maior festival da sua cidade e como ele é?",
+   "fr": "Quel est le plus grand festival de ta ville et comment est-il ?",
+   "de": "Was ist das größte Fest in deiner Heimatstadt und wie ist es?"
+  }
+ },
+ {
+  "id": "ib-festivals-002",
+  "topic": "festivals",
+  "text": {
+   "en": "Which festival would you travel across the world to experience?",
+   "it": "A quale festival andresti dall'altra parte del mondo?",
+   "es": "¿A qué festival viajarías al otro lado del mundo?",
+   "pt": "A que festival irias até ao outro lado do mundo?",
+   "pt_BR": "A qual festival você iria até o outro lado do mundo?",
+   "fr": "Pour quel festival irais-tu au bout du monde ?",
+   "de": "Für welches Fest würdest du um die halbe Welt reisen?"
+  }
+ },
+ {
+  "id": "ib-festivals-003",
+  "topic": "festivals",
+  "text": {
+   "en": "What is your happiest festival memory from childhood?",
+   "it": "Qual è il tuo ricordo di festa più felice dell'infanzia?",
+   "es": "¿Cuál es tu recuerdo de fiesta más feliz de la infancia?",
+   "pt": "Qual é a tua memória de festa mais feliz da infância?",
+   "pt_BR": "Qual é a sua lembrança de festa mais feliz da infância?",
+   "fr": "Quel est ton souvenir de fête le plus heureux de l'enfance ?",
+   "de": "Was ist deine schönste Festerinnerung aus der Kindheit?"
+  }
+ },
+ {
+  "id": "ib-festivals-004",
+  "topic": "festivals",
+  "text": {
+   "en": "Is there a local festival in your country that few foreigners know about?",
+   "it": "C'è una festa locale nel tuo paese che pochi stranieri conoscono?",
+   "es": "¿Hay alguna fiesta local en tu país que pocos extranjeros conozcan?",
+   "pt": "Há algum festival local no teu país que poucos estrangeiros conhecem?",
+   "pt_BR": "Existe algum festival local no seu país que poucos estrangeiros conhecem?",
+   "fr": "Y a-t-il une fête locale dans ton pays que peu d'étrangers connaissent ?",
+   "de": "Gibt es in deinem Land ein lokales Fest, das nur wenige Ausländer kennen?"
+  }
+ },
+ {
+  "id": "ib-festivals-005",
+  "topic": "festivals",
+  "text": {
+   "en": "What foods do people always eat at festivals where you live?",
+   "it": "Quali cibi si mangiano sempre alle feste dove vivi?",
+   "es": "¿Qué comidas no pueden faltar en las fiestas de donde vives?",
+   "pt": "Que comidas nunca faltam nos festivais onde vives?",
+   "pt_BR": "Que comidas nunca faltam nas festas de onde você mora?",
+   "fr": "Quels plats ne manquent jamais aux fêtes là où tu vis ?",
+   "de": "Welche Speisen gibt es bei Festen bei dir immer?"
+  }
+ },
+ {
+  "id": "ib-festivals-006",
+  "topic": "festivals",
+  "text": {
+   "en": "Do you prefer big crowded festivals or small local celebrations?",
+   "it": "Preferisci i grandi festival affollati o le piccole feste locali?",
+   "es": "¿Prefieres los grandes festivales llenos de gente o las celebraciones locales pequeñas?",
+   "pt": "Preferes grandes festivais cheios de gente ou pequenas festas locais?",
+   "pt_BR": "Você prefere grandes festivais lotados ou pequenas festas locais?",
+   "fr": "Tu préfères les grands festivals bondés ou les petites fêtes locales ?",
+   "de": "Magst du lieber große, volle Feste oder kleine lokale Feiern?"
+  }
+ },
+ {
+  "id": "ib-festivals-007",
+  "topic": "festivals",
+  "text": {
+   "en": "What is the most colorful celebration you have ever seen?",
+   "it": "Qual è la celebrazione più colorata che tu abbia mai visto?",
+   "es": "¿Cuál es la celebración más colorida que has visto nunca?",
+   "pt": "Qual é a celebração mais colorida que já viste?",
+   "pt_BR": "Qual é a celebração mais colorida que você já viu?",
+   "fr": "Quelle est la célébration la plus colorée que tu aies vue ?",
+   "de": "Was ist die farbenfroheste Feier, die du je gesehen hast?"
+  }
+ },
+ {
+  "id": "ib-festivals-008",
+  "topic": "festivals",
+  "text": {
+   "en": "Which music festival has the best atmosphere in your opinion?",
+   "it": "Quale festival musicale ha la migliore atmosfera secondo te?",
+   "es": "¿Qué festival de música tiene la mejor atmósfera en tu opinión?",
+   "pt": "Qual festival de música tem o melhor ambiente na tua opinião?",
+   "pt_BR": "Qual festival de música tem o melhor clima na sua opinião?",
+   "fr": "Quel festival de musique a la meilleure ambiance selon toi ?",
+   "de": "Welches Musikfestival hat deiner Meinung nach die beste Stimmung?"
+  }
+ },
+ {
+  "id": "ib-festivals-009",
+  "topic": "festivals",
+  "text": {
+   "en": "What do people wear at the festivals in your area?",
+   "it": "Cosa si indossa alle feste della tua zona?",
+   "es": "¿Qué se suele llevar puesto en las fiestas de tu zona?",
+   "pt": "O que se usa nos festivais da tua zona?",
+   "pt_BR": "O que as pessoas usam nas festas da sua região?",
+   "fr": "Que porte-t-on aux fêtes de ta région ?",
+   "de": "Was trägt man bei den Festen in deiner Gegend?"
+  }
+ },
+ {
+  "id": "ib-festivals-010",
+  "topic": "festivals",
+  "text": {
+   "en": "Have you ever helped organize a festival or a street party?",
+   "it": "Hai mai aiutato a organizzare una festa o una festa di quartiere?",
+   "es": "¿Alguna vez has ayudado a organizar un festival o una fiesta de barrio?",
+   "pt": "Já ajudaste a organizar um festival ou uma festa de bairro?",
+   "pt_BR": "Você já ajudou a organizar um festival ou uma festa de rua?",
+   "fr": "As-tu déjà aidé à organiser un festival ou une fête de quartier ?",
+   "de": "Hast du schon mal geholfen, ein Fest oder ein Straßenfest zu organisieren?"
+  }
+ },
+ {
+  "id": "ib-festivals-011",
+  "topic": "festivals",
+  "text": {
+   "en": "Which festival tradition would you love to explain to a visitor?",
+   "it": "Quale tradizione di una festa ti piacerebbe spiegare a un visitatore?",
+   "es": "¿Qué tradición festiva te encantaría explicarle a un visitante?",
+   "pt": "Que tradição de festival gostarias de explicar a um visitante?",
+   "pt_BR": "Que tradição de festa você adoraria explicar a um visitante?",
+   "fr": "Quelle tradition de fête aimerais-tu expliquer à un visiteur ?",
+   "de": "Welche Festtradition würdest du einem Besucher gern erklären?"
+  }
+ },
+ {
+  "id": "ib-festivals-012",
+  "topic": "festivals",
+  "text": {
+   "en": "What is the best festival food you have ever tasted?",
+   "it": "Qual è il miglior cibo da festa che tu abbia mai assaggiato?",
+   "es": "¿Cuál es la mejor comida de festival que has probado?",
+   "pt": "Qual é a melhor comida de festival que já provaste?",
+   "pt_BR": "Qual é a melhor comida de festival que você já provou?",
+   "fr": "Quel est le meilleur plat de fête que tu aies goûté ?",
+   "de": "Was ist das beste Festessen, das du je probiert hast?"
+  }
+ },
+ {
+  "id": "ib-festivals-013",
+  "topic": "festivals",
+  "text": {
+   "en": "Is there a festival where the whole town joins in?",
+   "it": "C'è una festa in cui partecipa tutta la città?",
+   "es": "¿Hay alguna fiesta en la que participe todo el pueblo?",
+   "pt": "Há algum festival em que a cidade inteira participa?",
+   "pt_BR": "Existe alguma festa em que a cidade inteira participa?",
+   "fr": "Y a-t-il une fête où toute la ville participe ?",
+   "de": "Gibt es ein Fest, bei dem die ganze Stadt mitmacht?"
+  }
+ },
+ {
+  "id": "ib-festivals-014",
+  "topic": "festivals",
+  "text": {
+   "en": "What is a festival you have always wanted to go to but never have?",
+   "it": "Qual è una festa a cui hai sempre voluto andare ma non sei mai stato?",
+   "es": "¿A qué fiesta siempre has querido ir pero nunca has ido?",
+   "pt": "A que festival sempre quiseste ir mas nunca foste?",
+   "pt_BR": "A qual festa você sempre quis ir, mas nunca foi?",
+   "fr": "Quelle fête as-tu toujours voulu voir sans jamais y aller ?",
+   "de": "Auf welches Fest wolltest du schon immer, warst aber noch nie?"
+  }
+ },
+ {
+  "id": "ib-festivals-015",
+  "topic": "festivals",
+  "text": {
+   "en": "Do fireworks, lanterns or parades matter most to you at a celebration?",
+   "it": "Fuochi d'artificio, lanterne o parate: cosa conta di più per te in una festa?",
+   "es": "¿Qué te importa más en una celebración: fuegos artificiales, farolillos o desfiles?",
+   "pt": "Fogo de artifício, lanternas ou desfiles: o que é mais importante para ti numa festa?",
+   "pt_BR": "Fogos de artifício, lanternas ou desfiles: o que é mais importante para você numa festa?",
+   "fr": "Feux d'artifice, lanternes ou défilés : qu'est-ce qui compte le plus pour toi ?",
+   "de": "Feuerwerk, Laternen oder Umzüge: was ist dir bei einem Fest am wichtigsten?"
+  }
+ },
+ {
+  "id": "ib-festivals-016",
+  "topic": "festivals",
+  "text": {
+   "en": "What does a typical harvest celebration look like in your region?",
+   "it": "Com'è una tipica festa del raccolto nella tua regione?",
+   "es": "¿Cómo es una fiesta típica de la cosecha en tu región?",
+   "pt": "Como é uma festa típica da colheita na tua região?",
+   "pt_BR": "Como é uma festa típica da colheita na sua região?",
+   "fr": "À quoi ressemble une fête des récoltes typique dans ta région ?",
+   "de": "Wie sieht ein typisches Erntefest in deiner Region aus?"
+  }
+ },
+ {
+  "id": "ib-festivals-017",
+  "topic": "festivals",
+  "text": {
+   "en": "Which traditional song or dance can't be missing at your festivals?",
+   "it": "Quale canzone o ballo tradizionale non può mancare alle vostre feste?",
+   "es": "¿Qué canción o baile tradicional no puede faltar en vuestras fiestas?",
+   "pt": "Que canção ou dança tradicional não pode faltar nas vossas festas?",
+   "pt_BR": "Que música ou dança tradicional não pode faltar nas suas festas?",
+   "fr": "Quelle chanson ou danse traditionnelle ne peut pas manquer à vos fêtes ?",
+   "de": "Welches traditionelle Lied oder welcher Tanz darf bei euren Festen nicht fehlen?"
+  }
+ },
+ {
+  "id": "ib-festivals-018",
+  "topic": "festivals",
+  "text": {
+   "en": "What is the most unusual festival you have heard of?",
+   "it": "Qual è la festa più insolita di cui hai sentito parlare?",
+   "es": "¿Cuál es el festival más extraño del que has oído hablar?",
+   "pt": "Qual é o festival mais invulgar de que já ouviste falar?",
+   "pt_BR": "Qual é o festival mais inusitado de que você já ouviu falar?",
+   "fr": "Quelle est la fête la plus insolite dont tu aies entendu parler ?",
+   "de": "Was ist das ungewöhnlichste Fest, von dem du je gehört hast?"
+  }
+ },
+ {
+  "id": "ib-festivals-019",
+  "topic": "festivals",
+  "text": {
+   "en": "How does your family usually celebrate the biggest holiday of the year?",
+   "it": "Come festeggia di solito la tua famiglia la festa più importante dell'anno?",
+   "es": "¿Cómo suele celebrar tu familia la fiesta más importante del año?",
+   "pt": "Como é que a tua família costuma celebrar a festa mais importante do ano?",
+   "pt_BR": "Como a sua família costuma comemorar a festa mais importante do ano?",
+   "fr": "Comment ta famille fête-t-elle d'habitude la plus grande fête de l'année ?",
+   "de": "Wie feiert deine Familie normalerweise das wichtigste Fest des Jahres?"
+  }
+ },
+ {
+  "id": "ib-festivals-020",
+  "topic": "festivals",
+  "text": {
+   "en": "Which season has the best festivals where you live?",
+   "it": "Quale stagione ha le feste più belle dove vivi?",
+   "es": "¿Qué estación tiene las mejores fiestas donde vives?",
+   "pt": "Que estação do ano tem os melhores festivais onde vives?",
+   "pt_BR": "Qual estação do ano tem as melhores festas onde você mora?",
+   "fr": "Quelle saison a les plus belles fêtes là où tu vis ?",
+   "de": "Welche Jahreszeit hat bei dir die schönsten Feste?"
+  }
+ },
+ {
+  "id": "ib-festivals-021",
+  "topic": "festivals",
+  "text": {
+   "en": "If I visited next month, is there any local event I should not miss?",
+   "it": "Se venissi il mese prossimo, c'è qualche evento locale da non perdere?",
+   "es": "Si te visitara el mes que viene, ¿hay algún evento local que no debería perderme?",
+   "pt": "Se te visitasse no próximo mês, há algum evento local que não devia perder?",
+   "pt_BR": "Se eu te visitasse no mês que vem, existe algum evento local que eu não deveria perder?",
+   "fr": "Si je venais le mois prochain, y a-t-il un événement local à ne pas manquer ?",
+   "de": "Wenn ich nächsten Monat zu Besuch käme, gäbe es eine lokale Veranstaltung, die ich nicht verpassen sollte?"
+  }
+ },
+ {
+  "id": "ib-festivals-022",
+  "topic": "festivals",
+  "text": {
+   "en": "What is a festival custom that might surprise a visitor?",
+   "it": "Qual è un'usanza festiva che potrebbe sorprendere un visitatore?",
+   "es": "¿Qué costumbre festiva podría sorprender a un visitante?",
+   "pt": "Que costume de festival poderia surpreender um visitante?",
+   "pt_BR": "Que costume de festa poderia surpreender um visitante?",
+   "fr": "Quelle coutume de fête pourrait surprendre un visiteur ?",
+   "de": "Welcher Festbrauch könnte einen Besucher überraschen?"
+  }
+ },
+ {
+  "id": "ib-festivals-023",
+  "topic": "festivals",
+  "text": {
+   "en": "Do you enjoy dressing up for celebrations or keep it simple?",
+   "it": "Ti piace vestirti in modo speciale per le feste o preferisci la semplicità?",
+   "es": "¿Te gusta arreglarte para las celebraciones o prefieres algo sencillo?",
+   "pt": "Gostas de te arranjar para as celebrações ou preferes algo simples?",
+   "pt_BR": "Você gosta de se arrumar para as celebrações ou prefere algo simples?",
+   "fr": "Aimes-tu te déguiser ou t'habiller pour les fêtes, ou préfères-tu rester simple ?",
+   "de": "Machst du dich gern für Feiern schick oder hältst du es lieber schlicht?"
+  }
+ },
+ {
+  "id": "ib-festivals-024",
+  "topic": "festivals",
+  "text": {
+   "en": "What is the best way to spend a festival day, in your opinion?",
+   "it": "Qual è il modo migliore di passare il giorno di una festa, secondo te?",
+   "es": "¿Cuál es la mejor forma de pasar un día de fiesta, en tu opinión?",
+   "pt": "Qual é a melhor forma de passar um dia de festa, na tua opinião?",
+   "pt_BR": "Qual é a melhor forma de passar um dia de festa, na sua opinião?",
+   "fr": "Quelle est la meilleure façon de passer un jour de fête, selon toi ?",
+   "de": "Was ist deiner Meinung nach die beste Art, einen Festtag zu verbringen?"
+  }
+ },
+ {
+  "id": "ib-festivals-025",
+  "topic": "festivals",
+  "text": {
+   "en": "Which festival has the most beautiful decorations you have seen?",
+   "it": "Quale festa ha le decorazioni più belle che tu abbia visto?",
+   "es": "¿Qué fiesta tiene las decoraciones más bonitas que has visto?",
+   "pt": "Que festival tem as decorações mais bonitas que já viste?",
+   "pt_BR": "Qual festa tem as decorações mais bonitas que você já viu?",
+   "fr": "Quelle fête a les plus belles décorations que tu aies vues ?",
+   "de": "Welches Fest hat die schönsten Dekorationen, die du je gesehen hast?"
+  }
+ },
+ {
+  "id": "ib-festivals-026",
+  "topic": "festivals",
+  "text": {
+   "en": "Is there a festival in your city that locals love but tourists skip?",
+   "it": "C'è una festa nella tua città che i locali amano ma i turisti ignorano?",
+   "es": "¿Hay una fiesta en tu ciudad que los locales adoran pero los turistas se saltan?",
+   "pt": "Há um festival na tua cidade que os locais adoram mas os turistas ignoram?",
+   "pt_BR": "Existe uma festa na sua cidade que os locais adoram, mas os turistas ignoram?",
+   "fr": "Y a-t-il une fête dans ta ville que les habitants adorent mais que les touristes ignorent ?",
+   "de": "Gibt es in deiner Stadt ein Fest, das Einheimische lieben, Touristen aber auslassen?"
+  }
+ },
+ {
+  "id": "ib-festivals-027",
+  "topic": "festivals",
+  "text": {
+   "en": "What festival would you recommend to a first-time visitor to your country?",
+   "it": "Quale festa consiglieresti a chi visita il tuo paese per la prima volta?",
+   "es": "¿Qué fiesta le recomendarías a alguien que visita tu país por primera vez?",
+   "pt": "Que festival recomendarias a quem visita o teu país pela primeira vez?",
+   "pt_BR": "Qual festa você recomendaria a quem visita seu país pela primeira vez?",
+   "fr": "Quelle fête recommanderais-tu à quelqu'un qui visite ton pays pour la première fois ?",
+   "de": "Welches Fest würdest du jemandem empfehlen, der dein Land zum ersten Mal besucht?"
+  }
+ },
+ {
+  "id": "ib-festivals-028",
+  "topic": "festivals",
+  "text": {
+   "en": "Do you remember the first concert or festival you ever went to?",
+   "it": "Ti ricordi il primo concerto o festival a cui sei andato?",
+   "es": "¿Recuerdas el primer concierto o festival al que fuiste?",
+   "pt": "Lembras-te do primeiro concerto ou festival a que foste?",
+   "pt_BR": "Você se lembra do primeiro show ou festival a que foi?",
+   "fr": "Te souviens-tu du premier concert ou festival où tu es allé ?",
+   "de": "Erinnerst du dich an das erste Konzert oder Festival, auf dem du warst?"
+  }
+ },
+ {
+  "id": "ib-festivals-029",
+  "topic": "festivals",
+  "text": {
+   "en": "What is the story behind your favorite local celebration?",
+   "it": "Qual è la storia dietro la tua festa locale preferita?",
+   "es": "¿Cuál es la historia detrás de tu celebración local favorita?",
+   "pt": "Qual é a história por trás da tua celebração local preferida?",
+   "pt_BR": "Qual é a história por trás da sua celebração local favorita?",
+   "fr": "Quelle est l'histoire derrière ta célébration locale préférée ?",
+   "de": "Was ist die Geschichte hinter deinem liebsten lokalen Fest?"
+  }
+ },
+ {
+  "id": "ib-festivals-030",
+  "topic": "festivals",
+  "text": {
+   "en": "How do you usually prepare for a big celebration?",
+   "it": "Come ti prepari di solito a una grande festa?",
+   "es": "¿Cómo te preparas normalmente para una gran celebración?",
+   "pt": "Como te costumas preparar para uma grande celebração?",
+   "pt_BR": "Como você costuma se preparar para uma grande celebração?",
+   "fr": "Comment te prépares-tu d'habitude pour une grande fête ?",
+   "de": "Wie bereitest du dich normalerweise auf ein großes Fest vor?"
+  }
+ },
+ {
+  "id": "ib-festivals-031",
+  "topic": "festivals",
+  "text": {
+   "en": "Which festival do you think best represents the spirit of your country?",
+   "it": "Quale festa pensi rappresenti meglio lo spirito del tuo paese?",
+   "es": "¿Qué fiesta crees que representa mejor el espíritu de tu país?",
+   "pt": "Que festival achas que melhor representa o espírito do teu país?",
+   "pt_BR": "Qual festa você acha que melhor representa o espírito do seu país?",
+   "fr": "Quelle fête représente le mieux l'esprit de ton pays selon toi ?",
+   "de": "Welches Fest verkörpert deiner Meinung nach am besten den Geist deines Landes?"
+  }
+ },
+ {
+  "id": "ib-festivals-032",
+  "topic": "festivals",
+  "text": {
+   "en": "Have you ever celebrated a festival from another culture?",
+   "it": "Hai mai festeggiato una festa di un'altra cultura?",
+   "es": "¿Alguna vez has celebrado una fiesta de otra cultura?",
+   "pt": "Já celebraste um festival de outra cultura?",
+   "pt_BR": "Você já celebrou uma festa de outra cultura?",
+   "fr": "As-tu déjà célébré une fête d'une autre culture ?",
+   "de": "Hast du schon mal ein Fest aus einer anderen Kultur gefeiert?"
+  }
+ },
+ {
+  "id": "ib-festivals-033",
+  "topic": "festivals",
+  "text": {
+   "en": "What sweets or snacks are linked to festivals in your country?",
+   "it": "Quali dolci o spuntini sono legati alle feste nel tuo paese?",
+   "es": "¿Qué dulces o aperitivos se asocian con las fiestas en tu país?",
+   "pt": "Que doces ou petiscos estão ligados às festas no teu país?",
+   "pt_BR": "Que doces ou petiscos estão ligados às festas no seu país?",
+   "fr": "Quelles douceurs ou collations sont liées aux fêtes dans ton pays ?",
+   "de": "Welche Süßigkeiten oder Snacks gehören in deinem Land zu Festen?"
+  }
+ },
+ {
+  "id": "ib-festivals-034",
+  "topic": "festivals",
+  "text": {
+   "en": "What is the loudest, liveliest celebration you have been to?",
+   "it": "Qual è la festa più rumorosa e animata a cui sei stato?",
+   "es": "¿Cuál es la celebración más ruidosa y animada a la que has ido?",
+   "pt": "Qual é a celebração mais barulhenta e animada a que já foste?",
+   "pt_BR": "Qual é a celebração mais barulhenta e animada a que você já foi?",
+   "fr": "Quelle est la fête la plus bruyante et la plus animée où tu sois allé ?",
+   "de": "Was ist die lauteste, lebhafteste Feier, auf der du warst?"
+  }
+ },
+ {
+  "id": "ib-festivals-035",
+  "topic": "festivals",
+  "text": {
+   "en": "Do kids have a special role in the festivals where you live?",
+   "it": "I bambini hanno un ruolo speciale nelle feste dove vivi?",
+   "es": "¿Los niños tienen un papel especial en las fiestas de donde vives?",
+   "pt": "As crianças têm um papel especial nos festivais onde vives?",
+   "pt_BR": "As crianças têm um papel especial nas festas de onde você mora?",
+   "fr": "Les enfants ont-ils un rôle spécial dans les fêtes de chez toi ?",
+   "de": "Spielen Kinder bei den Festen bei dir eine besondere Rolle?"
+  }
+ },
+ {
+  "id": "ib-festivals-036",
+  "topic": "festivals",
+  "text": {
+   "en": "Which festival tradition do you think will never disappear?",
+   "it": "Quale tradizione di una festa pensi non scomparirà mai?",
+   "es": "¿Qué tradición festiva crees que nunca desaparecerá?",
+   "pt": "Que tradição de festival achas que nunca vai desaparecer?",
+   "pt_BR": "Que tradição de festa você acha que nunca vai desaparecer?",
+   "fr": "Quelle tradition de fête ne disparaîtra jamais selon toi ?",
+   "de": "Welche Festtradition wird deiner Meinung nach nie verschwinden?"
+  }
+ },
+ {
+  "id": "ib-festivals-037",
+  "topic": "festivals",
+  "text": {
+   "en": "What is the best view you have had at a parade or fireworks show?",
+   "it": "Qual è la vista migliore che hai avuto a una parata o a uno spettacolo di fuochi d'artificio?",
+   "es": "¿Cuál es la mejor vista que has tenido en un desfile o en un espectáculo de fuegos artificiales?",
+   "pt": "Qual foi a melhor vista que já tiveste num desfile ou espetáculo de fogo de artifício?",
+   "pt_BR": "Qual foi a melhor vista que você já teve em um desfile ou show de fogos de artifício?",
+   "fr": "Quelle est la meilleure vue que tu aies eue lors d'un défilé ou d'un feu d'artifice ?",
+   "de": "Welchen besten Blick hattest du je bei einem Umzug oder Feuerwerk?"
+  }
+ },
+ {
+  "id": "ib-festivals-038",
+  "topic": "festivals",
+  "text": {
+   "en": "Is there a festival in your region connected to the sea, mountains or harvest?",
+   "it": "C'è una festa nella tua regione legata al mare, alla montagna o al raccolto?",
+   "es": "¿Hay alguna fiesta en tu región ligada al mar, la montaña o la cosecha?",
+   "pt": "Há algum festival na tua região ligado ao mar, à serra ou às colheitas?",
+   "pt_BR": "Existe alguma festa na sua região ligada ao mar, à montanha ou à colheita?",
+   "fr": "Y a-t-il dans ta région une fête liée à la mer, à la montagne ou aux récoltes ?",
+   "de": "Gibt es in deiner Region ein Fest, das mit dem Meer, den Bergen oder der Ernte zu tun hat?"
+  }
+ },
+ {
+  "id": "ib-festivals-039",
+  "topic": "festivals",
+  "text": {
+   "en": "What would be your perfect festival lineup, food and all?",
+   "it": "Come sarebbe il tuo festival perfetto, cibo incluso?",
+   "es": "¿Cómo sería tu festival perfecto, comida incluida?",
+   "pt": "Como seria o teu festival perfeito, comida incluída?",
+   "pt_BR": "Como seria o seu festival perfeito, comida incluída?",
+   "fr": "À quoi ressemblerait ton festival parfait, nourriture comprise ?",
+   "de": "Wie würde dein perfektes Festival aussehen, Essen inklusive?"
+  }
+ },
+ {
+  "id": "ib-festivals-040",
+  "topic": "festivals",
+  "text": {
+   "en": "Which celebration do you look forward to the most every year?",
+   "it": "Quale festa aspetti di più ogni anno?",
+   "es": "¿Qué celebración esperas con más ganas cada año?",
+   "pt": "Que celebração esperas com mais ansiedade todos os anos?",
+   "pt_BR": "Qual celebração você mais espera todo ano?",
+   "fr": "Quelle fête attends-tu avec le plus d'impatience chaque année ?",
+   "de": "Auf welches Fest freust du dich jedes Jahr am meisten?"
+  }
+ },
+ {
+  "id": "ib-festivals-041",
+  "topic": "festivals",
+  "text": {
+   "en": "Have you ever tried a traditional costume from a festival?",
+   "it": "Hai mai provato un costume tradizionale di una festa?",
+   "es": "¿Alguna vez te has puesto un traje tradicional de una fiesta?",
+   "pt": "Já experimentaste um traje tradicional de um festival?",
+   "pt_BR": "Você já experimentou uma fantasia tradicional de uma festa?",
+   "fr": "As-tu déjà essayé un costume traditionnel d'une fête ?",
+   "de": "Hast du schon einmal eine traditionelle Festtracht anprobiert?"
+  }
+ },
+ {
+  "id": "ib-festivals-042",
+  "topic": "festivals",
+  "text": {
+   "en": "What festival would you invite me to if I came to see you?",
+   "it": "A quale festa mi inviteresti se venissi a trovarti?",
+   "es": "¿A qué fiesta me invitarías si fuera a verte?",
+   "pt": "A que festival me convidarias se eu fosse visitar-te?",
+   "pt_BR": "A qual festa você me convidaria se eu fosse te visitar?",
+   "fr": "À quelle fête m'inviterais-tu si je venais te voir ?",
+   "de": "Zu welchem Fest würdest du mich einladen, wenn ich dich besuchen käme?"
+  }
+ },
+ {
+  "id": "ib-festivals-043",
+  "topic": "festivals",
+  "text": {
+   "en": "Are there any street markets or fairs you love at certain times of year?",
+   "it": "Ci sono mercati o fiere di strada che ami in certi periodi dell'anno?",
+   "es": "¿Hay mercados o ferias callejeras que te encanten en ciertas épocas del año?",
+   "pt": "Há mercados ou feiras de rua de que gostes em certas alturas do ano?",
+   "pt_BR": "Existem feiras de rua de que você gosta em certas épocas do ano?",
+   "fr": "Y a-t-il des marchés ou des foires de rue que tu adores à certaines périodes de l'année ?",
+   "de": "Gibt es Märkte oder Jahrmärkte, die du zu bestimmten Zeiten im Jahr liebst?"
+  }
+ },
+ {
+  "id": "ib-festivals-044",
+  "topic": "festivals",
+  "text": {
+   "en": "What is something you learned from joining a festival abroad?",
+   "it": "Cosa hai imparato partecipando a una festa all'estero?",
+   "es": "¿Qué aprendiste al participar en una fiesta en el extranjero?",
+   "pt": "O que aprendeste ao participar num festival no estrangeiro?",
+   "pt_BR": "O que você aprendeu ao participar de uma festa no exterior?",
+   "fr": "Qu'as-tu appris en participant à une fête à l'étranger ?",
+   "de": "Was hast du gelernt, als du bei einem Fest im Ausland dabei warst?"
+  }
+ },
+ {
+  "id": "ib-festivals-045",
+  "topic": "festivals",
+  "text": {
+   "en": "Which festival makes your city look completely different?",
+   "it": "Quale festa fa sembrare la tua città completamente diversa?",
+   "es": "¿Qué fiesta hace que tu ciudad parezca completamente distinta?",
+   "pt": "Que festival faz a tua cidade parecer completamente diferente?",
+   "pt_BR": "Qual festa deixa a sua cidade completamente diferente?",
+   "fr": "Quelle fête change complètement le visage de ta ville ?",
+   "de": "Welches Fest lässt deine Stadt völlig anders aussehen?"
+  }
+ },
+ {
+  "id": "ib-festivals-046",
+  "topic": "festivals",
+  "text": {
+   "en": "Do you have a family recipe that only appears at celebrations?",
+   "it": "Hai una ricetta di famiglia che compare solo nelle feste?",
+   "es": "¿Tienes alguna receta familiar que solo aparece en las celebraciones?",
+   "pt": "Tens alguma receita de família que só aparece nas celebrações?",
+   "pt_BR": "Você tem alguma receita de família que só aparece nas comemorações?",
+   "fr": "As-tu une recette de famille qui n'apparaît que lors des fêtes ?",
+   "de": "Hast du ein Familienrezept, das nur bei Feiern auf den Tisch kommt?"
+  }
+ },
+ {
+  "id": "ib-festivals-047",
+  "topic": "festivals",
+  "text": {
+   "en": "What is the most memorable night you have had at a local festival?",
+   "it": "Qual è la serata più memorabile che hai passato a una festa locale?",
+   "es": "¿Cuál es la noche más memorable que has vivido en una fiesta local?",
+   "pt": "Qual foi a noite mais memorável que passaste num festival local?",
+   "pt_BR": "Qual foi a noite mais memorável que você passou em uma festa local?",
+   "fr": "Quelle est la soirée la plus mémorable que tu aies passée à une fête locale ?",
+   "de": "Was war die unvergesslichste Nacht, die du auf einem lokalen Fest erlebt hast?"
+  }
+ },
+ {
+  "id": "ib-festivals-048",
+  "topic": "festivals",
+  "text": {
+   "en": "How do people say happy holidays or congratulations at your celebrations?",
+   "it": "Come ci si fanno gli auguri durante le vostre feste?",
+   "es": "¿Cómo se felicitan las personas durante vuestras celebraciones?",
+   "pt": "Como é que as pessoas se felicitam durante as vossas celebrações?",
+   "pt_BR": "Como as pessoas se felicitam durante as suas celebrações?",
+   "fr": "Comment se souhaite-t-on de bonnes fêtes lors de vos célébrations ?",
+   "de": "Wie wünscht man sich bei euren Feiern frohe Feiertage?"
+  }
+ },
+ {
+  "id": "ib-festivals-049",
+  "topic": "festivals",
+  "text": {
+   "en": "Which festival would you like to teach me a few words about?",
+   "it": "Di quale festa ti piacerebbe insegnarmi qualche parola?",
+   "es": "¿De qué fiesta te gustaría enseñarme unas palabras?",
+   "pt": "Sobre que festival gostarias de me ensinar algumas palavras?",
+   "pt_BR": "Sobre qual festa você gostaria de me ensinar algumas palavras?",
+   "fr": "De quelle fête aimerais-tu m'apprendre quelques mots ?",
+   "de": "Zu welchem Fest könntest du mir ein paar Wörter beibringen?"
+  }
+ },
+ {
+  "id": "ib-festivals-050",
+  "topic": "festivals",
+  "text": {
+   "en": "Which festival gives you the strongest sense of belonging to your community?",
+   "it": "Quale festa ti dà il senso di appartenenza più forte alla tua comunità?",
+   "es": "¿Qué fiesta te da la sensación de pertenencia más fuerte a tu comunidad?",
+   "pt": "Que festival te dá o maior sentimento de pertença à tua comunidade?",
+   "pt_BR": "Qual festa dá a você a maior sensação de pertencimento à sua comunidade?",
+   "fr": "Quelle fête te donne le plus fort sentiment d'appartenir à ta communauté ?",
+   "de": "Welches Fest gibt dir das stärkste Gefühl, zu deiner Gemeinschaft zu gehören?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-001",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Do you have a pet, or have you ever had one?",
+   "it": "Hai un animale domestico o ne hai mai avuto uno?",
+   "es": "¿Tienes mascota o alguna vez has tenido una?",
+   "pt": "Tens algum animal de estimação ou já tiveste algum?",
+   "pt_BR": "Você tem algum bicho de estimação ou já teve algum?",
+   "fr": "As-tu un animal de compagnie, ou en as-tu déjà eu un ?",
+   "de": "Hast du ein Haustier oder hattest du schon mal eins?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-002",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What is the funniest thing an animal has ever done around you?",
+   "it": "Qual è la cosa più divertente che un animale abbia fatto vicino a te?",
+   "es": "¿Qué es lo más gracioso que ha hecho un animal a tu alrededor?",
+   "pt": "Qual é a coisa mais engraçada que um animal já fez perto de ti?",
+   "pt_BR": "Qual é a coisa mais engraçada que um animal já fez perto de você?",
+   "fr": "Quelle est la chose la plus drôle qu'un animal ait faite près de toi ?",
+   "de": "Was ist das Lustigste, was ein Tier in deiner Nähe je getan hat?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-003",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Are you more of a cat person, a dog person, or both?",
+   "it": "Sei più un tipo da gatti, da cani o entrambi?",
+   "es": "¿Eres más de gatos, de perros o de ambos?",
+   "pt": "És mais de gatos, de cães ou de ambos?",
+   "pt_BR": "Você é mais de gatos, de cachorros ou de ambos?",
+   "fr": "Tu es plutôt chats, chiens, ou les deux ?",
+   "de": "Bist du eher ein Katzen-, ein Hundemensch oder beides?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-004",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What is the name of your pet, and is there a story behind it?",
+   "it": "Come si chiama il tuo animale e c'è una storia dietro il nome?",
+   "es": "¿Cómo se llama tu mascota y hay una historia detrás del nombre?",
+   "pt": "Como se chama o teu animal e há alguma história por trás do nome?",
+   "pt_BR": "Como se chama o seu bicho de estimação e existe uma história por trás do nome?",
+   "fr": "Comment s'appelle ton animal, et y a-t-il une histoire derrière son nom ?",
+   "de": "Wie heißt dein Haustier, und steckt eine Geschichte hinter dem Namen?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-005",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Which wild animal would you most love to see in real life?",
+   "it": "Quale animale selvatico ti piacerebbe di più vedere dal vivo?",
+   "es": "¿Qué animal salvaje te encantaría más ver en la vida real?",
+   "pt": "Que animal selvagem gostarias mais de ver ao vivo?",
+   "pt_BR": "Qual animal selvagem você mais gostaria de ver ao vivo?",
+   "fr": "Quel animal sauvage aimerais-tu le plus voir en vrai ?",
+   "de": "Welches Wildtier würdest du am liebsten in Wirklichkeit sehen?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-006",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What animals can you see near your home?",
+   "it": "Quali animali si vedono vicino a casa tua?",
+   "es": "¿Qué animales se pueden ver cerca de tu casa?",
+   "pt": "Que animais se veem perto da tua casa?",
+   "pt_BR": "Que animais dá para ver perto da sua casa?",
+   "fr": "Quels animaux peut-on voir près de chez toi ?",
+   "de": "Welche Tiere kann man in der Nähe deines Zuhauses sehen?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-007",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Do people in your country usually keep pets indoors or outdoors?",
+   "it": "Nel tuo paese di solito gli animali domestici vivono in casa o all'aperto?",
+   "es": "¿En tu país la gente suele tener las mascotas dentro o fuera de casa?",
+   "pt": "No teu país as pessoas costumam ter os animais dentro ou fora de casa?",
+   "pt_BR": "No seu país as pessoas costumam criar os bichos dentro ou fora de casa?",
+   "fr": "Dans ton pays, garde-t-on d'habitude les animaux à l'intérieur ou à l'extérieur ?",
+   "de": "Werden Haustiere in deinem Land meist drinnen oder draußen gehalten?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-008",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What is the most unusual pet you have ever met?",
+   "it": "Qual è l'animale domestico più insolito che tu abbia mai incontrato?",
+   "es": "¿Cuál es la mascota más inusual que has conocido?",
+   "pt": "Qual é o animal de estimação mais invulgar que já conheceste?",
+   "pt_BR": "Qual é o bicho de estimação mais incomum que você já conheceu?",
+   "fr": "Quel est l'animal de compagnie le plus insolite que tu aies rencontré ?",
+   "de": "Was ist das ungewöhnlichste Haustier, dem du je begegnet bist?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-009",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Which animal do you think best describes your personality?",
+   "it": "Quale animale pensi descriva meglio la tua personalità?",
+   "es": "¿Qué animal crees que describe mejor tu personalidad?",
+   "pt": "Que animal achas que melhor descreve a tua personalidade?",
+   "pt_BR": "Qual animal você acha que melhor descreve sua personalidade?",
+   "fr": "Quel animal décrit le mieux ta personnalité selon toi ?",
+   "de": "Welches Tier beschreibt deine Persönlichkeit am besten?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-010",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Have you ever visited a zoo, aquarium or wildlife park you loved?",
+   "it": "Hai mai visitato uno zoo, un acquario o un parco naturale che ti è piaciuto?",
+   "es": "¿Has visitado alguna vez un zoo, acuario o parque de fauna que te encantara?",
+   "pt": "Já visitaste algum zoo, aquário ou parque de vida selvagem de que gostaste muito?",
+   "pt_BR": "Você já visitou algum zoológico, aquário ou parque de vida selvagem de que gostou muito?",
+   "fr": "As-tu déjà visité un zoo, un aquarium ou un parc animalier que tu as adoré ?",
+   "de": "Hast du schon mal einen Zoo, ein Aquarium oder einen Wildpark besucht, der dir gefallen hat?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-011",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What is your earliest memory of an animal?",
+   "it": "Qual è il tuo primo ricordo legato a un animale?",
+   "es": "¿Cuál es tu primer recuerdo con un animal?",
+   "pt": "Qual é a tua primeira memória com um animal?",
+   "pt_BR": "Qual é a sua primeira lembrança com um animal?",
+   "fr": "Quel est ton premier souvenir lié à un animal ?",
+   "de": "Was ist deine früheste Erinnerung an ein Tier?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-012",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Is there an animal that is a symbol of your region or country?",
+   "it": "C'è un animale simbolo della tua regione o del tuo paese?",
+   "es": "¿Hay algún animal que sea símbolo de tu región o país?",
+   "pt": "Há algum animal que seja símbolo da tua região ou do teu país?",
+   "pt_BR": "Existe algum animal que seja símbolo da sua região ou do seu país?",
+   "fr": "Y a-t-il un animal qui symbolise ta région ou ton pays ?",
+   "de": "Gibt es ein Tier, das ein Symbol für deine Region oder dein Land ist?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-013",
+  "topic": "animals_pets",
+  "text": {
+   "en": "How does your pet greet you when you come home?",
+   "it": "Come ti accoglie il tuo animale quando torni a casa?",
+   "es": "¿Cómo te recibe tu mascota cuando llegas a casa?",
+   "pt": "Como é que o teu animal te recebe quando chegas a casa?",
+   "pt_BR": "Como o seu bichinho recebe você quando chega em casa?",
+   "fr": "Comment ton animal t'accueille-t-il quand tu rentres ?",
+   "de": "Wie begrüßt dich dein Haustier, wenn du nach Hause kommst?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-014",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What was the best trick or habit you saw a pet do?",
+   "it": "Qual è il trucco o la abitudine più bella che hai visto fare a un animale?",
+   "es": "¿Cuál es el mejor truco o costumbre que has visto hacer a una mascota?",
+   "pt": "Qual foi o melhor truque ou hábito que viste um animal fazer?",
+   "pt_BR": "Qual foi o melhor truque ou hábito que você viu um bicho fazer?",
+   "fr": "Quel est le meilleur tour ou la meilleure habitude que tu aies vue chez un animal ?",
+   "de": "Was war der beste Trick oder die schönste Angewohnheit, die du bei einem Haustier gesehen hast?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-015",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Which animal from another country fascinates you the most?",
+   "it": "Quale animale di un altro paese ti affascina di più?",
+   "es": "¿Qué animal de otro país te fascina más?",
+   "pt": "Que animal de outro país mais te fascina?",
+   "pt_BR": "Qual animal de outro país mais fascina você?",
+   "fr": "Quel animal d'un autre pays te fascine le plus ?",
+   "de": "Welches Tier aus einem anderen Land fasziniert dich am meisten?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-016",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Do you prefer birds, fish, or furry animals?",
+   "it": "Preferisci gli uccelli, i pesci o gli animali con il pelo?",
+   "es": "¿Prefieres las aves, los peces o los animales peludos?",
+   "pt": "Preferes aves, peixes ou animais peludos?",
+   "pt_BR": "Você prefere aves, peixes ou animais peludos?",
+   "fr": "Tu préfères les oiseaux, les poissons ou les animaux à poils ?",
+   "de": "Magst du lieber Vögel, Fische oder Tiere mit Fell?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-017",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What do you think makes pets such good company?",
+   "it": "Cosa rende gli animali domestici una compagnia così bella, secondo te?",
+   "es": "¿Qué crees que hace que las mascotas sean tan buena compañía?",
+   "pt": "O que achas que faz dos animais de estimação uma companhia tão boa?",
+   "pt_BR": "O que você acha que faz dos bichos de estimação uma companhia tão boa?",
+   "fr": "Qu'est-ce qui fait des animaux de si bons compagnons selon toi ?",
+   "de": "Was macht Haustiere deiner Meinung nach zu so guter Gesellschaft?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-018",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Have you ever met an animal that surprised you?",
+   "it": "Hai mai incontrato un animale che ti ha sorpreso?",
+   "es": "¿Has conocido alguna vez a un animal que te sorprendiera?",
+   "pt": "Já conheceste algum animal que te surpreendeu?",
+   "pt_BR": "Você já conheceu algum animal que te surpreendeu?",
+   "fr": "As-tu déjà rencontré un animal qui t'a surpris ?",
+   "de": "Bist du schon mal einem Tier begegnet, das dich überrascht hat?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-019",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Which animal would you love to have as a pet if you could?",
+   "it": "Quale animale ti piacerebbe avere come compagno, se potessi?",
+   "es": "¿Qué animal te encantaría tener de mascota si pudieras?",
+   "pt": "Que animal gostarias de ter como animal de estimação, se pudesses?",
+   "pt_BR": "Que animal você adoraria ter como bichinho de estimação, se pudesse?",
+   "fr": "Quel animal aimerais-tu avoir comme compagnon, si tu le pouvais ?",
+   "de": "Welches Tier hättest du gern als Haustier, wenn du könntest?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-020",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What is the cutest animal photo you have ever taken?",
+   "it": "Qual è la foto di animale più carina che tu abbia mai scattato?",
+   "es": "¿Cuál es la foto de animal más tierna que has hecho?",
+   "pt": "Qual é a foto de animal mais fofa que já tiraste?",
+   "pt_BR": "Qual é a foto de animal mais fofa que você já tirou?",
+   "fr": "Quelle est la plus mignonne photo d'animal que tu aies prise ?",
+   "de": "Was ist das süßeste Tierfoto, das du je gemacht hast?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-021",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Are there any stray animals or shelters in your city that people love?",
+   "it": "Ci sono animali randagi o rifugi nella tua città che le persone amano?",
+   "es": "¿Hay animales callejeros o refugios en tu ciudad que la gente quiera mucho?",
+   "pt": "Há animais de rua ou abrigos na tua cidade de que as pessoas gostem muito?",
+   "pt_BR": "Existem animais de rua ou abrigos na sua cidade de que as pessoas gostam muito?",
+   "fr": "Y a-t-il dans ta ville des animaux errants ou des refuges que les gens adorent ?",
+   "de": "Gibt es in deiner Stadt Streuner oder Tierheime, die die Leute besonders mögen?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-022",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What is your favorite way to spend a day with an animal?",
+   "it": "Qual è il tuo modo preferito di passare una giornata con un animale?",
+   "es": "¿Cuál es tu forma favorita de pasar un día con un animal?",
+   "pt": "Qual é a tua maneira preferida de passar um dia com um animal?",
+   "pt_BR": "Qual é a sua maneira favorita de passar um dia com um animal?",
+   "fr": "Quelle est ta façon préférée de passer une journée avec un animal ?",
+   "de": "Wie verbringst du am liebsten einen Tag mit einem Tier?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-023",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Do you know any interesting animal facts you could share?",
+   "it": "Conosci qualche curiosità interessante sugli animali da condividere?",
+   "es": "¿Conoces algún dato curioso sobre animales que puedas compartir?",
+   "pt": "Conheces alguma curiosidade interessante sobre animais que possas partilhar?",
+   "pt_BR": "Você conhece alguma curiosidade interessante sobre animais para compartilhar?",
+   "fr": "Connais-tu des faits intéressants sur les animaux à partager ?",
+   "de": "Kennst du interessante Tierfakten, die du teilen könntest?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-024",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Which animals live in the countryside or mountains near you?",
+   "it": "Quali animali vivono in campagna o in montagna vicino a te?",
+   "es": "¿Qué animales viven en el campo o las montañas cerca de ti?",
+   "pt": "Que animais vivem no campo ou nas montanhas perto de ti?",
+   "pt_BR": "Quais animais vivem no campo ou nas montanhas perto de você?",
+   "fr": "Quels animaux vivent à la campagne ou en montagne près de chez toi ?",
+   "de": "Welche Tiere leben auf dem Land oder in den Bergen in deiner Nähe?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-025",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What would you name a new puppy or kitten?",
+   "it": "Che nome daresti a un cucciolo o a un gattino appena arrivato?",
+   "es": "¿Qué nombre le pondrías a un cachorro o a un gatito nuevo?",
+   "pt": "Que nome darias a um cachorrinho ou gatinho novo?",
+   "pt_BR": "Que nome você daria a um filhote de cachorro ou gatinho novo?",
+   "fr": "Quel nom donnerais-tu à un nouveau chiot ou chaton ?",
+   "de": "Wie würdest du einen neuen Welpen oder ein Kätzchen nennen?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-026",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Did you grow up around farm animals or in a big city?",
+   "it": "Sei cresciuto con animali da fattoria o in una grande città?",
+   "es": "¿Creciste rodeado de animales de granja o en una gran ciudad?",
+   "pt": "Cresceste perto de animais de quinta ou numa cidade grande?",
+   "pt_BR": "Você cresceu perto de animais de fazenda ou numa cidade grande?",
+   "fr": "As-tu grandi entouré d'animaux de ferme ou dans une grande ville ?",
+   "de": "Bist du mit Nutztieren oder in einer Großstadt aufgewachsen?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-027",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What is a funny word or expression about animals in your language?",
+   "it": "Qual è una parola o espressione divertente sugli animali nella tua lingua?",
+   "es": "¿Cuál es una palabra o expresión graciosa sobre animales en tu idioma?",
+   "pt": "Qual é uma palavra ou expressão engraçada sobre animais na tua língua?",
+   "pt_BR": "Qual é uma palavra ou expressão engraçada sobre animais na sua língua?",
+   "fr": "Quel est un mot ou une expression drôle sur les animaux dans ta langue ?",
+   "de": "Welches lustige Wort oder welche Redewendung über Tiere gibt es in deiner Sprache?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-028",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Which animal sound do you find the most relaxing?",
+   "it": "Quale verso di animale trovi più rilassante?",
+   "es": "¿Qué sonido de animal te parece el más relajante?",
+   "pt": "Que som de animal achas mais relaxante?",
+   "pt_BR": "Qual som de animal você acha mais relaxante?",
+   "fr": "Quel cri d'animal trouves-tu le plus apaisant ?",
+   "de": "Welches Tiergeräusch findest du am entspannendsten?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-029",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What is the best thing about having a pet in your daily routine?",
+   "it": "Qual è la cosa più bella di avere un animale nella tua routine quotidiana?",
+   "es": "¿Qué es lo mejor de tener una mascota en tu rutina diaria?",
+   "pt": "Qual é a melhor coisa de ter um animal na tua rotina diária?",
+   "pt_BR": "Qual é a melhor coisa de ter um bichinho na sua rotina diária?",
+   "fr": "Quel est le meilleur côté d'avoir un animal dans ton quotidien ?",
+   "de": "Was ist das Schönste daran, ein Haustier im Alltag zu haben?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-030",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Have you ever gone birdwatching, whale watching or on a safari?",
+   "it": "Hai mai fatto birdwatching, avvistamento di balene o un safari?",
+   "es": "¿Has hecho alguna vez observación de aves, de ballenas o un safari?",
+   "pt": "Já fizeste observação de aves, de baleias ou um safari?",
+   "pt_BR": "Você já fez observação de aves, de baleias ou um safari?",
+   "fr": "As-tu déjà fait de l'observation d'oiseaux, de baleines ou un safari ?",
+   "de": "Warst du schon mal beim Vogelbeobachten, Walbeobachten oder auf einer Safari?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-031",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Is there a legend or folk tale about an animal in your culture?",
+   "it": "C'è una leggenda o una fiaba su un animale nella tua cultura?",
+   "es": "¿Hay alguna leyenda o cuento popular sobre un animal en tu cultura?",
+   "pt": "Existe alguma lenda ou conto popular sobre um animal na tua cultura?",
+   "pt_BR": "Existe alguma lenda ou conto popular sobre um animal na sua cultura?",
+   "fr": "Existe-t-il une légende ou un conte sur un animal dans ta culture ?",
+   "de": "Gibt es in deiner Kultur eine Legende oder ein Märchen über ein Tier?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-032",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What is the biggest animal you have ever seen up close?",
+   "it": "Qual è l'animale più grande che hai visto da vicino?",
+   "es": "¿Cuál es el animal más grande que has visto de cerca?",
+   "pt": "Qual é o maior animal que já viste de perto?",
+   "pt_BR": "Qual é o maior animal que você já viu de perto?",
+   "fr": "Quel est le plus gros animal que tu aies vu de près ?",
+   "de": "Was ist das größte Tier, das du je aus der Nähe gesehen hast?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-033",
+  "topic": "animals_pets",
+  "text": {
+   "en": "How do neighbors and friends react to pets where you live?",
+   "it": "Come reagiscono vicini e amici agli animali domestici dove vivi?",
+   "es": "¿Cómo reaccionan los vecinos y amigos ante las mascotas donde vives?",
+   "pt": "Como reagem os vizinhos e amigos aos animais de estimação onde vives?",
+   "pt_BR": "Como os vizinhos e amigos reagem aos bichos de estimação onde você mora?",
+   "fr": "Comment les voisins et les amis réagissent-ils aux animaux là où tu vis ?",
+   "de": "Wie reagieren Nachbarn und Freunde bei dir auf Haustiere?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-034",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What is your pet's favorite food or treat?",
+   "it": "Qual è il cibo o il premio preferito del tuo animale?",
+   "es": "¿Cuál es la comida o el premio favorito de tu mascota?",
+   "pt": "Qual é a comida ou o petisco preferido do teu animal?",
+   "pt_BR": "Qual é a comida ou o petisco favorito do seu bichinho?",
+   "fr": "Quelle est la nourriture ou la friandise préférée de ton animal ?",
+   "de": "Was ist das Lieblingsfutter oder der Lieblingsleckerbissen deines Haustiers?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-035",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Which animal do you find the most graceful or beautiful?",
+   "it": "Quale animale trovi più elegante o bello?",
+   "es": "¿Qué animal te parece el más elegante o hermoso?",
+   "pt": "Que animal achas o mais elegante ou bonito?",
+   "pt_BR": "Qual animal você acha o mais elegante ou bonito?",
+   "fr": "Quel animal trouves-tu le plus gracieux ou le plus beau ?",
+   "de": "Welches Tier findest du am anmutigsten oder schönsten?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-036",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Do you like to hike or travel with your dog or other pets?",
+   "it": "Ti piace fare escursioni o viaggiare con il tuo cane o altri animali?",
+   "es": "¿Te gusta hacer excursiones o viajar con tu perro u otras mascotas?",
+   "pt": "Gostas de fazer caminhadas ou viajar com o teu cão ou outros animais?",
+   "pt_BR": "Você gosta de fazer trilhas ou viajar com seu cachorro ou outros bichinhos?",
+   "fr": "Aimes-tu randonner ou voyager avec ton chien ou d'autres animaux ?",
+   "de": "Wanderst du oder reist du gern mit deinem Hund oder anderen Tieren?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-037",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What is the funniest animal video you have seen recently?",
+   "it": "Qual è il video di animali più divertente che hai visto di recente?",
+   "es": "¿Cuál es el vídeo de animales más gracioso que has visto últimamente?",
+   "pt": "Qual é o vídeo de animais mais engraçado que viste recentemente?",
+   "pt_BR": "Qual é o vídeo de animais mais engraçado que você viu recentemente?",
+   "fr": "Quelle est la vidéo d'animaux la plus drôle que tu aies vue récemment ?",
+   "de": "Welches ist das lustigste Tiervideo, das du in letzter Zeit gesehen hast?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-038",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Which animals are common in children's stories where you grew up?",
+   "it": "Quali animali sono comuni nelle storie per bambini dove sei cresciuto?",
+   "es": "¿Qué animales son habituales en los cuentos infantiles donde creciste?",
+   "pt": "Que animais são comuns nas histórias infantis do sítio onde cresceste?",
+   "pt_BR": "Quais animais são comuns nas histórias infantis do lugar onde você cresceu?",
+   "fr": "Quels animaux reviennent souvent dans les histoires pour enfants de ton enfance ?",
+   "de": "Welche Tiere kommen in den Kindergeschichten vor, mit denen du aufgewachsen bist?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-039",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Have you ever helped an animal in need?",
+   "it": "Hai mai aiutato un animale in difficoltà?",
+   "es": "¿Alguna vez has ayudado a un animal necesitado?",
+   "pt": "Já ajudaste um animal em necessidade?",
+   "pt_BR": "Você já ajudou um animal que precisava de ajuda?",
+   "fr": "As-tu déjà aidé un animal en détresse ?",
+   "de": "Hast du schon mal einem Tier in Not geholfen?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-040",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What is the most intelligent animal you have come across?",
+   "it": "Qual è l'animale più intelligente in cui ti sei imbattuto?",
+   "es": "¿Cuál es el animal más inteligente que has conocido?",
+   "pt": "Qual é o animal mais inteligente que já encontraste?",
+   "pt_BR": "Qual é o animal mais inteligente que você já encontrou?",
+   "fr": "Quel est l'animal le plus intelligent que tu aies rencontré ?",
+   "de": "Was ist das klügste Tier, dem du je begegnet bist?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-041",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Does your pet have a funny habit or a favorite napping spot?",
+   "it": "Il tuo animale ha una strana abitudine o un posto preferito per dormire?",
+   "es": "¿Tu mascota tiene alguna manía graciosa o un sitio favorito para dormir?",
+   "pt": "O teu animal tem algum hábito engraçado ou um sítio preferido para dormir?",
+   "pt_BR": "Seu bichinho tem algum hábito engraçado ou um lugar favorito para cochilar?",
+   "fr": "Ton animal a-t-il une habitude drôle ou un endroit préféré pour faire la sieste ?",
+   "de": "Hat dein Haustier eine lustige Angewohnheit oder einen Lieblingsplatz zum Schlafen?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-042",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What would be the perfect pet for your lifestyle?",
+   "it": "Quale sarebbe l'animale perfetto per il tuo stile di vita?",
+   "es": "¿Cuál sería la mascota perfecta para tu estilo de vida?",
+   "pt": "Qual seria o animal de estimação perfeito para o teu estilo de vida?",
+   "pt_BR": "Qual seria o bichinho de estimação perfeito para o seu estilo de vida?",
+   "fr": "Quel serait l'animal de compagnie parfait pour ton mode de vie ?",
+   "de": "Welches Haustier wäre perfekt für deinen Lebensstil?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-043",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Which animal do you wish you could talk to for a day?",
+   "it": "Con quale animale vorresti poter parlare per un giorno?",
+   "es": "¿Con qué animal te gustaría poder hablar durante un día?",
+   "pt": "Com que animal gostarias de poder falar durante um dia?",
+   "pt_BR": "Com qual animal você gostaria de poder conversar por um dia?",
+   "fr": "Avec quel animal aimerais-tu pouvoir parler pendant une journée ?",
+   "de": "Mit welchem Tier würdest du gern einen Tag lang sprechen können?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-044",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Are there any nature reserves or parks near you where animals roam free?",
+   "it": "Ci sono riserve naturali o parchi vicino a te dove gli animali vivono liberi?",
+   "es": "¿Hay reservas naturales o parques cerca de ti donde los animales vivan en libertad?",
+   "pt": "Há reservas naturais ou parques perto de ti onde os animais vivam em liberdade?",
+   "pt_BR": "Existem reservas naturais ou parques perto de você onde os animais vivem livres?",
+   "fr": "Y a-t-il près de chez toi des réserves naturelles ou des parcs où les animaux vivent en liberté ?",
+   "de": "Gibt es in deiner Nähe Naturschutzgebiete oder Parks, in denen Tiere frei leben?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-045",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What did your pet or a favorite animal teach you?",
+   "it": "Cosa ti ha insegnato il tuo animale o un animale che ami?",
+   "es": "¿Qué te ha enseñado tu mascota o un animal que quieres?",
+   "pt": "O que te ensinou o teu animal ou um animal de que gostas?",
+   "pt_BR": "O que o seu bichinho ou um animal de que você gosta te ensinou?",
+   "fr": "Qu'est-ce que ton animal ou un animal que tu aimes t'a appris ?",
+   "de": "Was hat dir dein Haustier oder ein Lieblingstier beigebracht?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-046",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Do you like the idea of adopting an animal from a shelter?",
+   "it": "Ti piace l'idea di adottare un animale da un rifugio?",
+   "es": "¿Te gusta la idea de adoptar un animal de un refugio?",
+   "pt": "Gostas da ideia de adotar um animal de um abrigo?",
+   "pt_BR": "Você gosta da ideia de adotar um animal de um abrigo?",
+   "fr": "Aimes-tu l'idée d'adopter un animal dans un refuge ?",
+   "de": "Gefällt dir der Gedanke, ein Tier aus dem Tierheim zu adoptieren?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-047",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Which animal would be the star of a movie about your hometown?",
+   "it": "Quale animale sarebbe la star di un film sulla tua città?",
+   "es": "¿Qué animal sería la estrella de una película sobre tu ciudad natal?",
+   "pt": "Que animal seria a estrela de um filme sobre a tua terra?",
+   "pt_BR": "Qual animal seria a estrela de um filme sobre a sua cidade natal?",
+   "fr": "Quel animal serait la vedette d'un film sur ta ville natale ?",
+   "de": "Welches Tier wäre der Star eines Films über deine Heimatstadt?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-048",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What is the sweetest moment you have shared with an animal?",
+   "it": "Qual è il momento più dolce che hai condiviso con un animale?",
+   "es": "¿Cuál es el momento más dulce que has compartido con un animal?",
+   "pt": "Qual foi o momento mais doce que partilhaste com um animal?",
+   "pt_BR": "Qual foi o momento mais doce que você compartilhou com um animal?",
+   "fr": "Quel est le moment le plus tendre que tu aies partagé avec un animal ?",
+   "de": "Was war der schönste Moment, den du mit einem Tier geteilt hast?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-049",
+  "topic": "animals_pets",
+  "text": {
+   "en": "What do you do to keep your pet happy and active?",
+   "it": "Cosa fai per tenere il tuo animale felice e attivo?",
+   "es": "¿Qué haces para que tu mascota esté feliz y activa?",
+   "pt": "O que fazes para manter o teu animal feliz e ativo?",
+   "pt_BR": "O que você faz para manter seu bichinho feliz e ativo?",
+   "fr": "Que fais-tu pour que ton animal reste heureux et actif ?",
+   "de": "Was tust du, damit dein Haustier glücklich und aktiv bleibt?"
+  }
+ },
+ {
+  "id": "ib-animals_pets-050",
+  "topic": "animals_pets",
+  "text": {
+   "en": "Which animal-themed place would you recommend I visit in your country?",
+   "it": "Quale luogo legato agli animali mi consiglieresti di visitare nel tuo paese?",
+   "es": "¿Qué lugar relacionado con animales me recomendarías visitar en tu país?",
+   "pt": "Que lugar ligado a animais me recomendarias visitar no teu país?",
+   "pt_BR": "Que lugar ligado a animais você me recomendaria visitar no seu país?",
+   "fr": "Quel lieu lié aux animaux me conseillerais-tu de visiter dans ton pays ?",
+   "de": "Welchen tierischen Ort in deinem Land würdest du mir zum Besuch empfehlen?"
+  }
+ }
+]

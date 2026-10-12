@@ -1,0 +1,1178 @@
+{
+ "MX": [
+  {
+   "id": "ct-MX-01",
+   "category": "greetings",
+   "text": {
+    "en": "Many people greet with a handshake; among friends, a hug or a light kiss on the right cheek is common, especially for women.",
+    "it": "Molti si salutano con una stretta di mano; tra amici sono comuni un abbraccio o un leggero bacio sulla guancia destra, soprattutto tra donne.",
+    "es": "Mucha gente se saluda con un apretón de manos; entre amigos es común un abrazo o un beso suave en la mejilla derecha, sobre todo entre mujeres.",
+    "pt": "Muitas pessoas cumprimentam-se com um aperto de mão; entre amigos é comum um abraço ou um beijo leve na face direita, sobretudo entre mulheres.",
+    "pt_BR": "Muita gente se cumprimenta com um aperto de mão; entre amigos é comum um abraço ou um beijo leve no rosto direito, principalmente entre mulheres.",
+    "fr": "Beaucoup de gens se saluent d'une poignée de main ; entre amis, une accolade ou une légère bise sur la joue droite est courante, surtout entre femmes.",
+    "de": "Viele begrüßen sich mit Handschlag; unter Freunden sind eine Umarmung oder ein leichter Wangenkuss auf die rechte Wange üblich, vor allem unter Frauen."
+   }
+  },
+  {
+   "id": "ct-MX-02",
+   "category": "greetings",
+   "text": {
+    "en": "It is common to say buenos días, buenas tardes or buenas noches when entering a shop, taxi, waiting room or elevator.",
+    "it": "È comune dire buenos días, buenas tardes o buenas noches quando si entra in un negozio, un taxi, una sala d'attesa o un ascensore.",
+    "es": "Es común decir buenos días, buenas tardes o buenas noches al entrar a una tienda, un taxi, una sala de espera o un elevador.",
+    "pt": "É comum dizer buenos días, buenas tardes ou buenas noches ao entrar numa loja, num táxi, numa sala de espera ou num elevador.",
+    "pt_BR": "É comum dizer buenos días, buenas tardes ou buenas noches ao entrar em uma loja, em um táxi, em uma sala de espera ou em um elevador.",
+    "fr": "Il est courant de dire buenos días, buenas tardes ou buenas noches en entrant dans un magasin, un taxi, une salle d'attente ou un ascenseur.",
+    "de": "Es ist üblich, beim Betreten eines Ladens, Taxis, Wartezimmers oder Aufzugs buenos días, buenas tardes oder buenas noches zu sagen."
+   }
+  },
+  {
+   "id": "ct-MX-03",
+   "category": "conversation",
+   "text": {
+    "en": "Asking about someone's family and sharing a little about yours is a warm way to start a conversation.",
+    "it": "Chiedere della famiglia di qualcuno e raccontare un po' della propria è un modo caloroso per iniziare una conversazione.",
+    "es": "Preguntar por la familia de alguien y contar un poco de la tuya es una forma cálida de empezar una conversación.",
+    "pt": "Perguntar pela família de alguém e contar um pouco sobre a tua é uma forma calorosa de começar uma conversa.",
+    "pt_BR": "Perguntar pela família de alguém e contar um pouco sobre a sua é uma forma calorosa de começar uma conversa.",
+    "fr": "Demander des nouvelles de la famille de quelqu'un et parler un peu de la sienne est une façon chaleureuse d'entamer la conversation.",
+    "de": "Nach der Familie des Gegenübers zu fragen und etwas über die eigene zu erzählen, ist ein herzlicher Einstieg ins Gespräch."
+   }
+  },
+  {
+   "id": "ct-MX-04",
+   "category": "conversation",
+   "text": {
+    "en": "Many people use usted with elders and in formal situations, and switch to tú only when invited or when the other person does first.",
+    "it": "Molti usano usted con gli anziani e nelle situazioni formali, e passano al tú solo se invitati o se lo fa prima l'altra persona.",
+    "es": "Mucha gente usa usted con los mayores y en situaciones formales, y pasa al tú solo cuando se lo proponen o la otra persona lo hace primero.",
+    "pt": "Muitas pessoas usam usted com os mais velhos e em situações formais, e só passam ao tú quando são convidadas ou quando a outra pessoa o faz primeiro.",
+    "pt_BR": "Muita gente usa usted com os mais velhos e em situações formais, e só passa para o tú quando é convidada ou quando a outra pessoa faz isso primeiro.",
+    "fr": "Beaucoup de gens disent usted aux personnes âgées et dans les situations formelles, et ne passent au tú que sur invitation ou si l'autre le fait d'abord.",
+    "de": "Viele sprechen Ältere und Fremde in formellen Situationen mit usted an und wechseln erst zum tú, wenn es angeboten wird oder das Gegenüber damit anfängt."
+   }
+  },
+  {
+   "id": "ct-MX-05",
+   "category": "dining",
+   "text": {
+    "en": "The main meal, la comida, is usually eaten in the early afternoon, often between 2 and 4 pm, and dinner tends to be lighter and later.",
+    "it": "Il pasto principale, la comida, si fa di solito nel primo pomeriggio, spesso tra le 14 e le 16, e la cena tende a essere più leggera e più tardi.",
+    "es": "La comida principal suele tomarse a media tarde, a menudo entre las 2 y las 4 pm, y la cena tiende a ser más ligera y más tarde.",
+    "pt": "A refeição principal, la comida, costuma ser feita no início da tarde, muitas vezes entre as 14h e as 16h, e o jantar tende a ser mais leve e mais tardio.",
+    "pt_BR": "A refeição principal, la comida, costuma ser feita no início da tarde, muitas vezes entre 14h e 16h, e o jantar tende a ser mais leve e mais tardio.",
+    "fr": "Le repas principal, la comida, se prend généralement en début d'après-midi, souvent entre 14 h et 16 h, et le dîner est plutôt léger et tardif.",
+    "de": "Die Hauptmahlzeit, la comida, wird meist am frühen Nachmittag gegessen, oft zwischen 14 und 16 Uhr; das Abendessen ist tendenziell leichter und später."
+   }
+  },
+  {
+   "id": "ct-MX-06",
+   "category": "dining",
+   "text": {
+    "en": "After a meal, many people stay at the table to chat. This sobremesa is part of the enjoyment, so asking for the bill right away can feel rushed.",
+    "it": "Dopo il pasto molti restano a tavola a chiacchierare. Questa sobremesa fa parte del piacere, quindi chiedere subito il conto può sembrare frettoloso.",
+    "es": "Después de comer, mucha gente se queda en la mesa conversando. Esta sobremesa es parte del disfrute, así que pedir la cuenta enseguida puede parecer apresurado.",
+    "pt": "Depois da refeição, muita gente fica à mesa a conversar. Esta sobremesa faz parte do prazer, por isso pedir logo a conta pode parecer apressado.",
+    "pt_BR": "Depois da refeição, muita gente fica à mesa conversando. Essa sobremesa faz parte do prazer, então pedir a conta logo pode parecer apressado.",
+    "fr": "Après le repas, beaucoup de gens restent à table pour discuter. Cette sobremesa fait partie du plaisir, donc demander l'addition tout de suite peut sembler pressé.",
+    "de": "Nach dem Essen bleiben viele noch am Tisch sitzen und unterhalten sich. Diese sobremesa gehört zum Genuss, daher wirkt es hastig, sofort nach der Rechnung zu fragen."
+   }
+  },
+  {
+   "id": "ct-MX-07",
+   "category": "dining",
+   "text": {
+    "en": "Salsas can be very spicy. If you are unsure, ask ¿Pica mucho? before trying one, and ask for it on the side.",
+    "it": "Le salse possono essere molto piccanti. Se hai dubbi, chiedi ¿Pica mucho? prima di assaggiarne una e chiedila a parte.",
+    "es": "Las salsas pueden ser muy picantes. Si tienes dudas, pregunta ¿Pica mucho? antes de probar una y pídela aparte.",
+    "pt": "Os molhos podem ser muito picantes. Se tiveres dúvidas, pergunta ¿Pica mucho? antes de provar um e pede-o à parte.",
+    "pt_BR": "Os molhos podem ser muito picantes. Se tiver dúvidas, pergunte ¿Pica mucho? antes de provar um e peça à parte.",
+    "fr": "Les salsas peuvent être très piquantes. Dans le doute, demande ¿Pica mucho? avant d'en goûter une et demande-la à part.",
+    "de": "Salsas können sehr scharf sein. Frag im Zweifel ¿Pica mucho?, bevor du eine probierst, und bitte darum, sie extra zu bekommen."
+   }
+  },
+  {
+   "id": "ct-MX-08",
+   "category": "tipping",
+   "text": {
+    "en": "A tip, or propina, of about 10 to 15 percent is customary in restaurants. Check the bill first, as a service charge is sometimes already added.",
+    "it": "Una mancia, o propina, di circa il 10-15 per cento è consuetudine nei ristoranti. Controlla prima il conto, perché a volte il servizio è già incluso.",
+    "es": "Una propina de alrededor del 10 al 15 por ciento es habitual en los restaurantes. Revisa antes la cuenta, porque a veces el servicio ya viene incluido.",
+    "pt": "Uma gorjeta, ou propina, de cerca de 10 a 15 por cento é habitual nos restaurantes. Vê primeiro a conta, porque por vezes o serviço já está incluído.",
+    "pt_BR": "Uma gorjeta, ou propina, de cerca de 10 a 15 por cento é habitual nos restaurantes. Confira antes a conta, porque às vezes o serviço já está incluído.",
+    "fr": "Un pourboire, ou propina, d'environ 10 à 15 pour cent est d'usage au restaurant. Vérifie d'abord l'addition, car le service est parfois déjà inclus.",
+    "de": "Im Restaurant ist ein Trinkgeld, die propina, von etwa 10 bis 15 Prozent üblich. Wirf vorher einen Blick auf die Rechnung, denn manchmal ist der Service schon enthalten."
+   }
+  },
+  {
+   "id": "ct-MX-09",
+   "category": "tipping",
+   "text": {
+    "en": "Small tips are also common for people who help you directly, such as supermarket baggers, gas station attendants and hotel porters.",
+    "it": "Piccole mance sono comuni anche per chi ti aiuta direttamente, come chi impacchetta la spesa al supermercato, gli addetti al distributore e i facchini d'albergo.",
+    "es": "También son comunes las propinas pequeñas para quienes te ayudan directamente, como los empacadores del supermercado, los despachadores de gasolina y los botones de hotel.",
+    "pt": "Também são comuns pequenas gorjetas para quem te ajuda diretamente, como quem embala as compras no supermercado, os funcionários das bombas de gasolina e os porteiros de hotel.",
+    "pt_BR": "Também são comuns pequenas gorjetas para quem ajuda diretamente, como quem embala as compras no supermercado, os frentistas de posto e os carregadores de hotel.",
+    "fr": "De petits pourboires sont aussi courants pour ceux qui vous aident directement, comme les emballeurs de supermarché, les pompistes et les porteurs d'hôtel.",
+    "de": "Kleine Trinkgelder sind auch für Menschen üblich, die direkt helfen, etwa Einpacker im Supermarkt, Tankwarte und Hotelpagen."
+   }
+  },
+  {
+   "id": "ct-MX-10",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to someone's home, it is common to bring flowers, a dessert or a small treat for the family rather than an expensive gift.",
+    "it": "Quando si è invitati a casa di qualcuno, è comune portare fiori, un dolce o un piccolo pensiero per la famiglia, più che un regalo costoso.",
+    "es": "Cuando te invitan a una casa, es común llevar flores, un postre o un detalle para la familia en lugar de un regalo caro.",
+    "pt": "Quando és convidado para a casa de alguém, é comum levar flores, uma sobremesa ou uma pequena lembrança para a família em vez de um presente caro.",
+    "pt_BR": "Quando você é convidado para a casa de alguém, é comum levar flores, uma sobremesa ou uma lembrancinha para a família em vez de um presente caro.",
+    "fr": "Quand on est invité chez quelqu'un, il est courant d'apporter des fleurs, un dessert ou une petite attention pour la famille plutôt qu'un cadeau coûteux.",
+    "de": "Wenn man zu jemandem nach Hause eingeladen ist, bringt man üblicherweise Blumen, ein Dessert oder eine kleine Aufmerksamkeit für die Familie mit statt eines teuren Geschenks."
+   }
+  },
+  {
+   "id": "ct-MX-11",
+   "category": "dress",
+   "text": {
+    "en": "Dress is usually neat and casual. In cities, many people dress up a little for restaurants and events, and shorts are mostly seen at the beach or in hot regions.",
+    "it": "L'abbigliamento è di solito curato e casual. In città molti si vestono un po' meglio per ristoranti ed eventi, e i pantaloncini si vedono soprattutto al mare o nelle zone calde.",
+    "es": "La ropa suele ser casual pero cuidada. En las ciudades, mucha gente se arregla un poco para restaurantes y eventos, y los shorts se ven sobre todo en la playa o en zonas calurosas.",
+    "pt": "A roupa costuma ser casual mas cuidada. Nas cidades, muita gente arranja-se um pouco para restaurantes e eventos, e os calções veem-se sobretudo na praia ou em zonas quentes.",
+    "pt_BR": "A roupa costuma ser casual, mas caprichada. Nas cidades, muita gente se arruma um pouco para restaurantes e eventos, e as bermudas são vistas principalmente na praia ou em regiões quentes.",
+    "fr": "La tenue est généralement soignée et décontractée. En ville, beaucoup de gens s'habillent un peu pour les restaurants et les événements, et les shorts se voient surtout à la plage ou dans les régions chaudes.",
+    "de": "Die Kleidung ist meist gepflegt und lässig. In den Städten machen sich viele für Restaurants und Veranstaltungen ein wenig schick, und kurze Hosen sieht man vor allem am Strand oder in heißen Regionen."
+   }
+  },
+  {
+   "id": "ct-MX-12",
+   "category": "religion_sites",
+   "text": {
+    "en": "Most Mexicans are Catholic and churches are active places of worship. Dress modestly, keep your voice low and avoid flash photos during services.",
+    "it": "La maggior parte dei messicani è cattolica e le chiese sono luoghi di culto attivi. Vesti in modo sobrio, abbassa la voce ed evita il flash durante le funzioni.",
+    "es": "La mayoría de los mexicanos es católica y las iglesias son lugares de culto activos. Viste con modestia, habla en voz baja y evita el flash durante las celebraciones.",
+    "pt": "A maioria dos mexicanos é católica e as igrejas são locais de culto ativos. Veste-te com discrição, fala baixo e evita o flash durante as celebrações.",
+    "pt_BR": "A maioria dos mexicanos é católica e as igrejas são locais de culto ativos. Vista-se com discrição, fale baixo e evite o flash durante as celebrações.",
+    "fr": "La plupart des Mexicains sont catholiques et les églises sont des lieux de culte actifs. Habille-toi sobrement, parle à voix basse et évite le flash pendant les offices.",
+    "de": "Die meisten Mexikaner sind katholisch, und Kirchen sind aktive Gotteshäuser. Kleide dich dezent, sprich leise und verzichte während der Gottesdienste auf Blitzlicht."
+   }
+  },
+  {
+   "id": "ct-MX-13",
+   "category": "gestures",
+   "text": {
+    "en": "Many people beckon with the palm facing down and the fingers waving toward themselves. Palm up can seem abrupt.",
+    "it": "Molti chiamano qualcuno con il palmo rivolto verso il basso e le dita che si muovono verso di sé. Il palmo verso l'alto può sembrare brusco.",
+    "es": "Mucha gente llama a alguien con la palma hacia abajo y los dedos moviéndose hacia sí. La palma hacia arriba puede parecer brusca.",
+    "pt": "Muitas pessoas chamam alguém com a palma da mão virada para baixo e os dedos a mexer na sua direção. A palma virada para cima pode parecer brusca.",
+    "pt_BR": "Muita gente chama alguém com a palma da mão virada para baixo e os dedos se mexendo em sua direção. A palma virada para cima pode parecer brusca.",
+    "fr": "Beaucoup de gens font signe d'approcher la paume vers le bas, les doigts s'agitant vers soi. La paume vers le haut peut sembler brusque.",
+    "de": "Viele winken jemanden mit der Handfläche nach unten und den Fingern zu sich heran. Eine nach oben gerichtete Handfläche kann schroff wirken."
+   }
+  },
+  {
+   "id": "ct-MX-14",
+   "category": "gestures",
+   "text": {
+    "en": "Close friends often greet with a hug and a pat on the back, called an abrazo. Warm physical contact is normal, so stepping back sharply can feel cold.",
+    "it": "Gli amici stretti si salutano spesso con un abbraccio e una pacca sulla schiena, chiamato abrazo. Il contatto fisico caloroso è normale, quindi tirarsi indietro bruscamente può sembrare freddo.",
+    "es": "Los amigos cercanos suelen saludarse con un abrazo y unas palmadas en la espalda. El contacto físico cálido es normal, así que apartarse bruscamente puede parecer frío.",
+    "pt": "Os amigos próximos costumam cumprimentar-se com um abraço e umas palmadas nas costas, chamado abrazo. O contacto físico caloroso é normal, por isso afastar-se bruscamente pode parecer frio.",
+    "pt_BR": "Amigos próximos costumam se cumprimentar com um abraço e uns tapinhas nas costas, chamado abrazo. O contato físico caloroso é normal, então se afastar bruscamente pode parecer frio.",
+    "fr": "Les amis proches se saluent souvent par une accolade et des tapes dans le dos, appelée abrazo. Le contact physique chaleureux est normal, donc reculer brusquement peut paraître froid.",
+    "de": "Enge Freunde begrüßen sich oft mit einer Umarmung und Klopfen auf den Rücken, genannt abrazo. Herzlicher Körperkontakt ist normal, ein abruptes Zurückweichen kann daher kühl wirken."
+   }
+  },
+  {
+   "id": "ct-MX-15",
+   "category": "punctuality",
+   "text": {
+    "en": "For business and appointments, be on time. For parties and family gatherings, arriving 15 to 30 minutes after the stated time is common.",
+    "it": "Per lavoro e appuntamenti sii puntuale. Per feste e riunioni di famiglia è comune arrivare 15-30 minuti dopo l'orario indicato.",
+    "es": "Para trabajo y citas, sé puntual. En fiestas y reuniones familiares es común llegar de 15 a 30 minutos después de la hora indicada.",
+    "pt": "Para trabalho e compromissos, sê pontual. Em festas e reuniões de família é comum chegar 15 a 30 minutos depois da hora indicada.",
+    "pt_BR": "Para trabalho e compromissos, seja pontual. Em festas e reuniões de família é comum chegar de 15 a 30 minutos depois do horário combinado.",
+    "fr": "Pour le travail et les rendez-vous, sois ponctuel. Pour les fêtes et les réunions de famille, il est courant d'arriver 15 à 30 minutes après l'heure indiquée.",
+    "de": "Bei Geschäftsterminen und Verabredungen sei pünktlich. Zu Partys und Familientreffen kommt man üblicherweise 15 bis 30 Minuten nach der angegebenen Zeit."
+   }
+  },
+  {
+   "id": "ct-MX-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "Saying con permiso when you pass through a crowd or ahead of someone, and gracias or de nada afterwards, is appreciated.",
+    "it": "Dire con permiso quando si passa tra la folla o davanti a qualcuno, e poi gracias o de nada, è apprezzato.",
+    "es": "Decir con permiso al pasar entre la gente o frente a alguien, y luego gracias o de nada, se agradece.",
+    "pt": "Dizer con permiso ao passar no meio de uma multidão ou à frente de alguém, e depois gracias ou de nada, é apreciado.",
+    "pt_BR": "Dizer con permiso ao passar no meio da multidão ou na frente de alguém, e depois gracias ou de nada, é apreciado.",
+    "fr": "Dire con permiso en passant dans la foule ou devant quelqu'un, puis gracias ou de nada, est apprécié.",
+    "de": "Es wird geschätzt, con permiso zu sagen, wenn man sich durch eine Menge drängt oder an jemandem vorbeigeht, und danach gracias oder de nada."
+   }
+  },
+  {
+   "id": "ct-MX-17",
+   "category": "transport",
+   "text": {
+    "en": "The Mexico City metro has cars reserved for women and children during busy hours, marked at the platform. Follow the signs if you are unsure.",
+    "it": "La metropolitana di Città del Messico ha vagoni riservati a donne e bambini nelle ore di punta, segnalati in banchina. Segui i cartelli se hai dubbi.",
+    "es": "El metro de la Ciudad de México tiene vagones exclusivos para mujeres y niños en horas de mucha afluencia, señalados en el andén. Sigue los letreros si tienes dudas.",
+    "pt": "O metro da Cidade do México tem carruagens reservadas a mulheres e crianças nas horas de maior afluência, assinaladas na plataforma. Segue os sinais se tiveres dúvidas.",
+    "pt_BR": "O metrô da Cidade do México tem vagões reservados para mulheres e crianças nos horários de pico, sinalizados na plataforma. Siga as placas se tiver dúvidas.",
+    "fr": "Le métro de Mexico a des voitures réservées aux femmes et aux enfants aux heures d'affluence, signalées sur le quai. Suis les panneaux en cas de doute.",
+    "de": "Die U-Bahn von Mexiko-Stadt hat zu Stoßzeiten Wagen nur für Frauen und Kinder, die am Bahnsteig gekennzeichnet sind. Folge im Zweifel den Schildern."
+   }
+  },
+  {
+   "id": "ct-MX-18",
+   "category": "transport",
+   "text": {
+    "en": "In big cities, many people book rides through apps or use taxis from a licensed stand, rather than hailing one on the street.",
+    "it": "Nelle grandi città molti prenotano le corse con le app o usano taxi di una stazione autorizzata, invece di fermarne uno per strada.",
+    "es": "En las grandes ciudades, mucha gente pide sus viajes por aplicación o usa taxis de un sitio autorizado, en lugar de parar uno en la calle.",
+    "pt": "Nas grandes cidades, muita gente pede as viagens por aplicação ou usa táxis de uma praça autorizada, em vez de chamar um na rua.",
+    "pt_BR": "Nas grandes cidades, muita gente pede as corridas por aplicativo ou usa táxis de um ponto autorizado, em vez de parar um na rua.",
+    "fr": "Dans les grandes villes, beaucoup de gens réservent leurs trajets par appli ou prennent un taxi à une station agréée plutôt que d'en héler un dans la rue.",
+    "de": "In Großstädten buchen viele ihre Fahrten per App oder nehmen Taxis von einem lizenzierten Stand, statt eines auf der Straße anzuhalten."
+   }
+  },
+  {
+   "id": "ct-MX-19",
+   "category": "language",
+   "text": {
+    "en": "Mexico is the most populous Spanish-speaking country, and many everyday words, like chocolate, tomate and aguacate, come from indigenous languages such as Nahuatl.",
+    "it": "Il Messico è il paese di lingua spagnola più popoloso, e molte parole quotidiane, come chocolate, tomate e aguacate, vengono da lingue indigene come il nahuatl.",
+    "es": "México es el país hispanohablante más poblado, y muchas palabras de uso diario, como chocolate, tomate y aguacate, vienen de lenguas indígenas como el náhuatl.",
+    "pt": "O México é o país de língua espanhola mais populoso, e muitas palavras do dia a dia, como chocolate, tomate e aguacate, vêm de línguas indígenas como o náuatle.",
+    "pt_BR": "O México é o país de língua espanhola mais populoso, e muitas palavras do dia a dia, como chocolate, tomate e aguacate, vêm de línguas indígenas como o náuatle.",
+    "fr": "Le Mexique est le pays hispanophone le plus peuplé, et de nombreux mots du quotidien, comme chocolate, tomate et aguacate, viennent de langues autochtones comme le nahuatl.",
+    "de": "Mexiko ist das bevölkerungsreichste spanischsprachige Land, und viele Alltagswörter wie chocolate, tomate und aguacate stammen aus indigenen Sprachen wie dem Nahuatl."
+   }
+  },
+  {
+   "id": "ct-MX-20",
+   "category": "festivals",
+   "text": {
+    "en": "Day of the Dead, on November 1 and 2, is a time when families remember loved ones who have died, with altars, flowers and favorite foods. It is not a Mexican Halloween.",
+    "it": "Il Giorno dei Morti, il 1° e 2 novembre, è il momento in cui le famiglie ricordano i propri cari scomparsi, con altari, fiori e cibi preferiti. Non è un Halloween messicano.",
+    "es": "El Día de Muertos, el 1 y 2 de noviembre, es cuando las familias recuerdan a sus seres queridos fallecidos con altares, flores y sus comidas favoritas. No es un Halloween mexicano.",
+    "pt": "O Dia dos Mortos, a 1 e 2 de novembro, é o momento em que as famílias recordam os entes queridos falecidos, com altares, flores e comidas preferidas. Não é um Halloween mexicano.",
+    "pt_BR": "O Dia dos Mortos, em 1º e 2 de novembro, é o momento em que as famílias lembram seus entes queridos falecidos, com altares, flores e comidas preferidas. Não é um Halloween mexicano.",
+    "fr": "Le Jour des Morts, les 1er et 2 novembre, est le moment où les familles se souviennent de leurs proches disparus, avec des autels, des fleurs et leurs plats préférés. Ce n'est pas un Halloween mexicain.",
+    "de": "Der Tag der Toten am 1. und 2. November ist die Zeit, in der Familien ihrer verstorbenen Angehörigen mit Altären, Blumen und deren Lieblingsspeisen gedenken. Es ist kein mexikanisches Halloween."
+   }
+  },
+  {
+   "id": "ct-MX-21",
+   "category": "festivals",
+   "text": {
+    "en": "December 12 honors the Virgin of Guadalupe, the patron saint of Mexico. From December 16 to 24, Las Posadas reenact the search for lodging with processions and songs.",
+    "it": "Il 12 dicembre si onora la Vergine di Guadalupe, patrona del Messico. Dal 16 al 24 dicembre le Posadas rievocano la ricerca di un alloggio con processioni e canti.",
+    "es": "El 12 de diciembre se honra a la Virgen de Guadalupe, patrona de México. Del 16 al 24 de diciembre, las Posadas recrean la búsqueda de alojamiento con procesiones y cantos.",
+    "pt": "A 12 de dezembro homenageia-se a Virgem de Guadalupe, padroeira do México. De 16 a 24 de dezembro, as Posadas recriam a procura de alojamento com procissões e cantos.",
+    "pt_BR": "Em 12 de dezembro homenageia-se a Virgem de Guadalupe, padroeira do México. De 16 a 24 de dezembro, as Posadas recriam a busca por hospedagem com procissões e cantos.",
+    "fr": "Le 12 décembre, on honore la Vierge de Guadalupe, patronne du Mexique. Du 16 au 24 décembre, les Posadas rejouent la recherche d'un logement avec des processions et des chants.",
+    "de": "Am 12. Dezember wird die Jungfrau von Guadalupe, Schutzpatronin Mexikos, geehrt. Vom 16. bis 24. Dezember erinnern die Posadas mit Umzügen und Liedern an die Herbergssuche."
+   }
+  },
+  {
+   "id": "ct-MX-22",
+   "category": "festivals",
+   "text": {
+    "en": "On January 6, the Three Kings traditionally bring gifts to children, and many families share a rosca de reyes, a ring-shaped sweet bread.",
+    "it": "Il 6 gennaio i Re Magi portano tradizionalmente i regali ai bambini, e molte famiglie condividono una rosca de reyes, un pane dolce a forma di ciambella.",
+    "es": "El 6 de enero los Reyes Magos traen tradicionalmente regalos a los niños, y muchas familias comparten una rosca de reyes, un pan dulce en forma de anillo.",
+    "pt": "A 6 de janeiro, os Reis Magos trazem tradicionalmente presentes às crianças, e muitas famílias partilham uma rosca de reyes, um pão doce em forma de anel.",
+    "pt_BR": "Em 6 de janeiro, os Reis Magos tradicionalmente trazem presentes às crianças, e muitas famílias dividem uma rosca de reyes, um pão doce em forma de anel.",
+    "fr": "Le 6 janvier, les Rois mages apportent traditionnellement des cadeaux aux enfants, et beaucoup de familles partagent une rosca de reyes, une brioche en forme de couronne.",
+    "de": "Am 6. Januar bringen traditionell die Heiligen Drei Könige den Kindern Geschenke, und viele Familien teilen eine rosca de reyes, ein ringförmiges Hefegebäck."
+   }
+  },
+  {
+   "id": "ct-MX-23",
+   "category": "family",
+   "text": {
+    "en": "Family ties are strong, and a quinceañera, the celebration of a girl's fifteenth birthday, is a big event that often brings the whole extended family together.",
+    "it": "I legami familiari sono forti, e la quinceañera, la festa per i quindici anni di una ragazza, è un grande evento che spesso riunisce tutta la famiglia allargata.",
+    "es": "Los lazos familiares son fuertes, y la quinceañera, la celebración de los quince años de una joven, es un gran evento que suele reunir a toda la familia extendida.",
+    "pt": "Os laços familiares são fortes, e a quinceañera, a celebração dos quinze anos de uma rapariga, é um grande evento que muitas vezes reúne toda a família alargada.",
+    "pt_BR": "Os laços familiares são fortes, e a quinceañera, a celebração dos quinze anos de uma menina, é um grande evento que muitas vezes reúne toda a família estendida.",
+    "fr": "Les liens familiaux sont forts, et la quinceañera, la fête des quinze ans d'une jeune fille, est un grand événement qui réunit souvent toute la famille élargie.",
+    "de": "Familienbande sind stark, und die quinceañera, die Feier zum fünfzehnten Geburtstag eines Mädchens, ist ein großes Ereignis, das oft die ganze Großfamilie zusammenbringt."
+   }
+  },
+  {
+   "id": "ct-MX-24",
+   "category": "money",
+   "text": {
+    "en": "The currency is the Mexican peso. Cards are widely accepted in cities, but carry cash, ideally small bills and coins, for markets, street stalls and small shops.",
+    "it": "La valuta è il peso messicano. Le carte sono molto accettate nelle città, ma porta contanti, meglio se banconote piccole e monete, per mercati, bancarelle e piccoli negozi.",
+    "es": "La moneda es el peso mexicano. Las tarjetas se aceptan mucho en las ciudades, pero lleva efectivo, de preferencia billetes pequeños y monedas, para mercados, puestos y tiendas pequeñas.",
+    "pt": "A moeda é o peso mexicano. Os cartões são muito aceites nas cidades, mas leva dinheiro vivo, de preferência notas pequenas e moedas, para mercados, bancas e lojas pequenas.",
+    "pt_BR": "A moeda é o peso mexicano. Os cartões são muito aceitos nas cidades, mas leve dinheiro em espécie, de preferência notas pequenas e moedas, para feiras, barracas e lojas pequenas.",
+    "fr": "La monnaie est le peso mexicain. Les cartes sont largement acceptées en ville, mais prends des espèces, de préférence petites coupures et pièces, pour les marchés, les stands et les petits commerces.",
+    "de": "Die Währung ist der mexikanische Peso. In Städten werden Karten meist akzeptiert, aber nimm Bargeld mit, am besten kleine Scheine und Münzen, für Märkte, Straßenstände und kleine Läden."
+   }
+  },
+  {
+   "id": "ct-MX-25",
+   "category": "money",
+   "text": {
+    "en": "Haggling is common at artisan markets and street stalls, but not in supermarkets or shops with fixed prices. Keep it friendly and fair.",
+    "it": "Contrattare è comune nei mercati artigianali e alle bancarelle, ma non nei supermercati o nei negozi a prezzo fisso. Fallo con gentilezza e correttezza.",
+    "es": "Regatear es común en los mercados de artesanías y puestos callejeros, pero no en supermercados ni en tiendas de precio fijo. Hazlo de forma amable y justa.",
+    "pt": "Regatear é comum nos mercados de artesanato e nas bancas de rua, mas não em supermercados nem em lojas de preço fixo. Faz isso com simpatia e justiça.",
+    "pt_BR": "Pechinchar é comum nas feiras de artesanato e nas barracas de rua, mas não em supermercados nem em lojas de preço fixo. Faça isso com simpatia e justiça.",
+    "fr": "Marchander est courant dans les marchés d'artisanat et sur les étals de rue, mais pas dans les supermarchés ni les boutiques à prix fixes. Reste aimable et équitable.",
+    "de": "Feilschen ist auf Kunsthandwerksmärkten und an Straßenständen üblich, aber nicht in Supermärkten oder Geschäften mit Festpreisen. Bleib dabei freundlich und fair."
+   }
+  },
+  {
+   "id": "ct-MX-26",
+   "category": "photography",
+   "text": {
+    "en": "Ask for permission before photographing people, especially in indigenous communities, and check the rules in churches, museums and archaeological sites.",
+    "it": "Chiedi il permesso prima di fotografare le persone, soprattutto nelle comunità indigene, e controlla le regole in chiese, musei e siti archeologici.",
+    "es": "Pide permiso antes de fotografiar a las personas, sobre todo en comunidades indígenas, y revisa las reglas en iglesias, museos y zonas arqueológicas.",
+    "pt": "Pede licença antes de fotografar pessoas, sobretudo em comunidades indígenas, e confirma as regras em igrejas, museus e sítios arqueológicos.",
+    "pt_BR": "Peça permissão antes de fotografar pessoas, principalmente em comunidades indígenas, e confira as regras em igrejas, museus e sítios arqueológicos.",
+    "fr": "Demande la permission avant de photographier des personnes, surtout dans les communautés autochtones, et vérifie les règles dans les églises, les musées et les sites archéologiques.",
+    "de": "Frag um Erlaubnis, bevor du Menschen fotografierst, besonders in indigenen Gemeinden, und informiere dich über die Regeln in Kirchen, Museen und archäologischen Stätten."
+   }
+  },
+  {
+   "id": "ct-MX-27",
+   "category": "nightlife",
+   "text": {
+    "en": "Live mariachi is part of many celebrations and plazas. If you want a song, agree on the price first, and it is polite to thank the musicians.",
+    "it": "Il mariachi dal vivo fa parte di molte feste e piazze. Se vuoi una canzone, concorda prima il prezzo ed è educato ringraziare i musicisti.",
+    "es": "El mariachi en vivo es parte de muchas fiestas y plazas. Si quieres una canción, acuerda antes el precio, y es cortés dar las gracias a los músicos.",
+    "pt": "O mariachi ao vivo faz parte de muitas festas e praças. Se quiseres uma canção, combina primeiro o preço, e é simpático agradecer aos músicos.",
+    "pt_BR": "O mariachi ao vivo faz parte de muitas festas e praças. Se quiser uma música, combine o preço antes, e é educado agradecer aos músicos.",
+    "fr": "Le mariachi en direct fait partie de nombreuses fêtes et places. Si tu veux une chanson, convenez du prix d'abord, et il est poli de remercier les musiciens.",
+    "de": "Live-Mariachi gehört zu vielen Festen und Plätzen. Wenn du ein Lied möchtest, vereinbare vorher den Preis, und es ist höflich, den Musikern zu danken."
+   }
+  },
+  {
+   "id": "ct-MX-28",
+   "category": "nature",
+   "text": {
+    "en": "Many people drink bottled or purified water rather than tap water. Ask your host or hotel what is usual where you are.",
+    "it": "Molti bevono acqua in bottiglia o purificata invece di quella del rubinetto. Chiedi al tuo ospite o all'hotel cosa si usa nel posto in cui sei.",
+    "es": "Mucha gente bebe agua embotellada o purificada en lugar de la del grifo. Pregunta a tu anfitrión o en el hotel qué es lo habitual donde estés.",
+    "pt": "Muitas pessoas bebem água engarrafada ou purificada em vez da da torneira. Pergunta ao teu anfitrião ou ao hotel o que é habitual onde estás.",
+    "pt_BR": "Muita gente bebe água engarrafada ou purificada em vez da da torneira. Pergunte ao seu anfitrião ou ao hotel o que é comum onde você está.",
+    "fr": "Beaucoup de gens boivent de l'eau en bouteille ou purifiée plutôt que l'eau du robinet. Demande à ton hôte ou à l'hôtel ce qui se fait là où tu es.",
+    "de": "Viele trinken abgefülltes oder gereinigtes Wasser statt Leitungswasser. Frag deine Gastgeber oder das Hotel, was dort üblich ist, wo du bist."
+   }
+  },
+  {
+   "id": "ct-MX-29",
+   "category": "safety",
+   "text": {
+    "en": "Keep an eye on your phone and bag in crowded places, and ask local hosts which areas are best to avoid at night.",
+    "it": "Tieni d'occhio telefono e borsa nei luoghi affollati e chiedi ai tuoi ospiti locali quali zone è meglio evitare di notte.",
+    "es": "Cuida tu teléfono y tu bolso en lugares concurridos, y pregunta a tus anfitriones locales qué zonas conviene evitar de noche.",
+    "pt": "Tem atenção ao telemóvel e à mala em locais com muita gente e pergunta aos teus anfitriões locais que zonas é melhor evitar à noite.",
+    "pt_BR": "Fique de olho no celular e na bolsa em lugares cheios e pergunte aos seus anfitriões locais quais áreas é melhor evitar à noite.",
+    "fr": "Garde un œil sur ton téléphone et ton sac dans les endroits bondés, et demande à tes hôtes locaux quels quartiers éviter de nuit.",
+    "de": "Behalte Handy und Tasche an überfüllten Orten im Blick und frag deine Gastgeber vor Ort, welche Gegenden man nachts besser meidet."
+   }
+  },
+  {
+   "id": "ct-MX-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Mexicans are proud of their cuisine, music and history, including more UNESCO World Heritage sites than any other country in the Americas. Sincere interest goes a long way.",
+    "it": "I messicani sono orgogliosi di cucina, musica e storia, compresi più siti patrimonio UNESCO di qualsiasi altro paese delle Americhe. Un interesse sincero è molto apprezzato.",
+    "es": "Los mexicanos están orgullosos de su cocina, su música y su historia, incluidos más sitios Patrimonio de la Humanidad de la UNESCO que cualquier otro país de América. El interés sincero se agradece mucho.",
+    "pt": "Os mexicanos têm orgulho da sua gastronomia, música e história, incluindo mais sítios Património Mundial da UNESCO do que qualquer outro país das Américas. Um interesse sincero é muito apreciado.",
+    "pt_BR": "Os mexicanos têm orgulho da sua culinária, música e história, incluindo mais sítios Patrimônio Mundial da UNESCO do que qualquer outro país das Américas. Um interesse sincero é muito apreciado.",
+    "fr": "Les Mexicains sont fiers de leur cuisine, de leur musique et de leur histoire, dont plus de sites du patrimoine mondial de l'UNESCO que tout autre pays des Amériques. Un intérêt sincère est très apprécié.",
+    "de": "Mexikaner sind stolz auf ihre Küche, Musik und Geschichte, darunter mehr UNESCO-Welterbestätten als in jedem anderen Land Amerikas. Aufrichtiges Interesse kommt sehr gut an."
+   }
+  }
+ ],
+ "MY": [
+  {
+   "id": "ct-MY-01",
+   "category": "greetings",
+   "text": {
+    "en": "Many Malay Muslims greet with salam: a light two-handed touch, then the hand to the heart. Wait for the other person to offer their hand first, especially across genders.",
+    "it": "Molti malesi musulmani salutano con il salam: un leggero tocco delle mani, poi la mano al cuore. Aspetta che l'altra persona offra la mano per prima, soprattutto tra generi diversi.",
+    "es": "Muchos malayos musulmanes saludan con el salam: un leve roce de manos y luego la mano al corazón. Espera a que la otra persona ofrezca la mano primero, sobre todo entre géneros distintos.",
+    "pt": "Muitos malaios muçulmanos cumprimentam com o salam: um leve toque com as duas mãos e depois a mão no coração. Espera que a outra pessoa estenda a mão primeiro, sobretudo entre géneros diferentes.",
+    "pt_BR": "Muitos malaios muçulmanos cumprimentam com o salam: um leve toque com as duas mãos e depois a mão no coração. Espere a outra pessoa estender a mão primeiro, principalmente entre gêneros diferentes.",
+    "fr": "Beaucoup de Malais musulmans saluent par le salam : un léger contact des deux mains, puis la main sur le cœur. Attends que l'autre personne tende la main en premier, surtout entre genres différents.",
+    "de": "Viele muslimische Malaien begrüßen sich mit dem Salam: eine leichte Berührung der Hände, dann die Hand aufs Herz. Warte, bis dein Gegenüber zuerst die Hand reicht, besonders zwischen den Geschlechtern."
+   }
+  },
+  {
+   "id": "ct-MY-02",
+   "category": "greetings",
+   "text": {
+    "en": "Addressing people respectfully matters: Encik for a man, Puan for a married woman, Cik for a woman, and kak, abang, makcik or pakcik for those a bit older.",
+    "it": "Rivolgersi con rispetto è importante: Encik per un uomo, Puan per una donna sposata, Cik per una donna, e kak, abang, makcik o pakcik per chi è un po' più grande.",
+    "es": "Dirigirse con respeto es importante: Encik para un hombre, Puan para una mujer casada, Cik para una mujer, y kak, abang, makcik o pakcik para quienes son algo mayores.",
+    "pt": "Tratar as pessoas com respeito é importante: Encik para um homem, Puan para uma mulher casada, Cik para uma mulher, e kak, abang, makcik ou pakcik para quem é um pouco mais velho.",
+    "pt_BR": "Tratar as pessoas com respeito é importante: Encik para um homem, Puan para uma mulher casada, Cik para uma mulher, e kak, abang, makcik ou pakcik para quem é um pouco mais velho.",
+    "fr": "S'adresser aux gens avec respect compte : Encik pour un homme, Puan pour une femme mariée, Cik pour une femme, et kak, abang, makcik ou pakcik pour les personnes un peu plus âgées.",
+    "de": "Respektvolle Anrede ist wichtig: Encik für einen Mann, Puan für eine verheiratete Frau, Cik für eine Frau und kak, abang, makcik oder pakcik für etwas Ältere."
+   }
+  },
+  {
+   "id": "ct-MY-03",
+   "category": "conversation",
+   "text": {
+    "en": "Many Malaysians value keeping face. Avoid openly criticizing, showing anger or embarrassing someone in front of others; staying calm and courteous works best.",
+    "it": "Molti malesi tengono a non perdere la faccia. Evita di criticare apertamente, mostrare rabbia o mettere qualcuno in imbarazzo davanti agli altri; calma e cortesia funzionano meglio.",
+    "es": "Muchos malasios valoran mantener la imagen. Evita criticar abiertamente, mostrar enojo o avergonzar a alguien delante de otros; la calma y la cortesía funcionan mejor.",
+    "pt": "Muitos malaios valorizam manter a face. Evita criticar abertamente, mostrar raiva ou envergonhar alguém à frente de outros; calma e cortesia funcionam melhor.",
+    "pt_BR": "Muitos malaios valorizam manter a face. Evite criticar abertamente, mostrar raiva ou constranger alguém na frente de outros; calma e cortesia funcionam melhor.",
+    "fr": "Beaucoup de Malaisiens tiennent à garder la face. Évite de critiquer ouvertement, de montrer de la colère ou de gêner quelqu'un devant les autres ; le calme et la courtoisie fonctionnent le mieux.",
+    "de": "Vielen Malaysiern ist es wichtig, das Gesicht zu wahren. Vermeide offene Kritik, Wutausbrüche oder Bloßstellungen vor anderen; Ruhe und Höflichkeit kommen am besten an."
+   }
+  },
+  {
+   "id": "ct-MY-04",
+   "category": "conversation",
+   "text": {
+    "en": "Food is a favorite topic. Asking Dah makan? (Have you eaten?) is a friendly way to say hello, and sharing your favorite local dishes starts a good chat.",
+    "it": "Il cibo è un argomento amato. Chiedere Dah makan? (Hai già mangiato?) è un modo cordiale di salutare, e parlare dei tuoi piatti locali preferiti avvia una bella chiacchierata.",
+    "es": "La comida es un tema favorito. Preguntar Dah makan? (¿Ya comiste?) es una forma amable de saludar, y hablar de tus platos locales favoritos inicia una buena charla.",
+    "pt": "A comida é um tema favorito. Perguntar Dah makan? (Já comeste?) é uma forma simpática de cumprimentar, e falar dos teus pratos locais preferidos puxa uma boa conversa.",
+    "pt_BR": "A comida é um assunto favorito. Perguntar Dah makan? (Você já comeu?) é uma forma simpática de cumprimentar, e falar dos seus pratos locais preferidos puxa uma boa conversa.",
+    "fr": "La nourriture est un sujet favori. Demander Dah makan ? (Tu as déjà mangé ?) est une façon amicale de dire bonjour, et parler de tes plats locaux préférés lance une bonne discussion.",
+    "de": "Essen ist ein beliebtes Thema. Dah makan? (Hast du schon gegessen?) ist eine freundliche Begrüßung, und über deine Lieblingsgerichte zu sprechen bringt ein gutes Gespräch in Gang."
+   }
+  },
+  {
+   "id": "ct-MY-05",
+   "category": "dining",
+   "text": {
+    "en": "Many people eat with the right hand, and the left hand is not used to pass food or hand over things. Wash your hands first, as a sink is often in the dining area.",
+    "it": "Molti mangiano con la mano destra, e la sinistra non si usa per passare il cibo o consegnare cose. Lavati prima le mani: il lavandino è spesso nell'area dove si mangia.",
+    "es": "Mucha gente come con la mano derecha, y la izquierda no se usa para pasar comida ni entregar cosas. Lávate las manos antes, pues el lavabo suele estar en la zona de comer.",
+    "pt": "Muita gente come com a mão direita, e a esquerda não se usa para passar comida nem entregar coisas. Lava primeiro as mãos, pois o lavatório costuma ficar na zona de refeições.",
+    "pt_BR": "Muita gente come com a mão direita, e a esquerda não é usada para passar comida nem entregar coisas. Lave as mãos antes, pois a pia costuma ficar na área das refeições.",
+    "fr": "Beaucoup de gens mangent de la main droite, et la gauche ne sert pas à passer la nourriture ou à tendre des objets. Lave-toi d'abord les mains, le lavabo se trouve souvent dans la salle à manger.",
+    "de": "Viele essen mit der rechten Hand, und die linke wird nicht zum Weiterreichen von Essen oder Gegenständen benutzt. Wasch dir vorher die Hände, das Waschbecken steht oft im Essbereich."
+   }
+  },
+  {
+   "id": "ct-MY-06",
+   "category": "dining",
+   "text": {
+    "en": "Many Malay Muslims eat only halal food. If you invite someone, choose a halal restaurant or check first, and avoid bringing pork or alcohol to a shared meal.",
+    "it": "Molti malesi musulmani mangiano solo cibo halal. Se inviti qualcuno, scegli un ristorante halal o chiedi prima, ed evita di portare maiale o alcolici a un pasto condiviso.",
+    "es": "Muchos malayos musulmanes comen solo comida halal. Si invitas a alguien, elige un restaurante halal o pregunta antes, y evita llevar cerdo o alcohol a una comida compartida.",
+    "pt": "Muitos malaios muçulmanos comem apenas comida halal. Se convidares alguém, escolhe um restaurante halal ou pergunta antes, e evita levar carne de porco ou álcool para uma refeição partilhada.",
+    "pt_BR": "Muitos malaios muçulmanos comem apenas comida halal. Se convidar alguém, escolha um restaurante halal ou pergunte antes, e evite levar carne de porco ou álcool para uma refeição compartilhada.",
+    "fr": "Beaucoup de Malais musulmans ne mangent que de la nourriture halal. Si tu invites quelqu'un, choisis un restaurant halal ou demande d'abord, et évite d'apporter du porc ou de l'alcool à un repas partagé.",
+    "de": "Viele muslimische Malaien essen nur halal. Wenn du jemanden einlädst, wähle ein Halal-Restaurant oder frag vorher nach, und bring kein Schweinefleisch und keinen Alkohol zu einem gemeinsamen Essen mit."
+   }
+  },
+  {
+   "id": "ct-MY-07",
+   "category": "tipping",
+   "text": {
+    "en": "Tipping is not expected. Hotels and larger restaurants often add a service charge, and elsewhere rounding up the bill is a kind gesture.",
+    "it": "La mancia non è attesa. Hotel e ristoranti più grandi spesso aggiungono un costo del servizio, e altrove arrotondare il conto è un gesto gentile.",
+    "es": "La propina no se espera. Los hoteles y los restaurantes grandes suelen añadir un cargo por servicio, y en otros sitios redondear la cuenta es un gesto amable.",
+    "pt": "A gorjeta não é esperada. Hotéis e restaurantes maiores costumam acrescentar uma taxa de serviço, e noutros sítios arredondar a conta é um gesto simpático.",
+    "pt_BR": "A gorjeta não é esperada. Hotéis e restaurantes maiores costumam acrescentar uma taxa de serviço, e em outros lugares arredondar a conta é um gesto simpático.",
+    "fr": "Le pourboire n'est pas attendu. Les hôtels et les grands restaurants ajoutent souvent des frais de service, et ailleurs arrondir l'addition est un geste gentil.",
+    "de": "Trinkgeld wird nicht erwartet. Hotels und größere Restaurants schlagen oft eine Servicegebühr auf, und anderswo ist Aufrunden eine nette Geste."
+   }
+  },
+  {
+   "id": "ct-MY-08",
+   "category": "gifts",
+   "text": {
+    "en": "When giving or receiving a gift, use your right hand or both hands, never the left alone. Small gifts such as sweets or fruit are welcome when visiting a home.",
+    "it": "Quando dai o ricevi un regalo, usa la mano destra o entrambe le mani, mai solo la sinistra. Piccoli doni come dolci o frutta sono graditi quando si visita una casa.",
+    "es": "Al dar o recibir un regalo, usa la mano derecha o ambas manos, nunca solo la izquierda. Los detalles pequeños, como dulces o fruta, son bienvenidos al visitar una casa.",
+    "pt": "Ao dar ou receber um presente, usa a mão direita ou as duas mãos, nunca só a esquerda. Pequenas lembranças como doces ou fruta são bem-vindas numa visita a casa de alguém.",
+    "pt_BR": "Ao dar ou receber um presente, use a mão direita ou as duas mãos, nunca só a esquerda. Lembrancinhas como doces ou frutas são bem-vindas ao visitar uma casa.",
+    "fr": "Pour offrir ou recevoir un cadeau, utilise la main droite ou les deux mains, jamais la gauche seule. De petites attentions comme des sucreries ou des fruits sont bienvenues lors d'une visite.",
+    "de": "Beim Schenken und Annehmen nutzt man die rechte oder beide Hände, nie nur die linke. Kleine Mitbringsel wie Süßigkeiten oder Obst sind bei einem Hausbesuch willkommen."
+   }
+  },
+  {
+   "id": "ct-MY-09",
+   "category": "dress",
+   "text": {
+    "en": "Dress modestly, especially outside big cities and when visiting religious sites: cover shoulders and knees. Light, breathable clothes suit the hot, humid weather.",
+    "it": "Vesti in modo sobrio, soprattutto fuori dalle grandi città e nei luoghi di culto: copri spalle e ginocchia. Abiti leggeri e traspiranti vanno bene per il clima caldo e umido.",
+    "es": "Viste con modestia, sobre todo fuera de las grandes ciudades y al visitar lugares religiosos: cubre hombros y rodillas. La ropa ligera y transpirable va bien para el clima cálido y húmedo.",
+    "pt": "Veste-te com discrição, sobretudo fora das grandes cidades e ao visitar locais religiosos: cobre ombros e joelhos. Roupa leve e respirável é ideal para o clima quente e húmido.",
+    "pt_BR": "Vista-se com discrição, principalmente fora das grandes cidades e ao visitar locais religiosos: cubra ombros e joelhos. Roupas leves e que respiram combinam com o clima quente e úmido.",
+    "fr": "Habille-toi sobrement, surtout hors des grandes villes et dans les lieux religieux : couvre épaules et genoux. Des vêtements légers et respirants conviennent au climat chaud et humide.",
+    "de": "Kleide dich dezent, vor allem außerhalb der Großstädte und an religiösen Orten: Schultern und Knie bedecken. Leichte, atmungsaktive Kleidung passt zum heißen, feuchten Klima."
+   }
+  },
+  {
+   "id": "ct-MY-10",
+   "category": "religion_sites",
+   "text": {
+    "en": "Islam is the official religion, and mosques welcome respectful visitors outside prayer times. Cover arms and legs, women may be asked to cover their hair, and shoes come off.",
+    "it": "L'Islam è la religione ufficiale, e le moschee accolgono i visitatori rispettosi al di fuori degli orari di preghiera. Copri braccia e gambe, alle donne può essere chiesto di coprire i capelli, e le scarpe si tolgono.",
+    "es": "El islam es la religión oficial, y las mezquitas reciben a visitantes respetuosos fuera de las horas de oración. Cubre brazos y piernas, a las mujeres se les puede pedir cubrirse el cabello, y se quitan los zapatos.",
+    "pt": "O Islão é a religião oficial, e as mesquitas recebem visitantes respeitosos fora das horas de oração. Cobre braços e pernas, às mulheres pode ser pedido que cubram o cabelo, e os sapatos tiram-se.",
+    "pt_BR": "O Islã é a religião oficial, e as mesquitas recebem visitantes respeitosos fora dos horários de oração. Cubra braços e pernas, as mulheres podem ser solicitadas a cobrir o cabelo, e os sapatos são tirados.",
+    "fr": "L'islam est la religion officielle, et les mosquées accueillent les visiteurs respectueux en dehors des heures de prière. Couvre bras et jambes, les femmes peuvent devoir couvrir leurs cheveux, et on retire ses chaussures.",
+    "de": "Der Islam ist Staatsreligion, und Moscheen empfangen respektvolle Besucher außerhalb der Gebetszeiten. Bedecke Arme und Beine, Frauen müssen eventuell das Haar bedecken, und die Schuhe werden ausgezogen."
+   }
+  },
+  {
+   "id": "ct-MY-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Malaysia is multi-faith. Buddhist, Chinese and Hindu temples are also open to visitors; remove your shoes where indicated and ask before taking photos of worshippers.",
+    "it": "La Malesia è multireligiosa. Anche i templi buddisti, cinesi e indù sono aperti ai visitatori; togli le scarpe dove indicato e chiedi prima di fotografare i fedeli.",
+    "es": "Malasia es multirreligiosa. Los templos budistas, chinos e hindúes también están abiertos a los visitantes; quítate los zapatos donde se indique y pregunta antes de fotografiar a los fieles.",
+    "pt": "A Malásia é multirreligiosa. Os templos budistas, chineses e hindus também estão abertos a visitantes; tira os sapatos onde indicado e pergunta antes de fotografar os fiéis.",
+    "pt_BR": "A Malásia é multirreligiosa. Os templos budistas, chineses e hindus também estão abertos a visitantes; tire os sapatos onde indicado e pergunte antes de fotografar os fiéis.",
+    "fr": "La Malaisie est multiconfessionnelle. Les temples bouddhistes, chinois et hindous accueillent aussi les visiteurs ; retire tes chaussures là où c'est indiqué et demande avant de photographier les fidèles.",
+    "de": "Malaysia ist multireligiös. Auch buddhistische, chinesische und hinduistische Tempel stehen Besuchern offen; zieh die Schuhe aus, wo es angezeigt ist, und frag, bevor du Gläubige fotografierst."
+   }
+  },
+  {
+   "id": "ct-MY-12",
+   "category": "gestures",
+   "text": {
+    "en": "Point with your thumb, not your index finger, which can seem rude. A gentle thumb gesture toward a person or thing is the polite way.",
+    "it": "Indica con il pollice, non con l'indice, che può sembrare scortese. Un gentile gesto del pollice verso una persona o una cosa è il modo educato.",
+    "es": "Señala con el pulgar, no con el índice, que puede parecer grosero. Un gesto suave con el pulgar hacia una persona o cosa es la forma educada.",
+    "pt": "Aponta com o polegar, não com o indicador, que pode parecer indelicado. Um gesto suave do polegar para uma pessoa ou coisa é a forma educada.",
+    "pt_BR": "Aponte com o polegar, não com o indicador, que pode parecer rude. Um gesto suave do polegar em direção a uma pessoa ou coisa é a forma educada.",
+    "fr": "Désigne avec le pouce, pas avec l'index, qui peut sembler impoli. Un geste doux du pouce vers une personne ou un objet est la manière polie.",
+    "de": "Zeig mit dem Daumen, nicht mit dem Zeigefinger, der unhöflich wirken kann. Eine sanfte Daumengeste in Richtung einer Person oder Sache ist die höfliche Art."
+   }
+  },
+  {
+   "id": "ct-MY-13",
+   "category": "gestures",
+   "text": {
+    "en": "To beckon someone, motion downward with the palm facing the ground. Beckoning with the palm up is considered rude.",
+    "it": "Per chiamare qualcuno, fai un gesto verso il basso con il palmo rivolto a terra. Chiamare con il palmo verso l'alto è considerato scortese.",
+    "es": "Para llamar a alguien, haz un gesto hacia abajo con la palma mirando al suelo. Llamar con la palma hacia arriba se considera grosero.",
+    "pt": "Para chamar alguém, faz um gesto para baixo com a palma virada para o chão. Chamar com a palma virada para cima é considerado indelicado.",
+    "pt_BR": "Para chamar alguém, faça um gesto para baixo com a palma virada para o chão. Chamar com a palma virada para cima é considerado rude.",
+    "fr": "Pour appeler quelqu'un, fais un geste vers le bas, la paume tournée vers le sol. Appeler la paume vers le haut est considéré comme impoli.",
+    "de": "Um jemanden herbeizuwinken, bewege die Hand mit der Handfläche nach unten. Mit der Handfläche nach oben zu winken gilt als unhöflich."
+   }
+  },
+  {
+   "id": "ct-MY-14",
+   "category": "gestures",
+   "text": {
+    "en": "The head is considered sacred and should not be touched, and feet are seen as unclean. Do not point your soles at anyone when sitting on the floor.",
+    "it": "La testa è considerata sacra e non va toccata, mentre i piedi sono visti come impuri. Non puntare le suole verso nessuno quando siedi per terra.",
+    "es": "La cabeza se considera sagrada y no se debe tocar, y los pies se ven como impuros. No apuntes con las plantas de los pies a nadie cuando te sientes en el suelo.",
+    "pt": "A cabeça é considerada sagrada e não deve ser tocada, e os pés são vistos como impuros. Não apontes as solas dos pés a ninguém quando te sentares no chão.",
+    "pt_BR": "A cabeça é considerada sagrada e não deve ser tocada, e os pés são vistos como impuros. Não aponte as solas dos pés para ninguém ao se sentar no chão.",
+    "fr": "La tête est considérée comme sacrée et ne se touche pas, et les pieds sont vus comme impurs. Ne dirige pas la plante de tes pieds vers quelqu'un quand tu es assis par terre.",
+    "de": "Der Kopf gilt als heilig und wird nicht berührt, Füße gelten als unrein. Richte beim Sitzen auf dem Boden die Fußsohlen nicht auf andere."
+   }
+  },
+  {
+   "id": "ct-MY-15",
+   "category": "punctuality",
+   "text": {
+    "en": "Be on time for work and appointments, and allow extra time in Kuala Lumpur, where traffic can be heavy. Social events may start a little later than announced.",
+    "it": "Sii puntuale per lavoro e appuntamenti e lascia più tempo a Kuala Lumpur, dove il traffico può essere intenso. Gli eventi sociali possono iniziare un po' dopo l'orario annunciato.",
+    "es": "Sé puntual en el trabajo y las citas, y deja tiempo extra en Kuala Lumpur, donde el tráfico puede ser intenso. Los eventos sociales pueden empezar un poco más tarde de lo anunciado.",
+    "pt": "Sê pontual no trabalho e em compromissos, e deixa tempo extra em Kuala Lumpur, onde o trânsito pode ser intenso. Os eventos sociais podem começar um pouco mais tarde do que o anunciado.",
+    "pt_BR": "Seja pontual no trabalho e em compromissos, e deixe tempo extra em Kuala Lumpur, onde o trânsito pode ser intenso. Eventos sociais podem começar um pouco mais tarde que o anunciado.",
+    "fr": "Sois ponctuel pour le travail et les rendez-vous, et prévois de la marge à Kuala Lumpur, où la circulation peut être dense. Les événements sociaux peuvent commencer un peu après l'heure annoncée.",
+    "de": "Sei bei Arbeit und Terminen pünktlich und plane in Kuala Lumpur, wo viel Verkehr herrscht, Zeit extra ein. Gesellige Anlässe beginnen manchmal etwas später als angekündigt."
+   }
+  },
+  {
+   "id": "ct-MY-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "It is customary to take off your shoes before entering a home. Leave them by the door, and if you see a pile of shoes outside, that is your cue.",
+    "it": "È usanza togliersi le scarpe prima di entrare in casa. Lasciale vicino alla porta, e se vedi un mucchio di scarpe fuori, è il segnale giusto.",
+    "es": "Es costumbre quitarse los zapatos antes de entrar en una casa. Déjalos junto a la puerta, y si ves un montón de zapatos afuera, esa es la señal.",
+    "pt": "É costume tirar os sapatos antes de entrar em casa. Deixa-os junto à porta, e se vires uma pilha de sapatos lá fora, esse é o sinal.",
+    "pt_BR": "É costume tirar os sapatos antes de entrar em uma casa. Deixe-os perto da porta, e se você vir uma pilha de sapatos do lado de fora, esse é o sinal.",
+    "fr": "Il est d'usage de retirer ses chaussures avant d'entrer chez quelqu'un. Laisse-les près de la porte, et si tu vois un tas de chaussures dehors, c'est le signal.",
+    "de": "Es ist üblich, vor dem Betreten eines Hauses die Schuhe auszuziehen. Lass sie an der Tür stehen, und wenn draußen schon viele Schuhe stehen, ist das dein Zeichen."
+   }
+  },
+  {
+   "id": "ct-MY-17",
+   "category": "public_behavior",
+   "text": {
+    "en": "Public displays of affection are generally frowned upon, and modesty is valued. Keep greetings in public friendly but reserved.",
+    "it": "Le manifestazioni pubbliche di affetto sono generalmente mal viste e la modestia è apprezzata. Mantieni i saluti in pubblico cordiali ma sobri.",
+    "es": "Las muestras públicas de afecto suelen estar mal vistas, y se valora la discreción. Mantén los saludos en público amables pero reservados.",
+    "pt": "As demonstrações públicas de afeto são geralmente mal vistas, e a discrição é valorizada. Mantém os cumprimentos em público simpáticos mas reservados.",
+    "pt_BR": "Demonstrações públicas de afeto geralmente são malvistas, e a discrição é valorizada. Mantenha os cumprimentos em público simpáticos, mas reservados.",
+    "fr": "Les démonstrations publiques d'affection sont généralement mal vues, et la discrétion est appréciée. Garde des salutations amicales mais réservées en public.",
+    "de": "Öffentliche Zuneigungsbekundungen sind meist unerwünscht, und Zurückhaltung wird geschätzt. Halte Begrüßungen in der Öffentlichkeit freundlich, aber dezent."
+   }
+  },
+  {
+   "id": "ct-MY-18",
+   "category": "transport",
+   "text": {
+    "en": "Ride-hailing apps are widely used in cities and are often easier than street taxis. Confirm the plate number and driver before getting in.",
+    "it": "Le app di ride-hailing sono molto usate in città e spesso più comode dei taxi in strada. Controlla targa e autista prima di salire.",
+    "es": "Las aplicaciones de transporte se usan mucho en las ciudades y suelen ser más cómodas que los taxis callejeros. Confirma la matrícula y el conductor antes de subir.",
+    "pt": "As aplicações de transporte são muito usadas nas cidades e costumam ser mais práticas do que os táxis de rua. Confirma a matrícula e o condutor antes de entrar.",
+    "pt_BR": "Os aplicativos de transporte são muito usados nas cidades e costumam ser mais práticos que os táxis de rua. Confirme a placa e o motorista antes de entrar.",
+    "fr": "Les applis de VTC sont très utilisées en ville et souvent plus pratiques que les taxis de rue. Vérifie la plaque et le chauffeur avant de monter.",
+    "de": "Fahrdienst-Apps werden in Städten viel genutzt und sind oft einfacher als Taxis auf der Straße. Prüfe vor dem Einsteigen Kennzeichen und Fahrer."
+   }
+  },
+  {
+   "id": "ct-MY-19",
+   "category": "transport",
+   "text": {
+    "en": "In Kuala Lumpur, the trains and monorail are a handy way to avoid traffic. A reloadable Touch 'n Go card works on many public transport lines.",
+    "it": "A Kuala Lumpur treni e monorotaia sono un buon modo per evitare il traffico. Una carta ricaricabile Touch 'n Go funziona su molte linee di trasporto pubblico.",
+    "es": "En Kuala Lumpur, los trenes y el monorriel son una buena forma de evitar el tráfico. Una tarjeta recargable Touch 'n Go sirve en muchas líneas de transporte público.",
+    "pt": "Em Kuala Lumpur, os comboios e o monocarril são uma boa forma de evitar o trânsito. Um cartão recarregável Touch 'n Go funciona em muitas linhas de transporte público.",
+    "pt_BR": "Em Kuala Lumpur, os trens e o monotrilho são uma boa forma de evitar o trânsito. Um cartão recarregável Touch 'n Go funciona em muitas linhas de transporte público.",
+    "fr": "À Kuala Lumpur, les trains et le monorail permettent d'éviter la circulation. Une carte rechargeable Touch 'n Go fonctionne sur de nombreuses lignes de transport public.",
+    "de": "In Kuala Lumpur helfen Züge und Einschienenbahn, dem Verkehr auszuweichen. Eine aufladbare Touch-'n-Go-Karte funktioniert auf vielen öffentlichen Verkehrslinien."
+   }
+  },
+  {
+   "id": "ct-MY-20",
+   "category": "language",
+   "text": {
+    "en": "Bahasa Malaysia is the national language, and many people also speak English, Chinese or Tamil. With elders and teachers, use saya rather than the casual aku or kau.",
+    "it": "Il bahasa Malaysia è la lingua nazionale, e molti parlano anche inglese, cinese o tamil. Con anziani e insegnanti usa saya invece dei colloquiali aku o kau.",
+    "es": "El bahasa Malaysia es la lengua nacional, y muchos hablan también inglés, chino o tamil. Con mayores y profesores usa saya en lugar de los coloquiales aku o kau.",
+    "pt": "O bahasa Malaysia é a língua nacional, e muitas pessoas falam também inglês, chinês ou tâmil. Com mais velhos e professores usa saya em vez dos coloquiais aku ou kau.",
+    "pt_BR": "O bahasa Malaysia é a língua nacional, e muita gente também fala inglês, chinês ou tâmil. Com mais velhos e professores use saya em vez dos coloquiais aku ou kau.",
+    "fr": "Le bahasa Malaysia est la langue nationale, et beaucoup parlent aussi anglais, chinois ou tamoul. Avec les aînés et les enseignants, utilise saya plutôt que les familiers aku ou kau.",
+    "de": "Bahasa Malaysia ist die Landessprache, und viele sprechen auch Englisch, Chinesisch oder Tamil. Bei Älteren und Lehrern nimm saya statt der umgangssprachlichen aku oder kau."
+   }
+  },
+  {
+   "id": "ct-MY-21",
+   "category": "festivals",
+   "text": {
+    "en": "Hari Raya Aidilfitri marks the end of Ramadan and is the most important Muslim holiday. Greet people with Selamat Hari Raya and Maaf zahir dan batin, meaning forgive me inside and out.",
+    "it": "Hari Raya Aidilfitri segna la fine del Ramadan ed è la festa musulmana più importante. Saluta con Selamat Hari Raya e Maaf zahir dan batin, cioè perdonami dentro e fuori.",
+    "es": "Hari Raya Aidilfitri marca el final del Ramadán y es la fiesta musulmana más importante. Saluda con Selamat Hari Raya y Maaf zahir dan batin, que significa perdóname por dentro y por fuera.",
+    "pt": "O Hari Raya Aidilfitri marca o fim do Ramadão e é a festa muçulmana mais importante. Cumprimenta com Selamat Hari Raya e Maaf zahir dan batin, que significa perdoa-me por dentro e por fora.",
+    "pt_BR": "O Hari Raya Aidilfitri marca o fim do Ramadã e é a festa muçulmana mais importante. Cumprimente com Selamat Hari Raya e Maaf zahir dan batin, que significa perdoe-me por dentro e por fora.",
+    "fr": "L'Hari Raya Aidilfitri marque la fin du ramadan et c'est la fête musulmane la plus importante. Salue par Selamat Hari Raya et Maaf zahir dan batin, soit pardonne-moi intérieurement et extérieurement.",
+    "de": "Hari Raya Aidilfitri markiert das Ende des Ramadan und ist das wichtigste muslimische Fest. Grüße mit Selamat Hari Raya und Maaf zahir dan batin, was etwa verzeih mir innerlich und äußerlich bedeutet."
+   }
+  },
+  {
+   "id": "ct-MY-22",
+   "category": "festivals",
+   "text": {
+    "en": "Chinese New Year lasts 15 days, and Hindus celebrate Deepavali, the festival of lights. People of all backgrounds often join in each other's festivals.",
+    "it": "Il Capodanno cinese dura 15 giorni, e gli indù celebrano il Deepavali, la festa delle luci. Persone di ogni origine partecipano spesso alle feste degli altri.",
+    "es": "El Año Nuevo chino dura 15 días, y los hindúes celebran el Deepavali, la fiesta de las luces. Gente de todos los orígenes suele participar en las fiestas de los demás.",
+    "pt": "O Ano Novo Chinês dura 15 dias, e os hindus celebram o Deepavali, a festa das luzes. Pessoas de todas as origens costumam participar nas festas umas das outras.",
+    "pt_BR": "O Ano-Novo Chinês dura 15 dias, e os hindus celebram o Deepavali, a festa das luzes. Pessoas de todas as origens costumam participar das festas umas das outras.",
+    "fr": "Le Nouvel An chinois dure 15 jours, et les hindous célèbrent Deepavali, la fête des lumières. Des gens de toutes origines participent souvent aux fêtes des autres.",
+    "de": "Das chinesische Neujahr dauert 15 Tage, und Hindus feiern Deepavali, das Lichterfest. Menschen aller Hintergründe feiern oft die Feste der anderen mit."
+   }
+  },
+  {
+   "id": "ct-MY-23",
+   "category": "festivals",
+   "text": {
+    "en": "During major festivals, many hosts hold an open house (rumah terbuka), where everyone, whatever their background, is welcome to visit and eat.",
+    "it": "Durante le grandi feste molti padroni di casa organizzano una casa aperta (rumah terbuka), dove tutti, di qualsiasi origine, sono invitati a venire e mangiare.",
+    "es": "En las grandes fiestas, muchos anfitriones organizan una casa abierta (rumah terbuka), donde todos, sea cual sea su origen, son bienvenidos a visitar y comer.",
+    "pt": "Nas grandes festas, muitos anfitriões organizam uma casa aberta (rumah terbuka), onde todos, seja qual for a origem, são bem-vindos para visitar e comer.",
+    "pt_BR": "Nas grandes festas, muitos anfitriões organizam uma casa aberta (rumah terbuka), onde todos, seja qual for a origem, são bem-vindos para visitar e comer.",
+    "fr": "Lors des grandes fêtes, beaucoup d'hôtes organisent une maison ouverte (rumah terbuka), où tout le monde, quelle que soit son origine, est invité à passer et à manger.",
+    "de": "Bei großen Festen laden viele Gastgeber zu einem Tag der offenen Tür (rumah terbuka) ein, bei dem alle, gleich welcher Herkunft, zum Besuch und Essen willkommen sind."
+   }
+  },
+  {
+   "id": "ct-MY-24",
+   "category": "family",
+   "text": {
+    "en": "Many people travel to their hometowns for festivals, a custom called balik kampung, so roads and trains get very busy. Book ahead if you plan to travel then.",
+    "it": "Molti tornano al paese d'origine per le feste, un'usanza chiamata balik kampung, quindi strade e treni sono molto affollati. Prenota in anticipo se prevedi di viaggiare allora.",
+    "es": "Mucha gente viaja a su pueblo natal durante las fiestas, una costumbre llamada balik kampung, por lo que carreteras y trenes se llenan mucho. Reserva con antelación si planeas viajar entonces.",
+    "pt": "Muita gente viaja para a terra natal durante as festas, um costume chamado balik kampung, pelo que estradas e comboios ficam muito cheios. Reserva com antecedência se planeares viajar nessa altura.",
+    "pt_BR": "Muita gente viaja para a cidade natal durante as festas, um costume chamado balik kampung, então estradas e trens ficam muito cheios. Reserve com antecedência se pretende viajar nessa época.",
+    "fr": "Beaucoup de gens retournent dans leur région d'origine pour les fêtes, une coutume appelée balik kampung, si bien que routes et trains sont bondés. Réserve à l'avance si tu comptes voyager à ce moment-là.",
+    "de": "Viele reisen zu den Festen in ihre Heimatorte, ein Brauch namens balik kampung, daher sind Straßen und Züge sehr voll. Buche rechtzeitig, wenn du zu dieser Zeit reisen willst."
+   }
+  },
+  {
+   "id": "ct-MY-25",
+   "category": "money",
+   "text": {
+    "en": "The currency is the ringgit (RM). Cards work in malls and hotels, but hawker stalls, markets and small shops often prefer cash or e-wallets.",
+    "it": "La valuta è il ringgit (RM). Le carte funzionano in centri commerciali e hotel, ma bancarelle, mercati e piccoli negozi spesso preferiscono contanti o portafogli elettronici.",
+    "es": "La moneda es el ringgit (RM). Las tarjetas funcionan en centros comerciales y hoteles, pero los puestos, mercados y tiendas pequeñas suelen preferir efectivo o monederos electrónicos.",
+    "pt": "A moeda é o ringgit (RM). Os cartões funcionam em centros comerciais e hotéis, mas as bancas, mercados e lojas pequenas costumam preferir dinheiro ou carteiras eletrónicas.",
+    "pt_BR": "A moeda é o ringgit (RM). Cartões funcionam em shoppings e hotéis, mas barracas, feiras e lojas pequenas costumam preferir dinheiro ou carteiras digitais.",
+    "fr": "La monnaie est le ringgit (RM). Les cartes passent dans les centres commerciaux et les hôtels, mais les stands, marchés et petits commerces préfèrent souvent les espèces ou les portefeuilles électroniques.",
+    "de": "Die Währung ist der Ringgit (RM). Karten funktionieren in Einkaufszentren und Hotels, aber Imbissstände, Märkte und kleine Läden bevorzugen oft Bargeld oder E-Wallets."
+   }
+  },
+  {
+   "id": "ct-MY-26",
+   "category": "photography",
+   "text": {
+    "en": "Ask before photographing people, especially women wearing a tudung, and follow the rules at places of worship. A smile and a gesture are usually enough to ask.",
+    "it": "Chiedi prima di fotografare le persone, soprattutto le donne che indossano il tudung, e rispetta le regole nei luoghi di culto. Di solito basta un sorriso e un gesto per chiedere.",
+    "es": "Pregunta antes de fotografiar a las personas, sobre todo a mujeres con tudung, y sigue las reglas en los lugares de culto. Suele bastar una sonrisa y un gesto para pedirlo.",
+    "pt": "Pergunta antes de fotografar pessoas, sobretudo mulheres que usam tudung, e segue as regras nos locais de culto. Costuma bastar um sorriso e um gesto para pedir.",
+    "pt_BR": "Pergunte antes de fotografar pessoas, principalmente mulheres que usam tudung, e siga as regras nos locais de culto. Em geral basta um sorriso e um gesto para pedir.",
+    "fr": "Demande avant de photographier des personnes, surtout les femmes portant un tudung, et respecte les règles dans les lieux de culte. Un sourire et un geste suffisent généralement pour demander.",
+    "de": "Frag, bevor du Menschen fotografierst, besonders Frauen mit Tudung, und halte dich an die Regeln an Gebetsstätten. Meist genügen ein Lächeln und eine Geste, um zu fragen."
+   }
+  },
+  {
+   "id": "ct-MY-27",
+   "category": "nightlife",
+   "text": {
+    "en": "Night markets (pasar malam) are a lively evening social scene with street food, snacks and bargains. Go with an appetite and some small bills.",
+    "it": "I mercati notturni (pasar malam) sono una vivace occasione sociale serale, con cibo di strada, snack e affari. Vai con appetito e qualche banconota piccola.",
+    "es": "Los mercados nocturnos (pasar malam) son un animado ambiente social de noche, con comida callejera, snacks y gangas. Ve con hambre y algunos billetes pequeños.",
+    "pt": "Os mercados noturnos (pasar malam) são um animado ambiente social à noite, com comida de rua, petiscos e pechinchas. Vai com apetite e algumas notas pequenas.",
+    "pt_BR": "As feiras noturnas (pasar malam) são um animado ambiente social à noite, com comida de rua, petiscos e pechinchas. Vá com apetite e algumas notas pequenas.",
+    "fr": "Les marchés nocturnes (pasar malam) sont une animation sociale vivante en soirée, avec street food, en-cas et bonnes affaires. Viens avec de l'appétit et quelques petites coupures.",
+    "de": "Nachtmärkte (pasar malam) sind ein lebhafter Treffpunkt am Abend mit Streetfood, Snacks und Schnäppchen. Komm hungrig und mit ein paar kleinen Scheinen."
+   }
+  },
+  {
+   "id": "ct-MY-28",
+   "category": "nature",
+   "text": {
+    "en": "The climate is hot and humid with sudden rain, so carry a small umbrella and water, and use sun protection when visiting rainforests and islands.",
+    "it": "Il clima è caldo e umido con piogge improvvise, quindi porta un piccolo ombrello e dell'acqua, e usa protezione solare visitando foreste pluviali e isole.",
+    "es": "El clima es cálido y húmedo con lluvias repentinas, así que lleva un paraguas pequeño y agua, y usa protección solar al visitar selvas e islas.",
+    "pt": "O clima é quente e húmido com chuvas repentinas, por isso leva um guarda-chuva pequeno e água, e usa proteção solar ao visitar florestas tropicais e ilhas.",
+    "pt_BR": "O clima é quente e úmido com chuvas repentinas, então leve um guarda-chuva pequeno e água, e use protetor solar ao visitar florestas tropicais e ilhas.",
+    "fr": "Le climat est chaud et humide avec des pluies soudaines, donc prends un petit parapluie et de l'eau, et protège-toi du soleil dans les forêts tropicales et sur les îles.",
+    "de": "Das Klima ist heiß und feucht mit plötzlichen Regenschauern, nimm also einen kleinen Schirm und Wasser mit und nutze Sonnenschutz in Regenwäldern und auf Inseln."
+   }
+  },
+  {
+   "id": "ct-MY-29",
+   "category": "safety",
+   "text": {
+    "en": "Keep your phone and bag on the side away from the road when walking, as bag snatching from passing motorbikes does happen in some cities.",
+    "it": "Cammina con telefono e borsa dal lato opposto alla strada, perché in alcune città capitano scippi da parte di motociclisti di passaggio.",
+    "es": "Camina con el teléfono y el bolso del lado opuesto a la calle, porque en algunas ciudades ocurren robos al arrebato desde motos que pasan.",
+    "pt": "Caminha com o telemóvel e a mala do lado oposto à estrada, porque em algumas cidades acontecem roubos por esticão por parte de motociclistas.",
+    "pt_BR": "Caminhe com o celular e a bolsa do lado oposto à rua, porque em algumas cidades acontecem roubos por arrebatamento feitos por motociclistas.",
+    "fr": "Marche avec ton téléphone et ton sac du côté opposé à la route, car des vols à l'arraché par des motos de passage ont lieu dans certaines villes.",
+    "de": "Trage Handy und Tasche beim Gehen auf der straßenabgewandten Seite, denn in manchen Städten kommt es zu Taschendiebstahl durch vorbeifahrende Motorräder."
+   }
+  },
+  {
+   "id": "ct-MY-30",
+   "category": "local_pride",
+   "text": {
+    "en": "Malaysians are proud of their food, from nasi lemak to roti canai and laksa, shaped by Malay, Chinese and Indian traditions. Praising a dish makes people smile.",
+    "it": "I malesi sono orgogliosi del loro cibo, dal nasi lemak al roti canai e alla laksa, nato da tradizioni malesi, cinesi e indiane. Elogiare un piatto fa sorridere.",
+    "es": "Los malasios están orgullosos de su comida, del nasi lemak al roti canai y la laksa, moldeada por tradiciones malayas, chinas e indias. Elogiar un plato hace sonreír a la gente.",
+    "pt": "Os malaios têm orgulho da sua comida, do nasi lemak ao roti canai e à laksa, moldada por tradições malaias, chinesas e indianas. Elogiar um prato faz as pessoas sorrir.",
+    "pt_BR": "Os malaios têm orgulho da sua comida, do nasi lemak ao roti canai e à laksa, moldada por tradições malaias, chinesas e indianas. Elogiar um prato faz as pessoas sorrirem.",
+    "fr": "Les Malaisiens sont fiers de leur cuisine, du nasi lemak au roti canai et au laksa, façonnée par les traditions malaises, chinoises et indiennes. Complimenter un plat fait sourire.",
+    "de": "Malaysier sind stolz auf ihr Essen, von Nasi Lemak über Roti Canai bis Laksa, geprägt von malaiischen, chinesischen und indischen Traditionen. Ein Lob für ein Gericht zaubert ein Lächeln."
+   }
+  }
+ ],
+ "NL": [
+  {
+   "id": "ct-NL-01",
+   "category": "greetings",
+   "text": {
+    "en": "A firm handshake with eye contact is the usual greeting when meeting someone, including at the start and end of a meeting.",
+    "it": "Una stretta di mano decisa con contatto visivo è il saluto abituale quando si incontra qualcuno, anche all'inizio e alla fine di una riunione.",
+    "es": "Un apretón de manos firme con contacto visual es el saludo habitual al conocer a alguien, también al empezar y terminar una reunión.",
+    "pt": "Um aperto de mão firme com contacto visual é o cumprimento habitual ao conhecer alguém, incluindo no início e no fim de uma reunião.",
+    "pt_BR": "Um aperto de mão firme com contato visual é o cumprimento habitual ao conhecer alguém, inclusive no início e no fim de uma reunião.",
+    "fr": "Une poignée de main ferme avec contact visuel est la salutation habituelle quand on rencontre quelqu'un, y compris au début et à la fin d'une réunion.",
+    "de": "Ein fester Händedruck mit Blickkontakt ist die übliche Begrüßung beim Kennenlernen, auch zu Beginn und am Ende eines Meetings."
+   }
+  },
+  {
+   "id": "ct-NL-02",
+   "category": "greetings",
+   "text": {
+    "en": "Among friends and family, three kisses on the cheek (left, right, left) are common. If you are unsure, follow the other person's lead.",
+    "it": "Tra amici e familiari sono comuni tre baci sulla guancia (sinistra, destra, sinistra). Se hai dubbi, segui l'esempio dell'altra persona.",
+    "es": "Entre amigos y familiares son comunes tres besos en la mejilla (izquierda, derecha, izquierda). Si dudas, sigue el ejemplo de la otra persona.",
+    "pt": "Entre amigos e familiares são comuns três beijos na face (esquerda, direita, esquerda). Se tiveres dúvidas, segue o exemplo da outra pessoa.",
+    "pt_BR": "Entre amigos e familiares são comuns três beijos no rosto (esquerda, direita, esquerda). Se tiver dúvidas, siga o exemplo da outra pessoa.",
+    "fr": "Entre amis et en famille, trois bises sur la joue (gauche, droite, gauche) sont courantes. Dans le doute, suis l'exemple de l'autre personne.",
+    "de": "Unter Freunden und in der Familie sind drei Wangenküsse (links, rechts, links) üblich. Im Zweifel richtest du dich nach deinem Gegenüber."
+   }
+  },
+  {
+   "id": "ct-NL-03",
+   "category": "conversation",
+   "text": {
+    "en": "Many Dutch people are direct and open, which is meant as honesty rather than rudeness. Expect a clear opinion, and feel free to give yours politely.",
+    "it": "Molti olandesi sono diretti e aperti, il che vuole essere onestà e non scortesia. Aspettati un'opinione chiara e senti di poter dare la tua con educazione.",
+    "es": "Muchos neerlandeses son directos y abiertos, lo que se entiende como honestidad y no como grosería. Espera una opinión clara y siéntete libre de dar la tuya con educación.",
+    "pt": "Muitos neerlandeses são diretos e abertos, o que é entendido como honestidade e não como má educação. Espera uma opinião clara e sente-te à vontade para dar a tua com educação.",
+    "pt_BR": "Muitos holandeses são diretos e abertos, o que é entendido como honestidade e não como grosseria. Espere uma opinião clara e fique à vontade para dar a sua com educação.",
+    "fr": "Beaucoup de Néerlandais sont directs et ouverts, ce qui se veut honnête plutôt que impoli. Attends-toi à un avis clair et n'hésite pas à donner le tien poliment.",
+    "de": "Viele Niederländer sind direkt und offen, was als Ehrlichkeit und nicht als Unhöflichkeit gemeint ist. Rechne mit klaren Meinungen und äußere gern höflich auch deine."
+   }
+  },
+  {
+   "id": "ct-NL-04",
+   "category": "conversation",
+   "text": {
+    "en": "Status and showing off are played down, and people tend to address everyone as equals. Bragging about money or position can come across badly.",
+    "it": "Si evita di ostentare status e ricchezza, e di solito ci si rivolge a tutti da pari a pari. Vantarsi di soldi o posizione può fare una cattiva impressione.",
+    "es": "Se resta importancia al estatus y a presumir, y la gente suele tratar a todos como iguales. Presumir de dinero o de cargo puede caer mal.",
+    "pt": "Desvaloriza-se o estatuto e o exibicionismo, e as pessoas tendem a tratar todos como iguais. Gabar-se de dinheiro ou de posição pode ser mal visto.",
+    "pt_BR": "Status e ostentação são deixados de lado, e as pessoas tendem a tratar todos como iguais. Se gabar de dinheiro ou cargo pode cair mal.",
+    "fr": "On minimise le statut et l'ostentation, et chacun tend à traiter tout le monde en égal. Se vanter d'argent ou de position peut mal passer.",
+    "de": "Status und Angeberei werden heruntergespielt, und man begegnet allen eher auf Augenhöhe. Mit Geld oder Position zu prahlen kann schlecht ankommen."
+   }
+  },
+  {
+   "id": "ct-NL-05",
+   "category": "dining",
+   "text": {
+    "en": "Breakfast and lunch are often simple bread with toppings, such as cheese or sweet hagelslag sprinkles. A warm meal is usually dinner.",
+    "it": "Colazione e pranzo sono spesso semplice pane con ripieni, come formaggio o dolci granelli hagelslag. Il pasto caldo di solito è la cena.",
+    "es": "El desayuno y el almuerzo suelen ser pan sencillo con acompañamientos, como queso o dulces fideos de chocolate hagelslag. La comida caliente suele ser la cena.",
+    "pt": "O pequeno-almoço e o almoço costumam ser pão simples com coberturas, como queijo ou granulado doce hagelslag. A refeição quente costuma ser o jantar.",
+    "pt_BR": "O café da manhã e o almoço costumam ser pão simples com coberturas, como queijo ou granulado doce hagelslag. A refeição quente costuma ser o jantar.",
+    "fr": "Le petit-déjeuner et le déjeuner sont souvent du simple pain avec une garniture, comme du fromage ou des vermicelles sucrés hagelslag. Le repas chaud est en général le dîner.",
+    "de": "Frühstück und Mittagessen bestehen oft aus einfachem Brot mit Belag, etwa Käse oder süßen Hagelslag-Streuseln. Die warme Mahlzeit ist meist das Abendessen."
+   }
+  },
+  {
+   "id": "ct-NL-06",
+   "category": "dining",
+   "text": {
+    "en": "Dinner is often early, around 6 pm. If invited, arrive at the time given and say Eet smakelijk before eating.",
+    "it": "La cena è spesso presto, intorno alle 18. Se sei invitato, arriva all'ora indicata e di' Eet smakelijk prima di mangiare.",
+    "es": "La cena suele ser temprano, alrededor de las 6 de la tarde. Si te invitan, llega a la hora indicada y di Eet smakelijk antes de comer.",
+    "pt": "O jantar é muitas vezes cedo, por volta das 18h. Se fores convidado, chega à hora indicada e diz Eet smakelijk antes de comer.",
+    "pt_BR": "O jantar costuma ser cedo, por volta das 18h. Se for convidado, chegue na hora indicada e diga Eet smakelijk antes de comer.",
+    "fr": "Le dîner est souvent tôt, vers 18 h. Si tu es invité, arrive à l'heure indiquée et dis Eet smakelijk avant de manger.",
+    "de": "Das Abendessen findet oft früh statt, gegen 18 Uhr. Wenn du eingeladen bist, komm zur genannten Zeit und sag Eet smakelijk, bevor ihr esst."
+   }
+  },
+  {
+   "id": "ct-NL-07",
+   "category": "tipping",
+   "text": {
+    "en": "Service is included in the price, so tipping is optional. In restaurants, rounding up or leaving about 5 to 10 percent for good service is appreciated.",
+    "it": "Il servizio è incluso nel prezzo, quindi la mancia è facoltativa. Nei ristoranti, arrotondare o lasciare circa il 5-10 per cento per un buon servizio è apprezzato.",
+    "es": "El servicio está incluido en el precio, así que la propina es opcional. En los restaurantes se agradece redondear o dejar un 5 a 10 por ciento por un buen servicio.",
+    "pt": "O serviço está incluído no preço, por isso a gorjeta é opcional. Nos restaurantes, arredondar ou deixar cerca de 5 a 10 por cento por um bom serviço é apreciado.",
+    "pt_BR": "O serviço está incluído no preço, então a gorjeta é opcional. Nos restaurantes, arredondar ou deixar cerca de 5 a 10 por cento por um bom serviço é apreciado.",
+    "fr": "Le service est inclus dans le prix, donc le pourboire est facultatif. Au restaurant, arrondir ou laisser environ 5 à 10 pour cent pour un bon service est apprécié.",
+    "de": "Der Service ist im Preis enthalten, Trinkgeld ist also freiwillig. Im Restaurant wird Aufrunden oder etwa 5 bis 10 Prozent für guten Service gern gesehen."
+   }
+  },
+  {
+   "id": "ct-NL-08",
+   "category": "tipping",
+   "text": {
+    "en": "For taxis and rides, rounding up to the next euro or two is common. Tipping is not expected in cafés for a single coffee.",
+    "it": "Per taxi e corse, arrotondare all'euro o ai due euro successivi è comune. Nei bar non ci si aspetta mancia per un solo caffè.",
+    "es": "En taxis y viajes es común redondear al siguiente euro o a los dos siguientes. En los cafés no se espera propina por un solo café.",
+    "pt": "Em táxis e viagens, é comum arredondar para o euro ou dois euros seguintes. Nos cafés não se espera gorjeta por um único café.",
+    "pt_BR": "Em táxis e corridas, é comum arredondar para o euro ou dois euros seguintes. Nos cafés não se espera gorjeta por um único café.",
+    "fr": "Pour les taxis et les trajets, il est courant d'arrondir à l'euro ou aux deux euros supérieurs. Au café, aucun pourboire n'est attendu pour un simple café.",
+    "de": "Bei Taxis und Fahrten ist Aufrunden auf den nächsten oder übernächsten Euro üblich. In Cafés wird für einen einzelnen Kaffee kein Trinkgeld erwartet."
+   }
+  },
+  {
+   "id": "ct-NL-09",
+   "category": "gifts",
+   "text": {
+    "en": "When invited to someone's home, a bouquet of flowers or chocolates is a typical thing to bring. Give it when you arrive.",
+    "it": "Quando si è invitati a casa di qualcuno, un mazzo di fiori o dei cioccolatini sono un regalo tipico. Consegnalo appena arrivi.",
+    "es": "Cuando te invitan a una casa, un ramo de flores o unos bombones son un obsequio típico. Entrégalo al llegar.",
+    "pt": "Quando és convidado para a casa de alguém, um ramo de flores ou uns chocolates são uma oferta típica. Entrega-o quando chegares.",
+    "pt_BR": "Quando você é convidado para a casa de alguém, um buquê de flores ou uns chocolates são um presente típico. Entregue ao chegar.",
+    "fr": "Quand on est invité chez quelqu'un, un bouquet de fleurs ou des chocolats sont un cadeau typique. Offre-le dès ton arrivée.",
+    "de": "Wenn man zu jemandem nach Hause eingeladen ist, sind ein Blumenstrauß oder Pralinen ein typisches Mitbringsel. Überreiche es gleich bei der Ankunft."
+   }
+  },
+  {
+   "id": "ct-NL-10",
+   "category": "dress",
+   "text": {
+    "en": "Dress is practical and casual, even for many workplaces. Layers and a rain jacket are useful, since the weather changes quickly and cycling is common.",
+    "it": "L'abbigliamento è pratico e casual, anche in molti luoghi di lavoro. Strati e un k-way sono utili, perché il tempo cambia in fretta e andare in bici è comune.",
+    "es": "La ropa es práctica y casual, incluso en muchos lugares de trabajo. Las capas y un impermeable son útiles, porque el tiempo cambia rápido y es común ir en bici.",
+    "pt": "A roupa é prática e informal, mesmo em muitos locais de trabalho. Camadas e um casaco impermeável são úteis, porque o tempo muda depressa e é comum andar de bicicleta.",
+    "pt_BR": "A roupa é prática e casual, até em muitos locais de trabalho. Camadas e uma capa de chuva são úteis, porque o tempo muda rápido e é comum andar de bicicleta.",
+    "fr": "La tenue est pratique et décontractée, même dans beaucoup de lieux de travail. Les couches et un imperméable sont utiles, car le temps change vite et le vélo est courant.",
+    "de": "Die Kleidung ist praktisch und lässig, auch an vielen Arbeitsplätzen. Schichten und eine Regenjacke sind nützlich, denn das Wetter wechselt schnell und Radfahren ist üblich."
+   }
+  },
+  {
+   "id": "ct-NL-11",
+   "category": "religion_sites",
+   "text": {
+    "en": "Most Dutch people are not religious, and faith is seen as a personal matter, not something to promote in public. Historic churches are open to visitors; stay quiet during services.",
+    "it": "La maggior parte degli olandesi non è religiosa, e la fede è vista come una questione personale, da non promuovere in pubblico. Le chiese storiche sono aperte ai visitatori; stai in silenzio durante le funzioni.",
+    "es": "La mayoría de los neerlandeses no es religiosa, y la fe se ve como un asunto personal que no se promueve en público. Las iglesias históricas están abiertas a los visitantes; guarda silencio durante los oficios.",
+    "pt": "A maioria dos neerlandeses não é religiosa, e a fé é vista como um assunto pessoal, que não se promove em público. As igrejas históricas estão abertas a visitantes; fica em silêncio durante as celebrações.",
+    "pt_BR": "A maioria dos holandeses não é religiosa, e a fé é vista como assunto pessoal, que não se promove em público. As igrejas históricas estão abertas a visitantes; fique em silêncio durante as celebrações.",
+    "fr": "La plupart des Néerlandais ne sont pas religieux, et la foi est vue comme une affaire personnelle, qu'on ne promeut pas en public. Les églises historiques sont ouvertes aux visiteurs ; reste silencieux pendant les offices.",
+    "de": "Die meisten Niederländer sind nicht religiös, und Glaube gilt als Privatsache, für die man in der Öffentlichkeit nicht wirbt. Historische Kirchen sind für Besucher offen; sei bei Gottesdiensten leise."
+   }
+  },
+  {
+   "id": "ct-NL-12",
+   "category": "gestures",
+   "text": {
+    "en": "Tapping your forehead with a finger is a rude way of saying someone is crazy, so avoid it, even as a joke with someone you do not know well.",
+    "it": "Battere un dito sulla fronte è un modo scortese per dire che qualcuno è pazzo, quindi evitalo, anche per scherzo con chi non conosci bene.",
+    "es": "Golpear la frente con un dedo es una forma grosera de decir que alguien está loco, así que evítalo, incluso como broma con alguien que no conoces bien.",
+    "pt": "Bater com um dedo na testa é uma forma indelicada de dizer que alguém é louco, por isso evita-o, mesmo como brincadeira com alguém que não conheces bem.",
+    "pt_BR": "Bater com um dedo na testa é uma forma grosseira de dizer que alguém é maluco, então evite, mesmo como brincadeira com alguém que você não conhece bem.",
+    "fr": "Se taper le front du doigt est une façon impolie de dire que quelqu'un est fou, alors évite-le, même pour plaisanter avec quelqu'un que tu connais peu.",
+    "de": "Sich mit dem Finger an die Stirn zu tippen ist eine unhöfliche Art zu sagen, jemand sei verrückt; lass es also, auch als Scherz mit jemandem, den du kaum kennst."
+   }
+  },
+  {
+   "id": "ct-NL-13",
+   "category": "punctuality",
+   "text": {
+    "en": "Being on time matters, for work and for social plans. If you will be late, even by a few minutes, send a message or call.",
+    "it": "Essere puntuali conta, sia per il lavoro sia per i piani sociali. Se farai tardi, anche solo di qualche minuto, manda un messaggio o telefona.",
+    "es": "Ser puntual importa, tanto en el trabajo como en los planes sociales. Si vas a llegar tarde, aunque sea unos minutos, manda un mensaje o llama.",
+    "pt": "Ser pontual é importante, no trabalho e nos planos sociais. Se fores chegar atrasado, mesmo que só alguns minutos, manda uma mensagem ou liga.",
+    "pt_BR": "Ser pontual é importante, no trabalho e nos planos sociais. Se for chegar atrasado, mesmo que só alguns minutos, mande uma mensagem ou ligue.",
+    "fr": "La ponctualité compte, au travail comme pour les projets entre amis. Si tu as du retard, même de quelques minutes, envoie un message ou appelle.",
+    "de": "Pünktlichkeit zählt, bei der Arbeit wie bei privaten Verabredungen. Wenn du dich auch nur um ein paar Minuten verspätest, schreib eine Nachricht oder ruf an."
+   }
+  },
+  {
+   "id": "ct-NL-14",
+   "category": "punctuality",
+   "text": {
+    "en": "Many people keep a diary and plan meetups days or weeks ahead. Dropping in unannounced is less common, so message first.",
+    "it": "Molti usano un'agenda e organizzano gli incontri con giorni o settimane di anticipo. Presentarsi senza preavviso è meno comune, quindi scrivi prima.",
+    "es": "Mucha gente usa agenda y planea los encuentros con días o semanas de antelación. Presentarse sin avisar es menos común, así que escribe antes.",
+    "pt": "Muita gente usa agenda e planeia os encontros com dias ou semanas de antecedência. Aparecer sem avisar é menos comum, por isso manda primeiro uma mensagem.",
+    "pt_BR": "Muita gente usa agenda e planeja os encontros com dias ou semanas de antecedência. Aparecer sem avisar é menos comum, então mande uma mensagem antes.",
+    "fr": "Beaucoup de gens utilisent un agenda et planifient les rencontres des jours ou des semaines à l'avance. Passer sans prévenir est moins courant, donc écris d'abord.",
+    "de": "Viele führen einen Kalender und planen Treffen Tage oder Wochen im Voraus. Unangekündigt vorbeizukommen ist weniger üblich, schreib also vorher."
+   }
+  },
+  {
+   "id": "ct-NL-15",
+   "category": "public_behavior",
+   "text": {
+    "en": "In bakeries, shops and some counters, you take a numbered ticket and wait your turn. Jumping the queue is frowned upon.",
+    "it": "In panetterie, negozi e ad alcuni sportelli si prende un numerino e si aspetta il proprio turno. Saltare la fila è mal visto.",
+    "es": "En panaderías, tiendas y algunos mostradores se toma un número y se espera el turno. Colarse en la fila está mal visto.",
+    "pt": "Em padarias, lojas e alguns balcões, tira-se uma senha numerada e espera-se pela vez. Passar à frente na fila é mal visto.",
+    "pt_BR": "Em padarias, lojas e alguns balcões, pega-se uma senha numerada e espera-se a vez. Furar a fila é malvisto.",
+    "fr": "Dans les boulangeries, les magasins et certains guichets, on prend un numéro et on attend son tour. Passer devant les autres est mal vu.",
+    "de": "In Bäckereien, Geschäften und an manchen Schaltern zieht man eine Nummer und wartet, bis man dran ist. Vordrängeln wird nicht gern gesehen."
+   }
+  },
+  {
+   "id": "ct-NL-16",
+   "category": "public_behavior",
+   "text": {
+    "en": "Many trains have a quiet carriage where phone calls and loud conversation are not appropriate. Keep your voice low in public transport in general.",
+    "it": "Molti treni hanno una carrozza silenziosa dove telefonate e conversazioni ad alta voce non sono appropriate. In generale, abbassa la voce sui mezzi pubblici.",
+    "es": "Muchos trenes tienen un vagón silencioso donde no son apropiadas las llamadas ni las conversaciones en voz alta. En general, baja la voz en el transporte público.",
+    "pt": "Muitos comboios têm uma carruagem silenciosa onde chamadas e conversas em voz alta não são apropriadas. Em geral, fala baixo nos transportes públicos.",
+    "pt_BR": "Muitos trens têm um vagão silencioso onde ligações e conversas em voz alta não são apropriadas. Em geral, fale baixo no transporte público.",
+    "fr": "Beaucoup de trains ont une voiture silencieuse où les appels et les conversations à voix haute ne sont pas appropriés. En général, parle à voix basse dans les transports publics.",
+    "de": "Viele Züge haben ein Ruheabteil, in dem Telefonate und laute Gespräche unpassend sind. Sprich im öffentlichen Verkehr generell leise."
+   }
+  },
+  {
+   "id": "ct-NL-17",
+   "category": "transport",
+   "text": {
+    "en": "Cycling is part of daily life, with about 27 percent of trips made by bike. Stay off red bike paths when walking, and keep to the right.",
+    "it": "Andare in bici fa parte della vita quotidiana, con circa il 27 per cento degli spostamenti in bicicletta. A piedi, non occupare le piste ciclabili rosse e resta sulla destra.",
+    "es": "Ir en bici es parte de la vida diaria, con cerca del 27 por ciento de los viajes en bicicleta. A pie, no ocupes los carriles bici rojos y mantente a la derecha.",
+    "pt": "Andar de bicicleta faz parte do dia a dia, com cerca de 27 por cento das viagens feitas de bicicleta. A pé, não ocupes as ciclovias vermelhas e mantém-te à direita.",
+    "pt_BR": "Andar de bicicleta faz parte do dia a dia, com cerca de 27 por cento das viagens feitas de bike. A pé, não ocupe as ciclovias vermelhas e mantenha-se à direita.",
+    "fr": "Le vélo fait partie du quotidien, avec environ 27 pour cent des déplacements à bicyclette. À pied, ne marche pas sur les pistes cyclables rouges et reste à droite.",
+    "de": "Radfahren gehört zum Alltag, etwa 27 Prozent aller Wege werden mit dem Rad zurückgelegt. Als Fußgänger bleib von den roten Radwegen fern und halte dich rechts."
+   }
+  },
+  {
+   "id": "ct-NL-18",
+   "category": "transport",
+   "text": {
+    "en": "On trains, trams and buses, pay with a transit card (OV-chipkaart) or a contactless bank card, and remember to check out when you leave.",
+    "it": "Su treni, tram e autobus si paga con una carta di trasporto (OV-chipkaart) o con una carta bancaria contactless, e ricorda di fare il check-out quando scendi.",
+    "es": "En trenes, tranvías y autobuses se paga con una tarjeta de transporte (OV-chipkaart) o con una tarjeta bancaria sin contacto, y recuerda registrar la salida al bajar.",
+    "pt": "Em comboios, elétricos e autocarros, paga-se com um cartão de transporte (OV-chipkaart) ou um cartão bancário contactless, e lembra-te de fazer o check-out ao sair.",
+    "pt_BR": "Em trens, bondes e ônibus, paga-se com um cartão de transporte (OV-chipkaart) ou um cartão bancário por aproximação, e lembre-se de fazer o check-out ao sair.",
+    "fr": "Dans les trains, tramways et bus, on paie avec une carte de transport (OV-chipkaart) ou une carte bancaire sans contact, et il faut penser à valider sa sortie en descendant.",
+    "de": "In Zügen, Straßenbahnen und Bussen zahlt man mit einer Nahverkehrskarte (OV-chipkaart) oder einer kontaktlosen Bankkarte und denkt daran, beim Aussteigen auszuchecken."
+   }
+  },
+  {
+   "id": "ct-NL-19",
+   "category": "language",
+   "text": {
+    "en": "Many Dutch people speak excellent English and may switch to it as soon as they hear an accent. Politely keep trying in Dutch if you want to practice.",
+    "it": "Molti olandesi parlano un ottimo inglese e possono passare all'inglese appena sentono un accento. Se vuoi esercitarti, continua gentilmente in olandese.",
+    "es": "Muchos neerlandeses hablan un inglés excelente y pueden cambiar a él en cuanto oyen un acento. Si quieres practicar, sigue intentándolo con educación en neerlandés.",
+    "pt": "Muitos neerlandeses falam um inglês excelente e podem mudar para ele assim que ouvem um sotaque. Se quiseres praticar, continua com simpatia em neerlandês.",
+    "pt_BR": "Muitos holandeses falam um inglês excelente e podem mudar para ele assim que ouvem um sotaque. Se quiser praticar, continue com educação em holandês.",
+    "fr": "Beaucoup de Néerlandais parlent très bien anglais et peuvent y passer dès qu'ils entendent un accent. Si tu veux t'exercer, continue poliment en néerlandais.",
+    "de": "Viele Niederländer sprechen hervorragend Englisch und wechseln dazu, sobald sie einen Akzent hören. Wenn du üben möchtest, bleib höflich beim Niederländischen."
+   }
+  },
+  {
+   "id": "ct-NL-20",
+   "category": "festivals",
+   "text": {
+    "en": "King's Day on April 27 is a nationwide party in orange. People sell second-hand items at the vrijmarkt, the free market, on streets and squares.",
+    "it": "Il Koningsdag, il 27 aprile, è una festa nazionale all'insegna dell'arancione. La gente vende oggetti usati al vrijmarkt, il mercato libero, per strade e piazze.",
+    "es": "El Koningsdag, el 27 de abril, es una fiesta nacional vestida de naranja. La gente vende objetos de segunda mano en el vrijmarkt, el mercado libre, en calles y plazas.",
+    "pt": "O Koningsdag, a 27 de abril, é uma festa nacional vestida de laranja. As pessoas vendem objetos em segunda mão no vrijmarkt, o mercado livre, em ruas e praças.",
+    "pt_BR": "O Koningsdag, em 27 de abril, é uma festa nacional vestida de laranja. As pessoas vendem objetos usados no vrijmarkt, a feira livre, em ruas e praças.",
+    "fr": "La Fête du Roi, le 27 avril, est une fête nationale tout en orange. On vend des objets d'occasion au vrijmarkt, le marché libre, dans les rues et sur les places.",
+    "de": "Der Königstag am 27. April ist ein landesweites Fest in Orange. Auf dem Vrijmarkt, dem freien Markt, verkaufen Leute auf Straßen und Plätzen gebrauchte Sachen."
+   }
+  },
+  {
+   "id": "ct-NL-21",
+   "category": "festivals",
+   "text": {
+    "en": "Sinterklaas is celebrated on the evening of December 5, mainly in families with children, with gifts and often playful poems. Gift-giving at Christmas is less central.",
+    "it": "Sinterklaas si festeggia la sera del 5 dicembre, soprattutto nelle famiglie con bambini, con regali e spesso poesie scherzose. I regali a Natale sono meno centrali.",
+    "es": "Sinterklaas se celebra la noche del 5 de diciembre, sobre todo en familias con niños, con regalos y a menudo poemas divertidos. Los regalos en Navidad son menos centrales.",
+    "pt": "O Sinterklaas celebra-se na noite de 5 de dezembro, sobretudo em famílias com crianças, com presentes e muitas vezes poemas divertidos. Os presentes no Natal têm menos importância.",
+    "pt_BR": "O Sinterklaas é celebrado na noite de 5 de dezembro, principalmente em famílias com crianças, com presentes e muitas vezes poemas divertidos. Os presentes no Natal são menos centrais.",
+    "fr": "La Saint-Nicolas (Sinterklaas) se fête le soir du 5 décembre, surtout dans les familles avec enfants, avec des cadeaux et souvent des poèmes amusants. Les cadeaux de Noël comptent moins.",
+    "de": "Sinterklaas wird am Abend des 5. Dezember gefeiert, vor allem in Familien mit Kindern, mit Geschenken und oft launigen Gedichten. Weihnachtsgeschenke spielen eine kleinere Rolle."
+   }
+  },
+  {
+   "id": "ct-NL-22",
+   "category": "festivals",
+   "text": {
+    "en": "On November 11, in some regions, children go door to door with paper lanterns and sing songs for a treat during Sint Maarten.",
+    "it": "L'11 novembre, in alcune regioni, i bambini vanno di porta in porta con lanterne di carta e cantano canzoni in cambio di un dolcetto per Sint Maarten.",
+    "es": "El 11 de noviembre, en algunas regiones, los niños van de puerta en puerta con farolillos de papel y cantan canciones a cambio de un dulce durante Sint Maarten.",
+    "pt": "A 11 de novembro, em algumas regiões, as crianças vão de porta em porta com lanternas de papel e cantam canções em troca de uma guloseima no Sint Maarten.",
+    "pt_BR": "Em 11 de novembro, em algumas regiões, as crianças vão de porta em porta com lanternas de papel e cantam músicas em troca de um docinho no Sint Maarten.",
+    "fr": "Le 11 novembre, dans certaines régions, les enfants vont de porte en porte avec des lanternes en papier et chantent des chansons contre une friandise pour la Saint-Martin.",
+    "de": "Am 11. November ziehen in einigen Regionen Kinder mit Papierlaternen von Tür zu Tür und singen zu Sint Maarten Lieder für eine Süßigkeit."
+   }
+  },
+  {
+   "id": "ct-NL-23",
+   "category": "family",
+   "text": {
+    "en": "A new baby is traditionally celebrated by serving beschuit met muisjes, rusks with sugared aniseed, to visitors: blue for a boy, pink for a girl.",
+    "it": "Un neonato si festeggia tradizionalmente offrendo ai visitatori beschuit met muisjes, fette biscottate con semi di anice zuccherati: blu per un maschio, rosa per una femmina.",
+    "es": "El nacimiento de un bebé se celebra tradicionalmente sirviendo a las visitas beschuit met muisjes, tostadas con grageas de anís: azules para un niño, rosas para una niña.",
+    "pt": "O nascimento de um bebé celebra-se tradicionalmente servindo às visitas beschuit met muisjes, tostas com sementes de anis açucaradas: azuis para um rapaz, cor-de-rosa para uma rapariga.",
+    "pt_BR": "O nascimento de um bebê é tradicionalmente celebrado servindo às visitas beschuit met muisjes, torradas com sementes de anis açucaradas: azuis para menino, rosa para menina.",
+    "fr": "On fête traditionnellement une naissance en servant aux visiteurs des beschuit met muisjes, des biscottes avec des graines d'anis sucrées : bleues pour un garçon, roses pour une fille.",
+    "de": "Die Geburt eines Babys wird traditionell gefeiert, indem man Besuchern beschuit met muisjes serviert, Zwieback mit gezuckerten Anissamen: blau für einen Jungen, rosa für ein Mädchen."
+   }
+  },
+  {
+   "id": "ct-NL-24",
+   "category": "family",
+   "text": {
+    "en": "At birthday gatherings, it is customary to congratulate everyone in the family, not just the person celebrating, and guests often sit in a circle.",
+    "it": "Alle feste di compleanno è usanza fare gli auguri a tutta la famiglia, non solo a chi festeggia, e gli ospiti spesso siedono in cerchio.",
+    "es": "En las fiestas de cumpleaños es costumbre felicitar a toda la familia, no solo a quien cumple años, y los invitados suelen sentarse en círculo.",
+    "pt": "Nas festas de aniversário é costume dar os parabéns a toda a família, não apenas a quem faz anos, e os convidados costumam sentar-se em círculo.",
+    "pt_BR": "Nas festas de aniversário é costume dar os parabéns a toda a família, não apenas a quem faz aniversário, e os convidados costumam sentar em círculo.",
+    "fr": "Aux fêtes d'anniversaire, il est d'usage de féliciter toute la famille, pas seulement la personne fêtée, et les invités s'assoient souvent en cercle.",
+    "de": "Bei Geburtstagsfeiern gratuliert man üblicherweise der ganzen Familie, nicht nur dem Geburtstagskind, und die Gäste sitzen oft im Kreis."
+   }
+  },
+  {
+   "id": "ct-NL-25",
+   "category": "money",
+   "text": {
+    "en": "The currency is the euro. Card payments are very common, and some shops and cafés accept only cards, so carry a debit or credit card.",
+    "it": "La valuta è l'euro. I pagamenti con carta sono molto comuni, e alcuni negozi e bar accettano solo carte, quindi porta una carta di debito o di credito.",
+    "es": "La moneda es el euro. Los pagos con tarjeta son muy comunes, y algunas tiendas y cafés solo aceptan tarjeta, así que lleva una tarjeta de débito o crédito.",
+    "pt": "A moeda é o euro. Os pagamentos com cartão são muito comuns, e algumas lojas e cafés só aceitam cartão, por isso leva um cartão de débito ou crédito.",
+    "pt_BR": "A moeda é o euro. Os pagamentos com cartão são muito comuns, e algumas lojas e cafés só aceitam cartão, então leve um cartão de débito ou crédito.",
+    "fr": "La monnaie est l'euro. Le paiement par carte est très courant, et certains magasins et cafés n'acceptent que les cartes, alors prends une carte de débit ou de crédit.",
+    "de": "Die Währung ist der Euro. Kartenzahlung ist sehr verbreitet, und manche Läden und Cafés akzeptieren nur Karten, also nimm eine Debit- oder Kreditkarte mit."
+   }
+  },
+  {
+   "id": "ct-NL-26",
+   "category": "photography",
+   "text": {
+    "en": "Respect for privacy is valued: ask before photographing people, especially children, and do not point your camera into private homes.",
+    "it": "Il rispetto della privacy è valorizzato: chiedi prima di fotografare le persone, soprattutto i bambini, e non puntare la fotocamera dentro le case private.",
+    "es": "Se valora el respeto a la privacidad: pide permiso antes de fotografiar a las personas, sobre todo a niños, y no apuntes la cámara hacia el interior de casas privadas.",
+    "pt": "O respeito pela privacidade é valorizado: pede licença antes de fotografar pessoas, sobretudo crianças, e não apontes a câmara para o interior de casas particulares.",
+    "pt_BR": "O respeito à privacidade é valorizado: peça permissão antes de fotografar pessoas, principalmente crianças, e não aponte a câmera para dentro de casas particulares.",
+    "fr": "Le respect de la vie privée est valorisé : demande avant de photographier des personnes, surtout des enfants, et ne dirige pas ton appareil vers l'intérieur des maisons privées.",
+    "de": "Der Respekt vor der Privatsphäre wird geschätzt: Frag, bevor du Menschen fotografierst, besonders Kinder, und richte die Kamera nicht in private Wohnungen."
+   }
+  },
+  {
+   "id": "ct-NL-27",
+   "category": "nightlife",
+   "text": {
+    "en": "Traditional brown cafés (bruine kroegen) are cozy places to chat over a drink or coffee and a plate of bitterballen with mustard. The word for that cozy feeling is gezellig.",
+    "it": "I tradizionali brown café (bruine kroegen) sono posti accoglienti dove chiacchierare davanti a una bevanda o a un caffè con un piatto di bitterballen con senape. La parola per quella sensazione è gezellig.",
+    "es": "Los tradicionales cafés marrones (bruine kroegen) son lugares acogedores para charlar con una bebida o un café y un plato de bitterballen con mostaza. La palabra para esa sensación acogedora es gezellig.",
+    "pt": "Os tradicionais cafés castanhos (bruine kroegen) são sítios acolhedores para conversar com uma bebida ou um café e um prato de bitterballen com mostarda. A palavra para essa sensação acolhedora é gezellig.",
+    "pt_BR": "Os tradicionais cafés marrons (bruine kroegen) são lugares aconchegantes para conversar com uma bebida ou um café e um prato de bitterballen com mostarda. A palavra para essa sensação aconchegante é gezellig.",
+    "fr": "Les cafés bruns traditionnels (bruine kroegen) sont des lieux conviviaux où discuter autour d'une boisson ou d'un café et d'une assiette de bitterballen avec de la moutarde. Le mot pour cette ambiance chaleureuse est gezellig.",
+    "de": "Traditionelle braune Kneipen (bruine kroegen) sind gemütliche Orte zum Plaudern bei einem Getränk oder Kaffee und einem Teller Bitterballen mit Senf. Das Wort für dieses behagliche Gefühl ist gezellig."
+   }
+  },
+  {
+   "id": "ct-NL-28",
+   "category": "nature",
+   "text": {
+    "en": "In the spring flower fields and dunes, stay on marked paths and do not walk into tulip fields to take photos, since the crops are growing there.",
+    "it": "Nei campi di fiori primaverili e nelle dune, resta sui sentieri segnati e non entrare nei campi di tulipani per fare foto, perché lì stanno crescendo le colture.",
+    "es": "En los campos de flores de primavera y en las dunas, quédate en los senderos marcados y no entres en los campos de tulipanes para hacer fotos, porque allí crecen cultivos.",
+    "pt": "Nos campos de flores da primavera e nas dunas, fica nos trilhos marcados e não entres nos campos de tulipas para tirar fotografias, porque ali crescem culturas.",
+    "pt_BR": "Nos campos de flores da primavera e nas dunas, fique nas trilhas marcadas e não entre nos campos de tulipas para tirar fotos, porque ali crescem plantações.",
+    "fr": "Dans les champs de fleurs printaniers et les dunes, reste sur les sentiers balisés et n'entre pas dans les champs de tulipes pour prendre des photos, car des cultures y poussent.",
+    "de": "Bleib in den Blumenfeldern im Frühling und in den Dünen auf den markierten Wegen und betritt für Fotos keine Tulpenfelder, denn dort wachsen Nutzpflanzen."
+   }
+  },
+  {
+   "id": "ct-NL-29",
+   "category": "safety",
+   "text": {
+    "en": "Bike theft is common, so lock your bike to a fixed object. In an emergency, call 112, which works across the Netherlands.",
+    "it": "I furti di biciclette sono frequenti, quindi lega la bici a un oggetto fisso. In caso di emergenza chiama il 112, che funziona in tutti i Paesi Bassi.",
+    "es": "Los robos de bicicletas son frecuentes, así que asegura la tuya a un objeto fijo. En una emergencia, llama al 112, que funciona en todos los Países Bajos.",
+    "pt": "Os furtos de bicicletas são frequentes, por isso prende a tua a um objeto fixo. Numa emergência, liga para o 112, que funciona em todos os Países Baixos.",
+    "pt_BR": "Furtos de bicicletas são frequentes, então prenda a sua a um objeto fixo. Em uma emergência, ligue para o 112, que funciona em todos os Países Baixos.",
+    "fr": "Les vols de vélos sont fréquents, donc attache le tien à un objet fixe. En cas d'urgence, appelle le 112, qui fonctionne dans tous les Pays-Bas.",
+    "de": "Fahrraddiebstähle sind häufig, schließe dein Rad daher an einem festen Gegenstand an. Im Notfall ruf die 112 an, die in den ganzen Niederlanden gilt."
+   }
+  },
+  {
+   "id": "ct-NL-30",
+   "category": "local_pride",
+   "text": {
+    "en": "The Dutch take pride in their water management, with about a third of the country below sea level, as well as cycling culture, design and the art of the Golden Age.",
+    "it": "Gli olandesi sono orgogliosi della loro gestione delle acque, con circa un terzo del paese sotto il livello del mare, oltre che della cultura ciclistica, del design e dell'arte dell'età dell'oro.",
+    "es": "Los neerlandeses están orgullosos de su gestión del agua, con cerca de un tercio del país bajo el nivel del mar, además de la cultura ciclista, el diseño y el arte de la Edad de Oro.",
+    "pt": "Os neerlandeses têm orgulho da sua gestão da água, com cerca de um terço do país abaixo do nível do mar, bem como da cultura ciclista, do design e da arte da Idade de Ouro.",
+    "pt_BR": "Os holandeses têm orgulho da sua gestão da água, com cerca de um terço do país abaixo do nível do mar, além da cultura ciclística, do design e da arte da Era de Ouro.",
+    "fr": "Les Néerlandais sont fiers de leur gestion de l'eau, avec environ un tiers du pays sous le niveau de la mer, ainsi que de leur culture du vélo, du design et de l'art du Siècle d'or.",
+    "de": "Die Niederländer sind stolz auf ihr Wassermanagement, bei dem rund ein Drittel des Landes unter dem Meeresspiegel liegt, sowie auf Fahrradkultur, Design und die Kunst des Goldenen Zeitalters."
+   }
+  }
+ ]
+}
