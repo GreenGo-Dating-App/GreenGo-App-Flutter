@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/partner_link_gate.dart';
 import '../../../../generated/app_localizations.dart';
 import '../screens/event_detail_loader_screen.dart';
 import 'forward_event_sheet.dart';
@@ -161,7 +162,12 @@ class EventMessageCard extends StatelessWidget {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            if (isExternal)
+            // Partner (Ticketmaster / Viator) links: members only.
+            if (isExternal &&
+                (!PartnerLinkGate.isPartnerShare(
+                        url: externalUrl,
+                        sourceLabel: meta['externalSource'] as String?) ||
+                    PartnerLinkGate.canOpen(currentUserId)))
               tile(Icons.open_in_new, l10n.attractionOpenLink, () {
                 Navigator.pop(sheetCtx);
                 launchUrl(Uri.parse(externalUrl),
