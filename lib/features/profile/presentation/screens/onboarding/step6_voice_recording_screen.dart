@@ -3,12 +3,14 @@ import 'dart:io';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:path_provider/path_provider.dart';
+import 'package:image_picker/image_picker.dart' show XFile;
 import 'package:record/record.dart';
 
 import '../../../../../core/constants/app_colors.dart';
+import '../../../../../core/platform/voice_recording_format.dart';
 import '../../../../../generated/app_localizations.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
@@ -32,6 +34,7 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
   Timer? _timer;
   final int _maxDuration = 15; // 15 seconds
   String? _recordingPath;
+  VoiceRecordingFormat _format = VoiceRecordingFormat.aacM4a;
   bool _isUploading = false;
 
   final AudioRecorder _recorder = AudioRecorder();
@@ -62,13 +65,14 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
         return;
       }
 
-      final directory = await getTemporaryDirectory();
-      final path =
-          '${directory.path}/voice_${DateTime.now().millisecondsSinceEpoch}.m4a';
+      // Real audio capture (AAC in an .m4a container). On web there is no
+      // temp dir: the recorder returns a blob: URL from stop(), in the first
+      // format the browser supports.
+      _format = await VoiceRecordingFormat.pick(_recorder);
+      final path = await _format.recordingPath('voice');
 
-      // Real audio capture (AAC in an .m4a container).
       await _recorder.start(
-        const RecordConfig(encoder: AudioEncoder.aacLc),
+        RecordConfig(encoder: _format.encoder),
         path: path,
       );
 
@@ -107,7 +111,7 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
       _isRecording = false;
       _hasRecording = _recordingDuration > 0 &&
           _recordingPath != null &&
-          File(_recordingPath!).existsSync();
+          _recordingExists(_recordingPath!);
     });
 
     // Auto-upload once a real recording exists.
@@ -116,10 +120,13 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
     }
   }
 
+  /// Mobile: the temp file exists. Web: stop() returned a (non-empty) blob URL.
+  bool _recordingExists(String path) =>
+      kIsWeb ? path.isNotEmpty : File(path).existsSync();
+
   Future<void> _uploadRecording() async {
-    if (_recordingPath == null) return;
-    final file = File(_recordingPath!);
-    if (!file.existsSync()) return;
+    final path = _recordingPath;
+    if (path == null || !_recordingExists(path)) return;
 
     final uid = FirebaseAuth.instance.currentUser?.uid;
     if (uid == null) return;
@@ -130,16 +137,19 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
 
     try {
       // Mirror the profile datasource storage path: profiles/{uid}/voice/...
-      final fileName = 'voice_${DateTime.now().millisecondsSinceEpoch}.m4a';
+      final fileName =
+          'voice_${DateTime.now().millisecondsSinceEpoch}.${_format.extension}';
       final ref =
           FirebaseStorage.instance.ref().child('profiles/$uid/voice/$fileName');
-      final task = await ref.putFile(
-        file,
-        SettableMetadata(
-          contentType: 'audio/m4a',
-          customMetadata: {'userId': uid},
-        ),
+      // Mobile: putFile, unchanged. Web: putData with the blob's bytes and
+      // the recorded format's audio contentType.
+      final metadata = SettableMetadata(
+        contentType: kIsWeb ? _format.contentType : 'audio/m4a',
+        customMetadata: {'userId': uid},
       );
+      final task = kIsWeb
+          ? await ref.putData(await XFile(path).readAsBytes(), metadata)
+          : await ref.putFile(File(path), metadata);
       final voiceUrl = await task.ref.getDownloadURL();
 
       if (!mounted) return;
@@ -161,7 +171,7 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
 
   void _deleteRecording() {
     final path = _recordingPath;
-    if (path != null) {
+    if (path != null && !kIsWeb) {
       try {
         final f = File(path);
         if (f.existsSync()) f.deleteSync();

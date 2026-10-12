@@ -6,6 +6,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:audioplayers/audioplayers.dart' hide Source;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -14,6 +15,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:uuid/uuid.dart';
 import 'package:video_player/video_player.dart';
 
+import '../../../../core/platform/web_media.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart';
@@ -383,20 +385,31 @@ class _GroupChatViewState extends State<_GroupChatView> {
     AppSoundService().play(AppSound.messageSent);
   }
 
-  Future<void> _sendVoice(BuildContext context, File file, Duration duration) async {
+  Future<void> _sendVoice(
+      BuildContext context, XFile voice, Duration duration) async {
     final l10n = AppLocalizations.of(context)!;
     final bloc = context.read<GroupChatBloc>();
     final messenger = ScaffoldMessenger.of(context);
     try {
       final uuid = const Uuid().v4();
+      // Mobile: `.m4a` + audio/mp4 as always. Web: the browser's recording
+      // (mp4 / webm / wav) uploaded as bytes from its blob: URL.
+      final ext = WebMedia.voiceExtension(voice);
       final ref = FirebaseStorage.instance
           .ref()
-          .child('group_voice/${widget.groupId}/$uuid.m4a');
-      await ref.putFile(file, SettableMetadata(contentType: 'audio/mp4'));
+          .child('group_voice/${widget.groupId}/$uuid.$ext');
+      await WebMedia.uploadXFile(
+        ref,
+        voice,
+        contentType: WebMedia.voiceContentType(voice),
+      );
       final url = await ref.getDownloadURL();
-      try {
-        if (file.existsSync()) file.deleteSync();
-      } catch (_) {}
+      if (!kIsWeb) {
+        try {
+          final file = File(voice.path);
+          if (file.existsSync()) file.deleteSync();
+        } catch (_) {}
+      }
       bloc.add(GroupChatMessageSent(
         content: url,
         type: MessageType.voiceNote,
@@ -412,11 +425,12 @@ class _GroupChatViewState extends State<_GroupChatView> {
   }
 
   Future<String> _uploadGroupFile(
-      File f, String ext, String contentType) async {
+      XFile f, String ext, String contentType) async {
     final ref = FirebaseStorage.instance
         .ref()
         .child('group_media/${widget.groupId}/${const Uuid().v4()}.$ext');
-    await ref.putFile(f, SettableMetadata(contentType: contentType));
+    // putFile on mobile, putData(bytes) on web.
+    await WebMedia.uploadXFile(ref, f, contentType: contentType);
     return ref.getDownloadURL();
   }
 
@@ -553,15 +567,18 @@ class _GroupChatViewState extends State<_GroupChatView> {
     try {
       final x = await ImagePicker().pickImage(source: source, imageQuality: 80);
       if (x == null) return;
-      final file = File(x.path);
-      final valid =
-          await PhotoValidationService().validateImageForSending(file);
+      // On-device ML Kit check is mobile-only (no dart:io File / ML Kit on
+      // web).
+      final valid = kIsWeb
+          ? PhotoValidationResult.valid()
+          : await PhotoValidationService()
+              .validateImageForSending(File(x.path));
       if (!valid.isValid) {
         messenger
             .showSnackBar(SnackBar(content: Text(l10n.photoExplicitContent)));
         return;
       }
-      final url = await _uploadGroupFile(file, 'jpg', 'image/jpeg');
+      final url = await _uploadGroupFile(x, 'jpg', 'image/jpeg');
       bloc.add(GroupChatMessageSent(content: url, type: MessageType.image));
       AppSoundService().play(AppSound.messageSent);
     } catch (_) {
@@ -580,7 +597,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
     try {
       final x = await ImagePicker().pickVideo(source: source);
       if (x == null) return;
-      final url = await _uploadGroupFile(File(x.path), 'mp4', 'video/mp4');
+      final url = await _uploadGroupFile(x, 'mp4', 'video/mp4');
       bloc.add(GroupChatMessageSent(content: url, type: MessageType.video));
       AppSoundService().play(AppSound.messageSent);
     } catch (_) {
@@ -1442,7 +1459,7 @@ class _InputBar extends StatelessWidget {
   final TextEditingController controller;
   final VoidCallback onSend;
   final VoidCallback onAttach;
-  final void Function(File file, Duration duration) onSendVoice;
+  final void Function(XFile file, Duration duration) onSendVoice;
 
   @override
   Widget build(BuildContext context) {

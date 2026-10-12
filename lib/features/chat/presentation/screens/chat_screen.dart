@@ -6,6 +6,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/foundation.dart' show Uint8List, kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
@@ -14,6 +15,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:showcaseview/showcaseview.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../../core/platform/web_media.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/config/app_config.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -191,8 +193,6 @@ class _ChatScreenState extends State<ChatScreen> {
   bool _showPhraseOfDaySetting = true; // Show phrase of the day banner
 
   // Media preview state
-  File? _selectedImage;
-  File? _selectedVideo;
   XFile? _selectedImageXFile;
   XFile? _selectedVideoXFile;
 
@@ -980,9 +980,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
       if (image != null && mounted) {
         setState(() {
-          _selectedImage = File(image.path);
           _selectedImageXFile = image;
-          _selectedVideo = null;
           _selectedVideoXFile = null;
         });
       }
@@ -1002,9 +1000,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
       if (video != null && mounted) {
         setState(() {
-          _selectedVideo = File(video.path);
           _selectedVideoXFile = video;
-          _selectedImage = null;
           _selectedImageXFile = null;
         });
       }
@@ -1027,25 +1023,41 @@ class _ChatScreenState extends State<ChatScreen> {
     });
 
     try {
-      // Compress image before upload to reduce storage costs
-      var file = File(image.path);
-      try {
-        file = await ImageCompression.compressChatImage(file);
-        debugPrint('Chat image compressed for upload');
-      } catch (e) {
-        debugPrint('Chat image compression failed, using original: $e');
-        // Use original if compression fails
+      // Compress image before upload to reduce storage costs.
+      // Web has no dart:io File: compress the picked bytes instead. The
+      // on-device ML Kit check is mobile-only (no ML Kit on web); the backend
+      // `moderateChatImage` check below still runs on every platform.
+      File? file;
+      Uint8List? webBytes;
+      if (kIsWeb) {
+        webBytes = await image.readAsBytes();
+        final compressed = await ImageCompression.compressBytes(
+          webBytes,
+          quality: ImageCompression.chatImageQuality,
+          maxWidth: ImageCompression.chatImageMaxWidth,
+          maxHeight: ImageCompression.chatImageMaxHeight,
+        );
+        if (compressed != null && compressed.isNotEmpty) webBytes = compressed;
+      } else {
+        file = File(image.path);
+        try {
+          file = await ImageCompression.compressChatImage(file);
+          debugPrint('Chat image compressed for upload');
+        } catch (e) {
+          debugPrint('Chat image compression failed, using original: $e');
+          // Use original if compression fails
+        }
       }
 
       // Validate image for nudity/explicit content BEFORE uploading
-      final validationResult =
-          await PhotoValidationService().validateImageForSending(file);
+      final validationResult = file == null
+          ? PhotoValidationResult.valid()
+          : await PhotoValidationService().validateImageForSending(file);
       if (!validationResult.isValid) {
         if (mounted) {
           setState(() {
             _isUploadingMedia = false;
             _uploadProgress = 0.0;
-            _selectedImage = null;
             _selectedImageXFile = null;
           });
           showUserErrorMessage(context, AppLocalizations.of(context)?.photoExplicitContent ?? 'This image contains inappropriate content and cannot be sent.',);
@@ -1060,10 +1072,10 @@ class _ChatScreenState extends State<ChatScreen> {
       // Upload to Firebase Storage
       final ref = FirebaseStorage.instance.ref().child(fileName);
 
-      final uploadTask = ref.putFile(
-        file,
-        SettableMetadata(contentType: 'image/jpeg'),
-      );
+      final metadata = SettableMetadata(contentType: 'image/jpeg');
+      final uploadTask = file != null
+          ? ref.putFile(file, metadata)
+          : ref.putData(webBytes!, metadata);
 
       // Track upload progress
       _uploadSub?.cancel();
@@ -1099,7 +1111,6 @@ class _ChatScreenState extends State<ChatScreen> {
             setState(() {
               _isUploadingMedia = false;
               _uploadProgress = 0.0;
-              _selectedImage = null;
               _selectedImageXFile = null;
             });
             showUserErrorMessage(context, AppLocalizations.of(context)?.photoExplicitContent ?? 'This image contains inappropriate content and cannot be sent.',);
@@ -1138,21 +1149,28 @@ class _ChatScreenState extends State<ChatScreen> {
     }
   }
 
-  Future<void> _sendVoiceMessage(File file, Duration duration) async {
+  Future<void> _sendVoiceMessage(XFile voice, Duration duration) async {
     if (_isUploadingMedia) return;
     setState(() => _isUploadingMedia = true);
     try {
       final uuid = const Uuid().v4();
-      final fileName = 'chat_voice/${widget.matchId}/$uuid.m4a';
+      // Mobile: `.m4a` + audio/mp4 as always. Web: whatever the browser could
+      // record (mp4 / webm / wav), read from the blob: URL as bytes.
+      final ext = WebMedia.voiceExtension(voice);
+      final fileName = 'chat_voice/${widget.matchId}/$uuid.$ext';
       final ref = FirebaseStorage.instance.ref().child(fileName);
-      await ref.putFile(
-        file,
-        SettableMetadata(contentType: 'audio/mp4'),
+      await WebMedia.uploadXFile(
+        ref,
+        voice,
+        contentType: WebMedia.voiceContentType(voice),
       );
       final downloadUrl = await ref.getDownloadURL();
-      try {
-        if (file.existsSync()) file.deleteSync();
-      } catch (_) {}
+      if (!kIsWeb) {
+        try {
+          final file = File(voice.path);
+          if (file.existsSync()) file.deleteSync();
+        } catch (_) {}
+      }
       if (mounted) {
         _addSend(ChatMessageSent(
           content: downloadUrl,
@@ -1181,9 +1199,8 @@ class _ChatScreenState extends State<ChatScreen> {
     });
 
     try {
-      // Check file size (limit to 50MB)
-      final file = File(video.path);
-      final fileSize = await file.length();
+      // Check file size (limit to 50MB). XFile.length works on web too.
+      final fileSize = await video.length();
       if (fileSize > 50 * 1024 * 1024) {
         if (mounted) {
           showUserErrorMessage(context, AppLocalizations.of(context)!.chatVideoTooLarge);
@@ -1193,15 +1210,17 @@ class _ChatScreenState extends State<ChatScreen> {
 
       // Create unique filename
       final uuid = const Uuid().v4();
-      final extension = video.path.split('.').last;
+      final extension = WebMedia.videoExtension(video);
       final fileName = 'chat_videos/${widget.matchId}/$uuid.$extension';
 
       // Upload to Firebase Storage
       final ref = FirebaseStorage.instance.ref().child(fileName);
 
-      final uploadTask = ref.putFile(
-        file,
-        SettableMetadata(contentType: 'video/$extension'),
+      // putFile on mobile, putData(bytes) on web.
+      final uploadTask = await WebMedia.startXFileUpload(
+        ref,
+        video,
+        contentType: 'video/$extension',
       );
 
       // Track upload progress
@@ -1454,8 +1473,6 @@ class _ChatScreenState extends State<ChatScreen> {
                               if (mounted) {
                                 setState(() {
                                   _selectedAlbumPhotos = photosToSelect;
-                                  _selectedImage = null;
-                                  _selectedVideo = null;
                                   _selectedImageXFile = null;
                                   _selectedVideoXFile = null;
                                 });
@@ -3381,8 +3398,6 @@ class _ChatScreenState extends State<ChatScreen> {
   /// Clear selected media
   void _clearSelectedMedia() {
     setState(() {
-      _selectedImage = null;
-      _selectedVideo = null;
       _selectedImageXFile = null;
       _selectedVideoXFile = null;
     });
@@ -3458,7 +3473,7 @@ class _ChatScreenState extends State<ChatScreen> {
       );
     }
 
-    if (_selectedImage == null && _selectedVideo == null) {
+    if (_selectedImageXFile == null && _selectedVideoXFile == null) {
       return const SizedBox.shrink();
     }
 
@@ -3468,9 +3483,9 @@ class _ChatScreenState extends State<ChatScreen> {
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(12),
-            child: _selectedImage != null
-                ? Image.file(
-                    _selectedImage!,
+            child: _selectedImageXFile != null
+                ? Image(
+                    image: WebMedia.imageProviderFor(_selectedImageXFile!),
                     height: 120,
                     width: 120,
                     fit: BoxFit.cover,
