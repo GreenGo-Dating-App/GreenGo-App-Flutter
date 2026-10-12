@@ -66,6 +66,13 @@ service firebase.storage {
     }
 
     // Community images — the owner (community owner id in the path) writes.
+    // Chat offline datasets (tools/chat_datasets/build_chat_datasets.js --upload):
+    // read-only for signed-in users, written only by the admin SDK.
+    match /chat_datasets/{allPaths=**} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+
     match /communities/{ownerId}/{allPaths=**} {
       allow read: if signedIn();
       allow write: if isOwner(ownerId) && validUpload();
