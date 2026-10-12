@@ -14,6 +14,7 @@ import '../../domain/entities/subscription.dart';
 import '../tier_l10n.dart';
 import '../../domain/membership_product_mapping.dart';
 import '../bloc/subscription_bloc.dart';
+import '../web_membership_upgrade.dart';
 
 /// Membership Selection Screen
 /// One-time purchases for membership periods (1 month or 1 year)
@@ -37,9 +38,15 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
   DateTime? _currentEndDate;
   bool _hasActiveBaseMembership = false;
 
+  /// Web only: the Shop's Stripe membership tab, shown instead of the IAP UI
+  /// (no store on the web). Null on iOS / Android.
+  Widget? _webDestination;
+
   @override
   void initState() {
     super.initState();
+    _webDestination = webMembershipUpgradeDestination(widget.currentUserId);
+    if (_webDestination != null) return;
     // Load available products
     context.read<SubscriptionBloc>().add(const LoadAvailableProducts());
     // Load current membership info
@@ -157,6 +164,8 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final web = _webDestination;
+    if (web != null) return web;
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(

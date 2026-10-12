@@ -14,6 +14,7 @@ import '../tier_l10n.dart';
 import '../../domain/membership_product_mapping.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../bloc/subscription_bloc.dart';
+import '../web_membership_upgrade.dart';
 
 /// Membership Selection Screen
 /// One-time purchases for membership periods (1 month or 1 year)
@@ -30,6 +31,9 @@ class MembershipScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Web has no in-app purchase store: sell through the Shop's Stripe flow.
+    final web = webMembershipUpgradeDestination(currentUserId);
+    if (web != null) return web;
     return BlocProvider<SubscriptionBloc>(
       create: (_) => di.sl<SubscriptionBloc>(),
       child: _MembershipScreenView(currentUserId: currentUserId),
