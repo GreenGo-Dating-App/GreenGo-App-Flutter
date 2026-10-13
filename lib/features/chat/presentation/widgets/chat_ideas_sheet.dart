@@ -111,78 +111,67 @@ class _ChatIdeasSheetState extends State<ChatIdeasSheet> {
               )
             else if (topic == null)
               Expanded(
-                child: LayoutBuilder(
-                  builder: (context, c) => GridView.builder(
-                    key: const ValueKey('chat-ideas-categories'),
-                    padding: const EdgeInsets.fromLTRB(12, 8, 12, 24),
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: c.maxWidth < 500 ? 2 : (c.maxWidth < 900 ? 3 : 4),
-                      mainAxisSpacing: 10,
-                      crossAxisSpacing: 10,
-                      childAspectRatio: 1.6,
-                    ),
-                    itemCount: topics.length,
-                    itemBuilder: (context, i) {
-                      final t = topics[i];
-                      return Material(
-                        color: AppColors.charcoal,
-                        borderRadius: BorderRadius.circular(14),
-                        child: InkWell(
-                          key: ValueKey('chat-ideas-category-$t'),
-                          borderRadius: BorderRadius.circular(14),
-                          onTap: () => setState(() => _topic = t),
-                          child: Padding(
-                            padding: const EdgeInsets.all(12),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Icon(chatTopicIcon(t), color: AppColors.richGold, size: 22),
-                                Text(chatTopicLabel(l10n, t),
-                                    maxLines: 2,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: const TextStyle(
-                                        color: AppColors.textPrimary, fontSize: 14, fontWeight: FontWeight.w600)),
-                                Text('${counts[t]}',
-                                    style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
-                              ],
-                            ),
-                          ),
-                        ),
-                      );
-                    },
+                child: GridView.builder(
+                  key: const ValueKey('chat-ideas-categories'),
+                  padding: const EdgeInsets.fromLTRB(14, 10, 14, 28),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 3,
+                    mainAxisSpacing: 12,
+                    crossAxisSpacing: 12,
+                    childAspectRatio: 0.74,
+                  ),
+                  itemCount: topics.length,
+                  itemBuilder: (context, i) => _CategoryTile(
+                    key: ValueKey('chat-ideas-category-${topics[i]}'),
+                    icon: chatTopicIcon(topics[i]),
+                    label: chatTopicLabel(l10n, topics[i]),
+                    count: counts[topics[i]] ?? 0,
+                    onTap: () => setState(() => _topic = topics[i]),
                   ),
                 ),
               )
             else ...[
-              // A category: back to the grid, then its messages.
-              ListTile(
-                key: const ValueKey('chat-ideas-back'),
-                dense: true,
-                leading: const Icon(Icons.arrow_back, color: AppColors.richGold),
-                title: Text(chatTopicLabel(l10n, topic),
-                    style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w600)),
-                onTap: () => setState(() => _topic = null),
+              // A category: header with back, then its messages as cards.
+              Padding(
+                padding: const EdgeInsets.fromLTRB(4, 4, 16, 4),
+                child: Row(children: [
+                  IconButton(
+                    key: const ValueKey('chat-ideas-back'),
+                    tooltip: MaterialLocalizations.of(context).backButtonTooltip,
+                    icon: const Icon(Icons.arrow_back, color: AppColors.richGold),
+                    onPressed: () => setState(() => _topic = null),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(7),
+                    decoration: BoxDecoration(
+                      color: AppColors.richGold.withValues(alpha: 0.15),
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(chatTopicIcon(topic), color: AppColors.richGold, size: 18),
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Text(chatTopicLabel(l10n, topic),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(color: AppColors.textPrimary, fontSize: 16, fontWeight: FontWeight.w700)),
+                  ),
+                  _CountPill(count: shown.length),
+                ]),
               ),
               Expanded(
                 child: ListView.separated(
-                  padding: const EdgeInsets.fromLTRB(12, 4, 12, 24),
+                  padding: const EdgeInsets.fromLTRB(14, 4, 14, 28),
                   itemCount: shown.length,
-                  separatorBuilder: (_, __) => const Divider(height: 1, color: AppColors.divider),
+                  separatorBuilder: (_, __) => const SizedBox(height: 10),
                   itemBuilder: (context, i) {
                     final it = shown[i];
                     final theirs = it.text.of(widget.partnerLanguage);
                     final mine = it.text.of(widget.myLanguage);
-                    return ListTile(
-                      title: Text(theirs, style: const TextStyle(color: AppColors.textPrimary, fontSize: 14)),
-                      subtitle: mine == theirs
-                          ? null
-                          : Text(mine,
-                              style: const TextStyle(
-                                  color: AppColors.textTertiary, fontSize: 12, fontStyle: FontStyle.italic)),
-                      trailing: it.level == null
-                          ? null
-                          : Text(it.level!, style: const TextStyle(color: AppColors.richGold, fontSize: 11)),
+                    return _IdeaCard(
+                      theirs: theirs,
+                      mine: mine == theirs ? null : mine,
+                      level: it.level,
                       onTap: () {
                         widget.onPick(theirs);
                         Navigator.of(context).pop();
@@ -195,6 +184,136 @@ class _ChatIdeasSheetState extends State<ChatIdeasSheet> {
           ],
         );
       },
+    );
+  }
+}
+
+/// A category of the grid: icon in a gold circle, name, number of messages.
+class _CategoryTile extends StatelessWidget {
+  const _CategoryTile({super.key, required this.icon, required this.label, required this.count, required this.onTap});
+
+  final IconData icon;
+  final String label;
+  final int count;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) => Material(
+        color: AppColors.charcoal,
+        borderRadius: BorderRadius.circular(16),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(16),
+          onTap: onTap,
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(16),
+              border: Border.all(color: AppColors.richGold.withValues(alpha: 0.25)),
+            ),
+            padding: const EdgeInsets.fromLTRB(8, 12, 8, 10),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: AppColors.richGold.withValues(alpha: 0.15),
+                    shape: BoxShape.circle,
+                  ),
+                  child: Icon(icon, color: AppColors.richGold, size: 24),
+                ),
+                Text(label,
+                    textAlign: TextAlign.center,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                        color: AppColors.textPrimary, fontSize: 12.5, fontWeight: FontWeight.w600, height: 1.2)),
+                _CountPill(count: count),
+              ],
+            ),
+          ),
+        ),
+      );
+}
+
+class _CountPill extends StatelessWidget {
+  const _CountPill({required this.count});
+  final int count;
+
+  @override
+  Widget build(BuildContext context) => Container(
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+        decoration: BoxDecoration(
+          color: AppColors.backgroundDark,
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child: Text('$count', style: const TextStyle(color: AppColors.textTertiary, fontSize: 11)),
+      );
+}
+
+/// One message: the text in the partner's language, the user's own below,
+/// the level (sentences) and a send arrow. Tap puts it into the input.
+class _IdeaCard extends StatelessWidget {
+  const _IdeaCard({required this.theirs, this.mine, this.level, required this.onTap});
+
+  final String theirs;
+  final String? mine;
+  final String? level;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final mine = this.mine;
+    final level = this.level;
+    return Material(
+      color: AppColors.charcoal,
+      borderRadius: BorderRadius.circular(14),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(14),
+        onTap: onTap,
+        child: Container(
+          padding: const EdgeInsets.fromLTRB(14, 12, 10, 12),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(14),
+            border: Border(left: BorderSide(color: AppColors.richGold.withValues(alpha: 0.8), width: 3)),
+          ),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(theirs,
+                        style: const TextStyle(
+                            color: AppColors.textPrimary, fontSize: 15, fontWeight: FontWeight.w500, height: 1.35)),
+                    if (mine != null) ...[
+                      const SizedBox(height: 4),
+                      Text(mine,
+                          style: const TextStyle(
+                              color: AppColors.textTertiary, fontSize: 12.5, fontStyle: FontStyle.italic, height: 1.3)),
+                    ],
+                  ],
+                ),
+              ),
+              const SizedBox(width: 8),
+              Column(children: [
+                if (level != null)
+                  Container(
+                    margin: const EdgeInsets.only(bottom: 8),
+                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                    decoration: BoxDecoration(
+                      color: AppColors.richGold.withValues(alpha: 0.15),
+                      borderRadius: BorderRadius.circular(6),
+                    ),
+                    child: Text(level,
+                        style: const TextStyle(color: AppColors.richGold, fontSize: 11, fontWeight: FontWeight.w700)),
+                  ),
+                const Icon(Icons.send_rounded, size: 18, color: AppColors.richGold),
+              ]),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

@@ -24484,28 +24484,6 @@ class AppLocalizationsDe extends AppLocalizations {
       'Für dieses Land gibt es noch keine Kulturtipps.';
 
   @override
-  String get chatDatasetsDownloadTitle => 'GreenGo wird vorbereitet';
-
-  @override
-  String get chatDatasetsDownloadOnce =>
-      'Wir laden Sätze, Kultur-Tipps und Orte herunter, damit der Chat auch offline funktioniert. Das passiert nur einmal.';
-
-  @override
-  String chatDatasetsDownloadingPercent(int percent) {
-    return 'Wird heruntergeladen… $percent %';
-  }
-
-  @override
-  String get chatDatasetsMinimise => 'Im Hintergrund fortsetzen';
-
-  @override
-  String get chatDatasetsReady => 'Chat-Inhalte bereit, auch offline';
-
-  @override
-  String get chatDatasetsRetryLater =>
-      'Einige Chat-Inhalte konnten nicht heruntergeladen werden. Wir versuchen es beim nächsten Mal erneut.';
-
-  @override
   String chatAskBeenTo(String place) {
     return 'Warst du schon mal in $place?';
   }

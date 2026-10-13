@@ -24566,28 +24566,6 @@ class AppLocalizationsFr extends AppLocalizations {
       'Pas encore de conseils culturels pour ce pays.';
 
   @override
-  String get chatDatasetsDownloadTitle => 'Préparation de GreenGo';
-
-  @override
-  String get chatDatasetsDownloadOnce =>
-      'Nous téléchargeons des phrases, des conseils culturels et des lieux pour que le chat fonctionne aussi hors ligne. Cela n\'arrive qu\'une fois.';
-
-  @override
-  String chatDatasetsDownloadingPercent(int percent) {
-    return 'Téléchargement… $percent %';
-  }
-
-  @override
-  String get chatDatasetsMinimise => 'Continuer en arrière-plan';
-
-  @override
-  String get chatDatasetsReady => 'Contenu du chat prêt, même hors ligne';
-
-  @override
-  String get chatDatasetsRetryLater =>
-      'Une partie du contenu du chat n\'a pas pu être téléchargée. Nous réessaierons la prochaine fois.';
-
-  @override
   String chatAskBeenTo(String place) {
     return 'Es-tu déjà allé à $place ?';
   }

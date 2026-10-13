@@ -24398,28 +24398,6 @@ class AppLocalizationsPt extends AppLocalizations {
       'Ainda não há dicas culturais para este país.';
 
   @override
-  String get chatDatasetsDownloadTitle => 'A preparar o GreenGo';
-
-  @override
-  String get chatDatasetsDownloadOnce =>
-      'Estamos a transferir frases, dicas culturais e lugares para que o chat funcione também offline. Isto acontece só uma vez.';
-
-  @override
-  String chatDatasetsDownloadingPercent(int percent) {
-    return 'A transferir… $percent%';
-  }
-
-  @override
-  String get chatDatasetsMinimise => 'Continuar em segundo plano';
-
-  @override
-  String get chatDatasetsReady => 'Conteúdos do chat prontos, também offline';
-
-  @override
-  String get chatDatasetsRetryLater =>
-      'Não foi possível transferir alguns conteúdos do chat. Tentaremos novamente da próxima vez.';
-
-  @override
   String chatAskBeenTo(String place) {
     return 'Já estiveste em $place?';
   }
@@ -49157,28 +49135,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get chatCountryTipsEmpty =>
       'Ainda não há dicas culturais para este país.';
-
-  @override
-  String get chatDatasetsDownloadTitle => 'Preparando o GreenGo';
-
-  @override
-  String get chatDatasetsDownloadOnce =>
-      'Estamos baixando frases, dicas culturais e lugares para o chat funcionar também offline. Isso acontece só uma vez.';
-
-  @override
-  String chatDatasetsDownloadingPercent(int percent) {
-    return 'Baixando… $percent%';
-  }
-
-  @override
-  String get chatDatasetsMinimise => 'Continuar em segundo plano';
-
-  @override
-  String get chatDatasetsReady => 'Conteúdo do chat pronto, também offline';
-
-  @override
-  String get chatDatasetsRetryLater =>
-      'Não foi possível baixar parte do conteúdo do chat. Vamos tentar de novo na próxima vez.';
 
   @override
   String chatAskBeenTo(String place) {

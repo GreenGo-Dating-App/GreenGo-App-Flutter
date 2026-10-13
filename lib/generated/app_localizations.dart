@@ -41421,42 +41421,6 @@ abstract class AppLocalizations {
   /// **'No cultural tips for this country yet.'**
   String get chatCountryTipsEmpty;
 
-  /// No description provided for @chatDatasetsDownloadTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Getting GreenGo ready'**
-  String get chatDatasetsDownloadTitle;
-
-  /// No description provided for @chatDatasetsDownloadOnce.
-  ///
-  /// In en, this message translates to:
-  /// **'We\'re downloading phrases, cultural tips and places so the chat also works offline. This happens only once.'**
-  String get chatDatasetsDownloadOnce;
-
-  /// No description provided for @chatDatasetsDownloadingPercent.
-  ///
-  /// In en, this message translates to:
-  /// **'Downloading… {percent}%'**
-  String chatDatasetsDownloadingPercent(int percent);
-
-  /// No description provided for @chatDatasetsMinimise.
-  ///
-  /// In en, this message translates to:
-  /// **'Continue in the background'**
-  String get chatDatasetsMinimise;
-
-  /// No description provided for @chatDatasetsReady.
-  ///
-  /// In en, this message translates to:
-  /// **'Chat content ready, also offline'**
-  String get chatDatasetsReady;
-
-  /// No description provided for @chatDatasetsRetryLater.
-  ///
-  /// In en, this message translates to:
-  /// **'Some chat content could not be downloaded. We\'ll try again next time.'**
-  String get chatDatasetsRetryLater;
-
   /// No description provided for @chatAskBeenTo.
   ///
   /// In en, this message translates to:

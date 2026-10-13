@@ -225,7 +225,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       if (mounted) IosInstallBanner.maybeShow(context);
       // Web: back from Stripe Checkout -> paid / cancelled message.
       if (mounted) StripeReturnNotice.check(context);
-      // First use: download every chat dataset into the cache (progress card).
+      // Chat datasets: silent background download into the cache from first access.
       if (mounted) ChatDatasetsFirstRun.maybeStart(context);
     });
 
