@@ -41547,6 +41547,18 @@ abstract class AppLocalizations {
   /// **'Share list'**
   String get chatTripShare;
 
+  /// No description provided for @chatSendAttraction.
+  ///
+  /// In en, this message translates to:
+  /// **'Send in the chat'**
+  String get chatSendAttraction;
+
+  /// No description provided for @chatAttractionSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Sent in the chat'**
+  String get chatAttractionSent;
+
   /// No description provided for @chatTripRemove.
   ///
   /// In en, this message translates to:

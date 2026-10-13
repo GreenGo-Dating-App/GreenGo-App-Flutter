@@ -7503,6 +7503,8 @@
   "chatTripEmpty": "Noch keine Orte. Städte, Länder und Sehenswürdigkeiten, die ihr in diesem Chat nennt, erscheinen hier.",
   "chatTripNoMap": "Keiner dieser Orte hat bisher eine Position auf der Karte.",
   "chatTripShare": "Liste teilen",
+  "chatSendAttraction": "Im Chat senden",
+  "chatAttractionSent": "Im Chat gesendet",
   "chatTripRemove": "Entfernen (falsch erkannt)",
   "chatTripRemoved": "{place} aus den Orten dieses Chats entfernt",
   "chatTripRemoveFailed": "Konnte nicht entfernt werden. Versuch es noch einmal.",

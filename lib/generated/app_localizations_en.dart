@@ -24274,6 +24274,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get chatTripShare => 'Share list';
 
   @override
+  String get chatSendAttraction => 'Send in the chat';
+
+  @override
+  String get chatAttractionSent => 'Sent in the chat';
+
+  @override
   String get chatTripRemove => 'Remove (wrongly detected)';
 
   @override

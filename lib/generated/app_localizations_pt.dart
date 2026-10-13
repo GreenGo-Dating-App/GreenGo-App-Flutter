@@ -24480,6 +24480,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get chatTripShare => 'Partilhar lista';
 
   @override
+  String get chatSendAttraction => 'Enviar na conversa';
+
+  @override
+  String get chatAttractionSent => 'Enviado na conversa';
+
+  @override
   String get chatTripRemove => 'Remover (detetado por engano)';
 
   @override
@@ -49242,6 +49248,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get chatTripShare => 'Compartilhar lista';
+
+  @override
+  String get chatSendAttraction => 'Enviar na conversa';
+
+  @override
+  String get chatAttractionSent => 'Enviado na conversa';
 
   @override
   String get chatTripRemove => 'Remover (detectado por engano)';

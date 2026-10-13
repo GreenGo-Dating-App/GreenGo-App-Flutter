@@ -8,6 +8,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../attractions/data/datasources/attractions_datasource.dart';
 import '../../../attractions/domain/entities/attraction.dart';
 import '../../../attractions/presentation/screens/attraction_detail_screen.dart';
+import 'attraction_message.dart';
 
 /// What happens when a highlighted keyword in a chat message is tapped.
 class KeywordActions {
@@ -168,9 +169,25 @@ class _CityAttractionsScreenState extends State<CityAttractionsScreen> {
                             style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w600)),
                       ),
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                        padding: const EdgeInsets.only(left: 12, right: 4),
                         child: Text('${a.greengoScore}',
                             style: const TextStyle(color: AppColors.richGold, fontWeight: FontWeight.w700)),
+                      ),
+                      // Send it into the chat this screen was opened from.
+                      ValueListenableBuilder<Future<void> Function(Attraction, String)?>(
+                        valueListenable: ChatAttractionShare.sender,
+                        builder: (context, send, _) => send == null
+                            ? const SizedBox(width: 8)
+                            : IconButton(
+                                key: ValueKey('city-attraction-send-${a.id}'),
+                                tooltip: l10n.chatSendAttraction,
+                                icon: const Icon(Icons.send_rounded, color: AppColors.richGold, size: 20),
+                                onPressed: () async {
+                                  final messenger = ScaffoldMessenger.of(context);
+                                  await send(a, bucket);
+                                  messenger.showSnackBar(SnackBar(content: Text(l10n.chatAttractionSent)));
+                                },
+                              ),
                       ),
                     ],
                   ),

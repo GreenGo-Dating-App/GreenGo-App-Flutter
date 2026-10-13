@@ -28,6 +28,8 @@ import '../../domain/message_insights.dart';
 import '../../../../core/services/chat_datasets/chat_datasets.dart';
 import '../widgets/chat_ideas_sheet.dart';
 import '../widgets/chat_places_bar.dart';
+import '../widgets/attraction_message.dart';
+import '../../../attractions/domain/entities/attraction.dart';
 import '../../data/chat_settings_prefs.dart';
 import '../../domain/chat_places.dart';
 import '../../../../core/services/content_filter_service.dart';
@@ -255,6 +257,8 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   void initState() {
     super.initState();
+    // "Attractions in <city>" can send an attraction into this chat.
+    ChatAttractionShare.sender.value = _sendAttraction;
     // Suppress foreground push notifications for this conversation
     PushNotificationService.activeConversationId = widget.matchId;
     _translationService.initialize();
@@ -490,6 +494,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   @override
   void dispose() {
+    if (ChatAttractionShare.sender.value == _sendAttraction) ChatAttractionShare.sender.value = null;
     AiConsentService.instance.statusListenable.removeListener(_onAiConsentChanged);
     _scrollController.removeListener(_onScroll);
     // Clear active conversation so notifications resume
@@ -834,6 +839,15 @@ class _ChatScreenState extends State<ChatScreen> {
       initialLng: known ? me.longitude : null,
       autoLocate: true,
     );
+  }
+
+  /// Sends [a] as an attraction card (text + metadata for older versions).
+  Future<void> _sendAttraction(Attraction a, String bucket) async {
+    _addSend(ChatMessageSent(
+      content: ChatAttractionShare.contentFor(a, Localizations.localeOf(context)),
+      type: MessageType.text,
+      metadata: ChatAttractionShare.metadataFor(a, bucket),
+    ));
   }
 
   /// Pick a place (search, current location or a pin) and send it.

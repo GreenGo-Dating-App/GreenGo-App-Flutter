@@ -41,6 +41,8 @@ import '../bloc/group_chat_bloc.dart';
 import '../../domain/message_insights.dart';
 import '../../../../core/services/chat_datasets/keyword_matcher.dart';
 import '../widgets/keyword_text.dart';
+import '../widgets/attraction_message.dart';
+import '../../../attractions/domain/entities/attraction.dart';
 import '../bloc/group_chat_event.dart';
 import '../bloc/group_chat_state.dart';
 import '../widgets/resolved_users_builder.dart';
@@ -169,6 +171,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
   @override
   void initState() {
     super.initState();
+    ChatAttractionShare.sender.value = _sendAttraction;
     _loadTranslationPrefs();
     _scrollController.addListener(_onScroll);
     _prefetchMembers();
@@ -360,6 +363,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
 
   @override
   void dispose() {
+    if (ChatAttractionShare.sender.value == _sendAttraction) ChatAttractionShare.sender.value = null;
     _screenshotSub?.cancel();
     _controller.dispose();
     _scrollController.dispose();
@@ -384,6 +388,14 @@ class _GroupChatViewState extends State<_GroupChatView> {
     _controller.clear();
     // Same "message sent" sound as 1:1 exchanges.
     AppSoundService().play(AppSound.messageSent);
+  }
+
+  /// Sends [a] as an attraction card into the group.
+  Future<void> _sendAttraction(Attraction a, String bucket) async {
+    context.read<GroupChatBloc>().add(GroupChatMessageSent(
+          content: ChatAttractionShare.contentFor(a, Localizations.localeOf(context)),
+          metadata: ChatAttractionShare.metadataFor(a, bucket),
+        ));
   }
 
   Future<void> _sendVoice(
@@ -1104,6 +1116,8 @@ class _GroupMessageBubble extends StatelessWidget {
                   ),
                 ),
               )
+            else if (ChatAttractionShare.of(message.metadata) != null)
+              AttractionMessageCard(attraction: ChatAttractionShare.of(message.metadata)!, onDark: isMine)
             else
               _TranslatableText(
                 text: message.content,

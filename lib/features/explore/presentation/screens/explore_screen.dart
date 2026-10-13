@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:cached_network_image/cached_network_image.dart';
 import '../../../my_space/data/my_space_badge.dart';
 import '../../../../core/constants/business_categories.dart';
+import '../../../../core/services/translation_service.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -2090,8 +2091,29 @@ class _ExploreScreenState extends State<ExploreScreen> {
 
   /// The place in the headline, or null while it is not known yet (the
   /// headline then reads just "Explore" — never a made-up city).
+  /// City name in the app language ("Rome" -> "Roma"), keyed by
+  /// "<city>|<lang>": the profile keeps the name as the geocoder returned it.
+  /// Translated once through the shared public translation store.
+  final Map<String, String> _cityL10n = {};
+  final Set<String> _cityL10nPending = {};
+
+  String _cityIn(String city) {
+    final lang = Localizations.localeOf(context).languageCode;
+    final key = '$city|$lang';
+    final hit = _cityL10n[key];
+    if (hit != null) return hit;
+    if (_cityL10nPending.add(key)) {
+      TranslationService().translateSharedOne(city, targetLanguage: lang).then((t) {
+        final v = t.trim();
+        if (!mounted || v.isEmpty) return;
+        setState(() => _cityL10n[key] = v);
+      }).catchError((Object _) {});
+    }
+    return city; // shown until the translation arrives
+  }
+
   String? get _displayCity {
-    if (_city != null && _city!.isNotEmpty) return _city!;
+    if (_city != null && _city!.isNotEmpty) return _cityIn(_city!);
     if (_countryName != null && _countryName!.isNotEmpty) {
       return localizedCountryName(AppLocalizations.of(context)!, _countryName!);
     }

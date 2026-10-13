@@ -29,6 +29,7 @@ import '../../../../core/security/viewer_watermark.dart';
 import '../../../../core/security/private_content_warning.dart';
 import '../../../copyright/data/copyright_service.dart';
 import '../../../copyright/presentation/screens/copyright_notice_form_screen.dart';
+import 'attraction_message.dart';
 
 /// Message Bubble Widget
 ///
@@ -797,6 +798,8 @@ class _MessageBubbleState extends State<MessageBubble> {
         message.translatedContent != message.content;
 
     switch (message.type) {
+      case MessageType.text when ChatAttractionShare.of(message.metadata) != null:
+        return AttractionMessageCard(attraction: ChatAttractionShare.of(message.metadata)!, onDark: isCurrentUser);
       case MessageType.text:
         // Determine flags for translated and original languages
         final translatedFlag = widget.showLanguageFlags && hasTranslation
