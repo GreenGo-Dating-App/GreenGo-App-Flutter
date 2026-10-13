@@ -94,6 +94,21 @@ class BookingsRepositoryImpl implements BookingsRepository {
       _guard(() => _remote.bookings(query, cursor: cursor, limit: limit));
 
   @override
+  Future<Either<Failure, List<Booking>>> hostBookingsInRange({
+    required String hostId,
+    required String experienceId,
+    required DateTime from,
+    required DateTime to,
+    int limit = 300,
+  }) =>
+      _guard(() => _remote.hostBookingsInRange(
+          hostId: hostId,
+          experienceId: experienceId,
+          from: from,
+          to: to,
+          limit: limit));
+
+  @override
   Future<Either<Failure, Booking?>> getBooking(String bookingId) =>
       _guard(() => _remote.getBooking(bookingId));
 

@@ -85,7 +85,7 @@ void main() {
   });
 
   group('ManageTimesScreen', () {
-    testWidgets('live preview follows the setup; save asks to confirm when booked times disappear', (t) async {
+    testWidgets('live preview follows the setup; a save that would remove booked times is refused', (t) async {
       final svc = _FakeAvail(affected: 2);
       t.view.physicalSize = const Size(1200, 2600);
       t.view.devicePixelRatio = 1;
@@ -102,12 +102,14 @@ void main() {
       await t.tap(find.byKey(const ValueKey('mt-save')));
       await t.pump();
       await t.pump(const Duration(milliseconds: 400));
-      expect(find.textContaining('2 booked times'), findsOneWidget);
-      await t.tap(find.text('Cancel those bookings'));
-      await t.pump();
-      await t.pump(const Duration(milliseconds: 400));
-      expect(svc.saves, [false, true]);
-      expect(find.textContaining('2 bookings cancelled'), findsOneWidget);
+      // Booked appointments are never deleted from the schedule: no
+      // "cancel those bookings" path, nothing is saved.
+      expect(find.byKey(const ValueKey('schedule-save-blocked')), findsOneWidget);
+      expect(find.textContaining('2 booked times would disappear'), findsOneWidget);
+      expect(find.text('Cancel those bookings'), findsNothing);
+      await t.tap(find.text('OK'));
+      await t.pumpAndSettle();
+      expect(svc.saves, [false]);
     });
 
     testWidgets('day editor: remove a time, close the day', (t) async {

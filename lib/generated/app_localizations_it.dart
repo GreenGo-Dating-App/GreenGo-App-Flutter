@@ -25024,4 +25024,8 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get msCalendarGoingTag => 'Partecipi';
+
+  @override
+  String get dcCardHint =>
+      'Calendario delle tue prenotazioni e degli orari liberi';
 }

@@ -29,7 +29,7 @@ void main() {
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       home: ExperienceSlotsScreen(
-          experience: _experience, currentUserId: 'host'),
+          experience: _experience, currentUserId: 'host', startAsList: true),
     ));
     await tester.pumpAndSettle();
   }

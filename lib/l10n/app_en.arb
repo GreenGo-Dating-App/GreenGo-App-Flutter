@@ -13670,5 +13670,6 @@
   "msCalendarEventsEmpty": "No events on this day",
   "msCalendarExperiencesEmpty": "No experiences on this day",
   "msCalendarHostingTag": "Hosting",
-  "msCalendarGoingTag": "Going"
+  "msCalendarGoingTag": "Going",
+  "dcCardHint": "Calendar of your bookings and open times"
 }

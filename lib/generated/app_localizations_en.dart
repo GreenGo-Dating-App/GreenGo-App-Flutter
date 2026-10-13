@@ -24759,4 +24759,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get msCalendarGoingTag => 'Going';
+
+  @override
+  String get dcCardHint => 'Calendar of your bookings and open times';
 }

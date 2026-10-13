@@ -24968,6 +24968,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get msCalendarGoingTag => 'Vais';
+
+  @override
+  String get dcCardHint => 'Calendário das suas reservas e horários livres';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -49945,4 +49948,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get msCalendarGoingTag => 'Você vai';
+
+  @override
+  String get dcCardHint => 'Calendário das suas reservas e horários livres';
 }

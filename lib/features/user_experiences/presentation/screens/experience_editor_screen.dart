@@ -26,6 +26,7 @@ import '../../../../core/widgets/location_picker.dart';
 import '../../../../core/widgets/location_pick_card.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
 import '../../../experience_bookings/presentation/screens/experience_slots_screen.dart';
+import '../../../my_space/presentation/widgets/space_widgets.dart';
 import '../../domain/entities/user_experience.dart';
 import '../../domain/experience_validation.dart';
 import '../../domain/repositories/user_experiences_repository.dart';
@@ -1680,17 +1681,15 @@ class _EditorFormState extends State<_EditorForm> {
         ]),
         const SizedBox(height: 10),
         if (existing != null && existing.id.isNotEmpty)
-          OutlinedButton.icon(
-            style: OutlinedButton.styleFrom(
-              foregroundColor: AppColors.richGold,
-              side: const BorderSide(color: AppColors.richGold),
-              minimumSize: const Size(0, 44),
-            ),
-            onPressed: () => Navigator.of(context).push(
+          // Same card as the My Space buttons.
+          SpaceDashboardCard(
+            inkKey: const ValueKey('editor-dates-card'),
+            icon: Icons.calendar_month_outlined,
+            title: l.bkDatesTitle,
+            subtitle: l.dcCardHint,
+            onTap: () => Navigator.of(context).push(
                 ExperienceSlotsScreen.route(
                     experience: existing, currentUserId: widget.currentUserId)),
-            icon: const Icon(Icons.calendar_month_outlined),
-            label: Text(l.bkDatesTitle),
           )
         else
           Text(l.bkDatesAfterSave,

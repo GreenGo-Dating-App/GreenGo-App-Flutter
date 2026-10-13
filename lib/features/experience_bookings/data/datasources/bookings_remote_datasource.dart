@@ -296,6 +296,26 @@ class BookingsRemoteDataSource {
     );
   }
 
+  /// (hostId, experienceId, slotStart) — the index of the host's per-
+  /// experience bookings list.
+  Future<List<Booking>> hostBookingsInRange({
+    required String hostId,
+    required String experienceId,
+    required DateTime from,
+    required DateTime to,
+    int limit = 300,
+  }) async {
+    final snap = await _bookings
+        .where('hostId', isEqualTo: hostId)
+        .where('experienceId', isEqualTo: experienceId)
+        .where('slotStart', isGreaterThanOrEqualTo: Timestamp.fromDate(from))
+        .where('slotStart', isLessThan: Timestamp.fromDate(to))
+        .orderBy('slotStart')
+        .limit(limit)
+        .get();
+    return [for (final d in snap.docs) BookingModel.fromDoc(d)];
+  }
+
   Future<Booking?> getBooking(String id) async {
     try {
       final d = await _bookings.doc(id).get();

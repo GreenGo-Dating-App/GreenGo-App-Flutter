@@ -42434,6 +42434,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Going'**
   String get msCalendarGoingTag;
+
+  /// No description provided for @dcCardHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Calendar of your bookings and open times'**
+  String get dcCardHint;
 }
 
 class _AppLocalizationsDelegate

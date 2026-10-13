@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'manage_times_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -16,20 +18,27 @@ import '../../domain/repositories/bookings_repository.dart';
 import '../bloc/slots_bloc.dart';
 import '../booking_l10n.dart';
 import '../widgets/booking_widgets.dart';
+import '../widgets/experience_dates_calendar.dart';
 import 'bookings_list_screen.dart';
 
-/// Host: "Dates & availability" — add / edit / delete / cancel the dates
-/// guests can book, seats booked per date, and the "Request to book" switch.
+/// Host: "Dates & availability" — a calendar (month / week / day) of the
+/// bookings people made and the times still open, with the Manage times
+/// tools in place ([ExperienceDatesCalendar]); the "View as a list" button
+/// switches to the list of dates (add / edit / delete / cancel a date).
 /// Pops with the experience as last saved.
 class ExperienceSlotsScreen extends StatelessWidget {
   const ExperienceSlotsScreen({
     super.key,
     required this.experience,
     required this.currentUserId,
+    this.startAsList = false,
   });
 
   final UserExperience experience;
   final String currentUserId;
+
+  /// Open on the list of dates instead of the calendar.
+  final bool startAsList;
 
   static Route<UserExperience> route({
     required UserExperience experience,
@@ -46,14 +55,15 @@ class ExperienceSlotsScreen extends StatelessWidget {
       create: (_) => SlotsBloc(
         repository: di.sl<BookingsRepository>(),
       )..add(SlotsStarted(experience)),
-      child: _SlotsView(currentUserId: currentUserId),
+      child: _SlotsView(currentUserId: currentUserId, startAsList: startAsList),
     );
   }
 }
 
 class _SlotsView extends StatefulWidget {
-  const _SlotsView({required this.currentUserId});
+  const _SlotsView({required this.currentUserId, this.startAsList = false});
   final String currentUserId;
+  final bool startAsList;
 
   @override
   State<_SlotsView> createState() => _SlotsViewState();
@@ -61,12 +71,40 @@ class _SlotsView extends StatefulWidget {
 
 class _SlotsViewState extends State<_SlotsView> {
   SlotsBloc get _bloc => context.read<SlotsBloc>();
+  late bool _asList = widget.startAsList;
+  final _calendar = GlobalKey<ExperienceDatesCalendarState>();
 
-  void _pop() => Navigator.of(context).pop(_bloc.state.experience);
+  Future<void> _pop() async {
+    final cal = _calendar.currentState;
+    if (cal != null && !await cal.confirmLeave()) return;
+    if (mounted) Navigator.of(context).pop(_bloc.state.experience);
+  }
+
+  Future<void> _toggleView() async {
+    final cal = _calendar.currentState;
+    if (!_asList && cal != null && !await cal.confirmLeave()) return;
+    if (mounted) setState(() => _asList = !_asList);
+  }
+
+  void _slotAction(ExperienceSlot slot, DatesSlotAction a, UserExperience e) {
+    switch (a) {
+      case DatesSlotAction.edit:
+        _edit(existing: slot);
+      case DatesSlotAction.repeat:
+        _edit(repeatFrom: slot);
+      case DatesSlotAction.bookings:
+        _bookings(e);
+      case DatesSlotAction.delete:
+        _delete(slot);
+    }
+  }
 
   /// Add / edit one date, or — with [repeatFrom], or the sheet's Repeat
-  /// switch — add the same times on many dates.
-  Future<void> _edit({ExperienceSlot? existing, ExperienceSlot? repeatFrom}) async {
+  /// switch — add the same times on many dates. [at] presets a new date.
+  Future<void> _edit(
+      {ExperienceSlot? existing,
+      ExperienceSlot? repeatFrom,
+      DateTime? at}) async {
     final e = _bloc.state.experience;
     if (e == null) return;
     final result = await showModalBottomSheet<_SlotSheetResult>(
@@ -79,6 +117,7 @@ class _SlotsViewState extends State<_SlotsView> {
         experience: e,
         existing: existing,
         repeatFrom: repeatFrom,
+        initialStart: at,
         existingStarts: [
           for (final s in _bloc.state.slots)
             if (!s.cancelled) s.start,
@@ -197,8 +236,7 @@ class _SlotsViewState extends State<_SlotsView> {
           case SlotsFlash.deleted:
             showBookingSnack(context, l.bkDateDeleted);
           case SlotsFlash.cancelled:
-            showBookingSnack(
-                context, l.bkDateCancelled(s.cancelledBookings));
+            showBookingSnack(context, l.bkDateCancelled(s.cancelledBookings));
           case SlotsFlash.invalid:
             showUserErrorMessage(
                 context,
@@ -226,13 +264,13 @@ class _SlotsViewState extends State<_SlotsView> {
         return PopScope(
           canPop: false,
           onPopInvokedWithResult: (didPop, _) {
-            if (!didPop) _pop();
+            if (!didPop) unawaited(_pop());
           },
           child: Scaffold(
             backgroundColor: AppColors.backgroundDark,
             appBar: AppBar(
               backgroundColor: AppColors.backgroundDark,
-              leading: BackButton(onPressed: _pop),
+              leading: BackButton(onPressed: () => _pop()),
               title: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -247,16 +285,59 @@ class _SlotsViewState extends State<_SlotsView> {
               ),
               actions: [
                 IconButton(
+                  key: const ValueKey('dc-view-toggle'),
+                  tooltip: _asList ? l.dcViewAsCalendar : l.dcViewAsList,
+                  icon: Icon(_asList
+                      ? Icons.calendar_month_outlined
+                      : Icons.view_list_outlined),
+                  onPressed: _toggleView,
+                ),
+                IconButton(
                   key: const ValueKey('slots-manage-times'),
                   tooltip: l.mtTitle,
                   icon: const Icon(Icons.edit_calendar_outlined),
-                  onPressed: () => Navigator.of(context).push(ManageTimesScreen.route(e.id)),
+                  onPressed: () {
+                    final cal = _calendar.currentState;
+                    if (cal != null) {
+                      cal.openSetup();
+                    } else {
+                      Navigator.of(context).push(ManageTimesScreen.route(e.id));
+                    }
+                  },
                 ),
                 IconButton(
                   tooltip: l.bkBookings,
                   icon: const Icon(Icons.receipt_long_outlined),
                   onPressed: () => _bookings(e),
                 ),
+                if (!_asList)
+                  PopupMenuButton<String>(
+                    key: const ValueKey('dc-tools'),
+                    tooltip: l.mtBulkTitle,
+                    color: AppColors.backgroundCard,
+                    onSelected: (v) {
+                      final cal = _calendar.currentState;
+                      if (cal == null) return;
+                      switch (v) {
+                        case 'remove':
+                          cal.bulkRemoveTime();
+                        case 'close':
+                          cal.bulkCloseRange();
+                      }
+                    },
+                    itemBuilder: (_) => [
+                      PopupMenuItem(
+                          value: 'remove',
+                          child: Text(l.mtBulkRemoveTime,
+                              style: const TextStyle(
+                                  color: AppColors.textPrimary))),
+                      PopupMenuItem(
+                          value: 'close',
+                          child: Text(l.mtBulkCloseRange,
+                              style: const TextStyle(
+                                  color: AppColors.textPrimary))),
+                    ],
+                  ),
               ],
             ),
             floatingActionButton: FloatingActionButton.extended(
@@ -267,35 +348,47 @@ class _SlotsViewState extends State<_SlotsView> {
               icon: const Icon(Icons.add),
               label: Text(l.bkAddDate),
             ),
-            body: RefreshIndicator(
-              color: AppColors.richGold,
-              onRefresh: () async => _bloc.add(const SlotsRefreshed()),
-              child: ListView(
-                physics: const AlwaysScrollableScrollPhysics(),
-                padding: const EdgeInsets.fromLTRB(12, 8, 12, 96),
-                children: [
-                  if (s.busy) const LinearProgressIndicator(color: AppColors.richGold),
-                  if (s.loading && s.slots.isEmpty)
-                    const Padding(
-                      padding: EdgeInsets.all(32),
-                      child: Center(
-                          child: CircularProgressIndicator(
-                              color: AppColors.richGold)),
-                    )
-                  else if (s.slots.isEmpty)
-                    Padding(
-                      padding: const EdgeInsets.all(32),
-                      child: Text(
-                        s.failed ? l.somethingWentWrong : l.bkNoDatesHost,
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(color: AppColors.textSecondary),
-                      ),
-                    )
-                  else
-                    for (final slot in s.slots) _slotTile(l, s, e, slot),
-                ],
-              ),
-            ),
+            body: !_asList
+                ? ExperienceDatesCalendar(
+                    key: _calendar,
+                    experience: e,
+                    currentUserId: widget.currentUserId,
+                    slots: s.slots,
+                    onAddSlot: (at) => _edit(at: at),
+                    onSlotAction: (slot, a) => _slotAction(slot, a, e),
+                  )
+                : RefreshIndicator(
+                    color: AppColors.richGold,
+                    onRefresh: () async => _bloc.add(const SlotsRefreshed()),
+                    child: ListView(
+                      physics: const AlwaysScrollableScrollPhysics(),
+                      padding: const EdgeInsets.fromLTRB(12, 8, 12, 96),
+                      children: [
+                        if (s.busy)
+                          const LinearProgressIndicator(
+                              color: AppColors.richGold),
+                        if (s.loading && s.slots.isEmpty)
+                          const Padding(
+                            padding: EdgeInsets.all(32),
+                            child: Center(
+                                child: CircularProgressIndicator(
+                                    color: AppColors.richGold)),
+                          )
+                        else if (s.slots.isEmpty)
+                          Padding(
+                            padding: const EdgeInsets.all(32),
+                            child: Text(
+                              s.failed ? l.somethingWentWrong : l.bkNoDatesHost,
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                  color: AppColors.textSecondary),
+                            ),
+                          )
+                        else
+                          for (final slot in s.slots) _slotTile(l, s, e, slot),
+                      ],
+                    ),
+                  ),
           ),
         );
       },
@@ -401,10 +494,14 @@ class _SlotEditorSheet extends StatefulWidget {
     required this.experience,
     this.existing,
     this.repeatFrom,
+    this.initialStart,
     this.existingStarts = const [],
   });
   final UserExperience experience;
   final ExperienceSlot? existing;
+
+  /// A new date starting here (long-press on the calendar).
+  final DateTime? initialStart;
 
   /// "Repeat this date": prefill from this slot with Repeat switched on.
   final ExperienceSlot? repeatFrom;
@@ -450,14 +547,21 @@ class _SlotEditorSheetState extends State<_SlotEditorSheet> {
       // Private time slots: a window is booked one time at a time, so seats
       // no longer limit it; keep the stored value valid (>= people booked).
       _capacity = TextEditingController(
-          text: '${x.capacity > BookingConfig.slotCapacityMax ? x.capacity : BookingConfig.slotCapacityMax}');
+          text:
+              '${x.capacity > BookingConfig.slotCapacityMax ? x.capacity : BookingConfig.slotCapacityMax}');
     } else {
+      final at = widget.initialStart;
       final tomorrow = DateTime.now().add(const Duration(days: 1));
-      _date = DateTime(tomorrow.year, tomorrow.month, tomorrow.day);
+      _date = at != null
+          ? DateTime(at.year, at.month, at.day)
+          : DateTime(tomorrow.year, tomorrow.month, tomorrow.day);
       _weekdays.add(_date.weekday);
-      _startTime = const TimeOfDay(hour: 10, minute: 0);
-      final end = DateTime(2000, 1, 1, 10)
-          .add(Duration(minutes: widget.experience.durationMinutes.clamp(15, 24 * 60)));
+      _startTime = at != null
+          ? TimeOfDay(hour: at.hour, minute: at.minute)
+          : const TimeOfDay(hour: 10, minute: 0);
+      final end = DateTime(2000, 1, 1, _startTime.hour, _startTime.minute).add(
+          Duration(
+              minutes: widget.experience.durationMinutes.clamp(15, 24 * 60)));
       _endTime = TimeOfDay.fromDateTime(end);
       _capacity =
           TextEditingController(text: '${BookingConfig.slotCapacityMax}');
@@ -470,8 +574,8 @@ class _SlotEditorSheetState extends State<_SlotEditorSheet> {
     super.dispose();
   }
 
-  DateTime get _start => DateTime(_date.year, _date.month, _date.day,
-      _startTime.hour, _startTime.minute);
+  DateTime get _start => DateTime(
+      _date.year, _date.month, _date.day, _startTime.hour, _startTime.minute);
 
   /// Ends after midnight when the end time is not after the start time.
   DateTime get _end {
@@ -564,8 +668,8 @@ class _SlotEditorSheetState extends State<_SlotEditorSheet> {
       // Times and seats are checked on the template; past / too-far days are
       // simply not generated, so those two errors don't apply here.
       final errors = BookingRules.validateSlot(_draft, DateTime.now())
-          .where((e) =>
-              e != SlotError.startInPast && e != SlotError.tooFarAhead)
+          .where(
+              (e) => e != SlotError.startInPast && e != SlotError.tooFarAhead)
           .toList();
       final drafts =
           _repeatDrafts().take(BookingConfig.maxRepeatDates).toList();
@@ -583,8 +687,7 @@ class _SlotEditorSheetState extends State<_SlotEditorSheet> {
       setState(() => _errors = errors);
       return;
     }
-    Navigator.pop<_SlotSheetResult>(
-        context, (drafts: [_draft], repeat: false));
+    Navigator.pop<_SlotSheetResult>(context, (drafts: [_draft], repeat: false));
   }
 
   /// Weekday chips in the locale's week order (Mon.. or Sun..).
@@ -631,8 +734,7 @@ class _SlotEditorSheetState extends State<_SlotEditorSheet> {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context)!;
-    Widget field(String label, String value, VoidCallback? onTap,
-            {Key? key}) =>
+    Widget field(String label, String value, VoidCallback? onTap, {Key? key}) =>
         InkWell(
           key: key,
           onTap: onTap,
@@ -788,9 +890,8 @@ class _SlotEditorSheetState extends State<_SlotEditorSheet> {
             BookingPrimaryButton(
               key: const ValueKey('slot-save'),
               label: _repeat
-                  ? l.bkRepeatAddButton(_repeatDrafts()
-                      .take(BookingConfig.maxRepeatDates)
-                      .length)
+                  ? l.bkRepeatAddButton(
+                      _repeatDrafts().take(BookingConfig.maxRepeatDates).length)
                   : l.uexpSaveChanges,
               icon: Icons.check,
               onPressed: _save,

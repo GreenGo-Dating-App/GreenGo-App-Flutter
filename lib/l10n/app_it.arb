@@ -7650,5 +7650,6 @@
   "msCalendarEventsEmpty": "Nessun evento in questo giorno",
   "msCalendarExperiencesEmpty": "Nessuna esperienza in questo giorno",
   "msCalendarHostingTag": "Ospiti tu",
-  "msCalendarGoingTag": "Partecipi"
+  "msCalendarGoingTag": "Partecipi",
+  "dcCardHint": "Calendario delle tue prenotazioni e degli orari liberi"
 }

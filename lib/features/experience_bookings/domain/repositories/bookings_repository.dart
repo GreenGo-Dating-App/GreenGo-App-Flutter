@@ -68,6 +68,16 @@ abstract class BookingsRepository {
     int limit = 20,
   });
 
+  /// Host: every booking of one experience starting in [from, to), soonest
+  /// first (the "Dates & availability" calendar loads only what it shows).
+  Future<Either<Failure, List<Booking>>> hostBookingsInRange({
+    required String hostId,
+    required String experienceId,
+    required DateTime from,
+    required DateTime to,
+    int limit = 300,
+  });
+
   Future<Either<Failure, Booking?>> getBooking(String bookingId);
 
   Future<Either<Failure, Booking>> respond(Booking b, {required bool accept});

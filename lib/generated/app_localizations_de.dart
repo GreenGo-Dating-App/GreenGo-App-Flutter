@@ -25054,4 +25054,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get msCalendarGoingTag => 'Dabei';
+
+  @override
+  String get dcCardHint => 'Kalender mit deinen Buchungen und freien Zeiten';
 }
