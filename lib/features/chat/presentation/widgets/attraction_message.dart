@@ -113,7 +113,7 @@ class AttractionMessageCard extends StatelessWidget {
                     color: onDark ? AppColors.deepBlack.withValues(alpha: 0.15) : AppColors.richGold.withValues(alpha: 0.18),
                     borderRadius: BorderRadius.circular(6),
                   ),
-                  child: Text('${attraction['score']}',
+                  child: Text((attraction['score'] as num).toString(),
                       style: TextStyle(
                           color: onDark ? AppColors.deepBlack : AppColors.richGold,
                           fontWeight: FontWeight.w800,
@@ -126,7 +126,7 @@ class AttractionMessageCard extends StatelessWidget {
               Icon(Icons.location_on_outlined, size: 14, color: textColor.withValues(alpha: 0.7)),
               const SizedBox(width: 3),
               Expanded(
-                child: Text('${attraction['city'] ?? ''}',
+                child: Text(attraction['city']?.toString() ?? '',
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(color: textColor.withValues(alpha: 0.75), fontSize: 12.5)),
