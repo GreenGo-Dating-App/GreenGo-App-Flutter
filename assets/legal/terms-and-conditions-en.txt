@@ -1,8 +1,8 @@
 GREENGO TERMS AND CONDITIONS
 
-Version: 5.1.1
+Version: 5.1.2
 Effective date: 13 October 2026
-Previous version: 5.1.0 (11 October 2026)
+Previous version: 5.1.1 (13 October 2026)
 
 ================================================================================
 1. ABOUT THESE TERMS
@@ -269,7 +269,7 @@ c) We do not accept PayPal, boleto or other payment methods for GreenGo
 9.2 Prices and taxes
 - Prices are shown in your currency.
 - Prices are fixed price points set separately for each currency (for
-  example USD 4.99 or BRL 24.99). They are not converted at the daily
+  example USD 9.99 or BRL 29.90). They are not converted at the daily
   exchange rate: the prices in different currencies are set to be broadly
   equivalent, but they are not exact conversions of each other and can
   differ from what a currency converter shows.
@@ -1024,6 +1024,9 @@ Copyright (DMCA): copyright@greengochat.com
 ================================================================================
 VERSION HISTORY
 ================================================================================
+
+5.1.2 - 13 October 2026
+- Section 9.2: price example updated to the current Base Membership price.
 
 5.1.1 - 13 October 2026
 - Section 9.2: prices are fixed price points per currency, broadly
