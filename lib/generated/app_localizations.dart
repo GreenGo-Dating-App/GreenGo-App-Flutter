@@ -20064,6 +20064,18 @@ abstract class AppLocalizations {
   /// **'Community events'**
   String get globeLayerCommunityEvents;
 
+  /// No description provided for @globeSearchCountryTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Find a country'**
+  String get globeSearchCountryTooltip;
+
+  /// No description provided for @globeShowWholeNetwork.
+  ///
+  /// In en, this message translates to:
+  /// **'Show my whole network'**
+  String get globeShowWholeNetwork;
+
   /// No description provided for @webMapUnavailableTitle.
   ///
   /// In en, this message translates to:

@@ -70,13 +70,16 @@ class FlavorConfig {
   /// `/dating-etiquette` route all stay). Flip to `true` once the docs are clean.
   static bool get enableEtiquetteGuide => isFull;
 
-  /// The 3D world map ("My World Map").
+  /// The network world map ("My World Map": where the user's connections are).
   ///
-  /// HELD BACK deliberately - the feature is finished enough to compile but is
-  /// not being released yet. None of its code has been removed: globe_explore/
-  /// is untouched, and every entry point simply checks this flag. Flip it to
-  /// `isFull` (or `true`) to ship it; nothing else needs to change.
-  static bool get enableWorldMap => false;
+  /// Held back from 4.0.0 until it was rebuilt on the shared place-map stack
+  /// (the event / experience map). It is ON in every flavor: it shows only
+  /// the user's own connections, with each person's chosen location
+  /// precision, so it is not a dating surface and the culture build (the
+  /// App Store build, see APPLE_APPROVAL_PLAN_v3.0.0.md) can ship it. Gates
+  /// the People discovery app-bar globe, the top-bar globe (and its tour
+  /// step) and the Explore "countries" stat tile; `false` withdraws all three.
+  static bool get enableWorldMap => true;
 
   // ============================================================================
   // CONVENIENCE

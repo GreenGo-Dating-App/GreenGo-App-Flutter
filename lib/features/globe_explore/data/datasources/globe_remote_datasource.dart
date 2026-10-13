@@ -197,7 +197,7 @@ class GlobeRemoteDataSourceImpl implements GlobeRemoteDataSource {
   }
 
   /// A matched user's pin, or null when they must not be shown (inactive,
-  /// incognito, ghost mode, unknown location).
+  /// incognito, ghost mode, hidden from the map, unknown location).
   GlobeUser? _matchedPinFrom(
     Map<String, dynamic> profileData,
     String otherUserId,
@@ -223,6 +223,10 @@ class GlobeRemoteDataSourceImpl implements GlobeRemoteDataSource {
       // Skip ghost mode users
       if (profileData['isGhostMode'] as bool? ?? false) return null;
 
+      // Skip users who chose "Hidden" (Globe Discoverability): the setting
+      // promises they are "not discoverable on the map", connections included.
+      if (profileData['globeDiscoverability'] == 'hidden') return null;
+
       // Skip users with unknown/missing location
       final loc = profileData['location'] as Map<String, dynamic>?;
       final hasLocation = loc != null &&
@@ -242,62 +246,6 @@ class GlobeRemoteDataSourceImpl implements GlobeRemoteDataSource {
     } catch (_) {
       return null; // Skip profiles that can't be parsed
     }
-  }
-
-  Future<List<GlobeUser>> _fetchDiscoveryUsers({
-    required String userId,
-    required Set<String> blockedIds,
-    required Set<String> matchedUserIds,
-    required Random rng,
-  }) async {
-    final now = DateTime.now();
-
-    // Fetch a pool of active profiles
-    final snapshot = await firestore
-        .collection('profiles')
-        .where('accountStatus', isEqualTo: 'active')
-        .limit(200)
-        .get();
-
-    final discoveryPool = <GlobeUser>[];
-
-    for (final doc in snapshot.docs) {
-      if (doc.id == userId) continue;
-      if (blockedIds.contains(doc.id)) continue;
-      if (matchedUserIds.contains(doc.id)) continue;
-
-      // Other users: approximate public location only (security P1-4).
-      final data = publicProfileView(doc.data());
-
-      // Skip incognito users
-      final isIncognito = data['isIncognito'] as bool? ?? false;
-      if (isIncognito) {
-        final incognitoExpiryTs = data['incognitoExpiry'] as Timestamp?;
-        if (incognitoExpiryTs == null ||
-            incognitoExpiryTs.toDate().isAfter(now)) {
-          continue;
-        }
-      }
-
-      // Skip ghost mode users
-      if (data['isGhostMode'] as bool? ?? false) continue;
-
-      // Check globe discoverability
-      final discoverability =
-          data['globeDiscoverability'] as String? ?? 'country';
-      if (discoverability == 'hidden') continue;
-
-      discoveryPool.add(GlobeUserModel.fromFirestore(
-        data: data,
-        odcId: doc.id,
-        pinType: GlobePinType.discovery,
-        random: rng,
-      ));
-    }
-
-    // Shuffle and take max 50
-    discoveryPool.shuffle(rng);
-    return discoveryPool.take(50).toList();
   }
 
   @override

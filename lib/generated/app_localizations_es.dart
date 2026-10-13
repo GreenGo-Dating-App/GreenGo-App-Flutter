@@ -11387,6 +11387,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get globeLayerCommunityEvents => 'Eventos de la comunidad';
 
   @override
+  String get globeSearchCountryTooltip => 'Buscar un país';
+
+  @override
+  String get globeShowWholeNetwork => 'Ver toda mi red';
+
+  @override
   String get webMapUnavailableTitle =>
       'Mapa interactivo disponible en la app móvil';
 

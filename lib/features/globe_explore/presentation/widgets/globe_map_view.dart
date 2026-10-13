@@ -1,213 +1,268 @@
-import 'dart:async';
-import 'dart:math';
-
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 
-import '../../../../core/constants/app_colors.dart';
 import '../../../../core/config/map_basemap.dart';
+import '../../../../core/widgets/interactive_location_map.dart';
 import '../../../../core/widgets/map_basemap_layer.dart';
-import '../../../../core/utils/geo_query.dart';
+import '../../../../core/widgets/map_controls.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/country_centroids.dart';
-import '../../../events/domain/entities/event.dart';
-import '../../../events/domain/entities/event_country_stat.dart';
-import '../../../events/domain/entities/external_event.dart';
 import '../../domain/entities/globe_user.dart';
+import 'globe_markers.dart';
+import 'globe_pin_layout.dart';
 
-/// Returns the clustering threshold in degrees based on the current zoom level.
-/// At low zoom (zoomed out), threshold is large → more clustering.
-/// At high zoom (zoomed in), threshold is tiny → pins show individually.
-double _clusterThresholdForZoom(double zoom) {
-  // At zoom 2: ~5° (clusters across ~500km)
-  // At zoom 5: ~0.5° (clusters across ~50km)
-  // At zoom 8: ~0.06° (clusters across ~6km)
-  // At zoom 12+: ~0.004° (nearly no clustering)
-  return 180.0 / pow(2, zoom);
-}
-
+/// The network ("world") map, drawn on the same stack as every place map in
+/// the app: light basemap, attribution, zoom / recenter controls and gestures
+/// all come from `core/widgets`, so it looks and behaves like the event and
+/// experience maps on mobile and web alike.
+///
+/// Scale: the people come from the bounded matched-users read (see
+/// GlobeRemoteDataSource). Zoomed out they are aggregated per country; zoomed
+/// in they cluster on a screen grid. Grouping is computed once per whole zoom
+/// band and cached, and only the marker layer listens to band changes, so
+/// panning and pinching never rebuild the map itself.
 class GlobeMapView extends StatefulWidget {
-
   const GlobeMapView({
-    required this.data, required this.showMatched, required this.showDiscovery, required this.onPinTapped, required this.onCountryTapped, super.key,
+    required this.data,
+    required this.onPinTapped,
+    required this.onCountryTapped,
+    required this.onClusterTapped,
+    super.key,
     this.flyToCountry,
-    this.onClusterTapped,
-    this.eventStats = const [],
-    this.showEvents = false,
-    this.onEventCountryTapped,
-    this.preciseEvents = const [],
-    this.onPreciseEventTapped,
-    this.externalMarkers = const [],
-    this.onExternalTapped,
-    this.onExternalGroupTapped,
-    this.onViewportChanged,
+    this.flyRequestId = 0,
   });
+
   final GlobeData data;
-  final bool showMatched;
-  final bool showDiscovery;
+
+  /// Country to jump to; acted on whenever [flyRequestId] changes, so asking
+  /// for the same country twice still moves the map.
   final String? flyToCountry;
+  final int flyRequestId;
+
   final void Function(String userId, GlobePinType pinType) onPinTapped;
   final void Function(String countryName, double lat, double lng)
       onCountryTapped;
-  final void Function(List<GlobeUser> users)? onClusterTapped;
 
-  /// Per-country event aggregates (for the "Events" globe mode).
-  final List<EventCountryStat> eventStats;
-  final bool showEvents;
-  final void Function(String countryName)? onEventCountryTapped;
-
-  /// Native GreenGo events plotted at their exact coordinates (precise pins).
-  final List<Event> preciseEvents;
-  final void Function(Event event)? onPreciseEventTapped;
-
-  /// External experiences/attractions plotted precisely; grouped by location and
-  /// shown with a mini image preview (single) or count (multiple).
-  final List<ExternalEvent> externalMarkers;
-  final void Function(ExternalEvent item)? onExternalTapped;
-  final void Function(List<ExternalEvent> items)? onExternalGroupTapped;
-
-  /// Fired (debounced) when the visible area changes, with the centre and a
-  /// radius covering the viewport — so the screen can load per-coordinate event
-  /// dots for what's on screen.
-  final void Function(double lat, double lng, double radiusMeters)?
-      onViewportChanged;
+  /// A cluster that zooming cannot split any further.
+  final void Function(List<GlobeUser> users) onClusterTapped;
 
   @override
   State<GlobeMapView> createState() => _GlobeMapViewState();
 }
 
-class _GlobeMapViewState extends State<GlobeMapView>
-    with TickerProviderStateMixin {
-  final MapController _mapController = MapController();
-  Timer? _pulseTimer;
-  Timer? _vpDebounce;
-  double _pulseScale = 1.0;
-  double _currentZoom = 3.0;
+class _GlobeMapViewState extends State<GlobeMapView> {
+  final MapController _controller = MapController();
 
-  @override
-  void initState() {
-    super.initState();
-    _pulseTimer = Timer.periodic(const Duration(milliseconds: 80), (_) {
-      if (mounted) {
-        setState(() {
-          _pulseScale =
-              1.0 + 0.25 * sin(DateTime.now().millisecondsSinceEpoch / 400.0);
-        });
-      }
-    });
-    // Load the initial viewport's event dots once the map is laid out.
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) _notifyViewport();
-    });
-  }
+  /// Whole-number zoom; the marker layer rebuilds only when it changes.
+  late final ValueNotifier<int> _band =
+      ValueNotifier<int>(MapBasemap.initialZoom.floor());
 
-  void _notifyViewport() {
-    final cb = widget.onViewportChanged;
-    if (cb == null) return;
-    _vpDebounce?.cancel();
-    _vpDebounce = Timer(const Duration(milliseconds: 450), () {
-      try {
-        final cam = _mapController.camera; // MapCamera (current)
-        final c = cam.center;
-        final b = cam.visibleBounds;
-        final radius = GeoQuery.distanceMeters(
-            c.latitude, c.longitude, b.north, b.east);
-        cb(c.latitude, c.longitude, radius);
-      } catch (_) {/* camera not ready */}
-    });
-  }
+  /// Markers per zoom band for the current [GlobeData.matchedUsers].
+  final Map<int, List<Marker>> _markerCache = {};
+  List<Polyline>? _flightPaths;
 
-  @override
-  void dispose() {
-    _pulseTimer?.cancel();
-    _vpDebounce?.cancel();
-    _mapController.dispose();
-    super.dispose();
-  }
+  GlobeUser get _me => widget.data.currentUser;
+  LatLng get _mePoint => LatLng(_me.pinLatitude, _me.pinLongitude);
 
   @override
   void didUpdateWidget(covariant GlobeMapView oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (widget.flyToCountry != null &&
-        widget.flyToCountry != oldWidget.flyToCountry) {
-      _flyToCountry(widget.flyToCountry!);
+    if (!identical(widget.data.matchedUsers, oldWidget.data.matchedUsers) ||
+        widget.data.currentUser != oldWidget.data.currentUser) {
+      _markerCache.clear();
+      _flightPaths = null;
     }
-  }
-
-  void _flyToCountry(String country) {
-    final centroid = countryCentroids[country];
-    if (centroid != null) {
-      _mapController.move(LatLng(centroid[0], centroid[1]), 5.0);
+    final country = widget.flyToCountry;
+    if (country != null && widget.flyRequestId != oldWidget.flyRequestId) {
+      _flyToCountry(country);
     }
   }
 
   @override
+  void dispose() {
+    _band.dispose();
+    _controller.dispose();
+    super.dispose();
+  }
+
+  void _flyToCountry(String country) {
+    final c = countryCentroids[normalizeCountryName(country)];
+    if (c != null) {
+      _controller.move(LatLng(c[0], c[1]), 5);
+      return;
+    }
+    // Not in the centroid table: frame the people we have there instead.
+    fitMapToPoints(
+        _controller,
+        [
+          for (final u in widget.data.matchedUsers)
+            if (u.country == country) LatLng(u.pinLatitude, u.pinLongitude),
+        ],
+        maxZoom: 6);
+  }
+
+  void _recenter() => _controller.move(_mePoint, MapBasemap.initialZoom);
+
+  void _showWholeNetwork() => fitMapToPoints(_controller, [
+        _mePoint,
+        for (final u in widget.data.matchedUsers)
+          LatLng(u.pinLatitude, u.pinLongitude),
+      ]);
+
+  void _onGroupTapped(GlobePinGroup g) {
+    if (g.isSingle) {
+      widget.onPinTapped(g.first.userId, g.first.pinType);
+      return;
+    }
+    final country = g.country;
+    if (country != null) {
+      widget.onCountryTapped(country, g.cluster.lat, g.cluster.lng);
+      return;
+    }
+    if (_band.value >= kGlobeClusterListBand) {
+      widget.onClusterTapped(g.cluster.items);
+      return;
+    }
+    fitMapToPoints(
+        _controller,
+        [
+          for (final u in g.cluster.items)
+            LatLng(u.pinLatitude, u.pinLongitude),
+        ],
+        maxZoom: kGlobeClusterListBand.toDouble());
+  }
+
+  void _onMapTapped(LatLng point) {
+    if (_band.value > kGlobeCountryTapMaxBand) return;
+    final nearest = _nearestCountry(point.latitude, point.longitude);
+    if (nearest != null) {
+      widget.onCountryTapped(nearest, point.latitude, point.longitude);
+    }
+  }
+
+  List<Marker> _markersFor(int band, String selfLabel) {
+    return _markerCache.putIfAbsent(band, () {
+      final markers = <Marker>[
+        for (final g in layoutGlobePins(widget.data.matchedUsers, band))
+          if (g.isSingle)
+            Marker(
+              key: ValueKey('globe-pin-${g.first.userId}'),
+              point: LatLng(g.first.pinLatitude, g.first.pinLongitude),
+              width: GlobeAvatarPin.boxWidth,
+              height: GlobeAvatarPin.boxHeight,
+              child: GestureDetector(
+                onTap: () => _onGroupTapped(g),
+                child: GlobeAvatarPin(
+                  name: g.first.displayName,
+                  photoUrl: g.first.photoUrl,
+                  isOnline: g.first.isOnline,
+                  isTraveler: g.first.isTravelerActive,
+                ),
+              ),
+            )
+          else
+            Marker(
+              key: ValueKey('globe-group-${g.cluster.id}'),
+              point: LatLng(g.cluster.lat, g.cluster.lng),
+              width: MapCountBubble.sizeFor(g.cluster.items.length),
+              height: MapCountBubble.sizeFor(g.cluster.items.length),
+              child: GestureDetector(
+                onTap: () => _onGroupTapped(g),
+                child: MapCountBubble(
+                  count: g.cluster.items.length,
+                  icon: g.country != null ? Icons.people : null,
+                ),
+              ),
+            ),
+        // The user's own pin: never grouped, drawn last so it stays on top.
+        Marker(
+          key: const ValueKey('globe-pin-self'),
+          point: _mePoint,
+          width: GlobeAvatarPin.boxWidth,
+          height: GlobeAvatarPin.boxHeight,
+          child: GestureDetector(
+            onTap: () => widget.onPinTapped(_me.userId, _me.pinType),
+            child: GlobeAvatarPin(
+              name: _me.displayName,
+              photoUrl: _me.photoUrl,
+              isTraveler: _me.isTravelerActive,
+              selfLabel: selfLabel,
+            ),
+          ),
+        ),
+      ];
+      return markers;
+    });
+  }
+
+  /// Dotted line from an active traveler's home country to where they are.
+  List<Polyline> _travelPaths() => _flightPaths ??= [
+        for (final u in widget.data.matchedUsers)
+          if (u.isTravelerActive &&
+              u.realCountryLatitude != null &&
+              u.realCountryLongitude != null)
+            Polyline(
+              points: [
+                LatLng(u.realCountryLatitude!, u.realCountryLongitude!),
+                LatLng(u.pinLatitude, u.pinLongitude),
+              ],
+              color: kGlobeTravelerColor.withValues(alpha: 0.6),
+              strokeWidth: 2,
+              isDotted: true,
+            ),
+      ];
+
+  @override
   Widget build(BuildContext context) {
-    final currentUser = widget.data.currentUser;
-    final initialCenter =
-        LatLng(currentUser.pinLatitude, currentUser.pinLongitude);
     final l10n = AppLocalizations.of(context)!;
-
-    final map = FlutterMap(
-      mapController: _mapController,
-      options: MapOptions(
-        initialCenter: initialCenter,
-        // Open on the user's own city, not a continent-wide view. minZoom
-        // still allows pinching all the way back out to the world.
-        initialZoom: MapBasemap.initialZoom,
-        minZoom: 2.0,
-        maxZoom: 18.0,
-        backgroundColor: const Color(0xFF1A1A2E),
-        interactionOptions: const InteractionOptions(
-          flags: InteractiveFlag.all,
-        ),
-        onPositionChanged: (camera, hasGesture) {
-          final newZoom = camera.zoom ?? _currentZoom;
-          if ((newZoom - _currentZoom).abs() > 0.3) {
-            setState(() {
-              _currentZoom = newZoom;
-            });
-          }
-          _notifyViewport();
-        },
-        onTap: (tapPosition, point) {
-          final nearest =
-              _findNearestCountry(point.latitude, point.longitude);
-          if (nearest != null) {
-            widget.onCountryTapped(nearest, point.latitude, point.longitude);
-          }
-        },
-      ),
-      children: [
-        const MapBasemapLayer(),
-        PolylineLayer(polylines: _buildFlightPaths()),
-        MarkerLayer(markers: _buildMarkers(l10n)),
-        // OpenStreetMap data requires visible attribution.
-        RichAttributionWidget(
-          attributions: [
-            TextSourceAttribution(MapBasemap.attribution),
-          ],
-        ),
-      ],
-    );
-
-    // Web: on-screen +/- zoom controls (no pinch/scroll-zoom affordance).
-    if (!kIsWeb) return map;
+    final paths = _travelPaths();
     return Stack(
       children: [
-        map,
+        FlutterMap(
+          mapController: _controller,
+          options: MapOptions(
+            // Open on the user's own city; pinch (or the globe button) to
+            // see the whole network.
+            initialCenter: _mePoint,
+            initialZoom: MapBasemap.initialZoom,
+            minZoom: 2,
+            maxZoom: MapBasemap.lightMaxZoom,
+            backgroundColor: LocationMapColors.background,
+            interactionOptions: const InteractionOptions(
+              flags: InteractiveFlag.all & ~InteractiveFlag.rotate,
+            ),
+            onPositionChanged: (camera, _) {
+              final band = (camera.zoom ?? _band.value.toDouble()).floor();
+              if (band != _band.value) _band.value = band;
+            },
+            onTap: (_, point) => _onMapTapped(point),
+          ),
+          children: [
+            const MapBasemapLayer.light(),
+            if (paths.isNotEmpty) PolylineLayer(polylines: paths),
+            ValueListenableBuilder<int>(
+              valueListenable: _band,
+              builder: (_, band, __) => MarkerLayer(
+                markers: _markersFor(band, l10n.globeYou),
+              ),
+            ),
+          ],
+        ),
+        const Positioned(right: 4, bottom: 2, child: MapAttribution()),
         Positioned(
-          right: 12,
-          bottom: 12,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              _zoomButton(Icons.add, 1),
-              const SizedBox(height: 8),
-              _zoomButton(Icons.remove, -1),
+          right: 10,
+          top: 10,
+          child: MapZoomControls(
+            controller: _controller,
+            onRecenter: _recenter,
+            extra: [
+              MapControlButton(
+                key: const ValueKey('globe-map-whole-network'),
+                icon: Icons.public,
+                tooltip: l10n.globeShowWholeNetwork,
+                onTap: _showWholeNetwork,
+              ),
             ],
           ),
         ),
@@ -215,570 +270,19 @@ class _GlobeMapViewState extends State<GlobeMapView>
     );
   }
 
-  Widget _zoomButton(IconData icon, double delta) {
-    return Material(
-      color: Colors.black.withValues(alpha: 0.6),
-      shape: const CircleBorder(),
-      child: InkWell(
-        customBorder: const CircleBorder(),
-        onTap: () {
-          final z = (_currentZoom + delta).clamp(2.0, 18.0);
-          _mapController.move(_mapController.camera.center, z);
-          setState(() => _currentZoom = z);
-        },
-        child: Padding(
-          padding: const EdgeInsets.all(10),
-          child: Icon(icon, color: Colors.white, size: 24),
-        ),
-      ),
-    );
-  }
-
-  // ── Clustering logic ──────────────────────────────────────────────
-
-  /// Cap on how many elements (profiles/events) render at once. Only the
-  /// [_maxVisibleMarkers] nearest to the map centre are shown; zooming in
-  /// shrinks the viewport (fewer candidates) and splits clusters, so more
-  /// individual items become visible.
-  static const int _maxVisibleMarkers = 100;
-
-  List<Marker> _buildMarkers(AppLocalizations l10n) {
-    // Dynamic markers (one active layer at a time) — capped to 100, nearest
-    // to the centre first. Each entry carries its point so we can sort/cap.
-    final dynamicMarkers = <(LatLng, Marker)>[];
-
-    // Cluster matched users based on current zoom level
-    if (widget.showMatched) {
-      final threshold = _clusterThresholdForZoom(_currentZoom);
-      final clusters = _clusterUsers(widget.data.matchedUsers, threshold);
-      for (final cluster in clusters) {
-        final p = LatLng(cluster.first.pinLatitude, cluster.first.pinLongitude);
-        dynamicMarkers.add((
-          p,
-          cluster.length == 1
-              ? _buildMatchMarker(cluster.first)
-              : _buildClusterMarker(cluster),
-        ));
-      }
-    }
-
-    // Precise native-event pins (exact coordinates).
-    for (final e in widget.preciseEvents) {
-      final lat = e.latitude, lng = e.longitude;
-      if (lat == null || lng == null) continue;
-      final p = LatLng(lat, lng);
-      dynamicMarkers.add((p, _buildPreciseEventMarker(e, p)));
-    }
-
-    // External experiences/attractions — individual position pins. Grouping
-    // precision scales with zoom: zoomed in → each event is its own marker;
-    // zoomed out → nearby ones merge (with a count) to avoid clutter.
-    if (widget.externalMarkers.isNotEmpty) {
-      final precision =
-          _currentZoom >= 9 ? 5 : (_currentZoom >= 6 ? 4 : (_currentZoom >= 4 ? 2 : 1));
-      // Group by source + coordinate so each dot is a single type (one colour)
-      // and only same-position same-type events merge into a list.
-      final groups = <String, List<ExternalEvent>>{};
-      for (final e in widget.externalMarkers) {
-        if (e.lat == null || e.lng == null) continue;
-        final key =
-            '${e.source}@${e.lat!.toStringAsFixed(precision)},${e.lng!.toStringAsFixed(precision)}';
-        (groups[key] ??= <ExternalEvent>[]).add(e);
-      }
-      for (final g in groups.values) {
-        final p = LatLng(g.first.lat!, g.first.lng!);
-        dynamicMarkers.add((p, _buildExternalMarker(g, p)));
-      }
-    }
-
-    // Keep only the nearest [_maxVisibleMarkers] to the current map centre.
-    if (dynamicMarkers.length > _maxVisibleMarkers) {
-      LatLng? center;
-      try {
-        center = _mapController.camera.center;
-      } catch (_) {/* camera not ready — fall back to source order */}
-      if (center != null) {
-        final c = center;
-        dynamicMarkers.sort((a, b) {
-          double d(LatLng p) {
-            final dy = p.latitude - c.latitude;
-            final dx = p.longitude - c.longitude;
-            return dy * dy + dx * dx;
-          }
-          return d(a.$1).compareTo(d(b.$1));
-        });
-      }
-      dynamicMarkers.removeRange(_maxVisibleMarkers, dynamicMarkers.length);
-    }
-
-    final markers = [for (final m in dynamicMarkers) m.$2];
-
-    // Current user always on top, never clustered or capped.
-    markers.add(_buildCurrentUserMarker(widget.data.currentUser, l10n));
-
-    return markers;
-  }
-
-  Marker _buildPreciseEventMarker(Event e, LatLng point) {
-    final hasImage = e.imageUrl != null && e.imageUrl!.isNotEmpty;
-    const size = 46.0;
-    return Marker(
-      point: point,
-      width: size,
-      height: size,
-      child: GestureDetector(
-        onTap: () => widget.onPreciseEventTapped?.call(e),
-        child: Container(
-          decoration: BoxDecoration(
-            color: const Color(0xFFFFD700).withValues(alpha: 0.95),
-            shape: BoxShape.circle,
-            border: Border.all(color: Colors.white, width: 2),
-            boxShadow: const [BoxShadow(color: Colors.black54, blurRadius: 5)],
-            image: hasImage
-                ? DecorationImage(
-                    image: CachedNetworkImageProvider(e.imageUrl!),
-                    fit: BoxFit.cover)
-                : null,
-          ),
-          child: hasImage
-              ? null
-              : const Icon(Icons.event, color: Colors.black, size: 18),
-        ),
-      ),
-    );
-  }
-
-  // Per-type colours so each kind of event is visually distinct.
-  static const Map<String, Color> _sourceColors = {
-    'ticketmaster': Color(0xFFE53935), // live events — red
-    'geoapify': Color(0xFF8E24AA), // attractions — purple
-    'viator': Color(0xFF00897B), // experiences — teal
-  };
-  static IconData _sourceIcon(String source) {
-    switch (source) {
-      case 'ticketmaster':
-        return Icons.confirmation_number;
-      case 'geoapify':
-        return Icons.museum;
-      default:
-        return Icons.local_activity;
-    }
-  }
-
-  Marker _buildExternalMarker(List<ExternalEvent> group, LatLng point) {
-    final first = group.first;
-    final multiple = group.length > 1;
-    final color = _sourceColors[first.source] ?? Colors.teal;
-    final showImage =
-        _currentZoom >= 6 && first.imageUrl != null && first.imageUrl!.isNotEmpty;
-    final size = showImage ? 48.0 : 28.0;
-    return Marker(
-      point: point,
-      width: size + 8,
-      height: size + 8,
-      child: GestureDetector(
-        onTap: () {
-          if (multiple) {
-            widget.onExternalGroupTapped?.call(group);
-          } else {
-            widget.onExternalTapped?.call(first);
-          }
-        },
-        child: Stack(
-          clipBehavior: Clip.none,
-          alignment: Alignment.center,
-          children: [
-            Container(
-              width: size,
-              height: size,
-              decoration: BoxDecoration(
-                color: color,
-                shape: BoxShape.circle,
-                border: Border.all(color: Colors.white, width: 2),
-                boxShadow: const [BoxShadow(color: Colors.black54, blurRadius: 5)],
-                image: showImage
-                    ? DecorationImage(
-                        image: CachedNetworkImageProvider(first.imageUrl!),
-                        fit: BoxFit.cover)
-                    : null,
-              ),
-              child: showImage
-                  ? null
-                  : Icon(_sourceIcon(first.source),
-                      color: Colors.white, size: 16),
-            ),
-            if (multiple)
-              Positioned(
-                right: -2,
-                top: -2,
-                child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1),
-                  decoration: BoxDecoration(
-                    color: Colors.black87,
-                    borderRadius: BorderRadius.circular(10),
-                    border: Border.all(color: Colors.white, width: 1),
-                  ),
-                  child: Text('${group.length}',
-                      style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 10,
-                          fontWeight: FontWeight.bold)),
-                ),
-              ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Marker _buildEventMarker(EventCountryStat stat, LatLng point) {
-    return Marker(
-      point: point,
-      width: 54,
-      height: 54,
-      child: GestureDetector(
-        onTap: () => widget.onEventCountryTapped?.call(stat.country),
-        child: Container(
-          decoration: BoxDecoration(
-            color: Colors.orange.withValues(alpha: 0.92),
-            shape: BoxShape.circle,
-            border: Border.all(color: Colors.white, width: 2),
-            boxShadow: const [
-              BoxShadow(color: Colors.black54, blurRadius: 6),
-            ],
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Icon(Icons.event, color: Colors.white, size: 18),
-              Text(
-                '${stat.count}',
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 11,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  /// Groups users whose pin coordinates are within [threshold] degrees.
-  List<List<GlobeUser>> _clusterUsers(
-      List<GlobeUser> users, double threshold) {
-    final assigned = List<bool>.filled(users.length, false);
-    final clusters = <List<GlobeUser>>[];
-    final thresholdSq = threshold * threshold;
-
-    for (var i = 0; i < users.length; i++) {
-      if (assigned[i]) continue;
-      final cluster = <GlobeUser>[users[i]];
-      assigned[i] = true;
-
-      for (var j = i + 1; j < users.length; j++) {
-        if (assigned[j]) continue;
-        final dLat = users[i].pinLatitude - users[j].pinLatitude;
-        final dLng = users[i].pinLongitude - users[j].pinLongitude;
-        if (dLat * dLat + dLng * dLng <= thresholdSq) {
-          cluster.add(users[j]);
-          assigned[j] = true;
-        }
-      }
-      clusters.add(cluster);
-    }
-    return clusters;
-  }
-
-  Marker _buildClusterMarker(List<GlobeUser> users) {
-    // Center of cluster
-    double sumLat = 0, sumLng = 0;
-    for (final u in users) {
-      sumLat += u.pinLatitude;
-      sumLng += u.pinLongitude;
-    }
-    final center = LatLng(sumLat / users.length, sumLng / users.length);
-
-    const size = 52.0;
-    return Marker(
-      point: center,
-      width: size,
-      height: size,
-      child: GestureDetector(
-        onTap: () {
-          if (widget.onClusterTapped != null) {
-            widget.onClusterTapped!(users);
-          }
-        },
-        child: Container(
-          width: size,
-          height: size,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: const Color(0xFFFFD700),
-            border: Border.all(color: Colors.white, width: 2.5),
-            boxShadow: [
-              BoxShadow(
-                color: const Color(0xFFFFD700).withOpacity(0.5),
-                blurRadius: 8,
-              ),
-            ],
-          ),
-          child: Center(
-            child: Text(
-              '${users.length}',
-              style: const TextStyle(
-                color: Colors.black,
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-
-  // ── Individual markers ────────────────────────────────────────────
-
-  Marker _buildCurrentUserMarker(GlobeUser user, AppLocalizations l10n) {
-    const markerSize = 52.0;
-    return Marker(
-      point: LatLng(user.pinLatitude, user.pinLongitude),
-      width: markerSize + 16,
-      height: markerSize + 24,
-      child: GestureDetector(
-        onTap: () => widget.onPinTapped(user.userId, user.pinType),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Stack(
-              clipBehavior: Clip.none,
-              children: [
-                Container(
-                  width: markerSize,
-                  height: markerSize,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(color: Colors.red, width: 3),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.red.withOpacity(0.4 * _pulseScale),
-                        blurRadius: 10 * _pulseScale,
-                        spreadRadius: 2 * _pulseScale,
-                      ),
-                    ],
-                  ),
-                  child: ClipOval(
-                    child: user.photoUrl != null
-                        ? CachedNetworkImage(
-                            imageUrl: user.photoUrl!,
-                            fit: BoxFit.cover,
-                            // Tiny pin: decode ~2x its box, not the full photo.
-                            memCacheWidth: (markerSize * 2).round(),
-                            placeholder: (_, __) =>
-                                _buildFallbackAvatar(user),
-                            errorWidget: (_, __, ___) =>
-                                _buildFallbackAvatar(user),
-                          )
-                        : _buildFallbackAvatar(user),
-                  ),
-                ),
-                Positioned(
-                  bottom: -4,
-                  left: 0,
-                  right: 0,
-                  child: Center(
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 6, vertical: 1),
-                      decoration: BoxDecoration(
-                        color: Colors.red,
-                        borderRadius: BorderRadius.circular(6),
-                      ),
-                      child: Text(
-                        l10n.globeYou,
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 9,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Marker _buildMatchMarker(GlobeUser user) {
-    const markerSize = 48.0;
-    return Marker(
-      point: LatLng(user.pinLatitude, user.pinLongitude),
-      width: markerSize + 16,
-      height: markerSize + 24,
-      child: GestureDetector(
-        onTap: () => widget.onPinTapped(user.userId, user.pinType),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Stack(
-              clipBehavior: Clip.none,
-              children: [
-                Container(
-                  width: markerSize,
-                  height: markerSize,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: const Color(0xFFFFD700),
-                      width: 3,
-                    ),
-                    boxShadow: [
-                      BoxShadow(
-                        color: const Color(0xFFFFD700).withOpacity(0.4),
-                        blurRadius: 6,
-                      ),
-                    ],
-                  ),
-                  child: ClipOval(
-                    child: user.photoUrl != null
-                        ? CachedNetworkImage(
-                            imageUrl: user.photoUrl!,
-                            fit: BoxFit.cover,
-                            // Tiny pin: decode ~2x its box, not the full photo.
-                            memCacheWidth: (markerSize * 2).round(),
-                            placeholder: (_, __) => Container(
-                              color: AppColors.backgroundCard,
-                              child: Center(
-                                child: Text(
-                                  user.displayName.isNotEmpty
-                                      ? user.displayName[0].toUpperCase()
-                                      : '?',
-                                  style: const TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            errorWidget: (_, __, ___) =>
-                                _buildFallbackAvatar(user),
-                          )
-                        : _buildFallbackAvatar(user),
-                  ),
-                ),
-                if (user.isOnline)
-                  Positioned(
-                    right: -2,
-                    top: -2,
-                    child: Container(
-                      width: 14,
-                      height: 14,
-                      decoration: BoxDecoration(
-                        color: Colors.green,
-                        shape: BoxShape.circle,
-                        border: Border.all(color: Colors.black, width: 2),
-                      ),
-                    ),
-                  ),
-                if (user.isTravelerActive)
-                  Positioned(
-                    left: -4,
-                    top: -4,
-                    child: Container(
-                      width: 18,
-                      height: 18,
-                      decoration: const BoxDecoration(
-                        color: Colors.blue,
-                        shape: BoxShape.circle,
-                      ),
-                      child: const Icon(Icons.flight,
-                          color: Colors.white, size: 11),
-                    ),
-                  ),
-              ],
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildFallbackAvatar(GlobeUser user) {
-    return Container(
-      color: AppColors.backgroundCard,
-      child: Center(
-        child: Text(
-          user.displayName.isNotEmpty
-              ? user.displayName[0].toUpperCase()
-              : '?',
-          style: const TextStyle(
-            color: Colors.white,
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-      ),
-    );
-  }
-
-  // ── Flight paths ──────────────────────────────────────────────────
-
-  List<Polyline> _buildFlightPaths() {
-    final polylines = <Polyline>[];
-    for (final user in widget.data.matchedUsers) {
-      if (!user.isTravelerActive ||
-          user.realCountryLatitude == null ||
-          user.realCountryLongitude == null) {
-        continue;
-      }
-
-      final start =
-          LatLng(user.realCountryLatitude!, user.realCountryLongitude!);
-      final end = LatLng(user.pinLatitude, user.pinLongitude);
-      polylines.add(Polyline(
-        points: _buildArcPoints(start, end),
-        color: Colors.blue.withOpacity(0.5),
-        strokeWidth: 2,
-        isDotted: true,
-      ));
-    }
-    return polylines;
-  }
-
-  List<LatLng> _buildArcPoints(LatLng start, LatLng end) {
-    const segments = 30;
-    final points = <LatLng>[];
-    for (var i = 0; i <= segments; i++) {
-      final t = i / segments;
-      final lat = start.latitude + t * (end.latitude - start.latitude);
-      final lng = start.longitude + t * (end.longitude - start.longitude);
-      points.add(LatLng(lat, lng));
-    }
-    return points;
-  }
-
-  String? _findNearestCountry(double lat, double lng) {
+  /// Country whose centroid is nearest [lat],[lng] (within ~10 degrees).
+  String? _nearestCountry(double lat, double lng) {
     String? nearest;
     var minDist = double.infinity;
     for (final entry in countryCentroids.entries) {
-      final cLat = entry.value[0];
-      final cLng = entry.value[1];
-      final dist = (cLat - lat) * (cLat - lat) + (cLng - lng) * (cLng - lng);
+      final dLat = entry.value[0] - lat;
+      final dLng = entry.value[1] - lng;
+      final dist = dLat * dLat + dLng * dLng;
       if (dist < minDist) {
         minDist = dist;
         nearest = entry.key;
       }
     }
-    if (minDist > 100) return null;
-    return nearest;
+    return minDist > 100 ? null : nearest;
   }
 }

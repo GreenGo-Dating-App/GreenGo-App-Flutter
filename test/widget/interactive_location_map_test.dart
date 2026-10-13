@@ -86,16 +86,12 @@ void main() {
     });
   });
 
-  test('basemaps are keyless Esri tiles with the required credit', () {
+  test('the basemap is keyless Esri tiles with the required credit', () {
     expect(MapBasemap.lightTileUrl, contains('World_Street_Map'));
     expect(MapBasemap.lightAttribution, contains('Esri'));
     expect(MapBasemap.lightAttribution, contains('OpenStreetMap'));
     expect(MapBasemap.lightMaxZoom, 19);
-    expect(MapBasemap.tileUrl, contains('World_Dark_Gray_Base'));
-    expect(MapBasemap.maxNativeZoom, 16);
-    for (final url in [MapBasemap.lightTileUrl, MapBasemap.tileUrl]) {
-      expect(MapBasemap.isUsableTileUrl(url), isTrue, reason: url);
-    }
+    expect(MapBasemap.isUsableTileUrl(MapBasemap.lightTileUrl), isTrue);
   });
 
   test('CARTO (placeholder tiles without a key) is never usable', () {

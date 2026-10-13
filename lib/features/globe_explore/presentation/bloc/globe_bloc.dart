@@ -31,6 +31,9 @@ class GlobeBloc extends Bloc<GlobeEvent, GlobeState> {
   bool _showDiscovery = true;
   GlobeData? _currentData;
 
+  /// Source of the request ids on one-shot states (pin / country / fly).
+  int _requestSeq = 0;
+
   Future<void> _onLoad(
     GlobeLoadRequested event,
     Emitter<GlobeState> emit,
@@ -140,6 +143,7 @@ class GlobeBloc extends Bloc<GlobeEvent, GlobeState> {
       data: _currentData!,
       showMatched: _showMatched,
       showDiscovery: _showDiscovery,
+      requestId: ++_requestSeq,
     ));
   }
 
@@ -165,6 +169,7 @@ class GlobeBloc extends Bloc<GlobeEvent, GlobeState> {
         showMatched: _showMatched,
         showDiscovery: _showDiscovery,
         flyToCountry: event.country,
+        flyRequestId: ++_requestSeq,
       ));
     }
   }
@@ -185,6 +190,7 @@ class GlobeBloc extends Bloc<GlobeEvent, GlobeState> {
       data: _currentData!,
       showMatched: _showMatched,
       showDiscovery: _showDiscovery,
+      requestId: ++_requestSeq,
     ));
   }
 

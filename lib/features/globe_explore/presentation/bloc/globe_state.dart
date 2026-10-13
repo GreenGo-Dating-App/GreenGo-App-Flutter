@@ -19,14 +19,20 @@ class GlobeLoaded extends GlobeState {
     this.showMatched = true,
     this.showDiscovery = true,
     this.flyToCountry,
+    this.flyRequestId = 0,
   });
   final GlobeData data;
   final bool showMatched;
   final bool showDiscovery;
   final String? flyToCountry;
 
+  /// Bumped per fly request, so jumping to the same country twice is still
+  /// a new state (Equatable would otherwise swallow it).
+  final int flyRequestId;
+
   @override
-  List<Object?> get props => [data, showMatched, showDiscovery, flyToCountry];
+  List<Object?> get props =>
+      [data, showMatched, showDiscovery, flyToCountry, flyRequestId];
 }
 
 class GlobeError extends GlobeState {
@@ -45,14 +51,19 @@ class GlobePinSelected extends GlobeState {
     required this.data,
     required this.showMatched,
     required this.showDiscovery,
+    this.requestId = 0,
   });
   final GlobeUser selectedUser;
   final GlobeData data;
   final bool showMatched;
   final bool showDiscovery;
 
+  /// Bumped per tap, so tapping the same pin again re-opens its sheet.
+  final int requestId;
+
   @override
-  List<Object?> get props => [selectedUser, data, showMatched, showDiscovery];
+  List<Object?> get props =>
+      [selectedUser, data, showMatched, showDiscovery, requestId];
 }
 
 class GlobeCountrySelected extends GlobeState {
@@ -63,6 +74,7 @@ class GlobeCountrySelected extends GlobeState {
     required this.data,
     required this.showMatched,
     required this.showDiscovery,
+    this.requestId = 0,
   });
   final String countryName;
   final List<GlobeUser> matchesInCountry;
@@ -70,7 +82,16 @@ class GlobeCountrySelected extends GlobeState {
   final bool showMatched;
   final bool showDiscovery;
 
+  /// Bumped per tap, so tapping the same country again re-opens its sheet.
+  final int requestId;
+
   @override
-  List<Object?> get props =>
-      [countryName, matchesInCountry, data, showMatched, showDiscovery];
+  List<Object?> get props => [
+        countryName,
+        matchesInCountry,
+        data,
+        showMatched,
+        showDiscovery,
+        requestId,
+      ];
 }

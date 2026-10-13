@@ -1,38 +1,38 @@
-import 'dart:math' as math;
-
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart' hide State;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
-import '../../../../core/utils/partner_link_gate.dart';
 import '../../../../core/error/failures.dart';
 import '../../../../core/utils/country_names_l10n.dart';
-import '../../../../core/utils/display_image.dart';
-import '../../../../core/utils/geo_query.dart';
 import '../../../../core/utils/user_error.dart';
+import '../../../../core/widgets/interactive_location_map.dart'
+    show LocationMapColors;
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
-import '../../../events/data/datasources/events_remote_datasource.dart';
-import '../../../events/data/datasources/external_events_data_source.dart';
 import '../../../events/domain/entities/event.dart';
-import '../../../events/domain/entities/event_country_stat.dart';
-import '../../../events/domain/entities/external_event.dart';
 import '../../../events/domain/repositories/events_repository.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../profile/data/models/profile_model.dart';
+import '../../data/country_centroids.dart';
 import '../../domain/entities/globe_user.dart';
 import '../bloc/globe_bloc.dart';
 import '../bloc/globe_event.dart';
 import '../bloc/globe_state.dart';
 import '../widgets/globe_country_search.dart';
 import '../widgets/globe_map_view.dart';
+import '../widgets/globe_markers.dart';
 
+/// "My World Map": where the user's network is, on the app's shared map.
+///
+/// The map itself is [GlobeMapView]; this screen owns the bloc wiring, the
+/// light app bar (country search, refresh), the legend and connection-count
+/// overlays, and the sheets a tap opens (person, cluster, country with its
+/// events).
 class GlobeScreen extends StatefulWidget {
   const GlobeScreen({required this.userId, super.key});
   final String userId;
@@ -45,552 +45,46 @@ class _GlobeScreenState extends State<GlobeScreen> {
   /// Exposed so the existing helper methods keep using `userId` unchanged.
   String get userId => widget.userId;
 
-  /// World-map layers (independent, any combination):
-  /// My Community (contacts), Community Events (native, precise pins),
-  /// Attractions (Tiqets), Experiences (Viator).
-  bool _showContacts = true;
-  bool _showCommunityEvents = false;
-  bool _showLiveEvents = false;
-  bool _showAttractions = false;
-  bool _showExperiences = false;
-  final List<Event> _nativeEvents = const [];
-  List<EventCountryStat> _experienceStats = const []; // viator
-  List<EventCountryStat> _attractionStats = const []; // tiqets
-  List<EventCountryStat> _liveEventStats = const []; // ticketmaster
-  // Precise pins for the most-recently-tapped country (mini-image markers).
-  List<ExternalEvent> _countryPins = const [];
-
-  // Per-coordinate event dots for the CURRENT viewport (no country aggregation).
-  final ExternalEventsDataSource _extDs = ExternalEventsDataSource();
-  final EventsRemoteDataSourceImpl _nativeDs = EventsRemoteDataSourceImpl();
-  List<ExternalEvent> _viewportExternal = const [];
-  List<Event> _viewportCommunity = const [];
-  int _viewportGen = 0;
-  double? _vpLat, _vpLng, _vpRadius;
-  // Last viewport actually loaded — used to skip redundant reloads when the map
-  // emits onPositionChanged without a real move (prevents a refresh loop).
-  double? _loadedLat, _loadedLng, _loadedRadius;
-
-  // Session cache of viewport loads keyed by geohash-prefix cell + zoom band,
-  // so panning back over an area (or toggling a layer off and on) does not
-  // re-query it. Entries expire after [_cellTtl]; at most [_maxCells] each.
-  static const Duration _cellTtl = Duration(minutes: 10);
-  static const int _maxCells = 80;
-  static final Map<String, (DateTime, List<ExternalEvent>)> _extCellCache = {};
-  static final Map<String, (DateTime, List<Event>)> _communityCellCache = {};
-
-  /// Cell id for a viewport: a geohash prefix whose cell is about the size of
-  /// the visible radius, plus the radius band (log2), so a zoomed-in view
-  /// never reuses a zoomed-out (sparser) result or vice versa.
-  static String _viewportCell(double lat, double lng, double radiusM) {
-    final km = radiusM / 1000;
-    final precision = km > 2500
-        ? 1
-        : km > 600
-            ? 2
-            : km > 150
-                ? 3
-                : km > 40
-                    ? 4
-                    : km > 5
-                        ? 5
-                        : 6;
-    final band = radiusM <= 1 ? 0 : (math.log(radiusM) / math.ln2).round();
-    return '${GeoQuery.encode(lat, lng, precision)}@$band';
-  }
-
   /// Country tap sheet's events, one future per country for this screen.
   final Map<String, Future<Either<Failure, List<Event>>>> _countryEvents = {};
-
-  static Future<List<T>> _cached<T>(
-    Map<String, (DateTime, List<T>)> cache,
-    String key,
-    Future<List<T>> Function() load,
-  ) async {
-    final hit = cache[key];
-    if (hit != null && DateTime.now().difference(hit.$1) < _cellTtl) {
-      return hit.$2;
-    }
-    final value = await load();
-    cache.remove(key);
-    cache[key] = (DateTime.now(), value);
-    while (cache.length > _maxCells) {
-      cache.remove(cache.keys.first);
-    }
-    return value;
-  }
 
   @override
   void initState() {
     super.initState();
-    // Load globe data ONCE. (Previously dispatched from build(), which re-fired
-    // on every rebuild — so each layer toggle reloaded the bloc, flashed the
-    // loading spinner, recreated the map and reset the view, making it look like
-    // only one layer showed at a time.)
+    // Load globe data ONCE (dispatching from build() re-fired on every
+    // rebuild, recreating the map and resetting the view).
     context.read<GlobeBloc>().add(GlobeLoadRequested(userId: userId));
   }
 
-  /// Load per-coordinate event dots for the visible area (debounced upstream).
-  /// [force] bypasses the "did the viewport actually move?" guard (used by
-  /// layer toggles, which must re-query even at the same position).
-  Future<void> _loadViewport(double lat, double lng, double radiusM,
-      {bool force = false}) async {
-    // Skip if the camera hasn't meaningfully moved since the last load.
-    // flutter_map fires onPositionChanged repeatedly (incl. without gestures),
-    // so without this guard the globe re-queries + setState's continuously.
-    if (!force && _loadedLat != null && _loadedRadius != null) {
-      final moved = GeoQuery.distanceMeters(_loadedLat!, _loadedLng!, lat, lng);
-      final radiusDelta = (_loadedRadius! - radiusM).abs();
-      if (moved < _loadedRadius! * 0.15 &&
-          radiusDelta < _loadedRadius! * 0.15) {
-        _vpLat = lat;
-        _vpLng = lng;
-        _vpRadius = radiusM;
-        return;
-      }
-    }
-    _vpLat = lat;
-    _vpLng = lng;
-    _vpRadius = radiusM;
-    final gen = ++_viewportGen;
-    // External layers (each enabled source) AND community events, all in
-    // parallel (community used to wait for the external layers), each served
-    // from the session cell cache when this area was already loaded.
-    final cell = _viewportCell(lat, lng, radiusM);
-    Future<List<ExternalEvent>> external(String source) => _cached(
-        _extCellCache,
-        '$source|$cell',
-        () => _extDs.getInBounds(
-            source: source, lat: lat, lng: lng, radiusM: radiusM));
-    final futures = <Future<List<ExternalEvent>>>[
-      if (_showAttractions) external('geoapify'),
-      if (_showExperiences) external('viator'),
-      if (_showLiveEvents) external('ticketmaster'),
-    ];
-    final communityFuture = _showCommunityEvents
-        ? _cached(
-            _communityCellCache,
-            'community|$cell',
-            () => _nativeDs.getNearbyCommunityEvents(
-                lat: lat, lng: lng, limit: 200))
-        : Future.value(const <Event>[]);
-    final results = await Future.wait<Object>([
-      Future.wait(futures),
-      communityFuture,
-    ]);
-    final external_ =
-        (results[0] as List<List<ExternalEvent>>).expand((e) => e).toList();
-    // Public community events nearby (getNearbyCommunityEvents filters private).
-    // Auto-publish gate (defensive): drafts / not-yet-due scheduled events
-    // never leak onto the map. The datasource already filters; guard here too
-    // (see Event.isLive).
-    final community =
-        (results[1] as List<Event>).where((e) => e.isLive).toList();
-    if (!mounted || gen != _viewportGen) return;
-    _loadedLat = lat;
-    _loadedLng = lng;
-    _loadedRadius = radiusM;
-    setState(() {
-      _viewportExternal = external_;
-      _viewportCommunity = community;
-    });
-  }
-
-  /// Re-load the current viewport after a layer toggle (force past the
-  /// no-movement guard, since the enabled sources changed).
-  void _reloadViewport() {
-    if (_vpLat != null && _vpLng != null && _vpRadius != null) {
-      _loadViewport(_vpLat!, _vpLng!, _vpRadius!, force: true);
-    }
-  }
-
-  /// Per-country counts from the precomputed aggregate (complete + cheap).
-  Future<void> _loadCountryStats(String source) async {
-    try {
-      final snap = await FirebaseFirestore.instance
-          .collection('external_country_stats')
-          .where('source', isEqualTo: source)
-          .get();
-      if (!mounted) return;
-      final stats = snap.docs
-          .map((d) => EventCountryStat(
-                country: d.data()['country'] as String? ?? '',
-                count: (d.data()['count'] as num?)?.toInt() ?? 0,
-              ))
-          .where((s) => s.country.isNotEmpty)
-          .toList();
-      setState(() {
-        if (source == 'viator') {
-          _experienceStats = stats;
-        } else if (source == 'geoapify') {
-          _attractionStats = stats;
-        } else {
-          _liveEventStats = stats;
-        }
-      });
-    } catch (_) {/* best-effort */}
-  }
-
-  /// Country markers to show: attractions and/or experiences per the toggles.
-  List<EventCountryStat> get _activeStats {
-    final merged = <String, EventCountryStat>{};
-    void add(List<EventCountryStat> list) {
-      for (final s in list) {
-        final e = merged[s.country];
-        merged[s.country] = EventCountryStat(
-          country: s.country,
-          count: (e?.count ?? 0) + s.count,
-        );
-      }
-    }
-
-    if (_showAttractions) add(_attractionStats);
-    if (_showExperiences) add(_experienceStats);
-    if (_showLiveEvents) add(_liveEventStats);
-    return merged.values.toList();
-  }
-
-  /// Load precise pins for a country so zooming in reveals individual
-  /// experiences/attractions with mini-image previews.
-  Future<void> _loadCountryPins(String country) async {
-    try {
-      final snap = await FirebaseFirestore.instance
-          .collection('external_events')
-          .where('country', isEqualTo: country)
-          .limit(200)
-          .get();
-      final items = snap.docs
-          .map(ExternalEvent.fromFirestore)
-          .where((e) =>
-              e.lat != null && e.lng != null && externalEventHasPicture(e))
-          .toList();
-      if (mounted) setState(() => _countryPins = items);
-    } catch (_) {/* best-effort */}
-  }
-
-  Widget _externalTile(ExternalEvent e) => ListTile(
-        leading: ClipRRect(
-          borderRadius: BorderRadius.circular(8),
-          child: SizedBox(
-            width: 48,
-            height: 48,
-            child: (e.imageUrl != null && e.imageUrl!.isNotEmpty)
-                ? Image(
-                    // Landscape art: bound the height (~2x the 48px box).
-                    image: ResizeImage(CachedNetworkImageProvider(e.imageUrl!),
-                        height: 96, policy: ResizeImagePolicy.fit),
-                    fit: BoxFit.cover)
-                : Container(
-                    color: AppColors.backgroundInput,
-                    child: const Icon(Icons.local_activity,
-                        color: AppColors.textTertiary)),
-          ),
-        ),
-        title: Text(e.title,
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-            style: const TextStyle(color: AppColors.textPrimary, fontSize: 14)),
-        subtitle: Text(
-          [
-            if (e.city != null && e.city!.isNotEmpty) e.city!,
-            if (e.rating != null && e.rating! > 0) '⭐ ${e.rating}',
-            if (e.fromPrice != null)
-              '${e.currency ?? ''} ${e.fromPrice!.toStringAsFixed(0)}',
-          ].join('  ·  '),
-          style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
-        ),
-        trailing:
-            const Icon(Icons.open_in_new, color: AppColors.richGold, size: 18),
-        onTap: e.bookingUrl.isEmpty ||
-                !PartnerLinkGate.showLink(source: e.source, userId: userId)
-            ? null
-            : () => launchUrl(Uri.parse(e.bookingUrl),
-                mode: LaunchMode.externalApplication),
-      );
-
-  /// Sheet listing a group of co-located items (tapping a multi-item pin).
-  void _showItemsSheet(BuildContext context, List<ExternalEvent> items) {
-    showModalBottomSheet<void>(
-      context: context,
-      backgroundColor: AppColors.backgroundCard,
-      isScrollControlled: true,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (_) => SafeArea(
-        child: DraggableScrollableSheet(
-          initialChildSize: 0.6,
-          maxChildSize: 0.95,
-          expand: false,
-          builder: (_, sc) => ListView(
-            controller: sc,
-            children: [
-              const SizedBox(height: 10),
-              Center(
-                child: Text(items.first.city ?? '',
-                    style: const TextStyle(
-                        color: AppColors.textPrimary,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold)),
-              ),
-              ...items.map(_externalTile),
-              const SizedBox(height: 16),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  /// Tap a country → list its Experiences + Attractions (queried directly, so
-  /// it's complete regardless of which markers are on the map).
-  /// Country items (sorted by rating), memoised per country for the session
-  /// so re-opening the sheet is instant.
-  static final Map<String, (DateTime, Future<List<ExternalEvent>>)>
-      _countryItems = {};
-
-  Future<List<ExternalEvent>> _countryItemsFor(String country) {
-    final hit = _countryItems[country];
-    if (hit != null && DateTime.now().difference(hit.$1) < _cellTtl) {
-      return hit.$2;
-    }
-    final future = FirebaseFirestore.instance
-        .collection('external_events')
-        .where('country', isEqualTo: country)
-        .limit(150)
-        .get()
-        .then((snap) => snap.docs
-            .map(ExternalEvent.fromFirestore)
-            .where(externalEventHasPicture) // pictures only
-            .toList()
-          ..sort((a, b) => (b.rating ?? 0).compareTo(a.rating ?? 0)));
-    _countryItems[country] = (DateTime.now(), future);
-    // A failed load must not stay memoised.
-    future.catchError((Object _) {
-      if (identical(_countryItems[country]?.$2, future)) {
-        _countryItems.remove(country);
-      }
-      return const <ExternalEvent>[];
-    }).ignore();
-    while (_countryItems.length > _maxCells) {
-      _countryItems.remove(_countryItems.keys.first);
-    }
-    return future;
-  }
-
-  Future<void> _showCountryDetailSheet(
-      BuildContext context, String country) async {
-    // Open the sheet at once with a loader; the (memoised) query fills it.
-    final itemsFuture = _countryItemsFor(country);
-    if (!mounted) return;
-    final l10n = AppLocalizations.of(context)!;
-
-    Widget tile(ExternalEvent e) => ListTile(
-          leading: ClipRRect(
-            borderRadius: BorderRadius.circular(8),
-            child: SizedBox(
-              width: 48,
-              height: 48,
-              child: (e.imageUrl != null && e.imageUrl!.isNotEmpty)
-                  ? Image(
-                      // Landscape art: bound the height (~2x the 48px box).
-                      image: ResizeImage(
-                          CachedNetworkImageProvider(e.imageUrl!),
-                          height: 96,
-                          policy: ResizeImagePolicy.fit),
-                      fit: BoxFit.cover)
-                  : Container(
-                      color: AppColors.backgroundInput,
-                      child: const Icon(Icons.local_activity,
-                          color: AppColors.textTertiary)),
-            ),
-          ),
-          title: Text(e.title,
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-              style: const TextStyle(color: AppColors.textPrimary, fontSize: 14)),
-          subtitle: Text(
-            [
-              if (e.city != null && e.city!.isNotEmpty) e.city!,
-              if (e.rating != null && e.rating! > 0) '⭐ ${e.rating}',
-              if (e.fromPrice != null)
-                '${e.currency ?? ''} ${e.fromPrice!.toStringAsFixed(0)}',
-            ].join('  ·  '),
-            style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
-          ),
-          trailing: const Icon(Icons.open_in_new,
-              color: AppColors.richGold, size: 18),
-          onTap: e.bookingUrl.isEmpty ||
-                  !PartnerLinkGate.showLink(source: e.source, userId: userId)
-              ? null
-              : () => launchUrl(Uri.parse(e.bookingUrl),
-                  mode: LaunchMode.externalApplication),
-        );
-
-    showModalBottomSheet<void>(
-      context: context,
-      backgroundColor: AppColors.backgroundCard,
-      isScrollControlled: true,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (_) => SafeArea(
-        child: DraggableScrollableSheet(
-          initialChildSize: 0.7,
-          maxChildSize: 0.95,
-          expand: false,
-          builder: (_, sc) => FutureBuilder<List<ExternalEvent>>(
-            future: itemsFuture,
-            builder: (_, snapshot) {
-            final loading =
-                snapshot.connectionState != ConnectionState.done;
-            final all = snapshot.data ?? const <ExternalEvent>[];
-            final exp = all.where((e) => e.source == 'viator').toList();
-            final att = all.where((e) => e.source == 'geoapify').toList();
-            final live = all.where((e) => e.source == 'ticketmaster').toList();
-            return ListView(
-            controller: sc,
-            children: [
-              const SizedBox(height: 10),
-              Center(
-                child: Text(
-                    localizedCountryName(
-                        AppLocalizations.of(context)!, country),
-                    style: const TextStyle(
-                        color: AppColors.textPrimary,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold)),
-              ),
-              if (loading)
-                const Padding(
-                  padding: EdgeInsets.all(24),
-                  child: Center(
-                    child: CircularProgressIndicator(
-                        color: AppColors.richGold),
-                  ),
-                )
-              else if (exp.isEmpty && att.isEmpty && live.isEmpty)
-                Padding(
-                  padding: const EdgeInsets.all(24),
-                  child: Center(
-                    child: Text(l10n.eventsNoEventsFound,
-                        style:
-                            const TextStyle(color: AppColors.textSecondary)),
-                  ),
-                ),
-              if (live.isNotEmpty) ...[
-                _countrySectionHeader(
-                    '${l10n.eventsTabLiveEvents} (${live.length})'),
-                ...live.map(tile),
-              ],
-              if (att.isNotEmpty) ...[
-                _countrySectionHeader(
-                    '${l10n.eventsTabAttractions} (${att.length})'),
-                ...att.map(tile),
-              ],
-              if (exp.isNotEmpty) ...[
-                _countrySectionHeader(
-                    '${l10n.eventsTabExperiences} (${exp.length})'),
-                ...exp.map(tile),
-              ],
-              const SizedBox(height: 16),
-            ],
-            );
-            },
-          ),
-        ),
-      ),
-    );
-  }
-
-  Widget _countrySectionHeader(String text) => Padding(
-        padding: const EdgeInsets.fromLTRB(16, 14, 16, 6),
-        child: Text(text,
-            style: const TextStyle(
-                color: AppColors.richGold, fontWeight: FontWeight.bold)),
-      );
-
-  /// Layers are mutually exclusive — selecting one turns all the others off
-  /// ("if my network is on, all the others must be off"). Tapping the active
-  /// layer again turns it off (none selected).
-  void _selectLayer(String layer) {
-    setState(() {
-      final turningOff = (layer == 'contacts' && _showContacts) ||
-          (layer == 'community' && _showCommunityEvents) ||
-          (layer == 'live' && _showLiveEvents) ||
-          (layer == 'attractions' && _showAttractions) ||
-          (layer == 'experiences' && _showExperiences);
-      _showContacts = !turningOff && layer == 'contacts';
-      _showCommunityEvents = !turningOff && layer == 'community';
-      _showLiveEvents = !turningOff && layer == 'live';
-      _showAttractions = !turningOff && layer == 'attractions';
-      _showExperiences = !turningOff && layer == 'experiences';
-    });
-    // Reload so the now-disabled event sources are cleared from the map.
-    _reloadViewport();
-  }
-
-  /// Vertical layer-toggle panel shown on the right of the map.
-  Widget _buildLayerPanel(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
-    Widget btn(IconData icon, bool active, String tooltip, VoidCallback onTap) {
-      return Tooltip(
-        message: tooltip,
-        child: InkWell(
-          onTap: onTap,
-          borderRadius: BorderRadius.circular(22),
-          child: Padding(
-            padding: const EdgeInsets.all(8),
-            child: Icon(icon,
-                size: 24,
-                color: active ? AppColors.richGold : AppColors.textSecondary),
-          ),
-        ),
-      );
-    }
-
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.black.withValues(alpha: 0.55),
-        borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
-      ),
-      padding: const EdgeInsets.symmetric(vertical: 4),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          btn(Icons.people, _showContacts, l10n.globeLayerContacts,
-              () => _selectLayer('contacts')),
-          btn(Icons.event, _showCommunityEvents,
-              l10n.globeLayerCommunityEvents, () => _selectLayer('community')),
-          btn(Icons.confirmation_number, _showLiveEvents,
-              l10n.globeLayerLiveEvents, () => _selectLayer('live')),
-          btn(Icons.museum, _showAttractions, l10n.eventsTabAttractions,
-              () => _selectLayer('attractions')),
-          btn(Icons.local_activity, _showExperiences,
-              l10n.globeLayerExperiences, () => _selectLayer('experiences')),
-        ],
-      ),
-    );
-  }
+  /// The data behind whichever state the bloc is in, or null while loading.
+  static GlobeData? _dataOf(GlobeState state) => switch (state) {
+        GlobeLoaded(:final data) => data,
+        GlobePinSelected(:final data) => data,
+        GlobeCountrySelected(:final data) => data,
+        _ => null,
+      };
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: LocationMapColors.surface,
       appBar: AppBar(
-        title: Text(
-          AppLocalizations.of(context)!.globeMyWorldMap,
-          style: const TextStyle(color: AppColors.textPrimary),
-        ),
-        backgroundColor: AppColors.backgroundDark,
-        elevation: 0,
-        iconTheme: const IconThemeData(color: AppColors.textSecondary),
+        backgroundColor: LocationMapColors.surface,
+        foregroundColor: LocationMapColors.text,
+        elevation: 0.5,
+        title: Text(l10n.globeMyWorldMap,
+            maxLines: 1, overflow: TextOverflow.ellipsis),
         actions: [
-          // Layer toggles moved to a vertical panel on the right of the map.
           IconButton(
-            icon: const Icon(Icons.refresh,
-                color: AppColors.textSecondary, size: 22),
+            key: const ValueKey('globe-country-search'),
+            icon: const Icon(Icons.search, size: 22),
+            tooltip: l10n.globeSearchCountryTooltip,
+            onPressed: () => _showCountrySearch(context),
+          ),
+          IconButton(
+            icon: const Icon(Icons.refresh, size: 22),
+            tooltip: l10n.refresh,
             onPressed: () => context.read<GlobeBloc>().add(
                   GlobeRefreshRequested(userId: userId),
                 ),
@@ -611,36 +105,21 @@ class _GlobeScreenState extends State<GlobeScreen> {
           }
         },
         builder: (context, state) {
-          if (state is GlobeLoading) {
+          if (state is GlobeError) return _buildError(state.message);
+          final data = _dataOf(state);
+          if (data == null) {
             return const Center(
-              child: CircularProgressIndicator(
-                color: AppColors.accentGold,
-              ),
+              child: CircularProgressIndicator(color: LocationMapColors.gold),
             );
           }
-
-          GlobeData? data;
-          String? flyToCountry;
-
-          if (state is GlobeLoaded) {
-            data = state.data;
-            flyToCountry = state.flyToCountry;
-          } else if (state is GlobePinSelected) {
-            data = state.data;
-          } else if (state is GlobeCountrySelected) {
-            data = state.data;
-          }
-
-          if (data != null) {
-            return Stack(
-              children: [
-                GlobeMapView(
+          final fly = state is GlobeLoaded ? state : null;
+          return Stack(
+            children: [
+              Positioned.fill(
+                child: GlobeMapView(
                   data: data,
-                  // My world map shows only my network (people) — events are
-                  // intentionally excluded to keep the map uncluttered.
-                  showMatched: true,
-                  showDiscovery: false,
-                  flyToCountry: flyToCountry,
+                  flyToCountry: fly?.flyToCountry,
+                  flyRequestId: fly?.flyRequestId ?? 0,
                   onPinTapped: (tappedUserId, pinType) {
                     context.read<GlobeBloc>().add(
                           GlobePinTapped(
@@ -658,63 +137,68 @@ class _GlobeScreenState extends State<GlobeScreen> {
                           ),
                         );
                   },
-                  onClusterTapped: (users) {
-                    _showClusterSheet(context, users);
-                  },
+                  onClusterTapped: (users) => _showClusterSheet(context, users),
                 ),
-                // Match count badge
-                Positioned(
-                  bottom: 16,
-                  left: 0,
-                  right: 0,
-                  child: Center(
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 16, vertical: 8),
-                      decoration: BoxDecoration(
-                        color: Colors.black87,
-                        borderRadius: BorderRadius.circular(20),
-                        border: Border.all(
-                          color: const Color(0xFFFFD700).withOpacity(0.4),
-                        ),
-                      ),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          const Icon(Icons.people,
-                              color: Color(0xFFFFD700), size: 18),
-                          const SizedBox(width: 8),
-                          Text(
-                            AppLocalizations.of(context)!.globeConnectionCount(data.matchedUsers.length),
-                            style: const TextStyle(
-                              color: AppColors.textPrimary,
-                              fontSize: 13,
-                              fontWeight: FontWeight.w500,
-                            ),
+              ),
+              Positioned(
+                top: 10,
+                left: 10,
+                child: _MapChip(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      _LegendItem(color: kGlobeSelfColor, label: l10n.globeYou),
+                      _LegendItem(
+                          color: LocationMapColors.gold,
+                          label: l10n.globeConnections),
+                      _LegendItem(
+                          icon: Icons.flight, label: l10n.globeTraveler),
+                    ],
+                  ),
+                ),
+              ),
+              Positioned(
+                bottom: 22,
+                left: 0,
+                right: 0,
+                child: Center(
+                  child: _MapChip(
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const Icon(Icons.people,
+                            color: LocationMapColors.goldDark, size: 18),
+                        const SizedBox(width: 8),
+                        Text(
+                          l10n.globeConnectionCount(data.matchedUsers.length),
+                          style: const TextStyle(
+                            color: LocationMapColors.text,
+                            fontSize: 13,
+                            fontWeight: FontWeight.w600,
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
-                // Legend overlay
-                Positioned(
-                  top: 8,
-                  left: 12,
-                  child: _buildLegend(context),
-                ),
-              ],
-            );
-          }
-
-          if (state is GlobeError) {
-            return _buildError(state.message);
-          }
-
-          return const SizedBox.shrink();
+              ),
+            ],
+          );
         },
       ),
     );
+  }
+
+  /// Search every country we can place on the map (plus any network country
+  /// the centroid table lacks); picking one flies the map there.
+  void _showCountrySearch(BuildContext context) {
+    final data = _dataOf(context.read<GlobeBloc>().state);
+    final countries = <String>{
+      ...countryCentroids.keys,
+      if (data != null) ...data.allCountries,
+    }..remove('Unknown');
+    GlobeCountrySearch.show(context, countries.toList());
   }
 
   /// 'Unknown' is the data-layer placeholder for a missing name/city/country.
@@ -725,39 +209,6 @@ class _GlobeScreenState extends State<GlobeScreen> {
   /// Localized display name for a stored (English) country value.
   String _countryLabel(BuildContext context, String country) => _orUnknown(
       context, localizedCountryName(AppLocalizations.of(context)!, country));
-
-  void _showCountrySearch(BuildContext context) {
-    final state = context.read<GlobeBloc>().state;
-    var countries = <String>[];
-    if (state is GlobeLoaded) {
-      countries = state.data.allCountries;
-    } else if (state is GlobePinSelected) {
-      countries = state.data.allCountries;
-    }
-    if (countries.isNotEmpty) {
-      GlobeCountrySearch.show(context, countries);
-    }
-  }
-
-  Widget _buildLegend(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-      decoration: BoxDecoration(
-        color: Colors.black54,
-        borderRadius: BorderRadius.circular(8),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          _LegendItem(color: Colors.red, label: l10n.globeYou),
-          _LegendItem(color: const Color(0xFFFFD700), label: l10n.globeConnections),
-          _LegendItem(icon: Icons.flight, label: l10n.globeTraveler),
-        ],
-      ),
-    );
-  }
 
   Widget _buildError(String message) {
     return Center(
@@ -1411,8 +862,27 @@ class _GlobeScreenState extends State<GlobeScreen> {
   }
 }
 
-class _LegendItem extends StatelessWidget {
+/// Translucent white card for overlays on the map (legend, count).
+class _MapChip extends StatelessWidget {
+  const _MapChip({required this.child});
+  final Widget child;
 
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+      decoration: BoxDecoration(
+        color: LocationMapColors.surface.withValues(alpha: 0.94),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: LocationMapColors.border),
+        boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 4)],
+      ),
+      child: child,
+    );
+  }
+}
+
+class _LegendItem extends StatelessWidget {
   const _LegendItem({required this.label, this.color, this.icon});
   final Color? color;
   final IconData? icon;
@@ -1429,20 +899,14 @@ class _LegendItem extends StatelessWidget {
             Container(
               width: 10,
               height: 10,
-              decoration: BoxDecoration(
-                color: color,
-                shape: BoxShape.circle,
-              ),
+              decoration: BoxDecoration(color: color, shape: BoxShape.circle),
             ),
-          if (icon != null)
-            Icon(icon, color: Colors.blue, size: 12),
+          if (icon != null) Icon(icon, color: kGlobeTravelerColor, size: 12),
           const SizedBox(width: 6),
           Text(
             label,
             style: const TextStyle(
-              color: Colors.white70,
-              fontSize: 11,
-            ),
+                color: LocationMapColors.subtext, fontSize: 11),
           ),
         ],
       ),

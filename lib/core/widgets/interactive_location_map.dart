@@ -8,6 +8,7 @@ import '../../generated/app_localizations.dart';
 import '../config/map_basemap.dart';
 import '../constants/app_colors.dart';
 import 'map_basemap_layer.dart';
+import 'map_controls.dart';
 
 /// Light palette shared by every place map (white card, gold accents).
 class LocationMapColors {
@@ -151,12 +152,6 @@ class _LocationMapViewState extends State<LocationMapView> {
   double get _startZoom =>
       widget.initialZoom ?? (widget.isApproximate ? 14 : 16);
 
-  void _zoomBy(double delta) {
-    final cam = _controller.camera;
-    final z = (cam.zoom + delta).clamp(2.0, MapBasemap.lightMaxZoom);
-    _controller.move(cam.center, z);
-  }
-
   void _recenter() => _controller.move(_point, _startZoom);
 
   @override
@@ -167,7 +162,6 @@ class _LocationMapViewState extends State<LocationMapView> {
 
   @override
   Widget build(BuildContext context) {
-    final l = AppLocalizations.of(context);
     return Stack(
       children: [
         FlutterMap(
@@ -211,32 +205,14 @@ class _LocationMapViewState extends State<LocationMapView> {
           ],
         ),
         const Positioned(right: 4, bottom: 2, child: MapAttribution()),
-        if (widget.interactive && widget.showControls && l != null)
+        if (widget.interactive && widget.showControls)
           Positioned(
             right: 10,
             top: 10,
-            child: Column(children: [
-              _MapButton(
-                key: const ValueKey('location-map-zoom-in'),
-                icon: Icons.add,
-                tooltip: l.locMapZoomIn,
-                onTap: () => _zoomBy(1),
-              ),
-              const SizedBox(height: 6),
-              _MapButton(
-                key: const ValueKey('location-map-zoom-out'),
-                icon: Icons.remove,
-                tooltip: l.locMapZoomOut,
-                onTap: () => _zoomBy(-1),
-              ),
-              const SizedBox(height: 12),
-              _MapButton(
-                key: const ValueKey('location-map-recenter'),
-                icon: Icons.my_location,
-                tooltip: l.locMapRecenter,
-                onTap: _recenter,
-              ),
-            ]),
+            child: MapZoomControls(
+              controller: _controller,
+              onRecenter: _recenter,
+            ),
           ),
       ],
     );
@@ -301,33 +277,6 @@ class _GoldPin extends StatelessWidget {
             color: LocationMapColors.gold,
             shadows: [Shadow(color: Color(0x55000000), blurRadius: 4)]),
       ],
-    );
-  }
-}
-
-class _MapButton extends StatelessWidget {
-  const _MapButton({
-    required this.icon,
-    required this.tooltip,
-    required this.onTap,
-    super.key,
-  });
-  final IconData icon;
-  final String tooltip;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return Material(
-      color: LocationMapColors.surface,
-      shape: const CircleBorder(
-          side: BorderSide(color: LocationMapColors.border)),
-      elevation: 2,
-      child: IconButton(
-        tooltip: tooltip,
-        icon: Icon(icon, color: LocationMapColors.goldDark, size: 20),
-        onPressed: onTap,
-      ),
     );
   }
 }
@@ -416,7 +365,7 @@ class InteractiveLocationMap extends StatelessWidget {
               Positioned(
                 top: 8,
                 right: 8,
-                child: _MapButton(
+                child: MapControlButton(
                   icon: Icons.open_in_full,
                   tooltip: l.locMapExpand,
                   onTap: () => _openFull(context),

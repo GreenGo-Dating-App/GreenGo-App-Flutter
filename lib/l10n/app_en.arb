@@ -5334,6 +5334,8 @@
   "eventsUnlimited": "Unlimited",
   "eventsTabGoing": "Going",
   "globeLayerCommunityEvents": "Community events",
+  "globeSearchCountryTooltip": "Find a country",
+  "globeShowWholeNetwork": "Show my whole network",
   "webMapUnavailableTitle": "Interactive map available on the mobile app",
   "webMapUnavailableBody": "Search for an address to set your location.",
   "webLocationPickerTitle": "Pick your location",

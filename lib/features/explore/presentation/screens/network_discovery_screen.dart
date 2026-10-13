@@ -930,7 +930,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
               tooltip: l10n.settings,
               onPressed: _openSettings,
             ),
-          // World map withheld until it ships.
+          // World map of the user's network (FlavorConfig.enableWorldMap).
           if (!_searching && FlavorConfig.enableWorldMap)
             IconButton(
               icon: const Icon(Icons.public),

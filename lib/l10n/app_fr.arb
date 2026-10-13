@@ -3284,6 +3284,8 @@
   "eventsUnlimited": "Illimité",
   "eventsTabGoing": "Je participe",
   "globeLayerCommunityEvents": "Événements de la communauté",
+  "globeSearchCountryTooltip": "Trouver un pays",
+  "globeShowWholeNetwork": "Voir tout mon réseau",
   "webMapUnavailableTitle": "Carte interactive disponible sur l'application mobile",
   "webMapUnavailableBody": "Recherchez une adresse pour définir votre position.",
   "webLocationPickerTitle": "Choisissez votre position",

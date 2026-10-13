@@ -2590,8 +2590,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
           divider(),
           Expanded(
             child: InkWell(
-              // The countries stat still reads; it just does not open the
-              // world map while that feature is withheld.
+              // Opens the network world map (FlavorConfig.enableWorldMap
+              // withdraws only the tap, never the stat).
               onTap: FlavorConfig.enableWorldMap ? _openWorldMap : null,
               borderRadius: BorderRadius.circular(AppGlass.radiusCard),
               child: _StatTile(

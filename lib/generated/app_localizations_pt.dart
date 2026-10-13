@@ -11353,6 +11353,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get globeLayerCommunityEvents => 'Eventos da comunidade';
 
   @override
+  String get globeSearchCountryTooltip => 'Procurar um país';
+
+  @override
+  String get globeShowWholeNetwork => 'Mostrar toda a minha rede';
+
+  @override
   String get webMapUnavailableTitle =>
       'Mapa interativo disponível na aplicação móvel';
 
@@ -36126,6 +36132,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get globeLayerCommunityEvents => 'Eventos da comunidade';
+
+  @override
+  String get globeSearchCountryTooltip => 'Buscar um país';
+
+  @override
+  String get globeShowWholeNetwork => 'Mostrar toda a minha rede';
 
   @override
   String get webMapUnavailableTitle =>

@@ -161,7 +161,6 @@ dependencies:
   # google_mlkit_translation: ^0.9.0  # Disabled - doesn't work on emulators
 
   # Online Translation (works everywhere)
-  vector_map_tiles: ^7.3.1
 
   # Speech Recognition for video call subtitles
   # speech_to_text: ^6.6.0  # Disabled - compatibility issues with Android Gradle Plugin
