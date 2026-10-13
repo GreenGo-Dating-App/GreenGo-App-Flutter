@@ -8,6 +8,7 @@ import 'package:latlong2/latlong.dart';
 
 import '../../generated/app_localizations.dart';
 import '../config/map_basemap.dart';
+import '../constants/app_colors.dart';
 import '../services/location_share_service.dart';
 import '../services/place_search_service.dart';
 import 'interactive_location_map.dart' show LocationMapColors, MapAttribution;
@@ -488,12 +489,14 @@ class _LocationPickerScreenState extends State<LocationPickerScreen>
     final l10n = AppLocalizations.of(context)!;
     final start = _pin ?? const LatLng(20, 0);
     return Scaffold(
-      backgroundColor: LocationMapColors.surface,
+      backgroundColor: AppColors.deepBlack,
       resizeToAvoidBottomInset: false,
+      // App look: black bars above and below the (light) map.
       appBar: AppBar(
-        backgroundColor: LocationMapColors.surface,
-        foregroundColor: LocationMapColors.text,
-        elevation: 0.5,
+        backgroundColor: AppColors.deepBlack,
+        foregroundColor: AppColors.textPrimary,
+        iconTheme: const IconThemeData(color: AppColors.richGold),
+        elevation: 0,
         title: Text(widget.title ?? l10n.locPickerTitle),
       ),
       body: Column(children: [
@@ -736,8 +739,8 @@ class _LocationPickerScreenState extends State<LocationPickerScreen>
     }
     return Container(
       decoration: const BoxDecoration(
-        color: LocationMapColors.surface,
-        border: Border(top: BorderSide(color: LocationMapColors.border)),
+        color: AppColors.deepBlack,
+        border: Border(top: BorderSide(color: AppColors.divider)),
       ),
       child: SafeArea(
         top: false,
@@ -749,7 +752,7 @@ class _LocationPickerScreenState extends State<LocationPickerScreen>
             children: [
               Row(children: [
                 Icon(_pin == null ? Icons.touch_app_outlined : Icons.place,
-                    size: 18, color: LocationMapColors.goldDark),
+                    size: 18, color: AppColors.richGold),
                 const SizedBox(width: 8),
                 Expanded(
                   child: Text(
@@ -760,8 +763,8 @@ class _LocationPickerScreenState extends State<LocationPickerScreen>
                     style: TextStyle(
                       fontSize: 14,
                       color: _pin != null && _label.isNotEmpty
-                          ? LocationMapColors.text
-                          : LocationMapColors.subtext,
+                          ? AppColors.textPrimary
+                          : AppColors.textSecondary,
                       fontWeight: _pin != null && _label.isNotEmpty
                           ? FontWeight.w600
                           : FontWeight.normal,
@@ -774,9 +777,11 @@ class _LocationPickerScreenState extends State<LocationPickerScreen>
                 key: const ValueKey('location-picker-confirm'),
                 onPressed: _canConfirm ? _confirm : null,
                 style: FilledButton.styleFrom(
-                  backgroundColor: LocationMapColors.gold,
-                  foregroundColor: LocationMapColors.text,
-                  disabledBackgroundColor: LocationMapColors.border,
+                  // The app's gold button; still gold (dimmer) until a place is picked.
+                  backgroundColor: AppColors.richGold,
+                  foregroundColor: AppColors.deepBlack,
+                  disabledBackgroundColor: AppColors.richGold.withValues(alpha: 0.45),
+                  disabledForegroundColor: AppColors.deepBlack.withValues(alpha: 0.6),
                   padding: const EdgeInsets.symmetric(vertical: 14),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12)),

@@ -2,6 +2,7 @@
 /// Points 261-270: Firebase Performance Monitoring integration
 library;
 
+import '../../../../core/services/web_error_reporter.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:firebase_performance/firebase_performance.dart';
 import 'package:flutter/foundation.dart';
@@ -33,6 +34,8 @@ class PerformanceMonitoringService {
 
     // Set up Flutter error handling
     FlutterError.onError = (details) {
+      // Web: no Crashlytics; keep the error for diagnosis (client_errors).
+      WebErrorReporter.report(details.exception, details.stack);
       if (AnalyticsConsentService.instance.collectionAllowed) {
         _crashlytics.recordFlutterFatalError(details);
       } else {
@@ -42,6 +45,7 @@ class PerformanceMonitoringService {
 
     // Set up Dart error handling
     PlatformDispatcher.instance.onError = (error, stack) {
+      WebErrorReporter.report(error, stack);
       if (AnalyticsConsentService.instance.collectionAllowed) {
         _crashlytics.recordError(error, stack, fatal: true);
       }

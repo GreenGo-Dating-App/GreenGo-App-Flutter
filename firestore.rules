@@ -1870,6 +1870,17 @@ service cloud.firestore {
       allow read: if isSignedIn();
       allow write: if false; // packed list rows (scripts/build_attractions_lite.js)
     }
+    // Web crash reports (lib/core/services/web_error_reporter.dart): the
+    // signed-in user may add their own, bounded report; nobody reads them
+    // from a client (admin SDK only).
+    match /client_errors/{docId} {
+      allow create: if isSignedIn()
+        && request.resource.data.keys().hasOnly(['v', 'at', 'uid', 'platform', 'msg', 'stack', 'url'])
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.msg is string && request.resource.data.msg.size() <= 1000
+        && request.resource.data.stack is string && request.resource.data.stack.size() <= 4000;
+      allow read, update, delete: if false;
+    }
     match /attraction_name_index/{docId} {
       allow read: if isSignedIn();
       allow write: if false; // multilingual name search (scripts/build_attraction_names_i18n.js)
