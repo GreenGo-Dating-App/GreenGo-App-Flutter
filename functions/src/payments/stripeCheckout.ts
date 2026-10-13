@@ -62,7 +62,7 @@ const MEMBERSHIP_PRODUCTS: Record<string, MembershipDef> = {
   '1_month_platinum': { name: 'Platinum Membership (1 Month)', priceUsd: 2999, priceEur: 2999, priceBrl: 8990, durationDays: 30, tier: 'PLATINUM' },
   '1_year_silver': { name: 'Silver Membership (1 Year)', priceUsd: 6999, priceEur: 6999, priceBrl: 24990, durationDays: 365, tier: 'SILVER' },
   '1_year_gold': { name: 'Gold Membership (1 Year)', priceUsd: 11999, priceEur: 11999, priceBrl: 39990, durationDays: 365, tier: 'GOLD' },
-  '1_year_platinum_membership': { name: 'Platinum Membership (1 Year)', priceUsd: 19999, priceEur: 19999, priceBrl: 59990, durationDays: 365, tier: 'PLATINUM' },
+  '1_year_platinum_membership': { name: 'Platinum Membership (1 Year)', priceUsd: 17999, priceEur: 17999, priceBrl: 59990, durationDays: 365, tier: 'PLATINUM' },
 };
 
 // European countries (ISO 3166-1 alpha-2 + a few names) → charged in EUR.

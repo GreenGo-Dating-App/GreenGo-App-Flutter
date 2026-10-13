@@ -55,7 +55,7 @@ export const PRODUCT_CONFIG: Record<string, { tier: TierName; durationDays: numb
   '1_month_gold': { tier: 'GOLD', durationDays: 30, price: 19.99 },
   '1_year_gold': { tier: 'GOLD', durationDays: 365, price: 119.99 },
   '1_month_platinum': { tier: 'PLATINUM', durationDays: 30, price: 29.99 },
-  '1_year_platinum_membership': { tier: 'PLATINUM', durationDays: 365, price: 199.99 },
+  '1_year_platinum_membership': { tier: 'PLATINUM', durationDays: 365, price: 179.99 },
 };
 
 export const BASE_CATALOG_ID = 'greengo_base_membership';

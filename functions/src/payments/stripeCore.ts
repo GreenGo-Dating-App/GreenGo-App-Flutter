@@ -133,7 +133,7 @@ export const MEMBERSHIP_PRODUCTS: Record<string, PricedProduct & {
   '1_month_platinum':             { name: 'Platinum (Monthly)',  priceUsd: 2999,  priceEur: 2999,  priceBrl: 8990,  interval: 'month', intervalCount: 1, tier: 'PLATINUM' },
   '1_year_silver':                { name: 'Silver (Yearly)',     priceUsd: 6999,  priceEur: 6999,  priceBrl: 24990, interval: 'year',  intervalCount: 1, tier: 'SILVER' },
   '1_year_gold':                  { name: 'Gold (Yearly)',       priceUsd: 11999, priceEur: 11999, priceBrl: 39990, interval: 'year',  intervalCount: 1, tier: 'GOLD' },
-  '1_year_platinum_membership':   { name: 'Platinum (Yearly)',   priceUsd: 19999, priceEur: 19999, priceBrl: 59990, interval: 'year',  intervalCount: 1, tier: 'PLATINUM' },
+  '1_year_platinum_membership':   { name: 'Platinum (Yearly)',   priceUsd: 17999, priceEur: 17999, priceBrl: 59990, interval: 'year',  intervalCount: 1, tier: 'PLATINUM' },
 };
 
 /**

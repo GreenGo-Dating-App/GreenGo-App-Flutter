@@ -360,7 +360,7 @@ function calculateMonthlyPrice(tier: string, billingPeriod: string): number {
   const prices: { [key: string]: { [key: string]: number } } = {
     Silver: { monthly: 9.99, quarterly: 24.99, annual: 69.99 },
     Gold: { monthly: 19.99, quarterly: 49.99, annual: 119.99 },
-    Platinum: { monthly: 29.99, quarterly: 74.99, annual: 199.99 },
+    Platinum: { monthly: 29.99, quarterly: 74.99, annual: 179.99 },
   };
 
   const price = prices[tier]?.[billingPeriod] || 0;

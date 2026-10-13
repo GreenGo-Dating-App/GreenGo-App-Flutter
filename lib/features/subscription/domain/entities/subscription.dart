@@ -69,7 +69,7 @@ extension SubscriptionTierExtension on SubscriptionTier {
       case SubscriptionTier.gold:
         return 119.99;
       case SubscriptionTier.platinum:
-        return 199.99;
+        return 179.99;
       case SubscriptionTier.test:
         return 0.0;
     }

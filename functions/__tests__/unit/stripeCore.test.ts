@@ -551,7 +551,7 @@ describe('pure helpers', () => {
     expect(core.allowedMembershipAmounts('1_month_silver', 'brl').sort((a: number, b: number) => a - b)).toEqual([3490, 4990]);
     // Upgrade discounts apply to legacy prices too (old Platinum yearly 89.99 upgraded from Silver/Gold).
     expect(core.allowedMembershipAmounts('1_year_platinum_membership', 'usd').sort((a: number, b: number) => a - b))
-      .toEqual([7649, 8099, 8999, 16999, 17999, 19999]);
+      .toEqual([7649, 8099, 8999, 15299, 16199, 17999]);
   });
 
   test('invoice subscription id is read across API versions', () => {
