@@ -42206,6 +42206,234 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Creating events and experiences needs the Base membership (or Silver, Gold or Platinum). Without a plan you can browse and chat with 3 people a day.'**
   String get createNeedsPlanBody;
+
+  /// No description provided for @calViewMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'Month'**
+  String get calViewMonth;
+
+  /// No description provided for @calViewWeek.
+  ///
+  /// In en, this message translates to:
+  /// **'Week'**
+  String get calViewWeek;
+
+  /// No description provided for @calViewDay.
+  ///
+  /// In en, this message translates to:
+  /// **'Day'**
+  String get calViewDay;
+
+  /// No description provided for @calToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Today'**
+  String get calToday;
+
+  /// No description provided for @calPrevious.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous'**
+  String get calPrevious;
+
+  /// No description provided for @calNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get calNext;
+
+  /// No description provided for @calNothingThisDay.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing on this day'**
+  String get calNothingThisDay;
+
+  /// No description provided for @calGesturesHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Double-tap a day to open it, long-press for actions, swipe to move.'**
+  String get calGesturesHint;
+
+  /// No description provided for @calFullScreen.
+  ///
+  /// In en, this message translates to:
+  /// **'Full screen'**
+  String get calFullScreen;
+
+  /// No description provided for @dcViewAsList.
+  ///
+  /// In en, this message translates to:
+  /// **'View as a list'**
+  String get dcViewAsList;
+
+  /// No description provided for @dcViewAsCalendar.
+  ///
+  /// In en, this message translates to:
+  /// **'View as a calendar'**
+  String get dcViewAsCalendar;
+
+  /// No description provided for @dcOpenTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Open to book'**
+  String get dcOpenTime;
+
+  /// No description provided for @dcLegendOpen.
+  ///
+  /// In en, this message translates to:
+  /// **'Open'**
+  String get dcLegendOpen;
+
+  /// No description provided for @dcLegendRequest.
+  ///
+  /// In en, this message translates to:
+  /// **'Request'**
+  String get dcLegendRequest;
+
+  /// No description provided for @dcLegendBooked.
+  ///
+  /// In en, this message translates to:
+  /// **'Booked'**
+  String get dcLegendBooked;
+
+  /// No description provided for @dcLegendClosed.
+  ///
+  /// In en, this message translates to:
+  /// **'Closed'**
+  String get dcLegendClosed;
+
+  /// No description provided for @dcBookedLocked.
+  ///
+  /// In en, this message translates to:
+  /// **'This time is booked. Booked appointments can\'t be deleted from the calendar: open the booking to manage it.'**
+  String get dcBookedLocked;
+
+  /// No description provided for @dcOpenBooking.
+  ///
+  /// In en, this message translates to:
+  /// **'Open booking'**
+  String get dcOpenBooking;
+
+  /// No description provided for @dcEditDay.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit this day'**
+  String get dcEditDay;
+
+  /// No description provided for @dcAddTimeHere.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a time'**
+  String get dcAddTimeHere;
+
+  /// No description provided for @dcAddTimeAt.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a time at {time}'**
+  String dcAddTimeAt(String time);
+
+  /// No description provided for @dcCloseDay.
+  ///
+  /// In en, this message translates to:
+  /// **'Close this day'**
+  String get dcCloseDay;
+
+  /// No description provided for @dcOpenDay.
+  ///
+  /// In en, this message translates to:
+  /// **'Open this day again'**
+  String get dcOpenDay;
+
+  /// No description provided for @dcCloseDayBlocked.
+  ///
+  /// In en, this message translates to:
+  /// **'This day has bookings, so it can\'t be closed. Booked appointments stay on the calendar.'**
+  String get dcCloseDayBlocked;
+
+  /// No description provided for @dcDayBookings.
+  ///
+  /// In en, this message translates to:
+  /// **'Bookings this day'**
+  String get dcDayBookings;
+
+  /// No description provided for @dcUnsaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Unsaved changes'**
+  String get dcUnsaved;
+
+  /// No description provided for @dcDiscard.
+  ///
+  /// In en, this message translates to:
+  /// **'Discard'**
+  String get dcDiscard;
+
+  /// No description provided for @dcSaveBlockedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Booked times can\'t be removed'**
+  String get dcSaveBlockedTitle;
+
+  /// No description provided for @dcSaveBlockedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 booked time would disappear with this change.} other{{count} booked times would disappear with this change.}} Keep those times, or open each booking and cancel it first.'**
+  String dcSaveBlockedBody(int count);
+
+  /// No description provided for @dcTimezoneNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Times in {zone}'**
+  String dcTimezoneNote(String zone);
+
+  /// No description provided for @dcGuestsBooked.
+  ///
+  /// In en, this message translates to:
+  /// **'{guests, plural, =1{1 guest} other{{guests} guests}}'**
+  String dcGuestsBooked(int guests);
+
+  /// No description provided for @msCalendarTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Calendar'**
+  String get msCalendarTitle;
+
+  /// No description provided for @msFilterHosting.
+  ///
+  /// In en, this message translates to:
+  /// **'I host'**
+  String get msFilterHosting;
+
+  /// No description provided for @msFilterGoing.
+  ///
+  /// In en, this message translates to:
+  /// **'I\'m going'**
+  String get msFilterGoing;
+
+  /// No description provided for @msCalendarEventsEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No events on this day'**
+  String get msCalendarEventsEmpty;
+
+  /// No description provided for @msCalendarExperiencesEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No experiences on this day'**
+  String get msCalendarExperiencesEmpty;
+
+  /// No description provided for @msCalendarHostingTag.
+  ///
+  /// In en, this message translates to:
+  /// **'Hosting'**
+  String get msCalendarHostingTag;
+
+  /// No description provided for @msCalendarGoingTag.
+  ///
+  /// In en, this message translates to:
+  /// **'Going'**
+  String get msCalendarGoingTag;
 }
 
 class _AppLocalizationsDelegate

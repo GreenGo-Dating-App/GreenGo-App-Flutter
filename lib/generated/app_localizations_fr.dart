@@ -24998,4 +24998,142 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get createNeedsPlanBody =>
       'Pour créer des événements et des expériences, il te faut l\'abonnement de base (ou Silver, Gold ou Platinum). Sans abonnement, tu peux explorer et discuter avec 3 personnes par jour.';
+
+  @override
+  String get calViewMonth => 'Mois';
+
+  @override
+  String get calViewWeek => 'Semaine';
+
+  @override
+  String get calViewDay => 'Jour';
+
+  @override
+  String get calToday => 'Aujourd\'hui';
+
+  @override
+  String get calPrevious => 'Précédent';
+
+  @override
+  String get calNext => 'Suivant';
+
+  @override
+  String get calNothingThisDay => 'Rien ce jour-là';
+
+  @override
+  String get calGesturesHint =>
+      'Touchez deux fois un jour pour l\'ouvrir, appuyez longuement pour les actions, balayez pour naviguer.';
+
+  @override
+  String get calFullScreen => 'Plein écran';
+
+  @override
+  String get dcViewAsList => 'Voir en liste';
+
+  @override
+  String get dcViewAsCalendar => 'Voir en calendrier';
+
+  @override
+  String get dcOpenTime => 'Réservable';
+
+  @override
+  String get dcLegendOpen => 'Libre';
+
+  @override
+  String get dcLegendRequest => 'Demande';
+
+  @override
+  String get dcLegendBooked => 'Réservé';
+
+  @override
+  String get dcLegendClosed => 'Fermé';
+
+  @override
+  String get dcBookedLocked =>
+      'Ce créneau est réservé. Les rendez-vous réservés ne peuvent pas être supprimés depuis le calendrier : ouvrez la réservation pour la gérer.';
+
+  @override
+  String get dcOpenBooking => 'Ouvrir la réservation';
+
+  @override
+  String get dcEditDay => 'Modifier ce jour';
+
+  @override
+  String get dcAddTimeHere => 'Ajouter un horaire';
+
+  @override
+  String dcAddTimeAt(String time) {
+    return 'Ajouter un horaire à $time';
+  }
+
+  @override
+  String get dcCloseDay => 'Fermer ce jour';
+
+  @override
+  String get dcOpenDay => 'Rouvrir ce jour';
+
+  @override
+  String get dcCloseDayBlocked =>
+      'Ce jour a des réservations, il ne peut donc pas être fermé. Les rendez-vous réservés restent dans le calendrier.';
+
+  @override
+  String get dcDayBookings => 'Réservations du jour';
+
+  @override
+  String get dcUnsaved => 'Modifications non enregistrées';
+
+  @override
+  String get dcDiscard => 'Annuler';
+
+  @override
+  String get dcSaveBlockedTitle =>
+      'Les horaires réservés ne peuvent pas être retirés';
+
+  @override
+  String dcSaveBlockedBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Avec ce changement, $count horaires réservés disparaîtraient.',
+      one: 'Avec ce changement, 1 horaire réservé disparaîtrait.',
+    );
+    return '$_temp0 Gardez ces horaires, ou ouvrez chaque réservation et annulez-la d\'abord.';
+  }
+
+  @override
+  String dcTimezoneNote(String zone) {
+    return 'Horaires en $zone';
+  }
+
+  @override
+  String dcGuestsBooked(int guests) {
+    String _temp0 = intl.Intl.pluralLogic(
+      guests,
+      locale: localeName,
+      other: '$guests invités',
+      one: '1 invité',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get msCalendarTitle => 'Calendrier';
+
+  @override
+  String get msFilterHosting => 'J\'organise';
+
+  @override
+  String get msFilterGoing => 'J\'y vais';
+
+  @override
+  String get msCalendarEventsEmpty => 'Aucun événement ce jour-là';
+
+  @override
+  String get msCalendarExperiencesEmpty => 'Aucune expérience ce jour-là';
+
+  @override
+  String get msCalendarHostingTag => 'Hôte';
+
+  @override
+  String get msCalendarGoingTag => 'Participant';
 }

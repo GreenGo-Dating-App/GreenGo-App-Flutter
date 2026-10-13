@@ -24830,6 +24830,144 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get createNeedsPlanBody =>
       'Para criar eventos e experiências precisas da subscrição Base (ou Silver, Gold ou Platinum). Sem subscrição podes explorar e conversar com 3 pessoas por dia.';
+
+  @override
+  String get calViewMonth => 'Mês';
+
+  @override
+  String get calViewWeek => 'Semana';
+
+  @override
+  String get calViewDay => 'Dia';
+
+  @override
+  String get calToday => 'Hoje';
+
+  @override
+  String get calPrevious => 'Anterior';
+
+  @override
+  String get calNext => 'Seguinte';
+
+  @override
+  String get calNothingThisDay => 'Nada neste dia';
+
+  @override
+  String get calGesturesHint =>
+      'Toque duas vezes num dia para o abrir, mantenha premido para ver ações e deslize para navegar.';
+
+  @override
+  String get calFullScreen => 'Ecrã inteiro';
+
+  @override
+  String get dcViewAsList => 'Ver como lista';
+
+  @override
+  String get dcViewAsCalendar => 'Ver como calendário';
+
+  @override
+  String get dcOpenTime => 'Disponível';
+
+  @override
+  String get dcLegendOpen => 'Livre';
+
+  @override
+  String get dcLegendRequest => 'Pedido';
+
+  @override
+  String get dcLegendBooked => 'Reservado';
+
+  @override
+  String get dcLegendClosed => 'Fechado';
+
+  @override
+  String get dcBookedLocked =>
+      'Este horário está reservado. As marcações reservadas não podem ser apagadas no calendário: abra a reserva para a gerir.';
+
+  @override
+  String get dcOpenBooking => 'Abrir reserva';
+
+  @override
+  String get dcEditDay => 'Editar este dia';
+
+  @override
+  String get dcAddTimeHere => 'Adicionar um horário';
+
+  @override
+  String dcAddTimeAt(String time) {
+    return 'Adicionar um horário às $time';
+  }
+
+  @override
+  String get dcCloseDay => 'Fechar este dia';
+
+  @override
+  String get dcOpenDay => 'Voltar a abrir este dia';
+
+  @override
+  String get dcCloseDayBlocked =>
+      'Este dia tem reservas, por isso não pode ser fechado. As marcações reservadas ficam no calendário.';
+
+  @override
+  String get dcDayBookings => 'Reservas deste dia';
+
+  @override
+  String get dcUnsaved => 'Alterações por guardar';
+
+  @override
+  String get dcDiscard => 'Descartar';
+
+  @override
+  String get dcSaveBlockedTitle =>
+      'Os horários reservados não podem ser removidos';
+
+  @override
+  String dcSaveBlockedBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Com esta alteração desapareceriam $count horários reservados.',
+      one: 'Com esta alteração desapareceria 1 horário reservado.',
+    );
+    return '$_temp0 Mantenha esses horários ou abra cada reserva e cancele-a primeiro.';
+  }
+
+  @override
+  String dcTimezoneNote(String zone) {
+    return 'Horários em $zone';
+  }
+
+  @override
+  String dcGuestsBooked(int guests) {
+    String _temp0 = intl.Intl.pluralLogic(
+      guests,
+      locale: localeName,
+      other: '$guests convidados',
+      one: '1 convidado',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get msCalendarTitle => 'Calendário';
+
+  @override
+  String get msFilterHosting => 'Organizo eu';
+
+  @override
+  String get msFilterGoing => 'Vou';
+
+  @override
+  String get msCalendarEventsEmpty => 'Sem eventos neste dia';
+
+  @override
+  String get msCalendarExperiencesEmpty => 'Sem experiências neste dia';
+
+  @override
+  String get msCalendarHostingTag => 'Anfitrião';
+
+  @override
+  String get msCalendarGoingTag => 'Vais';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -49669,4 +49807,142 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get createNeedsPlanBody =>
       'Para criar eventos e experiências você precisa da assinatura Base (ou Silver, Gold ou Platinum). Sem assinatura você pode explorar e conversar com 3 pessoas por dia.';
+
+  @override
+  String get calViewMonth => 'Mês';
+
+  @override
+  String get calViewWeek => 'Semana';
+
+  @override
+  String get calViewDay => 'Dia';
+
+  @override
+  String get calToday => 'Hoje';
+
+  @override
+  String get calPrevious => 'Anterior';
+
+  @override
+  String get calNext => 'Próximo';
+
+  @override
+  String get calNothingThisDay => 'Nada neste dia';
+
+  @override
+  String get calGesturesHint =>
+      'Toque duas vezes em um dia para abrir, segure para ver ações e deslize para navegar.';
+
+  @override
+  String get calFullScreen => 'Tela cheia';
+
+  @override
+  String get dcViewAsList => 'Ver como lista';
+
+  @override
+  String get dcViewAsCalendar => 'Ver como calendário';
+
+  @override
+  String get dcOpenTime => 'Disponível';
+
+  @override
+  String get dcLegendOpen => 'Livre';
+
+  @override
+  String get dcLegendRequest => 'Solicitação';
+
+  @override
+  String get dcLegendBooked => 'Reservado';
+
+  @override
+  String get dcLegendClosed => 'Fechado';
+
+  @override
+  String get dcBookedLocked =>
+      'Este horário está reservado. Agendamentos reservados não podem ser excluídos pelo calendário: abra a reserva para gerenciá-la.';
+
+  @override
+  String get dcOpenBooking => 'Abrir reserva';
+
+  @override
+  String get dcEditDay => 'Editar este dia';
+
+  @override
+  String get dcAddTimeHere => 'Adicionar um horário';
+
+  @override
+  String dcAddTimeAt(String time) {
+    return 'Adicionar um horário às $time';
+  }
+
+  @override
+  String get dcCloseDay => 'Fechar este dia';
+
+  @override
+  String get dcOpenDay => 'Reabrir este dia';
+
+  @override
+  String get dcCloseDayBlocked =>
+      'Este dia tem reservas, por isso não pode ser fechado. Os agendamentos reservados ficam no calendário.';
+
+  @override
+  String get dcDayBookings => 'Reservas deste dia';
+
+  @override
+  String get dcUnsaved => 'Alterações não salvas';
+
+  @override
+  String get dcDiscard => 'Descartar';
+
+  @override
+  String get dcSaveBlockedTitle =>
+      'Os horários reservados não podem ser removidos';
+
+  @override
+  String dcSaveBlockedBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Com esta alteração desapareceriam $count horários reservados.',
+      one: 'Com esta alteração desapareceria 1 horário reservado.',
+    );
+    return '$_temp0 Mantenha esses horários ou abra cada reserva e cancele-a primeiro.';
+  }
+
+  @override
+  String dcTimezoneNote(String zone) {
+    return 'Horários em $zone';
+  }
+
+  @override
+  String dcGuestsBooked(int guests) {
+    String _temp0 = intl.Intl.pluralLogic(
+      guests,
+      locale: localeName,
+      other: '$guests convidados',
+      one: '1 convidado',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get msCalendarTitle => 'Calendário';
+
+  @override
+  String get msFilterHosting => 'Eu organizo';
+
+  @override
+  String get msFilterGoing => 'Vou';
+
+  @override
+  String get msCalendarEventsEmpty => 'Sem eventos neste dia';
+
+  @override
+  String get msCalendarExperiencesEmpty => 'Sem experiências neste dia';
+
+  @override
+  String get msCalendarHostingTag => 'Anfitrião';
+
+  @override
+  String get msCalendarGoingTag => 'Você vai';
 }

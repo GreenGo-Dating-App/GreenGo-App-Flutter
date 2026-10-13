@@ -24622,4 +24622,141 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get createNeedsPlanBody =>
       'Creating events and experiences needs the Base membership (or Silver, Gold or Platinum). Without a plan you can browse and chat with 3 people a day.';
+
+  @override
+  String get calViewMonth => 'Month';
+
+  @override
+  String get calViewWeek => 'Week';
+
+  @override
+  String get calViewDay => 'Day';
+
+  @override
+  String get calToday => 'Today';
+
+  @override
+  String get calPrevious => 'Previous';
+
+  @override
+  String get calNext => 'Next';
+
+  @override
+  String get calNothingThisDay => 'Nothing on this day';
+
+  @override
+  String get calGesturesHint =>
+      'Double-tap a day to open it, long-press for actions, swipe to move.';
+
+  @override
+  String get calFullScreen => 'Full screen';
+
+  @override
+  String get dcViewAsList => 'View as a list';
+
+  @override
+  String get dcViewAsCalendar => 'View as a calendar';
+
+  @override
+  String get dcOpenTime => 'Open to book';
+
+  @override
+  String get dcLegendOpen => 'Open';
+
+  @override
+  String get dcLegendRequest => 'Request';
+
+  @override
+  String get dcLegendBooked => 'Booked';
+
+  @override
+  String get dcLegendClosed => 'Closed';
+
+  @override
+  String get dcBookedLocked =>
+      'This time is booked. Booked appointments can\'t be deleted from the calendar: open the booking to manage it.';
+
+  @override
+  String get dcOpenBooking => 'Open booking';
+
+  @override
+  String get dcEditDay => 'Edit this day';
+
+  @override
+  String get dcAddTimeHere => 'Add a time';
+
+  @override
+  String dcAddTimeAt(String time) {
+    return 'Add a time at $time';
+  }
+
+  @override
+  String get dcCloseDay => 'Close this day';
+
+  @override
+  String get dcOpenDay => 'Open this day again';
+
+  @override
+  String get dcCloseDayBlocked =>
+      'This day has bookings, so it can\'t be closed. Booked appointments stay on the calendar.';
+
+  @override
+  String get dcDayBookings => 'Bookings this day';
+
+  @override
+  String get dcUnsaved => 'Unsaved changes';
+
+  @override
+  String get dcDiscard => 'Discard';
+
+  @override
+  String get dcSaveBlockedTitle => 'Booked times can\'t be removed';
+
+  @override
+  String dcSaveBlockedBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count booked times would disappear with this change.',
+      one: '1 booked time would disappear with this change.',
+    );
+    return '$_temp0 Keep those times, or open each booking and cancel it first.';
+  }
+
+  @override
+  String dcTimezoneNote(String zone) {
+    return 'Times in $zone';
+  }
+
+  @override
+  String dcGuestsBooked(int guests) {
+    String _temp0 = intl.Intl.pluralLogic(
+      guests,
+      locale: localeName,
+      other: '$guests guests',
+      one: '1 guest',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get msCalendarTitle => 'Calendar';
+
+  @override
+  String get msFilterHosting => 'I host';
+
+  @override
+  String get msFilterGoing => 'I\'m going';
+
+  @override
+  String get msCalendarEventsEmpty => 'No events on this day';
+
+  @override
+  String get msCalendarExperiencesEmpty => 'No experiences on this day';
+
+  @override
+  String get msCalendarHostingTag => 'Hosting';
+
+  @override
+  String get msCalendarGoingTag => 'Going';
 }

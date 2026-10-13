@@ -24916,4 +24916,142 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get createNeedsPlanBody =>
       'Um Events und Erlebnisse zu erstellen, brauchst du die Basis-Mitgliedschaft (oder Silver, Gold oder Platinum). Ohne Mitgliedschaft kannst du stöbern und mit 3 Personen pro Tag chatten.';
+
+  @override
+  String get calViewMonth => 'Monat';
+
+  @override
+  String get calViewWeek => 'Woche';
+
+  @override
+  String get calViewDay => 'Tag';
+
+  @override
+  String get calToday => 'Heute';
+
+  @override
+  String get calPrevious => 'Zurück';
+
+  @override
+  String get calNext => 'Weiter';
+
+  @override
+  String get calNothingThisDay => 'An diesem Tag ist nichts geplant';
+
+  @override
+  String get calGesturesHint =>
+      'Tag doppelt tippen zum Öffnen, lange drücken für Aktionen, wischen zum Blättern.';
+
+  @override
+  String get calFullScreen => 'Vollbild';
+
+  @override
+  String get dcViewAsList => 'Als Liste anzeigen';
+
+  @override
+  String get dcViewAsCalendar => 'Als Kalender anzeigen';
+
+  @override
+  String get dcOpenTime => 'Buchbar';
+
+  @override
+  String get dcLegendOpen => 'Frei';
+
+  @override
+  String get dcLegendRequest => 'Anfrage';
+
+  @override
+  String get dcLegendBooked => 'Gebucht';
+
+  @override
+  String get dcLegendClosed => 'Geschlossen';
+
+  @override
+  String get dcBookedLocked =>
+      'Diese Zeit ist gebucht. Gebuchte Termine lassen sich im Kalender nicht löschen: Öffne die Buchung, um sie zu verwalten.';
+
+  @override
+  String get dcOpenBooking => 'Buchung öffnen';
+
+  @override
+  String get dcEditDay => 'Diesen Tag bearbeiten';
+
+  @override
+  String get dcAddTimeHere => 'Zeit hinzufügen';
+
+  @override
+  String dcAddTimeAt(String time) {
+    return 'Zeit um $time hinzufügen';
+  }
+
+  @override
+  String get dcCloseDay => 'Diesen Tag schließen';
+
+  @override
+  String get dcOpenDay => 'Diesen Tag wieder öffnen';
+
+  @override
+  String get dcCloseDayBlocked =>
+      'An diesem Tag gibt es Buchungen, deshalb kann er nicht geschlossen werden. Gebuchte Termine bleiben im Kalender.';
+
+  @override
+  String get dcDayBookings => 'Buchungen an diesem Tag';
+
+  @override
+  String get dcUnsaved => 'Ungespeicherte Änderungen';
+
+  @override
+  String get dcDiscard => 'Verwerfen';
+
+  @override
+  String get dcSaveBlockedTitle =>
+      'Gebuchte Zeiten können nicht entfernt werden';
+
+  @override
+  String dcSaveBlockedBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mit dieser Änderung würden $count gebuchte Zeiten verschwinden.',
+      one: 'Mit dieser Änderung würde 1 gebuchte Zeit verschwinden.',
+    );
+    return '$_temp0 Behalte diese Zeiten oder öffne zuerst jede Buchung und storniere sie.';
+  }
+
+  @override
+  String dcTimezoneNote(String zone) {
+    return 'Zeiten in $zone';
+  }
+
+  @override
+  String dcGuestsBooked(int guests) {
+    String _temp0 = intl.Intl.pluralLogic(
+      guests,
+      locale: localeName,
+      other: '$guests Gäste',
+      one: '1 Gast',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get msCalendarTitle => 'Kalender';
+
+  @override
+  String get msFilterHosting => 'Ich veranstalte';
+
+  @override
+  String get msFilterGoing => 'Ich gehe hin';
+
+  @override
+  String get msCalendarEventsEmpty => 'Keine Events an diesem Tag';
+
+  @override
+  String get msCalendarExperiencesEmpty => 'Keine Erlebnisse an diesem Tag';
+
+  @override
+  String get msCalendarHostingTag => 'Gastgeber';
+
+  @override
+  String get msCalendarGoingTag => 'Dabei';
 }
