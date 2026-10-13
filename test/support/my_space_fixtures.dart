@@ -19,8 +19,13 @@ class FakeMySpaceRepository implements MySpaceRepository {
     List<Booking>? hostBookings,
     Map<String, List<EventAttendee>>? attendees,
     this.failEvents = false,
+    List<Booking>? guestBookings,
+    Map<String, String>? experiencePhotoUrls,
+    this.failCalendar = false,
   })  : events = events ?? <Event>[],
         hostBookings = hostBookings ?? <Booking>[],
+        guestBookings = guestBookings ?? <Booking>[],
+        experiencePhotoUrls = experiencePhotoUrls ?? <String, String>{},
         attendees = attendees ?? <String, List<EventAttendee>>{};
 
   int requests;
@@ -31,6 +36,17 @@ class FakeMySpaceRepository implements MySpaceRepository {
   List<Booking> hostBookings;
   Map<String, List<EventAttendee>> attendees;
   bool failEvents;
+
+  /// The user's bookings as a guest (calendar).
+  List<Booking> guestBookings;
+
+  /// experienceId -> photo (calendar thumbnails).
+  Map<String, String> experiencePhotoUrls;
+
+  /// Calendar range loads throw.
+  bool failCalendar;
+  final List<(String, DateTime, DateTime)> rangeCalls = [];
+  final List<(List<String>, bool)> photoCalls = [];
 
   /// Refusal returned by [setEventCheckIn] (null = accepted).
   String? refuseCheckIn;
@@ -111,7 +127,43 @@ class FakeMySpaceRepository implements MySpaceRepository {
     hostBookings = [for (final x in hostBookings) x.id == b.id ? updated : x];
     return Right(updated);
   }
+
+  @override
+  Future<List<Booking>> hostBookingsInRange(
+      String uid, DateTime from, DateTime to,
+      {int limit = 300}) async {
+    rangeCalls.add(('host', from, to));
+    if (failCalendar) throw Exception('offline');
+    return _inRange(hostBookings.where((b) => b.hostId == uid), from, to);
+  }
+
+  @override
+  Future<List<Booking>> guestBookingsInRange(
+      String uid, DateTime from, DateTime to,
+      {int limit = 300}) async {
+    rangeCalls.add(('guest', from, to));
+    if (failCalendar) throw Exception('offline');
+    return _inRange(guestBookings.where((b) => b.guestId == uid), from, to);
+  }
+
+  static List<Booking> _inRange(
+          Iterable<Booking> all, DateTime from, DateTime to) =>
+      all
+          .where((b) => !b.slotStart.isBefore(from) && b.slotStart.isBefore(to))
+          .toList()
+        ..sort((a, b) => a.slotStart.compareTo(b.slotStart));
+
+  @override
+  Future<Map<String, String>> experiencePhotos(String uid, List<String> ids,
+      {required bool hosted}) async {
+    photoCalls.add((ids, hosted));
+    return {
+      for (final id in ids)
+        if (experiencePhotoUrls[id] != null) id: experiencePhotoUrls[id]!,
+    };
+  }
 }
+
 
 Booking testBooking({
   String id = 'b1',
