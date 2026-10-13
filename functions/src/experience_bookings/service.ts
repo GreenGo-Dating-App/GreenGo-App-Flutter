@@ -724,6 +724,8 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
     const d = notifData(bookingId, b);
     if (b.status === 'requested') {
       await safeNotify({ recipientId: hostId, type: 'booking_request', title: lt('srvBookingRequested'), body: titleText(b), data: d, actor });
+      // The guest gets a receipt too, so both sides hear about every booking.
+      await safeNotify({ recipientId: uid, type: 'booking_request_sent', title: lt('srvBookingRequestSent'), body: titleText(b), data: d });
     } else {
       await safeNotify({ recipientId: hostId, type: 'booking_new', title: lt('srvBookingBooked'), body: titleText(b), data: d, actor });
       await safeNotify({

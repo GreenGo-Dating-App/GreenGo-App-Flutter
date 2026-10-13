@@ -335,7 +335,11 @@ describe('createBooking', () => {
     expect(r2.bookingId).toBe(r1.bookingId);
     expect(r2.alreadyExisted).toBe(true);
     expect(slot().bookedCount).toBe(2);
-    expect(sent.map((s) => s.type).sort()).toEqual(['booking_accepted', 'booking_request']);
+    expect(sent.map((s) => s.type).sort()).toEqual(['booking_accepted', 'booking_request', 'booking_request_sent']);
+    // Both sides hear about the request: host to act on it, guest as a receipt.
+    expect(sent.find((s) => s.type === 'booking_request')!.recipientId).toBe(HOST);
+    expect(sent.find((s) => s.type === 'booking_request_sent')!.recipientId).toBe(GUEST);
+    expect(sent.find((s) => s.type === 'booking_accepted')!.recipientId).toBe(GUEST);
   });
 
   test('Base membership required: free / expired refused, Base and active paid tier allowed (free experience too)', async () => {

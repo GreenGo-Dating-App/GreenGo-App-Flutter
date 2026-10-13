@@ -317,5 +317,18 @@
   "attrCatWaterfall",
   "attrCatZoo",
   "attrCatShopping",
-  "attrCatAquarium"
+  "attrCatAquarium",
+  "srvBookingRequestSent",
+  "emailBookingGuestLabel",
+  "emailBookingRespondByLabel",
+  "emailBookingRequestHostSubject",
+  "emailBookingRequestHostIntro",
+  "emailBookingRequestHostAction",
+  "emailBookingRequestGuestSubject",
+  "emailBookingRequestGuestIntro",
+  "emailBookingRequestGuestNext",
+  "emailBookingConfirmedSubject",
+  "emailBookingConfirmedHostIntro",
+  "emailBookingConfirmedGuestIntro",
+  "emailBookingFooter"
 ]

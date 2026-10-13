@@ -178,6 +178,30 @@ String? serverText(
       return l10n.csvStatusConfirmed;
     case 'csvStatusPaid':
       return l10n.csvStatusPaid;
+    case 'emailBookingConfirmedGuestIntro':
+      return l10n.emailBookingConfirmedGuestIntro;
+    case 'emailBookingConfirmedHostIntro':
+      return l10n.emailBookingConfirmedHostIntro(_str(p['name']));
+    case 'emailBookingConfirmedSubject':
+      return l10n.emailBookingConfirmedSubject(_str(p['title']));
+    case 'emailBookingFooter':
+      return l10n.emailBookingFooter;
+    case 'emailBookingGuestLabel':
+      return l10n.emailBookingGuestLabel;
+    case 'emailBookingRequestGuestIntro':
+      return l10n.emailBookingRequestGuestIntro;
+    case 'emailBookingRequestGuestNext':
+      return l10n.emailBookingRequestGuestNext;
+    case 'emailBookingRequestGuestSubject':
+      return l10n.emailBookingRequestGuestSubject(_str(p['title']));
+    case 'emailBookingRequestHostAction':
+      return l10n.emailBookingRequestHostAction;
+    case 'emailBookingRequestHostIntro':
+      return l10n.emailBookingRequestHostIntro(_str(p['name']));
+    case 'emailBookingRequestHostSubject':
+      return l10n.emailBookingRequestHostSubject(_str(p['title']));
+    case 'emailBookingRespondByLabel':
+      return l10n.emailBookingRespondByLabel;
     case 'emailCopyrightAcceptedBody':
       return l10n.emailCopyrightAcceptedBody(_str(p['ref']));
     case 'emailCopyrightAcceptedSubject':
@@ -460,6 +484,8 @@ String? serverText(
       return l10n.srvBookingRequestExpired;
     case 'srvBookingRequestExpiredBody':
       return l10n.srvBookingRequestExpiredBody(_str(p['title']));
+    case 'srvBookingRequestSent':
+      return l10n.srvBookingRequestSent;
     case 'srvBookingRequested':
       return l10n.srvBookingRequested;
     case 'srvBookingReviewGuest':

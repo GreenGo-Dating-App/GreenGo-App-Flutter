@@ -12313,6 +12313,54 @@
     }
   },
   "emailTicketFooter": "You can also find your tickets in the GreenGo app. Do not share these QR codes.",
+  "srvBookingRequestSent": "Booking request sent",
+  "emailBookingGuestLabel": "Guest",
+  "emailBookingRespondByLabel": "Respond by",
+  "emailBookingRequestHostSubject": "New booking request: {title}",
+  "@emailBookingRequestHostSubject": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "emailBookingRequestHostIntro": "{name} would like to book your experience.",
+  "@emailBookingRequestHostIntro": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "emailBookingRequestHostAction": "Open GreenGo to accept or decline this request before it expires.",
+  "emailBookingRequestGuestSubject": "Booking request sent: {title}",
+  "@emailBookingRequestGuestSubject": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "emailBookingRequestGuestIntro": "Your booking request has been sent to the host.",
+  "emailBookingRequestGuestNext": "What happens next: the host accepts or declines your request, and we will let you know as soon as they respond. If the host does not respond in time, the request expires automatically.",
+  "emailBookingConfirmedSubject": "Booking confirmed: {title}",
+  "@emailBookingConfirmedSubject": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "emailBookingConfirmedHostIntro": "{name} has a confirmed booking for your experience.",
+  "@emailBookingConfirmedHostIntro": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "emailBookingConfirmedGuestIntro": "Your booking is confirmed.",
+  "emailBookingFooter": "You can find this booking and all its details in the GreenGo app.",
   "emailParticipantsSubject": "Participants list: {title}",
   "@emailParticipantsSubject": {
     "placeholders": {
