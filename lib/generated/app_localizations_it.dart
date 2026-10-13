@@ -24466,6 +24466,9 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
+  String get chatDatasetsMinimise => 'Continua in background';
+
+  @override
   String get chatDatasetsReady => 'Contenuti della chat pronti, anche offline';
 
   @override

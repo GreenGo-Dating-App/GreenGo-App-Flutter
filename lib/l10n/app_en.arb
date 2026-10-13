@@ -13471,6 +13471,7 @@
   "chatDatasetsDownloadOnce": "We're downloading phrases, cultural tips and places so the chat also works offline. This happens only once.",
   "chatDatasetsDownloadingPercent": "Downloading… {percent}%",
   "@chatDatasetsDownloadingPercent": {"placeholders": {"percent": {"type": "int"}}},
+  "chatDatasetsMinimise": "Continue in the background",
   "chatDatasetsReady": "Chat content ready, also offline",
   "chatDatasetsRetryLater": "Some chat content could not be downloaded. We'll try again next time.",
   "chatAskBeenTo": "Have you been to {place}?",

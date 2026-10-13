@@ -7485,6 +7485,7 @@
   "chatDatasetsDownloadTitle": "A preparar o GreenGo",
   "chatDatasetsDownloadOnce": "Estamos a transferir frases, dicas culturais e lugares para que o chat funcione também offline. Isto acontece só uma vez.",
   "chatDatasetsDownloadingPercent": "A transferir… {percent}%",
+  "chatDatasetsMinimise": "Continuar em segundo plano",
   "chatDatasetsReady": "Conteúdos do chat prontos, também offline",
   "chatDatasetsRetryLater": "Não foi possível transferir alguns conteúdos do chat. Tentaremos novamente da próxima vez.",
   "chatAskBeenTo": "Já estiveste em {place}?",

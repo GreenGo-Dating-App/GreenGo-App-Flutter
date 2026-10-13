@@ -24578,6 +24578,9 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
+  String get chatDatasetsMinimise => 'Continuer en arrière-plan';
+
+  @override
   String get chatDatasetsReady => 'Contenu du chat prêt, même hors ligne';
 
   @override

@@ -24410,6 +24410,9 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get chatDatasetsMinimise => 'Continuar em segundo plano';
+
+  @override
   String get chatDatasetsReady => 'Conteúdos do chat prontos, também offline';
 
   @override
@@ -49166,6 +49169,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String chatDatasetsDownloadingPercent(int percent) {
     return 'Baixando… $percent%';
   }
+
+  @override
+  String get chatDatasetsMinimise => 'Continuar em segundo plano';
 
   @override
   String get chatDatasetsReady => 'Conteúdo do chat pronto, também offline';

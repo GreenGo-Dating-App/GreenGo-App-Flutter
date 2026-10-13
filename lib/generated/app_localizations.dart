@@ -41439,6 +41439,12 @@ abstract class AppLocalizations {
   /// **'Downloading… {percent}%'**
   String chatDatasetsDownloadingPercent(int percent);
 
+  /// No description provided for @chatDatasetsMinimise.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue in the background'**
+  String get chatDatasetsMinimise;
+
   /// No description provided for @chatDatasetsReady.
   ///
   /// In en, this message translates to:

@@ -7485,6 +7485,7 @@
   "chatDatasetsDownloadTitle": "GreenGo wird vorbereitet",
   "chatDatasetsDownloadOnce": "Wir laden Sätze, Kultur-Tipps und Orte herunter, damit der Chat auch offline funktioniert. Das passiert nur einmal.",
   "chatDatasetsDownloadingPercent": "Wird heruntergeladen… {percent} %",
+  "chatDatasetsMinimise": "Im Hintergrund fortsetzen",
   "chatDatasetsReady": "Chat-Inhalte bereit, auch offline",
   "chatDatasetsRetryLater": "Einige Chat-Inhalte konnten nicht heruntergeladen werden. Wir versuchen es beim nächsten Mal erneut.",
   "chatAskBeenTo": "Warst du schon mal in {place}?",

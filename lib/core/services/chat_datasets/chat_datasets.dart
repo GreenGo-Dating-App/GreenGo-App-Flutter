@@ -3,7 +3,8 @@ import 'dart:convert';
 import 'dart:typed_data';
 
 import 'package:archive/archive.dart';
-import 'package:firebase_storage/firebase_storage.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;
@@ -148,7 +149,8 @@ class ChatDatasets {
       _onBytes = (n, received) {
         if (n == name) onProgress?.call(((base + (received < w ? received : w)) / total).clamp(0.0, 1.0));
       };
-      await ensure(name);
+      // One stuck file must not freeze the window: it is retried next start.
+      await ensure(name).timeout(const Duration(minutes: 2), onTimeout: () {});
       done += w;
       onProgress?.call((done / total).clamp(0.0, 1.0));
     }
@@ -157,6 +159,41 @@ class ChatDatasets {
   }
 
   void Function(String name, int received)? _onBytes;
+
+  /// No network step may hang the first-run window: give up and retry later.
+  static const Duration _netTimeout = Duration(seconds: 30);
+
+  /// The file's bytes from the Firebase Storage REST endpoint, with the
+  /// user's ID token (rule: chat_datasets/** readable when signed in). Plain
+  /// HTTPS, no Storage SDK call (on the web that call could hang for good).
+  static Uri _mediaUri(String path) {
+    String bucket;
+    try {
+      bucket = Firebase.app().options.storageBucket ?? _defaultBucket;
+    } catch (_) {
+      bucket = _defaultBucket;
+    }
+    return Uri.parse('https://firebasestorage.googleapis.com/v0/b/$bucket/o/'
+        '${Uri.encodeComponent(path)}?alt=media');
+  }
+
+  static const String _defaultBucket = 'greengo-chat.firebasestorage.app';
+
+  /// The browser cache (Cache Storage) can stall; the device file system
+  /// does not, so only the web gets a timeout (null = not cached).
+  static Future<T?> _webTimeout<T>(Future<T?> f, Duration d) =>
+      kIsWeb ? f.timeout(d, onTimeout: () => null) : f;
+
+  static Future<Map<String, String>> _authHeaders() async {
+    try {
+      final token = await FirebaseAuth.instance.currentUser
+          ?.getIdToken()
+          .timeout(const Duration(seconds: 15));
+      return token == null ? const {} : {'Authorization': 'Firebase $token'};
+    } catch (_) {
+      return const {};
+    }
+  }
 
   /// True when [name] is loaded in memory.
   bool isLoaded(String name) => _isLoaded(name);
@@ -192,14 +229,14 @@ class ChatDatasets {
       final entry = (manifest?['files'] as Map?)?[name];
       if (entry is! Map || entry['path'] is! String) return null;
       final path = entry['path'] as String;
-      var bytes = await _cache.read(path);
+      var bytes = await _webTimeout(_cache.read(path), const Duration(seconds: 10));
       if (bytes == null) {
-        final url = await FirebaseStorage.instance.ref(path).getDownloadURL();
         // Streamed, so the first-run download can show real progress.
-        final res = await http.Client().send(http.Request('GET', Uri.parse(url)));
+        final req = http.Request('GET', _mediaUri(path))..headers.addAll(await _authHeaders());
+        final res = await http.Client().send(req).timeout(_netTimeout);
         if (res.statusCode != 200) return null;
         final buf = BytesBuilder(copy: false);
-        await for (final chunk in res.stream) {
+        await for (final chunk in res.stream.timeout(_netTimeout)) {
           buf.add(chunk);
           _onBytes?.call(name, buf.length);
         }
@@ -224,7 +261,7 @@ class ChatDatasets {
       // at once, with no network wait; a newer build found by the background
       // refresh is used from the next app start.
       try {
-        final cached = await _cache.readManifest();
+        final cached = await _webTimeout(_cache.readManifest(), const Duration(seconds: 5));
         if (cached != null) {
           _manifest = jsonDecode(utf8.decode(cached)) as Map<String, dynamic>;
           unawaited(_fetchManifest());
@@ -239,8 +276,9 @@ class ChatDatasets {
   /// [_manifest] only when none is in use yet.
   Future<Map<String, dynamic>?> _fetchManifest() async {
     try {
-      final url = await FirebaseStorage.instance.ref(manifestPath).getDownloadURL();
-      final res = await http.get(Uri.parse(url));
+      final res = await http
+          .get(_mediaUri(manifestPath), headers: await _authHeaders())
+          .timeout(_netTimeout);
       if (res.statusCode != 200) return null;
       final m = jsonDecode(utf8.decode(res.bodyBytes)) as Map<String, dynamic>;
       _manifest ??= m;

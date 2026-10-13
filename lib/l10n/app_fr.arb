@@ -6911,6 +6911,7 @@
   "chatDatasetsDownloadTitle": "Préparation de GreenGo",
   "chatDatasetsDownloadOnce": "Nous téléchargeons des phrases, des conseils culturels et des lieux pour que le chat fonctionne aussi hors ligne. Cela n'arrive qu'une fois.",
   "chatDatasetsDownloadingPercent": "Téléchargement… {percent} %",
+  "chatDatasetsMinimise": "Continuer en arrière-plan",
   "chatDatasetsReady": "Contenu du chat prêt, même hors ligne",
   "chatDatasetsRetryLater": "Une partie du contenu du chat n'a pas pu être téléchargée. Nous réessaierons la prochaine fois.",
   "chatAskBeenTo": "Es-tu déjà allé à {place} ?",

@@ -7485,6 +7485,7 @@
   "chatDatasetsDownloadTitle": "Preparando o GreenGo",
   "chatDatasetsDownloadOnce": "Estamos baixando frases, dicas culturais e lugares para o chat funcionar também offline. Isso acontece só uma vez.",
   "chatDatasetsDownloadingPercent": "Baixando… {percent}%",
+  "chatDatasetsMinimise": "Continuar em segundo plano",
   "chatDatasetsReady": "Conteúdo do chat pronto, também offline",
   "chatDatasetsRetryLater": "Não foi possível baixar parte do conteúdo do chat. Vamos tentar de novo na próxima vez.",
   "chatAskBeenTo": "Você já foi para {place}?",

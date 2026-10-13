@@ -8,10 +8,12 @@ import '../../../../generated/app_localizations.dart';
 
 /// First use of the app, ONCE: downloads every chat dataset (ice-breakers,
 /// sentences, cultural tips, keywords, word lists, quotes) into the device
-/// cache behind a centred, blocking window with the percentage. The user
-/// waits until it completes. Later starts read everything from the cache
-/// (no window). If something fails the window says so, the user continues,
-/// and the download runs again at the next start.
+/// cache, in a centred window with the percentage. The user can wait, or
+/// minimise it to a small percentage pill at the bottom and keep using the
+/// app. When the download completes the window / pill disappears by itself.
+/// Later starts read everything from the cache (nothing shown). If something
+/// fails, the window says so (OK closes it; the pill just goes away) and the
+/// download runs again at the next start.
 class ChatDatasetsFirstRun {
   ChatDatasetsFirstRun._();
 
@@ -33,30 +35,101 @@ class ChatDatasetsFirstRun {
     if (!context.mounted) return;
     _running = true;
     final progress = ValueNotifier<(double, bool?)>((0, null));
+    final navigator = Navigator.of(context, rootNavigator: true);
+    final overlay = Overlay.maybeOf(context, rootOverlay: true);
+    var dialogOpen = true;
+    OverlayEntry? pill;
+
+    void minimise() {
+      if (!dialogOpen) return;
+      dialogOpen = false;
+      navigator.pop();
+      if (overlay != null) {
+        pill = OverlayEntry(builder: (_) => ChatDatasetsDownloadPill(progress: progress));
+        overlay.insert(pill!);
+      }
+    }
+
     final dialog = showDialog<void>(
       context: context,
       barrierDismissible: false,
       useRootNavigator: true,
       builder: (_) => PopScope(
         canPop: false,
-        child: ChatDatasetsDownloadDialog(progress: progress),
+        child: ChatDatasetsDownloadDialog(progress: progress, onMinimise: minimise),
       ),
-    );
+    ).whenComplete(() => dialogOpen = false);
     try {
       final ok = await ds.preloadAll(onProgress: (f) => progress.value = (f, null));
+      if (ok) await prefs?.setBool(doneKey, true);
+      progress.value = (ok ? 1.0 : progress.value.$1, ok);
       if (ok) {
-        await prefs?.setBool(doneKey, true);
-        progress.value = (1, true);
+        // Done: show "ready" a moment, then the window / pill goes away.
         await Future<void>.delayed(const Duration(milliseconds: 900));
-        if (context.mounted) Navigator.of(context, rootNavigator: true).pop();
-      } else {
-        progress.value = (progress.value.$1, false); // the user closes it
+        if (dialogOpen) navigator.pop();
+      } else if (!dialogOpen) {
+        // Minimised and failed: just go away; it retries next start.
       }
-      await dialog;
+      pill?.remove();
+      pill = null;
+      if (!ok && dialogOpen) await dialog; // the user reads the message, OK
     } finally {
+      pill?.remove();
       progress.dispose();
       _running = false;
     }
+  }
+}
+
+/// Minimised: a small pill at the bottom with the percentage; the app runs
+/// normally meanwhile.
+class ChatDatasetsDownloadPill extends StatelessWidget {
+  const ChatDatasetsDownloadPill({super.key, required this.progress});
+
+  final ValueListenable<(double, bool?)> progress;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    if (l10n == null) return const SizedBox.shrink();
+    return Positioned(
+      left: 0,
+      right: 0,
+      bottom: MediaQuery.of(context).padding.bottom + 84,
+      child: Center(
+        child: Material(
+          key: const ValueKey('chat-datasets-download-pill'),
+          color: AppColors.charcoal,
+          elevation: 6,
+          shape: const StadiumBorder(side: BorderSide(color: AppColors.richGold)),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+            child: ValueListenableBuilder<(double, bool?)>(
+              valueListenable: progress,
+              builder: (context, p, _) {
+                final (fraction, result) = p;
+                final percent = (fraction * 100).floor().clamp(0, 100);
+                return Row(mainAxisSize: MainAxisSize.min, children: [
+                  SizedBox(
+                    width: 16,
+                    height: 16,
+                    child: result == true
+                        ? const Icon(Icons.check_circle, size: 16, color: AppColors.richGold)
+                        : CircularProgressIndicator(
+                            value: fraction, strokeWidth: 2.5, color: AppColors.richGold),
+                  ),
+                  const SizedBox(width: 10),
+                  Text(
+                    result == true ? l10n.chatDatasetsReady : l10n.chatDatasetsDownloadingPercent(percent),
+                    style: const TextStyle(color: AppColors.textPrimary, fontSize: 13),
+                  ),
+                ]);
+              },
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
 
@@ -64,9 +137,12 @@ class ChatDatasetsFirstRun {
 /// `progress` = (fraction, result): result null while downloading, true when
 /// ready, false when some files failed (then an OK button closes it).
 class ChatDatasetsDownloadDialog extends StatelessWidget {
-  const ChatDatasetsDownloadDialog({super.key, required this.progress});
+  const ChatDatasetsDownloadDialog({super.key, required this.progress, this.onMinimise});
 
   final ValueListenable<(double, bool?)> progress;
+
+  /// Shrinks the window to the bottom percentage pill (while downloading).
+  final VoidCallback? onMinimise;
 
   @override
   Widget build(BuildContext context) {
@@ -138,7 +214,13 @@ class ChatDatasetsDownloadDialog extends StatelessWidget {
                   onPressed: () => Navigator.of(context, rootNavigator: true).pop(),
                   child: Text(l10n.ok),
                 )
-              : const SizedBox.shrink(),
+              : p.$2 == null && onMinimise != null
+                  ? TextButton(
+                      key: const ValueKey('chat-datasets-minimise'),
+                      onPressed: onMinimise,
+                      child: Text(l10n.chatDatasetsMinimise),
+                    )
+                  : const SizedBox.shrink(),
         ),
       ],
     );

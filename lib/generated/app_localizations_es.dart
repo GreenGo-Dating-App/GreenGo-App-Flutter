@@ -24437,6 +24437,9 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get chatDatasetsMinimise => 'Continuar en segundo plano';
+
+  @override
   String get chatDatasetsReady =>
       'Contenido del chat listo, también sin conexión';
 
