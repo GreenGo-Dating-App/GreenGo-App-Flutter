@@ -28,6 +28,7 @@ import '../../domain/message_insights.dart';
 import '../../../../core/services/chat_datasets/chat_datasets.dart';
 import '../widgets/chat_ideas_sheet.dart';
 import '../widgets/chat_places_bar.dart';
+import '../../data/chat_settings_prefs.dart';
 import '../../domain/chat_places.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/services/location_share_service.dart';
@@ -366,9 +367,7 @@ class _ChatScreenState extends State<ChatScreen> {
     if (!mounted) return;
 
     // Check if this chat has custom settings
-    final prefix = 'chat_${widget.matchId}_';
-    final hasCustom = prefs.getBool('${prefix}hasCustomSettings') ?? false;
-    final p = hasCustom ? prefix : 'chat_'; // Per-chat or global prefix
+    final p = ChatSettingsPrefs.readPrefix(prefs, widget.matchId); // per-chat or global
 
     // Load per-chat language if set
     final savedLang = prefs.getString('chat_${widget.matchId}_language');
@@ -391,38 +390,32 @@ class _ChatScreenState extends State<ChatScreen> {
     });
   }
 
+  /// The current values of every chat display setting.
+  Map<String, bool> _settingsValues() => {
+        'showOriginalText': _showOriginalText,
+        'showDifficultyBadge': _showDifficultyBadge,
+        'showGrammarCheck': _showGrammarCheck,
+        'showCulturalTips': _showCulturalTips,
+        'showIcebreakers': _showIcebreakers,
+        'showSentences': _showSentences,
+        'showPronunciation': _showPronunciation,
+        'ttsReadTranslated': _ttsReadTranslated,
+        'showLanguageFlags': _showLanguageFlags,
+        'showXpBar': _showXpBar,
+        'showPhraseOfDay': _showPhraseOfDaySetting,
+      };
+
   /// Save current chat settings for this specific chat only
   Future<void> _saveSettingsToThisChat() async {
     final prefs = await SharedPreferences.getInstance();
-    final prefix = 'chat_${widget.matchId}_';
-    await prefs.setBool('${prefix}showOriginalText', _showOriginalText);
-    await prefs.setBool('${prefix}showDifficultyBadge', _showDifficultyBadge);
-    await prefs.setBool('${prefix}showGrammarCheck', _showGrammarCheck);
-    await prefs.setBool('${prefix}showCulturalTips', _showCulturalTips);
-    await prefs.setBool('${prefix}showIcebreakers', _showIcebreakers);
-    await prefs.setBool('${prefix}showSentences', _showSentences);
-    await prefs.setBool('${prefix}showPronunciation', _showPronunciation);
-    await prefs.setBool('${prefix}ttsReadTranslated', _ttsReadTranslated);
-    await prefs.setBool('${prefix}showLanguageFlags', _showLanguageFlags);
-    await prefs.setBool('${prefix}showXpBar', _showXpBar);
-    await prefs.setBool('${prefix}showPhraseOfDay', _showPhraseOfDaySetting);
-    await prefs.setBool('${prefix}hasCustomSettings', true);
+    await ChatSettingsPrefs.saveForChat(prefs, widget.matchId, _settingsValues());
   }
 
-  /// Save current chat settings to SharedPreferences (applies to all chats)
+  /// Save current chat settings for ALL chats (also drops every chat's own
+  /// override, so the choice really applies everywhere).
   Future<void> _saveSettingsToAllChats() async {
     final prefs = await SharedPreferences.getInstance();
-    await prefs.setBool('chat_showOriginalText', _showOriginalText);
-    await prefs.setBool('chat_showDifficultyBadge', _showDifficultyBadge);
-    await prefs.setBool('chat_showGrammarCheck', _showGrammarCheck);
-    await prefs.setBool('chat_showCulturalTips', _showCulturalTips);
-    await prefs.setBool('chat_showIcebreakers', _showIcebreakers);
-    await prefs.setBool('chat_showSentences', _showSentences);
-    await prefs.setBool('chat_showPronunciation', _showPronunciation);
-    await prefs.setBool('chat_ttsReadTranslated', _ttsReadTranslated);
-    await prefs.setBool('chat_showLanguageFlags', _showLanguageFlags);
-    await prefs.setBool('chat_showXpBar', _showXpBar);
-    await prefs.setBool('chat_showPhraseOfDay', _showPhraseOfDaySetting);
+    await ChatSettingsPrefs.saveForAllChats(prefs, _settingsValues());
   }
 
   Future<void> _fetchCurrentUserName({bool forceServer = false}) async {
@@ -3827,6 +3820,10 @@ class _ChatScreenState extends State<ChatScreen> {
         },
       ));
 
+  /// Ice-breakers, sentences and cultural tips all off: no tools line, the
+  /// attachment + goes left of the message field.
+  bool get _attachInline => !_showIcebreakers && !_showSentences && !_showCulturalTips;
+
   /// One of the evenly spaced chat tools (same look as [ChatPlacesButton]).
   Widget _toolButton({
     required Key key,
@@ -3857,7 +3854,9 @@ class _ChatScreenState extends State<ChatScreen> {
             // Media preview INSIDE input container
             _buildMediaPreview(),
             // Tools, one line, evenly spaced: attach, ice-breakers, suggested
-            // sentences, places (list + map).
+            // sentences, places (list + map). With all three ideas tools off,
+            // there is no line: + sits left of the message field instead.
+            if (!_attachInline)
             Padding(
               padding: const EdgeInsets.fromLTRB(8, 6, 8, 0),
               child: Row(
@@ -3894,6 +3893,13 @@ class _ChatScreenState extends State<ChatScreen> {
               padding: const EdgeInsets.fromLTRB(16, 4, 16, 12),
               child: Row(
                 children: [
+                  if (_attachInline)
+                    _toolButton(
+                      key: const ValueKey('chat-tool-attach'),
+                      icon: Icons.add_circle_outline,
+                      tooltip: AppLocalizations.of(context)!.chatSendAttachment,
+                      onPressed: () => _showAttachmentOptions(context),
+                    ),
                   // Text input
                   Expanded(
                     child: TextField(
