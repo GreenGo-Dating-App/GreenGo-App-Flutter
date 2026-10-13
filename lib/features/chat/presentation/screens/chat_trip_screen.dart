@@ -13,7 +13,6 @@ import '../../../../generated/app_localizations.dart';
 import '../../../attractions/data/datasources/attractions_datasource.dart';
 import '../../../attractions/domain/entities/attraction.dart';
 import '../../domain/chat_places.dart';
-import '../widgets/attraction_message.dart';
 import '../widgets/keyword_actions.dart';
 
 /// Every place named in a chat as a list (attractions, cities, countries)
@@ -104,23 +103,6 @@ class _ChatTripScreenState extends State<ChatTripScreen> {
       }
     }
     return out;
-  }
-
-  bool _canSend(_TripItem i) => i.attraction != null
-      ? ChatAttractionShare.sender.value != null
-      : ChatAttractionShare.textSender.value != null;
-
-  Future<void> _send(AppLocalizations l10n, _TripItem i) async {
-    final messenger = ScaffoldMessenger.of(context);
-    final a = i.attraction;
-    if (a != null) {
-      final bucket = await _ds.bucket();
-      await ChatAttractionShare.sender.value?.call(a, bucket);
-    } else {
-      final text = i.subtitle == null ? i.title : '${i.title}, ${i.subtitle}';
-      await ChatAttractionShare.textSender.value?.call(text);
-    }
-    messenger.showSnackBar(SnackBar(content: Text(l10n.chatAttractionSent)));
   }
 
   Future<void> _remove(AppLocalizations l10n, ChatPlace place) async {
@@ -219,14 +201,6 @@ class _ChatTripScreenState extends State<ChatTripScreen> {
                       ? null
                       : Text(i.subtitle!, style: const TextStyle(color: AppColors.textTertiary, fontSize: 12.5)),
                   trailing: Row(mainAxisSize: MainAxisSize.min, children: [
-                    // Send this place into the chat (attraction = card).
-                    if (_canSend(i))
-                      IconButton(
-                        key: ValueKey('chat-trip-send-${i.place.key}'),
-                        tooltip: l10n.chatSendAttraction,
-                        icon: const Icon(Icons.send_rounded, color: AppColors.richGold),
-                        onPressed: () => _send(l10n, i),
-                      ),
                     if (widget.onRemove != null)
                       IconButton(
                         key: ValueKey('chat-trip-remove-${i.place.key}'),

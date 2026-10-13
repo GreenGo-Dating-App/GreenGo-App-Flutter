@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:greengo_chat/features/chat/domain/chat_places.dart';
 import 'package:greengo_chat/features/chat/presentation/screens/chat_trip_screen.dart';
-import 'package:greengo_chat/features/chat/presentation/widgets/attraction_message.dart';
 import 'package:greengo_chat/features/chat/presentation/widgets/chat_places_bar.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 
@@ -92,16 +91,10 @@ void main() {
     expect(find.textContaining("removed from this chat's places"), findsOneWidget);
   });
 
-  testWidgets('trip list: no share-list button; a send button per row when a chat is open', (tester) async {
-    final sent = <String>[];
-    ChatAttractionShare.textSender.value = (t) async => sent.add(t);
-    addTearDown(() => ChatAttractionShare.textSender.value = null);
+  testWidgets('trip list: no share-list button and no send buttons', (tester) async {
     await tester.pumpWidget(_app(ChatTripScreen(places: ChatPlaces.collect(_messages))));
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('chat-trip-share')), findsNothing);
-    await tester.tap(find.byKey(const ValueKey('chat-trip-send-k:PT')));
-    await tester.pumpAndSettle();
-    expect(sent, ['Portugal']);
-    expect(find.text('Sent in the chat'), findsOneWidget);
+    expect(find.byKey(const ValueKey('chat-trip-send-k:PT')), findsNothing);
   });
 }

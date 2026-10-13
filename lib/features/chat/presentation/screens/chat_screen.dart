@@ -256,7 +256,6 @@ class _ChatScreenState extends State<ChatScreen> {
     super.initState();
     // "Attractions in <city>" can send an attraction into this chat.
     ChatAttractionShare.sender.value = _sendAttraction;
-    ChatAttractionShare.textSender.value = _sendPlainText;
     // Suppress foreground push notifications for this conversation
     PushNotificationService.activeConversationId = widget.matchId;
     _translationService.initialize();
@@ -493,7 +492,6 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   void dispose() {
     if (ChatAttractionShare.sender.value == _sendAttraction) ChatAttractionShare.sender.value = null;
-    if (ChatAttractionShare.textSender.value == _sendPlainText) ChatAttractionShare.textSender.value = null;
     AiConsentService.instance.statusListenable.removeListener(_onAiConsentChanged);
     _scrollController.removeListener(_onScroll);
     // Clear active conversation so notifications resume
@@ -820,15 +818,6 @@ class _ChatScreenState extends State<ChatScreen> {
       initialLng: known ? me.longitude : null,
       autoLocate: true,
     );
-  }
-
-  /// Sends a plain text (a city or country from "Places from this chat").
-  Future<void> _sendPlainText(String text) async {
-    _addSend(ChatMessageSent(
-      content: text,
-      type: MessageType.text,
-      metadata: MessageInsights.metadataFor(text, language: Localizations.localeOf(context).languageCode),
-    ));
   }
 
   /// Sends [a] as an attraction card (text + metadata for older versions).
