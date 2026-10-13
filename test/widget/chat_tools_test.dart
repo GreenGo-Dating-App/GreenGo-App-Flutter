@@ -12,30 +12,21 @@ Widget _app(Widget child) => MaterialApp(
     );
 
 void main() {
-  testWidgets('download window: percentage, then ready; failure offers OK', (tester) async {
+  testWidgets('download window: only the number, moving with the bytes; ready; failure offers OK', (tester) async {
     final p = ValueNotifier<(double, bool?)>((0.457, null));
     await tester.pumpWidget(_app(ChatDatasetsDownloadDialog(progress: p)));
     expect(find.text('Getting GreenGo ready'), findsOneWidget);
-    expect(find.textContaining('only once'), findsOneWidget);
-    expect(find.text('Downloading… 45%'), findsOneWidget);
-    expect(tester.widget<LinearProgressIndicator>(find.byType(LinearProgressIndicator)).value, closeTo(0.457, 1e-9));
-    // Smooth: halfway through the animation the value is between old and new.
+    expect(find.text('45%'), findsOneWidget);
+    expect(find.byType(LinearProgressIndicator), findsNothing);
+    expect(find.text('OK'), findsNothing); // the user waits (or minimises)
     p.value = (0.857, null);
     await tester.pump();
-    await tester.pump(const Duration(milliseconds: 350));
-    final mid = tester.widget<LinearProgressIndicator>(find.byType(LinearProgressIndicator)).value!;
-    expect(mid, greaterThan(0.5));
-    expect(mid, lessThan(0.85));
-    await tester.pump(const Duration(milliseconds: 400));
-    expect(find.text('Downloading… 85%'), findsOneWidget);
-    expect(find.text('OK'), findsNothing); // the user waits
+    expect(find.text('85%'), findsOneWidget); // exactly the downloaded share
     p.value = (1, true);
     await tester.pump();
-    await tester.pump(const Duration(milliseconds: 800));
     expect(find.text('Chat content ready, also offline'), findsOneWidget);
     p.value = (0.6, false);
     await tester.pump();
-    await tester.pump(const Duration(milliseconds: 800));
     expect(find.textContaining('try again next time'), findsOneWidget);
     expect(find.text('OK'), findsOneWidget);
   });
@@ -48,7 +39,7 @@ void main() {
     expect(minimised, isTrue);
 
     await tester.pumpWidget(_app(Stack(children: [ChatDatasetsDownloadPill(progress: p)])));
-    expect(find.text('Downloading… 20%'), findsOneWidget);
+    expect(find.text('20%'), findsOneWidget);
     // It can be dragged anywhere.
     final before = tester.getCenter(find.byKey(const ValueKey('chat-datasets-download-pill')));
     await tester.drag(find.byKey(const ValueKey('chat-datasets-download-pill-drag')), const Offset(-60, -200));
@@ -57,8 +48,7 @@ void main() {
     expect(after.dy, lessThan(before.dy - 100));
     p.value = (0.73, null);
     await tester.pump();
-    await tester.pump(const Duration(milliseconds: 800));
-    expect(find.text('Downloading… 73%'), findsOneWidget);
+    expect(find.text('73%'), findsOneWidget);
     p.value = (1, true);
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 800));

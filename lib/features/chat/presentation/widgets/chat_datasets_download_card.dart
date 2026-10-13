@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../../core/constants/app_colors.dart';
@@ -146,10 +147,10 @@ class _ChatDatasetsDownloadPillState extends State<ChatDatasetsDownloadPill> {
                         ),
                         const SizedBox(width: 10),
                         Text(
-                          result == true
-                              ? l10n.chatDatasetsReady
-                              : l10n.chatDatasetsDownloadingPercent((fraction * 100).floor().clamp(0, 100)),
-                          style: const TextStyle(color: AppColors.textPrimary, fontSize: 13),
+                          result == true ? l10n.chatDatasetsReady : downloadPercentLabel(context, fraction),
+                          key: const ValueKey('chat-datasets-pill-percent'),
+                          style: const TextStyle(
+                              color: AppColors.textPrimary, fontSize: 14, fontWeight: FontWeight.w700),
                         ),
                       ]),
                     );
@@ -164,8 +165,13 @@ class _ChatDatasetsDownloadPillState extends State<ChatDatasetsDownloadPill> {
   }
 }
 
-/// Moves the shown value toward [target] at a steady pace, so the
-/// percentage climbs linearly instead of jumping file by file.
+/// The percentage as a number in the user's locale ("45%", "45 %"),
+/// exactly the share downloaded so far.
+String downloadPercentLabel(BuildContext context, double fraction) =>
+    NumberFormat.percentPattern(Localizations.localeOf(context).toString())
+        .format(((fraction * 100).floor().clamp(0, 100)) / 100);
+
+/// Shows [target] as is: the number moves only as the bytes arrive.
 class SmoothProgress extends StatelessWidget {
   const SmoothProgress({super.key, required this.target, required this.builder});
 
@@ -173,12 +179,7 @@ class SmoothProgress extends StatelessWidget {
   final Widget Function(double fraction) builder;
 
   @override
-  Widget build(BuildContext context) => TweenAnimationBuilder<double>(
-        tween: Tween<double>(end: target.clamp(0.0, 1.0)),
-        duration: const Duration(milliseconds: 700),
-        curve: Curves.linear,
-        builder: (context, v, _) => builder(v),
-      );
+  Widget build(BuildContext context) => builder(target.clamp(0.0, 1.0));
 }
 
 /// The centred window: title, "only once" note, big percentage, bar.
@@ -208,7 +209,7 @@ class ChatDatasetsDownloadDialog extends StatelessWidget {
           final (target, result) = p;
           return SmoothProgress(
             target: result == true ? 1 : target,
-            builder: (fraction) => _body(l10n, fraction, result),
+            builder: (fraction) => _body(context, l10n, fraction, result),
           );
         },
       ),
@@ -232,8 +233,7 @@ class ChatDatasetsDownloadDialog extends StatelessWidget {
     );
   }
 
-  Widget _body(AppLocalizations l10n, double fraction, bool? result) {
-    final percent = (fraction * 100).floor().clamp(0, 100);
+  Widget _body(BuildContext context, AppLocalizations l10n, double fraction, bool? result) {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -261,19 +261,13 @@ class ChatDatasetsDownloadDialog extends StatelessWidget {
         if (result != false) ...[
           const SizedBox(height: 18),
           Text(
-            result == true ? l10n.chatDatasetsReady : l10n.chatDatasetsDownloadingPercent(percent),
+            result == true ? l10n.chatDatasetsReady : downloadPercentLabel(context, fraction),
             key: const ValueKey('chat-datasets-download-percent'),
             textAlign: TextAlign.center,
-            style: const TextStyle(color: AppColors.richGold, fontSize: 15, fontWeight: FontWeight.w600),
-          ),
-          const SizedBox(height: 10),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(5),
-            child: LinearProgressIndicator(
-              value: result == true ? 1 : fraction,
-              minHeight: 8,
+            style: TextStyle(
               color: AppColors.richGold,
-              backgroundColor: AppColors.backgroundDark,
+              fontSize: result == true ? 15 : 40,
+              fontWeight: FontWeight.w800,
             ),
           ),
         ],
