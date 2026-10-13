@@ -104,7 +104,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('it'),
     Locale('pt'),
-    Locale('pt', 'BR'),
+    Locale('pt', 'BR')
   ];
 
   /// No description provided for @culturalPassportTitle.
@@ -11380,10 +11380,7 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{tierName} membership active until {formattedDate}{coinsText}'**
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  );
+      String tierName, String formattedDate, String coinsText);
 
   /// No description provided for @membershipActivatedTitle.
   ///
@@ -28376,22 +28373,14 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Renews automatically on {date}.'**
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  );
+      String plan, String price, String interval, String date);
 
   /// Web (Stripe) subscription cancelled at period end
   ///
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Cancelled; access ends on {date}.'**
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  );
+      String plan, String price, String interval, String date);
 
   /// No description provided for @billingIntervalMonth.
   ///
@@ -38496,11 +38485,7 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reason: {reason}\nReported message: \"{message}\"\nReported user: {user}\nReported at: {date}'**
   String supportReportFollowUpDetails(
-    String reason,
-    String message,
-    String user,
-    String date,
-  );
+      String reason, String message, String user, String date);
 
   /// No description provided for @supportChatWithGreenGoSubject.
   ///
@@ -42551,7 +42536,7 @@ class _AppLocalizationsDelegate
         'es',
         'fr',
         'it',
-        'pt',
+        'pt'
       ].contains(locale.languageCode);
 
   @override
@@ -42588,9 +42573,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-    'an issue with the localizations generation tool. Please file an issue '
-    'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.',
-  );
+      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+      'an issue with the localizations generation tool. Please file an issue '
+      'on GitHub with a reproducible sample app and the gen-l10n configuration '
+      'that was used.');
 }
