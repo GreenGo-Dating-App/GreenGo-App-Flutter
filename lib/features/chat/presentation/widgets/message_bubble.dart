@@ -45,7 +45,6 @@ class MessageBubble extends StatefulWidget {
     this.currentUserId,
     this.otherUserLanguage,
     this.showOriginalText = true,
-    this.showDifficultyBadge = false,
     this.showCulturalTips = true,
     this.showPronunciation = true,
     this.showLanguageFlags = true,
@@ -66,7 +65,6 @@ class MessageBubble extends StatefulWidget {
   final String? currentUserId;
   final String? otherUserLanguage;
   final bool showOriginalText;
-  final bool showDifficultyBadge;
   final bool showCulturalTips;
   final bool showPronunciation;
   final bool showLanguageFlags;
@@ -105,12 +103,10 @@ class _MessageBubbleState extends State<MessageBubble> {
   static bool _playerUsed = false;
 
   // Learning enhancement state
-  String? _difficultyLevel;
   String? _romanizedText;
   /// Set once a fetch has been kicked off, so a rebuild storm cannot fire
   /// several Gemini calls for the same bubble.
   bool _enhancementsRequested = false;
-  bool _loadingDifficulty = false;
   bool _loadingRomanization = false;
 
   /// Get flag emoji for a language code
@@ -148,16 +144,16 @@ class _MessageBubbleState extends State<MessageBubble> {
     _maybeLoadEnhancements();
   }
 
-  /// True when this bubble should have difficulty / cultural data loaded.
+  /// True when this bubble should have cultural / romanization data loaded.
   bool get _wantsEnhancements =>
       !widget.isCurrentUser &&
       widget.message.type == MessageType.text &&
-      (widget.showDifficultyBadge || widget.showCulturalTips);
+      widget.showCulturalTips;
 
   /// Fetch the AI enhancements if they are wanted and not already in flight.
   ///
   /// Called from initState AND didUpdateWidget: these used to load only on
-  /// first build, so switching Difficulty badges or Cultural tips on did
+  /// first build, so switching Cultural tips on did
   /// nothing to messages already on screen — the toggle looked broken and the
   /// user had to leave the chat and come back.
   void _maybeLoadEnhancements() {
@@ -217,19 +213,6 @@ class _MessageBubbleState extends State<MessageBubble> {
     final language = message.detectedLanguage ?? message.metadata?['language'] as String? ?? widget.otherUserLanguage ?? 'en';
     final service = ChatLearningService();
 
-    // Load difficulty
-    setState(() => _loadingDifficulty = true);
-    try {
-      final stored = MessageInsights.storedLevel(message.metadata);
-      final entities = MessageInsights.storedEntities(message.metadata, message.content);
-      final level = stored ??
-          await service.getMessageDifficulty(message.content, language,
-              skip: [for (final e in entities ?? const []) (e.start, e.end)]);
-      if (mounted) setState(() { _difficultyLevel = level; _loadingDifficulty = false; });
-    } catch (e) {
-      if (mounted) setState(() => _loadingDifficulty = false);
-    }
-
     // Load romanization
     setState(() => _loadingRomanization = true);
     try {
@@ -237,18 +220,6 @@ class _MessageBubbleState extends State<MessageBubble> {
       if (mounted) setState(() { _romanizedText = romanized; _loadingRomanization = false; });
     } catch (e) {
       if (mounted) setState(() => _loadingRomanization = false);
-    }
-  }
-
-  Color _getDifficultyColor(String level) {
-    switch (level) {
-      case 'A1': return Colors.green;
-      case 'A2': return Colors.lightGreen;
-      case 'B1': return Colors.orange;
-      case 'B2': return Colors.deepOrange;
-      case 'C1': return Colors.red;
-      case 'C2': return Colors.purple;
-      default: return Colors.grey;
     }
   }
 
@@ -498,37 +469,6 @@ class _MessageBubbleState extends State<MessageBubble> {
                       color: isCurrentUser
                           ? AppColors.deepBlack.withOpacity(0.6)
                           : AppColors.richGold,
-                    ),
-                    const SizedBox(width: 4),
-                  ],
-                  // Difficulty badge (CEFR level). While the level is still
-                  // being fetched, hold its place with a muted dot — the
-                  // Gemini round-trip otherwise looks like the setting did
-                  // nothing at all.
-                  if (_difficultyLevel == null &&
-                      _loadingDifficulty &&
-                      widget.showDifficultyBadge) ...[
-                    Container(
-                      width: 14,
-                      height: 12,
-                      decoration: BoxDecoration(
-                        color: AppColors.textTertiary.withValues(alpha: 0.25),
-                        borderRadius: BorderRadius.circular(4),
-                      ),
-                    ),
-                    const SizedBox(width: 4),
-                  ],
-                  if (_difficultyLevel != null && widget.showDifficultyBadge) ...[
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
-                      decoration: BoxDecoration(
-                        color: _getDifficultyColor(_difficultyLevel!),
-                        borderRadius: BorderRadius.circular(4),
-                      ),
-                      child: Text(
-                        _difficultyLevel!,
-                        style: const TextStyle(color: Colors.white, fontSize: 9, fontWeight: FontWeight.bold),
-                      ),
                     ),
                     const SizedBox(width: 4),
                   ],

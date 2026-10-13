@@ -10,7 +10,6 @@ class ChatSettingsPrefs {
   /// it stays per chat on purpose).
   static const List<String> names = [
     'showOriginalText',
-    'showDifficultyBadge',
     'showGrammarCheck',
     'showCulturalTips',
     'showIcebreakers',

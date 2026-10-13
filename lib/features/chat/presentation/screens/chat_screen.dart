@@ -186,7 +186,6 @@ class _ChatScreenState extends State<ChatScreen> {
 
   // Chat learning settings (user-customizable)
   bool _showOriginalText = true;       // Show original text below translation
-  bool _showDifficultyBadge = false;   // Show CEFR level badge on messages (off by default)
   bool _showGrammarCheck = true;       // Check grammar before sending
   bool _showCulturalTips = true;       // Show cultural context tooltips
   bool _showIcebreakers = true;        // Ice-breakers icon (+ empty-chat ideas)
@@ -378,7 +377,6 @@ class _ChatScreenState extends State<ChatScreen> {
 
     setState(() {
       _showOriginalText = prefs.getBool('${p}showOriginalText') ?? true;
-      _showDifficultyBadge = prefs.getBool('${p}showDifficultyBadge') ?? false;
       _showGrammarCheck = prefs.getBool('${p}showGrammarCheck') ?? true;
       _showCulturalTips = prefs.getBool('${p}showCulturalTips') ?? true;
       _showIcebreakers = prefs.getBool('${p}showIcebreakers') ?? true;
@@ -394,7 +392,6 @@ class _ChatScreenState extends State<ChatScreen> {
   /// The current values of every chat display setting.
   Map<String, bool> _settingsValues() => {
         'showOriginalText': _showOriginalText,
-        'showDifficultyBadge': _showDifficultyBadge,
         'showGrammarCheck': _showGrammarCheck,
         'showCulturalTips': _showCulturalTips,
         'showIcebreakers': _showIcebreakers,
@@ -2076,7 +2073,6 @@ class _ChatScreenState extends State<ChatScreen> {
                               currentUserId: widget.currentUserId,
                               otherUserLanguage: _targetLanguage,
                               showOriginalText: _showOriginalText,
-                              showDifficultyBadge: _showDifficultyBadge,
                               showCulturalTips: _showCulturalTips,
                               showPronunciation: _showPronunciation,
                               showLanguageFlags: _showLanguageFlags,
@@ -2679,14 +2675,6 @@ class _ChatScreenState extends State<ChatScreen> {
                 inactiveHint: AppLocalizations.of(context)!
                     .chatSettingLanguageFlagsHint,
                 onChanged: (v) => setState(() => _showLanguageFlags = v),
-              ),
-              _buildSettingToggle(
-                setSheetState,
-                icon: Icons.school,
-                label: AppLocalizations.of(context)!.chatSettingDifficultyBadges,
-                subtitle: AppLocalizations.of(context)!.chatSettingDifficultyBadgesDesc,
-                value: _showDifficultyBadge,
-                onChanged: (v) => setState(() => _showDifficultyBadge = v),
               ),
               _buildSettingToggle(
                 setSheetState,

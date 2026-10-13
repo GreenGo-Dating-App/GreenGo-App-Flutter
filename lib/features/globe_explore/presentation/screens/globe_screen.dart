@@ -70,10 +70,13 @@ class _GlobeScreenState extends State<GlobeScreen> {
     return Scaffold(
       backgroundColor: LocationMapColors.surface,
       appBar: AppBar(
-        backgroundColor: LocationMapColors.surface,
-        foregroundColor: LocationMapColors.text,
-        elevation: 0.5,
+        backgroundColor: AppColors.backgroundDark,
+        foregroundColor: AppColors.textPrimary,
+        iconTheme: const IconThemeData(color: AppColors.textPrimary),
+        actionsIconTheme: const IconThemeData(color: AppColors.textPrimary),
+        elevation: 0,
         title: Text(l10n.globeMyWorldMap,
+            style: const TextStyle(color: AppColors.textPrimary),
             maxLines: 1, overflow: TextOverflow.ellipsis),
         actions: [
           IconButton(
