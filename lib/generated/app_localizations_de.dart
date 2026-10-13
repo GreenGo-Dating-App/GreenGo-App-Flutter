@@ -24901,4 +24901,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get promoUntilNote => 'Für neue Abonnenten bis zum 31. Dezember 2026.';
+
+  @override
+  String get translationDailyLimitReached =>
+      'Du hast die Übersetzungen deines Tarifs für heute aufgebraucht. Morgen geht es weiter, oder hol dir mehr mit einem Upgrade.';
+
+  @override
+  String get translationDailyLimitCta => 'Tarife ansehen';
 }

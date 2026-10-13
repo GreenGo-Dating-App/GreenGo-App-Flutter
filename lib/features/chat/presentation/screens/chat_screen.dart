@@ -118,6 +118,26 @@ class _ChatScreenState extends State<ChatScreen> {
   late final ChatRemoteDataSourceImpl _chatDataSource;
   late final AlbumAccessDatasource _albumAccessDatasource;
 
+  bool _translationLimitShown = false;
+
+  /// Today's translation allowance of the user's plan is used up: say so once
+  /// per chat, with a way to a bigger plan (messages show their original).
+  void _onTranslationLimit() {
+    if (!TranslationService.dailyLimitReached.value || _translationLimitShown || !mounted) return;
+    _translationLimitShown = true;
+    final l10n = AppLocalizations.of(context)!;
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+      content: Text(l10n.translationDailyLimitReached),
+      duration: const Duration(seconds: 6),
+      action: SnackBarAction(
+        label: l10n.translationDailyLimitCta,
+        onPressed: () => Navigator.of(context).push(MaterialPageRoute<void>(
+          builder: (_) => MembershipScreen(currentUserId: widget.currentUserId),
+        )),
+      ),
+    ));
+  }
+
   /// The conversation a send goes to (the id the bloc writes to).
   String _conversationIdForSend() {
     final st = _chatBloc.state;
@@ -268,6 +288,7 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   void initState() {
     super.initState();
+    TranslationService.dailyLimitReached.addListener(_onTranslationLimit);
     // "Attractions in <city>" can send an attraction into this chat.
     ChatAttractionShare.sender.value = _sendAttraction;
     // Suppress foreground push notifications for this conversation
@@ -503,6 +524,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   @override
   void dispose() {
+    TranslationService.dailyLimitReached.removeListener(_onTranslationLimit);
     if (ChatAttractionShare.sender.value == _sendAttraction) ChatAttractionShare.sender.value = null;
     AiConsentService.instance.statusListenable.removeListener(_onAiConsentChanged);
     _scrollController.removeListener(_onScroll);

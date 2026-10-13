@@ -193,6 +193,41 @@ class TranslationService {
   final Future<bool> Function()? _useServerOverride;
   final ServerTranslateCall? _serverCall;
 
+  /// True once today's translation allowance of the user's plan is used up
+  /// (server `QUOTA_EXCEEDED` on translateChars; the allowance is by
+  /// membership, functions/src/shared/tierLimits.ts TRANSLATE_CHARS_DAILY).
+  /// Until the next UTC day no further server call is made: messages show
+  /// their original text and stored translations keep working.
+  static final ValueNotifier<bool> dailyLimitReached = ValueNotifier<bool>(false);
+  int _limitDay = -1;
+
+  static int _utcDay() =>
+      DateTime.now().toUtc().millisecondsSinceEpoch ~/ Duration.millisecondsPerDay;
+
+  bool _limitHitToday() {
+    if (_limitDay == -1) return false;
+    if (_limitDay == _utcDay()) return true;
+    _limitDay = -1;
+    dailyLimitReached.value = false;
+    return false;
+  }
+
+  /// Whether [e] is the server refusing more translation today.
+  @visibleForTesting
+  static bool isTranslateQuotaError(Object e) {
+    if (e is! FirebaseFunctionsException || e.code != 'resource-exhausted') return false;
+    final d = e.details;
+    if (d is! Map || d['code'] != 'QUOTA_EXCEEDED') return false;
+    final inner = d['details'];
+    return inner is! Map || inner['field'] == null || inner['field'] == 'translateChars';
+  }
+
+  void _noteServerError(Object e) {
+    if (!isTranslateQuotaError(e)) return;
+    _limitDay = _utcDay();
+    dailyLimitReached.value = true;
+  }
+
   Future<bool> _consentOk() async {
     final f = _consentGranted;
     if (f != null) return f();
@@ -223,6 +258,9 @@ class TranslationService {
   Future<TranslationResult> _fetchViaServer(
       String text, String from, String target) async {
     final call = _serverCall ?? _defaultServerCall;
+    if (_limitHitToday()) {
+      return TranslationResult(original: text, text: text, failed: true);
+    }
     for (var attempt = 0; attempt < 2; attempt++) {
       try {
         final data = await call({
@@ -245,6 +283,7 @@ class TranslationService {
             await AiConsentService.instance.resyncAfterServerRejection()) {
           continue;
         }
+        _noteServerError(e);
         debugPrint('translatePrivateText failed: $e');
         break;
       }
@@ -682,12 +721,14 @@ class TranslationService {
   Future<void> _sendChatBatch(String target, List<_ChatPending> items) async {
     List? list;
     try {
+      if (_limitHitToday()) throw StateError('daily translation limit reached');
       final data = await (_serverCall ?? _defaultServerCall)({
         'target': target,
         'messages': [for (final p in items) p.ref.toPayload()],
       });
       list = data['translations'] as List?;
     } catch (e) {
+      _noteServerError(e);
       // Old server (no message refs yet), consent or quota: every item takes
       // the single-text path below, which also handles the consent resync.
       debugPrint('translatePrivateText (batch) failed: $e');

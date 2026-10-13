@@ -46,7 +46,7 @@ import {
   CONSENTS, AI_CONSENT_TYPE, AI_CONSENT_MIN_VERSION, requireAiConsent,
 } from '../shared/aiConsent';
 import { effectiveTier } from '../shared/effectiveTier';
-import { aiChatHelpersEnabled } from '../shared/tierLimits';
+import { aiChatHelpersEnabled, translateCharsDailyLimit } from '../shared/tierLimits';
 
 const db = () => admin.firestore();
 const TS = () => admin.firestore.Timestamp.now();
@@ -82,7 +82,9 @@ export const limits = () => ({
   assist: num('AI_ASSIST_DAILY_LIMIT', 200),
   ttsCalls: num('AI_TTS_CALLS_DAILY_LIMIT', 400),
   ttsSynth: num('AI_TTS_SYNTH_DAILY_LIMIT', 60),
-  translateChars: num('AI_TRANSLATE_CHARS_DAILY_LIMIT', 50000),
+  // Hard ceiling over every plan; the per-plan allowance is
+  // translateCharsDailyLimit (shared/tierLimits.ts).
+  translateChars: num('AI_TRANSLATE_CHARS_DAILY_LIMIT', 100000),
   images: num('AI_IMAGES_DAILY_LIMIT', 100),
   consentEvents: 50,
 });
@@ -108,6 +110,12 @@ export function requireUid(request: any): string {
 }
 
 const dayKey = () => new Date().toISOString().slice(0, 10).replace(/-/g, '');
+
+/** Today's translation allowance of [uid]: by membership, under the env ceiling. */
+async function translateCharsLimit(uid: string): Promise<number> {
+  const profile = (await db().collection('profiles').doc(uid).get()).data();
+  return Math.min(translateCharsDailyLimit(profile), limits().translateChars);
+}
 
 /**
  * Adds [amount] to today's [field] counter, or throws QUOTA_EXCEEDED (nothing
@@ -574,7 +582,7 @@ export async function handleTranslatePrivateText(request: any) {
   const total = texts.reduce((n, t) => n + t.length, 0);
   if (total > CAPS.translateTotalChars) throw new AppError('TEXT_TOO_LONG', 'Too much text in one call', 400);
   await requireAiConsent(uid);
-  await consumeQuota(uid, 'translateChars', total, limits().translateChars);
+  await consumeQuota(uid, 'translateChars', total, await translateCharsLimit(uid));
   return { success: true, target, translations: await cloudTranslate(texts, target, source) };
 }
 
@@ -782,7 +790,7 @@ export async function handleTranslateChatMessages(uid: string, target: string, r
   if (misses.length) {
     const distinct = [...new Set(misses.map((p) => p.content))];
     const total = distinct.reduce((n, t) => n + t.length, 0);
-    await consumeQuota(uid, 'translateChars', total, limits().translateChars);
+    await consumeQuota(uid, 'translateChars', total, await translateCharsLimit(uid));
     const results = await cloudTranslate(distinct, target, null);
     const byText = new Map(distinct.map((t, k) => [t, results[k]]));
     const cached = new Set<string>();

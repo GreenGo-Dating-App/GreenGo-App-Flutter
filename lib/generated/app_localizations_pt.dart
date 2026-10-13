@@ -24816,6 +24816,13 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get promoUntilNote =>
       'Para novos subscritores até 31 de dezembro de 2026.';
+
+  @override
+  String get translationDailyLimitReached =>
+      'Usaste as traduções de hoje do teu plano. Voltam amanhã, ou muda de plano para teres mais.';
+
+  @override
+  String get translationDailyLimitCta => 'Ver planos';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -49641,4 +49648,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get promoUntilNote =>
       'Para novos assinantes até 31 de dezembro de 2026.';
+
+  @override
+  String get translationDailyLimitReached =>
+      'Você usou as traduções de hoje do seu plano. Elas voltam amanhã, ou faça upgrade para ter mais.';
+
+  @override
+  String get translationDailyLimitCta => 'Ver planos';
 }

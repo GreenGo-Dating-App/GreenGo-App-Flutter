@@ -7608,5 +7608,7 @@
   "promoFirst3MonthsThen": "Erste 3 Monate, danach {price}/Monat",
   "promoSaveVsMonthly": "{percent} % günstiger als monatlich",
   "promoGenericStoreOffer": "Startangebot 2026: {percent} % Rabatt auf deinen ersten Zeitraum für neue Abonnenten. Der App Store zeigt dir deinen Preis beim Kauf.",
-  "promoUntilNote": "Für neue Abonnenten bis zum 31. Dezember 2026."
+  "promoUntilNote": "Für neue Abonnenten bis zum 31. Dezember 2026.",
+  "translationDailyLimitReached": "Du hast die Übersetzungen deines Tarifs für heute aufgebraucht. Morgen geht es weiter, oder hol dir mehr mit einem Upgrade.",
+  "translationDailyLimitCta": "Tarife ansehen"
 }

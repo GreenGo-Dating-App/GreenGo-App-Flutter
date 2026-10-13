@@ -73,6 +73,25 @@ class TierEntitlements {
   static const int _experiencesGold = 10; // Gold: 10 experiences
   static const int? _experiencesPlatinum = null; // Platinum: unlimited (∞)
 
+  // --- Characters of translation per UTC day sent to the paid API. ---
+  // By membership (owner rule 2026-10-13): no plan 3k, Base 10k, Silver 25k,
+  // Gold 50k, Platinum 100k. Enforced by the server (TRANSLATE_CHARS_DAILY in
+  // functions/src/shared/tierLimits.ts); stored translations are free.
+  static const int translateCharsNoPlan = 3000;
+  static int translateCharsPerDay(MembershipTier tier) {
+    switch (tier) {
+      case MembershipTier.platinum:
+      case MembershipTier.test:
+        return 100000;
+      case MembershipTier.gold:
+        return 50000;
+      case MembershipTier.silver:
+        return 25000;
+      default:
+        return 10000; // Base
+    }
+  }
+
   // --- People an account WITHOUT Base may chat with per UTC day. ---
   // A taste of the app (owner rule 2026-10-13); Base and up are unlimited.
   // Mirrors FREE_DAILY_CHATS (functions/src/shared/tierLimits.ts), enforced

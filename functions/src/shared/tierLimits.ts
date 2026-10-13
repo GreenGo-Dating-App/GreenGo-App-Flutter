@@ -10,7 +10,7 @@
  * Every lookup takes the EFFECTIVE tier (shared/effectiveTier.ts): an expired
  * paid tier is FREE, TEST is Platinum.
  */
-import { EffectiveTier } from './effectiveTier';
+import { EffectiveTier, effectiveTier, hasBaseAccess } from './effectiveTier';
 
 type Cap = number | null;
 
@@ -39,6 +39,34 @@ export const MAX_DAILY_CONNECTS: Record<EffectiveTier, Cap> = {
  * Mirrors TierEntitlements.freeDailyChats and `freeChatOk` in the rules.
  */
 export const FREE_DAILY_CHATS = 3;
+
+/**
+ * Characters of chat / text translation a user may send to the paid
+ * translation API per UTC day, by membership (owner rule 2026-10-13). Stored
+ * translations, the cross-chat cache and same-language messages cost nothing
+ * and are not counted. A medium user needs about 300 a day; the caps stop the
+ * worst case (50,000/day was up to $30 per user per month on Google).
+ * Mirrors TierEntitlements.translateCharsPerDay in the app.
+ */
+export const TRANSLATE_CHARS_DAILY = {
+  NONE: 3_000, // no plan (3 free chats a day)
+  BASE: 10_000,
+  SILVER: 25_000,
+  GOLD: 50_000,
+  PLATINUM: 100_000,
+} as const;
+
+/** The daily translation allowance of a profile (effective tier; TEST = Platinum). */
+export function translateCharsDailyLimit(
+  profile: Record<string, any> | null | undefined,
+  now: Date = new Date(),
+): number {
+  const tier = effectiveTier(profile, now);
+  if (tier === 'PLATINUM' || tier === 'TEST') return TRANSLATE_CHARS_DAILY.PLATINUM;
+  if (tier === 'GOLD') return TRANSLATE_CHARS_DAILY.GOLD;
+  if (tier === 'SILVER') return TRANSLATE_CHARS_DAILY.SILVER;
+  return hasBaseAccess(profile, now) ? TRANSLATE_CHARS_DAILY.BASE : TRANSLATE_CHARS_DAILY.NONE;
+}
 
 /** FREE profile boosts per calendar month (UTC). Extra boosts cost coins. */
 export const FREE_BOOSTS_PER_MONTH: Record<EffectiveTier, number> = {
