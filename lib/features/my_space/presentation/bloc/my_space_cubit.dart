@@ -14,6 +14,7 @@ class MySpaceState extends Equatable {
   const MySpaceState({
     this.counts = MySpaceCounts.zero,
     this.countsLoad = MySpaceLoad.loading,
+    this.allEvents = const <Event>[],
     this.hosting = const <Event>[],
     this.attending = const <Event>[],
     this.eventsLoad = MySpaceLoad.loading,
@@ -26,6 +27,10 @@ class MySpaceState extends Equatable {
 
   final MySpaceCounts counts;
   final MySpaceLoad countsLoad;
+
+  /// Every event of [MySpaceRepository.myEvents] (past ones included) — the
+  /// events calendar.
+  final List<Event> allEvents;
   final List<Event> hosting;
   final List<Event> attending;
   final MySpaceLoad eventsLoad;
@@ -46,6 +51,7 @@ class MySpaceState extends Equatable {
   MySpaceState copyWith({
     MySpaceCounts? counts,
     MySpaceLoad? countsLoad,
+    List<Event>? allEvents,
     List<Event>? hosting,
     List<Event>? attending,
     MySpaceLoad? eventsLoad,
@@ -58,6 +64,7 @@ class MySpaceState extends Equatable {
       MySpaceState(
         counts: counts ?? this.counts,
         countsLoad: countsLoad ?? this.countsLoad,
+        allEvents: allEvents ?? this.allEvents,
         hosting: hosting ?? this.hosting,
         attending: attending ?? this.attending,
         eventsLoad: eventsLoad ?? this.eventsLoad,
@@ -72,6 +79,7 @@ class MySpaceState extends Equatable {
   List<Object?> get props => [
         counts,
         countsLoad,
+        allEvents,
         hosting,
         attending,
         eventsLoad,
@@ -146,6 +154,7 @@ class MySpaceCubit extends Cubit<MySpaceState> {
       emit(state.copyWith(
         eventsLoad: MySpaceLoad.ready,
         eventsFailed: false,
+        allEvents: List.unmodifiable(all),
         hosting: MySpaceRules.hosting(all, uid, now),
         attending: MySpaceRules.attending(all, uid, now),
       ));

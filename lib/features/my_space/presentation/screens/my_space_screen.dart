@@ -5,19 +5,25 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/widgets/gg_calendar.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../events/domain/entities/event.dart';
+import '../../../events/presentation/screens/event_detail_loader_screen.dart';
 import '../../../events/presentation/screens/event_ticket_screen.dart';
 import '../../../experience_bookings/domain/entities/booking.dart';
 import '../../../experience_bookings/presentation/booking_l10n.dart';
+import '../../../experience_bookings/presentation/screens/booking_detail_screen.dart';
 import '../../../experience_bookings/presentation/screens/bookings_list_screen.dart';
 import '../../../explore/presentation/screens/qr_hub_screen.dart';
 import '../../../ticket_payments/presentation/screens/payments_to_confirm_screen.dart';
 import '../../../user_experiences/presentation/screens/my_experiences_screen.dart';
 import '../../data/my_space_repository.dart';
+import '../../domain/my_space_calendar.dart';
 import '../../domain/my_space_models.dart';
+import '../bloc/my_space_calendar_cubit.dart';
 import '../bloc/my_space_cubit.dart';
 import '../widgets/booking_dashboard_cards.dart';
+import '../widgets/my_space_calendar_widgets.dart';
 import '../widgets/space_widgets.dart';
 import 'event_check_in_checklist_screen.dart';
 import 'session_check_in_checklist_screen.dart';
@@ -32,6 +38,10 @@ import 'session_check_in_checklist_screen.dart';
 ///               Attending (my upcoming events → ticket)
 ///   Experiences My bookings / Bookings received cards, My experiences, and
 ///               upcoming sessions (check-in progress → checklist)
+///
+/// Each tab opens with its calendar (month / week / day, tiny image squares,
+/// All / I host / I'm going): every event of the user for Events; the
+/// visible range of hosted sessions + own bookings for Experiences.
 ///
 /// Every number is a server count() or a bounded per-user query; the hub
 /// links into the existing screens instead of duplicating their logic.
@@ -60,10 +70,18 @@ class MySpaceScreen extends StatelessWidget {
     final repo = repository ?? FirestoreMySpaceRepository();
     return RepositoryProvider<MySpaceRepository>.value(
       value: repo,
-      child: BlocProvider(
-        create: (_) =>
-            MySpaceCubit(repository: repo, uid: currentUserId, clock: clock)
+      child: MultiBlocProvider(
+        providers: [
+          BlocProvider(
+            create: (_) => MySpaceCubit(
+                repository: repo, uid: currentUserId, clock: clock)
               ..load(),
+          ),
+          BlocProvider(
+            create: (_) =>
+                MySpaceCalendarCubit(repository: repo, uid: currentUserId),
+          ),
+        ],
         child: _MySpaceView(currentUserId: currentUserId),
       ),
     );
@@ -86,13 +104,14 @@ class _MySpaceViewState extends State<_MySpaceView> {
 
   MySpaceRepository get _repo => context.read<MySpaceRepository>();
   MySpaceCubit get _cubit => context.read<MySpaceCubit>();
+  MySpaceCalendarCubit get _calendar => context.read<MySpaceCalendarCubit>();
 
   Future<EventCheckInStats> _statsFor(String eventId) =>
       _stats.putIfAbsent(eventId, () => _repo.eventCheckInStats(eventId));
 
   Future<void> _refresh() async {
     setState(_stats.clear);
-    await _cubit.load();
+    await Future.wait([_cubit.load(), _calendar.refresh()]);
   }
 
   Future<void> _push(Route<Object?> route, {bool reload = true}) async {
@@ -252,6 +271,7 @@ class _MySpaceViewState extends State<_MySpaceView> {
                       const SizedBox(height: 20),
                       _segments(l, s.section),
                       const SizedBox(height: 4),
+                      _calendarCard(s.section),
                       if (s.section == MySpaceSection.events)
                         ..._eventsSection(l, s)
                       else
@@ -547,6 +567,261 @@ class _MySpaceViewState extends State<_MySpaceView> {
     );
   }
 
+  // ───────────────────────────────────────────── Calendars
+
+  Widget _calendarCard(MySpaceSection section) {
+    final events = section == MySpaceSection.events;
+    return MsCalendarCard(
+      key: ValueKey(events ? 'ms-cal-events' : 'ms-cal-experiences'),
+      onFullScreen: () => _openFullScreenCalendar(section),
+      error: events
+          ? null
+          : BlocSelector<MySpaceCalendarCubit, MySpaceCalendarState, bool>(
+              selector: (c) => c.failed,
+              builder: (context, failed) =>
+                  failed ? _calendarError() : const SizedBox.shrink(),
+            ),
+      calendar: _calendarFor(section),
+    );
+  }
+
+  /// The live calendar of [section] (the card and the full-screen page).
+  Widget _calendarFor(MySpaceSection section, {bool fullScreen = false}) {
+    final suffix = fullScreen ? '-full' : '';
+    if (section == MySpaceSection.events) {
+      return BlocBuilder<MySpaceCubit, MySpaceState>(
+        buildWhen: (a, b) =>
+            a.allEvents != b.allEvents || a.eventsLoad != b.eventsLoad,
+        builder: (context, s) =>
+            BlocBuilder<MySpaceCalendarCubit, MySpaceCalendarState>(
+          buildWhen: (a, b) => a.eventFilter != b.eventFilter,
+          builder: (context, c) {
+            final l = AppLocalizations.of(context)!;
+            final items = [
+              for (final x in MySpaceCalendar.events(
+                  s.allEvents, widget.currentUserId, c.eventFilter))
+                MsCalendarItems.event(l, x),
+            ];
+            return GgCalendar(
+              key: ValueKey('ms-cal-events-grid$suffix'),
+              items: items,
+              initialDate: _cubit.now(),
+              loading: s.eventsLoad == MySpaceLoad.loading,
+              emptyText: l.msCalendarEventsEmpty,
+              header: MsCalendarFilterChips(
+                  value: c.eventFilter, onChanged: _calendar.setEventFilter),
+              onItemTap: _onCalendarTap,
+              onItemLongPress: _onCalendarLongPress,
+            );
+          },
+        ),
+      );
+    }
+    return BlocBuilder<MySpaceCalendarCubit, MySpaceCalendarState>(
+      buildWhen: (a, b) =>
+          a.experienceFilter != b.experienceFilter ||
+          a.bookings != b.bookings ||
+          a.photos != b.photos ||
+          a.loading != b.loading,
+      builder: (context, c) {
+        final l = AppLocalizations.of(context)!;
+        final items = [
+          for (final x in MySpaceCalendar.experiences(
+              c.bookings.values, widget.currentUserId, c.experienceFilter))
+            MsCalendarItems.experience(l, x, c.photos[x.experienceId]),
+        ];
+        return GgCalendar(
+          key: ValueKey('ms-cal-experiences-grid$suffix'),
+          items: items,
+          initialDate: _cubit.now(),
+          loading: c.loading,
+          emptyText: l.msCalendarExperiencesEmpty,
+          header: MsCalendarFilterChips(
+              value: c.experienceFilter,
+              onChanged: _calendar.setExperienceFilter),
+          onRangeChanged: _calendar.rangeChanged,
+          onItemTap: _onCalendarTap,
+          onItemLongPress: _onCalendarLongPress,
+        );
+      },
+    );
+  }
+
+  Widget _calendarError() {
+    final l = AppLocalizations.of(context)!;
+    return Padding(
+      key: const ValueKey('ms-cal-error'),
+      padding: const EdgeInsets.only(bottom: 6),
+      child: Row(children: [
+        const Icon(Icons.cloud_off_outlined,
+            color: AppColors.textTertiary, size: 18),
+        const SizedBox(width: 8),
+        Expanded(
+          child: Text(l.somethingWentWrong,
+              style: const TextStyle(
+                  color: AppColors.textTertiary, fontSize: 12.5)),
+        ),
+        IconButton(
+          tooltip: l.retry,
+          icon: const Icon(Icons.refresh, color: AppColors.richGold),
+          onPressed: _calendar.retry,
+        ),
+      ]),
+    );
+  }
+
+  Future<void> _openFullScreenCalendar(MySpaceSection section) {
+    final cubit = _cubit;
+    final calendar = _calendar;
+    final repo = _repo;
+    return Navigator.of(context).push(MaterialPageRoute<void>(
+      settings: const RouteSettings(name: '/my-space/calendar'),
+      builder: (ctx) {
+        final l = AppLocalizations.of(ctx)!;
+        final tab = section == MySpaceSection.events
+            ? l.msSegmentEvents
+            : l.msSegmentExperiences;
+        return RepositoryProvider<MySpaceRepository>.value(
+          value: repo,
+          child: MultiBlocProvider(
+            providers: [
+              BlocProvider.value(value: cubit),
+              BlocProvider.value(value: calendar),
+            ],
+            child: Scaffold(
+              key: const ValueKey('ms-cal-fullscreen-page'),
+              backgroundColor: AppColors.backgroundDark,
+              appBar: AppBar(
+                backgroundColor: AppColors.backgroundDark,
+                foregroundColor: AppColors.textPrimary,
+                elevation: 0,
+                title: Text('${l.msCalendarTitle} · $tab'),
+              ),
+              body: SafeArea(
+                child: SpaceMaxWidth(
+                  maxWidth: 1100,
+                  child: _calendarFor(section, fullScreen: true),
+                ),
+              ),
+            ),
+          ),
+        );
+      },
+    ));
+  }
+
+  void _openEventDetail(Event e) => _push(EventDetailLoaderScreen.route(
+      eventId: e.id, currentUserId: widget.currentUserId));
+
+  void _openBooking(Booking b) => _push(BookingDetailScreen.route(
+      bookingId: b.id, currentUserId: widget.currentUserId, initial: b));
+
+  void _onCalendarTap(GgCalendarItem item) {
+    final p = item.payload;
+    if (p is MsEventEntry) {
+      if (p.role == MsCalendarRole.hosting) {
+        _openEventChecklist(p.event);
+      } else {
+        _openTicket(p.event);
+      }
+    } else if (p is MsExperienceEntry) {
+      final session = p.checkInSession;
+      if (session != null) {
+        _openSessionChecklist(session);
+      } else if (p.bookings.length == 1) {
+        _openBooking(p.bookings.single);
+      } else {
+        _onCalendarLongPress(item);
+      }
+    }
+  }
+
+  void _onCalendarLongPress(GgCalendarItem item) {
+    final l = AppLocalizations.of(context)!;
+    final p = item.payload;
+    final actions = <_SheetAction>[];
+    if (p is MsEventEntry) {
+      if (p.role == MsCalendarRole.hosting) {
+        actions.add(_SheetAction(Icons.how_to_reg_outlined, l.msCheckInTitle,
+            null, () => _openEventChecklist(p.event)));
+      } else {
+        actions.add(_SheetAction(Icons.qr_code_2, l.msOpenTicket, null,
+            () => _openTicket(p.event)));
+      }
+      actions.add(_SheetAction(Icons.info_outline, l.details, null,
+          () => _openEventDetail(p.event)));
+    } else if (p is MsExperienceEntry) {
+      final session = p.checkInSession;
+      if (session != null) {
+        actions.add(_SheetAction(Icons.how_to_reg_outlined, l.msCheckInTitle,
+            null, () => _openSessionChecklist(session)));
+      }
+      for (final b in p.bookings) {
+        actions.add(_SheetAction(
+          Icons.receipt_long_outlined,
+          l.dcOpenBooking,
+          [l.dcGuestsBooked(b.guests), BookingL10n.status(l, b.status)]
+              .join(' · '),
+          () => _openBooking(b),
+        ));
+      }
+    }
+    if (actions.isNotEmpty) _actionsSheet(item, actions);
+  }
+
+  Future<void> _actionsSheet(
+      GgCalendarItem item, List<_SheetAction> actions) async {
+    final picked = await showModalBottomSheet<_SheetAction>(
+      context: context,
+      backgroundColor: AppColors.backgroundCard,
+      isScrollControlled: true,
+      shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
+      builder: (ctx) => SafeArea(
+        child: ConstrainedBox(
+          constraints:
+              BoxConstraints(maxHeight: MediaQuery.of(ctx).size.height * 0.7),
+          child: ListView(
+            key: const ValueKey('ms-cal-sheet'),
+            shrinkWrap: true,
+            padding: const EdgeInsets.fromLTRB(8, 12, 8, 12),
+            children: [
+              ListTile(
+                leading: GgCalendarThumb(item: item, size: 40),
+                title: Text(item.title,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                        color: AppColors.textPrimary,
+                        fontWeight: FontWeight.w700)),
+                subtitle: Text(
+                    [
+                      BookingL10n.dateTime(ctx, item.start),
+                      if (item.subtitle != null) item.subtitle!,
+                    ].join(' · '),
+                    style: const TextStyle(color: AppColors.textTertiary)),
+              ),
+              const Divider(color: AppColors.divider),
+              for (final a in actions)
+                ListTile(
+                  leading: Icon(a.icon, color: AppColors.richGold),
+                  title: Text(a.label,
+                      style: const TextStyle(color: AppColors.textPrimary)),
+                  subtitle: a.subtitle == null
+                      ? null
+                      : Text(a.subtitle!,
+                          style:
+                              const TextStyle(color: AppColors.textTertiary)),
+                  onTap: () => Navigator.pop(ctx, a),
+                ),
+            ],
+          ),
+        ),
+      ),
+    );
+    if (picked != null && mounted) picked.run();
+  }
+
   // ───────────────────────────────────────────── Events
 
   String _weekday(DateTime d) =>
@@ -776,6 +1051,15 @@ class _MySpaceViewState extends State<_MySpaceView> {
           label: Text(l.msSeeAll),
         ),
       );
+}
+
+/// One action of the calendar item sheet.
+class _SheetAction {
+  const _SheetAction(this.icon, this.label, this.subtitle, this.run);
+  final IconData icon;
+  final String label;
+  final String? subtitle;
+  final VoidCallback run;
 }
 
 /// A big action tile of the header. [primary] = solid gold.

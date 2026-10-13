@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:greengo_chat/features/my_space/presentation/screens/my_space_screen.dart';
+import 'package:greengo_chat/features/my_space/presentation/widgets/space_widgets.dart';
 
 import '../../support/events_fixtures.dart';
 import '../../support/my_space_fixtures.dart';
@@ -69,7 +70,10 @@ void main() {
         find.text('Check guests in today: 1 event or session'), findsOneWidget);
     expect(find.text('3 upcoming bookings as a guest'), findsOneWidget);
     // Total badge on the card header: 2 + 1 + 1 actionable.
-    expect(find.text('4'), findsOneWidget);
+    expect(
+        find.descendant(
+            of: find.byType(SpaceCountBadge), matching: find.text('4')),
+        findsOneWidget);
   });
 
   testWidgets('Events segment: hosting card with check-in progress',

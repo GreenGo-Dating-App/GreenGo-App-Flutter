@@ -63,6 +63,26 @@ abstract class MySpaceRepository {
 
   /// Host ticks a guest in without the code (server callable, audited).
   Future<Either<Failure, Booking>> manualCheckInBooking(Booking b);
+
+  /// Calendar: bookings the user HOSTS starting in [from, to), any status,
+  /// soonest first. (hostId, slotStart) index; bounded by [limit].
+  Future<List<Booking>> hostBookingsInRange(
+      String uid, DateTime from, DateTime to,
+      {int limit = 300});
+
+  /// Calendar: the user's own bookings (as a guest) starting in [from, to).
+  /// (guestId, slotStart) index; bounded by [limit].
+  Future<List<Booking>> guestBookingsInRange(
+      String uid, DateTime from, DateTime to,
+      {int limit = 300});
+
+  /// Calendar thumbnails: experience id -> its first photo, for [ids].
+  /// [hosted] = listings the user hosts (drafts readable too); otherwise only
+  /// published listings are read (what the rules let a guest list). Ids
+  /// without a photo, unpublished or deleted are simply absent.
+  Future<Map<String, String>> experiencePhotos(
+      String uid, List<String> ids,
+      {required bool hosted});
 }
 
 class FirestoreMySpaceRepository implements MySpaceRepository {
@@ -188,6 +208,73 @@ class FirestoreMySpaceRepository implements MySpaceRepository {
   @override
   Future<Either<Failure, Booking>> manualCheckInBooking(Booking b) =>
       _bookingsRepo.manualCheckIn(b);
+
+  Future<List<Booking>> _inRange(
+      String field, String uid, DateTime from, DateTime to, int limit) async {
+    final snap = await _bookings
+        .where(field, isEqualTo: uid)
+        .where('slotStart', isGreaterThanOrEqualTo: Timestamp.fromDate(from))
+        .where('slotStart', isLessThan: Timestamp.fromDate(to))
+        .orderBy('slotStart')
+        .limit(limit)
+        .get();
+    return [for (final d in snap.docs) BookingModel.fromDoc(d)];
+  }
+
+  @override
+  Future<List<Booking>> hostBookingsInRange(
+          String uid, DateTime from, DateTime to,
+          {int limit = 300}) =>
+      _inRange('hostId', uid, from, to, limit);
+
+  @override
+  Future<List<Booking>> guestBookingsInRange(
+          String uid, DateTime from, DateTime to,
+          {int limit = 300}) =>
+      _inRange('guestId', uid, from, to, limit);
+
+  /// Firestore's `whereIn` cap.
+  static const int _inChunk = 30;
+
+  @override
+  Future<Map<String, String>> experiencePhotos(String uid, List<String> ids,
+      {required bool hosted}) async {
+    final unique = ids.where((i) => i.isNotEmpty).toSet().toList();
+    if (unique.isEmpty) return const {};
+    final col = _db.collection('user_experiences');
+    final snaps = await Future.wait([
+      for (var i = 0; i < unique.length; i += _inChunk)
+        // The extra equality lets the rules prove every result is readable
+        // (published, or hosted by the caller) for a list query.
+        (hosted
+                ? col.where('hostId', isEqualTo: uid)
+                : col.where('status', isEqualTo: 'published'))
+            .where(FieldPath.documentId,
+                whereIn: unique.skip(i).take(_inChunk).toList())
+            .get(),
+    ]);
+    final out = <String, String>{};
+    for (final snap in snaps) {
+      for (final d in snap.docs) {
+        final url = firstExperiencePhoto(d.data());
+        if (url != null) out[d.id] = url;
+      }
+    }
+    return out;
+  }
+
+  /// `mainPhotoUrl`, else the first of `photoUrls`.
+  static String? firstExperiencePhoto(Map<String, dynamic> d) {
+    final main = d['mainPhotoUrl'];
+    if (main is String && main.trim().isNotEmpty) return main.trim();
+    final list = d['photoUrls'];
+    if (list is List) {
+      for (final p in list) {
+        if (p is String && p.trim().isNotEmpty) return p.trim();
+      }
+    }
+    return null;
+  }
 }
 
 class EventCheckInStats extends Equatable {
