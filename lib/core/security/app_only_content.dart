@@ -5,7 +5,8 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../generated/app_localizations.dart';
 
 /// Content that is NOT viewable in the web build at all: other people's
-/// private photos, ID / age verification. A browser cannot block screenshots
+/// private photos, the re-verification selfie camera. (Uploading your own ID
+/// document works on web: AgeVerificationScreen.) A browser cannot block screenshots
 /// (see `ScreenSecurityService`), the mobile apps can, so these stay
 /// app-only and the web shows "Open in the GreenGo app to view" instead.
 ///

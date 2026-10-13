@@ -89,6 +89,7 @@
  */
 
 import * as crypto from 'crypto';
+import { registrationIdDocumentSent } from '../shared/registrationIdReview';
 
 export const BOOKINGS = 'bookings';
 export const SLOTS = 'slots';
@@ -675,7 +676,10 @@ export function checkInQrPayload(bookingId: string, code: string): string {
  *   'approved'  isAgeVerified / ageVerification.status 'verified' (both
  *               protected by the profile rules: only the document-verification
  *               functions write them);
- *   'uploaded'  ageVerification.status pending (submitted, under review);
+ *   'uploaded'  ageVerification.status pending (submitted, under review), or
+ *               the registration ID photo pending / approved (client-writable
+ *               status, so never more than 'uploaded' here: an admin-approved
+ *               one is checked with registrationIdApprovedByAdmin);
  *   'none'      anything else (missing = false).
  * `profiles.idVerified` is deliberately NOT trusted: the profile rules do not
  * protect it, so an owner could set it on their own profile.
@@ -686,6 +690,7 @@ export function idDocumentStateOf(profile: Record<string, any> | null | undefine
   const s = profile.ageVerification?.status;
   if (s === 'verified') return 'approved';
   if (s === 'pending') return 'uploaded';
+  if (registrationIdDocumentSent(profile)) return 'uploaded';
   return 'none';
 }
 

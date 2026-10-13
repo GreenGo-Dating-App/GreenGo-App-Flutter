@@ -25025,6 +25025,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get dcCardHint => 'Calendário das suas reservas e horários livres';
+
+  @override
+  String get uexpIdDocPendingCreateBody =>
+      'O seu documento de identidade está a ser validado. Poderá criar experiências assim que for aprovado, normalmente em menos de um dia.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -50058,4 +50062,8 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get dcCardHint => 'Calendário das suas reservas e horários livres';
+
+  @override
+  String get uexpIdDocPendingCreateBody =>
+      'Seu documento de identidade está em validação. Você poderá criar experiências assim que ele for aprovado, normalmente em menos de um dia.';
 }

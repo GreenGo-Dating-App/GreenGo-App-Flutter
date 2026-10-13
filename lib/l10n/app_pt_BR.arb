@@ -7664,5 +7664,6 @@
   "msCalendarExperiencesEmpty": "Sem experiências neste dia",
   "msCalendarHostingTag": "Anfitrião",
   "msCalendarGoingTag": "Você vai",
-  "dcCardHint": "Calendário das suas reservas e horários livres"
+  "dcCardHint": "Calendário das suas reservas e horários livres",
+  "uexpIdDocPendingCreateBody": "Seu documento de identidade está em validação. Você poderá criar experiências assim que ele for aprovado, normalmente em menos de um dia."
 }

@@ -25110,4 +25110,8 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get dcCardHint => 'Kalender mit deinen Buchungen und freien Zeiten';
+
+  @override
+  String get uexpIdDocPendingCreateBody =>
+      'Dein Ausweisdokument wird geprüft. Sobald es freigegeben ist, kannst du Erlebnisse erstellen, meist innerhalb eines Tages.';
 }

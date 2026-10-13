@@ -7664,5 +7664,6 @@
   "msCalendarExperiencesEmpty": "Keine Erlebnisse an diesem Tag",
   "msCalendarHostingTag": "Gastgeber",
   "msCalendarGoingTag": "Dabei",
-  "dcCardHint": "Kalender mit deinen Buchungen und freien Zeiten"
+  "dcCardHint": "Kalender mit deinen Buchungen und freien Zeiten",
+  "uexpIdDocPendingCreateBody": "Dein Ausweisdokument wird geprüft. Sobald es freigegeben ist, kannst du Erlebnisse erstellen, meist innerhalb eines Tages."
 }

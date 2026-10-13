@@ -26,14 +26,17 @@ import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
 import { emitNotification } from '../notifications/notifyHelpers';
 import { lt, rawText } from '../shared/i18n';
+import { registrationIdApprovedByAdmin } from '../shared/registrationIdReview';
 import { EXPERIENCES, countPublishedPaid, safetyError } from './createUserExperience';
 import {
   AS_FREE_PATCH,
   EXPERIENCE_REPORT_TYPES,
   HOST_AGREEMENT_VERSION,
+  idDocumentState,
   isNewHost,
   publishBlockReason,
   shouldHideForReports,
+  takesPayment,
 } from './safety';
 
 const db = admin.firestore();
@@ -66,7 +69,10 @@ export const publishUserExperience = onCall<{ experienceId?: string; asFree?: bo
       if (next.isFree !== true && profile?.isAdmin !== true && isNewHost(profile)) {
         otherPublishedPaid = await countPublishedPaid(tx, uid, id);
       }
-      const why = publishBlockReason({ profile, experience: next, otherPublishedPaid });
+      const registrationApproved = takesPayment(next) && idDocumentState(profile) !== 'approved'
+        ? await registrationIdApprovedByAdmin(db, uid, profile)
+        : false;
+      const why = publishBlockReason({ profile, experience: next, otherPublishedPaid, registrationApproved });
       if (why) throw safetyError(why);
       // Availability must be defined: at least one upcoming open date.
       // Recurring schedule (Manage times) counts when it generates a future time.

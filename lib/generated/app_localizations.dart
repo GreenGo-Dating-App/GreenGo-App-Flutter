@@ -42518,6 +42518,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Calendar of your bookings and open times'**
   String get dcCardHint;
+
+  /// Shown when a host tries to create an experience while their ID document (sent at registration or later) is still under review.
+  ///
+  /// In en, this message translates to:
+  /// **'Your ID document is being validated. You can create experiences as soon as it is approved, usually within a day.'**
+  String get uexpIdDocPendingCreateBody;
 }
 
 class _AppLocalizationsDelegate

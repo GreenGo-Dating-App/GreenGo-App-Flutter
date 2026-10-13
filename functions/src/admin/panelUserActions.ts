@@ -32,6 +32,7 @@ import {
   SUPER_ADMIN_ONLY,
 } from '../shared/adminAuth';
 import { deductFromBatches } from '../coins/purchaseClawback';
+import { ADMIN_ACTIONS, registrationActionType } from '../shared/registrationIdReview';
 
 const db = () => admin.firestore();
 const OPTS = { memory: '512MiB' as const, timeoutSeconds: 120 };
@@ -286,6 +287,16 @@ export const adminUpdateUserProfile = onCall(OPTS, async (request) => {
   const ref = db().collection('profiles').doc(uid);
   const before = (await requireProfile(uid)).data() || {};
   await ref.update({ ...patch, updatedAt: admin.firestore.FieldValue.serverTimestamp() });
+  if (typeof patch.verificationStatus === 'string' && patch.verificationStatus !== before.verificationStatus) {
+    // The trusted record of a registration ID decision (registrationIdReview.ts).
+    await db().collection(ADMIN_ACTIONS).add({
+      actionType: registrationActionType(patch.verificationStatus),
+      targetUserId: uid,
+      performedBy: caller.uid,
+      timestamp: admin.firestore.Timestamp.now(),
+      details: { status: patch.verificationStatus, via: 'adminUpdateUserProfile' },
+    });
+  }
 
   const previousValues: Record<string, unknown> = {};
   for (const k of Object.keys(patch)) previousValues[k] = before[k] ?? null;
@@ -373,12 +384,23 @@ export const adminBulkApproveVerification = onCall(OPTS, async (request) => {
   const failedIds: string[] = [];
   for (const uid of ids as string[]) {
     try {
-      await db().collection('profiles').doc(uid).update({
+      const now = admin.firestore.Timestamp.now();
+      const batch = db().batch();
+      batch.update(db().collection('profiles').doc(uid), {
         verificationStatus: 'approved',
-        verificationReviewedAt: admin.firestore.Timestamp.now(),
+        verificationReviewedAt: now,
         verificationReviewedBy: caller.uid,
         verificationRejectionReason: null,
       });
+      // The trusted record of the decision (registrationIdReview.ts).
+      batch.set(db().collection(ADMIN_ACTIONS).doc(), {
+        actionType: 'verification_approved',
+        targetUserId: uid,
+        performedBy: caller.uid,
+        timestamp: now,
+        details: { status: 'approved', via: 'adminBulkApproveVerification' },
+      });
+      await batch.commit();
       success++;
     } catch {
       failedIds.push(uid);

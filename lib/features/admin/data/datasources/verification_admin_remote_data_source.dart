@@ -18,6 +18,27 @@ class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDa
   VerificationAdminRemoteDataSourceImpl({required this.firestore});
   final FirebaseFirestore firestore;
 
+  /// The admin's decision on a registration ID photo, in `admin_actions`
+  /// (admins only): the server trusts an approval only from this record
+  /// (functions/src/shared/registrationIdReview.ts). Same shape as the panel.
+  void _logDecision(WriteBatch batch, String userId, String adminId,
+      String actionType, String status) {
+    batch.set(firestore.collection('admin_actions').doc(), {
+      'actionType': actionType,
+      'targetUserId': userId,
+      'performedBy': adminId,
+      'timestamp': FieldValue.serverTimestamp(),
+      'details': {'status': status, 'via': 'app'},
+    });
+  }
+
+  Future<void> _logOne(
+      String userId, String adminId, String actionType, String status) {
+    final batch = firestore.batch();
+    _logDecision(batch, userId, adminId, actionType, status);
+    return batch.commit();
+  }
+
   @override
   Future<List<ProfileModel>> getPendingVerifications() async {
     try {
@@ -73,6 +94,7 @@ class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDa
         'approvedBy': adminId,
         'updatedAt': FieldValue.serverTimestamp(),
       });
+      await _logOne(userId, adminId, 'verification_approved', 'approved');
     } on FirebaseException catch (e) {
       throw ServerException(e.message ?? 'Failed to approve verification');
     } catch (e) {
@@ -98,6 +120,7 @@ class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDa
         'rejectionReason': reason,
         'updatedAt': FieldValue.serverTimestamp(),
       });
+      await _logOne(userId, adminId, 'verification_rejected', 'rejected');
     } on FirebaseException catch (e) {
       throw ServerException(e.message ?? 'Failed to reject verification');
     } catch (e) {
@@ -121,6 +144,8 @@ class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDa
         'approvalStatus': 'pending',
         'updatedAt': FieldValue.serverTimestamp(),
       });
+      await _logOne(userId, adminId, 'verification_resubmission_requested',
+          'needsResubmission');
     } on FirebaseException catch (e) {
       throw ServerException(e.message ?? 'Failed to request better photo');
     } catch (e) {
@@ -149,6 +174,7 @@ class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDa
           'approvedBy': adminId,
           'updatedAt': FieldValue.serverTimestamp(),
         });
+        _logDecision(batch, userId, adminId, 'verification_approved', 'approved');
       }
       await batch.commit();
     } on FirebaseException catch (e) {
@@ -177,6 +203,8 @@ class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDa
           'approvalStatus': 'pending',
           'updatedAt': FieldValue.serverTimestamp(),
         });
+        _logDecision(batch, userId, adminId,
+            'verification_resubmission_requested', 'needsResubmission');
       }
       await batch.commit();
     } on FirebaseException catch (e) {

@@ -111,6 +111,11 @@ describe('ID document + publish rules', () => {
     expect(idDocumentState({ ageVerification: { status: 'rejected' } })).toBe('none');
     expect(idDocumentState(pending)).toBe('uploaded');
     expect(idDocumentState(approved)).toBe('approved');
+    // Registration ID photo: pending / approved count as uploaded only.
+    expect(idDocumentState({ verificationStatus: 'pending' })).toBe('uploaded');
+    expect(idDocumentState({ verificationStatus: 'approved', verificationMethod: 'photo' })).toBe('uploaded');
+    expect(idDocumentState({ verificationStatus: 'approved', verificationMethod: 'phone' })).toBe('none');
+    expect(idDocumentState({ verificationStatus: 'rejected' })).toBe('none');
   });
 
   it('takes payment = paid OR has a link', () => {
@@ -179,5 +184,60 @@ describe('report auto-hide', () => {
     expect(shouldHideForReports(3, 'published')).toBe(true);
     expect(shouldHideForReports(3, 'draft')).toBe(true);
     expect(shouldHideForReports(4, 'hidden')).toBe(false);
+  });
+});
+
+describe('registration ID photo reviewed by an admin', () => {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const R = require('../../src/shared/registrationIdReview');
+  const at = (s: number) => ({ seconds: s });
+
+  it('latest admin decision wins; unrelated actions are ignored', () => {
+    expect(R.latestRegistrationReview([])).toBeNull();
+    expect(R.latestRegistrationReview([
+      { actionType: 'verification_approved', timestamp: at(10) },
+      { actionType: 'user_banned', timestamp: at(30) },
+    ])).toBe('approved');
+    expect(R.latestRegistrationReview([
+      { actionType: 'verification_approved', timestamp: at(10) },
+      { actionType: 'verification_rejected', timestamp: at(20) },
+    ])).toBe('rejected');
+    expect(R.latestRegistrationReview([
+      { actionType: 'verification_rejected', timestamp: at(10) },
+      { actionType: 'verification_approved', timestamp: at(20) },
+    ])).toBe('approved');
+  });
+
+  it('approved only with the profile AND an admin record agreeing', () => {
+    const p = { verificationStatus: 'approved', verificationMethod: 'photo' };
+    expect(R.registrationIdApproved(p, 'approved')).toBe(true);
+    expect(R.registrationIdApproved(p, null)).toBe(false);
+    expect(R.registrationIdApproved(p, 'rejected')).toBe(false);
+    expect(R.registrationIdApproved({ verificationStatus: 'pending' }, 'approved')).toBe(false);
+    expect(R.registrationIdApproved({ verificationStatus: 'approved', verificationMethod: 'phone' }, 'approved')).toBe(false);
+  });
+
+  it('a paid publish passes with an admin-approved registration photo', () => {
+    const profile = {
+      verificationStatus: 'approved',
+      hostAgreementVersion: HOST_AGREEMENT_VERSION,
+      isBusiness: true,
+    };
+    const experience = { isFree: false, price: 10 };
+    const without = publishBlockReason({ profile, experience, otherPublishedPaid: 0 });
+    const withIt = publishBlockReason({ profile, experience, otherPublishedPaid: 0, registrationApproved: true });
+    if (without === 'business_required') {
+      expect(withIt).toBe('business_required');
+    } else {
+      expect(without).toBe('id_document_not_approved');
+      expect(withIt).not.toBe('id_document_not_approved');
+    }
+  });
+
+  it('registration action types', () => {
+    expect(R.registrationActionType('approved')).toBe('verification_approved');
+    expect(R.registrationActionType('verified')).toBe('verification_approved');
+    expect(R.registrationActionType('rejected')).toBe('verification_rejected');
+    expect(R.registrationActionType('pending')).toBe('verification_status_set');
   });
 });

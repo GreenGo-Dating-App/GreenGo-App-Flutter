@@ -25193,4 +25193,8 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get dcCardHint => 'Calendrier de vos réservations et horaires libres';
+
+  @override
+  String get uexpIdDocPendingCreateBody =>
+      'Ta pièce d\'identité est en cours de validation. Tu pourras créer des expériences dès qu\'elle sera approuvée, généralement en moins d\'un jour.';
 }

@@ -7664,5 +7664,6 @@
   "msCalendarExperiencesEmpty": "Nessuna esperienza in questo giorno",
   "msCalendarHostingTag": "Ospiti tu",
   "msCalendarGoingTag": "Partecipi",
-  "dcCardHint": "Calendario delle tue prenotazioni e degli orari liberi"
+  "dcCardHint": "Calendario delle tue prenotazioni e degli orari liberi",
+  "uexpIdDocPendingCreateBody": "Stiamo convalidando il tuo documento d'identità. Potrai creare esperienze appena sarà approvato, di solito entro un giorno."
 }

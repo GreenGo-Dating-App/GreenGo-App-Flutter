@@ -15,7 +15,25 @@ import 'screens/host_agreement_screen.dart';
 /// mirrors `idDocumentState` in functions/src/user_experiences/safety.ts.
 enum IdDocState { none, uploaded, approved }
 
-/// Pure (unit-tested): the document state from a raw profile document.
+/// The ID photo sent at registration ("a photo of yourself holding your ID"),
+/// reviewed by an admin. Phone sign-ups have none. Mirrors
+/// functions/src/shared/registrationIdReview.ts.
+enum RegistrationDoc { none, pending, approved }
+
+/// Pure (unit-tested): the registration ID photo from a raw profile document.
+RegistrationDoc registrationDocFromProfile(Map<String, dynamic>? p) {
+  if (p == null || p['verificationMethod'] == 'phone') {
+    return RegistrationDoc.none;
+  }
+  final s = p['verificationStatus'];
+  if (s == 'approved' || s == 'verified') return RegistrationDoc.approved;
+  if (s == 'pending') return RegistrationDoc.pending;
+  return RegistrationDoc.none;
+}
+
+/// Pure (unit-tested): the document state from a raw profile document. A
+/// registration ID photo counts as uploaded (the server trusts its approval
+/// only through the admin's record).
 IdDocState idDocStateFromProfile(Map<String, dynamic>? p) {
   if (p == null) return IdDocState.none;
   if (p['isAgeVerified'] == true) return IdDocState.approved;
@@ -23,6 +41,9 @@ IdDocState idDocStateFromProfile(Map<String, dynamic>? p) {
   final status = av is Map ? av['status'] : null;
   if (status == 'verified') return IdDocState.approved;
   if (status == 'pending') return IdDocState.uploaded;
+  if (registrationDocFromProfile(p) != RegistrationDoc.none) {
+    return IdDocState.uploaded;
+  }
   return IdDocState.none;
 }
 
@@ -32,6 +53,8 @@ class HostSafetySnapshot {
     this.idState = IdDocState.none,
     this.idRejected = false,
     this.agreementVersion = 0,
+    this.ageDocPending = false,
+    this.registrationDoc = RegistrationDoc.none,
   });
 
   factory HostSafetySnapshot.fromProfile(Map<String, dynamic>? p) {
@@ -40,12 +63,29 @@ class HostSafetySnapshot {
       idState: idDocStateFromProfile(p),
       idRejected: av is Map && av['status'] == 'rejected',
       agreementVersion: (p?['hostAgreementVersion'] as num?)?.toInt() ?? 0,
+      ageDocPending: av is Map && av['status'] == 'pending',
+      registrationDoc: registrationDocFromProfile(p),
     );
   }
 
   final IdDocState idState;
   final bool idRejected;
   final int agreementVersion;
+
+  /// The age-verification document is under review.
+  final bool ageDocPending;
+  final RegistrationDoc registrationDoc;
+
+  /// A document is approved: age verification, or the registration ID photo
+  /// an admin approved (the server double-checks the admin's record).
+  bool get docApproved =>
+      idState == IdDocState.approved ||
+      registrationDoc == RegistrationDoc.approved;
+
+  /// A document was sent and is still being validated.
+  bool get docPending =>
+      !docApproved &&
+      (ageDocPending || registrationDoc == RegistrationDoc.pending);
 
   bool get agreementAccepted =>
       agreementVersion >= HostAgreementScreen.currentVersion;
@@ -77,16 +117,26 @@ class ExperienceSafetyFlow {
     }
   }
 
-  /// True once [uid] has an ID document uploaded (pending or approved). If
-  /// not, explains why, opens the existing upload flow and re-checks on
-  /// return — so the caller simply continues when this returns true.
+  /// Paying a host: true once [uid] has an ID document uploaded (pending or
+  /// approved). Creating as a host: true once a document is APPROVED (the
+  /// registration ID photo counts); one still being validated says so and
+  /// stops. With no document, explains why, opens the upload flow (web too)
+  /// and re-checks on return, so the caller simply continues on true.
   static Future<bool> ensureIdDocument(
     BuildContext context,
     String uid,
     IdDocPurpose purpose,
   ) async {
     final before = await load(uid);
-    if (before.idState != IdDocState.none) return true;
+    if (purpose == IdDocPurpose.createAsHost) {
+      if (before.docApproved) return true;
+      if (before.docPending) {
+        if (context.mounted) await _showPending(context);
+        return false;
+      }
+    } else if (before.idState != IdDocState.none) {
+      return true;
+    }
     if (!context.mounted) return false;
     final l = AppLocalizations.of(context)!;
     final go = await _ask(
@@ -104,7 +154,24 @@ class ExperienceSafetyFlow {
     if (go != true || !context.mounted) return false;
     await AgeVerificationScreen.push(context);
     final after = await load(uid);
+    if (purpose == IdDocPurpose.createAsHost) {
+      if (after.docApproved) return true;
+      if (after.docPending && context.mounted) await _showPending(context);
+      return false;
+    }
     return after.idState != IdDocState.none;
+  }
+
+  /// "Your document is being validated": creating waits for the approval.
+  static Future<void> _showPending(BuildContext context) async {
+    final l = AppLocalizations.of(context)!;
+    await _ask<bool>(
+      context,
+      title: l.uexpPaidPendingTitle,
+      body: l.uexpIdDocPendingCreateBody,
+      icon: Icons.hourglass_top_rounded,
+      actions: [_Choice(l.ok, true, primary: true)],
+    );
   }
 
   /// True once [uid] accepted the current host agreement (shows it if not).
@@ -185,8 +252,10 @@ class ExperienceSafetyFlow {
     final l = AppLocalizations.of(context)!;
     final s = await load(uid);
     if (!context.mounted) return SafetyResolution.cancel;
-    if (s.idState == IdDocState.approved) return SafetyResolution.retry;
-    final pending = s.idState == IdDocState.uploaded;
+    // An admin-approved registration photo: the server checks the admin's
+    // record, so try again.
+    if (s.docApproved) return SafetyResolution.retry;
+    final pending = s.docPending;
     final r = await _ask(
       context,
       title: pending ? l.uexpPaidPendingTitle : l.uexpIdDocTitle,

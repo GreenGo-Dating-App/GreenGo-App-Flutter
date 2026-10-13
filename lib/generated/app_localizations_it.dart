@@ -25082,4 +25082,8 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get dcCardHint =>
       'Calendario delle tue prenotazioni e degli orari liberi';
+
+  @override
+  String get uexpIdDocPendingCreateBody =>
+      'Stiamo convalidando il tuo documento d\'identità. Potrai creare esperienze appena sarà approvato, di solito entro un giorno.';
 }

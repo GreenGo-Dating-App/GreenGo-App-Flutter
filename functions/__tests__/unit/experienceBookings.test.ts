@@ -229,6 +229,9 @@ describe('check-in code + host cancellation counting', () => {
     expect(M.idDocumentStateOf({ ageVerification: { status: 'pending' } })).toBe('uploaded');
     expect(M.idDocumentStateOf({ ageVerification: { status: 'rejected' } })).toBe('none');
     expect(M.idDocumentStateOf(null)).toBe('none');
+    expect(M.idDocumentStateOf({ verificationStatus: 'approved' })).toBe('uploaded');
+    expect(M.idDocumentStateOf({ verificationStatus: 'pending', verificationMethod: 'photo' })).toBe('uploaded');
+    expect(M.idDocumentStateOf({ verificationStatus: 'approved', verificationMethod: 'phone' })).toBe('none');
   });
 
   test('config overrides are bounded', () => {

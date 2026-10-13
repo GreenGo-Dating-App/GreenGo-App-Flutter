@@ -25049,4 +25049,8 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get dcCardHint => 'Calendario de tus reservas y horas libres';
+
+  @override
+  String get uexpIdDocPendingCreateBody =>
+      'Estamos validando tu documento de identidad. Podrás crear experiencias en cuanto se apruebe, normalmente en menos de un día.';
 }

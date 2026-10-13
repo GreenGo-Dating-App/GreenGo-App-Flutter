@@ -20,6 +20,7 @@ import { HttpsError, FunctionsErrorCode } from 'firebase-functions/v2/https';
 import '../shared/firebaseAdmin';
 import { isBusinessActive, tierDateFromValue } from '../shared/effectiveTier';
 import { assertCanParticipate } from '../shared/participation';
+import { registrationIdApprovedByAdmin } from '../shared/registrationIdReview';
 import { emitNotification, resolveActor, Actor } from '../notifications/notifyHelpers';
 import { LText, lt, rawText } from '../shared/i18n';
 import { recordMeeting } from '../checkin/meetings';
@@ -589,7 +590,10 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
       // Paid bookings only from an ACTIVE business account (existing paid
       // listings of other hosts stay readable; new sales are refused).
       if (!isBusinessActive(host)) fail('failed-precondition', 'seller_not_business');
-      if (idDocumentStateOf(host) !== 'approved') fail('failed-precondition', 'host_not_verified');
+      if (idDocumentStateOf(host) !== 'approved' &&
+          !(await registrationIdApprovedByAdmin(fdb(), hostP.id, host))) {
+        fail('failed-precondition', 'host_not_verified');
+      }
       const choice = choosePaymentMethod(e, data?.paymentMethod);
       if (choice.ok === false) {
         fail(choice.reason === 'no_payment_method' ? 'failed-precondition' : 'invalid-argument', choice.reason, {

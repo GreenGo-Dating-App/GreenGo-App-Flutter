@@ -13719,5 +13719,7 @@
   "msCalendarExperiencesEmpty": "No experiences on this day",
   "msCalendarHostingTag": "Hosting",
   "msCalendarGoingTag": "Going",
-  "dcCardHint": "Calendar of your bookings and open times"
+  "dcCardHint": "Calendar of your bookings and open times",
+  "uexpIdDocPendingCreateBody": "Your ID document is being validated. You can create experiences as soon as it is approved, usually within a day.",
+  "@uexpIdDocPendingCreateBody": {"description": "Shown when a host tries to create an experience while their ID document (sent at registration or later) is still under review."}
 }

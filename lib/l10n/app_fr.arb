@@ -7090,5 +7090,6 @@
   "msCalendarExperiencesEmpty": "Aucune expérience ce jour-là",
   "msCalendarHostingTag": "Hôte",
   "msCalendarGoingTag": "Participant",
-  "dcCardHint": "Calendrier de vos réservations et horaires libres"
+  "dcCardHint": "Calendrier de vos réservations et horaires libres",
+  "uexpIdDocPendingCreateBody": "Ta pièce d'identité est en cours de validation. Tu pourras créer des expériences dès qu'elle sera approuvée, généralement en moins d'un jour."
 }

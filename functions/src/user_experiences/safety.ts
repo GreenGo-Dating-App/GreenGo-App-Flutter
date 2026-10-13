@@ -20,6 +20,9 @@
  */
 
 import { isBusinessActive } from '../shared/effectiveTier';
+import { registrationIdDocumentSent } from '../shared/registrationIdReview';
+
+export { registrationIdDocumentSent };
 
 export const HOST_AGREEMENT_VERSION = 1;
 export const NEW_HOST_MIN_REVIEWS = 3;
@@ -63,6 +66,7 @@ export function idDocumentState(profile: Record<string, any> | null | undefined)
   const status = profile.ageVerification?.status;
   if (status === 'verified') return 'approved';
   if (status === 'pending') return 'uploaded';
+  if (registrationIdDocumentSent(profile)) return 'uploaded';
   return 'none';
 }
 
@@ -110,6 +114,8 @@ export function publishBlockReason(params: {
   profile: Record<string, any> | null | undefined;
   experience: Record<string, unknown>;
   otherPublishedPaid: number;
+  /** An admin approved the registration ID photo (registrationIdApprovedByAdmin). */
+  registrationApproved?: boolean;
 }): SafetyCode | null {
   const { profile, experience, otherPublishedPaid } = params;
   const base = createBlockReason(profile);
@@ -118,7 +124,9 @@ export function publishBlockReason(params: {
   if (!takesPayment(experience)) return null;
   // Only active business accounts may charge for a listing.
   if (!isBusinessActive(profile)) return 'business_required';
-  if (idDocumentState(profile) !== 'approved') return 'id_document_not_approved';
+  if (idDocumentState(profile) !== 'approved' && params.registrationApproved !== true) {
+    return 'id_document_not_approved';
+  }
   if (experience.isFree !== true && profile?.isAdmin !== true && isNewHost(profile) &&
       otherPublishedPaid >= NEW_HOST_MAX_PUBLISHED_PAID) {
     return 'new_host_paid_limit';

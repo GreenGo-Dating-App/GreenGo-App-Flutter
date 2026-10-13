@@ -177,6 +177,27 @@ void main() {
           IdDocState.uploaded);
       expect(idDocStateFromProfile({'isAgeVerified': true}),
           IdDocState.approved);
+      // Registration ID photo (onboarding): pending / approved = uploaded.
+      expect(idDocStateFromProfile({'verificationStatus': 'pending'}),
+          IdDocState.uploaded);
+      expect(
+          idDocStateFromProfile(
+              {'verificationStatus': 'approved', 'verificationMethod': 'phone'}),
+          IdDocState.none);
+      final reg = HostSafetySnapshot.fromProfile(
+          {'verificationStatus': 'approved', 'verificationMethod': 'photo'});
+      expect(reg.docApproved, isTrue);
+      expect(reg.docPending, isFalse);
+      final regPending =
+          HostSafetySnapshot.fromProfile({'verificationStatus': 'pending'});
+      expect(regPending.docApproved, isFalse);
+      expect(regPending.docPending, isTrue);
+      final agePending = HostSafetySnapshot.fromProfile({
+        'ageVerification': {'status': 'pending'}
+      });
+      expect(agePending.docPending, isTrue);
+      expect(HostSafetySnapshot.fromProfile({'verificationStatus': 'rejected'})
+          .docPending, isFalse);
       final s = HostSafetySnapshot.fromProfile({
         'ageVerification': {'status': 'rejected'},
         'hostAgreementVersion': HostAgreementScreen.currentVersion,
