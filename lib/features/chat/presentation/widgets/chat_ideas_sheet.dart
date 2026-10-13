@@ -74,11 +74,7 @@ class _ChatIdeasSheetState extends State<ChatIdeasSheet> {
       future: _ready,
       builder: (context, snap) {
         final items = (_sentences ? _datasets.sentences : _datasets.icebreakers) ?? const <DatasetItem>[];
-        final counts = <String, int>{};
-        for (final i in items) {
-          counts[i.topic] = (counts[i.topic] ?? 0) + 1;
-        }
-        final topics = counts.keys.toList();
+        final topics = <String>{for (final i in items) i.topic}.toList();
         // No category chosen yet: the grid of categories.
         final topic = _topic != null && topics.contains(_topic) ? _topic : null;
         final shown = topic == null ? const <DatasetItem>[] : items.where((i) => i.topic == topic).toList();
@@ -118,14 +114,13 @@ class _ChatIdeasSheetState extends State<ChatIdeasSheet> {
                     crossAxisCount: 3,
                     mainAxisSpacing: 12,
                     crossAxisSpacing: 12,
-                    childAspectRatio: 0.74,
+                    childAspectRatio: 1.45, // half the former height
                   ),
                   itemCount: topics.length,
                   itemBuilder: (context, i) => _CategoryTile(
                     key: ValueKey('chat-ideas-category-${topics[i]}'),
                     icon: chatTopicIcon(topics[i]),
                     label: chatTopicLabel(l10n, topics[i]),
-                    count: counts[topics[i]] ?? 0,
                     onTap: () => setState(() => _topic = topics[i]),
                   ),
                 ),
@@ -156,7 +151,6 @@ class _ChatIdeasSheetState extends State<ChatIdeasSheet> {
                         overflow: TextOverflow.ellipsis,
                         style: const TextStyle(color: AppColors.textPrimary, fontSize: 16, fontWeight: FontWeight.w700)),
                   ),
-                  _CountPill(count: shown.length),
                 ]),
               ),
               Expanded(
@@ -188,65 +182,44 @@ class _ChatIdeasSheetState extends State<ChatIdeasSheet> {
   }
 }
 
-/// A category of the grid: icon in a gold circle, name, number of messages.
+/// A category of the grid: icon over the name (compact, no count).
 class _CategoryTile extends StatelessWidget {
-  const _CategoryTile({super.key, required this.icon, required this.label, required this.count, required this.onTap});
+  const _CategoryTile({super.key, required this.icon, required this.label, required this.onTap});
 
   final IconData icon;
   final String label;
-  final int count;
   final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) => Material(
         color: AppColors.charcoal,
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(14),
         child: InkWell(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(14),
           onTap: onTap,
           child: Container(
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(14),
               border: Border.all(color: AppColors.richGold.withValues(alpha: 0.25)),
             ),
-            padding: const EdgeInsets.fromLTRB(8, 12, 8, 10),
+            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 5),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
-                  padding: const EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    color: AppColors.richGold.withValues(alpha: 0.15),
-                    shape: BoxShape.circle,
-                  ),
-                  child: Icon(icon, color: AppColors.richGold, size: 24),
+                Icon(icon, color: AppColors.richGold, size: 20),
+                const SizedBox(height: 3),
+                Flexible(
+                  child: Text(label,
+                      textAlign: TextAlign.center,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(
+                          color: AppColors.textPrimary, fontSize: 11.5, fontWeight: FontWeight.w600, height: 1.15)),
                 ),
-                Text(label,
-                    textAlign: TextAlign.center,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(
-                        color: AppColors.textPrimary, fontSize: 12.5, fontWeight: FontWeight.w600, height: 1.2)),
-                _CountPill(count: count),
               ],
             ),
           ),
         ),
-      );
-}
-
-class _CountPill extends StatelessWidget {
-  const _CountPill({required this.count});
-  final int count;
-
-  @override
-  Widget build(BuildContext context) => Container(
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-        decoration: BoxDecoration(
-          color: AppColors.backgroundDark,
-          borderRadius: BorderRadius.circular(10),
-        ),
-        child: Text('$count', style: const TextStyle(color: AppColors.textTertiary, fontSize: 11)),
       );
 }
 
