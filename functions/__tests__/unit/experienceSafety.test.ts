@@ -241,3 +241,29 @@ describe('registration ID photo reviewed by an admin', () => {
     expect(R.registrationActionType('pending')).toBe('verification_status_set');
   });
 });
+
+describe('admin decision -> Verified badge (isAgeVerified)', () => {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const { verifiedPatchFor } = require('../../src/admin/registrationIdVerified');
+
+  it('approval sets the badge only when the profile says approved', () => {
+    expect(verifiedPatchFor('verification_approved', { verificationStatus: 'approved' }))
+      .toEqual({ isAgeVerified: true, idVerifiedVia: 'registration_review' });
+    expect(verifiedPatchFor('verification_approved', { verificationStatus: 'pending' })).toBeNull();
+    expect(verifiedPatchFor('verification_approved', { verificationStatus: 'approved', verificationMethod: 'phone' })).toBeNull();
+    expect(verifiedPatchFor('verification_approved', { verificationStatus: 'approved', isAgeVerified: true })).toBeNull();
+    expect(verifiedPatchFor('verification_approved', null)).toBeNull();
+  });
+
+  it('rejection removes it, unless the age document itself is verified', () => {
+    expect(verifiedPatchFor('verification_rejected', { isAgeVerified: true }))
+      .toEqual({ isAgeVerified: false, idVerifiedVia: null });
+    expect(verifiedPatchFor('verification_resubmission_requested', { isAgeVerified: true }))
+      .toEqual({ isAgeVerified: false, idVerifiedVia: null });
+    expect(verifiedPatchFor('verification_rejected', {
+      isAgeVerified: true, ageVerification: { status: 'verified' },
+    })).toBeNull();
+    expect(verifiedPatchFor('verification_rejected', { isAgeVerified: false })).toBeNull();
+    expect(verifiedPatchFor('user_banned', { isAgeVerified: true })).toBeNull();
+  });
+});

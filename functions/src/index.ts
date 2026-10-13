@@ -689,6 +689,9 @@ export {
   adminSendUserNotification,
 } from './admin/panelUserActions';
 
+// Registration ID photo approved by an admin -> "Verified" badge (isAgeVerified).
+export { onAdminVerificationAction } from './admin/registrationIdVerified';
+
 // Admin Panel Functions (2FA, password mgmt, user mgmt, AI support)
 export {
   send2FACode,
