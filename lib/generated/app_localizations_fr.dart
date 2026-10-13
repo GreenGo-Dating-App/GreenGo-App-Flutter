@@ -24649,6 +24649,10 @@ class AppLocalizationsFr extends AppLocalizations {
   String get chatTripShare => 'Partager la liste';
 
   @override
+  String get chatTtsUnavailable =>
+      'L\'audio n\'est pas disponible pour le moment. Réessaie.';
+
+  @override
   String get chatSendAttraction => 'Envoyer dans la discussion';
 
   @override

@@ -24480,6 +24480,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get chatTripShare => 'Partilhar lista';
 
   @override
+  String get chatTtsUnavailable =>
+      'O áudio não está disponível agora. Tenta novamente.';
+
+  @override
   String get chatSendAttraction => 'Enviar na conversa';
 
   @override
@@ -49248,6 +49252,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get chatTripShare => 'Compartilhar lista';
+
+  @override
+  String get chatTtsUnavailable =>
+      'O áudio não está disponível agora. Tente de novo.';
 
   @override
   String get chatSendAttraction => 'Enviar na conversa';

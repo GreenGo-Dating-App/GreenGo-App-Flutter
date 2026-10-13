@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
-import 'package:share_plus/share_plus.dart';
 
 import '../../../../core/config/map_basemap.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -14,6 +13,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../attractions/data/datasources/attractions_datasource.dart';
 import '../../../attractions/domain/entities/attraction.dart';
 import '../../domain/chat_places.dart';
+import '../widgets/attraction_message.dart';
 import '../widgets/keyword_actions.dart';
 
 /// Every place named in a chat as a list (attractions, cities, countries)
@@ -106,6 +106,23 @@ class _ChatTripScreenState extends State<ChatTripScreen> {
     return out;
   }
 
+  bool _canSend(_TripItem i) => i.attraction != null
+      ? ChatAttractionShare.sender.value != null
+      : ChatAttractionShare.textSender.value != null;
+
+  Future<void> _send(AppLocalizations l10n, _TripItem i) async {
+    final messenger = ScaffoldMessenger.of(context);
+    final a = i.attraction;
+    if (a != null) {
+      final bucket = await _ds.bucket();
+      await ChatAttractionShare.sender.value?.call(a, bucket);
+    } else {
+      final text = i.subtitle == null ? i.title : '${i.title}, ${i.subtitle}';
+      await ChatAttractionShare.textSender.value?.call(text);
+    }
+    messenger.showSnackBar(SnackBar(content: Text(l10n.chatAttractionSent)));
+  }
+
   Future<void> _remove(AppLocalizations l10n, ChatPlace place) async {
     setState(() => _removed.add(place.key));
     final messenger = ScaffoldMessenger.of(context);
@@ -118,17 +135,6 @@ class _ChatTripScreenState extends State<ChatTripScreen> {
     }
   }
 
-  void _share(AppLocalizations l10n, List<_TripItem> items) {
-    final lines = <String>[l10n.chatTripShareHeader, ''];
-    for (final i in items) {
-      final where = i.point == null
-          ? ''
-          : '  https://www.google.com/maps/search/?api=1&query=${i.point!.latitude},${i.point!.longitude}';
-      lines.add('• ${i.title}${i.subtitle == null ? '' : ' (${i.subtitle})'}$where');
-    }
-    Share.share(lines.join('\n'));
-  }
-
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
@@ -139,19 +145,6 @@ class _ChatTripScreenState extends State<ChatTripScreen> {
         appBar: AppBar(
           backgroundColor: AppColors.backgroundDark,
           title: Text(l10n.chatTripTitle),
-          actions: [
-            FutureBuilder<List<_TripItem>>(
-              future: _items,
-              builder: (context, snap) => IconButton(
-                key: const ValueKey('chat-trip-share'),
-                tooltip: l10n.chatTripShare,
-                icon: const Icon(Icons.ios_share),
-                onPressed: (snap.data?.isNotEmpty ?? false)
-                    ? () => _share(l10n, snap.data!.where((i) => !_removed.contains(i.place.key)).toList())
-                    : null,
-              ),
-            ),
-          ],
           bottom: TabBar(
             indicatorColor: AppColors.richGold,
             labelColor: AppColors.richGold,
@@ -226,6 +219,14 @@ class _ChatTripScreenState extends State<ChatTripScreen> {
                       ? null
                       : Text(i.subtitle!, style: const TextStyle(color: AppColors.textTertiary, fontSize: 12.5)),
                   trailing: Row(mainAxisSize: MainAxisSize.min, children: [
+                    // Send this place into the chat (attraction = card).
+                    if (_canSend(i))
+                      IconButton(
+                        key: ValueKey('chat-trip-send-${i.place.key}'),
+                        tooltip: l10n.chatSendAttraction,
+                        icon: const Icon(Icons.send_rounded, color: AppColors.richGold),
+                        onPressed: () => _send(l10n, i),
+                      ),
                     if (widget.onRemove != null)
                       IconButton(
                         key: ValueKey('chat-trip-remove-${i.place.key}'),

@@ -437,7 +437,20 @@ export async function handleSynthesizeSpeech(request: any) {
     console.warn('synthesizeSpeech: TTS request failed', e?.name || 'error');
     throw unavailable();
   }
-  const audioContent = r.ok ? r.body?.audioContent : null;
+  let audioContent = r.ok ? r.body?.audioContent : null;
+  // No Chirp 3 HD voice for this language (e.g. pt-PT): the language's
+  // default voice instead, then (pt-PT only) Brazilian Portuguese.
+  for (const fallback of [languageCode, ...(languageCode === 'pt-PT' ? ['pt-BR'] : [])]) {
+    if (typeof audioContent === 'string' && audioContent) break;
+    try {
+      r = await fetchJson('https://texttospeech.googleapis.com/v1/text:synthesize', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
+        body: JSON.stringify({ input: { text }, voice: { languageCode: fallback }, audioConfig: { audioEncoding: 'MP3' } }),
+      }, 30_000);
+      audioContent = r.ok ? r.body?.audioContent : null;
+    } catch (_) { /* next fallback */ }
+  }
   if (typeof audioContent !== 'string' || !audioContent) {
     console.warn(`synthesizeSpeech: TTS HTTP ${r.status}`);
     throw unavailable();

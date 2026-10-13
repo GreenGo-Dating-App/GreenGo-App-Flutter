@@ -2,10 +2,12 @@ import 'dart:ui' as ui;
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:audioplayers/audioplayers.dart' hide Source;
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/services/silent_audio.dart';
 import '../../../../core/services/location_share_service.dart';
 import '../../../../core/widgets/voice_message_widget.dart';
 import '../../../events/presentation/widgets/event_message_card.dart';
@@ -269,9 +271,18 @@ class _MessageBubbleState extends State<MessageBubble> {
   /// Uses Google Cloud TTS (Chirp 3 HD) for human-like speech.
   /// The sender's gender determines the voice (male sender = male voice).
   /// Each listen costs 5 coins.
+  void _ttsUnavailable() => ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(AppLocalizations.of(context)!.chatTtsUnavailable)),
+      );
+
   Future<void> _playTts() async {
     final message = widget.message;
     if (message.type != MessageType.text) return;
+    // Web: start (silent) audio inside the tap, so the browser allows the
+    // real clip after the async steps below (iPhone Safari blocks it otherwise).
+    if (kIsWeb && !_isTtsPlaying) {
+      _audioPlayer.play(BytesSource(kSilentMp3)).catchError((Object _) {});
+    }
 
     // If already playing, stop
     if (_isTtsPlaying) {
@@ -377,11 +388,17 @@ class _MessageBubbleState extends State<MessageBubble> {
         await _audioPlayer.play(source);
       } else {
         debugPrint('TTS: Cloud TTS failed after 3 retries');
-        if (mounted) setState(() => _isTtsLoading = false);
+        if (mounted) {
+          setState(() => _isTtsLoading = false);
+          _ttsUnavailable();
+        }
       }
     } catch (e) {
       debugPrint('TTS: Playback error: $e');
-      if (mounted) setState(() { _isTtsLoading = false; _isTtsPlaying = false; });
+      if (mounted) {
+        setState(() { _isTtsLoading = false; _isTtsPlaying = false; });
+        _ttsUnavailable();
+      }
     }
   }
 

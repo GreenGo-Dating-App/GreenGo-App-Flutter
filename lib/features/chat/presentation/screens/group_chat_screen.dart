@@ -172,6 +172,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
   void initState() {
     super.initState();
     ChatAttractionShare.sender.value = _sendAttraction;
+    ChatAttractionShare.textSender.value = _sendPlainText;
     _loadTranslationPrefs();
     _scrollController.addListener(_onScroll);
     _prefetchMembers();
@@ -364,6 +365,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
   @override
   void dispose() {
     if (ChatAttractionShare.sender.value == _sendAttraction) ChatAttractionShare.sender.value = null;
+    if (ChatAttractionShare.textSender.value == _sendPlainText) ChatAttractionShare.textSender.value = null;
     _screenshotSub?.cancel();
     _controller.dispose();
     _scrollController.dispose();
@@ -388,6 +390,14 @@ class _GroupChatViewState extends State<_GroupChatView> {
     _controller.clear();
     // Same "message sent" sound as 1:1 exchanges.
     AppSoundService().play(AppSound.messageSent);
+  }
+
+  /// Sends a plain text (a city or country) into the group.
+  Future<void> _sendPlainText(String text) async {
+    context.read<GroupChatBloc>().add(GroupChatMessageSent(
+          content: text,
+          metadata: MessageInsights.metadataFor(text, language: Localizations.localeOf(context).languageCode),
+        ));
   }
 
   /// Sends [a] as an attraction card into the group.

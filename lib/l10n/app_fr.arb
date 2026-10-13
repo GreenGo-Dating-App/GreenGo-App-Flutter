@@ -6929,6 +6929,7 @@
   "chatTripEmpty": "Aucun lieu pour l'instant. Les villes, pays et attractions cités dans cette discussion apparaissent ici.",
   "chatTripNoMap": "Aucun de ces lieux n'a encore de position sur la carte.",
   "chatTripShare": "Partager la liste",
+  "chatTtsUnavailable": "L'audio n'est pas disponible pour le moment. Réessaie.",
   "chatSendAttraction": "Envoyer dans la discussion",
   "chatAttractionSent": "Envoyé dans la discussion",
   "chatTripRemove": "Retirer (détecté par erreur)",

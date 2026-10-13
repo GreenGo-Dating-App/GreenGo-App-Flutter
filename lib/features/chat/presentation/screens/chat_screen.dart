@@ -23,7 +23,6 @@ import '../../../subscription/presentation/screens/membership_screen.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/providers/language_provider.dart';
 import '../../../../core/services/app_sound_service.dart';
-import '../../../../core/services/chat_learning_service.dart';
 import '../../domain/message_insights.dart';
 import '../../../../core/services/chat_datasets/chat_datasets.dart';
 import '../widgets/chat_ideas_sheet.dart';
@@ -211,13 +210,11 @@ class _ChatScreenState extends State<ChatScreen> {
   // Smart replies
 
   // Grammar correction
-  Map<String, dynamic>? _grammarResult;
 
   // One-time chat gesture mini-tour (hold to translate / double-tap to hear)
   bool _chatTourChecked = false;
   bool _showGrammarBanner = false;
 
-  final ChatLearningService _learningService = ChatLearningService();
 
   // Chat streak & XP
   int _chatStreak = 0;
@@ -259,6 +256,7 @@ class _ChatScreenState extends State<ChatScreen> {
     super.initState();
     // "Attractions in <city>" can send an attraction into this chat.
     ChatAttractionShare.sender.value = _sendAttraction;
+    ChatAttractionShare.textSender.value = _sendPlainText;
     // Suppress foreground push notifications for this conversation
     PushNotificationService.activeConversationId = widget.matchId;
     _translationService.initialize();
@@ -495,6 +493,7 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   void dispose() {
     if (ChatAttractionShare.sender.value == _sendAttraction) ChatAttractionShare.sender.value = null;
+    if (ChatAttractionShare.textSender.value == _sendPlainText) ChatAttractionShare.textSender.value = null;
     AiConsentService.instance.statusListenable.removeListener(_onAiConsentChanged);
     _scrollController.removeListener(_onScroll);
     // Clear active conversation so notifications resume
@@ -693,24 +692,6 @@ class _ChatScreenState extends State<ChatScreen> {
       return;
     }
 
-    // Grammar check for non-native language messages (Silver+ only)
-    final userTier = _currentUserProfile?.effectiveTier ?? MembershipTier.free;
-    final isSilverPlus = userTier != MembershipTier.free;
-    if (isSilverPlus && !_showGrammarBanner && content.split(' ').length >= 3) {
-      final lang = widget.otherUserProfile.languages.isNotEmpty
-          ? widget.otherUserProfile.languages.first
-          : 'en';
-      if (lang != (_userLanguage ?? 'en')) {
-        final result = await _learningService.checkGrammar(content, lang);
-        if (result != null && result['hasErrors'] == true && mounted) {
-          setState(() {
-            _grammarResult = result;
-            _showGrammarBanner = true;
-          });
-          return; // Don't send yet, show correction first
-        }
-      }
-    }
     // Reset grammar banner
     if (_showGrammarBanner) {
       setState(() => _showGrammarBanner = false);
@@ -839,6 +820,15 @@ class _ChatScreenState extends State<ChatScreen> {
       initialLng: known ? me.longitude : null,
       autoLocate: true,
     );
+  }
+
+  /// Sends a plain text (a city or country from "Places from this chat").
+  Future<void> _sendPlainText(String text) async {
+    _addSend(ChatMessageSent(
+      content: text,
+      type: MessageType.text,
+      metadata: MessageInsights.metadataFor(text, language: Localizations.localeOf(context).languageCode),
+    ));
   }
 
   /// Sends [a] as an attraction card (text + metadata for older versions).
@@ -2103,7 +2093,6 @@ class _ChatScreenState extends State<ChatScreen> {
             _buildReplyPreview(),
 
             // Grammar correction banner
-            if (_showGrammarCheck) _buildGrammarBanner(),
 
             // Questions about the place the partner just named (offline, from
             // message metadata; no AI). The places list/map is the map icon.
@@ -2665,14 +2654,6 @@ class _ChatScreenState extends State<ChatScreen> {
                 subtitle: AppLocalizations.of(context)!.chatSettingDifficultyBadgesDesc,
                 value: _showDifficultyBadge,
                 onChanged: (v) => setState(() => _showDifficultyBadge = v),
-              ),
-              _buildSettingToggle(
-                setSheetState,
-                icon: Icons.spellcheck,
-                label: AppLocalizations.of(context)!.chatSettingGrammarCheck,
-                subtitle: AppLocalizations.of(context)!.chatSettingGrammarCheckDesc,
-                value: _showGrammarCheck,
-                onChanged: (v) => setState(() => _showGrammarCheck = v),
               ),
               _buildSettingToggle(
                 setSheetState,
@@ -3654,82 +3635,6 @@ class _ChatScreenState extends State<ChatScreen> {
             onPressed: _clearReplyMessage,
             padding: EdgeInsets.zero,
             constraints: const BoxConstraints(),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildGrammarBanner() {
-    if (!_showGrammarBanner || _grammarResult == null) return const SizedBox.shrink();
-
-    return Container(
-      padding: const EdgeInsets.all(12),
-      color: AppColors.backgroundCard,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              const Icon(Icons.spellcheck, color: Colors.orange, size: 18),
-              const SizedBox(width: 8),
-              Text(AppLocalizations.of(context)!.chatGrammarSuggestion, style: const TextStyle(color: AppColors.textPrimary, fontSize: 13, fontWeight: FontWeight.bold)),
-              const Spacer(),
-              GestureDetector(
-                onTap: () => setState(() => _showGrammarBanner = false),
-                child: const Icon(Icons.close, size: 18, color: AppColors.textTertiary),
-              ),
-            ],
-          ),
-          const SizedBox(height: 6),
-          Text(
-            _grammarResult!['corrected'] ?? '',
-            style: const TextStyle(color: AppColors.richGold, fontSize: 14),
-          ),
-          if (_grammarResult!['explanation'] != null) ...[
-            const SizedBox(height: 4),
-            Text(
-              _grammarResult!['explanation'],
-              style: const TextStyle(color: AppColors.textTertiary, fontSize: 11),
-            ),
-          ],
-          const SizedBox(height: 8),
-          Row(
-            children: [
-              Expanded(
-                child: GestureDetector(
-                  onTap: () {
-                    _messageController.text = _grammarResult!['corrected'] ?? _messageController.text;
-                    setState(() => _showGrammarBanner = false);
-                  },
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(vertical: 8),
-                    decoration: BoxDecoration(
-                      color: AppColors.richGold,
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Text(AppLocalizations.of(context)!.chatUseCorrection, textAlign: TextAlign.center, style: const TextStyle(color: AppColors.deepBlack, fontSize: 13, fontWeight: FontWeight.w600)),
-                  ),
-                ),
-              ),
-              const SizedBox(width: 8),
-              Expanded(
-                child: GestureDetector(
-                  onTap: () {
-                    setState(() => _showGrammarBanner = false);
-                    _sendMessage(context);
-                  },
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(vertical: 8),
-                    decoration: BoxDecoration(
-                      border: Border.all(color: AppColors.textTertiary),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Text(AppLocalizations.of(context)!.chatSendAnyway, textAlign: TextAlign.center, style: const TextStyle(color: AppColors.textSecondary, fontSize: 13)),
-                  ),
-                ),
-              ),
-            ],
           ),
         ],
       ),

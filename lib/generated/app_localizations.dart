@@ -41547,6 +41547,12 @@ abstract class AppLocalizations {
   /// **'Share list'**
   String get chatTripShare;
 
+  /// No description provided for @chatTtsUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Audio isn\'t available right now. Please try again.'**
+  String get chatTtsUnavailable;
+
   /// No description provided for @chatSendAttraction.
   ///
   /// In en, this message translates to:

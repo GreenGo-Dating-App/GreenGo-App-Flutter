@@ -19,6 +19,10 @@ class ChatAttractionShare {
   static final ValueNotifier<Future<void> Function(Attraction a, String bucket)?> sender =
       ValueNotifier(null);
 
+  /// The open chat's plain-text sender (a city or country from "Places from
+  /// this chat"), or null.
+  static final ValueNotifier<Future<void> Function(String text)?> textSender = ValueNotifier(null);
+
   static Map<String, dynamic> metadataFor(Attraction a, String bucket) => {
         'attraction': {
           'id': a.id,
