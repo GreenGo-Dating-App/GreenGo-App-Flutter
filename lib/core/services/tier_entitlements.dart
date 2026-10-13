@@ -73,6 +73,12 @@ class TierEntitlements {
   static const int _experiencesGold = 10; // Gold: 10 experiences
   static const int? _experiencesPlatinum = null; // Platinum: unlimited (∞)
 
+  // --- People an account WITHOUT Base may chat with per UTC day. ---
+  // A taste of the app (owner rule 2026-10-13); Base and up are unlimited.
+  // Mirrors FREE_DAILY_CHATS (functions/src/shared/tierLimits.ts), enforced
+  // by the claimFreeChat callable and `freeChatOk` in the Firestore rules.
+  static const int freeDailyChats = 3;
+
   // --- New-people connects / first-messages per day (null = unlimited). ---
   static const int _dailyConnectsFree = 10; // adjustable
   static const int _dailyConnectsSilver = 50; // adjustable

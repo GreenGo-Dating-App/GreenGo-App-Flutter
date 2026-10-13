@@ -7025,5 +7025,8 @@
   "chatTopicCultureQuestions": "Questions sur la culture",
   "chatTopicHumorReactions": "Humour et réactions",
   "chatTopicEventsRsvp": "Événements",
-  "chatTopicLanguageProgress": "Progrès en langue"
+  "chatTopicLanguageProgress": "Progrès en langue",
+  "freeChatLimitTitle": "Discussions gratuites du jour épuisées",
+  "freeChatLimitBody": "Sans abonnement, tu peux discuter avec {limit} personnes par jour. Prends l'abonnement de base pour discuter avec tout le monde, participer à des événements et réserver des expériences.",
+  "freeChatUsedToday": "Discussion gratuite {used} sur {limit} aujourd'hui"
 }

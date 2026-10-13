@@ -24776,6 +24776,19 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get chatTopicLanguageProgress => 'Progresso na língua';
+
+  @override
+  String get freeChatLimitTitle => 'Conversas gratuitas de hoje esgotadas';
+
+  @override
+  String freeChatLimitBody(int limit) {
+    return 'Sem subscrição podes conversar com $limit pessoas por dia. Obtém a subscrição Base para conversar com todos, participar em eventos e reservar experiências.';
+  }
+
+  @override
+  String freeChatUsedToday(int used, int limit) {
+    return 'Conversa gratuita $used de $limit hoje';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -49561,4 +49574,17 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get chatTopicLanguageProgress => 'Progresso no idioma';
+
+  @override
+  String get freeChatLimitTitle => 'Conversas grátis de hoje esgotadas';
+
+  @override
+  String freeChatLimitBody(int limit) {
+    return 'Sem assinatura você pode conversar com $limit pessoas por dia. Assine a Base para conversar com todo mundo, participar de eventos e reservar experiências.';
+  }
+
+  @override
+  String freeChatUsedToday(int used, int limit) {
+    return 'Conversa grátis $used de $limit hoje';
+  }
 }

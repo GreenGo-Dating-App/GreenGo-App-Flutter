@@ -145,6 +145,16 @@ service cloud.firestore {
     function canChat(uid) {
       return baseAccess(uid);
     }
+    // Free chats without Base (owner rule 2026-10-13): 3 people per UTC day.
+    // The claimFreeChat callable (functions/src/entitlements/freeChat.ts)
+    // adds the conversation to today's list; posting is allowed only in a
+    // conversation on that list. Joining events / booking stays Base-only.
+    function freeChatOk(uid, cid) {
+      return exists(usagePath(uid))
+        && get(usagePath(uid)).data.get('freeChatDayStartMs', 0) + 86400000
+             > request.time.toMillis()
+        && cid in get(usagePath(uid)).data.get('freeChatConvs', []);
+    }
     // "Base membership required to participate" (owner rule 2026-10-11):
     // going / waitlist on someone else's event, booking consents. Server
     // callables use functions/src/shared/participation.ts.
@@ -741,6 +751,7 @@ service cloud.firestore {
           // tier / TEST). Support tickets and staff are exempt.
           && (isSupportConvData(conv())
               || canChat(request.auth.uid)
+              || freeChatOk(request.auth.uid, conversationId)
               || convAdmin());
         allow update: if (convMember(conv()) || convAdmin())
           && translationFieldsUnchanged();

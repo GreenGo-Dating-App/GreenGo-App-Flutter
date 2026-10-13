@@ -32,6 +32,14 @@ export const MAX_DAILY_CONNECTS: Record<EffectiveTier, Cap> = {
   FREE: 10, SILVER: 50, GOLD: 200, PLATINUM: null, TEST: null,
 };
 
+/**
+ * People an account WITHOUT Base (no plan at all) may chat with per UTC day:
+ * a taste of the app (owner rule 2026-10-13). Base and every paid tier chat
+ * without this limit; events and experiences stay Base-only.
+ * Mirrors TierEntitlements.freeDailyChats and `freeChatOk` in the rules.
+ */
+export const FREE_DAILY_CHATS = 3;
+
 /** FREE profile boosts per calendar month (UTC). Extra boosts cost coins. */
 export const FREE_BOOSTS_PER_MONTH: Record<EffectiveTier, number> = {
   FREE: 0, SILVER: 1, GOLD: 4, PLATINUM: 30, TEST: 30,

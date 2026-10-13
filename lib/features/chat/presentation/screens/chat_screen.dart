@@ -44,6 +44,8 @@ import '../../../../core/services/push_notification_service.dart';
 import '../../../../core/services/translation_service.dart';
 import '../../../../core/services/usage_limit_service.dart';
 import '../../../../core/utils/base_membership_gate.dart';
+import '../../../../core/services/free_chat_service.dart';
+import '../../../../core/widgets/base_membership_required_dialog.dart';
 import '../../../../core/utils/image_compression.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
@@ -115,6 +117,19 @@ class _ChatScreenState extends State<ChatScreen> {
   late final ChatBloc _chatBloc;
   late final ChatRemoteDataSourceImpl _chatDataSource;
   late final AlbumAccessDatasource _albumAccessDatasource;
+
+  /// The conversation a send goes to (the id the bloc writes to).
+  String _conversationIdForSend() {
+    final st = _chatBloc.state;
+    String? id;
+    if (st is ChatLoaded) {
+      id = st.conversation.conversationId;
+    } else if (st is ChatSending) {
+      id = st.conversation.conversationId;
+    }
+    id ??= widget.initialConversation?.conversationId;
+    return (id == null || id.isEmpty) ? widget.matchId : id;
+  }
 
   /// Posts "X took a screenshot" into this conversation (throttled).
   void _postScreenshotNotice() {
@@ -680,16 +695,43 @@ class _ChatScreenState extends State<ChatScreen> {
       return;
     }
     if (!mounted) return;
-    // Base membership gate
+    // Base membership gate. Without Base the user may still chat with
+    // TierEntitlements.freeDailyChats people a day (server-enforced).
     final wasMember = _currentUserProfile?.isBaseMembershipActive ?? false;
-    final allowed = await BaseMembershipGate.checkAndGate(
-      context: context,
-      profile: _currentUserProfile,
-      userId: widget.currentUserId,
-    );
-    if (!allowed) return;
-    // Refresh profile from server after successful purchase so gate won't block again
-    if (!wasMember) await _fetchCurrentUserName(forceServer: true);
+    var freeChat = false;
+    if (!wasMember && _currentUserProfile != null) {
+      final claim =
+          await FreeChatService.instance.claim(_conversationIdForSend());
+      if (!mounted) return;
+      if (claim.status == FreeChatStatus.limitReached) {
+        final l10n = AppLocalizations.of(context)!;
+        await BaseMembershipRequiredDialog.show(
+          context,
+          userId: widget.currentUserId,
+          title: l10n.freeChatLimitTitle,
+          body: l10n.freeChatLimitBody(claim.limit),
+        );
+        return;
+      }
+      freeChat = claim.canSend;
+      if (claim.status == FreeChatStatus.allowed && claim.added) {
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text(AppLocalizations.of(context)!
+              .freeChatUsedToday(claim.used, claim.limit)),
+          duration: const Duration(seconds: 3),
+        ));
+      }
+    }
+    if (!freeChat) {
+      final allowed = await BaseMembershipGate.checkAndGate(
+        context: context,
+        profile: _currentUserProfile,
+        userId: widget.currentUserId,
+      );
+      if (!allowed) return;
+      // Refresh profile from server after successful purchase so gate won't block again
+      if (!wasMember) await _fetchCurrentUserName(forceServer: true);
+    }
 
     // If album photos are selected, send each as a separate image message
     if (_selectedAlbumPhotos.isNotEmpty) {

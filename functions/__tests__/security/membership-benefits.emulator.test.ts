@@ -31,6 +31,7 @@ import {
   recountEvents,
 } from '../../src/entitlements/usage';
 import { handleAiAssist } from '../../src/ai/aiGateway';
+import { claimFreeChat } from '../../src/entitlements/freeChat';
 
 const PROJECT = process.env.GCLOUD_PROJECT || 'test-project';
 const db = admin.firestore();
@@ -302,6 +303,59 @@ describe('P-H2 Base membership required to chat', () => {
     expect(await clientWrite(GOLD, `conversations/c_${FREE}/messages/m3`, msg(GOLD))).toBe(200);
     expect(await clientWrite(FREE, `conversations/sup_${FREE}/messages/m1`, msg(FREE))).toBe(200);
     expect(await clientWrite(FREE, `conversations/sup_${FREE}/messages/m2`, { senderId: 'system', content: 'Welcome', type: 'system' })).toBe(200);
+  });
+});
+
+// ---------------------------------------------------------------------------
+describe('Free chats without Base: 3 people per UTC day (owner rule 2026-10-13)', () => {
+  const people = ['p1', 'p2', 'p3', 'p4'];
+  beforeEach(async () => {
+    for (const p of people) {
+      await db.doc(`conversations/f_${p}`).set({ userId1: FREE, userId2: p, matchId: `search_${p}` });
+    }
+    await db.doc('conversations/grp').set({ userId1: FREE, userId2: 'p1', participants: [FREE, 'p1', 'p2'] });
+    await db.doc('conversations/other').set({ userId1: 'p1', userId2: 'p2' });
+  });
+  const msg = () => ({ senderId: FREE, content: 'hi', type: 'text' });
+
+  test('claim 3 people, then the 4th is refused; re-claiming is free', async () => {
+    for (const [i, p] of ['p1', 'p2', 'p3'].entries()) {
+      const r = await call(claimFreeChat, { conversationId: `f_${p}` }, FREE);
+      expect(r).toMatchObject({ allowed: true, unlimited: false, used: i + 1, limit: 3, added: true });
+    }
+    expect(await call(claimFreeChat, { conversationId: 'f_p4' }, FREE))
+      .toMatchObject({ allowed: false, used: 3 });
+    expect(await call(claimFreeChat, { conversationId: 'f_p2' }, FREE))
+      .toMatchObject({ allowed: true, added: false, used: 3 });
+    const u = (await db.doc(`entitlement_usage/${FREE}`).get()).data()!;
+    expect(u.freeChatDayStartMs).toBe(dayStart());
+    expect(u.freeChatConvs).toEqual(['f_p1', 'f_p2', 'f_p3']);
+  });
+
+  test("groups, support and other people's chats cannot be claimed; members are unlimited", async () => {
+    await expect(call(claimFreeChat, { conversationId: 'grp' }, FREE)).rejects.toThrow('base_membership_required');
+    await expect(call(claimFreeChat, { conversationId: 'other' }, FREE)).rejects.toThrow('base_membership_required');
+    expect(await call(claimFreeChat, { conversationId: 'other' }, BASE)).toMatchObject({ unlimited: true });
+    expect((await db.doc(`entitlement_usage/${BASE}`).get()).exists).toBe(false);
+  });
+
+  test("rules: posting only in today's claimed conversations", async () => {
+    await db.doc(`entitlement_usage/${FREE}`).set({ freeChatDayStartMs: dayStart(), freeChatConvs: ['f_p1', 'f_p2', 'f_p3'] });
+    expect(await clientWrite(FREE, 'conversations/f_p1/messages/m1', msg())).toBe(200);
+    expect(await clientWrite(FREE, 'conversations/f_p3/messages/m1', msg())).toBe(200);
+    expect(await clientWrite(FREE, 'conversations/f_p4/messages/m1', msg())).toBe(403);
+    // Yesterday's list does not carry over.
+    await db.doc(`entitlement_usage/${FREE}`).set({ freeChatDayStartMs: dayStart() - DAY, freeChatConvs: ['f_p1'] });
+    expect(await clientWrite(FREE, 'conversations/f_p1/messages/m2', msg())).toBe(403);
+  });
+
+  test('free chats do not unlock joining events', async () => {
+    await db.doc(`entitlement_usage/${FREE}`).set({ freeChatDayStartMs: dayStart(), freeChatConvs: ['f_p1'] });
+    await db.doc('events/ev1').set({ organizerId: GOLD, title: 'e', price: 0, startDate: future(DAY), endDate: future(2 * DAY) });
+    const rsvp = (uid: string) => ({ userId: uid, eventId: 'ev1', status: 'going', checkedIn: false });
+    expect(await clientWrite(FREE, `events/ev1/attendees/${FREE}`, rsvp(FREE))).toBe(403);
+    // Positive control: the same RSVP with Base goes through.
+    expect(await clientWrite(BASE, `events/ev1/attendees/${BASE}`, rsvp(BASE))).toBe(200);
   });
 });
 

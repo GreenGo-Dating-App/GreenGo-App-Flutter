@@ -24569,4 +24569,17 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get chatTopicLanguageProgress => 'Language progress';
+
+  @override
+  String get freeChatLimitTitle => 'Daily free chats used';
+
+  @override
+  String freeChatLimitBody(int limit) {
+    return 'Without a membership you can chat with $limit people a day. Get the Base membership to chat with everyone, join events and book experiences.';
+  }
+
+  @override
+  String freeChatUsedToday(int used, int limit) {
+    return 'Free chat $used of $limit today';
+  }
 }

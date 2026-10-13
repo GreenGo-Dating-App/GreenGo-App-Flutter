@@ -42128,6 +42128,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Language progress'**
   String get chatTopicLanguageProgress;
+
+  /// No description provided for @freeChatLimitTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily free chats used'**
+  String get freeChatLimitTitle;
+
+  /// No description provided for @freeChatLimitBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Without a membership you can chat with {limit} people a day. Get the Base membership to chat with everyone, join events and book experiences.'**
+  String freeChatLimitBody(int limit);
+
+  /// No description provided for @freeChatUsedToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Free chat {used} of {limit} today'**
+  String freeChatUsedToday(int used, int limit);
 }
 
 class _AppLocalizationsDelegate

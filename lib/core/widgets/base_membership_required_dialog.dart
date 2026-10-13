@@ -14,15 +14,21 @@ import '../services/own_profile_store.dart';
 /// and by `BaseMembershipGate.handleParticipationError` when the server
 /// refuses one (`base_membership_required`).
 class BaseMembershipRequiredDialog extends StatelessWidget {
-  const BaseMembershipRequiredDialog({required this.userId, super.key});
+  const BaseMembershipRequiredDialog(
+      {required this.userId, this.title, this.body, super.key});
 
   final String userId;
 
+  /// Overrides for other Base upsells (e.g. the daily free chats used up).
+  final String? title;
+  final String? body;
+
   static Future<void> show(BuildContext context,
-      {required String userId}) async {
+      {required String userId, String? title, String? body}) async {
     final upgrade = await showDialog<bool>(
       context: context,
-      builder: (_) => BaseMembershipRequiredDialog(userId: userId),
+      builder: (_) => BaseMembershipRequiredDialog(
+          userId: userId, title: title, body: body),
     );
     if (upgrade == true && context.mounted) {
       await Navigator.of(context).push(
@@ -46,13 +52,13 @@ class BaseMembershipRequiredDialog extends StatelessWidget {
       icon: const Icon(Icons.workspace_premium,
           color: AppColors.richGold, size: 40),
       title: Text(
-        l10n.participationBaseRequiredTitle,
+        title ?? l10n.participationBaseRequiredTitle,
         textAlign: TextAlign.center,
         style: const TextStyle(
             color: AppColors.textPrimary, fontWeight: FontWeight.bold),
       ),
       content: Text(
-        l10n.participationBaseRequiredBody,
+        body ?? l10n.participationBaseRequiredBody,
         textAlign: TextAlign.center,
         style: const TextStyle(color: AppColors.textSecondary, height: 1.4),
       ),

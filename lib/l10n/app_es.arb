@@ -7599,5 +7599,8 @@
   "chatTopicCultureQuestions": "Preguntas sobre cultura",
   "chatTopicHumorReactions": "Humor y reacciones",
   "chatTopicEventsRsvp": "Eventos",
-  "chatTopicLanguageProgress": "Progreso con el idioma"
+  "chatTopicLanguageProgress": "Progreso con el idioma",
+  "freeChatLimitTitle": "Chats gratis de hoy agotados",
+  "freeChatLimitBody": "Sin membresía puedes chatear con {limit} personas al día. Obtén la membresía base para chatear con todos, unirte a eventos y reservar experiencias.",
+  "freeChatUsedToday": "Chat gratis {used} de {limit} hoy"
 }

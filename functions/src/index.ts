@@ -857,3 +857,5 @@ export {
   onEventWrittenUsage,
   onGroupWrittenUsage,
 } from './entitlements/usage';
+// Free chats without Base: 3 people per UTC day (owner rule 2026-10-13).
+export { claimFreeChat } from './entitlements/freeChat';

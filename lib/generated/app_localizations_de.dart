@@ -24862,4 +24862,17 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get chatTopicLanguageProgress => 'Sprachfortschritt';
+
+  @override
+  String get freeChatLimitTitle => 'Kostenlose Chats für heute aufgebraucht';
+
+  @override
+  String freeChatLimitBody(int limit) {
+    return 'Ohne Mitgliedschaft kannst du mit $limit Personen pro Tag chatten. Mit der Basis-Mitgliedschaft chattest du mit allen, nimmst an Events teil und buchst Erlebnisse.';
+  }
+
+  @override
+  String freeChatUsedToday(int used, int limit) {
+    return 'Kostenloser Chat $used von $limit heute';
+  }
 }

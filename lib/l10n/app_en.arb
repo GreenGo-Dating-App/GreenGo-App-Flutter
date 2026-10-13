@@ -13600,5 +13600,19 @@
   "chatTopicCultureQuestions": "Questions about culture",
   "chatTopicHumorReactions": "Humor & reactions",
   "chatTopicEventsRsvp": "Events",
-  "chatTopicLanguageProgress": "Language progress"
+  "chatTopicLanguageProgress": "Language progress",
+  "freeChatLimitTitle": "Daily free chats used",
+  "freeChatLimitBody": "Without a membership you can chat with {limit} people a day. Get the Base membership to chat with everyone, join events and book experiences.",
+  "@freeChatLimitBody": {
+    "placeholders": {
+      "limit": {"type": "int"}
+    }
+  },
+  "freeChatUsedToday": "Free chat {used} of {limit} today",
+  "@freeChatUsedToday": {
+    "placeholders": {
+      "used": {"type": "int"},
+      "limit": {"type": "int"}
+    }
+  }
 }
