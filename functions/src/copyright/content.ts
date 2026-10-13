@@ -122,6 +122,10 @@ export async function disableContent(target: ContentTarget, noticeId: string, no
         patch.isDeletedForEveryone = true;
         patch.isDeleted = true;
         patch['metadata.systemKey'] = 'srvMessageRemovedByModerator';
+        // Stored translations of the held text (translatePrivateText); not
+        // backed up: they are re-made on demand after a restore.
+        if ('tr' in d) patch.tr = FV.delete();
+        if ('trHash' in d) patch.trHash = FV.delete();
         patch.copyrightHold = hold;
         tx.update(ref, patch);
         break;

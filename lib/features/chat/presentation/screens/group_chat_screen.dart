@@ -866,6 +866,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
                             return const DeletedMessageBubble(compact: true);
                           }
                           return _GroupMessageBubble(
+                            groupId: widget.groupId,
                             message: m,
                             isMine: m.senderId == widget.currentUserId,
                             currentUserId: widget.currentUserId,
@@ -894,6 +895,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
 
 class _GroupMessageBubble extends StatelessWidget {
   const _GroupMessageBubble({
+    required this.groupId,
     required this.message,
     required this.isMine,
     required this.currentUserId,
@@ -903,6 +905,7 @@ class _GroupMessageBubble extends StatelessWidget {
     this.ttsReadTranslated = true,
   });
 
+  final String groupId;
   final Message message;
   final bool isMine;
   final String currentUserId;
@@ -1130,7 +1133,16 @@ class _GroupMessageBubble extends StatelessWidget {
                 showOriginal: showOriginal,
                 ttsReadTranslated: ttsReadTranslated,
                 currentUserId: currentUserId,
-                sourceLang: message.detectedLanguage ??
+                messageRef: ChatMessageRef(
+                  kind: ChatMessageRef.group,
+                  parentId: groupId,
+                  messageId: message.messageId,
+                  lang: message.lang,
+                  tr: message.tr,
+                  trHash: message.trHash,
+                ),
+                sourceLang: message.lang ??
+                    message.detectedLanguage ??
                     languageCode(UserDirectoryService.instance
                         .cached(message.senderId)
                         ?.language),
@@ -1158,6 +1170,7 @@ class _TranslatableText extends StatefulWidget {
     this.currentUserId = '',
     this.sourceLang,
     this.entities,
+    this.messageRef,
   });
 
   final String text;
@@ -1175,6 +1188,9 @@ class _TranslatableText extends StatefulWidget {
 
   /// Best-effort language code of the original text (for original-text TTS).
   final String? sourceLang;
+
+  /// The stored message (server-written translations, translate by id).
+  final ChatMessageRef? messageRef;
 
   @override
   State<_TranslatableText> createState() => _TranslatableTextState();
@@ -1284,11 +1300,41 @@ class _TranslatableTextState extends State<_TranslatableText> {
         old.text != widget.text) {
       _translated = null;
       _maybeTranslate();
+    } else if (_translated == null &&
+        old.messageRef?.tr != widget.messageRef?.tr) {
+      // Another member's translation just arrived on the message.
+      _applySync();
     }
+  }
+
+  ChatMessageRef? get _ref {
+    final r = widget.messageRef;
+    return r != null && r.isValid ? r : null;
+  }
+
+  /// Uses what is known without waiting (stored on the message, memory,
+  /// phrasebook, nothing to translate). True when that settled it.
+  bool _applySync() {
+    final r = TranslationService().translateSync(
+      text: widget.text,
+      targetLanguage: widget.targetLang.replaceAll('_', '-'),
+      message: _ref,
+    );
+    if (r == null || r.failed) return false;
+    final t = r.isTranslated ? r.text : null;
+    if (mounted && (t != _translated || _loading || _failed)) {
+      setState(() {
+        _loading = false;
+        _failed = false;
+        _translated = t;
+      });
+    }
+    return true;
   }
 
   Future<void> _maybeTranslate() async {
     if (!widget.translate || widget.text.trim().isEmpty) return;
+    if (_applySync()) return;
     setState(() {
       _loading = true;
       _failed = false;
@@ -1297,6 +1343,7 @@ class _TranslatableTextState extends State<_TranslatableText> {
       text: widget.text,
       sourceLanguage: 'auto',
       targetLanguage: widget.targetLang.replaceAll('_', '-'),
+      message: _ref,
     );
     if (!mounted) return;
     if (result.consentRequired) {

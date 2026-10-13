@@ -25,6 +25,9 @@ class Message extends Equatable {
     this.scheduledFor,
     this.readBy,
     this.deliveredTo,
+    this.tr,
+    this.trHash,
+    this.lang,
   });
   final String messageId;
   final String matchId;
@@ -50,6 +53,18 @@ class Message extends Equatable {
 
   /// userId -> timestamp the message was delivered to the member.
   final Map<String, DateTime>? deliveredTo;
+
+  // ---- Stored translations (written ONLY by the translatePrivateText
+  // function; firestore.rules refuse them from clients) ----
+  /// Translations of [content] by normalized language code (`it`, `pt-BR`),
+  /// shared by every participant and device.
+  final Map<String, String>? tr;
+
+  /// Hash of the content [tr] was made from (stale after an edit).
+  final String? trHash;
+
+  /// Source language of [content] as detected by Cloud Translation.
+  final String? lang;
 
   /// Whether a specific user has read this message (group-aware; falls back
   /// to the 1:1 [readAt] when no per-member map is present).
@@ -129,6 +144,9 @@ class Message extends Equatable {
     DateTime? scheduledFor,
     Map<String, DateTime>? readBy,
     Map<String, DateTime>? deliveredTo,
+    Map<String, String>? tr,
+    String? trHash,
+    String? lang,
   }) {
     return Message(
       messageId: messageId ?? this.messageId,
@@ -150,6 +168,9 @@ class Message extends Equatable {
       scheduledFor: scheduledFor ?? this.scheduledFor,
       readBy: readBy ?? this.readBy,
       deliveredTo: deliveredTo ?? this.deliveredTo,
+      tr: tr ?? this.tr,
+      trHash: trHash ?? this.trHash,
+      lang: lang ?? this.lang,
     );
   }
 
@@ -174,6 +195,9 @@ class Message extends Equatable {
         scheduledFor,
         readBy,
         deliveredTo,
+        tr,
+        trHash,
+        lang,
       ];
 }
 

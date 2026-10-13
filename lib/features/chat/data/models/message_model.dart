@@ -25,6 +25,9 @@ class MessageModel extends Message {
     super.scheduledFor,
     super.readBy,
     super.deliveredTo,
+    super.tr,
+    super.trHash,
+    super.lang,
   });
 
   /// Parse a Firestore map of userId -> Timestamp into userId -> DateTime.
@@ -33,6 +36,16 @@ class MessageModel extends Message {
     return (raw as Map).map(
       (k, v) => MapEntry(k as String, (v as Timestamp).toDate()),
     );
+  }
+
+  /// The server-written `tr` map (language -> translation), if well formed.
+  static Map<String, String>? _stringMap(dynamic raw) {
+    if (raw is! Map) return null;
+    final out = <String, String>{};
+    raw.forEach((k, v) {
+      if (k is String && v is String) out[k] = v;
+    });
+    return out;
   }
 
   /// Parse a JSON map of userId -> ISO string into userId -> DateTime.
@@ -65,6 +78,9 @@ class MessageModel extends Message {
       scheduledFor: message.scheduledFor,
       readBy: message.readBy,
       deliveredTo: message.deliveredTo,
+      tr: message.tr,
+      trHash: message.trHash,
+      lang: message.lang,
     );
   }
 
@@ -104,6 +120,9 @@ class MessageModel extends Message {
           : null,
       readBy: _timestampMap(data['readBy']),
       deliveredTo: _timestampMap(data['deliveredTo']),
+      tr: _stringMap(data['tr']),
+      trHash: data['trHash'] as String?,
+      lang: data['lang'] as String?,
     );
   }
 
@@ -139,10 +158,14 @@ class MessageModel extends Message {
           : null,
       readBy: _isoMap(json['readBy']),
       deliveredTo: _isoMap(json['deliveredTo']),
+      tr: _stringMap(json['tr']),
+      trHash: json['trHash'] as String?,
+      lang: json['lang'] as String?,
     );
   }
 
-  /// Convert to Firestore document
+  /// Convert to Firestore document. Never includes `tr` / `trHash` /
+  /// `lang`: only the server writes those (firestore.rules refuse them).
   Map<String, dynamic> toFirestore() {
     return {
       'matchId': matchId,
@@ -192,6 +215,9 @@ class MessageModel extends Message {
           readBy?.map((k, v) => MapEntry(k, v.toIso8601String())),
       'deliveredTo':
           deliveredTo?.map((k, v) => MapEntry(k, v.toIso8601String())),
+      if (tr != null) 'tr': tr,
+      if (trHash != null) 'trHash': trHash,
+      if (lang != null) 'lang': lang,
     };
   }
 
@@ -217,6 +243,9 @@ class MessageModel extends Message {
       scheduledFor: scheduledFor,
       readBy: readBy,
       deliveredTo: deliveredTo,
+      tr: tr,
+      trHash: trHash,
+      lang: lang,
     );
   }
 }

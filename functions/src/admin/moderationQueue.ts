@@ -664,6 +664,9 @@ async function removeContent(
       content: t('en', 'srvMessageRemovedByModerator'),
       // Readers render the placeholder in their own language.
       'metadata.systemKey': 'srvMessageRemovedByModerator',
+      // Stored translations of the removed text (translatePrivateText).
+      tr: admin.firestore.FieldValue.delete(),
+      trHash: admin.firestore.FieldValue.delete(),
       moderation,
     });
     return;
@@ -683,6 +686,8 @@ async function removeContent(
       ...(typeof d.content === 'string' ? { content: placeholder } : {}),
       ...(typeof d.caption === 'string' ? { caption: placeholder } : {}),
       'metadata.systemKey': 'srvMessageRemovedByModerator',
+      tr: admin.firestore.FieldValue.delete(),
+      trHash: admin.firestore.FieldValue.delete(),
       moderation,
     });
     return;

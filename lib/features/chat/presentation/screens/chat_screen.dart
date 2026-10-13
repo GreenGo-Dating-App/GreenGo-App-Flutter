@@ -565,7 +565,48 @@ class _ChatScreenState extends State<ChatScreen> {
       text: message.content,
       sourceLanguage: 'auto',
       targetLanguage: translateTo,
+      message: _messageRef(message),
     );
+    return _applyTranslation(message, cacheKey, result);
+  }
+
+  /// Server-stored translation fields of [message], so a translation that is
+  /// already on the message (or its detected language) costs nothing, and a
+  /// miss is translated by id (stored for both participants).
+  ChatMessageRef? _messageRef(Message message) {
+    final conversationId = message.conversationId.isNotEmpty
+        ? message.conversationId
+        : (widget.initialConversation?.conversationId ?? '');
+    final ref = ChatMessageRef(
+      kind: ChatMessageRef.conversation,
+      parentId: conversationId,
+      messageId: message.messageId,
+      lang: message.lang,
+      tr: message.tr,
+      trHash: message.trHash,
+    );
+    return ref.isValid ? ref : null;
+  }
+
+  /// The translation available without waiting (stored on the message,
+  /// memory, phrasebook, nothing to translate): the bubble paints it in its
+  /// first frame instead of the original.
+  Message? _syncTranslation(Message message) {
+    if (message.type != MessageType.text || message.content.trim().isEmpty) {
+      return message;
+    }
+    final r = _translationService.translateSync(
+      text: message.content,
+      targetLanguage: _targetLanguage.replaceAll('_', '-'),
+      message: _messageRef(message),
+    );
+    if (r == null || r.failed) return null;
+    return _applyTranslation(
+        message, '${message.messageId}_$_targetLanguage', r);
+  }
+
+  Message _applyTranslation(
+      Message message, String cacheKey, TranslationResult result) {
     final detectedLang = result.detectedLanguage;
 
     // No AI consent yet / declined: show the original, no error (not cached;
@@ -2017,8 +2058,11 @@ class _ChatScreenState extends State<ChatScreen> {
                           builder: (context, snapshot) {
                             // Apply the (memoised) translation onto the
                             // LATEST message so reactions/stars/read state
-                            // stay live.
-                            final t = snapshot.data;
+                            // stay live. Until it resolves, whatever is
+                            // known synchronously (stored on the message,
+                            // memory, phrasebook) shows in this frame.
+                            final t =
+                                snapshot.data ?? _syncTranslation(message);
                             final translatedMessage = t == null
                                 ? message
                                 : message.copyWith(

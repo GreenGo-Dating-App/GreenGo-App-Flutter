@@ -5,15 +5,70 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:crypto/crypto.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:http/http.dart' as http;
 
 import 'ai_consent_service.dart';
+import 'chat_phrasebook.dart';
 import 'shared_translation_contributor.dart';
 
 /// `translatePrivateText` call (overridable in tests).
 typedef ServerTranslateCall = Future<Map<String, dynamic>> Function(
     Map<String, dynamic> payload);
+
+/// A stored chat message being translated, with the server-written
+/// translation fields it already carries (`tr`, `trHash`, `lang`).
+///
+/// With a ref, a translation is first looked up on the message itself (the
+/// chat stream delivers it with the message: no extra read), and a miss goes
+/// to `translatePrivateText` by message id, batched, so the server stores the
+/// result on the message for every participant and device.
+@immutable
+class ChatMessageRef {
+  const ChatMessageRef({
+    required this.kind,
+    required this.parentId,
+    required this.messageId,
+    this.lang,
+    this.tr,
+    this.trHash,
+  });
+
+  /// `conversations/{parentId}/messages/{messageId}`.
+  static const String conversation = 'conversation';
+
+  /// `groups/{parentId}/messages/{messageId}`.
+  static const String group = 'group';
+
+  final String kind;
+  final String parentId;
+  final String messageId;
+
+  /// Source language detected by the server (Cloud Translation).
+  final String? lang;
+
+  /// Stored translations by normalized target language (`it`, `pt-BR`).
+  final Map<String, String>? tr;
+
+  /// [TranslationService.messageTextHash] of the content [tr] belongs to.
+  final String? trHash;
+
+  bool get isValid => parentId.isNotEmpty && messageId.isNotEmpty;
+
+  Map<String, String> toPayload() => {
+    'kind': kind,
+    'parentId': parentId,
+    'messageId': messageId,
+  };
+}
+
+class _ChatPending {
+  _ChatPending(this.ref, this.text);
+  final ChatMessageRef ref;
+  final String text;
+  final Completer<TranslationResult> completer = Completer<TranslationResult>();
+}
 
 /// Outcome of one translation, carrying ITS OWN detected language.
 ///
@@ -30,6 +85,7 @@ class TranslationResult {
     this.detectedLanguage,
     this.failed = false,
     this.consentRequired = false,
+    this.layer,
   });
 
   /// Not translated because the user has not accepted (or declined) the AI
@@ -55,6 +111,10 @@ class TranslationResult {
 
   /// See [TranslationResult.consentRequired].
   final bool consentRequired;
+
+  /// Where the answer came from (`skip`, `memory`, `hive`, `message`, `lang`,
+  /// `phrasebook`, server `cache` / `api`, ...). Diagnostics and tests only.
+  final String? layer;
 
   /// True when [text] is a real translation that differs from [original].
   bool get isTranslated => !failed && text.trim() != original.trim();
@@ -88,7 +148,11 @@ class TranslationService {
     bool Function()? consentGranted,
     Future<bool> Function()? useServer,
     ServerTranslateCall? serverCall,
+    Future<String> Function()? phrasebookLoader,
+    Duration batchWindow = const Duration(milliseconds: 30),
   })  : _client = client,
+        _phrasebookLoader = phrasebookLoader ?? _loadPhrasebookAsset,
+        _batchWindow = batchWindow,
         _persistent = persistent,
         _consentGranted = consentGranted,
         _useServerOverride = useServer,
@@ -109,6 +173,8 @@ class TranslationService {
     Future<bool> Function()? useServer,
     ServerTranslateCall? serverCall,
     bool productionRouting = false,
+    String? phrasebookJson,
+    Duration batchWindow = Duration.zero,
   }) =>
       TranslationService._internal(
         client: client,
@@ -119,6 +185,8 @@ class TranslationService {
         // productionRouting: no override, i.e. exactly what the app does.
         useServer: productionRouting ? null : (useServer ?? () async => false),
         serverCall: serverCall,
+        phrasebookLoader: () async => phrasebookJson ?? '{}',
+        batchWindow: batchWindow,
       );
 
   final bool Function()? _consentGranted;
@@ -355,7 +423,16 @@ class TranslationService {
 
   /// Translates [text] into [targetLanguage].
   ///
-  /// Memory cache -> device (Hive) cache -> one throttled, retried request.
+  /// Layers, cheapest first; only a miss in all of them goes to the network:
+  ///  - skip: nothing to translate (emoji, numbers, URLs, < 2 letters);
+  ///  - memory -> device (Hive) cache;
+  ///  - [message] (chat): the translation the server already stored on the
+  ///    message (`tr`), or its detected `lang` already is the target;
+  ///  - the bundled [ChatPhrasebook] ("hi", "thanks", "how are you?");
+  ///  - one request: for a [message], batched by id through
+  ///    `translatePrivateText` (server: message -> cross-chat cache -> Cloud
+  ///    Translation, and stores the result on the message); otherwise the
+  ///    old single-text path.
   /// Never throws: a failure comes back as [TranslationResult.failed] with the
   /// original text, and is not cached.
   ///
@@ -368,51 +445,276 @@ class TranslationService {
     String sourceLanguage = 'auto',
     required String targetLanguage,
     bool requiresConsent = true,
+    ChatMessageRef? message,
   }) async {
-    if (text.trim().isEmpty) {
-      return TranslationResult(original: text, text: text);
+    final sw = kDebugMode ? (Stopwatch()..start()) : null;
+    if (text.trim().isEmpty || !needsTranslation(text)) {
+      return _trace(
+        TranslationResult(original: text, text: text, layer: 'skip'),
+        sw,
+      );
     }
     // Normalize before anything else, including the equality check and the
     // cache key, so "Portuguese" and "pt" are one entry rather than two.
     final target = normalizeLanguage(targetLanguage);
-    final from =
-        sourceLanguage == 'auto' ? 'auto' : normalizeLanguage(sourceLanguage);
+    final from = sourceLanguage == 'auto'
+        ? 'auto'
+        : normalizeLanguage(sourceLanguage);
     if (from != 'auto' && from == target) {
       return TranslationResult(
-          original: text, text: text, detectedLanguage: from);
+        original: text,
+        text: text,
+        detectedLanguage: from,
+      );
     }
 
     final cacheKey = '${from}_${target}_$text';
     final hit = _translationCache[cacheKey];
     if (hit != null) {
-      return TranslationResult(
-          original: text, text: hit, detectedLanguage: _detectedCache[cacheKey]);
+      return _trace(
+        TranslationResult(
+          original: text,
+          text: hit,
+          detectedLanguage: _detectedCache[cacheKey],
+          layer: 'memory',
+        ),
+        sw,
+      );
     }
 
     return _inFlight[cacheKey] ??= () async {
       try {
-        // A translation already on this device is shown without any call
-        // (and needs no consent: nothing leaves the device).
+        // Everything already on this device (or on the message) is shown
+        // without any call and needs no consent: nothing leaves the device.
         final stored = await _readPersistent(from, target, text);
         if (stored != null) {
           _remember(cacheKey, stored);
-          return stored;
+          return _trace(stored, sw);
+        }
+        await _ensurePhrasebook();
+        final local = _localLayers(text, target, message);
+        if (local != null) {
+          _remember(cacheKey, local);
+          return _trace(local, sw);
         }
         if (requiresConsent && !await _consentOk()) {
           return TranslationResult.consentRequired(text);
         }
-        final r = await _throttled(() async => (requiresConsent && await _useServer())
-            ? _fetchViaServer(text, from, target)
-            : _fetchWithRetry(text, from, target));
+        final TranslationResult r;
+        if (requiresConsent && await _useServer()) {
+          r = (message != null && message.isValid)
+              ? await _viaChatBatch(text, target, message)
+              : await _throttled(() => _fetchViaServer(text, from, target));
+        } else {
+          r = await _throttled(() => _fetchWithRetry(text, from, target));
+        }
         if (!r.failed) {
           _remember(cacheKey, r);
           unawaited(_writePersistent(from, target, r));
         }
-        return r;
+        return _trace(r, sw);
       } finally {
         _inFlight.remove(cacheKey);
       }
     }();
+  }
+
+  /// The answer when it is available WITHOUT waiting (skip filter, memory,
+  /// the translation stored on [message], its `lang`, the phrasebook once
+  /// loaded), else null. Lets a chat bubble paint the translation in its
+  /// first frame; [translateDetailed] remains the full lookup.
+  TranslationResult? translateSync({
+    required String text,
+    required String targetLanguage,
+    // Kept for parity with [translateDetailed]: local answers need no
+    // consent (nothing leaves the device).
+    bool requiresConsent = true,
+    ChatMessageRef? message,
+  }) {
+    if (text.trim().isEmpty || !needsTranslation(text)) {
+      return TranslationResult(original: text, text: text, layer: 'skip');
+    }
+    final target = normalizeLanguage(targetLanguage);
+    final cacheKey = 'auto_${target}_$text';
+    final hit = _translationCache[cacheKey];
+    if (hit != null) {
+      return TranslationResult(
+        original: text,
+        text: hit,
+        detectedLanguage: _detectedCache[cacheKey],
+        layer: 'memory',
+      );
+    }
+    if (_phrasebook == null) unawaited(_ensurePhrasebook());
+    return _localLayers(text, target, message);
+  }
+
+  /// Stored-on-message, same-language and phrasebook answers (no I/O).
+  TranslationResult? _localLayers(
+    String text,
+    String target,
+    ChatMessageRef? message,
+  ) {
+    if (message != null) {
+      final stored = message.tr?[target];
+      if (stored != null && message.trHash == messageTextHash(text)) {
+        return TranslationResult(
+          original: text,
+          text: stored,
+          detectedLanguage: message.lang,
+          layer: 'message',
+        );
+      }
+      final lang = message.lang;
+      if (lang != null && lang.isNotEmpty && sameBaseLanguage(lang, target)) {
+        return TranslationResult(
+          original: text,
+          text: text,
+          detectedLanguage: lang,
+          layer: 'lang',
+        );
+      }
+    }
+    final p = _phrasebook?.lookup(text, target);
+    if (p != null) {
+      return TranslationResult(
+        original: text,
+        text: p.same ? text : p.text,
+        detectedLanguage: p.source,
+        layer: 'phrasebook',
+      );
+    }
+    return null;
+  }
+
+  TranslationResult _trace(TranslationResult r, Stopwatch? sw) {
+    if (kDebugMode && sw != null) {
+      debugPrint(
+        'TranslationService: ${r.layer ?? (r.failed ? 'failed' : 'network')}'
+        ' in ${sw.elapsedMicroseconds}us',
+      );
+    }
+    return r;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Skip filter + phrasebook (local, free).
+  // ---------------------------------------------------------------------------
+
+  static final RegExp _urlPattern = RegExp(
+    r'(https?://\S+|www\.\S+)',
+    caseSensitive: false,
+  );
+  static final RegExp _letterPattern = RegExp(r'\p{L}', unicode: true);
+
+  /// False for text there is nothing to translate in: emoji only, numbers /
+  /// punctuation only, a bare URL, or fewer than 2 letters.
+  static bool needsTranslation(String text) =>
+      _letterPattern
+          .allMatches(text.replaceAll(_urlPattern, ' '))
+          .take(2)
+          .length >=
+      2;
+
+  /// `trHash` the server stores next to a message's `tr` map: the first 16
+  /// hex chars of sha256(content). A translation stored for older content
+  /// (the message was edited) does not match and is ignored.
+  static String messageTextHash(String text) =>
+      sha256.convert(utf8.encode(text)).toString().substring(0, 16);
+
+  static const String phrasebookAsset = 'assets/i18n/chat_phrasebook.json';
+  static Future<String> _loadPhrasebookAsset() =>
+      rootBundle.loadString(phrasebookAsset);
+
+  final Future<String> Function() _phrasebookLoader;
+  ChatPhrasebook? _phrasebook;
+  Future<void>? _phrasebookLoading;
+
+  Future<void> _ensurePhrasebook() {
+    if (_phrasebook != null) return Future.value();
+    return _phrasebookLoading ??= () async {
+      try {
+        _phrasebook = ChatPhrasebook.fromJson(await _phrasebookLoader());
+      } catch (e) {
+        debugPrint('TranslationService: phrasebook unavailable: $e');
+        _phrasebook = ChatPhrasebook.empty();
+      }
+    }();
+  }
+
+  // ---------------------------------------------------------------------------
+  // Chat messages by id: misses of one frame go to the server in ONE call.
+  // ---------------------------------------------------------------------------
+
+  /// How long misses are collected before one batched call (a screen of
+  /// bubbles builds within a frame or two).
+  final Duration _batchWindow;
+  final Map<String, List<_ChatPending>> _chatQueue = {};
+  Timer? _chatTimer;
+
+  Future<TranslationResult> _viaChatBatch(
+    String text,
+    String target,
+    ChatMessageRef ref,
+  ) {
+    final p = _ChatPending(ref, text);
+    (_chatQueue[target] ??= []).add(p);
+    _chatTimer ??= Timer(_batchWindow, _flushChatQueue);
+    return p.completer.future;
+  }
+
+  void _flushChatQueue() {
+    _chatTimer = null;
+    final queued = Map.of(_chatQueue);
+    _chatQueue.clear();
+    queued.forEach((target, items) {
+      for (var i = 0; i < items.length; i += 25) {
+        unawaited(
+          _sendChatBatch(
+            target,
+            items.sublist(i, i + 25 > items.length ? items.length : i + 25),
+          ),
+        );
+      }
+    });
+  }
+
+  Future<void> _sendChatBatch(String target, List<_ChatPending> items) async {
+    List? list;
+    try {
+      final data = await (_serverCall ?? _defaultServerCall)({
+        'target': target,
+        'messages': [for (final p in items) p.ref.toPayload()],
+      });
+      list = data['translations'] as List?;
+    } catch (e) {
+      // Old server (no message refs yet), consent or quota: every item takes
+      // the single-text path below, which also handles the consent resync.
+      debugPrint('translatePrivateText (batch) failed: $e');
+    }
+    for (var k = 0; k < items.length; k++) {
+      final p = items[k];
+      final m = (list != null && k < list.length && list[k] is Map)
+          ? Map<String, dynamic>.from(list[k] as Map)
+          : null;
+      final out = m?['text'];
+      if (m != null && m['error'] == null && out is String) {
+        p.completer.complete(
+          TranslationResult(
+            original: p.text,
+            text: m['sameLanguage'] == true ? p.text : out,
+            detectedLanguage: m['detectedLanguage'] as String?,
+            layer: 'server-${m['layer'] ?? 'api'}',
+          ),
+        );
+      } else {
+        // Not stored yet (a just-sent message still in flight), too long,
+        // or the call failed: translate the text itself, as before.
+        p.completer.complete(
+          _throttled(() => _fetchViaServer(p.text, 'auto', target)),
+        );
+      }
+    }
   }
 
   void _remember(String cacheKey, TranslationResult r) {

@@ -223,6 +223,7 @@ flutter:
     - assets/legal/
     - assets/sounds/
     - assets/chat_datasets/
+    - assets/i18n/
 
   fonts:
     - family: Poppins

@@ -245,6 +245,20 @@ service cloud.firestore {
         && d.get('businessPromotedUntil', null) == null;
     }
 
+    // Stored chat translations (2026-10): `tr` (map language -> text),
+    // `trHash` and `lang` (detected source) on chat messages are written ONLY
+    // by the translatePrivateText function (Admin SDK). Clients can neither
+    // set them on create nor change them on update; they may only remove all
+    // three (delete for everyone drops the translations of the deleted text).
+    function noTranslationFieldsOnCreate() {
+      return !request.resource.data.keys().hasAny(['tr', 'trHash', 'lang']);
+    }
+    function translationFieldsUnchanged() {
+      return !request.resource.data.diff(resource.data).affectedKeys()
+          .hasAny(['tr', 'trHash', 'lang'])
+        || !request.resource.data.keys().hasAny(['tr', 'trHash', 'lang']);
+    }
+
     // Conversation membership (C4): the two 1:1 participants, any group
     // participant, or the assigned support agent. `c` is the conversation data.
     function convMember(c) {
@@ -722,12 +736,15 @@ service cloud.firestore {
         allow create: if convMember(conv())
           && (request.auth.uid == request.resource.data.get('senderId', request.auth.uid)
               || request.resource.data.get('senderId', '') == 'system')
+          && noTranslationFieldsOnCreate()
           // Audit P-H2: chatting needs a Base membership (or an active paid
           // tier / TEST). Support tickets and staff are exempt.
           && (isSupportConvData(conv())
               || canChat(request.auth.uid)
               || convAdmin());
-        allow update, delete: if convMember(conv()) || convAdmin();
+        allow update: if (convMember(conv()) || convAdmin())
+          && translationFieldsUnchanged();
+        allow delete: if convMember(conv()) || convAdmin();
       }
     }
 
@@ -1728,14 +1745,16 @@ service cloud.firestore {
         allow read: if isSignedIn() && request.auth.uid in members();
         allow create: if isSignedIn()
                       && request.auth.uid in members()
-                      && request.resource.data.senderId == request.auth.uid;
+                      && request.resource.data.senderId == request.auth.uid
+                      && noTranslationFieldsOnCreate();
         // Reactions / read-state by any member (message CONTENT unchanged).
         // Changing content (e.g. soft-delete-for-everyone) is limited to the
         // sender or a group admin — a member can't blank someone else's message.
         allow update: if isSignedIn() && request.auth.uid in members()
           && (request.resource.data.content == resource.data.content
               || resource.data.senderId == request.auth.uid
-              || get(/databases/$(database)/documents/groups/$(groupId)).data.roles[request.auth.uid] == 'admin');
+              || get(/databases/$(database)/documents/groups/$(groupId)).data.roles[request.auth.uid] == 'admin')
+          && translationFieldsUnchanged();
         allow delete: if isSignedIn()
                       && resource.data.senderId == request.auth.uid;
       }
@@ -2117,6 +2136,11 @@ service cloud.firestore {
     match /translations/{id} {
       allow get: if isSignedIn();
       allow list, write: if false;
+    }
+    // Cross-chat translation cache of short, PII-free chat phrases
+    // (translatePrivateText). Server only; TTL policy on `expireAt`.
+    match /chat_translation_cache/{id} {
+      allow read, write: if false;
     }
     match /translation_quota/{id} {
       allow read, write: if false;

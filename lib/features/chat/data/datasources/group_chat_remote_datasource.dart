@@ -622,6 +622,10 @@ class GroupChatRemoteDataSourceImpl implements GroupChatRemoteDataSource {
       'metadata.isDeletedForEveryone': true,
       'metadata.deletedBy': actorId,
       'content': '',
+      // Server-stored translations of the deleted text go too.
+      'tr': FieldValue.delete(),
+      'trHash': FieldValue.delete(),
+      'lang': FieldValue.delete(),
     });
   }
 

@@ -1847,6 +1847,10 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           ...chatSystemMetadata(ChatSystemKey.messageDeleted),
         },
         'originalContent': messageData['content'],
+        // Server-stored translations of the deleted text go too.
+        'tr': FieldValue.delete(),
+        'trHash': FieldValue.delete(),
+        'lang': FieldValue.delete(),
       });
 
       // If it was the conversation's last message, the inbox preview must not
