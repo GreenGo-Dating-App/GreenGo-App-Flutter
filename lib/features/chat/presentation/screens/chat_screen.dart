@@ -2947,10 +2947,11 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
-  void _openIdeas() {
+  void _openIdeas({required bool sentences}) {
     final mine = _userLanguage ?? Localizations.localeOf(context).languageCode;
     ChatIdeasSheet.show(
       context,
+      sentences: sentences,
       partnerLanguage: _targetLanguage ?? mine,
       myLanguage: mine,
       onPick: (text) => _messageController.text = text,
@@ -2981,7 +2982,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   ),
                 ),
               TextButton(
-                onPressed: _openIdeas,
+                onPressed: () => _openIdeas(sentences: false),
                 child: Text(AppLocalizations.of(context)!.chatSuggestionsTooltip),
               ),
             ],
@@ -3802,9 +3803,20 @@ class _ChatScreenState extends State<ChatScreen> {
         },
       ));
 
-  /// Map icon next to the ideas bulb: every place of the chat (list + map).
-  Widget _buildPlacesButton() =>
-      _placesBuilder((places, _) => places.isEmpty ? const SizedBox.shrink() : ChatPlacesButton(places: places));
+  /// One of the evenly spaced chat tools (same look as [ChatPlacesButton]).
+  Widget _toolButton({
+    required Key key,
+    required IconData icon,
+    required String tooltip,
+    required VoidCallback onPressed,
+  }) =>
+      IconButton(
+        key: key,
+        tooltip: tooltip,
+        icon: Icon(icon),
+        color: AppColors.richGold,
+        onPressed: onPressed,
+      );
 
   Widget _buildInputField(BuildContext context) {
     return Container(
@@ -3820,27 +3832,42 @@ class _ChatScreenState extends State<ChatScreen> {
           children: [
             // Media preview INSIDE input container
             _buildMediaPreview(),
-            // Input row
+            // Tools, one line, evenly spaced: attach, ice-breakers, suggested
+            // sentences, places (list + map).
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              padding: const EdgeInsets.fromLTRB(8, 6, 8, 0),
               child: Row(
+                key: const ValueKey('chat-tools-row'),
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  // Attach button
-                  IconButton(
-                    icon: const Icon(Icons.add_circle_outline),
-                    color: AppColors.textSecondary,
+                  _toolButton(
+                    key: const ValueKey('chat-tool-attach'),
+                    icon: Icons.add_circle_outline,
+                    tooltip: AppLocalizations.of(context)!.chatSendAttachment,
                     onPressed: () => _showAttachmentOptions(context),
                   ),
-                  // Offline ice-breakers + suggested sentences.
-                  IconButton(
-                    tooltip: AppLocalizations.of(context)!.chatSuggestionsTooltip,
-                    icon: const Icon(Icons.lightbulb_outline),
-                    color: AppColors.richGold,
-                    onPressed: _openIdeas,
+                  _toolButton(
+                    key: const ValueKey('chat-tool-icebreakers'),
+                    icon: Icons.waving_hand_outlined,
+                    tooltip: AppLocalizations.of(context)!.chatIcebreakersTitle,
+                    onPressed: () => _openIdeas(sentences: false),
                   ),
-                  // Places named in this chat (list + map).
-                  if (_showCulturalTips) _buildPlacesButton(),
-
+                  _toolButton(
+                    key: const ValueKey('chat-tool-sentences'),
+                    icon: Icons.format_quote_outlined,
+                    tooltip: AppLocalizations.of(context)!.chatSuggestionsTitle,
+                    onPressed: () => _openIdeas(sentences: true),
+                  ),
+                  if (_showCulturalTips)
+                    _placesBuilder((places, _) => ChatPlacesButton(places: places)),
+                ],
+              ),
+            ),
+            // Input row
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 4, 16, 12),
+              child: Row(
+                children: [
                   // Text input
                   Expanded(
                     child: TextField(

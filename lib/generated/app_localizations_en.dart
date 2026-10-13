@@ -24193,6 +24193,18 @@ class AppLocalizationsEn extends AppLocalizations {
   String get chatCountryTipsEmpty => 'No cultural tips for this country yet.';
 
   @override
+  String chatDatasetsDownloading(int done, int total) {
+    return 'Downloading chat content for offline use… $done/$total';
+  }
+
+  @override
+  String get chatDatasetsReady => 'Chat content ready, also offline';
+
+  @override
+  String get chatDatasetsRetryLater =>
+      'Some chat content could not be downloaded. We\'ll try again next time.';
+
+  @override
   String chatAskBeenTo(String place) {
     return 'Have you been to $place?';
   }

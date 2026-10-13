@@ -10,6 +10,7 @@ import 'package:showcaseview/showcaseview.dart';
 
 import '../../../../core/widgets/ios_install_hint.dart';
 import '../../../coins/presentation/widgets/stripe_return_notice.dart';
+import '../../../chat/presentation/widgets/chat_datasets_download_card.dart';
 import '../../../../core/config/app_config.dart';
 import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -224,6 +225,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       if (mounted) IosInstallBanner.maybeShow(context);
       // Web: back from Stripe Checkout -> paid / cancelled message.
       if (mounted) StripeReturnNotice.check(context);
+      // First use: download every chat dataset into the cache (progress card).
+      if (mounted) ChatDatasetsFirstRun.maybeStart(context);
     });
 
     // Set current user ID for push notification navigation

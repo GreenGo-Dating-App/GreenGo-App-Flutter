@@ -24484,6 +24484,18 @@ class AppLocalizationsDe extends AppLocalizations {
       'Für dieses Land gibt es noch keine Kulturtipps.';
 
   @override
+  String chatDatasetsDownloading(int done, int total) {
+    return 'Chat-Inhalte werden für die Offline-Nutzung heruntergeladen… $done/$total';
+  }
+
+  @override
+  String get chatDatasetsReady => 'Chat-Inhalte bereit, auch offline';
+
+  @override
+  String get chatDatasetsRetryLater =>
+      'Einige Chat-Inhalte konnten nicht heruntergeladen werden. Wir versuchen es beim nächsten Mal erneut.';
+
+  @override
   String chatAskBeenTo(String place) {
     return 'Warst du schon mal in $place?';
   }

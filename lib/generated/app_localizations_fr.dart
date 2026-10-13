@@ -24566,6 +24566,18 @@ class AppLocalizationsFr extends AppLocalizations {
       'Pas encore de conseils culturels pour ce pays.';
 
   @override
+  String chatDatasetsDownloading(int done, int total) {
+    return 'Téléchargement du contenu du chat pour une utilisation hors ligne… $done/$total';
+  }
+
+  @override
+  String get chatDatasetsReady => 'Contenu du chat prêt, même hors ligne';
+
+  @override
+  String get chatDatasetsRetryLater =>
+      'Une partie du contenu du chat n\'a pas pu être téléchargée. Nous réessaierons la prochaine fois.';
+
+  @override
   String chatAskBeenTo(String place) {
     return 'Es-tu déjà allé à $place ?';
   }

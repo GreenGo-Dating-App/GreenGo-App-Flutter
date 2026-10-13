@@ -121,6 +121,24 @@ class ChatDatasets {
     await (_loading[name] ??= _load(name).whenComplete(() => _loading.remove(name)));
   }
 
+  /// Every dataset, in the order the first-run download fetches them.
+  static const List<String> all = ['icebreakers', 'sentences', 'tips', 'keywords', 'freq', 'quotes'];
+
+  /// Loads every dataset (download once, then from the device cache),
+  /// reporting progress. Returns true when all of them are ready.
+  Future<bool> preloadAll({void Function(int done, int total)? onProgress}) async {
+    var done = 0;
+    onProgress?.call(done, all.length);
+    for (final name in all) {
+      await ensure(name);
+      onProgress?.call(++done, all.length);
+    }
+    return all.every(_isLoaded);
+  }
+
+  /// True when [name] is loaded in memory.
+  bool isLoaded(String name) => _isLoaded(name);
+
   bool _isLoaded(String name) => switch (name) {
         'keywords' => _keywords != null,
         'freq' => _difficulty != null,

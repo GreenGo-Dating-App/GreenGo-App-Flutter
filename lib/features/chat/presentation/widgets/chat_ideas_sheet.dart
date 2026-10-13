@@ -14,8 +14,12 @@ class ChatIdeasSheet extends StatefulWidget {
     required this.partnerLanguage,
     required this.myLanguage,
     required this.onPick,
+    this.sentences = false,
     super.key,
   });
+
+  /// false: ice-breakers; true: suggested sentences (one kind per sheet).
+  final bool sentences;
 
   final String partnerLanguage;
   final String myLanguage;
@@ -26,6 +30,7 @@ class ChatIdeasSheet extends StatefulWidget {
     required String partnerLanguage,
     required String myLanguage,
     required ValueChanged<String> onPick,
+    bool sentences = false,
   }) {
     return showModalBottomSheet<void>(
       context: context,
@@ -37,6 +42,7 @@ class ChatIdeasSheet extends StatefulWidget {
           partnerLanguage: partnerLanguage,
           myLanguage: myLanguage,
           onPick: onPick,
+          sentences: sentences,
         ),
       ),
     );
@@ -57,23 +63,15 @@ class ChatIdeasSheet extends StatefulWidget {
 class _ChatIdeasSheetState extends State<ChatIdeasSheet> {
   final _datasets = ChatDatasets.instance;
   // Each tab waits only for its own file (both start loading at once).
-  late final Future<void> _icebreakersReady = _datasets.ensure('icebreakers');
-  late final Future<void> _sentencesReady = _datasets.ensure('sentences');
-
-  @override
-  void initState() {
-    super.initState();
-    _icebreakersReady;
-    _sentencesReady;
-  }
-  bool _sentences = false;
+  late final Future<void> _ready = _datasets.ensure(_sentences ? 'sentences' : 'icebreakers');
+  bool get _sentences => widget.sentences;
   String? _topic;
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     return FutureBuilder<void>(
-      future: _sentences ? _sentencesReady : _icebreakersReady,
+      future: _ready,
       builder: (context, snap) {
         final items = (_sentences ? _datasets.sentences : _datasets.icebreakers) ?? const <DatasetItem>[];
         final topics = <String>{for (final i in items) i.topic}.toList();
@@ -88,16 +86,10 @@ class _ChatIdeasSheetState extends State<ChatIdeasSheet> {
             ),
             Padding(
               padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
-              child: SegmentedButton<bool>(
-                segments: [
-                  ButtonSegment(value: false, label: Text(l10n.chatIcebreakersTitle)),
-                  ButtonSegment(value: true, label: Text(l10n.chatSuggestionsTitle)),
-                ],
-                selected: {_sentences},
-                onSelectionChanged: (v) => setState(() {
-                  _sentences = v.first;
-                  _topic = null;
-                }),
+              child: Text(
+                _sentences ? l10n.chatSuggestionsTitle : l10n.chatIcebreakersTitle,
+                key: const ValueKey('chat-ideas-title'),
+                style: const TextStyle(color: AppColors.textPrimary, fontSize: 17, fontWeight: FontWeight.w700),
               ),
             ),
             if (snap.connectionState != ConnectionState.done)
