@@ -11,15 +11,21 @@ Widget _app(Widget child) => MaterialApp(
     );
 
 void main() {
-  testWidgets('download card: progress, then ready', (tester) async {
-    final p = ValueNotifier<(int, int, bool?)>((2, 6, null));
-    await tester.pumpWidget(_app(Stack(children: [ChatDatasetsDownloadCard(progress: p)])));
-    expect(find.text('Downloading chat content for offline use… 2/6'), findsOneWidget);
-    expect(tester.widget<LinearProgressIndicator>(find.byType(LinearProgressIndicator)).value, closeTo(2 / 6, 1e-9));
-    p.value = (6, 6, true);
+  testWidgets('download window: percentage, then ready; failure offers OK', (tester) async {
+    final p = ValueNotifier<(double, bool?)>((0.457, null));
+    await tester.pumpWidget(_app(ChatDatasetsDownloadDialog(progress: p)));
+    expect(find.text('Getting GreenGo ready'), findsOneWidget);
+    expect(find.textContaining('only once'), findsOneWidget);
+    expect(find.text('Downloading… 45%'), findsOneWidget);
+    expect(tester.widget<LinearProgressIndicator>(find.byType(LinearProgressIndicator)).value, closeTo(0.457, 1e-9));
+    expect(find.text('OK'), findsNothing); // the user waits
+    p.value = (1, true);
     await tester.pump();
     expect(find.text('Chat content ready, also offline'), findsOneWidget);
-    expect(find.byType(LinearProgressIndicator), findsNothing);
+    p.value = (0.6, false);
+    await tester.pump();
+    expect(find.textContaining('try again next time'), findsOneWidget);
+    expect(find.text('OK'), findsOneWidget);
   });
 
   for (final sentences in [false, true]) {

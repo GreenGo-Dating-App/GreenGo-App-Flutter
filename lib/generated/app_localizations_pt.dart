@@ -24398,8 +24398,15 @@ class AppLocalizationsPt extends AppLocalizations {
       'Ainda não há dicas culturais para este país.';
 
   @override
-  String chatDatasetsDownloading(int done, int total) {
-    return 'A transferir conteúdos do chat para uso offline… $done/$total';
+  String get chatDatasetsDownloadTitle => 'A preparar o GreenGo';
+
+  @override
+  String get chatDatasetsDownloadOnce =>
+      'Estamos a transferir frases, dicas culturais e lugares para que o chat funcione também offline. Isto acontece só uma vez.';
+
+  @override
+  String chatDatasetsDownloadingPercent(int percent) {
+    return 'A transferir… $percent%';
   }
 
   @override
@@ -49149,8 +49156,15 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
       'Ainda não há dicas culturais para este país.';
 
   @override
-  String chatDatasetsDownloading(int done, int total) {
-    return 'Baixando conteúdo do chat para uso offline… $done/$total';
+  String get chatDatasetsDownloadTitle => 'Preparando o GreenGo';
+
+  @override
+  String get chatDatasetsDownloadOnce =>
+      'Estamos baixando frases, dicas culturais e lugares para o chat funcionar também offline. Isso acontece só uma vez.';
+
+  @override
+  String chatDatasetsDownloadingPercent(int percent) {
+    return 'Baixando… $percent%';
   }
 
   @override

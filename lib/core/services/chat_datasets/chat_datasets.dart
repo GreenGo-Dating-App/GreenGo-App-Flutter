@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:typed_data';
 
 import 'package:archive/archive.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -126,15 +127,36 @@ class ChatDatasets {
 
   /// Loads every dataset (download once, then from the device cache),
   /// reporting progress. Returns true when all of them are ready.
-  Future<bool> preloadAll({void Function(int done, int total)? onProgress}) async {
-    var done = 0;
-    onProgress?.call(done, all.length);
-    for (final name in all) {
-      await ensure(name);
-      onProgress?.call(++done, all.length);
+  ///
+  /// [onProgress] gets 0.0 .. 1.0, weighted by each file's size from the
+  /// manifest and updated as the bytes arrive (browsers and dart:io both
+  /// decompress, so received bytes are compared with the uncompressed size).
+  Future<bool> preloadAll({void Function(double fraction)? onProgress}) async {
+    final files = ((await _readManifest())?['files'] as Map?) ?? const {};
+    double weight(String name) {
+      final e = files[name];
+      final b = e is Map ? e['bytes'] : null;
+      return b is num && b > 0 ? b.toDouble() : 100000.0;
     }
+
+    final total = all.fold<double>(0, (t, n) => t + weight(n));
+    var done = 0.0;
+    onProgress?.call(0);
+    for (final name in all) {
+      final w = weight(name);
+      final base = done;
+      _onBytes = (n, received) {
+        if (n == name) onProgress?.call(((base + (received < w ? received : w)) / total).clamp(0.0, 1.0));
+      };
+      await ensure(name);
+      done += w;
+      onProgress?.call((done / total).clamp(0.0, 1.0));
+    }
+    _onBytes = null;
     return all.every(_isLoaded);
   }
+
+  void Function(String name, int received)? _onBytes;
 
   /// True when [name] is loaded in memory.
   bool isLoaded(String name) => _isLoaded(name);
@@ -173,9 +195,15 @@ class ChatDatasets {
       var bytes = await _cache.read(path);
       if (bytes == null) {
         final url = await FirebaseStorage.instance.ref(path).getDownloadURL();
-        final res = await http.get(Uri.parse(url));
+        // Streamed, so the first-run download can show real progress.
+        final res = await http.Client().send(http.Request('GET', Uri.parse(url)));
         if (res.statusCode != 200) return null;
-        bytes = res.bodyBytes;
+        final buf = BytesBuilder(copy: false);
+        await for (final chunk in res.stream) {
+          buf.add(chunk);
+          _onBytes?.call(name, buf.length);
+        }
+        bytes = buf.takeBytes();
         unawaited(_cache.write(path, bytes));
       }
       final parsed = await compute(_decode, bytes);
