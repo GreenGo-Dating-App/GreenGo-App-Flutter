@@ -250,4 +250,25 @@ void main() {
       expect(find.textContaining('50% off your first period'), findsOneWidget);
     });
   });
+
+  test('a cached launch price reads back the same (painted with the prices)', () {
+    const p = PromoPrice(
+      yearly: true,
+      launchLabel: 'R\$ 14,90',
+      launchAmount: 14.9,
+      regularLabel: 'R\$ 29,90',
+      regularAmount: 29.9,
+    );
+    final back = PromoPrice.fromJson(p.toJson())!;
+    expect(back.yearly, isTrue);
+    expect(back.launchLabel, 'R\$ 14,90');
+    expect(back.launchAmount, 14.9);
+    expect(back.regularLabel, 'R\$ 29,90');
+    expect(back.regularAmount, 29.9);
+    final generic = PromoPrice.fromJson(
+        const PromoPrice.generic(yearly: false, regularLabel: r'$9.99').toJson())!;
+    expect(generic.isGeneric, isTrue);
+    expect(PromoPrice.fromJson('junk'), isNull);
+    expect(PromoPrice.fromJson({'l': 'x'}), isNull);
+  });
 }

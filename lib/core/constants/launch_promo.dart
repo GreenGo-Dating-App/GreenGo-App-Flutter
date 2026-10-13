@@ -81,6 +81,28 @@ class PromoPrice {
 
   bool get isGeneric => launchLabel == null;
 
+  Map<String, Object?> toJson() => {
+        'y': yearly,
+        if (launchLabel != null) 'l': launchLabel,
+        if (launchAmount != null) 'la': launchAmount,
+        if (regularLabel != null) 'r': regularLabel,
+        if (regularAmount != null) 'ra': regularAmount,
+      };
+
+  /// Null when [j] is not a cached [toJson] map.
+  static PromoPrice? fromJson(Object? j) {
+    if (j is! Map || j['y'] is! bool) return null;
+    String? s(Object? v) => v is String && v.trim().isNotEmpty ? v : null;
+    double? d(Object? v) => v is num ? v.toDouble() : null;
+    return PromoPrice(
+      yearly: j['y'] as bool,
+      launchLabel: s(j['l']),
+      launchAmount: d(j['la']),
+      regularLabel: s(j['r']),
+      regularAmount: d(j['ra']),
+    );
+  }
+
   int get periods =>
       yearly ? LaunchPromo.yearlyPeriods : LaunchPromo.monthlyPeriods;
 }

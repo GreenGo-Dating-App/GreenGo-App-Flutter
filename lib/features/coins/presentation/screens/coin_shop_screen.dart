@@ -88,6 +88,22 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   /// Store price for [canonicalProductId], or [fallback] until loaded.
   String _priceFor(String canonicalProductId, String fallback) =>
       _storePrices[canonicalProductId] ?? fallback;
+
+  /// True once real prices (fresh or last visit's, WITH their launch promos)
+  /// are on screen, or loading gave up. Until then price lines stay invisible
+  /// (same size, no layout jump) so the built-in USD fallback never flashes
+  /// and then flips to the local / launch price.
+  bool _pricesReady = false;
+
+  Widget _priceReveal(Widget child) => AnimatedOpacity(
+        opacity: _pricesReady ? 1 : 0,
+        duration: const Duration(milliseconds: 150),
+        child: child,
+      );
+
+  void _markPricesReady() {
+    if (!_pricesReady && mounted) setState(() => _pricesReady = true);
+  }
   InAppPurchase? _inAppPurchase;
   int _currentCoinBalance = 0;
   StreamSubscription<List<PurchaseDetails>>? _purchaseSubscription;
@@ -217,7 +233,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   static Map<String, String>? _sessionPrices;
   static Set<String>? _sessionAvailableIds;
   static Map<String, PromoPrice>? _sessionPromos;
-  static const String _pricesCacheKey = 'shop_prices';
+  /// v2: {prices, promos} (v1 held prices only, which painted without the
+  /// launch promo and then flipped).
+  static const String _pricesCacheKey = 'shop_prices_v2';
 
   /// Load prices for coins + all memberships, keyed by canonical productId.
   /// Prefers the real Apple/Google store price (localized to the user's store
@@ -230,12 +248,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         _storePrices = memo;
         _availableProductIds = _sessionAvailableIds;
         _promoPrices = _sessionPromos ?? const {};
+        _pricesReady = true;
       });
       return;
     }
 
     // Paint last session's labels at once (replaced below by fresh ones).
     unawaited(_paintCachedPrices());
+    _revealPricesLater();
 
     // The store query and the pricing callable are independent: run both
     // at once instead of back-to-back.
@@ -253,15 +273,28 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       _sessionPrices = map;
       _sessionAvailableIds = store.available;
       _sessionPromos = store.promos;
-      unawaited(LastResultCache.saveJson(_pricesCacheKey, map));
+      _cachePrices(map, store.promos);
     }
     if (mounted) {
       setState(() {
         _storePrices = map;
         _availableProductIds = store.available;
         _promoPrices = store.promos;
+        _pricesReady = true;
       });
     }
+  }
+
+  /// Never hide prices for long: after a few seconds the fallbacks show.
+  void _revealPricesLater() {
+    Future<void>.delayed(const Duration(seconds: 6), _markPricesReady);
+  }
+
+  void _cachePrices(Map<String, String> prices, Map<String, PromoPrice> promos) {
+    unawaited(LastResultCache.saveJson(_pricesCacheKey, {
+      'prices': prices,
+      'promos': {for (final e in promos.entries) e.key: e.value.toJson()},
+    }));
   }
 
   /// Web: the Stripe display prices (`getDisplayPrices`) for the same country
@@ -274,27 +307,36 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       setState(() {
         _storePrices = memo;
         _promoPrices = _sessionPromos ?? const {};
+        _pricesReady = true;
       });
       return;
     }
+    unawaited(_paintCachedPrices());
+    _revealPricesLater();
     try {
       final country = await StripeWebCheckout.resolveCountry(widget.userId);
       final result = await FirebaseFunctions.instance
           .httpsCallable('getDisplayPrices')
           .call({'userCountry': country});
       final map = parseDisplayPrices(result.data);
-      if (map.isEmpty) return;
+      if (map.isEmpty) {
+        _markPricesReady();
+        return;
+      }
       final promos = parseDisplayPromos(result.data);
       _sessionPrices = map;
       _sessionPromos = promos;
+      _cachePrices(map, promos);
       if (mounted) {
         setState(() {
           _storePrices = map;
           _promoPrices = promos;
+          _pricesReady = true;
         });
       }
     } catch (e) {
       debugPrint('[CoinShop] web display prices failed: $e');
+      _markPricesReady();
     }
   }
 
@@ -302,14 +344,26 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   Future<void> _paintCachedPrices() async {
     try {
       final cached = await LastResultCache.loadJson(_pricesCacheKey);
-      if (cached is! Map || cached.isEmpty) return;
+      if (cached is! Map || cached['prices'] is! Map) return;
       final map = <String, String>{
-        for (final e in cached.entries)
+        for (final e in (cached['prices'] as Map).entries)
           if (e.key is String && e.value is String)
             e.key as String: e.value as String,
       };
+      final promos = <String, PromoPrice>{};
+      final rawPromos = cached['promos'];
+      if (rawPromos is Map && LaunchPromo.isActive()) {
+        rawPromos.forEach((k, v) {
+          final promo = PromoPrice.fromJson(v);
+          if (k is String && promo != null) promos[k] = promo;
+        });
+      }
       if (map.isEmpty || !mounted || _storePrices.isNotEmpty) return;
-      setState(() => _storePrices = map);
+      setState(() {
+        _storePrices = map;
+        _promoPrices = promos;
+        _pricesReady = true;
+      });
     } catch (_) {}
   }
 
@@ -1461,12 +1515,12 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Text(
+                        _priceReveal(Text(
                           '$storePrice$periodLabel  ${AppLocalizations.of(context)!.plusTaxes}',
                           style: const TextStyle(
                             fontSize: 12,
                           ),
-                        ),
+                        )),
                       ],
                     ),
             ),
@@ -1565,14 +1619,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                       ),
                       const SizedBox(height: 4),
                       if (_promoFor(ProductCatalog.baseMembership) != null)
-                        LaunchPromoPrice(
+                        _priceReveal(LaunchPromoPrice(
                           promo: _promoFor(ProductCatalog.baseMembership)!,
                           accent: AppColors.basePurple,
                           priceFontSize: 18,
                           suffix: AppLocalizations.of(context)!.plusTaxes,
-                        )
+                        ))
                       else
-                      Text(
+                      _priceReveal(Text(
                         // Price with /year + taxes (localized) in place of the
                         // generic "Yearly subscription" label. Region/store price.
                         '${_priceFor(ProductCatalog.baseMembership, '\$9.99')}${AppLocalizations.of(context)!.shopPerYear}  ${AppLocalizations.of(context)!.plusTaxes}', // i18n-ignore: price + localized parts
@@ -1581,7 +1635,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                           fontWeight: FontWeight.bold,
                           color: AppColors.basePurple,
                         ),
-                      ),
+                      )),
                     ],
                   ),
                 ),
@@ -1887,15 +1941,15 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                                   _promoFor(_isYearlySelected ? tier.yearlyProductId : tier.monthlyProductId) != null)
                                 Padding(
                                   padding: const EdgeInsets.only(top: 4),
-                                  child: LaunchPromoPrice(
+                                  child: _priceReveal(LaunchPromoPrice(
                                     promo: _promoFor(_isYearlySelected ? tier.yearlyProductId : tier.monthlyProductId)!,
                                     accent: tierColor,
                                     priceFontSize: 18,
                                     suffix: AppLocalizations.of(context)!.plusTaxes,
-                                  ),
+                                  )),
                                 )
                               else
-                              Row(
+                              _priceReveal(Row(
                                 children: [
                                   Text(
                                     _isYearlySelected
@@ -1907,7 +1961,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                                     ),
                                   ),
                                 ],
-                              ),
+                              )),
                             ],
                           ),
                         ),
@@ -2469,13 +2523,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                         const SizedBox(height: 2),
                         Row(
                           children: [
-                            Text(
+                            _priceReveal(Text(
                               '${_priceFor(package.productId, package.displayPrice)} ${AppLocalizations.of(context)!.plusTaxes}',
                               style: const TextStyle(
                                 fontSize: 15,
                                 color: Colors.white70,
                               ),
-                            ),
+                            )),
                             const SizedBox(width: 8),
                             Text(
                               AppLocalizations.of(context)!.shopCoinsPerDollar(package.coinsPerDollar.toStringAsFixed(0)),
