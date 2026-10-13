@@ -38,7 +38,8 @@ void main() {
       ),
     ])));
 
-    expect(find.byKey(const ValueKey('chat-places-strip')), findsOneWidget);
+    // No list of places on the chat page: only the questions.
+    expect(find.byKey(const ValueKey('chat-places-strip')), findsNothing);
     expect(find.text('Portugal came up - ask about it'), findsOneWidget);
     await tester.tap(find.text('Have you been to Portugal?'));
     expect(inserted, 'Have you been to Portugal?');
@@ -52,12 +53,19 @@ void main() {
     await tester.tap(find.byIcon(Icons.close));
     await tester.pump();
     expect(find.byKey(const ValueKey('chat-place-suggestions')), findsNothing);
-    expect(find.byKey(const ValueKey('chat-places-strip')), findsOneWidget);
   });
 
-  testWidgets('no places: nothing is shown', (tester) async {
+  testWidgets('map icon opens the places list + map', (tester) async {
+    await tester.pumpWidget(_app(ChatPlacesButton(places: ChatPlaces.collect(_messages))));
+    await tester.tap(find.byKey(const ValueKey('chat-places-trip')));
+    await tester.pumpAndSettle();
+    expect(find.text('Places from this chat'), findsOneWidget);
+    expect(find.text('Portugal'), findsOneWidget);
+  });
+
+  testWidgets('partner named no place: nothing is shown', (tester) async {
     await tester.pumpWidget(_app(ChatPlacesBar(places: const [], partnerPlaces: const [], onInsert: (_) {})));
-    expect(find.byKey(const ValueKey('chat-places-strip')), findsNothing);
+    expect(find.byKey(const ValueKey('chat-place-suggestions')), findsNothing);
   });
 
   testWidgets('trip screen lists the places by kind', (tester) async {

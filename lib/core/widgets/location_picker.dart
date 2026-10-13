@@ -40,6 +40,7 @@ class LocationPickerScreen extends StatefulWidget {
     this.confirmLabel,
     this.repository,
     this.locateMe,
+    this.autoLocate = false,
     this.onConfirm,
   });
 
@@ -60,6 +61,11 @@ class LocationPickerScreen extends StatefulWidget {
   /// Current position provider (tests). Defaults to [LocationShareService].
   final Future<LatLng?> Function()? locateMe;
 
+  /// Move the pin to the device's current position as soon as it is known
+  /// (silently; nothing happens when it is unavailable or the user already
+  /// moved the pin). Chat location sharing opens on the user's location.
+  final bool autoLocate;
+
   /// Replaces the default `Navigator.pop(context, place)`, for wrappers that
   /// return something else (the alert-city picker pops just the city).
   final void Function(BuildContext context, PickedPlace place)? onConfirm;
@@ -72,9 +78,11 @@ class LocationPickerScreen extends StatefulWidget {
     String? title,
     String? searchHint,
     String? confirmLabel,
+    bool autoLocate = false,
   }) =>
       MaterialPageRoute(
         builder: (_) => LocationPickerScreen(
+          autoLocate: autoLocate,
           initialLat: initialLat,
           initialLng: initialLng,
           initialAddress: initialAddress,
@@ -157,6 +165,23 @@ class _LocationPickerScreenState extends State<LocationPickerScreen>
     _focus.addListener(() {
       if (mounted) setState(() {});
     });
+    if (widget.autoLocate) {
+      WidgetsBinding.instance.addPostFrameCallback((_) => _autoLocate());
+    }
+  }
+
+  Future<void> _autoLocate() async {
+    final before = _pin;
+    LatLng? here;
+    try {
+      here = await (widget.locateMe ?? _defaultLocateMe)();
+    } catch (_) {
+      here = null;
+    }
+    // The user picked something meanwhile: keep their choice.
+    if (!mounted || here == null || _pin != before) return;
+    _dropPinAt(here);
+    _animateTo(here, _cityMode ? 11 : 16);
   }
 
   @override

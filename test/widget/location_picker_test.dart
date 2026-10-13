@@ -351,6 +351,44 @@ void main() {
     expect(_statusText(tester), 'Here');
   });
 
+  testWidgets('autoLocate (chat): opens on the profile position, then moves to the device position',
+      (tester) async {
+    final repo = FakeRepo()
+      ..reverseResult = const PickedPlace(address: 'Here', lat: 0, lng: 0);
+    await _open(
+        tester,
+        LocationPickerScreen(
+          repository: repo,
+          initialLat: 41.9,
+          initialLng: 12.5,
+          autoLocate: true,
+          locateMe: () async => const LatLng(45.46, 9.19),
+        ));
+    await tester.pumpAndSettle();
+    // Profile position reverse-geocoded first, then the device position.
+    expect(repo.reverses.first, const LatLng(41.9, 12.5));
+    expect(repo.reverses.last, const LatLng(45.46, 9.19));
+    expect(_statusText(tester), 'Here');
+  });
+
+  testWidgets('autoLocate: device position unavailable keeps the profile pin, no error',
+      (tester) async {
+    final repo = FakeRepo()
+      ..reverseResult = const PickedPlace(address: 'Rome', lat: 0, lng: 0);
+    await _open(
+        tester,
+        LocationPickerScreen(
+          repository: repo,
+          initialLat: 41.9,
+          initialLng: 12.5,
+          autoLocate: true,
+          locateMe: () async => null,
+        ));
+    await tester.pumpAndSettle();
+    expect(repo.reverses.single, const LatLng(41.9, 12.5));
+    expect(find.textContaining("Couldn't get your location"), findsNothing);
+  });
+
   testWidgets('recent places show on an empty focused field', (tester) async {
     final repo = FakeRepo()..results = const [_navona];
     await _open(tester, LocationPickerScreen(repository: repo));

@@ -2327,11 +2327,12 @@ class AppLocalizationsDe extends AppLocalizations {
       'Setze zuerst deine Muttersprache in den Einstellungen';
 
   @override
-  String get chatSettingCulturalTips => 'Kulturtipps';
+  String get chatSettingCulturalTips =>
+      'Kulturtipps, Städte und Sehenswürdigkeiten';
 
   @override
   String get chatSettingCulturalTipsDesc =>
-      'Kulturellen Kontext für Redewendungen anzeigen';
+      'Hebt Städte, Länder und Sehenswürdigkeiten in Nachrichten hervor, mit Tipps und Karte';
 
   @override
   String get chatSettingDifficultyBadges => 'Schwierigkeitsabzeichen';

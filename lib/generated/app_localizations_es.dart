@@ -2329,11 +2329,12 @@ class AppLocalizationsEs extends AppLocalizations {
       'Primero configura tu idioma nativo en ajustes';
 
   @override
-  String get chatSettingCulturalTips => 'Consejos culturales';
+  String get chatSettingCulturalTips =>
+      'Consejos culturales, ciudades y atracciones';
 
   @override
   String get chatSettingCulturalTipsDesc =>
-      'Mostrar contexto cultural de modismos y expresiones';
+      'Resalta ciudades, países y atracciones en los mensajes, con consejos y mapa';
 
   @override
   String get chatSettingDifficultyBadges => 'Insignias de dificultad';

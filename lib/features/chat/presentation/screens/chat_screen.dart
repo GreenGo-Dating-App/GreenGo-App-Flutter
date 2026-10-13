@@ -33,6 +33,7 @@ import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/services/location_share_service.dart';
 import '../../../../core/services/place_search_service.dart';
 import '../../../../core/widgets/location_picker.dart';
+import '../../../../core/services/own_profile_store.dart';
 import '../../../../core/services/tier_gate.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/services/presence_service.dart';
@@ -821,10 +822,23 @@ class _ChatScreenState extends State<ChatScreen> {
     }
   }
 
+  /// The location picker opened on the user's own location: the profile's
+  /// position at once (no permission prompt), then the device's exact position
+  /// when it is available.
+  Route<PickedPlace> _locationPickerRoute() {
+    final me = OwnProfileStore.instance.peek(widget.currentUserId)?.location;
+    final known = me != null && (me.latitude != 0 || me.longitude != 0);
+    return LocationPickerScreen.route(
+      initialLat: known ? me.latitude : null,
+      initialLng: known ? me.longitude : null,
+      autoLocate: true,
+    );
+  }
+
   /// Pick a place (search, current location or a pin) and send it.
   Future<void> _sendLocation(BuildContext context) async {
     final picked = await Navigator.of(context)
-        .push<PickedPlace>(LocationPickerScreen.route());
+        .push<PickedPlace>(_locationPickerRoute());
     if (picked == null || !mounted) return;
     _addSend(ChatMessageSent(
       content: '${picked.lat},${picked.lng}',
@@ -2076,8 +2090,8 @@ class _ChatScreenState extends State<ChatScreen> {
             // Grammar correction banner
             if (_showGrammarCheck) _buildGrammarBanner(),
 
-            // Places named in the chat + questions about the partner's latest
-            // one + list/map (offline, from message metadata; no AI).
+            // Questions about the place the partner just named (offline, from
+            // message metadata; no AI). The places list/map is the map icon.
             if (_showCulturalTips) _buildPlacesBar(),
 
             // Upload progress indicator
@@ -3749,7 +3763,10 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
-  Widget _buildPlacesBar() {
+  /// Places named in the chat (message metadata, offline), rebuilt when the
+  /// messages or the keyword dataset change.
+  Widget _placesBuilder(
+      Widget Function(List<ChatPlace> places, List<ChatPlace> partnerPlaces) build) {
     return ValueListenableBuilder<int>(
       // Old messages without stored entities match once the keywords load.
       valueListenable: ChatDatasets.instance.changes,
@@ -3769,18 +3786,25 @@ class _ChatScreenState extends State<ChatScreen> {
                 ),
           ];
           final places = ChatPlaces.collect(sources);
-          return ChatPlacesBar(
-            places: places,
-            partnerPlaces: ChatPlaces.latestFromPartner(places, sources),
-            onInsert: (text) {
-              _messageController.text = text;
-              _messageController.selection = TextSelection.collapsed(offset: text.length);
-            },
-          );
+          return build(places, ChatPlaces.latestFromPartner(places, sources));
         },
       ),
     );
   }
+
+  /// Questions about the place the other person just named.
+  Widget _buildPlacesBar() => _placesBuilder((places, partnerPlaces) => ChatPlacesBar(
+        places: places,
+        partnerPlaces: partnerPlaces,
+        onInsert: (text) {
+          _messageController.text = text;
+          _messageController.selection = TextSelection.collapsed(offset: text.length);
+        },
+      ));
+
+  /// Map icon next to the ideas bulb: every place of the chat (list + map).
+  Widget _buildPlacesButton() =>
+      _placesBuilder((places, _) => places.isEmpty ? const SizedBox.shrink() : ChatPlacesButton(places: places));
 
   Widget _buildInputField(BuildContext context) {
     return Container(
@@ -3814,6 +3838,8 @@ class _ChatScreenState extends State<ChatScreen> {
                     color: AppColors.richGold,
                     onPressed: _openIdeas,
                   ),
+                  // Places named in this chat (list + map).
+                  if (_showCulturalTips) _buildPlacesButton(),
 
                   // Text input
                   Expanded(

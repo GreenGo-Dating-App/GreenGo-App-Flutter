@@ -8,12 +8,10 @@ import '../../domain/chat_places.dart';
 import '../screens/chat_trip_screen.dart';
 import 'keyword_actions.dart';
 
-/// Above the chat input, offline (message metadata + datasets, no AI):
-///  - when the other person's latest message names a place: ready-to-send
-///    questions about it ("Have you been to Lisbon?") and its country's
-///    cultural tips;
-///  - a strip of every place named in the chat; the map button opens them
-///    all as a list and on a map ([ChatTripScreen]).
+/// Above the chat input, offline (message metadata + datasets, no AI): when
+/// the other person's latest message names a place, ready-to-send questions
+/// about it ("Have you been to Lisbon?") and its country's cultural tips.
+/// Every place of the chat is behind [ChatPlacesButton] (list + map).
 class ChatPlacesBar extends StatefulWidget {
   const ChatPlacesBar({
     super.key,
@@ -68,56 +66,11 @@ class _ChatPlacesBarState extends State<ChatPlacesBar> {
 
   @override
   Widget build(BuildContext context) {
-    if (widget.places.isEmpty) return const SizedBox.shrink();
-    final l10n = AppLocalizations.of(context)!;
     final topic = widget.partnerPlaces.isEmpty ? null : widget.partnerPlaces.first;
-    final showSuggestions = topic != null && topic.messageId != _dismissedFor;
-
+    if (topic == null || topic.messageId == _dismissedFor) return const SizedBox.shrink();
     return Container(
       color: AppColors.backgroundCard,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          if (showSuggestions) _suggestions(l10n, topic),
-          SizedBox(
-            height: 44,
-            child: Row(
-              children: [
-                Expanded(
-                  child: ListView(
-                    key: const ValueKey('chat-places-strip'),
-                    scrollDirection: Axis.horizontal,
-                    padding: const EdgeInsets.only(left: 12, right: 4),
-                    children: [
-                      for (final p in widget.places.take(30))
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 6),
-                          child: ActionChip(
-                            avatar: Icon(ChatPlacesBar.iconFor(p.kind), size: 16, color: AppColors.richGold),
-                            label: Text(p.label),
-                            labelStyle: const TextStyle(color: AppColors.textPrimary, fontSize: 12.5),
-                            backgroundColor: AppColors.charcoal,
-                            side: BorderSide(color: AppColors.textTertiary.withValues(alpha: 0.35)),
-                            visualDensity: VisualDensity.compact,
-                            onPressed: () => KeywordActions.open(context, p.match),
-                          ),
-                        ),
-                    ],
-                  ),
-                ),
-                IconButton(
-                  key: const ValueKey('chat-places-trip'),
-                  tooltip: l10n.chatTripTitle,
-                  icon: const Icon(Icons.map_outlined, color: AppColors.richGold),
-                  onPressed: () => Navigator.of(context).push(MaterialPageRoute(
-                    builder: (_) => ChatTripScreen(places: widget.places),
-                  )),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
+      child: _suggestions(AppLocalizations.of(context)!, topic),
     );
   }
 
@@ -185,4 +138,22 @@ class _ChatPlacesBarState extends State<ChatPlacesBar> {
       ),
     );
   }
+}
+
+/// The chat's places (attractions, cities, countries) as a list and on a map.
+class ChatPlacesButton extends StatelessWidget {
+  const ChatPlacesButton({super.key, required this.places});
+
+  final List<ChatPlace> places;
+
+  @override
+  Widget build(BuildContext context) => IconButton(
+        key: const ValueKey('chat-places-trip'),
+        tooltip: AppLocalizations.of(context)!.chatTripTitle,
+        icon: const Icon(Icons.map_outlined),
+        color: AppColors.richGold,
+        onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+          builder: (_) => ChatTripScreen(places: places),
+        )),
+      );
 }

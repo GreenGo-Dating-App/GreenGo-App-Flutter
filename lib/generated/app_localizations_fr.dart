@@ -2330,11 +2330,12 @@ class AppLocalizationsFr extends AppLocalizations {
       'Définissez d\'abord votre langue maternelle dans les paramètres';
 
   @override
-  String get chatSettingCulturalTips => 'Conseils culturels';
+  String get chatSettingCulturalTips =>
+      'Conseils culturels, villes et attractions';
 
   @override
   String get chatSettingCulturalTipsDesc =>
-      'Afficher le contexte culturel des expressions';
+      'Met en évidence villes, pays et attractions dans les messages, avec conseils et carte';
 
   @override
   String get chatSettingDifficultyBadges => 'Badges de difficulté';

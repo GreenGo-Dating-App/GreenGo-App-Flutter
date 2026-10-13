@@ -2313,11 +2313,11 @@ class AppLocalizationsPt extends AppLocalizations {
       'Define primeiro a tua língua nativa nas definições';
 
   @override
-  String get chatSettingCulturalTips => 'Dicas culturais';
+  String get chatSettingCulturalTips => 'Dicas culturais, cidades e atrações';
 
   @override
   String get chatSettingCulturalTipsDesc =>
-      'Mostrar contexto cultural de expressões idiomáticas';
+      'Destaca cidades, países e atrações nas mensagens, com dicas e mapa';
 
   @override
   String get chatSettingDifficultyBadges => 'Distintivos de dificuldade';
@@ -27044,11 +27044,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
       'Defina primeiro seu idioma nativo nas configurações';
 
   @override
-  String get chatSettingCulturalTips => 'Dicas culturais';
+  String get chatSettingCulturalTips => 'Dicas culturais, cidades e atrações';
 
   @override
   String get chatSettingCulturalTipsDesc =>
-      'Mostrar contexto cultural de expressões idiomáticas';
+      'Destaca cidades, países e atrações nas mensagens, com dicas e mapa';
 
   @override
   String get chatSettingDifficultyBadges => 'Distintivos de dificuldade';

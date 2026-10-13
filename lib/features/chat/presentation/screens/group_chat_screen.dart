@@ -23,6 +23,7 @@ import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/services/location_share_service.dart';
 import '../../../../core/services/place_search_service.dart';
 import '../../../../core/widgets/location_picker.dart';
+import '../../../../core/services/own_profile_store.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/services/pronunciation_service.dart';
 import '../../../../core/services/translation_service.dart';
@@ -710,11 +711,24 @@ class _GroupChatViewState extends State<_GroupChatView> {
     );
   }
 
+  /// The location picker opened on the user's own location: the profile's
+  /// position at once (no permission prompt), then the device's exact position
+  /// when it is available.
+  Route<PickedPlace> _locationPickerRoute() {
+    final me = OwnProfileStore.instance.peek(widget.currentUserId)?.location;
+    final known = me != null && (me.latitude != 0 || me.longitude != 0);
+    return LocationPickerScreen.route(
+      initialLat: known ? me.latitude : null,
+      initialLng: known ? me.longitude : null,
+      autoLocate: true,
+    );
+  }
+
   /// Pick a place (search, current location or a pin) and send it.
   Future<void> _sendLocation(BuildContext context) async {
     final bloc = context.read<GroupChatBloc>();
     final picked = await Navigator.of(context)
-        .push<PickedPlace>(LocationPickerScreen.route());
+        .push<PickedPlace>(_locationPickerRoute());
     if (picked == null) return;
     bloc.add(GroupChatMessageSent(
       content: '${picked.lat},${picked.lng}',

@@ -4160,13 +4160,13 @@ abstract class AppLocalizations {
   /// No description provided for @chatSettingCulturalTips.
   ///
   /// In en, this message translates to:
-  /// **'Cultural Tips'**
+  /// **'Cultural tips, cities and attractions'**
   String get chatSettingCulturalTips;
 
   /// No description provided for @chatSettingCulturalTipsDesc.
   ///
   /// In en, this message translates to:
-  /// **'Show cultural context for idioms and expressions'**
+  /// **'Highlight cities, countries and attractions in messages, with tips and a map'**
   String get chatSettingCulturalTipsDesc;
 
   /// No description provided for @chatSettingDifficultyBadges.

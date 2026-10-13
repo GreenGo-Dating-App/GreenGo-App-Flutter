@@ -2292,11 +2292,11 @@ class AppLocalizationsEn extends AppLocalizations {
       'Set your native language in settings first';
 
   @override
-  String get chatSettingCulturalTips => 'Cultural Tips';
+  String get chatSettingCulturalTips => 'Cultural tips, cities and attractions';
 
   @override
   String get chatSettingCulturalTipsDesc =>
-      'Show cultural context for idioms and expressions';
+      'Highlight cities, countries and attractions in messages, with tips and a map';
 
   @override
   String get chatSettingDifficultyBadges => 'Difficulty Badges';
