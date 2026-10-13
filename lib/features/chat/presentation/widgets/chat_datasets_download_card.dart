@@ -83,54 +83,102 @@ class ChatDatasetsFirstRun {
 
 /// Minimised: a small pill at the bottom with the percentage; the app runs
 /// normally meanwhile.
-class ChatDatasetsDownloadPill extends StatelessWidget {
+class ChatDatasetsDownloadPill extends StatefulWidget {
   const ChatDatasetsDownloadPill({super.key, required this.progress});
 
   final ValueListenable<(double, bool?)> progress;
 
   @override
+  State<ChatDatasetsDownloadPill> createState() => _ChatDatasetsDownloadPillState();
+}
+
+/// The pill can be dragged anywhere on screen (it starts at the bottom).
+class _ChatDatasetsDownloadPillState extends State<ChatDatasetsDownloadPill> {
+  Offset _delta = Offset.zero;
+
+  @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     if (l10n == null) return const SizedBox.shrink();
+    final mq = MediaQuery.of(context);
+    final bottom = mq.padding.bottom + 84;
     return Positioned(
       left: 0,
       right: 0,
-      bottom: MediaQuery.of(context).padding.bottom + 84,
-      child: Center(
-        child: Material(
-          key: const ValueKey('chat-datasets-download-pill'),
-          color: AppColors.charcoal,
-          elevation: 6,
-          shape: const StadiumBorder(side: BorderSide(color: AppColors.richGold)),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-            child: ValueListenableBuilder<(double, bool?)>(
-              valueListenable: progress,
-              builder: (context, p, _) {
-                final (fraction, result) = p;
-                final percent = (fraction * 100).floor().clamp(0, 100);
-                return Row(mainAxisSize: MainAxisSize.min, children: [
-                  SizedBox(
-                    width: 16,
-                    height: 16,
-                    child: result == true
-                        ? const Icon(Icons.check_circle, size: 16, color: AppColors.richGold)
-                        : CircularProgressIndicator(
-                            value: fraction, strokeWidth: 2.5, color: AppColors.richGold),
-                  ),
-                  const SizedBox(width: 10),
-                  Text(
-                    result == true ? l10n.chatDatasetsReady : l10n.chatDatasetsDownloadingPercent(percent),
-                    style: const TextStyle(color: AppColors.textPrimary, fontSize: 13),
-                  ),
-                ]);
-              },
+      bottom: bottom,
+      child: Transform.translate(
+        offset: _delta,
+        child: Center(
+          child: GestureDetector(
+            key: const ValueKey('chat-datasets-download-pill-drag'),
+            onPanUpdate: (d) => setState(() {
+              final next = _delta + d.delta;
+              // Keep it on screen.
+              final maxX = mq.size.width / 2 - 40;
+              _delta = Offset(
+                next.dx.clamp(-maxX, maxX),
+                next.dy.clamp(-(mq.size.height - bottom - mq.padding.top - 40), bottom - 8),
+              );
+            }),
+            child: Material(
+              key: const ValueKey('chat-datasets-download-pill'),
+              color: AppColors.charcoal,
+              elevation: 6,
+              shape: const StadiumBorder(side: BorderSide(color: AppColors.richGold)),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+                child: ValueListenableBuilder<(double, bool?)>(
+                  valueListenable: widget.progress,
+                  builder: (context, p, _) {
+                    final (target, result) = p;
+                    return SmoothProgress(
+                      target: result == true ? 1 : target,
+                      builder: (fraction) => Row(mainAxisSize: MainAxisSize.min, children: [
+                        const Icon(Icons.drag_indicator, size: 16, color: AppColors.textTertiary),
+                        const SizedBox(width: 4),
+                        SizedBox(
+                          width: 16,
+                          height: 16,
+                          child: result == true
+                              ? const Icon(Icons.check_circle, size: 16, color: AppColors.richGold)
+                              : CircularProgressIndicator(
+                                  value: fraction, strokeWidth: 2.5, color: AppColors.richGold),
+                        ),
+                        const SizedBox(width: 10),
+                        Text(
+                          result == true
+                              ? l10n.chatDatasetsReady
+                              : l10n.chatDatasetsDownloadingPercent((fraction * 100).floor().clamp(0, 100)),
+                          style: const TextStyle(color: AppColors.textPrimary, fontSize: 13),
+                        ),
+                      ]),
+                    );
+                  },
+                ),
+              ),
             ),
           ),
         ),
       ),
     );
   }
+}
+
+/// Moves the shown value toward [target] at a steady pace, so the
+/// percentage climbs linearly instead of jumping file by file.
+class SmoothProgress extends StatelessWidget {
+  const SmoothProgress({super.key, required this.target, required this.builder});
+
+  final double target;
+  final Widget Function(double fraction) builder;
+
+  @override
+  Widget build(BuildContext context) => TweenAnimationBuilder<double>(
+        tween: Tween<double>(end: target.clamp(0.0, 1.0)),
+        duration: const Duration(milliseconds: 700),
+        curve: Curves.linear,
+        builder: (context, v, _) => builder(v),
+      );
 }
 
 /// The centred window: title, "only once" note, big percentage, bar.
@@ -157,52 +205,10 @@ class ChatDatasetsDownloadDialog extends StatelessWidget {
       content: ValueListenableBuilder<(double, bool?)>(
         valueListenable: progress,
         builder: (context, p, _) {
-          final (fraction, result) = p;
-          final percent = (fraction * 100).floor().clamp(0, 100);
-          return Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Icon(
-                result == true
-                    ? Icons.check_circle
-                    : result == false
-                        ? Icons.cloud_off_outlined
-                        : Icons.cloud_download_outlined,
-                color: AppColors.richGold,
-                size: 44,
-              ),
-              const SizedBox(height: 12),
-              Text(
-                l10n.chatDatasetsDownloadTitle,
-                textAlign: TextAlign.center,
-                style: const TextStyle(color: AppColors.textPrimary, fontSize: 17, fontWeight: FontWeight.w700),
-              ),
-              const SizedBox(height: 6),
-              Text(
-                result == false ? l10n.chatDatasetsRetryLater : l10n.chatDatasetsDownloadOnce,
-                textAlign: TextAlign.center,
-                style: const TextStyle(color: AppColors.textSecondary, fontSize: 13.5, height: 1.35),
-              ),
-              if (result != false) ...[
-                const SizedBox(height: 18),
-                Text(
-                  result == true ? l10n.chatDatasetsReady : l10n.chatDatasetsDownloadingPercent(percent),
-                  key: const ValueKey('chat-datasets-download-percent'),
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(color: AppColors.richGold, fontSize: 15, fontWeight: FontWeight.w600),
-                ),
-                const SizedBox(height: 10),
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(5),
-                  child: LinearProgressIndicator(
-                    value: result == true ? 1 : fraction,
-                    minHeight: 8,
-                    color: AppColors.richGold,
-                    backgroundColor: AppColors.backgroundDark,
-                  ),
-                ),
-              ],
-            ],
+          final (target, result) = p;
+          return SmoothProgress(
+            target: result == true ? 1 : target,
+            builder: (fraction) => _body(l10n, fraction, result),
           );
         },
       ),
@@ -222,6 +228,55 @@ class ChatDatasetsDownloadDialog extends StatelessWidget {
                     )
                   : const SizedBox.shrink(),
         ),
+      ],
+    );
+  }
+
+  Widget _body(AppLocalizations l10n, double fraction, bool? result) {
+    final percent = (fraction * 100).floor().clamp(0, 100);
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Icon(
+          result == true
+              ? Icons.check_circle
+              : result == false
+                  ? Icons.cloud_off_outlined
+                  : Icons.cloud_download_outlined,
+          color: AppColors.richGold,
+          size: 44,
+        ),
+        const SizedBox(height: 12),
+        Text(
+          l10n.chatDatasetsDownloadTitle,
+          textAlign: TextAlign.center,
+          style: const TextStyle(color: AppColors.textPrimary, fontSize: 17, fontWeight: FontWeight.w700),
+        ),
+        const SizedBox(height: 6),
+        Text(
+          result == false ? l10n.chatDatasetsRetryLater : l10n.chatDatasetsDownloadOnce,
+          textAlign: TextAlign.center,
+          style: const TextStyle(color: AppColors.textSecondary, fontSize: 13.5, height: 1.35),
+        ),
+        if (result != false) ...[
+          const SizedBox(height: 18),
+          Text(
+            result == true ? l10n.chatDatasetsReady : l10n.chatDatasetsDownloadingPercent(percent),
+            key: const ValueKey('chat-datasets-download-percent'),
+            textAlign: TextAlign.center,
+            style: const TextStyle(color: AppColors.richGold, fontSize: 15, fontWeight: FontWeight.w600),
+          ),
+          const SizedBox(height: 10),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(5),
+            child: LinearProgressIndicator(
+              value: result == true ? 1 : fraction,
+              minHeight: 8,
+              color: AppColors.richGold,
+              backgroundColor: AppColors.backgroundDark,
+            ),
+          ),
+        ],
       ],
     );
   }

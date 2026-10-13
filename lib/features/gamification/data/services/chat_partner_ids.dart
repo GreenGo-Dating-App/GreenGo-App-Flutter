@@ -39,7 +39,11 @@ class ChatPartnerIds {
         .then((ids) {
       _memo[userId] = (at: DateTime.now(), ids: ids);
       return ids;
-    }).whenComplete(() => _inFlight.remove(userId));
+    // Block body: an arrow would return the removed (= this) future and
+    // whenComplete would wait on itself forever.
+    }).whenComplete(() {
+      _inFlight.remove(userId);
+    });
     _inFlight[userId] = future;
     return future;
   }

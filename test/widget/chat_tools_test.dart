@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:greengo_chat/core/services/chat_datasets/chat_datasets.dart';
 import 'package:greengo_chat/features/chat/presentation/widgets/chat_datasets_download_card.dart';
 import 'package:greengo_chat/features/chat/presentation/widgets/chat_ideas_sheet.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
@@ -18,12 +19,23 @@ void main() {
     expect(find.textContaining('only once'), findsOneWidget);
     expect(find.text('Downloading… 45%'), findsOneWidget);
     expect(tester.widget<LinearProgressIndicator>(find.byType(LinearProgressIndicator)).value, closeTo(0.457, 1e-9));
+    // Smooth: halfway through the animation the value is between old and new.
+    p.value = (0.857, null);
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 350));
+    final mid = tester.widget<LinearProgressIndicator>(find.byType(LinearProgressIndicator)).value!;
+    expect(mid, greaterThan(0.5));
+    expect(mid, lessThan(0.85));
+    await tester.pump(const Duration(milliseconds: 400));
+    expect(find.text('Downloading… 85%'), findsOneWidget);
     expect(find.text('OK'), findsNothing); // the user waits
     p.value = (1, true);
     await tester.pump();
+    await tester.pump(const Duration(milliseconds: 800));
     expect(find.text('Chat content ready, also offline'), findsOneWidget);
     p.value = (0.6, false);
     await tester.pump();
+    await tester.pump(const Duration(milliseconds: 800));
     expect(find.textContaining('try again next time'), findsOneWidget);
     expect(find.text('OK'), findsOneWidget);
   });
@@ -37,11 +49,19 @@ void main() {
 
     await tester.pumpWidget(_app(Stack(children: [ChatDatasetsDownloadPill(progress: p)])));
     expect(find.text('Downloading… 20%'), findsOneWidget);
+    // It can be dragged anywhere.
+    final before = tester.getCenter(find.byKey(const ValueKey('chat-datasets-download-pill')));
+    await tester.drag(find.byKey(const ValueKey('chat-datasets-download-pill-drag')), const Offset(-60, -200));
+    await tester.pump();
+    final after = tester.getCenter(find.byKey(const ValueKey('chat-datasets-download-pill')));
+    expect(after.dy, lessThan(before.dy - 100));
     p.value = (0.73, null);
     await tester.pump();
+    await tester.pump(const Duration(milliseconds: 800));
     expect(find.text('Downloading… 73%'), findsOneWidget);
     p.value = (1, true);
     await tester.pump();
+    await tester.pump(const Duration(milliseconds: 800));
     expect(find.text('Chat content ready, also offline'), findsOneWidget);
   });
 
@@ -58,4 +78,24 @@ void main() {
       expect(find.byType(SegmentedButton<bool>), findsNothing);
     });
   }
+
+  testWidgets('ice-breakers: category grid, tap one for its messages, back to the grid', (tester) async {
+    LocalizedText t(String en) => LocalizedText({'en': en});
+    ChatDatasets.instance.debugSet(icebreakers: [
+      DatasetItem(id: 'ib-travel-001', topic: 'travel', text: t('Where would you go tomorrow?')),
+      DatasetItem(id: 'ib-travel-002', topic: 'travel', text: t('Best trip ever?')),
+      DatasetItem(id: 'ib-food-001', topic: 'food', text: t('Favourite dish?')),
+    ]);
+    await tester.pumpWidget(_app(ChatIdeasSheet(partnerLanguage: 'en', myLanguage: 'en', onPick: (_) {})));
+    await tester.pump();
+    expect(find.byKey(const ValueKey('chat-ideas-categories')), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('chat-ideas-category-travel')));
+    await tester.pump();
+    expect(find.byKey(const ValueKey('chat-ideas-categories')), findsNothing);
+    expect(find.text('Best trip ever?'), findsOneWidget);
+    expect(find.text('Favourite dish?'), findsNothing);
+    await tester.tap(find.byKey(const ValueKey('chat-ideas-back')));
+    await tester.pump();
+    expect(find.byKey(const ValueKey('chat-ideas-categories')), findsOneWidget);
+  });
 }

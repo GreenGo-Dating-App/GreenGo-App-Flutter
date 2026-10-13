@@ -120,7 +120,12 @@ class ChatDatasets {
   /// tips) if not loaded yet. Completes when it is ready or failed.
   Future<void> ensure(String name) async {
     if (_isLoaded(name)) return;
-    await (_loading[name] ??= _load(name).whenComplete(() => _loading.remove(name)));
+    // The block body matters: `() => _loading.remove(name)` would RETURN the
+    // in-flight future, and whenComplete waits for a returned future - the
+    // load would wait on itself forever (first-run stuck at 0%).
+    await (_loading[name] ??= _load(name).whenComplete(() {
+      _loading.remove(name);
+    }));
   }
 
   /// Every dataset, in the order the first-run download fetches them.
@@ -133,18 +138,29 @@ class ChatDatasets {
   /// manifest and updated as the bytes arrive (browsers and dart:io both
   /// decompress, so received bytes are compared with the uncompressed size).
   Future<bool> preloadAll({void Function(double fraction)? onProgress}) async {
-    final files = ((await _readManifest())?['files'] as Map?) ?? const {};
-    double weight(String name) {
-      final e = files[name];
-      final b = e is Map ? e['bytes'] : null;
-      return b is num && b > 0 ? b.toDouble() : 100000.0;
-    }
-
-    final total = all.fold<double>(0, (t, n) => t + weight(n));
+    // Bundled files first: they need no network, so progress starts at once.
+    // Weights = uncompressed sizes (known defaults, refined from the manifest
+    // once it has been read for the downloaded files).
+    final weights = Map<String, double>.of(_defaultWeights);
+    final order = [...all.where(bundled.contains), ...all.where((n) => !bundled.contains(n))];
+    var total = weights.values.fold<double>(0, (t, w) => t + w);
     var done = 0.0;
     onProgress?.call(0);
-    for (final name in all) {
-      final w = weight(name);
+    for (final name in order) {
+      if (!bundled.contains(name) && !_manifestWeightsApplied) {
+        // First downloaded file: read the manifest (bounded) for exact sizes.
+        final files = ((await _readManifest().timeout(const Duration(seconds: 45), onTimeout: () => null))
+                ?['files'] as Map?) ??
+            const {};
+        for (final n in all.where((n) => !bundled.contains(n))) {
+          final e = files[n];
+          final bytes = e is Map ? e['bytes'] : null;
+          if (bytes is num && bytes > 0) weights[n] = bytes.toDouble();
+        }
+        total = weights.values.fold<double>(0, (t, w) => t + w);
+        _manifestWeightsApplied = true;
+      }
+      final w = weights[name] ?? 100000.0;
       final base = done;
       _onBytes = (n, received) {
         if (n == name) onProgress?.call(((base + (received < w ? received : w)) / total).clamp(0.0, 1.0));
@@ -157,6 +173,19 @@ class ChatDatasets {
     _onBytes = null;
     return all.every(_isLoaded);
   }
+
+  bool _manifestWeightsApplied = false;
+
+  /// Approximate uncompressed sizes (bytes) of the datasets, used until the
+  /// manifest gives the exact ones.
+  static const Map<String, double> _defaultWeights = {
+    'icebreakers': 556000,
+    'sentences': 902000,
+    'tips': 3248000,
+    'keywords': 2857000,
+    'freq': 1440000,
+    'quotes': 2470000,
+  };
 
   void Function(String name, int received)? _onBytes;
 
@@ -364,7 +393,11 @@ class ChatDatasets {
     KeywordIndex? keywords,
     DifficultyEstimator? difficulty,
     Map<String, List<CulturalTip>>? tips,
+    List<DatasetItem>? icebreakers,
+    List<DatasetItem>? sentences,
   }) {
+    _icebreakers = icebreakers ?? _icebreakers;
+    _sentences = sentences ?? _sentences;
     _keywords = keywords ?? _keywords;
     _difficulty = difficulty ?? _difficulty;
     _tips = tips ?? _tips;

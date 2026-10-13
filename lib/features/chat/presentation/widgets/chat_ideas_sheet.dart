@@ -74,9 +74,14 @@ class _ChatIdeasSheetState extends State<ChatIdeasSheet> {
       future: _ready,
       builder: (context, snap) {
         final items = (_sentences ? _datasets.sentences : _datasets.icebreakers) ?? const <DatasetItem>[];
-        final topics = <String>{for (final i in items) i.topic}.toList();
-        final topic = _topic != null && topics.contains(_topic) ? _topic : (topics.isEmpty ? null : topics.first);
-        final shown = items.where((i) => i.topic == topic).toList();
+        final counts = <String, int>{};
+        for (final i in items) {
+          counts[i.topic] = (counts[i.topic] ?? 0) + 1;
+        }
+        final topics = counts.keys.toList();
+        // No category chosen yet: the grid of categories.
+        final topic = _topic != null && topics.contains(_topic) ? _topic : null;
+        final shown = topic == null ? const <DatasetItem>[] : items.where((i) => i.topic == topic).toList();
         return Column(
           children: [
             const SizedBox(height: 8),
@@ -104,24 +109,60 @@ class _ChatIdeasSheetState extends State<ChatIdeasSheet> {
                   ),
                 ),
               )
-            else ...[
-              SizedBox(
-                height: 48,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                  children: [
-                    for (final t in topics)
-                      Padding(
-                        padding: const EdgeInsets.only(right: 6),
-                        child: ChoiceChip(
-                          label: Text(chatTopicLabel(l10n, t)),
-                          selected: t == topic,
-                          onSelected: (_) => setState(() => _topic = t),
+            else if (topic == null)
+              Expanded(
+                child: LayoutBuilder(
+                  builder: (context, c) => GridView.builder(
+                    key: const ValueKey('chat-ideas-categories'),
+                    padding: const EdgeInsets.fromLTRB(12, 8, 12, 24),
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: c.maxWidth < 500 ? 2 : (c.maxWidth < 900 ? 3 : 4),
+                      mainAxisSpacing: 10,
+                      crossAxisSpacing: 10,
+                      childAspectRatio: 1.6,
+                    ),
+                    itemCount: topics.length,
+                    itemBuilder: (context, i) {
+                      final t = topics[i];
+                      return Material(
+                        color: AppColors.charcoal,
+                        borderRadius: BorderRadius.circular(14),
+                        child: InkWell(
+                          key: ValueKey('chat-ideas-category-$t'),
+                          borderRadius: BorderRadius.circular(14),
+                          onTap: () => setState(() => _topic = t),
+                          child: Padding(
+                            padding: const EdgeInsets.all(12),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Icon(chatTopicIcon(t), color: AppColors.richGold, size: 22),
+                                Text(chatTopicLabel(l10n, t),
+                                    maxLines: 2,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: const TextStyle(
+                                        color: AppColors.textPrimary, fontSize: 14, fontWeight: FontWeight.w600)),
+                                Text('${counts[t]}',
+                                    style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
+                              ],
+                            ),
+                          ),
                         ),
-                      ),
-                  ],
+                      );
+                    },
+                  ),
                 ),
+              )
+            else ...[
+              // A category: back to the grid, then its messages.
+              ListTile(
+                key: const ValueKey('chat-ideas-back'),
+                dense: true,
+                leading: const Icon(Icons.arrow_back, color: AppColors.richGold),
+                title: Text(chatTopicLabel(l10n, topic),
+                    style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w600)),
+                onTap: () => setState(() => _topic = null),
               ),
               Expanded(
                 child: ListView.separated(
@@ -157,6 +198,35 @@ class _ChatIdeasSheetState extends State<ChatIdeasSheet> {
     );
   }
 }
+
+/// Icon of a dataset topic key (categories grid).
+IconData chatTopicIcon(String topic) => switch (topic) {
+      'travel' || 'local_tips' => Icons.flight_takeoff,
+      'food' => Icons.restaurant,
+      'music' => Icons.music_note,
+      'movies_series' => Icons.movie_outlined,
+      'books' => Icons.menu_book_outlined,
+      'sports_fitness' => Icons.fitness_center,
+      'languages' => Icons.translate,
+      'traditions' || 'festivals' => Icons.celebration_outlined,
+      'hometown' => Icons.home_outlined,
+      'work_studies' => Icons.work_outline,
+      'hobbies_creativity' || 'art_museums' => Icons.palette_outlined,
+      'nature_outdoors' => Icons.park_outlined,
+      'technology' => Icons.devices_outlined,
+      'daily_life' => Icons.wb_sunny_outlined,
+      'dreams_goals' => Icons.flag_outlined,
+      'would_you_rather' => Icons.help_outline,
+      'animals_pets' => Icons.pets,
+      'greetings_intro' => Icons.waving_hand_outlined,
+      'getting_to_know' => Icons.people_outline,
+      'compliments' => Icons.favorite_border,
+      'thanking' => Icons.volunteer_activism_outlined,
+      'apologizing' => Icons.sentiment_dissatisfied_outlined,
+      'making_plans' => Icons.event_outlined,
+      'agree_disagree' => Icons.thumbs_up_down_outlined,
+      _ => Icons.chat_bubble_outline,
+    };
 
 /// Localised label of a dataset topic key ("travel" -> "Viaggi").
 String chatTopicLabel(AppLocalizations l10n, String topic) => switch (topic) {
