@@ -24480,6 +24480,18 @@ class AppLocalizationsPt extends AppLocalizations {
   String get chatTripShare => 'Partilhar lista';
 
   @override
+  String get chatTripRemove => 'Remover (detetado por engano)';
+
+  @override
+  String chatTripRemoved(String place) {
+    return '$place removido dos lugares desta conversa';
+  }
+
+  @override
+  String get chatTripRemoveFailed =>
+      'Não foi possível remover. Tenta novamente.';
+
+  @override
   String get chatTripShareHeader => 'Lugares da nossa conversa no GreenGo:';
 
   @override
@@ -49230,6 +49242,17 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get chatTripShare => 'Compartilhar lista';
+
+  @override
+  String get chatTripRemove => 'Remover (detectado por engano)';
+
+  @override
+  String chatTripRemoved(String place) {
+    return '$place removido dos lugares desta conversa';
+  }
+
+  @override
+  String get chatTripRemoveFailed => 'Não foi possível remover. Tente de novo.';
 
   @override
   String get chatTripShareHeader => 'Lugares da nossa conversa no GreenGo:';

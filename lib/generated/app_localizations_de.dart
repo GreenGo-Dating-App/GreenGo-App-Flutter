@@ -24566,6 +24566,18 @@ class AppLocalizationsDe extends AppLocalizations {
   String get chatTripShare => 'Liste teilen';
 
   @override
+  String get chatTripRemove => 'Entfernen (falsch erkannt)';
+
+  @override
+  String chatTripRemoved(String place) {
+    return '$place aus den Orten dieses Chats entfernt';
+  }
+
+  @override
+  String get chatTripRemoveFailed =>
+      'Konnte nicht entfernt werden. Versuch es noch einmal.';
+
+  @override
   String get chatTripShareHeader => 'Orte aus unserem GreenGo-Chat:';
 
   @override

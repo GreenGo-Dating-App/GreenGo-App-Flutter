@@ -41547,6 +41547,24 @@ abstract class AppLocalizations {
   /// **'Share list'**
   String get chatTripShare;
 
+  /// No description provided for @chatTripRemove.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove (wrongly detected)'**
+  String get chatTripRemove;
+
+  /// No description provided for @chatTripRemoved.
+  ///
+  /// In en, this message translates to:
+  /// **'{place} removed from this chat\'s places'**
+  String chatTripRemoved(String place);
+
+  /// No description provided for @chatTripRemoveFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t remove it. Try again.'**
+  String get chatTripRemoveFailed;
+
   /// No description provided for @chatTripShareHeader.
   ///
   /// In en, this message translates to:

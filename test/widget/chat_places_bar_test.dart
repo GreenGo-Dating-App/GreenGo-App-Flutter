@@ -75,4 +75,19 @@ void main() {
     expect(find.text('COUNTRIES'), findsOneWidget);
     expect(find.text('Portugal'), findsOneWidget);
   });
+
+  testWidgets('trip list: the red bin removes a false positive (list, map, metadata)', (tester) async {
+    final removed = <String>[];
+    await tester.pumpWidget(_app(ChatTripScreen(
+      places: ChatPlaces.collect(_messages),
+      onRemove: (p) async => removed.add(p.key),
+    )));
+    await tester.pumpAndSettle();
+    expect(find.text('Portugal'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('chat-trip-remove-k:PT')));
+    await tester.pumpAndSettle();
+    expect(removed, ['k:PT']);
+    expect(find.text('Portugal'), findsNothing);
+    expect(find.textContaining("removed from this chat's places"), findsOneWidget);
+  });
 }

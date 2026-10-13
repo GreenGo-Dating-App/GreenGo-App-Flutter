@@ -20,9 +20,13 @@ import '../widgets/keyword_actions.dart';
 /// and on a map, with a share button. Offline data: message metadata + the
 /// attractions catalogue (cache-first).
 class ChatTripScreen extends StatefulWidget {
-  const ChatTripScreen({super.key, required this.places, this.dataSource});
+  const ChatTripScreen({super.key, required this.places, this.dataSource, this.onRemove});
 
   final List<ChatPlace> places;
+
+  /// Removes a wrongly detected place (false positive) from the chat's
+  /// message metadata; null hides the bin buttons.
+  final Future<void> Function(ChatPlace place)? onRemove;
 
   /// Injectable for tests.
   final AttractionsDataSource? dataSource;
@@ -44,6 +48,9 @@ class _TripItem {
 class _ChatTripScreenState extends State<ChatTripScreen> {
   late final AttractionsDataSource _ds = widget.dataSource ?? AttractionsDataSource();
   Future<List<_TripItem>>? _items;
+
+  /// Places removed here (hidden at once; the chat metadata follows).
+  final Set<String> _removed = {};
   Locale? _locale;
 
   @override
@@ -99,6 +106,18 @@ class _ChatTripScreenState extends State<ChatTripScreen> {
     return out;
   }
 
+  Future<void> _remove(AppLocalizations l10n, ChatPlace place) async {
+    setState(() => _removed.add(place.key));
+    final messenger = ScaffoldMessenger.of(context);
+    try {
+      await widget.onRemove?.call(place);
+      messenger.showSnackBar(SnackBar(content: Text(l10n.chatTripRemoved(place.label))));
+    } catch (_) {
+      if (mounted) setState(() => _removed.remove(place.key));
+      messenger.showSnackBar(SnackBar(content: Text(l10n.chatTripRemoveFailed)));
+    }
+  }
+
   void _share(AppLocalizations l10n, List<_TripItem> items) {
     final lines = <String>[l10n.chatTripShareHeader, ''];
     for (final i in items) {
@@ -127,7 +146,9 @@ class _ChatTripScreenState extends State<ChatTripScreen> {
                 key: const ValueKey('chat-trip-share'),
                 tooltip: l10n.chatTripShare,
                 icon: const Icon(Icons.ios_share),
-                onPressed: (snap.data?.isNotEmpty ?? false) ? () => _share(l10n, snap.data!) : null,
+                onPressed: (snap.data?.isNotEmpty ?? false)
+                    ? () => _share(l10n, snap.data!.where((i) => !_removed.contains(i.place.key)).toList())
+                    : null,
               ),
             ),
           ],
@@ -147,7 +168,7 @@ class _ChatTripScreenState extends State<ChatTripScreen> {
             if (!snap.hasData) {
               return const Center(child: CircularProgressIndicator(color: AppColors.richGold));
             }
-            final items = snap.data!;
+            final items = snap.data!.where((i) => !_removed.contains(i.place.key)).toList();
             if (items.isEmpty) {
               return _message(l10n.chatTripEmpty);
             }
@@ -204,7 +225,16 @@ class _ChatTripScreenState extends State<ChatTripScreen> {
                   subtitle: i.subtitle == null
                       ? null
                       : Text(i.subtitle!, style: const TextStyle(color: AppColors.textTertiary, fontSize: 12.5)),
-                  trailing: const Icon(Icons.chevron_right, color: AppColors.textTertiary),
+                  trailing: Row(mainAxisSize: MainAxisSize.min, children: [
+                    if (widget.onRemove != null)
+                      IconButton(
+                        key: ValueKey('chat-trip-remove-${i.place.key}'),
+                        tooltip: l10n.chatTripRemove,
+                        icon: const Icon(Icons.delete_outline, color: Colors.redAccent),
+                        onPressed: () => _remove(l10n, i.place),
+                      ),
+                    const Icon(Icons.chevron_right, color: AppColors.textTertiary),
+                  ]),
                   onTap: () => KeywordActions.open(context, i.place.match),
                 ),
               ),

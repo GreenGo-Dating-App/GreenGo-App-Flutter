@@ -3820,6 +3820,37 @@ class _ChatScreenState extends State<ChatScreen> {
         },
       ));
 
+  /// A wrongly detected place (false positive): removed from the entities of
+  /// every loaded message that names it, for both people. An empty list is
+  /// kept (not deleted) so the text is not matched again on the fly.
+  Future<void> _removePlace(ChatPlace place) async {
+    final st = _chatBloc.state;
+    if (st is! ChatLoaded) return;
+    final conversationId = st.conversation.conversationId;
+    final kw = ChatDatasets.instance.keywords;
+    final batch = FirebaseFirestore.instance.batch();
+    var n = 0;
+    for (final m in st.messages) {
+      if (m.type != MessageType.text) continue;
+      final matches = MessageInsights.storedEntities(m.metadata, m.content) ?? kw?.match(m.content) ?? const [];
+      final kept = [
+        for (final k in matches)
+          if (k.refs.isNotEmpty && '${k.kind.code}:${k.refs.first}' != place.key) k,
+      ];
+      if (kept.length == matches.length) continue;
+      batch.update(
+        FirebaseFirestore.instance
+            .collection('conversations')
+            .doc(conversationId)
+            .collection('messages')
+            .doc(m.messageId),
+        {'metadata.entities': [for (final k in kept) k.toJson()]},
+      );
+      n++;
+    }
+    if (n > 0) await batch.commit();
+  }
+
   /// Ice-breakers, sentences and cultural tips all off: no tools line, the
   /// attachment + goes left of the message field.
   bool get _attachInline => !_showIcebreakers && !_showSentences && !_showCulturalTips;
@@ -3884,7 +3915,7 @@ class _ChatScreenState extends State<ChatScreen> {
                     onPressed: () => _openIdeas(sentences: true),
                   ),
                   if (_showCulturalTips)
-                    _placesBuilder((places, _) => ChatPlacesButton(places: places)),
+                    _placesBuilder((places, _) => ChatPlacesButton(places: places, onRemove: _removePlace)),
                 ],
               ),
             ),

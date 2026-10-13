@@ -142,9 +142,12 @@ class _ChatPlacesBarState extends State<ChatPlacesBar> {
 
 /// The chat's places (attractions, cities, countries) as a list and on a map.
 class ChatPlacesButton extends StatelessWidget {
-  const ChatPlacesButton({super.key, required this.places});
+  const ChatPlacesButton({super.key, required this.places, this.onRemove});
 
   final List<ChatPlace> places;
+
+  /// See [ChatTripScreen.onRemove].
+  final Future<void> Function(ChatPlace place)? onRemove;
 
   @override
   Widget build(BuildContext context) => IconButton(
@@ -153,7 +156,7 @@ class ChatPlacesButton extends StatelessWidget {
         icon: const Icon(Icons.map_outlined),
         color: AppColors.richGold,
         onPressed: () => Navigator.of(context).push(MaterialPageRoute(
-          builder: (_) => ChatTripScreen(places: places),
+          builder: (_) => ChatTripScreen(places: places, onRemove: onRemove),
         )),
       );
 }

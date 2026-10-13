@@ -19,6 +19,7 @@ import '../../data/services/attraction_stats_service.dart';
 import '../../domain/attraction_rating.dart';
 import '../../domain/category_labels.dart';
 import '../../domain/entities/attraction.dart';
+import '../../../chat/presentation/widgets/keyword_actions.dart' show CountryTipsSheet;
 import '../../../user_experiences/presentation/widgets/experience_widgets.dart'
     show StarRatingDisplay, StarRatingInput;
 
@@ -559,6 +560,14 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
           pinned: true,
           backgroundColor: AppColors.deepBlack,
           actions: [
+            // Cultural tips of the attraction's country: the same sheet as the
+            // "<country>: cultural tips" chip in chats.
+            IconButton(
+              key: const ValueKey('attractionTipsButton'),
+              tooltip: l10n.chatTipsFor(localizedCountryName(l10n, a.countryIso2)),
+              icon: const Icon(Icons.lightbulb_outline, color: AppColors.richGold, size: 20),
+              onPressed: () => CountryTipsSheet.show(context, a.countryIso2),
+            ),
             // Share the attraction's link (/a/{id}): unfurls into a preview
             // card (photo when its licence allows, name, place, category).
             Builder(
