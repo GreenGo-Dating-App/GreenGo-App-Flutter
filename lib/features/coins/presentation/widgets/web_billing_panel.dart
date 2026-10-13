@@ -72,6 +72,7 @@ class _WebBillingPanelState extends State<WebBillingPanel> {
     );
 
     return Container(
+      width: double.infinity,
       margin: const EdgeInsets.only(top: 8),
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
@@ -79,11 +80,12 @@ class _WebBillingPanelState extends State<WebBillingPanel> {
         borderRadius: BorderRadius.circular(12),
       ),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
             l10n.webBillingTitle,
+            textAlign: TextAlign.center,
             style: const TextStyle(
               color: AppColors.textSecondary,
               fontSize: 14,
@@ -94,6 +96,7 @@ class _WebBillingPanelState extends State<WebBillingPanel> {
             const SizedBox(height: 8),
             Text(
               _subscriptionLine(l10n, locale, s),
+              textAlign: TextAlign.center,
               style: const TextStyle(color: AppColors.textTertiary, fontSize: 12, height: 1.4),
             ),
           ],
@@ -101,14 +104,16 @@ class _WebBillingPanelState extends State<WebBillingPanel> {
             const SizedBox(height: 6),
             InkWell(
               onTap: _openingPortal ? null : _openPortal,
-              child: Text(l10n.cancelAnytimeBillingPortal, style: linkStyle),
+              child: Text(l10n.cancelAnytimeBillingPortal,
+                  textAlign: TextAlign.center, style: linkStyle),
             ),
           ],
           const SizedBox(height: 8),
           InkWell(
             key: const Key('withdrawFromContractLink'),
             onTap: () => WithdrawalDialog.show(context, _summary.orders),
-            child: Text(l10n.withdrawFromContract, style: linkStyle),
+            child: Text(l10n.withdrawFromContract,
+                textAlign: TextAlign.center, style: linkStyle),
           ),
         ],
       ),
