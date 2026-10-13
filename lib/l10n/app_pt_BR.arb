@@ -7610,5 +7610,7 @@
   "promoGenericStoreOffer": "Oferta de lançamento 2026: {percent}% de desconto no primeiro período para novos assinantes. A App Store mostra o seu preço na hora da compra.",
   "promoUntilNote": "Para novos assinantes até 31 de dezembro de 2026.",
   "translationDailyLimitReached": "Você usou as traduções de hoje do seu plano. Elas voltam amanhã, ou faça upgrade para ter mais.",
-  "translationDailyLimitCta": "Ver planos"
+  "translationDailyLimitCta": "Ver planos",
+  "createNeedsPlanTitle": "É preciso uma assinatura para criar",
+  "createNeedsPlanBody": "Para criar eventos e experiências você precisa da assinatura Base (ou Silver, Gold ou Platinum). Sem assinatura você pode explorar e conversar com 3 pessoas por dia."
 }

@@ -24991,4 +24991,11 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get translationDailyLimitCta => 'Voir les abonnements';
+
+  @override
+  String get createNeedsPlanTitle => 'Un abonnement est nécessaire pour créer';
+
+  @override
+  String get createNeedsPlanBody =>
+      'Pour créer des événements et des expériences, il te faut l\'abonnement de base (ou Silver, Gold ou Platinum). Sans abonnement, tu peux explorer et discuter avec 3 personnes par jour.';
 }

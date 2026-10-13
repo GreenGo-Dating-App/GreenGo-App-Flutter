@@ -22,7 +22,7 @@
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
-import { effectiveTier, isBusinessActive, isProfileAdmin } from '../shared/effectiveTier';
+import { effectiveTier, hasBaseAccess, isBusinessActive, isProfileAdmin } from '../shared/effectiveTier';
 import { moderateExperienceText } from './moderation';
 import { maxExperiencesFor, validateExperiencePayload } from './validation';
 import {
@@ -83,6 +83,13 @@ export const createUserExperience = onCall(
         tx.get(counterRef),
       ]);
       const profile = profileSnap.data() ?? null;
+
+      // Owner rule 2026-10-13: creating experiences needs a plan (Base or
+      // better). Same refusal code as joining / booking.
+      if (!hasBaseAccess(profile) && !isProfileAdmin(profile)) {
+        throw new HttpsError('failed-precondition', 'base_membership_required',
+          { code: 'base_membership_required' });
+      }
 
       // Same rule as the community Events tab's create button: the
       // community's creator, or a member with role owner / admin.

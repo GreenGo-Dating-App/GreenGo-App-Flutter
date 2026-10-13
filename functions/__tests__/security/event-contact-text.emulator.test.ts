@@ -74,7 +74,9 @@ const baseEvent = () => ({
 
 beforeEach(async () => {
   await clearAll();
-  await db.doc(`profiles/${ORG}`).set({ displayName: 'Org', membershipTier: 'FREE', isAgeVerified: true });
+  // Creating events needs a plan (owner rule 2026-10-13): the organizer has Base.
+  await db.doc(`profiles/${ORG}`).set({ displayName: 'Org', membershipTier: 'FREE', isAgeVerified: true,
+    hasBaseMembership: true, baseMembershipEndDate: future(365 * DAY) });
   await db.doc(`profiles/${CO}`).set({ displayName: 'Co', membershipTier: 'FREE', isAgeVerified: true });
 });
 

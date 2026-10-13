@@ -360,6 +360,35 @@ describe('Free chats without Base: 3 people per UTC day (owner rule 2026-10-13)'
 });
 
 // ---------------------------------------------------------------------------
+describe('No plan: cannot create events (owner rule 2026-10-13)', () => {
+  const ev = (uid: string) => ({
+    organizerId: uid, title: 'e', price: 0,
+    startDate: new Date(Date.now() + DAY), endDate: new Date(Date.now() + DAY + 2 * HOUR),
+  });
+
+  test('no plan or an expired tier: denied; Base and a paid tier: allowed', async () => {
+    expect(await clientWrite(FREE, 'events/n1', ev(FREE))).toBe(403);
+    expect(await clientWrite(EXPIRED, 'events/n2', ev(EXPIRED))).toBe(403);
+    expect(await clientWrite(BASE, 'events/n3', ev(BASE))).toBe(200);
+    expect(await clientWrite(SILVER, 'events/n4', ev(SILVER))).toBe(200);
+  });
+
+  test('editing and deleting an existing event still work without a plan', async () => {
+    await db.doc('events/old').set({ ...ev(FREE), status: 'published' });
+    expect(await clientWrite(FREE, 'events/old', { title: 'renamed' }, ['title'])).toBe(200);
+  });
+
+  test('backstop: a create by a no-plan organizer is deleted; Base keeps its event', async () => {
+    await db.doc('events/x1').set({ ...ev(FREE), status: 'published', startDate: future(DAY), endDate: future(DAY + 2 * HOUR) });
+    expect(await recountEvents(FREE, { id: 'x1', data: (await db.doc('events/x1').get()).data()! })).toBe('deleted');
+    expect((await db.doc('events/x1').get()).exists).toBe(false);
+    await db.doc('events/x2').set({ ...ev(BASE), status: 'published', startDate: future(DAY), endDate: future(DAY + 2 * HOUR) });
+    expect(await recountEvents(BASE, { id: 'x2', data: (await db.doc('events/x2').get()).data()! })).toBe('ok');
+    expect((await db.doc('events/x2').get()).exists).toBe(true);
+  });
+});
+
+// ---------------------------------------------------------------------------
 describe('P-H4 / M1 ongoing-event cap', () => {
   const ev = (uid: string, extra: any = {}) => ({
     organizerId: uid, title: 'e', price: 0,
@@ -367,16 +396,16 @@ describe('P-H4 / M1 ongoing-event cap', () => {
   });
 
   test('over the cap: denied (audit "3 events" bypass); no end date: denied', async () => {
-    await db.doc(`entitlement_usage/${FREE}`).set({ eventActiveEnds: [Date.now() + DAY] });
-    expect(await clientWrite(FREE, 'events/e1', ev(FREE))).toBe(403);
+    await db.doc(`entitlement_usage/${BASE}`).set({ eventActiveEnds: [Date.now() + DAY] });
+    expect(await clientWrite(BASE, 'events/e1', ev(BASE))).toBe(403);
     expect(await clientWrite(SILVER, 'events/e2', { organizerId: SILVER, title: 'x', price: 0 })).toBe(403);
     await db.doc(`entitlement_usage/${SILVER}`).set({ eventActiveEnds: [Date.now() + HOUR, Date.now() + DAY, Date.now() + 2 * DAY] });
     expect(await clientWrite(SILVER, 'events/e3', ev(SILVER))).toBe(403);
   });
 
   test('ended events do not count (M1), a paid extra event and a series occurrence pass, Platinum is unlimited', async () => {
-    await db.doc(`entitlement_usage/${FREE}`).set({ eventActiveEnds: [Date.now() - HOUR] });
-    expect(await clientWrite(FREE, 'events/e1', ev(FREE))).toBe(200);
+    await db.doc(`entitlement_usage/${BASE}`).set({ eventActiveEnds: [Date.now() - HOUR] });
+    expect(await clientWrite(BASE, 'events/e1', ev(BASE))).toBe(200);
     await db.doc(`entitlement_usage/${SILVER}`).set({
       eventActiveEnds: [Date.now() + HOUR, Date.now() + DAY, Date.now() + 2 * DAY],
       eventExtraCredits: 1, eventExtraUsed: 0,

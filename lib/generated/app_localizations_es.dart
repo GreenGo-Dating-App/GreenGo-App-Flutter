@@ -24849,4 +24849,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get translationDailyLimitCta => 'Ver planes';
+
+  @override
+  String get createNeedsPlanTitle => 'Necesitas un plan para crear';
+
+  @override
+  String get createNeedsPlanBody =>
+      'Para crear eventos y experiencias necesitas la membresía base (o Silver, Gold o Platinum). Sin plan puedes explorar y chatear con 3 personas al día.';
 }

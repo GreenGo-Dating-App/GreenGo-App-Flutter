@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../core/di/injection_container.dart' as di;
 import '../../../core/services/effective_tier.dart';
+import '../../../core/utils/base_membership_gate.dart';
 import '../../../core/widgets/limit_reached_dialog.dart';
 import '../../../generated/app_localizations.dart';
 import '../../coins/presentation/bloc/coin_bloc.dart';
@@ -71,6 +72,12 @@ class ExperienceCreationGate {
   /// uploaded (else it is asked for in place — upload flow — and creation
   /// continues once it is there).
   Future<bool> ensureCanCreate(BuildContext context, String uid) async {
+    // No plan, no experience creation (owner rule 2026-10-13; the
+    // createUserExperience callable refuses it with base_membership_required).
+    if (!await BaseMembershipGate.ensureCanCreate(context: context, userId: uid)) {
+      return false;
+    }
+    if (!context.mounted) return false;
     final a = await check(uid);
     if (!context.mounted) return false;
     if (!a.allowed) {

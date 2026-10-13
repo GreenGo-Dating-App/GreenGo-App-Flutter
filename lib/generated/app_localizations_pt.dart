@@ -24823,6 +24823,13 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get translationDailyLimitCta => 'Ver planos';
+
+  @override
+  String get createNeedsPlanTitle => 'É preciso uma subscrição para criar';
+
+  @override
+  String get createNeedsPlanBody =>
+      'Para criar eventos e experiências precisas da subscrição Base (ou Silver, Gold ou Platinum). Sem subscrição podes explorar e conversar com 3 pessoas por dia.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -49655,4 +49662,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get translationDailyLimitCta => 'Ver planos';
+
+  @override
+  String get createNeedsPlanTitle => 'É preciso uma assinatura para criar';
+
+  @override
+  String get createNeedsPlanBody =>
+      'Para criar eventos e experiências você precisa da assinatura Base (ou Silver, Gold ou Platinum). Sem assinatura você pode explorar e conversar com 3 pessoas por dia.';
 }

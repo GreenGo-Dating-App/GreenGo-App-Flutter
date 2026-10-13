@@ -24908,4 +24908,12 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get translationDailyLimitCta => 'Tarife ansehen';
+
+  @override
+  String get createNeedsPlanTitle =>
+      'Zum Erstellen brauchst du eine Mitgliedschaft';
+
+  @override
+  String get createNeedsPlanBody =>
+      'Um Events und Erlebnisse zu erstellen, brauchst du die Basis-Mitgliedschaft (oder Silver, Gold oder Platinum). Ohne Mitgliedschaft kannst du stöbern und mit 3 Personen pro Tag chatten.';
 }

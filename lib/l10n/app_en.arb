@@ -13626,5 +13626,7 @@
   "@promoGenericStoreOffer": {"placeholders": {"percent": {"type": "String"}}},
   "promoUntilNote": "For new subscribers until 31 December 2026.",
   "translationDailyLimitReached": "You've used today's translations for your plan. They come back tomorrow, or upgrade for more.",
-  "translationDailyLimitCta": "See plans"
+  "translationDailyLimitCta": "See plans",
+  "createNeedsPlanTitle": "A plan is needed to create",
+  "createNeedsPlanBody": "Creating events and experiences needs the Base membership (or Silver, Gold or Platinum). Without a plan you can browse and chat with 3 people a day."
 }

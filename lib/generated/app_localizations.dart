@@ -42194,6 +42194,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'See plans'**
   String get translationDailyLimitCta;
+
+  /// No description provided for @createNeedsPlanTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A plan is needed to create'**
+  String get createNeedsPlanTitle;
+
+  /// No description provided for @createNeedsPlanBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Creating events and experiences needs the Base membership (or Silver, Gold or Platinum). Without a plan you can browse and chat with 3 people a day.'**
+  String get createNeedsPlanBody;
 }
 
 class _AppLocalizationsDelegate

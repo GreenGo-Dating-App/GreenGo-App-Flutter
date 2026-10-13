@@ -81,6 +81,7 @@ const fakeDb: any = {
 jest.mock('firebase-admin', () => {
   const firestore: any = () => fakeDb;
   firestore.FieldValue = { serverTimestamp: () => 'TS', delete: () => DELETE };
+  firestore.Timestamp = class {};
   return {
     apps: [{}],
     initializeApp: jest.fn(),
@@ -136,7 +137,7 @@ const payload = {
 beforeEach(() => {
   store.clear();
   writes.length = 0;
-  store.set('profiles/host', { membershipTier: 'PLATINUM' });
+  store.set('profiles/host', { membershipTier: 'PLATINUM', membershipEndDate: Date.now() + 365 * 86_400_000 });
   store.set('communities/c1', { name: '  Lisbon Foodies  ', createdByUserId: 'creator' });
 });
 
@@ -183,7 +184,7 @@ describe('createUserExperience with communityId', () => {
   });
 
   it('links the community for its creator (server-set name)', async () => {
-    store.set('profiles/creator', { membershipTier: 'PLATINUM' });
+    store.set('profiles/creator', { membershipTier: 'PLATINUM', membershipEndDate: Date.now() + 365 * 86_400_000 });
     await call({
       auth: { uid: 'creator' },
       data: { ...payload, communityId: 'c1', communityName: 'Spoofed' },

@@ -2330,7 +2330,11 @@ service cloud.firestore {
         // Audit P-H4 / M1: an end date (what makes an event "ongoing") and
         // the tier's cap of ongoing events (onEventWrittenUsage counts them).
         && request.resource.data.get('endDate', null) is timestamp
-        && eventCapOk(request.auth.uid, request.resource.data);
+        && eventCapOk(request.auth.uid, request.resource.data)
+        // Owner rule 2026-10-13: creating events needs a plan (Base or
+        // better); an account with no plan can only browse and use its
+        // free chats. Editing / deleting existing events is not affected.
+        && baseAccess(request.auth.uid);
       // Delete stays CREATOR-only (co-owners cannot delete).
       allow delete: if isOrganizer();
       // Organizer has full update rights. Additionally ANY signed-in user may

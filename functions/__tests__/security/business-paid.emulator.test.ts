@@ -169,7 +169,10 @@ const ev = (organizerId: string, over: Record<string, any> = {}) => ({
 });
 
 describe('events: paid only by an active business', () => {
-  test('create: free for everyone, paid only for an active business', async () => {
+  test('create: needs a plan; free with Base, paid only for an active business', async () => {
+    // No plan: no event at all (owner rule 2026-10-13).
+    expect(await clientWrite(PERSONAL, 'events/f0', ev(PERSONAL, { price: 0 }))).toBe(403);
+    await db.doc(`profiles/${PERSONAL}`).set({ hasBaseMembership: true, baseMembershipEndDate: future() }, { merge: true });
     expect(await clientWrite(PERSONAL, 'events/f1', ev(PERSONAL, { price: 0 }))).toBe(200);
     expect(await clientWrite(PERSONAL, 'events/p1', ev(PERSONAL, { price: 10, ticketProvider: 'link' }))).toBe(403);
     // a ticket provider alone makes it paid
@@ -242,15 +245,21 @@ describe('user_experiences: paid only by an active business', () => {
     expect(await clientWrite(PERSONAL, 'user_experiences/old', { title: 'Old food walk' }, ['title'])).toBe(200);
   });
 
-  test('createUserExperience: paid needs business (business_required); free for everyone', async () => {
+  test('createUserExperience: needs a plan; paid also needs a business (business_required)', async () => {
     const base = experience('ignored');
     delete (base as any).hostId;
     delete (base as any).status;
     const paid = { ...base, ...paidPatch, mainPhotoUrl: 'https://cdn.example.com/a.jpg' };
     const free = { ...base, mainPhotoUrl: 'https://cdn.example.com/a.jpg' };
-    expect((await refused(call(createUserExperience, paid, PERSONAL))).reason).toBe('business_required');
-    expect((await refused(call(createUserExperience, paid, LAPSED))).reason).toBe('business_required');
+    // No plan at all: creating is refused first (owner rule 2026-10-13).
+    expect((await refused(call(createUserExperience, paid, PERSONAL))).reason).toBe('base_membership_required');
+    expect((await refused(call(createUserExperience, free, PERSONAL))).reason).toBe('base_membership_required');
+    expect((await refused(call(createUserExperience, paid, LAPSED))).reason).toBe('base_membership_required');
     expect((await call(createUserExperience, paid, BIZ)).status).toBe('draft');
+    // With Base: a paid listing still needs a business; a free one works.
+    await db.doc(`profiles/${PERSONAL}`).set({ hasBaseMembership: true, baseMembershipEndDate: future() }, { merge: true });
+    expect((await refused(call(createUserExperience, paid, PERSONAL))).reason).toBe('business_required');
+    expect((await call(createUserExperience, free, PERSONAL)).status).toBe('draft');
     await db.doc(`profiles/${PERSONAL}`).set({ membershipTier: 'PLATINUM', membershipEndDate: future() }, { merge: true });
     expect((await call(createUserExperience, free, PERSONAL)).status).toBe('draft');
   });

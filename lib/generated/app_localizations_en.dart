@@ -24615,4 +24615,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get translationDailyLimitCta => 'See plans';
+
+  @override
+  String get createNeedsPlanTitle => 'A plan is needed to create';
+
+  @override
+  String get createNeedsPlanBody =>
+      'Creating events and experiences needs the Base membership (or Silver, Gold or Platinum). Without a plan you can browse and chat with 3 people a day.';
 }

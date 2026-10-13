@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/utils/base_membership_gate.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../events/data/datasources/events_remote_datasource.dart';
 import '../../../events/data/models/event_model.dart';
@@ -46,6 +47,12 @@ class _CommunityEventsTabState extends State<CommunityEventsTab> {
   void _refresh() => setState(() => _future = _load());
 
   Future<void> _createEvent() async {
+    // No plan, no event creation (owner rule 2026-10-13; rules enforce it).
+    if (!await BaseMembershipGate.ensureCanCreate(
+        context: context, userId: widget.currentUserId)) {
+      return;
+    }
+    if (!mounted) return;
     await Navigator.of(context).push(
       MaterialPageRoute<void>(
         builder: (_) => CreateEventScreen(

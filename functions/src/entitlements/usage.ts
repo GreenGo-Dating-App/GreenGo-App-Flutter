@@ -28,7 +28,7 @@ import * as admin from 'firebase-admin';
 import { onDocumentCreated, onDocumentWritten } from 'firebase-functions/v2/firestore';
 import '../shared/firebaseAdmin';
 import { monitored } from '../shared/monitoring';
-import { effectiveTier } from '../shared/effectiveTier';
+import { effectiveTier, hasBaseAccess } from '../shared/effectiveTier';
 import { MAX_DAILY_CONNECTS, MAX_EVENTS, MAX_GROUPS, USAGE_COLLECTION, utcDayStartMs } from '../shared/tierLimits';
 import { logInfo } from '../shared/utils';
 
@@ -187,7 +187,13 @@ export async function recountEvents(uid: string, created?: { id: string; data: R
     let events = q.docs.map((d) => eventLite(d.id, d.data()));
     const update: Record<string, any> = {};
 
-    if (created) {
+    if (created && !hasBaseAccess(p.data(), new Date(nowMs))) {
+      // Owner rule 2026-10-13: no plan, no event creation (the rules refuse
+      // it; this catches anything that slipped past them).
+      outcome = 'deleted';
+      tx.delete(db.collection('events').doc(created.id));
+      events = events.filter((e) => e.id !== created.id);
+    } else if (created) {
       const ev = eventLite(created.id, created.data);
       const cap = MAX_EVENTS[effectiveTier(p.data(), new Date(nowMs))];
       const key = slotKeyOf(ev);

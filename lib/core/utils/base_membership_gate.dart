@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../features/membership/domain/entities/membership.dart';
 import '../../features/profile/domain/entities/profile.dart';
 import '../../features/subscription/presentation/screens/membership_screen.dart';
+import '../../generated/app_localizations.dart';
 import '../error/failures.dart';
 import '../services/effective_tier.dart' show kBaseMembershipRequiredCode;
 import '../services/own_profile_store.dart';
@@ -68,6 +69,30 @@ class BaseMembershipGate {
     if (profile == null || canParticipate(profile)) return true;
     if (!context.mounted) return false;
     await BaseMembershipRequiredDialog.show(context, userId: userId);
+    return false;
+  }
+
+  /// Creating events and experiences needs a plan too (owner rule
+  /// 2026-10-13): Base or better, same predicate as [canParticipate],
+  /// enforced by the event rules and `createUserExperience`. Editing an
+  /// existing listing is never gated. An unknown profile is let through.
+  static Future<bool> ensureCanCreate({
+    required BuildContext context,
+    required String userId,
+    Profile? profile,
+  }) async {
+    profile ??= await _ownProfile(userId);
+    if (profile == null || canParticipate(profile) || profile.isAdmin) {
+      return true;
+    }
+    if (!context.mounted) return false;
+    final l10n = AppLocalizations.of(context)!;
+    await BaseMembershipRequiredDialog.show(
+      context,
+      userId: userId,
+      title: l10n.createNeedsPlanTitle,
+      body: l10n.createNeedsPlanBody,
+    );
     return false;
   }
 

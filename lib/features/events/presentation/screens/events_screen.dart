@@ -1778,8 +1778,14 @@ class _EventsScreenState extends State<EventsScreen>
     );
   }
 
-  void _showCreateEventDialog(BuildContext context) {
-    Navigator.of(context).push(
+  Future<void> _showCreateEventDialog(BuildContext context) async {
+    // No plan, no event creation (owner rule 2026-10-13; rules enforce it).
+    if (!await BaseMembershipGate.ensureCanCreate(
+        context: context, userId: widget.currentUserId)) {
+      return;
+    }
+    if (!context.mounted) return;
+    await Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => CreateEventScreen(
           currentUserId: widget.currentUserId,
