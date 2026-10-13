@@ -56,13 +56,13 @@ const COIN_PACKAGES: Record<string, CoinPackageDef> = {
 
 // Membership definitions.
 const MEMBERSHIP_PRODUCTS: Record<string, MembershipDef> = {
-  greengo_base_membership: { name: 'Base Membership (1 Year)', priceUsd: 499, priceEur: 499, priceBrl: 2490, durationDays: 365, tier: 'BASE' },
-  '1_month_silver': { name: 'Silver Membership (1 Month)', priceUsd: 999, priceEur: 999, priceBrl: 4990, durationDays: 30, tier: 'SILVER' },
-  '1_month_gold': { name: 'Gold Membership (1 Month)', priceUsd: 1999, priceEur: 1999, priceBrl: 9990, durationDays: 30, tier: 'GOLD' },
-  '1_month_platinum': { name: 'Platinum Membership (1 Month)', priceUsd: 2999, priceEur: 2999, priceBrl: 14990, durationDays: 30, tier: 'PLATINUM' },
-  '1_year_silver': { name: 'Silver Membership (1 Year)', priceUsd: 4899, priceEur: 4899, priceBrl: 24990, durationDays: 365, tier: 'SILVER' },
-  '1_year_gold': { name: 'Gold Membership (1 Year)', priceUsd: 6999, priceEur: 6999, priceBrl: 34990, durationDays: 365, tier: 'GOLD' },
-  '1_year_platinum_membership': { name: 'Platinum Membership (1 Year)', priceUsd: 8999, priceEur: 8999, priceBrl: 44990, durationDays: 365, tier: 'PLATINUM' },
+  greengo_base_membership: { name: 'Base Membership (1 Year)', priceUsd: 999, priceEur: 999, priceBrl: 2990, durationDays: 365, tier: 'BASE' },
+  '1_month_silver': { name: 'Silver Membership (1 Month)', priceUsd: 999, priceEur: 999, priceBrl: 3490, durationDays: 30, tier: 'SILVER' },
+  '1_month_gold': { name: 'Gold Membership (1 Month)', priceUsd: 1999, priceEur: 1999, priceBrl: 5990, durationDays: 30, tier: 'GOLD' },
+  '1_month_platinum': { name: 'Platinum Membership (1 Month)', priceUsd: 2999, priceEur: 2999, priceBrl: 8990, durationDays: 30, tier: 'PLATINUM' },
+  '1_year_silver': { name: 'Silver Membership (1 Year)', priceUsd: 6999, priceEur: 6999, priceBrl: 24990, durationDays: 365, tier: 'SILVER' },
+  '1_year_gold': { name: 'Gold Membership (1 Year)', priceUsd: 11999, priceEur: 11999, priceBrl: 39990, durationDays: 365, tier: 'GOLD' },
+  '1_year_platinum_membership': { name: 'Platinum Membership (1 Year)', priceUsd: 19999, priceEur: 19999, priceBrl: 59990, durationDays: 365, tier: 'PLATINUM' },
 };
 
 // European countries (ISO 3166-1 alpha-2 + a few names) → charged in EUR.

@@ -127,13 +127,30 @@ export const MEMBERSHIP_PRODUCTS: Record<string, PricedProduct & {
   intervalCount: number;
   tier: MembershipTierCode;
 }> = {
-  'greengo_base_membership':      { name: 'Base Membership',     priceUsd: 499,  priceEur: 499,  priceBrl: 2490,  interval: 'year',  intervalCount: 1, tier: 'BASE' },
-  '1_month_silver':               { name: 'Silver (Monthly)',    priceUsd: 999,  priceEur: 999,  priceBrl: 4990,  interval: 'month', intervalCount: 1, tier: 'SILVER' },
-  '1_month_gold':                 { name: 'Gold (Monthly)',      priceUsd: 1999, priceEur: 1999, priceBrl: 9990,  interval: 'month', intervalCount: 1, tier: 'GOLD' },
-  '1_month_platinum':             { name: 'Platinum (Monthly)',  priceUsd: 2999, priceEur: 2999, priceBrl: 14990, interval: 'month', intervalCount: 1, tier: 'PLATINUM' },
-  '1_year_silver':                { name: 'Silver (Yearly)',     priceUsd: 4899, priceEur: 4899, priceBrl: 24990, interval: 'year',  intervalCount: 1, tier: 'SILVER' },
-  '1_year_gold':                  { name: 'Gold (Yearly)',       priceUsd: 6999, priceEur: 6999, priceBrl: 34990, interval: 'year',  intervalCount: 1, tier: 'GOLD' },
-  '1_year_platinum_membership':   { name: 'Platinum (Yearly)',   priceUsd: 8999, priceEur: 8999, priceBrl: 44990, interval: 'year',  intervalCount: 1, tier: 'PLATINUM' },
+  'greengo_base_membership':      { name: 'Base Membership',     priceUsd: 999,   priceEur: 999,   priceBrl: 2990,  interval: 'year',  intervalCount: 1, tier: 'BASE' },
+  '1_month_silver':               { name: 'Silver (Monthly)',    priceUsd: 999,   priceEur: 999,   priceBrl: 3490,  interval: 'month', intervalCount: 1, tier: 'SILVER' },
+  '1_month_gold':                 { name: 'Gold (Monthly)',      priceUsd: 1999,  priceEur: 1999,  priceBrl: 5990,  interval: 'month', intervalCount: 1, tier: 'GOLD' },
+  '1_month_platinum':             { name: 'Platinum (Monthly)',  priceUsd: 2999,  priceEur: 2999,  priceBrl: 8990,  interval: 'month', intervalCount: 1, tier: 'PLATINUM' },
+  '1_year_silver':                { name: 'Silver (Yearly)',     priceUsd: 6999,  priceEur: 6999,  priceBrl: 24990, interval: 'year',  intervalCount: 1, tier: 'SILVER' },
+  '1_year_gold':                  { name: 'Gold (Yearly)',       priceUsd: 11999, priceEur: 11999, priceBrl: 39990, interval: 'year',  intervalCount: 1, tier: 'GOLD' },
+  '1_year_platinum_membership':   { name: 'Platinum (Yearly)',   priceUsd: 19999, priceEur: 19999, priceBrl: 59990, interval: 'year',  intervalCount: 1, tier: 'PLATINUM' },
+};
+
+/**
+ * Superseded list prices (minor units) that existing subscriptions still renew
+ * at. New checkouts always use MEMBERSHIP_PRODUCTS; Stripe keeps each
+ * subscription on the price it was created with, so renewals at these amounts
+ * are legitimate and must keep granting. Add the old price here whenever a
+ * price above changes. (2026-10-12: pricing v2.)
+ */
+export const LEGACY_MEMBERSHIP_PRICES: Record<string, Partial<PricedProduct>[]> = {
+  'greengo_base_membership':    [{ priceUsd: 499,  priceEur: 499,  priceBrl: 2490 }],
+  '1_month_silver':             [{ priceBrl: 4990 }],
+  '1_month_gold':               [{ priceBrl: 9990 }],
+  '1_month_platinum':           [{ priceBrl: 14990 }],
+  '1_year_silver':              [{ priceUsd: 4899, priceEur: 4899 }],
+  '1_year_gold':                [{ priceUsd: 6999, priceEur: 6999, priceBrl: 34990 }],
+  '1_year_platinum_membership': [{ priceUsd: 8999, priceEur: 8999, priceBrl: 44990 }],
 };
 
 /** Upgrade discounts (from tier -> to tier -> fraction), matching Google Play. */
@@ -156,16 +173,23 @@ export function listPriceCents(p: PricedProduct, currency: string | null | undef
   }
 }
 
-/** Every unit amount the checkout can legitimately charge for a membership. */
+/** Every unit amount a membership invoice can legitimately carry: the current
+ * list price, superseded prices existing subscriptions renew at, and the
+ * upgrade-discounted variants of both. */
 export function allowedMembershipAmounts(productId: string, currency: string | null | undefined): number[] {
   const mem = MEMBERSHIP_PRODUCTS[productId];
   if (!mem) return [];
   const list = listPriceCents(mem, currency);
   if (list === null) return [];
-  const out = new Set<number>([list]);
+  const prices = [list];
+  for (const old of LEGACY_MEMBERSHIP_PRICES[productId] ?? []) {
+    const p = listPriceCents({ priceUsd: -1, priceEur: -1, priceBrl: -1, ...old }, currency);
+    if (p !== null && p > 0) prices.push(p);
+  }
+  const out = new Set<number>(prices);
   for (const to of Object.values(UPGRADE_DISCOUNTS)) {
     const d = to[mem.tier];
-    if (d) out.add(Math.round(list * (1 - d)));
+    if (d) for (const p of prices) out.add(Math.round(p * (1 - d)));
   }
   return [...out];
 }

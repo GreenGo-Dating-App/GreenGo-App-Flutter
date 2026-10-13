@@ -1536,7 +1536,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                       Text(
                         // Price with /year + taxes (localized) in place of the
                         // generic "Yearly subscription" label. Region/store price.
-                        '${_priceFor(ProductCatalog.baseMembership, '\$4.99')}${AppLocalizations.of(context)!.shopPerYear}  ${AppLocalizations.of(context)!.plusTaxes}', // i18n-ignore: price + localized parts
+                        '${_priceFor(ProductCatalog.baseMembership, '\$9.99')}${AppLocalizations.of(context)!.shopPerYear}  ${AppLocalizations.of(context)!.plusTaxes}', // i18n-ignore: price + localized parts
                         style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,

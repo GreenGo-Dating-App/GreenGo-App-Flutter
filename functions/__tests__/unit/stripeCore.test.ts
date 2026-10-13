@@ -541,6 +541,19 @@ describe('pure helpers', () => {
     expect(core.allowedMembershipAmounts('nope', 'usd')).toEqual([]);
   });
 
+  test('superseded prices stay valid for renewals; new checkouts use the current price', () => {
+    // Base moved 4.99 -> 9.99 USD and R$24,90 -> R$29,90 (pricing v2).
+    expect(core.allowedMembershipAmounts('greengo_base_membership', 'usd').sort((a: number, b: number) => a - b)).toEqual([499, 999]);
+    expect(core.allowedMembershipAmounts('greengo_base_membership', 'brl').sort((a: number, b: number) => a - b)).toEqual([2490, 2990]);
+    expect(core.listPriceCents(core.MEMBERSHIP_PRODUCTS['greengo_base_membership'], 'usd')).toBe(999);
+    // Legacy prices only exist where the currency changed: Silver monthly USD is unchanged.
+    expect(core.allowedMembershipAmounts('1_month_silver', 'usd')).toEqual([999]);
+    expect(core.allowedMembershipAmounts('1_month_silver', 'brl').sort((a: number, b: number) => a - b)).toEqual([3490, 4990]);
+    // Upgrade discounts apply to legacy prices too (old Platinum yearly 89.99 upgraded from Silver/Gold).
+    expect(core.allowedMembershipAmounts('1_year_platinum_membership', 'usd').sort((a: number, b: number) => a - b))
+      .toEqual([7649, 8099, 8999, 16999, 17999, 19999]);
+  });
+
   test('invoice subscription id is read across API versions', () => {
     expect(core.invoiceSubscriptionId({ subscription: 'sub_a' })).toBe('sub_a');
     expect(core.invoiceSubscriptionId({ parent: { subscription_details: { subscription: 'sub_b' } } })).toBe('sub_b');
