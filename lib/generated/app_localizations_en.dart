@@ -24582,4 +24582,30 @@ class AppLocalizationsEn extends AppLocalizations {
   String freeChatUsedToday(int used, int limit) {
     return 'Free chat $used of $limit today';
   }
+
+  @override
+  String get promoLaunchBadge => '2026 launch price';
+
+  @override
+  String promoFirstYearThen(String price) {
+    return 'First year, then $price/year';
+  }
+
+  @override
+  String promoFirst3MonthsThen(String price) {
+    return 'First 3 months, then $price/month';
+  }
+
+  @override
+  String promoSaveVsMonthly(String percent) {
+    return 'Save $percent% vs monthly';
+  }
+
+  @override
+  String promoGenericStoreOffer(String percent) {
+    return '2026 launch offer: $percent% off your first period for new subscribers. The App Store shows your price at checkout.';
+  }
+
+  @override
+  String get promoUntilNote => 'For new subscribers until 31 December 2026.';
 }

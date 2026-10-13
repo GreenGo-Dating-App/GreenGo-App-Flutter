@@ -24789,6 +24789,33 @@ class AppLocalizationsPt extends AppLocalizations {
   String freeChatUsedToday(int used, int limit) {
     return 'Conversa gratuita $used de $limit hoje';
   }
+
+  @override
+  String get promoLaunchBadge => 'Preço de lançamento 2026';
+
+  @override
+  String promoFirstYearThen(String price) {
+    return 'O primeiro ano, depois $price/ano';
+  }
+
+  @override
+  String promoFirst3MonthsThen(String price) {
+    return 'Os primeiros 3 meses, depois $price/mês';
+  }
+
+  @override
+  String promoSaveVsMonthly(String percent) {
+    return 'Poupa $percent% face ao mensal';
+  }
+
+  @override
+  String promoGenericStoreOffer(String percent) {
+    return 'Oferta de lançamento 2026: $percent% de desconto no primeiro período para novos subscritores. A App Store mostra-te o preço no pagamento.';
+  }
+
+  @override
+  String get promoUntilNote =>
+      'Para novos subscritores até 31 de dezembro de 2026.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -49587,4 +49614,31 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String freeChatUsedToday(int used, int limit) {
     return 'Conversa grátis $used de $limit hoje';
   }
+
+  @override
+  String get promoLaunchBadge => 'Preço de lançamento 2026';
+
+  @override
+  String promoFirstYearThen(String price) {
+    return 'No primeiro ano, depois $price/ano';
+  }
+
+  @override
+  String promoFirst3MonthsThen(String price) {
+    return 'Nos 3 primeiros meses, depois $price/mês';
+  }
+
+  @override
+  String promoSaveVsMonthly(String percent) {
+    return 'Economize $percent% em relação ao mensal';
+  }
+
+  @override
+  String promoGenericStoreOffer(String percent) {
+    return 'Oferta de lançamento 2026: $percent% de desconto no primeiro período para novos assinantes. A App Store mostra o seu preço na hora da compra.';
+  }
+
+  @override
+  String get promoUntilNote =>
+      'Para novos assinantes até 31 de dezembro de 2026.';
 }

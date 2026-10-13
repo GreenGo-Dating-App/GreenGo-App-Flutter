@@ -2,6 +2,7 @@ import 'package:equatable/equatable.dart';
 
 import '../../../../core/services/tier_entitlements.dart';
 import '../../../membership/domain/entities/membership.dart';
+import '../../../../core/constants/launch_promo.dart';
 
 /// Subscription Tier
 /// Point 148: Four-tier system (updated for MVP release) + Test tier
@@ -108,6 +109,22 @@ extension SubscriptionTierExtension on SubscriptionTier {
     final usd = saving(monthlyPrice, yearlyPrice);
     final brl = saving(brlMonthly, brlYearly);
     return (brl > 0 && brl < usd ? brl : usd).floorToDouble();
+  }
+
+  /// Savings of the 2026 LAUNCH yearly price against the REGULAR monthly
+  /// price × 12 (LaunchPromo). Same rule as [yearlySavingsPercent]: the
+  /// smaller of the USD and BRL savings, rounded down, so the badge never
+  /// claims more than anyone saves. 0 when the plan has no launch price.
+  double get yearlyLaunchSavingsPercent {
+    final launch = LaunchPromo.launchPrices[yearlyProductId];
+    if (launch == null || monthlyPrice == 0) return 0;
+    double saving(double monthly, double yearly) =>
+        monthly == 0 ? 0 : (monthly * 12 - yearly) / (monthly * 12) * 100;
+    final (brlMonthly, _) = _brlPrices;
+    final usd = saving(monthlyPrice, launch.$1);
+    final brl = saving(brlMonthly, launch.$2);
+    final s = (brl > 0 && brl < usd ? brl : usd).floorToDouble();
+    return s < 0 ? 0 : s;
   }
 
   /// Monthly product ID (for store lookup)

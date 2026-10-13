@@ -15,6 +15,7 @@ import '../tier_l10n.dart';
 import '../../domain/membership_product_mapping.dart';
 import '../bloc/subscription_bloc.dart';
 import '../web_membership_upgrade.dart';
+import '../../../../core/widgets/launch_promo_price.dart';
 
 /// Membership Selection Screen
 /// One-time purchases for membership periods (1 month or 1 year)
@@ -500,6 +501,14 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
     final tierName = _getTierDisplayName(product.id);
     final color = _getTierColor(product.id);
     final isLocked = _isLowerThanCurrentTier(product.id);
+    // 2026 launch price (store intro offer), null when there is none.
+    final promo = isLocked
+        ? null
+        : ProductCatalog.promoPrice(product,
+            yearly: isYearly || _isBaseProduct(product.id));
+    final launchSavings = isYearly && promo != null && !promo.isGeneric
+        ? _getTierFromProductId(product.id).yearlyLaunchSavingsPercent
+        : 0.0;
 
     return GestureDetector(
       onTap: isLocked ? null : onSelect,
@@ -565,7 +574,9 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                               borderRadius: BorderRadius.circular(10),
                             ),
                             child: Text(
-                              AppLocalizations.of(context)!.membershipSavePercent(_getTierFromProductId(product.id).yearlySavingsPercent.toStringAsFixed(0)),
+                              launchSavings > 0
+                                  ? AppLocalizations.of(context)!.promoSaveVsMonthly(launchSavings.toStringAsFixed(0))
+                                  : AppLocalizations.of(context)!.membershipSavePercent(_getTierFromProductId(product.id).yearlySavingsPercent.toStringAsFixed(0)),
                               style: const TextStyle(
                                 fontSize: 10,
                                 fontWeight: FontWeight.bold,
@@ -603,7 +614,16 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                         color: isLocked ? Colors.red[300] : Colors.white54,
                       ),
                     ),
-                    if (!isLocked && isYearly) ...[
+                    if (promo != null) ...[
+                      const SizedBox(height: 8),
+                      LaunchPromoPrice(
+                        promo: promo,
+                        accent: color,
+                        priceFontSize: 22,
+                        suffix: AppLocalizations.of(context)!.plusTaxes,
+                      ),
+                    ],
+                    if (!isLocked && isYearly && promo == null) ...[
                       const SizedBox(height: 4),
                       Text(
                         '${_getTierFromProductId(product.id).yearlyMonthlyEquivalent.toStringAsFixed(2)}${AppLocalizations.of(context)!.perMonth}', // i18n-ignore: price + localized suffix
@@ -619,7 +639,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  if (!isLocked && isYearly) ...[
+                  if (!isLocked && isYearly && promo == null) ...[
                     Text(
                       '\$${(_getTierFromProductId(product.id).monthlyPrice * 12).toStringAsFixed(2)}',
                       style: const TextStyle(
@@ -630,7 +650,8 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                       ),
                     ),
                   ],
-                  Text(
+                  if (promo == null)
+                    Text(
                     '${_displayPrice(product)}  ${AppLocalizations.of(context)!.plusTaxes}',
                     style: TextStyle(
                       fontSize: 22,

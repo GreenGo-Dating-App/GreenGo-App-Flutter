@@ -7602,5 +7602,11 @@
   "chatTopicLanguageProgress": "Progresso no idioma",
   "freeChatLimitTitle": "Conversas grátis de hoje esgotadas",
   "freeChatLimitBody": "Sem assinatura você pode conversar com {limit} pessoas por dia. Assine a Base para conversar com todo mundo, participar de eventos e reservar experiências.",
-  "freeChatUsedToday": "Conversa grátis {used} de {limit} hoje"
+  "freeChatUsedToday": "Conversa grátis {used} de {limit} hoje",
+  "promoLaunchBadge": "Preço de lançamento 2026",
+  "promoFirstYearThen": "No primeiro ano, depois {price}/ano",
+  "promoFirst3MonthsThen": "Nos 3 primeiros meses, depois {price}/mês",
+  "promoSaveVsMonthly": "Economize {percent}% em relação ao mensal",
+  "promoGenericStoreOffer": "Oferta de lançamento 2026: {percent}% de desconto no primeiro período para novos assinantes. A App Store mostra o seu preço na hora da compra.",
+  "promoUntilNote": "Para novos assinantes até 31 de dezembro de 2026."
 }

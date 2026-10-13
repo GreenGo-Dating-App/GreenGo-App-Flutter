@@ -149,15 +149,17 @@ void main() {
       }
     });
 
-    test('intro + base -> the base plan (no offer id)', () {
-      // Intro offer listed first, so "first returned" would be wrong.
-      final entries = _play([introPhases, [recurring]], baseFirst: false);
+    test('intro + base -> the intro offer (2026 launch price), shown at the '
+        'renewal price too', () {
+      // Base plan listed first, so "first returned" would be wrong.
+      final entries = _play([[recurring], introPhases]);
       final picked = ProductCatalog.pickOffer(entries);
-      expect(offerIdOf(picked), isNull);
-      expect(picked.price, r'R$ 119,99');
+      expect(offerIdOf(picked), isNotNull);
+      expect(picked.price, r'R$ 59,99');
+      expect(ProductCatalog.recurringPriceLabel(picked), r'R$ 119,99');
     });
 
-    test('ambiguous (two offers, no base plan) -> single-phase offer, '
+    test('ambiguous (two offers, no base plan) -> intro offer, '
         'else first', () {
       final entries = GooglePlayProductDetails.fromProductDetails(
           ProductDetailsWrapper(
@@ -175,7 +177,8 @@ void main() {
               offerIdToken: 't1', pricingPhases: [recurring]),
         ],
       ));
-      expect(offerIdOf(ProductCatalog.pickOffer(entries)), 'plain');
+      // The intro-price offer wins (2026 launch offer, owner 2026-10-13).
+      expect(offerIdOf(ProductCatalog.pickOffer(entries)), 'intro');
       expect(ProductCatalog.pickOffer(entries.sublist(0, 1)), entries.first);
     });
 
@@ -211,7 +214,8 @@ void main() {
       ]);
       expect(ProductCatalog.freeTrialPeriod(out[0]), 'P7D');
       expect(ProductCatalog.freeTrialPeriod(out[1]), 'P7D');
-      expect(offerIdOf(out[2]), isNull);
+      // Gold has an intro-price offer: the card buys that offer.
+      expect(ProductCatalog.introPhase(out[2]), isNotNull);
     });
   });
 }

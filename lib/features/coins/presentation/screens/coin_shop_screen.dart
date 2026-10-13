@@ -14,6 +14,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/user_error.dart';
+import '../../../../core/constants/launch_promo.dart';
 import '../../../../core/constants/product_catalog.dart';
 import '../../../../core/cache/last_result_cache.dart';
 import '../../../../core/services/display_prices.dart';
@@ -22,6 +23,7 @@ import '../widgets/web_checkout_dialog.dart';
 import '../widgets/web_billing_panel.dart';
 import '../../../../core/widgets/subscription_legal_footer.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/widgets/launch_promo_price.dart';
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/domain/chat_system_message.dart';
@@ -74,6 +76,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   /// Canonical productId → store-localized price (e.g. "R$ 24,99"). Loaded once
   /// from the store so coin/tier/base prices are never hard-coded.
   Map<String, String> _storePrices = {};
+
+  /// Canonical productId -> 2026 launch price: the store's intro offer on
+  /// mobile, the `promo` of `getDisplayPrices` on the web. Empty when none.
+  Map<String, PromoPrice> _promoPrices = {};
+
+  /// The launch price to show for [canonicalProductId], or null.
+  PromoPrice? _promoFor(String canonicalProductId) =>
+      LaunchPromo.isActive() ? _promoPrices[canonicalProductId] : null;
 
   /// Store price for [canonicalProductId], or [fallback] until loaded.
   String _priceFor(String canonicalProductId, String fallback) =>
@@ -206,6 +216,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   /// skips the billing query and the pricing callable entirely.
   static Map<String, String>? _sessionPrices;
   static Set<String>? _sessionAvailableIds;
+  static Map<String, PromoPrice>? _sessionPromos;
   static const String _pricesCacheKey = 'shop_prices';
 
   /// Load prices for coins + all memberships, keyed by canonical productId.
@@ -218,6 +229,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       setState(() {
         _storePrices = memo;
         _availableProductIds = _sessionAvailableIds;
+        _promoPrices = _sessionPromos ?? const {};
       });
       return;
     }
@@ -240,12 +252,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     if (map.isNotEmpty) {
       _sessionPrices = map;
       _sessionAvailableIds = store.available;
+      _sessionPromos = store.promos;
       unawaited(LastResultCache.saveJson(_pricesCacheKey, map));
     }
     if (mounted) {
       setState(() {
         _storePrices = map;
         _availableProductIds = store.available;
+        _promoPrices = store.promos;
       });
     }
   }
@@ -257,7 +271,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   Future<void> _loadWebDisplayPrices() async {
     final memo = _sessionPrices;
     if (memo != null) {
-      setState(() => _storePrices = memo);
+      setState(() {
+        _storePrices = memo;
+        _promoPrices = _sessionPromos ?? const {};
+      });
       return;
     }
     try {
@@ -267,8 +284,15 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           .call({'userCountry': country});
       final map = parseDisplayPrices(result.data);
       if (map.isEmpty) return;
+      final promos = parseDisplayPromos(result.data);
       _sessionPrices = map;
-      if (mounted) setState(() => _storePrices = map);
+      _sessionPromos = promos;
+      if (mounted) {
+        setState(() {
+          _storePrices = map;
+          _promoPrices = promos;
+        });
+      }
     } catch (e) {
       debugPrint('[CoinShop] web display prices failed: $e');
     }
@@ -291,9 +315,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
   /// Store-localized labels keyed by canonical id, plus the canonical ids the
   /// store actually sells (null when the store could not be asked).
-  Future<({Map<String, String> prices, Set<String>? available})>
-      _queryStorePrices() async {
+  Future<({
+    Map<String, String> prices,
+    Set<String>? available,
+    Map<String, PromoPrice> promos,
+  })> _queryStorePrices() async {
     final map = <String, String>{};
+    final promos = <String, PromoPrice>{};
     Set<String>? available;
     try {
       if (_inAppPurchase != null && await _inAppPurchase!.isAvailable()) {
@@ -315,11 +343,20 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           // Normalize membership store IDs back to canonical; coins are unchanged.
           if (label != null) map[ProductCatalog.canonicalId(pd.id)] = label;
         }
+        // 2026 launch prices: the offer each membership card would buy.
+        for (final pd in ProductCatalog.onePerProduct(resp.productDetails)) {
+          final id = ProductCatalog.canonicalId(pd.id);
+          if (!ProductCatalog.canonicalIds.contains(id)) continue;
+          final info = ProductCatalog.classify(id);
+          final promo = ProductCatalog.promoPrice(pd,
+              yearly: info.isYearly || info.isBase);
+          if (promo != null) promos[id] = promo;
+        }
       }
     } catch (e) {
       debugPrint('[CoinShop] store prices load failed: $e');
     }
-    return (prices: map, available: available);
+    return (prices: map, available: available, promos: promos);
   }
 
   /// Country-resolved display prices from the `getDisplayPrices` callable.
@@ -845,25 +882,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   }
 
   /// Select which Base offer to purchase. On Android a subscription returns one
-  /// [GooglePlayProductDetails] per offer; prefer the free-trial offer (its
-  /// first pricing phase is free) so the 7-day trial is applied, else the first.
-  /// The plugin derives the offer token from the chosen entry. iOS applies the
-  /// introductory offer automatically, so any entry works.
+  /// [GooglePlayProductDetails] per offer; [ProductCatalog.pickOffer] prefers
+  /// the free-trial offer, then the 2026 launch (intro-price) offer, then the
+  /// base plan. The plugin derives the offer token from the chosen entry. iOS
+  /// applies the introductory offer automatically, so any entry works.
   ProductDetails _selectBaseOffer(List<ProductDetails> details) {
     if (!Platform.isAndroid) return details.first;
-    for (final d in details) {
-      if (d is GooglePlayProductDetails) {
-        final offers = d.productDetails.subscriptionOfferDetails;
-        final idx = d.subscriptionIndex;
-        if (offers != null && idx != null && idx < offers.length) {
-          final phases = offers[idx].pricingPhases;
-          if (phases.isNotEmpty && phases.first.priceAmountMicros == 0) {
-            return d;
-          }
-        }
-      }
-    }
-    return details.first;
+    return ProductCatalog.pickOffer(details);
   }
 
   /// Buy a membership subscription with `buyNonConsumable`.
@@ -1281,7 +1306,11 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 child: Text(
-                                  AppLocalizations.of(context)!.shopSavePercent(SubscriptionTier.platinum.yearlySavingsPercent.toStringAsFixed(0)),
+                                  AppLocalizations.of(context)!.shopSavePercent(
+                                      (_promoFor(SubscriptionTier.platinum.yearlyProductId)?.isGeneric == false
+                                              ? SubscriptionTier.platinum.yearlyLaunchSavingsPercent
+                                              : SubscriptionTier.platinum.yearlySavingsPercent)
+                                          .toStringAsFixed(0)),
                                   style: const TextStyle(
                                     fontSize: 9,
                                     fontWeight: FontWeight.bold,
@@ -1376,7 +1405,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         _isYearlySelected ? _selectedTier!.yearlyProductId : _selectedTier!.monthlyProductId;
     final fallbackPrice =
         '\$${(_isYearlySelected ? _selectedTier!.yearlyPrice : _selectedTier!.monthlyPrice).toStringAsFixed(2)}';
-    final storePrice = _priceFor(selectedProductId, fallbackPrice);
+    final selectedPromo = _promoFor(selectedProductId);
+    final storePrice = selectedPromo?.launchLabel ??
+        _priceFor(selectedProductId, fallbackPrice);
 
     return Container(
       padding: const EdgeInsets.all(16),
@@ -1533,6 +1564,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                         ),
                       ),
                       const SizedBox(height: 4),
+                      if (_promoFor(ProductCatalog.baseMembership) != null)
+                        LaunchPromoPrice(
+                          promo: _promoFor(ProductCatalog.baseMembership)!,
+                          accent: AppColors.basePurple,
+                          priceFontSize: 18,
+                          suffix: AppLocalizations.of(context)!.plusTaxes,
+                        )
+                      else
                       Text(
                         // Price with /year + taxes (localized) in place of the
                         // generic "Yearly subscription" label. Region/store price.
@@ -1844,6 +1883,18 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                                   color: tierColor,
                                 ),
                               ),
+                              if (!isLocked &&
+                                  _promoFor(_isYearlySelected ? tier.yearlyProductId : tier.monthlyProductId) != null)
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 4),
+                                  child: LaunchPromoPrice(
+                                    promo: _promoFor(_isYearlySelected ? tier.yearlyProductId : tier.monthlyProductId)!,
+                                    accent: tierColor,
+                                    priceFontSize: 18,
+                                    suffix: AppLocalizations.of(context)!.plusTaxes,
+                                  ),
+                                )
+                              else
                               Row(
                                 children: [
                                   Text(
@@ -2009,8 +2060,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         return;
       }
 
-      // Initiate subscription purchase
-      final productDetails = response.productDetails.first;
+      // Initiate subscription purchase. Play returns one entry per offer:
+      // buy the one the card shows (trial, then 2026 launch offer, then the
+      // base plan), not whichever came first.
+      final productDetails = ProductCatalog.pickOffer(response.productDetails);
       debugPrint('[Subscription] Found product: ${productDetails.id} - ${productDetails.title} - ${productDetails.price}');
 
       // Log upgrade info

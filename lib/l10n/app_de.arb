@@ -7602,5 +7602,11 @@
   "chatTopicLanguageProgress": "Sprachfortschritt",
   "freeChatLimitTitle": "Kostenlose Chats für heute aufgebraucht",
   "freeChatLimitBody": "Ohne Mitgliedschaft kannst du mit {limit} Personen pro Tag chatten. Mit der Basis-Mitgliedschaft chattest du mit allen, nimmst an Events teil und buchst Erlebnisse.",
-  "freeChatUsedToday": "Kostenloser Chat {used} von {limit} heute"
+  "freeChatUsedToday": "Kostenloser Chat {used} von {limit} heute",
+  "promoLaunchBadge": "Startpreis 2026",
+  "promoFirstYearThen": "Erstes Jahr, danach {price}/Jahr",
+  "promoFirst3MonthsThen": "Erste 3 Monate, danach {price}/Monat",
+  "promoSaveVsMonthly": "{percent} % günstiger als monatlich",
+  "promoGenericStoreOffer": "Startangebot 2026: {percent} % Rabatt auf deinen ersten Zeitraum für neue Abonnenten. Der App Store zeigt dir deinen Preis beim Kauf.",
+  "promoUntilNote": "Für neue Abonnenten bis zum 31. Dezember 2026."
 }

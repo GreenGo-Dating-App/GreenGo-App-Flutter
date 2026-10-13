@@ -42146,6 +42146,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Free chat {used} of {limit} today'**
   String freeChatUsedToday(int used, int limit);
+
+  /// No description provided for @promoLaunchBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'2026 launch price'**
+  String get promoLaunchBadge;
+
+  /// No description provided for @promoFirstYearThen.
+  ///
+  /// In en, this message translates to:
+  /// **'First year, then {price}/year'**
+  String promoFirstYearThen(String price);
+
+  /// No description provided for @promoFirst3MonthsThen.
+  ///
+  /// In en, this message translates to:
+  /// **'First 3 months, then {price}/month'**
+  String promoFirst3MonthsThen(String price);
+
+  /// No description provided for @promoSaveVsMonthly.
+  ///
+  /// In en, this message translates to:
+  /// **'Save {percent}% vs monthly'**
+  String promoSaveVsMonthly(String percent);
+
+  /// No description provided for @promoGenericStoreOffer.
+  ///
+  /// In en, this message translates to:
+  /// **'2026 launch offer: {percent}% off your first period for new subscribers. The App Store shows your price at checkout.'**
+  String promoGenericStoreOffer(String percent);
+
+  /// No description provided for @promoUntilNote.
+  ///
+  /// In en, this message translates to:
+  /// **'For new subscribers until 31 December 2026.'**
+  String get promoUntilNote;
 }
 
 class _AppLocalizationsDelegate

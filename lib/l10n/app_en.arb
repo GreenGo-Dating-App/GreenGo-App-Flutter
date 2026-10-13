@@ -13614,5 +13614,15 @@
       "used": {"type": "int"},
       "limit": {"type": "int"}
     }
-  }
+  },
+  "promoLaunchBadge": "2026 launch price",
+  "promoFirstYearThen": "First year, then {price}/year",
+  "@promoFirstYearThen": {"placeholders": {"price": {"type": "String"}}},
+  "promoFirst3MonthsThen": "First 3 months, then {price}/month",
+  "@promoFirst3MonthsThen": {"placeholders": {"price": {"type": "String"}}},
+  "promoSaveVsMonthly": "Save {percent}% vs monthly",
+  "@promoSaveVsMonthly": {"placeholders": {"percent": {"type": "String"}}},
+  "promoGenericStoreOffer": "2026 launch offer: {percent}% off your first period for new subscribers. The App Store shows your price at checkout.",
+  "@promoGenericStoreOffer": {"placeholders": {"percent": {"type": "String"}}},
+  "promoUntilNote": "For new subscribers until 31 December 2026."
 }

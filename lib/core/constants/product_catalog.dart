@@ -5,6 +5,10 @@ import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_android/billing_client_wrappers.dart'
     show SubscriptionOfferDetailsWrapper;
 import 'package:in_app_purchase_android/in_app_purchase_android.dart';
+import 'package:in_app_purchase_storekit/in_app_purchase_storekit.dart'
+    show AppStoreProduct2Details, AppStoreProductDetails;
+
+import 'launch_promo.dart';
 
 /// Membership tier a store product grants (display/grouping only).
 enum MembershipProductTier { base, silver, gold, platinum }
@@ -185,15 +189,21 @@ class ProductCatalog {
   /// Rule, in order:
   ///  1. an offer with a free-trial phase (Play only returns offers the user
   ///     is eligible for; the app ships the 7-day trial copy);
-  ///  2. the base plan (no offer id; else the entry whose only phase is the
+  ///  2. an introductory-discount offer (first phase cheaper than the
+  ///     renewal, e.g. the 2026 launch offer `launch2026`), so buying the
+  ///     card uses that offer's token;
+  ///  3. the base plan (no offer id; else the entry whose only phase is the
   ///     recurring price);
-  ///  3. the first entry the store returned.
+  ///  4. the first entry the store returned.
   /// iOS/web return a single entry per id, which is returned as-is.
   static ProductDetails pickOffer(List<ProductDetails> entries) {
     assert(entries.isNotEmpty, 'pickOffer needs at least one entry');
     if (entries.length == 1) return entries.first;
     for (final e in entries) {
       if (freeTrialPeriod(e) != null) return e;
+    }
+    for (final e in entries) {
+      if (introPhase(e) != null) return e;
     }
     ProductDetails? singlePhase;
     for (final e in entries) {
@@ -257,6 +267,67 @@ class ProductCatalog {
       amount: product.rawPrice,
       currencySymbol: product.currencySymbol,
     );
+  }
+
+  /// The paid introductory phase of a subscription entry: a first phase that
+  /// costs less than the renewal (Android offer phase, or an iOS StoreKit 1
+  /// introductory price). Null for a free trial, a plain base plan, or when
+  /// the store doesn't expose it (iOS StoreKit 2).
+  static ({String label, double amount, int cycles, String billingPeriod})?
+      introPhase(ProductDetails product) {
+    if (product is GooglePlayProductDetails) {
+      final offer = _offerOf(product);
+      if (offer == null || offer.pricingPhases.length < 2) return null;
+      final first = offer.pricingPhases.first;
+      final last = offer.pricingPhases.last;
+      if (first.priceAmountMicros <= 0 ||
+          first.priceAmountMicros >= last.priceAmountMicros) {
+        return null;
+      }
+      return (
+        label: first.formattedPrice,
+        amount: first.priceAmountMicros / 1000000.0,
+        cycles: first.billingCycleCount,
+        billingPeriod: first.billingPeriod,
+      );
+    }
+    if (product is AppStoreProductDetails) {
+      final intro = product.skProduct.introductoryPrice;
+      final amount = double.tryParse(intro?.price ?? '');
+      if (intro == null || amount == null || amount <= 0) return null;
+      if (product.rawPrice > 0 && amount >= product.rawPrice) return null;
+      return (
+        label: '${intro.priceLocale.currencySymbol}${intro.price}',
+        amount: amount,
+        cycles: intro.numberOfPeriods,
+        billingPeriod: '',
+      );
+    }
+    return null;
+  }
+
+  /// The 2026 launch price to show for a store product, or null when there is
+  /// none (promo over, or the store offers this user no intro price). On iOS
+  /// with StoreKit 2 the launch price is not exposed: a generic promo is
+  /// returned while the promo runs (the App Store sheet shows the price).
+  static PromoPrice? promoPrice(ProductDetails product,
+      {required bool yearly, DateTime? now}) {
+    if (!LaunchPromo.isActive(now)) return null;
+    final regular = recurringPrice(product);
+    final intro = introPhase(product);
+    if (intro != null) {
+      return PromoPrice(
+        yearly: yearly,
+        launchLabel: intro.label,
+        launchAmount: intro.amount,
+        regularLabel: regular?.label,
+        regularAmount: regular?.amount,
+      );
+    }
+    if (product is AppStoreProduct2Details) {
+      return PromoPrice.generic(yearly: yearly, regularLabel: regular?.label);
+    }
+    return null;
   }
 
   /// Same rule as the Play plugin: leading/trailing non-digit, non-space run.

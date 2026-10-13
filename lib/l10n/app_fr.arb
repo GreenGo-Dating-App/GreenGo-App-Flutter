@@ -7028,5 +7028,11 @@
   "chatTopicLanguageProgress": "Progrès en langue",
   "freeChatLimitTitle": "Discussions gratuites du jour épuisées",
   "freeChatLimitBody": "Sans abonnement, tu peux discuter avec {limit} personnes par jour. Prends l'abonnement de base pour discuter avec tout le monde, participer à des événements et réserver des expériences.",
-  "freeChatUsedToday": "Discussion gratuite {used} sur {limit} aujourd'hui"
+  "freeChatUsedToday": "Discussion gratuite {used} sur {limit} aujourd'hui",
+  "promoLaunchBadge": "Prix de lancement 2026",
+  "promoFirstYearThen": "La première année, puis {price}/an",
+  "promoFirst3MonthsThen": "Les 3 premiers mois, puis {price}/mois",
+  "promoSaveVsMonthly": "Économise {percent} % par rapport au mensuel",
+  "promoGenericStoreOffer": "Offre de lancement 2026 : {percent} % de réduction sur ta première période pour les nouveaux abonnés. L'App Store affiche ton prix au moment du paiement.",
+  "promoUntilNote": "Pour les nouveaux abonnés jusqu'au 31 décembre 2026."
 }

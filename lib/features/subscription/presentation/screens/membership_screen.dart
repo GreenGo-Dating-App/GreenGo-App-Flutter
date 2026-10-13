@@ -6,6 +6,7 @@ import 'package:in_app_purchase/in_app_purchase.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/product_catalog.dart';
+import '../../../../core/widgets/launch_promo_price.dart';
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../../../core/widgets/subscription_legal_footer.dart';
 import '../../../../generated/app_localizations.dart';
@@ -347,6 +348,13 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
     final isBase = info.isBase;
     final isYearly = info.isYearly && !isBase;
     final tierColor = _getTierColor(product.id);
+    // 2026 launch price (store intro offer), null when there is none.
+    final promo = isLocked
+        ? null
+        : ProductCatalog.promoPrice(product, yearly: info.isYearly || isBase);
+    final launchSavings = isYearly && promo != null && !promo.isGeneric
+        ? _getTierFromProductId(product.id).yearlyLaunchSavingsPercent
+        : 0.0;
 
     final l10n = AppLocalizations.of(context)!;
     final String tierName;
@@ -434,7 +442,9 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Text(
-                      l10n.membershipSavePercent(_getTierFromProductId(product.id).yearlySavingsPercent.toStringAsFixed(0)),
+                      launchSavings > 0
+                          ? l10n.promoSaveVsMonthly(launchSavings.toStringAsFixed(0))
+                          : l10n.membershipSavePercent(_getTierFromProductId(product.id).yearlySavingsPercent.toStringAsFixed(0)),
                       style: const TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.bold,
@@ -445,7 +455,14 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
               ],
             ),
             const SizedBox(height: 16),
-            if (isBase)
+            if (promo != null)
+              LaunchPromoPrice(
+                promo: promo,
+                accent: tierColor,
+                priceFontSize: isBase ? 26 : 24,
+                suffix: l10n.plusTaxes,
+              )
+            else if (isBase)
               // Highlighted price for the entry-level Base membership.
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
@@ -495,7 +512,9 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
               ),
             ],
             const SizedBox(height: 8),
-            if (isYearly && _calculateMonthlyPrice(product) != null)
+            if (isYearly &&
+                (promo == null || promo.isGeneric) &&
+                _calculateMonthlyPrice(product) != null)
               Text(
                 l10n.membershipEquivalentMonthly(_calculateMonthlyPrice(product)!),
                 style: const TextStyle(

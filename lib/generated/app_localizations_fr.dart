@@ -24957,4 +24957,31 @@ class AppLocalizationsFr extends AppLocalizations {
   String freeChatUsedToday(int used, int limit) {
     return 'Discussion gratuite $used sur $limit aujourd\'hui';
   }
+
+  @override
+  String get promoLaunchBadge => 'Prix de lancement 2026';
+
+  @override
+  String promoFirstYearThen(String price) {
+    return 'La première année, puis $price/an';
+  }
+
+  @override
+  String promoFirst3MonthsThen(String price) {
+    return 'Les 3 premiers mois, puis $price/mois';
+  }
+
+  @override
+  String promoSaveVsMonthly(String percent) {
+    return 'Économise $percent % par rapport au mensuel';
+  }
+
+  @override
+  String promoGenericStoreOffer(String percent) {
+    return 'Offre de lancement 2026 : $percent % de réduction sur ta première période pour les nouveaux abonnés. L\'App Store affiche ton prix au moment du paiement.';
+  }
+
+  @override
+  String get promoUntilNote =>
+      'Pour les nouveaux abonnés jusqu\'au 31 décembre 2026.';
 }

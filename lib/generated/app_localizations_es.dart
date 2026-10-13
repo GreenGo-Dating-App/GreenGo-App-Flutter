@@ -24815,4 +24815,31 @@ class AppLocalizationsEs extends AppLocalizations {
   String freeChatUsedToday(int used, int limit) {
     return 'Chat gratis $used de $limit hoy';
   }
+
+  @override
+  String get promoLaunchBadge => 'Precio de lanzamiento 2026';
+
+  @override
+  String promoFirstYearThen(String price) {
+    return 'El primer año, luego $price/año';
+  }
+
+  @override
+  String promoFirst3MonthsThen(String price) {
+    return 'Los primeros 3 meses, luego $price/mes';
+  }
+
+  @override
+  String promoSaveVsMonthly(String percent) {
+    return 'Ahorra un $percent % frente al plan mensual';
+  }
+
+  @override
+  String promoGenericStoreOffer(String percent) {
+    return 'Oferta de lanzamiento 2026: $percent % de descuento en tu primer período para nuevos suscriptores. La App Store te muestra el precio al pagar.';
+  }
+
+  @override
+  String get promoUntilNote =>
+      'Para nuevos suscriptores hasta el 31 de diciembre de 2026.';
 }
