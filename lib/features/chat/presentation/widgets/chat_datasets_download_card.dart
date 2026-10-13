@@ -15,7 +15,8 @@ import '../../../../generated/app_localizations.dart';
 class ChatDatasetsFirstRun {
   ChatDatasetsFirstRun._();
 
-  static const String doneKey = 'chat_datasets_first_download_done';
+  // v2: 4.9.7+218 shows the centred window (with %) once to everyone.
+  static const String doneKey = 'chat_datasets_first_download_done_v2';
   static bool _running = false;
 
   static Future<void> maybeStart(BuildContext context, {ChatDatasets? datasets}) async {
