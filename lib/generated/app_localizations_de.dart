@@ -2689,7 +2689,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get chatYouSharedAlbum => 'Du hast dein privates Album geteilt';
 
   @override
-  String get chatYourLanguage => 'Deine Sprache';
+  String get chatYourLanguage => 'Chat-Sprache';
 
   @override
   String get checkBackLater =>

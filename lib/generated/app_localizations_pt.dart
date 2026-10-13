@@ -2672,7 +2672,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get chatYouSharedAlbum => 'Partilhaste o teu álbum privado';
 
   @override
-  String get chatYourLanguage => 'O seu idioma';
+  String get chatYourLanguage => 'Idioma do chat';
 
   @override
   String get checkBackLater =>
@@ -27445,7 +27445,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get chatYouSharedAlbum => 'Você compartilhou seu álbum privado';
 
   @override
-  String get chatYourLanguage => 'Seu idioma';
+  String get chatYourLanguage => 'Idioma do chat';
 
   @override
   String get checkBackLater =>

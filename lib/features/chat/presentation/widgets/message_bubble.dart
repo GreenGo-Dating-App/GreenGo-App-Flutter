@@ -45,7 +45,7 @@ class MessageBubble extends StatefulWidget {
     this.currentUserId,
     this.otherUserLanguage,
     this.showOriginalText = true,
-    this.showDifficultyBadge = true,
+    this.showDifficultyBadge = false,
     this.showCulturalTips = true,
     this.showPronunciation = true,
     this.showLanguageFlags = true,

@@ -186,7 +186,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   // Chat learning settings (user-customizable)
   bool _showOriginalText = true;       // Show original text below translation
-  bool _showDifficultyBadge = true;    // Show CEFR level badge on messages
+  bool _showDifficultyBadge = false;   // Show CEFR level badge on messages (off by default)
   bool _showGrammarCheck = true;       // Check grammar before sending
   bool _showCulturalTips = true;       // Show cultural context tooltips
   bool _showIcebreakers = true;        // Ice-breakers icon (+ empty-chat ideas)
@@ -378,7 +378,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
     setState(() {
       _showOriginalText = prefs.getBool('${p}showOriginalText') ?? true;
-      _showDifficultyBadge = prefs.getBool('${p}showDifficultyBadge') ?? true;
+      _showDifficultyBadge = prefs.getBool('${p}showDifficultyBadge') ?? false;
       _showGrammarCheck = prefs.getBool('${p}showGrammarCheck') ?? true;
       _showCulturalTips = prefs.getBool('${p}showCulturalTips') ?? true;
       _showIcebreakers = prefs.getBool('${p}showIcebreakers') ?? true;

@@ -2682,7 +2682,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get chatYouSharedAlbum => 'Hai condiviso il tuo album privato';
 
   @override
-  String get chatYourLanguage => 'La tua lingua';
+  String get chatYourLanguage => 'Lingua della chat';
 
   @override
   String get checkBackLater =>

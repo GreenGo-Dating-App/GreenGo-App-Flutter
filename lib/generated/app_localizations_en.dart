@@ -2646,7 +2646,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get chatYouSharedAlbum => 'You shared your private album';
 
   @override
-  String get chatYourLanguage => 'Your Language';
+  String get chatYourLanguage => 'Chat Language';
 
   @override
   String get checkBackLater =>

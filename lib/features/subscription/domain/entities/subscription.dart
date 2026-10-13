@@ -81,11 +81,33 @@ extension SubscriptionTierExtension on SubscriptionTier {
     return yearlyPrice / 12;
   }
 
-  /// Savings percentage when buying yearly vs monthly
+  /// Brazilian store prices (BRL). Brazil is priced separately from USD, so
+  /// the yearly discount differs by currency.
+  (double monthly, double yearly) get _brlPrices {
+    switch (this) {
+      case SubscriptionTier.silver:
+        return (34.90, 249.90);
+      case SubscriptionTier.gold:
+        return (59.90, 399.90);
+      case SubscriptionTier.platinum:
+        return (89.90, 599.90);
+      case SubscriptionTier.basic:
+      case SubscriptionTier.test:
+        return (0, 0);
+    }
+  }
+
+  /// Savings percentage when buying yearly vs monthly, as a whole number.
+  /// The badge doesn't know which currency the store will charge, so it shows
+  /// the SMALLER of the USD and BRL savings, rounded down: the claim is never
+  /// higher than what any user actually saves.
   double get yearlySavingsPercent {
-    if (monthlyPrice == 0) return 0;
-    final monthlyTotal = monthlyPrice * 12;
-    return ((monthlyTotal - yearlyPrice) / monthlyTotal) * 100;
+    double saving(double monthly, double yearly) =>
+        monthly == 0 ? 0 : (monthly * 12 - yearly) / (monthly * 12) * 100;
+    final (brlMonthly, brlYearly) = _brlPrices;
+    final usd = saving(monthlyPrice, yearlyPrice);
+    final brl = saving(brlMonthly, brlYearly);
+    return (brl > 0 && brl < usd ? brl : usd).floorToDouble();
   }
 
   /// Monthly product ID (for store lookup)

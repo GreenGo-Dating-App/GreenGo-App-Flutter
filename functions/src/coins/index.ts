@@ -29,9 +29,9 @@ export { sendGift, acceptGift } from './gifts';
 // Coin packages (legacy key → coins), kept for the scheduled/reward paths.
 const COIN_PACKAGES = {
   starter: { coins: 100, price: 0.99 },
-  popular: { coins: 500, price: 4.99 },
-  value: { coins: 1000, price: 8.99 },
-  premium: { coins: 5000, price: 39.99 },
+  popular: { coins: 500, price: 3.99 },
+  value: { coins: 1000, price: 6.99 },
+  premium: { coins: 5000, price: 29.99 },
 };
 
 /**

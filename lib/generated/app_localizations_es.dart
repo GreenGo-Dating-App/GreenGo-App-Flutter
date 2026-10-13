@@ -2691,7 +2691,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get chatYouSharedAlbum => 'Compartiste tu álbum privado';
 
   @override
-  String get chatYourLanguage => 'Tu idioma';
+  String get chatYourLanguage => 'Idioma del chat';
 
   @override
   String get checkBackLater =>

@@ -4796,7 +4796,7 @@ abstract class AppLocalizations {
   /// No description provided for @chatYourLanguage.
   ///
   /// In en, this message translates to:
-  /// **'Your Language'**
+  /// **'Chat Language'**
   String get chatYourLanguage;
 
   /// No description provided for @checkBackLater.
