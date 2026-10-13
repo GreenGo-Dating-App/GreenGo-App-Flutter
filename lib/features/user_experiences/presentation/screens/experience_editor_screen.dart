@@ -23,6 +23,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../events/data/services/event_geocoder.dart';
 import '../../../../core/services/place_search_service.dart';
 import '../../../../core/widgets/location_picker.dart';
+import '../../../../core/widgets/location_pick_card.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
 import '../../../experience_bookings/presentation/screens/experience_slots_screen.dart';
 import '../../domain/entities/user_experience.dart';
@@ -1107,16 +1108,9 @@ class _EditorFormState extends State<_EditorForm> {
                           hint: l.uexpLocationHint,
                           error: _err([ExperienceFieldError.locationRequired])),
                     ),
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: TextButton.icon(
-                        onPressed: _pickOnMap,
-                        icon: const Icon(Icons.map_outlined,
-                            color: AppColors.richGold),
-                        label: Text(l.uexpPickOnMap,
-                            style: const TextStyle(color: AppColors.richGold)),
-                      ),
-                    ),
+                    // The map picker: preview with the pin, tap to choose / change.
+                    LocationPickCard(lat: _lat, lng: _lng, onPick: _pickOnMap),
+                    const SizedBox(height: 14),
                     TextField(
                       controller: _meetingPoint,
                       maxLength: ExperienceLimits.shortTextMax,

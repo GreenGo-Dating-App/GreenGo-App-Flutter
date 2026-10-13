@@ -69,6 +69,7 @@ import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
 import '../../../../core/services/place_search_service.dart';
 import '../../../../core/widgets/location_picker.dart';
+import '../../../../core/widgets/location_pick_card.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../data/repositories/events_repository_impl.dart';
@@ -4389,6 +4390,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                   ? AppLocalizations.of(context)!.eventsRequired
                   : null,
             ),
+            const SizedBox(height: 12),
+            // The map picker: preview with the pin, tap to choose / change.
+            LocationPickCard(lat: _lat, lng: _lng, onPick: _pickLocation),
             const SizedBox(height: 16),
             ListTile(
               contentPadding: EdgeInsets.zero,

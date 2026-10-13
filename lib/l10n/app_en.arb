@@ -13496,6 +13496,8 @@
   "chatTripEmpty": "No places yet. Cities, countries and attractions you name in this chat appear here.",
   "chatTripNoMap": "None of these places has a map position yet.",
   "chatTripShare": "Share list",
+  "locPickCardChoose": "Choose on the map",
+  "locPickCardChange": "Change on the map",
   "chatTtsUnavailable": "Audio isn't available right now. Please try again.",
   "chatSendAttraction": "Send in the chat",
   "chatAttractionSent": "Sent in the chat",

@@ -41547,6 +41547,18 @@ abstract class AppLocalizations {
   /// **'Share list'**
   String get chatTripShare;
 
+  /// No description provided for @locPickCardChoose.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose on the map'**
+  String get locPickCardChoose;
+
+  /// No description provided for @locPickCardChange.
+  ///
+  /// In en, this message translates to:
+  /// **'Change on the map'**
+  String get locPickCardChange;
+
   /// No description provided for @chatTtsUnavailable.
   ///
   /// In en, this message translates to:

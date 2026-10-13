@@ -7503,6 +7503,8 @@
   "chatTripEmpty": "Ancora nessun luogo. Città, paesi e attrazioni nominati in questa chat compaiono qui.",
   "chatTripNoMap": "Nessuno di questi luoghi ha ancora una posizione sulla mappa.",
   "chatTripShare": "Condividi elenco",
+  "locPickCardChoose": "Scegli sulla mappa",
+  "locPickCardChange": "Cambia sulla mappa",
   "chatTtsUnavailable": "L'audio non è disponibile al momento. Riprova.",
   "chatSendAttraction": "Invia nella chat",
   "chatAttractionSent": "Inviato nella chat",

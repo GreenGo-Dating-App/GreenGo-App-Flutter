@@ -24274,6 +24274,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get chatTripShare => 'Share list';
 
   @override
+  String get locPickCardChoose => 'Choose on the map';
+
+  @override
+  String get locPickCardChange => 'Change on the map';
+
+  @override
   String get chatTtsUnavailable =>
       'Audio isn\'t available right now. Please try again.';
 

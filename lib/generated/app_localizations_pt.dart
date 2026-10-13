@@ -24480,6 +24480,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get chatTripShare => 'Partilhar lista';
 
   @override
+  String get locPickCardChoose => 'Escolher no mapa';
+
+  @override
+  String get locPickCardChange => 'Alterar no mapa';
+
+  @override
   String get chatTtsUnavailable =>
       'O áudio não está disponível agora. Tenta novamente.';
 
@@ -49252,6 +49258,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get chatTripShare => 'Compartilhar lista';
+
+  @override
+  String get locPickCardChoose => 'Escolher no mapa';
+
+  @override
+  String get locPickCardChange => 'Alterar no mapa';
 
   @override
   String get chatTtsUnavailable =>
