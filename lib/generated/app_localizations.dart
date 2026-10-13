@@ -104,7 +104,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('it'),
     Locale('pt'),
-    Locale('pt', 'BR')
+    Locale('pt', 'BR'),
   ];
 
   /// No description provided for @culturalPassportTitle.
@@ -11380,7 +11380,10 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{tierName} membership active until {formattedDate}{coinsText}'**
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText);
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  );
 
   /// No description provided for @membershipActivatedTitle.
   ///
@@ -28373,14 +28376,22 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Renews automatically on {date}.'**
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date);
+    String plan,
+    String price,
+    String interval,
+    String date,
+  );
 
   /// Web (Stripe) subscription cancelled at period end
   ///
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Cancelled; access ends on {date}.'**
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date);
+    String plan,
+    String price,
+    String interval,
+    String date,
+  );
 
   /// No description provided for @billingIntervalMonth.
   ///
@@ -38485,7 +38496,11 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reason: {reason}\nReported message: \"{message}\"\nReported user: {user}\nReported at: {date}'**
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date);
+    String reason,
+    String message,
+    String user,
+    String date,
+  );
 
   /// No description provided for @supportChatWithGreenGoSubject.
   ///
@@ -39374,6 +39389,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You can also find your tickets in the GreenGo app. Do not share these QR codes.'**
   String get emailTicketFooter;
+
+  /// No description provided for @srvBookingRequestSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Booking request sent'**
+  String get srvBookingRequestSent;
+
+  /// No description provided for @emailBookingGuestLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Guest'**
+  String get emailBookingGuestLabel;
+
+  /// No description provided for @emailBookingRespondByLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Respond by'**
+  String get emailBookingRespondByLabel;
+
+  /// No description provided for @emailBookingRequestHostSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'New booking request: {title}'**
+  String emailBookingRequestHostSubject(String title);
+
+  /// No description provided for @emailBookingRequestHostIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} would like to book your experience.'**
+  String emailBookingRequestHostIntro(String name);
+
+  /// No description provided for @emailBookingRequestHostAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Open GreenGo to accept or decline this request before it expires.'**
+  String get emailBookingRequestHostAction;
+
+  /// No description provided for @emailBookingRequestGuestSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Booking request sent: {title}'**
+  String emailBookingRequestGuestSubject(String title);
+
+  /// No description provided for @emailBookingRequestGuestIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Your booking request has been sent to the host.'**
+  String get emailBookingRequestGuestIntro;
+
+  /// No description provided for @emailBookingRequestGuestNext.
+  ///
+  /// In en, this message translates to:
+  /// **'What happens next: the host accepts or declines your request, and we will let you know as soon as they respond. If the host does not respond in time, the request expires automatically.'**
+  String get emailBookingRequestGuestNext;
+
+  /// No description provided for @emailBookingConfirmedSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Booking confirmed: {title}'**
+  String emailBookingConfirmedSubject(String title);
+
+  /// No description provided for @emailBookingConfirmedHostIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} has a confirmed booking for your experience.'**
+  String emailBookingConfirmedHostIntro(String name);
+
+  /// No description provided for @emailBookingConfirmedGuestIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Your booking is confirmed.'**
+  String get emailBookingConfirmedGuestIntro;
+
+  /// No description provided for @emailBookingFooter.
+  ///
+  /// In en, this message translates to:
+  /// **'You can find this booking and all its details in the GreenGo app.'**
+  String get emailBookingFooter;
 
   /// No description provided for @emailParticipantsSubject.
   ///
@@ -42224,7 +42317,7 @@ class _AppLocalizationsDelegate
         'es',
         'fr',
         'it',
-        'pt'
+        'pt',
       ].contains(locale.languageCode);
 
   @override
@@ -42261,8 +42354,9 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-      'an issue with the localizations generation tool. Please file an issue '
-      'on GitHub with a reproducible sample app and the gen-l10n configuration '
-      'that was used.');
+    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+    'an issue with the localizations generation tool. Please file an issue '
+    'on GitHub with a reproducible sample app and the gen-l10n configuration '
+    'that was used.',
+  );
 }

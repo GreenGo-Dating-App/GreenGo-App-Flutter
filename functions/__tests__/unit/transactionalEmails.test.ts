@@ -12,9 +12,12 @@ import {
   buildParticipantsCsv, canReceiveList, csvCell, dueWindow, LEAD_MS, participantsDispatchKey, safeFileName,
 } from '../../src/emails/participantsList';
 import {
-  becamePaid, bookingQrReady, buildTicketEmail, orderBookingCode, placeOf, ticketTypeSummary,
+  becamePaid, bookingEmailKey, bookingEmailKinds, bookingPayHint, bookingQrReady, buildBookingEmail, buildTicketEmail,
+  handleBookingWrite, orderBookingCode, placeOf, ticketTypeSummary,
 } from '../../src/emails/ticketEmails';
 import { emailDeps, escapeHtml, sendEmail } from '../../src/emails/sendEmail';
+import * as sendEmailModule from '../../src/emails/sendEmail';
+import { ARB_CATALOG } from '../../src/shared/i18n/catalog.generated';
 import { encodeQr, qrPng } from '../../src/emails/qrPng';
 import { formatWhen, hostTimeZone, joinPlace } from '../../src/emails/emailFormat';
 import { idAutoVerifyEnabled } from '../../src/safety/ageAssurance';
@@ -174,6 +177,138 @@ describe('ticket email', () => {
     expect(msg.attachments![0]).toMatchObject({ contentId: 'ticket-qr-1', contentType: 'image/png', filename: 'ticket-1.png' });
     expect(msg.attachments![0].content.subarray(0, 8).toString('hex')).toBe('89504e470d0a1a0a');
     expect(msg.html + msg.text).not.toContain('SIGNATURE_ONE');
+  });
+});
+
+describe('booking request / confirmation emails (host + guest)', () => {
+  const link = { mode: 'link', hostConfirmedPaidAt: null };
+  const reqd = { status: 'requested', payment: link };
+
+  test('which emails each booking write sends', () => {
+    // Created as a request: host (to act) + guest (receipt).
+    expect(bookingEmailKinds(undefined, reqd)).toEqual(['request_host', 'request_guest']);
+    // Later writes of the same request (guest marks paid, etc.) send nothing new.
+    expect(bookingEmailKinds(reqd, { ...reqd, payment: { ...link, guestMarkedPaidAt: 1 } })).toEqual([]);
+    // Accepted, free / cash: host email; the guest gets the QR ticket email.
+    expect(bookingEmailKinds({ status: 'requested', payment: { mode: 'free' } }, { status: 'confirmed', payment: { mode: 'free' } }))
+      .toEqual(['confirmed_host']);
+    expect(bookingEmailKinds({ status: 'requested', payment: { mode: 'cash' } }, { status: 'confirmed', payment: { mode: 'cash' } }))
+      .toEqual(['confirmed_host']);
+    // Accepted, link not yet confirmed paid / online still to pay: no QR or
+    // order email yet, so the guest gets a plain confirmation.
+    expect(bookingEmailKinds(reqd, { status: 'confirmed', payment: link })).toEqual(['confirmed_host', 'confirmed_guest']);
+    expect(bookingEmailKinds(
+      { status: 'requested', payment: { mode: 'online', status: 'unpaid' } },
+      { status: 'confirmed', payment: { mode: 'online', status: 'unpaid' } },
+    )).toEqual(['confirmed_host', 'confirmed_guest']);
+    // Created confirmed and already paid online: the order email covers the guest.
+    expect(bookingEmailKinds(undefined, { status: 'confirmed', payment: { mode: 'online', status: 'paid' } }))
+      .toEqual(['confirmed_host']);
+    // No repeat on later confirmed writes; nothing for declines / deletes.
+    expect(bookingEmailKinds({ status: 'confirmed', payment: link }, { status: 'confirmed', payment: { ...link, hostConfirmedPaidAt: 1 } }))
+      .toEqual([]);
+    expect(bookingEmailKinds(reqd, { status: 'declined', payment: link })).toEqual([]);
+    expect(bookingEmailKinds(reqd, undefined)).toEqual([]);
+    expect(bookingEmailKey('request_host', 'bk1')).toBe('booking_request_host_bk1');
+  });
+
+  const base = {
+    locale: 'en', to: 'x@example.com', title: '<i>Pasta</i> & wine', when: 'Sat 19:30 (Europe/Rome)',
+    where: 'Piazza Navona', partySize: 3, guestName: '<script>Ana</script>', respondBy: 'Fri 19:30 (Europe/Rome)', payHint: null,
+  };
+
+  test('host request email: guest, party size, host-zone time, respond-by, accept/decline line; user content escaped', () => {
+    const m = buildBookingEmail({ ...base, kind: 'request_host' });
+    expect(m.subject).toBe('New booking request: <i>Pasta</i> & wine');
+    expect(m.html).toContain('&lt;i&gt;Pasta&lt;/i&gt; &amp; wine');
+    expect(m.html).toContain('&lt;script&gt;Ana&lt;/script&gt; would like to book your experience.');
+    expect(m.html).not.toContain('<script>');
+    expect(m.html).toContain('Sat 19:30 (Europe/Rome)');
+    expect(m.html).toContain('Respond by');
+    expect(m.html).toContain('Fri 19:30 (Europe/Rome)');
+    expect(m.html).toContain('Party size');
+    expect(m.text).toContain('Guest: <script>Ana</script>');
+    expect(m.text).toContain('Open GreenGo to accept or decline this request before it expires.');
+    expect(m.to).toEqual(['x@example.com']);
+  });
+
+  test('guest request email: what happens next, no guest / respond-by rows', () => {
+    const m = buildBookingEmail({ ...base, kind: 'request_guest', locale: 'de' });
+    expect(m.subject).toBe('Buchungsanfrage gesendet: <i>Pasta</i> & wine');
+    expect(m.text).toContain('Deine Buchungsanfrage wurde an den Gastgeber gesendet.');
+    expect(m.text).toContain('So geht es weiter');
+    expect(m.text).not.toContain('Gast:');
+    expect(m.text).not.toContain('Antworten bis');
+  });
+
+  test('confirmation emails: host gets the guest name, guest gets the pay hint; missing name falls back', () => {
+    const host = buildBookingEmail({ ...base, kind: 'confirmed_host', locale: 'it', guestName: null });
+    expect(host.subject).toBe('Prenotazione confermata: <i>Pasta</i> & wine');
+    expect(host.text).toContain('Qualcuno ha una prenotazione confermata per la tua esperienza.');
+    expect(host.text).toContain('Ospite: Qualcuno');
+    expect(host.text).not.toContain('Rispondi entro');
+    const hint = bookingPayHint('pt_BR', { payment: { mode: 'link' } }, 'Pasta');
+    expect(hint).toBe('Pasta — pague o anfitrião pelo link de pagamento dele.');
+    expect(bookingPayHint('en', { payment: { mode: 'free' } }, 'Pasta')).toBeNull();
+    const guest = buildBookingEmail({ ...base, kind: 'confirmed_guest', locale: 'pt_BR', payHint: hint });
+    expect(guest.subject).toBe('Reserva confirmada: <i>Pasta</i> & wine');
+    expect(guest.text).toContain('Sua reserva está confirmada.');
+    expect(guest.text).toContain(hint!);
+    expect(guest.text).not.toContain('Convidado:');
+    expect(guest.attachments).toBeUndefined();
+  });
+
+  test('every new email string exists in all 7 locales', () => {
+    const keys = [
+      'srvBookingRequestSent', 'emailBookingGuestLabel', 'emailBookingRespondByLabel',
+      'emailBookingRequestHostSubject', 'emailBookingRequestHostIntro', 'emailBookingRequestHostAction',
+      'emailBookingRequestGuestSubject', 'emailBookingRequestGuestIntro', 'emailBookingRequestGuestNext',
+      'emailBookingConfirmedSubject', 'emailBookingConfirmedHostIntro', 'emailBookingConfirmedGuestIntro',
+      'emailBookingFooter',
+    ];
+    for (const loc of ['en', 'de', 'es', 'fr', 'it', 'pt', 'pt_BR'] as const) {
+      for (const k of keys) {
+        const v = (ARB_CATALOG[loc] as Record<string, string>)[k];
+        expect(typeof v === 'string' && v.trim().length > 0).toBe(true);
+      }
+    }
+  });
+
+  describe('handleBookingWrite dispatch (one claim per email, right recipients)', () => {
+    let calls: Array<{ key: string; meta: any }>;
+    beforeEach(() => {
+      calls = [];
+      jest.spyOn(sendEmailModule, 'sendEmailOnce').mockImplementation(async (key: string, _b: any, meta: any = {}) => {
+        calls.push({ key, meta });
+        return { sent: true };
+      });
+    });
+    afterEach(() => jest.restoreAllMocks());
+
+    test('new request -> host + guest emails, no QR', async () => {
+      const r = await handleBookingWrite('bk1', undefined, { ...reqd, hostId: 'H', guestId: 'G' });
+      expect(calls.map((c) => c.key).sort()).toEqual(['booking_request_guest_bk1', 'booking_request_host_bk1']);
+      expect(r).toBe('qr:skipped,request_host:sent,request_guest:sent');
+    });
+
+    test('accepted free booking -> QR to the guest + confirmation to the host', async () => {
+      await handleBookingWrite(
+        'bk2',
+        { status: 'requested', payment: { mode: 'free' }, hostId: 'H', guestId: 'G' },
+        { status: 'confirmed', payment: { mode: 'free' }, hostId: 'H', guestId: 'G' },
+      );
+      expect(calls.map((c) => c.key).sort()).toEqual(['booking_confirmed_host_bk2', 'booking_qr_bk2']);
+    });
+
+    test('one failing email does not stop the others', async () => {
+      (sendEmailModule.sendEmailOnce as jest.Mock).mockImplementation(async (key: string) => {
+        calls.push({ key, meta: {} });
+        if (key.includes('request_host')) throw new Error('boom');
+        return { sent: true };
+      });
+      const r = await handleBookingWrite('bk3', undefined, { ...reqd, hostId: 'H', guestId: 'G' });
+      expect(r).toBe('qr:skipped,request_host:error,request_guest:sent');
+    });
   });
 });
 

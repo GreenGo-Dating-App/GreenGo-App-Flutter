@@ -6380,7 +6380,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return '$tierName-Mitgliedschaft aktiv bis $formattedDate$coinsText';
   }
 
@@ -16333,13 +16336,21 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price pro $interval. Verlängert sich automatisch am $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price pro $interval. Gekündigt; Zugang endet am $date.';
   }
 
@@ -19982,7 +19993,9 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-      String name, String rewards) {
+    String name,
+    String rewards,
+  ) {
     return 'Belohnungen für $name abgeholt! $rewards';
   }
 
@@ -20448,7 +20461,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String profileTravelerActiveSubtitle(
-      String location, int hours, int minutes) {
+    String location,
+    int hours,
+    int minutes,
+  ) {
     return '$location - noch $hours Std. $minutes Min.';
   }
 
@@ -22402,7 +22418,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date) {
+    String reason,
+    String message,
+    String user,
+    String date,
+  ) {
     return 'Grund: $reason\nGemeldete Nachricht: „$message“\nGemeldeter Nutzer: $user\nGemeldet am: $date';
   }
 
@@ -22744,50 +22764,41 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Erste Verbindung',
-        'social_butterfly': 'Gesellige Seele',
-        'popular': 'Beliebt',
-        'video_enthusiast': 'Video-Fan',
-        'daily_streak_7': '7-Tage-Serie',
-        'daily_streak_30': '30-Tage-Serie',
-        'other': 'Neuer Erfolg',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Erste Verbindung',
+      'social_butterfly': 'Gesellige Seele',
+      'popular': 'Beliebt',
+      'video_enthusiast': 'Video-Fan',
+      'daily_streak_7': '7-Tage-Serie',
+      'daily_streak_30': '30-Tage-Serie',
+      'other': 'Neuer Erfolg',
+    });
     return 'Erfolg freigeschaltet: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Knüpfe deine erste Verbindung',
-        'social_butterfly': 'Sende 100 Nachrichten',
-        'popular': 'Knüpfe 50 Verbindungen',
-        'video_enthusiast': 'Führe 10 Videoanrufe',
-        'daily_streak_7': 'Melde dich 7 Tage in Folge an',
-        'daily_streak_30': 'Melde dich 30 Tage in Folge an',
-        'other': 'Weiter so!',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Knüpfe deine erste Verbindung',
+      'social_butterfly': 'Sende 100 Nachrichten',
+      'popular': 'Knüpfe 50 Verbindungen',
+      'video_enthusiast': 'Führe 10 Videoanrufe',
+      'daily_streak_7': 'Melde dich 7 Tage in Folge an',
+      'daily_streak_30': 'Melde dich 30 Tage in Folge an',
+      'other': 'Weiter so!',
+    });
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(
-      challenge,
-      {
-        'send_5_messages': 'Gesprächsstarter',
-        'get_3_matches': 'Netzwerker',
-        'complete_profile': 'Profil-Perfektionist',
-        'video_call_1': 'Von Angesicht zu Angesicht',
-        'other': 'Tägliche Herausforderung',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(challenge, {
+      'send_5_messages': 'Gesprächsstarter',
+      'get_3_matches': 'Netzwerker',
+      'complete_profile': 'Profil-Perfektionist',
+      'video_call_1': 'Von Angesicht zu Angesicht',
+      'other': 'Tägliche Herausforderung',
+    });
     return 'Herausforderung geschafft: $_temp0!';
   }
 
@@ -23108,6 +23119,59 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get emailTicketFooter =>
       'Deine Tickets findest du auch in der GreenGo-App. Teile diese QR-Codes nicht.';
+
+  @override
+  String get srvBookingRequestSent => 'Buchungsanfrage gesendet';
+
+  @override
+  String get emailBookingGuestLabel => 'Gast';
+
+  @override
+  String get emailBookingRespondByLabel => 'Antworten bis';
+
+  @override
+  String emailBookingRequestHostSubject(String title) {
+    return 'Neue Buchungsanfrage: $title';
+  }
+
+  @override
+  String emailBookingRequestHostIntro(String name) {
+    return '$name möchte dein Erlebnis buchen.';
+  }
+
+  @override
+  String get emailBookingRequestHostAction =>
+      'Öffne GreenGo, um diese Anfrage anzunehmen oder abzulehnen, bevor sie abläuft.';
+
+  @override
+  String emailBookingRequestGuestSubject(String title) {
+    return 'Buchungsanfrage gesendet: $title';
+  }
+
+  @override
+  String get emailBookingRequestGuestIntro =>
+      'Deine Buchungsanfrage wurde an den Gastgeber gesendet.';
+
+  @override
+  String get emailBookingRequestGuestNext =>
+      'So geht es weiter: Der Gastgeber nimmt deine Anfrage an oder lehnt sie ab, und wir benachrichtigen dich, sobald er antwortet. Antwortet der Gastgeber nicht rechtzeitig, läuft die Anfrage automatisch ab.';
+
+  @override
+  String emailBookingConfirmedSubject(String title) {
+    return 'Buchung bestätigt: $title';
+  }
+
+  @override
+  String emailBookingConfirmedHostIntro(String name) {
+    return '$name hat eine bestätigte Buchung für dein Erlebnis.';
+  }
+
+  @override
+  String get emailBookingConfirmedGuestIntro => 'Deine Buchung ist bestätigt.';
+
+  @override
+  String get emailBookingFooter =>
+      'Diese Buchung und alle Details findest du in der GreenGo-App.';
 
   @override
   String emailParticipantsSubject(String title) {
