@@ -11,6 +11,9 @@
 set -euo pipefail
 cd "$(dirname "$0")/../.."
 python tools/web/generate_firebase_config.py
+# iOS/Safari revoke web push after silent pushes: the messaging service worker
+# must show a notification for every push there (see web/firebase-messaging-sw.js).
+node --test tools/web/messaging_sw.test.js || { echo "ERROR: web/firebase-messaging-sw.js push tests failed"; exit 1; }
 flutter build web --release --no-web-resources-cdn "$@"
 test -s build/web/firebase-config.js || { echo "ERROR: build/web/firebase-config.js missing"; exit 1; }
 grep -q '"apiKey"' build/web/firebase-config.js || { echo "ERROR: firebase-config.js has no apiKey"; exit 1; }

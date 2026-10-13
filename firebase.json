@@ -261,6 +261,15 @@
           ]
         },
         {
+          "source": "/@(firebase-messaging-sw|firebase-config).js",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, max-age=0, must-revalidate"
+            }
+          ]
+        },
+        {
           "source": "manifest.json",
           "headers": [
             {
