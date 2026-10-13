@@ -616,7 +616,14 @@ class _LocationPickerScreenState extends State<LocationPickerScreen>
             }
           },
           style: const TextStyle(color: LocationMapColors.text, fontSize: 15),
+          cursorColor: LocationMapColors.goldDark,
           decoration: InputDecoration(
+            // Light card: never inherit the app's dark input fill (black
+            // text on a dark box while typing).
+            filled: true,
+            fillColor: LocationMapColors.surface,
+            enabledBorder: InputBorder.none,
+            focusedBorder: InputBorder.none,
             hintText: widget.searchHint ?? l10n.locPickerSearchHint,
             hintStyle: const TextStyle(color: LocationMapColors.subtext),
             prefixIcon:

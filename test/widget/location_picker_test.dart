@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:greengo_chat/core/widgets/interactive_location_map.dart' show LocationMapColors;
 import 'package:greengo_chat/core/services/place_search_service.dart';
 import 'package:greengo_chat/core/widgets/location_picker.dart';
 import 'package:greengo_chat/core/widgets/map_basemap_layer.dart';
@@ -387,6 +388,14 @@ void main() {
     await tester.pumpAndSettle();
     expect(repo.reverses.single, const LatLng(41.9, 12.5));
     expect(find.textContaining("Couldn't get your location"), findsNothing);
+  });
+
+  testWidgets('search field: white fill + dark text, never the dark app input fill', (tester) async {
+    await _open(tester, LocationPickerScreen(repository: FakeRepo(), initialAddress: 'Via Roma 1', initialLat: 41.9, initialLng: 12.5));
+    final field = tester.widget<TextField>(find.byKey(const ValueKey('location-picker-search')));
+    expect(field.decoration!.filled, isTrue);
+    expect(field.decoration!.fillColor, LocationMapColors.surface);
+    expect(field.style!.color, LocationMapColors.text);
   });
 
   testWidgets('recent places show on an empty focused field', (tester) async {
