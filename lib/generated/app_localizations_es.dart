@@ -2337,6 +2337,19 @@ class AppLocalizationsEs extends AppLocalizations {
       'Resalta ciudades, países y atracciones en los mensajes, con consejos y mapa';
 
   @override
+  String get chatSettingIcebreakers => 'Rompehielos';
+
+  @override
+  String get chatSettingIcebreakersDesc =>
+      'Mostrar el botón de rompehielos e ideas en un chat nuevo';
+
+  @override
+  String get chatSettingSentences => 'Frases sugeridas';
+
+  @override
+  String get chatSettingSentencesDesc => 'Mostrar el botón de frases sugeridas';
+
+  @override
   String get chatSettingDifficultyBadges => 'Insignias de dificultad';
 
   @override

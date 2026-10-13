@@ -2320,6 +2320,19 @@ class AppLocalizationsPt extends AppLocalizations {
       'Destaca cidades, países e atrações nas mensagens, com dicas e mapa';
 
   @override
+  String get chatSettingIcebreakers => 'Quebra-gelos';
+
+  @override
+  String get chatSettingIcebreakersDesc =>
+      'Mostrar o botão de quebra-gelos e ideias numa conversa nova';
+
+  @override
+  String get chatSettingSentences => 'Frases sugeridas';
+
+  @override
+  String get chatSettingSentencesDesc => 'Mostrar o botão de frases sugeridas';
+
+  @override
   String get chatSettingDifficultyBadges => 'Distintivos de dificuldade';
 
   @override
@@ -27049,6 +27062,19 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get chatSettingCulturalTipsDesc =>
       'Destaca cidades, países e atrações nas mensagens, com dicas e mapa';
+
+  @override
+  String get chatSettingIcebreakers => 'Quebra-gelos';
+
+  @override
+  String get chatSettingIcebreakersDesc =>
+      'Mostrar o botão de quebra-gelos e ideias em uma conversa nova';
+
+  @override
+  String get chatSettingSentences => 'Frases sugeridas';
+
+  @override
+  String get chatSettingSentencesDesc => 'Mostrar o botão de frases sugeridas';
 
   @override
   String get chatSettingDifficultyBadges => 'Distintivos de dificuldade';

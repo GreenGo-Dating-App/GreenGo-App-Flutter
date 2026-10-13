@@ -2299,6 +2299,19 @@ class AppLocalizationsEn extends AppLocalizations {
       'Highlight cities, countries and attractions in messages, with tips and a map';
 
   @override
+  String get chatSettingIcebreakers => 'Ice-breakers';
+
+  @override
+  String get chatSettingIcebreakersDesc =>
+      'Show the ice-breakers button and ideas in a new chat';
+
+  @override
+  String get chatSettingSentences => 'Suggested sentences';
+
+  @override
+  String get chatSettingSentencesDesc => 'Show the suggested sentences button';
+
+  @override
   String get chatSettingDifficultyBadges => 'Difficulty Badges';
 
   @override

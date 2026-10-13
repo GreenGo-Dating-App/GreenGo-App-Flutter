@@ -2335,6 +2335,19 @@ class AppLocalizationsDe extends AppLocalizations {
       'Hebt Städte, Länder und Sehenswürdigkeiten in Nachrichten hervor, mit Tipps und Karte';
 
   @override
+  String get chatSettingIcebreakers => 'Eisbrecher';
+
+  @override
+  String get chatSettingIcebreakersDesc =>
+      'Eisbrecher-Taste und Ideen in einem neuen Chat anzeigen';
+
+  @override
+  String get chatSettingSentences => 'Satzvorschläge';
+
+  @override
+  String get chatSettingSentencesDesc => 'Taste für Satzvorschläge anzeigen';
+
+  @override
   String get chatSettingDifficultyBadges => 'Schwierigkeitsabzeichen';
 
   @override

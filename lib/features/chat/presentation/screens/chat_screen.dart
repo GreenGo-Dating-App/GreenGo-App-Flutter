@@ -187,6 +187,8 @@ class _ChatScreenState extends State<ChatScreen> {
   bool _showDifficultyBadge = true;    // Show CEFR level badge on messages
   bool _showGrammarCheck = true;       // Check grammar before sending
   bool _showCulturalTips = true;       // Show cultural context tooltips
+  bool _showIcebreakers = true;        // Ice-breakers icon (+ empty-chat ideas)
+  bool _showSentences = true;          // Suggested sentences icon
   bool _showPronunciation = true;      // Double-tap for TTS pronunciation
   bool _ttsReadTranslated = true;     // TTS reads translated text (true) or original (false)
   bool _showLanguageFlags = true;     // Show flag emoji next to translated/original text
@@ -379,6 +381,8 @@ class _ChatScreenState extends State<ChatScreen> {
       _showDifficultyBadge = prefs.getBool('${p}showDifficultyBadge') ?? true;
       _showGrammarCheck = prefs.getBool('${p}showGrammarCheck') ?? true;
       _showCulturalTips = prefs.getBool('${p}showCulturalTips') ?? true;
+      _showIcebreakers = prefs.getBool('${p}showIcebreakers') ?? true;
+      _showSentences = prefs.getBool('${p}showSentences') ?? true;
       _showPronunciation = prefs.getBool('${p}showPronunciation') ?? true;
       _ttsReadTranslated = prefs.getBool('${p}ttsReadTranslated') ?? true;
       _showLanguageFlags = prefs.getBool('${p}showLanguageFlags') ?? true;
@@ -395,6 +399,8 @@ class _ChatScreenState extends State<ChatScreen> {
     await prefs.setBool('${prefix}showDifficultyBadge', _showDifficultyBadge);
     await prefs.setBool('${prefix}showGrammarCheck', _showGrammarCheck);
     await prefs.setBool('${prefix}showCulturalTips', _showCulturalTips);
+    await prefs.setBool('${prefix}showIcebreakers', _showIcebreakers);
+    await prefs.setBool('${prefix}showSentences', _showSentences);
     await prefs.setBool('${prefix}showPronunciation', _showPronunciation);
     await prefs.setBool('${prefix}ttsReadTranslated', _ttsReadTranslated);
     await prefs.setBool('${prefix}showLanguageFlags', _showLanguageFlags);
@@ -410,6 +416,8 @@ class _ChatScreenState extends State<ChatScreen> {
     await prefs.setBool('chat_showDifficultyBadge', _showDifficultyBadge);
     await prefs.setBool('chat_showGrammarCheck', _showGrammarCheck);
     await prefs.setBool('chat_showCulturalTips', _showCulturalTips);
+    await prefs.setBool('chat_showIcebreakers', _showIcebreakers);
+    await prefs.setBool('chat_showSentences', _showSentences);
     await prefs.setBool('chat_showPronunciation', _showPronunciation);
     await prefs.setBool('chat_ttsReadTranslated', _ttsReadTranslated);
     await prefs.setBool('chat_showLanguageFlags', _showLanguageFlags);
@@ -1944,7 +1952,7 @@ class _ChatScreenState extends State<ChatScreen> {
                               ),
                             ),
                             const SizedBox(height: 16),
-                            _buildEmptyChatIcebreakers(),
+                            if (_showIcebreakers) _buildEmptyChatIcebreakers(),
                           ],
                         ),
                       );
@@ -2666,6 +2674,22 @@ class _ChatScreenState extends State<ChatScreen> {
                 subtitle: AppLocalizations.of(context)!.chatSettingCulturalTipsDesc,
                 value: _showCulturalTips,
                 onChanged: (v) => setState(() => _showCulturalTips = v),
+              ),
+              _buildSettingToggle(
+                setSheetState,
+                icon: Icons.waving_hand_outlined,
+                label: AppLocalizations.of(context)!.chatSettingIcebreakers,
+                subtitle: AppLocalizations.of(context)!.chatSettingIcebreakersDesc,
+                value: _showIcebreakers,
+                onChanged: (v) => setState(() => _showIcebreakers = v),
+              ),
+              _buildSettingToggle(
+                setSheetState,
+                icon: Icons.format_quote_outlined,
+                label: AppLocalizations.of(context)!.chatSettingSentences,
+                subtitle: AppLocalizations.of(context)!.chatSettingSentencesDesc,
+                value: _showSentences,
+                onChanged: (v) => setState(() => _showSentences = v),
               ),
               _buildSettingToggle(
                 setSheetState,
@@ -3846,12 +3870,14 @@ class _ChatScreenState extends State<ChatScreen> {
                     tooltip: AppLocalizations.of(context)!.chatSendAttachment,
                     onPressed: () => _showAttachmentOptions(context),
                   ),
+                  if (_showIcebreakers)
                   _toolButton(
                     key: const ValueKey('chat-tool-icebreakers'),
                     icon: Icons.waving_hand_outlined,
                     tooltip: AppLocalizations.of(context)!.chatIcebreakersTitle,
                     onPressed: () => _openIdeas(sentences: false),
                   ),
+                  if (_showSentences)
                   _toolButton(
                     key: const ValueKey('chat-tool-sentences'),
                     icon: Icons.format_quote_outlined,

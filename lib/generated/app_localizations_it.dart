@@ -2327,6 +2327,20 @@ class AppLocalizationsIt extends AppLocalizations {
       'Evidenzia città, paesi e attrazioni nei messaggi, con consigli e mappa';
 
   @override
+  String get chatSettingIcebreakers => 'Rompighiaccio';
+
+  @override
+  String get chatSettingIcebreakersDesc =>
+      'Mostra il pulsante dei rompighiaccio e le idee in una nuova chat';
+
+  @override
+  String get chatSettingSentences => 'Frasi suggerite';
+
+  @override
+  String get chatSettingSentencesDesc =>
+      'Mostra il pulsante delle frasi suggerite';
+
+  @override
   String get chatSettingDifficultyBadges => 'Badge di difficoltà';
 
   @override

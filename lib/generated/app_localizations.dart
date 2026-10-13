@@ -4169,6 +4169,30 @@ abstract class AppLocalizations {
   /// **'Highlight cities, countries and attractions in messages, with tips and a map'**
   String get chatSettingCulturalTipsDesc;
 
+  /// No description provided for @chatSettingIcebreakers.
+  ///
+  /// In en, this message translates to:
+  /// **'Ice-breakers'**
+  String get chatSettingIcebreakers;
+
+  /// No description provided for @chatSettingIcebreakersDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Show the ice-breakers button and ideas in a new chat'**
+  String get chatSettingIcebreakersDesc;
+
+  /// No description provided for @chatSettingSentences.
+  ///
+  /// In en, this message translates to:
+  /// **'Suggested sentences'**
+  String get chatSettingSentences;
+
+  /// No description provided for @chatSettingSentencesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Show the suggested sentences button'**
+  String get chatSettingSentencesDesc;
+
   /// No description provided for @chatSettingDifficultyBadges.
   ///
   /// In en, this message translates to:

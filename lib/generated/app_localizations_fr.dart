@@ -2338,6 +2338,20 @@ class AppLocalizationsFr extends AppLocalizations {
       'Met en évidence villes, pays et attractions dans les messages, avec conseils et carte';
 
   @override
+  String get chatSettingIcebreakers => 'Brise-glace';
+
+  @override
+  String get chatSettingIcebreakersDesc =>
+      'Afficher le bouton brise-glace et des idées dans une nouvelle discussion';
+
+  @override
+  String get chatSettingSentences => 'Phrases suggérées';
+
+  @override
+  String get chatSettingSentencesDesc =>
+      'Afficher le bouton des phrases suggérées';
+
+  @override
   String get chatSettingDifficultyBadges => 'Badges de difficulté';
 
   @override
