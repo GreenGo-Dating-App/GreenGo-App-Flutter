@@ -35,6 +35,8 @@ import {
 import { seal, signState, unseal, verifyState } from './tokens';
 import { ticketKey } from './keys';
 import { mpCurrencyForSite } from './currency';
+import { FEE_SCHEDULES, FeeRule, USD_RATES, feeQuote, feeRuleForTier, resolveTrial, trialKey } from './fees';
+import { effectiveTier } from '../shared/effectiveTier';
 
 const db = () => admin.firestore();
 const ts = (ms: number) => admin.firestore.Timestamp.fromMillis(ms);
@@ -55,16 +57,63 @@ export function returnUrl(params: Record<string, string>): string {
   return `${cfg.returnBaseUrl()}?${new URLSearchParams(params).toString()}`;
 }
 
-/** What the app needs to decide whether to show paid options at all. */
-export async function getTicketPaymentsConfig(): Promise<Record<string, unknown>> {
+/**
+ * The fee rule that applies to [organizerId]'s listing right now (display
+ * only; createTicketCheckout decides again, transactionally). [kind]/[id]
+ * null = a listing not created yet (the host's editor).
+ */
+export async function feeRuleFor(
+  organizerId: string,
+  kind: 'event' | 'experience' | null,
+  id: string | null,
+): Promise<FeeRule> {
+  const [prof, acct] = await Promise.all([
+    db().collection('profiles').doc(organizerId).get(),
+    db().collection(COL.accounts).doc(organizerId).get(),
+  ]);
+  const claim = acct.data()?.feeTrial;
+  let earlierPaid = false;
+  if (!claim || !('key' in claim)) {
+    const prior = await db().collection(COL.orders).where('organizerId', '==', organizerId)
+      .where('status', '==', 'paid').limit(25).get();
+    earlierPaid = prior.docs.some((d) => d.data().provider !== 'free' && Number(d.data().totalAmount) > 0);
+  }
+  // A listing not created yet gets the trial only while nothing claimed it.
+  const key = kind && id ? trialKey(kind, id) : '__new__';
+  const t = resolveTrial(claim, key, earlierPaid);
+  return feeRuleForTier(effectiveTier(prof.data(), new Date(ticketDeps.now())), t.trial);
+}
+
+/**
+ * What the app needs to decide whether to show paid options at all, plus the
+ * GreenGo service fee: the full schedule (./fees.ts) and, with data
+ * { organizerId?, kind?, id?, currency? }, the rule for that listing
+ * (organizerId defaults to the caller: the host's own editor).
+ */
+export async function getTicketPaymentsConfig(uid: string, data: any = {}): Promise<Record<string, unknown>> {
+  const idOk = (v: unknown) => typeof v === 'string' && /^[A-Za-z0-9_-]{1,128}$/.test(v);
+  const organizerId = idOk(data?.organizerId) ? String(data.organizerId) : uid;
+  const kind = data?.kind === 'event' || data?.kind === 'experience' ? data.kind : null;
+  const id = kind && idOk(data?.id) ? String(data.id) : null;
+  const currency = typeof data?.currency === 'string' && /^[A-Za-z]{3}$/.test(data.currency)
+    ? data.currency.toLowerCase() : null;
+  let rule: FeeRule = 'silver';
+  try {
+    rule = await feeRuleFor(organizerId, kind, id);
+  } catch (e) {
+    console.error('[tickets] fee rule lookup failed:', (e as Error)?.message);
+  }
   return {
     stripe: cfg.stripeConfigured(),
     mercadoPago: cfg.mercadoPagoConfigured(),
-    link: true,
+    // Payment links are no longer accepted (owner rule 2026-10-14).
+    link: false,
     holdMinutes: cfg.HOLD_MINUTES,
     linkHoldHours: cfg.LINK_HOLD_HOURS,
     confirmWindowHours: cfg.CONFIRM_WINDOW_HOURS,
-    platformFeePercent: 0,
+    fee: feeQuote(rule, currency),
+    feeSchedules: FEE_SCHEDULES,
+    usdRates: USD_RATES,
   };
 }
 

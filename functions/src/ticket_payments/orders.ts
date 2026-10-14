@@ -1,7 +1,9 @@
 /**
  * Ticket payments — orders, tickets and seat holds, for BOTH modes:
  *
- *  A) "link" (default, zero setup): the organizer's own payment method
+ *  A) "link" (LEGACY: no new link orders since 2026-10-14, except to finish an
+ *     experience booking already created with provider 'link'; see config.ts):
+ *     the organizer's own payment method
  *     (Profile > Payment methods key, or cash / bank transfer). The buyer gets a
  *     short code (GG-XXXXXX) to put in the payment description, pays outside
  *     GreenGo, taps "I've paid" (optional receipt image), and the ORGANIZER
@@ -16,8 +18,13 @@
  * ticket_orders/{orderId}   server-only writes; buyer + organizer read.
  *   kind 'event' | 'experience', listingId, bookingId, buyerId, organizerId,
  *   provider 'stripe' | 'mercadopago' | 'link', mode 'instant' | 'link',
- *   quantity, unitAmount, totalAmount (minor units FROM THE SERVER-SIDE LISTING /
- *   BOOKING, never the client), currency, status, expiresAt (hold end),
+ *   quantity, unitAmount, ticketSubtotal (tickets only = what the organizer
+ *   receives), feeTotal / feePerTicket (null when types differ, see feeLines) /
+ *   feeRuleApplied 'trial' | 'silver' | 'gold' | 'platinum' (GreenGo service
+ *   fee, ./fees.ts; 0 / null on legacy and link orders), totalAmount (what the
+ *   buyer pays = ticketSubtotal + feeTotal; every amount in minor units FROM
+ *   THE SERVER-SIDE LISTING / BOOKING, never the client), currency, status,
+ *   expiresAt (hold end),
  *   code (link), payment { method, value, instructions } (link snapshot),
  *   receiptPath, sentAt, remindAt, rejectReason, checkoutUrl, providerRef,
  *   seatHeld, ticketId, title, startsAt, platform, createdAt, updatedAt, paidAt
@@ -54,10 +61,11 @@ import {
 import { ticketQrPayload } from './tokens';
 import { ticketKey } from './keys';
 import { checkCharge, stripePaymentMethodTypes } from './currency';
+import { FeeBreakdown, computeOrderFee, feeRuleForTier, resolveTrial, trialKey } from './fees';
 import { CheckoutInput, publicImage, whenText } from './checkoutPayload';
 import { emitNotification } from '../notifications/notifyHelpers';
 import { lt, rawText } from '../shared/i18n';
-import { isBusinessActive } from '../shared/effectiveTier';
+import { effectiveTier, isBusinessActive } from '../shared/effectiveTier';
 import { assertCanParticipate } from '../shared/participation';
 
 const db = () => admin.firestore();
@@ -298,6 +306,12 @@ export async function createTicketCheckout(uid: string, data: any, email: string
       }
       if (!lines && !(typeof l.price === 'number' && l.price > 0)) fail('failed-precondition', 'not_paid_listing');
       if (!isTicketProvider(l.ticketProvider)) fail('failed-precondition', 'organizer_payments_not_ready');
+      // Payment links are no longer accepted (owner rule 2026-10-14): a
+      // legacy 'link' event sells again once the organizer picks a connected
+      // provider. Free ticket types of such an event still issue.
+      if (l.ticketProvider === 'link' && !(lines && lines.every((x) => x.unitAmount === 0))) {
+        fail('failed-precondition', 'link_payments_discontinued', { provider: 'link' });
+      }
       if (l.status === 'cancelled' || l.status === 'draft') fail('failed-precondition', 'listing_not_on_sale');
       const end = msOf(l.endDate) ?? msOf(l.startDate);
       if (end !== null && end < t0) fail('failed-precondition', 'listing_ended');
@@ -362,33 +376,35 @@ export async function createTicketCheckout(uid: string, data: any, email: string
     // Only an ACTIVE business account (isBusiness + effective Platinum) may
     // sell. Existing paid listings of other accounts stay readable, but new
     // sales are refused with a clear reason (free ticket types still issue).
+    let seller: Record<string, any> | undefined;
     if (!isFreeOrder) {
-      const seller = (await tx.get(db().collection('profiles').doc(listing.organizerId))).data();
+      seller = (await tx.get(db().collection('profiles').doc(listing.organizerId))).data();
       if (!isBusinessActive(seller)) fail('failed-precondition', 'seller_not_business');
     }
 
     // Readiness of the organizer's payment setup.
     let payment: ReturnType<typeof linkPaymentSnapshot> = null;
     let stripeCountry: string | null = null;
+    let acct: Record<string, any> | undefined;
     const codeSnaps = listing.provider === 'link'
       ? await Promise.all(codes.map((c) => tx.get(db().collection(COL.codes).doc(c))))
       : [];
     if (isFreeOrder) {
       // Only free ticket types: no payment, the tickets are issued right away.
     } else if (listing.provider === 'link') {
+      // LEGACY only: an experience booking created with provider 'link'
+      // before 2026-10-14 (events refuse 'link' above).
       const prof = (await tx.get(db().collection('profiles').doc(listing.organizerId))).data();
       payment = linkPaymentSnapshot(listing.linkMethod, prof, listing.instructions);
       if (!payment && isBusinessActive(prof)) {
-        // Personal payment links are public only while the owner's tier is
-        // paid (profiles/paymentLinksVisibility.ts). An active business is
-        // Platinum, so its links are public; this covers the seconds after a
-        // renewal before the visibility hook moved them back.
+        // The removed visibility hook may have moved the links to the
+        // owner-only profiles_private.paymentLinksHidden.
         const priv = (await tx.get(db().collection('profiles_private').doc(listing.organizerId))).data();
         payment = linkPaymentSnapshot(listing.linkMethod, { paymentLinks: priv?.paymentLinksHidden }, listing.instructions);
       }
       if (!payment) fail('failed-precondition', 'organizer_payments_not_ready', { provider: 'link' });
     } else {
-      const acct = (await tx.get(db().collection(COL.accounts).doc(listing.organizerId))).data();
+      acct = (await tx.get(db().collection(COL.accounts).doc(listing.organizerId))).data();
       if (!isProvider(listing.provider) || !cfg.providerConfigured(listing.provider) || !accountReady(acct, listing.provider)) {
         fail('failed-precondition', 'organizer_payments_not_ready', { provider: listing.provider });
       }
@@ -402,6 +418,28 @@ export async function createTicketCheckout(uid: string, data: any, email: string
       }
     }
 
+    // GreenGo service fee (./fees.ts), instant orders only: the host's tier
+    // at checkout time, or the $1 trial on the host's first paid listing
+    // (claimed once in payment_accounts/{hostId}.feeTrial, see fees.ts).
+    let fee: FeeBreakdown | null = null;
+    let trialStore: { key: string | null } | null = null;
+    if (!isFreeOrder && isProvider(listing.provider)) {
+      let earlierPaid = false;
+      if (!acct?.feeTrial || !('key' in acct.feeTrial)) {
+        // Served by the (organizerId, status, sentAt) composite index prefix.
+        const prior = await tx.get(orders.where('organizerId', '==', listing.organizerId)
+          .where('status', '==', 'paid').limit(25));
+        earlierPaid = prior.docs.some((d) => d.data().provider !== 'free' && Number(d.data().totalAmount) > 0);
+      }
+      const t = resolveTrial(acct?.feeTrial, trialKey(kind, id), earlierPaid);
+      trialStore = t.store;
+      const feeLines = lines
+        ? lines.map((x) => ({ typeId: x.typeId, unitAmount: x.unitAmount, quantity: x.quantity }))
+        : [{ typeId: null, unitAmount: listing.unitAmount, quantity: listing.quantity }];
+      fee = computeOrderFee(feeRuleForTier(effectiveTier(seller, new Date(t0)), t.trial), listing.currency, feeLines);
+      if (!fee) fail('failed-precondition', 'fee_currency_unsupported', { currency: listing.currency });
+    }
+
     // One live order per buyer + listing: reuse it while it is still usable,
     // otherwise supersede it (its holds are released in this transaction).
     let freedSeats = 0;
@@ -412,7 +450,8 @@ export async function createTicketCheckout(uid: string, data: any, email: string
       if ((o.bookingId ?? null) !== (listing.bookingId ?? null)) continue;
       const exp = msOf(o.expiresAt) ?? 0;
       const sameShape = o.quantity === listing.quantity && o.provider === listing.provider
-        && JSON.stringify(o.items ?? null) === JSON.stringify(lines ?? null);
+        && JSON.stringify(o.items ?? null) === JSON.stringify(lines ?? null)
+        && (Number(o.feeTotal) || 0) === (fee?.feeTotal ?? 0);
       if (sameShape && o.provider === 'link' && exp > t0) return { reused: true, orderId: d.id, order: o, listing };
       if (sameShape && o.checkoutUrl && exp - t0 > 5 * 60000) return { reused: true, orderId: d.id, order: o, listing };
       tx.update(d.ref, { status: 'cancelled', cancelReason: 'superseded', seatHeld: false, updatedAt: ts(t0) });
@@ -478,13 +517,25 @@ export async function createTicketCheckout(uid: string, data: any, email: string
       code = codes[free];
       tx.set(db().collection(COL.codes).doc(code), { orderId: orderRef.id, createdAt: ts(t0) });
     }
+    if (trialStore) {
+      tx.set(db().collection(COL.accounts).doc(listing.organizerId), {
+        feeTrial: { key: trialStore.key, claimedAt: ts(t0) },
+      }, { merge: true });
+    }
     const order = {
       kind, listingId: id, bookingId: listing.bookingId, buyerId: uid, organizerId: listing.organizerId,
       provider: listing.provider, mode: isLink ? 'link' : 'instant',
       quantity: listing.quantity, partySize: listing.partySize, unitAmount: listing.unitAmount,
       // Stored at order time: later price edits never change it.
       priceRule: kind === 'experience' ? (bSnap?.data()?.priceRule ?? 'base') : 'base',
-      totalAmount, currency: listing.currency, items: lines,
+      // The buyer pays ticketSubtotal + feeTotal = totalAmount (markOrderPaid
+      // checks the provider amount against totalAmount).
+      ticketSubtotal: totalAmount,
+      feeTotal: fee?.feeTotal ?? 0,
+      feePerTicket: fee ? fee.feePerTicket : 0,
+      feeRuleApplied: fee?.rule ?? null,
+      feeLines: fee && lines ? fee.lines.map((x) => ({ typeId: x.typeId, unitFee: x.unitFee, quantity: x.quantity })) : null,
+      totalAmount: totalAmount + (fee?.feeTotal ?? 0), currency: listing.currency, items: lines,
       status: isLink ? 'pending_payment' : (isFreeOrder ? 'pending' : 'creating'), expiresAt: ts(expiresAtMs), seatHeld: true,
       code, payment: payment ?? null, receiptPath: null, sentAt: null, remindAt: null,
       checkoutUrl: null, providerRef: {}, ticketId: null, ticketIds: [], title: listing.title.slice(0, 200),
@@ -505,6 +556,7 @@ export async function createTicketCheckout(uid: string, data: any, email: string
     return {
       orderId: res.orderId, mode: 'instant', checkoutUrl: o.checkoutUrl, expiresAt: iso(o.expiresAt),
       provider: o.provider, amount: o.totalAmount, currency: o.currency, quantity: o.quantity, reused: true,
+      ...feeView(o),
     };
   }
 
@@ -531,6 +583,7 @@ export async function createTicketCheckout(uid: string, data: any, email: string
     buyerEmail: email,
     locale,
     paymentMethodTypes: stripePaymentMethodTypes(L.currency, (res as any).stripeCountry ?? null),
+    feeAmount: Number(o.feeTotal) || 0,
     lines: Array.isArray(o.items) && o.items.length
       ? (o.items as OrderLine[]).filter((x) => x.unitAmount > 0 || o.items.length === 1)
         .map((x) => ({ ...x, name: `${L.title} – ${x.name}` }))
@@ -555,6 +608,7 @@ export async function createTicketCheckout(uid: string, data: any, email: string
     return {
       orderId, mode: 'instant', checkoutUrl, expiresAt: new Date(expiresAtMs).toISOString(), provider: L.provider,
       amount: o.totalAmount, currency: o.currency, quantity: o.quantity, reused: false,
+      ...feeView(o),
     };
   } catch (e) {
     console.error(`[tickets] checkout for ${orderId} failed:`, (e as Error)?.message);
@@ -562,6 +616,16 @@ export async function createTicketCheckout(uid: string, data: any, email: string
     if (e instanceof HttpsError) throw e;
     fail('unavailable', 'provider_unavailable', { provider: L.provider });
   }
+}
+
+/** Fee breakdown returned with a checkout (amount = the buyer's total). */
+function feeView(o: Record<string, any>): Record<string, unknown> {
+  return {
+    ticketSubtotal: Number(o.ticketSubtotal ?? o.totalAmount) || 0,
+    feeTotal: Number(o.feeTotal) || 0,
+    feePerTicket: o.feePerTicket ?? null,
+    feeRuleApplied: o.feeRuleApplied ?? null,
+  };
 }
 
 function iso(v: unknown): string | null {

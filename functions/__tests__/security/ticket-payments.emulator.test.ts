@@ -5,11 +5,14 @@
  *
  * Covers both modes:
  *   instant (Stripe Connect Standard / Mercado Pago): price from the server,
- *     capacity + 30-min hold, webhook signature rejection, idempotent paid,
- *     MP re-fetch mismatch rejected, refund invalidates the QR;
- *   link (organizer confirms): code + method snapshot, buyer cannot
- *     self-confirm, only the organizer confirms / rejects, reject + expiry
- *     release the seat, receipt storage limited to buyer + organizer;
+ *     GreenGo service fee on top (application_fee_amount / marketplace_fee,
+ *     first-listing trial), capacity + 30-min hold, webhook signature
+ *     rejection, idempotent paid, MP re-fetch mismatch rejected, refund
+ *     invalidates the QR;
+ *   link (LEGACY, no new orders since 2026-10-14): new link orders refused;
+ *     an order already open still completes: buyer cannot self-confirm, only
+ *     the organizer confirms / rejects, reject + expiry release the seat,
+ *     receipt storage limited to buyer + organizer;
  * plus the closed bypasses (firestore.rules) and free events unchanged.
  *
  *   firebase emulators:exec --config ../firebase.emulators.<you>.json \
@@ -35,7 +38,8 @@ const fft = functionsTest({ projectId: PROJECT });
 import * as tp from '../../src/ticket_payments';
 import { ticketDeps } from '../../src/ticket_payments/providers';
 import { handleMercadoPagoWebhook, handleStripeConnectWebhook, stripeVerifier } from '../../src/ticket_payments/webhooks';
-import { expireDueOrders, PAYMENT_CODE_RE, remindDueConfirmations } from '../../src/ticket_payments/orders';
+import { expireDueOrders, remindDueConfirmations } from '../../src/ticket_payments/orders';
+import { usdCentsToMinor } from '../../src/ticket_payments/fees';
 import { ticketQrPayload, verifyTicketQr } from '../../src/ticket_payments/tokens';
 import { getEventTicketCode, checkInTicket, checkInEventAttendee, eventTicketCode } from '../../src/checkin/eventCheckin';
 import { getBookingCheckInCode } from '../../src/experience_bookings/functions';
@@ -148,8 +152,11 @@ function stripeEvent(type: string, object: any, account = 'acct_org', id = `evt_
   const header = stripeVerifier().webhooks.generateTestHeaderString({ payload, secret: process.env.STRIPE_CONNECT_WEBHOOK_SECRET! });
   return { payload, header };
 }
-async function stripePaid(orderId: string, amount: number, _sessionId?: string, pi = 'pi_1') {
-  const sessionId = (await db.doc(`ticket_orders/${orderId}`).get()).data()!.providerRef.stripeSessionId;
+/** [amount] null = the order's total (tickets + GreenGo fee), i.e. what Stripe charged. */
+async function stripePaid(orderId: string, amount: number | null = null, _sessionId?: string, pi = 'pi_1') {
+  const o = (await db.doc(`ticket_orders/${orderId}`).get()).data()!;
+  const sessionId = o.providerRef.stripeSessionId;
+  amount = amount ?? o.totalAmount;
   const ev = stripeEvent('checkout.session.completed', {
     id: sessionId, object: 'checkout.session', payment_status: 'paid', amount_total: amount, currency: 'brl',
     payment_intent: pi, metadata: { orderId, greengo: 'ticket' },
@@ -238,23 +245,62 @@ afterAll(() => fft.cleanup());
 // ═══════════════════════════════════════════════ instant mode (Stripe)
 
 describe('instant mode: Stripe Connect direct charge', () => {
-  test('price comes from the server-side listing, on the organizer account, with NO platform fee', async () => {
+  test('price comes from the server-side listing, on the organizer account; GreenGo fee on top (first listing: $1 trial)', async () => {
     await connectStripe();
     await paidEvent('e1');
     const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1', quantity: 2, amount: 1, price: 0.01 }, BUYER);
     expect(r.mode).toBe('instant');
     expect(r.checkoutUrl).toMatch(/^https:\/\/checkout\.stripe\.test\//);
+    const trialFee = usdCentsToMinor(100, 'brl')!; // US$ 1 in BRL
+    expect(r).toMatchObject({ amount: 5000 + 2 * trialFee, ticketSubtotal: 5000, feeTotal: 2 * trialFee, feeRuleApplied: 'trial' });
     const o = (await db.doc(`ticket_orders/${r.orderId}`).get()).data()!;
-    expect(o).toMatchObject({ unitAmount: 2500, totalAmount: 5000, currency: 'brl', status: 'pending', quantity: 2, buyerId: BUYER, organizerId: ORG });
+    expect(o).toMatchObject({
+      unitAmount: 2500, ticketSubtotal: 5000, feeTotal: 2 * trialFee, feePerTicket: trialFee, feeRuleApplied: 'trial',
+      totalAmount: 5000 + 2 * trialFee, currency: 'brl', status: 'pending', quantity: 2, buyerId: BUYER, organizerId: ORG,
+    });
     const { params, opts } = stripeCalls[0];
     expect(opts.stripeAccount).toBe('acct_org');
     expect(params.line_items[0].price_data.unit_amount).toBe(2500);
     expect(params.line_items[0].quantity).toBe(2);
+    expect(params.line_items[1]).toMatchObject({ quantity: 1, price_data: { unit_amount: 2 * trialFee, product_data: { name: 'GreenGo service fee' } } });
     // BRL on a Brazilian account: cards (+ Apple/Google Pay) and Pix.
     expect(params.payment_method_types).toEqual(['card', 'pix']);
     expect(params.application_fee_amount).toBeUndefined();
-    expect(params.payment_intent_data.application_fee_amount).toBeUndefined();
+    expect(params.payment_intent_data.application_fee_amount).toBe(2 * trialFee);
     expect(params.expires_at * 1000 - Date.now()).toBeGreaterThanOrEqual(30 * 60000);
+    // The trial is claimed for THIS listing, server-side.
+    expect((await db.doc(`payment_accounts/${ORG}`).get()).data()!.feeTrial).toMatchObject({ key: 'event_e1' });
+    // Clients cannot write it (payment_accounts is server-only).
+    expect(await clientWrite(ORG, `payment_accounts/${ORG}`, { feeTrial: { key: 'event_e2' } }, ['feeTrial'])).toBe(403);
+  });
+
+  test('fee: the trial stays on the first listing; other listings pay the host tier rule (capped)', async () => {
+    await connectStripe();
+    await paidEvent('e1');
+    await paidEvent('e2', { price: 200 });
+    const usd = (c: number) => usdCentsToMinor(c, 'brl')!;
+    const a = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
+    expect(a).toMatchObject({ feeRuleApplied: 'trial', feeTotal: usd(100) });
+    // Platinum: US$ 1 + 10 %, capped at US$ 8.
+    const b = await call(tp.createTicketCheckout, { kind: 'event', id: 'e2' }, BUYER);
+    expect(b).toMatchObject({ feeRuleApplied: 'platinum', feeTotal: Math.min(usd(100) + 2000, usd(800)) });
+    // Still the trial for e1 after other sales (another buyer).
+    const c = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, OTHER);
+    expect(c).toMatchObject({ feeRuleApplied: 'trial', feeTotal: usd(100) });
+    // The app's quote says the same.
+    const q1 = await call(tp.getTicketPaymentsConfig, { organizerId: ORG, kind: 'event', id: 'e1', currency: 'BRL' }, BUYER);
+    expect(q1).toMatchObject({ link: false, fee: { rule: 'trial', currency: 'brl' } });
+    const q2 = await call(tp.getTicketPaymentsConfig, { organizerId: ORG, kind: 'event', id: 'e2' }, BUYER);
+    expect(q2.fee.rule).toBe('platinum');
+  });
+
+  test('fee: a host who already sold paid tickets gets no trial', async () => {
+    await connectStripe();
+    await db.doc('ticket_orders/old1').set({ organizerId: ORG, buyerId: OTHER, status: 'paid', provider: 'stripe', totalAmount: 2500, currency: 'brl' });
+    await paidEvent('e1');
+    const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
+    expect(r.feeRuleApplied).toBe('platinum');
+    expect((await db.doc(`payment_accounts/${ORG}`).get()).data()!.feeTrial).toMatchObject({ key: null });
   });
 
   test('provider minimum amount is enforced on the server price', async () => {
@@ -328,9 +374,12 @@ describe('instant mode: Stripe Connect direct charge', () => {
     await handleStripeConnectWebhook(Buffer.from(other.payload), other.header);
     expect((await db.doc(`ticket_orders/${r.orderId}`).get()).data()!.status).toBe('pending');
 
-    const ok = await stripePaid(r.orderId, 2500, 'cs_1');
+    // Ticket price alone (the fee missing) is a mismatch too.
+    await stripePaid(r.orderId, 2500, 'cs_1');
+    expect((await db.doc(`ticket_orders/${r.orderId}`).get()).data()!.status).toBe('pending');
+    const ok = await stripePaid(r.orderId, null, 'cs_1');
     expect(ok.status).toBe(200);
-    const again = await stripePaid(r.orderId, 2500, 'cs_1'); // a different event id, same payment
+    const again = await stripePaid(r.orderId, null, 'cs_1'); // a different event id, same payment
     expect(again.status).toBe(200);
     const o = (await db.doc(`ticket_orders/${r.orderId}`).get()).data()!;
     expect(o.status).toBe('paid');
@@ -352,7 +401,7 @@ describe('instant mode: Stripe Connect direct charge', () => {
     await connectStripe();
     await paidEvent('e1');
     const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
-    await stripePaid(r.orderId, 2500, 'cs_1', 'pi_refund');
+    await stripePaid(r.orderId, null, 'cs_1', 'pi_refund');
     const qr = (await db.doc(`tickets/${r.orderId}_1`).get()).data()!.qrPayload;
 
     const ref = stripeEvent('charge.refunded', { id: 'ch_1', payment_intent: 'pi_refund', amount: 2500, amount_refunded: 2500, refunded: true });
@@ -371,7 +420,7 @@ describe('instant mode: Stripe Connect direct charge', () => {
     await connectStripe();
     await paidEvent('e1', { startDate: TS.fromMillis(Date.now() - 10 * 60000) });
     const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
-    await stripePaid(r.orderId, 2500, 'cs_1');
+    await stripePaid(r.orderId, null, 'cs_1');
     const qr = (await db.doc(`tickets/${r.orderId}_1`).get()).data()!.qrPayload;
     expect((await refused(call(checkInTicket, { payload: ticketQrPayload('wrong-key-wrong-key-wrong-key-12345', r.orderId) }, ORG))).reason).toBe('invalid_code');
     expect((await refused(call(checkInTicket, { payload: qr }, STRANGER))).reason).toBe('not_scanner');
@@ -391,7 +440,7 @@ describe('instant mode: Mercado Pago', () => {
     return call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
   }
 
-  test('OAuth tokens are stored sealed and never readable by clients; preference excludes boleto/ATM, no fee', async () => {
+  test('OAuth tokens are stored sealed and never readable by clients; preference excludes boleto/ATM; GreenGo fee = marketplace_fee', async () => {
     const r = await mpOrder();
     const priv = (await db.doc(`payment_accounts_private/${ORG}`).get()).data()!;
     expect(priv.mercadoPago.accessToken).not.toContain('APP_USR');
@@ -405,7 +454,9 @@ describe('instant mode: Mercado Pago', () => {
     expect(body.external_reference).toBe(r.orderId);
     expect(body.items[0]).toMatchObject({ unit_price: 25, quantity: 1, currency_id: 'BRL' });
     expect(body.payment_methods.excluded_payment_types).toEqual([{ id: 'ticket' }, { id: 'atm' }]);
-    expect(body.marketplace_fee).toBeUndefined();
+    const fee = usdCentsToMinor(100, 'brl')! / 100; // trial, major units
+    expect(body.items[1]).toMatchObject({ title: 'GreenGo service fee', unit_price: fee, quantity: 1, currency_id: 'BRL' });
+    expect(body.marketplace_fee).toBe(fee);
     expect(body.purpose).toBeUndefined(); // guest checkout allowed
   });
 
@@ -438,7 +489,8 @@ describe('instant mode: Mercado Pago', () => {
     await handleMercadoPagoWebhook(q, {}, { 'x-signature': mpSignature('123456', 'req-3'), 'x-request-id': 'req-3' });
     expect((await db.doc(`ticket_orders/${r.orderId}`).get()).data()!.status).toBe('pending');
 
-    mpPayment = { id: 123457, status: 'approved', external_reference: r.orderId, transaction_amount: 25, currency_id: 'BRL' };
+    // The buyer paid tickets + the GreenGo fee.
+    mpPayment = { id: 123457, status: 'approved', external_reference: r.orderId, transaction_amount: r.amount / 100, currency_id: 'BRL' };
     const q2 = { ...q, 'data.id': '123457' };
     const ok = await handleMercadoPagoWebhook(q2, {}, { 'x-signature': mpSignature('123457', 'req-4'), 'x-request-id': 'req-4' });
     expect(ok.status).toBe(200);
@@ -458,122 +510,113 @@ describe('instant mode: Mercado Pago', () => {
 
 // ═══════════════════════════════════════════════ link mode (organizer confirms)
 
-describe('link mode: payment link + organizer confirmation', () => {
+describe('link mode (LEGACY): no new orders; orders already open still complete', () => {
   async function linkEvent(over: Record<string, any> = {}) {
     await paidEvent('e1', { ticketProvider: 'link', ticketLinkMethod: 'pix', ...over });
   }
+  /** An order opened BEFORE payment links were discontinued (seat + allowance held). */
+  async function openLinkOrder(id = 'ordLink1', code = 'GG-ABCDEF') {
+    const now = Date.now();
+    await db.doc(`ticket_orders/${id}`).set({
+      kind: 'event', listingId: 'e1', bookingId: null, buyerId: BUYER, organizerId: ORG,
+      provider: 'link', mode: 'link', quantity: 1, partySize: 1, unitAmount: 2500, totalAmount: 2500, currency: 'brl',
+      items: null, status: 'pending_payment', expiresAt: TS.fromMillis(now + 24 * HOUR), seatHeld: true,
+      code, payment: { method: 'pix', value: 'org@pix.example', instructions: null },
+      receiptPath: null, sentAt: null, remindAt: null, checkoutUrl: null, providerRef: {}, ticketId: null, ticketIds: [],
+      title: 'Rooftop Samba', startsAt: TS.fromMillis(now + HOUR), platform: 'app',
+      createdAt: TS.fromMillis(now), updatedAt: TS.fromMillis(now),
+    });
+    await db.doc(`ticket_codes/${code}`).set({ orderId: id, createdAt: TS.fromMillis(now) });
+    await db.doc('ticket_inventory/event_e1').set({ held: 1 });
+    await db.doc(`ticket_holdings/event_e1_${BUYER}`).set({ kind: 'event', listingId: 'e1', uid: BUYER, held: 1, owned: 0 });
+    return id;
+  }
 
-  test('order gets a code + method snapshot from the organizer profile; held 24 h; no QR yet', async () => {
+  test('a new order on a link event is refused (no order, no seat held); free ticket types still issue', async () => {
     await linkEvent();
-    const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
-    expect(r.mode).toBe('link');
-    expect(r.code).toMatch(PAYMENT_CODE_RE);
-    expect(r.payment).toEqual({ method: 'pix', value: 'org@pix.example', instructions: null });
-    expect(r.amount).toBe(2500);
-    const o = (await db.doc(`ticket_orders/${r.orderId}`).get()).data()!;
-    expect(o.status).toBe('pending_payment');
-    expect(o.expiresAt.toMillis() - Date.now()).toBeGreaterThan(23 * HOUR);
-    expect((await db.doc(`ticket_codes/${r.code}`).get()).data()!.orderId).toBe(r.orderId);
-    // Same buyer again: same order (no second hold).
-    const again = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
-    expect(again.orderId).toBe(r.orderId);
-    expect((await db.doc('ticket_inventory/event_e1').get()).data()!.held).toBe(1);
-    expect((await refused(call(getEventTicketCode, { eventId: 'e1' }, BUYER))).reason).toBe('not_going');
+    const e = await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER));
+    expect(e.reason).toBe('link_payments_discontinued');
+    expect((await db.collection('ticket_orders').get()).size).toBe(0);
+    expect((await db.doc('ticket_inventory/event_e1').get()).exists).toBe(false);
+    await db.doc('events/e1/ticket_types/free').set({ name: 'Free', price: 0, active: true });
+    await db.doc('events/e1/ticket_types/ga').set({ name: 'GA', price: 2500, active: true });
+    expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'e1', items: [{ typeId: 'ga', qty: 1 }] }, BUYER))).reason)
+      .toBe('link_payments_discontinued');
+    const free = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1', items: [{ typeId: 'free', qty: 1 }] }, BUYER);
+    expect(free.mode).toBe('free');
   });
 
-  test('active business whose links are still in the hidden copy (renewal race) keeps selling', async () => {
-    // Personal payment links are public only while the tier is paid
-    // (profiles/paymentLinksVisibility.ts). Right after a renewal the
-    // visibility hook may not have moved them back yet.
-    await db.doc(`profiles/${ORG}`).update({ paymentLinks: admin.firestore.FieldValue.delete() });
-    await db.doc(`profiles_private/${ORG}`).set({ paymentLinksHidden: { pix: 'org@pix.example' } });
+  test('rules: no event may switch to link; a legacy link event stays editable', async () => {
+    await paidEvent('e2');
+    expect(await clientWrite(ORG, 'events/e2', { ticketProvider: 'link' }, ['ticketProvider'])).toBe(403);
     await linkEvent();
-    const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
-    expect(r.payment).toEqual({ method: 'pix', value: 'org@pix.example', instructions: null });
-  });
-
-  test('method missing from the organizer profile -> not on sale', async () => {
-    await linkEvent({ ticketLinkMethod: 'revolut' });
-    expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER))).reason).toBe('organizer_payments_not_ready');
-  });
-
-  test('a pasted Stripe / Mercado Pago link is never a manual method (needs the connected account)', async () => {
-    await db.doc(`profiles/${ORG}`).set({ paymentLinks: { stripe: 'https://buy.stripe.com/abc', mercadoPago: 'https://mpago.la/x' } }, { merge: true });
-    for (const m of ['stripe', 'mercadoPago']) {
-      await linkEvent({ ticketLinkMethod: m });
-      expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER))).reason).toBe('organizer_payments_not_ready');
-    }
-  });
-
-  test('link mode accepts any currency and shows the exact amount', async () => {
-    await linkEvent({ price: 12.5, currency: 'CHF' });
-    const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
-    expect(r).toMatchObject({ amount: 1250, currency: 'chf' });
+    expect(await clientWrite(ORG, 'events/e1', { title: 'Renamed' }, ['title'])).toBe(200);
+    expect(await clientWrite(ORG, 'events/e1', { ticketProvider: 'stripe' }, ['ticketProvider'])).toBe(200);
+    expect(await clientWrite(ORG, 'events/e1', { ticketProvider: 'link' }, ['ticketProvider'])).toBe(403);
   });
 
   test('buyer cannot self-confirm; only the listing organizer confirms; ticket + push follow', async () => {
     await linkEvent();
-    const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
-    expect((await refused(call(tp.markTicketPaymentSent, { orderId: r.orderId }, OTHER))).code).toBe('not-found');
-    const sent = await call(tp.markTicketPaymentSent, { orderId: r.orderId, receiptPath: `ticket_receipts/${r.orderId}/r.jpg` }, BUYER);
+    const orderId = await openLinkOrder();
+    expect((await refused(call(tp.markTicketPaymentSent, { orderId }, OTHER))).code).toBe('not-found');
+    const sent = await call(tp.markTicketPaymentSent, { orderId, receiptPath: `ticket_receipts/${orderId}/r.jpg` }, BUYER);
     expect(sent.status).toBe('awaiting_confirmation');
     const toOrg = await db.collection('notifications').where('userId', '==', ORG).where('type', '==', 'ticket_payment_to_confirm').get();
     expect(toOrg.size).toBe(1);
 
-    expect((await refused(call(tp.confirmTicketPayment, { orderId: r.orderId }, BUYER))).code).toBe('permission-denied');
-    expect((await refused(call(tp.confirmTicketPayment, { orderId: r.orderId }, STRANGER))).code).toBe('permission-denied');
+    expect((await refused(call(tp.confirmTicketPayment, { orderId }, BUYER))).code).toBe('permission-denied');
+    expect((await refused(call(tp.confirmTicketPayment, { orderId }, STRANGER))).code).toBe('permission-denied');
     // Clients cannot write the order directly either.
-    expect(await clientWrite(BUYER, `ticket_orders/${r.orderId}`, { status: 'paid' }, ['status'])).toBe(403);
-    expect((await db.doc(`ticket_orders/${r.orderId}`).get()).data()!.status).toBe('awaiting_confirmation');
-    expect((await db.doc(`tickets/${r.orderId}_1`).get()).exists).toBe(false);
+    expect(await clientWrite(BUYER, `ticket_orders/${orderId}`, { status: 'paid' }, ['status'])).toBe(403);
+    expect((await db.doc(`ticket_orders/${orderId}`).get()).data()!.status).toBe('awaiting_confirmation');
+    expect((await db.doc(`tickets/${orderId}_1`).get()).exists).toBe(false);
 
-    const c = await call(tp.confirmTicketPayment, { orderIds: [r.orderId] }, ORG);
-    expect(c.results[r.orderId]).toBe('paid');
-    const t = (await db.doc(`tickets/${r.orderId}_1`).get()).data()!;
+    const c = await call(tp.confirmTicketPayment, { orderIds: [orderId] }, ORG);
+    expect(c.results[orderId]).toBe('paid');
+    const t = (await db.doc(`tickets/${orderId}_1`).get()).data()!;
     expect(t.status).toBe('valid');
     expect((await db.doc(`events/e1/attendees/${BUYER}`).get()).data()!.status).toBe('going');
     const ready = await db.collection('notifications').where('userId', '==', BUYER).where('type', '==', 'ticket_ready').get();
     expect(ready.size).toBe(1);
     // Ticket readable by the buyer only.
-    expect(await clientRead(BUYER, `tickets/${r.orderId}_1`)).toBe(200);
-    expect(await clientRead(ORG, `tickets/${r.orderId}_1`)).toBe(403);
-    expect(await clientRead(ORG, `ticket_orders/${r.orderId}`)).toBe(200);
-    expect(await clientRead(STRANGER, `ticket_orders/${r.orderId}`)).toBe(403);
+    expect(await clientRead(BUYER, `tickets/${orderId}_1`)).toBe(200);
+    expect(await clientRead(ORG, `tickets/${orderId}_1`)).toBe(403);
+    expect(await clientRead(ORG, `ticket_orders/${orderId}`)).toBe(200);
+    expect(await clientRead(STRANGER, `ticket_orders/${orderId}`)).toBe(403);
   });
 
   test('reject releases the seat and tells the buyer why', async () => {
     await linkEvent({ maxAttendees: 1 });
-    const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
-    expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, OTHER))).reason).toBe('sold_out');
-    await call(tp.markTicketPaymentSent, { orderId: r.orderId }, BUYER);
-    expect((await refused(call(tp.rejectTicketPayment, { orderId: r.orderId, reason: 'no' }, BUYER))).code).toBe('permission-denied');
-    await call(tp.rejectTicketPayment, { orderId: r.orderId, reason: 'Not received' }, ORG);
-    const o = (await db.doc(`ticket_orders/${r.orderId}`).get()).data()!;
+    const orderId = await openLinkOrder();
+    await call(tp.markTicketPaymentSent, { orderId }, BUYER);
+    expect((await refused(call(tp.rejectTicketPayment, { orderId, reason: 'no' }, BUYER))).code).toBe('permission-denied');
+    await call(tp.rejectTicketPayment, { orderId, reason: 'Not received' }, ORG);
+    const o = (await db.doc(`ticket_orders/${orderId}`).get()).data()!;
     expect(o).toMatchObject({ status: 'rejected', rejectReason: 'Not received', seatHeld: false });
     expect((await db.doc('ticket_inventory/event_e1').get()).data()!.held).toBe(0);
-    const b = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, OTHER);
-    expect(b.mode).toBe('link');
+    const told = await db.collection('notifications').where('userId', '==', BUYER).where('type', '==', 'ticket_payment_rejected').get();
+    expect(told.size).toBe(1);
   });
 
   test('expiry releases the seat; organizers get reminders for waiting payments', async () => {
     await linkEvent({ maxAttendees: 1 });
-    const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
-    await call(tp.markTicketPaymentSent, { orderId: r.orderId }, BUYER);
-    await db.doc(`ticket_orders/${r.orderId}`).update({ remindAt: TS.fromMillis(Date.now() - 1000) });
+    const orderId = await openLinkOrder();
+    await call(tp.markTicketPaymentSent, { orderId }, BUYER);
+    await db.doc(`ticket_orders/${orderId}`).update({ remindAt: TS.fromMillis(Date.now() - 1000) });
     expect(await remindDueConfirmations()).toBe(1);
-    await db.doc(`ticket_orders/${r.orderId}`).update({ expiresAt: TS.fromMillis(Date.now() - 1000) });
+    await db.doc(`ticket_orders/${orderId}`).update({ expiresAt: TS.fromMillis(Date.now() - 1000) });
     expect(await expireDueOrders()).toBe(1);
-    expect((await db.doc(`ticket_orders/${r.orderId}`).get()).data()!.status).toBe('expired');
+    expect((await db.doc(`ticket_orders/${orderId}`).get()).data()!.status).toBe('expired');
     expect((await db.doc('ticket_inventory/event_e1').get()).data()!.held).toBe(0);
   });
 
   test('receipt storage: buyer uploads images only, buyer + organizer read, nobody else', async () => {
     await linkEvent();
-    const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
-    const path = `ticket_receipts/${r.orderId}/receipt.jpg`;
-    expect(await storageUpload(STRANGER, `ticket_receipts/${r.orderId}/x.jpg`)).toBe(403);
-    expect(await storageUpload(BUYER, `ticket_receipts/${r.orderId}/x.pdf`, 'application/pdf')).toBe(403);
-    expect(await storageUpload(BUYER, `ticket_receipts/${r.orderId}/big.jpg`, 'image/jpeg', 6 * 1024 * 1024)).toBe(403);
+    const orderId = await openLinkOrder();
+    const path = `ticket_receipts/${orderId}/receipt.jpg`;
+    expect(await storageUpload(STRANGER, `ticket_receipts/${orderId}/x.jpg`)).toBe(403);
+    expect(await storageUpload(BUYER, `ticket_receipts/${orderId}/x.pdf`, 'application/pdf')).toBe(403);
+    expect(await storageUpload(BUYER, `ticket_receipts/${orderId}/big.jpg`, 'image/jpeg', 6 * 1024 * 1024)).toBe(403);
     expect(await storageUpload(BUYER, path)).toBe(200);
     expect(await storageGet(BUYER, path)).toBe(200);
     expect(await storageGet(ORG, path)).toBe(200);
@@ -584,7 +627,7 @@ describe('link mode: payment link + organizer confirmation', () => {
 // ═══════════════════════════════════════════════ experiences
 
 describe('experiences: QR only after paid', () => {
-  test('link-mode booking: no QR until the host confirms, then the paid ticket QR', async () => {
+  test('LEGACY link-mode booking already in flight: no QR until the host confirms, then the paid ticket QR', async () => {
     await db.doc('user_experiences/x1').set({ hostId: ORG, title: 'Cooking class', status: 'published', paymentProvider: 'link', paymentLinkMethod: 'paypal' });
     await db.doc('bookings/bk1').set({
       experienceId: 'x1', slotId: 's1', hostId: ORG, guestId: BUYER, guests: 2, status: 'confirmed',
@@ -670,7 +713,7 @@ describe('multiple tickets per purchase + per-user limit', () => {
     expect(h.held).toBeLessThanOrEqual(4);
     expect(both.some((x) => x.status === 'fulfilled')).toBe(true);
 
-    await stripePaid(a.orderId, 7500);
+    await stripePaid(a.orderId);
     const tickets = await db.collection('tickets').where('orderId', '==', a.orderId).get();
     expect(tickets.size).toBe(3);
     expect(new Set(tickets.docs.map((d) => d.data().qrPayload)).size).toBe(3);
@@ -703,7 +746,7 @@ describe('multiple tickets per purchase + per-user limit', () => {
     await connectStripe();
     await paidEvent('e1', { startDate: TS.fromMillis(Date.now() - 10 * 60000) });
     const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1', quantity: 2 }, BUYER);
-    await stripePaid(r.orderId, 5000);
+    await stripePaid(r.orderId);
     const t1 = (await db.doc(`tickets/${r.orderId}_1`).get()).data()!.qrPayload;
     const t2 = (await db.doc(`tickets/${r.orderId}_2`).get()).data()!.qrPayload;
     expect((await call(checkInTicket, { payload: t1, eventId: 'e1' }, ORG)).alreadyCheckedIn).toBe(false);
@@ -736,7 +779,7 @@ describe('multiple tickets per purchase + per-user limit', () => {
 });
 
 describe('experiences: per_group pricing', () => {
-  test('total = groupPrice whatever the party size; ONE group ticket with partySize', async () => {
+  test('total = groupPrice whatever the party size; ONE group ticket with partySize (legacy link booking)', async () => {
     await db.doc('user_experiences/g1').set({ hostId: ORG, title: 'Private boat', status: 'published', pricingMode: 'per_group', groupPrice: 40000, maxGroupSize: 8, paymentProvider: 'link', paymentLinkMethod: 'pix' });
     await db.doc('bookings/gb').set({
       experienceId: 'g1', slotId: 's1', hostId: ORG, guestId: BUYER, guests: 6, status: 'confirmed', pricingMode: 'per_group', maxGroupSize: 8,
@@ -771,14 +814,18 @@ describe('event ticket types', () => {
     await typedEvent();
     const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'tt', items: [{ typeId: 'ga', qty: 2 }, { typeId: 'vip', qty: 1 }], price: 1 }, BUYER);
     const o = (await db.doc(`ticket_orders/${r.orderId}`).get()).data()!;
-    expect(o).toMatchObject({ totalAmount: 12000, quantity: 3 });
+    // Trial fee per ticket (first paid listing of the host), one fee line.
+    const fee = 3 * usdCentsToMinor(100, 'brl')!;
+    expect(o).toMatchObject({ ticketSubtotal: 12000, feeTotal: fee, totalAmount: 12000 + fee, quantity: 3 });
+    expect(o.feeLines).toEqual([{ typeId: 'ga', unitFee: fee / 3, quantity: 2 }, { typeId: 'vip', unitFee: fee / 3, quantity: 1 }]);
     const li = stripeCalls[0].params.line_items;
-    expect(li).toHaveLength(2);
+    expect(li).toHaveLength(3);
+    expect(li[2].price_data).toMatchObject({ unit_amount: fee, product_data: { name: 'GreenGo service fee' } });
     expect(li[0]).toMatchObject({ quantity: 2, price_data: { unit_amount: 2000 } });
     expect(li[1]).toMatchObject({ quantity: 1, price_data: { unit_amount: 8000 } });
     expect(li[1].price_data.product_data.name).toContain('VIP');
     expect((await db.doc('events/tt/ticket_types/vip').get()).data()!.held).toBe(1);
-    await stripePaid(r.orderId, 12000);
+    await stripePaid(r.orderId);
     const tickets = (await db.collection('tickets').where('orderId', '==', r.orderId).get()).docs.map((d) => d.data());
     expect(tickets.map((t) => t.ticketTypeName).sort()).toEqual(['General', 'General', 'VIP']);
     expect((await db.doc('events/tt/ticket_types/vip').get()).data()).toMatchObject({ held: 0, sold: 1 });
@@ -814,7 +861,8 @@ describe('event ticket types', () => {
     await connectStripe();
     await paidEvent('legacy1');
     const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'legacy1', quantity: 1 }, BUYER);
-    expect((await db.doc(`ticket_orders/${r.orderId}`).get()).data()).toMatchObject({ totalAmount: 2500, items: null });
+    expect((await db.doc(`ticket_orders/${r.orderId}`).get()).data())
+      .toMatchObject({ ticketSubtotal: 2500, totalAmount: 2500 + usdCentsToMinor(100, 'brl')!, items: null });
   });
 
   test('clients cannot touch the sale counters of a type', async () => {
@@ -842,7 +890,7 @@ describe('experiences: recurring availability, per-day prices, host removes book
     const { date, start } = nextWeekday();
     await db.doc('user_experiences/r1').set({
       hostId: ORG, title: 'Street food walk', status: 'published', price: 50, currency: 'R$', isFree: false,
-      paymentMethods: ['online'], paymentProvider: 'link', paymentLinkMethod: 'pix',
+      paymentMethods: ['online'], paymentProvider: 'stripe',
       maxGroupSize: 10, durationMinutes: 120,
       weekendPrice: 70,
       availabilityRules: {

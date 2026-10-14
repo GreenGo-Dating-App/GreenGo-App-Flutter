@@ -2,10 +2,39 @@
 
 Branch `feat/ticket-payments` · 2026-10-08 · nothing deployed.
 
+> **Update 2026-10-14 (branch `feat/ticket-fees-nolinks`), supersedes the
+> "no fee" and "Link mode" parts below:**
+>
+> * **GreenGo service fee, added on top for the buyer.** The organizer receives
+>   the full listed ticket price (minus Stripe / MP processing fees, which the
+>   providers debit from the connected account); the buyer pays ticket price +
+>   fee per ticket, by the HOST's effective tier at checkout: Silver $3 + 10 %
+>   (cap $10), Gold $2 + 10 % (cap $9), Platinum / TEST $1 + 10 % (cap $8),
+>   no paid tier = Silver rule. Free tickets: no fee. **Trial:** the host's
+>   first paid listing (event or experience) with a checkout pays a flat $1
+>   per ticket for its whole life (claimed once in
+>   `payment_accounts/{hostId}.feeTrial`; a host who already sold paid tickets
+>   gets none). The US$ parts are converted with the fixed `USD_RATES` table
+>   in `functions/src/ticket_payments/fees.ts` (owner-maintained; mirrored in
+>   `lib/features/ticket_payments/domain/ticket_fees.dart`), rounded to the
+>   currency's minor unit; the 10 % is taken in the ticket currency. Collected
+>   with a "GreenGo service fee" line + Stripe
+>   `payment_intent_data.application_fee_amount` / MP `marketplace_fee`.
+>   Orders store `ticketSubtotal`, `feeTotal`, `feePerTicket`, `feeLines`,
+>   `feeRuleApplied`, and `totalAmount` = what the buyer pays. Full refunds
+>   use `refund_application_fee: true` (Stripe) so the fee goes back too.
+> * **Payment links are no longer accepted.** No new `link` orders, no event
+>   may switch to `ticketProvider: 'link'` (rules), experiences are paid only
+>   `online` through Stripe / Mercado Pago (cash / payment link refused by
+>   `createUserExperience`, the rules and `publishUserExperience`), and
+>   profile `paymentLinks` can only be cleared. Link orders and link / cash
+>   bookings already open keep working until they close (confirm / reject /
+>   remind / expire). Leftover profile data: `functions/scripts/clear-payment-links.ts`.
+
 GreenGo sells tickets for paid events and paid experiences **without touching
-the money**: every payment goes straight to the organizer, and GreenGo takes
-**no fee** (no `application_fee_amount`, no `marketplace_fee`). The QR ticket
-exists **only after the payment is confirmed**, in both modes.
+the ticket money**: every payment goes straight to the organizer; GreenGo's
+service fee (above) is collected on top. The QR ticket exists **only after the
+payment is confirmed**.
 
 | Mode | How the buyer pays | Who confirms | Seat hold |
 |---|---|---|---|

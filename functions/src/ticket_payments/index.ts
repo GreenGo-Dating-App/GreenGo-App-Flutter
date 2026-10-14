@@ -35,7 +35,7 @@ function callable(opts: typeof CALL | typeof CALL_STRIPE, impl: Impl) {
 }
 
 // Organizer onboarding ("Get paid").
-export const getTicketPaymentsConfig = callable(CALL_STRIPE, () => accounts.getTicketPaymentsConfig());
+export const getTicketPaymentsConfig = callable(CALL_STRIPE, (uid, data) => accounts.getTicketPaymentsConfig(uid, data));
 export const startStripeOnboarding = callable(CALL_STRIPE, (uid, data, email) => accounts.startStripeOnboarding(uid, data, email));
 export const startMercadoPagoOnboarding = callable(CALL, (uid, data) => accounts.startMercadoPagoOnboarding(uid, data));
 export const refreshPaymentAccount = callable(CALL_STRIPE, (uid) => accounts.refreshPaymentAccount(uid));

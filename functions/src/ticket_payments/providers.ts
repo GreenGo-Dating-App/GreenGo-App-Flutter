@@ -3,9 +3,11 @@
  * REST). Everything that talks to a provider goes through `ticketDeps`, so the
  * emulator tests replace the network with fakes.
  *
- * NO PLATFORM FEE: Stripe sessions are direct charges on the organizer's
- * account WITHOUT application_fee_amount; MP preferences are created with the
- * organizer's own token WITHOUT marketplace_fee.
+ * GreenGo service fee (./fees.ts, added on top for the buyer): Stripe sessions
+ * are direct charges on the organizer's account WITH application_fee_amount =
+ * the fee; MP preferences are created with the organizer's own token WITH
+ * marketplace_fee = the fee. Full refunds give the fee back too (Stripe
+ * refund_application_fee; MP refunds the marketplace fee with the payment).
  */
 import Stripe from 'stripe';
 import * as cfg from './config';
@@ -100,11 +102,17 @@ async function stripeSession(accountId: string, i: CheckoutInput, types: string[
   return { id: s.id, url: s.url };
 }
 
-/** Full refund of a direct charge, ON the connected account (idempotent per order). */
+/**
+ * Full refund of a direct charge, ON the connected account (idempotent per
+ * order). The buyer always gets the whole charge back (tickets + fee);
+ * refund_application_fee makes GreenGo return its fee to the organizer's
+ * account, so the organizer does not pay GreenGo's fee out of pocket.
+ */
 export async function stripeRefund(accountId: string, paymentIntentId: string, orderId: string): Promise<string> {
   const r = await ticketDeps.stripe().refunds.create({
     payment_intent: paymentIntentId,
     reason: 'requested_by_customer',
+    refund_application_fee: true,
     metadata: { orderId, greengo: 'ticket' },
   }, { stripeAccount: accountId, idempotencyKey: `gg_refund_${orderId}` });
   return r.id;

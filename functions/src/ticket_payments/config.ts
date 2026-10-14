@@ -2,8 +2,10 @@
  * Ticket payments (paid events + paid experiences) — configuration.
  *
  * Money goes STRAIGHT to the organizer's own Stripe (Connect Standard, direct
- * charge) or Mercado Pago (OAuth marketplace) account. GreenGo takes NO fee:
- * no application_fee_amount, no marketplace_fee.
+ * charge) or Mercado Pago (OAuth marketplace) account. The organizer receives
+ * the full listed ticket price; the BUYER pays a GreenGo service fee on top
+ * (./fees.ts: by the host's tier, first paid listing $1), collected through
+ * Stripe application_fee_amount / Mercado Pago marketplace_fee.
  *
  * Every value comes from the environment (functions/.env, gitignored, or a
  * Secret Manager secret bound to the function). Nothing is required at deploy
@@ -42,10 +44,18 @@ export const DEFAULT_MAX_TICKETS_PER_USER = 4;
 export const MP_REFRESH_BEFORE_MS = 10 * 24 * 60 * 60 * 1000;
 
 /**
- * Mode B "instant": connected Stripe / Mercado Pago (webhook confirms).
- * Mode A "link" (default, zero setup): one of the organizer's own payment
- * methods; the buyer says "I've paid" and the ORGANIZER confirms. GreenGo does
- * not verify link payments.
+ * Mode B "instant": connected Stripe / Mercado Pago (webhook confirms). The
+ * ONLY mode for new orders (owner rule 2026-10-14: payment links are no
+ * longer accepted).
+ * Mode A "link" (LEGACY, read-only): one of the organizer's own payment
+ * methods; the buyer says "I've paid" and the ORGANIZER confirms. No new link
+ * order is created for events; an experience booking that was ALREADY created
+ * with provider 'link' may still open its order so it can complete. Orders
+ * already open keep the confirm / reject / remind / expire flow below until
+ * they close. Cleanup once no link order is open: drop 'link' from
+ * TicketProvider, LINK_* / CONFIRM_* / REMIND_* constants,
+ * markTicketPaymentSent / confirmTicketPayment / rejectTicketPayment,
+ * remindTicketConfirmations and the ticket_receipts storage rule.
  */
 export const PROVIDERS = ['stripe', 'mercadopago'] as const;
 export type Provider = typeof PROVIDERS[number];
