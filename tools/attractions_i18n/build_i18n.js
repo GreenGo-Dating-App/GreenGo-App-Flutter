@@ -220,7 +220,178 @@ async function stepJobs() {
   w('about', about);
 }
 
-const steps = { export: stepExport, extract: stepExtract, jobs: stepJobs };
+// ------------------------------------------------------------------- render
+
+/** id -> translations of one kind (build/tr/<kind>.jsonl from translate_batch.py). */
+function loadTr(kind) {
+  const p = path.join(OUT, 'tr', `${kind}.jsonl`);
+  const m = new Map();
+  if (!fs.existsSync(p)) return m;
+  for (const l of fs.readFileSync(p, 'utf8').split('\n')) {
+    if (!l.trim()) continue;
+    const x = JSON.parse(l);
+    m.set(x.id, x.tr);
+  }
+  return m;
+}
+
+const crypto = require('crypto');
+/** Hash of the English texts an i18n entry was made from (stale check after a reseed). */
+function srcHash(r) {
+  const h = crypto.createHash('sha256');
+  for (const f of [...PROSE, ...DICT, 'curiosities', 'cityName', 'name', 'stateProvince', 'countryName']) {
+    h.update(JSON.stringify(r[f] ?? null));
+  }
+  return h.digest('hex').slice(0, 16);
+}
+
+/**
+ * Per attraction and language: every PROSE / DICT field, curiosities, the
+ * localised city and the list template (`shortTemplate`, {N}/{C} kept), plus
+ * the missing "What is it?" languages. A field is left out when any of its
+ * sentences has no translation, so the app shows that field in English rather
+ * than a half-translated text.
+ */
+async function stepRender() {
+  const tplId = new Map(JSON.parse(fs.readFileSync(path.join(OUT, 'templates.json'), 'utf8')).map((t) => [t.text, t.id]));
+  const dictId = new Map(JSON.parse(fs.readFileSync(path.join(OUT, 'dict.json'), 'utf8')).map((d) => [d.text, d.id]));
+  const tr = Object.fromEntries(['tpl', 'dict', 'country', 'state', 'city', 'cur', 'about'].map((k) => [k, loadTr(k)]));
+  const out = fs.createWriteStream(path.join(OUT, 'i18n.jsonl'));
+  const stats = {};
+  const bump = (k) => { stats[k] = (stats[k] || 0) + 1; };
+  const problems = [];
+  let n = 0;
+  let maxBytes = 0;
+
+  for await (const r of rows()) {
+    n++;
+    const ents = entities(r);
+    const country = tr.country.get(r.countryIso2 || '') || {};
+    const state = tr.state.get(`${r.countryIso2 || ''}|${r.stateProvince}`) || {};
+    const city = tr.city.get(`${r.countryIso2 || ''}|${r.cityName}`) || {};
+    const i18n = {};
+    for (const lang of TARGETS) {
+      const K = country[lang] || { name: r.countryName, in: `in ${r.countryName}`, of: `of ${r.countryName}` };
+      const S = state[lang] || { name: r.stateProvince, in: `in ${r.stateProvince}`, of: `of ${r.stateProvince}` };
+      const N = (r.names && r.names[lang]) || r.name;
+      const C = city[lang] || r.cityName;
+      const place = (t) => t
+        .replace(/\{in_K\}/g, K.in).replace(/\{of_K\}/g, K.of).replace(/\{K\}/g, K.name)
+        .replace(/\{in_S\}/g, S.in).replace(/\{of_S\}/g, S.of).replace(/\{S\}/g, S.name);
+      const fill = (t) => place(t).replace(/\{C\}/g, C).replace(/\{N\}/g, N);
+      // One prose unit -> translated template text, or null if any sentence is missing.
+      const unitTpl = (u) => {
+        const parts = [];
+        for (const s of templatize(u, ents).split(SPLIT)) {
+          const k = s.trim();
+          if (!k) continue;
+          const t = tr.tpl.get(tplId.get(k))?.[lang];
+          if (!t) return null;
+          parts.push(t);
+        }
+        return parts.join(' ');
+      };
+      const t = {};
+      for (const f of PROSE) {
+        const us = units(r[f]);
+        if (!us.length) continue;
+        const done = us.map(unitTpl);
+        if (done.some((x) => x == null)) { bump(`miss:${f}:${lang}`); continue; }
+        t[f] = Array.isArray(r[f]) ? done.map(fill) : fill(done[0]);
+        if (f === 'descriptionShort') t.shortTemplate = place(done[0]);
+      }
+      for (const f of DICT) {
+        const v = typeof r[f] === 'string' ? r[f].trim() : '';
+        if (!v) continue;
+        const x = tr.dict.get(dictId.get(v))?.[lang];
+        if (x) t[f] = x; else bump(`miss:${f}:${lang}`);
+      }
+      const cur = Array.isArray(r.curiosities) ? r.curiosities : [];
+      if (cur.length) {
+        const c = cur.map((_, k) => tr.cur.get(`${r._doc}#${k}`)?.[lang]);
+        if (c.every(Boolean)) t.curiosities = c; else bump(`miss:curiosities:${lang}`);
+      }
+      if (city[lang] && city[lang] !== r.cityName) t.cityName = city[lang];
+      for (const [k, v] of Object.entries(t)) {
+        const left = (Array.isArray(v) ? v.join(' ') : v).match(/\{[A-Za-z_]+\}/);
+        if (left && k !== 'shortTemplate') problems.push(`${r._doc} ${lang} ${k}: ${left[0]}`);
+      }
+      i18n[lang] = t;
+    }
+
+    // "What is it?": fill the languages Wikipedia lacks.
+    const aboutTr = tr.about.get(r._doc);
+    const src = aboutSource(r.about);
+    const about = {};
+    const aboutTranslated = {};
+    const aboutSources = {};
+    if (aboutTr && src) {
+      for (const [lang, text] of Object.entries(aboutTr)) {
+        if (!text || (r.about && r.about[lang])) continue;
+        about[lang] = text;
+        aboutTranslated[lang] = src;
+        if (r.aboutSources && r.aboutSources[src]) aboutSources[lang] = r.aboutSources[src];
+        bump(`about:${lang}`);
+      }
+    }
+    const rec = { doc: r._doc, src: srcHash(r), i18n, about, aboutTranslated, aboutSources };
+    const line = JSON.stringify(rec);
+    maxBytes = Math.max(maxBytes, line.length);
+    out.write(line + '\n');
+  }
+  await new Promise((res) => out.end(res));
+  fs.writeFileSync(path.join(OUT, 'render_problems.txt'), problems.join('\n'));
+  console.log(`rendered ${n}; largest i18n record ${maxBytes} bytes; problems ${problems.length}`);
+  console.log(Object.entries(stats).sort().map(([k, v]) => `${k}=${v}`).join('\n'));
+}
+
+// -------------------------------------------------------------------- write
+
+/**
+ * attractions/{id}: i18n (whole map, replaced), i18nSrc, i18nAt, and the
+ * missing about.{lang} / aboutTranslated.{lang} / aboutSources.{lang} as field
+ * paths (existing Wikipedia languages are never touched). source.jsonl is the
+ * backup of every field this overwrites.
+ *   --limit N   only the first N records (try-out)
+ *   --doc ID    only that attraction
+ */
+async function stepWrite() {
+  const a = admin();
+  const db = a.firestore();
+  const limit = Number(arg('--limit', 0)) || 0;
+  const only = arg('--doc');
+  const bw = db.bulkWriter();
+  let failed = 0;
+  bw.onWriteError((e) => {
+    if (e.failedAttempts < 5) return true;
+    failed++;
+    console.error(`\nFAILED ${e.documentRef.id}: ${e.message}`);
+    return false;
+  });
+  const rl = readline.createInterface({ input: fs.createReadStream(path.join(OUT, 'i18n.jsonl')) });
+  let n = 0;
+  for await (const l of rl) {
+    if (!l.trim()) continue;
+    const x = JSON.parse(l);
+    if (only && x.doc !== only) continue;
+    const upd = {
+      i18n: x.i18n,
+      i18nSrc: x.src,
+      i18nAt: a.firestore.FieldValue.serverTimestamp(),
+    };
+    for (const [lang, v] of Object.entries(x.about)) upd[`about.${lang}`] = v;
+    for (const [lang, v] of Object.entries(x.aboutTranslated)) upd[`aboutTranslated.${lang}`] = v;
+    for (const [lang, v] of Object.entries(x.aboutSources)) upd[`aboutSources.${lang}`] = v;
+    bw.update(db.collection('attractions').doc(x.doc), upd);
+    n++;
+    if (n % 2000 === 0) process.stdout.write(`\rqueued ${n}`);
+    if (limit && n >= limit) break;
+  }
+  await bw.close();
+  console.log(`\nWRITE DONE ${n} docs, failed ${failed}`);
+}
+
+const steps = { export: stepExport, extract: stepExtract, jobs: stepJobs, render: stepRender, write: stepWrite };
 if (!steps[step]) {
   console.error(`--step one of: ${Object.keys(steps).join(', ')}`);
   process.exit(1);

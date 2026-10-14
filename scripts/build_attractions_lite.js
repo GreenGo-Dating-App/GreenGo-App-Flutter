@@ -58,6 +58,11 @@
  *     d   description verbatim (when not templated), capped at 120 chars
  *     vd  visit duration*          aa  photo credit author
  *     al  photo credit licence*
+ *     n_*  localised title (n_en n_it n_es n_pt n_ptbr n_fr n_de; '' = n)
+ *     c_*  localised city name (c_it c_es c_pt c_ptbr c_fr c_de; '' = c)
+ *     d_*  short description in that language with {N} / {C} left for the
+ *          localised title and city* (attractions/{id}.i18n.{lang}.shortTemplate,
+ *          tools/attractions_i18n)
  *   (* = dictionary column: the cell is an index into dict[col])
  *   Not carried (detail page only): categoryGroup, indoorOutdoor,
  *   wheelchairAccessible - the detail page loads them from `attractions/{id}`.
@@ -114,11 +119,20 @@ const COLS = [
   // Localised titles (attractions/{id}.names, scripts/build_attraction_names_i18n.js);
   // a cell is empty when it equals `n`. Older apps ignore unknown columns.
   'n_en', 'n_it', 'n_es', 'n_pt', 'n_ptbr', 'n_fr', 'n_de',
+  // City names and short-description templates per language
+  // (attractions/{id}.i18n, tools/attractions_i18n); older apps ignore them.
+  'c_it', 'c_es', 'c_pt', 'c_ptbr', 'c_fr', 'c_de',
+  'd_it', 'd_es', 'd_pt', 'd_ptbr', 'd_fr', 'd_de',
 ];
 const NAME_COLS = { n_en: 'en', n_it: 'it', n_es: 'es', n_pt: 'pt', n_ptbr: 'pt_BR', n_fr: 'fr', n_de: 'de' };
 /** id -> names map of the country being built (empty when not loaded). */
 let NAMES = new Map();
-const DICT_COLS = ['cat', 'ci', 'imp', 'ii', 'cu', 'dt', 'vd', 'al'];
+/** Column suffix -> app language of the c_* / d_* columns. */
+const LANG_COLS = { it: 'it', es: 'es', pt: 'pt', ptbr: 'pt_BR', fr: 'fr', de: 'de' };
+/** id -> i18n map ({lang: {cityName, shortTemplate}}) of the country being built. */
+let I18N = new Map();
+const DICT_COLS = ['cat', 'ci', 'imp', 'ii', 'cu', 'dt', 'vd', 'al',
+  'd_it', 'd_es', 'd_pt', 'd_ptbr', 'd_fr', 'd_de'];
 const SEPARATORS = ['|', '~', '^', '`', '¦', '\u001f'];
 
 // ---------------------------------------------------------------- helpers ---
@@ -295,6 +309,13 @@ function liteCells(it, iso) {
   for (const [col, lang] of Object.entries(NAME_COLS)) {
     const v = str(names[lang]);
     cells[col] = v && v !== name ? v : '';
+  }
+  const i18n = I18N.get(cells.i) || {};
+  for (const [suffix, lang] of Object.entries(LANG_COLS)) {
+    const t = i18n[lang] || {};
+    const c = str(t.cityName);
+    cells[`c_${suffix}`] = c && c !== city ? c : '';
+    cells[`d_${suffix}`] = str(t.shortTemplate);
   }
   return { cells, score };
 }
@@ -560,9 +581,17 @@ async function main() {
     }
     let build;
     NAMES = new Map();
+    I18N = new Map();
     if (db) {
-      const ns = await db.collection('attractions').where('countryIso2', '==', iso).select('names').get();
-      for (const d of ns.docs) if (d.get('names')) NAMES.set(d.id, d.get('names'));
+      const fields = ['names'];
+      for (const lang of Object.values(LANG_COLS)) {
+        fields.push(`i18n.${lang}.cityName`, `i18n.${lang}.shortTemplate`);
+      }
+      const ns = await db.collection('attractions').where('countryIso2', '==', iso).select(...fields).get();
+      for (const d of ns.docs) {
+        if (d.get('names')) NAMES.set(d.id, d.get('names'));
+        if (d.get('i18n')) I18N.set(d.id, d.get('i18n'));
+      }
     }
     try {
       build = buildCountry(iso, c.items, c.src, maxBytes);
