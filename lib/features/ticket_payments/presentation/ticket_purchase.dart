@@ -12,8 +12,8 @@ import 'ticket_l10n.dart';
 ///
 /// Instant (Stripe / MP): the checkout opens INSIDE the app (Custom Tab /
 /// SFSafariViewController); on web the same tab is redirected and the return
-/// page deep-links back to `/t/{orderId}`. Manual: the order screen shows the
-/// amount, the GG- code and the organizer's payment method.
+/// page deep-links back to `/t/{orderId}`. Free ticket types: the order screen
+/// shows the tickets right away. (Payment links are no longer accepted.)
 Future<void> startTicketPurchase(
   BuildContext context, {
   required String kind,
@@ -36,7 +36,7 @@ Future<void> startTicketPurchase(
       items: items,
       locale: Localizations.localeOf(context).toLanguageTag(),
     );
-    if (!r.isLink && !r.isFree && r.checkoutUrl != null) {
+    if (!r.isFree && r.checkoutUrl != null) {
       if (kIsWeb) {
         await TicketPaymentsService.openInApp(r.checkoutUrl!);
         return;

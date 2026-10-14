@@ -15558,53 +15558,9 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get paymentLinksTitle => 'Payment methods';
-
-  @override
-  String get paymentLinksNone => 'No payment methods added';
-
-  @override
-  String paymentLinksCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count payment methods',
-      one: '1 payment method',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get paymentLinksInfoTitle => 'Get paid directly';
-
-  @override
-  String get paymentLinksInfoBody =>
-      'Let people pay you with your own accounts. Money goes straight to you — GreenGo never processes, holds or takes a fee from these payments.';
-
-  @override
-  String get paymentLinksHintHandle => 'Username or link';
-
-  @override
-  String get paymentLinksHintPix =>
-      'CPF, CNPJ, e-mail, +55 phone or random key';
-
-  @override
-  String get paymentLinksHintLink => 'Paste your payment link';
-
-  @override
   String paymentLinkInvalid(String method) {
     return 'Invalid $method value — check it and try again';
   }
-
-  @override
-  String get paymentLinksUpdated => 'Payment methods updated';
-
-  @override
-  String get paymentLinksRules =>
-      'Use these only for payments between people (gifts, tips, in-person services and tours). GreenGo coins and memberships can only be bought in the app.';
-
-  @override
-  String get paymentLinksSection => 'Pay directly';
 
   @override
   String paymentDisclaimerTitle(String name) {
@@ -16301,14 +16257,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tpAddTicketType => 'Add ticket type';
 
   @override
-  String get tpAdviceLarge =>
-      'Many people expected: instant confirmation is recommended. Tickets are confirmed automatically, so you don\'t have to check every payment.';
-
-  @override
-  String get tpAdviceSmall =>
-      'Small group: the simplest is a payment link — no setup, you confirm each payment with one tap.';
-
-  @override
   String get tpAmountLabel => 'Amount';
 
   @override
@@ -16320,15 +16268,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tpBadgeBrazil => 'Recommended in Brazil';
-
-  @override
-  String get tpBadgeNoSetup => 'No setup';
-
-  @override
-  String get tpBadgeRecommended => 'Recommended';
-
-  @override
-  String get tpBankInstructionsLabel => 'Bank details and instructions';
 
   @override
   String tpBlockMinimum(String provider, String amount) {
@@ -16368,10 +16307,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tpCancelOrder => 'Cancel';
-
-  @override
-  String get tpCashInstructionsLabel =>
-      'Where and when to pay in cash (optional)';
 
   @override
   String get tpChooseHowToGetPaid =>
@@ -16468,11 +16403,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tpGetPaidIntro =>
-      'Money goes directly to your own account. GreenGo takes no fee on ticket sales.';
+      'Buyers pay in the app and the full ticket price goes straight to your own Stripe or Mercado Pago account. A GreenGo service fee is added on top for buyers.';
 
   @override
   String get tpGetPaidSubtitle =>
-      'Payment methods, Stripe and Mercado Pago, payments to confirm';
+      'Connect Stripe or Mercado Pago to sell tickets';
 
   @override
   String get tpGetPaidTitle => 'Get paid';
@@ -16496,14 +16431,8 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get tpInstantOptional => 'Instant confirmation (optional)';
-
-  @override
   String get tpInstantSubtitle =>
       'Buyers pay in the app; tickets are confirmed automatically.';
-
-  @override
-  String get tpInstantTitle => 'Instant confirmation';
 
   @override
   String get tpIvePaid => 'I\'ve paid';
@@ -16513,24 +16442,8 @@ class AppLocalizationsEn extends AppLocalizations {
       'This listing used an old payment method. Choose how guests pay so you can keep selling.';
 
   @override
-  String get tpManualAddMethodsHint =>
-      'Add your Pix, PayPal… in Profile > Business > Get paid to see them here.';
-
-  @override
   String get tpManualDisclaimer =>
       'GreenGo does not verify these payments: the organizer is responsible for confirming them.';
-
-  @override
-  String tpManualLargeWarning(String count) {
-    return 'With $count people you\'ll have to confirm each payment by hand.';
-  }
-
-  @override
-  String get tpManualMethodLabel => 'Payment method';
-
-  @override
-  String get tpManualSubtitle =>
-      'Your own payment method; you confirm each payment with one tap.';
 
   @override
   String get tpManualTitle => 'Payment link — you confirm';
@@ -16558,10 +16471,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tpMyPurchases => 'My purchases';
-
-  @override
-  String get tpNoFeeNote =>
-      'GreenGo takes no fee: the money goes straight to you.';
 
   @override
   String get tpNoLimitHint => 'Empty = no limit';
@@ -16657,10 +16566,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tpReceiptAttached => 'Receipt attached';
-
-  @override
-  String get tpReconnectBanner =>
-      'Connect Mercado Pago / Stripe to sell tickets with automatic confirmation. Pasted Stripe or Mercado Pago links can\'t be used for tickets.';
 
   @override
   String get tpRefresh => 'Refresh';
@@ -17150,10 +17055,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get wzTickets => 'Tickets';
 
   @override
-  String get wzWarnManualLarge =>
-      'Many people with manual payments: you will confirm each one. Consider instant confirmation.';
-
-  @override
   String get wzWarnNoAvailability =>
       'No availability yet: add dates after saving, or turn on \"Repeat every week\".';
 
@@ -17163,14 +17064,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get wzWhenWhere => 'When & where';
-
-  @override
-  String get tpPaymentMethodsSectionHint =>
-      'Your own methods (Pix, PayPal, …): people can pay you directly, and you can use them for tickets you confirm by hand.';
-
-  @override
-  String get tpPaymentMethodsSaveFailed =>
-      'Couldn\'t save your payment methods. Try again.';
 
   @override
   String wzNextTo(String step) {
@@ -22772,13 +22665,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'Connect Stripe or Mercado Pago: buyers pay in the app and their tickets are confirmed instantly, with no manual checks.';
 
   @override
-  String get tpManualSectionTitle => 'Manual Payment and Approval';
-
-  @override
-  String get tpManualSectionHint =>
-      'No setup: buyers pay you directly with one of the payment methods below (or cash / bank transfer). You confirm each payment yourself with the Payments to confirm button at the top; the ticket is issued once you confirm.';
-
-  @override
   String get paymentMethodsSettingsSubtitle =>
       'How people can pay you directly (Pix, PayPal…)';
 
@@ -22798,10 +22684,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get storefrontToggleHint => 'Turn your storefront on or off anytime';
-
-  @override
-  String get tpGetPaidManualInfo =>
-      'No setup: pick one of your Profile > Payment methods (or cash / bank transfer) in the event or experience, and confirm each payment yourself.';
 
   @override
   String emailTicketSubject(String title) {
@@ -24180,21 +24062,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get chatReplyNeedsBase => 'Base membership required to reply';
 
   @override
-  String get tierPaymentLinksRow => 'Payment links on your profile';
-
-  @override
-  String get paymentLinksTierLocked =>
-      'Available with Silver, Gold or Platinum';
-
-  @override
-  String get paymentLinksTierLockedBody =>
-      'Your saved payment methods are hidden from your profile. Upgrade to Silver, Gold or Platinum to show them again.';
-
-  @override
-  String get paymentLinksTierUpsellBody =>
-      'Let people pay you directly with Pix, PayPal and more. Upgrade to Silver, Gold or Platinum to add payment methods to your profile.';
-
-  @override
   String get locPickerTitle => 'Choose a place';
 
   @override
@@ -24819,4 +24686,58 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get uexpIdDocPendingCreateBody =>
       'Your ID document is being validated. You can create experiences as soon as it is approved, usually within a day.';
+
+  @override
+  String get tpTicketsSubtotal => 'Tickets';
+
+  @override
+  String get tpServiceFee => 'GreenGo service fee';
+
+  @override
+  String get tpServiceFeeTrial =>
+      'Intro fee: US\$1 per ticket on this organizer\'s first paid event.';
+
+  @override
+  String get tpPlusServiceFee => '+ GreenGo service fee (shown at checkout)';
+
+  @override
+  String get tpFeeHostNote =>
+      'You receive 100% of your ticket price. Buyers pay a GreenGo service fee per ticket on top, based on your plan. Free tickets have no fee.';
+
+  @override
+  String get tpFeeRuleSilver => 'Silver: US\$3 + 10% per ticket (max US\$10)';
+
+  @override
+  String get tpFeeRuleGold => 'Gold: US\$2 + 10% per ticket (max US\$9)';
+
+  @override
+  String get tpFeeRulePlatinum =>
+      'Platinum: US\$1 + 10% per ticket (max US\$8)';
+
+  @override
+  String get tpFeeRuleTrial => 'Your first paid event: only US\$1 per ticket';
+
+  @override
+  String tpFeeBuyerPreview(String price, String fee, String total) {
+    return 'Buyers pay $price + $fee service fee = $total per ticket';
+  }
+
+  @override
+  String get tpErrLinkDiscontinued =>
+      'Payment links are no longer accepted. The organizer needs to connect Stripe or Mercado Pago to sell tickets.';
+
+  @override
+  String get tpErrFeeCurrency =>
+      'This currency can\'t be used for paid tickets yet. Choose another currency.';
+
+  @override
+  String get tpLinkDiscontinuedBanner =>
+      'Payment links are no longer accepted. Connect Mercado Pago or Stripe to keep selling.';
+
+  @override
+  String get uexpErrPaymentLinkNotAccepted =>
+      'Payment links and cash are no longer accepted. Connect Stripe or Mercado Pago, or publish the experience as free.';
+
+  @override
+  String get uexpPaymentLinkNotAcceptedTitle => 'Connect a payment provider';
 }

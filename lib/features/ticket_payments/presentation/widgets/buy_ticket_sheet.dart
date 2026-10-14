@@ -5,14 +5,16 @@ import '../../../../core/widgets/organizer_share_notice.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../data/ticket_payments_service.dart';
+import '../../domain/ticket_fees.dart';
 import '../../domain/ticket_payments.dart';
 import '../ticket_purchase.dart';
+import 'ticket_fee_widgets.dart';
 
 /// "Buy tickets" for a paid event: ticket types (with price, perks and
 /// availability) or a single quantity stepper, limited by the remaining
-/// capacity and the per-person limit ("You can buy N more"). The exact total
-/// and currency are shown BEFORE the checkout opens. The server re-checks
-/// every number.
+/// capacity and the per-person limit ("You can buy N more"). The tickets, the
+/// GreenGo service fee and the exact total are shown BEFORE the checkout
+/// opens. The server re-checks (and re-prices) every number.
 class BuyTicketSheet extends StatefulWidget {
   const BuyTicketSheet({
     super.key,
@@ -21,6 +23,7 @@ class BuyTicketSheet extends StatefulWidget {
     this.service,
     this.types,
     this.alreadyHeld,
+    this.feeRule,
   });
 
   final Event event;
@@ -30,6 +33,7 @@ class BuyTicketSheet extends StatefulWidget {
   /// Test seams.
   final List<TicketType>? types;
   final int? alreadyHeld;
+  final TicketFeeRule? feeRule;
 
   static Future<void> show(BuildContext context, {required Event event, required String uid}) =>
       showModalBottomSheet<void>(
@@ -50,12 +54,19 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
   Map<String, int> _heldPerType = const {};
   final Map<String, int> _qty = {};
   int _single = 1;
+  TicketFeeRule? _feeRule;
 
   String get _currency => widget.event.currencyCode ?? isoCurrencyFor(widget.event.currency) ?? 'usd';
 
   @override
   void initState() {
     super.initState();
+    _feeRule = widget.feeRule;
+    if (_feeRule == null) {
+      _svc.feeRule(organizerId: widget.event.organizerId, kind: 'event', id: widget.event.id).then((r) {
+        if (mounted && r != null) setState(() => _feeRule = r);
+      });
+    }
     if (widget.types != null) {
       _types = widget.types;
     } else {
@@ -100,6 +111,17 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
     return types.fold(0, (s, t) => s + t.price * (_qty[t.id] ?? 0));
   }
 
+  /// GreenGo service fee for the current selection (null = not quoted yet).
+  TicketFeeBreakdown? get _fee {
+    final rule = _feeRule;
+    if (rule == null) return null;
+    final types = _types ?? const <TicketType>[];
+    final lines = types.isEmpty
+        ? [(unitAmount: toMinorUnits(widget.event.price ?? 0, _currency), quantity: _single)]
+        : [for (final t in types) (unitAmount: t.price, quantity: _qty[t.id] ?? 0)];
+    return computeTicketFee(rule, _currency, lines);
+  }
+
   int _maxFor(TicketType t) {
     final others = _selectedCount - (_qty[t.id] ?? 0);
     var max = 100;
@@ -119,6 +141,8 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
     final types = _types;
     final can = _canBuy;
     final now = DateTime.now();
+    final fee = _fee;
+    final total = _total + (fee?.fee ?? 0);
     return SafeArea(
       child: Padding(
         padding: EdgeInsets.fromLTRB(16, 16, 16, 16 + MediaQuery.viewInsetsOf(context).bottom),
@@ -151,13 +175,12 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
                     ]),
                   ),
                 const Divider(color: AppColors.divider, height: 24),
-                Row(children: [
-                  Text(l.tpTotal, style: const TextStyle(color: AppColors.textSecondary)),
-                  const Spacer(),
-                  Text(formatTicketAmount(_total, _currency),
-                      key: const ValueKey('buy-total'),
-                      style: const TextStyle(color: AppColors.richGold, fontSize: 18, fontWeight: FontWeight.w700)),
-                ]),
+                TicketFeeBreakdownView(
+                  subtotal: _total,
+                  fee: fee?.fee,
+                  currency: _currency,
+                  trial: _feeRule == TicketFeeRule.trial && (fee?.fee ?? 0) > 0,
+                ),
                 const SizedBox(height: 12),
                 const OrganizerShareNotice(),
                 const SizedBox(height: 8),
@@ -179,7 +202,7 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
                               quantity: _single,
                               items: types.isEmpty ? null : Map.of(_qty));
                         },
-                  child: Text(l.tpContinueToPay(formatTicketAmount(_total, _currency))),
+                  child: Text(l.tpContinueToPay(formatTicketAmount(total, _currency))),
                 ),
               ]),
       ),

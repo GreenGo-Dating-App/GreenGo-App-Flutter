@@ -379,25 +379,6 @@ class TierEntitlements {
     }
   }
 
-  /// Personal payment links (Pix, PayPal, Mercado Pago link, Wise, ...) in
-  /// Account settings and on the profile: Silver, Gold and Platinum (owner
-  /// rule 2026-10-12; test users get it too for QA). Business accounts get
-  /// paid automatically (Stripe / Mercado Pago) in Business > Get paid; their
-  /// manual methods are these same links. Enforced by the Firestore rules
-  /// (paymentLinksWriteOk) and the server visibility job; see
-  /// features/profile/domain/payment_links_access.dart.
-  static bool paymentLinks(MembershipTier tier) {
-    switch (tier) {
-      case MembershipTier.free:
-        return false;
-      case MembershipTier.silver:
-      case MembershipTier.gold:
-      case MembershipTier.platinum:
-      case MembershipTier.test:
-        return true;
-    }
-  }
-
   /// Whether a business account's capabilities are currently ACTIVE.
   ///
   /// Business capabilities require an active Platinum membership. The stored
@@ -470,8 +451,6 @@ class TierEntitlements {
           l10n.profileGhostMode, each((t) => mark(ghostModeIncluded(t)))),
       TierComparisonRow(l10n.membershipPrioritySupport,
           each((t) => mark(prioritySupport(t)))),
-      TierComparisonRow(
-          l10n.tierPaymentLinksRow, each((t) => mark(paymentLinks(t)))),
       TierComparisonRow(
           l10n.shopBusinessAccount, each((t) => mark(canBecomeBusiness(t)))),
     ];

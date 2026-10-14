@@ -1,53 +1,57 @@
 import 'dart:async';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/ticket_payments_service.dart';
+import '../../domain/ticket_fees.dart';
 import '../../domain/ticket_payments.dart';
 import '../ticket_l10n.dart';
+import 'ticket_fee_widgets.dart';
 
-/// "How do guests pay?" for a PAID event / experience (editor, mobile + web).
+/// "How do guests pay?" for a PAID event / experience (editor, mobile + web):
+/// Mercado Pago or Stripe, the organizer's connected account. Buyers pay in
+/// the app and their tickets are confirmed automatically; the organizer
+/// receives the full ticket price and buyers pay a GreenGo service fee on top
+/// (shown here as a preview for the price being set).
 ///
-///  * Instant (Stripe / Mercado Pago, connected account): tickets confirmed
-///    automatically. Recommended for many people.
-///  * Manual (one of the organizer's own payment methods, or cash / bank
-///    transfer): the organizer confirms each payment. No setup.
-/// The order and badges follow [adviseTicketPayment]; nothing is ever blocked
-/// by the recommendation (only an unusable provider cannot be picked).
+/// Payment links are no longer accepted (owner rule 2026-10-14): a listing
+/// still set to a link shows a banner until a provider is picked.
 class TicketPaymentSelector extends StatefulWidget {
   const TicketPaymentSelector({
     super.key,
     required this.uid,
     required this.value,
     required this.onChanged,
-    required this.capacity,
     required this.price,
     required this.currency,
+    this.kind,
+    this.listingId,
     this.service,
-    this.profileMethodKeys,
     this.accounts,
     this.config,
+    this.feeRule,
   });
 
   final String uid;
   final TicketPaymentChoice value;
   final ValueChanged<TicketPaymentChoice> onChanged;
 
-  /// Max attendees / places (null or <= 0 = unlimited).
-  final int? capacity;
-
   /// Price in major units, currency as ISO code or symbol.
   final double? price;
   final String? currency;
 
+  /// The listing being edited ('event' | 'experience'; null id = new), for
+  /// the service-fee preview.
+  final String? kind;
+  final String? listingId;
+
   /// Test seams (production reads Firestore / callables).
   final TicketPaymentsService? service;
-  final List<String>? profileMethodKeys;
   final PaymentAccounts? accounts;
   final TicketPaymentsConfig? config;
+  final TicketFeeRule? feeRule;
 
   @override
   State<TicketPaymentSelector> createState() => _TicketPaymentSelectorState();
@@ -58,9 +62,6 @@ class _TicketPaymentSelectorState extends State<TicketPaymentSelector> {
   StreamSubscription<PaymentAccounts>? _sub;
   PaymentAccounts _accounts = const PaymentAccounts();
   TicketPaymentsConfig _config = const TicketPaymentsConfig();
-  List<String> _profileKeys = const [];
-  late final TextEditingController _instructions =
-      TextEditingController(text: widget.value.instructions ?? '');
   TicketProvider? _connecting;
 
   @override
@@ -80,25 +81,11 @@ class _TicketPaymentSelectorState extends State<TicketPaymentSelector> {
         if (mounted) setState(() => _config = c);
       });
     }
-    if (widget.profileMethodKeys != null) {
-      _profileKeys = widget.profileMethodKeys!;
-    } else {
-      FirebaseFirestore.instance.collection('profiles').doc(widget.uid).get().then((d) {
-        final raw = d.data()?['paymentLinks'];
-        if (raw is Map && mounted) {
-          setState(() => _profileKeys = [
-                for (final e in raw.entries)
-                  if (e.value is String && (e.value as String).isNotEmpty) '${e.key}',
-              ]);
-        }
-      }).catchError((Object _) {});
-    }
   }
 
   @override
   void dispose() {
     _sub?.cancel();
-    _instructions.dispose();
     super.dispose();
   }
 
@@ -122,19 +109,8 @@ class _TicketPaymentSelectorState extends State<TicketPaymentSelector> {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context)!;
-    final advice = adviseTicketPayment(
-        capacity: widget.capacity, price: widget.price, threshold: _config.largeAudienceThreshold);
-    if (advice == TicketPaymentAdvice.none) return const SizedBox.shrink();
-    final instantFirst = advice == TicketPaymentAdvice.instantRecommended;
-    final v = widget.value;
-
-    final instant = <Widget>[
-      _providerTile(l, TicketProvider.mercadoPago, recommended: instantFirst, brazil: true),
-      const SizedBox(height: 8),
-      _providerTile(l, TicketProvider.stripe, recommended: instantFirst),
-    ];
-    final manual = _manualTile(l, simplest: !instantFirst);
-
+    final price = widget.price;
+    if (price == null || price <= 0) return const SizedBox.shrink();
     return Column(
       key: const ValueKey('ticket-payment-selector'),
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -142,46 +118,34 @@ class _TicketPaymentSelectorState extends State<TicketPaymentSelector> {
         Text(l.tpSelectorTitle,
             style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w700)),
         const SizedBox(height: 4),
-        Text(instantFirst ? l.tpAdviceLarge : l.tpAdviceSmall,
-            key: ValueKey('ticket-advice-${advice.name}'),
+        Text(l.tpInstantSubtitle,
             style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
         const SizedBox(height: 10),
-        if (needsReconnect(v)) _banner(l.tpReconnectBanner, AppColors.warningAmber),
-        if (instantFirst) ...[
-          _groupLabel(l.tpInstantTitle),
-          ...instant,
-          const SizedBox(height: 14),
-          _groupLabel(l.tpManualTitle),
-          manual,
-        ] else ...[
-          _groupLabel(l.tpManualTitle),
-          manual,
-          const SizedBox(height: 14),
-          _groupLabel(l.tpInstantOptional),
-          ...instant,
-        ],
-        if (warnManualForLarge(advice, v.provider))
-          _banner(
-              l.tpManualLargeWarning(
-                  widget.capacity == null || widget.capacity! <= 0 ? '∞' : '${widget.capacity}'),
-              AppColors.warningAmber,
-              key: const ValueKey('ticket-manual-warning')),
+        if (needsReconnect(widget.value))
+          _banner(l.tpLinkDiscontinuedBanner, AppColors.warningAmber,
+              key: const ValueKey('ticket-link-discontinued')),
+        _providerTile(l, TicketProvider.mercadoPago, brazil: true),
         const SizedBox(height: 8),
-        Text(l.tpNoFeeNote, style: const TextStyle(color: AppColors.textTertiary, fontSize: 11.5)),
+        _providerTile(l, TicketProvider.stripe),
+        const SizedBox(height: 10),
+        Text(l.tpFeeHostNote,
+            key: const ValueKey('ticket-fee-host-note'),
+            style: const TextStyle(color: AppColors.textTertiary, fontSize: 11.5)),
+        TicketFeeHostPreview(
+          price: price,
+          currency: widget.currency,
+          kind: widget.kind,
+          id: widget.listingId,
+          service: _svc,
+          rule: widget.feeRule,
+        ),
       ],
     );
   }
 
-  Widget _groupLabel(String t) => Padding(
-        padding: const EdgeInsets.only(bottom: 6),
-        child: Text(t,
-            style: const TextStyle(
-                color: AppColors.richGold, fontSize: 12.5, fontWeight: FontWeight.w700)),
-      );
-
   Widget _banner(String text, Color color, {Key? key}) => Container(
         key: key,
-        margin: const EdgeInsets.only(top: 8, bottom: 4),
+        margin: const EdgeInsets.only(top: 8, bottom: 8),
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
           color: color.withValues(alpha: 0.1),
@@ -205,8 +169,7 @@ class _TicketPaymentSelectorState extends State<TicketPaymentSelector> {
         child: Text(t, style: TextStyle(color: c, fontSize: 10.5, fontWeight: FontWeight.w700)),
       );
 
-  Widget _providerTile(AppLocalizations l, TicketProvider p,
-      {required bool recommended, bool brazil = false}) {
+  Widget _providerTile(AppLocalizations l, TicketProvider p, {bool brazil = false}) {
     final status = _accounts.of(p);
     final block = providerBlock(
         p: p, config: _config, accounts: _accounts, currency: _iso, price: widget.price);
@@ -230,7 +193,6 @@ class _TicketPaymentSelectorState extends State<TicketPaymentSelector> {
           onChanged: canPick ? (_) => widget.onChanged(TicketPaymentChoice(provider: p)) : null,
           title: Wrap(crossAxisAlignment: WrapCrossAlignment.center, children: [
             Text(TicketL10n.provider(l, p), style: const TextStyle(color: AppColors.textPrimary)),
-            if (recommended) _badge(l.tpBadgeRecommended, AppColors.successGreen),
             if (brazil) _badge(l.tpBadgeBrazil, AppColors.infoBlue),
           ]),
           subtitle: Text(
@@ -270,84 +232,6 @@ class _TicketPaymentSelectorState extends State<TicketPaymentSelector> {
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
       decoration: BoxDecoration(color: c.withValues(alpha: 0.15), borderRadius: BorderRadius.circular(20)),
       child: Text(TicketL10n.payoutStatus(l, s), style: TextStyle(color: c, fontSize: 11)),
-    );
-  }
-
-  Widget _manualTile(AppLocalizations l, {required bool simplest}) {
-    final methods = manualTicketMethods(_profileKeys);
-    final v = widget.value;
-    final selected = v.provider == TicketProvider.link;
-    final current = methods.contains(v.linkMethod) ? v.linkMethod : null;
-    return Material(
-      key: const ValueKey('ticket-provider-link'),
-      color: AppColors.backgroundInput,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
-        side: BorderSide(
-            color: selected ? AppColors.richGold : AppColors.divider, width: selected ? 1.6 : 1),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.only(bottom: 10),
-        child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-        RadioListTile<TicketProvider>(
-          value: TicketProvider.link,
-          groupValue: v.provider,
-          activeColor: AppColors.richGold,
-          onChanged: (_) => widget.onChanged(TicketPaymentChoice(
-              provider: TicketProvider.link, linkMethod: current ?? methods.first, instructions: _instructions.text)),
-          title: Wrap(crossAxisAlignment: WrapCrossAlignment.center, children: [
-            Text(l.tpManualTitle, style: const TextStyle(color: AppColors.textPrimary)),
-            if (simplest) _badge(l.tpBadgeNoSetup, AppColors.successGreen),
-          ]),
-          subtitle: Text(l.tpManualSubtitle,
-              style: const TextStyle(color: AppColors.textSecondary, fontSize: 12)),
-        ),
-        if (selected) ...[
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12),
-            child: DropdownButtonFormField<String>(
-              key: const ValueKey('ticket-link-method'),
-              value: current,
-              dropdownColor: AppColors.backgroundCard,
-              decoration: InputDecoration(labelText: l.tpManualMethodLabel),
-              items: [
-                for (final m in methods)
-                  DropdownMenuItem(value: m, child: Text(TicketL10n.method(l, m))),
-              ],
-              onChanged: (m) => widget.onChanged(v.copyWith(linkMethod: m)),
-            ),
-          ),
-          if (_profileKeys.where((k) => k != 'stripe' && k != 'mercadoPago').isEmpty)
-            Padding(
-              padding: const EdgeInsets.fromLTRB(12, 6, 12, 0),
-              child: Text(l.tpManualAddMethodsHint,
-                  style: const TextStyle(color: AppColors.textTertiary, fontSize: 11.5)),
-            ),
-          if (current == kTicketMethodBankTransfer || current == kTicketMethodCash)
-            Padding(
-              padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
-              child: TextField(
-                controller: _instructions,
-                maxLength: 500,
-                maxLines: 3,
-                minLines: 1,
-                style: const TextStyle(color: AppColors.textPrimary),
-                decoration: InputDecoration(
-                  labelText: current == kTicketMethodBankTransfer
-                      ? l.tpBankInstructionsLabel
-                      : l.tpCashInstructionsLabel,
-                ),
-                onChanged: (t) => widget.onChanged(v.copyWith(instructions: t)),
-              ),
-            ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(12, 6, 12, 0),
-            child: Text(l.tpManualDisclaimer,
-                style: const TextStyle(color: AppColors.textTertiary, fontSize: 11.5)),
-          ),
-        ],
-      ]),
-      ),
     );
   }
 }

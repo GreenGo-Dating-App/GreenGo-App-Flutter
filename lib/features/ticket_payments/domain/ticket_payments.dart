@@ -4,14 +4,15 @@ import 'package:intl/intl.dart';
 
 /// Paid tickets for events and experiences (server: functions/src/ticket_payments).
 ///
-/// Two ways to get paid, both releasing the QR ONLY after the payment is
-/// confirmed:
-///  * [TicketProvider.link]: the organizer's own payment method (Profile >
-///    Payment methods, cash or bank transfer). The buyer pays outside GreenGo
-///    with a GG-XXXXXX reference; the ORGANIZER confirms. Zero setup.
-///  * [TicketProvider.stripe] / [TicketProvider.mercadoPago]: a connected
-///    account; the provider confirms automatically ("instant").
-/// GreenGo takes no fee: money goes straight to the organizer.
+/// Buyers pay inside the app through the organizer's connected
+/// [TicketProvider.stripe] / [TicketProvider.mercadoPago] account; the provider
+/// confirms automatically and the QR is released only then. The organizer
+/// receives the full listed price; buyers pay a GreenGo service fee on top
+/// (ticket_fees.dart).
+///
+/// [TicketProvider.link] (the organizer's own payment method, confirmed by
+/// hand) is LEGACY: payment links are no longer accepted (owner rule
+/// 2026-10-14). It is kept only to read orders / listings created before.
 enum TicketProvider {
   link('link'),
   stripe('stripe'),
@@ -30,47 +31,16 @@ enum TicketProvider {
   }
 }
 
-/// Listing-only link methods (besides Profile > Payment methods keys).
+/// Legacy link-order methods that were not profile payment links (shown on
+/// orders created before payment links were discontinued).
 const String kTicketMethodCash = 'cash';
 const String kTicketMethodBankTransfer = 'bankTransfer';
 
-/// Listings with at least this many places (or unlimited) get "instant"
-/// confirmation recommended. Overridable from Firestore
-/// `app_config/ticket_payments.largeAudienceThreshold`.
+/// Kept for `app_config/ticket_payments.largeAudienceThreshold` (config).
 const int kLargeAudienceThreshold = 30;
 
-/// "Payments to confirm" suggests connecting a provider from this many.
+/// "Payments to confirm" (legacy orders) suggests connecting a provider from this many.
 const int kPendingConfirmationsHint = 10;
-
-/// What the editor recommends for a listing (pure: unit-tested).
-enum TicketPaymentAdvice {
-  /// Free listing: nothing to choose.
-  none,
-
-  /// Many people (or unlimited): instant confirmation first, "Recommended".
-  instantRecommended,
-
-  /// Small group: payment links first, "No setup"; instant is optional.
-  linkSimplest,
-}
-
-/// [capacity] null / <= 0 means unlimited, which counts as a large audience.
-TicketPaymentAdvice adviseTicketPayment({
-  required int? capacity,
-  required double? price,
-  int threshold = kLargeAudienceThreshold,
-}) {
-  if (price == null || price <= 0) return TicketPaymentAdvice.none;
-  final large = capacity == null || capacity <= 0 || capacity >= threshold;
-  return large
-      ? TicketPaymentAdvice.instantRecommended
-      : TicketPaymentAdvice.linkSimplest;
-}
-
-/// Soft warning when a large listing still uses manual confirmation.
-bool warnManualForLarge(TicketPaymentAdvice advice, TicketProvider? chosen) =>
-    advice == TicketPaymentAdvice.instantRecommended &&
-    chosen == TicketProvider.link;
 
 bool suggestInstantForPending(int pendingCount) =>
     pendingCount >= kPendingConfirmationsHint;
@@ -83,16 +53,9 @@ class TicketPaymentChoice extends Equatable {
   final String? linkMethod;
   final String? instructions;
 
-  /// Complete enough to sell (the server re-checks everything).
-  bool get isComplete {
-    if (provider == null) return false;
-    if (provider != TicketProvider.link) return true;
-    if (linkMethod == null || linkMethod!.isEmpty) return false;
-    if (linkMethod == kTicketMethodBankTransfer) {
-      return (instructions ?? '').trim().isNotEmpty;
-    }
-    return true;
-  }
+  /// Complete enough to sell (the server re-checks everything): a connected
+  /// provider. A legacy link choice is never complete.
+  bool get isComplete => provider != null && provider != TicketProvider.link;
 
   TicketPaymentChoice copyWith({
     TicketProvider? provider,
@@ -213,21 +176,9 @@ ProviderBlock? providerBlock({
   return null;
 }
 
-/// Manual-approval methods for tickets: the organizer's Profile > Payment
-/// methods EXCEPT pasted Stripe / Mercado Pago links (those two providers are
-/// always the connected, instant mode), plus cash and bank transfer.
-List<String> manualTicketMethods(Iterable<String> profileMethodKeys) => [
-      for (final k in profileMethodKeys)
-        if (k != 'stripe' && k != 'mercadoPago') k,
-      kTicketMethodCash,
-      kTicketMethodBankTransfer,
-    ];
-
-/// A listing that used a pasted Stripe / MP link as manual method needs the
-/// connected account instead.
-bool needsReconnect(TicketPaymentChoice c) =>
-    c.provider == TicketProvider.link &&
-    (c.linkMethod == 'stripe' || c.linkMethod == 'mercadoPago');
+/// A listing still set to a (legacy) payment link needs a connected
+/// Stripe / Mercado Pago account before it can sell again.
+bool needsReconnect(TicketPaymentChoice c) => c.provider == TicketProvider.link;
 
 /// Per-user limit stored on a listing: missing -> default 4, null/0 -> none.
 const int kDefaultMaxTicketsPerUser = 4;
@@ -322,6 +273,9 @@ class TicketOrder extends Equatable {
     required this.status,
     required this.totalAmount,
     required this.currency,
+    this.ticketSubtotal,
+    this.feeTotal = 0,
+    this.feeRule,
     this.bookingId,
     this.quantity = 1,
     this.code,
@@ -346,8 +300,17 @@ class TicketOrder extends Equatable {
   final String organizerId;
   final TicketProvider provider;
   final TicketOrderStatus status;
+  /// What the buyer pays (tickets + GreenGo service fee).
   final int totalAmount;
   final String currency;
+
+  /// Ticket prices only (what the organizer receives); null on older orders
+  /// (= [totalAmount], no fee).
+  final int? ticketSubtotal;
+
+  /// GreenGo service fee of the whole order (0 on older / link orders).
+  final int feeTotal;
+  final String? feeRule;
   final int quantity;
   final String? code;
   final String? paymentMethod;
@@ -377,6 +340,9 @@ class TicketOrder extends Equatable {
       status: TicketOrderStatus.fromWire(d['status']),
       totalAmount: (d['totalAmount'] as num?)?.toInt() ?? 0,
       currency: (d['currency'] as String? ?? 'usd').toLowerCase(),
+      ticketSubtotal: (d['ticketSubtotal'] as num?)?.toInt(),
+      feeTotal: (d['feeTotal'] as num?)?.toInt() ?? 0,
+      feeRule: d['feeRuleApplied'] as String?,
       quantity: (d['quantity'] as num?)?.toInt() ?? 1,
       code: d['code'] as String?,
       paymentMethod: pay['method'] as String?,

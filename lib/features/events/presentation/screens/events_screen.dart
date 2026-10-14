@@ -4676,9 +4676,10 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 uid: widget.currentUserId,
                 value: _ticket,
                 onChanged: (c) => setState(() => _ticket = c),
-                capacity: _isUnlimited ? null : int.tryParse(_maxAttendeesController.text),
                 price: double.tryParse(_priceController.text),
                 currency: _currency,
+                kind: 'event',
+                listingId: widget.existing?.id,
               ),
               ]),
             ),
@@ -4751,8 +4752,6 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       if (_paymentError() != null) (_paymentError()!, true, () => _wizard.goTo(3)),
       if (_mainPhoto == null && (_existingMainUrl ?? '').isEmpty)
         (l.wzWarnNoPhoto, false, () => _wizard.goTo(0)),
-      if (!_isFree && _ticket.provider == TicketProvider.link && (_isUnlimited || (int.tryParse(_maxAttendeesController.text) ?? 0) >= kLargeAudienceThreshold))
-        (l.wzWarnManualLarge, false, _isFree ? null : () => _wizard.goTo(3)),
     ];
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
       Text(l.wzPreviewTitle, style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),

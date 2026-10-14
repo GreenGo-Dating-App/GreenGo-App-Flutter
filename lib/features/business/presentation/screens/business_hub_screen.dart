@@ -112,12 +112,10 @@ class BusinessHubScreen extends StatelessWidget {
     );
   }
 
-  /// Opens "Get paid" (Stripe / Mercado Pago, payment methods, payments to
-  /// confirm). It lives here - not in Account settings - for active business
-  /// accounts, the only ones that can sell paid tickets.
+  /// Opens "Get paid" (connect Stripe / Mercado Pago). It lives here for
+  /// active business accounts, the only ones that can sell paid tickets.
   Future<void> _openGetPaid(BuildContext context) async {
-    await Navigator.of(context).push(GetPaidScreen.route(profile.userId,
-        profileBloc: context.read<ProfileBloc>()));
+    await Navigator.of(context).push(GetPaidScreen.route(profile.userId));
   }
 
   /// Opens the bounded list of people who follow this business (own uid).

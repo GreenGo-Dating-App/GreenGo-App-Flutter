@@ -14,12 +14,15 @@ import '../../../../generated/app_localizations.dart';
 import '../../data/ticket_payments_service.dart';
 import '../../domain/ticket_payments.dart';
 import '../ticket_l10n.dart';
+import '../widgets/ticket_fee_widgets.dart';
 
 /// One ticket order, live (`ticket_orders/{id}`):
 ///  * instant (Stripe / MP): "Waiting for payment confirmation…", 30-min
 ///    countdown, Pay again / Cancel; the provider webhook flips it to paid;
-///  * manual: amount + GG- code + the organizer's method, "I've paid" (optional
-///    receipt) and then "Waiting for the organizer…";
+///    tickets + GreenGo service fee + total are shown;
+///  * manual (LEGACY link orders opened before payment links were
+///    discontinued): amount + GG- code + the organizer's method, "I've paid"
+///    (optional receipt) and then "Waiting for the organizer…";
 ///  * paid: one QR per ticket (cached for offline use; each can be shared).
 /// The QR exists only after the payment is confirmed.
 class TicketOrderScreen extends StatefulWidget {
@@ -106,6 +109,15 @@ class _TicketOrderScreenState extends State<TicketOrderScreen> with WidgetsBindi
             Text('${formatTicketAmount(o.totalAmount, o.currency)} · ${l.tpTicketsCount(o.quantity)}',
                 key: const ValueKey('ticket-order-amount'),
                 style: const TextStyle(color: AppColors.richGold, fontSize: 16, fontWeight: FontWeight.w600)),
+            if (o.feeTotal > 0) ...[
+              const SizedBox(height: 10),
+              TicketFeeBreakdownView(
+                subtotal: o.ticketSubtotal ?? (o.totalAmount - o.feeTotal),
+                fee: o.feeTotal,
+                currency: o.currency,
+                trial: o.feeRule == 'trial',
+              ),
+            ],
             const SizedBox(height: 16),
             _statusCard(l, o),
             const SizedBox(height: 16),

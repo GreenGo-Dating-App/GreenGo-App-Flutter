@@ -7636,24 +7636,6 @@
       }
     }
   },
-  "paymentLinksTitle": "Payment methods",
-  "@paymentLinksTitle": {
-    "description": "Edit profile tile + editor title: user's own external payment links"
-  },
-  "paymentLinksNone": "No payment methods added",
-  "paymentLinksCount": "{count, plural, =1{1 payment method} other{{count} payment methods}}",
-  "@paymentLinksCount": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "paymentLinksInfoTitle": "Get paid directly",
-  "paymentLinksInfoBody": "Let people pay you with your own accounts. Money goes straight to you — GreenGo never processes, holds or takes a fee from these payments.",
-  "paymentLinksHintHandle": "Username or link",
-  "paymentLinksHintPix": "CPF, CNPJ, e-mail, +55 phone or random key",
-  "paymentLinksHintLink": "Paste your payment link",
   "paymentLinkInvalid": "Invalid {method} value — check it and try again",
   "@paymentLinkInvalid": {
     "placeholders": {
@@ -7661,12 +7643,6 @@
         "type": "String"
       }
     }
-  },
-  "paymentLinksUpdated": "Payment methods updated",
-  "paymentLinksRules": "Use these only for payments between people (gifts, tips, in-person services and tours). GreenGo coins and memberships can only be bought in the app.",
-  "paymentLinksSection": "Pay directly",
-  "@paymentLinksSection": {
-    "description": "Profile section title listing the user's external payment methods"
   },
   "paymentDisclaimerTitle": "Pay {name} directly",
   "@paymentDisclaimerTitle": {
@@ -8134,14 +8110,6 @@
   "@tpAddTicketType": {
     "description": "Ticket payments"
   },
-  "tpAdviceLarge": "Many people expected: instant confirmation is recommended. Tickets are confirmed automatically, so you don't have to check every payment.",
-  "@tpAdviceLarge": {
-    "description": "Ticket payments"
-  },
-  "tpAdviceSmall": "Small group: the simplest is a payment link — no setup, you confirm each payment with one tap.",
-  "@tpAdviceSmall": {
-    "description": "Ticket payments"
-  },
   "tpAmountLabel": "Amount",
   "@tpAmountLabel": {
     "description": "Ticket payments"
@@ -8156,18 +8124,6 @@
   },
   "tpBadgeBrazil": "Recommended in Brazil",
   "@tpBadgeBrazil": {
-    "description": "Ticket payments"
-  },
-  "tpBadgeNoSetup": "No setup",
-  "@tpBadgeNoSetup": {
-    "description": "Ticket payments"
-  },
-  "tpBadgeRecommended": "Recommended",
-  "@tpBadgeRecommended": {
-    "description": "Ticket payments"
-  },
-  "tpBankInstructionsLabel": "Bank details and instructions",
-  "@tpBankInstructionsLabel": {
     "description": "Ticket payments"
   },
   "tpBlockMinimum": "{provider} needs at least {amount} per ticket.",
@@ -8231,10 +8187,6 @@
   },
   "tpCancelOrder": "Cancel",
   "@tpCancelOrder": {
-    "description": "Ticket payments"
-  },
-  "tpCashInstructionsLabel": "Where and when to pay in cash (optional)",
-  "@tpCashInstructionsLabel": {
     "description": "Ticket payments"
   },
   "tpChooseHowToGetPaid": "Choose how buyers pay for this paid listing.",
@@ -8361,11 +8313,11 @@
   "@tpFree": {
     "description": "Ticket payments"
   },
-  "tpGetPaidIntro": "Money goes directly to your own account. GreenGo takes no fee on ticket sales.",
+  "tpGetPaidIntro": "Buyers pay in the app and the full ticket price goes straight to your own Stripe or Mercado Pago account. A GreenGo service fee is added on top for buyers.",
   "@tpGetPaidIntro": {
     "description": "Ticket payments"
   },
-  "tpGetPaidSubtitle": "Payment methods, Stripe and Mercado Pago, payments to confirm",
+  "tpGetPaidSubtitle": "Connect Stripe or Mercado Pago to sell tickets",
   "@tpGetPaidSubtitle": {
     "description": "Ticket payments"
   },
@@ -8407,16 +8359,8 @@
       }
     }
   },
-  "tpInstantOptional": "Instant confirmation (optional)",
-  "@tpInstantOptional": {
-    "description": "Ticket payments"
-  },
   "tpInstantSubtitle": "Buyers pay in the app; tickets are confirmed automatically.",
   "@tpInstantSubtitle": {
-    "description": "Ticket payments"
-  },
-  "tpInstantTitle": "Instant confirmation",
-  "@tpInstantTitle": {
     "description": "Ticket payments"
   },
   "tpIvePaid": "I've paid",
@@ -8427,29 +8371,8 @@
   "@tpLegacyPaymentPrompt": {
     "description": "Ticket payments"
   },
-  "tpManualAddMethodsHint": "Add your Pix, PayPal… in Profile > Business > Get paid to see them here.",
-  "@tpManualAddMethodsHint": {
-    "description": "Ticket payments"
-  },
   "tpManualDisclaimer": "GreenGo does not verify these payments: the organizer is responsible for confirming them.",
   "@tpManualDisclaimer": {
-    "description": "Ticket payments"
-  },
-  "tpManualLargeWarning": "With {count} people you'll have to confirm each payment by hand.",
-  "@tpManualLargeWarning": {
-    "description": "Ticket payments",
-    "placeholders": {
-      "count": {
-        "type": "String"
-      }
-    }
-  },
-  "tpManualMethodLabel": "Payment method",
-  "@tpManualMethodLabel": {
-    "description": "Ticket payments"
-  },
-  "tpManualSubtitle": "Your own payment method; you confirm each payment with one tap.",
-  "@tpManualSubtitle": {
     "description": "Ticket payments"
   },
   "tpManualTitle": "Payment link — you confirm",
@@ -8487,10 +8410,6 @@
   },
   "tpMyPurchases": "My purchases",
   "@tpMyPurchases": {
-    "description": "Ticket payments"
-  },
-  "tpNoFeeNote": "GreenGo takes no fee: the money goes straight to you.",
-  "@tpNoFeeNote": {
     "description": "Ticket payments"
   },
   "tpNoLimitHint": "Empty = no limit",
@@ -8612,10 +8531,6 @@
   },
   "tpReceiptAttached": "Receipt attached",
   "@tpReceiptAttached": {
-    "description": "Ticket payments"
-  },
-  "tpReconnectBanner": "Connect Mercado Pago / Stripe to sell tickets with automatic confirmation. Pasted Stripe or Mercado Pago links can't be used for tickets.",
-  "@tpReconnectBanner": {
     "description": "Ticket payments"
   },
   "tpRefresh": "Refresh",
@@ -9299,10 +9214,6 @@
   "@wzTickets": {
     "description": "Create / edit wizard"
   },
-  "wzWarnManualLarge": "Many people with manual payments: you will confirm each one. Consider instant confirmation.",
-  "@wzWarnManualLarge": {
-    "description": "Create / edit wizard"
-  },
   "wzWarnNoAvailability": "No availability yet: add dates after saving, or turn on \"Repeat every week\".",
   "@wzWarnNoAvailability": {
     "description": "Create / edit wizard"
@@ -9314,14 +9225,6 @@
   "wzWhenWhere": "When & where",
   "@wzWhenWhere": {
     "description": "Create / edit wizard"
-  },
-  "tpPaymentMethodsSectionHint": "Your own methods (Pix, PayPal, …): people can pay you directly, and you can use them for tickets you confirm by hand.",
-  "tpPaymentMethodsSaveFailed": "Couldn't save your payment methods. Try again.",
-  "@tpPaymentMethodsSectionHint": {
-    "description": "Get paid page: hint under the Payment methods section"
-  },
-  "@tpPaymentMethodsSaveFailed": {
-    "description": "Get paid page: error when saving payment methods fails"
   },
   "wzNextTo": "Next: {step}",
   "@wzNextTo": {
@@ -12275,18 +12178,12 @@
   "tpErrSellerNotBusiness": "Sales are paused: paid tickets and bookings are only available from active business accounts.",
   "tpAutoSectionTitle": "Automatic Payment and Approval",
   "tpAutoSectionHint": "Connect Stripe or Mercado Pago: buyers pay in the app and their tickets are confirmed instantly, with no manual checks.",
-  "tpManualSectionTitle": "Manual Payment and Approval",
-  "tpManualSectionHint": "No setup: buyers pay you directly with one of the payment methods below (or cash / bank transfer). You confirm each payment yourself with the Payments to confirm button at the top; the ticket is issued once you confirm.",
   "paymentMethodsSettingsSubtitle": "How people can pay you directly (Pix, PayPal…)",
   "communitiesBusinessCannotJoin": "Business accounts cannot join communities. Switch off business mode to join.",
   "becomeBusinessPermanentHint": "One-time upgrade. This can't be undone.",
   "storefrontEnabled": "Storefront is on",
   "storefrontDisabled": "Storefront is off",
   "storefrontToggleHint": "Turn your storefront on or off anytime",
-  "tpGetPaidManualInfo": "No setup: pick one of your Profile > Payment methods (or cash / bank transfer) in the event or experience, and confirm each payment yourself.",
-  "@tpGetPaidManualInfo": {
-    "description": "Ticket payments"
-  },
   "emailTicketSubject": "Your ticket for {title}",
   "@emailTicketSubject": {
     "placeholders": {
@@ -13423,22 +13320,6 @@
     "description": "Membership benefit (Base and every tier above): joining events and booking experiences"
   },
   "chatReplyNeedsBase": "Base membership required to reply",
-  "tierPaymentLinksRow": "Payment links on your profile",
-  "@tierPaymentLinksRow": {
-    "description": "Membership comparison table row: personal payment links (Silver, Gold, Platinum)"
-  },
-  "paymentLinksTierLocked": "Available with Silver, Gold or Platinum",
-  "@paymentLinksTierLocked": {
-    "description": "Payment methods locked for tiers below Silver: short label / subtitle"
-  },
-  "paymentLinksTierLockedBody": "Your saved payment methods are hidden from your profile. Upgrade to Silver, Gold or Platinum to show them again.",
-  "@paymentLinksTierLockedBody": {
-    "description": "Payment methods locked: the owner has saved links that are hidden because the tier lapsed"
-  },
-  "paymentLinksTierUpsellBody": "Let people pay you directly with Pix, PayPal and more. Upgrade to Silver, Gold or Platinum to add payment methods to your profile.",
-  "@paymentLinksTierUpsellBody": {
-    "description": "Payment methods locked: no saved links, upgrade invitation"
-  },
   "locPickerTitle": "Choose a place",
   "@locPickerTitle": {
     "description": "Location picker (search an address, drop a pin)"
@@ -13721,5 +13602,76 @@
   "msCalendarGoingTag": "Going",
   "dcCardHint": "Calendar of your bookings and open times",
   "uexpIdDocPendingCreateBody": "Your ID document is being validated. You can create experiences as soon as it is approved, usually within a day.",
-  "@uexpIdDocPendingCreateBody": {"description": "Shown when a host tries to create an experience while their ID document (sent at registration or later) is still under review."}
+  "@uexpIdDocPendingCreateBody": {"description": "Shown when a host tries to create an experience while their ID document (sent at registration or later) is still under review."},
+  "tpTicketsSubtotal": "Tickets",
+  "@tpTicketsSubtotal": {
+    "description": "Ticket payments: GreenGo service fee / payment links discontinued"
+  },
+  "tpServiceFee": "GreenGo service fee",
+  "@tpServiceFee": {
+    "description": "Ticket payments: GreenGo service fee / payment links discontinued"
+  },
+  "tpServiceFeeTrial": "Intro fee: US$1 per ticket on this organizer's first paid event.",
+  "@tpServiceFeeTrial": {
+    "description": "Ticket payments: GreenGo service fee / payment links discontinued"
+  },
+  "tpPlusServiceFee": "+ GreenGo service fee (shown at checkout)",
+  "@tpPlusServiceFee": {
+    "description": "Ticket payments: GreenGo service fee / payment links discontinued"
+  },
+  "tpFeeHostNote": "You receive 100% of your ticket price. Buyers pay a GreenGo service fee per ticket on top, based on your plan. Free tickets have no fee.",
+  "@tpFeeHostNote": {
+    "description": "Ticket payments: GreenGo service fee / payment links discontinued"
+  },
+  "tpFeeRuleSilver": "Silver: US$3 + 10% per ticket (max US$10)",
+  "@tpFeeRuleSilver": {
+    "description": "Ticket payments: GreenGo service fee / payment links discontinued"
+  },
+  "tpFeeRuleGold": "Gold: US$2 + 10% per ticket (max US$9)",
+  "@tpFeeRuleGold": {
+    "description": "Ticket payments: GreenGo service fee / payment links discontinued"
+  },
+  "tpFeeRulePlatinum": "Platinum: US$1 + 10% per ticket (max US$8)",
+  "@tpFeeRulePlatinum": {
+    "description": "Ticket payments: GreenGo service fee / payment links discontinued"
+  },
+  "tpFeeRuleTrial": "Your first paid event: only US$1 per ticket",
+  "@tpFeeRuleTrial": {
+    "description": "Ticket payments: GreenGo service fee / payment links discontinued"
+  },
+  "tpFeeBuyerPreview": "Buyers pay {price} + {fee} service fee = {total} per ticket",
+  "@tpFeeBuyerPreview": {
+    "description": "Ticket payments: GreenGo service fee / payment links discontinued",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      },
+      "fee": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "tpErrLinkDiscontinued": "Payment links are no longer accepted. The organizer needs to connect Stripe or Mercado Pago to sell tickets.",
+  "@tpErrLinkDiscontinued": {
+    "description": "Ticket payments: GreenGo service fee / payment links discontinued"
+  },
+  "tpErrFeeCurrency": "This currency can't be used for paid tickets yet. Choose another currency.",
+  "@tpErrFeeCurrency": {
+    "description": "Ticket payments: GreenGo service fee / payment links discontinued"
+  },
+  "tpLinkDiscontinuedBanner": "Payment links are no longer accepted. Connect Mercado Pago or Stripe to keep selling.",
+  "@tpLinkDiscontinuedBanner": {
+    "description": "Ticket payments: GreenGo service fee / payment links discontinued"
+  },
+  "uexpErrPaymentLinkNotAccepted": "Payment links and cash are no longer accepted. Connect Stripe or Mercado Pago, or publish the experience as free.",
+  "@uexpErrPaymentLinkNotAccepted": {
+    "description": "Ticket payments: GreenGo service fee / payment links discontinued"
+  },
+  "uexpPaymentLinkNotAcceptedTitle": "Connect a payment provider",
+  "@uexpPaymentLinkNotAcceptedTitle": {
+    "description": "Experience publish refused: payment links / cash no longer accepted (dialog title)"
+  }
 }

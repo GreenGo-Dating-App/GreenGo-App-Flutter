@@ -7,6 +7,7 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../domain/ticket_fees.dart';
 import '../domain/ticket_payments.dart';
 
 /// A callable failure with the server's reason code (`details.code`).
@@ -22,12 +23,10 @@ class TicketPaymentException implements Exception {
 class TicketCheckoutResult {
   const TicketCheckoutResult({
     required this.orderId,
-    required this.isLink,
     this.isFree = false,
     this.checkoutUrl,
   });
   final String orderId;
-  final bool isLink;
   final bool isFree;
   final String? checkoutUrl;
 }
@@ -52,6 +51,7 @@ class TicketPaymentsService {
   FirebaseStorage get _st => _storage ?? FirebaseStorage.instance;
 
   static TicketPaymentsConfig? _configCache;
+  static final Map<String, (TicketFeeRule, DateTime)> _feeRuleCache = {};
 
   String get _platform => kIsWeb ? 'web' : 'app';
 
@@ -98,6 +98,30 @@ class TicketPaymentsService {
       linkHoldHours: linkHold,
       largeAudienceThreshold: threshold,
     );
+  }
+
+  /// GreenGo service fee rule of [organizerId]'s listing [kind]/[id] (null
+  /// [organizerId] = the caller, e.g. the host's own editor; null [id] = a
+  /// listing not created yet). DISPLAY ONLY: createTicketCheckout prices the
+  /// fee again. Null when the server cannot be reached.
+  Future<TicketFeeRule?> feeRule({String? organizerId, String? kind, String? id}) async {
+    final key = '${organizerId ?? ''}|${kind ?? ''}|${id ?? ''}';
+    final hit = _feeRuleCache[key];
+    if (hit != null && DateTime.now().difference(hit.$2) < const Duration(minutes: 10)) return hit.$1;
+    try {
+      final m = await _call('getTicketPaymentsConfig', {
+        if (organizerId != null) 'organizerId': organizerId,
+        if (kind != null) 'kind': kind,
+        if (id != null) 'id': id,
+      });
+      final fee = m['fee'];
+      final rule = fee is Map ? TicketFeeRule.fromWire(fee['rule']) : null;
+      if (rule != null) _feeRuleCache[key] = (rule, DateTime.now());
+      return rule;
+    } catch (e) {
+      debugPrint('[tickets] fee rule: $e');
+      return null;
+    }
   }
 
   Stream<PaymentAccounts> watchAccounts(String uid) => _db
@@ -158,7 +182,6 @@ class TicketPaymentsService {
     });
     return TicketCheckoutResult(
       orderId: m['orderId'] as String,
-      isLink: m['mode'] == 'link',
       isFree: m['mode'] == 'free',
       checkoutUrl: m['checkoutUrl'] as String?,
     );
@@ -292,7 +315,8 @@ class TicketPaymentsService {
 
   Future<void> cancelOrder(String orderId) => _call('cancelTicketOrder', {'orderId': orderId});
 
-  /// Optional receipt (image) for a link-mode order, then "I've paid".
+  /// Optional receipt (image) for a LEGACY link-mode order still open, then
+  /// "I've paid" (no new link orders since 2026-10-14).
   Future<void> markPaymentSent(String orderId, {Uint8List? receipt, String? contentType}) async {
     String? path;
     if (receipt != null) {
@@ -316,7 +340,7 @@ class TicketPaymentsService {
     }
   }
 
-  /// Organizer: confirm one or many link payments (<= 50 per call).
+  /// Organizer: confirm one or many LEGACY link payments (<= 50 per call).
   Future<Map<String, String>> confirm(List<String> orderIds) async {
     final out = <String, String>{};
     for (var i = 0; i < orderIds.length; i += 50) {
@@ -331,7 +355,7 @@ class TicketPaymentsService {
   Future<void> reject(String orderId, String reason) =>
       _call('rejectTicketPayment', {'orderId': orderId, 'reason': reason});
 
-  /// Organizer: link payments waiting for confirmation (oldest first).
+  /// Organizer: LEGACY link payments waiting for confirmation (oldest first).
   Stream<List<TicketOrder>> watchToConfirm(String organizerId, {int limit = 100}) => _db
       .collection('ticket_orders')
       .where('organizerId', isEqualTo: organizerId)

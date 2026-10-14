@@ -595,10 +595,9 @@ class _EditorFormState extends State<_EditorForm> {
         paymentLink: null,
         paymentMethods: _isFree ? const {} : {PaymentMethod.online},
         paymentProvider: _isFree ? null : _ticket.provider?.wire,
-        paymentLinkMethod: _isFree || _ticket.provider != TicketProvider.link ? null : _ticket.linkMethod,
-        paymentInstructions: _isFree || _ticket.provider != TicketProvider.link
-            ? null
-            : ((_ticket.instructions ?? '').trim().isEmpty ? null : _ticket.instructions!.trim()),
+        // Payment links are no longer accepted (owner rule 2026-10-14).
+        paymentLinkMethod: null,
+        paymentInstructions: null,
         pricingMode: _pricingMode,
         groupPrice: _isFree || _pricingMode != 'per_group'
             ? null
@@ -1875,7 +1874,8 @@ class _EditorFormState extends State<_EditorForm> {
             uid: widget.currentUserId,
             value: _ticket,
             onChanged: (c) => setState(() => _ticket = c),
-            capacity: int.tryParse(_maxGroup.text.trim()),
+            kind: 'experience',
+            listingId: widget.existing?.id,
             price: _pricingMode == 'per_group'
                 ? double.tryParse(_groupPrice.text.trim().replaceAll(',', '.'))
                 : double.tryParse(_price.text.trim().replaceAll(',', '.')),

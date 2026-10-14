@@ -1,12 +1,8 @@
-import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:greengo_chat/core/error/failures.dart';
 import 'package:greengo_chat/core/services/paid_listing_access.dart';
 import 'package:greengo_chat/features/business/presentation/widgets/paid_business_note.dart';
 import 'package:greengo_chat/features/membership/domain/entities/membership.dart';
-import 'package:greengo_chat/features/profile/domain/entities/profile.dart';
-import 'package:greengo_chat/features/profile/domain/repositories/profile_repository.dart';
 import 'package:greengo_chat/features/ticket_payments/data/ticket_payments_service.dart';
 import 'package:greengo_chat/features/ticket_payments/domain/ticket_payments.dart';
 import 'package:greengo_chat/features/ticket_payments/presentation/screens/get_paid_screen.dart';
@@ -14,8 +10,6 @@ import 'package:greengo_chat/generated/app_localizations.dart';
 import 'package:mocktail/mocktail.dart';
 
 import '../support/profile_fixtures.dart';
-
-class _MockProfiles extends Mock implements ProfileRepository {}
 
 class _MockService extends Mock implements TicketPaymentsService {}
 
@@ -96,68 +90,42 @@ void main() {
   });
 
   group('GetPaidScreen layout', () {
-    late _MockProfiles profiles;
     late _MockService service;
 
     setUp(() {
-      profiles = _MockProfiles();
       service = _MockService();
-      when(() => profiles.getProfile(any()))
-          .thenAnswer((_) async => Right<Failure, Profile>(buildProfile(
-              // Payment methods are a Silver / Gold / Platinum perk; the
-              // business Get paid page belongs to an active Platinum business.
-              userId: 'u1',
-              isBusiness: true,
-              membershipTier: MembershipTier.platinum,
-              membershipEndDate: _future)));
       when(() => service.config()).thenAnswer((_) async => const TicketPaymentsConfig());
       when(() => service.refreshAccounts()).thenAnswer((_) async {});
       when(() => service.watchAccounts(any()))
           .thenAnswer((_) => Stream.value(const PaymentAccounts()));
     });
 
-    Future<void> pump(WidgetTester t, {bool methodsOnly = false}) async {
+    Future<void> pump(WidgetTester t) async {
       await t.binding.setSurfaceSize(const Size(800, 3000));
       addTearDown(() => t.binding.setSurfaceSize(null));
-      await t.pumpWidget(_app(GetPaidScreen(
-        uid: 'u1',
-        service: service,
-        profileRepository: profiles,
-        paymentMethodsOnly: methodsOnly,
-      )));
+      await t.pumpWidget(_app(GetPaidScreen(uid: 'u1', service: service)));
       await t.pump();
       await t.pump();
     }
 
     testWidgets(
-        'two sections (automatic / manual); Payments to confirm is an app-bar icon',
+        'automatic payments only (no payment links / manual section); fee schedule shown',
         (t) async {
       final l = await _l10n();
       await pump(t);
       expect(find.text(l.tpAutoSectionTitle), findsOneWidget);
-      expect(find.text(l.tpManualSectionTitle), findsOneWidget);
-      // Automatic section (providers) comes before the manual one.
-      expect(t.getTopLeft(find.byKey(const ValueKey('get-paid-section-auto'))).dy,
-          lessThan(t.getTopLeft(find.byKey(const ValueKey('get-paid-section-manual'))).dy));
+      expect(find.byKey(const ValueKey('get-paid-section-auto')), findsOneWidget);
       expect(find.byKey(const ValueKey('get-paid-mercadopago')), findsOneWidget);
       expect(find.byKey(const ValueKey('get-paid-stripe')), findsOneWidget);
-      expect(find.byKey(const ValueKey('get-paid-payment-methods')), findsOneWidget);
-      // The confirm action is in the AppBar, next to refresh - no list tile.
-      final action = find.byKey(const ValueKey('get-paid-to-confirm'));
-      expect(find.descendant(of: find.byType(AppBar), matching: action), findsOneWidget);
-      expect(find.byTooltip(l.tpRefresh), findsOneWidget);
-      expect(find.byType(ListTile), findsNothing);
-    });
-
-    testWidgets('payment-methods-only page (Account settings) has no providers',
-        (t) async {
-      final l = await _l10n();
-      await pump(t, methodsOnly: true);
-      expect(find.text(l.paymentLinksTitle), findsWidgets);
-      expect(find.byKey(const ValueKey('get-paid-payment-methods')), findsOneWidget);
-      expect(find.byKey(const ValueKey('get-paid-stripe')), findsNothing);
+      expect(find.byKey(const ValueKey('get-paid-section-manual')), findsNothing);
+      expect(find.byKey(const ValueKey('get-paid-payment-methods')), findsNothing);
+      // Host side of the GreenGo service fee: 100% of the price + schedule.
+      expect(find.text(l.tpGetPaidIntro), findsOneWidget);
+      expect(find.text(l.tpFeeHostNote), findsOneWidget);
+      expect(find.textContaining(l.tpFeeRuleTrial), findsOneWidget);
+      // No legacy link order waiting: no "Payments to confirm" action.
       expect(find.byKey(const ValueKey('get-paid-to-confirm')), findsNothing);
-      verifyNever(() => service.refreshAccounts());
+      expect(find.byTooltip(l.tpRefresh), findsOneWidget);
     });
   });
 }

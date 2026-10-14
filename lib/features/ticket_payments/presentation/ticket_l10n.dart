@@ -1,5 +1,4 @@
 import '../../../generated/app_localizations.dart';
-import '../../profile/domain/entities/payment_links.dart' as pl;
 import '../data/ticket_payments_service.dart';
 import '../domain/ticket_payments.dart';
 
@@ -13,10 +12,18 @@ class TicketL10n {
         TicketProvider.mercadoPago => 'Mercado Pago',
       };
 
+  /// Brand names of the (legacy) link-order methods; not translated.
+  static const Map<String, String> _methodBrands = {
+    'pix': 'Pix', 'picPay': 'PicPay', 'paypal': 'PayPal', 'venmo': 'Venmo', 'cashApp': 'Cash App',
+    'revolut': 'Revolut', 'wise': 'Wise', 'monzo': 'Monzo', 'kofi': 'Ko-fi',
+  };
+
+  /// Payment method of a LEGACY link order (orders opened before payment
+  /// links were discontinued).
   static String method(AppLocalizations l, String key) {
     if (key == kTicketMethodCash) return l.tpMethodCash;
     if (key == kTicketMethodBankTransfer) return l.tpMethodBankTransfer;
-    return pl.PaymentMethod.fromKey(key)?.label ?? key;
+    return _methodBrands[key] ?? key;
   }
 
   static String payoutStatus(AppLocalizations l, PayoutStatus s) => switch (s) {
@@ -65,6 +72,8 @@ class TicketL10n {
       'payments_not_configured' => l.tpBlockNotConfigured,
       'organizer_payments_not_ready' => l.tpErrNotOnSale,
       'seller_not_business' => l.tpErrSellerNotBusiness,
+      'link_payments_discontinued' => l.tpErrLinkDiscontinued,
+      'fee_currency_unsupported' => l.tpErrFeeCurrency,
       'sold_out' || 'ticket_type_sold_out' => l.tpErrSoldOut,
       'ticket_limit_reached' || 'ticket_type_limit_reached' => l.tpErrLimit,
       'ticket_type_sales_not_started' => l.tpTypeNotStarted,

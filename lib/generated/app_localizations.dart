@@ -27498,77 +27498,11 @@ abstract class AppLocalizations {
   /// **'Met in person {count} times · last {date}'**
   String metInPersonTimes(int count, String date);
 
-  /// Edit profile tile + editor title: user's own external payment links
-  ///
-  /// In en, this message translates to:
-  /// **'Payment methods'**
-  String get paymentLinksTitle;
-
-  /// No description provided for @paymentLinksNone.
-  ///
-  /// In en, this message translates to:
-  /// **'No payment methods added'**
-  String get paymentLinksNone;
-
-  /// No description provided for @paymentLinksCount.
-  ///
-  /// In en, this message translates to:
-  /// **'{count, plural, =1{1 payment method} other{{count} payment methods}}'**
-  String paymentLinksCount(int count);
-
-  /// No description provided for @paymentLinksInfoTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Get paid directly'**
-  String get paymentLinksInfoTitle;
-
-  /// No description provided for @paymentLinksInfoBody.
-  ///
-  /// In en, this message translates to:
-  /// **'Let people pay you with your own accounts. Money goes straight to you — GreenGo never processes, holds or takes a fee from these payments.'**
-  String get paymentLinksInfoBody;
-
-  /// No description provided for @paymentLinksHintHandle.
-  ///
-  /// In en, this message translates to:
-  /// **'Username or link'**
-  String get paymentLinksHintHandle;
-
-  /// No description provided for @paymentLinksHintPix.
-  ///
-  /// In en, this message translates to:
-  /// **'CPF, CNPJ, e-mail, +55 phone or random key'**
-  String get paymentLinksHintPix;
-
-  /// No description provided for @paymentLinksHintLink.
-  ///
-  /// In en, this message translates to:
-  /// **'Paste your payment link'**
-  String get paymentLinksHintLink;
-
   /// No description provided for @paymentLinkInvalid.
   ///
   /// In en, this message translates to:
   /// **'Invalid {method} value — check it and try again'**
   String paymentLinkInvalid(String method);
-
-  /// No description provided for @paymentLinksUpdated.
-  ///
-  /// In en, this message translates to:
-  /// **'Payment methods updated'**
-  String get paymentLinksUpdated;
-
-  /// No description provided for @paymentLinksRules.
-  ///
-  /// In en, this message translates to:
-  /// **'Use these only for payments between people (gifts, tips, in-person services and tours). GreenGo coins and memberships can only be bought in the app.'**
-  String get paymentLinksRules;
-
-  /// Profile section title listing the user's external payment methods
-  ///
-  /// In en, this message translates to:
-  /// **'Pay directly'**
-  String get paymentLinksSection;
 
   /// No description provided for @paymentDisclaimerTitle.
   ///
@@ -28667,18 +28601,6 @@ abstract class AppLocalizations {
   /// Ticket payments
   ///
   /// In en, this message translates to:
-  /// **'Many people expected: instant confirmation is recommended. Tickets are confirmed automatically, so you don\'t have to check every payment.'**
-  String get tpAdviceLarge;
-
-  /// Ticket payments
-  ///
-  /// In en, this message translates to:
-  /// **'Small group: the simplest is a payment link — no setup, you confirm each payment with one tap.'**
-  String get tpAdviceSmall;
-
-  /// Ticket payments
-  ///
-  /// In en, this message translates to:
   /// **'Amount'**
   String get tpAmountLabel;
 
@@ -28699,24 +28621,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Recommended in Brazil'**
   String get tpBadgeBrazil;
-
-  /// Ticket payments
-  ///
-  /// In en, this message translates to:
-  /// **'No setup'**
-  String get tpBadgeNoSetup;
-
-  /// Ticket payments
-  ///
-  /// In en, this message translates to:
-  /// **'Recommended'**
-  String get tpBadgeRecommended;
-
-  /// Ticket payments
-  ///
-  /// In en, this message translates to:
-  /// **'Bank details and instructions'**
-  String get tpBankInstructionsLabel;
 
   /// Ticket payments
   ///
@@ -28777,12 +28681,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Cancel'**
   String get tpCancelOrder;
-
-  /// Ticket payments
-  ///
-  /// In en, this message translates to:
-  /// **'Where and when to pay in cash (optional)'**
-  String get tpCashInstructionsLabel;
 
   /// Ticket payments
   ///
@@ -28943,13 +28841,13 @@ abstract class AppLocalizations {
   /// Ticket payments
   ///
   /// In en, this message translates to:
-  /// **'Money goes directly to your own account. GreenGo takes no fee on ticket sales.'**
+  /// **'Buyers pay in the app and the full ticket price goes straight to your own Stripe or Mercado Pago account. A GreenGo service fee is added on top for buyers.'**
   String get tpGetPaidIntro;
 
   /// Ticket payments
   ///
   /// In en, this message translates to:
-  /// **'Payment methods, Stripe and Mercado Pago, payments to confirm'**
+  /// **'Connect Stripe or Mercado Pago to sell tickets'**
   String get tpGetPaidSubtitle;
 
   /// Ticket payments
@@ -28985,20 +28883,8 @@ abstract class AppLocalizations {
   /// Ticket payments
   ///
   /// In en, this message translates to:
-  /// **'Instant confirmation (optional)'**
-  String get tpInstantOptional;
-
-  /// Ticket payments
-  ///
-  /// In en, this message translates to:
   /// **'Buyers pay in the app; tickets are confirmed automatically.'**
   String get tpInstantSubtitle;
-
-  /// Ticket payments
-  ///
-  /// In en, this message translates to:
-  /// **'Instant confirmation'**
-  String get tpInstantTitle;
 
   /// Ticket payments
   ///
@@ -29015,32 +28901,8 @@ abstract class AppLocalizations {
   /// Ticket payments
   ///
   /// In en, this message translates to:
-  /// **'Add your Pix, PayPal… in Profile > Business > Get paid to see them here.'**
-  String get tpManualAddMethodsHint;
-
-  /// Ticket payments
-  ///
-  /// In en, this message translates to:
   /// **'GreenGo does not verify these payments: the organizer is responsible for confirming them.'**
   String get tpManualDisclaimer;
-
-  /// Ticket payments
-  ///
-  /// In en, this message translates to:
-  /// **'With {count} people you\'ll have to confirm each payment by hand.'**
-  String tpManualLargeWarning(String count);
-
-  /// Ticket payments
-  ///
-  /// In en, this message translates to:
-  /// **'Payment method'**
-  String get tpManualMethodLabel;
-
-  /// Ticket payments
-  ///
-  /// In en, this message translates to:
-  /// **'Your own payment method; you confirm each payment with one tap.'**
-  String get tpManualSubtitle;
 
   /// Ticket payments
   ///
@@ -29089,12 +28951,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'My purchases'**
   String get tpMyPurchases;
-
-  /// Ticket payments
-  ///
-  /// In en, this message translates to:
-  /// **'GreenGo takes no fee: the money goes straight to you.'**
-  String get tpNoFeeNote;
 
   /// Ticket payments
   ///
@@ -29269,12 +29125,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Receipt attached'**
   String get tpReceiptAttached;
-
-  /// Ticket payments
-  ///
-  /// In en, this message translates to:
-  /// **'Connect Mercado Pago / Stripe to sell tickets with automatic confirmation. Pasted Stripe or Mercado Pago links can\'t be used for tickets.'**
-  String get tpReconnectBanner;
 
   /// Ticket payments
   ///
@@ -30125,12 +29975,6 @@ abstract class AppLocalizations {
   /// Create / edit wizard
   ///
   /// In en, this message translates to:
-  /// **'Many people with manual payments: you will confirm each one. Consider instant confirmation.'**
-  String get wzWarnManualLarge;
-
-  /// Create / edit wizard
-  ///
-  /// In en, this message translates to:
   /// **'No availability yet: add dates after saving, or turn on \"Repeat every week\".'**
   String get wzWarnNoAvailability;
 
@@ -30145,18 +29989,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'When & where'**
   String get wzWhenWhere;
-
-  /// Get paid page: hint under the Payment methods section
-  ///
-  /// In en, this message translates to:
-  /// **'Your own methods (Pix, PayPal, …): people can pay you directly, and you can use them for tickets you confirm by hand.'**
-  String get tpPaymentMethodsSectionHint;
-
-  /// Get paid page: error when saving payment methods fails
-  ///
-  /// In en, this message translates to:
-  /// **'Couldn\'t save your payment methods. Try again.'**
-  String get tpPaymentMethodsSaveFailed;
 
   /// Create / edit wizard
   ///
@@ -39267,18 +39099,6 @@ abstract class AppLocalizations {
   /// **'Connect Stripe or Mercado Pago: buyers pay in the app and their tickets are confirmed instantly, with no manual checks.'**
   String get tpAutoSectionHint;
 
-  /// No description provided for @tpManualSectionTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Manual Payment and Approval'**
-  String get tpManualSectionTitle;
-
-  /// No description provided for @tpManualSectionHint.
-  ///
-  /// In en, this message translates to:
-  /// **'No setup: buyers pay you directly with one of the payment methods below (or cash / bank transfer). You confirm each payment yourself with the Payments to confirm button at the top; the ticket is issued once you confirm.'**
-  String get tpManualSectionHint;
-
   /// No description provided for @paymentMethodsSettingsSubtitle.
   ///
   /// In en, this message translates to:
@@ -39314,12 +39134,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Turn your storefront on or off anytime'**
   String get storefrontToggleHint;
-
-  /// Ticket payments
-  ///
-  /// In en, this message translates to:
-  /// **'No setup: pick one of your Profile > Payment methods (or cash / bank transfer) in the event or experience, and confirm each payment yourself.'**
-  String get tpGetPaidManualInfo;
 
   /// No description provided for @emailTicketSubject.
   ///
@@ -41391,30 +41205,6 @@ abstract class AppLocalizations {
   /// **'Base membership required to reply'**
   String get chatReplyNeedsBase;
 
-  /// Membership comparison table row: personal payment links (Silver, Gold, Platinum)
-  ///
-  /// In en, this message translates to:
-  /// **'Payment links on your profile'**
-  String get tierPaymentLinksRow;
-
-  /// Payment methods locked for tiers below Silver: short label / subtitle
-  ///
-  /// In en, this message translates to:
-  /// **'Available with Silver, Gold or Platinum'**
-  String get paymentLinksTierLocked;
-
-  /// Payment methods locked: the owner has saved links that are hidden because the tier lapsed
-  ///
-  /// In en, this message translates to:
-  /// **'Your saved payment methods are hidden from your profile. Upgrade to Silver, Gold or Platinum to show them again.'**
-  String get paymentLinksTierLockedBody;
-
-  /// Payment methods locked: no saved links, upgrade invitation
-  ///
-  /// In en, this message translates to:
-  /// **'Let people pay you directly with Pix, PayPal and more. Upgrade to Silver, Gold or Platinum to add payment methods to your profile.'**
-  String get paymentLinksTierUpsellBody;
-
   /// Location picker (search an address, drop a pin)
   ///
   /// In en, this message translates to:
@@ -42524,6 +42314,96 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your ID document is being validated. You can create experiences as soon as it is approved, usually within a day.'**
   String get uexpIdDocPendingCreateBody;
+
+  /// Ticket payments: GreenGo service fee / payment links discontinued
+  ///
+  /// In en, this message translates to:
+  /// **'Tickets'**
+  String get tpTicketsSubtotal;
+
+  /// Ticket payments: GreenGo service fee / payment links discontinued
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo service fee'**
+  String get tpServiceFee;
+
+  /// Ticket payments: GreenGo service fee / payment links discontinued
+  ///
+  /// In en, this message translates to:
+  /// **'Intro fee: US\$1 per ticket on this organizer\'s first paid event.'**
+  String get tpServiceFeeTrial;
+
+  /// Ticket payments: GreenGo service fee / payment links discontinued
+  ///
+  /// In en, this message translates to:
+  /// **'+ GreenGo service fee (shown at checkout)'**
+  String get tpPlusServiceFee;
+
+  /// Ticket payments: GreenGo service fee / payment links discontinued
+  ///
+  /// In en, this message translates to:
+  /// **'You receive 100% of your ticket price. Buyers pay a GreenGo service fee per ticket on top, based on your plan. Free tickets have no fee.'**
+  String get tpFeeHostNote;
+
+  /// Ticket payments: GreenGo service fee / payment links discontinued
+  ///
+  /// In en, this message translates to:
+  /// **'Silver: US\$3 + 10% per ticket (max US\$10)'**
+  String get tpFeeRuleSilver;
+
+  /// Ticket payments: GreenGo service fee / payment links discontinued
+  ///
+  /// In en, this message translates to:
+  /// **'Gold: US\$2 + 10% per ticket (max US\$9)'**
+  String get tpFeeRuleGold;
+
+  /// Ticket payments: GreenGo service fee / payment links discontinued
+  ///
+  /// In en, this message translates to:
+  /// **'Platinum: US\$1 + 10% per ticket (max US\$8)'**
+  String get tpFeeRulePlatinum;
+
+  /// Ticket payments: GreenGo service fee / payment links discontinued
+  ///
+  /// In en, this message translates to:
+  /// **'Your first paid event: only US\$1 per ticket'**
+  String get tpFeeRuleTrial;
+
+  /// Ticket payments: GreenGo service fee / payment links discontinued
+  ///
+  /// In en, this message translates to:
+  /// **'Buyers pay {price} + {fee} service fee = {total} per ticket'**
+  String tpFeeBuyerPreview(String price, String fee, String total);
+
+  /// Ticket payments: GreenGo service fee / payment links discontinued
+  ///
+  /// In en, this message translates to:
+  /// **'Payment links are no longer accepted. The organizer needs to connect Stripe or Mercado Pago to sell tickets.'**
+  String get tpErrLinkDiscontinued;
+
+  /// Ticket payments: GreenGo service fee / payment links discontinued
+  ///
+  /// In en, this message translates to:
+  /// **'This currency can\'t be used for paid tickets yet. Choose another currency.'**
+  String get tpErrFeeCurrency;
+
+  /// Ticket payments: GreenGo service fee / payment links discontinued
+  ///
+  /// In en, this message translates to:
+  /// **'Payment links are no longer accepted. Connect Mercado Pago or Stripe to keep selling.'**
+  String get tpLinkDiscontinuedBanner;
+
+  /// Ticket payments: GreenGo service fee / payment links discontinued
+  ///
+  /// In en, this message translates to:
+  /// **'Payment links and cash are no longer accepted. Connect Stripe or Mercado Pago, or publish the experience as free.'**
+  String get uexpErrPaymentLinkNotAccepted;
+
+  /// Experience publish refused: payment links / cash no longer accepted (dialog title)
+  ///
+  /// In en, this message translates to:
+  /// **'Connect a payment provider'**
+  String get uexpPaymentLinkNotAcceptedTitle;
 }
 
 class _AppLocalizationsDelegate

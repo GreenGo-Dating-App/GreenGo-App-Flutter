@@ -3,7 +3,6 @@ import 'package:equatable/equatable.dart';
 import '../../../../core/services/effective_tier.dart' as tier_rules;
 import '../../../membership/domain/entities/membership.dart';
 import 'location.dart';
-import 'payment_links.dart';
 import 'social_links.dart';
 
 /// Controls how the user appears on the Globe map for discovery.
@@ -58,7 +57,6 @@ class Profile extends Equatable {
     this.isSupport = false,
     this.is2FAEnabled = false,
     this.socialLinks,
-    this.paymentLinks,
     this.membershipTier = MembershipTier.free,
     this.membershipStartDate,
     this.membershipEndDate,
@@ -144,9 +142,6 @@ class Profile extends Equatable {
 
   // Social media links
   final SocialLinks? socialLinks;
-
-  // The user's own external payment links (peer-to-peer, never via GreenGo)
-  final PaymentLinks? paymentLinks;
 
   // Membership fields
   final MembershipTier membershipTier;
@@ -369,7 +364,6 @@ class Profile extends Equatable {
         isSupport,
         is2FAEnabled,
         socialLinks,
-        paymentLinks,
         membershipTier,
         membershipStartDate,
         membershipEndDate,
@@ -453,7 +447,6 @@ class Profile extends Equatable {
     bool? isSupport,
     bool? is2FAEnabled,
     SocialLinks? socialLinks,
-    PaymentLinks? paymentLinks,
     MembershipTier? membershipTier,
     DateTime? membershipStartDate,
     DateTime? membershipEndDate,
@@ -535,7 +528,6 @@ class Profile extends Equatable {
       isSupport: isSupport ?? this.isSupport,
       is2FAEnabled: is2FAEnabled ?? this.is2FAEnabled,
       socialLinks: socialLinks ?? this.socialLinks,
-      paymentLinks: paymentLinks ?? this.paymentLinks,
       membershipTier: membershipTier ?? this.membershipTier,
       membershipStartDate: membershipStartDate ?? this.membershipStartDate,
       membershipEndDate: membershipEndDate ?? this.membershipEndDate,

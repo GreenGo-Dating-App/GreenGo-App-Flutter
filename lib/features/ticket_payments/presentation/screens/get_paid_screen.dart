@@ -4,76 +4,31 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/di/injection_container.dart' as di;
-import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
-import '../../../profile/data/private_profile.dart';
-import '../../../profile/domain/entities/payment_links.dart';
-import '../../../profile/domain/payment_links_access.dart';
-import '../../../profile/domain/entities/profile.dart';
-import '../../../profile/domain/repositories/profile_repository.dart';
-import '../../../profile/presentation/bloc/profile_bloc.dart';
-import '../../../profile/presentation/bloc/profile_event.dart';
-import '../../../profile/presentation/widgets/payment_links_locked_card.dart';
-import '../../../profile/presentation/widgets/payment_methods_editor.dart';
 import '../../data/ticket_payments_service.dart';
 import '../../domain/ticket_payments.dart';
 import '../ticket_l10n.dart';
+import '../widgets/ticket_fee_widgets.dart';
 import 'payments_to_confirm_screen.dart';
 
-/// Profile > Business > "Get paid" - ONE page for every way to get paid, in
-/// two sections:
-///  * "Automatic Payment and Approval": connect Mercado Pago / Stripe for
-///    instant ticket confirmation (the provider does the verification);
-///  * "Manual Payment and Approval": the user's own payment methods (Pix,
-///    PayPal, ... - person-to-person and manually confirmed tickets); the
-///    organizer confirms each payment.
-/// "Payments to confirm" is an app-bar icon (badge = pending count) next to
-/// refresh. Money goes straight to the user's own account; GreenGo takes no
-/// fee.
+/// Business > "Get paid": connect Mercado Pago / Stripe. Buyers pay inside
+/// the app and their tickets are confirmed automatically; the money goes
+/// straight to the organizer's own account (the full listed ticket price).
+/// Buyers pay a GreenGo service fee on top ([TicketFeeScheduleCard]).
 ///
-/// [paymentMethodsOnly] (Account settings > Payment methods): only the
-/// payment-methods editor; the payments-to-confirm icon still appears while
-/// orders are waiting.
-///
-/// Payment methods (personal payment links) are a Silver / Gold / Platinum
-/// perk (owner rule 2026-10-12): for any other effective tier the editor is
-/// replaced by [PaymentLinksLockedCard] (saved links greyed + upgrade).
+/// Payment links are no longer accepted (owner rule 2026-10-14): the former
+/// "Manual Payment and Approval" section and the personal payment methods
+/// editor are gone. "Payments to confirm" (app-bar icon with a badge) stays
+/// reachable only while LEGACY link orders are still waiting for this
+/// organizer.
 class GetPaidScreen extends StatefulWidget {
-  const GetPaidScreen({
-    super.key,
-    required this.uid,
-    this.service,
-    this.profileBloc,
-    this.profileRepository,
-    this.paymentMethodsOnly = false,
-    this.hiddenLinksLoader,
-    this.onUpgrade,
-  });
+  const GetPaidScreen({super.key, required this.uid, this.service});
 
   final String uid;
   final TicketPaymentsService? service;
 
-  /// The caller's ProfileBloc (Edit profile), reloaded after the payment
-  /// methods are saved so that screen never re-saves stale links.
-  final ProfileBloc? profileBloc;
-  final ProfileRepository? profileRepository;
-  final bool paymentMethodsOnly;
-
-  /// Reads the owner's hidden links (tier lapsed); defaults to the own
-  /// private profile document. Injectable for tests.
-  final Future<PaymentLinks?> Function(String uid)? hiddenLinksLoader;
-
-  /// Upgrade action of the locked state (defaults to the membership screen).
-  final VoidCallback? onUpgrade;
-
-  static Route<void> route(String uid,
-          {ProfileBloc? profileBloc, bool paymentMethodsOnly = false}) =>
-      MaterialPageRoute(
-          builder: (_) => GetPaidScreen(
-              uid: uid,
-              profileBloc: profileBloc,
-              paymentMethodsOnly: paymentMethodsOnly));
+  static Route<void> route(String uid) =>
+      MaterialPageRoute(builder: (_) => GetPaidScreen(uid: uid));
 
   @override
   State<GetPaidScreen> createState() => _GetPaidScreenState();
@@ -84,115 +39,16 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
   TicketPaymentsConfig _config = const TicketPaymentsConfig();
   TicketProvider? _busy;
   int? _toConfirm;
-  late final ProfileRepository _profiles =
-      widget.profileRepository ?? di.sl<ProfileRepository>();
-  Profile? _profile;
-  bool _profileFailed = false;
-  PaymentLinks? _hiddenLinks;
 
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
-    if (!widget.paymentMethodsOnly) {
-      _svc.config().then((c) {
-        if (mounted) setState(() => _config = c);
-      });
-      unawaited(_refresh());
-    }
+    _svc.config().then((c) {
+      if (mounted) setState(() => _config = c);
+    });
+    unawaited(_refresh());
     _loadPendingCount();
-    unawaited(_loadProfile());
-  }
-
-  Future<void> _loadProfile() async {
-    final result = await _profiles.getProfile(widget.uid);
-    if (!mounted) return;
-    result.fold(
-      (_) => setState(() => _profileFailed = true),
-      (p) => setState(() => _profile = p),
-    );
-    final p = _profile;
-    if (p != null && !paymentLinksAllowed(p)) unawaited(_loadHiddenLinks());
-  }
-
-  Future<void> _loadHiddenLinks() async {
-    PaymentLinks? hidden;
-    try {
-      final loader = widget.hiddenLinksLoader;
-      hidden = loader != null
-          ? await loader(widget.uid)
-          : hiddenPaymentLinksFromPrivate(
-              await PrivateProfileCache.instance.ensure(widget.uid));
-    } catch (_) {/* nothing to show greyed */}
-    if (mounted && hidden != null) setState(() => _hiddenLinks = hidden);
-  }
-
-  Future<bool> _savePaymentLinks(PaymentLinks links) async {
-    final current = _profile;
-    if (current == null) return false;
-    final result = await _profiles.updateProfile(
-      current.copyWith(paymentLinks: links, updatedAt: DateTime.now()),
-    );
-    if (!mounted) return false;
-    return result.fold(
-      (failure) {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-          content: Text(AppLocalizations.of(context)!.tpPaymentMethodsSaveFailed),
-          backgroundColor: AppColors.errorRed,
-        ));
-        return false;
-      },
-      (saved) {
-        setState(() => _profile = saved);
-        widget.profileBloc?.add(ProfileLoadRequested(userId: widget.uid));
-        unawaited(ActionSuccessDialog.showPaymentLinksUpdated(context));
-        return true;
-      },
-    );
-  }
-
-  Widget _paymentMethodsSection(AppLocalizations l) {
-    final Widget body;
-    if (_profile != null && !paymentLinksAllowed(_profile!)) {
-      body = PaymentLinksLockedCard(
-        uid: widget.uid,
-        hidden: _hiddenLinks,
-        onUpgrade: widget.onUpgrade,
-      );
-    } else if (_profile != null) {
-      body = PaymentMethodsEditor(
-        key: const ValueKey('get-paid-payment-methods'),
-        initial: _profile!.paymentLinks,
-        onSave: _savePaymentLinks,
-      );
-    } else if (_profileFailed) {
-      body = TextButton.icon(
-        onPressed: () {
-          setState(() => _profileFailed = false);
-          unawaited(_loadProfile());
-        },
-        icon: const Icon(Icons.refresh),
-        label: Text(l.tpRefresh),
-      );
-    } else {
-      body = const Padding(
-        padding: EdgeInsets.all(16),
-        child: Center(child: CircularProgressIndicator(color: AppColors.richGold)),
-      );
-    }
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(l.paymentLinksTitle,
-            style: const TextStyle(
-                color: AppColors.textPrimary, fontSize: 15, fontWeight: FontWeight.w700)),
-        const SizedBox(height: 4),
-        Text(l.tpPaymentMethodsSectionHint,
-            style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
-        const SizedBox(height: 12),
-        body,
-      ],
-    );
   }
 
   @override
@@ -204,9 +60,7 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
   /// Back from the provider's onboarding page: re-read the account status.
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state == AppLifecycleState.resumed && !widget.paymentMethodsOnly) {
-      unawaited(_refresh());
-    }
+    if (state == AppLifecycleState.resumed) unawaited(_refresh());
   }
 
   Future<void> _refresh() async {
@@ -215,6 +69,7 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
     } catch (_) {/* status stream still shows the last state */}
   }
 
+  /// Legacy link orders still waiting for this organizer (see class doc).
   Future<void> _loadPendingCount() async {
     try {
       final c = await FirebaseFirestore.instance
@@ -252,10 +107,9 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
     final n = _toConfirm ?? 0;
     return IconButton(
       key: const ValueKey('get-paid-to-confirm'),
-      tooltip: n > 0 ? '${l.tpToConfirmTitle} ($n)' : l.tpToConfirmTitle,
+      tooltip: '${l.tpToConfirmTitle} ($n)',
       onPressed: _openToConfirm,
       icon: Badge(
-        isLabelVisible: n > 0,
         label: Text(n > 99 ? '99+' : '$n'),
         backgroundColor: AppColors.richGold,
         textColor: AppColors.deepBlack,
@@ -264,102 +118,71 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
     );
   }
 
-  Widget _sectionHeader(String title, String hint, IconData icon, {Key? key}) {
-    return Column(
-      key: key,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(children: [
-          Icon(icon, color: AppColors.richGold, size: 22),
-          const SizedBox(width: 8),
-          Expanded(
-            child: Text(title,
-                style: const TextStyle(
-                    color: AppColors.textPrimary,
-                    fontSize: 17,
-                    fontWeight: FontWeight.w700)),
-          ),
-        ]),
-        const SizedBox(height: 4),
-        Text(hint,
-            style: const TextStyle(
-                color: AppColors.textSecondary, fontSize: 12.5, height: 1.35)),
-        const SizedBox(height: 12),
-      ],
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context)!;
-    final methodsOnly = widget.paymentMethodsOnly;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
-        title: Text(methodsOnly ? l.paymentLinksTitle : l.tpGetPaidTitle),
+        title: Text(l.tpGetPaidTitle),
         actions: [
-          // Manual confirmations: always on the full page; on the
-          // payment-methods-only page only while some are waiting.
-          if (!methodsOnly || (_toConfirm ?? 0) > 0) _toConfirmAction(l),
-          if (!methodsOnly)
-            IconButton(
-              tooltip: l.tpRefresh,
-              icon: const Icon(Icons.refresh),
-              onPressed: _refresh,
-            ),
+          if ((_toConfirm ?? 0) > 0) _toConfirmAction(l),
+          IconButton(
+            tooltip: l.tpRefresh,
+            icon: const Icon(Icons.refresh),
+            onPressed: _refresh,
+          ),
         ],
       ),
-      body: methodsOnly
-          ? ListView(
-              padding: const EdgeInsets.all(16),
-              children: [_paymentMethodsSection(l)],
-            )
-          : StreamBuilder<PaymentAccounts>(
-              stream: _svc.watchAccounts(widget.uid),
-              builder: (context, snap) {
-                final a = snap.data ?? const PaymentAccounts();
-                return ListView(
-                  padding: const EdgeInsets.all(16),
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.all(14),
-                      decoration: BoxDecoration(
-                        color: AppColors.richGold.withValues(alpha: 0.08),
-                        borderRadius: BorderRadius.circular(14),
-                        border: Border.all(
-                            color: AppColors.richGold.withValues(alpha: 0.35)),
-                      ),
-                      child: Row(children: [
-                        const Icon(Icons.savings_outlined,
-                            color: AppColors.richGold),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Text(l.tpGetPaidIntro,
-                              style: const TextStyle(
-                                  color: AppColors.textSecondary, height: 1.35)),
-                        ),
-                      ]),
-                    ),
-                    const SizedBox(height: 20),
-                    // -- Automatic Payment and Approval --
-                    _sectionHeader(l.tpAutoSectionTitle, l.tpAutoSectionHint,
-                        Icons.bolt_outlined,
-                        key: const ValueKey('get-paid-section-auto')),
-                    _providerCard(l, TicketProvider.mercadoPago, a.mercadoPago,
-                        recommendedBr: true, currency: a.mercadoPagoCurrency),
-                    const SizedBox(height: 12),
-                    _providerCard(l, TicketProvider.stripe, a.stripe),
-                    const SizedBox(height: 28),
-                    // -- Manual Payment and Approval --
-                    _sectionHeader(l.tpManualSectionTitle,
-                        l.tpManualSectionHint, Icons.fact_check_outlined,
-                        key: const ValueKey('get-paid-section-manual')),
-                    _paymentMethodsSection(l),
-                  ],
-                );
-              },
-            ),
+      body: StreamBuilder<PaymentAccounts>(
+        stream: _svc.watchAccounts(widget.uid),
+        builder: (context, snap) {
+          final a = snap.data ?? const PaymentAccounts();
+          return ListView(
+            padding: const EdgeInsets.all(16),
+            children: [
+              Container(
+                key: const ValueKey('get-paid-intro'),
+                padding: const EdgeInsets.all(14),
+                decoration: BoxDecoration(
+                  color: AppColors.richGold.withValues(alpha: 0.08),
+                  borderRadius: BorderRadius.circular(14),
+                  border: Border.all(color: AppColors.richGold.withValues(alpha: 0.35)),
+                ),
+                child: Row(children: [
+                  const Icon(Icons.savings_outlined, color: AppColors.richGold),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Text(l.tpGetPaidIntro,
+                        style: const TextStyle(color: AppColors.textSecondary, height: 1.35)),
+                  ),
+                ]),
+              ),
+              const SizedBox(height: 20),
+              Row(key: const ValueKey('get-paid-section-auto'), children: [
+                const Icon(Icons.bolt_outlined, color: AppColors.richGold, size: 22),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Text(l.tpAutoSectionTitle,
+                      style: const TextStyle(
+                          color: AppColors.textPrimary, fontSize: 17, fontWeight: FontWeight.w700)),
+                ),
+              ]),
+              const SizedBox(height: 4),
+              Text(l.tpAutoSectionHint,
+                  style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5, height: 1.35)),
+              const SizedBox(height: 12),
+              _providerCard(l, TicketProvider.mercadoPago, a.mercadoPago,
+                  recommendedBr: true, currency: a.mercadoPagoCurrency),
+              const SizedBox(height: 12),
+              _providerCard(l, TicketProvider.stripe, a.stripe),
+              const SizedBox(height: 20),
+              const TicketFeeScheduleCard(key: ValueKey('get-paid-fees')),
+            ],
+          );
+        },
+      ),
     );
   }
 
