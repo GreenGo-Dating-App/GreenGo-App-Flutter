@@ -59,6 +59,7 @@ import { emitNotification } from '../notifications/notifyHelpers';
 import { lt, rawText } from '../shared/i18n';
 import { isBusinessActive } from '../shared/effectiveTier';
 import { assertCanParticipate } from '../shared/participation';
+import { GuestBuyer, guestDisplayName, guestRecordFields } from '../shared/guestIdentity';
 
 const db = () => admin.firestore();
 const ts = (ms: number) => admin.firestore.Timestamp.fromMillis(ms);
@@ -219,8 +220,15 @@ export function ticketIdsFor(orderId: string, quantity: number): string[] {
  * Link    -> { orderId, mode: 'link', code, amount, currency, payment, expiresAt, quantity, reused }.
  * Price, currency, title, description and image ALWAYS come from the
  * server-side listing / booking doc; client-sent values are ignored.
+ *
+ * [guest] (guest/ shared-link bookings only, never from a client): [uid] is
+ * then the guest key (shared/guestIdentity.ts); no membership check, instant
+ * or free only, the order carries the guest's name, and the provider returns
+ * to the guest pages.
  */
-export async function createTicketCheckout(uid: string, data: any, email: string | null): Promise<Record<string, unknown>> {
+export async function createTicketCheckout(
+  uid: string, data: any, email: string | null, guest?: GuestBuyer,
+): Promise<Record<string, unknown>> {
   const kind = data?.kind;
   const id = data?.id;
   if (kind !== 'event' && kind !== 'experience') fail('invalid-argument', 'invalid_kind');
@@ -260,7 +268,7 @@ export async function createTicketCheckout(uid: string, data: any, email: string
     ]) as any[];
     // Owner rule: joining an event needs Base (or an active paid tier). Read
     // in the transaction so a lapsed membership cannot slip through.
-    const buyerSnap = kind === 'event' ? await tx.get(db().collection('profiles').doc(uid)) : null;
+    const buyerSnap = kind === 'event' && !guest ? await tx.get(db().collection('profiles').doc(uid)) : null;
     if (!lSnap.exists) fail('not-found', 'listing_not_found');
     const l = lSnap.data() as Record<string, any>;
 
@@ -304,7 +312,8 @@ export async function createTicketCheckout(uid: string, data: any, email: string
       if (l.organizerId === uid) fail('failed-precondition', 'own_listing');
       // Base membership required to participate (shared/participation.ts).
       // Experiences are gated at createBooking; paying an existing booking is not.
-      assertCanParticipate(buyerSnap?.data(), new Date(t0));
+      // Guests: no membership (guest/guestBooking.ts checked guestsAllowed).
+      if (!guest) assertCanParticipate(buyerSnap?.data(), new Date(t0));
       const currency = isoCurrency(l.currencyCode, l.currency);
       if (!currency) fail('failed-precondition', 'currency_missing');
       const place = [l.locationName, l.address, l.city].filter((x) => typeof x === 'string' && x.trim()).join(', ');
@@ -358,6 +367,8 @@ export async function createTicketCheckout(uid: string, data: any, email: string
     const isFreeOrder = !!lines && totalAmount === 0;
     if (!isFreeOrder && (!Number.isSafeInteger(listing.unitAmount) || listing.unitAmount <= 0)) fail('failed-precondition', 'invalid_price');
     if (isFreeOrder) listing.provider = 'free' as any;
+    // Guests pay by instant checkout only (or get free tickets), never "link".
+    if (guest && listing.provider === 'link') fail('failed-precondition', 'guest_instant_only');
 
     // Only an ACTIVE business account (isBusiness + effective Platinum) may
     // sell. Existing paid listings of other accounts stay readable, but new
@@ -490,6 +501,7 @@ export async function createTicketCheckout(uid: string, data: any, email: string
       checkoutUrl: null, providerRef: {}, ticketId: null, ticketIds: [], title: listing.title.slice(0, 200),
       startsAt: listing.startsAtMs !== null ? ts(listing.startsAtMs) : null,
       platform, createdAt: ts(t0), updatedAt: ts(t0),
+      ...(guest ? guestRecordFields(guest) : {}),
     };
     tx.set(orderRef, order);
     return { reused: false, orderId: orderRef.id, order, listing, stripeCountry };
@@ -522,9 +534,9 @@ export async function createTicketCheckout(uid: string, data: any, email: string
     unitAmount: L.unitAmount,
     quantity: L.quantity,
     currency: L.currency,
-    successUrl: returnUrl({ k: 'order', o: orderId, r: 'success', p: platform }),
-    cancelUrl: returnUrl({ k: 'order', o: orderId, r: 'cancel', p: platform }),
-    pendingUrl: returnUrl({ k: 'order', o: orderId, r: 'pending', p: platform }),
+    successUrl: guest ? guest.returnUrl('success', orderId) : returnUrl({ k: 'order', o: orderId, r: 'success', p: platform }),
+    cancelUrl: guest ? guest.returnUrl('cancel', orderId) : returnUrl({ k: 'order', o: orderId, r: 'cancel', p: platform }),
+    pendingUrl: guest ? guest.returnUrl('pending', orderId) : returnUrl({ k: 'order', o: orderId, r: 'pending', p: platform }),
     notificationUrl: `${cfg.mpWebhookUrl()}?o=${encodeURIComponent(orderId)}`,
     expiresAtMs,
     nowMs: now(),
@@ -690,8 +702,10 @@ export async function markOrderPaid(orderId: string, ev: PaidEvidence): Promise<
       tx.set(attRef, {
         eventId: o.listingId,
         userId: o.buyerId,
-        userName: String(prior.userName || p.displayName || p.nickname || 'Guest'),
+        userName: String(prior.userName || (o.isGuest ? guestDisplayName(o.guest) : '') || p.displayName || p.nickname || 'Guest'),
         userPhotoUrl: prior.userPhotoUrl ?? (typeof photos[0] === 'string' ? photos[0] : null),
+        // Shared-link guest (no account): the app shows the guest avatar, no profile link.
+        ...(o.isGuest ? { isGuest: true } : {}),
         status: 'going',
         rsvpDate: prior.rsvpDate ?? ts(t),
         isApproved: true,

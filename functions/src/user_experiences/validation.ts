@@ -290,6 +290,8 @@ export function validateExperiencePayload(p: Record<string, unknown> | null | un
     weekendPrice: isFree ? null : weekendPriceRaw,
     weekendDays: weekendDays && weekendDays.length ? weekendDays : null,
     ...(maxTicketsPerUser !== undefined ? { maxTicketsPerUser } : {}),
+    // Shared-link guest bookings (guest/): host opt-in, default off.
+    guestsAllowed: d.guestsAllowed === true,
     paymentLinkMethod,
     paymentInstructions,
     availability: optStr(d.availability, LIMITS.shortTextMax),
