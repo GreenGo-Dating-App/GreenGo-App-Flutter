@@ -42,6 +42,7 @@ class EventModel extends Event {
     super.externalLinks = const [],
     super.isFeatured = false,
     super.featuredUntil,
+    super.hiddenByDowngrade = false,
     super.guestsAllowedPerAttendee = 0,
     super.seriesId,
     super.recurrence,
@@ -100,6 +101,7 @@ class EventModel extends Event {
       externalLinks: event.externalLinks,
       isFeatured: event.isFeatured,
       featuredUntil: event.featuredUntil,
+      hiddenByDowngrade: event.hiddenByDowngrade,
       guestsAllowedPerAttendee: event.guestsAllowedPerAttendee,
       seriesId: event.seriesId,
       communityId: event.communityId,
@@ -174,6 +176,8 @@ class EventModel extends Event {
               .toList() ??
           const [],
       isFeatured: json['isFeatured'] as bool? ?? false,
+      // Server-owned (plan downgrade); read only - toJson never writes it.
+      hiddenByDowngrade: json['hiddenByDowngrade'] == true,
       featuredUntil:
           json['featuredUntil'] != null ? _parseDateTime(json['featuredUntil']) : null,
       guestsAllowedPerAttendee:

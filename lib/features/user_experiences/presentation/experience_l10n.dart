@@ -91,6 +91,10 @@ class ExperienceL10n {
     }
   }
 
+  /// Status label of [e], saying when it was hidden by a plan downgrade.
+  static String statusOf(AppLocalizations l, UserExperience e) =>
+      e.isHiddenByDowngrade ? l.listingHiddenByPlanBadge : status(l, e.status);
+
   static String status(AppLocalizations l, ExperienceStatus s) {
     switch (s) {
       case ExperienceStatus.draft:

@@ -1,5 +1,8 @@
 import 'package:equatable/equatable.dart';
 
+/// `moderation.reason` of an experience hidden by a plan downgrade.
+const String kExperienceDowngradeReason = 'plan_downgrade';
+
 /// Category of a member-hosted experience. The wire value is the enum name.
 enum ExperienceCategory {
   foodDrink,
@@ -302,6 +305,12 @@ class UserExperience extends Equatable {
 
   bool get isPublished => status == ExperienceStatus.published;
   bool get isHidden => status == ExperienceStatus.hidden;
+
+  /// Hidden by the server because the host's plan dropped below the number
+  /// of active experiences they had (owner rule 2026-10-14; functions
+  /// entitlements/downgrade.ts). Upgrading restores it.
+  bool get isHiddenByDowngrade =>
+      isHidden && moderationReason == kExperienceDowngradeReason;
   bool get hasCoordinates => lat != null && lng != null;
 
   /// Average rating (0 when unrated); prefers the server avg, else derives it.

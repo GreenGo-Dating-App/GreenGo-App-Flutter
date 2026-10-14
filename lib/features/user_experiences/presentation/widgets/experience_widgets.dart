@@ -435,7 +435,7 @@ class ExperienceCard extends StatelessWidget {
                   : AppColors.warningAmber.withValues(alpha: 0.9),
               borderRadius: BorderRadius.circular(6),
             ),
-            child: Text(ExperienceL10n.status(l, e.status),
+            child: Text(ExperienceL10n.statusOf(l, e),
                 style: const TextStyle(
                     color: Colors.white,
                     fontSize: 10,

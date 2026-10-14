@@ -103,7 +103,8 @@ abstract class UserExperiencesRepository {
 
   Future<Either<Failure, UserExperience?>> getExperience(String id);
 
-  /// How many experiences [hostId] has (any status) — aggregate count().
+  /// How many ACTIVE experiences [hostId] has: any status, except those
+  /// hidden by a plan downgrade — aggregate count().
   Future<Either<Failure, int>> countHostExperiences(String hostId);
 
   /// Creates via the `createUserExperience` callable (tier limit enforced

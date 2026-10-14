@@ -152,6 +152,7 @@ class Event extends Equatable {
     this.externalLinks = const [],
     this.isFeatured = false,
     this.featuredUntil,
+    this.hiddenByDowngrade = false,
     this.guestsAllowedPerAttendee = 0,
     this.seriesId,
     this.recurrence,
@@ -227,6 +228,12 @@ class Event extends Equatable {
   // Promotion: featured/boosted events surface first in discovery.
   final bool isFeatured;
   final DateTime? featuredUntil;
+
+  /// Hidden by the server because the organizer's plan dropped below the
+  /// number of active events they had (owner rule 2026-10-14; functions
+  /// entitlements/downgrade.ts). Stored as status 'draft'; upgrading
+  /// restores it. Server-owned: read only, never written by the app.
+  final bool hiddenByDowngrade;
 
   /// Number of guests each attendee may bring (0 = guests not allowed).
   /// Used by the QR check-in flow to compute total headcount.
@@ -413,6 +420,7 @@ class Event extends Equatable {
         externalLinks,
         isFeatured,
         featuredUntil,
+        hiddenByDowngrade,
         guestsAllowedPerAttendee,
         seriesId,
         recurrence,
@@ -469,6 +477,7 @@ class Event extends Equatable {
     List<ExternalLink>? externalLinks,
     bool? isFeatured,
     DateTime? featuredUntil,
+    bool? hiddenByDowngrade,
     int? guestsAllowedPerAttendee,
     String? seriesId,
     EventRecurrence? recurrence,
@@ -531,6 +540,7 @@ class Event extends Equatable {
       externalLinks: externalLinks ?? this.externalLinks,
       isFeatured: isFeatured ?? this.isFeatured,
       featuredUntil: featuredUntil ?? this.featuredUntil,
+      hiddenByDowngrade: hiddenByDowngrade ?? this.hiddenByDowngrade,
       guestsAllowedPerAttendee:
           guestsAllowedPerAttendee ?? this.guestsAllowedPerAttendee,
       seriesId: seriesId ?? this.seriesId,
