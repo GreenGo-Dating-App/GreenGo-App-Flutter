@@ -44,9 +44,10 @@ export const refreshPaymentAccount = callable(CALL_STRIPE, (uid) => accounts.ref
 export const createTicketCheckout = callable(CALL_STRIPE, (uid, data, email) => orders.createTicketCheckout(uid, data, email));
 export const syncTicketOrder = callable(CALL_STRIPE, (uid, data) => orders.syncTicketOrder(uid, data));
 export const cancelTicketOrder = callable(CALL_STRIPE, (uid, data) => orders.cancelTicketOrder(uid, data));
+// LEGACY link orders still open (no new link orders since 2026-10-14).
 export const markTicketPaymentSent = callable(CALL, (uid, data) => orders.markTicketPaymentSent(uid, data));
 
-// Organizer, link mode.
+// Organizer, LEGACY link orders still open (see config.ts for the cleanup).
 export const confirmTicketPayment = callable(CALL, (uid, data) => orders.confirmTicketPayment(uid, data));
 export const rejectTicketPayment = callable(CALL, (uid, data) => orders.rejectTicketPayment(uid, data));
 
