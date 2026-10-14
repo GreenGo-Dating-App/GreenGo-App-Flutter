@@ -7665,5 +7665,9 @@
   "msCalendarHostingTag": "Anfitrião",
   "msCalendarGoingTag": "Vais",
   "dcCardHint": "Calendário das suas reservas e horários livres",
-  "uexpIdDocPendingCreateBody": "O seu documento de identidade está a ser validado. Poderá criar experiências assim que for aprovado, normalmente em menos de um dia."
+  "uexpIdDocPendingCreateBody": "O seu documento de identidade está a ser validado. Poderá criar experiências assim que for aprovado, normalmente em menos de um dia.",
+  "guestBookingSwitchTitle": "Convidados podem reservar",
+  "guestBookingSwitchHint": "Pessoas sem conta GreenGo podem reservar a partir do link partilhado com o nome e o e-mail. Contam para a tua lotação.",
+  "guestBookingPublicOnly": "Disponível apenas para eventos públicos.",
+  "guestLabel": "Convidado"
 }

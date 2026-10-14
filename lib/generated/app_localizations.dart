@@ -67,7 +67,7 @@ import 'app_localizations_pt.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -90,11 +90,11 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-    delegate,
-    GlobalMaterialLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-  ];
+        delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -104,7 +104,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('it'),
     Locale('pt'),
-    Locale('pt', 'BR')
+    Locale('pt', 'BR'),
   ];
 
   /// No description provided for @culturalPassportTitle.
@@ -11380,7 +11380,10 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{tierName} membership active until {formattedDate}{coinsText}'**
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText);
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  );
 
   /// No description provided for @membershipActivatedTitle.
   ///
@@ -28373,14 +28376,22 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Renews automatically on {date}.'**
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date);
+    String plan,
+    String price,
+    String interval,
+    String date,
+  );
 
   /// Web (Stripe) subscription cancelled at period end
   ///
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Cancelled; access ends on {date}.'**
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date);
+    String plan,
+    String price,
+    String interval,
+    String date,
+  );
 
   /// No description provided for @billingIntervalMonth.
   ///
@@ -38485,7 +38496,11 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reason: {reason}\nReported message: \"{message}\"\nReported user: {user}\nReported at: {date}'**
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date);
+    String reason,
+    String message,
+    String user,
+    String date,
+  );
 
   /// No description provided for @supportChatWithGreenGoSubject.
   ///
@@ -42524,6 +42539,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your ID document is being validated. You can create experiences as soon as it is approved, usually within a day.'**
   String get uexpIdDocPendingCreateBody;
+
+  /// Event / experience editor switch: lets people without an account book from the shared link (guest booking).
+  ///
+  /// In en, this message translates to:
+  /// **'Guests allowed to book'**
+  String get guestBookingSwitchTitle;
+
+  /// Explains the guest booking switch to the host.
+  ///
+  /// In en, this message translates to:
+  /// **'People without a GreenGo account can book from the shared link with their name and email. They count toward your capacity.'**
+  String get guestBookingSwitchHint;
+
+  /// Shown under the guest booking switch when the event is private (switch disabled).
+  ///
+  /// In en, this message translates to:
+  /// **'Available for public events only.'**
+  String get guestBookingPublicOnly;
+
+  /// Small label next to the name of someone who booked as a guest (no GreenGo account).
+  ///
+  /// In en, this message translates to:
+  /// **'Guest'**
+  String get guestLabel;
 }
 
 class _AppLocalizationsDelegate
@@ -42537,13 +42576,13 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-        'de',
-        'en',
-        'es',
-        'fr',
-        'it',
-        'pt'
-      ].contains(locale.languageCode);
+    'de',
+    'en',
+    'es',
+    'fr',
+    'it',
+    'pt',
+  ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -42579,8 +42618,9 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-      'an issue with the localizations generation tool. Please file an issue '
-      'on GitHub with a reproducible sample app and the gen-l10n configuration '
-      'that was used.');
+    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+    'an issue with the localizations generation tool. Please file an issue '
+    'on GitHub with a reproducible sample app and the gen-l10n configuration '
+    'that was used.',
+  );
 }

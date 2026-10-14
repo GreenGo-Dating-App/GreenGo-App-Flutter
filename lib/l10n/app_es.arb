@@ -7665,5 +7665,9 @@
   "msCalendarHostingTag": "Anfitrión",
   "msCalendarGoingTag": "Asistes",
   "dcCardHint": "Calendario de tus reservas y horas libres",
-  "uexpIdDocPendingCreateBody": "Estamos validando tu documento de identidad. Podrás crear experiencias en cuanto se apruebe, normalmente en menos de un día."
+  "uexpIdDocPendingCreateBody": "Estamos validando tu documento de identidad. Podrás crear experiencias en cuanto se apruebe, normalmente en menos de un día.",
+  "guestBookingSwitchTitle": "Los invitados pueden reservar",
+  "guestBookingSwitchHint": "Las personas sin cuenta de GreenGo pueden reservar desde el enlace compartido con su nombre y correo. Cuentan para tu aforo.",
+  "guestBookingPublicOnly": "Solo disponible para eventos públicos.",
+  "guestLabel": "Invitado"
 }

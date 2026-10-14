@@ -13721,5 +13721,13 @@
   "msCalendarGoingTag": "Going",
   "dcCardHint": "Calendar of your bookings and open times",
   "uexpIdDocPendingCreateBody": "Your ID document is being validated. You can create experiences as soon as it is approved, usually within a day.",
-  "@uexpIdDocPendingCreateBody": {"description": "Shown when a host tries to create an experience while their ID document (sent at registration or later) is still under review."}
+  "@uexpIdDocPendingCreateBody": {"description": "Shown when a host tries to create an experience while their ID document (sent at registration or later) is still under review."},
+  "guestBookingSwitchTitle": "Guests allowed to book",
+  "@guestBookingSwitchTitle": {"description": "Event / experience editor switch: lets people without an account book from the shared link (guest booking)."},
+  "guestBookingSwitchHint": "People without a GreenGo account can book from the shared link with their name and email. They count toward your capacity.",
+  "@guestBookingSwitchHint": {"description": "Explains the guest booking switch to the host."},
+  "guestBookingPublicOnly": "Available for public events only.",
+  "@guestBookingPublicOnly": {"description": "Shown under the guest booking switch when the event is private (switch disabled)."},
+  "guestLabel": "Guest",
+  "@guestLabel": {"description": "Small label next to the name of someone who booked as a guest (no GreenGo account)."}
 }

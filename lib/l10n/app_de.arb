@@ -7665,5 +7665,9 @@
   "msCalendarHostingTag": "Gastgeber",
   "msCalendarGoingTag": "Dabei",
   "dcCardHint": "Kalender mit deinen Buchungen und freien Zeiten",
-  "uexpIdDocPendingCreateBody": "Dein Ausweisdokument wird geprüft. Sobald es freigegeben ist, kannst du Erlebnisse erstellen, meist innerhalb eines Tages."
+  "uexpIdDocPendingCreateBody": "Dein Ausweisdokument wird geprüft. Sobald es freigegeben ist, kannst du Erlebnisse erstellen, meist innerhalb eines Tages.",
+  "guestBookingSwitchTitle": "Gäste dürfen buchen",
+  "guestBookingSwitchHint": "Personen ohne GreenGo-Konto können über den geteilten Link mit Name und E-Mail buchen. Sie zählen zu deiner Kapazität.",
+  "guestBookingPublicOnly": "Nur für öffentliche Events verfügbar.",
+  "guestLabel": "Gast"
 }

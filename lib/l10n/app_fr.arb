@@ -7091,5 +7091,9 @@
   "msCalendarHostingTag": "Hôte",
   "msCalendarGoingTag": "Participant",
   "dcCardHint": "Calendrier de vos réservations et horaires libres",
-  "uexpIdDocPendingCreateBody": "Ta pièce d'identité est en cours de validation. Tu pourras créer des expériences dès qu'elle sera approuvée, généralement en moins d'un jour."
+  "uexpIdDocPendingCreateBody": "Ta pièce d'identité est en cours de validation. Tu pourras créer des expériences dès qu'elle sera approuvée, généralement en moins d'un jour.",
+  "guestBookingSwitchTitle": "Les invités peuvent réserver",
+  "guestBookingSwitchHint": "Les personnes sans compte GreenGo peuvent réserver depuis le lien partagé avec leur nom et leur e-mail. Elles comptent dans votre capacité.",
+  "guestBookingPublicOnly": "Disponible uniquement pour les événements publics.",
+  "guestLabel": "Invité"
 }
