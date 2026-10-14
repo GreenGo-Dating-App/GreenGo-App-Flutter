@@ -281,9 +281,10 @@ class EditProfileScreen extends StatelessWidget {
             // Create a non-null reference for use in the UI
             final activeProfile = currentProfile;
 
-            // Active business accounts (business flag + active Platinum) get a
-            // storefront-oriented menu; dating-style personal items (voice
-            // intro, About Me body-stats) are hidden for them.
+            // Active business accounts (business flag + active Silver, Gold
+            // or Platinum) get a storefront-oriented menu; dating-style
+            // personal items (voice intro, About Me body-stats) are hidden
+            // for them.
             final isBusinessActive = TierEntitlements.isBusinessActive(
                 activeProfile.effectiveTier, activeProfile.isBusiness);
 
@@ -687,7 +688,7 @@ class EditProfileScreen extends StatelessWidget {
                   // "become a business" promo so the upgrade path is never lost.
                   Container(
                     margin: const EdgeInsets.only(top: 24, bottom: 24),
-                    // A business whose Platinum lapsed is STILL a business
+                    // A business whose paid tier lapsed is STILL a business
                     // (permanent): it gets the hub (paused state + renew),
                     // never the "Become a business" promo again.
                     child: activeProfile.isBusiness

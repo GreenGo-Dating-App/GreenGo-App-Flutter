@@ -72,7 +72,12 @@ void main() {
       String row(String label, int i) =>
           rows.firstWhere((r) => r.label == label).values[i];
       expect([for (var i = 0; i < 4; i++) row(l10n.shopEventsCreate, i)],
-          ['1', '3', '5', l10n.shopUnlimited]);
+          ['1', '5', '10', l10n.shopUnlimited]);
+      expect([for (var i = 0; i < 4; i++) row(l10n.shopExperiencesCreate, i)],
+          ['1', '5', '10', l10n.shopUnlimited]);
+      // Business accounts (paid tickets / bookings): Silver and up.
+      expect([for (var i = 0; i < 4; i++) row(l10n.shopBusinessAccount, i)],
+          ['✗', '✓', '✓', '✓']);
       expect([for (var i = 0; i < 4; i++) row(l10n.shopDailyConnects, i)],
           ['10', '50', '200', l10n.shopUnlimited]);
       expect([for (var i = 0; i < 4; i++) row(l10n.shopMonthlyBoosts, i)],
@@ -121,7 +126,6 @@ void main() {
       expect(freeBoostsUsedFrom(usage, now), 2);
       expect(freeBoostsUsedFrom({...usage, 'boostMonth': '2000-01'}, now), 0);
       expect(ongoingEventSlotsFrom(usage, now), 1);
-      expect(extraEventCreditsLeftFrom(usage), 1);
       expect(groupsCreatedFrom(usage), 1);
       expect(connectsTodayFrom(null, now), 0);
       expect(ongoingEventSlotsFrom(null, now), 0);
@@ -183,7 +187,7 @@ void main() {
       expect((await gate.boostAllowance('silver')).left, 0);
     });
 
-    test('events: ONGOING slots (M1); a paid credit allows one more', () async {
+    test('events: ACTIVE slots at a time (Base 1 / Silver 5 / Gold 10); no paid extras', () async {
       final ended = now.subtract(const Duration(days: 1)).millisecondsSinceEpoch;
       final running = now.add(const Duration(days: 1)).millisecondsSinceEpoch;
       await fs.doc('entitlement_usage/free').set({'eventActiveEnds': [ended, ended, ended]});
@@ -194,10 +198,24 @@ void main() {
       r = await limits.canCreateEvent('free');
       expect(r.allowed, isFalse);
       expect(r.current, 1);
+      expect(r.remaining, 0);
+      // The retired coin credit no longer lets one more through.
       await fs.doc('entitlement_usage/free').set(
           {'eventExtraCredits': 1, 'eventExtraUsed': 0}, SetOptions(merge: true));
-      expect((await limits.canCreateEvent('free')).allowed, isTrue);
+      expect((await limits.canCreateEvent('free')).allowed, isFalse);
+      await fs.doc('entitlement_usage/silver')
+          .set({'eventActiveEnds': List.filled(4, running)});
+      r = await limits.canCreateEvent('silver');
+      expect(r.allowed, isTrue);
+      expect(r.max, 5);
+      expect(r.remaining, 1);
+      await fs.doc('entitlement_usage/gold')
+          .set({'eventActiveEnds': List.filled(10, running)});
+      r = await limits.canCreateEvent('gold');
+      expect(r.allowed, isFalse);
+      expect(r.max, 10);
       expect((await limits.canCreateEvent('plat')).max, isNull);
+      expect((await limits.canCreateEvent('plat')).remaining, isNull);
     });
 
     test('groups: the server count, not a denied count() query', () async {

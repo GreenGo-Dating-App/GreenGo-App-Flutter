@@ -7,9 +7,10 @@ import 'tier_entitlements.dart';
 
 /// Who may charge money for an event / experience.
 ///
-/// Only an ACTIVE business account (isBusiness + effective Platinum, see
-/// [TierEntitlements.isBusinessActive]) may create paid events or paid
-/// experiences. The server enforces the same rule (firestore.rules
+/// Only an ACTIVE business account (isBusiness + effective Silver, Gold or
+/// Platinum, see [TierEntitlements.isBusinessActive]) may create paid events
+/// or paid experiences; Base listings are always free (owner rule
+/// 2026-10-14). The server enforces the same rule (firestore.rules
 /// `sellerBusinessActive`, createUserExperience / publishUserExperience,
 /// createTicketCheckout, createBooking); this is the client mirror used to
 /// hide the price / payment options in the wizards.
@@ -17,7 +18,8 @@ enum PaidListingAccess {
   /// Active business account: paid listings allowed.
   allowed,
 
-  /// Business account whose Platinum lapsed: paid listings paused.
+  /// Business account whose paid tier lapsed (Base / no plan): paid
+  /// listings paused.
   businessPaused,
 
   /// Personal account: free listings only.

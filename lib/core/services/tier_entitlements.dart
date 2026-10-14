@@ -49,12 +49,16 @@ class TierEntitlements {
   // ADJUSTABLE TUNABLES  (change tier balance here — one place, no divergence)
   // ===========================================================================
 
-  // --- Max ONGOING events a user may have (null = unlimited). ---
-  // "Ongoing" = events that haven't ended yet. Mirrored by
-  // TierLimitsService.maxEvents (which delegates here).
-  static const int _eventsFree = 1; // adjustable
-  static const int _eventsSilver = 3; // Silver: max 3 ongoing events
-  static const int _eventsGold = 5; // Gold: max 5 ongoing events
+  // --- Max ACTIVE events a user may have AT A TIME (null = unlimited). ---
+  // Owner rule 2026-10-14. "Active" = not ended, cancelled, deleted or hidden
+  // by a plan downgrade; a recurring series counts once. Ending or deleting
+  // an event frees its slot. `free` here is Base (no plan creates nothing,
+  // see Profile.isBaseMembershipActive); Base events are free only.
+  // Mirrored by TierLimitsService.maxEvents (which delegates here). There is
+  // no way to buy extra events (the 50-coin extra event is retired).
+  static const int _eventsFree = 1; // Base: 1 active event
+  static const int _eventsSilver = 5; // Silver: 5 active events
+  static const int _eventsGold = 10; // Gold: 10 active events
   static const int? _eventsPlatinum = null; // Platinum: unlimited (∞)
 
   // --- Groups a user may create (null = unlimited). ---
@@ -64,11 +68,12 @@ class TierEntitlements {
   static const int? _groupsGold = null; // adjustable (∞)
   static const int? _groupsPlatinum = null; // adjustable (∞)
 
-  // --- Member-hosted experiences a user may have (null = unlimited). ---
-  // Counts every experience the host has that is not deleted (drafts +
-  // published + hidden). Enforced server-side by the createUserExperience
-  // callable (functions/src/user_experiences/validation.ts EXPERIENCE_LIMITS).
-  static const int _experiencesFree = 1; // Free: 1 experience
+  // --- Member-hosted experiences a user may have AT A TIME (null = ∞). ---
+  // Counts every experience the host has that is not deleted and not hidden
+  // by a plan downgrade (drafts + published + moderation-hidden). Deleting
+  // one frees the slot. Enforced server-side by the createUserExperience
+  // callable (functions/src/shared/tierLimits.ts MAX_EXPERIENCES).
+  static const int _experiencesFree = 1; // Base: 1 experience (free only)
   static const int _experiencesSilver = 5; // Silver: 5 experiences
   static const int _experiencesGold = 10; // Gold: 10 experiences
   static const int? _experiencesPlatinum = null; // Platinum: unlimited (∞)
@@ -151,7 +156,10 @@ class TierEntitlements {
   // ACCESSORS  (keyed by MembershipTier — the public API features/UI read)
   // ===========================================================================
 
-  /// Max events a tier may create (null = unlimited / ∞).
+  /// Max ACTIVE events a tier may have at a time (null = unlimited / ∞).
+  /// [MembershipTier.free] is Base; without any plan the allowance is 0
+  /// (Profile.isBaseMembershipActive). When a plan drops, the listings over
+  /// the new allowance are hidden by the server and restored on upgrade.
   static int? maxEvents(MembershipTier tier) {
     switch (tier) {
       case MembershipTier.free:
@@ -164,6 +172,23 @@ class TierEntitlements {
       case MembershipTier.test:
         return _eventsPlatinum;
     }
+  }
+
+  /// The cheapest tier whose active-listing allowance (events and
+  /// experiences share the numbers) is larger than [tier]'s, or null when
+  /// [tier] is already unlimited.
+  static MembershipTier? nextTierForMoreListings(MembershipTier tier) {
+    final current = maxEvents(tier);
+    if (current == null) return null;
+    for (final t in const [
+      MembershipTier.silver,
+      MembershipTier.gold,
+      MembershipTier.platinum,
+    ]) {
+      final max = maxEvents(t);
+      if (max == null || max > current) return t;
+    }
+    return null;
   }
 
   /// Max groups a tier may create (null = unlimited / ∞).
@@ -181,9 +206,9 @@ class TierEntitlements {
     }
   }
 
-  /// Max member-hosted experiences a tier may have (null = unlimited / ∞).
-  /// Pass the EFFECTIVE tier (an expired Silver is FREE). Admins are
-  /// unlimited regardless of tier (callers check that separately).
+  /// Max ACTIVE member-hosted experiences a tier may have at a time (null =
+  /// unlimited / ∞). Pass the EFFECTIVE tier (an expired Silver is Base).
+  /// Admins are unlimited regardless of tier (callers check that separately).
   static int? maxExperiences(MembershipTier tier) {
     switch (tier) {
       case MembershipTier.free:
@@ -363,16 +388,18 @@ class TierEntitlements {
 
   /// Whether the tier may convert a personal account into a public BUSINESS
   /// account (a one-time, irreversible upgrade that unlocks the storefront,
-  /// followers, lead capture and verification request).
+  /// followers, lead capture, verification request and PAID events /
+  /// experiences).
   ///
-  /// Platinum-exclusive perk (test users get it too for QA). Every other tier
-  /// sees the upgrade dialog on the Business Account screen.
+  /// Silver, Gold and Platinum (owner rule 2026-10-14; test users too for
+  /// QA). Base / no plan see the upgrade dialog on the Business Account
+  /// screen. (Analytics and community sponsoring stay Platinum-only.)
   static bool canBecomeBusiness(MembershipTier tier) {
     switch (tier) {
       case MembershipTier.free:
+        return false;
       case MembershipTier.silver:
       case MembershipTier.gold:
-        return false;
       case MembershipTier.platinum:
       case MembershipTier.test:
         return true;
@@ -400,21 +427,27 @@ class TierEntitlements {
 
   /// Whether a business account's capabilities are currently ACTIVE.
   ///
-  /// Business capabilities require an active Platinum membership. The stored
-  /// [isBusiness] flag is permanent (never cleared), but the storefront,
-  /// analytics, leads, promotion and verification tools only work while the
-  /// user actually holds Platinum. If their Platinum lapses (tier rolls back to
-  /// free/base on expiry), the account keeps its [isBusiness] flag but operates
-  /// as a normal Base account until Platinum is renewed — at which point the
+  /// Business capabilities require an active Silver, Gold or Platinum
+  /// membership ([canBecomeBusiness]). The stored [isBusiness] flag is
+  /// permanent (never cleared), but the storefront, leads, promotion, paid
+  /// listings and verification tools only work while the user holds a paid
+  /// tier. If it lapses (tier rolls back to Base / no plan on expiry), the
+  /// account keeps its [isBusiness] flag but operates as a normal account
+  /// (free listings only) until a paid tier is renewed — at which point the
   /// business capabilities are restored automatically.
   ///
   /// [tier] MUST be the EFFECTIVE tier (`Profile.effectiveTier` /
   /// `effectiveTierFromDoc`), never the raw stored `membershipTier` — the
   /// stored string still says PLATINUM until the server downgrade job runs.
   static bool isBusinessActive(MembershipTier tier, bool isBusiness) {
-    return isBusiness &&
-        (tier == MembershipTier.platinum || tier == MembershipTier.test);
+    return isBusiness && canBecomeBusiness(tier);
   }
+
+  /// Whether listings created on [tier] may be PAID (tickets / bookings):
+  /// Silver and up, and only through an active business account
+  /// ([isBusinessActive]). Base listings are always free.
+  static bool paidListingsAllowed(MembershipTier tier) =>
+      canBecomeBusiness(tier);
 
   // ===========================================================================
   // COMPARISON TABLE — rendered by TierComparisonTable on the membership
@@ -448,7 +481,8 @@ class TierEntitlements {
       // Joining events / booking experiences: Base and every tier above
       // (owner rule 2026-10-11; enforced by the rules and the callables).
       TierComparisonRow(l10n.membershipBenefitJoinEvents, each((_) => mark(true))),
-      TierComparisonRow(l10n.shopEventsCreate, each((t) => count(maxEvents(t)))),
+      TierComparisonRow(
+          l10n.shopEventsCreate, each((t) => count(maxEvents(t)))),
       TierComparisonRow(l10n.shopGroupsCreate, each((t) => count(maxGroups(t)))),
       TierComparisonRow(
           l10n.shopDailyConnects, each((t) => count(maxDailyConnects(t)))),

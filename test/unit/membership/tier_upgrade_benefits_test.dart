@@ -24,7 +24,7 @@ void main() {
     test('Free → Silver', () {
       expect(nextTierBenefits(MembershipTier.free), [
         UpgradeBenefit(UpgradeBenefitKind.dailyConnects, count(10), count(50)),
-        UpgradeBenefit(UpgradeBenefitKind.events, count(1), count(3)),
+        UpgradeBenefit(UpgradeBenefitKind.events, count(1), count(5)),
         UpgradeBenefit(UpgradeBenefitKind.groups, count(1), count(null)),
         UpgradeBenefit(UpgradeBenefitKind.experiences, count(1), count(5)),
         UpgradeBenefit(UpgradeBenefitKind.boostsPerMonth, count(0), count(1)),
@@ -32,13 +32,16 @@ void main() {
         UpgradeBenefit(
             UpgradeBenefitKind.discoveryReveal, count(100), count(200)),
         UpgradeBenefit(UpgradeBenefitKind.travelMode, flag(false), flag(true)),
+        // Owner rule 2026-10-14: business accounts from Silver up.
+        UpgradeBenefit(
+            UpgradeBenefitKind.businessAccount, flag(false), flag(true)),
       ]);
     });
 
     test('Silver → Gold', () {
       expect(nextTierBenefits(MembershipTier.silver), [
         UpgradeBenefit(UpgradeBenefitKind.dailyConnects, count(50), count(200)),
-        UpgradeBenefit(UpgradeBenefitKind.events, count(3), count(5)),
+        UpgradeBenefit(UpgradeBenefitKind.events, count(5), count(10)),
         UpgradeBenefit(UpgradeBenefitKind.experiences, count(5), count(10)),
         UpgradeBenefit(UpgradeBenefitKind.boostsPerMonth, count(1), count(4)),
         UpgradeBenefit(
@@ -55,7 +58,7 @@ void main() {
       expect(nextTierBenefits(MembershipTier.gold), [
         UpgradeBenefit(
             UpgradeBenefitKind.dailyConnects, count(200), count(null)),
-        UpgradeBenefit(UpgradeBenefitKind.events, count(5), count(null)),
+        UpgradeBenefit(UpgradeBenefitKind.events, count(10), count(null)),
         UpgradeBenefit(
             UpgradeBenefitKind.experiences, count(10), count(null)),
         UpgradeBenefit(UpgradeBenefitKind.boostsPerMonth, count(4), count(30)),
@@ -66,8 +69,6 @@ void main() {
         UpgradeBenefit(
             UpgradeBenefitKind.freeTravelMode, flag(false), flag(true)),
         UpgradeBenefit(UpgradeBenefitKind.analytics, flag(false), flag(true)),
-        UpgradeBenefit(
-            UpgradeBenefitKind.businessAccount, flag(false), flag(true)),
       ]);
     });
 

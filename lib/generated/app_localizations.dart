@@ -67,7 +67,7 @@ import 'app_localizations_pt.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -90,11 +90,11 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-    delegate,
-    GlobalMaterialLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-  ];
+        delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -104,7 +104,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('it'),
     Locale('pt'),
-    Locale('pt', 'BR')
+    Locale('pt', 'BR'),
   ];
 
   /// No description provided for @culturalPassportTitle.
@@ -11380,7 +11380,10 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{tierName} membership active until {formattedDate}{coinsText}'**
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText);
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  );
 
   /// No description provided for @membershipActivatedTitle.
   ///
@@ -18447,19 +18450,19 @@ abstract class AppLocalizations {
   /// No description provided for @guideTiersItem1.
   ///
   /// In en, this message translates to:
-  /// **'Silver: 50 new connections a day, 3 ongoing events, unlimited groups, 1 free profile boost and 300 coins a month, and travel mode for 100 coins a day.'**
+  /// **'Silver: 50 new connections a day, 5 active events and 5 experiences at a time, unlimited groups, a business account to sell tickets, 1 free profile boost and 300 coins a month, and travel mode for 100 coins a day.'**
   String get guideTiersItem1;
 
   /// No description provided for @guideTiersItem2.
   ///
   /// In en, this message translates to:
-  /// **'Gold: everything in Silver plus 200 new connections a day, 5 ongoing events, 4 free boosts and 400 coins a month, ghost mode and priority support.'**
+  /// **'Gold: everything in Silver plus 200 new connections a day, 10 active events and 10 experiences at a time, 4 free boosts and 400 coins a month, ghost mode and priority support.'**
   String get guideTiersItem2;
 
   /// No description provided for @guideTiersItem3.
   ///
   /// In en, this message translates to:
-  /// **'Platinum: everything in Gold plus unlimited new connections and events, 30 free boosts and 500 coins a month, free travel mode, a business account and analytics.'**
+  /// **'Platinum: everything in Gold plus unlimited new connections, events and experiences, 30 free boosts and 500 coins a month, free travel mode and business analytics.'**
   String get guideTiersItem3;
 
   /// No description provided for @guideTiersItem4.
@@ -19671,8 +19674,8 @@ abstract class AppLocalizations {
   /// No description provided for @tierLimitEventsBody.
   ///
   /// In en, this message translates to:
-  /// **'Your plan allows {max} events. Upgrade to create more.'**
-  String tierLimitEventsBody(int max);
+  /// **'You have {count} active events and your plan allows {max} at a time. End or delete one, or upgrade to create more.'**
+  String tierLimitEventsBody(int max, int count);
 
   /// No description provided for @tierLimitGroupsBody.
   ///
@@ -20715,7 +20718,7 @@ abstract class AppLocalizations {
   /// No description provided for @becomeBusinessConfirmMessage.
   ///
   /// In en, this message translates to:
-  /// **'This is permanent: your account becomes a public business account and can\'t be switched back to a personal account. Business tools work while your Platinum membership is active; if it lapses they are paused until you renew.'**
+  /// **'This is permanent: your account becomes a public business account and can\'t be switched back to a personal account. Business tools work while your Silver, Gold or Platinum membership is active; if it lapses they are paused until you renew.'**
   String get becomeBusinessConfirmMessage;
 
   /// No description provided for @becomeBusinessConfirmAction.
@@ -20745,7 +20748,7 @@ abstract class AppLocalizations {
   /// No description provided for @businessRequiresPlatinum.
   ///
   /// In en, this message translates to:
-  /// **'Business accounts are a Platinum feature. Upgrade to unlock your storefront, followers and lead capture.'**
+  /// **'Business accounts need a Silver, Gold or Platinum membership. Upgrade to unlock your storefront, followers, lead capture and paid tickets.'**
   String get businessRequiresPlatinum;
 
   /// No description provided for @viewStorefront.
@@ -21939,13 +21942,13 @@ abstract class AppLocalizations {
   /// No description provided for @businessPausedSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'Your business features are paused because your Platinum membership expired. Renew Platinum to restore your storefront, analytics, leads and promotions.'**
+  /// **'Your business features are paused because your paid membership expired. Renew Silver, Gold or Platinum to restore your storefront, leads, promotions and paid tickets.'**
   String get businessPausedSubtitle;
 
   /// No description provided for @businessReactivate.
   ///
   /// In en, this message translates to:
-  /// **'Renew Platinum'**
+  /// **'Renew membership'**
   String get businessReactivate;
 
   /// No description provided for @eventsBoostChooseDuration.
@@ -22181,18 +22184,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Renew membership'**
   String get renewMembership;
-
-  /// No description provided for @extraEventTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Extra event'**
-  String get extraEventTitle;
-
-  /// No description provided for @extraEventBody.
-  ///
-  /// In en, this message translates to:
-  /// **'You\'ve reached your free event limit. Create an extra event for {cost} coins?'**
-  String extraEventBody(int cost);
 
   /// No description provided for @accountBannedTitle.
   ///
@@ -22695,7 +22686,7 @@ abstract class AppLocalizations {
   /// No description provided for @shopEventsCreate.
   ///
   /// In en, this message translates to:
-  /// **'Events you can create'**
+  /// **'Active events at a time'**
   String get shopEventsCreate;
 
   /// No description provided for @shopGroupsCreate.
@@ -25359,14 +25350,14 @@ abstract class AppLocalizations {
   /// No description provided for @uexpLimitFreeBody.
   ///
   /// In en, this message translates to:
-  /// **'Hosting experiences is available with a Silver, Gold or Platinum membership.'**
+  /// **'Hosting experiences needs a plan. Base lets you host 1 free experience; Silver, Gold and Platinum let you host more and take paid bookings.'**
   String get uexpLimitFreeBody;
 
   /// No description provided for @uexpLimitReachedBody.
   ///
   /// In en, this message translates to:
-  /// **'{limit, plural, =1{Your plan allows 1 experience.} other{Your plan allows {limit} experiences.}} Upgrade to create more experiences.'**
-  String uexpLimitReachedBody(int limit);
+  /// **'You have {count} active experiences and your plan allows {limit} at a time. Delete one, or upgrade to create more.'**
+  String uexpLimitReachedBody(int limit, int count);
 
   /// No description provided for @uexpUpgradeToCreateMore.
   ///
@@ -25377,7 +25368,7 @@ abstract class AppLocalizations {
   /// No description provided for @shopExperiencesCreate.
   ///
   /// In en, this message translates to:
-  /// **'Experiences you can create'**
+  /// **'Active experiences at a time'**
   String get shopExperiencesCreate;
 
   /// No description provided for @uexpHostedBy.
@@ -28373,14 +28364,22 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Renews automatically on {date}.'**
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date);
+    String plan,
+    String price,
+    String interval,
+    String date,
+  );
 
   /// Web (Stripe) subscription cancelled at period end
   ///
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Cancelled; access ends on {date}.'**
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date);
+    String plan,
+    String price,
+    String interval,
+    String date,
+  );
 
   /// No description provided for @billingIntervalMonth.
   ///
@@ -38485,7 +38484,11 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reason: {reason}\nReported message: \"{message}\"\nReported user: {user}\nReported at: {date}'**
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date);
+    String reason,
+    String message,
+    String user,
+    String date,
+  );
 
   /// No description provided for @supportChatWithGreenGoSubject.
   ///
@@ -39216,13 +39219,13 @@ abstract class AppLocalizations {
   /// No description provided for @becomeBusinessOneWayHint.
   ///
   /// In en, this message translates to:
-  /// **'Requires Platinum. One-time upgrade: it can\'t be undone.'**
+  /// **'Requires Silver, Gold or Platinum. One-time upgrade: it can\'t be undone.'**
   String get becomeBusinessOneWayHint;
 
   /// No description provided for @businessPermanentInfo.
   ///
   /// In en, this message translates to:
-  /// **'Your account is permanently a business account and can\'t go back to a personal account. Business tools work while Platinum is active; if it lapses they pause until you renew.'**
+  /// **'Your account is permanently a business account and can\'t go back to a personal account. Business tools work while your Silver, Gold or Platinum membership is active; if it lapses they pause until you renew.'**
   String get businessPermanentInfo;
 
   /// No description provided for @paidBusinessOnlyNote.
@@ -39234,13 +39237,13 @@ abstract class AppLocalizations {
   /// No description provided for @paidBusinessOnlyBody.
   ///
   /// In en, this message translates to:
-  /// **'Anyone can host free events and experiences. To charge for tickets or bookings you need an active business account (Platinum).'**
+  /// **'With Base you can host free events and experiences. To charge for tickets or bookings you need an active business account (Silver, Gold or Platinum).'**
   String get paidBusinessOnlyBody;
 
   /// No description provided for @paidBusinessPausedNote.
   ///
   /// In en, this message translates to:
-  /// **'Your business is paused: renew Platinum to sell paid tickets again.'**
+  /// **'Your business is paused: renew Silver, Gold or Platinum to sell paid tickets again.'**
   String get paidBusinessPausedNote;
 
   /// No description provided for @uexpBusinessRequiredTitle.
@@ -41316,7 +41319,7 @@ abstract class AppLocalizations {
   /// Error popup: the server refused a business-only feature
   ///
   /// In en, this message translates to:
-  /// **'This needs an active business account (Platinum).'**
+  /// **'This needs an active business account (Silver, Gold or Platinum).'**
   String get userErrorBusinessRequired;
 
   /// Support tickets list banner, shown only to Gold and Platinum members
@@ -42524,6 +42527,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your ID document is being validated. You can create experiences as soon as it is approved, usually within a day.'**
   String get uexpIdDocPendingCreateBody;
+
+  /// No description provided for @listingHiddenByPlanBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden: plan changed'**
+  String get listingHiddenByPlanBadge;
+
+  /// Shown to the host of an event / experience the server hid after their membership dropped (owner rule 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden because your plan changed and it allows fewer active listings. Upgrade to restore it.'**
+  String get listingHiddenByPlanBody;
 }
 
 class _AppLocalizationsDelegate
@@ -42537,13 +42552,13 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-        'de',
-        'en',
-        'es',
-        'fr',
-        'it',
-        'pt'
-      ].contains(locale.languageCode);
+    'de',
+    'en',
+    'es',
+    'fr',
+    'it',
+    'pt',
+  ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -42579,8 +42594,9 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-      'an issue with the localizations generation tool. Please file an issue '
-      'on GitHub with a reproducible sample app and the gen-l10n configuration '
-      'that was used.');
+    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+    'an issue with the localizations generation tool. Please file an issue '
+    'on GitHub with a reproducible sample app and the gen-l10n configuration '
+    'that was used.',
+  );
 }

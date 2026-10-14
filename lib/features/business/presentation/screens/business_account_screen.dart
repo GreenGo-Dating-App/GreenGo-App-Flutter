@@ -248,9 +248,9 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
   /// users confirm a "this is permanent" dialog, then `profiles/{uid}.isBusiness`
   /// is set to true (and `businessSince` stamped the first time). There is NO
   /// way back: firestore.rules reject any client write that clears
-  /// `isBusiness`, so the switch only ever turns ON. If Platinum later lapses
-  /// the account stays a business account with its tools paused
-  /// ([TierEntitlements.isBusinessActive]) until Platinum is renewed.
+  /// `isBusiness`, so the switch only ever turns ON. If the paid tier later
+  /// lapses the account stays a business account with its tools paused
+  /// ([TierEntitlements.isBusinessActive]) until a paid tier is renewed.
   Future<void> _handleToggleStorefront(bool value) async {
     // Already a business (or a request to turn it off): nothing to do - the
     // conversion is permanent.
@@ -259,14 +259,15 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
     final tier = widget.profile.effectiveTier;
     final l10n = AppLocalizations.of(context)!;
 
-    // Gate: Platinum-only. Surface the marketplace upsell on deny.
+    // Gate: Silver, Gold or Platinum (owner rule 2026-10-14). Surface the
+    // marketplace upsell on deny.
     if (!TierEntitlements.canBecomeBusiness(tier)) {
       final r = await FeatureNotAvailableDialog.show(
         context: context,
         featureName: l10n.becomeBusiness,
         description: l10n.businessRequiresPlatinum,
         currentTier: tier,
-        requiredTier: MembershipTier.platinum,
+        requiredTier: MembershipTier.silver,
         userId: uid,
         icon: Icons.storefront,
       );

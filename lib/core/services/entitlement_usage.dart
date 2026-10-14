@@ -38,19 +38,14 @@ int freeBoostsUsedFrom(Map<String, dynamic>? usage, DateTime now) {
   return usage['boostMonth'] == utcMonthKey(now) ? _int(usage['boostsUsed']) : 0;
 }
 
-/// Ongoing event slots (a recurring series is one) at [now].
+/// Active event slots (a recurring series is one) at [now]. Events that
+/// ended, were cancelled or deleted, or were hidden by a plan downgrade are
+/// not in the server's list, so they free their slot.
 int ongoingEventSlotsFrom(Map<String, dynamic>? usage, DateTime now) {
   final ends = usage?['eventActiveEnds'];
   if (ends is! List) return 0;
   final nowMs = now.millisecondsSinceEpoch;
   return ends.where((e) => e is num && e > nowMs).length;
-}
-
-/// Paid extra events (coins) not used yet.
-int extraEventCreditsLeftFrom(Map<String, dynamic>? usage) {
-  if (usage == null) return 0;
-  final left = _int(usage['eventExtraCredits']) - _int(usage['eventExtraUsed']);
-  return left > 0 ? left : 0;
 }
 
 /// Groups this user created that still exist.

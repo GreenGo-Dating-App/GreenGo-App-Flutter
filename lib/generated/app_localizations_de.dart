@@ -6380,7 +6380,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return '$tierName-Mitgliedschaft aktiv bis $formattedDate$coinsText';
   }
 
@@ -10467,15 +10470,15 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get guideTiersItem1 =>
-      'Silver: 50 neue Kontakte pro Tag, 3 laufende Events, unbegrenzt Gruppen, 1 kostenloser Profil-Boost und 300 Münzen pro Monat sowie der Reisemodus für 100 Münzen pro Tag.';
+      'Silver: 50 neue Kontakte pro Tag, 5 aktive Events und 5 Erlebnisse gleichzeitig, unbegrenzt Gruppen, ein Business-Konto zum Ticketverkauf, 1 kostenloser Profil-Boost und 300 Münzen pro Monat sowie der Reisemodus für 100 Münzen pro Tag.';
 
   @override
   String get guideTiersItem2 =>
-      'Gold: alles aus Silver plus 200 neue Kontakte pro Tag, 5 laufende Events, 4 kostenlose Boosts und 400 Münzen pro Monat, Geistermodus und Prioritäts-Support.';
+      'Gold: alles aus Silver plus 200 neue Kontakte pro Tag, 10 aktive Events und 10 Erlebnisse gleichzeitig, 4 kostenlose Boosts und 400 Münzen pro Monat, Geistermodus und bevorzugter Support.';
 
   @override
   String get guideTiersItem3 =>
-      'Platinum: alles aus Gold plus unbegrenzt neue Kontakte und Events, 30 kostenlose Boosts und 500 Münzen pro Monat, kostenloser Reisemodus, ein Business-Konto und Analysen.';
+      'Platinum: alles aus Gold plus unbegrenzt neue Kontakte, Events und Erlebnisse, 30 kostenlose Boosts und 500 Münzen pro Monat, kostenloser Reisemodus und Business-Analysen.';
 
   @override
   String get guideTiersItem4 =>
@@ -11188,8 +11191,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get tierLimitTitle => 'Upgrade für mehr';
 
   @override
-  String tierLimitEventsBody(int max) {
-    return 'Dein Tarif erlaubt $max Veranstaltungen. Upgrade für mehr.';
+  String tierLimitEventsBody(int max, int count) {
+    return 'Du hast $count aktive Events und dein Tarif erlaubt $max gleichzeitig. Beende oder lösche eines oder mach ein Upgrade, um mehr zu erstellen.';
   }
 
   @override
@@ -11771,7 +11774,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get becomeBusinessConfirmMessage =>
-      'Das ist dauerhaft: Dein Konto wird zu einem öffentlichen Unternehmenskonto und kann nicht wieder in ein persönliches Konto umgewandelt werden. Die Business-Tools funktionieren, solange deine Platinum-Mitgliedschaft aktiv ist; läuft sie ab, werden sie pausiert, bis du verlängerst.';
+      'Das ist endgültig: Dein Konto wird zu einem öffentlichen Business-Konto und kann nicht mehr in ein persönliches Konto zurückgewandelt werden. Die Business-Tools funktionieren, solange deine Silver-, Gold- oder Platinum-Mitgliedschaft aktiv ist; läuft sie ab, werden sie bis zur Verlängerung pausiert.';
 
   @override
   String get becomeBusinessConfirmAction => 'Dauerhaft machen';
@@ -11789,7 +11792,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get businessRequiresPlatinum =>
-      'Unternehmenskonten sind eine Platinum-Funktion. Führe ein Upgrade durch, um deinen Storefront, Follower und Lead-Erfassung freizuschalten.';
+      'Für ein Business-Konto brauchst du Silver, Gold oder Platinum. Mach ein Upgrade, um deinen Storefront, Follower, Lead-Erfassung und kostenpflichtige Tickets freizuschalten.';
 
   @override
   String get viewStorefront => 'Storefront ansehen';
@@ -12482,10 +12485,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get businessPausedSubtitle =>
-      'Deine Unternehmensfunktionen sind pausiert, weil deine Platinum-Mitgliedschaft abgelaufen ist. Erneuere Platinum, um dein Schaufenster, Analysen, Leads und Bewerbungen wiederherzustellen.';
+      'Deine Business-Funktionen sind pausiert, weil deine kostenpflichtige Mitgliedschaft abgelaufen ist. Verlängere Silver, Gold oder Platinum, um Storefront, Leads, Werbeaktionen und kostenpflichtige Tickets wiederherzustellen.';
 
   @override
-  String get businessReactivate => 'Platinum erneuern';
+  String get businessReactivate => 'Mitgliedschaft erneuern';
 
   @override
   String get eventsBoostChooseDuration => 'Boost-Dauer wählen';
@@ -12646,14 +12649,6 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get renewMembership => 'Mitgliedschaft erneuern';
-
-  @override
-  String get extraEventTitle => 'Zusätzliches Event';
-
-  @override
-  String extraEventBody(int cost) {
-    return 'Du hast dein kostenloses Event-Limit erreicht. Ein zusätzliches Event für $cost Coins erstellen?';
-  }
 
   @override
   String get accountBannedTitle => 'Konto dauerhaft gesperrt';
@@ -12920,7 +12915,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get communitiesTipHint => 'Teile einen hilfreichen Tipp…';
 
   @override
-  String get shopEventsCreate => 'Events, die du erstellen kannst';
+  String get shopEventsCreate => 'Aktive Events gleichzeitig';
 
   @override
   String get shopGroupsCreate => 'Gruppen, die du erstellen kannst';
@@ -14463,24 +14458,18 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get uexpLimitFreeBody =>
-      'Erlebnisse anbieten ist mit einer Silver-, Gold- oder Platinum-Mitgliedschaft möglich.';
+      'Um Erlebnisse anzubieten, brauchst du einen Tarif. Mit Base kannst du 1 kostenloses Erlebnis anbieten; mit Silver, Gold und Platinum mehr, auch mit kostenpflichtigen Buchungen.';
 
   @override
-  String uexpLimitReachedBody(int limit) {
-    String _temp0 = intl.Intl.pluralLogic(
-      limit,
-      locale: localeName,
-      other: 'Dein Tarif erlaubt $limit Erlebnisse.',
-      one: 'Dein Tarif erlaubt 1 Erlebnis.',
-    );
-    return '$_temp0 Upgrade, um weitere Erlebnisse zu erstellen.';
+  String uexpLimitReachedBody(int limit, int count) {
+    return 'Du hast $count aktive Erlebnisse und dein Tarif erlaubt $limit gleichzeitig. Lösche eines oder mach ein Upgrade, um mehr zu erstellen.';
   }
 
   @override
   String get uexpUpgradeToCreateMore => 'Upgrade für mehr Erlebnisse';
 
   @override
-  String get shopExperiencesCreate => 'Erlebnisse, die du erstellen kannst';
+  String get shopExperiencesCreate => 'Aktive Erlebnisse gleichzeitig';
 
   @override
   String get uexpHostedBy => 'Gastgeber:in';
@@ -16333,13 +16322,21 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price pro $interval. Verlängert sich automatisch am $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price pro $interval. Gekündigt; Zugang endet am $date.';
   }
 
@@ -19982,7 +19979,9 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-      String name, String rewards) {
+    String name,
+    String rewards,
+  ) {
     return 'Belohnungen für $name abgeholt! $rewards';
   }
 
@@ -20448,7 +20447,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String profileTravelerActiveSubtitle(
-      String location, int hours, int minutes) {
+    String location,
+    int hours,
+    int minutes,
+  ) {
     return '$location - noch $hours Std. $minutes Min.';
   }
 
@@ -22402,7 +22404,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date) {
+    String reason,
+    String message,
+    String user,
+    String date,
+  ) {
     return 'Grund: $reason\nGemeldete Nachricht: „$message“\nGemeldeter Nutzer: $user\nGemeldet am: $date';
   }
 
@@ -22744,50 +22750,41 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Erste Verbindung',
-        'social_butterfly': 'Gesellige Seele',
-        'popular': 'Beliebt',
-        'video_enthusiast': 'Video-Fan',
-        'daily_streak_7': '7-Tage-Serie',
-        'daily_streak_30': '30-Tage-Serie',
-        'other': 'Neuer Erfolg',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Erste Verbindung',
+      'social_butterfly': 'Gesellige Seele',
+      'popular': 'Beliebt',
+      'video_enthusiast': 'Video-Fan',
+      'daily_streak_7': '7-Tage-Serie',
+      'daily_streak_30': '30-Tage-Serie',
+      'other': 'Neuer Erfolg',
+    });
     return 'Erfolg freigeschaltet: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Knüpfe deine erste Verbindung',
-        'social_butterfly': 'Sende 100 Nachrichten',
-        'popular': 'Knüpfe 50 Verbindungen',
-        'video_enthusiast': 'Führe 10 Videoanrufe',
-        'daily_streak_7': 'Melde dich 7 Tage in Folge an',
-        'daily_streak_30': 'Melde dich 30 Tage in Folge an',
-        'other': 'Weiter so!',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Knüpfe deine erste Verbindung',
+      'social_butterfly': 'Sende 100 Nachrichten',
+      'popular': 'Knüpfe 50 Verbindungen',
+      'video_enthusiast': 'Führe 10 Videoanrufe',
+      'daily_streak_7': 'Melde dich 7 Tage in Folge an',
+      'daily_streak_30': 'Melde dich 30 Tage in Folge an',
+      'other': 'Weiter so!',
+    });
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(
-      challenge,
-      {
-        'send_5_messages': 'Gesprächsstarter',
-        'get_3_matches': 'Netzwerker',
-        'complete_profile': 'Profil-Perfektionist',
-        'video_call_1': 'Von Angesicht zu Angesicht',
-        'other': 'Tägliche Herausforderung',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(challenge, {
+      'send_5_messages': 'Gesprächsstarter',
+      'get_3_matches': 'Netzwerker',
+      'complete_profile': 'Profil-Perfektionist',
+      'video_call_1': 'Von Angesicht zu Angesicht',
+      'other': 'Tägliche Herausforderung',
+    });
     return 'Herausforderung geschafft: $_temp0!';
   }
 
@@ -23010,11 +23007,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get becomeBusinessOneWayHint =>
-      'Erfordert Platinum. Einmaliges Upgrade: Es kann nicht rückgängig gemacht werden.';
+      'Erfordert Silver, Gold oder Platinum. Einmaliges Upgrade: Es kann nicht rückgängig gemacht werden.';
 
   @override
   String get businessPermanentInfo =>
-      'Dein Konto ist dauerhaft ein Unternehmenskonto und kann nicht wieder ein persönliches Konto werden. Die Business-Tools funktionieren, solange Platinum aktiv ist; läuft es ab, werden sie pausiert, bis du verlängerst.';
+      'Dein Konto ist dauerhaft ein Business-Konto und kann nicht mehr zu einem persönlichen Konto werden. Die Business-Tools funktionieren, solange Silver, Gold oder Platinum aktiv ist; läuft die Mitgliedschaft ab, pausieren sie bis zur Verlängerung.';
 
   @override
   String get paidBusinessOnlyNote =>
@@ -23022,11 +23019,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get paidBusinessOnlyBody =>
-      'Kostenlose Events und Erlebnisse kann jeder veranstalten. Um Geld für Tickets oder Buchungen zu verlangen, brauchst du ein aktives Unternehmenskonto (Platinum).';
+      'Mit Base kannst du kostenlose Events und Erlebnisse anbieten. Um Tickets oder Buchungen zu verkaufen, brauchst du ein aktives Business-Konto (Silver, Gold oder Platinum).';
 
   @override
   String get paidBusinessPausedNote =>
-      'Dein Business ist pausiert: Verlängere Platinum, um wieder kostenpflichtige Tickets zu verkaufen.';
+      'Dein Business ist pausiert: Verlängere Silver, Gold oder Platinum, um wieder kostenpflichtige Tickets zu verkaufen.';
 
   @override
   String get uexpBusinessRequiredTitle =>
@@ -24415,7 +24412,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get userErrorBusinessRequired =>
-      'Dafür brauchst du ein aktives Business-Konto (Platinum).';
+      'Dafür brauchst du ein aktives Business-Konto (Silver, Gold oder Platinum).';
 
   @override
   String get supportPriorityBanner =>
@@ -25114,4 +25111,11 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get uexpIdDocPendingCreateBody =>
       'Dein Ausweisdokument wird geprüft. Sobald es freigegeben ist, kannst du Erlebnisse erstellen, meist innerhalb eines Tages.';
+
+  @override
+  String get listingHiddenByPlanBadge => 'Ausgeblendet: Tarif geändert';
+
+  @override
+  String get listingHiddenByPlanBody =>
+      'Ausgeblendet, weil dein Tarif geändert wurde und weniger aktive Angebote erlaubt. Mach ein Upgrade, um es wiederherzustellen.';
 }

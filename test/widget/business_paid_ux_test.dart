@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:greengo_chat/core/error/failures.dart';
 import 'package:greengo_chat/core/services/paid_listing_access.dart';
+import 'package:greengo_chat/core/services/tier_entitlements.dart';
 import 'package:greengo_chat/features/business/presentation/widgets/paid_business_note.dart';
 import 'package:greengo_chat/features/membership/domain/entities/membership.dart';
 import 'package:greengo_chat/features/profile/domain/entities/profile.dart';
@@ -40,6 +41,26 @@ void main() {
               membershipTier: MembershipTier.platinum,
               membershipEndDate: _future)),
           PaidListingAccess.allowed);
+    });
+
+    test('Silver and Gold businesses sell too; Base never does (owner rule 2026-10-14)', () {
+      for (final tier in [MembershipTier.silver, MembershipTier.gold]) {
+        expect(
+            PaidListingAccess.of(buildProfile(
+                isBusiness: true,
+                membershipTier: tier,
+                membershipEndDate: _future)),
+            PaidListingAccess.allowed);
+      }
+      expect(
+          PaidListingAccess.of(buildProfile(
+              isBusiness: true,
+              hasBaseMembership: true,
+              baseMembershipEndDate: _future)),
+          PaidListingAccess.businessPaused);
+      expect(TierEntitlements.canBecomeBusiness(MembershipTier.free), isFalse);
+      expect(TierEntitlements.canBecomeBusiness(MembershipTier.silver), isTrue);
+      expect(TierEntitlements.paidListingsAllowed(MembershipTier.free), isFalse);
     });
 
     test('lapsed Platinum business is paused; personal accounts cannot sell', () {

@@ -4945,9 +4945,9 @@
   "guideMembershipItem2": "Membership starts with a free trial after your first sign-up.",
   "guideMembershipItem3": "When your membership expires, you can renew it to continue using the app.",
   "guideTiersTitle": "VIP Tiers (Silver, Gold, Platinum)",
-  "guideTiersItem1": "Silver: 50 new connections a day, 3 ongoing events, unlimited groups, 1 free profile boost and 300 coins a month, and travel mode for 100 coins a day.",
-  "guideTiersItem2": "Gold: everything in Silver plus 200 new connections a day, 5 ongoing events, 4 free boosts and 400 coins a month, ghost mode and priority support.",
-  "guideTiersItem3": "Platinum: everything in Gold plus unlimited new connections and events, 30 free boosts and 500 coins a month, free travel mode, a business account and analytics.",
+  "guideTiersItem1": "Silver: 50 new connections a day, 5 active events and 5 experiences at a time, unlimited groups, a business account to sell tickets, 1 free profile boost and 300 coins a month, and travel mode for 100 coins a day.",
+  "guideTiersItem2": "Gold: everything in Silver plus 200 new connections a day, 10 active events and 10 experiences at a time, 4 free boosts and 400 coins a month, ghost mode and priority support.",
+  "guideTiersItem3": "Platinum: everything in Gold plus unlimited new connections, events and experiences, 30 free boosts and 500 coins a month, free travel mode and business analytics.",
   "guideTiersItem4": "VIP tiers are independent from your base membership and provide extra perks.",
   "guideCoinsTitle": "Coins",
   "guideCoinsItem1": "Coins are used for premium actions. Here are the costs:",
@@ -5226,10 +5226,13 @@
   "eventsLinkUrlHint": "https://…",
   "eventsAddLink": "Add link",
   "tierLimitTitle": "Upgrade to create more",
-  "tierLimitEventsBody": "Your plan allows {max} events. Upgrade to create more.",
+  "tierLimitEventsBody": "You have {count} active events and your plan allows {max} at a time. End or delete one, or upgrade to create more.",
   "@tierLimitEventsBody": {
     "placeholders": {
       "max": {
+        "type": "int"
+      },
+      "count": {
         "type": "int"
       }
     }
@@ -5528,12 +5531,12 @@
   "businessHubFeatured": "Featured placements",
   "becomeBusinessAction": "Become one",
   "becomeBusinessConfirmTitle": "Become a business account?",
-  "becomeBusinessConfirmMessage": "This is permanent: your account becomes a public business account and can't be switched back to a personal account. Business tools work while your Platinum membership is active; if it lapses they are paused until you renew.",
+  "becomeBusinessConfirmMessage": "This is permanent: your account becomes a public business account and can't be switched back to a personal account. Business tools work while your Silver, Gold or Platinum membership is active; if it lapses they are paused until you renew.",
   "becomeBusinessConfirmAction": "Make it permanent",
   "becomeBusinessSuccess": "Your account is now a business account.",
   "becomeBusinessError": "Couldn't switch your account. Please try again.",
   "businessAccountActive": "Business account active (permanent)",
-  "businessRequiresPlatinum": "Business accounts are a Platinum feature. Upgrade to unlock your storefront, followers and lead capture.",
+  "businessRequiresPlatinum": "Business accounts need a Silver, Gold or Platinum membership. Upgrade to unlock your storefront, followers, lead capture and paid tickets.",
   "viewStorefront": "View storefront",
   "requestVerification": "Request verification",
   "requestVerificationPending": "Verification pending",
@@ -5850,8 +5853,8 @@
   "businessEventsCancelConfirm": "Cancel event",
   "businessEventsCancelled": "Event cancelled",
   "businessPausedTitle": "Business paused",
-  "businessPausedSubtitle": "Your business features are paused because your Platinum membership expired. Renew Platinum to restore your storefront, analytics, leads and promotions.",
-  "businessReactivate": "Renew Platinum",
+  "businessPausedSubtitle": "Your business features are paused because your paid membership expired. Renew Silver, Gold or Platinum to restore your storefront, leads, promotions and paid tickets.",
+  "businessReactivate": "Renew membership",
   "eventsBoostChooseDuration": "Choose boost duration",
   "eventsBoostHours": "{count, plural, =1{1 hour} other{{count} hours}}",
   "@eventsBoostHours": {
@@ -5943,15 +5946,6 @@
   "membershipRequiredTitle": "Membership required",
   "membershipRequiredBody": "You need an active membership to do this. Renew to continue.",
   "renewMembership": "Renew membership",
-  "extraEventTitle": "Extra event",
-  "extraEventBody": "You've reached your free event limit. Create an extra event for {cost} coins?",
-  "@extraEventBody": {
-    "placeholders": {
-      "cost": {
-        "type": "int"
-      }
-    }
-  },
   "accountBannedTitle": "Account permanently banned",
   "accountBannedBody": "This account has been permanently banned for violating our content policy. This decision is final.",
   "adminBanPermanently": "Ban permanently",
@@ -6035,7 +6029,7 @@
   "communitiesSearchTips": "Search tips",
   "communitiesAddTip": "Add tip",
   "communitiesTipHint": "Share a helpful tip…",
-  "shopEventsCreate": "Events you can create",
+  "shopEventsCreate": "Active events at a time",
   "shopGroupsCreate": "Groups you can create",
   "shopDailyConnects": "Daily new connections",
   "shopMonthlyBoosts": "Free profile boosts per month",
@@ -6881,17 +6875,20 @@
   },
   "uexpErrFixFields": "Please fix the highlighted fields",
   "uexpLimitFeature": "Host experiences",
-  "uexpLimitFreeBody": "Hosting experiences is available with a Silver, Gold or Platinum membership.",
-  "uexpLimitReachedBody": "{limit, plural, =1{Your plan allows 1 experience.} other{Your plan allows {limit} experiences.}} Upgrade to create more experiences.",
+  "uexpLimitFreeBody": "Hosting experiences needs a plan. Base lets you host 1 free experience; Silver, Gold and Platinum let you host more and take paid bookings.",
+  "uexpLimitReachedBody": "You have {count} active experiences and your plan allows {limit} at a time. Delete one, or upgrade to create more.",
   "@uexpLimitReachedBody": {
     "placeholders": {
       "limit": {
+        "type": "int"
+      },
+      "count": {
         "type": "int"
       }
     }
   },
   "uexpUpgradeToCreateMore": "Upgrade to create more experiences",
-  "shopExperiencesCreate": "Experiences you can create",
+  "shopExperiencesCreate": "Active experiences at a time",
   "uexpHostedBy": "Hosted by",
   "uexpHostBadge": "Host",
   "uexpPayBook": "Pay / Book",
@@ -12266,11 +12263,11 @@
   "srvNewEventFromFollowedBusiness": "New event from a business you follow",
   "srvMessageRemovedByModerator": "This message was removed by a moderator",
   "srvSupportAiHandoff": "I understand you’d like to speak with a human agent. I’m connecting you now. A support team member will respond shortly.",
-  "becomeBusinessOneWayHint": "Requires Platinum. One-time upgrade: it can't be undone.",
-  "businessPermanentInfo": "Your account is permanently a business account and can't go back to a personal account. Business tools work while Platinum is active; if it lapses they pause until you renew.",
+  "becomeBusinessOneWayHint": "Requires Silver, Gold or Platinum. One-time upgrade: it can't be undone.",
+  "businessPermanentInfo": "Your account is permanently a business account and can't go back to a personal account. Business tools work while your Silver, Gold or Platinum membership is active; if it lapses they pause until you renew.",
   "paidBusinessOnlyNote": "Paid tickets are available for business accounts.",
-  "paidBusinessOnlyBody": "Anyone can host free events and experiences. To charge for tickets or bookings you need an active business account (Platinum).",
-  "paidBusinessPausedNote": "Your business is paused: renew Platinum to sell paid tickets again.",
+  "paidBusinessOnlyBody": "With Base you can host free events and experiences. To charge for tickets or bookings you need an active business account (Silver, Gold or Platinum).",
+  "paidBusinessPausedNote": "Your business is paused: renew Silver, Gold or Platinum to sell paid tickets again.",
   "uexpBusinessRequiredTitle": "Paid listings are for business accounts",
   "tpErrSellerNotBusiness": "Sales are paused: paid tickets and bookings are only available from active business accounts.",
   "tpAutoSectionTitle": "Automatic Payment and Approval",
@@ -13381,7 +13378,7 @@
   "@userErrorTierRequired": {
     "description": "Error popup: the server refused a feature that is not part of the user's membership tier"
   },
-  "userErrorBusinessRequired": "This needs an active business account (Platinum).",
+  "userErrorBusinessRequired": "This needs an active business account (Silver, Gold or Platinum).",
   "@userErrorBusinessRequired": {
     "description": "Error popup: the server refused a business-only feature"
   },
@@ -13721,5 +13718,10 @@
   "msCalendarGoingTag": "Going",
   "dcCardHint": "Calendar of your bookings and open times",
   "uexpIdDocPendingCreateBody": "Your ID document is being validated. You can create experiences as soon as it is approved, usually within a day.",
-  "@uexpIdDocPendingCreateBody": {"description": "Shown when a host tries to create an experience while their ID document (sent at registration or later) is still under review."}
+  "@uexpIdDocPendingCreateBody": {"description": "Shown when a host tries to create an experience while their ID document (sent at registration or later) is still under review."},
+  "listingHiddenByPlanBadge": "Hidden: plan changed",
+  "listingHiddenByPlanBody": "Hidden because your plan changed and it allows fewer active listings. Upgrade to restore it.",
+  "@listingHiddenByPlanBody": {
+    "description": "Shown to the host of an event / experience the server hid after their membership dropped (owner rule 2026-10-14)."
+  }
 }
