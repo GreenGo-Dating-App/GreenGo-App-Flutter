@@ -13165,6 +13165,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get attrAboutSource => 'Quelle: Wikipedia (CC BY-SA 4.0)';
 
   @override
+  String get attrAboutSourceTranslated =>
+      'Quelle: Wikipedia (CC BY-SA 4.0), übersetzt';
+
+  @override
   String get attrHighlights => 'Highlights';
 
   @override

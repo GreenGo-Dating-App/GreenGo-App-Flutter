@@ -13203,6 +13203,10 @@ class AppLocalizationsFr extends AppLocalizations {
   String get attrAboutSource => 'Source : Wikipédia (CC BY-SA 4.0)';
 
   @override
+  String get attrAboutSourceTranslated =>
+      'Source : Wikipédia (CC BY-SA 4.0), traduit';
+
+  @override
   String get attrHighlights => 'Points forts';
 
   @override

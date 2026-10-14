@@ -160,7 +160,7 @@ class _AttractionsFilterSheetState extends State<AttractionsFilterSheet> {
     // Cities: the chosen country narrowed by score. Categories: additionally
     // narrowed by city, so every count matches what Done would show.
     final byScore = filterAttractions(_pool, minScore: lo, maxScore: hi);
-    final cities = cityFacets(byScore);
+    final cities = cityFacets(byScore, locale: Localizations.localeOf(context));
     if (_city != null && !cities.any((c) => c.key == _city)) _city = null;
     final byCity = filterAttractions(byScore, city: _city);
     final cats = categoryFacets(byCity,

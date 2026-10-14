@@ -13110,6 +13110,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get attrAboutSource => 'Fonte: Wikipédia (CC BY-SA 4.0)';
 
   @override
+  String get attrAboutSourceTranslated =>
+      'Fonte: Wikipédia (CC BY-SA 4.0), traduzido';
+
+  @override
   String get attrHighlights => 'Destaques';
 
   @override
@@ -38711,6 +38715,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get attrAboutSource => 'Fonte: Wikipédia (CC BY-SA 4.0)';
+
+  @override
+  String get attrAboutSourceTranslated =>
+      'Fonte: Wikipédia (CC BY-SA 4.0), traduzido';
 
   @override
   String get attrHighlights => 'Destaques';

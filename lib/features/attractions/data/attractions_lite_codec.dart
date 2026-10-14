@@ -154,8 +154,27 @@ class AttractionsLiteShard {
         for (final e in _nameCols.entries)
           if (v(e.key) != null) e.value: v(e.key)!,
       },
+      cityNames: {
+        for (final e in _langCols.entries)
+          if (v('c_${e.key}') != null) e.value: v('c_${e.key}')!,
+      },
+      shortTemplates: {
+        for (final e in _langCols.entries)
+          if (v('d_${e.key}') != null) e.value: v('d_${e.key}')!,
+      },
     );
   }
+
+  /// Suffix of the per-language columns c_* (city name, empty = same as `c`)
+  /// and d_* (dictionary: short description with {N} / {C} placeholders).
+  static const Map<String, String> _langCols = {
+    'it': 'it',
+    'es': 'es',
+    'pt': 'pt',
+    'ptbr': 'pt_BR',
+    'fr': 'fr',
+    'de': 'de',
+  };
 
   /// Localised title columns (empty cell = same as `n`).
   static const Map<String, String> _nameCols = {

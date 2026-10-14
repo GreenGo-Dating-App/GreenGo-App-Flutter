@@ -1,3 +1,5 @@
+import 'dart:ui' show Locale;
+
 import 'entities/attraction.dart';
 
 /// Pure filtering + facet logic for the Attractions tab.
@@ -87,14 +89,15 @@ List<AttractionFacet> categoryFacets(
 }
 
 /// Cities present in [list], most-populated first, then alphabetical.
-List<AttractionFacet> cityFacets(Iterable<Attraction> list) {
+/// Labels are in [locale]'s language when given ("Monaco di Baviera").
+List<AttractionFacet> cityFacets(Iterable<Attraction> list, {Locale? locale}) {
   final counts = <String, int>{};
   final names = <String, String>{};
   for (final a in list) {
     if (a.cityName.trim().isEmpty && a.citySlug.isEmpty) continue;
     final k = attractionCityKey(a);
     counts[k] = (counts[k] ?? 0) + 1;
-    names[k] ??= a.cityName.trim().isEmpty ? k : a.cityName.trim();
+    names[k] ??= a.cityName.trim().isEmpty ? k : a.cityFor(locale).trim();
   }
   final out = counts.keys
       .map((k) => AttractionFacet(key: k, label: names[k]!, count: counts[k]!))

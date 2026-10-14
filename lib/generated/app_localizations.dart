@@ -23142,6 +23142,12 @@ abstract class AppLocalizations {
   /// **'Source: Wikipedia (CC BY-SA 4.0)'**
   String get attrAboutSource;
 
+  /// No description provided for @attrAboutSourceTranslated.
+  ///
+  /// In en, this message translates to:
+  /// **'Source: Wikipedia (CC BY-SA 4.0), translated'**
+  String get attrAboutSourceTranslated;
+
   /// No description provided for @attrHighlights.
   ///
   /// In en, this message translates to:

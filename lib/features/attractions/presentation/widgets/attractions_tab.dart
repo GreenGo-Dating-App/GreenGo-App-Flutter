@@ -660,7 +660,12 @@ class _AttractionsTabState extends State<AttractionsTab>
         orElse: () => names.firstWhere((n) => n.startsWith(q),
             orElse: () => names.firstWhere((n) => n.contains(q),
                 orElse: () => names.first)));
-    final city = a.cityName.toLowerCase();
+    // The catalogue city name and its localised forms ("Munich", "München").
+    final cities = {
+      a.cityName.toLowerCase(),
+      for (final c in a.cityNames.values) c.toLowerCase(),
+    };
+    bool city(bool Function(String c) test) => cities.any(test);
     final country = (_countryNameOf(a.countryIso2) ?? '').toLowerCase();
     final countryEn = (_englishCountryNameOf(a.countryIso2) ?? '').toLowerCase();
     final iso = a.countryIso2.toLowerCase();
@@ -669,13 +674,13 @@ class _AttractionsTabState extends State<AttractionsTab>
         l10n == null ? '' : CategoryLabels.of(l10n, a.category).toLowerCase();
 
     if (name == q) return 1000;
-    if (city == q) return 900;
+    if (city((c) => c == q)) return 900;
     if (country == q || countryEn == q || iso == q) return 850;
     if (name.startsWith(q)) return 800;
-    if (city.startsWith(q)) return 700;
+    if (city((c) => c.startsWith(q))) return 700;
     if (country.startsWith(q) || countryEn.startsWith(q)) return 650;
     if (name.contains(q)) return 600;
-    if (city.contains(q)) return 500;
+    if (city((c) => c.contains(q))) return 500;
     if (country.contains(q) || countryEn.contains(q)) return 450;
     if (cat == q || catLocal == q) return 400;
     if (cat.contains(q) || catLocal.contains(q)) return 300;
@@ -904,7 +909,8 @@ class _AttractionsTabState extends State<AttractionsTab>
   /// at a time, but search results span every country).
   String _cityCountry(Attraction a) {
     final c = _countryNameOf(a.countryIso2) ?? a.countryName ?? a.countryIso2;
-    return c.isEmpty ? a.cityName : '${a.cityName} - $c';
+    final city = a.cityFor(Localizations.localeOf(context));
+    return c.isEmpty ? city : '$city - $c';
   }
 
   String? _distanceLabel(AppLocalizations l10n, Attraction a) {
@@ -1237,9 +1243,9 @@ class _AttractionsTabState extends State<AttractionsTab>
                     style: const TextStyle(
                         color: AppColors.textSecondary, fontSize: 12),
                   ),
-                  if (a.descriptionShort != null) ...[
+                  if (a.descriptionShortFor(Localizations.localeOf(context)) case final d?) ...[
                     const SizedBox(height: 6),
-                    Text(a.descriptionShort!,
+                    Text(d,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                         style: const TextStyle(

@@ -65,6 +65,10 @@ class Attraction {
     this.names = const {},
     this.about = const {},
     this.aboutSources = const {},
+    this.aboutTranslated = const {},
+    this.i18n = const {},
+    this.cityNames = const {},
+    this.shortTemplates = const {},
     this.altText,
     this.openingHours,
     this.bestSeason,
@@ -172,6 +176,63 @@ class Attraction {
   /// The text to translate when [aboutIn] has none: English, else whichever
   /// language has an article (some places only have one in Spanish, say).
   String? get aboutAny => about['en'] ?? (about.isEmpty ? null : about.values.first);
+
+  /// Languages of [about] that were TRANSLATED (by tools/attractions_i18n)
+  /// because Wikipedia has no article in them: language -> source language.
+  /// Their [aboutSources] entry is the source article.
+  final Map<String, String> aboutTranslated;
+
+  /// Whether [aboutIn] for [locale] is a translation of another language's
+  /// article (the credit line then says so).
+  bool aboutIsTranslated(Locale locale) {
+    final k = _langKey(locale);
+    if (about[k] != null) return aboutTranslated.containsKey(k);
+    return aboutTranslated.containsKey(locale.languageCode);
+  }
+
+  /// The catalogue texts in it, es, pt, pt_BR, fr, de (`attractions/{id}.i18n`,
+  /// tools/attractions_i18n). English lives in the plain fields. Empty on list
+  /// records; use [textsFor].
+  final Map<String, AttractionTexts> i18n;
+
+  /// City name per language, only where it differs from [cityName] (lite
+  /// columns c_* or i18n.{lang}.cityName). Use [cityFor].
+  final Map<String, String> cityNames;
+
+  /// List records: [descriptionShort] per language with `{N}` / `{C}` left for
+  /// the localised title and city (lite columns d_*). Use [descriptionShortFor].
+  final Map<String, String> shortTemplates;
+
+  /// Every catalogue text in [locale]'s language, each field falling back to
+  /// English when that language has no copy. Pure lookup: a language switch
+  /// just rebuilds.
+  AttractionTexts textsFor(Locale? locale) {
+    final en = AttractionTexts.english(this);
+    if (locale == null) return en;
+    final k = _langKey(locale);
+    final t = i18n[k] ?? i18n[locale.languageCode];
+    return t == null ? en : t.orElse(en);
+  }
+
+  /// [cityName] in [locale]'s language.
+  String cityFor(Locale? locale) {
+    if (locale == null) return cityName;
+    return i18n[_langKey(locale)]?.cityName ??
+        cityNames[_langKey(locale)] ??
+        cityNames[locale.languageCode] ??
+        cityName;
+  }
+
+  /// The one-line description in [locale]'s language: the full doc's copy,
+  /// else the list record's template, else English.
+  String? descriptionShortFor(Locale? locale) {
+    if (locale == null) return descriptionShort;
+    final full = i18n[_langKey(locale)]?.descriptionShort;
+    if (full != null) return full;
+    final t = shortTemplates[_langKey(locale)] ?? shortTemplates[locale.languageCode];
+    if (t == null) return descriptionShort;
+    return t.replaceAll('{N}', nameFor(locale)).replaceAll('{C}', cityFor(locale));
+  }
 
   /// Source URL for the text [aboutIn] returned, else for [aboutAny].
   String? aboutSourceIn(Locale locale) {
@@ -317,6 +378,8 @@ class Attraction {
       names: namesMap(m['names']),
       about: namesMap(m['about']),
       aboutSources: namesMap(m['aboutSources']),
+      aboutTranslated: namesMap(m['aboutTranslated']),
+      i18n: AttractionTexts.i18nMap(m['i18n']),
       altText: _s(m['altText']),
       openingHours: _s(m['openingHours']),
       visitDuration: _s(m['visitDuration']),
@@ -338,6 +401,135 @@ class Attraction {
       imgToken: _s(img['token']) ?? '',
       attributionAuthor: at == null ? null : _s(at['author']),
       attributionLicense: at == null ? null : _s(at['license']),
+    );
+  }
+}
+
+/// The catalogue texts of one attraction in one language: one entry of
+/// `attractions/{id}.i18n` (field names = the English top-level fields), or
+/// the English fields themselves ([AttractionTexts.english]).
+class AttractionTexts {
+  const AttractionTexts({
+    this.cityName,
+    this.descriptionShort,
+    this.descriptionMedium,
+    this.descriptionLong,
+    this.historySummary,
+    this.topHighlights = const [],
+    this.interestingFacts = const [],
+    this.curiosities = const [],
+    this.photographyTips,
+    this.altText,
+    this.openingHours,
+    this.visitDuration,
+    this.bestSeason,
+    this.bestTimeOfDay,
+    this.wheelchairAccessible,
+    this.indoorOutdoor,
+    this.petFriendly,
+    this.safetyLevel,
+    this.annualVisitors,
+  });
+
+  final String? cityName;
+  final String? descriptionShort;
+  final String? descriptionMedium;
+  final String? descriptionLong;
+  final String? historySummary;
+  final List<String> topHighlights;
+  final List<String> interestingFacts;
+  final List<String> curiosities;
+  final String? photographyTips;
+  final String? altText;
+  final String? openingHours;
+  final String? visitDuration;
+  final String? bestSeason;
+  final String? bestTimeOfDay;
+  final String? wheelchairAccessible;
+  final String? indoorOutdoor;
+  final String? petFriendly;
+  final String? safetyLevel;
+  final String? annualVisitors;
+
+  factory AttractionTexts.english(Attraction a) => AttractionTexts(
+        cityName: a.cityName,
+        descriptionShort: a.descriptionShort,
+        descriptionMedium: a.descriptionMedium,
+        descriptionLong: a.descriptionLong,
+        historySummary: a.historySummary,
+        topHighlights: a.topHighlights,
+        interestingFacts: a.interestingFacts,
+        curiosities: a.curiosities,
+        photographyTips: a.photographyTips,
+        altText: a.altText,
+        openingHours: a.openingHours,
+        visitDuration: a.visitDuration,
+        bestSeason: a.bestSeason,
+        bestTimeOfDay: a.bestTimeOfDay,
+        wheelchairAccessible: a.wheelchairAccessible,
+        indoorOutdoor: a.indoorOutdoor,
+        petFriendly: a.petFriendly,
+        safetyLevel: a.safetyLevel,
+        annualVisitors: a.annualVisitors,
+      );
+
+  factory AttractionTexts.fromMap(Map m) => AttractionTexts(
+        cityName: Attraction._s(m['cityName']),
+        descriptionShort: Attraction._s(m['descriptionShort']),
+        descriptionMedium: Attraction._s(m['descriptionMedium']),
+        descriptionLong: Attraction._s(m['descriptionLong']),
+        historySummary: Attraction._s(m['historySummary']),
+        topHighlights: Attraction._list(m['topHighlights']),
+        interestingFacts: Attraction._list(m['interestingFacts']),
+        curiosities: Attraction._list(m['curiosities']),
+        photographyTips: Attraction._s(m['photographyTips']),
+        altText: Attraction._s(m['altText']),
+        openingHours: Attraction._s(m['openingHours']),
+        visitDuration: Attraction._s(m['visitDuration']),
+        bestSeason: Attraction._s(m['bestSeason']),
+        bestTimeOfDay: Attraction._s(m['bestTimeOfDay']),
+        wheelchairAccessible: Attraction._s(m['wheelchairAccessible']),
+        indoorOutdoor: Attraction._s(m['indoorOutdoor']),
+        petFriendly: Attraction._s(m['petFriendly']),
+        safetyLevel: Attraction._s(m['safetyLevel']),
+        annualVisitors: Attraction._s(m['annualVisitors']),
+      );
+
+  /// `attractions/{id}.i18n` -> language -> texts (malformed entries skipped).
+  static Map<String, AttractionTexts> i18nMap(dynamic v) {
+    if (v is! Map) return const {};
+    return {
+      for (final e in v.entries)
+        if (e.value is Map) e.key.toString(): AttractionTexts.fromMap(e.value as Map),
+    };
+  }
+
+  /// This language's texts with every missing field taken from [fallback]
+  /// (lists: a list is used only when it has the same length, so a partial
+  /// copy never mixes languages inside one section).
+  AttractionTexts orElse(AttractionTexts fallback) {
+    List<String> list(List<String> mine, List<String> other) =>
+        mine.isNotEmpty && mine.length == other.length ? mine : other;
+    return AttractionTexts(
+      cityName: cityName ?? fallback.cityName,
+      descriptionShort: descriptionShort ?? fallback.descriptionShort,
+      descriptionMedium: descriptionMedium ?? fallback.descriptionMedium,
+      descriptionLong: descriptionLong ?? fallback.descriptionLong,
+      historySummary: historySummary ?? fallback.historySummary,
+      topHighlights: list(topHighlights, fallback.topHighlights),
+      interestingFacts: list(interestingFacts, fallback.interestingFacts),
+      curiosities: list(curiosities, fallback.curiosities),
+      photographyTips: photographyTips ?? fallback.photographyTips,
+      altText: altText ?? fallback.altText,
+      openingHours: openingHours ?? fallback.openingHours,
+      visitDuration: visitDuration ?? fallback.visitDuration,
+      bestSeason: bestSeason ?? fallback.bestSeason,
+      bestTimeOfDay: bestTimeOfDay ?? fallback.bestTimeOfDay,
+      wheelchairAccessible: wheelchairAccessible ?? fallback.wheelchairAccessible,
+      indoorOutdoor: indoorOutdoor ?? fallback.indoorOutdoor,
+      petFriendly: petFriendly ?? fallback.petFriendly,
+      safetyLevel: safetyLevel ?? fallback.safetyLevel,
+      annualVisitors: annualVisitors ?? fallback.annualVisitors,
     );
   }
 }

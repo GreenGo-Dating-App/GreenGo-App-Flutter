@@ -8,7 +8,6 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/deep_link_service.dart';
-import '../../../../core/services/translation_service.dart';
 import '../../../../core/utils/attraction_icons.dart';
 import '../../../../core/utils/compact_count.dart';
 import '../../../../core/utils/country_names_l10n.dart';
@@ -44,18 +43,6 @@ class AttractionDetailScreen extends StatefulWidget {
 class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
   Attraction? _a;
   bool _loading = true;
-
-  /// One toggle translates EVERY prose block on the page, rather than putting a
-  /// separate "Translate" link under each of six sections. Uses the same shared
-  /// [TranslationService] as chat, so its cache is shared and repeat views are
-  /// free. Nothing is stored server-side — translation is per-viewer.
-  bool _translated = false;
-  bool _translating = false;
-  final Map<String, String> _tr = {}; // original -> translated
-
-  /// The page is translated into the app language automatically once the full
-  /// record has loaded (the toggle then switches back to the original).
-  bool _autoTranslateStarted = false;
 
   /// Unique viewer-days (server-counted); null until loaded.
   int? _views;
@@ -247,74 +234,7 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
       if (full != null) _a = full;
       _loading = false;
     });
-    _autoTranslate();
   }
-
-  /// Translate automatically into the app's language. The catalogue is written
-  /// in English, so English readers need nothing.
-  void _autoTranslate() {
-    final a = _a;
-    if (_autoTranslateStarted || !mounted || a == null) return;
-    final target = TranslationService.normalizeLanguage(
-        Localizations.localeOf(context).toString());
-    if (target == 'en') return;
-    _autoTranslateStarted = true;
-    _toggleTranslate(a, target);
-  }
-
-  /// Collect every translatable prose field, translate what is not cached, and
-  /// flip the page into the viewer's language.
-  Future<void> _toggleTranslate(Attraction a, String target) async {
-    if (_translating) return;
-    if (_translated) {
-      setState(() => _translated = false);
-      return;
-    }
-    final texts = <String>[
-      // "What is it?" in a language without its own article: English, translated.
-      if (a.aboutIn(Localizations.localeOf(context)) == null && a.aboutAny != null)
-        a.aboutAny!,
-      if (a.descriptionMedium != null) a.descriptionMedium!,
-      if (a.descriptionLong != null) a.descriptionLong!,
-      if (a.descriptionShort != null) a.descriptionShort!,
-      if (a.historySummary != null) a.historySummary!,
-      if (a.photographyTips != null) a.photographyTips!,
-      if (a.bestSeason != null) a.bestSeason!,
-      if (a.bestTimeOfDay != null) a.bestTimeOfDay!,
-      if (a.visitDuration != null) a.visitDuration!,
-      if (a.openingHours != null) a.openingHours!,
-      ...a.topHighlights,
-      ...a.interestingFacts,
-      ...a.curiosities,
-    ].where((t) => t.trim().isNotEmpty).toSet();
-
-    setState(() => _translating = true);
-    // One batch through the shared store: each block is translated once per
-    // language for everyone, then simply read back.
-    final todo = texts.where((t) => !_tr.containsKey(t)).toList();
-    try {
-      final out = await TranslationService()
-          .translateShared(todo, targetLanguage: target);
-      for (var i = 0; i < todo.length; i++) {
-        if (out[i].trim().isNotEmpty) _tr[todo[i]] = out[i];
-      }
-    } catch (_) {/* leave the page in the original language */}
-    if (!mounted) return;
-    setState(() {
-      _translating = false;
-      _translated = true;
-    });
-  }
-
-  /// Translated text when the toggle is on and we have one, else the original.
-  String _t(String? original) {
-    if (original == null) return '';
-    if (!_translated) return original;
-    return _tr[original] ?? original;
-  }
-
-  List<String> _tList(List<String> xs) =>
-      _translated ? xs.map((e) => _tr[e] ?? e).toList() : xs;
 
   Future<void> _openMaps(Attraction a) async {
     final q = (a.lat != null && a.lng != null)
@@ -374,7 +294,7 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
       );
 
   /// "Source: Wikipedia (CC BY-SA 4.0)" under the about text; opens the article.
-  Widget _aboutSource(AppLocalizations l10n, String? url) {
+  Widget _aboutSource(AppLocalizations l10n, String? url, {bool translated = false}) {
     if (url == null) return const SizedBox.shrink();
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 6, 16, 0),
@@ -384,7 +304,7 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 6),
           child: Text(
-            l10n.attrAboutSource,
+            translated ? l10n.attrAboutSourceTranslated : l10n.attrAboutSource,
             style: const TextStyle(
                 color: AppColors.textTertiary, fontSize: 11, decoration: TextDecoration.underline),
           ),
@@ -522,7 +442,8 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
       pageBuilder: (ctx, _, __) => _AttractionImageViewer(
         url: url,
         heroTag: 'attraction-image-${a.id}',
-        semanticLabel: a.altText ?? a.nameFor(Localizations.localeOf(context)),
+        semanticLabel: a.textsFor(Localizations.localeOf(context)).altText ??
+            a.nameFor(Localizations.localeOf(context)),
       ),
       transitionsBuilder: (_, anim, __, child) =>
           FadeTransition(opacity: anim, child: child),
@@ -546,6 +467,10 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
       );
     }
 
+    // Every catalogue text is stored in all app languages (attractions/{id}.i18n):
+    // a language switch only rebuilds, nothing is translated at runtime.
+    final locale = Localizations.localeOf(context);
+    final tx = a.textsFor(locale);
     final price = a.freeEntry
         ? l10n.attrFree
         : (a.ticketPrice != null && a.ticketPrice! > 0
@@ -581,31 +506,12 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
                         name: a.nameFor(Localizations.localeOf(buttonContext))),
               ),
             ),
-            TextButton.icon(
-              onPressed: _translating
-                  ? null
-                  : () => _toggleTranslate(
-                      a, Localizations.localeOf(context).toString()),
-              icon: _translating
-                  ? const SizedBox(
-                      width: 14,
-                      height: 14,
-                      child: CircularProgressIndicator(
-                          strokeWidth: 2, color: AppColors.richGold))
-                  : Icon(_translated ? Icons.undo : Icons.translate,
-                      size: 17, color: AppColors.richGold),
-              label: Text(
-                _translated ? l10n.attrShowOriginal : l10n.attrTranslate,
-                style: const TextStyle(
-                    color: AppColors.richGold, fontSize: 12.5),
-              ),
-            ),
           ],
           flexibleSpace: FlexibleSpaceBar(
             background: Stack(fit: StackFit.expand, children: [
               // Tap the photo to open it full screen (pinch to zoom).
               Semantics(
-                label: a.altText ?? a.nameFor(Localizations.localeOf(context)),
+                label: tx.altText ?? a.nameFor(locale),
                 button: true,
                 child: GestureDetector(
                   onTap: () => _openImage(context, a),
@@ -708,7 +614,7 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
                     Expanded(
                       child: Text(
                           [
-                            a.cityName,
+                            a.cityFor(locale),
                             if (a.countryName != null)
                               localizedCountryName(l10n, a.countryName!),
                           ]
@@ -752,21 +658,22 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
             // ---- about ------------------------------------------------------
             if (a.about.isNotEmpty) ...[
               _sectionTitle(l10n.attrAbout),
-              _body(a.aboutIn(Localizations.localeOf(context)) ?? _t(a.aboutAny)),
-              _aboutSource(l10n, a.aboutSourceIn(Localizations.localeOf(context))),
-            ] else if (a.descriptionMedium != null || a.descriptionShort != null) ...[
+              _body(a.aboutIn(locale) ?? a.aboutAny ?? ''),
+              _aboutSource(l10n, a.aboutSourceIn(locale),
+                  translated: a.aboutIsTranslated(locale)),
+            ] else if (tx.descriptionMedium != null || tx.descriptionShort != null) ...[
               _sectionTitle(l10n.attrAbout),
-              _body(_t(a.descriptionMedium ?? a.descriptionShort)),
+              _body(tx.descriptionMedium ?? tx.descriptionShort!),
             ],
 
-            if (a.curiosities.isNotEmpty) ...[
+            if (tx.curiosities.isNotEmpty) ...[
               _sectionTitle(l10n.attrTopCuriosities),
-              _numbered(_tList(a.curiosities)),
+              _numbered(tx.curiosities),
             ],
 
-            if (a.topHighlights.isNotEmpty) ...[
+            if (tx.topHighlights.isNotEmpty) ...[
               _sectionTitle(l10n.attrHighlights),
-              _bullets(_tList(a.topHighlights)),
+              _bullets(tx.topHighlights),
             ],
 
             // ---- why visit --------------------------------------------------
@@ -782,46 +689,46 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
             ],
 
             // ---- best time --------------------------------------------------
-            if (a.bestSeason != null || a.bestTimeOfDay != null) ...[
+            if (tx.bestSeason != null || tx.bestTimeOfDay != null) ...[
               _sectionTitle(l10n.attrBestTimeTitle),
-              if (a.bestSeason != null)
-                _factRow(Icons.wb_sunny, l10n.attrBestTimeTitle, _t(a.bestSeason)),
-              if (a.bestTimeOfDay != null)
-                _factRow(Icons.schedule, l10n.attrVisitDuration, _t(a.bestTimeOfDay)),
+              if (tx.bestSeason != null)
+                _factRow(Icons.wb_sunny, l10n.attrBestTimeTitle, tx.bestSeason!),
+              if (tx.bestTimeOfDay != null)
+                _factRow(Icons.schedule, l10n.attrVisitDuration, tx.bestTimeOfDay!),
             ],
 
-            if (a.historySummary != null) ...[
+            if (tx.historySummary != null) ...[
               _sectionTitle(l10n.attrHistoryTitle),
-              _body(_t(a.historySummary)),
+              _body(tx.historySummary!),
             ],
-            if (a.interestingFacts.isNotEmpty && a.curiosities.isEmpty) ...[
+            if (tx.interestingFacts.isNotEmpty && tx.curiosities.isEmpty) ...[
               _sectionTitle(l10n.attrDidYouKnow),
-              _bullets(_tList(a.interestingFacts)),
+              _bullets(tx.interestingFacts),
             ],
-            if (a.photographyTips != null) ...[
+            if (tx.photographyTips != null) ...[
               _sectionTitle(l10n.attrPhotoTips),
-              _body(_t(a.photographyTips)),
+              _body(tx.photographyTips!),
             ],
 
             // ---- practical --------------------------------------------------
             _sectionTitle(l10n.attrPractical),
-            if (a.openingHours != null)
-              _factRow(Icons.access_time, l10n.attrOpeningHours, _t(a.openingHours)),
-            if (a.visitDuration != null)
-              _factRow(Icons.timelapse, l10n.attrVisitDuration, _t(a.visitDuration)),
+            if (tx.openingHours != null)
+              _factRow(Icons.access_time, l10n.attrOpeningHours, tx.openingHours!),
+            if (tx.visitDuration != null)
+              _factRow(Icons.timelapse, l10n.attrVisitDuration, tx.visitDuration!),
             if (price != null)
               _factRow(Icons.confirmation_number, l10n.attrTicketFrom, price),
-            if (a.wheelchairAccessible != null)
+            if (tx.wheelchairAccessible != null)
               _factRow(Icons.accessible, l10n.attrAccessibility,
-                  a.wheelchairAccessible!),
-            if (a.indoorOutdoor != null)
-              _factRow(Icons.home_work, l10n.attrAccessibility, a.indoorOutdoor!),
-            if (a.petFriendly != null)
-              _factRow(Icons.pets, l10n.attrPets, a.petFriendly!),
-            if (a.safetyLevel != null)
-              _factRow(Icons.shield_outlined, l10n.attrSafety, a.safetyLevel!),
-            if (a.annualVisitors != null)
-              _factRow(Icons.groups, l10n.attrVisitorsPerYear, a.annualVisitors!),
+                  tx.wheelchairAccessible!),
+            if (tx.indoorOutdoor != null)
+              _factRow(Icons.home_work, l10n.attrAccessibility, tx.indoorOutdoor!),
+            if (tx.petFriendly != null)
+              _factRow(Icons.pets, l10n.attrPets, tx.petFriendly!),
+            if (tx.safetyLevel != null)
+              _factRow(Icons.shield_outlined, l10n.attrSafety, tx.safetyLevel!),
+            if (tx.annualVisitors != null)
+              _factRow(Icons.groups, l10n.attrVisitorsPerYear, tx.annualVisitors!),
             if (a.streetAddress != null)
               _factRow(Icons.location_on, l10n.attrOpenInMaps, a.streetAddress!),
 
