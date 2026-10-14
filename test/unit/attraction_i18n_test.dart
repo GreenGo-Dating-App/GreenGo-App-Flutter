@@ -90,6 +90,23 @@ void main() {
     });
   });
 
+  test('a lower-case Wikidata title is shown with a capital letter', () {
+    final a = Attraction(
+      id: 1,
+      slug: 'eiffel-tower-paris',
+      name: 'Eiffel Tower',
+      cityName: 'Paris',
+      citySlug: 'paris',
+      countryIso2: 'FR',
+      imgBase: 'b',
+      imgHash: 'h',
+      imgToken: 't',
+      names: const {'it': 'torre Eiffel', 'fr': ''},
+    );
+    expect(a.nameFor(const Locale('it')), 'Torre Eiffel');
+    expect(a.nameFor(const Locale('fr')), 'Eiffel Tower');
+  });
+
   test('about: a translated language is flagged for the credit line', () {
     final a = _a(
       about: const {'en': 'A large public park.', 'it': 'Un grande parco pubblico.', 'de': 'Ein Park.'},

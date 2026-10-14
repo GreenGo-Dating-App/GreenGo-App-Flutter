@@ -146,12 +146,15 @@ class Attraction {
   final Map<String, String> names;
 
   /// The title to show for [locale]: "Colosseo" in Italian, "Kolosseum" in
-  /// German, else [name].
+  /// German, else [name]. Wikidata labels are lower case in some languages
+  /// ("torre Eiffel"); as a title the first letter is upper case.
   String nameFor(Locale? locale) {
     if (locale == null || names.isEmpty) return name;
     final lang = locale.languageCode;
     final key = lang == 'pt' && locale.countryCode == 'BR' ? 'pt_BR' : lang;
-    return names[key] ?? names[lang] ?? name;
+    final n = names[key] ?? names[lang];
+    if (n == null || n.isEmpty) return name;
+    return n[0].toUpperCase() + n.substring(1);
   }
 
   /// "What is it?": 3-4 sentences per app language (en, it, es, pt, pt_BR,

@@ -273,7 +273,8 @@ async function stepRender() {
     for (const lang of TARGETS) {
       const K = country[lang] || { name: r.countryName, in: `in ${r.countryName}`, of: `of ${r.countryName}` };
       const S = state[lang] || { name: r.stateProvince, in: `in ${r.stateProvince}`, of: `of ${r.stateProvince}` };
-      const N = (r.names && r.names[lang]) || r.name;
+      // Title case like the app's nameFor: Wikidata labels can be lower case ("torre Eiffel").
+      const N = ((n) => n.charAt(0).toUpperCase() + n.slice(1))((r.names && r.names[lang]) || r.name);
       const C = city[lang] || r.cityName;
       const place = (t) => t
         .replace(/\{in_K\}/g, K.in).replace(/\{of_K\}/g, K.of).replace(/\{K\}/g, K.name)
