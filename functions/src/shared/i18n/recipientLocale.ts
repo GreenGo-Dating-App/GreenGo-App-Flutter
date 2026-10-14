@@ -18,6 +18,7 @@
 import * as admin from 'firebase-admin';
 import '../firebaseAdmin';
 import { AppLocale, DEFAULT_LOCALE, normalizeLocale } from './locales';
+import { guestContactOf, isGuestKey } from '../guestIdentity';
 
 const db = () => admin.firestore();
 
@@ -74,6 +75,8 @@ async function resolveLocaleUncached(
   userData?: Record<string, unknown> | null,
 ): Promise<AppLocale> {
   if (!uid) return DEFAULT_LOCALE;
+  // Guest (no account): the language of the page they booked from.
+  if (isGuestKey(uid)) return normalizeLocale((await guestContactOf(db(), uid))?.locale);
   try {
     let data = userData;
     if (data === undefined) {
@@ -107,7 +110,10 @@ export function resolveLocale(
  */
 export async function resolveLocales(uids: string[]): Promise<Map<string, AppLocale>> {
   const out = new Map<string, AppLocale>();
-  const unique = [...new Set(uids.filter(Boolean))];
+  const unique = [...new Set(uids.filter((u) => u && !isGuestKey(u)))];
+  for (const g of new Set(uids.filter(isGuestKey))) {
+    out.set(g, normalizeLocale((await guestContactOf(db(), g))?.locale));
+  }
   const CHUNK = 300;
   const missing: string[] = [];
   for (let i = 0; i < unique.length; i += CHUNK) {

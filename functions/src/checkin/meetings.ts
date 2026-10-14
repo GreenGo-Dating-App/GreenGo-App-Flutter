@@ -20,6 +20,7 @@
  */
 import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
+import { isGuestKey } from '../shared/guestIdentity';
 
 export const MET_IN_PERSON = 'met_in_person';
 export const ENCOUNTERS = 'encounters';
@@ -54,6 +55,7 @@ export async function recordMeeting(
   db: FirebaseFirestore.Firestore = admin.firestore(),
 ): Promise<boolean> {
   if (!a || !b || a === b) return false;
+  if (isGuestKey(a) || isGuestKey(b)) return false; // guests have no profile
   const pairId = pairIdOf(a, b);
   const pairRef = db.collection(MET_IN_PERSON).doc(pairId);
   const encRef = pairRef.collection(ENCOUNTERS).doc(encounterIdOf(ctx.type, ctx.contextId));
