@@ -25045,4 +25045,26 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get guestLabel => 'Gast';
+
+  @override
+  String get shopTicketFeeRow => 'Ticket-Servicegebühr (zahlen Käufer)';
+
+  @override
+  String shopTicketFeeValue(String fixed, int percent, String cap) {
+    return 'US\$$fixed + $percent % (max. US\$$cap)';
+  }
+
+  @override
+  String shopTicketFeeShort(String fixed, int percent) {
+    return 'US\$$fixed + $percent %';
+  }
+
+  @override
+  String get shopBusinessSellTickets =>
+      'Business-Konto: Tickets und Buchungen verkaufen';
+
+  @override
+  String featureExperiences(String count) {
+    return '$count Erlebnisse gleichzeitig aktiv';
+  }
 }

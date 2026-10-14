@@ -7649,5 +7649,10 @@
   "guestBookingSwitchTitle": "Los invitados pueden reservar",
   "guestBookingSwitchHint": "Las personas sin cuenta de GreenGo pueden reservar desde el enlace compartido con su nombre y correo. Cuentan para tu aforo.",
   "guestBookingPublicOnly": "Solo disponible para eventos públicos.",
-  "guestLabel": "Invitado"
+  "guestLabel": "Invitado",
+  "shopTicketFeeRow": "Tarifa de servicio por entrada (la pagan los compradores)",
+  "shopTicketFeeValue": "US${fixed} + {percent} % (máx. US${cap})",
+  "shopTicketFeeShort": "US${fixed} + {percent} %",
+  "shopBusinessSellTickets": "Cuenta de empresa: vende entradas y reservas",
+  "featureExperiences": "{count} experiencias activas a la vez"
 }

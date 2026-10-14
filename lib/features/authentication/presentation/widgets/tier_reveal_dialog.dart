@@ -119,6 +119,13 @@ class _TierRevealDialogState extends State<TierRevealDialog>
       const Icon(Icons.event_available_outlined, size: 20),
       l10n.featureEvents(count(TierEntitlements.maxEvents(t))),
     ));
+    final experiences = TierEntitlements.maxExperiences(t);
+    if (experiences != 0) {
+      add(_plainRow(
+        const Icon(Icons.explore_outlined, size: 20),
+        l10n.featureExperiences(count(experiences)),
+      ));
+    }
     // Omitted rather than shown as zero: the Base pack grants no boosts, and
     // "0 profile boosts a month" is not a feature.
     if (TierEntitlements.boostsPerMonth(t) > 0) {
@@ -140,6 +147,12 @@ class _TierRevealDialogState extends State<TierRevealDialog>
         TierEntitlements.travelModeFree(t)
             ? l10n.featureTravelModeFree
             : l10n.featureTravelModeCoins(CoinFeaturePrices.traveler),
+      ));
+    }
+    if (TierEntitlements.canBecomeBusiness(t)) {
+      add(_plainRow(
+        const Icon(Icons.storefront_outlined, size: 20),
+        l10n.shopBusinessSellTickets,
       ));
     }
     if (TierEntitlements.prioritySupport(t)) {

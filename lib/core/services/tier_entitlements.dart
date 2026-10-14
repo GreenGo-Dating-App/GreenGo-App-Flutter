@@ -1,4 +1,5 @@
 import '../../features/membership/domain/entities/membership.dart';
+import '../../features/ticket_payments/domain/ticket_fees.dart';
 import '../../generated/app_localizations.dart';
 
 /// Level of advanced search / discovery filters a tier can use.
@@ -204,6 +205,39 @@ class TierEntitlements {
       case MembershipTier.test:
         return _groupsPlatinum;
     }
+  }
+
+  /// GreenGo service fee rule buyers pay on this host tier's paid tickets
+  /// (owner rule 2026-10-14; the server's fees.ts is authoritative). Null for
+  /// tiers that cannot sell (no plan / Base). TEST sells as Platinum.
+  static TicketFeeRule? ticketFeeRule(MembershipTier tier) {
+    switch (tier) {
+      case MembershipTier.free:
+        return null;
+      case MembershipTier.silver:
+        return TicketFeeRule.silver;
+      case MembershipTier.gold:
+        return TicketFeeRule.gold;
+      case MembershipTier.platinum:
+      case MembershipTier.test:
+        return TicketFeeRule.platinum;
+    }
+  }
+
+  /// "US$3 + 10% (max US$10)", or the [short] "US$3 + 10%" for narrow
+  /// cells. Null when the tier cannot sell.
+  static String? ticketFeeLabel(AppLocalizations l10n, MembershipTier tier,
+      {bool short = false}) {
+    final rule = ticketFeeRule(tier);
+    final s = rule == null ? null : kTicketFeeSchedules[rule];
+    if (s == null) return null;
+    String usd(int cents) =>
+        cents % 100 == 0 ? '${cents ~/ 100}' : (cents / 100).toStringAsFixed(2);
+    if (short || s.capUsdCents == null) {
+      return l10n.shopTicketFeeShort(usd(s.fixedUsdCents), s.percent);
+    }
+    return l10n.shopTicketFeeValue(
+        usd(s.fixedUsdCents), s.percent, usd(s.capUsdCents!));
   }
 
   /// Max ACTIVE member-hosted experiences a tier may have at a time (null =
@@ -487,6 +521,8 @@ class TierEntitlements {
           each((t) => mark(prioritySupport(t)))),
       TierComparisonRow(
           l10n.shopBusinessAccount, each((t) => mark(canBecomeBusiness(t)))),
+      TierComparisonRow(l10n.shopTicketFeeRow,
+          each((t) => ticketFeeLabel(l10n, t, short: true) ?? noMark)),
     ];
   }
 }

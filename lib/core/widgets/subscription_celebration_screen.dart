@@ -9,6 +9,7 @@ import '../../features/subscription/domain/entities/subscription.dart';
 import '../../generated/app_localizations.dart';
 import '../../features/subscription/presentation/tier_l10n.dart';
 import '../constants/app_colors.dart';
+import '../services/tier_entitlements.dart';
 
 /// Full-screen luxury celebration animation for subscription purchase
 class SubscriptionCelebrationScreen extends StatefulWidget {
@@ -218,6 +219,10 @@ class _SubscriptionCelebrationScreenState
     if (events != 0) {
       addRow(Icons.event_available, l10n.shopEventsCreate, limit(events));
     }
+    final experiences = features['experiencesCreate'] as int? ?? 0;
+    if (experiences != 0) {
+      addRow(Icons.explore, l10n.shopExperiencesCreate, limit(experiences));
+    }
     final boosts = features['boostsPerMonth'] as int? ?? 0;
     if (boosts > 0) {
       addRow(Icons.flash_on, l10n.shopMonthlyBoosts, '$boosts');
@@ -242,7 +247,9 @@ class _SubscriptionCelebrationScreenState
       addRow(Icons.support_agent, l10n.membershipPrioritySupport, '✓');
     }
     if (features['businessAccount'] == true) {
-      addRow(Icons.storefront, l10n.shopBusinessAccount, '✓');
+      addRow(Icons.storefront, l10n.shopBusinessSellTickets, '✓');
+      final fee = TierEntitlements.ticketFeeLabel(l10n, tier.membershipTier);
+      if (fee != null) addRow(Icons.confirmation_number, l10n.shopTicketFeeRow, fee);
     }
 
     return rows;

@@ -24961,6 +24961,29 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get guestLabel => 'Convidado';
+
+  @override
+  String get shopTicketFeeRow =>
+      'Taxa de serviço por bilhete (paga pelos compradores)';
+
+  @override
+  String shopTicketFeeValue(String fixed, int percent, String cap) {
+    return 'US\$$fixed + $percent% (máx. US\$$cap)';
+  }
+
+  @override
+  String shopTicketFeeShort(String fixed, int percent) {
+    return 'US\$$fixed + $percent%';
+  }
+
+  @override
+  String get shopBusinessSellTickets =>
+      'Conta empresarial: venda bilhetes e reservas';
+
+  @override
+  String featureExperiences(String count) {
+    return '$count experiências ativas ao mesmo tempo';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -49930,4 +49953,27 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get guestLabel => 'Convidado';
+
+  @override
+  String get shopTicketFeeRow =>
+      'Taxa de serviço por ingresso (paga pelos compradores)';
+
+  @override
+  String shopTicketFeeValue(String fixed, int percent, String cap) {
+    return 'US\$$fixed + $percent% (máx. US\$$cap)';
+  }
+
+  @override
+  String shopTicketFeeShort(String fixed, int percent) {
+    return 'US\$$fixed + $percent%';
+  }
+
+  @override
+  String get shopBusinessSellTickets =>
+      'Conta comercial: venda ingressos e reservas';
+
+  @override
+  String featureExperiences(String count) {
+    return '$count experiências ativas ao mesmo tempo';
+  }
 }

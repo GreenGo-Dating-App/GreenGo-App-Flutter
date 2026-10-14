@@ -7649,5 +7649,10 @@
   "guestBookingSwitchTitle": "Gäste dürfen buchen",
   "guestBookingSwitchHint": "Personen ohne GreenGo-Konto können über den geteilten Link mit Name und E-Mail buchen. Sie zählen zu deiner Kapazität.",
   "guestBookingPublicOnly": "Nur für öffentliche Events verfügbar.",
-  "guestLabel": "Gast"
+  "guestLabel": "Gast",
+  "shopTicketFeeRow": "Ticket-Servicegebühr (zahlen Käufer)",
+  "shopTicketFeeValue": "US${fixed} + {percent} % (max. US${cap})",
+  "shopTicketFeeShort": "US${fixed} + {percent} %",
+  "shopBusinessSellTickets": "Business-Konto: Tickets und Buchungen verkaufen",
+  "featureExperiences": "{count} Erlebnisse gleichzeitig aktiv"
 }

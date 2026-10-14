@@ -1983,6 +1983,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
                     // Features list (Phase 3.2: real per-tier entitlements)
                     _buildFeatureRow(AppLocalizations.of(context)!.shopEventsCreate, _formatLimit(features['eventsCreate'] as int)),
+                    _buildFeatureRow(AppLocalizations.of(context)!.shopExperiencesCreate, _formatLimit(features['experiencesCreate'] as int)),
                     _buildFeatureRow(AppLocalizations.of(context)!.shopGroupsCreate, _formatLimit(features['groupsCreate'] as int)),
                     _buildFeatureRow(AppLocalizations.of(context)!.shopDailyConnects, _formatLimit(features['dailyConnects'] as int)),
                     _buildFeatureRow(AppLocalizations.of(context)!.shopMonthlyBoosts, _formatLimit(features['boostsPerMonth'] as int)),
@@ -2001,8 +2002,16 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                       _buildFeatureRow(AppLocalizations.of(context)!.profileGhostMode, '✓'),
                     if (features['prioritySupport'] == true)
                       _buildFeatureRow(AppLocalizations.of(context)!.membershipPrioritySupport, '✓'),
-                    if (features['businessAccount'] == true)
-                      _buildFeatureRow(AppLocalizations.of(context)!.shopBusinessAccount, '✓'),
+                    if (features['businessAccount'] == true) ...[
+                      _buildFeatureRow(AppLocalizations.of(context)!.shopBusinessSellTickets, '✓'),
+                      _buildFeatureRow(
+                        AppLocalizations.of(context)!.shopTicketFeeRow,
+                        TierEntitlements.ticketFeeLabel(
+                                AppLocalizations.of(context)!, tier.membershipTier) ??
+                            '',
+                        enabled: true,
+                      ),
+                    ],
                   ],
                 ),
               ),

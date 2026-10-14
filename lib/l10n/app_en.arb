@@ -13801,5 +13801,49 @@
   "guestLabel": "Guest",
   "@guestLabel": {
     "description": "Small label next to the name of someone who booked as a guest (no GreenGo account)."
+  },
+  "shopTicketFeeRow": "Ticket service fee (paid by buyers)",
+  "@shopTicketFeeRow": {
+    "description": "Membership card / comparison row: GreenGo service fee buyers pay per paid ticket, by the host plan (owner rule 2026-10-14)."
+  },
+  "shopTicketFeeValue": "US${fixed} + {percent}% (max US${cap})",
+  "@shopTicketFeeValue": {
+    "description": "Ticket fee value on a membership card, e.g. US$3 + 10% (max US$10).",
+    "placeholders": {
+      "fixed": {
+        "type": "String"
+      },
+      "percent": {
+        "type": "int"
+      },
+      "cap": {
+        "type": "String"
+      }
+    }
+  },
+  "shopTicketFeeShort": "US${fixed} + {percent}%",
+  "@shopTicketFeeShort": {
+    "description": "Ticket fee in the narrow comparison table cell, e.g. US$3 + 10%.",
+    "placeholders": {
+      "fixed": {
+        "type": "String"
+      },
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "shopBusinessSellTickets": "Business account: sell tickets and bookings",
+  "@shopBusinessSellTickets": {
+    "description": "Membership benefit: Silver, Gold and Platinum can open a business account to sell paid tickets/bookings (owner rule 2026-10-14)."
+  },
+  "featureExperiences": "{count} experiences running at once",
+  "@featureExperiences": {
+    "description": "Tier reveal benefit line: active experiences at a time.",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
   }
 }

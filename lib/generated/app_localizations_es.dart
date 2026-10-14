@@ -24984,4 +24984,27 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get guestLabel => 'Invitado';
+
+  @override
+  String get shopTicketFeeRow =>
+      'Tarifa de servicio por entrada (la pagan los compradores)';
+
+  @override
+  String shopTicketFeeValue(String fixed, int percent, String cap) {
+    return 'US\$$fixed + $percent % (máx. US\$$cap)';
+  }
+
+  @override
+  String shopTicketFeeShort(String fixed, int percent) {
+    return 'US\$$fixed + $percent %';
+  }
+
+  @override
+  String get shopBusinessSellTickets =>
+      'Cuenta de empresa: vende entradas y reservas';
+
+  @override
+  String featureExperiences(String count) {
+    return '$count experiencias activas a la vez';
+  }
 }

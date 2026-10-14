@@ -42428,6 +42428,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Guest'**
   String get guestLabel;
+
+  /// Membership card / comparison row: GreenGo service fee buyers pay per paid ticket, by the host plan (owner rule 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket service fee (paid by buyers)'**
+  String get shopTicketFeeRow;
+
+  /// Ticket fee value on a membership card, e.g. US$3 + 10% (max US$10).
+  ///
+  /// In en, this message translates to:
+  /// **'US\${fixed} + {percent}% (max US\${cap})'**
+  String shopTicketFeeValue(String fixed, int percent, String cap);
+
+  /// Ticket fee in the narrow comparison table cell, e.g. US$3 + 10%.
+  ///
+  /// In en, this message translates to:
+  /// **'US\${fixed} + {percent}%'**
+  String shopTicketFeeShort(String fixed, int percent);
+
+  /// Membership benefit: Silver, Gold and Platinum can open a business account to sell paid tickets/bookings (owner rule 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Business account: sell tickets and bookings'**
+  String get shopBusinessSellTickets;
+
+  /// Tier reveal benefit line: active experiences at a time.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} experiences running at once'**
+  String featureExperiences(String count);
 }
 
 class _AppLocalizationsDelegate

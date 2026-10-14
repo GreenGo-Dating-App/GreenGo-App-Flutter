@@ -384,7 +384,7 @@ export async function createTicketCheckout(
     // Guests pay by instant checkout only (or get free tickets), never "link".
     if (guest && listing.provider === 'link') fail('failed-precondition', 'guest_instant_only');
 
-    // Only an ACTIVE business account (isBusiness + effective Platinum) may
+    // Only an ACTIVE business account (isBusiness + effective Silver, Gold or Platinum) may
     // sell. Existing paid listings of other accounts stay readable, but new
     // sales are refused with a clear reason (free ticket types still issue).
     let seller: Record<string, any> | undefined;

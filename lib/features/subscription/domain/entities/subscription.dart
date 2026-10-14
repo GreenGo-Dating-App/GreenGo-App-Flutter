@@ -200,8 +200,9 @@ extension SubscriptionTierExtension on SubscriptionTier {
   /// Map shape stays `<String, dynamic>` so existing renderers
   /// (getFeature/hasFeature/getLimit) keep working.
   ///
-  ///   eventsCreate     ongoing events a user may create (Free 1 / Silver 3 /
-  ///                    Gold 5 / Platinum ∞)
+  ///   eventsCreate     active events at a time (Base 1 / Silver 5 /
+  ///                    Gold 10 / Platinum ∞)
+  ///   experiencesCreate active experiences at a time (same limits)
   ///   groupsCreate     groups a user may create (Free 1 / paid ∞)
   ///   dailyConnects    new-people connections per day (Free 10 / Silver 50 /
   ///                    Gold 200 / Platinum ∞)
@@ -211,7 +212,8 @@ extension SubscriptionTierExtension on SubscriptionTier {
   ///   travelModeFree   travel mode without the daily coin price (Platinum)
   ///   ghostMode        hidden from discovery and search (Gold+)
   ///   prioritySupport  support tickets answered first (Gold+)
-  ///   businessAccount  may convert to a public business account (Platinum-only)
+  ///   businessAccount  may open a business account and sell paid tickets
+  ///                    (Silver, Gold, Platinum)
   ///   unlimitedChat    unlimited chat messages (all tiers)
   ///
   /// Every value is read from [TierEntitlements]; nothing is promised here
@@ -221,6 +223,7 @@ extension SubscriptionTierExtension on SubscriptionTier {
     int limit(int? v) => v ?? -1; // -1 = unlimited
     return {
       'eventsCreate': limit(TierEntitlements.maxEvents(tier)),
+      'experiencesCreate': limit(TierEntitlements.maxExperiences(tier)),
       'groupsCreate': limit(TierEntitlements.maxGroups(tier)),
       'dailyConnects': limit(TierEntitlements.maxDailyConnects(tier)),
       'boostsPerMonth': TierEntitlements.boostsPerMonth(tier),
@@ -235,6 +238,9 @@ extension SubscriptionTierExtension on SubscriptionTier {
         'bypassCountdown': true, // Key feature for test users
     };
   }
+
+  /// The entitlement tier behind this plan (TierEntitlements lookups).
+  MembershipTier get membershipTier => _membershipTier;
 
   MembershipTier get _membershipTier {
     switch (this) {

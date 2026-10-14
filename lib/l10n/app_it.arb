@@ -7649,5 +7649,10 @@
   "guestBookingSwitchTitle": "Gli ospiti possono prenotare",
   "guestBookingSwitchHint": "Le persone senza account GreenGo possono prenotare dal link condiviso con nome ed email. Contano nella capienza.",
   "guestBookingPublicOnly": "Disponibile solo per eventi pubblici.",
-  "guestLabel": "Ospite"
+  "guestLabel": "Ospite",
+  "shopTicketFeeRow": "Commissione di servizio sul biglietto (pagata da chi acquista)",
+  "shopTicketFeeValue": "US${fixed} + {percent}% (max US${cap})",
+  "shopTicketFeeShort": "US${fixed} + {percent}%",
+  "shopBusinessSellTickets": "Account business: vendi biglietti e prenotazioni",
+  "featureExperiences": "{count} esperienze attive contemporaneamente"
 }

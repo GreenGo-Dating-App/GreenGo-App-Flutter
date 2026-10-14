@@ -17,7 +17,7 @@
  *    profiles.hostRatingCount) may have at most ONE published paid listing.
  *  - Fixed cancellation policies (flexible | moderate | strict) + notes.
  *  - Paid listings (or ones carrying a payment link) only for an ACTIVE
- *    business account (isBusiness + effective Platinum): `business_required`.
+ *    business account (isBusiness + effective Silver+): `business_required`.
  *
  * Mirrored by firestore.rules (user_experiences update) for direct client
  * writes; transitions the rules cannot check (the new-host count) go through
