@@ -352,6 +352,9 @@ describe('plan drops hide listings over the new allowance; upgrades restore them
     expect((await reconcileListings(GOLDY)).eventsHidden).toBe(0);
 
     await setTier({ membershipTier: 'SILVER' });
+    // Dry run (backfill script): counts, writes nothing.
+    expect(await reconcileListings(GOLDY, { dryRun: true })).toMatchObject({ eventsHidden: 2, experiencesHidden: 2 });
+    expect((await visibleEvents()).length).toBe(7);
     let r = await reconcileListings(GOLDY);
     expect(r).toMatchObject({ eventsHidden: 2, experiencesHidden: 2 });
     expect(await visibleEvents()).toEqual(['g2', 'g3', 'g4', 'g5', 'g6']);

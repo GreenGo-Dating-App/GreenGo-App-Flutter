@@ -96,7 +96,7 @@ async function loadEvents(uid: string, nowMs: number): Promise<Map<string, Doc>>
 
 export interface ReconcileResult { eventsHidden: number; eventsRestored: number; experiencesHidden: number; experiencesRestored: number }
 
-async function reconcileEvents(uid: string, limit: number | null, allowRestore: boolean, nowMs: number, queue: WriteQueue, r: ReconcileResult) {
+async function reconcileEvents(uid: string, limit: number | null, allowRestore: boolean, nowMs: number, queue: WriteQueue | null, r: ReconcileResult) {
   const docs = [...(await loadEvents(uid, nowMs)).values()];
   const { units, groups } = eventUnits<Doc>(docs, nowMs);
   const plan = planListingReconcile(units, limit, { allowRestore });
@@ -107,7 +107,7 @@ async function reconcileEvents(uid: string, limit: number | null, allowRestore: 
       for (const doc of g.visible) {
         const p = eventHidePatch(doc.data);
         if (!p) continue;
-        await queue.update(doc.ref, { ...p, hiddenByDowngradeAt: FV.serverTimestamp() });
+        await write(queue, doc.ref, { ...p, hiddenByDowngradeAt: FV.serverTimestamp() });
         r.eventsHidden++;
       }
     }
@@ -118,7 +118,7 @@ async function reconcileEvents(uid: string, limit: number | null, allowRestore: 
       for (const doc of g.hidden) {
         const status = eventRestoreStatus(doc.data);
         if (!status) continue;
-        await queue.update(doc.ref, {
+        await write(queue, doc.ref, {
           status,
           hiddenByDowngrade: FV.delete(),
           preDowngradeStatus: FV.delete(),
@@ -130,7 +130,7 @@ async function reconcileEvents(uid: string, limit: number | null, allowRestore: 
   }
 }
 
-async function reconcileExperiences(uid: string, limit: number | null, allowRestore: boolean, queue: WriteQueue, r: ReconcileResult) {
+async function reconcileExperiences(uid: string, limit: number | null, allowRestore: boolean, queue: WriteQueue | null, r: ReconcileResult) {
   const docs = new Map<string, Doc>();
   await pagedByDocId(db.collection('user_experiences').where('hostId', '==', uid), EXPERIENCE_FIELDS, docs);
   const units: ListingUnit[] = [];
@@ -147,18 +147,23 @@ async function reconcileExperiences(uid: string, limit: number | null, allowRest
     const doc = docs.get(id)!;
     const p = experienceHidePatch(doc.data);
     if (!p) continue;
-    await queue.update(doc.ref, { ...p, hiddenByDowngradeAt: FV.serverTimestamp() });
+    await write(queue, doc.ref, { ...p, hiddenByDowngradeAt: FV.serverTimestamp() });
     r.experiencesHidden++;
   }
   for (const id of plan.restore) {
     const doc = docs.get(id)!;
     const how = experienceRestore(doc.data);
     if (!how) continue;
-    await queue.update(doc.ref, how.kind === 'status'
+    await write(queue, doc.ref, how.kind === 'status'
       ? { status: how.status, moderation: FV.delete(), hiddenByDowngrade: FV.delete(), hiddenByDowngradeAt: FV.delete() }
       : { hiddenByDowngrade: FV.delete(), hiddenByDowngradeAt: FV.delete() });
     r.experiencesRestored++;
   }
+}
+
+/** Dry-run aware write (the backfill script plans without writing). */
+async function write(queue: WriteQueue | null, ref: FirebaseFirestore.DocumentReference, data: Record<string, any>) {
+  if (queue) await queue.update(ref, data);
 }
 
 const sameAllowance = (a: ListingAllowance, b: ListingAllowance) => a.events === b.events && a.experiences === b.experiences;
@@ -169,7 +174,7 @@ const sameAllowance = (a: ListingAllowance, b: ListingAllowance) => a.events ===
  * banned / suspended (hostBan.ts owns those listings then). If the profile
  * changed allowance while this ran, it runs once more.
  */
-export async function reconcileListings(uid: string): Promise<ReconcileResult> {
+export async function reconcileListings(uid: string, opts: { dryRun?: boolean } = {}): Promise<ReconcileResult> {
   const r: ReconcileResult = { eventsHidden: 0, eventsRestored: 0, experiencesHidden: 0, experiencesRestored: 0 };
   if (!uid || uid.includes('/')) return r;
   const profileRef = db.collection('profiles').doc(uid);
@@ -179,10 +184,12 @@ export async function reconcileListings(uid: string): Promise<ReconcileResult> {
     const now = new Date();
     const allowance = listingAllowance(profile, now);
     const allowRestore = !isBannedState(profile);
-    const queue = new WriteQueue(db);
+    // Dry run (backfill script): plan and count, write nothing.
+    const queue = opts.dryRun ? null : new WriteQueue(db);
     await reconcileEvents(uid, allowance.events, allowRestore, now.getTime(), queue, r);
     await reconcileExperiences(uid, allowance.experiences, allowRestore, queue, r);
-    await queue.flush();
+    if (queue) await queue.flush();
+    if (!queue) break;
     const again = (await profileRef.get()).data();
     if (!again || sameAllowance(listingAllowance(again, new Date()), allowance)) break;
   }
