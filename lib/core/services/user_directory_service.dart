@@ -8,6 +8,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 
 import '../../features/profile/data/models/profile_model.dart';
 import '../../features/profile/domain/entities/profile.dart';
+import '../utils/guest_identity.dart';
 
 /// Lightweight public profile summary used to render names/avatars for user ids
 /// (group members, message senders) without storing duplicated name data.
@@ -243,7 +244,8 @@ class UserDirectoryService extends ChangeNotifier {
   /// (deleted, or a network failure) get an inactive, nameless brief — never
   /// their uid.
   Future<Map<String, UserBrief>> resolve(Iterable<String> uids) async {
-    final unique = uids.where((u) => u.isNotEmpty).toSet();
+    // Shared-link guests have no profile: never read one for them.
+    final unique = uids.where((u) => u.isNotEmpty && !isGuestUserId(u)).toSet();
     await _ensureLoaded();
     final missing = unique.where((u) => !_cache.containsKey(u)).toList();
     if (missing.isNotEmpty) await _fetch(missing);
@@ -258,7 +260,7 @@ class UserDirectoryService extends ChangeNotifier {
   /// chat). Same cache-first + batched path as [resolve]; the result map holds
   /// null for users confirmed deleted and OMITS users that failed to load.
   Future<Map<String, Profile?>> resolveProfiles(Iterable<String> uids) async {
-    final unique = uids.where((u) => u.isNotEmpty).toSet();
+    final unique = uids.where((u) => u.isNotEmpty && !isGuestUserId(u)).toSet();
     await _ensureLoaded();
     final missing = unique.where((u) => !isProfileResolved(u)).toList();
     if (missing.isNotEmpty) await _fetch(missing, wantProfiles: true);

@@ -27,6 +27,7 @@ import { emitNotification, resolveActor, Actor } from '../notifications/notifyHe
 import { LText, lt, rawText } from '../shared/i18n';
 import { recordMeeting } from '../checkin/meetings';
 import { requestOrderRefund } from '../ticket_payments/orders';
+import { guestRecordFields } from '../shared/guestIdentity';
 import { SLOT_COUNTERS, counterId as slotCounterId, generateSlots, rulesError, AvailabilityRules } from './availability';
 import {
   ACTIVE_STATUSES,
@@ -491,7 +492,15 @@ export async function getSlotAvailability(uid: string, data: any): Promise<Recor
   };
 }
 
-export async function createBooking(uid: string, data: any): Promise<Record<string, unknown>> {
+/**
+ * [asGuest] (guest/ shared-link requests only, never from a client): [uid] is
+ * the guest key (shared/guestIdentity.ts). No profile / membership / ID
+ * document (the host opted in with guestsAllowed and still accepts or
+ * declines the request), online payment (Stripe / Mercado Pago) or free only.
+ */
+export async function createBooking(
+  uid: string, data: any, asGuest?: { firstName: string; lastName: string },
+): Promise<Record<string, unknown>> {
   const { experienceId, guests, requestId } = data || {};
   const requestedStart = requestedStartOf(data?.startAt);
   // Recurring availability (availability.ts): slotId 'recurring' + startAt.
@@ -573,12 +582,14 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
     const host = hostP.data() ?? null;
     if (!hostP.exists || isBannedProfile(host)) fail('failed-precondition', 'host_unavailable');
     if (susp.exists && susp.data()?.active !== false) fail('failed-precondition', 'host_unavailable');
-    const guest = guestP.data() ?? null;
-    if (!guestP.exists || isBannedProfile(guest)) fail('permission-denied', 'account_restricted');
-    // Owner rule: booking an experience (any payment mode, free included)
-    // needs Base or an active paid tier (shared/participation.ts).
-    assertCanParticipate(guest, new Date(now));
-    if (idDocumentStateOf(guest) === 'none') fail('failed-precondition', 'id_document_required');
+    if (!asGuest) {
+      const guest = guestP.data() ?? null;
+      if (!guestP.exists || isBannedProfile(guest)) fail('permission-denied', 'account_restricted');
+      // Owner rule: booking an experience (any payment mode, free included)
+      // needs Base or an active paid tier (shared/participation.ts).
+      assertCanParticipate(guest, new Date(now));
+      if (idDocumentStateOf(guest) === 'none') fail('failed-precondition', 'id_document_required');
+    }
 
     const sizeErr = groupSizeError(e, guests);
     if (sizeErr) fail('invalid-argument', sizeErr, { min: e.minGroupSize ?? 1, max: e.maxGroupSize ?? null });
@@ -595,7 +606,7 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
           !(await registrationIdApprovedByAdmin(fdb(), hostP.id, host))) {
         fail('failed-precondition', 'host_not_verified');
       }
-      const choice = choosePaymentMethod(e, data?.paymentMethod);
+      const choice = choosePaymentMethod(e, asGuest ? 'online' : data?.paymentMethod);
       if (choice.ok === false) {
         fail(choice.reason === 'no_payment_method' ? 'failed-precondition' : 'invalid-argument', choice.reason, {
           accepted: acceptedPaymentMethods(e),
@@ -605,6 +616,8 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
       // no new cash / payment-link booking is created (owner rule 2026-10-14).
       mode = (choice as { ok: true; method: PaymentMode }).method;
       if (mode === 'online') provider = onlineProviderOf(e);
+      // Guests pay by instant checkout only (never link / cash).
+      if (asGuest && (mode !== 'online' || provider === 'link' || !provider)) fail('failed-precondition', 'guest_instant_only');
     }
 
     let s = slot.data() as Record<string, any> | undefined;
@@ -699,6 +712,7 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
       requestId,
       createdAt: ts(now),
       updatedAt: ts(now),
+      ...(asGuest ? guestRecordFields(asGuest) : {}),
       ...(requested
         ? { requestExpiresAt: ts(requestExpiresAtMs(now, start, cfg)) }
         : {
@@ -723,7 +737,7 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
 
   const b = result.booking;
   if (result.created) {
-    const actor = await safeActor(uid);
+    const actor = asGuest ? undefined : await safeActor(uid);
     const d = notifData(bookingId, b);
     if (b.status === 'requested') {
       await safeNotify({ recipientId: hostId, type: 'booking_request', title: lt('srvBookingRequested'), body: titleText(b), data: d, actor });

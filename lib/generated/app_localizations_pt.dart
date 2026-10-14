@@ -24947,6 +24947,20 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get listingHiddenByPlanBody =>
       'Oculto porque o teu plano mudou e permite menos anúncios ativos. Faz upgrade para o restaurar.';
+
+  @override
+  String get guestBookingSwitchTitle => 'Convidados podem reservar';
+
+  @override
+  String get guestBookingSwitchHint =>
+      'Pessoas sem conta GreenGo podem reservar a partir do link partilhado com o nome e o e-mail. Contam para a tua lotação.';
+
+  @override
+  String get guestBookingPublicOnly =>
+      'Disponível apenas para eventos públicos.';
+
+  @override
+  String get guestLabel => 'Convidado';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -49902,4 +49916,18 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get listingHiddenByPlanBody =>
       'Oculto porque seu plano mudou e permite menos anúncios ativos. Faça upgrade para restaurá-lo.';
+
+  @override
+  String get guestBookingSwitchTitle => 'Convidados podem reservar';
+
+  @override
+  String get guestBookingSwitchHint =>
+      'Pessoas sem conta no GreenGo podem reservar pelo link compartilhado com nome e e-mail. Elas contam na sua capacidade.';
+
+  @override
+  String get guestBookingPublicOnly =>
+      'Disponível apenas para eventos públicos.';
+
+  @override
+  String get guestLabel => 'Convidado';
 }

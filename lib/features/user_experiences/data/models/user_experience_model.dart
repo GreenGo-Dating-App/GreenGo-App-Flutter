@@ -109,6 +109,7 @@ class UserExperienceModel {
           : ((d['maxTicketsPerUser'] as num?)?.toInt() == 0
               ? null
               : (d['maxTicketsPerUser'] as num?)?.toInt()),
+      guestBookingAllowed: d['guestsAllowed'] == true,
       availability: _optStr(d['availability']),
       cancellationPolicy: policy ?? CancellationPolicy.fallback,
       cancellationNotes: notes,
@@ -186,6 +187,8 @@ class UserExperienceModel {
       'weekendPrice': e.isFree ? null : e.weekendPrice,
       'weekendDays': e.weekendDays,
       'maxTicketsPerUser': e.maxTicketsPerUser,
+      // Shared-link guest booking opt-in (functions/src/guest).
+      'guestsAllowed': e.guestBookingAllowed,
       'paymentLink': e.isFree ||
               e.paymentLink == null ||
               !e.paymentMethods.contains(PaymentMethod.link)

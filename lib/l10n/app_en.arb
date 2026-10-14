@@ -13785,5 +13785,21 @@
   "listingHiddenByPlanBody": "Hidden because your plan changed and it allows fewer active listings. Upgrade to restore it.",
   "@listingHiddenByPlanBody": {
     "description": "Shown to the host of an event / experience the server hid after their membership dropped (owner rule 2026-10-14)."
+  },
+  "guestBookingSwitchTitle": "Guests allowed to book",
+  "@guestBookingSwitchTitle": {
+    "description": "Event / experience editor switch: lets people without an account book from the shared link (guest booking)."
+  },
+  "guestBookingSwitchHint": "People without a GreenGo account can book from the shared link with their name and email. They count toward your capacity.",
+  "@guestBookingSwitchHint": {
+    "description": "Explains the guest booking switch to the host."
+  },
+  "guestBookingPublicOnly": "Available for public events only.",
+  "@guestBookingPublicOnly": {
+    "description": "Shown under the guest booking switch when the event is private (switch disabled)."
+  },
+  "guestLabel": "Guest",
+  "@guestLabel": {
+    "description": "Small label next to the name of someone who booked as a guest (no GreenGo account)."
   }
 }

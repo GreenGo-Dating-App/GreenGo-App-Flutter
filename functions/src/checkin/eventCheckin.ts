@@ -131,8 +131,8 @@ export function msOf(v: unknown): number | null {
 
 let cachedSecret: string | null = null;
 
-/** HMAC key, created on first use in server_secrets/event_checkin (default-deny). */
-async function ticketSecret(): Promise<string> {
+/** HMAC key, created on first use in server_secrets/event_checkin (default-deny). Also signs guest RSVP tickets (guest/). */
+export async function ticketSecret(): Promise<string> {
   if (cachedSecret) return cachedSecret;
   const db = admin.firestore();
   const ref = db.collection('server_secrets').doc('event_checkin');
@@ -322,6 +322,8 @@ export async function admitEventAttendee(
     userName: res.a.userName ?? '',
     userPhotoUrl: res.a.userPhotoUrl ?? null,
     guestCount: Number(res.a.guestCount ?? 0),
+    // Shared-link guest (no account): the door shows the guest avatar.
+    isGuest: res.a.isGuest === true,
     alreadyCheckedIn: res.already,
     verified,
   };

@@ -7645,5 +7645,9 @@
   "uexpErrPaymentLinkNotAccepted": "Zahlungslinks und Barzahlung werden nicht mehr akzeptiert. Verbinde Stripe oder Mercado Pago oder veröffentliche das Erlebnis kostenlos.",
   "uexpPaymentLinkNotAcceptedTitle": "Zahlungsanbieter verbinden",
   "listingHiddenByPlanBadge": "Ausgeblendet: Tarif geändert",
-  "listingHiddenByPlanBody": "Ausgeblendet, weil dein Tarif geändert wurde und weniger aktive Angebote erlaubt. Mach ein Upgrade, um es wiederherzustellen."
+  "listingHiddenByPlanBody": "Ausgeblendet, weil dein Tarif geändert wurde und weniger aktive Angebote erlaubt. Mach ein Upgrade, um es wiederherzustellen.",
+  "guestBookingSwitchTitle": "Gäste dürfen buchen",
+  "guestBookingSwitchHint": "Personen ohne GreenGo-Konto können über den geteilten Link mit Name und E-Mail buchen. Sie zählen zu deiner Kapazität.",
+  "guestBookingPublicOnly": "Nur für öffentliche Events verfügbar.",
+  "guestLabel": "Gast"
 }

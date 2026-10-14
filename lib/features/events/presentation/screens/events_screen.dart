@@ -3633,6 +3633,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   EventVisibility _visibility = EventVisibility.public;
   AttendeeListVisibility _attendeeListVisibility =
       AttendeeListVisibility.participants;
+  // Shared-link guest booking (no account; functions/src/guest). Public
+  // events only, default off.
+  bool _guestsAllowed = false;
   bool _isUnlimited = false;
   // Only an ACTIVE business account may sell paid tickets (server-enforced
   // too). Null while loading. Access is the CREATOR's (a co-owner edits the
@@ -3942,6 +3945,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     _maxPerUserController.text = e.maxTicketsPerUser?.toString() ?? '';
     _visibility = e.visibility;
     _attendeeListVisibility = e.attendeeListVisibility;
+    _guestsAllowed = e.guestBookingAllowed && e.isPublic;
     _isUnlimited = e.isUnlimited;
     _guestsAllowedPerAttendee = e.guestsAllowedPerAttendee;
     if (!e.isUnlimited) _maxAttendeesController.text = e.maxAttendees.toString();
@@ -4448,8 +4452,34 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               ),
               value: _visibility == EventVisibility.private,
               activeThumbColor: AppColors.richGold,
-              onChanged: (v) => setState(() => _visibility =
-                  v ? EventVisibility.private : EventVisibility.public),
+              onChanged: (v) => setState(() {
+                _visibility =
+                    v ? EventVisibility.private : EventVisibility.public;
+                // Guest booking is for public events only.
+                if (v) _guestsAllowed = false;
+              }),
+            ),
+            // People without an account may book from the shared link.
+            SwitchListTile(
+              key: const ValueKey('event-guests-allowed'),
+              contentPadding: EdgeInsets.zero,
+              title: Text(
+                AppLocalizations.of(context)!.guestBookingSwitchTitle,
+                style: const TextStyle(color: AppColors.textPrimary),
+              ),
+              subtitle: Text(
+                _visibility == EventVisibility.private
+                    ? AppLocalizations.of(context)!.guestBookingPublicOnly
+                    : AppLocalizations.of(context)!.guestBookingSwitchHint,
+                style: const TextStyle(
+                    color: AppColors.textTertiary, fontSize: 12, height: 1.3),
+              ),
+              value: _guestsAllowed &&
+                  _visibility == EventVisibility.public,
+              activeThumbColor: AppColors.richGold,
+              onChanged: _visibility == EventVisibility.private
+                  ? null
+                  : (v) => setState(() => _guestsAllowed = v),
             ),
             const SizedBox(height: 8),
             // Who may see WHO IS COMING - a separate decision from who may see
@@ -5364,6 +5394,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         clearMaxTicketsPerUser: maxPerUser == null || maxPerUser == 0,
         visibility: _visibility,
         attendeeListVisibility: _attendeeListVisibility,
+        guestBookingAllowed:
+            _guestsAllowed && _visibility == EventVisibility.public,
         externalLinks: _externalLinks,
         languagePairs: languagePairs,
         guestsAllowedPerAttendee: _guestsAllowedPerAttendee,
@@ -5412,6 +5444,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       maxTicketsPerUser: maxPerUser == 0 ? null : maxPerUser,
       visibility: _visibility,
       attendeeListVisibility: _attendeeListVisibility,
+      guestBookingAllowed: _guestsAllowed && _visibility == EventVisibility.public,
       externalLinks: _externalLinks,
       status: status,
       publishAt: status == EventStatus.scheduled ? publishAt : null,

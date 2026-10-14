@@ -9,6 +9,7 @@ import { brandPush } from './brand';
 import { shouldNotify, categoryForType } from './prefs';
 import { LText, notifTextFields, render, t, AppLocale } from '../shared/i18n';
 import { resolveLocale } from '../shared/i18n/recipientLocale';
+import { isGuestKey } from '../shared/guestIdentity';
 
 const db = admin.firestore();
 
@@ -87,6 +88,8 @@ export async function emitNotification(params: {
 }): Promise<void> {
   const { recipientId, type, title, body, actor, allowSelf } = params;
   if (!recipientId) return;
+  // Guests (shared-link bookings, no account) are reached by e-mail only.
+  if (isGuestKey(recipientId)) return;
   if (actor && recipientId === actor.id && !allowSelf) return;
 
   // When there's an actor, always carry their identity in the push DATA payload

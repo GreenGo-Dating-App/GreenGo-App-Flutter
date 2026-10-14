@@ -238,7 +238,7 @@ class _SessionCheckInChecklistScreenState
   Widget _row(AppLocalizations l, Booking b) {
     final canTick = !b.isCheckedIn && b.status == BookingStatus.confirmed;
     final who = widget.guestBuilder?.call(context, b.guestId) ??
-        BookingPartyRow(uid: b.guestId, radius: 18);
+        BookingPartyRow(uid: b.guestId, radius: 18, guestName: b.guestName);
     return InkWell(
       key: ValueKey('row-${b.id}'),
       borderRadius: BorderRadius.circular(14),

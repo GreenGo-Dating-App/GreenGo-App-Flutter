@@ -42404,6 +42404,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Hidden because your plan changed and it allows fewer active listings. Upgrade to restore it.'**
   String get listingHiddenByPlanBody;
+
+  /// Event / experience editor switch: lets people without an account book from the shared link (guest booking).
+  ///
+  /// In en, this message translates to:
+  /// **'Guests allowed to book'**
+  String get guestBookingSwitchTitle;
+
+  /// Explains the guest booking switch to the host.
+  ///
+  /// In en, this message translates to:
+  /// **'People without a GreenGo account can book from the shared link with their name and email. They count toward your capacity.'**
+  String get guestBookingSwitchHint;
+
+  /// Shown under the guest booking switch when the event is private (switch disabled).
+  ///
+  /// In en, this message translates to:
+  /// **'Available for public events only.'**
+  String get guestBookingPublicOnly;
+
+  /// Small label next to the name of someone who booked as a guest (no GreenGo account).
+  ///
+  /// In en, this message translates to:
+  /// **'Guest'**
+  String get guestLabel;
 }
 
 class _AppLocalizationsDelegate

@@ -7645,5 +7645,9 @@
   "uexpErrPaymentLinkNotAccepted": "As ligações de pagamento e o dinheiro já não são aceites. Ligue o Stripe ou o Mercado Pago, ou publique a experiência como gratuita.",
   "uexpPaymentLinkNotAcceptedTitle": "Ligue um fornecedor de pagamentos",
   "listingHiddenByPlanBadge": "Oculto: plano alterado",
-  "listingHiddenByPlanBody": "Oculto porque o teu plano mudou e permite menos anúncios ativos. Faz upgrade para o restaurar."
+  "listingHiddenByPlanBody": "Oculto porque o teu plano mudou e permite menos anúncios ativos. Faz upgrade para o restaurar.",
+  "guestBookingSwitchTitle": "Convidados podem reservar",
+  "guestBookingSwitchHint": "Pessoas sem conta GreenGo podem reservar a partir do link partilhado com o nome e o e-mail. Contam para a tua lotação.",
+  "guestBookingPublicOnly": "Disponível apenas para eventos públicos.",
+  "guestLabel": "Convidado"
 }

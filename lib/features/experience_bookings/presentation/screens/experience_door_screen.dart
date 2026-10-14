@@ -11,6 +11,7 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/qr_checkin_service.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/widgets/glass_container.dart';
+import '../../../../core/widgets/guest_avatar.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
 import '../../../events/presentation/widgets/scan_result_overlay.dart';
@@ -292,7 +293,9 @@ class _ExperienceAttendanceScreenState
               b.status == BookingStatus.completed ||
               b.status == BookingStatus.noShow)
           .toList();
-      await _loadNames(list.map((b) => b.guestId).toSet());
+      // Shared-link guests carry their name on the booking (no profile).
+      await _loadNames(
+          list.where((b) => !b.bookedByGuest).map((b) => b.guestId).toSet());
       if (mounted) setState(() => _bookings = list);
     } catch (_) {
       if (mounted) setState(() => _failed = true);
@@ -412,12 +415,17 @@ class _ExperienceAttendanceScreenState
                       ? AppColors.successGreen
                       : AppColors.textTertiary,
                 ),
-                title: Text(
-                  (_names[b.guestId] ?? '').isNotEmpty
-                      ? _names[b.guestId]!
-                      : b.guestId,
-                  style: const TextStyle(color: AppColors.textPrimary),
-                ),
+                title: b.bookedByGuest
+                    ? Align(
+                        alignment: AlignmentDirectional.centerStart,
+                        child: GuestNameAvatar(name: b.guestName, radius: 12),
+                      )
+                    : Text(
+                        (_names[b.guestId] ?? '').isNotEmpty
+                            ? _names[b.guestId]!
+                            : b.guestId,
+                        style: const TextStyle(color: AppColors.textPrimary),
+                      ),
                 subtitle: Text(
                   b.isCheckedIn
                       ? '${l.eventCheckedIn} • ${DateFormat.Hm().format(b.checkedInAt!.toLocal())}'

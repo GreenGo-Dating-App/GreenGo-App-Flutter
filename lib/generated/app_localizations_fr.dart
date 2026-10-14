@@ -25115,4 +25115,18 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get listingHiddenByPlanBody =>
       'Masqué car ta formule a changé et autorise moins d’annonces actives. Passe à une formule supérieure pour le rétablir.';
+
+  @override
+  String get guestBookingSwitchTitle => 'Les invités peuvent réserver';
+
+  @override
+  String get guestBookingSwitchHint =>
+      'Les personnes sans compte GreenGo peuvent réserver depuis le lien partagé avec leur nom et leur e-mail. Elles comptent dans votre capacité.';
+
+  @override
+  String get guestBookingPublicOnly =>
+      'Disponible uniquement pour les événements publics.';
+
+  @override
+  String get guestLabel => 'Invité';
 }

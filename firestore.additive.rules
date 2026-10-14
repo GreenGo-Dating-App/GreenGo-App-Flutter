@@ -2307,6 +2307,14 @@ service cloud.firestore {
               || (d.ticketProvider == 'link' && resource != null
                   && resource.data.get('ticketProvider', null) == 'link'));
       }
+      // Shared-link guest booking (functions/src/guest): the host's opt-in
+      // `guestsAllowed` (default off) is a bool and only ever true on a
+      // PUBLIC event (absent visibility = public, as in the app).
+      function guestBookingOk(d) {
+        return d.get('guestsAllowed', false) == false
+          || (d.get('guestsAllowed', false) == true
+              && d.get('visibility', 'public') == 'public');
+      }
       // Paid events only by an ACTIVE business account (the creator). An
       // event that is ALREADY paid (e.g. created before this rule) stays
       // editable; only the transition into "paid" needs business.
@@ -2354,6 +2362,7 @@ service cloud.firestore {
               .hasAny(['hiddenByDowngrade', 'preDowngradeStatus', 'hiddenByDowngradeAt'])
         && validCoOrganizers(request.resource.data)
         && validTicketing(request.resource.data)
+        && guestBookingOk(request.resource.data)
         && (!isPaidEventData(request.resource.data)
             || sellerBusinessActive(request.auth.uid))
         // Audit P-H4 / M1: an end date (what makes an event "ongoing") and
@@ -2377,6 +2386,7 @@ service cloud.firestore {
                         && eventTextOk()
                         && downgradeFieldsUnchanged()
                         && validTicketing(request.resource.data)
+                        && guestBookingOk(request.resource.data)
                         && paidAllowed(resource.data.organizerId))
         || (isSignedIn()
             && request.resource.data.diff(resource.data).affectedKeys()
@@ -2388,6 +2398,7 @@ service cloud.firestore {
       allow update: if isCoOrganizer()
         && eventTextOk()
         && downgradeFieldsUnchanged()
+        && guestBookingOk(request.resource.data)
         && !request.resource.data.diff(resource.data).affectedKeys()
               .hasAny(['organizerId', 'organizerName', 'organizerPhotoUrl',
                        'coOrganizerIds'])
@@ -2480,6 +2491,8 @@ service cloud.firestore {
           && !('ticketId' in request.resource.data)
           && !('ticketStatus' in request.resource.data)
           && !('paidAt' in request.resource.data)
+          // Guest attendees (no account) are created by the server only.
+          && request.resource.data.get('isGuest', false) == false
           && participationAllowed();
           // TIGHTEN LATER: && !selfAdmitsOnPaid()
         allow update: if isSignedIn()
@@ -2949,7 +2962,9 @@ service cloud.firestore {
           && (d.get('weekendDays', null) == null
               || (d.weekendDays is list && d.weekendDays.size() <= 7))
           // Bookings: the host approves each request (snapshotted per booking).
-          && (d.get('requestToBook', false) is bool);
+          && (d.get('requestToBook', false) is bool)
+          // Shared-link guest booking opt-in (functions/src/guest).
+          && (d.get('guestsAllowed', false) is bool);
       }
 
       allow get, list: if isSignedIn()

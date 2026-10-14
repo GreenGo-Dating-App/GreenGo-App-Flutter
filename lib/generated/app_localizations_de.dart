@@ -25032,4 +25032,17 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get listingHiddenByPlanBody =>
       'Ausgeblendet, weil dein Tarif geändert wurde und weniger aktive Angebote erlaubt. Mach ein Upgrade, um es wiederherzustellen.';
+
+  @override
+  String get guestBookingSwitchTitle => 'Gäste dürfen buchen';
+
+  @override
+  String get guestBookingSwitchHint =>
+      'Personen ohne GreenGo-Konto können über den geteilten Link mit Name und E-Mail buchen. Sie zählen zu deiner Kapazität.';
+
+  @override
+  String get guestBookingPublicOnly => 'Nur für öffentliche Events verfügbar.';
+
+  @override
+  String get guestLabel => 'Gast';
 }

@@ -738,7 +738,11 @@ class _DetailViewState extends State<_DetailView> {
           uid: other,
           radius: 18,
           showGuestRating: asHost,
-          onTap: () => openExperienceUserProfile(context, other, _uid),
+          guestName: b.guestName,
+          // A shared-link guest has no profile to open.
+          onTap: b.bookedByGuest && other == b.guestId
+              ? null
+              : () => openExperienceUserProfile(context, other, _uid),
         ),
       ],
     );

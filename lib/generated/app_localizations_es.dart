@@ -24971,4 +24971,17 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get listingHiddenByPlanBody =>
       'Oculto porque tu plan cambió y permite menos publicaciones activas. Mejora tu plan para restaurarlo.';
+
+  @override
+  String get guestBookingSwitchTitle => 'Los invitados pueden reservar';
+
+  @override
+  String get guestBookingSwitchHint =>
+      'Las personas sin cuenta de GreenGo pueden reservar desde el enlace compartido con su nombre y correo. Cuentan para tu aforo.';
+
+  @override
+  String get guestBookingPublicOnly => 'Solo disponible para eventos públicos.';
+
+  @override
+  String get guestLabel => 'Invitado';
 }

@@ -14,6 +14,7 @@
 import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
 import { maskEmail } from '../shared/resendEmail';
+import { guestContactOf, isGuestKey } from '../shared/guestIdentity';
 
 export interface EmailAttachment {
   filename: string;
@@ -170,6 +171,11 @@ export async function sendEmailOnce(
 
 /** Account email of [uid] (Firebase Auth), or null. */
 export async function authEmailOf(uid: string): Promise<string | null> {
+  // Guest (shared-link booking, no account): the address they booked with.
+  if (isGuestKey(uid)) {
+    const c = await guestContactOf(emailDeps.db(), uid);
+    return c && isEmail(c.email) ? c.email.trim() : null;
+  }
   try {
     const u = await admin.auth().getUser(uid);
     return isEmail(u.email) ? u.email!.trim() : null;
@@ -181,7 +187,11 @@ export async function authEmailOf(uid: string): Promise<string | null> {
 /** uid -> account email, batched 100 per Auth call (scales to big lists). */
 export async function authEmailsOf(uids: string[]): Promise<Map<string, string>> {
   const out = new Map<string, string>();
-  const unique = [...new Set(uids.filter(Boolean))];
+  const unique = [...new Set(uids.filter((u) => u && !isGuestKey(u)))];
+  for (const g of new Set(uids.filter(isGuestKey))) {
+    const c = await guestContactOf(emailDeps.db(), g);
+    if (c && isEmail(c.email)) out.set(g, c.email.trim());
+  }
   for (let i = 0; i < unique.length; i += 100) {
     try {
       const res = await admin.auth().getUsers(unique.slice(i, i + 100).map((uid) => ({ uid })));

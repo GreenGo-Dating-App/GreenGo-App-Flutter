@@ -3,6 +3,7 @@ import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/user_directory_service.dart';
+import '../../../../core/widgets/guest_avatar.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
@@ -100,6 +101,7 @@ class BookingPartyRow extends StatelessWidget {
     this.showGuestRating = false,
     this.onTap,
     this.radius = 16,
+    this.guestName,
   });
 
   final String uid;
@@ -107,8 +109,13 @@ class BookingPartyRow extends StatelessWidget {
   final VoidCallback? onTap;
   final double radius;
 
+  /// "First Last" of a shared-link guest ([Booking.guestName]).
+  final String? guestName;
+
   @override
   Widget build(BuildContext context) {
+    // Shared-link guest: no profile, rating, badge or tap target.
+    if (isGuestUserId(uid)) return GuestNameAvatar(name: guestName, radius: radius);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
@@ -214,6 +221,7 @@ class BookingTile extends StatelessWidget {
                 uid: b.counterpartOf(currentUserId),
                 showGuestRating: asHost,
                 radius: 13,
+                guestName: b.guestName,
               ),
             ],
           ),

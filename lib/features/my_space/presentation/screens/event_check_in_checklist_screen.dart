@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/user_display_name.dart';
 import '../../../../core/utils/user_error.dart';
+import '../../../../core/widgets/guest_avatar.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../../events/presentation/screens/event_scanner_screen.dart';
@@ -334,6 +335,10 @@ class _EventCheckInChecklistScreenState
       onToggle: () => _toggle(a),
       detail: a.guestCount > 0 ? l.eventGuestsBringing(a.guestCount) : null,
       who: Row(children: [
+        // Shared-link guest (no account): the generic guest avatar.
+        if (a.isGuest)
+          const GuestAvatar(radius: 18)
+        else
         CircleAvatar(
           radius: 18,
           backgroundColor: AppColors.backgroundInput,
@@ -360,6 +365,7 @@ class _EventCheckInChecklistScreenState
                   fontSize: 15,
                   fontWeight: FontWeight.w600)),
         ),
+        if (a.isGuest) ...[const SizedBox(width: 6), const GuestLabel()],
       ]),
     );
   }

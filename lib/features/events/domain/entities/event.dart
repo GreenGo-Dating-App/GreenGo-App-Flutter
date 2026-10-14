@@ -164,6 +164,7 @@ class Event extends Equatable {
     this.ticketPaymentInstructions,
     this.currencyCode,
     this.maxTicketsPerUser = 4,
+    this.guestBookingAllowed = false,
   });
   final String id;
   final String organizerId;
@@ -276,6 +277,11 @@ class Event extends Equatable {
 
   /// Max paid tickets one person may buy (null = no limit; default 4).
   final int? maxTicketsPerUser;
+
+  /// Host opt-in: people WITHOUT a GreenGo account may book from the shared
+  /// link (name + e-mail, server-rendered guest page; functions/src/guest).
+  /// Public events only (enforced in firestore.rules). Default off.
+  final bool guestBookingAllowed;
 
   /// Paid event that can actually be bought (a ticket provider is set).
   bool get sellsTickets => !isFree && ticketProvider != null;
@@ -432,6 +438,7 @@ class Event extends Equatable {
         ticketPaymentInstructions,
         currencyCode,
         maxTicketsPerUser,
+        guestBookingAllowed,
       ];
 
   Event copyWith({
@@ -490,6 +497,7 @@ class Event extends Equatable {
     String? currencyCode,
     int? maxTicketsPerUser,
     bool clearMaxTicketsPerUser = false,
+    bool? guestBookingAllowed,
     bool clearTicketing = false,
     bool clearCommunityId = false,
     // Drops latitude/longitude/city/country (a manually typed location that
@@ -560,6 +568,7 @@ class Event extends Equatable {
       maxTicketsPerUser: clearMaxTicketsPerUser
           ? null
           : (maxTicketsPerUser ?? this.maxTicketsPerUser),
+      guestBookingAllowed: guestBookingAllowed ?? this.guestBookingAllowed,
     );
   }
 }
@@ -582,6 +591,7 @@ class EventAttendee extends Equatable {
     this.checkedInAt,
     this.guestCount = 0,
     this.tierId,
+    this.isGuest = false,
   });
   final String id;
   final String eventId;
@@ -594,6 +604,11 @@ class EventAttendee extends Equatable {
 
   /// Which ticket tier this attendee joined (null = the implicit single tier).
   final String? tierId;
+
+  /// Booked from the shared link WITHOUT a GreenGo account (server-written,
+  /// functions/src/guest): [userName] is "First Last", [userId] a guest key.
+  /// Rendered with the guest avatar, never as a profile.
+  final bool isGuest;
 
   /// Whether this attendee is queued on the waitlist (tier/event was full).
   bool get isWaitlisted => status == RSVPStatus.waitlist;
@@ -665,6 +680,7 @@ class EventAttendee extends Equatable {
       checkedInAt: checkedInAt ?? this.checkedInAt,
       guestCount: guestCount ?? this.guestCount,
       tierId: tierId ?? this.tierId,
+      isGuest: isGuest,
     );
   }
 
@@ -686,5 +702,6 @@ class EventAttendee extends Equatable {
         checkedInAt,
         guestCount,
         tierId,
+        isGuest,
       ];
 }

@@ -715,6 +715,9 @@ export {
 // Link previews (Open Graph) for shared events + communities, served on
 // /e/**, /c/** and /og/** via Firebase Hosting rewrites.
 export { sharePreview } from './share/sharePreview';
+// Guest booking from a shared link (no account): server-rendered guest pages
+// on /guest/** + guest e-mails when the host cancels an event (guest/).
+export { guestBooking, emailGuestsOnEventCancelled } from './guest';
 
 // Flutter web fallback fonts (Roboto/Noto) served same-origin on /gfonts/**
 // so visitors' browsers never contact fonts.gstatic.com (GDPR).

@@ -7645,5 +7645,9 @@
   "uexpErrPaymentLinkNotAccepted": "I link di pagamento e i contanti non sono più accettati. Collega Stripe o Mercado Pago, oppure pubblica l'esperienza come gratuita.",
   "uexpPaymentLinkNotAcceptedTitle": "Collega un fornitore di pagamento",
   "listingHiddenByPlanBadge": "Nascosto: piano cambiato",
-  "listingHiddenByPlanBody": "Nascosto perché il tuo piano è cambiato e consente meno annunci attivi. Passa a un piano superiore per ripristinarlo."
+  "listingHiddenByPlanBody": "Nascosto perché il tuo piano è cambiato e consente meno annunci attivi. Passa a un piano superiore per ripristinarlo.",
+  "guestBookingSwitchTitle": "Gli ospiti possono prenotare",
+  "guestBookingSwitchHint": "Le persone senza account GreenGo possono prenotare dal link condiviso con nome ed email. Contano nella capienza.",
+  "guestBookingPublicOnly": "Disponibile solo per eventi pubblici.",
+  "guestLabel": "Ospite"
 }
