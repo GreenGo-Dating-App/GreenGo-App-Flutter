@@ -8,6 +8,7 @@ import 'package:get_it/get_it.dart';
 import 'package:provider/provider.dart';
 import 'package:showcaseview/showcaseview.dart';
 
+import '../../../../core/widgets/website_link.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
@@ -764,6 +765,9 @@ class EditProfileScreen extends StatelessWidget {
                     icon: const Icon(Icons.logout),
                     label: Text(AppLocalizations.of(context)!.logOut),
                   ),
+
+                  const SizedBox(height: 16),
+                  const WebsiteLink(allPlatforms: true),
 
                   const SizedBox(height: 32),
                 ],

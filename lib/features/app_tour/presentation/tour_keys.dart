@@ -72,6 +72,4 @@ class TourKeys {
       GlobalKey(debugLabel: 'tour_notif_hub');
   static final GlobalKey notifFirstItem =
       GlobalKey(debugLabel: 'tour_notif_first_item');
-  static final GlobalKey notifMarkAll =
-      GlobalKey(debugLabel: 'tour_notif_mark_all');
 }

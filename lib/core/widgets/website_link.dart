@@ -5,7 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
-/// The marketing site, linked from the web login page.
+/// The marketing site, linked from the web login page and the profile page.
 const String kWebsiteDomain = 'greengochat.com';
 final Uri kWebsiteUri = Uri.parse('https://$kWebsiteDomain');
 
@@ -22,16 +22,20 @@ Future<bool> Function(Uri uri) openWebsite = (uri) => launchUrl(
 
 /// "Visit greengochat.com for more info": muted text, the domain in gold
 /// (the Sign Up link style), centred, wraps gracefully in long locales,
-/// >= 44 px tap target, announced as a link. Renders nothing off the web.
+/// >= 44 px tap target, announced as a link. Renders nothing off the web
+/// unless [allPlatforms] is set.
 class WebsiteLink extends StatelessWidget {
-  const WebsiteLink({super.key, this.shadows});
+  const WebsiteLink({super.key, this.shadows, this.allPlatforms = false});
 
   /// Optional text halo (the login draws it straight on the background).
   final List<Shadow>? shadows;
 
+  /// Show in the native apps too (the profile page).
+  final bool allPlatforms;
+
   @override
   Widget build(BuildContext context) {
-    if (!websiteLinkEligible()) return const SizedBox.shrink();
+    if (!allPlatforms && !websiteLinkEligible()) return const SizedBox.shrink();
     final l10n = AppLocalizations.of(context)!;
     final full = l10n.loginVisitWebsite(kWebsiteDomain);
     // Split around the (untranslated) domain so only it is gold.

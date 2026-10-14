@@ -63,6 +63,10 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
   /// Guards the one-time notifications mini-tour within a session.
   bool _tourChecked = false;
 
+  /// Opening the page reads everything: marked read once per visit, so no
+  /// "mark all read" button is needed.
+  bool _markedAllRead = false;
+
   /// The user's per-category notification preferences. The bell list hides
   /// categories the user turned off in Notification Settings, so it stays
   /// aligned with the settings (e.g. chat off -> no chat notifications here).
@@ -118,28 +122,6 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                   return Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      if (state.unreadCount > 0)
-                        TourShowcase(
-                          showcaseKey: TourKeys.notifMarkAll,
-                          title: l10n.tourNotifMarkAllTitle,
-                          description: l10n.tourNotifMarkAllDesc,
-                          gesture: TourGesture.tap,
-                          child: TextButton(
-                            onPressed: () {
-                              context.read<NotificationsBloc>().add(
-                                    NotificationsMarkedAllAsRead(userId),
-                                  );
-                            },
-                            // Ellipsise rather than overflow the toolbar:
-                            // this label is long in several locales and
-                            // shares the slot with the delete-all button.
-                            child: Text(
-                              l10n.notificationMarkAllRead,
-                              overflow: TextOverflow.ellipsis,
-                              style: const TextStyle(color: AppColors.richGold),
-                            ),
-                          ),
-                        ),
                       // Remove ALL notifications shown on the page (read + unread).
                       IconButton(
                         tooltip: l10n.notificationsDeleteAll,
@@ -162,7 +144,6 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                 [
                   TourKeys.notifHub,
                   TourKeys.notifFirstItem,
-                  TourKeys.notifMarkAll,
                 ],
               ),
             ),
@@ -241,8 +222,14 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
             }
 
             if (state is NotificationsLoaded) {
+              if (!_markedAllRead && state.unreadCount > 0) {
+                _markedAllRead = true;
+                context
+                    .read<NotificationsBloc>()
+                    .add(NotificationsMarkedAllAsRead(userId));
+              }
               // One-time notifications mini-tour, started once the list has
-              // actually rendered so the first row (and mark-all) are anchored.
+              // actually rendered so the first row is anchored.
               if (!_tourChecked && state.notifications.isNotEmpty) {
                 _tourChecked = true;
                 WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -254,7 +241,6 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                     keys: [
                       TourKeys.notifHub,
                       TourKeys.notifFirstItem,
-                      TourKeys.notifMarkAll,
                     ],
                   );
                 });
