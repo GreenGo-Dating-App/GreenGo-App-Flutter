@@ -143,6 +143,7 @@ class UserExperience extends Equatable {
     this.pricingMode = 'per_person',
     this.groupPrice,
     this.maxTicketsPerUser = 4,
+    this.guestBookingAllowed = false,
     this.hasRecurringAvailability = false,
     this.weekendPrice,
     this.weekendDays = const [6, 7],
@@ -222,6 +223,10 @@ class UserExperience extends Equatable {
 
   /// Max tickets (per_group: group bookings) per person; null = no limit.
   final int? maxTicketsPerUser;
+
+  /// Host opt-in: people WITHOUT a GreenGo account may request to book from
+  /// the shared link (name + e-mail; functions/src/guest). Default off.
+  final bool guestBookingAllowed;
 
   bool get isPerGroup => pricingMode == 'per_group';
 
@@ -346,6 +351,7 @@ class UserExperience extends Equatable {
         paymentMethods: const {},
         pricingMode: pricingMode,
         maxTicketsPerUser: maxTicketsPerUser,
+        guestBookingAllowed: guestBookingAllowed,
         availability: availability,
         cancellationPolicy: cancellationPolicy,
         cancellationNotes: cancellationNotes,
@@ -412,6 +418,7 @@ class UserExperience extends Equatable {
         pricingMode: pricingMode,
         groupPrice: groupPrice,
         maxTicketsPerUser: maxTicketsPerUser,
+        guestBookingAllowed: guestBookingAllowed,
         hasRecurringAvailability: hasRecurringAvailability,
         weekendPrice: weekendPrice,
         weekendDays: weekendDays,
@@ -472,6 +479,7 @@ class UserExperience extends Equatable {
         pricingMode,
         groupPrice,
         maxTicketsPerUser,
+        guestBookingAllowed,
         hasRecurringAvailability,
         weekendPrice,
         weekendDays,

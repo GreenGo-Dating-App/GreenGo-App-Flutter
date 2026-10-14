@@ -6,6 +6,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/utils/compact_count.dart';
 import '../../../../core/utils/first_screen_gate.dart';
+import '../../../../core/widgets/guest_avatar.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/user_experience.dart';
@@ -164,6 +165,12 @@ class UserNameAvatar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Shared-link guest (no account): name from the booking, guest avatar,
+    // never a profile lookup or a tap target.
+    if (isGuestUserId(uid)) {
+      return GuestNameAvatar(
+          name: fallbackName, radius: radius, textStyle: textStyle);
+    }
     return ListenableBuilder(
       listenable: UserDirectoryService.instance,
       builder: (context, _) {

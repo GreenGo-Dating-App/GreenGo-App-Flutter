@@ -6,6 +6,7 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/participants_list_service.dart';
 import '../../../../core/utils/user_display_name.dart';
 import '../../../../core/widgets/glass_container.dart';
+import '../../../../core/widgets/guest_avatar.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../domain/entities/event.dart';
@@ -174,6 +175,10 @@ class _EventAttendanceScreenState extends State<EventAttendanceScreen> {
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
       child: Row(
         children: [
+          // Shared-link guest (no account): the generic guest avatar.
+          if (a.isGuest)
+            const GuestAvatar(radius: 22)
+          else
           CircleAvatar(
             radius: 22,
             backgroundColor: AppColors.backgroundCard,
@@ -202,6 +207,11 @@ class _EventAttendanceScreenState extends State<EventAttendanceScreen> {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
+                if (a.isGuest)
+                  const Padding(
+                    padding: EdgeInsets.only(top: 2),
+                    child: GuestLabel(),
+                  ),
                 if (a.guestCount > 0)
                   Text(
                     l10n.eventGuestsBringing(a.guestCount),

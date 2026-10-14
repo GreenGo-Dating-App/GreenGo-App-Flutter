@@ -53,6 +53,7 @@ class EventModel extends Event {
     super.ticketPaymentInstructions,
     super.currencyCode,
     super.maxTicketsPerUser,
+    super.guestBookingAllowed,
   });
 
   /// Create from Event entity
@@ -111,6 +112,7 @@ class EventModel extends Event {
       ticketPaymentInstructions: event.ticketPaymentInstructions,
       currencyCode: event.currencyCode,
       maxTicketsPerUser: event.maxTicketsPerUser,
+      guestBookingAllowed: event.guestBookingAllowed,
     );
   }
 
@@ -190,6 +192,7 @@ class EventModel extends Event {
           : ((json['maxTicketsPerUser'] as num?)?.toInt() == 0
               ? null
               : (json['maxTicketsPerUser'] as num?)?.toInt()),
+      guestBookingAllowed: json['guestsAllowed'] == true,
       recurrence: json['recurrence'] is Map
           ? EventRecurrence.fromMap(
               Map<String, dynamic>.from(json['recurrence'] as Map))
@@ -266,6 +269,8 @@ class EventModel extends Event {
       'ticketPaymentInstructions': ticketPaymentInstructions,
       'currencyCode': currencyCode,
       'maxTicketsPerUser': maxTicketsPerUser,
+      // Shared-link guest booking: only ever true on a public event.
+      'guestsAllowed': guestBookingAllowed && visibility == EventVisibility.public,
       'recurrence': recurrence?.toMap(),
       // Draft & scheduled auto-publish (feeds gate on isLive using publishAt).
       'publishAt': publishAt != null ? Timestamp.fromDate(publishAt!) : null,

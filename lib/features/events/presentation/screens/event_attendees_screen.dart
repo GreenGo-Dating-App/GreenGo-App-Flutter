@@ -7,6 +7,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/utils/user_error.dart';
+import '../../../../core/widgets/guest_avatar.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
@@ -263,6 +264,28 @@ class _EventAttendeesScreenState extends State<EventAttendeesScreen> {
   }
 
   Widget _row(EventAttendee a) {
+    // Shared-link guest (no account): name from the RSVP, guest avatar,
+    // no profile to open.
+    if (a.isGuest || isGuestUserId(a.userId)) {
+      return ListTile(
+        leading: const GuestAvatar(radius: 22),
+        title: Row(children: [
+          Flexible(
+            child: Text(
+              _label(a),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(
+                  color: AppColors.textPrimary,
+                  fontSize: 14.5,
+                  fontWeight: FontWeight.w600),
+            ),
+          ),
+          const SizedBox(width: 6),
+          const GuestLabel(),
+        ]),
+      );
+    }
     final anon = _isAnon(a);
     final photo = anon ? null : (a.userPhotoUrl ?? _dir[a.userId]?.photoUrl);
     final isOrganizer = a.userId == widget.event.organizerId;

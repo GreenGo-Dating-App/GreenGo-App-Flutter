@@ -20,6 +20,7 @@ class EventAttendeeModel extends EventAttendee {
     super.checkedInAt,
     super.guestCount = 0,
     super.tierId,
+    super.isGuest = false,
   });
 
   /// Create from EventAttendee entity
@@ -41,6 +42,7 @@ class EventAttendeeModel extends EventAttendee {
       checkedInAt: attendee.checkedInAt,
       guestCount: attendee.guestCount,
       tierId: attendee.tierId,
+      isGuest: attendee.isGuest,
     );
   }
 
@@ -71,6 +73,7 @@ class EventAttendeeModel extends EventAttendee {
           : null,
       guestCount: (json['guestCount'] as num?)?.toInt() ?? 0,
       tierId: json['tierId'] as String?,
+      isGuest: json['isGuest'] == true,
     );
   }
 
@@ -92,6 +95,8 @@ class EventAttendeeModel extends EventAttendee {
       'checkedInAt': checkedInAt != null ? Timestamp.fromDate(checkedInAt!) : null,
       'guestCount': guestCount,
       'tierId': tierId,
+      // Server-set for shared-link guests; members never write it (rules).
+      if (isGuest) 'isGuest': true,
     };
   }
 

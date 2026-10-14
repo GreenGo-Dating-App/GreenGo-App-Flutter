@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 
+import '../../../../core/utils/guest_identity.dart';
 import '../../../user_experiences/domain/entities/user_experience.dart';
 
 /// Booking lifecycle — mirrors BOOKING_STATUSES in
@@ -215,6 +216,7 @@ class Booking extends Equatable {
     this.requestExpiresAt,
     this.createdAt,
     this.confirmedAt,
+    this.guestName,
   });
 
   final String id;
@@ -244,6 +246,13 @@ class Booking extends Equatable {
   /// the callable view: kept from the Firestore document.
   final DateTime? createdAt;
   final DateTime? confirmedAt;
+
+  /// "First Last" of a shared-link guest (booked without an account,
+  /// functions/src/guest); null for members. Shown instead of a profile.
+  final String? guestName;
+
+  /// Booked from a shared link by someone without a GreenGo account.
+  bool get bookedByGuest => isGuestUserId(guestId);
 
   bool get isFree => payment.mode == BookingPaymentMode.free || price.isFree;
   bool get isCheckedIn => checkedInAt != null;
@@ -285,6 +294,7 @@ class Booking extends Equatable {
         requestExpiresAt: requestExpiresAt,
         createdAt: createdAt ?? this.createdAt,
         confirmedAt: confirmedAt,
+        guestName: guestName,
       );
 
   @override
@@ -311,6 +321,7 @@ class Booking extends Equatable {
         requestExpiresAt,
         createdAt,
         confirmedAt,
+        guestName,
       ];
 }
 

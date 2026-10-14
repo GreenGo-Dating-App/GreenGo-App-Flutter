@@ -113,6 +113,7 @@ class BookingModel {
       requestExpiresAt: experienceDateFrom(d['requestExpiresAt']),
       createdAt: experienceDateFrom(d['createdAt']),
       confirmedAt: experienceDateFrom(d['confirmedAt']),
+      guestName: d['isGuest'] == true ? _str(d['guestName']) : null,
     );
   }
 
@@ -157,6 +158,7 @@ class BookingModel {
       requestExpiresAt: base.requestExpiresAt,
       createdAt: previous.createdAt,
       confirmedAt: previous.confirmedAt,
+      guestName: base.guestName ?? previous.guestName,
     );
   }
 

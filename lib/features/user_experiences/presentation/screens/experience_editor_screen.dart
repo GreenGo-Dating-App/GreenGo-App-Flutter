@@ -172,6 +172,8 @@ class _EditorFormState extends State<_EditorForm> {
   String _pricingMode = 'per_person';
   final _groupPrice = TextEditingController();
   final _maxPerUser = TextEditingController(text: '4');
+  // Shared-link guest booking (no account; functions/src/guest), default off.
+  bool _guestsAllowed = false;
   // Date-based price: a different price on weekend days (day overrides are
   // set in Manage times).
   bool _weekendOn = false;
@@ -262,6 +264,7 @@ class _EditorFormState extends State<_EditorForm> {
             : (e.groupPrice! / 100).toStringAsFixed(2);
       }
       _maxPerUser.text = e.maxTicketsPerUser?.toString() ?? '';
+      _guestsAllowed = e.guestBookingAllowed;
       _weekendDays = e.weekendDays.toSet();
       if (e.weekendPrice != null) {
         _weekendOn = true;
@@ -605,6 +608,7 @@ class _EditorFormState extends State<_EditorForm> {
             : toMinorUnits(double.tryParse(_groupPrice.text.trim().replaceAll(',', '.')) ?? 0,
                 isoCurrencyFor(_currency) ?? 'usd'),
         maxTicketsPerUser: int.tryParse(_maxPerUser.text.trim()),
+        guestBookingAllowed: _guestsAllowed,
         weekendPrice: _isFree || !_weekendOn
             ? null
             : (() {
@@ -1886,6 +1890,22 @@ class _EditorFormState extends State<_EditorForm> {
         ],
       );
 
+  /// People without an account may request to book from the shared link
+  /// (functions/src/guest). Free and paid listings alike.
+  Widget _guestBookingSwitch(AppLocalizations l) => SwitchListTile(
+        key: const ValueKey('experience-guests-allowed'),
+        contentPadding: EdgeInsets.zero,
+        title: Text(l.guestBookingSwitchTitle, style: _text),
+        subtitle: Text(
+          l.guestBookingSwitchHint,
+          style: const TextStyle(
+              color: AppColors.textTertiary, fontSize: 12, height: 1.3),
+        ),
+        value: _guestsAllowed,
+        activeThumbColor: AppColors.richGold,
+        onChanged: (v) => setState(() => _guestsAllowed = v),
+      );
+
   Widget _pricingSection(AppLocalizations l) {
     if (!_canCharge) {
       // Personal account: free listings only.
@@ -1902,6 +1922,7 @@ class _EditorFormState extends State<_EditorForm> {
             access: _paidAccess!,
             onReturn: _loadPaidAccess,
           ),
+        _guestBookingSwitch(l),
       ]);
     }
     return _section(l.uexpPrice, [
@@ -2025,6 +2046,8 @@ class _EditorFormState extends State<_EditorForm> {
         ),
         const SizedBox(height: 12),
       ],
+      _guestBookingSwitch(l),
+      const SizedBox(height: 8),
       Container(
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
