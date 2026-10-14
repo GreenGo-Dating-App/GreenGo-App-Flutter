@@ -174,19 +174,21 @@ describe('events: paid only by an active business', () => {
     expect(await clientWrite(PERSONAL, 'events/f0', ev(PERSONAL, { price: 0 }))).toBe(403);
     await db.doc(`profiles/${PERSONAL}`).set({ hasBaseMembership: true, baseMembershipEndDate: future() }, { merge: true });
     expect(await clientWrite(PERSONAL, 'events/f1', ev(PERSONAL, { price: 0 }))).toBe(200);
-    expect(await clientWrite(PERSONAL, 'events/p1', ev(PERSONAL, { price: 10, ticketProvider: 'link' }))).toBe(403);
+    expect(await clientWrite(PERSONAL, 'events/p1', ev(PERSONAL, { price: 10, ticketProvider: 'stripe' }))).toBe(403);
     // a ticket provider alone makes it paid
     expect(await clientWrite(PERSONAL, 'events/p2', ev(PERSONAL, { ticketProvider: 'stripe' }))).toBe(403);
-    expect(await clientWrite(PLAT, 'events/p3', ev(PLAT, { price: 10, ticketProvider: 'link' }))).toBe(403);
-    expect(await clientWrite(LAPSED, 'events/p4', ev(LAPSED, { price: 10, ticketProvider: 'link' }))).toBe(403);
-    expect(await clientWrite(BIZ, 'events/p5', ev(BIZ, { price: 10, ticketProvider: 'link' }))).toBe(200);
+    expect(await clientWrite(PLAT, 'events/p3', ev(PLAT, { price: 10, ticketProvider: 'stripe' }))).toBe(403);
+    expect(await clientWrite(LAPSED, 'events/p4', ev(LAPSED, { price: 10, ticketProvider: 'stripe' }))).toBe(403);
+    expect(await clientWrite(BIZ, 'events/p5', ev(BIZ, { price: 10, ticketProvider: 'stripe' }))).toBe(200);
+    // Payment links are no longer accepted (owner rule 2026-10-14), business or not.
+    expect(await clientWrite(BIZ, 'events/p6', ev(BIZ, { price: 10, ticketProvider: 'link' }))).toBe(403);
   });
 
   test('update: a free event cannot be turned paid by a non-business (organizer or co-owner)', async () => {
     await db.doc('events/f1').set(ev(PERSONAL, { price: 0, coOrganizerIds: [BIZ] }));
-    expect(await clientWrite(PERSONAL, 'events/f1', { price: 15, ticketProvider: 'link' }, ['price', 'ticketProvider'])).toBe(403);
+    expect(await clientWrite(PERSONAL, 'events/f1', { price: 15, ticketProvider: 'stripe' }, ['price', 'ticketProvider'])).toBe(403);
     // A business co-owner cannot sell on a personal organizer's event either.
-    expect(await clientWrite(BIZ, 'events/f1', { price: 15, ticketProvider: 'link' }, ['price', 'ticketProvider'])).toBe(403);
+    expect(await clientWrite(BIZ, 'events/f1', { price: 15, ticketProvider: 'stripe' }, ['price', 'ticketProvider'])).toBe(403);
     expect(await clientWrite(PERSONAL, 'events/f1', { title: 'Picnic' }, ['title'])).toBe(200);
     await db.doc('events/b1').set(ev(BIZ, { price: 0 }));
     expect(await clientWrite(BIZ, 'events/b1', { price: 15, ticketProvider: 'stripe' }, ['price', 'ticketProvider'])).toBe(200);

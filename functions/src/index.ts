@@ -649,7 +649,8 @@ export {
   refreshBirthdayAges,
   getVerificationPhotoUrl,
   getSharedAlbum,
-  sweepExpiredPaymentLinks,
+  // sweepExpiredPaymentLinks REMOVED 2026-10-14 (payment links no longer
+  // accepted): prod needs `firebase functions:delete sweepExpiredPaymentLinks`.
 } from './profiles/privateProfileTriggers';
 // Block index for the profiles `get` rule (INC-2026-001).
 export { syncBlockIndex } from './safety/blockIndex';

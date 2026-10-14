@@ -413,15 +413,13 @@ service cloud.firestore {
         && profileNestedKeptOrCleared('ageVerification', 'documentDateOfBirth');
     }
 
-    // ---- PERSONAL PAYMENT LINKS (owner rule 2026-10-12) ----------------------
+    // ---- PERSONAL PAYMENT LINKS: NO LONGER ACCEPTED (owner rule 2026-10-14) --
     // profiles/{uid}.paymentLinks (Pix, PayPal, Mercado Pago link, Wise, ...)
-    // may be ADDED or CHANGED only while the owner's effective tier is SILVER /
-    // GOLD / PLATINUM or TEST (tierRankOf > 0; membershipTier and
-    // membershipEndDate are server-written). Removing / clearing entries is
-    // always allowed. When the tier lapses, the server MOVES the links to the
-    // owner-only profiles_private/{uid}.paymentLinksHidden and back on renewal
-    // (functions/src/profiles/paymentLinksVisibility.ts), so they never stay
-    // public. Keys = PaymentMethod in lib/.../payment_links.dart.
+    // and profiles_private/{uid}.paymentLinksHidden may only be removed /
+    // cleared; nothing may be added or changed (paid tickets and experiences
+    // go through the connected Stripe / Mercado Pago account). Leftover data:
+    // functions/scripts/clear-payment-links.ts. Keys = the old app's
+    // PaymentMethod values.
     function paymentLinkKeys() {
       return ['pix', 'mercadoPago', 'picPay', 'paypal', 'venmo', 'cashApp',
               'revolut', 'wise', 'monzo', 'kofi', 'stripe'];
@@ -453,15 +451,11 @@ service cloud.firestore {
     function oldMapOr(d, f) {
       return d.get(f, null) is map ? d.get(f, {}) : {};
     }
-    // Owner write of profiles/{uid}: paymentLinks untouched, cleared, or the
-    // (post-write) profile holds an active paid tier / TEST.
+    // Owner write of profiles/{uid}: paymentLinks untouched or only cleared.
     function paymentLinksWriteOk() {
       return !('paymentLinks' in request.resource.data.diff(resource.data).affectedKeys())
         || paymentLinksOnlyCleared(request.resource.data.get('paymentLinks', null),
-                                   oldMapOr(resource.data, 'paymentLinks'))
-        || (tierRankOf(request.resource.data) > 0
-            && request.resource.data.paymentLinks is map
-            && request.resource.data.paymentLinks.size() <= 20);
+                                   oldMapOr(resource.data, 'paymentLinks'));
     }
 
     match /profiles/{profileId} {
@@ -625,7 +619,7 @@ service cloud.firestore {
                  == resource.data.get('hostAgreementAcceptedAt', null)
               // Audit P-H3: boost / incognito / travel / ghost / promotion.
               && perkFieldsOk()
-              // Personal payment links: Silver / Gold / Platinum / TEST only.
+              // Personal payment links: no longer accepted (clearing only).
               && paymentLinksWriteOk())
         || isAdminPanelUser() || isProfileAdmin()
         || (isSignedIn()
@@ -678,8 +672,8 @@ service cloud.firestore {
       allow create: if isOwner(uid)
         && request.resource.data.keys().hasOnly(privateProfileOwnerKeys())
         && privateProfileShapeOk(request.resource.data);
-      // paymentLinksHidden (the links of a lapsed tier, server-moved, see
-      // paymentLinksWriteOk) may be cleared by the owner, never added to.
+      // paymentLinksHidden (legacy: links the removed visibility hook moved
+      // here) may be cleared by the owner, never added to.
       allow update: if isOwner(uid)
         && request.resource.data.diff(resource.data).affectedKeys()
              .hasOnly(privateProfileOwnerKeys().concat(['paymentLinksHidden']))
@@ -2284,12 +2278,18 @@ service cloud.firestore {
       // composite indexes (tracked follow-up) — NOT by re-tightening this rule.
       allow read: if isSignedIn();
       // Paid tickets: per-user limit (null / 0 = none, else 1..100) and the
-      // sale mode ('link' = organizer confirms, 'stripe' / 'mercadopago' = instant).
+      // sale mode: 'stripe' / 'mercadopago' (connected account, instant).
+      // Payment links are no longer accepted (owner rule 2026-10-14): 'link'
+      // is refused on create and on switching to it; a legacy 'link' event
+      // stays editable while it keeps it (createTicketCheckout no longer
+      // sells it, functions/src/ticket_payments/orders.ts).
       function validTicketing(d) {
         return (d.get('maxTicketsPerUser', null) == null
                 || (d.maxTicketsPerUser is int && d.maxTicketsPerUser >= 0 && d.maxTicketsPerUser <= 100))
           && (d.get('ticketProvider', null) == null
-              || d.ticketProvider in ['link', 'stripe', 'mercadopago']);
+              || d.ticketProvider in ['stripe', 'mercadopago']
+              || (d.ticketProvider == 'link' && resource != null
+                  && resource.data.get('ticketProvider', null) == 'link'));
       }
       // Paid events only by an ACTIVE business account (the creator). An
       // event that is ALREADY paid (e.g. created before this rule) stays
@@ -2876,6 +2876,11 @@ service cloud.firestore {
                   || (takesPayment(resource.data)
                       && hostIdApproved(hostProfileData()))));
       }
+      // Field [f] of the experience is not changed by this write.
+      function experienceFieldKept(f) {
+        return resource != null
+          && request.resource.data.get(f, null) == resource.data.get(f, null);
+      }
       function validExperienceText(d) {
         return d.title is string && d.title.size() >= 5 && d.title.size() <= 80
           && d.description is string && d.description.size() >= 30
@@ -2888,23 +2893,25 @@ service cloud.firestore {
           && (d.get('cancellationNotes', null) == null
               || (d.cancellationNotes is string
                   && d.cancellationNotes.size() <= 300))
-          // Payment methods: cash at the meeting and/or the online link.
+          // Payment: ONLY in the app through a connected Stripe / Mercado
+          // Pago account (paymentMethods ['online'] + paymentProvider).
+          // Payment links / cash / the 'link' provider are no longer accepted
+          // (owner rule 2026-10-14): a legacy listing keeps its stored values
+          // only while they stay UNCHANGED (other edits still work; publishing
+          // it is refused by publishUserExperience).
           && (d.get('paymentMethods', null) == null
+              || (d.paymentMethods is list && d.paymentMethods.size() == 0)
               || (d.paymentMethods is list
-                  && d.paymentMethods.size() <= 2
-                  && d.paymentMethods.toSet().hasOnly(['cash', 'link'])
-                  || (d.paymentMethods is list
-                      && d.paymentMethods.size() == 1
-                      && d.paymentMethods[0] == 'online'
-                      && d.get('paymentProvider', null) in ['stripe', 'mercadopago', 'link'])))
-          // Paid tickets (ticket_payments/): provider + link-mode method.
+                  && d.paymentMethods.size() == 1
+                  && d.paymentMethods[0] == 'online'
+                  && d.get('paymentProvider', null) in ['stripe', 'mercadopago'])
+              || experienceFieldKept('paymentMethods'))
           && (d.get('paymentProvider', null) == null
-              || d.paymentProvider in ['stripe', 'mercadopago', 'link'])
-          && (d.get('paymentLinkMethod', null) == null
-              || d.paymentLinkMethod in ['pix', 'picPay', 'paypal', 'venmo',
-                   'cashApp', 'revolut', 'wise', 'monzo', 'kofi', 'cash', 'bankTransfer'])
-          && (d.get('paymentInstructions', null) == null
-              || (d.paymentInstructions is string && d.paymentInstructions.size() <= 500))
+              || d.paymentProvider in ['stripe', 'mercadopago']
+              || experienceFieldKept('paymentProvider'))
+          && (d.get('paymentLink', null) == null || experienceFieldKept('paymentLink'))
+          && (d.get('paymentLinkMethod', null) == null || experienceFieldKept('paymentLinkMethod'))
+          && (d.get('paymentInstructions', null) == null || experienceFieldKept('paymentInstructions'))
           && (d.get('pricingMode', 'per_person') in ['per_person', 'per_group'])
           && (d.get('pricingMode', 'per_person') == 'per_person'
               || d.get('isFree', false) == true
