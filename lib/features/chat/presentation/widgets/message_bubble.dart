@@ -255,6 +255,9 @@ class _MessageBubbleState extends State<MessageBubble> {
       _audioPlayer.play(BytesSource(kSilentMp3)).catchError((Object _) {});
     }
 
+    // Still fetching: a second double-tap must not charge again.
+    if (_isTtsLoading) return;
+
     // If already playing, stop
     if (_isTtsPlaying) {
       await _audioPlayer.stop();
@@ -282,15 +285,35 @@ class _MessageBubbleState extends State<MessageBubble> {
     if (!await AiConsentGate.ensure(context)) return;
     if (!mounted) return;
 
-    // Deduct 5 coins before playing
     final userId = widget.currentUserId;
     if (userId == null) return;
 
+    // Sender's gender determines the voice
+    final senderIsMale = widget.isCurrentUser
+        ? widget.currentUserIsMale
+        : widget.otherUserIsMale;
+
+    // Feedback right away; the debit and the audio lookup run in parallel
+    // (they used to run back to back, ~2-3 s before the first sound).
+    setState(() => _isTtsLoading = true);
+    // Platform-agnostic: a device file / streamed Storage URL on native, a
+    // Storage URL or raw bytes on web (which has no filesystem).
+    final sourceFuture = PronunciationService()
+        .getPronunciationSource(text, lang, isMale: senderIsMale);
+    sourceFuture.ignore(); // awaited below unless the debit is refused
+
+    // Server-priced debit (spendCoins 'tts_listen', 5 coins). The server
+    // checks the balance itself, so there is no separate balance read.
     try {
-      final coinDs = di.sl<CoinRemoteDataSource>();
-      final balance = await coinDs.getBalance(userId);
-      if (balance.totalCoins < 5) {
+      await di.sl<CoinRemoteDataSource>().spendCoins(
+        featureId: 'tts_listen',
+        relatedId: message.messageId,
+      );
+      debugPrint('TTS: Deducted 5 coins from $userId');
+    } on CoinRefusalException catch (e) {
+      if (e.isInsufficientCoins) {
         if (mounted) {
+          setState(() => _isTtsLoading = false);
           final l10n = AppLocalizations.of(context)!;
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
@@ -308,44 +331,14 @@ class _MessageBubbleState extends State<MessageBubble> {
         }
         return;
       }
-      // Server-priced debit (spendCoins 'tts_listen', 5 coins).
-      await coinDs.spendCoins(
-        featureId: 'tts_listen',
-        relatedId: message.messageId,
-      );
-      debugPrint('TTS: Deducted 5 coins from $userId');
-    } on CoinRefusalException catch (e) {
-      // The server says the balance is too low: same message as the pre-check.
-      if (e.isInsufficientCoins) {
-        if (mounted) {
-          final l10n = AppLocalizations.of(context)!;
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text('${l10n.coinsInsufficientCoins} — ${l10n.coinsRequired(5)}'),
-            ),
-          );
-        }
-        return;
-      }
       debugPrint('TTS: Coin deduction refused: $e');
     } catch (e) {
       debugPrint('TTS: Coin deduction failed: $e');
       // Allow playback even if coin deduction fails (e.g. emulator issues)
     }
 
-    // Sender's gender determines the voice
-    final senderIsMale = widget.isCurrentUser
-        ? widget.currentUserIsMale
-        : widget.otherUserIsMale;
-
-    setState(() => _isTtsLoading = true);
-
     try {
-      // Platform-agnostic: a device file on native, a Storage URL or raw bytes
-      // on web (which has no filesystem).
-      final source = await PronunciationService().getPronunciationSource(
-        text, lang, isMale: senderIsMale,
-      );
+      final source = await sourceFuture;
       if (source != null && mounted) {
         debugPrint('TTS: Playing Cloud TTS audio (${senderIsMale ? "male" : "female"} voice)');
         setState(() { _isTtsLoading = false; _isTtsPlaying = true; });

@@ -417,20 +417,25 @@ export async function handleSynthesizeSpeech(request: any) {
   const text = requireText(data.text, CAPS.ttsChars);
   const language = cleanLanguage(data.language);
   const isMale = data.isMale !== false;
-  await requireAiConsent(uid);
-  await consumeQuota(uid, 'ttsCalls', 1, limits().ttsCalls);
-
   const key = ttsCacheKey(text, language, isMale);
   const cacheRef = db().collection('pronunciation_cache').doc(key);
-  const cached = await cacheRef.get();
+  // Independent reads in one round trip instead of three (latency: the user
+  // is waiting for the first sound). Consent still gates the response.
+  const [, , cached] = await Promise.all([
+    requireAiConsent(uid),
+    consumeQuota(uid, 'ttsCalls', 1, limits().ttsCalls),
+    cacheRef.get(),
+  ]);
   const cachedUrl = cached.data()?.audioUrl;
   if (typeof cachedUrl === 'string' && cachedUrl) {
     cacheRef.update({ accessCount: admin.firestore.FieldValue.increment(1), lastAccessed: TS() }).catch(() => undefined);
     return { success: true, cached: true, audioUrl: cachedUrl };
   }
 
-  await consumeQuota(uid, 'ttsSynth', 1, limits().ttsSynth);
-  const apiKey = await getServerKey('CLOUD_TTS_API_KEY', 'cloud_tts_api_key', 'gemini_api_key');
+  const [, apiKey] = await Promise.all([
+    consumeQuota(uid, 'ttsSynth', 1, limits().ttsSynth),
+    getServerKey('CLOUD_TTS_API_KEY', 'cloud_tts_api_key', 'gemini_api_key'),
+  ]);
   if (!apiKey) throw unavailable();
   const languageCode = ttsLanguageCode(language);
   const voice = `${languageCode}-Chirp3-HD-${isMale ? 'Orus' : 'Kore'}`;

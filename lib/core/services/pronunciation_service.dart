@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'package:audioplayers/audioplayers.dart' as ap;
@@ -21,8 +22,10 @@ import 'ai_consent_service.dart';
 /// notice ([AiConsentService]); callers gate the tap with
 /// `AiConsentGate.ensure` so the user sees why.
 ///
-/// Strategy: session cache -> shared cache doc (server key, then the legacy
-/// device-written key) -> `synthesizeSpeech`.
+/// Strategy: session / on-disk cache -> shared cache doc (server and legacy
+/// keys read in parallel) -> `synthesizeSpeech`. A shared-cache hit streams
+/// straight from its Storage URL (no full download before the first sound)
+/// and is saved to disk in the background for the next replay.
 class PronunciationService {
   factory PronunciationService() => _instance;
   PronunciationService._();
@@ -60,21 +63,42 @@ class PronunciationService {
   // Local file path cache (messageKey -> local file path)
   final Map<String, String> _filePathCache = {};
 
-  /// Cached audio URL from the shared cache, or null.
+  /// Cached audio URL from the shared cache, or null. Both keys are read in
+  /// parallel (one round trip instead of two on a miss); the server key wins.
   Future<String?> _cachedUrl(String phrase, String language, bool isMale) async {
     final keys = [
       serverCacheKey(phrase, language, isMale: isMale),
       '${_legacyCacheKey(phrase, language)}${isMale ? '_m' : '_f'}',
     ];
-    for (final key in keys) {
+    final urls = await Future.wait(keys.map((key) async {
       try {
         final doc = await _firestore.collection('pronunciation_cache').doc(key).get();
         final url = doc.data()?['audioUrl'] as String?;
-        if (url != null && url.isNotEmpty) return url;
+        return (url != null && url.isNotEmpty) ? url : null;
       } catch (e) {
         debugPrint('PronunciationService: cache check failed: $e');
+        return null;
       }
+    }));
+    return urls.firstWhere((u) => u != null, orElse: () => null);
+  }
+
+  /// Audio saved by an earlier session (temp dir survives app restarts until
+  /// the OS clears it). Native only.
+  Future<String?> _diskCachedPath(String key) async {
+    final local = _filePathCache[key];
+    if (local != null) {
+      if (File(local).existsSync()) return local;
+      _filePathCache.remove(key);
     }
+    try {
+      final tempDir = await getTemporaryDirectory();
+      final file = File('${tempDir.path}/tts_$key.mp3');
+      if (await file.exists() && await file.length() > 0) {
+        _filePathCache[key] = file.path;
+        return file.path;
+      }
+    } catch (_) {}
     return null;
   }
 
@@ -86,11 +110,8 @@ class PronunciationService {
     final key = serverCacheKey(phrase, language, isMale: isMale);
 
     // 1. Local file cache
-    final local = _filePathCache[key];
-    if (local != null) {
-      if (File(local).existsSync()) return local;
-      _filePathCache.remove(key);
-    }
+    final local = await _diskCachedPath(key);
+    if (local != null) return local;
 
     // 2. Shared cache -> download
     final url = await _cachedUrl(phrase, language, isMale);
@@ -153,9 +174,26 @@ class PronunciationService {
     bool isMale = true,
   }) async {
     if (!kIsWeb) {
-      final path =
-          await getPronunciationFilePath(phrase, language, isMale: isMale);
-      return path == null ? null : ap.DeviceFileSource(path);
+      final key = serverCacheKey(phrase, language, isMale: isMale);
+      final local = await _diskCachedPath(key);
+      if (local != null) return ap.DeviceFileSource(local);
+
+      // Shared-cache hit: stream it now, keep a copy for replays.
+      final url = await _cachedUrl(phrase, language, isMale);
+      if (url != null) {
+        unawaited(_downloadToLocal(key, url));
+        return ap.UrlSource(url);
+      }
+
+      final generated = await _synthesize(phrase, language, isMale: isMale);
+      if (generated == null) return null;
+      if (generated.bytes != null) {
+        final path = await _saveLocally(key, generated.bytes!);
+        return path != null
+            ? ap.DeviceFileSource(path)
+            : ap.BytesSource(generated.bytes!);
+      }
+      return generated.url != null ? ap.UrlSource(generated.url!) : null;
     }
 
     final key = serverCacheKey(phrase, language, isMale: isMale);

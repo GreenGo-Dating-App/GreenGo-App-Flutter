@@ -1256,17 +1256,21 @@ class _TranslatableTextState extends State<_TranslatableText> {
 
     final messenger = ScaffoldMessenger.of(context);
     final notEnoughMsg = AppLocalizations.of(context)!.ttsNotEnoughCoins;
+
+    // Spinner right away; the debit and the audio lookup run in parallel
+    // (they used to run back to back, ~2-3 s before the first sound).
+    setState(() => _ttsBusy = true);
+    final sourceFuture = PronunciationService()
+        .getPronunciationSource(text, lang, isMale: false);
+    sourceFuture.ignore(); // awaited below unless the debit is refused
+
+    // Server-priced debit (spendCoins 'tts_listen_group', 5 coins). The
+    // server checks the balance itself, so there is no separate balance read.
     try {
-      final coinDs = sl<CoinRemoteDataSource>();
-      final balance = await coinDs.getBalance(widget.currentUserId);
-      if (balance.totalCoins < 5) {
-        messenger.showSnackBar(SnackBar(content: Text(notEnoughMsg)));
-        return;
-      }
-      // Server-priced debit (spendCoins 'tts_listen_group', 5 coins).
-      await coinDs.spendCoins(featureId: 'tts_listen_group');
+      await sl<CoinRemoteDataSource>().spendCoins(featureId: 'tts_listen_group');
     } on CoinRefusalException catch (e) {
       if (e.isInsufficientCoins) {
+        if (mounted) setState(() => _ttsBusy = false);
         messenger.showSnackBar(SnackBar(content: Text(notEnoughMsg)));
         return;
       }
@@ -1274,10 +1278,8 @@ class _TranslatableTextState extends State<_TranslatableText> {
       // Allow playback even if the coin deduction fails (e.g. emulator).
     }
 
-    setState(() => _ttsBusy = true);
     try {
-      final source = await PronunciationService()
-          .getPronunciationSource(text, lang, isMale: false);
+      final source = await sourceFuture;
       if (source != null && mounted) {
         _player.onPlayerComplete.first.then((_) {
           if (mounted) setState(() => _ttsBusy = false);
