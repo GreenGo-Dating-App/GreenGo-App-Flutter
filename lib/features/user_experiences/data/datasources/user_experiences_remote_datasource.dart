@@ -31,6 +31,8 @@ class ExperienceCreateException implements Exception {
     'agreement_outdated',
     // Paid listings need an active business account.
     'business_required',
+    // Payment links / cash are no longer accepted (owner rule 2026-10-14).
+    'payment_link_not_accepted',
   };
   final int? limit;
   final int? count;

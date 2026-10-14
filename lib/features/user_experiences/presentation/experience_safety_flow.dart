@@ -232,6 +232,20 @@ class ExperienceSafetyFlow {
           ],
         );
         return b ?? SafetyResolution.cancel;
+      case 'payment_link_not_accepted':
+        final p = await _ask(
+          context,
+          title: l.uexpPaymentLinkNotAcceptedTitle,
+          body: l.uexpErrPaymentLinkNotAccepted,
+          icon: Icons.link_off_outlined,
+          actions: [
+            _Choice(l.cancel, SafetyResolution.cancel),
+            _Choice(l.uexpSaveDraft, SafetyResolution.saveDraft),
+            _Choice(l.uexpPublishAsFree, SafetyResolution.publishFree,
+                primary: true),
+          ],
+        );
+        return p ?? SafetyResolution.cancel;
       case 'host_banned':
         _snack(context, l.uexpHostBanned);
         return SafetyResolution.cancel;

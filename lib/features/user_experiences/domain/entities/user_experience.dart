@@ -238,13 +238,16 @@ class UserExperience extends Equatable {
   bool get acceptsOnline =>
       !isFree && paymentMethods.contains(PaymentMethod.online) && paymentProvider != null;
 
-  bool get acceptsCash => !isFree && paymentMethods.contains(PaymentMethod.cash);
-  bool get acceptsLink =>
-      paymentLink != null &&
-      (isFree || paymentMethods.contains(PaymentMethod.link));
+  /// Payment links and cash are no longer accepted (owner rule 2026-10-14):
+  /// a legacy listing that still carries them takes no new bookings until the
+  /// host connects Stripe / Mercado Pago (the server refuses them too).
+  /// [paymentLink] / [PaymentMethod.cash] / [PaymentMethod.link] are kept only
+  /// to read older documents and bookings.
+  bool get acceptsCash => false;
+  bool get acceptsLink => false;
 
-  /// Guests can be shown a Book / Pay action.
-  bool get isBookable => acceptsCash || acceptsLink;
+  /// Legacy direct "Book / Pay" (without dates): no longer offered.
+  bool get isBookable => false;
 
   /// The listing takes money (paid, or carries a payment link) — needs an
   /// APPROVED host ID to be published (mirrors functions safety.ts).

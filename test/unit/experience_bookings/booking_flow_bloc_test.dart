@@ -10,7 +10,7 @@ import 'package:greengo_chat/features/user_experiences/domain/entities/user_expe
 
 UserExperience experience({
   bool isFree = false,
-  Set<PaymentMethod> methods = const {PaymentMethod.cash, PaymentMethod.link},
+  Set<PaymentMethod> methods = const {PaymentMethod.online},
   int maxGroup = 6,
   bool requestToBook = false,
 }) =>
@@ -30,6 +30,7 @@ UserExperience experience({
       price: isFree ? 0 : 25,
       currency: isFree ? null : '€',
       paymentMethods: isFree ? const {} : methods,
+      paymentProvider: methods.contains(PaymentMethod.online) && !isFree ? 'stripe' : null,
       paymentLink: methods.contains(PaymentMethod.link) && !isFree
           ? const PaymentLink(type: PaymentLinkType.pix, value: 'host@pix.com')
           : null,
@@ -151,7 +152,7 @@ void main() {
 
   setUp(() => n = 0);
 
-  test('date -> free times; submit needs a time and (two methods) a method',
+  test('date -> free times; submit needs a time; paid = in-app payment (implied)',
       () async {
     final repo = _Repo([slot('s1'), slot('s2')], [
       Right(bookingFor('s1', 2, 'confirmed')),
@@ -176,10 +177,10 @@ void main() {
     bloc.add(BookingTimeSelected(at(1)));
     await pump();
     expect(bloc.state.selectedTime?.start, at(1));
-    expect(bloc.state.needsMethodChoice, isTrue);
-    expect(bloc.state.canSubmit, isFalse, reason: 'cash + link: must choose');
+    // Payment links / cash are no longer offered: in the app only.
+    expect(bloc.state.methods, [PaymentMethod.online]);
+    expect(bloc.state.needsMethodChoice, isFalse);
 
-    bloc.add(const BookingMethodChanged(PaymentMethod.cash));
     bloc.add(const BookingGuestsChanged(2));
     await pump();
     expect(bloc.state.canSubmit, isTrue);
@@ -187,7 +188,7 @@ void main() {
     bloc.add(const BookingSubmitted(consentVersion: 1));
     await pump();
     final call = repo.calls.single;
-    expect(call.method, PaymentMethod.cash);
+    expect(call.method, PaymentMethod.online);
     expect(call.guests, 2);
     expect(call.consent, 1);
     expect(call.startAt, at(1), reason: 'the picked time is sent');
@@ -237,12 +238,12 @@ void main() {
 
     final repo2 = _Repo([slot('s1')], [Right(bookingFor('s1', 1, 'requested'))]);
     final bloc2 = await started(repo2,
-        experience(methods: const {PaymentMethod.cash}, requestToBook: true));
+        experience(requestToBook: true));
     await pick(bloc2, 's1', 0);
-    expect(bloc2.state.effectiveMethod, PaymentMethod.cash);
+    expect(bloc2.state.effectiveMethod, PaymentMethod.online);
     bloc2.add(const BookingSubmitted(consentVersion: 1));
     await pump();
-    expect(repo2.calls.single.method, PaymentMethod.cash);
+    expect(repo2.calls.single.method, PaymentMethod.online);
     expect(bloc2.state.result?.status, BookingStatus.requested);
     await bloc2.close();
   });

@@ -1,5 +1,6 @@
 import '../../../ticket_payments/presentation/screens/ticket_order_screen.dart';
 import '../../../ticket_payments/presentation/ticket_purchase.dart';
+import '../../../ticket_payments/presentation/widgets/ticket_fee_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -844,6 +845,23 @@ class _DetailViewState extends State<_DetailView> {
           ? _state(Icons.verified, AppColors.successGreen, l.tpPaymentConfirmed)
           : Text(p.status == 'refunded' || p.status == 'disputed' ? l.tpOrderRefunded : l.tpPayInAppInfo,
               style: muted));
+      if (!asHost && BookingRules.canPayOnline(b, now) && b.price.currency != null) {
+        // What the guest pays in the app: the booking price + the GreenGo
+        // service fee (per person: one ticket per guest; per group: one).
+        final unit = b.price.unitAmount;
+        final qty = unit > 0 ? (b.price.totalAmount ~/ unit).clamp(1, 1000) : 1;
+        lines.add(Padding(
+          padding: const EdgeInsets.only(top: 8),
+          child: TicketFeeQuoteView(
+            key: const ValueKey('booking-fee-quote'),
+            organizerId: b.hostId,
+            kind: 'experience',
+            listingId: b.experienceId,
+            currency: b.price.currency!.toLowerCase(),
+            lines: [(unitAmount: unit, quantity: qty)],
+          ),
+        ));
+      }
       if (!asHost && BookingRules.canPayOnline(b, now)) {
         buttons.add(BookingPrimaryButton(
           key: const ValueKey('booking-pay-online'),

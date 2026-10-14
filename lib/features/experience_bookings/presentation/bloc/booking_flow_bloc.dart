@@ -163,15 +163,12 @@ class BookingFlowState extends Equatable {
     return null;
   }
 
-  /// Methods the guest picks from (link first); empty when free.
+  /// Methods the guest can pay with: in the app only (payment links and cash
+  /// are no longer accepted); empty when free.
   List<PaymentMethod> get methods {
     final e = experience;
     if (e == null || e.isFree) return const [];
-    return [
-      if (e.acceptsOnline) PaymentMethod.online,
-      if (e.acceptsLink) PaymentMethod.link,
-      if (e.acceptsCash) PaymentMethod.cash,
-    ];
+    return [if (e.acceptsOnline) PaymentMethod.online];
   }
 
   bool get needsMethodChoice => methods.length > 1;

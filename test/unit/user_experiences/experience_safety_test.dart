@@ -21,6 +21,7 @@ UserExperience _exp({
   PaymentLink? link =
       const PaymentLink(type: PaymentLinkType.pix, value: 'key@example.com'),
   CancellationPolicy policy = CancellationPolicy.moderate,
+  String? provider,
 }) =>
     UserExperience(
       id: 'e1',
@@ -38,6 +39,7 @@ UserExperience _exp({
       isFree: isFree,
       paymentLink: link,
       paymentMethods: methods,
+      paymentProvider: provider,
       cancellationPolicy: policy,
     );
 
@@ -129,8 +131,18 @@ void main() {
         'isFree': false,
         'paymentMethods': ['cash'],
       });
-      expect(cash.acceptsCash, isTrue);
+      // Payment links / cash are no longer accepted: legacy docs still
+      // parse, but take no new bookings.
+      expect(cash.paymentMethods, {PaymentMethod.cash});
+      expect(cash.acceptsCash, isFalse);
       expect(cash.acceptsLink, isFalse);
+      expect(legacy.acceptsLink, isFalse);
+      final online = UserExperienceModel.fromMap('z', {
+        'isFree': false,
+        'paymentMethods': ['online'],
+        'paymentProvider': 'stripe',
+      });
+      expect(online.acceptsOnline, isTrue);
       final p = UserExperienceModel.editablePayload(
           _exp(methods: const {PaymentMethod.cash}));
       expect(p['paymentMethods'], ['cash']);
@@ -144,12 +156,12 @@ void main() {
       final l = await AppLocalizations.delegate.load(const Locale('en'));
       final both =
           _exp(methods: const {PaymentMethod.cash, PaymentMethod.link});
-      expect(BookingConsentDialog.methodsOf(both),
-          [PaymentMethod.link, PaymentMethod.cash]);
+      // Legacy cash / link listings offer nothing; in-app only.
+      expect(BookingConsentDialog.methodsOf(both), isEmpty);
       expect(
           BookingConsentDialog.methodsOf(
-              _exp(methods: const {PaymentMethod.cash}, link: null)),
-          [PaymentMethod.cash]);
+              _exp(methods: const {PaymentMethod.online}, link: null, provider: 'stripe')),
+          [PaymentMethod.online]);
       expect(BookingConsentDialog.guidance(l, both, PaymentMethod.link).single,
           contains('MED'));
       expect(BookingConsentDialog.guidance(l, both, PaymentMethod.cash).single,
@@ -290,7 +302,7 @@ void main() {
     }
   });
 
-  testWidgets('consent: Continue only after "I understand"; cash text',
+  testWidgets('consent (legacy cash, shown with only:): Accept returns the method; cash text',
       (tester) async {
     PaymentMethod? result;
     await tester.pumpWidget(MaterialApp(
@@ -300,7 +312,8 @@ void main() {
         builder: (context) => Scaffold(
           body: TextButton(
             onPressed: () async => result = await BookingConsentDialog.show(
-                context, _exp(methods: const {PaymentMethod.cash}, link: null)),
+                context, _exp(methods: const {PaymentMethod.cash}, link: null),
+                only: PaymentMethod.cash),
             child: const Text('open'),
           ),
         ),

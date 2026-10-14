@@ -31,11 +31,10 @@ class BookingConsentDialog extends StatefulWidget {
         builder: (_) => BookingConsentDialog(experience: experience, only: only),
       );
 
-  /// Methods the guest can choose from, link first (pure, unit-tested).
+  /// Methods the guest can choose from (pure, unit-tested): in the app only
+  /// (payment links and cash are no longer accepted).
   static List<PaymentMethod> methodsOf(UserExperience e) => [
         if (e.acceptsOnline) PaymentMethod.online,
-        if (e.acceptsLink) PaymentMethod.link,
-        if (e.acceptsCash) PaymentMethod.cash,
       ];
 
   /// Guidance lines for [method] (pure, unit-tested).
@@ -103,13 +102,17 @@ class _BookingConsentDialogState extends State<BookingConsentDialog> {
               const SizedBox(height: 12),
             ],
             if (m != null) ...[
-              Text(
-                m == PaymentMethod.cash
-                    ? l.uexpConsentBodyCash
-                    : l.uexpConsentBodyLink,
-                style: body,
-              ),
-              const SizedBox(height: 10),
+              // In-app payments: the guidance below says it all; the
+              // off-platform texts are for legacy cash / link only.
+              if (m != PaymentMethod.online) ...[
+                Text(
+                  m == PaymentMethod.cash
+                      ? l.uexpConsentBodyCash
+                      : l.uexpConsentBodyLink,
+                  style: body,
+                ),
+                const SizedBox(height: 10),
+              ],
               for (final g in BookingConsentDialog.guidance(l, e, m))
                 Padding(
                   padding: const EdgeInsets.only(bottom: 6),

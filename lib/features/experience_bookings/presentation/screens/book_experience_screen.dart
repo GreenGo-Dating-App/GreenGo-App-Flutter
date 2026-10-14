@@ -1,4 +1,6 @@
-import '../../../ticket_payments/domain/ticket_payments.dart' show formatTicketAmount;
+import '../../../ticket_payments/domain/ticket_payments.dart'
+    show formatTicketAmount, isoCurrencyFor, toMinorUnits;
+import '../../../ticket_payments/presentation/widgets/ticket_fee_widgets.dart';
 import '../widgets/recurring_time_picker.dart';
 import 'dart:async';
 
@@ -584,11 +586,38 @@ class _BookViewState extends State<_BookView> {
           Text(ExperienceL10n.policyDescription(l, e.cancellationPolicy),
               style: muted),
           const SizedBox(height: 8),
-          Text(l.uexpPaymentDisclaimer,
+          Text(e.acceptsOnline ? l.tpPayInAppInfo : l.uexpPaymentDisclaimer,
               style: const TextStyle(
                   color: AppColors.textTertiary, fontSize: 11)),
         ],
+        if (_feeLines(s, e) case final fee?) ...[
+          const SizedBox(height: 10),
+          TicketFeeQuoteView(
+            key: const ValueKey('book-fee-quote'),
+            organizerId: e.hostId,
+            kind: 'experience',
+            listingId: e.id,
+            currency: fee.currency,
+            lines: fee.lines,
+          ),
+        ],
       ],
     );
+  }
+
+  /// What the guest will pay in the app (paid online listings): the ticket
+  /// lines the server will price (per person x guests, or ONE group ticket),
+  /// for the GreenGo service fee preview. Null when nothing is paid online.
+  ({String currency, List<({int unitAmount, int quantity})> lines})? _feeLines(
+      BookingFlowState s, UserExperience e) {
+    if (e.isFree || !e.acceptsOnline) return null;
+    final t = s.recurringTime;
+    final iso = t?.currency ?? isoCurrencyFor(e.currency);
+    if (iso == null) return null;
+    final unit = t != null
+        ? t.unitAmount
+        : (e.isPerGroup ? (e.groupPrice ?? 0) : toMinorUnits(e.price, iso));
+    if (unit <= 0) return null;
+    return (currency: iso, lines: [(unitAmount: unit, quantity: e.isPerGroup ? 1 : s.guests)]);
   }
 }

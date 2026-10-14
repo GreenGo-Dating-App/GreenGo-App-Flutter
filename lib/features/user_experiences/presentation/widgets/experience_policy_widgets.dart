@@ -243,10 +243,9 @@ class PaymentMethodsList extends StatelessWidget {
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context)!;
     final e = experience;
+    // In the app only: payment links and cash are no longer accepted.
     final methods = [
       if (e.acceptsOnline) PaymentMethod.online,
-      if (e.acceptsCash) PaymentMethod.cash,
-      if (e.acceptsLink) PaymentMethod.link,
     ];
     if (methods.isEmpty) return const SizedBox.shrink();
     return Wrap(
