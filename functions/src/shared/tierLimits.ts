@@ -17,9 +17,24 @@ type Cap = number | null;
 /** Server-owned per-user usage counters (see entitlements/usage.ts). */
 export const USAGE_COLLECTION = 'entitlement_usage';
 
-/** Max ONGOING events (end date in the future; a recurring series counts once). */
+/**
+ * Max ACTIVE events at a time (owner rule 2026-10-14): end date in the future,
+ * not cancelled / completed, not hidden by a plan downgrade; a recurring
+ * series counts once. Ended or deleted events free their slot. FREE here is
+ * Base (no plan cannot create at all: hasBaseAccess). Base events are free
+ * only (paid listings need an active business = Silver and up).
+ */
 export const MAX_EVENTS: Record<EffectiveTier, Cap> = {
-  FREE: 1, SILVER: 3, GOLD: 5, PLATINUM: null, TEST: null,
+  FREE: 1, SILVER: 5, GOLD: 10, PLATINUM: null, TEST: null,
+};
+
+/**
+ * Max ACTIVE member-hosted experiences at a time: every experience the host
+ * has that is not deleted and not hidden by a plan downgrade (drafts count,
+ * as before). Deleting one frees the slot. Admins are unlimited.
+ */
+export const MAX_EXPERIENCES: Record<EffectiveTier, Cap> = {
+  FREE: 1, SILVER: 5, GOLD: 10, PLATINUM: null, TEST: null,
 };
 
 /** Max groups a user may have created (that still exist). */

@@ -23,6 +23,7 @@ import {
   FREE_BOOSTS_PER_MONTH,
   MAX_DAILY_CONNECTS,
   MAX_EVENTS,
+  MAX_EXPERIENCES,
   MAX_GROUPS,
   hasPrioritySupport,
   monthKeyUtc,
@@ -82,6 +83,13 @@ describe('effectiveTier (server)', () => {
     expect(isBusinessActive({ isBusiness: true, membershipTier: 'PLATINUM', membershipEndDate: past }, NOW)).toBe(false);
     expect(isBusinessActive({ isBusiness: true, membershipTier: 'TEST' }, NOW)).toBe(true);
     expect(isBusinessActive({ isBusiness: false, membershipTier: 'PLATINUM', membershipEndDate: future }, NOW)).toBe(false);
+    // Owner rule 2026-10-14: business = Silver, Gold or Platinum; never Base / no plan.
+    expect(isBusinessActive({ isBusiness: true, membershipTier: 'SILVER', membershipEndDate: future }, NOW)).toBe(true);
+    expect(isBusinessActive({ isBusiness: true, membershipTier: 'GOLD', membershipEndDate: future }, NOW)).toBe(true);
+    expect(isBusinessActive({ isBusiness: true, membershipTier: 'SILVER', membershipEndDate: past }, NOW)).toBe(false);
+    expect(isBusinessActive({
+      isBusiness: true, membershipTier: 'FREE', hasBaseMembership: true, baseMembershipEndDate: future,
+    }, NOW)).toBe(false);
   });
 });
 
@@ -100,6 +108,7 @@ const TIERS = [['FREE', 'Free'], ['SILVER', 'Silver'], ['GOLD', 'Gold'], ['PLATI
 describe('server caps = app TierEntitlements = rules (no drift)', () => {
   test.each(TIERS)('%s', (srv, dart) => {
     expect(MAX_EVENTS[srv]).toBe(dartConst(`_events${dart}`));
+    expect(MAX_EXPERIENCES[srv]).toBe(dartConst(`_experiences${dart}`));
     expect(MAX_GROUPS[srv]).toBe(dartConst(`_groups${dart}`));
     expect(MAX_DAILY_CONNECTS[srv]).toBe(dartConst(`_dailyConnects${dart}`));
     expect(FREE_BOOSTS_PER_MONTH[srv]).toBe(dartConst(`_boostsPerMonth${dart}`));
@@ -107,6 +116,7 @@ describe('server caps = app TierEntitlements = rules (no drift)', () => {
 
   test('TEST = Platinum', () => {
     expect(MAX_EVENTS.TEST).toBe(MAX_EVENTS.PLATINUM);
+    expect(MAX_EXPERIENCES.TEST).toBe(MAX_EXPERIENCES.PLATINUM);
     expect(MAX_GROUPS.TEST).toBe(MAX_GROUPS.PLATINUM);
     expect(MAX_DAILY_CONNECTS.TEST).toBe(MAX_DAILY_CONNECTS.PLATINUM);
     expect(FREE_BOOSTS_PER_MONTH.TEST).toBe(FREE_BOOSTS_PER_MONTH.PLATINUM);
@@ -128,6 +138,11 @@ describe('server caps = app TierEntitlements = rules (no drift)', () => {
       expect(body('tierCapGroups')).toBe(`r == 0 ? ${cap(MAX_GROUPS.FREE)} : -1`);
       expect(MAX_GROUPS.SILVER).toBeNull();
     }
+  });
+
+  test('active-at-a-time caps (owner rule 2026-10-14): Base 1, Silver 5, Gold 10, Platinum unlimited', () => {
+    expect(MAX_EVENTS).toEqual({ FREE: 1, SILVER: 5, GOLD: 10, PLATINUM: null, TEST: null });
+    expect(MAX_EXPERIENCES).toEqual({ FREE: 1, SILVER: 5, GOLD: 10, PLATINUM: null, TEST: null });
   });
 
   test('perk flags', () => {

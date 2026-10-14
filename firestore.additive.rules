@@ -91,9 +91,17 @@ service cloud.firestore {
     }
     // Business capabilities ACTIVE (TierEntitlements.isBusinessActive /
     // isBusinessActive() server-side): the permanent isBusiness flag AND an
-    // active Platinum. Only such accounts may create PAID events / ticket
-    // types / experiences.
+    // active Silver, Gold or Platinum (owner rule 2026-10-14; was Platinum
+    // only). Only such accounts may create PAID events / ticket types /
+    // experiences: Base listings are free only.
     function sellerBusinessActive(uid) {
+      return isSignedIn() && uid is string
+        && get(/databases/$(database)/documents/profiles/$(uid)).data.get('isBusiness', false) == true
+        && tierRankOf(get(/databases/$(database)/documents/profiles/$(uid)).data) >= 1;
+    }
+    // Sponsoring a community / pinning a promo stays a PLATINUM business
+    // feature (SponsorshipGate in the app).
+    function sponsorBusinessActive(uid) {
       return isSignedIn() && uid is string
         && get(/databases/$(database)/documents/profiles/$(uid)).data.get('isBusiness', false) == true
         && activePlatinum(get(/databases/$(database)/documents/profiles/$(uid)).data);
@@ -163,7 +171,9 @@ service cloud.firestore {
     }
     // Caps per rank (-1 = unlimited) = tierLimits.ts / TierEntitlements.
     function tierCapConnects(r) { return r == 0 ? 10 : r == 1 ? 50 : r == 2 ? 200 : -1; }
-    function tierCapEvents(r) { return r == 0 ? 1 : r == 1 ? 3 : r == 2 ? 5 : -1; }
+    // Events: ACTIVE at a time (owner rule 2026-10-14). Rank 0 here is Base:
+    // no plan cannot create at all (baseAccess on the create rule).
+    function tierCapEvents(r) { return r == 0 ? 1 : r == 1 ? 5 : r == 2 ? 10 : -1; }
     function tierCapGroups(r) { return r == 0 ? 1 : -1; }
     // New 1:1 conversations started today (UTC) are under the daily cap.
     function connectCapOk(uid) {
@@ -174,18 +184,18 @@ service cloud.firestore {
         || get(usagePath(uid)).data.get('connectCount', 0)
              < tierCapConnects(tierRankOf(get(profilePath(uid)).data));
     }
-    // Ongoing-event cap. eventActiveEnds is ascending, so fewer than `cap`
-    // slots are still running when the cap-th latest end has passed. A new
-    // occurrence of an already-counted series and a paid extra event (coins)
-    // are allowed too.
+    // Active-event cap. eventActiveEnds is ascending, so fewer than `cap`
+    // slots are still running when the cap-th latest end has passed (events
+    // hidden by a plan downgrade are not in the list). A new occurrence of an
+    // already-counted series is allowed too. The paid "extra event" credit is
+    // retired (2026-10-14): eventExtraCredits is ignored.
     function eventSlotFree(u, cap, d) {
       return u.get('eventActiveEnds', []).size() < cap
         || u.get('eventActiveEnds', [])[u.get('eventActiveEnds', []).size() - cap]
              <= request.time.toMillis()
         || (d.get('seriesId', null) is string
             && u.get('eventActiveSeries', {}).get(d.get('seriesId', ''), 0) > 0
-            && u.get('eventActiveSeries', {}).get(d.get('seriesId', ''), 0) < 120)
-        || u.get('eventExtraCredits', 0) > u.get('eventExtraUsed', 0);
+            && u.get('eventActiveSeries', {}).get(d.get('seriesId', ''), 0) < 120);
     }
     function eventCapOk(uid, d) {
       return tierCapEvents(tierRankOf(get(profilePath(uid)).data)) < 0
@@ -494,7 +504,7 @@ service cloud.firestore {
         && noOrientationOnCreate(request.resource.data)
         && request.resource.data.get('isAdmin', false) == false
         && request.resource.data.get('isBanned', false) == false
-        // Becoming a business is a Platinum upgrade made by UPDATE (below).
+        // Becoming a business is a paid-tier upgrade made by UPDATE (below).
         && request.resource.data.get('isBusiness', false) == false
         && request.resource.data.get('isBusinessVerified', false) == false
         && request.resource.data.get('businessVerified', false) == false
@@ -551,14 +561,15 @@ service cloud.firestore {
                  == resource.data.get('businessVerified', false)
               // Business account: a ONE-WAY, permanent upgrade. The owner may
               // only turn isBusiness ON, and only while holding an active
-              // Platinum; it can never be turned off again by the client
-              // (lapsed Platinum pauses the tools, it does not revert the
-              // account). businessSince is stamped once and then immutable.
+              // Silver, Gold or Platinum (owner rule 2026-10-14); it can never
+              // be turned off again by the client (a lapsed paid tier pauses
+              // the tools, it does not revert the account). businessSince is
+              // stamped once and then immutable.
               && (request.resource.data.get('isBusiness', false)
                     == resource.data.get('isBusiness', false)
                   || (resource.data.get('isBusiness', false) == false
                       && request.resource.data.get('isBusiness', false) == true
-                      && activePlatinum(resource.data)))
+                      && tierRankOf(resource.data) >= 1))
               && (request.resource.data.get('businessSince', null)
                     == resource.data.get('businessSince', null)
                   || resource.data.get('businessSince', null) == null)
@@ -2043,11 +2054,11 @@ service cloud.firestore {
       allow read: if isSignedIn();
       allow create: if isSignedIn()
         && (!sponsoredData(request.resource.data)
-            || sellerBusinessActive(request.auth.uid));
+            || sponsorBusinessActive(request.auth.uid));
       // Community edits (rules/resources/sponsor/promo) → owner/admin only,
       // EXCEPT denormalized member-driven fields (memberCount / last message).
       allow update: if (isCommunityMod() || (isSignedIn() && onlyDenormChanged()))
-        && (!becomesSponsored() || sellerBusinessActive(request.auth.uid));
+        && (!becomesSponsored() || sponsorBusinessActive(request.auth.uid));
       allow delete: if isCommunityCreator() || isAdmin();
 
       // Members: a user manages their OWN membership (join public / leave);
@@ -2324,16 +2335,30 @@ service cloud.firestore {
         return contactFieldOk('title') && contactFieldOk('description')
           && contactFieldOk('languagePairs') && contactFieldOk('locationName');
       }
+      // Plan downgrade (functions entitlements/downgrade.ts, owner rule
+      // 2026-10-14): an event over the owner's new allowance is set to
+      // 'draft' with hiddenByDowngrade + preDowngradeStatus. Those fields are
+      // server-owned, and while the flag is set the status is frozen (no
+      // re-publishing around the allowance; upgrading restores it).
+      function downgradeFieldsUnchanged() {
+        return !request.resource.data.diff(resource.data).affectedKeys()
+            .hasAny(['hiddenByDowngrade', 'preDowngradeStatus', 'hiddenByDowngradeAt'])
+          && (resource.data.get('hiddenByDowngrade', false) != true
+              || request.resource.data.get('status', null) == resource.data.get('status', null));
+      }
       // Creator must set themselves as organizer.
       allow create: if isSignedIn()
         && request.resource.data.organizerId == request.auth.uid
         && eventTextOk()
+        && !request.resource.data.keys()
+              .hasAny(['hiddenByDowngrade', 'preDowngradeStatus', 'hiddenByDowngradeAt'])
         && validCoOrganizers(request.resource.data)
         && validTicketing(request.resource.data)
         && (!isPaidEventData(request.resource.data)
             || sellerBusinessActive(request.auth.uid))
         // Audit P-H4 / M1: an end date (what makes an event "ongoing") and
-        // the tier's cap of ongoing events (onEventWrittenUsage counts them).
+        // the tier's cap of ACTIVE events at a time - Base 1, Silver 5,
+        // Gold 10, Platinum unlimited (onEventWrittenUsage counts them).
         && request.resource.data.get('endDate', null) is timestamp
         && eventCapOk(request.auth.uid, request.resource.data)
         // Owner rule 2026-10-13: creating events needs a plan (Base or
@@ -2350,6 +2375,7 @@ service cloud.firestore {
       // as before on every event. TIGHTEN LATER: paid events -> viewCount only.
       allow update: if (isOrganizer() && validCoOrganizers(request.resource.data)
                         && eventTextOk()
+                        && downgradeFieldsUnchanged()
                         && validTicketing(request.resource.data)
                         && paidAllowed(resource.data.organizerId))
         || (isSignedIn()
@@ -2361,6 +2387,7 @@ service cloud.firestore {
       // in the Event entity.
       allow update: if isCoOrganizer()
         && eventTextOk()
+        && downgradeFieldsUnchanged()
         && !request.resource.data.diff(resource.data).affectedKeys()
               .hasAny(['organizerId', 'organizerName', 'organizerPhotoUrl',
                        'coOrganizerIds'])
@@ -2843,7 +2870,10 @@ service cloud.firestore {
                 // setExperienceFeatured only.
                 'isFeatured', 'featuredUntil',
                 // Recurring schedule: validated by updateExperienceAvailability.
-                'availabilityRules', 'availabilityOverrides'];
+                'availabilityRules', 'availabilityOverrides',
+                // Plan downgrade hide (functions entitlements/downgrade.ts):
+                // status 'hidden' + moderation {reason: 'plan_downgrade'}.
+                'hiddenByDowngrade', 'hiddenByDowngradeAt'];
       }
       // ── Phase 1 safety (mirrors functions/src/user_experiences/safety.ts) ──
       function hostProfileData() {

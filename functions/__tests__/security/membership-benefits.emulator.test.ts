@@ -9,7 +9,7 @@
  *   P-H1  daily new connections: conversation create vs entitlement_usage
  *   P-H2  Base membership required to send a 1:1 message
  *   P-H3  perk fields on profiles/{uid}: boost, travel, ghost, incognito, promotion
- *   P-H4  ongoing-event cap (M1) and group cap (H5)
+ *   P-H4  active-event cap (M1; at a time: Base 1 / Silver 5 / Gold 10) and group cap (H5)
  *   P-H5  sponsored communities: Platinum business only
  *   H2    support ticket priority is server-owned
  *   H4    free monthly boosts (spendCoins), server-tracked
@@ -389,7 +389,7 @@ describe('No plan: cannot create events (owner rule 2026-10-13)', () => {
 });
 
 // ---------------------------------------------------------------------------
-describe('P-H4 / M1 ongoing-event cap', () => {
+describe('P-H4 / M1 active-event cap (at a time: Base 1, Silver 5, Gold 10, Platinum unlimited)', () => {
   const ev = (uid: string, extra: any = {}) => ({
     organizerId: uid, title: 'e', price: 0,
     startDate: new Date(Date.now() + DAY), endDate: new Date(Date.now() + DAY + 2 * HOUR), ...extra,
@@ -399,20 +399,28 @@ describe('P-H4 / M1 ongoing-event cap', () => {
     await db.doc(`entitlement_usage/${BASE}`).set({ eventActiveEnds: [Date.now() + DAY] });
     expect(await clientWrite(BASE, 'events/e1', ev(BASE))).toBe(403);
     expect(await clientWrite(SILVER, 'events/e2', { organizerId: SILVER, title: 'x', price: 0 })).toBe(403);
-    await db.doc(`entitlement_usage/${SILVER}`).set({ eventActiveEnds: [Date.now() + HOUR, Date.now() + DAY, Date.now() + 2 * DAY] });
+    await db.doc(`entitlement_usage/${SILVER}`).set({ eventActiveEnds: [1, 2, 3, 4, 5].map((i) => Date.now() + i * HOUR) });
     expect(await clientWrite(SILVER, 'events/e3', ev(SILVER))).toBe(403);
+    await db.doc(`entitlement_usage/${GOLD}`).set({ eventActiveEnds: Array.from({ length: 10 }, (_, i) => Date.now() + (i + 1) * HOUR) });
+    expect(await clientWrite(GOLD, 'events/e4', ev(GOLD))).toBe(403);
   });
 
-  test('ended events do not count (M1), a paid extra event and a series occurrence pass, Platinum is unlimited', async () => {
+  test('the retired paid extra-event credit no longer lets a create past the cap', async () => {
+    await db.doc(`entitlement_usage/${BASE}`).set({
+      eventActiveEnds: [Date.now() + DAY], eventExtraCredits: 3, eventExtraUsed: 0,
+    });
+    expect(await clientWrite(BASE, 'events/x1', ev(BASE))).toBe(403);
+  });
+
+  test('ended events do not count (M1), a series occurrence passes, Platinum is unlimited', async () => {
     await db.doc(`entitlement_usage/${BASE}`).set({ eventActiveEnds: [Date.now() - HOUR] });
     expect(await clientWrite(BASE, 'events/e1', ev(BASE))).toBe(200);
     await db.doc(`entitlement_usage/${SILVER}`).set({
-      eventActiveEnds: [Date.now() + HOUR, Date.now() + DAY, Date.now() + 2 * DAY],
-      eventExtraCredits: 1, eventExtraUsed: 0,
+      eventActiveEnds: [Date.now() - HOUR, Date.now() + HOUR, Date.now() + DAY, Date.now() + 2 * DAY, Date.now() + 3 * DAY],
     });
     expect(await clientWrite(SILVER, 'events/e2', ev(SILVER))).toBe(200);
     await db.doc(`entitlement_usage/${GOLD}`).set({
-      eventActiveEnds: [1, 2, 3, 4, 5].map((i) => Date.now() + i * DAY), eventActiveSeries: { ser1: 3 },
+      eventActiveEnds: Array.from({ length: 10 }, (_, i) => Date.now() + (i + 1) * DAY), eventActiveSeries: { ser1: 3 },
     });
     expect(await clientWrite(GOLD, 'events/e3', ev(GOLD, { seriesId: 'ser1' }))).toBe(200);
     expect(await clientWrite(GOLD, 'events/e4', ev(GOLD, { seriesId: 'other' }))).toBe(403);
@@ -420,34 +428,33 @@ describe('P-H4 / M1 ongoing-event cap', () => {
     expect(await clientWrite(PLAT, 'events/e5', ev(PLAT))).toBe(200);
   });
 
-  test('recount: series = one slot, extra credit spent once, over-cap create deleted (batch backstop)', async () => {
+  test('recount: series = one slot, hidden events free their slot, over-cap create deleted (batch backstop)', async () => {
     const mk = async (id: string, data: any) => { await db.doc(`events/${id}`).set(data); return { id, data }; };
     const base = (extra: any = {}) => ({
       organizerId: SILVER, status: 'published',
       startDate: future(DAY), endDate: future(DAY + 2 * HOUR), ...extra,
     });
-    // Silver: 2 single events + a 4-occurrence series = 3 slots (cap 3).
-    await recountEvents(SILVER, await mk('a', base()));
-    await recountEvents(SILVER, await mk('b', base({ endDate: future(2 * DAY) })));
+    // Silver: 4 single events + a 4-occurrence series = 5 slots (cap 5).
+    for (const id of ['a', 'b', 'c', 'h']) await recountEvents(SILVER, await mk(id, base({ endDate: future(2 * DAY) })));
     for (let i = 0; i < 4; i++) await recountEvents(SILVER, await mk(`s${i}`, base({ seriesId: 'ser', endDate: future((i + 1) * 7 * DAY) })));
     let u = (await db.doc(`entitlement_usage/${SILVER}`).get()).data()!;
-    expect(u.eventActiveCount).toBe(3);
+    expect(u.eventActiveCount).toBe(5);
     expect(u.eventActiveSeries).toEqual({ ser: 4 });
-    expect(u.eventActiveEnds).toHaveLength(3);
+    expect(u.eventActiveEnds).toHaveLength(5);
     // An ended and a cancelled event never count.
     await recountEvents(SILVER, await mk('old', base({ endDate: past(HOUR) })));
     await recountEvents(SILVER, await mk('can', base({ status: 'cancelled' })));
     expect((await db.doc('events/can').get()).exists).toBe(true);
-    // 4th slot without a credit: deleted again.
+    // 6th slot: deleted again (a leftover paid credit no longer helps).
+    await db.doc(`entitlement_usage/${SILVER}`).set({ eventExtraCredits: 1 }, { merge: true });
     expect(await recountEvents(SILVER, await mk('d', base()))).toBe('deleted');
     expect((await db.doc('events/d').get()).exists).toBe(false);
-    // With a paid credit: kept, the credit is used once.
-    await db.doc(`entitlement_usage/${SILVER}`).set({ eventExtraCredits: 1 }, { merge: true });
-    expect(await recountEvents(SILVER, await mk('e', base()))).toBe('credit');
-    expect(await recountEvents(SILVER, await mk('f', base()))).toBe('deleted');
+    // An event hidden by a plan downgrade frees its slot.
+    await db.doc('events/h').set({ status: 'draft', hiddenByDowngrade: true, preDowngradeStatus: 'published' }, { merge: true });
+    await recountEvents(SILVER);
+    expect(await recountEvents(SILVER, await mk('e', base()))).toBe('ok');
     u = (await db.doc(`entitlement_usage/${SILVER}`).get()).data()!;
-    expect(u.eventExtraUsed).toBe(1);
-    expect(u.eventActiveCount).toBe(4);
+    expect(u.eventActiveCount).toBe(5);
   });
 });
 
@@ -579,11 +586,12 @@ describe('H4 free monthly boosts (spendCoins)', () => {
     expect(t.charged).toBe(0);
   });
 
-  test('extra_event records one paid credit for the event cap', async () => {
+  test('extra_event is retired: refused before any charge, no credit recorded', async () => {
     await seedCoins(SILVER, 100);
-    await call(spendCoins, { featureId: 'extra_event', requestId: rid() }, SILVER);
-    expect((await db.doc(`entitlement_usage/${SILVER}`).get()).data()!.eventExtraCredits).toBe(1);
-    expect(await coins(SILVER)).toBe(50);
+    const e = await refused(call(spendCoins, { featureId: 'extra_event', requestId: rid() }, SILVER));
+    expect(String(e.message)).toMatch(/feature-retired/);
+    expect((await db.doc(`entitlement_usage/${SILVER}`).get()).data()?.eventExtraCredits).toBeUndefined();
+    expect(await coins(SILVER)).toBe(100);
   });
 });
 
