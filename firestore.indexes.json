@@ -15,6 +15,34 @@
       ]
     },
     {
+      "collectionGroup": "events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "organizerId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hiddenByDowngrade",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "user_experiences",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hostId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hiddenByDowngrade",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
       "collectionGroup": "support_chats",
       "queryScope": "COLLECTION",
       "fields": [
