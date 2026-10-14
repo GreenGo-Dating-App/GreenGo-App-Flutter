@@ -1,14 +1,16 @@
 import '../../../core/services/tier_entitlements.dart';
 import '../../membership/domain/entities/membership.dart';
 
-/// How many experiences the host may have (null = unlimited). [tier] must be
-/// the EFFECTIVE tier; admins are unlimited. Mirrors the server's
-/// `maxExperiencesFor` (functions/src/user_experiences/validation.ts).
+/// How many ACTIVE experiences the host may have at a time (null =
+/// unlimited): Base 1 (free only), Silver 5, Gold 10, Platinum unlimited.
+/// [tier] must be the EFFECTIVE tier; admins are unlimited. Mirrors the
+/// server's `maxExperiencesFor` (functions/src/user_experiences/validation.ts).
 int? experienceLimitFor(MembershipTier tier, {bool isAdmin = false}) =>
     isAdmin ? null : TierEntitlements.maxExperiences(tier);
 
-/// Whether a host who already has [count] experiences may create another.
-/// A downgraded host over the limit keeps their experiences but gets `false`.
+/// Whether a host who already has [count] ACTIVE experiences may create
+/// another. Deleting one frees a slot; after a downgrade the server hides the
+/// ones over the allowance (they no longer count).
 bool canCreateAnotherExperience({
   required MembershipTier tier,
   required int count,
@@ -18,7 +20,7 @@ bool canCreateAnotherExperience({
   return max == null || count < max;
 }
 
-/// The cheapest tier that allows more than [count] experiences, or null.
+/// The cheapest tier that allows more than [count] active experiences, or null.
 MembershipTier? tierNeededForExperiences(int count) {
   for (final t in const [
     MembershipTier.silver,

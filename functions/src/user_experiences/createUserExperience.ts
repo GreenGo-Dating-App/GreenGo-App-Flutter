@@ -16,8 +16,12 @@
  * Cost: one cold-start-prone round trip per create, and creation needs the
  * function deployed (edits/deletes stay direct Firestore writes).
  *
- * A host downgraded below their current count keeps every existing
- * experience (nothing is auto-hidden) — they just cannot create new ones.
+ * The limit is ACTIVE experiences at a time (owner rule 2026-10-14: Base 1,
+ * Silver 5, Gold 10, Platinum / TEST / admin unlimited): every experience of
+ * the host that is not deleted and not hidden by a plan downgrade. Deleting
+ * one frees the slot. When the host's plan drops, the experiences over the new
+ * allowance are hidden (not deleted) by entitlements/downgrade.ts and restored
+ * on upgrade; hidden ones do not count here.
  */
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
@@ -129,19 +133,27 @@ export const createUserExperience = onCall(
       const tier = effectiveTier(profile);
       const max = maxExperiencesFor(tier, isProfileAdmin(profile));
 
+      // `count` is every non-deleted experience (>= the active ones), so
+      // under the limit no query is needed.
       let count = Number(counterSnap.data()?.count ?? 0) || 0;
       if (max !== null && count >= max) {
         // Self-heal a drifted counter (e.g. a failed delete trigger) before
-        // refusing: the authoritative number is the host's actual docs.
-        const agg = await tx.get(
-          db.collection(EXPERIENCES).where('hostId', '==', uid).count(),
-        );
-        count = agg.data().count;
-        if (count >= max) {
+        // refusing: the authoritative number is the host's actual docs, minus
+        // the ones hidden by a plan downgrade (they do not take a slot).
+        const [all, hidden] = await Promise.all([
+          tx.get(db.collection(EXPERIENCES).where('hostId', '==', uid).count()),
+          tx.get(db.collection(EXPERIENCES)
+            .where('hostId', '==', uid)
+            .where('hiddenByDowngrade', '==', true)
+            .count()),
+        ]);
+        count = all.data().count;
+        const active = Math.max(0, count - hidden.data().count);
+        if (active >= max) {
           throw new HttpsError('resource-exhausted', 'experience_limit', {
             code: 'experience_limit',
             limit: max,
-            count,
+            count: active,
             tier,
           });
         }

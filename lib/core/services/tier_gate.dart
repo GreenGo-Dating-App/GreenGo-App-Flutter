@@ -188,6 +188,30 @@ class TierGate {
     return false;
   }
 
+  /// Returns true if [uid] may create another event: under their tier's
+  /// ACTIVE-at-a-time allowance (Base 1, Silver 5, Gold 10, Platinum
+  /// unlimited). Otherwise shows how many are active against the allowance
+  /// with the upgrade path, and returns false. Ending or deleting an event
+  /// frees a slot; extra events cannot be bought.
+  Future<bool> ensureCreateEvent(BuildContext context, String uid) async {
+    final result = await canCreateEvent(uid);
+    if (result.allowed) return true;
+    if (!context.mounted) return false;
+    final l10n = AppLocalizations.of(context)!;
+    final r = await FeatureNotAvailableDialog.show(
+      context: context,
+      featureName: l10n.shopEventsCreate,
+      description: l10n.tierLimitEventsBody(result.max ?? 0, result.current),
+      currentTier: result.tier,
+      requiredTier: TierEntitlements.nextTierForMoreListings(result.tier) ??
+          MembershipTier.platinum,
+      userId: uid,
+      icon: Icons.event_available,
+    );
+    if (context.mounted) _maybeUpgrade(context, r, uid);
+    return false;
+  }
+
   /// Returns true if the user's plan includes boosts (free monthly boosts,
   /// then coins); on the free plan shows the "feature not on your plan"
   /// dialog and returns false.

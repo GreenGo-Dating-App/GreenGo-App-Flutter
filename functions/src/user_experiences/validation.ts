@@ -2,21 +2,18 @@
  * User experiences — creation limits + payload validation (PURE).
  *
  * Limits per EFFECTIVE tier (see shared/effectiveTier.ts — an expired Silver
- * counts as FREE). Mirrors `TierEntitlements.maxExperiences` on the client:
- *   FREE 1 · SILVER 5 · GOLD 10 · PLATINUM ∞ · TEST ∞ · admin ∞
- * The count is every experience the host has that is not deleted (drafts +
- * published + hidden).
+ * counts as FREE, i.e. Base). Mirrors `TierEntitlements.maxExperiences` on the
+ * client (shared/tierLimits.ts MAX_EXPERIENCES):
+ *   Base 1 · SILVER 5 · GOLD 10 · PLATINUM ∞ · TEST ∞ · admin ∞ (no plan: 0,
+ *   refused earlier by hasBaseAccess)
+ * ACTIVE at a time: every experience the host has that is not deleted and not
+ * hidden by a plan downgrade (drafts + published + moderation-hidden count).
  */
 import type { EffectiveTier } from '../shared/effectiveTier';
+import { MAX_EXPERIENCES } from '../shared/tierLimits';
 import { normalizeCancellation } from './safety';
 
-export const EXPERIENCE_LIMITS: Record<EffectiveTier, number | null> = {
-  FREE: 1,
-  SILVER: 5,
-  GOLD: 10,
-  PLATINUM: null,
-  TEST: null,
-};
+export const EXPERIENCE_LIMITS: Record<EffectiveTier, number | null> = MAX_EXPERIENCES;
 
 /** Max experiences for [tier] (null = unlimited). Admins are unlimited. */
 export function maxExperiencesFor(tier: EffectiveTier, isAdmin = false): number | null {

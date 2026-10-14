@@ -10447,15 +10447,15 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get guideTiersItem1 =>
-      'Silver: 50 nuovi contatti al giorno, 3 eventi in corso, gruppi illimitati, 1 boost del profilo gratuito e 300 monete al mese, e la modalità viaggio a 100 monete al giorno.';
+      'Silver: 50 nuovi contatti al giorno, 5 eventi e 5 esperienze attivi contemporaneamente, gruppi illimitati, un account aziendale per vendere biglietti, 1 boost del profilo gratuito e 300 monete al mese, e la modalità viaggio a 100 monete al giorno.';
 
   @override
   String get guideTiersItem2 =>
-      'Gold: tutto di Silver più 200 nuovi contatti al giorno, 5 eventi in corso, 4 boost gratuiti e 400 monete al mese, modalità fantasma e assistenza prioritaria.';
+      'Gold: tutto ciò che offre Silver più 200 nuovi contatti al giorno, 10 eventi e 10 esperienze attivi contemporaneamente, 4 boost gratuiti e 400 monete al mese, modalità fantasma e assistenza prioritaria.';
 
   @override
   String get guideTiersItem3 =>
-      'Platinum: tutto di Gold più contatti ed eventi illimitati, 30 boost gratuiti e 500 monete al mese, modalità viaggio gratuita, account aziendale e statistiche.';
+      'Platinum: tutto ciò che offre Gold più nuovi contatti, eventi ed esperienze illimitati, 30 boost gratuiti e 500 monete al mese, modalità viaggio gratuita e statistiche aziendali.';
 
   @override
   String get guideTiersItem4 =>
@@ -11169,8 +11169,8 @@ class AppLocalizationsIt extends AppLocalizations {
   String get tierLimitTitle => 'Esegui l\'upgrade per crearne di più';
 
   @override
-  String tierLimitEventsBody(int max) {
-    return 'Il tuo piano consente $max eventi. Esegui l\'upgrade per crearne di più.';
+  String tierLimitEventsBody(int max, int count) {
+    return 'Hai $count eventi attivi e il tuo piano ne consente $max contemporaneamente. Concludine o eliminane uno, oppure passa a un piano superiore per crearne altri.';
   }
 
   @override
@@ -11752,7 +11752,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get becomeBusinessConfirmMessage =>
-      'È permanente: il tuo account diventa un account aziendale pubblico e non può tornare a essere un account personale. Gli strumenti aziendali funzionano finché la tua iscrizione Platinum è attiva; se scade, vengono sospesi fino al rinnovo.';
+      'È permanente: il tuo account diventa un account aziendale pubblico e non potrà tornare personale. Gli strumenti aziendali funzionano finché il tuo abbonamento Silver, Gold o Platinum è attivo; se scade, restano sospesi finché non lo rinnovi.';
 
   @override
   String get becomeBusinessConfirmAction => 'Rendi permanente';
@@ -11770,7 +11770,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get businessRequiresPlatinum =>
-      'Gli account aziendali sono una funzionalità Platinum. Aggiorna per sbloccare la tua vetrina, i follower e l\'acquisizione di contatti.';
+      'Gli account aziendali richiedono un abbonamento Silver, Gold o Platinum. Aggiorna per sbloccare la tua vetrina, i follower, l\'acquisizione di contatti e i biglietti a pagamento.';
 
   @override
   String get viewStorefront => 'Vedi vetrina';
@@ -12460,10 +12460,10 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get businessPausedSubtitle =>
-      'Le tue funzionalità aziendali sono in pausa perché il tuo abbonamento Platinum è scaduto. Rinnova Platinum per ripristinare la tua vetrina, le statistiche, i contatti e le promozioni.';
+      'Le funzioni aziendali sono sospese perché il tuo abbonamento a pagamento è scaduto. Rinnova Silver, Gold o Platinum per ripristinare vetrina, contatti, promozioni e biglietti a pagamento.';
 
   @override
-  String get businessReactivate => 'Rinnova Platinum';
+  String get businessReactivate => 'Rinnova abbonamento';
 
   @override
   String get eventsBoostChooseDuration => 'Scegli la durata del boost';
@@ -12622,14 +12622,6 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get renewMembership => 'Rinnova abbonamento';
-
-  @override
-  String get extraEventTitle => 'Evento extra';
-
-  @override
-  String extraEventBody(int cost) {
-    return 'Hai raggiunto il limite di eventi gratuiti. Creare un evento extra per $cost monete?';
-  }
 
   @override
   String get accountBannedTitle => 'Account bannato definitivamente';
@@ -12896,7 +12888,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get communitiesTipHint => 'Condividi un consiglio utile…';
 
   @override
-  String get shopEventsCreate => 'Eventi che puoi creare';
+  String get shopEventsCreate => 'Eventi attivi contemporaneamente';
 
   @override
   String get shopGroupsCreate => 'Gruppi che puoi creare';
@@ -14430,17 +14422,11 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get uexpLimitFreeBody =>
-      'Proporre esperienze è disponibile con un abbonamento Silver, Gold o Platinum.';
+      'Per offrire esperienze serve un piano. Base ti consente di offrirne 1 gratuita; Silver, Gold e Platinum ti consentono di offrirne di più e di accettare prenotazioni a pagamento.';
 
   @override
-  String uexpLimitReachedBody(int limit) {
-    String _temp0 = intl.Intl.pluralLogic(
-      limit,
-      locale: localeName,
-      other: 'Il tuo piano consente $limit esperienze.',
-      one: 'Il tuo piano consente 1 esperienza.',
-    );
-    return '$_temp0 Passa a un piano superiore per crearne altre.';
+  String uexpLimitReachedBody(int limit, int count) {
+    return 'Hai $count esperienze attive e il tuo piano ne consente $limit contemporaneamente. Eliminane una, oppure passa a un piano superiore per crearne altre.';
   }
 
   @override
@@ -14448,7 +14434,7 @@ class AppLocalizationsIt extends AppLocalizations {
       'Passa a un piano superiore per creare più esperienze';
 
   @override
-  String get shopExperiencesCreate => 'Esperienze che puoi creare';
+  String get shopExperiencesCreate => 'Esperienze attive contemporaneamente';
 
   @override
   String get uexpHostedBy => 'Organizzata da';
@@ -22881,11 +22867,11 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get becomeBusinessOneWayHint =>
-      'Richiede Platinum. Upgrade una tantum: non può essere annullato.';
+      'Richiede Silver, Gold o Platinum. Upgrade una tantum: non si può annullare.';
 
   @override
   String get businessPermanentInfo =>
-      'Il tuo account è definitivamente un account aziendale e non può tornare personale. Gli strumenti aziendali funzionano finché Platinum è attivo; se scade, vengono sospesi fino al rinnovo.';
+      'Il tuo account è definitivamente aziendale e non può tornare personale. Gli strumenti aziendali funzionano finché Silver, Gold o Platinum è attivo; se scade, restano sospesi finché non rinnovi.';
 
   @override
   String get paidBusinessOnlyNote =>
@@ -22893,11 +22879,11 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get paidBusinessOnlyBody =>
-      'Chiunque può organizzare eventi ed esperienze gratuiti. Per far pagare biglietti o prenotazioni ti serve un account aziendale attivo (Platinum).';
+      'Con Base puoi organizzare eventi ed esperienze gratuiti. Per far pagare biglietti o prenotazioni serve un account aziendale attivo (Silver, Gold o Platinum).';
 
   @override
   String get paidBusinessPausedNote =>
-      'La tua attività è sospesa: rinnova Platinum per vendere di nuovo biglietti a pagamento.';
+      'La tua attività è sospesa: rinnova Silver, Gold o Platinum per vendere di nuovo biglietti a pagamento.';
 
   @override
   String get uexpBusinessRequiredTitle =>
@@ -24273,7 +24259,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get userErrorBusinessRequired =>
-      'Serve un account aziendale attivo (Platinum).';
+      'Serve un account aziendale attivo (Silver, Gold o Platinum).';
 
   @override
   String get supportPriorityBanner =>
@@ -25011,4 +24997,11 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get uexpPaymentLinkNotAcceptedTitle =>
       'Collega un fornitore di pagamento';
+
+  @override
+  String get listingHiddenByPlanBadge => 'Nascosto: piano cambiato';
+
+  @override
+  String get listingHiddenByPlanBody =>
+      'Nascosto perché il tuo piano è cambiato e consente meno annunci attivi. Passa a un piano superiore per ripristinarlo.';
 }

@@ -37,8 +37,10 @@ export const REASON = {
   unknownFeature: 'unknown-feature',
   /** The feature is not part of the caller's (effective) membership tier. */
   tierRequired: 'tier-required',
-  /** The feature needs an ACTIVE business account (isBusiness + Platinum). */
+  /** The feature needs an ACTIVE business account (isBusiness + Silver and up). */
   businessRequired: 'business-required',
+  /** The feature is no longer sold (e.g. 'extra_event', retired 2026-10-14). */
+  featureRetired: 'feature-retired',
 } as const;
 
 /**

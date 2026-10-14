@@ -395,7 +395,7 @@ class _DetailViewState extends State<_DetailView> {
                   sliver: SliverList(
                     delegate: SliverChildListDelegate([
                       if (e.isHidden && e.hostId == widget.currentUserId)
-                        _hiddenNotice(l),
+                        _hiddenNotice(l, e),
                       _header(e, l),
                       const SizedBox(height: 16),
                       _priceCard(e, l),
@@ -593,7 +593,7 @@ class _DetailViewState extends State<_DetailView> {
     );
   }
 
-  Widget _hiddenNotice(AppLocalizations l) => Container(
+  Widget _hiddenNotice(AppLocalizations l, UserExperience e) => Container(
         margin: const EdgeInsets.only(bottom: 16),
         padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
@@ -605,7 +605,10 @@ class _DetailViewState extends State<_DetailView> {
           const Icon(Icons.visibility_off, color: AppColors.errorRed),
           const SizedBox(width: 10),
           Expanded(
-            child: Text(l.uexpHiddenNotice,
+            child: Text(
+                e.isHiddenByDowngrade
+                    ? l.listingHiddenByPlanBody
+                    : l.uexpHiddenNotice,
                 style: const TextStyle(color: AppColors.textSecondary)),
           ),
         ]),
@@ -629,7 +632,7 @@ class _DetailViewState extends State<_DetailView> {
             Chip(
               visualDensity: VisualDensity.compact,
               backgroundColor: AppColors.warningAmber.withValues(alpha: 0.15),
-              label: Text(ExperienceL10n.status(l, e.status),
+              label: Text(ExperienceL10n.statusOf(l, e),
                   style: const TextStyle(color: AppColors.warningAmber)),
             ),
         ]),

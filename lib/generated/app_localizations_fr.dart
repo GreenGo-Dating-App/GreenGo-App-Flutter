@@ -10502,15 +10502,15 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get guideTiersItem1 =>
-      'Silver : 50 nouvelles connexions par jour, 3 événements en cours, groupes illimités, 1 boost de profil gratuit et 300 pièces par mois, et le mode voyage pour 100 pièces par jour.';
+      'Silver : 50 nouvelles connexions par jour, 5 événements et 5 expériences actifs en même temps, groupes illimités, un compte professionnel pour vendre des billets, 1 boost de profil gratuit et 300 pièces par mois, et le mode voyage pour 100 pièces par jour.';
 
   @override
   String get guideTiersItem2 =>
-      'Gold : tout Silver plus 200 nouvelles connexions par jour, 5 événements en cours, 4 boosts gratuits et 400 pièces par mois, le mode fantôme et une assistance prioritaire.';
+      'Gold : tout ce que propose Silver, plus 200 nouvelles connexions par jour, 10 événements et 10 expériences actifs en même temps, 4 boosts gratuits et 400 pièces par mois, le mode fantôme et un support prioritaire.';
 
   @override
   String get guideTiersItem3 =>
-      'Platinum : tout Gold plus connexions et événements illimités, 30 boosts gratuits et 500 pièces par mois, le mode voyage gratuit, un compte professionnel et des statistiques.';
+      'Platinum : tout ce que propose Gold, plus connexions, événements et expériences illimités, 30 boosts gratuits et 500 pièces par mois, le mode voyage gratuit et les statistiques professionnelles.';
 
   @override
   String get guideTiersItem4 =>
@@ -11229,8 +11229,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get tierLimitTitle => 'Améliorez votre offre pour en créer plus';
 
   @override
-  String tierLimitEventsBody(int max) {
-    return 'Votre offre autorise $max événements. Améliorez-la pour en créer plus.';
+  String tierLimitEventsBody(int max, int count) {
+    return 'Tu as $count événements actifs et ta formule en permet $max en même temps. Termine ou supprime-en un, ou passe à une formule supérieure pour en créer davantage.';
   }
 
   @override
@@ -11811,7 +11811,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get becomeBusinessConfirmMessage =>
-      'C\'est définitif : ton compte devient un compte professionnel public et ne peut pas redevenir un compte personnel. Les outils professionnels fonctionnent tant que ton abonnement Platinum est actif ; s\'il expire, ils sont mis en pause jusqu\'au renouvellement.';
+      'C’est définitif : ton compte devient un compte professionnel public et ne pourra plus redevenir personnel. Les outils professionnels fonctionnent tant que ton abonnement Silver, Gold ou Platinum est actif ; s’il expire, ils sont mis en pause jusqu’au renouvellement.';
 
   @override
   String get becomeBusinessConfirmAction => 'Rendre permanent';
@@ -11829,7 +11829,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get businessRequiresPlatinum =>
-      'Les comptes professionnels sont une fonctionnalité Platinum. Améliore ton offre pour débloquer ta vitrine, tes abonnés et la capture de prospects.';
+      'Les comptes professionnels nécessitent un abonnement Silver, Gold ou Platinum. Améliore ton offre pour débloquer ta vitrine, tes abonnés, la capture de prospects et les billets payants.';
 
   @override
   String get viewStorefront => 'Voir la vitrine';
@@ -12524,10 +12524,10 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get businessPausedSubtitle =>
-      'Vos fonctionnalités professionnelles sont en pause car votre abonnement Platinum a expiré. Renouvelez Platinum pour restaurer votre vitrine, vos statistiques, vos prospects et vos promotions.';
+      'Tes fonctionnalités professionnelles sont en pause car ton abonnement payant a expiré. Renouvelle Silver, Gold ou Platinum pour retrouver ta vitrine, tes prospects, tes promotions et les billets payants.';
 
   @override
-  String get businessReactivate => 'Renouveler Platinum';
+  String get businessReactivate => 'Renouveler l’abonnement';
 
   @override
   String get eventsBoostChooseDuration => 'Choisissez la durée du boost';
@@ -12686,14 +12686,6 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get renewMembership => 'Renouveler l\'abonnement';
-
-  @override
-  String get extraEventTitle => 'Événement supplémentaire';
-
-  @override
-  String extraEventBody(int cost) {
-    return 'Vous avez atteint votre limite d\'événements gratuits. Créer un événement supplémentaire pour $cost pièces ?';
-  }
 
   @override
   String get accountBannedTitle => 'Compte banni définitivement';
@@ -12960,7 +12952,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get communitiesTipHint => 'Partagez une astuce utile…';
 
   @override
-  String get shopEventsCreate => 'Evenements que vous pouvez creer';
+  String get shopEventsCreate => 'Événements actifs en même temps';
 
   @override
   String get shopGroupsCreate => 'Groupes que vous pouvez créer';
@@ -14505,17 +14497,11 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get uexpLimitFreeBody =>
-      'Proposer des expériences est disponible avec un abonnement Silver, Gold ou Platinum.';
+      'Pour proposer des expériences, il te faut une formule. Base te permet d’en proposer 1 gratuite ; Silver, Gold et Platinum te permettent d’en proposer davantage et d’accepter des réservations payantes.';
 
   @override
-  String uexpLimitReachedBody(int limit) {
-    String _temp0 = intl.Intl.pluralLogic(
-      limit,
-      locale: localeName,
-      other: 'Votre formule permet $limit expériences.',
-      one: 'Votre formule permet 1 expérience.',
-    );
-    return '$_temp0 Passez à une formule supérieure pour en créer davantage.';
+  String uexpLimitReachedBody(int limit, int count) {
+    return 'Tu as $count expériences actives et ta formule en permet $limit en même temps. Supprime-en une, ou passe à une formule supérieure pour en créer davantage.';
   }
 
   @override
@@ -14523,7 +14509,7 @@ class AppLocalizationsFr extends AppLocalizations {
       'Passez à la formule supérieure pour créer plus d’expériences';
 
   @override
-  String get shopExperiencesCreate => 'Expériences que vous pouvez créer';
+  String get shopExperiencesCreate => 'Expériences actives en même temps';
 
   @override
   String get uexpHostedBy => 'Proposée par';
@@ -22992,11 +22978,11 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get becomeBusinessOneWayHint =>
-      'Nécessite Platinum. Passage unique : il ne peut pas être annulé.';
+      'Nécessite Silver, Gold ou Platinum. Mise à niveau unique : elle est irréversible.';
 
   @override
   String get businessPermanentInfo =>
-      'Ton compte est définitivement un compte professionnel et ne peut pas redevenir personnel. Les outils professionnels fonctionnent tant que Platinum est actif ; s\'il expire, ils sont en pause jusqu\'au renouvellement.';
+      'Ton compte est définitivement un compte professionnel et ne peut pas redevenir personnel. Les outils professionnels fonctionnent tant que Silver, Gold ou Platinum est actif ; s’il expire, ils sont en pause jusqu’au renouvellement.';
 
   @override
   String get paidBusinessOnlyNote =>
@@ -23004,11 +22990,11 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get paidBusinessOnlyBody =>
-      'Tout le monde peut organiser des événements et expériences gratuits. Pour faire payer des billets ou des réservations, il te faut un compte professionnel actif (Platinum).';
+      'Avec Base, tu peux organiser des événements et des expériences gratuits. Pour faire payer des billets ou des réservations, il te faut un compte professionnel actif (Silver, Gold ou Platinum).';
 
   @override
   String get paidBusinessPausedNote =>
-      'Ton entreprise est en pause : renouvelle Platinum pour vendre à nouveau des billets payants.';
+      'Ton entreprise est en pause : renouvelle Silver, Gold ou Platinum pour vendre à nouveau des billets payants.';
 
   @override
   String get uexpBusinessRequiredTitle =>
@@ -24384,7 +24370,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get userErrorBusinessRequired =>
-      'Il faut un compte professionnel actif (Platinum).';
+      'Il faut un compte professionnel actif (Silver, Gold ou Platinum).';
 
   @override
   String get supportPriorityBanner =>
@@ -25122,4 +25108,11 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get uexpPaymentLinkNotAcceptedTitle =>
       'Connectez un prestataire de paiement';
+
+  @override
+  String get listingHiddenByPlanBadge => 'Masqué : formule modifiée';
+
+  @override
+  String get listingHiddenByPlanBody =>
+      'Masqué car ta formule a changé et autorise moins d’annonces actives. Passe à une formule supérieure pour le rétablir.';
 }

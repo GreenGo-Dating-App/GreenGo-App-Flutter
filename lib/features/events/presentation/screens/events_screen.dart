@@ -34,7 +34,6 @@ import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/services/location_share_service.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/services/tier_gate.dart';
-import '../../../../core/services/tier_limits_service.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
@@ -101,12 +100,6 @@ import '../../../../core/utils/grid_columns.dart';
 /// Coin cost for an organizer to feature ("Feature this event") their event in
 /// the Explore featured carousel for 7 days. Pure revenue, zero run-cost.
 const int kFeatureEventCost = 100; // adjustable
-
-/// Coin cost to create an EXTRA event beyond the free per-tier allowance
-/// ([TierEntitlements.maxEvents]). Base 1 / Silver 3 / Gold 5 free ongoing
-/// events; Platinum is unlimited (never charged). Each additional ongoing
-/// event costs this many coins.
-const int kExtraEventCost = 50; // adjustable
 
 /// Events Screen - Discover local events and activities
 ///
@@ -1902,7 +1895,16 @@ Widget buildEventStatusBadges(BuildContext context, Event event,
         ),
       );
 
-  if (event.status == EventStatus.draft) {
+  if (event.hiddenByDowngrade) {
+    // Only the organizer ever sees a hidden event in a list (it is a draft
+    // to everyone else): say why, and how to bring it back.
+    badges.add(Tooltip(
+      message: l10n.listingHiddenByPlanBody,
+      triggerMode: TooltipTriggerMode.tap,
+      child: pill(l10n.listingHiddenByPlanBadge, AppColors.warningAmber,
+          Icons.visibility_off_outlined),
+    ));
+  } else if (event.status == EventStatus.draft) {
     badges.add(pill(l10n.eventsStatusDraft, AppColors.textTertiary,
         Icons.edit_note));
   } else if (event.isPendingSchedule) {
@@ -5193,42 +5195,6 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     if (confirmed == true) widget.onEventDeleted?.call();
   }
 
-  /// Insufficient coins for the extra-event fee → offer to buy more, routing
-  /// to the coin market (mirrors the boost flow's buy-coins prompt).
-  Future<void> _promptBuyCoinsForExtraEvent(BuildContext context) async {
-    final l10n = AppLocalizations.of(context)!;
-    final go = await showDialog<bool>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: Text(l10n.eventsInsufficientCoins,
-            style: const TextStyle(color: AppColors.textPrimary)),
-        content: Text(l10n.eventsBuyCoinsPrompt,
-            style: const TextStyle(color: AppColors.textSecondary)),
-        actions: [
-          TextButton(
-              onPressed: () => Navigator.pop(ctx, false),
-              child: Text(l10n.groupCancel)),
-          TextButton(
-              onPressed: () => Navigator.pop(ctx, true),
-              child: Text(l10n.eventsBuyCoins,
-                  style: const TextStyle(color: AppColors.richGold))),
-        ],
-      ),
-    );
-    if (go != true || !mounted) return;
-    await Navigator.of(context).push(
-      MaterialPageRoute<void>(
-        builder: (_) => BlocProvider<CoinBloc>(
-          create: (_) => sl<CoinBloc>()
-            ..add(LoadCoinBalance(widget.currentUserId))
-            ..add(const LoadAvailablePackages()),
-          child: CoinShopScreen(userId: widget.currentUserId),
-        ),
-      ),
-    );
-  }
-
   Future<void> _submit(
       {required EventStatus status, DateTime? publishAt}) async {
     if (_uploading || _saving) return;
@@ -5272,64 +5238,15 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       }
       if (!mounted) return;
 
-      // 2) Extra-event paywall. Free allowance = TierEntitlements.maxEvents
-      //    (Base 1 / Silver 3 / Gold 5; Platinum/test = unlimited → always
-      //    free). Within the allowance the event is free; beyond it, each
-      //    additional ongoing event costs [kExtraEventCost] coins.
-      final events =
-          await TierLimitsService().canCreateEvent(widget.currentUserId);
-      if (!mounted) return;
-      final needsPaywall = events.max != null && !events.allowed;
-      if (needsPaywall) {
-        final l10n = AppLocalizations.of(context)!;
-        // Can the user afford the extra-event fee?
-        final afford = await sl<CanAffordFeature>()(
-            userId: widget.currentUserId, cost: kExtraEventCost);
-        if (!mounted) return;
-        if (!afford.fold((_) => false, (v) => v)) {
-          await _promptBuyCoinsForExtraEvent(context);
-          return;
-        }
-        // Confirm the coin spend ("Extra event · 50 coins").
-        final confirmed = await showDialog<bool>(
-          context: context,
-          builder: (ctx) => AlertDialog(
-            backgroundColor: AppColors.backgroundCard,
-            title: Text(l10n.extraEventTitle,
-                style: const TextStyle(color: AppColors.textPrimary)),
-            content: Text(
-              l10n.extraEventBody(kExtraEventCost),
-              style: const TextStyle(color: AppColors.textSecondary),
-            ),
-            actions: [
-              TextButton(
-                onPressed: () => Navigator.pop(ctx, false),
-                child: Text(l10n.groupCancel),
-              ),
-              ElevatedButton(
-                onPressed: () => Navigator.pop(ctx, true),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.richGold,
-                  foregroundColor: AppColors.deepBlack,
-                ),
-                child: Text(l10n.eventsConfirmAction),
-              ),
-            ],
-          ),
-        );
-        if (confirmed != true || !mounted) return;
-        // Charge the fee; only proceed to create on a successful charge.
-        final charge = await sl<PurchaseFeature>()(
-          userId: widget.currentUserId,
-          featureName: 'extra_event',
-          cost: kExtraEventCost,
-        );
-        if (!mounted) return;
-        if (!charge.fold((_) => false, (_) => true)) {
-          unawaited(showUserErrorMessage(context, l10n.eventsInsufficientCoins));
-          return;
-        }
+      // 2) Active-event allowance (owner rule 2026-10-14): Base 1, Silver 5,
+      //    Gold 10 active events at a time, Platinum unlimited. Ending or
+      //    deleting an event frees its slot; extra events cannot be bought.
+      //    The rules (eventCapOk) refuse the same create server-side.
+      if (!await TierGate()
+          .ensureCreateEvent(context, widget.currentUserId)) {
+        return;
       }
+      if (!mounted) return;
     }
 
     // Nudity / explicit-content check on every event image before upload.

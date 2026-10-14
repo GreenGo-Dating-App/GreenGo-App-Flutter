@@ -37,6 +37,7 @@ import { ticketDeps } from '../../src/ticket_payments/providers';
 import { createUserExperience } from '../../src/user_experiences/createUserExperience';
 import { publishUserExperience } from '../../src/user_experiences/safetyCallables';
 import { HOST_AGREEMENT_VERSION } from '../../src/user_experiences/safety';
+import { reconcileListings } from '../../src/entitlements/downgrade';
 
 const db = admin.firestore();
 const TS = admin.firestore.Timestamp;
@@ -104,6 +105,8 @@ const PLAT = 'platinum01'; // Platinum, not (yet) a business
 const BIZ = 'business01'; // active business
 const LAPSED = 'lapsed01'; // business whose Platinum expired
 const BUYER = 'buyer01';
+const SILVER_BIZ = 'silverbiz01'; // active Silver business (owner rule 2026-10-14)
+const BASE_BIZ = 'basebiz01'; // business that dropped to Base: free listings only
 
 const future = () => TS.fromMillis(Date.now() + YEAR);
 const past = () => TS.fromMillis(Date.now() - YEAR);
@@ -121,14 +124,28 @@ beforeEach(async () => {
     displayName: 'Lapsed', isBusiness: true, membershipTier: 'PLATINUM', membershipEndDate: past(), ...idDoc,
   });
   await db.doc(`profiles/${BUYER}`).set({ displayName: 'Buyer', hasBaseMembership: true, baseMembershipEndDate: future() });
+  await db.doc(`profiles/${SILVER_BIZ}`).set({
+    displayName: 'SilverBiz', isBusiness: true, membershipTier: 'SILVER', membershipEndDate: future(), ...idDoc,
+  });
+  await db.doc(`profiles/${BASE_BIZ}`).set({
+    displayName: 'BaseBiz', isBusiness: true, membershipTier: 'FREE',
+    hasBaseMembership: true, baseMembershipEndDate: future(), ...idDoc,
+  });
 });
 afterAll(() => fft.cleanup());
 
 // ═══════════════════════════════════════════════ profiles
 
-describe('profiles: becoming a business is permanent and Platinum-only', () => {
-  test('a non-Platinum account cannot make itself a business', async () => {
+describe('profiles: becoming a business is permanent and needs Silver, Gold or Platinum', () => {
+  test('no plan / Base / a lapsed paid tier cannot make itself a business; Silver and Gold can', async () => {
     expect(await clientWrite(PERSONAL, `profiles/${PERSONAL}`, { isBusiness: true }, ['isBusiness'])).toBe(403);
+    await db.doc(`profiles/${PERSONAL}`).set({ hasBaseMembership: true, baseMembershipEndDate: future() }, { merge: true });
+    expect(await clientWrite(PERSONAL, `profiles/${PERSONAL}`, { isBusiness: true }, ['isBusiness'])).toBe(403);
+    for (const tier of ['SILVER', 'GOLD']) {
+      const uid = `paid_${tier}`;
+      await db.doc(`profiles/${uid}`).set({ displayName: tier, membershipTier: tier, membershipEndDate: future() });
+      expect(await clientWrite(uid, `profiles/${uid}`, { isBusiness: true }, ['isBusiness'])).toBe(200);
+    }
     // a lapsed Platinum is not enough either
     await db.doc(`profiles/${PLAT}`).set({ membershipEndDate: past() }, { merge: true });
     expect(await clientWrite(PLAT, `profiles/${PLAT}`, { isBusiness: true }, ['isBusiness'])).toBe(403);
@@ -182,6 +199,10 @@ describe('events: paid only by an active business', () => {
     expect(await clientWrite(BIZ, 'events/p5', ev(BIZ, { price: 10, ticketProvider: 'stripe' }))).toBe(200);
     // Payment links are no longer accepted (owner rule 2026-10-14), business or not.
     expect(await clientWrite(BIZ, 'events/p6', ev(BIZ, { price: 10, ticketProvider: 'link' }))).toBe(403);
+    // Owner rule 2026-10-14: a Silver business sells too; a business on Base never does.
+    expect(await clientWrite(SILVER_BIZ, 'events/p6', ev(SILVER_BIZ, { price: 10, ticketProvider: 'stripe' }))).toBe(200);
+    expect(await clientWrite(BASE_BIZ, 'events/p7', ev(BASE_BIZ, { price: 10, ticketProvider: 'stripe' }))).toBe(403);
+    expect(await clientWrite(BASE_BIZ, 'events/f7', ev(BASE_BIZ, { price: 0 }))).toBe(200);
   });
 
   test('update: a free event cannot be turned paid by a non-business (organizer or co-owner)', async () => {
@@ -279,7 +300,9 @@ describe('user_experiences: paid only by an active business', () => {
 
 describe('new sales of non-business listings are refused with a clear reason', () => {
   test('createTicketCheckout: seller_not_business for a personal / lapsed organizer', async () => {
-    for (const org of [PERSONAL, LAPSED]) {
+    // BASE_BIZ: a business that dropped to Base keeps its paid listing
+    // visible but sells nothing new (owner rule 2026-10-14).
+    for (const org of [PERSONAL, LAPSED, BASE_BIZ]) {
       await db.doc(`payment_accounts/${org}`).set({ uid: org, stripe: { accountId: 'acct_x', chargesEnabled: true, detailsSubmitted: true, status: 'ready', country: 'BR' } });
       await db.doc(`events/e_${org}`).set({
         organizerId: org, title: 'Legacy paid', price: 25, currency: 'R$', maxAttendees: 0, attendeeCount: 0,
@@ -291,5 +314,110 @@ describe('new sales of non-business listings are refused with a clear reason', (
     }
     // nothing was held for the refused sales
     expect((await db.doc(`ticket_inventory/event_e_${PERSONAL}`).get()).exists).toBe(false);
+  });
+});
+
+// ═══════════════════════════════════════════════ plan downgrade (owner rule 2026-10-14)
+
+describe('plan drops hide listings over the new allowance; upgrades restore them', () => {
+  const GOLDY = 'goldhost01';
+  const mkEvents = async (n: number) => {
+    for (let i = 0; i < n; i++) {
+      await db.doc(`events/g${i}`).set({
+        ...ev(GOLDY, { price: 0 }), status: 'published',
+        createdAt: TS.fromMillis(Date.now() - (n - i) * HOUR), // g{n-1} newest
+        startDate: TS.fromMillis(Date.now() + HOUR), endDate: TS.fromMillis(Date.now() + 3 * HOUR),
+      });
+    }
+  };
+  const mkExperiences = async (n: number) => {
+    for (let i = 0; i < n; i++) {
+      await db.doc(`user_experiences/x${i}`).set({
+        ...experience(GOLDY), status: i % 2 ? 'published' : 'draft',
+        createdAt: TS.fromMillis(Date.now() - (n - i) * HOUR),
+      });
+    }
+  };
+  const visibleEvents = async () => (await db.collection('events').where('organizerId', '==', GOLDY).get())
+    .docs.filter((d) => d.get('hiddenByDowngrade') !== true).map((d) => d.id).sort();
+  const visibleExperiences = async () => (await db.collection('user_experiences').where('hostId', '==', GOLDY).get())
+    .docs.filter((d) => d.get('hiddenByDowngrade') !== true).map((d) => d.id).sort();
+  const setTier = (data: Record<string, any>) => db.doc(`profiles/${GOLDY}`).set(data, { merge: true });
+
+  beforeEach(async () => {
+    await db.doc(`profiles/${GOLDY}`).set({ displayName: 'Gold host', membershipTier: 'GOLD', membershipEndDate: future(), ...idDoc });
+    await mkEvents(7);
+    await mkExperiences(7);
+  });
+
+  test('Gold -> Silver keeps the 5 newest; -> Base keeps 1; -> no plan keeps 0; back up restores newest first', async () => {
+    expect((await reconcileListings(GOLDY)).eventsHidden).toBe(0);
+
+    await setTier({ membershipTier: 'SILVER' });
+    // Dry run (backfill script): counts, writes nothing.
+    expect(await reconcileListings(GOLDY, { dryRun: true })).toMatchObject({ eventsHidden: 2, experiencesHidden: 2 });
+    expect((await visibleEvents()).length).toBe(7);
+    let r = await reconcileListings(GOLDY);
+    expect(r).toMatchObject({ eventsHidden: 2, experiencesHidden: 2 });
+    expect(await visibleEvents()).toEqual(['g2', 'g3', 'g4', 'g5', 'g6']);
+    expect(await visibleExperiences()).toEqual(['x2', 'x3', 'x4', 'x5', 'x6']);
+    const hid = (await db.doc('events/g0').get()).data()!;
+    expect(hid).toMatchObject({ status: 'draft', hiddenByDowngrade: true, preDowngradeStatus: 'published' });
+    const hx = (await db.doc('user_experiences/x1').get()).data()!;
+    expect(hx).toMatchObject({ status: 'hidden', hiddenByDowngrade: true, moderation: { reason: 'plan_downgrade', previousStatus: 'published' } });
+    // Idempotent.
+    expect(await reconcileListings(GOLDY)).toEqual({ eventsHidden: 0, eventsRestored: 0, experiencesHidden: 0, experiencesRestored: 0 });
+
+    await setTier({ membershipTier: 'FREE', hasBaseMembership: true, baseMembershipEndDate: future() });
+    await reconcileListings(GOLDY);
+    expect(await visibleEvents()).toEqual(['g6']);
+    expect(await visibleExperiences()).toEqual(['x6']);
+
+    await setTier({ hasBaseMembership: false });
+    await reconcileListings(GOLDY);
+    expect(await visibleEvents()).toEqual([]);
+    expect(await visibleExperiences()).toEqual([]);
+
+    await setTier({ membershipTier: 'SILVER', membershipEndDate: future() });
+    r = await reconcileListings(GOLDY);
+    expect(r).toMatchObject({ eventsRestored: 5, experiencesRestored: 5 });
+    expect(await visibleEvents()).toEqual(['g2', 'g3', 'g4', 'g5', 'g6']);
+    expect((await db.doc('events/g6').get()).data()).toMatchObject({ status: 'published' });
+    expect((await db.doc('events/g6').get()).data()!.preDowngradeStatus).toBeUndefined();
+    expect((await db.doc('user_experiences/x5').get()).data()).toMatchObject({ status: 'published' });
+    expect((await db.doc('user_experiences/x4').get()).data()).toMatchObject({ status: 'draft' });
+
+    await setTier({ membershipTier: 'PLATINUM' });
+    await reconcileListings(GOLDY);
+    expect((await visibleEvents()).length).toBe(7);
+    expect((await visibleExperiences()).length).toBe(7);
+  });
+
+  test('the host cannot touch the downgrade fields or re-publish a hidden listing', async () => {
+    await setTier({ membershipTier: 'FREE', hasBaseMembership: true, baseMembershipEndDate: future() });
+    await reconcileListings(GOLDY);
+    expect(await clientWrite(GOLDY, 'events/g0', { status: 'published' }, ['status'])).toBe(403);
+    expect(await clientWrite(GOLDY, 'events/g0', { hiddenByDowngrade: false }, ['hiddenByDowngrade'])).toBe(403);
+    expect(await clientWrite(GOLDY, 'events/g0', { title: 'Still mine' }, ['title'])).toBe(200);
+    expect(await clientWrite(GOLDY, 'events/new1', { ...ev(GOLDY, { price: 0 }), hiddenByDowngrade: true })).toBe(403);
+    expect(await clientWrite(GOLDY, 'user_experiences/x0', { status: 'published' }, ['status'])).toBe(403);
+    expect(await clientWrite(GOLDY, 'user_experiences/x0', { hiddenByDowngrade: false }, ['hiddenByDowngrade'])).toBe(403);
+    // Ticket holders can still open a hidden event by id.
+    expect(await clientRead(BUYER, 'events/g0')).toBe(200);
+  });
+
+  test('createUserExperience: the cap is active experiences; downgrade-hidden ones free the slot', async () => {
+    const free = { ...experience('ignored'), mainPhotoUrl: 'https://cdn.example.com/a.jpg' };
+    delete (free as any).hostId;
+    delete (free as any).status;
+    await db.doc(`user_experience_counts/${GOLDY}`).set({ count: 7 });
+    await setTier({ membershipTier: 'FREE', hasBaseMembership: true, baseMembershipEndDate: future() });
+    // 7 visible on Base (not reconciled yet): over the cap.
+    expect((await refused(call(createUserExperience, free, GOLDY))).reason).toBe('experience_limit');
+    await reconcileListings(GOLDY); // 6 hidden, 1 active
+    expect((await refused(call(createUserExperience, free, GOLDY))).reason).toBe('experience_limit');
+    await db.doc('user_experiences/x6').delete(); // deleting frees the slot
+    await db.doc(`user_experience_counts/${GOLDY}`).set({ count: 6 });
+    expect((await call(createUserExperience, free, GOLDY)).status).toBe('draft');
   });
 });

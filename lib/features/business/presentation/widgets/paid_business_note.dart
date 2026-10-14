@@ -9,7 +9,7 @@ import '../screens/business_account_screen.dart';
 /// Shown in the event / experience wizards instead of the price options when
 /// the user may not sell (see [PaidListingAccess]): "Paid tickets are
 /// available for business accounts" + a link to Become a business (or, for a
-/// lapsed business, to renew Platinum). [onReturn] runs after the user comes
+/// lapsed business, to renew a paid tier). [onReturn] runs after the user comes
 /// back so the wizard can re-check the access.
 class PaidBusinessNote extends StatelessWidget {
   const PaidBusinessNote({

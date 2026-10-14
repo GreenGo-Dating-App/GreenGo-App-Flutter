@@ -10458,15 +10458,15 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get guideTiersItem1 =>
-      'Silver: 50 conexiones nuevas al día, 3 eventos activos, grupos ilimitados, 1 impulso de perfil gratis y 300 monedas al mes, y modo viaje por 100 monedas al día.';
+      'Silver: 50 conexiones nuevas al día, 5 eventos y 5 experiencias activos a la vez, grupos ilimitados, una cuenta de empresa para vender entradas, 1 impulso de perfil gratis y 300 monedas al mes, y modo viaje por 100 monedas al día.';
 
   @override
   String get guideTiersItem2 =>
-      'Gold: todo lo de Silver más 200 conexiones nuevas al día, 5 eventos activos, 4 impulsos gratis y 400 monedas al mes, modo fantasma y soporte prioritario.';
+      'Gold: todo lo de Silver más 200 conexiones nuevas al día, 10 eventos y 10 experiencias activos a la vez, 4 impulsos gratis y 400 monedas al mes, modo fantasma y soporte prioritario.';
 
   @override
   String get guideTiersItem3 =>
-      'Platinum: todo lo de Gold más conexiones nuevas y eventos ilimitados, 30 impulsos gratis y 500 monedas al mes, modo viaje gratis, cuenta de empresa y estadísticas.';
+      'Platinum: todo lo de Gold más conexiones nuevas, eventos y experiencias ilimitados, 30 impulsos gratis y 500 monedas al mes, modo viaje gratis y estadísticas de empresa.';
 
   @override
   String get guideTiersItem4 =>
@@ -11175,8 +11175,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get tierLimitTitle => 'Mejora tu plan para crear más';
 
   @override
-  String tierLimitEventsBody(int max) {
-    return 'Tu plan permite $max eventos. Mejóralo para crear más.';
+  String tierLimitEventsBody(int max, int count) {
+    return 'Tienes $count eventos activos y tu plan permite $max a la vez. Finaliza o elimina uno, o mejora tu plan para crear más.';
   }
 
   @override
@@ -11758,7 +11758,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get becomeBusinessConfirmMessage =>
-      'Esto es permanente: tu cuenta se convierte en una cuenta de empresa pública y no puede volver a ser una cuenta personal. Las herramientas de empresa funcionan mientras tu membresía Platinum esté activa; si caduca, se pausan hasta que la renueves.';
+      'Esto es permanente: tu cuenta pasa a ser una cuenta de empresa pública y no podrá volver a ser personal. Las herramientas de empresa funcionan mientras tu membresía Silver, Gold o Platinum esté activa; si caduca, quedan en pausa hasta que la renueves.';
 
   @override
   String get becomeBusinessConfirmAction => 'Hacerlo permanente';
@@ -11776,7 +11776,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get businessRequiresPlatinum =>
-      'Las cuentas de empresa son una función Platinum. Mejora para desbloquear tu escaparate, seguidores y captación de clientes.';
+      'Las cuentas de empresa necesitan una membresía Silver, Gold o Platinum. Mejora para desbloquear tu escaparate, seguidores, captación de clientes y entradas de pago.';
 
   @override
   String get viewStorefront => 'Ver escaparate';
@@ -12469,10 +12469,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get businessPausedSubtitle =>
-      'Tus funciones de negocio están en pausa porque tu membresía Platinum expiró. Renueva Platinum para restaurar tu tienda, analíticas, leads y promociones.';
+      'Tus funciones de empresa están en pausa porque tu membresía de pago caducó. Renueva Silver, Gold o Platinum para recuperar tu escaparate, clientes potenciales, promociones y entradas de pago.';
 
   @override
-  String get businessReactivate => 'Renovar Platinum';
+  String get businessReactivate => 'Renovar membresía';
 
   @override
   String get eventsBoostChooseDuration => 'Elige la duración del boost';
@@ -12632,14 +12632,6 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get renewMembership => 'Renovar membresía';
-
-  @override
-  String get extraEventTitle => 'Evento adicional';
-
-  @override
-  String extraEventBody(int cost) {
-    return 'Has alcanzado tu límite de eventos gratuitos. ¿Crear un evento adicional por $cost monedas?';
-  }
 
   @override
   String get accountBannedTitle => 'Cuenta baneada permanentemente';
@@ -12905,7 +12897,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get communitiesTipHint => 'Comparte un consejo útil…';
 
   @override
-  String get shopEventsCreate => 'Eventos que puedes crear';
+  String get shopEventsCreate => 'Eventos activos a la vez';
 
   @override
   String get shopGroupsCreate => 'Grupos que puedes crear';
@@ -14442,17 +14434,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get uexpLimitFreeBody =>
-      'Organizar experiencias está disponible con una membresía Silver, Gold o Platinum.';
+      'Para ofrecer experiencias necesitas un plan. Base te permite ofrecer 1 experiencia gratuita; Silver, Gold y Platinum te permiten ofrecer más y aceptar reservas de pago.';
 
   @override
-  String uexpLimitReachedBody(int limit) {
-    String _temp0 = intl.Intl.pluralLogic(
-      limit,
-      locale: localeName,
-      other: 'Tu plan permite $limit experiencias.',
-      one: 'Tu plan permite 1 experiencia.',
-    );
-    return '$_temp0 Mejora tu plan para crear más experiencias.';
+  String uexpLimitReachedBody(int limit, int count) {
+    return 'Tienes $count experiencias activas y tu plan permite $limit a la vez. Elimina una, o mejora tu plan para crear más.';
   }
 
   @override
@@ -14460,7 +14446,7 @@ class AppLocalizationsEs extends AppLocalizations {
       'Mejora tu plan para crear más experiencias';
 
   @override
-  String get shopExperiencesCreate => 'Experiencias que puedes crear';
+  String get shopExperiencesCreate => 'Experiencias activas a la vez';
 
   @override
   String get uexpHostedBy => 'Organizada por';
@@ -22855,11 +22841,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get becomeBusinessOneWayHint =>
-      'Requiere Platinum. Mejora única: no se puede deshacer.';
+      'Requiere Silver, Gold o Platinum. Mejora única: no se puede deshacer.';
 
   @override
   String get businessPermanentInfo =>
-      'Tu cuenta es una cuenta de empresa de forma permanente y no puede volver a ser personal. Las herramientas de empresa funcionan mientras Platinum esté activo; si caduca, se pausan hasta que lo renueves.';
+      'Tu cuenta es una cuenta de empresa de forma permanente y no puede volver a ser personal. Las herramientas de empresa funcionan mientras Silver, Gold o Platinum esté activo; si caduca, se pausan hasta que renueves.';
 
   @override
   String get paidBusinessOnlyNote =>
@@ -22867,11 +22853,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get paidBusinessOnlyBody =>
-      'Cualquiera puede organizar eventos y experiencias gratuitos. Para cobrar entradas o reservas necesitas una cuenta de empresa activa (Platinum).';
+      'Con Base puedes organizar eventos y experiencias gratuitos. Para cobrar entradas o reservas necesitas una cuenta de empresa activa (Silver, Gold o Platinum).';
 
   @override
   String get paidBusinessPausedNote =>
-      'Tu empresa está en pausa: renueva Platinum para volver a vender entradas de pago.';
+      'Tu empresa está en pausa: renueva Silver, Gold o Platinum para volver a vender entradas de pago.';
 
   @override
   String get uexpBusinessRequiredTitle =>
@@ -24242,7 +24228,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get userErrorBusinessRequired =>
-      'Necesitas una cuenta de empresa activa (Platinum).';
+      'Necesitas una cuenta de empresa activa (Silver, Gold o Platinum).';
 
   @override
   String get supportPriorityBanner =>
@@ -24978,4 +24964,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get uexpPaymentLinkNotAcceptedTitle => 'Conecta un proveedor de pagos';
+
+  @override
+  String get listingHiddenByPlanBadge => 'Oculto: cambió tu plan';
+
+  @override
+  String get listingHiddenByPlanBody =>
+      'Oculto porque tu plan cambió y permite menos publicaciones activas. Mejora tu plan para restaurarlo.';
 }

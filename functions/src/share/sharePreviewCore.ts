@@ -186,6 +186,8 @@ export function isTakenDown(d: Record<string, unknown>): boolean {
   if (d.copyrightHold) return true;
   if (d.safetyHold) return true;
   if (d.isHidden === true || d.hidden === true) return true;
+  // Hidden after the owner's plan dropped (entitlements/downgrade.ts).
+  if (d.hiddenByDowngrade === true) return true;
   if (d.isDeleted === true || millis(d.deletedAt) > 0) return true;
   const status = str(d.status);
   return status === 'hidden' || status === 'removed' || status === 'deleted' || status === 'suspended';

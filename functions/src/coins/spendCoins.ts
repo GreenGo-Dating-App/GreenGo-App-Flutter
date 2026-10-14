@@ -30,8 +30,9 @@
  *    free plan (refused with reason `tier-required`).
  *  - traveler: Silver and up; free for Platinum.
  *  - business_promotion: an ACTIVE business account only (`business-required`).
- *  - extra_event: the paid credit is recorded (`eventExtraCredits`) so the
- *    event rules / onEventWrittenUsage accept one event over the tier cap.
+ *  - extra_event: RETIRED (owner rule 2026-10-14). Events are capped per tier
+ *    with no way to buy more; the call is refused with `feature-retired`
+ *    before anything is charged (RETIRED_FEATURES).
  */
 
 import * as admin from 'firebase-admin';
@@ -80,7 +81,7 @@ interface FeatureDef {
  *    directMessage 50, incognito 30, traveler 100;
  *  - discovery_screen grid "see more" 10; network_discovery kCoinsToSeeMore 15;
  *  - TierEntitlements.ttsCostCoins 5 (1:1 and group chat TTS);
- *  - events_screen kExtraEventCost 50, boost options, kFeatureEventCost 100;
+ *  - events_screen boost options, kFeatureEventCost 100;
  *  - promotion_service kPromoteDurationOptions (business / event per days).
  * Changing a price here changes what users pay; keep the app labels in sync.
  */
@@ -95,7 +96,6 @@ export const FEATURE_PRICES: Record<string, FeatureDef> = {
   traveler: { price: 100, reason: 'travelerPurchase', effect: 'travelerPass' },
   tts_listen: { price: 5, reason: 'featurePurchase' },
   tts_listen_group: { price: 5, reason: 'featurePurchase' },
-  extra_event: { price: 50, reason: 'featurePurchase' },
   event_rsvp: { eventPrice: true, needsRelatedId: true, reason: 'featurePurchase' },
   event_boost: {
     options: { 1: 50, 6: 100, 12: 150, 24: 200, 72: 500, 168: 1000 },
@@ -112,6 +112,12 @@ export const FEATURE_PRICES: Record<string, FeatureDef> = {
     optionUnit: 'days', effect: 'businessPromotion', reason: 'featurePurchase',
   },
 };
+
+/**
+ * Features that are no longer sold. Older apps may still send them: they get a
+ * clear refusal (`feature-retired`) and are never charged.
+ */
+export const RETIRED_FEATURES: readonly string[] = ['extra_event'];
 
 /** Spellings the app has used for the same feature. */
 const FEATURE_ALIASES: Record<string, string> = {
@@ -152,6 +158,11 @@ export const spendCoins = onCall<SpendCoinsRequest>(
     try {
       const uid = await verifyAuth(request.auth);
       const data = request.data || ({} as SpendCoinsRequest);
+      const rawFeature = typeof data.featureId === 'string' ? data.featureId.trim().toLowerCase() : '';
+      if (RETIRED_FEATURES.includes(rawFeature)) {
+        throw refusal('failed-precondition', REASON.featureRetired,
+          `Feature retired: ${rawFeature}. Event limits come with the membership tier.`);
+      }
       const featureId = resolveFeatureId(data.featureId);
       if (!featureId) {
         throw refusal('invalid-argument', REASON.unknownFeature, `Unknown feature: ${String(data.featureId)}`);
@@ -244,7 +255,7 @@ export const spendCoins = onCall<SpendCoinsRequest>(
 
         // ---- membership perks ----
         const usageRef = db.collection(USAGE_COLLECTION).doc(uid);
-        const needsUsage = featureId === 'boost' || featureId === 'extra_event';
+        const needsUsage = featureId === 'boost';
         const usageSnap = needsUsage ? await tx.get(usageRef) : null;
         const usage = usageSnap?.data() || {};
         let freeBoost = false;
@@ -278,7 +289,7 @@ export const spendCoins = onCall<SpendCoinsRequest>(
         } else if (featureId === 'business_promotion') {
           if (!isBusinessActive(profileSnap.data(), new Date(nowMs))) {
             throw refusal('permission-denied', REASON.businessRequired,
-              'Promotion needs an active business account (Platinum).');
+              'Promotion needs an active business account (Silver, Gold or Platinum).');
           }
         }
 
@@ -324,13 +335,6 @@ export const spendCoins = onCall<SpendCoinsRequest>(
         // ---- debit ----
         let transactionId: string | null = null;
         let newBalance = total;
-        if (featureId === 'extra_event') {
-          // One paid event over the tier cap (consumed by onEventWrittenUsage).
-          tx.set(usageRef, {
-            eventExtraCredits: Number(usage.eventExtraCredits || 0) + 1,
-            updatedAt: now,
-          }, { merge: true });
-        }
         if (charge > 0) {
           const { batches } = fifoDraw(bal.coinBatches, charge);
           newBalance = total - charge;

@@ -31,10 +31,12 @@ class ExperienceAllowance {
   bool get allowed => limit == null || count < limit!;
 }
 
-/// Client-side tier gate for creating experiences (FREE 0 / SILVER 1 /
-/// GOLD 5 / PLATINUM ∞ / TEST ∞ / admin ∞, on the EFFECTIVE tier). The
-/// server enforces the same limit in `createUserExperience`; this only saves
-/// the user from filling in a form they can't submit.
+/// Client-side tier gate for creating experiences: ACTIVE experiences at a
+/// time (owner rule 2026-10-14) — no plan 0 (BaseMembershipGate), Base 1
+/// (free only), Silver 5, Gold 10, Platinum / TEST / admin ∞, on the
+/// EFFECTIVE tier. The server enforces the same limit in
+/// `createUserExperience`; this only saves the user from filling in a form
+/// they can't submit.
 class ExperienceCreationGate {
   ExperienceCreationGate({
     required UserExperiencesRepository repository,
@@ -103,7 +105,7 @@ class ExperienceCreationGate {
           : l10n.uexpUpgradeToCreateMore,
       description: (a.limit ?? 0) == 0
           ? l10n.uexpLimitFreeBody
-          : l10n.uexpLimitReachedBody(a.limit!),
+          : l10n.uexpLimitReachedBody(a.limit!, a.count),
       currentTier: a.tier,
       requiredTier: needed,
       userId: uid,

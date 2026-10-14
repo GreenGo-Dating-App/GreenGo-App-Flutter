@@ -20,18 +20,27 @@ class TierLimitResult {
 
   /// null = unlimited.
   final int? max;
+
+  /// How many more may be created now (null = unlimited).
+  int? get remaining {
+    final m = max;
+    if (m == null) return null;
+    return current >= m ? 0 : m - current;
+  }
 }
 
 /// Per-tier caps on how many events / groups a user can create.
 ///
-/// Caps ([TierEntitlements]):
-///   free (base): 1 ongoing event, 1 group
-///   silver:      3 ongoing events, unlimited groups
-///   gold:        5 ongoing events, unlimited groups
+/// Caps ([TierEntitlements], owner rule 2026-10-14):
+///   free (Base):   1 active event at a time, 1 group
+///   silver:        5 active events at a time, unlimited groups
+///   gold:          10 active events at a time, unlimited groups
 ///   platinum/test: unlimited events, unlimited groups
+/// (No plan at all cannot create events: BaseMembershipGate / the rules.)
 ///
-/// "Ongoing" = the event has not ended (or been cancelled); a recurring series
-/// counts once. The counts come from the SERVER-owned counters in
+/// "Active" = the event has not ended, been cancelled or deleted, and was not
+/// hidden by a plan downgrade; a recurring series counts once. There is no
+/// way to buy extra events. The counts come from the SERVER-owned counters in
 /// `entitlement_usage/{uid}` (functions/src/entitlements/usage.ts) - the same
 /// numbers the Firestore rules check when the event / group is created, so
 /// the app can't show "allowed" for a create the server will refuse. (The old
@@ -78,8 +87,7 @@ class TierLimitsService {
     }
   }
 
-  /// Whether [userId] may create another ONGOING event under their tier
-  /// (a paid extra-event credit not used yet also allows one).
+  /// Whether [userId] may create another ACTIVE event under their tier.
   Future<TierLimitResult> canCreateEvent(String userId) async {
     final tier = await _tierOf(userId);
     final max = maxEvents(tier);
@@ -90,7 +98,7 @@ class TierLimitsService {
     final usage = await _usage(userId);
     final current = ongoingEventSlotsFrom(usage, DateTime.now());
     return TierLimitResult(
-      allowed: current < max || extraEventCreditsLeftFrom(usage) > 0,
+      allowed: current < max,
       tier: tier,
       current: current,
       max: max,

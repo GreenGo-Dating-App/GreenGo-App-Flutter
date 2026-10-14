@@ -222,9 +222,17 @@ class UserExperiencesRemoteDataSource {
     }
   }
 
+  /// ACTIVE experiences of [hostId]: every one not deleted, minus those
+  /// hidden by a plan downgrade (they free their slot) - the number
+  /// createUserExperience checks against the tier's allowance.
   Future<int> countByHost(String hostId) async {
-    final agg = await _col.where('hostId', isEqualTo: hostId).count().get();
-    return agg.count ?? 0;
+    final mine = _col.where('hostId', isEqualTo: hostId);
+    final res = await Future.wait([
+      mine.count().get(),
+      mine.where('hiddenByDowngrade', isEqualTo: true).count().get(),
+    ]);
+    final active = (res[0].count ?? 0) - (res[1].count ?? 0);
+    return active < 0 ? 0 : active;
   }
 
   /// Calls [name]; maps the server's structured refusals to

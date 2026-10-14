@@ -157,10 +157,11 @@ class BusinessHubScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    // Business capabilities require an active Platinum membership. If Platinum
-    // has lapsed the account keeps its isBusiness flag but the storefront /
-    // analytics / leads / promote tools are paused — render a "renew Platinum"
+    // Business capabilities require an active Silver, Gold or Platinum
+    // membership. If it has lapsed the account keeps its isBusiness flag but
+    // the storefront / leads / promote tools are paused — render a "renew"
     // state INSTEAD of the tool tiles so a lapsed business can't reach them.
+    // (Analytics itself stays Platinum-only: analyticsEnabled.)
     final businessActive = TierEntitlements.isBusinessActive(
         profile.effectiveTier, profile.isBusiness);
     return Scaffold(

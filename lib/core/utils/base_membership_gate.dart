@@ -76,6 +76,9 @@ class BaseMembershipGate {
   /// 2026-10-13): Base or better, same predicate as [canParticipate],
   /// enforced by the event rules and `createUserExperience`. Editing an
   /// existing listing is never gated. An unknown profile is let through.
+  /// How MANY active listings each plan may have (Base 1 free-only, Silver
+  /// 5, Gold 10, Platinum unlimited) is checked next by
+  /// TierGate.ensureCreateEvent / ExperienceCreationGate.
   static Future<bool> ensureCanCreate({
     required BuildContext context,
     required String userId,
