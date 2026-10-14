@@ -201,7 +201,8 @@ describe('payload validation', () => {
     price: 50,
     currency: 'R$',
     isFree: false,
-    paymentLink: { type: 'pix', value: 'host@example.com' },
+    paymentMethods: ['online'],
+    paymentProvider: 'stripe',
     status: 'published',
     // Server-owned junk must be ignored.
     ratingSum: 500,
@@ -231,7 +232,7 @@ describe('payload validation', () => {
       durationMinutes: 5,
       languages: [],
       maxGroupSize: 0,
-      paymentLink: { type: 'paypal', value: 'not a url' },
+      paymentLink: { type: 'paypal', value: 'https://paypal.me/x' },
     });
     expect(r.ok).toBe(false);
     expect(r.errors).toEqual(expect.arrayContaining([
@@ -240,12 +241,13 @@ describe('payload validation', () => {
     ]));
   });
 
-  it('requires a payment link unless free', () => {
-    expect(validateExperiencePayload({ ...good, paymentLink: null }).errors).toContain('paymentLink');
-    const free = validateExperiencePayload({ ...good, isFree: true, paymentLink: null, price: 99 });
+  it('paid needs the online provider; free needs nothing', () => {
+    expect(validateExperiencePayload({ ...good, paymentProvider: null }).errors).toContain('paymentProvider');
+    const free = validateExperiencePayload({ ...good, isFree: true, paymentMethods: [], paymentProvider: null, price: 99 });
     expect(free.ok).toBe(true);
     expect(free.data.price).toBe(0);
     expect(free.data.currency).toBeNull();
+    expect(free.data.paymentProvider).toBeNull();
   });
 
   it('requestToBook is always true (request to book is mandatory)', () => {
@@ -254,24 +256,25 @@ describe('payload validation', () => {
     expect(validateExperiencePayload({ ...good, requestToBook: 'yes' }).data.requestToBook).toBe(true);
   });
 
-  it('payment methods: cash and/or link for paid, none for free', () => {
-    const cash = validateExperiencePayload({ ...good, paymentMethods: ['cash'], paymentLink: null });
-    expect(cash.ok).toBe(true);
-    expect(cash.data.paymentMethods).toEqual(['cash']);
-    expect(cash.data.paymentLink).toBeNull();
-    // a link sent with cash only is dropped
-    const cashOnly = validateExperiencePayload({ ...good, paymentMethods: ['cash'] });
-    expect(cashOnly.data.paymentLink).toBeNull();
-    const both = validateExperiencePayload({ ...good, paymentMethods: ['link', 'cash', 'bogus'] });
-    expect(both.ok).toBe(true);
-    expect(both.data.paymentMethods).toEqual(['cash', 'link']);
-    expect(both.data.paymentLink).not.toBeNull();
-    expect(validateExperiencePayload({ ...good, paymentMethods: ['link'], paymentLink: null }).errors)
-      .toContain('paymentLink');
-    expect(validateExperiencePayload({ ...good, paymentMethods: [] }).errors)
-      .toContain('paymentMethods');
-    // older clients (no field) = link
-    expect(validateExperiencePayload(good).data.paymentMethods).toEqual(['link']);
+  it('payment links are no longer accepted: online (Stripe / Mercado Pago) only', () => {
+    const ok = validateExperiencePayload(good);
+    expect(ok.data).toMatchObject({
+      paymentMethods: ['online'], paymentProvider: 'stripe', paymentLink: null,
+      paymentLinkMethod: null, paymentInstructions: null,
+    });
+    expect(validateExperiencePayload({ ...good, paymentProvider: 'mercadopago' }).ok).toBe(true);
+    // legacy methods / link fields are refused
+    expect(validateExperiencePayload({ ...good, paymentMethods: ['cash'] }).errors).toContain('paymentMethods');
+    expect(validateExperiencePayload({ ...good, paymentMethods: ['link', 'cash'] }).errors).toContain('paymentMethods');
+    expect(validateExperiencePayload({ ...good, paymentMethods: ['online', 'cash'] }).errors).toContain('paymentMethods');
+    expect(validateExperiencePayload({ ...good, paymentLink: { type: 'pix', value: 'k@x.com' } }).errors).toContain('paymentLink');
+    const linkProvider = validateExperiencePayload({ ...good, paymentProvider: 'link', paymentLinkMethod: 'pix' });
+    expect(linkProvider.errors).toEqual(expect.arrayContaining(['paymentLink', 'paymentProvider']));
+    expect(validateExperiencePayload({ ...good, paymentInstructions: 'pay me' }).errors).toContain('paymentLink');
+    // older clients (no field) on a paid listing: refused, no implicit link
+    const { paymentMethods: _m, ...noField } = good;
+    expect(validateExperiencePayload(noField).errors).toContain('paymentMethods');
+    expect(validateExperiencePayload({ ...good, paymentMethods: [] }).errors).toContain('paymentMethods');
     const free = validateExperiencePayload({ ...good, isFree: true, paymentMethods: ['cash'] });
     expect(free.data.paymentMethods).toEqual([]);
     expect(free.data.paymentLink).toBeNull();

@@ -3,12 +3,16 @@
  * Firestore, no network). Everything that decides money-shaped numbers or a
  * status transition lives here so it can be unit-tested exhaustively.
  *
- * NO MONEY MOVES THROUGH GREENGO. Paid experiences are paid off-platform: in
- * CASH at the meeting, or through the host's own external payment LINK
- * (experience.paymentMethods / paymentLink); a booking only
- * records the agreement, the seats and — on a cancellation / dispute — the
- * refund the policy says is OWED (`refundDue`), shown to both parties. Neither
- * the guest nor the host can move money through these documents.
+ * Paid experiences are paid IN THE APP (payment.mode 'online'): the guest pays
+ * through the host's connected Stripe / Mercado Pago account (ticket_payments/,
+ * GreenGo service fee on top, ticket_payments/fees.ts). Owner rule 2026-10-14:
+ * payment links are no longer accepted, so NEW bookings are 'free' or
+ * 'online' (provider 'stripe' | 'mercadopago') only. Bookings created before
+ * with the legacy off-platform modes (CASH at the meeting, the host's payment
+ * LINK, or the online 'link' provider) keep working to completion: every
+ * reader below still understands them. A booking records the agreement, the
+ * seats and — on a cancellation / dispute — the refund the policy says is
+ * OWED (`refundDue`), shown to both parties.
  *
  * ─────────────────────────────────────────────────────────────── DATA MODEL
  *
@@ -29,8 +33,7 @@
  *   experienceTitle, slotStart, slotEnd (snapshots, for lists + jobs),
  *   price: { unitAmount, currency, totalAmount }  minor units, from the
  *          EXPERIENCE doc (never the client); currency null when free,
- *   payment: { mode: 'free' | 'cash' | 'link'  (guest's choice, one of the
- *                experience's paymentMethods; validated server-side),
+ *   payment: { mode: 'free' | 'online' (new bookings) | 'cash' | 'link' (legacy),
  *              link: {type, value} | null (snapshot of the host's link, mode link),
  *              guestMarkedPaidAt: Timestamp | null  (mode link only),
  *              hostConfirmedPaidAt: Timestamp | null (host: link received, or
@@ -474,10 +477,13 @@ export function computeBookingPrice(
 
 // ─────────────────────────────────────────────────────────── payment methods
 
-/** How a guest pays a PAID experience (both off-platform). */
+/**
+ * Booking payment modes. 'online' is the only one a NEW booking may use;
+ * 'cash' / 'link' are legacy (read for bookings already in flight).
+ */
 export const PAYMENT_METHODS = ['cash', 'link', 'online'] as const;
-/** In-app ticket payment providers (ticket_payments/). */
-export const ONLINE_PROVIDERS = ['stripe', 'mercadopago', 'link'] as const;
+/** In-app ticket payment providers a NEW booking may use (ticket_payments/). */
+export const ONLINE_PROVIDERS = ['stripe', 'mercadopago'] as const;
 /** Link-mode methods (ticket_payments/config.ts isLinkMethod mirror). */
 const LINK_METHODS = ['pix', 'picPay', 'paypal', 'venmo', 'cashApp', 'revolut', 'wise',
   'monzo', 'kofi', 'cash', 'bankTransfer'];
@@ -499,22 +505,21 @@ function hasPaymentLink(e: Record<string, unknown>): boolean {
 }
 
 /**
- * The methods an experience accepts. `paymentMethods` (['cash'] | ['link'] |
- * ['cash','link']) when present and valid; a legacy doc with only a
- * paymentLink -> ['link']. 'link' is only offered while a link exists.
+ * The methods a NEW booking of [e] may use: ['online'] when the listing has
+ * paymentMethods ['online'] and a Stripe / Mercado Pago provider, else []
+ * (-> `no_payment_method`). Legacy listings (cash, payment link, the 'link'
+ * provider) take no new paid bookings until the host connects a provider
+ * (owner rule 2026-10-14).
  */
 export function acceptedPaymentMethods(e: Record<string, unknown>): PaymentMethod[] {
-  const raw = Array.isArray(e.paymentMethods) ? e.paymentMethods : null;
-  const listed = raw
-    ? PAYMENT_METHODS.filter((m) => raw.includes(m))
-    : (hasPaymentLink(e) ? ['link' as const] : []);
-  // 'online' (Stripe / Mercado Pago, paid INSIDE the app) needs a provider and
-  // replaces every off-platform method: a listing that offers it offers only it.
-  if (listed.includes('online')) {
-    const p = onlineProviderOf(e);
-    return p && (p !== 'link' || linkMethodOf(e)) ? ['online'] : [];
-  }
-  return listed.filter((m) => m !== 'link' || hasPaymentLink(e));
+  const raw = Array.isArray(e.paymentMethods) ? e.paymentMethods : [];
+  return raw.includes('online') && onlineProviderOf(e) ? ['online'] : [];
+}
+
+/** A legacy listing that still advertises a payment link (or cash). */
+export function hasLegacyPaymentMethods(e: Record<string, unknown>): boolean {
+  const raw = Array.isArray(e.paymentMethods) ? e.paymentMethods : [];
+  return hasPaymentLink(e) || raw.includes('cash') || raw.includes('link') || e.paymentProvider === 'link';
 }
 
 /**

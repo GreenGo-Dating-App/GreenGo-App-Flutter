@@ -164,20 +164,28 @@ describe('price math (minor units)', () => {
 
 describe('payment methods + refund obligation', () => {
   const link = { type: 'pix', value: 'chave@pix.com' };
-  test('accepted methods (new field, legacy link-only docs)', () => {
-    expect(M.acceptedPaymentMethods({ paymentMethods: ['cash', 'link'], paymentLink: link })).toEqual(['cash', 'link']);
-    expect(M.acceptedPaymentMethods({ paymentMethods: ['cash'] })).toEqual(['cash']);
-    expect(M.acceptedPaymentMethods({ paymentLink: link })).toEqual(['link']);
-    expect(M.acceptedPaymentMethods({ paymentMethods: ['link'] })).toEqual([]); // link without a link
-    expect(M.acceptedPaymentMethods({ paymentMethods: ['bitcoin'] })).toEqual([]);
+  test('accepted methods: ONLY online through Stripe / Mercado Pago (payment links no longer accepted)', () => {
+    const online = { paymentMethods: ['online'], paymentProvider: 'stripe' };
+    expect(M.acceptedPaymentMethods(online)).toEqual(['online']);
+    expect(M.acceptedPaymentMethods({ ...online, paymentProvider: 'mercadopago' })).toEqual(['online']);
+    // legacy listings take no new paid booking
+    expect(M.acceptedPaymentMethods({ paymentMethods: ['online'], paymentProvider: 'link', paymentLinkMethod: 'pix' })).toEqual([]);
+    expect(M.acceptedPaymentMethods({ paymentMethods: ['cash', 'link'], paymentLink: link })).toEqual([]);
+    expect(M.acceptedPaymentMethods({ paymentMethods: ['cash'] })).toEqual([]);
+    expect(M.acceptedPaymentMethods({ paymentLink: link })).toEqual([]);
+    expect(M.acceptedPaymentMethods({ paymentMethods: ['online'] })).toEqual([]); // no provider
+    expect(M.hasLegacyPaymentMethods({ paymentMethods: ['cash'] })).toBe(true);
+    expect(M.hasLegacyPaymentMethods({ paymentLink: link })).toBe(true);
+    expect(M.hasLegacyPaymentMethods(online)).toBe(false);
   });
   test('guest choice is validated server-side', () => {
-    const both = { paymentMethods: ['cash', 'link'], paymentLink: link };
-    expect(M.choosePaymentMethod(both, undefined)).toEqual({ ok: false, reason: 'payment_method_required' });
-    expect(M.choosePaymentMethod(both, 'cash')).toEqual({ ok: true, method: 'cash' });
-    expect(M.choosePaymentMethod(both, 'stripe')).toEqual({ ok: false, reason: 'payment_method_not_accepted' });
-    expect(M.choosePaymentMethod({ paymentMethods: ['cash'] }, undefined)).toEqual({ ok: true, method: 'cash' });
-    expect(M.choosePaymentMethod({ paymentMethods: ['cash'] }, 'link')).toEqual({ ok: false, reason: 'payment_method_not_accepted' });
+    const online = { paymentMethods: ['online'], paymentProvider: 'stripe' };
+    expect(M.choosePaymentMethod(online, undefined)).toEqual({ ok: true, method: 'online' });
+    expect(M.choosePaymentMethod(online, 'online')).toEqual({ ok: true, method: 'online' });
+    expect(M.choosePaymentMethod(online, 'cash')).toEqual({ ok: false, reason: 'payment_method_not_accepted' });
+    expect(M.choosePaymentMethod(online, 'link')).toEqual({ ok: false, reason: 'payment_method_not_accepted' });
+    expect(M.choosePaymentMethod({ paymentMethods: ['cash', 'link'], paymentLink: link }, 'cash'))
+      .toEqual({ ok: false, reason: 'no_payment_method' });
     expect(M.choosePaymentMethod({}, 'cash')).toEqual({ ok: false, reason: 'no_payment_method' });
   });
   test('refundDueFor: link owes the policy share; unpaid cash owes 0; free -> null', () => {
@@ -270,7 +278,7 @@ function seedWorld(opts: { exp?: Record<string, any>; slot?: Record<string, any>
   db.seed(`user_experiences/${EXP}`, {
     hostId: HOST, status: 'published', title: 'Samba night', price: 19.99, currency: 'EUR',
     isFree: false, maxGroupSize: 10, cancellationPolicy: 'moderate',
-    paymentMethods: ['cash', 'link'], paymentLink: { type: 'paypal', value: 'https://paypal.me/host' },
+    paymentMethods: ['online'], paymentProvider: 'stripe',
     ...(opts.exp || {}),
   });
   db.seed(`user_experiences/${EXP}/slots/${SLOT}`, {
@@ -287,12 +295,29 @@ async function expectCode(p: Promise<unknown>, reason: string) {
   await p.catch((e: HttpsError) => expect((e.details as any)?.code).toBe(reason));
 }
 
-/** A booking REQUEST (request to book is mandatory). */
+/**
+ * A booking REQUEST (request to book is mandatory). New bookings are 'online'
+ * only; `paymentMethod: 'cash' | 'link'` (the default, as before) creates the
+ * booking and then turns it into a LEGACY in-flight booking of that mode
+ * (created before payment links were discontinued), so the legacy flows below
+ * keep proving that such bookings still complete.
+ */
+const HOST_LINK = { type: 'paypal', value: 'https://paypal.me/host' };
 async function request(uid = GUEST, extra: Record<string, any> = {}) {
-  return svc.createBooking(uid, {
+  const legacy = !('paymentMethod' in extra) ? 'link'
+    : (extra.paymentMethod === 'cash' || extra.paymentMethod === 'link' ? extra.paymentMethod : null);
+  const { paymentMethod, ...rest } = extra;
+  const r: any = await svc.createBooking(uid, {
     experienceId: EXP, slotId: SLOT, guests: 1, requestId: rid(), consentVersion: 'v1',
-    paymentMethod: 'link', ...extra,
-  }) as Promise<any>;
+    ...(legacy || !('paymentMethod' in extra) ? {} : { paymentMethod }), ...rest,
+  });
+  if (!legacy || r.payment?.mode !== 'online') return r;
+  const b = booking(r.bookingId);
+  db.seed(`bookings/${r.bookingId}`, {
+    ...b,
+    payment: { mode: legacy, link: legacy === 'link' ? HOST_LINK : null, guestMarkedPaidAt: null, hostConfirmedPaidAt: null },
+  });
+  return svc.bookingView(r.bookingId, booking(r.bookingId));
 }
 
 /** A request the host accepted: a confirmed booking. */
@@ -321,14 +346,13 @@ describe('createBooking', () => {
   test('every booking is a request; accepted -> confirmed, seats held, price from the experience, idempotent retry', async () => {
     seedWorld();
     const requestId = 'req_retry_0001';
-    const input = { experienceId: EXP, slotId: SLOT, guests: 2, requestId, consentVersion: 'v1', paymentMethod: 'link', price: 1 };
+    const input = { experienceId: EXP, slotId: SLOT, guests: 2, requestId, consentVersion: 'v1', paymentMethod: 'online', price: 1 };
     const r1: any = await svc.createBooking(GUEST, input);
     expect(r1.status).toBe('requested');
     expect(slot().bookedCount).toBe(2);
     await svc.respondToBookingRequest(HOST, { bookingId: r1.bookingId, accept: true });
     expect(r1.price).toEqual({ unitAmount: 1999, currency: 'eur', totalAmount: 3998 });
-    expect(r1.payment.mode).toBe('link');
-    expect(r1.payment.link).toEqual({ type: 'paypal', value: 'https://paypal.me/host' });
+    expect(r1.payment).toMatchObject({ mode: 'online', provider: 'stripe', status: 'unpaid', link: null, linkMethod: null });
     expect(slot().bookedCount).toBe(2);
     const b = booking(r1.bookingId);
     expect(b.policy).toBe('moderate');
@@ -364,12 +388,25 @@ describe('createBooking', () => {
     expect((await request('guest5')).status).toBe('requested');
   });
 
-  test('cash chosen; both methods require an explicit choice', async () => {
+  test('payment links are no longer accepted: online only; legacy listings take no new paid booking', async () => {
     seedWorld();
-    const r: any = await book(GUEST, { paymentMethod: 'cash' });
-    expect(r.payment).toMatchObject({ mode: 'cash', link: null });
-    await expectCode(book(GUEST2, { paymentMethod: undefined }), 'payment_method_required');
-    await expectCode(book(GUEST2, { paymentMethod: 'stripe' }), 'payment_method_not_accepted');
+    const direct = (uid: string, paymentMethod?: string) => svc.createBooking(uid, {
+      experienceId: EXP, slotId: SLOT, guests: 1, requestId: rid(), consentVersion: 'v1',
+      ...(paymentMethod === undefined ? {} : { paymentMethod }),
+    });
+    await expectCode(direct(GUEST, 'cash'), 'payment_method_not_accepted');
+    await expectCode(direct(GUEST, 'link'), 'payment_method_not_accepted');
+    const r: any = await direct(GUEST);
+    expect(r.payment).toMatchObject({ mode: 'online', provider: 'stripe', link: null });
+    // A legacy cash / payment-link listing: refused until the host connects a provider.
+    for (const exp of [
+      { paymentMethods: ['cash', 'link'], paymentProvider: null, paymentLink: HOST_LINK },
+      { paymentMethods: ['online'], paymentProvider: 'link', paymentLinkMethod: 'pix' },
+      { paymentMethods: null, paymentProvider: null, paymentLink: HOST_LINK },
+    ]) {
+      seedWorld({ exp });
+      await expectCode(direct(GUEST2), 'no_payment_method');
+    }
   });
 
   test('free experience: mode free, no host ID approval needed', async () => {
@@ -575,7 +612,7 @@ describe('private time slots (one user per time, host never double-booked)', () 
     // exp2 starts on a 90-min grid: W (10:00-11:30) overlaps 11:00 -> taken
     await expectCode(svc.createBooking(GUEST2, {
       experienceId: 'exp2', slotId: 's2', guests: 1, requestId: rid(), consentVersion: 'v1',
-      paymentMethod: 'link', startAt: W,
+      startAt: W,
     }), 'time_taken');
     const av: any = await svc.getSlotAvailability(GUEST2, { experienceId: 'exp2', slotId: 's2' });
     expect(av.lengthMinutes).toBe(90);

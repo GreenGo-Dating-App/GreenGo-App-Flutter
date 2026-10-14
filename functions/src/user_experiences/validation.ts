@@ -41,23 +41,39 @@ export const CATEGORIES = [
   'workshopsClasses', 'other',
 ] as const;
 
-export const PAYMENT_TYPES = ['pix', 'paypal', 'venmo', 'stripe', 'other'] as const;
-
-/** How guests pay the host (outside GreenGo): cash at the meeting, or the link. */
-export const PAYMENT_METHODS = ['cash', 'link', 'online'] as const;
-/** In-app ticket providers (paid listings created from 4.7 offer ONLY these). */
-export const ONLINE_PROVIDERS = ['stripe', 'mercadopago', 'link'] as const;
-export const LINK_METHODS = ['pix', 'picPay', 'paypal', 'venmo', 'cashApp', 'revolut', 'wise',
-  'monzo', 'kofi', 'cash', 'bankTransfer'] as const;
+/**
+ * How guests pay a PAID experience: ONLY 'online' (in the app, through the
+ * host's connected Stripe / Mercado Pago account; GreenGo service fee on top,
+ * ticket_payments/fees.ts). Owner rule 2026-10-14: payment links are no
+ * longer accepted, so the legacy off-platform methods ('cash' at the meeting,
+ * the host's 'link', and the online 'link' provider with paymentLinkMethod /
+ * paymentInstructions) are REFUSED on create; firestore.rules refuses them on
+ * update (a legacy listing keeps its stored values only while unchanged) and
+ * publishUserExperience refuses to publish them (safety.ts).
+ */
+export const PAYMENT_METHODS = ['online'] as const;
+/** In-app ticket providers. */
+export const ONLINE_PROVIDERS = ['stripe', 'mercadopago'] as const;
+/** Legacy values that are refused (kept to give a precise error). */
+export const LEGACY_PAYMENT_METHODS = ['cash', 'link'] as const;
 
 /**
- * Payment methods of a payload. Missing field (older clients) = ['link'] for
- * paid listings (they always required a link). Unknown values are dropped.
+ * Payment methods of a payload: free -> []; paid -> the listed methods (a
+ * missing field = [] -> `paymentMethods` error). Legacy and unknown values
+ * are kept so the validator can refuse them.
  */
 export function paymentMethodsFrom(v: unknown, isFree: boolean): string[] {
   if (isFree) return [];
-  if (!Array.isArray(v)) return ['link'];
-  return (PAYMENT_METHODS as readonly string[]).filter((m) => v.includes(m));
+  if (!Array.isArray(v)) return [];
+  return Array.from(new Set(v.filter((m): m is string => typeof m === 'string'))).slice(0, 5);
+}
+
+/** True when [d] carries any payment-link field with a value (refused). */
+export function hasPaymentLinkFields(d: Record<string, unknown>): boolean {
+  const pl = d.paymentLink as Record<string, unknown> | null | undefined;
+  const link = !!pl && typeof pl === 'object' && typeof pl.value === 'string' && pl.value.trim().length > 0;
+  const nonEmpty = (v: unknown) => typeof v === 'string' && v.trim().length > 0;
+  return link || d.paymentProvider === 'link' || nonEmpty(d.paymentLinkMethod) || nonEmpty(d.paymentInstructions);
 }
 
 export const LIMITS = {
@@ -197,37 +213,16 @@ export function validateExperiencePayload(p: Record<string, unknown> | null | un
   if (price === null || price < 0 || price > LIMITS.priceMax) errors.push('price');
   const currency = optStr(d.currency, 8);
 
-  // Paid: at least one method (cash at the meeting and/or the online link);
-  // the link is required only when 'link' is a method. Free: none.
+  // Paid: exactly ['online'] with a connected provider (Stripe / Mercado
+  // Pago). Payment links of any kind are refused (owner rule 2026-10-14).
   const paymentMethods = paymentMethodsFrom(d.paymentMethods, isFree);
-  if (!isFree && paymentMethods.length === 0) errors.push('paymentMethods');
-  const wantsLink = paymentMethods.includes('link');
-  let paymentLink: Record<string, string> | null = null;
-  const pl = (d.paymentLink && typeof d.paymentLink === 'object')
-    ? (d.paymentLink as Record<string, unknown>)
-    : null;
-  if (pl && wantsLink) {
-    const type = str(pl.type);
-    const value = str(pl.value);
-    const typeOk = (PAYMENT_TYPES as readonly string[]).includes(type);
-    const valueOk = value.length > 0 && value.length <= LIMITS.paymentValueMax &&
-      (type === 'pix' || isHttpUrl(value));
-    if (typeOk && valueOk) paymentLink = { type, value };
-    else errors.push('paymentLink');
-  }
-  if (wantsLink && !paymentLink && !errors.includes('paymentLink')) errors.push('paymentLink');
-  // In-app payment (Stripe / Mercado Pago): exclusive, needs a provider.
-  const wantsOnline = paymentMethods.includes('online');
+  if (!isFree && (paymentMethods.length !== 1 || paymentMethods[0] !== 'online')) errors.push('paymentMethods');
+  if (hasPaymentLinkFields(d)) errors.push('paymentLink');
+  const wantsOnline = !isFree && paymentMethods.includes('online');
   const paymentProvider = wantsOnline && (ONLINE_PROVIDERS as readonly string[]).includes(str(d.paymentProvider))
     ? str(d.paymentProvider)
     : null;
-  if (wantsOnline && (!paymentProvider || paymentMethods.length !== 1)) errors.push('paymentProvider');
-  const paymentLinkMethod = paymentProvider === 'link' && (LINK_METHODS as readonly string[]).includes(str(d.paymentLinkMethod))
-    ? str(d.paymentLinkMethod)
-    : null;
-  if (paymentProvider === 'link' && !paymentLinkMethod) errors.push('paymentLinkMethod');
-  const paymentInstructions = paymentProvider === 'link' ? optStr(d.paymentInstructions, 500) : null;
-  if (paymentLinkMethod === 'bankTransfer' && !paymentInstructions) errors.push('paymentInstructions');
+  if (wantsOnline && !paymentProvider) errors.push('paymentProvider');
 
   // Pricing mode (experiences): per_person (default) | per_group with a fixed
   // groupPrice in integer MINOR units for a party of up to maxGroupSize (2..100).
@@ -282,16 +277,16 @@ export function validateExperiencePayload(p: Record<string, unknown> | null | un
     price: price ?? 0,
     currency: isFree ? null : currency,
     isFree,
-    paymentMethods,
-    paymentLink: wantsOnline ? null : paymentLink,
+    paymentMethods: wantsOnline ? ['online'] : [],
+    paymentLink: null,
     paymentProvider,
     pricingMode,
     groupPrice,
     weekendPrice: isFree ? null : weekendPriceRaw,
     weekendDays: weekendDays && weekendDays.length ? weekendDays : null,
     ...(maxTicketsPerUser !== undefined ? { maxTicketsPerUser } : {}),
-    paymentLinkMethod,
-    paymentInstructions,
+    paymentLinkMethod: null,
+    paymentInstructions: null,
     availability: optStr(d.availability, LIMITS.shortTextMax),
     // Bookings: true = the host accepts / declines each booking request
     // (experience_bookings snapshots it on every booking).

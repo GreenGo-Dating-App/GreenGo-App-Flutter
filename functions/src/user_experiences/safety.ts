@@ -4,8 +4,13 @@
  *  - ID document: hosts need an UPLOADED identity document (age-assurance
  *    flow: profiles.ageVerification.status pending|verified) to create an
  *    experience, and an APPROVED one (server-owned profiles.isAgeVerified) to
- *    PUBLISH a listing that takes money (paid, or carrying a paymentLink).
- *    Free listings: uploaded is enough. Drafts may hold a payment link.
+ *    PUBLISH a listing that takes money (paid, or a legacy doc carrying a
+ *    paymentLink). Free listings: uploaded is enough.
+ *  - Payment links are no longer accepted (owner rule 2026-10-14): a paid
+ *    listing is published only with paymentMethods ['online'] + a connected
+ *    provider (Stripe / Mercado Pago); a legacy link / cash listing gets
+ *    `payment_link_not_accepted` until the host switches it (or publishes it
+ *    as free).
  *  - Host agreement: accepted (profiles.hostAgreementVersion >= current)
  *    before the first publish.
  *  - New hosts (< 3 visible reviews across all their experiences, i.e.
@@ -95,7 +100,27 @@ export type SafetyCode =
   | 'dates_required'
   | 'host_banned'
   // Paid listings (or a payment link) need an ACTIVE business account.
-  | 'business_required';
+  | 'business_required'
+  // Legacy payment link / cash / link-provider listing (owner rule 2026-10-14).
+  | 'payment_link_not_accepted';
+
+/**
+ * True when [e] may NOT take money as it is: it carries a payment link field,
+ * or it is paid without exactly ['online'] + Stripe / Mercado Pago.
+ * Mirrors user_experiences/validation.ts (create) and firestore.rules.
+ */
+export function paymentLinkBlocked(e: Record<string, unknown>): boolean {
+  const pl = e.paymentLink as Record<string, unknown> | null | undefined;
+  const nonEmpty = (v: unknown) => typeof v === 'string' && v.trim().length > 0;
+  if ((!!pl && typeof pl === 'object' && nonEmpty(pl.value)) || e.paymentProvider === 'link'
+      || nonEmpty(e.paymentLinkMethod) || nonEmpty(e.paymentInstructions)) {
+    return true;
+  }
+  if (e.isFree === true) return false;
+  const m = Array.isArray(e.paymentMethods) ? e.paymentMethods : [];
+  return !(m.length === 1 && m[0] === 'online'
+    && (e.paymentProvider === 'stripe' || e.paymentProvider === 'mercadopago'));
+}
 
 /** Why [profile] may not CREATE an experience at all (any status), or null. */
 export function createBlockReason(profile: Record<string, any> | null | undefined): SafetyCode | null {
@@ -122,6 +147,7 @@ export function publishBlockReason(params: {
   if (base) return base;
   if (!hostAgreementAccepted(profile)) return 'host_agreement_required';
   if (!takesPayment(experience)) return null;
+  if (paymentLinkBlocked(experience)) return 'payment_link_not_accepted';
   // Only active business accounts may charge for a listing.
   if (!isBusinessActive(profile)) return 'business_required';
   if (idDocumentState(profile) !== 'approved' && params.registrationApproved !== true) {
@@ -140,6 +166,10 @@ export const AS_FREE_PATCH = Object.freeze({
   price: 0,
   currency: null,
   paymentLink: null,
+  paymentMethods: [],
+  paymentProvider: null,
+  paymentLinkMethod: null,
+  paymentInstructions: null,
 });
 
 // ─────────────────────────────────────────────────────────────── reports

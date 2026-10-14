@@ -17,6 +17,8 @@ import {
   publishBlockReason,
   shouldHideForReports,
   HOST_AGREEMENT_VERSION,
+  paymentLinkBlocked,
+  AS_FREE_PATCH,
 } from '../../src/user_experiences/safety';
 import { validateExperiencePayload } from '../../src/user_experiences/validation';
 
@@ -38,7 +40,7 @@ describe('contact info (shared fixture)', () => {
     expect(moderateCommentText('Great host!').ok).toBe(true);
   });
 
-  it('experience text is checked, the paymentLink field is exempt', () => {
+  it('experience text is checked, the (legacy) paymentLink field is not text', () => {
     const base = {
       title: 'Cooking class',
       description: 'A lovely evening cooking pasta together.',
@@ -102,7 +104,7 @@ describe('ID document + publish rules', () => {
     hostAgreementVersion: HOST_AGREEMENT_VERSION,
     ...business,
   };
-  const paid = { isFree: false, price: 50, paymentLink: { type: 'pix', value: 'k' } };
+  const paid = { isFree: false, price: 50, paymentMethods: ['online'], paymentProvider: 'stripe' };
   const free = { isFree: true, price: 0, paymentLink: null };
 
   it('document state', () => {
@@ -159,11 +161,11 @@ describe('ID document + publish rules', () => {
     const personal = { ...approved, isBusiness: false };
     expect(publishBlockReason({ profile: personal, experience: paid, otherPublishedPaid: 0 }))
       .toBe('business_required');
-    // a payment link alone also takes money
+    // a (legacy) payment link alone also takes money, and is refused outright
     expect(publishBlockReason({
       profile: personal, experience: { ...free, paymentLink: { type: 'pix', value: 'k' } },
       otherPublishedPaid: 0,
-    })).toBe('business_required');
+    })).toBe('payment_link_not_accepted');
     // business whose Platinum lapsed: paused
     const lapsed = { ...approved, membershipEndDate: new Date('2001-01-01T00:00:00Z') };
     expect(publishBlockReason({ profile: lapsed, experience: paid, otherPublishedPaid: 0 }))
@@ -175,6 +177,26 @@ describe('ID document + publish rules', () => {
     // free listings: everyone
     expect(publishBlockReason({ profile: personal, experience: free, otherPublishedPaid: 0 }))
       .toBeNull();
+  });
+
+  it('payment links are no longer accepted: legacy listings cannot be published paid', () => {
+    for (const legacy of [
+      { isFree: false, price: 50, paymentLink: { type: 'pix', value: 'k' } },
+      { isFree: false, price: 50, paymentMethods: ['cash'] },
+      { isFree: false, price: 50, paymentMethods: ['cash', 'link'], paymentLink: { type: 'paypal', value: 'https://p' } },
+      { isFree: false, price: 50, paymentMethods: ['online'], paymentProvider: 'link', paymentLinkMethod: 'pix' },
+      { isFree: false, price: 50, paymentMethods: ['online'] },
+      { isFree: false, price: 50 },
+    ]) {
+      expect(paymentLinkBlocked(legacy)).toBe(true);
+      expect(publishBlockReason({ profile: approved, experience: legacy, otherPublishedPaid: 0 }))
+        .toBe('payment_link_not_accepted');
+    }
+    expect(paymentLinkBlocked(paid)).toBe(false);
+    expect(paymentLinkBlocked({ ...paid, paymentProvider: 'mercadopago' })).toBe(false);
+    expect(paymentLinkBlocked(free)).toBe(false);
+    // "publish as free" clears every payment field
+    expect(paymentLinkBlocked({ ...paid, paymentLink: { type: 'pix', value: 'k' }, ...AS_FREE_PATCH })).toBe(false);
   });
 });
 
@@ -223,7 +245,7 @@ describe('registration ID photo reviewed by an admin', () => {
       hostAgreementVersion: HOST_AGREEMENT_VERSION,
       isBusiness: true,
     };
-    const experience = { isFree: false, price: 10 };
+    const experience = { isFree: false, price: 10, paymentMethods: ['online'], paymentProvider: 'stripe' };
     const without = publishBlockReason({ profile, experience, otherPublishedPaid: 0 });
     const withIt = publishBlockReason({ profile, experience, otherPublishedPaid: 0, registrationApproved: true });
     if (without === 'business_required') {

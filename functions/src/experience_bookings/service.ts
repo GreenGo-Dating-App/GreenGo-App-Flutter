@@ -9,8 +9,10 @@
  * operation that already happened returns its result instead of failing
  * (`noop`), and createBooking is keyed by a client requestId.
  *
- * Nothing here moves money: `refundDue` is an obligation recorded for both
- * parties (paid experiences are paid through the host's external link).
+ * Paid experiences are paid in the app (payment.mode 'online', Stripe /
+ * Mercado Pago through ticket_payments/); `refundDue` records what the policy
+ * says is owed. Legacy cash / link bookings (no longer created, owner rule
+ * 2026-10-14) keep their flows until they close.
  */
 
 import { MODERATION_ROLES } from '../shared/adminAuth';
@@ -74,7 +76,6 @@ import {
   pricingModeOf,
   resolveDatePrice,
   groupSizeError,
-  linkMethodOf,
   MAX_BOOKING_LENGTH_MS,
   bookingLengthMs,
   chooseStart,
@@ -584,7 +585,7 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
     const priced = computeBookingPrice(e, guests);
     if (priced.ok === false) fail('failed-precondition', 'experience_price_invalid', { reason: priced.reason });
     let mode: PaymentMode = 'free';
-    let link: { type: string; value: string } | null = null;
+    const link: { type: string; value: string } | null = null;
     let provider: string | null = null;
     if (!priced.free) {
       // Paid bookings only from an ACTIVE business account (existing paid
@@ -600,11 +601,9 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
           accepted: acceptedPaymentMethods(e),
         });
       }
+      // acceptedPaymentMethods offers ONLY 'online' (Stripe / Mercado Pago):
+      // no new cash / payment-link booking is created (owner rule 2026-10-14).
       mode = (choice as { ok: true; method: PaymentMode }).method;
-      if (mode === 'link') {
-        const pl = e.paymentLink as Record<string, any>;
-        link = { type: String(pl.type), value: String(pl.value).trim() };
-      }
       if (mode === 'online') provider = onlineProviderOf(e);
     }
 
@@ -689,7 +688,7 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
         guestMarkedPaidAt: null,
         hostConfirmedPaidAt: null,
         ...(mode === 'online'
-          ? { provider, status: 'unpaid', orderId: null, ...(provider === 'link' ? { linkMethod: linkMethodOf(e) } : {}) }
+          ? { provider, status: 'unpaid', orderId: null }
           : {}),
       },
       refundDue: null,

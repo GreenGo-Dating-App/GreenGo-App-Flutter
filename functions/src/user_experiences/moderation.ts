@@ -60,9 +60,10 @@ export function containsLink(text: unknown): boolean {
 // Anti-scam: hosts and reviewers must not move people off-platform. Phone
 // numbers, e-mail addresses, social / payment handles and PIX keys are blocked
 // in experience text (title, description, included / not-included, meeting
-// point, availability, cancellation notes) and in review / reply text. The
-// experience's `paymentLink` field is the ONE place a payment destination may
-// appear and is exempt.
+// point, availability, cancellation notes) and in review / reply text. Paid
+// experiences are paid in the app only (owner rule 2026-10-14): the legacy
+// `paymentLink` field is refused by validation.ts / firestore.rules, so it is
+// not moderated here.
 //
 // Mirrored 1:1 by lib/features/user_experiences/domain/contact_info.dart; both
 // are tested against functions/__tests__/fixtures/contact_info_cases.json.
@@ -128,7 +129,7 @@ export function moderateCommentText(text: unknown): ModerationDecision {
  * items, meeting point, availability and cancellation notes. Links are
  * allowed here (hosts may reference a venue site); prohibited language and
  * off-platform contact / payment info (phones, e-mails, handles, PIX keys)
- * hide the listing. The paymentLink field is exempt.
+ * hide the listing. The legacy paymentLink field is not text (refused elsewhere).
  */
 export function moderateExperienceText(
   data: Record<string, unknown> | null | undefined,
@@ -145,7 +146,7 @@ export function moderateExperienceText(
     ...(Array.isArray(data.included) ? data.included : []),
     ...(Array.isArray(data.notIncluded) ? data.notIncluded : []),
   ];
-  // NOT data.paymentLink: the one sanctioned payment destination.
+  // NOT data.paymentLink: refused on write (validation.ts / firestore.rules).
   const terms = new Set<string>();
   for (const p of parts) for (const t of findProhibitedTerms(p)) terms.add(t);
   if (terms.size > 0) {
