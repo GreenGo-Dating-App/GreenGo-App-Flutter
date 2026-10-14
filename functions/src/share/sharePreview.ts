@@ -65,6 +65,7 @@ import {
 } from './sharePreviewCore';
 import type { AppLocale } from '../shared/i18n';
 import { handleReferralPreview } from './referralPreview';
+import { guestViewBlock } from '../guest/guestModel';
 
 const MAX_SOURCE_BYTES = 15 * 1024 * 1024;
 
@@ -133,10 +134,13 @@ async function loadPreview(kind: Kind, id: string, locale: AppLocale): Promise<P
   const snap = await admin.firestore().collection(COLLECTION[kind]).doc(id).get();
   if (!snap.exists) return genericPreview(kind, id, locale);
   const d = (snap.data() ?? {}) as Record<string, unknown>;
-  if (kind === 'e') return buildEventPreview(id, d, Date.now(), locale);
+  // Guest landing ("Continue as guest", guest/) only for what a guest may see.
+  const guest = (p: Preview): Preview =>
+    (p.shareable && !guestViewBlock(kind as 'e' | 'x' | 'a', d, Date.now()) ? { ...p, guestLanding: true } : p);
+  if (kind === 'e') return guest(buildEventPreview(id, d, Date.now(), locale));
   if (kind === 'c') return buildCommunityPreview(id, d, locale);
-  if (kind === 'x') return buildExperiencePreview(id, d, locale);
-  if (kind === 'a') return buildAttractionPreview(id, d, await getAttractionBucket(), locale);
+  if (kind === 'x') return guest(buildExperiencePreview(id, d, locale));
+  if (kind === 'a') return guest(buildAttractionPreview(id, d, await getAttractionBucket(), locale));
   return buildProfilePreview(id, d, Date.now(), locale);
 }
 

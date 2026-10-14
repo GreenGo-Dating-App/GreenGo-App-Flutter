@@ -81,6 +81,13 @@
           }
         },
         {
+          "source": "/guest/**",
+          "function": {
+            "functionId": "guestBooking",
+            "region": "us-central1"
+          }
+        },
+        {
           "source": "/copyright-notice",
           "function": {
             "functionId": "copyrightNoticeWeb",

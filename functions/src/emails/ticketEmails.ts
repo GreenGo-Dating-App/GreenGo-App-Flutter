@@ -31,6 +31,7 @@ import { checkInSecret } from '../experience_bookings/service';
 import { qrPng } from './qrPng';
 import { authEmailOf, EmailAttachment, escapeHtml, OutgoingEmail, sendEmailOnce } from './sendEmail';
 import { detailsTable, emailFrame, formatWhen, hostTimeZone, joinPlace, millis } from './emailFormat';
+import { handleGuestBookingWrite, handleGuestOrderUpdate } from '../guest/guestEmails';
 
 const db = () => admin.firestore();
 
@@ -229,7 +230,9 @@ export function bookingEmailKinds(
   if (after.status === 'confirmed' && before?.status !== 'confirmed') {
     out.push('confirmed_host');
     const onlinePaid = after.payment?.mode === 'online' && after.payment?.status === 'paid';
-    if (!bookingQrReady(after) && !onlinePaid) out.push('confirmed_guest');
+    // A guest (shared-link booking) gets the "Pay now" link instead (guest/guestEmails.ts).
+    const guestPays = after.isGuest === true && after.payment?.mode === 'online';
+    if (!bookingQrReady(after) && !onlinePaid && !guestPays) out.push('confirmed_guest');
   }
   return out;
 }
@@ -378,9 +381,10 @@ export async function handleBookingWrite(
   before: Record<string, any> | undefined,
   after: Record<string, any> | undefined,
 ): Promise<string> {
-  const [qr, status] = await Promise.allSettled([
+  const [qr, status, guest] = await Promise.allSettled([
     sendBookingQrEmail(bookingId, before, after),
     sendBookingStatusEmails(bookingId, before, after),
+    handleGuestBookingWrite(bookingId, before, after),
   ]);
   const parts: string[] = [];
   if (qr.status === 'fulfilled') parts.push(`qr:${qr.value}`);
@@ -389,13 +393,20 @@ export async function handleBookingWrite(
     parts.push('qr:error');
   }
   if (status.status === 'fulfilled') parts.push(...status.value);
+  if (guest.status === 'fulfilled') { if (guest.value !== 'skipped') parts.push(`guest:${guest.value}`); }
+  else console.error(`[email] guest notice for ${bookingId} failed:`, (guest.reason as Error)?.message || guest.reason);
   return parts.join(',');
 }
 
 export const emailTicketsOnOrderPaid = onDocumentUpdated(
   { document: 'ticket_orders/{orderId}', memory: '512MiB', timeoutSeconds: 120 },
   async (event) => {
-    await handleTicketOrderUpdate(event.params.orderId, event.data?.before?.data(), event.data?.after?.data());
+    const before = event.data?.before?.data();
+    const after = event.data?.after?.data();
+    await handleTicketOrderUpdate(event.params.orderId, before, after);
+    // Guest orders: refund / dispute notice (no app to show it in).
+    await handleGuestOrderUpdate(event.params.orderId, before, after)
+      .catch((e) => console.error('[email] guest order notice failed:', (e as Error)?.message));
   },
 );
 

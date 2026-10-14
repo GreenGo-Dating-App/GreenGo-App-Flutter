@@ -17,6 +17,7 @@
 
 import { AppLocale, DEFAULT_LOCALE, SUPPORTED_LOCALES, t } from '../shared/i18n';
 import type { ArbKey } from '../shared/i18n';
+import { gt } from '../guest/guestI18n';
 
 export const HOST = 'https://greengo-chat.web.app';
 export const PLAY_URL =
@@ -45,6 +46,12 @@ export interface Preview {
   shareable: boolean;
   /** Language the card's fixed strings are rendered in. */
   locale: AppLocale;
+  /**
+   * Shared-link guest landing (guest/): the page offers "Open in the GreenGo
+   * app" OR "Continue as guest" instead of auto-redirecting. Set by
+   * sharePreview.ts for guest-viewable events / experiences / attractions.
+   */
+  guestLanding?: boolean;
 }
 
 export const ID_RE = /^[A-Za-z0-9_-]{1,128}$/;
@@ -666,6 +673,16 @@ export function renderHtml(p: Preview): string {
     : `
   <meta name="twitter:card" content="summary" />`;
   const ogType = p.kind === 'u' && p.shareable ? 'profile' : 'website';
+  // Guest landing: two explicit choices, no automatic redirect (a visitor
+  // without the app must be able to pick "Continue as guest").
+  const guest = p.guestLanding === true && p.shareable && (p.kind === 'e' || p.kind === 'x' || p.kind === 'a');
+  const guestUrl = `${HOST}/guest/${p.kind}/${encodeURIComponent(p.id)}?hl=${encodeURIComponent(p.locale)}`;
+  const actions = guest
+    ? `<a class="btn" id="store" href="${PLAY_URL}">${escapeHtml(gt(p.locale, 'guest.landing.openApp'))}</a>
+  <a class="btn guest" id="guest" href="${escapeHtml(guestUrl)}">${escapeHtml(gt(p.locale, 'guest.landing.continueGuest'))}</a>
+  <p class="hint">${escapeHtml(gt(p.locale, 'guest.landing.guestHint'))}</p>`
+    : `<a class="btn" id="store" href="${PLAY_URL}">${openApp}</a>
+  <a class="web" id="web" href="${escapeHtml(web)}">${openWeb}</a>`;
 
   return `<!DOCTYPE html>
 <html lang="${lang}">
@@ -703,14 +720,15 @@ export function renderHtml(p: Preview): string {
       background: #D4AF37; color: #0A0A0A; font-weight: 700; text-decoration: none;
     }
     a.web { margin-top: 16px; color: #D4AF37; font-size: 14px; }
+    a.btn.guest { margin-top: 12px; background: transparent; color: #D4AF37; border: 1px solid #D4AF37; }
+    p.hint { margin-top: 12px; font-size: 13px; color: #8A8A8A; }
   </style>
 </head>
 <body>
   ${hasOwnImage ? `<img src="${img}" alt="" />` : ''}
   <h1>${title}</h1>
   <p>${desc}</p>
-  <a class="btn" id="store" href="${PLAY_URL}">${openApp}</a>
-  <a class="web" id="web" href="${escapeHtml(web)}">${openWeb}</a>
+  ${actions}
   <script>
     // If the app is installed, App Links / Universal Links opened it before
     // this page loaded. Otherwise try the custom scheme once, then go to the
@@ -722,14 +740,23 @@ export function renderHtml(p: Preview): string {
       var isAndroid = /android/i.test(ua);
       var storeUrl = isIOS ? ${JSON.stringify(APPSTORE_URL)} : ${JSON.stringify(PLAY_URL)};
       var webUrl = ${JSON.stringify(web)};
-      document.getElementById("store").href = storeUrl;
-      if (!isAndroid && !isIOS) { window.location.replace(webUrl); return; }
-      var left = false;
-      document.addEventListener("visibilitychange", function () {
-        if (document.hidden) left = true;
-      });
-      setTimeout(function () { if (!left) window.location.href = storeUrl; }, 1500);
-      window.location.href = ${JSON.stringify(appUrl)};
+      var store = document.getElementById("store");
+      store.href = storeUrl;
+      function openApp() {
+        if (!isAndroid && !isIOS) { window.location.replace(webUrl); return; }
+        var left = false;
+        document.addEventListener("visibilitychange", function () {
+          if (document.hidden) left = true;
+        });
+        setTimeout(function () { if (!left) window.location.href = storeUrl; }, 1500);
+        window.location.href = ${JSON.stringify(appUrl)};
+      }
+      // Guest landing: wait for the visitor's choice. Otherwise as before.
+      if (${guest ? 'true' : 'false'}) {
+        store.addEventListener("click", function (ev) { ev.preventDefault(); openApp(); });
+        return;
+      }
+      openApp();
     })();
   </script>
 </body>

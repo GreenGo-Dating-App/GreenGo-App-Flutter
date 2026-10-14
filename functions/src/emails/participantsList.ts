@@ -157,7 +157,10 @@ export async function eventParticipants(eventId: string): Promise<ParticipantRow
   // Emails only for ticket BUYERS: they saw "your name and email will be
   // shared with the organizer" at checkout. A free RSVP never showed that
   // notice, so its row carries the name only.
-  const emails = await authEmailsOf(attendees.map((a) => String(a.d.userId || a.id)).filter((u) => byBuyer.has(u)));
+  // Shared-link guests (isGuest) saw the same notice on the guest form.
+  const guests = new Set(attendees.filter((a) => a.d.isGuest === true).map((a) => String(a.d.userId || a.id)));
+  const emails = await authEmailsOf(attendees.map((a) => String(a.d.userId || a.id))
+    .filter((u) => byBuyer.has(u) || guests.has(u)));
   return sortRows(attendees.map(({ id, d }) => {
     const uid = String(d.userId || id);
     const tks = byBuyer.get(uid) || [];
@@ -172,7 +175,7 @@ export async function eventParticipants(eventId: string): Promise<ParticipantRow
     const checkedIn = d.checkedIn === true || tks.some((tk) => !!tk.checkedInAt);
     return {
       name: String(d.userName || '').trim(),
-      email: tks.length ? emails.get(uid) || '' : '',
+      email: tks.length || d.isGuest === true ? emails.get(uid) || '' : '',
       bookingCode: codes.join(' '),
       ticket: typeText ? `${typeText} (${party})` : String(party),
       status: checkedIn ? 'checked_in' : (tks.length ? 'paid' : 'confirmed'),
@@ -201,7 +204,7 @@ export async function experienceSlotParticipants(experienceId: string, slotStart
     const orderId = typeof b.payment?.orderId === 'string' ? b.payment.orderId : null;
     const paid = b.payment?.status === 'paid' || !!b.payment?.hostConfirmedPaidAt;
     return {
-      name: names.get(String(b.guestId)) || '',
+      name: names.get(String(b.guestId)) || (typeof b.guestName === 'string' ? b.guestName : ''),
       email: emails.get(String(b.guestId)) || '',
       bookingCode: orderId ? orderBookingCode(orderId, orders.get(orderId)) : checkInCode(secret, id),
       ticket: String(Math.max(1, Number(b.guests) || 1)),
