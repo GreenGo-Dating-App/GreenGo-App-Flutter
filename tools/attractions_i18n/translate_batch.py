@@ -175,7 +175,9 @@ def validate(kind, src, out):
         elif STRAY.search(v) and not STRAY.search(src["text"]):
             return None, f"{lang}: stray brace"
         n = len(src["text"])
-        if n >= 40 and not (0.45 <= len(v) / n <= 2.6):
+        # about: a cut-off last sentence is dropped, so allow a shorter text.
+        lo = 0.3 if kind == "about" else 0.45
+        if n >= 40 and not (lo <= len(v) / n <= 2.6):
             return None, f"{lang}: length ratio {len(v) / n:.2f}"
         res[lang] = v
     return res, None
