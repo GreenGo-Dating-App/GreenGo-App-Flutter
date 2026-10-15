@@ -21,6 +21,7 @@ import { DEFAULT_SETTINGS, feeInvoiceFromOrder, monthKey } from '../../src/finan
 import { applyOrderFinance } from '../../src/finance/stats';
 import { generateStatement } from '../../src/finance/statements';
 import { getMyFinanceDocumentPdf, listMyFinanceDocuments } from '../../src/finance/seller';
+import { getMyBillingProfile, saveMyBillingProfile } from '../../src/finance/billing';
 
 const db = admin.firestore();
 const TS = admin.firestore.Timestamp;
@@ -288,6 +289,42 @@ describe('seller monthly statement + monthly fee invoice', () => {
     expect(inv.customer).toMatchObject({ uid: 'org1', name: 'Zé Bar Ltda', taxId: '40.486.663/0001-82', email: 'fiscal@ze.example' });
     const detail = await call({ action: 'businessDetail', organizerId: 'org1' }, 'ana');
     expect(detail.billing.legalName).toBe('Zé Bar Ltda');
+  });
+
+  it('seller invoice details: save / masked read / keep tax id / field errors / used on invoices', async () => {
+    const asUser = (fn: any, data: any, uid: string) => (fft.wrap(fn) as any)({ data, auth: { uid, token: {} } });
+    const form = {
+      type: 'company', country: 'BR', legalName: 'Samba Eventos Ltda', tradeName: 'Samba Night', contactPerson: 'Ana',
+      taxId: '40.486.663/0001-82', inscricaoMunicipal: '1234567',
+      address: { street: 'Rua Augusta', number: '500', district: 'Consolação', city: 'São Paulo', region: 'SP', postalCode: '01305-000' },
+      email: 'fiscal@samba.example',
+    };
+    const empty = await asUser(getMyBillingProfile, {}, 'org2');
+    expect(empty).toMatchObject({ profile: null, complete: false });
+    await expect(asUser(saveMyBillingProfile, { ...form, taxId: '40.486.663/0001-83' }, 'org2'))
+      .rejects.toMatchObject({ code: 'invalid-argument', details: { field: 'taxId', code: 'invalid' } });
+    const saved = await asUser(saveMyBillingProfile, form, 'org2');
+    expect(saved.complete).toBe(true);
+    expect(saved.profile.taxIdMasked).toBe('••••••••0182');
+    expect(JSON.stringify(saved)).not.toContain('40486663000182');
+    // Edit without re-typing the tax id keeps it.
+    const edited = await asUser(saveMyBillingProfile, { ...form, taxId: '', email: 'new@samba.example' }, 'org2');
+    expect(edited.profile).toMatchObject({ email: 'new@samba.example', hasTaxId: true });
+    expect((await db.doc('finance_billing_profiles/org2').get()).data()!.taxId).toBe('40486663000182');
+    await expect(asUser(getMyBillingProfile, {}, '')).rejects.toThrow();
+    // The invoice customer comes from the details.
+    await db.doc('profiles/org2').set({ displayName: 'Samba', isBusiness: true, createdAt: TS.now() });
+    const o = order({ organizerId: 'org2', listingId: 'evS', title: 'Samba night', currency: 'brl' });
+    await db.doc('ticket_orders/o11').set(o);
+    await applyOrderFinance('o11', o, 'paid');
+    const m = monthKey(new Date());
+    const s = await generateStatement('org2', m, { email: false });
+    expect(s!.billingMissing).toEqual([]);
+    const inv = (await db.doc(`finance_invoices/mfee_org2_${m}_brl`).get()).data()!;
+    expect(inv.customer).toMatchObject({
+      name: 'Samba Eventos Ltda (Samba Night)', taxId: 'CNPJ 40.486.663/0001-82', email: 'new@samba.example',
+    });
+    expect(inv.customer.address).toContain('Rua Augusta, 500');
   });
 
   it('legacy: builds from the month totals with a PDF', async () => {
