@@ -95,7 +95,8 @@ function clean(text) {
   t = t.replace(/\s*\[[^\]]*\]/g, '').replace(/\s+([,.;:])/g, '$1').replace(/\s{2,}/g, ' ').trim();
   if (t.length < 60) return null;
   // 3-4 sentences, max ~650 chars, cut at a sentence end (never drops text).
-  const parts = t.split(/(?<=[.!?])\s+(?=[A-ZÀ-Þ0-9"«“¿¡])/);
+  // "St." / "ca." / an initial is not a sentence end ("the Church of St." was).
+  const parts = t.split(/(?<=[.!?])(?<!\b(?:St|Ste|Sta|Sto|Sts|Mt|Ft|Dr|Sr|Jr|No|Nr|Mr|Mrs|Rev|Gen|Fr|Ss|SS|Sv|sv|Kath|hl|hll|Hl|ca|approx|Ltd|Co|Inc|Bros|Pty|Prof|Ing|Arch|Mons|Card|Pres|Gov|Lt|Col|Capt|Sgt|[A-Z])\.)\s+(?=[A-ZÀ-Þ0-9"«“¿¡])/);
   let out = '';
   let n = 0;
   for (const p of parts) {

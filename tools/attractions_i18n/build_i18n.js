@@ -152,8 +152,14 @@ async function stepExtract() {
     }
     if (r.countryName) countries.set(iso, r.countryName);
   }
+  // A template keeps the id it had in the last extract (build/tr is keyed by
+  // id), so after a reseed only the new texts get new ids and need translating.
+  const tplPath = path.join(OUT, 'templates.json');
+  const oldId = new Map(fs.existsSync(tplPath)
+    ? JSON.parse(fs.readFileSync(tplPath, 'utf8')).map((t) => [t.text, t.id]) : []);
+  let next = 1 + Math.max(-1, ...[...oldId.values()].map((id) => Number(id.slice(1))));
   const tplList = [...tpl.entries()].sort((a, b) => b[1] - a[1])
-    .map(([text, count], i) => ({ id: `t${i}`, text, count }));
+    .map(([text, count]) => ({ id: oldId.get(text) || `t${next++}`, text, count }));
   fs.writeFileSync(path.join(OUT, 'templates.json'), JSON.stringify(tplList, null, 1));
   fs.writeFileSync(path.join(OUT, 'dict.json'), JSON.stringify([...dict.entries()]
     .map(([text, d], i) => ({ id: `d${i}`, text, fields: [...d.fields], count: d.count })), null, 1));
@@ -172,6 +178,17 @@ async function stepExtract() {
 // --------------------------------------------------------------------- jobs
 
 const ABOUT_SRC = ['en', 'de', 'fr', 'es', 'it', 'pt', 'pt_BR'];
+
+/**
+ * Attractions whose "What is it?" text is a Wikipedia article about another
+ * place or a generic topic (about_wrong_article.tsv: id<TAB>name<TAB>why).
+ * They are never translated, and `write` deletes their about fields.
+ */
+function wrongAbout() {
+  const p = path.join(__dirname, 'about_wrong_article.tsv');
+  if (!fs.existsSync(p)) return new Set();
+  return new Set(fs.readFileSync(p, 'utf8').split('\n').map((l) => l.split('\t')[0].trim()).filter((x) => /^\d+$/.test(x)));
+}
 const ALL = ['en', ...TARGETS];
 
 /** "What is it?" source: English, else the first language that has one. */
@@ -205,12 +222,13 @@ async function stepJobs() {
   })));
   const cur = [];
   const about = [];
+  const wrong = wrongAbout();
   for await (const r of rows()) {
     const where = `${r.name} (${r.cityName}, ${r.countryName})`;
     (Array.isArray(r.curiosities) ? r.curiosities : []).forEach((c, k) => {
       if (typeof c === 'string' && c.trim()) cur.push({ id: `${r._doc}#${k}`, text: c, targets: TARGETS, ctx: where });
     });
-    const src = aboutSource(r.about);
+    const src = wrong.has(r._doc) ? null : aboutSource(r.about);
     if (src) {
       const missing = ALL.filter((l) => !(typeof r.about[l] === 'string' && r.about[l].trim()));
       if (missing.length) about.push({ id: r._doc, text: r.about[src], src, targets: missing, ctx: where });
@@ -262,6 +280,7 @@ async function stepRender() {
   const problems = [];
   let n = 0;
   let maxBytes = 0;
+  const wrong = wrongAbout();
 
   for await (const r of rows()) {
     n++;
@@ -326,7 +345,9 @@ async function stepRender() {
     const about = {};
     const aboutTranslated = {};
     const aboutSources = {};
-    if (aboutTr && src) {
+    const clearAbout = wrong.has(r._doc);
+    if (clearAbout) bump('about:cleared');
+    else if (aboutTr && src) {
       for (const [lang, text] of Object.entries(aboutTr)) {
         if (!text || (r.about && r.about[lang])) continue;
         about[lang] = text;
@@ -336,6 +357,7 @@ async function stepRender() {
       }
     }
     const rec = { doc: r._doc, src: srcHash(r), i18n, about, aboutTranslated, aboutSources };
+    if (clearAbout) rec.clearAbout = true;
     const line = JSON.stringify(rec);
     maxBytes = Math.max(maxBytes, line.length);
     out.write(line + '\n');
@@ -351,7 +373,8 @@ async function stepRender() {
 /**
  * attractions/{id}: i18n (whole map, replaced), i18nSrc, i18nAt, and the
  * missing about.{lang} / aboutTranslated.{lang} / aboutSources.{lang} as field
- * paths (existing Wikipedia languages are never touched). source.jsonl is the
+ * paths (existing Wikipedia languages are never touched; all of them are
+ * deleted for the ids in about_wrong_article.tsv). source.jsonl is the
  * backup of every field this overwrites.
  *   --limit N   only the first N records (try-out)
  *   --doc ID    only that attraction
@@ -380,6 +403,9 @@ async function stepWrite() {
       i18nSrc: x.src,
       i18nAt: a.firestore.FieldValue.serverTimestamp(),
     };
+    if (x.clearAbout) {
+      for (const f of ['about', 'aboutTranslated', 'aboutSources']) upd[f] = a.firestore.FieldValue.delete();
+    }
     for (const [lang, v] of Object.entries(x.about)) upd[`about.${lang}`] = v;
     for (const [lang, v] of Object.entries(x.aboutTranslated)) upd[`aboutTranslated.${lang}`] = v;
     for (const [lang, v] of Object.entries(x.aboutSources)) upd[`aboutSources.${lang}`] = v;
