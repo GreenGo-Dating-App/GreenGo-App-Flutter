@@ -42647,6 +42647,372 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, =0{That was your last refresh for today} =1{1 refresh left today} other{{count} refreshes left today}}'**
   String discoveryRefreshesLeft(int count);
+
+  /// Business hub tile + screen title: the seller's fiscal/billing data.
+  ///
+  /// In en, this message translates to:
+  /// **'Invoice details'**
+  String get financeBillingTitle;
+
+  /// Hub tile subtitle when the details are complete.
+  ///
+  /// In en, this message translates to:
+  /// **'Ready for your GreenGo fee invoices'**
+  String get financeBillingSubtitleComplete;
+
+  /// Hub tile subtitle when details are missing.
+  ///
+  /// In en, this message translates to:
+  /// **'Missing — required for your fee invoices'**
+  String get financeBillingSubtitleMissing;
+
+  /// Required banner title at the top of the business hub.
+  ///
+  /// In en, this message translates to:
+  /// **'Add your invoice details'**
+  String get financeBillingBannerTitle;
+
+  /// Required banner body.
+  ///
+  /// In en, this message translates to:
+  /// **'Required to issue your GreenGo fee invoices: legal name, tax ID and billing address.'**
+  String get financeBillingBannerBody;
+
+  /// Banner button.
+  ///
+  /// In en, this message translates to:
+  /// **'Add details'**
+  String get financeBillingBannerAction;
+
+  /// Form intro text.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo\'s ticket service fee is invoiced to you, the seller. These details appear on your fee invoices (and on the NFS-e in Brazil).'**
+  String get financeBillingIntro;
+
+  /// Segmented choice: private person.
+  ///
+  /// In en, this message translates to:
+  /// **'Private person'**
+  String get financeBillingTypePrivate;
+
+  /// Segmented choice: company.
+  ///
+  /// In en, this message translates to:
+  /// **'Company'**
+  String get financeBillingTypeCompany;
+
+  /// Country picker label (tax residence).
+  ///
+  /// In en, this message translates to:
+  /// **'Country (tax residence)'**
+  String get financeBillingCountry;
+
+  /// Full legal name of a private person.
+  ///
+  /// In en, this message translates to:
+  /// **'Full legal name'**
+  String get financeBillingLegalNamePrivate;
+
+  /// Company legal name (Brazil: razão social).
+  ///
+  /// In en, this message translates to:
+  /// **'Company legal name'**
+  String get financeBillingLegalNameCompany;
+
+  /// Company trade name, optional.
+  ///
+  /// In en, this message translates to:
+  /// **'Trade name (optional)'**
+  String get financeBillingTradeName;
+
+  /// Company contact person.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact person'**
+  String get financeBillingContactPerson;
+
+  /// Tax id label, Brazil private.
+  ///
+  /// In en, this message translates to:
+  /// **'CPF'**
+  String get financeBillingTaxIdCpf;
+
+  /// Tax id label, Brazil company.
+  ///
+  /// In en, this message translates to:
+  /// **'CNPJ'**
+  String get financeBillingTaxIdCnpj;
+
+  /// Tax id label, Italy private.
+  ///
+  /// In en, this message translates to:
+  /// **'Codice fiscale'**
+  String get financeBillingTaxIdCodiceFiscale;
+
+  /// Tax id label, Italy company.
+  ///
+  /// In en, this message translates to:
+  /// **'Partita IVA'**
+  String get financeBillingTaxIdPartitaIva;
+
+  /// Tax id label, Portugal private.
+  ///
+  /// In en, this message translates to:
+  /// **'NIF'**
+  String get financeBillingTaxIdNifPt;
+
+  /// Tax id label, Portugal company.
+  ///
+  /// In en, this message translates to:
+  /// **'NIPC'**
+  String get financeBillingTaxIdNipc;
+
+  /// Tax id label, Spain private.
+  ///
+  /// In en, this message translates to:
+  /// **'NIF / NIE'**
+  String get financeBillingTaxIdNifNie;
+
+  /// Tax id label, Spain company.
+  ///
+  /// In en, this message translates to:
+  /// **'CIF / NIF'**
+  String get financeBillingTaxIdCifNif;
+
+  /// Tax id label, Germany private.
+  ///
+  /// In en, this message translates to:
+  /// **'Tax ID (Steuer-ID)'**
+  String get financeBillingTaxIdSteuerId;
+
+  /// Tax id label, France private.
+  ///
+  /// In en, this message translates to:
+  /// **'Tax number (numéro fiscal)'**
+  String get financeBillingTaxIdFrSpi;
+
+  /// Tax id label, US private (optional).
+  ///
+  /// In en, this message translates to:
+  /// **'SSN / ITIN (optional)'**
+  String get financeBillingTaxIdSsnItin;
+
+  /// Tax id label, US company.
+  ///
+  /// In en, this message translates to:
+  /// **'EIN'**
+  String get financeBillingTaxIdEin;
+
+  /// Tax id label, EU company.
+  ///
+  /// In en, this message translates to:
+  /// **'VAT number'**
+  String get financeBillingTaxIdVat;
+
+  /// Tax id label, other countries, private.
+  ///
+  /// In en, this message translates to:
+  /// **'Tax ID'**
+  String get financeBillingTaxIdGeneric;
+
+  /// Tax id label, other countries, company.
+  ///
+  /// In en, this message translates to:
+  /// **'Tax / VAT ID'**
+  String get financeBillingTaxIdGenericCompany;
+
+  /// Privacy note under the optional US SSN field.
+  ///
+  /// In en, this message translates to:
+  /// **'Optional. Add it only if you need it on your invoices — it is stored securely and never shown in full.'**
+  String get financeBillingSsnNote;
+
+  /// Saved tax id, masked (e.g. •••••••4725).
+  ///
+  /// In en, this message translates to:
+  /// **'Saved: {masked}'**
+  String financeBillingTaxIdSaved(String masked);
+
+  /// Button to replace the saved tax id.
+  ///
+  /// In en, this message translates to:
+  /// **'Change'**
+  String get financeBillingTaxIdChange;
+
+  /// Helper under the new tax id input.
+  ///
+  /// In en, this message translates to:
+  /// **'Leave empty to keep the saved number'**
+  String get financeBillingTaxIdKeepHint;
+
+  /// Brazil company: municipal registration, optional.
+  ///
+  /// In en, this message translates to:
+  /// **'Inscrição municipal (optional)'**
+  String get financeBillingInscricaoMunicipal;
+
+  /// Brazil company: state registration, optional.
+  ///
+  /// In en, this message translates to:
+  /// **'Inscrição estadual (optional)'**
+  String get financeBillingInscricaoEstadual;
+
+  /// Section header.
+  ///
+  /// In en, this message translates to:
+  /// **'Billing address'**
+  String get financeBillingAddressSection;
+
+  /// Address field.
+  ///
+  /// In en, this message translates to:
+  /// **'Street'**
+  String get financeBillingStreet;
+
+  /// Address field: house number.
+  ///
+  /// In en, this message translates to:
+  /// **'Number'**
+  String get financeBillingNumber;
+
+  /// Address field: apartment / suite, optional.
+  ///
+  /// In en, this message translates to:
+  /// **'Apartment, suite (optional)'**
+  String get financeBillingComplement;
+
+  /// Address field: district / neighbourhood (required in Brazil).
+  ///
+  /// In en, this message translates to:
+  /// **'District / neighborhood'**
+  String get financeBillingDistrict;
+
+  /// Address field.
+  ///
+  /// In en, this message translates to:
+  /// **'City'**
+  String get financeBillingCity;
+
+  /// Address field: state / region.
+  ///
+  /// In en, this message translates to:
+  /// **'State / region'**
+  String get financeBillingRegion;
+
+  /// State field when a 2-letter code is required (Brazil UF, US state).
+  ///
+  /// In en, this message translates to:
+  /// **'State (2-letter code)'**
+  String get financeBillingRegionCode;
+
+  /// Address field.
+  ///
+  /// In en, this message translates to:
+  /// **'Postal code'**
+  String get financeBillingPostalCode;
+
+  /// Section header.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact'**
+  String get financeBillingContactSection;
+
+  /// Billing e-mail field.
+  ///
+  /// In en, this message translates to:
+  /// **'Billing e-mail'**
+  String get financeBillingEmail;
+
+  /// Phone field, optional.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone (optional)'**
+  String get financeBillingPhone;
+
+  /// Save button.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get financeBillingSave;
+
+  /// Note under the save button.
+  ///
+  /// In en, this message translates to:
+  /// **'Changes apply to future invoices only.'**
+  String get financeBillingFutureOnly;
+
+  /// Privacy note on the form.
+  ///
+  /// In en, this message translates to:
+  /// **'Your tax ID is visible only to you (masked) and to GreenGo\'s finance team, and is used only to issue your invoices.'**
+  String get financeBillingPrivacy;
+
+  /// Snackbar after saving.
+  ///
+  /// In en, this message translates to:
+  /// **'Invoice details saved'**
+  String get financeBillingSaved;
+
+  /// Error state when loading fails.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t load your invoice details.'**
+  String get financeBillingLoadError;
+
+  /// Snackbar when saving fails (network / server).
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t save. Check your connection and try again.'**
+  String get financeBillingSaveError;
+
+  /// Snackbar when the server rejected a field.
+  ///
+  /// In en, this message translates to:
+  /// **'Please check the highlighted field.'**
+  String get financeBillingFixField;
+
+  /// Field error: required.
+  ///
+  /// In en, this message translates to:
+  /// **'Required'**
+  String get financeBillingErrorRequired;
+
+  /// Field error: invalid format.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid — check the format'**
+  String get financeBillingErrorInvalid;
+
+  /// Field error: tax id failed its checksum.
+  ///
+  /// In en, this message translates to:
+  /// **'This number is not valid for the selected country'**
+  String get financeBillingErrorTaxId;
+
+  /// Field error: too long.
+  ///
+  /// In en, this message translates to:
+  /// **'Too long'**
+  String get financeBillingErrorTooLong;
+
+  /// Field error: postal code, with the expected shape.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid postal code (format {example})'**
+  String financeBillingErrorPostal(String example);
+
+  /// Field error: e-mail.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a valid e-mail'**
+  String get financeBillingErrorEmail;
+
+  /// Banner on the Invoices screen when details are missing.
+  ///
+  /// In en, this message translates to:
+  /// **'Add your invoice details so your fee invoices carry your correct data.'**
+  String get financeBillingInvoicesShortcut;
 }
 
 class _AppLocalizationsDelegate

@@ -7769,5 +7769,259 @@
     }
   },
   "discoveryRefreshLimitReached": "Hai aggiornato Scopri {limit} volte oggi. Potrai aggiornare di nuovo domani; scorrendo continuano a caricarsi nuove persone.",
-  "discoveryRefreshesLeft": "{count, plural, =0{Era il tuo ultimo aggiornamento di oggi} =1{Ti resta 1 aggiornamento oggi} other{Ti restano {count} aggiornamenti oggi}}"
+  "discoveryRefreshesLeft": "{count, plural, =0{Era il tuo ultimo aggiornamento di oggi} =1{Ti resta 1 aggiornamento oggi} other{Ti restano {count} aggiornamenti oggi}}",
+  "financeBillingTitle": "Dati di fatturazione",
+  "@financeBillingTitle": {
+    "description": "Business hub tile + screen title: the seller's fiscal/billing data."
+  },
+  "financeBillingSubtitleComplete": "Pronti per le tue fatture delle commissioni GreenGo",
+  "@financeBillingSubtitleComplete": {
+    "description": "Hub tile subtitle when the details are complete."
+  },
+  "financeBillingSubtitleMissing": "Mancanti — obbligatori per le tue fatture delle commissioni",
+  "@financeBillingSubtitleMissing": {
+    "description": "Hub tile subtitle when details are missing."
+  },
+  "financeBillingBannerTitle": "Aggiungi i tuoi dati di fatturazione",
+  "@financeBillingBannerTitle": {
+    "description": "Required banner title at the top of the business hub."
+  },
+  "financeBillingBannerBody": "Necessari per emettere le tue fatture delle commissioni GreenGo: nome legale, codice fiscale o partita IVA e indirizzo di fatturazione.",
+  "@financeBillingBannerBody": {
+    "description": "Required banner body."
+  },
+  "financeBillingBannerAction": "Aggiungi dati",
+  "@financeBillingBannerAction": {
+    "description": "Banner button."
+  },
+  "financeBillingIntro": "La commissione di servizio GreenGo sui biglietti è fatturata a te, il venditore. Questi dati compaiono sulle tue fatture delle commissioni (e sulla NFS-e in Brasile).",
+  "@financeBillingIntro": {
+    "description": "Form intro text."
+  },
+  "financeBillingTypePrivate": "Persona fisica",
+  "@financeBillingTypePrivate": {
+    "description": "Segmented choice: private person."
+  },
+  "financeBillingTypeCompany": "Azienda",
+  "@financeBillingTypeCompany": {
+    "description": "Segmented choice: company."
+  },
+  "financeBillingCountry": "Paese (residenza fiscale)",
+  "@financeBillingCountry": {
+    "description": "Country picker label (tax residence)."
+  },
+  "financeBillingLegalNamePrivate": "Nome e cognome",
+  "@financeBillingLegalNamePrivate": {
+    "description": "Full legal name of a private person."
+  },
+  "financeBillingLegalNameCompany": "Ragione sociale",
+  "@financeBillingLegalNameCompany": {
+    "description": "Company legal name (Brazil: razão social)."
+  },
+  "financeBillingTradeName": "Nome commerciale (facoltativo)",
+  "@financeBillingTradeName": {
+    "description": "Company trade name, optional."
+  },
+  "financeBillingContactPerson": "Referente",
+  "@financeBillingContactPerson": {
+    "description": "Company contact person."
+  },
+  "financeBillingTaxIdCpf": "CPF",
+  "@financeBillingTaxIdCpf": {
+    "description": "Tax id label, Brazil private."
+  },
+  "financeBillingTaxIdCnpj": "CNPJ",
+  "@financeBillingTaxIdCnpj": {
+    "description": "Tax id label, Brazil company."
+  },
+  "financeBillingTaxIdCodiceFiscale": "Codice fiscale",
+  "@financeBillingTaxIdCodiceFiscale": {
+    "description": "Tax id label, Italy private."
+  },
+  "financeBillingTaxIdPartitaIva": "Partita IVA",
+  "@financeBillingTaxIdPartitaIva": {
+    "description": "Tax id label, Italy company."
+  },
+  "financeBillingTaxIdNifPt": "NIF",
+  "@financeBillingTaxIdNifPt": {
+    "description": "Tax id label, Portugal private."
+  },
+  "financeBillingTaxIdNipc": "NIPC",
+  "@financeBillingTaxIdNipc": {
+    "description": "Tax id label, Portugal company."
+  },
+  "financeBillingTaxIdNifNie": "NIF / NIE",
+  "@financeBillingTaxIdNifNie": {
+    "description": "Tax id label, Spain private."
+  },
+  "financeBillingTaxIdCifNif": "CIF / NIF",
+  "@financeBillingTaxIdCifNif": {
+    "description": "Tax id label, Spain company."
+  },
+  "financeBillingTaxIdSteuerId": "Codice fiscale (Steuer-ID)",
+  "@financeBillingTaxIdSteuerId": {
+    "description": "Tax id label, Germany private."
+  },
+  "financeBillingTaxIdFrSpi": "Codice fiscale (numéro fiscal)",
+  "@financeBillingTaxIdFrSpi": {
+    "description": "Tax id label, France private."
+  },
+  "financeBillingTaxIdSsnItin": "SSN / ITIN (facoltativo)",
+  "@financeBillingTaxIdSsnItin": {
+    "description": "Tax id label, US private (optional)."
+  },
+  "financeBillingTaxIdEin": "EIN",
+  "@financeBillingTaxIdEin": {
+    "description": "Tax id label, US company."
+  },
+  "financeBillingTaxIdVat": "Partita IVA (VAT)",
+  "@financeBillingTaxIdVat": {
+    "description": "Tax id label, EU company."
+  },
+  "financeBillingTaxIdGeneric": "Codice fiscale",
+  "@financeBillingTaxIdGeneric": {
+    "description": "Tax id label, other countries, private."
+  },
+  "financeBillingTaxIdGenericCompany": "Codice fiscale / Partita IVA",
+  "@financeBillingTaxIdGenericCompany": {
+    "description": "Tax id label, other countries, company."
+  },
+  "financeBillingSsnNote": "Facoltativo. Aggiungilo solo se ti serve sulle fatture: viene conservato in modo sicuro e mai mostrato per intero.",
+  "@financeBillingSsnNote": {
+    "description": "Privacy note under the optional US SSN field."
+  },
+  "financeBillingTaxIdSaved": "Salvato: {masked}",
+  "@financeBillingTaxIdSaved": {
+    "description": "Saved tax id, masked (e.g. •••••••4725).",
+    "placeholders": {
+      "masked": {
+        "type": "String"
+      }
+    }
+  },
+  "financeBillingTaxIdChange": "Modifica",
+  "@financeBillingTaxIdChange": {
+    "description": "Button to replace the saved tax id."
+  },
+  "financeBillingTaxIdKeepHint": "Lascia vuoto per mantenere il numero salvato",
+  "@financeBillingTaxIdKeepHint": {
+    "description": "Helper under the new tax id input."
+  },
+  "financeBillingInscricaoMunicipal": "Inscrição municipal (facoltativo)",
+  "@financeBillingInscricaoMunicipal": {
+    "description": "Brazil company: municipal registration, optional."
+  },
+  "financeBillingInscricaoEstadual": "Inscrição estadual (facoltativo)",
+  "@financeBillingInscricaoEstadual": {
+    "description": "Brazil company: state registration, optional."
+  },
+  "financeBillingAddressSection": "Indirizzo di fatturazione",
+  "@financeBillingAddressSection": {
+    "description": "Section header."
+  },
+  "financeBillingStreet": "Via",
+  "@financeBillingStreet": {
+    "description": "Address field."
+  },
+  "financeBillingNumber": "Numero civico",
+  "@financeBillingNumber": {
+    "description": "Address field: house number."
+  },
+  "financeBillingComplement": "Interno, scala (facoltativo)",
+  "@financeBillingComplement": {
+    "description": "Address field: apartment / suite, optional."
+  },
+  "financeBillingDistrict": "Quartiere / frazione",
+  "@financeBillingDistrict": {
+    "description": "Address field: district / neighbourhood (required in Brazil)."
+  },
+  "financeBillingCity": "Città",
+  "@financeBillingCity": {
+    "description": "Address field."
+  },
+  "financeBillingRegion": "Provincia / regione",
+  "@financeBillingRegion": {
+    "description": "Address field: state / region."
+  },
+  "financeBillingRegionCode": "Stato (sigla di 2 lettere)",
+  "@financeBillingRegionCode": {
+    "description": "State field when a 2-letter code is required (Brazil UF, US state)."
+  },
+  "financeBillingPostalCode": "CAP",
+  "@financeBillingPostalCode": {
+    "description": "Address field."
+  },
+  "financeBillingContactSection": "Contatti",
+  "@financeBillingContactSection": {
+    "description": "Section header."
+  },
+  "financeBillingEmail": "E-mail di fatturazione",
+  "@financeBillingEmail": {
+    "description": "Billing e-mail field."
+  },
+  "financeBillingPhone": "Telefono (facoltativo)",
+  "@financeBillingPhone": {
+    "description": "Phone field, optional."
+  },
+  "financeBillingSave": "Salva",
+  "@financeBillingSave": {
+    "description": "Save button."
+  },
+  "financeBillingFutureOnly": "Le modifiche valgono solo per le fatture future.",
+  "@financeBillingFutureOnly": {
+    "description": "Note under the save button."
+  },
+  "financeBillingPrivacy": "Il tuo codice fiscale è visibile solo a te (oscurato) e al team finanza di GreenGo, e serve solo a emettere le tue fatture.",
+  "@financeBillingPrivacy": {
+    "description": "Privacy note on the form."
+  },
+  "financeBillingSaved": "Dati di fatturazione salvati",
+  "@financeBillingSaved": {
+    "description": "Snackbar after saving."
+  },
+  "financeBillingLoadError": "Impossibile caricare i tuoi dati di fatturazione.",
+  "@financeBillingLoadError": {
+    "description": "Error state when loading fails."
+  },
+  "financeBillingSaveError": "Salvataggio non riuscito. Controlla la connessione e riprova.",
+  "@financeBillingSaveError": {
+    "description": "Snackbar when saving fails (network / server)."
+  },
+  "financeBillingFixField": "Controlla il campo evidenziato.",
+  "@financeBillingFixField": {
+    "description": "Snackbar when the server rejected a field."
+  },
+  "financeBillingErrorRequired": "Obbligatorio",
+  "@financeBillingErrorRequired": {
+    "description": "Field error: required."
+  },
+  "financeBillingErrorInvalid": "Non valido — controlla il formato",
+  "@financeBillingErrorInvalid": {
+    "description": "Field error: invalid format."
+  },
+  "financeBillingErrorTaxId": "Questo numero non è valido per il paese selezionato",
+  "@financeBillingErrorTaxId": {
+    "description": "Field error: tax id failed its checksum."
+  },
+  "financeBillingErrorTooLong": "Troppo lungo",
+  "@financeBillingErrorTooLong": {
+    "description": "Field error: too long."
+  },
+  "financeBillingErrorPostal": "CAP non valido (formato {example})",
+  "@financeBillingErrorPostal": {
+    "description": "Field error: postal code, with the expected shape.",
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "financeBillingErrorEmail": "Inserisci un indirizzo e-mail valido",
+  "@financeBillingErrorEmail": {
+    "description": "Field error: e-mail."
+  },
+  "financeBillingInvoicesShortcut": "Aggiungi i tuoi dati di fatturazione perché le fatture delle commissioni riportino i dati corretti.",
+  "@financeBillingInvoicesShortcut": {
+    "description": "Banner on the Invoices screen when details are missing."
+  }
 }

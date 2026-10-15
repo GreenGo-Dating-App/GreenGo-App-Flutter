@@ -24893,4 +24893,203 @@ class AppLocalizationsEn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get financeBillingTitle => 'Invoice details';
+
+  @override
+  String get financeBillingSubtitleComplete =>
+      'Ready for your GreenGo fee invoices';
+
+  @override
+  String get financeBillingSubtitleMissing =>
+      'Missing — required for your fee invoices';
+
+  @override
+  String get financeBillingBannerTitle => 'Add your invoice details';
+
+  @override
+  String get financeBillingBannerBody =>
+      'Required to issue your GreenGo fee invoices: legal name, tax ID and billing address.';
+
+  @override
+  String get financeBillingBannerAction => 'Add details';
+
+  @override
+  String get financeBillingIntro =>
+      'GreenGo\'s ticket service fee is invoiced to you, the seller. These details appear on your fee invoices (and on the NFS-e in Brazil).';
+
+  @override
+  String get financeBillingTypePrivate => 'Private person';
+
+  @override
+  String get financeBillingTypeCompany => 'Company';
+
+  @override
+  String get financeBillingCountry => 'Country (tax residence)';
+
+  @override
+  String get financeBillingLegalNamePrivate => 'Full legal name';
+
+  @override
+  String get financeBillingLegalNameCompany => 'Company legal name';
+
+  @override
+  String get financeBillingTradeName => 'Trade name (optional)';
+
+  @override
+  String get financeBillingContactPerson => 'Contact person';
+
+  @override
+  String get financeBillingTaxIdCpf => 'CPF';
+
+  @override
+  String get financeBillingTaxIdCnpj => 'CNPJ';
+
+  @override
+  String get financeBillingTaxIdCodiceFiscale => 'Codice fiscale';
+
+  @override
+  String get financeBillingTaxIdPartitaIva => 'Partita IVA';
+
+  @override
+  String get financeBillingTaxIdNifPt => 'NIF';
+
+  @override
+  String get financeBillingTaxIdNipc => 'NIPC';
+
+  @override
+  String get financeBillingTaxIdNifNie => 'NIF / NIE';
+
+  @override
+  String get financeBillingTaxIdCifNif => 'CIF / NIF';
+
+  @override
+  String get financeBillingTaxIdSteuerId => 'Tax ID (Steuer-ID)';
+
+  @override
+  String get financeBillingTaxIdFrSpi => 'Tax number (numéro fiscal)';
+
+  @override
+  String get financeBillingTaxIdSsnItin => 'SSN / ITIN (optional)';
+
+  @override
+  String get financeBillingTaxIdEin => 'EIN';
+
+  @override
+  String get financeBillingTaxIdVat => 'VAT number';
+
+  @override
+  String get financeBillingTaxIdGeneric => 'Tax ID';
+
+  @override
+  String get financeBillingTaxIdGenericCompany => 'Tax / VAT ID';
+
+  @override
+  String get financeBillingSsnNote =>
+      'Optional. Add it only if you need it on your invoices — it is stored securely and never shown in full.';
+
+  @override
+  String financeBillingTaxIdSaved(String masked) {
+    return 'Saved: $masked';
+  }
+
+  @override
+  String get financeBillingTaxIdChange => 'Change';
+
+  @override
+  String get financeBillingTaxIdKeepHint =>
+      'Leave empty to keep the saved number';
+
+  @override
+  String get financeBillingInscricaoMunicipal =>
+      'Inscrição municipal (optional)';
+
+  @override
+  String get financeBillingInscricaoEstadual => 'Inscrição estadual (optional)';
+
+  @override
+  String get financeBillingAddressSection => 'Billing address';
+
+  @override
+  String get financeBillingStreet => 'Street';
+
+  @override
+  String get financeBillingNumber => 'Number';
+
+  @override
+  String get financeBillingComplement => 'Apartment, suite (optional)';
+
+  @override
+  String get financeBillingDistrict => 'District / neighborhood';
+
+  @override
+  String get financeBillingCity => 'City';
+
+  @override
+  String get financeBillingRegion => 'State / region';
+
+  @override
+  String get financeBillingRegionCode => 'State (2-letter code)';
+
+  @override
+  String get financeBillingPostalCode => 'Postal code';
+
+  @override
+  String get financeBillingContactSection => 'Contact';
+
+  @override
+  String get financeBillingEmail => 'Billing e-mail';
+
+  @override
+  String get financeBillingPhone => 'Phone (optional)';
+
+  @override
+  String get financeBillingSave => 'Save';
+
+  @override
+  String get financeBillingFutureOnly =>
+      'Changes apply to future invoices only.';
+
+  @override
+  String get financeBillingPrivacy =>
+      'Your tax ID is visible only to you (masked) and to GreenGo\'s finance team, and is used only to issue your invoices.';
+
+  @override
+  String get financeBillingSaved => 'Invoice details saved';
+
+  @override
+  String get financeBillingLoadError => 'Couldn\'t load your invoice details.';
+
+  @override
+  String get financeBillingSaveError =>
+      'Couldn\'t save. Check your connection and try again.';
+
+  @override
+  String get financeBillingFixField => 'Please check the highlighted field.';
+
+  @override
+  String get financeBillingErrorRequired => 'Required';
+
+  @override
+  String get financeBillingErrorInvalid => 'Invalid — check the format';
+
+  @override
+  String get financeBillingErrorTaxId =>
+      'This number is not valid for the selected country';
+
+  @override
+  String get financeBillingErrorTooLong => 'Too long';
+
+  @override
+  String financeBillingErrorPostal(String example) {
+    return 'Invalid postal code (format $example)';
+  }
+
+  @override
+  String get financeBillingErrorEmail => 'Enter a valid e-mail';
+
+  @override
+  String get financeBillingInvoicesShortcut =>
+      'Add your invoice details so your fee invoices carry your correct data.';
 }

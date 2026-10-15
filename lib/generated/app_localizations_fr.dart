@@ -25276,4 +25276,206 @@ class AppLocalizationsFr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get financeBillingTitle => 'Informations de facturation';
+
+  @override
+  String get financeBillingSubtitleComplete =>
+      'Prêtes pour tes factures de frais GreenGo';
+
+  @override
+  String get financeBillingSubtitleMissing =>
+      'Manquantes — obligatoires pour tes factures de frais';
+
+  @override
+  String get financeBillingBannerTitle =>
+      'Ajoute tes informations de facturation';
+
+  @override
+  String get financeBillingBannerBody =>
+      'Nécessaires pour émettre tes factures de frais GreenGo : nom légal, identifiant fiscal et adresse de facturation.';
+
+  @override
+  String get financeBillingBannerAction => 'Ajouter';
+
+  @override
+  String get financeBillingIntro =>
+      'Les frais de service GreenGo sur les billets te sont facturés, à toi le vendeur. Ces informations figurent sur tes factures de frais (et sur la NFS-e au Brésil).';
+
+  @override
+  String get financeBillingTypePrivate => 'Particulier';
+
+  @override
+  String get financeBillingTypeCompany => 'Entreprise';
+
+  @override
+  String get financeBillingCountry => 'Pays (résidence fiscale)';
+
+  @override
+  String get financeBillingLegalNamePrivate => 'Nom complet';
+
+  @override
+  String get financeBillingLegalNameCompany => 'Raison sociale';
+
+  @override
+  String get financeBillingTradeName => 'Nom commercial (facultatif)';
+
+  @override
+  String get financeBillingContactPerson => 'Personne de contact';
+
+  @override
+  String get financeBillingTaxIdCpf => 'CPF';
+
+  @override
+  String get financeBillingTaxIdCnpj => 'CNPJ';
+
+  @override
+  String get financeBillingTaxIdCodiceFiscale => 'Codice fiscale';
+
+  @override
+  String get financeBillingTaxIdPartitaIva => 'Partita IVA';
+
+  @override
+  String get financeBillingTaxIdNifPt => 'NIF';
+
+  @override
+  String get financeBillingTaxIdNipc => 'NIPC';
+
+  @override
+  String get financeBillingTaxIdNifNie => 'NIF / NIE';
+
+  @override
+  String get financeBillingTaxIdCifNif => 'CIF / NIF';
+
+  @override
+  String get financeBillingTaxIdSteuerId => 'Numéro fiscal (Steuer-ID)';
+
+  @override
+  String get financeBillingTaxIdFrSpi => 'Numéro fiscal';
+
+  @override
+  String get financeBillingTaxIdSsnItin => 'SSN / ITIN (facultatif)';
+
+  @override
+  String get financeBillingTaxIdEin => 'EIN';
+
+  @override
+  String get financeBillingTaxIdVat => 'Numéro de TVA';
+
+  @override
+  String get financeBillingTaxIdGeneric => 'Identifiant fiscal';
+
+  @override
+  String get financeBillingTaxIdGenericCompany => 'Identifiant fiscal / TVA';
+
+  @override
+  String get financeBillingSsnNote =>
+      'Facultatif. Ajoute-le seulement si tu en as besoin sur tes factures — il est stocké de façon sécurisée et jamais affiché en entier.';
+
+  @override
+  String financeBillingTaxIdSaved(String masked) {
+    return 'Enregistré : $masked';
+  }
+
+  @override
+  String get financeBillingTaxIdChange => 'Modifier';
+
+  @override
+  String get financeBillingTaxIdKeepHint =>
+      'Laisse vide pour garder le numéro enregistré';
+
+  @override
+  String get financeBillingInscricaoMunicipal =>
+      'Inscrição municipal (facultatif)';
+
+  @override
+  String get financeBillingInscricaoEstadual =>
+      'Inscrição estadual (facultatif)';
+
+  @override
+  String get financeBillingAddressSection => 'Adresse de facturation';
+
+  @override
+  String get financeBillingStreet => 'Rue';
+
+  @override
+  String get financeBillingNumber => 'Numéro';
+
+  @override
+  String get financeBillingComplement => 'Complément d\'adresse (facultatif)';
+
+  @override
+  String get financeBillingDistrict => 'Quartier';
+
+  @override
+  String get financeBillingCity => 'Ville';
+
+  @override
+  String get financeBillingRegion => 'Région / département';
+
+  @override
+  String get financeBillingRegionCode => 'État (code à 2 lettres)';
+
+  @override
+  String get financeBillingPostalCode => 'Code postal';
+
+  @override
+  String get financeBillingContactSection => 'Contact';
+
+  @override
+  String get financeBillingEmail => 'E-mail de facturation';
+
+  @override
+  String get financeBillingPhone => 'Téléphone (facultatif)';
+
+  @override
+  String get financeBillingSave => 'Enregistrer';
+
+  @override
+  String get financeBillingFutureOnly =>
+      'Les modifications ne s\'appliquent qu\'aux futures factures.';
+
+  @override
+  String get financeBillingPrivacy =>
+      'Ton identifiant fiscal n\'est visible que par toi (masqué) et par l\'équipe finance de GreenGo, et sert uniquement à émettre tes factures.';
+
+  @override
+  String get financeBillingSaved => 'Informations de facturation enregistrées';
+
+  @override
+  String get financeBillingLoadError =>
+      'Impossible de charger tes informations de facturation.';
+
+  @override
+  String get financeBillingSaveError =>
+      'Échec de l\'enregistrement. Vérifie ta connexion et réessaie.';
+
+  @override
+  String get financeBillingFixField => 'Vérifie le champ signalé.';
+
+  @override
+  String get financeBillingErrorRequired => 'Obligatoire';
+
+  @override
+  String get financeBillingErrorInvalid => 'Invalide — vérifie le format';
+
+  @override
+  String get financeBillingErrorTaxId =>
+      'Ce numéro n\'est pas valide pour le pays choisi';
+
+  @override
+  String get financeBillingErrorTooLong => 'Trop long';
+
+  @override
+  String financeBillingErrorPostal(String example) {
+    return 'Code postal invalide (format $example)';
+  }
+
+  @override
+  String get financeBillingErrorEmail => 'Saisis une adresse e-mail valide';
+
+  @override
+  String get financeBillingInvoicesShortcut =>
+      'Ajoute tes informations de facturation pour que tes factures de frais portent les bonnes données.';
 }

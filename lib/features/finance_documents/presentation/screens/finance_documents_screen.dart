@@ -9,19 +9,22 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../ticket_payments/domain/ticket_payments.dart' show formatTicketAmount;
+import '../../data/billing_profile_repository.dart';
 import '../../data/finance_documents_repository.dart';
 import '../../domain/finance_document.dart';
 import '../bloc/finance_documents_cubit.dart';
+import '../widgets/billing_status.dart';
 
 /// Profile > Business > Invoices: the seller's GreenGo fee invoices (+ credit
 /// notes) and monthly statements, with PDF download. The ticket service fee
 /// is paid by the seller; the same documents are e-mailed on the 2nd of each
 /// month.
 class FinanceDocumentsScreen extends StatefulWidget {
-  const FinanceDocumentsScreen({this.repository, super.key});
+  const FinanceDocumentsScreen({this.repository, this.billingRepository, super.key});
 
   /// Injectable for tests.
   final FinanceDocumentsRepository? repository;
+  final BillingProfileRepository? billingRepository;
 
   @override
   State<FinanceDocumentsScreen> createState() => _FinanceDocumentsScreenState();
@@ -67,11 +70,25 @@ class _FinanceDocumentsScreenState extends State<FinanceDocumentsScreen> {
             ],
           ),
         ),
-        body: TabBarView(
-          children: [
-            _DocsList(cubit: _invoices, repository: _repo),
-            _DocsList(cubit: _statements, repository: _repo, statements: true),
-          ],
+        // Shortcut to Invoice details while they are missing.
+        body: BillingStatusScope(
+          repository: widget.billingRepository,
+          child: Column(
+            children: [
+              const Padding(
+                padding: EdgeInsets.fromLTRB(AppDimensions.paddingL, AppDimensions.paddingL, AppDimensions.paddingL, 0),
+                child: BillingRequiredBanner(compact: true),
+              ),
+              Expanded(
+                child: TabBarView(
+                  children: [
+                    _DocsList(cubit: _invoices, repository: _repo),
+                    _DocsList(cubit: _statements, repository: _repo, statements: true),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

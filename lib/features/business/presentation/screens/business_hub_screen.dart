@@ -10,6 +10,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../analytics/presentation/screens/analytics_screen.dart';
 import '../../../explore/presentation/screens/qr_hub_screen.dart';
 import '../../../finance_documents/presentation/screens/finance_documents_screen.dart';
+import '../../../finance_documents/presentation/widgets/billing_status.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/widgets/edit_section_card.dart';
@@ -299,12 +300,20 @@ class BusinessHubScreen extends StatelessWidget {
   }
 
   /// The full business tool list — only reachable while business is active.
+  /// A business account also loads its invoice-details status once
+  /// ([BillingStatusScope]): the required banner + the Invoice details tile.
   Widget _buildTools(BuildContext context, AppLocalizations l10n) {
+    final tools = _buildToolList(context, l10n);
+    return profile.isBusiness ? BillingStatusScope(child: tools) : tools;
+  }
+
+  Widget _buildToolList(BuildContext context, AppLocalizations l10n) {
     return SingleChildScrollView(
         padding: const EdgeInsets.all(AppDimensions.paddingL),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            if (profile.isBusiness) const BillingRequiredBanner(),
             Text(
               l10n.businessSectionSubtitle,
               style: const TextStyle(
@@ -354,6 +363,8 @@ class BusinessHubScreen extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             if (profile.isBusiness) ...[
+              const InvoiceDetailsTile(),
+              const SizedBox(height: 16),
               EditSectionCard(
                 key: const ValueKey('business-hub-invoices'),
                 title: l10n.financeDocsTitle,
