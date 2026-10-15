@@ -1,8 +1,8 @@
 TÉRMINOS Y CONDICIONES DE GREENGO
 
-Versión: 5.1.2
-Fecha de entrada en vigor: 13 de octubre de 2026
-Versión anterior: 5.1.1 (13 de octubre de 2026)
+Versión: 5.2.0
+Fecha de entrada en vigor: 14 de octubre de 2026
+Versión anterior: 5.1.2 (13 de octubre de 2026)
 
 ================================================================================
 1. SOBRE ESTOS TÉRMINOS
@@ -395,25 +395,26 @@ que participes.
 11. EVENTOS
 ================================================================================
 
-11.1 Cualquier persona con una cuenta puede crear un Evento, salvo que su
-cuenta esté restringida. El organizador es responsable de:
+11.1 Para crear un Evento necesitas una Membresía (Base o superior), y tu
+cuenta no puede estar restringida. Cuántos Eventos puedes tener a la vez
+depende de tu plan (sección 11.7). El organizador es responsable de:
 - describir el Evento con exactitud;
 - mantenerlo legal y seguro;
 - cancelarlo con tiempo suficiente si no puede celebrarse.
 
 11.2 Eventos gratuitos y de pago
 a) Unirse a un Evento gratuito es gratis.
-b) Las Cuentas de empresa pueden vender entradas para sus Eventos. El contrato
-   de la entrada se celebra entre tú y el organizador: el organizador es el
-   vendedor, fija el precio y la política de cancelación y reembolso, y es
-   responsable del Evento, de emitir cualquier factura o recibo y de pagar los
-   impuestos sobre la entrada.
-c) GreenGo no cobra ninguna comisión sobre las entradas y nunca retiene el
-   dinero de las entradas. Pagas directamente al organizador, ya sea a través
-   de la propia cuenta de Stripe o de Mercado Pago del organizador, o con un
-   método de pago que el organizador indique (por ejemplo Pix o una
-   transferencia bancaria). En el caso de los métodos de pago indicados, el
-   organizador confirma tu pago; GreenGo no lo comprueba.
+b) Solo las Cuentas de empresa activas (sección 13) pueden vender entradas
+   para sus Eventos. El contrato de la entrada se celebra entre tú y el
+   organizador: el organizador es el vendedor, fija el precio y la política
+   de cancelación y reembolso, y es responsable del Evento, de emitir
+   cualquier factura o recibo y de pagar los impuestos sobre la entrada.
+c) Las entradas de pago se pagan solo a través del pago en la app, en la
+   propia cuenta de Stripe o de Mercado Pago del organizador conectada a
+   GreenGo. No hay enlaces de pago ni otros métodos de pago. Pagas el precio
+   de la entrada indicado, y nada más. El dinero va a la cuenta del
+   organizador: GreenGo nunca retiene el dinero de las entradas. GreenGo solo
+   recibe su tarifa de servicio, que paga el organizador (sección 11.6).
 d) El nombre y el correo electrónico del comprador/invitado se comparten con
    el organizador del evento para el control de acceso (consulta la Política
    de Privacidad, sección 11.4).
@@ -424,8 +425,10 @@ e) Tus derechos como consumidor frente al organizador, incluido cualquier
    sección 18.
 
 11.3 El registro de entrada en los eventos utiliza un código QR en la app. En
-los Eventos de pago, el código QR solo se emite una vez confirmado tu pago. Al
-registrar la entrada queda constancia de que asististe.
+los Eventos de pago, el código QR solo se emite una vez confirmado tu pago.
+Los visitantes que reservan sin cuenta (sección 11.8) reciben la entrada por
+correo electrónico. Al registrar la entrada queda constancia de que
+asististe.
 
 11.4 Eventos y atracciones externos
 - Algunos eventos y atracciones proceden de socios como Viator, Ticketmaster
@@ -442,6 +445,70 @@ registrar la entrada queda constancia de que asististe.
 - En caso de emergencia, llama primero a los servicios de emergencia locales
   y, después, denuncia a la persona en la app.
 
+11.6 Tarifa de servicio de GreenGo (la pagan los organizadores y Anfitriones)
+a) GreenGo cobra una tarifa de servicio por cada entrada de pago de un Evento
+   y por cada reserva de pago de una Experiencia. La paga el organizador o el
+   Anfitrión (el «vendedor»), no el comprador. Stripe (como comisión de
+   aplicación) o Mercado Pago (como comisión de marketplace) la descuenta del
+   precio de la entrada cuando el comprador paga, de modo que el vendedor
+   recibe el precio de la entrada menos la tarifa.
+b) La tarifa por entrada depende de la Membresía del vendedor en el momento
+   de la venta:
+   - Silver: 3 USD + 10 % del precio de la entrada, como máximo 10 USD;
+   - Gold: 2 USD + 10 % del precio de la entrada, como máximo 9 USD;
+   - Platinum: 1 USD + 10 % del precio de la entrada, como máximo 8 USD.
+c) Primer anuncio de pago: si todavía no has vendido entradas de pago en
+   GreenGo, la tarifa de tu primer Evento o Experiencia de pago es fija, de
+   1 USD por entrada, para ese anuncio.
+d) Las entradas gratuitas no tienen tarifa. La tarifa nunca supera el precio
+   de la entrada.
+e) Para las entradas con precio en otra moneda, la parte fija y el máximo se
+   convierten desde el dólar estadounidense con una tabla de cambio que
+   mantiene GreenGo. El 10 % se calcula sobre el precio de la entrada en su
+   propia moneda. La app muestra al vendedor una estimación de lo que
+   recibirá antes de publicar.
+f) Reembolsos: si una entrada o una reserva se reembolsa íntegramente, la
+   tarifa se devuelve al vendedor. Si se reembolsa solo en parte, el comprador
+   recupera el importe reembolsado y GreenGo conserva su tarifa.
+g) Stripe y Mercado Pago cobran al vendedor sus propias comisiones de
+   procesamiento, según sus propias condiciones. No son tarifas de GreenGo.
+h) GreenGo factura al vendedor su tarifa. El vendedor sigue siendo el
+   vendedor de la entrada y es responsable de la factura o el recibo al
+   comprador y de los impuestos sobre la entrada.
+
+11.7 Cuántos Eventos y Experiencias puedes tener
+a) Los límites cuentan los anuncios activos al mismo tiempo. No son límites
+   mensuales.
+   - Sin Membresía: no puedes crear Eventos ni Experiencias.
+   - Base: 1 Evento y 1 Experiencia, solo gratuitos (sin entradas ni reservas
+     de pago).
+   - Silver: 5 Eventos y 5 Experiencias.
+   - Gold: 10 Eventos y 10 Experiencias.
+   - Platinum: ilimitados.
+b) Los borradores de Experiencias cuentan para el límite.
+c) Si tu Membresía cambia a un plan inferior, tus anuncios más recientes,
+   hasta el nuevo límite, siguen visibles y los más antiguos se ocultan. Los
+   anuncios ocultos no se eliminan y vuelven si subes de plan de nuevo. Las
+   entradas y reservas ya vendidas siguen siendo válidas.
+
+11.8 Reservar como visitante, sin cuenta
+a) Si el organizador lo permite, cualquier persona que abra un enlace
+   compartido a un Evento público puede reservarlo como visitante, sin
+   cuenta, indicando su nombre, apellidos y correo electrónico, siempre que
+   queden plazas.
+b) En un Evento de pago, el visitante paga a través del mismo pago de Stripe
+   o Mercado Pago y recibe la entrada por correo electrónico.
+c) Los Eventos que requieren la aprobación del organizador, o que tienen
+   límites de edad o de género, solo pueden reservarse en la app.
+d) Los visitantes también pueden enviar una solicitud de reserva de una
+   Experiencia desde un enlace compartido.
+e) El nombre y el correo electrónico del visitante se comparten con el
+   organizador o el Anfitrión (lista de participantes). Eliminamos los datos
+   de contacto de los visitantes a los 400 días (consulta la Política de
+   Privacidad).
+f) Estos Términos se aplican a las reservas de visitantes en lo que resulte
+   pertinente.
+
 ================================================================================
 12. EXPERIENCIAS (ANFITRIONES E INVITADOS)
 ================================================================================
@@ -456,12 +523,17 @@ registrar la entrada queda constancia de que asististe.
   reserva y de actuar ante las denuncias según se describe en la sección 18.
 
 12.2 El pago va directamente al Anfitrión
-- Las Experiencias de pago se pagan directamente al Anfitrión: a través de la
-  propia cuenta de Stripe o de Mercado Pago del Anfitrión, mediante un método
-  de pago que el Anfitrión muestre en el anuncio, o en efectivo en el
-  encuentro cuando el anuncio lo permita.
-- GreenGo no cobra ninguna comisión, ningún dinero pasa por GreenGo, y GreenGo
-  no retiene ni reembolsa pagos de Experiencias.
+- Las Experiencias de pago se pagan solo a través del pago en la app, en la
+  propia cuenta de Stripe o de Mercado Pago del Anfitrión conectada a
+  GreenGo. No se permiten enlaces de pago, otros métodos de pago ni el pago
+  en efectivo en el encuentro.
+- El Invitado paga el precio indicado en el anuncio, y nada más. El dinero va
+  a la cuenta del Anfitrión: el pago no pasa por GreenGo, y GreenGo no
+  retiene ni reembolsa pagos de Experiencias. GreenGo solo recibe su tarifa
+  de servicio, que paga el Anfitrión (sección 11.6).
+- Solo los Anfitriones con una Cuenta de empresa activa (sección 13) pueden
+  publicar Experiencias de pago. Cuántas Experiencias puede tener un
+  Anfitrión a la vez depende de su plan (sección 11.7).
 - El nombre y el correo electrónico del invitado se comparten con el Anfitrión
   para el control de acceso (consulta la Política de Privacidad,
   sección 11.4).
@@ -479,8 +551,8 @@ b) disponer de cualquier licencia, permiso, seguro o registro que requiera la
 c) reembolsar a los Invitados según la política de cancelación que elegiste:
    Flexible, Moderada o Estricta, tal como se explica en la app. Reembolsa
    siempre el importe íntegro si cancelas tú;
-d) no pedir nunca a los Invitados que paguen mediante un método que no figure
-   en el anuncio;
+d) no pedir nunca a los Invitados que paguen fuera del pago en la app, por
+   ejemplo con un enlace de pago, una transferencia bancaria o en efectivo;
 e) tratar a los Invitados con respeto y mantenerlos seguros.
 
 Para publicar una Experiencia de pago debes haber verificado tu edad con un
@@ -502,7 +574,9 @@ Experiencia de pago hasta que tengan 3 reseñas.
 
 12.5 Invitados
 a) Lee el anuncio y la política de cancelación antes de reservar.
-b) Paga al Anfitrión solo con un método que figure en el anuncio.
+b) Paga solo a través del pago en la app. No pagues nunca a un Anfitrión
+   fuera de GreenGo, por ejemplo con un enlace de pago, una transferencia
+   bancaria o en efectivo.
 c) Si algo sale mal, puedes abrir una disputa en la app dentro del plazo
    indicado. GreenGo la examinará y podrá registrar un reembolso adeudado por
    el Anfitrión, o tomar medidas contra la cuenta del Anfitrión. GreenGo no
@@ -546,6 +620,13 @@ claramente en la app como promocionada.
 - se aplican los límites de responsabilidad de la sección 23.4;
 - no se aplican las protecciones de estos Términos reservadas a los
   consumidores, salvo que la ley disponga otra cosa.
+
+13.7 Las Cuentas de empresa están disponibles con una Membresía Silver, Gold
+o Platinum. Si tu Membresía termina o baja de Silver, las herramientas de
+empresa (por ejemplo la página de empresa, los clientes potenciales, la
+promoción y los anuncios de pago) quedan en pausa, y tu cuenta funciona como
+una cuenta personal, solo con anuncios gratuitos. Se reactivan cuando vuelves
+a tener una Membresía Silver, Gold o Platinum.
 
 ================================================================================
 14. FUNCIONES DE IA
@@ -651,13 +732,12 @@ Nada de:
 16.5 Dinero y estafas
 a) Nada de estafas, phishing, esquemas piramidales ni peticiones de dinero con
    pretextos falsos.
-b) Puedes incluir enlaces a servicios de pago externos en tu perfil o en tu
-   anuncio, por ejemplo para que un Invitado pueda pagar a un Anfitrión. No
-   los utilices:
-   - para presionar a otras personas;
-   - para vender nada que prohíban estos Términos;
-   - para vender nada que GreenGo venda por sí mismo (Monedas, Membresías o
-     funciones de la app).
+b) Los Eventos y las Experiencias de pago se pagan solo a través del pago en
+   la app (secciones 11.2 y 12.2). No pongas enlaces de pago ni otros datos
+   de pago en tu perfil, tus anuncios o tus Eventos, y no pidas a nadie que te
+   pague fuera de GreenGo. No uses nunca GreenGo para vender nada que
+   prohíban estos Términos, ni nada que GreenGo venda por sí mismo (Monedas,
+   Membresías o funciones de la app).
 c) Nunca envíes dinero a alguien a quien no has visto en persona y no
    conoces. GreenGo nunca te pedirá una contraseña ni un pago en un chat.
 
@@ -942,8 +1022,8 @@ través de una Cuenta de empresa) de conformidad con estos Términos y el EULA.
 ================================================================================
 
 - GreenGo enlaza con servicios de otras empresas, y funciona con ellos, por
-  ejemplo las tiendas de apps, Stripe, los mapas, los sitios de eventos de
-  socios y los servicios de pago que indican los usuarios.
+  ejemplo las tiendas de apps, Stripe, Mercado Pago, los mapas y los sitios
+  de eventos de socios.
 - Cuando los utilizas, se aplican sus propias condiciones.
 - No somos responsables de su contenido ni de sus prácticas. Esto no limita
   nuestras propias responsabilidades según estos Términos o la ley.
@@ -1101,6 +1181,19 @@ Derechos de autor (DMCA): copyright@greengochat.com
 ================================================================================
 HISTORIAL DE VERSIONES
 ================================================================================
+
+5.2.0 - 14 de octubre de 2026
+- Secciones 11.2, 12.2, 12.3, 12.5 y 16.5: entradas y reservas de pago solo
+  a través del pago en la app (Stripe o Mercado Pago); se eliminan los
+  enlaces de pago, los otros métodos de pago y el efectivo en el encuentro.
+- Nueva sección 11.6: tarifa de servicio de GreenGo sobre las entradas y
+  reservas de pago, que paga el organizador o el Anfitrión.
+- Nueva sección 11.7: límites de Eventos y Experiencias activos por plan, y
+  qué ocurre al bajar de plan.
+- Nueva sección 11.8: reserva como visitante, sin cuenta.
+- Secciones 11.1 y 13.7: crear Eventos requiere una Membresía; las Cuentas
+  de empresa están disponibles con Silver, Gold y Platinum.
+- Sección 22: servicios de pago actualizados.
 
 5.1.2 - 13 de octubre de 2026
 - Sección 9.2: ejemplo de precio actualizado al precio actual de la

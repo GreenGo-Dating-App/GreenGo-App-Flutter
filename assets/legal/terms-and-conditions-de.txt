@@ -1,8 +1,8 @@
 ALLGEMEINE GESCHÄFTSBEDINGUNGEN VON GREENGO
 
-Version: 5.1.2
-Gültig ab: 13. Oktober 2026
-Vorherige Version: 5.1.1 (13. Oktober 2026)
+Version: 5.2.0
+Gültig ab: 14. Oktober 2026
+Vorherige Version: 5.1.2 (13. Oktober 2026)
 
 ================================================================================
 1. ÜBER DIESE BEDINGUNGEN
@@ -409,25 +409,29 @@ du teilnimmst.
 11. EVENTS
 ================================================================================
 
-11.1 Jeder mit einem Konto kann ein Event erstellen, sofern sein Konto nicht
-eingeschränkt ist. Der Veranstalter ist dafür verantwortlich:
+11.1 Um ein Event zu erstellen, brauchst du eine Mitgliedschaft (Base oder
+höher), und dein Konto darf nicht eingeschränkt sein. Wie viele Events du
+gleichzeitig haben kannst, hängt von deinem Tarif ab (Abschnitt 11.7). Der
+Veranstalter ist dafür verantwortlich:
 - das Event zutreffend zu beschreiben;
 - es rechtmäßig und sicher zu halten;
 - es rechtzeitig abzusagen, wenn es nicht stattfinden kann.
 
 11.2 Kostenlose und kostenpflichtige Events
 a) Die Teilnahme an einem kostenlosen Event ist kostenlos.
-b) Business-Konten können Tickets für ihre Events verkaufen. Der Ticketvertrag
-   kommt zwischen dir und dem Veranstalter zustande: Der Veranstalter ist der
-   Verkäufer, legt den Preis sowie die Stornierungs- und Erstattungsrichtlinie
-   fest und ist für das Event sowie für die Ausstellung etwaiger Rechnungen oder
-   Belege und die Zahlung etwaiger Steuern auf das Ticket verantwortlich.
-c) GreenGo erhebt keine Gebühr auf Tickets und verwahrt niemals Ticketgelder. Du
-   zahlst direkt an den Veranstalter, entweder über dessen eigenes Stripe- oder
-   Mercado-Pago-Konto oder mit einer vom Veranstalter angegebenen
-   Zahlungsmethode (zum Beispiel Pix oder Banküberweisung). Bei angegebenen
-   Zahlungsmethoden bestätigt der Veranstalter deine Zahlung; GreenGo prüft sie
-   nicht.
+b) Nur aktive Business-Konten (Abschnitt 13) können Tickets für ihre Events
+   verkaufen. Der Ticketvertrag kommt zwischen dir und dem Veranstalter
+   zustande: Der Veranstalter ist der Verkäufer, legt den Preis sowie die
+   Stornierungs- und Erstattungsrichtlinie fest und ist für das Event sowie
+   für die Ausstellung etwaiger Rechnungen oder Belege und die Zahlung
+   etwaiger Steuern auf das Ticket verantwortlich.
+c) Kostenpflichtige Tickets werden nur über den Bezahlvorgang in der App
+   bezahlt, auf das eigene, mit GreenGo verbundene Stripe- oder
+   Mercado-Pago-Konto des Veranstalters. Es gibt keine Zahlungslinks und
+   keine anderen Zahlungsmethoden. Du zahlst den angezeigten Ticketpreis und
+   nichts darüber hinaus. Das Geld geht auf das Konto des Veranstalters:
+   GreenGo verwahrt niemals Ticketgelder. GreenGo erhält nur seine
+   Servicegebühr, die der Veranstalter zahlt (Abschnitt 11.6).
 d) Name und E-Mail-Adresse des Käufers/Gastes werden für die Einlasskontrolle an
    den Veranstalter weitergegeben (siehe Datenschutzerklärung, Abschnitt 11.4).
 e) Deine Verbraucherrechte gegenüber dem Veranstalter, einschließlich eines
@@ -438,7 +442,9 @@ e) Deine Verbraucherrechte gegenüber dem Veranstalter, einschließlich eines
 
 11.3 Der Check-in bei Events erfolgt über einen QR-Code in der App. Bei
 kostenpflichtigen Events wird der QR-Code erst ausgestellt, nachdem deine
-Zahlung bestätigt wurde. Der Check-in hält fest, dass du teilgenommen hast.
+Zahlung bestätigt wurde. Besucher, die ohne Konto buchen (Abschnitt 11.8),
+erhalten ihr Ticket per E-Mail. Der Check-in hält fest, dass du teilgenommen
+hast.
 
 11.4 Externe Events und Sehenswürdigkeiten
 - Einige Events und Sehenswürdigkeiten stammen von Partnern wie Viator,
@@ -455,6 +461,74 @@ Zahlung bestätigt wurde. Der Check-in hält fest, dass du teilgenommen hast.
 - Ruf im Notfall zuerst den örtlichen Notdienst an und melde die Person dann in
   der App.
 
+11.6 Servicegebühr von GreenGo (zahlen Veranstalter und Gastgeber)
+a) GreenGo erhebt eine Servicegebühr auf jedes kostenpflichtige Ticket für
+   ein Event und jede kostenpflichtige Buchung eines Erlebnisses. Sie wird
+   vom Veranstalter oder Gastgeber (dem „Verkäufer“) gezahlt, nicht vom
+   Käufer. Stripe (als Application Fee) oder Mercado Pago (als
+   Marketplace-Gebühr) zieht sie bei der Zahlung des Käufers vom Ticketpreis
+   ab, sodass der Verkäufer den Ticketpreis abzüglich der Gebühr erhält.
+b) Die Gebühr pro Ticket hängt von der Mitgliedschaft des Verkäufers zum
+   Zeitpunkt des Verkaufs ab:
+   - Silver: 3 US$ + 10 % des Ticketpreises, höchstens 10 US$;
+   - Gold: 2 US$ + 10 % des Ticketpreises, höchstens 9 US$;
+   - Platinum: 1 US$ + 10 % des Ticketpreises, höchstens 8 US$.
+c) Erstes kostenpflichtiges Angebot: Wenn du auf GreenGo noch keine
+   kostenpflichtigen Tickets verkauft hast, beträgt die Gebühr für dein
+   erstes kostenpflichtiges Event oder Erlebnis pauschal 1 US$ pro Ticket,
+   für dieses Angebot.
+d) Für kostenlose Tickets fällt keine Gebühr an. Die Gebühr ist nie höher
+   als der Ticketpreis.
+e) Bei Tickets mit einem Preis in einer anderen Währung werden der feste
+   Anteil und der Höchstbetrag anhand einer von GreenGo gepflegten
+   Wechselkurstabelle aus US-Dollar umgerechnet. Die 10 % werden auf den
+   Ticketpreis in seiner eigenen Währung berechnet. Die App zeigt dem
+   Verkäufer vor der Veröffentlichung eine Schätzung der Auszahlung.
+f) Erstattungen: Wird ein Ticket oder eine Buchung vollständig erstattet,
+   erhält der Verkäufer die Gebühr zurück. Wird nur ein Teil erstattet,
+   erhält der Käufer den erstatteten Betrag zurück und GreenGo behält seine
+   Gebühr.
+g) Stripe und Mercado Pago berechnen dem Verkäufer ihre eigenen
+   Bearbeitungsgebühren nach ihren eigenen Bedingungen. Das sind keine
+   Gebühren von GreenGo.
+h) GreenGo stellt dem Verkäufer seine Gebühr in Rechnung. Der Verkäufer
+   bleibt Verkäufer des Tickets und ist für die Rechnung oder den Beleg an
+   den Käufer und für die Steuern auf das Ticket verantwortlich.
+
+11.7 Wie viele Events und Erlebnisse du haben kannst
+a) Die Limits zählen die gleichzeitig aktiven Angebote. Es sind keine
+   monatlichen Limits.
+   - Ohne Mitgliedschaft: Du kannst keine Events oder Erlebnisse erstellen.
+   - Base: 1 Event und 1 Erlebnis, nur kostenlos (keine kostenpflichtigen
+     Tickets oder Buchungen).
+   - Silver: 5 Events und 5 Erlebnisse.
+   - Gold: 10 Events und 10 Erlebnisse.
+   - Platinum: unbegrenzt.
+b) Entwürfe von Erlebnissen zählen zum Limit.
+c) Wechselt deine Mitgliedschaft in einen niedrigeren Tarif, bleiben deine
+   neuesten Angebote bis zum neuen Limit sichtbar, und die älteren werden
+   ausgeblendet. Ausgeblendete Angebote werden nicht gelöscht und erscheinen
+   wieder, wenn du erneut upgradest. Bereits verkaufte Tickets und Buchungen
+   bleiben gültig.
+
+11.8 Buchen als Besucher ohne Konto
+a) Wenn der Veranstalter es erlaubt, kann jeder, der einen geteilten Link zu
+   einem öffentlichen Event öffnet, es als Besucher ohne Konto buchen, indem
+   er Vorname, Nachname und E-Mail-Adresse angibt, solange Plätze frei sind.
+b) Bei einem kostenpflichtigen Event zahlt der Besucher über denselben
+   Bezahlvorgang von Stripe oder Mercado Pago und erhält das Ticket per
+   E-Mail.
+c) Events, die eine Freigabe durch den Veranstalter erfordern oder Alters-
+   oder Geschlechtsbeschränkungen haben, können nur in der App gebucht
+   werden.
+d) Besucher können über einen geteilten Link auch eine Buchungsanfrage für
+   ein Erlebnis senden.
+e) Name und E-Mail-Adresse des Besuchers werden an den Veranstalter oder
+   Gastgeber weitergegeben (Teilnehmerliste). Wir löschen die Kontaktdaten
+   von Besuchern nach 400 Tagen (siehe Datenschutzerklärung).
+f) Diese Bedingungen gelten für Buchungen von Besuchern, soweit sie
+   einschlägig sind.
+
 ================================================================================
 12. ERLEBNISSE (GASTGEBER UND GÄSTE)
 ================================================================================
@@ -469,12 +543,19 @@ Zahlung bestätigt wurde. Der Check-in hält fest, dass du teilgenommen hast.
   betreiben und auf Meldungen wie in Abschnitt 18 beschrieben zu reagieren.
 
 12.2 Die Zahlung geht direkt an den Gastgeber
-- Kostenpflichtige Erlebnisse werden direkt an den Gastgeber bezahlt: über
-  dessen eigenes Stripe- oder Mercado-Pago-Konto, über eine Zahlungsmethode,
-  die der Gastgeber im Angebot angibt, oder bar beim Treffen, wenn das Angebot
-  dies zulässt.
-- GreenGo erhebt keine Gebühr, kein Geld fließt über GreenGo, und GreenGo
-  verwahrt oder erstattet keine Zahlungen für Erlebnisse.
+- Kostenpflichtige Erlebnisse werden nur über den Bezahlvorgang in der App
+  bezahlt, auf das eigene, mit GreenGo verbundene Stripe- oder
+  Mercado-Pago-Konto des Gastgebers. Zahlungslinks, andere Zahlungsmethoden
+  und Barzahlung beim Treffen sind nicht erlaubt.
+- Der Gast zahlt den im Angebot angezeigten Preis und nichts darüber hinaus.
+  Das Geld geht auf das Konto des Gastgebers: Die Zahlung läuft nicht über
+  GreenGo, und GreenGo verwahrt oder erstattet keine Zahlungen für Erlebnisse.
+  GreenGo erhält nur seine Servicegebühr, die der Gastgeber zahlt (Abschnitt
+  11.6).
+- Nur Gastgeber mit einem aktiven Business-Konto (Abschnitt 13) können
+  kostenpflichtige Erlebnisse veröffentlichen. Wie viele Erlebnisse ein
+  Gastgeber gleichzeitig haben kann, hängt von seinem Tarif ab
+  (Abschnitt 11.7).
 - Name und E-Mail-Adresse des Gastes werden für die Einlasskontrolle an den
   Gastgeber weitergegeben (siehe Datenschutzerklärung, Abschnitt 11.4).
 - GreenGo erfasst die Buchung, den vereinbarten Preis und, im Fall einer
@@ -491,8 +572,8 @@ b) alle Lizenzen, Genehmigungen, Versicherungen oder Registrierungen besitzen,
 c) Gästen gemäß der von dir gewählten Stornierungsrichtlinie den Betrag
    erstatten: Flexibel, Moderat oder Streng, wie in der App erläutert. Wenn du
    absagst, erstatte immer den vollen Betrag;
-d) Gäste niemals bitten, mit einer Methode zu bezahlen, die nicht im Angebot
-   angegeben ist;
+d) Gäste niemals bitten, außerhalb des Bezahlvorgangs in der App zu bezahlen,
+   zum Beispiel per Zahlungslink, Banküberweisung oder bar;
 e) Gäste respektvoll behandeln und für ihre Sicherheit sorgen.
 
 Um ein kostenpflichtiges Erlebnis zu veröffentlichen, musst du dein Alter mit
@@ -516,7 +597,9 @@ kostenpflichtiges Erlebnis veröffentlichen, bis sie 3 Bewertungen haben.
 
 12.5 Gäste
 a) Lies vor der Buchung das Angebot und die Stornierungsrichtlinie.
-b) Bezahle den Gastgeber nur mit einer Methode, die im Angebot angegeben ist.
+b) Bezahle nur über den Bezahlvorgang in der App. Bezahle einen Gastgeber nie
+   außerhalb von GreenGo, zum Beispiel per Zahlungslink, Banküberweisung oder
+   bar.
 c) Wenn etwas schiefgeht, kannst du innerhalb des angezeigten Zeitraums in der
    App eine Streitigkeit eröffnen. GreenGo prüft sie und kann eine vom
    Gastgeber geschuldete Erstattung erfassen oder Maßnahmen gegen das Konto des
@@ -561,6 +644,14 @@ als beworben gekennzeichnet.
 - gelten die Haftungsbeschränkungen in Abschnitt 23.4;
 - gelten die ausschließlich für Verbraucher vorgesehenen Schutzbestimmungen
   dieser Bedingungen nicht, es sei denn, das Gesetz bestimmt etwas anderes.
+
+13.7 Business-Konten sind mit einer Silver-, Gold- oder
+Platinum-Mitgliedschaft verfügbar. Endet deine Mitgliedschaft oder fällt sie
+unter Silver, werden die Business-Funktionen (zum Beispiel die
+Unternehmensseite, Leads, Bewerbung und kostenpflichtige Angebote)
+pausiert, und dein Konto funktioniert wie ein persönliches Konto mit nur
+kostenlosen Angeboten. Sie werden wieder aktiv, sobald du erneut eine
+Silver-, Gold- oder Platinum-Mitgliedschaft hast.
 
 ================================================================================
 14. KI-FUNKTIONEN
@@ -671,13 +762,13 @@ Keine:
 16.5 Geld und Betrug
 a) Kein Betrug, kein Phishing, keine Schneeballsysteme und keine Geldforderungen
    unter falschen Vorwänden.
-b) Du darfst in deinem Profil oder Angebot Links zu externen Zahlungsdiensten
-   angeben, zum Beispiel damit ein Gast einen Gastgeber bezahlen kann. Nutze sie
-   nicht:
-   - um Druck auf andere auszuüben;
-   - um etwas zu verkaufen, das nach diesen Bedingungen verboten ist;
-   - um etwas zu verkaufen, das GreenGo selbst verkauft (Coins,
-     Mitgliedschaften oder App-Funktionen).
+b) Kostenpflichtige Events und Erlebnisse werden nur über den Bezahlvorgang
+   in der App bezahlt (Abschnitte 11.2 und 12.2). Gib in deinem Profil,
+   deinen Angeboten oder Events keine Zahlungslinks oder anderen
+   Zahlungsdaten an, und bitte niemanden, dich außerhalb von GreenGo zu
+   bezahlen. Nutze GreenGo niemals, um etwas zu verkaufen, das nach diesen
+   Bedingungen verboten ist, oder etwas, das GreenGo selbst verkauft (Coins,
+   Mitgliedschaften oder App-Funktionen).
 c) Schicke niemals Geld an jemanden, den du nicht getroffen hast und nicht
    kennst. GreenGo wird dich in einem Chat niemals nach einem Passwort oder
    einer Zahlung fragen.
@@ -967,8 +1058,8 @@ EULA nutzen.
 ================================================================================
 
 - GreenGo verlinkt auf Dienste anderer Unternehmen und arbeitet mit ihnen
-  zusammen, zum Beispiel App-Stores, Stripe, Karten, Event-Partnerseiten und
-  die von Nutzern angegebenen Zahlungsdienste.
+  zusammen, zum Beispiel App-Stores, Stripe, Mercado Pago, Karten und
+  Event-Partnerseiten.
 - Wenn du sie nutzt, gelten deren eigene Bedingungen.
 - Wir sind nicht für deren Inhalte oder Praktiken verantwortlich. Das schränkt
   unsere eigenen Pflichten nach diesen Bedingungen oder dem Gesetz nicht ein.
@@ -1129,6 +1220,20 @@ Urheberrecht (DMCA): copyright@greengochat.com
 ================================================================================
 VERSIONSVERLAUF
 ================================================================================
+
+5.2.0 - 14. Oktober 2026
+- Abschnitte 11.2, 12.2, 12.3, 12.5 und 16.5: kostenpflichtige Tickets und
+  Buchungen nur über den Bezahlvorgang in der App (Stripe oder Mercado
+  Pago); Zahlungslinks, andere Zahlungsmethoden und Barzahlung beim Treffen
+  entfallen.
+- Neuer Abschnitt 11.6: Servicegebühr von GreenGo auf kostenpflichtige
+  Tickets und Buchungen, die der Veranstalter oder Gastgeber zahlt.
+- Neuer Abschnitt 11.7: Limits für gleichzeitig aktive Events und Erlebnisse
+  je Tarif und was nach einem Downgrade passiert.
+- Neuer Abschnitt 11.8: Buchen als Besucher ohne Konto.
+- Abschnitte 11.1 und 13.7: Zum Erstellen von Events ist eine Mitgliedschaft
+  nötig; Business-Konten sind mit Silver, Gold und Platinum verfügbar.
+- Abschnitt 22: Zahlungsdienste aktualisiert.
 
 5.1.2 - 13. Oktober 2026
 - Abschnitt 9.2: Preisbeispiel auf den aktuellen Preis der

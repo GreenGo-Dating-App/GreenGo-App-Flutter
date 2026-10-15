@@ -1,8 +1,8 @@
 GREENGO TERMS AND CONDITIONS
 
-Version: 5.1.2
-Effective date: 13 October 2026
-Previous version: 5.1.1 (13 October 2026)
+Version: 5.2.0
+Effective date: 14 October 2026
+Previous version: 5.1.2 (13 October 2026)
 
 ================================================================================
 1. ABOUT THESE TERMS
@@ -364,23 +364,26 @@ Specific promotions have their own rules, which we show before you take part.
 11. EVENTS
 ================================================================================
 
-11.1 Anyone with an account can create an Event, unless their account is
-restricted. The organiser is responsible for:
+11.1 To create an Event you need a Membership (Base or higher), and your
+account must not be restricted. How many Events you can have at a time
+depends on your plan (section 11.7). The organiser is responsible for:
 - describing the Event accurately;
 - keeping it lawful and safe;
 - cancelling it in good time if it cannot go ahead.
 
 11.2 Free and paid Events
 a) Joining a free Event is free.
-b) Business accounts can sell tickets for their Events. The ticket contract is
-   between you and the organiser: the organiser is the seller, sets the price
-   and the cancellation and refund policy, and is responsible for the Event and
-   for issuing any invoice or receipt and paying any taxes on the ticket.
-c) GreenGo takes no fee on tickets and never holds ticket money. You pay the
-   organiser directly, either through the organiser's own Stripe or Mercado
-   Pago account, or with a payment method the organiser lists (for example Pix
-   or a bank transfer). For listed payment methods, the organiser confirms your
-   payment; GreenGo does not check it.
+b) Only active Business accounts (section 13) can sell tickets for their
+   Events. The ticket contract is between you and the organiser: the
+   organiser is the seller, sets the price and the cancellation and refund
+   policy, and is responsible for the Event and for issuing any invoice or
+   receipt and paying any taxes on the ticket.
+c) Paid tickets are paid only through the in-app checkout, to the
+   organiser's own Stripe or Mercado Pago account connected to GreenGo. There
+   are no payment links and no other payment methods. You pay the ticket price
+   shown, and nothing more. The money goes to the organiser's account: GreenGo
+   never holds ticket money. GreenGo receives only its service fee, which the
+   organiser pays (section 11.6).
 d) Buyer/guest name and email are shared with the event organizer for entry
    (see the Privacy Policy, section 11.4).
 e) Your consumer rights against the organiser, including any right of
@@ -389,8 +392,9 @@ e) Your consumer rights against the organiser, including any right of
    app and we will act as described in section 18.
 
 11.3 Event check-in uses a QR code in the app. For paid Events the QR code is
-issued only after your payment is confirmed. Checking in records that you
-attended.
+issued only after your payment is confirmed. Guests who book without an
+account (section 11.8) receive their ticket by email. Checking in records
+that you attended.
 
 11.4 External events and attractions
 - Some events and attractions come from partners such as Viator, Ticketmaster
@@ -407,6 +411,63 @@ attended.
 - In an emergency, call the local emergency services first, then report the
   person in the app.
 
+11.6 GreenGo service fee (paid by organisers and Hosts)
+a) GreenGo charges a service fee on each paid ticket for an Event and each
+   paid booking of an Experience. The organiser or Host (the "seller") pays
+   it, not the buyer. Stripe (as an application fee) or Mercado Pago (as a
+   marketplace fee) deducts it from the ticket price when the buyer pays, so
+   the seller receives the ticket price minus the fee.
+b) The fee per ticket depends on the seller's Membership at the time of the
+   sale:
+   - Silver: US$3 + 10% of the ticket price, at most US$10;
+   - Gold: US$2 + 10% of the ticket price, at most US$9;
+   - Platinum: US$1 + 10% of the ticket price, at most US$8.
+c) First paid listing: if you have not sold paid tickets on GreenGo before,
+   the fee for your first paid Event or Experience is a flat US$1 per ticket,
+   for that listing.
+d) Free tickets have no fee. The fee is never higher than the ticket price.
+e) For tickets priced in another currency, the fixed part and the maximum are
+   converted from US dollars with an exchange table that GreenGo maintains.
+   The 10% is calculated on the ticket price in its own currency. The app
+   shows the seller an estimate of the payout before publishing.
+f) Refunds: if a ticket or booking is refunded in full, the fee is returned
+   to the seller. If it is refunded only in part, the buyer gets back the
+   refunded amount and GreenGo keeps its fee.
+g) Stripe and Mercado Pago charge the seller their own processing fees under
+   their own terms. These are not GreenGo fees.
+h) GreenGo invoices the seller for its fee. The seller remains the seller of
+   the ticket, and is responsible for the invoice or receipt to the buyer and
+   for the taxes on the ticket.
+
+11.7 How many Events and Experiences you can have
+a) The limits count the listings that are active at the same time. They are
+   not monthly limits.
+   - No Membership: you cannot create Events or Experiences.
+   - Base: 1 Event and 1 Experience, free only (no paid tickets or bookings).
+   - Silver: 5 Events and 5 Experiences.
+   - Gold: 10 Events and 10 Experiences.
+   - Platinum: unlimited.
+b) Draft Experiences count toward the limit.
+c) If your Membership changes to a lower plan, your newest listings up to the
+   new limit stay visible and the older ones are hidden. Hidden listings are
+   not deleted, and they come back if you upgrade again. Tickets and bookings
+   already sold stay valid.
+
+11.8 Booking as a guest without an account
+a) If the organiser allows guests to book, anyone who opens a shared link to
+   a public Event can book it as a guest, without an account, by giving their
+   first name, surname and email, as long as places are left.
+b) For a paid Event, the guest pays through the same Stripe or Mercado Pago
+   checkout and receives the ticket by email.
+c) Events that need the organiser's approval, or that have age or gender
+   limits, can be booked only in the app.
+d) Guests can also send a booking request for an Experience from a shared
+   link.
+e) The guest's name and email are shared with the organiser or Host
+   (participant list). We delete guest contact data after 400 days (see the
+   Privacy Policy).
+f) These Terms apply to guest bookings as far as they are relevant.
+
 ================================================================================
 12. EXPERIENCES (HOSTS AND GUESTS)
 ================================================================================
@@ -419,11 +480,16 @@ attended.
   acting on reports as described in section 18.
 
 12.2 Payment goes directly to the Host
-- Paid Experiences are paid to the Host directly: through the Host's own
-  Stripe or Mercado Pago account, through a payment method the Host shows on
-  the listing, or in cash at the meeting where the listing allows it.
-- GreenGo takes no fee, no money passes through GreenGo, and GreenGo does not
-  hold or refund payments for Experiences.
+- Paid Experiences are paid only through the in-app checkout, to the Host's
+  own Stripe or Mercado Pago account connected to GreenGo. Payment links,
+  other payment methods and cash at the meeting are not allowed.
+- The Guest pays the price shown on the listing, and nothing more. The money
+  goes to the Host's account: the payment does not pass through GreenGo, and
+  GreenGo does not hold or refund payments for Experiences. GreenGo receives
+  only its service fee, which the Host pays (section 11.6).
+- Only Hosts with an active Business account (section 13) can publish paid
+  Experiences. How many Experiences a Host can have at a time depends on the
+  Host's plan (section 11.7).
 - Guest name and email are shared with the Host for entry (see the Privacy
   Policy, section 11.4).
 - GreenGo records the booking, the agreed price and, if there is a
@@ -440,7 +506,8 @@ b) hold any licence, permit, insurance or registration the activity needs, and
 c) refund Guests according to the cancellation policy you chose: Flexible,
    Moderate or Strict, as explained in the app. Always refund in full if you
    cancel;
-d) never ask Guests to pay by a method that is not shown on the listing;
+d) never ask Guests to pay outside the in-app checkout, for example with a
+   payment link, a bank transfer or cash;
 e) treat Guests with respect and keep them safe.
 
 To publish a paid Experience you must have verified your age with an identity
@@ -461,7 +528,8 @@ reviews.
 
 12.5 Guests
 a) Read the listing and the cancellation policy before booking.
-b) Pay the Host only with a method shown on the listing.
+b) Pay only through the in-app checkout. Never pay a Host outside GreenGo,
+   for example with a payment link, a bank transfer or cash.
 c) If something goes wrong, you can open a dispute in the app within the
    window shown. GreenGo will look at it and may record a refund owed by the
    Host, or take action against the Host's account. GreenGo itself does not pay
@@ -502,6 +570,12 @@ promoted.
 - the limits of liability in section 23.4 apply;
 - the consumer-only protections in these Terms do not apply, except where
   the law says otherwise.
+
+13.7 Business accounts are available with a Silver, Gold or Platinum
+Membership. If your Membership ends or drops below Silver, the business tools
+(for example the business page, leads, promotion and paid listings) pause,
+and your account works as a personal account with free listings only. They
+start again when you have a Silver, Gold or Platinum Membership again.
 
 ================================================================================
 14. AI FEATURES
@@ -602,12 +676,12 @@ No:
 16.5 Money and scams
 a) No scams, phishing, pyramid schemes, or requests for money under false
    pretences.
-b) You may list links to external payment services on your profile or listing,
-   for example so that a Guest can pay a Host. Do not use them:
-   - to pressure people;
-   - to sell anything forbidden by these Terms;
-   - to sell anything that GreenGo itself sells (Coins, Memberships or app
-     features).
+b) Paid Events and Experiences are paid only through the in-app checkout
+   (sections 11.2 and 12.2). Do not put payment links or other payment
+   details on your profile, listings or Events, and do not ask people to pay
+   you outside GreenGo. Never use GreenGo to sell anything forbidden by these
+   Terms, or anything that GreenGo itself sells (Coins, Memberships or app
+   features).
 c) Never send money to someone you have not met and do not know. GreenGo will
    never ask you for a password or for payment in a chat.
 
@@ -872,8 +946,7 @@ through a Business account) in line with these Terms and the EULA.
 ================================================================================
 
 - GreenGo links to, and works with, services of other companies, for example
-  app stores, Stripe, maps, partner event sites and the payment services
-  users list.
+  app stores, Stripe, Mercado Pago, maps and partner event sites.
 - Their own terms apply when you use them.
 - We are not responsible for their content or practices. This does not limit
   our own responsibilities under these Terms or the law.
@@ -1024,6 +1097,19 @@ Copyright (DMCA): copyright@greengochat.com
 ================================================================================
 VERSION HISTORY
 ================================================================================
+
+5.2.0 - 14 October 2026
+- Sections 11.2, 12.2, 12.3, 12.5 and 16.5: paid tickets and bookings only
+  through the in-app checkout (Stripe or Mercado Pago); payment links, other
+  payment methods and cash at the meeting removed.
+- New section 11.6: GreenGo service fee on paid tickets and bookings, paid by
+  the organiser or Host.
+- New section 11.7: limits on active Events and Experiences per plan, and
+  what happens after a downgrade.
+- New section 11.8: booking as a guest without an account.
+- Sections 11.1 and 13.7: creating Events needs a Membership; Business
+  accounts are available with Silver, Gold and Platinum.
+- Section 22: payment services updated.
 
 5.1.2 - 13 October 2026
 - Section 9.2: price example updated to the current Base Membership price.
