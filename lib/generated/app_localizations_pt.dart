@@ -25012,6 +25012,86 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get tpPayoutEstimateNote =>
       'Estimativa. A taxa exata do prestador de pagamento depende do cartão, do país e do método de pagamento, e podem aplicar-se impostos.';
+
+  @override
+  String get financeDocsTitle => 'Faturas';
+
+  @override
+  String get financeDocsSubtitle =>
+      'Faturas de taxas GreenGo e extratos mensais (PDF)';
+
+  @override
+  String get financeDocsTabInvoices => 'Faturas';
+
+  @override
+  String get financeDocsTabStatements => 'Extratos mensais';
+
+  @override
+  String get financeDocsFeeNote =>
+      'A taxa de serviço GreenGo sobre a venda de bilhetes é paga pelo organizador. No dia 2 de cada mês enviamos-te por e-mail o extrato e a fatura de taxas do mês anterior.';
+
+  @override
+  String get financeDocsEmptyInvoices =>
+      'Ainda não há faturas. As tuas faturas de taxas GreenGo aparecem aqui depois das primeiras vendas de bilhetes pagos.';
+
+  @override
+  String get financeDocsEmptyStatements =>
+      'Ainda não há extratos. O teu extrato mensal fica disponível no dia 2 de cada mês.';
+
+  @override
+  String get financeDocsError =>
+      'Não foi possível carregar os teus documentos.';
+
+  @override
+  String get financeDocsRetry => 'Tentar novamente';
+
+  @override
+  String get financeDocsInvoice => 'Fatura';
+
+  @override
+  String get financeDocsCreditNote => 'Nota de crédito';
+
+  @override
+  String get financeDocsVoid => 'Anulada';
+
+  @override
+  String get financeDocsTest => 'TESTE';
+
+  @override
+  String get financeDocsNfsePending => 'NFS-e pendente';
+
+  @override
+  String get financeDocsNfseCancelled => 'NFS-e anulada';
+
+  @override
+  String get financeDocsOpenNfse => 'Abrir NFS-e';
+
+  @override
+  String get financeDocsDownload => 'Transferir PDF';
+
+  @override
+  String get financeDocsDownloadFailed =>
+      'Não foi possível transferir o PDF. Tenta novamente.';
+
+  @override
+  String financeDocsNfseNumber(String number) {
+    return 'NFS-e $number';
+  }
+
+  @override
+  String financeDocsPeriod(String period) {
+    return 'Período $period';
+  }
+
+  @override
+  String financeDocsIssued(String date) {
+    return 'Emitida a $date';
+  }
+
+  @override
+  String financeDocsNet(String amount) {
+    return 'Líquido $amount';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -50032,4 +50112,83 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get tpPayoutEstimateNote =>
       'Estimativa. A taxa exata do provedor de pagamento depende do cartão, do país e da forma de pagamento, e podem incidir impostos.';
+
+  @override
+  String get financeDocsTitle => 'Faturas';
+
+  @override
+  String get financeDocsSubtitle =>
+      'Faturas de taxas da GreenGo e extratos mensais (PDF)';
+
+  @override
+  String get financeDocsTabInvoices => 'Faturas';
+
+  @override
+  String get financeDocsTabStatements => 'Extratos mensais';
+
+  @override
+  String get financeDocsFeeNote =>
+      'A taxa de serviço da GreenGo sobre a venda de ingressos é paga pelo organizador. No dia 2 de cada mês enviamos por e-mail o extrato e a fatura de taxas do mês anterior.';
+
+  @override
+  String get financeDocsEmptyInvoices =>
+      'Ainda não há faturas. Suas faturas de taxas da GreenGo aparecem aqui depois das primeiras vendas de ingressos pagos.';
+
+  @override
+  String get financeDocsEmptyStatements =>
+      'Ainda não há extratos. Seu extrato mensal fica disponível no dia 2 de cada mês.';
+
+  @override
+  String get financeDocsError => 'Não foi possível carregar seus documentos.';
+
+  @override
+  String get financeDocsRetry => 'Tentar novamente';
+
+  @override
+  String get financeDocsInvoice => 'Fatura';
+
+  @override
+  String get financeDocsCreditNote => 'Nota de crédito';
+
+  @override
+  String get financeDocsVoid => 'Cancelada';
+
+  @override
+  String get financeDocsTest => 'TESTE';
+
+  @override
+  String get financeDocsNfsePending => 'NFS-e pendente';
+
+  @override
+  String get financeDocsNfseCancelled => 'NFS-e cancelada';
+
+  @override
+  String get financeDocsOpenNfse => 'Abrir NFS-e';
+
+  @override
+  String get financeDocsDownload => 'Baixar PDF';
+
+  @override
+  String get financeDocsDownloadFailed =>
+      'Não foi possível baixar o PDF. Tente novamente.';
+
+  @override
+  String financeDocsNfseNumber(String number) {
+    return 'NFS-e $number';
+  }
+
+  @override
+  String financeDocsPeriod(String period) {
+    return 'Período $period';
+  }
+
+  @override
+  String financeDocsIssued(String date) {
+    return 'Emitida em $date';
+  }
+
+  @override
+  String financeDocsNet(String amount) {
+    return 'Líquido $amount';
+  }
 }

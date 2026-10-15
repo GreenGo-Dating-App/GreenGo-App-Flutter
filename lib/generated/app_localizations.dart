@@ -42503,6 +42503,138 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Estimate. The payment provider\'s exact fee depends on the card, country and payment method, and taxes may apply.'**
   String get tpPayoutEstimateNote;
+
+  /// Business hub entry + screen title for the seller invoices section.
+  ///
+  /// In en, this message translates to:
+  /// **'Invoices'**
+  String get financeDocsTitle;
+
+  /// Business hub tile subtitle for invoices.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo fee invoices and monthly statements (PDF)'**
+  String get financeDocsSubtitle;
+
+  /// Tab: fee invoices and credit notes.
+  ///
+  /// In en, this message translates to:
+  /// **'Invoices'**
+  String get financeDocsTabInvoices;
+
+  /// Tab: monthly seller statements.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly statements'**
+  String get financeDocsTabStatements;
+
+  /// Explains that the seller pays the fee and the monthly e-mail batch.
+  ///
+  /// In en, this message translates to:
+  /// **'The GreenGo service fee on ticket sales is paid by the organizer. On the 2nd of every month we email you the statement and the fee invoice for the previous month.'**
+  String get financeDocsFeeNote;
+
+  /// Empty state of the invoices tab.
+  ///
+  /// In en, this message translates to:
+  /// **'No invoices yet. Your GreenGo fee invoices appear here after your first paid ticket sales.'**
+  String get financeDocsEmptyInvoices;
+
+  /// Empty state of the statements tab.
+  ///
+  /// In en, this message translates to:
+  /// **'No statements yet. Your monthly statement is ready on the 2nd of each month.'**
+  String get financeDocsEmptyStatements;
+
+  /// Load error.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t load your documents.'**
+  String get financeDocsError;
+
+  /// Retry button.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get financeDocsRetry;
+
+  /// Badge: invoice.
+  ///
+  /// In en, this message translates to:
+  /// **'Invoice'**
+  String get financeDocsInvoice;
+
+  /// Badge: credit note.
+  ///
+  /// In en, this message translates to:
+  /// **'Credit note'**
+  String get financeDocsCreditNote;
+
+  /// Badge: invoice cancelled by a credit note.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancelled'**
+  String get financeDocsVoid;
+
+  /// Badge: test document (test accounts only).
+  ///
+  /// In en, this message translates to:
+  /// **'TEST'**
+  String get financeDocsTest;
+
+  /// Chip: Brazilian NFS-e not yet authorized.
+  ///
+  /// In en, this message translates to:
+  /// **'NFS-e pending'**
+  String get financeDocsNfsePending;
+
+  /// Chip: Brazilian NFS-e cancelled.
+  ///
+  /// In en, this message translates to:
+  /// **'NFS-e cancelled'**
+  String get financeDocsNfseCancelled;
+
+  /// Button opening the official NFS-e page.
+  ///
+  /// In en, this message translates to:
+  /// **'Open NFS-e'**
+  String get financeDocsOpenNfse;
+
+  /// Download button tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Download PDF'**
+  String get financeDocsDownload;
+
+  /// Snackbar when the PDF download fails.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t download the PDF. Try again.'**
+  String get financeDocsDownloadFailed;
+
+  /// Authorized NFS-e number chip.
+  ///
+  /// In en, this message translates to:
+  /// **'NFS-e {number}'**
+  String financeDocsNfseNumber(String number);
+
+  /// Billing month, MM/YYYY.
+  ///
+  /// In en, this message translates to:
+  /// **'Period {period}'**
+  String financeDocsPeriod(String period);
+
+  /// Issue date of the document.
+  ///
+  /// In en, this message translates to:
+  /// **'Issued {date}'**
+  String financeDocsIssued(String date);
+
+  /// Seller net for one currency of a statement.
+  ///
+  /// In en, this message translates to:
+  /// **'Net {amount}'**
+  String financeDocsNet(String amount);
 }
 
 class _AppLocalizationsDelegate

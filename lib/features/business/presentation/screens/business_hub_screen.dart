@@ -9,6 +9,7 @@ import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../analytics/presentation/screens/analytics_screen.dart';
 import '../../../explore/presentation/screens/qr_hub_screen.dart';
+import '../../../finance_documents/presentation/screens/finance_documents_screen.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/widgets/edit_section_card.dart';
@@ -143,6 +144,15 @@ class BusinessHubScreen extends StatelessWidget {
     );
   }
 
+  /// Opens the seller's GreenGo fee invoices + monthly statements (PDF
+  /// download). Reachable in the paused state too: invoices are legal
+  /// documents a lapsed business must still be able to get.
+  Future<void> _openInvoices(BuildContext context) async {
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(builder: (_) => const FinanceDocumentsScreen()),
+    );
+  }
+
   /// Opens the dedicated verification request screen (document upload, owner
   /// name, phone OTP…). This is a DIFFERENT surface from the Business account
   /// screen — the two must never land on the same page.
@@ -271,6 +281,16 @@ class BusinessHubScreen extends StatelessWidget {
                   ),
                 ),
               ),
+              if (profile.isBusiness) ...[
+                const SizedBox(height: 12),
+                TextButton.icon(
+                  key: const ValueKey('business-hub-invoices-paused'),
+                  onPressed: () => _openInvoices(context),
+                  style: TextButton.styleFrom(foregroundColor: AppColors.richGold),
+                  icon: const Icon(Icons.receipt_long_outlined, size: 20),
+                  label: Text(l10n.financeDocsTitle),
+                ),
+              ],
             ],
           ),
         ),
@@ -333,6 +353,16 @@ class BusinessHubScreen extends StatelessWidget {
               onTap: () => _openGetPaid(context),
             ),
             const SizedBox(height: 16),
+            if (profile.isBusiness) ...[
+              EditSectionCard(
+                key: const ValueKey('business-hub-invoices'),
+                title: l10n.financeDocsTitle,
+                subtitle: l10n.financeDocsSubtitle,
+                icon: Icons.receipt_long_outlined,
+                onTap: () => _openInvoices(context),
+              ),
+              const SizedBox(height: 16),
+            ],
             EditSectionCard(
               title: l10n.businessHubScanner,
               subtitle: l10n.businessHubScannerSubtitle,

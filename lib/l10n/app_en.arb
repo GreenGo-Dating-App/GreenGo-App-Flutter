@@ -13860,5 +13860,113 @@
   "tpPayoutEstimateNote": "Estimate. The payment provider's exact fee depends on the card, country and payment method, and taxes may apply.",
   "@tpPayoutEstimateNote": {
     "description": "Payout estimate footnote."
+  },
+  "financeDocsTitle": "Invoices",
+  "@financeDocsTitle": {
+    "description": "Business hub entry + screen title for the seller invoices section."
+  },
+  "financeDocsSubtitle": "GreenGo fee invoices and monthly statements (PDF)",
+  "@financeDocsSubtitle": {
+    "description": "Business hub tile subtitle for invoices."
+  },
+  "financeDocsTabInvoices": "Invoices",
+  "@financeDocsTabInvoices": {
+    "description": "Tab: fee invoices and credit notes."
+  },
+  "financeDocsTabStatements": "Monthly statements",
+  "@financeDocsTabStatements": {
+    "description": "Tab: monthly seller statements."
+  },
+  "financeDocsFeeNote": "The GreenGo service fee on ticket sales is paid by the organizer. On the 2nd of every month we email you the statement and the fee invoice for the previous month.",
+  "@financeDocsFeeNote": {
+    "description": "Explains that the seller pays the fee and the monthly e-mail batch."
+  },
+  "financeDocsEmptyInvoices": "No invoices yet. Your GreenGo fee invoices appear here after your first paid ticket sales.",
+  "@financeDocsEmptyInvoices": {
+    "description": "Empty state of the invoices tab."
+  },
+  "financeDocsEmptyStatements": "No statements yet. Your monthly statement is ready on the 2nd of each month.",
+  "@financeDocsEmptyStatements": {
+    "description": "Empty state of the statements tab."
+  },
+  "financeDocsError": "Couldn't load your documents.",
+  "@financeDocsError": {
+    "description": "Load error."
+  },
+  "financeDocsRetry": "Retry",
+  "@financeDocsRetry": {
+    "description": "Retry button."
+  },
+  "financeDocsInvoice": "Invoice",
+  "@financeDocsInvoice": {
+    "description": "Badge: invoice."
+  },
+  "financeDocsCreditNote": "Credit note",
+  "@financeDocsCreditNote": {
+    "description": "Badge: credit note."
+  },
+  "financeDocsVoid": "Cancelled",
+  "@financeDocsVoid": {
+    "description": "Badge: invoice cancelled by a credit note."
+  },
+  "financeDocsTest": "TEST",
+  "@financeDocsTest": {
+    "description": "Badge: test document (test accounts only)."
+  },
+  "financeDocsNfsePending": "NFS-e pending",
+  "@financeDocsNfsePending": {
+    "description": "Chip: Brazilian NFS-e not yet authorized."
+  },
+  "financeDocsNfseCancelled": "NFS-e cancelled",
+  "@financeDocsNfseCancelled": {
+    "description": "Chip: Brazilian NFS-e cancelled."
+  },
+  "financeDocsOpenNfse": "Open NFS-e",
+  "@financeDocsOpenNfse": {
+    "description": "Button opening the official NFS-e page."
+  },
+  "financeDocsDownload": "Download PDF",
+  "@financeDocsDownload": {
+    "description": "Download button tooltip."
+  },
+  "financeDocsDownloadFailed": "Couldn't download the PDF. Try again.",
+  "@financeDocsDownloadFailed": {
+    "description": "Snackbar when the PDF download fails."
+  },
+  "financeDocsNfseNumber": "NFS-e {number}",
+  "@financeDocsNfseNumber": {
+    "description": "Authorized NFS-e number chip.",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "financeDocsPeriod": "Period {period}",
+  "@financeDocsPeriod": {
+    "description": "Billing month, MM/YYYY.",
+    "placeholders": {
+      "period": {
+        "type": "String"
+      }
+    }
+  },
+  "financeDocsIssued": "Issued {date}",
+  "@financeDocsIssued": {
+    "description": "Issue date of the document.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "financeDocsNet": "Net {amount}",
+  "@financeDocsNet": {
+    "description": "Seller net for one currency of a statement.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
   }
 }

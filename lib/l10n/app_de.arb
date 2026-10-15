@@ -7659,5 +7659,113 @@
   "tpPayoutProviderFee": "{provider}-Bearbeitungsgebühr",
   "tpPayoutPickProvider": "Wähle Stripe oder Mercado Pago, um deren Bearbeitungsgebühr einzurechnen.",
   "tpPayoutYouReceive": "Du erhältst",
-  "tpPayoutEstimateNote": "Schätzung. Die genaue Gebühr des Zahlungsanbieters hängt von Karte, Land und Zahlungsmethode ab; es können Steuern anfallen."
+  "tpPayoutEstimateNote": "Schätzung. Die genaue Gebühr des Zahlungsanbieters hängt von Karte, Land und Zahlungsmethode ab; es können Steuern anfallen.",
+  "financeDocsTitle": "Rechnungen",
+  "@financeDocsTitle": {
+    "description": "Business hub entry + screen title for the seller invoices section."
+  },
+  "financeDocsSubtitle": "GreenGo-Gebührenrechnungen und Monatsabrechnungen (PDF)",
+  "@financeDocsSubtitle": {
+    "description": "Business hub tile subtitle for invoices."
+  },
+  "financeDocsTabInvoices": "Rechnungen",
+  "@financeDocsTabInvoices": {
+    "description": "Tab: fee invoices and credit notes."
+  },
+  "financeDocsTabStatements": "Monatsabrechnungen",
+  "@financeDocsTabStatements": {
+    "description": "Tab: monthly seller statements."
+  },
+  "financeDocsFeeNote": "Die GreenGo-Servicegebühr auf Ticketverkäufe zahlt der Veranstalter. Am 2. jedes Monats senden wir dir die Abrechnung und die Gebührenrechnung des Vormonats per E-Mail.",
+  "@financeDocsFeeNote": {
+    "description": "Explains that the seller pays the fee and the monthly e-mail batch."
+  },
+  "financeDocsEmptyInvoices": "Noch keine Rechnungen. Deine GreenGo-Gebührenrechnungen erscheinen hier nach deinen ersten bezahlten Ticketverkäufen.",
+  "@financeDocsEmptyInvoices": {
+    "description": "Empty state of the invoices tab."
+  },
+  "financeDocsEmptyStatements": "Noch keine Abrechnungen. Deine Monatsabrechnung ist jeweils am 2. des Monats verfügbar.",
+  "@financeDocsEmptyStatements": {
+    "description": "Empty state of the statements tab."
+  },
+  "financeDocsError": "Deine Dokumente konnten nicht geladen werden.",
+  "@financeDocsError": {
+    "description": "Load error."
+  },
+  "financeDocsRetry": "Erneut versuchen",
+  "@financeDocsRetry": {
+    "description": "Retry button."
+  },
+  "financeDocsInvoice": "Rechnung",
+  "@financeDocsInvoice": {
+    "description": "Badge: invoice."
+  },
+  "financeDocsCreditNote": "Gutschrift",
+  "@financeDocsCreditNote": {
+    "description": "Badge: credit note."
+  },
+  "financeDocsVoid": "Storniert",
+  "@financeDocsVoid": {
+    "description": "Badge: invoice cancelled by a credit note."
+  },
+  "financeDocsTest": "TEST",
+  "@financeDocsTest": {
+    "description": "Badge: test document (test accounts only)."
+  },
+  "financeDocsNfsePending": "NFS-e ausstehend",
+  "@financeDocsNfsePending": {
+    "description": "Chip: Brazilian NFS-e not yet authorized."
+  },
+  "financeDocsNfseCancelled": "NFS-e storniert",
+  "@financeDocsNfseCancelled": {
+    "description": "Chip: Brazilian NFS-e cancelled."
+  },
+  "financeDocsOpenNfse": "NFS-e öffnen",
+  "@financeDocsOpenNfse": {
+    "description": "Button opening the official NFS-e page."
+  },
+  "financeDocsDownload": "PDF herunterladen",
+  "@financeDocsDownload": {
+    "description": "Download button tooltip."
+  },
+  "financeDocsDownloadFailed": "Das PDF konnte nicht heruntergeladen werden. Versuche es erneut.",
+  "@financeDocsDownloadFailed": {
+    "description": "Snackbar when the PDF download fails."
+  },
+  "financeDocsNfseNumber": "NFS-e {number}",
+  "@financeDocsNfseNumber": {
+    "description": "Authorized NFS-e number chip.",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "financeDocsPeriod": "Zeitraum {period}",
+  "@financeDocsPeriod": {
+    "description": "Billing month, MM/YYYY.",
+    "placeholders": {
+      "period": {
+        "type": "String"
+      }
+    }
+  },
+  "financeDocsIssued": "Ausgestellt am {date}",
+  "@financeDocsIssued": {
+    "description": "Issue date of the document.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "financeDocsNet": "Netto {amount}",
+  "@financeDocsNet": {
+    "description": "Seller net for one currency of a statement.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -24797,4 +24797,83 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get tpPayoutEstimateNote =>
       'Estimate. The payment provider\'s exact fee depends on the card, country and payment method, and taxes may apply.';
+
+  @override
+  String get financeDocsTitle => 'Invoices';
+
+  @override
+  String get financeDocsSubtitle =>
+      'GreenGo fee invoices and monthly statements (PDF)';
+
+  @override
+  String get financeDocsTabInvoices => 'Invoices';
+
+  @override
+  String get financeDocsTabStatements => 'Monthly statements';
+
+  @override
+  String get financeDocsFeeNote =>
+      'The GreenGo service fee on ticket sales is paid by the organizer. On the 2nd of every month we email you the statement and the fee invoice for the previous month.';
+
+  @override
+  String get financeDocsEmptyInvoices =>
+      'No invoices yet. Your GreenGo fee invoices appear here after your first paid ticket sales.';
+
+  @override
+  String get financeDocsEmptyStatements =>
+      'No statements yet. Your monthly statement is ready on the 2nd of each month.';
+
+  @override
+  String get financeDocsError => 'Couldn\'t load your documents.';
+
+  @override
+  String get financeDocsRetry => 'Retry';
+
+  @override
+  String get financeDocsInvoice => 'Invoice';
+
+  @override
+  String get financeDocsCreditNote => 'Credit note';
+
+  @override
+  String get financeDocsVoid => 'Cancelled';
+
+  @override
+  String get financeDocsTest => 'TEST';
+
+  @override
+  String get financeDocsNfsePending => 'NFS-e pending';
+
+  @override
+  String get financeDocsNfseCancelled => 'NFS-e cancelled';
+
+  @override
+  String get financeDocsOpenNfse => 'Open NFS-e';
+
+  @override
+  String get financeDocsDownload => 'Download PDF';
+
+  @override
+  String get financeDocsDownloadFailed =>
+      'Couldn\'t download the PDF. Try again.';
+
+  @override
+  String financeDocsNfseNumber(String number) {
+    return 'NFS-e $number';
+  }
+
+  @override
+  String financeDocsPeriod(String period) {
+    return 'Period $period';
+  }
+
+  @override
+  String financeDocsIssued(String date) {
+    return 'Issued $date';
+  }
+
+  @override
+  String financeDocsNet(String amount) {
+    return 'Net $amount';
+  }
 }
