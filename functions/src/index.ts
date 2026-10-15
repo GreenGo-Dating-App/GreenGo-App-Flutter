@@ -869,3 +869,13 @@ export { claimFreeChat } from './entitlements/freeChat';
 // Plan dropped / raised -> hide / restore events and experiences over the new
 // allowance (owner rule 2026-10-14).
 export { onProfileListingAllowanceChanged } from './entitlements/downgrade';
+// Finance (admin panel): buyer fee invoices + credit notes, business monthly
+// statements, NFS-e (Brazil) / PDF invoices (USA) switch, sales stats.
+export {
+  adminFinance,
+  onTicketOrderFinance,
+  pollNfseStatus,
+  generateMonthlyStatements,
+  listMyFinanceDocuments,
+  getMyFinanceDocumentPdf,
+} from './finance';
