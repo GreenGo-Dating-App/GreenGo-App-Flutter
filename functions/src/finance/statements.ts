@@ -30,6 +30,7 @@ import {
   monthlyFeeInvoiceId, statementLines, statementListingLines,
 } from './model';
 import { renderStatementPdf } from './pdf';
+import { BILLING, billingMissing } from './billing';
 
 const db = () => admin.firestore();
 const ts = (d: Date) => admin.firestore.Timestamp.fromDate(d);
@@ -50,6 +51,8 @@ export interface StoredStatement {
   /** every event / experience that earned money in the month */
   listings: StatementListingLine[];
   feeInvoiceIds: string[];
+  /** invoice details still missing on the seller's billing profile (shown to admins; invoices still go out) */
+  billingMissing: string[];
   pdf: { path: string | null; version: number; generatedAt: admin.firestore.Timestamp | null };
   emailedAt: admin.firestore.Timestamp | null;
   issuedAt: admin.firestore.Timestamp;
@@ -142,6 +145,7 @@ export async function generateStatement(
     lines,
     listings,
     feeInvoiceIds: prev?.feeInvoiceIds || [],
+    billingMissing: billingMissing((await db().collection(BILLING).doc(organizerId).get()).data()),
     pdf: prev?.pdf || { path: null, version: 0, generatedAt: null },
     emailedAt: prev?.emailedAt || null,
     issuedAt: ts(now),

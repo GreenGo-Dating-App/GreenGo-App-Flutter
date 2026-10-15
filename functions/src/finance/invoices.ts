@@ -27,6 +27,7 @@ import {
 } from './model';
 import { NfseConfigError, NfseProvider, NfseTokens, nfseRef, providerFor, tomadorProblem } from './nfse';
 import { IssuerSnapshot, renderInvoicePdf } from './pdf';
+import { billingToPartyFields } from './billing';
 
 export const FCOL = {
   config: 'finance_config',
@@ -101,14 +102,15 @@ export async function partyFor(uid: string | null, fallbackName?: string | null)
     db().collection(FCOL.billing).doc(uid).get(),
   ]);
   const p = ps.data() || {};
-  // Billing details an admin entered for this seller (legal name, CPF/CNPJ,
-  // address, invoice e-mail) win over the public profile.
-  const bp = bs.data() || {};
+  // The seller's invoice details (finance/billing.ts: legal name, tax id, full
+  // address, billing e-mail; entered by the seller or an admin) win over the
+  // public profile.
+  const b = billingToPartyFields(bs.data());
   const s = (v: unknown) => (typeof v === 'string' && v.trim() ? v.trim() : null);
-  const name = String(s(bp.legalName) || s(p.businessName) || s(p.displayName) || fallbackName || s(p.nickname) || 'Customer').slice(0, 150);
+  const name = String(b.name || s(p.businessName) || s(p.displayName) || fallbackName || s(p.nickname) || 'Customer').slice(0, 150);
   const loc = p.location || {};
-  const address = s(bp.address) || [loc.city, loc.country].filter((x: unknown) => typeof x === 'string' && x).join(', ') || null;
-  return { uid, name, email: s(bp.email) || email, taxId: s(bp.taxId) || s(p.taxId), address };
+  const address = b.address || [loc.city, loc.country].filter((x: unknown) => typeof x === 'string' && x).join(', ') || null;
+  return { uid, name, email: b.email || email, taxId: b.taxId || s(p.taxId), address };
 }
 
 // ─────────────────────────────────────────────────────────────── create

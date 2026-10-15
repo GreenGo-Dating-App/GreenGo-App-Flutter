@@ -14,6 +14,7 @@ import { generateStatementsForMonth } from './statements';
 
 export { adminFinance } from './admin';
 export { listMyFinanceDocuments, getMyFinanceDocumentPdf } from './seller';
+export { getMyBillingProfile, saveMyBillingProfile } from './billing';
 
 /** ticket_orders paid / refunded / disputed -> stats + fee invoice / credit note. */
 export const onTicketOrderFinance = onDocumentWritten(

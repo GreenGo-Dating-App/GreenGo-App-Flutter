@@ -25,6 +25,7 @@ import {
   normalizeSettings, nfseReadiness, orderTransition, taxFor,
 } from './model';
 import { applyOrderFinance } from './stats';
+import { billingMissing, saveBillingProfile } from './billing';
 import { generateStatement, generateStatementsForMonth, getStatementPdf } from './statements';
 
 const db = () => admin.firestore();
@@ -288,6 +289,7 @@ async function businessDetail(data: any) {
     recentOrders: recentOrders.docs.map((d) => ({ id: d.id, ...plain(pick(d.data(), ORDER_FIELDS)) })),
     statements: statements.docs.map((d) => statementRow(d.id, d.data())),
     billing: plain(billing.data() || null),
+    billingMissing: billingMissing(billing.data()),
   };
 }
 
@@ -588,6 +590,10 @@ const WRITES: Record<string, Handler> = {
   backfillOrders: (d, uid) => backfillOrders(d, uid),
   saveBillingProfile: async (d, uid) => {
     const organizerId = docId(d.organizerId, 'organizerId', false)!;
+    // Full invoice details (same validation as the seller's own form).
+    if (d.type === 'private' || d.type === 'company') {
+      return { billing: plain(await saveBillingProfile(organizerId, d, uid, 'admin')) };
+    }
     const profile = {
       legalName: str(d.legalName, 'legalName', 150) || null,
       taxId: taxIdOf(d.taxId),

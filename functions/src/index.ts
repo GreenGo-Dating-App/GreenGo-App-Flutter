@@ -878,4 +878,6 @@ export {
   generateMonthlyStatements,
   listMyFinanceDocuments,
   getMyFinanceDocumentPdf,
+  getMyBillingProfile,
+  saveMyBillingProfile,
 } from './finance';
