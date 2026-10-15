@@ -603,7 +603,8 @@ const WRITES: Record<string, Handler> = {
       updatedBy: uid,
     };
     if (profile.email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(profile.email)) throw new HttpsError('invalid-argument', 'email is invalid');
-    await db().collection(FCOL.billing).doc(organizerId).set(profile);
+    // Legacy flat fields: merge, never wipe the structured invoice details.
+    await db().collection(FCOL.billing).doc(organizerId).set(profile, { merge: true });
     return { billing: plain(profile) };
   },
   reprocessOrder: async (d, uid) => {
