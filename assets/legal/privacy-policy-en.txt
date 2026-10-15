@@ -1,8 +1,8 @@
 GREENGO PRIVACY POLICY
 
-Version: 5.1.0
-Effective date: 11 October 2026
-Previous version: 5.0.0 (9 October 2026)
+Version: 5.2.0
+Effective date: 15 October 2026
+Previous version: 5.1.0 (11 October 2026)
 
 ================================================================================
 1. WHO WE ARE AND HOW TO REACH US
@@ -60,6 +60,10 @@ and talk across language barriers. It includes:
 GreenGo is a social and cultural discovery service, not a service for finding
 romantic or sexual partners.
 
+People without an account can also book an event, or send a booking request
+for an experience, from a shared link as a guest (section 11.7). This policy
+applies to them too.
+
 ================================================================================
 2. THE SHORT VERSION
 ================================================================================
@@ -106,9 +110,8 @@ b) Profile data
    - About you: bio, interests, the languages you speak and are learning, and
      gender.
    - Optional details you choose to add: height, education, occupation,
-     personality traits, country or culture of origin, links to your social
-     media accounts, and links to external payment services (for example a
-     Pix key or a PayPal.me link).
+     personality traits, country or culture of origin, and links to your
+     social media accounts.
    - We do not ask for your sexual orientation (see 3.4).
    - Your privacy choices, for example incognito mode, ghost mode and whether
      you appear on the map.
@@ -124,7 +127,8 @@ c) Content and communications
 d) Business account data
    Business name and legal name, category, address shown on your page, opening
    hours, contact channels and, where you ask to be verified as a business, the
-   documents needed for verification (see section 8.4).
+   documents needed for verification (see section 8.4). If you sell tickets or
+   experiences, also your billing data (see h below).
 
 e) Verification data
    An identity document and/or a selfie, only if you choose to verify. See
@@ -139,6 +143,15 @@ f) Purchase data
 g) Reports and appeals
    What you tell us when you report something or someone, and when you appeal
    one of our decisions.
+
+h) Billing data of business accounts
+   If you sell tickets or experiences: legal name, tax identification number,
+   billing address, billing e-mail and, optionally, phone and contact person.
+   See section 11.6.
+
+i) Guest booking data
+   If you book without an account (section 11.7): your first name, surname,
+   email address and your booking or ticket order.
 
 3.2 Data created when you use GreenGo
 
@@ -177,7 +190,8 @@ b) Apple and Google: confirmation of the purchases you make through their
 
 c) Stripe: confirmation of web payments, refunds and payment disputes.
    Stripe and Mercado Pago: confirmation of ticket payments made to an
-   organizer's account (section 11.4).
+   organizer's or host's account, the GreenGo service fee deducted from them,
+   and refunds and disputes (sections 11.4 and 11.5).
 
 d) Sign-in providers: if we offer sign-in with Google or Apple and you use
    it, your name and email address from that provider.
@@ -280,8 +294,9 @@ Purpose                              | What we use                | Legal basis
                                      |                            | LGPD 7 II)
 10. Safety: moderation, reports,     | Content, reports, account  | Legal obligation where the law
     appeals, blocking, fraud and     | and device data, purchase  | requires it (for example the EU
-    abuse prevention, refund and     | data                       | Digital Services Act); otherwise
-    chargeback checks                |                            | legitimate interests in a safe,
+    abuse prevention (including      | data, hashed guest rate-   | Digital Services Act); otherwise
+    limits on guest bookings),       | limit keys                 | legitimate interests in a safe,
+    refund and chargeback checks     |                            |
                                      |                            | fraud-free service (GDPR 6(1)(c)/(f);
                                      |                            | LGPD 7 II/IX)
 11. Report child sexual exploitation | Content, account data      | Legal obligation (GDPR 6(1)(c);
@@ -305,6 +320,15 @@ Purpose                              | What we use                | Legal basis
 17. Legal claims, requests from      | As needed                  | Legitimate interests / exercise of
     authorities                      |                            | rights (GDPR 6(1)(c)/(f), 9(2)(f);
                                      |                            | LGPD 7 II/VI, 11 II(d))
+18. Calculate, collect, refund and   | Ticket order data, billing | Contract with the seller (GDPR
+    invoice our service fee on paid  | data of business accounts  | 6(1)(b); LGPD 7 V) and legal
+    tickets; issue fee invoices and  |                            | obligation (tax) (GDPR 6(1)(c);
+    tax documents (sections 11.5,    |                            | LGPD 7 II)
+    11.6)                            |                            |
+19. Guest bookings without an        | Guest name, email, booking | Contract: performing the booking
+    account: the booking, ticket and | or ticket order            | (GDPR 6(1)(b); LGPD 7 V)
+    booking emails, cancellation     |                            |
+    notices (section 11.7)           |                            |
 
 Where we rely on legitimate interests, we have weighed our interest against your
 rights. You can ask us for that assessment. You can object at any time (16.2).
@@ -596,21 +620,82 @@ keep records of refunds and chargebacks to prevent fraud.
 11.4 Tickets for paid events and experiences
 
 - Paid events and paid experiences are sold by their organizer or host, not by
-  GreenGo. GreenGo takes no fee on tickets and never holds ticket money.
-- You pay the organizer directly, either through the organizer's own Stripe or
-  Mercado Pago account, or with a payment method the organizer lists (for
-  example Pix or a bank transfer). Card details are entered on Stripe's or
-  Mercado Pago's own page; we never receive your full card number.
-- We keep a record of each ticket order: the event or experience, the number of
-  tickets, the price, the payment method, the payment status and, where the
-  organizer asks for it, the payment receipt you upload.
+  GreenGo. GreenGo never holds ticket money.
+- You pay only through the in-app checkout, to the organizer's or host's own
+  Stripe or Mercado Pago account connected to GreenGo. There are no payment
+  links, no other payment methods outside that checkout and no cash payments
+  at the meeting. Card details are entered on Stripe's or Mercado Pago's own
+  page; we never receive your full card number.
+- We keep a record of each ticket order or booking: the event or experience,
+  the number of tickets, the price and currency, the payment provider and its
+  payment reference, the payment status and any refund.
 - Buyer/guest name and email are shared with the event organizer for entry.
-  The organizer also sees your ticket order and, if you uploaded one, your
-  payment receipt. The organizer uses this data to check you in and to manage
-  the event or experience, and is responsible for it as an independent
-  controller.
+  The organizer also sees your ticket order. The organizer uses this data to
+  check you in and to manage the event or experience, and is responsible for
+  it as an independent controller.
 - The legal basis is the performance of your ticket contract (GDPR 6(1)(b);
   LGPD 7 V).
+
+11.5 GreenGo service fee on paid tickets
+
+- GreenGo charges the organizer or host (the seller) a service fee on each
+  paid ticket or booking (Terms and Conditions, section 11.6). The buyer does
+  not pay it. Stripe (as an application fee) or Mercado Pago (as a
+  marketplace fee) deducts it from the ticket price when the buyer pays.
+  GreenGo receives only the fee and never holds the ticket money.
+- To calculate, collect, refund and invoice the fee, we process the order
+  data: the order amount and currency, the fee, the seller's account id, the
+  payment provider's reference and the refund status.
+- The legal basis is the performance of our contract with the seller (GDPR
+  6(1)(b); LGPD 7 V) and our tax and accounting obligations (GDPR 6(1)(c);
+  LGPD 7 II).
+
+11.6 Billing data of business accounts
+
+- If you sell tickets or experiences, we collect the details needed to
+  invoice our service fee: legal name, tax identification number (for
+  example CPF/CNPJ, VAT number, codice fiscale, NIF, EIN; for US individuals
+  the SSN/ITIN is optional), billing address, billing e-mail and, optionally,
+  phone and contact person. In Brazil this can include the municipal or
+  state registration number.
+- You must give these details before you can sell paid tickets or bookings.
+- We use them only to issue fee invoices and the related tax documents (such
+  as the Brazilian NFS-e) and keep them as long as tax law requires. Brazilian
+  NFS-e are issued through the municipal system, using our invoicing
+  provider.
+- Every month, on the 2nd, we email each business its fee invoices and
+  statement. They are also available in the app under Profile > Business.
+- These details are not shown on your public profile and are shared only
+  with our invoicing provider and the tax authorities where required.
+- The legal basis is our legal (tax) obligation (GDPR 6(1)(c); LGPD 7 II) and
+  the performance of our contract with you (GDPR 6(1)(b); LGPD 7 V).
+
+11.7 Booking as a guest without an account
+
+- If the organizer allows it ("Guests allowed to book"), people without a
+  GreenGo account can book an event from a shared link. Guests can also send
+  a booking request for an experience from a shared link.
+- We collect the guest's first name, surname and email address, and the
+  booking or ticket order. For a paid event the guest pays through the
+  organizer's Stripe or Mercado Pago checkout, as in 11.4. GreenGo does not
+  receive card data.
+- The guest's name and email are shared with the organizer or host
+  (participant list, entry check). Other participants see only the name.
+- We use the email address to send the ticket and booking emails, including
+  the request to pay when a host accepts an experience request, and notices
+  of cancellations and refunds.
+- The guest's contact data (email address) is deleted automatically 400 days
+  after the last booking. The ticket order or booking itself is kept as
+  described in section 14.
+- To prevent abuse, we limit how many bookings can be made from the same
+  connection or email address. For this we store only a one-way hashed key
+  and a counter, which are deleted automatically within a few hours.
+- The legal basis is the performance of the booking (GDPR 6(1)(b); LGPD 7 V)
+  and, for abuse prevention, our legitimate interest in a safe, fraud-free
+  service (GDPR 6(1)(f); LGPD 7 IX).
+- Guests have the same rights as account holders (section 16), including
+  access and deletion. Write to privacy@greengochat.com from the email
+  address you used for the booking.
 
 ================================================================================
 12. WHO WE SHARE YOUR DATA WITH
@@ -643,8 +728,11 @@ Stripe                           | Web payments, subscriptions,      | USA,     
 Brevo (Sendinblue SAS)           | Sending emails                    | France   | EU (no transfer for EU
                                  |                                   |          | users); ANPD clauses
 Resend, Inc.                     | Sending service emails (for       | USA      | EU SCCs; ANPD clauses
-                                 | example account-deletion links    |          |
-                                 | and ticket emails)                |          |
+                                 | example account-deletion links,   |          |
+                                 | ticket emails and fee invoices)   |          |
+Focus NFe                        | Issuing Brazilian service         | Brazil   | Section 13.2 c)
+                                 | invoices (NFS-e) for our service  |          |
+                                 | fee (section 11.6)                |          |
 Anthropic PBC                    | AI support assistant (Claude)     | USA      | EU SCCs; ANPD clauses
 
 12.3 Independent companies (they decide how they use data)
@@ -652,18 +740,19 @@ Anthropic PBC                    | AI support assistant (Claude)     | USA      
 - Apple and Google, when you buy through their stores.
 - Stripe, for its own fraud prevention and legal duties.
 - Organizers and hosts of the events and experiences you buy a ticket for or
-  book: your name and email, your ticket order and any payment receipt you
-  upload, so that they can admit you (section 11.4). Stripe and Mercado Pago
-  process ticket payments for the organizer under their own terms.
+  book, also as a guest without an account: your name and email and your
+  ticket order, so that they can admit you (sections 11.4 and 11.7). Stripe
+  and Mercado Pago process ticket payments for the organizer under their own
+  terms and deduct GreenGo's service fee (section 11.5).
+- Tax authorities: fee invoices and tax documents containing the billing data
+  of business accounts, where the law requires it, for example through the
+  Brazilian municipal NFS-e system (section 11.6).
 - Partners you choose to open from GreenGo, for example Viator, Ticketmaster or
   Tiqets for external events and attractions.
   - When you tap a link to their site, they collect data under their own
     policies.
   - GreenGo may receive a commission from them.
   - We do not send them your account data.
-- External payment services you or a host list on a profile or experience (for
-  example Pix, PayPal or Revolut). The payment happens between you and the
-  other person, outside GreenGo.
 - Map and image services loaded directly by the app: OpenStreetMap, CARTO,
   Cesium (3D globe), Unsplash and Pexels (pictures for vocabulary cards). They
   receive your device's IP address and the request (for example a map area or
@@ -741,9 +830,17 @@ Verification selfie                    | Deleted after the review; the result is
 Purchase and payment records           | 5 years after the purchase, in a
                                        | pseudonymised form after account
                                        | deletion (tax and accounting law)
-Ticket orders and payment receipts     | 5 years after the event (consumer and
-                                       | tax law); receipts are visible only to
-                                       | you and the organizer
+Ticket orders and bookings, including  | 5 years after the event (consumer and
+service-fee data                       | tax law)
+Fee invoices, statements and tax       | As long as tax law requires (at least
+documents (NFS-e)                      | 5 years)
+Billing data of business accounts      | Until the business account is closed,
+                                       | then as long as tax law requires for
+                                       | the invoices issued with it
+Guest contact data (email address)     | Deleted automatically 400 days after
+                                       | the guest's last booking
+Guest booking rate-limit counters      | Deleted automatically within a few
+(hashed keys)                          | hours
 Reports, moderation cases, appeals     | 2 years after the case is closed
 Child-safety reports and evidence      | At least 1 year, or longer when the
                                        | law or an authority requires it
@@ -804,6 +901,9 @@ e) Purchase and payment records are kept for the period the tax and accounting
    laws require (see section 14). We first remove your name, email and account
    id from them and replace the id with a code that cannot identify you
    without additional information.
+   Fee invoices issued to a business account, and the billing data on them,
+   are kept unchanged for the period tax law requires, because an invoice
+   must show the seller's legal details.
 
 f) We also ask our providers to delete your data:
    - Stripe deletes your customer record;
@@ -1040,7 +1140,9 @@ Professional or education information  | Yes, if   | Service providers    | No
 Inferences (interests, recommendations)| Yes       | No                   | No
 Sensitive personal information         | Yes       | Service providers    | No
 (precise geolocation, account log-in,  |           |                      |
-government ID during verification)     |           |                      |
+government ID during verification,     |           |                      |
+SSN/ITIN if a US seller gives it for   |           |                      |
+fee invoices)                          |           |                      |
 
 22.2 Sources
 
@@ -1146,6 +1248,18 @@ EU and UK representatives: being appointed (see section 1.3)
 ================================================================================
 VERSION HISTORY
 ================================================================================
+
+5.2.0 - 15 October 2026
+- Paid tickets and bookings only through the in-app checkout to the
+  organizer's or host's own Stripe or Mercado Pago account; payment links,
+  other payment methods, payment receipts and cash removed (sections 3.1,
+  11.4, 12.3 and 14).
+- New section 11.5: GreenGo service fee paid by the seller, and the order data
+  we process for it (also sections 3.3 and 5).
+- New section 11.6: billing data of business accounts, fee invoices and tax
+  documents (also sections 3.1, 5, 12, 14, 15 and 22).
+- New section 11.7: booking as a guest without an account (also sections 1.4,
+  3.1, 5, 12.3 and 14).
 
 5.1.0 - 11 October 2026
 - Sexual orientation is no longer collected (sections 2, 3.1, 3.4, 4.2, 5, 22).

@@ -1,8 +1,8 @@
 DATENSCHUTZERKLÄRUNG VON GREENGO
 
-Version: 5.1.0
-Gültig ab: 11. Oktober 2026
-Vorherige Version: 5.0.0 (9. Oktober 2026)
+Version: 5.2.0
+Gültig ab: 15. Oktober 2026
+Vorherige Version: 5.1.0 (11. Oktober 2026)
 
 ================================================================================
 1. WER WIR SIND UND WIE DU UNS ERREICHST
@@ -63,6 +63,10 @@ zu entdecken und sich über Sprachbarrieren hinweg zu unterhalten. Er umfasst:
 GreenGo ist ein Dienst für soziale und kulturelle Entdeckungen, kein Dienst zur
 Suche nach romantischen oder sexuellen Partnern.
 
+Auch Menschen ohne Konto können über einen geteilten Link als Gast ein Event
+buchen oder eine Buchungsanfrage für ein Erlebnis senden (Abschnitt 11.7).
+Diese Erklärung gilt auch für sie.
+
 ================================================================================
 2. DIE KURZFASSUNG
 ================================================================================
@@ -111,9 +115,8 @@ b) Profildaten
    - Über dich: Bio, Interessen, die Sprachen, die du sprichst und lernst, und
      Geschlecht.
    - Optionale Angaben, die du hinzufügen kannst: Größe, Bildung, Beruf,
-     Persönlichkeitsmerkmale, Herkunftsland oder -kultur, Links zu deinen
-     Social-Media-Konten und Links zu externen Zahlungsdiensten (zum Beispiel
-     ein Pix-Schlüssel oder ein PayPal.me-Link).
+     Persönlichkeitsmerkmale, Herkunftsland oder -kultur und Links zu deinen
+     Social-Media-Konten.
    - Wir fragen nicht nach deiner sexuellen Orientierung (siehe 3.4).
    - Deine Datenschutzeinstellungen, zum Beispiel Inkognito-Modus, Geistermodus
      und ob du auf der Karte erscheinst.
@@ -130,7 +133,8 @@ d) Daten von Unternehmenskonten
    Name und Firmenname des Unternehmens, Kategorie, auf deiner Seite angezeigte
    Adresse, Öffnungszeiten, Kontaktkanäle und, wenn du eine Verifizierung als
    Unternehmen beantragst, die dafür erforderlichen Unterlagen (siehe Abschnitt
-   8.4).
+   8.4). Wenn du Tickets oder Erlebnisse verkaufst, auch deine
+   Rechnungsdaten (siehe h unten).
 
 e) Verifizierungsdaten
    Ein Ausweisdokument und/oder ein Selfie, nur wenn du dich für eine
@@ -146,6 +150,16 @@ f) Kaufdaten
 g) Meldungen und Beschwerden
    Was du uns mitteilst, wenn du etwas oder jemanden meldest und wenn du gegen
    eine unserer Entscheidungen Beschwerde einlegst.
+
+h) Rechnungsdaten von Unternehmenskonten
+   Wenn du Tickets oder Erlebnisse verkaufst: vollständiger Name bzw.
+   Firmenname, Steuer-Identifikationsnummer, Rechnungsadresse,
+   Rechnungs-E-Mail-Adresse und, optional, Telefonnummer und
+   Ansprechpartner. Siehe Abschnitt 11.6.
+
+i) Daten von Gastbuchungen
+   Wenn du ohne Konto buchst (Abschnitt 11.7): dein Vorname, Nachname, deine
+   E-Mail-Adresse und deine Buchung oder Ticketbestellung.
 
 3.2 Daten, die bei der Nutzung von GreenGo entstehen
 
@@ -186,7 +200,9 @@ b) Apple und Google: Bestätigungen der Käufe, die du über ihre Stores tätigs
 
 c) Stripe: Bestätigungen von Webzahlungen, Erstattungen und
    Zahlungsstreitigkeiten. Stripe und Mercado Pago: Bestätigungen von
-   Ticketzahlungen auf das Konto eines Veranstalters (Abschnitt 11.4).
+   Ticketzahlungen auf das Konto eines Veranstalters oder Gastgebers, die
+   davon abgezogene GreenGo-Servicegebühr sowie Erstattungen und
+   Zahlungsstreitigkeiten (Abschnitte 11.4 und 11.5).
 
 d) Anmeldeanbieter: Wenn wir die Anmeldung mit Google oder Apple anbieten und
    du sie nutzt, deinen Namen und deine E-Mail-Adresse von diesem Anbieter.
@@ -301,11 +317,12 @@ Zweck                                | Was wir verwenden          | Rechtsgrundl
 9.  Steuer- und Buchhaltungs-        | Kaufdaten (Minimum)        | Rechtliche Verpflichtung (DSGVO
     unterlagen führen                |                            | 6(1)(c); LGPD 7 II)
 10. Sicherheit: Moderation,          | Inhalte, Meldungen, Konto- | Rechtliche Verpflichtung, soweit das
-    Meldungen, Beschwerden,          | und Gerätedaten, Kaufdaten | Gesetz es verlangt (zum Beispiel der
-    Blockieren, Betrugs- und         |                            | EU Digital Services Act); ansonsten
-    Missbrauchsprävention, Prüfung   |                            | berechtigte Interessen an einem
-    von Erstattungen und             |                            | sicheren, betrugsfreien Dienst (DSGVO
-    Rückbuchungen                    |                            | 6(1)(c)/(f); LGPD 7 II/IX)
+    Meldungen, Beschwerden,          | und Gerätedaten, Kaufdaten,| Gesetz es verlangt (zum Beispiel der
+    Blockieren, Betrugs- und         | gehashte Schlüssel der     | EU Digital Services Act); ansonsten
+    Missbrauchsprävention (auch      | Gastbuchungs-Limits        | berechtigte Interessen an einem
+    Limits für Gastbuchungen),       |                            | sicheren, betrugsfreien Dienst (DSGVO
+    Prüfung von Erstattungen und     |                            | 6(1)(c)/(f); LGPD 7 II/IX)
+    Rückbuchungen                    |                            |
 11. Material über sexuelle Ausbeutung| Inhalte, Kontodaten        | Rechtliche Verpflichtung (DSGVO
     von Kindern an die Behörden      |                            | 6(1)(c); LGPD 7 II) und
     melden                           |                            | lebenswichtige Interessen
@@ -330,6 +347,17 @@ Zweck                                | Was wir verwenden          | Rechtsgrundl
 17. Rechtsansprüche, Anfragen von    | Soweit erforderlich        | Berechtigte Interessen / Ausübung von
     Behörden                         |                            | Rechten (DSGVO 6(1)(c)/(f), 9(2)(f);
                                      |                            | LGPD 7 II/VI, 11 II(d))
+18. Unsere Servicegebühr auf         | Daten der Ticketbestellung,| Vertrag mit dem Verkäufer (DSGVO
+    kostenpflichtige Tickets         | Rechnungsdaten von         | 6(1)(b); LGPD 7 V) und rechtliche
+    berechnen, einziehen, erstatten  | Unternehmenskonten         | Verpflichtung (Steuern) (DSGVO
+    und in Rechnung stellen;         |                            | 6(1)(c); LGPD 7 II)
+    Gebührenrechnungen und Steuer-   |                            |
+    dokumente ausstellen (Abschnitte |                            |
+    11.5, 11.6)                      |                            |
+19. Gastbuchungen ohne Konto: die    | Name, E-Mail-Adresse des   | Vertrag: Durchführung der Buchung
+    Buchung, Ticket- und Buchungs-   | Gastes, Buchung oder       | (DSGVO 6(1)(b); LGPD 7 V)
+    E-Mails, Stornierungshinweise    | Ticketbestellung           |
+    (Abschnitt 11.7)                 |                            |
 
 Wo wir uns auf berechtigte Interessen stützen, haben wir unser Interesse gegen
 deine Rechte abgewogen. Du kannst uns um diese Abwägung bitten. Du kannst
@@ -650,23 +678,98 @@ auf, um Betrug zu verhindern.
 11.4 Tickets für kostenpflichtige Events und Erlebnisse
 
 - Kostenpflichtige Events und Erlebnisse werden von ihrem Veranstalter oder
-  Gastgeber verkauft, nicht von GreenGo. GreenGo erhebt keine Gebühr auf
-  Tickets und verwahrt niemals Ticketgelder.
-- Du bezahlst den Veranstalter direkt, entweder über dessen eigenes Stripe-
-  oder Mercado-Pago-Konto oder mit einer vom Veranstalter angegebenen
-  Zahlungsmethode (zum Beispiel Pix oder Banküberweisung). Kartendaten werden
-  auf der eigenen Seite von Stripe oder Mercado Pago eingegeben; deine
+  Gastgeber verkauft, nicht von GreenGo. GreenGo verwahrt niemals
+  Ticketgelder.
+- Du bezahlst nur über den Checkout in der App, auf das eigene, mit GreenGo
+  verbundene Stripe- oder Mercado-Pago-Konto des Veranstalters oder
+  Gastgebers. Es gibt keine Zahlungslinks, keine anderen Zahlungsmethoden
+  außerhalb dieses Checkouts und keine Barzahlung beim Treffen. Kartendaten
+  werden auf der eigenen Seite von Stripe oder Mercado Pago eingegeben; deine
   vollständige Kartennummer erhalten wir nie.
-- Wir speichern zu jeder Ticketbestellung: das Event oder Erlebnis, die Anzahl
-  der Tickets, den Preis, die Zahlungsmethode, den Zahlungsstatus und, wenn der
-  Veranstalter dies verlangt, den von dir hochgeladenen Zahlungsbeleg.
+- Wir speichern zu jeder Ticketbestellung oder Buchung: das Event oder
+  Erlebnis, die Anzahl der Tickets, den Preis und die Währung, den
+  Zahlungsanbieter und dessen Zahlungsreferenz, den Zahlungsstatus und
+  etwaige Erstattungen.
 - Name und E-Mail-Adresse des Käufers/Gastes werden für die Einlasskontrolle an den Veranstalter weitergegeben.
-  Der Veranstalter sieht außerdem deine Ticketbestellung und, falls du einen
-  hochgeladen hast, deinen Zahlungsbeleg. Der Veranstalter nutzt diese Daten,
-  um dich einzuchecken und das Event oder Erlebnis zu organisieren, und ist
-  dafür als eigenständiger Verantwortlicher verantwortlich.
+  Der Veranstalter sieht außerdem deine Ticketbestellung. Der Veranstalter
+  nutzt diese Daten, um dich einzuchecken und das Event oder Erlebnis zu
+  organisieren, und ist dafür als eigenständiger Verantwortlicher
+  verantwortlich.
 - Rechtsgrundlage ist die Erfüllung deines Ticketvertrags (DSGVO 6(1)(b);
   LGPD 7 V).
+
+11.5 GreenGo-Servicegebühr auf kostenpflichtige Tickets
+
+- GreenGo berechnet dem Veranstalter oder Gastgeber (dem Verkäufer) auf jedes
+  kostenpflichtige Ticket und jede kostenpflichtige Buchung eine
+  Servicegebühr (Allgemeine Geschäftsbedingungen, Abschnitt 11.6). Der Käufer
+  zahlt sie nicht. Stripe (als Application Fee) oder Mercado Pago (als
+  Marketplace-Gebühr) zieht sie bei der Zahlung des Käufers vom Ticketpreis
+  ab. GreenGo erhält nur die Gebühr und verwahrt niemals das Ticketgeld.
+- Um die Gebühr zu berechnen, einzuziehen, zu erstatten und in Rechnung zu
+  stellen, verarbeiten wir die Bestelldaten: den Bestellbetrag und die
+  Währung, die Gebühr, die Konto-ID des Verkäufers, die Referenz des
+  Zahlungsanbieters und den Erstattungsstatus.
+- Rechtsgrundlage ist die Erfüllung unseres Vertrags mit dem Verkäufer (DSGVO
+  6(1)(b); LGPD 7 V) und unsere steuer- und handelsrechtlichen Pflichten
+  (DSGVO 6(1)(c); LGPD 7 II).
+
+11.6 Rechnungsdaten von Unternehmenskonten
+
+- Wenn du Tickets oder Erlebnisse verkaufst, erheben wir die Angaben, die wir
+  für die Rechnung über unsere Servicegebühr brauchen: vollständiger Name bzw.
+  Firmenname, Steuer-Identifikationsnummer (zum Beispiel CPF/CNPJ,
+  USt-IdNr., Codice fiscale, NIF, EIN; für Privatpersonen in den USA ist die
+  SSN/ITIN optional), Rechnungsadresse, Rechnungs-E-Mail-Adresse und,
+  optional, Telefonnummer und Ansprechpartner. In Brasilien kann dazu die
+  kommunale oder staatliche Registrierungsnummer gehören.
+- Du musst diese Angaben machen, bevor du kostenpflichtige Tickets oder
+  Buchungen verkaufen kannst.
+- Wir verwenden sie nur, um Gebührenrechnungen und die zugehörigen
+  Steuerdokumente (etwa die brasilianische NFS-e) auszustellen, und bewahren
+  sie so lange auf, wie das Steuerrecht es verlangt. Brasilianische NFS-e
+  werden über das kommunale System mit Hilfe unseres Rechnungsdienstleisters
+  ausgestellt.
+- Jeden Monat, am 2., senden wir jedem Unternehmen seine Gebührenrechnungen
+  und seine Abrechnung per E-Mail. Sie sind auch in der App unter Profil >
+  Unternehmen abrufbar.
+- Diese Angaben werden nicht in deinem öffentlichen Profil angezeigt und nur
+  an unseren Rechnungsdienstleister und, soweit vorgeschrieben, an die
+  Steuerbehörden weitergegeben.
+- Rechtsgrundlage ist unsere rechtliche (steuerliche) Verpflichtung (DSGVO
+  6(1)(c); LGPD 7 II) und die Erfüllung unseres Vertrags mit dir (DSGVO
+  6(1)(b); LGPD 7 V).
+
+11.7 Buchen als Gast ohne Konto
+
+- Wenn der Veranstalter es erlaubt („Gäste dürfen buchen“), können Menschen
+  ohne GreenGo-Konto ein Event über einen geteilten Link buchen. Gäste können
+  über einen geteilten Link auch eine Buchungsanfrage für ein Erlebnis
+  senden.
+- Wir erheben Vorname, Nachname und E-Mail-Adresse des Gastes sowie die
+  Buchung oder Ticketbestellung. Bei einem kostenpflichtigen Event bezahlt der
+  Gast über den Stripe- oder Mercado-Pago-Checkout des Veranstalters, wie in
+  11.4. GreenGo erhält keine Kartendaten.
+- Name und E-Mail-Adresse des Gastes werden an den Veranstalter oder
+  Gastgeber weitergegeben (Teilnehmerliste, Einlasskontrolle). Andere
+  Teilnehmer sehen nur den Namen.
+- Wir verwenden die E-Mail-Adresse, um die Ticket- und Buchungs-E-Mails zu
+  senden, einschließlich der Zahlungsaufforderung, wenn ein Gastgeber eine
+  Erlebnis-Anfrage annimmt, sowie Hinweise auf Stornierungen und
+  Erstattungen.
+- Die Kontaktdaten des Gastes (E-Mail-Adresse) werden 400 Tage nach der
+  letzten Buchung automatisch gelöscht. Die Ticketbestellung oder Buchung
+  selbst wird wie in Abschnitt 14 beschrieben aufbewahrt.
+- Um Missbrauch zu verhindern, begrenzen wir, wie viele Buchungen von
+  derselben Verbindung oder E-Mail-Adresse aus möglich sind. Dafür speichern
+  wir nur einen nicht umkehrbaren gehashten Schlüssel und einen Zähler, die
+  innerhalb weniger Stunden automatisch gelöscht werden.
+- Rechtsgrundlage ist die Durchführung der Buchung (DSGVO 6(1)(b); LGPD 7 V)
+  und, für die Missbrauchsprävention, unser berechtigtes Interesse an einem
+  sicheren, betrugsfreien Dienst (DSGVO 6(1)(f); LGPD 7 IX).
+- Gäste haben dieselben Rechte wie Kontoinhaber (Abschnitt 16),
+  einschließlich Auskunft und Löschung. Schreib an privacy@greengochat.com
+  von der E-Mail-Adresse, die du für die Buchung verwendet hast.
 
 ================================================================================
 12. MIT WEM WIR DEINE DATEN TEILEN
@@ -700,8 +803,13 @@ Stripe                           | Webzahlungen, Abonnements,        | USA,     
 Brevo (Sendinblue SAS)           | Versand von E-Mails               | Frank-   | EU (keine Übermittlung für
                                  |                                   | reich    | EU-Nutzer); ANPD-Klauseln
 Resend, Inc.                     | Versand von Service-E-Mails (zum  | USA      | EU-SCC; ANPD-Klauseln
-                                 | Beispiel Links zur Kontolöschung  |          |
-                                 | und Ticket-E-Mails)               |          |
+                                 | Beispiel Links zur Kontolöschung, |          |
+                                 | Ticket-E-Mails und                |          |
+                                 | Gebührenrechnungen)               |          |
+Focus NFe                        | Ausstellung brasilianischer       | Brasilien| Abschnitt 13.2 c)
+                                 | Dienstleistungsrechnungen (NFS-e) |          |
+                                 | für unsere Servicegebühr          |          |
+                                 | (Abschnitt 11.6)                  |          |
 Anthropic PBC                    | KI-Support-Assistent (Claude)     | USA      | EU-SCC; ANPD-Klauseln
 
 12.3 Unabhängige Unternehmen (sie entscheiden selbst, wie sie Daten verwenden)
@@ -709,19 +817,20 @@ Anthropic PBC                    | KI-Support-Assistent (Claude)     | USA      
 - Apple und Google, wenn du über ihre Stores kaufst.
 - Stripe, für die eigene Betrugsprävention und eigene gesetzliche Pflichten.
 - Veranstalter und Gastgeber der Events und Erlebnisse, für die du ein Ticket
-  kaufst oder die du buchst: dein Name und deine E-Mail-Adresse, deine
-  Ticketbestellung und ein von dir hochgeladener Zahlungsbeleg, damit sie dir
-  Einlass gewähren können (Abschnitt 11.4). Stripe und Mercado Pago wickeln
-  Ticketzahlungen für den Veranstalter nach ihren eigenen Bedingungen ab.
+  kaufst oder die du buchst, auch als Gast ohne Konto: dein Name und deine
+  E-Mail-Adresse und deine Ticketbestellung, damit sie dir Einlass gewähren
+  können (Abschnitte 11.4 und 11.7). Stripe und Mercado Pago wickeln
+  Ticketzahlungen für den Veranstalter nach ihren eigenen Bedingungen ab und
+  ziehen die GreenGo-Servicegebühr ab (Abschnitt 11.5).
+- Steuerbehörden: Gebührenrechnungen und Steuerdokumente mit den
+  Rechnungsdaten von Unternehmenskonten, soweit das Gesetz es verlangt, zum
+  Beispiel über das kommunale NFS-e-System in Brasilien (Abschnitt 11.6).
 - Partner, die du aus GreenGo heraus öffnest, zum Beispiel Viator,
   Ticketmaster oder Tiqets für externe Events und Sehenswürdigkeiten.
   - Wenn du auf einen Link zu ihrer Website tippst, erheben sie Daten nach
     ihren eigenen Richtlinien.
   - GreenGo kann von ihnen eine Provision erhalten.
   - Wir senden ihnen deine Kontodaten nicht.
-- Externe Zahlungsdienste, die du oder ein Gastgeber in einem Profil oder
-  Erlebnis angeben (zum Beispiel Pix, PayPal oder Revolut). Die Zahlung erfolgt
-  zwischen dir und der anderen Person, außerhalb von GreenGo.
 - Karten- und Bilddienste, die direkt von der App geladen werden:
   OpenStreetMap, CARTO, Cesium (3D-Globus), Unsplash und Pexels (Bilder für
   Vokabelkarten). Sie erhalten die IP-Adresse deines Geräts und die Anfrage
@@ -805,9 +914,19 @@ Verifizierungs-Selfie                  | Nach der Prüfung gelöscht; das
 Kauf- und Zahlungsunterlagen           | 5 Jahre nach dem Kauf, nach der
                                        | Kontolöschung in pseudonymisierter
                                        | Form (Steuer- und Handelsrecht)
-Ticketbestellungen und Zahlungsbelege  | 5 Jahre nach dem Event (Verbraucher-
-                                       | und Steuerrecht); Belege sind nur für
-                                       | dich und den Veranstalter sichtbar
+Ticketbestellungen und Buchungen,      | 5 Jahre nach dem Event (Verbraucher-
+einschließlich der Daten zur           | und Steuerrecht)
+Servicegebühr                          |
+Gebührenrechnungen, Abrechnungen und   | So lange, wie das Steuerrecht es
+Steuerdokumente (NFS-e)                | verlangt (mindestens 5 Jahre)
+Rechnungsdaten von Unternehmenskonten  | Bis das Unternehmenskonto geschlossen
+                                       | wird, danach so lange, wie das
+                                       | Steuerrecht es für die damit
+                                       | ausgestellten Rechnungen verlangt
+Kontaktdaten von Gästen (E-Mail-       | 400 Tage nach der letzten Buchung des
+Adresse)                               | Gastes automatisch gelöscht
+Zähler der Gastbuchungs-Limits         | Innerhalb weniger Stunden automatisch
+(gehashte Schlüssel)                   | gelöscht
 Meldungen, Moderationsfälle,           | 2 Jahre nach Abschluss des Falls
 Beschwerden                            |
 Meldungen und Beweise zum Kinderschutz | Mindestens 1 Jahr oder länger, wenn das
@@ -875,6 +994,9 @@ e) Kauf- und Zahlungsunterlagen werden für den von Steuer- und Handelsrecht
    zuvor deinen Namen, deine E-Mail-Adresse und deine Konto-ID daraus und
    ersetzen die ID durch einen Code, der dich ohne zusätzliche Informationen
    nicht identifizieren kann.
+   Gebührenrechnungen an ein Unternehmenskonto und die Rechnungsdaten darauf
+   bleiben für den steuerrechtlich vorgeschriebenen Zeitraum unverändert
+   erhalten, weil eine Rechnung die Angaben des Verkäufers enthalten muss.
 
 f) Wir bitten auch unsere Anbieter, deine Daten zu löschen:
    - Stripe löscht deinen Kundendatensatz;
@@ -1139,7 +1261,9 @@ Sensible personenbezogene              | Ja        | Dienstleister        | Nein
 Informationen (genaue                  |           |                      |
 Geolokalisierung, Kontoanmeldung,      |           |                      |
 amtlicher Ausweis bei der              |           |                      |
-Verifizierung)                         |           |                      |
+Verifizierung, SSN/ITIN, wenn ein      |           |                      |
+US-Verkäufer sie für Gebühren-         |           |                      |
+rechnungen angibt)                     |           |                      |
 
 22.2 Quellen
 
@@ -1252,6 +1376,19 @@ Vertreter in der EU und im Vereinigten Königreich: werden derzeit benannt
 ================================================================================
 VERSIONSVERLAUF
 ================================================================================
+
+5.2.0 - 15. Oktober 2026
+- Kostenpflichtige Tickets und Buchungen nur noch über den Checkout in der App
+  auf das eigene Stripe- oder Mercado-Pago-Konto des Veranstalters oder
+  Gastgebers; Zahlungslinks, andere Zahlungsmethoden, Zahlungsbelege und
+  Barzahlung entfernt (Abschnitte 3.1, 11.4, 12.3 und 14).
+- Neuer Abschnitt 11.5: die vom Verkäufer gezahlte GreenGo-Servicegebühr und
+  die dafür verarbeiteten Bestelldaten (auch Abschnitte 3.3 und 5).
+- Neuer Abschnitt 11.6: Rechnungsdaten von Unternehmenskonten,
+  Gebührenrechnungen und Steuerdokumente (auch Abschnitte 3.1, 5, 12, 14, 15
+  und 22).
+- Neuer Abschnitt 11.7: Buchen als Gast ohne Konto (auch Abschnitte 1.4, 3.1,
+  5, 12.3 und 14).
 
 5.1.0 - 11. Oktober 2026
 - Die sexuelle Orientierung wird nicht mehr erhoben (Abschnitte 2, 3.1, 3.4,
