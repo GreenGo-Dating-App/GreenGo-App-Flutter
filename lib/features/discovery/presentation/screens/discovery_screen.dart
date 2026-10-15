@@ -60,6 +60,7 @@ import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/utils/distance_bucket.dart';
 import '../../../../core/utils/country_names_l10n.dart';
 import '../../../safety/presentation/screens/age_assurance_required_screen.dart';
+import '../discovery_refresh_limiter.dart';
 
 /// Discovery Screen
 ///
@@ -176,6 +177,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   final Map<String, bool> _onlineStatusOverrides = {}; // userId -> isOnline
 
   String get userId => widget.userId;
+
+  /// Manual pull-to-refresh cap: 10 a day (DiscoveryRefreshLimiter).
+  final DiscoveryRefreshLimiter _refreshLimiter = DiscoveryRefreshLimiter();
 
   /// Columns the grid renders: the picker choice (a choice no longer offered
   /// at this screen width falls back to auto), or auto columns of
@@ -1132,6 +1136,22 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
             color: AppColors.richGold,
             backgroundColor: AppColors.backgroundCard,
             onRefresh: () async {
+              // At most 10 manual refreshes a day: each reload reads many
+              // profiles. Past the limit the grid stays as it is.
+              final left = await _refreshLimiter.tryConsume(userId);
+              if (!mounted) return;
+              if (left == null || left <= 3) {
+                final l10n = AppLocalizations.of(context)!;
+                ScaffoldMessenger.of(context)
+                  ..hideCurrentSnackBar()
+                  ..showSnackBar(SnackBar(
+                    key: const ValueKey('discovery-refresh-limit'),
+                    content: Text(left == null
+                        ? l10n.discoveryRefreshLimitReached(DiscoveryRefreshLimiter.dailyLimit)
+                        : l10n.discoveryRefreshesLeft(left)),
+                  ));
+                if (left == null) return;
+              }
               // Silently refresh user's GPS location (best-effort, no prompt)
               // Skip during traveler mode — effectiveLocation uses travelerLocation
               final isTraveling = _currentUserProfile?.isTravelerActive ?? false;

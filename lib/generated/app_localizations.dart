@@ -42635,6 +42635,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Net {amount}'**
   String financeDocsNet(String amount);
+
+  /// Discovery: snackbar when the daily manual pull-to-refresh limit is reached.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve refreshed Discovery {limit} times today. You can refresh again tomorrow; new people still load as you scroll.'**
+  String discoveryRefreshLimitReached(int limit);
+
+  /// Discovery: snackbar after a manual pull-to-refresh when 3 or fewer are left today.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{That was your last refresh for today} =1{1 refresh left today} other{{count} refreshes left today}}'**
+  String discoveryRefreshesLeft(int count);
 }
 
 class _AppLocalizationsDelegate

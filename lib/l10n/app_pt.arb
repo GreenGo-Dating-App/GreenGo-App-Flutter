@@ -7767,5 +7767,7 @@
         "type": "String"
       }
     }
-  }
+  },
+  "discoveryRefreshLimitReached": "Atualizou a Descoberta {limit} vezes hoje. Pode voltar a atualizar amanhã; ao deslizar continuam a carregar novas pessoas.",
+  "discoveryRefreshesLeft": "{count, plural, =0{Foi a sua última atualização de hoje} =1{Resta 1 atualização hoje} other{Restam {count} atualizações hoje}}"
 }

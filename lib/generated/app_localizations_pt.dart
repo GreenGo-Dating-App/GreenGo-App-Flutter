@@ -25092,6 +25092,23 @@ class AppLocalizationsPt extends AppLocalizations {
   String financeDocsNet(String amount) {
     return 'Líquido $amount';
   }
+
+  @override
+  String discoveryRefreshLimitReached(int limit) {
+    return 'Atualizou a Descoberta $limit vezes hoje. Pode voltar a atualizar amanhã; ao deslizar continuam a carregar novas pessoas.';
+  }
+
+  @override
+  String discoveryRefreshesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Restam $count atualizações hoje',
+      one: 'Resta 1 atualização hoje',
+      zero: 'Foi a sua última atualização de hoje',
+    );
+    return '$_temp0';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -50190,5 +50207,22 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String financeDocsNet(String amount) {
     return 'Líquido $amount';
+  }
+
+  @override
+  String discoveryRefreshLimitReached(int limit) {
+    return 'Você atualizou a Descoberta $limit vezes hoje. Você poderá atualizar de novo amanhã; ao rolar, novas pessoas continuam carregando.';
+  }
+
+  @override
+  String discoveryRefreshesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Restam $count atualizações hoje',
+      one: 'Resta 1 atualização hoje',
+      zero: 'Essa foi sua última atualização de hoje',
+    );
+    return '$_temp0';
   }
 }

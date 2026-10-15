@@ -7193,5 +7193,7 @@
         "type": "String"
       }
     }
-  }
+  },
+  "discoveryRefreshLimitReached": "Vous avez actualisé Découvrir {limit} fois aujourd'hui. Vous pourrez actualiser à nouveau demain ; de nouvelles personnes se chargent toujours en faisant défiler.",
+  "discoveryRefreshesLeft": "{count, plural, =0{C'était votre dernière actualisation aujourd'hui} =1{Plus qu'1 actualisation aujourd'hui} other{Plus que {count} actualisations aujourd'hui}}"
 }

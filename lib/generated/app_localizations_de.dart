@@ -25175,4 +25175,21 @@ class AppLocalizationsDe extends AppLocalizations {
   String financeDocsNet(String amount) {
     return 'Netto $amount';
   }
+
+  @override
+  String discoveryRefreshLimitReached(int limit) {
+    return 'Du hast Entdecken heute $limit-mal aktualisiert. Morgen kannst du wieder aktualisieren; beim Scrollen laden weiterhin neue Personen.';
+  }
+
+  @override
+  String discoveryRefreshesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Heute noch $count Aktualisierungen',
+      one: 'Heute noch 1 Aktualisierung',
+      zero: 'Das war deine letzte Aktualisierung für heute',
+    );
+    return '$_temp0';
+  }
 }

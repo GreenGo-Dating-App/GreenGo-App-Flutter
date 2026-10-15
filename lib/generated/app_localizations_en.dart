@@ -24876,4 +24876,21 @@ class AppLocalizationsEn extends AppLocalizations {
   String financeDocsNet(String amount) {
     return 'Net $amount';
   }
+
+  @override
+  String discoveryRefreshLimitReached(int limit) {
+    return 'You\'ve refreshed Discovery $limit times today. You can refresh again tomorrow; new people still load as you scroll.';
+  }
+
+  @override
+  String discoveryRefreshesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count refreshes left today',
+      one: '1 refresh left today',
+      zero: 'That was your last refresh for today',
+    );
+    return '$_temp0';
+  }
 }

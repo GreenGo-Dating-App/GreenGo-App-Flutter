@@ -13968,5 +13968,25 @@
         "type": "String"
       }
     }
+  },
+  "discoveryRefreshLimitReached": "You've refreshed Discovery {limit} times today. You can refresh again tomorrow; new people still load as you scroll.",
+  "@discoveryRefreshLimitReached": {
+    "description": "Discovery: snackbar when the daily manual pull-to-refresh limit is reached.",
+    "placeholders": {
+      "limit": {
+        "type": "int",
+        "example": "10"
+      }
+    }
+  },
+  "discoveryRefreshesLeft": "{count, plural, =0{That was your last refresh for today} =1{1 refresh left today} other{{count} refreshes left today}}",
+  "@discoveryRefreshesLeft": {
+    "description": "Discovery: snackbar after a manual pull-to-refresh when 3 or fewer are left today.",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
   }
 }
