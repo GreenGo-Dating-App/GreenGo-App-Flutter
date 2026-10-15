@@ -25371,4 +25371,18 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get tpBillingRequiredForSales =>
       'Gli acquirenti potranno pagare i tuoi biglietti solo dopo che avrai inserito i dati di fatturazione (nome o ragione sociale, codice fiscale o partita IVA e indirizzo di fatturazione).';
+
+  @override
+  String get storefrontAddressTitle => 'Indirizzo dell\'attività';
+
+  @override
+  String get storefrontAddressSubtitle =>
+      'Mostrato nella tua vetrina con una mappa, così i clienti ti trovano. Usa l\'indirizzo del negozio o del locale, non quello di casa.';
+
+  @override
+  String get storefrontAddressNotSet =>
+      'Aggiungi l\'indirizzo della tua attività';
+
+  @override
+  String get storefrontAddressRemove => 'Rimuovi indirizzo';
 }

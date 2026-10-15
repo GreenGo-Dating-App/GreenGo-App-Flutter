@@ -8024,5 +8024,9 @@
   "@financeBillingInvoicesShortcut": {
     "description": "Banner on the Invoices screen when details are missing."
   },
-  "tpBillingRequiredForSales": "Os compradores só podem pagar seus ingressos depois que você adicionar seus dados de faturamento (nome ou razão social, CPF/CNPJ e endereço de cobrança)."
+  "tpBillingRequiredForSales": "Os compradores só podem pagar seus ingressos depois que você adicionar seus dados de faturamento (nome ou razão social, CPF/CNPJ e endereço de cobrança).",
+  "storefrontAddressTitle": "Endereço do negócio",
+  "storefrontAddressSubtitle": "Aparece na sua vitrine com um mapa para os clientes encontrarem você. Use o endereço da sua loja ou espaço, não o da sua casa.",
+  "storefrontAddressNotSet": "Adicione o endereço do seu negócio",
+  "storefrontAddressRemove": "Remover endereço"
 }

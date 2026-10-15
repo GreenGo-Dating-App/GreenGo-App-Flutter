@@ -2,6 +2,7 @@ import 'package:equatable/equatable.dart';
 
 import '../../../../core/services/effective_tier.dart' as tier_rules;
 import '../../../membership/domain/entities/membership.dart';
+import 'business_address.dart';
 import 'location.dart';
 import 'social_links.dart';
 
@@ -84,6 +85,7 @@ class Profile extends Equatable {
     this.businessLegalName,
     this.businessCategory,
     this.businessWhatsapp,
+    this.businessAddress,
     this.businessVerified = false,
     this.businessPromotedUntil,
     this.galleryImages = const [],
@@ -210,6 +212,10 @@ class Profile extends Equatable {
   /// Business WhatsApp number (digits, may include country code). When set, the
   /// storefront/profile shows a WhatsApp button that opens wa.me/<number>.
   final String? businessWhatsapp;
+
+  /// Public street address of the storefront (search + map picker, like
+  /// events). Null = not set; the personal [location] stays private.
+  final BusinessAddress? businessAddress;
   final bool businessVerified;
 
   /// When set and in the future, the business is a currently-PROMOTED storefront
@@ -391,6 +397,7 @@ class Profile extends Equatable {
         businessLegalName,
         businessCategory,
         businessWhatsapp,
+        businessAddress,
         businessVerified,
         galleryImages,
         openingHours,
@@ -474,6 +481,8 @@ class Profile extends Equatable {
     String? businessLegalName,
     String? businessCategory,
     String? businessWhatsapp,
+    BusinessAddress? businessAddress,
+    bool clearBusinessAddress = false,
     bool? businessVerified,
     DateTime? businessPromotedUntil,
     List<String>? galleryImages,
@@ -554,6 +563,7 @@ class Profile extends Equatable {
       businessName: businessName ?? this.businessName,
       businessLegalName: businessLegalName ?? this.businessLegalName,
       businessWhatsapp: businessWhatsapp ?? this.businessWhatsapp,
+      businessAddress: clearBusinessAddress ? null : (businessAddress ?? this.businessAddress),
       businessCategory: businessCategory ?? this.businessCategory,
       businessVerified: businessVerified ?? this.businessVerified,
       businessPromotedUntil:

@@ -3,6 +3,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
 
+import '../../../../core/services/place_search_service.dart';
+import '../../../../core/widgets/location_picker.dart';
+import '../../../profile/domain/entities/business_address.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_dimensions.dart';
@@ -64,6 +67,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   // Latest location/languages the owner edited via the Location & Languages
   // tile (null until they open it this session; falls back to widget.profile).
   Location? _location;
+  BusinessAddress? _businessAddress;
   List<String>? _languages;
 
   // Featured/cover (hero) image URL. Empty string is the "removed" sentinel so
@@ -105,6 +109,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
       text: widget.profile.businessWhatsapp ?? '',
     );
     _location = widget.profile.location;
+    _businessAddress = widget.profile.businessAddress;
     _languages = List<String>.from(widget.profile.languages);
     _category = widget.profile.businessCategory;
     final links = widget.profile.storefrontLinks.isNotEmpty
@@ -275,6 +280,8 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
       // persists the number.
       businessWhatsapp: _whatsappController.text.trim(),
       location: _location ?? widget.profile.location,
+      businessAddress: _businessAddress,
+      clearBusinessAddress: _businessAddress == null,
       languages: _languages ?? widget.profile.languages,
       updatedAt: DateTime.now(),
     );
@@ -416,6 +423,12 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
             _buildCategoryGroups(),
             const SizedBox(height: 28),
 
+            // Public business address: search + map, like events.
+            _sectionHeader(l10n.storefrontAddressTitle, l10n.storefrontAddressSubtitle),
+            const SizedBox(height: 8),
+            _businessAddressTile(l10n),
+            const SizedBox(height: 28),
+
             // Location & Languages (business accounts edit these here).
             _sectionHeader(l10n.locationLanguagesLabel,
                 l10n.storefrontLocationLanguagesSubtitle),
@@ -502,6 +515,62 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
               ),
             ),
             const SizedBox(height: 40),
+          ],
+        ),
+      ),
+    );
+  }
+
+  /// Opens the shared search + map picker (the one events use) for the
+  /// storefront's public address.
+  Future<void> _pickBusinessAddress() async {
+    final l10n = AppLocalizations.of(context)!;
+    final a = _businessAddress;
+    final picked = await Navigator.of(context).push<PickedPlace>(LocationPickerScreen.route(
+      initialLat: a?.latitude,
+      initialLng: a?.longitude,
+      initialAddress: a?.address,
+      title: l10n.storefrontAddressTitle,
+    ));
+    if (picked != null && mounted) {
+      setState(() => _businessAddress = BusinessAddress.fromPicked(picked));
+    }
+  }
+
+  Widget _businessAddressTile(AppLocalizations l10n) {
+    final a = _businessAddress;
+    return InkWell(
+      key: const ValueKey('storefront-address-tile'),
+      onTap: _pickBusinessAddress,
+      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+      child: Container(
+        padding: const EdgeInsets.all(AppDimensions.paddingM),
+        decoration: BoxDecoration(
+          color: AppColors.backgroundCard,
+          borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+        ),
+        child: Row(
+          children: [
+            const Icon(Icons.storefront_outlined, color: AppColors.richGold),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Text(
+                a == null ? l10n.storefrontAddressNotSet : a.summary,
+                style: TextStyle(
+                  color: a == null ? AppColors.textTertiary : AppColors.textPrimary,
+                  fontWeight: a == null ? FontWeight.w400 : FontWeight.w600,
+                ),
+              ),
+            ),
+            if (a != null)
+              IconButton(
+                key: const ValueKey('storefront-address-clear'),
+                tooltip: l10n.storefrontAddressRemove,
+                icon: const Icon(Icons.close, color: AppColors.textTertiary, size: 20),
+                onPressed: () => setState(() => _businessAddress = null),
+              )
+            else
+              const Icon(Icons.chevron_right, color: AppColors.textTertiary),
           ],
         ),
       ),

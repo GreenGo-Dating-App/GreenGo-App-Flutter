@@ -43019,6 +43019,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Buyers can pay for your tickets only after you add your invoice details (legal name, tax ID and billing address).'**
   String get tpBillingRequiredForSales;
+
+  /// Storefront editor / public storefront: the business public address picked with the event-style search + map (owner rule 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Business address'**
+  String get storefrontAddressTitle;
+
+  /// Storefront editor / public storefront: the business public address picked with the event-style search + map (owner rule 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Shown on your storefront with a map so customers can find you. Use your shop or venue address, not your home.'**
+  String get storefrontAddressSubtitle;
+
+  /// Storefront editor / public storefront: the business public address picked with the event-style search + map (owner rule 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Add your business address'**
+  String get storefrontAddressNotSet;
+
+  /// Storefront editor / public storefront: the business public address picked with the event-style search + map (owner rule 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Remove address'**
+  String get storefrontAddressRemove;
 }
 
 class _AppLocalizationsDelegate

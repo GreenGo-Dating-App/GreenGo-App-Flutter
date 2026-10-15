@@ -25096,4 +25096,17 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get tpBillingRequiredForSales =>
       'Buyers can pay for your tickets only after you add your invoice details (legal name, tax ID and billing address).';
+
+  @override
+  String get storefrontAddressTitle => 'Business address';
+
+  @override
+  String get storefrontAddressSubtitle =>
+      'Shown on your storefront with a map so customers can find you. Use your shop or venue address, not your home.';
+
+  @override
+  String get storefrontAddressNotSet => 'Add your business address';
+
+  @override
+  String get storefrontAddressRemove => 'Remove address';
 }

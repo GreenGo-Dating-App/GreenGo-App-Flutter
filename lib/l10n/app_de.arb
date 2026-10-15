@@ -8024,5 +8024,9 @@
   "@financeBillingInvoicesShortcut": {
     "description": "Banner on the Invoices screen when details are missing."
   },
-  "tpBillingRequiredForSales": "Käufer können deine Tickets erst bezahlen, wenn du deine Rechnungsdaten hinterlegt hast (Name bzw. Firmenname, Steuernummer und Rechnungsadresse)."
+  "tpBillingRequiredForSales": "Käufer können deine Tickets erst bezahlen, wenn du deine Rechnungsdaten hinterlegt hast (Name bzw. Firmenname, Steuernummer und Rechnungsadresse).",
+  "storefrontAddressTitle": "Geschäftsadresse",
+  "storefrontAddressSubtitle": "Wird mit Karte auf deiner Storefront angezeigt, damit Kunden dich finden. Verwende die Adresse deines Geschäfts oder Veranstaltungsorts, nicht deine Wohnadresse.",
+  "storefrontAddressNotSet": "Geschäftsadresse hinzufügen",
+  "storefrontAddressRemove": "Adresse entfernen"
 }

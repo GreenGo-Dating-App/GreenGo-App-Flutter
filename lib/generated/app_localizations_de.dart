@@ -25396,4 +25396,17 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get tpBillingRequiredForSales =>
       'Käufer können deine Tickets erst bezahlen, wenn du deine Rechnungsdaten hinterlegt hast (Name bzw. Firmenname, Steuernummer und Rechnungsadresse).';
+
+  @override
+  String get storefrontAddressTitle => 'Geschäftsadresse';
+
+  @override
+  String get storefrontAddressSubtitle =>
+      'Wird mit Karte auf deiner Storefront angezeigt, damit Kunden dich finden. Verwende die Adresse deines Geschäfts oder Veranstaltungsorts, nicht deine Wohnadresse.';
+
+  @override
+  String get storefrontAddressNotSet => 'Geschäftsadresse hinzufügen';
+
+  @override
+  String get storefrontAddressRemove => 'Adresse entfernen';
 }

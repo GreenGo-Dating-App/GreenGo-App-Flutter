@@ -8,6 +8,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/utils/safe_navigation.dart';
+import '../../../../core/widgets/interactive_location_map.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../communities/domain/entities/community.dart';
@@ -335,6 +336,20 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                         ..._buildLinkChips(),
                         ..._buildStorefrontLinkChips(),
                       ],
+                    ),
+                  ],
+                  // Address + map (like events), when the business set one.
+                  if (widget.business.businessAddress case final a?) ...[
+                    const SizedBox(height: 24),
+                    _sectionTitle(l10n.storefrontAddressTitle),
+                    const SizedBox(height: 8),
+                    InteractiveLocationMap(
+                      key: const ValueKey('storefront-address-map'),
+                      lat: a.latitude,
+                      lng: a.longitude,
+                      label: widget.business.businessName ?? widget.business.displayName,
+                      subtitle: a.summary,
+                      height: 190,
                     ),
                   ],
                   // Opening hours — render the structured per-weekday block when

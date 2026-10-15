@@ -1,3 +1,4 @@
+import '../../domain/entities/business_address.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../../../membership/domain/entities/membership.dart';
@@ -67,6 +68,7 @@ class ProfileModel extends Profile {
     super.businessName,
     super.businessLegalName,
     super.businessWhatsapp,
+    super.businessAddress,
     super.businessCategory,
     super.businessVerified,
     super.businessPromotedUntil,
@@ -157,6 +159,7 @@ class ProfileModel extends Profile {
       businessName: profile.businessName,
       businessLegalName: profile.businessLegalName,
       businessWhatsapp: profile.businessWhatsapp,
+      businessAddress: profile.businessAddress,
       businessCategory: profile.businessCategory,
       businessVerified: profile.businessVerified,
       galleryImages: profile.galleryImages,
@@ -300,6 +303,7 @@ class ProfileModel extends Profile {
       businessName: json['businessName'] as String?,
       businessLegalName: json['businessLegalName'] as String?,
       businessWhatsapp: json['businessWhatsapp'] as String?,
+      businessAddress: BusinessAddress.fromMap(json['businessAddress']),
       businessCategory: json['businessCategory'] as String?,
       businessVerified: json['businessVerified'] as bool? ?? false,
       businessPromotedUntil: json['businessPromotedUntil'] != null
@@ -478,6 +482,7 @@ class ProfileModel extends Profile {
       'businessName': businessName,
       'businessLegalName': businessLegalName,
       'businessWhatsapp': businessWhatsapp,
+      'businessAddress': businessAddress?.toMap(),
       'businessCategory': businessCategory,
       'businessVerified': businessVerified,
       'galleryImages': galleryImages,

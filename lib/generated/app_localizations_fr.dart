@@ -25482,4 +25482,18 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get tpBillingRequiredForSales =>
       'Les acheteurs ne pourront payer vos billets qu\'après l\'ajout de vos informations de facturation (nom ou raison sociale, numéro fiscal et adresse de facturation).';
+
+  @override
+  String get storefrontAddressTitle => 'Adresse de l\'entreprise';
+
+  @override
+  String get storefrontAddressSubtitle =>
+      'Affichée sur votre vitrine avec une carte pour que vos clients vous trouvent. Indiquez l\'adresse de votre boutique ou de votre lieu, pas celle de votre domicile.';
+
+  @override
+  String get storefrontAddressNotSet =>
+      'Ajoutez l\'adresse de votre entreprise';
+
+  @override
+  String get storefrontAddressRemove => 'Supprimer l\'adresse';
 }

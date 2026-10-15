@@ -25335,4 +25335,17 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get tpBillingRequiredForSales =>
       'Los compradores podrán pagar tus entradas solo cuando añadas tus datos de facturación (nombre o razón social, número fiscal y dirección de facturación).';
+
+  @override
+  String get storefrontAddressTitle => 'Dirección del negocio';
+
+  @override
+  String get storefrontAddressSubtitle =>
+      'Se muestra en tu escaparate con un mapa para que los clientes te encuentren. Usa la dirección de tu tienda o local, no la de tu casa.';
+
+  @override
+  String get storefrontAddressNotSet => 'Añade la dirección de tu negocio';
+
+  @override
+  String get storefrontAddressRemove => 'Quitar dirección';
 }

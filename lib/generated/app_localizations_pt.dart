@@ -25313,6 +25313,19 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get tpBillingRequiredForSales =>
       'Os compradores só podem pagar os seus bilhetes depois de adicionar os seus dados de faturação (nome ou firma, número fiscal e morada de faturação).';
+
+  @override
+  String get storefrontAddressTitle => 'Morada do negócio';
+
+  @override
+  String get storefrontAddressSubtitle =>
+      'Aparece na sua montra com um mapa para os clientes o encontrarem. Use a morada da sua loja ou espaço, não a da sua casa.';
+
+  @override
+  String get storefrontAddressNotSet => 'Adicione a morada do seu negócio';
+
+  @override
+  String get storefrontAddressRemove => 'Remover morada';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -50633,4 +50646,17 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get tpBillingRequiredForSales =>
       'Os compradores só podem pagar seus ingressos depois que você adicionar seus dados de faturamento (nome ou razão social, CPF/CNPJ e endereço de cobrança).';
+
+  @override
+  String get storefrontAddressTitle => 'Endereço do negócio';
+
+  @override
+  String get storefrontAddressSubtitle =>
+      'Aparece na sua vitrine com um mapa para os clientes encontrarem você. Use o endereço da sua loja ou espaço, não o da sua casa.';
+
+  @override
+  String get storefrontAddressNotSet => 'Adicione o endereço do seu negócio';
+
+  @override
+  String get storefrontAddressRemove => 'Remover endereço';
 }

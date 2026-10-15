@@ -14246,5 +14246,21 @@
   "tpBillingRequiredForSales": "Buyers can pay for your tickets only after you add your invoice details (legal name, tax ID and billing address).",
   "@tpBillingRequiredForSales": {
     "description": "Paid listing editor: banner while the seller has not completed the invoice details; checkout refuses paid orders until then (owner rule 2026-10-15)."
+  },
+  "storefrontAddressTitle": "Business address",
+  "@storefrontAddressTitle": {
+    "description": "Storefront editor / public storefront: the business public address picked with the event-style search + map (owner rule 2026-10-14)."
+  },
+  "storefrontAddressSubtitle": "Shown on your storefront with a map so customers can find you. Use your shop or venue address, not your home.",
+  "@storefrontAddressSubtitle": {
+    "description": "Storefront editor / public storefront: the business public address picked with the event-style search + map (owner rule 2026-10-14)."
+  },
+  "storefrontAddressNotSet": "Add your business address",
+  "@storefrontAddressNotSet": {
+    "description": "Storefront editor / public storefront: the business public address picked with the event-style search + map (owner rule 2026-10-14)."
+  },
+  "storefrontAddressRemove": "Remove address",
+  "@storefrontAddressRemove": {
+    "description": "Storefront editor / public storefront: the business public address picked with the event-style search + map (owner rule 2026-10-14)."
   }
 }

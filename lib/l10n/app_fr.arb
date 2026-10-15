@@ -7450,5 +7450,9 @@
   "@financeBillingInvoicesShortcut": {
     "description": "Banner on the Invoices screen when details are missing."
   },
-  "tpBillingRequiredForSales": "Les acheteurs ne pourront payer vos billets qu'après l'ajout de vos informations de facturation (nom ou raison sociale, numéro fiscal et adresse de facturation)."
+  "tpBillingRequiredForSales": "Les acheteurs ne pourront payer vos billets qu'après l'ajout de vos informations de facturation (nom ou raison sociale, numéro fiscal et adresse de facturation).",
+  "storefrontAddressTitle": "Adresse de l'entreprise",
+  "storefrontAddressSubtitle": "Affichée sur votre vitrine avec une carte pour que vos clients vous trouvent. Indiquez l'adresse de votre boutique ou de votre lieu, pas celle de votre domicile.",
+  "storefrontAddressNotSet": "Ajoutez l'adresse de votre entreprise",
+  "storefrontAddressRemove": "Supprimer l'adresse"
 }
