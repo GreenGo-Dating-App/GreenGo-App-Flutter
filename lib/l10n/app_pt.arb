@@ -8023,5 +8023,6 @@
   "financeBillingInvoicesShortcut": "Adiciona os teus dados de faturação para que as tuas faturas de taxas tenham os dados corretos.",
   "@financeBillingInvoicesShortcut": {
     "description": "Banner on the Invoices screen when details are missing."
-  }
+  },
+  "tpBillingRequiredForSales": "Os compradores só podem pagar os seus bilhetes depois de adicionar os seus dados de faturação (nome ou firma, número fiscal e morada de faturação)."
 }

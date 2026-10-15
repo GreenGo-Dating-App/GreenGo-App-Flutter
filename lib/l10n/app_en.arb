@@ -14242,5 +14242,9 @@
   "financeBillingInvoicesShortcut": "Add your invoice details so your fee invoices carry your correct data.",
   "@financeBillingInvoicesShortcut": {
     "description": "Banner on the Invoices screen when details are missing."
+  },
+  "tpBillingRequiredForSales": "Buyers can pay for your tickets only after you add your invoice details (legal name, tax ID and billing address).",
+  "@tpBillingRequiredForSales": {
+    "description": "Paid listing editor: banner while the seller has not completed the invoice details; checkout refuses paid orders until then (owner rule 2026-10-15)."
   }
 }

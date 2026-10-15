@@ -127,7 +127,13 @@ async function seedProfiles() {
   const base = { hasBaseMembership: true, baseMembershipEndDate: TS.fromMillis(Date.now() + 365 * 24 * HOUR) };
   await db.doc(`profiles/${BUYER}`).set({ displayName: 'Buyer', photoUrls: ['https://x/b.jpg'], ...base });
   await db.doc(`profiles/${OTHER}`).set({ displayName: 'Other', ...base });
+  // Sellers sell paid tickets only with complete invoice details (2026-10-15).
+  await db.doc(`finance_billing_profiles/${ORG}`).set(BILLING_OK);
 }
+const BILLING_OK = {
+  type: 'company', country: 'BR', legalName: 'Org Eventos Ltda', taxId: '11222333000181', taxIdKind: 'cnpj',
+  email: 'billing@org.test', address: { street: 'Rua A', number: '1', city: 'São Paulo', state: 'SP', postalCode: '01000-000', country: 'BR' },
+};
 async function connectStripe() {
   await db.doc(`payment_accounts/${ORG}`).set({ uid: ORG, stripe: { accountId: 'acct_org', chargesEnabled: true, detailsSubmitted: true, status: 'ready', country: 'BR' } });
 }
@@ -354,6 +360,18 @@ describe('instant mode: Stripe Connect direct charge', () => {
     expect(forged.status).toBe(400);
     expect((await db.doc(`ticket_orders/${r.orderId}`).get()).data()!.status).toBe('pending');
     expect((await db.doc(`tickets/${r.orderId}_1`).get()).exists).toBe(false);
+  });
+
+  test('no checkout while the seller has no complete invoice details', async () => {
+    await connectStripe();
+    await paidEvent('e1');
+    await db.doc(`finance_billing_profiles/${ORG}`).delete();
+    expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER))).reason).toBe('seller_billing_missing');
+    await db.doc(`finance_billing_profiles/${ORG}`).set({ ...BILLING_OK, taxId: null });
+    expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER))).reason).toBe('seller_billing_missing');
+    expect(stripeCalls).toHaveLength(0);
+    await db.doc(`finance_billing_profiles/${ORG}`).set(BILLING_OK);
+    expect((await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER)).mode).toBe('instant');
   });
 
   test('QR only after paid; paid is idempotent; amount mismatch is refused', async () => {

@@ -77,7 +77,7 @@ void main() {
   });
 
   group('TicketPaymentSelector', () {
-    Widget selector(TicketPaymentChoice value) => _app(TicketPaymentSelector(
+    Widget selector(TicketPaymentChoice value, {bool billing = true}) => _app(TicketPaymentSelector(
           uid: 'u1',
           value: value,
           onChanged: (_) {},
@@ -86,6 +86,7 @@ void main() {
           accounts: _ready,
           config: _config,
           feeRule: TicketFeeRule.gold,
+          billingComplete: billing,
         ));
 
     String text(WidgetTester t, String key) => (t.widget(find.byKey(ValueKey(key))) as Text).data!;
@@ -114,6 +115,15 @@ void main() {
       expect(find.byKey(const ValueKey('payout-pick-provider')), findsNothing);
     });
 
+    testWidgets('missing invoice details: banner says buyers cannot pay yet', (t) async {
+      await t.pumpWidget(selector(const TicketPaymentChoice(), billing: false));
+      await t.pumpAndSettle();
+      expect(find.byKey(const ValueKey('ticket-billing-required')), findsOneWidget);
+      await t.pumpWidget(selector(const TicketPaymentChoice()));
+      await t.pumpAndSettle();
+      expect(find.byKey(const ValueKey('ticket-billing-required')), findsNothing);
+    });
+
     testWidgets('a legacy link listing shows the discontinued banner', (t) async {
       await t.pumpWidget(selector(const TicketPaymentChoice(provider: TicketProvider.link, linkMethod: 'pix')));
       await t.pumpAndSettle();
@@ -130,6 +140,7 @@ void main() {
         accounts: _ready,
         config: _config,
         feeRule: TicketFeeRule.silver,
+        billingComplete: true,
       )));
       await t.pumpAndSettle();
       expect(find.textContaining('Mercado Pago only charges in BRL'), findsOneWidget);
@@ -212,6 +223,7 @@ void main() {
           accounts: PaymentAccounts(),
           config: _config,
           feeRule: TicketFeeRule.platinum,
+          billingComplete: true,
         ),
         locale: loc,
       ));

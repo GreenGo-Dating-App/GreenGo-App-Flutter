@@ -43013,6 +43013,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Add your invoice details so your fee invoices carry your correct data.'**
   String get financeBillingInvoicesShortcut;
+
+  /// Paid listing editor: banner while the seller has not completed the invoice details; checkout refuses paid orders until then (owner rule 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Buyers can pay for your tickets only after you add your invoice details (legal name, tax ID and billing address).'**
+  String get tpBillingRequiredForSales;
 }
 
 class _AppLocalizationsDelegate

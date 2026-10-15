@@ -25309,6 +25309,10 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get financeBillingInvoicesShortcut =>
       'Adiciona os teus dados de faturação para que as tuas faturas de taxas tenham os dados corretos.';
+
+  @override
+  String get tpBillingRequiredForSales =>
+      'Os compradores só podem pagar os seus bilhetes depois de adicionar os seus dados de faturação (nome ou firma, número fiscal e morada de faturação).';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -50625,4 +50629,8 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get financeBillingInvoicesShortcut =>
       'Adicione seus dados de faturamento para que suas faturas de taxas tenham os dados corretos.';
+
+  @override
+  String get tpBillingRequiredForSales =>
+      'Os compradores só podem pagar seus ingressos depois que você adicionar seus dados de faturamento (nome ou razão social, CPF/CNPJ e endereço de cobrança).';
 }

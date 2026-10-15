@@ -7449,5 +7449,6 @@
   "financeBillingInvoicesShortcut": "Ajoute tes informations de facturation pour que tes factures de frais portent les bonnes données.",
   "@financeBillingInvoicesShortcut": {
     "description": "Banner on the Invoices screen when details are missing."
-  }
+  },
+  "tpBillingRequiredForSales": "Les acheteurs ne pourront payer vos billets qu'après l'ajout de vos informations de facturation (nom ou raison sociale, numéro fiscal et adresse de facturation)."
 }

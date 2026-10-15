@@ -25392,4 +25392,8 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get financeBillingInvoicesShortcut =>
       'Füge deine Rechnungsdaten hinzu, damit deine Gebührenrechnungen korrekte Angaben enthalten.';
+
+  @override
+  String get tpBillingRequiredForSales =>
+      'Käufer können deine Tickets erst bezahlen, wenn du deine Rechnungsdaten hinterlegt hast (Name bzw. Firmenname, Steuernummer und Rechnungsadresse).';
 }

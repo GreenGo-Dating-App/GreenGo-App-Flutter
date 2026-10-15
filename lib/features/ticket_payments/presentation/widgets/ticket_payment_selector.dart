@@ -1,9 +1,12 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../finance_documents/presentation/bloc/billing_profile_cubit.dart';
+import '../../../finance_documents/presentation/widgets/billing_status.dart';
 import '../../data/ticket_payments_service.dart';
 import '../../domain/ticket_fees.dart';
 import '../../domain/ticket_payments.dart';
@@ -18,6 +21,10 @@ import 'ticket_fee_widgets.dart';
 ///
 /// Payment links are no longer accepted (owner rule 2026-10-14): a listing
 /// still set to a link shows a banner until a provider is picked.
+///
+/// Buyers can pay only once the seller's invoice details are complete (owner
+/// rule 2026-10-15, enforced by createTicketCheckout): until then a banner
+/// here links to the Invoice details form.
 class TicketPaymentSelector extends StatefulWidget {
   const TicketPaymentSelector({
     super.key,
@@ -32,6 +39,7 @@ class TicketPaymentSelector extends StatefulWidget {
     this.accounts,
     this.config,
     this.feeRule,
+    this.billingComplete,
   });
 
   final String uid;
@@ -52,6 +60,9 @@ class TicketPaymentSelector extends StatefulWidget {
   final PaymentAccounts? accounts;
   final TicketPaymentsConfig? config;
   final TicketFeeRule? feeRule;
+
+  /// Test seam: the invoice-details status (production loads it).
+  final bool? billingComplete;
 
   @override
   State<TicketPaymentSelector> createState() => _TicketPaymentSelectorState();
@@ -111,6 +122,13 @@ class _TicketPaymentSelectorState extends State<TicketPaymentSelector> {
     final l = AppLocalizations.of(context)!;
     final price = widget.price;
     if (price == null || price <= 0) return const SizedBox.shrink();
+    final known = widget.billingComplete;
+    final column = _selector(l, price, known == null ? null : !known);
+    // One status load per editor (BillingStatusScope); tests pass the status.
+    return known == null ? BillingStatusScope(child: column) : column;
+  }
+
+  Widget _selector(AppLocalizations l, double price, bool? billingMissing) {
     return Column(
       key: const ValueKey('ticket-payment-selector'),
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -121,6 +139,14 @@ class _TicketPaymentSelectorState extends State<TicketPaymentSelector> {
         Text(l.tpInstantSubtitle,
             style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
         const SizedBox(height: 10),
+        if (billingMissing == true)
+          _billingBanner(l)
+        else if (billingMissing == null)
+          BlocBuilder<BillingProfileCubit, BillingProfileState>(
+            builder: (context, state) => state.status == BillingLoadStatus.ready && !state.complete
+                ? _billingBanner(l, open: () => openInvoiceDetails(context))
+                : const SizedBox.shrink(),
+          ),
         if (needsReconnect(widget.value))
           _banner(l.tpLinkDiscontinuedBanner, AppColors.warningAmber,
               key: const ValueKey('ticket-link-discontinued')),
@@ -143,6 +169,34 @@ class _TicketPaymentSelectorState extends State<TicketPaymentSelector> {
       ],
     );
   }
+
+  Widget _billingBanner(AppLocalizations l, {VoidCallback? open}) => Container(
+        key: const ValueKey('ticket-billing-required'),
+        margin: const EdgeInsets.only(top: 8, bottom: 8),
+        padding: const EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          color: AppColors.warningAmber.withValues(alpha: 0.1),
+          borderRadius: BorderRadius.circular(10),
+          border: Border.all(color: AppColors.warningAmber.withValues(alpha: 0.4)),
+        ),
+        child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          const Icon(Icons.assignment_late_outlined, size: 16, color: AppColors.warningAmber),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Text(l.tpBillingRequiredForSales,
+                  style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
+              if (open != null)
+                TextButton(
+                  key: const ValueKey('ticket-billing-open'),
+                  style: TextButton.styleFrom(foregroundColor: AppColors.richGold, padding: EdgeInsets.zero),
+                  onPressed: open,
+                  child: Text(l.financeBillingBannerAction),
+                ),
+            ]),
+          ),
+        ]),
+      );
 
   Widget _banner(String text, Color color, {Key? key}) => Container(
         key: key,

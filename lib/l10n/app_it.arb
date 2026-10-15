@@ -8023,5 +8023,6 @@
   "financeBillingInvoicesShortcut": "Aggiungi i tuoi dati di fatturazione perché le fatture delle commissioni riportino i dati corretti.",
   "@financeBillingInvoicesShortcut": {
     "description": "Banner on the Invoices screen when details are missing."
-  }
+  },
+  "tpBillingRequiredForSales": "Gli acquirenti potranno pagare i tuoi biglietti solo dopo che avrai inserito i dati di fatturazione (nome o ragione sociale, codice fiscale o partita IVA e indirizzo di fatturazione)."
 }

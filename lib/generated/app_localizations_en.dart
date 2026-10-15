@@ -25092,4 +25092,8 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get financeBillingInvoicesShortcut =>
       'Add your invoice details so your fee invoices carry your correct data.';
+
+  @override
+  String get tpBillingRequiredForSales =>
+      'Buyers can pay for your tickets only after you add your invoice details (legal name, tax ID and billing address).';
 }

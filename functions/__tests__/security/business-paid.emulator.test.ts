@@ -304,6 +304,10 @@ describe('new sales of non-business listings are refused with a clear reason', (
     // visible but sells nothing new (owner rule 2026-10-14).
     for (const org of [PERSONAL, LAPSED, BASE_BIZ]) {
       await db.doc(`payment_accounts/${org}`).set({ uid: org, stripe: { accountId: 'acct_x', chargesEnabled: true, detailsSubmitted: true, status: 'ready', country: 'BR' } });
+      await db.doc(`finance_billing_profiles/${org}`).set({
+        type: 'company', country: 'BR', legalName: 'Org Ltda', taxId: '11222333000181', taxIdKind: 'cnpj', email: 'b@org.test',
+        address: { street: 'Rua A', number: '1', city: 'São Paulo', state: 'SP', postalCode: '01000-000', country: 'BR' },
+      });
       await db.doc(`events/e_${org}`).set({
         organizerId: org, title: 'Legacy paid', price: 25, currency: 'R$', maxAttendees: 0, attendeeCount: 0,
         status: 'published', ticketProvider: 'stripe',

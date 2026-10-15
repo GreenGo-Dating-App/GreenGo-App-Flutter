@@ -25331,4 +25331,8 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get financeBillingInvoicesShortcut =>
       'Añade tus datos de facturación para que tus facturas de comisión lleven tus datos correctos.';
+
+  @override
+  String get tpBillingRequiredForSales =>
+      'Los compradores podrán pagar tus entradas solo cuando añadas tus datos de facturación (nombre o razón social, número fiscal y dirección de facturación).';
 }

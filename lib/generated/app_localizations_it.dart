@@ -25367,4 +25367,8 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get financeBillingInvoicesShortcut =>
       'Aggiungi i tuoi dati di fatturazione perché le fatture delle commissioni riportino i dati corretti.';
+
+  @override
+  String get tpBillingRequiredForSales =>
+      'Gli acquirenti potranno pagare i tuoi biglietti solo dopo che avrai inserito i dati di fatturazione (nome o ragione sociale, codice fiscale o partita IVA e indirizzo di fatturazione).';
 }

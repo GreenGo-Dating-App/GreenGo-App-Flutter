@@ -70,6 +70,7 @@ import { lt, rawText } from '../shared/i18n';
 import { effectiveTier, isBusinessActive } from '../shared/effectiveTier';
 import { assertCanParticipate } from '../shared/participation';
 import { GuestBuyer, guestDisplayName, guestRecordFields } from '../shared/guestIdentity';
+import { BILLING, billingMissing } from '../finance/billing';
 
 const db = () => admin.firestore();
 const ts = (ms: number) => admin.firestore.Timestamp.fromMillis(ms);
@@ -421,6 +422,11 @@ export async function createTicketCheckout(
       if (!isProvider(listing.provider) || !cfg.providerConfigured(listing.provider) || !accountReady(acct, listing.provider)) {
         fail('failed-precondition', 'organizer_payments_not_ready', { provider: listing.provider });
       }
+      // Owner rule 2026-10-15: paid tickets / bookings sell only once the
+      // seller's invoice details (finance_billing_profiles) are complete, so
+      // every GreenGo fee can be invoiced (and an NFS-e issued) to them.
+      const billing = (await tx.get(db().collection(BILLING).doc(listing.organizerId))).data();
+      if (billingMissing(billing).length) fail('failed-precondition', 'seller_billing_missing');
       stripeCountry = acct?.stripe?.country ?? null;
       const minUnit = lines ? Math.min(...lines.filter((x) => x.unitAmount > 0).map((x) => x.unitAmount)) : listing.unitAmount;
       const chk = checkCharge(listing.provider as any, listing.currency, minUnit, acct?.mercadoPago?.currency ?? null);

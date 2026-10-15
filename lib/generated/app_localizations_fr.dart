@@ -25478,4 +25478,8 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get financeBillingInvoicesShortcut =>
       'Ajoute tes informations de facturation pour que tes factures de frais portent les bonnes données.';
+
+  @override
+  String get tpBillingRequiredForSales =>
+      'Les acheteurs ne pourront payer vos billets qu\'après l\'ajout de vos informations de facturation (nom ou raison sociale, numéro fiscal et adresse de facturation).';
 }

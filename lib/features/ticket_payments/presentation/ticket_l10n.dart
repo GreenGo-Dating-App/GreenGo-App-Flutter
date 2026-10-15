@@ -71,6 +71,7 @@ class TicketL10n {
     return switch (reason) {
       'payments_not_configured' => l.tpBlockNotConfigured,
       'organizer_payments_not_ready' => l.tpErrNotOnSale,
+      'seller_billing_missing' => l.tpErrNotOnSale,
       'seller_not_business' => l.tpErrSellerNotBusiness,
       'link_payments_discontinued' => l.tpErrLinkDiscontinued,
       'fee_currency_unsupported' => l.tpErrFeeCurrency,
