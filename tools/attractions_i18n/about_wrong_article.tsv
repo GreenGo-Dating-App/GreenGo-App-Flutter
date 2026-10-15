@@ -1,6 +1,12 @@
 # id	name	why the "What is it?" text is not about this attraction (wrong Wikipedia article)
+50	Musée d'Aquitaine	text is the Bordeaux tramway
+91	Little Venice	text is Little Venice in London, not Colmar
+348	Wenshu Monastery	text is a metro station
+498	Baptistery of San Giovanni	text is Baptistery of Volterra
 662	Plaza Grande	Independence Square of Quito, not Merida
+793	Marktplatz Rothenburg	text is the Marktplatz of Weissenburg, not Rothenburg
 797	Burggarten	text describes a different place
+877	Fisherman's Village	text is Fisherman's Village, Marina del Rey
 1117	St. Peter's Abbey	describes different place/same-name thing elsewhere
 1668	Old Town Market Square	Warsaw square, not Torun
 1875	Kastel Fortress	text describes a different place
@@ -8,6 +14,7 @@
 1906	Cave of Hira	Cave of Hira -> Jabal al-Nour
 1966	Green Mountain	Abha -> Green Mountain (Ascension)
 1985	Half Moon Beach	-> Half Moon Beach (Livingston Is.)
+2016	Kossuth Square	text is Kossuth Square in Budapest, not Debrecen
 2068	Napoleon House	text describes a different place
 2257	Alexander Nevsky Cathedral	Nizhny Novgorod -> disambiguation to Baku
 2279	Church of the Transfiguration	text describes a different place
@@ -17,33 +24,70 @@
 2831	National Monument	Generic national monument
 2899	Balekambang Beach	Generic list of beaches
 3009	Round Tower	Generic fortified tower
+3126	Fitzgerald Park	text is John FitzGerald Park, Kilmallock
 3234	Spanish Mosque	text describes a different place
+3357	Serangoon Road	text is a TV series, not the road
+3371	Jurong Bird Park	text is Jurong Bird Park Panorail
+3443	University Library	generic academic libraries
 3467	Place d'Armes	text describes a different place
 3527	St. Peter's Church	text describes a different place
+3576	Radhuset	text is Radhuset metro station Stockholm
+3748	The Bell Tower	text is Krenek opera, not the Bell Tower
 3846	TV Tower	Generic radio masts article
+3874	Marco Zero	text is Marco Zero in Macapa, not Recife
+3888	Church of Nossa Senhora do Carmo	text is Antonio Dias mother church, not Carmo church
 3969	Manzana de las Luces	Buenos Aires block, not Córdoba
+4091	Boca Chica Beach	text is Boca Chica, Texas
 4107	National Museum of History	Generic national history museum article
 4130	Stone Forest	text describes a different place
 4211	Black Church	text describes a different place
 4406	Las Bovedas	text describes a different place
+4475	Plaza de Bolivar Salento	text is Plaza de Bolivar, Manizales
 4531	Uros Floating Islands	Describes Lake Titicaca, not the Uros islands
 4610	National Museum	Generic list of national museums
+4741	White Beach	text is White Beach, Tasmania
+4907	Elephant Mountain	text is Elephant Mountain, a rock album
+4964	Confucius Temple	generic Confucian temples
 6049	Waitangi Regional Park	Text about Awatoto suburb, not the park
+6107	Blue Lake	text is Blue Lake at St Bathans, not Wanaka
+6440	Valkeinen	text is a swimmer, Mauno Valkeinen
 6514	Mount Sodom	text describes a different place
 6520	Nahal Hemar Cave	text describes a different place
 6538	Beth Alpha synagogue	text describes a different place
+6757	Romanov Palace	text is Romanov Palace in Tashkent, not Borjomi
 6878	Trakošćan Lake	text describes a different place
+8043	Technical Naval Museum at La Spezia	text is the La Spezia naval base, not the museum
 8131	Sant'Antonio di Padova	Saint Anthony biography, not the church
+8243	Church of Santa Maria Maggiore	text is a cathedral in Tuscania, not Cerveteri
+8298	Santa Maria Addolorata	text is a church in Rome, not Pagani
+8332	Santa Maria della Consolazione	text is a church in Rome, not Mascalucia
+8342	Sant'Anna	text is a church in Giugliano, not Villaricca
 8358	war memorial	Generic war memorial article
+8444	Santa Maria Assunta	generic Santa Maria Assunta list
+8484	Santa Maria Assunta	generic Santa Maria Assunta list
+8491	chiesa di Ognissanti	text is Ognissanti in Florence
 8525	Natività della Vergine	Describes Palazzo Porto Colleoni, not the oratory
+8565	Church of San Giovanni Battista	text is about Striano
+8601	Santa Maria Assunta Church	text is Acqui Terme cathedral
+8663	Orsini Castle	text is about Massa d'Albe
 8731	Santa Maria del Rosario	text describes a different place
+8816	Purgatorio	text is Dante's Purgatorio
+8822	Church of Saint Peter	text is the Church of St Peter near Antakya
+8926	clock tower	generic clock tower article
 8985	war memorial	Generic war memorial article
+9011	chiesa di Sant'Antonio Abate	text is Sant Antonio Abate in Naples, not Pedara
+9041	Ponte del Diavolo	text is a board game
+9045	Church of St. Antonio Abate	text is a church in Gallarate, not Cardano al Campo
+9080	San Giovanni Evangelista	text is San Giovanni Evangelista in Ravenna
 9121	War memorial	Generic war memorial article
 9164	Monumento ai caduti	Como war memorial, not Dueville
 9172	Monumento ai caduti	Como war memorial, not Calolziocorte
 9269	Monumento ai caduti	Como war memorial, not San Pietro in Casale
+9274	San Giovanni Battista, Spilamberto	text is Sant Adriano III Papa, not San Giovanni Battista
+9287	Monument to Giuseppe Garibaldi	text is a Garibaldi monument elsewhere
 9313	Madonna delle Grazie	Generic Our Lady of Graces devotion
 9411	Monumento ai caduti	Como war memorial, not Monte Compatri
+9441	Madonna delle Grazie	text is San Giovanni Evangelista church
 200410	Isla del Barón	Isla del Baron -> Isla Mayor
 200846	Monastery of Xuvia	Text about Naron municipality, not monastery
 201527	Church of the Transfiguration	text describes a different place
@@ -54,7 +98,9 @@
 202349	Church of Saint Peter	Spanish place -> church near Antakya
 202431	Miravalles	text describes a different place
 300941	Anta do Zambujeiro	text is Anta de Aguiar, not Anta do Zambujeiro
+400862	Beatus Rhenanus Bridge	text is the Strasbourg tramway, not the Kehl bridge
 400865	Oleftalsperre	Text about Ludwigshafen city, not museum
+400874	Wilhelm-Hack-Museum	text is the city of Ludwigshafen, not the museum
 401308	Eagle-Pharmacy	text describes a different place
 401696	Diebsturm	Text about Winnenden town, not tower
 402163	Hallenkirche	Generic hall church article
@@ -65,20 +111,57 @@
 402767	Stadtwald	Generic municipal forest article
 501220	Emmanuel Baptist Church	Eastleigh town text, not the church
 501231	Herd Groyne Light	South Shields town text, not the light
+501250	St Paul's Church, Walsall	text is St Paul Hamstead, Birmingham
+501320	St Peter's Roman Catholic Church, Bloxwich	text is about the town, not the attraction
+501388	Blyth High Light	text is about the town, not the attraction
+501409	Fire Station	generic fire station definition
 501693	The Monument	London Monument, not Dronfield
+501984	Church of St Paul, Chigwell	text is Woodford Bridge, not St Pauls Church
+502230	Parish Church of St Mary the Virgin, Henley-on-Thames	text is the town of Henley-on-Thames, not the church
+502547	Durban House Heritage Centre	text is D. H. Lawrence Birthplace Museum (and cut off)
 502562	Williamwood Parish Church	Clarkston town text, not the church
+601029	Bob Hope Theatre	text is Bob Hope Theatre in Eltham, England
 601170	Library (CSUEB Hayward Campus)	Generic library article
+601275	Miami Avenue	text is Miami Avenue in Miami, not Palm Bay
 601381	Norman F. Feldheym Library	Text about San Bernardino city, not the library
+601726	Baxter Building	text is the fictional Baxter Building in Manhattan
+601762	Bohrer Park	text is in St. Louis County, Missouri, not Gaithersburg
 601813	Orange Memorial Park	Text about South San Francisco city, not the park
+602019	Prairie Park	text is Prairie Park, a Missouri community
+602020	Falcon Park	text is Falcon Park stadium in Auburn, NY
+602134	Civic Center Park	text is Denver Civic Center
+602142	The Canal Museum	text is Stoke Bruerne, England
+602230	Civic Center Park	text is Denver Civic Center
 602249	Garden Theatre	Manhattan Garden Theatre, not Winter Garden FL
+602280	Wilder Park	text is Wilder Park in Louisville
 602406	Upper Beach	text describes a different place
+700179	Saint Joseph Church (Belo Horizonte)	generic Saint Joseph churches disambiguation
+700459	Morro Voturuá	text is Morro de Itarare, not Morro Voturua
+700561	Cathedral of Our Lady of Sorrows	text is a Baghdad cathedral
 700755	Basilica of Our Lady of Good Health	text describes a different place
+700764	Museu do Tietê	text is the Sao Paulo east zone, not Salto
+700847	Igreja Nossa Senhora da Conceição	list of diocese parishes
+701001	Church of Saint Peter of the Clergymen	text is a church in Salvador, Bahia, not Mariana
+701451	Iglesia de la Inmaculada Concepción, Rivera	text is about Rivera, Uruguay
+701466	Praça da Bandeira	text is Praca da Bandeira in Rio, not Valenca
+701498	Igreja de Santa Cruz	text is Barra do Bugres, not Barra do Garcas
 701587	Teatro São João	text describes a different place
+701657	Igreja de Nossa Senhora da Apresentação	text is the Iraja church in Rio
+701679	Cathedral of Our Lady of Peace	text is the Honolulu cathedral
+701685	Serra da Saudade	text is Serra da Saudade municipality
+800135	Devil's Bridge	generic Devils Bridge article
+800751	Spiegelberg ruins	text is the Sommetres rock chain, not Spiegelberg ruins
+800949	Roman museum (Kaiseraugst)	text is a Roman museum in Canterbury, Kent
 801007	Toy museum (Riehen)	Generic toy museum article
 801144	Santa Maria Church	text describes a different place
+801216	Villa	generic villa article
 801224	Catholic Church of Christ the King	text describes a different place
+801239	Château (Plan-les-Ouates)	generic chateau article
+801293	Ossuary	generic ossuary article
+801302	Local museum (collection)	generic local museum article
 801360	Town Hall	Generic town hall article
 801512	City Hall (former hospital chapel)	Generic town hall article
+801601	Ovenhouse (around 1850)	text is a US diver
 801629	Cemetery chapel	Generic chapel article
 801802	Parish Hall	Racehorse named Parish Hall
 801858	Castle (Bürglen)	Generic castle article
@@ -86,23 +169,37 @@
 802044	Eichmühle	text describes a different place
 802269	Inn (1843)	Generic inn article
 802285	Rothaus	text describes a different place
+802310	St. Joseph Catholic Church	generic St. Joseph churches list
 802334	Chapel (Oberbuchsiten)	Generic chapel article
 802389	Hotel Krone	text describes a different place
+802396	District Court	generic meaning of district court
 802441	St. Wendelin chapel	text describes a different place
 802496	Chapel (Dachsen)	Generic chapel article
 802565	Village Inn	US restaurant chain Village Inn
+802591	Ecumenical Centre	text is the Ecumenical Centre in Geneva
+802618	Cure	generic meaning of cure
 802714	Fleckhaus	text describes a different place
+802720	Lion Inn	text is the Lion Inn, North Yorkshire
+802732	Country estate (around 1700)	generic estate definition
 802764	Castelliere	Generic Castellieri culture article
 802790	Chapel (1911)	Generic chapel article
 802984	Chapel (Wohlenschwil)	Generic chapel article
+802997	Château (Tolochenaz)	generic chateau definition
+803013	Zimbel	text is George S. Zimbel, a photographer
+803037	La Meditazione	text is a Hayez painting
+803079	Trinity Chapel	text is Trinity Chapel, Canterbury
 900288	Peč	Czech village Pec, not Austrian Pec
 900339	Irrsee	Generic list of Austrian lakes
 900668	Burgruine Plainburg	Municipality Grossgmain text, not the ruin
 900890	Höhlenburg Rottenstein	Generic list of Austrian castles
 901081	Sankt Wolfgang	text describes a different place
+901266	Saint Joseph Church	generic Saint Joseph churches list
 901356	Mariensäule	text describes a different place
+901421	Hängender Stein	text is the Heidenreichsteiner Moor nature park
+901428	Nikolauskirche	text is a church in Oberndorf bei Salzburg
 901643	Kapelle (Kirchberg an der Pielach)	text describes a different place
 901887	Lärchwand	text describes a different place
+901938	Hellerhof	text is Hellerhof, a quarter of Duesseldorf
 902261	Neues Schloss	text describes a different place
 902446	KTM Motohall	Text about KTM/Bajaj company, not the museum
 902477	Glashütte	text describes a different place
@@ -127,6 +224,7 @@
 1500655	Lenin Avenue	City of Yekaterinburg, not the avenue
 1500840	Church of the Transfiguration	describes different place/same-name thing elsewhere
 1500897	Church of Saint Catherine of Alexandria (Murino)	describes different place/same-name thing elsewhere
+1501054	Saint Michael the Archangel Church	text is St. Michael church in Pittsburgh
 1501134	Church of the Transfiguration (Balakhna)	describes different place/same-name thing elsewhere
 1501625	Church of the Transfiguration	describes different place/same-name thing elsewhere
 1501767	Bogoyavlensky Monastery (Venyov)	Moscow Epiphany Monastery, not Venyov
@@ -141,6 +239,7 @@
 1601031	Palice	Ancient Sicilian city Palike
 1601037	Church of the Assumption of the Virgin Mary	text describes a different place
 1601070	Church of the Assumption of the Virgin Mary	text describes a different place
+1601077	Náměstí Míru	text is Namesti Miru metro station, Prague
 1601203	Babka	text describes a different place
 1601303	Church of the Assumption of the Virgin Mary	text describes a different place
 1601366	Church of the Assumption of the Virgin Mary (Kynšperk nad Ohří)	text describes a different place
@@ -162,6 +261,7 @@
 1602557	Angerbach (Kožlany)	River Anger in Germany
 1602576	Church of Our Lady of Victories	text describes a different place
 1602580	Church of the Assumption of the Virgin Mary	text describes a different place
+1602613	náměstí Míru	text is Namesti Miru metro station, Prague
 1602727	Church of Saint Catherine of Alexandria	text describes a different place
 1602782	Church of Saint Michael the Archangel	text describes a different place
 1700050	The Blue Planet	BBC documentary, not Danish aquarium
@@ -222,6 +322,7 @@
 2800624	Iwatsuki Castle	Iwatsuki Castle -> Tateyama Castle
 2800636	Takasaki Castle	Takasaki Castle -> Tatebayashi Castle
 2800643	Fujiko·F·Fujio Museum	Fujiko F Fujio Museum -> manga duo
+2800854	St. Andrew's Cathedral	text is St. Andrew Cathedral in Tokyo
 2801301	Mount Kurohime	Mount Kurohime in Shinano
 2801339	Akame 48 Waterfalls	2003 film Akame 48 Waterfalls
 2801720	Mount Sen	Mountain in Chugoku, not Sumoto Mount Sen
@@ -261,64 +362,137 @@
 3100289	Church of Saint Joseph	generic churches named after Saint Joseph
 3100329	Cathedral of St. Joseph	generic St. Joseph's cathedrals
 3100393	Cathedral of the Immaculate Heart of Mary	text describes a different place
+3100404	Templo de San Agustín	text is Guadalajara, Jalisco
+3200155	El Junco	text is El Junco lagoon, Galapagos
 3200271	La Angostura Dam	text describes a different place
 3200458	Immigration Museum	text describes a different place
+3200502	Field of Glory	text is the Field of Glory video game series
 3200663	Laguna Brava	text describes a different place
 3300230	Migjeni Theatre	Text about Shkodër city, not theatre
+3300282	Venetian Tower	text is a Venetian Tower in Panama City
+3300364	Church of Mary (Bënjë, Përmet)	text is Church of Mary in Ephesus
+3300381	Velivar	text is Deshat, not Velivar
 3300392	Treporti	text describes a different place
+3400073	Pic de la Colilla	text is Pic dels Estanyons
+3500105	Eastern Cemetery	text is Eastern Cemetery, Portland Maine
 3500177	Mayak	text describes a different place
+3500247	Dana Mall	text is Dana Mall, Manama
 3500418	Sevastopol Park	text describes a different place
+3500470	Taurus-1 Observatory	generic list of observatory codes
 3500528	Church of Saint Michael the Archangel	text describes a different place
 3500545	Town hall (Shklov)	Generic town hall article
+3500628	Aviation Museum	generic aviation museum
 3600291	Sokolica Monastery	text describes a different place
 3600365	Church of Immaculate Conception (Zenica)	text describes a different place
+3600457	Branislav Nušić Theatre, Teslić	text is the town of Teslic, not the theatre
 3600483	Zanasovići Lake	Generic lakes of Bosnia
 3700169	WaterWorld Water Park	Text about Ayia Napa resort
 3700199	Lighthouse Beach	Fire Island beach, not Paphos
+3800202	Pärnu Castle	text is the Red Tower, not Parnu Castle
+3800427	Aruküla manor	text is Arukula in Raasiku, not Koeru
+3800647	Hirvepark	text is Hirvepark Tallinn, not Vana-Vigala
 3900226	Skanderbeg Monument	text describes a different place
 3900320	Bukova Glava	text describes a different place
+4000024	Karosta	text is about Nimmersatt, not Karosta
+4000952	Bridge To Nowhere	generic definition of bridge to nowhere
 4200620	Lourdes Grotto	text describes a different place
+4300158	Église Saint-Laurent (Strassen)	text is Saint-Laurent, Paris
+4300174	Église Saint-Laurent (Grevenmacher)	text is Saint-Laurent, Paris
+4300176	Église de la Trinité	text is Sainte-Trinite, Paris
+4300227	Église Saint-Roch (Niederfeulen)	text is Saint-Roch, Paris
+4300237	Église Sainte-Anne (Warken)	text is St Anne, Jerusalem
+4300244	Église Saint-Laurent (Lorentzweiler)	text is Saint-Laurent, Paris
 4300255	Église Saint-Thomas (Nospelt)	text describes a different place
 4300284	Église Saint-Thomas (Stadtbredimus)	text describes a different place
+4300315	Église Saint-Laurent (Syren)	text is Saint-Laurent, Paris
+4300319	Église Sainte-Anne (Wellenstein)	text is St Anne, Jerusalem
+4300342	Église Saint-Roch (Ell)	text is Saint-Roch, Paris
 4300359	Église Saint-Jean-Baptiste (Buschdorf)	text describes a different place
 4300377	Église Saint-Jean-Baptiste (Bech)	text describes a different place
 4300391	Église Saint-Jean-Baptiste (Moesdorf)	text describes a different place
 4300415	Église Saint-Jean-Baptiste (Hupperdange)	text describes a different place
 4300423	Église Saint-Jean-Baptiste (Schoos)	text describes a different place
+4300445	Église de la Sainte-Trinité (Binsfeld)	text is Sainte-Trinite, Paris
+4300486	Église de la Sainte-Trinité (Schandel)	text is Sainte-Trinite, Paris
 4300493	Église Saint-Thomas (Rippweiler)	text describes a different place
+4300508	Église Saint-Roch (Insenborn)	text is Saint-Roch, Paris
 4300518	Église Saint-Jean-Baptiste (Doennange)	text describes a different place
 4300526	Église Saint-Thomas (Fischbach)	text describes a different place
+4300528	Chapelle Sainte-Agathe	text is a church in France/Poland, not Luxembourg
 4300564	Église Saint-Thomas (Grummelscheid)	text describes a different place
 4300632	Neumühle	Polish hamlet Nowy Mlyn, not Luxembourg Neumuhle
+4500172	Frumoasa Monastery	text is Frumoasa Monastery in Iasi, Romania
+4700092	Prokletije National Park	generic Montenegro national parks
 4700149	Banja Monastery (Risan)	text describes a different place
 4700178	Crna Glava	text describes a different place
 4700187	Ice Cave (Ledena Pećina)	Generic ice cave article
+4700221	Kumanica Monastery	text is Kumanica Monastery, Sjenica
+4700223	Vitoja Spring	text is Lake Skadar, not Vitoja Spring
+4800209	Officers' Hall	text is Officers Hall in Bitola
 4800210	Beth Yaakov Synagogue	text describes a different place
+4800212	Markovi Kuli (Vodno)	text is Markovi Kuli in Prilep
+4800296	Devil's Wall	text is Smetana opera The Devil's Wall
+4800305	Markovi Kuli (Letevci)	text is Markovi Kuli in Prilep
+4800333	Engelana	text is Engelana, a moth genus
 4800346	Kabaš	text describes a different place
+4800976	Ethnological Museum	generic ethnographic museums list
+4800988	Groot	text is Groot, a Marvel character
+4801246	Gradište Monastery	text is Gradiste Monastery, Montenegro
+4801369	Kale (Stari Grad)	text is kale, the cabbage
 4801476	Bara Tumba	Village Porodin text, not the archaeological site
+5000182	Chardak	generic house-type definition
+5000297	Monument on the site of the death of Despot Stefan Lazarević	text is Crkvine near Mladenovac
+5000312	Lipovička šuma	text is Sremcica, Belgrade
 5000398	Marićevića jaruga	Village Orasac text, not the ravine
 5000790	Zvezdara teatar	Text about Belgrade, not the theatre
 5100241	Avion Shopping Park	Ruzinov borough text, not the shopping park
 5100616	St. Bartholomew church (Prievidza)	Church in Staszow, Poland
 5100776	Church of the Assumption of the Virgin Mary (Šamorín)	text describes a different place
+5100781	Kohút	text is the surname Kohut
 5100801	Durda	text describes a different place
+5100876	Jewish cemetery (Giraltovce)	generic Jewish cemetery
+5100961	Pallavicino	text is the surname Pallavicino
+5100990	Kozol	text is the surname Kozol
 5101034	Church of St. Donatus	text describes a different place
 5101036	Vrbina	text describes a different place
+5101194	Suchý vrch	text is Suchy vrch, Czech Republic
+5101215	Church of Saint Lawrence	text is Alexandria Bay, New York
+5200410	State Museum of Natural History	text is the Stuttgart natural history museum
 5200488	Bilevska fortress	Text about Berestyn city, not the fortress
 5200691	Church of the Transfiguration	text describes a different place
 5200813	Michael Church	text describes a different place
+5200892	Black Park	text is Black Park, Buckinghamshire
 5201093	Church of the Transfiguration	text describes a different place
 5201531	Waterfall	Generic waterfall article
 5201689	Teremok (Chervone)	text describes a different place
+5201758	Soroka	text is the surname Soroka
+5201775	Butova	text is the surname Butov
+5400153	Yazılıkaya	text is Yazilikaya near Eskisehir, not Bogazkale
+5400870	Taşhan (Bolu)	text is the Hekimhan caravanserai near Malatya
 5400908	Çubuk-2 Dam	Generic list of dams in Turkey
+5400909	Kemer Bridge (Bartın)	text is the Seydikemer bridge in Lycia
+5400915	Orhan Gazi Mosque	text is the Orhan Gazi Mosque in Bursa
 5400964	Taşköprü Mosque	text describes a different place
 5400976	Eğrekkaya Dam	Generic list of dams in Turkey
 5401040	Pigeon Valley	text describes a different place
 5401066	Kirazdere Dam	Generic list of dams in Turkey
 5401112	Beyler Dam	Generic list of dams in Turkey
 5401122	Babasultan Dam	Generic list of dams in Turkey
+5500274	Shoda	text is Shoda, a Japanese surname
 5500300	Quro	text describes a different place
 5500306	Keeni	text describes a different place
+5500414	Gethsemane Church	text is Gethsemane Church in Berlin
+5600307	Saint Karapet Monastery	text is a monastery in Mush, Turkey
+5600342	Saint Hripsime Church (Goris)	text is St Hripsime in Vagharshapat, not Goris
 5600368	Folk Art Museum	text describes a different place
+5600370	St. Stepanos Church	text is St Stepanos in Smyrna
+5600397	Saint Gayane Church	text is St Gayane in Vagharshapat, not Jermuk
+5600467	Yeranos	text is Yeranos in Gegharkunik, not Garni
 5600583	Castle	Generic castle article
+5600677	Kusanats Anapat	text is Kusanats Anapat in Kalbajar
+5700192	Eternal Flame (Azerbaijan)	text is the Eternal Flame in Baku, not Ganja
+5700341	Bahman Mirza Qajar Mausoleum	source puts Barda in the Azores (garbled)
+5700452	Tomb of Shaykh Haydar	text is Tomb of Shaykh Haydar in Meshginshahr, Iran
+5700470	Nizami park (Guba)	text is Nizami Park in Baku, not Guba
+5700477	Gavur Castle	text is Gavur Castle in Haymana, Turkey
 5700496	Salam Mosque	text describes a different place
