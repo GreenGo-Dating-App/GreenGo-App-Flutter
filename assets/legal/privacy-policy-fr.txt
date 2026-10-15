@@ -1,8 +1,8 @@
 POLITIQUE DE CONFIDENTIALITÉ DE GREENGO
 
-Version : 5.1.0
-Date d'entrée en vigueur : 11 octobre 2026
-Version précédente : 5.0.0 (9 octobre 2026)
+Version : 5.2.0
+Date d'entrée en vigueur : 15 octobre 2026
+Version précédente : 5.1.0 (11 octobre 2026)
 
 ================================================================================
 1. QUI NOUS SOMMES ET COMMENT NOUS CONTACTER
@@ -66,6 +66,10 @@ linguistiques. Il comprend :
 GreenGo est un service de découverte sociale et culturelle, et non un service
 de recherche de partenaires amoureux ou sexuels.
 
+Les personnes sans compte peuvent aussi réserver un événement, ou envoyer une
+demande de réservation pour une expérience, depuis un lien partagé, en tant
+que visiteurs (point 11.7). La présente politique s'applique aussi à elles.
+
 ================================================================================
 2. EN BREF
 ================================================================================
@@ -114,9 +118,8 @@ b) Données de profil
    - À propos de vous : biographie, centres d'intérêt, langues que vous parlez
      et que vous apprenez, et genre.
    - Informations facultatives que vous choisissez d'ajouter : taille,
-     formation, profession, traits de personnalité, pays ou culture d'origine,
-     liens vers vos comptes de réseaux sociaux et liens vers des services de
-     paiement externes (par exemple une clé Pix ou un lien PayPal.me).
+     formation, profession, traits de personnalité, pays ou culture d'origine
+     et liens vers vos comptes de réseaux sociaux.
    - Nous ne demandons pas votre orientation sexuelle (voir le point 3.4).
    - Vos choix de confidentialité, par exemple le mode incognito, le mode
      fantôme et votre apparition ou non sur la carte.
@@ -134,7 +137,8 @@ d) Données des comptes professionnels
    Nom commercial et dénomination sociale, catégorie, adresse affichée sur
    votre page, horaires d'ouverture, canaux de contact et, si vous demandez à
    être vérifié en tant qu'entreprise, les documents nécessaires à la
-   vérification (voir le point 8.4).
+   vérification (voir le point 8.4). Si vous vendez des billets ou des
+   expériences, également vos données de facturation (voir le h ci-dessous).
 
 e) Données de vérification
    Une pièce d'identité et/ou un selfie, uniquement si vous choisissez de vous
@@ -150,6 +154,16 @@ f) Données d'achat
 g) Signalements et recours
    Ce que vous nous indiquez lorsque vous signalez un contenu ou une personne,
    et lorsque vous contestez l'une de nos décisions.
+
+h) Données de facturation des comptes professionnels
+   Si vous vendez des billets ou des expériences : dénomination sociale ou
+   nom, numéro d'identification fiscale, adresse de facturation, adresse
+   e-mail de facturation et, de manière facultative, téléphone et personne
+   de contact. Voir le point 11.6.
+
+i) Données des réservations en tant que visiteur
+   Si vous réservez sans compte (point 11.7) : votre prénom, votre nom, votre
+   adresse e-mail et votre réservation ou commande de billets.
 
 3.2 Données générées lorsque vous utilisez GreenGo
 
@@ -191,8 +205,9 @@ b) Apple et Google : confirmation des achats que vous effectuez dans leurs
 
 c) Stripe : confirmation des paiements web, des remboursements et des
    contestations de paiement. Stripe et Mercado Pago : confirmation des
-   paiements de billets effectués sur le compte d'un organisateur (point
-   11.4).
+   paiements de billets effectués sur le compte d'un organisateur ou d'un
+   hôte, des frais de service de GreenGo qui en sont déduits, ainsi que des
+   remboursements et des contestations (points 11.4 et 11.5).
 
 d) Fournisseurs de connexion : si nous proposons la connexion avec Google ou
    Apple et que vous l'utilisez, votre nom et votre adresse e-mail provenant de
@@ -308,11 +323,11 @@ Finalité                             | Données utilisées          | Base juri
 10. Sécurité : modération,           | Contenus, signalements,    | Obligation légale lorsque la loi
     signalements, recours, blocage,  | données de compte et       | l'exige (par exemple le règlement
     prévention de la fraude et des   | d'appareil, données        | européen sur les services
-    abus, contrôle des               | d'achat                    | numériques) ; sinon intérêts
-    remboursements et des            |                            | légitimes à un service sûr et sans
+    abus (y compris les limites      | d'achat, clés hachées des  | numériques) ; sinon intérêts
+    applicables aux réservations     | limites de réservation des | légitimes à un service sûr et sans
+    des visiteurs), contrôle des     | visiteurs                  | fraude (RGPD 6(1)(c)/(f) ;
+    remboursements et des            |                            | LGPD 7 II/IX)
     rétrofacturations                |                            |
-                                     |                            | fraude (RGPD 6(1)(c)/(f) ;
-                                     |                            | LGPD 7 II/IX)
 11. Signaler aux autorités les       | Contenus, données de       | Obligation légale (RGPD 6(1)(c) ;
     contenus d'exploitation sexuelle | compte                     | LGPD 7 II) et intérêts vitaux
     d'enfants                        |                            |
@@ -338,6 +353,17 @@ Finalité                             | Données utilisées          | Base juri
 17. Actions en justice, demandes des | Selon les besoins          | Intérêts légitimes / exercice de
     autorités                        |                            | droits (RGPD 6(1)(c)/(f), 9(2)(f) ;
                                      |                            | LGPD 7 II/VI, 11 II(d))
+18. Calculer, percevoir, rembourser  | Données des commandes de   | Contrat avec le vendeur (RGPD
+    et facturer nos frais de service | billets, données de        | 6(1)(b) ; LGPD 7 V) et obligation
+    sur les billets payants ;        | facturation des comptes    | légale (fiscale) (RGPD 6(1)(c) ;
+    émettre les factures de frais et | professionnels             | LGPD 7 II)
+    les documents fiscaux (points    |                            |
+    11.5 et 11.6)                    |                            |
+19. Réservations de visiteurs sans   | Nom, e-mail, réservation   | Contrat : exécution de la réservation
+    compte : la réservation, les     | ou commande de billets du  | (RGPD 6(1)(b) ; LGPD 7 V)
+    e-mails de billets et de         | visiteur                   |
+    réservation, les avis            |                            |
+    d'annulation (point 11.7)        |                            |
 
 Lorsque nous nous fondons sur des intérêts légitimes, nous avons mis en balance
 notre intérêt et vos droits. Vous pouvez nous demander cette évaluation. Vous
@@ -671,25 +697,100 @@ rétrofacturations afin de prévenir la fraude.
 11.4 Billets pour les événements et expériences payants
 
 - Les événements payants et les expériences payantes sont vendus par leur
-  organisateur ou leur hôte, et non par GreenGo. GreenGo ne prélève aucune
-  commission sur les billets et ne détient jamais l'argent des billets.
-- Vous payez directement l'organisateur, soit via son propre compte Stripe ou
-  Mercado Pago, soit au moyen d'un moyen de paiement qu'il indique (par
-  exemple Pix ou un virement bancaire). Les données de carte sont saisies sur
-  la page propre de Stripe ou de Mercado Pago ; nous ne recevons jamais votre
-  numéro de carte complet.
-- Nous conservons une trace de chaque commande de billets : l'événement ou
-  l'expérience, le nombre de billets, le prix, le moyen de paiement, le statut
-  du paiement et, lorsque l'organisateur le demande, le justificatif de
-  paiement que vous téléversez.
+  organisateur ou leur hôte, et non par GreenGo. GreenGo ne détient jamais
+  l'argent des billets.
+- Vous payez uniquement via le paiement intégré à l'application, sur le
+  propre compte Stripe ou Mercado Pago de l'organisateur ou de l'hôte
+  connecté à GreenGo. Il n'y a ni liens de paiement, ni autres moyens de
+  paiement en dehors de ce paiement, ni paiement en espèces lors de la
+  rencontre. Les données de carte sont saisies sur la page propre de Stripe
+  ou de Mercado Pago ; nous ne recevons jamais votre numéro de carte complet.
+- Nous conservons une trace de chaque commande de billets ou réservation :
+  l'événement ou l'expérience, le nombre de billets, le prix et la devise, le
+  prestataire de paiement et sa référence de paiement, le statut du paiement
+  et tout remboursement.
 - Le nom et l'adresse e-mail de l'acheteur/de l'invité sont communiqués à l'organisateur de l'événement pour le contrôle d'accès.
-  L'organisateur voit également votre commande de billets et, si vous en avez
-  téléversé un, votre justificatif de paiement. L'organisateur utilise ces
-  données pour vous enregistrer à l'entrée et pour gérer l'événement ou
-  l'expérience, et il en est responsable en tant que responsable du
-  traitement indépendant.
+  L'organisateur voit également votre commande de billets. L'organisateur
+  utilise ces données pour vous enregistrer à l'entrée et pour gérer
+  l'événement ou l'expérience, et il en est responsable en tant que
+  responsable du traitement indépendant.
 - La base juridique est l'exécution de votre contrat de billetterie (RGPD
   6(1)(b) ; LGPD 7 V).
+
+11.5 Frais de service de GreenGo sur les billets payants
+
+- GreenGo facture à l'organisateur ou à l'hôte (le vendeur) des frais de
+  service sur chaque billet ou réservation payant (Conditions générales,
+  point 11.6). L'acheteur ne les paie pas. Stripe (sous forme de frais
+  d'application) ou Mercado Pago (sous forme de frais de marketplace) les
+  déduit du prix du billet lorsque l'acheteur paie. GreenGo ne reçoit que
+  ces frais et ne détient jamais l'argent des billets.
+- Pour calculer, percevoir, rembourser et facturer ces frais, nous traitons
+  les données de la commande : le montant et la devise de la commande, les
+  frais, l'identifiant de compte du vendeur, la référence du prestataire de
+  paiement et le statut du remboursement.
+- La base juridique est l'exécution de notre contrat avec le vendeur (RGPD
+  6(1)(b) ; LGPD 7 V) et nos obligations fiscales et comptables (RGPD
+  6(1)(c) ; LGPD 7 II).
+
+11.6 Données de facturation des comptes professionnels
+
+- Si vous vendez des billets ou des expériences, nous collectons les
+  informations nécessaires pour facturer nos frais de service : dénomination
+  sociale ou nom, numéro d'identification fiscale (par exemple CPF/CNPJ,
+  numéro de TVA, codice fiscale, NIF, EIN ; pour les particuliers aux
+  États-Unis, le SSN/ITIN est facultatif), adresse de facturation, adresse
+  e-mail de facturation et, de manière facultative, téléphone et personne
+  de contact. Au Brésil, cela peut inclure l'inscription municipale ou
+  d'État.
+- Vous devez fournir ces informations avant de pouvoir vendre des billets ou
+  des réservations payants.
+- Nous les utilisons uniquement pour émettre les factures de frais et les
+  documents fiscaux correspondants (comme la NFS-e brésilienne) et les
+  conservons aussi longtemps que le droit fiscal l'exige. Les NFS-e
+  brésiliennes sont émises via le système municipal, par l'intermédiaire de
+  notre prestataire de facturation.
+- Chaque mois, le 2, nous envoyons par e-mail à chaque entreprise ses
+  factures de frais et son relevé. Ils sont aussi disponibles dans
+  l'application, sous Profil > Professionnel.
+- Ces informations n'apparaissent pas sur votre profil public et ne sont
+  communiquées qu'à notre prestataire de facturation et aux autorités
+  fiscales lorsque la loi l'exige.
+- La base juridique est notre obligation légale (fiscale) (RGPD 6(1)(c) ;
+  LGPD 7 II) et l'exécution de notre contrat avec vous (RGPD 6(1)(b) ;
+  LGPD 7 V).
+
+11.7 Réserver en tant que visiteur, sans compte
+
+- Si l'organisateur l'autorise (« Les invités peuvent réserver »), les
+  personnes sans compte GreenGo peuvent réserver un événement depuis un lien
+  partagé. Les visiteurs peuvent aussi envoyer une demande de réservation
+  pour une expérience depuis un lien partagé.
+- Nous collectons le prénom, le nom et l'adresse e-mail du visiteur, ainsi
+  que la réservation ou la commande de billets. Pour un événement payant, le
+  visiteur paie via le paiement Stripe ou Mercado Pago de l'organisateur,
+  comme au point 11.4. GreenGo ne reçoit pas les données de carte.
+- Le nom et l'adresse e-mail du visiteur sont communiqués à l'organisateur
+  ou à l'hôte (liste des participants, contrôle d'accès). Les autres
+  participants ne voient que le nom.
+- Nous utilisons l'adresse e-mail pour envoyer les e-mails de billet et de
+  réservation, y compris la demande de paiement lorsqu'un hôte accepte une
+  demande d'expérience, ainsi que les avis d'annulation et de remboursement.
+- Les données de contact du visiteur (adresse e-mail) sont supprimées
+  automatiquement 400 jours après sa dernière réservation. La commande de
+  billets ou la réservation elle-même est conservée comme indiqué à la
+  section 14.
+- Pour prévenir les abus, nous limitons le nombre de réservations pouvant
+  être effectuées depuis une même connexion ou une même adresse e-mail. Pour
+  cela, nous ne stockons qu'une clé hachée de manière irréversible et un
+  compteur, qui sont supprimés automatiquement en quelques heures.
+- La base juridique est l'exécution de la réservation (RGPD 6(1)(b) ; LGPD
+  7 V) et, pour la prévention des abus, notre intérêt légitime à un service
+  sûr et sans fraude (RGPD 6(1)(f) ; LGPD 7 IX).
+- Les visiteurs ont les mêmes droits que les titulaires d'un compte
+  (section 16), y compris l'accès et la suppression. Écrivez à
+  privacy@greengochat.com depuis l'adresse e-mail utilisée pour la
+  réservation.
 
 ================================================================================
 12. AVEC QUI NOUS PARTAGEONS VOS DONNÉES
@@ -726,7 +827,11 @@ Brevo (Sendinblue SAS)           | Envoi d'e-mails                   | France   
                                  |                                   |          | clauses de l'ANPD
 Resend, Inc.                     | Envoi d'e-mails de service (par   | USA      | CCT de l'UE ; clauses de
                                  | exemple liens de suppression de   |          | l'ANPD
-                                 | compte et e-mails de billets)     |          |
+                                 | compte, e-mails de billets et     |          |
+                                 | factures de frais)                |          |
+Focus NFe                        | Émission des factures de services | Brésil   | Point 13.2 c)
+                                 | brésiliennes (NFS-e) pour nos     |          |
+                                 | frais de service (point 11.6)     |          |
 Anthropic PBC                    | Assistant d'assistance IA (Claude)| USA      | CCT de l'UE ; clauses de
                                  |                                   |          | l'ANPD
 
@@ -737,20 +842,22 @@ Anthropic PBC                    | Assistant d'assistance IA (Claude)| USA      
 - Apple et Google, lorsque vous achetez via leurs boutiques.
 - Stripe, pour sa propre prévention de la fraude et ses obligations légales.
 - Les organisateurs et hôtes des événements et expériences pour lesquels vous
-  achetez un billet ou effectuez une réservation : votre nom et votre adresse
-  e-mail, votre commande de billets et tout justificatif de paiement que vous
-  téléversez, afin qu'ils puissent vous admettre (point 11.4). Stripe et
-  Mercado Pago traitent les paiements de billets pour l'organisateur selon
-  leurs propres conditions.
+  achetez un billet ou effectuez une réservation, y compris en tant que
+  visiteur sans compte : votre nom, votre adresse e-mail et votre commande de
+  billets, afin qu'ils puissent vous admettre (points 11.4 et 11.7). Stripe
+  et Mercado Pago traitent les paiements de billets pour l'organisateur selon
+  leurs propres conditions et déduisent les frais de service de GreenGo
+  (point 11.5).
+- Les autorités fiscales : les factures de frais et les documents fiscaux
+  contenant les données de facturation des comptes professionnels, lorsque
+  la loi l'exige, par exemple via le système municipal brésilien de NFS-e
+  (point 11.6).
 - Les partenaires que vous choisissez d'ouvrir depuis GreenGo, par exemple
   Viator, Ticketmaster ou Tiqets pour les événements et attractions externes.
   - Lorsque vous touchez un lien vers leur site, ils collectent des données
     selon leurs propres politiques.
   - GreenGo peut percevoir une commission de leur part.
   - Nous ne leur envoyons pas vos données de compte.
-- Les services de paiement externes que vous ou un hôte indiquez sur un profil
-  ou une expérience (par exemple Pix, PayPal ou Revolut). Le paiement a lieu
-  entre vous et l'autre personne, en dehors de GreenGo.
 - Les services de cartes et d'images chargés directement par l'application :
   OpenStreetMap, CARTO, Cesium (globe 3D), Unsplash et Pexels (images pour les
   cartes de vocabulaire). Ils reçoivent l'adresse IP de votre appareil et la
@@ -838,10 +945,20 @@ Selfie de vérification                 | Supprimé après l'examen ; le résult
 Registres d'achats et de paiements     | 5 ans après l'achat, sous forme
                                        | pseudonymisée après la suppression du
                                        | compte (droit fiscal et comptable)
-Commandes de billets et justificatifs  | 5 ans après l'événement (droit de la
-de paiement                            | consommation et droit fiscal) ; les
-                                       | justificatifs ne sont visibles que par
-                                       | vous et l'organisateur
+Commandes de billets et réservations,  | 5 ans après l'événement (droit de la
+y compris les données des frais de     | consommation et droit fiscal)
+service                                |
+Factures de frais, relevés et          | Aussi longtemps que le droit fiscal
+documents fiscaux (NFS-e)              | l'exige (au moins 5 ans)
+Données de facturation des comptes     | Jusqu'à la fermeture du compte
+professionnels                         | professionnel, puis aussi longtemps que
+                                       | le droit fiscal l'exige pour les
+                                       | factures émises avec ces données
+Données de contact des visiteurs       | Supprimées automatiquement 400 jours
+(adresse e-mail)                       | après la dernière réservation du
+                                       | visiteur
+Compteurs de limite de réservation des | Supprimés automatiquement en quelques
+visiteurs (clés hachées)               | heures
 Signalements, dossiers de modération,  | 2 ans après la clôture du dossier
 recours                                |
 Signalements et preuves relatifs à la  | Au moins 1 an, ou plus lorsque la loi
@@ -909,6 +1026,10 @@ e) Les registres d'achats et de paiements sont conservés pendant la durée
    retirons d'abord votre nom, votre adresse e-mail et votre identifiant de
    compte, et remplaçons l'identifiant par un code qui ne permet pas de vous
    identifier sans informations supplémentaires.
+   Les factures de frais émises à un compte professionnel, et les données de
+   facturation qu'elles contiennent, sont conservées sans modification
+   pendant la durée exigée par le droit fiscal, car une facture doit indiquer
+   les coordonnées légales du vendeur.
 
 f) Nous demandons également à nos prestataires de supprimer vos données :
    - Stripe supprime votre fiche client ;
@@ -1186,7 +1307,9 @@ Informations personnelles sensibles    | Oui       | Prestataires de      | Non
 (géolocalisation précise, identifiants |           | services             |
 de connexion au compte, pièce          |           |                      |
 d'identité officielle lors de la       |           |                      |
-vérification)                          |           |                      |
+vérification, SSN/ITIN si un vendeur   |           |                      |
+américain le fournit pour les          |           |                      |
+factures de frais)                     |           |                      |
 
 22.2 Sources
 
@@ -1301,6 +1424,21 @@ point 1.3)
 ================================================================================
 HISTORIQUE DES VERSIONS
 ================================================================================
+
+5.2.0 - 15 octobre 2026
+- Les billets et réservations payants se paient uniquement via le paiement
+  intégré à l'application, sur le propre compte Stripe ou Mercado Pago de
+  l'organisateur ou de l'hôte ; suppression des liens de paiement, des
+  autres moyens de paiement, des justificatifs de paiement et des espèces
+  (sections 3.1, 11.4, 12.3 et 14).
+- Nouveau point 11.5 : les frais de service de GreenGo payés par le vendeur
+  et les données de commande que nous traitons à cet effet (également
+  sections 3.3 et 5).
+- Nouveau point 11.6 : les données de facturation des comptes
+  professionnels, les factures de frais et les documents fiscaux (également
+  sections 3.1, 5, 12, 14, 15 et 22).
+- Nouveau point 11.7 : réserver en tant que visiteur sans compte (également
+  sections 1.4, 3.1, 5, 12.3 et 14).
 
 5.1.0 - 11 octobre 2026
 - L'orientation sexuelle n'est plus collectée (sections 2, 3.1, 3.4, 4.2, 5,

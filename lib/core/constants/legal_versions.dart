@@ -10,10 +10,14 @@ library;
 const String kTermsVersion = '5.1.2';
 
 /// Privacy Policy version shown in-app and recorded at acceptance.
-const String kPrivacyPolicyVersion = '5.1.0';
+const String kPrivacyPolicyVersion = '5.2.0';
 
 /// Effective date of [kPrivacyPolicyVersion] (and of the Terms up to 5.1.0).
-final DateTime kLegalEffectiveDate = DateTime(2026, 10, 11);
+/// 5.2.0: in-app checkout only, seller-paid service fee 11.5, business
+/// billing data 11.6, guest booking 11.7 - [kPrivacyReacceptFrom]
+/// deliberately NOT raised here; whether 5.2.0 triggers re-acceptance is the
+/// owner's call.
+final DateTime kLegalEffectiveDate = DateTime(2026, 10, 15);
 
 /// Effective date of [kTermsVersion] (5.1.1: section 9.2 - fixed price
 /// points per currency; 5.1.2: the 9.2 example uses the current Base price.
