@@ -67,7 +67,7 @@ import 'app_localizations_pt.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -90,11 +90,11 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-    delegate,
-    GlobalMaterialLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-  ];
+        delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -104,7 +104,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('it'),
     Locale('pt'),
-    Locale('pt', 'BR')
+    Locale('pt', 'BR'),
   ];
 
   /// No description provided for @culturalPassportTitle.
@@ -11380,7 +11380,10 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{tierName} membership active until {formattedDate}{coinsText}'**
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText);
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  );
 
   /// No description provided for @membershipActivatedTitle.
   ///
@@ -28295,14 +28298,22 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Renews automatically on {date}.'**
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date);
+    String plan,
+    String price,
+    String interval,
+    String date,
+  );
 
   /// Web (Stripe) subscription cancelled at period end
   ///
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Cancelled; access ends on {date}.'**
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date);
+    String plan,
+    String price,
+    String interval,
+    String date,
+  );
 
   /// No description provided for @billingIntervalMonth.
   ///
@@ -28829,7 +28840,7 @@ abstract class AppLocalizations {
   /// Ticket payments
   ///
   /// In en, this message translates to:
-  /// **'Buyers pay in the app and the full ticket price goes straight to your own Stripe or Mercado Pago account. A GreenGo service fee is added on top for buyers.'**
+  /// **'Buyers pay in the app and the money goes straight to your own Stripe or Mercado Pago account. GreenGo\'s service fee is deducted from each ticket sold; buyers pay only your ticket price.'**
   String get tpGetPaidIntro;
 
   /// Ticket payments
@@ -38305,7 +38316,11 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reason: {reason}\nReported message: \"{message}\"\nReported user: {user}\nReported at: {date}'**
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date);
+    String reason,
+    String message,
+    String user,
+    String date,
+  );
 
   /// No description provided for @supportChatWithGreenGoSubject.
   ///
@@ -42324,13 +42339,7 @@ abstract class AppLocalizations {
   /// Ticket payments: GreenGo service fee / payment links discontinued
   ///
   /// In en, this message translates to:
-  /// **'+ GreenGo service fee (shown at checkout)'**
-  String get tpPlusServiceFee;
-
-  /// Ticket payments: GreenGo service fee / payment links discontinued
-  ///
-  /// In en, this message translates to:
-  /// **'You receive 100% of your ticket price. Buyers pay a GreenGo service fee per ticket on top, based on your plan. Free tickets have no fee.'**
+  /// **'GreenGo\'s service fee is deducted from each paid ticket you sell, based on your plan. Buyers pay only your ticket price. Free tickets have no fee.'**
   String get tpFeeHostNote;
 
   /// Ticket payments: GreenGo service fee / payment links discontinued
@@ -42356,12 +42365,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your first paid event: only US\$1 per ticket'**
   String get tpFeeRuleTrial;
-
-  /// Ticket payments: GreenGo service fee / payment links discontinued
-  ///
-  /// In en, this message translates to:
-  /// **'Buyers pay {price} + {fee} service fee = {total} per ticket'**
-  String tpFeeBuyerPreview(String price, String fee, String total);
 
   /// Ticket payments: GreenGo service fee / payment links discontinued
   ///
@@ -42432,7 +42435,7 @@ abstract class AppLocalizations {
   /// Membership card / comparison row: GreenGo service fee buyers pay per paid ticket, by the host plan (owner rule 2026-10-14).
   ///
   /// In en, this message translates to:
-  /// **'Ticket service fee (paid by buyers)'**
+  /// **'Ticket service fee (paid by the seller)'**
   String get shopTicketFeeRow;
 
   /// Ticket fee value on a membership card, e.g. US$3 + 10% (max US$10).
@@ -42458,6 +42461,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count} experiences running at once'**
   String featureExperiences(String count);
+
+  /// Host editor (paid event / experience): title of the per-ticket payout estimate.
+  ///
+  /// In en, this message translates to:
+  /// **'What you receive per ticket (estimate)'**
+  String get tpPayoutTitle;
+
+  /// Payout estimate row: the ticket price the buyer pays.
+  ///
+  /// In en, this message translates to:
+  /// **'Buyer pays'**
+  String get tpPayoutBuyerPays;
+
+  /// Payout estimate row: GreenGo fee when the host's first-paid-listing US$1 trial applies.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo service fee (first paid listing: US\$1)'**
+  String get tpPayoutGreenGoFeeTrial;
+
+  /// Payout estimate row: the payment provider's own fee (estimate).
+  ///
+  /// In en, this message translates to:
+  /// **'{provider} processing fee'**
+  String tpPayoutProviderFee(String provider);
+
+  /// Payout estimate: shown while no payment provider is chosen.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose Stripe or Mercado Pago to include their processing fee.'**
+  String get tpPayoutPickProvider;
+
+  /// Payout estimate: the host's net amount per ticket.
+  ///
+  /// In en, this message translates to:
+  /// **'You receive'**
+  String get tpPayoutYouReceive;
+
+  /// Payout estimate footnote.
+  ///
+  /// In en, this message translates to:
+  /// **'Estimate. The payment provider\'s exact fee depends on the card, country and payment method, and taxes may apply.'**
+  String get tpPayoutEstimateNote;
 }
 
 class _AppLocalizationsDelegate
@@ -42471,13 +42516,13 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-        'de',
-        'en',
-        'es',
-        'fr',
-        'it',
-        'pt'
-      ].contains(locale.languageCode);
+    'de',
+    'en',
+    'es',
+    'fr',
+    'it',
+    'pt',
+  ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -42513,8 +42558,9 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-      'an issue with the localizations generation tool. Please file an issue '
-      'on GitHub with a reproducible sample app and the gen-l10n configuration '
-      'that was used.');
+    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+    'an issue with the localizations generation tool. Please file an issue '
+    'on GitHub with a reproducible sample app and the gen-l10n configuration '
+    'that was used.',
+  );
 }

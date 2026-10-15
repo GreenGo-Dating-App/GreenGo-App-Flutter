@@ -8310,7 +8310,7 @@
   "@tpFree": {
     "description": "Ticket payments"
   },
-  "tpGetPaidIntro": "Buyers pay in the app and the full ticket price goes straight to your own Stripe or Mercado Pago account. A GreenGo service fee is added on top for buyers.",
+  "tpGetPaidIntro": "Buyers pay in the app and the money goes straight to your own Stripe or Mercado Pago account. GreenGo's service fee is deducted from each ticket sold; buyers pay only your ticket price.",
   "@tpGetPaidIntro": {
     "description": "Ticket payments"
   },
@@ -13722,11 +13722,7 @@
   "@tpServiceFeeTrial": {
     "description": "Ticket payments: GreenGo service fee / payment links discontinued"
   },
-  "tpPlusServiceFee": "+ GreenGo service fee (shown at checkout)",
-  "@tpPlusServiceFee": {
-    "description": "Ticket payments: GreenGo service fee / payment links discontinued"
-  },
-  "tpFeeHostNote": "You receive 100% of your ticket price. Buyers pay a GreenGo service fee per ticket on top, based on your plan. Free tickets have no fee.",
+  "tpFeeHostNote": "GreenGo's service fee is deducted from each paid ticket you sell, based on your plan. Buyers pay only your ticket price. Free tickets have no fee.",
   "@tpFeeHostNote": {
     "description": "Ticket payments: GreenGo service fee / payment links discontinued"
   },
@@ -13745,21 +13741,6 @@
   "tpFeeRuleTrial": "Your first paid event: only US$1 per ticket",
   "@tpFeeRuleTrial": {
     "description": "Ticket payments: GreenGo service fee / payment links discontinued"
-  },
-  "tpFeeBuyerPreview": "Buyers pay {price} + {fee} service fee = {total} per ticket",
-  "@tpFeeBuyerPreview": {
-    "description": "Ticket payments: GreenGo service fee / payment links discontinued",
-    "placeholders": {
-      "price": {
-        "type": "String"
-      },
-      "fee": {
-        "type": "String"
-      },
-      "total": {
-        "type": "String"
-      }
-    }
   },
   "tpErrLinkDiscontinued": "Payment links are no longer accepted. The organizer needs to connect Stripe or Mercado Pago to sell tickets.",
   "@tpErrLinkDiscontinued": {
@@ -13802,7 +13783,7 @@
   "@guestLabel": {
     "description": "Small label next to the name of someone who booked as a guest (no GreenGo account)."
   },
-  "shopTicketFeeRow": "Ticket service fee (paid by buyers)",
+  "shopTicketFeeRow": "Ticket service fee (paid by the seller)",
   "@shopTicketFeeRow": {
     "description": "Membership card / comparison row: GreenGo service fee buyers pay per paid ticket, by the host plan (owner rule 2026-10-14)."
   },
@@ -13845,5 +13826,39 @@
         "type": "String"
       }
     }
+  },
+  "tpPayoutTitle": "What you receive per ticket (estimate)",
+  "@tpPayoutTitle": {
+    "description": "Host editor (paid event / experience): title of the per-ticket payout estimate."
+  },
+  "tpPayoutBuyerPays": "Buyer pays",
+  "@tpPayoutBuyerPays": {
+    "description": "Payout estimate row: the ticket price the buyer pays."
+  },
+  "tpPayoutGreenGoFeeTrial": "GreenGo service fee (first paid listing: US$1)",
+  "@tpPayoutGreenGoFeeTrial": {
+    "description": "Payout estimate row: GreenGo fee when the host's first-paid-listing US$1 trial applies."
+  },
+  "tpPayoutProviderFee": "{provider} processing fee",
+  "@tpPayoutProviderFee": {
+    "description": "Payout estimate row: the payment provider's own fee (estimate).",
+    "placeholders": {
+      "provider": {
+        "type": "String",
+        "example": "Stripe"
+      }
+    }
+  },
+  "tpPayoutPickProvider": "Choose Stripe or Mercado Pago to include their processing fee.",
+  "@tpPayoutPickProvider": {
+    "description": "Payout estimate: shown while no payment provider is chosen."
+  },
+  "tpPayoutYouReceive": "You receive",
+  "@tpPayoutYouReceive": {
+    "description": "Payout estimate: the host's net amount per ticket."
+  },
+  "tpPayoutEstimateNote": "Estimate. The payment provider's exact fee depends on the card, country and payment method, and taxes may apply.",
+  "@tpPayoutEstimateNote": {
+    "description": "Payout estimate footnote."
   }
 }

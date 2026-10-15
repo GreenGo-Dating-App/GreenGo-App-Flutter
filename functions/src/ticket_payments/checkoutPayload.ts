@@ -5,11 +5,11 @@
  * products or prices in their dashboard, listing edits apply to the next
  * checkout, and nothing the client sends (title, price, image) is used.
  *
- * GreenGo service fee (./fees.ts): one extra line "GreenGo service fee" on
- * top of the ticket lines, collected by GreenGo through Stripe
+ * GreenGo service fee (./fees.ts): PAID BY THE SELLER. The buyer pays the
+ * ticket lines only; GreenGo keeps its fee out of that amount through Stripe
  * `payment_intent_data.application_fee_amount` / Mercado Pago
- * `marketplace_fee` (the same amount), so the organizer keeps the full
- * ticket price.
+ * `marketplace_fee` (the same amount), so the organizer receives the ticket
+ * price minus the fee.
  */
 import { toMajor } from './currency';
 
@@ -39,11 +39,9 @@ export interface CheckoutInput {
   paymentMethodTypes?: string[];
   /** Event ticket types: one line per type (else one line from title/unitAmount/quantity). */
   lines?: CheckoutLine[];
-  /** GreenGo service fee for the whole order, minor units (0 / absent = none). */
+  /** GreenGo service fee for the whole order, kept from the host's charge, minor units (0 / absent = none). */
   feeAmount?: number;
 }
-
-export const FEE_LINE_NAME = 'GreenGo service fee';
 
 function feeOf(i: CheckoutInput): number {
   return Number.isSafeInteger(i.feeAmount) && (i.feeAmount as number) > 0 ? (i.feeAmount as number) : 0;
@@ -135,9 +133,7 @@ export function stripeSessionParams(i: CheckoutInput, types: string[]): Record<s
           },
         },
       };
-    }).concat(fee > 0
-      ? [{ quantity: 1, price_data: { currency: i.currency, unit_amount: fee, product_data: { name: FEE_LINE_NAME } } }]
-      : []),
+    }),
     client_reference_id: i.orderId,
     metadata: meta,
     payment_intent_data: {
@@ -171,12 +167,7 @@ export function mpPreferenceBody(i: CheckoutInput): Record<string, any> {
         currency_id: i.currency.toUpperCase(),
         unit_price: toMajor(l.unitAmount, i.currency),
       };
-    }).concat(fee > 0
-      ? [{
-        id: 'greengo_service_fee', title: FEE_LINE_NAME, category_id: 'services', quantity: 1,
-        currency_id: i.currency.toUpperCase(), unit_price: toMajor(fee, i.currency),
-      } as any]
-      : []),
+    }),
     ...(fee > 0 ? { marketplace_fee: toMajor(fee, i.currency) } : {}),
     ...(i.buyerEmail ? { payer: { email: i.buyerEmail } } : {}),
     external_reference: i.orderId,

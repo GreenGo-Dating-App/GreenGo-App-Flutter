@@ -13,7 +13,7 @@ import {
   trialKey,
   usdCentsToMinor,
 } from '../../src/ticket_payments/fees';
-import { CheckoutInput, FEE_LINE_NAME, mpPreferenceBody, stripeSessionParams } from '../../src/ticket_payments/checkoutPayload';
+import { CheckoutInput, mpPreferenceBody, stripeSessionParams } from '../../src/ticket_payments/checkoutPayload';
 
 describe('fee rule by host tier', () => {
   test('tiers map to rules; TEST = platinum; no paid tier = silver', () => {
@@ -55,6 +55,11 @@ describe('fee per ticket (USD)', () => {
     expect(feePerTicket('trial', 100000, 'usd')).toBe(100);
   });
 
+  test('the fee never exceeds the ticket price (it is taken from the charge)', () => {
+    expect(feePerTicket('silver', 200, 'usd')).toBe(200); // 3 + 0.2 > 2 -> 2
+    expect(feePerTicket('trial', 50, 'usd')).toBe(50);
+  });
+
   test('free ticket: no fee (trial included)', () => {
     expect(feePerTicket('silver', 0, 'usd')).toBe(0);
     expect(feePerTicket('trial', 0, 'usd')).toBe(0);
@@ -93,9 +98,11 @@ describe('currency conversion of the US$ parts', () => {
 });
 
 describe('whole order', () => {
-  test('one price: fee per ticket x quantity, total = subtotal + fee', () => {
+  test('one price: fee per ticket x quantity, paid by the seller (buyer total = subtotal)', () => {
     const f = computeOrderFee('gold', 'usd', [{ typeId: null, unitAmount: 2500, quantity: 3 }])!;
-    expect(f).toMatchObject({ rule: 'gold', ticketSubtotal: 7500, feePerTicket: 450, feeTotal: 1350, total: 8850 });
+    expect(f).toMatchObject({
+      rule: 'gold', ticketSubtotal: 7500, feePerTicket: 450, feeTotal: 1350, total: 7500, hostNet: 7500 - 1350,
+    });
   });
 
   test('mixed ticket types: per-line fee, free types owe nothing', () => {
@@ -108,7 +115,8 @@ describe('whole order', () => {
     expect(f.feeTotal).toBe(1000 + 2 * 500);
     expect(f.ticketSubtotal).toBe(19000);
     expect(f.feePerTicket).toBeNull(); // differs per type
-    expect(f.total).toBe(21000);
+    expect(f.total).toBe(19000);
+    expect(f.hostNet).toBe(19000 - 2000);
   });
 
   test('trial: same fee for every paid type', () => {
@@ -150,21 +158,17 @@ describe('fee in the provider payloads', () => {
     feeAmount: 900,
   };
 
-  test('Stripe: fee line + application_fee_amount', () => {
+  test('Stripe: buyer pays the tickets only; the fee is kept via application_fee_amount', () => {
     const p = stripeSessionParams(input, ['card']);
-    expect(p.line_items).toHaveLength(2);
-    expect(p.line_items[1]).toEqual({
-      quantity: 1, price_data: { currency: 'usd', unit_amount: 900, product_data: { name: FEE_LINE_NAME } },
-    });
+    expect(p.line_items).toHaveLength(1);
     expect(p.payment_intent_data.application_fee_amount).toBe(900);
     const total = p.line_items.reduce((s: number, l: any) => s + l.quantity * l.price_data.unit_amount, 0);
-    expect(total).toBe(2500 * 2 + 900);
+    expect(total).toBe(2500 * 2);
   });
 
-  test('Mercado Pago: fee item + marketplace_fee (major units)', () => {
+  test('Mercado Pago: no fee item; marketplace_fee (major units) kept from the host', () => {
     const b = mpPreferenceBody({ ...input, currency: 'brl' });
-    expect(b.items).toHaveLength(2);
-    expect(b.items[1]).toMatchObject({ title: FEE_LINE_NAME, quantity: 1, unit_price: 9, currency_id: 'BRL' });
+    expect(b.items).toHaveLength(1);
     expect(b.marketplace_fee).toBe(9);
   });
 

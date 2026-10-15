@@ -850,17 +850,14 @@ class _DetailViewState extends State<_DetailView> {
           : Text(p.status == 'refunded' || p.status == 'disputed' ? l.tpOrderRefunded : l.tpPayInAppInfo,
               style: muted));
       if (!asHost && BookingRules.canPayOnline(b, now) && b.price.currency != null) {
-        // What the guest pays in the app: the booking price + the GreenGo
-        // service fee (per person: one ticket per guest; per group: one).
+        // What the guest pays in the app: the booking price (per person: one
+        // ticket per guest; per group: one). The host pays the service fee.
         final unit = b.price.unitAmount;
         final qty = unit > 0 ? (b.price.totalAmount ~/ unit).clamp(1, 1000) : 1;
         lines.add(Padding(
           padding: const EdgeInsets.only(top: 8),
           child: TicketFeeQuoteView(
             key: const ValueKey('booking-fee-quote'),
-            organizerId: b.hostId,
-            kind: 'experience',
-            listingId: b.experienceId,
             currency: b.price.currency!.toLowerCase(),
             lines: [(unitAmount: unit, quantity: qty)],
           ),

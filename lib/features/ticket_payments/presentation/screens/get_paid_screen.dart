@@ -14,7 +14,7 @@ import 'payments_to_confirm_screen.dart';
 /// Business > "Get paid": connect Mercado Pago / Stripe. Buyers pay inside
 /// the app and their tickets are confirmed automatically; the money goes
 /// straight to the organizer's own account (the full listed ticket price).
-/// Buyers pay a GreenGo service fee on top ([TicketFeeScheduleCard]).
+/// The seller pays a GreenGo service fee per ticket ([TicketFeeScheduleCard]).
 ///
 /// Payment links are no longer accepted (owner rule 2026-10-14): the former
 /// "Manual Payment and Approval" section and the personal payment methods

@@ -594,9 +594,6 @@ class _BookViewState extends State<_BookView> {
           const SizedBox(height: 10),
           TicketFeeQuoteView(
             key: const ValueKey('book-fee-quote'),
-            organizerId: e.hostId,
-            kind: 'experience',
-            listingId: e.id,
             currency: fee.currency,
             lines: fee.lines,
           ),
@@ -607,7 +604,7 @@ class _BookViewState extends State<_BookView> {
 
   /// What the guest will pay in the app (paid online listings): the ticket
   /// lines the server will price (per person x guests, or ONE group ticket),
-  /// for the GreenGo service fee preview. Null when nothing is paid online.
+  /// for the total preview (the GreenGo service fee is paid by the host). Null when nothing is paid online.
   ({String currency, List<({int unitAmount, int quantity})> lines})? _feeLines(
       BookingFlowState s, UserExperience e) {
     if (e.isFree || !e.acceptsOnline) return null;

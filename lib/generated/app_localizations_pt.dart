@@ -6351,7 +6351,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return 'Subscrição $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -16211,13 +16214,21 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price por $interval. Renova-se automaticamente a $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price por $interval. Cancelada; o acesso termina a $date.';
   }
 
@@ -16540,7 +16551,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get tpGetPaidIntro =>
-      'Os compradores pagam na app e o preço total do bilhete vai diretamente para a sua conta Stripe ou Mercado Pago. Aos compradores acresce uma taxa de serviço GreenGo.';
+      'Os compradores pagam na app e o dinheiro vai diretamente para a sua conta Stripe ou Mercado Pago. A taxa de serviço GreenGo é descontada de cada bilhete vendido; os compradores pagam apenas o preço do seu bilhete.';
 
   @override
   String get tpGetPaidSubtitle =>
@@ -19795,7 +19806,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-      String name, String rewards) {
+    String name,
+    String rewards,
+  ) {
     return 'Recompensas de $name recebidas! $rewards';
   }
 
@@ -20261,7 +20274,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String profileTravelerActiveSubtitle(
-      String location, int hours, int minutes) {
+    String location,
+    int hours,
+    int minutes,
+  ) {
     return '$location - faltam ${hours}h ${minutes}min';
   }
 
@@ -22212,7 +22228,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date) {
+    String reason,
+    String message,
+    String user,
+    String date,
+  ) {
     return 'Motivo: $reason\nMensagem denunciada: «$message»\nUtilizador denunciado: $user\nDenunciado em: $date';
   }
 
@@ -22551,50 +22571,41 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Primeira ligação',
-        'social_butterfly': 'Borboleta social',
-        'popular': 'Popular',
-        'video_enthusiast': 'Entusiasta de vídeo',
-        'daily_streak_7': 'Sequência de 7 dias',
-        'daily_streak_30': 'Sequência de 30 dias',
-        'other': 'Nova conquista',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Primeira ligação',
+      'social_butterfly': 'Borboleta social',
+      'popular': 'Popular',
+      'video_enthusiast': 'Entusiasta de vídeo',
+      'daily_streak_7': 'Sequência de 7 dias',
+      'daily_streak_30': 'Sequência de 30 dias',
+      'other': 'Nova conquista',
+    });
     return 'Conquista desbloqueada: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Faz a tua primeira ligação',
-        'social_butterfly': 'Envia 100 mensagens',
-        'popular': 'Faz 50 ligações',
-        'video_enthusiast': 'Conclui 10 videochamadas',
-        'daily_streak_7': 'Entra 7 dias seguidos',
-        'daily_streak_30': 'Entra 30 dias seguidos',
-        'other': 'Continua assim!',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Faz a tua primeira ligação',
+      'social_butterfly': 'Envia 100 mensagens',
+      'popular': 'Faz 50 ligações',
+      'video_enthusiast': 'Conclui 10 videochamadas',
+      'daily_streak_7': 'Entra 7 dias seguidos',
+      'daily_streak_30': 'Entra 30 dias seguidos',
+      'other': 'Continua assim!',
+    });
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(
-      challenge,
-      {
-        'send_5_messages': 'Iniciador de conversas',
-        'get_3_matches': 'Conector',
-        'complete_profile': 'Perfil perfeito',
-        'video_call_1': 'Cara a cara',
-        'other': 'Desafio diário',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(challenge, {
+      'send_5_messages': 'Iniciador de conversas',
+      'get_3_matches': 'Conector',
+      'complete_profile': 'Perfil perfeito',
+      'video_call_1': 'Cara a cara',
+      'other': 'Desafio diário',
+    });
     return 'Desafio concluído: $_temp0!';
   }
 
@@ -24894,12 +24905,8 @@ class AppLocalizationsPt extends AppLocalizations {
       'Taxa de boas-vindas: 1 US\$ por bilhete no primeiro evento pago deste organizador.';
 
   @override
-  String get tpPlusServiceFee =>
-      '+ taxa de serviço GreenGo (apresentada no pagamento)';
-
-  @override
   String get tpFeeHostNote =>
-      'Recebe 100% do preço dos seus bilhetes. Os compradores pagam, além disso, uma taxa de serviço GreenGo por bilhete, consoante o seu plano. Os bilhetes gratuitos não têm taxa.';
+      'A taxa de serviço GreenGo é descontada de cada bilhete pago que vende, consoante o seu plano. Os compradores pagam apenas o preço do seu bilhete. Os bilhetes gratuitos não têm taxa.';
 
   @override
   String get tpFeeRuleSilver =>
@@ -24915,11 +24922,6 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get tpFeeRuleTrial =>
       'O seu primeiro evento pago: apenas 1 US\$ por bilhete';
-
-  @override
-  String tpFeeBuyerPreview(String price, String fee, String total) {
-    return 'Os compradores pagam $price + $fee de taxa de serviço = $total por bilhete';
-  }
 
   @override
   String get tpErrLinkDiscontinued =>
@@ -24964,7 +24966,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get shopTicketFeeRow =>
-      'Taxa de serviço por bilhete (paga pelos compradores)';
+      'Taxa de serviço por bilhete (paga pelo vendedor)';
 
   @override
   String shopTicketFeeValue(String fixed, int percent, String cap) {
@@ -24984,6 +24986,32 @@ class AppLocalizationsPt extends AppLocalizations {
   String featureExperiences(String count) {
     return '$count experiências ativas ao mesmo tempo';
   }
+
+  @override
+  String get tpPayoutTitle => 'O que recebe por bilhete (estimativa)';
+
+  @override
+  String get tpPayoutBuyerPays => 'O comprador paga';
+
+  @override
+  String get tpPayoutGreenGoFeeTrial =>
+      'Taxa de serviço GreenGo (primeiro anúncio pago: 1 US\$)';
+
+  @override
+  String tpPayoutProviderFee(String provider) {
+    return 'Taxa de processamento $provider';
+  }
+
+  @override
+  String get tpPayoutPickProvider =>
+      'Escolha Stripe ou Mercado Pago para incluir a respetiva taxa de processamento.';
+
+  @override
+  String get tpPayoutYouReceive => 'Recebe';
+
+  @override
+  String get tpPayoutEstimateNote =>
+      'Estimativa. A taxa exata do prestador de pagamento depende do cartão, do país e do método de pagamento, e podem aplicar-se impostos.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -31340,7 +31368,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return 'Assinatura $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -41199,13 +41230,21 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price por $interval. Renovação automática em $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price por $interval. Cancelada; o acesso termina em $date.';
   }
 
@@ -41526,7 +41565,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get tpGetPaidIntro =>
-      'Os compradores pagam no app e o preço total do ingresso vai direto para a sua conta Stripe ou Mercado Pago. Para os compradores, é acrescentada uma taxa de serviço GreenGo.';
+      'Os compradores pagam no app e o dinheiro vai direto para a sua conta Stripe ou Mercado Pago. A taxa de serviço GreenGo é descontada de cada ingresso vendido; os compradores pagam só o preço do seu ingresso.';
 
   @override
   String get tpGetPaidSubtitle =>
@@ -44784,7 +44823,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-      String name, String rewards) {
+    String name,
+    String rewards,
+  ) {
     return 'Recompensas de $name resgatadas! $rewards';
   }
 
@@ -45250,7 +45291,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String profileTravelerActiveSubtitle(
-      String location, int hours, int minutes) {
+    String location,
+    int hours,
+    int minutes,
+  ) {
     return '$location - faltam ${hours}h ${minutes}min';
   }
 
@@ -47203,7 +47247,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date) {
+    String reason,
+    String message,
+    String user,
+    String date,
+  ) {
     return 'Motivo: $reason\nMensagem denunciada: \"$message\"\nUsuário denunciado: $user\nDenunciado em: $date';
   }
 
@@ -47543,50 +47591,41 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Primeira conexão',
-        'social_butterfly': 'Borboleta social',
-        'popular': 'Popular',
-        'video_enthusiast': 'Entusiasta de vídeo',
-        'daily_streak_7': 'Sequência de 7 dias',
-        'daily_streak_30': 'Sequência de 30 dias',
-        'other': 'Nova conquista',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Primeira conexão',
+      'social_butterfly': 'Borboleta social',
+      'popular': 'Popular',
+      'video_enthusiast': 'Entusiasta de vídeo',
+      'daily_streak_7': 'Sequência de 7 dias',
+      'daily_streak_30': 'Sequência de 30 dias',
+      'other': 'Nova conquista',
+    });
     return 'Conquista desbloqueada: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Faça sua primeira conexão',
-        'social_butterfly': 'Envie 100 mensagens',
-        'popular': 'Faça 50 conexões',
-        'video_enthusiast': 'Conclua 10 videochamadas',
-        'daily_streak_7': 'Entre 7 dias seguidos',
-        'daily_streak_30': 'Entre 30 dias seguidos',
-        'other': 'Continue assim!',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Faça sua primeira conexão',
+      'social_butterfly': 'Envie 100 mensagens',
+      'popular': 'Faça 50 conexões',
+      'video_enthusiast': 'Conclua 10 videochamadas',
+      'daily_streak_7': 'Entre 7 dias seguidos',
+      'daily_streak_30': 'Entre 30 dias seguidos',
+      'other': 'Continue assim!',
+    });
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(
-      challenge,
-      {
-        'send_5_messages': 'Iniciador de conversas',
-        'get_3_matches': 'Conector',
-        'complete_profile': 'Perfil perfeito',
-        'video_call_1': 'Cara a cara',
-        'other': 'Desafio diário',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(challenge, {
+      'send_5_messages': 'Iniciador de conversas',
+      'get_3_matches': 'Conector',
+      'complete_profile': 'Perfil perfeito',
+      'video_call_1': 'Cara a cara',
+      'other': 'Desafio diário',
+    });
     return 'Desafio concluído: $_temp0!';
   }
 
@@ -49886,12 +49925,8 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
       'Taxa de boas-vindas: US\$ 1 por ingresso no primeiro evento pago deste organizador.';
 
   @override
-  String get tpPlusServiceFee =>
-      '+ taxa de serviço GreenGo (exibida no pagamento)';
-
-  @override
   String get tpFeeHostNote =>
-      'Você recebe 100% do preço dos seus ingressos. Os compradores pagam, além disso, uma taxa de serviço GreenGo por ingresso, de acordo com o seu plano. Ingressos gratuitos não têm taxa.';
+      'A taxa de serviço GreenGo é descontada de cada ingresso pago que você vende, de acordo com o seu plano. Os compradores pagam só o preço do seu ingresso. Ingressos gratuitos não têm taxa.';
 
   @override
   String get tpFeeRuleSilver =>
@@ -49907,11 +49942,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get tpFeeRuleTrial =>
       'Seu primeiro evento pago: apenas US\$ 1 por ingresso';
-
-  @override
-  String tpFeeBuyerPreview(String price, String fee, String total) {
-    return 'Os compradores pagam $price + $fee de taxa de serviço = $total por ingresso';
-  }
 
   @override
   String get tpErrLinkDiscontinued =>
@@ -49956,7 +49986,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get shopTicketFeeRow =>
-      'Taxa de serviço por ingresso (paga pelos compradores)';
+      'Taxa de serviço por ingresso (paga pelo vendedor)';
 
   @override
   String shopTicketFeeValue(String fixed, int percent, String cap) {
@@ -49976,4 +50006,30 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String featureExperiences(String count) {
     return '$count experiências ativas ao mesmo tempo';
   }
+
+  @override
+  String get tpPayoutTitle => 'Quanto você recebe por ingresso (estimativa)';
+
+  @override
+  String get tpPayoutBuyerPays => 'O comprador paga';
+
+  @override
+  String get tpPayoutGreenGoFeeTrial =>
+      'Taxa de serviço GreenGo (primeiro anúncio pago: US\$ 1)';
+
+  @override
+  String tpPayoutProviderFee(String provider) {
+    return 'Taxa de processamento do $provider';
+  }
+
+  @override
+  String get tpPayoutPickProvider =>
+      'Escolha Stripe ou Mercado Pago para incluir a taxa de processamento deles.';
+
+  @override
+  String get tpPayoutYouReceive => 'Você recebe';
+
+  @override
+  String get tpPayoutEstimateNote =>
+      'Estimativa. A taxa exata do provedor de pagamento depende do cartão, do país e da forma de pagamento, e podem incidir impostos.';
 }

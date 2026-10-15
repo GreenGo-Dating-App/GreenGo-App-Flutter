@@ -427,7 +427,7 @@ export async function guestSubmit(ctx: SubmitContext): Promise<PageResponse> {
       const choice = parseEventChoice(body);
       if (!choice) return formError(ctx, 'guest.err.quantity', values);
       // THE hook: the same createTicketCheckout members use (pricing, holds,
-      // capacity, provider checkout, buyer-paid service fee of Track 1).
+      // capacity, provider checkout, seller-paid service fee of Track 1).
       const res = await createTicketCheckout(guestKey, {
         kind: 'event', id, platform: 'web', locale, ...choice,
       }, email, buyerFor(input.firstName, input.lastName, key, locale));

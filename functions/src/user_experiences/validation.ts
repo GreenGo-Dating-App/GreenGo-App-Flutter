@@ -40,7 +40,7 @@ export const CATEGORIES = [
 
 /**
  * How guests pay a PAID experience: ONLY 'online' (in the app, through the
- * host's connected Stripe / Mercado Pago account; GreenGo service fee on top,
+ * host's connected Stripe / Mercado Pago account; GreenGo service fee paid by the host,
  * ticket_payments/fees.ts). Owner rule 2026-10-14: payment links are no
  * longer accepted, so the legacy off-platform methods ('cash' at the meeting,
  * the host's 'link', and the online 'link' provider with paymentLinkMethod /

@@ -2,9 +2,9 @@
  * Ticket payments (paid events + paid experiences) — configuration.
  *
  * Money goes STRAIGHT to the organizer's own Stripe (Connect Standard, direct
- * charge) or Mercado Pago (OAuth marketplace) account. The organizer receives
- * the full listed ticket price; the BUYER pays a GreenGo service fee on top
- * (./fees.ts: by the host's tier, first paid listing $1), collected through
+ * charge) or Mercado Pago (OAuth marketplace) account. The buyer pays the
+ * listed ticket price; the SELLER pays the GreenGo service fee (./fees.ts: by
+ * the host's tier, first paid listing $1), kept out of the charge through
  * Stripe application_fee_amount / Mercado Pago marketplace_fee.
  *
  * Every value comes from the environment (functions/.env, gitignored, or a

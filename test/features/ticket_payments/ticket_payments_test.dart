@@ -88,19 +88,30 @@ void main() {
           feeRule: TicketFeeRule.gold,
         ));
 
-    testWidgets('only Mercado Pago and Stripe; no payment-link option; fee note + buyer preview', (t) async {
+    String text(WidgetTester t, String key) => (t.widget(find.byKey(ValueKey(key))) as Text).data!;
+
+    testWidgets('only Mercado Pago and Stripe; no payment-link option; seller-paid fee + payout estimate', (t) async {
       await t.pumpWidget(selector(const TicketPaymentChoice()));
       await t.pumpAndSettle();
       expect(find.byKey(const ValueKey('ticket-provider-mercadopago')), findsOneWidget);
       expect(find.byKey(const ValueKey('ticket-provider-stripe')), findsOneWidget);
       expect(find.byKey(const ValueKey('ticket-provider-link')), findsNothing);
       expect(find.byKey(const ValueKey('ticket-fee-host-note')), findsOneWidget);
-      // Gold: US$2 (R$ 11,00) + 10 % of R$ 25,00 = R$ 13,50 -> R$ 38,50.
-      final preview = (t.widget(find.descendant(
-              of: find.byKey(const ValueKey('ticket-fee-host-preview')), matching: find.byType(Text))) as Text)
-          .data!;
-      expect(preview, contains('13.50'));
-      expect(preview, contains('38.50'));
+      // Gold: US$2 (R$ 11,00) + 10 % of R$ 25,00 = R$ 13,50, taken from the
+      // R$ 25,00 the buyer pays -> R$ 11,50 before the provider's fee.
+      expect(text(t, 'payout-price'), contains('25.00'));
+      expect(text(t, 'payout-greengo-fee'), contains('13.50'));
+      expect(text(t, 'payout-net'), contains('11.50'));
+      expect(find.byKey(const ValueKey('payout-pick-provider')), findsOneWidget);
+    });
+
+    testWidgets('payout estimate includes the chosen provider fee', (t) async {
+      await t.pumpWidget(selector(const TicketPaymentChoice(provider: TicketProvider.mercadoPago)));
+      await t.pumpAndSettle();
+      // Mercado Pago ~4.98 % of R$ 25,00 = R$ 1,25 -> 25 - 13,50 - 1,25 = R$ 10,25.
+      expect(text(t, 'payout-provider-fee'), contains('1.25'));
+      expect(text(t, 'payout-net'), contains('10.25'));
+      expect(find.byKey(const ValueKey('payout-pick-provider')), findsNothing);
     });
 
     testWidgets('a legacy link listing shows the discontinued banner', (t) async {
@@ -160,17 +171,13 @@ void main() {
       expect((t.widget(find.byKey(const ValueKey('buy-total'))) as Text).data, contains('50'));
     });
 
-    testWidgets('the GreenGo service fee is shown before paying (trial: US\$1 per ticket)', (t) async {
-      await t.pumpWidget(_app(BuyTicketSheet(
-          event: event(), uid: 'u1', types: const [], alreadyHeld: 0, feeRule: TicketFeeRule.trial)));
+    testWidgets('the buyer pays the ticket price only (the seller pays the service fee)', (t) async {
+      await t.pumpWidget(_app(BuyTicketSheet(event: event(), uid: 'u1', types: const [], alreadyHeld: 0)));
       await t.pumpAndSettle();
       await t.tap(find.byKey(const ValueKey('buy-qty-single-plus')));
       await t.pumpAndSettle();
-      // 2 x R$ 25,00 + 2 x R$ 5,50 = R$ 61,00
-      expect((t.widget(find.byKey(const ValueKey('ticket-fee-subtotal'))) as Text).data, contains('50.00'));
-      expect((t.widget(find.byKey(const ValueKey('ticket-fee-fee'))) as Text).data, contains('11.00'));
-      expect((t.widget(find.byKey(const ValueKey('buy-total'))) as Text).data, contains('61.00'));
-      expect(find.byKey(const ValueKey('ticket-fee-trial')), findsOneWidget);
+      expect((t.widget(find.byKey(const ValueKey('buy-total'))) as Text).data, contains('50.00'));
+      expect(find.byKey(const ValueKey('ticket-fee-fee')), findsNothing);
     });
 
     testWidgets('ticket types: sold-out type cannot be added, total sums types', (t) async {

@@ -20,7 +20,7 @@
  *       - paid event  -> ticket_payments createTicketCheckout (THE same
  *                        checkout as members: price, capacity holds, per-buyer
  *                        limit, Stripe / Mercado Pago instant only, Track 1's
- *                        buyer-paid fee) -> hosted checkout; the existing
+ *                        seller-paid fee) -> hosted checkout; the existing
  *                        webhooks mark the order paid and the existing ticket
  *                        e-mail sends the QRs;
  *       - experience  -> createBooking request; the host accepts in the app;

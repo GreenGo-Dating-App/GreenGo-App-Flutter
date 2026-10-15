@@ -18,11 +18,13 @@
  * ticket_orders/{orderId}   server-only writes; buyer + organizer read.
  *   kind 'event' | 'experience', listingId, bookingId, buyerId, organizerId,
  *   provider 'stripe' | 'mercadopago' | 'link', mode 'instant' | 'link',
- *   quantity, unitAmount, ticketSubtotal (tickets only = what the organizer
- *   receives), feeTotal / feePerTicket (null when types differ, see feeLines) /
- *   feeRuleApplied 'trial' | 'silver' | 'gold' | 'platinum' (GreenGo service
- *   fee, ./fees.ts; 0 / null on legacy and link orders), totalAmount (what the
- *   buyer pays = ticketSubtotal + feeTotal; every amount in minor units FROM
+ *   quantity, unitAmount, ticketSubtotal (the ticket prices), feeTotal /
+ *   feePerTicket (null when types differ, see feeLines) / feeRuleApplied
+ *   'trial' | 'silver' | 'gold' | 'platinum' (GreenGo service fee, ./fees.ts,
+ *   PAID BY THE SELLER since 2026-10-14: kept out of the charge; 0 / null on
+ *   legacy and link orders), hostNet (ticketSubtotal - feeTotal), totalAmount
+ *   (what the buyer pays = ticketSubtotal; orders created before the change
+ *   have ticketSubtotal + feeTotal); every amount in minor units FROM
  *   THE SERVER-SIDE LISTING / BOOKING, never the client), currency, status,
  *   expiresAt (hold end),
  *   code (link), payment { method, value, instructions } (link snapshot),
@@ -462,7 +464,9 @@ export async function createTicketCheckout(
       const exp = msOf(o.expiresAt) ?? 0;
       const sameShape = o.quantity === listing.quantity && o.provider === listing.provider
         && JSON.stringify(o.items ?? null) === JSON.stringify(lines ?? null)
-        && (Number(o.feeTotal) || 0) === (fee?.feeTotal ?? 0);
+        && (Number(o.feeTotal) || 0) === (fee?.feeTotal ?? 0)
+        // Orders priced before the fee moved to the seller (buyer paid it on top) are never reused.
+        && (o.hostNet !== undefined || !(Number(o.feeTotal) > 0));
       if (sameShape && o.provider === 'link' && exp > t0) return { reused: true, orderId: d.id, order: o, listing };
       if (sameShape && o.checkoutUrl && exp - t0 > 5 * 60000) return { reused: true, orderId: d.id, order: o, listing };
       tx.update(d.ref, { status: 'cancelled', cancelReason: 'superseded', seatHeld: false, updatedAt: ts(t0) });
@@ -539,14 +543,15 @@ export async function createTicketCheckout(
       quantity: listing.quantity, partySize: listing.partySize, unitAmount: listing.unitAmount,
       // Stored at order time: later price edits never change it.
       priceRule: kind === 'experience' ? (bSnap?.data()?.priceRule ?? 'base') : 'base',
-      // The buyer pays ticketSubtotal + feeTotal = totalAmount (markOrderPaid
-      // checks the provider amount against totalAmount).
+      // The buyer pays ticketSubtotal = totalAmount (markOrderPaid checks the
+      // provider amount against totalAmount); the seller pays the fee.
       ticketSubtotal: totalAmount,
       feeTotal: fee?.feeTotal ?? 0,
       feePerTicket: fee ? fee.feePerTicket : 0,
       feeRuleApplied: fee?.rule ?? null,
       feeLines: fee && lines ? fee.lines.map((x) => ({ typeId: x.typeId, unitFee: x.unitFee, quantity: x.quantity })) : null,
-      totalAmount: totalAmount + (fee?.feeTotal ?? 0), currency: listing.currency, items: lines,
+      hostNet: totalAmount - (fee?.feeTotal ?? 0),
+      totalAmount, currency: listing.currency, items: lines,
       status: isLink ? 'pending_payment' : (isFreeOrder ? 'pending' : 'creating'), expiresAt: ts(expiresAtMs), seatHeld: true,
       code, payment: payment ?? null, receiptPath: null, sentAt: null, remindAt: null,
       checkoutUrl: null, providerRef: {}, ticketId: null, ticketIds: [], title: listing.title.slice(0, 200),
@@ -637,6 +642,7 @@ function feeView(o: Record<string, any>): Record<string, unknown> {
     feeTotal: Number(o.feeTotal) || 0,
     feePerTicket: o.feePerTicket ?? null,
     feeRuleApplied: o.feeRuleApplied ?? null,
+    feePaidBy: o.hostNet !== undefined ? 'seller' : 'buyer',
   };
 }
 

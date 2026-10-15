@@ -109,11 +109,13 @@ class _TicketOrderScreenState extends State<TicketOrderScreen> with WidgetsBindi
             Text('${formatTicketAmount(o.totalAmount, o.currency)} · ${l.tpTicketsCount(o.quantity)}',
                 key: const ValueKey('ticket-order-amount'),
                 style: const TextStyle(color: AppColors.richGold, fontSize: 16, fontWeight: FontWeight.w600)),
-            if (o.feeTotal > 0) ...[
+            // Orders priced before 2026-10-14 had the fee on top for the buyer.
+            if (o.feeTotal > 0 && o.ticketSubtotal != null && o.totalAmount > o.ticketSubtotal!) ...[
               const SizedBox(height: 10),
               TicketFeeBreakdownView(
-                subtotal: o.ticketSubtotal ?? (o.totalAmount - o.feeTotal),
+                subtotal: o.ticketSubtotal!,
                 fee: o.feeTotal,
+                feeOnTop: true,
                 currency: o.currency,
                 trial: o.feeRule == 'trial',
               ),

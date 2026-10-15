@@ -70,7 +70,14 @@ void main() {
       final f = computeTicketFee(TicketFeeRule.gold, 'usd', [(unitAmount: 2500, quantity: 3)])!;
       expect(f.subtotal, 7500);
       expect(f.fee, 1350);
-      expect(f.total, 8850);
+      // Seller pays: the buyer's total is the ticket price.
+      expect(f.total, 7500);
+      expect(f.hostNet, 7500 - 1350);
+    });
+
+    test('the fee never exceeds the ticket price', () {
+      expect(ticketFeePerTicket(TicketFeeRule.silver, 200, 'usd'), 200);
+      expect(ticketFeePerTicket(TicketFeeRule.trial, 50, 'usd'), 50);
     });
 
     test('mixed ticket types incl. a free one', () {
@@ -84,6 +91,7 @@ void main() {
     });
 
     test('unknown currency -> null', () {
+      expect(estimateHostPayout(TicketFeeRule.silver, 100, 'xyz', null), isNull);
       expect(computeTicketFee(TicketFeeRule.silver, 'xyz', [(unitAmount: 100, quantity: 1)]), isNull);
     });
   });
@@ -110,5 +118,27 @@ void main() {
     };
     expect(server, isNotEmpty);
     expect(kUsdRates, server);
+  });
+
+  group('host payout estimate', () {
+    test('price - GreenGo fee - provider fee', () {
+      // US$ 20 on Gold: fee US$ 4; Stripe US ~2.9 % + 30c = 58 + 30 = 88c.
+      final e = estimateHostPayout(TicketFeeRule.gold, 2000, 'usd', TicketProvider.stripe)!;
+      expect(e.greenGoFee, 400);
+      expect(e.providerFee, 88);
+      expect(e.net, 2000 - 400 - 88);
+    });
+
+    test('Mercado Pago BRL ~4.98 %; no provider yet -> no provider fee', () {
+      expect(estimateProviderFee(TicketProvider.mercadoPago, 10000, 'brl'), 498);
+      final e = estimateHostPayout(TicketFeeRule.platinum, 10000, 'brl', null)!;
+      expect(e.providerFee, isNull);
+      expect(e.net, 10000 - e.greenGoFee);
+    });
+
+    test('never negative', () {
+      final e = estimateHostPayout(TicketFeeRule.silver, 100, 'usd', TicketProvider.stripe)!;
+      expect(e.net, 0);
+    });
   });
 }

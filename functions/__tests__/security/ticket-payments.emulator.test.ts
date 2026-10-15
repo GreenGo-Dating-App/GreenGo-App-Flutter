@@ -5,7 +5,7 @@
  *
  * Covers both modes:
  *   instant (Stripe Connect Standard / Mercado Pago): price from the server,
- *     GreenGo service fee on top (application_fee_amount / marketplace_fee,
+ *     GreenGo service fee paid by the seller (application_fee_amount / marketplace_fee,
  *     first-listing trial), capacity + 30-min hold, webhook signature
  *     rejection, idempotent paid, MP re-fetch mismatch rejected, refund
  *     invalidates the QR;
@@ -252,17 +252,17 @@ describe('instant mode: Stripe Connect direct charge', () => {
     expect(r.mode).toBe('instant');
     expect(r.checkoutUrl).toMatch(/^https:\/\/checkout\.stripe\.test\//);
     const trialFee = usdCentsToMinor(100, 'brl')!; // US$ 1 in BRL
-    expect(r).toMatchObject({ amount: 5000 + 2 * trialFee, ticketSubtotal: 5000, feeTotal: 2 * trialFee, feeRuleApplied: 'trial' });
+    expect(r).toMatchObject({ amount: 5000, ticketSubtotal: 5000, feeTotal: 2 * trialFee, feeRuleApplied: 'trial', feePaidBy: 'seller' });
     const o = (await db.doc(`ticket_orders/${r.orderId}`).get()).data()!;
     expect(o).toMatchObject({
       unitAmount: 2500, ticketSubtotal: 5000, feeTotal: 2 * trialFee, feePerTicket: trialFee, feeRuleApplied: 'trial',
-      totalAmount: 5000 + 2 * trialFee, currency: 'brl', status: 'pending', quantity: 2, buyerId: BUYER, organizerId: ORG,
+      totalAmount: 5000, hostNet: 5000 - 2 * trialFee, currency: 'brl', status: 'pending', quantity: 2, buyerId: BUYER, organizerId: ORG,
     });
     const { params, opts } = stripeCalls[0];
     expect(opts.stripeAccount).toBe('acct_org');
     expect(params.line_items[0].price_data.unit_amount).toBe(2500);
     expect(params.line_items[0].quantity).toBe(2);
-    expect(params.line_items[1]).toMatchObject({ quantity: 1, price_data: { unit_amount: 2 * trialFee, product_data: { name: 'GreenGo service fee' } } });
+    expect(params.line_items).toHaveLength(1); // no fee line: the seller pays it
     // BRL on a Brazilian account: cards (+ Apple/Google Pay) and Pix.
     expect(params.payment_method_types).toEqual(['card', 'pix']);
     expect(params.application_fee_amount).toBeUndefined();
@@ -374,8 +374,8 @@ describe('instant mode: Stripe Connect direct charge', () => {
     await handleStripeConnectWebhook(Buffer.from(other.payload), other.header);
     expect((await db.doc(`ticket_orders/${r.orderId}`).get()).data()!.status).toBe('pending');
 
-    // Ticket price alone (the fee missing) is a mismatch too.
-    await stripePaid(r.orderId, 2500, 'cs_1');
+    // Ticket price + a fee on top is a mismatch too (the seller pays the fee).
+    await stripePaid(r.orderId, 2500 + usdCentsToMinor(100, 'brl')!, 'cs_1');
     expect((await db.doc(`ticket_orders/${r.orderId}`).get()).data()!.status).toBe('pending');
     const ok = await stripePaid(r.orderId, null, 'cs_1');
     expect(ok.status).toBe(200);
@@ -455,7 +455,7 @@ describe('instant mode: Mercado Pago', () => {
     expect(body.items[0]).toMatchObject({ unit_price: 25, quantity: 1, currency_id: 'BRL' });
     expect(body.payment_methods.excluded_payment_types).toEqual([{ id: 'ticket' }, { id: 'atm' }]);
     const fee = usdCentsToMinor(100, 'brl')! / 100; // trial, major units
-    expect(body.items[1]).toMatchObject({ title: 'GreenGo service fee', unit_price: fee, quantity: 1, currency_id: 'BRL' });
+    expect(body.items).toHaveLength(1); // no fee item: the seller pays it
     expect(body.marketplace_fee).toBe(fee);
     expect(body.purpose).toBeUndefined(); // guest checkout allowed
   });
@@ -816,11 +816,11 @@ describe('event ticket types', () => {
     const o = (await db.doc(`ticket_orders/${r.orderId}`).get()).data()!;
     // Trial fee per ticket (first paid listing of the host), one fee line.
     const fee = 3 * usdCentsToMinor(100, 'brl')!;
-    expect(o).toMatchObject({ ticketSubtotal: 12000, feeTotal: fee, totalAmount: 12000 + fee, quantity: 3 });
+    expect(o).toMatchObject({ ticketSubtotal: 12000, feeTotal: fee, totalAmount: 12000, hostNet: 12000 - fee, quantity: 3 });
     expect(o.feeLines).toEqual([{ typeId: 'ga', unitFee: fee / 3, quantity: 2 }, { typeId: 'vip', unitFee: fee / 3, quantity: 1 }]);
     const li = stripeCalls[0].params.line_items;
-    expect(li).toHaveLength(3);
-    expect(li[2].price_data).toMatchObject({ unit_amount: fee, product_data: { name: 'GreenGo service fee' } });
+    expect(li).toHaveLength(2);
+    expect(stripeCalls[0].params.payment_intent_data.application_fee_amount).toBe(fee);
     expect(li[0]).toMatchObject({ quantity: 2, price_data: { unit_amount: 2000 } });
     expect(li[1]).toMatchObject({ quantity: 1, price_data: { unit_amount: 8000 } });
     expect(li[1].price_data.product_data.name).toContain('VIP');
@@ -862,7 +862,7 @@ describe('event ticket types', () => {
     await paidEvent('legacy1');
     const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'legacy1', quantity: 1 }, BUYER);
     expect((await db.doc(`ticket_orders/${r.orderId}`).get()).data())
-      .toMatchObject({ ticketSubtotal: 2500, totalAmount: 2500 + usdCentsToMinor(100, 'brl')!, items: null });
+      .toMatchObject({ ticketSubtotal: 2500, totalAmount: 2500, feeTotal: usdCentsToMinor(100, 'brl')!, items: null });
   });
 
   test('clients cannot touch the sale counters of a type', async () => {

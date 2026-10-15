@@ -12,9 +12,9 @@ import 'ticket_fee_widgets.dart';
 
 /// "How do guests pay?" for a PAID event / experience (editor, mobile + web):
 /// Mercado Pago or Stripe, the organizer's connected account. Buyers pay in
-/// the app and their tickets are confirmed automatically; the organizer
-/// receives the full ticket price and buyers pay a GreenGo service fee on top
-/// (shown here as a preview for the price being set).
+/// the app and their tickets are confirmed automatically. The organizer pays
+/// the GreenGo service fee out of each ticket; the payout per ticket (price -
+/// GreenGo fee - the chosen provider's processing fee) is estimated here.
 ///
 /// Payment links are no longer accepted (owner rule 2026-10-14): a listing
 /// still set to a link shows a banner until a provider is picked.
@@ -134,6 +134,7 @@ class _TicketPaymentSelectorState extends State<TicketPaymentSelector> {
         TicketFeeHostPreview(
           price: price,
           currency: widget.currency,
+          provider: widget.value.provider,
           kind: widget.kind,
           id: widget.listingId,
           service: _svc,

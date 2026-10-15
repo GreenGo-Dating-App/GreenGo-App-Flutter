@@ -5,42 +5,40 @@ import '../../../../generated/app_localizations.dart';
 import '../../data/ticket_payments_service.dart';
 import '../../domain/ticket_fees.dart';
 import '../../domain/ticket_payments.dart';
+import '../ticket_l10n.dart';
 
-/// Tickets / GreenGo service fee / Total, as the buyer pays it (minor units).
-/// Amounts come from [computeTicketFee] (display mirror) before checkout, or
-/// from the server-priced order afterwards.
+/// What the buyer pays (minor units). The GreenGo service fee is paid by the
+/// seller (owner rule 2026-10-14), so a buyer sees the ticket price as the
+/// total. [feeOnTop] is only for orders priced BEFORE that change, when the
+/// buyer paid the fee on top: Tickets / GreenGo service fee / Total.
 class TicketFeeBreakdownView extends StatelessWidget {
   const TicketFeeBreakdownView({
     super.key,
     required this.subtotal,
-    required this.fee,
     required this.currency,
+    this.fee,
+    this.feeOnTop = false,
     this.trial = false,
   });
 
   final int subtotal;
 
-  /// Null = the fee could not be quoted (shown as "+ service fee").
+  /// Fee of a legacy buyer-paid order (shown only with [feeOnTop]).
   final int? fee;
   final String currency;
+  final bool feeOnTop;
   final bool trial;
 
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context)!;
-    final f = fee;
+    final f = feeOnTop ? (fee ?? 0) : 0;
     return Column(
       key: const ValueKey('ticket-fee-breakdown'),
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        _row(l.tpTicketsSubtotal, formatTicketAmount(subtotal, currency), key: 'ticket-fee-subtotal'),
-        if (f == null)
-          Padding(
-            padding: const EdgeInsets.only(bottom: 4),
-            child: Text(l.tpPlusServiceFee,
-                style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
-          )
-        else ...[
+        if (f > 0) ...[
+          _row(l.tpTicketsSubtotal, formatTicketAmount(subtotal, currency), key: 'ticket-fee-subtotal'),
           _row(l.tpServiceFee, formatTicketAmount(f, currency), key: 'ticket-fee-fee'),
           if (trial)
             Padding(
@@ -49,12 +47,12 @@ class TicketFeeBreakdownView extends StatelessWidget {
                   key: const ValueKey('ticket-fee-trial'),
                   style: const TextStyle(color: AppColors.successGreen, fontSize: 12)),
             ),
+          const SizedBox(height: 4),
         ],
-        const SizedBox(height: 4),
         Row(children: [
           Text(l.tpTotal, style: const TextStyle(color: AppColors.textSecondary)),
           const Spacer(),
-          Text(formatTicketAmount(subtotal + (f ?? 0), currency),
+          Text(formatTicketAmount(subtotal + f, currency),
               key: const ValueKey('buy-total'),
               style: const TextStyle(color: AppColors.richGold, fontSize: 18, fontWeight: FontWeight.w700)),
         ]),
@@ -72,8 +70,8 @@ class TicketFeeBreakdownView extends StatelessWidget {
       );
 }
 
-/// Host side: "You receive 100% of the ticket price" + the fee schedule
-/// buyers pay on top (Get paid, editors).
+/// Host side: the GreenGo service fee schedule the SELLER pays per ticket
+/// (Get paid, editors).
 class TicketFeeScheduleCard extends StatelessWidget {
   const TicketFeeScheduleCard({super.key});
 
@@ -109,13 +107,16 @@ class TicketFeeScheduleCard extends StatelessWidget {
   }
 }
 
-/// Host editor: what a buyer pays for one ticket at [price] (major units).
-/// The rule is the host's own (null [id] = a listing not created yet).
+/// Host editor: per-ticket payout ESTIMATE at [price] (major units): the
+/// buyer pays the price, minus the GreenGo service fee (the host's own rule;
+/// null [id] = a listing not created yet), minus the chosen [provider]'s
+/// processing fee (estimate; asks to pick one while null).
 class TicketFeeHostPreview extends StatefulWidget {
   const TicketFeeHostPreview({
     super.key,
     required this.price,
     required this.currency,
+    this.provider,
     this.kind,
     this.id,
     this.service,
@@ -126,6 +127,7 @@ class TicketFeeHostPreview extends StatefulWidget {
 
   /// ISO code or display symbol.
   final String? currency;
+  final TicketProvider? provider;
   final String? kind;
   final String? id;
   final TicketPaymentsService? service;
@@ -160,78 +162,72 @@ class _TicketFeeHostPreviewState extends State<TicketFeeHostPreview> {
     final price = widget.price;
     final rule = _rule;
     if (iso == null || price == null || price <= 0 || rule == null) return const SizedBox.shrink();
-    final unit = toMinorUnits(price, iso);
-    final fee = ticketFeePerTicket(rule, unit, iso);
-    if (fee == null) return const SizedBox.shrink();
-    return Padding(
+    final est = estimateHostPayout(rule, toMinorUnits(price, iso), iso, widget.provider);
+    if (est == null) return const SizedBox.shrink();
+    const small = TextStyle(color: AppColors.textSecondary, fontSize: 12.5);
+    Widget row(String label, String value, String key, {TextStyle style = small}) => Padding(
+          padding: const EdgeInsets.only(bottom: 3),
+          child: Row(children: [
+            Expanded(child: Text(label, style: style)),
+            Text(value, key: ValueKey(key), style: style),
+          ]),
+        );
+    final p = widget.provider;
+    final providerFee = est.providerFee;
+    return Container(
       key: const ValueKey('ticket-fee-host-preview'),
-      padding: const EdgeInsets.only(top: 6),
-      child: Text(
-        l.tpFeeBuyerPreview(formatTicketAmount(unit, iso), formatTicketAmount(fee, iso),
-            formatTicketAmount(unit + fee, iso)),
-        style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
+      margin: const EdgeInsets.only(top: 8),
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: AppColors.backgroundCard,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: AppColors.divider),
       ),
+      child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+        Text(l.tpPayoutTitle,
+            style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w700, fontSize: 13)),
+        const SizedBox(height: 6),
+        row(l.tpPayoutBuyerPays, formatTicketAmount(est.price, iso), 'payout-price'),
+        row(rule == TicketFeeRule.trial ? l.tpPayoutGreenGoFeeTrial : l.tpServiceFee,
+            '- ${formatTicketAmount(est.greenGoFee, iso)}', 'payout-greengo-fee'),
+        if (p != null && providerFee != null)
+          row(l.tpPayoutProviderFee(TicketL10n.provider(l, p)),
+              '≈ - ${formatTicketAmount(providerFee, iso)}', 'payout-provider-fee')
+        else
+          Padding(
+            padding: const EdgeInsets.only(bottom: 3),
+            child: Text(l.tpPayoutPickProvider,
+                key: const ValueKey('payout-pick-provider'),
+                style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
+          ),
+        const Divider(height: 12, color: AppColors.divider),
+        row(l.tpPayoutYouReceive, '≈ ${formatTicketAmount(est.net, iso)}', 'payout-net',
+            style: const TextStyle(color: AppColors.richGold, fontSize: 14, fontWeight: FontWeight.w700)),
+        const SizedBox(height: 4),
+        Text(l.tpPayoutEstimateNote,
+            style: const TextStyle(color: AppColors.textTertiary, fontSize: 11)),
+      ]),
     );
   }
 }
 
-/// Buyer side, before paying (experience booking summary / payment): asks
-/// the server which fee rule applies to [organizerId]'s listing and shows
-/// Tickets / GreenGo service fee / Total for [lines] (minor units).
-class TicketFeeQuoteView extends StatefulWidget {
+/// Buyer side, before paying (experience booking summary / payment): the
+/// total for [lines] (minor units). The GreenGo service fee is paid by the
+/// seller, so nothing is added for the buyer.
+class TicketFeeQuoteView extends StatelessWidget {
   const TicketFeeQuoteView({
     super.key,
-    required this.organizerId,
-    required this.kind,
-    required this.listingId,
     required this.currency,
     required this.lines,
-    this.service,
-    this.rule,
   });
-
-  final String organizerId;
-  final String kind;
-  final String listingId;
 
   /// ISO code (lower case).
   final String currency;
   final List<({int unitAmount, int quantity})> lines;
-  final TicketPaymentsService? service;
-
-  /// Test seam (production asks the server).
-  final TicketFeeRule? rule;
-
-  @override
-  State<TicketFeeQuoteView> createState() => _TicketFeeQuoteViewState();
-}
-
-class _TicketFeeQuoteViewState extends State<TicketFeeQuoteView> {
-  TicketFeeRule? _rule;
-
-  @override
-  void initState() {
-    super.initState();
-    _rule = widget.rule;
-    if (_rule == null) {
-      (widget.service ?? TicketPaymentsService())
-          .feeRule(organizerId: widget.organizerId, kind: widget.kind, id: widget.listingId)
-          .then((r) {
-        if (mounted && r != null) setState(() => _rule = r);
-      });
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
-    final rule = _rule;
-    final subtotal = widget.lines.fold<int>(0, (s, l) => s + l.unitAmount * l.quantity);
-    final fee = rule == null ? null : computeTicketFee(rule, widget.currency, widget.lines);
-    return TicketFeeBreakdownView(
-      subtotal: subtotal,
-      fee: fee?.fee,
-      currency: widget.currency,
-      trial: rule == TicketFeeRule.trial && (fee?.fee ?? 0) > 0,
-    );
+    final subtotal = lines.fold<int>(0, (s, l) => s + l.unitAmount * l.quantity);
+    return TicketFeeBreakdownView(subtotal: subtotal, currency: currency);
   }
 }

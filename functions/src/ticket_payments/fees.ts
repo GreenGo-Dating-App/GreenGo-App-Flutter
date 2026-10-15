@@ -3,10 +3,11 @@
  * DISPLAY ONLY by lib/features/ticket_payments/domain/ticket_fees.dart; this
  * file is authoritative (createTicketCheckout prices every order with it).
  *
- * Owner rule 2026-10-14: the fee is ADDED ON TOP for the buyer. The host
- * receives the full listed ticket price (minus the provider's own processing
- * fee, which Stripe / Mercado Pago debit from the connected account); the
- * buyer pays ticket price + fee, per ticket:
+ * Owner rule 2026-10-14, changed the same day: the fee is PAID BY THE SELLER.
+ * The buyer pays the listed ticket price only; GreenGo keeps its fee out of
+ * that price (Stripe application_fee_amount / Mercado Pago marketplace_fee on
+ * the host's direct charge), so the host receives ticket price - fee (minus
+ * the provider's own processing fee), per ticket:
  *
  *   rule       fixed   + percent of the ticket price   cap per ticket
  *   silver     US$ 3   + 10 %                          US$ 10
@@ -14,6 +15,8 @@
  *   platinum   US$ 1   + 10 %                          US$ 8   (TEST = platinum)
  *   trial      flat US$ 1 (the host's first paid listing, see below)
  *   free ticket (price 0): no fee.
+ *   The fee never exceeds the ticket price itself (a fee can't be larger
+ *   than the charge it is taken from).
  *
  * The rule follows the HOST's effective tier at checkout time
  * (shared/effectiveTier.ts). A host without an active paid tier (FREE / Base)
@@ -102,9 +105,8 @@ export function feePerTicket(rule: FeeRule, unitAmount: number, currency: string
   if (fixed === null) return null;
   const pct = Math.round((unitAmount * s.percent) / 100);
   const raw = fixed + pct;
-  if (s.capUsdCents === null) return raw;
-  const cap = usdCentsToMinor(s.capUsdCents, currency) as number;
-  return Math.min(raw, cap);
+  const capped = s.capUsdCents === null ? raw : Math.min(raw, usdCentsToMinor(s.capUsdCents, currency) as number);
+  return Math.min(capped, unitAmount);
 }
 
 export interface FeeLine { typeId: string | null; unitAmount: number; quantity: number }
@@ -112,14 +114,16 @@ export interface FeeLine { typeId: string | null; unitAmount: number; quantity: 
 export interface FeeBreakdown {
   rule: FeeRule;
   currency: string;
-  /** Sum of the ticket prices (what the host receives), minor units. */
+  /** Sum of the ticket prices = what the buyer pays, minor units. */
   ticketSubtotal: number;
-  /** GreenGo service fee for the whole order, minor units. */
+  /** GreenGo service fee for the whole order (paid by the seller), minor units. */
   feeTotal: number;
   /** Fee per ticket when every paid ticket has the same fee, else null (see lines). */
   feePerTicket: number | null;
-  /** ticketSubtotal + feeTotal: what the buyer pays. */
+  /** What the buyer pays: ticketSubtotal (the fee is not added on top). */
   total: number;
+  /** What the host receives before the provider's processing fee: ticketSubtotal - feeTotal. */
+  hostNet: number;
   lines: Array<FeeLine & { unitFee: number }>;
 }
 
@@ -142,7 +146,8 @@ export function computeOrderFee(rule: FeeRule, currency: string, lines: FeeLine[
     ticketSubtotal: subtotal,
     feeTotal: fee,
     feePerTicket: paidFees.size === 0 ? 0 : (paidFees.size === 1 ? Array.from(paidFees)[0] : null),
-    total: subtotal + fee,
+    total: subtotal,
+    hostNet: subtotal - fee,
     lines: out,
   };
 }

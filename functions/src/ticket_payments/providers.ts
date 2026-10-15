@@ -3,7 +3,7 @@
  * REST). Everything that talks to a provider goes through `ticketDeps`, so the
  * emulator tests replace the network with fakes.
  *
- * GreenGo service fee (./fees.ts, added on top for the buyer): Stripe sessions
+ * GreenGo service fee (./fees.ts, paid by the seller): Stripe sessions
  * are direct charges on the organizer's account WITH application_fee_amount =
  * the fee; MP preferences are created with the organizer's own token WITH
  * marketplace_fee = the fee. Full refunds give the fee back too (Stripe
@@ -104,9 +104,9 @@ async function stripeSession(accountId: string, i: CheckoutInput, types: string[
 
 /**
  * Full refund of a direct charge, ON the connected account (idempotent per
- * order). The buyer always gets the whole charge back (tickets + fee);
+ * order). The buyer always gets the whole charge back (the ticket price);
  * refund_application_fee makes GreenGo return its fee to the organizer's
- * account, so the organizer does not pay GreenGo's fee out of pocket.
+ * account, so the organizer does not pay GreenGo's fee on a refunded sale.
  */
 export async function stripeRefund(accountId: string, paymentIntentId: string, orderId: string): Promise<string> {
   const r = await ticketDeps.stripe().refunds.create({
