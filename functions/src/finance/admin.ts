@@ -611,7 +611,26 @@ const WRITES: Record<string, Handler> = {
   },
 };
 
+/** Firestore FAILED_PRECONDITION (missing / building index) -> a readable error instead of INTERNAL. */
+function readable(e: unknown): never {
+  if (e instanceof HttpsError) throw e;
+  const err = e as { code?: number | string; message?: string };
+  if ((err?.code === 9 || err?.code === 'failed-precondition') && /index/i.test(err?.message || '')) {
+    console.error('[finance] index', err.message);
+    throw new HttpsError('failed-precondition', 'This filter needs a database index that is still being built. Try again in a few minutes.');
+  }
+  throw e;
+}
+
 export const adminFinance = onCall({ memory: '512MiB', timeoutSeconds: 300 }, async (request) => {
+  try {
+    return await adminFinanceHandler(request);
+  } catch (e) {
+    return readable(e);
+  }
+});
+
+async function adminFinanceHandler(request: { data: any; auth?: any }) {
   const data = request.data || {};
   const action = String(data.action || '');
   if (READS[action]) {
@@ -627,4 +646,4 @@ export const adminFinance = onCall({ memory: '512MiB', timeoutSeconds: 300 }, as
     return res;
   }
   throw new HttpsError('invalid-argument', `unknown action: ${action}`);
-});
+}
