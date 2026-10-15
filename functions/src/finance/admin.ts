@@ -264,17 +264,16 @@ async function businessDetail(data: any) {
   const p = (await db().collection('profiles').doc(uid).get()).data();
   if (!p) throw new HttpsError('not-found', 'profile not found');
   const count = async (q: FirebaseFirestore.Query) => (await q.count().get()).data().count;
-  const [stats, months, events, experiences, recentOrders, statements, ratings] = await Promise.all([
+  const [stats, months, events, experiences, recentOrders, statements, billing] = await Promise.all([
     db().collection(FCOL.businessStats).doc(uid).get(),
     db().collection(FCOL.businessStats).doc(uid).collection('months')
-      .orderBy(admin.firestore.FieldPath.documentId(), 'desc').limit(24).get(),
+      .orderBy('month', 'desc').limit(24).get(),
     count(db().collection('events').where('organizerId', '==', uid)),
     count(db().collection('user_experiences').where('hostId', '==', uid)),
     db().collection('ticket_orders').where('organizerId', '==', uid).orderBy('createdAt', 'desc').limit(10).get(),
     db().collection(FCOL.statements).where('organizerId', '==', uid).orderBy('issuedAt', 'desc').limit(24).get(),
-    db().collection('business_ratings').where('businessId', '==', uid).limit(1).get().then(() => null).catch(() => null),
+    db().collection(FCOL.billing).doc(uid).get(),
   ]);
-  void ratings;
   return {
     profile: {
       id: uid, ...plain(pick(p, [
@@ -288,6 +287,7 @@ async function businessDetail(data: any) {
     counts: { events, experiences },
     recentOrders: recentOrders.docs.map((d) => ({ id: d.id, ...plain(pick(d.data(), ORDER_FIELDS)) })),
     statements: statements.docs.map((d) => statementRow(d.id, d.data())),
+    billing: plain(billing.data() || null),
   };
 }
 
@@ -586,6 +586,20 @@ const WRITES: Record<string, Handler> = {
   },
   generateStatements: async (d) => generateStatementsForMonth(month(d.month), { email: d.email === true }),
   backfillOrders: (d, uid) => backfillOrders(d, uid),
+  saveBillingProfile: async (d, uid) => {
+    const organizerId = docId(d.organizerId, 'organizerId', false)!;
+    const profile = {
+      legalName: str(d.legalName, 'legalName', 150) || null,
+      taxId: taxIdOf(d.taxId),
+      address: str(d.address, 'address', 300) || null,
+      email: str(d.email, 'email', 254) || null,
+      updatedAt: admin.firestore.Timestamp.now(),
+      updatedBy: uid,
+    };
+    if (profile.email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(profile.email)) throw new HttpsError('invalid-argument', 'email is invalid');
+    await db().collection(FCOL.billing).doc(organizerId).set(profile);
+    return { billing: plain(profile) };
+  },
   reprocessOrder: async (d, uid) => {
     const orderId = docId(d.orderId, 'orderId', false)!;
     const o = (await db().collection('ticket_orders').doc(orderId).get()).data();

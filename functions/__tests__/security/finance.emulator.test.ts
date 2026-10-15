@@ -275,6 +275,21 @@ describe('seller monthly statement + monthly fee invoice', () => {
     expect(t.items.every((i: any) => i.isTest)).toBe(true);
   });
 
+  it('seller billing details (admin-entered) become the invoice customer', async () => {
+    await expect(call({ action: 'saveBillingProfile', organizerId: 'org1', taxId: '123' }, 'ana')).rejects.toThrow(/Requires role/);
+    await expect(call({ action: 'saveBillingProfile', organizerId: 'org1', taxId: '40.486.663/0001-83' }, 'boss')).rejects.toThrow(/CNPJ/);
+    await call({ action: 'saveBillingProfile', organizerId: 'org1', legalName: 'Zé Bar Ltda', taxId: '40.486.663/0001-82', email: 'fiscal@ze.example' }, 'boss');
+    const o = order({ currency: 'eur', listingId: 'evB', title: 'Billing test' });
+    await db.doc('ticket_orders/o10').set(o);
+    await applyOrderFinance('o10', o, 'paid');
+    const m = monthKey(new Date());
+    await generateStatement('org1', m, { email: false });
+    const inv = (await db.doc(`finance_invoices/mfee_org1_${m}_eur`).get()).data()!;
+    expect(inv.customer).toMatchObject({ uid: 'org1', name: 'Zé Bar Ltda', taxId: '40.486.663/0001-82', email: 'fiscal@ze.example' });
+    const detail = await call({ action: 'businessDetail', organizerId: 'org1' }, 'ana');
+    expect(detail.billing.legalName).toBe('Zé Bar Ltda');
+  });
+
   it('legacy: builds from the month totals with a PDF', async () => {
     const s = await generateStatement('org1', monthKey(new Date()), { email: false });
     expect(s!.lines[0]).toMatchObject({ currency: 'brl', gross: 10000, refunds: 10000, net: 0 });
