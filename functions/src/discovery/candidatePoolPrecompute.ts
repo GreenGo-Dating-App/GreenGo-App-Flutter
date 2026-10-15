@@ -8,7 +8,7 @@
  * Pool key format: "{country}_{gender}_{ageMin}-{ageMax}"
  * Example: "DE_Female_25-34"
  *
- * Runs every 10 minutes. Each pool document contains an array of
+ * Runs every 60 minutes. Each pool document contains an array of
  * lightweight member entries (userId + scoring metadata) so the
  * Flutter client can filter and score without fetching full profiles.
  */
@@ -252,11 +252,13 @@ async function buildPools(): Promise<{ poolCount: number; memberCount: number }>
 // ───────── Exported Functions ─────────
 
 /**
- * Scheduled function: runs every 10 minutes to rebuild candidate pools.
+ * Scheduled function: runs every 60 minutes to rebuild candidate pools
+ * (was every 10: each run reads every profile, so hourly cuts this job's
+ * Firestore reads by ~83%; pools only serve the Discovery country filter).
  */
 export const precomputeCandidatePools = onSchedule(
   {
-    schedule: 'every 10 minutes',
+    schedule: 'every 60 minutes',
     timeoutSeconds: 540,
     memory: '1GiB',
   },
