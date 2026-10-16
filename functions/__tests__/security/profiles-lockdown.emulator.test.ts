@@ -244,6 +244,31 @@ describe('LEGIT: what app 4.6.0+194/195 writes to its own public profile', () =>
 });
 
 // ---------------------------------------------------------------------------
+describe('preciseLocation (globeDiscoverability exact, +-100 m) is server-only', () => {
+  beforeEach(async () => {
+    await db.doc(`profiles/${ALICE}`).set({
+      globeDiscoverability: 'exact', preciseLocation: { lat: 41.8991, lng: 12.4735 },
+    }, { merge: true });
+  });
+
+  test('LEGIT: the owner switches the setting; the server-written value may stay untouched', async () => {
+    expect(await update(ALICE, `profiles/${ALICE}`, { globeDiscoverability: 'approximate' })).toBe(200);
+    expect(await update(ALICE, `profiles/${ALICE}`, { globeDiscoverability: 'exact', bio: 'x' })).toBe(200);
+  });
+
+  test('ATTACK: owner / other user / admin-panel user cannot set, move or remove it', async () => {
+    expect(await update(ALICE, `profiles/${ALICE}`, { preciseLocation: { lat: 48.85, lng: 2.35 } })).toBe(403);
+    expect(await update(ALICE, `profiles/${ALICE}`, { 'preciseLocation.lat': 48.85 })).toBe(403);
+    expect(await update(ALICE, `profiles/${ALICE}`, { preciseLocation: null })).toBe(403);
+    expect(await update(ALICE, `profiles/${ALICE}`, { preciseLocation: DELETE })).toBe(403);
+    expect(await setMerge(ALICE, `profiles/${ALICE}`, { preciseLocation: { lat: 1, lng: 2 } })).toBe(403);
+    expect(await update(MALLORY, `profiles/${ALICE}`, { preciseLocation: { lat: 1, lng: 2 } })).toBe(403);
+    expect(await update(STAFF, `profiles/${ALICE}`, { preciseLocation: { lat: 1, lng: 2 } })).toBe(403);
+    expect(await update(BOB, `profiles/${BOB}`, { globeDiscoverability: 'exact', preciseLocation: { lat: 1, lng: 2 } })).toBe(403);
+  });
+});
+
+// ---------------------------------------------------------------------------
 describe('ATTACK: no client may write a stripped field to a public profile', () => {
   const values: Record<string, any> = {
     dateOfBirth: new Date(Date.UTC(1995, 4, 20)),
@@ -261,6 +286,7 @@ describe('ATTACK: no client may write a stripped field to a public profile', () 
     geohash5: 'u0nd9',
     approxLocation: { lat: 1, lng: 2 },
     age: 18,
+    preciseLocation: { lat: 41.89893, lng: 12.47311 },
   };
 
   for (const [k, v] of Object.entries(values)) {
@@ -299,6 +325,7 @@ describe('ATTACK: no client may write a stripped field to a public profile', () 
     expect(await create(BOB, `profiles/${BOB}`, { displayName: 'Bob', dateOfBirth: new Date() })).toBe(403);
     expect(await create(BOB, `profiles/${BOB}`, { displayName: 'Bob', location: { city: 'X', latitude: 1, longitude: 2 } })).toBe(403);
     expect(await create(BOB, `profiles/${BOB}`, { displayName: 'Bob', geohash5: 'sr2yk' })).toBe(403);
+    expect(await create(BOB, `profiles/${BOB}`, { displayName: 'Bob', preciseLocation: { lat: 41.9, lng: 12.5 } })).toBe(403);
     expect(await create(BOB, `profiles/${BOB}`, { displayName: 'Bob', ageVerification: { documentHash: 'h' } })).toBe(403);
   });
 

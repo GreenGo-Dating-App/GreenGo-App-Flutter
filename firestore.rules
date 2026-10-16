@@ -361,9 +361,10 @@ service cloud.firestore {
               'geohash', 'fcmToken', 'birthMonthDay'];
     }
     // Coarse values computed by mirrorPrivateProfileFields /
-    // syncCoarseFromPrivateProfile; a client never writes them.
+    // syncCoarseFromPrivateProfile; a client never writes them. preciseLocation
+    // (+-100 m) exists only while globeDiscoverability is 'exact'.
     function profileServerCoarseKeys() {
-      return ['geohash5', 'approxLocation', 'age'];
+      return ['geohash5', 'approxLocation', 'age', 'preciseLocation'];
     }
     // `k` of the written profile is unchanged or cleared.
     function profileKeyKeptOrCleared(changed, k) {
@@ -657,7 +658,8 @@ service cloud.firestore {
     // private album URLs, ID-derived age-verification data. The public
     // profiles/{uid} gets only coarse values computed by the
     // mirrorPrivateProfileFields / syncCoarseFromPrivateProfile functions
-    // (geohash5, approxLocation, age).
+    // (geohash5, approxLocation, age, and preciseLocation only for users who
+    // chose globeDiscoverability 'exact').
     //  - read: owner, or an admin-panel user (admin_users doc exists).
     //  - write: owner, ONLY the user-editable keys below. ageVerification,
     //    birthMonthDay, verificationPhotoUrl and _mirroredAt are server-owned

@@ -5,6 +5,9 @@
  *
  * Deploy:  mirrorPrivateProfileFields, syncCoarseFromPrivateProfile,
  *          refreshBirthdayAges, getVerificationPhotoUrl
+ *          (the first two also publish / delete `preciseLocation` for
+ *          globeDiscoverability 'exact'; then run
+ *          scripts/backfill-precise-location.ts --apply once)
  *
  * Personal payment links are no longer accepted (owner rule 2026-10-14): the
  * former payment-links visibility hook and its sweepExpiredPaymentLinks
@@ -239,6 +242,69 @@ export async function runPrivateProfileBackfill(opts: {
       const out = await Promise.all(ids.slice(i, i + conc).map((id) =>
         syncProfile(id, SENSITIVE_FIELDS, { firestore: fs, dryRun: res.dryRun, fillMissingOnly: true })));
       for (const r of out) { res.privateWrites += r.privateWrites; res.publicWrites += r.publicWrites; }
+    }
+    res.scanned += ids.length;
+    res.startAfter = ids[ids.length - 1];
+    pages++;
+    opts.onPage?.({ ...res });
+    if (snap.size < pageSize) { res.done = true; res.startAfter = null; return res; }
+    if (pages >= maxPages) return res;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Precise-location backfill (used by scripts/backfill-precise-location.ts)
+// ---------------------------------------------------------------------------
+
+export interface PreciseBackfillResult {
+  scanned: number;
+  publicWrites: number;
+  done: boolean;
+  /** Only a hint for continuing; restarting without it is always correct. */
+  startAfter: string | null;
+  dryRun: boolean;
+}
+
+/**
+ * Computes `preciseLocation` for profiles that already chose
+ * globeDiscoverability 'exact' before the field existed. Equality query on
+ * globeDiscoverability, paged by document id (single-field index, no
+ * composite); per doc it runs the same transactional syncProfile as the
+ * triggers with NO private copy, so only coarse fields that differ are
+ * written. Re-running is always correct (already-correct docs are read, not
+ * written); nothing is saved between runs.
+ */
+export async function runPreciseLocationBackfill(opts: {
+  firestore?: admin.firestore.Firestore;
+  startAfter?: string | null;
+  pageSize?: number;
+  maxPages?: number;
+  dryRun?: boolean;
+  concurrency?: number;
+  onPage?: (r: PreciseBackfillResult) => void;
+} = {}): Promise<PreciseBackfillResult> {
+  const fs = opts.firestore ?? admin.firestore();
+  const pageSize = Math.min(Math.max(opts.pageSize ?? 300, 1), 400);
+  const maxPages = opts.maxPages ?? Number.MAX_SAFE_INTEGER;
+  const conc = Math.max(1, opts.concurrency ?? 10);
+  const res: PreciseBackfillResult = {
+    scanned: 0, publicWrites: 0, done: false,
+    startAfter: opts.startAfter ?? null, dryRun: opts.dryRun !== false,
+  };
+  let pages = 0;
+  for (;;) {
+    let q = fs.collection('profiles')
+      .where('globeDiscoverability', '==', 'exact')
+      .orderBy(admin.firestore.FieldPath.documentId())
+      .limit(pageSize);
+    if (res.startAfter) q = q.startAfter(res.startAfter);
+    const snap = await q.select().get();
+    if (snap.empty) { res.done = true; res.startAfter = null; return res; }
+    const ids = snap.docs.map((d) => d.id);
+    for (let i = 0; i < ids.length; i += conc) {
+      const out = await Promise.all(ids.slice(i, i + conc).map((id) =>
+        syncProfile(id, [], { firestore: fs, dryRun: res.dryRun })));
+      for (const r of out) res.publicWrites += r.publicWrites;
     }
     res.scanned += ids.length;
     res.startAfter = ids[ids.length - 1];

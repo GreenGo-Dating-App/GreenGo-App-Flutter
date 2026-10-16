@@ -30,6 +30,7 @@ import {
   resolveVerificationPhotoUrl,
   runBirthdayAgeRefresh,
   runPrivateProfileBackfill,
+  runPreciseLocationBackfill,
   birthdayKeysFor,
 } from '../../src/profiles/privateProfileTriggers';
 import { stripOne } from '../../scripts/strip-public-sensitive-fields';
@@ -295,6 +296,85 @@ describe('NO LOOPS: every trigger write re-fires the other trigger into a no-op'
     await db.doc('profiles_private/alice').set({ verificationPhotoPath: 'verifications/alice/new.jpg' });
     await firePublic('alice', undefined);
     expect((await data('profiles_private/alice')).verificationPhotoPath).toBe('verifications/alice/new.jpg');
+  });
+});
+
+// ---------------------------------------------------------------------------
+describe('preciseLocation: only for globeDiscoverability exact (+-100 m)', () => {
+  const newApp = async (uid: string, pub: Record<string, any>, at: [number, number] = MILAN) => {
+    await db.doc(`profiles/${uid}`).set({ displayName: uid, ...pub });
+    await db.doc(`profiles_private/${uid}`).set({ location: { latitude: at[0], longitude: at[1] } });
+    await firePrivate(uid, undefined);
+  };
+  const precise = async (uid: string) => (await data(`profiles/${uid}`)).preciseLocation;
+
+  test('exact: published within 100 m of the stored location; other settings: absent', async () => {
+    await newApp('ex', { globeDiscoverability: 'exact' });
+    const p = await precise('ex');
+    expect(dist(MILAN, [p.lat, p.lng])).toBeLessThanOrEqual(100);
+    expect(dist(MILAN, [p.lat, p.lng])).toBeGreaterThan(10);
+    for (const g of ['approximate', 'country', 'hidden']) {
+      await newApp(`u-${g}`, { globeDiscoverability: g });
+      expect(await precise(`u-${g}`)).toBeUndefined();
+    }
+    await newApp('none', {});
+    expect(await precise('none')).toBeUndefined();
+  });
+
+  test('switching the PUBLIC setting adds / removes it (mirror watches globeDiscoverability)', async () => {
+    await newApp('sw', { globeDiscoverability: 'approximate' });
+    expect(await precise('sw')).toBeUndefined();
+    let b = await data('profiles/sw');
+    await db.doc('profiles/sw').update({ globeDiscoverability: 'exact' });
+    const r: any = await firePublic('sw', b);
+    expect(r.publicFields).toEqual(['preciseLocation']);
+    expect(r.privateWrites).toBe(0);
+    expect(dist(MILAN, [(await precise('sw')).lat, (await precise('sw')).lng])).toBeLessThanOrEqual(100);
+    // The trigger's own write (only preciseLocation changed) re-fires: skipped.
+    const afterWrite = await data('profiles/sw');
+    expect(await firePublic('sw', { ...afterWrite, preciseLocation: undefined })).toBe('skipped');
+    b = await data('profiles/sw');
+    await db.doc('profiles/sw').update({ globeDiscoverability: 'hidden' });
+    await firePublic('sw', b);
+    expect(await precise('sw')).toBeUndefined();
+    expect((await data('profiles/sw')).approxLocation).toBeTruthy();
+  });
+
+  test('a location change moves it; re-running writes nothing (no loop)', async () => {
+    await newApp('mv', { globeDiscoverability: 'exact' }, ROME);
+    const p1 = await precise('mv');
+    expect(dist(ROME, [p1.lat, p1.lng])).toBeLessThanOrEqual(100);
+    const privBefore = await data('profiles_private/mv');
+    await db.doc('profiles_private/mv').update({ 'location.latitude': MILAN[0], 'location.longitude': MILAN[1] });
+    await firePrivate('mv', privBefore);
+    const p2 = await precise('mv');
+    expect(dist(MILAN, [p2.lat, p2.lng])).toBeLessThanOrEqual(100);
+    const t = await updateTime('profiles/mv');
+    const r: any = await firePrivate('mv', undefined);
+    expect(r.publicWrites + r.privateWrites).toBe(0);
+    expect(await updateTime('profiles/mv')).toBe(t);
+  });
+
+  test('old app (exact coords still on public) with exact: computed too', async () => {
+    await db.doc('profiles/old').set(legacyPublic({ globeDiscoverability: 'exact' }));
+    await firePublic('old', undefined);
+    const p = await precise('old');
+    expect(dist(ROME, [p.lat, p.lng])).toBeLessThanOrEqual(100);
+  });
+
+  test('backfill: dry run by default, --apply writes only exact users, idempotent', async () => {
+    for (const [uid, g] of [['b1', 'exact'], ['b2', 'exact'], ['b3', 'approximate']]) {
+      await db.doc(`profiles/${uid}`).set({ displayName: uid, globeDiscoverability: g });
+      await db.doc(`profiles_private/${uid}`).set({ location: { latitude: ROME[0], longitude: ROME[1] } });
+    }
+    const dry = await runPreciseLocationBackfill({ pageSize: 1 });
+    expect(dry).toMatchObject({ dryRun: true, scanned: 2, publicWrites: 2, done: true });
+    expect(await precise('b1')).toBeUndefined();
+    const run = await runPreciseLocationBackfill({ dryRun: false });
+    expect(run).toMatchObject({ dryRun: false, scanned: 2, publicWrites: 2 });
+    expect(dist(ROME, [(await precise('b1')).lat, (await precise('b1')).lng])).toBeLessThanOrEqual(100);
+    expect(await precise('b3')).toBeUndefined();
+    expect((await runPreciseLocationBackfill({ dryRun: false })).publicWrites).toBe(0);
   });
 });
 

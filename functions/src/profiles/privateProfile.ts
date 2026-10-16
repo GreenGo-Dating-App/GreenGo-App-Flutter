@@ -14,6 +14,16 @@
  *                   offset (<= 1.5 km, HMAC of the uid), so map pins don't
  *                   stack on cell centres. It moves only when the cell does.
  *   age             integer years (UTC), from dateOfBirth.
+ *   preciseLocation {lat, lng}: ONLY while the user's public
+ *                   `globeDiscoverability` is 'exact' (an explicit opt-in in
+ *                   Settings, owner rule 2026-10-16: "others see your
+ *                   position and distance accurate to about 100 m"). The
+ *                   same discoverable location as above (traveller-aware)
+ *                   plus a stable per-user offset of 20..98 m (separate HMAC
+ *                   key + label + version, so it cannot be combined with the
+ *                   approxLocation offset); published error <= 100 m
+ *                   (PRECISE_JITTER_MAX_M). Deleted for every other setting
+ *                   and when the location is unknown.
  *
  * Two triggers keep both sides consistent without loops:
  *
@@ -31,7 +41,9 @@
  * stored ones. The public write made by either trigger touches only coarse
  * fields, which mirrorPrivateProfileFields does not watch; the private write
  * made by mirrorPrivateProfileFields re-runs syncCoarse..., which recomputes
- * the very values just written and therefore writes nothing.
+ * the very values just written and therefore writes nothing. The mirror
+ * also watches the public `globeDiscoverability` (a user setting that turns
+ * preciseLocation on/off); no trigger ever writes that field.
  *
  * Out-of-order delivery: the mirror copies the CURRENT public value (read in
  * the transaction), not the event's value, so a late event can never roll the
@@ -69,8 +81,12 @@ export const SENSITIVE_FIELDS: ReadonlyArray<{ pub: string; priv: string }> = [
   { pub: 'ageVerification.documentDateOfBirth', priv: 'ageVerification.documentDateOfBirth' },
 ];
 
-/** Public fields that change the coarse result without being sensitive. */
-export const COARSE_INPUT_FIELDS = ['isTraveler', 'travelerExpiry'] as const;
+/**
+ * Public fields that change the coarse result without being sensitive.
+ * globeDiscoverability turns preciseLocation on/off; the coarse write itself
+ * never touches it, so watching it cannot loop.
+ */
+export const COARSE_INPUT_FIELDS = ['isTraveler', 'travelerExpiry', 'globeDiscoverability'] as const;
 
 /** Private fields that change the coarse result. */
 export const PRIVATE_COARSE_INPUTS = [
@@ -79,13 +95,28 @@ export const PRIVATE_COARSE_INPUTS = [
   'dateOfBirth',
 ] as const;
 
-export const COARSE_FIELDS = ['geohash5', 'approxLocation', 'age'] as const;
+export const COARSE_FIELDS = ['geohash5', 'approxLocation', 'age', 'preciseLocation'] as const;
 
 export const APPROX_PRECISION = 5;
 /** Max jitter radius in metres. 1495 (not 1500) leaves room for rounding. */
 export const JITTER_MAX_M = 1495;
 const DEFAULT_JITTER_KEY = 'greengo-approx-location-v1';
 let warnedKey = false;
+
+/**
+ * Upper bound (metres) of the distance between a user's stored discoverable
+ * location and the published `preciseLocation` (owner rule 2026-10-16: with
+ * globe discoverability 'exact', position and distance are shown with an
+ * error of about 100 m). The offset radius is drawn from
+ * [PRECISE_JITTER_MIN_M, PRECISE_JITTER_RADIUS_M]; the 2 m gap to the bound
+ * absorbs the 5-decimal rounding (<= ~1 m). The minimum keeps the published
+ * point off the exact stored address (home) for every user.
+ */
+export const PRECISE_JITTER_MAX_M = 100;
+export const PRECISE_JITTER_RADIUS_M = PRECISE_JITTER_MAX_M - 2;
+export const PRECISE_JITTER_MIN_M = 20;
+/** Bump to re-roll every precise offset (then run the precise backfill). */
+export const PRECISE_JITTER_VERSION = 'v1';
 
 export function jitterKey(): string {
   const k = process.env.PROFILE_LOCATION_JITTER_KEY;
@@ -95,6 +126,17 @@ export function jitterKey(): string {
     console.warn('privateProfile: PROFILE_LOCATION_JITTER_KEY not set; using the built-in fallback key');
   }
   return DEFAULT_JITTER_KEY;
+}
+
+/**
+ * Key of the precise (<= 100 m) offset. PROFILE_PRECISE_LOCATION_JITTER_KEY
+ * when set; otherwise derived from the approx key under a distinct label, so
+ * the two offsets are independent HMAC outputs either way.
+ */
+export function preciseJitterKey(): string {
+  const k = process.env.PROFILE_PRECISE_LOCATION_JITTER_KEY;
+  if (k && k.length >= 16) return k;
+  return createHmac('sha256', jitterKey()).update('greengo-precise-location-key').digest('hex');
 }
 
 // ---------------------------------------------------------------------------
@@ -260,6 +302,42 @@ export function approxLocationFor(uid: string, lat: number, lng: number, key?: s
   return { geohash5, approxLocation: { lat: round5(aLat), lng: round5(aLng) } };
 }
 
+/**
+ * Stable per-user precise offset (metres north / east): uniform in the
+ * annulus [PRECISE_JITTER_MIN_M, PRECISE_JITTER_RADIUS_M]. Different key AND
+ * message from jitterOffsetMeters.
+ */
+export function preciseOffsetMeters(uid: string, key = preciseJitterKey()): { north: number; east: number } {
+  const h = createHmac('sha256', key).update(`precise-location:${PRECISE_JITTER_VERSION}:${uid}`).digest();
+  const u1 = h.readUInt32BE(0) / 0x1_0000_0000;
+  const u2 = h.readUInt32BE(4) / 0x1_0000_0000;
+  const lo = PRECISE_JITTER_MIN_M, hi = PRECISE_JITTER_RADIUS_M;
+  const r = Math.sqrt(lo * lo + u2 * (hi * hi - lo * lo));
+  const theta = 2 * Math.PI * u1;
+  return { north: r * Math.cos(theta), east: r * Math.sin(theta) };
+}
+
+/** (lat, lng) moved by [off] metres, rounded to 5 decimals (~1 m). */
+function offsetPoint(lat: number, lng: number, off: { north: number; east: number }): { lat: number; lng: number } {
+  let pLat = lat + off.north / M_PER_DEG_LAT;
+  pLat = Math.max(-89.99999, Math.min(89.99999, pLat));
+  const cos = Math.max(Math.cos((lat * Math.PI) / 180), 1e-6);
+  let pLng = lng + off.east / (M_PER_DEG_LAT * cos);
+  if (pLng > 180) pLng -= 360;
+  if (pLng < -180) pLng += 360;
+  return { lat: round5(pLat), lng: round5(pLng) };
+}
+
+/** The exact discoverable location + the stable precise offset (<= 100 m). */
+export function preciseLocationFor(uid: string, lat: number, lng: number, key?: string): { lat: number; lng: number } {
+  return offsetPoint(lat, lng, preciseOffsetMeters(uid, key));
+}
+
+/** Whether the public profile opted into 'exact' globe discoverability. */
+export function wantsPreciseLocation(pub: any): boolean {
+  return pub?.globeDiscoverability === 'exact';
+}
+
 /** Whole years between dob and now, in UTC. Null for implausible input. */
 export function ageFrom(dob: Date | null, now: Date = new Date()): number | null {
   if (!dob || Number.isNaN(dob.getTime())) return null;
@@ -306,15 +384,20 @@ export interface Coarse {
   geohash5: string | null;
   approxLocation: { lat: number; lng: number } | null;
   age: number | null;
+  /** Only when globeDiscoverability is 'exact' (see header). */
+  preciseLocation: { lat: number; lng: number } | null;
 }
 
-export function computeCoarse(uid: string, pub: any, priv: any, now: Date = new Date(), key?: string): Coarse {
+export function computeCoarse(
+  uid: string, pub: any, priv: any, now: Date = new Date(), key?: string, preciseKey?: string,
+): Coarse {
   const c = discoverableCoords(pub, priv, now);
   const a = c ? approxLocationFor(uid, c[0], c[1], key) : null;
   return {
     geohash5: a?.geohash5 ?? null,
     approxLocation: a?.approxLocation ?? null,
     age: ageFrom(dateOfBirthOf(pub, priv), now),
+    preciseLocation: c && wantsPreciseLocation(pub) ? preciseLocationFor(uid, c[0], c[1], preciseKey) : null,
   };
 }
 
