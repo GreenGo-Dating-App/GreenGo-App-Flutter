@@ -51,9 +51,14 @@ class MySpaceScreen extends StatelessWidget {
     required this.currentUserId,
     this.repository,
     this.clock,
+    this.embedded = false,
   });
 
   final String currentUserId;
+
+  /// Shown inside another page (the Business Center "My Space" tab): no own
+  /// top bar, the host page provides the title.
+  final bool embedded;
 
   /// Defaults to [FirestoreMySpaceRepository] (tests inject a fake).
   final MySpaceRepository? repository;
@@ -82,15 +87,16 @@ class MySpaceScreen extends StatelessWidget {
                 MySpaceCalendarCubit(repository: repo, uid: currentUserId),
           ),
         ],
-        child: _MySpaceView(currentUserId: currentUserId),
+        child: _MySpaceView(currentUserId: currentUserId, embedded: embedded),
       ),
     );
   }
 }
 
 class _MySpaceView extends StatefulWidget {
-  const _MySpaceView({required this.currentUserId});
+  const _MySpaceView({required this.currentUserId, this.embedded = false});
   final String currentUserId;
+  final bool embedded;
 
   @override
   State<_MySpaceView> createState() => _MySpaceViewState();
@@ -220,7 +226,7 @@ class _MySpaceViewState extends State<_MySpaceView> {
     final l = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
-      appBar: AppBar(
+      appBar: widget.embedded ? null : AppBar(
         backgroundColor: AppColors.backgroundDark,
         foregroundColor: AppColors.textPrimary,
         elevation: 0,

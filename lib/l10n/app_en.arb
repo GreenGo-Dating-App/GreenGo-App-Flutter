@@ -14408,5 +14408,205 @@
   "bcStorefrontIntro": "What customers see: your page, address, hours and verification.",
   "@bcStorefrontIntro": {
     "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "followersFilterAll": "All followers",
+  "@followersFilterAll": {
+    "description": "Business followers page: filter by an event or experience the business created (owner request 2026-10-15)."
+  },
+  "followersFilterTitle": "Show people of an event or experience",
+  "@followersFilterTitle": {
+    "description": "Business followers page: filter by an event or experience the business created (owner request 2026-10-15)."
+  },
+  "followersFilterUpcomingEvents": "Upcoming events",
+  "@followersFilterUpcomingEvents": {
+    "description": "Business followers page: filter by an event or experience the business created (owner request 2026-10-15)."
+  },
+  "followersFilterPastEvents": "Past events",
+  "@followersFilterPastEvents": {
+    "description": "Business followers page: filter by an event or experience the business created (owner request 2026-10-15)."
+  },
+  "followersFilterActiveExperiences": "Active experiences",
+  "@followersFilterActiveExperiences": {
+    "description": "Business followers page: filter by an event or experience the business created (owner request 2026-10-15)."
+  },
+  "followersFilterPastExperiences": "Past experiences",
+  "@followersFilterPastExperiences": {
+    "description": "Business followers page: filter by an event or experience the business created (owner request 2026-10-15)."
+  },
+  "followersFilterNone": "You haven't created events or experiences yet.",
+  "@followersFilterNone": {
+    "description": "Business followers page: filter by an event or experience the business created (owner request 2026-10-15)."
+  },
+  "followersOnlyToggle": "Followers only",
+  "@followersOnlyToggle": {
+    "description": "Business followers page: filter by an event or experience the business created (owner request 2026-10-15)."
+  },
+  "followersAudienceEmpty": "Nobody to show here yet.",
+  "@followersAudienceEmpty": {
+    "description": "Business followers page: filter by an event or experience the business created (owner request 2026-10-15)."
+  },
+  "followerBadge": "Follower",
+  "@followerBadge": {
+    "description": "Business followers page: filter by an event or experience the business created (owner request 2026-10-15)."
+  },
+  "followersAudienceCount": "{people, plural, =1{1 person} other{{people} people}} · {followers} follow you",
+  "@followersAudienceCount": {
+    "description": "Business followers page: filter by an event or experience the business created (owner request 2026-10-15).",
+    "placeholders": {
+      "people": {
+        "type": "int"
+      },
+      "followers": {
+        "type": "int"
+      }
+    }
+  },
+  "followersAudienceCapped": "Showing the first {count} people.",
+  "@followersAudienceCapped": {
+    "description": "Business followers page: filter by an event or experience the business created (owner request 2026-10-15).",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "peopleSearchHint": "Search by name",
+  "@peopleSearchHint": {
+    "description": "Advanced search on the business Contacts and Followers pages (owner request 2026-10-15)."
+  },
+  "peopleSearchFilters": "Filters",
+  "@peopleSearchFilters": {
+    "description": "Advanced search on the business Contacts and Followers pages (owner request 2026-10-15)."
+  },
+  "peopleSearchContactType": "Kind of contact",
+  "@peopleSearchContactType": {
+    "description": "Advanced search on the business Contacts and Followers pages (owner request 2026-10-15)."
+  },
+  "peopleSearchPeriod": "Period",
+  "@peopleSearchPeriod": {
+    "description": "Advanced search on the business Contacts and Followers pages (owner request 2026-10-15)."
+  },
+  "peopleSearchCountry": "Country",
+  "@peopleSearchCountry": {
+    "description": "Advanced search on the business Contacts and Followers pages (owner request 2026-10-15)."
+  },
+  "peopleSearchLanguage": "Language",
+  "@peopleSearchLanguage": {
+    "description": "Advanced search on the business Contacts and Followers pages (owner request 2026-10-15)."
+  },
+  "peopleSearchClear": "Clear filters",
+  "@peopleSearchClear": {
+    "description": "Advanced search on the business Contacts and Followers pages (owner request 2026-10-15)."
+  },
+  "peopleSearchApply": "Show results",
+  "@peopleSearchApply": {
+    "description": "Advanced search on the business Contacts and Followers pages (owner request 2026-10-15)."
+  },
+  "peopleSearchLastDays": "Last {days} days",
+  "@peopleSearchLastDays": {
+    "description": "Advanced search on the business Contacts and Followers pages (owner request 2026-10-15).",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "peopleSearchResults": "{count, plural, =0{No results} =1{1 result} other{{count} results}}",
+  "@peopleSearchResults": {
+    "description": "Advanced search on the business Contacts and Followers pages (owner request 2026-10-15).",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "bcTabSettings": "Settings",
+  "@bcTabSettings": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
+  },
+  "bcSettingsIntro": "Your company information. Complete the required items so customers can find you and you can sell and receive invoices.",
+  "@bcSettingsIntro": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
+  },
+  "bcCompanyProgress": "{done} of {total} required items complete",
+  "@bcCompanyProgress": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15).",
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "bcRequiredSection": "Required",
+  "@bcRequiredSection": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
+  },
+  "bcOptionalSection": "Recommended",
+  "@bcOptionalSection": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
+  },
+  "bcCheckName": "Business name",
+  "@bcCheckName": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
+  },
+  "bcCheckCategory": "Category",
+  "@bcCheckCategory": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
+  },
+  "bcCheckDescription": "Description",
+  "@bcCheckDescription": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
+  },
+  "bcCheckAddress": "Business address",
+  "@bcCheckAddress": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
+  },
+  "bcCheckInvoice": "Invoice details",
+  "@bcCheckInvoice": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
+  },
+  "bcCheckPayments": "Payment account (Stripe or Mercado Pago)",
+  "@bcCheckPayments": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
+  },
+  "bcCheckHours": "Opening hours",
+  "@bcCheckHours": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
+  },
+  "bcCheckContact": "Contact: WhatsApp or links",
+  "@bcCheckContact": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
+  },
+  "bcCheckCover": "Cover photo",
+  "@bcCheckCover": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
+  },
+  "bcCheckVerification": "Verified badge",
+  "@bcCheckVerification": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
+  },
+  "bcCheckDone": "Done",
+  "@bcCheckDone": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
+  },
+  "bcCheckMissing": "Missing: tap to add",
+  "@bcCheckMissing": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
+  },
+  "bcCheckOptional": "Not set",
+  "@bcCheckOptional": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
+  },
+  "bcTodoCompany": "{count, plural, =1{1 company detail missing in Settings} other{{count} company details missing in Settings}}",
+  "@bcTodoCompany": {
+    "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15).",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   }
 }

@@ -10,6 +10,7 @@ import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../profile/domain/repositories/profile_repository.dart';
+import '../widgets/people_search.dart';
 
 /// Business Leads / enquiries list.
 ///
@@ -24,11 +25,21 @@ import '../../../profile/domain/repositories/profile_repository.dart';
 ///   * Names + avatars come from the batched, cached [UserDirectoryService]
 ///     after the rows paint; a failed/missing profile falls back to a neutral
 ///     placeholder so one bad doc never breaks the list.
+///   * Advanced search (owner request 2026-10-15): name, kind of contact,
+///     period, country and language, over the newest [maxSearch] contacts
+///     loaded once ([PeopleSearchBar]).
 class BusinessLeadsScreen extends StatefulWidget {
-  const BusinessLeadsScreen({required this.businessId, super.key});
+  const BusinessLeadsScreen({required this.businessId, this.firestore, this.clock, super.key});
 
   /// The business's own uid — the `business_leads/{businessId}` document owner.
   final String businessId;
+
+  /// Test seams.
+  final FirebaseFirestore? firestore;
+  final DateTime Function()? clock;
+
+  /// Contacts the advanced search loads (newest first).
+  static const int maxSearch = 2000;
 
   @override
   State<BusinessLeadsScreen> createState() => _BusinessLeadsScreenState();
@@ -49,8 +60,54 @@ class _BusinessLeadsScreenState extends State<BusinessLeadsScreen> {
   /// Bumped by refresh so a stale page never lands in the new list.
   int _gen = 0;
 
-  CollectionReference<Map<String, dynamic>> get _col => FirebaseFirestore
-      .instance
+  PeopleQuery _q = const PeopleQuery();
+  List<_Lead>? _all;
+  final Map<String, PersonFacts> _facts = {};
+  bool _searchLoading = false;
+
+  Future<void> _onQuery(PeopleQuery q) async {
+    setState(() => _q = q);
+    if (!q.isActive || _all != null) return;
+    setState(() => _searchLoading = true);
+    var all = <_Lead>[];
+    try {
+      final snap = await _col.orderBy('updatedAt', descending: true).limit(BusinessLeadsScreen.maxSearch).get();
+      all = snap.docs.map((d) => _Lead.fromDoc(d.id, d.data())).toList();
+    } catch (_) {
+      all = List<_Lead>.from(_leads);
+    }
+    final uids = all.map((l) => l.uid).toList();
+    Map<String, dynamic> profiles = const {};
+    try {
+      profiles = await UserDirectoryService.instance.resolveProfiles(uids);
+    } catch (_) {}
+    for (final l in all) {
+      _facts[l.uid] = PersonFacts(
+        uid: l.uid,
+        name: UserDirectoryService.instance.cached(l.uid)?.name ?? '',
+        profile: profiles[l.uid],
+        addedAt: l.updatedAt,
+        leadType: l.type,
+      );
+    }
+    if (!mounted) return;
+    setState(() {
+      _all = all;
+      _searchLoading = false;
+    });
+  }
+
+  List<_Lead> get _hits {
+    final now = (widget.clock ?? DateTime.now)();
+    return (_all ?? const <_Lead>[]).where((l) {
+      final f = _facts[l.uid];
+      final name = UserDirectoryService.instance.cached(l.uid)?.name ?? f?.name ?? '';
+      return matchesPeopleQuery(
+          PersonFacts(uid: l.uid, name: name, profile: f?.profile, addedAt: l.updatedAt, leadType: l.type), _q, now);
+    }).toList();
+  }
+
+  CollectionReference<Map<String, dynamic>> get _col => (widget.firestore ?? FirebaseFirestore.instance)
       .collection('business_leads')
       .doc(widget.businessId)
       .collection('leads');
@@ -174,7 +231,38 @@ class _BusinessLeadsScreenState extends State<BusinessLeadsScreen> {
           ),
         ),
       ),
-      body: _buildBody(l10n),
+      body: Column(children: [
+        PeopleSearchBar(query: _q, onChanged: _onQuery, people: _facts.values.toList(), showLeadType: true),
+        Expanded(
+          child: _searchLoading
+              ? _loadingIndicator()
+              : (_q.isActive ? _buildSearch(l10n) : _buildBody(l10n)),
+        ),
+      ]),
+    );
+  }
+
+  Widget _buildSearch(AppLocalizations l10n) {
+    final hits = _hits;
+    return ListView(
+      key: const ValueKey('leads-search-results'),
+      padding: const EdgeInsets.all(AppDimensions.paddingL),
+      children: [
+        Text(l10n.peopleSearchResults(hits.length),
+            key: const ValueKey('people-search-count'),
+            style: const TextStyle(color: AppColors.textSecondary, fontSize: 14, fontWeight: FontWeight.w600)),
+        const SizedBox(height: 12),
+        if (hits.isEmpty)
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 24),
+            child: Text(l10n.followersAudienceEmpty,
+                textAlign: TextAlign.center, style: const TextStyle(color: AppColors.textSecondary)),
+          ),
+        for (final l in hits) ...[
+          ListenableBuilder(listenable: UserDirectoryService.instance, builder: (_, __) => _leadTile(l)),
+          const SizedBox(height: 12),
+        ],
+      ],
     );
   }
 

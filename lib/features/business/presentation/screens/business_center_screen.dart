@@ -13,27 +13,34 @@ import '../../../finance_documents/presentation/widgets/billing_status.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
+import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../../profile/presentation/widgets/edit_section_card.dart';
 import '../../../ticket_payments/domain/ticket_payments.dart';
 import '../../data/business_center_repository.dart';
 import '../business_tools.dart';
+import '../company_checklist.dart';
+import '../../../my_space/data/my_space_repository.dart';
+import '../../../my_space/presentation/screens/my_space_screen.dart';
 import 'business_hub_screen.dart';
 
 /// Business Center (owner request 2026-10-14): one CRM-style place to run a
 /// business, opened from the Explore header and from Profile > Business.
 /// Tabs: Overview (this month + what needs action), Customers, Sales,
-/// Listings, Marketing, Storefront. Every tool of the former Business hub is
+/// My Space, Marketing, Storefront, Settings (company information checklist).
+/// Every tool of the former Business hub is
 /// here (same screens, [BusinessTools]); experiences stay in My Space.
 /// A paused business (membership below Silver) gets the hub's reactivate
 /// state instead.
 class BusinessCenterScreen extends StatefulWidget {
-  const BusinessCenterScreen({required this.profile, this.repository, this.billingRepository, this.clock, super.key});
+  const BusinessCenterScreen(
+      {required this.profile, this.repository, this.billingRepository, this.mySpaceRepository, this.clock, super.key});
 
   final Profile profile;
 
   /// Test seams.
   final BusinessCenterRepository? repository;
   final BillingProfileRepository? billingRepository;
+  final MySpaceRepository? mySpaceRepository;
   final DateTime Function()? clock;
 
   /// From a screen without a [ProfileBloc] (Explore): brings its own.
@@ -53,7 +60,13 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
   late Future<BusinessMonthStats> _stats;
   late Future<BusinessTodo> _todo;
 
-  Profile get p => widget.profile;
+  /// The latest own profile from [ProfileBloc] (edits made in the opened
+  /// tools show up here at once), else the one the screen was opened with.
+  Profile? _live;
+  Profile get p => _live ?? widget.profile;
+
+  /// paymentsConnected from the last [_todo] result (Settings checklist).
+  bool? _paymentsConnected;
 
   @override
   void initState() {
@@ -65,6 +78,9 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
     final now = (widget.clock ?? DateTime.now)();
     _stats = _repo.monthStats(p.userId, now);
     _todo = _repo.todo(p.userId);
+    _todo.then((t) {
+      if (mounted) setState(() => _paymentsConnected = t.paymentsConnected);
+    }, onError: (Object _) {});
   }
 
   Future<void> _refresh() async {
@@ -88,9 +104,13 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
       (l.bcTabOverview, Icons.dashboard_outlined, _overview(l)),
       (l.bcTabCustomers, Icons.people_alt_outlined, _customers(l)),
       (l.bcTabSales, Icons.payments_outlined, _sales(l)),
-      (l.bcTabListings, Icons.event_note, _listings(l)),
+      // Events, experiences and the door scanner live in My Space (owner,
+      // 2026-10-15: "replace those menus with the My Space page").
+      (l.msTitle, Icons.space_dashboard_outlined,
+          KeyedSubtree(key: const ValueKey('bc-my-space'), child: MySpaceScreen(currentUserId: p.userId, embedded: true, repository: widget.mySpaceRepository))),
       (l.bcTabMarketing, Icons.campaign_outlined, _marketing(l)),
       (l.bcTabStorefront, Icons.storefront_outlined, _storefront(l)),
+      (l.bcTabSettings, Icons.settings_outlined, _settings(l)),
     ];
     final body = DefaultTabController(
       length: tabs.length,
@@ -130,7 +150,26 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
         body: TabBarView(children: [for (final t in tabs) t.$3]),
       ),
     );
-    return p.isBusiness ? BillingStatusScope(repository: widget.billingRepository, child: body) : body;
+    final scoped = p.isBusiness ? BillingStatusScope(repository: widget.billingRepository, child: body) : body;
+    ProfileBloc? bloc;
+    try {
+      bloc = context.read<ProfileBloc>();
+    } catch (_) {
+      bloc = null;
+    }
+    if (bloc == null) return scoped;
+    return BlocListener<ProfileBloc, ProfileState>(
+      bloc: bloc,
+      listener: (context, state) {
+        final next = switch (state) {
+          ProfileLoaded(:final profile) => profile,
+          ProfileUpdated(:final profile) => profile,
+          _ => null,
+        };
+        if (next != null && next.userId == widget.profile.userId) setState(() => _live = next);
+      },
+      child: scoped,
+    );
   }
 
   // ───────────────────────────────────────────── Overview
@@ -157,8 +196,7 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
             Text(l.bcQuickActions, style: _h),
             const SizedBox(height: 10),
             Wrap(spacing: 10, runSpacing: 10, children: [
-              _quick(l.businessHubScanner, Icons.qr_code_scanner, () => BusinessTools.openScanner(context, p), 'bc-q-scan'),
-              _quick(l.businessEventsTitle, Icons.event_note, () => _go(() => BusinessTools.openManageEvents(context, p)), 'bc-q-events'),
+              _quick(l.msTitle, Icons.space_dashboard_outlined, () => DefaultTabController.of(context).animateTo(3), 'bc-q-my-space'),
               _quick(l.promoteTitle, Icons.campaign, () => BusinessTools.openPromote(context, p), 'bc-q-promote'),
               _quick(l.editStorefront, Icons.edit_note, () => BusinessTools.openStorefrontEditor(context, p), 'bc-q-edit'),
             ]),
@@ -233,7 +271,18 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
     return BlocBuilder<BillingProfileCubit, BillingProfileState>(
       builder: (context, b) {
         final billingMissing = b.status == BillingLoadStatus.ready && !b.complete;
-        if (items.isEmpty && !billingMissing) {
+        final missing = missingRequired(companyChecklist(p,
+            billingComplete: b.status == BillingLoadStatus.ready ? b.complete : null,
+            paymentsConnected: t.paymentsConnected));
+        // Invoice details and payments already have their own rows.
+        final company = missing.where((m) => m != CompanyItem.invoiceDetails && m != CompanyItem.payments).length;
+        final rows = [
+          if (company > 0)
+            _todoItem(l.bcTodoCompany(company), Icons.business_outlined, 'bc-todo-company',
+                () => DefaultTabController.of(context).animateTo(6)),
+          ...items,
+        ];
+        if (rows.isEmpty && !billingMissing) {
           return Padding(
             key: const ValueKey('bc-todo-none'),
             padding: const EdgeInsets.symmetric(vertical: 6),
@@ -244,7 +293,7 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
             ]),
           );
         }
-        return Column(children: items);
+        return Column(children: rows);
       },
     );
   }
@@ -317,15 +366,6 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
         ],
       ]);
 
-  Widget _listings(AppLocalizations l) => _tab('bc-listings', l.bcListingsIntro, [
-        _tile('bc-events', l.businessEventsTitle, l.bcEventsSubtitle, Icons.event_note,
-            () => _go(() => BusinessTools.openManageEvents(context, p))),
-        _tile('bc-experiences', l.bcExperiencesTitle, l.bcExperiencesSubtitle, Icons.explore_outlined,
-            () => BusinessTools.openMySpace(context, p)),
-        _tile('bc-scanner', l.businessHubScanner, l.businessHubScannerSubtitle, Icons.qr_code_scanner,
-            () => BusinessTools.openScanner(context, p)),
-      ]);
-
   Widget _marketing(AppLocalizations l) => _tab('bc-marketing', l.bcMarketingIntro, [
         _tile('bc-promote', l.promoteTitle, l.featureThisEvent, Icons.campaign,
             () => BusinessTools.openPromote(context, p)),
@@ -334,6 +374,107 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
         _tile('bc-followers-m', l.businessHubFollowers, l.businessHubFollowersSubtitle, Icons.people_alt_outlined,
             () => BusinessTools.openFollowers(context, p)),
       ]);
+
+  Widget _settings(AppLocalizations l) => BlocBuilder<BillingProfileCubit, BillingProfileState>(
+        builder: (context, b) {
+          final c = companyChecklist(p,
+              billingComplete: b.status == BillingLoadStatus.ready ? b.complete : null,
+              paymentsConnected: _paymentsConnected);
+          final req = CompanyItem.values.where((i) => i.required).toList();
+          final done = req.where((i) => c[i] == true).length;
+          String title(CompanyItem i) => switch (i) {
+                CompanyItem.name => l.bcCheckName,
+                CompanyItem.category => l.bcCheckCategory,
+                CompanyItem.description => l.bcCheckDescription,
+                CompanyItem.address => l.bcCheckAddress,
+                CompanyItem.invoiceDetails => l.bcCheckInvoice,
+                CompanyItem.payments => l.bcCheckPayments,
+                CompanyItem.hours => l.bcCheckHours,
+                CompanyItem.contact => l.bcCheckContact,
+                CompanyItem.cover => l.bcCheckCover,
+                CompanyItem.verification => l.bcCheckVerification,
+              };
+          Future<void> open(CompanyItem i) => switch (i) {
+                CompanyItem.name => BusinessTools.openBusinessAccount(context, p),
+                CompanyItem.invoiceDetails => openInvoiceDetails(context),
+                CompanyItem.payments => _go(() => BusinessTools.openGetPaid(context, p)),
+                CompanyItem.verification => BusinessTools.openVerification(context, p),
+                _ => BusinessTools.openStorefrontEditor(context, p),
+              };
+          Widget row(CompanyItem i) {
+            final v = c[i];
+            final ok = v == true;
+            return Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: Material(
+                color: AppColors.backgroundCard,
+                borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                child: InkWell(
+                  key: ValueKey('bc-check-${i.name}'),
+                  borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                  onTap: () => open(i),
+                  child: Padding(
+                    padding: const EdgeInsets.all(14),
+                    child: Row(children: [
+                      Icon(ok ? Icons.check_circle : Icons.radio_button_unchecked,
+                          color: ok ? AppColors.successGreen : (i.required ? AppColors.warningAmber : AppColors.textTertiary)),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                          Text(title(i), style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w600)),
+                          const SizedBox(height: 2),
+                          Text(
+                            v == null ? '…' : (ok ? l.bcCheckDone : (i.required ? l.bcCheckMissing : l.bcCheckOptional)),
+                            key: ValueKey('bc-check-${i.name}-state'),
+                            style: TextStyle(
+                              color: ok ? AppColors.successGreen : (i.required ? AppColors.warningAmber : AppColors.textTertiary),
+                              fontSize: 12.5,
+                            ),
+                          ),
+                        ]),
+                      ),
+                      const Icon(Icons.chevron_right, color: AppColors.textTertiary),
+                    ]),
+                  ),
+                ),
+              ),
+            );
+          }
+
+          return ListView(
+            key: const ValueKey('bc-settings'),
+            padding: const EdgeInsets.all(AppDimensions.paddingL),
+            children: [
+              Text(l.bcSettingsIntro, style: const TextStyle(color: AppColors.textSecondary, fontSize: 14, height: 1.4)),
+              const SizedBox(height: 14),
+              Text(l.bcCompanyProgress(done, req.length),
+                  key: const ValueKey('bc-company-progress'),
+                  style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w700)),
+              const SizedBox(height: 8),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(4),
+                child: LinearProgressIndicator(
+                  value: req.isEmpty ? 1 : done / req.length,
+                  minHeight: 6,
+                  backgroundColor: AppColors.backgroundCard,
+                  valueColor: const AlwaysStoppedAnimation<Color>(AppColors.richGold),
+                ),
+              ),
+              const SizedBox(height: 18),
+              Text(l.bcRequiredSection.toUpperCase(), style: _caps),
+              const SizedBox(height: 8),
+              for (final i in req) row(i),
+              const SizedBox(height: 14),
+              Text(l.bcOptionalSection.toUpperCase(), style: _caps),
+              const SizedBox(height: 8),
+              for (final i in CompanyItem.values.where((i) => !i.required)) row(i),
+            ],
+          );
+        },
+      );
+
+  static const _caps =
+      TextStyle(color: AppColors.textTertiary, fontSize: 11.5, letterSpacing: 0.6, fontWeight: FontWeight.w700);
 
   Widget _storefront(AppLocalizations l) => _tab('bc-storefront', l.bcStorefrontIntro, [
         _tile('bc-view-storefront-tile', l.viewStorefront, p.businessName ?? l.businessProfileLabel,

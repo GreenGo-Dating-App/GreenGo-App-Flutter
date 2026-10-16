@@ -6377,10 +6377,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Membresía $tierName activa hasta $formattedDate$coinsText';
   }
 
@@ -16249,21 +16246,13 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Se renueva automáticamente el $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Cancelada; el acceso termina el $date.';
   }
 
@@ -19838,9 +19827,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-    String name,
-    String rewards,
-  ) {
+      String name, String rewards) {
     return '¡Recompensas de $name reclamadas! $rewards';
   }
 
@@ -20307,10 +20294,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String profileTravelerActiveSubtitle(
-    String location,
-    int hours,
-    int minutes,
-  ) {
+      String location, int hours, int minutes) {
     return '$location - quedan $hours h $minutes min';
   }
 
@@ -22257,11 +22241,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String supportReportFollowUpDetails(
-    String reason,
-    String message,
-    String user,
-    String date,
-  ) {
+      String reason, String message, String user, String date) {
     return 'Motivo: $reason\nMensaje denunciado: «$message»\nUsuario denunciado: $user\nDenunciado el: $date';
   }
 
@@ -22599,41 +22579,50 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(achievement, {
-      'first_match': 'Primera conexión',
-      'social_butterfly': 'Mariposa social',
-      'popular': 'Popular',
-      'video_enthusiast': 'Entusiasta del vídeo',
-      'daily_streak_7': 'Racha de 7 días',
-      'daily_streak_30': 'Racha de 30 días',
-      'other': 'Nuevo logro',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      achievement,
+      {
+        'first_match': 'Primera conexión',
+        'social_butterfly': 'Mariposa social',
+        'popular': 'Popular',
+        'video_enthusiast': 'Entusiasta del vídeo',
+        'daily_streak_7': 'Racha de 7 días',
+        'daily_streak_30': 'Racha de 30 días',
+        'other': 'Nuevo logro',
+      },
+    );
     return 'Logro desbloqueado: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(achievement, {
-      'first_match': 'Haz tu primera conexión',
-      'social_butterfly': 'Envía 100 mensajes',
-      'popular': 'Haz 50 conexiones',
-      'video_enthusiast': 'Completa 10 videollamadas',
-      'daily_streak_7': 'Inicia sesión 7 días seguidos',
-      'daily_streak_30': 'Inicia sesión 30 días seguidos',
-      'other': '¡Sigue así!',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      achievement,
+      {
+        'first_match': 'Haz tu primera conexión',
+        'social_butterfly': 'Envía 100 mensajes',
+        'popular': 'Haz 50 conexiones',
+        'video_enthusiast': 'Completa 10 videollamadas',
+        'daily_streak_7': 'Inicia sesión 7 días seguidos',
+        'daily_streak_30': 'Inicia sesión 30 días seguidos',
+        'other': '¡Sigue así!',
+      },
+    );
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(challenge, {
-      'send_5_messages': 'Iniciador de conversaciones',
-      'get_3_matches': 'Conector',
-      'complete_profile': 'Perfil perfecto',
-      'video_call_1': 'Cara a cara',
-      'other': 'Reto diario',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      challenge,
+      {
+        'send_5_messages': 'Iniciador de conversaciones',
+        'get_3_matches': 'Conector',
+        'complete_profile': 'Perfil perfecto',
+        'video_call_1': 'Cara a cara',
+        'other': 'Reto diario',
+      },
+    );
     return 'Reto completado: $_temp0!';
   }
 
@@ -25474,4 +25463,160 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get bcStorefrontIntro =>
       'Lo que ven los clientes: tu página, dirección, horario y verificación.';
+
+  @override
+  String get followersFilterAll => 'Todos los seguidores';
+
+  @override
+  String get followersFilterTitle => 'Ver personas de un evento o experiencia';
+
+  @override
+  String get followersFilterUpcomingEvents => 'Próximos eventos';
+
+  @override
+  String get followersFilterPastEvents => 'Eventos pasados';
+
+  @override
+  String get followersFilterActiveExperiences => 'Experiencias activas';
+
+  @override
+  String get followersFilterPastExperiences => 'Experiencias pasadas';
+
+  @override
+  String get followersFilterNone =>
+      'Aún no has creado eventos ni experiencias.';
+
+  @override
+  String get followersOnlyToggle => 'Solo seguidores';
+
+  @override
+  String get followersAudienceEmpty => 'Aún no hay nadie aquí.';
+
+  @override
+  String get followerBadge => 'Seguidor';
+
+  @override
+  String followersAudienceCount(int people, int followers) {
+    String _temp0 = intl.Intl.pluralLogic(
+      people,
+      locale: localeName,
+      other: '$people personas',
+      one: '1 persona',
+    );
+    return '$_temp0 · $followers te siguen';
+  }
+
+  @override
+  String followersAudienceCapped(int count) {
+    return 'Se muestran las primeras $count personas.';
+  }
+
+  @override
+  String get peopleSearchHint => 'Buscar por nombre';
+
+  @override
+  String get peopleSearchFilters => 'Filtros';
+
+  @override
+  String get peopleSearchContactType => 'Tipo de contacto';
+
+  @override
+  String get peopleSearchPeriod => 'Periodo';
+
+  @override
+  String get peopleSearchCountry => 'País';
+
+  @override
+  String get peopleSearchLanguage => 'Idioma';
+
+  @override
+  String get peopleSearchClear => 'Quitar filtros';
+
+  @override
+  String get peopleSearchApply => 'Ver resultados';
+
+  @override
+  String peopleSearchLastDays(int days) {
+    return 'Últimos $days días';
+  }
+
+  @override
+  String peopleSearchResults(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count resultados',
+      one: '1 resultado',
+      zero: 'Sin resultados',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get bcTabSettings => 'Ajustes';
+
+  @override
+  String get bcSettingsIntro =>
+      'La información de tu empresa. Completa lo obligatorio para que los clientes te encuentren y puedas vender y recibir facturas.';
+
+  @override
+  String bcCompanyProgress(int done, int total) {
+    return '$done de $total obligatorios completados';
+  }
+
+  @override
+  String get bcRequiredSection => 'Obligatorio';
+
+  @override
+  String get bcOptionalSection => 'Recomendado';
+
+  @override
+  String get bcCheckName => 'Nombre del negocio';
+
+  @override
+  String get bcCheckCategory => 'Categoría';
+
+  @override
+  String get bcCheckDescription => 'Descripción';
+
+  @override
+  String get bcCheckAddress => 'Dirección del negocio';
+
+  @override
+  String get bcCheckInvoice => 'Datos de facturación';
+
+  @override
+  String get bcCheckPayments => 'Cuenta de pagos (Stripe o Mercado Pago)';
+
+  @override
+  String get bcCheckHours => 'Horario';
+
+  @override
+  String get bcCheckContact => 'Contacto: WhatsApp o enlaces';
+
+  @override
+  String get bcCheckCover => 'Foto de portada';
+
+  @override
+  String get bcCheckVerification => 'Insignia de verificación';
+
+  @override
+  String get bcCheckDone => 'Hecho';
+
+  @override
+  String get bcCheckMissing => 'Falta: toca para añadir';
+
+  @override
+  String get bcCheckOptional => 'Sin configurar';
+
+  @override
+  String bcTodoCompany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Faltan $count datos de la empresa en Ajustes',
+      one: 'Falta 1 dato de la empresa en Ajustes',
+    );
+    return '$_temp0';
+  }
 }

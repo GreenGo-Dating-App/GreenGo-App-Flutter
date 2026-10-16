@@ -6,9 +6,11 @@ import 'package:greengo_chat/features/business/presentation/screens/business_cen
 import 'package:greengo_chat/features/finance_documents/data/billing_profile_repository.dart';
 import 'package:greengo_chat/features/finance_documents/domain/billing_profile.dart';
 import 'package:greengo_chat/features/membership/domain/entities/membership.dart';
+import 'package:greengo_chat/features/profile/domain/entities/business_address.dart';
 import 'package:greengo_chat/features/profile/domain/entities/profile.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 
+import '../../support/my_space_fixtures.dart';
 import '../../support/profile_fixtures.dart';
 
 class _Repo implements BusinessCenterRepository {
@@ -33,9 +35,12 @@ class _Billing implements BillingProfileRepository {
   Future<BillingStatus> save(BillingDraft draft) async => BillingStatus(complete: complete);
 }
 
-Profile _business({MembershipTier tier = MembershipTier.gold}) => buildBusinessProfile().copyWith(
+Profile _business({MembershipTier tier = MembershipTier.gold, bool complete = true}) => buildBusinessProfile().copyWith(
       membershipTier: tier,
       membershipEndDate: DateTime.now().add(const Duration(days: 30)),
+      businessCategory: complete ? 'cafe' : null,
+      storefrontBio: complete ? 'Coffee and cake' : null,
+      businessAddress: complete ? const BusinessAddress(address: 'Rua A 1', latitude: -23.5, longitude: -46.6) : null,
     );
 
 Widget _app(Widget child) => MaterialApp(
@@ -78,9 +83,9 @@ void main() {
     expect(find.byKey(const ValueKey('bc-todo-none')), findsOneWidget);
   });
 
-  testWidgets('every former Business tool is in a tab; experiences point to My Space', (t) async {
+  testWidgets('every former Business tool is in a tab; events, experiences and scanner are the My Space tab', (t) async {
     await t.pumpWidget(_app(BusinessCenterScreen(
-        profile: _business(), repository: _Repo(), billingRepository: _Billing(true))));
+        profile: _business(), repository: _Repo(), billingRepository: _Billing(true), mySpaceRepository: FakeMySpaceRepository())));
     await t.pumpAndSettle();
     Future<void> tab(String label) async {
       await t.tap(find.text(label).last);
@@ -93,10 +98,8 @@ void main() {
     await tab('Sales');
     expect(find.byKey(const ValueKey('bc-get-paid')), findsOneWidget);
     expect(find.byKey(const ValueKey('bc-invoices')), findsOneWidget);
-    await tab('Listings');
-    expect(find.byKey(const ValueKey('bc-events')), findsOneWidget);
-    expect(find.byKey(const ValueKey('bc-experiences')), findsOneWidget);
-    expect(find.byKey(const ValueKey('bc-scanner')), findsOneWidget);
+    await tab('My Space');
+    expect(find.byKey(const ValueKey('bc-my-space')), findsOneWidget);
     await tab('Marketing');
     expect(find.byKey(const ValueKey('bc-promote')), findsOneWidget);
     expect(find.byKey(const ValueKey('bc-analytics')), findsOneWidget);
@@ -104,6 +107,24 @@ void main() {
     expect(find.byKey(const ValueKey('bc-edit-storefront')), findsOneWidget);
     expect(find.byKey(const ValueKey('bc-account')), findsOneWidget);
     expect(find.byKey(const ValueKey('bc-verification')), findsOneWidget);
+  });
+
+  testWidgets('settings: company checklist, and missing details show in Action needed', (t) async {
+    t.view.physicalSize = const Size(1200, 2400);
+    t.view.devicePixelRatio = 1;
+    addTearDown(t.view.resetPhysicalSize);
+    addTearDown(t.view.resetDevicePixelRatio);
+    await t.pumpWidget(_app(BusinessCenterScreen(
+        profile: _business(complete: false), repository: _Repo(), billingRepository: _Billing(true))));
+    await t.pumpAndSettle();
+    expect(find.byKey(const ValueKey('bc-todo-company')), findsOneWidget);
+    await t.tap(find.byKey(const ValueKey('bc-todo-company')));
+    await t.pumpAndSettle();
+    expect(find.byKey(const ValueKey('bc-settings')), findsOneWidget);
+    expect(_text(t, 'bc-company-progress'), '3 of 6 required items complete');
+    expect(_text(t, 'bc-check-description-state'), 'Missing: tap to add');
+    expect(_text(t, 'bc-check-name-state'), 'Done');
+    expect(_text(t, 'bc-check-invoiceDetails-state'), 'Done');
   });
 
   testWidgets('a paused business (below Silver) gets the reactivate screen', (t) async {

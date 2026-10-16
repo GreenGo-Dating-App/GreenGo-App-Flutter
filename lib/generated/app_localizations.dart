@@ -67,7 +67,7 @@ import 'app_localizations_pt.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -90,11 +90,11 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-        delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ];
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -104,7 +104,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('it'),
     Locale('pt'),
-    Locale('pt', 'BR'),
+    Locale('pt', 'BR')
   ];
 
   /// No description provided for @culturalPassportTitle.
@@ -11380,10 +11380,7 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{tierName} membership active until {formattedDate}{coinsText}'**
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  );
+      String tierName, String formattedDate, String coinsText);
 
   /// No description provided for @membershipActivatedTitle.
   ///
@@ -28298,22 +28295,14 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Renews automatically on {date}.'**
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  );
+      String plan, String price, String interval, String date);
 
   /// Web (Stripe) subscription cancelled at period end
   ///
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Cancelled; access ends on {date}.'**
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  );
+      String plan, String price, String interval, String date);
 
   /// No description provided for @billingIntervalMonth.
   ///
@@ -38316,11 +38305,7 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reason: {reason}\nReported message: \"{message}\"\nReported user: {user}\nReported at: {date}'**
   String supportReportFollowUpDetails(
-    String reason,
-    String message,
-    String user,
-    String date,
-  );
+      String reason, String message, String user, String date);
 
   /// No description provided for @supportChatWithGreenGoSubject.
   ///
@@ -43247,6 +43232,252 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'What customers see: your page, address, hours and verification.'**
   String get bcStorefrontIntro;
+
+  /// Business followers page: filter by an event or experience the business created (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'All followers'**
+  String get followersFilterAll;
+
+  /// Business followers page: filter by an event or experience the business created (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Show people of an event or experience'**
+  String get followersFilterTitle;
+
+  /// Business followers page: filter by an event or experience the business created (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Upcoming events'**
+  String get followersFilterUpcomingEvents;
+
+  /// Business followers page: filter by an event or experience the business created (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Past events'**
+  String get followersFilterPastEvents;
+
+  /// Business followers page: filter by an event or experience the business created (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Active experiences'**
+  String get followersFilterActiveExperiences;
+
+  /// Business followers page: filter by an event or experience the business created (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Past experiences'**
+  String get followersFilterPastExperiences;
+
+  /// Business followers page: filter by an event or experience the business created (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'You haven\'t created events or experiences yet.'**
+  String get followersFilterNone;
+
+  /// Business followers page: filter by an event or experience the business created (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Followers only'**
+  String get followersOnlyToggle;
+
+  /// Business followers page: filter by an event or experience the business created (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Nobody to show here yet.'**
+  String get followersAudienceEmpty;
+
+  /// Business followers page: filter by an event or experience the business created (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Follower'**
+  String get followerBadge;
+
+  /// Business followers page: filter by an event or experience the business created (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'{people, plural, =1{1 person} other{{people} people}} · {followers} follow you'**
+  String followersAudienceCount(int people, int followers);
+
+  /// Business followers page: filter by an event or experience the business created (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Showing the first {count} people.'**
+  String followersAudienceCapped(int count);
+
+  /// Advanced search on the business Contacts and Followers pages (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Search by name'**
+  String get peopleSearchHint;
+
+  /// Advanced search on the business Contacts and Followers pages (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Filters'**
+  String get peopleSearchFilters;
+
+  /// Advanced search on the business Contacts and Followers pages (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Kind of contact'**
+  String get peopleSearchContactType;
+
+  /// Advanced search on the business Contacts and Followers pages (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Period'**
+  String get peopleSearchPeriod;
+
+  /// Advanced search on the business Contacts and Followers pages (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Country'**
+  String get peopleSearchCountry;
+
+  /// Advanced search on the business Contacts and Followers pages (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get peopleSearchLanguage;
+
+  /// Advanced search on the business Contacts and Followers pages (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Clear filters'**
+  String get peopleSearchClear;
+
+  /// Advanced search on the business Contacts and Followers pages (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Show results'**
+  String get peopleSearchApply;
+
+  /// Advanced search on the business Contacts and Followers pages (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Last {days} days'**
+  String peopleSearchLastDays(int days);
+
+  /// Advanced search on the business Contacts and Followers pages (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No results} =1{1 result} other{{count} results}}'**
+  String peopleSearchResults(int count);
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get bcTabSettings;
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Your company information. Complete the required items so customers can find you and you can sell and receive invoices.'**
+  String get bcSettingsIntro;
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'{done} of {total} required items complete'**
+  String bcCompanyProgress(int done, int total);
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Required'**
+  String get bcRequiredSection;
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Recommended'**
+  String get bcOptionalSection;
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Business name'**
+  String get bcCheckName;
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Category'**
+  String get bcCheckCategory;
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Description'**
+  String get bcCheckDescription;
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Business address'**
+  String get bcCheckAddress;
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Invoice details'**
+  String get bcCheckInvoice;
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Payment account (Stripe or Mercado Pago)'**
+  String get bcCheckPayments;
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Opening hours'**
+  String get bcCheckHours;
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Contact: WhatsApp or links'**
+  String get bcCheckContact;
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Cover photo'**
+  String get bcCheckCover;
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Verified badge'**
+  String get bcCheckVerification;
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get bcCheckDone;
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Missing: tap to add'**
+  String get bcCheckMissing;
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'Not set'**
+  String get bcCheckOptional;
+
+  /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 company detail missing in Settings} other{{count} company details missing in Settings}}'**
+  String bcTodoCompany(int count);
 }
 
 class _AppLocalizationsDelegate
@@ -43260,13 +43491,13 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-    'de',
-    'en',
-    'es',
-    'fr',
-    'it',
-    'pt',
-  ].contains(locale.languageCode);
+        'de',
+        'en',
+        'es',
+        'fr',
+        'it',
+        'pt'
+      ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -43302,9 +43533,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-    'an issue with the localizations generation tool. Please file an issue '
-    'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.',
-  );
+      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+      'an issue with the localizations generation tool. Please file an issue '
+      'on GitHub with a reproducible sample app and the gen-l10n configuration '
+      'that was used.');
 }
