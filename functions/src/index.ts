@@ -866,6 +866,13 @@ export {
 // Private-content warning: server-only proof that the user accepted the
 // warning before opening another user's private photos.
 export { acknowledgePrivateContentWarning } from './legal/privateContentWarning';
+// Terms 24.2 a: advance notice of an important Terms change, emailed in
+// bounded, idempotent pages (admin panel, superAdmin).
+export { adminSendTermsChangeNotice } from './legal/termsChangeNotice';
+// Terms 12.4 / DSA art. 30: trader declaration of hosts / sellers.
+export { getMyTraderDeclaration, saveMyTraderDeclaration } from './legal/traderDeclaration';
+// Terms 14.1: "Talk to a person" in the support chat.
+export { requestHumanSupport } from './admin/supportHandoff';
 
 // Membership caps (audit 2026-10-11): server-owned usage counters the rules
 // read (daily connects, ongoing events, created groups) + backstop deletes.

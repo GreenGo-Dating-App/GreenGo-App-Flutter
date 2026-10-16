@@ -3360,6 +3360,26 @@ service cloud.firestore {
     // text) and never changed: users/{uid} is owner-writable and could not
     // prove anything. The owner may read their own records (the app checks
     // it on a new device so the warning is shown once per user per version).
+    // Terms 12.4 / DSA art. 30 trader declaration (functions
+    // legal/traderDeclaration.ts). The full declaration (ID number included)
+    // is server-only like finance_billing_profiles: the owner reads it masked
+    // through getMyTraderDeclaration, admins read it here. The public part
+    // (name, address, phone, email, trade register; never the ID number) is
+    // what guests see on Experiences and at ticket checkout.
+    match /trader_declarations/{uid} {
+      allow read: if isAdmin() || isAdminPanelUser();
+      allow write: if false;
+    }
+    match /trader_public/{uid} {
+      allow get: if isSignedIn();
+      allow list, write: if false;
+    }
+    // Terms 24.2 a notice runs (adminSendTermsChangeNotice counters).
+    match /legal_notice_runs/{runId} {
+      allow read: if isAdmin() || isAdminPanelUser();
+      allow write: if false;
+    }
+
     match /legal_acknowledgements/{uid} {
       allow read, write: if false;
       match /items/{ackId} {

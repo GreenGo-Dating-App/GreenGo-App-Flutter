@@ -2736,7 +2736,6 @@
   "learningCategoryProgress": "Category Progress",
   "learningCheck": "Check",
   "learningCheckBackSoon": "Check back soon!",
-  "learningCoachSessionCost": "10 coins/session  |  25 XP reward",
   "learningContinue": "Continue",
   "learningCorrect": "Correct!",
   "learningCorrectAnswer": "Correct: {answer}",
@@ -4953,7 +4952,7 @@
   "guideCoinsItem1": "Coins are used for premium actions. Here are the costs:",
   "guideCoinsItem2": "• Priority Connect: 10 coins  • Boost: 50 coins  • Direct Connect: 2/day free, then 50 coins",
   "guideCoinsItem3": "• Incognito: 30 coins/day  • Traveler: 100 coins/day",
-  "guideCoinsItem4": "• Listen (TTS): 5 coins  • Grid Extend: 10 coins  • Learning Coach: 10 coins/session",
+  "guideCoinsItem4": "• Listen (TTS): 5 coins  • Grid Extend: 10 coins",
   "guideCoinsItem5": "You receive 20 free coins daily. Earn more through achievements, leaderboard rankings, and the Shop.",
   "guideLeaderboardTitle": "Leaderboard",
   "guideLeaderboardItem1": "Compete with other users to climb the leaderboard and earn rewards.",
@@ -14899,5 +14898,203 @@
   },
   "@deleteAccountConfirmation": {
     "description": "Delete account dialog (Terms 7.3, 8.7; privacy policy retention). Keep the bullets."
+  },
+  "legalUpdate530BulletReferral": "Referral rewards described as they work in the app (1 week of Base for the new user, 50 Coins for you, extra rewards at 5, 10 and 20 friends)",
+  "@legalUpdate530BulletReferral": {
+    "description": "Terms 5.3.0 \"what changes\" bullet (re-acceptance sheet and advance notice)."
+  },
+  "legalUpdate530BulletCoinGifts": "Coin gifts arrive instantly and must be between 10 and 1,000 Coins",
+  "@legalUpdate530BulletCoinGifts": {
+    "description": "Terms 5.3.0 \"what changes\" bullet (re-acceptance sheet and advance notice)."
+  },
+  "legalUpdate530BulletMenus": "Where to find Manage subscription and Purchases & withdrawal in the app",
+  "@legalUpdate530BulletMenus": {
+    "description": "Terms 5.3.0 \"what changes\" bullet (re-acceptance sheet and advance notice)."
+  },
+  "legalUpdate530BulletModeration": "How moderation decisions, notices and appeals work, including appeals by the person who reported",
+  "@legalUpdate530BulletModeration": {
+    "description": "Terms 5.3.0 \"what changes\" bullet (re-acceptance sheet and advance notice)."
+  },
+  "legalUpdate530BulletTraders": "Traders selling Experiences to people in the EU must give their trader details",
+  "@legalUpdate530BulletTraders": {
+    "description": "Terms 5.3.0 \"what changes\" bullet (re-acceptance sheet and advance notice)."
+  },
+  "legalUpdateCloseAccount": "I don't accept – close my account",
+  "@legalUpdateCloseAccount": {
+    "description": "Third option of the Terms re-acceptance sheet (Terms 24.2 c)."
+  },
+  "legalUpdateCloseAccountTitle": "Close your account",
+  "@legalUpdateCloseAccountTitle": {
+    "description": "Dialog title: end the contract over a Terms change."
+  },
+  "legalUpdateCloseAccountBody": "If you don't accept the new Terms, you can end your contract with GreenGo free of charge by deleting your account. If you paid for a Membership in advance, you get a refund of the unused part: write to {email}.\n\nNext, open your Profile and tap \"Delete Account\" at the bottom.",
+  "@legalUpdateCloseAccountBody": {
+    "description": "Terms 24.2 c explanation before the delete-account flow.",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "legalUpdateCloseAccountContinue": "Go to Delete Account",
+  "@legalUpdateCloseAccountContinue": {
+    "description": "Button: continue to the delete-account flow."
+  },
+  "legalUpcomingTitle": "Our Terms change on {date}",
+  "@legalUpcomingTitle": {
+    "description": "Advance notice of an upcoming Terms version (Terms 24.2 a).",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "legalUpcomingIntro": "Version {version} of the Terms and Conditions applies from {date}. When it takes effect, we will ask you to accept it. What changes:",
+  "@legalUpcomingIntro": {
+    "description": "Advance notice intro.",
+    "placeholders": {
+      "version": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "legalUpcomingRights": "If you don't accept the change, you can end your contract free of charge before {date} by deleting your account (Profile > Delete Account) and get a refund of the unused part of a prepaid Membership: {email}.",
+  "@legalUpcomingRights": {
+    "description": "Terms 24.2 c rights in the advance notice.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "legalUpcomingRead": "Read the new Terms",
+  "@legalUpcomingRead": {
+    "description": "Opens the public text of the upcoming Terms."
+  },
+  "legalUpcomingGotIt": "Got it",
+  "@legalUpcomingGotIt": {
+    "description": "Dismisses the advance notice for this version."
+  },
+  "supportAiNotice": "Replies here may come from our AI assistant (marked as AI).",
+  "@supportAiNotice": {
+    "description": "Support chat: the AI assistant notice (Terms 14.1)."
+  },
+  "supportTalkToPerson": "Talk to a person",
+  "@supportTalkToPerson": {
+    "description": "Support chat: hand the conversation to a human."
+  },
+  "supportHumanRequested": "A person from our team will reply here.",
+  "@supportHumanRequested": {
+    "description": "Support chat: a human has the conversation."
+  },
+  "supportTalkToPersonFailed": "We couldn't reach the team right now. Please try again.",
+  "@supportTalkToPersonFailed": {
+    "description": "Support chat: handoff failed."
+  },
+  "promotionalUseTitle": "Promotional use of my content",
+  "@promotionalUseTitle": {
+    "description": "Privacy & data switch (Terms 15.3)."
+  },
+  "promotionalUseSubtitle": "Let GreenGo use your name, photos and posts in its advertising outside the app. Off unless you turn it on.",
+  "@promotionalUseSubtitle": {
+    "description": "Privacy & data switch explanation (Terms 15.3)."
+  },
+  "bcCheckTrader": "Trader status (EU)",
+  "@bcCheckTrader": {
+    "description": "Business Center checklist item (Terms 12.4)."
+  },
+  "traderTitle": "Trader status (EU)",
+  "@traderTitle": {
+    "description": "Trader declaration screen title."
+  },
+  "traderIntro": "If you sell Experiences or tickets as part of your trade, business or profession, you are a trader. EU law (Digital Services Act) requires us to show your trader details to guests.",
+  "@traderIntro": {
+    "description": "Trader declaration intro (Terms 12.4, DSA art. 30)."
+  },
+  "traderQuestion": "Do you sell as a trader?",
+  "@traderQuestion": {
+    "description": "Trader declaration question."
+  },
+  "traderYes": "Yes, I'm a trader",
+  "@traderYes": {
+    "description": "Trader declaration answer."
+  },
+  "traderNo": "No, I'm a private person",
+  "@traderNo": {
+    "description": "Trader declaration answer."
+  },
+  "traderNoHint": "Guests will see that you are not a trader: consumer rights that apply to purchases from traders do not apply.",
+  "@traderNoHint": {
+    "description": "Trader declaration: consequence of being a non-trader."
+  },
+  "traderUseBilling": "Fill in from my invoice details",
+  "@traderUseBilling": {
+    "description": "Prefill the trader form from the invoice details."
+  },
+  "traderName": "Name or company name",
+  "@traderName": {
+    "description": "Trader name field."
+  },
+  "traderIdNumber": "ID or registration number",
+  "@traderIdNumber": {
+    "description": "Trader ID number field."
+  },
+  "traderIdNumberHint": "Not shown to guests.",
+  "@traderIdNumberHint": {
+    "description": "Trader ID number helper."
+  },
+  "traderIdNumberBillingHint": "Not shown to guests. Leave empty to use the tax ID of your invoice details.",
+  "@traderIdNumberBillingHint": {
+    "description": "Trader ID number helper when invoice details have a tax id."
+  },
+  "traderRegister": "Trade register (if registered)",
+  "@traderRegister": {
+    "description": "Trader register field."
+  },
+  "traderRegisterNumber": "Registration number",
+  "@traderRegisterNumber": {
+    "description": "Trader register number field."
+  },
+  "traderSelfCertify": "I confirm that I offer only products and services that comply with the applicable law.",
+  "@traderSelfCertify": {
+    "description": "Trader self-certification (DSA art. 30)."
+  },
+  "traderPublicNote": "Guests see your name, address, phone, email and trade register on your Experiences and at ticket checkout. Your ID number is never shown.",
+  "@traderPublicNote": {
+    "description": "Trader declaration: what is public."
+  },
+  "traderSaved": "Trader status saved",
+  "@traderSaved": {
+    "description": "Snackbar after saving the trader declaration."
+  },
+  "traderCardTitle": "Seller information",
+  "@traderCardTitle": {
+    "description": "Public trader details card title."
+  },
+  "traderCardNonTraderTitle": "Private seller",
+  "@traderCardNonTraderTitle": {
+    "description": "Public card title for a non-trader."
+  },
+  "traderCardNonTrader": "This host is a private person, not a trader. Consumer rights that apply to purchases from traders do not apply to this purchase.",
+  "@traderCardNonTrader": {
+    "description": "Public non-trader notice (DSA art. 30)."
+  },
+  "traderCardRegister": "{register}: {number}",
+  "@traderCardRegister": {
+    "description": "Trade register and number on the public card.",
+    "placeholders": {
+      "register": {
+        "type": "String"
+      },
+      "number": {
+        "type": "String"
+      }
+    }
   }
 }

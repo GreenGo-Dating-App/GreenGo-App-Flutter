@@ -37,6 +37,50 @@ const String kTermsReacceptFrom = '5.1.0';
 /// Same as [kTermsReacceptFrom], for the Privacy Policy.
 const String kPrivacyReacceptFrom = '5.1.0';
 
+/// Advance notice of the NEXT Terms version (Terms 24.2 a: at least 30 days
+/// before an important change takes effect, in the app and by email). From
+/// the announcement until [kUpcomingTermsEffectiveDate] the app shows a
+/// dismissible notice (once per version) linking to [kUpcomingTermsUrl], the
+/// public text hosted on the website. The email goes out through the admin
+/// callable `adminSendTermsChangeNotice` (functions legal/termsNoticeCopy.ts
+/// carries the same version, date and URL).
+///
+/// When the version takes effect: bundle the new texts, set [kTermsVersion] /
+/// [kTermsEffectiveDate], raise [kTermsReacceptFrom] if the change is
+/// material (the "we've updated our Terms" sheet then asks everyone again and
+/// shows that version's bullets, [legalUpdateBulletsVersion]), and clear or
+/// replace these constants. Set [kUpcomingTermsVersion] to null when nothing
+/// is announced.
+const String? kUpcomingTermsVersion = '5.3.0';
+
+/// Effective date of [kUpcomingTermsVersion] (16 October 2026 + 30 days).
+final DateTime kUpcomingTermsEffectiveDate = DateTime(2026, 11, 16);
+
+/// Public page with the text of [kUpcomingTermsVersion].
+const String kUpcomingTermsUrl =
+    'https://greengochat.com/terms-of-service/upcoming';
+
+/// True while the notice of [kUpcomingTermsVersion] must be shown: a version
+/// is announced, it is newer than the bundled [kTermsVersion], and its
+/// effective date has not come yet.
+bool upcomingTermsNoticeActive(DateTime now) {
+  final v = kUpcomingTermsVersion;
+  if (v == null) return false;
+  if (isLegalVersionAtLeast(kTermsVersion, v)) return false;
+  return now.isBefore(kUpcomingTermsEffectiveDate);
+}
+
+/// The material version whose "what's new" bullets the re-acceptance sheet
+/// shows: the higher of [kTermsReacceptFrom] and [kPrivacyReacceptFrom].
+String get legalUpdateBulletsVersion =>
+    isLegalVersionAtLeast(kTermsReacceptFrom, kPrivacyReacceptFrom)
+        ? kTermsReacceptFrom
+        : kPrivacyReacceptFrom;
+
+/// Support e-mail for refunds of a prepaid Membership when a user ends the
+/// contract over a Terms change (Terms 24.2 c).
+const String kBillingSupportEmail = 'billing@greengochat.com';
+
 final RegExp _semver = RegExp(r'^\d{1,3}(\.\d{1,3}){0,2}$');
 
 /// True when [accepted] is a dotted version (e.g. "5.1.0") at least [min].

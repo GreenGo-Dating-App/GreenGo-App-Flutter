@@ -20,6 +20,8 @@ import '../../../ticket_payments/domain/ticket_payments.dart';
 import '../../data/business_center_repository.dart';
 import '../business_tools.dart';
 import '../company_checklist.dart';
+import '../../../trader/data/trader_repository.dart';
+import '../../../trader/presentation/screens/trader_declaration_screen.dart';
 import '../../../my_space/data/my_space_repository.dart';
 import '../../../my_space/presentation/screens/my_space_screen.dart';
 import 'business_hub_screen.dart';
@@ -34,7 +36,13 @@ import 'business_hub_screen.dart';
 /// state instead.
 class BusinessCenterScreen extends StatefulWidget {
   const BusinessCenterScreen(
-      {required this.profile, this.repository, this.billingRepository, this.mySpaceRepository, this.clock, super.key});
+      {required this.profile,
+      this.repository,
+      this.billingRepository,
+      this.mySpaceRepository,
+      this.traderRepository,
+      this.clock,
+      super.key});
 
   final Profile profile;
 
@@ -42,6 +50,7 @@ class BusinessCenterScreen extends StatefulWidget {
   final BusinessCenterRepository? repository;
   final BillingProfileRepository? billingRepository;
   final MySpaceRepository? mySpaceRepository;
+  final TraderRepository? traderRepository;
   final DateTime Function()? clock;
 
   /// From a screen without a [ProfileBloc] (Explore): brings its own.
@@ -69,6 +78,9 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
   /// paymentsConnected from the last [_todo] result (Settings checklist).
   bool? _paymentsConnected;
 
+  /// Trader declaration saved (Terms 12.4); null while unknown.
+  bool? _traderDeclared;
+
   @override
   void initState() {
     super.initState();
@@ -82,6 +94,16 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
     _todo.then((t) {
       if (mounted) setState(() => _paymentsConnected = t.paymentsConnected);
     }, onError: (Object _) {});
+    _loadTrader();
+  }
+
+  Future<void> _loadTrader() async {
+    try {
+      final s = await (widget.traderRepository ?? TraderRepository()).get();
+      if (mounted) setState(() => _traderDeclared = s.declared);
+    } catch (_) {
+      // Unknown: not reported as missing.
+    }
   }
 
   Future<void> _refresh() async {
@@ -274,7 +296,8 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
         final billingMissing = b.status == BillingLoadStatus.ready && !b.complete;
         final missing = missingRequired(companyChecklist(p,
             billingComplete: b.status == BillingLoadStatus.ready ? b.complete : null,
-            paymentsConnected: t.paymentsConnected));
+            paymentsConnected: t.paymentsConnected,
+            traderDeclared: _traderDeclared));
         // Invoice details and payments already have their own rows.
         final company = missing.where((m) => m != CompanyItem.invoiceDetails && m != CompanyItem.payments).length;
         final rows = [
@@ -380,7 +403,8 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
         builder: (context, b) {
           final c = companyChecklist(p,
               billingComplete: b.status == BillingLoadStatus.ready ? b.complete : null,
-              paymentsConnected: _paymentsConnected);
+              paymentsConnected: _paymentsConnected,
+              traderDeclared: _traderDeclared);
           final req = CompanyItem.values.where((i) => i.required).toList();
           final done = req.where((i) => c[i] == true).length;
           String title(CompanyItem i) => switch (i) {
@@ -390,6 +414,7 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
                 CompanyItem.address => l.bcCheckAddress,
                 CompanyItem.invoiceDetails => l.bcCheckInvoice,
                 CompanyItem.payments => l.bcCheckPayments,
+                CompanyItem.traderStatus => l.bcCheckTrader,
                 CompanyItem.hours => l.bcCheckHours,
                 CompanyItem.contact => l.bcCheckContact,
                 CompanyItem.cover => l.bcCheckCover,
@@ -399,6 +424,7 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
                 CompanyItem.name => BusinessTools.openBusinessAccount(context, p),
                 CompanyItem.invoiceDetails => openInvoiceDetails(context),
                 CompanyItem.payments => _go(() => BusinessTools.openGetPaid(context, p)),
+                CompanyItem.traderStatus => _go(() => TraderDeclarationScreen.open(context)),
                 CompanyItem.verification => BusinessTools.openVerification(context, p),
                 _ => BusinessTools.openStorefrontEditor(context, p),
               };

@@ -20,6 +20,10 @@ class ConsentTypes {
   static const String privacy = 'privacy';
   static const String profiling = 'profiling';
   static const String thirdPartyData = 'third_party_data';
+
+  /// Terms 15.3: separate permission to use the user's name, photos and
+  /// Content in GreenGo advertising outside the app (default: not given).
+  static const String promotionalUse = 'promotional_use';
 }
 
 /// Sends one consent decision to the server. Throws on failure.

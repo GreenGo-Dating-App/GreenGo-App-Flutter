@@ -69,6 +69,7 @@ import '../../../gamification/presentation/widgets/level_up_celebration_dialog.d
 import '../../../globe_explore/presentation/bloc/globe_bloc.dart';
 import '../../../globe_explore/presentation/screens/globe_screen.dart';
 import '../../../legal/presentation/widgets/legal_update_sheet.dart';
+import '../../../legal/presentation/widgets/upcoming_terms_notice.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../safety/presentation/screens/community_guidelines_screen.dart';
 import '../../../notifications/presentation/bloc/notifications_bloc.dart';
@@ -335,8 +336,16 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           onSignOut: () {
             if (mounted) context.read<AuthBloc>().add(const AuthSignOutRequested());
           },
+          // Terms 24.2 c: "I don't accept - close my account" -> the Profile
+          // tab, whose "Delete account" button runs the deletion flow.
+          onCloseAccount: () {
+            if (mounted) _onTabTapped(4);
+          },
         );
       }
+      // Terms 24.2 a: advance notice of an upcoming Terms version (until it
+      // takes effect; dismissible per version).
+      if (mounted) await UpcomingTermsNotice.showIfNeeded(context);
       // P2-5(a): analytics / crash-reporting consent in the EEA/UK/CH (shown
       // once per launch until decided; collection stays OFF meanwhile).
       if (mounted) await showAnalyticsConsentPromptIfNeeded(context);

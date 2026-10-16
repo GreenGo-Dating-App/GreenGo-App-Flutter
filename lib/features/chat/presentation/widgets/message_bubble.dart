@@ -465,7 +465,7 @@ class _MessageBubbleState extends State<MessageBubble> {
                     ),
                     const SizedBox(width: 4),
                   ],
-                  // Show translation indicator if message is translated
+                  // Terms 14.3: translations are marked "Translated".
                   if (hasTranslation) ...[
                     Icon(
                       Icons.translate,
@@ -474,7 +474,18 @@ class _MessageBubbleState extends State<MessageBubble> {
                           ? AppColors.deepBlack.withOpacity(0.6)
                           : AppColors.textTertiary,
                     ),
-                    const SizedBox(width: 4),
+                    const SizedBox(width: 3),
+                    Text(
+                      AppLocalizations.of(context)!.chatMessageTranslated,
+                      key: const ValueKey('message-translated-label'),
+                      style: TextStyle(
+                        color: isCurrentUser
+                            ? AppColors.deepBlack.withOpacity(0.6)
+                            : AppColors.textTertiary,
+                        fontSize: 11,
+                      ),
+                    ),
+                    const SizedBox(width: 6),
                   ],
                   Text(
                     chatClockTime(context, message.sentAt),

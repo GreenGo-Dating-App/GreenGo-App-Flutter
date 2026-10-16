@@ -134,6 +134,8 @@ class _TranslatableTextState extends State<TranslatableText> {
             _translating ||
             (_translated != null && !_sameLanguage));
     final keepClamped = widget.autoTranslate || !_showingTranslation;
+    final showingTranslation =
+        !_translating && _showingTranslation && _translated != null;
     return Column(
       crossAxisAlignment: widget.actionAlign,
       mainAxisSize: MainAxisSize.min,
@@ -145,18 +147,38 @@ class _TranslatableTextState extends State<TranslatableText> {
           overflow: keepClamped ? widget.overflow : null,
         ),
         if (showAction)
-          GestureDetector(
-            onTap: _translating ? null : _toggle,
-            child: Padding(
-              padding: const EdgeInsets.only(top: 4),
-              child: Text(
-                label,
-                style: const TextStyle(
-                  color: AppColors.richGold,
-                  fontSize: 12,
-                  fontWeight: FontWeight.w600,
+          Padding(
+            padding: const EdgeInsets.only(top: 4),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                // Terms 14.3: a shown translation is marked "Translated".
+                if (showingTranslation) ...[
+                  const Icon(Icons.translate,
+                      size: 12, color: AppColors.textTertiary),
+                  const SizedBox(width: 3),
+                  Text(
+                    l10n.chatTranslated,
+                    key: const ValueKey('translatable-text-translated'),
+                    style: const TextStyle(
+                        color: AppColors.textTertiary, fontSize: 12),
+                  ),
+                  const Text(' · ',
+                      style: TextStyle(
+                          color: AppColors.textTertiary, fontSize: 12)),
+                ],
+                GestureDetector(
+                  onTap: _translating ? null : _toggle,
+                  child: Text(
+                    label,
+                    style: const TextStyle(
+                      color: AppColors.richGold,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
                 ),
-              ),
+              ],
             ),
           ),
       ],

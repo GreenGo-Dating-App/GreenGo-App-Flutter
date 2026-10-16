@@ -71,6 +71,9 @@ export const CONSENT_TYPES = new Set([
   'privacy',
   'profiling',
   'third_party_data',
+  // Terms 15.3: separate permission to use name, photos and Content in
+  // GreenGo advertising outside the app (default: not given).
+  'promotional_use',
 ]);
 
 const num = (name: string, dflt: number) => {

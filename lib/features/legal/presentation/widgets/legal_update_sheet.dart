@@ -80,13 +80,40 @@ class LegalUpdateGate {
 /// True while the sheet is open (no double show from two triggers).
 bool _legalSheetShownThisSession = false;
 
+/// How the re-acceptance sheet was closed.
+enum LegalUpdateOutcome { agreed, signOut, closeAccount }
+
+/// "What's new" bullets of a material Terms / Privacy [version] (the version
+/// that raised [kTermsReacceptFrom] / [kPrivacyReacceptFrom], or the upcoming
+/// one announced in advance). Empty for a version without bullets.
+List<String> legalUpdateBullets(AppLocalizations l10n, String? version) =>
+    switch (version) {
+      '5.1.0' => [
+          l10n.legalUpdateBulletPrivateContent,
+          l10n.legalUpdateBulletWarning,
+          l10n.legalUpdateBulletOrientation,
+        ],
+      '5.3.0' => [
+          l10n.legalUpdate530BulletReferral,
+          l10n.legalUpdate530BulletCoinGifts,
+          l10n.legalUpdate530BulletMenus,
+          l10n.legalUpdate530BulletModeration,
+          l10n.legalUpdate530BulletTraders,
+        ],
+      _ => const <String>[],
+    };
+
 /// Shows the non-dismissable "we've updated our Terms and Privacy Policy"
 /// sheet when [LegalUpdateGate.needsAcceptance]. "I agree" records terms +
 /// privacy acceptance server-side (`recordConsent`, server timestamp) and
-/// only then closes. [onSignOut] is the way out for a user who does not agree.
+/// only then closes. [onSignOut] is the way out for a user who does not agree;
+/// [onCloseAccount] is "I don't accept - close my account" (Terms 24.2 c: end
+/// the contract free of charge, pro-rata refund of a prepaid Membership): it
+/// leads to the delete-account flow. Without it, that choice signs out.
 Future<void> showLegalUpdateSheetIfNeeded(
   BuildContext context, {
   required VoidCallback onSignOut,
+  VoidCallback? onCloseAccount,
   LegalUpdateGate? gate,
   ConsentRecorder? recorder,
 }) async {
@@ -95,7 +122,7 @@ Future<void> showLegalUpdateSheetIfNeeded(
   if (!await g.needsAcceptance()) return;
   if (!context.mounted || _legalSheetShownThisSession) return;
   _legalSheetShownThisSession = true;
-  final agreed = await showModalBottomSheet<bool>(
+  final outcome = await showModalBottomSheet<LegalUpdateOutcome>(
     context: context,
     backgroundColor: AppColors.backgroundCard,
     isScrollControlled: true,
@@ -114,8 +141,16 @@ Future<void> showLegalUpdateSheetIfNeeded(
   // Guard only while the sheet is up: after "I agree" the per-user local
   // mirror stops it, and another account signed in later is checked anew.
   _legalSheetShownThisSession = false;
-  // Only reachable through "Sign out".
-  if (agreed != true) onSignOut();
+  switch (outcome) {
+    case LegalUpdateOutcome.agreed:
+      return;
+    case LegalUpdateOutcome.closeAccount:
+      (onCloseAccount ?? onSignOut)();
+      return;
+    case LegalUpdateOutcome.signOut:
+    case null:
+      onSignOut();
+  }
 }
 
 /// Resets the once-per-session guard (tests).
@@ -143,12 +178,50 @@ class _LegalUpdateSheetBodyState extends State<LegalUpdateSheetBody> {
     final ok = await widget.recorder.recordLegalUpdateAcceptance();
     if (!mounted) return;
     if (ok) {
-      Navigator.of(context).pop(true);
+      Navigator.of(context).pop(LegalUpdateOutcome.agreed);
     } else {
       setState(() {
         _saving = false;
         _failed = true;
       });
+    }
+  }
+
+  /// Terms 24.2 c: explain the right to end the contract free of charge
+  /// (pro-rata refund of a prepaid Membership), then hand over to the
+  /// delete-account flow.
+  Future<void> _closeAccount() async {
+    final l10n = AppLocalizations.of(context)!;
+    final go = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(l10n.legalUpdateCloseAccountTitle,
+            style: const TextStyle(color: AppColors.textPrimary)),
+        content: SingleChildScrollView(
+          child: Text(
+            l10n.legalUpdateCloseAccountBody(kBillingSupportEmail),
+            key: const Key('legalUpdateCloseAccountBody'),
+            style: const TextStyle(color: AppColors.textSecondary, height: 1.5),
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dialogContext).pop(false),
+            child: Text(l10n.cancel,
+                style: const TextStyle(color: AppColors.textSecondary)),
+          ),
+          TextButton(
+            key: const Key('legalUpdateCloseAccountContinue'),
+            onPressed: () => Navigator.of(dialogContext).pop(true),
+            child: Text(l10n.legalUpdateCloseAccountContinue,
+                style: const TextStyle(color: AppColors.errorRed)),
+          ),
+        ],
+      ),
+    );
+    if (go == true && mounted) {
+      Navigator.of(context).pop(LegalUpdateOutcome.closeAccount);
     }
   }
 
@@ -162,15 +235,11 @@ class _LegalUpdateSheetBodyState extends State<LegalUpdateSheetBody> {
     final locale = Localizations.localeOf(context).toString();
     String date;
     try {
-      date = DateFormat.yMMMMd(locale).format(kLegalEffectiveDate);
+      date = DateFormat.yMMMMd(locale).format(kTermsEffectiveDate);
     } catch (_) {
-      date = DateFormat.yMMMMd().format(kLegalEffectiveDate);
+      date = DateFormat.yMMMMd().format(kTermsEffectiveDate);
     }
-    final bullets = [
-      l10n.legalUpdateBulletPrivateContent,
-      l10n.legalUpdateBulletWarning,
-      l10n.legalUpdateBulletOrientation,
-    ];
+    final bullets = legalUpdateBullets(l10n, legalUpdateBulletsVersion);
     const bodyStyle =
         TextStyle(color: AppColors.textSecondary, fontSize: 14, height: 1.4);
 
@@ -273,14 +342,26 @@ class _LegalUpdateSheetBodyState extends State<LegalUpdateSheetBody> {
                   style: const TextStyle(
                       color: AppColors.textSecondary, fontSize: 12),
                 ),
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: TextButton(
-                    key: const Key('legalUpdateSignOut'),
-                    onPressed:
-                        _saving ? null : () => Navigator.of(context).pop(false),
-                    child: Text(l10n.signOut),
-                  ),
+                Wrap(
+                  alignment: WrapAlignment.spaceBetween,
+                  crossAxisAlignment: WrapCrossAlignment.center,
+                  spacing: 8,
+                  children: [
+                    TextButton(
+                      key: const Key('legalUpdateCloseAccount'),
+                      onPressed: _saving ? null : _closeAccount,
+                      child: Text(l10n.legalUpdateCloseAccount,
+                          style: const TextStyle(color: AppColors.errorRed)),
+                    ),
+                    TextButton(
+                      key: const Key('legalUpdateSignOut'),
+                      onPressed: _saving
+                          ? null
+                          : () => Navigator.of(context)
+                              .pop(LegalUpdateOutcome.signOut),
+                      child: Text(l10n.signOut),
+                    ),
+                  ],
                 ),
               ],
             ),
