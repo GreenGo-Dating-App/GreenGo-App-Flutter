@@ -1,6 +1,9 @@
 // Terms 24.2: advance notice of an upcoming version (a), re-acceptance sheet
 // with the TERMS effective date and per-version bullets (b, d), and the
 // "I don't accept - close my account" option (c).
+// Owner decision of 16 Oct 2026: 5.3.0 is the bundled version (new accounts
+// accept it at sign-up); only accounts created before 16 Oct 2026 get the
+// notice that it applies to them from 16 Nov 2026.
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:greengo_chat/core/constants/legal_versions.dart';
@@ -25,21 +28,35 @@ void main() {
     UpcomingTermsNotice.resetSession();
   });
 
+  final oldAccount = DateTime.utc(2026, 9, 1);
+  final newAccount = DateTime.utc(2026, 10, 16, 8);
+
   group('upcoming version constants', () {
-    test('5.3.0 announced 30 days ahead, newer than the bundled Terms', () {
+    test('5.3.0: bundled for new accounts, announced 30 days ahead for existing ones', () {
+      expect(kTermsVersion, '5.3.0');
+      expect(kPrivacyPolicyVersion, '5.3.0');
+      expect(kTermsEffectiveDate, DateTime(2026, 10, 16));
+      expect(kLegalEffectiveDate, DateTime(2026, 10, 16));
       expect(kUpcomingTermsVersion, '5.3.0');
       expect(kUpcomingTermsEffectiveDate, DateTime(2026, 11, 16));
+      expect(kUpcomingTermsAccountsCreatedBefore, DateTime.utc(2026, 10, 16));
       expect(kUpcomingTermsUrl, 'https://greengochat.com/terms-of-service/upcoming');
-      expect(isLegalVersionAtLeast(kTermsVersion, kUpcomingTermsVersion!), isFalse);
       expect(
           kUpcomingTermsEffectiveDate.difference(DateTime(2026, 10, 16)).inDays, greaterThanOrEqualTo(30));
     });
 
-    test('notice active from announcement until the effective date', () {
-      expect(upcomingTermsNoticeActive(DateTime(2026, 10, 16)), isTrue);
-      expect(upcomingTermsNoticeActive(DateTime(2026, 11, 15, 23, 59)), isTrue);
-      expect(upcomingTermsNoticeActive(DateTime(2026, 11, 16)), isFalse);
-      expect(upcomingTermsNoticeActive(DateTime(2027)), isFalse);
+    test('notice active for accounts created before 16 Oct 2026, until the effective date', () {
+      bool on(DateTime now, DateTime? created) =>
+          upcomingTermsNoticeActive(now, accountCreatedAt: created);
+      expect(on(DateTime(2026, 10, 16), oldAccount), isTrue);
+      expect(on(DateTime(2026, 11, 15, 23, 59), oldAccount), isTrue);
+      expect(on(DateTime(2026, 11, 16), oldAccount), isFalse);
+      expect(on(DateTime(2027), oldAccount), isFalse);
+      expect(on(DateTime(2026, 10, 16), DateTime.utc(2026, 10, 15, 23, 59)), isTrue);
+      // New accounts (they accepted 5.3.0 at sign-up) and unknown ones: never.
+      expect(on(DateTime(2026, 10, 20), DateTime.utc(2026, 10, 16)), isFalse);
+      expect(on(DateTime(2026, 10, 20), newAccount), isFalse);
+      expect(on(DateTime(2026, 10, 20), null), isFalse);
     });
 
     test('thresholds unchanged (owner decides); bullets follow the threshold', () {
@@ -114,11 +131,16 @@ void main() {
   });
 
   group('upcoming Terms notice', () {
+    final recorder = ConsentRecorder(callable: (p) async {}, currentUid: () => 'u1');
+
     Future<void> open(WidgetTester tester, {Future<bool> Function(Uri)? openUrl}) async {
       await tester.pumpWidget(_app(Builder(
         builder: (context) => TextButton(
-          onPressed: () =>
-              UpcomingTermsNotice.showIfNeeded(context, now: DateTime(2026, 10, 20), openUrl: openUrl),
+          onPressed: () => UpcomingTermsNotice.showIfNeeded(context,
+              now: DateTime(2026, 10, 20),
+              accountCreatedAt: oldAccount,
+              recorder: recorder,
+              openUrl: openUrl),
           child: const Text('go'),
         ),
       )));
@@ -140,7 +162,10 @@ void main() {
       expect(find.byType(UpcomingTermsNoticeBody), findsNothing);
       final prefs = await SharedPreferences.getInstance();
       expect(prefs.getBool(UpcomingTermsNotice.dismissKey('5.3.0')), isTrue);
-      expect(await UpcomingTermsNotice.shouldShow(now: DateTime(2026, 10, 21)), isFalse);
+      expect(
+          await UpcomingTermsNotice.shouldShow(
+              now: DateTime(2026, 10, 21), accountCreatedAt: oldAccount, recorder: recorder),
+          isFalse);
     });
 
     testWidgets('Read opens the public text', (tester) async {
@@ -158,8 +183,47 @@ void main() {
     });
 
     test('not shown after the effective date', () async {
-      expect(await UpcomingTermsNotice.shouldShow(now: DateTime(2026, 10, 20)), isTrue);
-      expect(await UpcomingTermsNotice.shouldShow(now: DateTime(2026, 11, 16)), isFalse);
+      expect(
+          await UpcomingTermsNotice.shouldShow(
+              now: DateTime(2026, 10, 20), accountCreatedAt: oldAccount, recorder: recorder),
+          isTrue);
+      expect(
+          await UpcomingTermsNotice.shouldShow(
+              now: DateTime(2026, 11, 16), accountCreatedAt: oldAccount, recorder: recorder),
+          isFalse);
+    });
+
+    test('never shown to accounts created from 16 Oct 2026', () async {
+      expect(
+          await UpcomingTermsNotice.shouldShow(
+              now: DateTime(2026, 10, 20), accountCreatedAt: newAccount, recorder: recorder),
+          isFalse);
+    });
+
+    test('not shown once this device accepted 5.3.0; still shown with 5.2.1', () async {
+      await recorder.rememberDocVersion(ConsentTypes.terms, '5.2.1');
+      expect(
+          await UpcomingTermsNotice.shouldShow(
+              now: DateTime(2026, 10, 20), accountCreatedAt: oldAccount, recorder: recorder),
+          isTrue);
+      await recorder.rememberDocVersion(ConsentTypes.terms, '5.3.0');
+      expect(
+          await UpcomingTermsNotice.shouldShow(
+              now: DateTime(2026, 10, 20), accountCreatedAt: oldAccount, recorder: recorder),
+          isFalse);
+    });
+
+    testWidgets('a new account never gets the sheet', (tester) async {
+      await tester.pumpWidget(_app(Builder(
+        builder: (context) => TextButton(
+          onPressed: () => UpcomingTermsNotice.showIfNeeded(context,
+              now: DateTime(2026, 10, 20), accountCreatedAt: newAccount, recorder: recorder),
+          child: const Text('go'),
+        ),
+      )));
+      await tester.tap(find.text('go'));
+      await tester.pumpAndSettle();
+      expect(find.byType(UpcomingTermsNoticeBody), findsNothing);
     });
   });
 }

@@ -1,8 +1,11 @@
 DATENSCHUTZERKLÄRUNG VON GREENGO
 
-Version: 5.2.1
-Gültig ab: 16. Oktober 2026
-Vorherige Version: 5.2.0 (15. Oktober 2026)
+Version: 5.3.0
+Gültig ab: 16. Oktober 2026 für Konten, die ab diesem Tag erstellt werden;
+  16. November 2026 für Konten, die vor dem 16. Oktober 2026 erstellt wurden
+Angekündigt am: 16. Oktober 2026
+Vorherige Version: 5.2.1 (16. Oktober 2026), die für vor dem 16. Oktober 2026
+  erstellte Konten bis zum 15. November 2026 weiter gilt
 
 ================================================================================
 1. WER WIR SIND UND WIE DU UNS ERREICHST
@@ -57,8 +60,7 @@ zu entdecken und sich über Sprachbarrieren hinweg zu unterhalten. Er umfasst:
 - Chat mit Übersetzung;
 - Gruppen und Communities;
 - Events und Erlebnisse;
-- Unternehmensseiten;
-- Lernfunktionen.
+- Unternehmensseiten.
 
 GreenGo ist ein Dienst für soziale und kulturelle Entdeckungen, kein Dienst zur
 Suche nach romantischen oder sexuellen Partnern.
@@ -89,8 +91,8 @@ Diese Erklärung gilt auch für sie.
     auf deinen Wunsch zu übersetzen oder um eine gemeldete Nachricht zu prüfen.
 - Wenn du dein Alter mit einem Ausweisdokument bestätigst, löschen wir das Bild,
   sobald die Prüfung abgeschlossen ist. Wir speichern nur das Ergebnis.
-- KI-Funktionen (Übersetzung, Sprachwiedergabe, intelligente Antworten, der
-  KI-Coach) laufen über unsere Server. Sie nutzen Google-Dienste, und unser
+- KI-Funktionen (Übersetzung, Vorlesen, intelligente Antworten und
+  Wortzerlegung) laufen über unsere Server. Sie nutzen Google-Dienste, und unser
   Support-Assistent nutzt Claude von Anthropic. Wir bitten dich vor der ersten
   Nutzung um deine Einwilligung, und der Support-Assistent ist deutlich als KI
   gekennzeichnet.
@@ -120,8 +122,9 @@ b) Profildaten
      Persönlichkeitsmerkmale, Herkunftsland oder -kultur und Links zu deinen
      Social-Media-Konten.
    - Wir fragen nicht nach deiner sexuellen Orientierung (siehe 3.4).
-   - Deine Datenschutzeinstellungen, zum Beispiel Inkognito-Modus, Geistermodus
-     und ob du auf der Karte erscheinst.
+   - Deine Datenschutzeinstellungen, zum Beispiel Inkognito-Modus,
+     Geistermodus, ob du auf der Karte erscheinst und ob du die werbliche
+     Nutzung deiner Inhalte erlaubst (Abschnitt 6.4).
 
 c) Inhalte und Kommunikation
    - Nachrichten in Einzelchats, Gruppen, Communities und Event-Chats: Text,
@@ -136,7 +139,8 @@ d) Daten von Unternehmenskonten
    Adresse, Öffnungszeiten, Kontaktkanäle und, wenn du eine Verifizierung als
    Unternehmen beantragst, die dafür erforderlichen Unterlagen (siehe Abschnitt
    8.4). Wenn du Tickets oder Erlebnisse verkaufst, auch deine
-   Rechnungsdaten (siehe h unten).
+   Rechnungsdaten (siehe h unten) und, wenn du als Unternehmer handelst, deine
+   Unternehmerangaben (siehe j unten).
 
 e) Verifizierungsdaten
    Ein Ausweisdokument und/oder ein Selfie, nur wenn du dich für eine
@@ -163,6 +167,13 @@ i) Daten von Gastbuchungen
    Wenn du ohne Konto buchst (Abschnitt 11.7): dein Vorname, Nachname, deine
    E-Mail-Adresse und deine Buchung oder Ticketbestellung.
 
+j) Unternehmerangaben von Verkäufern
+   Wenn du Tickets oder Erlebnisse verkaufst und erklärst, dass du als
+   Unternehmer handelst: dein Name, deine Adresse, Telefonnummer,
+   E-Mail-Adresse, Ausweisdokument oder Registrierungsnummer und, falls du
+   eingetragen bist, dein Handelsregister und deine Registernummer. Siehe
+   Abschnitt 11.8.
+
 3.2 Daten, die bei der Nutzung von GreenGo entstehen
 
 a) Standort
@@ -182,7 +193,7 @@ c) Nutzungsdaten
    - Personen, Communities und Events, die du ansiehst, denen du folgst, die du
      likest oder denen du beitrittst.
    - Dein Münz- und Mitgliedschaftsverlauf.
-   - Dein Lernfortschritt, deine Erfolge und Serien.
+   - Deine Erfolge und Serien.
    - Ob du online bist und wann du zuletzt online warst.
 
 d) Analysedaten
@@ -273,6 +284,8 @@ gewährst jemandem Zugriff auf dein privates Album).
   öffnen können.
 - Deine Unternehmensseite und die Erlebnisse, die du veröffentlichst, sind
   öffentlich.
+- Wenn du als Unternehmer verkaufst, werden deine Unternehmerangaben in
+  deinen Angeboten angezeigt (Abschnitt 11.8).
 
 4.4 Unsere Mitarbeiter
 
@@ -308,11 +321,9 @@ Zweck                                | Was wir verwenden          | Rechtsgrundl
                                      |                            | (16.2).
 4. Nachrichten, Gruppen, Communities,| Inhalte, Konto             | Vertrag (DSGVO 6(1)(b); LGPD 7 V)
    Events, Buchungen                 |                            |
-5. KI-Funktionen: Übersetzung,       | Der Text oder das Audio,   | Vertrag, nach deiner Einwilligung in
-   Sprachwiedergabe, intelligente    | den/das du verarbeiten     | die KI-Funktion (DSGVO 6(1)(a)/(b);
-   Antworten, Grammatikhilfe,        | lassen möchtest            | LGPD 7 I/V). Siehe Abschnitt 9.
-   KI-Coach, Transkription von       |                            |
-   Sprachnachrichten                 |                            |
+5. KI-Funktionen: Übersetzung,       | Der Text, den du           | Vertrag, nach deiner Einwilligung in
+   Vorlesen, intelligente Antworten, | verarbeiten lassen         | die KI-Funktion (DSGVO 6(1)(a)/(b);
+   Wortzerlegung                     | möchtest                   | LGPD 7 I/V). Siehe Abschnitt 9.
 6. Altersverifizierung mit einem     | Ausweisbild, daraus        | Ausdrückliche Einwilligung (DSGVO
    Ausweisdokument                   | gelesenes Geburtsdatum     | 9(2)(a); LGPD 11 I). Siehe Abschnitt 8.
 7. Selfie-Verifizierung              | Selfie, Profilfotos        | Ausdrückliche Einwilligung (DSGVO
@@ -363,6 +374,24 @@ Zweck                                | Was wir verwenden          | Rechtsgrundl
     Buchung, Ticket- und Buchungs-   | Gastes, Buchung oder       | (DSGVO 6(1)(b); LGPD 7 V)
     E-Mails, Stornierungshinweise    | Ticketbestellung           |
     (Abschnitt 11.7)                 |                            |
+20. Unternehmerangaben von           | Unternehmerangaben von     | Rechtliche Verpflichtung (DSA
+    Verkäufern erheben und in ihren  | Verkäufern                 | art. 30; DSGVO 6(1)(c); LGPD 7 II)
+    Angeboten anzeigen (Abschnitt    |                            |
+    11.8)                            |                            |
+21. Werbliche Nutzung deines Namens, | Name, Fotos und Inhalte,   | Einwilligung, die du jederzeit
+    deiner Fotos oder Inhalte        | deren Nutzung du uns       | widerrufen kannst (DSGVO 6(1)(a);
+    außerhalb der App, nur wenn du   | erlaubst                   | LGPD 7 I)
+    es erlaubst (6.4)                |                            |
+22. Moderationsmitteilungen und      | E-Mail-Adresse, Konto- und | Rechtliche Verpflichtung (DSA
+    Beschwerden per E-Mail, auch an  | Falldaten                  | arts. 17 und 20; DSGVO 6(1)(c));
+    gesperrte Konten (Abschnitt      |                            | sonst berechtigtes Interesse an
+    10.4)                            |                            | fairer Moderation (DSGVO 6(1)(f);
+                                     |                            | LGPD 7 IX)
+23. Umgang mit Personen, die häufig  | Anzahl ihrer offensichtlich| Rechtliche Verpflichtung (DSA
+    offensichtlich unbegründete      | unbegründeten Meldungen,   | art. 23; DSGVO 6(1)(c)); sonst
+    Meldungen senden (Abschnitt      | Verwarnungen               | berechtigtes Interesse an einem
+    10.2)                            |                            | funktionierenden Meldesystem
+                                     |                            | (DSGVO 6(1)(f); LGPD 7 IX)
 
 Wo wir uns auf berechtigte Interessen stützen, haben wir unser Interesse gegen
 deine Rechte abgewogen. Du kannst uns um diese Abwägung bitten. Du kannst
@@ -396,6 +425,16 @@ erhebliche Wirkung.
 
 6.3 Wir verwenden deine Daten nicht für Werbung und erstellen keine Profile von
 dir für Dritte.
+
+6.4 Werbliche Nutzung deiner Inhalte
+- Wir verwenden deinen Namen, deine Fotos oder deine Inhalte außerhalb der
+  App nur dann in Werbung oder Marketing für GreenGo, wenn du es erlaubst.
+- Die Einstellung findest du unter Profil > Kontoeinstellungen > Datenschutz
+  & Daten > Werbliche Nutzung meiner Inhalte. Sie ist ausgeschaltet, solange
+  du sie nicht einschaltest, und du kannst sie jederzeit ausschalten.
+  Nachdem du sie ausgeschaltet hast, verwenden wir deine Inhalte nicht in
+  neuer Werbung oder neuem Marketing.
+- Wir speichern deine Entscheidung und wann du sie getroffen hast.
 
 ================================================================================
 7. STANDORT
@@ -544,15 +583,14 @@ anderweitig daraus Gewinn ziehen.
 
 Funktion                         | Anbieter (in unserem Auftrag)   | Was gesendet wird
 ---------------------------------|---------------------------------|----------------------------
-Übersetzung von Nachrichten,     | Google Cloud Translation        | Der zu übersetzende Text
-Beiträgen und öffentlichen       |                                 |
-Inhalten                         |                                 |
-Sprachwiedergabe (Text-to-Speech)| Google Cloud Text-to-Speech     | Der vorzulesende Text
+Übersetzung von Nachrichten      | Google Cloud Translation        | Der zu übersetzende Text
+Übersetzung öffentlicher Inhalte | Google Cloud Translation, über  | Nur der Text, ohne
+(Events, Communities, Angebote)  | einen gemeinsamen Cache auf     | personenbezogene Daten
+                                 | unseren Servern                 |
+Vorlesen (Text-to-Speech)        | Google Cloud Text-to-Speech     | Der vorzulesende Text
 Intelligente Antworten,          | Google Gemini (kostenpflichtige | Die Nachricht oder der
-Grammatikhilfe, Kulturtipps,     | API)                            | Text, den du auswählst,
-Wortzerlegung, KI-Coach          |                                 | und die Sprachen
-Transkription von                | Google Cloud Speech-to-Text     | Die Sprachnachricht, die
-Sprachnachrichten                |                                 | du transkribieren lässt
+Kulturtipps, Wortzerlegung       | API)                            | Text, den du auswählst,
+                                 |                                 | und die Sprachen
 Support-Assistent                | Anthropic Claude                | Deine Nachrichten an den
                                  |                                 | Support
 Bild- und Textmoderation         | Google Cloud Vision und Natural | Hochgeladene Bilder; auf
@@ -565,19 +603,29 @@ Bild- und Textmoderation         | Google Cloud Vision und Natural | Hochgeladen
 - Die Anbieter handeln als unsere Auftragsverarbeiter. Wir nutzen sie zu ihren
   kostenpflichtigen Geschäftsbedingungen, nach denen sie deine Daten nicht zum
   Training ihrer Modelle verwenden.
-- Bevor du zum ersten Mal die Übersetzung von Nachrichten anderer, die
-  Sprachwiedergabe, intelligente Antworten oder den KI-Coach nutzt, zeigen wir
-  dir, welcher Anbieter genutzt wird und was gesendet wird, und bitten um deine
-  Einwilligung. Du kannst dies in den Einstellungen ändern.
+- Bevor KI-Funktionen zum ersten Mal deine privaten Inhalte verarbeiten (zum
+  Beispiel die Übersetzung von Chatnachrichten, das Vorlesen und der
+  KI-Assistent), zeigen wir dir, welcher Anbieter genutzt wird und was
+  gesendet wird, und bitten um deine Einwilligung. Du kannst dies in den
+  Einstellungen ändern.
+- Öffentliche Inhalte, etwa Events, Communities und Angebote, werden mit
+  Google Cloud Translation über einen gemeinsamen Cache auf unseren Servern
+  übersetzt. Gesendet wird nur der Text, ohne personenbezogene Daten, und die
+  Übersetzung wird für alle gespeichert, die diese Inhalte ansehen. Dafür ist
+  deine Einwilligung nicht nötig.
 - Von KI erstellte oder veränderte Inhalte werden gekennzeichnet, zum Beispiel
   mit „Übersetzt“. KI-Ergebnisse können Fehler enthalten. Verlass dich bei
   wichtigen Entscheidungen nicht darauf.
 - Unser Support-Chat antwortet zunächst mit einem KI-Assistenten, der deutlich
-  als KI gekennzeichnet ist. Du kannst jederzeit verlangen, mit einem Menschen
-  zu sprechen.
+  als KI gekennzeichnet ist. Du kannst jederzeit auf „Mit einer Person
+  sprechen“ tippen.
 - Wenn du eine Nachricht einer anderen Person übersetzt, wird deren Text an den
   Übersetzungsanbieter gesendet. Diese Person hat dieser Möglichkeit mit der
   Annahme dieser Erklärung zugestimmt.
+- Vorlesen: Kurze Audios, die aus einem Text erzeugt werden, können in einem
+  anonymen gemeinsamen Cache gespeichert werden, damit derselbe Text nicht
+  erneut umgewandelt werden muss. Der Cache speichert nur den Text und sein
+  Audio, ohne deine Konto-ID oder eine andere Verbindung zu dir.
 
 9.3 Automatisierte Entscheidungen
 
@@ -610,7 +658,6 @@ Wir nutzen automatisierte Werkzeuge, um GreenGo sicher zu halten:
   - deine Nachrichten zuzustellen und zu speichern;
   - sie zu übersetzen oder vorzulesen, wenn du oder die andere Person dies
     wünscht;
-  - Sprachnachrichten auf Anfrage zu transkribieren;
   - sie auf deinen Wunsch zu sichern;
   - Inhalte zu prüfen, die jemand gemeldet hat oder die unsere automatisierten
     Sicherheitswerkzeuge markieren;
@@ -623,6 +670,10 @@ Wir nutzen automatisierte Werkzeuge, um GreenGo sicher zu halten:
   Kopie des gemeldeten Inhalts.
 - Meldungen zur Sicherheit von Kindern werden vorrangig bearbeitet.
 - Wir teilen dir mit, wenn wir deine Meldung geprüft haben.
+- Wenn jemand häufig offensichtlich unbegründete Meldungen sendet, zählen wir
+  seine unbegründeten Meldungen über 12 Monate. Wir verwarnen ihn und
+  bearbeiten, wenn er weitermacht, seine Meldungen 30 Tage lang nicht (DSA
+  art. 23; Allgemeine Geschäftsbedingungen, Abschnitt 18.6).
 
 10.3 Sexuelle Ausbeutung von Kindern
 
@@ -637,12 +688,19 @@ Wir nutzen automatisierte Werkzeuge, um GreenGo sicher zu halten:
 
 10.4 Begründung und Beschwerden
 
-- Wenn wir deine Inhalte entfernen oder dein Konto einschränken, teilen wir dir
-  mit, was wir getan haben, warum, gegen welche Regel verstoßen wurde und ob
-  automatisierte Mittel eingesetzt wurden.
-- Du kannst innerhalb von 6 Monaten in der App Beschwerde einlegen. Eine
-  Person, die an der ursprünglichen Entscheidung nicht beteiligt war, prüft die
-  Beschwerde.
+- Wenn wir deine Inhalte entfernen oder dein Konto einschränken, senden wir
+  dir eine Mitteilung in der App und per E-Mail. Sie nennt, was wir getan
+  haben, welche Inhalte betroffen sind, warum, gegen welche Regel verstoßen
+  wurde und ob automatisierte Mittel eingesetzt wurden.
+- Diese Mitteilungen und die E-Mails zu deiner Beschwerde senden wir an die
+  E-Mail-Adresse deines Kontos, auch wenn dein Konto gesperrt ist.
+- Du kannst innerhalb von 6 Monaten Beschwerde einlegen, in der App oder über
+  den Link in der Mitteilungs-E-Mail. Eine Person, die an der ursprünglichen
+  Entscheidung nicht beteiligt war, prüft die Beschwerde, und wir senden dir
+  das Ergebnis und die Gründe.
+- Wenn du etwas gemeldet hast und wir entschieden haben, nichts zu
+  unternehmen, kannst du gegen diese Entscheidung auf dieselbe Weise
+  Beschwerde einlegen.
 - Weitere Einzelheiten findest du in unseren Allgemeinen Geschäftsbedingungen.
 
 10.5 Private Fotos und Chat-Medien: Warnhinweis und Nachweis
@@ -785,6 +843,21 @@ auf, um Betrug zu verhindern.
   einschließlich Auskunft und Löschung. Schreib an privacy@greengochat.com
   von der E-Mail-Adresse, die du für die Buchung verwendet hast.
 
+11.8 Unternehmerangaben von Verkäufern
+
+- Wenn du Tickets oder Erlebnisse verkaufst, erklärst du unter Business
+  Center > Einstellungen, ob du als Unternehmer handelst. Wenn ja, gibst du
+  uns deine Unternehmerangaben: deinen Namen, deine Adresse, Telefonnummer,
+  E-Mail-Adresse, ein Ausweisdokument oder eine Registrierungsnummer und,
+  falls du eingetragen bist, dein Handelsregister und deine Registernummer.
+- Der EU Digital Services Act (art. 30) verpflichtet uns, diese Angaben zu
+  erheben und sie Käufern zugänglich zu machen. Wir zeigen sie in deinen
+  Angeboten an, sodass jeder, der deine Angebote sehen kann, sie sehen kann.
+- Rechtsgrundlage ist unsere rechtliche Verpflichtung (DSGVO 6(1)(c); LGPD 7
+  II).
+- Wir bewahren die Angaben auf, solange du auf GreenGo als Unternehmer
+  verkaufst, und 6 Monate danach (Abschnitt 14).
+
 ================================================================================
 12. MIT WEM WIR DEINE DATEN TEILEN
 ================================================================================
@@ -807,7 +880,7 @@ Firebase                         | speicherung, Serverfunktionen,    | weltweit 
                                  | Absturzberichte, Protokollierung  |          |
 Google Cloud AI services         | Vision (Dokumenttext, Bild-       | USA      | Wie oben
                                  | moderation), Natural Language     |          |
-                                 | (Textmoderation), Speech-to-Text, |          |
+                                 | (Textmoderation),                 |          |
                                  | Text-to-Speech, Translation,      |          |
                                  | Gemini                            |          |
 Google Maps Platform             | Umwandlung von Koordinaten in     | USA      | Wie oben
@@ -845,11 +918,9 @@ Anthropic PBC                    | KI-Support-Assistent (Claude)     | USA      
     ihren eigenen Richtlinien.
   - GreenGo kann von ihnen eine Provision erhalten.
   - Wir senden ihnen deine Kontodaten nicht.
-- Karten- und Bilddienste, die direkt von der App geladen werden:
-  OpenStreetMap, CARTO, Cesium (3D-Globus), Unsplash und Pexels (Bilder für
-  Vokabelkarten). Sie erhalten die IP-Adresse deines Geräts und die Anfrage
-  (zum Beispiel einen Kartenausschnitt oder ein Wort), aber nicht deine
-  Kontodaten.
+- Kartendienste, die direkt von der App geladen werden: OpenStreetMap, CARTO
+  und Cesium (3D-Globus). Sie erhalten die IP-Adresse deines Geräts und die
+  Anfrage (zum Beispiel einen Kartenausschnitt), aber nicht deine Kontodaten.
 
 12.4 Andere Nutzer
 
@@ -943,6 +1014,12 @@ Zähler der Gastbuchungs-Limits         | Innerhalb weniger Stunden automatisch
 (gehashte Schlüssel)                   | gelöscht
 Meldungen, Moderationsfälle,           | 2 Jahre nach Abschluss des Falls
 Beschwerden                            |
+Anzahl offensichtlich unbegründeter    | 12 Monate
+Meldungen (Abschnitt 10.2)             |
+Unternehmerangaben von Verkäufern      | Solange du als Unternehmer verkaufst,
+(11.8)                                 | und 6 Monate danach
+Vorlese-Audio-Cache (9.2)              | Anonym, nicht mit dir verbunden; wird
+                                       | aufbewahrt, solange er genutzt wird
 Meldungen und Beweise zum Kinderschutz | Mindestens 1 Jahr oder länger, wenn das
                                        | Gesetz oder eine Behörde es verlangt
 Einwilligungs- und Annahmenachweise,   | Solange dein Konto besteht und 5 Jahre
@@ -978,8 +1055,8 @@ das Konto löschst.
 
 15.1 So löschst du es
 
-- In der App: Profil > Einstellungen > Konto löschen. Du wirst gebeten, dich zur
-  Bestätigung erneut anzumelden.
+- In der App: Profil > Konto Löschen. Du wirst gebeten, dich zur Bestätigung
+  erneut anzumelden.
 - Im Web: https://greengochat.com/delete-account. Gib deine E-Mail-Adresse ein,
   und wir senden dir einen Bestätigungslink, der 24 Stunden gültig ist. Dein
   Konto wird gelöscht, sobald du bestätigst. Zu deiner Sicherheit verrät die
@@ -1051,7 +1128,8 @@ Unabhängig davon, wo du lebst, kannst du von uns verlangen:
 
 16.2 So widersprichst du
 
-- Um personalisierte Empfehlungen zu beenden: Einstellungen > Datenschutz.
+- Um personalisierte Empfehlungen zu beenden: Profil > Kontoeinstellungen >
+  Datenschutz & Daten.
 - Um Marketing zu beenden: Einstellungen > Benachrichtigungen oder der Link
   „Abmelden“ in jeder Marketing-E-Mail.
 - Für alles andere schreib an privacy@greengochat.com.
@@ -1081,8 +1159,8 @@ gegen das Gesetz verstoßen wurde.
 
 16.5 So stellst du einen Antrag
 
-- In der App: Einstellungen > Datenschutz (deine Daten herunterladen, dein
-  Konto löschen).
+- In der App: Profil > Kontoeinstellungen > Datenschutz & Daten (deine Daten
+  herunterladen) und Profil > Konto Löschen.
 - Per E-Mail: privacy@greengochat.com
 - Per Post: an die Adresse in Abschnitt 1.1, „Attn: Encarregado / DPO“.
 - Über unseren Vertreter in der EU oder im Vereinigten Königreich (Abschnitt
@@ -1132,8 +1210,8 @@ schützen (App Check). Hierfür ist keine Einwilligung erforderlich.
   Probleme zu beheben.
 - Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz
   bleiben sie AUSGESCHALTET, bis du im Einwilligungsbildschirm zustimmst.
-  Anderswo sind sie eingeschaltet, und du kannst sie unter Einstellungen >
-  Datenschutz ausschalten.
+  Anderswo sind sie eingeschaltet, und du kannst sie unter Profil >
+  Kontoeinstellungen > Datenschutz & Daten ausschalten.
 - Wir nutzen sie nicht für Werbung.
 
 17.3 Website und Web-App
@@ -1166,8 +1244,10 @@ Einstellungen > Benachrichtigungen an- oder abmelden, und jede Marketing-E-Mail
 enthält einen Abmeldelink.
 
 18.2 Servicenachrichten senden wir immer, weil sie Teil des Dienstes sind.
-Beispiele: Sicherheitswarnungen, Kaufbelege, Antworten auf deine Anfragen und
-Hinweise auf Änderungen unserer Bedingungen.
+Beispiele: Sicherheitswarnungen, Kaufbelege, Antworten auf deine Anfragen,
+Hinweise auf Änderungen unserer Bedingungen sowie Moderationsmitteilungen und
+E-Mails zu Beschwerden (Abschnitt 10.4), die wir auch senden, wenn dein Konto
+gesperrt ist.
 
 ================================================================================
 19. GERÄTEBERECHTIGUNGEN
@@ -1181,7 +1261,7 @@ sie benötigt. Du kannst sie jederzeit in den Einstellungen deines Geräts
   der Nähe; ungefährer Standort in deinem Profil (Abschnitt 7).
 - Kamera: Profilfotos, Fotos und Videos in Chats und Beiträgen, QR-Codes für
   den Event-Check-in, Verifizierung mit Ausweisdokument und Selfie.
-- Mikrofon: Sprachnachrichten, deine Sprachvorstellung, Ausspracheübungen.
+- Mikrofon: Sprachnachrichten und deine Sprachvorstellung.
 - Fotos: Auswahl von Bildern zum Hochladen. Die App nutzt die Fotoauswahl des
   Systems und sieht nur die Fotos, die du auswählst.
 - Benachrichtigungen: Nachrichten, Event-Erinnerungen und andere Hinweise.
@@ -1390,6 +1470,28 @@ Vertreter in der EU und im Vereinigten Königreich: werden derzeit benannt
 ================================================================================
 VERSIONSVERLAUF
 ================================================================================
+
+5.3.0 - gültig ab 16. Oktober 2026 für Konten, die ab diesem Tag erstellt
+werden; ab 16. November 2026 für vor dem 16. Oktober 2026 erstellte Konten
+(angekündigt am 16. Oktober 2026)
+- Neuer Abschnitt 11.8: Unternehmerangaben von Verkäufern (DSA art. 30), die
+  in ihren Angeboten angezeigt werden (auch Abschnitte 3.1, 4.3, 5 und 14).
+- Neuer Abschnitt 6.4: die Einstellung „Werbliche Nutzung meiner Inhalte“
+  (auch Abschnitte 3.1 und 5).
+- Abschnitte 10.4 und 18.2: Moderationsmitteilungen und E-Mails zu
+  Beschwerden, auch an gesperrte Konten (auch Abschnitt 5).
+- Abschnitt 9.2: anonymer gemeinsamer Cache für Vorlese-Audios (auch
+  Abschnitt 14).
+- Abschnitt 10.2: Umgang mit Personen, die häufig offensichtlich unbegründete
+  Meldungen senden, und die Zählung unbegründeter Meldungen über 12 Monate
+  (auch Abschnitte 5 und 14).
+- An die App angepasst: KI-Coach, Transkription von Sprachnachrichten,
+  Grammatikhilfe, Lernfunktionen, Bilder für Vokabelkarten und
+  Ausspracheübungen entfernt (Abschnitte 1.4, 2, 3.2, 5, 9, 10.1, 12 und 19);
+  öffentliche Inhalte werden mit Google Cloud Translation über einen
+  gemeinsamen Cache ohne personenbezogene Daten übersetzt (9.1, 9.2);
+  In-App-Pfade für die Kontolöschung und die Datenschutzeinstellungen (15.1,
+  16.2, 16.5, 17.2).
 
 5.2.1 - 16. Oktober 2026
 - Globus-Sichtbarkeit „Genau“: Andere Nutzer sehen einen Punkt, der höchstens

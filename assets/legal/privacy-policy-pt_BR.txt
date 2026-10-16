@@ -1,8 +1,11 @@
 POLÍTICA DE PRIVACIDADE DO GREENGO
 
-Versão: 5.2.1
-Data de vigência: 16 de outubro de 2026
-Versão anterior: 5.2.0 (15 de outubro de 2026)
+Versão: 5.3.0
+Data de vigência: 16 de outubro de 2026 para contas criadas a partir dessa data;
+  16 de novembro de 2026 para contas criadas antes de 16 de outubro de 2026
+Anunciada em: 16 de outubro de 2026
+Versão anterior: 5.2.1 (16 de outubro de 2026), que continua valendo para contas
+  criadas antes de 16 de outubro de 2026 até 15 de novembro de 2026
 
 ================================================================================
 1. QUEM SOMOS E COMO FALAR CONOSCO
@@ -55,8 +58,7 @@ outras culturas e a conversar superando barreiras de idioma. Ele inclui:
 - chat com tradução;
 - grupos e comunidades;
 - eventos e experiências;
-- páginas de empresas;
-- recursos de aprendizado.
+- páginas de empresas.
 
 O GreenGo é um serviço de descoberta social e cultural, e não um serviço para
 encontrar parceiros românticos ou sexuais.
@@ -88,8 +90,8 @@ reserva de uma experiência, como visitantes, a partir de um link compartilhado
     denunciou.
 - Se você verificar a sua idade com um documento de identidade, excluímos a
   imagem assim que a verificação é concluída. Guardamos apenas o resultado.
-- Os recursos de IA (tradução, leitura em voz alta, respostas inteligentes, o
-  coach de IA) funcionam por meio dos nossos servidores. Eles usam serviços do
+- Os recursos de IA (tradução, leitura em voz alta, respostas inteligentes e
+  análise de palavras) funcionam por meio dos nossos servidores. Eles usam serviços do
   Google, e o nosso assistente de suporte usa o Claude, da Anthropic. Pedimos
   o seu consentimento antes de você usá-los pela primeira vez, e o assistente
   de suporte é claramente identificado como IA.
@@ -119,8 +121,9 @@ b) Dados do perfil
      profissão, traços de personalidade, país ou cultura de origem e links
      para as suas redes sociais.
    - Não pedimos a sua orientação sexual (veja o item 3.4).
-   - As suas escolhas de privacidade, por exemplo modo anônimo, modo fantasma e
-     se você aparece no mapa.
+   - As suas escolhas de privacidade, por exemplo modo anônimo, modo
+     fantasma, se você aparece no mapa e se você permite o uso promocional do
+     seu conteúdo (item 6.4).
 
 c) Conteúdo e comunicações
    - Mensagens em chats individuais, grupos, comunidades e chats de eventos:
@@ -135,7 +138,8 @@ d) Dados de conta empresarial
    horário de funcionamento, canais de contato e, quando você pede para ser
    verificado como empresa, os documentos necessários para a verificação (veja
    o item 8.4). Se você vende ingressos ou experiências, também os seus dados
-   de faturamento (veja a letra h abaixo).
+   de faturamento (veja a letra h abaixo) e, se você atua como comerciante, os
+   seus dados de comerciante (veja a letra j abaixo).
 
 e) Dados de verificação
    Um documento de identidade e/ou uma selfie, somente se você optar por se
@@ -161,6 +165,12 @@ i) Dados de reservas de visitantes
    Se você reserva sem conta (item 11.7): o seu nome, sobrenome, endereço de
    e-mail e a sua reserva ou pedido de ingresso.
 
+j) Dados de comerciante dos vendedores
+   Se você vende ingressos ou experiências e declara que atua como
+   comerciante: o seu nome, endereço, número de telefone, e-mail, documento
+   de identidade ou número de registro e, se for registrado, o seu registro
+   comercial e o respectivo número. Veja o item 11.8.
+
 3.2 Dados gerados quando você usa o GreenGo
 
 a) Localização
@@ -181,7 +191,7 @@ c) Dados de uso
    - Pessoas, comunidades e eventos que você visualiza, segue, curte ou dos
      quais participa.
    - O seu histórico de moedas e de assinaturas.
-   - O seu progresso de aprendizado, conquistas e sequências.
+   - As suas conquistas e sequências.
    - Se você está online e quando foi visto pela última vez.
 
 d) Dados de análise
@@ -266,6 +276,8 @@ privado (a menos que você dê acesso ao seu álbum privado a alguém).
 - As publicações em uma comunidade pública são visíveis para todos que podem
   abri-la.
 - A sua página de empresa e as experiências que você publica são públicas.
+- Se você vende como comerciante, os seus dados de comerciante são exibidos
+  nos seus anúncios (item 11.8).
 
 4.4 A nossa equipe
 
@@ -300,11 +312,10 @@ Finalidade                          | O que usamos            | Base legal
    a você                           |                         | LGPD 7 IX). Você pode se opor (16.2).
 4. Mensagens, grupos, comunidades,  | Conteúdo, conta         | Contrato (GDPR 6(1)(b); LGPD 7 V)
    eventos, reservas                |                         |
-5. Recursos de IA: tradução,        | O texto ou áudio que    | Contrato, após o seu consentimento
-   leitura em voz alta, respostas   | você escolhe tratar     | para o recurso de IA (GDPR
-   inteligentes, ajuda gramatical,  |                         | 6(1)(a)/(b); LGPD 7 I/V). Veja a
-   coach de IA, transcrição de      |                         | seção 9.
-   mensagens de voz                 |                         |
+5. Recursos de IA: tradução,        | O texto que você        | Contrato, após o seu consentimento
+   leitura em voz alta, respostas   | escolhe tratar          | para o recurso de IA (GDPR
+   inteligentes, análise de         |                         | 6(1)(a)/(b); LGPD 7 I/V). Veja a
+   palavras                         |                         | seção 9.
 6. Verificação de idade com         | Imagem do documento,    | Consentimento explícito (GDPR
    documento de identidade          | data de nascimento lida | 9(2)(a); LGPD 11 I). Veja a seção 8.
                                     | nele                    |
@@ -358,6 +369,23 @@ Finalidade                          | O que usamos            | Base legal
     conta: a reserva, e-mails de    | visitante, reserva ou   | (GDPR 6(1)(b); LGPD 7 V)
     ingresso e de reserva, avisos   | pedido de ingresso      |
     de cancelamento (item 11.7)     |                         |
+20. Coletar os dados de comerciante | Dados de comerciante    | Obrigação legal (DSA art. 30;
+    dos vendedores e exibi-los nos  | dos vendedores          | GDPR 6(1)(c); LGPD 7 II)
+    seus anúncios (item 11.8)       |                         |
+21. Uso promocional do seu nome,    | O nome, as fotos e o    | Consentimento, que você pode
+    das suas fotos ou do seu        | conteúdo que você nos   | revogar a qualquer momento (GDPR
+    conteúdo fora do aplicativo,    | permite usar            | 6(1)(a); LGPD 7 I)
+    somente se você permitir (6.4)  |                         |
+22. Avisos de moderação e recursos  | E-mail, dados da conta  | Obrigação legal (DSA arts. 17 e
+    por e-mail, também para contas  | e do caso               | 20; GDPR 6(1)(c)); nos demais
+    suspensas (item 10.4)           |                         | casos, legítimo interesse em uma
+                                    |                         | moderação justa (GDPR 6(1)(f);
+                                    |                         | LGPD 7 IX)
+23. Tratar as pessoas que enviam    | Contagem das suas       | Obrigação legal (DSA art. 23;
+    com frequência denúncias        | denúncias claramente    | GDPR 6(1)(c)); nos demais casos,
+    claramente infundadas (item     | infundadas,             | legítimo interesse em um sistema
+    10.2)                           | advertências            | de denúncias que funcione (GDPR
+                                    |                         | 6(1)(f); LGPD 7 IX)
 
 Quando nos baseamos no legítimo interesse, ponderamos o nosso interesse em
 relação aos seus direitos. Você pode nos pedir essa avaliação. Você pode se
@@ -389,6 +417,16 @@ não produz efeitos jurídicos nem efeitos igualmente significativos para você.
 
 6.3 Não usamos os seus dados para publicidade e não criamos perfis seus para
 terceiros.
+
+6.4 Uso promocional do seu conteúdo
+- Usamos o seu nome, as suas fotos ou o seu conteúdo em publicidade ou
+  marketing do GreenGo fora do aplicativo somente se você permitir.
+- A configuração fica em Perfil > Configurações da Conta > Privacidade e
+  dados > Uso promocional do meu conteúdo. Ela fica desativada, a menos que
+  você a ative, e você pode desativá-la a qualquer momento. Depois que você a
+  desativa, não usamos o seu conteúdo em novas peças de publicidade ou
+  marketing.
+- Registramos a sua escolha e quando você a fez.
 
 ================================================================================
 7. LOCALIZAÇÃO
@@ -535,15 +573,15 @@ lucro com dados biométricos.
 
 Recurso                          | Provedor (em nosso nome)    | O que é enviado
 ---------------------------------|-----------------------------|--------------------------------
-Tradução de mensagens,           | Google Cloud Translation    | O texto a traduzir
-publicações e conteúdo público   |                             |
+Tradução de mensagens            | Google Cloud Translation    | O texto a traduzir
+Tradução de conteúdo público     | Google Cloud Translation,   | Somente o texto, sem dados
+(eventos, comunidades, anúncios) | por meio de um cache        | pessoais
+                                 | compartilhado nos nossos    |
+                                 | servidores                  |
 Leitura em voz alta              | Google Cloud Text-to-Speech | O texto a ser lido em voz alta
 (texto para fala)                |                             |
-Respostas inteligentes, ajuda    | Google Gemini (API paga)    | A mensagem ou o texto que você
-gramatical, dicas culturais,     |                             | seleciona, e os idiomas
-análise de palavras, coach de IA |                             |
-Transcrição de mensagens de voz  | Google Cloud Speech-to-Text | A mensagem de voz que você pede
-                                 |                             | para transcrever
+Respostas inteligentes, dicas    | Google Gemini (API paga)    | A mensagem ou o texto que você
+culturais, análise de palavras   |                             | seleciona, e os idiomas
 Assistente de suporte            | Anthropic Claude            | As suas mensagens ao suporte
 Moderação de imagens e textos    | Google Cloud Vision e       | Imagens enviadas; textos
                                  | Natural Language            | verificados por segurança
@@ -555,19 +593,30 @@ Moderação de imagens e textos    | Google Cloud Vision e       | Imagens envia
 - Os provedores atuam como nossos operadores. Nós os usamos sob os seus termos
   comerciais pagos, segundo os quais eles não usam os seus dados para treinar
   os seus modelos.
-- Antes de você usar pela primeira vez a tradução de mensagens de outras
-  pessoas, a leitura em voz alta, as respostas inteligentes ou o coach de IA,
-  mostramos qual provedor é usado e o que é enviado, e pedimos o seu
-  consentimento. Você pode alterar isso em Configurações.
+- Antes de os recursos de IA processarem o seu conteúdo privado pela
+  primeira vez (por exemplo, a tradução de mensagens de chat, a leitura em
+  voz alta e o assistente de IA), mostramos qual provedor é usado e o que é
+  enviado, e pedimos o seu consentimento. Você pode alterar isso em
+  Configurações.
+- O conteúdo público, como eventos, comunidades e anúncios, é traduzido com o
+  Google Cloud Translation por meio de um cache compartilhado nos nossos
+  servidores. Somente o texto é enviado, sem nenhum dado pessoal, e a tradução
+  fica armazenada para todos que visualizam esse conteúdo. Isso não exige o
+  seu consentimento.
 - O conteúdo criado ou alterado por IA é identificado, por exemplo com
   "Traduzido". O resultado da IA pode conter erros. Não confie nele para
   decisões importantes.
 - O nosso chat de suporte responde primeiro com um assistente de IA, que é
-  claramente identificado como IA. Você pode pedir para falar com uma pessoa a
-  qualquer momento.
+  claramente identificado como IA. Você pode tocar em "Falar com uma pessoa"
+  a qualquer momento.
 - Quando você traduz uma mensagem de outra pessoa, o texto dela é enviado ao
   provedor de tradução. Essa pessoa concordou com essa possibilidade quando
   aceitou esta política.
+- Leitura em voz alta: áudios curtos criados a partir de um texto podem ser
+  mantidos em um cache compartilhado anônimo, para que o mesmo texto não
+  precise ser convertido de novo. O cache armazena somente o texto e o seu
+  áudio, sem o identificador da sua conta nem qualquer outro vínculo com
+  você.
 
 9.3 Decisões automatizadas
 
@@ -598,7 +647,6 @@ Usamos ferramentas automatizadas para ajudar a manter o GreenGo seguro:
   acesso apenas para:
   - entregar e armazenar as suas mensagens;
   - traduzi-las ou lê-las em voz alta quando você ou a outra pessoa pedem;
-  - transcrever mensagens de voz mediante solicitação;
   - fazer backup delas quando você pede;
   - verificar conteúdo que alguém denunciou, ou que as nossas ferramentas
     automatizadas de segurança sinalizaram;
@@ -611,6 +659,10 @@ Usamos ferramentas automatizadas para ajudar a manter o GreenGo seguro:
   denunciado.
 - As denúncias sobre a segurança de crianças são tratadas primeiro.
 - Informamos você quando tivermos analisado a sua denúncia.
+- Se alguém enviar com frequência denúncias claramente infundadas, mantemos
+  uma contagem das suas denúncias infundadas por 12 meses. Nós o advertimos
+  e, se continuar, não processamos as suas denúncias por 30 dias (DSA
+  art. 23; Termos e Condições, item 18.6).
 
 10.3 Exploração sexual infantil
 
@@ -624,11 +676,17 @@ Usamos ferramentas automatizadas para ajudar a manter o GreenGo seguro:
 
 10.4 Exposição de motivos e recursos
 
-- Se removermos o seu conteúdo ou restringirmos a sua conta, informaremos o
-  que fizemos, por quê, qual regra foi violada e se foram usados meios
-  automatizados.
-- Você pode recorrer no aplicativo em até 6 meses. Uma pessoa que não
-  participou da decisão original analisa o recurso.
+- Se removermos o seu conteúdo ou restringirmos a sua conta, enviaremos a
+  você um aviso no aplicativo e por e-mail. Ele informa o que fizemos, a
+  qual conteúdo isso se refere, por quê, qual regra foi violada e se foram
+  usados meios automatizados.
+- Enviamos esses avisos, e os e-mails sobre o seu recurso, para o endereço
+  de e-mail da sua conta mesmo que a sua conta esteja suspensa.
+- Você pode recorrer em até 6 meses, no aplicativo ou pelo link no e-mail do
+  aviso. Uma pessoa que não participou da decisão original analisa o
+  recurso, e enviamos a você o resultado e os motivos.
+- Se você denunciou algo e decidimos não tomar providências, você pode
+  recorrer dessa decisão da mesma forma.
 - Mais detalhes estão nos nossos Termos e Condições.
 
 10.5 Fotos privadas e mídia de chat: aviso e registro
@@ -766,6 +824,21 @@ registros de reembolsos e estornos para prevenir fraudes.
   incluindo acesso e eliminação. Escreva para privacy@greengochat.com a
   partir do endereço de e-mail usado na reserva.
 
+11.8 Dados de comerciante dos vendedores
+
+- Se você vende ingressos ou experiências, declara em Central do negócio >
+  Configurações se atua como comerciante. Se atuar, você nos fornece os seus
+  dados de comerciante: o seu nome, endereço, número de telefone, e-mail,
+  documento de identidade ou número de registro e, se for registrado, o seu
+  registro comercial e o respectivo número.
+- O Regulamento dos Serviços Digitais da UE (DSA, art. 30) exige que
+  coletemos esses dados e os disponibilizemos aos compradores. Nós os
+  exibimos nos seus anúncios, e assim qualquer pessoa que possa ver os seus
+  anúncios pode vê-los.
+- A base legal é a nossa obrigação legal (GDPR 6(1)(c); LGPD 7 II).
+- Guardamos os dados enquanto você vende como comerciante no GreenGo e por
+  6 meses depois disso (seção 14).
+
 ================================================================================
 12. COM QUEM COMPARTILHAMOS OS SEUS DADOS
 ================================================================================
@@ -790,8 +863,8 @@ Firebase                       | armazenamento de arquivos,       | global  | Fr
 Serviços de IA do Google Cloud | Vision (texto de documentos,     | EUA     | Como acima
                                | moderação de imagens), Natural   |         |
                                | Language (moderação de textos),  |         |
-                               | Speech-to-Text, Text-to-Speech,  |         |
-                               | Translation, Gemini              |         |
+                               | Text-to-Speech, Translation,     |         |
+                               | Gemini                           |         |
 Google Maps Platform           | Converter coordenadas em nomes   | EUA     | Como acima
                                | de cidades; mapas                |         |
 Stripe                         | Pagamentos na web, assinaturas,  | EUA,    | SCCs da UE, EU-US Data Privacy
@@ -827,11 +900,9 @@ Anthropic PBC                  | Assistente de suporte com IA     | EUA     | SC
     as suas próprias políticas.
   - O GreenGo pode receber uma comissão deles.
   - Não enviamos a eles os dados da sua conta.
-- Serviços de mapas e de imagens carregados diretamente pelo aplicativo:
-  OpenStreetMap, CARTO, Cesium (globo 3D), Unsplash e Pexels (imagens para
-  cartões de vocabulário). Eles recebem o endereço IP do seu dispositivo e a
-  solicitação (por exemplo, uma área do mapa ou uma palavra), mas não os dados
-  da sua conta.
+- Serviços de mapas carregados diretamente pelo aplicativo: OpenStreetMap,
+  CARTO e Cesium (globo 3D). Eles recebem o endereço IP do seu dispositivo e a
+  solicitação (por exemplo, uma área do mapa), mas não os dados da sua conta.
 
 12.4 Outros usuários
 
@@ -924,6 +995,12 @@ Contadores de limite de reservas    | Excluídos automaticamente em poucas
 de visitantes (chaves com hash)     | horas
 Denúncias, casos de moderação,      | 2 anos após o encerramento do caso
 recursos                            |
+Contagem de denúncias claramente    | 12 meses
+infundadas (item 10.2)              |
+Dados de comerciante dos vendedores | Enquanto você vender como
+(11.8)                              | comerciante, e por 6 meses depois
+Cache de áudio da leitura em voz    | Anônimo, sem vínculo com você;
+alta (9.2)                          | mantido enquanto for usado
 Denúncias e provas relativas à      | Pelo menos 1 ano, ou mais quando a lei
 segurança de crianças               | ou uma autoridade o exigir
 Registros de consentimento e de     | Enquanto a sua conta existir e por
@@ -960,8 +1037,8 @@ a conta.
 
 15.1 Como excluir
 
-- No aplicativo: Perfil > Configurações > Excluir conta. Será solicitado que
-  você faça login novamente para confirmar.
+- No aplicativo: Perfil > Excluir Conta. Será solicitado que você faça login
+  novamente para confirmar.
 - Na web: https://greengochat.com/delete-account. Informe o seu endereço de
   e-mail e enviaremos um link de confirmação válido por 24 horas. A sua conta é
   excluída quando você confirma. Para a sua segurança, a página não informa a
@@ -1030,8 +1107,8 @@ Onde quer que você more, você pode nos pedir para:
 
 16.2 Como se opor
 
-- Para interromper as recomendações personalizadas: Configurações >
-  Privacidade.
+- Para interromper as recomendações personalizadas: Perfil > Configurações
+  da Conta > Privacidade e dados.
 - Para deixar de receber marketing: Configurações > Notificações, ou o link
   "cancelar inscrição" em qualquer e-mail de marketing.
 - Para qualquer outra coisa, escreva para privacy@greengochat.com.
@@ -1059,8 +1136,8 @@ ou trabalha, ou de onde acredita que a lei foi violada.
 
 16.5 Como fazer uma solicitação
 
-- No aplicativo: Configurações > Privacidade (baixar os seus dados, excluir a
-  sua conta).
+- No aplicativo: Perfil > Configurações da Conta > Privacidade e dados
+  (baixar os seus dados) e Perfil > Excluir Conta.
 - Por e-mail: privacy@greengochat.com
 - Por correio: para o endereço indicado no item 1.1, "A/C: Encarregado / DPO".
 - Por meio do nosso representante na UE ou no Reino Unido (item 1.3).
@@ -1109,8 +1186,8 @@ Check). Eles não precisam de consentimento.
   problemas.
 - No Espaço Econômico Europeu, no Reino Unido e na Suíça, eles permanecem
   DESATIVADOS até que você concorde na tela de consentimento. Nos demais
-  locais, eles ficam ativados, e você pode desativá-los em Configurações >
-  Privacidade.
+  locais, eles ficam ativados, e você pode desativá-los em Perfil >
+  Configurações da Conta > Privacidade e dados.
 - Não os usamos para publicidade.
 
 17.3 Site e aplicativo web
@@ -1143,7 +1220,9 @@ cancelar a inscrição.
 
 18.2 Sempre enviamos mensagens de serviço, porque elas fazem parte do serviço.
 Exemplos: alertas de segurança, recibos de compra, respostas às suas
-solicitações e avisos sobre alterações nos nossos termos.
+solicitações, avisos sobre alterações nos nossos termos, e avisos de
+moderação e e-mails sobre recursos (item 10.4), que enviamos mesmo que a sua
+conta esteja suspensa.
 
 ================================================================================
 19. PERMISSÕES DO DISPOSITIVO
@@ -1158,8 +1237,7 @@ seu dispositivo.
 - Câmera: fotos de perfil, fotos e vídeos em chats e publicações, códigos QR
   para check-in em eventos, verificação por documento de identidade e por
   selfie.
-- Microfone: mensagens de voz, a sua apresentação em áudio, prática de
-  pronúncia.
+- Microfone: mensagens de voz e a sua apresentação em áudio.
 - Fotos: escolher imagens para enviar. O aplicativo usa o seletor de fotos do
   sistema e vê apenas as fotos que você seleciona.
 - Notificações: mensagens, lembretes de eventos e outros alertas.
@@ -1362,6 +1440,28 @@ Representantes na UE e no Reino Unido: em processo de nomeação (veja o item
 ================================================================================
 HISTÓRICO DE VERSÕES
 ================================================================================
+
+5.3.0 - em vigor a partir de 16 de outubro de 2026 para contas criadas a partir
+dessa data; a partir de 16 de novembro de 2026 para contas criadas antes de
+16 de outubro de 2026 (anunciada em 16 de outubro de 2026)
+- Nova seção 11.8: dados de comerciante dos vendedores (DSA art. 30),
+  exibidos nos seus anúncios (também seções 3.1, 4.3, 5 e 14).
+- Nova seção 6.4: a configuração "Uso promocional do meu conteúdo" (também
+  seções 3.1 e 5).
+- Seções 10.4 e 18.2: avisos de moderação e e-mails sobre recursos, enviados
+  mesmo para contas suspensas (também seção 5).
+- Seção 9.2: cache compartilhado anônimo para o áudio da leitura em voz alta
+  (também seção 14).
+- Seção 10.2: tratamento das pessoas que enviam com frequência denúncias
+  claramente infundadas, e a contagem de 12 meses das denúncias infundadas
+  (também seções 5 e 14).
+- Alinhada com o aplicativo: removidos o coach de IA, a transcrição de
+  mensagens de voz, a ajuda gramatical, os recursos de aprendizado, as imagens
+  para cartões de vocabulário e a prática de pronúncia (seções 1.4, 2, 3.2, 5,
+  9, 10.1, 12 e 19); o conteúdo público é traduzido com o Google Cloud
+  Translation por meio de um cache compartilhado, sem dados pessoais (9.1,
+  9.2); caminhos no aplicativo para excluir a conta e para as configurações de
+  privacidade (15.1, 16.2, 16.5, 17.2).
 
 5.2.1 - 16 de outubro de 2026
 - Visibilidade no Globo "Exata": outros usuários veem um ponto a no máximo

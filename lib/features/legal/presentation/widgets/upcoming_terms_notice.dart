@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -5,15 +6,18 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/legal_versions.dart';
+import '../../../../core/services/consent_recorder.dart';
 import '../../../../generated/app_localizations.dart';
 import 'legal_update_sheet.dart';
 
 /// Terms 24.2 a: advance notice of an important Terms change, in the app.
-/// From the announcement ([kUpcomingTermsVersion]) until
-/// [kUpcomingTermsEffectiveDate] a sheet says when the Terms change, what
-/// changes and links to the new text ([kUpcomingTermsUrl]). "Got it" or
-/// "Read the new Terms" dismiss it for that version (per device); closing it
-/// any other way shows it again at the next app start.
+/// Until [kUpcomingTermsEffectiveDate] a sheet says when the Terms change for
+/// the user, what changes and links to the new text ([kUpcomingTermsUrl]).
+/// Only accounts created before [kUpcomingTermsAccountsCreatedBefore] see it
+/// (creation time from Firebase Auth: no Firestore read); newer accounts
+/// accepted that version at sign-up. "Got it" or "Read the new Terms" dismiss
+/// it for that version (per device); closing it any other way shows it again
+/// at the next app start.
 class UpcomingTermsNotice {
   UpcomingTermsNotice._();
 
@@ -27,10 +31,37 @@ class UpcomingTermsNotice {
   @visibleForTesting
   static void resetSession() => _shownThisSession = false;
 
-  static Future<bool> shouldShow({DateTime? now}) async {
+  /// Creation time of the signed-in account (Firebase Auth metadata, already
+  /// on the device), or null when unknown.
+  static DateTime? _accountCreatedAt() {
+    try {
+      return FirebaseAuth.instance.currentUser?.metadata.creationTime;
+    } catch (_) {
+      return null;
+    }
+  }
+
+  /// [accountCreatedAt] defaults to the signed-in account's creation time.
+  /// [recorder] (default [ConsentRecorder.instance]) holds the Terms version
+  /// accepted from this device: once it is the announced one (e.g. accepted
+  /// on the re-acceptance sheet), the notice is not needed.
+  static Future<bool> shouldShow({
+    DateTime? now,
+    DateTime? accountCreatedAt,
+    ConsentRecorder? recorder,
+  }) async {
     const v = kUpcomingTermsVersion;
-    if (v == null || !upcomingTermsNoticeActive(now ?? DateTime.now())) {
+    if (v == null ||
+        !upcomingTermsNoticeActive(now ?? DateTime.now(),
+            accountCreatedAt: accountCreatedAt ?? _accountCreatedAt())) {
       return false;
+    }
+    try {
+      final accepted = await (recorder ?? ConsentRecorder.instance)
+          .localDocVersion(ConsentTypes.terms);
+      if (isLegalVersionAtLeast(accepted, v)) return false;
+    } catch (_) {
+      // No local record: decide on the creation time alone.
     }
     try {
       final prefs = await SharedPreferences.getInstance();
@@ -55,10 +86,15 @@ class UpcomingTermsNotice {
   static Future<void> showIfNeeded(
     BuildContext context, {
     DateTime? now,
+    DateTime? accountCreatedAt,
+    ConsentRecorder? recorder,
     Future<bool> Function(Uri url)? openUrl,
   }) async {
     if (_shownThisSession) return;
-    if (!await shouldShow(now: now)) return;
+    if (!await shouldShow(
+        now: now, accountCreatedAt: accountCreatedAt, recorder: recorder)) {
+      return;
+    }
     if (!context.mounted || _shownThisSession) return;
     _shownThisSession = true;
     await showModalBottomSheet<void>(

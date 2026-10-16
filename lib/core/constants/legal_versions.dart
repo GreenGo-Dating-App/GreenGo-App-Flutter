@@ -7,10 +7,10 @@
 library;
 
 /// Terms and Conditions version shown in-app and recorded at acceptance.
-const String kTermsVersion = '5.2.1';
+const String kTermsVersion = '5.3.0';
 
 /// Privacy Policy version shown in-app and recorded at acceptance.
-const String kPrivacyPolicyVersion = '5.2.1';
+const String kPrivacyPolicyVersion = '5.3.0';
 
 /// Effective date of [kPrivacyPolicyVersion] (and of the Terms up to 5.1.0).
 /// 5.2.0: in-app checkout only, seller-paid service fee 11.5, business
@@ -19,6 +19,10 @@ const String kPrivacyPolicyVersion = '5.2.1';
 /// owner's call.
 /// 5.2.1 (16 Oct 2026): Globe discoverability Exact = ~100 m point + distances
 /// to the nearest 100 m; an opt-in clarification, no re-acceptance.
+/// 5.3.0 (16 Oct 2026 for accounts created from that day - owner decision of
+/// 16 Oct 2026; accounts created before stay on 5.2.1 until 15 Nov 2026):
+/// trader details 11.8, promotional-use setting 6.4, moderation emails,
+/// app alignment. Sign-up records 5.3.0; existing users are NOT asked again.
 final DateTime kLegalEffectiveDate = DateTime(2026, 10, 16);
 
 /// Effective date of [kTermsVersion] (5.1.1: section 9.2 - fixed price
@@ -29,6 +33,11 @@ final DateTime kLegalEffectiveDate = DateTime(2026, 10, 16);
 /// raised here; whether 5.2.0 triggers re-acceptance is the owner's call.
 /// 5.2.1: 7.3 c - cancel a web subscription in Profile > Account Settings >
 /// Manage subscription; a clarification, no re-acceptance).
+/// 5.3.0: effective 16 Oct 2026 for accounts created on or after that day
+/// (owner decision of 16 Oct 2026; sign-up records 5.3.0). Accounts created
+/// before stay on 5.2.1 until 15 Nov 2026 and get the advance notice
+/// ([kUpcomingTermsVersion]); [kTermsReacceptFrom] is NOT raised, so nobody
+/// is asked to re-accept now.
 final DateTime kTermsEffectiveDate = DateTime(2026, 10, 16);
 
 /// Oldest accepted version that does NOT trigger the "we've updated our
@@ -39,37 +48,50 @@ const String kTermsReacceptFrom = '5.1.0';
 /// Same as [kTermsReacceptFrom], for the Privacy Policy.
 const String kPrivacyReacceptFrom = '5.1.0';
 
-/// Advance notice of the NEXT Terms version (Terms 24.2 a: at least 30 days
-/// before an important change takes effect, in the app and by email). From
-/// the announcement until [kUpcomingTermsEffectiveDate] the app shows a
+/// Advance notice of the NEXT Terms version for EXISTING accounts (Terms
+/// 24.2 a: at least 30 days before an important change takes effect, in the
+/// app and by email). Until [kUpcomingTermsEffectiveDate] the app shows a
 /// dismissible notice (once per version) linking to [kUpcomingTermsUrl], the
-/// public text hosted on the website. The email goes out through the admin
-/// callable `adminSendTermsChangeNotice` (functions legal/termsNoticeCopy.ts
-/// carries the same version, date and URL).
+/// public text hosted on the website, to accounts created before
+/// [kUpcomingTermsAccountsCreatedBefore]. The email goes out through the
+/// admin callable `adminSendTermsChangeNotice` (functions
+/// legal/termsNoticeCopy.ts carries the same version, dates and URL).
 ///
-/// When the version takes effect: bundle the new texts, set [kTermsVersion] /
-/// [kTermsEffectiveDate], raise [kTermsReacceptFrom] if the change is
-/// material (the "we've updated our Terms" sheet then asks everyone again and
-/// shows that version's bullets, [legalUpdateBulletsVersion]), and clear or
-/// replace these constants. Set [kUpcomingTermsVersion] to null when nothing
-/// is announced.
+/// 5.3.0 (owner decision of 16 Oct 2026): already the bundled [kTermsVersion]
+/// and in force for accounts created from 16 Oct 2026, which never see the
+/// notice; accounts created before move from 5.2.1 to 5.3.0 on 16 Nov 2026.
+///
+/// When the version takes effect for everyone: raise [kTermsReacceptFrom] if
+/// the change is material (the "we've updated our Terms" sheet then asks
+/// everyone again and shows that version's bullets,
+/// [legalUpdateBulletsVersion]), and clear or replace these constants. Set
+/// [kUpcomingTermsVersion] to null when nothing is announced.
 const String? kUpcomingTermsVersion = '5.3.0';
 
-/// Effective date of [kUpcomingTermsVersion] (16 October 2026 + 30 days).
+/// Date from which [kUpcomingTermsVersion] applies to accounts created before
+/// [kUpcomingTermsAccountsCreatedBefore] (16 October 2026 + 30 days).
 final DateTime kUpcomingTermsEffectiveDate = DateTime(2026, 11, 16);
 
-/// Public page with the text of [kUpcomingTermsVersion].
+/// Accounts created at or after this instant (16 Oct 2026, 00:00 UTC) accepted
+/// [kUpcomingTermsVersion] at sign-up; only older accounts get the notice.
+final DateTime kUpcomingTermsAccountsCreatedBefore = DateTime.utc(2026, 10, 16);
+
+/// Public page with the text of [kUpcomingTermsVersion] (the website now
+/// redirects it to the current Terms page, which is that version).
 const String kUpcomingTermsUrl =
     'https://greengochat.com/terms-of-service/upcoming';
 
-/// True while the notice of [kUpcomingTermsVersion] must be shown: a version
-/// is announced, it is newer than the bundled [kTermsVersion], and its
-/// effective date has not come yet.
-bool upcomingTermsNoticeActive(DateTime now) {
+/// True while the notice of [kUpcomingTermsVersion] must be shown to an
+/// account created at [accountCreatedAt]: a version is announced, its
+/// effective date has not come yet, and the account is older than
+/// [kUpcomingTermsAccountsCreatedBefore]. An unknown creation time never
+/// shows it (new accounts must never see it).
+bool upcomingTermsNoticeActive(DateTime now, {DateTime? accountCreatedAt}) {
   final v = kUpcomingTermsVersion;
   if (v == null) return false;
-  if (isLegalVersionAtLeast(kTermsVersion, v)) return false;
-  return now.isBefore(kUpcomingTermsEffectiveDate);
+  if (!now.isBefore(kUpcomingTermsEffectiveDate)) return false;
+  if (accountCreatedAt == null) return false;
+  return accountCreatedAt.isBefore(kUpcomingTermsAccountsCreatedBefore);
 }
 
 /// The material version whose "what's new" bullets the re-acceptance sheet

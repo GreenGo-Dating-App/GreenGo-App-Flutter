@@ -16,7 +16,9 @@
  *     kind            'private_content_warning'
  *     uid
  *     warningVersion  e.g. 'pcw-1' (bumping it re-shows the warning)
- *     termsVersion    Terms of Service version (TERMS_VERSION, §16.9(d))
+ *     termsVersion    Terms of Service version that applies to the account
+ *                     (termsVersionForAccount: TERMS_VERSION, or the previous
+ *                     one for accounts created before it took effect), §16.9(d)
  *     acceptedAt      server timestamp
  *     locale, platform, appVersion       (as reported by the client)
  *     ip, userAgent                       (from the HTTPS request)
@@ -35,7 +37,7 @@ import * as admin from 'firebase-admin';
 import { createHash } from 'crypto';
 import '../shared/firebaseAdmin';
 import { AppError, handleError } from '../shared/utils';
-import { TERMS_VERSION } from '../shared/legalVersions';
+import { TERMS_VERSION, termsVersionForAccount } from '../shared/legalVersions';
 
 export const ACK_COLLECTION = 'legal_acknowledgements';
 export const ACK_KIND = 'private_content_warning';
@@ -107,13 +109,21 @@ export async function recordPrivateContentWarningAck(request: Pick<CallableReque
   }
 
   const { ip, userAgent } = requestMeta(request.rawRequest);
+  // The version that applies to this account (5.3.0 took effect for new
+  // accounts first): Auth creation time, one call per acknowledgement.
+  let createdMs: number | null = null;
+  try {
+    createdMs = Date.parse((await admin.auth().getUser(uid)).metadata.creationTime);
+  } catch {
+    // unknown: the current version
+  }
   const ref = items.doc();
   // create(): fails instead of overwriting - the record is append-only.
   await ref.create({
     kind: ACK_KIND,
     uid,
     warningVersion,
-    termsVersion: TERMS_VERSION,
+    termsVersion: termsVersionForAccount(createdMs, Date.now()),
     acceptedAt: admin.firestore.FieldValue.serverTimestamp(),
     locale,
     platform,

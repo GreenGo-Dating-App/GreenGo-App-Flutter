@@ -14,8 +14,10 @@ const n530 = TERMS_NOTICES['5.3.0'];
 const arb = (l: string) => JSON.parse(fs.readFileSync(path.join(__dirname, '../../../lib/l10n', `app_${l}.arb`), 'utf8'));
 
 describe('terms change notice email', () => {
-  test('5.3.0: 30 days after 16 October 2026, the public upcoming URL', () => {
+  test('5.3.0: 30 days after 16 October 2026, the public upcoming URL, existing accounts only', () => {
     expect(n530.effectiveDate).toBe('2026-11-16');
+    // Owner decision of 16 Oct 2026: accounts created from that day are on 5.3.0 already.
+    expect(n530.accountsCreatedBefore).toBe('2026-10-16');
     expect(n530.url).toBe('https://greengochat.com/terms-of-service/upcoming');
     const days = (Date.parse('2026-11-16T00:00:00Z') - Date.parse('2026-10-16T00:00:00Z')) / 86400000;
     expect(days).toBeGreaterThanOrEqual(30);

@@ -8,14 +8,17 @@
  *   request  { version: '5.3.0', dryRun?: boolean (DEFAULT TRUE),
  *              pageSize?: 1..500 (default 200), cursor?: string | null }
  *   response { version, effectiveDate, url, dryRun, processed, withEmail,
- *              sent, alreadySent, skippedNoEmail, failed, locales: {en: n, ...},
+ *              sent, alreadySent, skippedNoEmail, skippedNewAccounts, failed,
+ *              locales: {en: n, ...},
  *              nextCursor: string | null, done: boolean, noticeDaysLeft,
  *              preview?: { subject, text } (dry run, English) }
  *
  * The panel calls it again with `cursor = nextCursor` until `done`. Pages walk
  * `users` by document id (no index needed); emails come from Firebase Auth in
  * batches of 100 (authEmailsOf); the language from the users doc already
- * loaded (no extra reads).
+ * loaded (no extra reads). When the notice has accountsCreatedBefore, accounts
+ * created on or after that date (Auth creation time, same getUsers call) are
+ * skipped: they accepted the version at sign-up (skippedNewAccounts).
  *
  * Idempotent per user + version: every email is claimed in
  * email_dispatch/terms_notice_<version>_<uid> before sending (sendEmailOnce),
@@ -110,7 +113,10 @@ export async function runTermsNoticePage(input: NoticeRunInput, by: string) {
   const users = snap.docs
     .filter((d) => d.get('isDeleted') !== true && d.get('accountDeleted') !== true)
     .map((d) => ({ uid: d.id, locale: localeFromUserData(d.data()) }));
-  const emails = await authEmailsOf(users.map((u) => u.uid));
+  const tooNew = new Set<string>();
+  const createdBeforeMs = notice.accountsCreatedBefore
+    ? Date.parse(`${notice.accountsCreatedBefore}T00:00:00Z`) : undefined;
+  const emails = await authEmailsOf(users.map((u) => u.uid), { createdBeforeMs, tooNew });
   const withEmail = users.filter((u) => emails.has(u.uid));
 
   const locales: Record<string, number> = {};
@@ -156,7 +162,8 @@ export async function runTermsNoticePage(input: NoticeRunInput, by: string) {
     withEmail: withEmail.length,
     sent,
     alreadySent,
-    skippedNoEmail: users.length - withEmail.length,
+    skippedNoEmail: users.length - withEmail.length - tooNew.size,
+    skippedNewAccounts: tooNew.size,
     failed,
     locales,
     nextCursor,
@@ -178,6 +185,7 @@ export async function runTermsNoticePage(input: NoticeRunInput, by: string) {
       sent: inc(sent),
       alreadySent: inc(alreadySent),
       skippedNoEmail: inc(result.skippedNoEmail),
+      skippedNewAccounts: inc(result.skippedNewAccounts),
       failed: inc(failed),
       lastCursor: last,
       done,

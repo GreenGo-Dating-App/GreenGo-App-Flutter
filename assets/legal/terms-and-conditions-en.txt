@@ -1,8 +1,11 @@
 GREENGO TERMS AND CONDITIONS
 
-Version: 5.2.1
-Effective date: 16 October 2026
-Previous version: 5.2.0 (14 October 2026)
+Version: 5.3.0
+Effective date: 16 October 2026 for accounts created on or after that date;
+  16 November 2026 for accounts created before 16 October 2026
+Announced: 16 October 2026
+Previous version: 5.2.1 (16 October 2026), which continues to apply to accounts
+  created before 16 October 2026 until 15 November 2026
 
 ================================================================================
 1. ABOUT THESE TERMS
@@ -48,8 +51,8 @@ consumer-protection laws of the country where you live.
 - "Event": a meeting created on GreenGo by a user or business.
 - "Experience": an activity a user (the "Host") offers to other users (the
   "Guests"), free or paid, and booked through GreenGo (section 12).
-- "Business account": an account used by a company or professional to present
-  their business (section 13).
+- "Business account": your own Account switched to business mode, used by a
+  company or professional to present their business (section 13).
 - "Trader": anyone who acts for purposes related to their trade, business,
   craft or profession.
 - "Consumer": anyone who is not acting as a trader.
@@ -67,8 +70,8 @@ using the Services under the law of your country or by sanctions.
 3.3 You may not use GreenGo if we have previously closed your account for a
 serious breach of these Terms, unless we allow you to come back.
 
-3.4 One person, one personal account. A business may also have one business
-account per business.
+3.4 One person, one personal account. A Business account is not a separate
+account: it is your own Account switched to business mode (section 13).
 
 ================================================================================
 4. YOUR ACCOUNT
@@ -86,7 +89,8 @@ happens in your account unless it was used without your fault.
 4.4 Verification
 a) Some features require you to verify your age with an identity document:
    - publishing in a Community;
-   - publishing a paid experience;
+   - publishing any Experience, and booking an Experience as a member
+     (section 12.3);
    - other cases the law requires where you live.
 b) Some badges require you to verify your profile with a selfie.
 c) We delete identity-document images as soon as the check is finished, as
@@ -108,7 +112,8 @@ c) join and run Communities, with posts, tips, announcements and community
 d) create, find and attend Events, including events from partner sites;
 e) offer and book Experiences hosted by other users;
 f) present a business with a Business account;
-g) learn languages with lessons, games, vocabulary tools and an AI coach;
+g) use AI helpers in chat: translation, read-aloud and, with Silver or above,
+   smart replies and word breakdown (section 14);
 h) use Coins and Memberships to unlock optional features;
 i) invite friends through the referral programme.
 
@@ -178,12 +183,20 @@ When you cancel, your Membership stays active until the end of the period you
 paid for, and is not renewed. Deleting the app or your account does not cancel
 a store subscription: cancel it in the store.
 
-7.4 Free trial (web)
-- The Base Membership may come with a 7-day free trial on the web, once per
-  account.
-- Unless you cancel before the trial ends, the trial turns into a paid Base
-  Membership, and the first payment is taken when the trial ends.
-- We remind you by email before the trial ends.
+7.4 Free trials
+a) Web
+   - The Base Membership may come with a 7-day free trial on the web, once
+     per account.
+   - Unless you cancel before the trial ends, the trial turns into a paid
+     Base Membership, and the first payment is taken when the trial ends.
+   - Before the trial ends, Stripe, our payment provider, sends you a reminder
+     email.
+b) App stores
+   - A Membership bought in the iOS or Android app may include an
+     introductory free trial. The store shows the trial and its conditions
+     before you buy.
+   - The trial and any reminder before it ends are handled by Apple or Google
+     under their own rules.
 
 7.5 Price changes
 - We will tell you about a price increase at least 30 days before it applies
@@ -192,9 +205,18 @@ a store subscription: cancel it in the store.
 - Where the store or the law requires your agreement to a new price, the new
   price does not apply until you agree.
 
-7.6 Upgrades
-If you upgrade on the web, the price shown may include a discount for the time
-left on your current plan. The upgrade takes effect immediately.
+7.6 Upgrades and downgrades on the web
+a) If you upgrade on the web, you get a fixed upgrade discount on the price
+   of the new plan:
+   - Silver to Gold: 10%;
+   - Silver to Platinum: 15%;
+   - Gold to Platinum: 10%.
+   The upgrade takes effect immediately.
+b) The unused time of your old plan is credited to your account balance after
+   the first payment for the new plan.
+c) You cannot downgrade on the web during a paid period. To move to a lower
+   plan, cancel your current plan (section 7.3) and buy the lower plan; the
+   change takes effect then.
 
 7.7 Earlier pre-sale offers
 If you bought a "Founder" pre-sale plan under an earlier version of these Terms,
@@ -227,15 +249,13 @@ exists.
   feature fails because of us.
 
 8.5 Gifting Coins
-You can give Coins to another user with the gift feature. These rules prevent
-fraud:
+You can give Coins to another user with the gift feature. A gift is delivered
+to the receiver instantly. These rules prevent fraud:
 a) a gift is between 10 and 1,000 Coins;
 b) you can send at most 10 gifts and 5,000 Coins per day (UTC);
 c) Coins you BOUGHT can be gifted only 72 hours after the purchase. Free
    Coins can be gifted at once;
-d) the receiver can accept or decline a gift. If the receiver declines it, or
-   does not accept it within 7 days, the Coins return to you;
-e) gifting Coins in exchange for money, goods or services outside GreenGo is
+d) gifting Coins in exchange for money, goods or services outside GreenGo is
    forbidden.
 
 8.6 Refunds, chargebacks and fraud
@@ -302,8 +322,11 @@ c) Memberships (digital service)
    - If you asked us to start your Membership straight away, we refund the
      price minus a proportionate amount for the days you have already used.
 d) How to withdraw
-   - On the web, use the "Withdraw from contract" function in GreenGo >
-     Settings > Purchases.
+   - For web purchases, use the "Withdraw from contract" function in
+     GreenGo > Profile > Account Settings > Purchases & withdrawal, or in the
+     Shop.
+   - Purchases made in the iOS or Android app go through Apple or Google
+     (see e) below).
    - You can also send us a clear statement by email to billing@greengochat.com,
      for example: "I withdraw from my contract for [product], bought on [date],
      account email [email]".
@@ -315,11 +338,15 @@ e) If you bought in the iOS or Android app, Apple or Google sold you the
    - Google Play: in your order history.
 
 9.5 Brazilian consumers: right of withdrawal (CDC art. 49)
-a) You can withdraw from a purchase within 7 days of the purchase or of the
-   start of the service, and receive a full refund.
-b) For web purchases, use the "Withdraw from contract" function or write to
-   billing@greengochat.com. We refund you within 15 days, with the same
-   payment method. A Pix payment is refunded by Pix.
+a) Web purchases:
+   - Memberships: you can withdraw within 7 days of the purchase and receive
+     a full refund.
+   - Coins: the same 7 days apply, unless at checkout you asked for the Coins
+     to be delivered immediately and expressly waived your right of
+     withdrawal.
+b) For web purchases, use the "Withdraw from contract" function (section
+   9.4 d) or write to billing@greengochat.com. We refund you within 15
+   days, with the same payment method. A Pix payment is refunded by Pix.
 c) For app purchases, ask Apple or Google first. If they do not solve it,
    contact us and we will help.
 
@@ -341,16 +368,19 @@ it paid for:
 
 10.1 Referral programme
 a) If a new user signs up with your referral code and redeems it within 30
-   days of signing up, the new user receives 1 month of Platinum Membership,
-   and you receive 100 Coins.
-b) You can earn at most 1,000 referral Coins per calendar month.
-c) Each new account can redeem only one referral code. You cannot refer
+   days of signing up, the new user receives 1 week of Base Membership, and
+   you receive 50 Coins.
+b) Extra rewards: when 5 friends have redeemed your code, you receive 1 month
+   of Silver Membership; at 10 friends, 1 month of Gold Membership; at 20
+   friends, 1 month of Platinum Membership.
+c) You can earn at most 1,000 referral Coins per calendar month.
+d) Each new account can redeem only one referral code. You cannot refer
    yourself.
-d) Creating fake or duplicate accounts, buying referrals, or using spam to
+e) Creating fake or duplicate accounts, buying referrals, or using spam to
    share your code is forbidden. We may withhold or remove rewards obtained
    this way.
-e) Tell people clearly that you receive a reward when you share your code.
-f) We may change or end the programme with 30 days' notice. Rewards already
+f) Tell people clearly that you receive a reward when you share your code.
+g) We may change or end the programme with 30 days' notice. Rewards already
    earned stay yours.
 
 10.2 Welcome grants and coupons
@@ -423,8 +453,8 @@ b) The fee per ticket depends on the seller's Membership at the time of the
    - Gold: US$2 + 10% of the ticket price, at most US$9;
    - Platinum: US$1 + 10% of the ticket price, at most US$8.
 c) First paid listing: if you have not sold paid tickets on GreenGo before,
-   the fee for your first paid Event or Experience is a flat US$1 per ticket,
-   for that listing.
+   the fee is a flat US$1 per ticket for the first listing (Event or
+   Experience) on which a buyer opens a paid checkout, for that listing.
 d) Free tickets have no fee. The fee is never higher than the ticket price.
 e) For tickets priced in another currency, the fixed part and the maximum are
    converted from US dollars with an exchange table that GreenGo maintains.
@@ -459,8 +489,9 @@ a) If the organiser allows guests to book, anyone who opens a shared link to
    first name, surname and email, as long as places are left.
 b) For a paid Event, the guest pays through the same Stripe or Mercado Pago
    checkout and receives the ticket by email.
-c) Events that need the organiser's approval, or that have age or gender
-   limits, can be booked only in the app.
+c) Guest booking is not available for Events that need the organiser's
+   approval, that have age or gender limits, or that have several ticket
+   types. These Events can be booked only in the app.
 d) Guests can also send a booking request for an Experience from a shared
    link.
 e) The guest's name and email are shared with the organiser or Host
@@ -483,10 +514,17 @@ f) These Terms apply to guest bookings as far as they are relevant.
 - Paid Experiences are paid only through the in-app checkout, to the Host's
   own Stripe or Mercado Pago account connected to GreenGo. Payment links,
   other payment methods and cash at the meeting are not allowed.
+- Bookings of Experiences created before 14 October 2026 with the Host's own
+  payment method, or for payment in cash, may still be completed that way.
+  All bookings created from 14 October 2026 use the in-app checkout only.
 - The Guest pays the price shown on the listing, and nothing more. The money
   goes to the Host's account: the payment does not pass through GreenGo, and
-  GreenGo does not hold or refund payments for Experiences. GreenGo receives
-  only its service fee, which the Host pays (section 11.6).
+  GreenGo does not hold payments for Experiences. GreenGo receives only its
+  service fee, which the Host pays (section 11.6).
+- Refunds: if the Host removes a booked time or cancels a booking, GreenGo
+  starts a full refund to the Guest through the Host's own Stripe or Mercado
+  Pago account. In all other cases, refunds follow the Host's cancellation
+  policy and are paid by the Host.
 - Only Hosts with an active Business account (section 13) can publish paid
   Experiences. How many Experiences a Host can have at a time depends on the
   Host's plan (section 11.7).
@@ -510,19 +548,24 @@ d) never ask Guests to pay outside the in-app checkout, for example with a
    payment link, a bank transfer or cash;
 e) treat Guests with respect and keep them safe.
 
-To publish a paid Experience you must have verified your age with an identity
-document. New Hosts may publish only one paid Experience until they have 3
-reviews.
+Identity document:
+- To publish any Experience, free or paid, you must have uploaded an identity
+  document. The same applies to booking an Experience as a member.
+- To publish a paid Experience, your age verification must also have been
+  approved.
+New Hosts may publish only one paid Experience until they have 3 reviews.
 
 12.4 Hosts who are traders
-- If you offer Experiences as part of your trade, business or profession, you
-  must say so when publishing.
-- You must give us your name, address, phone number, email, an identity
-  document and, if you are registered, your trade register and number.
+- If you offer Experiences or sell tickets as part of your trade, business or
+  profession, you must say so. You do this in Business Center > Settings,
+  where you declare whether you act as a trader.
+- As a trader, you must give us your trader details there: your name,
+  address, phone number, email, an identity document or registration number
+  and, if you are registered, your trade register and number.
 - You must confirm that you offer only products and services that comply with
   the law.
-- We show your trader details to Guests in the EU, as the Digital Services Act
-  requires (art. 30).
+- GreenGo shows your trader details on your listings, as the Digital Services
+  Act requires (art. 30).
 - As a trader, you must also give Guests the information and rights required
   by consumer law, for example cancellation rights.
 
@@ -530,10 +573,15 @@ reviews.
 a) Read the listing and the cancellation policy before booking.
 b) Pay only through the in-app checkout. Never pay a Host outside GreenGo,
    for example with a payment link, a bank transfer or cash.
-c) If something goes wrong, you can open a dispute in the app within the
-   window shown. GreenGo will look at it and may record a refund owed by the
-   Host, or take action against the Host's account. GreenGo itself does not pay
-   refunds for Experiences.
+c) If the Host removes your booked time or cancels your booking, GreenGo
+   starts a full refund to you through the Host's own Stripe or Mercado Pago
+   account. Otherwise, refunds follow the Host's cancellation policy and are
+   paid by the Host. If something goes wrong, you can open a dispute in the
+   app within the window shown. GreenGo will look at it and may record a
+   refund owed by the Host, or take action against the Host's account.
+   GreenGo itself does not pay refunds for Experiences from its own funds.
+d) To book an Experience as a member, you must have uploaded an identity
+   document (section 12.3).
 
 12.6 Reviews
 - After a real booking, Hosts and Guests can review each other.
@@ -546,12 +594,14 @@ c) If something goes wrong, you can open a dispute in the app within the
 13. BUSINESS ACCOUNTS
 ================================================================================
 
-13.1 A Business account lets a company or professional show a business page:
+13.1 A Business account is not a separate account: it is your own Account
+switched to business mode. It lets a company or professional show a business
+page:
 - business details and opening hours;
 - events and experiences;
 - followers.
 
-13.2 By opening a Business account you confirm that:
+13.2 By switching your Account to business mode you confirm that:
 - you are authorised to act for the business;
 - the information you give is true;
 - you comply with the laws that apply to your business, including consumer-
@@ -576,6 +626,8 @@ Membership. If your Membership ends or drops below Silver, the business tools
 (for example the business page, leads, promotion and paid listings) pause,
 and your account works as a personal account with free listings only. They
 start again when you have a Silver, Gold or Platinum Membership again.
+Sponsoring a Community and pinned promotions in Communities need a Platinum
+Membership.
 
 ================================================================================
 14. AI FEATURES
@@ -583,23 +635,31 @@ start again when you have a Silver, Gold or Platinum Membership again.
 
 14.1 GreenGo offers AI-powered features:
 - translation;
-- voice playback (text-to-speech);
-- smart replies and grammar help;
-- an AI language coach;
-- voice-message transcription.
+- read-aloud (text-to-speech);
+- smart replies and word breakdown (Silver Membership or above).
 
 The support chat starts with an AI assistant. It is labelled as AI, and you can
-ask for a human at any time.
+tap "Talk to a person" at any time to reach a human.
 
-14.2 Before you use AI features for the first time, we tell you which provider
-is used and what is sent, and ask for your consent. You can withdraw your
-consent in Settings. The Privacy Policy (section 9) has the details.
+14.2 Consent
+a) Before AI features process your private content for the first time (for
+   example translation of chat messages, read-aloud and the AI assistant), we
+   tell you which provider is used and what is sent, and ask for your
+   consent. You can withdraw your consent in Settings.
+b) Public content, such as Events, Communities and listings, is translated
+   with Google Cloud Translation through a shared cache on our servers. Only
+   the text is sent, without any personal data. This does not need your
+   consent.
+c) The Privacy Policy (section 9) has the details.
 
-14.3 AI output can be wrong, incomplete or culturally inaccurate. Translations
-are marked "Translated". Do not rely on AI output for medical, legal, financial
-or safety decisions. If in doubt, check with the other person.
+14.3 AI output can be wrong, incomplete or culturally inaccurate. Translated
+text is labelled "Translated". Do not rely on AI output for medical, legal,
+financial or safety decisions. If in doubt, check with the other person.
 
-14.4 Some AI features are limited per day or cost Coins, as shown in the app.
+14.4 Limits and costs
+- Some AI features are limited or cost Coins, as shown in the app. For
+  example, read-aloud costs 5 Coins.
+- Smart replies and word breakdown need a Silver Membership or above.
 
 ================================================================================
 15. YOUR CONTENT
@@ -618,12 +678,15 @@ or safety decisions. If in doubt, check with the other person.
   Content after that only where the Privacy Policy says so: for example legal
   retention, evidence for a pending report or appeal, or Content that other
   people have shared in their own posts.
+- Short read-aloud audio created from text may be kept in an anonymous shared
+  cache, without any link to you or your Account, so that the same text does
+  not have to be converted again.
 
 15.3 Promotion only with your permission
 - We will not use your name, photos or Content in advertising or marketing for
   GreenGo outside the app unless you give us separate permission.
-- You can give or withdraw that permission at any time in Settings >
-  Privacy > Promotional use.
+- You can give or withdraw that permission at any time in Profile > Account
+  Settings > Privacy & data > Promotional use of my content.
 
 15.4 You promise that:
 - you have the rights to the Content you post;
@@ -732,7 +795,8 @@ c) If you do it, we may:
    - take legal action against you to protect the people affected and
      GreenGo.
 d) Warning you confirm. The first time you open another user's private photo,
-   private-album content or chat media, the app shows you a warning about
+   private-album content or chat media, including in Event and Community
+   chats, the app shows you a warning about
    these rules, and you must confirm it ("I understand") before the content
    is shown. We record your confirmation with the date and time and the
    version of these Terms, as proof that you were warned (see the Privacy
@@ -757,21 +821,23 @@ b) Automated tools, which do not take final decisions on their own:
      screening for nudity (Google ML Kit);
    - on our servers: automatic image screening for nudity and violence (Google
      Cloud Vision SafeSearch), text checks for spam, scams and abuse, and
-     comparison against known child sexual abuse material.
+     comparison of uploaded images (hash matching) against known child sexual
+     abuse material.
    Content flagged by automated tools may be held back until it is reviewed.
 c) Human review by trained GreenGo staff. Reports about child safety are
    reviewed first.
 
 17.2 Actions we can take
 Depending on how serious the case is, and on your history, we may:
-- show a warning;
-- remove or hide Content, or limit who can see it;
-- turn off certain features for you, for example messaging, posting or
-  hosting;
+- remove or hide Content;
+- give you a warning;
 - suspend your account temporarily;
-- close your account;
-- withhold rewards obtained by abuse;
-- report the matter to the authorities.
+- ban your account permanently;
+- limit the visibility of your profile or Content;
+- require you to verify your account.
+
+We may also withhold rewards obtained by abuse, and report the matter to the
+authorities.
 
 We act in a timely, careful, objective and proportionate way, and we respect
 the rights of everyone involved, including freedom of expression.
@@ -806,28 +872,32 @@ A good report includes:
 - We tell you if automated tools were used.
 
 18.3 Statement of reasons
-If we act against your Content or account, we tell you in the app or by email
-(DSA art. 17):
+If we act against your Content or account, we send you a notice (statement of
+reasons) in the app and by email (DSA art. 17). It tells you:
 - what we did;
 - which Content it concerns;
 - the facts, and the rule or law it broke;
 - whether automated tools were used;
-- how you can challenge the decision.
+- how you can appeal.
 
 We do not send this notice where the law forbids it, for example to protect an
 investigation of child sexual abuse.
 
 18.4 Appeals (internal complaints)
-a) You can appeal any of these decisions, in the app or by replying to our
-   notice, within 6 months of the decision (DSA art. 20):
-   - removing or restricting your Content;
-   - suspending or closing your account;
-   - restricting your features or rewards;
-   - not acting on a report you made.
-b) Appeals are free. A person who did not make the original decision reviews
-   them.
-c) We reverse decisions that turn out to be wrong, and tell you the outcome
-   and the reasons.
+a) You can appeal within 6 months of the decision, in the app or through the
+   link in the notice email (DSA art. 20). The link works even if your account
+   is suspended. You can appeal:
+   - removing or hiding your Content;
+   - a warning;
+   - suspending or banning your account;
+   - limiting visibility or requiring verification;
+   - withholding rewards.
+b) If you reported Content or an account and we decided not to act, you can
+   also appeal that decision.
+c) Appeals are free. A different reviewer, who did not take the original
+   decision, decides.
+d) We send you the outcome and the reasons. We reverse decisions that turn out
+   to be wrong.
 
 18.5 Other options
 If you live in the EU, you can also take a moderation dispute to a certified
@@ -835,10 +905,13 @@ out-of-court dispute settlement body (DSA art. 21). You can always go to court
 or to a consumer authority (section 26).
 
 18.6 Misuse
-- If someone often posts clearly illegal Content, we suspend their account
-  after a warning.
-- If someone often sends clearly unfounded reports, we stop processing their
-  reports for a period after a warning (DSA art. 23).
+- Repeat offenders: if someone often posts clearly illegal Content or keeps
+  breaking these Terms, we warn them first. After 3 warnings within 12
+  months, we suspend the account. In serious cases we can act at once
+  (sections 19 and 20.3).
+- Unfounded reports: if someone often sends clearly unfounded reports, we
+  warn them. If they continue, we do not process their reports for 30 days
+  (DSA art. 23).
 
 18.7 Points of contact (DSA arts. 11 and 12)
 - For authorities of the EU Member States, the European Commission and the
@@ -859,28 +932,37 @@ child sexual abuse or exploitation, grooming, or Content that sexualises
 minors.
 
 19.2 What we do
-a) We remove such Content and close the accounts involved, immediately and
-   without prior warning.
+a) We remove such Content. In confirmed cases of child sexual exploitation,
+   we close the accounts involved immediately and without prior warning.
 b) We report apparent child sexual abuse material to the US National Center
-   for Missing & Exploited Children (NCMEC), and to the competent authorities
-   in Brazil, the EU and other countries, as the law requires.
+   for Missing & Exploited Children (NCMEC), to the competent authorities in
+   Brazil, and in the EU through the competent national hotline or law
+   enforcement, as well as in other countries where the law requires it.
 c) We preserve the related data for law-enforcement purposes for the period
    the law requires.
 d) We cooperate with the police and the courts.
 
-19.3 Report suspected minors or child-safety concerns in the app, which offers
-the reason "Child sexual exploitation", or at safety@greengochat.com. Our child
-safety standards are published at https://greengochat.com/child-safety.
+19.3 Report suspected minors or child-safety concerns in the app, where every
+report screen offers the reason "Child sexual exploitation", or at
+safety@greengochat.com. Our child safety standards are published at
+https://greengochat.com/child-safety.
 
 ================================================================================
 20. ENDING THE CONTRACT
 ================================================================================
 
 20.1 You can stop using GreenGo and delete your account at any time:
-- in the app, under Profile > Settings > Delete account;
+- in the app, under Profile > Delete Account;
 - on the web, at https://greengochat.com/delete-account.
 
-Remember to cancel any store subscription (section 7.3).
+When you delete your account:
+- a Membership bought on the web is cancelled automatically;
+- a Membership bought in the iOS or Android app is not: cancel it in the
+  store (section 7.3);
+- any Coins left are lost. We warn you before you confirm;
+- we keep some records for as long as the law requires, for example payment
+  records and invoices, and safety reports. The Privacy Policy explains which
+  records and for how long.
 
 20.2 We may suspend or close your account if:
 a) you seriously or repeatedly break these Terms;
@@ -1097,6 +1179,39 @@ Copyright (DMCA): copyright@greengochat.com
 ================================================================================
 VERSION HISTORY
 ================================================================================
+
+5.3.0 - effective 16 October 2026 for accounts created on or after that date;
+16 November 2026 for accounts created before 16 October 2026 (announced
+16 October 2026)
+Aligned with the app:
+- Sections 2, 3.4 and 13: a Business account is your own account switched to
+  business mode.
+- Section 5.1 g: language lessons, games, vocabulary tools and the AI coach
+  removed; the AI helpers in chat are described.
+- Section 7.4: app-store introductory trials; trial reminders sent by Stripe
+  or the store.
+- Section 8.5: Coin gifts are delivered instantly (accept/decline and the
+  7-day return removed).
+- Sections 9.4 d and 9.5 a: where to withdraw in the app; Brazilian right of
+  withdrawal for web Memberships and Coins.
+- Sections 11.6 c and 11.8 c: first-listing fee rate; Events not open to
+  guest booking.
+- Sections 12.2, 12.3, 12.5 and 4.4: refunds started by GreenGo through the
+  Host's account when the Host cancels; identity document for every
+  Experience; earlier bookings with the Host's own payment method.
+- Sections 14 and 15.2: AI features, consent, limits and costs; anonymous
+  read-aloud cache.
+- Sections 15.3, 16.9 d, 17.1, 17.2, 18, 19 and 20.1: in-app paths, moderation
+  actions, notices and appeals by email, repeat offenders, unfounded reports,
+  child-safety reporting and account deletion.
+New features:
+- Section 7.6: fixed upgrade discounts, credit for unused time, no web
+  downgrades during a period.
+- Section 10.1: new referral rewards and extra rewards at 5, 10 and 20
+  friends.
+- Section 12.4: trader declaration in Business Center > Settings, trader
+  details shown on listings.
+- Section 13.7: Community sponsoring and pinned promotions need Platinum.
 
 5.2.1 - 16 October 2026
 - Section 7.3 c: clarified where to cancel a web subscription in the app.

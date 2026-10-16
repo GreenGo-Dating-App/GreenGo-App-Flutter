@@ -3,7 +3,8 @@
  *  1. adminSendTermsChangeNotice (Terms 24.2 a): superAdmin only, dry run by
  *     default (no email, no claim), bounded pages with a cursor, one email per
  *     user + version (re-run = alreadySent), the user's app language, run
- *     counters, refused after the effective date.
+ *     counters, refused after the effective date, accounts created on or
+ *     after accountsCreatedBefore (16 Oct 2026) skipped.
  *  2. saveMyTraderDeclaration / getMyTraderDeclaration (Terms 12.4, DSA art.
  *     30): validation, invoice-details reuse, masked ID number, public part.
  *  3. requestHumanSupport (Terms 14.1): owner only, escalates once, posts the
@@ -87,13 +88,16 @@ afterAll(() => {
   return fft.cleanup();
 });
 
-async function makeUser(uid: string, email: string | null, appLanguage?: string) {
+// Accounts created before 16 Oct 2026 by default (the ones notified of 5.3.0).
+async function makeUser(uid: string, email: string | null, appLanguage?: string,
+  creationTime = 'Thu, 01 Oct 2026 10:00:00 GMT') {
   try {
     await admin.auth().deleteUser(uid);
   } catch {
     // not there
   }
-  await admin.auth().createUser({ uid, ...(email ? { email } : {}) });
+  const r = await admin.auth().importUsers([{ uid, ...(email ? { email } : {}), metadata: { creationTime, lastSignInTime: creationTime } }]);
+  if (r.failureCount) throw new Error(`importUsers failed: ${JSON.stringify(r.errors)}`);
   await db.doc(`users/${uid}`).set({ ...(appLanguage ? { appLanguage } : {}), createdAt: admin.firestore.Timestamp.now() });
 }
 
@@ -109,6 +113,8 @@ describe('adminSendTermsChangeNotice', () => {
     await makeUser('n_c', 'c@example.com');
     await makeUser('n_d', null, 'de');
     await makeUser('n_e', 'e@example.com', 'de');
+    // Created on 16 Oct 2026: accepted 5.3.0 at sign-up, never notified.
+    await makeUser('n_f', 'f@example.com', 'en', 'Fri, 16 Oct 2026 08:00:00 GMT');
   });
 
   test('superAdmin only; known versions only', async () => {
@@ -122,10 +128,11 @@ describe('adminSendTermsChangeNotice', () => {
     const r = await call({ version: '5.3.0' }, 'boss');
     expect(r).toMatchObject({ dryRun: true, sent: 0, failed: 0, alreadySent: 0, done: true, nextCursor: null,
       effectiveDate: '2026-11-16', url: 'https://greengochat.com/terms-of-service/upcoming' });
-    // 5 users docs + the 2 admin_users are not users: processed counts users docs only.
-    expect(r.processed).toBe(5);
+    // 6 users docs + the 2 admin_users are not users: processed counts users docs only.
+    expect(r.processed).toBe(6);
     expect(r.withEmail).toBe(4);
     expect(r.skippedNoEmail).toBe(1);
+    expect(r.skippedNewAccounts).toBe(1);
     expect(r.locales).toEqual({ it: 1, pt_BR: 1, en: 1, de: 1 });
     expect(r.noticeDaysLeft).toBe(30);
     expect(r.preview.subject).toContain('16 November 2026');
@@ -145,9 +152,10 @@ describe('adminSendTermsChangeNotice', () => {
       expect(r.processed).toBeLessThanOrEqual(2);
       cursor = r.nextCursor;
     } while (cursor && pages < 10);
-    expect(pages).toBe(3);
+    expect(pages).toBe(4);
     expect(total).toBe(4);
     expect(sent).toHaveLength(4);
+    expect(sent.map((m) => m.to[0])).not.toContain('f@example.com');
     const byTo = Object.fromEntries(sent.map((m) => [m.to[0], m]));
     expect(byTo['a@example.com'].subject).toMatch(/^I nostri Termini cambiano il 16 novembre 2026/);
     expect(byTo['b@example.com'].subject).toMatch(/^Nossos Termos mudam em 16 de novembro de 2026/);
@@ -156,7 +164,7 @@ describe('adminSendTermsChangeNotice', () => {
     const claim = (await db.doc(`${EMAIL_DISPATCH}/${noticeKey('5.3.0', 'n_a')}`).get()).data()!;
     expect(claim.status).toBe('sent');
     const run = (await db.doc(`${NOTICE_RUNS}/terms_5.3.0`).get()).data()!;
-    expect(run).toMatchObject({ sent: 4, skippedNoEmail: 1, done: true, updatedBy: 'boss' });
+    expect(run).toMatchObject({ sent: 4, skippedNoEmail: 1, skippedNewAccounts: 1, done: true, updatedBy: 'boss' });
 
     const again = await call({ version: '5.3.0', dryRun: false, pageSize: 500 }, 'boss');
     expect(again).toMatchObject({ sent: 0, alreadySent: 4, done: true });

@@ -1,8 +1,11 @@
 ALLGEMEINE GESCHÄFTSBEDINGUNGEN VON GREENGO
 
-Version: 5.2.1
-Gültig ab: 16. Oktober 2026
-Vorherige Version: 5.2.0 (14. Oktober 2026)
+Version: 5.3.0
+Gültig ab: 16. Oktober 2026 für Konten, die ab diesem Tag erstellt werden;
+  16. November 2026 für Konten, die vor dem 16. Oktober 2026 erstellt wurden
+Angekündigt am: 16. Oktober 2026
+Vorherige Version: 5.2.1 (16. Oktober 2026), die für vor dem 16. Oktober 2026
+  erstellte Konten bis zum 15. November 2026 weiter gilt
 
 ================================================================================
 1. ÜBER DIESE BEDINGUNGEN
@@ -54,8 +57,9 @@ Verbraucherschutzgesetzen des Landes zustehen, in dem du lebst.
 - „Erlebnis“: eine Aktivität, die ein Nutzer (der „Gastgeber“) anderen Nutzern
   (den „Gästen“) kostenlos oder kostenpflichtig anbietet und die über GreenGo
   gebucht wird (Abschnitt 12).
-- „Business-Konto“: ein Konto, das ein Unternehmen oder eine Fachperson nutzt,
-  um sein bzw. ihr Geschäft zu präsentieren (Abschnitt 13).
+- „Business-Konto“: dein eigenes Konto, in den Business-Modus umgeschaltet,
+  das ein Unternehmen oder eine Fachperson nutzt, um sein bzw. ihr Geschäft
+  zu präsentieren (Abschnitt 13).
 - „Unternehmer“: jede Person, die zu Zwecken handelt, die ihrer gewerblichen,
   geschäftlichen, handwerklichen oder beruflichen Tätigkeit zuzurechnen sind.
 - „Verbraucher“: jede Person, die nicht als Unternehmer handelt.
@@ -76,8 +80,9 @@ Nutzung der Dienste ausgeschlossen sein.
 schweren Verstoßes gegen diese Bedingungen geschlossen haben, es sei denn, wir
 erlauben dir die Rückkehr.
 
-3.4 Eine Person, ein persönliches Konto. Ein Unternehmen darf außerdem ein
-Business-Konto pro Unternehmen haben.
+3.4 Eine Person, ein persönliches Konto. Ein Business-Konto ist kein
+separates Konto: Es ist dein eigenes Konto, in den Business-Modus umgeschaltet
+(Abschnitt 13).
 
 ================================================================================
 4. DEIN KONTO
@@ -98,7 +103,8 @@ Verschulden genutzt.
 a) Für einige Funktionen musst du dein Alter mit einem Ausweisdokument
    verifizieren:
    - Veröffentlichen in einer Community;
-   - Veröffentlichen eines kostenpflichtigen Erlebnisses;
+   - Veröffentlichen eines Erlebnisses und Buchen eines Erlebnisses als
+     Mitglied (Abschnitt 12.3);
    - weitere Fälle, in denen das Recht deines Wohnorts dies vorschreibt.
 b) Für einige Abzeichen musst du dein Profil mit einem Selfie verifizieren.
 c) Wir löschen Bilder von Ausweisdokumenten, sobald die Prüfung abgeschlossen
@@ -123,7 +129,8 @@ d) Events erstellen, finden und besuchen, einschließlich Events von
    Partnerseiten;
 e) Erlebnisse anbieten und Erlebnisse anderer Nutzer buchen;
 f) mit einem Business-Konto ein Unternehmen präsentieren;
-g) Sprachen lernen, mit Lektionen, Spielen, Vokabeltools und einem KI-Coach;
+g) KI-Helfer im Chat nutzen: Übersetzung, Vorlesen und, ab Silver,
+   intelligente Antwortvorschläge und Wortanalyse (Abschnitt 14);
 h) Coins und Mitgliedschaften nutzen, um optionale Funktionen freizuschalten;
 i) Freunde über das Empfehlungsprogramm einladen.
 
@@ -200,13 +207,21 @@ Wenn du kündigst, bleibt deine Mitgliedschaft bis zum Ende des bezahlten
 Zeitraums aktiv und wird nicht verlängert. Das Löschen der App oder deines
 Kontos kündigt kein Store-Abo: Kündige es im Store.
 
-7.4 Kostenloser Testzeitraum (Web)
-- Zur Base-Mitgliedschaft kann im Web ein 7-tägiger kostenloser Testzeitraum
-  gehören, einmal pro Konto.
-- Wenn du nicht vor Ende des Testzeitraums kündigst, wird er zu einer
-  kostenpflichtigen Base-Mitgliedschaft, und die erste Zahlung wird am Ende
-  des Testzeitraums eingezogen.
-- Wir erinnern dich vor Ende des Testzeitraums per E-Mail.
+7.4 Kostenlose Testzeiträume
+a) Web
+   - Zur Base-Mitgliedschaft kann im Web ein 7-tägiger kostenloser
+     Testzeitraum gehören, einmal pro Konto.
+   - Wenn du nicht vor Ende des Testzeitraums kündigst, wird er zu einer
+     kostenpflichtigen Base-Mitgliedschaft, und die erste Zahlung wird am
+     Ende des Testzeitraums eingezogen.
+   - Vor Ende des Testzeitraums sendet dir Stripe, unser Zahlungsdienstleister,
+     eine Erinnerung per E-Mail.
+b) App-Stores
+   - Eine in der iOS- oder Android-App gekaufte Mitgliedschaft kann einen
+     kostenlosen Einführungs-Testzeitraum enthalten. Der Store zeigt den
+     Testzeitraum und seine Bedingungen vor dem Kauf an.
+   - Der Testzeitraum und eine etwaige Erinnerung vor seinem Ende werden von
+     Apple oder Google nach ihren eigenen Regeln abgewickelt.
 
 7.5 Preisänderungen
 - Über eine Preiserhöhung informieren wir dich mindestens 30 Tage, bevor sie
@@ -215,10 +230,19 @@ Kontos kündigt kein Store-Abo: Kündige es im Store.
 - Wo der Store oder das Gesetz deine Zustimmung zu einem neuen Preis verlangt,
   gilt der neue Preis erst, wenn du zustimmst.
 
-7.6 Upgrades
-Wenn du im Web ein Upgrade machst, kann der angezeigte Preis einen Rabatt für
-die verbleibende Zeit deines aktuellen Tarifs enthalten. Das Upgrade wird
-sofort wirksam.
+7.6 Upgrades und Downgrades im Web
+a) Wenn du im Web ein Upgrade machst, erhältst du einen festen Upgrade-Rabatt
+   auf den Preis des neuen Tarifs:
+   - Silver auf Gold: 10 %;
+   - Silver auf Platinum: 15 %;
+   - Gold auf Platinum: 10 %.
+   Das Upgrade wird sofort wirksam.
+b) Die ungenutzte Zeit deines alten Tarifs wird nach der ersten Zahlung für
+   den neuen Tarif deinem Kontoguthaben gutgeschrieben.
+c) Ein Downgrade ist im Web während eines bezahlten Zeitraums nicht möglich.
+   Um in einen niedrigeren Tarif zu wechseln, kündige deinen aktuellen Tarif
+   (Abschnitt 7.3) und kaufe den niedrigeren Tarif; der Wechsel wird dann
+   wirksam.
 
 7.7 Frühere Vorverkaufsangebote
 Wenn du unter einer früheren Version dieser Bedingungen einen
@@ -254,16 +278,13 @@ besteht.
   zurückgegeben, es sei denn, die Funktion schlägt durch unser Verschulden fehl.
 
 8.5 Coins verschenken
-Du kannst einem anderen Nutzer mit der Geschenkfunktion Coins schenken. Diese
-Regeln verhindern Betrug:
+Du kannst einem anderen Nutzer mit der Geschenkfunktion Coins schenken. Ein
+Geschenk wird dem Empfänger sofort zugestellt. Diese Regeln verhindern Betrug:
 a) ein Geschenk umfasst zwischen 10 und 1.000 Coins;
 b) du kannst pro Tag (UTC) höchstens 10 Geschenke und 5.000 Coins senden;
 c) GEKAUFTE Coins können erst 72 Stunden nach dem Kauf verschenkt werden.
    Kostenlose Coins können sofort verschenkt werden;
-d) der Empfänger kann ein Geschenk annehmen oder ablehnen. Lehnt der Empfänger
-   es ab oder nimmt er es nicht innerhalb von 7 Tagen an, gehen die Coins an
-   dich zurück;
-e) das Verschenken von Coins im Austausch gegen Geld, Waren oder
+d) das Verschenken von Coins im Austausch gegen Geld, Waren oder
    Dienstleistungen außerhalb von GreenGo ist verboten.
 
 8.6 Erstattungen, Rückbuchungen und Betrug
@@ -339,8 +360,10 @@ c) Mitgliedschaften (digitale Dienstleistung)
      wir den Preis abzüglich eines anteiligen Betrags für die Tage, die du
      bereits genutzt hast.
 d) So widerrufst du
-   - Nutze im Web die Funktion „Vertrag widerrufen“ unter GreenGo >
-     Einstellungen > Käufe.
+   - Nutze für Käufe im Web die Funktion „Vertrag widerrufen“ unter
+     GreenGo > Profil > Kontoeinstellungen > Käufe & Widerruf oder im Shop.
+   - Käufe in der iOS- oder Android-App laufen über Apple oder Google (siehe
+     e) unten).
    - Du kannst uns auch eine eindeutige Erklärung per E-Mail an
      billing@greengochat.com senden, zum Beispiel: „Ich widerrufe meinen
      Vertrag über [Produkt], gekauft am [Datum], Konto-E-Mail [E-Mail]“.
@@ -354,11 +377,16 @@ e) Wenn du in der iOS- oder Android-App gekauft hast, hat dir Apple oder Google
    - Google Play: in deinem Bestellverlauf.
 
 9.5 Verbraucher in Brasilien: Widerrufsrecht (CDC art. 49)
-a) Du kannst einen Kauf innerhalb von 7 Tagen nach dem Kauf oder nach Beginn der
-   Dienstleistung widerrufen und erhältst eine vollständige Erstattung.
-b) Nutze bei Käufen im Web die Funktion „Vertrag widerrufen“ oder schreib an
-   billing@greengochat.com. Wir erstatten dir den Betrag innerhalb von 15 Tagen
-   über dieselbe Zahlungsmethode. Eine Pix-Zahlung wird per Pix erstattet.
+a) Käufe im Web:
+   - Mitgliedschaften: Du kannst innerhalb von 7 Tagen nach dem Kauf
+     widerrufen und erhältst eine vollständige Erstattung.
+   - Coins: Es gelten dieselben 7 Tage, es sei denn, du hast beim Bezahlen
+     verlangt, dass die Coins sofort geliefert werden, und ausdrücklich auf
+     dein Widerrufsrecht verzichtet.
+b) Nutze bei Käufen im Web die Funktion „Vertrag widerrufen“ (Abschnitt
+   9.4 d) oder schreib an billing@greengochat.com. Wir erstatten dir den
+   Betrag innerhalb von 15 Tagen über dieselbe Zahlungsmethode. Eine
+   Pix-Zahlung wird per Pix erstattet.
 c) Bei Käufen in der App wende dich zuerst an Apple oder Google. Wenn sie das
    Problem nicht lösen, kontaktiere uns und wir helfen dir.
 
@@ -383,16 +411,19 @@ wir, was damit bezahlt wurde:
 10.1 Empfehlungsprogramm
 a) Wenn sich ein neuer Nutzer mit deinem Empfehlungscode registriert und ihn
    innerhalb von 30 Tagen nach der Registrierung einlöst, erhält der neue
-   Nutzer 1 Monat Platinum-Mitgliedschaft und du erhältst 100 Coins.
-b) Du kannst pro Kalendermonat höchstens 1.000 Empfehlungs-Coins verdienen.
-c) Jedes neue Konto kann nur einen Empfehlungscode einlösen. Du kannst dich
+   Nutzer 1 Woche Base-Mitgliedschaft und du erhältst 50 Coins.
+b) Zusätzliche Prämien: Wenn 5 Freunde deinen Code eingelöst haben, erhältst
+   du 1 Monat Silver-Mitgliedschaft; bei 10 Freunden 1 Monat
+   Gold-Mitgliedschaft; bei 20 Freunden 1 Monat Platinum-Mitgliedschaft.
+c) Du kannst pro Kalendermonat höchstens 1.000 Empfehlungs-Coins verdienen.
+d) Jedes neue Konto kann nur einen Empfehlungscode einlösen. Du kannst dich
    nicht selbst empfehlen.
-d) Das Erstellen gefälschter oder doppelter Konten, der Kauf von Empfehlungen
+e) Das Erstellen gefälschter oder doppelter Konten, der Kauf von Empfehlungen
    oder das Teilen deines Codes per Spam ist verboten. Auf diese Weise
    erlangte Prämien können wir zurückhalten oder entfernen.
-e) Sag den Leuten deutlich, dass du eine Prämie erhältst, wenn du deinen Code
+f) Sag den Leuten deutlich, dass du eine Prämie erhältst, wenn du deinen Code
    teilst.
-f) Wir können das Programm mit einer Frist von 30 Tagen ändern oder beenden.
+g) Wir können das Programm mit einer Frist von 30 Tagen ändern oder beenden.
    Bereits verdiente Prämien bleiben dir erhalten.
 
 10.2 Willkommenszuwendungen und Gutscheine
@@ -474,9 +505,9 @@ b) Die Gebühr pro Ticket hängt von der Mitgliedschaft des Verkäufers zum
    - Gold: 2 US$ + 10 % des Ticketpreises, höchstens 9 US$;
    - Platinum: 1 US$ + 10 % des Ticketpreises, höchstens 8 US$.
 c) Erstes kostenpflichtiges Angebot: Wenn du auf GreenGo noch keine
-   kostenpflichtigen Tickets verkauft hast, beträgt die Gebühr für dein
-   erstes kostenpflichtiges Event oder Erlebnis pauschal 1 US$ pro Ticket,
-   für dieses Angebot.
+   kostenpflichtigen Tickets verkauft hast, beträgt die Gebühr pauschal
+   1 US$ pro Ticket für das erste Angebot (Event oder Erlebnis), bei dem ein
+   Käufer einen kostenpflichtigen Bezahlvorgang öffnet, für dieses Angebot.
 d) Für kostenlose Tickets fällt keine Gebühr an. Die Gebühr ist nie höher
    als der Ticketpreis.
 e) Bei Tickets mit einem Preis in einer anderen Währung werden der feste
@@ -518,9 +549,10 @@ a) Wenn der Veranstalter es erlaubt, kann jeder, der einen geteilten Link zu
 b) Bei einem kostenpflichtigen Event zahlt der Besucher über denselben
    Bezahlvorgang von Stripe oder Mercado Pago und erhält das Ticket per
    E-Mail.
-c) Events, die eine Freigabe durch den Veranstalter erfordern oder Alters-
-   oder Geschlechtsbeschränkungen haben, können nur in der App gebucht
-   werden.
+c) Die Buchung als Besucher ist nicht möglich für Events, die eine Freigabe
+   durch den Veranstalter erfordern, Alters- oder Geschlechtsbeschränkungen
+   haben oder mehrere Ticketarten haben. Diese Events können nur in der App
+   gebucht werden.
 d) Besucher können über einen geteilten Link auch eine Buchungsanfrage für
    ein Erlebnis senden.
 e) Name und E-Mail-Adresse des Besuchers werden an den Veranstalter oder
@@ -547,11 +579,19 @@ f) Diese Bedingungen gelten für Buchungen von Besuchern, soweit sie
   bezahlt, auf das eigene, mit GreenGo verbundene Stripe- oder
   Mercado-Pago-Konto des Gastgebers. Zahlungslinks, andere Zahlungsmethoden
   und Barzahlung beim Treffen sind nicht erlaubt.
+- Buchungen von Erlebnissen, die vor dem 14. Oktober 2026 mit der eigenen
+  Zahlungsmethode des Gastgebers oder zur Barzahlung angelegt wurden, können
+  noch auf diese Weise abgewickelt werden. Alle ab dem 14. Oktober 2026
+  angelegten Buchungen laufen nur über den Bezahlvorgang in der App.
 - Der Gast zahlt den im Angebot angezeigten Preis und nichts darüber hinaus.
   Das Geld geht auf das Konto des Gastgebers: Die Zahlung läuft nicht über
-  GreenGo, und GreenGo verwahrt oder erstattet keine Zahlungen für Erlebnisse.
-  GreenGo erhält nur seine Servicegebühr, die der Gastgeber zahlt (Abschnitt
-  11.6).
+  GreenGo, und GreenGo verwahrt keine Zahlungen für Erlebnisse. GreenGo
+  erhält nur seine Servicegebühr, die der Gastgeber zahlt (Abschnitt 11.6).
+- Erstattungen: Wenn der Gastgeber einen gebuchten Termin entfernt oder eine
+  Buchung storniert, veranlasst GreenGo über das eigene Stripe- oder
+  Mercado-Pago-Konto des Gastgebers eine vollständige Erstattung an den Gast.
+  In allen anderen Fällen richten sich Erstattungen nach der
+  Stornierungsrichtlinie des Gastgebers und werden vom Gastgeber gezahlt.
 - Nur Gastgeber mit einem aktiven Business-Konto (Abschnitt 13) können
   kostenpflichtige Erlebnisse veröffentlichen. Wie viele Erlebnisse ein
   Gastgeber gleichzeitig haben kann, hängt von seinem Tarif ab
@@ -576,21 +616,28 @@ d) Gäste niemals bitten, außerhalb des Bezahlvorgangs in der App zu bezahlen,
    zum Beispiel per Zahlungslink, Banküberweisung oder bar;
 e) Gäste respektvoll behandeln und für ihre Sicherheit sorgen.
 
-Um ein kostenpflichtiges Erlebnis zu veröffentlichen, musst du dein Alter mit
-einem Ausweisdokument verifiziert haben. Neue Gastgeber dürfen nur ein
-kostenpflichtiges Erlebnis veröffentlichen, bis sie 3 Bewertungen haben.
+Ausweisdokument:
+- Um ein Erlebnis zu veröffentlichen, ob kostenlos oder kostenpflichtig,
+  musst du ein Ausweisdokument hochgeladen haben. Dasselbe gilt für das
+  Buchen eines Erlebnisses als Mitglied.
+- Um ein kostenpflichtiges Erlebnis zu veröffentlichen, muss außerdem deine
+  Altersverifizierung genehmigt worden sein.
+Neue Gastgeber dürfen nur ein kostenpflichtiges Erlebnis veröffentlichen, bis
+sie 3 Bewertungen haben.
 
 12.4 Gastgeber, die Unternehmer sind
-- Wenn du Erlebnisse im Rahmen deiner gewerblichen, geschäftlichen oder
-  beruflichen Tätigkeit anbietest, musst du dies bei der Veröffentlichung
-  angeben.
-- Du musst uns deinen Namen, deine Adresse, Telefonnummer, E-Mail-Adresse, ein
-  Ausweisdokument und, falls du eingetragen bist, dein Handelsregister und
-  deine Registernummer mitteilen.
+- Wenn du Erlebnisse anbietest oder Tickets verkaufst im Rahmen deiner
+  gewerblichen, geschäftlichen oder beruflichen Tätigkeit, musst du dies
+  angeben. Das tust du unter Business Center > Einstellungen, wo du erklärst,
+  ob du als Unternehmer handelst.
+- Als Unternehmer musst du uns dort deine Unternehmerangaben mitteilen:
+  deinen Namen, deine Adresse, Telefonnummer, E-Mail-Adresse, ein
+  Ausweisdokument oder eine Registrierungsnummer und, falls du eingetragen
+  bist, dein Handelsregister und deine Registernummer.
 - Du musst bestätigen, dass du nur Produkte und Dienstleistungen anbietest, die
   dem Gesetz entsprechen.
-- Wir zeigen Gästen in der EU deine Unternehmerangaben an, wie es der Digital
-  Services Act verlangt (art. 30).
+- GreenGo zeigt deine Unternehmerangaben in deinen Angeboten an, wie es der
+  Digital Services Act verlangt (art. 30).
 - Als Unternehmer musst du Gästen außerdem die Informationen und Rechte
   gewähren, die das Verbraucherrecht vorschreibt, zum Beispiel
   Stornierungsrechte.
@@ -600,11 +647,18 @@ a) Lies vor der Buchung das Angebot und die Stornierungsrichtlinie.
 b) Bezahle nur über den Bezahlvorgang in der App. Bezahle einen Gastgeber nie
    außerhalb von GreenGo, zum Beispiel per Zahlungslink, Banküberweisung oder
    bar.
-c) Wenn etwas schiefgeht, kannst du innerhalb des angezeigten Zeitraums in der
-   App eine Streitigkeit eröffnen. GreenGo prüft sie und kann eine vom
-   Gastgeber geschuldete Erstattung erfassen oder Maßnahmen gegen das Konto des
-   Gastgebers ergreifen. GreenGo selbst zahlt keine Erstattungen für
-   Erlebnisse.
+c) Wenn der Gastgeber deinen gebuchten Termin entfernt oder deine Buchung
+   storniert, veranlasst GreenGo über das eigene Stripe- oder
+   Mercado-Pago-Konto des Gastgebers eine vollständige Erstattung an dich.
+   Andernfalls richten sich Erstattungen nach der Stornierungsrichtlinie des
+   Gastgebers und werden vom Gastgeber gezahlt. Wenn etwas schiefgeht, kannst
+   du innerhalb des angezeigten Zeitraums in der App eine Streitigkeit
+   eröffnen. GreenGo prüft sie und kann eine vom Gastgeber geschuldete
+   Erstattung erfassen oder Maßnahmen gegen das Konto des Gastgebers
+   ergreifen. GreenGo selbst zahlt keine Erstattungen für Erlebnisse aus
+   eigenen Mitteln.
+d) Um ein Erlebnis als Mitglied zu buchen, musst du ein Ausweisdokument
+   hochgeladen haben (Abschnitt 12.3).
 
 12.6 Bewertungen
 - Nach einer echten Buchung können Gastgeber und Gäste einander bewerten.
@@ -617,13 +671,15 @@ c) Wenn etwas schiefgeht, kannst du innerhalb des angezeigten Zeitraums in der
 13. BUSINESS-KONTEN
 ================================================================================
 
-13.1 Mit einem Business-Konto kann ein Unternehmen oder eine Fachperson eine
-Unternehmensseite zeigen:
+13.1 Ein Business-Konto ist kein separates Konto: Es ist dein eigenes Konto,
+in den Business-Modus umgeschaltet. Damit kann ein Unternehmen oder eine
+Fachperson eine Unternehmensseite zeigen:
 - Unternehmensangaben und Öffnungszeiten;
 - Events und Erlebnisse;
 - Follower.
 
-13.2 Mit der Eröffnung eines Business-Kontos bestätigst du, dass:
+13.2 Indem du dein Konto in den Business-Modus umschaltest, bestätigst du,
+dass:
 - du berechtigt bist, für das Unternehmen zu handeln;
 - die von dir gemachten Angaben wahr sind;
 - du die für dein Unternehmen geltenden Gesetze einhältst, einschließlich der
@@ -651,7 +707,9 @@ unter Silver, werden die Business-Funktionen (zum Beispiel die
 Unternehmensseite, Leads, Bewerbung und kostenpflichtige Angebote)
 pausiert, und dein Konto funktioniert wie ein persönliches Konto mit nur
 kostenlosen Angeboten. Sie werden wieder aktiv, sobald du erneut eine
-Silver-, Gold- oder Platinum-Mitgliedschaft hast.
+Silver-, Gold- oder Platinum-Mitgliedschaft hast. Das Sponsoring einer
+Community und angeheftete Werbung in Communities erfordern eine
+Platinum-Mitgliedschaft.
 
 ================================================================================
 14. KI-FUNKTIONEN
@@ -659,27 +717,37 @@ Silver-, Gold- oder Platinum-Mitgliedschaft hast.
 
 14.1 GreenGo bietet KI-gestützte Funktionen:
 - Übersetzung;
-- Sprachwiedergabe (Text-to-Speech);
-- intelligente Antwortvorschläge und Grammatikhilfe;
-- einen KI-Sprachcoach;
-- Transkription von Sprachnachrichten.
+- Vorlesen (Text-to-Speech);
+- intelligente Antwortvorschläge und Wortanalyse (Silver-Mitgliedschaft oder
+  höher).
 
 Der Support-Chat beginnt mit einem KI-Assistenten. Er ist als KI
-gekennzeichnet, und du kannst jederzeit einen Menschen verlangen.
+gekennzeichnet, und du kannst jederzeit auf „Mit einer Person sprechen“
+tippen, um einen Menschen zu erreichen.
 
-14.2 Bevor du KI-Funktionen zum ersten Mal nutzt, teilen wir dir mit, welcher
-Anbieter verwendet wird und was gesendet wird, und bitten um deine
-Einwilligung. Du kannst deine Einwilligung in den Einstellungen widerrufen.
-Einzelheiten findest du in der Datenschutzerklärung (Abschnitt 9).
+14.2 Einwilligung
+a) Bevor KI-Funktionen zum ersten Mal deine privaten Inhalte verarbeiten (zum
+   Beispiel die Übersetzung von Chatnachrichten, das Vorlesen und der
+   KI-Assistent), teilen wir dir mit, welcher Anbieter verwendet wird und was
+   gesendet wird, und bitten um deine Einwilligung. Du kannst deine
+   Einwilligung in den Einstellungen widerrufen.
+b) Öffentliche Inhalte, etwa Events, Communities und Angebote, werden mit
+   Google Cloud Translation über einen gemeinsamen Cache auf unseren Servern
+   übersetzt. Gesendet wird nur der Text, ohne personenbezogene Daten. Dafür
+   ist deine Einwilligung nicht nötig.
+c) Einzelheiten findest du in der Datenschutzerklärung (Abschnitt 9).
 
 14.3 KI-Ergebnisse können falsch, unvollständig oder kulturell ungenau sein.
-Übersetzungen sind mit „Übersetzt“ gekennzeichnet. Verlass dich bei
+Übersetzter Text ist mit „Übersetzt“ gekennzeichnet. Verlass dich bei
 medizinischen, rechtlichen, finanziellen oder sicherheitsrelevanten
 Entscheidungen nicht auf KI-Ergebnisse. Frag im Zweifel bei der anderen Person
 nach.
 
-14.4 Einige KI-Funktionen sind pro Tag begrenzt oder kosten Coins, wie in der
-App angezeigt.
+14.4 Limits und Kosten
+- Einige KI-Funktionen sind begrenzt oder kosten Coins, wie in der App
+  angezeigt. Zum Beispiel kostet das Vorlesen 5 Coins.
+- Intelligente Antwortvorschläge und Wortanalyse erfordern eine
+  Silver-Mitgliedschaft oder höher.
 
 ================================================================================
 15. DEINE INHALTE
@@ -699,13 +767,17 @@ App angezeigt.
   Beispiel gesetzliche Aufbewahrung, Beweismittel für eine laufende Meldung
   oder einen laufenden Einspruch oder Inhalte, die andere Personen in ihren
   eigenen Beiträgen geteilt haben.
+- Kurze Vorlese-Audios, die aus Text erzeugt werden, können in einem anonymen
+  gemeinsamen Cache gespeichert werden, ohne jede Verbindung zu dir oder
+  deinem Konto, damit derselbe Text nicht erneut umgewandelt werden muss.
 
 15.3 Werbung nur mit deiner Erlaubnis
 - Wir verwenden deinen Namen, deine Fotos oder deine Inhalte außerhalb der App
   nicht in Werbung oder Marketing für GreenGo, es sei denn, du gibst uns dafür
   eine gesonderte Erlaubnis.
-- Du kannst diese Erlaubnis jederzeit unter Einstellungen > Datenschutz >
-  Werbliche Nutzung erteilen oder widerrufen.
+- Du kannst diese Erlaubnis jederzeit unter Profil > Kontoeinstellungen >
+  Datenschutz & Daten > Werbliche Nutzung meiner Inhalte erteilen oder
+  widerrufen.
 
 15.4 Du versicherst, dass:
 - du die Rechte an den Inhalten hast, die du postest;
@@ -827,8 +899,9 @@ c) Wenn du das tust, können wir:
      GreenGo zu schützen.
 d) Warnhinweis, den du bestätigst. Wenn du zum ersten Mal ein privates Foto,
    Inhalte eines privaten Albums oder Chat-Medien eines anderen Nutzers
-   öffnest, zeigt dir die App einen Warnhinweis zu diesen Regeln, und du musst
-   ihn bestätigen („Verstanden“), bevor der Inhalt angezeigt wird. Wir
+   öffnest, auch in Event- und Community-Chats, zeigt dir die App einen
+   Warnhinweis zu diesen Regeln, und du musst ihn bestätigen („Verstanden“),
+   bevor der Inhalt angezeigt wird. Wir
    speichern deine Bestätigung mit Datum, Uhrzeit und der Version dieser
    Bedingungen als Nachweis, dass du gewarnt wurdest (siehe
    Datenschutzerklärung, Abschnitte 10.5 und 14).
@@ -854,8 +927,8 @@ b) Automatisierte Werkzeuge, die keine endgültigen Entscheidungen allein
      Gesicht enthält, und eine Prüfung auf Nacktheit (Google ML Kit);
    - auf unseren Servern: automatische Bildprüfung auf Nacktheit und Gewalt
      (Google Cloud Vision SafeSearch), Textprüfungen auf Spam, Betrug und
-     Missbrauch sowie Abgleich mit bekanntem Material über sexuellen
-     Kindesmissbrauch.
+     Missbrauch sowie Abgleich hochgeladener Bilder (Hash-Abgleich) mit
+     bekanntem Material über sexuellen Kindesmissbrauch.
    Von automatisierten Werkzeugen markierte Inhalte können bis zu ihrer
    Überprüfung zurückgehalten werden.
 c) Menschliche Überprüfung durch geschulte GreenGo-Mitarbeitende. Meldungen
@@ -863,14 +936,15 @@ c) Menschliche Überprüfung durch geschulte GreenGo-Mitarbeitende. Meldungen
 
 17.2 Maßnahmen, die wir ergreifen können
 Je nach Schwere des Falls und deiner Vorgeschichte können wir:
-- eine Warnung anzeigen;
-- Inhalte entfernen oder ausblenden oder einschränken, wer sie sehen kann;
-- bestimmte Funktionen für dich deaktivieren, zum Beispiel Nachrichten,
-  Beiträge oder das Anbieten von Erlebnissen als Gastgeber;
+- Inhalte entfernen oder ausblenden;
+- dir eine Verwarnung erteilen;
 - dein Konto vorübergehend sperren;
-- dein Konto schließen;
-- durch Missbrauch erlangte Prämien zurückhalten;
-- die Angelegenheit den Behörden melden.
+- dein Konto dauerhaft sperren;
+- die Sichtbarkeit deines Profils oder deiner Inhalte einschränken;
+- verlangen, dass du dein Konto verifizierst.
+
+Außerdem können wir durch Missbrauch erlangte Prämien zurückhalten und die
+Angelegenheit den Behörden melden.
 
 Wir handeln zeitnah, sorgfältig, objektiv und verhältnismäßig und achten die
 Rechte aller Beteiligten, einschließlich der Meinungsfreiheit.
@@ -906,30 +980,36 @@ Eine gute Meldung enthält:
 - Wir teilen dir mit, ob automatisierte Werkzeuge eingesetzt wurden.
 
 18.3 Begründung
-Wenn wir gegen deine Inhalte oder dein Konto vorgehen, teilen wir dir in der App
-oder per E-Mail mit (DSA art. 17):
+Wenn wir gegen deine Inhalte oder dein Konto vorgehen, senden wir dir eine
+Mitteilung (Begründung) in der App und per E-Mail (DSA art. 17). Sie nennt
+dir:
 - was wir getan haben;
 - welche Inhalte betroffen sind;
 - die Tatsachen und die Regel oder das Gesetz, gegen die bzw. das verstoßen
   wurde;
 - ob automatisierte Werkzeuge eingesetzt wurden;
-- wie du die Entscheidung anfechten kannst.
+- wie du Einspruch einlegen kannst.
 
 Wir senden diese Mitteilung nicht, wo das Gesetz es verbietet, zum Beispiel zum
 Schutz von Ermittlungen wegen sexuellen Kindesmissbrauchs.
 
 18.4 Einsprüche (interne Beschwerden)
-a) Du kannst gegen jede dieser Entscheidungen innerhalb von 6 Monaten nach der
-   Entscheidung Einspruch einlegen, in der App oder durch Antwort auf unsere
-   Mitteilung (DSA art. 20):
-   - Entfernung oder Einschränkung deiner Inhalte;
-   - Sperrung oder Schließung deines Kontos;
-   - Einschränkung deiner Funktionen oder Prämien;
-   - Untätigkeit bei einer von dir gemachten Meldung.
-b) Einsprüche sind kostenlos. Sie werden von einer Person geprüft, die die
-   ursprüngliche Entscheidung nicht getroffen hat.
-c) Wir heben Entscheidungen auf, die sich als falsch erweisen, und teilen dir
-   das Ergebnis und die Gründe mit.
+a) Du kannst innerhalb von 6 Monaten nach der Entscheidung Einspruch
+   einlegen, in der App oder über den Link in der Mitteilungs-E-Mail (DSA
+   art. 20). Der Link funktioniert auch, wenn dein Konto gesperrt ist. Du
+   kannst Einspruch einlegen gegen:
+   - die Entfernung oder Ausblendung deiner Inhalte;
+   - eine Verwarnung;
+   - die vorübergehende oder dauerhafte Sperrung deines Kontos;
+   - die Einschränkung der Sichtbarkeit oder die Pflicht zur Verifizierung;
+   - das Zurückhalten von Prämien.
+b) Wenn du Inhalte oder ein Konto gemeldet hast und wir entschieden haben,
+   nichts zu unternehmen, kannst du auch gegen diese Entscheidung Einspruch
+   einlegen.
+c) Einsprüche sind kostenlos. Es entscheidet eine andere prüfende Person, die
+   die ursprüngliche Entscheidung nicht getroffen hat.
+d) Wir senden dir das Ergebnis und die Gründe. Wir heben Entscheidungen auf,
+   die sich als falsch erweisen.
 
 18.5 Weitere Möglichkeiten
 Wenn du in der EU lebst, kannst du eine Streitigkeit über die Moderation auch
@@ -938,11 +1018,13 @@ art. 21). Du kannst dich jederzeit an ein Gericht oder eine
 Verbraucherschutzbehörde wenden (Abschnitt 26).
 
 18.6 Missbrauch
-- Wenn jemand häufig offensichtlich rechtswidrige Inhalte postet, sperren wir
-  sein Konto nach einer Warnung.
-- Wenn jemand häufig offensichtlich unbegründete Meldungen sendet, bearbeiten
-  wir seine Meldungen nach einer Warnung für einen gewissen Zeitraum nicht mehr
-  (DSA art. 23).
+- Wiederholungstäter: Wenn jemand häufig offensichtlich rechtswidrige Inhalte
+  postet oder immer wieder gegen diese Bedingungen verstößt, verwarnen wir ihn
+  zuerst. Nach 3 Verwarnungen innerhalb von 12 Monaten sperren wir das Konto.
+  In schweren Fällen können wir sofort handeln (Abschnitte 19 und 20.3).
+- Unbegründete Meldungen: Wenn jemand häufig offensichtlich unbegründete
+  Meldungen sendet, verwarnen wir ihn. Macht er weiter, bearbeiten wir seine
+  Meldungen 30 Tage lang nicht (DSA art. 23).
 
 18.7 Kontaktstellen (DSA arts. 11 and 12)
 - Für Behörden der EU-Mitgliedstaaten, die Europäische Kommission und das
@@ -963,19 +1045,21 @@ von sexuellem Kindesmissbrauch oder sexueller Ausbeutung von Kindern,
 Cybergrooming oder Inhalte, die Minderjährige sexualisieren.
 
 19.2 Was wir tun
-a) Wir entfernen solche Inhalte und schließen die beteiligten Konten sofort und
-   ohne vorherige Warnung.
+a) Wir entfernen solche Inhalte. In bestätigten Fällen sexueller Ausbeutung
+   von Kindern schließen wir die beteiligten Konten sofort und ohne vorherige
+   Warnung.
 b) Wir melden mutmaßliches Material über sexuellen Kindesmissbrauch an das US
-   National Center for Missing & Exploited Children (NCMEC) sowie an die
-   zuständigen Behörden in Brasilien, der EU und anderen Ländern, wie es das
-   Gesetz verlangt.
+   National Center for Missing & Exploited Children (NCMEC), an die
+   zuständigen Behörden in Brasilien und in der EU über die zuständige
+   nationale Meldestelle oder Strafverfolgungsbehörde sowie in anderen
+   Ländern, wo das Gesetz es verlangt.
 c) Wir sichern die zugehörigen Daten für Zwecke der Strafverfolgung für den
    gesetzlich vorgeschriebenen Zeitraum.
 d) Wir arbeiten mit Polizei und Gerichten zusammen.
 
 19.3 Melde mutmaßliche Minderjährige oder Bedenken zum Kinderschutz in der App,
-die den Grund „Sexuelle Ausbeutung von Kindern“ anbietet, oder an
-safety@greengochat.com. Unsere Kinderschutzstandards sind unter
+wo jeder Meldebildschirm den Grund „Sexuelle Ausbeutung von Kindern“
+anbietet, oder an safety@greengochat.com. Unsere Kinderschutzstandards sind unter
 https://greengochat.com/child-safety veröffentlicht.
 
 ================================================================================
@@ -983,10 +1067,17 @@ https://greengochat.com/child-safety veröffentlicht.
 ================================================================================
 
 20.1 Du kannst jederzeit aufhören, GreenGo zu nutzen, und dein Konto löschen:
-- in der App unter Profil > Einstellungen > Konto löschen;
+- in der App unter Profil > Konto Löschen;
 - im Web unter https://greengochat.com/delete-account.
 
-Denk daran, jedes Store-Abo zu kündigen (Abschnitt 7.3).
+Wenn du dein Konto löschst:
+- wird eine im Web gekaufte Mitgliedschaft automatisch gekündigt;
+- wird eine in der iOS- oder Android-App gekaufte Mitgliedschaft nicht
+  gekündigt: Kündige sie im Store (Abschnitt 7.3);
+- verfallen alle verbleibenden Coins. Wir warnen dich, bevor du bestätigst;
+- bewahren wir einige Unterlagen so lange auf, wie das Gesetz es verlangt,
+  zum Beispiel Zahlungsunterlagen und Rechnungen sowie Sicherheitsmeldungen.
+  Die Datenschutzerklärung erklärt, welche Unterlagen und wie lange.
 
 20.2 Wir können dein Konto sperren oder schließen, wenn:
 a) du schwerwiegend oder wiederholt gegen diese Bedingungen verstößt;
@@ -1220,6 +1311,42 @@ Urheberrecht (DMCA): copyright@greengochat.com
 ================================================================================
 VERSIONSVERLAUF
 ================================================================================
+
+5.3.0 - gültig ab 16. Oktober 2026 für Konten, die ab diesem Tag erstellt
+werden; ab 16. November 2026 für vor dem 16. Oktober 2026 erstellte Konten
+(angekündigt am 16. Oktober 2026)
+An die App angepasst:
+- Abschnitte 2, 3.4 und 13: Ein Business-Konto ist dein eigenes Konto, in den
+  Business-Modus umgeschaltet.
+- Abschnitt 5.1 g: Sprachlektionen, Spiele, Vokabeltools und der KI-Coach
+  entfernt; die KI-Helfer im Chat werden beschrieben.
+- Abschnitt 7.4: Einführungs-Testzeiträume in den App-Stores; Erinnerungen
+  vor Ende des Testzeitraums kommen von Stripe oder vom Store.
+- Abschnitt 8.5: Coin-Geschenke werden sofort zugestellt (Annehmen/Ablehnen
+  und die Rückgabe nach 7 Tagen entfallen).
+- Abschnitte 9.4 d und 9.5 a: wo du in der App widerrufst; brasilianisches
+  Widerrufsrecht für Mitgliedschaften und Coins im Web.
+- Abschnitte 11.6 c und 11.8 c: Gebührensatz für das erste Angebot; Events,
+  die nicht als Besucher gebucht werden können.
+- Abschnitte 12.2, 12.3, 12.5 und 4.4: Erstattungen, die GreenGo über das
+  Konto des Gastgebers veranlasst, wenn der Gastgeber storniert;
+  Ausweisdokument für jedes Erlebnis; frühere Buchungen mit der eigenen
+  Zahlungsmethode des Gastgebers.
+- Abschnitte 14 und 15.2: KI-Funktionen, Einwilligung, Limits und Kosten;
+  anonymer Vorlese-Cache.
+- Abschnitte 15.3, 16.9 d, 17.1, 17.2, 18, 19 und 20.1: Pfade in der App,
+  Moderationsmaßnahmen, Mitteilungen und Einsprüche per E-Mail,
+  Wiederholungstäter, unbegründete Meldungen, Meldungen zum Kinderschutz und
+  Kontolöschung.
+Neue Funktionen:
+- Abschnitt 7.6: feste Upgrade-Rabatte, Gutschrift für ungenutzte Zeit, keine
+  Downgrades im Web während eines Zeitraums.
+- Abschnitt 10.1: neue Empfehlungsprämien und zusätzliche Prämien bei 5, 10
+  und 20 Freunden.
+- Abschnitt 12.4: Unternehmererklärung unter Business Center >
+  Einstellungen, Unternehmerangaben in den Angeboten angezeigt.
+- Abschnitt 13.7: Community-Sponsoring und angeheftete Werbung erfordern
+  Platinum.
 
 5.2.1 - 16. Oktober 2026
 - Abschnitt 7.3 c: klargestellt, wo du ein im Web abgeschlossenes Abo in der

@@ -185,7 +185,14 @@ export async function authEmailOf(uid: string): Promise<string | null> {
 }
 
 /** uid -> account email, batched 100 per Auth call (scales to big lists). */
-export async function authEmailsOf(uids: string[]): Promise<Map<string, string>> {
+export async function authEmailsOf(
+  uids: string[],
+  opts: {
+    /** Only accounts created before this time (ms); the others go to [tooNew]. */
+    createdBeforeMs?: number;
+    tooNew?: Set<string>;
+  } = {},
+): Promise<Map<string, string>> {
   const out = new Map<string, string>();
   const unique = [...new Set(uids.filter((u) => u && !isGuestKey(u)))];
   for (const g of new Set(uids.filter(isGuestKey))) {
@@ -195,7 +202,16 @@ export async function authEmailsOf(uids: string[]): Promise<Map<string, string>>
   for (let i = 0; i < unique.length; i += 100) {
     try {
       const res = await admin.auth().getUsers(unique.slice(i, i + 100).map((uid) => ({ uid })));
-      for (const u of res.users) if (isEmail(u.email)) out.set(u.uid, u.email!.trim());
+      for (const u of res.users) {
+        if (opts.createdBeforeMs !== undefined) {
+          const created = Date.parse(u.metadata?.creationTime || '');
+          if (!(created < opts.createdBeforeMs)) {
+            opts.tooNew?.add(u.uid);
+            continue;
+          }
+        }
+        if (isEmail(u.email)) out.set(u.uid, u.email!.trim());
+      }
     } catch (e) {
       console.warn('[email] getUsers failed:', (e as Error)?.message);
     }

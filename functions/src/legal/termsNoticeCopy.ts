@@ -14,6 +14,12 @@ export interface TermsNotice {
   version: string;
   /** Effective date, YYYY-MM-DD (UTC midnight). */
   effectiveDate: string;
+  /**
+   * Only accounts created before this date (YYYY-MM-DD, UTC midnight) get the
+   * notice: newer accounts accepted the version at sign-up. Omit to notify
+   * every account.
+   */
+  accountsCreatedBefore?: string;
   /** Public page with the new text. */
   url: string;
   /** "What changes", per language. */
@@ -21,9 +27,13 @@ export interface TermsNotice {
 }
 
 export const TERMS_NOTICES: Record<string, TermsNotice> = {
+  // Owner decision of 16 Oct 2026: 5.3.0 applies from that day to accounts
+  // created on or after it (they accept it at sign-up); older accounts move to
+  // it on 16 Nov 2026 and are the only ones notified.
   '5.3.0': {
     version: '5.3.0',
     effectiveDate: '2026-11-16',
+    accountsCreatedBefore: '2026-10-16',
     url: 'https://greengochat.com/terms-of-service/upcoming',
     bullets: {
       en: [

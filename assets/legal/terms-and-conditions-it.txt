@@ -1,8 +1,11 @@
 TERMINI E CONDIZIONI DI GREENGO
 
-Versione: 5.2.1
-Data di entrata in vigore: 16 ottobre 2026
-Versione precedente: 5.2.0 (14 ottobre 2026)
+Versione: 5.3.0
+Data di entrata in vigore: 16 ottobre 2026 per gli account creati da quella data
+  in poi; 16 novembre 2026 per gli account creati prima del 16 ottobre 2026
+Annunciata il: 16 ottobre 2026
+Versione precedente: 5.2.1 (16 ottobre 2026), che continua ad applicarsi agli
+  account creati prima del 16 ottobre 2026 fino al 15 novembre 2026
 
 ================================================================================
 1. INFORMAZIONI SU QUESTI TERMINI
@@ -52,8 +55,9 @@ alle leggi inderogabili a tutela dei consumatori del paese in cui vivi.
   commerciale.
 - "Esperienza": un'attività che un utente (l'"Host") offre ad altri utenti (gli
   "Ospiti"), gratuita o a pagamento, e prenotata tramite GreenGo (sezione 12).
-- "Account business": un account utilizzato da un'azienda o da un
-  professionista per presentare la propria attività (sezione 13).
+- "Account business": il tuo Account passato alla modalità business,
+  utilizzato da un'azienda o da un professionista per presentare la propria
+  attività (sezione 13).
 - "Professionista": chiunque agisca per fini che rientrano nella propria
   attività commerciale, imprenditoriale, artigianale o professionale.
 - "Consumatore": chiunque non agisca in qualità di professionista.
@@ -73,8 +77,8 @@ di sanzioni.
 violazione grave dei presenti Termini, a meno che non ti consentiamo di
 tornare.
 
-3.4 Una persona, un account personale. Un'attività commerciale può inoltre
-avere un account business per ciascuna attività.
+3.4 Una persona, un account personale. Un Account business non è un account
+separato: è il tuo Account passato alla modalità business (sezione 13).
 
 ================================================================================
 4. IL TUO ACCOUNT
@@ -94,7 +98,8 @@ stato utilizzato senza tua colpa.
 a) Alcune funzioni richiedono che tu verifichi la tua età con un documento
    d'identità:
    - pubblicare in una Community;
-   - pubblicare un'esperienza a pagamento;
+   - pubblicare qualsiasi Esperienza, e prenotare un'Esperienza come membro
+     (sezione 12.3);
    - altri casi in cui lo richiede la legge del luogo in cui vivi.
 b) Alcuni badge richiedono che tu verifichi il tuo profilo con un selfie.
 c) Cancelliamo le immagini dei documenti d'identità non appena il controllo è
@@ -118,8 +123,9 @@ d) creare, trovare e partecipare a Eventi, compresi gli eventi provenienti da
    siti partner;
 e) offrire e prenotare Esperienze organizzate da altri utenti;
 f) presentare un'attività commerciale con un Account business;
-g) imparare le lingue con lezioni, giochi, strumenti per il vocabolario e un
-   coach IA;
+g) usare gli assistenti di IA nella chat: traduzione, lettura vocale e, con
+   Silver o superiore, risposte intelligenti e analisi delle parole
+   (sezione 14);
 h) utilizzare Monete e Abbonamenti per sbloccare funzioni facoltative;
 i) invitare amici tramite il programma di referral.
 
@@ -196,13 +202,21 @@ hai pagato, e non viene rinnovato. Disinstallare l'app o eliminare il tuo
 account non annulla un abbonamento acquistato tramite uno store: annullalo
 nello store.
 
-7.4 Prova gratuita (web)
-- L'Abbonamento Base può includere una prova gratuita di 7 giorni sul web, una
-  sola volta per account.
-- A meno che tu non annulli prima della fine della prova, la prova si
-  trasforma in un Abbonamento Base a pagamento, e il primo pagamento viene
-  addebitato al termine della prova.
-- Ti inviamo un promemoria via e-mail prima della fine della prova.
+7.4 Prove gratuite
+a) Web
+   - L'Abbonamento Base può includere una prova gratuita di 7 giorni sul web,
+     una sola volta per account.
+   - A meno che tu non annulli prima della fine della prova, la prova si
+     trasforma in un Abbonamento Base a pagamento, e il primo pagamento viene
+     addebitato al termine della prova.
+   - Prima della fine della prova, Stripe, il nostro fornitore di servizi di
+     pagamento, ti invia un'e-mail di promemoria.
+b) Store delle app
+   - Un Abbonamento acquistato nell'app iOS o Android può includere una prova
+     gratuita introduttiva. Lo store mostra la prova e le relative condizioni
+     prima dell'acquisto.
+   - La prova ed eventuali promemoria prima della sua fine sono gestiti da
+     Apple o da Google secondo le loro regole.
 
 7.5 Variazioni di prezzo
 - Ti informeremo di un aumento di prezzo almeno 30 giorni prima che si applichi
@@ -211,9 +225,18 @@ nello store.
 - Quando lo store o la legge richiede il tuo consenso a un nuovo prezzo, il
   nuovo prezzo non si applica finché non lo accetti.
 
-7.6 Upgrade
-Se effettui un upgrade sul web, il prezzo mostrato può includere uno sconto per
-il periodo residuo del tuo piano attuale. L'upgrade ha effetto immediato.
+7.6 Upgrade e downgrade sul web
+a) Se effettui un upgrade sul web, ottieni uno sconto fisso di upgrade sul
+   prezzo del nuovo piano:
+   - da Silver a Gold: 10%;
+   - da Silver a Platinum: 15%;
+   - da Gold a Platinum: 10%.
+   L'upgrade ha effetto immediato.
+b) Il periodo non utilizzato del tuo vecchio piano viene accreditato sul saldo
+   del tuo account dopo il primo pagamento del nuovo piano.
+c) Sul web non puoi effettuare un downgrade durante un periodo pagato. Per
+   passare a un piano inferiore, annulla il tuo piano attuale (sezione 7.3) e
+   acquista il piano inferiore; il cambiamento ha effetto in quel momento.
 
 7.7 Precedenti offerte di prevendita
 Se hai acquistato un piano di prevendita "Founder" in base a una versione
@@ -248,15 +271,14 @@ cui il tuo account esiste.
   restituite, a meno che la funzione non abbia funzionato per causa nostra.
 
 8.5 Regalare Monete
-Puoi regalare Monete a un altro utente con la funzione regalo. Le seguenti
-regole servono a prevenire le frodi:
+Puoi regalare Monete a un altro utente con la funzione regalo. Un regalo
+viene consegnato al destinatario immediatamente. Le seguenti regole servono a
+prevenire le frodi:
 a) un regalo è compreso tra 10 e 1.000 Monete;
 b) puoi inviare al massimo 10 regali e 5.000 Monete al giorno (UTC);
 c) le Monete che hai ACQUISTATO possono essere regalate solo 72 ore dopo
    l'acquisto. Le Monete gratuite possono essere regalate subito;
-d) il destinatario può accettare o rifiutare un regalo. Se il destinatario lo
-   rifiuta, o non lo accetta entro 7 giorni, le Monete ti vengono restituite;
-e) è vietato regalare Monete in cambio di denaro, beni o servizi al di fuori di
+d) è vietato regalare Monete in cambio di denaro, beni o servizi al di fuori di
    GreenGo.
 
 8.6 Rimborsi, chargeback e frodi
@@ -327,8 +349,11 @@ c) Abbonamenti (servizio digitale)
    - Se ci hai chiesto di attivare subito il tuo Abbonamento, ti rimborsiamo il
      prezzo meno un importo proporzionale ai giorni già utilizzati.
 d) Come recedere
-   - Sul web, usa la funzione "Recedi dal contratto" in GreenGo >
-     Impostazioni > Acquisti.
+   - Per gli acquisti sul web, usa la funzione "Recedi dal contratto" in
+     GreenGo > Profilo > Impostazioni Account > Acquisti e recesso, oppure
+     nello Shop.
+   - Gli acquisti effettuati nell'app iOS o Android passano tramite Apple o
+     Google (vedi la lettera e) qui sotto).
    - Puoi anche inviarci una dichiarazione esplicita via e-mail all'indirizzo
      billing@greengochat.com, ad esempio: "Recedo dal mio contratto per
      [prodotto], acquistato il [data], e-mail dell'account [e-mail]".
@@ -341,11 +366,16 @@ e) Se hai acquistato nell'app iOS o Android, il prodotto ti è stato venduto da
    - Google Play: nella cronologia dei tuoi ordini.
 
 9.5 Consumatori brasiliani: diritto di recesso (CDC art. 49)
-a) Puoi recedere da un acquisto entro 7 giorni dall'acquisto o dall'inizio del
-   servizio, e ricevere un rimborso completo.
-b) Per gli acquisti sul web, usa la funzione "Recedi dal contratto" o scrivi a
-   billing@greengochat.com. Ti rimborsiamo entro 15 giorni, con lo stesso
-   metodo di pagamento. Un pagamento con Pix viene rimborsato tramite Pix.
+a) Acquisti sul web:
+   - Abbonamenti: puoi recedere entro 7 giorni dall'acquisto e ricevere un
+     rimborso completo.
+   - Monete: si applicano gli stessi 7 giorni, a meno che al momento del
+     checkout tu non abbia chiesto la consegna immediata delle Monete e
+     rinunciato espressamente al diritto di recesso.
+b) Per gli acquisti sul web, usa la funzione "Recedi dal contratto" (sezione
+   9.4 d) o scrivi a billing@greengochat.com. Ti rimborsiamo entro 15
+   giorni, con lo stesso metodo di pagamento. Un pagamento con Pix viene
+   rimborsato tramite Pix.
 c) Per gli acquisti nelle app, rivolgiti prima ad Apple o a Google. Se non
    risolvono il problema, contattaci e ti aiuteremo.
 
@@ -368,17 +398,20 @@ rimuoviamo ciò che è stato pagato con esso:
 
 10.1 Programma di referral
 a) Se un nuovo utente si registra con il tuo codice referral e lo riscatta
-   entro 30 giorni dalla registrazione, il nuovo utente riceve 1 mese di
-   Abbonamento Platinum, e tu ricevi 100 Monete.
-b) Puoi guadagnare al massimo 1.000 Monete di referral per mese di calendario.
-c) Ogni nuovo account può riscattare un solo codice referral. Non puoi
+   entro 30 giorni dalla registrazione, il nuovo utente riceve 1 settimana di
+   Abbonamento Base, e tu ricevi 50 Monete.
+b) Ricompense extra: quando 5 amici hanno riscattato il tuo codice, ricevi 1
+   mese di Abbonamento Silver; a 10 amici, 1 mese di Abbonamento Gold; a 20
+   amici, 1 mese di Abbonamento Platinum.
+c) Puoi guadagnare al massimo 1.000 Monete di referral per mese di calendario.
+d) Ogni nuovo account può riscattare un solo codice referral. Non puoi
    invitare te stesso.
-d) È vietato creare account falsi o duplicati, acquistare referral o usare lo
+e) È vietato creare account falsi o duplicati, acquistare referral o usare lo
    spam per condividere il tuo codice. Possiamo trattenere o rimuovere le
    ricompense ottenute in questo modo.
-e) Quando condividi il tuo codice, informa chiaramente le persone che ricevi
+f) Quando condividi il tuo codice, informa chiaramente le persone che ricevi
    una ricompensa.
-f) Possiamo modificare o terminare il programma con un preavviso di 30 giorni.
+g) Possiamo modificare o terminare il programma con un preavviso di 30 giorni.
    Le ricompense già ottenute restano tue.
 
 10.2 Bonus di benvenuto e coupon
@@ -460,8 +493,9 @@ b) La commissione per biglietto dipende dall'Abbonamento del venditore al
    - Gold: 2 USD + 10% del prezzo del biglietto, al massimo 9 USD;
    - Platinum: 1 USD + 10% del prezzo del biglietto, al massimo 8 USD.
 c) Primo annuncio a pagamento: se non hai mai venduto biglietti a pagamento
-   su GreenGo, la commissione per il tuo primo Evento o la tua prima
-   Esperienza a pagamento è fissa, di 1 USD per biglietto, per quell'annuncio.
+   su GreenGo, la commissione è fissa, di 1 USD per biglietto, per il primo
+   annuncio (Evento o Esperienza) sul quale un acquirente apre un checkout a
+   pagamento, per quell'annuncio.
 d) I biglietti gratuiti non hanno commissione. La commissione non supera mai
    il prezzo del biglietto.
 e) Per i biglietti con prezzo in un'altra valuta, la parte fissa e il massimo
@@ -502,8 +536,10 @@ a) Se l'organizzatore lo consente, chiunque apra un link condiviso di un
    nome, cognome ed e-mail, finché ci sono posti disponibili.
 b) Per un Evento a pagamento, il visitatore paga tramite lo stesso checkout
    di Stripe o Mercado Pago e riceve il biglietto via e-mail.
-c) Gli Eventi che richiedono l'approvazione dell'organizzatore, o che hanno
-   limiti di età o di genere, si possono prenotare solo nell'app.
+c) La prenotazione come visitatore non è disponibile per gli Eventi che
+   richiedono l'approvazione dell'organizzatore, che hanno limiti di età o di
+   genere, o che hanno più tipi di biglietto. Questi Eventi si possono
+   prenotare solo nell'app.
 d) I visitatori possono anche inviare una richiesta di prenotazione per
    un'Esperienza da un link condiviso.
 e) Il nome e l'e-mail del visitatore vengono condivisi con l'organizzatore o
@@ -530,11 +566,19 @@ f) I presenti Termini si applicano alle prenotazioni dei visitatori in quanto
   sull'account Stripe o Mercado Pago dell'Host collegato a GreenGo. Non sono
   ammessi link di pagamento, altri metodi di pagamento né il pagamento in
   contanti all'incontro.
+- Le prenotazioni di Esperienze create prima del 14 ottobre 2026 con il
+  metodo di pagamento proprio dell'Host, o con pagamento in contanti, possono
+  ancora essere completate in quel modo. Tutte le prenotazioni create a
+  partire dal 14 ottobre 2026 utilizzano solo il checkout nell'app.
 - L'Ospite paga il prezzo indicato nell'annuncio, e nient'altro. Il denaro va
   sull'account dell'Host: il pagamento non transita attraverso GreenGo e
-  GreenGo non detiene né rimborsa i pagamenti per le Esperienze. GreenGo
-  riceve solo la propria commissione di servizio, pagata dall'Host
-  (sezione 11.6).
+  GreenGo non detiene i pagamenti per le Esperienze. GreenGo riceve solo la
+  propria commissione di servizio, pagata dall'Host (sezione 11.6).
+- Rimborsi: se l'Host rimuove un orario prenotato o annulla una
+  prenotazione, GreenGo avvia un rimborso completo all'Ospite tramite
+  l'account Stripe o Mercado Pago dell'Host. In tutti gli altri casi, i
+  rimborsi seguono la politica di annullamento dell'Host e sono pagati
+  dall'Host.
 - Solo gli Host con un Account business attivo (sezione 13) possono
   pubblicare Esperienze a pagamento. Quante Esperienze un Host può avere
   contemporaneamente dipende dal suo piano (sezione 11.7).
@@ -559,20 +603,27 @@ d) non chiedere mai agli Ospiti di pagare al di fuori del checkout nell'app,
    ad esempio con un link di pagamento, un bonifico bancario o in contanti;
 e) trattare gli Ospiti con rispetto e garantirne la sicurezza.
 
-Per pubblicare un'Esperienza a pagamento devi aver verificato la tua età con un
-documento d'identità. I nuovi Host possono pubblicare una sola Esperienza a
-pagamento finché non hanno ricevuto 3 recensioni.
+Documento d'identità:
+- Per pubblicare qualsiasi Esperienza, gratuita o a pagamento, devi aver
+  caricato un documento d'identità. Lo stesso vale per prenotare
+  un'Esperienza come membro.
+- Per pubblicare un'Esperienza a pagamento, anche la tua verifica dell'età
+  deve essere stata approvata.
+I nuovi Host possono pubblicare una sola Esperienza a pagamento finché non
+hanno ricevuto 3 recensioni.
 
 12.4 Host che sono professionisti
-- Se offri Esperienze nell'ambito della tua attività commerciale,
-  imprenditoriale o professionale, devi dichiararlo al momento della
-  pubblicazione.
-- Devi fornirci il tuo nome, indirizzo, numero di telefono, e-mail, un
-  documento d'identità e, se sei iscritto, il registro delle imprese e il tuo
-  numero di iscrizione.
+- Se offri Esperienze o vendi biglietti nell'ambito della tua attività
+  commerciale, imprenditoriale o professionale, devi dichiararlo. Lo fai in
+  Centro attività > Impostazioni, dove dichiari se agisci in qualità di
+  professionista.
+- In quanto professionista, devi fornirci lì i tuoi dati di professionista:
+  il tuo nome, indirizzo, numero di telefono, e-mail, un documento d'identità
+  o un numero di registrazione e, se sei iscritto, il registro delle imprese
+  e il tuo numero di iscrizione.
 - Devi confermare di offrire solo prodotti e servizi conformi alla legge.
-- Mostriamo i tuoi dati di professionista agli Ospiti nell'UE, come richiesto
-  dal Digital Services Act (art. 30).
+- GreenGo mostra i tuoi dati di professionista nei tuoi annunci, come
+  richiesto dal Digital Services Act (art. 30).
 - In quanto professionista, devi inoltre fornire agli Ospiti le informazioni e
   i diritti previsti dalla normativa a tutela dei consumatori, ad esempio i
   diritti di annullamento.
@@ -582,10 +633,16 @@ a) Leggi l'annuncio e la politica di annullamento prima di prenotare.
 b) Paga solo tramite il checkout nell'app. Non pagare mai un Host al di fuori
    di GreenGo, ad esempio con un link di pagamento, un bonifico bancario o in
    contanti.
-c) Se qualcosa va storto, puoi aprire una controversia nell'app entro il
-   periodo indicato. GreenGo la esaminerà e potrà registrare un rimborso dovuto
-   dall'Host, o adottare misure nei confronti dell'account dell'Host. GreenGo
-   non paga direttamente rimborsi per le Esperienze.
+c) Se l'Host rimuove il tuo orario prenotato o annulla la tua prenotazione,
+   GreenGo avvia un rimborso completo a tuo favore tramite l'account Stripe o
+   Mercado Pago dell'Host. Negli altri casi, i rimborsi seguono la politica di
+   annullamento dell'Host e sono pagati dall'Host. Se qualcosa va storto, puoi
+   aprire una controversia nell'app entro il periodo indicato. GreenGo la
+   esaminerà e potrà registrare un rimborso dovuto dall'Host, o adottare
+   misure nei confronti dell'account dell'Host. GreenGo non paga rimborsi per
+   le Esperienze con fondi propri.
+d) Per prenotare un'Esperienza come membro, devi aver caricato un documento
+   d'identità (sezione 12.3).
 
 12.6 Recensioni
 - Dopo una prenotazione reale, Host e Ospiti possono recensirsi a vicenda.
@@ -598,13 +655,14 @@ c) Se qualcosa va storto, puoi aprire una controversia nell'app entro il
 13. ACCOUNT BUSINESS
 ================================================================================
 
-13.1 Un Account business consente a un'azienda o a un professionista di
+13.1 Un Account business non è un account separato: è il tuo Account passato
+alla modalità business. Consente a un'azienda o a un professionista di
 mostrare una pagina business:
 - dati dell'attività e orari di apertura;
 - eventi ed esperienze;
 - follower.
 
-13.2 Aprendo un Account business confermi che:
+13.2 Passando il tuo Account alla modalità business confermi che:
 - sei autorizzato ad agire per conto dell'attività;
 - le informazioni che fornisci sono veritiere;
 - rispetti le leggi applicabili alla tua attività, comprese le leggi in materia
@@ -630,7 +688,9 @@ Platinum. Se il tuo Abbonamento termina o scende sotto Silver, gli strumenti
 business (ad esempio la pagina business, i contatti commerciali, la
 promozione e gli annunci a pagamento) vengono sospesi, e il tuo account
 funziona come un account personale, con soli annunci gratuiti. Tornano attivi
-quando hai di nuovo un Abbonamento Silver, Gold o Platinum.
+quando hai di nuovo un Abbonamento Silver, Gold o Platinum. La
+sponsorizzazione di una Community e le promozioni in evidenza nelle Community
+richiedono un Abbonamento Platinum.
 
 ================================================================================
 14. FUNZIONI DI IA
@@ -639,25 +699,35 @@ quando hai di nuovo un Abbonamento Silver, Gold o Platinum.
 14.1 GreenGo offre funzioni basate sull'IA:
 - traduzione;
 - lettura vocale (sintesi vocale);
-- risposte intelligenti e aiuto grammaticale;
-- un coach linguistico IA;
-- trascrizione dei messaggi vocali.
+- risposte intelligenti e analisi delle parole (Abbonamento Silver o
+  superiore).
 
 La chat di supporto inizia con un assistente di IA. È indicato come IA, e puoi
-chiedere di parlare con una persona in qualsiasi momento.
+toccare "Parla con una persona" in qualsiasi momento per raggiungere una
+persona.
 
-14.2 Prima che tu utilizzi le funzioni di IA per la prima volta, ti indichiamo
-quale fornitore viene utilizzato e che cosa viene inviato, e ti chiediamo il
-consenso. Puoi revocare il tuo consenso nelle Impostazioni. L'Informativa sulla
-privacy (sezione 9) contiene i dettagli.
+14.2 Consenso
+a) Prima che le funzioni di IA trattino per la prima volta i tuoi contenuti
+   privati (ad esempio la traduzione dei messaggi di chat, la lettura vocale e
+   l'assistente di IA), ti indichiamo quale fornitore viene utilizzato e che
+   cosa viene inviato, e ti chiediamo il consenso. Puoi revocare il tuo
+   consenso nelle Impostazioni.
+b) I contenuti pubblici, come Eventi, Community e annunci, sono tradotti con
+   Google Cloud Translation tramite una cache condivisa sui nostri server.
+   Viene inviato solo il testo, senza alcun dato personale. Questo non
+   richiede il tuo consenso.
+c) L'Informativa sulla privacy (sezione 9) contiene i dettagli.
 
 14.3 I risultati dell'IA possono essere errati, incompleti o culturalmente
-inesatti. Le traduzioni sono contrassegnate con "Tradotto". Non fare affidamento
-sui risultati dell'IA per decisioni mediche, legali, finanziarie o di
-sicurezza. In caso di dubbio, verifica con l'altra persona.
+inesatti. Il testo tradotto è contrassegnato con "Tradotto". Non fare
+affidamento sui risultati dell'IA per decisioni mediche, legali, finanziarie o
+di sicurezza. In caso di dubbio, verifica con l'altra persona.
 
-14.4 Alcune funzioni di IA sono soggette a limiti giornalieri o costano Monete,
-come indicato nell'app.
+14.4 Limiti e costi
+- Alcune funzioni di IA sono soggette a limiti o costano Monete, come indicato
+  nell'app. Ad esempio, la lettura vocale costa 5 Monete.
+- Le risposte intelligenti e l'analisi delle parole richiedono un Abbonamento
+  Silver o superiore.
 
 ================================================================================
 15. I TUOI CONTENUTI
@@ -677,13 +747,16 @@ come indicato nell'app.
   dall'Informativa sulla privacy: ad esempio conservazione per obblighi di
   legge, prove relative a una segnalazione o a un ricorso pendente, o Contenuti
   che altre persone hanno condiviso nei propri post.
+- Brevi audio di lettura vocale generati da un testo possono essere conservati
+  in una cache condivisa anonima, senza alcun collegamento a te o al tuo
+  Account, così che lo stesso testo non debba essere convertito di nuovo.
 
 15.3 Promozione solo con il tuo permesso
 - Non utilizzeremo il tuo nome, le tue foto o i tuoi Contenuti nella pubblicità
   o nel marketing di GreenGo al di fuori dell'app senza il tuo permesso
   separato.
-- Puoi concedere o revocare tale permesso in qualsiasi momento in
-  Impostazioni > Privacy > Uso promozionale.
+- Puoi concedere o revocare tale permesso in qualsiasi momento in Profilo >
+  Impostazioni Account > Privacy e dati > Uso promozionale dei miei contenuti.
 
 15.4 Garantisci che:
 - disponi dei diritti sui Contenuti che pubblichi;
@@ -798,9 +871,10 @@ c) Se lo fai, possiamo:
    - intraprendere azioni legali contro di te per tutelare le persone
      coinvolte e GreenGo.
 d) Avviso che confermi. La prima volta che apri una foto privata, contenuti
-   dell'album privato o media delle chat di un altro utente, l'app ti mostra
-   un avviso su queste regole, e devi confermarlo ("Ho capito") prima che il
-   contenuto venga mostrato. Registriamo la tua conferma con la data e l'ora e
+   dell'album privato o media delle chat di un altro utente, anche nelle chat
+   degli Eventi e delle Community, l'app ti mostra un avviso su queste
+   regole, e devi confermarlo ("Ho capito") prima che il contenuto venga
+   mostrato. Registriamo la tua conferma con la data e l'ora e
    la versione dei presenti Termini, come prova che sei stato avvisato (vedi
    l'Informativa sulla privacy, sezioni 10.5 e 14).
 e) GreenGo utilizza misure tecniche che rendono più difficile la copia (ad
@@ -824,8 +898,8 @@ b) Strumenti automatizzati, che non adottano decisioni definitive da soli:
      contenga un volto, e un controllo per escludere nudità (Google ML Kit);
    - sui nostri server: controllo automatico delle immagini per rilevare nudità
      e violenza (Google Cloud Vision SafeSearch), controlli dei testi per spam,
-     truffe e abusi, e confronto con materiale noto di abuso sessuale su
-     minori.
+     truffe e abusi, e confronto delle immagini caricate (confronto tramite
+     hash) con materiale noto di abuso sessuale su minori.
    I Contenuti contrassegnati dagli strumenti automatizzati possono essere
    trattenuti finché non vengono esaminati.
 c) Esame da parte di personale GreenGo qualificato. Le segnalazioni relative
@@ -833,14 +907,15 @@ c) Esame da parte di personale GreenGo qualificato. Le segnalazioni relative
 
 17.2 Misure che possiamo adottare
 A seconda della gravità del caso e dei tuoi precedenti, possiamo:
-- mostrare un avvertimento;
-- rimuovere o nascondere Contenuti, o limitarne la visibilità;
-- disattivare determinate funzioni per te, ad esempio messaggistica,
-  pubblicazione od ospitalità come Host;
+- rimuovere o nascondere Contenuti;
+- darti un avvertimento;
 - sospendere temporaneamente il tuo account;
-- chiudere il tuo account;
-- trattenere le ricompense ottenute in modo abusivo;
-- segnalare la questione alle autorità.
+- bannare definitivamente il tuo account;
+- limitare la visibilità del tuo profilo o dei tuoi Contenuti;
+- chiederti di verificare il tuo account.
+
+Possiamo inoltre trattenere le ricompense ottenute in modo abusivo e
+segnalare la questione alle autorità.
 
 Agiamo in modo tempestivo, diligente, obiettivo e proporzionato, e rispettiamo i
 diritti di tutte le persone coinvolte, compresa la libertà di espressione.
@@ -877,29 +952,32 @@ Una buona segnalazione include:
 - Ti informiamo se sono stati utilizzati strumenti automatizzati.
 
 18.3 Motivazione
-Se interveniamo sui tuoi Contenuti o sul tuo account, te lo comunichiamo
-nell'app o via e-mail (DSA art. 17):
+Se interveniamo sui tuoi Contenuti o sul tuo account, ti inviamo una
+comunicazione (motivazione) nell'app e via e-mail (DSA art. 17). Ti indica:
 - che cosa abbiamo fatto;
 - a quali Contenuti si riferisce;
 - i fatti, e la regola o la legge violata;
 - se sono stati utilizzati strumenti automatizzati;
-- come puoi contestare la decisione.
+- come puoi presentare ricorso.
 
 Non inviamo questa comunicazione quando la legge lo vieta, ad esempio per
 tutelare un'indagine su abusi sessuali su minori.
 
 18.4 Ricorsi (reclami interni)
-a) Puoi presentare ricorso contro una qualsiasi delle seguenti decisioni,
-   nell'app o rispondendo alla nostra comunicazione, entro 6 mesi dalla
-   decisione (DSA art. 20):
-   - la rimozione o la limitazione dei tuoi Contenuti;
-   - la sospensione o la chiusura del tuo account;
-   - la limitazione delle tue funzioni o ricompense;
-   - il mancato intervento su una segnalazione che hai presentato.
-b) I ricorsi sono gratuiti. Vengono esaminati da una persona che non ha preso
-   la decisione originaria.
-c) Revochiamo le decisioni che si rivelano errate, e ti comunichiamo l'esito e
-   i motivi.
+a) Puoi presentare ricorso entro 6 mesi dalla decisione, nell'app o tramite
+   il link presente nell'e-mail di comunicazione (DSA art. 20). Il link
+   funziona anche se il tuo account è sospeso. Puoi presentare ricorso contro:
+   - la rimozione o l'occultamento dei tuoi Contenuti;
+   - un avvertimento;
+   - la sospensione o il ban del tuo account;
+   - la limitazione della visibilità o la richiesta di verifica;
+   - il trattenimento di ricompense.
+b) Se hai segnalato Contenuti o un account e abbiamo deciso di non
+   intervenire, puoi presentare ricorso anche contro tale decisione.
+c) I ricorsi sono gratuiti. Decide un revisore diverso, che non ha preso la
+   decisione originaria.
+d) Ti inviamo l'esito e i motivi. Revochiamo le decisioni che si rivelano
+   errate.
 
 18.5 Altre opzioni
 Se vivi nell'UE, puoi anche sottoporre una controversia sulla moderazione a un
@@ -908,11 +986,13 @@ art. 21). Puoi sempre rivolgerti a un tribunale o a un'autorità per la tutela
 dei consumatori (sezione 26).
 
 18.6 Uso improprio
-- Se qualcuno pubblica frequentemente Contenuti manifestamente illegali,
-  sospendiamo il suo account dopo un avvertimento.
-- Se qualcuno invia frequentemente segnalazioni manifestamente infondate,
-  smettiamo di trattare le sue segnalazioni per un certo periodo dopo un
-  avvertimento (DSA art. 23).
+- Recidivi: se qualcuno pubblica frequentemente Contenuti manifestamente
+  illegali o continua a violare i presenti Termini, prima lo avvertiamo.
+  Dopo 3 avvertimenti nell'arco di 12 mesi, sospendiamo l'account. Nei casi
+  gravi possiamo intervenire immediatamente (sezioni 19 e 20.3).
+- Segnalazioni infondate: se qualcuno invia frequentemente segnalazioni
+  manifestamente infondate, lo avvertiamo. Se continua, non trattiamo le sue
+  segnalazioni per 30 giorni (DSA art. 23).
 
 18.7 Punti di contatto (DSA artt. 11 e 12)
 - Per le autorità degli Stati membri dell'UE, la Commissione europea e il
@@ -933,20 +1013,22 @@ tolleriamo alcuna forma di abuso o sfruttamento sessuale di minori, adescamento
 o Contenuti che sessualizzino i minori.
 
 19.2 Che cosa facciamo
-a) Rimuoviamo tali Contenuti e chiudiamo gli account coinvolti, immediatamente
-   e senza preavviso.
+a) Rimuoviamo tali Contenuti. Nei casi accertati di sfruttamento sessuale di
+   minori, chiudiamo gli account coinvolti immediatamente e senza preavviso.
 b) Segnaliamo il presunto materiale di abuso sessuale su minori al National
-   Center for Missing & Exploited Children (NCMEC) degli Stati Uniti e alle
-   autorità competenti in Brasile, nell'UE e in altri paesi, come richiesto
-   dalla legge.
+   Center for Missing & Exploited Children (NCMEC) degli Stati Uniti, alle
+   autorità competenti in Brasile e, nell'UE, tramite la hotline nazionale
+   competente o le forze dell'ordine, nonché in altri paesi quando la legge
+   lo richiede.
 c) Conserviamo i dati correlati per finalità di contrasto della criminalità per
    il periodo richiesto dalla legge.
 d) Collaboriamo con la polizia e con l'autorità giudiziaria.
 
 19.3 Segnala sospetti minori o problemi relativi alla sicurezza dei minori
-nell'app, che offre il motivo "Sfruttamento sessuale di minori", oppure
-all'indirizzo safety@greengochat.com. I nostri standard per la sicurezza dei
-minori sono pubblicati all'indirizzo https://greengochat.com/child-safety.
+nell'app, dove ogni schermata di segnalazione offre il motivo "Sfruttamento
+sessuale di minori", oppure all'indirizzo safety@greengochat.com. I nostri
+standard per la sicurezza dei minori sono pubblicati all'indirizzo
+https://greengochat.com/child-safety.
 
 ================================================================================
 20. CESSAZIONE DEL CONTRATTO
@@ -954,11 +1036,17 @@ minori sono pubblicati all'indirizzo https://greengochat.com/child-safety.
 
 20.1 Puoi smettere di usare GreenGo ed eliminare il tuo account in qualsiasi
 momento:
-- nell'app, in Profilo > Impostazioni > Elimina account;
+- nell'app, in Profilo > Elimina Account;
 - sul web, all'indirizzo https://greengochat.com/delete-account.
 
-Ricorda di annullare eventuali abbonamenti acquistati tramite uno store
-(sezione 7.3).
+Quando elimini il tuo account:
+- un Abbonamento acquistato sul web viene annullato automaticamente;
+- un Abbonamento acquistato nell'app iOS o Android non lo è: annullalo nello
+  store (sezione 7.3);
+- le Monete rimaste vanno perse. Ti avvisiamo prima che tu confermi;
+- conserviamo alcuni dati per il tempo richiesto dalla legge, ad esempio i
+  dati di pagamento e le fatture, e le segnalazioni relative alla sicurezza.
+  L'Informativa sulla privacy spiega quali dati e per quanto tempo.
 
 20.2 Possiamo sospendere o chiudere il tuo account se:
 a) violi i presenti Termini in modo grave o ripetuto;
@@ -1186,6 +1274,42 @@ Diritto d'autore (DMCA): copyright@greengochat.com
 ================================================================================
 CRONOLOGIA DELLE VERSIONI
 ================================================================================
+
+5.3.0 - in vigore dal 16 ottobre 2026 per gli account creati da quella data in
+poi; dal 16 novembre 2026 per gli account creati prima del 16 ottobre 2026
+(annunciata il 16 ottobre 2026)
+Allineamento con l'app:
+- Sezioni 2, 3.4 e 13: un Account business è il tuo account passato alla
+  modalità business.
+- Sezione 5.1 g: rimossi lezioni di lingua, giochi, strumenti per il
+  vocabolario e il coach IA; descritti gli assistenti di IA nella chat.
+- Sezione 7.4: prove introduttive degli store; promemoria della prova
+  inviati da Stripe o dallo store.
+- Sezione 8.5: i regali di Monete vengono consegnati immediatamente (rimossi
+  accettazione/rifiuto e la restituzione dopo 7 giorni).
+- Sezioni 9.4 d e 9.5 a: dove recedere nell'app; diritto di recesso
+  brasiliano per Abbonamenti e Monete acquistati sul web.
+- Sezioni 11.6 c e 11.8 c: tariffa del primo annuncio; Eventi non aperti alla
+  prenotazione come visitatore.
+- Sezioni 12.2, 12.3, 12.5 e 4.4: rimborsi avviati da GreenGo tramite
+  l'account dell'Host quando l'Host annulla; documento d'identità per ogni
+  Esperienza; prenotazioni precedenti con il metodo di pagamento proprio
+  dell'Host.
+- Sezioni 14 e 15.2: funzioni di IA, consenso, limiti e costi; cache anonima
+  della lettura vocale.
+- Sezioni 15.3, 16.9 d, 17.1, 17.2, 18, 19 e 20.1: percorsi nell'app, misure
+  di moderazione, comunicazioni e ricorsi via e-mail, recidivi, segnalazioni
+  infondate, segnalazioni sulla sicurezza dei minori ed eliminazione
+  dell'account.
+Nuove funzioni:
+- Sezione 7.6: sconti fissi di upgrade, accredito del periodo non
+  utilizzato, nessun downgrade sul web durante un periodo.
+- Sezione 10.1: nuove ricompense referral e ricompense extra a 5, 10 e 20
+  amici.
+- Sezione 12.4: dichiarazione di professionista in Centro attività >
+  Impostazioni, dati di professionista mostrati negli annunci.
+- Sezione 13.7: la sponsorizzazione delle Community e le promozioni in
+  evidenza richiedono Platinum.
 
 5.2.1 - 16 ottobre 2026
 - Sezione 7.3 c: chiarito dove annullare nell'app un abbonamento acquistato

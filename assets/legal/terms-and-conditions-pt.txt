@@ -1,8 +1,12 @@
 TERMOS E CONDIÇÕES DO GREENGO
 
-Versão: 5.2.1
-Data de entrada em vigor: 16 de outubro de 2026
-Versão anterior: 5.2.0 (14 de outubro de 2026)
+Versão: 5.3.0
+Data de entrada em vigor: 16 de outubro de 2026 para as contas criadas a partir
+  dessa data; 16 de novembro de 2026 para as contas criadas antes de
+  16 de outubro de 2026
+Anunciada em: 16 de outubro de 2026
+Versão anterior: 5.2.1 (16 de outubro de 2026), que continua a aplicar-se às
+  contas criadas antes de 16 de outubro de 2026 até 15 de novembro de 2026
 
 ================================================================================
 1. SOBRE ESTES TERMOS
@@ -53,8 +57,9 @@ imperativas de proteção do consumidor do país onde vive.
 - "Experiência": uma atividade que um utilizador (o "Anfitrião") oferece a
   outros utilizadores (os "Convidados"), gratuita ou paga, e reservada através
   do GreenGo (secção 12).
-- "Conta de empresa": uma conta utilizada por uma empresa ou por um
-  profissional para apresentar a sua atividade (secção 13).
+- "Conta de empresa": a sua própria Conta mudada para o modo empresa,
+  utilizada por uma empresa ou por um profissional para apresentar a sua
+  atividade (secção 13).
 - "Profissional": qualquer pessoa que atue para fins relacionados com a sua
   atividade comercial, empresarial, artesanal ou profissional.
 - "Consumidor": qualquer pessoa que não atue como profissional.
@@ -72,8 +77,8 @@ impedido de utilizar os Serviços pela lei do seu país ou por sanções.
 3.3 Não pode utilizar o GreenGo se tivermos encerrado anteriormente a sua conta
 por uma violação grave destes Termos, salvo se o autorizarmos a regressar.
 
-3.4 Uma pessoa, uma conta pessoal. Uma empresa pode também ter uma conta de
-empresa por cada empresa.
+3.4 Uma pessoa, uma conta pessoal. Uma Conta de empresa não é uma conta
+separada: é a sua própria Conta mudada para o modo empresa (secção 13).
 
 ================================================================================
 4. A SUA CONTA
@@ -93,7 +98,8 @@ utilizada sem culpa sua.
 a) Algumas funcionalidades exigem que verifique a sua idade com um documento de
    identificação:
    - publicar numa Comunidade;
-   - publicar uma experiência paga;
+   - publicar qualquer Experiência e reservar uma Experiência como membro
+     (secção 12.3);
    - outros casos exigidos pela lei do local onde vive.
 b) Alguns distintivos exigem que verifique o seu perfil com uma selfie.
 c) Eliminamos as imagens dos documentos de identificação logo que a
@@ -118,8 +124,9 @@ d) criar, encontrar e participar em Eventos, incluindo eventos de sites
    parceiros;
 e) oferecer e reservar Experiências organizadas por outros utilizadores;
 f) apresentar uma empresa com uma Conta de empresa;
-g) aprender idiomas com lições, jogos, ferramentas de vocabulário e um
-   treinador de IA;
+g) utilizar assistentes de IA no chat: tradução, leitura em voz alta e, com
+   Silver ou superior, respostas inteligentes e decomposição de palavras
+   (secção 14);
 h) utilizar Moedas e Subscrições para desbloquear funcionalidades opcionais;
 i) convidar amigos através do programa de referências.
 
@@ -196,13 +203,21 @@ Quando cancela, a sua Subscrição permanece ativa até ao final do período que
 pagou, e não é renovada. Eliminar a aplicação ou a sua conta não cancela uma
 subscrição da loja: cancele-a na loja.
 
-7.4 Período experimental gratuito (web)
-- A Subscrição Base pode incluir um período experimental gratuito de 7 dias na
-  web, uma vez por conta.
-- Salvo se cancelar antes do fim do período experimental, este converte-se numa
-  Subscrição Base paga, e o primeiro pagamento é cobrado quando o período
-  experimental termina.
-- Enviamos-lhe um lembrete por e-mail antes do fim do período experimental.
+7.4 Períodos experimentais gratuitos
+a) Web
+   - A Subscrição Base pode incluir um período experimental gratuito de 7
+     dias na web, uma vez por conta.
+   - Salvo se cancelar antes do fim do período experimental, este converte-se
+     numa Subscrição Base paga, e o primeiro pagamento é cobrado quando o
+     período experimental termina.
+   - Antes do fim do período experimental, a Stripe, o nosso fornecedor de
+     pagamentos, envia-lhe um lembrete por e-mail.
+b) Lojas de aplicações
+   - Uma Subscrição comprada na aplicação iOS ou Android pode incluir um
+     período experimental gratuito introdutório. A loja mostra o período
+     experimental e as respetivas condições antes da compra.
+   - O período experimental e qualquer lembrete antes do seu fim são geridos
+     pela Apple ou pela Google, de acordo com as suas próprias regras.
 
 7.5 Alterações de preço
 - Informá-lo-emos de um aumento de preço com, pelo menos, 30 dias de
@@ -211,9 +226,18 @@ subscrição da loja: cancele-a na loja.
 - Quando a loja ou a lei exigir o seu acordo relativamente a um novo preço, o
   novo preço não se aplica até que dê o seu acordo.
 
-7.6 Upgrades
-Se fizer um upgrade na web, o preço apresentado pode incluir um desconto pelo
-tempo restante do seu plano atual. O upgrade produz efeitos imediatamente.
+7.6 Upgrades e downgrades na web
+a) Se fizer um upgrade na web, recebe um desconto de upgrade fixo sobre o
+   preço do novo plano:
+   - de Silver para Gold: 10%;
+   - de Silver para Platinum: 15%;
+   - de Gold para Platinum: 10%.
+   O upgrade produz efeitos imediatamente.
+b) O tempo não utilizado do seu plano anterior é creditado no saldo da sua
+   conta após o primeiro pagamento do novo plano.
+c) Não pode fazer um downgrade na web durante um período pago. Para passar
+   para um plano inferior, cancele o seu plano atual (secção 7.3) e compre o
+   plano inferior; a alteração produz efeitos nesse momento.
 
 7.7 Ofertas de pré-venda anteriores
 Se comprou um plano de pré-venda "Founder" ao abrigo de uma versão anterior
@@ -248,14 +272,13 @@ existir.
 
 8.5 Oferecer Moedas
 Pode oferecer Moedas a outro utilizador através da funcionalidade de oferta.
-Estas regras previnem fraudes:
+Uma oferta é entregue ao destinatário de imediato. Estas regras previnem
+fraudes:
 a) uma oferta tem entre 10 e 1.000 Moedas;
 b) pode enviar, no máximo, 10 ofertas e 5.000 Moedas por dia (UTC);
 c) as Moedas que COMPROU só podem ser oferecidas 72 horas após a compra. As
    Moedas gratuitas podem ser oferecidas de imediato;
-d) o destinatário pode aceitar ou recusar uma oferta. Se o destinatário a
-   recusar, ou não a aceitar no prazo de 7 dias, as Moedas regressam a si;
-e) é proibido oferecer Moedas em troca de dinheiro, bens ou serviços fora do
+d) é proibido oferecer Moedas em troca de dinheiro, bens ou serviços fora do
    GreenGo.
 
 8.6 Reembolsos, estornos e fraude
@@ -327,8 +350,11 @@ c) Subscrições (serviço digital)
    - Se nos pediu para iniciar a sua Subscrição imediatamente, reembolsamos o
      preço deduzido de um montante proporcional aos dias que já utilizou.
 d) Como exercer o direito de livre resolução
-   - Na web, utilize a função "Resolver o contrato" em GreenGo > Definições >
-     Compras.
+   - Para compras na web, utilize a função "Resolver o contrato" em
+     GreenGo > Perfil > Definições da Conta > Compras e livre resolução, ou na
+     Loja.
+   - As compras efetuadas na aplicação iOS ou Android são tratadas pela Apple
+     ou pela Google (ver alínea e) abaixo).
    - Pode também enviar-nos uma declaração inequívoca por e-mail para
      billing@greengochat.com, por exemplo: "Resolvo o meu contrato relativo a
      [produto], comprado em [data], e-mail da conta [e-mail]".
@@ -341,11 +367,16 @@ e) Se comprou na aplicação iOS ou Android, foi a Apple ou a Google que lhe
    - Google Play: no seu histórico de encomendas.
 
 9.5 Consumidores brasileiros: direito de arrependimento (CDC art. 49)
-a) Pode desistir de uma compra no prazo de 7 dias a contar da compra ou do
-   início do serviço, e receber um reembolso integral.
-b) Para compras na web, utilize a função "Resolver o contrato" ou escreva para
-   billing@greengochat.com. Reembolsamo-lo no prazo de 15 dias, através do
-   mesmo meio de pagamento. Um pagamento por Pix é reembolsado por Pix.
+a) Compras na web:
+   - Subscrições: pode desistir no prazo de 7 dias a contar da compra e
+     receber um reembolso integral.
+   - Moedas: aplicam-se os mesmos 7 dias, salvo se, no checkout, tiver
+     pedido o fornecimento imediato das Moedas e renunciado expressamente ao
+     seu direito de arrependimento.
+b) Para compras na web, utilize a função "Resolver o contrato" (secção
+   9.4 d) ou escreva para billing@greengochat.com. Reembolsamo-lo no prazo
+   de 15 dias, através do mesmo meio de pagamento. Um pagamento por Pix é
+   reembolsado por Pix.
 c) Para compras na aplicação, dirija-se primeiro à Apple ou à Google. Se não
    resolverem a questão, contacte-nos e ajudá-lo-emos.
 
@@ -367,17 +398,20 @@ compra, removemos aquilo que essa compra pagou:
 
 10.1 Programa de referências
 a) Se um novo utilizador se registar com o seu código de referência e o
-   utilizar no prazo de 30 dias após o registo, o novo utilizador recebe 1 mês
-   de Subscrição Platinum, e o utilizador que o referiu recebe 100 Moedas.
-b) Pode ganhar, no máximo, 1.000 Moedas de referência por mês civil.
-c) Cada nova conta só pode utilizar um código de referência. Não pode
+   utilizar no prazo de 30 dias após o registo, o novo utilizador recebe 1
+   semana de Subscrição Base, e o utilizador que o referiu recebe 50 Moedas.
+b) Recompensas adicionais: quando 5 amigos tiverem utilizado o seu código,
+   recebe 1 mês de Subscrição Silver; com 10 amigos, 1 mês de Subscrição Gold;
+   com 20 amigos, 1 mês de Subscrição Platinum.
+c) Pode ganhar, no máximo, 1.000 Moedas de referência por mês civil.
+d) Cada nova conta só pode utilizar um código de referência. Não pode
    referir-se a si próprio.
-d) É proibido criar contas falsas ou duplicadas, comprar referências ou
+e) É proibido criar contas falsas ou duplicadas, comprar referências ou
    utilizar spam para partilhar o seu código. Podemos reter ou remover as
    recompensas obtidas desta forma.
-e) Informe claramente as pessoas de que recebe uma recompensa quando partilha o
+f) Informe claramente as pessoas de que recebe uma recompensa quando partilha o
    seu código.
-f) Podemos alterar ou terminar o programa com um aviso prévio de 30 dias. As
+g) Podemos alterar ou terminar o programa com um aviso prévio de 30 dias. As
    recompensas já obtidas continuam a ser suas.
 
 10.2 Ofertas de boas-vindas e cupões
@@ -457,8 +491,8 @@ b) A taxa por bilhete depende da Subscrição do vendedor no momento da venda:
    - Gold: 2 USD + 10% do preço do bilhete, no máximo 9 USD;
    - Platinum: 1 USD + 10% do preço do bilhete, no máximo 8 USD.
 c) Primeiro anúncio pago: se ainda não vendeu bilhetes pagos no GreenGo, a
-   taxa do seu primeiro Evento ou Experiência pago é fixa, de 1 USD por
-   bilhete, para esse anúncio.
+   taxa é fixa, de 1 USD por bilhete, para o primeiro anúncio (Evento ou
+   Experiência) em que um comprador abra um checkout pago, para esse anúncio.
 d) Os bilhetes gratuitos não têm taxa. A taxa nunca é superior ao preço do
    bilhete.
 e) Para bilhetes com preço noutra moeda, a parte fixa e o valor máximo são
@@ -499,8 +533,10 @@ a) Se o organizador permitir reservas de visitantes, qualquer pessoa que abra
    haja lugares.
 b) Num Evento pago, o visitante paga através do mesmo checkout da Stripe ou do
    Mercado Pago e recebe o bilhete por e-mail.
-c) Os Eventos que exigem a aprovação do organizador, ou que têm limites de
-   idade ou de género, só podem ser reservados na aplicação.
+c) A reserva como visitante não está disponível para Eventos que exigem a
+   aprovação do organizador, que têm limites de idade ou de género, ou que
+   têm vários tipos de bilhete. Estes Eventos só podem ser reservados na
+   aplicação.
 d) Os visitantes também podem enviar um pedido de reserva de uma Experiência a
    partir de uma ligação partilhada.
 e) O nome e o e-mail do visitante são partilhados com o organizador ou o
@@ -527,10 +563,19 @@ f) Estes Termos aplicam-se às reservas de visitantes na medida em que sejam
   para a conta Stripe ou Mercado Pago do próprio Anfitrião ligada ao GreenGo.
   Não são permitidas ligações de pagamento, outros meios de pagamento nem
   pagamento em numerário no encontro.
+- As reservas de Experiências criadas antes de 14 de outubro de 2026 com o
+  meio de pagamento próprio do Anfitrião, ou para pagamento em numerário,
+  ainda podem ser concluídas dessa forma. Todas as reservas criadas a partir
+  de 14 de outubro de 2026 utilizam apenas o checkout da aplicação.
 - O Convidado paga o preço indicado no anúncio, e nada mais. O dinheiro vai
   para a conta do Anfitrião: o pagamento não passa pelo GreenGo, e o GreenGo
-  não detém nem reembolsa pagamentos de Experiências. O GreenGo recebe apenas a
-  sua taxa de serviço, paga pelo Anfitrião (secção 11.6).
+  não detém pagamentos de Experiências. O GreenGo recebe apenas a sua taxa de
+  serviço, paga pelo Anfitrião (secção 11.6).
+- Reembolsos: se o Anfitrião remover um horário reservado ou cancelar uma
+  reserva, o GreenGo inicia um reembolso integral ao Convidado através da
+  conta Stripe ou Mercado Pago do próprio Anfitrião. Em todos os outros casos,
+  os reembolsos seguem a política de cancelamento do Anfitrião e são pagos
+  pelo Anfitrião.
 - Só os Anfitriões com uma Conta de empresa ativa (secção 13) podem publicar
   Experiências pagas. O número de Experiências que um Anfitrião pode ter ao
   mesmo tempo depende do seu plano (secção 11.7).
@@ -555,19 +600,26 @@ d) nunca pedir aos Convidados que paguem fora do checkout da aplicação, por
    numerário;
 e) tratar os Convidados com respeito e mantê-los em segurança.
 
-Para publicar uma Experiência paga, tem de ter verificado a sua idade com um
-documento de identificação. Os novos Anfitriões só podem publicar uma
-Experiência paga até terem 3 avaliações.
+Documento de identificação:
+- Para publicar qualquer Experiência, gratuita ou paga, tem de ter carregado
+  um documento de identificação. O mesmo se aplica à reserva de uma
+  Experiência como membro.
+- Para publicar uma Experiência paga, a sua verificação da idade tem também
+  de ter sido aprovada.
+Os novos Anfitriões só podem publicar uma Experiência paga até terem 3
+avaliações.
 
 12.4 Anfitriões que são profissionais
-- Se oferecer Experiências no âmbito da sua atividade comercial, empresarial ou
-  profissional, tem de o declarar ao publicar.
-- Tem de nos fornecer o seu nome, morada, número de telefone, e-mail, um
-  documento de identificação e, se estiver registado, o registo comercial e o
-  respetivo número.
+- Se oferecer Experiências ou vender bilhetes no âmbito da sua atividade
+  comercial, empresarial ou profissional, tem de o declarar. Fá-lo em
+  Centro de negócios > Definições, onde declara se atua como profissional.
+- Enquanto profissional, tem de nos fornecer aí os seus dados de
+  profissional: o seu nome, morada, número de telefone, e-mail, um documento
+  de identificação ou número de registo e, se estiver registado, o registo
+  comercial e o respetivo número.
 - Tem de confirmar que oferece apenas produtos e serviços que cumprem a lei.
-- Mostramos os seus dados de profissional aos Convidados na UE, conforme exige o
-  Regulamento dos Serviços Digitais (art. 30).
+- O GreenGo mostra os seus dados de profissional nos seus anúncios, conforme
+  exige o Regulamento dos Serviços Digitais (art. 30).
 - Enquanto profissional, tem também de fornecer aos Convidados as informações e
   os direitos exigidos pela legislação de defesa do consumidor, por exemplo os
   direitos de cancelamento.
@@ -577,10 +629,16 @@ a) Leia o anúncio e a política de cancelamento antes de reservar.
 b) Pague apenas através do checkout da aplicação. Nunca pague a um Anfitrião
    fora do GreenGo, por exemplo através de uma ligação de pagamento,
    transferência bancária ou em numerário.
-c) Se algo correr mal, pode abrir um litígio na aplicação dentro do prazo
-   indicado. O GreenGo analisá-lo-á e poderá registar um reembolso devido pelo
-   Anfitrião, ou tomar medidas contra a conta do Anfitrião. O próprio GreenGo
-   não paga reembolsos de Experiências.
+c) Se o Anfitrião remover o seu horário reservado ou cancelar a sua reserva,
+   o GreenGo inicia um reembolso integral a seu favor através da conta Stripe
+   ou Mercado Pago do próprio Anfitrião. Caso contrário, os reembolsos seguem
+   a política de cancelamento do Anfitrião e são pagos pelo Anfitrião. Se
+   algo correr mal, pode abrir um litígio na aplicação dentro do prazo
+   indicado. O GreenGo analisá-lo-á e poderá registar um reembolso devido
+   pelo Anfitrião, ou tomar medidas contra a conta do Anfitrião. O próprio
+   GreenGo não paga reembolsos de Experiências com fundos próprios.
+d) Para reservar uma Experiência como membro, tem de ter carregado um
+   documento de identificação (secção 12.3).
 
 12.6 Avaliações
 - Após uma reserva real, os Anfitriões e os Convidados podem avaliar-se
@@ -594,13 +652,14 @@ c) Se algo correr mal, pode abrir um litígio na aplicação dentro do prazo
 13. CONTAS DE EMPRESA
 ================================================================================
 
-13.1 Uma Conta de empresa permite a uma empresa ou a um profissional apresentar
-uma página de empresa:
+13.1 Uma Conta de empresa não é uma conta separada: é a sua própria Conta
+mudada para o modo empresa. Permite a uma empresa ou a um profissional
+apresentar uma página de empresa:
 - dados da empresa e horário de funcionamento;
 - eventos e experiências;
 - seguidores.
 
-13.2 Ao abrir uma Conta de empresa, confirma que:
+13.2 Ao mudar a sua Conta para o modo empresa, confirma que:
 - está autorizado a atuar em nome da empresa;
 - as informações que fornece são verdadeiras;
 - cumpre as leis aplicáveis à sua atividade, incluindo as leis de proteção do
@@ -627,6 +686,8 @@ ferramentas de empresa (por exemplo a página da empresa, os potenciais
 clientes, a promoção e os anúncios pagos) ficam suspensas, e a sua conta
 funciona como uma conta pessoal, apenas com anúncios gratuitos. Voltam a
 funcionar quando tiver novamente uma Subscrição Silver, Gold ou Platinum.
+O patrocínio de uma Comunidade e as promoções afixadas em Comunidades exigem
+uma Subscrição Platinum.
 
 ================================================================================
 14. FUNCIONALIDADES DE IA
@@ -635,25 +696,35 @@ funcionar quando tiver novamente uma Subscrição Silver, Gold ou Platinum.
 14.1 O GreenGo oferece funcionalidades baseadas em IA:
 - tradução;
 - leitura em voz alta (texto para fala);
-- respostas inteligentes e ajuda gramatical;
-- um treinador de idiomas com IA;
-- transcrição de mensagens de voz.
+- respostas inteligentes e decomposição de palavras (Subscrição Silver ou
+  superior).
 
 O chat de apoio começa com um assistente de IA. Está identificado como IA, e
-pode pedir um ser humano a qualquer momento.
+pode tocar em "Falar com uma pessoa" a qualquer momento para contactar um ser
+humano.
 
-14.2 Antes de utilizar funcionalidades de IA pela primeira vez, indicamos-lhe
-qual o fornecedor utilizado e o que é enviado, e pedimos o seu consentimento.
-Pode retirar o seu consentimento nas Definições. A Política de Privacidade
-(secção 9) contém os pormenores.
+14.2 Consentimento
+a) Antes de as funcionalidades de IA tratarem o seu conteúdo privado pela
+   primeira vez (por exemplo, a tradução de mensagens de chat, a leitura em
+   voz alta e o assistente de IA), indicamos-lhe qual o fornecedor utilizado
+   e o que é enviado, e pedimos o seu consentimento. Pode retirar o seu
+   consentimento nas Definições.
+b) O conteúdo público, como Eventos, Comunidades e anúncios, é traduzido com
+   o Google Cloud Translation através de uma cache partilhada nos nossos
+   servidores. É enviado apenas o texto, sem quaisquer dados pessoais. Isto
+   não exige o seu consentimento.
+c) A Política de Privacidade (secção 9) contém os pormenores.
 
 14.3 Os resultados da IA podem estar errados, incompletos ou ser culturalmente
-imprecisos. As traduções são assinaladas com "Traduzido". Não confie nos
+imprecisos. O texto traduzido é assinalado com "Traduzido". Não confie nos
 resultados da IA para decisões médicas, jurídicas, financeiras ou de segurança.
 Em caso de dúvida, confirme com a outra pessoa.
 
-14.4 Algumas funcionalidades de IA estão limitadas por dia ou custam Moedas,
-conforme indicado na aplicação.
+14.4 Limites e custos
+- Algumas funcionalidades de IA estão limitadas ou custam Moedas, conforme
+  indicado na aplicação. Por exemplo, a leitura em voz alta custa 5 Moedas.
+- As respostas inteligentes e a decomposição de palavras exigem uma
+  Subscrição Silver ou superior.
 
 ================================================================================
 15. O SEU CONTEÚDO
@@ -673,13 +744,17 @@ conforme indicado na aplicação.
   Privacidade: por exemplo, conservação legal, provas para uma denúncia ou um
   recurso pendente, ou Conteúdo que outras pessoas partilharam nas suas próprias
   publicações.
+- Áudios curtos de leitura em voz alta criados a partir de texto podem ser
+  conservados numa cache partilhada anónima, sem qualquer ligação a si ou à
+  sua Conta, para que o mesmo texto não tenha de ser convertido novamente.
 
 15.3 Promoção apenas com a sua autorização
 - Não utilizaremos o seu nome, as suas fotos nem o seu Conteúdo em publicidade
   ou marketing do GreenGo fora da aplicação, salvo se nos der uma autorização
   separada.
-- Pode dar ou retirar essa autorização a qualquer momento em Definições >
-  Privacidade > Utilização promocional.
+- Pode dar ou retirar essa autorização a qualquer momento em Perfil >
+  Definições da Conta > Privacidade e dados > Utilização promocional do meu
+  conteúdo.
 
 15.4 Garante que:
 - tem os direitos sobre o Conteúdo que publica;
@@ -797,9 +872,10 @@ c) Se o fizer, podemos:
    - intentar uma ação judicial contra si para proteger as pessoas afetadas e
      o GreenGo.
 d) Aviso que confirma. Da primeira vez que abre uma foto privada, conteúdo do
-   álbum privado ou multimédia do chat de outro utilizador, a aplicação
-   mostra-lhe um aviso sobre estas regras, e tem de o confirmar
-   ("Compreendo") antes de o conteúdo ser mostrado. Registamos a sua
+   álbum privado ou multimédia do chat de outro utilizador, incluindo em chats
+   de Eventos e de Comunidades, a aplicação mostra-lhe um aviso sobre estas
+   regras, e tem de o confirmar ("Compreendo") antes de o conteúdo ser
+   mostrado. Registamos a sua
    confirmação com a data e a hora e a versão destes Termos, como prova de
    que foi avisado (ver a Política de Privacidade, secções 10.5 e 14).
 e) O GreenGo utiliza medidas técnicas que dificultam a cópia (por exemplo, o
@@ -822,8 +898,9 @@ b) Ferramentas automatizadas, que não tomam decisões finais por si só:
      contém um rosto e uma análise para detetar nudez (Google ML Kit);
    - nos nossos servidores: análise automática de imagens para detetar nudez e
      violência (Google Cloud Vision SafeSearch), verificações de texto para
-     detetar spam, burlas e abusos, e comparação com material conhecido de
-     abuso sexual de crianças.
+     detetar spam, burlas e abusos, e comparação das imagens carregadas
+     (correspondência de hashes) com material conhecido de abuso sexual de
+     crianças.
    O Conteúdo sinalizado por ferramentas automatizadas pode ser retido até ser
    revisto.
 c) Revisão humana por pessoal do GreenGo com formação adequada. As denúncias
@@ -831,14 +908,15 @@ c) Revisão humana por pessoal do GreenGo com formação adequada. As denúncias
 
 17.2 Medidas que podemos tomar
 Consoante a gravidade do caso e o seu historial, podemos:
-- mostrar um aviso;
-- remover ou ocultar Conteúdo, ou limitar quem o pode ver;
-- desativar determinadas funcionalidades para si, por exemplo o envio de
-  mensagens, a publicação ou a organização de experiências;
+- remover ou ocultar Conteúdo;
+- dar-lhe um aviso;
 - suspender temporariamente a sua conta;
-- encerrar a sua conta;
-- reter recompensas obtidas de forma abusiva;
-- comunicar a questão às autoridades.
+- banir a sua conta definitivamente;
+- limitar a visibilidade do seu perfil ou do seu Conteúdo;
+- exigir que verifique a sua conta.
+
+Podemos também reter recompensas obtidas de forma abusiva e comunicar a
+questão às autoridades.
 
 Atuamos de forma atempada, diligente, objetiva e proporcionada, e respeitamos
 os direitos de todos os envolvidos, incluindo a liberdade de expressão.
@@ -874,28 +952,33 @@ Uma boa denúncia inclui:
 - Informamo-lo se foram utilizadas ferramentas automatizadas.
 
 18.3 Exposição de motivos
-Se tomarmos medidas contra o seu Conteúdo ou a sua conta, informamo-lo na
-aplicação ou por e-mail (RSD art. 17):
-- do que fizemos;
-- do Conteúdo em causa;
-- dos factos e da regra ou lei que foi violada;
+Se tomarmos medidas contra o seu Conteúdo ou a sua conta, enviamos-lhe uma
+notificação (exposição de motivos) na aplicação e por e-mail (RSD art. 17).
+Esta indica:
+- o que fizemos;
+- o Conteúdo em causa;
+- os factos e a regra ou lei que foi violada;
 - se foram utilizadas ferramentas automatizadas;
-- de como pode contestar a decisão.
+- como pode recorrer.
 
 Não enviamos esta notificação quando a lei o proíbe, por exemplo para proteger
 uma investigação de abuso sexual de crianças.
 
 18.4 Recursos (reclamações internas)
-a) Pode recorrer de qualquer uma destas decisões, na aplicação ou respondendo à
-   nossa notificação, no prazo de 6 meses a contar da decisão (RSD art. 20):
-   - remoção ou restrição do seu Conteúdo;
-   - suspensão ou encerramento da sua conta;
-   - restrição das suas funcionalidades ou recompensas;
-   - ausência de medidas relativamente a uma denúncia que apresentou.
-b) Os recursos são gratuitos. São analisados por uma pessoa que não tomou a
-   decisão original.
-c) Revertemos as decisões que se revelem erradas e informamo-lo do resultado e
-   dos motivos.
+a) Pode recorrer no prazo de 6 meses a contar da decisão, na aplicação ou
+   através da ligação no e-mail de notificação (RSD art. 20). A ligação
+   funciona mesmo que a sua conta esteja suspensa. Pode recorrer de:
+   - remoção ou ocultação do seu Conteúdo;
+   - um aviso;
+   - suspensão ou banimento da sua conta;
+   - limitação da visibilidade ou exigência de verificação;
+   - retenção de recompensas.
+b) Se denunciou um Conteúdo ou uma conta e decidimos não tomar medidas, pode
+   também recorrer dessa decisão.
+c) Os recursos são gratuitos. Decide outro revisor, que não tomou a decisão
+   original.
+d) Enviamos-lhe o resultado e os motivos. Revertemos as decisões que se
+   revelem erradas.
 
 18.5 Outras opções
 Se vive na UE, pode também submeter um litígio relativo à moderação a um
@@ -904,10 +987,13 @@ sempre recorrer a um tribunal ou a uma autoridade de defesa do consumidor
 (secção 26).
 
 18.6 Utilização abusiva
-- Se alguém publicar frequentemente Conteúdo manifestamente ilegal, suspendemos
-  a sua conta após um aviso.
-- Se alguém enviar frequentemente denúncias manifestamente infundadas, deixamos
-  de tratar as suas denúncias durante um período, após um aviso (RSD art. 23).
+- Infratores reincidentes: se alguém publicar frequentemente Conteúdo
+  manifestamente ilegal ou continuar a violar estes Termos, avisamo-lo
+  primeiro. Após 3 avisos no prazo de 12 meses, suspendemos a conta. Nos
+  casos graves, podemos atuar de imediato (secções 19 e 20.3).
+- Denúncias infundadas: se alguém enviar frequentemente denúncias
+  manifestamente infundadas, avisamo-lo. Se continuar, não tratamos as suas
+  denúncias durante 30 dias (RSD art. 23).
 
 18.7 Pontos de contacto (RSD arts. 11 e 12)
 - Para as autoridades dos Estados-Membros da UE, a Comissão Europeia e o
@@ -928,19 +1014,23 @@ qualquer forma de abuso ou exploração sexual de crianças, aliciamento de
 menores (grooming) ou Conteúdo que sexualize menores.
 
 19.2 O que fazemos
-a) Removemos esse Conteúdo e encerramos as contas envolvidas, imediatamente e
-   sem aviso prévio.
+a) Removemos esse Conteúdo. Nos casos confirmados de exploração sexual de
+   crianças, encerramos as contas envolvidas imediatamente e sem aviso
+   prévio.
 b) Denunciamos material aparente de abuso sexual de crianças ao National Center
-   for Missing & Exploited Children (NCMEC) dos EUA e às autoridades
-   competentes no Brasil, na UE e noutros países, tal como a lei exige.
+   for Missing & Exploited Children (NCMEC) dos EUA, às autoridades
+   competentes no Brasil e, na UE, através da linha de denúncia nacional ou
+   das autoridades policiais competentes, bem como noutros países quando a
+   lei o exija.
 c) Preservamos os dados relacionados para efeitos de aplicação da lei durante o
    período que a lei exige.
 d) Cooperamos com a polícia e com os tribunais.
 
 19.3 Denuncie suspeitas de menores ou preocupações relativas à segurança
-infantil na aplicação, que disponibiliza o motivo "Exploração sexual de
-crianças", ou através de safety@greengochat.com. As nossas normas de segurança
-infantil estão publicadas em https://greengochat.com/child-safety.
+infantil na aplicação, onde todos os ecrãs de denúncia disponibilizam o motivo
+"Exploração sexual de crianças", ou através de safety@greengochat.com. As
+nossas normas de segurança infantil estão publicadas em
+https://greengochat.com/child-safety.
 
 ================================================================================
 20. CESSAÇÃO DO CONTRATO
@@ -948,10 +1038,17 @@ infantil estão publicadas em https://greengochat.com/child-safety.
 
 20.1 Pode deixar de utilizar o GreenGo e eliminar a sua conta a qualquer
 momento:
-- na aplicação, em Perfil > Definições > Eliminar conta;
+- na aplicação, em Perfil > Eliminar Conta;
 - na web, em https://greengochat.com/delete-account.
 
-Lembre-se de cancelar qualquer subscrição da loja (secção 7.3).
+Quando elimina a sua conta:
+- uma Subscrição comprada na web é cancelada automaticamente;
+- uma Subscrição comprada na aplicação iOS ou Android não o é: cancele-a na
+  loja (secção 7.3);
+- as Moedas que restarem perdem-se. Avisamo-lo antes de confirmar;
+- conservamos alguns registos durante o tempo que a lei exige, por exemplo
+  registos de pagamentos e faturas, e denúncias de segurança. A Política de
+  Privacidade explica quais os registos e durante quanto tempo.
 
 20.2 Podemos suspender ou encerrar a sua conta se:
 a) violar estes Termos de forma grave ou reiterada;
@@ -1173,6 +1270,42 @@ Direitos de autor (DMCA): copyright@greengochat.com
 ================================================================================
 HISTÓRICO DE VERSÕES
 ================================================================================
+
+5.3.0 - em vigor a partir de 16 de outubro de 2026 para as contas criadas a
+partir dessa data; a partir de 16 de novembro de 2026 para as contas criadas
+antes de 16 de outubro de 2026 (anunciada a 16 de outubro de 2026)
+Alinhamento com a aplicação:
+- Secções 2, 3.4 e 13: uma Conta de empresa é a sua própria conta mudada para
+  o modo empresa.
+- Secção 5.1 g: removidas as lições de idiomas, os jogos, as ferramentas de
+  vocabulário e o treinador de IA; descritos os assistentes de IA no chat.
+- Secção 7.4: períodos experimentais introdutórios das lojas de aplicações;
+  lembretes do fim do período experimental enviados pela Stripe ou pela loja.
+- Secção 8.5: as ofertas de Moedas são entregues de imediato (removidos o
+  aceitar/recusar e a devolução ao fim de 7 dias).
+- Secções 9.4 d e 9.5 a: onde exercer a livre resolução na aplicação; direito
+  de arrependimento no Brasil para Subscrições e Moedas compradas na web.
+- Secções 11.6 c e 11.8 c: taxa do primeiro anúncio; Eventos não abertos a
+  reservas de visitantes.
+- Secções 12.2, 12.3, 12.5 e 4.4: reembolsos iniciados pelo GreenGo através
+  da conta do Anfitrião quando o Anfitrião cancela; documento de
+  identificação para todas as Experiências; reservas anteriores com o meio de
+  pagamento próprio do Anfitrião.
+- Secções 14 e 15.2: funcionalidades de IA, consentimento, limites e custos;
+  cache anónima de leitura em voz alta.
+- Secções 15.3, 16.9 d, 17.1, 17.2, 18, 19 e 20.1: caminhos na aplicação,
+  medidas de moderação, notificações e recursos por e-mail, infratores
+  reincidentes, denúncias infundadas, denúncias de segurança infantil e
+  eliminação da conta.
+Novas funcionalidades:
+- Secção 7.6: descontos de upgrade fixos, crédito pelo tempo não utilizado,
+  sem downgrades na web durante um período.
+- Secção 10.1: novas recompensas de referência e recompensas adicionais com
+  5, 10 e 20 amigos.
+- Secção 12.4: declaração de profissional em Centro de negócios > Definições,
+  dados de profissional apresentados nos anúncios.
+- Secção 13.7: o patrocínio de Comunidades e as promoções afixadas exigem
+  Platinum.
 
 5.2.1 - 16 de outubro de 2026
 - Secção 7.3 c: esclarecido onde cancelar na aplicação uma subscrição
