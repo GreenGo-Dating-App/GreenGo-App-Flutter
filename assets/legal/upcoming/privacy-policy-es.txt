@@ -3,7 +3,7 @@ POLÍTICA DE PRIVACIDAD DE GREENGO
 Versión: 5.3.0
 Fecha de entrada en vigor: 16 de noviembre de 2026
 Anunciada: 16 de octubre de 2026
-Versión anterior: 5.2.0 (15 de octubre de 2026), vigente hasta el 15 de noviembre de 2026
+Versión anterior: 5.2.1 (16 de octubre de 2026), vigente hasta el 15 de noviembre de 2026
 
 ================================================================================
 1. QUIÉNES SOMOS Y CÓMO CONTACTARNOS
@@ -76,9 +76,10 @@ visitantes (sección 11.7). Esta política también se aplica a ellas.
   si lo permites) y lo que ocurre cuando usas GreenGo (por ejemplo compras y
   denuncias).
 - Otros usuarios ven tu perfil público: tus fotos, tu nombre o apodo, tu edad
-  y una ubicación APROXIMADA con una precisión de solo unos 1,5 km. Nunca ven
-  tu ubicación exacta, tu fecha de nacimiento, tu número de teléfono ni tu
-  dirección de correo electrónico.
+  y una ubicación APROXIMADA con una precisión de solo unos 1,5 km. Si eliges
+  «Exacta» en Visibilidad en el globo, ven en su lugar un punto a unos 100 m
+  como máximo de tu posición. Nunca ven tus coordenadas exactas, tu fecha de
+  nacimiento, tu número de teléfono ni tu dirección de correo electrónico.
 - NO vendemos tus datos personales. NO los usamos para publicidad de terceros.
   En GreenGo no hay anuncios.
 - Tus mensajes están cifrados en tránsito y en reposo, pero NO están cifrados
@@ -254,7 +255,9 @@ rellenas.
 - Tu EDAD en años, no tu fecha de nacimiento.
 - Tu ubicación APROXIMADA: tu ciudad y tu país, y un punto en el mapa que se
   encuentra a unos 1,5 km de tu posición real. El punto no se mueve hasta que
-  te trasladas a otra zona.
+  te trasladas a otra zona. Si eliges «Exacta» en Visibilidad en el globo, el
+  punto se encuentra en su lugar a unos 100 m como máximo de tu posición, y
+  las distancias hasta ti se muestran redondeadas a los 100 m más cercanos.
 - Insignias: verificado, nivel de membresía, guía local, viajero, empresa.
 - Si estás en línea, salvo que lo ocultes con el modo fantasma o el modo
   incógnito.
@@ -265,7 +268,7 @@ Las personas que has bloqueado no pueden ver tu perfil.
 
 4.2 Nunca se muestra a otros usuarios
 
-Tu ubicación exacta, fecha de nacimiento, dirección de correo electrónico,
+Tus coordenadas exactas, fecha de nacimiento, dirección de correo electrónico,
 número de teléfono, documento de identidad, selfi de verificación y fotos del
 álbum privado (salvo que concedas a alguien acceso a tu álbum privado).
 
@@ -440,10 +443,18 @@ y para encontrar personas, eventos y experiencias cerca de ti.
 
 7.3 Qué ven los demás
 
-Otros usuarios solo ven tu ciudad y tu país, y un punto aproximado que se
-encuentra a unos 1,5 km de tu posición real. Las distancias que se muestran a
-los demás se basan en datos aproximados. Tu ubicación exacta nunca se muestra
-a otros usuarios.
+De forma predeterminada, otros usuarios solo ven tu ciudad y tu país, y un
+punto aproximado que se encuentra a unos 1,5 km de tu posición real. Las
+distancias que se muestran a los demás se basan en datos aproximados.
+
+Si configuras Visibilidad en el globo en «Exacta», otros usuarios ven un punto
+a unos 100 m como máximo de tu posición, y las distancias hasta ti redondeadas
+a los 100 m más cercanos. El punto es tu última ubicación guardada y se
+actualiza cuando te trasladas a otra zona (más de 1 km aproximadamente).
+Puedes desactivarlo en cualquier momento en Ajustes eligiendo otra opción; el
+punto se elimina entonces de inmediato.
+
+Tus coordenadas exactas nunca se muestran a otros usuarios.
 
 7.4 Quién más la recibe
 
@@ -1473,6 +1484,11 @@ de 2026)
   traduce con Google Cloud Translation a través de una caché compartida sin
   datos personales (9.1, 9.2); rutas en la app para eliminar la cuenta y para
   los ajustes de privacidad (15.1, 16.2, 16.5, 17.2).
+
+5.2.1 - 16 de octubre de 2026
+- Visibilidad en el globo «Exacta»: otros usuarios ven un punto a unos 100 m
+  como máximo de tu posición y las distancias redondeadas a los 100 m más
+  cercanos (secciones 2, 4.1, 4.2 y 7.3).
 
 5.2.0 - 15 de octubre de 2026
 - Las entradas y reservas de pago solo se pagan a través del pago dentro de

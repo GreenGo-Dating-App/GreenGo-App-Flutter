@@ -1,8 +1,8 @@
 GREENGO PRIVACY POLICY
 
-Version: 5.2.0
-Effective date: 15 October 2026
-Previous version: 5.1.0 (11 October 2026)
+Version: 5.2.1
+Effective date: 16 October 2026
+Previous version: 5.2.0 (15 October 2026)
 
 ================================================================================
 1. WHO WE ARE AND HOW TO REACH US
@@ -72,9 +72,10 @@ applies to them too.
   your device tells us (for example your location, if you allow it) and what
   happens when you use GreenGo (for example purchases and reports).
 - Other users see your public profile: your photos, your name or nickname, your
-  age and an APPROXIMATE location that is accurate only to about 1.5 km. They
-  never see your exact location, date of birth, phone number or email
-  address.
+  age and an APPROXIMATE location that is accurate only to about 1.5 km. If
+  you choose "Exact" in Globe Discoverability, they see a point within about
+  100 m of your position instead. They never see your exact coordinates, date
+  of birth, phone number or email address.
 - We do NOT sell your personal data. We do NOT use it for third-party
   advertising. There are no ads in GreenGo.
 - Your messages are encrypted in transit and at rest, but they are NOT
@@ -229,7 +230,9 @@ decide whether to fill it in.
 - Your AGE in years, not your date of birth.
 - Your APPROXIMATE location: your city and country, and a point on the map
   that is within about 1.5 km of your real position. The point does not move
-  until you move to a different area.
+  until you move to a different area. If you choose "Exact" in Globe
+  Discoverability, the point is within about 100 m of your position instead,
+  and distances to you are shown to the nearest 100 m.
 - Badges: verified, membership tier, local guide, traveller, business.
 - Whether you are online, unless you hide it with ghost or incognito mode.
 - Your ratings as a host or guest, and the reviews others leave about you.
@@ -238,7 +241,7 @@ People you have blocked cannot see your profile.
 
 4.2 Never shown to other users
 
-Your exact location, date of birth, email address, phone number, identity
+Your exact coordinates, date of birth, email address, phone number, identity
 document, verification selfie and private-album photos (unless
 you grant someone access to your private album).
 
@@ -380,9 +383,17 @@ people, events and experiences near you.
 
 7.3 What others see
 
-Other users see only your city and country, and an approximate point that is
-within about 1.5 km of your real position. Distances shown to others are based
-on approximate data. Your exact location is never shown to other users.
+By default, other users see only your city and country, and an approximate
+point that is within about 1.5 km of your real position. Distances shown to
+others are based on approximate data.
+
+If you set Globe Discoverability to "Exact", other users see a point within
+about 100 m of your position, and distances to you rounded to the nearest
+100 m. The point is your last saved location and is updated when you move to
+a different area (more than about 1 km). You can switch this off at any time
+in Settings by choosing another option; the point is then removed at once.
+
+Your exact coordinates are never shown to other users.
 
 7.4 Who else receives it
 
@@ -1248,6 +1259,11 @@ EU and UK representatives: being appointed (see section 1.3)
 ================================================================================
 VERSION HISTORY
 ================================================================================
+
+5.2.1 - 16 October 2026
+- Globe Discoverability "Exact": other users see a point within about 100 m of
+  your position and distances to the nearest 100 m (sections 2, 4.1, 4.2 and
+  7.3).
 
 5.2.0 - 15 October 2026
 - Paid tickets and bookings only through the in-app checkout to the

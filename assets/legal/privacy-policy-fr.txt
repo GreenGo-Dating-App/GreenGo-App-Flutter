@@ -1,8 +1,8 @@
 POLITIQUE DE CONFIDENTIALITÉ DE GREENGO
 
-Version : 5.2.0
-Date d'entrée en vigueur : 15 octobre 2026
-Version précédente : 5.1.0 (11 octobre 2026)
+Version : 5.2.1
+Date d'entrée en vigueur : 16 octobre 2026
+Version précédente : 5.2.0 (15 octobre 2026)
 
 ================================================================================
 1. QUI NOUS SOMMES ET COMMENT NOUS CONTACTER
@@ -80,7 +80,9 @@ que visiteurs (point 11.7). La présente politique s'applique aussi à elles.
   utilisez GreenGo (par exemple les achats et les signalements).
 - Les autres utilisateurs voient votre profil public : vos photos, votre nom ou
   pseudonyme, votre âge et une localisation APPROXIMATIVE, précise seulement à
-  environ 1,5 km. Ils ne voient jamais votre localisation exacte, votre date de
+  environ 1,5 km. Si vous choisissez « Exacte » dans Visibilité sur le globe,
+  ils voient à la place un point situé à environ 100 m au plus de votre
+  position. Ils ne voient jamais vos coordonnées exactes, votre date de
   naissance, votre numéro de téléphone ni votre adresse e-mail.
 - Nous ne VENDONS PAS vos données personnelles. Nous ne les utilisons PAS pour
   de la publicité de tiers. Il n'y a aucune publicité dans GreenGo.
@@ -249,7 +251,10 @@ Vous décidez de le remplir ou non.
 - Votre ÂGE en années, et non votre date de naissance.
 - Votre localisation APPROXIMATIVE : votre ville et votre pays, ainsi qu'un
   point sur la carte situé à environ 1,5 km de votre position réelle. Ce point
-  ne bouge pas tant que vous ne changez pas de zone.
+  ne bouge pas tant que vous ne changez pas de zone. Si vous choisissez
+  « Exacte » dans Visibilité sur le globe, le point est situé à la place à
+  environ 100 m au plus de votre position, et les distances jusqu'à vous sont
+  affichées à 100 m près.
 - Badges : vérifié, niveau d'abonnement, guide local, voyageur, entreprise.
 - Le fait que vous soyez en ligne, sauf si vous le masquez avec le mode
   fantôme ou incognito.
@@ -260,7 +265,7 @@ Les personnes que vous avez bloquées ne peuvent pas voir votre profil.
 
 4.2 Jamais montré aux autres utilisateurs
 
-Votre localisation exacte, votre date de naissance, votre adresse e-mail,
+Vos coordonnées exactes, votre date de naissance, votre adresse e-mail,
 votre numéro de téléphone, votre pièce d'identité, votre
 selfie de vérification et les photos de votre album privé (sauf si vous
 accordez à quelqu'un l'accès à votre album privé).
@@ -420,11 +425,20 @@ expériences près de chez vous.
 
 7.3 Ce que les autres voient
 
-Les autres utilisateurs ne voient que votre ville et votre pays, ainsi qu'un
-point approximatif situé à environ 1,5 km de votre position réelle. Les
-distances affichées aux autres sont calculées à partir de données
-approximatives. Votre localisation exacte n'est jamais montrée aux autres
-utilisateurs.
+Par défaut, les autres utilisateurs ne voient que votre ville et votre pays,
+ainsi qu'un point approximatif situé à environ 1,5 km de votre position
+réelle. Les distances affichées aux autres sont calculées à partir de données
+approximatives.
+
+Si vous réglez Visibilité sur le globe sur « Exacte », les autres utilisateurs
+voient un point situé à environ 100 m au plus de votre position, et les
+distances jusqu'à vous arrondies à 100 m près. Le point correspond à votre
+dernière position enregistrée et est mis à jour lorsque vous changez de zone
+(plus d'environ 1 km). Vous pouvez désactiver cette option à tout moment dans
+les Paramètres en choisissant une autre option ; le point est alors supprimé
+immédiatement.
+
+Vos coordonnées exactes ne sont jamais montrées aux autres utilisateurs.
 
 7.4 Qui d'autre la reçoit
 
@@ -1424,6 +1438,11 @@ point 1.3)
 ================================================================================
 HISTORIQUE DES VERSIONS
 ================================================================================
+
+5.2.1 - 16 octobre 2026
+- Visibilité sur le globe « Exacte » : les autres utilisateurs voient un point
+  situé à environ 100 m au plus de votre position et les distances à 100 m
+  près (sections 2, 4.1, 4.2 et 7.3).
 
 5.2.0 - 15 octobre 2026
 - Les billets et réservations payants se paient uniquement via le paiement

@@ -3,7 +3,7 @@ DATENSCHUTZERKLÄRUNG VON GREENGO
 Version: 5.3.0
 Gültig ab: 16. November 2026
 Angekündigt am: 16. Oktober 2026
-Vorherige Version: 5.2.0 (15. Oktober 2026), gültig bis 15. November 2026
+Vorherige Version: 5.2.1 (16. Oktober 2026), gültig bis 15. November 2026
 
 ================================================================================
 1. WER WIR SIND UND WIE DU UNS ERREICHST
@@ -77,8 +77,10 @@ Diese Erklärung gilt auch für sie.
   und Meldungen).
 - Andere Nutzer sehen dein öffentliches Profil: deine Fotos, deinen Namen oder
   Spitznamen, dein Alter und einen UNGEFÄHREN Standort, der nur auf etwa 1,5 km
-  genau ist. Sie sehen niemals deinen genauen Standort, dein Geburtsdatum, deine
-  Telefonnummer oder deine E-Mail-Adresse.
+  genau ist. Wenn du in der Globus-Sichtbarkeit „Genau“ wählst, sehen sie
+  stattdessen einen Punkt, der höchstens etwa 100 m von deiner Position
+  entfernt ist. Sie sehen niemals deine genauen Koordinaten, dein
+  Geburtsdatum, deine Telefonnummer oder deine E-Mail-Adresse.
 - Wir verkaufen deine personenbezogenen Daten NICHT. Wir verwenden sie NICHT für
   Werbung Dritter. In GreenGo gibt es keine Werbung.
 - Deine Nachrichten werden bei der Übertragung und im Ruhezustand verschlüsselt,
@@ -253,6 +255,9 @@ kulturellen Hintergrund. Du entscheidest, ob du es ausfüllst.
 - Dein UNGEFÄHRER Standort: deine Stadt und dein Land sowie ein Punkt auf der
   Karte, der höchstens etwa 1,5 km von deiner tatsächlichen Position entfernt
   ist. Der Punkt bewegt sich erst, wenn du in ein anderes Gebiet wechselst.
+  Wenn du in der Globus-Sichtbarkeit „Genau“ wählst, ist der Punkt stattdessen
+  höchstens etwa 100 m von deiner Position entfernt, und Entfernungen zu dir
+  werden auf 100 m gerundet angezeigt.
 - Abzeichen: verifiziert, Mitgliedschaftsstufe, Local Guide, Reisender,
   Unternehmen.
 - Ob du online bist, außer du verbirgst es mit dem Geister- oder
@@ -264,7 +269,7 @@ Personen, die du blockiert hast, können dein Profil nicht sehen.
 
 4.2 Wird anderen Nutzern nie angezeigt
 
-Dein genauer Standort, dein Geburtsdatum, deine E-Mail-Adresse, deine
+Deine genauen Koordinaten, dein Geburtsdatum, deine E-Mail-Adresse, deine
 Telefonnummer, dein Ausweisdokument, dein
 Verifizierungs-Selfie und die Fotos in deinem privaten Album (es sei denn, du
 gewährst jemandem Zugriff auf dein privates Album).
@@ -450,10 +455,19 @@ finden.
 
 7.3 Was andere sehen
 
-Andere Nutzer sehen nur deine Stadt und dein Land sowie einen ungefähren Punkt,
-der höchstens etwa 1,5 km von deiner tatsächlichen Position entfernt ist.
-Anderen angezeigte Entfernungen beruhen auf ungefähren Daten. Dein genauer
-Standort wird anderen Nutzern nie angezeigt.
+Standardmäßig sehen andere Nutzer nur deine Stadt und dein Land sowie einen
+ungefähren Punkt, der höchstens etwa 1,5 km von deiner tatsächlichen Position
+entfernt ist. Anderen angezeigte Entfernungen beruhen auf ungefähren Daten.
+
+Wenn du die Globus-Sichtbarkeit auf „Genau“ stellst, sehen andere Nutzer einen
+Punkt, der höchstens etwa 100 m von deiner Position entfernt ist, und
+Entfernungen zu dir auf 100 m gerundet. Der Punkt ist dein zuletzt
+gespeicherter Standort und wird aktualisiert, wenn du in ein anderes Gebiet
+wechselst (mehr als etwa 1 km). Du kannst das jederzeit in den Einstellungen
+ausschalten, indem du eine andere Option wählst; der Punkt wird dann sofort
+entfernt.
+
+Deine genauen Koordinaten werden anderen Nutzern nie angezeigt.
 
 7.4 Wer ihn sonst erhält
 
@@ -1474,6 +1488,11 @@ VERSIONSVERLAUF
   gemeinsamen Cache ohne personenbezogene Daten übersetzt (9.1, 9.2);
   In-App-Pfade für die Kontolöschung und die Datenschutzeinstellungen (15.1,
   16.2, 16.5, 17.2).
+
+5.2.1 - 16. Oktober 2026
+- Globus-Sichtbarkeit „Genau“: Andere Nutzer sehen einen Punkt, der höchstens
+  etwa 100 m von deiner Position entfernt ist, und Entfernungen auf 100 m
+  gerundet (Abschnitte 2, 4.1, 4.2 und 7.3).
 
 5.2.0 - 15. Oktober 2026
 - Kostenpflichtige Tickets und Buchungen nur noch über den Checkout in der App

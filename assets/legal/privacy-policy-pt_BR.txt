@@ -1,8 +1,8 @@
 POLÍTICA DE PRIVACIDADE DO GREENGO
 
-Versão: 5.2.0
-Data de vigência: 15 de outubro de 2026
-Versão anterior: 5.1.0 (11 de outubro de 2026)
+Versão: 5.2.1
+Data de vigência: 16 de outubro de 2026
+Versão anterior: 5.2.0 (15 de outubro de 2026)
 
 ================================================================================
 1. QUEM SOMOS E COMO FALAR CONOSCO
@@ -75,8 +75,10 @@ reserva de uma experiência, como visitantes, a partir de um link compartilhado
   (por exemplo, compras e denúncias).
 - Outros usuários veem o seu perfil público: suas fotos, seu nome ou apelido,
   sua idade e uma localização APROXIMADA, com precisão de apenas cerca de
-  1,5 km. Eles nunca veem a sua localização exata, data de nascimento,
-  número de telefone ou endereço de e-mail.
+  1,5 km. Se você escolher "Exata" em Visibilidade no Globo, eles veem, em vez
+  disso, um ponto a no máximo cerca de 100 m da sua posição. Eles nunca veem
+  as suas coordenadas exatas, data de nascimento, número de telefone ou
+  endereço de e-mail.
 - NÃO vendemos os seus dados pessoais. NÃO os usamos para publicidade de
   terceiros. Não há anúncios no GreenGo.
 - As suas mensagens são criptografadas em trânsito e em repouso, mas NÃO têm
@@ -239,7 +241,10 @@ quer preenchê-lo.
 - A sua IDADE em anos, e não a sua data de nascimento.
 - A sua localização APROXIMADA: a sua cidade e país, e um ponto no mapa que
   fica a cerca de 1,5 km da sua posição real. O ponto não se move até que você
-  se mude para outra área.
+  se mude para outra área. Se você escolher "Exata" em Visibilidade no Globo,
+  o ponto fica, em vez disso, a no máximo cerca de 100 m da sua posição, e as
+  distâncias até você são mostradas arredondadas para os 100 m mais
+  próximos.
 - Selos: verificado, nível de assinatura, guia local, viajante, empresa.
 - Se você está online, a menos que oculte isso com o modo fantasma ou o modo
   anônimo.
@@ -250,7 +255,7 @@ As pessoas que você bloqueou não podem ver o seu perfil.
 
 4.2 Nunca mostrado a outros usuários
 
-A sua localização exata, data de nascimento, endereço de e-mail, número de
+As suas coordenadas exatas, data de nascimento, endereço de e-mail, número de
 telefone, documento de identidade, selfie de verificação e as fotos do álbum
 privado (a menos que você dê acesso ao seu álbum privado a alguém).
 
@@ -406,10 +411,18 @@ distâncias e para encontrar pessoas, eventos e experiências perto de você.
 
 7.3 O que os outros veem
 
-Outros usuários veem apenas a sua cidade e o seu país, e um ponto aproximado
-que fica a cerca de 1,5 km da sua posição real. As distâncias mostradas aos
-outros são baseadas em dados aproximados. A sua localização exata nunca é
-mostrada a outros usuários.
+Por padrão, outros usuários veem apenas a sua cidade e o seu país, e um ponto
+aproximado que fica a cerca de 1,5 km da sua posição real. As distâncias
+mostradas aos outros são baseadas em dados aproximados.
+
+Se você definir Visibilidade no Globo como "Exata", outros usuários veem um
+ponto a no máximo cerca de 100 m da sua posição, e as distâncias até você
+arredondadas para os 100 m mais próximos. O ponto é a sua última localização
+salva e é atualizado quando você se muda para outra área (mais de cerca de
+1 km). Você pode desativar isso a qualquer momento em Configurações,
+escolhendo outra opção; o ponto é então removido imediatamente.
+
+As suas coordenadas exatas nunca são mostradas a outros usuários.
 
 7.4 Quem mais a recebe
 
@@ -1349,6 +1362,11 @@ Representantes na UE e no Reino Unido: em processo de nomeação (veja o item
 ================================================================================
 HISTÓRICO DE VERSÕES
 ================================================================================
+
+5.2.1 - 16 de outubro de 2026
+- Visibilidade no Globo "Exata": outros usuários veem um ponto a no máximo
+  cerca de 100 m da sua posição e as distâncias arredondadas para os 100 m
+  mais próximos (seções 2, 4.1, 4.2 e 7.3).
 
 5.2.0 - 15 de outubro de 2026
 - Ingressos e reservas pagos somente pelo checkout do aplicativo, na própria

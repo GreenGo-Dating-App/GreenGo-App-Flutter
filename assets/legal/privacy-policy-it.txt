@@ -1,8 +1,8 @@
 INFORMATIVA SULLA PRIVACY DI GREENGO
 
-Versione: 5.2.0
-Data di entrata in vigore: 15 ottobre 2026
-Versione precedente: 5.1.0 (11 ottobre 2026)
+Versione: 5.2.1
+Data di entrata in vigore: 16 ottobre 2026
+Versione precedente: 5.2.0 (15 ottobre 2026)
 
 ================================================================================
 1. CHI SIAMO E COME CONTATTARCI
@@ -77,8 +77,10 @@ richiesta di prenotazione per un'esperienza, da un link condiviso come ospiti
   segnalazioni).
 - Gli altri utenti vedono il tuo profilo pubblico: le tue foto, il tuo nome o
   nickname, la tua età e una posizione APPROSSIMATIVA, precisa solo entro circa
-  1,5 km. Non vedono mai la tua posizione esatta, la tua data di nascita, il
-  tuo numero di telefono o il tuo indirizzo e-mail.
+  1,5 km. Se scegli "Esatta" in Individuabilità sul globo, vedono invece un
+  punto entro circa 100 m dalla tua posizione. Non vedono mai le tue
+  coordinate esatte, la tua data di nascita, il tuo numero di telefono o il
+  tuo indirizzo e-mail.
 - NON vendiamo i tuoi dati personali. NON li usiamo per la pubblicità di
   terzi. In GreenGo non c'è pubblicità.
 - I tuoi messaggi sono cifrati durante la trasmissione e quando sono
@@ -245,7 +247,10 @@ pubblico)
 - La tua ETÀ in anni, non la tua data di nascita.
 - La tua posizione APPROSSIMATIVA: la tua città e il tuo paese, e un punto
   sulla mappa che si trova entro circa 1,5 km dalla tua posizione reale. Il
-  punto non si sposta finché non ti trasferisci in un'altra zona.
+  punto non si sposta finché non ti trasferisci in un'altra zona. Se scegli
+  "Esatta" in Individuabilità sul globo, il punto si trova invece entro circa
+  100 m dalla tua posizione, e le distanze da te sono mostrate arrotondate ai
+  100 m più vicini.
 - Badge: verificato, livello di abbonamento, guida locale, viaggiatore,
   attività commerciale.
 - Se sei online, a meno che tu non lo nasconda con la modalità fantasma o in
@@ -257,7 +262,7 @@ Le persone che hai bloccato non possono vedere il tuo profilo.
 
 4.2 Mai mostrato agli altri utenti
 
-La tua posizione esatta, la data di nascita, l'indirizzo e-mail, il numero di
+Le tue coordinate esatte, la data di nascita, l'indirizzo e-mail, il numero di
 telefono, il documento d'identità, il selfie di verifica e le foto dell'album
 privato (a meno che tu non conceda a qualcuno l'accesso al tuo album privato).
 
@@ -409,10 +414,19 @@ distanze e per trovare persone, eventi ed esperienze vicino a te.
 
 7.3 Che cosa vedono gli altri
 
-Gli altri utenti vedono solo la tua città e il tuo paese, e un punto
-approssimativo che si trova entro circa 1,5 km dalla tua posizione reale. Le
-distanze mostrate agli altri si basano su dati approssimativi. La tua posizione
-esatta non viene mai mostrata agli altri utenti.
+Per impostazione predefinita, gli altri utenti vedono solo la tua città e il
+tuo paese, e un punto approssimativo che si trova entro circa 1,5 km dalla tua
+posizione reale. Le distanze mostrate agli altri si basano su dati
+approssimativi.
+
+Se imposti Individuabilità sul globo su "Esatta", gli altri utenti vedono un
+punto entro circa 100 m dalla tua posizione, e le distanze da te arrotondate
+ai 100 m più vicini. Il punto è la tua ultima posizione salvata e viene
+aggiornato quando ti sposti in un'altra zona (oltre circa 1 km). Puoi
+disattivare questa opzione in qualsiasi momento nelle Impostazioni scegliendo
+un'altra opzione; il punto viene quindi rimosso subito.
+
+Le tue coordinate esatte non vengono mai mostrate agli altri utenti.
 
 7.4 Chi altro la riceve
 
@@ -1369,6 +1383,11 @@ Rappresentanti nell'UE e nel Regno Unito: in corso di nomina
 ================================================================================
 CRONOLOGIA DELLE VERSIONI
 ================================================================================
+
+5.2.1 - 16 ottobre 2026
+- Individuabilità sul globo "Esatta": gli altri utenti vedono un punto entro
+  circa 100 m dalla tua posizione e le distanze arrotondate ai 100 m più
+  vicini (sezioni 2, 4.1, 4.2 e 7.3).
 
 5.2.0 - 15 ottobre 2026
 - Biglietti e prenotazioni a pagamento solo tramite il checkout nell'app,

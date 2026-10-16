@@ -1,8 +1,8 @@
 POLÍTICA DE PRIVACIDADE DO GREENGO
 
-Versão: 5.2.0
-Data de entrada em vigor: 15 de outubro de 2026
-Versão anterior: 5.1.0 (11 de outubro de 2026)
+Versão: 5.2.1
+Data de entrada em vigor: 16 de outubro de 2026
+Versão anterior: 5.2.0 (15 de outubro de 2026)
 
 ================================================================================
 1. QUEM SOMOS E COMO NOS CONTACTAR
@@ -79,8 +79,10 @@ partilhada (secção 11.7). Esta política também se aplica a essas pessoas.
   exemplo, compras e denúncias).
 - Os outros utilizadores veem o seu perfil público: as suas fotos, o seu nome ou
   pseudónimo, a sua idade e uma localização APROXIMADA, com uma precisão de
-  apenas cerca de 1,5 km. Nunca veem a sua localização exata, a sua data de
-  nascimento, o seu número de telemóvel nem o seu endereço de e-mail.
+  apenas cerca de 1,5 km. Se escolher "Exata" em Visibilidade no Globo, veem
+  em vez disso um ponto a cerca de 100 m, no máximo, da sua posição. Nunca
+  veem as suas coordenadas exatas, a sua data de nascimento, o seu número de
+  telemóvel nem o seu endereço de e-mail.
 - NÃO vendemos os seus dados pessoais. NÃO os utilizamos para publicidade de
   terceiros. Não há anúncios no GreenGo.
 - As suas mensagens são encriptadas em trânsito e em repouso, mas NÃO são
@@ -250,7 +252,10 @@ público)
 - A sua IDADE em anos, e não a sua data de nascimento.
 - A sua localização APROXIMADA: a sua cidade e país, e um ponto no mapa que se
   situa a cerca de 1,5 km da sua posição real. O ponto não se move até que se
-  desloque para uma zona diferente.
+  desloque para uma zona diferente. Se escolher "Exata" em Visibilidade no
+  Globo, o ponto situa-se em vez disso a cerca de 100 m, no máximo, da sua
+  posição, e as distâncias até si são mostradas arredondadas aos 100 m mais
+  próximos.
 - Distintivos: verificado, nível de Subscrição, guia local, viajante, empresa.
 - Se está online, a menos que o oculte com o modo fantasma ou incógnito.
 - As suas classificações como anfitrião ou convidado, e as avaliações que
@@ -260,7 +265,7 @@ As pessoas que bloqueou não podem ver o seu perfil.
 
 4.2 Nunca mostrado a outros utilizadores
 
-A sua localização exata, data de nascimento, endereço de e-mail, número de
+As suas coordenadas exatas, data de nascimento, endereço de e-mail, número de
 telemóvel, documento de identificação, selfie de verificação e fotos do álbum
 privado (a menos que conceda a alguém acesso ao seu álbum privado).
 
@@ -412,10 +417,18 @@ distâncias e para encontrar pessoas, eventos e experiências perto de si.
 
 7.3 O que os outros veem
 
-Os outros utilizadores veem apenas a sua cidade e país, e um ponto aproximado
-que se situa a cerca de 1,5 km da sua posição real. As distâncias mostradas aos
-outros baseiam-se em dados aproximados. A sua localização exata nunca é mostrada
-a outros utilizadores.
+Por predefinição, os outros utilizadores veem apenas a sua cidade e país, e um
+ponto aproximado que se situa a cerca de 1,5 km da sua posição real. As
+distâncias mostradas aos outros baseiam-se em dados aproximados.
+
+Se definir Visibilidade no Globo como "Exata", os outros utilizadores veem um
+ponto a cerca de 100 m, no máximo, da sua posição, e as distâncias até si
+arredondadas aos 100 m mais próximos. O ponto é a sua última localização
+guardada e é atualizado quando se desloca para uma zona diferente (mais de
+cerca de 1 km). Pode desativar esta opção a qualquer momento nas Definições,
+escolhendo outra opção; o ponto é então removido de imediato.
+
+As suas coordenadas exatas nunca são mostradas a outros utilizadores.
 
 7.4 Quem mais a recebe
 
@@ -1365,6 +1378,11 @@ Representantes na UE e no Reino Unido: em processo de designação (ver secção
 ================================================================================
 HISTÓRICO DE VERSÕES
 ================================================================================
+
+5.2.1 - 16 de outubro de 2026
+- Visibilidade no Globo "Exata": os outros utilizadores veem um ponto a cerca
+  de 100 m, no máximo, da sua posição e as distâncias arredondadas aos 100 m
+  mais próximos (secções 2, 4.1, 4.2 e 7.3).
 
 5.2.0 - 15 de outubro de 2026
 - Bilhetes e reservas pagos apenas através do checkout da aplicação, para a
