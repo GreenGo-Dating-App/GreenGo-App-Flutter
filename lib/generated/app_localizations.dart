@@ -42345,19 +42345,19 @@ abstract class AppLocalizations {
   /// Ticket payments: GreenGo service fee / payment links discontinued
   ///
   /// In en, this message translates to:
-  /// **'Silver: US\$3 + 10% per ticket (max US\$10)'**
+  /// **'Silver: US\$3 + 10% per ticket (max US\$30)'**
   String get tpFeeRuleSilver;
 
   /// Ticket payments: GreenGo service fee / payment links discontinued
   ///
   /// In en, this message translates to:
-  /// **'Gold: US\$2 + 10% per ticket (max US\$9)'**
+  /// **'Gold: US\$2 + 10% per ticket (max US\$28)'**
   String get tpFeeRuleGold;
 
   /// Ticket payments: GreenGo service fee / payment links discontinued
   ///
   /// In en, this message translates to:
-  /// **'Platinum: US\$1 + 10% per ticket (max US\$8)'**
+  /// **'Platinum: US\$1 + 10% per ticket (max US\$25)'**
   String get tpFeeRulePlatinum;
 
   /// Ticket payments: GreenGo service fee / payment links discontinued
@@ -42438,7 +42438,7 @@ abstract class AppLocalizations {
   /// **'Ticket service fee (paid by the seller)'**
   String get shopTicketFeeRow;
 
-  /// Ticket fee value on a membership card, e.g. US$3 + 10% (max US$10).
+  /// Ticket fee value on a membership card, e.g. US$3 + 10% (max US$30).
   ///
   /// In en, this message translates to:
   /// **'US\${fixed} + {percent}% (max US\${cap})'**
@@ -43961,6 +43961,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Traders selling Experiences to people in the EU must give their trader details'**
   String get legalUpdate530BulletTraders;
+
+  /// Terms 5.3.1 "what changes" bullet: higher GreenGo service fee caps per ticket (re-acceptance sheet and advance notice).
+  ///
+  /// In en, this message translates to:
+  /// **'Higher maximum GreenGo service fee per ticket for sellers: Silver US\$30, Gold US\$28, Platinum US\$25'**
+  String get legalUpdate531BulletFeeCaps;
 
   /// Third option of the Terms re-acceptance sheet (Terms 24.2 c).
   ///

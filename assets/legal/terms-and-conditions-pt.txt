@@ -1,6 +1,6 @@
 TERMOS E CONDIÇÕES DO GREENGO
 
-Versão: 5.3.0
+Versão: 5.3.1
 Data de entrada em vigor: 16 de outubro de 2026 para as contas criadas a partir
   dessa data; 16 de novembro de 2026 para as contas criadas antes de
   16 de outubro de 2026
@@ -487,9 +487,9 @@ a) O GreenGo cobra uma taxa de serviço sobre cada bilhete pago de um Evento e
    preço do bilhete quando o comprador paga, pelo que o vendedor recebe o
    preço do bilhete menos a taxa.
 b) A taxa por bilhete depende da Subscrição do vendedor no momento da venda:
-   - Silver: 3 USD + 10% do preço do bilhete, no máximo 10 USD;
-   - Gold: 2 USD + 10% do preço do bilhete, no máximo 9 USD;
-   - Platinum: 1 USD + 10% do preço do bilhete, no máximo 8 USD.
+   - Silver: 3 USD + 10% do preço do bilhete, no máximo 30 USD;
+   - Gold: 2 USD + 10% do preço do bilhete, no máximo 28 USD;
+   - Platinum: 1 USD + 10% do preço do bilhete, no máximo 25 USD.
 c) Primeiro anúncio pago: se ainda não vendeu bilhetes pagos no GreenGo, a
    taxa é fixa, de 1 USD por bilhete, para o primeiro anúncio (Evento ou
    Experiência) em que um comprador abra um checkout pago, para esse anúncio.
@@ -1270,6 +1270,12 @@ Direitos de autor (DMCA): copyright@greengochat.com
 ================================================================================
 HISTÓRICO DE VERSÕES
 ================================================================================
+
+5.3.1 - em vigor a partir de 16 de outubro de 2026 para as contas criadas a
+partir dessa data; a partir de 16 de novembro de 2026 para as contas criadas
+antes de 16 de outubro de 2026 (anunciada a 16 de outubro de 2026)
+- Secção 11.6 b: limites máximos da taxa de serviço do GreenGo por bilhete:
+  Silver 30 USD, Gold 28 USD, Platinum 25 USD.
 
 5.3.0 - em vigor a partir de 16 de outubro de 2026 para as contas criadas a
 partir dessa data; a partir de 16 de novembro de 2026 para as contas criadas

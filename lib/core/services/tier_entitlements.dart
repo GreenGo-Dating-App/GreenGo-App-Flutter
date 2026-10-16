@@ -224,7 +224,7 @@ class TierEntitlements {
     }
   }
 
-  /// "US$3 + 10% (max US$10)", or the [short] "US$3 + 10%" for narrow
+  /// "US$3 + 10% (max US$30)", or the [short] "US$3 + 10%" for narrow
   /// cells. Null when the tier cannot sell.
   static String? ticketFeeLabel(AppLocalizations l10n, MembershipTier tier,
       {bool short = false}) {

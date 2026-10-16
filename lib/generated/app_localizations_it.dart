@@ -24967,14 +24967,14 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get tpFeeRuleSilver =>
-      'Silver: 3 US\$ + 10% per biglietto (max 10 US\$)';
+      'Silver: 3 US\$ + 10% per biglietto (max 30 US\$)';
 
   @override
-  String get tpFeeRuleGold => 'Gold: 2 US\$ + 10% per biglietto (max 9 US\$)';
+  String get tpFeeRuleGold => 'Gold: 2 US\$ + 10% per biglietto (max 28 US\$)';
 
   @override
   String get tpFeeRulePlatinum =>
-      'Platinum: 1 US\$ + 10% per biglietto (max 8 US\$)';
+      'Platinum: 1 US\$ + 10% per biglietto (max 25 US\$)';
 
   @override
   String get tpFeeRuleTrial =>
@@ -25955,6 +25955,10 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get legalUpdate530BulletTraders =>
       'I professionisti che vendono Esperienze a persone nell’UE devono fornire i propri dati di professionista';
+
+  @override
+  String get legalUpdate531BulletFeeCaps =>
+      'Massimale più alto della commissione di servizio di GreenGo per biglietto per i venditori: Silver 30 US\$, Gold 28 US\$, Platinum 25 US\$';
 
   @override
   String get legalUpdateCloseAccount => 'Non accetto – chiudi il mio account';

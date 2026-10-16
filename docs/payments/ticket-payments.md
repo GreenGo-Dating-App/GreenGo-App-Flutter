@@ -9,7 +9,8 @@ Branch `feat/ticket-payments` · 2026-10-08 · nothing deployed.
 >   the full listed ticket price (minus Stripe / MP processing fees, which the
 >   providers debit from the connected account); the buyer pays ticket price +
 >   fee per ticket, by the HOST's effective tier at checkout: Silver $3 + 10 %
->   (cap $10), Gold $2 + 10 % (cap $9), Platinum / TEST $1 + 10 % (cap $8),
+>   (cap $30), Gold $2 + 10 % (cap $28), Platinum / TEST $1 + 10 % (cap $25;
+>   caps raised 2026-10-16, they were $10 / $9 / $8),
 >   no paid tier = Silver rule. Free tickets: no fee. **Trial:** the host's
 >   first paid listing (event or experience) with a checkout pays a flat $1
 >   per ticket for its whole life (claimed once in

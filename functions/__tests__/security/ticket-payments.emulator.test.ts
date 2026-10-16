@@ -287,9 +287,9 @@ describe('instant mode: Stripe Connect direct charge', () => {
     const usd = (c: number) => usdCentsToMinor(c, 'brl')!;
     const a = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
     expect(a).toMatchObject({ feeRuleApplied: 'trial', feeTotal: usd(100) });
-    // Platinum: US$ 1 + 10 %, capped at US$ 8.
+    // Platinum: US$ 1 + 10 %, capped at US$ 25.
     const b = await call(tp.createTicketCheckout, { kind: 'event', id: 'e2' }, BUYER);
-    expect(b).toMatchObject({ feeRuleApplied: 'platinum', feeTotal: Math.min(usd(100) + 2000, usd(800)) });
+    expect(b).toMatchObject({ feeRuleApplied: 'platinum', feeTotal: Math.min(usd(100) + 2000, usd(2500)) });
     // Still the trial for e1 after other sales (another buyer).
     const c = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, OTHER);
     expect(c).toMatchObject({ feeRuleApplied: 'trial', feeTotal: usd(100) });

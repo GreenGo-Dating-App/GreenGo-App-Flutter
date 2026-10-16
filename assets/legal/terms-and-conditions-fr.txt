@@ -1,6 +1,6 @@
 CONDITIONS GÉNÉRALES DE GREENGO
 
-Version : 5.3.0
+Version : 5.3.1
 Date d'entrée en vigueur : 16 octobre 2026 pour les comptes créés à partir de
   cette date ; 16 novembre 2026 pour les comptes créés avant le 16 octobre 2026
 Annoncée le : 16 octobre 2026
@@ -519,9 +519,9 @@ a) GreenGo perçoit des frais de service sur chaque billet payant d'un
    paie : le vendeur reçoit donc le prix du billet moins les frais.
 b) Les frais par billet dépendent de l'Abonnement du vendeur au moment de la
    vente :
-   - Silver : 3 USD + 10 % du prix du billet, 10 USD au maximum ;
-   - Gold : 2 USD + 10 % du prix du billet, 9 USD au maximum ;
-   - Platinum : 1 USD + 10 % du prix du billet, 8 USD au maximum.
+   - Silver : 3 USD + 10 % du prix du billet, 30 USD au maximum ;
+   - Gold : 2 USD + 10 % du prix du billet, 28 USD au maximum ;
+   - Platinum : 1 USD + 10 % du prix du billet, 25 USD au maximum.
 c) Première annonce payante : si vous n'avez encore jamais vendu de billets
    payants sur GreenGo, les frais sont fixes, de 1 USD par billet, pour la
    première annonce (Événement ou Expérience) sur laquelle un acheteur ouvre
@@ -1344,6 +1344,12 @@ Droits d'auteur (DMCA) : copyright@greengochat.com
 ================================================================================
 HISTORIQUE DES VERSIONS
 ================================================================================
+
+5.3.1 - en vigueur le 16 octobre 2026 pour les comptes créés à partir de cette
+date ; le 16 novembre 2026 pour les comptes créés avant le 16 octobre 2026
+(annoncée le 16 octobre 2026)
+- Section 11.6 b : plafonds des frais de service de GreenGo par billet :
+  Silver 30 USD, Gold 28 USD, Platinum 25 USD.
 
 5.3.0 - en vigueur le 16 octobre 2026 pour les comptes créés à partir de cette
 date ; le 16 novembre 2026 pour les comptes créés avant le 16 octobre 2026

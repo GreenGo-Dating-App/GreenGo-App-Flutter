@@ -100,6 +100,15 @@ List<String> legalUpdateBullets(AppLocalizations l10n, String? version) =>
           l10n.legalUpdate530BulletModeration,
           l10n.legalUpdate530BulletTraders,
         ],
+      // 5.3.1 = 5.3.0 + higher service fee caps (11.6 b).
+      '5.3.1' => [
+          l10n.legalUpdate530BulletReferral,
+          l10n.legalUpdate530BulletCoinGifts,
+          l10n.legalUpdate530BulletMenus,
+          l10n.legalUpdate530BulletModeration,
+          l10n.legalUpdate530BulletTraders,
+          l10n.legalUpdate531BulletFeeCaps,
+        ],
       _ => const <String>[],
     };
 

@@ -27,9 +27,9 @@ describe('fee rule by host tier', () => {
   });
 
   test('schedule matches the owner rule', () => {
-    expect(FEE_SCHEDULES.silver).toEqual({ fixedUsdCents: 300, percent: 10, capUsdCents: 1000 });
-    expect(FEE_SCHEDULES.gold).toEqual({ fixedUsdCents: 200, percent: 10, capUsdCents: 900 });
-    expect(FEE_SCHEDULES.platinum).toEqual({ fixedUsdCents: 100, percent: 10, capUsdCents: 800 });
+    expect(FEE_SCHEDULES.silver).toEqual({ fixedUsdCents: 300, percent: 10, capUsdCents: 3000 });
+    expect(FEE_SCHEDULES.gold).toEqual({ fixedUsdCents: 200, percent: 10, capUsdCents: 2800 });
+    expect(FEE_SCHEDULES.platinum).toEqual({ fixedUsdCents: 100, percent: 10, capUsdCents: 2500 });
     expect(FEE_SCHEDULES.trial).toEqual({ fixedUsdCents: 100, percent: 0, capUsdCents: null });
   });
 });
@@ -41,13 +41,20 @@ describe('fee per ticket (USD)', () => {
     expect(feePerTicket('platinum', 2000, 'usd')).toBe(100 + 200); // $3
   });
 
-  test('caps: $10 silver, $9 gold, $8 platinum', () => {
-    expect(feePerTicket('silver', 10000, 'usd')).toBe(1000); // 3 + 10 = 13 -> 10
-    expect(feePerTicket('gold', 10000, 'usd')).toBe(900); // 2 + 10 = 12 -> 9
-    expect(feePerTicket('platinum', 10000, 'usd')).toBe(800); // 1 + 10 = 11 -> 8
+  test('caps: $30 silver, $28 gold, $25 platinum (owner rule 2026-10-16)', () => {
+    // $100: under every cap now
+    expect(feePerTicket('silver', 10000, 'usd')).toBe(1300); // 3 + 10
+    expect(feePerTicket('gold', 10000, 'usd')).toBe(1200); // 2 + 10
+    expect(feePerTicket('platinum', 10000, 'usd')).toBe(1100); // 1 + 10
+    // $500: capped
+    expect(feePerTicket('silver', 50000, 'usd')).toBe(3000); // 3 + 50 = 53 -> 30
+    expect(feePerTicket('gold', 50000, 'usd')).toBe(2800); // 2 + 50 = 52 -> 28
+    expect(feePerTicket('platinum', 50000, 'usd')).toBe(2500); // 1 + 50 = 51 -> 25
     // exactly at the cap
-    expect(feePerTicket('silver', 7000, 'usd')).toBe(1000);
-    expect(feePerTicket('platinum', 7000, 'usd')).toBe(800);
+    expect(feePerTicket('silver', 27000, 'usd')).toBe(3000);
+    expect(feePerTicket('gold', 26000, 'usd')).toBe(2800);
+    expect(feePerTicket('platinum', 24000, 'usd')).toBe(2500);
+    expect(feePerTicket('silver', 27010, 'usd')).toBe(3000);
   });
 
   test('trial is a flat $1 whatever the price', () => {
@@ -77,8 +84,14 @@ describe('currency conversion of the US$ parts', () => {
     // R$ 50,00 silver: 3 USD + 5,00 BRL
     const fixed = usdCentsToMinor(300, 'brl') as number;
     expect(feePerTicket('silver', 5000, 'brl')).toBe(fixed + 500);
-    // R$ 1000,00 platinum: capped at 8 USD in BRL
-    expect(feePerTicket('platinum', 100000, 'brl')).toBe(usdCentsToMinor(800, 'brl'));
+    // R$ 1000,00 platinum: 1 USD + R$ 100,00, under the 25 USD cap
+    expect(feePerTicket('platinum', 100000, 'brl')).toBe((usdCentsToMinor(100, 'brl') as number) + 10000);
+    // R$ 5000,00: capped at 30 / 28 / 25 USD in BRL
+    expect(feePerTicket('silver', 500000, 'brl')).toBe(usdCentsToMinor(3000, 'brl'));
+    expect(feePerTicket('gold', 500000, 'brl')).toBe(usdCentsToMinor(2800, 'brl'));
+    expect(feePerTicket('platinum', 500000, 'brl')).toBe(usdCentsToMinor(2500, 'brl'));
+    // the fee never exceeds a cheap ticket's price in another currency
+    expect(feePerTicket('silver', 1000, 'brl')).toBe(1000);
   });
 
   test('zero-decimal currencies round to whole units', () => {
@@ -86,6 +99,7 @@ describe('currency conversion of the US$ parts', () => {
     expect(Number.isInteger(feePerTicket('gold', 3333, 'jpy'))).toBe(true);
     expect(feePerTicket('gold', 3000, 'jpy')).toBe(2 * USD_RATES.jpy + 300);
     expect(feePerTicket('trial', 3000, 'clp')).toBe(USD_RATES.clp);
+    expect(feePerTicket('gold', 100000, 'jpy')).toBe(28 * USD_RATES.jpy); // capped at 28 USD
   });
 
   test('unknown currency -> null (checkout refused)', () => {
@@ -111,12 +125,12 @@ describe('whole order', () => {
       { typeId: 'std', unitAmount: 2000, quantity: 2 },
       { typeId: 'kid', unitAmount: 0, quantity: 2 },
     ])!;
-    expect(f.lines.map((l) => l.unitFee)).toEqual([1000, 500, 0]);
-    expect(f.feeTotal).toBe(1000 + 2 * 500);
+    expect(f.lines.map((l) => l.unitFee)).toEqual([1800, 500, 0]); // $150: 3 + 15 (under the $30 cap)
+    expect(f.feeTotal).toBe(1800 + 2 * 500);
     expect(f.ticketSubtotal).toBe(19000);
     expect(f.feePerTicket).toBeNull(); // differs per type
     expect(f.total).toBe(19000);
-    expect(f.hostNet).toBe(19000 - 2000);
+    expect(f.hostNet).toBe(19000 - 2800);
   });
 
   test('trial: same fee for every paid type', () => {
@@ -185,7 +199,7 @@ describe('fee in the provider payloads', () => {
 describe('client quote', () => {
   test('carries the rule parameters and the currency rate', () => {
     expect(feeQuote('gold', 'BRL')).toEqual({
-      rule: 'gold', fixedUsdCents: 200, percent: 10, capUsdCents: 900, currency: 'brl', usdRate: USD_RATES.brl,
+      rule: 'gold', fixedUsdCents: 200, percent: 10, capUsdCents: 2800, currency: 'brl', usdRate: USD_RATES.brl,
     });
     expect(feeQuote('trial', null)).toMatchObject({ rule: 'trial', currency: null, usdRate: null });
   });

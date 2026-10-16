@@ -10,10 +10,11 @@
  * the provider's own processing fee), per ticket:
  *
  *   rule       fixed   + percent of the ticket price   cap per ticket
- *   silver     US$ 3   + 10 %                          US$ 10
- *   gold       US$ 2   + 10 %                          US$ 9
- *   platinum   US$ 1   + 10 %                          US$ 8   (TEST = platinum)
+ *   silver     US$ 3   + 10 %                          US$ 30
+ *   gold       US$ 2   + 10 %                          US$ 28
+ *   platinum   US$ 1   + 10 %                          US$ 25  (TEST = platinum)
  *   trial      flat US$ 1 (the host's first paid listing, see below)
+ *   (caps raised 2026-10-16 by the owner; they were US$ 10 / 9 / 8)
  *   free ticket (price 0): no fee.
  *   The fee never exceeds the ticket price itself (a fee can't be larger
  *   than the charge it is taken from).
@@ -52,9 +53,9 @@ export interface FeeSchedule {
 }
 
 export const FEE_SCHEDULES: Record<FeeRule, FeeSchedule> = {
-  silver: { fixedUsdCents: 300, percent: 10, capUsdCents: 1000 },
-  gold: { fixedUsdCents: 200, percent: 10, capUsdCents: 900 },
-  platinum: { fixedUsdCents: 100, percent: 10, capUsdCents: 800 },
+  silver: { fixedUsdCents: 300, percent: 10, capUsdCents: 3000 },
+  gold: { fixedUsdCents: 200, percent: 10, capUsdCents: 2800 },
+  platinum: { fixedUsdCents: 100, percent: 10, capUsdCents: 2500 },
   trial: { fixedUsdCents: 100, percent: 0, capUsdCents: null },
 };
 

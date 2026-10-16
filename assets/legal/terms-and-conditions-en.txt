@@ -1,6 +1,6 @@
 GREENGO TERMS AND CONDITIONS
 
-Version: 5.3.0
+Version: 5.3.1
 Effective date: 16 October 2026 for accounts created on or after that date;
   16 November 2026 for accounts created before 16 October 2026
 Announced: 16 October 2026
@@ -449,9 +449,9 @@ a) GreenGo charges a service fee on each paid ticket for an Event and each
    the seller receives the ticket price minus the fee.
 b) The fee per ticket depends on the seller's Membership at the time of the
    sale:
-   - Silver: US$3 + 10% of the ticket price, at most US$10;
-   - Gold: US$2 + 10% of the ticket price, at most US$9;
-   - Platinum: US$1 + 10% of the ticket price, at most US$8.
+   - Silver: US$3 + 10% of the ticket price, at most US$30;
+   - Gold: US$2 + 10% of the ticket price, at most US$28;
+   - Platinum: US$1 + 10% of the ticket price, at most US$25.
 c) First paid listing: if you have not sold paid tickets on GreenGo before,
    the fee is a flat US$1 per ticket for the first listing (Event or
    Experience) on which a buyer opens a paid checkout, for that listing.
@@ -1179,6 +1179,12 @@ Copyright (DMCA): copyright@greengochat.com
 ================================================================================
 VERSION HISTORY
 ================================================================================
+
+5.3.1 - effective 16 October 2026 for accounts created on or after that date;
+16 November 2026 for accounts created before 16 October 2026 (announced
+16 October 2026)
+- Section 11.6 b: GreenGo service fee caps per ticket: Silver US$30, Gold
+  US$28, Platinum US$25.
 
 5.3.0 - effective 16 October 2026 for accounts created on or after that date;
 16 November 2026 for accounts created before 16 October 2026 (announced
