@@ -11,7 +11,7 @@ final _forbidden = RegExp(
   r'translatePrivateText|translate\.googleapis|client=gtx',
 );
 
-/// Every file that renders attraction content.
+/// Every file that renders attraction or partner-listing content.
 List<File> _attractionSurfaces() => [
       ...Directory('lib/features/attractions')
           .listSync(recursive: true)
@@ -19,6 +19,13 @@ List<File> _attractionSurfaces() => [
           .where((f) => f.path.endsWith('.dart')),
       File('lib/features/chat/presentation/widgets/attraction_message.dart'),
       File('lib/features/chat/presentation/widgets/chat_places_bar.dart'),
+      // Partner listings (Viator, Ticketmaster, Tiqets): owner 2026-10-16,
+      // shown in the partner's own text, never translated.
+      File('lib/features/events/presentation/widgets/attraction_menu_dialog.dart'),
+      ...Directory('lib/features/events/presentation/widgets')
+          .listSync()
+          .whereType<File>()
+          .where((f) => f.path.contains('external_event')),
     ];
 
 List<String> _hits(File f) => f

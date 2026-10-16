@@ -5,9 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/own_profile_store.dart';
-import '../../../../core/services/translation_service.dart';
 import '../../../../core/utils/partner_link_gate.dart';
-import '../../../../core/widgets/translatable_text.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/domain/usecases/report_user.dart';
 import '../../domain/entities/external_event.dart';
@@ -40,12 +38,9 @@ class _AttractionMenuDialog extends StatefulWidget {
 }
 
 class _AttractionMenuDialogState extends State<_AttractionMenuDialog> {
-  // Attractions/experiences are stored in English; translate the DESCRIPTION
-  // (not the title) to the user's language when the window opens — same
-  // translator as the chat.
-  String? _translatedDesc;
-  bool _translating = false;
-  bool _translateStarted = false;
+  // Partner listings (Viator, Ticketmaster, Tiqets) show the partner's own
+  // text: owner rule 2026-10-16, no translation service is ever called for
+  // them (see test/unit/attractions_no_live_translation_test.dart).
 
   @override
   void initState() {
@@ -64,44 +59,6 @@ class _AttractionMenuDialogState extends State<_AttractionMenuDialog> {
   void _onProfile() {
     if (mounted) setState(() {});
   }
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    // Use the APP's active locale (what the user selected in-app), not the
-    // device locale. Runs once.
-    if (_translateStarted) return;
-    // Live events get an explicit Translate / Show original button instead
-    // (see the description block in build).
-    if (_isLive) return;
-    final desc = widget.event.description;
-    if (desc == null || desc.trim().isEmpty) return;
-    final target = Localizations.localeOf(context).languageCode;
-    // Only skip when there is no target at all. Bailing out for 'en' assumed
-    // every attraction description is already English — these come from
-    // Geoapify and Wikipedia, so an English reader looking at an Italian
-    // landmark got the Italian text untouched. The service short-circuits when
-    // the detected source already matches, so letting English through costs
-    // nothing.
-    if (target.isEmpty) return;
-    _translateStarted = true;
-    _translating = true;
-    TranslationService()
-        .translateSharedOne(desc, targetLanguage: target.replaceAll('_', '-'))
-        .then((result) {
-      if (!mounted) return;
-      setState(() {
-        _translating = false;
-        if (result.trim().isNotEmpty && result.trim() != desc.trim()) {
-          _translatedDesc = result;
-        }
-      });
-    }).catchError((_) {
-      if (mounted) setState(() => _translating = false);
-    });
-  }
-
-  bool get _isLive => widget.event.source == 'ticketmaster';
 
   String _hostOf(String url) {
     try {
@@ -307,42 +264,17 @@ class _AttractionMenuDialogState extends State<_AttractionMenuDialog> {
                           ],
                         ),
                       ],
-                      if (_isLive &&
-                          e.description != null &&
+                      if (e.description != null &&
                           e.description!.trim().isNotEmpty) ...[
                         const SizedBox(height: 8),
-                        TranslatableText(
-                          text: e.description!,
-                          autoTranslate: true,
-                          targetLang:
-                              Localizations.localeOf(context).languageCode,
-                          maxLines: 6,
-                          overflow: TextOverflow.ellipsis,
-                          style: const TextStyle(
-                              color: AppColors.textSecondary,
-                              fontSize: 12,
-                              height: 1.3),
-                        ),
-                      ] else if (e.description != null &&
-                          e.description!.isNotEmpty) ...[
-                        const SizedBox(height: 8),
-                        Text(_translatedDesc ?? e.description!,
+                        Text(e.description!,
+                            key: const ValueKey('partner-description'),
                             maxLines: 6,
                             overflow: TextOverflow.ellipsis,
                             style: const TextStyle(
                                 color: AppColors.textSecondary,
                                 fontSize: 12,
                                 height: 1.3)),
-                        if (_translating)
-                          const Padding(
-                            padding: EdgeInsets.only(top: 4),
-                            child: SizedBox(
-                                width: 12,
-                                height: 12,
-                                child: CircularProgressIndicator(
-                                    strokeWidth: 1.5,
-                                    color: AppColors.textTertiary)),
-                          ),
                       ],
                       const Divider(height: 18, color: AppColors.divider),
                       ...options,

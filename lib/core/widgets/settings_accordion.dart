@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
+
 import '../constants/app_colors.dart';
+import 'menu_row.dart';
 
-/// A collapsible/expandable settings category used on the Profile screen.
+/// A collapsible settings category used on the Profile screen.
 ///
-/// Renders a styled [ExpansionTile] (dark + gold theme) with a leading icon and
-/// title; tapping the header expands/collapses the grouped settings cards.
-class SettingsAccordion extends StatelessWidget {
-
+/// The header is a [MenuRow] (the app's menu style, owner 2026-10-16) with an
+/// expand / collapse arrow; when open, the grouped rows show right under it,
+/// slightly indented. The rows keep their state while collapsed.
+class SettingsAccordion extends StatefulWidget {
   const SettingsAccordion({
     required this.title, required this.icon, required this.children, super.key,
     this.initiallyExpanded = false,
@@ -19,38 +21,43 @@ class SettingsAccordion extends StatelessWidget {
   final Color? accentColor;
 
   @override
+  State<SettingsAccordion> createState() => _SettingsAccordionState();
+}
+
+class _SettingsAccordionState extends State<SettingsAccordion> {
+  late bool _open = widget.initiallyExpanded;
+
+  @override
   Widget build(BuildContext context) {
-    final accent = accentColor ?? AppColors.richGold;
-    return Container(
-      margin: const EdgeInsets.only(bottom: 16),
-      decoration: BoxDecoration(
-        color: AppColors.backgroundCard,
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: AppColors.divider.withValues(alpha: 0.6)),
-      ),
-      clipBehavior: Clip.antiAlias,
-      child: Theme(
-        // Hide ExpansionTile's default top/bottom divider lines.
-        data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
-        child: ExpansionTile(
-          initiallyExpanded: initiallyExpanded,
-          maintainState: true,
-          tilePadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-          childrenPadding: const EdgeInsets.fromLTRB(16, 4, 16, 16),
+    final accent = widget.accentColor ?? AppColors.richGold;
+    return Padding(
+      padding: const EdgeInsets.only(bottom: MenuRow.gap),
+      child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+        MenuRow(
+          title: widget.title,
+          icon: widget.icon,
           iconColor: accent,
-          collapsedIconColor: accent,
-          leading: Icon(icon, color: accent),
-          title: Text(
-            title,
-            style: const TextStyle(
-              color: AppColors.textPrimary,
-              fontSize: 16,
-              fontWeight: FontWeight.bold,
+          onTap: () => setState(() => _open = !_open),
+          trailing: AnimatedRotation(
+            turns: _open ? 0.5 : 0,
+            duration: const Duration(milliseconds: 200),
+            child: Icon(Icons.expand_more, color: accent),
+          ),
+        ),
+        AnimatedSize(
+          duration: const Duration(milliseconds: 200),
+          curve: Curves.easeOut,
+          alignment: Alignment.topCenter,
+          child: Visibility(
+            visible: _open,
+            maintainState: true,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 12, top: MenuRow.gap),
+              child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: widget.children),
             ),
           ),
-          children: children,
         ),
-      ),
+      ]),
     );
   }
 }
