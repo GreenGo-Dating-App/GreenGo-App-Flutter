@@ -1,8 +1,8 @@
 TERMOS E CONDIÇÕES DO GREENGO
 
-Versão: 5.2.0
-Data de entrada em vigor: 14 de outubro de 2026
-Versão anterior: 5.1.2 (13 de outubro de 2026)
+Versão: 5.2.1
+Data de entrada em vigor: 16 de outubro de 2026
+Versão anterior: 5.2.0 (14 de outubro de 2026)
 
 ================================================================================
 1. SOBRE ESTES TERMOS
@@ -187,10 +187,10 @@ que já seja titular.
 a) Comprada na aplicação iOS: nas definições do seu ID Apple > Subscrições.
 b) Comprada na aplicação Android: no Google Play > Pagamentos e subscrições >
    Subscrições.
-c) Comprada na web: no GreenGo > Definições > Subscrição > Gerir subscrição,
-   que abre o portal de faturação seguro da Stripe, ou através da ligação
-   "Gerir subscrição" em qualquer e-mail de recibo. Não é necessário indicar
-   qualquer motivo.
+c) Comprada na web: no GreenGo > Perfil > Definições da Conta > Gerir
+   subscrição, que abre o portal de faturação seguro da Stripe, ou através da
+   ligação "Gerir subscrição" em qualquer e-mail de recibo. Não é necessário
+   indicar qualquer motivo.
 
 Quando cancela, a sua Subscrição permanece ativa até ao final do período que
 pagou, e não é renovada. Eliminar a aplicação ou a sua conta não cancela uma
@@ -1173,6 +1173,10 @@ Direitos de autor (DMCA): copyright@greengochat.com
 ================================================================================
 HISTÓRICO DE VERSÕES
 ================================================================================
+
+5.2.1 - 16 de outubro de 2026
+- Secção 7.3 c: esclarecido onde cancelar na aplicação uma subscrição
+  comprada na web.
 
 5.2.0 - 14 de outubro de 2026
 - Secções 11.2, 12.2, 12.3, 12.5 e 16.5: bilhetes e reservas pagos apenas

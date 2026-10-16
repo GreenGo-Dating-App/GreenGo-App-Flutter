@@ -1,8 +1,8 @@
 CONDITIONS GÉNÉRALES DE GREENGO
 
-Version : 5.2.0
-Date d'entrée en vigueur : 14 octobre 2026
-Version précédente : 5.1.2 (13 octobre 2026)
+Version : 5.2.1
+Date d'entrée en vigueur : 16 octobre 2026
+Version précédente : 5.2.0 (14 octobre 2026)
 
 ================================================================================
 1. À PROPOS DES PRÉSENTES CONDITIONS
@@ -205,7 +205,7 @@ a) Achat dans l'application iOS : dans les réglages de votre identifiant
    Apple > Abonnements.
 b) Achat dans l'application Android : dans Google Play > Paiements et
    abonnements > Abonnements.
-c) Achat sur le web : dans GreenGo > Paramètres > Abonnement > Gérer
+c) Achat sur le web : dans GreenGo > Profil > Paramètres du Compte > Gérer
    l'abonnement, qui ouvre le portail de facturation sécurisé de Stripe, ou
    au moyen du lien « Gérer l'abonnement » figurant dans tout e-mail de reçu.
    Aucun motif n'est nécessaire.
@@ -1248,6 +1248,10 @@ Droits d'auteur (DMCA) : copyright@greengochat.com
 ================================================================================
 HISTORIQUE DES VERSIONS
 ================================================================================
+
+5.2.1 - 16 octobre 2026
+- Section 7.3 c : précision sur l'endroit où résilier dans l'application un
+  abonnement souscrit sur le web.
 
 5.2.0 - 14 octobre 2026
 - Sections 11.2, 12.2, 12.3, 12.5 et 16.5 : billets et réservations payants

@@ -1,8 +1,8 @@
 GREENGO TERMS AND CONDITIONS
 
-Version: 5.2.0
-Effective date: 14 October 2026
-Previous version: 5.1.2 (13 October 2026)
+Version: 5.2.1
+Effective date: 16 October 2026
+Previous version: 5.2.0 (14 October 2026)
 
 ================================================================================
 1. ABOUT THESE TERMS
@@ -170,7 +170,7 @@ account directly. A grant never reduces a Membership you already hold.
 a) Bought in the iOS app: in your Apple ID settings > Subscriptions.
 b) Bought in the Android app: in Google Play > Payments & subscriptions >
    Subscriptions.
-c) Bought on the web: in GreenGo > Settings > Membership > Manage
+c) Bought on the web: in GreenGo > Profile > Account Settings > Manage
    subscription, which opens Stripe's secure billing portal, or with the
    "Manage subscription" link in any receipt email. No reason is needed.
 
@@ -1097,6 +1097,9 @@ Copyright (DMCA): copyright@greengochat.com
 ================================================================================
 VERSION HISTORY
 ================================================================================
+
+5.2.1 - 16 October 2026
+- Section 7.3 c: clarified where to cancel a web subscription in the app.
 
 5.2.0 - 14 October 2026
 - Sections 11.2, 12.2, 12.3, 12.5 and 16.5: paid tickets and bookings only
