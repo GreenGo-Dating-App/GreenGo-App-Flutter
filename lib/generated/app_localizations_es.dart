@@ -10864,11 +10864,11 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get discoverabilityExact => 'Exacta';
+  String get discoverabilityExact => 'Exacta (±100 m)';
 
   @override
   String get discoverabilityExactDesc =>
-      'Marcador en tu ubicación exacta (<1 km)';
+      'Los demás ven tu posición y distancia con una precisión de unos 100 m.';
 
   @override
   String get discoverabilityApproximate => 'Aproximada';
@@ -10897,7 +10897,8 @@ class AppLocalizationsEs extends AppLocalizations {
       'Tus conexiones siempre te ven en el mapa, independientemente de esta configuración.';
 
   @override
-  String get discoverabilityChangedExact => 'Ubicación establecida en exacta';
+  String get discoverabilityChangedExact =>
+      'Ubicación exacta: los demás te ven con una precisión de unos 100 m';
 
   @override
   String get discoverabilityChangedApproximate =>
@@ -26040,5 +26041,15 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String traderCardRegister(String register, String number) {
     return '$register: $number';
+  }
+
+  @override
+  String distanceMeters(String meters) {
+    return '$meters m';
+  }
+
+  @override
+  String distanceKmPrecise(String km) {
+    return '$km km';
   }
 }

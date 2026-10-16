@@ -150,6 +150,36 @@ void main() {
       expect((u.pinLatitude - _exactLat).abs(), greaterThan(0.04));
     });
 
+    test('exact + server preciseLocation (±100 m): pin is exactly it, no client jitter',
+        () async {
+      const pLat = 41.95180, pLng = 12.40090;
+      final u = (await _load({
+        'x': {
+          ..._profile(discoverability: 'exact'),
+          kPreciseLocationField: {'lat': pLat, 'lng': pLng},
+        },
+      }))
+          .matchedUsers
+          .single;
+      expect(u.pinLatitude, pLat);
+      expect(u.pinLongitude, pLng);
+    });
+
+    test('a stale preciseLocation is ignored once the user left "exact"',
+        () async {
+      final u = (await _load({
+        'x': {
+          ..._profile(discoverability: 'country'),
+          kPreciseLocationField: {'lat': 41.9518, 'lng': 12.4009},
+        },
+      }))
+          .matchedUsers
+          .single;
+      final c = countryCentroids['Italy']!;
+      expect((u.pinLatitude - c[0]).abs(), lessThanOrEqualTo(1.5));
+      expect((u.pinLongitude - c[1]).abs(), lessThanOrEqualTo(1.5));
+    });
+
     test('approximate (the default): snapped to a ~50 km cell', () async {
       final u = (await _load({'x': _profile()})).matchedUsers.single;
       expect(u.discoverability, GlobeDiscoverability.approximate);
@@ -202,6 +232,37 @@ void main() {
       expect((u.pinLatitude - 38.72).abs(), lessThanOrEqualTo(0.005));
       // Flight path starts at the home country's centroid.
       expect(u.realCountryLatitude, countryCentroids['Italy']![0]);
+    });
+
+    test('pinCoordsFor: exact uses the precise point as is, else jitter', () {
+      final rng = Random(3);
+      expect(
+          GlobeUserModel.pinCoordsFor(
+              GlobeDiscoverability.exact, 1, 2, 'Italy', rng,
+              precise: (41.5, 12.5)),
+          [41.5, 12.5]);
+      final j = GlobeUserModel.pinCoordsFor(
+          GlobeDiscoverability.exact, 41.9, 12.5, 'Italy', rng);
+      expect((j[0] - 41.9).abs(), lessThanOrEqualTo(0.005));
+      // Other levels never use the precise point.
+      final a = GlobeUserModel.pinCoordsFor(
+          GlobeDiscoverability.approximate, 41.9, 12.5, 'Italy', rng,
+          precise: (41.5, 12.5));
+      expect(a, isNot([41.5, 12.5]));
+    });
+
+    test('own pin with exact uses the own preciseLocation too', () {
+      final u = GlobeUserModel.fromFirestore(
+        data: const {
+          'globeDiscoverability': 'exact',
+          'location': {'latitude': 41.9, 'longitude': 12.5, 'country': 'Italy'},
+          kPreciseLocationField: {'lat': 41.9007, 'lng': 12.5004},
+        },
+        odcId: 'me',
+        pinType: GlobePinType.currentUser,
+        random: Random(1),
+      );
+      expect([u.pinLatitude, u.pinLongitude], [41.9007, 12.5004]);
     });
 
     test('an unknown discoverability value is treated as country level', () {

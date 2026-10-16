@@ -131,9 +131,11 @@ class _NetworkGridCardState extends State<NetworkGridCard> {
     final hasMultiplePhotos = photoUrls.length > 1;
 
     final location = profile.effectiveLocation;
-    // Approximate distance bucket ("2-5 km"), never an exact figure.
-    final distanceText =
-        distanceLabel(AppLocalizations.of(context)!, widget.candidate.distance);
+    // Approximate distance bucket ("< 5 km"); 100 m resolution only for
+    // users who opted into 'exact' (±100 m preciseLocation).
+    final distanceText = distanceLabel(
+        AppLocalizations.of(context)!, widget.candidate.distance,
+        precise: profile.hasPreciseLocation);
     final matchPercentage = widget.candidate.matchScore.matchPercentageText;
     // Only surface the compatibility % when it is meaningful (> 0) and this is
     // not the user's own tile. Sources that carry no real score (e.g. the

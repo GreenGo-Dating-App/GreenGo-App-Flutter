@@ -19110,13 +19110,13 @@ abstract class AppLocalizations {
   /// No description provided for @discoverabilityExact.
   ///
   /// In en, this message translates to:
-  /// **'Exact'**
+  /// **'Exact (±100 m)'**
   String get discoverabilityExact;
 
   /// No description provided for @discoverabilityExactDesc.
   ///
   /// In en, this message translates to:
-  /// **'Pin at your exact location (<1km)'**
+  /// **'Others see your position and distance accurate to about 100 m.'**
   String get discoverabilityExactDesc;
 
   /// No description provided for @discoverabilityApproximate.
@@ -19170,7 +19170,7 @@ abstract class AppLocalizations {
   /// No description provided for @discoverabilityChangedExact.
   ///
   /// In en, this message translates to:
-  /// **'Location set to exact'**
+  /// **'Location set to exact: others see you within about 100 m'**
   String get discoverabilityChangedExact;
 
   /// No description provided for @discoverabilityChangedApproximate.
@@ -44177,6 +44177,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{register}: {number}'**
   String traderCardRegister(String register, String number);
+
+  /// Distance to a user who shares a ±100 m precise location, under 1 km, e.g. "300 m". meters is pre-formatted (multiple of 100).
+  ///
+  /// In en, this message translates to:
+  /// **'{meters} m'**
+  String distanceMeters(String meters);
+
+  /// Distance to a user who shares a ±100 m precise location, 1 km or more, e.g. "1.2 km" or "23 km". km is pre-formatted.
+  ///
+  /// In en, this message translates to:
+  /// **'{km} km'**
+  String distanceKmPrecise(String km);
 }
 
 class _AppLocalizationsDelegate

@@ -204,7 +204,8 @@ class GlobeRemoteDataSourceImpl implements GlobeRemoteDataSource {
     String matchId,
     Random rng,
   ) {
-    // Other users: approximate public location only (security P1-4).
+    // Other users: public location only (security P1-4): approxLocation, or
+    // the ±100 m preciseLocation of users who chose exact discoverability.
     profileData = publicProfileView(profileData);
     try {
       // Skip inactive accounts

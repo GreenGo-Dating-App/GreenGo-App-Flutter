@@ -3805,8 +3805,8 @@
   "globeViewProfileTooltip": "Ver Perfil",
   "globeOpenChatTooltip": "Abrir Chat",
   "globeNoConnectionsInCountryTitle": "Sem conexões em {country}",
-  "discoverabilityExact": "Exata",
-  "discoverabilityExactDesc": "Marcador na sua localização exata (<1km)",
+  "discoverabilityExact": "Exata (±100 m)",
+  "discoverabilityExactDesc": "Outras pessoas veem sua posição e distância com precisão de cerca de 100 m.",
   "discoverabilityApproximate": "Aproximada",
   "discoverabilityApproximateDesc": "Marcador na sua região (grade de ~50km, padrão)",
   "discoverabilityCountry": "País",
@@ -3815,7 +3815,7 @@
   "discoverabilityHiddenDesc": "Não descobrível no Mapa",
   "discoverabilityTitle": "Visibilidade no Globo",
   "discoverabilityInfo": "Suas conexões sempre veem você no Mapa, independentemente desta configuração.",
-  "discoverabilityChangedExact": "Localização definida como exata",
+  "discoverabilityChangedExact": "Localização exata: outras pessoas veem você com precisão de cerca de 100 m",
   "discoverabilityChangedApproximate": "Localização definida como aproximada",
   "discoverabilityChangedCountry": "Localização definida como nível de país",
   "discoverabilityChangedHidden": "Agora você está oculto no mapa",
@@ -8217,5 +8217,7 @@
   "traderCardTitle": "Informações do vendedor",
   "traderCardNonTraderTitle": "Vendedor pessoa física",
   "traderCardNonTrader": "Esta pessoa é pessoa física, não um profissional. Os direitos do consumidor em compras de profissionais não se aplicam a esta compra.",
-  "traderCardRegister": "{register}: {number}"
+  "traderCardRegister": "{register}: {number}",
+  "distanceMeters": "{meters} m",
+  "distanceKmPrecise": "{km} km"
 }

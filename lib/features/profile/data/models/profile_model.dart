@@ -80,6 +80,7 @@ class ProfileModel extends Profile {
     super.isBanned,
     super.isIdVerified,
     super.publicAge,
+    super.hasPreciseLocation,
     super.verificationPhotoPath,
   });
 
@@ -170,6 +171,7 @@ class ProfileModel extends Profile {
       isBanned: profile.isBanned,
       isIdVerified: profile.isIdVerified,
       publicAge: profile.publicAge,
+      hasPreciseLocation: profile.hasPreciseLocation,
       verificationPhotoPath: profile.verificationPhotoPath,
     );
   }
@@ -326,6 +328,7 @@ class ProfileModel extends Profile {
       // Server-owned; read only (never in toJson).
       isIdVerified: json['isAgeVerified'] == true,
       publicAge: (json[kPublicAgeField] as num?)?.toInt(),
+      hasPreciseLocation: json[kPreciseViewMarker] == true,
       verificationPhotoPath: json[kVerificationPhotoPathField] as String?,
     );
   }

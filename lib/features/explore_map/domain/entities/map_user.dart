@@ -17,6 +17,7 @@ class MapUser extends Equatable {
     this.displayName,
     this.photoUrl,
     this.distanceKm,
+    this.hasPreciseLocation = false,
   });
   final String userId;
   final double approximateLatitude;
@@ -28,6 +29,11 @@ class MapUser extends Equatable {
   final String? displayName;
   final String? photoUrl;
   final double? distanceKm;
+
+  /// The coordinates are the user's ±100 m `preciseLocation` (they chose
+  /// 'exact' globe discoverability): not snapped, distance shown with 100 m
+  /// resolution.
+  final bool hasPreciseLocation;
 
   @override
   List<Object?> get props => [
@@ -41,5 +47,6 @@ class MapUser extends Equatable {
         displayName,
         photoUrl,
         distanceKm,
+        hasPreciseLocation,
       ];
 }

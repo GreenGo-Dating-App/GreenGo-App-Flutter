@@ -10831,11 +10831,11 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get discoverabilityExact => 'Exata';
+  String get discoverabilityExact => 'Exata (±100 m)';
 
   @override
   String get discoverabilityExactDesc =>
-      'Marcador na tua localização exata (<1km)';
+      'Os outros veem a tua posição e distância com uma precisão de cerca de 100 m.';
 
   @override
   String get discoverabilityApproximate => 'Aproximada';
@@ -10864,7 +10864,8 @@ class AppLocalizationsPt extends AppLocalizations {
       'As tuas ligações veem-te sempre no Mapa, independentemente desta definição.';
 
   @override
-  String get discoverabilityChangedExact => 'Localização definida como exata';
+  String get discoverabilityChangedExact =>
+      'Localização exata: os outros veem-te com uma precisão de cerca de 100 m';
 
   @override
   String get discoverabilityChangedApproximate =>
@@ -26021,6 +26022,16 @@ class AppLocalizationsPt extends AppLocalizations {
   String traderCardRegister(String register, String number) {
     return '$register: $number';
   }
+
+  @override
+  String distanceMeters(String meters) {
+    return '$meters m';
+  }
+
+  @override
+  String distanceKmPrecise(String km) {
+    return '$km km';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -36856,11 +36867,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get discoverabilityExact => 'Exata';
+  String get discoverabilityExact => 'Exata (±100 m)';
 
   @override
   String get discoverabilityExactDesc =>
-      'Marcador na sua localização exata (<1km)';
+      'Outras pessoas veem sua posição e distância com precisão de cerca de 100 m.';
 
   @override
   String get discoverabilityApproximate => 'Aproximada';
@@ -36890,7 +36901,8 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
       'Suas conexões sempre veem você no Mapa, independentemente desta configuração.';
 
   @override
-  String get discoverabilityChangedExact => 'Localização definida como exata';
+  String get discoverabilityChangedExact =>
+      'Localização exata: outras pessoas veem você com precisão de cerca de 100 m';
 
   @override
   String get discoverabilityChangedApproximate =>
@@ -52046,5 +52058,15 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String traderCardRegister(String register, String number) {
     return '$register: $number';
+  }
+
+  @override
+  String distanceMeters(String meters) {
+    return '$meters m';
+  }
+
+  @override
+  String distanceKmPrecise(String km) {
+    return '$km km';
   }
 }

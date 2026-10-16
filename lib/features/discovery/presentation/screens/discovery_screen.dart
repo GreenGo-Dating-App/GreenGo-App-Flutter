@@ -2223,11 +2223,13 @@ class _GridProfileCardState extends State<_GridProfileCard>
     final hasMultiplePhotos = photoUrls.length > 1;
     final showText = widget.gridColumns <= 4;
     final location = profile.effectiveLocation;
-    // Approximate distance bucket ("2-5 km"), never an exact figure.
+    // Approximate distance bucket ("< 5 km"); 100 m resolution only for
+    // users who opted into 'exact' (±100 m preciseLocation).
     final distanceText = widget.isRandomMode
         ? ''
         : distanceLabel(
-            AppLocalizations.of(context)!, widget.card.candidate.distance);
+            AppLocalizations.of(context)!, widget.card.candidate.distance,
+            precise: profile.hasPreciseLocation);
     final cityText = location.city.isNotEmpty && location.city != 'Unknown'
         ? location.city
         : (location.country.isNotEmpty && location.country != 'Unknown'

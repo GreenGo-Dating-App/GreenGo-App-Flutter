@@ -379,8 +379,11 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
                       ),
                       const SizedBox(width: 4),
                       Text(
-                        // Approximate bucket ("2-5 km"), never an exact figure.
-                        distanceLabel(l10n, user.distanceKm, zeroIsUnknown: false),
+                        // Approximate bucket ("< 5 km"); 100 m resolution
+                        // only for users who opted into 'exact'.
+                        distanceLabel(l10n, user.distanceKm,
+                            zeroIsUnknown: false,
+                            precise: user.hasPreciseLocation),
                         style: const TextStyle(
                           color: AppColors.textTertiary,
                           fontSize: 13,

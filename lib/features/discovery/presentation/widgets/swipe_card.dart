@@ -45,9 +45,11 @@ class SwipeCard extends StatefulWidget {
 
 class _SwipeCardState extends State<SwipeCard>
     with TickerProviderStateMixin {
-  /// Approximate distance bucket ("2-5 km"), never an exact figure.
+  /// Approximate distance bucket ("< 5 km"); 100 m resolution only for users
+  /// who opted into 'exact' (±100 m preciseLocation).
   String _distanceText(BuildContext context) => distanceLabel(
-      AppLocalizations.of(context)!, widget.card.candidate.distance);
+      AppLocalizations.of(context)!, widget.card.candidate.distance,
+      precise: widget.card.candidate.profile.hasPreciseLocation);
 
   bool _isDragging = false;
   bool _hasTriggeredHaptic = false;

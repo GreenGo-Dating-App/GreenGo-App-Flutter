@@ -68,6 +68,60 @@ void main() {
     });
   });
 
+  group('other users: ±100 m preciseLocation (globeDiscoverability exact)', () {
+    Map<String, dynamic> exactPublic() => legacyPublic()
+      ..['globeDiscoverability'] = 'exact'
+      ..[kPreciseLocationField] = {'lat': 38.7229, 'lng': -9.1399};
+
+    test('replaces approxLocation and marks the profile precise', () {
+      final p = ProfileModel.fromJson(exactPublic());
+      expect(p.location.latitude, 38.7229);
+      expect(p.location.longitude, -9.1399);
+      expect(p.hasPreciseLocation, isTrue);
+      expect(ProfileModel.fromJson(legacyPublic()).hasPreciseLocation, isFalse);
+    });
+
+    test('ignored unless the setting is exact (stale field after a switch)', () {
+      for (final g in [null, 'approximate', 'country', 'hidden']) {
+        final json = exactPublic()..['globeDiscoverability'] = g;
+        final p = ProfileModel.fromJson(json);
+        expect(p.location.latitude, 38.7301, reason: '$g');
+        expect(p.hasPreciseLocation, isFalse);
+      }
+    });
+
+    test('travel location follows it as well', () {
+      final json = exactPublic()
+        ..['travelerLocation'] = {'latitude': 48.8566, 'longitude': 2.3522};
+      final v = publicProfileView(json);
+      expect((v['travelerLocation'] as Map)['latitude'], 38.7229);
+      expect(v[kPreciseViewMarker], isTrue);
+    });
+
+    test('own-profile fallback never uses it (could be stored back as exact)',
+        () {
+      final json = exactPublic()
+        ..['userId'] = 'me'
+        ..['location'] = {'city': 'Lisbon', 'country': 'Portugal'};
+      final v = ownProfileView(json, null);
+      expect((v['location'] as Map)['latitude'], 38.7301);
+      expect(v[kPreciseViewMarker], isNot(true));
+    });
+
+    test('never written back: not stored as exact, stripped from public JSON',
+        () {
+      final w = privateProfileWrite({
+        'location': {'latitude': 38.7229, 'longitude': -9.1399},
+      }, current: {
+        'location': {'latitude': 38.7223, 'longitude': -9.1393},
+      }, publicData: exactPublic());
+      expect(w.containsKey('location'), isFalse);
+      final out = publicSafeProfileJson(publicProfileView(exactPublic()));
+      expect(out.containsKey(kPreciseLocationField), isFalse);
+      expect(out.containsKey(kPreciseViewMarker), isFalse);
+    });
+  });
+
   group('own profile: private overlay', () {
     test('exact values from profiles_private win over the public doc', () {
       PrivateProfileCache.instance.seed('me', {

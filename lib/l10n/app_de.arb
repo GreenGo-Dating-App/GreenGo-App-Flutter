@@ -3805,8 +3805,8 @@
   "globeViewProfileTooltip": "Profil ansehen",
   "globeOpenChatTooltip": "Chat öffnen",
   "globeNoConnectionsInCountryTitle": "Keine Verbindungen in {country}",
-  "discoverabilityExact": "Genau",
-  "discoverabilityExactDesc": "Pin an deinem genauen Standort (<1 km)",
+  "discoverabilityExact": "Genau (±100 m)",
+  "discoverabilityExactDesc": "Andere sehen deine Position und Entfernung auf etwa 100 m genau.",
   "discoverabilityApproximate": "Ungefähr",
   "discoverabilityApproximateDesc": "Pin in deiner Region (~50-km-Raster, Standard)",
   "discoverabilityCountry": "Land",
@@ -3815,7 +3815,7 @@
   "discoverabilityHiddenDesc": "Auf der Karte nicht auffindbar",
   "discoverabilityTitle": "Globus-Sichtbarkeit",
   "discoverabilityInfo": "Deine Verbindungen sehen dich immer auf der Karte, unabhängig von dieser Einstellung.",
-  "discoverabilityChangedExact": "Standort auf genau gesetzt",
+  "discoverabilityChangedExact": "Standort auf genau gesetzt: Andere sehen dich auf etwa 100 m genau",
   "discoverabilityChangedApproximate": "Standort auf ungefähr gesetzt",
   "discoverabilityChangedCountry": "Standort auf Landesebene gesetzt",
   "discoverabilityChangedHidden": "Du bist jetzt auf der Karte verborgen",
@@ -8217,5 +8217,7 @@
   "traderCardTitle": "Angaben zum Verkäufer",
   "traderCardNonTraderTitle": "Privater Verkäufer",
   "traderCardNonTrader": "Diese Person ist Privatperson und kein Unternehmer. Verbraucherrechte für Käufe bei Unternehmern gelten für diesen Kauf nicht.",
-  "traderCardRegister": "{register}: {number}"
+  "traderCardRegister": "{register}: {number}",
+  "distanceMeters": "{meters} m",
+  "distanceKmPrecise": "{km} km"
 }

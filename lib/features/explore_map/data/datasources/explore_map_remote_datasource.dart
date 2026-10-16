@@ -224,7 +224,9 @@ class ExploreMapRemoteDataSourceImpl implements ExploreMapRemoteDataSource {
     );
 
     return mapUser.copyWith(
-      distanceKm: double.parse(distance.toStringAsFixed(1)),
+      // 3 decimals for precise users (shown to the nearest 100 m).
+      distanceKm: double.parse(
+          distance.toStringAsFixed(mapUser.hasPreciseLocation ? 3 : 1)),
       languagesShared: shared,
       matchPercentage: matchPct,
     );

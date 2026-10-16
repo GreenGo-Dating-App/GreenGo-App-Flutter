@@ -21,7 +21,12 @@ import 'profile_geohash.dart';
 ///  * `geohash5` - precision-5 cell (~4.9 km), the nearest-first query key;
 ///  * `approxLocation` {lat, lng} - that cell's centre plus a stable per-user
 ///    offset of at most 1.5 km. What OTHER users' distances are computed from;
-///  * `age` - integer, from the date of birth.
+///  * `age` - integer, from the date of birth;
+///  * `preciseLocation` {lat, lng} - ONLY while the user's
+///    `globeDiscoverability` is 'exact' (an explicit opt-in): the
+///    discoverable location plus a stable per-user offset, at most 100 m
+///    from it. Other users' distances and globe pins use it instead of
+///    `approxLocation` (owner rule 2026-10-16).
 ///
 /// Old app versions still write the sensitive fields to the public profile;
 /// the server mirrors those into this document. This app never writes them to
@@ -32,6 +37,12 @@ const String kGeohash5Field = 'geohash5';
 const int kGeohash5Precision = 5;
 const String kApproxLocationField = 'approxLocation';
 const String kPublicAgeField = 'age';
+const String kPreciseLocationField = 'preciseLocation';
+
+/// In-memory marker set by [publicProfileView] when the location in the map
+/// is the ±100 m `preciseLocation` (distances are then shown with 100 m
+/// resolution instead of a bucket). Never written to Firestore.
+const String kPreciseViewMarker = '__preciseLocation';
 const String kVerificationPhotoPathField = 'verificationPhotoPath';
 
 /// In-memory marker on a raw profile map that already went through
@@ -92,6 +103,14 @@ bool _valid(double? lat, double? lng) =>
 (double, double)? approxCoordsOf(Map<String, dynamic>? data) =>
     _coordsOf(data?[kApproxLocationField], 'lat', 'lng');
 
+/// `preciseLocation` of a public profile map, or null. Only honoured while
+/// the profile's `globeDiscoverability` is 'exact': a user who just switched
+/// away is never shown precisely, even before the server deletes the field.
+(double, double)? preciseCoordsOf(Map<String, dynamic>? data) =>
+    data?['globeDiscoverability'] == 'exact'
+        ? _coordsOf(data?[kPreciseLocationField], 'lat', 'lng')
+        : null;
+
 /// Valid `location` coordinates in a raw map, or null.
 (double, double)? homeCoordsOf(Map<String, dynamic>? data) =>
     _coordsOf(data?['location'], 'latitude', 'longitude');
@@ -104,18 +123,30 @@ Map<String, dynamic> _withCoords(Object? base, double lat, double lng) => {
 
 /// How ANOTHER user's raw profile is shown: their exact coordinates (still
 /// present on profiles written by old app versions) are replaced by the
-/// coarse `approxLocation`, so every distance computed from the result is the
-/// approximate one. Profiles the server has not processed yet (no
-/// `approxLocation`) are returned as they are.
-Map<String, dynamic> publicProfileView(Map<String, dynamic> data) {
+/// server's public position, so every distance computed from the result is
+/// the published one: `preciseLocation` (±100 m, users who chose 'exact'
+/// globe discoverability; the map is then marked with [kPreciseViewMarker])
+/// or else the coarse `approxLocation`. Profiles the server has not
+/// processed yet (neither field) are returned as they are.
+///
+/// [usePrecise] false = approximate only (the own-profile fallback, whose
+/// coordinates must never be mistaken for exact ones).
+Map<String, dynamic> publicProfileView(Map<String, dynamic> data,
+    {bool usePrecise = true}) {
   if (data[kOwnViewMarker] == true) return data;
-  final approx = approxCoordsOf(data);
-  if (approx == null) return data;
+  final precise = usePrecise ? preciseCoordsOf(data) : null;
+  final coords = precise ?? approxCoordsOf(data);
+  if (coords == null) return data;
   final out = Map<String, dynamic>.from(data);
-  out['location'] = _withCoords(data['location'], approx.$1, approx.$2);
+  out['location'] = _withCoords(data['location'], coords.$1, coords.$2);
   final travel = data['travelerLocation'];
   if (travel is Map) {
-    out['travelerLocation'] = _withCoords(travel, approx.$1, approx.$2);
+    out['travelerLocation'] = _withCoords(travel, coords.$1, coords.$2);
+  }
+  if (precise != null) {
+    out[kPreciseViewMarker] = true;
+  } else {
+    out.remove(kPreciseViewMarker);
   }
   return out;
 }
@@ -154,7 +185,9 @@ Map<String, dynamic> ownProfileView(
     // (which lags a just-edited birthday by one trigger run).
     if (private['dateOfBirth'] != null) out.remove(kPublicAgeField);
   }
-  if (homeCoordsOf(out) == null) out = publicProfileView(out);
+  if (homeCoordsOf(out) == null) {
+    out = publicProfileView(out, usePrecise: false);
+  }
   out[kOwnViewMarker] = true;
   return out;
 }
@@ -208,9 +241,12 @@ Map<String, dynamic> publicSafeProfileJson(Map<String, dynamic> json,
   final out = Map<String, dynamic>.from(json)
     ..removeWhere((k, _) => kSensitiveTopLevelFields.contains(k))
     ..remove(kOwnViewMarker)
-    // Server-computed; a client write would only be overwritten.
+    ..remove(kPreciseViewMarker)
+    // Server-computed; a client write would only be overwritten (and the
+    // rules refuse it).
     ..remove(kGeohash5Field)
     ..remove(kApproxLocationField)
+    ..remove(kPreciseLocationField)
     ..remove(kPublicAgeField)
     ..remove(kVerificationPhotoPathField);
   for (final key in const ['location', 'travelerLocation']) {
@@ -261,10 +297,12 @@ Map<String, dynamic> privateProfileWrite(
 }) {
   final out = <String, dynamic>{};
   final approx = approxCoordsOf(publicData);
-  bool isApprox((double, double) c) =>
-      approx != null &&
-      (c.$1 - approx.$1).abs() < 1e-9 &&
-      (c.$2 - approx.$2).abs() < 1e-9;
+  final precise = _coordsOf(publicData?[kPreciseLocationField], 'lat', 'lng');
+  bool same((double, double) c, (double, double)? p) =>
+      p != null && (c.$1 - p.$1).abs() < 1e-9 && (c.$2 - p.$2).abs() < 1e-9;
+  // Server-published positions (approx or ±100 m precise) are never stored
+  // back as the exact location.
+  bool isApprox((double, double) c) => same(c, approx) || same(c, precise);
 
   final home = homeCoordsOf(json);
   if (home != null && !isApprox(home)) {

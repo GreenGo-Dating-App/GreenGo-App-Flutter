@@ -96,6 +96,7 @@ class Profile extends Equatable {
     this.isBanned = false,
     this.isIdVerified = false,
     this.publicAge,
+    this.hasPreciseLocation = false,
     this.verificationPhotoPath,
   });
   final String userId;
@@ -265,6 +266,13 @@ class Profile extends Equatable {
   /// the exact birth date is known.
   final int? publicAge;
 
+  /// ANOTHER user's [location] / [travelerLocation] is their server-published
+  /// `preciseLocation` (±100 m; they chose 'exact' globe discoverability)
+  /// rather than the coarse `approxLocation`: distances to them are shown
+  /// with 100 m resolution (core/utils/distance_bucket.dart). Read-only,
+  /// never written.
+  final bool hasPreciseLocation;
+
   /// Storage path of the ID-verification selfie (own profile only, from
   /// `profiles_private`). Admins open it through `getVerificationPhotoUrl`.
   final String? verificationPhotoPath;
@@ -407,6 +415,7 @@ class Profile extends Equatable {
         isBanned,
         isIdVerified,
         publicAge,
+        hasPreciseLocation,
         verificationPhotoPath,
       ];
 
@@ -577,6 +586,7 @@ class Profile extends Equatable {
       isIdVerified: isIdVerified ?? this.isIdVerified,
       // A new birth date makes the server's age stale: derive it locally.
       publicAge: dateOfBirth != null ? null : publicAge,
+      hasPreciseLocation: hasPreciseLocation,
       verificationPhotoPath:
           verificationPhotoPath ?? this.verificationPhotoPath,
     );

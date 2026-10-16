@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../profile/data/private_profile.dart';
 import '../../domain/entities/globe_user.dart';
 import '../country_centroids.dart';
 
@@ -81,17 +82,12 @@ class GlobeUserModel extends GlobeUser {
     double? realCountryLat;
     double? realCountryLng;
 
-    if (pinType == GlobePinType.currentUser) {
-      // Current user: show at their discoverability level
-      pinCoords = _computePinCoords(
-        discoverability, effectiveLat, effectiveLng, effectiveCountry, rng,
-      );
-    } else {
-      // Matched and discovery users: respect their precision preference
-      pinCoords = _computePinCoords(
-        discoverability, effectiveLat, effectiveLng, effectiveCountry, rng,
-      );
-    }
+    // Everyone (own pin included) is shown at their discoverability level.
+    // 'exact' = the server-published ±100 m preciseLocation, as is.
+    pinCoords = pinCoordsFor(
+      discoverability, effectiveLat, effectiveLng, effectiveCountry, rng,
+      precise: preciseCoordsOf(data),
+    );
 
     // Compute real country centroid for traveler flight path arc
     if (isTravelerActive && travelerCountry != null) {
@@ -133,15 +129,21 @@ class GlobeUserModel extends GlobeUser {
     }
   }
 
-  static List<double> _computePinCoords(
+  /// Pin position for [discoverability]. 'exact' uses [precise] (the
+  /// profile's server-published `preciseLocation`, already within 100 m and
+  /// offset per user) with NO extra client jitter; without it (not computed
+  /// yet) it falls back to the legacy jitter around [lat]/[lng].
+  static List<double> pinCoordsFor(
     GlobeDiscoverability discoverability,
     double lat,
     double lng,
     String country,
-    Random rng,
-  ) {
+    Random rng, {
+    (double, double)? precise,
+  }) {
     switch (discoverability) {
       case GlobeDiscoverability.exact:
+        if (precise != null) return [precise.$1, precise.$2];
         return getExactJittered(lat, lng, random: rng);
       case GlobeDiscoverability.approximate:
         return getHilbertCentroid(lat, lng, random: rng);

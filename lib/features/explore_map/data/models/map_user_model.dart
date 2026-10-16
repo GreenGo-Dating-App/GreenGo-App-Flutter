@@ -15,6 +15,7 @@ class MapUserModel extends MapUser {
     super.displayName,
     super.photoUrl,
     super.distanceKm,
+    super.hasPreciseLocation,
   });
 
   /// Create a [MapUserModel] from a Firestore document snapshot.
@@ -25,7 +26,9 @@ class MapUserModel extends MapUser {
   /// Security P1-4: the coordinates come from the server-computed public
   /// `approxLocation` (geohash-5 cell centre + a stable per-user offset)
   /// whenever it exists; exact coordinates still present on profiles written
-  /// by old app versions are not used for them.
+  /// by old app versions are not used for them. Users who chose 'exact'
+  /// globe discoverability publish a ±100 m `preciseLocation` instead: it is
+  /// used as is (already offset server-side; snapping would only add error).
   factory MapUserModel.fromFirestore(DocumentSnapshot doc) {
     final data = publicProfileView(doc.data() as Map<String, dynamic>);
     final location = data['location'] as Map<String, dynamic>?;
@@ -47,9 +50,11 @@ class MapUserModel extends MapUser {
     final rawLat = (locSource?['latitude'] as num?)?.toDouble() ?? 0.0;
     final rawLng = (locSource?['longitude'] as num?)?.toDouble() ?? 0.0;
 
-    // Snap to 3 decimal places for privacy (~110m grid)
-    final snappedLat = _snapCoordinate(rawLat);
-    final snappedLng = _snapCoordinate(rawLng);
+    // Snap to 3 decimal places for privacy (~110m grid); a precise location
+    // is already a published ±100 m value.
+    final precise = data[kPreciseViewMarker] == true;
+    final snappedLat = precise ? rawLat : _snapCoordinate(rawLat);
+    final snappedLng = precise ? rawLng : _snapCoordinate(rawLng);
 
     final languages = data['languages'] != null
         ? List<String>.from(data['languages'] as List)
@@ -72,6 +77,7 @@ class MapUserModel extends MapUser {
       displayName: data['displayName'] as String?,
       photoUrl: photoUrls.isNotEmpty ? photoUrls.first : null,
       distanceKm: null, // Calculated separately via Haversine
+      hasPreciseLocation: precise,
     );
   }
 
@@ -88,6 +94,7 @@ class MapUserModel extends MapUser {
       'displayName': displayName,
       'photoUrl': photoUrl,
       'distanceKm': distanceKm,
+      'hasPreciseLocation': hasPreciseLocation,
     };
   }
 
@@ -115,6 +122,7 @@ class MapUserModel extends MapUser {
       displayName: displayName ?? this.displayName,
       photoUrl: photoUrl ?? this.photoUrl,
       distanceKm: distanceKm ?? this.distanceKm,
+      hasPreciseLocation: hasPreciseLocation,
     );
   }
 

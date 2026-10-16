@@ -65,4 +65,49 @@ void main() {
     expect(distanceFilterLabel(l10n, null), '5,000+ km');
     expect(distanceFilterLabel(l10n, 37), '< 50 km');
   });
+
+  group('precise distance (globeDiscoverability exact, ±100 m)', () {
+    final en = lookupAppLocalizations(const Locale('en'));
+    final de = lookupAppLocalizations(const Locale('de'));
+    final it = lookupAppLocalizations(const Locale('it'));
+
+    test('boundaries: 100 m resolution < 1 km, one decimal to 10 km, whole km after', () {
+      expect(preciseDistanceLabel(en, 0.04), '100 m');
+      expect(preciseDistanceLabel(en, 0.0), '100 m');
+      expect(preciseDistanceLabel(en, 0.149), '100 m');
+      expect(preciseDistanceLabel(en, 0.35), '400 m');
+      expect(preciseDistanceLabel(en, 0.94), '900 m');
+      expect(preciseDistanceLabel(en, 0.95), '1.0 km');
+      expect(preciseDistanceLabel(en, 1.0), '1.0 km');
+      expect(preciseDistanceLabel(en, 1.24), '1.2 km');
+      expect(preciseDistanceLabel(en, 9.94), '9.9 km');
+      expect(preciseDistanceLabel(en, 9.95), '10 km');
+      expect(preciseDistanceLabel(en, 10.4), '10 km');
+      expect(preciseDistanceLabel(en, 23.4), '23 km');
+      expect(preciseDistanceLabel(en, 1234.4), '1,234 km');
+    });
+
+    test('unknown distances stay empty', () {
+      expect(preciseDistanceLabel(en, null), '');
+      expect(preciseDistanceLabel(en, double.nan), '');
+      expect(preciseDistanceLabel(en, -1), '');
+    });
+
+    test('localized number formatting', () {
+      expect(preciseDistanceLabel(de, 1.24), '1,2 km');
+      expect(preciseDistanceLabel(it, 9.94), '9,9 km');
+      expect(preciseDistanceLabel(de, 1234.4), '1.234 km');
+      expect(preciseDistanceLabel(de, 0.35), '400 m');
+    });
+
+    test('distanceLabel: precise flag switches format; buckets unchanged otherwise', () {
+      expect(distanceLabel(en, 0.35, precise: true), '400 m');
+      expect(distanceLabel(en, 0.35), '< 2 km');
+      expect(distanceLabel(en, 4.81, precise: true), '4.8 km');
+      expect(distanceLabel(en, 4.81), '< 5 km');
+      // 0 = "no location" for candidates, precise or not.
+      expect(distanceLabel(en, 0, precise: true), '');
+      expect(distanceLabel(en, 0, zeroIsUnknown: false, precise: true), '100 m');
+    });
+  });
 }
