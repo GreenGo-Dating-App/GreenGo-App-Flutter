@@ -69,6 +69,7 @@ import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
 import '../widgets/ai_services_settings_card.dart';
+import '../manage_subscription.dart';
 import '../widgets/edit_section_card.dart';
 import 'edit_basic_info_screen.dart';
 import 'edit_bio_screen.dart';
@@ -483,6 +484,16 @@ class EditProfileScreen extends StatelessWidget {
                             onTap: () => _showLanguageDialog(context, languageProvider),
                           );
                         },
+                      ),
+                      const SizedBox(height: MenuRow.gap),
+                      // Manage subscription: where Terms 7.3 sends people to
+                      // cancel (web: Stripe billing portal; app: the store).
+                      EditSectionCard(
+                        key: const ValueKey('profile-manage-subscription'),
+                        title: AppLocalizations.of(context)!.manageSubscriptionTitle,
+                        subtitle: AppLocalizations.of(context)!.manageSubscriptionSubtitle,
+                        icon: Icons.card_membership,
+                        onTap: () => ManageSubscription.open(context),
                       ),
                       const SizedBox(height: MenuRow.gap),
                       // Change Password Section

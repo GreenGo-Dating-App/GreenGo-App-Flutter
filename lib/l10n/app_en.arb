@@ -14609,5 +14609,37 @@
         "type": "int"
       }
     }
+  },
+  "manageSubscriptionTitle": "Manage subscription",
+  "@manageSubscriptionTitle": {
+    "description": "Profile > Account Settings > Manage subscription (Terms 7.3 cancel path, owner 2026-10-16)."
+  },
+  "manageSubscriptionSubtitle": "Change or cancel your membership",
+  "@manageSubscriptionSubtitle": {
+    "description": "Profile > Account Settings > Manage subscription (Terms 7.3 cancel path, owner 2026-10-16)."
+  },
+  "manageSubscriptionNoWeb": "We found no membership bought on the web for this account. If you subscribed in the app, cancel it in the store you used:",
+  "@manageSubscriptionNoWeb": {
+    "description": "Profile > Account Settings > Manage subscription (Terms 7.3 cancel path, owner 2026-10-16)."
+  },
+  "manageSubscriptionStoreHelp": "Memberships bought in the app are managed by the store you used:",
+  "@manageSubscriptionStoreHelp": {
+    "description": "Profile > Account Settings > Manage subscription (Terms 7.3 cancel path, owner 2026-10-16)."
+  },
+  "manageSubscriptionGooglePlay": "Google Play (Android)",
+  "@manageSubscriptionGooglePlay": {
+    "description": "Profile > Account Settings > Manage subscription (Terms 7.3 cancel path, owner 2026-10-16)."
+  },
+  "manageSubscriptionGooglePlayPath": "Payments & subscriptions > Subscriptions",
+  "@manageSubscriptionGooglePlayPath": {
+    "description": "Profile > Account Settings > Manage subscription (Terms 7.3 cancel path, owner 2026-10-16)."
+  },
+  "manageSubscriptionAppStore": "App Store (iPhone)",
+  "@manageSubscriptionAppStore": {
+    "description": "Profile > Account Settings > Manage subscription (Terms 7.3 cancel path, owner 2026-10-16)."
+  },
+  "manageSubscriptionAppStorePath": "Apple ID settings > Subscriptions",
+  "@manageSubscriptionAppStorePath": {
+    "description": "Profile > Account Settings > Manage subscription (Terms 7.3 cancel path, owner 2026-10-16)."
   }
 }

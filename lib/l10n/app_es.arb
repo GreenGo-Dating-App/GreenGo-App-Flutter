@@ -8104,5 +8104,13 @@
   "bcCheckDone": "Hecho",
   "bcCheckMissing": "Falta: toca para añadir",
   "bcCheckOptional": "Sin configurar",
-  "bcTodoCompany": "{count, plural, =1{Falta 1 dato de la empresa en Ajustes} other{Faltan {count} datos de la empresa en Ajustes}}"
+  "bcTodoCompany": "{count, plural, =1{Falta 1 dato de la empresa en Ajustes} other{Faltan {count} datos de la empresa en Ajustes}}",
+  "manageSubscriptionTitle": "Gestionar suscripción",
+  "manageSubscriptionSubtitle": "Cambia o cancela tu membresía",
+  "manageSubscriptionNoWeb": "No encontramos ninguna membresía comprada en la web para esta cuenta. Si te suscribiste en la app, cancélala en la tienda que usaste:",
+  "manageSubscriptionStoreHelp": "Las membresías compradas en la app se gestionan en la tienda que usaste:",
+  "manageSubscriptionGooglePlay": "Google Play (Android)",
+  "manageSubscriptionGooglePlayPath": "Pagos y suscripciones > Suscripciones",
+  "manageSubscriptionAppStore": "App Store (iPhone)",
+  "manageSubscriptionAppStorePath": "Ajustes del ID de Apple > Suscripciones"
 }

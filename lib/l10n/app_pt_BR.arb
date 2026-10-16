@@ -8104,5 +8104,13 @@
   "bcCheckDone": "Feito",
   "bcCheckMissing": "Faltando: toque para adicionar",
   "bcCheckOptional": "Não definido",
-  "bcTodoCompany": "{count, plural, =1{Falta 1 dado da empresa nas Configurações} other{Faltam {count} dados da empresa nas Configurações}}"
+  "bcTodoCompany": "{count, plural, =1{Falta 1 dado da empresa nas Configurações} other{Faltam {count} dados da empresa nas Configurações}}",
+  "manageSubscriptionTitle": "Gerenciar assinatura",
+  "manageSubscriptionSubtitle": "Alterar ou cancelar sua assinatura",
+  "manageSubscriptionNoWeb": "Não encontramos nenhuma assinatura comprada na web para esta conta. Se você assinou pelo app, cancele na loja que usou:",
+  "manageSubscriptionStoreHelp": "As assinaturas compradas no app são gerenciadas na loja que você usou:",
+  "manageSubscriptionGooglePlay": "Google Play (Android)",
+  "manageSubscriptionGooglePlayPath": "Pagamentos e assinaturas > Assinaturas",
+  "manageSubscriptionAppStore": "App Store (iPhone)",
+  "manageSubscriptionAppStorePath": "Ajustes do ID Apple > Assinaturas"
 }

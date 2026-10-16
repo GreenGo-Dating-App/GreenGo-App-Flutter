@@ -8104,5 +8104,13 @@
   "bcCheckDone": "Fatto",
   "bcCheckMissing": "Mancante: tocca per aggiungere",
   "bcCheckOptional": "Non impostato",
-  "bcTodoCompany": "{count, plural, =1{Manca 1 dato dell'azienda in Impostazioni} other{Mancano {count} dati dell'azienda in Impostazioni}}"
+  "bcTodoCompany": "{count, plural, =1{Manca 1 dato dell'azienda in Impostazioni} other{Mancano {count} dati dell'azienda in Impostazioni}}",
+  "manageSubscriptionTitle": "Gestisci abbonamento",
+  "manageSubscriptionSubtitle": "Modifica o annulla l'abbonamento",
+  "manageSubscriptionNoWeb": "Non abbiamo trovato abbonamenti acquistati sul web per questo account. Se ti sei abbonato nell'app, annulla nello store che hai usato:",
+  "manageSubscriptionStoreHelp": "Gli abbonamenti acquistati nell'app si gestiscono nello store che hai usato:",
+  "manageSubscriptionGooglePlay": "Google Play (Android)",
+  "manageSubscriptionGooglePlayPath": "Pagamenti e abbonamenti > Abbonamenti",
+  "manageSubscriptionAppStore": "App Store (iPhone)",
+  "manageSubscriptionAppStorePath": "Impostazioni ID Apple > Abbonamenti"
 }

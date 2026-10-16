@@ -8104,5 +8104,13 @@
   "bcCheckDone": "Erledigt",
   "bcCheckMissing": "Fehlt: tippen zum Hinzufügen",
   "bcCheckOptional": "Nicht festgelegt",
-  "bcTodoCompany": "{count, plural, =1{1 Unternehmensangabe fehlt in den Einstellungen} other{{count} Unternehmensangaben fehlen in den Einstellungen}}"
+  "bcTodoCompany": "{count, plural, =1{1 Unternehmensangabe fehlt in den Einstellungen} other{{count} Unternehmensangaben fehlen in den Einstellungen}}",
+  "manageSubscriptionTitle": "Abo verwalten",
+  "manageSubscriptionSubtitle": "Mitgliedschaft ändern oder kündigen",
+  "manageSubscriptionNoWeb": "Für dieses Konto wurde keine im Web gekaufte Mitgliedschaft gefunden. Wenn du in der App abonniert hast, kündige im Store, den du verwendet hast:",
+  "manageSubscriptionStoreHelp": "In der App gekaufte Mitgliedschaften werden im verwendeten Store verwaltet:",
+  "manageSubscriptionGooglePlay": "Google Play (Android)",
+  "manageSubscriptionGooglePlayPath": "Zahlungen & Abos > Abos",
+  "manageSubscriptionAppStore": "App Store (iPhone)",
+  "manageSubscriptionAppStorePath": "Apple-ID-Einstellungen > Abonnements"
 }

@@ -7530,5 +7530,13 @@
   "bcCheckDone": "Fait",
   "bcCheckMissing": "Manquant : touchez pour ajouter",
   "bcCheckOptional": "Non renseigné",
-  "bcTodoCompany": "{count, plural, =1{1 information sur l'entreprise manque dans Paramètres} other{{count} informations sur l'entreprise manquent dans Paramètres}}"
+  "bcTodoCompany": "{count, plural, =1{1 information sur l'entreprise manque dans Paramètres} other{{count} informations sur l'entreprise manquent dans Paramètres}}",
+  "manageSubscriptionTitle": "Gérer l'abonnement",
+  "manageSubscriptionSubtitle": "Modifier ou résilier votre abonnement",
+  "manageSubscriptionNoWeb": "Aucun abonnement acheté sur le web n'a été trouvé pour ce compte. Si vous vous êtes abonné dans l'app, résiliez-le dans la boutique utilisée :",
+  "manageSubscriptionStoreHelp": "Les abonnements achetés dans l'app se gèrent dans la boutique utilisée :",
+  "manageSubscriptionGooglePlay": "Google Play (Android)",
+  "manageSubscriptionGooglePlayPath": "Paiements et abonnements > Abonnements",
+  "manageSubscriptionAppStore": "App Store (iPhone)",
+  "manageSubscriptionAppStorePath": "Réglages de l'identifiant Apple > Abonnements"
 }
