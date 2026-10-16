@@ -25496,4 +25496,132 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get storefrontAddressRemove => 'Supprimer l\'adresse';
+
+  @override
+  String get bcTitle => 'Espace Business';
+
+  @override
+  String get bcExploreButton => 'Espace Business';
+
+  @override
+  String get bcTabOverview => 'Aperçu';
+
+  @override
+  String get bcTabCustomers => 'Clients';
+
+  @override
+  String get bcTabSales => 'Ventes';
+
+  @override
+  String get bcTabListings => 'Annonces';
+
+  @override
+  String get bcTabMarketing => 'Marketing';
+
+  @override
+  String get bcTabStorefront => 'Vitrine';
+
+  @override
+  String get bcThisMonth => 'Ce mois-ci';
+
+  @override
+  String get bcActionNeeded => 'À faire';
+
+  @override
+  String get bcQuickActions => 'Actions rapides';
+
+  @override
+  String get bcKpiSales => 'Ventes';
+
+  @override
+  String get bcKpiPayout => 'Ce que vous recevez';
+
+  @override
+  String get bcKpiTickets => 'Billets vendus';
+
+  @override
+  String get bcKpiFees => 'Frais GreenGo';
+
+  @override
+  String get bcKpiFollowers => 'Abonnés';
+
+  @override
+  String get bcKpiLeads => 'Nouveaux contacts';
+
+  @override
+  String get bcKpiRating => 'Note';
+
+  @override
+  String get bcTodoConnectPayments =>
+      'Connectez Stripe ou Mercado Pago pour vendre des billets payants';
+
+  @override
+  String bcTodoBookingRequests(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count demandes de réservation à traiter',
+      one: '1 demande de réservation à traiter',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String bcTodoPayments(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count paiements à confirmer',
+      one: '1 paiement à confirmer',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get bcAllCaughtUp => 'Tout est à jour : rien ne vous attend.';
+
+  @override
+  String get bcCustomersIntro =>
+      'Les personnes qui vous ont contacté, vous suivent ou ont réservé chez vous.';
+
+  @override
+  String get bcBookingsTitle => 'Réservations';
+
+  @override
+  String get bcBookingsSubtitle =>
+      'Demandes et participants confirmés de vos expériences';
+
+  @override
+  String get bcSalesIntro =>
+      'Paiements, versements et vos factures de frais GreenGo.';
+
+  @override
+  String get bcPaymentsToConfirmTitle => 'Paiements à confirmer';
+
+  @override
+  String get bcPaymentsToConfirmSubtitle =>
+      'Anciennes commandes payées hors de l\'app';
+
+  @override
+  String get bcListingsIntro =>
+      'Vos événements et expériences, et l\'enregistrement à l\'entrée.';
+
+  @override
+  String get bcEventsSubtitle =>
+      'Créez, modifiez, mettez en avant ou annulez vos événements';
+
+  @override
+  String get bcExperiencesTitle => 'Mes expériences';
+
+  @override
+  String get bcExperiencesSubtitle =>
+      'Gérées dans Mon espace : dates, sessions et participants';
+
+  @override
+  String get bcMarketingIntro =>
+      'Touchez plus de monde et suivez vos résultats.';
+
+  @override
+  String get bcStorefrontIntro =>
+      'Ce que voient vos clients : votre page, adresse, horaires et vérification.';
 }

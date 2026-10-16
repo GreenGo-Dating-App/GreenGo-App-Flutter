@@ -58,7 +58,7 @@ import '../../../passport/presentation/screens/cultural_passport_screen.dart';
 import '../../../referral/data/services/referral_service.dart';
 import '../../../referral/presentation/screens/referral_screen.dart';
 import '../../../business/presentation/screens/business_account_screen.dart';
-import '../../../business/presentation/screens/business_hub_screen.dart';
+import '../../../business/presentation/screens/business_center_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../data/private_profile.dart';
 import '../../data/profile_geohash.dart';
@@ -929,7 +929,7 @@ class EditProfileScreen extends StatelessWidget {
       MaterialPageRoute(
         builder: (context) => BlocProvider.value(
           value: profileBloc,
-          child: BusinessHubScreen(profile: currentProfile),
+          child: BusinessCenterScreen(profile: currentProfile),
         ),
       ),
     );

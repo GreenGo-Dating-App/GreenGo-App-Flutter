@@ -14262,5 +14262,151 @@
   "storefrontAddressRemove": "Remove address",
   "@storefrontAddressRemove": {
     "description": "Storefront editor / public storefront: the business public address picked with the event-style search + map (owner rule 2026-10-14)."
+  },
+  "bcTitle": "Business Center",
+  "@bcTitle": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcExploreButton": "Business Center",
+  "@bcExploreButton": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcTabOverview": "Overview",
+  "@bcTabOverview": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcTabCustomers": "Customers",
+  "@bcTabCustomers": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcTabSales": "Sales",
+  "@bcTabSales": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcTabListings": "Listings",
+  "@bcTabListings": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcTabMarketing": "Marketing",
+  "@bcTabMarketing": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcTabStorefront": "Storefront",
+  "@bcTabStorefront": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcThisMonth": "This month",
+  "@bcThisMonth": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcActionNeeded": "Action needed",
+  "@bcActionNeeded": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcQuickActions": "Quick actions",
+  "@bcQuickActions": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcKpiSales": "Sales",
+  "@bcKpiSales": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcKpiPayout": "Your payout",
+  "@bcKpiPayout": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcKpiTickets": "Tickets sold",
+  "@bcKpiTickets": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcKpiFees": "GreenGo fees",
+  "@bcKpiFees": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcKpiFollowers": "Followers",
+  "@bcKpiFollowers": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcKpiLeads": "New leads",
+  "@bcKpiLeads": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcKpiRating": "Rating",
+  "@bcKpiRating": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcTodoConnectPayments": "Connect Stripe or Mercado Pago to sell paid tickets",
+  "@bcTodoConnectPayments": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcTodoBookingRequests": "{count, plural, =1{1 booking request to answer} other{{count} booking requests to answer}}",
+  "@bcTodoBookingRequests": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14).",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "bcTodoPayments": "{count, plural, =1{1 payment to confirm} other{{count} payments to confirm}}",
+  "@bcTodoPayments": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14).",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "bcAllCaughtUp": "All caught up: nothing needs your attention.",
+  "@bcAllCaughtUp": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcCustomersIntro": "People who contacted you, follow you or booked with you.",
+  "@bcCustomersIntro": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcBookingsTitle": "Bookings",
+  "@bcBookingsTitle": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcBookingsSubtitle": "Requests and confirmed guests of your experiences",
+  "@bcBookingsSubtitle": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcSalesIntro": "Payments, payouts and your GreenGo fee invoices.",
+  "@bcSalesIntro": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcPaymentsToConfirmTitle": "Payments to confirm",
+  "@bcPaymentsToConfirmTitle": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcPaymentsToConfirmSubtitle": "Older orders paid outside the app",
+  "@bcPaymentsToConfirmSubtitle": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcListingsIntro": "Your events and experiences, and door check-in.",
+  "@bcListingsIntro": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcEventsSubtitle": "Create, edit, feature or cancel your events",
+  "@bcEventsSubtitle": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcExperiencesTitle": "My experiences",
+  "@bcExperiencesTitle": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcExperiencesSubtitle": "Managed in My Space: dates, sessions and guests",
+  "@bcExperiencesSubtitle": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcMarketingIntro": "Reach more people and see how you are doing.",
+  "@bcMarketingIntro": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
+  },
+  "bcStorefrontIntro": "What customers see: your page, address, hours and verification.",
+  "@bcStorefrontIntro": {
+    "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
   }
 }

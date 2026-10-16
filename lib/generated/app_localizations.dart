@@ -43043,6 +43043,210 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Remove address'**
   String get storefrontAddressRemove;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Business Center'**
+  String get bcTitle;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Business Center'**
+  String get bcExploreButton;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Overview'**
+  String get bcTabOverview;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Customers'**
+  String get bcTabCustomers;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Sales'**
+  String get bcTabSales;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Listings'**
+  String get bcTabListings;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Marketing'**
+  String get bcTabMarketing;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Storefront'**
+  String get bcTabStorefront;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'This month'**
+  String get bcThisMonth;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Action needed'**
+  String get bcActionNeeded;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Quick actions'**
+  String get bcQuickActions;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Sales'**
+  String get bcKpiSales;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Your payout'**
+  String get bcKpiPayout;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Tickets sold'**
+  String get bcKpiTickets;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo fees'**
+  String get bcKpiFees;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Followers'**
+  String get bcKpiFollowers;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'New leads'**
+  String get bcKpiLeads;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Rating'**
+  String get bcKpiRating;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Connect Stripe or Mercado Pago to sell paid tickets'**
+  String get bcTodoConnectPayments;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 booking request to answer} other{{count} booking requests to answer}}'**
+  String bcTodoBookingRequests(int count);
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 payment to confirm} other{{count} payments to confirm}}'**
+  String bcTodoPayments(int count);
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'All caught up: nothing needs your attention.'**
+  String get bcAllCaughtUp;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'People who contacted you, follow you or booked with you.'**
+  String get bcCustomersIntro;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Bookings'**
+  String get bcBookingsTitle;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Requests and confirmed guests of your experiences'**
+  String get bcBookingsSubtitle;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Payments, payouts and your GreenGo fee invoices.'**
+  String get bcSalesIntro;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Payments to confirm'**
+  String get bcPaymentsToConfirmTitle;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Older orders paid outside the app'**
+  String get bcPaymentsToConfirmSubtitle;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Your events and experiences, and door check-in.'**
+  String get bcListingsIntro;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Create, edit, feature or cancel your events'**
+  String get bcEventsSubtitle;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'My experiences'**
+  String get bcExperiencesTitle;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Managed in My Space: dates, sessions and guests'**
+  String get bcExperiencesSubtitle;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'Reach more people and see how you are doing.'**
+  String get bcMarketingIntro;
+
+  /// Business Center (CRM-style business page, owner request 2026-10-14).
+  ///
+  /// In en, this message translates to:
+  /// **'What customers see: your page, address, hours and verification.'**
+  String get bcStorefrontIntro;
 }
 
 class _AppLocalizationsDelegate

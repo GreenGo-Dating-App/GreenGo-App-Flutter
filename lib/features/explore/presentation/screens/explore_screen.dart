@@ -37,6 +37,7 @@ import '../../../../core/utils/display_image.dart';
 import '../../../../core/utils/first_screen_gate.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../../core/utils/country_names_l10n.dart';
+import '../../../business/presentation/screens/business_center_screen.dart';
 import '../../../business/presentation/screens/business_storefront_screen.dart';
 import '../../../chat/presentation/screens/conversations_screen.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
@@ -2442,6 +2443,21 @@ class _ExploreScreenState extends State<ExploreScreen> {
             ),
           ),
         ),
+        // Business Center (CRM-style business page) for business accounts.
+        if (_me?.isBusiness ?? false) ...[
+          const SizedBox(width: 8),
+          KeyedSubtree(
+            key: const ValueKey('explore-business-center'),
+            child: _headerIconButton(
+              icon: Icons.storefront_outlined,
+              tooltip: l10n.bcExploreButton,
+              onTap: () {
+                final me = _me;
+                if (me != null) Navigator.of(context).push(BusinessCenterScreen.route(me));
+              },
+            ),
+          ),
+        ],
         const SizedBox(width: 8),
         _notificationBell(context, l10n),
       ],
