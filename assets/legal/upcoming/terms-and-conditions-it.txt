@@ -710,9 +710,10 @@ a) Prima che le funzioni di IA trattino per la prima volta i tuoi contenuti
    l'assistente di IA), ti indichiamo quale fornitore viene utilizzato e che
    cosa viene inviato, e ti chiediamo il consenso. Puoi revocare il tuo
    consenso nelle Impostazioni.
-b) La traduzione di contenuti pubblici, come Eventi, Community e annunci,
-   utilizza un servizio di traduzione condiviso che riceve il testo senza
-   alcun dato personale. Non richiede il tuo consenso.
+b) I contenuti pubblici, come Eventi, Community e annunci, sono tradotti con
+   Google Cloud Translation tramite una cache condivisa sui nostri server.
+   Viene inviato solo il testo, senza alcun dato personale. Questo non
+   richiede il tuo consenso.
 c) L'Informativa sulla privacy (sezione 9) contiene i dettagli.
 
 14.3 I risultati dell'IA possono essere errati, incompleti o culturalmente

@@ -55,8 +55,7 @@ and talk across language barriers. It includes:
 - chat with translation;
 - groups and communities;
 - events and experiences;
-- business pages;
-- learning features.
+- business pages.
 
 GreenGo is a social and cultural discovery service, not a service for finding
 romantic or sexual partners.
@@ -84,8 +83,8 @@ applies to them too.
     you ask, or to check a message someone has reported.
 - If you verify your age with an identity document, we delete the image as
   soon as the check is finished. We keep only the result.
-- AI features (translation, voice playback, smart replies, the AI coach) run
-  through our servers. They use Google services, and our support assistant
+- AI features (translation, read-aloud, smart replies and word breakdown)
+  run through our servers. They use Google services, and our support assistant
   uses Anthropic's Claude. We ask for your consent before you first use
   them, and the support assistant is clearly labelled as AI.
 - You can delete your account at any time:
@@ -180,7 +179,7 @@ c) Usage data
    - The features you use.
    - People, communities and events you view, follow, like or join.
    - Your coin and membership history.
-   - Your learning progress, achievements and streaks.
+   - Your achievements and streaks.
    - Whether you are online and when you were last seen.
 
 d) Analytics data
@@ -291,10 +290,9 @@ Purpose                              | What we use                | Legal basis
                                      |                            | LGPD 7 IX). You can object (16.2).
 4. Messaging, groups, communities,   | Content, account           | Contract (GDPR 6(1)(b); LGPD 7 V)
    events, bookings                  |                            |
-5. AI features: translation, voice   | The text or audio you      | Contract, after your consent to the
-   playback, smart replies, grammar  | choose to process          | AI feature (GDPR 6(1)(a)/(b); LGPD
-   help, AI coach, voice-message     |                            | 7 I/V). See section 9.
-   transcription                     |                            |
+5. AI features: translation,        | The text you choose to     | Contract, after your consent to the
+   read-aloud, smart replies, word   | process                    | AI feature (GDPR 6(1)(a)/(b); LGPD
+   breakdown                         |                            | 7 I/V). See section 9.
 6. Age verification with an ID       | ID image, date of birth    | Explicit consent (GDPR 9(2)(a);
    document                          | read from it               | LGPD 11 I). See section 8.
 7. Selfie verification               | Selfie, profile photos     | Explicit consent (GDPR 9(2)(a);
@@ -524,14 +522,13 @@ We will never sell, lease, trade or otherwise profit from biometric data.
 
 Feature                          | Provider (acting for us)        | What is sent
 ---------------------------------|---------------------------------|----------------------------
-Translation of messages, posts   | Google Cloud Translation        | The text to translate
-and public content               |                                 |
-Voice playback (text-to-speech)  | Google Cloud Text-to-Speech     | The text to read aloud
-Smart replies, grammar help,     | Google Gemini (paid API)        | The message or text you
-cultural tips, word breakdown,   |                                 | select, and the languages
-AI coach                         |                                 |
-Voice-message transcription      | Google Cloud Speech-to-Text     | The voice message you ask
-                                 |                                 | to transcribe
+Translation of messages         | Google Cloud Translation        | The text to translate
+Translation of public content    | Google Cloud Translation,       | The text only, without
+(events, communities, listings)  | through a shared cache on our   | personal data
+                                 | servers                         |
+Read-aloud (text-to-speech)      | Google Cloud Text-to-Speech     | The text to read aloud
+Smart replies, cultural tips,    | Google Gemini (paid API)        | The message or text you
+word breakdown                   |                                 | select, and the languages
 Support assistant                | Anthropic Claude                | Your messages to support
 Image and text moderation        | Google Cloud Vision and Natural | Uploaded images; text
                                  | Language                        | checked for safety
@@ -542,14 +539,18 @@ Image and text moderation        | Google Cloud Vision and Natural | Uploaded im
   to the AI provider directly.
 - The providers act as our processors. We use them under their paid business
   terms, under which they do not use your data to train their models.
-- Before you use translation of other people's messages, voice playback,
-  smart replies or the AI coach for the first time, we show you which provider
-  is used and what is sent, and we ask for your consent. You can change this
-  in Settings.
+- Before AI features process your private content for the first time (for
+  example translation of chat messages, read-aloud and the AI assistant), we
+  show you which provider is used and what is sent, and we ask for your
+  consent. You can change this in Settings.
+- Public content, such as events, communities and listings, is translated
+  with Google Cloud Translation through a shared cache on our servers. Only
+  the text is sent, without any personal data, and the translation is stored
+  for everyone who views that content. This does not need your consent.
 - Content created or changed by AI is labelled, for example "Translated".
   AI output can contain mistakes. Do not rely on it for important decisions.
 - Our support chat first answers with an AI assistant, which is clearly
-  labelled as AI. You can ask to talk to a human at any time.
+  labelled as AI. You can tap "Talk to a person" at any time.
 - When you translate a message from someone else, their text is sent to the
   translation provider. They agreed to this possibility when they accepted
   this policy.
@@ -585,7 +586,6 @@ We use automated tools to help keep GreenGo safe:
   access message content. We use this access only to:
   - deliver and store your messages;
   - translate them or read them aloud when you or the other person ask;
-  - transcribe voice messages on request;
   - back them up when you ask;
   - check content that someone has reported, or that our automated safety
     tools flag;
@@ -782,7 +782,7 @@ Firebase                         | server functions, sign-in, push   | global   
                                  | reports, logging                  |          |
 Google Cloud AI services         | Vision (document text, image      | USA      | As above
                                  | moderation), Natural Language     |          |
-                                 | (text moderation), Speech-to-Text,|          |
+                                 | (text moderation),                |          |
                                  | Text-to-Speech, Translation,      |          |
                                  | Gemini                            |          |
 Google Maps Platform             | Turning coordinates into city     | USA      | As above
@@ -817,10 +817,9 @@ Anthropic PBC                    | AI support assistant (Claude)     | USA      
     policies.
   - GreenGo may receive a commission from them.
   - We do not send them your account data.
-- Map and image services loaded directly by the app: OpenStreetMap, CARTO,
-  Cesium (3D globe), Unsplash and Pexels (pictures for vocabulary cards). They
-  receive your device's IP address and the request (for example a map area or
-  a word), but not your account data.
+- Map services loaded directly by the app: OpenStreetMap, CARTO and Cesium
+  (3D globe). They receive your device's IP address and the request (for
+  example a map area), but not your account data.
 
 12.4 Other users
 
@@ -944,8 +943,8 @@ account.
 
 15.1 How to delete
 
-- In the app: Profile > Settings > Delete account. You will be asked to sign in
-  again to confirm.
+- In the app: Profile > Delete Account. You will be asked to sign in again to
+  confirm.
 - On the web: https://greengochat.com/delete-account. Enter your email address,
   and we will send you a confirmation link that is valid for 24 hours. Your
   account is deleted when you confirm. For your security, the page tells
@@ -1010,7 +1009,8 @@ Wherever you live, you can ask us to:
 
 16.2 How to object
 
-- To stop personalised recommendations: Settings > Privacy.
+- To stop personalised recommendations: Profile > Account Settings >
+  Privacy & data.
 - To stop marketing: Settings > Notifications, or the "unsubscribe" link in any
   marketing email.
 - For anything else, write to privacy@greengochat.com.
@@ -1038,7 +1038,8 @@ law was broken.
 
 16.5 How to make a request
 
-- In the app: Settings > Privacy (download your data, delete your account).
+- In the app: Profile > Account Settings > Privacy & data (download your
+  data) and Profile > Delete Account.
 - By email: privacy@greengochat.com
 - By post: to the address in section 1.1, "Attn: Encarregado / DPO".
 - Through our EU or UK representative (section 1.3).
@@ -1082,7 +1083,7 @@ protect the service (App Check). These do not need consent.
   problems.
 - In the European Economic Area, the United Kingdom and Switzerland they stay
   switched OFF until you agree in the consent screen. Elsewhere they are on,
-  and you can switch them off in Settings > Privacy.
+  and you can switch them off in Profile > Account Settings > Privacy & data.
 - We do not use them for advertising.
 
 17.3 Website and web app
@@ -1126,7 +1127,7 @@ them. You can change them at any time in your device settings.
   approximate location on your profile (section 7).
 - Camera: profile photos, photos and videos in chats and posts, QR codes for
   event check-in, identity document and selfie verification.
-- Microphone: voice messages, your voice introduction, pronunciation practice.
+- Microphone: voice messages and your voice introduction.
 - Photos: choosing pictures to upload. The app uses the system photo picker
   and sees only the photos you select.
 - Notifications: messages, event reminders and other alerts.
@@ -1330,6 +1331,12 @@ VERSION HISTORY
 - Section 9.2: anonymous shared cache for read-aloud audio (also section 14).
 - Section 10.2: handling of people who often send clearly unfounded reports,
   and the 12-month count of unfounded reports (also sections 5 and 14).
+- Aligned with the app: the AI coach, voice-message transcription, grammar
+  help, learning features, vocabulary-card pictures and pronunciation
+  practice removed (sections 1.4, 2, 3.2, 5, 9, 10.1, 12 and 19); public
+  content translated with Google Cloud Translation through a shared cache
+  without personal data (9.1, 9.2); in-app paths for account deletion and
+  privacy settings (15.1, 16.2, 16.5, 17.2).
 
 5.2.0 - 15 October 2026
 - Paid tickets and bookings only through the in-app checkout to the

@@ -644,9 +644,10 @@ a) Before AI features process your private content for the first time (for
    example translation of chat messages, read-aloud and the AI assistant), we
    tell you which provider is used and what is sent, and ask for your
    consent. You can withdraw your consent in Settings.
-b) Translation of public content, such as Events, Communities and listings,
-   uses a shared translation service that receives the text without any
-   personal data. It does not need your consent.
+b) Public content, such as Events, Communities and listings, is translated
+   with Google Cloud Translation through a shared cache on our servers. Only
+   the text is sent, without any personal data. This does not need your
+   consent.
 c) The Privacy Policy (section 9) has the details.
 
 14.3 AI output can be wrong, incomplete or culturally inaccurate. Translated

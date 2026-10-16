@@ -60,8 +60,7 @@ Inclui:
 - chat com tradução;
 - grupos e comunidades;
 - eventos e experiências;
-- páginas de empresas;
-- funcionalidades de aprendizagem.
+- páginas de empresas.
 
 O GreenGo é um serviço de descoberta social e cultural, e não um serviço para
 encontrar parceiros românticos ou sexuais.
@@ -93,7 +92,8 @@ partilhada (secção 11.7). Esta política também se aplica a essas pessoas.
   imagem logo que a verificação esteja concluída. Conservamos apenas o
   resultado.
 - As funcionalidades de IA (tradução, leitura em voz alta, respostas
-  inteligentes, o treinador de IA) funcionam através dos nossos servidores.
+  inteligentes e decomposição de palavras) funcionam através dos nossos
+  servidores.
   Utilizam serviços da Google, e o nosso assistente de apoio utiliza o Claude da
   Anthropic. Pedimos o seu consentimento antes de as utilizar pela primeira vez,
   e o assistente de apoio está claramente identificado como IA.
@@ -193,7 +193,7 @@ c) Dados de utilização
    - Pessoas, comunidades e eventos que visualiza, segue, de que gosta ou a que
      adere.
    - O seu histórico de Moedas e de Subscrições.
-   - O seu progresso de aprendizagem, conquistas e sequências.
+   - As suas conquistas e sequências.
    - Se está online e quando foi visto pela última vez.
 
 d) Dados de análise estatística
@@ -318,11 +318,10 @@ Finalidade                           | O que utilizamos           | Fundamento j
                                      |                            | LGPD 7 IX). Pode opor-se (16.2).
 4. Mensagens, grupos, comunidades,   | Conteúdo, conta            | Contrato (RGPD 6(1)(b); LGPD 7 V)
    eventos, reservas                 |                            |
-5. Funcionalidades de IA: tradução,  | O texto ou o áudio que     | Contrato, após o seu consentimento
-   leitura em voz alta, respostas    | escolhe tratar             | para a funcionalidade de IA (RGPD
-   inteligentes, ajuda gramatical,   |                            | 6(1)(a)/(b); LGPD 7 I/V). Ver
-   treinador de IA, transcrição de   |                            | secção 9.
-   mensagens de voz                  |                            |
+5. Funcionalidades de IA: tradução,  | O texto que escolhe tratar | Contrato, após o seu consentimento
+   leitura em voz alta, respostas    |                            | para a funcionalidade de IA (RGPD
+   inteligentes, decomposição de     |                            | 6(1)(a)/(b); LGPD 7 I/V). Ver
+   palavras                          |                            | secção 9.
 6. Verificação da idade com um       | Imagem do documento, data  | Consentimento explícito (RGPD
    documento de identificação        | de nascimento nele lida    | 9(2)(a); LGPD 11 I). Ver secção 8.
 7. Verificação por selfie            | Selfie, fotos de perfil    | Consentimento explícito (RGPD
@@ -567,16 +566,15 @@ lucro com dados biométricos.
 
 Funcionalidade                   | Fornecedor (em nosso nome)      | O que é enviado
 ---------------------------------|---------------------------------|----------------------------
-Tradução de mensagens,           | Google Cloud Translation        | O texto a traduzir
-publicações e conteúdo público   |                                 |
+Tradução de mensagens            | Google Cloud Translation        | O texto a traduzir
+Tradução de conteúdo público     | Google Cloud Translation,       | Apenas o texto, sem dados
+(eventos, comunidades, anúncios) | através de uma cache partilhada | pessoais
+                                 | nos nossos servidores           |
 Leitura em voz alta (texto para  | Google Cloud Text-to-Speech     | O texto a ler em voz alta
 fala)                            |                                 |
-Respostas inteligentes, ajuda    | Google Gemini (API paga)        | A mensagem ou o texto que
-gramatical, dicas culturais,     |                                 | seleciona, e os idiomas
-decomposição de palavras,        |                                 |
-treinador de IA                  |                                 |
-Transcrição de mensagens de voz  | Google Cloud Speech-to-Text     | A mensagem de voz que pede
-                                 |                                 | para transcrever
+Respostas inteligentes, dicas    | Google Gemini (API paga)        | A mensagem ou o texto que
+culturais, decomposição de       |                                 | seleciona, e os idiomas
+palavras                         |                                 |
 Assistente de apoio              | Anthropic Claude                | As suas mensagens ao apoio
 Moderação de imagens e texto     | Google Cloud Vision e Natural   | Imagens carregadas; texto
                                  | Language                        | verificado por segurança
@@ -588,15 +586,21 @@ Moderação de imagens e texto     | Google Cloud Vision e Natural   | Imagens c
 - Os fornecedores atuam como nossos subcontratantes. Utilizamo-los ao abrigo
   dos respetivos termos empresariais pagos, nos termos dos quais não utilizam os
   seus dados para treinar os seus modelos.
-- Antes de utilizar pela primeira vez a tradução de mensagens de outras pessoas,
-  a leitura em voz alta, as respostas inteligentes ou o treinador de IA,
-  mostramos-lhe qual o fornecedor utilizado e o que é enviado, e pedimos o seu
-  consentimento. Pode alterar esta opção nas Definições.
+- Antes de as funcionalidades de IA tratarem o seu conteúdo privado pela
+  primeira vez (por exemplo, a tradução de mensagens de chat, a leitura em voz
+  alta e o assistente de IA), mostramos-lhe qual o fornecedor utilizado e o
+  que é enviado, e pedimos o seu consentimento. Pode alterar esta opção nas
+  Definições.
+- O conteúdo público, como eventos, comunidades e anúncios, é traduzido com o
+  Google Cloud Translation através de uma cache partilhada nos nossos
+  servidores. É enviado apenas o texto, sem quaisquer dados pessoais, e a
+  tradução é guardada para todas as pessoas que veem esse conteúdo. Isto não
+  exige o seu consentimento.
 - Os conteúdos criados ou alterados por IA são identificados, por exemplo com
   "Traduzido". Os resultados da IA podem conter erros. Não confie neles para
   decisões importantes.
 - O nosso chat de apoio responde primeiro com um assistente de IA, que está
-  claramente identificado como IA. Pode pedir para falar com um ser humano a
+  claramente identificado como IA. Pode tocar em "Falar com uma pessoa" a
   qualquer momento.
 - Quando traduz uma mensagem de outra pessoa, o texto dessa pessoa é enviado ao
   fornecedor de tradução. Essa pessoa aceitou esta possibilidade quando aceitou
@@ -637,7 +641,6 @@ Utilizamos ferramentas automatizadas para ajudar a manter o GreenGo seguro:
   - entregar e armazenar as suas mensagens;
   - traduzi-las ou lê-las em voz alta quando o utilizador ou a outra pessoa o
     pedem;
-  - transcrever mensagens de voz a pedido;
   - fazer cópias de segurança quando o pede;
   - verificar conteúdos que alguém denunciou, ou que as nossas ferramentas
     automatizadas de segurança sinalizaram;
@@ -857,8 +860,8 @@ Firebase                         | armazenamento de ficheiros,       | global   
 Serviços de IA do Google Cloud   | Vision (texto de documentos,      | EUA      | Como acima
                                  | moderação de imagens), Natural    |          |
                                  | Language (moderação de texto),    |          |
-                                 | Speech-to-Text, Text-to-Speech,   |          |
-                                 | Translation, Gemini               |          |
+                                 | Text-to-Speech, Translation,      |          |
+                                 | Gemini                            |          |
 Google Maps Platform             | Converter coordenadas em nomes    | EUA      | Como acima
                                  | de cidades; mapas                 |          |
 Stripe                           | Pagamentos web, subscrições,      | EUA,     | Cláusulas-tipo da UE, EU-US Data
@@ -894,10 +897,9 @@ Anthropic PBC                    | Assistente de apoio com IA        | EUA      
     abrigo das suas próprias políticas.
   - O GreenGo pode receber uma comissão destes parceiros.
   - Não lhes enviamos os dados da sua conta.
-- Serviços de mapas e de imagens carregados diretamente pela aplicação:
-  OpenStreetMap, CARTO, Cesium (globo 3D), Unsplash e Pexels (imagens para
-  cartões de vocabulário). Recebem o endereço IP do seu dispositivo e o pedido
-  (por exemplo, uma área do mapa ou uma palavra), mas não os dados da sua conta.
+- Serviços de mapas carregados diretamente pela aplicação: OpenStreetMap,
+  CARTO e Cesium (globo 3D). Recebem o endereço IP do seu dispositivo e o
+  pedido (por exemplo, uma área do mapa), mas não os dados da sua conta.
 
 12.4 Outros utilizadores
 
@@ -1032,7 +1034,7 @@ conta.
 
 15.1 Como eliminar
 
-- Na aplicação: Perfil > Definições > Eliminar conta. Ser-lhe-á pedido que
+- Na aplicação: Perfil > Eliminar Conta. Ser-lhe-á pedido que
   inicie sessão novamente para confirmar.
 - Na web: https://greengochat.com/delete-account. Introduza o seu endereço de
   e-mail e enviar-lhe-emos uma ligação de confirmação válida durante 24 horas. A
@@ -1104,7 +1106,8 @@ Onde quer que viva, pode pedir-nos que:
 
 16.2 Como se opor
 
-- Para deixar de receber recomendações personalizadas: Definições > Privacidade.
+- Para deixar de receber recomendações personalizadas: Perfil > Definições da
+  Conta > Privacidade e dados.
 - Para deixar de receber marketing: Definições > Notificações, ou a ligação
   "cancelar subscrição" em qualquer e-mail de marketing.
 - Para qualquer outro assunto, escreva para privacy@greengochat.com.
@@ -1133,8 +1136,8 @@ ou do local onde considera que a lei foi violada.
 
 16.5 Como apresentar um pedido
 
-- Na aplicação: Definições > Privacidade (descarregar os seus dados, eliminar a
-  sua conta).
+- Na aplicação: Perfil > Definições da Conta > Privacidade e dados
+  (descarregar os seus dados) e Perfil > Eliminar Conta.
 - Por e-mail: privacy@greengochat.com
 - Por correio: para a morada indicada na secção 1.1, "Attn: Encarregado / DPO".
 - Através do nosso representante na UE ou no Reino Unido (secção 1.3).
@@ -1183,7 +1186,8 @@ o serviço (App Check). Estes não necessitam de consentimento.
   para corrigir problemas.
 - No Espaço Económico Europeu, no Reino Unido e na Suíça, estes permanecem
   DESATIVADOS até dar o seu acordo no ecrã de consentimento. Noutros locais,
-  estão ativados, e pode desativá-los em Definições > Privacidade.
+  estão ativados, e pode desativá-los em Perfil > Definições da Conta >
+  Privacidade e dados.
 - Não os utilizamos para publicidade.
 
 17.3 Website e aplicação web
@@ -1234,7 +1238,7 @@ dispositivo.
 - Câmara: fotos de perfil, fotos e vídeos em chats e publicações, códigos QR
   para registo de entrada em eventos, verificação com documento de
   identificação e selfie.
-- Microfone: mensagens de voz, a sua apresentação de voz, prática de pronúncia.
+- Microfone: mensagens de voz e a sua apresentação de voz.
 - Fotos: escolha de imagens para carregar. A aplicação utiliza o seletor de
   fotos do sistema e só vê as fotos que seleciona.
 - Notificações: mensagens, lembretes de eventos e outros alertas.
@@ -1454,6 +1458,13 @@ de 2026)
 - Secção 10.2: tratamento das pessoas que enviam frequentemente denúncias
   manifestamente infundadas, e a contagem de 12 meses das denúncias
   infundadas (também secções 5 e 14).
+- Alinhamento com a aplicação: removidos o treinador de IA, a transcrição de
+  mensagens de voz, a ajuda gramatical, as funcionalidades de aprendizagem,
+  as imagens para cartões de vocabulário e a prática de pronúncia (secções
+  1.4, 2, 3.2, 5, 9, 10.1, 12 e 19); o conteúdo público é traduzido com o
+  Google Cloud Translation através de uma cache partilhada sem dados pessoais
+  (9.1, 9.2); caminhos na aplicação para eliminar a conta e para as
+  definições de privacidade (15.1, 16.2, 16.5, 17.2).
 
 5.2.0 - 15 de outubro de 2026
 - Bilhetes e reservas pagos apenas através do checkout da aplicação, para a

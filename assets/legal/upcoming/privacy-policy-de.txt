@@ -58,8 +58,7 @@ zu entdecken und sich über Sprachbarrieren hinweg zu unterhalten. Er umfasst:
 - Chat mit Übersetzung;
 - Gruppen und Communities;
 - Events und Erlebnisse;
-- Unternehmensseiten;
-- Lernfunktionen.
+- Unternehmensseiten.
 
 GreenGo ist ein Dienst für soziale und kulturelle Entdeckungen, kein Dienst zur
 Suche nach romantischen oder sexuellen Partnern.
@@ -88,8 +87,8 @@ Diese Erklärung gilt auch für sie.
     auf deinen Wunsch zu übersetzen oder um eine gemeldete Nachricht zu prüfen.
 - Wenn du dein Alter mit einem Ausweisdokument bestätigst, löschen wir das Bild,
   sobald die Prüfung abgeschlossen ist. Wir speichern nur das Ergebnis.
-- KI-Funktionen (Übersetzung, Sprachwiedergabe, intelligente Antworten, der
-  KI-Coach) laufen über unsere Server. Sie nutzen Google-Dienste, und unser
+- KI-Funktionen (Übersetzung, Vorlesen, intelligente Antworten und
+  Wortzerlegung) laufen über unsere Server. Sie nutzen Google-Dienste, und unser
   Support-Assistent nutzt Claude von Anthropic. Wir bitten dich vor der ersten
   Nutzung um deine Einwilligung, und der Support-Assistent ist deutlich als KI
   gekennzeichnet.
@@ -190,7 +189,7 @@ c) Nutzungsdaten
    - Personen, Communities und Events, die du ansiehst, denen du folgst, die du
      likest oder denen du beitrittst.
    - Dein Münz- und Mitgliedschaftsverlauf.
-   - Dein Lernfortschritt, deine Erfolge und Serien.
+   - Deine Erfolge und Serien.
    - Ob du online bist und wann du zuletzt online warst.
 
 d) Analysedaten
@@ -315,11 +314,9 @@ Zweck                                | Was wir verwenden          | Rechtsgrundl
                                      |                            | (16.2).
 4. Nachrichten, Gruppen, Communities,| Inhalte, Konto             | Vertrag (DSGVO 6(1)(b); LGPD 7 V)
    Events, Buchungen                 |                            |
-5. KI-Funktionen: Übersetzung,       | Der Text oder das Audio,   | Vertrag, nach deiner Einwilligung in
-   Sprachwiedergabe, intelligente    | den/das du verarbeiten     | die KI-Funktion (DSGVO 6(1)(a)/(b);
-   Antworten, Grammatikhilfe,        | lassen möchtest            | LGPD 7 I/V). Siehe Abschnitt 9.
-   KI-Coach, Transkription von       |                            |
-   Sprachnachrichten                 |                            |
+5. KI-Funktionen: Übersetzung,       | Der Text, den du           | Vertrag, nach deiner Einwilligung in
+   Vorlesen, intelligente Antworten, | verarbeiten lassen         | die KI-Funktion (DSGVO 6(1)(a)/(b);
+   Wortzerlegung                     | möchtest                   | LGPD 7 I/V). Siehe Abschnitt 9.
 6. Altersverifizierung mit einem     | Ausweisbild, daraus        | Ausdrückliche Einwilligung (DSGVO
    Ausweisdokument                   | gelesenes Geburtsdatum     | 9(2)(a); LGPD 11 I). Siehe Abschnitt 8.
 7. Selfie-Verifizierung              | Selfie, Profilfotos        | Ausdrückliche Einwilligung (DSGVO
@@ -570,15 +567,14 @@ anderweitig daraus Gewinn ziehen.
 
 Funktion                         | Anbieter (in unserem Auftrag)   | Was gesendet wird
 ---------------------------------|---------------------------------|----------------------------
-Übersetzung von Nachrichten,     | Google Cloud Translation        | Der zu übersetzende Text
-Beiträgen und öffentlichen       |                                 |
-Inhalten                         |                                 |
-Sprachwiedergabe (Text-to-Speech)| Google Cloud Text-to-Speech     | Der vorzulesende Text
+Übersetzung von Nachrichten      | Google Cloud Translation        | Der zu übersetzende Text
+Übersetzung öffentlicher Inhalte | Google Cloud Translation, über  | Nur der Text, ohne
+(Events, Communities, Angebote)  | einen gemeinsamen Cache auf     | personenbezogene Daten
+                                 | unseren Servern                 |
+Vorlesen (Text-to-Speech)        | Google Cloud Text-to-Speech     | Der vorzulesende Text
 Intelligente Antworten,          | Google Gemini (kostenpflichtige | Die Nachricht oder der
-Grammatikhilfe, Kulturtipps,     | API)                            | Text, den du auswählst,
-Wortzerlegung, KI-Coach          |                                 | und die Sprachen
-Transkription von                | Google Cloud Speech-to-Text     | Die Sprachnachricht, die
-Sprachnachrichten                |                                 | du transkribieren lässt
+Kulturtipps, Wortzerlegung       | API)                            | Text, den du auswählst,
+                                 |                                 | und die Sprachen
 Support-Assistent                | Anthropic Claude                | Deine Nachrichten an den
                                  |                                 | Support
 Bild- und Textmoderation         | Google Cloud Vision und Natural | Hochgeladene Bilder; auf
@@ -591,16 +587,22 @@ Bild- und Textmoderation         | Google Cloud Vision und Natural | Hochgeladen
 - Die Anbieter handeln als unsere Auftragsverarbeiter. Wir nutzen sie zu ihren
   kostenpflichtigen Geschäftsbedingungen, nach denen sie deine Daten nicht zum
   Training ihrer Modelle verwenden.
-- Bevor du zum ersten Mal die Übersetzung von Nachrichten anderer, die
-  Sprachwiedergabe, intelligente Antworten oder den KI-Coach nutzt, zeigen wir
-  dir, welcher Anbieter genutzt wird und was gesendet wird, und bitten um deine
-  Einwilligung. Du kannst dies in den Einstellungen ändern.
+- Bevor KI-Funktionen zum ersten Mal deine privaten Inhalte verarbeiten (zum
+  Beispiel die Übersetzung von Chatnachrichten, das Vorlesen und der
+  KI-Assistent), zeigen wir dir, welcher Anbieter genutzt wird und was
+  gesendet wird, und bitten um deine Einwilligung. Du kannst dies in den
+  Einstellungen ändern.
+- Öffentliche Inhalte, etwa Events, Communities und Angebote, werden mit
+  Google Cloud Translation über einen gemeinsamen Cache auf unseren Servern
+  übersetzt. Gesendet wird nur der Text, ohne personenbezogene Daten, und die
+  Übersetzung wird für alle gespeichert, die diese Inhalte ansehen. Dafür ist
+  deine Einwilligung nicht nötig.
 - Von KI erstellte oder veränderte Inhalte werden gekennzeichnet, zum Beispiel
   mit „Übersetzt“. KI-Ergebnisse können Fehler enthalten. Verlass dich bei
   wichtigen Entscheidungen nicht darauf.
 - Unser Support-Chat antwortet zunächst mit einem KI-Assistenten, der deutlich
-  als KI gekennzeichnet ist. Du kannst jederzeit verlangen, mit einem Menschen
-  zu sprechen.
+  als KI gekennzeichnet ist. Du kannst jederzeit auf „Mit einer Person
+  sprechen“ tippen.
 - Wenn du eine Nachricht einer anderen Person übersetzt, wird deren Text an den
   Übersetzungsanbieter gesendet. Diese Person hat dieser Möglichkeit mit der
   Annahme dieser Erklärung zugestimmt.
@@ -640,7 +642,6 @@ Wir nutzen automatisierte Werkzeuge, um GreenGo sicher zu halten:
   - deine Nachrichten zuzustellen und zu speichern;
   - sie zu übersetzen oder vorzulesen, wenn du oder die andere Person dies
     wünscht;
-  - Sprachnachrichten auf Anfrage zu transkribieren;
   - sie auf deinen Wunsch zu sichern;
   - Inhalte zu prüfen, die jemand gemeldet hat oder die unsere automatisierten
     Sicherheitswerkzeuge markieren;
@@ -863,7 +864,7 @@ Firebase                         | speicherung, Serverfunktionen,    | weltweit 
                                  | Absturzberichte, Protokollierung  |          |
 Google Cloud AI services         | Vision (Dokumenttext, Bild-       | USA      | Wie oben
                                  | moderation), Natural Language     |          |
-                                 | (Textmoderation), Speech-to-Text, |          |
+                                 | (Textmoderation),                 |          |
                                  | Text-to-Speech, Translation,      |          |
                                  | Gemini                            |          |
 Google Maps Platform             | Umwandlung von Koordinaten in     | USA      | Wie oben
@@ -901,11 +902,9 @@ Anthropic PBC                    | KI-Support-Assistent (Claude)     | USA      
     ihren eigenen Richtlinien.
   - GreenGo kann von ihnen eine Provision erhalten.
   - Wir senden ihnen deine Kontodaten nicht.
-- Karten- und Bilddienste, die direkt von der App geladen werden:
-  OpenStreetMap, CARTO, Cesium (3D-Globus), Unsplash und Pexels (Bilder für
-  Vokabelkarten). Sie erhalten die IP-Adresse deines Geräts und die Anfrage
-  (zum Beispiel einen Kartenausschnitt oder ein Wort), aber nicht deine
-  Kontodaten.
+- Kartendienste, die direkt von der App geladen werden: OpenStreetMap, CARTO
+  und Cesium (3D-Globus). Sie erhalten die IP-Adresse deines Geräts und die
+  Anfrage (zum Beispiel einen Kartenausschnitt), aber nicht deine Kontodaten.
 
 12.4 Andere Nutzer
 
@@ -1040,8 +1039,8 @@ das Konto löschst.
 
 15.1 So löschst du es
 
-- In der App: Profil > Einstellungen > Konto löschen. Du wirst gebeten, dich zur
-  Bestätigung erneut anzumelden.
+- In der App: Profil > Konto Löschen. Du wirst gebeten, dich zur Bestätigung
+  erneut anzumelden.
 - Im Web: https://greengochat.com/delete-account. Gib deine E-Mail-Adresse ein,
   und wir senden dir einen Bestätigungslink, der 24 Stunden gültig ist. Dein
   Konto wird gelöscht, sobald du bestätigst. Zu deiner Sicherheit verrät die
@@ -1113,7 +1112,8 @@ Unabhängig davon, wo du lebst, kannst du von uns verlangen:
 
 16.2 So widersprichst du
 
-- Um personalisierte Empfehlungen zu beenden: Einstellungen > Datenschutz.
+- Um personalisierte Empfehlungen zu beenden: Profil > Kontoeinstellungen >
+  Datenschutz & Daten.
 - Um Marketing zu beenden: Einstellungen > Benachrichtigungen oder der Link
   „Abmelden“ in jeder Marketing-E-Mail.
 - Für alles andere schreib an privacy@greengochat.com.
@@ -1143,8 +1143,8 @@ gegen das Gesetz verstoßen wurde.
 
 16.5 So stellst du einen Antrag
 
-- In der App: Einstellungen > Datenschutz (deine Daten herunterladen, dein
-  Konto löschen).
+- In der App: Profil > Kontoeinstellungen > Datenschutz & Daten (deine Daten
+  herunterladen) und Profil > Konto Löschen.
 - Per E-Mail: privacy@greengochat.com
 - Per Post: an die Adresse in Abschnitt 1.1, „Attn: Encarregado / DPO“.
 - Über unseren Vertreter in der EU oder im Vereinigten Königreich (Abschnitt
@@ -1194,8 +1194,8 @@ schützen (App Check). Hierfür ist keine Einwilligung erforderlich.
   Probleme zu beheben.
 - Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz
   bleiben sie AUSGESCHALTET, bis du im Einwilligungsbildschirm zustimmst.
-  Anderswo sind sie eingeschaltet, und du kannst sie unter Einstellungen >
-  Datenschutz ausschalten.
+  Anderswo sind sie eingeschaltet, und du kannst sie unter Profil >
+  Kontoeinstellungen > Datenschutz & Daten ausschalten.
 - Wir nutzen sie nicht für Werbung.
 
 17.3 Website und Web-App
@@ -1245,7 +1245,7 @@ sie benötigt. Du kannst sie jederzeit in den Einstellungen deines Geräts
   der Nähe; ungefährer Standort in deinem Profil (Abschnitt 7).
 - Kamera: Profilfotos, Fotos und Videos in Chats und Beiträgen, QR-Codes für
   den Event-Check-in, Verifizierung mit Ausweisdokument und Selfie.
-- Mikrofon: Sprachnachrichten, deine Sprachvorstellung, Ausspracheübungen.
+- Mikrofon: Sprachnachrichten und deine Sprachvorstellung.
 - Fotos: Auswahl von Bildern zum Hochladen. Die App nutzt die Fotoauswahl des
   Systems und sieht nur die Fotos, die du auswählst.
 - Benachrichtigungen: Nachrichten, Event-Erinnerungen und andere Hinweise.
@@ -1467,6 +1467,13 @@ VERSIONSVERLAUF
 - Abschnitt 10.2: Umgang mit Personen, die häufig offensichtlich unbegründete
   Meldungen senden, und die Zählung unbegründeter Meldungen über 12 Monate
   (auch Abschnitte 5 und 14).
+- An die App angepasst: KI-Coach, Transkription von Sprachnachrichten,
+  Grammatikhilfe, Lernfunktionen, Bilder für Vokabelkarten und
+  Ausspracheübungen entfernt (Abschnitte 1.4, 2, 3.2, 5, 9, 10.1, 12 und 19);
+  öffentliche Inhalte werden mit Google Cloud Translation über einen
+  gemeinsamen Cache ohne personenbezogene Daten übersetzt (9.1, 9.2);
+  In-App-Pfade für die Kontolöschung und die Datenschutzeinstellungen (15.1,
+  16.2, 16.5, 17.2).
 
 5.2.0 - 15. Oktober 2026
 - Kostenpflichtige Tickets und Buchungen nur noch über den Checkout in der App

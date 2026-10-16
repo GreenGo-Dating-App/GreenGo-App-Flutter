@@ -696,9 +696,10 @@ a) Antes de os recursos de IA processarem o seu conteúdo privado pela
    voz alta e o assistente de IA), informamos qual provedor é usado e o que é
    enviado, e pedimos o seu consentimento. Você pode revogar o seu
    consentimento em Configurações.
-b) A tradução de conteúdo público, como Eventos, Comunidades e anúncios, usa
-   um serviço de tradução compartilhado que recebe o texto sem nenhum dado
-   pessoal. Ela não exige o seu consentimento.
+b) O conteúdo público, como Eventos, Comunidades e anúncios, é traduzido com
+   o Google Cloud Translation por meio de um cache compartilhado nos nossos
+   servidores. Somente o texto é enviado, sem nenhum dado pessoal. Isso não
+   exige o seu consentimento.
 c) A Política de Privacidade (seção 9) traz os detalhes.
 
 14.3 O resultado da IA pode estar errado, incompleto ou culturalmente

@@ -729,9 +729,10 @@ a) Bevor KI-Funktionen zum ersten Mal deine privaten Inhalte verarbeiten (zum
    KI-Assistent), teilen wir dir mit, welcher Anbieter verwendet wird und was
    gesendet wird, und bitten um deine Einwilligung. Du kannst deine
    Einwilligung in den Einstellungen widerrufen.
-b) Die Übersetzung öffentlicher Inhalte, etwa von Events, Communities und
-   Angeboten, nutzt einen gemeinsamen Übersetzungsdienst, der den Text ohne
-   personenbezogene Daten erhält. Dafür ist deine Einwilligung nicht nötig.
+b) Öffentliche Inhalte, etwa Events, Communities und Angebote, werden mit
+   Google Cloud Translation über einen gemeinsamen Cache auf unseren Servern
+   übersetzt. Gesendet wird nur der Text, ohne personenbezogene Daten. Dafür
+   ist deine Einwilligung nicht nötig.
 c) Einzelheiten findest du in der Datenschutzerklärung (Abschnitt 9).
 
 14.3 KI-Ergebnisse können falsch, unvollständig oder kulturell ungenau sein.
