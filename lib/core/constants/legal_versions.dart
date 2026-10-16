@@ -7,7 +7,7 @@
 library;
 
 /// Terms and Conditions version shown in-app and recorded at acceptance.
-const String kTermsVersion = '5.3.0';
+const String kTermsVersion = '5.3.1';
 
 /// Privacy Policy version shown in-app and recorded at acceptance.
 const String kPrivacyPolicyVersion = '5.3.0';
@@ -38,6 +38,11 @@ final DateTime kLegalEffectiveDate = DateTime(2026, 10, 16);
 /// before stay on 5.2.1 until 15 Nov 2026 and get the advance notice
 /// ([kUpcomingTermsVersion]); [kTermsReacceptFrom] is NOT raised, so nobody
 /// is asked to re-accept now.
+/// 5.3.1 (16 Oct 2026, same day and same effective dates as 5.3.0): GreenGo
+/// service fee caps per ticket raised in 11.6 b (Silver US$30, Gold US$28,
+/// Platinum US$25; were 10 / 9 / 8). Sign-up records 5.3.1; older accounts
+/// still move from 5.2.1 on 16 Nov 2026 and are notified of 5.3.1.
+/// [kTermsReacceptFrom] is NOT raised.
 final DateTime kTermsEffectiveDate = DateTime(2026, 10, 16);
 
 /// Oldest accepted version that does NOT trigger the "we've updated our
@@ -60,13 +65,16 @@ const String kPrivacyReacceptFrom = '5.1.0';
 /// 5.3.0 (owner decision of 16 Oct 2026): already the bundled [kTermsVersion]
 /// and in force for accounts created from 16 Oct 2026, which never see the
 /// notice; accounts created before move from 5.2.1 to 5.3.0 on 16 Nov 2026.
+/// 5.3.1 (same day): replaces 5.3.0 in the notice (fee caps raised in 11.6 b);
+/// accounts created before 16 Oct 2026 move from 5.2.1 straight to 5.3.1 on
+/// 16 Nov 2026. A user who dismissed the 5.3.0 notice sees the 5.3.1 one.
 ///
 /// When the version takes effect for everyone: raise [kTermsReacceptFrom] if
 /// the change is material (the "we've updated our Terms" sheet then asks
 /// everyone again and shows that version's bullets,
 /// [legalUpdateBulletsVersion]), and clear or replace these constants. Set
 /// [kUpcomingTermsVersion] to null when nothing is announced.
-const String? kUpcomingTermsVersion = '5.3.0';
+const String? kUpcomingTermsVersion = '5.3.1';
 
 /// Date from which [kUpcomingTermsVersion] applies to accounts created before
 /// [kUpcomingTermsAccountsCreatedBefore] (16 October 2026 + 30 days).

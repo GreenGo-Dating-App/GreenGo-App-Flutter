@@ -1,6 +1,6 @@
 TERMOS E CONDIÇÕES DO GREENGO
 
-Versão: 5.3.0
+Versão: 5.3.1
 Data de vigência: 16 de outubro de 2026 para contas criadas a partir dessa data;
   16 de novembro de 2026 para contas criadas antes de 16 de outubro de 2026
 Anunciada em: 16 de outubro de 2026
@@ -478,9 +478,9 @@ a) O GreenGo cobra uma taxa de serviço sobre cada ingresso pago de um Evento e
    preço do ingresso quando o comprador paga, e assim o vendedor recebe o
    preço do ingresso menos a taxa.
 b) A taxa por ingresso depende da Assinatura do vendedor no momento da venda:
-   - Silver: US$ 3 + 10% do preço do ingresso, no máximo US$ 10;
-   - Gold: US$ 2 + 10% do preço do ingresso, no máximo US$ 9;
-   - Platinum: US$ 1 + 10% do preço do ingresso, no máximo US$ 8.
+   - Silver: US$ 3 + 10% do preço do ingresso, no máximo US$ 30;
+   - Gold: US$ 2 + 10% do preço do ingresso, no máximo US$ 28;
+   - Platinum: US$ 1 + 10% do preço do ingresso, no máximo US$ 25.
 c) Primeiro anúncio pago: se você nunca vendeu ingressos pagos no GreenGo, a
    taxa é fixa, de US$ 1 por ingresso, no primeiro anúncio (Evento ou
    Experiência) em que um comprador abrir um checkout pago, para esse
@@ -1255,6 +1255,12 @@ Direitos autorais (DMCA): copyright@greengochat.com
 ================================================================================
 HISTÓRICO DE VERSÕES
 ================================================================================
+
+5.3.1 - em vigor a partir de 16 de outubro de 2026 para contas criadas a partir
+dessa data; a partir de 16 de novembro de 2026 para contas criadas antes de
+16 de outubro de 2026 (anunciada em 16 de outubro de 2026)
+- Seção 11.6 b: limites máximos da taxa de serviço do GreenGo por ingresso:
+  Silver US$ 30, Gold US$ 28, Platinum US$ 25.
 
 5.3.0 - em vigor a partir de 16 de outubro de 2026 para contas criadas a partir
 dessa data; a partir de 16 de novembro de 2026 para contas criadas antes de

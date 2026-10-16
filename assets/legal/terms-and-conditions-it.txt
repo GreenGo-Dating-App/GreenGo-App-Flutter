@@ -1,6 +1,6 @@
 TERMINI E CONDIZIONI DI GREENGO
 
-Versione: 5.3.0
+Versione: 5.3.1
 Data di entrata in vigore: 16 ottobre 2026 per gli account creati da quella data
   in poi; 16 novembre 2026 per gli account creati prima del 16 ottobre 2026
 Annunciata il: 16 ottobre 2026
@@ -489,9 +489,9 @@ a) GreenGo applica una commissione di servizio su ogni biglietto a pagamento
    venditore riceve il prezzo del biglietto meno la commissione.
 b) La commissione per biglietto dipende dall'Abbonamento del venditore al
    momento della vendita:
-   - Silver: 3 USD + 10% del prezzo del biglietto, al massimo 10 USD;
-   - Gold: 2 USD + 10% del prezzo del biglietto, al massimo 9 USD;
-   - Platinum: 1 USD + 10% del prezzo del biglietto, al massimo 8 USD.
+   - Silver: 3 USD + 10% del prezzo del biglietto, al massimo 30 USD;
+   - Gold: 2 USD + 10% del prezzo del biglietto, al massimo 28 USD;
+   - Platinum: 1 USD + 10% del prezzo del biglietto, al massimo 25 USD.
 c) Primo annuncio a pagamento: se non hai mai venduto biglietti a pagamento
    su GreenGo, la commissione è fissa, di 1 USD per biglietto, per il primo
    annuncio (Evento o Esperienza) sul quale un acquirente apre un checkout a
@@ -1274,6 +1274,12 @@ Diritto d'autore (DMCA): copyright@greengochat.com
 ================================================================================
 CRONOLOGIA DELLE VERSIONI
 ================================================================================
+
+5.3.1 - in vigore dal 16 ottobre 2026 per gli account creati da quella data in
+poi; dal 16 novembre 2026 per gli account creati prima del 16 ottobre 2026
+(annunciata il 16 ottobre 2026)
+- Sezione 11.6 b: massimali della commissione di servizio di GreenGo per
+  biglietto: Silver 30 USD, Gold 28 USD, Platinum 25 USD.
 
 5.3.0 - in vigore dal 16 ottobre 2026 per gli account creati da quella data in
 poi; dal 16 novembre 2026 per gli account creati prima del 16 ottobre 2026

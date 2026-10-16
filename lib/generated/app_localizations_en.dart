@@ -24702,14 +24702,14 @@ class AppLocalizationsEn extends AppLocalizations {
       'GreenGo\'s service fee is deducted from each paid ticket you sell, based on your plan. Buyers pay only your ticket price. Free tickets have no fee.';
 
   @override
-  String get tpFeeRuleSilver => 'Silver: US\$3 + 10% per ticket (max US\$10)';
+  String get tpFeeRuleSilver => 'Silver: US\$3 + 10% per ticket (max US\$30)';
 
   @override
-  String get tpFeeRuleGold => 'Gold: US\$2 + 10% per ticket (max US\$9)';
+  String get tpFeeRuleGold => 'Gold: US\$2 + 10% per ticket (max US\$28)';
 
   @override
   String get tpFeeRulePlatinum =>
-      'Platinum: US\$1 + 10% per ticket (max US\$8)';
+      'Platinum: US\$1 + 10% per ticket (max US\$25)';
 
   @override
   String get tpFeeRuleTrial => 'Your first paid event: only US\$1 per ticket';
@@ -25675,6 +25675,10 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get legalUpdate530BulletTraders =>
       'Traders selling Experiences to people in the EU must give their trader details';
+
+  @override
+  String get legalUpdate531BulletFeeCaps =>
+      'Higher maximum GreenGo service fee per ticket for sellers: Silver US\$30, Gold US\$28, Platinum US\$25';
 
   @override
   String get legalUpdateCloseAccount => 'I don\'t accept – close my account';

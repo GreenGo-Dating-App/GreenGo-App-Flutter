@@ -24911,14 +24911,14 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get tpFeeRuleSilver =>
-      'Silver: 3 US\$ + 10% por bilhete (máx. 10 US\$)';
+      'Silver: 3 US\$ + 10% por bilhete (máx. 30 US\$)';
 
   @override
-  String get tpFeeRuleGold => 'Gold: 2 US\$ + 10% por bilhete (máx. 9 US\$)';
+  String get tpFeeRuleGold => 'Gold: 2 US\$ + 10% por bilhete (máx. 28 US\$)';
 
   @override
   String get tpFeeRulePlatinum =>
-      'Platinum: 1 US\$ + 10% por bilhete (máx. 8 US\$)';
+      'Platinum: 1 US\$ + 10% por bilhete (máx. 25 US\$)';
 
   @override
   String get tpFeeRuleTrial =>
@@ -25894,6 +25894,10 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get legalUpdate530BulletTraders =>
       'Os profissionais que vendem Experiências a pessoas na UE têm de indicar os seus dados de profissional';
+
+  @override
+  String get legalUpdate531BulletFeeCaps =>
+      'Limite máximo mais alto da taxa de serviço do GreenGo por bilhete para vendedores: Silver 30 US\$, Gold 28 US\$, Platinum 25 US\$';
 
   @override
   String get legalUpdateCloseAccount => 'Não aceito – fechar a minha conta';
@@ -50951,14 +50955,14 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get tpFeeRuleSilver =>
-      'Silver: US\$ 3 + 10% por ingresso (máx. US\$ 10)';
+      'Silver: US\$ 3 + 10% por ingresso (máx. US\$ 30)';
 
   @override
-  String get tpFeeRuleGold => 'Gold: US\$ 2 + 10% por ingresso (máx. US\$ 9)';
+  String get tpFeeRuleGold => 'Gold: US\$ 2 + 10% por ingresso (máx. US\$ 28)';
 
   @override
   String get tpFeeRulePlatinum =>
-      'Platinum: US\$ 1 + 10% por ingresso (máx. US\$ 8)';
+      'Platinum: US\$ 1 + 10% por ingresso (máx. US\$ 25)';
 
   @override
   String get tpFeeRuleTrial =>
@@ -51931,6 +51935,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get legalUpdate530BulletTraders =>
       'Profissionais que vendem Experiências para pessoas na UE precisam informar seus dados de profissional';
+
+  @override
+  String get legalUpdate531BulletFeeCaps =>
+      'Limite máximo maior da taxa de serviço do GreenGo por ingresso para vendedores: Silver US\$ 30, Gold US\$ 28, Platinum US\$ 25';
 
   @override
   String get legalUpdateCloseAccount => 'Não aceito – encerrar minha conta';

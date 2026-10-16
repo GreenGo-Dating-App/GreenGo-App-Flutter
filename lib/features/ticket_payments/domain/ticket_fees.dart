@@ -7,10 +7,10 @@ import 'ticket_payments.dart';
 /// The fee is PAID BY THE SELLER (owner rule 2026-10-14): the buyer pays the
 /// listed ticket price only and GreenGo keeps its fee out of it, so the
 /// organizer receives price - fee (minus the provider's processing fee).
-/// Per ticket, by the HOST's effective tier:
-///   Silver   US$ 3 + 10 % (max US$ 10)
-///   Gold     US$ 2 + 10 % (max US$ 9)
-///   Platinum US$ 1 + 10 % (max US$ 8)   (TEST = Platinum; no paid tier = Silver)
+/// Per ticket, by the HOST's effective tier (caps raised 2026-10-16 from 10/9/8):
+///   Silver   US$ 3 + 10 % (max US$ 30)
+///   Gold     US$ 2 + 10 % (max US$ 28)
+///   Platinum US$ 1 + 10 % (max US$ 25)   (TEST = Platinum; no paid tier = Silver)
 ///   trial    flat US$ 1 on the host's first paid listing (event or experience)
 /// Free tickets: no fee. The fee never exceeds the ticket price. The US$ parts are converted with [kUsdRates] and
 /// rounded to the currency's minor unit; the 10 % is taken in the ticket
@@ -46,9 +46,9 @@ class TicketFeeSchedule {
 }
 
 const Map<TicketFeeRule, TicketFeeSchedule> kTicketFeeSchedules = {
-  TicketFeeRule.silver: TicketFeeSchedule(fixedUsdCents: 300, percent: 10, capUsdCents: 1000),
-  TicketFeeRule.gold: TicketFeeSchedule(fixedUsdCents: 200, percent: 10, capUsdCents: 900),
-  TicketFeeRule.platinum: TicketFeeSchedule(fixedUsdCents: 100, percent: 10, capUsdCents: 800),
+  TicketFeeRule.silver: TicketFeeSchedule(fixedUsdCents: 300, percent: 10, capUsdCents: 3000),
+  TicketFeeRule.gold: TicketFeeSchedule(fixedUsdCents: 200, percent: 10, capUsdCents: 2800),
+  TicketFeeRule.platinum: TicketFeeSchedule(fixedUsdCents: 100, percent: 10, capUsdCents: 2500),
   TicketFeeRule.trial: TicketFeeSchedule(fixedUsdCents: 100, percent: 0),
 };
 

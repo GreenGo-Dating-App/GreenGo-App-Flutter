@@ -5,7 +5,7 @@
  * adminSendTermsChangeNotice (superAdmin, admin panel) - ONE BOUNDED PAGE per
  * call, so it scales to millions of users without a long-running job:
  *
- *   request  { version: '5.3.0', dryRun?: boolean (DEFAULT TRUE),
+ *   request  { version: '5.3.1', dryRun?: boolean (DEFAULT TRUE),
  *              pageSize?: 1..500 (default 200), cursor?: string | null }
  *   response { version, effectiveDate, url, dryRun, processed, withEmail,
  *              sent, alreadySent, skippedNoEmail, skippedNewAccounts, failed,

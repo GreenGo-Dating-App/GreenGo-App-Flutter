@@ -109,7 +109,7 @@ export async function recordPrivateContentWarningAck(request: Pick<CallableReque
   }
 
   const { ip, userAgent } = requestMeta(request.rawRequest);
-  // The version that applies to this account (5.3.0 took effect for new
+  // The version that applies to this account (5.3.x took effect for new
   // accounts first): Auth creation time, one call per acknowledgement.
   let createdMs: number | null = null;
   try {

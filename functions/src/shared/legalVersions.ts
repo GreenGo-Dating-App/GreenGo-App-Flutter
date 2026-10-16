@@ -7,13 +7,15 @@
  */
 
 /** Terms and Conditions version currently published (Terms 16.9 d proof). */
-export const TERMS_VERSION = '5.3.0';
+export const TERMS_VERSION = '5.3.1';
 
 /**
  * Owner decision of 16 October 2026: TERMS_VERSION (5.3.0) applies from
  * 16 Oct 2026 to accounts created on or after that day; accounts created
  * before stay on PREVIOUS_TERMS_VERSION until 15 Nov 2026 and move to
  * TERMS_VERSION on 16 Nov 2026 (30-day notice, Terms 24.2).
+ * 5.3.1 (same day, same dates): fee caps per ticket raised in 11.6 b
+ * (Silver US$30, Gold US$28, Platinum US$25); replaces 5.3.0.
  */
 export const PREVIOUS_TERMS_VERSION = '5.2.1';
 export const TERMS_NEW_ACCOUNTS_FROM_MS = Date.parse('2026-10-16T00:00:00Z');

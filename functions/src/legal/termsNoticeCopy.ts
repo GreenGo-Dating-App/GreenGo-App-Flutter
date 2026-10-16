@@ -4,7 +4,8 @@
  *
  * Mirrors the app side (lib/core/constants/legal_versions.dart:
  * kUpcomingTermsVersion / kUpcomingTermsEffectiveDate / kUpcomingTermsUrl and
- * the per-version bullets in the ARB files, legalUpdate530Bullet*). Add the
+ * the per-version bullets in the ARB files, legalUpdate530Bullet* +
+ * legalUpdate531BulletFeeCaps). Add the
  * next version here together with the app constants.
  */
 import type { AppLocale } from '../shared/i18n/locales';
@@ -27,11 +28,14 @@ export interface TermsNotice {
 }
 
 export const TERMS_NOTICES: Record<string, TermsNotice> = {
-  // Owner decision of 16 Oct 2026: 5.3.0 applies from that day to accounts
+  // Owner decision of 16 Oct 2026: 5.3.x applies from that day to accounts
   // created on or after it (they accept it at sign-up); older accounts move to
-  // it on 16 Nov 2026 and are the only ones notified.
-  '5.3.0': {
-    version: '5.3.0',
+  // it on 16 Nov 2026 and are the only ones notified. 5.3.1 (same day) replaced
+  // 5.3.0 before it took effect for them: 5.3.0 + higher service fee caps
+  // (11.6 b), so the notice names 5.3.1 (a new notice key: users notified of
+  // 5.3.0 get the 5.3.1 email too).
+  '5.3.1': {
+    version: '5.3.1',
     effectiveDate: '2026-11-16',
     accountsCreatedBefore: '2026-10-16',
     url: 'https://greengochat.com/terms-of-service/upcoming',
@@ -42,6 +46,7 @@ export const TERMS_NOTICES: Record<string, TermsNotice> = {
         'Where to find Manage subscription and Purchases & withdrawal in the app',
         'How moderation decisions, notices and appeals work, including appeals by the person who reported',
         'Traders selling Experiences to people in the EU must give their trader details',
+        'Higher maximum GreenGo service fee per ticket for sellers: Silver US$30, Gold US$28, Platinum US$25',
       ],
       de: [
         'Empfehlungsprämien so beschrieben, wie sie in der App funktionieren (1 Woche Base für die neue Person, 50 Coins für dich, zusätzliche Prämien bei 5, 10 und 20 Freunden)',
@@ -49,6 +54,7 @@ export const TERMS_NOTICES: Record<string, TermsNotice> = {
         'Wo du in der App „Abo verwalten“ und „Käufe & Widerruf“ findest',
         'Wie Moderationsentscheidungen, Mitteilungen und Beschwerden funktionieren, auch Beschwerden der meldenden Person',
         'Unternehmer, die Erlebnisse an Personen in der EU verkaufen, müssen ihre Unternehmerangaben machen',
+        'Höhere Obergrenze der GreenGo-Servicegebühr pro Ticket für Verkäufer: Silver 30 US$, Gold 28 US$, Platinum 25 US$',
       ],
       es: [
         'Las recompensas por invitación descritas como funcionan en la app (1 semana de Base para la persona nueva, 50 Coins para ti, recompensas extra a los 5, 10 y 20 amigos)',
@@ -56,6 +62,7 @@ export const TERMS_NOTICES: Record<string, TermsNotice> = {
         'Dónde encontrar Gestionar suscripción y Compras y desistimiento en la app',
         'Cómo funcionan las decisiones de moderación, las notificaciones y los recursos, incluidos los recursos de quien denunció',
         'Los comerciantes que venden Experiencias a personas en la UE deben facilitar sus datos de comerciante',
+        'Tope más alto de la tarifa de servicio de GreenGo por entrada para vendedores: Silver 30 US$, Gold 28 US$, Platinum 25 US$',
       ],
       fr: [
         'Les récompenses de parrainage décrites telles qu’elles fonctionnent dans l’app (1 semaine de Base pour la nouvelle personne, 50 Coins pour vous, des récompenses en plus à 5, 10 et 20 amis)',
@@ -63,6 +70,7 @@ export const TERMS_NOTICES: Record<string, TermsNotice> = {
         'Où trouver Gérer l’abonnement et Achats et rétractation dans l’app',
         'Comment fonctionnent les décisions de modération, les notifications et les recours, y compris les recours de la personne qui a signalé',
         'Les professionnels qui vendent des Expériences à des personnes dans l’UE doivent fournir leurs informations de professionnel',
+        'Plafond plus élevé des frais de service de GreenGo par billet pour les vendeurs : Silver 30 $ US, Gold 28 $ US, Platinum 25 $ US',
       ],
       it: [
         'I premi per gli inviti descritti come funzionano nell’app (1 settimana di Base per la nuova persona, 50 Coins per te, premi extra a 5, 10 e 20 amici)',
@@ -70,6 +78,7 @@ export const TERMS_NOTICES: Record<string, TermsNotice> = {
         'Dove trovare Gestisci abbonamento e Acquisti e recesso nell’app',
         'Come funzionano le decisioni di moderazione, le comunicazioni e i ricorsi, compresi i ricorsi di chi ha segnalato',
         'I professionisti che vendono Esperienze a persone nell’UE devono fornire i propri dati di professionista',
+        'Massimale più alto della commissione di servizio di GreenGo per biglietto per i venditori: Silver 30 US$, Gold 28 US$, Platinum 25 US$',
       ],
       pt: [
         'As recompensas por convite descritas como funcionam na app (1 semana de Base para a pessoa nova, 50 Coins para si, recompensas extra aos 5, 10 e 20 amigos)',
@@ -77,6 +86,7 @@ export const TERMS_NOTICES: Record<string, TermsNotice> = {
         'Onde encontrar Gerir subscrição e Compras e livre resolução na app',
         'Como funcionam as decisões de moderação, as notificações e os recursos, incluindo os recursos de quem denunciou',
         'Os profissionais que vendem Experiências a pessoas na UE têm de indicar os seus dados de profissional',
+        'Limite máximo mais alto da taxa de serviço do GreenGo por bilhete para vendedores: Silver 30 US$, Gold 28 US$, Platinum 25 US$',
       ],
       pt_BR: [
         'As recompensas por indicação descritas como funcionam no app (1 semana de Base para a pessoa nova, 50 Coins para você, recompensas extras aos 5, 10 e 20 amigos)',
@@ -84,6 +94,7 @@ export const TERMS_NOTICES: Record<string, TermsNotice> = {
         'Onde encontrar Gerenciar assinatura e Compras e arrependimento no app',
         'Como funcionam as decisões de moderação, os avisos e os recursos, inclusive os recursos de quem denunciou',
         'Profissionais que vendem Experiências para pessoas na UE precisam informar seus dados de profissional',
+        'Limite máximo maior da taxa de serviço do GreenGo por ingresso para vendedores: Silver US$ 30, Gold US$ 28, Platinum US$ 25',
       ],
     },
   },

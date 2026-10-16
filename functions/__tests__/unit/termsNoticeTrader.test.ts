@@ -10,45 +10,50 @@ import { NOTICE_COPY, TERMS_NOTICES } from '../../src/legal/termsNoticeCopy';
 import { normalizeTrader, publicTraderView } from '../../src/legal/traderDeclaration';
 import { SUPPORTED_LOCALES } from '../../src/shared/i18n/locales';
 
-const n530 = TERMS_NOTICES['5.3.0'];
+const n531 = TERMS_NOTICES['5.3.1'];
 const arb = (l: string) => JSON.parse(fs.readFileSync(path.join(__dirname, '../../../lib/l10n', `app_${l}.arb`), 'utf8'));
 
 describe('terms change notice email', () => {
-  test('5.3.0: 30 days after 16 October 2026, the public upcoming URL, existing accounts only', () => {
-    expect(n530.effectiveDate).toBe('2026-11-16');
-    // Owner decision of 16 Oct 2026: accounts created from that day are on 5.3.0 already.
-    expect(n530.accountsCreatedBefore).toBe('2026-10-16');
-    expect(n530.url).toBe('https://greengochat.com/terms-of-service/upcoming');
+  test('5.3.1 (replaced 5.3.0 the same day): 30 days after 16 October 2026, the public upcoming URL, existing accounts only', () => {
+    expect(Object.keys(TERMS_NOTICES)).toEqual(['5.3.1']);
+    expect(n531.version).toBe('5.3.1');
+    expect(n531.effectiveDate).toBe('2026-11-16');
+    // Owner decision of 16 Oct 2026: accounts created from that day are on 5.3.x already.
+    expect(n531.accountsCreatedBefore).toBe('2026-10-16');
+    expect(n531.url).toBe('https://greengochat.com/terms-of-service/upcoming');
     const days = (Date.parse('2026-11-16T00:00:00Z') - Date.parse('2026-10-16T00:00:00Z')) / 86400000;
     expect(days).toBeGreaterThanOrEqual(30);
   });
 
   test('bullets are the app ones (same words in the email and in the app, all 7 languages)', () => {
-    const keys = ['Referral', 'CoinGifts', 'Menus', 'Moderation', 'Traders'].map((k) => `legalUpdate530Bullet${k}`);
+    const keys = [
+      ...['Referral', 'CoinGifts', 'Menus', 'Moderation', 'Traders'].map((k) => `legalUpdate530Bullet${k}`),
+      'legalUpdate531BulletFeeCaps',
+    ];
     for (const l of SUPPORTED_LOCALES) {
       const a = arb(l);
-      expect(n530.bullets[l]).toEqual(keys.map((k) => a[k]));
+      expect(n531.bullets[l]).toEqual(keys.map((k) => a[k]));
     }
   });
 
   test.each(SUPPORTED_LOCALES.map((l) => [l]))('%s: subject, date, bullets, link, rights, escaped', (l) => {
-    const m = buildNoticeEmail(n530, l, 'ana@example.com');
+    const m = buildNoticeEmail(n531, l, 'ana@example.com');
     expect(m.to).toEqual(['ana@example.com']);
-    expect(m.subject).toContain('5.3.0');
-    expect(m.subject).toContain(formatNoticeDate(n530, l));
-    expect(m.html).toContain(`href="${n530.url}"`);
-    expect(m.text).toContain(n530.url);
+    expect(m.subject).toContain('5.3.1');
+    expect(m.subject).toContain(formatNoticeDate(n531, l));
+    expect(m.html).toContain(`href="${n531.url}"`);
+    expect(m.text).toContain(n531.url);
     expect(m.text).toContain('billing@greengochat.com');
     expect(m.text).toContain('60');
-    for (const b of n530.bullets[l]) expect(m.text).toContain(b);
+    for (const b of n531.bullets[l]) expect(m.text).toContain(b);
     expect(m.html).not.toMatch(/<script/i);
     expect(NOTICE_COPY[l].rights('X')).toContain('X');
   });
 
   test('dates in the recipient language', () => {
-    expect(formatNoticeDate(n530, 'en')).toBe('16 November 2026');
-    expect(formatNoticeDate(n530, 'de')).toBe('16. November 2026');
-    expect(formatNoticeDate(n530, 'pt_BR')).toContain('novembro');
+    expect(formatNoticeDate(n531, 'en')).toBe('16 November 2026');
+    expect(formatNoticeDate(n531, 'de')).toBe('16. November 2026');
+    expect(formatNoticeDate(n531, 'pt_BR')).toContain('novembro');
   });
 
   test('one dispatch key per user and version', () => {

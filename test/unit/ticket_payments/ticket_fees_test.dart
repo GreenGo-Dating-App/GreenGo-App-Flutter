@@ -29,11 +29,21 @@ void main() {
       expect(ticketFeePerTicket(TicketFeeRule.platinum, 2000, 'usd'), 300);
     });
 
-    test('caps: US\$10 / 9 / 8', () {
-      expect(ticketFeePerTicket(TicketFeeRule.silver, 10000, 'usd'), 1000);
-      expect(ticketFeePerTicket(TicketFeeRule.gold, 10000, 'usd'), 900);
-      expect(ticketFeePerTicket(TicketFeeRule.platinum, 10000, 'usd'), 800);
-      expect(ticketFeePerTicket(TicketFeeRule.silver, 7000, 'usd'), 1000);
+    test('caps: US\$30 / 28 / 25 (owner rule 2026-10-16)', () {
+      // US$ 100: under every cap now (3 + 10, 2 + 10, 1 + 10).
+      expect(ticketFeePerTicket(TicketFeeRule.silver, 10000, 'usd'), 1300);
+      expect(ticketFeePerTicket(TicketFeeRule.gold, 10000, 'usd'), 1200);
+      expect(ticketFeePerTicket(TicketFeeRule.platinum, 10000, 'usd'), 1100);
+      // US$ 500: 53 / 52 / 51 -> capped.
+      expect(ticketFeePerTicket(TicketFeeRule.silver, 50000, 'usd'), 3000);
+      expect(ticketFeePerTicket(TicketFeeRule.gold, 50000, 'usd'), 2800);
+      expect(ticketFeePerTicket(TicketFeeRule.platinum, 50000, 'usd'), 2500);
+      // Exactly at the cap.
+      expect(ticketFeePerTicket(TicketFeeRule.silver, 27000, 'usd'), 3000);
+      expect(ticketFeePerTicket(TicketFeeRule.gold, 26000, 'usd'), 2800);
+      expect(ticketFeePerTicket(TicketFeeRule.platinum, 24000, 'usd'), 2500);
+      // One cent over the cap threshold stays capped.
+      expect(ticketFeePerTicket(TicketFeeRule.silver, 27010, 'usd'), 3000);
     });
 
     test('trial: flat US\$1; free tickets: no fee', () {
@@ -52,7 +62,13 @@ void main() {
       final brl1 = usdCentsToMinor(100, 'brl')!;
       expect(brl1, (kUsdRates['brl']! * 100).round());
       expect(ticketFeePerTicket(TicketFeeRule.silver, 5000, 'brl'), usdCentsToMinor(300, 'brl')! + 500);
-      expect(ticketFeePerTicket(TicketFeeRule.platinum, 100000, 'brl'), usdCentsToMinor(800, 'brl'));
+      // R$ 1000 platinum: 1 USD + R$ 100 is under the US$ 25 cap now.
+      expect(ticketFeePerTicket(TicketFeeRule.platinum, 100000, 'brl'), usdCentsToMinor(100, 'brl')! + 10000);
+      // R$ 5000: capped at US$ 30 / 28 / 25 converted to BRL.
+      expect(ticketFeePerTicket(TicketFeeRule.silver, 500000, 'brl'), usdCentsToMinor(3000, 'brl'));
+      expect(ticketFeePerTicket(TicketFeeRule.gold, 500000, 'brl'), usdCentsToMinor(2800, 'brl'));
+      expect(ticketFeePerTicket(TicketFeeRule.platinum, 500000, 'brl'), usdCentsToMinor(2500, 'brl'));
+      expect(ticketFeePerTicket(TicketFeeRule.gold, 100000, 'jpy'), 28 * kUsdRates['jpy']!.round());
       expect(usdCentsToMinor(100, 'jpy'), kUsdRates['jpy']!.round());
       expect(ticketFeePerTicket(TicketFeeRule.gold, 3000, 'jpy'), 2 * kUsdRates['jpy']!.round() + 300);
       expect(currencyExponent('jpy'), 0);
@@ -78,6 +94,8 @@ void main() {
     test('the fee never exceeds the ticket price', () {
       expect(ticketFeePerTicket(TicketFeeRule.silver, 200, 'usd'), 200);
       expect(ticketFeePerTicket(TicketFeeRule.trial, 50, 'usd'), 50);
+      // A cheap ticket in another currency: the fee is still at most the price.
+      expect(ticketFeePerTicket(TicketFeeRule.silver, 1000, 'brl'), 1000);
     });
 
     test('mixed ticket types incl. a free one', () {
@@ -86,7 +104,8 @@ void main() {
         (unitAmount: 2000, quantity: 2),
         (unitAmount: 0, quantity: 2),
       ])!;
-      expect(f.fee, 1000 + 2 * 500);
+      // US$ 150 silver: 3 + 15 = 18 (under the US$ 30 cap).
+      expect(f.fee, 1800 + 2 * 500);
       expect(f.subtotal, 19000);
     });
 
@@ -98,11 +117,11 @@ void main() {
 
   test('the schedule matches the owner rule', () {
     expect(kTicketFeeSchedules[TicketFeeRule.silver]!.fixedUsdCents, 300);
-    expect(kTicketFeeSchedules[TicketFeeRule.silver]!.capUsdCents, 1000);
+    expect(kTicketFeeSchedules[TicketFeeRule.silver]!.capUsdCents, 3000);
     expect(kTicketFeeSchedules[TicketFeeRule.gold]!.fixedUsdCents, 200);
-    expect(kTicketFeeSchedules[TicketFeeRule.gold]!.capUsdCents, 900);
+    expect(kTicketFeeSchedules[TicketFeeRule.gold]!.capUsdCents, 2800);
     expect(kTicketFeeSchedules[TicketFeeRule.platinum]!.fixedUsdCents, 100);
-    expect(kTicketFeeSchedules[TicketFeeRule.platinum]!.capUsdCents, 800);
+    expect(kTicketFeeSchedules[TicketFeeRule.platinum]!.capUsdCents, 2500);
     expect(kTicketFeeSchedules[TicketFeeRule.trial]!.capUsdCents, isNull);
     for (final s in kTicketFeeSchedules.values.where((s) => s.capUsdCents != null)) {
       expect(s.percent, 10);

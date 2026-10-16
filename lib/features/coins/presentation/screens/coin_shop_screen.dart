@@ -2037,7 +2037,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           ),
           const SizedBox(width: 8),
           // Long labels / values (e.g. the ticket service fee "US$3 + 10%
-          // (max US$10)") wrap inside the tier card instead of overflowing.
+          // (max US$30)") wrap inside the tier card instead of overflowing.
           Expanded(
             flex: 3,
             child: Text(

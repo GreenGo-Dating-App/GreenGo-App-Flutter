@@ -13726,15 +13726,15 @@
   "@tpFeeHostNote": {
     "description": "Ticket payments: GreenGo service fee / payment links discontinued"
   },
-  "tpFeeRuleSilver": "Silver: US$3 + 10% per ticket (max US$10)",
+  "tpFeeRuleSilver": "Silver: US$3 + 10% per ticket (max US$30)",
   "@tpFeeRuleSilver": {
     "description": "Ticket payments: GreenGo service fee / payment links discontinued"
   },
-  "tpFeeRuleGold": "Gold: US$2 + 10% per ticket (max US$9)",
+  "tpFeeRuleGold": "Gold: US$2 + 10% per ticket (max US$28)",
   "@tpFeeRuleGold": {
     "description": "Ticket payments: GreenGo service fee / payment links discontinued"
   },
-  "tpFeeRulePlatinum": "Platinum: US$1 + 10% per ticket (max US$8)",
+  "tpFeeRulePlatinum": "Platinum: US$1 + 10% per ticket (max US$25)",
   "@tpFeeRulePlatinum": {
     "description": "Ticket payments: GreenGo service fee / payment links discontinued"
   },
@@ -13789,7 +13789,7 @@
   },
   "shopTicketFeeValue": "US${fixed} + {percent}% (max US${cap})",
   "@shopTicketFeeValue": {
-    "description": "Ticket fee value on a membership card, e.g. US$3 + 10% (max US$10).",
+    "description": "Ticket fee value on a membership card, e.g. US$3 + 10% (max US$30).",
     "placeholders": {
       "fixed": {
         "type": "String"
@@ -14918,6 +14918,10 @@
   "legalUpdate530BulletTraders": "Traders selling Experiences to people in the EU must give their trader details",
   "@legalUpdate530BulletTraders": {
     "description": "Terms 5.3.0 \"what changes\" bullet (re-acceptance sheet and advance notice)."
+  },
+  "legalUpdate531BulletFeeCaps": "Higher maximum GreenGo service fee per ticket for sellers: Silver US$30, Gold US$28, Platinum US$25",
+  "@legalUpdate531BulletFeeCaps": {
+    "description": "Terms 5.3.1 \"what changes\" bullet: higher GreenGo service fee caps per ticket (re-acceptance sheet and advance notice)."
   },
   "legalUpdateCloseAccount": "I don't accept – close my account",
   "@legalUpdateCloseAccount": {
