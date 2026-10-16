@@ -3378,7 +3378,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get deleteAccountConfirmation =>
-      'Sei sicuro di voler eliminare il tuo account? Questa azione non può essere annullata e tutti i tuoi dati verranno eliminati definitivamente.';
+      'Eliminare l\'account? L\'operazione non si può annullare.\n\n• Il tuo account e il tuo profilo vengono eliminati. Alcuni dati vengono conservati quando la legge lo richiede (pagamenti e fatture, segnalazioni di sicurezza); vedi l\'Informativa sulla privacy.\n• Le monete rimaste vanno perse.\n• Un abbonamento acquistato sul web viene annullato.\n• Un abbonamento acquistato su Google Play o sull\'App Store NON viene annullato eliminando l\'account: annullalo nello store, altrimenti lo store continuerà ad addebitarlo.';
 
   @override
   String get details => 'Dettagli';
@@ -5491,10 +5491,6 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get learningCheckBackSoon => 'Torna presto!';
-
-  @override
-  String get learningCoachSessionCost =>
-      '10 monete/sessione  |  25 XP di ricompensa';
 
   @override
   String get learningContinue => 'Continua';
@@ -7955,7 +7951,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get profileDeleteAccountWarning =>
-      'Questa azione è permanente e non può essere annullata. Tutti i tuoi dati, le connessioni e i messaggi verranno eliminati. Inserisci la password per confermare.';
+      'È definitivo. Il tuo account e il tuo profilo vengono eliminati (alcuni dati vengono conservati come richiesto dalla legge; vedi l\'Informativa sulla privacy), le monete rimaste vanno perse e l\'abbonamento web viene annullato. Annulla gli abbonamenti Google Play o App Store nello store. Inserisci la password per confermare.';
 
   @override
   String get profileDiscoveryRestarted =>
@@ -10481,7 +10477,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get guideCoinsItem4 =>
-      '• Ascolta (TTS): 5 monete  • Estendi griglia: 10 monete  • Coach di apprendimento: 10 monete/sessione';
+      '• Ascolta (TTS): 5 monete  • Estendi griglia: 10 monete';
 
   @override
   String get guideCoinsItem5 =>
@@ -16184,7 +16180,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get checkoutMembershipWithdrawalInfo =>
-      'Diritto di recesso: puoi recedere da questo abbonamento entro 14 giorni dall\'acquisto (7 giorni per gli acquisti effettuati in Brasile) senza indicarne il motivo e ricevere il rimborso completo, tramite «Recedi dal contratto» nello Shop o sul nostro sito. L\'abbonamento si rinnova automaticamente finché non lo annulli; puoi annullarlo in qualsiasi momento nel portale di fatturazione.';
+      'Diritto di recesso: nell\'UE, nel SEE e nel Regno Unito, 14 giorni dall\'acquisto; poiché l\'abbonamento inizia al pagamento, rimborsiamo il prezzo meno i giorni già utilizzati. In Brasile, 7 giorni con rimborso completo. Usa «Recedi dal contratto» (Profilo > Impostazioni account > Acquisti e recesso) o scrivi a billing@greengochat.com. Si rinnova automaticamente finché non lo annulli nel portale di fatturazione.';
 
   @override
   String get checkoutContinueToPayment => 'Continua al pagamento';
@@ -16224,11 +16220,11 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get withdrawalDialogIntro =>
-      'Scegli l\'acquisto da cui vuoi recedere. Invieremo un link di conferma all\'indirizzo usato per l\'acquisto; nulla viene annullato o rimborsato finché non confermi.';
+      'Scegli l\'acquisto da cui recedere. Invieremo un link di conferma all\'indirizzo usato per l\'acquisto; nulla viene annullato o rimborsato finché non confermi. Un abbonamento già iniziato viene rimborsato meno i giorni utilizzati (rimborso completo in Brasile).';
 
   @override
   String get withdrawalNothingEligible =>
-      'Nessuno dei tuoi acquisti web consente il recesso in questo momento. Gli abbonamenti consentono il recesso entro 14 giorni dall\'acquisto (7 giorni in Brasile); gli acquisti di monete solo se al pagamento non si è rinunciato al diritto.';
+      'Nessuno dei tuoi acquisti web consente il recesso in questo momento. Nell\'UE, nel SEE e nel Regno Unito gli abbonamenti consentono il recesso entro 14 giorni dall\'acquisto, e le monete solo se al pagamento non si è rinunciato al diritto. In Brasile qualsiasi acquisto web consente il recesso entro 7 giorni.';
 
   @override
   String withdrawalDeadline(String date) {
@@ -16241,7 +16237,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get withdrawalRequestFailed =>
-      'Impossibile inviare la richiesta di recesso. Riprova o scrivi a support@greengochat.com.';
+      'Impossibile inviare la richiesta di recesso. Riprova o scrivi a billing@greengochat.com.';
 
   @override
   String webSubscriptionRenewsOn(
@@ -23690,15 +23686,14 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get nciiFormError =>
-      'Impossibile inviare la richiesta. Riprova o scrivi a info@greengochat.com.';
+      'Impossibile inviare la richiesta. Riprova o scrivi a safety@greengochat.com.';
 
   @override
   String get nciiFormRateLimited =>
-      'Troppe richieste oggi. Scrivi a info@greengochat.com se è urgente.';
+      'Troppe richieste oggi. Scrivi a safety@greengochat.com se è urgente.';
 
   @override
-  String get safetyReportReasonCsae =>
-      'Abuso o sfruttamento sessuale di minori';
+  String get safetyReportReasonCsae => 'Sfruttamento sessuale di minori';
 
   @override
   String get safetyReportReasonNcii =>
@@ -25840,4 +25835,251 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get srvAppealPageInvalid =>
       'Questo link per il ricorso non è valido. Usa il link della nostra email più recente o scrivi a safety@greengochat.com.';
+
+  @override
+  String safetyReportEmailNote(String email) {
+    return 'Puoi segnalare problemi di sicurezza anche via email: $email';
+  }
+
+  @override
+  String get safetyHelpEntryTitle => 'Segnala un problema di sicurezza';
+
+  @override
+  String safetyHelpEntrySubtitle(String email) {
+    return 'Sicurezza dei minori, abusi o contenuti illegali: scrivi a $email';
+  }
+
+  @override
+  String get safetyReportWhyContent => 'Perché lo stai segnalando?';
+
+  @override
+  String get safetyReportSent =>
+      'Segnalazione inviata. Grazie, esaminiamo ogni segnalazione.';
+
+  @override
+  String get spotsReportReview => 'Segnala recensione';
+
+  @override
+  String get communitiesReportCommunity => 'Segnala community';
+
+  @override
+  String get communitiesRemovePost => 'Rimuovi post';
+
+  @override
+  String get communitiesRemovePostTitle => 'Rimuovere questo post?';
+
+  @override
+  String get communitiesRemovePostMessage =>
+      'Il post verrà rimosso per tutti in questa community. Non si può annullare.';
+
+  @override
+  String get communitiesPostRemoved => 'Post rimosso';
+
+  @override
+  String coinsGiftAmountRange(int min, int max) {
+    return 'Un regalo deve essere compreso tra $min e $max monete.';
+  }
+
+  @override
+  String get purchasesWithdrawalTitle => 'Acquisti e recesso';
+
+  @override
+  String get purchasesWithdrawalSubtitle =>
+      'I tuoi acquisti web e il diritto di recesso';
+
+  @override
+  String get purchasesWithdrawalWebIntro =>
+      'Acquisti effettuati sul web (greengochat.com e la web app), pagati tramite Stripe.';
+
+  @override
+  String get purchasesWithdrawalMemberships => 'Abbonamenti';
+
+  @override
+  String get purchasesWithdrawalOrders => 'Acquisti';
+
+  @override
+  String get purchasesWithdrawalEmpty =>
+      'Non ci sono acquisti web su questo account.';
+
+  @override
+  String get purchasesWithdrawalLoadFailed =>
+      'Impossibile caricare i tuoi acquisti. Riprova.';
+
+  @override
+  String get purchasesWithdrawalWithdrawSubtitle =>
+      'Scegli un acquisto ancora nel periodo di recesso';
+
+  @override
+  String get purchasesWithdrawalPortal => 'Portale di fatturazione';
+
+  @override
+  String get purchasesWithdrawalPortalSubtitle =>
+      'Fatture, metodi di pagamento e annullamento (Stripe)';
+
+  @override
+  String get purchasesWithdrawalRules =>
+      'Il tuo diritto di recesso: nell\'UE, nel SEE e nel Regno Unito puoi recedere entro 14 giorni dall\'acquisto. Un abbonamento già iniziato viene rimborsato meno un importo proporzionale ai giorni utilizzati; le monete solo se al pagamento non hai rinunciato al diritto. In Brasile puoi recedere da un acquisto entro 7 giorni e ricevere il rimborso completo. Puoi anche scrivere a billing@greengochat.com. Ti rimborsiamo con lo stesso metodo di pagamento entro 14 giorni (15 giorni in Brasile).';
+
+  @override
+  String get purchasesWithdrawalStoreHelp =>
+      'Gli acquisti fatti nell\'app Android o iPhone sono stati venduti da Google Play o Apple. Chiedi a loro il rimborso o il recesso:';
+
+  @override
+  String get purchasesWithdrawalGooglePlayPath =>
+      'Cronologia ordini > Richiedi un rimborso';
+
+  @override
+  String get purchasesWithdrawalApplePath => 'reportaproblem.apple.com';
+
+  @override
+  String get purchasesWithdrawalEmailWeb =>
+      'Se lo store non risolve, o per gli acquisti pagati direttamente a noi, scrivici.';
+
+  @override
+  String get legalUpdate530BulletReferral =>
+      'I premi per gli inviti descritti come funzionano nell’app (1 settimana di Base per la nuova persona, 50 Coins per te, premi extra a 5, 10 e 20 amici)';
+
+  @override
+  String get legalUpdate530BulletCoinGifts =>
+      'I regali di Coins arrivano subito e devono essere tra 10 e 1.000 Coins';
+
+  @override
+  String get legalUpdate530BulletMenus =>
+      'Dove trovare Gestisci abbonamento e Acquisti e recesso nell’app';
+
+  @override
+  String get legalUpdate530BulletModeration =>
+      'Come funzionano le decisioni di moderazione, le comunicazioni e i ricorsi, compresi i ricorsi di chi ha segnalato';
+
+  @override
+  String get legalUpdate530BulletTraders =>
+      'I professionisti che vendono Esperienze a persone nell’UE devono fornire i propri dati di professionista';
+
+  @override
+  String get legalUpdateCloseAccount => 'Non accetto – chiudi il mio account';
+
+  @override
+  String get legalUpdateCloseAccountTitle => 'Chiudi il tuo account';
+
+  @override
+  String legalUpdateCloseAccountBody(String email) {
+    return 'Se non accetti i nuovi Termini, puoi chiudere gratuitamente il tuo contratto con GreenGo eliminando il tuo account. Se hai pagato un Abbonamento in anticipo, ti rimborsiamo la parte non usata: scrivi a $email.\n\nPoi apri il tuo Profilo e tocca \"Elimina Account\" in fondo.';
+  }
+
+  @override
+  String get legalUpdateCloseAccountContinue => 'Vai a Elimina Account';
+
+  @override
+  String legalUpcomingTitle(String date) {
+    return 'I nostri Termini cambiano il $date';
+  }
+
+  @override
+  String legalUpcomingIntro(String version, String date) {
+    return 'La versione $version dei Termini e Condizioni si applica dal $date. A quel punto ti chiederemo di accettarla. Cosa cambia:';
+  }
+
+  @override
+  String legalUpcomingRights(String date, String email) {
+    return 'Se non accetti la modifica, puoi chiudere gratuitamente il contratto prima del $date eliminando il tuo account (Profilo > Elimina Account) e ottenere il rimborso della parte non usata di un Abbonamento pagato in anticipo: $email.';
+  }
+
+  @override
+  String get legalUpcomingRead => 'Leggi i nuovi Termini';
+
+  @override
+  String get legalUpcomingGotIt => 'Ho capito';
+
+  @override
+  String get supportAiNotice =>
+      'Le risposte possono arrivare dal nostro assistente IA (indicato come IA).';
+
+  @override
+  String get supportTalkToPerson => 'Parla con una persona';
+
+  @override
+  String get supportHumanRequested =>
+      'Una persona del nostro team ti risponderà qui.';
+
+  @override
+  String get supportTalkToPersonFailed =>
+      'Non siamo riusciti a contattare il team. Riprova.';
+
+  @override
+  String get promotionalUseTitle => 'Uso promozionale dei miei contenuti';
+
+  @override
+  String get promotionalUseSubtitle =>
+      'Consenti a GreenGo di usare il tuo nome, le tue foto e i tuoi post nella sua pubblicità fuori dall’app. Disattivato finché non lo attivi.';
+
+  @override
+  String get bcCheckTrader => 'Stato di professionista (UE)';
+
+  @override
+  String get traderTitle => 'Stato di professionista (UE)';
+
+  @override
+  String get traderIntro =>
+      'Se vendi Esperienze o biglietti nell’ambito della tua attività commerciale, impresa o professione, sei un professionista. La legge UE (Digital Services Act) ci obbliga a mostrare i tuoi dati di professionista agli ospiti.';
+
+  @override
+  String get traderQuestion => 'Vendi come professionista?';
+
+  @override
+  String get traderYes => 'Sì, sono un professionista';
+
+  @override
+  String get traderNo => 'No, sono un privato';
+
+  @override
+  String get traderNoHint =>
+      'Gli ospiti vedranno che non sei un professionista: i diritti dei consumatori per gli acquisti da professionisti non si applicano.';
+
+  @override
+  String get traderUseBilling => 'Compila con i miei dati di fatturazione';
+
+  @override
+  String get traderName => 'Nome o ragione sociale';
+
+  @override
+  String get traderIdNumber => 'Numero di documento o di registrazione';
+
+  @override
+  String get traderIdNumberHint => 'Non viene mostrato agli ospiti.';
+
+  @override
+  String get traderIdNumberBillingHint =>
+      'Non viene mostrato agli ospiti. Lascia vuoto per usare il codice fiscale dei tuoi dati di fatturazione.';
+
+  @override
+  String get traderRegister => 'Registro delle imprese (se iscritto)';
+
+  @override
+  String get traderRegisterNumber => 'Numero di iscrizione';
+
+  @override
+  String get traderSelfCertify =>
+      'Confermo di offrire solo prodotti e servizi conformi alla legge applicabile.';
+
+  @override
+  String get traderPublicNote =>
+      'Gli ospiti vedono nome, indirizzo, telefono, email e registro delle imprese nelle tue Esperienze e all’acquisto dei biglietti. Il numero del documento non viene mai mostrato.';
+
+  @override
+  String get traderSaved => 'Stato di professionista salvato';
+
+  @override
+  String get traderCardTitle => 'Informazioni sul venditore';
+
+  @override
+  String get traderCardNonTraderTitle => 'Venditore privato';
+
+  @override
+  String get traderCardNonTrader =>
+      'Questa persona è un privato, non un professionista. I diritti dei consumatori per gli acquisti da professionisti non si applicano a questo acquisto.';
+
+  @override
+  String traderCardRegister(String register, String number) {
+    return '$register: $number';
+  }
 }
