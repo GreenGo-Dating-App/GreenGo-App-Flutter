@@ -1,8 +1,8 @@
 ALLGEMEINE GESCHÄFTSBEDINGUNGEN VON GREENGO
 
-Version: 5.2.0
-Gültig ab: 14. Oktober 2026
-Vorherige Version: 5.1.2 (13. Oktober 2026)
+Version: 5.2.1
+Gültig ab: 16. Oktober 2026
+Vorherige Version: 5.2.0 (14. Oktober 2026)
 
 ================================================================================
 1. ÜBER DIESE BEDINGUNGEN
@@ -191,7 +191,7 @@ Mitgliedschaft, die du bereits hast.
 7.3 So kündigst du
 a) Gekauft in der iOS-App: in deinen Apple-ID-Einstellungen > Abonnements.
 b) Gekauft in der Android-App: in Google Play > Zahlungen & Abos > Abos.
-c) Gekauft im Web: in GreenGo > Einstellungen > Mitgliedschaft > Abo verwalten,
+c) Gekauft im Web: in GreenGo > Profil > Kontoeinstellungen > Abo verwalten,
    wodurch sich das sichere Abrechnungsportal von Stripe öffnet, oder über den
    Link „Abo verwalten“ in jeder Beleg-E-Mail. Ein Grund ist nicht
    erforderlich.
@@ -1220,6 +1220,10 @@ Urheberrecht (DMCA): copyright@greengochat.com
 ================================================================================
 VERSIONSVERLAUF
 ================================================================================
+
+5.2.1 - 16. Oktober 2026
+- Abschnitt 7.3 c: klargestellt, wo du ein im Web abgeschlossenes Abo in der
+  App kündigst.
 
 5.2.0 - 14. Oktober 2026
 - Abschnitte 11.2, 12.2, 12.3, 12.5 und 16.5: kostenpflichtige Tickets und

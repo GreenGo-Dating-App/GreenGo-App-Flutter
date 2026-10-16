@@ -1,8 +1,8 @@
 TERMOS E CONDIÇÕES DO GREENGO
 
-Versão: 5.2.0
-Data de vigência: 14 de outubro de 2026
-Versão anterior: 5.1.2 (13 de outubro de 2026)
+Versão: 5.2.1
+Data de vigência: 16 de outubro de 2026
+Versão anterior: 5.2.0 (14 de outubro de 2026)
 
 ================================================================================
 1. SOBRE ESTES TERMOS
@@ -184,7 +184,7 @@ a) Comprada no aplicativo iOS: nas configurações do seu ID Apple >
    Assinaturas.
 b) Comprada no aplicativo Android: no Google Play > Pagamentos e assinaturas >
    Assinaturas.
-c) Comprada na web: no GreenGo > Configurações > Assinatura > Gerenciar
+c) Comprada na web: no GreenGo > Perfil > Configurações da Conta > Gerenciar
    assinatura, que abre o portal de cobrança seguro da Stripe, ou pelo link
    "Gerenciar assinatura" em qualquer e-mail de recibo. Não é preciso informar
    um motivo.
@@ -1164,6 +1164,10 @@ Direitos autorais (DMCA): copyright@greengochat.com
 ================================================================================
 HISTÓRICO DE VERSÕES
 ================================================================================
+
+5.2.1 - 16 de outubro de 2026
+- Seção 7.3 c: esclarecido onde cancelar no aplicativo uma assinatura
+  comprada na web.
 
 5.2.0 - 14 de outubro de 2026
 - Seções 11.2, 12.2, 12.3, 12.5 e 16.5: ingressos e reservas pagos somente

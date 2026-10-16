@@ -7,7 +7,7 @@
 library;
 
 /// Terms and Conditions version shown in-app and recorded at acceptance.
-const String kTermsVersion = '5.2.0';
+const String kTermsVersion = '5.2.1';
 
 /// Privacy Policy version shown in-app and recorded at acceptance.
 const String kPrivacyPolicyVersion = '5.2.0';
@@ -24,8 +24,10 @@ final DateTime kLegalEffectiveDate = DateTime(2026, 10, 15);
 /// Both are clarifications; no re-acceptance. 5.2.0: in-app checkout only,
 /// seller-paid service fee 11.6, active-listing limits 11.7, guest booking
 /// 11.8, Business from Silver 13.7 - [kTermsReacceptFrom] deliberately NOT
-/// raised here; whether 5.2.0 triggers re-acceptance is the owner's call).
-final DateTime kTermsEffectiveDate = DateTime(2026, 10, 14);
+/// raised here; whether 5.2.0 triggers re-acceptance is the owner's call.
+/// 5.2.1: 7.3 c - cancel a web subscription in Profile > Account Settings >
+/// Manage subscription; a clarification, no re-acceptance).
+final DateTime kTermsEffectiveDate = DateTime(2026, 10, 16);
 
 /// Oldest accepted version that does NOT trigger the "we've updated our
 /// Terms" sheet. Raise it only for a MATERIAL change (5.1.0: new Terms 16.9
