@@ -465,12 +465,16 @@ class _SubscriptionCelebrationScreenState
             ),
           ),
         ),
-        Text(
-          value,
-          style: TextStyle(
-            color: _tierColor,
-            fontSize: 14,
-            fontWeight: FontWeight.bold,
+        const SizedBox(width: 8),
+        Flexible(
+          child: Text(
+            value,
+            textAlign: TextAlign.end,
+            style: TextStyle(
+              color: _tierColor,
+              fontSize: 14,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
       ],

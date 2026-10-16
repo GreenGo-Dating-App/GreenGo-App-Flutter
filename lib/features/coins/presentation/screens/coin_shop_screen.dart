@@ -2036,20 +2036,29 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             color: isEnabled ? Colors.green : Colors.red.withValues(alpha: 0.5),
           ),
           const SizedBox(width: 8),
-          Text(
-            feature,
-            style: TextStyle(
-              fontSize: 13,
-              color: isEnabled ? Colors.white70 : Colors.white38,
+          // Long labels / values (e.g. the ticket service fee "US$3 + 10%
+          // (max US$10)") wrap inside the tier card instead of overflowing.
+          Expanded(
+            flex: 3,
+            child: Text(
+              feature,
+              style: TextStyle(
+                fontSize: 13,
+                color: isEnabled ? Colors.white70 : Colors.white38,
+              ),
             ),
           ),
-          const Spacer(),
-          Text(
-            value,
-            style: TextStyle(
-              fontSize: 13,
-              fontWeight: FontWeight.bold,
-              color: isEnabled ? Colors.white : Colors.white38,
+          const SizedBox(width: 8),
+          Flexible(
+            flex: 2,
+            child: Text(
+              value,
+              textAlign: TextAlign.end,
+              style: TextStyle(
+                fontSize: 13,
+                fontWeight: FontWeight.bold,
+                color: isEnabled ? Colors.white : Colors.white38,
+              ),
             ),
           ),
         ],
