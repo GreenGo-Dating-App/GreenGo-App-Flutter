@@ -572,6 +572,9 @@ class _ChatScreenState extends State<ChatScreen> {
     // Don't translate non-text messages
     if (message.type != MessageType.text) return message;
     if (message.content.trim().isEmpty) return message;
+    // A shared attraction renders as a card from its stored i18n texts;
+    // attraction content is never sent to a translation service.
+    if (ChatAttractionShare.of(message.metadata) != null) return message;
 
     final selectedLang = _targetLanguage;
     // Google Translate uses hyphens: pt_BR -> pt-BR
