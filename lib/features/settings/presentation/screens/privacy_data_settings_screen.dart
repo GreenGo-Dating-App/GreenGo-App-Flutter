@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -19,6 +21,7 @@ class PrivacyDataSettingsScreen extends StatefulWidget {
     this.dataExport,
     this.reauthenticate,
     this.openUrl,
+    this.readServerConsent,
   });
 
   final AnalyticsConsentService? analytics;
@@ -30,6 +33,10 @@ class PrivacyDataSettingsScreen extends StatefulWidget {
 
   /// Opens the download link (tests override it).
   final Future<bool> Function(Uri url)? openUrl;
+
+  /// The server decision of a consent [type] (`consents/{uid}`, owner-
+  /// readable), used when this device has none (tests override it).
+  final Future<bool?> Function(String type)? readServerConsent;
 
   static Route<void> route() => MaterialPageRoute(
         builder: (_) => const PrivacyDataSettingsScreen(),
@@ -49,12 +56,60 @@ class _PrivacyDataSettingsScreenState extends State<PrivacyDataSettingsScreen> {
 
   bool _marketingEmail = false;
   bool _savingMarketing = false;
+
+  /// Terms 15.3: off unless the user gives the permission.
+  bool _promotionalUse = false;
+  bool _savingPromotional = false;
   bool _exporting = false;
 
   @override
   void initState() {
     super.initState();
     _loadMarketing();
+    _loadPromotional();
+  }
+
+  static Future<bool?> _readServerConsent(String type) async {
+    try {
+      final uid = FirebaseAuth.instance.currentUser?.uid;
+      if (uid == null) return null;
+      final d = (await FirebaseFirestore.instance.collection('consents').doc(uid).get()).data();
+      final rec = d?[type];
+      return rec is Map ? rec['accepted'] == true : null;
+    } catch (_) {
+      return null;
+    }
+  }
+
+  Future<void> _loadPromotional() async {
+    var v = await _recorder.localDecision(ConsentTypes.promotionalUse);
+    v ??= await (widget.readServerConsent ?? _readServerConsent)(ConsentTypes.promotionalUse);
+    if (!mounted || v == null) return;
+    setState(() => _promotionalUse = v!);
+  }
+
+  Future<void> _setPromotional(bool value) async {
+    final previous = _promotionalUse;
+    setState(() {
+      _promotionalUse = value;
+      _savingPromotional = true;
+    });
+    final ok = await _recorder.record(
+      type: ConsentTypes.promotionalUse,
+      accepted: value,
+      retries: 1,
+    );
+    if (!mounted) return;
+    setState(() {
+      _savingPromotional = false;
+      if (!ok) _promotionalUse = previous;
+    });
+    if (!ok) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(AppLocalizations.of(context)!.privacySettingsSaveError),
+        backgroundColor: AppColors.errorRed,
+      ));
+    }
   }
 
   Future<void> _loadMarketing() async {
@@ -224,6 +279,18 @@ class _PrivacyDataSettingsScreenState extends State<PrivacyDataSettingsScreen> {
                     style: const TextStyle(color: AppColors.textSecondary)),
                 value: _marketingEmail,
                 onChanged: _savingMarketing ? null : _setMarketing,
+              ),
+              const Divider(height: 1),
+              // Terms 15.3: promotion only with the user's permission.
+              SwitchListTile(
+                key: const Key('privacyPromotionalUseSwitch'),
+                activeColor: AppColors.richGold,
+                title: Text(l10n.promotionalUseTitle,
+                    style: const TextStyle(color: AppColors.textPrimary)),
+                subtitle: Text(l10n.promotionalUseSubtitle,
+                    style: const TextStyle(color: AppColors.textSecondary)),
+                value: _promotionalUse,
+                onChanged: _savingPromotional ? null : _setPromotional,
               ),
               const Divider(height: 1),
               ListTile(

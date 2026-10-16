@@ -5481,10 +5481,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get learningCheckBackSoon => 'Volte em breve!';
 
   @override
-  String get learningCoachSessionCost =>
-      '10 moedas/sessão  |  25 XP de recompensa';
-
-  @override
   String get learningContinue => 'Continuar';
 
   @override
@@ -10460,7 +10456,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get guideCoinsItem4 =>
-      '• Ouvir (TTS): 5 moedas  • Extensão da grelha: 10 moedas  • Coach de aprendizagem: 10 moedas/sessão';
+      '• Ouvir (TTS): 5 moedas  • Extensão da grelha: 10 moedas';
 
   @override
   String get guideCoinsItem5 =>
@@ -25642,6 +25638,154 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get manageSubscriptionAppStorePath =>
       'Definições do ID Apple > Subscrições';
+
+  @override
+  String get legalUpdate530BulletReferral =>
+      'As recompensas por convite descritas como funcionam na app (1 semana de Base para a pessoa nova, 50 Coins para si, recompensas extra aos 5, 10 e 20 amigos)';
+
+  @override
+  String get legalUpdate530BulletCoinGifts =>
+      'As ofertas de Coins chegam de imediato e têm de ser entre 10 e 1000 Coins';
+
+  @override
+  String get legalUpdate530BulletMenus =>
+      'Onde encontrar Gerir subscrição e Compras e livre resolução na app';
+
+  @override
+  String get legalUpdate530BulletModeration =>
+      'Como funcionam as decisões de moderação, as notificações e os recursos, incluindo os recursos de quem denunciou';
+
+  @override
+  String get legalUpdate530BulletTraders =>
+      'Os profissionais que vendem Experiências a pessoas na UE têm de indicar os seus dados de profissional';
+
+  @override
+  String get legalUpdateCloseAccount => 'Não aceito – fechar a minha conta';
+
+  @override
+  String get legalUpdateCloseAccountTitle => 'Fechar a sua conta';
+
+  @override
+  String legalUpdateCloseAccountBody(String email) {
+    return 'Se não aceitar os novos Termos, pode terminar o seu contrato com o GreenGo sem custos, eliminando a sua conta. Se pagou uma Assinatura antecipadamente, reembolsamos a parte não utilizada: escreva para $email.\n\nDepois, abra o seu Perfil e toque em \"Eliminar Conta\" no fim.';
+  }
+
+  @override
+  String get legalUpdateCloseAccountContinue => 'Ir para Eliminar Conta';
+
+  @override
+  String legalUpcomingTitle(String date) {
+    return 'Os nossos Termos mudam a $date';
+  }
+
+  @override
+  String legalUpcomingIntro(String version, String date) {
+    return 'A versão $version dos Termos e Condições aplica-se a partir de $date. Nessa altura, pedimos que a aceite. O que muda:';
+  }
+
+  @override
+  String legalUpcomingRights(String date, String email) {
+    return 'Se não aceitar a alteração, pode terminar o contrato sem custos antes de $date, eliminando a sua conta (Perfil > Eliminar Conta), e receber o reembolso da parte não utilizada de uma Assinatura paga antecipadamente: $email.';
+  }
+
+  @override
+  String get legalUpcomingRead => 'Ler os novos Termos';
+
+  @override
+  String get legalUpcomingGotIt => 'Entendi';
+
+  @override
+  String get supportAiNotice =>
+      'As respostas podem vir do nosso assistente de IA (assinalado como IA).';
+
+  @override
+  String get supportTalkToPerson => 'Falar com uma pessoa';
+
+  @override
+  String get supportHumanRequested =>
+      'Uma pessoa da nossa equipa vai responder aqui.';
+
+  @override
+  String get supportTalkToPersonFailed =>
+      'Não foi possível contactar a equipa agora. Tente novamente.';
+
+  @override
+  String get promotionalUseTitle => 'Utilização promocional do meu conteúdo';
+
+  @override
+  String get promotionalUseSubtitle =>
+      'Permite que o GreenGo use o seu nome, fotos e publicações na publicidade fora da app. Desligado a menos que o ative.';
+
+  @override
+  String get bcCheckTrader => 'Estatuto de profissional (UE)';
+
+  @override
+  String get traderTitle => 'Estatuto de profissional (UE)';
+
+  @override
+  String get traderIntro =>
+      'Se vende Experiências ou bilhetes no âmbito da sua atividade comercial, empresa ou profissão, é um profissional. A lei da UE (Regulamento dos Serviços Digitais) obriga-nos a mostrar os seus dados de profissional aos participantes.';
+
+  @override
+  String get traderQuestion => 'Vende como profissional?';
+
+  @override
+  String get traderYes => 'Sim, sou profissional';
+
+  @override
+  String get traderNo => 'Não, sou um particular';
+
+  @override
+  String get traderNoHint =>
+      'Os participantes verão que não é profissional: os direitos dos consumidores nas compras a profissionais não se aplicam.';
+
+  @override
+  String get traderUseBilling => 'Preencher com os meus dados de faturação';
+
+  @override
+  String get traderName => 'Nome ou denominação social';
+
+  @override
+  String get traderIdNumber => 'Número de identificação ou de registo';
+
+  @override
+  String get traderIdNumberHint => 'Não é mostrado aos participantes.';
+
+  @override
+  String get traderIdNumberBillingHint =>
+      'Não é mostrado aos participantes. Deixe vazio para usar o número fiscal dos seus dados de faturação.';
+
+  @override
+  String get traderRegister => 'Registo comercial (se registado)';
+
+  @override
+  String get traderRegisterNumber => 'Número de registo';
+
+  @override
+  String get traderSelfCertify =>
+      'Confirmo que ofereço apenas produtos e serviços que cumprem a lei aplicável.';
+
+  @override
+  String get traderPublicNote =>
+      'Os participantes veem o seu nome, morada, telefone, e-mail e registo comercial nas suas Experiências e na compra de bilhetes. O número de identificação nunca é mostrado.';
+
+  @override
+  String get traderSaved => 'Estatuto de profissional guardado';
+
+  @override
+  String get traderCardTitle => 'Informações do vendedor';
+
+  @override
+  String get traderCardNonTraderTitle => 'Vendedor particular';
+
+  @override
+  String get traderCardNonTrader =>
+      'Esta pessoa é um particular, não um profissional. Os direitos dos consumidores nas compras a profissionais não se aplicam a esta compra.';
+
+  @override
+  String traderCardRegister(String register, String number) {
+    return '$register: $number';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -31127,10 +31271,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get learningCheckBackSoon => 'Volte em breve!';
 
   @override
-  String get learningCoachSessionCost =>
-      '10 moedas/sessão  |  25 XP de recompensa';
-
-  @override
   String get learningContinue => 'Continuar';
 
   @override
@@ -36103,7 +36243,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get guideCoinsItem4 =>
-      '• Ouvir (TTS): 5 moedas  • Extensão da grade: 10 moedas  • Coach de aprendizagem: 10 moedas/sessão';
+      '• Ouvir (TTS): 5 moedas  • Extensão da grade: 10 moedas';
 
   @override
   String get guideCoinsItem5 =>
@@ -51289,4 +51429,152 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get manageSubscriptionAppStorePath =>
       'Ajustes do ID Apple > Assinaturas';
+
+  @override
+  String get legalUpdate530BulletReferral =>
+      'As recompensas por indicação descritas como funcionam no app (1 semana de Base para a pessoa nova, 50 Coins para você, recompensas extras aos 5, 10 e 20 amigos)';
+
+  @override
+  String get legalUpdate530BulletCoinGifts =>
+      'Os presentes de Coins chegam na hora e precisam ser de 10 a 1.000 Coins';
+
+  @override
+  String get legalUpdate530BulletMenus =>
+      'Onde encontrar Gerenciar assinatura e Compras e arrependimento no app';
+
+  @override
+  String get legalUpdate530BulletModeration =>
+      'Como funcionam as decisões de moderação, os avisos e os recursos, inclusive os recursos de quem denunciou';
+
+  @override
+  String get legalUpdate530BulletTraders =>
+      'Profissionais que vendem Experiências para pessoas na UE precisam informar seus dados de profissional';
+
+  @override
+  String get legalUpdateCloseAccount => 'Não aceito – encerrar minha conta';
+
+  @override
+  String get legalUpdateCloseAccountTitle => 'Encerrar sua conta';
+
+  @override
+  String legalUpdateCloseAccountBody(String email) {
+    return 'Se você não aceitar os novos Termos, pode encerrar seu contrato com o GreenGo sem custo, excluindo sua conta. Se você pagou uma Assinatura antecipadamente, reembolsamos a parte não usada: escreva para $email.\n\nDepois, abra seu Perfil e toque em \"Excluir Conta\" no final.';
+  }
+
+  @override
+  String get legalUpdateCloseAccountContinue => 'Ir para Excluir Conta';
+
+  @override
+  String legalUpcomingTitle(String date) {
+    return 'Nossos Termos mudam em $date';
+  }
+
+  @override
+  String legalUpcomingIntro(String version, String date) {
+    return 'A versão $version dos Termos e Condições vale a partir de $date. Nessa data, vamos pedir que você a aceite. O que muda:';
+  }
+
+  @override
+  String legalUpcomingRights(String date, String email) {
+    return 'Se você não aceitar a mudança, pode encerrar seu contrato sem custo antes de $date, excluindo sua conta (Perfil > Excluir Conta), e receber o reembolso da parte não usada de uma Assinatura paga antecipadamente: $email.';
+  }
+
+  @override
+  String get legalUpcomingRead => 'Ler os novos Termos';
+
+  @override
+  String get legalUpcomingGotIt => 'Entendi';
+
+  @override
+  String get supportAiNotice =>
+      'As respostas podem vir do nosso assistente de IA (marcado como IA).';
+
+  @override
+  String get supportTalkToPerson => 'Falar com uma pessoa';
+
+  @override
+  String get supportHumanRequested =>
+      'Uma pessoa da nossa equipe vai responder aqui.';
+
+  @override
+  String get supportTalkToPersonFailed =>
+      'Não foi possível falar com a equipe agora. Tente de novo.';
+
+  @override
+  String get promotionalUseTitle => 'Uso promocional do meu conteúdo';
+
+  @override
+  String get promotionalUseSubtitle =>
+      'Permite que o GreenGo use seu nome, fotos e publicações na publicidade fora do app. Desligado a menos que você ative.';
+
+  @override
+  String get bcCheckTrader => 'Status de profissional (UE)';
+
+  @override
+  String get traderTitle => 'Status de profissional (UE)';
+
+  @override
+  String get traderIntro =>
+      'Se você vende Experiências ou ingressos como parte da sua atividade comercial, empresa ou profissão, você é um profissional. A lei da UE (Digital Services Act) exige que mostremos seus dados de profissional aos participantes.';
+
+  @override
+  String get traderQuestion => 'Você vende como profissional?';
+
+  @override
+  String get traderYes => 'Sim, sou profissional';
+
+  @override
+  String get traderNo => 'Não, sou pessoa física';
+
+  @override
+  String get traderNoHint =>
+      'Os participantes verão que você não é profissional: os direitos do consumidor em compras de profissionais não se aplicam.';
+
+  @override
+  String get traderUseBilling => 'Preencher com meus dados de faturamento';
+
+  @override
+  String get traderName => 'Nome ou razão social';
+
+  @override
+  String get traderIdNumber => 'Número de identificação ou de registro';
+
+  @override
+  String get traderIdNumberHint => 'Não é mostrado aos participantes.';
+
+  @override
+  String get traderIdNumberBillingHint =>
+      'Não é mostrado aos participantes. Deixe vazio para usar o número fiscal dos seus dados de faturamento.';
+
+  @override
+  String get traderRegister => 'Registro comercial (se registrado)';
+
+  @override
+  String get traderRegisterNumber => 'Número de registro';
+
+  @override
+  String get traderSelfCertify =>
+      'Confirmo que ofereço apenas produtos e serviços que cumprem a lei aplicável.';
+
+  @override
+  String get traderPublicNote =>
+      'Os participantes veem seu nome, endereço, telefone, e-mail e registro comercial nas suas Experiências e na compra de ingressos. O número de identificação nunca é mostrado.';
+
+  @override
+  String get traderSaved => 'Status de profissional salvo';
+
+  @override
+  String get traderCardTitle => 'Informações do vendedor';
+
+  @override
+  String get traderCardNonTraderTitle => 'Vendedor pessoa física';
+
+  @override
+  String get traderCardNonTrader =>
+      'Esta pessoa é pessoa física, não um profissional. Os direitos do consumidor em compras de profissionais não se aplicam a esta compra.';
+
+  @override
+  String traderCardRegister(String register, String number) {
+    return '$register: $number';
+  }
 }

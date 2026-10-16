@@ -10,6 +10,8 @@ enum CompanyItem {
   address(required: true),
   invoiceDetails(required: true),
   payments(required: true),
+  // Terms 12.4 / DSA art. 30: sellers say whether they act as a trader.
+  traderStatus(required: true),
   hours(required: false),
   contact(required: false),
   cover(required: false),
@@ -19,10 +21,11 @@ enum CompanyItem {
   final bool required;
 }
 
-/// Which items are done for [p]. [billingComplete] / [paymentsConnected]
-/// are null while unknown (not loaded yet): such items count as not missing,
-/// so nothing flashes as missing during loading.
-Map<CompanyItem, bool?> companyChecklist(Profile p, {bool? billingComplete, bool? paymentsConnected}) {
+/// Which items are done for [p]. [billingComplete] / [paymentsConnected] /
+/// [traderDeclared] are null while unknown (not loaded yet): such items count
+/// as not missing, so nothing flashes as missing during loading.
+Map<CompanyItem, bool?> companyChecklist(Profile p,
+    {bool? billingComplete, bool? paymentsConnected, bool? traderDeclared}) {
   bool has(String? v) => (v ?? '').trim().isNotEmpty;
   final links = p.socialLinks;
   final anyContact = has(p.businessWhatsapp) ||
@@ -36,6 +39,7 @@ Map<CompanyItem, bool?> companyChecklist(Profile p, {bool? billingComplete, bool
     CompanyItem.address: p.businessAddress != null,
     CompanyItem.invoiceDetails: billingComplete,
     CompanyItem.payments: paymentsConnected,
+    CompanyItem.traderStatus: traderDeclared,
     CompanyItem.hours: p.openingHours.isNotEmpty,
     CompanyItem.contact: anyContact,
     CompanyItem.cover: has(p.coverImageUrl),

@@ -8,6 +8,8 @@ import 'package:greengo_chat/features/finance_documents/domain/billing_profile.d
 import 'package:greengo_chat/features/membership/domain/entities/membership.dart';
 import 'package:greengo_chat/features/profile/domain/entities/business_address.dart';
 import 'package:greengo_chat/features/profile/domain/entities/profile.dart';
+import 'package:greengo_chat/features/trader/data/trader_repository.dart';
+import 'package:greengo_chat/features/trader/domain/trader_declaration.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 
 import '../../support/my_space_fixtures.dart';
@@ -33,6 +35,14 @@ class _Billing implements BillingProfileRepository {
   Future<BillingStatus> get() async => BillingStatus(complete: complete);
   @override
   Future<BillingStatus> save(BillingDraft draft) async => BillingStatus(complete: complete);
+}
+
+class _Trader extends TraderRepository {
+  _Trader(this.declared);
+  final bool declared;
+  @override
+  Future<TraderStatus> get() async =>
+      TraderStatus(declaration: declared ? const TraderDeclaration(isTrader: false) : null);
 }
 
 Profile _business({MembershipTier tier = MembershipTier.gold, bool complete = true}) => buildBusinessProfile().copyWith(
@@ -115,13 +125,18 @@ void main() {
     addTearDown(t.view.resetPhysicalSize);
     addTearDown(t.view.resetDevicePixelRatio);
     await t.pumpWidget(_app(BusinessCenterScreen(
-        profile: _business(complete: false), repository: _Repo(), billingRepository: _Billing(true))));
+        profile: _business(complete: false),
+        repository: _Repo(),
+        billingRepository: _Billing(true),
+        traderRepository: _Trader(false))));
     await t.pumpAndSettle();
     expect(find.byKey(const ValueKey('bc-todo-company')), findsOneWidget);
     await t.tap(find.byKey(const ValueKey('bc-todo-company')));
     await t.pumpAndSettle();
     expect(find.byKey(const ValueKey('bc-settings')), findsOneWidget);
-    expect(_text(t, 'bc-company-progress'), '3 of 6 required items complete');
+    expect(_text(t, 'bc-company-progress'), '3 of 7 required items complete');
+    // Terms 12.4 / DSA art. 30: the trader declaration is a required item.
+    expect(_text(t, 'bc-check-traderStatus-state'), 'Missing: tap to add');
     expect(_text(t, 'bc-check-description-state'), 'Missing: tap to add');
     expect(_text(t, 'bc-check-name-state'), 'Done');
     expect(_text(t, 'bc-check-invoiceDetails-state'), 'Done');
@@ -153,5 +168,21 @@ void main() {
     expect(s.sales, 15000);
     expect(s.fees, 1500);
     expect(s.net, 9000 + 4500);
+  });
+
+  testWidgets('settings: a saved trader declaration counts as done', (t) async {
+    t.view.physicalSize = const Size(1200, 2400);
+    t.view.devicePixelRatio = 1;
+    addTearDown(t.view.resetPhysicalSize);
+    addTearDown(t.view.resetDevicePixelRatio);
+    await t.pumpWidget(_app(BusinessCenterScreen(
+        profile: _business(),
+        repository: _Repo(),
+        billingRepository: _Billing(true),
+        traderRepository: _Trader(true))));
+    await t.pumpAndSettle();
+    await t.tap(find.text('Settings').last);
+    await t.pumpAndSettle();
+    expect(_text(t, 'bc-check-traderStatus-state'), 'Done');
   });
 }

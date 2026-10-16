@@ -5504,10 +5504,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get learningCheckBackSoon => 'Schau bald wieder vorbei!';
 
   @override
-  String get learningCoachSessionCost =>
-      '10 Münzen/Sitzung  |  25 XP Belohnung';
-
-  @override
   String get learningContinue => 'Weiter';
 
   @override
@@ -10501,7 +10497,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get guideCoinsItem4 =>
-      '• Anhören (TTS): 5 Münzen  • Raster erweitern: 10 Münzen  • Lerncoach: 10 Münzen/Sitzung';
+      '• Anhören (TTS): 5 Münzen  • Raster erweitern: 10 Münzen';
 
   @override
   String get guideCoinsItem5 =>
@@ -25726,4 +25722,152 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get manageSubscriptionAppStorePath =>
       'Apple-ID-Einstellungen > Abonnements';
+
+  @override
+  String get legalUpdate530BulletReferral =>
+      'Empfehlungsprämien so beschrieben, wie sie in der App funktionieren (1 Woche Base für die neue Person, 50 Coins für dich, zusätzliche Prämien bei 5, 10 und 20 Freunden)';
+
+  @override
+  String get legalUpdate530BulletCoinGifts =>
+      'Coin-Geschenke kommen sofort an und müssen zwischen 10 und 1.000 Coins liegen';
+
+  @override
+  String get legalUpdate530BulletMenus =>
+      'Wo du in der App „Abo verwalten“ und „Käufe & Widerruf“ findest';
+
+  @override
+  String get legalUpdate530BulletModeration =>
+      'Wie Moderationsentscheidungen, Mitteilungen und Beschwerden funktionieren, auch Beschwerden der meldenden Person';
+
+  @override
+  String get legalUpdate530BulletTraders =>
+      'Unternehmer, die Erlebnisse an Personen in der EU verkaufen, müssen ihre Unternehmerangaben machen';
+
+  @override
+  String get legalUpdateCloseAccount => 'Ich stimme nicht zu – Konto schließen';
+
+  @override
+  String get legalUpdateCloseAccountTitle => 'Konto schließen';
+
+  @override
+  String legalUpdateCloseAccountBody(String email) {
+    return 'Wenn du den neuen AGB nicht zustimmst, kannst du deinen Vertrag mit GreenGo kostenlos beenden, indem du dein Konto löschst. Hast du eine Mitgliedschaft im Voraus bezahlt, erstatten wir dir den nicht genutzten Teil: schreib an $email.\n\nÖffne danach dein Profil und tippe unten auf „Konto Löschen“.';
+  }
+
+  @override
+  String get legalUpdateCloseAccountContinue => 'Zu „Konto Löschen“';
+
+  @override
+  String legalUpcomingTitle(String date) {
+    return 'Unsere AGB ändern sich am $date';
+  }
+
+  @override
+  String legalUpcomingIntro(String version, String date) {
+    return 'Version $version der AGB gilt ab dem $date. Dann bitten wir dich, sie zu akzeptieren. Was sich ändert:';
+  }
+
+  @override
+  String legalUpcomingRights(String date, String email) {
+    return 'Wenn du der Änderung nicht zustimmst, kannst du deinen Vertrag vor dem $date kostenlos beenden, indem du dein Konto löschst (Profil > Konto Löschen), und erhältst den nicht genutzten Teil einer im Voraus bezahlten Mitgliedschaft zurück: $email.';
+  }
+
+  @override
+  String get legalUpcomingRead => 'Neue AGB lesen';
+
+  @override
+  String get legalUpcomingGotIt => 'Verstanden';
+
+  @override
+  String get supportAiNotice =>
+      'Antworten hier können von unserem KI-Assistenten kommen (als KI gekennzeichnet).';
+
+  @override
+  String get supportTalkToPerson => 'Mit einem Menschen sprechen';
+
+  @override
+  String get supportHumanRequested =>
+      'Eine Person aus unserem Team antwortet dir hier.';
+
+  @override
+  String get supportTalkToPersonFailed =>
+      'Wir konnten das Team gerade nicht erreichen. Bitte versuch es noch einmal.';
+
+  @override
+  String get promotionalUseTitle => 'Werbliche Nutzung meiner Inhalte';
+
+  @override
+  String get promotionalUseSubtitle =>
+      'GreenGo darf deinen Namen, deine Fotos und Beiträge in Werbung außerhalb der App verwenden. Aus, solange du es nicht einschaltest.';
+
+  @override
+  String get bcCheckTrader => 'Unternehmerstatus (EU)';
+
+  @override
+  String get traderTitle => 'Unternehmerstatus (EU)';
+
+  @override
+  String get traderIntro =>
+      'Wenn du Erlebnisse oder Tickets im Rahmen deines Gewerbes, Unternehmens oder Berufs verkaufst, bist du Unternehmer. Das EU-Recht (Digital Services Act) verlangt, dass wir Gästen deine Unternehmerangaben zeigen.';
+
+  @override
+  String get traderQuestion => 'Verkaufst du als Unternehmer?';
+
+  @override
+  String get traderYes => 'Ja, ich bin Unternehmer';
+
+  @override
+  String get traderNo => 'Nein, ich bin Privatperson';
+
+  @override
+  String get traderNoHint =>
+      'Gäste sehen, dass du kein Unternehmer bist: Verbraucherrechte für Käufe bei Unternehmern gelten dann nicht.';
+
+  @override
+  String get traderUseBilling => 'Aus meinen Rechnungsdaten übernehmen';
+
+  @override
+  String get traderName => 'Name oder Firmenname';
+
+  @override
+  String get traderIdNumber => 'Ausweis- oder Registernummer';
+
+  @override
+  String get traderIdNumberHint => 'Wird Gästen nicht angezeigt.';
+
+  @override
+  String get traderIdNumberBillingHint =>
+      'Wird Gästen nicht angezeigt. Leer lassen, um die Steuernummer aus deinen Rechnungsdaten zu verwenden.';
+
+  @override
+  String get traderRegister => 'Handelsregister (falls eingetragen)';
+
+  @override
+  String get traderRegisterNumber => 'Registernummer';
+
+  @override
+  String get traderSelfCertify =>
+      'Ich bestätige, dass ich nur Produkte und Dienstleistungen anbiete, die dem geltenden Recht entsprechen.';
+
+  @override
+  String get traderPublicNote =>
+      'Gäste sehen deinen Namen, deine Adresse, Telefonnummer, E-Mail und dein Handelsregister bei deinen Erlebnissen und beim Ticketkauf. Deine Ausweisnummer wird nie angezeigt.';
+
+  @override
+  String get traderSaved => 'Unternehmerstatus gespeichert';
+
+  @override
+  String get traderCardTitle => 'Angaben zum Verkäufer';
+
+  @override
+  String get traderCardNonTraderTitle => 'Privater Verkäufer';
+
+  @override
+  String get traderCardNonTrader =>
+      'Diese Person ist Privatperson und kein Unternehmer. Verbraucherrechte für Käufe bei Unternehmern gelten für diesen Kauf nicht.';
+
+  @override
+  String traderCardRegister(String register, String number) {
+    return '$register: $number';
+  }
 }

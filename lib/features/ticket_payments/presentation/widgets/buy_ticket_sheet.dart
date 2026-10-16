@@ -4,6 +4,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/widgets/organizer_share_notice.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../events/domain/entities/event.dart';
+import '../../../trader/presentation/widgets/seller_trader_info.dart';
 import '../../data/ticket_payments_service.dart';
 import '../../domain/ticket_payments.dart';
 import '../ticket_purchase.dart';
@@ -156,6 +157,8 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
                 TicketFeeBreakdownView(subtotal: total, currency: _currency),
                 const SizedBox(height: 12),
                 const OrganizerShareNotice(),
+                // Terms 12.4 / DSA art. 30: the seller's trader details.
+                SellerTraderInfo(sellerId: widget.event.organizerId, topSpacing: 8),
                 const SizedBox(height: 8),
                 ElevatedButton(
                   key: const ValueKey('buy-continue'),

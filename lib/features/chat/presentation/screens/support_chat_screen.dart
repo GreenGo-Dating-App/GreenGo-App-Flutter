@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -531,6 +532,76 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
     }
   }
 
+  bool _requestingHuman = false;
+
+  /// A person is (or will be) handling this chat: escalated or assigned.
+  bool get _withHuman =>
+      _ticketDoc?['escalatedFromAI'] == true || _ticketDoc?['assignedTo'] != null;
+
+  /// Terms 14.1: "you can ask for a human at any time" - hands the chat to
+  /// the support team at once (callable requestHumanSupport).
+  Future<void> _talkToPerson() async {
+    final l10n = AppLocalizations.of(context)!;
+    final messenger = ScaffoldMessenger.of(context);
+    setState(() => _requestingHuman = true);
+    try {
+      await FirebaseFunctions.instance
+          .httpsCallable('requestHumanSupport')
+          .call<dynamic>({'conversationId': widget.conversationId});
+      if (!mounted) return;
+      setState(() {
+        _requestingHuman = false;
+        _ticketDoc = {...?_ticketDoc, 'escalatedFromAI': true};
+        _ticketStatus = 'open';
+      });
+      messenger.showSnackBar(SnackBar(content: Text(l10n.supportHumanRequested)));
+    } catch (e) {
+      debugPrint('requestHumanSupport failed: $e');
+      if (!mounted) return;
+      setState(() => _requestingHuman = false);
+      messenger.showSnackBar(SnackBar(
+        content: Text(l10n.supportTalkToPersonFailed),
+        backgroundColor: AppColors.errorRed,
+      ));
+    }
+  }
+
+  Widget _humanBar(AppLocalizations l10n) {
+    final withHuman = _withHuman;
+    return Container(
+      key: const ValueKey('support-human-bar'),
+      width: double.infinity,
+      color: AppColors.backgroundCard,
+      padding: const EdgeInsets.fromLTRB(16, 6, 8, 6),
+      child: Row(
+        children: [
+          Icon(withHuman ? Icons.support_agent : Icons.smart_toy_outlined,
+              size: 16, color: AppColors.textSecondary),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              withHuman ? l10n.supportHumanRequested : l10n.supportAiNotice,
+              style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
+            ),
+          ),
+          if (!withHuman)
+            TextButton.icon(
+              key: const ValueKey('support-talk-to-person'),
+              onPressed: _requestingHuman ? null : _talkToPerson,
+              icon: _requestingHuman
+                  ? const SizedBox(
+                      width: 14,
+                      height: 14,
+                      child: CircularProgressIndicator(strokeWidth: 2, color: AppColors.richGold))
+                  : const Icon(Icons.person_outline, size: 18, color: AppColors.richGold),
+              label: Text(l10n.supportTalkToPerson,
+                  style: const TextStyle(color: AppColors.richGold, fontWeight: FontWeight.w600)),
+            ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -592,6 +663,9 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       ),
       body: Column(
         children: [
+          // The owner can always ask for a person (Terms 14.1).
+          if (!widget.isAdmin && _ticketDoc != null)
+            _humanBar(AppLocalizations.of(context)!),
           // Messages list with real-time updates
           Expanded(
             child: StreamBuilder<QuerySnapshot>(

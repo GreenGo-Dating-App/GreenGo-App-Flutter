@@ -5429,9 +5429,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get learningCheckBackSoon => 'Check back soon!';
 
   @override
-  String get learningCoachSessionCost => '10 coins/session  |  25 XP reward';
-
-  @override
   String get learningContinue => 'Continue';
 
   @override
@@ -10371,7 +10368,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get guideCoinsItem4 =>
-      '• Listen (TTS): 5 coins  • Grid Extend: 10 coins  • Learning Coach: 10 coins/session';
+      '• Listen (TTS): 5 coins  • Grid Extend: 10 coins';
 
   @override
   String get guideCoinsItem5 =>
@@ -25421,4 +25418,151 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get manageSubscriptionAppStorePath =>
       'Apple ID settings > Subscriptions';
+
+  @override
+  String get legalUpdate530BulletReferral =>
+      'Referral rewards described as they work in the app (1 week of Base for the new user, 50 Coins for you, extra rewards at 5, 10 and 20 friends)';
+
+  @override
+  String get legalUpdate530BulletCoinGifts =>
+      'Coin gifts arrive instantly and must be between 10 and 1,000 Coins';
+
+  @override
+  String get legalUpdate530BulletMenus =>
+      'Where to find Manage subscription and Purchases & withdrawal in the app';
+
+  @override
+  String get legalUpdate530BulletModeration =>
+      'How moderation decisions, notices and appeals work, including appeals by the person who reported';
+
+  @override
+  String get legalUpdate530BulletTraders =>
+      'Traders selling Experiences to people in the EU must give their trader details';
+
+  @override
+  String get legalUpdateCloseAccount => 'I don\'t accept – close my account';
+
+  @override
+  String get legalUpdateCloseAccountTitle => 'Close your account';
+
+  @override
+  String legalUpdateCloseAccountBody(String email) {
+    return 'If you don\'t accept the new Terms, you can end your contract with GreenGo free of charge by deleting your account. If you paid for a Membership in advance, you get a refund of the unused part: write to $email.\n\nNext, open your Profile and tap \"Delete Account\" at the bottom.';
+  }
+
+  @override
+  String get legalUpdateCloseAccountContinue => 'Go to Delete Account';
+
+  @override
+  String legalUpcomingTitle(String date) {
+    return 'Our Terms change on $date';
+  }
+
+  @override
+  String legalUpcomingIntro(String version, String date) {
+    return 'Version $version of the Terms and Conditions applies from $date. When it takes effect, we will ask you to accept it. What changes:';
+  }
+
+  @override
+  String legalUpcomingRights(String date, String email) {
+    return 'If you don\'t accept the change, you can end your contract free of charge before $date by deleting your account (Profile > Delete Account) and get a refund of the unused part of a prepaid Membership: $email.';
+  }
+
+  @override
+  String get legalUpcomingRead => 'Read the new Terms';
+
+  @override
+  String get legalUpcomingGotIt => 'Got it';
+
+  @override
+  String get supportAiNotice =>
+      'Replies here may come from our AI assistant (marked as AI).';
+
+  @override
+  String get supportTalkToPerson => 'Talk to a person';
+
+  @override
+  String get supportHumanRequested => 'A person from our team will reply here.';
+
+  @override
+  String get supportTalkToPersonFailed =>
+      'We couldn\'t reach the team right now. Please try again.';
+
+  @override
+  String get promotionalUseTitle => 'Promotional use of my content';
+
+  @override
+  String get promotionalUseSubtitle =>
+      'Let GreenGo use your name, photos and posts in its advertising outside the app. Off unless you turn it on.';
+
+  @override
+  String get bcCheckTrader => 'Trader status (EU)';
+
+  @override
+  String get traderTitle => 'Trader status (EU)';
+
+  @override
+  String get traderIntro =>
+      'If you sell Experiences or tickets as part of your trade, business or profession, you are a trader. EU law (Digital Services Act) requires us to show your trader details to guests.';
+
+  @override
+  String get traderQuestion => 'Do you sell as a trader?';
+
+  @override
+  String get traderYes => 'Yes, I\'m a trader';
+
+  @override
+  String get traderNo => 'No, I\'m a private person';
+
+  @override
+  String get traderNoHint =>
+      'Guests will see that you are not a trader: consumer rights that apply to purchases from traders do not apply.';
+
+  @override
+  String get traderUseBilling => 'Fill in from my invoice details';
+
+  @override
+  String get traderName => 'Name or company name';
+
+  @override
+  String get traderIdNumber => 'ID or registration number';
+
+  @override
+  String get traderIdNumberHint => 'Not shown to guests.';
+
+  @override
+  String get traderIdNumberBillingHint =>
+      'Not shown to guests. Leave empty to use the tax ID of your invoice details.';
+
+  @override
+  String get traderRegister => 'Trade register (if registered)';
+
+  @override
+  String get traderRegisterNumber => 'Registration number';
+
+  @override
+  String get traderSelfCertify =>
+      'I confirm that I offer only products and services that comply with the applicable law.';
+
+  @override
+  String get traderPublicNote =>
+      'Guests see your name, address, phone, email and trade register on your Experiences and at ticket checkout. Your ID number is never shown.';
+
+  @override
+  String get traderSaved => 'Trader status saved';
+
+  @override
+  String get traderCardTitle => 'Seller information';
+
+  @override
+  String get traderCardNonTraderTitle => 'Private seller';
+
+  @override
+  String get traderCardNonTrader =>
+      'This host is a private person, not a trader. Consumer rights that apply to purchases from traders do not apply to this purchase.';
+
+  @override
+  String traderCardRegister(String register, String number) {
+    return '$register: $number';
+  }
 }

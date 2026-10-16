@@ -37,6 +37,7 @@ import '../widgets/experience_location_map.dart';
 import '../widgets/experience_widgets.dart';
 import '../widgets/report_experience_sheet.dart';
 import 'experience_editor_screen.dart';
+import '../../../trader/presentation/widgets/seller_trader_info.dart';
 
 /// What the detail screen reports back to the list that opened it.
 class ExperienceDetailResult {
@@ -420,6 +421,9 @@ class _DetailViewState extends State<_DetailView> {
                           targetLang: _lang,
                         ),
                       ],
+                      // Terms 12.4 / DSA art. 30: the host's trader details
+                      // (or the non-trader notice).
+                      SellerTraderInfo(sellerId: e.hostId, topSpacing: 20),
                       const SizedBox(height: 20),
                       _itemsSection(l.uexpIncluded, e.included, included: true),
                       if (e.notIncluded.isNotEmpty) ...[

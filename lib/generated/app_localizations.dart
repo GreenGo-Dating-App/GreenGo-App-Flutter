@@ -9785,12 +9785,6 @@ abstract class AppLocalizations {
   /// **'Check back soon!'**
   String get learningCheckBackSoon;
 
-  /// No description provided for @learningCoachSessionCost.
-  ///
-  /// In en, this message translates to:
-  /// **'10 coins/session  |  25 XP reward'**
-  String get learningCoachSessionCost;
-
   /// No description provided for @learningContinue.
   ///
   /// In en, this message translates to:
@@ -18498,7 +18492,7 @@ abstract class AppLocalizations {
   /// No description provided for @guideCoinsItem4.
   ///
   /// In en, this message translates to:
-  /// **'• Listen (TTS): 5 coins  • Grid Extend: 10 coins  • Learning Coach: 10 coins/session'**
+  /// **'• Listen (TTS): 5 coins  • Grid Extend: 10 coins'**
   String get guideCoinsItem4;
 
   /// No description provided for @guideCoinsItem5.
@@ -43547,6 +43541,252 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Apple ID settings > Subscriptions'**
   String get manageSubscriptionAppStorePath;
+
+  /// Terms 5.3.0 "what changes" bullet (re-acceptance sheet and advance notice).
+  ///
+  /// In en, this message translates to:
+  /// **'Referral rewards described as they work in the app (1 week of Base for the new user, 50 Coins for you, extra rewards at 5, 10 and 20 friends)'**
+  String get legalUpdate530BulletReferral;
+
+  /// Terms 5.3.0 "what changes" bullet (re-acceptance sheet and advance notice).
+  ///
+  /// In en, this message translates to:
+  /// **'Coin gifts arrive instantly and must be between 10 and 1,000 Coins'**
+  String get legalUpdate530BulletCoinGifts;
+
+  /// Terms 5.3.0 "what changes" bullet (re-acceptance sheet and advance notice).
+  ///
+  /// In en, this message translates to:
+  /// **'Where to find Manage subscription and Purchases & withdrawal in the app'**
+  String get legalUpdate530BulletMenus;
+
+  /// Terms 5.3.0 "what changes" bullet (re-acceptance sheet and advance notice).
+  ///
+  /// In en, this message translates to:
+  /// **'How moderation decisions, notices and appeals work, including appeals by the person who reported'**
+  String get legalUpdate530BulletModeration;
+
+  /// Terms 5.3.0 "what changes" bullet (re-acceptance sheet and advance notice).
+  ///
+  /// In en, this message translates to:
+  /// **'Traders selling Experiences to people in the EU must give their trader details'**
+  String get legalUpdate530BulletTraders;
+
+  /// Third option of the Terms re-acceptance sheet (Terms 24.2 c).
+  ///
+  /// In en, this message translates to:
+  /// **'I don\'t accept – close my account'**
+  String get legalUpdateCloseAccount;
+
+  /// Dialog title: end the contract over a Terms change.
+  ///
+  /// In en, this message translates to:
+  /// **'Close your account'**
+  String get legalUpdateCloseAccountTitle;
+
+  /// Terms 24.2 c explanation before the delete-account flow.
+  ///
+  /// In en, this message translates to:
+  /// **'If you don\'t accept the new Terms, you can end your contract with GreenGo free of charge by deleting your account. If you paid for a Membership in advance, you get a refund of the unused part: write to {email}.\n\nNext, open your Profile and tap \"Delete Account\" at the bottom.'**
+  String legalUpdateCloseAccountBody(String email);
+
+  /// Button: continue to the delete-account flow.
+  ///
+  /// In en, this message translates to:
+  /// **'Go to Delete Account'**
+  String get legalUpdateCloseAccountContinue;
+
+  /// Advance notice of an upcoming Terms version (Terms 24.2 a).
+  ///
+  /// In en, this message translates to:
+  /// **'Our Terms change on {date}'**
+  String legalUpcomingTitle(String date);
+
+  /// Advance notice intro.
+  ///
+  /// In en, this message translates to:
+  /// **'Version {version} of the Terms and Conditions applies from {date}. When it takes effect, we will ask you to accept it. What changes:'**
+  String legalUpcomingIntro(String version, String date);
+
+  /// Terms 24.2 c rights in the advance notice.
+  ///
+  /// In en, this message translates to:
+  /// **'If you don\'t accept the change, you can end your contract free of charge before {date} by deleting your account (Profile > Delete Account) and get a refund of the unused part of a prepaid Membership: {email}.'**
+  String legalUpcomingRights(String date, String email);
+
+  /// Opens the public text of the upcoming Terms.
+  ///
+  /// In en, this message translates to:
+  /// **'Read the new Terms'**
+  String get legalUpcomingRead;
+
+  /// Dismisses the advance notice for this version.
+  ///
+  /// In en, this message translates to:
+  /// **'Got it'**
+  String get legalUpcomingGotIt;
+
+  /// Support chat: the AI assistant notice (Terms 14.1).
+  ///
+  /// In en, this message translates to:
+  /// **'Replies here may come from our AI assistant (marked as AI).'**
+  String get supportAiNotice;
+
+  /// Support chat: hand the conversation to a human.
+  ///
+  /// In en, this message translates to:
+  /// **'Talk to a person'**
+  String get supportTalkToPerson;
+
+  /// Support chat: a human has the conversation.
+  ///
+  /// In en, this message translates to:
+  /// **'A person from our team will reply here.'**
+  String get supportHumanRequested;
+
+  /// Support chat: handoff failed.
+  ///
+  /// In en, this message translates to:
+  /// **'We couldn\'t reach the team right now. Please try again.'**
+  String get supportTalkToPersonFailed;
+
+  /// Privacy & data switch (Terms 15.3).
+  ///
+  /// In en, this message translates to:
+  /// **'Promotional use of my content'**
+  String get promotionalUseTitle;
+
+  /// Privacy & data switch explanation (Terms 15.3).
+  ///
+  /// In en, this message translates to:
+  /// **'Let GreenGo use your name, photos and posts in its advertising outside the app. Off unless you turn it on.'**
+  String get promotionalUseSubtitle;
+
+  /// Business Center checklist item (Terms 12.4).
+  ///
+  /// In en, this message translates to:
+  /// **'Trader status (EU)'**
+  String get bcCheckTrader;
+
+  /// Trader declaration screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Trader status (EU)'**
+  String get traderTitle;
+
+  /// Trader declaration intro (Terms 12.4, DSA art. 30).
+  ///
+  /// In en, this message translates to:
+  /// **'If you sell Experiences or tickets as part of your trade, business or profession, you are a trader. EU law (Digital Services Act) requires us to show your trader details to guests.'**
+  String get traderIntro;
+
+  /// Trader declaration question.
+  ///
+  /// In en, this message translates to:
+  /// **'Do you sell as a trader?'**
+  String get traderQuestion;
+
+  /// Trader declaration answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Yes, I\'m a trader'**
+  String get traderYes;
+
+  /// Trader declaration answer.
+  ///
+  /// In en, this message translates to:
+  /// **'No, I\'m a private person'**
+  String get traderNo;
+
+  /// Trader declaration: consequence of being a non-trader.
+  ///
+  /// In en, this message translates to:
+  /// **'Guests will see that you are not a trader: consumer rights that apply to purchases from traders do not apply.'**
+  String get traderNoHint;
+
+  /// Prefill the trader form from the invoice details.
+  ///
+  /// In en, this message translates to:
+  /// **'Fill in from my invoice details'**
+  String get traderUseBilling;
+
+  /// Trader name field.
+  ///
+  /// In en, this message translates to:
+  /// **'Name or company name'**
+  String get traderName;
+
+  /// Trader ID number field.
+  ///
+  /// In en, this message translates to:
+  /// **'ID or registration number'**
+  String get traderIdNumber;
+
+  /// Trader ID number helper.
+  ///
+  /// In en, this message translates to:
+  /// **'Not shown to guests.'**
+  String get traderIdNumberHint;
+
+  /// Trader ID number helper when invoice details have a tax id.
+  ///
+  /// In en, this message translates to:
+  /// **'Not shown to guests. Leave empty to use the tax ID of your invoice details.'**
+  String get traderIdNumberBillingHint;
+
+  /// Trader register field.
+  ///
+  /// In en, this message translates to:
+  /// **'Trade register (if registered)'**
+  String get traderRegister;
+
+  /// Trader register number field.
+  ///
+  /// In en, this message translates to:
+  /// **'Registration number'**
+  String get traderRegisterNumber;
+
+  /// Trader self-certification (DSA art. 30).
+  ///
+  /// In en, this message translates to:
+  /// **'I confirm that I offer only products and services that comply with the applicable law.'**
+  String get traderSelfCertify;
+
+  /// Trader declaration: what is public.
+  ///
+  /// In en, this message translates to:
+  /// **'Guests see your name, address, phone, email and trade register on your Experiences and at ticket checkout. Your ID number is never shown.'**
+  String get traderPublicNote;
+
+  /// Snackbar after saving the trader declaration.
+  ///
+  /// In en, this message translates to:
+  /// **'Trader status saved'**
+  String get traderSaved;
+
+  /// Public trader details card title.
+  ///
+  /// In en, this message translates to:
+  /// **'Seller information'**
+  String get traderCardTitle;
+
+  /// Public card title for a non-trader.
+  ///
+  /// In en, this message translates to:
+  /// **'Private seller'**
+  String get traderCardNonTraderTitle;
+
+  /// Public non-trader notice (DSA art. 30).
+  ///
+  /// In en, this message translates to:
+  /// **'This host is a private person, not a trader. Consumer rights that apply to purchases from traders do not apply to this purchase.'**
+  String get traderCardNonTrader;
+
+  /// Trade register and number on the public card.
+  ///
+  /// In en, this message translates to:
+  /// **'{register}: {number}'**
+  String traderCardRegister(String register, String number);
 }
 
 class _AppLocalizationsDelegate
