@@ -2425,39 +2425,43 @@ class _ExploreScreenState extends State<ExploreScreen> {
           gesture: TourGesture.tap,
           targetShapeBorder: const CircleBorder(),
           // My Space (events & experiences dashboard) with the number of
-          // to-dos that need action, like the notifications bell.
+          // to-dos that need action, like the notifications bell. A business
+          // gets the Business Center icon INSTEAD (owner, 2026-10-16: My Space
+          // is a tab inside it), carrying the same to-do badge and tour step.
           child: ValueListenableBuilder<int>(
             valueListenable: MySpaceBadge.count,
-            builder: (context, todo, _) => _headerIconButton(
-              icon: Icons.space_dashboard_outlined,
-              tooltip: todo > 0
-                  ? l10n.mySpaceTooltipWithTodo(todo)
-                  : l10n.exploreQrTooltip,
-              badgeCount: todo,
-              onTap: () async {
-                await Navigator.of(context).push(
-                  QRHubScreen.route(currentUserId: widget.userId),
+            builder: (context, todo, _) {
+              final me = _me;
+              if (me != null && me.isBusiness) {
+                return KeyedSubtree(
+                  key: const ValueKey('explore-business-center'),
+                  child: _headerIconButton(
+                    icon: Icons.storefront_outlined,
+                    tooltip: l10n.bcExploreButton,
+                    badgeCount: todo,
+                    onTap: () async {
+                      await Navigator.of(context).push(BusinessCenterScreen.route(me));
+                      MySpaceBadge.refresh(widget.userId, force: true);
+                    },
+                  ),
                 );
-                MySpaceBadge.refresh(widget.userId, force: true);
-              },
-            ),
+              }
+              return _headerIconButton(
+                icon: Icons.space_dashboard_outlined,
+                tooltip: todo > 0
+                    ? l10n.mySpaceTooltipWithTodo(todo)
+                    : l10n.exploreQrTooltip,
+                badgeCount: todo,
+                onTap: () async {
+                  await Navigator.of(context).push(
+                    QRHubScreen.route(currentUserId: widget.userId),
+                  );
+                  MySpaceBadge.refresh(widget.userId, force: true);
+                },
+              );
+            },
           ),
         ),
-        // Business Center (CRM-style business page) for business accounts.
-        if (_me?.isBusiness ?? false) ...[
-          const SizedBox(width: 8),
-          KeyedSubtree(
-            key: const ValueKey('explore-business-center'),
-            child: _headerIconButton(
-              icon: Icons.storefront_outlined,
-              tooltip: l10n.bcExploreButton,
-              onTap: () {
-                final me = _me;
-                if (me != null) Navigator.of(context).push(BusinessCenterScreen.route(me));
-              },
-            ),
-          ),
-        ],
         const SizedBox(width: 8),
         _notificationBell(context, l10n),
       ],
