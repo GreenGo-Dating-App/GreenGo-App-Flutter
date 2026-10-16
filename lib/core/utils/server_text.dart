@@ -262,6 +262,138 @@ String? serverText(
       return l10n.emailTicketWhen;
     case 'emailTicketWhere':
       return l10n.emailTicketWhere;
+    case 'moderationActionBan':
+      return l10n.moderationActionBan;
+    case 'moderationActionNoAction':
+      return l10n.moderationActionNoAction;
+    case 'moderationActionOther':
+      return l10n.moderationActionOther;
+    case 'moderationActionRemoveContent':
+      return l10n.moderationActionRemoveContent;
+    case 'moderationActionReporterWarning':
+      return l10n.moderationActionReporterWarning;
+    case 'moderationActionRequireVerification':
+      return l10n.moderationActionRequireVerification;
+    case 'moderationActionRestrict':
+      return l10n.moderationActionRestrict;
+    case 'moderationActionShadowBan':
+      return l10n.moderationActionShadowBan;
+    case 'moderationActionSuspend':
+      return l10n.moderationActionSuspend;
+    case 'moderationActionSuspendReporting':
+      return l10n.moderationActionSuspendReporting;
+    case 'moderationActionWarning':
+      return l10n.moderationActionWarning;
+    case 'moderationAppealOutcomeLabel':
+      return l10n.moderationAppealOutcomeLabel;
+    case 'moderationAppealOutcomeOverturned':
+      return l10n.moderationAppealOutcomeOverturned;
+    case 'moderationAppealOutcomePartial':
+      return l10n.moderationAppealOutcomePartial;
+    case 'moderationAppealOutcomeReportReopened':
+      return l10n.moderationAppealOutcomeReportReopened;
+    case 'moderationAppealOutcomeUpheld':
+      return l10n.moderationAppealOutcomeUpheld;
+    case 'moderationAppealReviewerNoteLabel':
+      return l10n.moderationAppealReviewerNoteLabel;
+    case 'moderationContentTypeAccount':
+      return l10n.moderationContentTypeAccount;
+    case 'moderationContentTypeEvent':
+      return l10n.moderationContentTypeEvent;
+    case 'moderationContentTypeExperience':
+      return l10n.moderationContentTypeExperience;
+    case 'moderationContentTypeMessage':
+      return l10n.moderationContentTypeMessage;
+    case 'moderationContentTypeOther':
+      return l10n.moderationContentTypeOther;
+    case 'moderationContentTypePhoto':
+      return l10n.moderationContentTypePhoto;
+    case 'moderationContentTypeProfile':
+      return l10n.moderationContentTypeProfile;
+    case 'moderationContentTypeReport':
+      return l10n.moderationContentTypeReport;
+    case 'moderationContentTypeReview':
+      return l10n.moderationContentTypeReview;
+    case 'moderationDecisionActionLabel':
+      return l10n.moderationDecisionActionLabel;
+    case 'moderationDecisionAppealAlready':
+      return l10n.moderationDecisionAppealAlready;
+    case 'moderationDecisionAppealButton':
+      return l10n.moderationDecisionAppealButton;
+    case 'moderationDecisionAppealClosed':
+      return l10n.moderationDecisionAppealClosed;
+    case 'moderationDecisionAppealError':
+      return l10n.moderationDecisionAppealError;
+    case 'moderationDecisionAppealHint':
+      return l10n.moderationDecisionAppealHint;
+    case 'moderationDecisionAppealSent':
+      return l10n.moderationDecisionAppealSent;
+    case 'moderationDecisionAppealSubmit':
+      return l10n.moderationDecisionAppealSubmit;
+    case 'moderationDecisionAppealTooShort':
+      return l10n.moderationDecisionAppealTooShort;
+    case 'moderationDecisionAppealUntil':
+      return l10n.moderationDecisionAppealUntil(_str(p['date']));
+    case 'moderationDecisionAutomatedFlagged':
+      return l10n.moderationDecisionAutomatedFlagged;
+    case 'moderationDecisionAutomatedHeld':
+      return l10n.moderationDecisionAutomatedHeld;
+    case 'moderationDecisionAutomatedLabel':
+      return l10n.moderationDecisionAutomatedLabel;
+    case 'moderationDecisionAutomatedNone':
+      return l10n.moderationDecisionAutomatedNone;
+    case 'moderationDecisionContentLabel':
+      return l10n.moderationDecisionContentLabel;
+    case 'moderationDecisionExplanationLabel':
+      return l10n.moderationDecisionExplanationLabel;
+    case 'moderationDecisionIntro':
+      return l10n.moderationDecisionIntro;
+    case 'moderationDecisionOtherOptions':
+      return l10n.moderationDecisionOtherOptions;
+    case 'moderationDecisionReasonLabel':
+      return l10n.moderationDecisionReasonLabel;
+    case 'moderationDecisionReporterIntro':
+      return l10n.moderationDecisionReporterIntro;
+    case 'moderationDecisionTitle':
+      return l10n.moderationDecisionTitle;
+    case 'moderationReasonCsae':
+      return l10n.moderationReasonCsae;
+    case 'moderationReasonHarassment':
+      return l10n.moderationReasonHarassment;
+    case 'moderationReasonHate':
+      return l10n.moderationReasonHate;
+    case 'moderationReasonImpersonation':
+      return l10n.moderationReasonImpersonation;
+    case 'moderationReasonInappropriate':
+      return l10n.moderationReasonInappropriate;
+    case 'moderationReasonMisleading':
+      return l10n.moderationReasonMisleading;
+    case 'moderationReasonNoShow':
+      return l10n.moderationReasonNoShow;
+    case 'moderationReasonNoViolation':
+      return l10n.moderationReasonNoViolation;
+    case 'moderationReasonOffPlatformPayment':
+      return l10n.moderationReasonOffPlatformPayment;
+    case 'moderationReasonOther':
+      return l10n.moderationReasonOther;
+    case 'moderationReasonPrivacy':
+      return l10n.moderationReasonPrivacy;
+    case 'moderationReasonRepeatViolations':
+      return l10n.moderationReasonRepeatViolations;
+    case 'moderationReasonScam':
+      return l10n.moderationReasonScam;
+    case 'moderationReasonSexualContent':
+      return l10n.moderationReasonSexualContent;
+    case 'moderationReasonSpam':
+      return l10n.moderationReasonSpam;
+    case 'moderationReasonThreats':
+      return l10n.moderationReasonThreats;
+    case 'moderationReasonUnderage':
+      return l10n.moderationReasonUnderage;
+    case 'moderationReasonUnfoundedReports':
+      return l10n.moderationReasonUnfoundedReports;
+    case 'moderationReasonViolence':
+      return l10n.moderationReasonViolence;
     case 'notifCoinsReceivedTitle':
       return l10n.notifCoinsReceivedTitle;
     case 'notifLikedYourPhoto':
@@ -378,6 +510,8 @@ String? serverText(
       return l10n.notifServerYourCommunity;
     case 'notifServerYourEvent':
       return l10n.notifServerYourEvent;
+    case 'safetyReportReasonNcii':
+      return l10n.safetyReportReasonNcii;
     case 'sharePreviewAttractionTitle':
       return l10n.sharePreviewAttractionTitle;
     case 'sharePreviewByHost':
@@ -428,6 +562,16 @@ String? serverText(
       return l10n.srvAnnouncementAnEvent;
     case 'srvAnnouncementTitle':
       return l10n.srvAnnouncementTitle(_str(p['name']));
+    case 'srvAppealOutcomeBody':
+      return l10n.srvAppealOutcomeBody;
+    case 'srvAppealOutcomeEmailSubject':
+      return l10n.srvAppealOutcomeEmailSubject;
+    case 'srvAppealOutcomeTitle':
+      return l10n.srvAppealOutcomeTitle;
+    case 'srvAppealPageInvalid':
+      return l10n.srvAppealPageInvalid;
+    case 'srvAppealPageTitle':
+      return l10n.srvAppealPageTitle;
     case 'srvBookingAccepted':
       return l10n.srvBookingAccepted;
     case 'srvBookingBooked':
@@ -522,6 +666,12 @@ String? serverText(
       return l10n.srvCopyrightRestoredBody;
     case 'srvCopyrightRestoredTitle':
       return l10n.srvCopyrightRestoredTitle;
+    case 'srvDecisionEmailAppeal':
+      return l10n.srvDecisionEmailAppeal(_str(p['date']));
+    case 'srvDecisionEmailIntro':
+      return l10n.srvDecisionEmailIntro;
+    case 'srvDecisionEmailSubject':
+      return l10n.srvDecisionEmailSubject;
     case 'srvEvent':
       return l10n.srvEvent;
     case 'srvEventBoostEnded':

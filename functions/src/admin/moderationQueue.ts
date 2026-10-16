@@ -8,8 +8,15 @@ import * as admin from 'firebase-admin';
 import { t } from '../shared/i18n';
 import { monitored } from '../shared/monitoring';
 import { MODERATION_ROLES, requireAdmin } from '../shared/adminAuth';
-import { syncHostExperiencesForBan } from '../user_experiences/hostBan';
-import { notifyAffectedUserOfDecision } from '../safety/moderationDecisions';
+import {
+  APPEAL_WINDOW_DAYS, automationFor, contentReferenceFor, MODERATION_DECISIONS, notifyAffectedUserOfDecision,
+} from '../safety/moderationDecisions';
+import {
+  applyBan, applySuspension, backupMessage, DecisionEffect, recordStrike, recordWarning, restoreQuarantined,
+} from '../safety/moderationEffects';
+import { escalateIfRepeatOffender } from '../safety/repeatOffenders';
+import { originalDeciders, resolveAppeal, reverseDecisionOnReview } from '../safety/appealResolution';
+import { clearReporterReview, suspendReporting, SUSPEND_DAYS as REPORTER_SUSPEND_DAYS } from '../safety/reporterStanding';
 
 const firestore = admin.firestore();
 
@@ -37,6 +44,8 @@ export const STATEMENT_REASON_CODES = [
   'csae', 'underage', 'sexual_content', 'inappropriate', 'threats', 'violence',
   'harassment', 'hate', 'spam', 'scam', 'impersonation', 'privacy', 'misleading',
   'no_show', 'off_platform_payment', 'other', 'no_violation',
+  // Terms 18.6: repeat offenders / abusive reporters.
+  'repeat_violations', 'unfounded_reports',
 ] as const;
 export type StatementReasonCode = typeof STATEMENT_REASON_CODES[number];
 const MAX_EXPLANATION = 2000;
@@ -198,6 +207,7 @@ export const getModerationReviewItem = functions.runWith({ memory: '512MB' }).ht
 
     // Get the actual content based on item type
     let content: any = null;
+    let appealContext: any = null;
     if (queueData.itemType === 'userReport') {
       const reportDoc = await firestore.collection('user_reports').doc(queueData.itemId).get();
       content = reportDoc.data();
@@ -207,6 +217,39 @@ export const getModerationReviewItem = functions.runWith({ memory: '512MB' }).ht
     } else if (queueData.itemType === 'flaggedMessage') {
       const messageDoc = await firestore.collection('messages').doc(queueData.itemId).get();
       content = messageDoc.data();
+    } else if (queueData.itemType === 'appeal') {
+      // DSA art. 20: the appeal, the original decision and who may NOT resolve it.
+      const a = (await firestore.collection('report_appeals').doc(queueData.itemId).get()).data() || {};
+      const d = typeof a.decisionId === 'string'
+        ? (await firestore.collection(MODERATION_DECISIONS).doc(a.decisionId).get()).data() || null
+        : null;
+      const excluded = [...originalDeciders(d, a)];
+      appealContext = {
+        appealId: queueData.itemId,
+        role: a.role ?? d?.role ?? 'affected',
+        channel: a.channel ?? 'app',
+        status: a.status ?? null,
+        appealReason: a.appealReason ?? null,
+        originalDecision: d ? {
+          decisionId: d.decisionId, action: d.action, reasonCode: d.reasonCode, explanation: d.explanation,
+          decidedBy: d.decidedBy, decidedAt: d.decidedAt, contentRef: d.contentRef ?? null,
+          automated: d.automated === true, automatedDetection: d.automatedDetection ?? null,
+          effects: d.effects ?? [], queueId: d.queueId ?? null,
+        } : null,
+        excludedReviewers: excluded,
+        canResolve: !excluded.includes(context.auth!.uid) && a.userId !== context.auth!.uid,
+        outcomes: ['upheld', 'overturned', 'partially_overturned'],
+      };
+      content = { ...a, text: a.appealReason ?? null };
+    } else if (queueData.itemType === 'quarantinedImage' || queueData.type === 'image') {
+      content = {
+        objectPath: queueData.objectPath ?? null,
+        quarantinePath: queueData.quarantinePath ?? null,
+        reasons: queueData.reasons ?? [],
+        safeSearch: queueData.safeSearch ?? null,
+        labels: queueData.labels ?? [],
+        visibility: queueData.visibility ?? null,
+      };
     } else if (queueData.source?.collection) {
       // Report-pipeline item from message_reports / reports.
       const reportDoc = await firestore
@@ -325,6 +368,8 @@ export const getModerationReviewItem = functions.runWith({ memory: '512MB' }).ht
       status: queueData.status || null,
       assignedTo: queueData.assignedTo || null,
       statementOfReasons: queueData.statementOfReasons || null,
+      appealContext,
+      excludedReviewers: queueData.excludedReviewers || [],
       userContext,
       relatedReports,
       history,
@@ -440,6 +485,20 @@ export const assignModerationItem = functions
 /**
  * Take Moderation Action
  * Point 248: Execute moderation decision
+ *
+ * Every action that affects a user records a decision with its effects
+ * (safety/moderationDecisions.ts) so the user gets the statement of reasons
+ * (in-app + email) and an appeal that can reverse it.
+ *
+ * Special item types:
+ *   - 'appeal': approve = overturn, dismiss = uphold
+ *     (parameters.outcome 'partially_overturned' + replacementAction /
+ *     durationDays); resolved by safety/appealResolution.ts, which refuses the
+ *     moderator who took the original decision (Terms 18.4 b).
+ *   - 'quarantinedImage' (Vision screen): approve restores the upload to its
+ *     original path; removeContent confirms the hold.
+ *   - 'reporterAbuse': suspendReporting (parameters.durationDays, default 30)
+ *     or dismiss (Terms 18.6 / DSA art. 23).
  */
 export const takeModerationAction = functions.runWith({ memory: '512MB' }).https.onCall(monitored("takeModerationAction", async (data, context) => {
   await verifyModeratorPermission(context);
@@ -458,42 +517,91 @@ export const takeModerationAction = functions.runWith({ memory: '512MB' }).https
   if (!queueDoc.exists) {
     throw new functions.https.HttpsError('not-found', 'Queue item not found');
   }
-  const queueData = queueDoc.data()!;
+  const queueData: any = { ...queueDoc.data()!, queueId: queueDoc.data()!.queueId ?? queueId };
   if (FINAL_QUEUE_STATUSES.has(queueData.status)) {
     throw new functions.https.HttpsError('failed-precondition', `Queue item is already ${queueData.status}`);
+  }
+
+  // Appeals: resolved by a person who did not take the original decision.
+  if (queueData.itemType === 'appeal') {
+    if (action !== 'approve' && action !== 'dismiss') {
+      throw new functions.https.HttpsError('failed-precondition',
+        'Appeal items: approve = overturn the decision, dismiss = uphold it');
+    }
+    const outcome = action === 'dismiss'
+      ? 'upheld'
+      : (parameters?.outcome === 'partially_overturned' ? 'partially_overturned' : 'overturned');
+    const r = await resolveAppeal({
+      queueId,
+      outcome,
+      explanation: statementOfReasons?.explanation ?? notes,
+      replacementAction: parameters?.replacementAction,
+      durationDays: parameters?.durationDays,
+      reviewerUid: moderatorId,
+    });
+    return { queueId, action, moderatorId, notes, statementOfReasons, appeal: r, success: true, errorMessage: null };
+  }
+
+  // A report re-opened by a reporter's appeal: not by the first decider.
+  if (Array.isArray(queueData.excludedReviewers) && queueData.excludedReviewers.includes(moderatorId)) {
+    throw new functions.https.HttpsError('permission-denied',
+      'This report was re-opened on appeal: a person who did not take the first decision must review it');
+  }
+  if (action === 'suspendReporting' && queueData.itemType !== 'reporterAbuse') {
+    throw new functions.https.HttpsError('failed-precondition', 'suspendReporting applies to reporterAbuse items only');
   }
 
   // Execute the action FIRST. If it fails the item stays open (it used to be
   // marked resolved anyway, so a failed ban looked like a handled report).
   const reasonText = statementOfReasons?.explanation ?? notes;
+  const effects: DecisionEffect[] = [];
+  const contentRef = contentReferenceFor(queueData);
+  const automated = automationFor(queueData);
+  let escalation: { escalated: boolean; days?: number } | null = null;
+  let reversal: unknown = null;
+  const decisionAction: string = action;
+  let decisionReason: string | null = statementOfReasons?.reasonCode ?? queueData.reasonCode ?? null;
   try {
     switch (action) {
       case 'approve':
-        await approveContent(queueData);
+        reversal = await approveContent(queueData, moderatorId, reasonText);
         break;
       case 'dismiss':
         await dismissReport(queueData);
         break;
       case 'removeContent':
-        await removeContent(queueData, moderatorId, statementOfReasons);
+        effects.push(...await removeContent(queueData, moderatorId, statementOfReasons));
         break;
       case 'issueWarning':
-        await issueWarningToUser(targetUserId(queueData), queueData, reasonText);
+        effects.push(...await issueWarningToUser(targetUserId(queueData), queueData, reasonText, queueId, moderatorId));
         break;
       case 'suspendUser': {
         const durationDays = Number(parameters.durationDays) > 0 ? Number(parameters.durationDays) : 7;
-        await suspendUser(targetUserId(queueData), reasonText, durationDays);
+        const uid = targetUserId(queueData);
+        effects.push(await applySuspension({ userId: uid, reason: reasonText || 'Policy violation', days: durationDays, decisionId: queueId, by: moderatorId }));
+        effects.push(await recordStrike({ userId: uid, decisionId: queueId, kind: 'suspension' }));
         break;
       }
-      case 'banUser':
-        await banUser(targetUserId(queueData), reasonText);
+      case 'banUser': {
+        const uid = targetUserId(queueData);
+        effects.push(await applyBan({ userId: uid, reason: reasonText || 'Severe policy violation', decisionId: queueId, by: moderatorId }));
+        effects.push(await recordStrike({ userId: uid, decisionId: queueId, kind: 'ban' }));
         break;
+      }
       case 'shadowBan':
-        await shadowBanUser(targetUserId(queueData));
+        effects.push(await shadowBanUser(targetUserId(queueData)));
         break;
       case 'requireVerification':
-        await requireVerification(targetUserId(queueData));
+        effects.push(await requireVerification(targetUserId(queueData)));
         break;
+      case 'suspendReporting': {
+        const days = Number(parameters.durationDays) > 0 ? Math.min(Number(parameters.durationDays), 180) : REPORTER_SUSPEND_DAYS;
+        effects.push(...await suspendReporting({
+          uid: targetUserId(queueData), days, decisionId: queueId, moderatorId, explanation: reasonText,
+        }));
+        decisionReason = 'unfounded_reports';
+        break;
+      }
     }
   } catch (err: any) {
     if (err instanceof functions.https.HttpsError) throw err;
@@ -508,7 +616,7 @@ export const takeModerationAction = functions.runWith({ memory: '512MB' }).https
           action,
           decidedBy: moderatorId,
           decidedAt: admin.firestore.FieldValue.serverTimestamp(),
-          automated: false,
+          automated: automated.detection !== null,
         }
       : null;
 
@@ -544,17 +652,41 @@ export const takeModerationAction = functions.runWith({ memory: '512MB' }).https
       timestamp: admin.firestore.FieldValue.serverTimestamp(),
     });
 
-    // P2-8c (DSA art. 17/20): the affected user gets the statement of reasons
-    // and can appeal. Best-effort: the action itself already happened.
+    // DSA art. 17/20 (Terms 18.3/18.4): statement of reasons (in-app + email)
+    // with the content concerned, the automated-tools flag and the recorded
+    // effects (for an appeal reversal). Best-effort: the action happened.
     try {
-      await notifyAffectedUserOfDecision({
-        queueId,
-        userId: queueData.userId || queueData.reportedUserId,
-        action,
-        reasonCode: statementOfReasons?.reasonCode ?? queueData.reasonCode ?? null,
-        explanation: statementOfReasons?.explanation ?? notes ?? null,
-        moderatorId,
-      });
+      if (queueData.itemType === 'quarantinedImage' && action === 'removeContent') {
+        // The Vision hold already produced the decision: a person confirmed it.
+        await firestore.collection(MODERATION_DECISIONS).doc(queueId).set({
+          confirmedBy: moderatorId,
+          confirmedAt: admin.firestore.FieldValue.serverTimestamp(),
+          automatedDecision: false,
+          ...(statementOfReasons ? { reasonCode: statementOfReasons.reasonCode, explanation: statementOfReasons.explanation } : {}),
+        }, { merge: true });
+      } else {
+        const created = await notifyAffectedUserOfDecision({
+          queueId,
+          userId: queueData.userId || queueData.reportedUserId,
+          action: decisionAction,
+          reasonCode: decisionReason,
+          explanation: statementOfReasons?.explanation ?? notes ?? null,
+          moderatorId,
+          contentRef: action === 'suspendReporting' ? { type: 'report', id: null, excerpt: null } : contentRef,
+          automated,
+          effects,
+        });
+        // Terms 18.6: repeated violations after a warning -> suspension.
+        if (created && (action === 'issueWarning' || action === 'removeContent')) {
+          const uid = queueData.userId || queueData.reportedUserId;
+          if (typeof uid === 'string' && uid) {
+            const warning = effects.find((e) => e.type === 'warning') as { warningId: string } | undefined;
+            escalation = await escalateIfRepeatOffender({
+              userId: uid, decisionId: queueId, currentWarningId: warning?.warningId ?? null, decidedBy: moderatorId,
+            });
+          }
+        }
+      }
     } catch (e) {
       console.error(`takeModerationAction: decision notice for ${queueId} failed:`, e);
     }
@@ -565,6 +697,8 @@ export const takeModerationAction = functions.runWith({ memory: '512MB' }).https
       moderatorId,
       notes,
       statementOfReasons,
+      escalation,
+      reversal,
       actionAt: admin.firestore.FieldValue.serverTimestamp(),
       success: true,
       errorMessage: null,
@@ -577,6 +711,7 @@ export const takeModerationAction = functions.runWith({ memory: '512MB' }).https
 
 const MODERATION_ACTIONS = new Set([
   'approve', 'dismiss', 'removeContent', 'issueWarning', 'suspendUser', 'banUser', 'shadowBan', 'requireVerification',
+  'suspendReporting',
 ]);
 /** Statuses after which an item is closed (callables: resolved; old panel: completed). */
 const FINAL_QUEUE_STATUSES = new Set(['resolved', 'completed', 'dismissed', 'closed', 'actioned']);
@@ -590,25 +725,34 @@ function targetUserId(queueData: any): string {
   return uid;
 }
 
-/** Best-effort mirror of an account restriction onto profiles/{uid} (what the panel's Users page reads). */
-async function mirrorProfileStatus(userId: string, patch: Record<string, unknown>): Promise<void> {
-  try {
-    await firestore.collection('profiles').doc(userId).update(patch);
-  } catch (e: any) {
-    if (e?.code !== 5) console.error(`Could not mirror status onto profiles/${userId}:`, e?.message || e);
-  }
-}
-
 /**
  * Helper: Approve Content
+ *
+ * flaggedPhoto: marked approved. quarantinedImage (Vision hold): the upload
+ * goes back to its original path and the hold decision is reversed (the user
+ * is told). Returns the reversal result when there was one.
  */
-async function approveContent(queueData: any): Promise<void> {
+async function approveContent(queueData: any, moderatorId: string, explanation: string | null): Promise<unknown> {
   if (queueData.itemType === 'flaggedPhoto') {
     await firestore.collection('flagged_photos').doc(queueData.itemId).update({
       moderationStatus: 'approved',
       approvedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
+    return null;
   }
+  if (queueData.itemType === 'quarantinedImage' || (queueData.type === 'image' && queueData.quarantinePath)) {
+    const decision = await firestore.collection(MODERATION_DECISIONS).doc(queueData.queueId).get();
+    if (decision.exists) {
+      return reverseDecisionOnReview(queueData.queueId, moderatorId,
+        explanation || 'A moderator reviewed the photo and found no violation. It has been restored.');
+    }
+    // Held before decisions were recorded: restore the file directly.
+    if (typeof queueData.objectPath === 'string' && typeof queueData.quarantinePath === 'string') {
+      return restoreQuarantined(queueData.objectPath, queueData.quarantinePath);
+    }
+  }
+  if (queueData.itemType === 'reporterAbuse') await clearReporterReview(queueData.userId);
+  return null;
 }
 
 /**
@@ -616,6 +760,7 @@ async function approveContent(queueData: any): Promise<void> {
  */
 async function dismissReport(queueData: any): Promise<void> {
   await updateRelatedReports(queueData, { status: 'dismissed' });
+  if (queueData.itemType === 'reporterAbuse') await clearReporterReview(queueData.userId);
 }
 
 /**
@@ -626,12 +771,22 @@ async function dismissReport(queueData: any): Promise<void> {
  * event is cancelled, a reported experience is hidden. Content that cannot be
  * removed from here throws, so the item stays open and the moderator picks
  * another action (it used to be a silent no-op that still resolved the item).
+ *
+ * Returns the effects (for an appeal reversal): removed message text is kept
+ * in moderation_content_backups until the appeal window ends; a strike is
+ * recorded for the author (Terms 18.6).
  */
 async function removeContent(
   queueData: any,
   moderatorId: string,
   statementOfReasons: StatementOfReasons | null
-): Promise<void> {
+): Promise<DecisionEffect[]> {
+  const queueId: string = queueData.queueId;
+  const author = typeof (queueData.userId || queueData.reportedUserId) === 'string'
+    ? (queueData.userId || queueData.reportedUserId) as string : '';
+  const strike = async (): Promise<DecisionEffect[]> =>
+    author ? [await recordStrike({ userId: author, decisionId: queueId, kind: 'content_removal' })] : [];
+  const backupUntil = Date.now() + (APPEAL_WINDOW_DAYS + 30) * 86_400_000;
   const moderation = {
     reason: 'moderator_removed',
     reasonCode: statementOfReasons?.reasonCode ?? null,
@@ -639,26 +794,33 @@ async function removeContent(
     removedBy: moderatorId,
     removedAt: admin.firestore.FieldValue.serverTimestamp(),
   };
+  if (queueData.itemType === 'quarantinedImage') {
+    // Already out of reach (quarantine/): removal = confirming the hold.
+    return strike();
+  }
   if (queueData.itemType === 'flaggedMessage') {
     await firestore.collection('messages').doc(queueData.itemId).update({
       deleted: true,
       deletedBy: 'moderator',
       deletedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
-    return;
+    return [{ type: 'legacyMessage', messageId: queueData.itemId }, ...await strike()];
   }
   if (queueData.itemType === 'flaggedPhoto') {
     await firestore.collection('users').doc(queueData.userId).update({
       photos: admin.firestore.FieldValue.arrayRemove(queueData.metadata.photoUrl),
     });
-    return;
+    return [{ type: 'profilePhoto', userId: queueData.userId, photoUrl: queueData.metadata.photoUrl }, ...await strike()];
   }
 
   const ref = queueData.contentRef;
   const path: string | null = typeof ref?.path === 'string' ? ref.path : null;
   if (ref?.type === 'message' && path && /^conversations\/[^/]+\/messages\/[^/]+$/.test(path)) {
+    const snap = await firestore.doc(path).get();
+    if (!snap.exists) throw new functions.https.HttpsError('not-found', 'The reported message no longer exists');
+    await backupMessage(queueId, path, snap.data() || {}, backupUntil);
     // Same fields the app writes for "delete for everyone".
-    await firestore.doc(path).update({
+    await snap.ref.update({
       isDeletedForEveryone: true,
       deletedAt: admin.firestore.FieldValue.serverTimestamp(),
       content: t('en', 'srvMessageRemovedByModerator'),
@@ -669,7 +831,7 @@ async function removeContent(
       trHash: admin.firestore.FieldValue.delete(),
       moderation,
     });
-    return;
+    return [{ type: 'message', path, backupId: queueId }, ...await strike()];
   }
   if (ref?.type === 'message' && path && /^(groups|communities|events)\/[^/]+\/messages\/[^/]+$/.test(path)) {
     // P2-8b: auto-flagged shared-chat messages. Each chat type stores the
@@ -677,6 +839,7 @@ async function removeContent(
     const snap = await firestore.doc(path).get();
     if (!snap.exists) throw new functions.https.HttpsError('not-found', 'The flagged message no longer exists');
     const d = snap.data() || {};
+    await backupMessage(queueId, path, d, backupUntil);
     const placeholder = t('en', 'srvMessageRemovedByModerator');
     await snap.ref.update({
       isDeletedForEveryone: true,
@@ -690,26 +853,28 @@ async function removeContent(
       trHash: admin.firestore.FieldValue.delete(),
       moderation,
     });
-    return;
+    return [{ type: 'message', path, backupId: queueId }, ...await strike()];
   }
   if (ref?.type === 'event' && path && /^events\/[^/]+$/.test(path)) {
     const snap = await firestore.doc(path).get();
     if (!snap.exists) throw new functions.https.HttpsError('not-found', 'The reported event no longer exists');
+    const previousStatus = snap.data()?.status ?? null;
     await snap.ref.update({
       status: 'cancelled',
-      moderation: { ...moderation, previousStatus: snap.data()?.status ?? null },
+      moderation: { ...moderation, previousStatus },
     });
-    return;
+    return [{ type: 'listingStatus', path, previousStatus }, ...await strike()];
   }
   if (ref?.type === 'experience' && path && /^user_experiences\/[^/]+$/.test(path)) {
     const snap = await firestore.doc(path).get();
     if (!snap.exists) throw new functions.https.HttpsError('not-found', 'The reported experience no longer exists');
     const prev = snap.data()?.status;
+    const previousStatus = prev === 'published' ? 'published' : 'draft';
     await snap.ref.update({
       status: 'hidden',
-      moderation: { ...moderation, previousStatus: prev === 'published' ? 'published' : 'draft' },
+      moderation: { ...moderation, previousStatus },
     });
-    return;
+    return [{ type: 'listingStatus', path, previousStatus }, ...await strike()];
   }
   throw new functions.https.HttpsError(
     'failed-precondition',
@@ -718,87 +883,50 @@ async function removeContent(
 }
 
 /**
- * Helper: Issue Warning
+ * Helper: Issue Warning (+ strike). Repeat-offender escalation (Terms 18.6)
+ * runs after the decision is recorded (safety/repeatOffenders.ts).
  */
 async function issueWarningToUser(
   userId: string,
   queueData: any,
-  notes: string | null
-): Promise<void> {
-  await firestore.collection('user_warnings').add({
-    userId,
-    reason: queueData.metadata?.category || queueData.reasonCode || 'Policy violation',
-    description: notes || 'Content violated community guidelines',
-    severity: 'moderate',
-    issuedAt: admin.firestore.FieldValue.serverTimestamp(),
-    acknowledged: false,
-  });
-}
-
-/**
- * Helper: Suspend User
- */
-async function suspendUser(
-  userId: string,
-  reason: string | null,
-  durationDays: number
-): Promise<void> {
-  const suspendedUntil = new Date();
-  suspendedUntil.setDate(suspendedUntil.getDate() + durationDays);
-
-  await firestore.collection('users').doc(userId).update({
-    accountStatus: 'suspended',
-    suspensionReason: reason || 'Policy violation',
-    suspendedUntil: admin.firestore.Timestamp.fromDate(suspendedUntil),
-    suspendedAt: admin.firestore.FieldValue.serverTimestamp(),
-  });
-  await mirrorProfileStatus(userId, {
-    status: 'suspended',
-    suspensionReason: reason || 'Policy violation',
-    suspendedAt: admin.firestore.FieldValue.serverTimestamp(),
-    suspendedUntil: admin.firestore.Timestamp.fromDate(suspendedUntil),
-  });
-  await syncHostExperiencesForBan(userId, true);
-}
-
-/**
- * Helper: Ban User
- */
-async function banUser(userId: string, reason: string | null): Promise<void> {
-  await firestore.collection('users').doc(userId).update({
-    accountStatus: 'banned',
-    banReason: reason || 'Severe policy violation',
-    bannedAt: admin.firestore.FieldValue.serverTimestamp(),
-  });
-
-  await admin.auth().updateUser(userId, { disabled: true });
-  await mirrorProfileStatus(userId, {
-    status: 'banned',
-    banReason: reason || 'Severe policy violation',
-    bannedAt: admin.firestore.FieldValue.serverTimestamp(),
-  });
-  await syncHostExperiencesForBan(userId, true);
+  notes: string | null,
+  decisionId: string,
+  moderatorId: string
+): Promise<DecisionEffect[]> {
+  return [
+    await recordWarning({
+      userId,
+      reason: queueData.metadata?.category || queueData.reasonCode || 'Policy violation',
+      description: notes || 'Content violated community guidelines',
+      severity: 'moderate',
+      decisionId,
+      by: moderatorId,
+    }),
+    await recordStrike({ userId, decisionId, kind: 'warning' }),
+  ];
 }
 
 /**
  * Helper: Shadow Ban User
  */
-async function shadowBanUser(userId: string): Promise<void> {
+async function shadowBanUser(userId: string): Promise<DecisionEffect> {
   await firestore.collection('users').doc(userId).update({
     isShadowBanned: true,
     shadowBannedAt: admin.firestore.FieldValue.serverTimestamp(),
     visibilityReduction: 0.9,
   });
+  return { type: 'shadowBan', userId };
 }
 
 /**
  * Helper: Require Verification
  */
-async function requireVerification(userId: string): Promise<void> {
+async function requireVerification(userId: string): Promise<DecisionEffect> {
   await firestore.collection('users').doc(userId).update({
     verificationRequired: true,
     verificationRequiredAt: admin.firestore.FieldValue.serverTimestamp(),
   });
+  return { type: 'verification', userId };
 }
 
 /**

@@ -52,6 +52,7 @@ import * as admin from 'firebase-admin';
 import vision from '@google-cloud/vision';
 import { logInfo, logError } from '../shared/utils';
 import { screenUploadAgainstHashLists } from './takedowns/uploadScreening';
+import { createModerationDecision } from './moderationDecisions';
 
 const db = admin.firestore();
 // Constructed lazily: this module is loaded by index.js along with every other
@@ -98,6 +99,21 @@ const NEVER = [
 
 const IMAGE = /\.(jpe?g|png|webp|heic|heif|bmp|gif)$/i;
 
+/**
+ * moderation_queue id of one held upload: one item per object GENERATION, so
+ * a re-upload to the same path is a new item (and a new decision).
+ */
+export function quarantineQueueId(objectPath: string, generation: unknown): string {
+  return `image__${moderationDocId(objectPath)}__${String(generation ?? '0')}`.slice(0, 1400);
+}
+
+/** Statement-of-reasons code for SafeSearch reasons; null = no rule breach (no_face). Pure. */
+export function reasonCodeForVision(reasons: string[]): string | null {
+  if (reasons.includes('adult') || reasons.includes('racy')) return 'sexual_content';
+  if (reasons.includes('violence')) return 'violence';
+  return null;
+}
+
 /** Firestore doc id for an object path (ids may not contain '/'). */
 export function moderationDocId(objectPath: string): string {
   return objectPath.replace(/\//g, '~');
@@ -136,6 +152,21 @@ export const moderateUploadedImage = onObjectFinalized(
 
     const docRef = db.collection('image_moderation').doc(moderationDocId(objectPath));
     const userId = meta.userId || objectPath.split('/')[1] || '';
+
+    // A moderator restored this exact object from quarantine (approve /
+    // overturned appeal, moderationEffects.restoreQuarantined): do not screen
+    // the copy again. A later re-upload is a new generation and is screened.
+    try {
+      const prev = (await docRef.get()).data();
+      if (prev?.restorePending === true
+        || (prev?.moderatorApproved === true && prev?.approvedGeneration
+          && String(prev.approvedGeneration) === String(event.data.generation))) {
+        logInfo(`[moderate] SKIP moderator-restored ${objectPath}`);
+        return;
+      }
+    } catch (e) {
+      logError(`[moderate] verdict read failed for ${objectPath}`, e);
+    }
     // Only a MAIN profile photo must contain a face; everything else is
     // checked for explicit content alone.
     const requireFace = (meta.requireFace || '').toLowerCase() === 'true';
@@ -203,14 +234,36 @@ export const moderateUploadedImage = onObjectFinalized(
       if (!approved) {
         // MOVE to quarantine rather than delete - a false positive must be
         // recoverable, and an admin needs to see what was rejected.
+        let moved = false;
         try {
           await bucket.file(objectPath).copy(bucket.file(`quarantine/${objectPath}`));
           await bucket.file(objectPath).delete();
+          moved = true;
         } catch (e) {
           logError(`[moderate] quarantine move failed for ${objectPath}`, e);
         }
 
-        await db.collection('moderation_queue').add({
+        // Same shape as report items (status/addedAt/itemType) so the admin
+        // panel lists it and takeModerationAction handles it: approve restores
+        // the upload, removeContent confirms the hold.
+        const queueId = quarantineQueueId(objectPath, event.data.generation);
+        const reasonCode = reasonCodeForVision(reasons);
+        const fileName = objectPath.split('/').pop() || objectPath;
+        await db.collection('moderation_queue').doc(queueId).set({
+          queueId,
+          itemType: 'quarantinedImage',
+          itemId: objectPath,
+          status: 'pending',
+          priority: reasonCode ? 'high' : 'low',
+          category: reasonCode ? (reasonCode === 'violence' ? 'violence' : 'inappropriateContent') : 'other',
+          reasonCode: reasonCode ?? 'other',
+          addedAt: admin.firestore.FieldValue.serverTimestamp(),
+          assignedTo: null,
+          relatedReportIds: [],
+          metadata: { reasonCode: reasonCode ?? 'other', reasons, visibility },
+          contentRef: { type: 'photo', id: fileName, path: objectPath },
+          reporterId: 'system',
+          autoFlag: { engine: 'vision-safesearch', automatedActions: 'quarantine' },
           type: 'image',
           userId,
           objectPath,
@@ -225,9 +278,31 @@ export const moderateUploadedImage = onObjectFinalized(
             spoof: safe.spoof || null,
           },
           labels,
-          status: 'pending_review',
           createdAt: admin.firestore.FieldValue.serverTimestamp(),
         });
+
+        // DSA art. 17 / Terms 18.3: the hold is an automated measure; the
+        // uploader gets the statement of reasons (in-app + email) and can
+        // appeal (overturn restores the file). A missing face is a profile
+        // photo requirement, not a rule breach: no decision for that alone.
+        if (moved && reasonCode && userId) {
+          try {
+            await createModerationDecision({
+              decisionId: queueId,
+              queueId,
+              userId,
+              action: 'removeContent',
+              reasonCode,
+              explanation: `Our automatic image check held this photo back (${reasons.filter((r) => r !== 'no_face').join(', ')}) until a person reviews it.`,
+              decidedBy: 'system',
+              contentRef: { type: 'photo', id: fileName, excerpt: null },
+              automated: { detection: 'vision', decision: true },
+              effects: [{ type: 'quarantine', objectPath, quarantinePath: `quarantine/${objectPath}` }],
+            });
+          } catch (e) {
+            logError(`[moderate] decision notice failed for ${objectPath}`, e);
+          }
+        }
       }
 
       await docRef.set({

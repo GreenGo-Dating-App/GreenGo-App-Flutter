@@ -421,7 +421,7 @@ describe('P2-8a every image is moderated, private albums included', () => {
     expect(await exists(`quarantine/${path}`)).toBe(true);
     const q = await db.collection('moderation_queue').where('objectPath', '==', path).get();
     expect(q.size).toBe(1);
-    expect(q.docs[0].data()).toMatchObject({ visibility: 'private', status: 'pending_review' });
+    expect(q.docs[0].data()).toMatchObject({ visibility: 'private', status: 'pending', itemType: 'quarantinedImage' });
   });
 });
 

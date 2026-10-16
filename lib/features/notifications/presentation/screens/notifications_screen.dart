@@ -334,7 +334,8 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
     }
 
     // Moderation decision (DSA art. 17/20): statement of reasons + appeal.
-    if (action == kModerationDecisionAction) {
+    // Also a reporter's "no action on your report" notice (appealable).
+    if (isModerationDecisionPayload(data)) {
       final decision = ModerationDecision.fromData(data);
       if (decision != null) {
         Navigator.of(context).push(ModerationDecisionScreen.route(decision));

@@ -236,7 +236,8 @@ class PushNotificationService {
     }
 
     // Moderation decision (DSA art. 17/20): statement of reasons + appeal.
-    if (action == kModerationDecisionAction) {
+    // Also a reporter's "no action on your report" notice (appealable).
+    if (isModerationDecisionPayload(data)) {
       final decision = ModerationDecision.fromData(data);
       if (decision != null) navigator.push(ModerationDecisionScreen.route(decision));
       return;

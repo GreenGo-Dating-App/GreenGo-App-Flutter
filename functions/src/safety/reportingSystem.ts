@@ -6,7 +6,11 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
-import { submitAppealForDecision } from './moderationDecisions';
+import { AutomatedInfo, createModerationDecision, MODERATION_DECISIONS, submitAppealForDecision } from './moderationDecisions';
+import {
+  applyBan, applySuspension, DecisionEffect, recordStrike, recordWarning,
+} from './moderationEffects';
+import { escalateIfRepeatOffender } from './repeatOffenders';
 
 const firestore = admin.firestore();
 
@@ -121,15 +125,36 @@ export async function applyReportAutoActions(params: {
     .count()
     .get();
 
+  const nowMs = Date.now();
+  // Automatic measures (OFF by default, see reportPipeline): automated
+  // decisions, so the statement of reasons says so (Terms 18.3).
+  const automatic: AutomatedInfo = { detection: null, decision: true };
   if (reportCount.data().count >= 10) {
     // Automatic blocking for high report volume
-    await automaticBlockUser(reportedUserId, 'High report volume (10+ reports)');
+    const reason = 'High report volume (10+ reports)';
+    const blockId = await automaticBlockUser(reportedUserId, reason);
     autoBlocked = true;
+    await createModerationDecision({
+      decisionId: `auto_restrict_${reportedUserId}_${nowMs}`,
+      userId: reportedUserId,
+      action: 'restrictAccount',
+      reasonCode: 'other',
+      explanation: `${reason}: some features of your account are restricted until a moderator reviews the reports.`,
+      decidedBy: 'system',
+      automated: automatic,
+      effects: [{ type: 'restriction', userId: reportedUserId, blockId }],
+      nowMs,
+    }).catch((e) => console.error('[autoActions] restriction notice failed:', e));
   }
 
   // For critical reports, issue immediate warning (Point 208)
   if (minorSafety) {
-    await issueWarning(reportedUserId, 'minorSafety', description, 'severe');
+    await issueWarning(reportedUserId, 'minorSafety', description, 'severe', {
+      decisionId: `auto_warning_${reportedUserId}_${nowMs}`,
+      decidedBy: 'system',
+      reasonCode: 'underage',
+      automated: automatic,
+    });
     minorSafetyWarned = true;
   }
   return { autoBlocked, minorSafetyWarned };
@@ -138,13 +163,25 @@ export async function applyReportAutoActions(params: {
 /**
  * Issue Warning to User
  * Point 208: Automated warning system for first-time offenses
+ *
+ * Records the warning + a strike, sends the statement of reasons (decision)
+ * and applies the shared repeat-offender rule (Terms 18.6, safety/
+ * repeatOffenders.ts), which replaces the old "4th warning -> 7-day
+ * suspension" that had no notice and could not be appealed.
  */
 export const issueWarning = async (
   userId: string,
   reason: string,
   description: string,
-  severity: string
-): Promise<void> => {
+  severity: string,
+  opts: {
+    decisionId?: string;
+    decidedBy?: string;
+    reasonCode?: string | null;
+    automated?: AutomatedInfo | null;
+    effects?: DecisionEffect[];
+  } = {}
+): Promise<{ decisionId: string; escalated: boolean }> => {
   // Check warning history
   const warningsSnapshot = await firestore
     .collection('user_warnings')
@@ -153,36 +190,40 @@ export const issueWarning = async (
     .limit(5)
     .get();
 
-  const warningCount = warningsSnapshot.size;
+  const warningCount = warningsSnapshot.docs.filter((d) => d.data().revoked !== true).length;
 
   // Determine severity based on history
   let finalSeverity = severity;
   if (warningCount === 0) {
     finalSeverity = 'minor'; // First-time offense
   } else if (warningCount >= 3) {
-    finalSeverity = 'final'; // Last warning before ban
+    finalSeverity = 'final'; // Last warning before suspension
   }
 
-  // Create warning
-  await firestore.collection('user_warnings').add({
+  const nowMs = Date.now();
+  const decisionId = opts.decisionId ?? `warning_${userId}_${nowMs}`;
+  const decidedBy = opts.decidedBy ?? 'system';
+  const effects: DecisionEffect[] = [
+    ...(opts.effects ?? []),
+    await recordWarning({ userId, reason, description, severity: finalSeverity, decisionId, by: decidedBy }),
+    await recordStrike({ userId, decisionId, kind: 'warning', nowMs }),
+  ];
+  await createModerationDecision({
+    decisionId,
     userId,
-    reason,
-    description,
-    severity: finalSeverity,
-    issuedAt: admin.firestore.FieldValue.serverTimestamp(),
-    acknowledged: false,
-    acknowledgedAt: null,
+    action: 'issueWarning',
+    reasonCode: opts.reasonCode ?? null,
+    explanation: description,
+    decidedBy,
+    automated: opts.automated ?? null,
+    effects,
+    nowMs,
   });
-
-  // If final warning, suspend account temporarily
-  if (finalSeverity === 'final') {
-    await firestore.collection('users').doc(userId).update({
-      accountStatus: 'suspended',
-      suspendedUntil: admin.firestore.Timestamp.fromDate(
-        new Date(Date.now() + 7 * 24 * 60 * 60 * 1000) // 7 days
-      ),
-    });
-  }
+  const warning = effects.find((e) => e.type === 'warning') as { warningId: string } | undefined;
+  const esc = await escalateIfRepeatOffender({
+    userId, decisionId, currentWarningId: warning?.warningId ?? null, decidedBy, automated: opts.automated ?? null, nowMs,
+  });
+  return { decisionId, escalated: esc.escalated };
 };
 
 /**
@@ -230,15 +271,29 @@ export const reviewReport = functions
       moderatorNotes,
     });
 
-    // Execute action
+    // Execute action. Every measure records a decision (statement of reasons
+    // in-app + email, appeal that can reverse it): DSA art. 17/20.
+    const uid: string = report.reportedUserId;
+    const decisionId = `legacy_${reportId}`;
+    const nowMs = Date.now();
+    const explanation = typeof moderatorNotes === 'string' ? moderatorNotes : null;
+    const decide = (decisionAction: string, effects: DecisionEffect[]) => createModerationDecision({
+      decisionId,
+      userId: uid,
+      action: decisionAction,
+      reasonCode: null,
+      explanation,
+      decidedBy: moderatorId,
+      contentRef: report.messageId
+        ? { type: 'message', id: report.messageId, excerpt: null }
+        : { type: 'profile', id: null, excerpt: null },
+      effects,
+      extra: { reportId },
+      nowMs,
+    });
     switch (action) {
       case 'warningIssued':
-        await issueWarning(
-          report.reportedUserId,
-          report.category,
-          moderatorNotes,
-          'moderate'
-        );
+        await issueWarning(uid, report.category, moderatorNotes, 'moderate', { decisionId, decidedBy: moderatorId });
         break;
 
       case 'contentRemoved':
@@ -248,28 +303,31 @@ export const reviewReport = functions
             deletedBy: 'moderator',
             deletedAt: admin.firestore.FieldValue.serverTimestamp(),
           });
+          await decide('removeContent', [
+            { type: 'legacyMessage', messageId: report.messageId },
+            await recordStrike({ userId: uid, decisionId, kind: 'content_removal', nowMs }),
+          ]);
         }
         break;
 
       case 'accountSuspended':
-        await firestore.collection('users').doc(report.reportedUserId).update({
-          accountStatus: 'suspended',
-          suspendedUntil: admin.firestore.Timestamp.fromDate(
-            new Date(Date.now() + 30 * 24 * 60 * 60 * 1000) // 30 days
-          ),
-        });
+        await decide('suspendUser', [
+          await applySuspension({ userId: uid, reason: explanation || 'Policy violation', days: 30, decisionId, by: moderatorId, nowMs }),
+          await recordStrike({ userId: uid, decisionId, kind: 'suspension', nowMs }),
+        ]);
         break;
 
       case 'accountBanned':
-        await firestore.collection('users').doc(report.reportedUserId).update({
-          accountStatus: 'banned',
-          bannedAt: admin.firestore.FieldValue.serverTimestamp(),
-        });
+        await decide('banUser', [
+          await applyBan({ userId: uid, reason: explanation || 'Severe policy violation', decisionId, by: moderatorId }),
+          await recordStrike({ userId: uid, decisionId, kind: 'ban', nowMs }),
+        ]);
         break;
 
       case 'shadowBanned':
         // Point 219: Shadow banning
-        await shadowBanUser(report.reportedUserId);
+        await shadowBanUser(uid);
+        await decide('shadowBan', [{ type: 'shadowBan', userId: uid }]);
         break;
     }
 
@@ -302,6 +360,14 @@ export const submitAppeal = functions
 
   const { reportId, appealReason, evidenceUrls = [] } = data;
   const userId = context.auth.uid;
+
+  // A report reviewed through reviewReport now has a decision: same path.
+  if (typeof reportId === 'string' && reportId && !reportId.includes('/')) {
+    const legacyDecision = await firestore.collection(MODERATION_DECISIONS).doc(`legacy_${reportId}`).get();
+    if (legacyDecision.exists && legacyDecision.data()?.userId === userId) {
+      return submitAppealForDecision(userId, { decisionId: `legacy_${reportId}`, appealReason });
+    }
+  }
 
   try {
     // Verify the report exists and is for this user
@@ -339,19 +405,29 @@ export const submitAppeal = functions
       status: 'appealed',
     });
 
-    // Add to moderation queue
-    await firestore.collection('moderation_queue').add({
+    // Add to moderation queue (shape the panel lists: status + addedAt).
+    const queueRef = firestore.collection('moderation_queue').doc(`appeal__legacy_${appealRef.id}`);
+    await queueRef.set({
+      queueId: queueRef.id,
       itemType: 'appeal',
       itemId: appealRef.id,
       userId,
       priority: 'medium',
+      category: 'appeal',
+      status: 'pending',
       addedAt: admin.firestore.FieldValue.serverTimestamp(),
+      createdAt: admin.firestore.FieldValue.serverTimestamp(),
       assignedTo: null,
       relatedReportIds: [reportId],
       metadata: {
         originalReportId: reportId,
+        // Terms 18.4 b: this person may not resolve the appeal.
+        originalDecidedBy: report.assignedModeratorId ?? null,
       },
+      content: { text: typeof appealReason === 'string' ? appealReason.slice(0, 2000) : null },
+      reporterId: 'system',
     });
+    await appealRef.update({ queueId: queueRef.id, originalDecidedBy: report.assignedModeratorId ?? null });
 
     return {
       appealId: appealRef.id,
@@ -534,8 +610,8 @@ export const getBlockList = functions
 async function automaticBlockUser(
   userId: string,
   reason: string
-): Promise<void> {
-  await firestore.collection('user_blocks').add({
+): Promise<string> {
+  const ref = await firestore.collection('user_blocks').add({
     blockerId: 'system',
     blockedUserId: userId,
     type: 'automatic',
@@ -549,6 +625,7 @@ async function automaticBlockUser(
     accountStatus: 'restricted',
     restrictionReason: reason,
   });
+  return ref.id;
 }
 
 /**

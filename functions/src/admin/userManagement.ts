@@ -8,6 +8,8 @@ import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
 import { requireAdmin, rolesForPermission } from '../shared/adminAuth';
 import { syncHostExperiencesForBan } from '../user_experiences/hostBan';
+import { createModerationDecision } from '../safety/moderationDecisions';
+import { applyBan, applySuspension, recordStrike } from '../safety/moderationEffects';
 
 const firestore = admin.firestore();
 const auth = admin.auth();
@@ -372,30 +374,44 @@ export const suspendUserAccount = functions
   await verifyAdminPermission(context, 'suspendUsers');
 
   const { userId, reason, durationDays = 7 } = data;
+  if (typeof userId !== 'string' || !userId) {
+    throw new functions.https.HttpsError('invalid-argument', 'userId is required');
+  }
+  const days = Number(durationDays) > 0 ? Number(durationDays) : 7;
+  const adminId = context.auth!.uid;
 
   try {
-    const suspendedUntil = new Date();
-    suspendedUntil.setDate(suspendedUntil.getDate() + durationDays);
-
-    await firestore.collection('users').doc(userId).update({
-      accountStatus: 'suspended',
-      suspensionReason: reason,
-      suspendedUntil: admin.firestore.Timestamp.fromDate(suspendedUntil),
-      suspendedBy: context.auth!.uid,
-      suspendedAt: admin.firestore.FieldValue.serverTimestamp(),
-    });
-    await syncHostExperiencesForBan(userId, true);
+    const nowMs = Date.now();
+    const suspendedUntil = new Date(nowMs + days * 86_400_000);
+    // DSA art. 17 / Terms 18.3: every suspension gets a decision with a
+    // statement of reasons (in-app + email) and an appeal that can lift it.
+    const decisionId = `admin_suspend_${userId}_${nowMs}`;
+    const effects = [
+      await applySuspension({ userId, reason: typeof reason === 'string' && reason ? reason : 'Policy violation', days, decisionId, by: adminId, nowMs }),
+      await recordStrike({ userId, decisionId, kind: 'suspension', nowMs }),
+    ];
+    await createModerationDecision({
+      decisionId,
+      userId,
+      action: 'suspendUser',
+      reasonCode: typeof data.reasonCode === 'string' ? data.reasonCode : 'other',
+      explanation: typeof reason === 'string' ? reason : null,
+      decidedBy: adminId,
+      effects,
+      extra: { suspensionDays: days, source: 'admin_user_management' },
+      nowMs,
+    }).catch((e) => console.error('suspendUserAccount: decision notice failed:', e));
 
     // Log admin action
     await logAdminAction(
-      context.auth!.uid,
+      adminId,
       'suspendedUser',
       'user',
       userId,
-      { reason, durationDays }
+      { reason, durationDays: days, decisionId }
     );
 
-    return { success: true, suspendedUntil };
+    return { success: true, suspendedUntil, decisionId };
   } catch (error: any) {
     console.error('Error suspending user account:', error);
     throw new functions.https.HttpsError('internal', error.message);
@@ -449,31 +465,43 @@ export const banUserAccount = functions
   await verifyAdminPermission(context, 'banUsers');
 
   const { userId, reason } = data;
+  if (typeof userId !== 'string' || !userId) {
+    throw new functions.https.HttpsError('invalid-argument', 'userId is required');
+  }
+  const adminId = context.auth!.uid;
 
   try {
-    await firestore.collection('users').doc(userId).update({
-      accountStatus: 'banned',
-      banReason: reason,
-      bannedBy: context.auth!.uid,
-      bannedAt: admin.firestore.FieldValue.serverTimestamp(),
-    });
-    await syncHostExperiencesForBan(userId, true);
-
-    // Disable Firebase Auth account
-    await auth.updateUser(userId, {
-      disabled: true,
-    });
+    const nowMs = Date.now();
+    const decisionId = `admin_ban_${userId}_${nowMs}`;
+    // Ban + Firebase Auth disabled. The user can no longer open the app, so
+    // the statement of reasons also goes by email with a signed web appeal
+    // link (safety/appealPage.ts).
+    const effects = [
+      await applyBan({ userId, reason: typeof reason === 'string' && reason ? reason : 'Severe policy violation', decisionId, by: adminId }),
+      await recordStrike({ userId, decisionId, kind: 'ban', nowMs }),
+    ];
+    await createModerationDecision({
+      decisionId,
+      userId,
+      action: 'banUser',
+      reasonCode: typeof data.reasonCode === 'string' ? data.reasonCode : 'other',
+      explanation: typeof reason === 'string' ? reason : null,
+      decidedBy: adminId,
+      effects,
+      extra: { source: 'admin_user_management' },
+      nowMs,
+    }).catch((e) => console.error('banUserAccount: decision notice failed:', e));
 
     // Log admin action
     await logAdminAction(
-      context.auth!.uid,
+      adminId,
       'bannedUser',
       'user',
       userId,
-      { reason }
+      { reason, decisionId }
     );
 
-    return { success: true };
+    return { success: true, decisionId };
   } catch (error: any) {
     console.error('Error banning user account:', error);
     throw new functions.https.HttpsError('internal', error.message);

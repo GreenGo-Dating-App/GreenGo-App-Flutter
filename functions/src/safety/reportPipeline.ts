@@ -34,6 +34,8 @@ import { resolveLocale } from '../shared/i18n/recipientLocale';
 import { monitored } from '../shared/monitoring';
 import { applyReportAutoActions } from './reportingSystem';
 import { createSafetyCase, ContentRef } from './takedowns/safetyCases';
+import { APPEAL_WINDOW_DAYS, createModerationDecision } from './moderationDecisions';
+import { checkAbusiveReporter, isReportingSuspended } from './reporterStanding';
 
 const db = admin.firestore();
 const OPTS = { memory: '512MiB' as const, timeoutSeconds: 60 };
@@ -429,6 +431,22 @@ export async function enqueueReport(
   if (source === 'reports' && r.reporterId === 'admin') return false;
 
   const item = buildQueueItem(source, reportId, r);
+  // Terms 18.6 / DSA art. 23: reports of a reporter whose reporting is
+  // suspended are stored but not processed (no pending item, no
+  // auto-actions). Child-safety reports (P0) are always processed.
+  let reporterSuspended = false;
+  if (item.priorityLevel !== 'P0') {
+    try {
+      reporterSuspended = await isReportingSuspended(item.reporterId as string | null);
+    } catch (e) {
+      console.error(`[reportPipeline] reporter standing check failed for ${item.queueId}:`, e);
+    }
+  }
+  if (reporterSuspended) {
+    item.status = 'reporter_suspended';
+    item.priority = 'low';
+    item.reporterSuspended = true;
+  }
   const ref = db.collection('moderation_queue').doc(item.queueId as string);
   try {
     await ref.create(item);
@@ -457,7 +475,7 @@ export async function enqueueReport(
     }
   }
 
-  if (source === 'user_reports' && item.reportedUserId) {
+  if (source === 'user_reports' && item.reportedUserId && !reporterSuspended) {
     try {
       const settings = (await db.doc('app_config/moderation_settings').get()).data() || {};
       // OFF unless explicitly enabled (app_config/moderation_settings
@@ -705,6 +723,18 @@ export function outcomeFor(after: admin.firestore.DocumentData): ReviewOutcome {
   return 'no_violation';
 }
 
+/** A pipeline item with a real reporter just closed as no-violation. Pure. */
+export function shouldCountUnfounded(
+  before: admin.firestore.DocumentData | undefined,
+  after: admin.firestore.DocumentData | undefined,
+): boolean {
+  if (!before || !after || !after.source) return false;
+  if (FINAL_STATUSES.has(before.status) || !FINAL_STATUSES.has(after.status)) return false;
+  const r = after.reporterId;
+  if (typeof r !== 'string' || !r || ['anonymous', 'admin', 'system'].includes(r)) return false;
+  return outcomeFor(after) === 'no_violation';
+}
+
 /** Notification doc id: one per queue item, ever. */
 export function feedbackNotificationId(queueId: string): string {
   return `report_reviewed_${queueId}`;
@@ -724,6 +754,44 @@ export async function notifyReporterOnResolution(
   }
 
   const outcome = outcomeFor(after);
+  // A report re-opened by the reporter's appeal gets a fresh notice + decision.
+  const round = typeof after.reopenCount === 'number' && after.reopenCount > 0 ? `_r${after.reopenCount}` : '';
+  // Terms 18.4 a: the reporter can appeal a decision NOT to act on their
+  // report. That decision is recorded like any other (statement of reasons +
+  // 6-month appeal window); its id travels in the notification data.
+  let decisionData: Record<string, string> = {};
+  if (outcome === 'no_violation') {
+    const decisionId = `nr__${queueId}${round}`;
+    try {
+      await createModerationDecision({
+        decisionId,
+        queueId,
+        userId: reporterId,
+        role: 'reporter',
+        action: 'noAction',
+        reasonCode: 'no_violation',
+        explanation: typeof after.statementOfReasons?.explanation === 'string' && after.statementOfReasons.reasonCode === 'no_violation'
+          ? after.statementOfReasons.explanation
+          : null,
+        decidedBy: typeof after.resolvedBy === 'string' ? after.resolvedBy : 'unknown',
+        contentRef: { type: 'report', id: String(after.source.docId ?? ''), excerpt: null },
+        inApp: false, // the report_reviewed notice below carries it
+        email: false,
+        extra: { reportId: String(after.source.docId ?? ''), reportCollection: String(after.source.collection ?? '') },
+      });
+      decisionData = {
+        decisionId,
+        moderationAction: 'noAction',
+        reasonCode: 'no_violation',
+        role: 'reporter',
+        appealable: 'true',
+        appealDeadline: new Date(Date.now() + APPEAL_WINDOW_DAYS * 86_400_000).toISOString(),
+        contentType: 'report',
+      };
+    } catch (e) {
+      console.error(`[reportPipeline] reporter decision for ${queueId} failed:`, e);
+    }
+  }
   // Stored in the reporter's language (as before) for app versions without
   // key support, plus titleKey/bodyKey so newer apps follow the UI language.
   const locale = await resolveLocale(reporterId);
@@ -735,7 +803,7 @@ export async function notifyReporterOnResolution(
     [outcome]: tr(locale, bodyKey),
   } as Record<string, string>;
   try {
-    await db.collection('notifications').doc(feedbackNotificationId(queueId)).create({
+    await db.collection('notifications').doc(feedbackNotificationId(queueId) + round).create({
       userId: reporterId,
       // 'system' is a type every app version renders.
       type: 'system',
@@ -749,6 +817,7 @@ export async function notifyReporterOnResolution(
         action: 'report_reviewed',
         outcome,
         reportId: String(after.source.docId ?? ''),
+        ...decisionData,
       },
       isRead: false,
       createdAt: admin.firestore.FieldValue.serverTimestamp(),
@@ -790,10 +859,16 @@ export const onContentReportQueued = onDocumentCreated(
 export const onModerationQueueResolved = onDocumentUpdated(
   { document: 'moderation_queue/{queueId}', ...OPTS },
   monitored('onModerationQueueResolved', async (event) => {
-    await notifyReporterOnResolution(
-      event.params.queueId,
-      event.data?.before.data(),
-      event.data?.after.data(),
-    );
+    const before = event.data?.before.data();
+    const after = event.data?.after.data();
+    await notifyReporterOnResolution(event.params.queueId, before, after);
+    // Terms 18.6 / DSA art. 23: count clearly unfounded reports.
+    if (shouldCountUnfounded(before, after)) {
+      try {
+        await checkAbusiveReporter(after!.reporterId as string);
+      } catch (e) {
+        console.error(`[reportPipeline] reporter abuse check failed for ${event.params.queueId}:`, e);
+      }
+    }
   }),
 );

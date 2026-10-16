@@ -385,6 +385,12 @@ export {
   onModerationQueueResolved,
 } from './safety/reportPipeline';
 
+// DSA arts. 17/20/23 (Terms 18.3-18.6): appeal resolution (admin panel
+// callable; also via takeModerationAction on 'appeal' items) and the signed
+// web appeal page linked from the statement-of-reasons email.
+export { resolveModerationAppeal } from './safety/appealResolution';
+export { moderationAppeal } from './safety/appealPage';
+
 // Safety takedowns (audit BR-11 / US-09 NCII, US-10 / BR-14 / AS-08 / EU-19
 // CSAE): public + in-app NCII request, precautionary hide, SLA escalation,
 // 1-year CSAE legal hold, admin Safety queue. See safety/takedowns/.

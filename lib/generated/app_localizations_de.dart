@@ -25726,4 +25726,141 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get manageSubscriptionAppStorePath =>
       'Apple-ID-Einstellungen > Abonnements';
+
+  @override
+  String get moderationDecisionContentLabel => 'Betroffener Inhalt';
+
+  @override
+  String get moderationDecisionAutomatedLabel => 'Automatisierte Werkzeuge';
+
+  @override
+  String get moderationDecisionAutomatedNone =>
+      'Es wurden keine automatisierten Werkzeuge eingesetzt. Ein Mensch hat diese Entscheidung getroffen.';
+
+  @override
+  String get moderationDecisionAutomatedFlagged =>
+      'Automatisierte Werkzeuge haben diesen Inhalt markiert. Ein Mensch hat diese Entscheidung getroffen.';
+
+  @override
+  String get moderationDecisionAutomatedHeld =>
+      'Automatisierte Werkzeuge haben diesen Inhalt erkannt und zurückgehalten, bis ein Mensch ihn prüft.';
+
+  @override
+  String get moderationContentTypeMessage => 'Nachricht';
+
+  @override
+  String get moderationContentTypePhoto => 'Foto';
+
+  @override
+  String get moderationContentTypeProfile => 'Profil';
+
+  @override
+  String get moderationContentTypeEvent => 'Veranstaltung';
+
+  @override
+  String get moderationContentTypeExperience => 'Erlebnis';
+
+  @override
+  String get moderationContentTypeReview => 'Bewertung';
+
+  @override
+  String get moderationContentTypeAccount => 'Dein Konto';
+
+  @override
+  String get moderationContentTypeReport => 'Deine Meldung';
+
+  @override
+  String get moderationContentTypeOther => 'Inhalt';
+
+  @override
+  String get moderationActionNoAction => 'Keine Maßnahme zu deiner Meldung';
+
+  @override
+  String get moderationActionReporterWarning =>
+      'Warnung wegen unbegründeter Meldungen';
+
+  @override
+  String get moderationActionSuspendReporting =>
+      'Deine Meldungen werden vorübergehend nicht bearbeitet';
+
+  @override
+  String get moderationActionRestrict => 'Einige Funktionen eingeschränkt';
+
+  @override
+  String get moderationReasonNoViolation =>
+      'Es wurde kein Verstoß gegen unsere Community-Richtlinien oder das Gesetz festgestellt';
+
+  @override
+  String get moderationReasonUnfoundedReports =>
+      'Wiederholte offensichtlich unbegründete Meldungen';
+
+  @override
+  String get moderationReasonRepeatViolations =>
+      'Wiederholte Verstöße nach einer Warnung';
+
+  @override
+  String get moderationDecisionReporterIntro =>
+      'Wir haben deine Meldung geprüft und entschieden, nichts zu unternehmen. Dies ist die Begründung.';
+
+  @override
+  String get moderationDecisionOtherOptions =>
+      'Wenn du in der EU lebst, kannst du dich auch an eine zertifizierte außergerichtliche Streitbeilegungsstelle wenden. Der Rechtsweg steht dir immer offen.';
+
+  @override
+  String get moderationAppealOutcomeLabel => 'Ergebnis des Einspruchs';
+
+  @override
+  String get moderationAppealOutcomeUpheld =>
+      'Entscheidung bestätigt: Sie bleibt bestehen.';
+
+  @override
+  String get moderationAppealOutcomeOverturned =>
+      'Entscheidung aufgehoben: Wir haben sie rückgängig gemacht.';
+
+  @override
+  String get moderationAppealOutcomePartial =>
+      'Entscheidung teilweise aufgehoben: Wir haben sie geändert.';
+
+  @override
+  String get moderationAppealOutcomeReportReopened =>
+      'Einspruch angenommen: Deine Meldung wird erneut geprüft.';
+
+  @override
+  String get moderationAppealOutcomePending =>
+      'Dein Einspruch wird von einer Person geprüft, die die ursprüngliche Entscheidung nicht getroffen hat.';
+
+  @override
+  String get moderationAppealReviewerNoteLabel => 'Gründe für das Ergebnis';
+
+  @override
+  String get srvAppealOutcomeTitle => 'Dein Einspruch wurde geprüft';
+
+  @override
+  String get srvAppealOutcomeBody =>
+      'Eine Person, die die ursprüngliche Entscheidung nicht getroffen hat, hat deinen Einspruch geprüft. Tippe, um Ergebnis und Gründe zu sehen.';
+
+  @override
+  String get srvDecisionEmailSubject =>
+      'GreenGo: eine Moderationsentscheidung, die dich betrifft';
+
+  @override
+  String get srvDecisionEmailIntro =>
+      'Dies ist unsere Begründung für eine Moderationsentscheidung (EU-Gesetz über digitale Dienste, Art. 17).';
+
+  @override
+  String srvDecisionEmailAppeal(String date) {
+    return 'Du kannst bis $date kostenlos Einspruch einlegen: in der App (Benachrichtigungen) oder über den Button unten, der auch funktioniert, wenn du dich nicht anmelden kannst.';
+  }
+
+  @override
+  String get srvAppealOutcomeEmailSubject =>
+      'GreenGo: das Ergebnis deines Einspruchs';
+
+  @override
+  String get srvAppealPageTitle =>
+      'Einspruch gegen eine Moderationsentscheidung';
+
+  @override
+  String get srvAppealPageInvalid =>
+      'Dieser Einspruchslink ist ungültig. Verwende den Link aus unserer neuesten E-Mail oder schreibe an safety@greengochat.com.';
 }

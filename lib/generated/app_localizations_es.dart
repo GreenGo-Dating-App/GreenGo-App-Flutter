@@ -25662,4 +25662,141 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get manageSubscriptionAppStorePath =>
       'Ajustes del ID de Apple > Suscripciones';
+
+  @override
+  String get moderationDecisionContentLabel => 'Contenido afectado';
+
+  @override
+  String get moderationDecisionAutomatedLabel => 'Herramientas automatizadas';
+
+  @override
+  String get moderationDecisionAutomatedNone =>
+      'No se usaron herramientas automatizadas. Una persona tomó esta decisión.';
+
+  @override
+  String get moderationDecisionAutomatedFlagged =>
+      'Herramientas automatizadas marcaron este contenido. Una persona tomó esta decisión.';
+
+  @override
+  String get moderationDecisionAutomatedHeld =>
+      'Herramientas automatizadas detectaron este contenido y lo retuvieron hasta que una persona lo revise.';
+
+  @override
+  String get moderationContentTypeMessage => 'Mensaje';
+
+  @override
+  String get moderationContentTypePhoto => 'Foto';
+
+  @override
+  String get moderationContentTypeProfile => 'Perfil';
+
+  @override
+  String get moderationContentTypeEvent => 'Evento';
+
+  @override
+  String get moderationContentTypeExperience => 'Experiencia';
+
+  @override
+  String get moderationContentTypeReview => 'Reseña';
+
+  @override
+  String get moderationContentTypeAccount => 'Tu cuenta';
+
+  @override
+  String get moderationContentTypeReport => 'Tu denuncia';
+
+  @override
+  String get moderationContentTypeOther => 'Contenido';
+
+  @override
+  String get moderationActionNoAction =>
+      'No se tomaron medidas sobre tu denuncia';
+
+  @override
+  String get moderationActionReporterWarning =>
+      'Advertencia por denuncias infundadas';
+
+  @override
+  String get moderationActionSuspendReporting =>
+      'Tus denuncias no se procesan temporalmente';
+
+  @override
+  String get moderationActionRestrict => 'Algunas funciones restringidas';
+
+  @override
+  String get moderationReasonNoViolation =>
+      'No se encontró ninguna infracción de nuestras Normas de la comunidad ni de la ley';
+
+  @override
+  String get moderationReasonUnfoundedReports =>
+      'Denuncias claramente infundadas y repetidas';
+
+  @override
+  String get moderationReasonRepeatViolations =>
+      'Infracciones repetidas después de una advertencia';
+
+  @override
+  String get moderationDecisionReporterIntro =>
+      'Revisamos tu denuncia y decidimos no tomar medidas. Esta es la exposición de motivos.';
+
+  @override
+  String get moderationDecisionOtherOptions =>
+      'Si vives en la UE, también puedes llevar esta disputa a un órgano certificado de resolución extrajudicial de litigios. Siempre puedes acudir a los tribunales.';
+
+  @override
+  String get moderationAppealOutcomeLabel => 'Resultado de la apelación';
+
+  @override
+  String get moderationAppealOutcomeUpheld =>
+      'Decisión confirmada: se mantiene.';
+
+  @override
+  String get moderationAppealOutcomeOverturned =>
+      'Decisión revocada: la hemos revertido.';
+
+  @override
+  String get moderationAppealOutcomePartial =>
+      'Decisión revocada en parte: la hemos cambiado.';
+
+  @override
+  String get moderationAppealOutcomeReportReopened =>
+      'Apelación aceptada: tu denuncia se revisará de nuevo.';
+
+  @override
+  String get moderationAppealOutcomePending =>
+      'Tu apelación la revisa una persona que no tomó la decisión original.';
+
+  @override
+  String get moderationAppealReviewerNoteLabel => 'Motivos del resultado';
+
+  @override
+  String get srvAppealOutcomeTitle => 'Tu apelación fue revisada';
+
+  @override
+  String get srvAppealOutcomeBody =>
+      'Una persona que no tomó la decisión original revisó tu apelación. Toca para ver el resultado y los motivos.';
+
+  @override
+  String get srvDecisionEmailSubject =>
+      'GreenGo: una decisión de moderación que te afecta';
+
+  @override
+  String get srvDecisionEmailIntro =>
+      'Esta es nuestra exposición de motivos de una decisión de moderación (Reglamento de Servicios Digitales de la UE, art. 17).';
+
+  @override
+  String srvDecisionEmailAppeal(String date) {
+    return 'Puedes apelar gratis hasta el $date: en la app (Notificaciones) o con el botón de abajo, que también funciona si no puedes iniciar sesión.';
+  }
+
+  @override
+  String get srvAppealOutcomeEmailSubject =>
+      'GreenGo: el resultado de tu apelación';
+
+  @override
+  String get srvAppealPageTitle => 'Apelar una decisión de moderación';
+
+  @override
+  String get srvAppealPageInvalid =>
+      'Este enlace de apelación no es válido. Usa el enlace de nuestro correo más reciente o escribe a safety@greengochat.com.';
 }

@@ -50,6 +50,7 @@ import { resolveLocale } from '../../shared/i18n/recipientLocale';
 import { sendSecurityAlert, shortId } from '../../security/securityEventAlerts';
 import { sendResendEmail } from '../../shared/resendEmail';
 import { notifyAffectedUserOfDecision } from '../moderationDecisions';
+import type { DecisionEffect } from '../moderationEffects';
 import { computeImageHashes, ImageHashes } from './perceptualHash';
 import { addBlockedHash, setCaseHashesActive } from './hashLists';
 import { ensureLegalHold, copyIntoHold } from './legalHold';
@@ -610,11 +611,19 @@ export type Sanction = 'none' | 'strike' | 'suspend' | 'ban';
 export const SANCTIONS: Sanction[] = ['none', 'strike', 'suspend', 'ban'];
 const SUSPEND_DAYS = 30;
 
-async function applySanction(uid: string, sanction: Sanction, kind: SafetyKind, caseId: string, reason: string): Promise<void> {
-  if (sanction === 'none') return;
+/**
+ * Returns the effects (DSA art. 20 reversal on appeal, moderationEffects.ts).
+ * The suspension / ban is tagged with the decision id `safety_<caseId>`, so
+ * an appeal only lifts THIS sanction, never a newer one.
+ */
+async function applySanction(uid: string, sanction: Sanction, kind: SafetyKind, caseId: string, reason: string): Promise<DecisionEffect[]> {
+  if (sanction === 'none') return [];
   const now = TS.now();
+  const decisionId = `safety_${caseId}`;
+  const strikeId = `${caseId}_${uid}`;
+  const effects: DecisionEffect[] = [{ type: 'strike', userId: uid, strikeId }];
   // Every sanction is also a strike (repeat-offender record).
-  await db().collection('user_strikes').doc(`${caseId}_${uid}`).set({ userId: uid, caseId, kind, sanction, at: now });
+  await db().collection('user_strikes').doc(strikeId).set({ userId: uid, caseId, decisionId, kind, sanction, at: now, revoked: false });
   const userPatch: Record<string, unknown> = {
     safetyStrikes: admin.firestore.FieldValue.increment(1),
     lastSafetyStrikeAt: now,
@@ -622,11 +631,13 @@ async function applySanction(uid: string, sanction: Sanction, kind: SafetyKind, 
   const profilePatch: Record<string, unknown> = {};
   if (sanction === 'suspend') {
     const until = TS.fromMillis(Date.now() + SUSPEND_DAYS * 86_400_000);
-    Object.assign(userPatch, { accountStatus: 'suspended', suspensionReason: reason, suspendedUntil: until, suspendedAt: now });
+    Object.assign(userPatch, { accountStatus: 'suspended', suspensionReason: reason, suspendedUntil: until, suspendedAt: now, suspensionDecisionId: decisionId });
+    effects.push({ type: 'suspension', userId: uid });
     Object.assign(profilePatch, { accountStatus: 'suspended', status: 'suspended', suspensionReason: reason, suspendedAt: now, suspendedUntil: until });
   }
   if (sanction === 'ban') {
-    Object.assign(userPatch, { accountStatus: 'banned', banReason: reason, bannedAt: now });
+    Object.assign(userPatch, { accountStatus: 'banned', banReason: reason, bannedAt: now, banDecisionId: decisionId });
+    effects.push({ type: 'ban', userId: uid });
     Object.assign(profilePatch, { accountStatus: 'banned', status: 'banned', banReason: reason, bannedAt: now });
     try {
       await admin.auth().updateUser(uid, { disabled: true });
@@ -642,6 +653,7 @@ async function applySanction(uid: string, sanction: Sanction, kind: SafetyKind, 
       if (e?.code !== 5) throw e;
     }
   }
+  return effects;
 }
 
 /** Neutral outcome message to the requester (in-app when a uid, email when an address). */
@@ -724,7 +736,7 @@ export async function decideSafetyCase(p: DecideInput): Promise<{ status: CaseSt
       const reason = kind === 'ncii'
         ? 'Intimate image shared without consent (TAKE IT DOWN Act / Decreto 12.976/2026)'
         : 'Child sexual abuse or exploitation material';
-      if (uploader) await applySanction(uploader, p.sanction, kind, p.caseId, reason);
+      const sanctionEffects = uploader ? await applySanction(uploader, p.sanction, kind, p.caseId, reason) : [];
       status = 'confirmed';
       await ref.update({
         status, decidedAt: TS.now(), decidedBy: p.admin.uid, nextEscalationAt: null,
@@ -735,6 +747,9 @@ export async function decideSafetyCase(p: DecideInput): Promise<{ status: CaseSt
       // suspect is never told (no tipping-off before law enforcement acts).
       if (kind === 'ncii' && uploader) {
         try {
+          // Content concerned: the hidden message, else the photo(s).
+          const msg = hidden.find((h) => h.type === 'message');
+          const photo = hidden.find((h) => h.type === 'storage');
           await notifyAffectedUserOfDecision({
             queueId: `safety_${p.caseId}`,
             userId: uploader,
@@ -742,6 +757,14 @@ export async function decideSafetyCase(p: DecideInput): Promise<{ status: CaseSt
             reasonCode: 'ncii',
             explanation: reason,
             moderatorId: p.admin.uid,
+            contentRef: msg
+              ? { type: 'message', id: (msg.path || '').split('/').pop() || null, excerpt: null }
+              : { type: photo ? 'photo' : 'account', id: photo?.path ? photo.path.split('/').pop() || null : null, excerpt: null },
+            // A hash-list match is automated detection; the removal itself was
+            // confirmed by this moderator.
+            automated: { detection: c.source === 'hash_match' ? 'hash' : null, decision: false },
+            effects: [{ type: 'safetyCase', caseId: p.caseId }, ...sanctionEffects],
+            extra: { caseId: p.caseId },
           });
         } catch (e) {
           console.error('[safetyCases] uploader notice failed', e);

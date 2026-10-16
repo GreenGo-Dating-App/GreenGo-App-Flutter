@@ -43547,6 +43547,234 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Apple ID settings > Subscriptions'**
   String get manageSubscriptionAppStorePath;
+
+  /// Statement of reasons: label of the content the decision concerns
+  ///
+  /// In en, this message translates to:
+  /// **'Content concerned'**
+  String get moderationDecisionContentLabel;
+
+  /// Statement of reasons: label of the automated-tools line
+  ///
+  /// In en, this message translates to:
+  /// **'Automated tools'**
+  String get moderationDecisionAutomatedLabel;
+
+  /// Statement of reasons: no automated tools were used
+  ///
+  /// In en, this message translates to:
+  /// **'No automated tools were used. A person took this decision.'**
+  String get moderationDecisionAutomatedNone;
+
+  /// Statement of reasons: automated detection, human decision
+  ///
+  /// In en, this message translates to:
+  /// **'Automated tools flagged this content. A person took this decision.'**
+  String get moderationDecisionAutomatedFlagged;
+
+  /// Statement of reasons: automated tools held the content back pending human review
+  ///
+  /// In en, this message translates to:
+  /// **'Automated tools detected this content and held it back until a person reviews it.'**
+  String get moderationDecisionAutomatedHeld;
+
+  /// Statement of reasons: type of content the decision concerns
+  ///
+  /// In en, this message translates to:
+  /// **'Message'**
+  String get moderationContentTypeMessage;
+
+  /// Statement of reasons: type of content the decision concerns
+  ///
+  /// In en, this message translates to:
+  /// **'Photo'**
+  String get moderationContentTypePhoto;
+
+  /// Statement of reasons: type of content the decision concerns
+  ///
+  /// In en, this message translates to:
+  /// **'Profile'**
+  String get moderationContentTypeProfile;
+
+  /// Statement of reasons: type of content the decision concerns
+  ///
+  /// In en, this message translates to:
+  /// **'Event'**
+  String get moderationContentTypeEvent;
+
+  /// Statement of reasons: type of content the decision concerns
+  ///
+  /// In en, this message translates to:
+  /// **'Experience'**
+  String get moderationContentTypeExperience;
+
+  /// Statement of reasons: type of content the decision concerns
+  ///
+  /// In en, this message translates to:
+  /// **'Review'**
+  String get moderationContentTypeReview;
+
+  /// Statement of reasons: type of content the decision concerns
+  ///
+  /// In en, this message translates to:
+  /// **'Your account'**
+  String get moderationContentTypeAccount;
+
+  /// Statement of reasons: type of content the decision concerns
+  ///
+  /// In en, this message translates to:
+  /// **'Your report'**
+  String get moderationContentTypeReport;
+
+  /// Statement of reasons: type of content the decision concerns
+  ///
+  /// In en, this message translates to:
+  /// **'Content'**
+  String get moderationContentTypeOther;
+
+  /// Moderation action: no action on the report you made
+  ///
+  /// In en, this message translates to:
+  /// **'No action taken on your report'**
+  String get moderationActionNoAction;
+
+  /// Moderation action: warning about unfounded reports
+  ///
+  /// In en, this message translates to:
+  /// **'Warning about unfounded reports'**
+  String get moderationActionReporterWarning;
+
+  /// Moderation action: the user's reports are not processed for a period
+  ///
+  /// In en, this message translates to:
+  /// **'Your reports are temporarily not processed'**
+  String get moderationActionSuspendReporting;
+
+  /// Moderation action: some features restricted
+  ///
+  /// In en, this message translates to:
+  /// **'Some features restricted'**
+  String get moderationActionRestrict;
+
+  /// Moderation reason: nothing illegal or against the rules was found
+  ///
+  /// In en, this message translates to:
+  /// **'No breach of our Community Guidelines or the law was found'**
+  String get moderationReasonNoViolation;
+
+  /// Moderation reason: repeated clearly unfounded reports
+  ///
+  /// In en, this message translates to:
+  /// **'Repeated clearly unfounded reports'**
+  String get moderationReasonUnfoundedReports;
+
+  /// Moderation reason: repeated violations after a warning
+  ///
+  /// In en, this message translates to:
+  /// **'Repeated violations after a warning'**
+  String get moderationReasonRepeatViolations;
+
+  /// Statement of reasons shown to a reporter whose report was not acted on
+  ///
+  /// In en, this message translates to:
+  /// **'We reviewed your report and decided not to act on it. This is the statement of reasons.'**
+  String get moderationDecisionReporterIntro;
+
+  /// Statement of reasons: out-of-court dispute settlement and courts (DSA art. 21)
+  ///
+  /// In en, this message translates to:
+  /// **'If you live in the EU, you can also take this dispute to a certified out-of-court dispute settlement body. You can always go to court.'**
+  String get moderationDecisionOtherOptions;
+
+  /// Label: outcome of the appeal
+  ///
+  /// In en, this message translates to:
+  /// **'Appeal outcome'**
+  String get moderationAppealOutcomeLabel;
+
+  /// Appeal outcome: decision upheld
+  ///
+  /// In en, this message translates to:
+  /// **'Decision upheld: it stays in place.'**
+  String get moderationAppealOutcomeUpheld;
+
+  /// Appeal outcome: decision reversed
+  ///
+  /// In en, this message translates to:
+  /// **'Decision overturned: we reversed it.'**
+  String get moderationAppealOutcomeOverturned;
+
+  /// Appeal outcome: decision partly reversed
+  ///
+  /// In en, this message translates to:
+  /// **'Decision partly overturned: we changed it.'**
+  String get moderationAppealOutcomePartial;
+
+  /// Appeal outcome for a reporter: the report will be reviewed again
+  ///
+  /// In en, this message translates to:
+  /// **'Appeal accepted: your report will be reviewed again.'**
+  String get moderationAppealOutcomeReportReopened;
+
+  /// Appeal status: under review by a different person
+  ///
+  /// In en, this message translates to:
+  /// **'Your appeal is being reviewed by a person who did not take the original decision.'**
+  String get moderationAppealOutcomePending;
+
+  /// Label: reasons given for the appeal outcome
+  ///
+  /// In en, this message translates to:
+  /// **'Reasons for the outcome'**
+  String get moderationAppealReviewerNoteLabel;
+
+  /// Notification title: an appeal was decided
+  ///
+  /// In en, this message translates to:
+  /// **'Your appeal was reviewed'**
+  String get srvAppealOutcomeTitle;
+
+  /// Notification body: an appeal was decided
+  ///
+  /// In en, this message translates to:
+  /// **'A person who did not take the original decision reviewed your appeal. Tap to see the outcome and the reasons.'**
+  String get srvAppealOutcomeBody;
+
+  /// Email subject: statement of reasons for a moderation decision
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo: a moderation decision that concerns you'**
+  String get srvDecisionEmailSubject;
+
+  /// Email: first line of the statement of reasons
+  ///
+  /// In en, this message translates to:
+  /// **'This is our statement of reasons for a moderation decision (EU Digital Services Act, art. 17).'**
+  String get srvDecisionEmailIntro;
+
+  /// Email: how to appeal. {date} is the last day of the appeal window
+  ///
+  /// In en, this message translates to:
+  /// **'You can appeal free of charge until {date}: in the app (Notifications), or with the button below, which also works if you cannot sign in.'**
+  String srvDecisionEmailAppeal(String date);
+
+  /// Email subject: outcome of an appeal
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo: the outcome of your appeal'**
+  String get srvAppealOutcomeEmailSubject;
+
+  /// Web page title: appeal a moderation decision
+  ///
+  /// In en, this message translates to:
+  /// **'Appeal a moderation decision'**
+  String get srvAppealPageTitle;
+
+  /// Web page: the appeal link is invalid
+  ///
+  /// In en, this message translates to:
+  /// **'This appeal link is not valid. Use the link in our most recent email, or write to safety@greengochat.com.'**
+  String get srvAppealPageInvalid;
 }
 
 class _AppLocalizationsDelegate

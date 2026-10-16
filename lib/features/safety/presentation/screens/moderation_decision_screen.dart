@@ -8,6 +8,19 @@ import '../../../../generated/app_localizations.dart';
 /// Notification `data.action` of a moderation decision (DSA art. 17).
 const String kModerationDecisionAction = 'moderation_decision';
 
+/// Notification `data.action` of the reporter's "your report was reviewed"
+/// notice. When it carries a `decisionId` (no action taken), the reporter can
+/// appeal that decision (Terms 18.4 a, DSA art. 20).
+const String kReportReviewedAction = 'report_reviewed';
+
+/// True when a notification payload opens [ModerationDecisionScreen].
+bool isModerationDecisionPayload(Map<String, dynamic> data) {
+  final action = data['action'];
+  if (action == kModerationDecisionAction) return true;
+  final id = data['decisionId'];
+  return action == kReportReviewedAction && id is String && id.isNotEmpty;
+}
+
 /// A moderation decision as carried by the notification payload.
 @immutable
 class ModerationDecision {
@@ -18,6 +31,14 @@ class ModerationDecision {
     required this.explanation,
     required this.appealable,
     this.appealDeadline,
+    this.role = 'affected',
+    this.contentType = '',
+    this.contentId = '',
+    this.contentExcerpt = '',
+    this.automated = false,
+    this.automatedDecision = false,
+    this.appealOutcome = '',
+    this.appealExplanation = '',
   });
 
   /// Parses the notification `data` map (in-app doc or FCM payload, where
@@ -27,6 +48,8 @@ class ModerationDecision {
     if (id is! String || id.isEmpty) return null;
     final appealable = data['appealable'];
     final deadline = data['appealDeadline'];
+    bool flag(String k) => data[k] == true || data[k] == 'true';
+    String str(String k) => data[k] is String ? data[k] as String : '';
     return ModerationDecision(
       decisionId: id,
       moderationAction: (data['moderationAction'] as String?) ?? '',
@@ -34,6 +57,14 @@ class ModerationDecision {
       explanation: (data['explanation'] as String?) ?? '',
       appealable: appealable == true || appealable == 'true',
       appealDeadline: deadline is String ? DateTime.tryParse(deadline) : null,
+      role: str('role').isEmpty ? 'affected' : str('role'),
+      contentType: str('contentType'),
+      contentId: str('contentId'),
+      contentExcerpt: str('contentExcerpt'),
+      automated: flag('automated'),
+      automatedDecision: flag('automatedDecision'),
+      appealOutcome: str('appealOutcome'),
+      appealExplanation: str('appealExplanation'),
     );
   }
 
@@ -43,6 +74,27 @@ class ModerationDecision {
   final String explanation;
   final bool appealable;
   final DateTime? appealDeadline;
+
+  /// 'affected' (action on your account / content) or 'reporter' (decision
+  /// not to act on a report you made).
+  final String role;
+
+  /// Which content the decision concerns (Terms 18.3).
+  final String contentType;
+  final String contentId;
+  final String contentExcerpt;
+
+  /// Automated tools detected / flagged the item.
+  final bool automated;
+
+  /// The automated tool itself applied the measure (held upload).
+  final bool automatedDecision;
+
+  /// upheld | overturned | partially_overturned | report_reopened, or empty.
+  final String appealOutcome;
+  final String appealExplanation;
+
+  bool get isReporterDecision => role == 'reporter';
 
   bool get appealWindowOpen =>
       appealable &&
@@ -75,6 +127,14 @@ String moderationActionLabel(AppLocalizations l10n, String action) {
       return l10n.moderationActionShadowBan;
     case 'requireVerification':
       return l10n.moderationActionRequireVerification;
+    case 'restrictAccount':
+      return l10n.moderationActionRestrict;
+    case 'noAction':
+      return l10n.moderationActionNoAction;
+    case 'reporterWarning':
+      return l10n.moderationActionReporterWarning;
+    case 'suspendReporting':
+      return l10n.moderationActionSuspendReporting;
     default:
       return l10n.moderationActionOther;
   }
@@ -114,8 +174,69 @@ String moderationReasonLabel(AppLocalizations l10n, String code) {
       return l10n.moderationReasonOffPlatformPayment;
     case 'copyright':
       return l10n.copyrightHelpEntry;
+    case 'ncii':
+      return l10n.safetyReportReasonNcii;
+    case 'no_violation':
+      return l10n.moderationReasonNoViolation;
+    case 'unfounded_reports':
+      return l10n.moderationReasonUnfoundedReports;
+    case 'repeat_violations':
+      return l10n.moderationReasonRepeatViolations;
     default:
       return l10n.moderationReasonOther;
+  }
+}
+
+/// "Message: "excerpt"" / "Photo (a.jpg)" / "Your account" (Terms 18.3).
+String moderationContentLabel(AppLocalizations l10n, ModerationDecision d) {
+  final String type;
+  switch (d.contentType) {
+    case 'message':
+      type = l10n.moderationContentTypeMessage;
+    case 'photo':
+      type = l10n.moderationContentTypePhoto;
+    case 'profile':
+      type = l10n.moderationContentTypeProfile;
+    case 'event':
+      type = l10n.moderationContentTypeEvent;
+    case 'experience':
+      type = l10n.moderationContentTypeExperience;
+    case 'review':
+      type = l10n.moderationContentTypeReview;
+    case 'report':
+      type = l10n.moderationContentTypeReport;
+    case 'account':
+    case '':
+      type = d.isReporterDecision
+          ? l10n.moderationContentTypeReport
+          : l10n.moderationContentTypeAccount;
+    default:
+      type = l10n.moderationContentTypeOther;
+  }
+  if (d.contentExcerpt.trim().isNotEmpty) return '$type: "${d.contentExcerpt}"';
+  final showId = d.contentId.isNotEmpty &&
+      !const {'account', 'profile', 'report', ''}.contains(d.contentType);
+  return showId ? '$type (${d.contentId})' : type;
+}
+
+String moderationAutomatedLabel(AppLocalizations l10n, ModerationDecision d) {
+  if (d.automatedDecision) return l10n.moderationDecisionAutomatedHeld;
+  if (d.automated) return l10n.moderationDecisionAutomatedFlagged;
+  return l10n.moderationDecisionAutomatedNone;
+}
+
+String? moderationAppealOutcomeLabel(AppLocalizations l10n, String outcome) {
+  switch (outcome) {
+    case 'upheld':
+      return l10n.moderationAppealOutcomeUpheld;
+    case 'overturned':
+      return l10n.moderationAppealOutcomeOverturned;
+    case 'partially_overturned':
+      return l10n.moderationAppealOutcomePartial;
+    case 'report_reopened':
+      return l10n.moderationAppealOutcomeReportReopened;
+    default:
+      return null;
   }
 }
 
@@ -277,13 +398,24 @@ class _ModerationDecisionScreenState extends State<ModerationDecisionScreen> {
       case _AppealState.sending:
         appealArea = const [Center(child: CircularProgressIndicator())];
       case _AppealState.sent:
-        appealArea = [_note(l10n.moderationDecisionAppealSent)];
+        appealArea = [
+          _note(l10n.moderationDecisionAppealSent),
+          const SizedBox(height: 8),
+          _note(l10n.moderationAppealOutcomePending),
+        ];
       case _AppealState.already:
         appealArea = [_note(l10n.moderationDecisionAppealAlready)];
       case _AppealState.closed:
         appealArea = [_note(l10n.moderationDecisionAppealClosed)];
       case _AppealState.idle:
-        if (!d.appealable) {
+        final outcome = moderationAppealOutcomeLabel(l10n, d.appealOutcome);
+        if (outcome != null) {
+          appealArea = [
+            field(l10n.moderationAppealOutcomeLabel, outcome),
+            if (d.appealExplanation.trim().isNotEmpty)
+              field(l10n.moderationAppealReviewerNoteLabel, d.appealExplanation),
+          ];
+        } else if (!d.appealable) {
           appealArea = [_note(l10n.moderationDecisionNotAppealable)];
         } else if (!d.appealWindowOpen) {
           appealArea = [_note(l10n.moderationDecisionAppealClosed)];
@@ -327,7 +459,10 @@ class _ModerationDecisionScreenState extends State<ModerationDecisionScreen> {
             child: ListView(
               padding: const EdgeInsets.all(20),
               children: [
-                Text(l10n.moderationDecisionIntro,
+                Text(
+                    d.isReporterDecision
+                        ? l10n.moderationDecisionReporterIntro
+                        : l10n.moderationDecisionIntro,
                     style: const TextStyle(
                         color: AppColors.textSecondary, fontSize: 14, height: 1.4)),
                 const SizedBox(height: 20),
@@ -335,10 +470,19 @@ class _ModerationDecisionScreenState extends State<ModerationDecisionScreen> {
                     moderationActionLabel(l10n, d.moderationAction)),
                 field(l10n.moderationDecisionReasonLabel,
                     moderationReasonLabel(l10n, d.reasonCode)),
+                field(l10n.moderationDecisionContentLabel,
+                    moderationContentLabel(l10n, d)),
                 if (d.explanation.trim().isNotEmpty)
                   field(l10n.moderationDecisionExplanationLabel, d.explanation),
+                field(l10n.moderationDecisionAutomatedLabel,
+                    moderationAutomatedLabel(l10n, d)),
                 const SizedBox(height: 8),
                 ...appealArea,
+                const SizedBox(height: 24),
+                Text(l10n.moderationDecisionOtherOptions,
+                    key: const Key('moderationOtherOptions'),
+                    style: const TextStyle(
+                        color: AppColors.textTertiary, fontSize: 12, height: 1.4)),
               ],
             ),
           ),

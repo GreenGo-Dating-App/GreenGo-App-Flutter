@@ -3393,6 +3393,24 @@ service cloud.firestore {
     match /user_strikes/{id} {
       allow read, write: if false;
     }
+    // DSA arts. 17/20/23 (Terms 18.3-18.6), safety/moderationDecisions.ts:
+    // statements of reasons, appeals, backups of removed content (kept only
+    // for the appeal window) and reporter standing are written and read by
+    // Cloud Functions only. Users get their decision through the notification
+    // payload and appeal through the submitAppeal callable / signed web page;
+    // the admin panel through the moderation callables.
+    match /moderation_decisions/{id} {
+      allow read, write: if false;
+    }
+    match /report_appeals/{id} {
+      allow read, write: if false;
+    }
+    match /moderation_content_backups/{id} {
+      allow read, write: if false;
+    }
+    match /reporter_standing/{uid} {
+      allow read, write: if false;
+    }
     // A requester may read the status of their OWN request (status + dates
     // only; written by the server). Public-form requesters use the token link.
     match /safety_request_status/{caseId} {

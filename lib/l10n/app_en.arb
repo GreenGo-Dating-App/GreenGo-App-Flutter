@@ -14641,5 +14641,162 @@
   "manageSubscriptionAppStorePath": "Apple ID settings > Subscriptions",
   "@manageSubscriptionAppStorePath": {
     "description": "Profile > Account Settings > Manage subscription (Terms 7.3 cancel path, owner 2026-10-16)."
+  },
+  "moderationDecisionContentLabel": "Content concerned",
+  "@moderationDecisionContentLabel": {
+    "description": "Statement of reasons: label of the content the decision concerns"
+  },
+  "moderationDecisionAutomatedLabel": "Automated tools",
+  "@moderationDecisionAutomatedLabel": {
+    "description": "Statement of reasons: label of the automated-tools line"
+  },
+  "moderationDecisionAutomatedNone": "No automated tools were used. A person took this decision.",
+  "@moderationDecisionAutomatedNone": {
+    "description": "Statement of reasons: no automated tools were used"
+  },
+  "moderationDecisionAutomatedFlagged": "Automated tools flagged this content. A person took this decision.",
+  "@moderationDecisionAutomatedFlagged": {
+    "description": "Statement of reasons: automated detection, human decision"
+  },
+  "moderationDecisionAutomatedHeld": "Automated tools detected this content and held it back until a person reviews it.",
+  "@moderationDecisionAutomatedHeld": {
+    "description": "Statement of reasons: automated tools held the content back pending human review"
+  },
+  "moderationContentTypeMessage": "Message",
+  "@moderationContentTypeMessage": {
+    "description": "Statement of reasons: type of content the decision concerns"
+  },
+  "moderationContentTypePhoto": "Photo",
+  "@moderationContentTypePhoto": {
+    "description": "Statement of reasons: type of content the decision concerns"
+  },
+  "moderationContentTypeProfile": "Profile",
+  "@moderationContentTypeProfile": {
+    "description": "Statement of reasons: type of content the decision concerns"
+  },
+  "moderationContentTypeEvent": "Event",
+  "@moderationContentTypeEvent": {
+    "description": "Statement of reasons: type of content the decision concerns"
+  },
+  "moderationContentTypeExperience": "Experience",
+  "@moderationContentTypeExperience": {
+    "description": "Statement of reasons: type of content the decision concerns"
+  },
+  "moderationContentTypeReview": "Review",
+  "@moderationContentTypeReview": {
+    "description": "Statement of reasons: type of content the decision concerns"
+  },
+  "moderationContentTypeAccount": "Your account",
+  "@moderationContentTypeAccount": {
+    "description": "Statement of reasons: type of content the decision concerns"
+  },
+  "moderationContentTypeReport": "Your report",
+  "@moderationContentTypeReport": {
+    "description": "Statement of reasons: type of content the decision concerns"
+  },
+  "moderationContentTypeOther": "Content",
+  "@moderationContentTypeOther": {
+    "description": "Statement of reasons: type of content the decision concerns"
+  },
+  "moderationActionNoAction": "No action taken on your report",
+  "@moderationActionNoAction": {
+    "description": "Moderation action: no action on the report you made"
+  },
+  "moderationActionReporterWarning": "Warning about unfounded reports",
+  "@moderationActionReporterWarning": {
+    "description": "Moderation action: warning about unfounded reports"
+  },
+  "moderationActionSuspendReporting": "Your reports are temporarily not processed",
+  "@moderationActionSuspendReporting": {
+    "description": "Moderation action: the user's reports are not processed for a period"
+  },
+  "moderationActionRestrict": "Some features restricted",
+  "@moderationActionRestrict": {
+    "description": "Moderation action: some features restricted"
+  },
+  "moderationReasonNoViolation": "No breach of our Community Guidelines or the law was found",
+  "@moderationReasonNoViolation": {
+    "description": "Moderation reason: nothing illegal or against the rules was found"
+  },
+  "moderationReasonUnfoundedReports": "Repeated clearly unfounded reports",
+  "@moderationReasonUnfoundedReports": {
+    "description": "Moderation reason: repeated clearly unfounded reports"
+  },
+  "moderationReasonRepeatViolations": "Repeated violations after a warning",
+  "@moderationReasonRepeatViolations": {
+    "description": "Moderation reason: repeated violations after a warning"
+  },
+  "moderationDecisionReporterIntro": "We reviewed your report and decided not to act on it. This is the statement of reasons.",
+  "@moderationDecisionReporterIntro": {
+    "description": "Statement of reasons shown to a reporter whose report was not acted on"
+  },
+  "moderationDecisionOtherOptions": "If you live in the EU, you can also take this dispute to a certified out-of-court dispute settlement body. You can always go to court.",
+  "@moderationDecisionOtherOptions": {
+    "description": "Statement of reasons: out-of-court dispute settlement and courts (DSA art. 21)"
+  },
+  "moderationAppealOutcomeLabel": "Appeal outcome",
+  "@moderationAppealOutcomeLabel": {
+    "description": "Label: outcome of the appeal"
+  },
+  "moderationAppealOutcomeUpheld": "Decision upheld: it stays in place.",
+  "@moderationAppealOutcomeUpheld": {
+    "description": "Appeal outcome: decision upheld"
+  },
+  "moderationAppealOutcomeOverturned": "Decision overturned: we reversed it.",
+  "@moderationAppealOutcomeOverturned": {
+    "description": "Appeal outcome: decision reversed"
+  },
+  "moderationAppealOutcomePartial": "Decision partly overturned: we changed it.",
+  "@moderationAppealOutcomePartial": {
+    "description": "Appeal outcome: decision partly reversed"
+  },
+  "moderationAppealOutcomeReportReopened": "Appeal accepted: your report will be reviewed again.",
+  "@moderationAppealOutcomeReportReopened": {
+    "description": "Appeal outcome for a reporter: the report will be reviewed again"
+  },
+  "moderationAppealOutcomePending": "Your appeal is being reviewed by a person who did not take the original decision.",
+  "@moderationAppealOutcomePending": {
+    "description": "Appeal status: under review by a different person"
+  },
+  "moderationAppealReviewerNoteLabel": "Reasons for the outcome",
+  "@moderationAppealReviewerNoteLabel": {
+    "description": "Label: reasons given for the appeal outcome"
+  },
+  "srvAppealOutcomeTitle": "Your appeal was reviewed",
+  "@srvAppealOutcomeTitle": {
+    "description": "Notification title: an appeal was decided"
+  },
+  "srvAppealOutcomeBody": "A person who did not take the original decision reviewed your appeal. Tap to see the outcome and the reasons.",
+  "@srvAppealOutcomeBody": {
+    "description": "Notification body: an appeal was decided"
+  },
+  "srvDecisionEmailSubject": "GreenGo: a moderation decision that concerns you",
+  "@srvDecisionEmailSubject": {
+    "description": "Email subject: statement of reasons for a moderation decision"
+  },
+  "srvDecisionEmailIntro": "This is our statement of reasons for a moderation decision (EU Digital Services Act, art. 17).",
+  "@srvDecisionEmailIntro": {
+    "description": "Email: first line of the statement of reasons"
+  },
+  "srvDecisionEmailAppeal": "You can appeal free of charge until {date}: in the app (Notifications), or with the button below, which also works if you cannot sign in.",
+  "@srvDecisionEmailAppeal": {
+    "description": "Email: how to appeal. {date} is the last day of the appeal window",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "srvAppealOutcomeEmailSubject": "GreenGo: the outcome of your appeal",
+  "@srvAppealOutcomeEmailSubject": {
+    "description": "Email subject: outcome of an appeal"
+  },
+  "srvAppealPageTitle": "Appeal a moderation decision",
+  "@srvAppealPageTitle": {
+    "description": "Web page title: appeal a moderation decision"
+  },
+  "srvAppealPageInvalid": "This appeal link is not valid. Use the link in our most recent email, or write to safety@greengochat.com.",
+  "@srvAppealPageInvalid": {
+    "description": "Web page: the appeal link is invalid"
   }
 }
