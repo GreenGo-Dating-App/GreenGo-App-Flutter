@@ -368,7 +368,7 @@ export const sendTransactionalEmail = onCall<SendEmailRequest>(
 
       const msg = {
         to,
-        from: 'noreply@mail.greengochat.com',
+        from: 'noreply@greengo.app',
         templateId,
         dynamicTemplateData: dynamicData,
       };
@@ -492,7 +492,7 @@ export const processWelcomeEmailSeries = onSchedule(
         try {
           await sgMail.send({
             to: data.to,
-            from: 'noreply@mail.greengochat.com',
+            from: 'noreply@greengo.app',
             templateId: data.templateId,
             dynamicTemplateData: data.dynamicData,
           });
@@ -579,7 +579,7 @@ export const sendWeeklyDigestEmails = onSchedule(
 
           await sgMail.send({
             to: userData.email,
-            from: 'noreply@mail.greengochat.com',
+            from: 'noreply@greengo.app',
             templateId: 'weekly_digest',
             dynamicTemplateData: {
               name: userData.displayName,
@@ -634,7 +634,7 @@ export const sendReEngagementCampaign = onSchedule(
         try {
           await sgMail.send({
             to: userData.email,
-            from: 'noreply@mail.greengochat.com',
+            from: 'noreply@greengo.app',
             templateId: 're_engagement',
             dynamicTemplateData: {
               name: userData.displayName,

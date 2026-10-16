@@ -43,7 +43,7 @@ async function requireAdminPanelUser(auth: Parameters<typeof verifyAuth>[0]): Pr
 const BREVO_API_URL = 'https://api.brevo.com/v3';
 const BREVO_API_KEY = process.env.BREVO_API_KEY || '';
 // Verified sending domain (same sender as Resend, emails/sendEmail.ts).
-const BREVO_SENDER_EMAIL = process.env.BREVO_SENDER_EMAIL || 'noreply@mail.greengochat.com';
+const BREVO_SENDER_EMAIL = process.env.BREVO_SENDER_EMAIL || 'noreply@greengo.app';
 const BREVO_SENDER_NAME = process.env.BREVO_SENDER_NAME || 'GreenGo';
 
 // Links in the built-in templates. greengo.app is NOT our domain: everything
