@@ -14,6 +14,7 @@ import {
 } from '../shared/purchase_verification';
 import { flagSandboxGrantIfNeeded } from './purchaseClawback';
 import {
+  assertGiftAmount,
   checkVelocity,
   planGiftDebit,
   stableId,
@@ -430,12 +431,8 @@ export const giftCoins = onCall<GiftCoinsRequest>(
       if (receiverId === senderId) {
         throw new HttpsError('invalid-argument', 'Cannot gift coins to yourself');
       }
-      if (!Number.isInteger(amount) || amount <= 0 || amount > 100000) {
-        throw new HttpsError(
-          'invalid-argument',
-          'amount must be a positive integer up to 100000',
-        );
-      }
+      // Terms 8.5 a: 10..1,000 Coins per gift (daily limits: checkVelocity).
+      assertGiftAmount(amount);
       if (requestId !== undefined && !validRequestId(requestId)) {
         throw new HttpsError('invalid-argument', 'requestId is invalid');
       }

@@ -41,11 +41,15 @@ export const UPLOADER_VISIBLE: ReadonlySet<string> = new Set(['accepted', 'count
 export const CONTENT_TYPES = ['message', 'event', 'experience', 'profilePhoto'] as const;
 export type ContentType = typeof CONTENT_TYPES[number];
 
-/** Designated agent (owner fills the postal address; see the owner guide). */
+/**
+ * Designated agent. Postal address exactly as in Terms section 28 (contact);
+ * keep in sync with lib/features/copyright/data/copyright_service.dart.
+ */
+export const COMPANY_POSTAL_ADDRESS = 'Av. Dona Helena Pereira de Moraes, 290, Sao Paulo - SP, 05707-400, Brazil';
 export const AGENT = {
   name: 'Universo Kardasha Ltda.',
   email: 'copyright@greengochat.com',
-  postalAddress: process.env.COPYRIGHT_AGENT_ADDRESS || '[postal address to be filled by owner]',
+  postalAddress: process.env.COPYRIGHT_AGENT_ADDRESS || COMPANY_POSTAL_ADDRESS,
 };
 
 export const STRIKE_LIMIT = 3;

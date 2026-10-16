@@ -34,6 +34,8 @@ export const REASON = {
   insufficientCoins: 'insufficient-coins',
   giftPurchaseHold: 'gift-purchase-hold',
   giftVelocityLimit: 'gift-velocity-limit',
+  /** Gift amount outside Terms 8.5 a (GIFT_MIN_AMOUNT..GIFT_MAX_AMOUNT). */
+  giftAmountRange: 'gift-amount-range',
   unknownFeature: 'unknown-feature',
   /** The feature is not part of the caller's (effective) membership tier. */
   tierRequired: 'tier-required',
@@ -208,4 +210,18 @@ export function validRequestId(v: unknown): v is string {
 /** Gift amount bounds: mirrors CoinGiftConstraints in the app. */
 export const GIFT_MIN_AMOUNT = 10;
 export const GIFT_MAX_AMOUNT = 1000;
+
+/** Terms 8.5 a: a gift is a whole number of Coins between 10 and 1,000. */
+export function isValidGiftAmount(amount: unknown): amount is number {
+  return Number.isInteger(amount) && (amount as number) >= GIFT_MIN_AMOUNT && (amount as number) <= GIFT_MAX_AMOUNT;
+}
+
+/** Throws the recognisable range refusal unless [amount] is a valid gift. */
+export function assertGiftAmount(amount: unknown): asserts amount is number {
+  if (!isValidGiftAmount(amount)) {
+    throw refusal('invalid-argument', REASON.giftAmountRange,
+      `A gift is between ${GIFT_MIN_AMOUNT} and ${GIFT_MAX_AMOUNT} coins.`,
+      { min: GIFT_MIN_AMOUNT, max: GIFT_MAX_AMOUNT });
+  }
+}
 export const GIFT_EXPIRY_MS = 7 * 24 * 3600 * 1000;

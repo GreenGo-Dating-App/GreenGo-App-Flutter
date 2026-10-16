@@ -42,8 +42,16 @@ async function requireAdminPanelUser(auth: Parameters<typeof verifyAuth>[0]): Pr
 // Brevo API configuration
 const BREVO_API_URL = 'https://api.brevo.com/v3';
 const BREVO_API_KEY = process.env.BREVO_API_KEY || '';
-const BREVO_SENDER_EMAIL = process.env.BREVO_SENDER_EMAIL || 'noreply@greengo.app';
+// Verified sending domain (same sender as Resend, emails/sendEmail.ts).
+const BREVO_SENDER_EMAIL = process.env.BREVO_SENDER_EMAIL || 'noreply@mail.greengochat.com';
 const BREVO_SENDER_NAME = process.env.BREVO_SENDER_NAME || 'GreenGo';
+
+// Links in the built-in templates. greengo.app is NOT our domain: everything
+// points to the web app (which opens Profile, Shop, Manage subscription ...),
+// the legal pages on greengochat.com, or the support mailbox (Terms 28).
+const APP_URL = 'https://greengo-chat.web.app';
+const TERMS_URL = 'https://greengochat.com/terms';
+const SUPPORT_URL = 'mailto:support@greengochat.com';
 
 // ============================================================================
 // TYPES & INTERFACES
@@ -418,7 +426,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
             <li>Start discovering people and local events</li>
           </ul>
         </div>`,
-        'https://greengo.app/profile',
+        APP_URL,
         'Complete Your Profile'
       ),
     },
@@ -431,7 +439,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         <div style="background: ${branding.backgroundColor}; border-radius: 12px; padding: 20px; text-align: center; margin: 20px 0;">
           <span style="font-size: 32px; font-weight: bold; letter-spacing: 8px; color: ${branding.primaryColor};">${variables.verificationCode || '000000'}</span>
         </div>`,
-        variables.verificationUrl || 'https://greengo.app/verify',
+        variables.verificationUrl || APP_URL,
         'Verify Email'
       ),
     },
@@ -440,7 +448,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Email Verified!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your email has been verified successfully. You now have full access to all GreenGo features.</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Start Exploring'
       ),
     },
@@ -451,7 +459,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">We received a request to reset your password. Click the button below to create a new password.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">This link will expire in 1 hour.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6; font-size: 12px;">If you didn't request this, you can safely ignore this email.</p>`,
-        variables.resetUrl || 'https://greengo.app/reset-password',
+        variables.resetUrl || APP_URL,
         'Reset Password'
       ),
     },
@@ -461,7 +469,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Password Changed',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your password has been successfully changed.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6; font-size: 12px;">If you didn't make this change, please contact our support team immediately.</p>`,
-        'https://greengo.app/support',
+        SUPPORT_URL,
         'Contact Support'
       ),
     },
@@ -470,7 +478,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Profile Updated',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your profile has been updated successfully. Your changes are now visible to other users.</p>`,
-        'https://greengo.app/profile',
+        APP_URL,
         'View Profile'
       ),
     },
@@ -479,7 +487,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Photo Approved!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Great news! Your photo has been reviewed and approved. It's now visible on your profile.</p>`,
-        'https://greengo.app/profile',
+        APP_URL,
         'View Your Profile'
       ),
     },
@@ -490,7 +498,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Unfortunately, your photo couldn't be approved because it doesn't meet our community guidelines.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;"><strong>Reason:</strong> ${variables.rejectionReason || 'Does not meet community guidelines'}</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Please upload a new photo that follows our guidelines.</p>`,
-        'https://greengo.app/profile/photos',
+        APP_URL,
         'Upload New Photo'
       ),
     },
@@ -501,7 +509,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your account has been temporarily suspended due to a violation of our community guidelines.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;"><strong>Reason:</strong> ${variables.suspensionReason || 'Community guidelines violation'}</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">If you believe this is a mistake, you can appeal this decision.</p>`,
-        'https://greengo.app/appeal',
+        APP_URL,
         'Submit Appeal'
       ),
     },
@@ -510,7 +518,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Account Reactivated!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Great news! Your account has been reactivated. You can now use GreenGo again.</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Return to GreenGo'
       ),
     },
@@ -520,7 +528,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Account Deleted',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your account has been permanently deleted as requested. We're sorry to see you go.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">If you change your mind, you're always welcome to create a new account.</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Create New Account'
       ),
     },
@@ -535,7 +543,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <p style="color: ${branding.textColor}; margin: 0;"><strong>Time:</strong> ${variables.loginTime || new Date().toISOString()}</p>
         </div>
         <p style="color: ${branding.mutedColor}; line-height: 1.6; font-size: 12px;">If this wasn't you, please secure your account immediately.</p>`,
-        'https://greengo.app/security',
+        APP_URL,
         'Review Security'
       ),
     },
@@ -544,7 +552,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         '2FA Enabled',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Two-factor authentication has been enabled on your account. Your account is now more secure!</p>`,
-        'https://greengo.app/security',
+        APP_URL,
         'Security Settings'
       ),
     },
@@ -554,7 +562,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         '2FA Disabled',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Two-factor authentication has been disabled on your account.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6; font-size: 12px;">If you didn't make this change, please secure your account immediately.</p>`,
-        'https://greengo.app/security',
+        APP_URL,
         'Review Security'
       ),
     },
@@ -563,7 +571,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Phone Verified!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your phone number has been verified successfully. You now have access to additional features.</p>`,
-        'https://greengo.app/profile',
+        APP_URL,
         'View Profile'
       ),
     },
@@ -579,7 +587,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <p style="color: ${branding.textColor}; margin: 0;"><strong>Next billing:</strong> ${variables.nextBillingDate || 'N/A'}</p>
         </div>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Enjoy unlimited discovery, see who wants to connect with you, and much more!</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Start Exploring'
       ),
     },
@@ -592,7 +600,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Amount charged:</strong> ${variables.amount || '$0.00'}</p>
           <p style="color: ${branding.textColor}; margin: 0;"><strong>Next renewal:</strong> ${variables.nextBillingDate || 'N/A'}</p>
         </div>`,
-        'https://greengo.app/subscription',
+        APP_URL,
         'Manage Subscription'
       ),
     },
@@ -607,7 +615,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <li>Unlimited rewinds</li>
           <li>Advanced filters</li>
         </ul>`,
-        'https://greengo.app',
+        APP_URL,
         'Explore New Features'
       ),
     },
@@ -617,7 +625,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Plan Changed',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your subscription has been changed to ${variables.newPlanName || 'Basic'}.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">This change will take effect at your next billing cycle.</p>`,
-        'https://greengo.app/subscription',
+        APP_URL,
         'View Subscription'
       ),
     },
@@ -628,7 +636,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your ${variables.planName || 'Premium'} subscription has been cancelled.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">You'll continue to have access until ${variables.endDate || 'the end of your billing period'}.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">We'd be glad to have you back! You can resubscribe anytime.</p>`,
-        'https://greengo.app/subscription',
+        APP_URL,
         'Resubscribe'
       ),
     },
@@ -638,7 +646,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Subscription Expired',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your ${variables.planName || 'Premium'} subscription has expired.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Renew now to continue enjoying premium features like unlimited discovery and seeing who wants to connect with you!</p>`,
-        'https://greengo.app/subscription',
+        APP_URL,
         'Renew Subscription'
       ),
     },
@@ -649,7 +657,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">We couldn't process your payment for ${variables.planName || 'Premium'}.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Please update your payment method to continue your subscription.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6; font-size: 12px;">Reason: ${variables.failureReason || 'Payment declined'}</p>`,
-        'https://greengo.app/payment-methods',
+        APP_URL,
         'Update Payment Method'
       ),
     },
@@ -659,7 +667,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Payment Retry Scheduled',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">We'll retry your payment on ${variables.retryDate || 'soon'}.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Please ensure your payment method is up to date.</p>`,
-        'https://greengo.app/payment-methods',
+        APP_URL,
         'Check Payment Method'
       ),
     },
@@ -669,7 +677,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Grace Period',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your payment is overdue, but we've started a grace period to give you time to update your payment method.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Grace period ends: ${variables.gracePeriodEnd || 'in 7 days'}</p>`,
-        'https://greengo.app/payment-methods',
+        APP_URL,
         'Update Payment'
       ),
     },
@@ -678,7 +686,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Grace Period Ending',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your grace period is about to end. Please update your payment method to keep your premium features.</p>`,
-        'https://greengo.app/payment-methods',
+        APP_URL,
         'Update Now'
       ),
     },
@@ -688,7 +696,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Trial Started!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Welcome to your ${variables.trialDays || '7'}-day free trial of ${variables.planName || 'Premium'}!</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Explore all premium features without any commitment.</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Start Exploring'
       ),
     },
@@ -697,7 +705,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Trial Ending Soon',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your free trial ends in ${variables.daysRemaining || '3'} days. Subscribe now to keep your premium features!</p>`,
-        'https://greengo.app/subscription',
+        APP_URL,
         'Subscribe Now'
       ),
     },
@@ -706,7 +714,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Trial Ended',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your free trial has ended. Subscribe now to continue enjoying premium features!</p>`,
-        'https://greengo.app/subscription',
+        APP_URL,
         'Get Premium'
       ),
     },
@@ -716,7 +724,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Refund Processed',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your refund of ${variables.amount || '$0.00'} has been processed.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">It may take 5-10 business days to appear in your account.</p>`,
-        'https://greengo.app/support',
+        SUPPORT_URL,
         'Contact Support'
       ),
     },
@@ -725,7 +733,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Price Update',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">We wanted to let you know that the price for ${variables.planName || 'Premium'} will change from ${variables.oldPrice || '$0.00'} to ${variables.newPrice || '$0.00'} starting ${variables.effectiveDate || 'next month'}.</p>`,
-        'https://greengo.app/subscription',
+        APP_URL,
         'View Details'
       ),
     },
@@ -735,7 +743,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'New Features!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">We've added new features to your ${variables.planName || 'Premium'} subscription!</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Check out what's new:</p>`,
-        'https://greengo.app/features',
+        APP_URL,
         'See New Features'
       ),
     },
@@ -745,7 +753,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Auto-Renewal Off',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Auto-renewal has been turned off for your subscription.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Your access will end on ${variables.endDate || 'your next billing date'}.</p>`,
-        'https://greengo.app/subscription',
+        APP_URL,
         'Manage Subscription'
       ),
     },
@@ -755,7 +763,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Photo Approved',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your photo has been reviewed and approved! It's now visible to other users.</p>`,
-        'https://greengo.app/profile',
+        APP_URL,
         'View Profile'
       ),
     },
@@ -765,7 +773,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Photo Not Approved',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Unfortunately, your photo couldn't be approved.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;"><strong>Reason:</strong> ${variables.reason || 'Does not meet guidelines'}</p>`,
-        'https://greengo.app/guidelines',
+        TERMS_URL,
         'View Guidelines'
       ),
     },
@@ -774,7 +782,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Bio Approved',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your bio has been approved and is now visible to other users!</p>`,
-        'https://greengo.app/profile',
+        APP_URL,
         'View Profile'
       ),
     },
@@ -784,7 +792,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Bio Not Approved',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your bio needs some changes before it can be published.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;"><strong>Reason:</strong> ${variables.reason || 'Does not meet guidelines'}</p>`,
-        'https://greengo.app/profile/edit',
+        APP_URL,
         'Edit Bio'
       ),
     },
@@ -793,7 +801,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Message Under Review',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">One of your messages has been flagged for review by our moderation team.</p>`,
-        'https://greengo.app/guidelines',
+        TERMS_URL,
         'View Guidelines'
       ),
     },
@@ -803,7 +811,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Report Received',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Thank you for your report. Our team will review it and take appropriate action.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Report ID: ${variables.reportId || 'N/A'}</p>`,
-        'https://greengo.app/safety',
+        APP_URL,
         'Safety Center'
       ),
     },
@@ -813,7 +821,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Report Resolved',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your report has been reviewed and resolved. Thank you for helping keep our community safe.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;"><strong>Outcome:</strong> ${variables.outcome || 'Action taken'}</p>`,
-        'https://greengo.app/safety',
+        APP_URL,
         'Safety Center'
       ),
     },
@@ -824,7 +832,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">We've issued a warning to your account for the following reason:</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;"><strong>${variables.reason || 'Community guidelines violation'}</strong></p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Please review our guidelines to avoid further action.</p>`,
-        'https://greengo.app/guidelines',
+        TERMS_URL,
         'Review Guidelines'
       ),
     },
@@ -835,7 +843,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your account has been temporarily restricted due to a community guidelines violation.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;"><strong>Duration:</strong> ${variables.duration || '24 hours'}</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;"><strong>Reason:</strong> ${variables.reason || 'Violation'}</p>`,
-        'https://greengo.app/appeal',
+        APP_URL,
         'Submit Appeal'
       ),
     },
@@ -844,7 +852,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Restriction Lifted',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your temporary restriction has ended. You can now use GreenGo again.</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Return to GreenGo'
       ),
     },
@@ -854,7 +862,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Account Suspended',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your account has been permanently suspended due to repeated or severe violations of our community guidelines.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;"><strong>Reason:</strong> ${variables.reason || 'Severe violation'}</p>`,
-        'https://greengo.app/appeal',
+        APP_URL,
         'Submit Appeal'
       ),
     },
@@ -864,7 +872,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Appeal Received',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">We've received your appeal and will review it within 48 hours.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Appeal ID: ${variables.appealId || 'N/A'}</p>`,
-        'https://greengo.app/support',
+        SUPPORT_URL,
         'Contact Support'
       ),
     },
@@ -873,7 +881,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Appeal Approved',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Good news! Your appeal has been approved. Your account restrictions have been lifted.</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Return to GreenGo'
       ),
     },
@@ -883,7 +891,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Appeal Rejected',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">After careful review, we were unable to approve your appeal.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;"><strong>Reason:</strong> ${variables.reason || 'Original decision upheld'}</p>`,
-        'https://greengo.app/support',
+        SUPPORT_URL,
         'Contact Support'
       ),
     },
@@ -893,7 +901,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Content Removed',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Some content has been removed from your profile as it violated our guidelines.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;"><strong>Content type:</strong> ${variables.contentType || 'Photo/Bio'}</p>`,
-        'https://greengo.app/guidelines',
+        TERMS_URL,
         'View Guidelines'
       ),
     },
@@ -902,7 +910,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Visibility Update',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your account visibility has been limited. Please review our community guidelines.</p>`,
-        'https://greengo.app/guidelines',
+        TERMS_URL,
         'Review Guidelines'
       ),
     },
@@ -911,7 +919,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Verification Complete!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Congratulations! Your profile is now verified. A blue checkmark will appear on your profile.</p>`,
-        'https://greengo.app/profile',
+        APP_URL,
         'View Profile'
       ),
     },
@@ -926,7 +934,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           ${variables.newEndDate ? `<p style=\"color: ${branding.textColor}; margin: 0;\"><strong>Active until:</strong> ${variables.newEndDate}</p>` : ''}
         </div>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Open the app to enjoy your new perks.</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Open GreenGo'
       ),
     },
@@ -940,7 +948,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Amount paid:</strong> ${variables.amount || '$0.00'}</p>
           <p style="color: ${branding.textColor}; margin: 0;"><strong>New balance:</strong> ${variables.newBalance || '0'} coins</p>
         </div>`,
-        'https://greengo.app/shop',
+        APP_URL,
         'Visit Shop'
       ),
     },
@@ -949,7 +957,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Gift Sent!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your gift of ${variables.coinsAmount || '0'} coins has been sent to ${variables.recipientName || 'your connection'}!</p>`,
-        'https://greengo.app/messages',
+        APP_URL,
         'Send a Message'
       ),
     },
@@ -959,7 +967,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'You Got a Gift!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">${variables.senderName || 'Someone'} sent you ${variables.coinsAmount || '0'} coins!</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Your new balance: ${variables.newBalance || '0'} coins</p>`,
-        'https://greengo.app/shop',
+        APP_URL,
         'Use Your Coins'
       ),
     },
@@ -972,7 +980,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Item:</strong> ${variables.itemName || 'Item'}</p>
           <p style="color: ${branding.textColor}; margin: 0;"><strong>Cost:</strong> ${variables.cost || '0'} coins</p>
         </div>`,
-        'https://greengo.app/inventory',
+        APP_URL,
         'View Inventory'
       ),
     },
@@ -981,7 +989,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Gift Sent!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your gift of ${variables.giftName || 'a special item'} has been sent to ${variables.recipientName || 'your connection'}!</p>`,
-        'https://greengo.app/messages',
+        APP_URL,
         'Send a Message'
       ),
     },
@@ -990,7 +998,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'New Gift!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">${variables.senderName || 'Someone'} sent you ${variables.giftName || 'a gift'}!</p>`,
-        'https://greengo.app/messages',
+        APP_URL,
         'Thank Them'
       ),
     },
@@ -1000,7 +1008,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Boost Ready!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your profile boost is ready to use! Activate it when you're ready to get more visibility.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Duration: ${variables.duration || '30 minutes'}</p>`,
-        'https://greengo.app/boost',
+        APP_URL,
         'Activate Boost'
       ),
     },
@@ -1009,7 +1017,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Boost Active!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your profile boost is now active! You'll get up to 10x more visibility for the next ${variables.duration || '30 minutes'}.</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Start Exploring'
       ),
     },
@@ -1022,7 +1030,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Profile views:</strong> ${variables.views || '0'}</p>
           <p style="color: ${branding.textColor}; margin: 0;"><strong>New likes:</strong> ${variables.likes || '0'}</p>
         </div>`,
-        'https://greengo.app/boost',
+        APP_URL,
         'Get Another Boost'
       ),
     },
@@ -1031,7 +1039,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Priority Connects Ready!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">${variables.amount || '5'} Priority Connects have been added to your account!</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Send a Priority Connect'
       ),
     },
@@ -1040,7 +1048,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Spotlight Ready!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your Spotlight is ready! Get featured on the Discover page and make more connections.</p>`,
-        'https://greengo.app/spotlight',
+        APP_URL,
         'Activate Spotlight'
       ),
     },
@@ -1049,7 +1057,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Spotlight Active!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You're now featured on the Discover page! Expect more profile views and connections.</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Check Your Profile'
       ),
     },
@@ -1062,7 +1070,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Profile views:</strong> ${variables.views || '0'}</p>
           <p style="color: ${branding.textColor}; margin: 0;"><strong>New connections:</strong> ${variables.matches || '0'}</p>
         </div>`,
-        'https://greengo.app/spotlight',
+        APP_URL,
         'Get Another Spotlight'
       ),
     },
@@ -1071,7 +1079,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Bundle Activated!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your ${variables.bundleName || 'bundle'} has been activated!</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Use Your Items'
       ),
     },
@@ -1080,7 +1088,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Refund Complete',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your refund of ${variables.amount || '$0.00'} has been processed.</p>`,
-        'https://greengo.app/support',
+        SUPPORT_URL,
         'Contact Support'
       ),
     },
@@ -1094,7 +1102,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Amount:</strong> ${variables.amount || '$0.00'}</p>
           <p style="color: ${branding.textColor}; margin: 0;"><strong>Date:</strong> ${variables.date || new Date().toLocaleDateString()}</p>
         </div>`,
-        variables.invoiceUrl || 'https://greengo.app/invoices',
+        variables.invoiceUrl || APP_URL,
         'Download Invoice'
       ),
     },
@@ -1108,7 +1116,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Description:</strong> ${variables.description || 'Purchase'}</p>
           <p style="color: ${branding.textColor}; margin: 0;"><strong>Transaction ID:</strong> ${variables.transactionId || 'N/A'}</p>
         </div>`,
-        'https://greengo.app/billing',
+        APP_URL,
         'View Billing History'
       ),
     },
@@ -1118,7 +1126,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Payment Failed',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">We couldn't process your payment. Please try again or use a different payment method.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6; font-size: 12px;">Reason: ${variables.reason || 'Payment declined'}</p>`,
-        'https://greengo.app/payment-methods',
+        APP_URL,
         'Update Payment'
       ),
     },
@@ -1134,7 +1142,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <p style="color: ${branding.mutedColor}; margin: 0;">${variables.achievementDescription || ''}</p>
         </div>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Reward: +${variables.xpReward || '0'} XP</p>`,
-        'https://greengo.app/achievements',
+        APP_URL,
         'View Achievements'
       ),
     },
@@ -1147,7 +1155,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <p style="font-size: 48px; margin: 0;">${variables.badgeIcon || '🎖️'}</p>
           <h3 style="color: ${branding.primaryColor}; margin: 10px 0;">${variables.badgeName || 'Badge'}</h3>
         </div>`,
-        'https://greengo.app/badges',
+        APP_URL,
         'View Badges'
       ),
     },
@@ -1157,7 +1165,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Level Up!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Congratulations! You've reached Level ${variables.newLevel || '?'}!</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">New perks unlocked!</p>`,
-        'https://greengo.app/profile',
+        APP_URL,
         'View Profile'
       ),
     },
@@ -1167,7 +1175,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Streak Milestone!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Amazing! You've maintained a ${variables.streakDays || '0'}-day login streak!</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Bonus: +${variables.bonusCoins || '0'} coins!</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Keep it Going'
       ),
     },
@@ -1176,7 +1184,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Streak at Risk!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your ${variables.streakDays || '0'}-day streak is at risk! Log in before midnight to keep it going.</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Save Your Streak'
       ),
     },
@@ -1185,7 +1193,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Streak Ended',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your ${variables.previousStreak || '0'}-day streak has ended. Start a new one today!</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Start New Streak'
       ),
     },
@@ -1194,7 +1202,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Rank Up!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You've climbed to #${variables.newRank || '?'} on the leaderboard!</p>`,
-        'https://greengo.app/leaderboard',
+        APP_URL,
         'View Leaderboard'
       ),
     },
@@ -1203,7 +1211,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Top 10!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Incredible! You've made it to the Top 10 on the leaderboard!</p>`,
-        'https://greengo.app/leaderboard',
+        APP_URL,
         'View Leaderboard'
       ),
     },
@@ -1213,7 +1221,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'New Challenge!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">A new weekly challenge has started: ${variables.challengeName || 'Challenge'}!</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Reward: ${variables.reward || 'Special prize'}</p>`,
-        'https://greengo.app/challenges',
+        APP_URL,
         'Start Challenge'
       ),
     },
@@ -1223,7 +1231,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Challenge Complete!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You've completed the ${variables.challengeName || 'weekly'} challenge!</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Reward: ${variables.reward || 'Claimed!'}</p>`,
-        'https://greengo.app/challenges',
+        APP_URL,
         'View Challenges'
       ),
     },
@@ -1232,7 +1240,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Milestone!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You've reached a new milestone: ${variables.milestoneName || 'Milestone'}!</p>`,
-        'https://greengo.app/milestones',
+        APP_URL,
         'View Milestones'
       ),
     },
@@ -1241,7 +1249,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'New Reward!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You've unlocked a new reward: ${variables.rewardName || 'Reward'}!</p>`,
-        'https://greengo.app/rewards',
+        APP_URL,
         'Claim Reward'
       ),
     },
@@ -1251,7 +1259,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'XP Bonus!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You earned a bonus of ${variables.xpAmount || '0'} XP!</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Reason: ${variables.reason || 'Bonus activity'}</p>`,
-        'https://greengo.app/profile',
+        APP_URL,
         'View Progress'
       ),
     },
@@ -1260,7 +1268,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Seasonal Event!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">The ${variables.eventName || 'seasonal event'} has started! Participate for exclusive rewards.</p>`,
-        'https://greengo.app/events',
+        APP_URL,
         'Join Event'
       ),
     },
@@ -1269,7 +1277,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Seasonal Reward!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You've earned a seasonal reward: ${variables.rewardName || 'Exclusive item'}!</p>`,
-        'https://greengo.app/inventory',
+        APP_URL,
         'View Inventory'
       ),
     },
@@ -1280,7 +1288,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'New Connection!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You and ${variables.matchName || 'someone new'} are now connected!</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Don't keep them waiting - say hello!</p>`,
-        'https://greengo.app/matches',
+        APP_URL,
         'Send a Message'
       ),
     },
@@ -1289,7 +1297,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Priority Connect!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">${variables.fromName || 'Someone'} sent you a Priority Connect! This means they really want to connect with you.</p>`,
-        'https://greengo.app/likes',
+        APP_URL,
         'See Who'
       ),
     },
@@ -1298,7 +1306,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'New Message',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You have a new message from ${variables.fromName || 'your connection'}!</p>`,
-        'https://greengo.app/messages',
+        APP_URL,
         'Read Message'
       ),
     },
@@ -1307,7 +1315,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Profile View',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">${variables.viewerName || 'Someone'} checked out your profile!</p>`,
-        'https://greengo.app/views',
+        APP_URL,
         'See Who'
       ),
     },
@@ -1316,7 +1324,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Mutual Interest!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You and ${variables.userName || 'someone'} have mutual interests! You could be great exchange partners.</p>`,
-        'https://greengo.app/discover',
+        APP_URL,
         'View Profile'
       ),
     },
@@ -1325,7 +1333,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Connection Expiring',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your connection with ${variables.matchName || 'someone new'} expires in ${variables.hoursLeft || '24'} hours. Send a message before it's too late!</p>`,
-        'https://greengo.app/matches',
+        APP_URL,
         'Send Message Now'
       ),
     },
@@ -1334,7 +1342,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Connection Expired',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your connection with ${variables.matchName || 'someone'} has expired. Keep exploring to make more connections!</p>`,
-        'https://greengo.app/discover',
+        APP_URL,
         'Keep Discovering'
       ),
     },
@@ -1343,7 +1351,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Icebreaker!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">${variables.fromName || 'Someone'} sent you an icebreaker: "${variables.icebreaker || 'Hey there!'}"</p>`,
-        'https://greengo.app/messages',
+        APP_URL,
         'Respond'
       ),
     },
@@ -1352,7 +1360,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Missed Call',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You missed a video call from ${variables.callerName || 'your connection'}.</p>`,
-        'https://greengo.app/messages',
+        APP_URL,
         'Call Back'
       ),
     },
@@ -1361,7 +1369,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Video Call Scheduled',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your video call with ${variables.matchName || 'your connection'} is scheduled for ${variables.dateTime || 'soon'}!</p>`,
-        'https://greengo.app/dates',
+        APP_URL,
         'View Details'
       ),
     },
@@ -1370,7 +1378,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'High Compatibility!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">We found someone with ${variables.score || '90'}% compatibility with you!</p>`,
-        'https://greengo.app/discover',
+        APP_URL,
         'Check Them Out'
       ),
     },
@@ -1379,7 +1387,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Meetup Idea',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Based on your interests, we suggest: ${variables.suggestion || 'a coffee meetup'}!</p>`,
-        'https://greengo.app/dates',
+        APP_URL,
         'View Suggestions'
       ),
     },
@@ -1394,7 +1402,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <li>Write a bio that shows your personality</li>
           <li>Be specific about your interests</li>
         </ul>`,
-        'https://greengo.app/profile/edit',
+        APP_URL,
         'Improve Profile'
       ),
     },
@@ -1408,7 +1416,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <li>Ask open-ended questions</li>
           <li>Be genuine and authentic</li>
         </ul>`,
-        'https://greengo.app/matches',
+        APP_URL,
         'View Connections'
       ),
     },
@@ -1422,7 +1430,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Likes received:</strong> ${variables.likes || '0'}</p>
           <p style="color: ${branding.textColor}; margin: 0;"><strong>Connections:</strong> ${variables.matches || '0'}</p>
         </div>`,
-        'https://greengo.app',
+        APP_URL,
         'Keep Going'
       ),
     },
@@ -1437,7 +1445,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Profile views:</strong> ${variables.views || '0'}</p>
           <p style="color: ${branding.textColor}; margin: 0;"><strong>Likes received:</strong> ${variables.likes || '0'}</p>
         </div>`,
-        'https://greengo.app',
+        APP_URL,
         'View Details'
       ),
     },
@@ -1451,7 +1459,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Conversations:</strong> ${variables.conversations || '0'}</p>
           <p style="color: ${branding.textColor}; margin: 0;"><strong>Time on app:</strong> ${variables.timeOnApp || '0 hours'}</p>
         </div>`,
-        'https://greengo.app',
+        APP_URL,
         'Keep Going'
       ),
     },
@@ -1460,7 +1468,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Complete Your Profile',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your profile is ${variables.completeness || '50'}% complete. Add more details to increase your chances of matching!</p>`,
-        'https://greengo.app/profile/edit',
+        APP_URL,
         'Complete Profile'
       ),
     },
@@ -1469,7 +1477,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'We Miss You',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">It's been a week since your last visit. ${variables.newLikes || 'Several people'} have liked your profile!</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Come Back'
       ),
     },
@@ -1478,7 +1486,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'People Are Waiting',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">${variables.likesCount || 'Several people'} have liked your profile while you were away!</p>`,
-        'https://greengo.app/likes',
+        APP_URL,
         'See Who Likes You'
       ),
     },
@@ -1487,7 +1495,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Welcome Back Offer',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">We want you back! Here's a special offer: ${variables.offer || '50% off Premium for your first month'}!</p>`,
-        'https://greengo.app/subscription',
+        APP_URL,
         'Claim Offer'
       ),
     },
@@ -1497,7 +1505,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'New Feature!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">We just launched ${variables.featureName || 'an exciting new feature'}!</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">${variables.featureDescription || 'Check it out!'}</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Try It Now'
       ),
     },
@@ -1506,7 +1514,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Special Offer',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">${variables.offerDescription || 'We have a special offer just for you!'}</p>`,
-        variables.offerUrl || 'https://greengo.app/offers',
+        variables.offerUrl || APP_URL,
         'Claim Offer'
       ),
     },
@@ -1515,7 +1523,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'We Value Your Feedback',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">We'd like to hear about your GreenGo experience. Your feedback helps us improve!</p>`,
-        'https://greengo.app/feedback',
+        APP_URL,
         'Share Feedback'
       ),
     },
@@ -1525,7 +1533,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Happy Birthday!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">The GreenGo team wishes you a wonderful birthday!</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Here's a special gift: ${variables.gift || '5 free Priority Connects'}!</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Claim Gift'
       ),
     },
@@ -1534,7 +1542,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Anniversary!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Congratulations! You've been on GreenGo for ${variables.years || '1'} year${variables.years > 1 ? 's' : ''}!</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Celebrate'
       ),
     },
@@ -1546,7 +1554,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         <ul style="color: ${branding.mutedColor}; line-height: 1.8;">
           ${(variables.tips || ['Be active daily', 'Update your photos']).map((tip: string) => `<li>${tip}</li>`).join('')}
         </ul>`,
-        'https://greengo.app',
+        APP_URL,
         'Apply Tips'
       ),
     },
@@ -1556,7 +1564,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Come Back!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">It's been a while since we've seen you. ${variables.newLikes || 'People'} have liked your profile!</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Don't miss out on potential connections.</p>`,
-        'https://greengo.app',
+        APP_URL,
         'Return to GreenGo'
       ),
     },

@@ -318,7 +318,7 @@ export async function buildReportPackage(p: {
     authority: { code: p.authority, ...AUTHORITY_INFO[p.authority] },
     reportingProvider: {
       name: 'GreenGo (greengochat.com)',
-      contactEmail: 'info@greengochat.com',
+      contactEmail: 'legal@greengochat.com',
       note: 'Fill the ESP id / CNPJ and the legal contact from the runbook before submitting.',
     },
     incident: {

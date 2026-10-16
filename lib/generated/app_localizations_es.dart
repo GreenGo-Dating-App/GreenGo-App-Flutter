@@ -3387,7 +3387,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get deleteAccountConfirmation =>
-      '¿Estás seguro de que quieres eliminar tu cuenta? Esta acción no se puede deshacer y todos tus datos serán eliminados permanentemente.';
+      '¿Eliminar tu cuenta? No se puede deshacer.\n\n• Se eliminan tu cuenta y tu perfil. Algunos registros se conservan cuando la ley lo exige (pagos y facturas, denuncias de seguridad); consulta la Política de privacidad.\n• Las monedas que te queden se pierden.\n• Una membresía comprada en la web se cancela.\n• Una membresía comprada en Google Play o en la App Store NO se cancela al eliminar la cuenta: cancélala en la tienda o la tienda te seguirá cobrando.';
 
   @override
   String get details => 'Detalles';
@@ -6377,10 +6377,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Membresía $tierName activa hasta $formattedDate$coinsText';
   }
 
@@ -7966,7 +7963,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get profileDeleteAccountWarning =>
-      'Esta acción es permanente y no se puede deshacer. Se eliminarán todos tus datos, conexiones y mensajes. Introduce tu contraseña para confirmar.';
+      'Es definitivo. Se eliminan tu cuenta y tu perfil (algunos registros se conservan según exige la ley; consulta la Política de privacidad), se pierden las monedas restantes y se cancela la membresía web. Cancela cualquier suscripción de Google Play o App Store en la tienda. Introduce tu contraseña para confirmar.';
 
   @override
   String get profileDiscoveryRestarted =>
@@ -16193,7 +16190,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get checkoutMembershipWithdrawalInfo =>
-      'Derecho de desistimiento: puedes desistir de esta membresía dentro de los 14 días posteriores a la compra (7 días en compras realizadas en Brasil) sin indicar el motivo y recibir el reembolso completo, mediante «Desistir del contrato» en la Tienda o en nuestro sitio web. La membresía se renueva automáticamente hasta que la canceles; puedes cancelarla en cualquier momento en el portal de facturación.';
+      'Derecho de desistimiento: en la UE, el EEE y el Reino Unido, 14 días desde la compra; como la membresía empieza al pagar, reembolsamos el precio menos los días ya usados. En Brasil, 7 días con reembolso completo. Usa «Desistir del contrato» (Perfil > Ajustes de la cuenta > Compras y desistimiento) o escribe a billing@greengochat.com. Se renueva automáticamente hasta que la canceles en el portal de facturación.';
 
   @override
   String get checkoutContinueToPayment => 'Continuar al pago';
@@ -16232,11 +16229,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get withdrawalDialogIntro =>
-      'Elige la compra de la que quieres desistir. Enviaremos un enlace de confirmación al correo usado en la compra; no se cancela ni reembolsa nada hasta que confirmes.';
+      'Elige la compra de la que quieres desistir. Enviaremos un enlace de confirmación al correo usado en la compra; no se cancela ni se reembolsa nada hasta que confirmes. Una membresía que ya ha comenzado se reembolsa descontando los días utilizados (reembolso completo en Brasil).';
 
   @override
   String get withdrawalNothingEligible =>
-      'Ninguna de tus compras web admite desistimiento ahora. Las membresías pueden desistirse dentro de los 14 días posteriores a la compra (7 días en Brasil); las compras de monedas solo si no se renunció al derecho al pagar.';
+      'Ninguna de tus compras web admite desistimiento ahora. En la UE, el EEE y el Reino Unido, las membresías admiten desistimiento en los 14 días siguientes a la compra, y las monedas solo si no se renunció al derecho al pagar. En Brasil, cualquier compra web admite desistimiento en un plazo de 7 días.';
 
   @override
   String withdrawalDeadline(String date) {
@@ -16249,25 +16246,17 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get withdrawalRequestFailed =>
-      'No se pudo enviar la solicitud de desistimiento. Inténtalo de nuevo o escribe a support@greengochat.com.';
+      'No se pudo enviar la solicitud de desistimiento. Inténtalo de nuevo o escribe a billing@greengochat.com.';
 
   @override
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Se renueva automáticamente el $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Cancelada; el acceso termina el $date.';
   }
 
@@ -19842,9 +19831,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-    String name,
-    String rewards,
-  ) {
+      String name, String rewards) {
     return '¡Recompensas de $name reclamadas! $rewards';
   }
 
@@ -20311,10 +20298,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String profileTravelerActiveSubtitle(
-    String location,
-    int hours,
-    int minutes,
-  ) {
+      String location, int hours, int minutes) {
     return '$location - quedan $hours h $minutes min';
   }
 
@@ -22261,11 +22245,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String supportReportFollowUpDetails(
-    String reason,
-    String message,
-    String user,
-    String date,
-  ) {
+      String reason, String message, String user, String date) {
     return 'Motivo: $reason\nMensaje denunciado: «$message»\nUsuario denunciado: $user\nDenunciado el: $date';
   }
 
@@ -22603,41 +22583,50 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(achievement, {
-      'first_match': 'Primera conexión',
-      'social_butterfly': 'Mariposa social',
-      'popular': 'Popular',
-      'video_enthusiast': 'Entusiasta del vídeo',
-      'daily_streak_7': 'Racha de 7 días',
-      'daily_streak_30': 'Racha de 30 días',
-      'other': 'Nuevo logro',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      achievement,
+      {
+        'first_match': 'Primera conexión',
+        'social_butterfly': 'Mariposa social',
+        'popular': 'Popular',
+        'video_enthusiast': 'Entusiasta del vídeo',
+        'daily_streak_7': 'Racha de 7 días',
+        'daily_streak_30': 'Racha de 30 días',
+        'other': 'Nuevo logro',
+      },
+    );
     return 'Logro desbloqueado: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(achievement, {
-      'first_match': 'Haz tu primera conexión',
-      'social_butterfly': 'Envía 100 mensajes',
-      'popular': 'Haz 50 conexiones',
-      'video_enthusiast': 'Completa 10 videollamadas',
-      'daily_streak_7': 'Inicia sesión 7 días seguidos',
-      'daily_streak_30': 'Inicia sesión 30 días seguidos',
-      'other': '¡Sigue así!',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      achievement,
+      {
+        'first_match': 'Haz tu primera conexión',
+        'social_butterfly': 'Envía 100 mensajes',
+        'popular': 'Haz 50 conexiones',
+        'video_enthusiast': 'Completa 10 videollamadas',
+        'daily_streak_7': 'Inicia sesión 7 días seguidos',
+        'daily_streak_30': 'Inicia sesión 30 días seguidos',
+        'other': '¡Sigue así!',
+      },
+    );
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(challenge, {
-      'send_5_messages': 'Iniciador de conversaciones',
-      'get_3_matches': 'Conector',
-      'complete_profile': 'Perfil perfecto',
-      'video_call_1': 'Cara a cara',
-      'other': 'Reto diario',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      challenge,
+      {
+        'send_5_messages': 'Iniciador de conversaciones',
+        'get_3_matches': 'Conector',
+        'complete_profile': 'Perfil perfecto',
+        'video_call_1': 'Cara a cara',
+        'other': 'Reto diario',
+      },
+    );
     return 'Reto completado: $_temp0!';
   }
 
@@ -23663,11 +23652,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get nciiFormError =>
-      'No se pudo enviar la solicitud. Inténtalo de nuevo o escribe a info@greengochat.com.';
+      'No se pudo enviar la solicitud. Inténtalo de nuevo o escribe a safety@greengochat.com.';
 
   @override
   String get nciiFormRateLimited =>
-      'Demasiadas solicitudes hoy. Escribe a info@greengochat.com si es urgente.';
+      'Demasiadas solicitudes hoy. Escribe a safety@greengochat.com si es urgente.';
 
   @override
   String get safetyReportReasonCsae => 'Abuso o explotación sexual infantil';
@@ -25662,4 +25651,63 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get manageSubscriptionAppStorePath =>
       'Ajustes del ID de Apple > Suscripciones';
+
+  @override
+  String coinsGiftAmountRange(int min, int max) {
+    return 'Un regalo debe ser de entre $min y $max monedas.';
+  }
+
+  @override
+  String get purchasesWithdrawalTitle => 'Compras y desistimiento';
+
+  @override
+  String get purchasesWithdrawalSubtitle =>
+      'Tus compras web y el derecho de desistimiento';
+
+  @override
+  String get purchasesWithdrawalWebIntro =>
+      'Compras que hiciste en la web (greengochat.com y la app web), pagadas a través de Stripe.';
+
+  @override
+  String get purchasesWithdrawalMemberships => 'Membresías';
+
+  @override
+  String get purchasesWithdrawalOrders => 'Compras';
+
+  @override
+  String get purchasesWithdrawalEmpty => 'No hay compras web en esta cuenta.';
+
+  @override
+  String get purchasesWithdrawalLoadFailed =>
+      'No se pudieron cargar tus compras. Inténtalo de nuevo.';
+
+  @override
+  String get purchasesWithdrawalWithdrawSubtitle =>
+      'Elige una compra que siga dentro del plazo de desistimiento';
+
+  @override
+  String get purchasesWithdrawalPortal => 'Portal de facturación';
+
+  @override
+  String get purchasesWithdrawalPortalSubtitle =>
+      'Facturas, métodos de pago y cancelación (Stripe)';
+
+  @override
+  String get purchasesWithdrawalRules =>
+      'Tu derecho de desistimiento: en la UE, el EEE y el Reino Unido puedes desistir en los 14 días siguientes a la compra. Una membresía que ya ha comenzado se reembolsa descontando un importe proporcional a los días utilizados; las monedas, solo si no renunciaste al derecho al pagar. En Brasil puedes desistir de una compra en un plazo de 7 días y recibir el reembolso completo. También puedes escribir a billing@greengochat.com. Te reembolsamos con el mismo método de pago en un plazo de 14 días (15 días en Brasil).';
+
+  @override
+  String get purchasesWithdrawalStoreHelp =>
+      'Las compras hechas en la app de Android o iPhone las vendió Google Play o Apple. Pídeles el reembolso o el desistimiento:';
+
+  @override
+  String get purchasesWithdrawalGooglePlayPath =>
+      'Historial de pedidos > Solicitar un reembolso';
+
+  @override
+  String get purchasesWithdrawalApplePath => 'reportaproblem.apple.com';
+
+  @override
+  String get purchasesWithdrawalEmailWeb =>
+      'Si la tienda no lo resuelve, o para compras pagadas directamente a nosotros, escríbenos.';
 }

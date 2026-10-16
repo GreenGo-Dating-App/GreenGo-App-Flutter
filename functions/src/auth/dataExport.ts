@@ -336,12 +336,12 @@ function readme(uid: string, generatedAt: string): string {
     'or liked you). Other people\'s ids are shown as "other_user".',
     'Payment records we must keep by law are included as they are stored today.',
     '',
-    'Questions: info@greengochat.com',
+    'Questions: privacy@greengochat.com',
     '',
     'Este arquivo contem os dados pessoais que o GreenGo mantem sobre voce (LGPD art. 18;',
     'GDPR art. 15 e 20). Por respeito a outras pessoas, nao inclui mensagens enviadas por',
     'outros usuarios nem registros do que outras pessoas fizeram em relacao a voce.',
-    'Duvidas: info@greengochat.com',
+    'Duvidas: privacy@greengochat.com',
     '',
   ].join('\n');
 }
@@ -605,7 +605,7 @@ function exportEmailHtml(link: string, expiresAt: Date): string {
 <p>You asked for a copy of your GreenGo data. Download it with the link below. The link works until ${until} and the file is deleted after 7 days.</p>
 <p style="text-align:center;margin:28px 0"><a href="${link}" style="background:#D4AF37;color:#0A0A0A;font-weight:bold;padding:14px 32px;border-radius:12px;text-decoration:none">Download my data</a></p>
 <p style="color:#bbb;font-size:13px">Seus dados do GreenGo est&atilde;o prontos. Baixe pelo link acima (v&aacute;lido por 24 horas; o arquivo &eacute; apagado ap&oacute;s 7 dias).</p>
-<p style="color:#999;font-size:13px">If you did not ask for this, change your password and contact info@greengochat.com.</p>
+<p style="color:#999;font-size:13px">If you did not ask for this, change your password and contact privacy@greengochat.com.</p>
 </div></body></html>`;
 }
 

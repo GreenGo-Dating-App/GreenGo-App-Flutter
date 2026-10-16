@@ -67,7 +67,7 @@ import 'app_localizations_pt.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -90,11 +90,11 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-        delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ];
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -104,7 +104,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('it'),
     Locale('pt'),
-    Locale('pt', 'BR'),
+    Locale('pt', 'BR')
   ];
 
   /// No description provided for @culturalPassportTitle.
@@ -6053,10 +6053,10 @@ abstract class AppLocalizations {
   /// **'Delete Account'**
   String get deleteAccount;
 
-  /// No description provided for @deleteAccountConfirmation.
+  /// Delete account dialog (Terms 7.3, 8.7; privacy policy retention). Keep the bullets.
   ///
   /// In en, this message translates to:
-  /// **'Are you sure you want to delete your account? This action cannot be undone and all your data will be permanently deleted.'**
+  /// **'Delete your account? This cannot be undone.\n\n• Your account and profile are deleted. Some records are kept where the law requires it (payments and invoices, safety reports); see the Privacy Policy.\n• Any Coins left in your account are lost.\n• A membership bought on the web is cancelled.\n• A membership bought in Google Play or the App Store is NOT cancelled by deleting your account: cancel it in the store, or the store keeps charging you.'**
   String get deleteAccountConfirmation;
 
   /// No description provided for @details.
@@ -11380,10 +11380,7 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{tierName} membership active until {formattedDate}{coinsText}'**
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  );
+      String tierName, String formattedDate, String coinsText);
 
   /// No description provided for @membershipActivatedTitle.
   ///
@@ -14142,7 +14139,7 @@ abstract class AppLocalizations {
   /// No description provided for @profileDeleteAccountWarning.
   ///
   /// In en, this message translates to:
-  /// **'This action is permanent and cannot be undone. All your data, connections, and messages will be deleted. Please enter your password to confirm.'**
+  /// **'This is permanent. Your account and profile are deleted (some records are kept as the law requires; see the Privacy Policy), remaining Coins are lost and a web membership is cancelled. Cancel any Google Play or App Store subscription in the store. Enter your password to confirm.'**
   String get profileDeleteAccountWarning;
 
   /// No description provided for @profileDiscoveryRestarted.
@@ -28206,7 +28203,7 @@ abstract class AppLocalizations {
   /// No description provided for @checkoutMembershipWithdrawalInfo.
   ///
   /// In en, this message translates to:
-  /// **'Right of withdrawal: you can withdraw from this membership within 14 days of purchase (7 days for purchases in Brazil) without giving a reason and receive a full refund, using \"Withdraw from contract\" in the Shop or on our website. The membership renews automatically until you cancel; you can cancel anytime in the billing portal.'**
+  /// **'Right of withdrawal: in the EU, EEA and UK, 14 days from purchase; as the membership starts when you pay, we refund the price minus the days already used. In Brazil, 7 days with a full refund. Use \"Withdraw from contract\" (Profile > Account Settings > Purchases & withdrawal) or email billing@greengochat.com. Renews automatically until you cancel in the billing portal.'**
   String get checkoutMembershipWithdrawalInfo;
 
   /// No description provided for @checkoutContinueToPayment.
@@ -28272,13 +28269,13 @@ abstract class AppLocalizations {
   /// No description provided for @withdrawalDialogIntro.
   ///
   /// In en, this message translates to:
-  /// **'Choose the purchase to withdraw from. We will email a confirmation link to the address used for the purchase; nothing is cancelled or refunded until you confirm.'**
+  /// **'Choose the purchase to withdraw from. We will email a confirmation link to the address used for the purchase; nothing is cancelled or refunded until you confirm. A membership that has already started is refunded minus the days used (full refund in Brazil).'**
   String get withdrawalDialogIntro;
 
   /// No description provided for @withdrawalNothingEligible.
   ///
   /// In en, this message translates to:
-  /// **'None of your web purchases can be withdrawn from right now. Memberships can be withdrawn within 14 days of purchase (7 days in Brazil); coin purchases only if the right was not waived at checkout.'**
+  /// **'None of your web purchases can be withdrawn from right now. In the EU, EEA and UK, memberships can be withdrawn within 14 days of purchase, and coins only if the right was not waived at checkout. In Brazil, any web purchase can be withdrawn within 7 days.'**
   String get withdrawalNothingEligible;
 
   /// Deadline to withdraw from a web purchase
@@ -28296,7 +28293,7 @@ abstract class AppLocalizations {
   /// No description provided for @withdrawalRequestFailed.
   ///
   /// In en, this message translates to:
-  /// **'The withdrawal request could not be sent. Please try again or email support@greengochat.com.'**
+  /// **'The withdrawal request could not be sent. Please try again or email billing@greengochat.com.'**
   String get withdrawalRequestFailed;
 
   /// Web (Stripe) auto-renew disclosure for an active subscription
@@ -28304,22 +28301,14 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Renews automatically on {date}.'**
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  );
+      String plan, String price, String interval, String date);
 
   /// Web (Stripe) subscription cancelled at period end
   ///
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Cancelled; access ends on {date}.'**
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  );
+      String plan, String price, String interval, String date);
 
   /// No description provided for @billingIntervalMonth.
   ///
@@ -38322,11 +38311,7 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reason: {reason}\nReported message: \"{message}\"\nReported user: {user}\nReported at: {date}'**
   String supportReportFollowUpDetails(
-    String reason,
-    String message,
-    String user,
-    String date,
-  );
+      String reason, String message, String user, String date);
 
   /// No description provided for @supportChatWithGreenGoSubject.
   ///
@@ -40383,13 +40368,13 @@ abstract class AppLocalizations {
   /// No description provided for @nciiFormError.
   ///
   /// In en, this message translates to:
-  /// **'Could not send the request. Try again, or email info@greengochat.com.'**
+  /// **'Could not send the request. Try again, or email safety@greengochat.com.'**
   String get nciiFormError;
 
   /// No description provided for @nciiFormRateLimited.
   ///
   /// In en, this message translates to:
-  /// **'Too many requests today. Email info@greengochat.com if this is urgent.'**
+  /// **'Too many requests today. Email safety@greengochat.com if this is urgent.'**
   String get nciiFormRateLimited;
 
   /// No description provided for @safetyReportReasonCsae.
@@ -43547,6 +43532,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Apple ID settings > Subscriptions'**
   String get manageSubscriptionAppStorePath;
+
+  /// Send coins form: allowed gift amount (Terms 8.5 a). Helper text and error.
+  ///
+  /// In en, this message translates to:
+  /// **'A gift must be between {min} and {max} coins.'**
+  String coinsGiftAmountRange(int min, int max);
+
+  /// Profile > Account Settings entry (Terms 9.4/9.5). Wording fixed by the owner.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchases & withdrawal'**
+  String get purchasesWithdrawalTitle;
+
+  /// Subtitle of the Purchases & withdrawal entry
+  ///
+  /// In en, this message translates to:
+  /// **'Your web purchases and the right to withdraw'**
+  String get purchasesWithdrawalSubtitle;
+
+  /// No description provided for @purchasesWithdrawalWebIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchases you made on the web (greengochat.com and the web app), paid through Stripe.'**
+  String get purchasesWithdrawalWebIntro;
+
+  /// No description provided for @purchasesWithdrawalMemberships.
+  ///
+  /// In en, this message translates to:
+  /// **'Memberships'**
+  String get purchasesWithdrawalMemberships;
+
+  /// No description provided for @purchasesWithdrawalOrders.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchases'**
+  String get purchasesWithdrawalOrders;
+
+  /// No description provided for @purchasesWithdrawalEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'There are no web purchases on this account.'**
+  String get purchasesWithdrawalEmpty;
+
+  /// No description provided for @purchasesWithdrawalLoadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load your purchases. Please try again.'**
+  String get purchasesWithdrawalLoadFailed;
+
+  /// No description provided for @purchasesWithdrawalWithdrawSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a purchase that is still within its withdrawal period'**
+  String get purchasesWithdrawalWithdrawSubtitle;
+
+  /// No description provided for @purchasesWithdrawalPortal.
+  ///
+  /// In en, this message translates to:
+  /// **'Billing portal'**
+  String get purchasesWithdrawalPortal;
+
+  /// No description provided for @purchasesWithdrawalPortalSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Invoices, payment methods and cancelling (Stripe)'**
+  String get purchasesWithdrawalPortalSubtitle;
+
+  /// Summary of Terms 9.4 / 9.5 withdrawal rules. Legal wording: keep consistent with the Terms.
+  ///
+  /// In en, this message translates to:
+  /// **'Your right of withdrawal: in the EU, EEA and UK you can withdraw within 14 days of purchase. A membership that has already started is refunded minus a proportionate amount for the days used; coins only if you did not waive the right at checkout. In Brazil you can withdraw from a purchase within 7 days and receive a full refund. You can also write to billing@greengochat.com. We refund you with the same payment method within 14 days (15 days in Brazil).'**
+  String get purchasesWithdrawalRules;
+
+  /// App purchases: refund / withdrawal through Google Play or Apple (Terms 9.4 e, 9.5 c)
+  ///
+  /// In en, this message translates to:
+  /// **'Purchases made in the Android or iPhone app were sold by Google Play or Apple. Ask them for a refund or to withdraw:'**
+  String get purchasesWithdrawalStoreHelp;
+
+  /// No description provided for @purchasesWithdrawalGooglePlayPath.
+  ///
+  /// In en, this message translates to:
+  /// **'Order history > Request a refund'**
+  String get purchasesWithdrawalGooglePlayPath;
+
+  /// No description provided for @purchasesWithdrawalApplePath.
+  ///
+  /// In en, this message translates to:
+  /// **'reportaproblem.apple.com'**
+  String get purchasesWithdrawalApplePath;
+
+  /// Under the billing@ email row in the app-store help sheet
+  ///
+  /// In en, this message translates to:
+  /// **'If the store does not solve it, or for purchases paid to us directly, write to us.'**
+  String get purchasesWithdrawalEmailWeb;
 }
 
 class _AppLocalizationsDelegate
@@ -43560,13 +43641,13 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-    'de',
-    'en',
-    'es',
-    'fr',
-    'it',
-    'pt',
-  ].contains(locale.languageCode);
+        'de',
+        'en',
+        'es',
+        'fr',
+        'it',
+        'pt'
+      ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -43602,9 +43683,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-    'an issue with the localizations generation tool. Please file an issue '
-    'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.',
-  );
+      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+      'an issue with the localizations generation tool. Please file an issue '
+      'on GitHub with a reproducible sample app and the gen-l10n configuration '
+      'that was used.');
 }

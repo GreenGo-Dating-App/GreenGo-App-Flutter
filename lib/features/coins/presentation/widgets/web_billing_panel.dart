@@ -121,17 +121,23 @@ class _WebBillingPanelState extends State<WebBillingPanel> {
   }
 
   static String _subscriptionLine(
-      AppLocalizations l10n, String locale, WebSubscriptionInfo s) {
-    final price = formatMinorUnits(s.amountCents, s.currency, locale);
-    final interval =
-        s.interval == 'year' ? l10n.billingIntervalYear : l10n.billingIntervalMonth;
-    final date = s.currentPeriodEnd == null
-        ? '-'
-        : DateFormat.yMMMd(locale).format(s.currentPeriodEnd!.toLocal());
-    return s.cancelAtPeriodEnd
-        ? l10n.webSubscriptionEndsOn(s.name, price, interval, date)
-        : l10n.webSubscriptionRenewsOn(s.name, price, interval, date);
-  }
+          AppLocalizations l10n, String locale, WebSubscriptionInfo s) =>
+      webSubscriptionLine(l10n, locale, s);
+}
+
+/// "{plan}: {price} per {interval}. Renews automatically on / Ends on {date}."
+/// (also used by Profile > Account Settings > Purchases & withdrawal).
+String webSubscriptionLine(
+    AppLocalizations l10n, String locale, WebSubscriptionInfo s) {
+  final price = formatMinorUnits(s.amountCents, s.currency, locale);
+  final interval =
+      s.interval == 'year' ? l10n.billingIntervalYear : l10n.billingIntervalMonth;
+  final date = s.currentPeriodEnd == null
+      ? '-'
+      : DateFormat.yMMMd(locale).format(s.currentPeriodEnd!.toLocal());
+  return s.cancelAtPeriodEnd
+      ? l10n.webSubscriptionEndsOn(s.name, price, interval, date)
+      : l10n.webSubscriptionRenewsOn(s.name, price, interval, date);
 }
 
 /// Formats Stripe minor units (cents) as a localized currency amount.
