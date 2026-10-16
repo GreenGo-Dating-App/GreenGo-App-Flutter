@@ -144,8 +144,10 @@ export const moderateUploadedImage = onObjectFinalized(
     const gcsUri = `gs://${event.data.bucket}/${objectPath}`;
 
     // NCII / CSAE re-upload blocking (safety/takedowns/uploadScreening.ts):
-    // public surfaces only (audit EU-19). A match moves the file out of reach
-    // and opens a P0 safety case; the uploader sees an ordinary rejection.
+    // public surfaces always; chat / group / private-album images only when
+    // app_config/safety_settings.privateHashScanEnabled (audit EU-19). A match
+    // moves the file out of reach and opens a P0 safety case; the uploader
+    // sees an ordinary rejection.
     try {
       const screening = await screenUploadAgainstHashLists({
         bucketName: event.data.bucket,
@@ -153,6 +155,7 @@ export const moderateUploadedImage = onObjectFinalized(
         userId,
         visibility,
         size: Number(event.data.size || 0),
+        uploaderId: meta.uploaderId || meta.userId || null,
       });
       if (screening.blocked) {
         await docRef.set({

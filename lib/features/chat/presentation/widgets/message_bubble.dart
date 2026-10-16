@@ -1209,7 +1209,10 @@ class _MessageBubbleState extends State<MessageBubble> {
                 ),
                 onTap: () {
                   Navigator.pop(bottomSheetContext);
-                  _showReportDialog(context);
+                  // The screen shows the shared reason picker
+                  // (report_reasons.dart) and files the report - one dialog,
+                  // one list on every surface.
+                  widget.onReport?.call(widget.message);
                 },
               ),
               ListTile(
@@ -1234,73 +1237,6 @@ class _MessageBubbleState extends State<MessageBubble> {
         ),
       ),
     );
-  }
-
-  void _showReportDialog(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
-    final reasons = [
-      l10n.chatReportReasonHarassment,
-      l10n.chatReportReasonSpam,
-      l10n.chatReportReasonInappropriate,
-      l10n.chatReportReasonPersonalInfo,
-      l10n.chatReportReasonThreatening,
-      l10n.chatReportReasonOther,
-    ];
-
-    showDialog(
-      context: context,
-      builder: (dialogContext) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: Text(
-          l10n.chatReportMessage,
-          style: const TextStyle(color: AppColors.textPrimary),
-        ),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              l10n.chatWhyReportMessage,
-              style: const TextStyle(color: AppColors.textSecondary),
-            ),
-            const SizedBox(height: 16),
-            ...reasons.map((reason) => ListTile(
-              contentPadding: EdgeInsets.zero,
-              title: Text(
-                reason,
-                style: const TextStyle(color: AppColors.textPrimary, fontSize: 14),
-              ),
-              onTap: () {
-                Navigator.pop(dialogContext);
-                _submitReport(context, reason);
-              },
-            )),
-          ],
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(dialogContext),
-            child: Text(l10n.cancel),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Future<void> _submitReport(BuildContext context, String reason) async {
-    // Call the onReport callback if provided
-    if (widget.onReport != null) {
-      widget.onReport!(widget.message);
-    }
-
-    // Show a confirmation
-    if (context.mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)!.chatMessageReported),
-          backgroundColor: AppColors.richGold,
-        ),
-      );
-    }
   }
 
   /// Media received from another user opens only after the private-content

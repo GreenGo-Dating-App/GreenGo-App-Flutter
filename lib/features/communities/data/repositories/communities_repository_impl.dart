@@ -296,6 +296,22 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
   }
 
   @override
+  Future<Either<Failure, void>> deleteMessage({
+    required String communityId,
+    required String messageId,
+  }) async {
+    try {
+      await remoteDataSource.deleteMessage(
+        communityId: communityId,
+        messageId: messageId,
+      );
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
   Future<Either<Failure, List<Community>>> getManageableCommunities(
     String userId,
   ) async {

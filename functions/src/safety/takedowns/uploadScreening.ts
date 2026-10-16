@@ -2,14 +2,21 @@
  * Hash screening of new uploads (called by moderateUploadedImage before the
  * Vision check).
  *
- * SCOPE - PUBLIC SURFACES ONLY (audit EU-19): profile photos, community
- * media, storefronts, video-profile thumbnails and event covers (all under
- * the public prefixes below, not marked `visibility: private`). Private chat,
- * group and support images are NOT hash-scanned for anyone: the EU ePrivacy
- * derogation (Reg. 2021/1232) that allowed voluntary CSAM scanning of private
- * messages lapsed on 3 Apr 2026, and counsel has not cleared a country-gated
- * variant yet. Reports of private content still go through the report flow
- * (a user report is not scanning).
+ * SCOPE (audit EU-19, Terms 17.1 b):
+ *   - ALWAYS: public surfaces - profile photos, community media, storefronts,
+ *     video-profile thumbnails and event covers (the public prefixes below,
+ *     not marked `visibility: private`).
+ *   - ONLY WHEN `app_config/safety_settings.privateHashScanEnabled == true`:
+ *     1:1 chat images (`chat_images/`), group media (`group_media/`) and
+ *     private-album photos (`profiles/` with `visibility: private`). Same hash
+ *     lookup, no extra cost beyond the download + hash already done for
+ *     public uploads. OFF by default: the EU ePrivacy derogation (Reg.
+ *     2021/1232) that allowed voluntary CSAM scanning of private messages
+ *     lapsed on 3 Apr 2026 and counsel has to clear it first (owner step,
+ *     docs/safety/csae-ncii-runbook.md section 5).
+ *   - Never: support attachments, receipts, voice/video.
+ * Reports of private content always go through the report flow (a user
+ * report is not scanning).
  *
  * On a match the object is moved out of reach at once and a P0 case opens:
  *   - csam_hash_list (external lists) or a blocked CSAE hash -> CSAE case,
@@ -39,6 +46,42 @@ export function isPublicScanScope(objectPath: string, visibility: string): boole
   return visibility !== 'private' && PUBLIC_HASH_SCAN_PREFIXES.some((p) => objectPath.startsWith(p));
 }
 
+/** Private surfaces, scanned only behind the counsel flag (see header). */
+export const PRIVATE_HASH_SCAN_PREFIXES = ['chat_images/', 'group_media/'];
+
+export function isPrivateScanScope(objectPath: string, visibility: string): boolean {
+  if (/\/(voice|chat_voice|chat_videos)\//.test('/' + objectPath)) return false;
+  if (PRIVATE_HASH_SCAN_PREFIXES.some((p) => objectPath.startsWith(p))) return true;
+  return visibility === 'private' && objectPath.startsWith('profiles/');
+}
+
+export function isScanScope(objectPath: string, visibility: string, privateScanEnabled: boolean): boolean {
+  return isPublicScanScope(objectPath, visibility)
+    || (privateScanEnabled && isPrivateScanScope(objectPath, visibility));
+}
+
+// One settings read per instance per 5 minutes, not one per upload.
+const FLAG_TTL_MS = 5 * 60_000;
+let flagCache: { value: boolean; at: number } | null = null;
+
+export async function privateHashScanEnabled(nowMs = Date.now()): Promise<boolean> {
+  if (flagCache && nowMs - flagCache.at < FLAG_TTL_MS) return flagCache.value;
+  let value = false;
+  try {
+    value = (await db().doc('app_config/safety_settings').get()).data()?.privateHashScanEnabled === true;
+  } catch (e) {
+    // Keep the last known value on a read error (default off).
+    value = flagCache?.value ?? false;
+  }
+  flagCache = { value, at: nowMs };
+  return value;
+}
+
+/** Tests only. */
+export function resetPrivateScanFlagCache(): void {
+  flagCache = null;
+}
+
 export interface ScreeningResult {
   scanned: boolean;
   blocked: boolean;
@@ -53,8 +96,19 @@ export async function screenUploadAgainstHashLists(p: {
   userId: string;
   visibility: string;
   size?: number;
+  /** Uploader from the object's metadata (chat paths carry no uid segment). */
+  uploaderId?: string | null;
 }): Promise<ScreeningResult> {
-  if (!isPublicScanScope(p.objectPath, p.visibility)) return { scanned: false, blocked: false };
+  const isPublic = isPublicScanScope(p.objectPath, p.visibility);
+  if (!isPublic) {
+    if (!isPrivateScanScope(p.objectPath, p.visibility)) return { scanned: false, blocked: false };
+    if (!(await privateHashScanEnabled())) return { scanned: false, blocked: false };
+  }
+  // chat_images/{chatKey}/ and group_media/{groupId}/: the 2nd segment is not
+  // a user - only trust the uploader stamp there.
+  const reportedUserId = isPublic || p.objectPath.startsWith('profiles/')
+    ? (p.userId || null)
+    : (p.uploaderId || null);
   if (p.size && p.size > MAX_BYTES) return { scanned: false, blocked: false };
   const bucket = admin.storage().bucket(p.bucketName);
   const file = bucket.file(p.objectPath);
@@ -107,7 +161,7 @@ export async function screenUploadAgainstHashLists(p: {
     requester: { name: null, email: null, phone: null, uid: null, role: 'system' },
     contentRefs: [],
     preHidden,
-    reportedUserId: p.userId || null,
+    reportedUserId,
     description: `Re-upload blocked: ${blocked.list} ${blocked.how} match`,
     hashMatch: {
       list: blocked.list,

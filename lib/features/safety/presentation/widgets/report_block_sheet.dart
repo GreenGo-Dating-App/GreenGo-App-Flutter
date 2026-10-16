@@ -9,6 +9,7 @@ import '../../../copyright/data/copyright_service.dart';
 import '../../../copyright/presentation/screens/copyright_notice_form_screen.dart';
 import '../../data/services/safety_takedown_service.dart';
 import '../screens/ncii_request_screen.dart';
+import 'report_reasons.dart';
 
 /// App-wide "report or block this person" sheet.
 ///
@@ -137,22 +138,6 @@ Future<void> showReportBlockSheet(
 
 enum _SafetyAction { report, block, copyright, ncii }
 
-/// The reasons offered. Deliberately the same list everywhere so moderation
-/// can aggregate across surfaces, and `underage` is included because
-/// Guideline 1.2.1 makes under-age content a first-class concern.
-List<String> _reasons(AppLocalizations l10n) => [
-      l10n.chatReportReasonHarassment,
-      l10n.chatReportReasonFakeProfile,
-      l10n.chatReportReasonSpam,
-      l10n.chatReportReasonInappropriate,
-      l10n.chatReportReasonThreatening,
-      l10n.chatReportReasonUnderage,
-      // P0 reasons: hidden at once server-side (safety/takedowns).
-      l10n.safetyReportReasonCsae,
-      l10n.safetyReportReasonNcii,
-      l10n.chatReportReasonOther,
-    ];
-
 Future<void> _report(
   BuildContext context, {
   required String reporterId,
@@ -166,45 +151,12 @@ Future<void> _report(
   // Stable context for the error popup: the sheet may be gone by then.
   final errorContext = Navigator.of(context, rootNavigator: true).context;
 
-  final reason = await showDialog<String>(
-    context: context,
-    builder: (dialogContext) => AlertDialog(
-      backgroundColor: AppColors.backgroundCard,
-      title: Text(
-        l10n.chatReportUserTitle,
-        style: const TextStyle(color: AppColors.textPrimary),
-      ),
-      content: SingleChildScrollView(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              l10n.chatWhyReportUser(reportedUserName),
-              style: const TextStyle(color: AppColors.textSecondary),
-            ),
-            const SizedBox(height: 16),
-            ..._reasons(l10n).map(
-              (r) => ListTile(
-                contentPadding: EdgeInsets.zero,
-                title: Text(
-                  r,
-                  style: const TextStyle(
-                      color: AppColors.textPrimary, fontSize: 14),
-                ),
-                onTap: () => Navigator.pop(dialogContext, r),
-              ),
-            ),
-          ],
-        ),
-      ),
-      actions: [
-        TextButton(
-          onPressed: () => Navigator.pop(dialogContext),
-          child: Text(l10n.cancel),
-        ),
-      ],
-    ),
+  // One shared list on every surface (report_reasons.dart): includes
+  // `underage` (Guideline 1.2.1) and "Child sexual exploitation" (Terms 19.3).
+  final reason = await showReportReasonDialog(
+    context,
+    title: l10n.chatReportUserTitle,
+    prompt: l10n.chatWhyReportUser(reportedUserName),
   );
 
   if (reason == null) return;
@@ -213,7 +165,8 @@ Future<void> _report(
     await di.sl<SafetyActionsService>().reportUser(
           reporterId: reporterId,
           reportedUserId: reportedUserId,
-          reason: reason,
+          reason: reason.code,
+          reasonLabel: reason.label(l10n),
           additionalDetails:
               contentId != null ? '$surface; content:$contentId' : surface,
         );

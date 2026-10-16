@@ -23801,15 +23801,14 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get nciiFormError =>
-      'Impossible d\'envoyer la demande. Réessayez ou écrivez à info@greengochat.com.';
+      'Impossible d\'envoyer la demande. Réessayez ou écrivez à safety@greengochat.com.';
 
   @override
   String get nciiFormRateLimited =>
-      'Trop de demandes aujourd\'hui. Écrivez à info@greengochat.com si c\'est urgent.';
+      'Trop de demandes aujourd\'hui. Écrivez à safety@greengochat.com si c\'est urgent.';
 
   @override
-  String get safetyReportReasonCsae =>
-      'Abus ou exploitation sexuelle d\'enfants';
+  String get safetyReportReasonCsae => 'Exploitation sexuelle d\'enfants';
 
   @override
   String get safetyReportReasonNcii =>
@@ -25814,4 +25813,43 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get manageSubscriptionAppStorePath =>
       'Réglages de l\'identifiant Apple > Abonnements';
+
+  @override
+  String safetyReportEmailNote(String email) {
+    return 'Vous pouvez aussi signaler un problème de sécurité par e-mail : $email';
+  }
+
+  @override
+  String get safetyHelpEntryTitle => 'Signaler un problème de sécurité';
+
+  @override
+  String safetyHelpEntrySubtitle(String email) {
+    return 'Sécurité des enfants, abus ou contenu illégal : écrivez à $email';
+  }
+
+  @override
+  String get safetyReportWhyContent => 'Pourquoi signalez-vous ce contenu ?';
+
+  @override
+  String get safetyReportSent =>
+      'Signalement envoyé. Merci, nous examinons chaque signalement.';
+
+  @override
+  String get spotsReportReview => 'Signaler l\'avis';
+
+  @override
+  String get communitiesReportCommunity => 'Signaler la communauté';
+
+  @override
+  String get communitiesRemovePost => 'Retirer la publication';
+
+  @override
+  String get communitiesRemovePostTitle => 'Retirer cette publication ?';
+
+  @override
+  String get communitiesRemovePostMessage =>
+      'La publication sera retirée pour tous les membres de cette communauté. Cette action est irréversible.';
+
+  @override
+  String get communitiesPostRemoved => 'Publication retirée';
 }

@@ -23437,14 +23437,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get nciiFormError =>
-      'Could not send the request. Try again, or email info@greengochat.com.';
+      'Could not send the request. Try again, or email safety@greengochat.com.';
 
   @override
   String get nciiFormRateLimited =>
-      'Too many requests today. Email info@greengochat.com if this is urgent.';
+      'Too many requests today. Email safety@greengochat.com if this is urgent.';
 
   @override
-  String get safetyReportReasonCsae => 'Child sexual abuse or exploitation';
+  String get safetyReportReasonCsae => 'Child sexual exploitation';
 
   @override
   String get safetyReportReasonNcii => 'Intimate image shared without consent';
@@ -25421,4 +25421,43 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get manageSubscriptionAppStorePath =>
       'Apple ID settings > Subscriptions';
+
+  @override
+  String safetyReportEmailNote(String email) {
+    return 'You can also report safety issues by email: $email';
+  }
+
+  @override
+  String get safetyHelpEntryTitle => 'Report a safety issue';
+
+  @override
+  String safetyHelpEntrySubtitle(String email) {
+    return 'Child safety, abuse or illegal content: write to $email';
+  }
+
+  @override
+  String get safetyReportWhyContent => 'Why are you reporting this?';
+
+  @override
+  String get safetyReportSent =>
+      'Report sent. Thank you, we review every report.';
+
+  @override
+  String get spotsReportReview => 'Report review';
+
+  @override
+  String get communitiesReportCommunity => 'Report community';
+
+  @override
+  String get communitiesRemovePost => 'Remove post';
+
+  @override
+  String get communitiesRemovePostTitle => 'Remove this post?';
+
+  @override
+  String get communitiesRemovePostMessage =>
+      'The post will be removed for everyone in this community. This cannot be undone.';
+
+  @override
+  String get communitiesPostRemoved => 'Post removed';
 }

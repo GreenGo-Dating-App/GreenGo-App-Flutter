@@ -23,6 +23,7 @@ class CommunityMessageBubble extends StatefulWidget {
     this.showSenderInfo = true,
     this.currentUserLanguage = 'en',
     this.onReport,
+    this.onRemove,
   });
 
   final CommunityMessage message;
@@ -34,6 +35,11 @@ class CommunityMessageBubble extends StatefulWidget {
 
   /// Long-press action to report this message's author (null = not reportable).
   final VoidCallback? onReport;
+
+  /// Owner/moderator action to remove this post (Terms 17.3); null = the
+  /// viewer may not remove it. When set, long-press opens an action sheet
+  /// (Remove post + Report) instead of reporting directly.
+  final VoidCallback? onRemove;
 
   @override
   State<CommunityMessageBubble> createState() => _CommunityMessageBubbleState();
@@ -116,8 +122,56 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
     final child = message.isSpecialType
         ? _buildSpecialMessage(context)
         : _buildRegularMessage();
-    if (widget.onReport == null) return child;
-    return GestureDetector(onLongPress: widget.onReport, child: child);
+    if (widget.onReport == null && widget.onRemove == null) return child;
+    return GestureDetector(
+      onLongPress: widget.onRemove == null ? widget.onReport : _showActions,
+      child: child,
+    );
+  }
+
+  /// Moderator long-press menu: Remove post, plus Report when reportable.
+  Future<void> _showActions() async {
+    final l10n = AppLocalizations.of(context)!;
+    final action = await showModalBottomSheet<String>(
+      context: context,
+      backgroundColor: AppColors.backgroundCard,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (sheetContext) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const SizedBox(height: 8),
+            ListTile(
+              key: const ValueKey('community-post-remove'),
+              leading:
+                  const Icon(Icons.delete_outline, color: AppColors.errorRed),
+              title: Text(
+                l10n.communitiesRemovePost,
+                style: const TextStyle(color: AppColors.errorRed),
+              ),
+              onTap: () => Navigator.pop(sheetContext, 'remove'),
+            ),
+            if (widget.onReport != null)
+              ListTile(
+                key: const ValueKey('community-post-report'),
+                leading: const Icon(Icons.flag_outlined,
+                    color: AppColors.textSecondary),
+                title: Text(
+                  l10n.communitiesReportMember,
+                  style: const TextStyle(color: AppColors.textPrimary),
+                ),
+                onTap: () => Navigator.pop(sheetContext, 'report'),
+              ),
+            const SizedBox(height: 8),
+          ],
+        ),
+      ),
+    );
+    if (!mounted) return;
+    if (action == 'remove') widget.onRemove?.call();
+    if (action == 'report') widget.onReport?.call();
   }
 
   Widget _buildRegularMessage() {

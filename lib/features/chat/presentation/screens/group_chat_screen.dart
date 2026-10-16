@@ -443,7 +443,11 @@ class _GroupChatViewState extends State<_GroupChatView> {
         .ref()
         .child('group_media/${widget.groupId}/${const Uuid().v4()}.$ext');
     // putFile on mobile, putData(bytes) on web.
-    await WebMedia.uploadXFile(ref, f, contentType: contentType);
+    // uploaderId: who uploaded it (the path holds the group, not the user) -
+    // read by the server-side hash screening (uploadScreening.ts).
+    await WebMedia.uploadXFile(ref, f,
+        contentType: contentType,
+        customMetadata: {'uploaderId': widget.currentUserId});
     return ref.getDownloadURL();
   }
 

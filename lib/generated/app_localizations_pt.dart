@@ -23634,14 +23634,14 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get nciiFormError =>
-      'Não foi possível enviar o pedido. Tente novamente ou escreva para info@greengochat.com.';
+      'Não foi possível enviar o pedido. Tente novamente ou escreva para safety@greengochat.com.';
 
   @override
   String get nciiFormRateLimited =>
-      'Demasiados pedidos hoje. Escreva para info@greengochat.com se for urgente.';
+      'Demasiados pedidos hoje. Escreva para safety@greengochat.com se for urgente.';
 
   @override
-  String get safetyReportReasonCsae => 'Abuso ou exploração sexual de crianças';
+  String get safetyReportReasonCsae => 'Exploração sexual de crianças';
 
   @override
   String get safetyReportReasonNcii =>
@@ -25642,6 +25642,45 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get manageSubscriptionAppStorePath =>
       'Definições do ID Apple > Subscrições';
+
+  @override
+  String safetyReportEmailNote(String email) {
+    return 'Também pode denunciar problemas de segurança por e-mail: $email';
+  }
+
+  @override
+  String get safetyHelpEntryTitle => 'Denunciar um problema de segurança';
+
+  @override
+  String safetyHelpEntrySubtitle(String email) {
+    return 'Segurança infantil, abusos ou conteúdo ilegal: escreva para $email';
+  }
+
+  @override
+  String get safetyReportWhyContent => 'Porque está a denunciar isto?';
+
+  @override
+  String get safetyReportSent =>
+      'Denúncia enviada. Obrigado, analisamos todas as denúncias.';
+
+  @override
+  String get spotsReportReview => 'Denunciar avaliação';
+
+  @override
+  String get communitiesReportCommunity => 'Denunciar comunidade';
+
+  @override
+  String get communitiesRemovePost => 'Remover publicação';
+
+  @override
+  String get communitiesRemovePostTitle => 'Remover esta publicação?';
+
+  @override
+  String get communitiesRemovePostMessage =>
+      'A publicação será removida para todos nesta comunidade. Não é possível anular.';
+
+  @override
+  String get communitiesPostRemoved => 'Publicação removida';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -49285,14 +49324,14 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get nciiFormError =>
-      'Não foi possível enviar a solicitação. Tente de novo ou escreva para info@greengochat.com.';
+      'Não foi possível enviar a solicitação. Tente de novo ou escreva para safety@greengochat.com.';
 
   @override
   String get nciiFormRateLimited =>
-      'Muitas solicitações hoje. Escreva para info@greengochat.com se for urgente.';
+      'Muitas solicitações hoje. Escreva para safety@greengochat.com se for urgente.';
 
   @override
-  String get safetyReportReasonCsae => 'Abuso ou exploração sexual infantil';
+  String get safetyReportReasonCsae => 'Exploração sexual infantil';
 
   @override
   String get safetyReportReasonNcii =>
@@ -51289,4 +51328,43 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get manageSubscriptionAppStorePath =>
       'Ajustes do ID Apple > Assinaturas';
+
+  @override
+  String safetyReportEmailNote(String email) {
+    return 'Você também pode denunciar problemas de segurança por e-mail: $email';
+  }
+
+  @override
+  String get safetyHelpEntryTitle => 'Denunciar um problema de segurança';
+
+  @override
+  String safetyHelpEntrySubtitle(String email) {
+    return 'Segurança infantil, abusos ou conteúdo ilegal: escreva para $email';
+  }
+
+  @override
+  String get safetyReportWhyContent => 'Por que você está denunciando isto?';
+
+  @override
+  String get safetyReportSent =>
+      'Denúncia enviada. Obrigado, analisamos todas as denúncias.';
+
+  @override
+  String get spotsReportReview => 'Denunciar avaliação';
+
+  @override
+  String get communitiesReportCommunity => 'Denunciar comunidade';
+
+  @override
+  String get communitiesRemovePost => 'Remover publicação';
+
+  @override
+  String get communitiesRemovePostTitle => 'Remover esta publicação?';
+
+  @override
+  String get communitiesRemovePostMessage =>
+      'A publicação será removida para todos nesta comunidade. Não é possível desfazer.';
+
+  @override
+  String get communitiesPostRemoved => 'Publicação removida';
 }

@@ -144,13 +144,16 @@ abstract class ChatRemoteDataSource {
     required MessageStatus status,
   });
 
-  /// Report a message
+  /// Report a message. [reason] is a ReportReason wire code
+  /// (safety/presentation/widgets/report_reasons.dart); [reasonLabel] is the
+  /// localized label the reporter picked (shown to moderators).
   Future<void> reportMessage({
     required String messageId,
     required String conversationId,
     required String reporterId,
     required String reportedUserId,
     required String reason,
+    String? reasonLabel,
   });
 
   /// Get messages around a reported message (50 before and 50 after)
@@ -1123,6 +1126,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     required String reporterId,
     required String reportedUserId,
     required String reason,
+    String? reasonLabel,
   }) async {
     try {
       // Get the message being reported
@@ -1150,6 +1154,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         'reporterId': reporterId,
         'reportedUserId': reportedUserId,
         'reason': reason,
+        if (reasonLabel != null) 'reasonLabel': reasonLabel,
         'reportedAt': Timestamp.fromDate(DateTime.now()),
         'status': 'pending', // pending, reviewed, action_taken, dismissed
         'reviewedBy': null,

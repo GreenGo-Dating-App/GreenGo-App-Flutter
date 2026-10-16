@@ -23714,15 +23714,14 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get nciiFormError =>
-      'Anfrage konnte nicht gesendet werden. Versuche es erneut oder schreibe an info@greengochat.com.';
+      'Anfrage konnte nicht gesendet werden. Versuche es erneut oder schreibe an safety@greengochat.com.';
 
   @override
   String get nciiFormRateLimited =>
-      'Zu viele Anfragen heute. Schreibe bei Dringlichkeit an info@greengochat.com.';
+      'Zu viele Anfragen heute. Schreibe bei Dringlichkeit an safety@greengochat.com.';
 
   @override
-  String get safetyReportReasonCsae =>
-      'Sexueller Missbrauch oder Ausbeutung von Kindern';
+  String get safetyReportReasonCsae => 'Sexuelle Ausbeutung von Kindern';
 
   @override
   String get safetyReportReasonNcii => 'Intimes Bild ohne Einwilligung geteilt';
@@ -25726,4 +25725,43 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get manageSubscriptionAppStorePath =>
       'Apple-ID-Einstellungen > Abonnements';
+
+  @override
+  String safetyReportEmailNote(String email) {
+    return 'Sicherheitsprobleme kannst du auch per E-Mail melden: $email';
+  }
+
+  @override
+  String get safetyHelpEntryTitle => 'Sicherheitsproblem melden';
+
+  @override
+  String safetyHelpEntrySubtitle(String email) {
+    return 'Kinderschutz, Missbrauch oder illegale Inhalte: schreibe an $email';
+  }
+
+  @override
+  String get safetyReportWhyContent => 'Warum meldest du das?';
+
+  @override
+  String get safetyReportSent =>
+      'Meldung gesendet. Danke, wir prüfen jede Meldung.';
+
+  @override
+  String get spotsReportReview => 'Bewertung melden';
+
+  @override
+  String get communitiesReportCommunity => 'Community melden';
+
+  @override
+  String get communitiesRemovePost => 'Beitrag entfernen';
+
+  @override
+  String get communitiesRemovePostTitle => 'Diesen Beitrag entfernen?';
+
+  @override
+  String get communitiesRemovePostMessage =>
+      'Der Beitrag wird für alle in dieser Community entfernt. Das kann nicht rückgängig gemacht werden.';
+
+  @override
+  String get communitiesPostRemoved => 'Beitrag entfernt';
 }

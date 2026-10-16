@@ -83,6 +83,7 @@ import '../../../../core/security/screen_security_service.dart';
 import '../../../../core/security/viewer_watermark.dart';
 import '../../data/services/chat_screenshot_notice.dart';
 import '../../../safety/presentation/screens/age_assurance_required_screen.dart';
+import '../../../safety/presentation/widgets/report_reasons.dart';
 
 /// Chat Screen
 ///
@@ -840,50 +841,13 @@ class _ChatScreenState extends State<ChatScreen> {
 
   /// Report a message for review
   Future<void> _reportMessage(BuildContext context, Message message) async {
-    // Show reason selection dialog
+    // One shared reason list on every report surface (report_reasons.dart),
+    // incl. "Child sexual exploitation" (Terms 19.3 -> server csae P0 path).
     final l10n = AppLocalizations.of(context)!;
-    final reasons = [
-      l10n.chatReportReasonHarassment,
-      l10n.chatReportReasonSpam,
-      l10n.chatReportReasonInappropriate,
-      l10n.chatReportReasonPersonalInfo,
-      l10n.chatReportReasonThreatening,
-      l10n.chatReportReasonOther,
-    ];
-
-    final selectedReason = await showDialog<String>(
-      context: context,
-      builder: (dialogContext) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: Text(
-          l10n.chatReportMessage,
-          style: const TextStyle(color: AppColors.textPrimary),
-        ),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              l10n.chatWhyReportMessage,
-              style: const TextStyle(color: AppColors.textSecondary),
-            ),
-            const SizedBox(height: 16),
-            ...reasons.map((reason) => ListTile(
-              contentPadding: EdgeInsets.zero,
-              title: Text(
-                reason,
-                style: const TextStyle(color: AppColors.textPrimary, fontSize: 14),
-              ),
-              onTap: () => Navigator.pop(dialogContext, reason),
-            )),
-          ],
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(dialogContext),
-            child: Text(l10n.cancel),
-          ),
-        ],
-      ),
+    final selectedReason = await showReportReasonDialog(
+      context,
+      title: l10n.chatReportMessage,
+      prompt: l10n.chatWhyReportMessage,
     );
 
     if (selectedReason == null || !context.mounted) return;
@@ -894,7 +858,8 @@ class _ChatScreenState extends State<ChatScreen> {
         messageId: message.messageId,
         reporterId: widget.currentUserId,
         reportedUserId: message.senderId,
-        reason: selectedReason,
+        reason: selectedReason.code,
+        reasonLabel: selectedReason.label(l10n),
       );
 
       if (context.mounted) {
@@ -1185,7 +1150,12 @@ class _ChatScreenState extends State<ChatScreen> {
       // Upload to Firebase Storage
       final ref = FirebaseStorage.instance.ref().child(fileName);
 
-      final metadata = SettableMetadata(contentType: 'image/jpeg');
+      // uploaderId: the path holds the chat, not the user - read by the
+      // server-side hash screening (uploadScreening.ts).
+      final metadata = SettableMetadata(
+        contentType: 'image/jpeg',
+        customMetadata: {'uploaderId': widget.currentUserId},
+      );
       final uploadTask = file != null
           ? ref.putFile(file, metadata)
           : ref.putData(webBytes!, metadata);
@@ -3395,49 +3365,11 @@ class _ChatScreenState extends State<ChatScreen> {
     }
 
     final l10n = AppLocalizations.of(context)!;
-    final reasons = [
-      l10n.chatReportReasonHarassment,
-      l10n.chatReportReasonFakeProfile,
-      l10n.chatReportReasonSpam,
-      l10n.chatReportReasonInappropriate,
-      l10n.chatReportReasonThreatening,
-      l10n.chatReportReasonUnderage,
-      l10n.chatReportReasonOther,
-    ];
-
-    final selectedReason = await showDialog<String>(
-      context: context,
-      builder: (dialogContext) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: Text(
-          l10n.chatReportUserTitle,
-          style: const TextStyle(color: AppColors.textPrimary),
-        ),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              l10n.chatWhyReportUser(widget.otherUserProfile.displayName),
-              style: const TextStyle(color: AppColors.textSecondary),
-            ),
-            const SizedBox(height: 16),
-            ...reasons.map((reason) => ListTile(
-              contentPadding: EdgeInsets.zero,
-              title: Text(
-                reason,
-                style: const TextStyle(color: AppColors.textPrimary, fontSize: 14),
-              ),
-              onTap: () => Navigator.pop(dialogContext, reason),
-            )),
-          ],
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(dialogContext),
-            child: Text(l10n.cancel),
-          ),
-        ],
-      ),
+    // One shared reason list on every report surface (report_reasons.dart).
+    final selectedReason = await showReportReasonDialog(
+      context,
+      title: l10n.chatReportUserTitle,
+      prompt: l10n.chatWhyReportUser(widget.otherUserProfile.displayName),
     );
 
     if (selectedReason != null && mounted) {
@@ -3446,7 +3378,7 @@ class _ChatScreenState extends State<ChatScreen> {
       await ActionSuccessDialog.showUserReported(this.context, onDismiss: () {
         bloc.add(ChatUserReported(
           userId: widget.otherUserId,
-          reason: selectedReason,
+          reason: selectedReason.code,
         ));
         nav.popUntil((route) => route.isFirst);
       });

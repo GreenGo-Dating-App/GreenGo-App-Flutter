@@ -23663,14 +23663,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get nciiFormError =>
-      'No se pudo enviar la solicitud. Inténtalo de nuevo o escribe a info@greengochat.com.';
+      'No se pudo enviar la solicitud. Inténtalo de nuevo o escribe a safety@greengochat.com.';
 
   @override
   String get nciiFormRateLimited =>
-      'Demasiadas solicitudes hoy. Escribe a info@greengochat.com si es urgente.';
+      'Demasiadas solicitudes hoy. Escribe a safety@greengochat.com si es urgente.';
 
   @override
-  String get safetyReportReasonCsae => 'Abuso o explotación sexual infantil';
+  String get safetyReportReasonCsae => 'Explotación sexual infantil';
 
   @override
   String get safetyReportReasonNcii =>
@@ -25662,4 +25662,43 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get manageSubscriptionAppStorePath =>
       'Ajustes del ID de Apple > Suscripciones';
+
+  @override
+  String safetyReportEmailNote(String email) {
+    return 'También puedes denunciar problemas de seguridad por correo electrónico: $email';
+  }
+
+  @override
+  String get safetyHelpEntryTitle => 'Denunciar un problema de seguridad';
+
+  @override
+  String safetyHelpEntrySubtitle(String email) {
+    return 'Seguridad infantil, abusos o contenido ilegal: escribe a $email';
+  }
+
+  @override
+  String get safetyReportWhyContent => '¿Por qué lo denuncias?';
+
+  @override
+  String get safetyReportSent =>
+      'Denuncia enviada. Gracias, revisamos todas las denuncias.';
+
+  @override
+  String get spotsReportReview => 'Denunciar reseña';
+
+  @override
+  String get communitiesReportCommunity => 'Denunciar comunidad';
+
+  @override
+  String get communitiesRemovePost => 'Eliminar publicación';
+
+  @override
+  String get communitiesRemovePostTitle => '¿Eliminar esta publicación?';
+
+  @override
+  String get communitiesRemovePostMessage =>
+      'La publicación se eliminará para todos en esta comunidad. No se puede deshacer.';
+
+  @override
+  String get communitiesPostRemoved => 'Publicación eliminada';
 }

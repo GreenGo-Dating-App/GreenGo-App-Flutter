@@ -23690,15 +23690,14 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get nciiFormError =>
-      'Impossibile inviare la richiesta. Riprova o scrivi a info@greengochat.com.';
+      'Impossibile inviare la richiesta. Riprova o scrivi a safety@greengochat.com.';
 
   @override
   String get nciiFormRateLimited =>
-      'Troppe richieste oggi. Scrivi a info@greengochat.com se è urgente.';
+      'Troppe richieste oggi. Scrivi a safety@greengochat.com se è urgente.';
 
   @override
-  String get safetyReportReasonCsae =>
-      'Abuso o sfruttamento sessuale di minori';
+  String get safetyReportReasonCsae => 'Sfruttamento sessuale di minori';
 
   @override
   String get safetyReportReasonNcii =>
@@ -25702,4 +25701,43 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get manageSubscriptionAppStorePath =>
       'Impostazioni ID Apple > Abbonamenti';
+
+  @override
+  String safetyReportEmailNote(String email) {
+    return 'Puoi segnalare problemi di sicurezza anche via email: $email';
+  }
+
+  @override
+  String get safetyHelpEntryTitle => 'Segnala un problema di sicurezza';
+
+  @override
+  String safetyHelpEntrySubtitle(String email) {
+    return 'Sicurezza dei minori, abusi o contenuti illegali: scrivi a $email';
+  }
+
+  @override
+  String get safetyReportWhyContent => 'Perché lo stai segnalando?';
+
+  @override
+  String get safetyReportSent =>
+      'Segnalazione inviata. Grazie, esaminiamo ogni segnalazione.';
+
+  @override
+  String get spotsReportReview => 'Segnala recensione';
+
+  @override
+  String get communitiesReportCommunity => 'Segnala community';
+
+  @override
+  String get communitiesRemovePost => 'Rimuovi post';
+
+  @override
+  String get communitiesRemovePostTitle => 'Rimuovere questo post?';
+
+  @override
+  String get communitiesRemovePostMessage =>
+      'Il post verrà rimosso per tutti in questa community. Non si può annullare.';
+
+  @override
+  String get communitiesPostRemoved => 'Post rimosso';
 }

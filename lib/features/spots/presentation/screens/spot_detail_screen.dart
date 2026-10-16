@@ -1,4 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -7,6 +8,7 @@ import '../../../../generated/app_localizations.dart';
 import '../spot_l10n.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
+import '../../../safety/presentation/widgets/content_report_flow.dart';
 import '../../domain/entities/spot.dart';
 import '../../domain/entities/spot_review.dart';
 import '../bloc/spots_bloc.dart';
@@ -475,6 +477,19 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                   );
                 }),
               ),
+              // Report this review (Terms 18.1) - not on your own.
+              if (review.userId != _myUserId())
+                IconButton(
+                  key: ValueKey('spot-review-report-${review.id}'),
+                  tooltip: AppLocalizations.of(context)!.spotsReportReview,
+                  visualDensity: VisualDensity.compact,
+                  padding: EdgeInsets.zero,
+                  constraints:
+                      const BoxConstraints(minWidth: 32, minHeight: 32),
+                  icon: const Icon(Icons.flag_outlined,
+                      color: AppColors.textTertiary, size: 18),
+                  onPressed: () => _reportReview(review),
+                ),
             ],
           ),
           if (review.text.isNotEmpty) ...[
@@ -490,6 +505,28 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
           ],
         ],
       ),
+    );
+  }
+
+  String? _myUserId() {
+    final state = context.read<ProfileBloc>().state;
+    return state is ProfileLoaded ? state.profile.userId : null;
+  }
+
+  /// Report a spot review into the shared moderation pipeline (`reports`,
+  /// type `spot_review`).
+  Future<void> _reportReview(SpotReview review) async {
+    final me = FirebaseAuth.instance.currentUser?.uid;
+    if (me == null) return;
+    await showContentReportFlow(
+      context,
+      reporterId: me,
+      type: 'spot_review',
+      contentPath: 'spots/${review.spotId}/reviews/${review.id}',
+      reportedUserId: review.userId,
+      title: AppLocalizations.of(context)!.spotsReportReview,
+      description: review.text,
+      extra: {'spotId': review.spotId, 'reviewId': review.id},
     );
   }
 

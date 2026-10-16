@@ -40383,19 +40383,19 @@ abstract class AppLocalizations {
   /// No description provided for @nciiFormError.
   ///
   /// In en, this message translates to:
-  /// **'Could not send the request. Try again, or email info@greengochat.com.'**
+  /// **'Could not send the request. Try again, or email safety@greengochat.com.'**
   String get nciiFormError;
 
   /// No description provided for @nciiFormRateLimited.
   ///
   /// In en, this message translates to:
-  /// **'Too many requests today. Email info@greengochat.com if this is urgent.'**
+  /// **'Too many requests today. Email safety@greengochat.com if this is urgent.'**
   String get nciiFormRateLimited;
 
   /// No description provided for @safetyReportReasonCsae.
   ///
   /// In en, this message translates to:
-  /// **'Child sexual abuse or exploitation'**
+  /// **'Child sexual exploitation'**
   String get safetyReportReasonCsae;
 
   /// No description provided for @safetyReportReasonNcii.
@@ -43547,6 +43547,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Apple ID settings > Subscriptions'**
   String get manageSubscriptionAppStorePath;
+
+  /// Footnote under every report reason list and on the NCII form (Terms 18.1).
+  ///
+  /// In en, this message translates to:
+  /// **'You can also report safety issues by email: {email}'**
+  String safetyReportEmailNote(String email);
+
+  /// Help & Support entry: email the safety team.
+  ///
+  /// In en, this message translates to:
+  /// **'Report a safety issue'**
+  String get safetyHelpEntryTitle;
+
+  /// Subtitle of the Help & Support safety entry.
+  ///
+  /// In en, this message translates to:
+  /// **'Child safety, abuse or illegal content: write to {email}'**
+  String safetyHelpEntrySubtitle(String email);
+
+  /// Prompt of the reason picker when reporting a review or a community.
+  ///
+  /// In en, this message translates to:
+  /// **'Why are you reporting this?'**
+  String get safetyReportWhyContent;
+
+  /// Snackbar after a review / community report is filed.
+  ///
+  /// In en, this message translates to:
+  /// **'Report sent. Thank you, we review every report.'**
+  String get safetyReportSent;
+
+  /// Report button on a spot review.
+  ///
+  /// In en, this message translates to:
+  /// **'Report review'**
+  String get spotsReportReview;
+
+  /// Community menu item: report the whole community.
+  ///
+  /// In en, this message translates to:
+  /// **'Report community'**
+  String get communitiesReportCommunity;
+
+  /// Owner/moderator action on a community post (Terms 17.3).
+  ///
+  /// In en, this message translates to:
+  /// **'Remove post'**
+  String get communitiesRemovePost;
+
+  /// Confirmation title before a moderator removes a post.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove this post?'**
+  String get communitiesRemovePostTitle;
+
+  /// Confirmation body before a moderator removes a post.
+  ///
+  /// In en, this message translates to:
+  /// **'The post will be removed for everyone in this community. This cannot be undone.'**
+  String get communitiesRemovePostMessage;
+
+  /// Snackbar after a moderator removed a post.
+  ///
+  /// In en, this message translates to:
+  /// **'Post removed'**
+  String get communitiesPostRemoved;
 }
 
 class _AppLocalizationsDelegate

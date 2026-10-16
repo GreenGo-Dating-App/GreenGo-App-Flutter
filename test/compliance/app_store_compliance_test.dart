@@ -344,13 +344,19 @@ void main() {
               'report it. Guideline 1.2 requires one on every such surface.');
     });
 
-    test('the shared sheet offers the underage reason', () {
+    test('the shared reason list offers underage and CSAE', () {
       // 1.2.1 makes under-age content a first-class concern, so it must be a
-      // selectable reason rather than buried under "Other".
+      // selectable reason rather than buried under "Other"; Terms 19.3
+      // promises the reason "Child sexual exploitation" on every surface.
+      final reasons = File(
+              'lib/features/safety/presentation/widgets/report_reasons.dart')
+          .readAsStringSync();
+      expect(reasons.contains('chatReportReasonUnderage'), isTrue);
+      expect(reasons.contains('safetyReportReasonCsae'), isTrue);
       final sheet = File(
               'lib/features/safety/presentation/widgets/report_block_sheet.dart')
           .readAsStringSync();
-      expect(sheet.contains('chatReportReasonUnderage'), isTrue);
+      expect(sheet.contains('showReportReasonDialog'), isTrue);
     });
   });
 
