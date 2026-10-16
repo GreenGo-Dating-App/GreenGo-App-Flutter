@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/widgets/menu_row.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/tier_entitlements.dart';
@@ -330,7 +331,7 @@ class BusinessHubScreen extends StatelessWidget {
               icon: Icons.storefront_outlined,
               onTap: () => _openStorefront(context),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: MenuRow.gap),
             EditSectionCard(
               title: l10n.businessHubAccount,
               subtitle: profile.isBusiness
@@ -339,21 +340,21 @@ class BusinessHubScreen extends StatelessWidget {
               icon: Icons.storefront,
               onTap: () => _openBusinessAccount(context),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: MenuRow.gap),
             EditSectionCard(
               title: l10n.businessHubAnalytics,
               subtitle: l10n.personalStatisticsSubtitle,
               icon: Icons.insights,
               onTap: () => _openAnalytics(context),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: MenuRow.gap),
             EditSectionCard(
               title: l10n.businessEventsTitle,
               subtitle: l10n.businessSectionSubtitle,
               icon: Icons.event_note,
               onTap: () => _openManageEvents(context),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: MenuRow.gap),
             EditSectionCard(
               key: const ValueKey('business-hub-get-paid'),
               title: l10n.tpGetPaidTitle,
@@ -361,10 +362,10 @@ class BusinessHubScreen extends StatelessWidget {
               icon: Icons.account_balance_wallet_outlined,
               onTap: () => _openGetPaid(context),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: MenuRow.gap),
             if (profile.isBusiness) ...[
               const InvoiceDetailsTile(),
-              const SizedBox(height: 16),
+              const SizedBox(height: MenuRow.gap),
               EditSectionCard(
                 key: const ValueKey('business-hub-invoices'),
                 title: l10n.financeDocsTitle,
@@ -372,7 +373,7 @@ class BusinessHubScreen extends StatelessWidget {
                 icon: Icons.receipt_long_outlined,
                 onTap: () => _openInvoices(context),
               ),
-              const SizedBox(height: 16),
+              const SizedBox(height: MenuRow.gap),
             ],
             EditSectionCard(
               title: l10n.businessHubScanner,
@@ -380,35 +381,35 @@ class BusinessHubScreen extends StatelessWidget {
               icon: Icons.qr_code_scanner,
               onTap: () => _openQuickScanner(context),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: MenuRow.gap),
             EditSectionCard(
               title: l10n.businessHubFollowers,
               subtitle: l10n.businessHubFollowersSubtitle,
               icon: Icons.people_alt_outlined,
               onTap: () => _openFollowers(context),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: MenuRow.gap),
             EditSectionCard(
               title: l10n.promoteTitle,
               subtitle: l10n.featureThisEvent,
               icon: Icons.campaign,
               onTap: () => _openPromote(context),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: MenuRow.gap),
             EditSectionCard(
               title: l10n.editStorefront,
               subtitle: l10n.editStorefrontSubtitle,
               icon: Icons.edit_note,
               onTap: () => _openStorefrontEditor(context),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: MenuRow.gap),
             EditSectionCard(
               title: l10n.businessLeadsTitle,
               subtitle: l10n.businessContact,
               icon: Icons.inbox_outlined,
               onTap: () => _openLeads(context),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: MenuRow.gap),
             EditSectionCard(
               title: l10n.requestVerification,
               subtitle: profile.businessVerified

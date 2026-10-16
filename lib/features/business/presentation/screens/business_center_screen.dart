@@ -6,6 +6,7 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/tier_entitlements.dart';
 import '../../../../core/utils/safe_navigation.dart';
+import '../../../../core/widgets/menu_row.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../finance_documents/data/billing_profile_repository.dart';
 import '../../../finance_documents/presentation/bloc/billing_profile_cubit.dart';
@@ -338,7 +339,7 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
         children: [
           Text(intro, style: const TextStyle(color: AppColors.textSecondary, fontSize: 14, height: 1.4)),
           const SizedBox(height: 16),
-          for (final t in tiles) ...[t, const SizedBox(height: 14)],
+          for (final t in tiles) ...[t, const SizedBox(height: MenuRow.gap)],
         ],
       );
 
@@ -404,39 +405,17 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
           Widget row(CompanyItem i) {
             final v = c[i];
             final ok = v == true;
+            final color = ok ? AppColors.successGreen : (i.required ? AppColors.warningAmber : AppColors.textTertiary);
             return Padding(
-              padding: const EdgeInsets.only(bottom: 8),
-              child: Material(
-                color: AppColors.backgroundCard,
-                borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                child: InkWell(
-                  key: ValueKey('bc-check-${i.name}'),
-                  borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                  onTap: () => open(i),
-                  child: Padding(
-                    padding: const EdgeInsets.all(14),
-                    child: Row(children: [
-                      Icon(ok ? Icons.check_circle : Icons.radio_button_unchecked,
-                          color: ok ? AppColors.successGreen : (i.required ? AppColors.warningAmber : AppColors.textTertiary)),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                          Text(title(i), style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w600)),
-                          const SizedBox(height: 2),
-                          Text(
-                            v == null ? '…' : (ok ? l.bcCheckDone : (i.required ? l.bcCheckMissing : l.bcCheckOptional)),
-                            key: ValueKey('bc-check-${i.name}-state'),
-                            style: TextStyle(
-                              color: ok ? AppColors.successGreen : (i.required ? AppColors.warningAmber : AppColors.textTertiary),
-                              fontSize: 12.5,
-                            ),
-                          ),
-                        ]),
-                      ),
-                      const Icon(Icons.chevron_right, color: AppColors.textTertiary),
-                    ]),
-                  ),
-                ),
+              padding: const EdgeInsets.only(bottom: MenuRow.gap),
+              child: MenuRow(
+                key: ValueKey('bc-check-${i.name}'),
+                title: title(i),
+                subtitle: v == null ? '…' : (ok ? l.bcCheckDone : (i.required ? l.bcCheckMissing : l.bcCheckOptional)),
+                subtitleKey: ValueKey('bc-check-${i.name}-state'),
+                subtitleColor: color,
+                leading: Icon(ok ? Icons.check_circle : Icons.radio_button_unchecked, color: color),
+                onTap: () => open(i),
               ),
             );
           }

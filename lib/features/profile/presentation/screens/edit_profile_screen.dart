@@ -7,6 +7,7 @@ import 'package:get_it/get_it.dart';
 import 'package:provider/provider.dart';
 import 'package:showcaseview/showcaseview.dart';
 
+import '../../../../core/widgets/menu_row.dart';
 import '../../../../core/widgets/website_link.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
@@ -391,7 +392,7 @@ class EditProfileScreen extends StatelessWidget {
                         icon: Icons.photo_library,
                         onTap: () => _navigateToPhotoManagement(context, activeProfile),
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: MenuRow.gap),
                       // Nickname Section
                       EditSectionCard(
                         title: AppLocalizations.of(context)!.nickname,
@@ -401,7 +402,7 @@ class EditProfileScreen extends StatelessWidget {
                         icon: Icons.alternate_email,
                         onTap: () => _navigateToEditNickname(context, activeProfile),
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: MenuRow.gap),
                       // Basic Info Section
                       EditSectionCard(
                         title: AppLocalizations.of(context)!.basicInformation,
@@ -420,7 +421,7 @@ class EditProfileScreen extends StatelessWidget {
                           icon: Icons.edit_note,
                           onTap: () => _navigateToEditBio(context, activeProfile),
                         ),
-                        const SizedBox(height: 16),
+                        const SizedBox(height: MenuRow.gap),
                       ],
                       // Interests Section
                       EditSectionCard(
@@ -429,7 +430,7 @@ class EditProfileScreen extends StatelessWidget {
                         icon: Icons.favorite,
                         onTap: () => _navigateToEditInterests(context, activeProfile),
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: MenuRow.gap),
                       // Location & Languages Section
                       EditSectionCard(
                         title: AppLocalizations.of(context)!.locationAndLanguages,
@@ -449,7 +450,7 @@ class EditProfileScreen extends StatelessWidget {
                           icon: Icons.mic,
                           onTap: () => _navigateToEditVoice(context, activeProfile),
                         ),
-                        const SizedBox(height: 16),
+                        const SizedBox(height: MenuRow.gap),
                       ],
                       // Social Links Section
                       EditSectionCard(
@@ -483,7 +484,7 @@ class EditProfileScreen extends StatelessWidget {
                           );
                         },
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: MenuRow.gap),
                       // Change Password Section
                       EditSectionCard(
                         title: AppLocalizations.of(context)!.changePassword,
@@ -493,7 +494,7 @@ class EditProfileScreen extends StatelessWidget {
                       ),
                       // Notification Settings — available to EVERY user (all
                       // tiers) so anyone can tailor which notifications they get.
-                      const SizedBox(height: 16),
+                      const SizedBox(height: MenuRow.gap),
                       EditSectionCard(
                         title: AppLocalizations.of(context)!.notificationSettingsTitle,
                         subtitle: AppLocalizations.of(context)!.notificationEventCitiesSubtitle,
@@ -502,7 +503,7 @@ class EditProfileScreen extends StatelessWidget {
                       ),
                       // Privacy & data (P2-5): analytics / crash reports and
                       // marketing-email choices, for every user.
-                      const SizedBox(height: 16),
+                      const SizedBox(height: MenuRow.gap),
                       EditSectionCard(
                         title: AppLocalizations.of(context)!.privacySettingsTitle,
                         subtitle: AppLocalizations.of(context)!.privacySettingsSubtitle,
@@ -576,7 +577,7 @@ class EditProfileScreen extends StatelessWidget {
                         icon: Icons.mail_outline,
                         onTap: _contactSupport,
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: MenuRow.gap),
                       // Copyright (DMCA / DSA): policy, notice form, counter-notices.
                       EditSectionCard(
                         key: const ValueKey('help-copyright'),
@@ -586,7 +587,7 @@ class EditProfileScreen extends StatelessWidget {
                         icon: Icons.copyright,
                         onTap: () => Navigator.of(context).push(CopyrightPolicyScreen.route()),
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: MenuRow.gap),
                       // NCII removal request (TAKE IT DOWN Act / Decreto 12.976).
                       EditSectionCard(
                         key: const ValueKey('help-ncii'),
@@ -595,7 +596,7 @@ class EditProfileScreen extends StatelessWidget {
                         icon: Icons.no_photography_outlined,
                         onTap: () => openNciiRequestForm(context),
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: MenuRow.gap),
                       // Coin Shop
                       EditSectionCard(
                         title: AppLocalizations.of(context)!.profileCoinShop,
@@ -603,7 +604,7 @@ class EditProfileScreen extends StatelessWidget {
                         icon: Icons.monetization_on,
                         onTap: () => _navigateToCoinShop(context, activeProfile),
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: MenuRow.gap),
                       // Invite Friends (referral loop)
                       EditSectionCard(
                         title: AppLocalizations.of(context)!.referralInviteFriends,
@@ -616,7 +617,7 @@ class EditProfileScreen extends StatelessWidget {
                         icon: Icons.card_giftcard,
                         onTap: () => _navigateToReferral(context, activeProfile),
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: MenuRow.gap),
                       // Progress & Growth (level, achievements, challenges, ranking)
                       EditSectionCard(
                         title: AppLocalizations.of(context)!.profileProgressGrowth,
@@ -624,7 +625,7 @@ class EditProfileScreen extends StatelessWidget {
                         icon: Icons.trending_up,
                         onTap: () => _navigateToProgress(context, activeProfile),
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: MenuRow.gap),
                       // Usage Stats
                       EditSectionCard(
                         title: AppLocalizations.of(context)!.profileMyUsage,
@@ -646,14 +647,14 @@ class EditProfileScreen extends StatelessWidget {
                         icon: Icons.insights,
                         onTap: () => _navigateToPersonalStats(context, activeProfile),
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: MenuRow.gap),
                       EditSectionCard(
                         title: AppLocalizations.of(context)!.achievementsTitle,
                         subtitle: AppLocalizations.of(context)!.achievementsSubtitle,
                         icon: Icons.emoji_events,
                         onTap: () => _navigateToAchievements(context, activeProfile),
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: MenuRow.gap),
                       EditSectionCard(
                         title: AppLocalizations.of(context)!.culturalPassportTitle,
                         subtitle: AppLocalizations.of(context)!.culturalPassportSubtitle,
@@ -702,7 +703,7 @@ class EditProfileScreen extends StatelessWidget {
                           icon: Icons.verified_user,
                           onTap: () => _navigateToAdminVerification(context, activeProfile),
                         ),
-                        const SizedBox(height: 16),
+                        const SizedBox(height: MenuRow.gap),
                         EditSectionCard(
                           title: AppLocalizations.of(context)!.reportsPanel,
                           subtitle: AppLocalizations.of(context)!.reviewReportedMessages,
