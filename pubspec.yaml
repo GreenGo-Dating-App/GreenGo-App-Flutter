@@ -220,6 +220,7 @@ flutter:
     - assets/lottie/
     - assets/fonts/
     - assets/legal/
+    - assets/legal/upcoming/
     - assets/sounds/
     - assets/chat_datasets/
     - assets/i18n/
