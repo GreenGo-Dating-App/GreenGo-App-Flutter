@@ -1369,6 +1369,18 @@ class GiftCoinsResult {
   final int senderNewBalance;
 }
 
+/// Coin gift limits (Terms 8.5 a/b). The server enforces them too
+/// (`giftCoins` / `sendGift`); the client checks first for a clear message.
+abstract final class CoinGiftLimits {
+  static const int minAmount = 10;
+  static const int maxAmount = 1000;
+  static const int maxGiftsPerDay = 10;
+  static const int maxCoinsPerDay = 5000;
+
+  static bool isValidAmount(int? amount) =>
+      amount != null && amount >= minAmount && amount <= maxAmount;
+}
+
 /// A coin refusal the user should be told about in plain words.
 ///
 /// [reason] is the server reason code: `insufficient-coins`,
@@ -1381,6 +1393,9 @@ class CoinRefusalException implements Exception {
   static const String insufficientCoins = 'insufficient-coins';
   static const String giftPurchaseHold = 'gift-purchase-hold';
   static const String giftVelocityLimit = 'gift-velocity-limit';
+
+  /// Gift amount outside 10..1,000 coins (Terms 8.5 a).
+  static const String giftAmountRange = 'gift-amount-range';
   static const String unknownFeature = 'unknown-feature';
 
   /// The feature is not part of the caller's membership tier (server check).
@@ -1393,6 +1408,7 @@ class CoinRefusalException implements Exception {
     insufficientCoins,
     giftPurchaseHold,
     giftVelocityLimit,
+    giftAmountRange,
     unknownFeature,
     tierRequired,
     businessRequired,

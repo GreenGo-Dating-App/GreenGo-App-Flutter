@@ -2752,6 +2752,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             decoration: InputDecoration(
               hintText: AppLocalizations.of(context)!.shopEnterAmount,
               hintStyle: TextStyle(color: Colors.white.withOpacity(0.4)),
+              helperText: AppLocalizations.of(context)!.coinsGiftAmountRange(
+                  CoinGiftLimits.minAmount, CoinGiftLimits.maxAmount),
+              helperStyle: TextStyle(color: Colors.white.withOpacity(0.5)),
+              helperMaxLines: 2,
               prefixIcon: const Icon(Icons.monetization_on, color: AppColors.richGold, size: 20),
               filled: true,
               fillColor: Colors.black26,
@@ -2819,6 +2823,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     final amount = int.tryParse(amountText);
     if (amount == null || amount <= 0) {
       _showError(AppLocalizations.of(context)!.shopEnterValidAmount);
+      return;
+    }
+
+    // Terms 8.5 a: a gift is between 10 and 1,000 coins.
+    if (!CoinGiftLimits.isValidAmount(amount)) {
+      _showError(AppLocalizations.of(context)!.coinsGiftAmountRange(
+          CoinGiftLimits.minAmount, CoinGiftLimits.maxAmount));
       return;
     }
 
@@ -3018,6 +3029,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         CoinRefusalException.insufficientCoins => l10n.shopInsufficientCoins,
         CoinRefusalException.giftPurchaseHold => l10n.coinsGiftPurchaseHold,
         CoinRefusalException.giftVelocityLimit => l10n.coinsGiftDailyLimit,
+        CoinRefusalException.giftAmountRange => l10n.coinsGiftAmountRange(
+            CoinGiftLimits.minAmount, CoinGiftLimits.maxAmount),
         _ => l10n.shopFailedToSendCoins,
       });
       setState(() => _isSendingCoins = false);

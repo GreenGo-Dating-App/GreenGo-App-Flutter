@@ -249,7 +249,7 @@ export async function handleRequestAccountDeletion(req: Request, res: Response):
     console.error('requestAccountDeletion failed', e?.message || e);
     await finish(500, {
       success: false,
-      error: 'We could not process the request. Please try again or contact info@greengochat.com.',
+      error: 'We could not process the request. Please try again or contact privacy@greengochat.com.',
     });
   }
 }
@@ -352,7 +352,7 @@ export async function handleConfirmAccountDeletion(req: Request, res: Response):
       res.status(500).type('html').send(page(
         'Something went wrong',
         '<p>We could not finish deleting your account. Nothing was lost; please open the link again in a few minutes, ' +
-          'or contact <a href="mailto:info@greengochat.com">info@greengochat.com</a>.</p>',
+          'or contact <a href="mailto:privacy@greengochat.com">privacy@greengochat.com</a>.</p>',
       ));
       return;
     }

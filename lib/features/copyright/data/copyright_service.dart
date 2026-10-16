@@ -4,11 +4,11 @@ import 'package:flutter/foundation.dart';
 
 import '../../../generated/app_localizations.dart';
 
-/// Designated copyright agent shown in the app (policy screen). The postal
-/// address is filled in by the owner once the DMCA agent is registered
-/// (see `_Plans & Docs/Copyright-Policy-2026-10-09.md`).
+/// Designated copyright agent shown in the app (policy screen): the company
+/// postal address exactly as in Terms section 28 (contact). Keep in sync with
+/// functions/src/copyright/model.ts AGENT.postalAddress.
 const String kCopyrightAgentPostalAddress =
-    '[postal address to be filled by owner]'; // i18n-ignore: legal placeholder, replaced by the owner
+    'Av. Dona Helena Pereira de Moraes, 290, Sao Paulo - SP, 05707-400, Brazil'; // i18n-ignore: postal address (Terms 28)
 
 /// Content a copyright notice is about, pre-filled from a report entry point.
 /// [path] is the Firestore path the server disables on acceptance.

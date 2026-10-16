@@ -65,8 +65,10 @@
  *   `lastMessage` preview written by the deleted user is cleared the same way.
  *
  * NOT DONE HERE (enqueued in `deletion_followups/{uid}` for a later worker):
- *   Stripe customer deletion and GA4 / Crashlytics user-data deletion. Those
- *   are external API calls and are out of scope for this change.
+ *   - Stripe: ./deletionFollowups.ts cancels the user's web subscriptions
+ *     immediately (Terms 7.3). The Stripe customer is kept (its invoices are
+ *     bookkeeping records).
+ *   - GA4 / Crashlytics user-data deletion: still TODO (P2-7).
  */
 
 import * as admin from 'firebase-admin';
@@ -792,11 +794,14 @@ async function runInventory(uid: string, report: DeletionReport, legalHold = fal
   await step('followup:enqueue', async () => {
     await db().collection(DELETION_FOLLOWUPS).doc(uid).set(
       {
-        // TODO(P2-7): a worker deletes the Stripe customer(s) and requests
-        // GA4 / Crashlytics user deletion, then deletes this doc.
+        // Stripe: ./deletionFollowups.ts cancels the user's web
+        // subscriptions (processDeletionFollowup trigger + retry schedule).
+        // TODO(P2-7): GA4 / Crashlytics user deletion is still unprocessed.
         ...(stripeCustomerId ? { stripeCustomerId } : {}),
         ...(stripeTestCustomerId ? { stripeTestCustomerId } : {}),
         stripe: !!(stripeCustomerId || stripeTestCustomerId),
+        // (Re)processing is idempotent: cancelled subscriptions stay cancelled.
+        stripeStatus: 'pending',
         analytics: true,
         crashlytics: true,
         status: 'pending',

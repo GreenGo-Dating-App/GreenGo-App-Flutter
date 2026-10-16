@@ -446,6 +446,10 @@ export {
   deleteMyAccount,
 } from './auth/accountDeletionEndpoints';
 
+// Account deletion follow-up: cancels the user's web (Stripe) subscriptions
+// (Terms 7.3). Trigger on deletion_followups/{uid} + 30-min retry schedule.
+export { processDeletionFollowup, retryDeletionFollowups } from './auth/deletionFollowups';
+
 // Data-subject access / portability (P3-2; GDPR Art. 15/20, LGPD Art. 18):
 // ZIP of the caller's data in private exports/{uid}/, 24 h signed link,
 // 1 per 24 h; exports deleted after 7 days.

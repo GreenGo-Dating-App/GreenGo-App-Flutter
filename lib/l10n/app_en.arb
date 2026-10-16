@@ -1495,7 +1495,7 @@
   },
   "delete": "Delete",
   "deleteAccount": "Delete Account",
-  "deleteAccountConfirmation": "Are you sure you want to delete your account? This action cannot be undone and all your data will be permanently deleted.",
+  "deleteAccountConfirmation": "Delete your account? This cannot be undone.\n\n• Your account and profile are deleted. Some records are kept where the law requires it (payments and invoices, safety reports); see the Privacy Policy.\n• Any Coins left in your account are lost.\n• A membership bought on the web is cancelled.\n• A membership bought in Google Play or the App Store is NOT cancelled by deleting your account: cancel it in the store, or the store keeps charging you.",
   "details": "Details",
   "difficultyLabel": "Difficulty",
   "directMessageCost": "Direct messaging costs {cost} coins. Would you like to buy more coins?",
@@ -3790,7 +3790,7 @@
   "profileContinue": "Continue",
   "profileDataExportSent": "Data export sent to your email",
   "profileDateOfBirth": "Date of Birth",
-  "profileDeleteAccountWarning": "This action is permanent and cannot be undone. All your data, connections, and messages will be deleted. Please enter your password to confirm.",
+  "profileDeleteAccountWarning": "This is permanent. Your account and profile are deleted (some records are kept as the law requires; see the Privacy Policy), remaining Coins are lost and a web membership is cancelled. Cancel any Google Play or App Store subscription in the store. Enter your password to confirm.",
   "profileDiscoveryRestarted": "Discovery restarted! You can now see all profiles again.",
   "profileDisplayName": "Display Name",
   "profileDobInfo": "Your date of birth cannot be changed for age verification purposes. Your exact age is visible to your connections.",
@@ -7956,7 +7956,7 @@
   "@checkoutCoinWaiverCheckbox": {
     "description": "EU CRD art. 16(m) immediate-delivery waiver checkbox. Legal wording: change only with counsel and bump kCoinWaiverVersion / COIN_WAIVER_VERSION."
   },
-  "checkoutMembershipWithdrawalInfo": "Right of withdrawal: you can withdraw from this membership within 14 days of purchase (7 days for purchases in Brazil) without giving a reason and receive a full refund, using \"Withdraw from contract\" in the Shop or on our website. The membership renews automatically until you cancel; you can cancel anytime in the billing portal.",
+  "checkoutMembershipWithdrawalInfo": "Right of withdrawal: in the EU, EEA and UK, 14 days from purchase; as the membership starts when you pay, we refund the price minus the days already used. In Brazil, 7 days with a full refund. Use \"Withdraw from contract\" (Profile > Account Settings > Purchases & withdrawal) or email billing@greengochat.com. Renews automatically until you cancel in the billing portal.",
   "checkoutContinueToPayment": "Continue to payment",
   "checkoutAccept": "Accept",
   "webPaymentCancelled": "Payment cancelled. You have not been charged.",
@@ -7967,8 +7967,8 @@
   "webCheckoutAlreadySubscribed": "You already have this plan or a higher one. To move to a lower plan, cancel the current one first.",
   "webCheckoutTermsRequired": "Please accept the terms before paying.",
   "withdrawFromContract": "Withdraw from contract",
-  "withdrawalDialogIntro": "Choose the purchase to withdraw from. We will email a confirmation link to the address used for the purchase; nothing is cancelled or refunded until you confirm.",
-  "withdrawalNothingEligible": "None of your web purchases can be withdrawn from right now. Memberships can be withdrawn within 14 days of purchase (7 days in Brazil); coin purchases only if the right was not waived at checkout.",
+  "withdrawalDialogIntro": "Choose the purchase to withdraw from. We will email a confirmation link to the address used for the purchase; nothing is cancelled or refunded until you confirm. A membership that has already started is refunded minus the days used (full refund in Brazil).",
+  "withdrawalNothingEligible": "None of your web purchases can be withdrawn from right now. In the EU, EEA and UK, memberships can be withdrawn within 14 days of purchase, and coins only if the right was not waived at checkout. In Brazil, any web purchase can be withdrawn within 7 days.",
   "withdrawalDeadline": "Withdraw by {date}",
   "@withdrawalDeadline": {
     "description": "Deadline to withdraw from a web purchase",
@@ -7979,7 +7979,7 @@
     }
   },
   "withdrawalRequestSent": "Check your email and confirm the withdrawal with the link we sent.",
-  "withdrawalRequestFailed": "The withdrawal request could not be sent. Please try again or email support@greengochat.com.",
+  "withdrawalRequestFailed": "The withdrawal request could not be sent. Please try again or email billing@greengochat.com.",
   "webSubscriptionRenewsOn": "{plan}: {price} per {interval}. Renews automatically on {date}.",
   "@webSubscriptionRenewsOn": {
     "description": "Web (Stripe) auto-renew disclosure for an active subscription",
@@ -14854,5 +14854,50 @@
   "communitiesPostRemoved": "Post removed",
   "@communitiesPostRemoved": {
     "description": "Snackbar after a moderator removed a post."
+  },
+  "coinsGiftAmountRange": "A gift must be between {min} and {max} coins.",
+  "@coinsGiftAmountRange": {
+    "description": "Send coins form: allowed gift amount (Terms 8.5 a). Helper text and error.",
+    "placeholders": {
+      "min": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "purchasesWithdrawalTitle": "Purchases & withdrawal",
+  "@purchasesWithdrawalTitle": {
+    "description": "Profile > Account Settings entry (Terms 9.4/9.5). Wording fixed by the owner."
+  },
+  "purchasesWithdrawalSubtitle": "Your web purchases and the right to withdraw",
+  "@purchasesWithdrawalSubtitle": {
+    "description": "Subtitle of the Purchases & withdrawal entry"
+  },
+  "purchasesWithdrawalWebIntro": "Purchases you made on the web (greengochat.com and the web app), paid through Stripe.",
+  "purchasesWithdrawalMemberships": "Memberships",
+  "purchasesWithdrawalOrders": "Purchases",
+  "purchasesWithdrawalEmpty": "There are no web purchases on this account.",
+  "purchasesWithdrawalLoadFailed": "Could not load your purchases. Please try again.",
+  "purchasesWithdrawalWithdrawSubtitle": "Choose a purchase that is still within its withdrawal period",
+  "purchasesWithdrawalPortal": "Billing portal",
+  "purchasesWithdrawalPortalSubtitle": "Invoices, payment methods and cancelling (Stripe)",
+  "purchasesWithdrawalRules": "Your right of withdrawal: in the EU, EEA and UK you can withdraw within 14 days of purchase. A membership that has already started is refunded minus a proportionate amount for the days used; coins only if you did not waive the right at checkout. In Brazil you can withdraw from a purchase within 7 days and receive a full refund. You can also write to billing@greengochat.com. We refund you with the same payment method within 14 days (15 days in Brazil).",
+  "@purchasesWithdrawalRules": {
+    "description": "Summary of Terms 9.4 / 9.5 withdrawal rules. Legal wording: keep consistent with the Terms."
+  },
+  "purchasesWithdrawalStoreHelp": "Purchases made in the Android or iPhone app were sold by Google Play or Apple. Ask them for a refund or to withdraw:",
+  "@purchasesWithdrawalStoreHelp": {
+    "description": "App purchases: refund / withdrawal through Google Play or Apple (Terms 9.4 e, 9.5 c)"
+  },
+  "purchasesWithdrawalGooglePlayPath": "Order history > Request a refund",
+  "purchasesWithdrawalApplePath": "reportaproblem.apple.com",
+  "purchasesWithdrawalEmailWeb": "If the store does not solve it, or for purchases paid to us directly, write to us.",
+  "@purchasesWithdrawalEmailWeb": {
+    "description": "Under the billing@ email row in the app-store help sheet"
+  },
+  "@deleteAccountConfirmation": {
+    "description": "Delete account dialog (Terms 7.3, 8.7; privacy policy retention). Keep the bullets."
   }
 }

@@ -45,7 +45,7 @@ export const sendTransactionalEmail = functions.https.onCall(monitored("sendTran
     // In production, send via SendGrid:
     // const msg = {
     //   to: recipientEmail,
-    //   from: 'noreply@greengo.app',
+    //   from: 'noreply@mail.greengochat.com',
     //   subject,
     //   html: htmlBody,
     // };
@@ -389,7 +389,7 @@ function getEmailTemplate(emailType: string): any {
     backgroundColor: '#000000',
     primaryColor: '#FFD700',
     textColor: '#FFFFFF',
-    logoUrl: 'https://greengo.app/logo.png',
+    logoUrl: 'https://greengo-chat.web.app/icons/Icon-192.png',
   };
 
   const templates: { [key: string]: any } = {
@@ -404,7 +404,7 @@ function getEmailTemplate(emailType: string): any {
           <p>Hi {{userName}},</p>
           <p>We're excited to have you join our community! GreenGo is where you discover cultures, exchange languages and meet people from around the world.</p>
           <p>Your profile is {{profileCompleteness}}% complete. Complete it to make more connections!</p>
-          <a href="https://greengo.app/profile" style="background-color: ${branding.primaryColor}; color: #000; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px;">Complete Profile</a>
+          <a href="https://greengo-chat.web.app" style="background-color: ${branding.primaryColor}; color: #000; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px;">Complete Profile</a>
           <p style="margin-top: 30px;">Happy exploring!</p>
           <p>The GreenGo Team</p>
         </div>
@@ -422,7 +422,7 @@ function getEmailTemplate(emailType: string): any {
             <li><strong style="color: ${branding.primaryColor};">{{newMessages}}</strong> messages exchanged</li>
             <li><strong style="color: ${branding.primaryColor};">{{newLikes}}</strong> people wanted to connect</li>
           </ul>
-          <a href="https://greengo.app/matches" style="background-color: ${branding.primaryColor}; color: #000; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px;">View Your Connections</a>
+          <a href="https://greengo-chat.web.app" style="background-color: ${branding.primaryColor}; color: #000; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px;">View Your Connections</a>
         </div>
       `,
     },
@@ -435,7 +435,7 @@ function getEmailTemplate(emailType: string): any {
           <p>It's been {{daysSinceLastActive}} days since your last visit. You've been missed!</p>
           <p><strong style="color: ${branding.primaryColor};">{{newLikesSinceLastVisit}} people</strong> wanted to connect with you while you were away.</p>
           <p>You have <strong>{{totalMatches}} connections</strong> waiting for you!</p>
-          <a href="https://greengo.app/likes" style="background-color: ${branding.primaryColor}; color: #000; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px;">See Who Wants to Connect</a>
+          <a href="https://greengo-chat.web.app" style="background-color: ${branding.primaryColor}; color: #000; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px;">See Who Wants to Connect</a>
         </div>
       `,
     },

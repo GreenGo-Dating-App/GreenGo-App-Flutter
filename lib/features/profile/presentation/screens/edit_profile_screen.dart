@@ -71,6 +71,7 @@ import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
 import '../widgets/ai_services_settings_card.dart';
 import '../manage_subscription.dart';
+import '../purchases_withdrawal.dart';
 import '../widgets/edit_section_card.dart';
 import 'edit_basic_info_screen.dart';
 import 'edit_bio_screen.dart';
@@ -495,6 +496,17 @@ class EditProfileScreen extends StatelessWidget {
                         subtitle: AppLocalizations.of(context)!.manageSubscriptionSubtitle,
                         icon: Icons.card_membership,
                         onTap: () => ManageSubscription.open(context),
+                      ),
+                      const SizedBox(height: MenuRow.gap),
+                      // Purchases & withdrawal (Terms 9.4 / 9.5): web purchases
+                      // + "Withdraw from contract"; in the apps, how to ask
+                      // Google Play / Apple.
+                      EditSectionCard(
+                        key: const ValueKey('profile-purchases-withdrawal'),
+                        title: AppLocalizations.of(context)!.purchasesWithdrawalTitle,
+                        subtitle: AppLocalizations.of(context)!.purchasesWithdrawalSubtitle,
+                        icon: Icons.receipt_long_outlined,
+                        onTap: () => PurchasesWithdrawal.open(context),
                       ),
                       const SizedBox(height: MenuRow.gap),
                       // Change Password Section
@@ -1453,9 +1465,13 @@ class EditProfileScreen extends StatelessWidget {
           AppLocalizations.of(dialogContext)!.deleteAccount,
           style: const TextStyle(color: AppColors.textPrimary),
         ),
-        content: Text(
-          AppLocalizations.of(dialogContext)!.deleteAccountConfirmation,
-          style: const TextStyle(color: AppColors.textSecondary),
+        // Terms 7.3 / 8.7: what deleting does (and does not) do.
+        content: SingleChildScrollView(
+          child: Text(
+            AppLocalizations.of(dialogContext)!.deleteAccountConfirmation,
+            key: const ValueKey('delete-account-consequences'),
+            style: const TextStyle(color: AppColors.textSecondary, height: 1.4),
+          ),
         ),
         actions: [
           TextButton(
@@ -1494,45 +1510,47 @@ class EditProfileScreen extends StatelessWidget {
             AppLocalizations.of(context)!.profileConfirmYourPassword,
             style: const TextStyle(color: AppColors.textPrimary),
           ),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                AppLocalizations.of(context)!.profileDeleteAccountWarning,
-                style: const TextStyle(color: AppColors.textSecondary, fontSize: 14, height: 1.5),
-              ),
-              const SizedBox(height: 16),
-              TextField(
-                controller: passwordController,
-                obscureText: obscurePassword,
-                style: const TextStyle(color: AppColors.textPrimary),
-                decoration: InputDecoration(
-                  labelText: AppLocalizations.of(context)!.password,
-                  labelStyle: const TextStyle(color: AppColors.textSecondary),
-                  errorText: errorText,
-                  suffixIcon: IconButton(
-                    icon: Icon(
-                      obscurePassword ? Icons.visibility_off : Icons.visibility,
-                      color: AppColors.textSecondary,
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  AppLocalizations.of(context)!.profileDeleteAccountWarning,
+                  style: const TextStyle(color: AppColors.textSecondary, fontSize: 14, height: 1.5),
+                ),
+                const SizedBox(height: 16),
+                TextField(
+                  controller: passwordController,
+                  obscureText: obscurePassword,
+                  style: const TextStyle(color: AppColors.textPrimary),
+                  decoration: InputDecoration(
+                    labelText: AppLocalizations.of(context)!.password,
+                    labelStyle: const TextStyle(color: AppColors.textSecondary),
+                    errorText: errorText,
+                    suffixIcon: IconButton(
+                      icon: Icon(
+                        obscurePassword ? Icons.visibility_off : Icons.visibility,
+                        color: AppColors.textSecondary,
+                      ),
+                      onPressed: () => setDialogState(() => obscurePassword = !obscurePassword),
                     ),
-                    onPressed: () => setDialogState(() => obscurePassword = !obscurePassword),
-                  ),
-                  enabledBorder: const OutlineInputBorder(
-                    borderSide: BorderSide(color: AppColors.textSecondary),
-                  ),
-                  focusedBorder: const OutlineInputBorder(
-                    borderSide: BorderSide(color: AppColors.richGold),
-                  ),
-                  errorBorder: const OutlineInputBorder(
-                    borderSide: BorderSide(color: AppColors.errorRed),
-                  ),
-                  focusedErrorBorder: const OutlineInputBorder(
-                    borderSide: BorderSide(color: AppColors.errorRed),
+                    enabledBorder: const OutlineInputBorder(
+                      borderSide: BorderSide(color: AppColors.textSecondary),
+                    ),
+                    focusedBorder: const OutlineInputBorder(
+                      borderSide: BorderSide(color: AppColors.richGold),
+                    ),
+                    errorBorder: const OutlineInputBorder(
+                      borderSide: BorderSide(color: AppColors.errorRed),
+                    ),
+                    focusedErrorBorder: const OutlineInputBorder(
+                      borderSide: BorderSide(color: AppColors.errorRed),
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
           actions: [
             TextButton(
