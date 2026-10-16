@@ -146,6 +146,13 @@ abstract class CommunitiesRemoteDataSource {
     required String userId,
   });
 
+  /// Remove a post (message) from a community - owner/admin action (Terms
+  /// 17.3; firestore rules: messages delete = isCommunityMod()).
+  Future<void> deleteMessage({
+    required String communityId,
+    required String messageId,
+  });
+
   /// Communities the user OWNS or ADMINISTERS (for the event → community linker).
   Future<List<CommunityModel>> getManageableCommunities(String userId);
 
@@ -923,6 +930,15 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
   }) async {
     // Reuse the leave flow (delete member doc + decrement count).
     await leaveCommunity(communityId: communityId, userId: userId);
+  }
+
+  @override
+  Future<void> deleteMessage({
+    required String communityId,
+    required String messageId,
+  }) async {
+    // One doc delete; the live message stream drops it for every reader.
+    await _messagesRef(communityId).doc(messageId).delete();
   }
 
   @override

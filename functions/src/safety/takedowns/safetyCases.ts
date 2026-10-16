@@ -32,7 +32,9 @@
  *   confirm: NCII -> held copies deleted, hashes made permanent, uploader
  *            strike/suspend/ban + DSA statement of reasons, requester told.
  *            CSAE -> held copies moved into the legal hold, hashes permanent,
- *            NO notice to the uploader (no tipping-off), report package next.
+ *            account ALWAYS banned (Terms 19.2 a: closed immediately, without
+ *            prior warning), NO notice to the uploader (no tipping-off),
+ *            report package next.
  *   restore: everything put back exactly, hashes deactivated, requester told.
  *
  * Every step writes safety_cases/{id}/audit and admin actions also go to
@@ -612,6 +614,16 @@ export const SANCTIONS: Sanction[] = ['none', 'strike', 'suspend', 'ban'];
 const SUSPEND_DAYS = 30;
 
 /**
+ * The sanction actually applied when a case is confirmed. Terms 19.2 a: for
+ * child sexual abuse or exploitation we "close the accounts involved,
+ * immediately and without prior warning" - a confirmed CSAE case ALWAYS bans
+ * (whatever the moderator picked); NCII keeps the moderator's choice.
+ */
+export function effectiveSanction(kind: SafetyKind, requested: Sanction): Sanction {
+  return kind === 'csae' ? 'ban' : requested;
+}
+
+/**
  * Returns the effects (DSA art. 20 reversal on appeal, moderationEffects.ts).
  * The suspension / ban is tagged with the decision id `safety_<caseId>`, so
  * an appeal only lifts THIS sanction, never a newer one.
@@ -713,6 +725,7 @@ export async function decideSafetyCase(p: DecideInput): Promise<{ status: CaseSt
   const hidden = (c.hidden || []) as HiddenItem[];
   let status: CaseStatus;
   let hashesActivated = 0;
+  let sanction: Sanction = 'none';
   try {
     if (p.decision === 'restore') {
       const errors = await restoreContent(p.caseId, hidden);
@@ -736,11 +749,12 @@ export async function decideSafetyCase(p: DecideInput): Promise<{ status: CaseSt
       const reason = kind === 'ncii'
         ? 'Intimate image shared without consent (TAKE IT DOWN Act / Decreto 12.976/2026)'
         : 'Child sexual abuse or exploitation material';
-      const sanctionEffects = uploader ? await applySanction(uploader, p.sanction, kind, p.caseId, reason) : [];
+      sanction = effectiveSanction(kind, p.sanction);
+      const sanctionEffects = uploader ? await applySanction(uploader, sanction, kind, p.caseId, reason) : [];
       status = 'confirmed';
       await ref.update({
         status, decidedAt: TS.now(), decidedBy: p.admin.uid, nextEscalationAt: null,
-        decision: { action: 'confirm', sanction: p.sanction, notes: p.notes },
+        decision: { action: 'confirm', sanction, requestedSanction: p.sanction, notes: p.notes },
         updatedAt: TS.now(),
       });
       // DSA art. 17 statement of reasons to the uploader - NCII only. A CSAE
@@ -753,7 +767,7 @@ export async function decideSafetyCase(p: DecideInput): Promise<{ status: CaseSt
           await notifyAffectedUserOfDecision({
             queueId: `safety_${p.caseId}`,
             userId: uploader,
-            action: p.sanction === 'ban' ? 'banUser' : p.sanction === 'suspend' ? 'suspendUser' : 'removeContent',
+            action: sanction === 'ban' ? 'banUser' : sanction === 'suspend' ? 'suspendUser' : 'removeContent',
             reasonCode: 'ncii',
             explanation: reason,
             moderatorId: p.admin.uid,
@@ -778,14 +792,14 @@ export async function decideSafetyCase(p: DecideInput): Promise<{ status: CaseSt
     throw e;
   }
   await db().collection(SAFETY_STATUS).doc(p.caseId).set({ status, updatedAt: TS.now() }, { merge: true });
-  await auditCase(p.caseId, `decision_${p.decision}`, p.admin, { sanction: p.sanction, notes: p.notes });
+  await auditCase(p.caseId, `decision_${p.decision}`, p.admin, { sanction, requestedSanction: p.sanction, notes: p.notes });
   await db().collection('admin_audit_log').add({
     adminId: p.admin.uid,
     adminRole: p.admin.role,
     action: p.decision === 'restore' ? 'safety_restore_content' : 'safety_confirm_removal',
     targetType: 'safety_case',
     targetId: p.caseId,
-    details: { kind, sanction: p.sanction },
+    details: { kind, sanction },
     timestamp: admin.firestore.FieldValue.serverTimestamp(),
   });
   return { status, hashesActivated };

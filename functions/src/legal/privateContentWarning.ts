@@ -35,16 +35,18 @@ import * as admin from 'firebase-admin';
 import { createHash } from 'crypto';
 import '../shared/firebaseAdmin';
 import { AppError, handleError } from '../shared/utils';
+import { TERMS_VERSION } from '../shared/legalVersions';
 
 export const ACK_COLLECTION = 'legal_acknowledgements';
 export const ACK_KIND = 'private_content_warning';
 /** Versions the server accepts. Add the new one here when the text changes. */
 export const PRIVATE_CONTENT_WARNING_VERSIONS: readonly string[] = ['pcw-1'];
 /**
- * Terms of Service version whose clause (§16.9(d)) this warning implements.
- * Single constant: a Terms bump is a one-line change here.
+ * Current Terms of Service version, recorded with every acceptance (§16.9(d):
+ * "the version of these Terms"). One shared constant, kept equal to the
+ * app's kTermsVersion by __tests__/unit/legalVersions.test.ts.
  */
-export const TERMS_VERSION = '5.1.0';
+export { TERMS_VERSION };
 /** Per user and version: more records than this are not written again. */
 export const MAX_ACKS_PER_VERSION = 20;
 

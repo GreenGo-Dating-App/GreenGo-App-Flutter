@@ -57,7 +57,7 @@ Hiding happens before review, so a false request can hide someone's photo for up
 ## 4. CSAE (child sexual abuse / exploitation)
 
 ### 4.1 Triggers
-- A user report with the reason "Child sexual abuse or exploitation", or CSAE keywords anywhere in the report text.
+- A user report with the reason "Child sexual exploitation" (Terms 19.3; offered on every report surface, sent as the language-neutral code `csae`), or CSAE keywords anywhere in the report text.
 - A hash match on a **public** upload against `csam_hash_list` (§5).
 
 ### 4.2 What the system does at once
@@ -73,21 +73,25 @@ Hiding happens before review, so a false request can hide someone's photo for up
 
 ### 4.3 Moderator steps
 - **Do not open, download, forward, screenshot or email any image.** The panel never shows CSAE content. Decide from the report, the hash-match type and the metadata.
-- **Confirm** (usually with **ban**): the copies move into the legal hold. The suspect is **not** notified, to avoid tipping them off.
+- **Confirm**: the account is **always banned** (Auth disabled), whatever sanction is picked - Terms 19.2 a: "close the accounts involved, immediately and without prior warning". The case records the applied `decision.sanction: 'ban'` and the picked `requestedSanction`. The copies move into the legal hold. The suspect is **not** notified, to avoid tipping them off.
+- There is **no automatic restriction on a mere report**: the reported content is hidden at once (4.2), the account is closed when a moderator confirms. (Terms 19.2 a speaks of closing accounts involved in CSAE, not of restricting reported accounts before review; `app_config/moderation_settings.reportAutoActionsEnabled` stays the general switch for report-based auto-actions.)
 - **Restore** is superAdmin-only (for example a confirmed false positive from a perceptual hash match).
 
 ### 4.4 Reporting (superAdmin)
-1. Safety → open the case → **Generate report package** for NCMEC, PF_BR or SAFERNET. The package (JSON) holds the case timeline, reported-person identifiers, account dates, IP logs if any, file list with hashes, and the legal-hold Storage paths. It is stored under `legal_holds/{holdId}/report_packages`. Nothing is sent automatically.
+1. Safety → open the case → **Generate report package** for NCMEC, PF_BR, SAFERNET or EU_INHOPE (Terms 19.2 b: NCMEC and the competent authorities in Brazil, the EU and other countries). The package names `legal@greengochat.com` as GreenGo's contact point for authorities (Terms 18.7). The package (JSON) holds the case timeline, reported-person identifiers, account dates, IP logs if any, file list with hashes, and the legal-hold Storage paths. It is stored under `legal_holds/{holdId}/report_packages`. Nothing is sent automatically.
 2. **NCMEC CyberTipline** (US law; also a Google Play requirement): submit through the ESP portal or API with the registered ESP account. Upload the files from `legal_holds/{holdId}/files/` through the portal only. Then use **Mark reported** to record the CyberTipline report number.
 3. **Brazil**: report to the Polícia Federal through its online channel for crimes against children (or the channel set by Decreto 12.882/2026), and/or to **SaferNet Brasil** (https://new.safernet.org.br/denuncie). Give identifiers and metadata. Arrange delivery of the media only through the channel the authority specifies. Record the protocol number with **Mark reported**.
-4. Answer law-enforcement preservation and production requests from the hold. Use **Extend hold** when an investigation needs the data for longer than 1 year.
+4. **European Union** (`EU_INHOPE`): when the reported person, the victim or the upload is linked to an EU Member State (profile country, IP logs), report to that Member State's national CSAM hotline in the INHOPE network (https://www.inhope.org/EN#hotlineReferral). The hotline assesses the report and forwards it to the national police and Europol (EC3). Give identifiers and the preserved-evidence reference only - never upload or email images. If a child is in immediate danger, also call the national police (112). Where national law requires a direct report to law enforcement, file that too. Record each reference with **Mark reported**.
+5. **Other countries**: report to the national police of the country concerned (or its INHOPE hotline, if it has one) and record the reference with **Mark reported**.
+6. Answer law-enforcement preservation and production requests from the hold. Use **Extend hold** when an investigation needs the data for longer than 1 year.
 
 ### 4.5 Retention
 Holds last 365 days (REPORT Act). `legalHoldExpirySweep` runs daily and marks expired holds `expired_pending_purge` with an alert. It deletes preserved data only when counsel has set `app_config/safety_settings.autoPurgeExpiredHolds = true`.
 
 ## 5. Hash matching (scope: EU-19)
-- **Scanned**: public uploads only. That means profile photos (not private-album photos), community media, storefronts, video-profile thumbnails and event covers (`profiles/`, `communities/`, `storefronts/`, `video_profiles/`).
-- **Not scanned, for anyone**: private chat, group and support images. The EU derogation for voluntary scanning of private messages (Reg. 2021/1232) lapsed on 3 Apr 2026. Do not enable scanning there until counsel decides. Reports of private content still work, because a report is not scanning.
+- **Always scanned**: public uploads. That means profile photos (not private-album photos), community media, storefronts, video-profile thumbnails and event covers (`profiles/`, `communities/`, `storefronts/`, `video_profiles/`).
+- **Scanned only when `app_config/safety_settings.privateHashScanEnabled = true`** (default off): 1:1 chat images (`chat_images/`), group media (`group_media/`) and private-album photos (`profiles/` with `visibility: private`). Same hash lookup as public uploads; the flag is read at most once per 5 minutes per instance. The chat/group uploader comes from the `uploaderId` object metadata the app stamps (older objects without it open a case with no reported user). The EU derogation for voluntary scanning of private messages (Reg. 2021/1232) lapsed on 3 Apr 2026: **do not turn the flag on until counsel decides** (owner step, section 6).
+- **Never scanned**: support attachments, ticket receipts, voice and video. Reports of private content always work, because a report is not scanning.
 - **Lists**:
   - `blocked_media_hashes`: images we removed ourselves.
   - `csam_hash_list`: external lists imported by a superAdmin through `safetyAdmin {op:'importCsamHashes'}`. Supported entries: md5, sha1 and sha256 (exact); dhash and phash (our 64-bit format). PDQ and PhotoDNA entries are stored but not matched yet.
@@ -100,7 +104,7 @@ Holds last 365 days (REPORT Act). `legalHoldExpirySweep` runs daily and marks ex
 3. Set the **Play Console child-safety contact** and keep the published CSAE standards page up to date (AS-08).
 4. Fill in the on-call table (§1) and `app_config/safety_settings.onCallEmails`.
 5. Publish the public NCII form on greengochat.com. It posts JSON to the `nciiTakedownRequest` URL. Set `NCII_ENDPOINT_URL` to that URL so email links point to it.
-6. Counsel: confirm the Decreto 12.976 and 12.882 channels and deadlines (the audit took them from law-firm summaries), EU-19 private scanning, and `autoPurgeExpiredHolds`.
+6. Counsel: confirm the Decreto 12.976 and 12.882 channels and deadlines (the audit took them from law-firm summaries), EU-19 private scanning (then set `app_config/safety_settings.privateHashScanEnabled`), the EU reporting route (INHOPE hotline vs. direct police report per Member State), and `autoPurgeExpiredHolds`.
 7. Enable Marco Civil access logging (BR-09), so report packages contain IP and port logs.
 
 ## 7. Evidence-handling rules

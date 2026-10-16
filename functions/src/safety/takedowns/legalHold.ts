@@ -227,11 +227,16 @@ export async function preserveForAccountDeletion(uid: string): Promise<boolean> 
 }
 
 // ---------------------------------------------------------------------------
-// Report package (NCMEC CyberTipline / Polícia Federal / SaferNet)
+// Report package (NCMEC CyberTipline / Polícia Federal / SaferNet / EU)
 // ---------------------------------------------------------------------------
 
-export type Authority = 'NCMEC' | 'PF_BR' | 'SAFERNET';
-export const AUTHORITIES: Authority[] = ['NCMEC', 'PF_BR', 'SAFERNET'];
+/**
+ * Terms 19.2 b: NCMEC, and the competent authorities in Brazil, the EU and
+ * other countries. EU_INHOPE = the national hotline of the EU Member State
+ * concerned (INHOPE network), which forwards to national police / Europol.
+ */
+export type Authority = 'NCMEC' | 'PF_BR' | 'SAFERNET' | 'EU_INHOPE';
+export const AUTHORITIES: Authority[] = ['NCMEC', 'PF_BR', 'SAFERNET', 'EU_INHOPE'];
 
 const AUTHORITY_INFO: Record<Authority, { name: string; submit: string; checklist: string[] }> = {
   NCMEC: {
@@ -261,6 +266,17 @@ const AUTHORITY_INFO: Record<Authority, { name: string; submit: string; checklis
       'Report the URL / content identifiers (SaferNet forwards to the Ministério Público Federal / PF).',
       'Do not upload images; give identifiers and the preserved-evidence reference.',
       'Record the protocol number with "Mark reported".',
+    ],
+  },
+  EU_INHOPE: {
+    name: 'EU - national CSAM hotline of the Member State concerned (INHOPE network; forwards to national police / Europol EC3)',
+    submit: 'https://www.inhope.org/EN#hotlineReferral (pick the hotline of the country of the reported person or of the victim)',
+    checklist: [
+      'Pick the Member State: where the reported person or the victim is, or where the content was uploaded from (profile country, IP logs).',
+      'Report to the INHOPE member hotline of that Member State via its web form: give the content identifiers and the preserved-evidence reference - do NOT upload or email images.',
+      'If a child is in immediate danger, ALSO call the police of that country (112) - the hotline is not an emergency channel.',
+      'Where national law requires a direct report to law enforcement, file it with the national police as well and keep both references.',
+      'Record the hotline / police reference with "Mark reported".',
     ],
   },
 };
@@ -318,7 +334,8 @@ export async function buildReportPackage(p: {
     authority: { code: p.authority, ...AUTHORITY_INFO[p.authority] },
     reportingProvider: {
       name: 'GreenGo (greengochat.com)',
-      contactEmail: 'info@greengochat.com',
+      // Terms 18.7: point of contact for authorities.
+      contactEmail: 'legal@greengochat.com',
       note: 'Fill the ESP id / CNPJ and the legal contact from the runbook before submitting.',
     },
     incident: {

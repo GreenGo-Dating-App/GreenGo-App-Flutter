@@ -110,6 +110,12 @@ abstract class CommunitiesRepository {
     required String userId,
   });
 
+  /// Remove a post (message) from a community — admin/owner only (Terms 17.3).
+  Future<Either<Failure, void>> deleteMessage({
+    required String communityId,
+    required String messageId,
+  });
+
   /// Communities the user owns or administers (event → community linker).
   Future<Either<Failure, List<Community>>> getManageableCommunities(
     String userId,

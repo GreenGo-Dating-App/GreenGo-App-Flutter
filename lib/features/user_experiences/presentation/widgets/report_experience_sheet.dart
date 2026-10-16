@@ -10,6 +10,9 @@ enum ExperienceReportReason {
   misleading('misleading'),
   noShow('no_show'),
   inappropriate('inappropriate'),
+  // Terms 19.3: every report surface offers "Child sexual exploitation"
+  // (server: csae P0 path, same wire code as report_reasons.dart).
+  childSexualExploitation('csae'),
   other('other');
 
   const ExperienceReportReason(this.wire);
@@ -48,6 +51,8 @@ class ReportExperienceSheet extends StatefulWidget {
         ExperienceReportReason.misleading => l.uexpReasonMisleading,
         ExperienceReportReason.noShow => l.uexpReasonNoShow,
         ExperienceReportReason.inappropriate => l.uexpReasonInappropriate,
+        ExperienceReportReason.childSexualExploitation =>
+          l.safetyReportReasonCsae,
         ExperienceReportReason.other => l.uexpReasonOther,
       };
 

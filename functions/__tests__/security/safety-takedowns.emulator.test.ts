@@ -418,9 +418,13 @@ describe('CSAE: report -> immediate hide, P0, 1-year legal hold, NCMEC/PF packag
     const sensitive = (await db.collection('admin_audit_log').where('adminId', '==', 'boss').get()).docs.map((d) => d.data().action);
     expect(sensitive).toEqual(expect.arrayContaining(['safety_view_legal_hold', 'safety_report_package', 'safety_mark_reported']));
 
-    // Confirm + ban: no notice to the suspect (no tipping-off); evidence stays in the hold.
-    await adminCall('mod1', { op: 'decide', caseId, decision: 'confirm', sanction: 'ban' }, 'moderator');
+    // Confirm: ALWAYS a ban for CSAE, even when the moderator picked a lighter
+    // sanction (Terms 19.2 a); no notice to the suspect (no tipping-off);
+    // evidence stays in the hold.
+    await adminCall('mod1', { op: 'decide', caseId, decision: 'confirm', sanction: 'strike' }, 'moderator');
     expect((await auth.getUser('bad1')).disabled).toBe(true);
+    expect((await db.doc('users/bad1').get()).data()?.accountStatus).toBe('banned');
+    expect((await caseDoc(caseId)).decision).toMatchObject({ sanction: 'ban', requestedSanction: 'strike' });
     expect((await db.doc(`moderation_decisions/safety_${caseId}`).get()).exists).toBe(false);
     expect(await exists(`safety_holds/${caseId}/chat_images/c1/m1.jpg`)).toBe(false);
     expect(await exists(`legal_holds/csae_bad1/files/safety_holds/${caseId}/chat_images/c1/m1.jpg`)).toBe(true);

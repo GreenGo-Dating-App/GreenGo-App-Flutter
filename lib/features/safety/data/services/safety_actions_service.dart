@@ -24,10 +24,14 @@ class SafetyActionsService {
 
   /// File a user report. Mirrors the write performed by
   /// ChatRemoteDataSource.reportUser so both feed the same moderation pipeline.
+  ///
+  /// [reason] is a ReportReason wire code (report_reasons.dart);
+  /// [reasonLabel] is the localized label the reporter picked.
   Future<void> reportUser({
     required String reporterId,
     required String reportedUserId,
     required String reason,
+    String? reasonLabel,
     String? additionalDetails,
   }) async {
     final reportRef = firestore.collection('user_reports').doc();
@@ -48,6 +52,9 @@ class SafetyActionsService {
     if (additionalDetails != null && additionalDetails.isNotEmpty) {
       reportData['additionalDetails'] = additionalDetails;
     }
+    if (reasonLabel != null && reasonLabel.isNotEmpty) {
+      reportData['reasonLabel'] = reasonLabel;
+    }
 
     await reportRef.set(reportData);
 
@@ -55,6 +62,44 @@ class SafetyActionsService {
     // `lastReportedAt`) is bumped server-side by the `onUserReportCreated`
     // Cloud Function (Admin SDK) — the client cannot write another user's doc,
     // so the previous best-effort client increment was always denied.
+  }
+
+  /// Report a piece of content that is not a person or a 1:1 message - a
+  /// spot review, a whole community (Terms 18.1: "Report" on any post,
+  /// community or review). Written to the shared `reports` collection, which
+  /// feeds the same moderation pipeline (onContentReportQueued, generic
+  /// branch: reportedUserId / reportedContentId / reason / description).
+  ///
+  /// [type] is the target type (`spot_review`, `community`); [contentPath]
+  /// the Firestore path of the reported doc; [reason] a ReportReason wire
+  /// code. [description] is shown to moderators (e.g. the review text).
+  Future<void> reportContent({
+    required String reporterId,
+    required String type,
+    required String contentPath,
+    required String reason,
+    String? reportedUserId,
+    String? reasonLabel,
+    String? description,
+    Map<String, String> extra = const {},
+  }) async {
+    final ref = firestore.collection('reports').doc();
+    await ref.set({
+      ...extra,
+      'reportId': ref.id,
+      'type': type,
+      'reporterId': reporterId,
+      if (reportedUserId != null) 'reportedUserId': reportedUserId,
+      'reportedContentId': contentPath,
+      'reason': reason,
+      if (reasonLabel != null) 'reasonLabel': reasonLabel,
+      if (description != null && description.isNotEmpty)
+        'description':
+            description.length > 1000 ? description.substring(0, 1000) : description,
+      'reportedAt': Timestamp.fromDate(DateTime.now()),
+      'createdAt': FieldValue.serverTimestamp(),
+      'status': 'pending',
+    });
   }
 
   /// Whether [blockerId] has already blocked [blockedUserId].

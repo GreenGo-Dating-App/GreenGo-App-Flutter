@@ -17,6 +17,7 @@ import {
   acknowledgePrivateContentWarning,
   warningTextHash,
   MAX_ACKS_PER_VERSION,
+  TERMS_VERSION,
 } from '../../src/legal/privateContentWarning';
 
 const PROJECT = process.env.GCLOUD_PROJECT || 'test-project';
@@ -108,7 +109,7 @@ describe('acknowledgePrivateContentWarning', () => {
     const snap = await db.doc(`legal_acknowledgements/${OWNER}/items/${r.ackId}`).get();
     const d = snap.data()!;
     expect(d).toMatchObject({
-      kind: 'private_content_warning', uid: OWNER, warningVersion: 'pcw-1', termsVersion: '5.1.0', locale: 'pt_BR', platform: 'android',
+      kind: 'private_content_warning', uid: OWNER, warningVersion: 'pcw-1', termsVersion: TERMS_VERSION, locale: 'pt_BR', platform: 'android',
       appVersion: '4.6.0+190', ip: '203.0.113.7', userAgent: 'GreenGo/4.6.0 (Android 15)', textLength: TEXT.length,
     });
     expect(d.textHash).toBe(warningTextHash('pcw-1', TEXT));

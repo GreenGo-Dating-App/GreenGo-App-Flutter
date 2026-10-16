@@ -12636,9 +12636,9 @@
       }
     }
   },
-  "nciiFormError": "Could not send the request. Try again, or email info@greengochat.com.",
-  "nciiFormRateLimited": "Too many requests today. Email info@greengochat.com if this is urgent.",
-  "safetyReportReasonCsae": "Child sexual abuse or exploitation",
+  "nciiFormError": "Could not send the request. Try again, or email safety@greengochat.com.",
+  "nciiFormRateLimited": "Too many requests today. Email safety@greengochat.com if this is urgent.",
+  "safetyReportReasonCsae": "Child sexual exploitation",
   "safetyReportReasonNcii": "Intimate image shared without consent",
   "pcwTitle": "Private content: read before viewing",
   "@pcwTitle": {
@@ -14798,5 +14798,61 @@
   "srvAppealPageInvalid": "This appeal link is not valid. Use the link in our most recent email, or write to safety@greengochat.com.",
   "@srvAppealPageInvalid": {
     "description": "Web page: the appeal link is invalid"
+  },
+  "safetyReportEmailNote": "You can also report safety issues by email: {email}",
+  "@safetyReportEmailNote": {
+    "description": "Footnote under every report reason list and on the NCII form (Terms 18.1).",
+    "placeholders": {
+      "email": {
+        "type": "String",
+        "example": "safety@greengochat.com"
+      }
+    }
+  },
+  "safetyHelpEntryTitle": "Report a safety issue",
+  "@safetyHelpEntryTitle": {
+    "description": "Help & Support entry: email the safety team."
+  },
+  "safetyHelpEntrySubtitle": "Child safety, abuse or illegal content: write to {email}",
+  "@safetyHelpEntrySubtitle": {
+    "description": "Subtitle of the Help & Support safety entry.",
+    "placeholders": {
+      "email": {
+        "type": "String",
+        "example": "safety@greengochat.com"
+      }
+    }
+  },
+  "safetyReportWhyContent": "Why are you reporting this?",
+  "@safetyReportWhyContent": {
+    "description": "Prompt of the reason picker when reporting a review or a community."
+  },
+  "safetyReportSent": "Report sent. Thank you, we review every report.",
+  "@safetyReportSent": {
+    "description": "Snackbar after a review / community report is filed."
+  },
+  "spotsReportReview": "Report review",
+  "@spotsReportReview": {
+    "description": "Report button on a spot review."
+  },
+  "communitiesReportCommunity": "Report community",
+  "@communitiesReportCommunity": {
+    "description": "Community menu item: report the whole community."
+  },
+  "communitiesRemovePost": "Remove post",
+  "@communitiesRemovePost": {
+    "description": "Owner/moderator action on a community post (Terms 17.3)."
+  },
+  "communitiesRemovePostTitle": "Remove this post?",
+  "@communitiesRemovePostTitle": {
+    "description": "Confirmation title before a moderator removes a post."
+  },
+  "communitiesRemovePostMessage": "The post will be removed for everyone in this community. This cannot be undone.",
+  "@communitiesRemovePostMessage": {
+    "description": "Confirmation body before a moderator removes a post."
+  },
+  "communitiesPostRemoved": "Post removed",
+  "@communitiesPostRemoved": {
+    "description": "Snackbar after a moderator removed a post."
   }
 }

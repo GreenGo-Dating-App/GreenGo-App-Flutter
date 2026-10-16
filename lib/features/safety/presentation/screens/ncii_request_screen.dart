@@ -6,6 +6,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../copyright/data/copyright_service.dart' show isValidCopyrightEmail;
 import '../../../copyright/presentation/widgets/copyright_form_widgets.dart';
 import '../../data/services/safety_takedown_service.dart';
+import '../widgets/report_reasons.dart' show kSafetyEmail;
 
 /// Opens the intimate-image removal form. [prefilledLocations] are added to
 /// the request as-is (e.g. `profile:<uid>` from a profile, or a photo URL).
@@ -133,6 +134,13 @@ class _NciiRequestScreenState extends State<NciiRequestScreen> {
                       padding: const EdgeInsets.all(20),
                       children: [
                         Text(l.nciiFormIntro, style: copyrightBodyStyle),
+                        const SizedBox(height: 8),
+                        // Terms 18.1: safety reports can also be emailed.
+                        Text(
+                          l.safetyReportEmailNote(kSafetyEmail),
+                          key: const ValueKey('ncii-safety-email'),
+                          style: copyrightBodyStyle,
+                        ),
                         CopyrightSectionTitle(l.nciiFormSectionYou),
                         CopyrightField(fieldKey: 'ncii-name', controller: _name, label: '${l.nciiFormName} *', validator: (v) => minLen(v, 2)),
                         CopyrightField(

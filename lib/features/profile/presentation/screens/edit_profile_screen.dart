@@ -40,6 +40,7 @@ import '../../../notifications/presentation/screens/notification_preferences_scr
 import '../../../chat/presentation/screens/support_tickets_list_screen.dart';
 import '../../../copyright/presentation/screens/copyright_policy_screen.dart';
 import '../../../safety/presentation/screens/ncii_request_screen.dart';
+import '../../../safety/presentation/widgets/report_reasons.dart' show kSafetyEmail;
 import '../../../coins/domain/entities/coin_transaction.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
@@ -606,6 +607,17 @@ class EditProfileScreen extends StatelessWidget {
                         subtitle: AppLocalizations.of(context)!.nciiEntrySubtitle,
                         icon: Icons.no_photography_outlined,
                         onTap: () => openNciiRequestForm(context),
+                      ),
+                      const SizedBox(height: MenuRow.gap),
+                      // Safety reports by email (Terms 18.1 / 18.7 / 19.3).
+                      EditSectionCard(
+                        key: const ValueKey('help-safety-email'),
+                        title: AppLocalizations.of(context)!.safetyHelpEntryTitle,
+                        subtitle: AppLocalizations.of(context)!
+                            .safetyHelpEntrySubtitle(kSafetyEmail),
+                        subtitleMaxLines: null,
+                        icon: Icons.health_and_safety_outlined,
+                        onTap: _contactSafety,
                       ),
                       const SizedBox(height: MenuRow.gap),
                       // Coin Shop
@@ -1387,6 +1399,21 @@ class EditProfileScreen extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  /// Opens the user's mail client pre-addressed to the safety team
+  /// (safety@greengochat.com, Terms 18.1 / 19.3).
+  Future<void> _contactSafety() async {
+    final uri = Uri(
+      scheme: 'mailto',
+      path: kSafetyEmail,
+      queryParameters: {'subject': 'GreenGo safety report'},
+    );
+    try {
+      await launchUrl(uri);
+    } catch (_) {
+      // No mail client: the address is visible on the card itself.
+    }
   }
 
   /// Opens the user's mail client pre-addressed to support, with the account

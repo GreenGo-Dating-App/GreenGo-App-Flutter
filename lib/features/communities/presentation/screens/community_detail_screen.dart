@@ -32,6 +32,8 @@ import '../widgets/community_events_tab.dart';
 import '../widgets/community_linked_experiences_tab.dart';
 import '../widgets/community_member_tile.dart';
 import '../widgets/community_report.dart';
+import '../../domain/repositories/communities_repository.dart';
+import '../../../safety/presentation/widgets/content_report_flow.dart';
 import '../widgets/community_message_bubble.dart';
 import '../widgets/community_rules_header.dart';
 import '../widgets/join_requests_sheet.dart';
@@ -423,6 +425,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
               case 'delete':
                 _confirmDeleteCommunity();
                 break;
+              case 'report':
+                _reportCommunity();
+                break;
             }
           },
           itemBuilder: (context) => [
@@ -480,6 +485,23 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                     Text(
                         AppLocalizations.of(context)!.communitiesLeaveCommunity,
                         style: const TextStyle(color: AppColors.errorRed)),
+                  ],
+                ),
+              ),
+            // Report the community (Terms 18.1). Not for its owner.
+            if (!_isOwner && _currentUserId != null)
+              PopupMenuItem(
+                key: const ValueKey('community-menu-report'),
+                value: 'report',
+                child: Row(
+                  children: [
+                    const Icon(Icons.flag_outlined,
+                        color: AppColors.errorRed, size: 20),
+                    const SizedBox(width: 12),
+                    Text(
+                        AppLocalizations.of(context)!
+                            .communitiesReportCommunity,
+                        style: const TextStyle(color: AppColors.textPrimary)),
                   ],
                 ),
               ),
@@ -567,6 +589,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                     isCurrentUser: tips[index].senderId == _currentUserId,
                     showSenderInfo: true,
                     currentUserLanguage: _viewerLanguageOf(context),
+                    onReport: _reportActionFor(tips[index]),
+                    onRemove: _removeActionFor(tips[index]),
                   ),
                 ),
         ),
@@ -674,6 +698,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                     isCurrentUser: anns[index].senderId == _currentUserId,
                     showSenderInfo: true,
                     currentUserLanguage: _viewerLanguageOf(context),
+                    onReport: _reportActionFor(anns[index]),
+                    onRemove: _removeActionFor(anns[index]),
                   ),
                 ),
         ),
@@ -826,10 +852,88 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
           isCurrentUser: isCurrentUser,
           showSenderInfo: showSenderInfo,
           currentUserLanguage: _viewerLanguageOf(context),
-          onReport: isCurrentUser || _currentUserId == null
-              ? null
-              : () => _reportMessage(message),
+          onReport: _reportActionFor(message),
+          onRemove: _removeActionFor(message),
         );
+      },
+    );
+  }
+
+  /// Long-press "report" for a post: anyone signed in, except on their own.
+  VoidCallback? _reportActionFor(CommunityMessage message) =>
+      message.senderId == _currentUserId || _currentUserId == null
+          ? null
+          : () => _reportMessage(message);
+
+  /// Long-press "remove post" for owners/moderators (Terms 17.3); rules:
+  /// communities/{id}/messages delete = isCommunityMod().
+  VoidCallback? _removeActionFor(CommunityMessage message) =>
+      _isModerator && message.type != CommunityMessageType.system
+          ? () => _confirmRemovePost(message)
+          : null;
+
+  Future<void> _confirmRemovePost(CommunityMessage message) async {
+    final l10n = AppLocalizations.of(context)!;
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(
+          l10n.communitiesRemovePostTitle,
+          style: const TextStyle(color: AppColors.textPrimary),
+        ),
+        content: Text(
+          l10n.communitiesRemovePostMessage,
+          style: const TextStyle(color: AppColors.textSecondary),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(dialogContext, false),
+            child: Text(l10n.cancel),
+          ),
+          TextButton(
+            key: const ValueKey('community-post-remove-confirm'),
+            onPressed: () => Navigator.pop(dialogContext, true),
+            child: Text(
+              l10n.communitiesRemovePost,
+              style: const TextStyle(color: AppColors.errorRed),
+            ),
+          ),
+        ],
+      ),
+    );
+    if (confirmed != true || !mounted) return;
+    final messenger = ScaffoldMessenger.of(context);
+    final result = await di.sl<CommunitiesRepository>().deleteMessage(
+          communityId: _community.id,
+          messageId: message.id,
+        );
+    if (!mounted) return;
+    result.fold(
+      (failure) => showUserError(context, failure.message),
+      (_) => messenger.showSnackBar(
+        SnackBar(
+          content: Text(l10n.communitiesPostRemoved),
+          backgroundColor: AppColors.successGreen,
+        ),
+      ),
+    );
+  }
+
+  /// Report the community itself (Terms 18.1: "Report" on any community).
+  Future<void> _reportCommunity() async {
+    final me = _currentUserId;
+    if (me == null) return;
+    await showContentReportFlow(
+      context,
+      reporterId: me,
+      type: 'community',
+      contentPath: 'communities/${_community.id}',
+      title: AppLocalizations.of(context)!.communitiesReportCommunity,
+      description: _community.name,
+      extra: {
+        'communityId': _community.id,
+        'communityOwnerId': _community.createdByUserId,
       },
     );
   }

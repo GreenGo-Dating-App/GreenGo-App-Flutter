@@ -7,6 +7,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../data/services/safety_actions_service.dart';
 import '../../data/services/safety_takedown_service.dart';
 import '../screens/ncii_request_screen.dart';
+import 'report_reasons.dart';
 
 /// Overflow (⋮) menu with Report and Block actions for a viewed user.
 ///
@@ -116,52 +117,11 @@ class SafetyActionsMenu extends StatelessWidget {
       return;
     }
 
-    final reasons = <String>[
-      l10n.chatReportReasonHarassment,
-      l10n.chatReportReasonFakeProfile,
-      l10n.chatReportReasonSpam,
-      l10n.chatReportReasonInappropriate,
-      l10n.chatReportReasonThreatening,
-      l10n.chatReportReasonUnderage,
-      l10n.safetyReportReasonCsae,
-      l10n.safetyReportReasonNcii,
-      l10n.chatReportReasonOther,
-    ];
-
-    final selectedReason = await showDialog<String>(
-      context: context,
-      builder: (dialogContext) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: Text(
-          l10n.chatReportUserTitle,
-          style: const TextStyle(color: AppColors.textPrimary),
-        ),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              l10n.chatWhyReportUser(reportedUserName),
-              style: const TextStyle(color: AppColors.textSecondary),
-            ),
-            const SizedBox(height: 16),
-            ...reasons.map((reason) => ListTile(
-                  contentPadding: EdgeInsets.zero,
-                  title: Text(
-                    reason,
-                    style: const TextStyle(
-                        color: AppColors.textPrimary, fontSize: 14),
-                  ),
-                  onTap: () => Navigator.pop(dialogContext, reason),
-                )),
-          ],
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(dialogContext),
-            child: Text(l10n.cancel),
-          ),
-        ],
-      ),
+    // One shared list on every surface (report_reasons.dart).
+    final selectedReason = await showReportReasonDialog(
+      context,
+      title: l10n.chatReportUserTitle,
+      prompt: l10n.chatWhyReportUser(reportedUserName),
     );
 
     if (selectedReason == null) return;
@@ -170,7 +130,8 @@ class SafetyActionsMenu extends StatelessWidget {
       await _service.reportUser(
         reporterId: currentUserId,
         reportedUserId: reportedUserId,
-        reason: selectedReason,
+        reason: selectedReason.code,
+        reasonLabel: selectedReason.label(l10n),
       );
       // Auto-block after a report so the reported user is removed from every
       // list immediately (the block broadcast drives the live removal) and can
@@ -178,7 +139,7 @@ class SafetyActionsMenu extends StatelessWidget {
       await _service.blockUser(
         blockerId: currentUserId,
         blockedUserId: reportedUserId,
-        reason: 'Auto-blocked after report: $selectedReason',
+        reason: 'Auto-blocked after report: ${selectedReason.code}',
       );
       messenger.showSnackBar(
         SnackBar(
