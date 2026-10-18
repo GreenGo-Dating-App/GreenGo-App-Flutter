@@ -26036,6 +26036,76 @@ class AppLocalizationsPt extends AppLocalizations {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String promoStoreFirstYear(String percent, String launch, String regular) {
+    return '$percent% de desconto no primeiro ano para novos subscritores: $launch, depois $regular/ano.';
+  }
+
+  @override
+  String promoStoreFirst3Months(String percent, String launch, String regular) {
+    return '$percent% de desconto nos primeiros 3 meses para novos subscritores: $launch/mês, depois $regular/mês.';
+  }
+
+  @override
+  String promoStoreFirstYearGeneric(String percent, String regular) {
+    return '$percent% de desconto no primeiro ano para novos subscritores, depois $regular/ano.';
+  }
+
+  @override
+  String promoStoreFirst3MonthsGeneric(String percent, String regular) {
+    return '$percent% de desconto nos primeiros 3 meses para novos subscritores, depois $regular/mês.';
+  }
+
+  @override
+  String get promoRenewsAppStore =>
+      'Renova automaticamente; cancela quando quiseres nas definições da App Store.';
+
+  @override
+  String get promoRenewsGooglePlay =>
+      'Renova automaticamente; cancela quando quiseres nas subscrições da Google Play.';
+
+  @override
+  String get purchasesWithdrawalStoreHelpIos =>
+      'As compras feitas na app para iPhone foram vendidas pela Apple. Peça à Apple o reembolso ou a livre resolução:';
+
+  @override
+  String get manageSubscriptionStoreHelpIos =>
+      'As subscrições compradas na app para iPhone são geridas pela Apple:';
+
+  @override
+  String get baseIncludedInPlan => 'Incluído no teu plano';
+
+  @override
+  String get eulaShort => 'EULA';
+
+  @override
+  String get eulaTitle => 'Contrato de Licença de Utilizador Final';
+
+  @override
+  String get eulaRowSubtitle => 'A licença para usar a app GreenGo';
+
+  @override
+  String get legalTermsRowSubtitle => 'As regras para usar o GreenGo';
+
+  @override
+  String get legalPrivacyRowSubtitle => 'Como tratamos os teus dados';
+
+  @override
+  String get aiConsentTranslateReceived =>
+      'As mensagens que recebes podem ser traduzidas quando tocas em Traduzir; o texto é enviado para o serviço de tradução da Google.';
+
+  @override
+  String get deleteAccountConfirmationIos =>
+      'Eliminar a tua conta? Não é possível anular.\n\n• A tua conta e o teu perfil são eliminados. Alguns registos são conservados quando a lei o exige (pagamentos e faturas, denúncias de segurança); consulta a Política de Privacidade.\n• As moedas que te restarem perdem-se.\n• Uma subscrição comprada na web é cancelada.\n• Uma subscrição comprada na App Store NÃO é cancelada ao eliminar a conta: cancela-a na loja, ou a loja continua a cobrar.';
+
+  @override
+  String get profileDeleteAccountWarningIos =>
+      'É definitivo. A tua conta e o teu perfil são eliminados (alguns registos são conservados conforme a lei exige; consulta a Política de Privacidade), as moedas restantes perdem-se e a subscrição web é cancelada. Cancela qualquer subscrição da App Store na loja. Introduz a tua palavra-passe para confirmar.';
+
+  @override
+  String get promoRenewsWeb =>
+      'Renova automaticamente; cancela quando quiseres no portal de faturação.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -52077,4 +52147,74 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String promoStoreFirstYear(String percent, String launch, String regular) {
+    return '$percent% de desconto no primeiro ano para novos assinantes: $launch, depois $regular/ano.';
+  }
+
+  @override
+  String promoStoreFirst3Months(String percent, String launch, String regular) {
+    return '$percent% de desconto nos primeiros 3 meses para novos assinantes: $launch/mês, depois $regular/mês.';
+  }
+
+  @override
+  String promoStoreFirstYearGeneric(String percent, String regular) {
+    return '$percent% de desconto no primeiro ano para novos assinantes, depois $regular/ano.';
+  }
+
+  @override
+  String promoStoreFirst3MonthsGeneric(String percent, String regular) {
+    return '$percent% de desconto nos primeiros 3 meses para novos assinantes, depois $regular/mês.';
+  }
+
+  @override
+  String get promoRenewsAppStore =>
+      'Renova automaticamente; cancele quando quiser nos ajustes da App Store.';
+
+  @override
+  String get promoRenewsGooglePlay =>
+      'Renova automaticamente; cancele quando quiser nas assinaturas do Google Play.';
+
+  @override
+  String get purchasesWithdrawalStoreHelpIos =>
+      'Compras feitas no app para iPhone foram vendidas pela Apple. Peça à Apple o reembolso ou o arrependimento:';
+
+  @override
+  String get manageSubscriptionStoreHelpIos =>
+      'As assinaturas compradas no app para iPhone são gerenciadas pela Apple:';
+
+  @override
+  String get baseIncludedInPlan => 'Incluído no seu plano';
+
+  @override
+  String get eulaShort => 'EULA';
+
+  @override
+  String get eulaTitle => 'Contrato de Licença de Usuário Final';
+
+  @override
+  String get eulaRowSubtitle => 'A licença para usar o app GreenGo';
+
+  @override
+  String get legalTermsRowSubtitle => 'As regras para usar o GreenGo';
+
+  @override
+  String get legalPrivacyRowSubtitle => 'Como tratamos seus dados';
+
+  @override
+  String get aiConsentTranslateReceived =>
+      'As mensagens que você recebe podem ser traduzidas quando você toca em Traduzir; o texto é enviado ao serviço de tradução do Google.';
+
+  @override
+  String get deleteAccountConfirmationIos =>
+      'Excluir sua conta? Não dá para desfazer.\n\n• Sua conta e seu perfil são excluídos. Alguns registros são mantidos quando a lei exige (pagamentos e notas fiscais, denúncias de segurança); veja a Política de Privacidade.\n• As moedas que sobrarem são perdidas.\n• Uma assinatura comprada na web é cancelada.\n• Uma assinatura comprada na App Store NÃO é cancelada ao excluir a conta: cancele na loja, senão a loja continua cobrando.';
+
+  @override
+  String get profileDeleteAccountWarningIos =>
+      'É definitivo. Sua conta e seu perfil são excluídos (alguns registros são mantidos conforme a lei exige; veja a Política de Privacidade), as moedas restantes são perdidas e a assinatura web é cancelada. Cancele qualquer assinatura da App Store na loja. Digite sua senha para confirmar.';
+
+  @override
+  String get promoRenewsWeb =>
+      'Renova automaticamente; cancele quando quiser no portal de cobrança.';
 }

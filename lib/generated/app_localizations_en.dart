@@ -25816,4 +25816,74 @@ class AppLocalizationsEn extends AppLocalizations {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String promoStoreFirstYear(String percent, String launch, String regular) {
+    return '$percent% off your first year for new subscribers: $launch, then $regular/year.';
+  }
+
+  @override
+  String promoStoreFirst3Months(String percent, String launch, String regular) {
+    return '$percent% off your first 3 months for new subscribers: $launch/month, then $regular/month.';
+  }
+
+  @override
+  String promoStoreFirstYearGeneric(String percent, String regular) {
+    return '$percent% off your first year for new subscribers, then $regular/year.';
+  }
+
+  @override
+  String promoStoreFirst3MonthsGeneric(String percent, String regular) {
+    return '$percent% off your first 3 months for new subscribers, then $regular/month.';
+  }
+
+  @override
+  String get promoRenewsAppStore =>
+      'Renews automatically; cancel anytime in App Store settings.';
+
+  @override
+  String get promoRenewsGooglePlay =>
+      'Renews automatically; cancel anytime in Google Play subscriptions.';
+
+  @override
+  String get purchasesWithdrawalStoreHelpIos =>
+      'Purchases made in the iPhone app were sold by Apple. Ask Apple for a refund or to withdraw:';
+
+  @override
+  String get manageSubscriptionStoreHelpIos =>
+      'Memberships bought in the iPhone app are managed by Apple:';
+
+  @override
+  String get baseIncludedInPlan => 'Included in your plan';
+
+  @override
+  String get eulaShort => 'EULA';
+
+  @override
+  String get eulaTitle => 'End-User License Agreement';
+
+  @override
+  String get eulaRowSubtitle => 'The license to use the GreenGo app';
+
+  @override
+  String get legalTermsRowSubtitle => 'The rules for using GreenGo';
+
+  @override
+  String get legalPrivacyRowSubtitle => 'How we handle your data';
+
+  @override
+  String get aiConsentTranslateReceived =>
+      'Messages you receive may be translated when you tap Translate; the text is sent to Google\'s translation service.';
+
+  @override
+  String get deleteAccountConfirmationIos =>
+      'Delete your account? This cannot be undone.\n\n• Your account and profile are deleted. Some records are kept where the law requires it (payments and invoices, safety reports); see the Privacy Policy.\n• Any Coins left in your account are lost.\n• A membership bought on the web is cancelled.\n• A membership bought in the App Store is NOT cancelled by deleting your account: cancel it in the store, or the store keeps charging you.';
+
+  @override
+  String get profileDeleteAccountWarningIos =>
+      'This is permanent. Your account and profile are deleted (some records are kept as the law requires; see the Privacy Policy), remaining Coins are lost and a web membership is cancelled. Cancel any App Store subscription in the App Store. Enter your password to confirm.';
+
+  @override
+  String get promoRenewsWeb =>
+      'Renews automatically; cancel anytime in the billing portal.';
 }

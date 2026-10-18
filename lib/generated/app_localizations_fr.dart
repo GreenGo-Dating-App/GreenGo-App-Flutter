@@ -26209,4 +26209,74 @@ class AppLocalizationsFr extends AppLocalizations {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String promoStoreFirstYear(String percent, String launch, String regular) {
+    return '$percent % de réduction sur ta première année pour les nouveaux abonnés : $launch, puis $regular/an.';
+  }
+
+  @override
+  String promoStoreFirst3Months(String percent, String launch, String regular) {
+    return '$percent % de réduction sur tes 3 premiers mois pour les nouveaux abonnés : $launch/mois, puis $regular/mois.';
+  }
+
+  @override
+  String promoStoreFirstYearGeneric(String percent, String regular) {
+    return '$percent % de réduction sur ta première année pour les nouveaux abonnés, puis $regular/an.';
+  }
+
+  @override
+  String promoStoreFirst3MonthsGeneric(String percent, String regular) {
+    return '$percent % de réduction sur tes 3 premiers mois pour les nouveaux abonnés, puis $regular/mois.';
+  }
+
+  @override
+  String get promoRenewsAppStore =>
+      'Renouvellement automatique ; résiliable à tout moment dans les réglages de l\'App Store.';
+
+  @override
+  String get promoRenewsGooglePlay =>
+      'Renouvellement automatique ; résiliable à tout moment dans les abonnements Google Play.';
+
+  @override
+  String get purchasesWithdrawalStoreHelpIos =>
+      'Les achats effectués dans l\'app iPhone ont été vendus par Apple. Demandez à Apple un remboursement ou la rétractation :';
+
+  @override
+  String get manageSubscriptionStoreHelpIos =>
+      'Les abonnements achetés dans l\'app iPhone sont gérés par Apple :';
+
+  @override
+  String get baseIncludedInPlan => 'Inclus dans ton forfait';
+
+  @override
+  String get eulaShort => 'EULA';
+
+  @override
+  String get eulaTitle => 'Contrat de licence utilisateur final';
+
+  @override
+  String get eulaRowSubtitle => 'La licence d\'utilisation de l\'app GreenGo';
+
+  @override
+  String get legalTermsRowSubtitle => 'Les règles d\'utilisation de GreenGo';
+
+  @override
+  String get legalPrivacyRowSubtitle => 'Comment nous traitons tes données';
+
+  @override
+  String get aiConsentTranslateReceived =>
+      'Les messages que tu reçois peuvent être traduits lorsque tu touches Traduire ; le texte est envoyé au service de traduction de Google.';
+
+  @override
+  String get deleteAccountConfirmationIos =>
+      'Supprimer votre compte ? Cette action est irréversible.\n\n• Votre compte et votre profil sont supprimés. Certaines données sont conservées lorsque la loi l\'exige (paiements et factures, signalements de sécurité) ; voir la Politique de confidentialité.\n• Les pièces restantes sont perdues.\n• Un abonnement acheté sur le web est résilié.\n• Un abonnement acheté sur l\'App Store n\'est PAS résilié par la suppression du compte : résiliez-le dans la boutique, sinon elle continuera à vous facturer.';
+
+  @override
+  String get profileDeleteAccountWarningIos =>
+      'C\'est définitif. Votre compte et votre profil sont supprimés (certaines données sont conservées comme la loi l\'exige ; voir la Politique de confidentialité), les pièces restantes sont perdues et un abonnement web est résilié. Résiliez tout abonnement App Store dans la boutique. Saisissez votre mot de passe pour confirmer.';
+
+  @override
+  String get promoRenewsWeb =>
+      'Renouvellement automatique ; résiliable à tout moment dans le portail de facturation.';
 }

@@ -7,6 +7,7 @@ import 'package:get_it/get_it.dart';
 import 'package:provider/provider.dart';
 import 'package:showcaseview/showcaseview.dart';
 
+import '../../../../core/constants/product_catalog.dart';
 import '../../../../core/widgets/menu_row.dart';
 import '../../../../core/widgets/website_link.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -86,6 +87,8 @@ import 'usage_stats_screen.dart';
 import '../../../../core/widgets/boost_celebration.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../settings/presentation/screens/privacy_data_settings_screen.dart';
+import '../../../legal/presentation/screens/legal_document_screen.dart';
+import '../../../../core/utils/eula_link.dart';
 
 class EditProfileScreen extends StatelessWidget {
 
@@ -610,6 +613,34 @@ class EditProfileScreen extends StatelessWidget {
                             AppLocalizations.of(context)!.copyrightHelpEntrySubtitle,
                         icon: Icons.copyright,
                         onTap: () => Navigator.of(context).push(CopyrightPolicyScreen.route()),
+                      ),
+                      const SizedBox(height: MenuRow.gap),
+                      // Legal: Terms, Privacy Policy and the EULA (Apple
+                      // 3.1.2 asks subscription apps to link the EULA).
+                      EditSectionCard(
+                        key: const ValueKey('help-terms'),
+                        title: AppLocalizations.of(context)!.termsAndConditions,
+                        subtitle: AppLocalizations.of(context)!.legalTermsRowSubtitle,
+                        icon: Icons.gavel_outlined,
+                        onTap: () => Navigator.of(context).push(MaterialPageRoute<void>(
+                            builder: (_) => const TermsAndConditionsScreen())),
+                      ),
+                      const SizedBox(height: MenuRow.gap),
+                      EditSectionCard(
+                        key: const ValueKey('help-privacy'),
+                        title: AppLocalizations.of(context)!.privacyPolicy,
+                        subtitle: AppLocalizations.of(context)!.legalPrivacyRowSubtitle,
+                        icon: Icons.privacy_tip_outlined,
+                        onTap: () => Navigator.of(context).push(MaterialPageRoute<void>(
+                            builder: (_) => const PrivacyPolicyScreen())),
+                      ),
+                      const SizedBox(height: MenuRow.gap),
+                      EditSectionCard(
+                        key: const ValueKey('help-eula'),
+                        title: AppLocalizations.of(context)!.eulaTitle,
+                        subtitle: AppLocalizations.of(context)!.eulaRowSubtitle,
+                        icon: Icons.description_outlined,
+                        onTap: () => openEula(context),
                       ),
                       const SizedBox(height: MenuRow.gap),
                       // NCII removal request (TAKE IT DOWN Act / Decreto 12.976).
@@ -1468,7 +1499,9 @@ class EditProfileScreen extends StatelessWidget {
         // Terms 7.3 / 8.7: what deleting does (and does not) do.
         content: SingleChildScrollView(
           child: Text(
-            AppLocalizations.of(dialogContext)!.deleteAccountConfirmation,
+            ProductCatalog.isAppleStore
+                ? AppLocalizations.of(dialogContext)!.deleteAccountConfirmationIos
+                : AppLocalizations.of(dialogContext)!.deleteAccountConfirmation,
             key: const ValueKey('delete-account-consequences'),
             style: const TextStyle(color: AppColors.textSecondary, height: 1.4),
           ),
@@ -1516,7 +1549,9 @@ class EditProfileScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  AppLocalizations.of(context)!.profileDeleteAccountWarning,
+                  ProductCatalog.isAppleStore
+                      ? AppLocalizations.of(context)!.profileDeleteAccountWarningIos
+                      : AppLocalizations.of(context)!.profileDeleteAccountWarning,
                   style: const TextStyle(color: AppColors.textSecondary, fontSize: 14, height: 1.5),
                 ),
                 const SizedBox(height: 16),

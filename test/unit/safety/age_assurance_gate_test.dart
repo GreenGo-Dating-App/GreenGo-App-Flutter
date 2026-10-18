@@ -37,8 +37,11 @@ void main() {
           [AgeAssuranceMethod.idVerification]);
       expect(s.optionsFor(AgeAssurancePlatform.android),
           [AgeAssuranceMethod.storeSignal, AgeAssuranceMethod.idVerification]);
+      // iOS: Declared Age Range is off (kAppleDeclaredAgeRangeEnabled), so
+      // iPhone users get the ID-document path directly.
+      expect(kAppleDeclaredAgeRangeEnabled, isFalse);
       expect(s.optionsFor(AgeAssurancePlatform.ios),
-          [AgeAssuranceMethod.storeSignal, AgeAssuranceMethod.idVerification]);
+          [AgeAssuranceMethod.idVerification]);
       // A server that only offers ID verification: no store button anywhere.
       const idOnly = AgeAssuranceStatus(
           enforced: true,

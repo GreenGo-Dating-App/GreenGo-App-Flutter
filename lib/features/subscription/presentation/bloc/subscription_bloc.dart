@@ -154,6 +154,8 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
         return;
       }
 
+      // iOS: which intro (2026 launch) offers this Apple ID can still get.
+      await ProductCatalog.loadIntroEligibility(response.productDetails);
       _sessionProducts = List.unmodifiable(response.productDetails);
       emit(ProductsLoaded(response.productDetails));
     } catch (e) {

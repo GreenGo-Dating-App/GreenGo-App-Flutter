@@ -26097,4 +26097,74 @@ class AppLocalizationsIt extends AppLocalizations {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String promoStoreFirstYear(String percent, String launch, String regular) {
+    return '$percent% di sconto sul primo anno per i nuovi abbonati: $launch, poi $regular/anno.';
+  }
+
+  @override
+  String promoStoreFirst3Months(String percent, String launch, String regular) {
+    return '$percent% di sconto sui primi 3 mesi per i nuovi abbonati: $launch/mese, poi $regular/mese.';
+  }
+
+  @override
+  String promoStoreFirstYearGeneric(String percent, String regular) {
+    return '$percent% di sconto sul primo anno per i nuovi abbonati, poi $regular/anno.';
+  }
+
+  @override
+  String promoStoreFirst3MonthsGeneric(String percent, String regular) {
+    return '$percent% di sconto sui primi 3 mesi per i nuovi abbonati, poi $regular/mese.';
+  }
+
+  @override
+  String get promoRenewsAppStore =>
+      'Si rinnova automaticamente; puoi annullare quando vuoi nelle impostazioni dell\'App Store.';
+
+  @override
+  String get promoRenewsGooglePlay =>
+      'Si rinnova automaticamente; puoi annullare quando vuoi negli abbonamenti di Google Play.';
+
+  @override
+  String get purchasesWithdrawalStoreHelpIos =>
+      'Gli acquisti fatti nell\'app per iPhone sono stati venduti da Apple. Chiedi ad Apple il rimborso o il recesso:';
+
+  @override
+  String get manageSubscriptionStoreHelpIos =>
+      'Gli abbonamenti acquistati nell\'app per iPhone sono gestiti da Apple:';
+
+  @override
+  String get baseIncludedInPlan => 'Incluso nel tuo piano';
+
+  @override
+  String get eulaShort => 'EULA';
+
+  @override
+  String get eulaTitle => 'Contratto di licenza per l\'utente finale';
+
+  @override
+  String get eulaRowSubtitle => 'La licenza per usare l\'app GreenGo';
+
+  @override
+  String get legalTermsRowSubtitle => 'Le regole per usare GreenGo';
+
+  @override
+  String get legalPrivacyRowSubtitle => 'Come trattiamo i tuoi dati';
+
+  @override
+  String get aiConsentTranslateReceived =>
+      'I messaggi che ricevi possono essere tradotti quando tocchi Traduci; il testo viene inviato al servizio di traduzione di Google.';
+
+  @override
+  String get deleteAccountConfirmationIos =>
+      'Eliminare l\'account? L\'operazione non si può annullare.\n\n• Il tuo account e il tuo profilo vengono eliminati. Alcuni dati vengono conservati quando la legge lo richiede (pagamenti e fatture, segnalazioni di sicurezza); vedi l\'Informativa sulla privacy.\n• Le monete rimaste vanno perse.\n• Un abbonamento acquistato sul web viene annullato.\n• Un abbonamento acquistato sull\'App Store NON viene annullato eliminando l\'account: annullalo nello store, altrimenti lo store continuerà ad addebitarlo.';
+
+  @override
+  String get profileDeleteAccountWarningIos =>
+      'È definitivo. Il tuo account e il tuo profilo vengono eliminati (alcuni dati vengono conservati come richiesto dalla legge; vedi l\'Informativa sulla privacy), le monete rimaste vanno perse e l\'abbonamento web viene annullato. Annulla gli abbonamenti App Store nello store. Inserisci la password per confermare.';
+
+  @override
+  String get promoRenewsWeb =>
+      'Si rinnova automaticamente; puoi annullare quando vuoi nel portale di fatturazione.';
 }

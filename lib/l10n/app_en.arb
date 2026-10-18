@@ -15118,5 +15118,115 @@
         "type": "String"
       }
     }
+  },
+  "promoStoreFirstYear": "{percent}% off your first year for new subscribers: {launch}, then {regular}/year.",
+  "@promoStoreFirstYear": {
+    "description": "Store apps (iOS/Android): yearly plan launch offer line",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      },
+      "launch": {
+        "type": "String"
+      },
+      "regular": {
+        "type": "String"
+      }
+    }
+  },
+  "promoStoreFirst3Months": "{percent}% off your first 3 months for new subscribers: {launch}/month, then {regular}/month.",
+  "@promoStoreFirst3Months": {
+    "description": "Store apps: monthly plan launch offer line (3 months)",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      },
+      "launch": {
+        "type": "String"
+      },
+      "regular": {
+        "type": "String"
+      }
+    }
+  },
+  "promoStoreFirstYearGeneric": "{percent}% off your first year for new subscribers, then {regular}/year.",
+  "@promoStoreFirstYearGeneric": {
+    "description": "Store apps: yearly launch offer when the store gives no launch price",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      },
+      "regular": {
+        "type": "String"
+      }
+    }
+  },
+  "promoStoreFirst3MonthsGeneric": "{percent}% off your first 3 months for new subscribers, then {regular}/month.",
+  "@promoStoreFirst3MonthsGeneric": {
+    "description": "Store apps: monthly launch offer when the store gives no launch price",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      },
+      "regular": {
+        "type": "String"
+      }
+    }
+  },
+  "promoRenewsAppStore": "Renews automatically; cancel anytime in App Store settings.",
+  "@promoRenewsAppStore": {
+    "description": "iOS: auto-renew line under the launch offer"
+  },
+  "promoRenewsGooglePlay": "Renews automatically; cancel anytime in Google Play subscriptions.",
+  "@promoRenewsGooglePlay": {
+    "description": "Android: auto-renew line under the launch offer"
+  },
+  "purchasesWithdrawalStoreHelpIos": "Purchases made in the iPhone app were sold by Apple. Ask Apple for a refund or to withdraw:",
+  "@purchasesWithdrawalStoreHelpIos": {
+    "description": "iOS: purchases & withdrawal sheet intro, Apple only (2.3.10)"
+  },
+  "manageSubscriptionStoreHelpIos": "Memberships bought in the iPhone app are managed by Apple:",
+  "@manageSubscriptionStoreHelpIos": {
+    "description": "iOS: manage subscription help, Apple only (2.3.10)"
+  },
+  "baseIncludedInPlan": "Included in your plan",
+  "@baseIncludedInPlan": {
+    "description": "Base membership card when a paid tier is active (3.1.2(b))"
+  },
+  "eulaShort": "EULA",
+  "@eulaShort": {
+    "description": "Short EULA link label in the subscription footer"
+  },
+  "eulaTitle": "End-User License Agreement",
+  "@eulaTitle": {
+    "description": "End-User License Agreement row title"
+  },
+  "eulaRowSubtitle": "The license to use the GreenGo app",
+  "@eulaRowSubtitle": {
+    "description": "EULA row subtitle in Help & Support"
+  },
+  "legalTermsRowSubtitle": "The rules for using GreenGo",
+  "@legalTermsRowSubtitle": {
+    "description": "Terms row subtitle in Help & Support"
+  },
+  "legalPrivacyRowSubtitle": "How we handle your data",
+  "@legalPrivacyRowSubtitle": {
+    "description": "Privacy Policy row subtitle in Help & Support"
+  },
+  "aiConsentTranslateReceived": "Messages you receive may be translated when you tap Translate; the text is sent to Google's translation service.",
+  "@aiConsentTranslateReceived": {
+    "description": "AI consent sheet: translation of received messages"
+  },
+  "deleteAccountConfirmationIos": "Delete your account? This cannot be undone.\n\n• Your account and profile are deleted. Some records are kept where the law requires it (payments and invoices, safety reports); see the Privacy Policy.\n• Any Coins left in your account are lost.\n• A membership bought on the web is cancelled.\n• A membership bought in the App Store is NOT cancelled by deleting your account: cancel it in the store, or the store keeps charging you.",
+  "@deleteAccountConfirmationIos": {
+    "description": "iOS: delete-account confirmation naming only the App Store (2.3.10)"
+  },
+  "profileDeleteAccountWarningIos": "This is permanent. Your account and profile are deleted (some records are kept as the law requires; see the Privacy Policy), remaining Coins are lost and a web membership is cancelled. Cancel any App Store subscription in the App Store. Enter your password to confirm.",
+  "@profileDeleteAccountWarningIos": {
+    "description": "iOS: delete-account warning naming only the App Store (2.3.10)"
+  },
+  "promoRenewsWeb": "Renews automatically; cancel anytime in the billing portal.",
+  "@promoRenewsWeb": {
+    "description": "Web (Stripe): auto-renew line under the launch offer"
   }
 }

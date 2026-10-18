@@ -77,6 +77,7 @@ class _AiConsentSheetBody extends StatelessWidget {
             const SizedBox(height: 14),
             point(Icons.business, l10n.aiConsentProvidersV2),
             point(Icons.chat_bubble_outline, l10n.aiConsentWhatSentV2),
+            point(Icons.translate, l10n.aiConsentTranslateReceived),
             point(Icons.help_outline, l10n.aiConsentWhy),
             point(Icons.toggle_off_outlined, l10n.aiConsentDeclineInfo),
             const SizedBox(height: 8),

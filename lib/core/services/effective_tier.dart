@@ -70,6 +70,15 @@ bool isBaseMembershipActive({
       baseMembershipEndDate.isAfter(now ?? DateTime.now());
 }
 
+/// Apple 3.1.2(b) (and owner rule, all platforms): Silver / Gold / Platinum
+/// already include everything Base gives, so while one of them is ACTIVE
+/// ([effective] from [effectiveTier]) Base is shown as "Included in your plan"
+/// and is never offered for sale on top of it.
+bool baseIncludedInPaidTier(MembershipTier effective) =>
+    effective == MembershipTier.silver ||
+    effective == MembershipTier.gold ||
+    effective == MembershipTier.platinum;
+
 /// Converts a Firestore value (Timestamp / DateTime / millis / ISO string) to
 /// a [DateTime]; null when absent or unparseable.
 DateTime? tierDateFromValue(Object? v) {

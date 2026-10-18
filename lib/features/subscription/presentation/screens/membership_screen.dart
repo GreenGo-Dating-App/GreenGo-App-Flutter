@@ -14,6 +14,7 @@ import '../../domain/entities/subscription.dart';
 import '../tier_l10n.dart';
 import '../../domain/membership_product_mapping.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/effective_tier.dart';
 import '../bloc/subscription_bloc.dart';
 import '../web_membership_upgrade.dart';
 
@@ -95,8 +96,14 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
     }
   }
 
+  /// An active Silver/Gold/Platinum already includes Base (3.1.2(b)).
+  bool get _baseIncludedInPlan => baseIncludedInPaidTier(
+      effectiveTier(rawTier: _currentTierName, endDate: _currentEndDate));
+
   bool _isProductLocked(String productId) {
-    if (ProductCatalog.classify(productId).isBase) return _hasActiveBaseMembership;
+    if (ProductCatalog.classify(productId).isBase) {
+      return _hasActiveBaseMembership || _baseIncludedInPlan;
+    }
     if (_currentTierName == null || _currentEndDate == null) return false;
     final isActive = _currentEndDate!.isAfter(DateTime.now());
     if (!isActive) return false;
@@ -423,7 +430,12 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Text(
-                      l10n.membershipActive,
+                      isBase && _baseIncludedInPlan
+                          ? l10n.baseIncludedInPlan
+                          : l10n.membershipActive,
+                      key: isBase && _baseIncludedInPlan
+                          ? const ValueKey('base-included-in-plan')
+                          : null,
                       style: const TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.bold,
@@ -504,13 +516,8 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
                 ),
               ]),
             ],
-            if (ProductCatalog.hasSevenDayFreeTrial(product)) ...[
-              const SizedBox(height: 6),
-              Text(
-                l10n.subscriptionFreeTrialInfo,
-                style: const TextStyle(fontSize: 12, color: Colors.white70),
-              ),
-            ],
+            // No free-trial copy: the only intro offer is the 2026 launch
+            // price (owner 2026-10-17), shown by LaunchPromoPrice above.
             const SizedBox(height: 8),
             if (isYearly &&
                 (promo == null || promo.isGeneric) &&

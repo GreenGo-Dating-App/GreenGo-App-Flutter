@@ -44195,6 +44195,114 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{km} km'**
   String distanceKmPrecise(String km);
+
+  /// Store apps (iOS/Android): yearly plan launch offer line
+  ///
+  /// In en, this message translates to:
+  /// **'{percent}% off your first year for new subscribers: {launch}, then {regular}/year.'**
+  String promoStoreFirstYear(String percent, String launch, String regular);
+
+  /// Store apps: monthly plan launch offer line (3 months)
+  ///
+  /// In en, this message translates to:
+  /// **'{percent}% off your first 3 months for new subscribers: {launch}/month, then {regular}/month.'**
+  String promoStoreFirst3Months(String percent, String launch, String regular);
+
+  /// Store apps: yearly launch offer when the store gives no launch price
+  ///
+  /// In en, this message translates to:
+  /// **'{percent}% off your first year for new subscribers, then {regular}/year.'**
+  String promoStoreFirstYearGeneric(String percent, String regular);
+
+  /// Store apps: monthly launch offer when the store gives no launch price
+  ///
+  /// In en, this message translates to:
+  /// **'{percent}% off your first 3 months for new subscribers, then {regular}/month.'**
+  String promoStoreFirst3MonthsGeneric(String percent, String regular);
+
+  /// iOS: auto-renew line under the launch offer
+  ///
+  /// In en, this message translates to:
+  /// **'Renews automatically; cancel anytime in App Store settings.'**
+  String get promoRenewsAppStore;
+
+  /// Android: auto-renew line under the launch offer
+  ///
+  /// In en, this message translates to:
+  /// **'Renews automatically; cancel anytime in Google Play subscriptions.'**
+  String get promoRenewsGooglePlay;
+
+  /// iOS: purchases & withdrawal sheet intro, Apple only (2.3.10)
+  ///
+  /// In en, this message translates to:
+  /// **'Purchases made in the iPhone app were sold by Apple. Ask Apple for a refund or to withdraw:'**
+  String get purchasesWithdrawalStoreHelpIos;
+
+  /// iOS: manage subscription help, Apple only (2.3.10)
+  ///
+  /// In en, this message translates to:
+  /// **'Memberships bought in the iPhone app are managed by Apple:'**
+  String get manageSubscriptionStoreHelpIos;
+
+  /// Base membership card when a paid tier is active (3.1.2(b))
+  ///
+  /// In en, this message translates to:
+  /// **'Included in your plan'**
+  String get baseIncludedInPlan;
+
+  /// Short EULA link label in the subscription footer
+  ///
+  /// In en, this message translates to:
+  /// **'EULA'**
+  String get eulaShort;
+
+  /// End-User License Agreement row title
+  ///
+  /// In en, this message translates to:
+  /// **'End-User License Agreement'**
+  String get eulaTitle;
+
+  /// EULA row subtitle in Help & Support
+  ///
+  /// In en, this message translates to:
+  /// **'The license to use the GreenGo app'**
+  String get eulaRowSubtitle;
+
+  /// Terms row subtitle in Help & Support
+  ///
+  /// In en, this message translates to:
+  /// **'The rules for using GreenGo'**
+  String get legalTermsRowSubtitle;
+
+  /// Privacy Policy row subtitle in Help & Support
+  ///
+  /// In en, this message translates to:
+  /// **'How we handle your data'**
+  String get legalPrivacyRowSubtitle;
+
+  /// AI consent sheet: translation of received messages
+  ///
+  /// In en, this message translates to:
+  /// **'Messages you receive may be translated when you tap Translate; the text is sent to Google\'s translation service.'**
+  String get aiConsentTranslateReceived;
+
+  /// iOS: delete-account confirmation naming only the App Store (2.3.10)
+  ///
+  /// In en, this message translates to:
+  /// **'Delete your account? This cannot be undone.\n\n• Your account and profile are deleted. Some records are kept where the law requires it (payments and invoices, safety reports); see the Privacy Policy.\n• Any Coins left in your account are lost.\n• A membership bought on the web is cancelled.\n• A membership bought in the App Store is NOT cancelled by deleting your account: cancel it in the store, or the store keeps charging you.'**
+  String get deleteAccountConfirmationIos;
+
+  /// iOS: delete-account warning naming only the App Store (2.3.10)
+  ///
+  /// In en, this message translates to:
+  /// **'This is permanent. Your account and profile are deleted (some records are kept as the law requires; see the Privacy Policy), remaining Coins are lost and a web membership is cancelled. Cancel any App Store subscription in the App Store. Enter your password to confirm.'**
+  String get profileDeleteAccountWarningIos;
+
+  /// Web (Stripe): auto-renew line under the launch offer
+  ///
+  /// In en, this message translates to:
+  /// **'Renews automatically; cancel anytime in the billing portal.'**
+  String get promoRenewsWeb;
 }
 
 class _AppLocalizationsDelegate

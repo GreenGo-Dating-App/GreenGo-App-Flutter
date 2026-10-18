@@ -75,4 +75,32 @@ void main() {
     await t.pumpAndSettle();
     expect(opened.single.toString(), ManageSubscription.appStoreSubscriptionsUrl);
   });
+
+  testWidgets('iOS help sheet: only Apple, never Google Play (App Review 2.3.10)', (t) async {
+    ManageSubscription.isWebOverride = false;
+    ManageSubscription.platformOverride = TargetPlatform.iOS;
+    ManageSubscription.openUrl = (u) async {
+      opened.add(u);
+      return false; // store page could not open: the help sheet shows
+    };
+    await t.pumpWidget(app());
+    await t.tap(find.text('go'));
+    await t.pumpAndSettle();
+    expect(find.byKey(const ValueKey('manage-subscription-help')), findsOneWidget);
+    expect(find.byKey(const ValueKey('manage-subscription-play')), findsNothing);
+    expect(find.byKey(const ValueKey('manage-subscription-apple')), findsOneWidget);
+    expect(find.textContaining('Google Play'), findsNothing);
+    expect(find.text('Memberships bought in the iPhone app are managed by Apple:'), findsOneWidget);
+  });
+
+  testWidgets('Android help sheet unchanged: both stores', (t) async {
+    ManageSubscription.isWebOverride = false;
+    ManageSubscription.platformOverride = TargetPlatform.android;
+    ManageSubscription.openUrl = (u) async => false;
+    await t.pumpWidget(app());
+    await t.tap(find.text('go'));
+    await t.pumpAndSettle();
+    expect(find.byKey(const ValueKey('manage-subscription-play')), findsOneWidget);
+    expect(find.byKey(const ValueKey('manage-subscription-apple')), findsOneWidget);
+  });
 }

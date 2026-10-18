@@ -56,7 +56,6 @@ void main() {
     expect(r.currencySymbol, r'R$');
     expect(ProductCatalog.recurringPriceLabel(trial), r'R$ 119,99');
     expect(ProductCatalog.freeTrialPeriod(trial), 'P7D');
-    expect(ProductCatalog.hasSevenDayFreeTrial(trial), isTrue);
   });
 
   test('intro-price offer: recurring (last non-zero) phase wins, no trial', () {
@@ -66,7 +65,6 @@ void main() {
     expect(intro.price, r'R$ 59,99');
     expect(ProductCatalog.recurringPriceLabel(intro), r'R$ 119,99');
     expect(ProductCatalog.freeTrialPeriod(intro), isNull);
-    expect(ProductCatalog.hasSevenDayFreeTrial(intro), isFalse);
   });
 
   test('base plan without offers: price unchanged, no trial', () {
@@ -78,12 +76,11 @@ void main() {
     expect(ProductCatalog.freeTrialPeriod(plain), isNull);
   });
 
-  test('a trial of a different length does not claim "7 days free"', () {
+  test('a trial of a different length: recurring price still shown', () {
     final p = _play([
       [_phase(0, 'Free', 'P14D'), recurring],
     ]).single;
     expect(ProductCatalog.freeTrialPeriod(p), 'P14D');
-    expect(ProductCatalog.hasSevenDayFreeTrial(p), isFalse);
     expect(ProductCatalog.recurringPriceLabel(p), r'R$ 119,99');
   });
 
@@ -137,15 +134,16 @@ void main() {
     final trialPhases = [_phase(0, 'Free', 'P7D'), recurring];
     final introPhases = [_phase(59990000, r'R$ 59,99', 'P1Y'), recurring];
 
-    test('trial + base -> the free-trial offer (wherever it is listed)', () {
+    test('trial + base -> the base plan, never the free trial (no trials, '
+        'owner 2026-10-17)', () {
       for (final baseFirst in [true, false]) {
         final entries = baseFirst
             ? _play([[recurring], trialPhases])
             : _play([trialPhases, [recurring]], baseFirst: false);
         final picked = ProductCatalog.pickOffer(entries);
-        expect(ProductCatalog.freeTrialPeriod(picked), 'P7D',
+        expect(ProductCatalog.freeTrialPeriod(picked), isNull,
             reason: 'baseFirst=$baseFirst');
-        expect(offerIdOf(picked), isNotNull);
+        expect(offerIdOf(picked), isNull);
       }
     });
 
@@ -212,8 +210,8 @@ void main() {
         'greengo_base_membership',
         'gold_premium_monthly',
       ]);
-      expect(ProductCatalog.freeTrialPeriod(out[0]), 'P7D');
-      expect(ProductCatalog.freeTrialPeriod(out[1]), 'P7D');
+      expect(ProductCatalog.freeTrialPeriod(out[0]), isNull);
+      expect(ProductCatalog.freeTrialPeriod(out[1]), isNull);
       // Gold has an intro-price offer: the card buys that offer.
       expect(ProductCatalog.introPhase(out[2]), isNotNull);
     });

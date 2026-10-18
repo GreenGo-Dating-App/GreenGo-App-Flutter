@@ -26120,4 +26120,74 @@ class AppLocalizationsDe extends AppLocalizations {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String promoStoreFirstYear(String percent, String launch, String regular) {
+    return '$percent % Rabatt auf dein erstes Jahr für neue Abonnenten: $launch, danach $regular/Jahr.';
+  }
+
+  @override
+  String promoStoreFirst3Months(String percent, String launch, String regular) {
+    return '$percent % Rabatt auf deine ersten 3 Monate für neue Abonnenten: $launch/Monat, danach $regular/Monat.';
+  }
+
+  @override
+  String promoStoreFirstYearGeneric(String percent, String regular) {
+    return '$percent % Rabatt auf dein erstes Jahr für neue Abonnenten, danach $regular/Jahr.';
+  }
+
+  @override
+  String promoStoreFirst3MonthsGeneric(String percent, String regular) {
+    return '$percent % Rabatt auf deine ersten 3 Monate für neue Abonnenten, danach $regular/Monat.';
+  }
+
+  @override
+  String get promoRenewsAppStore =>
+      'Verlängert sich automatisch; jederzeit in den App-Store-Einstellungen kündbar.';
+
+  @override
+  String get promoRenewsGooglePlay =>
+      'Verlängert sich automatisch; jederzeit unter Google Play > Abos kündbar.';
+
+  @override
+  String get purchasesWithdrawalStoreHelpIos =>
+      'Käufe in der iPhone-App wurden von Apple verkauft. Bitte Apple um eine Erstattung oder einen Widerruf:';
+
+  @override
+  String get manageSubscriptionStoreHelpIos =>
+      'In der iPhone-App gekaufte Mitgliedschaften werden von Apple verwaltet:';
+
+  @override
+  String get baseIncludedInPlan => 'In deinem Tarif enthalten';
+
+  @override
+  String get eulaShort => 'EULA';
+
+  @override
+  String get eulaTitle => 'Endnutzer-Lizenzvereinbarung';
+
+  @override
+  String get eulaRowSubtitle => 'Die Lizenz zur Nutzung der GreenGo-App';
+
+  @override
+  String get legalTermsRowSubtitle => 'Die Regeln für die Nutzung von GreenGo';
+
+  @override
+  String get legalPrivacyRowSubtitle => 'Wie wir mit deinen Daten umgehen';
+
+  @override
+  String get aiConsentTranslateReceived =>
+      'Empfangene Nachrichten können übersetzt werden, wenn du auf Übersetzen tippst; der Text wird an den Übersetzungsdienst von Google gesendet.';
+
+  @override
+  String get deleteAccountConfirmationIos =>
+      'Konto löschen? Das kann nicht rückgängig gemacht werden.\n\n• Dein Konto und dein Profil werden gelöscht. Einige Unterlagen werden aufbewahrt, soweit das Gesetz es verlangt (Zahlungen und Rechnungen, Sicherheitsmeldungen); siehe Datenschutzerklärung.\n• Verbleibende Coins gehen verloren.\n• Eine im Web gekaufte Mitgliedschaft wird gekündigt.\n• Eine über den App Store gekaufte Mitgliedschaft wird durch das Löschen NICHT gekündigt: Kündige sie im Store, sonst bucht der Store weiter ab.';
+
+  @override
+  String get profileDeleteAccountWarningIos =>
+      'Das ist endgültig. Dein Konto und dein Profil werden gelöscht (einige Unterlagen werden aufbewahrt, soweit das Gesetz es verlangt; siehe Datenschutzerklärung), verbleibende Coins gehen verloren und eine Web-Mitgliedschaft wird gekündigt. Kündige App-Store-Abos im App Store. Gib zur Bestätigung dein Passwort ein.';
+
+  @override
+  String get promoRenewsWeb =>
+      'Verlängert sich automatisch; jederzeit im Abrechnungsportal kündbar.';
 }

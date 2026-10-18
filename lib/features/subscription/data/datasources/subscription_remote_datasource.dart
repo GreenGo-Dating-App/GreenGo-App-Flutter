@@ -86,6 +86,8 @@ class SubscriptionRemoteDataSource {
       throw Exception('No products found');
     }
 
+    // iOS: which intro (2026 launch) offers this Apple ID can still get.
+    await ProductCatalog.loadIntroEligibility(response.productDetails);
     return response.productDetails;
   }
 

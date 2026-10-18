@@ -26056,4 +26056,74 @@ class AppLocalizationsEs extends AppLocalizations {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String promoStoreFirstYear(String percent, String launch, String regular) {
+    return '$percent % de descuento en tu primer año para nuevos suscriptores: $launch, luego $regular/año.';
+  }
+
+  @override
+  String promoStoreFirst3Months(String percent, String launch, String regular) {
+    return '$percent % de descuento en tus primeros 3 meses para nuevos suscriptores: $launch/mes, luego $regular/mes.';
+  }
+
+  @override
+  String promoStoreFirstYearGeneric(String percent, String regular) {
+    return '$percent % de descuento en tu primer año para nuevos suscriptores, luego $regular/año.';
+  }
+
+  @override
+  String promoStoreFirst3MonthsGeneric(String percent, String regular) {
+    return '$percent % de descuento en tus primeros 3 meses para nuevos suscriptores, luego $regular/mes.';
+  }
+
+  @override
+  String get promoRenewsAppStore =>
+      'Se renueva automáticamente; cancela cuando quieras en los ajustes de la App Store.';
+
+  @override
+  String get promoRenewsGooglePlay =>
+      'Se renueva automáticamente; cancela cuando quieras en las suscripciones de Google Play.';
+
+  @override
+  String get purchasesWithdrawalStoreHelpIos =>
+      'Las compras hechas en la app de iPhone las vendió Apple. Pide a Apple el reembolso o el desistimiento:';
+
+  @override
+  String get manageSubscriptionStoreHelpIos =>
+      'Las membresías compradas en la app de iPhone las gestiona Apple:';
+
+  @override
+  String get baseIncludedInPlan => 'Incluido en tu plan';
+
+  @override
+  String get eulaShort => 'EULA';
+
+  @override
+  String get eulaTitle => 'Contrato de Licencia de Usuario Final';
+
+  @override
+  String get eulaRowSubtitle => 'La licencia para usar la app GreenGo';
+
+  @override
+  String get legalTermsRowSubtitle => 'Las normas para usar GreenGo';
+
+  @override
+  String get legalPrivacyRowSubtitle => 'Cómo tratamos tus datos';
+
+  @override
+  String get aiConsentTranslateReceived =>
+      'Los mensajes que recibes pueden traducirse cuando tocas Traducir; el texto se envía al servicio de traducción de Google.';
+
+  @override
+  String get deleteAccountConfirmationIos =>
+      '¿Eliminar tu cuenta? No se puede deshacer.\n\n• Se eliminan tu cuenta y tu perfil. Algunos registros se conservan cuando la ley lo exige (pagos y facturas, denuncias de seguridad); consulta la Política de privacidad.\n• Las monedas que te queden se pierden.\n• Una membresía comprada en la web se cancela.\n• Una membresía comprada en la App Store NO se cancela al eliminar la cuenta: cancélala en la tienda o la tienda te seguirá cobrando.';
+
+  @override
+  String get profileDeleteAccountWarningIos =>
+      'Es definitivo. Se eliminan tu cuenta y tu perfil (algunos registros se conservan según exige la ley; consulta la Política de privacidad), se pierden las monedas restantes y se cancela la membresía web. Cancela cualquier suscripción de la App Store en la tienda. Introduce tu contraseña para confirmar.';
+
+  @override
+  String get promoRenewsWeb =>
+      'Se renueva automáticamente; cancela cuando quieras en el portal de facturación.';
 }
