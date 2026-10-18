@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:greengo_chat/core/constants/launch_promo.dart';
@@ -8,6 +9,8 @@ import 'package:greengo_chat/features/subscription/domain/entities/subscription.
 import 'package:greengo_chat/generated/app_localizations.dart';
 import 'package:in_app_purchase_android/billing_client_wrappers.dart';
 import 'package:in_app_purchase_android/in_app_purchase_android.dart';
+import 'package:in_app_purchase_storekit/in_app_purchase_storekit.dart';
+import 'package:in_app_purchase_storekit/store_kit_2_wrappers.dart';
 
 PricingPhaseWrapper _phase(int micros, String formatted, String period,
         {int cycles = 0}) =>
@@ -96,14 +99,38 @@ void main() {
       expect(ProductCatalog.recurringPriceLabel(picked), r'R$ 34,90');
     });
 
-    test('a free trial still wins over the launch offer', () {
+    test('a free trial is never picked: the launch offer wins (no trials, '
+        'owner 2026-10-17)', () {
       final entries = _play([
         [regular],
         [launch, regular],
         [_phase(0, 'Free', 'P7D', cycles: 1), regular],
       ]);
-      expect(ProductCatalog.freeTrialPeriod(ProductCatalog.pickOffer(entries)),
-          'P7D');
+      final picked = ProductCatalog.pickOffer(entries);
+      expect(ProductCatalog.freeTrialPeriod(picked), isNull);
+      expect(ProductCatalog.introPhase(picked), isNotNull);
+    });
+
+    test('trial + base only: the base plan, never the trial', () {
+      final entries = _play([
+        [_phase(0, 'Free', 'P7D', cycles: 1), regular],
+        [regular],
+      ], ids: ['trial7', null]);
+      final picked = ProductCatalog.pickOffer(entries);
+      expect(ProductCatalog.freeTrialPeriod(picked), isNull);
+      expect(ProductCatalog.promoPrice(picked, yearly: false, now: before),
+          isNull, reason: 'no launch offer from Play: no offer line');
+    });
+
+    test('launch2026 is preferred over another discount offer', () {
+      final other = _phase(24900000, r'R$ 24,90', 'P1M', cycles: 1);
+      final entries = _play([
+        [regular],
+        [other, regular],
+        [launch, regular],
+      ], ids: [null, 'winback', LaunchPromo.id]);
+      expect(ProductCatalog.introPhase(ProductCatalog.pickOffer(entries))!.label,
+          r'R$ 16,90');
     });
 
     test('a first phase that is not cheaper is not an intro price', () {
@@ -206,7 +233,9 @@ void main() {
     });
   });
 
-  group('LaunchPromoPrice widget', () {
+  group('LaunchPromoPrice widget (same wording on every platform)', () {
+    tearDown(() => debugDefaultTargetPlatformOverride = null);
+
     Widget host(PromoPrice p) => MaterialApp(
           localizationsDelegates: AppLocalizations.localizationsDelegates,
           supportedLocales: AppLocalizations.supportedLocales,
@@ -216,38 +245,151 @@ void main() {
           ),
         );
 
-    testWidgets('launch price, then the regular price; no strikethrough',
+    const yearly = PromoPrice(
+      yearly: true,
+      launchLabel: r'$34.99',
+      launchAmount: 34.99,
+      regularLabel: r'$69.99',
+      regularAmount: 69.99,
+    );
+
+    testWidgets('iOS: 50% first year, regular renewal price, App Store line',
         (tester) async {
-      await tester.pumpWidget(host(const PromoPrice(
-        yearly: true,
-        launchLabel: r'$34.99',
-        launchAmount: 34.99,
-        regularLabel: r'$69.99',
-        regularAmount: 69.99,
-      )));
+      debugDefaultTargetPlatformOverride = TargetPlatform.iOS;
+      await tester.pumpWidget(host(yearly));
       expect(find.text('2026 launch price'), findsOneWidget);
       expect(find.text(r'$34.99'), findsOneWidget);
-      expect(find.text(r'First year, then $69.99/year'), findsOneWidget);
+      expect(
+          find.text(r'50% off your first year for new subscribers: $34.99, '
+              r'then $69.99/year.'),
+          findsOneWidget);
+      expect(
+          find.text('Renews automatically; cancel anytime in App Store settings.'),
+          findsOneWidget);
+      expect(find.textContaining('Google Play'), findsNothing);
+      expect(find.textContaining('free'), findsNothing);
       for (final t in tester.widgetList<Text>(find.byType(Text))) {
         expect(t.style?.decoration, isNot(TextDecoration.lineThrough));
       }
+      debugDefaultTargetPlatformOverride = null;
+    });
+
+    testWidgets('Android: same offer line, Google Play renewal line',
+        (tester) async {
+      debugDefaultTargetPlatformOverride = TargetPlatform.android;
+      await tester.pumpWidget(host(yearly));
+      expect(
+          find.text(r'50% off your first year for new subscribers: $34.99, '
+              r'then $69.99/year.'),
+          findsOneWidget);
+      expect(find.textContaining('Google Play subscriptions'), findsOneWidget);
+      expect(find.textContaining('App Store'), findsNothing);
+      debugDefaultTargetPlatformOverride = null;
     });
 
     testWidgets('monthly plans say first 3 months', (tester) async {
+      debugDefaultTargetPlatformOverride = TargetPlatform.iOS;
       await tester.pumpWidget(host(const PromoPrice(
         yearly: false,
         launchLabel: r'$4.99',
         regularLabel: r'$9.99',
       )));
-      expect(find.text(r'First 3 months, then $9.99/month'), findsOneWidget);
+      expect(
+          find.text(r'50% off your first 3 months for new subscribers: '
+              r'$4.99/month, then $9.99/month.'),
+          findsOneWidget);
+      debugDefaultTargetPlatformOverride = null;
     });
 
-    testWidgets('iOS without the offer details: regular price + generic line',
+    testWidgets('no launch amount (StoreKit 2, other currency): percent only',
         (tester) async {
+      debugDefaultTargetPlatformOverride = TargetPlatform.iOS;
       await tester.pumpWidget(
           host(const PromoPrice.generic(yearly: true, regularLabel: r'$69.99')));
       expect(find.text(r'$69.99'), findsOneWidget);
-      expect(find.textContaining('50% off your first period'), findsOneWidget);
+      expect(
+          find.text(r'50% off your first year for new subscribers, then '
+              r'$69.99/year.'),
+          findsOneWidget);
+      debugDefaultTargetPlatformOverride = null;
+    });
+
+    testWidgets('no regular price: nothing is claimed', (tester) async {
+      debugDefaultTargetPlatformOverride = TargetPlatform.iOS;
+      await tester.pumpWidget(host(const PromoPrice.generic(yearly: true)));
+      expect(find.text('2026 launch price'), findsNothing);
+      debugDefaultTargetPlatformOverride = null;
+    });
+  });
+
+  group('iOS StoreKit 2 launch price', () {
+    AppStoreProduct2Details sk2(String id, double price, String display,
+            {String currency = 'USD', String symbol = r'$'}) =>
+        AppStoreProduct2Details.fromSK2Product(SK2Product(
+          id: id,
+          displayName: 'n',
+          displayPrice: display,
+          description: 'd',
+          price: price,
+          type: SK2ProductType.autoRenewable,
+          priceLocale:
+              SK2PriceLocale(currencyCode: currency, currencySymbol: symbol),
+        ));
+
+    tearDown(() {
+      ProductCatalog.resetIntroEligibility();
+      ProductCatalog.introEligibilityCheck = (_) async => true;
+    });
+
+    test('catalogue launch price in the storefront format (USD, BRL)', () {
+      final usd = ProductCatalog.promoPrice(
+          sk2('subscription_1_year_silver', 69.99, r'$69.99'),
+          yearly: true,
+          now: before)!;
+      expect(usd.launchLabel, r'$34.99');
+      expect(usd.regularLabel, r'$69.99');
+      final brl = ProductCatalog.promoPrice(
+          sk2('subscription_1_month_gold', 59.90, r'R$ 59,90',
+              currency: 'BRL', symbol: r'R$'),
+          yearly: false,
+          now: before)!;
+      expect(brl.launchLabel, r'R$ 29,90');
+      expect(brl.periods, 3);
+    });
+
+    test('other currency: percent-only line, never an invented amount', () {
+      final p = ProductCatalog.promoPrice(
+          sk2('subscription_1_year_gold', 18000, 'JPY 18,000',
+              currency: 'JPY', symbol: 'JPY'),
+          yearly: true,
+          now: before)!;
+      expect(p.isGeneric, isTrue);
+      expect(p.regularLabel, 'JPY 18,000');
+    });
+
+    test('Apple ID not eligible for the intro offer: no offer shown', () async {
+      final silver = sk2('subscription_1_year_silver', 69.99, r'$69.99');
+      final gold = sk2('subscription_1_year_gold', 119.99, r'$119.99');
+      ProductCatalog.introEligibilityCheck =
+          (id) async => id != 'subscription_1_year_silver';
+      await ProductCatalog.loadIntroEligibility([silver, gold]);
+      expect(ProductCatalog.promoPrice(silver, yearly: true, now: before), isNull);
+      expect(ProductCatalog.promoPrice(gold, yearly: true, now: before), isNotNull);
+    });
+
+    test('eligibility check failing keeps the offer (wording says new '
+        'subscribers)', () async {
+      final silver = sk2('subscription_1_year_silver', 69.99, r'$69.99');
+      ProductCatalog.introEligibilityCheck = (_) async => throw Exception('x');
+      await ProductCatalog.loadIntroEligibility([silver]);
+      expect(ProductCatalog.promoPrice(silver, yearly: true, now: before),
+          isNotNull);
+    });
+
+    test('formatLike keeps symbol position and decimal separator', () {
+      expect(ProductCatalog.formatLike(r'R$ 29,90', 14.9), r'R$ 14,90');
+      expect(ProductCatalog.formatLike(r'$9.99', 4.99), r'$4.99');
+      expect(ProductCatalog.formatLike('9,99 EUR', 4.99), '4,99 EUR');
     });
   });
 

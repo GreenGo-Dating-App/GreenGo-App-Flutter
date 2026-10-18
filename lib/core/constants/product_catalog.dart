@@ -1,12 +1,15 @@
 import 'dart:io';
 
-import 'package:flutter/foundation.dart' show debugPrint, kIsWeb;
+import 'package:flutter/foundation.dart'
+    show TargetPlatform, debugPrint, defaultTargetPlatform, kIsWeb, visibleForTesting;
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_android/billing_client_wrappers.dart'
     show SubscriptionOfferDetailsWrapper;
 import 'package:in_app_purchase_android/in_app_purchase_android.dart';
 import 'package:in_app_purchase_storekit/in_app_purchase_storekit.dart'
     show AppStoreProduct2Details, AppStoreProductDetails;
+import 'package:in_app_purchase_storekit/store_kit_2_wrappers.dart'
+    show SK2Product;
 
 import 'launch_promo.dart';
 
@@ -186,21 +189,27 @@ class ProductCatalog {
   /// several times. On Google Play a subscription comes back as one
   /// [GooglePlayProductDetails] per base plan / offer, all with the same id.
   ///
-  /// Rule, in order:
-  ///  1. an offer with a free-trial phase (Play only returns offers the user
-  ///     is eligible for; the app ships the 7-day trial copy);
-  ///  2. an introductory-discount offer (first phase cheaper than the
-  ///     renewal, e.g. the 2026 launch offer `launch2026`), so buying the
-  ///     card uses that offer's token;
+  /// The ONLY introductory offer GreenGo sells is the 2026 launch offer (50%
+  /// off the first period; owner decision 2026-10-17: no free trials on
+  /// Google Play or the App Store). Rule, in order:
+  ///  1. the launch offer [LaunchPromo.id] (`launch2026`) when it has a
+  ///     discounted first phase (Play only returns offers the user is
+  ///     eligible for: new customers);
+  ///  2. any other introductory-discount offer (first phase cheaper than the
+  ///     renewal), so buying the card uses that offer's token;
   ///  3. the base plan (no offer id; else the entry whose only phase is the
   ///     recurring price);
-  ///  4. the first entry the store returned.
+  ///  4. the first entry that is not a free trial (else the first entry).
+  /// A free-trial offer is never picked over anything else, so the app never
+  /// buys or advertises a trial.
   /// iOS/web return a single entry per id, which is returned as-is.
   static ProductDetails pickOffer(List<ProductDetails> entries) {
     assert(entries.isNotEmpty, 'pickOffer needs at least one entry');
     if (entries.length == 1) return entries.first;
     for (final e in entries) {
-      if (freeTrialPeriod(e) != null) return e;
+      if (_offerOf(e)?.offerId == LaunchPromo.id && introPhase(e) != null) {
+        return e;
+      }
     }
     for (final e in entries) {
       if (introPhase(e) != null) return e;
@@ -214,7 +223,11 @@ class ProductCatalog {
         singlePhase = e;
       }
     }
-    return singlePhase ?? entries.first;
+    if (singlePhase != null) return singlePhase;
+    for (final e in entries) {
+      if (freeTrialPeriod(e) == null) return e;
+    }
+    return entries.first;
   }
 
   /// One entry per product id, in the order ids first appear, each chosen
@@ -307,12 +320,20 @@ class ProductCatalog {
   }
 
   /// The 2026 launch price to show for a store product, or null when there is
-  /// none (promo over, or the store offers this user no intro price). On iOS
-  /// with StoreKit 2 the launch price is not exposed: a generic promo is
-  /// returned while the promo runs (the App Store sheet shows the price).
+  /// none (promo over, the store offers this user no intro price, or StoreKit
+  /// says this Apple ID is not eligible). On iOS with StoreKit 2 the intro
+  /// offer's price is not exposed: the catalogue launch price is used for
+  /// USD / EUR / BRL storefronts, else a percent-only promo.
   static PromoPrice? promoPrice(ProductDetails product,
       {required bool yearly, DateTime? now}) {
     if (!LaunchPromo.isActive(now)) return null;
+    // Apple 3.1.2(c)/2.3.1: never show an introductory offer to a user the
+    // App Store will not give it to (already used an intro offer in the
+    // subscription group). Unknown eligibility (check failed / StoreKit 1)
+    // keeps the offer; the copy says "for new subscribers".
+    if (_isAppleProduct(product) && _iosIntroEligible[product.id] == false) {
+      return null;
+    }
     final regular = recurringPrice(product);
     final intro = introPhase(product);
     if (intro != null) {
@@ -325,9 +346,108 @@ class ProductCatalog {
       );
     }
     if (product is AppStoreProduct2Details) {
+      // StoreKit 2 does not expose the introductory offer's price: fall back
+      // to the catalogue's launch price when the storefront currency is one
+      // the catalogue prices (USD / EUR / BRL), else a percent-only line.
+      final launch = catalogueLaunchPrice(product, regularLabel: regular?.label);
+      if (launch != null) {
+        return PromoPrice(
+          yearly: yearly,
+          launchLabel: launch.label,
+          launchAmount: launch.amount,
+          regularLabel: regular?.label,
+          regularAmount: regular?.amount,
+        );
+      }
       return PromoPrice.generic(yearly: yearly, regularLabel: regular?.label);
     }
     return null;
+  }
+
+  /// True on the App Store build (iOS, not web). Tests drive it with
+  /// `debugDefaultTargetPlatformOverride`.
+  static bool get isAppleStore =>
+      !kIsWeb && defaultTargetPlatform == TargetPlatform.iOS;
+
+  /// True in the store apps (iOS App Store or Android Google Play builds),
+  /// false on the web (Stripe).
+  static bool get isStoreApp =>
+      !kIsWeb &&
+      (defaultTargetPlatform == TargetPlatform.iOS ||
+          defaultTargetPlatform == TargetPlatform.android);
+
+  static bool _isAppleProduct(ProductDetails p) =>
+      p is AppStoreProduct2Details || p is AppStoreProductDetails;
+
+  /// StoreKit introductory-offer eligibility per App Store product id, filled
+  /// by [loadIntroEligibility]. Missing = unknown.
+  static final Map<String, bool> _iosIntroEligible = <String, bool>{};
+
+  /// Test seam: the StoreKit 2 eligibility check.
+  @visibleForTesting
+  static Future<bool> Function(String productId) introEligibilityCheck =
+      SK2Product.isIntroductoryOfferEligible;
+
+  @visibleForTesting
+  static void resetIntroEligibility() => _iosIntroEligible.clear();
+
+  /// Ask StoreKit 2 whether this Apple ID can still get each subscription's
+  /// introductory offer (new subscribers only), so [promoPrice] hides the
+  /// launch offer from users Apple would charge the regular price. Errors
+  /// (StoreKit 1, not a subscription, offline) leave eligibility unknown.
+  /// No-op off iOS and for non-App Store products.
+  static Future<void> loadIntroEligibility(
+      Iterable<ProductDetails> products) async {
+    final ids = <String>{
+      for (final p in products)
+        if (p is AppStoreProduct2Details) p.id,
+    };
+    await Future.wait(ids.map((id) async {
+      try {
+        _iosIntroEligible[id] = await introEligibilityCheck(id);
+      } catch (e) {
+        debugPrint('[ProductCatalog] intro eligibility for $id unknown: $e');
+      }
+    }));
+  }
+
+  /// The catalogue's 2026 launch price ([LaunchPromo.launchPrices]) for an
+  /// App Store product, formatted like the store's [regularLabel], or null
+  /// when the storefront currency is not USD/EUR/BRL, the product is not a
+  /// membership, or the launch price would not be cheaper than the regular
+  /// price (so a wrong currency can never produce a wrong claim).
+  static ({String label, double amount})? catalogueLaunchPrice(
+      ProductDetails product, {String? regularLabel}) {
+    final prices = LaunchPromo.launchPrices[canonicalId(product.id)];
+    if (prices == null) return null;
+    final double amount;
+    switch (product.currencyCode.toUpperCase()) {
+      case 'USD':
+      case 'EUR':
+        amount = prices.$1;
+      case 'BRL':
+        amount = prices.$2;
+      default:
+        return null;
+    }
+    if (product.rawPrice > 0 && amount >= product.rawPrice) return null;
+    return (label: formatLike(regularLabel ?? product.price, amount,
+        fallbackSymbol: product.currencySymbol), amount: amount);
+  }
+
+  /// Format [amount] the way [template] (a store price such as "R$ 29,90",
+  /// "$9.99" or "9,99 €") is formatted: same symbol position and decimal
+  /// separator, two decimals.
+  @visibleForTesting
+  static String formatLike(String template, double amount,
+      {String fallbackSymbol = ''}) {
+    final m = RegExp(r'\d[\d.,\s]*\d|\d').firstMatch(template);
+    if (m == null) return '$fallbackSymbol${amount.toStringAsFixed(2)}';
+    final number = m.group(0)!;
+    final usesComma = RegExp(r',\d{2}$').hasMatch(number);
+    var formatted = amount.toStringAsFixed(2);
+    if (usesComma) formatted = formatted.replaceAll('.', ',');
+    return template.replaceRange(m.start, m.end, formatted);
   }
 
   /// Same rule as the Play plugin: leading/trailing non-digit, non-space run.
@@ -347,14 +467,6 @@ class ProductCatalog {
     final phases = offers[idx].pricingPhases;
     if (phases.length < 2 || phases.first.priceAmountMicros != 0) return null;
     return phases.first.billingPeriod;
-  }
-
-  /// True when the offer's free trial is exactly 7 days — the only trial the
-  /// existing localized copy (`subscriptionFreeTrialInfo`: "7 days free, then
-  /// renews at the price shown") describes truthfully.
-  static bool hasSevenDayFreeTrial(ProductDetails product) {
-    final p = freeTrialPeriod(product);
-    return p == 'P7D' || p == 'P1W';
   }
 
   /// The localized recurring (non-free-trial) price for a queried subscription

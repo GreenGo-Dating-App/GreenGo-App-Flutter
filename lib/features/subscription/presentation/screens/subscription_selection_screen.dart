@@ -16,6 +16,7 @@ import '../../domain/membership_product_mapping.dart';
 import '../bloc/subscription_bloc.dart';
 import '../web_membership_upgrade.dart';
 import '../../../../core/widgets/launch_promo_price.dart';
+import '../../../../core/services/effective_tier.dart';
 
 /// Membership Selection Screen
 /// One-time purchases for membership periods (1 month or 1 year)
@@ -120,14 +121,21 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
     }
   }
 
+  /// An active Silver/Gold/Platinum already includes Base (3.1.2(b)).
+  bool get _baseIncludedInPlan => baseIncludedInPaidTier(
+      effectiveTier(rawTier: _currentTierName, endDate: _currentEndDate));
+
   bool _isBaseProduct(String productId) =>
       ProductCatalog.classify(productId).isBase;
 
   /// Returns true if the product should be locked (not selectable).
   /// Locked when: active base membership being re-purchased, or tier <= current active tier.
   bool _isLowerThanCurrentTier(String productId) {
-    // Block re-purchasing active base membership
-    if (_isBaseProduct(productId)) return _hasActiveBaseMembership;
+    // Block re-purchasing active base membership, and selling Base on top
+    // of an active paid tier that already includes it (Apple 3.1.2(b)).
+    if (_isBaseProduct(productId)) {
+      return _hasActiveBaseMembership || _baseIncludedInPlan;
+    }
     final currentRank = _currentTierRank();
     if (currentRank <= 0) return false; // No active premium tier, everything allowed
     final productRank = _tierRankFromProductId(productId);
@@ -551,7 +559,9 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                             ),
                             child: Text(
                               _isBaseProduct(product.id)
-                                  ? AppLocalizations.of(context)!.membershipActive
+                                  ? (_baseIncludedInPlan
+                                      ? AppLocalizations.of(context)!.baseIncludedInPlan
+                                      : AppLocalizations.of(context)!.membershipActive)
                                   : (_tierRankFromProductId(product.id) == _currentTierRank()
                                       ? AppLocalizations.of(context)!.membershipActive
                                       : AppLocalizations.of(context)!.membershipYouHaveTier(
@@ -608,7 +618,13 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      isLocked ? AppLocalizations.of(context)!.membershipLowerThanCurrent : duration,
+                      isLocked
+                          ? (_isBaseProduct(product.id)
+                              ? (_baseIncludedInPlan
+                                  ? AppLocalizations.of(context)!.baseIncludedInPlan
+                                  : AppLocalizations.of(context)!.membershipActive)
+                              : AppLocalizations.of(context)!.membershipLowerThanCurrent)
+                          : duration,
                       style: TextStyle(
                         fontSize: 14,
                         color: isLocked ? Colors.red[300] : Colors.white54,
@@ -659,21 +675,8 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                       color: color,
                     ),
                   ),
-                  if (ProductCatalog.hasSevenDayFreeTrial(product)) ...[
-                    const SizedBox(height: 4),
-                    // Bounded: this Column is a non-flex Row child.
-                    SizedBox(
-                      width: 150,
-                      child: Text(
-                        AppLocalizations.of(context)!.subscriptionFreeTrialInfo,
-                        textAlign: TextAlign.end,
-                        style: const TextStyle(
-                          fontSize: 11,
-                          color: Colors.white70,
-                        ),
-                      ),
-                    ),
-                  ],
+                  // No free-trial copy: the only intro offer is the 2026
+                  // launch price (owner 2026-10-17), see LaunchPromoPrice.
                 ],
               ),
               const SizedBox(width: 8),

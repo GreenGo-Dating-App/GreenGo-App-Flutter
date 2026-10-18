@@ -4,29 +4,25 @@ import 'package:flutter/material.dart';
 import '../../features/legal/presentation/screens/legal_document_screen.dart';
 import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
+import '../utils/eula_link.dart';
 
 /// Apple Guideline 3.1.2 compliance footer for auto-renewable subscription
-/// purchase surfaces: the auto-renew disclosure, Terms & Privacy links, and an
-/// optional "Restore Purchases" action.
+/// purchase surfaces: the auto-renew disclosure, Terms, Privacy and EULA links,
+/// and an optional "Restore Purchases" action.
+///
+/// No free-trial notice: GreenGo sells no free trials on any store (owner
+/// decision 2026-10-17); the only introductory offer is the 2026 launch price,
+/// described on each plan card by LaunchPromoPrice.
 class SubscriptionLegalFooter extends StatelessWidget {
   const SubscriptionLegalFooter({
     super.key,
     this.onRestore,
     this.isRestoring = false,
-    this.showFreeTrialNotice = false,
   });
 
   /// When provided, a "Restore Purchases" button is shown above the disclosure.
   final VoidCallback? onRestore;
   final bool isRestoring;
-
-  /// Show the free-trial disclosure. Set this on any surface that sells a
-  /// subscription carrying an introductory free-trial offer.
-  ///
-  /// Apple Guideline 3.1.2(a) requires the purchase surface to state the trial
-  /// duration AND that it converts to a paid subscription at the stated price.
-  /// Showing the price alone, or "7 days free" alone, is a rejection.
-  final bool showFreeTrialNotice;
 
   void _openLegal(BuildContext context, {required bool terms}) {
     Navigator.of(context).push(
@@ -70,19 +66,6 @@ class SubscriptionLegalFooter extends StatelessWidget {
           ),
           const SizedBox(height: 4),
         ],
-        if (showFreeTrialNotice) ...[
-          Text(
-            l10n.subscriptionFreeTrialInfo,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: AppColors.textTertiary.withValues(alpha: 0.9),
-              fontSize: 11,
-              height: 1.4,
-              fontWeight: FontWeight.w600,
-            ),
-          ),
-          const SizedBox(height: 6),
-        ],
         Text(
           // Web subscriptions are Stripe's, not a store's: say where to
           // cancel (the billing portal, see WebBillingPanel). Audit L-11.
@@ -113,6 +96,18 @@ class SubscriptionLegalFooter extends StatelessWidget {
             InkWell(
               onTap: () => _openLegal(context, terms: false),
               child: Text(l10n.privacyPolicy, style: linkStyle),
+            ),
+            Text(
+              '   •   ',
+              style: TextStyle(
+                color: AppColors.textTertiary.withValues(alpha: 0.6),
+                fontSize: 12,
+              ),
+            ),
+            InkWell(
+              key: const ValueKey('subscription-footer-eula'),
+              onTap: () => openEula(context),
+              child: Text(l10n.eulaShort, style: linkStyle),
             ),
           ],
         ),

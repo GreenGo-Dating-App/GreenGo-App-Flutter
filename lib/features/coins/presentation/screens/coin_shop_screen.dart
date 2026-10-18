@@ -398,6 +398,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           if (label != null) map[ProductCatalog.canonicalId(pd.id)] = label;
         }
         // 2026 launch prices: the offer each membership card would buy.
+        // iOS: only for Apple IDs StoreKit still gives the intro offer to.
+        await ProductCatalog.loadIntroEligibility(resp.productDetails);
         for (final pd in ProductCatalog.onePerProduct(resp.productDetails)) {
           final id = ProductCatalog.canonicalId(pd.id);
           if (!ProductCatalog.canonicalIds.contains(id)) continue;
@@ -937,8 +939,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
   /// Select which Base offer to purchase. On Android a subscription returns one
   /// [GooglePlayProductDetails] per offer; [ProductCatalog.pickOffer] prefers
-  /// the free-trial offer, then the 2026 launch (intro-price) offer, then the
-  /// base plan. The plugin derives the offer token from the chosen entry. iOS
+  /// the 2026 launch offer (`launch2026`), then the base plan; never a free
+  /// trial. The plugin derives the offer token from the chosen entry. iOS
   /// applies the introductory offer automatically, so any entry works.
   ProductDetails _selectBaseOffer(List<ProductDetails> details) {
     if (!Platform.isAndroid) return details.first;
@@ -1428,14 +1430,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 return _buildSubscriptionCard(tier, isCurrentPlan, isUpgrade, isDowngrade, currentTier);
               }),
               const SizedBox(height: 16),
-              // Apple 3.1.2: free-trial + auto-renew disclosure, Terms/Privacy,
-              // Restore. Every tier sold here carries a 7-day introductory
-              // offer, so the trial notice is required on this surface.
-              // Web (Stripe) has neither a store to restore from nor a trial.
+              // Apple 3.1.2: auto-renew disclosure, Terms/Privacy/EULA,
+              // Restore. No free trials on any store (owner 2026-10-17): the
+              // only intro offer is the 2026 launch price on each card.
+              // Web (Stripe) has no store to restore from.
               SubscriptionLegalFooter(
                 onRestore: kIsWeb ? null : _restorePurchases,
                 isRestoring: _isRestoring,
-                showFreeTrialNotice: !kIsWeb,
               ),
               // Web (Stripe): price / interval / next renewal, the billing
               // portal and "Withdraw from contract" (P2-9; L-11, H-23).
@@ -1562,7 +1563,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     return 0.0;
   }
 
+  /// Apple 3.1.2(b): an active Silver/Gold/Platinum already includes Base,
+  /// so Base is "Included in your plan" and not sold on top of it.
+  bool get _baseIncludedInPlan => baseIncludedInPaidTier(
+      MembershipTier.fromString(_currentTier.name.toUpperCase()));
+
   Widget _buildBaseMembershipCard() {
+    final includedInPlan = _baseIncludedInPlan;
     final isActive = _hasBaseMembership &&
         _baseMembershipEndDate != null &&
         _baseMembershipEndDate!.isAfter(DateTime.now());
@@ -1618,7 +1625,16 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                         ),
                       ),
                       const SizedBox(height: 4),
-                      if (_promoFor(ProductCatalog.baseMembership) != null)
+                      if (includedInPlan)
+                        Text(
+                          AppLocalizations.of(context)!.baseIncludedInPlan,
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.basePurple,
+                          ),
+                        )
+                      else if (_promoFor(ProductCatalog.baseMembership) != null)
                         _priceReveal(LaunchPromoPrice(
                           promo: _promoFor(ProductCatalog.baseMembership)!,
                           accent: AppColors.basePurple,
@@ -1684,7 +1700,36 @@ class _CoinShopScreenState extends State<CoinShopScreen>
               ),
             ],
             const SizedBox(height: 16),
-            if (isActive)
+            if (includedInPlan)
+              // Paid tier includes Base: status, never a purchase button.
+              Container(
+                key: const ValueKey('base-included-in-plan'),
+                width: double.infinity,
+                padding: const EdgeInsets.symmetric(vertical: 14),
+                decoration: BoxDecoration(
+                  color: Colors.green.withOpacity(0.15),
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: Colors.green.withOpacity(0.4)),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(Icons.check_circle, color: Colors.green, size: 20),
+                    const SizedBox(width: 8),
+                    Flexible(
+                      child: Text(
+                        AppLocalizations.of(context)!.baseIncludedInPlan,
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.green,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              )
+            else if (isActive)
               // Active base membership auto-renews — show status instead of purchase button
               Container(
                 width: double.infinity,
@@ -1748,6 +1793,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   }
 
   Future<void> _handleBaseMembershipPurchase() async {
+    if (_baseIncludedInPlan) return; // 3.1.2(b): already in the paid plan
     if (kIsWeb) {
       await _handleWebPurchase('greengo_base_membership');
       return;
@@ -2133,8 +2179,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       }
 
       // Initiate subscription purchase. Play returns one entry per offer:
-      // buy the one the card shows (trial, then 2026 launch offer, then the
-      // base plan), not whichever came first.
+      // buy the one the card shows (2026 launch offer, then the base plan;
+      // never a free trial), not whichever came first.
       final productDetails = ProductCatalog.pickOffer(response.productDetails);
       debugPrint('[Subscription] Found product: ${productDetails.id} - ${productDetails.title} - ${productDetails.price}');
 

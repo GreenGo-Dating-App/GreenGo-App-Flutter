@@ -137,7 +137,8 @@ class AppGuideScreen extends StatelessWidget {
         title: l10n.guideMembershipTitle,
         items: [
           l10n.guideMembershipItem1,
-          l10n.guideMembershipItem2,
+          // guideMembershipItem2 ("starts with a free trial") removed: no
+          // free trial on any platform (owner 2026-10-17).
           l10n.guideMembershipItem3,
         ],
       ),

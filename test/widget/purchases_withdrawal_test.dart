@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:greengo_chat/core/services/stripe_billing_models.dart';
@@ -31,7 +32,10 @@ void main() {
       return true;
     };
   });
-  tearDown(() => PurchasesWithdrawal.isWebOverride = null);
+  tearDown(() {
+    PurchasesWithdrawal.isWebOverride = null;
+    PurchasesWithdrawal.platformOverride = null;
+  });
 
   Widget app() => MaterialApp(
         localizationsDelegates: AppLocalizations.localizationsDelegates,
@@ -150,6 +154,20 @@ void main() {
       PurchasesWithdrawal.appleReportProblemUrl,
       'mailto:billing@greengochat.com',
     ]);
+  });
+
+  testWidgets('iOS: only Apple, never Google Play (App Review 2.3.10)', (t) async {
+    PurchasesWithdrawal.isWebOverride = false;
+    PurchasesWithdrawal.platformOverride = TargetPlatform.iOS;
+    await t.pumpWidget(app());
+    await t.tap(find.text('go'));
+    await t.pumpAndSettle();
+    expect(find.byKey(const ValueKey('purchases-withdrawal-play')), findsNothing);
+    expect(find.byKey(const ValueKey('purchases-withdrawal-apple')), findsOneWidget);
+    expect(find.textContaining('Google Play'), findsNothing);
+    expect(find.textContaining('Android'), findsNothing);
+    expect(find.text('Purchases made in the iPhone app were sold by Apple. Ask Apple for a refund or to withdraw:'),
+        findsOneWidget);
   });
 
   group('Terms copy in every language', () {

@@ -15,6 +15,7 @@ import '../../coins/presentation/widgets/web_billing_panel.dart';
 ///    "Withdraw from contract" function and the billing portal;
 ///  - Android / iOS: store purchases were sold by Google Play / Apple, so a
 ///    sheet explains that refunds and withdrawal go through them (with links).
+///    The iPhone app names only Apple (App Review 2.3.10: no other platforms).
 class PurchasesWithdrawal {
   const PurchasesWithdrawal._();
 
@@ -31,6 +32,13 @@ class PurchasesWithdrawal {
   static Future<bool> Function(Uri) openUrl = (u) => launchUrl(u, mode: LaunchMode.externalApplication);
   @visibleForTesting
   static bool? isWebOverride;
+  @visibleForTesting
+  static TargetPlatform? platformOverride;
+
+  /// The iPhone app: show only Apple, never Google Play (2.3.10).
+  static bool get _isIosApp =>
+      !(isWebOverride ?? kIsWeb) &&
+      (platformOverride ?? defaultTargetPlatform) == TargetPlatform.iOS;
 
   static Future<void> open(BuildContext context) async {
     final web = isWebOverride ?? kIsWeb;
@@ -58,10 +66,10 @@ class PurchasesWithdrawal {
             Text(l.purchasesWithdrawalTitle,
                 style: const TextStyle(color: AppColors.textPrimary, fontSize: 17, fontWeight: FontWeight.w700)),
             const SizedBox(height: 8),
-            Text(l.purchasesWithdrawalStoreHelp,
+            Text(_isIosApp ? l.purchasesWithdrawalStoreHelpIos : l.purchasesWithdrawalStoreHelp,
                 style: const TextStyle(color: AppColors.textSecondary, height: 1.4)),
             const SizedBox(height: 14),
-            ..._storeRows(l),
+            ..._storeRows(l, appleOnly: _isIosApp),
             const SizedBox(height: MenuRow.gap),
             MenuRow(
               key: const ValueKey('purchases-withdrawal-email'),
@@ -77,15 +85,17 @@ class PurchasesWithdrawal {
     );
   }
 
-  static List<Widget> _storeRows(AppLocalizations l) => [
-        MenuRow(
-          key: const ValueKey('purchases-withdrawal-play'),
-          icon: Icons.shop_outlined,
-          title: l.manageSubscriptionGooglePlay,
-          subtitle: l.purchasesWithdrawalGooglePlayPath,
-          onTap: () => openUrl(Uri.parse(playOrderHistoryUrl)),
-        ),
-        const SizedBox(height: MenuRow.gap),
+  static List<Widget> _storeRows(AppLocalizations l, {bool appleOnly = false}) => [
+        if (!appleOnly) ...[
+          MenuRow(
+            key: const ValueKey('purchases-withdrawal-play'),
+            icon: Icons.shop_outlined,
+            title: l.manageSubscriptionGooglePlay,
+            subtitle: l.purchasesWithdrawalGooglePlayPath,
+            onTap: () => openUrl(Uri.parse(playOrderHistoryUrl)),
+          ),
+          const SizedBox(height: MenuRow.gap),
+        ],
         MenuRow(
           key: const ValueKey('purchases-withdrawal-apple'),
           icon: Icons.apple,

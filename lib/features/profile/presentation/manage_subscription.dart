@@ -52,6 +52,8 @@ class ManageSubscription {
   /// account has no web subscription).
   static Future<void> showHelp(BuildContext context, {required bool web}) {
     final l = AppLocalizations.of(context)!;
+    // The iPhone app names only Apple, never Google Play (App Review 2.3.10).
+    final iosApp = !web && (platformOverride ?? defaultTargetPlatform) == TargetPlatform.iOS;
     return showModalBottomSheet<void>(
       context: context,
       backgroundColor: AppColors.backgroundCard,
@@ -63,17 +65,21 @@ class ManageSubscription {
             Text(l.manageSubscriptionTitle,
                 style: const TextStyle(color: AppColors.textPrimary, fontSize: 17, fontWeight: FontWeight.w700)),
             const SizedBox(height: 8),
-            Text(web ? l.manageSubscriptionNoWeb : l.manageSubscriptionStoreHelp,
+            Text(web
+                    ? l.manageSubscriptionNoWeb
+                    : (iosApp ? l.manageSubscriptionStoreHelpIos : l.manageSubscriptionStoreHelp),
                 style: const TextStyle(color: AppColors.textSecondary, height: 1.4)),
             const SizedBox(height: 14),
-            MenuRow(
-              key: const ValueKey('manage-subscription-play'),
-              icon: Icons.shop_outlined,
-              title: l.manageSubscriptionGooglePlay,
-              subtitle: l.manageSubscriptionGooglePlayPath,
-              onTap: () => openUrl(Uri.parse(playSubscriptionsUrl)),
-            ),
-            const SizedBox(height: MenuRow.gap),
+            if (!iosApp) ...[
+              MenuRow(
+                key: const ValueKey('manage-subscription-play'),
+                icon: Icons.shop_outlined,
+                title: l.manageSubscriptionGooglePlay,
+                subtitle: l.manageSubscriptionGooglePlayPath,
+                onTap: () => openUrl(Uri.parse(playSubscriptionsUrl)),
+              ),
+              const SizedBox(height: MenuRow.gap),
+            ],
             MenuRow(
               key: const ValueKey('manage-subscription-apple'),
               icon: Icons.apple,

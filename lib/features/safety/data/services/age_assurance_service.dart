@@ -86,7 +86,7 @@ class AgeAssuranceStatus {
         ? const [AgeAssuranceMethod.idVerification, AgeAssuranceMethod.storeSignal]
         : methods;
     final hasStore = platform == AgeAssurancePlatform.android ||
-        platform == AgeAssurancePlatform.ios;
+        (platform == AgeAssurancePlatform.ios && kAppleDeclaredAgeRangeEnabled);
     return [
       if (hasStore && offered.contains(AgeAssuranceMethod.storeSignal))
         AgeAssuranceMethod.storeSignal,
@@ -95,6 +95,14 @@ class AgeAssuranceStatus {
     ];
   }
 }
+
+/// Whether iOS offers "Confirm with the App Store" (Apple's Declared Age
+/// Range API). Off: that needs the `com.apple.developer.declared-age-range`
+/// entitlement on the App ID + provisioning profile and a test on a real
+/// device, neither of which is in place yet, and App Review must not see an
+/// option that fails. iOS users go straight to the ID-document check. Turn on
+/// only after both are done (the native channel code stays in place).
+const bool kAppleDeclaredAgeRangeEnabled = false;
 
 /// Outcome of a store age-signal check.
 enum StoreSignalOutcome { accepted, notAccepted, unavailable, underage }

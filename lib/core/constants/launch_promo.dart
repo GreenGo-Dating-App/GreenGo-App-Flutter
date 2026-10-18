@@ -15,8 +15,10 @@ import 'package:flutter/foundation.dart' show visibleForTesting;
 ///  * Android: the Play offer `launch2026` on each base plan (intro phase,
 ///    picked by ProductCatalog.pickOffer);
 ///  * iOS: App Store introductory offers. StoreKit 2 (the plugin default)
-///    does not expose them, so the app shows a generic line and the App
-///    Store sheet shows the real price.
+///    does not expose their price, so the app shows [launchPrices] for USD /
+///    EUR / BRL storefronts (a percent-only line elsewhere) and hides the
+///    offer when StoreKit says the Apple ID is not eligible.
+/// No free trials on any platform (owner decision 2026-10-17).
 class LaunchPromo {
   LaunchPromo._();
 
