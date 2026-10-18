@@ -14,7 +14,11 @@ function world() {
   // Simulate onUserFollowDeleted firing for every canonical edge delete.
   onDelete((path, old) => {
     const m = /^business_followers\/([^/]+)\/followers\/([^/]+)$/.exec(path);
-    if (m) pending.push(uncountEdge(deps, `evt-${++evt}`, m[1], m[2], old.counted === true));
+    if (m) {
+      pending.push(uncountEdge(deps, `evt-${++evt}`, m[1], m[2], old.counted === true, {
+        wasStoreCounted: old.countedStore === true,
+      }));
+    }
   });
   const triggers = async () => {
     while (pending.length) await pending.shift();
@@ -26,7 +30,12 @@ function world() {
     store.set(`user_business_following/${follower}/businesses/${followee}`, { createdAt: 1 });
     if (!legacy) await countEdge(deps, followee, follower);
   };
-  const get = (uid: string, f: string) => store.get(`profiles/${uid}`)?.[f];
+  // Server counters are private (follow_counts); the legacy client field
+  // `followerCount` stays on the profile.
+  const get = (uid: string, f: string) =>
+    f === 'followersCount' || f === 'followingCount'
+      ? store.get(`follow_counts/${uid}`)?.[f]
+      : store.get(`profiles/${uid}`)?.[f];
   const graphPaths = () =>
     [...store.keys()].filter((k) => k.startsWith('business_followers/') || k.startsWith('user_business_following/'));
   return { db, store, deps, triggers, profile, follow, get, graphPaths };

@@ -189,6 +189,8 @@ export const ACCOUNT_DATA_INVENTORY: InventoryEntry[] = [
     'age_assurance',
     // Owner/admin-only half of the profile (exact location, DOB, ...; P1-4).
     'profiles_private',
+    // Owner-only follower / following counters (social/followCounters.ts).
+    'follow_counts',
     'streaks', 'mission_progress', 'usageLimits', 'dailyUsage', 'user_stats',
     'user_badge_preferences', 'user_vocabulary', 'user_experience_counts',
     'host_cancellation_stats', 'host_flags', 'host_suspensions', 'host_schedules',

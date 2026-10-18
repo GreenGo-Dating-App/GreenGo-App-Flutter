@@ -14,9 +14,12 @@ class FollowBlockedException implements Exception {
   const FollowBlockedException();
 }
 
-/// Follower / following counts read from a profile.
+/// Follower / following / stores counts of an account.
+///
+/// PRIVATE (owner rule 2026-10-17): only the account itself can read them
+/// (`follow_counts/{uid}`, owner-only rules), for users AND businesses.
 class FollowCounts {
-  const FollowCounts({this.followers = 0, this.following = 0});
+  const FollowCounts({this.followers = 0, this.following = 0, this.stores = 0});
 
   /// Parses the SERVER-maintained counters (`followersCount` /
   /// `followingCount`). The legacy client-writable `followerCount` is
@@ -31,6 +34,22 @@ class FollowCounts {
     return FollowCounts(
       followers: read('followersCount'),
       following: read('followingCount'),
+      stores: read('storesCount'),
+    );
+  }
+
+  /// The private counters plus any LEGACY value still on the own public
+  /// profile (until functions scripts/move-follow-counts-private.ts moved
+  /// it: the private doc then only holds the changes since the deploy, and
+  /// the move adds the public value to it and deletes it atomically).
+  factory FollowCounts.merged(
+      Map<String, dynamic>? private, Map<String, dynamic>? legacyPublic) {
+    final p = FollowCounts.fromProfileData(private);
+    final l = FollowCounts.fromProfileData(legacyPublic);
+    return FollowCounts(
+      followers: p.followers + l.followers,
+      following: p.following + l.following,
+      stores: p.stores,
     );
   }
 
@@ -38,6 +57,9 @@ class FollowCounts {
 
   final int followers;
   final int following;
+
+  /// Business accounts this account follows (own-profile "Stores").
+  final int stores;
 }
 
 /// One page of a followers / following list (newest first).
@@ -62,9 +84,14 @@ class FollowPage {
 ///      - `user_business_following/{followerId}/businesses/{followeeId}` — who an
 ///        account follows (mirror)
 ///  * Counts are maintained SERVER-SIDE by the `onUserFollowCreated` /
-///    `onUserFollowDeleted` triggers into `profiles/{id}.followersCount` and
-///    `.followingCount`, which no client can write. The client only writes its
+///    `onUserFollowDeleted` triggers into the OWNER-ONLY
+///    `follow_counts/{id}` (`followersCount`, `followingCount`,
+///    `storesCount`), which no client can write. The client only writes its
 ///    own edge docs.
+///  * PRIVATE (owner rule 2026-10-17): an account's counts and lists are
+///    readable only by the account itself. [counts], the list pages and the
+///    searches are therefore only ever called with the signed-in uid; the
+///    follow button reads only the viewer's OWN edge.
 ///  * Because the triggers can lag (cold start), [counts] overlays this
 ///    device's committed-but-not-yet-counted changes ([FollowCountOverlay]) on
 ///    BOTH sides - the followee's followers and the follower's own following -
@@ -104,6 +131,12 @@ class FollowService {
   DocumentReference<Map<String, dynamic>> _profile(String uid) =>
       _firestore.collection('profiles').doc(uid);
 
+  /// Owner-only counters doc (functions social/followCounters.ts).
+  static const String countsCollection = 'follow_counts';
+
+  DocumentReference<Map<String, dynamic>> _countsDoc(String uid) =>
+      _firestore.collection(countsCollection).doc(uid);
+
   // ── state ──────────────────────────────────────────────────────────────
 
   /// Live follow-state of [followerId] → [followeeId]. Single-doc stream.
@@ -117,66 +150,88 @@ class FollowService {
   /// counters plus any change this device made that the server has not
   /// counted yet (so a follow / unfollow shows on both profiles immediately).
   Stream<FollowCounts> counts(String uid) {
-    StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? docSub;
+    StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? privSub;
+    StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? pubSub;
     StreamSubscription<String>? overlaySub;
-    FollowCounts? server;
+    Map<String, dynamic>? priv;
+    Map<String, dynamic>? pub;
+    var privSeen = false;
+    var pubSeen = false;
     late final StreamController<FollowCounts> out;
 
     void publish() {
-      final s = server;
-      if (s == null || out.isClosed) return;
+      if (!privSeen || !pubSeen || out.isClosed) return;
+      final s = FollowCounts.merged(priv, pub);
       out.add(FollowCounts(
         followers: _overlay.apply(uid, FollowCounter.followers, s.followers),
         following: _overlay.apply(uid, FollowCounter.following, s.following),
+        stores: s.stores,
       ));
+    }
+
+    void serverChanged() {
+      if (!privSeen || !pubSeen) return;
+      final s = FollowCounts.merged(priv, pub);
+      _overlay
+        ..observeServer(uid, FollowCounter.followers, s.followers)
+        ..observeServer(uid, FollowCounter.following, s.following);
+      publish();
     }
 
     out = StreamController<FollowCounts>(
       onListen: () {
-        docSub = _profile(uid).snapshots().listen(
+        privSub = _countsDoc(uid).snapshots().listen(
           (d) {
-            final s = FollowCounts.fromProfileData(d.data());
-            _overlay
-              ..observeServer(uid, FollowCounter.followers, s.followers)
-              ..observeServer(uid, FollowCounter.following, s.following);
-            server = s;
-            publish();
+            priv = d.data();
+            privSeen = true;
+            serverChanged();
           },
           onError: out.addError,
+        );
+        // Legacy public values (own profile only; removed by the server).
+        pubSub = _profile(uid).snapshots().listen(
+          (d) {
+            pub = d.data();
+            pubSeen = true;
+            serverChanged();
+          },
+          onError: (Object _) {
+            pubSeen = true;
+            serverChanged();
+          },
         );
         overlaySub =
             _overlay.changes.where((u) => u == uid).listen((_) => publish());
       },
       onCancel: () async {
-        await docSub?.cancel();
+        await privSub?.cancel();
+        await pubSub?.cancel();
         await overlaySub?.cancel();
       },
     );
     return out.stream;
   }
 
-  /// Current server counters of [uid] (null when unreadable).
-  Future<FollowCounts?> _readServerCounts(String uid) async {
+  /// Current server counters of [uid] - ONLY readable for the signed-in
+  /// account itself (null when unreadable).
+  Future<FollowCounts?> _readOwnCounts(String uid) async {
     try {
-      final d = await _profile(uid).get();
-      return FollowCounts.fromProfileData(d.data());
+      final r = await Future.wait([_countsDoc(uid).get(), _profile(uid).get()]);
+      return FollowCounts.merged(r[0].data(), r[1].data());
     } catch (_) {
       return null;
     }
   }
 
-  /// Record a committed follow (+1) / unfollow (-1) on both sides.
+  /// Record a committed follow (+1) / unfollow (-1) on the FOLLOWER's own
+  /// "following" (the followee's counts are private to the followee).
   void _recordChange({
-    required String followeeId,
     required String followerId,
     required int delta,
-    required List<FollowCounts?> before,
+    required FollowCounts? before,
   }) {
-    _overlay
-      ..record(followeeId, FollowCounter.followers, delta,
-          serverBefore: before[0]?.followers)
-      ..record(followerId, FollowCounter.following, delta,
-          serverBefore: before[1]?.following);
+    _overlay.record(followerId, FollowCounter.following, delta,
+        serverBefore: before?.following);
   }
 
   /// True when [a] and [b] blocked each other in either direction.
@@ -199,12 +254,9 @@ class FollowService {
   }) async {
     if (followeeId.isEmpty || followerId.isEmpty) return;
     if (followeeId == followerId) return;
-    // Counter baselines are read in parallel with the block check, BEFORE the
-    // write, so they can never already include this follow.
-    final beforeF = Future.wait([
-      _readServerCounts(followeeId),
-      _readServerCounts(followerId),
-    ]);
+    // Counter baseline (own, private) is read in parallel with the block
+    // check, BEFORE the write, so it can never already include this follow.
+    final beforeF = _readOwnCounts(followerId);
     if (await isBlockedPair(followerId, followeeId)) {
       throw const FollowBlockedException();
     }
@@ -225,8 +277,7 @@ class FollowService {
       wrote = true;
     });
     if (wrote) {
-      _recordChange(
-          followeeId: followeeId, followerId: followerId, delta: 1, before: before);
+      _recordChange(followerId: followerId, delta: 1, before: before);
     }
   }
 
@@ -236,10 +287,7 @@ class FollowService {
     required String followerId,
   }) async {
     if (followeeId.isEmpty || followerId.isEmpty) return;
-    final before = await Future.wait([
-      _readServerCounts(followeeId),
-      _readServerCounts(followerId),
-    ]);
+    final before = await _readOwnCounts(followerId);
     final edge = _followersCol(followeeId).doc(followerId);
     final mirror = _followingCol(followerId).doc(followeeId);
     var deleted = false;
@@ -255,8 +303,7 @@ class FollowService {
       deleted = true;
     });
     if (deleted) {
-      _recordChange(
-          followeeId: followeeId, followerId: followerId, delta: -1, before: before);
+      _recordChange(followerId: followerId, delta: -1, before: before);
     }
   }
 
@@ -277,6 +324,30 @@ class FollowService {
     int limit = pageSize,
   }) =>
       _page(_followingCol(uid), after: after, limit: limit);
+
+  /// Mirror flag the server stamps on a follow of a BUSINESS
+  /// (functions followCounters.ts MIRROR_STORE_FLAG).
+  static const String storeFlagField = 'isStore';
+
+  /// Page of the business accounts [uid] follows (own "Stores" list), by id.
+  /// Equality + document-id order: automatic single-field index.
+  Future<FollowPage> followedStoresPage(
+    String uid, {
+    DocumentSnapshot<Map<String, dynamic>>? after,
+    int limit = pageSize,
+  }) async {
+    Query<Map<String, dynamic>> q = _followingCol(uid)
+        .where(storeFlagField, isEqualTo: true)
+        .orderBy(FieldPath.documentId)
+        .limit(limit);
+    if (after != null) q = q.startAfterDocument(after);
+    final snap = await q.get();
+    return FollowPage(
+      userIds: [for (final d in snap.docs) d.id],
+      cursor: snap.docs.isEmpty ? after : snap.docs.last,
+      hasMore: snap.docs.length == limit,
+    );
+  }
 
   Future<FollowPage> _page(
     CollectionReference<Map<String, dynamic>> col, {
@@ -360,15 +431,14 @@ class FollowService {
   }) =>
       isFollowingUser(followeeId: businessId, followerId: uid);
 
-  /// Live follower count for [businessId] (server-maintained, 0 when absent).
+  /// Live follower count of the signed-in business ITSELF (private: only the
+  /// owner can read it).
   Stream<int> followerCount(String businessId) =>
       counts(businessId).map((c) => c.followers);
 
-  /// One-off follower count (for non-streaming callers).
-  Future<int> getFollowerCount(String businessId) async {
-    final doc = await _profile(businessId).get();
-    return FollowCounts.fromProfileData(doc.data()).followers;
-  }
+  /// One-off follower count of the signed-in business itself.
+  Future<int> getFollowerCount(String businessId) async =>
+      (await _readOwnCounts(businessId))?.followers ?? 0;
 
   Future<void> follow({required String businessId, required String uid}) =>
       followUser(followeeId: businessId, followerId: uid);

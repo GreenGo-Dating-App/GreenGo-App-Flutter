@@ -242,6 +242,9 @@ async function listBusinesses(data: any) {
   const { docs, nextCursor } = await page(q, 'profiles', docId(data.cursor, 'cursor'), pageSizeOf(data.pageSize));
   const stats = docs.length ? await db().getAll(...docs.map((d) => db().collection(FCOL.businessStats).doc(d.id))) : [];
   const byId = new Map(stats.map((s) => [s.id, s.data()]));
+  // Follower counts are private (owner + admin only): follow_counts/{uid}.
+  const fc = docs.length ? await db().getAll(...docs.map((d) => db().collection('follow_counts').doc(d.id))) : [];
+  const followersById = new Map(fc.map((s) => [s.id, Number(s.get('followersCount')) || 0]));
   return {
     items: docs.map((d) => {
       const p = d.data();
@@ -251,7 +254,7 @@ async function listBusinesses(data: any) {
         businessName: p.businessName || null, displayName: p.displayName || null, nickname: p.nickname || null,
         photoUrl: p.photoUrls?.[0] || null, membershipTier: p.membershipTier || null,
         membershipEndDate: plain(p.membershipEndDate || null), city: p.location?.city || null, country: p.location?.country || null,
-        followersCount: p.followersCount || 0, isTest: p.isTestUser === true || p.membershipTier === 'TEST',
+        followersCount: followersById.get(d.id) || 0, isTest: p.isTestUser === true || p.membershipTier === 'TEST',
         totals: plain(s.totals || {}), orderCounts: plain(s.orderCounts || {}), lastSaleAt: plain(s.lastSaleAt || null),
         createdAt: plain(p.createdAt || null),
       };
@@ -275,12 +278,14 @@ async function businessDetail(data: any) {
     db().collection(FCOL.statements).where('organizerId', '==', uid).orderBy('issuedAt', 'desc').limit(24).get(),
     db().collection(FCOL.billing).doc(uid).get(),
   ]);
+  const followCounts = await db().collection('follow_counts').doc(uid).get();
   return {
     profile: {
       id: uid, ...plain(pick(p, [
-        'businessName', 'displayName', 'nickname', 'membershipTier', 'membershipEndDate', 'isBusiness', 'followersCount',
+        'businessName', 'displayName', 'nickname', 'membershipTier', 'membershipEndDate', 'isBusiness',
         'businessCategory', 'businessWebsite', 'businessVerified', 'verificationStatus', 'createdAt', 'isTestUser',
       ])),
+      followersCount: Number(followCounts.get('followersCount')) || 0,
       photoUrl: p.photoUrls?.[0] || null, city: p.location?.city || null, country: p.location?.country || null,
     },
     stats: plain(stats.data() || null),

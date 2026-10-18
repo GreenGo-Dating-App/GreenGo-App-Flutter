@@ -7788,5 +7788,7 @@
   "emailGuestChatInviteOrganizer": "Créez un compte gratuit pour écrire à l’organisateur.",
   "emailGuestChatInviteHost": "Créez un compte gratuit pour écrire à l’hôte.",
   "storefrontCategoryGroupLabel": "Type d'activité",
-  "storefrontCategoryGroupHint": "Choisissez un type"
+  "storefrontCategoryGroupHint": "Choisissez un type",
+  "userFollowStoresLabel": "Boutiques",
+  "userFollowEmptyStores": "Vous ne suivez encore aucune boutique"
 }

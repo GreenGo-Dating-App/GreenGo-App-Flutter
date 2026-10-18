@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:greengo_chat/features/business/data/services/follow_service.dart';
@@ -67,23 +68,28 @@ void main() {
     });
   });
 
-  group('FollowService counts (both sides, immediate)', () {
+  group('FollowService counts (private follow_counts, own side immediate)', () {
     late FakeFirebaseFirestore db;
     late FollowService service;
+
+    Future<void> server(String uid, Map<String, Object> d) => db
+        .collection('follow_counts')
+        .doc(uid)
+        .set(d, SetOptions(merge: true));
 
     setUp(() async {
       db = FakeFirebaseFirestore();
       service = FollowService(firestore: db, overlay: FollowCountOverlay());
-      await db.collection('profiles').doc(alice).set({'followingCount': 3});
-      await db.collection('profiles').doc(bob).set({'followersCount': 10});
+      await server(alice, {'followingCount': 3});
+      await server(bob, {'followersCount': 10});
     });
 
-    test('unfollow lowers the follower\'s FOLLOWING and the followee\'s FOLLOWERS '
-        'immediately, and stays right when the trigger lands', () async {
+    test('unfollow lowers MY following immediately and stays right when the '
+        'trigger lands; the followee only sees the server value', () async {
       // Already following, already counted by the server.
       await service.followUser(followeeId: bob, followerId: alice);
-      await db.collection('profiles').doc(alice).update({'followingCount': 4});
-      await db.collection('profiles').doc(bob).update({'followersCount': 11});
+      await server(alice, {'followingCount': 4});
+      await server(bob, {'followersCount': 11});
 
       final me = _Latest(service.counts(alice));
       final them = _Latest(service.counts(bob));
@@ -94,16 +100,13 @@ void main() {
       await service.unfollowUser(followeeId: bob, followerId: alice);
       await _settle();
       expect(me.value!.following, 3, reason: 'my following drops at once');
-      expect(them.value!.followers, 10, reason: 'their followers drop at once');
-
-      // An unrelated profile update (presence) must not bring the old value back.
-      await db.collection('profiles').doc(bob).update({'isOnline': true});
-      await _settle();
-      expect(them.value!.followers, 10);
+      // The followee's count is private to the followee: no optimistic
+      // change from the follower's device (it is never shown to them).
+      expect(them.value!.followers, 11);
 
       // onUserFollowDeleted lands: no double decrement.
-      await db.collection('profiles').doc(alice).update({'followingCount': 3});
-      await db.collection('profiles').doc(bob).update({'followersCount': 10});
+      await server(alice, {'followingCount': 3});
+      await server(bob, {'followersCount': 10});
       await _settle();
       expect(me.value!.following, 3);
       expect(them.value!.followers, 10);
@@ -112,10 +115,9 @@ void main() {
       await them.sub.cancel();
     });
 
-    test('follow raises both sides at once; rapid follow/unfollow/follow nets +1',
+    test('follow raises my following at once; rapid follow/unfollow/follow nets +1',
         () async {
       final me = _Latest(service.counts(alice));
-      final them = _Latest(service.counts(bob));
       await _settle();
 
       await service.followUser(followeeId: bob, followerId: alice);
@@ -123,13 +125,11 @@ void main() {
       await service.followUser(followeeId: bob, followerId: alice);
       await _settle();
       expect(me.value!.following, 4);
-      expect(them.value!.followers, 11);
 
       // Idempotent: a second follow writes nothing and changes nothing.
       await service.followUser(followeeId: bob, followerId: alice);
       await _settle();
       expect(me.value!.following, 4);
-      expect(them.value!.followers, 11);
 
       final edge = await db
           .collection('business_followers')
@@ -138,14 +138,37 @@ void main() {
           .doc(alice)
           .get();
       expect(edge.exists, isTrue);
-
       await me.sub.cancel();
-      await them.sub.cancel();
+    });
+
+    test('counts never read or write the public profile counters', () async {
+      await service.followUser(followeeId: bob, followerId: alice);
+      expect((await db.collection('profiles').doc(bob).get()).exists, isFalse);
+      expect((await db.collection('profiles').doc(alice).get()).exists, isFalse);
+    });
+
+    test('legacy public value on the OWN profile is added until the server '
+        'moves it (then the private doc holds the total)', () async {
+      await server(alice, {'followersCount': 2, 'storesCount': 1});
+      await db.collection('profiles').doc(alice).set({'followersCount': 40});
+      final me = _Latest(service.counts(alice));
+      await _settle();
+      expect(me.value!.followers, 42);
+      expect(me.value!.stores, 1);
+      // The move script: private += public, public deleted (one transaction).
+      await server(alice, {'followersCount': 42});
+      await db
+          .collection('profiles')
+          .doc(alice)
+          .update({'followersCount': FieldValue.delete()});
+      await _settle();
+      expect(me.value!.followers, 42);
+      await me.sub.cancel();
     });
 
     test('unfollowing when not following changes nothing and never goes negative',
         () async {
-      await db.collection('profiles').doc(alice).set({'followingCount': 0});
+      await server(alice, {'followingCount': 0});
       final me = _Latest(service.counts(alice));
       await _settle();
       await service.unfollowUser(followeeId: bob, followerId: alice);
@@ -171,6 +194,26 @@ void main() {
           .get();
       expect(edge.exists, isFalse);
       expect(mirror.exists, isFalse);
+    });
+
+    test('followedStoresPage lists only mirrors the server flagged isStore',
+        () async {
+      Future<void> mirror(String id, {bool store = false}) => db
+          .collection('user_business_following')
+          .doc(alice)
+          .collection('businesses')
+          .doc(id)
+          .set({'createdAt': Timestamp.now(), if (store) 'isStore': true});
+      await mirror('shop1', store: true);
+      await mirror('person');
+      await mirror('shop2', store: true);
+      final page = await service.followedStoresPage(alice, limit: 1);
+      expect(page.userIds, ['shop1']);
+      expect(page.hasMore, isTrue);
+      final next =
+          await service.followedStoresPage(alice, after: page.cursor, limit: 5);
+      expect(next.userIds, ['shop2']);
+      expect(next.hasMore, isFalse);
     });
   });
 }

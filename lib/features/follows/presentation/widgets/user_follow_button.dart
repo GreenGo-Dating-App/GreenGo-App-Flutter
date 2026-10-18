@@ -15,8 +15,8 @@ import '../follow_toggle_controller.dart';
 /// Optimistic: the label flips instantly and rolls back with a snackbar if the
 /// write fails. Live state comes from one single-doc listener (the follow
 /// edge). Renders nothing for a self-view or when the two users blocked each
-/// other. Pass [controller] to share the optimistic state with a
-/// [FollowCard] (so the follower count moves together with the button).
+/// other. Pass [controller] to share the optimistic state with the
+/// own follow stats (the follower count is private to its owner).
 class UserFollowButton extends StatefulWidget {
   const UserFollowButton({
     required this.targetUserId,

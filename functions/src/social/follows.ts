@@ -8,11 +8,16 @@
  * Both are written by the follower's client; rules only let a user create /
  * delete their OWN edge and never update one.
  *
- * Counters live on the profile in fields NO client can write:
- *   - `profiles/{followee}.followersCount`
- *   - `profiles/{follower}.followingCount`
- * (The legacy `followerCount` stays client-writable for old app versions but
- * is no longer read by the app.)
+ * Counters are PRIVATE (owner rule 2026-10-17: only the account itself sees
+ * its followers / following, users AND businesses). They live in the
+ * owner-only `follow_counts/{uid}` document, which NO client can write:
+ *   - `follow_counts/{followee}.followersCount`
+ *   - `follow_counts/{follower}.followingCount`
+ * They are never written to the public profile any more;
+ * scripts/move-follow-counts-private.ts moves the legacy public values. The
+ * follow lists themselves are readable only by their owner (rules). (The
+ * legacy `followerCount` stays client-writable for old app versions but is no
+ * longer read by the app and is stripped by that script.)
  *
  * Exactly-once counting (see followCounters.ts): the create trigger marks the
  * edge `counted: true` in the same transaction that increments the counters,
@@ -45,6 +50,7 @@ import {
   uncountEdge,
   edgeRef as coreEdgeRef,
   mirrorRef as coreMirrorRef,
+  STORE_COUNTED_FLAG,
 } from './followCounters';
 import { FOLLOW_CLEANUP_JOBS, removeFollowGraphRound } from './followCleanup';
 import {
@@ -175,8 +181,11 @@ export const onUserFollowDeleted = onDocumentDeleted(
     const followeeId = event.params.followeeId as string;
     const followerId = event.params.followerId as string;
     if (!followeeId || !followerId) return;
-    const wasCounted = event.data?.data()?.counted === true;
-    await uncountEdge(deps, event.id, followeeId, followerId, wasCounted);
+    const old = event.data?.data();
+    const wasCounted = old?.counted === true;
+    await uncountEdge(deps, event.id, followeeId, followerId, wasCounted, {
+      wasStoreCounted: old?.[STORE_COUNTED_FLAG] === true,
+    });
     // Keep the mirror in step with the canonical edge (a client that deleted
     // only the edge, or a server-side edge removal, must not leave a ghost in
     // the follower's "Following" list).

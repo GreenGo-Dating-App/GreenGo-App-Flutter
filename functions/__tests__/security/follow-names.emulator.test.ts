@@ -145,14 +145,16 @@ describe('server stamping + prefix search', () => {
     expect((await db.doc(edge(T, 'u2')).get()).get('followerNameLower')).toBe('maria jose');
     expect((await db.doc(mirror('u2', T)).get()).get('followeeNameLower')).toBe('tamara');
 
-    const all = await clientSearch('u5', `business_followers/${T}`, 'followers', 'followerNameLower', 'mar');
+    const all = await clientSearch(T, `business_followers/${T}`, 'followers', 'followerNameLower', 'mar');
     expect(all.status).toBe(200);
     expect(all.ids).toEqual(['u4', 'u2', 'u1', 'u3']); // marcos, maria jose, maria silva, mario
+    // Private follows (2026-10-17): nobody else may search T's followers.
+    expect((await clientSearch('u5', `business_followers/${T}`, 'followers', 'followerNameLower', 'mar')).status).toBe(403);
 
     // Endless loading: limit 2 + startAfter the last row.
-    const p1 = await clientSearch('u5', `business_followers/${T}`, 'followers', 'followerNameLower', 'mar', 2);
+    const p1 = await clientSearch(T, `business_followers/${T}`, 'followers', 'followerNameLower', 'mar', 2);
     expect(p1.ids).toEqual(['u4', 'u2']);
-    const p2 = await clientSearch('u5', `business_followers/${T}`, 'followers', 'followerNameLower', 'mar', 2,
+    const p2 = await clientSearch(T, `business_followers/${T}`, 'followers', 'followerNameLower', 'mar', 2,
       { name: 'maria jose', id: 'u2' });
     expect(p2.ids).toEqual(['u1', 'u3']);
 

@@ -26642,4 +26642,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get storefrontCategoryGroupHint => 'Art auswählen';
+
+  @override
+  String get userFollowStoresLabel => 'Shops';
+
+  @override
+  String get userFollowEmptyStores => 'Du folgst noch keinen Shops';
 }

@@ -1,6 +1,7 @@
 import {
   clampCount,
   countEdge,
+  countStoreEdge,
   uncountEdge,
   FollowCounterDeps,
   UNCOUNT_MARKERS,
@@ -14,9 +15,13 @@ const A = 'alice'; // follower
 const B = 'bob'; // followee
 const edgePath = `business_followers/${B}/followers/${A}`;
 
-function setup(profiles: Record<string, Doc> = { [A]: {}, [B]: {} }) {
+function setup(
+  profiles: Record<string, Doc> = { [A]: {}, [B]: {} },
+  counters: Record<string, Doc> = {},
+) {
   const { db, store } = makeDb();
   for (const [id, d] of Object.entries(profiles)) store.set(`profiles/${id}`, { ...d });
+  for (const [id, d] of Object.entries(counters)) store.set(`follow_counts/${id}`, { ...d });
   const deps: FollowCounterDeps = { db, increment, now: () => new Date('2026-10-03T12:00:00Z') };
   const follow = () => store.set(edgePath, { createdAt: 1 });
   /** Client unfollow: returns the deleted snapshot's `counted` flag. */
@@ -26,8 +31,8 @@ function setup(profiles: Record<string, Doc> = { [A]: {}, [B]: {} }) {
     return was;
   };
   const counts = () => ({
-    followers: store.get(`profiles/${B}`)?.followersCount,
-    following: store.get(`profiles/${A}`)?.followingCount,
+    followers: store.get(`follow_counts/${B}`)?.followersCount,
+    following: store.get(`follow_counts/${A}`)?.followingCount,
   });
   return { deps, store, follow, unfollow, counts };
 }
@@ -74,7 +79,7 @@ describe('follow / unfollow counters', () => {
   });
 
   it('an edge deleted before it was counted never moves the counters', async () => {
-    const t = setup({ [A]: { followingCount: 2 }, [B]: { followersCount: 5 } });
+    const t = setup({ [A]: {}, [B]: {} }, { [A]: { followingCount: 2 }, [B]: { followersCount: 5 } });
     t.follow();
     const was = t.unfollow(); // unfollow lands before the (cold) create trigger
     expect(await countEdge(t.deps, B, A)).toBe(false); // edge already gone
@@ -108,7 +113,7 @@ describe('follow / unfollow counters', () => {
   });
 
   it('never goes below zero on drifted data', async () => {
-    const t = setup({ [A]: { followingCount: 0 }, [B]: {} });
+    const t = setup({ [A]: {}, [B]: {} }, { [A]: { followingCount: 0 } });
     t.store.set(edgePath, { createdAt: 1, counted: true }); // counted before the counters existed
     const was = t.unfollow();
     expect(await uncountEdge(t.deps, 'evt', B, A, was)).toBe(true);
@@ -120,10 +125,62 @@ describe('follow / unfollow counters', () => {
     t.follow();
     expect(await countEdge(t.deps, B, A)).toBe(true);
     expect(t.store.has(`profiles/${A}`)).toBe(false);
+    expect(t.store.has(`follow_counts/${A}`)).toBe(false);
     expect(t.counts().followers).toBe(1);
     const was = t.unfollow();
     await uncountEdge(t.deps, 'evt', B, A, was);
     expect(t.store.has(`profiles/${A}`)).toBe(false);
     expect(t.counts().followers).toBe(0);
+  });
+
+  it('counters are PRIVATE: never written to the public profile (owner rule 2026-10-17)', async () => {
+    const t = setup({ [A]: { name: 'a' }, [B]: { name: 'b', isBusiness: true } });
+    t.follow();
+    await countEdge(t.deps, B, A);
+    expect(t.store.get(`profiles/${B}`)).toEqual({ name: 'b', isBusiness: true });
+    expect(t.store.get(`profiles/${A}`)).toEqual({ name: 'a' });
+    expect(t.store.get(`follow_counts/${B}`)).toEqual({ followersCount: 1 });
+    expect(t.store.get(`follow_counts/${A}`)).toEqual({ followingCount: 1, storesCount: 1 });
+    const was = t.unfollow();
+    await uncountEdge(t.deps, 'evt', B, A, was, { wasStoreCounted: true });
+    expect(t.store.get(`profiles/${B}`)).toEqual({ name: 'b', isBusiness: true });
+    expect(t.counts()).toEqual({ followers: 0, following: 0 });
+  });
+
+  it('storesCount: only business follows count, decrements follow the edge flag', async () => {
+    const t = setup({ [A]: {}, [B]: { isBusiness: true } });
+    t.follow();
+    await countEdge(t.deps, B, A);
+    expect(t.store.get(edgePath)?.countedStore).toBe(true);
+    expect(t.store.get(`follow_counts/${A}`)?.storesCount).toBe(1);
+    // No mirror in this fixture: nothing is created for it.
+    expect(t.store.has(`user_business_following/${A}/businesses/${B}`)).toBe(false);
+    // B stops being a business later: the unfollow still undoes the store count.
+    t.store.set(`profiles/${B}`, {});
+    const flag = t.store.get(edgePath)?.countedStore === true;
+    const was = t.unfollow();
+    await uncountEdge(t.deps, 'e1', B, A, was, { wasStoreCounted: flag });
+    expect(t.store.get(`follow_counts/${A}`)).toEqual({ followingCount: 0, storesCount: 0 });
+
+    // A person follow never touches storesCount.
+    const p = setup();
+    p.follow();
+    await countEdge(p.deps, B, A);
+    expect(p.store.get(`follow_counts/${A}`)).toEqual({ followingCount: 1 });
+    expect(p.store.get(edgePath)?.countedStore).toBeUndefined();
+  });
+
+  it('countStoreEdge backfills a legacy counted business edge exactly once', async () => {
+    const t = setup({ [A]: {}, [B]: { isBusiness: true } });
+    t.store.set(edgePath, { createdAt: 1, counted: true }); // counted before storesCount
+    t.store.set(`user_business_following/${A}/businesses/${B}`, { createdAt: 1 });
+    expect(await countStoreEdge(t.deps, B, A)).toBe(true);
+    expect(t.store.get(`user_business_following/${A}/businesses/${B}`)).toEqual({ createdAt: 1, isStore: true });
+    expect(await countStoreEdge(t.deps, B, A)).toBe(false);
+    expect(t.store.get(`follow_counts/${A}`)).toEqual({ storesCount: 1 });
+    // An uncounted edge is left to countEdge (which counts both).
+    const u = setup({ [A]: {}, [B]: { isBusiness: true } });
+    u.follow();
+    expect(await countStoreEdge(u.deps, B, A)).toBe(false);
   });
 });

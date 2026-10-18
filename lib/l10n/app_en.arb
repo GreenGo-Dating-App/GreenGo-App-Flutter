@@ -15821,5 +15821,9 @@
   },
   "@storefrontCategoryHint": {
     "description": "Storefront editor: business category select boxes"
-  }
+  },
+  "userFollowStoresLabel": "Stores",
+  "@userFollowStoresLabel": {"description": "Own profile stats bar: number of business accounts (stores) the user follows; also the title of that list"},
+  "userFollowEmptyStores": "You don't follow any stores yet",
+  "@userFollowEmptyStores": {"description": "Empty state of the own followed-stores list"}
 }

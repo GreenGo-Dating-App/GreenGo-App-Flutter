@@ -26555,6 +26555,12 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get storefrontCategoryGroupHint => 'Escolha um tipo';
+
+  @override
+  String get userFollowStoresLabel => 'Lojas';
+
+  @override
+  String get userFollowEmptyStores => 'Ainda não segues nenhuma loja';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -53115,4 +53121,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get storefrontCategoryGroupHint => 'Escolha um tipo';
+
+  @override
+  String get userFollowStoresLabel => 'Lojas';
+
+  @override
+  String get userFollowEmptyStores => 'Você ainda não segue nenhuma loja';
 }

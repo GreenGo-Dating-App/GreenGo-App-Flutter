@@ -8362,5 +8362,7 @@
   "emailGuestChatInviteOrganizer": "Erstelle ein kostenloses Konto, um dem Veranstalter zu schreiben.",
   "emailGuestChatInviteHost": "Erstelle ein kostenloses Konto, um dem Gastgeber zu schreiben.",
   "storefrontCategoryGroupLabel": "Art des Unternehmens",
-  "storefrontCategoryGroupHint": "Art auswählen"
+  "storefrontCategoryGroupHint": "Art auswählen",
+  "userFollowStoresLabel": "Shops",
+  "userFollowEmptyStores": "Du folgst noch keinen Shops"
 }

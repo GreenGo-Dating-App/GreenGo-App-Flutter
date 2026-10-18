@@ -10,9 +10,10 @@ import '../../data/services/follow_service.dart';
 
 /// Follow / Unfollow button for a public business account.
 ///
-/// Streams the live follow state (the follower doc) and the denormalized
-/// follower count from [FollowService], so the button is always correct across
-/// devices without polling. A self-view (business owner looking at their own
+/// Streams the live follow state (the viewer's OWN follower doc) from
+/// [FollowService], so the button is always correct across devices without
+/// polling. Follower counts are private (owner decision 2026-10-17): a viewer
+/// never sees one; only a self-view (the business owner on their own
 /// storefront) renders a passive follower-count chip instead of a follow
 /// action.
 class BusinessFollowButton extends StatefulWidget {
@@ -39,7 +40,13 @@ class _BusinessFollowButtonState extends State<BusinessFollowButton> {
 
   // Created once per business/viewer — not in build, where the follow-state
   // listener used to restart on every follower-count update.
-  late Stream<int> _count = _service.followerCount(widget.businessId);
+  // Follower count: PRIVATE (owner decision 2026-10-17) - read only on the
+  // business's own self-view chip; a viewer's button shows no count.
+  late Stream<int> _count = _countStream();
+
+  Stream<int> _countStream() => _isSelf
+      ? _service.followerCount(widget.businessId)
+      : Stream<int>.value(0);
   late Stream<bool> _following = _watchFollowing();
 
   Stream<bool> _watchFollowing() => _service.isFollowing(
@@ -54,8 +61,9 @@ class _BusinessFollowButtonState extends State<BusinessFollowButton> {
   @override
   void didUpdateWidget(BusinessFollowButton old) {
     super.didUpdateWidget(old);
-    if (old.businessId != widget.businessId) {
-      _count = _service.followerCount(widget.businessId);
+    if (old.businessId != widget.businessId ||
+        old.currentUserId != widget.currentUserId) {
+      _count = _countStream();
       _lastCount = null;
     }
     if (old.businessId != widget.businessId ||
@@ -118,7 +126,7 @@ class _BusinessFollowButtonState extends State<BusinessFollowButton> {
 
             return _ActionPill(
               icon: following ? Icons.check : Icons.add,
-              label: count > 0 ? '$label · ${_fmtCount(count)}' : label,
+              label: label,
               filled: !following,
               busy: _busy,
               compact: widget.compact,
@@ -130,8 +138,6 @@ class _BusinessFollowButtonState extends State<BusinessFollowButton> {
     );
   }
 
-  String _fmtCount(int c) =>
-      c > 999 ? '${(c / 1000).toStringAsFixed(1)}k' : '$c';
 }
 
 class _ActionPill extends StatelessWidget {

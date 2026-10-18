@@ -21,6 +21,10 @@ import '../widgets/user_follow_button.dart';
 /// Followers / Following of [userId] — two tabs (with live counts), endless
 /// scroll (30 per page), pull to refresh, and a name search per tab.
 ///
+/// PRIVATE (owner rule 2026-10-17): only the signed-in user's OWN lists.
+/// For any other [userId] the screen reads nothing and shows nothing (the
+/// rules would refuse the reads anyway).
+///
 /// Each page is ONE ordered read of a single subcollection (auto single-field
 /// index on `createdAt`). The search is SERVER-side over the WHOLE list: a
 /// prefix query on the server-written `followerNameLower` /
@@ -41,6 +45,10 @@ class FollowListScreen extends StatefulWidget {
 
   /// 0 = followers, 1 = following.
   final int initialTab;
+
+  /// True when the lists of [userId] may be shown to [currentUserId].
+  static bool canOpen(String userId, String currentUserId) =>
+      userId.isNotEmpty && userId == currentUserId;
 
   static Route<void> route({
     required String userId,
@@ -68,7 +76,7 @@ class _FollowListScreenState extends State<FollowListScreen> {
     super.initState();
     // One single-doc listener for the tab counts (server counters + this
     // device's not-yet-counted changes).
-    if (widget.userId.isNotEmpty) {
+    if (FollowListScreen.canOpen(widget.userId, widget.currentUserId)) {
       _sub = di.sl<FollowService>().counts(widget.userId).listen(
         (c) {
           if (mounted) setState(() => _counts = c);
@@ -86,6 +94,19 @@ class _FollowListScreenState extends State<FollowListScreen> {
 
   @override
   Widget build(BuildContext context) {
+    if (!FollowListScreen.canOpen(widget.userId, widget.currentUserId)) {
+      // Someone else's lists are private: show (and read) nothing.
+      return Scaffold(
+        key: const Key('follow_list_private'),
+        backgroundColor: AppColors.backgroundDark,
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          iconTheme: const IconThemeData(color: AppColors.textPrimary),
+        ),
+        body: const SizedBox.shrink(),
+      );
+    }
     final l10n = AppLocalizations.of(context)!;
     final locale = Localizations.localeOf(context).toString();
     final c = _counts;

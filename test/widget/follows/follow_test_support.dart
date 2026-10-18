@@ -30,10 +30,14 @@ class FollowWorld {
   final FakeFirebaseFirestore fs;
   int _t = 1000;
 
-  Future<void> counts(String uid, {int followers = 0, int following = 0}) =>
-      fs.collection('profiles').doc(uid).set(
-          {'followersCount': followers, 'followingCount': following},
-          SetOptions(merge: true));
+  /// Server counters - PRIVATE, in the owner-only `follow_counts/{uid}`.
+  Future<void> counts(String uid,
+          {int followers = 0, int following = 0, int stores = 0}) =>
+      fs.collection('follow_counts').doc(uid).set({
+        'followersCount': followers,
+        'followingCount': following,
+        'storesCount': stores,
+      }, SetOptions(merge: true));
 
   /// [follower] follows [followee]; later calls are NEWER. Names are stamped
   /// the way the server does (already normalized).

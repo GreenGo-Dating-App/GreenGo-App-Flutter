@@ -32,6 +32,8 @@ import '../../../../core/services/interaction_log_service.dart';
 import '../../../../core/cache/last_result_cache.dart';
 import '../../../analytics/data/services/performance_monitoring_service.dart';
 import '../../../../core/theme/app_glass.dart';
+import '../../../../core/utils/compact_count.dart';
+import '../../../follows/presentation/widgets/own_follow_stats.dart';
 import '../../../../core/utils/country_flag_colors.dart';
 import '../../../../core/utils/country_flag_helper.dart';
 import '../../../../core/utils/display_image.dart';
@@ -40,7 +42,6 @@ import '../../../../generated/app_localizations.dart';
 import '../../../../core/utils/country_names_l10n.dart';
 import '../../../business/presentation/screens/business_center_screen.dart';
 import '../../../business/presentation/screens/business_storefront_screen.dart';
-import '../../../chat/presentation/screens/conversations_screen.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_state.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
@@ -184,7 +185,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
   MembershipTier? _tierStat; // derived from the profile's membershipTier
   String? _countriesStat; // Count of countries visited (real location)
   String? _realCountry; // Last seen profiles.location.country (not Traveler)
-  String? _peopleStat; // distinct chat partners (all time)
 
   // null == still loading; empty == loaded but nothing to show.
   // "Featured events": up to 3 random community/user-created events within
@@ -659,7 +659,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
   static const String _kCacheCommunities = 'explore_communities_v1';
   static const String _kCacheCommunityEvents = 'explore_community_events_v1';
   static const String _kCacheStatCountries = 'explore_stat_countries_v2';
-  static const String _kCacheStatPeople = 'explore_stat_people_v1';
   static const String _kCacheStatCoins = 'explore_stat_coins_v1';
 
   /// First-frame values for the stats header from what the app already holds:
@@ -866,7 +865,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
     unawaited(() async {
       final cached = await Future.wait([
         LastResultCache.loadJson(_kCacheStatCountries),
-        LastResultCache.loadJson(_kCacheStatPeople),
         LastResultCache.loadJson(_kCacheStatCoins),
       ]);
       if (!mounted) return;
@@ -874,21 +872,15 @@ class _ExploreScreenState extends State<ExploreScreen> {
         if (_countriesStat == null && cached[0] is String) {
           _countriesStat = cached[0] as String;
         }
-        if (_peopleStat == null && cached[1] is String) {
-          _peopleStat = cached[1] as String;
-        }
-        if (_coinsStat == null && cached[2] is String) {
-          _coinsStat = cached[2] as String;
+        if (_coinsStat == null && cached[1] is String) {
+          _coinsStat = cached[1] as String;
         }
       });
     }());
 
     void run() {
       if (!mounted) return;
-      unawaited(Future.wait<void>([
-        _loadCountriesStat(fresh: immediately),
-        _loadPeopleStat(),
-      ]));
+      unawaited(_loadCountriesStat(fresh: immediately));
     }
 
     if (immediately) {
@@ -1117,48 +1109,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
     // A failure keeps the last known value; only a tile with nothing falls
     // back to '–'.
     if (mounted) setState(() => _countriesStat = value ?? _countriesStat ?? '–');
-  }
-
-  /// Counts the distinct people the user has ever chatted with, via two bounded,
-  /// index-free equality queries over `conversations` (`userId1`/`userId2`),
-  /// collecting and de-duplicating the other participant.
-  Future<void> _loadPeopleStat() async {
-    String? value;
-    try {
-      final ids = <String>{};
-
-      Future<void> collect(String field) async {
-        final snap = await _firestore
-            .collection('conversations')
-            .where(field, isEqualTo: widget.userId)
-            .limit(300)
-            .get();
-        for (final doc in snap.docs) {
-          final data = doc.data();
-          // Count only REAL chats: at least one message sent and not
-          // canceled/deleted for this user (matches the Exchanges list rule).
-          if (data['lastMessage'] == null) continue;
-          if (data['isDeleted'] == true) continue;
-          final deletedFor = data['deletedFor'];
-          if (deletedFor is Map && deletedFor.containsKey(widget.userId)) {
-            continue;
-          }
-          final u1 = data['userId1'] as String?;
-          final u2 = data['userId2'] as String?;
-          final other = u1 == widget.userId ? u2 : u1;
-          if (other != null && other.isNotEmpty && other != widget.userId) {
-            ids.add(other);
-          }
-        }
-      }
-
-      await Future.wait([collect('userId1'), collect('userId2')]);
-      value = ids.length.toString();
-      unawaited(LastResultCache.saveJson(_kCacheStatPeople, value));
-    } catch (_) {
-      value = null;
-    }
-    if (mounted) setState(() => _peopleStat = value ?? _peopleStat ?? '–');
   }
 
   /// Compact, brand-facing tier label for the stats tile.
@@ -2562,7 +2512,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
   }
 
   /// The personalized stats row (glass): coins, membership tier, countries
-  /// engaged (passport stamps) and distinct people chatted with. Always shown;
+  /// engaged (passport stamps) and the user's OWN followers (private counter,
+  /// owner rule 2026-10-17; replaced "distinct chat partners"). Always shown;
   /// a tile without a value yet shimmers, and a failed stat resolves to '–'.
   Widget _statsRow(
     BuildContext context,
@@ -2629,13 +2580,21 @@ class _ExploreScreenState extends State<ExploreScreen> {
           divider(),
           Expanded(
             child: InkWell(
-              onTap: _openExchange,
+              key: const Key('explore_stat_followers'),
+              onTap: () => openOwnFollowList(context, widget.userId, 0),
               borderRadius: BorderRadius.circular(AppGlass.radiusCard),
-              child: _StatTile(
-                icon: Icons.forum_outlined,
-                value: _peopleStat,
-                label: l10n.statPeople,
-                animate: animate,
+              // The signed-in user's OWN followers (owner-only counter).
+              child: OwnFollowersCount(
+                uid: widget.userId,
+                builder: (context, followers) => _StatTile(
+                  icon: Icons.people_alt_outlined,
+                  value: followers == null
+                      ? null
+                      : formatCompactCount(followers,
+                          locale: Localizations.localeOf(context).toString()),
+                  label: l10n.userFollowTabFollowers,
+                  animate: animate,
+                ),
               ),
             ),
           ),
@@ -2645,8 +2604,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
   }
 
   /// Coins tile → the coin shop. Tier tile → the membership upgrade sheet.
-  /// Countries tile → the world map (globe). People tile → the Exchange
-  /// (conversations) page. (Explore stat tiles are shortcuts into these hubs.)
+  /// Countries tile → the world map (globe). Followers tile → the own
+  /// Followers list. (Explore stat tiles are shortcuts into these hubs.)
   void _openCoinShop() {
     Navigator.of(context).push(
       MaterialPageRoute<void>(
@@ -2681,15 +2640,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
           create: (_) => di.sl<GlobeBloc>(),
           child: GlobeScreen(userId: widget.userId),
         ),
-      ),
-    );
-  }
-
-  void _openExchange() {
-    Navigator.of(context).push(
-      MaterialPageRoute<void>(
-        builder: (_) =>
-            ConversationsScreen(userId: widget.userId, showAppBar: true),
       ),
     );
   }

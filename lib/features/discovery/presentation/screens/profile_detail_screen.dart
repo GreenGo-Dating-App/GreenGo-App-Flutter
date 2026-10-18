@@ -32,7 +32,7 @@ import '../../../../core/services/deep_link_service.dart';
 import '../../../chat/presentation/connect_and_chat.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
 import '../../../follows/presentation/follow_toggle_controller.dart';
-import '../../../follows/presentation/widgets/follow_card.dart';
+import '../../../follows/presentation/widgets/own_follow_stats.dart';
 import '../../../follows/presentation/widgets/user_follow_button.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/match.dart';
@@ -681,17 +681,17 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                           ],
                         ),
 
-                        const SizedBox(height: 12),
-
-                        // Followers | Following card (tappable → lists).
-                        // The follow button itself lives in the app bar;
-                        // sharing its controller keeps the follower figure
-                        // in step.
-                        FollowCard(
-                          userId: widget.profile.userId,
-                          currentUserId: widget.currentUserId,
-                          controller: followController,
-                        ),
+                        // Own followers / following - ONLY on "View my
+                        // profile" (owner rule 2026-10-17: follow counts and
+                        // lists are private; other viewers see neither, the
+                        // app-bar Follow button stays).
+                        if (_isSelfView) ...[
+                          const SizedBox(height: 6),
+                          OwnFollowStatsLine(
+                            userId: widget.profile.userId,
+                            currentUserId: widget.currentUserId,
+                          ),
+                        ],
 
                         const SizedBox(height: 24),
 

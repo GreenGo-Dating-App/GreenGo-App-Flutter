@@ -62,12 +62,16 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
   late Future<List<_EventCard>> _eventsFuture;
   late Future<List<_CommunityCard>> _communitiesFuture;
 
-  // Cheap denormalized follower count stream (reads profiles/{id}.followerCount).
+  // Follower count: PRIVATE (owner decision 2026-10-17) - only the business
+  // owner sees it on their own storefront (owner-only follow_counts doc).
   final FollowService _followService = di.sl<FollowService>();
 
+  bool get _isOwner => widget.currentUserId == widget.business.userId;
+
   /// Created once (not per build, which re-subscribed on every repaint).
-  late final Stream<int> _followerCount =
-      _followService.followerCount(widget.business.userId);
+  late final Stream<int> _followerCount = _isOwner
+      ? _followService.followerCount(widget.business.userId)
+      : const Stream<int>.empty();
 
   @override
   void initState() {
@@ -270,9 +274,11 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                                 ),
                               ),
                             ],
-                            const SizedBox(height: 6),
-                            // Follower count — cheap denormalized stream read.
-                            _followersLine(l10n),
+                            // Follower count - owner only (private).
+                            if (_isOwner) ...[
+                              const SizedBox(height: 6),
+                              _followersLine(l10n),
+                            ],
                             const SizedBox(height: 6),
                             BusinessRatingSummary(
                                 businessId: widget.business.userId),
@@ -577,9 +583,9 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
         ),
       );
 
-  /// "N followers" line for the storefront header. Streams the denormalized
-  /// `profiles/{businessId}.followerCount` via [FollowService] (one cheap doc
-  /// read) and formats it with the existing `businessFollowersCount` plural.
+  /// "N followers" line for the OWNER's own storefront header. Streams the
+  /// private `follow_counts/{businessId}` via [FollowService] (one doc) and
+  /// formats it with the existing `businessFollowersCount` plural.
   Widget _followersLine(AppLocalizations l10n) => StreamBuilder<int>(
         stream: _followerCount,
         builder: (context, snap) {

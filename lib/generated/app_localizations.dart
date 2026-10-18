@@ -45047,6 +45047,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Choose a type'**
   String get storefrontCategoryGroupHint;
+
+  /// Own profile stats bar: number of business accounts (stores) the user follows; also the title of that list
+  ///
+  /// In en, this message translates to:
+  /// **'Stores'**
+  String get userFollowStoresLabel;
+
+  /// Empty state of the own followed-stores list
+  ///
+  /// In en, this message translates to:
+  /// **'You don\'t follow any stores yet'**
+  String get userFollowEmptyStores;
 }
 
 class _AppLocalizationsDelegate

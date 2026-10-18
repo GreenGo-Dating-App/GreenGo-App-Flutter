@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
- * Recount profiles/{uid}.followersCount / .followingCount from the follow-edge
+ * Recount follow_counts/{uid}.followersCount / .followingCount (PRIVATE,
+ * owner-only since 2026-10-17; never the public profile) from the follow-edge
  * collections (the source of truth):
  *
  *   followersCount = count() of business_followers/{uid}/followers
@@ -144,7 +145,9 @@ const totals = { scanned: 0, fixed: 0, edgesMarked: 0, staleMirrors: 0, orphans:
  */
 async function recountOne(profileSnap, adjust = { followers: 0, following: 0 }) {
   const uid = profileSnap.id;
-  let stored = profileSnap;
+  // The profile only proves the account exists; the counters are private.
+  const countsRef = db.collection('follow_counts').doc(uid);
+  let stored = await countsRef.get();
   for (let attempt = 1; attempt <= 3; attempt++) {
     const followers = Math.max(0, (await countFollowers(uid)) - adjust.followers);
     const counted = await countFollowing(uid);
@@ -184,10 +187,12 @@ async function recountOne(profileSnap, adjust = { followers: 0, following: 0 }) 
       totals.fixed++;
     }
     if (dryRun) return;
-    await stored.ref.update({ followersCount: nonNeg(followers), followingCount: nonNeg(following) });
+    await countsRef.set(
+      { followersCount: nonNeg(followers), followingCount: nonNeg(following) },
+      { merge: true },
+    );
     // Re-verify: a trigger may have moved an edge while we counted.
-    stored = await stored.ref.get();
-    if (!stored.exists) return;
+    stored = await countsRef.get();
   }
   console.warn(`  ${uid}: still changing after 3 attempts — re-run later`);
 }

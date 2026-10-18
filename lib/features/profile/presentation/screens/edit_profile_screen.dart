@@ -52,7 +52,7 @@ import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
 // Progress screen moved to bottom navigation - import removed
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
-import '../../../follows/presentation/widgets/follow_card.dart';
+import '../../../follows/presentation/widgets/own_follow_stats.dart';
 import '../../../gamification/domain/entities/achievement.dart';
 import '../../../gamification/presentation/bloc/gamification_bloc.dart';
 import '../../../gamification/presentation/screens/achievements_screen.dart';
@@ -349,8 +349,9 @@ class EditProfileScreen extends StatelessWidget {
                     ),
                   ),
 
-                  // Followers | Following card (tappable → lists).
-                  FollowCard(
+                  // Own Followers | Following | Stores bar (tappable ->
+                  // lists). Private: only the account itself sees it.
+                  OwnFollowStatsBar(
                     userId: activeProfile.userId,
                     currentUserId: activeProfile.userId,
                   ),

@@ -572,9 +572,10 @@ service cloud.firestore {
         && request.resource.data.get('membershipEndDate', null) == null
         && request.resource.data.get('hasBaseMembership', false) == false
         && request.resource.data.get('baseMembershipEndDate', null) == null
-        // Follow counters are server-owned (functions social/follows.ts).
-        && request.resource.data.get('followersCount', 0) == 0
-        && request.resource.data.get('followingCount', 0) == 0
+        // Follow counters are PRIVATE and server-owned (owner rule
+        // 2026-10-17): they live in follow_counts/{uid}, never on the public
+        // profile, so a client may not put them here at all.
+        && !request.resource.data.keys().hasAny(['followersCount', 'followingCount'])
         // Host overall rating is server-owned (user_experiences triggers).
         && request.resource.data.get('hostRatingSum', 0) == 0
         && request.resource.data.get('hostRatingCount', 0) == 0
@@ -666,12 +667,14 @@ service cloud.firestore {
                  == resource.data.get('hasBaseMembership', false)
               && request.resource.data.get('baseMembershipEndDate', null)
                  == resource.data.get('baseMembershipEndDate', null)
-              // Follow counters are maintained ONLY by the follow triggers
-              // (social/follows.ts, Admin SDK).
-              && request.resource.data.get('followersCount', 0)
-                 == resource.data.get('followersCount', 0)
-              && request.resource.data.get('followingCount', 0)
-                 == resource.data.get('followingCount', 0)
+              // Follow counters are PRIVATE (follow_counts/{uid}, written
+              // only by the follow triggers). A client may neither add them
+              // to the public profile nor change a legacy value (the server
+              // move script deletes those).
+              && request.resource.data.get('followersCount', null)
+                 == resource.data.get('followersCount', null)
+              && request.resource.data.get('followingCount', null)
+                 == resource.data.get('followingCount', null)
               // Host overall rating across all experiences: maintained ONLY
               // by onExperienceReviewWritten / onUserExperienceWritten /
               // backfillHostRatings (Admin SDK).
@@ -2182,18 +2185,25 @@ service cloud.firestore {
     // ============================================================================
     // BUSINESS (B2B) COLLECTIONS — followers, leads, verification requests
     // ============================================================================
-    // Followers of a business. A user manages ONLY their own follower doc under
-    // a business; anyone signed in may read (follower lists / counts). The
-    // follower fan-out for new events is done server-side by a Cloud Function.
+    // Followers of an account. A user manages ONLY their own follower doc
+    // under an account. The follower fan-out for new events is done
+    // server-side by a Cloud Function (Admin SDK).
     //
     // Since user follows shipped this is THE follow graph for every account
     // (business or not): followers of {businessId} = any followee. Counters
-    // (profiles.followersCount / followingCount) are kept by the
-    // onUserFollowCreated / onUserFollowDeleted triggers, which mark counted
-    // edges with `counted` — so a client may write ONLY `createdAt` (= server
-    // time), may never update an edge, and may not follow itself.
+    // (follow_counts/{uid}.followersCount / followingCount, owner-only) are
+    // kept by the onUserFollowCreated / onUserFollowDeleted triggers, which
+    // mark counted edges with `counted` — so a client may write ONLY
+    // `createdAt` (= server time), may never update an edge, and may not
+    // follow itself.
+    //
+    // PRIVATE (owner rule 2026-10-17, users AND businesses): the list of an
+    // account's followers is readable only by that account (and the admin
+    // panel). A viewer may still GET their OWN edge under someone else (the
+    // follow button state: "do I follow X?"), never list or search others.
     match /business_followers/{businessId}/followers/{uid} {
-      allow read: if isSignedIn();
+      allow get: if isOwner(businessId) || isOwner(uid) || isAdminPanelUser();
+      allow list: if isOwner(businessId) || isAdminPanelUser();
       allow create: if isOwner(uid)
         && uid != businessId
         && request.resource.data.keys().hasOnly(['createdAt'])
@@ -2201,16 +2211,26 @@ service cloud.firestore {
       allow delete: if isOwner(uid);
     }
 
-    // Mirror index of the accounts a user follows. Readable by signed-in users
-    // (a profile's "Following" list); written only by its owner.
+    // Mirror index of the accounts a user follows. PRIVATE (owner rule
+    // 2026-10-17): readable and written only by its owner (and read by the
+    // admin panel).
     match /user_business_following/{userId}/businesses/{businessId} {
-      allow read: if isSignedIn();
+      allow read: if isOwner(userId) || isAdminPanelUser();
       // `followeeNameLower` (searchable name) is written ONLY by the server
       // (functions social/followNames.ts); a client can never forge it. The
       // canonical edge above already allows `createdAt` only.
       allow create: if isOwner(userId) && userId != businessId
-        && !request.resource.data.keys().hasAny(['followeeNameLower', 'followerNameLower']);
+        && !request.resource.data.keys().hasAny(['followeeNameLower', 'followerNameLower', 'isStore']);
       allow delete: if isOwner(userId);
+    }
+
+    // Follower / following counters of an account (owner rule 2026-10-17:
+    // visible ONLY to the account itself, users AND businesses). Written
+    // only by the follow triggers (functions social/followCounters.ts, Admin
+    // SDK); no client write ever.
+    match /follow_counts/{uid} {
+      allow read: if isOwner(uid) || isAdminPanelUser();
+      allow write: if false;
     }
 
     // ============================================================================

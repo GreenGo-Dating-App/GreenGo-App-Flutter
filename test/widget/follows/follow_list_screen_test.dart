@@ -130,32 +130,41 @@ void main() {
     expect(find.text('Ana 24'), findsOneWidget);
   });
 
-  testWidgets("no action button on the viewer's own row", (tester) async {
-    await w.counts('t', followers: 2);
-    await w.follow('me', 't', followerName: 'me');
+  testWidgets("someone else's lists are private: nothing is shown or read",
+      (tester) async {
+    await w.counts('t', followers: 2, following: 1);
     await w.follow('u1', 't', followerName: 'ana');
-    w.briefs({'me': const UserBrief(name: 'Me Myself'), 'u1': const UserBrief(name: 'Ana')});
+    w.briefs({'u1': const UserBrief(name: 'Ana')});
     await tester.pumpWidget(
         _app(const FollowListScreen(userId: 't', currentUserId: 'me')));
     await tester.pumpAndSettle();
-    expect(rows(), findsNWidgets(2));
-    final myRow = find.ancestor(of: find.text('Me Myself'), matching: find.byType(FollowRow));
-    expect(find.descendant(of: myRow, matching: find.byType(UserFollowButton)), findsNothing);
-    final other = find.ancestor(of: find.text('Ana'), matching: find.byType(FollowRow));
-    expect(find.descendant(of: other, matching: find.text('Follow')), findsOneWidget);
-    // Not the viewer's own followers list: no "Follows you" prefix.
-    expect(find.textContaining('Follows you'), findsNothing);
+    expect(find.byKey(const Key('follow_list_private')), findsOneWidget);
+    expect(rows(), findsNothing);
+    expect(find.byType(TabBar), findsNothing);
+    expect(find.textContaining('Followers'), findsNothing);
+    expect(find.text('Ana'), findsNothing);
+    expect(FollowListScreen.canOpen('t', 'me'), isFalse);
+    expect(FollowListScreen.canOpen('me', 'me'), isTrue);
+    expect(FollowListScreen.canOpen('', ''), isFalse);
   });
 
   testWidgets('pill flips Follow -> Following (filled -> outlined)',
       (tester) async {
-    await w.counts('t', followers: 1);
-    await w.follow('u1', 't', followerName: 'ana');
+    // Own Following list: unfollow then follow again from the row.
+    await w.counts('me', following: 1);
+    await w.follow('me', 'u1', followeeName: 'ana');
     w.briefs({'u1': const UserBrief(name: 'Ana', city: 'Rome')});
-    await tester.pumpWidget(
-        _app(const FollowListScreen(userId: 't', currentUserId: 'me')));
+    await tester.pumpWidget(_app(const FollowListScreen(
+        userId: 'me', currentUserId: 'me', initialTab: 1)));
     await tester.pumpAndSettle();
     expect(find.text('Rome'), findsOneWidget);
+    await w.fs
+        .collection('business_followers')
+        .doc('u1')
+        .collection('followers')
+        .doc('me')
+        .delete();
+    await tester.pumpAndSettle();
     expect(find.text('Follow'), findsOneWidget);
     await tester.tap(find.text('Follow'));
     await tester.pumpAndSettle();

@@ -1,6 +1,16 @@
 /**
  * Follow-counter core — exactly-once, never-negative maintenance of
- * `profiles/{followee}.followersCount` and `profiles/{follower}.followingCount`.
+ * `follow_counts/{followee}.followersCount` and
+ * `follow_counts/{follower}.followingCount`.
+ *
+ * PRIVATE (owner rule 2026-10-17): follower / following counts are visible
+ * ONLY to the account itself (users AND businesses). They live in the
+ * owner-only `follow_counts/{uid}` document (rules: read by the owner or an
+ * admin-panel user, never written by a client), NOT on the public
+ * `profiles/{uid}`. A dedicated collection (rather than `profiles_private`)
+ * so a follow fires no profile trigger (syncCoarseFromPrivateProfile /
+ * mirrorPrivateProfileFields) and a hot counter never contends with profile
+ * edits. scripts/move-follow-counts-private.ts moves legacy public values.
  *
  * Kept free of trigger plumbing (and of a hard `firebase-admin` import) so it
  * can be unit-tested against an in-memory Firestore: callers pass the db and
@@ -22,7 +32,23 @@
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-export type CounterField = 'followersCount' | 'followingCount';
+export type CounterField = 'followersCount' | 'followingCount' | 'storesCount';
+
+/**
+ * Edge flag: this edge was counted into the follower's `storesCount` (the
+ * followee was a business account when it was counted). Decrements follow
+ * the FLAG, not the followee's current isBusiness, so an account that turns
+ * business later never drifts the count.
+ */
+export const STORE_COUNTED_FLAG = 'countedStore';
+
+/**
+ * Mirror flag (`user_business_following/{follower}/businesses/{followee}`):
+ * the followee is a business. Server-written with [STORE_COUNTED_FLAG]; the
+ * app's "Stores" list is `where(isStore == true)` on the follower's own
+ * mirror collection (automatic single-field index).
+ */
+export const MIRROR_STORE_FLAG = 'isStore';
 
 export interface FollowCounterDeps {
   /** A `firebase-admin` Firestore (or a structurally compatible fake). */
@@ -66,6 +92,13 @@ function profileRef(db: any, uid: string) {
   return db.collection('profiles').doc(uid);
 }
 
+/** Owner-only counters document (see the header). */
+export const FOLLOW_COUNTS = 'follow_counts';
+
+export function countsRef(db: any, uid: string) {
+  return db.collection(FOLLOW_COUNTS).doc(uid);
+}
+
 /**
  * Count ONE edge exactly once. Returns true when this call did the counting.
  * Profiles that do not exist (deleted accounts) are skipped instead of being
@@ -87,9 +120,23 @@ export async function countEdge(
   return db.runTransaction(async (txn: any) => {
     const edge = await txn.get(ref);
     if (!edge.exists || edge.data()?.counted === true) return false;
-    txn.update(ref, { counted: true });
-    if (followee.exists) txn.update(followeeRef, { followersCount: increment(1) });
-    if (follower.exists) txn.update(followerRef, { followingCount: increment(1) });
+    // Following a BUSINESS also counts into the follower's private
+    // `storesCount` (the "Stores" column of the own profile).
+    const isStore = followee.exists && followee.data()?.isBusiness === true;
+    const mirror = isStore ? await txn.get(mirrorRef(db, followerId, followeeId)) : null;
+    txn.update(ref, isStore ? { counted: true, [STORE_COUNTED_FLAG]: true } : { counted: true });
+    if (mirror?.exists) txn.update(mirror.ref, { [MIRROR_STORE_FLAG]: true });
+    // merge-set: the counters doc is created on the first follow.
+    if (followee.exists) {
+      txn.set(countsRef(db, followeeId), { followersCount: increment(1) }, { merge: true });
+    }
+    if (follower.exists) {
+      txn.set(
+        countsRef(db, followerId),
+        isStore ? { followingCount: increment(1), storesCount: increment(1) } : { followingCount: increment(1) },
+        { merge: true },
+      );
+    }
     return true;
   });
 }
@@ -106,8 +153,10 @@ export async function uncountEdge(
   followeeId: string,
   followerId: string,
   wasCounted: boolean,
+  opts: { wasStoreCounted?: boolean } = {},
 ): Promise<boolean> {
   if (!wasCounted || !followeeId || !followerId) return false;
+  const store = opts.wasStoreCounted === true;
   const { db, increment } = deps;
   const now = (deps.now ?? (() => new Date()))();
   const followeeRef = profileRef(db, followeeId);
@@ -127,14 +176,23 @@ export async function uncountEdge(
       at: now,
       expireAt: new Date(now.getTime() + MARKER_TTL_MS),
     });
-    if (followee.exists) txn.update(followeeRef, { followersCount: increment(-1) });
-    if (follower.exists) txn.update(followerRef, { followingCount: increment(-1) });
+    if (followee.exists) {
+      txn.set(countsRef(db, followeeId), { followersCount: increment(-1) }, { merge: true });
+    }
+    if (follower.exists) {
+      txn.set(
+        countsRef(db, followerId),
+        store ? { followingCount: increment(-1), storesCount: increment(-1) } : { followingCount: increment(-1) },
+        { merge: true },
+      );
+    }
     return true;
   });
   if (did) {
     await Promise.all([
-      followee.exists ? clampNonNegative(deps, followeeRef, 'followersCount') : null,
-      follower.exists ? clampNonNegative(deps, followerRef, 'followingCount') : null,
+      followee.exists ? clampNonNegative(deps, countsRef(db, followeeId), 'followersCount') : null,
+      follower.exists ? clampNonNegative(deps, countsRef(db, followerId), 'followingCount') : null,
+      follower.exists && store ? clampNonNegative(deps, countsRef(db, followerId), 'storesCount') : null,
     ]);
   }
   return did;
@@ -160,5 +218,34 @@ export async function clampNonNegative(
     const cur = s.get(field);
     if (typeof cur === 'number' && cur >= 0) return;
     txn.update(ref, { [field]: clampCount(cur) });
+  });
+}
+
+/**
+ * Backfill ONE legacy business-follow edge into the follower's `storesCount`
+ * (edges counted before `storesCount` existed). Exactly once: the
+ * [STORE_COUNTED_FLAG] is set in the same transaction as the increment.
+ * Only for an edge that is already `counted` (an uncounted edge gets both
+ * from [countEdge]). Returns true when this call counted it.
+ */
+export async function countStoreEdge(
+  deps: FollowCounterDeps,
+  followeeId: string,
+  followerId: string,
+): Promise<boolean> {
+  const { db, increment } = deps;
+  const follower = await profileRef(db, followerId).get();
+  const ref = edgeRef(db, followeeId, followerId);
+  return db.runTransaction(async (txn: any) => {
+    const edge = await txn.get(ref);
+    const d = edge.exists ? edge.data() : undefined;
+    if (!d || d.counted !== true || d[STORE_COUNTED_FLAG] === true) return false;
+    const mirror = await txn.get(mirrorRef(db, followerId, followeeId));
+    txn.update(ref, { [STORE_COUNTED_FLAG]: true });
+    if (mirror.exists) txn.update(mirror.ref, { [MIRROR_STORE_FLAG]: true });
+    if (follower.exists) {
+      txn.set(countsRef(db, followerId), { storesCount: increment(1) }, { merge: true });
+    }
+    return true;
   });
 }

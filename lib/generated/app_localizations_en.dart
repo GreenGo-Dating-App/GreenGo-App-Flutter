@@ -26331,4 +26331,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get storefrontCategoryGroupHint => 'Choose a type';
+
+  @override
+  String get userFollowStoresLabel => 'Stores';
+
+  @override
+  String get userFollowEmptyStores => 'You don\'t follow any stores yet';
 }

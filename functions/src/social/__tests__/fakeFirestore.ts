@@ -42,8 +42,14 @@ export function makeDb() {
   };
 
   /** `set(d)` replaces; `set(d, { merge: true })` shallow-merges. */
-  const applySet = (path: string, d: Doc, opts?: { merge?: boolean }) =>
-    void store.set(path, opts?.merge ? { ...(store.get(path) ?? {}), ...d } : { ...d });
+  const applySet = (path: string, d: Doc, opts?: { merge?: boolean }) => {
+    if (!opts?.merge) return void store.set(path, { ...d });
+    const next: Doc = { ...(store.get(path) ?? {}) };
+    for (const [k, v] of Object.entries(d)) {
+      next[k] = v && typeof v === 'object' && INC in v ? (Number(next[k]) || 0) + v[INC] : v;
+    }
+    store.set(path, next);
+  };
 
   const ref = (path: string): any => ({
     path,
