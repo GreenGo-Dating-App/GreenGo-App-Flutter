@@ -6452,6 +6452,8 @@
   "srvSupportNewMessageOnTicket": "Nouveau message sur un ticket d’assistance",
   "srvSupportUserSentMessage": "Un utilisateur a envoyé un nouveau message.",
   "srvVerificationResubmit": "Veuillez envoyer une nouvelle photo de vérification.",
+  "srvVerificationReviewExpired": "Votre photo de vérification n'a pas été examinée sous 7 jours : nous l'avons donc supprimée, comme le prévoit notre Politique de confidentialité. Veuillez en envoyer une nouvelle.",
+  "srvBusinessDocumentExpired": "Votre document de vérification d'entreprise n'a pas été examiné sous 7 jours : nous l'avons donc supprimé, comme le prévoit notre Politique de confidentialité. Veuillez renvoyer votre demande.",
   "srvVerificationResubmitReason": "Veuillez envoyer une nouvelle photo de vérification. Motif : {reason}",
   "srvVerificationRejected": "Votre vérification n’a pas été approuvée. Veuillez réessayer.",
   "srvVerificationRejectedReason": "Votre vérification n’a pas été approuvée. Motif : {reason}",

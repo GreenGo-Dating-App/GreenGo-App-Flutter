@@ -174,7 +174,11 @@ export const getVerificationPhotoUrl = onCall({ memory: '512MiB' }, async (reque
 
 export async function resolveVerificationPhotoUrl(
   uid: string,
-  opts: { firestore?: admin.firestore.Firestore; sign?: (path: string, expires: number) => Promise<string> } = {},
+  opts: {
+    firestore?: admin.firestore.Firestore;
+    sign?: (path: string, expires: number) => Promise<string>;
+    exists?: (path: string) => Promise<boolean>;
+  } = {},
 ): Promise<{ url: string | null; expiresAt: number | null; source: 'path' | 'legacy' | 'none' }> {
   const fs = opts.firestore ?? admin.firestore();
   const [privSnap, pubSnap] = await fs.getAll(
@@ -192,6 +196,13 @@ export async function resolveVerificationPhotoUrl(
     if (!inUserFolder || path.includes('..')) {
       throw new AppError('failed-precondition', 'Stored verification path is not in the user folder', 400);
     }
+    // Privacy Policy 8.3: the photo is deleted after the review. A path left
+    // behind (stale write, failed clear) must not become a broken image.
+    const exists = opts.exists ?? (async (p: string) => {
+      const [ok] = await admin.storage().bucket().file(p).exists();
+      return ok;
+    });
+    if (!(await exists(path))) return { url: null, expiresAt: null, source: 'none' };
     const expires = Date.now() + SIGNED_URL_TTL_MS;
     const sign = opts.sign ?? (async (p: string, exp: number) => {
       const [url] = await admin.storage().bucket().file(p).getSignedUrl({ version: 'v4', action: 'read', expires: exp });

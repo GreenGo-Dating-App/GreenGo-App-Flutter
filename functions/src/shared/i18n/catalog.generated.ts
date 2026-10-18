@@ -322,6 +322,7 @@ export type ArbKey =
   | 'srvBundleNewMessages'
   | 'srvBundleNotifications'
   | 'srvBundleProfileViews'
+  | 'srvBusinessDocumentExpired'
   | 'srvChallengeCompletedTitle'
   | 'srvChallengeRewardsBody'
   | 'srvCoinsReceivedBody'
@@ -408,6 +409,7 @@ export type ArbKey =
   | 'srvVerificationRejectedReason'
   | 'srvVerificationResubmit'
   | 'srvVerificationResubmitReason'
+  | 'srvVerificationReviewExpired'
   | 'srvYouWereAddedToGroup'
   | 'superLikedYou'
   | 'youGotSuperLike';
@@ -731,6 +733,7 @@ export const ARB_KEYS: readonly ArbKey[] = [
   'srvBundleNewMessages',
   'srvBundleNotifications',
   'srvBundleProfileViews',
+  'srvBusinessDocumentExpired',
   'srvChallengeCompletedTitle',
   'srvChallengeRewardsBody',
   'srvCoinsReceivedBody',
@@ -817,6 +820,7 @@ export const ARB_KEYS: readonly ArbKey[] = [
   'srvVerificationRejectedReason',
   'srvVerificationResubmit',
   'srvVerificationResubmitReason',
+  'srvVerificationReviewExpired',
   'srvYouWereAddedToGroup',
   'superLikedYou',
   'youGotSuperLike',
@@ -1142,6 +1146,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvBundleNewMessages: "{count, plural, =1{1 new message} other{{count} new messages}}",
     srvBundleNotifications: "{count, plural, =1{1 notification} other{{count} notifications}}",
     srvBundleProfileViews: "{count, plural, =1{1 profile view} other{{count} profile views}}",
+    srvBusinessDocumentExpired: "Your business verification document was not reviewed within 7 days, so we deleted it, as our Privacy Policy promises. Please send your request again.",
     srvChallengeCompletedTitle: "Challenge Completed: {challenge, select, send_5_messages{Conversation Starter} get_3_matches{Connector} complete_profile{Profile Perfectionist} video_call_1{Face to Face} other{Daily challenge}}!",
     srvChallengeRewardsBody: "Claim your rewards: {xp} XP and {coins, plural, =1{1 coin} other{{coins} coins}}",
     srvCoinsReceivedBody: "{name} sent you {amount, plural, =1{1 coin} other{{amount} coins}}!",
@@ -1228,6 +1233,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvVerificationRejectedReason: "Your verification was not approved. Reason: {reason}",
     srvVerificationResubmit: "Please submit a new verification photo.",
     srvVerificationResubmitReason: "Please submit a new verification photo. Reason: {reason}",
+    srvVerificationReviewExpired: "Your verification photo was not reviewed within 7 days, so we deleted it, as our Privacy Policy promises. Please send a new one.",
     srvYouWereAddedToGroup: "You were added to the group",
     superLikedYou: "{name} priority connected with you!",
     youGotSuperLike: "You got a Priority Connect!",
@@ -1551,6 +1557,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvBundleNewMessages: "{count, plural, =1{1 neue Nachricht} other{{count} neue Nachrichten}}",
     srvBundleNotifications: "{count, plural, =1{1 Benachrichtigung} other{{count} Benachrichtigungen}}",
     srvBundleProfileViews: "{count, plural, =1{1 Profilaufruf} other{{count} Profilaufrufe}}",
+    srvBusinessDocumentExpired: "Dein Dokument zur Unternehmensverifizierung wurde nicht innerhalb von 7 Tagen geprüft. Wie in unserer Datenschutzerklärung versprochen, haben wir es gelöscht. Bitte sende deine Anfrage erneut.",
     srvChallengeCompletedTitle: "Herausforderung geschafft: {challenge, select, send_5_messages{Gesprächsstarter} get_3_matches{Netzwerker} complete_profile{Profil-Perfektionist} video_call_1{Von Angesicht zu Angesicht} other{Tägliche Herausforderung}}!",
     srvChallengeRewardsBody: "Hol dir deine Belohnungen: {xp} XP und {coins, plural, =1{1 Münze} other{{coins} Münzen}}",
     srvCoinsReceivedBody: "{name} hat dir {amount, plural, =1{1 Münze} other{{amount} Münzen}} geschickt!",
@@ -1637,6 +1644,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvVerificationRejectedReason: "Deine Verifizierung wurde nicht genehmigt. Grund: {reason}",
     srvVerificationResubmit: "Bitte reiche ein neues Verifizierungsfoto ein.",
     srvVerificationResubmitReason: "Bitte reiche ein neues Verifizierungsfoto ein. Grund: {reason}",
+    srvVerificationReviewExpired: "Dein Verifizierungsfoto wurde nicht innerhalb von 7 Tagen geprüft. Wie in unserer Datenschutzerklärung versprochen, haben wir es gelöscht. Bitte sende ein neues.",
     srvYouWereAddedToGroup: "Du wurdest zur Gruppe hinzugefügt",
     superLikedYou: "{name} hat sich prioritär mit dir verbunden!",
     youGotSuperLike: "Du hast eine Prioritätsverbindung erhalten!",
@@ -1960,6 +1968,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvBundleNewMessages: "{count, plural, =1{1 mensaje nuevo} other{{count} mensajes nuevos}}",
     srvBundleNotifications: "{count, plural, =1{1 notificación} other{{count} notificaciones}}",
     srvBundleProfileViews: "{count, plural, =1{1 visita a tu perfil} other{{count} visitas a tu perfil}}",
+    srvBusinessDocumentExpired: "Tu documento de verificación de empresa no se revisó en 7 días, así que lo eliminamos, como promete nuestra Política de Privacidad. Envía tu solicitud de nuevo.",
     srvChallengeCompletedTitle: "Reto completado: {challenge, select, send_5_messages{Iniciador de conversaciones} get_3_matches{Conector} complete_profile{Perfil perfecto} video_call_1{Cara a cara} other{Reto diario}}!",
     srvChallengeRewardsBody: "Reclama tus recompensas: {xp} XP y {coins, plural, =1{1 moneda} other{{coins} monedas}}",
     srvCoinsReceivedBody: "¡{name} te ha enviado {amount, plural, =1{1 moneda} other{{amount} monedas}}!",
@@ -2046,6 +2055,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvVerificationRejectedReason: "Tu verificación no fue aprobada. Motivo: {reason}",
     srvVerificationResubmit: "Envía una nueva foto de verificación.",
     srvVerificationResubmitReason: "Envía una nueva foto de verificación. Motivo: {reason}",
+    srvVerificationReviewExpired: "Tu foto de verificación no se revisó en 7 días, así que la eliminamos, como promete nuestra Política de Privacidad. Envía una nueva.",
     srvYouWereAddedToGroup: "Te añadieron al grupo",
     superLikedYou: "¡{name} conectó prioritariamente contigo!",
     youGotSuperLike: "¡Recibiste una Conexión Prioritaria!",
@@ -2369,6 +2379,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvBundleNewMessages: "{count, plural, =1{1 nouveau message} other{{count} nouveaux messages}}",
     srvBundleNotifications: "{count, plural, =1{1 notification} other{{count} notifications}}",
     srvBundleProfileViews: "{count, plural, =1{1 vue de profil} other{{count} vues de profil}}",
+    srvBusinessDocumentExpired: "Votre document de vérification d'entreprise n'a pas été examiné sous 7 jours : nous l'avons donc supprimé, comme le prévoit notre Politique de confidentialité. Veuillez renvoyer votre demande.",
     srvChallengeCompletedTitle: "Défi relevé : {challenge, select, send_5_messages{Lanceur de conversations} get_3_matches{Connecteur} complete_profile{Profil parfait} video_call_1{Face à face} other{Défi du jour}} !",
     srvChallengeRewardsBody: "Récupérez vos récompenses : {xp} XP et {coins, plural, =1{1 pièce} other{{coins} pièces}}",
     srvCoinsReceivedBody: "{name} vous a envoyé {amount, plural, =1{1 pièce} other{{amount} pièces}} !",
@@ -2455,6 +2466,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvVerificationRejectedReason: "Votre vérification n’a pas été approuvée. Motif : {reason}",
     srvVerificationResubmit: "Veuillez envoyer une nouvelle photo de vérification.",
     srvVerificationResubmitReason: "Veuillez envoyer une nouvelle photo de vérification. Motif : {reason}",
+    srvVerificationReviewExpired: "Votre photo de vérification n'a pas été examinée sous 7 jours : nous l'avons donc supprimée, comme le prévoit notre Politique de confidentialité. Veuillez en envoyer une nouvelle.",
     srvYouWereAddedToGroup: "Vous avez été ajouté au groupe",
     superLikedYou: "{name} s'est connecté prioritairement avec vous !",
     youGotSuperLike: "Vous avez reçu une Connexion Prioritaire !",
@@ -2778,6 +2790,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvBundleNewMessages: "{count, plural, =1{1 nuovo messaggio} other{{count} nuovi messaggi}}",
     srvBundleNotifications: "{count, plural, =1{1 notifica} other{{count} notifiche}}",
     srvBundleProfileViews: "{count, plural, =1{1 visita al profilo} other{{count} visite al profilo}}",
+    srvBusinessDocumentExpired: "Il tuo documento di verifica dell'attività non è stato esaminato entro 7 giorni, quindi l'abbiamo eliminato, come promesso nella nostra Informativa sulla privacy. Invia di nuovo la richiesta.",
     srvChallengeCompletedTitle: "Sfida completata: {challenge, select, send_5_messages{Attacca bottone} get_3_matches{Connettore} complete_profile{Profilo perfetto} video_call_1{Faccia a faccia} other{Sfida del giorno}}!",
     srvChallengeRewardsBody: "Riscatta i tuoi premi: {xp} XP e {coins, plural, =1{1 moneta} other{{coins} monete}}",
     srvCoinsReceivedBody: "{name} ti ha inviato {amount, plural, =1{1 moneta} other{{amount} monete}}!",
@@ -2864,6 +2877,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvVerificationRejectedReason: "La tua verifica non è stata approvata. Motivo: {reason}",
     srvVerificationResubmit: "Invia una nuova foto di verifica.",
     srvVerificationResubmitReason: "Invia una nuova foto di verifica. Motivo: {reason}",
+    srvVerificationReviewExpired: "La tua foto di verifica non è stata esaminata entro 7 giorni, quindi l'abbiamo eliminata, come promesso nella nostra Informativa sulla privacy. Inviane una nuova.",
     srvYouWereAddedToGroup: "Sei stato aggiunto al gruppo",
     superLikedYou: "{name} si è connesso prioritariamente con te!",
     youGotSuperLike: "Hai ricevuto una Connessione Prioritaria!",
@@ -3187,6 +3201,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvBundleNewMessages: "{count, plural, =1{1 nova mensagem} other{{count} novas mensagens}}",
     srvBundleNotifications: "{count, plural, =1{1 notificação} other{{count} notificações}}",
     srvBundleProfileViews: "{count, plural, =1{1 visita ao perfil} other{{count} visitas ao perfil}}",
+    srvBusinessDocumentExpired: "O teu documento de verificação do negócio não foi analisado em 7 dias, por isso eliminámo-lo, como promete a nossa Política de Privacidade. Envia o pedido novamente.",
     srvChallengeCompletedTitle: "Desafio concluído: {challenge, select, send_5_messages{Iniciador de conversas} get_3_matches{Conector} complete_profile{Perfil perfeito} video_call_1{Cara a cara} other{Desafio diário}}!",
     srvChallengeRewardsBody: "Recebe as tuas recompensas: {xp} XP e {coins, plural, =1{1 moeda} other{{coins} moedas}}",
     srvCoinsReceivedBody: "{name} enviou-te {amount, plural, =1{1 moeda} other{{amount} moedas}}!",
@@ -3273,6 +3288,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvVerificationRejectedReason: "A tua verificação não foi aprovada. Motivo: {reason}",
     srvVerificationResubmit: "Envia uma nova foto de verificação.",
     srvVerificationResubmitReason: "Envia uma nova foto de verificação. Motivo: {reason}",
+    srvVerificationReviewExpired: "A tua foto de verificação não foi analisada em 7 dias, por isso eliminámo-la, como promete a nossa Política de Privacidade. Envia uma nova.",
     srvYouWereAddedToGroup: "Foste adicionado ao grupo",
     superLikedYou: "{name} conectou-se prioritariamente contigo!",
     youGotSuperLike: "Recebeste uma Conexão Prioritária!",
@@ -3596,6 +3612,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvBundleNewMessages: "{count, plural, =1{1 nova mensagem} other{{count} novas mensagens}}",
     srvBundleNotifications: "{count, plural, =1{1 notificação} other{{count} notificações}}",
     srvBundleProfileViews: "{count, plural, =1{1 visita ao perfil} other{{count} visitas ao perfil}}",
+    srvBusinessDocumentExpired: "Seu documento de verificação do negócio não foi analisado em 7 dias, então o excluímos, como promete nossa Política de Privacidade. Envie sua solicitação novamente.",
     srvChallengeCompletedTitle: "Desafio concluído: {challenge, select, send_5_messages{Iniciador de conversas} get_3_matches{Conector} complete_profile{Perfil perfeito} video_call_1{Cara a cara} other{Desafio diário}}!",
     srvChallengeRewardsBody: "Resgate suas recompensas: {xp} XP e {coins, plural, =1{1 moeda} other{{coins} moedas}}",
     srvCoinsReceivedBody: "{name} te enviou {amount, plural, =1{1 moeda} other{{amount} moedas}}!",
@@ -3682,6 +3699,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvVerificationRejectedReason: "Sua verificação não foi aprovada. Motivo: {reason}",
     srvVerificationResubmit: "Envie uma nova foto de verificação.",
     srvVerificationResubmitReason: "Envie uma nova foto de verificação. Motivo: {reason}",
+    srvVerificationReviewExpired: "Sua foto de verificação não foi analisada em 7 dias, então a excluímos, como promete nossa Política de Privacidade. Envie uma nova.",
     srvYouWereAddedToGroup: "Você foi adicionado ao grupo",
     superLikedYou: "{name} conectou-se prioritariamente com você!",
     youGotSuperLike: "Você recebeu uma Conexão Prioritária!",

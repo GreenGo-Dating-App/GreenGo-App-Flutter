@@ -22548,6 +22548,14 @@ class AppLocalizationsDe extends AppLocalizations {
       'Bitte reiche ein neues Verifizierungsfoto ein.';
 
   @override
+  String get srvVerificationReviewExpired =>
+      'Dein Verifizierungsfoto wurde nicht innerhalb von 7 Tagen geprüft. Wie in unserer Datenschutzerklärung versprochen, haben wir es gelöscht. Bitte sende ein neues.';
+
+  @override
+  String get srvBusinessDocumentExpired =>
+      'Dein Dokument zur Unternehmensverifizierung wurde nicht innerhalb von 7 Tagen geprüft. Wie in unserer Datenschutzerklärung versprochen, haben wir es gelöscht. Bitte sende deine Anfrage erneut.';
+
+  @override
   String srvVerificationResubmitReason(String reason) {
     return 'Bitte reiche ein neues Verifizierungsfoto ein. Grund: $reason';
   }

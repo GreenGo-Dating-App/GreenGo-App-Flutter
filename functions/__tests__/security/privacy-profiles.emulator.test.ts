@@ -545,15 +545,19 @@ describe('getVerificationPhotoUrl (admin only)', () => {
   test('stored path -> short-lived signed URL; a path outside the user folder is refused', async () => {
     await db.doc('profiles_private/v').set({ verificationPhotoPath: 'verifications/v/selfie.jpg' });
     const signed: string[] = [];
-    const r = await resolveVerificationPhotoUrl('v', { sign: async (p, exp) => { signed.push(p); return `https://signed/${p}?e=${exp}`; } });
+    const present = async () => true;
+    const r = await resolveVerificationPhotoUrl('v', { exists: present, sign: async (p, exp) => { signed.push(p); return `https://signed/${p}?e=${exp}`; } });
     expect(r.source).toBe('path');
     expect(signed).toEqual(['verifications/v/selfie.jpg']);
     expect(r.expiresAt - Date.now()).toBeLessThanOrEqual(10 * 60 * 1000);
     await db.doc('profiles_private/lg').set({ verificationPhotoPath: 'profiles/lg/verifications/1.jpg' });
-    await expect(resolveVerificationPhotoUrl('lg', { sign: async (p) => `https://signed/${p}` }))
+    await expect(resolveVerificationPhotoUrl('lg', { exists: present, sign: async (p) => `https://signed/${p}` }))
       .resolves.toMatchObject({ source: 'path', url: 'https://signed/profiles/lg/verifications/1.jpg' });
+    // Deleted after the review (Privacy Policy 8.3): no URL, the admin screen shows a placeholder.
+    await expect(resolveVerificationPhotoUrl('v', { exists: async () => false, sign: async () => 'x' }))
+      .resolves.toEqual({ url: null, expiresAt: null, source: 'none' });
     await db.doc('profiles_private/w').set({ verificationPhotoPath: 'verifications/someone-else/x.jpg' });
-    await expect(resolveVerificationPhotoUrl('w', { sign: async () => 'x' })).rejects.toThrow(/user folder/);
+    await expect(resolveVerificationPhotoUrl('w', { exists: present, sign: async () => 'x' })).rejects.toThrow(/user folder/);
   });
 });
 
