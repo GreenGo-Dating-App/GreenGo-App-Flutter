@@ -515,16 +515,17 @@ formule (section 11.7). L'organisateur est responsable :
 
 11.2 Événements gratuits et payants
 a) La participation à un Événement gratuit est gratuite. L'organisateur
-   peut vous permettre de venir avec des accompagnants. Chaque accompagnant
-   occupe une place : la capacité compte vous et vos accompagnants.
+   peut vous permettre de venir avec des invités supplémentaires (+1).
+   Chaque invité supplémentaire occupe une place : la capacité compte vous et
+   vos invités.
 b) Seuls les Comptes professionnels actifs (section 13) peuvent vendre des
    billets pour leurs Événements. Le contrat de billetterie est conclu entre
    vous et l'organisateur : l'organisateur est le vendeur, fixe le prix ainsi
    que la politique d'annulation et de remboursement, et est responsable de
    l'Événement, de l'émission de toute facture ou de tout reçu et du paiement
    de toute taxe sur le billet. Vous pouvez acheter jusqu'à 4 billets par
-   Événement au total. Les Événements payants n'ont pas d'accompagnants :
-   chaque personne a besoin d'un billet.
+   Événement au total. Les Événements payants n'ont pas d'invités
+   supplémentaires (+1) : chaque personne a besoin d'un billet.
 c) Les billets payants se paient uniquement via le paiement intégré à
    l'application, sur le propre compte Stripe ou Mercado Pago de
    l'organisateur connecté à GreenGo. Il n'existe ni lien de paiement ni
@@ -1466,14 +1467,14 @@ Vérification du téléphone et informations d'identité :
   toujours en attente, et les informations examinées sont conservées sous
   forme chiffrée uniquement pour vous identifier lorsque la loi l'exige.
 Précisions pour correspondre au fonctionnement de l'application :
-- Sections 11.2 et 11.8 : accompagnants pour les Événements gratuits
-  (chacun occupe une place) ; jusqu'à 4 billets par Événement, y compris
-  pour les visiteurs sans compte ; pas d'accompagnants aux Événements
-  payants ; le prénom et le nom de chaque titulaire de billet lorsque
+- Sections 11.2 et 11.8 : invités supplémentaires (+1) pour les Événements
+  gratuits (chacun occupe une place) ; jusqu'à 4 billets par Événement, y
+  compris pour les visiteurs sans compte ; pas d'invités supplémentaires aux
+  Événements payants ; le prénom et le nom de chaque titulaire de billet lorsque
   l'organisateur le demande, communiqués uniquement à l'organisateur ; les
   phases de prix ne peuvent pas contenir plus de billets que la capacité de
-  l'Événement ; les visiteurs peuvent aussi réserver des Événements
-  proposant plusieurs types de billets.
+  l'Événement ; les visiteurs peuvent aussi réserver des Événements proposant
+  plusieurs types de billets.
 - Section 13.1 : vous seul voyez qui suit votre entreprise et combien
   d'abonnés elle a.
 - Sections 5.1 g, 14.1, 14.2 et 14.4 : les assistants IA du chat sont la

@@ -493,8 +493,8 @@ Veranstalter ist dafür verantwortlich:
 
 11.2 Kostenlose und kostenpflichtige Events
 a) Die Teilnahme an einem kostenlosen Event ist kostenlos. Der Veranstalter
-   kann dir erlauben, Begleitpersonen mitzubringen. Jede Begleitperson belegt
-   einen Platz: Die Kapazität zählt dich und deine Begleitpersonen.
+   kann dir erlauben, zusätzliche Gäste (+1) mitzubringen. Jeder zusätzliche
+   Gast belegt einen Platz: Die Kapazität zählt dich und deine Gäste.
 b) Nur aktive Business-Konten (Abschnitt 13) können Tickets für ihre Events
    verkaufen. Der Ticketvertrag kommt zwischen dir und dem Veranstalter
    zustande: Der Veranstalter ist der Verkäufer, legt den Preis sowie die
@@ -502,7 +502,7 @@ b) Nur aktive Business-Konten (Abschnitt 13) können Tickets für ihre Events
    für die Ausstellung etwaiger Rechnungen oder Belege und die Zahlung
    etwaiger Steuern auf das Ticket verantwortlich. Du kannst insgesamt bis zu
    4 Tickets pro Event kaufen. Bei kostenpflichtigen Events gibt es keine
-   Begleitpersonen: Jede Person braucht ein Ticket.
+   zusätzlichen Gäste (+1): Jede Person braucht ein Ticket.
 c) Kostenpflichtige Tickets werden nur über den Bezahlvorgang in der App
    bezahlt, auf das eigene, mit GreenGo verbundene Stripe- oder
    Mercado-Pago-Konto des Veranstalters. Für neue Bestellungen gibt es keine
@@ -1430,13 +1430,13 @@ Telefonverifizierung und Identitätsangaben:
   gelöscht, und die geprüften Angaben werden verschlüsselt aufbewahrt, nur um
   dich zu identifizieren, wenn das Gesetz es verlangt.
 Klarstellungen, damit die Bedingungen der Funktionsweise der App entsprechen:
-- Abschnitte 11.2 und 11.8: Begleitpersonen bei kostenlosen Events (jede
-  belegt einen Platz); bis zu 4 Tickets pro Event, auch für Besucher ohne
-  Konto; keine Begleitpersonen bei kostenpflichtigen Events; Vorname und
-  Nachname jedes Ticketinhabers, wenn der Veranstalter danach fragt, nur an
-  den Veranstalter weitergegeben; Preisphasen können nicht mehr Tickets
-  umfassen als die Kapazität des Events; Besucher können auch Events mit
-  mehreren Ticketarten buchen.
+- Abschnitte 11.2 und 11.8: zusätzliche Gäste (+1) bei kostenlosen Events (jeder
+  belegt einen Platz); bis zu 4 Tickets pro Event, auch für Besucher ohne Konto;
+  keine zusätzlichen Gäste bei kostenpflichtigen Events; Vorname und Nachname
+  jedes Ticketinhabers, wenn der Veranstalter danach fragt, nur an den
+  Veranstalter weitergegeben; Preisphasen können nicht mehr Tickets umfassen als
+  die Kapazität des Events; Besucher können auch Events mit mehreren Ticketarten
+  buchen.
 - Abschnitt 13.1: Nur du siehst, wer deinem Unternehmen folgt und wie viele
   Follower es hat.
 - Abschnitte 5.1 g, 14.1, 14.2 und 14.4: Die KI-Helfer im Chat sind

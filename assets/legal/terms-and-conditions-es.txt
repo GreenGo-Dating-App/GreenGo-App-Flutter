@@ -477,15 +477,15 @@ depende de tu plan (sección 11.7). El organizador es responsable de:
 
 11.2 Eventos gratuitos y de pago
 a) Unirse a un Evento gratuito es gratis. El organizador puede permitirte
-   llevar acompañantes (invitados). Cada acompañante ocupa una plaza: el
-   aforo te cuenta a ti y a tus invitados.
+   llevar invitados adicionales (+1). Cada invitado adicional ocupa una
+   plaza: el aforo te cuenta a ti y a tus invitados.
 b) Solo las Cuentas de empresa activas (sección 13) pueden vender entradas
    para sus Eventos. El contrato de la entrada se celebra entre tú y el
    organizador: el organizador es el vendedor, fija el precio y la política
    de cancelación y reembolso, y es responsable del Evento, de emitir
    cualquier factura o recibo y de pagar los impuestos sobre la entrada.
    Puedes comprar hasta 4 entradas por Evento en total. Los Eventos de pago
-   no admiten acompañantes: cada persona necesita una entrada.
+   no admiten invitados adicionales (+1): cada persona necesita una entrada.
 c) Las entradas de pago se pagan solo a través del pago en la app, en la
    propia cuenta de Stripe o de Mercado Pago del organizador conectada a
    GreenGo. No hay enlaces de pago ni otros métodos de pago para los nuevos
@@ -1388,13 +1388,13 @@ Verificación del teléfono y datos de identidad:
   días si sigue pendiente, y los datos revisados se conservan cifrados solo
   para identificarte cuando la ley lo exija.
 Aclaraciones para ajustarse al funcionamiento de la app:
-- Secciones 11.2 y 11.8: acompañantes en los Eventos gratuitos (cada uno
-  ocupa una plaza); hasta 4 entradas por Evento, también para los
-  visitantes sin cuenta; sin acompañantes en los Eventos de pago; el nombre
-  y los apellidos de cada titular de entrada cuando el organizador los
-  pide, compartidos solo con el organizador; las fases de precio no pueden
-  tener más entradas que el aforo del Evento; los visitantes también pueden
-  reservar Eventos con varios tipos de entrada.
+- Secciones 11.2 y 11.8: invitados adicionales (+1) en los Eventos gratuitos
+  (cada uno ocupa una plaza); hasta 4 entradas por Evento, también para los
+  visitantes sin cuenta; sin invitados adicionales en los Eventos de pago; el
+  nombre y los apellidos de cada titular de entrada cuando el organizador los
+  pide, compartidos solo con el organizador; las fases de precio no pueden tener
+  más entradas que el aforo del Evento; los visitantes también pueden reservar
+  Eventos con varios tipos de entrada.
 - Sección 13.1: solo tú ves quién sigue tu empresa y cuántos seguidores
   tiene.
 - Secciones 5.1 g, 14.1, 14.2 y 14.4: los asistentes de IA en el chat son la
