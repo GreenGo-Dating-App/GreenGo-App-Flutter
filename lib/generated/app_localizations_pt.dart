@@ -26153,6 +26153,430 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get tpErrPricePhasesInvalid =>
       'A venda está em pausa até o organizador corrigir as fases de preço.';
+
+  @override
+  String promoStoreFirstYear(String percent, String launch, String regular) {
+    return '$percent% de desconto no primeiro ano para novos subscritores: $launch, depois $regular/ano.';
+  }
+
+  @override
+  String promoStoreFirst3Months(String percent, String launch, String regular) {
+    return '$percent% de desconto nos primeiros 3 meses para novos subscritores: $launch/mês, depois $regular/mês.';
+  }
+
+  @override
+  String promoStoreFirstYearGeneric(String percent, String regular) {
+    return '$percent% de desconto no primeiro ano para novos subscritores, depois $regular/ano.';
+  }
+
+  @override
+  String promoStoreFirst3MonthsGeneric(String percent, String regular) {
+    return '$percent% de desconto nos primeiros 3 meses para novos subscritores, depois $regular/mês.';
+  }
+
+  @override
+  String get promoRenewsAppStore =>
+      'Renova automaticamente; cancela quando quiseres nas definições da App Store.';
+
+  @override
+  String get promoRenewsGooglePlay =>
+      'Renova automaticamente; cancela quando quiseres nas subscrições da Google Play.';
+
+  @override
+  String get purchasesWithdrawalStoreHelpIos =>
+      'As compras feitas na app para iPhone foram vendidas pela Apple. Peça à Apple o reembolso ou a livre resolução:';
+
+  @override
+  String get manageSubscriptionStoreHelpIos =>
+      'As subscrições compradas na app para iPhone são geridas pela Apple:';
+
+  @override
+  String get baseIncludedInPlan => 'Incluído no teu plano';
+
+  @override
+  String get eulaShort => 'EULA';
+
+  @override
+  String get eulaTitle => 'Contrato de Licença de Utilizador Final';
+
+  @override
+  String get eulaRowSubtitle => 'A licença para usar a app GreenGo';
+
+  @override
+  String get legalTermsRowSubtitle => 'As regras para usar o GreenGo';
+
+  @override
+  String get legalPrivacyRowSubtitle => 'Como tratamos os teus dados';
+
+  @override
+  String get aiConsentTranslateReceived =>
+      'As mensagens que recebes podem ser traduzidas quando tocas em Traduzir; o texto é enviado para o serviço de tradução da Google.';
+
+  @override
+  String get deleteAccountConfirmationIos =>
+      'Eliminar a tua conta? Não é possível anular.\n\n• A tua conta e o teu perfil são eliminados. Alguns registos são conservados quando a lei o exige (pagamentos e faturas, denúncias de segurança); consulta a Política de Privacidade.\n• As moedas que te restarem perdem-se.\n• Uma subscrição comprada na web é cancelada.\n• Uma subscrição comprada na App Store NÃO é cancelada ao eliminar a conta: cancela-a na loja, ou a loja continua a cobrar.';
+
+  @override
+  String get profileDeleteAccountWarningIos =>
+      'É definitivo. A tua conta e o teu perfil são eliminados (alguns registos são conservados conforme a lei exige; consulta a Política de Privacidade), as moedas restantes perdem-se e a subscrição web é cancelada. Cancela qualquer subscrição da App Store na loja. Introduz a tua palavra-passe para confirmar.';
+
+  @override
+  String get promoRenewsWeb =>
+      'Renova automaticamente; cancela quando quiseres no portal de faturação.';
+
+  @override
+  String userFollowCardFollowersLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Seguidores',
+      one: 'Seguidor',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String userFollowNamesTwo(String first, String second) {
+    return '$first e $second';
+  }
+
+  @override
+  String userFollowNamesTwoMore(
+      int count, String first, String second, String formatted) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$first, $second e mais $formatted',
+      one: '$first, $second e mais 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String userFollowNamesOneMore(int count, String first, String formatted) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$first e mais $formatted',
+      one: '$first e mais 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String userFollowNamesPeople(int count, String formatted) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$formatted pessoas',
+      one: '1 pessoa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String userFollowTabFollowersCount(String formatted) {
+    return 'Seguidores $formatted';
+  }
+
+  @override
+  String userFollowTabFollowingCount(String formatted) {
+    return 'A seguir $formatted';
+  }
+
+  @override
+  String get userFollowSearchHint => 'Pesquisar por nome';
+
+  @override
+  String userFollowSearchNoResults(String query) {
+    return 'Ninguém corresponde a “$query”';
+  }
+
+  @override
+  String get userFollowFollowsYou => 'Segue-te';
+
+  @override
+  String get userFollowSearchClear => 'Limpar pesquisa';
+
+  @override
+  String get businessContactPhoneLabel => 'Número de contacto da empresa';
+
+  @override
+  String get businessContactPhoneHelper =>
+      'Opcional. Qualquer número para o qual os clientes possam ligar, incluindo fixo. Não é verificado por SMS e não é o número verificado da tua conta, que nunca é mostrado.';
+
+  @override
+  String get businessContactPhoneHint => 'Número de telefone';
+
+  @override
+  String get businessContactPhoneShowOnStorefront => 'Mostrar na minha montra';
+
+  @override
+  String get businessContactPhoneShowHint =>
+      'Desativado, só tu vês este número.';
+
+  @override
+  String get businessContactPhoneSave => 'Guardar número';
+
+  @override
+  String get businessContactPhoneSaved => 'Número de contacto guardado';
+
+  @override
+  String get businessContactPhoneSaveError =>
+      'Não foi possível guardar o número de contacto. Tenta novamente.';
+
+  @override
+  String get businessContactPhoneInvalid =>
+      'Introduz um número de telefone válido';
+
+  @override
+  String get businessContactPhoneStorefrontTitle => 'Número de contacto';
+
+  @override
+  String get businessContactPhoneCall => 'Ligar';
+
+  @override
+  String get identityDetailsTitle => 'Dados do documento (opcional)';
+
+  @override
+  String get identityDetailsIntro =>
+      'Podes escrever os dados impressos no teu documento. Um revisor confere-os com a fotografia. São guardados encriptados e usados apenas a pedido de um tribunal ou da polícia. A fotografia é apagada após a revisão.';
+
+  @override
+  String get identityDetailsAddButton =>
+      'Adicionar dados do documento (opcional)';
+
+  @override
+  String get identityFirstNameLabel => 'Nome(s) próprio(s)';
+
+  @override
+  String get identitySurnameLabel => 'Apelido(s)';
+
+  @override
+  String get identityDobLabel => 'Data de nascimento';
+
+  @override
+  String get identityDocTypeLabel => 'Tipo de documento';
+
+  @override
+  String get identityDocTypePassport => 'Passaporte';
+
+  @override
+  String get identityDocTypeIdCard => 'Cartão de cidadão / BI';
+
+  @override
+  String get identityDocTypeDrivingLicence => 'Carta de condução';
+
+  @override
+  String get identityDocTypeResidencePermit => 'Autorização de residência';
+
+  @override
+  String get identityDocTypeOther => 'Outro documento oficial';
+
+  @override
+  String get identityIssuingCountryLabel => 'País emissor';
+
+  @override
+  String get identityDocNumberLabel => 'Número do documento';
+
+  @override
+  String get identityFieldRequired => 'Obrigatório';
+
+  @override
+  String get identityDocNumberInvalid => 'Usa de 3 a 40 letras ou dígitos';
+
+  @override
+  String get identitySubmitButton => 'Guardar dados';
+
+  @override
+  String get identitySavedMessage => 'Dados do documento guardados';
+
+  @override
+  String get identitySaveError =>
+      'Não foi possível guardar os dados. Tenta novamente.';
+
+  @override
+  String get identityReviewTitle => 'Dados do documento escritos';
+
+  @override
+  String get identityReviewHint =>
+      'Confere-os com a fotografia e corrige-os antes de aprovar. Aprovar guarda-os encriptados.';
+
+  @override
+  String get identityReviewNone => 'Não foram fornecidos dados do documento.';
+
+  @override
+  String get identityReviewConfirmButton => 'Usar estes dados';
+
+  @override
+  String get phoneVerifyTitle => 'Verifique o seu telemóvel';
+
+  @override
+  String get phoneVerifyRequiredBody =>
+      'Todas as contas GreenGo precisam de um número de telemóvel verificado. Enviamos-lhe um código por SMS. O seu número é privado e nunca aparece no seu perfil.';
+
+  @override
+  String get phoneVerifyGateBody =>
+      'Verifique o seu número de telemóvel para participar em eventos, reservar experiências, comprar bilhetes, organizar ou usar as ferramentas de empresa. Fica privado.';
+
+  @override
+  String get phoneVerifyCountryLabel => 'País';
+
+  @override
+  String get phoneVerifyNumberLabel => 'Número de telemóvel';
+
+  @override
+  String get phoneVerifySendCode => 'Enviar código';
+
+  @override
+  String get phoneVerifyCodeLabel => 'Código de 6 dígitos';
+
+  @override
+  String get phoneVerifyConfirm => 'Verificar';
+
+  @override
+  String get phoneVerifyResend => 'Reenviar código';
+
+  @override
+  String phoneVerifyResendIn(int seconds) {
+    return 'Reenviar código em $seconds s';
+  }
+
+  @override
+  String phoneVerifyCodeSentTo(String phone) {
+    return 'Enviámos um código para $phone';
+  }
+
+  @override
+  String get phoneVerifyChangeNumber => 'Alterar número';
+
+  @override
+  String get phoneVerifySuccess => 'Número de telemóvel verificado';
+
+  @override
+  String phoneVerifyCountryNotListed(String email) {
+    return 'O seu país não está na lista? A verificação por telemóvel ainda não está disponível aí. Contacte $email.';
+  }
+
+  @override
+  String phoneVerifyUnsupportedCountry(String email) {
+    return 'A verificação por telemóvel ainda não está disponível no seu país. Contacte $email.';
+  }
+
+  @override
+  String get phoneVerifyInvalidNumber =>
+      'Introduza um número de telemóvel válido.';
+
+  @override
+  String get phoneVerifyAlreadyUsed =>
+      'Este número já é usado por outra conta.';
+
+  @override
+  String phoneVerifyBlocked(String email) {
+    return 'Este número não pode ser usado no GreenGo. Contacte $email.';
+  }
+
+  @override
+  String get phoneVerifyTooManyAttempts =>
+      'Demasiadas tentativas. Aguarde alguns minutos e tente novamente.';
+
+  @override
+  String get phoneVerifyInvalidCode =>
+      'O código não está correto. Verifique o SMS e tente novamente.';
+
+  @override
+  String get phoneVerifyCodeExpired => 'Este código expirou. Peça um novo.';
+
+  @override
+  String get phoneVerifyGenericError =>
+      'Não foi possível verificar o seu número. Tente novamente.';
+
+  @override
+  String get phoneVerifySmsNotice =>
+      'Podem aplicar-se as tarifas normais de SMS.';
+
+  @override
+  String get phoneVerifyBannerTitle => 'Adicione o seu número de telemóvel';
+
+  @override
+  String get phoneVerifyBannerBody =>
+      'Verifique o seu número de telemóvel para participar em eventos, reservar experiências e organizar. Fica privado.';
+
+  @override
+  String get phoneVerifyBannerAction => 'Verificar agora';
+
+  @override
+  String get phoneVerifyDismiss => 'Agora não';
+
+  @override
+  String get phoneVerifyRequiredToContinue =>
+      'Verifique o seu número de telemóvel para continuar.';
+
+  @override
+  String get phoneVerifyOnboardingOptionalId =>
+      'Documento de identificação (opcional)';
+
+  @override
+  String get phoneVerifyOnboardingOptionalIdBody =>
+      'Opcionalmente, adicione uma foto sua a segurar o documento para pedir o selo Verificado. A foto é apagada após a revisão.';
+
+  @override
+  String get phoneVerifyAccountPhone => 'Telemóvel verificado da conta';
+
+  @override
+  String get phoneVerifyAccountPhoneNeeded =>
+      'Verifique primeiro o número de telemóvel da sua conta. É o único requisito de identidade para uma conta de empresa.';
+
+  @override
+  String get phoneVerifyOwnerDocumentOptional =>
+      'Documento de identificação do titular (opcional)';
+
+  @override
+  String get phoneVerifyBannerTitleOptional =>
+      'Adicione o seu número de telemóvel (opcional)';
+
+  @override
+  String get phoneVerifyBannerBodyOptional =>
+      'Ajuda a manter a sua conta segura. O seu número fica privado.';
+
+  @override
+  String get listingChatMessageOrganizer => 'Enviar mensagem ao organizador';
+
+  @override
+  String get listingChatMessageHost => 'Enviar mensagem ao anfitrião';
+
+  @override
+  String listingChatAbout(String title) {
+    return 'Sobre: $title';
+  }
+
+  @override
+  String listingChatAboutDated(String title, String date) {
+    return 'Sobre: $title · $date';
+  }
+
+  @override
+  String get listingChatTicketHolder => 'Tem bilhete';
+
+  @override
+  String get listingChatBooked => 'Reservado';
+
+  @override
+  String get businessLeadMessage => 'Mensagem';
+
+  @override
+  String get emailAskOrganizer => 'Perguntar ao organizador';
+
+  @override
+  String get emailMessageHost => 'Enviar mensagem ao anfitrião';
+
+  @override
+  String get emailGuestChatInviteOrganizer =>
+      'Cria uma conta gratuita para enviar mensagem ao organizador.';
+
+  @override
+  String get emailGuestChatInviteHost =>
+      'Cria uma conta gratuita para enviar mensagem ao anfitrião.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -52311,4 +52735,428 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get tpErrPricePhasesInvalid =>
       'A venda está pausada até o organizador corrigir os lotes.';
+
+  @override
+  String promoStoreFirstYear(String percent, String launch, String regular) {
+    return '$percent% de desconto no primeiro ano para novos assinantes: $launch, depois $regular/ano.';
+  }
+
+  @override
+  String promoStoreFirst3Months(String percent, String launch, String regular) {
+    return '$percent% de desconto nos primeiros 3 meses para novos assinantes: $launch/mês, depois $regular/mês.';
+  }
+
+  @override
+  String promoStoreFirstYearGeneric(String percent, String regular) {
+    return '$percent% de desconto no primeiro ano para novos assinantes, depois $regular/ano.';
+  }
+
+  @override
+  String promoStoreFirst3MonthsGeneric(String percent, String regular) {
+    return '$percent% de desconto nos primeiros 3 meses para novos assinantes, depois $regular/mês.';
+  }
+
+  @override
+  String get promoRenewsAppStore =>
+      'Renova automaticamente; cancele quando quiser nos ajustes da App Store.';
+
+  @override
+  String get promoRenewsGooglePlay =>
+      'Renova automaticamente; cancele quando quiser nas assinaturas do Google Play.';
+
+  @override
+  String get purchasesWithdrawalStoreHelpIos =>
+      'Compras feitas no app para iPhone foram vendidas pela Apple. Peça à Apple o reembolso ou o arrependimento:';
+
+  @override
+  String get manageSubscriptionStoreHelpIos =>
+      'As assinaturas compradas no app para iPhone são gerenciadas pela Apple:';
+
+  @override
+  String get baseIncludedInPlan => 'Incluído no seu plano';
+
+  @override
+  String get eulaShort => 'EULA';
+
+  @override
+  String get eulaTitle => 'Contrato de Licença de Usuário Final';
+
+  @override
+  String get eulaRowSubtitle => 'A licença para usar o app GreenGo';
+
+  @override
+  String get legalTermsRowSubtitle => 'As regras para usar o GreenGo';
+
+  @override
+  String get legalPrivacyRowSubtitle => 'Como tratamos seus dados';
+
+  @override
+  String get aiConsentTranslateReceived =>
+      'As mensagens que você recebe podem ser traduzidas quando você toca em Traduzir; o texto é enviado ao serviço de tradução do Google.';
+
+  @override
+  String get deleteAccountConfirmationIos =>
+      'Excluir sua conta? Não dá para desfazer.\n\n• Sua conta e seu perfil são excluídos. Alguns registros são mantidos quando a lei exige (pagamentos e notas fiscais, denúncias de segurança); veja a Política de Privacidade.\n• As moedas que sobrarem são perdidas.\n• Uma assinatura comprada na web é cancelada.\n• Uma assinatura comprada na App Store NÃO é cancelada ao excluir a conta: cancele na loja, senão a loja continua cobrando.';
+
+  @override
+  String get profileDeleteAccountWarningIos =>
+      'É definitivo. Sua conta e seu perfil são excluídos (alguns registros são mantidos conforme a lei exige; veja a Política de Privacidade), as moedas restantes são perdidas e a assinatura web é cancelada. Cancele qualquer assinatura da App Store na loja. Digite sua senha para confirmar.';
+
+  @override
+  String get promoRenewsWeb =>
+      'Renova automaticamente; cancele quando quiser no portal de cobrança.';
+
+  @override
+  String userFollowCardFollowersLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Seguidores',
+      one: 'Seguidor',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String userFollowNamesTwo(String first, String second) {
+    return '$first e $second';
+  }
+
+  @override
+  String userFollowNamesTwoMore(
+      int count, String first, String second, String formatted) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$first, $second e mais $formatted',
+      one: '$first, $second e mais 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String userFollowNamesOneMore(int count, String first, String formatted) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$first e mais $formatted',
+      one: '$first e mais 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String userFollowNamesPeople(int count, String formatted) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$formatted pessoas',
+      one: '1 pessoa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String userFollowTabFollowersCount(String formatted) {
+    return 'Seguidores $formatted';
+  }
+
+  @override
+  String userFollowTabFollowingCount(String formatted) {
+    return 'Seguindo $formatted';
+  }
+
+  @override
+  String get userFollowSearchHint => 'Buscar por nome';
+
+  @override
+  String userFollowSearchNoResults(String query) {
+    return 'Ninguém corresponde a “$query”';
+  }
+
+  @override
+  String get userFollowFollowsYou => 'Segue você';
+
+  @override
+  String get userFollowSearchClear => 'Limpar busca';
+
+  @override
+  String get businessContactPhoneLabel => 'Número de contato da empresa';
+
+  @override
+  String get businessContactPhoneHelper =>
+      'Opcional. Qualquer número para o qual os clientes possam ligar, inclusive fixo. Não é verificado por SMS e não é o telefone verificado da sua conta, que nunca é exibido.';
+
+  @override
+  String get businessContactPhoneHint => 'Número de telefone';
+
+  @override
+  String get businessContactPhoneShowOnStorefront => 'Mostrar na minha vitrine';
+
+  @override
+  String get businessContactPhoneShowHint =>
+      'Desativado, só você vê este número.';
+
+  @override
+  String get businessContactPhoneSave => 'Salvar número';
+
+  @override
+  String get businessContactPhoneSaved => 'Número de contato salvo';
+
+  @override
+  String get businessContactPhoneSaveError =>
+      'Não foi possível salvar o número de contato. Tente novamente.';
+
+  @override
+  String get businessContactPhoneInvalid =>
+      'Digite um número de telefone válido';
+
+  @override
+  String get businessContactPhoneStorefrontTitle => 'Número de contato';
+
+  @override
+  String get businessContactPhoneCall => 'Ligar';
+
+  @override
+  String get identityDetailsTitle => 'Dados do documento (opcional)';
+
+  @override
+  String get identityDetailsIntro =>
+      'Você pode digitar os dados impressos no seu documento. Um revisor confere com a foto. Eles são guardados criptografados e usados somente a pedido de um tribunal ou da polícia. A foto é apagada após a revisão.';
+
+  @override
+  String get identityDetailsAddButton =>
+      'Adicionar dados do documento (opcional)';
+
+  @override
+  String get identityFirstNameLabel => 'Nome(s)';
+
+  @override
+  String get identitySurnameLabel => 'Sobrenome';
+
+  @override
+  String get identityDobLabel => 'Data de nascimento';
+
+  @override
+  String get identityDocTypeLabel => 'Tipo de documento';
+
+  @override
+  String get identityDocTypePassport => 'Passaporte';
+
+  @override
+  String get identityDocTypeIdCard => 'Carteira de identidade (RG)';
+
+  @override
+  String get identityDocTypeDrivingLicence => 'Carteira de motorista (CNH)';
+
+  @override
+  String get identityDocTypeResidencePermit =>
+      'Autorização de residência (RNM)';
+
+  @override
+  String get identityDocTypeOther => 'Outro documento oficial';
+
+  @override
+  String get identityIssuingCountryLabel => 'País emissor';
+
+  @override
+  String get identityDocNumberLabel => 'Número do documento';
+
+  @override
+  String get identityFieldRequired => 'Obrigatório';
+
+  @override
+  String get identityDocNumberInvalid => 'Use de 3 a 40 letras ou dígitos';
+
+  @override
+  String get identitySubmitButton => 'Salvar dados';
+
+  @override
+  String get identitySavedMessage => 'Dados do documento salvos';
+
+  @override
+  String get identitySaveError =>
+      'Não foi possível salvar os dados. Tente novamente.';
+
+  @override
+  String get identityReviewTitle => 'Dados do documento digitados';
+
+  @override
+  String get identityReviewHint =>
+      'Confira com a foto e corrija antes de aprovar. Aprovar salva os dados criptografados.';
+
+  @override
+  String get identityReviewNone => 'Nenhum dado do documento foi informado.';
+
+  @override
+  String get identityReviewConfirmButton => 'Usar estes dados';
+
+  @override
+  String get phoneVerifyTitle => 'Verifique seu celular';
+
+  @override
+  String get phoneVerifyRequiredBody =>
+      'Toda conta GreenGo precisa de um número de celular verificado. Enviamos um código por SMS. Seu número fica privado e nunca aparece no seu perfil.';
+
+  @override
+  String get phoneVerifyGateBody =>
+      'Verifique seu número de celular para participar de eventos, reservar experiências, comprar ingressos, organizar ou usar as ferramentas de empresa. Ele fica privado.';
+
+  @override
+  String get phoneVerifyCountryLabel => 'País';
+
+  @override
+  String get phoneVerifyNumberLabel => 'Número de celular';
+
+  @override
+  String get phoneVerifySendCode => 'Enviar código';
+
+  @override
+  String get phoneVerifyCodeLabel => 'Código de 6 dígitos';
+
+  @override
+  String get phoneVerifyConfirm => 'Verificar';
+
+  @override
+  String get phoneVerifyResend => 'Reenviar código';
+
+  @override
+  String phoneVerifyResendIn(int seconds) {
+    return 'Reenviar código em ${seconds}s';
+  }
+
+  @override
+  String phoneVerifyCodeSentTo(String phone) {
+    return 'Enviamos um código para $phone';
+  }
+
+  @override
+  String get phoneVerifyChangeNumber => 'Alterar número';
+
+  @override
+  String get phoneVerifySuccess => 'Número de celular verificado';
+
+  @override
+  String phoneVerifyCountryNotListed(String email) {
+    return 'Seu país não está na lista? A verificação por celular ainda não está disponível aí. Fale com $email.';
+  }
+
+  @override
+  String phoneVerifyUnsupportedCountry(String email) {
+    return 'A verificação por celular ainda não está disponível no seu país. Fale com $email.';
+  }
+
+  @override
+  String get phoneVerifyInvalidNumber => 'Digite um número de celular válido.';
+
+  @override
+  String get phoneVerifyAlreadyUsed =>
+      'Este número já é usado por outra conta.';
+
+  @override
+  String phoneVerifyBlocked(String email) {
+    return 'Este número não pode ser usado no GreenGo. Fale com $email.';
+  }
+
+  @override
+  String get phoneVerifyTooManyAttempts =>
+      'Muitas tentativas. Aguarde alguns minutos e tente novamente.';
+
+  @override
+  String get phoneVerifyInvalidCode =>
+      'O código não está correto. Confira o SMS e tente novamente.';
+
+  @override
+  String get phoneVerifyCodeExpired => 'Este código expirou. Solicite um novo.';
+
+  @override
+  String get phoneVerifyGenericError =>
+      'Não foi possível verificar seu número. Tente novamente.';
+
+  @override
+  String get phoneVerifySmsNotice =>
+      'Podem ser cobradas as tarifas normais de SMS.';
+
+  @override
+  String get phoneVerifyBannerTitle => 'Adicione seu número de celular';
+
+  @override
+  String get phoneVerifyBannerBody =>
+      'Verifique seu número de celular para participar de eventos, reservar experiências e organizar. Ele fica privado.';
+
+  @override
+  String get phoneVerifyBannerAction => 'Verificar agora';
+
+  @override
+  String get phoneVerifyDismiss => 'Agora não';
+
+  @override
+  String get phoneVerifyRequiredToContinue =>
+      'Verifique seu número de celular para continuar.';
+
+  @override
+  String get phoneVerifyOnboardingOptionalId =>
+      'Documento de identidade (opcional)';
+
+  @override
+  String get phoneVerifyOnboardingOptionalIdBody =>
+      'Se quiser, adicione uma foto sua segurando o documento para pedir o selo Verificado. A foto é apagada após a análise.';
+
+  @override
+  String get phoneVerifyAccountPhone => 'Celular verificado da conta';
+
+  @override
+  String get phoneVerifyAccountPhoneNeeded =>
+      'Verifique primeiro o celular da sua conta. É o único requisito de identidade para uma conta de empresa.';
+
+  @override
+  String get phoneVerifyOwnerDocumentOptional =>
+      'Documento de identidade do titular (opcional)';
+
+  @override
+  String get phoneVerifyBannerTitleOptional =>
+      'Adicione seu número de celular (opcional)';
+
+  @override
+  String get phoneVerifyBannerBodyOptional =>
+      'Ajuda a manter sua conta segura. Seu número fica privado.';
+
+  @override
+  String get listingChatMessageOrganizer => 'Mandar mensagem ao organizador';
+
+  @override
+  String get listingChatMessageHost => 'Mandar mensagem ao anfitrião';
+
+  @override
+  String listingChatAbout(String title) {
+    return 'Sobre: $title';
+  }
+
+  @override
+  String listingChatAboutDated(String title, String date) {
+    return 'Sobre: $title · $date';
+  }
+
+  @override
+  String get listingChatTicketHolder => 'Tem ingresso';
+
+  @override
+  String get listingChatBooked => 'Reservado';
+
+  @override
+  String get businessLeadMessage => 'Mensagem';
+
+  @override
+  String get emailAskOrganizer => 'Perguntar ao organizador';
+
+  @override
+  String get emailMessageHost => 'Mandar mensagem ao anfitrião';
+
+  @override
+  String get emailGuestChatInviteOrganizer =>
+      'Crie uma conta grátis para mandar mensagem ao organizador.';
+
+  @override
+  String get emailGuestChatInviteHost =>
+      'Crie uma conta grátis para mandar mensagem ao anfitrião.';
 }

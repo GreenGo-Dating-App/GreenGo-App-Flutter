@@ -44390,6 +44390,661 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Ticket sales are paused while the organizer fixes the price phases.'**
   String get tpErrPricePhasesInvalid;
+
+  /// Store apps (iOS/Android): yearly plan launch offer line
+  ///
+  /// In en, this message translates to:
+  /// **'{percent}% off your first year for new subscribers: {launch}, then {regular}/year.'**
+  String promoStoreFirstYear(String percent, String launch, String regular);
+
+  /// Store apps: monthly plan launch offer line (3 months)
+  ///
+  /// In en, this message translates to:
+  /// **'{percent}% off your first 3 months for new subscribers: {launch}/month, then {regular}/month.'**
+  String promoStoreFirst3Months(String percent, String launch, String regular);
+
+  /// Store apps: yearly launch offer when the store gives no launch price
+  ///
+  /// In en, this message translates to:
+  /// **'{percent}% off your first year for new subscribers, then {regular}/year.'**
+  String promoStoreFirstYearGeneric(String percent, String regular);
+
+  /// Store apps: monthly launch offer when the store gives no launch price
+  ///
+  /// In en, this message translates to:
+  /// **'{percent}% off your first 3 months for new subscribers, then {regular}/month.'**
+  String promoStoreFirst3MonthsGeneric(String percent, String regular);
+
+  /// iOS: auto-renew line under the launch offer
+  ///
+  /// In en, this message translates to:
+  /// **'Renews automatically; cancel anytime in App Store settings.'**
+  String get promoRenewsAppStore;
+
+  /// Android: auto-renew line under the launch offer
+  ///
+  /// In en, this message translates to:
+  /// **'Renews automatically; cancel anytime in Google Play subscriptions.'**
+  String get promoRenewsGooglePlay;
+
+  /// iOS: purchases & withdrawal sheet intro, Apple only (2.3.10)
+  ///
+  /// In en, this message translates to:
+  /// **'Purchases made in the iPhone app were sold by Apple. Ask Apple for a refund or to withdraw:'**
+  String get purchasesWithdrawalStoreHelpIos;
+
+  /// iOS: manage subscription help, Apple only (2.3.10)
+  ///
+  /// In en, this message translates to:
+  /// **'Memberships bought in the iPhone app are managed by Apple:'**
+  String get manageSubscriptionStoreHelpIos;
+
+  /// Base membership card when a paid tier is active (3.1.2(b))
+  ///
+  /// In en, this message translates to:
+  /// **'Included in your plan'**
+  String get baseIncludedInPlan;
+
+  /// Short EULA link label in the subscription footer
+  ///
+  /// In en, this message translates to:
+  /// **'EULA'**
+  String get eulaShort;
+
+  /// End-User License Agreement row title
+  ///
+  /// In en, this message translates to:
+  /// **'End-User License Agreement'**
+  String get eulaTitle;
+
+  /// EULA row subtitle in Help & Support
+  ///
+  /// In en, this message translates to:
+  /// **'The license to use the GreenGo app'**
+  String get eulaRowSubtitle;
+
+  /// Terms row subtitle in Help & Support
+  ///
+  /// In en, this message translates to:
+  /// **'The rules for using GreenGo'**
+  String get legalTermsRowSubtitle;
+
+  /// Privacy Policy row subtitle in Help & Support
+  ///
+  /// In en, this message translates to:
+  /// **'How we handle your data'**
+  String get legalPrivacyRowSubtitle;
+
+  /// AI consent sheet: translation of received messages
+  ///
+  /// In en, this message translates to:
+  /// **'Messages you receive may be translated when you tap Translate; the text is sent to Google\'s translation service.'**
+  String get aiConsentTranslateReceived;
+
+  /// iOS: delete-account confirmation naming only the App Store (2.3.10)
+  ///
+  /// In en, this message translates to:
+  /// **'Delete your account? This cannot be undone.\n\n• Your account and profile are deleted. Some records are kept where the law requires it (payments and invoices, safety reports); see the Privacy Policy.\n• Any Coins left in your account are lost.\n• A membership bought on the web is cancelled.\n• A membership bought in the App Store is NOT cancelled by deleting your account: cancel it in the store, or the store keeps charging you.'**
+  String get deleteAccountConfirmationIos;
+
+  /// iOS: delete-account warning naming only the App Store (2.3.10)
+  ///
+  /// In en, this message translates to:
+  /// **'This is permanent. Your account and profile are deleted (some records are kept as the law requires; see the Privacy Policy), remaining Coins are lost and a web membership is cancelled. Cancel any App Store subscription in the App Store. Enter your password to confirm.'**
+  String get profileDeleteAccountWarningIos;
+
+  /// Web (Stripe): auto-renew line under the launch offer
+  ///
+  /// In en, this message translates to:
+  /// **'Renews automatically; cancel anytime in the billing portal.'**
+  String get promoRenewsWeb;
+
+  /// Label under the follower count on the profile follow card
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Follower} other{Followers}}'**
+  String userFollowCardFollowersLabel(int count);
+
+  /// Two recent people, e.g. "Maria and João"
+  ///
+  /// In en, this message translates to:
+  /// **'{first} and {second}'**
+  String userFollowNamesTwo(String first, String second);
+
+  /// Two names plus N more people; formatted = compact N
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{first}, {second} and 1 other} other{{first}, {second} and {formatted} others}}'**
+  String userFollowNamesTwoMore(
+      int count, String first, String second, String formatted);
+
+  /// One name plus N more people; formatted = compact N
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{first} and 1 other} other{{first} and {formatted} others}}'**
+  String userFollowNamesOneMore(int count, String first, String formatted);
+
+  /// N people when no names are known; formatted = compact N
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 person} other{{formatted} people}}'**
+  String userFollowNamesPeople(int count, String formatted);
+
+  /// Followers tab label with compact count
+  ///
+  /// In en, this message translates to:
+  /// **'Followers {formatted}'**
+  String userFollowTabFollowersCount(String formatted);
+
+  /// Following tab label with compact count
+  ///
+  /// In en, this message translates to:
+  /// **'Following {formatted}'**
+  String userFollowTabFollowingCount(String formatted);
+
+  /// Hint of the search box on the followers/following list
+  ///
+  /// In en, this message translates to:
+  /// **'Search by name'**
+  String get userFollowSearchHint;
+
+  /// Search on followers/following found nobody
+  ///
+  /// In en, this message translates to:
+  /// **'No one matches “{query}”'**
+  String userFollowSearchNoResults(String query);
+
+  /// Chip on a list row: this person follows the viewer
+  ///
+  /// In en, this message translates to:
+  /// **'Follows you'**
+  String get userFollowFollowsYou;
+
+  /// Tooltip of the clear button in the follow-list search box
+  ///
+  /// In en, this message translates to:
+  /// **'Clear search'**
+  String get userFollowSearchClear;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Business contact number'**
+  String get businessContactPhoneLabel;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Optional. Any number customers can call, landlines included. It is not verified by SMS and it is not your account\'s verified phone number, which is never shown.'**
+  String get businessContactPhoneHelper;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Phone number'**
+  String get businessContactPhoneHint;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Show on my storefront'**
+  String get businessContactPhoneShowOnStorefront;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'When off, only you can see this number.'**
+  String get businessContactPhoneShowHint;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Save number'**
+  String get businessContactPhoneSave;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Contact number saved'**
+  String get businessContactPhoneSaved;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Could not save the contact number. Please try again.'**
+  String get businessContactPhoneSaveError;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a valid phone number'**
+  String get businessContactPhoneInvalid;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Contact number'**
+  String get businessContactPhoneStorefrontTitle;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Call'**
+  String get businessContactPhoneCall;
+
+  /// Title of the optional ID-document details sheet
+  ///
+  /// In en, this message translates to:
+  /// **'Document details (optional)'**
+  String get identityDetailsTitle;
+
+  /// Explains what happens with optional ID details
+  ///
+  /// In en, this message translates to:
+  /// **'You can type the details printed on your document. A reviewer checks them against the photo. They are stored encrypted and used only if a court or the police request it. The photo is deleted after the review.'**
+  String get identityDetailsIntro;
+
+  /// Button next to an ID upload
+  ///
+  /// In en, this message translates to:
+  /// **'Add document details (optional)'**
+  String get identityDetailsAddButton;
+
+  /// Field label
+  ///
+  /// In en, this message translates to:
+  /// **'First name(s)'**
+  String get identityFirstNameLabel;
+
+  /// Field label
+  ///
+  /// In en, this message translates to:
+  /// **'Surname'**
+  String get identitySurnameLabel;
+
+  /// Field label
+  ///
+  /// In en, this message translates to:
+  /// **'Date of birth'**
+  String get identityDobLabel;
+
+  /// Field label
+  ///
+  /// In en, this message translates to:
+  /// **'Document type'**
+  String get identityDocTypeLabel;
+
+  /// Document type
+  ///
+  /// In en, this message translates to:
+  /// **'Passport'**
+  String get identityDocTypePassport;
+
+  /// Document type
+  ///
+  /// In en, this message translates to:
+  /// **'Identity card'**
+  String get identityDocTypeIdCard;
+
+  /// Document type
+  ///
+  /// In en, this message translates to:
+  /// **'Driving licence'**
+  String get identityDocTypeDrivingLicence;
+
+  /// Document type
+  ///
+  /// In en, this message translates to:
+  /// **'Residence permit'**
+  String get identityDocTypeResidencePermit;
+
+  /// Document type
+  ///
+  /// In en, this message translates to:
+  /// **'Other official document'**
+  String get identityDocTypeOther;
+
+  /// Field label
+  ///
+  /// In en, this message translates to:
+  /// **'Issuing country'**
+  String get identityIssuingCountryLabel;
+
+  /// Field label
+  ///
+  /// In en, this message translates to:
+  /// **'Document number'**
+  String get identityDocNumberLabel;
+
+  /// Validation error
+  ///
+  /// In en, this message translates to:
+  /// **'Required'**
+  String get identityFieldRequired;
+
+  /// Validation error
+  ///
+  /// In en, this message translates to:
+  /// **'Use 3 to 40 letters or digits'**
+  String get identityDocNumberInvalid;
+
+  /// Submit button
+  ///
+  /// In en, this message translates to:
+  /// **'Save details'**
+  String get identitySubmitButton;
+
+  /// Shown after saving
+  ///
+  /// In en, this message translates to:
+  /// **'Document details saved'**
+  String get identitySavedMessage;
+
+  /// Save failed
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t save the details. Please try again.'**
+  String get identitySaveError;
+
+  /// Admin review section title
+  ///
+  /// In en, this message translates to:
+  /// **'Typed document details'**
+  String get identityReviewTitle;
+
+  /// Admin review hint
+  ///
+  /// In en, this message translates to:
+  /// **'Check them against the photo and correct them before approving. Approving stores them encrypted.'**
+  String get identityReviewHint;
+
+  /// Admin review: none
+  ///
+  /// In en, this message translates to:
+  /// **'No document details were provided.'**
+  String get identityReviewNone;
+
+  /// Admin: confirm corrected details
+  ///
+  /// In en, this message translates to:
+  /// **'Use these details'**
+  String get identityReviewConfirmButton;
+
+  /// Title of the phone verification step / sheet
+  ///
+  /// In en, this message translates to:
+  /// **'Verify your phone'**
+  String get phoneVerifyTitle;
+
+  /// Why the phone is required (onboarding)
+  ///
+  /// In en, this message translates to:
+  /// **'Every GreenGo account needs a verified mobile number. We send you a code by SMS. Your number stays private and is never shown on your profile.'**
+  String get phoneVerifyRequiredBody;
+
+  /// Body of the verify-phone gate sheet
+  ///
+  /// In en, this message translates to:
+  /// **'Verify your mobile number to join events, book experiences, buy tickets, host or use business tools. It stays private.'**
+  String get phoneVerifyGateBody;
+
+  /// Country picker label
+  ///
+  /// In en, this message translates to:
+  /// **'Country'**
+  String get phoneVerifyCountryLabel;
+
+  /// Phone number field label
+  ///
+  /// In en, this message translates to:
+  /// **'Mobile number'**
+  String get phoneVerifyNumberLabel;
+
+  /// Button: send SMS code
+  ///
+  /// In en, this message translates to:
+  /// **'Send code'**
+  String get phoneVerifySendCode;
+
+  /// SMS code field label
+  ///
+  /// In en, this message translates to:
+  /// **'6-digit code'**
+  String get phoneVerifyCodeLabel;
+
+  /// Button: confirm SMS code
+  ///
+  /// In en, this message translates to:
+  /// **'Verify'**
+  String get phoneVerifyConfirm;
+
+  /// Button: resend SMS
+  ///
+  /// In en, this message translates to:
+  /// **'Resend code'**
+  String get phoneVerifyResend;
+
+  /// Resend countdown
+  ///
+  /// In en, this message translates to:
+  /// **'Resend code in {seconds}s'**
+  String phoneVerifyResendIn(int seconds);
+
+  /// Code sent confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'We sent a code to {phone}'**
+  String phoneVerifyCodeSentTo(String phone);
+
+  /// Button: go back to number entry
+  ///
+  /// In en, this message translates to:
+  /// **'Change number'**
+  String get phoneVerifyChangeNumber;
+
+  /// Success state
+  ///
+  /// In en, this message translates to:
+  /// **'Phone number verified'**
+  String get phoneVerifySuccess;
+
+  /// Note under the restricted country picker
+  ///
+  /// In en, this message translates to:
+  /// **'Country not listed? Phone verification is not yet available there. Contact {email}.'**
+  String phoneVerifyCountryNotListed(String email);
+
+  /// Unsupported country message
+  ///
+  /// In en, this message translates to:
+  /// **'Phone verification is not yet available in your country. Please contact {email}.'**
+  String phoneVerifyUnsupportedCountry(String email);
+
+  /// Invalid number error
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid mobile number.'**
+  String get phoneVerifyInvalidNumber;
+
+  /// Phone already linked to another account
+  ///
+  /// In en, this message translates to:
+  /// **'This number is already used by another account.'**
+  String get phoneVerifyAlreadyUsed;
+
+  /// Number of a banned account
+  ///
+  /// In en, this message translates to:
+  /// **'This number can\'t be used on GreenGo. Please contact {email}.'**
+  String phoneVerifyBlocked(String email);
+
+  /// Rate limited
+  ///
+  /// In en, this message translates to:
+  /// **'Too many attempts. Please wait a few minutes and try again.'**
+  String get phoneVerifyTooManyAttempts;
+
+  /// Wrong SMS code
+  ///
+  /// In en, this message translates to:
+  /// **'That code isn\'t right. Check the SMS and try again.'**
+  String get phoneVerifyInvalidCode;
+
+  /// Expired code
+  ///
+  /// In en, this message translates to:
+  /// **'This code has expired. Please request a new one.'**
+  String get phoneVerifyCodeExpired;
+
+  /// Generic failure
+  ///
+  /// In en, this message translates to:
+  /// **'We couldn\'t verify your number. Please try again.'**
+  String get phoneVerifyGenericError;
+
+  /// SMS cost notice
+  ///
+  /// In en, this message translates to:
+  /// **'Standard SMS rates may apply.'**
+  String get phoneVerifySmsNotice;
+
+  /// Own profile banner title
+  ///
+  /// In en, this message translates to:
+  /// **'Add your phone number'**
+  String get phoneVerifyBannerTitle;
+
+  /// Own profile banner body
+  ///
+  /// In en, this message translates to:
+  /// **'Verify your mobile number to join events, book experiences and host. It stays private.'**
+  String get phoneVerifyBannerBody;
+
+  /// Banner button
+  ///
+  /// In en, this message translates to:
+  /// **'Verify now'**
+  String get phoneVerifyBannerAction;
+
+  /// Dismiss button
+  ///
+  /// In en, this message translates to:
+  /// **'Not now'**
+  String get phoneVerifyDismiss;
+
+  /// Onboarding continue blocked
+  ///
+  /// In en, this message translates to:
+  /// **'Verify your phone number to continue.'**
+  String get phoneVerifyRequiredToContinue;
+
+  /// Onboarding optional ID section title
+  ///
+  /// In en, this message translates to:
+  /// **'ID document (optional)'**
+  String get phoneVerifyOnboardingOptionalId;
+
+  /// Onboarding optional ID section body
+  ///
+  /// In en, this message translates to:
+  /// **'Optionally add a photo of yourself holding your ID to request the Verified badge. The photo is deleted after review.'**
+  String get phoneVerifyOnboardingOptionalIdBody;
+
+  /// Business verification: account phone is verified
+  ///
+  /// In en, this message translates to:
+  /// **'Verified account phone'**
+  String get phoneVerifyAccountPhone;
+
+  /// Business verification: phone missing
+  ///
+  /// In en, this message translates to:
+  /// **'Verify your account phone number first. It is the only identity requirement for a business account.'**
+  String get phoneVerifyAccountPhoneNeeded;
+
+  /// Business verification: optional owner ID label
+  ///
+  /// In en, this message translates to:
+  /// **'Owner ID document (optional)'**
+  String get phoneVerifyOwnerDocumentOptional;
+
+  /// Own profile banner title for accounts created before 16 Oct 2026 (never required)
+  ///
+  /// In en, this message translates to:
+  /// **'Add your phone number (optional)'**
+  String get phoneVerifyBannerTitleOptional;
+
+  /// Own profile banner body for accounts created before 16 Oct 2026
+  ///
+  /// In en, this message translates to:
+  /// **'It helps keep your account safe. Your number stays private.'**
+  String get phoneVerifyBannerBodyOptional;
+
+  /// Button on an event / ticket screen: opens a chat with the event organizer.
+  ///
+  /// In en, this message translates to:
+  /// **'Message the organizer'**
+  String get listingChatMessageOrganizer;
+
+  /// Button on an experience / booking screen: opens a chat with the host.
+  ///
+  /// In en, this message translates to:
+  /// **'Message the host'**
+  String get listingChatMessageHost;
+
+  /// Pinned chip at the top of a chat started from a listing.
+  ///
+  /// In en, this message translates to:
+  /// **'About: {title}'**
+  String listingChatAbout(String title);
+
+  /// Pinned chip at the top of a chat started from a listing, with its date.
+  ///
+  /// In en, this message translates to:
+  /// **'About: {title} · {date}'**
+  String listingChatAboutDated(String title, String date);
+
+  /// Tag for the organizer: the other person holds a ticket for the event.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket holder'**
+  String get listingChatTicketHolder;
+
+  /// Tag for the host: the other person booked the experience.
+  ///
+  /// In en, this message translates to:
+  /// **'Booked'**
+  String get listingChatBooked;
+
+  /// Button on a Business Center customer row: opens a chat with that customer.
+  ///
+  /// In en, this message translates to:
+  /// **'Message'**
+  String get businessLeadMessage;
+
+  /// Email button (ticket email): opens the chat with the event organizer.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask the organizer'**
+  String get emailAskOrganizer;
+
+  /// Email button (booking / ticket email): opens the chat with the experience host.
+  ///
+  /// In en, this message translates to:
+  /// **'Message the host'**
+  String get emailMessageHost;
+
+  /// Email line for a guest buyer without an account, above the chat button.
+  ///
+  /// In en, this message translates to:
+  /// **'Create a free account to message the organizer.'**
+  String get emailGuestChatInviteOrganizer;
+
+  /// Email line for a guest buyer without an account, above the chat button.
+  ///
+  /// In en, this message translates to:
+  /// **'Create a free account to message the host.'**
+  String get emailGuestChatInviteHost;
 }
 
 class _AppLocalizationsDelegate
