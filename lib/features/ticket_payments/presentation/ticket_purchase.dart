@@ -5,6 +5,7 @@ import '../../../core/services/own_profile_store.dart';
 import '../../../core/utils/base_membership_gate.dart';
 import '../../../generated/app_localizations.dart';
 import '../data/ticket_payments_service.dart';
+import '../domain/ticket_rules.dart';
 import 'screens/ticket_order_screen.dart';
 import 'ticket_l10n.dart';
 
@@ -26,6 +27,7 @@ Future<void> startTicketPurchase(
   int quantity = 1,
   Map<String, int>? items,
   int? expectedTotal,
+  List<AttendeeName>? attendees,
   TicketPaymentsService? service,
 }) async {
   final l = AppLocalizations.of(context)!;
@@ -41,6 +43,7 @@ Future<void> startTicketPurchase(
       items: items,
       locale: Localizations.localeOf(context).toLanguageTag(),
       expectedTotal: expectedTotal,
+      attendees: attendees,
     );
     if (!r.isFree && r.checkoutUrl != null) {
       if (kIsWeb) {
@@ -81,6 +84,7 @@ Future<void> startTicketPurchase(
             quantity: quantity,
             items: items,
             expectedTotal: newTotal.toInt(),
+            attendees: attendees,
             service: svc);
       }
       return;

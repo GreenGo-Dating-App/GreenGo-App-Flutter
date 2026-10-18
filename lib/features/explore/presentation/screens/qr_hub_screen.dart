@@ -495,6 +495,7 @@ class _QrScanViewState extends State<QrScanView> {
       _approved(l10n, [
         if (r.ticketTypeName != null) r.ticketTypeName!.toUpperCase(),
         if (r.partySize > 1) l10n.tpGroupOf(r.partySize),
+        if (r.attendeeName != null) l10n.tpTicketHolder(r.attendeeName!),
         r.name,
       ].where((s) => s.isNotEmpty).join(' · '));
     } else {

@@ -34,6 +34,8 @@ import {
 } from '../ticket_payments/orders';
 import { toMajor } from '../ticket_payments/currency';
 import { currentPhaseIndex, phaseName, phasesLeft, readPricePhases, validatePricePhases } from '../ticket_payments/pricePhases';
+import { AttendeeName, parseAttendeeNames, requiresAttendeeNames } from '../ticket_payments/ticketRules';
+import { MAX_TICKETS_PER_BUYER } from '../ticket_payments/config';
 import { createBooking, loadConfig } from '../experience_bookings/service';
 import { getExperienceAvailability } from '../experience_bookings/availability';
 import { gt, GuestKey } from './guestI18n';
@@ -75,7 +77,11 @@ export function errorKeyFor(reason: string): GuestKey {
   switch (reason) {
     case 'sold_out': case 'ticket_type_sold_out': case 'slot_full':
       return 'guest.err.soldOut';
-    case 'ticket_limit_reached': case 'ticket_type_limit_reached': case 'already_booked':
+    case 'ticket_limit_reached':
+      return 'guest.err.ticketLimit';
+    case 'attendee_names_required':
+      return 'guest.err.attendeeNames';
+    case 'ticket_type_limit_reached': case 'already_booked':
     case 'already_has_ticket': case 'own_listing': case 'own_experience': case 'request_id_conflict':
       return 'guest.err.limit';
     case 'time_taken': case 'slot_closed': case 'slot_not_found': case 'slot_invalid': case 'invalid_start':
@@ -234,7 +240,7 @@ function priceLabel(amountMajor: number, currency: string | null, locale: AppLoc
 /** Builds the view model of the guest page (pure apart from the slot lookup). */
 async function listingView(
   kind: GuestKind, id: string, L: Loaded, locale: AppLocale, now: number,
-  extra: { error?: string | null; values?: Partial<GuestInput> } = {},
+  extra: { error?: string | null; values?: Partial<GuestInput>; attendeeValues?: AttendeeName[] } = {},
 ): Promise<ListingView> {
   const d = L.d;
   const facts: Array<[string, string]> = [];
@@ -306,6 +312,8 @@ async function listingView(
             mode: 'pay', action: `/guest/e/${encodeURIComponent(id)}`, token,
             ...(L.types.length ? { types } : { quantityMax: cap }),
             provider: providerName(d.ticketProvider),
+            // "Ask for attendee names": one name per ticket (ticket 1 = the guest).
+            ...(requiresAttendeeNames(d) ? { attendeeNames: L.types.length ? Math.min(cap, MAX_TICKETS_PER_BUYER) : cap } : {}),
           };
         }
       }
@@ -345,7 +353,7 @@ async function listingView(
   return {
     kind, id, locale, title: clip(title, 120), description, imageUrl, facts, seatsLeft,
     notice: nk ? gt(locale, nk) : null,
-    form, error: extra.error ?? null, values: extra.values,
+    form, error: extra.error ?? null, values: extra.values, attendeeValues: extra.attendeeValues,
   };
 }
 
@@ -372,7 +380,33 @@ async function formError(ctx: SubmitContext, key: GuestKey, values: Partial<Gues
   const now = guestDeps.now();
   const L = await loadListing(ctx.kind, ctx.id).catch(() => null);
   if (!L || guestViewBlock(ctx.kind, L.d, now)) return { status: 404, html: renderUnavailablePage(ctx.locale) };
-  return { status, html: renderListingPage(await listingView(ctx.kind, ctx.id, L, ctx.locale, now, { error: gt(ctx.locale, key), values })) };
+  const error = gt(ctx.locale, key, { count: MAX_TICKETS_PER_BUYER });
+  return { status, html: renderListingPage(await listingView(ctx.kind, ctx.id, L, ctx.locale, now, {
+    error, values, attendeeValues: typedAttendeeNames(ctx.body),
+  })) };
+}
+
+/** Raw names typed for tickets 2..MAX (re-shown with an error; validated by [guestAttendees]). */
+export function typedAttendeeNames(body: Record<string, unknown>): AttendeeName[] {
+  const out: AttendeeName[] = [];
+  for (let i = 2; i <= MAX_TICKETS_PER_BUYER; i++) {
+    const f = body[`att_${i}_first`];
+    const l = body[`att_${i}_last`];
+    out.push({
+      firstName: typeof f === 'string' ? f.slice(0, 60) : '',
+      lastName: typeof l === 'string' ? l.slice(0, 60) : '',
+    });
+  }
+  return out;
+}
+
+/**
+ * The attendee names of a guest order of [quantity] tickets: ticket 1 in the
+ * guest's own name, tickets 2..N from the form rows. null = a row missing.
+ */
+export function guestAttendees(body: Record<string, unknown>, input: GuestInput, quantity: number): AttendeeName[] | null {
+  const raw = [{ firstName: input.firstName, lastName: input.lastName }, ...typedAttendeeNames(body)].slice(0, quantity);
+  return parseAttendeeNames(raw, quantity);
 }
 
 /** Ticket choice of an event form: items (ticket types) or a plain quantity. */
@@ -445,10 +479,16 @@ export async function guestSubmit(ctx: SubmitContext): Promise<PageResponse> {
       }
       const choice = parseEventChoice(body);
       if (!choice) return formError(ctx, 'guest.err.quantity', values);
+      const qty = 'items' in choice ? choice.items.reduce((a, x) => a + x.qty, 0) : choice.quantity;
+      let attendees: AttendeeName[] | null = null;
+      if (requiresAttendeeNames(L.d)) {
+        attendees = guestAttendees(body, input, qty);
+        if (!attendees) return formError(ctx, 'guest.err.attendeeNames', values);
+      }
       // THE hook: the same createTicketCheckout members use (pricing, holds,
       // capacity, provider checkout, seller-paid service fee of Track 1).
       const res = await createTicketCheckout(guestKey, {
-        kind: 'event', id, platform: 'web', locale, ...choice,
+        kind: 'event', id, platform: 'web', locale, ...choice, ...(attendees ? { attendees } : {}),
       }, email, buyerFor(input.firstName, input.lastName, key, locale));
       return checkoutResponse(res, locale);
     }

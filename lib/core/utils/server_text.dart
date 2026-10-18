@@ -172,6 +172,8 @@ String? serverText(
       return l10n.csvColStatus;
     case 'csvColTicket':
       return l10n.csvColTicket;
+    case 'csvColTicketHolders':
+      return l10n.csvColTicketHolders;
     case 'csvStatusCheckedIn':
       return l10n.csvStatusCheckedIn;
     case 'csvStatusConfirmed':

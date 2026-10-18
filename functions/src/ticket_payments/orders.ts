@@ -79,6 +79,7 @@ import { effectiveTier, isBusinessActive } from '../shared/effectiveTier';
 import { assertCanParticipate } from '../shared/participation';
 import { GuestBuyer, guestDisplayName, guestRecordFields } from '../shared/guestIdentity';
 import { BILLING, billingMissing } from '../finance/billing';
+import { AttendeeName, attendeeFullName, eventTicketLimit, parseAttendeeNames, requiresAttendeeNames } from './ticketRules';
 
 const db = () => admin.firestore();
 const ts = (ms: number) => admin.firestore.Timestamp.fromMillis(ms);
@@ -118,6 +119,17 @@ export function isPaidEvent(ev: Record<string, any> | undefined | null): boolean
 
 export function inventoryRef(eventId: string) {
   return db().collection(COL.inventory).doc(`event_${eventId}`);
+}
+
+/**
+ * events/{id}/attendee_names/{buyerId}: { eventId, buyerId, names: [{ ticketId,
+ * firstName, lastName }] } for events with requireAttendeeNames. Server-only
+ * writes; read by that buyer and the organizer / co-owners only (rules), so
+ * ticket holder names never reach the public roster.
+ */
+export const ATTENDEE_NAMES = 'attendee_names';
+export function attendeeNamesRef(eventId: string, buyerId: string) {
+  return db().collection('events').doc(eventId).collection(ATTENDEE_NAMES).doc(buyerId);
 }
 
 /** Human payment reference: GG- + 6 chars without 0/O, 1/I/L, U. */
@@ -234,7 +246,11 @@ export function ticketIdsFor(orderId: string, quantity: number): string[] {
 
 /**
  * Buyer: data { kind: 'event' | 'experience', id, bookingId? (experience),
- * quantity? (event tickets), platform? 'app' | 'web', locale? }.
+ * quantity? (event tickets), platform? 'app' | 'web', locale?,
+ * attendees? [{ firstName, lastName }] (one per ticket; REQUIRED when the
+ * event has requireAttendeeNames, else ignored) }.
+ * Events: at most MAX_TICKETS_PER_BUYER (4) tickets per buyer in total
+ * (open holds + paid, ticket_holdings) -> `ticket_limit_reached`.
  * Instant -> { orderId, mode: 'instant', checkoutUrl, expiresAt, provider, amount, currency, quantity, reused }.
  * Link    -> { orderId, mode: 'link', code, amount, currency, payment, expiresAt, quantity, reused }.
  * Price, currency, title, description and image ALWAYS come from the
@@ -298,6 +314,7 @@ export async function createTicketCheckout(
     const l = lSnap.data() as Record<string, any>;
 
     let listing: Listing;
+    let attendeeNames: AttendeeName[] | null = null;
     let lines: OrderLine[] | null = null;
     // Price phases (./pricePhases.ts): the general ticket (no ticket types).
     let phases: PricePhase[] | null = null;
@@ -390,8 +407,15 @@ export async function createTicketCheckout(
         quantity: reqQty, partySize: 1, currency,
         title: String(l.title || 'Event'), startsAtMs: msOf(l.startDate),
         place: place || null, timeZone: typeof l.timeZone === 'string' ? l.timeZone : null,
-        imageUrl: publicImage(l.imageUrl), limit: perUserLimit(l), slotLabel: null,
+        // Owner rule 2026-10-18: never more than MAX_TICKETS_PER_BUYER per event.
+        imageUrl: publicImage(l.imageUrl), limit: eventTicketLimit(perUserLimit(l)), slotLabel: null,
       };
+      // Owner rule 2026-10-18: "Ask for attendee names" -> a first + last
+      // name for EVERY ticket of the order (members and guests alike).
+      if (requiresAttendeeNames(l)) {
+        attendeeNames = parseAttendeeNames(data?.attendees, reqQty);
+        if (!attendeeNames) fail('invalid-argument', 'attendee_names_required', { quantity: reqQty });
+      }
     } else {
       const b = bSnap?.data() as Record<string, any> | undefined;
       if (!b || b.experienceId !== id) fail('not-found', 'booking_not_found');
@@ -527,6 +551,7 @@ export async function createTicketCheckout(
       const sameShape = o.quantity === listing.quantity && o.provider === listing.provider
         && JSON.stringify(o.items ?? null) === JSON.stringify(lines ?? null)
         && JSON.stringify(o.phaseLines ?? null) === JSON.stringify(phaseLines ?? null)
+        && JSON.stringify(o.attendeeNames ?? null) === JSON.stringify(attendeeNames ?? null)
         && (Number(o.feeTotal) || 0) === (fee?.feeTotal ?? 0)
         // Orders priced before the fee moved to the seller (buyer paid it on top) are never reused.
         && (o.hostNet !== undefined || !(Number(o.feeTotal) > 0));
@@ -546,7 +571,7 @@ export async function createTicketCheckout(
     const owned = Math.max(0, Number(h.owned) || 0);
     if (listing.limit !== null && owned + heldNow + listing.quantity > listing.limit) {
       fail('failed-precondition', 'ticket_limit_reached', {
-        limit: listing.limit, remaining: Math.max(0, listing.limit - owned - heldNow),
+        limit: listing.limit, remaining: Math.max(0, listing.limit - owned - heldNow), kind,
       });
     }
     if (kind === 'event') {
@@ -636,6 +661,8 @@ export async function createTicketCheckout(
         : (fee && phaseLines ? fee.lines.map((x) => ({ phaseId: x.phaseId ?? null, unitFee: x.unitFee, quantity: x.quantity })) : null),
       hostNet: totalAmount - (fee?.feeTotal ?? 0),
       totalAmount, currency: listing.currency, items: lines, phaseLines,
+      // Per ticket, in ticket order (events with requireAttendeeNames only).
+      attendeeNames,
       status: isLink ? 'pending_payment' : (isFreeOrder ? 'pending' : 'creating'), expiresAt: ts(expiresAtMs), seatHeld: true,
       code, payment: payment ?? null, receiptPath: null, sentAt: null, remindAt: null,
       checkoutUrl: null, providerRef: {}, ticketId: null, ticketIds: [], title: listing.title.slice(0, 200),
@@ -865,9 +892,11 @@ export async function markOrderPaid(orderId: string, ev: PaidEvidence): Promise<
     if (o.kind === 'event') {
       const evRef = db().collection('events').doc(o.listingId);
       const attRef = evRef.collection('attendees').doc(o.buyerId);
-      const [evSnap, attSnap, invSnap, prof] = await Promise.all([
+      const names = Array.isArray(o.attendeeNames) && o.attendeeNames.length ? o.attendeeNames as AttendeeName[] : null;
+      const [evSnap, attSnap, invSnap, prof, namesSnap] = await Promise.all([
         tx.get(evRef), tx.get(attRef), tx.get(inventoryRef(o.listingId)),
         tx.get(db().collection('profiles').doc(o.buyerId)),
+        names ? tx.get(attendeeNamesRef(o.listingId, o.buyerId)) : Promise.resolve(null),
       ]);
       const e = evSnap.data() || {};
       const held = Number(invSnap.data()?.held) || 0;
@@ -909,6 +938,18 @@ export async function markOrderPaid(orderId: string, ev: PaidEvidence): Promise<
       }, { merge: true });
       // Paid events count SEATS (server-maintained; clients cannot write it).
       tx.update(evRef, { attendeeCount: going + q });
+      // Ticket holder names: organizer + buyer only (never the public roster).
+      if (names && namesSnap) {
+        const prior = (Array.isArray(namesSnap.data()?.names) ? namesSnap.data()!.names : [])
+          .filter((x: any) => !ids.includes(x?.ticketId));
+        tx.set(namesSnap.ref, {
+          eventId: o.listingId, buyerId: o.buyerId,
+          names: [...prior, ...ids.map((tid, i) => ({
+            ticketId: tid, firstName: names[i]?.firstName ?? '', lastName: names[i]?.lastName ?? '',
+          }))],
+          updatedAt: ts(t),
+        });
+      }
     } else {
       const bRef = db().collection('bookings').doc(o.bookingId);
       const b = (await tx.get(bRef)).data();
@@ -957,9 +998,11 @@ export async function markOrderPaid(orderId: string, ev: PaidEvidence): Promise<
     // Price phase per seat (phaseLines in order); null without phases.
     const phaseOf: Array<PhaseLine | null> = [];
     for (const x of (Array.isArray(o.phaseLines) ? o.phaseLines : []) as PhaseLine[]) for (let k = 0; k < x.quantity; k++) phaseOf.push(x);
+    const nameOf: Array<AttendeeName | null> = Array.isArray(o.attendeeNames) ? o.attendeeNames : [];
     ids.forEach((tid, i) => {
       const tt = typeOf[i] ?? null;
       const ph = phaseOf[i] ?? null;
+      const an = nameOf[i] ?? null;
       tx.set(db().collection(COL.tickets).doc(tid), {
         ticketTypeId: tt?.typeId ?? null, ticketTypeName: tt?.name ?? null,
         pricePhaseId: ph?.phaseId ?? null, pricePhaseNameKey: ph?.nameKey ?? null,
@@ -971,6 +1014,8 @@ export async function markOrderPaid(orderId: string, ev: PaidEvidence): Promise<
         title: o.title ?? null, startsAt: o.startsAt ?? null,
         unitAmount: tt ? tt.unitAmount : (ph ? ph.unitAmount : o.unitAmount), priceRule: o.priceRule ?? 'base', currency: o.currency, provider: o.provider, code: o.code ?? null,
         issuedAt: ts(t), checkedInAt: null,
+        // "Ask for attendee names": the holder of THIS ticket (null otherwise).
+        attendeeName: attendeeFullName(an), attendeeFirstName: an?.firstName ?? null, attendeeLastName: an?.lastName ?? null,
       });
     });
     return { r: 'paid' as const, o };
@@ -1139,7 +1184,10 @@ export async function markOrderReversed(orderId: string, to: 'refunded' | 'dispu
     if (o.kind === 'event' && wasPaid) {
       const evRef = db().collection('events').doc(o.listingId);
       const attRef = evRef.collection('attendees').doc(o.buyerId);
-      const [evSnap, attSnap] = await Promise.all([tx.get(evRef), tx.get(attRef)]);
+      const hasNames = Array.isArray(o.attendeeNames) && o.attendeeNames.length > 0;
+      const [evSnap, attSnap, namesSnap] = await Promise.all([
+        tx.get(evRef), tx.get(attRef), hasNames ? tx.get(attendeeNamesRef(o.listingId, o.buyerId)) : Promise.resolve(null),
+      ]);
       const a = attSnap.data();
       if (a && a.status === 'going') {
         const left = Math.max(0, (Number(a.ticketCount) || q) - q);
@@ -1151,6 +1199,12 @@ export async function markOrderReversed(orderId: string, to: 'refunded' | 'dispu
       }
       const going = Math.max(0, Math.floor(Number(evSnap.data()?.attendeeCount) || 0));
       if (evSnap.exists) tx.update(evRef, { attendeeCount: Math.max(0, going - q) });
+      if (namesSnap?.exists) {
+        const left = (Array.isArray(namesSnap.data()?.names) ? namesSnap.data()!.names : [])
+          .filter((x: any) => !ids.includes(x?.ticketId));
+        if (left.length) tx.update(namesSnap.ref, { names: left, updatedAt: ts(t) });
+        else tx.delete(namesSnap.ref);
+      }
     } else if (o.kind === 'experience' && o.bookingId) {
       const bRef = db().collection('bookings').doc(o.bookingId);
       const b = (await tx.get(bRef)).data();

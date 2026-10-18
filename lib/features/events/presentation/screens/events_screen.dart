@@ -4,11 +4,13 @@ import '../../../ticket_payments/presentation/ticket_l10n.dart';
 import '../../../ticket_payments/data/ticket_payments_service.dart';
 import '../../../ticket_payments/domain/price_phases.dart';
 import '../../../ticket_payments/domain/ticket_payments.dart';
+import '../../../ticket_payments/domain/ticket_rules.dart';
 import '../../../ticket_payments/presentation/widgets/price_phases_widgets.dart';
 import '../../../ticket_payments/presentation/screens/get_paid_screen.dart';
 import '../../../ticket_payments/presentation/screens/ticket_types_screen.dart';
 import '../../../ticket_payments/presentation/widgets/buy_ticket_sheet.dart';
 import '../../../ticket_payments/presentation/widgets/ticket_payment_selector.dart';
+import '../../../ticket_payments/presentation/widgets/ticket_rules_widgets.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
@@ -3683,7 +3685,11 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   bool get _wasPaid => widget.existing != null && !widget.existing!.isFree;
   bool get _canCharge => (_paidAccess?.canSell ?? false) || _wasPaid;
   // Guests each attendee may bring (0 = guests not allowed). Feeds QR check-in.
+  // Plus-ones are for FREE events only (owner rule 2026-10-18): a paid event
+  // saves 0 and the stepper is replaced by a note.
   int _guestsAllowedPerAttendee = 0;
+  // "Ask for attendee names" (paid events): a name per ticket at checkout.
+  bool _requireNames = false;
   static const int _maxGuestsAllowed = 10;
   double? _lat;
   double? _lng;
@@ -3979,7 +3985,10 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       linkMethod: e.ticketLinkMethod,
       instructions: e.ticketPaymentInstructions,
     );
-    _maxPerUserController.text = e.maxTicketsPerUser?.toString() ?? '';
+    // At most kMaxTicketsPerBuyer per buyer (owner rule 2026-10-18); older
+    // events with no / a higher limit show the cap.
+    _maxPerUserController.text = eventTicketLimit(e).toString();
+    _requireNames = e.requireAttendeeNames;
     _pricePhases = e.pricePhases;
     _savedPhases = e.pricePhases;
     if (e.hasPricePhases) {
@@ -4606,46 +4615,24 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             ),
             if (!_isUnlimited)
               TextFormField(
+                key: const ValueKey('event-capacity'),
                 controller: _maxAttendeesController,
                 style: const TextStyle(color: AppColors.textPrimary),
                 decoration: _inputDecoration(
-                    AppLocalizations.of(context)!.eventsCapacityAllowed),
+                        AppLocalizations.of(context)!.eventsCapacityAllowed)
+                    .copyWith(errorText: _capacityBelowPhasesText()),
                 keyboardType: TextInputType.number,
+                onChanged: (_) => setState(() {}),
               ),
             const SizedBox(height: 16),
             // Guests allowed per attendee (0..N) — enables the QR ticket guest
-            // picker + counts toward the organizer's headcount.
-            Row(
-              children: [
-                Expanded(
-                  child: Text(
-                    AppLocalizations.of(context)!.eventGuestsAllowedLabel,
-                    style: const TextStyle(color: AppColors.textPrimary),
-                  ),
-                ),
-                IconButton(
-                  onPressed: _guestsAllowedPerAttendee <= 0
-                      ? null
-                      : () => setState(() => _guestsAllowedPerAttendee--),
-                  icon: const Icon(Icons.remove_circle_outline),
-                  color: AppColors.richGold,
-                ),
-                Text(
-                  '$_guestsAllowedPerAttendee',
-                  style: const TextStyle(
-                    color: AppColors.textPrimary,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                IconButton(
-                  onPressed: _guestsAllowedPerAttendee >= _maxGuestsAllowed
-                      ? null
-                      : () => setState(() => _guestsAllowedPerAttendee++),
-                  icon: const Icon(Icons.add_circle_outline),
-                  color: AppColors.richGold,
-                ),
-              ],
+            // picker; each guest takes a place. FREE events only: on a paid
+            // event every person needs their own ticket.
+            PlusOnesField(
+              isFree: _isFree,
+              value: _guestsAllowedPerAttendee,
+              max: _maxGuestsAllowed,
+              onChanged: (v) => setState(() => _guestsAllowedPerAttendee = v),
             ),
             const SizedBox(height: 16),
             if (!_canCharge) ...[
@@ -4723,13 +4710,15 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 ],
               ),
               const SizedBox(height: 12),
-              TextFormField(
-                key: const ValueKey('event-max-per-user'),
+              TicketsPerBuyerField(
                 controller: _maxPerUserController,
-                style: const TextStyle(color: AppColors.textPrimary),
-                keyboardType: TextInputType.number,
                 decoration: _inputDecoration(
                     AppLocalizations.of(context)!.tpMaxTicketsPerUser),
+                onChanged: (_) => setState(() {}),
+              ),
+              AttendeeNamesSwitch(
+                value: _requireNames,
+                onChanged: (v) => setState(() => _requireNames = v),
               ),
               const SizedBox(height: 16),
               PricePhasesEditor(
@@ -4829,11 +4818,33 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       final n = int.tryParse(_priceController.text.trim());
       if (n == null || n < 1 || n > 1000) return l.eventsPriceRange;
     }
+    if (!_isFree && _maxPerUserError() != null) return _maxPerUserError();
+    // Lowering the capacity below the tickets of the price phases.
+    final below = _capacityBelowPhasesText();
+    if (below != null) return below;
     if (!_isFree && _pricePhases.isNotEmpty) {
       final err = _phaseError();
       if (err != null) return TicketL10n.phaseError(l, err);
     }
     return null;
+  }
+
+  /// Tickets per buyer: 1..kMaxTicketsPerBuyer (empty = the cap).
+  int get _maxPerUserValue => ticketsPerBuyerValue(_maxPerUserController.text);
+
+  String? _maxPerUserError() => ticketsPerBuyerInvalid(_maxPerUserController.text)
+      ? AppLocalizations.of(context)!.tpMaxTicketsPerUserRange(kMaxTicketsPerBuyer)
+      : null;
+
+  /// "The capacity can't be lower than the N tickets in your price phases", or null.
+  String? _capacityBelowPhasesText() {
+    if (_isFree) return null;
+    final total = capacityBelowPhases(
+      capacity: int.tryParse(_maxAttendeesController.text.trim()),
+      unlimited: _isUnlimited,
+      phaseQuantities: _pricePhases.map((p) => p.quantity),
+    );
+    return total == null ? null : AppLocalizations.of(context)!.evCapacityBelowPhases(total);
   }
 
   /// maxAttendees as saved (<= 0 = unlimited).
@@ -4931,6 +4942,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         'capacity': _maxAttendeesController.text,
         'maxPerUser': _maxPerUserController.text,
         'guests': _guestsAllowedPerAttendee,
+        'requireNames': _requireNames,
         'provider': _ticket.provider?.wire,
         'linkMethod': _ticket.linkMethod,
         'pricePhases': _pricePhases.map((p) => p.toMap()).toList(),
@@ -4955,6 +4967,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       _maxAttendeesController.text = d['capacity'] as String? ?? _maxAttendeesController.text;
       _maxPerUserController.text = d['maxPerUser'] as String? ?? _maxPerUserController.text;
       _guestsAllowedPerAttendee = (d['guests'] as int?) ?? 0;
+      _requireNames = d['requireNames'] as bool? ?? false;
       _ticket = TicketPaymentChoice(
           provider: TicketProvider.fromWire(d['provider']), linkMethod: d['linkMethod'] as String?);
       _pricePhases = sortPricePhases(PricePhase.listFrom(d['pricePhases']));
@@ -5448,7 +5461,12 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
           content: Text(AppLocalizations.of(context)!.tpChooseHowToGetPaid)));
       return;
     }
-    final maxPerUser = int.tryParse(_maxPerUserController.text.trim());
+    // 1..kMaxTicketsPerBuyer (owner rule 2026-10-18; the server caps too).
+    final maxPerUser = _maxPerUserValue;
+    if (_capacityBelowPhasesText() != null) {
+      unawaited(showUserErrorMessage(context, _capacityBelowPhasesText()!));
+      return;
+    }
     if (!_isFree && _pricePhases.isNotEmpty && _phaseError() != null) {
       unawaited(showUserErrorMessage(
           context, TicketL10n.phaseError(AppLocalizations.of(context)!, _phaseError()!)));
@@ -5497,15 +5515,16 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         currencyCode: _isFree ? null : isoCurrencyFor(_currency),
         clearTicketing: _isFree,
         pricePhases: phases,
-        maxTicketsPerUser: maxPerUser == 0 ? null : maxPerUser,
-        clearMaxTicketsPerUser: maxPerUser == null || maxPerUser == 0,
+        maxTicketsPerUser: maxPerUser,
+        requireAttendeeNames: !_isFree && _requireNames,
         visibility: _visibility,
         attendeeListVisibility: _attendeeListVisibility,
         guestBookingAllowed:
             _guestsAllowed && _visibility == EventVisibility.public,
         externalLinks: _externalLinks,
         languagePairs: languagePairs,
-        guestsAllowedPerAttendee: _guestsAllowedPerAttendee,
+        // Plus-ones: free events only (paid: every person holds a ticket).
+        guestsAllowedPerAttendee: _isFree ? _guestsAllowedPerAttendee : 0,
         ticketTiers: const [],
         communityId: _selectedCommunityId,
         clearCommunityId: _selectedCommunityId == null,
@@ -5548,7 +5567,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       ticketPaymentInstructions:
           _ticket.provider == TicketProvider.link ? _ticket.instructions : null,
       currencyCode: _isFree ? null : isoCurrencyFor(_currency),
-      maxTicketsPerUser: maxPerUser == 0 ? null : maxPerUser,
+      maxTicketsPerUser: maxPerUser,
+      requireAttendeeNames: !_isFree && _requireNames,
       pricePhases: phases,
       visibility: _visibility,
       attendeeListVisibility: _attendeeListVisibility,
@@ -5559,7 +5579,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       recurrence: recurrence.isRecurring ? recurrence : null,
       ticketTiers: const [],
       languagePairs: languagePairs,
-      guestsAllowedPerAttendee: _guestsAllowedPerAttendee,
+      guestsAllowedPerAttendee: _isFree ? _guestsAllowedPerAttendee : 0,
       communityId: _selectedCommunityId,
       createdAt: DateTime.now(),
     );

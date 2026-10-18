@@ -7790,5 +7790,22 @@
   "storefrontCategoryGroupLabel": "Type d'activité",
   "storefrontCategoryGroupHint": "Choisissez un type",
   "userFollowStoresLabel": "Boutiques",
-  "userFollowEmptyStores": "Vous ne suivez encore aucune boutique"
+  "userFollowEmptyStores": "Vous ne suivez encore aucune boutique",
+  "tpAttendeeNamesSwitch": "Demander le nom des participants",
+  "tpAttendeeNamesSwitchHint": "À l’achat, l’acheteur indique le prénom et le nom de chaque détenteur de billet. Seuls vous et l’acheteur les voyez.",
+  "tpAttendeeNamesTitle": "Nom sur chaque billet",
+  "tpAttendeeNamesBuyerHint": "L’organisateur demande le prénom et le nom de chaque détenteur de billet.",
+  "tpAttendeeTicketN": "Billet {index}",
+  "tpAttendeeFirstName": "Prénom",
+  "tpAttendeeLastName": "Nom",
+  "tpAttendeeNamesRequired": "Saisissez un prénom et un nom pour chaque billet.",
+  "tpErrAttendeeNamesRequired": "L’organisateur a besoin du prénom et du nom de chaque détenteur de billet.",
+  "tpErrTicketLimit": "Vous pouvez acheter jusqu’à {count} billets pour cet événement",
+  "tpMaxTicketsPerUserRange": "De 1 à {max} billets par personne, toutes commandes confondues",
+  "tpTicketHolder": "Détenteur : {name}",
+  "tpTicketHolders": "Détenteurs : {names}",
+  "evCapacityBelowPhases": "La capacité ne peut pas être inférieure aux {count} billets de vos phases de prix. Augmentez-la ou réduisez les quantités des phases.",
+  "eventPlusOnesPaidNote": "Les événements payants n’ont pas d’accompagnants : chaque invité a besoin de son propre billet.",
+  "eventGuestsNoPlaces": "Il ne reste pas assez de places pour vos invités.",
+  "csvColTicketHolders": "Détenteurs des billets"
 }

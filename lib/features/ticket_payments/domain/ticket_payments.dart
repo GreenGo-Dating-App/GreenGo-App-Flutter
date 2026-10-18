@@ -495,6 +495,7 @@ class IssuedTicket extends Equatable {
     this.of = 1,
     this.startsAt,
     this.checkedIn = false,
+    this.attendeeName,
   });
 
   final String id;
@@ -510,6 +511,9 @@ class IssuedTicket extends Equatable {
   final int of;
   final DateTime? startsAt;
   final bool checkedIn;
+
+  /// "Ask for attendee names": the holder of this ticket ("First Last").
+  final String? attendeeName;
 
   bool get isValid => status == 'valid';
 
@@ -527,6 +531,9 @@ class IssuedTicket extends Equatable {
         of: (d['of'] as num?)?.toInt() ?? 1,
         startsAt: _date(d['startsAt']),
         checkedIn: d['checkedInAt'] != null,
+        attendeeName: (d['attendeeName'] as String?)?.trim().isEmpty ?? true
+            ? null
+            : (d['attendeeName'] as String).trim(),
       );
 
   @override

@@ -167,6 +167,7 @@ class Event extends Equatable {
     this.maxTicketsPerUser = 4,
     this.guestBookingAllowed = false,
     this.pricePhases = const [],
+    this.requireAttendeeNames = false,
   });
   final String id;
   final String organizerId;
@@ -293,11 +294,30 @@ class Event extends Equatable {
 
   bool get hasPricePhases => pricePhases.isNotEmpty;
 
+  /// Seller option (paid events): the buyer enters a first + last name for
+  /// EVERY ticket at checkout (server-enforced, `attendee_names_required`).
+  /// Names are shown to the buyer and the organizer only.
+  final bool requireAttendeeNames;
+
+  /// Paid event (mirrors firestore.rules isPaidEventData / the server's
+  /// isPaidEvent): a price, or a ticket provider set.
+  bool get isPaidEvent => !isFree || ticketProvider != null;
+
+  /// Plus-ones a member may bring on their RSVP (owner rule 2026-10-18):
+  /// none on a PAID event (every person needs a ticket; an older paid event
+  /// that still stores a value reads as 0), else the organizer's setting.
+  int get plusOnesAllowed => isPaidEvent
+      ? 0
+      : (guestsAllowedPerAttendee < 0 ? 0 : guestsAllowedPerAttendee);
+
+  /// Names per ticket asked at checkout (paid events only).
+  bool get asksAttendeeNames => requireAttendeeNames && isPaidEvent;
+
   /// Paid event that can actually be bought (a ticket provider is set).
   bool get sellsTickets => !isFree && ticketProvider != null;
 
-  /// Whether attendees are permitted to bring at least one guest.
-  bool get guestsAllowed => guestsAllowedPerAttendee > 0;
+  /// Whether attendees are permitted to bring at least one guest (plus-one).
+  bool get guestsAllowed => plusOnesAllowed > 0;
 
   /// Whether this event belongs to a recurring series.
   bool get isRecurring =>
@@ -334,14 +354,17 @@ class Event extends Equatable {
       isFeatured &&
       (featuredUntil == null || featuredUntil!.isAfter(DateTime.now()));
 
-  /// Number going. RSVPs live in the `attendees` SUBcollection, so the doc's
-  /// denormalized `attendees` array is usually empty on list cards; the
-  /// maintained `attendeeCount` counter is the reliable source. Use whichever
-  /// is larger so it's correct both on cards (counter) and on the detail screen
-  /// (full array loaded).
+  /// PLACES taken (owner rule 2026-10-18): every going attendee counts
+  /// 1 + their plus-ones (paid buyers: their tickets), so capacity 20 with one
+  /// "+1" RSVP leaves 18. RSVPs live in the `attendees` SUBcollection, so the
+  /// doc's denormalized `attendees` array is usually empty on list cards; the
+  /// maintained `attendeeCount` counter (the same sum) is the reliable source.
+  /// Use whichever is larger so it's correct both on cards (counter) and on
+  /// the detail screen (full array loaded).
   int get goingCount {
-    final fromList =
-        attendees.where((a) => a.status == RSVPStatus.going).length;
+    final fromList = attendees
+        .where((a) => a.status == RSVPStatus.going)
+        .fold<int>(0, (s, a) => s + a.headcount);
     return attendeeCount > fromList ? attendeeCount : fromList;
   }
   int get interestedCount => attendees.where((a) => a.status == RSVPStatus.interested).length;
@@ -450,6 +473,7 @@ class Event extends Equatable {
         maxTicketsPerUser,
         guestBookingAllowed,
         pricePhases,
+        requireAttendeeNames,
       ];
 
   Event copyWith({
@@ -510,6 +534,7 @@ class Event extends Equatable {
     bool clearMaxTicketsPerUser = false,
     bool? guestBookingAllowed,
     List<PricePhase>? pricePhases,
+    bool? requireAttendeeNames,
     bool clearTicketing = false,
     bool clearCommunityId = false,
     // Drops latitude/longitude/city/country (a manually typed location that
@@ -582,6 +607,9 @@ class Event extends Equatable {
           : (maxTicketsPerUser ?? this.maxTicketsPerUser),
       guestBookingAllowed: guestBookingAllowed ?? this.guestBookingAllowed,
       pricePhases: clearTicketing ? const [] : (pricePhases ?? this.pricePhases),
+      requireAttendeeNames: clearTicketing
+          ? false
+          : (requireAttendeeNames ?? this.requireAttendeeNames),
     );
   }
 }

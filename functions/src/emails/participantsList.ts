@@ -48,6 +48,8 @@ export interface ParticipantRow {
   bookingCode: string;
   ticket: string;
   status: ParticipantStatus;
+  /** "Ask for attendee names": every ticket holder of this buyer ("; "-joined). */
+  ticketHolders?: string;
 }
 
 // ─────────────────────────────────────────────────────────── CSV (pure)
@@ -71,7 +73,12 @@ export function statusLabel(locale: unknown, s: ParticipantStatus): string {
 /** UTF-8 BOM (Excel) + header + rows, CRLF line endings. */
 export function buildParticipantsCsv(locale: unknown, rows: ParticipantRow[]): string {
   const header = [t(locale, 'csvColName'), t(locale, 'csvColEmail'), t(locale, 'csvColBookingCode'), t(locale, 'csvColTicket'), t(locale, 'csvColStatus')];
-  const lines = [header, ...rows.map((r) => [r.name, r.email, r.bookingCode, r.ticket, statusLabel(locale, r.status)])]
+  // The ticket holders column only when the event asked for attendee names.
+  const holders = rows.some((r) => r.ticketHolders);
+  if (holders) header.push(t(locale, 'csvColTicketHolders'));
+  const lines = [header, ...rows.map((r) => [
+    r.name, r.email, r.bookingCode, r.ticket, statusLabel(locale, r.status), ...(holders ? [r.ticketHolders ?? ''] : []),
+  ])]
     .map((cells) => cells.map(csvCell).join(','));
   return '﻿' + lines.join('\r\n') + '\r\n';
 }
@@ -173,12 +180,15 @@ export async function eventParticipants(eventId: string): Promise<ParticipantRow
     const party = tks.length || Math.max(1, Number(d.ticketCount) || (1 + (Number(d.guestCount) || 0)));
     const typeText = [...types.entries()].filter(([n]) => n).map(([n, c]) => `${n} × ${c}`).join('; ');
     const checkedIn = d.checkedIn === true || tks.some((tk) => !!tk.checkedInAt);
+    const holders = [...tks].sort((a, b) => String(a.orderId).localeCompare(String(b.orderId)) || (Number(a.index) || 0) - (Number(b.index) || 0))
+      .map((tk) => (typeof tk.attendeeName === 'string' ? tk.attendeeName.trim() : '')).filter(Boolean);
     return {
       name: String(d.userName || '').trim(),
       email: tks.length || d.isGuest === true ? emails.get(uid) || '' : '',
       bookingCode: codes.join(' '),
       ticket: typeText ? `${typeText} (${party})` : String(party),
       status: checkedIn ? 'checked_in' : (tks.length ? 'paid' : 'confirmed'),
+      ...(holders.length ? { ticketHolders: holders.join('; ') } : {}),
     } as ParticipantRow;
   }));
 }

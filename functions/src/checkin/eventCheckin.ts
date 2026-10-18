@@ -358,6 +358,8 @@ export async function checkInPaidTicket(
     return {
       ...r, ticketId, partySize: Number(t.partySize) || 1, alreadyCheckedIn: already, guestCount: 0,
       ticketTypeId: t.ticketTypeId ?? null, ticketTypeName: t.ticketTypeName ?? null,
+      // "Ask for attendee names": the holder of THIS ticket (door staff only).
+      attendeeName: typeof t.attendeeName === 'string' ? t.attendeeName : null,
     };
   }
   if (open.eventId) fail('failed-precondition', 'wrong_event');

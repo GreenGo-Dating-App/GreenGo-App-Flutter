@@ -10,6 +10,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../domain/price_phases.dart';
 import '../domain/ticket_fees.dart';
 import '../domain/ticket_payments.dart';
+import '../domain/ticket_rules.dart';
 
 /// A callable failure with the server's reason code (`details.code`).
 class TicketPaymentException implements Exception {
@@ -173,6 +174,7 @@ class TicketPaymentsService {
     Map<String, int>? items,
     String? locale,
     int? expectedTotal,
+    List<AttendeeName>? attendees,
   }) async {
     final m = await _call('createTicketCheckout', {
       'kind': kind,
@@ -188,12 +190,37 @@ class TicketPaymentsService {
       'platform': _platform,
       if (locale != null) 'locale': locale,
       if (expectedTotal != null) 'expectedTotal': expectedTotal,
+      // "Ask for attendee names": one per ticket, in ticket order.
+      if (attendees != null && attendees.isNotEmpty)
+        'attendees': [for (final a in attendees) a.toMap()],
     });
     return TicketCheckoutResult(
       orderId: m['orderId'] as String,
       isFree: m['mode'] == 'free',
       checkoutUrl: m['checkoutUrl'] as String?,
     );
+  }
+
+  // ─────────────────────────────── attendee names (events)
+
+  /// Organizer / co-owner: the ticket holder names of [eventId] by buyer
+  /// (events/{id}/attendee_names, server-written, organizer + buyer only).
+  /// Bounded like the roster (500 buyers). Empty on error / no names.
+  Future<Map<String, List<String>>> attendeeNamesByBuyer(String eventId) async {
+    try {
+      final q = await _db.collection('events').doc(eventId).collection('attendee_names').limit(500).get();
+      return {
+        for (final d in q.docs)
+          d.id: [
+            for (final x in (d.data()['names'] as List? ?? const []))
+              if (x is Map)
+                '${x['firstName'] ?? ''} ${x['lastName'] ?? ''}'.trim(),
+          ].where((n) => n.isNotEmpty).toList(),
+      };
+    } catch (e) {
+      debugPrint('[tickets] attendee names: $e');
+      return const {};
+    }
   }
 
   // ─────────────────────────────── price phases (events)
@@ -310,7 +337,7 @@ class TicketPaymentsService {
   }
 
   static String _encode(IssuedTicket t) =>
-      [t.id, t.orderId, t.kind, t.listingId, t.qrPayload, t.typeName ?? '', '${t.partySize}', '${t.index}', '${t.of}', t.title ?? '']
+      [t.id, t.orderId, t.kind, t.listingId, t.qrPayload, t.typeName ?? '', '${t.partySize}', '${t.index}', '${t.of}', t.title ?? '', t.attendeeName ?? '']
           .map(Uri.encodeComponent)
           .join('|');
 
@@ -321,6 +348,7 @@ class TicketPaymentsService {
       id: p[0], orderId: p[1], kind: p[2], listingId: p[3], status: 'valid', qrPayload: p[4],
       typeName: p[5].isEmpty ? null : p[5], partySize: int.tryParse(p[6]) ?? 1,
       index: int.tryParse(p[7]) ?? 1, of: int.tryParse(p[8]) ?? 1, title: p[9].isEmpty ? null : p[9],
+      attendeeName: p.length > 10 && p[10].isNotEmpty ? p[10] : null,
     );
   }
 

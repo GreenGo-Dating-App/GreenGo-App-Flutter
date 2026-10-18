@@ -19,6 +19,7 @@ import '../shared/firebaseAdmin';
 import { retainIdDocumentsOnAccountDeletion } from '../safety/idDocumentRetention';
 import { enqueueFollowGraphCleanup } from '../social/followCleanup';
 import { serverDeletionRunning } from '../auth/accountDeletion';
+import { attendeeSeats } from '../ticket_payments/ticketRules';
 
 const db = admin.firestore();
 
@@ -63,11 +64,14 @@ export const onProfileDeleted = onDocumentDeleted(
         const eventRef = d.ref.parent.parent;
         const b = db.batch();
         b.delete(d.ref);
-        if (eventRef) {
+        // The event counts PLACES: 1 + guests of a going attendee, else 0.
+        const seats = attendeeSeats(d.data());
+        if (eventRef && seats > 0) {
           b.update(eventRef, {
-            attendeeCount: admin.firestore.FieldValue.increment(-1),
+            attendeeCount: admin.firestore.FieldValue.increment(-seats),
           });
         }
+        if (eventRef) b.delete(eventRef.collection('attendee_names').doc(d.id));
         await b.commit();
       }
     } catch (e) {

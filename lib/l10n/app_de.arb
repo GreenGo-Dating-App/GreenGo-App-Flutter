@@ -8364,5 +8364,22 @@
   "storefrontCategoryGroupLabel": "Art des Unternehmens",
   "storefrontCategoryGroupHint": "Art auswählen",
   "userFollowStoresLabel": "Shops",
-  "userFollowEmptyStores": "Du folgst noch keinen Shops"
+  "userFollowEmptyStores": "Du folgst noch keinen Shops",
+  "tpAttendeeNamesSwitch": "Namen der Teilnehmenden abfragen",
+  "tpAttendeeNamesSwitchHint": "Käufer geben beim Bezahlen Vor- und Nachnamen jedes Ticketinhabers ein. Nur du und der Käufer sehen sie.",
+  "tpAttendeeNamesTitle": "Name auf jedem Ticket",
+  "tpAttendeeNamesBuyerHint": "Der Veranstalter fragt nach Vor- und Nachnamen jedes Ticketinhabers.",
+  "tpAttendeeTicketN": "Ticket {index}",
+  "tpAttendeeFirstName": "Vorname",
+  "tpAttendeeLastName": "Nachname",
+  "tpAttendeeNamesRequired": "Gib für jedes Ticket einen Vor- und Nachnamen ein.",
+  "tpErrAttendeeNamesRequired": "Der Veranstalter braucht Vor- und Nachnamen jedes Ticketinhabers.",
+  "tpErrTicketLimit": "Du kannst höchstens {count} Tickets für dieses Event kaufen",
+  "tpMaxTicketsPerUserRange": "1 bis {max} Tickets pro Person, über alle Bestellungen zusammen",
+  "tpTicketHolder": "Ticketinhaber: {name}",
+  "tpTicketHolders": "Ticketinhaber: {names}",
+  "evCapacityBelowPhases": "Die Kapazität darf nicht unter den {count} Tickets deiner Preisphasen liegen. Erhöhe sie oder senke die Phasenmengen.",
+  "eventPlusOnesPaidNote": "Bezahlte Events haben keine Begleitpersonen: Jeder Gast braucht ein eigenes Ticket.",
+  "eventGuestsNoPlaces": "Nicht mehr genug freie Plätze für deine Gäste.",
+  "csvColTicketHolders": "Ticketinhaber"
 }

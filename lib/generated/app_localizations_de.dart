@@ -6376,7 +6376,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return '$tierName-Mitgliedschaft aktiv bis $formattedDate$coinsText';
   }
 
@@ -16276,13 +16279,21 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price pro $interval. Verlängert sich automatisch am $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price pro $interval. Gekündigt; Zugang endet am $date.';
   }
 
@@ -19863,7 +19874,9 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-      String name, String rewards) {
+    String name,
+    String rewards,
+  ) {
     return 'Belohnungen für $name abgeholt! $rewards';
   }
 
@@ -20329,7 +20342,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String profileTravelerActiveSubtitle(
-      String location, int hours, int minutes) {
+    String location,
+    int hours,
+    int minutes,
+  ) {
     return '$location - noch $hours Std. $minutes Min.';
   }
 
@@ -22283,7 +22299,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date) {
+    String reason,
+    String message,
+    String user,
+    String date,
+  ) {
     return 'Grund: $reason\nGemeldete Nachricht: „$message“\nGemeldeter Nutzer: $user\nGemeldet am: $date';
   }
 
@@ -22633,50 +22653,41 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Erste Verbindung',
-        'social_butterfly': 'Gesellige Seele',
-        'popular': 'Beliebt',
-        'video_enthusiast': 'Video-Fan',
-        'daily_streak_7': '7-Tage-Serie',
-        'daily_streak_30': '30-Tage-Serie',
-        'other': 'Neuer Erfolg',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Erste Verbindung',
+      'social_butterfly': 'Gesellige Seele',
+      'popular': 'Beliebt',
+      'video_enthusiast': 'Video-Fan',
+      'daily_streak_7': '7-Tage-Serie',
+      'daily_streak_30': '30-Tage-Serie',
+      'other': 'Neuer Erfolg',
+    });
     return 'Erfolg freigeschaltet: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Knüpfe deine erste Verbindung',
-        'social_butterfly': 'Sende 100 Nachrichten',
-        'popular': 'Knüpfe 50 Verbindungen',
-        'video_enthusiast': 'Führe 10 Videoanrufe',
-        'daily_streak_7': 'Melde dich 7 Tage in Folge an',
-        'daily_streak_30': 'Melde dich 30 Tage in Folge an',
-        'other': 'Weiter so!',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Knüpfe deine erste Verbindung',
+      'social_butterfly': 'Sende 100 Nachrichten',
+      'popular': 'Knüpfe 50 Verbindungen',
+      'video_enthusiast': 'Führe 10 Videoanrufe',
+      'daily_streak_7': 'Melde dich 7 Tage in Folge an',
+      'daily_streak_30': 'Melde dich 30 Tage in Folge an',
+      'other': 'Weiter so!',
+    });
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(
-      challenge,
-      {
-        'send_5_messages': 'Gesprächsstarter',
-        'get_3_matches': 'Netzwerker',
-        'complete_profile': 'Profil-Perfektionist',
-        'video_call_1': 'Von Angesicht zu Angesicht',
-        'other': 'Tägliche Herausforderung',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(challenge, {
+      'send_5_messages': 'Gesprächsstarter',
+      'get_3_matches': 'Netzwerker',
+      'complete_profile': 'Profil-Perfektionist',
+      'video_call_1': 'Von Angesicht zu Angesicht',
+      'other': 'Tägliche Herausforderung',
+    });
     return 'Herausforderung geschafft: $_temp0!';
   }
 
@@ -26637,4 +26648,73 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get userFollowEmptyStores => 'Du folgst noch keinen Shops';
+
+  @override
+  String get tpAttendeeNamesSwitch => 'Namen der Teilnehmenden abfragen';
+
+  @override
+  String get tpAttendeeNamesSwitchHint =>
+      'Käufer geben beim Bezahlen Vor- und Nachnamen jedes Ticketinhabers ein. Nur du und der Käufer sehen sie.';
+
+  @override
+  String get tpAttendeeNamesTitle => 'Name auf jedem Ticket';
+
+  @override
+  String get tpAttendeeNamesBuyerHint =>
+      'Der Veranstalter fragt nach Vor- und Nachnamen jedes Ticketinhabers.';
+
+  @override
+  String tpAttendeeTicketN(int index) {
+    return 'Ticket $index';
+  }
+
+  @override
+  String get tpAttendeeFirstName => 'Vorname';
+
+  @override
+  String get tpAttendeeLastName => 'Nachname';
+
+  @override
+  String get tpAttendeeNamesRequired =>
+      'Gib für jedes Ticket einen Vor- und Nachnamen ein.';
+
+  @override
+  String get tpErrAttendeeNamesRequired =>
+      'Der Veranstalter braucht Vor- und Nachnamen jedes Ticketinhabers.';
+
+  @override
+  String tpErrTicketLimit(int count) {
+    return 'Du kannst höchstens $count Tickets für dieses Event kaufen';
+  }
+
+  @override
+  String tpMaxTicketsPerUserRange(int max) {
+    return '1 bis $max Tickets pro Person, über alle Bestellungen zusammen';
+  }
+
+  @override
+  String tpTicketHolder(String name) {
+    return 'Ticketinhaber: $name';
+  }
+
+  @override
+  String tpTicketHolders(String names) {
+    return 'Ticketinhaber: $names';
+  }
+
+  @override
+  String evCapacityBelowPhases(int count) {
+    return 'Die Kapazität darf nicht unter den $count Tickets deiner Preisphasen liegen. Erhöhe sie oder senke die Phasenmengen.';
+  }
+
+  @override
+  String get eventPlusOnesPaidNote =>
+      'Bezahlte Events haben keine Begleitpersonen: Jeder Gast braucht ein eigenes Ticket.';
+
+  @override
+  String get eventGuestsNoPlaces =>
+      'Nicht mehr genug freie Plätze für deine Gäste.';
+
+  @override
+  String get csvColTicketHolders => 'Ticketinhaber';
 }
