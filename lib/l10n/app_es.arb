@@ -4196,7 +4196,7 @@
   "storefrontGallerySubtitle": "Muestra tu local, productos o equipo",
   "storefrontOpeningHoursSubtitle": "Establece tus días y horas de apertura",
   "storefrontDescriptionHint": "Cuéntale a la gente sobre tu negocio",
-  "storefrontCategoryHint": "p. ej. Restaurante, Cafetería, Museo",
+  "storefrontCategoryHint": "Elige una categoría",
   "storefrontLinkHint": "https://...",
   "storefrontAddLink": "Añadir enlace",
   "storefrontAddImage": "Añadir imagen",
@@ -8360,5 +8360,7 @@
   "emailAskOrganizer": "Preguntar al organizador",
   "emailMessageHost": "Escribir al anfitrión",
   "emailGuestChatInviteOrganizer": "Crea una cuenta gratuita para escribir al organizador.",
-  "emailGuestChatInviteHost": "Crea una cuenta gratuita para escribir al anfitrión."
+  "emailGuestChatInviteHost": "Crea una cuenta gratuita para escribir al anfitrión.",
+  "storefrontCategoryGroupLabel": "Tipo de negocio",
+  "storefrontCategoryGroupHint": "Elige un tipo"
 }

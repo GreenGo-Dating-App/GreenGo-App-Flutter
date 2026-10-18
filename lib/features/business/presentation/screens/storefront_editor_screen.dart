@@ -62,6 +62,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   late TextEditingController _descController;
   late TextEditingController _whatsappController;
   String? _category;
+  String? _categoryGroup;
   late List<TextEditingController> _linkControllers;
 
   // Latest location/languages the owner edited via the Location & Languages
@@ -417,7 +418,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
             ),
             const SizedBox(height: 28),
 
-            // Category — grouped, tappable chips (easier than a 50-item dropdown).
+            // Category — two select boxes: type of business, then category.
             _sectionHeader(l10n.categoryName, null),
             const SizedBox(height: 8),
             _buildCategoryGroups(),
@@ -630,57 +631,90 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
     );
   }
 
-  /// Grouped, tappable category chips — an easy replacement for the long flat
-  /// dropdown. One labelled section per [BusinessCategories.grouped] entry.
+  /// Two select boxes (owner, 2026-10-17): first the type of business
+  /// ([BusinessCategories.grouped] section), then the category inside it.
+  /// Changing the type clears a category that doesn't belong to it.
   Widget _buildCategoryGroups() {
+    final l10n = AppLocalizations.of(context)!;
+    final group = _categoryGroup ?? BusinessCategories.groupOf(_category);
+    final inGroup = group == null
+        ? const <String>[]
+        : (BusinessCategories.grouped[group] ?? const <String>[]);
+    final category = inGroup.contains(_category) ? _category : null;
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        for (final entry in BusinessCategories.grouped.entries) ...[
-          Padding(
-            padding: const EdgeInsets.only(top: 10, bottom: 6),
-            child: Text(
-              localizedBusinessCategoryGroup(
-                  AppLocalizations.of(context)!, entry.key),
-              style: const TextStyle(
-                color: AppColors.textSecondary,
-                fontSize: 13,
-                fontWeight: FontWeight.w600,
+        _selectBox<String>(
+          key: const ValueKey('storefront-category-group'),
+          label: l10n.storefrontCategoryGroupLabel,
+          hint: l10n.storefrontCategoryGroupHint,
+          value: group,
+          items: [
+            for (final g in BusinessCategories.grouped.keys)
+              DropdownMenuItem(
+                value: g,
+                child: Text(localizedBusinessCategoryGroup(l10n, g),
+                    overflow: TextOverflow.ellipsis),
               ),
-            ),
-          ),
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: [for (final c in entry.value) _categoryChip(c)],
-          ),
-        ],
+          ],
+          onChanged: (g) => setState(() {
+            _categoryGroup = g;
+            if (BusinessCategories.groupOf(_category) != g) _category = null;
+          }),
+        ),
+        const SizedBox(height: 12),
+        _selectBox<String>(
+          key: const ValueKey('storefront-category'),
+          label: l10n.categoryName,
+          hint: l10n.storefrontCategoryHint,
+          value: category,
+          items: [
+            for (final c in inGroup)
+              DropdownMenuItem(
+                value: c,
+                child: Text(localizedBusinessCategory(l10n, c),
+                    overflow: TextOverflow.ellipsis),
+              ),
+          ],
+          onChanged: group == null
+              ? null
+              : (c) => setState(() => _category = c),
+        ),
       ],
     );
   }
 
-  Widget _categoryChip(String c) {
-    final selected = _category == c;
-    return GestureDetector(
-      onTap: () => setState(() => _category = c),
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 150),
-        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-        decoration: BoxDecoration(
-          color: selected ? AppColors.richGold : AppColors.backgroundCard,
-          borderRadius: BorderRadius.circular(20),
-          border: Border.all(
-            color: selected ? AppColors.richGold : AppColors.divider,
-          ),
-        ),
-        child: Text(
-          localizedBusinessCategory(AppLocalizations.of(context)!, c),
-          style: TextStyle(
-            color: selected ? AppColors.deepBlack : AppColors.textSecondary,
-            fontWeight: selected ? FontWeight.w600 : FontWeight.normal,
-            fontSize: 13.5,
-          ),
-        ),
+  Widget _selectBox<T>({
+    required Key key,
+    required String label,
+    required String hint,
+    required T? value,
+    required List<DropdownMenuItem<T>> items,
+    required ValueChanged<T?>? onChanged,
+  }) {
+    OutlineInputBorder border(Color c) => OutlineInputBorder(
+          borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+          borderSide: BorderSide(color: c),
+        );
+    return DropdownButtonFormField<T>(
+      key: key,
+      value: value,
+      items: items,
+      onChanged: onChanged,
+      isExpanded: true,
+      dropdownColor: AppColors.backgroundCard,
+      iconEnabledColor: AppColors.richGold,
+      style: const TextStyle(color: AppColors.textPrimary, fontSize: 15),
+      hint: Text(hint, style: const TextStyle(color: AppColors.textTertiary)),
+      decoration: InputDecoration(
+        labelText: label,
+        labelStyle: const TextStyle(color: AppColors.textSecondary),
+        filled: true,
+        fillColor: AppColors.backgroundCard,
+        border: border(AppColors.divider),
+        enabledBorder: border(AppColors.divider),
+        disabledBorder: border(AppColors.divider),
+        focusedBorder: border(AppColors.richGold),
       ),
     );
   }

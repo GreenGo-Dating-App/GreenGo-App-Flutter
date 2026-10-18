@@ -12577,7 +12577,7 @@ class AppLocalizationsEs extends AppLocalizations {
       'Cuéntale a la gente sobre tu negocio';
 
   @override
-  String get storefrontCategoryHint => 'p. ej. Restaurante, Cafetería, Museo';
+  String get storefrontCategoryHint => 'Elige una categoría';
 
   @override
   String get storefrontLinkHint => 'https://...';
@@ -26568,4 +26568,10 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get emailGuestChatInviteHost =>
       'Crea una cuenta gratuita para escribir al anfitrión.';
+
+  @override
+  String get storefrontCategoryGroupLabel => 'Tipo de negocio';
+
+  @override
+  String get storefrontCategoryGroupHint => 'Elige un tipo';
 }

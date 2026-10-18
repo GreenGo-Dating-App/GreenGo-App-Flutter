@@ -5927,7 +5927,7 @@
   "storefrontGallerySubtitle": "Showcase your venue, products or team",
   "storefrontOpeningHoursSubtitle": "Set your opening days and hours",
   "storefrontDescriptionHint": "Tell people about your business",
-  "storefrontCategoryHint": "e.g. Restaurant, Cafe, Museum",
+  "storefrontCategoryHint": "Choose a category",
   "storefrontLinkHint": "https://...",
   "storefrontAddLink": "Add link",
   "storefrontAddImage": "Add image",
@@ -15810,5 +15810,16 @@
   "emailGuestChatInviteHost": "Create a free account to message the host.",
   "@emailGuestChatInviteHost": {
     "description": "Email line for a guest buyer without an account, above the chat button."
+  },
+  "storefrontCategoryGroupLabel": "Type of business",
+  "@storefrontCategoryGroupLabel": {
+    "description": "Storefront editor: business category select boxes"
+  },
+  "storefrontCategoryGroupHint": "Choose a type",
+  "@storefrontCategoryGroupHint": {
+    "description": "Storefront editor: business category select boxes"
+  },
+  "@storefrontCategoryHint": {
+    "description": "Storefront editor: business category select boxes"
   }
 }

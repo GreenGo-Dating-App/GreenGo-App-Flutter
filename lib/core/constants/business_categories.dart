@@ -71,6 +71,16 @@ class BusinessCategories {
   /// The same 50 categories organised into user-facing sections, used to render
   /// an easy grouped-chip picker (instead of a long flat dropdown). Every value
   /// here also appears in [all]; section names are organisational labels.
+  /// The [grouped] section (type of business) that contains [category], or
+  /// null when [category] is null or unknown.
+  static String? groupOf(String? category) {
+    if (category == null) return null;
+    for (final e in grouped.entries) {
+      if (e.value.contains(category)) return e.key;
+    }
+    return null;
+  }
+
   static const Map<String, List<String>> grouped = <String, List<String>>{
     'Food & Drink': [
       'Restaurant', 'Bar', 'Cafe', 'Bakery', 'Food Truck',

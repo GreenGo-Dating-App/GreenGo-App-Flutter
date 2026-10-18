@@ -12539,7 +12539,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get storefrontDescriptionHint => 'Fala às pessoas sobre o teu negócio';
 
   @override
-  String get storefrontCategoryHint => 'ex. Restaurante, Café, Museu';
+  String get storefrontCategoryHint => 'Escolha uma categoria';
 
   @override
   String get storefrontLinkHint => 'https://...';
@@ -26549,6 +26549,12 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get emailGuestChatInviteHost =>
       'Cria uma conta gratuita para enviar mensagem ao anfitrião.';
+
+  @override
+  String get storefrontCategoryGroupLabel => 'Tipo de negócio';
+
+  @override
+  String get storefrontCategoryGroupHint => 'Escolha um tipo';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -39094,7 +39100,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get storefrontDescriptionHint => 'Conte às pessoas sobre seu negócio';
 
   @override
-  String get storefrontCategoryHint => 'ex. Restaurante, Café, Museu';
+  String get storefrontCategoryHint => 'Escolha uma categoria';
 
   @override
   String get storefrontLinkHint => 'https://...';
@@ -53103,4 +53109,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get emailGuestChatInviteHost =>
       'Crie uma conta grátis para mandar mensagem ao anfitrião.';
+
+  @override
+  String get storefrontCategoryGroupLabel => 'Tipo de negócio';
+
+  @override
+  String get storefrontCategoryGroupHint => 'Escolha um tipo';
 }

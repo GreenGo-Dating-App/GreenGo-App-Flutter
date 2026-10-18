@@ -22071,10 +22071,10 @@ abstract class AppLocalizations {
   /// **'Tell people about your business'**
   String get storefrontDescriptionHint;
 
-  /// No description provided for @storefrontCategoryHint.
+  /// Storefront editor: business category select boxes
   ///
   /// In en, this message translates to:
-  /// **'e.g. Restaurant, Cafe, Museum'**
+  /// **'Choose a category'**
   String get storefrontCategoryHint;
 
   /// No description provided for @storefrontLinkHint.
@@ -45035,6 +45035,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Create a free account to message the host.'**
   String get emailGuestChatInviteHost;
+
+  /// Storefront editor: business category select boxes
+  ///
+  /// In en, this message translates to:
+  /// **'Type of business'**
+  String get storefrontCategoryGroupLabel;
+
+  /// Storefront editor: business category select boxes
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a type'**
+  String get storefrontCategoryGroupHint;
 }
 
 class _AppLocalizationsDelegate
