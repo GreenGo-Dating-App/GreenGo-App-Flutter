@@ -443,6 +443,8 @@ f) Price phases: the organiser of a paid Event can sell its tickets in price
    sets the price of each ticket at checkout, from the phase that is current
    at that moment; an order for several tickets can include tickets from
    more than one phase. The checkout shows the price before you pay.
+   If the phase changes while you are paying, we show you the new price
+   before you confirm.
 
 11.3 Event check-in uses a QR code in the app. For paid Events the QR code is
 issued only after your payment is confirmed. Guests who book without an

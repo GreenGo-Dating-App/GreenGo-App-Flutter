@@ -479,6 +479,8 @@ f) Fases de preço: o organizador de um Evento pago pode vender os ingressos
    a fase vigente naquele momento; um pedido de vários ingressos pode incluir
    ingressos de mais de uma fase. O checkout mostra o preço antes de você
    pagar.
+   Se a fase mudar enquanto você estiver pagando, mostramos o novo preço
+   antes de você confirmar.
 
 11.3 O check-in nos eventos usa um código QR no aplicativo. Nos Eventos pagos,
 o código QR só é emitido depois que o seu pagamento é confirmado. Os

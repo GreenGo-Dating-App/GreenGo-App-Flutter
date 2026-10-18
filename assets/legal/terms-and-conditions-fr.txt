@@ -519,6 +519,8 @@ f) Phases de prix : l'organisateur d'un Événement payant peut vendre ses
    chaque billet lors du paiement, d'après la phase en cours à ce moment ;
    une commande de plusieurs billets peut comprendre des billets de plusieurs
    phases. Le paiement affiche le prix avant que vous ne payiez.
+   Si la phase change pendant que vous payez, nous vous montrons le nouveau
+   prix avant que vous ne confirmiez.
 
 11.3 L'enregistrement à un Événement se fait au moyen d'un code QR dans
 l'application. Pour les Événements payants, le code QR n'est émis qu'après la

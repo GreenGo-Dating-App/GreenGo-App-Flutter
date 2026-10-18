@@ -485,6 +485,8 @@ f) Fases de precio: el organizador de un Evento de pago puede vender sus
    según la fase vigente en ese momento; un pedido de varias entradas puede
    incluir entradas de más de una fase. El pago muestra el precio antes de
    que pagues.
+   Si la fase cambia mientras estás pagando, te mostramos el nuevo precio
+   antes de que confirmes.
 
 11.3 El registro de entrada en los eventos utiliza un código QR en la app. En
 los Eventos de pago, el código QR solo se emite una vez confirmado tu pago.

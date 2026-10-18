@@ -487,6 +487,8 @@ f) Fasi di prezzo: l'organizzatore di un Evento a pagamento può vendere i
    checkout, in base alla fase in corso in quel momento; un ordine di più
    biglietti può comprendere biglietti di più fasi. Il checkout mostra il
    prezzo prima del pagamento.
+   Se la fase cambia mentre stai pagando, ti mostriamo il nuovo prezzo prima
+   che tu confermi.
 
 11.3 Il check-in agli Eventi utilizza un codice QR nell'app. Per gli Eventi a
 pagamento il codice QR viene emesso solo dopo la conferma del tuo pagamento. I

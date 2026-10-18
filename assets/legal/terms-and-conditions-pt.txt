@@ -484,6 +484,8 @@ f) Fases de preço: o organizador de um Evento pago pode vender os respetivos
    base na fase em curso nesse momento; um pedido de vários bilhetes pode
    incluir bilhetes de mais do que uma fase. O checkout mostra o preço antes
    de pagar.
+   Se a fase mudar enquanto estiver a pagar, mostramos-lhe o novo preço antes
+   de confirmar.
 
 11.3 O registo de entrada em Eventos utiliza um código QR na aplicação. Nos
 Eventos pagos, o código QR só é emitido depois de o seu pagamento ser

@@ -499,6 +499,8 @@ f) Preisphasen: Der Veranstalter eines kostenpflichtigen Events kann dessen
    Tickets beim Bezahlvorgang fest, nach der Phase, die in diesem Moment
    gilt; eine Bestellung mehrerer Tickets kann Tickets aus mehr als einer
    Phase enthalten. Der Bezahlvorgang zeigt den Preis an, bevor du zahlst.
+   Ändert sich die Phase, während du bezahlst, zeigen wir dir den neuen
+   Preis, bevor du bestätigst.
 
 11.3 Der Check-in bei Events erfolgt über einen QR-Code in der App. Bei
 kostenpflichtigen Events wird der QR-Code erst ausgestellt, nachdem deine
