@@ -97,9 +97,9 @@ visitantes (sección 11.7). Esta política también se aplica a ellas.
     para traducirlo cuando lo pides o para revisar un mensaje que alguien ha
     denunciado.
 - La verificación con un documento de identidad es opcional, salvo cuando la ley
-  exige comprobaciones de edad más estrictas (sección 8.1). Si la haces, la app
-  lee el documento en tu dispositivo, un revisor lo comprueba y después
-  eliminamos la imagen. Conservamos los datos que confirmaste cifrados en un
+  exige comprobaciones de edad más estrictas (sección 8.1). Si la haces,
+  escribes los datos del documento, un revisor los comprueba con la imagen y
+  después eliminamos la imagen. Conservamos los datos revisados cifrados en un
   almacén restringido, solo para identificarte cuando la ley lo exija, hasta 6
   meses después del cierre de tu cuenta.
 - Las funciones de IA (traducción, lectura en voz alta y transliteración de
@@ -160,8 +160,8 @@ d) Datos de la cuenta de empresa
 
 e) Datos de verificación
    Un documento de identidad y/o un selfi, solo si decides verificarte. Si
-   te verificas con un documento de identidad, también los datos leídos en él
-   y confirmados por ti: nombre, apellidos, fecha de nacimiento, tipo de
+   te verificas con un documento de identidad, también los datos que
+   escribes a partir de él: nombre, apellidos, fecha de nacimiento, tipo de
    documento, país de expedición y número de documento. Consulta la sección 8.
 
 f) Datos de compra
@@ -288,9 +288,9 @@ Las personas que has bloqueado no pueden ver tu perfil.
 4.2 Nunca se muestra a otros usuarios
 
 Tus coordenadas exactas, fecha de nacimiento, dirección de correo electrónico,
-número de teléfono, documento de identidad y los datos de identidad leídos en
-él, selfi de verificación y fotos del álbum privado (salvo que concedas a
-alguien acceso a tu álbum privado).
+número de teléfono, documento de identidad y los datos de identidad que diste
+a partir de él, selfi de verificación y fotos del álbum privado (salvo que
+concedas a alguien acceso a tu álbum privado).
 
 4.3 Contenido que compartes
 
@@ -341,9 +341,10 @@ Finalidad                             | Qué datos usamos             | Base jur
 5. Funciones de IA: traducción,       | El texto que decides         | Contrato, tras tu consentimiento a la
    lectura en voz alta,               | procesar                     | función de IA (RGPD 6(1)(a)/(b); LGPD 7
    transliteración                    |                              | I/V). Consulta la sección 9.
-6. Verificación de edad e identidad   | Imagen del documento; los    | Consentimiento explícito (RGPD 9(2)(a);
-   con un documento de identidad      | datos leídos en él y         | LGPD 11 I). Consulta la sección 8.
-                                      | confirmados por ti           |
+6. Verificación de edad e identidad   | Imagen del documento; datos  | Consentimiento explícito (RGPD 9(2)(a);
+   con un documento de identidad      | que escribes a partir de él; | LGPD 11 I). Consulta la sección 8.
+                                      | fecha de nacimiento leída    |
+                                      | en él                        |
 7. Verificación mediante selfi        | Selfi, fotos del perfil      | Consentimiento explícito (RGPD 9(2)(a);
                                       |                              | LGPD 11 I)
 8. Compras, monedas, membresías,      | Datos de compra, registro de | Contrato (RGPD 6(1)(b); LGPD 7 V)
@@ -429,9 +430,8 @@ hicimos antes. Si rechazas o retiras el consentimiento:
 - a una función de IA, no podrás usar esa función de IA, pero el resto de
   GreenGo seguirá funcionando;
 - a la verificación, solo perderás las funciones que requieren verificación
-  (consulta la sección 8). Los datos de identidad que ya confirmaste se
-  conservan para la finalidad de la fila 25 y durante el plazo de la sección
-  8.2 g.
+  (consulta la sección 8). Los datos de identidad que ya diste se conservan
+  para la finalidad de la fila 25 y durante el plazo de la sección 8.2 h.
 
 ================================================================================
 6. CUENTA, PERFIL Y DESCUBRIMIENTO
@@ -545,31 +545,35 @@ o reservar experiencias. Solo podemos pedir un documento de identidad:
 a) Antes de que lo subas, te explicamos lo que ocurrirá y te pedimos tu
    consentimiento explícito.
 
-b) La app lee el texto del documento en tu dispositivo y rellena tu nombre,
-   apellidos, fecha de nacimiento, tipo de documento, país de expedición y
-   número de documento. Tú compruebas estos datos y los confirmas.
+b) Después de subir la imagen, escribes tu nombre, apellidos, fecha de
+   nacimiento, tipo de documento, país de expedición y número de documento.
 
-c) Un miembro formado de nuestro personal comprueba los datos que confirmaste
-   con la imagen del documento.
+c) Para la verificación de edad, la imagen se envía a Google Cloud Vision,
+   que lee el texto del documento para que podamos encontrar la fecha de
+   nacimiento. Google actúa en nuestro nombre y no conserva nada después.
 
-d) La imagen se ELIMINA en cuanto termina la revisión. Si sigue pendiente de
+d) Un miembro formado de nuestro personal comprueba los datos que escribiste
+   con la imagen del documento, y los confirma o los corrige. Los datos que
+   no se revisan en un plazo de 30 días se ELIMINAN.
+
+e) La imagen se ELIMINA en cuanto termina la revisión. Si sigue pendiente de
    revisión después de 7 días, se ELIMINA sea cual sea el resultado, y puedes
    volver a subirla. Esto se aplica a todas las imágenes de documentos de
    identidad, incluida la foto tuya sosteniendo tu documento de identidad que
    puedes añadir al registrarte (8.3) y el documento de identidad del titular
    de una empresa (8.4).
 
-e) Tras la revisión conservamos:
+f) Tras la revisión conservamos:
    - si tu edad fue verificada (sí o no), el método, la fecha de la
      comprobación y tu año de nacimiento;
-   - los datos que confirmaste (nombre, apellidos, fecha de nacimiento, tipo
+   - los datos revisados (nombre, apellidos, fecha de nacimiento, tipo
      de documento, país de expedición y número de documento), CIFRADOS y
      separados de tu perfil, en un almacén restringido.
 
    No conservamos la imagen, tu nacionalidad ni la fecha de caducidad del
    documento.
 
-f) Usamos los datos cifrados solo para identificarte cuando la ley lo exige:
+g) Usamos los datos cifrados solo para identificarte cuando la ley lo exige:
    para responder a una orden válida de un tribunal, o a una solicitud de la
    policía o de otra autoridad competente; para proteger la vida o la
    seguridad de alguien en un caso grave; o para formular, ejercer o defender
@@ -578,7 +582,7 @@ f) Usamos los datos cifrados solo para identificarte cuando la ley lo exige:
    los mostramos a otros usuarios, y nunca los usamos para nada más, por
    ejemplo para marketing o elaboración de perfiles.
 
-g) Conservamos los datos cifrados mientras exista tu cuenta y durante 6 meses
+h) Conservamos los datos cifrados mientras exista tu cuenta y durante 6 meses
    después de su cierre (el plazo durante el cual el Marco Civil da Internet
    brasileño exige conservar los registros de acceso, art. 15). Solo los
    conservamos más tiempo en caso de retención legal (sección 14).
@@ -615,8 +619,8 @@ identificar a los comerciantes que ofrecen servicios a los consumidores.
 
 Puedes rechazar o retirar tu consentimiento a la verificación. En ese caso no
 podrás usar las funciones enumeradas en 8.1 que la requieren. Tu cuenta no se
-elimina. Los datos de identidad que ya confirmaste se conservan tal como se
-describe en 8.2 f y g.
+elimina. Los datos de identidad que ya diste se conservan tal como se
+describe en 8.2 g y h.
 
 8.6 Aviso para los residentes de Illinois, Texas y otros estados de EE. UU.
 con leyes sobre datos biométricos
@@ -1081,10 +1085,11 @@ Imágenes de documentos de identidad     | Se eliminan en cuanto termina la
 (incluida una foto sosteniendo el       | revisión y, como máximo, a los 7 días
 documento y los documentos de los       | sea cual sea el resultado (después
 titulares de empresas)                  | puedes volver a subirlas)
-Datos de identidad que confirmaste      | Mientras exista tu cuenta y 6 meses
-(nombre, apellidos, fecha de            | después de su cierre (plazo de
-nacimiento, tipo de documento, país de  | conservación de los registros de acceso
-expedición y número), cifrados (8.2)    | del Marco Civil da Internet); solo más
+Datos de identidad del documento        | Sin revisar: eliminados a los 30 días.
+(nombre, apellidos, fecha de            | Revisados: mientras exista tu cuenta y
+nacimiento, tipo de documento, país de  | 6 meses después de su cierre (plazo de
+expedición y número), cifrados (8.2)    | conservación de los registros de acceso
+                                        | del Marco Civil da Internet); solo más
                                         | tiempo en caso de retención legal
 Resultado de la verificación de edad    | Hasta que elimines tu cuenta
 (sí/no, método, fecha, año de           |
@@ -1206,7 +1211,7 @@ h) Conservamos un breve justificante de eliminación (la fecha y el número de
 i) Tu número de teléfono se elimina con tu cuenta. Los datos de identidad
    cifrados de una verificación con documento de identidad se conservan
    durante 6 meses después del cierre de la cuenta, y después se eliminan
-   (sección 8.2 g). Si la cuenta fue bloqueada, conservamos los hashes con
+   (sección 8.2 h). Si la cuenta fue bloqueada, conservamos los hashes con
    clave de su dirección de correo electrónico y de su número de teléfono
    (sección 14).
 
@@ -1601,12 +1606,14 @@ Verificación del teléfono y datos de identidad:
   secciones 2, 3.1, 4.2, 5, 12.2, 14, 15.2 y 22.1).
 - Secciones 3.1 d y 4.3: un número de contacto del negocio opcional, que se
   muestra en la página de empresa solo si la empresa lo activa.
-- Secciones 8.2, 8.3 y 8.4: el documento de identidad se lee en tu
-  dispositivo y lo comprueba un revisor; todas las imágenes de documentos de
+- Secciones 8.2, 8.3 y 8.4: escribes los datos del documento de identidad y
+  un revisor los comprueba con la imagen (los datos no revisados en 30 días
+  se eliminan; para las comprobaciones de edad, Google Cloud Vision lee la
+  fecha de nacimiento); todas las imágenes de documentos de
   identidad (también una foto sosteniendo el documento y el documento del
   titular de una empresa) se eliminan tras la revisión, o pasados 7 días si
   siguen pendientes (puedes volver a subirlas); el documento de identidad del
-  titular de una empresa es opcional; los datos que confirmas se conservan
+  titular de una empresa es opcional; los datos revisados se conservan
   cifrados en un almacén restringido, solo para identificarte cuando la ley
   lo exija, hasta
   6 meses después del cierre de la cuenta (también secciones 2, 3.1, 4.2,

@@ -111,14 +111,15 @@ a) A verificação com um documento de identificação é opcional, também para
    mais rigorosas, podemos pedir-lhe que verifique a sua idade com um
    documento de identificação.
 b) Alguns distintivos exigem que verifique o seu perfil com uma selfie.
-c) Quando se verifica com um documento de identificação, a aplicação lê o
-   documento no seu dispositivo e preenche o seu nome próprio, apelido, data
-   de nascimento, tipo de documento, país emissor e número do documento. O
-   utilizador confirma estes dados, e um revisor do GreenGo compara-os com a
-   foto do documento. Eliminamos a foto após a revisão, ou ao fim de 7 dias se
-   ainda estiver a aguardar revisão (pode então carregá-la novamente). O mesmo
-   se aplica a uma foto sua a segurar o documento. Conservamos os dados que
-   confirmou encriptados, num arquivo separado de acesso restrito, apenas para
+c) Quando se verifica com um documento de identificação, carrega uma foto do
+   documento e introduz o seu nome próprio, apelido, data de nascimento, tipo
+   de documento, país emissor e número do documento. Um revisor do GreenGo
+   compara estes dados com a foto e confirma-os ou corrige-os. Se não forem
+   revistos no prazo de 30 dias, eliminamo-los. Eliminamos a foto após a
+   revisão, ou ao fim de 7 dias se ainda estiver a aguardar revisão (pode
+   então carregá-la novamente). O mesmo se aplica a uma foto sua a segurar o
+   documento. Após a revisão, conservamos os dados encriptados, num arquivo
+   separado de acesso restrito, apenas para
    o identificar quando a lei o exigir (secção 18.8). Nunca os mostramos a
    outros utilizadores e não os utilizamos para mais nada. A secção 8 da
    Política de Privacidade explica este processo e durante quanto tempo os
@@ -1364,11 +1365,11 @@ Verificação do telemóvel e dados de identificação:
 - Secções 4.4, 12.3, 12.5, 13.4 e 18.8: a verificação com um documento de
   identificação é opcional em todos os casos, também para publicar numa
   Comunidade, para publicar, organizar ou reservar Experiências e para o
-  titular de uma Conta de empresa; o documento é lido no
-  seu dispositivo e verificado por um revisor, a foto é eliminada após a
-  revisão ou ao fim de 7 dias se ainda estiver pendente, e os dados que
-  confirma são conservados encriptados apenas para o identificar quando a lei
-  o exigir.
+  titular de uma Conta de empresa; introduz os dados do documento e um
+  revisor compara-os com a foto (os dados não revistos no prazo de 30 dias
+  são eliminados), a foto é eliminada após a revisão ou ao fim de 7 dias se
+  ainda estiver pendente, e os dados revistos são conservados encriptados
+  apenas para o identificar quando a lei o exigir.
 Clarificações para corresponder ao funcionamento da aplicação:
 - Secções 5.1 g, 14.1, 14.2 e 14.4: os assistentes de IA no chat são a
   tradução, a leitura em voz alta e a transliteração (as respostas

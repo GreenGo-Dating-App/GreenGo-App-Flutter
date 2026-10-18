@@ -108,14 +108,15 @@ a) A verificação com um documento de identidade é opcional, também para publ
    mais rigorosas, podemos pedir que você verifique a sua idade com um documento
    de identidade.
 b) Alguns selos exigem que você verifique o seu perfil com uma selfie.
-c) Quando você se verifica com um documento de identidade, o aplicativo lê o
-   documento no seu dispositivo e preenche o seu nome, sobrenome, data de
-   nascimento, tipo de documento, país emissor e número do documento. Você
-   confirma esses dados, e um revisor do GreenGo os confere com a foto do
-   documento. Excluímos a foto após a análise, ou após 7 dias se ela ainda
-   estiver aguardando análise (você pode então enviá-la novamente). O mesmo
-   vale para uma foto sua segurando o seu documento. Guardamos os dados que
-   você confirmou de forma criptografada, em um armazenamento separado e
+c) Quando você se verifica com um documento de identidade, você envia uma
+   foto dele e digita o seu nome, sobrenome, data de nascimento, tipo de
+   documento, país emissor e número do documento. Um revisor do GreenGo
+   confere esses dados com a foto e os confirma ou corrige. Se eles não forem
+   analisados em até 30 dias, nós os excluímos. Excluímos a foto após a
+   análise, ou após 7 dias se ela ainda estiver aguardando análise (você pode
+   então enviá-la novamente). O mesmo vale para uma foto sua segurando o seu
+   documento. Após a análise, guardamos os dados de forma criptografada, em
+   um armazenamento separado e
    restrito, somente para identificar você quando a lei o exigir (item 18.8).
    Nunca os mostramos a outros usuários e não os usamos para nenhuma outra
    finalidade. A seção 8 da Política de Privacidade explica isso e por quanto
@@ -1351,10 +1352,11 @@ Verificação por telefone e dados de identificação:
 - Seções 4.4, 12.3, 12.5, 13.4 e 18.8: a verificação com documento de identidade
   é opcional em todos os casos, também para publicar em uma Comunidade, para
   publicar Experiências, ser o Anfitrião delas ou reservá-las e para o titular
-  de uma Conta empresarial; o documento é lido no seu dispositivo e conferido
-  por um revisor, a foto é excluída após a análise ou após 7 dias se ainda
-  estiver pendente, e os dados que você confirma são guardados de forma
-  criptografada somente para identificar você quando a lei o exigir.
+  de uma Conta empresarial; você digita os dados do documento e um revisor
+  os confere com a foto (dados não analisados em até 30 dias são excluídos),
+  a foto é excluída após a análise ou após 7 dias se ainda estiver pendente,
+  e os dados analisados são guardados de forma criptografada somente para
+  identificar você quando a lei o exigir.
 Esclarecimentos para refletir como o aplicativo funciona:
 - Seções 5.1 g, 14.1, 14.2 e 14.4: os assistentes de IA no chat são a
   tradução, a leitura em voz alta e a transliteração (respostas inteligentes

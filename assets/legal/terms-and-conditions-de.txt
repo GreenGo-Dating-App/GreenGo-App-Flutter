@@ -116,19 +116,19 @@ a) Die Verifizierung mit einem Ausweisdokument ist freiwillig, auch für das
    deines Wohnorts strengere Alterskontrollen vorschreibt, können wir dich
    bitten, dein Alter mit einem Ausweisdokument zu verifizieren.
 b) Für einige Abzeichen musst du dein Profil mit einem Selfie verifizieren.
-c) Wenn du dich mit einem Ausweisdokument verifizierst, liest die App das
-   Dokument auf deinem Gerät aus und trägt deinen Vornamen, Nachnamen, dein
-   Geburtsdatum, die Dokumentart, das Ausstellungsland und die
-   Dokumentnummer ein. Du bestätigst diese Angaben, und ein Prüfer von
-   GreenGo gleicht sie mit dem Foto des Dokuments ab. Wir löschen das Foto
-   nach der Prüfung oder nach 7 Tagen, wenn es dann noch auf die Prüfung
-   wartet (du kannst es danach erneut hochladen). Das gilt auch für ein Foto,
-   auf dem du dein Dokument hältst. Die von dir bestätigten Angaben speichern
-   wir verschlüsselt in einem separaten, zugriffsbeschränkten Speicher, nur
-   um dich zu identifizieren, wenn das Gesetz es verlangt (Abschnitt 18.8).
-   Wir zeigen sie niemals anderen Nutzern und verwenden sie für nichts
-   anderes. Abschnitt 8 der Datenschutzerklärung erläutert dies und wie lange
-   wir sie aufbewahren.
+c) Wenn du dich mit einem Ausweisdokument verifizierst, lädst du ein Foto
+   davon hoch und gibst deinen Vornamen, Nachnamen, dein Geburtsdatum, die
+   Dokumentart, das Ausstellungsland und die Dokumentnummer ein. Ein Prüfer
+   von GreenGo gleicht diese Angaben mit dem Foto ab und bestätigt oder
+   korrigiert sie. Werden sie nicht innerhalb von 30 Tagen geprüft, löschen
+   wir sie. Wir löschen das Foto nach der Prüfung oder nach 7 Tagen, wenn es
+   dann noch auf die Prüfung wartet (du kannst es danach erneut hochladen).
+   Das gilt auch für ein Foto, auf dem du dein Dokument hältst. Nach der
+   Prüfung speichern wir die Angaben verschlüsselt in einem separaten,
+   zugriffsbeschränkten Speicher, nur um dich zu identifizieren, wenn das
+   Gesetz es verlangt (Abschnitt 18.8). Wir zeigen sie niemals anderen Nutzern
+   und verwenden sie für nichts anderes. Abschnitt 8 der Datenschutzerklärung
+   erläutert dies und wie lange wir sie aufbewahren.
 d) Die Verwendung eines Dokuments, das nicht dir gehört oder das bereits für
    ein anderes Konto verwendet wurde, verstößt gegen diese Bedingungen.
 
@@ -1408,13 +1408,13 @@ Telefonverifizierung und Identitätsangaben:
   der Unternehmensseite angezeigt wird, wenn du sie einschaltest.
 - Abschnitte 4.4, 12.3, 12.5, 13.4 und 18.8: Die Verifizierung mit einem
   Ausweisdokument ist überall freiwillig, auch für das Veröffentlichen in
-  einer Community, für das Veröffentlichen, Anbieten als Gastgeber oder
-  Buchen von Erlebnissen und für den Inhaber eines Business-Kontos; das
-  Dokument wird auf deinem Gerät ausgelesen und von einem Prüfer
-  kontrolliert, das Foto wird nach der
-  Prüfung oder nach 7 Tagen, wenn sie noch aussteht, gelöscht, und die von
-  dir bestätigten Angaben werden verschlüsselt aufbewahrt, nur um dich zu
-  identifizieren, wenn das Gesetz es verlangt.
+  einer Community, für das Veröffentlichen, Anbieten als Gastgeber oder Buchen
+  von Erlebnissen und für den Inhaber eines Business-Kontos; du gibst die
+  Angaben aus dem Dokument ein, und ein Prüfer gleicht sie mit dem Foto ab
+  (Angaben, die nicht innerhalb von 30 Tagen geprüft werden, werden gelöscht),
+  das Foto wird nach der Prüfung oder nach 7 Tagen, wenn sie noch aussteht,
+  gelöscht, und die geprüften Angaben werden verschlüsselt aufbewahrt, nur um
+  dich zu identifizieren, wenn das Gesetz es verlangt.
 Klarstellungen, damit die Bedingungen der Funktionsweise der App entsprechen:
 - Abschnitte 5.1 g, 14.1, 14.2 und 14.4: Die KI-Helfer im Chat sind
   Übersetzung, Vorlesen und Transliteration (intelligente

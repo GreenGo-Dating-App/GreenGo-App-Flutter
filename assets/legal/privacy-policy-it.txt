@@ -98,9 +98,9 @@ richiesta di prenotazione per un'esperienza, da un link condiviso come ospiti
     ha segnalato.
 - La verifica con un documento d'identità è facoltativa, salvo quando la
   legge richiede controlli dell'età più rigorosi (sezione 8.1). Se la
-  effettui, l'app legge il documento sul tuo dispositivo, un revisore lo
-  controlla e poi cancelliamo l'immagine. Conserviamo i dati che hai
-  confermato in forma cifrata in un archivio ad accesso limitato, solo per
+  effettui, inserisci i dati del documento, un revisore li controlla
+  confrontandoli con l'immagine e poi cancelliamo l'immagine. Conserviamo i
+  dati esaminati in forma cifrata in un archivio ad accesso limitato, solo per
   identificarti quando la legge lo richiede, fino a 6 mesi dopo la chiusura
   del tuo account.
 - Le funzioni di IA (traduzione, lettura vocale e traslitterazione dei
@@ -164,9 +164,8 @@ d) Dati dell'account business
 e) Dati di verifica
    Un documento d'identità e/o un selfie, solo se scegli di effettuare la
    verifica. Se effettui la verifica con un documento d'identità, anche i
-   dati letti dal documento e confermati da te: nome, cognome, data di
-   nascita, tipo di documento, paese di rilascio e numero del documento. Vedi
-   la sezione 8.
+   dati che inserisci dal documento: nome, cognome, data di nascita, tipo di
+   documento, paese di rilascio e numero del documento. Vedi la sezione 8.
 
 f) Dati di acquisto
    - Che cosa hai acquistato, quando, il prezzo e la valuta.
@@ -294,8 +293,8 @@ Le persone che hai bloccato non possono vedere il tuo profilo.
 4.2 Mai mostrato agli altri utenti
 
 Le tue coordinate esatte, la data di nascita, l'indirizzo e-mail, il numero di
-telefono, il documento d'identità e i dati identificativi letti da esso, il
-selfie di verifica e le foto dell'album privato (a meno che tu non conceda a
+telefono, il documento d'identità e i dati identificativi che ne hai fornito,
+il selfie di verifica e le foto dell'album privato (a meno che tu non conceda a
 qualcuno l'accesso al tuo album privato).
 
 4.3 Contenuti che condividi
@@ -350,8 +349,9 @@ Finalità                             | Dati utilizzati            | Base giurid
    lettura vocale,                   | elaborare                  | funzione di IA (GDPR 6(1)(a)/(b); LGPD
    traslitterazione                  |                            | 7 I/V). Vedi la sezione 9.
 6. Verifica dell'età e dell'identità | Immagine del documento;    | Consenso esplicito (GDPR 9(2)(a);
-   con un documento d'identità       | i dati letti dal documento | LGPD 11 I). Vedi la sezione 8.
-                                     | e confermati da te         |
+   con un documento d'identità       | i dati che inserisci dal   | LGPD 11 I). Vedi la sezione 8.
+                                     | documento; data di nascita |
+                                     | letta dal documento        |
 7. Verifica tramite selfie           | Selfie, foto del profilo   | Consenso esplicito (GDPR 9(2)(a);
                                      |                            | LGPD 11 I)
 8. Acquisti, monete, abbonamenti,    | Dati di acquisto, registro | Contratto (GDPR 6(1)(b); LGPD 7 V)
@@ -440,8 +440,8 @@ precedenza. Se rifiuti o revochi il consenso:
 - a una funzione di IA, non puoi usare quella funzione di IA, ma il resto di
   GreenGo continua a funzionare;
 - alla verifica, perdi solo le funzioni che richiedono la verifica (vedi la
-  sezione 8). I dati identificativi che hai già confermato sono conservati
-  per la finalità della riga 25 e per il periodo indicato nella sezione 8.2 g.
+  sezione 8). I dati identificativi che hai già fornito sono conservati
+  per la finalità della riga 25 e per il periodo indicato nella sezione 8.2 h.
 
 ================================================================================
 6. ACCOUNT, PROFILO E SCOPERTA
@@ -558,31 +558,35 @@ prenotare esperienze. Potremmo chiedere un documento d'identità solo:
 a) Prima del caricamento, ti spieghiamo che cosa succederà e ti chiediamo il
    consenso esplicito.
 
-b) L'app legge il testo del documento sul tuo dispositivo e compila nome,
-   cognome, data di nascita, tipo di documento, paese di rilascio e numero
-   del documento. Tu controlli questi dati e li confermi.
+b) Dopo aver caricato l'immagine, inserisci nome, cognome, data di nascita,
+   tipo di documento, paese di rilascio e numero del documento.
 
-c) Un membro qualificato del nostro personale controlla i dati che hai
-   confermato confrontandoli con l'immagine del documento.
+c) Per la verifica dell'età, l'immagine viene inviata a Google Cloud Vision,
+   che legge il testo del documento per permetterci di trovare la data di
+   nascita. Google agisce per nostro conto e non conserva nulla in seguito.
 
-d) L'immagine viene CANCELLATA non appena l'esame è terminato. Se dopo 7
+d) Un membro qualificato del nostro personale controlla i dati che hai
+   inserito confrontandoli con l'immagine del documento, e li conferma o li
+   corregge. I dati non esaminati entro 30 giorni vengono CANCELLATI.
+
+e) L'immagine viene CANCELLATA non appena l'esame è terminato. Se dopo 7
    giorni è ancora in attesa di esame, viene CANCELLATA qualunque sia l'esito,
    e puoi caricarla di nuovo. Questo vale per ogni immagine di un documento
    d'identità, compresa la foto in cui tieni in mano il tuo documento
    d'identità, che puoi aggiungere al momento della registrazione (8.3), e il
    documento d'identità del titolare di un'attività (8.4).
 
-e) Dopo l'esame conserviamo:
+f) Dopo l'esame conserviamo:
    - se la tua età è stata verificata (sì o no), il metodo, la data del
      controllo e il tuo anno di nascita;
-   - i dati che hai confermato (nome, cognome, data di nascita, tipo di
+   - i dati esaminati (nome, cognome, data di nascita, tipo di
      documento, paese di rilascio e numero del documento), CIFRATI e tenuti
      separati dal tuo profilo, in un archivio ad accesso limitato.
 
    Non conserviamo l'immagine, la tua nazionalità né la data di scadenza del
    documento.
 
-f) Utilizziamo i dati cifrati solo per identificarti quando la legge lo
+g) Utilizziamo i dati cifrati solo per identificarti quando la legge lo
    richiede: per rispondere a un ordine valido di un tribunale, o a una
    richiesta della polizia o di un'altra autorità competente; per proteggere
    la vita o la sicurezza di qualcuno in un caso grave; o per accertare,
@@ -591,7 +595,7 @@ f) Utilizziamo i dati cifrati solo per identificarti quando la legge lo
    accesso viene registrato. Non li mostriamo mai agli altri utenti e non li
    usiamo mai per nessun altro scopo, ad esempio marketing o profilazione.
 
-g) Conserviamo i dati cifrati finché il tuo account esiste e per 6 mesi dopo
+h) Conserviamo i dati cifrati finché il tuo account esiste e per 6 mesi dopo
    la sua chiusura (il periodo per cui il Marco Civil da Internet brasiliano
    impone la conservazione dei log di accesso, art. 15). Li conserviamo più a
    lungo solo in caso di "legal hold" (sezione 14).
@@ -630,8 +634,8 @@ professionisti che offrono servizi ai consumatori.
 
 Puoi rifiutare o revocare il tuo consenso alla verifica. In tal caso non puoi
 usare le funzioni elencate al punto 8.1 che la richiedono. Il tuo account non
-viene eliminato. I dati identificativi che hai già confermato sono conservati
-come descritto al punto 8.2 f e g.
+viene eliminato. I dati identificativi che hai già fornito sono conservati
+come descritto al punto 8.2 g e h.
 
 8.6 Avviso per i residenti in Illinois, Texas e altri Stati USA con leggi sui
 dati biometrici
@@ -1099,11 +1103,13 @@ Immagini dei documenti d'identità       | Cancellate non appena l'esame è
 (compresa la foto in cui tieni in mano  | terminato, e al più tardi dopo 7 giorni
 il documento e i documenti dei titolari | qualunque sia l'esito (in tal caso puoi
 di attività)                            | caricarle di nuovo)
-Dati identificativi che hai confermato  | Finché il tuo account esiste e per 6
-(nome, cognome, data di nascita, tipo   | mesi dopo la sua chiusura (periodo dei
-di documento, paese di rilascio e       | log di accesso previsto dal Marco Civil
-numero), cifrati (8.2)                  | da Internet); più a lungo solo in caso
-                                        | di "legal hold"
+Dati identificativi dal documento       | Non esaminati: cancellati dopo 30
+(nome, cognome, data di nascita, tipo   | giorni. Esaminati: finché il tuo
+di documento, paese di rilascio e       | account esiste e per 6 mesi dopo la
+numero), cifrati (8.2)                  | sua chiusura (periodo dei log di
+                                        | accesso previsto dal Marco Civil da
+                                        | Internet); più a lungo solo in caso di
+                                        | "legal hold"
 Risultato della verifica dell'età       | Fino all'eliminazione del tuo account
 (sì/no, metodo, data, anno di nascita)  |
 Selfie di verifica                      | Cancellato dopo l'esame; il risultato
@@ -1220,7 +1226,7 @@ h) Conserviamo una breve ricevuta di cancellazione (la data e il numero di
 i) Il tuo numero di telefono viene cancellato con il tuo account. I dati
    identificativi cifrati provenienti da una verifica con documento d'identità
    sono conservati per 6 mesi dopo la chiusura dell'account, e poi cancellati
-   (sezione 8.2 g). Se l'account è stato bannato, conserviamo gli hash con
+   (sezione 8.2 h). Se l'account è stato bannato, conserviamo gli hash con
    chiave del suo indirizzo e-mail e del suo numero di telefono (sezione 14).
 
 15.3 Le monete rimaste nel tuo account e l'eventuale periodo di abbonamento
@@ -1602,13 +1608,15 @@ Verifica del telefono e dati identificativi:
 - Sezioni 3.1 d e 4.3: un numero di contatto dell'attività facoltativo,
   mostrato sulla pagina business solo se l'attività ne attiva la
   visualizzazione.
-- Sezioni 8.2, 8.3 e 8.4: il documento d'identità viene letto sul tuo
-  dispositivo e controllato da un revisore; ogni immagine di un documento
+- Sezioni 8.2, 8.3 e 8.4: inserisci i dati del documento d'identità e un
+  revisore li controlla confrontandoli con l'immagine (i dati non esaminati
+  entro 30 giorni vengono cancellati; per la verifica dell'età Google Cloud
+  Vision legge la data di nascita); ogni immagine di un documento
   d'identità (anche una foto in cui si tiene in mano il documento e il
   documento del titolare di un'attività) viene cancellata dopo l'esame, o
   dopo 7 giorni se è ancora in attesa (puoi caricarla di nuovo); il
-  documento d'identità del titolare di un'attività è facoltativo; i dati che
-  confermi sono conservati
+  documento d'identità del titolare di un'attività è facoltativo; i dati
+  esaminati sono conservati
   in forma cifrata in un archivio ad accesso limitato, solo per identificarti
   quando la legge lo richiede, fino a 6 mesi dopo la chiusura dell'account
   (anche sezioni 2, 3.1, 4.2, 4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 e 22.1).
