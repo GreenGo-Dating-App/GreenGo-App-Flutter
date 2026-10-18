@@ -56,6 +56,7 @@ class EventModel extends Event {
     super.currencyCode,
     super.maxTicketsPerUser,
     super.guestBookingAllowed,
+    super.requireAttendeeNames,
     super.pricePhases,
   });
 
@@ -117,6 +118,7 @@ class EventModel extends Event {
       currencyCode: event.currencyCode,
       maxTicketsPerUser: event.maxTicketsPerUser,
       guestBookingAllowed: event.guestBookingAllowed,
+      requireAttendeeNames: event.requireAttendeeNames,
       pricePhases: event.pricePhases,
     );
   }
@@ -200,6 +202,7 @@ class EventModel extends Event {
               ? null
               : (json['maxTicketsPerUser'] as num?)?.toInt()),
       guestBookingAllowed: json['guestsAllowed'] == true,
+      requireAttendeeNames: json['requireAttendeeNames'] == true,
       pricePhases: PricePhase.listFrom(json['pricePhases']),
       recurrence: json['recurrence'] is Map
           ? EventRecurrence.fromMap(
@@ -279,6 +282,8 @@ class EventModel extends Event {
       'maxTicketsPerUser': maxTicketsPerUser,
       // Shared-link guest booking: only ever true on a public event.
       'guestsAllowed': guestBookingAllowed && visibility == EventVisibility.public,
+      // "Ask for attendee names" (paid events only; the server enforces it).
+      'requireAttendeeNames': requireAttendeeNames,
       // Ticket price phases (empty = the single price). Sold counters are
       // server-only (ticket_inventory), never on the event.
       'pricePhases': pricePhases.map((p) => p.toMap()).toList(),

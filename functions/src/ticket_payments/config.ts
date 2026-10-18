@@ -40,6 +40,17 @@ export const SELLER_GATE: 'provider_onboarding' = 'provider_onboarding';
 export const MAX_QUANTITY = 100;
 /** Per-user ticket limit when a listing does not set maxTicketsPerUser (null/0 there = no limit). */
 export const DEFAULT_MAX_TICKETS_PER_USER = 4;
+/**
+ * Owner rule 2026-10-18: a buyer (member uid, or a guest = one e-mail) buys
+ * at most this many PAID tickets per EVENT in total: every open hold + every
+ * paid ticket (ticket_holdings counter), whatever the event's own
+ * maxTicketsPerUser says (it can only be lower). Mirrored in the app
+ * (kMaxTicketsPerBuyer, lib/features/ticket_payments/domain/ticket_payments.dart;
+ * test/features/ticket_payments/ticket_rules_test.dart keeps them in sync).
+ */
+export const MAX_TICKETS_PER_BUYER = 4;
+/** Attendee names (events with requireAttendeeNames): max length of a first / last name. */
+export const ATTENDEE_NAME_MAX = 50;
 /** Refresh MP tokens this long before they expire. */
 export const MP_REFRESH_BEFORE_MS = 10 * 24 * 60 * 60 * 1000;
 

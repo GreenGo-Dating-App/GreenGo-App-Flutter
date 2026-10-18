@@ -188,9 +188,13 @@ describe('what a guest may see and book', () => {
     expect(eventSeatsLeft(publicEvent({ maxAttendees: 0 }), 5)).toBeNull();
     expect(guestTicketCap(publicEvent(), 7)).toBe(4); // default per-buyer limit
     expect(guestTicketCap(publicEvent({ maxTicketsPerUser: 2 }), 7)).toBe(2);
-    expect(guestTicketCap(publicEvent({ maxTicketsPerUser: null }), 7)).toBe(7);
-    expect(guestTicketCap(publicEvent({ maxTicketsPerUser: null }), null)).toBe(LIMITS.maxTickets);
-    expect(guestTicketCap(publicEvent({ maxTicketsPerUser: null, guestsAllowedPerAttendee: 1 }), null)).toBe(2);
+    // Owner rule 2026-10-18: never more than 4 per e-mail per event, whatever the listing says.
+    expect(guestTicketCap(publicEvent({ maxTicketsPerUser: null }), 7)).toBe(4);
+    expect(guestTicketCap(publicEvent({ maxTicketsPerUser: null }), null)).toBe(Math.min(4, LIMITS.maxTickets));
+    expect(guestTicketCap(publicEvent({ maxTicketsPerUser: 10 }), null)).toBe(4);
+    expect(guestTicketCap(publicEvent({ maxTicketsPerUser: null }), 3)).toBe(3);
+    // Plus-ones never limit a PAID order (every person holds a ticket).
+    expect(guestTicketCap(publicEvent({ maxTicketsPerUser: null, guestsAllowedPerAttendee: 1 }), null)).toBe(4);
     expect(guestTicketCap(publicEvent(), 0)).toBe(0);
   });
 });
@@ -352,7 +356,9 @@ describe('shared-link landing (two choices)', () => {
 describe('guest service helpers', () => {
   test('refusal reasons map to guest messages', () => {
     expect(errorKeyFor('sold_out')).toBe('guest.err.soldOut');
-    expect(errorKeyFor('ticket_limit_reached')).toBe('guest.err.limit');
+    expect(errorKeyFor('ticket_limit_reached')).toBe('guest.err.ticketLimit');
+    expect(errorKeyFor('ticket_type_limit_reached')).toBe('guest.err.limit');
+    expect(errorKeyFor('attendee_names_required')).toBe('guest.err.attendeeNames');
     expect(errorKeyFor('time_taken')).toBe('guest.err.slot');
     expect(errorKeyFor('organizer_payments_not_ready')).toBe('guest.err.payment');
     expect(errorKeyFor('guest_instant_only')).toBe('guest.err.unavailable');

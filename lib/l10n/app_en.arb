@@ -15823,7 +15823,109 @@
     "description": "Storefront editor: business category select boxes"
   },
   "userFollowStoresLabel": "Stores",
-  "@userFollowStoresLabel": {"description": "Own profile stats bar: number of business accounts (stores) the user follows; also the title of that list"},
+  "@userFollowStoresLabel": {
+    "description": "Own profile stats bar: number of business accounts (stores) the user follows; also the title of that list"
+  },
   "userFollowEmptyStores": "You don't follow any stores yet",
-  "@userFollowEmptyStores": {"description": "Empty state of the own followed-stores list"}
+  "@userFollowEmptyStores": {
+    "description": "Empty state of the own followed-stores list"
+  },
+  "tpAttendeeNamesSwitch": "Ask for attendee names",
+  "@tpAttendeeNamesSwitch": {
+    "description": "Ticket payments"
+  },
+  "tpAttendeeNamesSwitchHint": "Buyers enter the first and last name of every ticket holder at checkout. Only you and the buyer see them.",
+  "@tpAttendeeNamesSwitchHint": {
+    "description": "Ticket payments"
+  },
+  "tpAttendeeNamesTitle": "Name on each ticket",
+  "@tpAttendeeNamesTitle": {
+    "description": "Ticket payments"
+  },
+  "tpAttendeeNamesBuyerHint": "The organizer asks for the first and last name of every ticket holder.",
+  "@tpAttendeeNamesBuyerHint": {
+    "description": "Ticket payments"
+  },
+  "tpAttendeeTicketN": "Ticket {index}",
+  "@tpAttendeeTicketN": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "tpAttendeeFirstName": "First name",
+  "@tpAttendeeFirstName": {
+    "description": "Ticket payments"
+  },
+  "tpAttendeeLastName": "Last name",
+  "@tpAttendeeLastName": {
+    "description": "Ticket payments"
+  },
+  "tpAttendeeNamesRequired": "Enter a first and last name for every ticket.",
+  "@tpAttendeeNamesRequired": {
+    "description": "Ticket payments"
+  },
+  "tpErrAttendeeNamesRequired": "The organizer needs the first and last name of every ticket holder.",
+  "@tpErrAttendeeNamesRequired": {
+    "description": "Ticket payments"
+  },
+  "tpErrTicketLimit": "You can buy up to {count} tickets for this event",
+  "@tpErrTicketLimit": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tpMaxTicketsPerUserRange": "From 1 to {max} tickets per person, for all their orders together",
+  "@tpMaxTicketsPerUserRange": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "tpTicketHolder": "Ticket holder: {name}",
+  "@tpTicketHolder": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "tpTicketHolders": "Ticket holders: {names}",
+  "@tpTicketHolders": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
+  "evCapacityBelowPhases": "The capacity can’t be lower than the {count} tickets in your price phases. Raise it or lower the phase quantities.",
+  "@evCapacityBelowPhases": {
+    "description": "Events",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "eventPlusOnesPaidNote": "Paid events have no plus-ones: every guest needs their own ticket.",
+  "@eventPlusOnesPaidNote": {
+    "description": "Events"
+  },
+  "eventGuestsNoPlaces": "Not enough places left for your guests.",
+  "@eventGuestsNoPlaces": {
+    "description": "Events"
+  },
+  "csvColTicketHolders": "Ticket holders",
+  "@csvColTicketHolders": {
+    "description": "CSV export"
+  }
 }

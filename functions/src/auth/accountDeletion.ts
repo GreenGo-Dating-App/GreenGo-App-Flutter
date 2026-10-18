@@ -78,6 +78,7 @@ import { retainIdDocumentsOnAccountDeletion } from '../safety/idDocumentRetentio
 import { retainIdentityRecordOnAccountDeletion } from '../safety/identityRecords';
 import { enqueueFollowGraphCleanup, removeFollowGraphRound } from '../social/followCleanup';
 import { preserveForAccountDeletion, LEGAL_HOLD_KEEP_COLLECTIONS } from '../safety/takedowns/legalHold';
+import { attendeeSeats } from '../ticket_payments/ticketRules';
 
 const db = () => admin.firestore();
 const TS = () => admin.firestore.Timestamp.now();
@@ -612,7 +613,12 @@ async function removeGroupMembership(group: string, field: string, counter: stri
         if (!cur.exists) return;
         const p = counter && parent ? await tx.get(parent) : null;
         tx.delete(d.ref);
-        if (p?.exists) tx.update(parent!, { [counter!]: admin.firestore.FieldValue.increment(-1) });
+        // Event rosters count PLACES (1 + guests of a going attendee, 0 for
+        // interested / waitlist); other groups count members.
+        const by = group === 'attendees' ? attendeeSeats(cur.data()) : 1;
+        if (p?.exists && by > 0) tx.update(parent!, { [counter!]: admin.firestore.FieldValue.increment(-by) });
+        // Ticket holder names of this buyer on the same event (organizer-only doc).
+        if (group === 'attendees' && parent) tx.delete(parent.collection('attendee_names').doc(d.id));
       });
     }
   });

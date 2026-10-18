@@ -67,7 +67,7 @@ import 'app_localizations_pt.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -90,11 +90,11 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-    delegate,
-    GlobalMaterialLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-  ];
+        delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -104,7 +104,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('it'),
     Locale('pt'),
-    Locale('pt', 'BR')
+    Locale('pt', 'BR'),
   ];
 
   /// No description provided for @culturalPassportTitle.
@@ -11374,7 +11374,10 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{tierName} membership active until {formattedDate}{coinsText}'**
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText);
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  );
 
   /// No description provided for @membershipActivatedTitle.
   ///
@@ -28295,14 +28298,22 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Renews automatically on {date}.'**
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date);
+    String plan,
+    String price,
+    String interval,
+    String date,
+  );
 
   /// Web (Stripe) subscription cancelled at period end
   ///
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Cancelled; access ends on {date}.'**
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date);
+    String plan,
+    String price,
+    String interval,
+    String date,
+  );
 
   /// No description provided for @billingIntervalMonth.
   ///
@@ -38305,7 +38316,11 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reason: {reason}\nReported message: \"{message}\"\nReported user: {user}\nReported at: {date}'**
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date);
+    String reason,
+    String message,
+    String user,
+    String date,
+  );
 
   /// No description provided for @supportChatWithGreenGoSubject.
   ///
@@ -45044,6 +45059,108 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You don\'t follow any stores yet'**
   String get userFollowEmptyStores;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Ask for attendee names'**
+  String get tpAttendeeNamesSwitch;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Buyers enter the first and last name of every ticket holder at checkout. Only you and the buyer see them.'**
+  String get tpAttendeeNamesSwitchHint;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Name on each ticket'**
+  String get tpAttendeeNamesTitle;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'The organizer asks for the first and last name of every ticket holder.'**
+  String get tpAttendeeNamesBuyerHint;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket {index}'**
+  String tpAttendeeTicketN(int index);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'First name'**
+  String get tpAttendeeFirstName;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Last name'**
+  String get tpAttendeeLastName;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a first and last name for every ticket.'**
+  String get tpAttendeeNamesRequired;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'The organizer needs the first and last name of every ticket holder.'**
+  String get tpErrAttendeeNamesRequired;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'You can buy up to {count} tickets for this event'**
+  String tpErrTicketLimit(int count);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'From 1 to {max} tickets per person, for all their orders together'**
+  String tpMaxTicketsPerUserRange(int max);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket holder: {name}'**
+  String tpTicketHolder(String name);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket holders: {names}'**
+  String tpTicketHolders(String names);
+
+  /// Events
+  ///
+  /// In en, this message translates to:
+  /// **'The capacity can’t be lower than the {count} tickets in your price phases. Raise it or lower the phase quantities.'**
+  String evCapacityBelowPhases(int count);
+
+  /// Events
+  ///
+  /// In en, this message translates to:
+  /// **'Paid events have no plus-ones: every guest needs their own ticket.'**
+  String get eventPlusOnesPaidNote;
+
+  /// Events
+  ///
+  /// In en, this message translates to:
+  /// **'Not enough places left for your guests.'**
+  String get eventGuestsNoPlaces;
+
+  /// CSV export
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket holders'**
+  String get csvColTicketHolders;
 }
 
 class _AppLocalizationsDelegate
@@ -45057,13 +45174,13 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-        'de',
-        'en',
-        'es',
-        'fr',
-        'it',
-        'pt'
-      ].contains(locale.languageCode);
+    'de',
+    'en',
+    'es',
+    'fr',
+    'it',
+    'pt',
+  ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -45099,8 +45216,9 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-      'an issue with the localizations generation tool. Please file an issue '
-      'on GitHub with a reproducible sample app and the gen-l10n configuration '
-      'that was used.');
+    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+    'an issue with the localizations generation tool. Please file an issue '
+    'on GitHub with a reproducible sample app and the gen-l10n configuration '
+    'that was used.',
+  );
 }

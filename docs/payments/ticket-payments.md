@@ -110,6 +110,80 @@ Branch `feat/ticket-payments` · 2026-10-08 · nothing deployed.
 >   files) and the functions that import `ticket_payments/orders.ts` or
 >   `guest/guestService.ts`; see the branch report. No new indexes.
 
+> **Update 2026-10-18 (branch `feat/ticket-rules`): ticket / guest rules.**
+> Nothing deployed. Owner request 2026-10-17/18. Pure helpers in
+> `functions/src/ticket_payments/ticketRules.ts`, mirrored in
+> `lib/features/ticket_payments/domain/ticket_rules.dart`.
+>
+> 1. **Paid events have no plus-ones.** "Plus-ones" = the guests a member
+>    brings on their OWN RSVP: `events.guestsAllowedPerAttendee` (organizer
+>    setting, 0..10) and `events/{id}/attendees/{uid}.guestCount` (the
+>    member's choice). On a paid event (price > 0 or a ticket provider) the
+>    editor shows a note instead of the stepper and saves 0; everything reads
+>    an older stored value as 0 (`Event.plusOnesAllowed`, server
+>    `plusOnesAllowed`); the rules refuse a client attendee write that sets /
+>    changes `guestCount` on a paid event and an event write that sets
+>    `guestsAllowedPerAttendee` > 0 on a paid event (or makes an event with
+>    plus-ones paid). A BUYER's `guestCount = ticketCount - 1` is still
+>    written by the server (`markOrderPaid`): those are paid seats. The
+>    shared-link guest booking without an account (`guestsAllowed`) is
+>    unchanged, but its paid quantity no longer depends on
+>    `guestsAllowedPerAttendee` (`guestTicketCap`).
+> 2. **At most 4 paid tickets per buyer per event** (`MAX_TICKETS_PER_BUYER`
+>    = app `kMaxTicketsPerBuyer`, sync test
+>    `test/features/ticket_payments/ticket_rules_test.dart`). Counted in the
+>    existing per-buyer doc `ticket_holdings/event_{id}_{uid}` (`held` = open
+>    orders + `owned` = paid; small per-buyer doc, written in the
+>    `createTicketCheckout` transaction and released exactly where seats are
+>    released: cancel / expire / reject / supersede, refund / dispute). The
+>    event's own `maxTicketsPerUser` can only lower it (null / 0 / > 4 = 4).
+>    Guests: the guest key is per e-mail, so it is 4 per e-mail per event.
+>    Refusal `ticket_limit_reached` + `{ limit, remaining, kind }` -> "You can
+>    buy up to 4 tickets for this event" (guest page: `guest.err.ticketLimit`).
+>    The buy sheet stepper stops at `min(4 - already held/owned, places left)`.
+> 3. **"Ask for attendee names"** (`events.requireAttendeeNames`, paid events,
+>    editor switch, rules: bool). The checkout sends `attendees: [{ firstName,
+>    lastName }]`, one per ticket (trimmed, inner spaces collapsed, 1..50
+>    chars, no control / bidi characters); without them
+>    `attendee_names_required` (members and guest pages: ticket 1 in the
+>    guest's own name, rows 2..N on the form). Stored on the order
+>    (`attendeeNames`), on each ticket (`attendeeName`, `attendeeFirstName`,
+>    `attendeeLastName`) and in `events/{id}/attendee_names/{buyerId}`
+>    (`{ names: [{ ticketId, firstName, lastName }] }`, server-only writes,
+>    read by that buyer and the organizer / co-owners only; refunds remove
+>    their tickets, account deletion the doc). Shown on the ticket screen,
+>    the ticket e-mail QR caption, the door result (`checkInTicket` returns
+>    `attendeeName`), the organizer's attendee list and check-in checklist,
+>    and the participants CSV ("Ticket holders" column, only when names exist).
+> 4. **Capacity vs price phases.** Unchanged server check (every checkout:
+>    `price_phases_invalid` / `phases_exceed_capacity`, also when the organizer
+>    LOWERED the capacity after setting the phases); the editor now shows "The
+>    capacity can't be lower than the N tickets in your price phases" on the
+>    capacity field and blocks the save. Tested in
+>    `ticket-rules.emulator.test.ts`.
+> 5. **Free events count places = 1 + plus-ones.** `events.attendeeCount` is
+>    the sum of `1 + guestCount` over going attendees (paid events: sold
+>    seats, as before). The app changes plus-ones in ONE transaction with the
+>    counter (`setAttendeeGuestCount`, refused past the capacity), cancelling
+>    frees `1 + guestCount`, waitlist promotion only promotes someone whose
+>    `1 + guestCount` fits, re-joining keeps the plus-ones, the recount uses
+>    count + sum(guestCount) aggregates, `Event.goingCount` / `spotsLeft`
+>    count places (capacity 20 + one "+1" RSVP = 18 left). Rules: a change of
+>    `guestCount` while going must move `attendeeCount` by exactly the
+>    difference in the same write and stay <= capacity; becoming going
+>    yourself needs `attendeeCount + 1 + guestCount <= maxAttendees`; a
+>    promotion must leave the counter <= capacity. Account deletion /
+>    profile cleanup decrement by the attendee's places (0 when not going).
+>    Old apps: setting plus-ones without moving the counter is now refused.
+> * Tests: `functions/__tests__/unit/ticketRules.test.ts`,
+>   `functions/__tests__/security/ticket-rules.emulator.test.ts` (both rule
+>   files), `test/features/ticket_payments/ticket_rules_test.dart`,
+>   `test/unit/events/event_places_test.dart`.
+> * Deploy: both rule files (`attendees` places / plus-ones checks,
+>   `attendee_names`, `plusOnesOk` / `attendeeNamesOk` on events) and the
+>   functions that bundle the changed modules; see the branch report. No new
+>   indexes.
+
 GreenGo sells tickets for paid events and paid experiences **without touching
 the ticket money**: every payment goes straight to the organizer; GreenGo's
 service fee (above) is collected on top. The QR ticket exists **only after the
@@ -131,7 +205,7 @@ Profile > Payment methods itself is unchanged (person-to-person use).
 |---|---|
 | Anyone who finishes Stripe / MP onboarding may sell instant tickets (the provider does KYC). Paid experiences still need the existing approved host ID document. | `ticket_payments/config.ts` `SELLER_GATE`; `experience_bookings/service.ts` |
 | Instant hold 30 min; link hold 24 h; organizer confirmation window 48 h; reminder after 6 h then every 12 h | `config.ts` `HOLD_MINUTES`, `LINK_HOLD_HOURS`, `CONFIRM_WINDOW_HOURS`, `REMIND_*` |
-| Max tickets per person 4 (listing `maxTicketsPerUser`; `null`/`0` = no limit; 1..100) | `config.ts` `DEFAULT_MAX_TICKETS_PER_USER`, app `kDefaultMaxTicketsPerUser` |
+| Max tickets per person per EVENT: 4, hard cap since 2026-10-18 (listing `maxTicketsPerUser` 1..4 can only lower it; `null` / `0` / higher = 4). Experiences keep `maxTicketsPerUser` (`null`/`0` = no limit; 1..100) | `config.ts` `MAX_TICKETS_PER_BUYER` / `DEFAULT_MAX_TICKETS_PER_USER`, app `kMaxTicketsPerBuyer` |
 | "Instant recommended" from 30 places (or unlimited) | app `kLargeAudienceThreshold`, overridable with Firestore `app_config/ticket_payments.largeAudienceThreshold` |
 | "Tired of confirming?" hint from 10 waiting payments | app `kPendingConfirmationsHint` |
 | Refunds are done by the organizer in their Stripe / MP dashboard; the `charge.refunded` / `charge.dispute.created` / MP `refunded` / `charged_back` / `in_mediation` webhooks mark the order and **every ticket** refunded/disputed, free the seats and the per-person allowance, and the door refuses the QR | `webhooks.ts`, `orders.ts markOrderReversed` |

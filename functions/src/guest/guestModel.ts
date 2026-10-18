@@ -20,6 +20,7 @@
  */
 import * as crypto from 'crypto';
 import { isTakenDown, millis, str } from '../share/sharePreviewCore';
+import { MAX_TICKETS_PER_BUYER } from '../ticket_payments/config';
 
 export type GuestKind = 'e' | 'x' | 'a';
 export const GUEST_KINDS: readonly GuestKind[] = ['e', 'x', 'a'];
@@ -189,15 +190,19 @@ export function eventSeatsLeft(d: Record<string, unknown>, held: number): number
   return Math.max(0, max - going - Math.max(0, held));
 }
 
-/** Per-order ticket cap for a guest: listing per-buyer limit, seats left, LIMITS.maxTickets. */
+/**
+ * Per-order ticket cap for a guest (paid events): the listing's per-buyer
+ * limit, never above MAX_TICKETS_PER_BUYER (owner rule 2026-10-18: 4 per
+ * e-mail per event, re-checked in createTicketCheckout against the guest's
+ * earlier orders), the seats left and LIMITS.maxTickets. Plus-ones
+ * (guestsAllowedPerAttendee) do not apply to paid events: every person
+ * holds a ticket.
+ */
 export function guestTicketCap(d: Record<string, unknown>, seatsLeft: number | null): number {
-  let cap = LIMITS.maxTickets;
-  if (!('maxTicketsPerUser' in d)) cap = Math.min(cap, 4);
-  else if (Number.isInteger(d.maxTicketsPerUser) && (d.maxTicketsPerUser as number) > 0) {
+  let cap = Math.min(LIMITS.maxTickets, MAX_TICKETS_PER_BUYER);
+  if (Number.isInteger(d.maxTicketsPerUser) && (d.maxTicketsPerUser as number) > 0) {
     cap = Math.min(cap, d.maxTicketsPerUser as number);
   }
-  const extra = Number(d.guestsAllowedPerAttendee);
-  if (Number.isInteger(extra) && extra >= 0) cap = Math.min(cap, 1 + extra);
   if (seatsLeft !== null) cap = Math.min(cap, seatsLeft);
   return Math.max(0, cap);
 }

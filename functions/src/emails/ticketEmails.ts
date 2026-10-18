@@ -116,6 +116,12 @@ export function ticketTypeSummary(tickets: Array<Record<string, any>>): string |
   return [...counts.entries()].map(([n, c]) => `${n} × ${c}`).join(', ');
 }
 
+/** "Ticket 1 of 2 · Maria Silva" when the event asked for attendee names. */
+export function ticketQrCaption(base: string, tk: Record<string, any>): string {
+  const n = typeof tk.attendeeName === 'string' ? tk.attendeeName.trim() : '';
+  return n ? `${base} · ${n}` : base;
+}
+
 export function placeOf(kind: 'event' | 'experience', l: Record<string, any> | undefined): string | null {
   if (!l) return null;
   return kind === 'event'
@@ -204,7 +210,7 @@ export async function handleTicketOrderUpdate(
       bookingCode: orderBookingCode(orderId, o),
       qrs: tickets.map((tk, i) => ({
         payload: tk.qrPayload,
-        caption: t(locale, 'emailTicketQrCaption', { index: i + 1, count: tickets.length }),
+        caption: ticketQrCaption(t(locale, 'emailTicketQrCaption', { index: i + 1, count: tickets.length }), tk),
       })),
       chat: emailChatLink(locale, kind, o.listingId, o.buyerId),
     });

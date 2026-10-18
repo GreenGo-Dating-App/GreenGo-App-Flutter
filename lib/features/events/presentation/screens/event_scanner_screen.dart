@@ -120,6 +120,7 @@ class _EventScannerScreenState extends State<EventScannerScreen> {
       if (!mounted) return;
       final label = [
         if (r.ticketTypeName != null) r.ticketTypeName!.toUpperCase(),
+        if (r.attendeeName != null) l10n.tpTicketHolder(r.attendeeName!),
         r.name,
       ].where((s) => s.isNotEmpty).join(' · ');
       if (r.approved) {

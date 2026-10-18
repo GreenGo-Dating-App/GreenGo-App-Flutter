@@ -82,6 +82,7 @@ export type ArbKey =
   | 'csvColName'
   | 'csvColStatus'
   | 'csvColTicket'
+  | 'csvColTicketHolders'
   | 'csvStatusCheckedIn'
   | 'csvStatusConfirmed'
   | 'csvStatusPaid'
@@ -497,6 +498,7 @@ export const ARB_KEYS: readonly ArbKey[] = [
   'csvColName',
   'csvColStatus',
   'csvColTicket',
+  'csvColTicketHolders',
   'csvStatusCheckedIn',
   'csvStatusConfirmed',
   'csvStatusPaid',
@@ -914,6 +916,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvColName: "Name",
     csvColStatus: "Status",
     csvColTicket: "Ticket type / party size",
+    csvColTicketHolders: "Ticket holders",
     csvStatusCheckedIn: "checked-in",
     csvStatusConfirmed: "confirmed",
     csvStatusPaid: "paid",
@@ -1329,6 +1332,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvColName: "Name",
     csvColStatus: "Status",
     csvColTicket: "Ticketart / Personenzahl",
+    csvColTicketHolders: "Ticketinhaber",
     csvStatusCheckedIn: "eingecheckt",
     csvStatusConfirmed: "bestätigt",
     csvStatusPaid: "bezahlt",
@@ -1744,6 +1748,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvColName: "Nombre",
     csvColStatus: "Estado",
     csvColTicket: "Tipo de entrada / personas",
+    csvColTicketHolders: "Titulares",
     csvStatusCheckedIn: "registrado",
     csvStatusConfirmed: "confirmado",
     csvStatusPaid: "pagado",
@@ -2159,6 +2164,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvColName: "Nom",
     csvColStatus: "Statut",
     csvColTicket: "Type de billet / personnes",
+    csvColTicketHolders: "Détenteurs des billets",
     csvStatusCheckedIn: "enregistré",
     csvStatusConfirmed: "confirmé",
     csvStatusPaid: "payé",
@@ -2574,6 +2580,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvColName: "Nome",
     csvColStatus: "Stato",
     csvColTicket: "Tipo di biglietto / persone",
+    csvColTicketHolders: "Titolari dei biglietti",
     csvStatusCheckedIn: "check-in fatto",
     csvStatusConfirmed: "confermato",
     csvStatusPaid: "pagato",
@@ -2989,6 +2996,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvColName: "Nome",
     csvColStatus: "Estado",
     csvColTicket: "Tipo de bilhete / pessoas",
+    csvColTicketHolders: "Titulares dos bilhetes",
     csvStatusCheckedIn: "check-in feito",
     csvStatusConfirmed: "confirmado",
     csvStatusPaid: "pago",
@@ -3404,6 +3412,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvColName: "Nome",
     csvColStatus: "Status",
     csvColTicket: "Tipo de ingresso / pessoas",
+    csvColTicketHolders: "Titulares dos ingressos",
     csvStatusCheckedIn: "check-in feito",
     csvStatusConfirmed: "confirmado",
     csvStatusPaid: "pago",

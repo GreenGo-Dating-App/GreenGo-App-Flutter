@@ -8,6 +8,7 @@ import '../../../trader/presentation/widgets/seller_trader_info.dart';
 import '../../data/ticket_payments_service.dart';
 import '../../domain/price_phases.dart';
 import '../../domain/ticket_payments.dart';
+import '../../domain/ticket_rules.dart';
 import '../ticket_l10n.dart';
 import '../ticket_purchase.dart';
 import 'ticket_fee_widgets.dart';
@@ -21,6 +22,9 @@ import 'ticket_fee_widgets.dart';
 /// (an order may span phases, one line per phase) and the shown total is sent
 /// as `expectedTotal` (the server answers `price_changed` if a phase sold out
 /// meanwhile).
+/// At most [kMaxTicketsPerBuyer] tickets per buyer per event (all their
+/// orders together). "Ask for attendee names" events: a first + last name for
+/// every ticket before the checkout opens (the server refuses without them).
 class BuyTicketSheet extends StatefulWidget {
   const BuyTicketSheet({
     super.key,
@@ -62,6 +66,9 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
   int _single = 1;
   // Reserved per price phase (null while loading; events with phases only).
   Map<String, int>? _phaseSold;
+  // "Ask for attendee names": one first / last name pair per ticket.
+  final List<(TextEditingController, TextEditingController)> _names = [];
+  bool _namesError = false;
 
   String get _currency => widget.event.currencyCode ?? isoCurrencyFor(widget.event.currency) ?? 'usd';
 
@@ -106,8 +113,32 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
     return (max - widget.event.attendeeCount).clamp(0, max);
   }
 
-  int? get _canBuy => remainingForBuyer(
-      limit: widget.event.maxTicketsPerUser, alreadyHeld: _held, remainingCapacity: _capacityLeft);
+  // Owner rule 2026-10-18: never more than kMaxTicketsPerBuyer per event.
+  int? get _canBuy =>
+      ticketsBuyerCanAdd(widget.event, alreadyHeld: _held, remainingCapacity: _capacityLeft);
+
+  @override
+  void dispose() {
+    for (final (f, l) in _names) {
+      f.dispose();
+      l.dispose();
+    }
+    super.dispose();
+  }
+
+  /// One name row per selected ticket (controllers kept when the count drops).
+  List<(TextEditingController, TextEditingController)> get _nameRows {
+    final n = _selectedCount.clamp(0, kMaxTicketsPerBuyer);
+    while (_names.length < n) {
+      _names.add((TextEditingController(), TextEditingController()));
+    }
+    return _names.take(n).toList();
+  }
+
+  /// The typed names, or null when a row is missing / invalid.
+  List<AttendeeName>? get _attendees => validAttendeeNames([
+        for (final (f, l) in _nameRows) (f.text, l.text),
+      ]);
 
   int get _selectedCount => (_types?.isNotEmpty ?? false)
       ? _qty.values.fold(0, (a, b) => a + b)
@@ -159,7 +190,8 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
         padding: EdgeInsets.fromLTRB(16, 16, 16, 16 + MediaQuery.viewInsetsOf(context).bottom),
         child: types == null || (widget.event.hasPricePhases && types.isEmpty && _phaseSold == null)
             ? const SizedBox(height: 160, child: Center(child: CircularProgressIndicator(color: AppColors.richGold)))
-            : Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+            : SingleChildScrollView(
+              child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.stretch, children: [
                 Text(l.tpBuyTickets,
                     style: const TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.w700)),
                 const SizedBox(height: 4),
@@ -187,6 +219,7 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
                         _typeRow(l, t, ticketTypeState(t, now)),
                     ]),
                   ),
+                if (widget.event.asksAttendeeNames && _selectedCount > 0) _namesForm(l),
                 const Divider(color: AppColors.divider, height: 24),
                 TicketFeeBreakdownView(subtotal: total, currency: _currency),
                 const SizedBox(height: 12),
@@ -204,6 +237,11 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
                           (_phased && _phaseLines == null)
                       ? null
                       : () {
+                          final attendees = widget.event.asksAttendeeNames ? _attendees : null;
+                          if (widget.event.asksAttendeeNames && attendees == null) {
+                            setState(() => _namesError = true);
+                            return;
+                          }
                           final nav = Navigator.of(context);
                           final parent = nav.context;
                           nav.pop();
@@ -212,12 +250,76 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
                               id: widget.event.id,
                               quantity: _single,
                               items: types.isEmpty ? null : Map.of(_qty),
-                              expectedTotal: _phased ? total : null);
+                              expectedTotal: _phased ? total : null,
+                              attendees: attendees);
                         },
                   child: Text(l.tpContinueToPay(formatTicketAmount(total, _currency))),
                 ),
               ]),
+            ),
       ),
+    );
+  }
+
+  /// "Name on each ticket": first + last name per selected ticket.
+  Widget _namesForm(AppLocalizations l) {
+    final rows = _nameRows;
+    InputDecoration deco(String label) => InputDecoration(
+          labelText: label,
+          isDense: true,
+          counterText: '',
+          labelStyle: const TextStyle(color: AppColors.textSecondary),
+        );
+    return Padding(
+      key: const ValueKey('buy-attendee-names'),
+      padding: const EdgeInsets.only(top: 8),
+      child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+        Text(l.tpAttendeeNamesTitle,
+            style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w600)),
+        Text(l.tpAttendeeNamesBuyerHint,
+            style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
+        for (var i = 0; i < rows.length; i++)
+          Padding(
+            padding: const EdgeInsets.only(top: 8),
+            child: Row(children: [
+              SizedBox(
+                width: 72,
+                child: Text(l.tpAttendeeTicketN(i + 1),
+                    style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
+              ),
+              Expanded(
+                child: TextField(
+                  key: ValueKey('buy-attendee-first-$i'),
+                  controller: rows[i].$1,
+                  maxLength: kAttendeeNameMaxLength,
+                  textCapitalization: TextCapitalization.words,
+                  style: const TextStyle(color: AppColors.textPrimary),
+                  decoration: deco(l.tpAttendeeFirstName),
+                  onChanged: (_) => _namesError ? setState(() => _namesError = false) : null,
+                ),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: TextField(
+                  key: ValueKey('buy-attendee-last-$i'),
+                  controller: rows[i].$2,
+                  maxLength: kAttendeeNameMaxLength,
+                  textCapitalization: TextCapitalization.words,
+                  style: const TextStyle(color: AppColors.textPrimary),
+                  decoration: deco(l.tpAttendeeLastName),
+                  onChanged: (_) => _namesError ? setState(() => _namesError = false) : null,
+                ),
+              ),
+            ]),
+          ),
+        if (_namesError)
+          Padding(
+            padding: const EdgeInsets.only(top: 6),
+            child: Text(l.tpAttendeeNamesRequired,
+                key: const ValueKey('buy-attendee-names-error'),
+                style: const TextStyle(color: AppColors.errorRed, fontSize: 12.5)),
+          ),
+      ]),
     );
   }
 

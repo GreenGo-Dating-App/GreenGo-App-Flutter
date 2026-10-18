@@ -8364,5 +8364,22 @@
   "storefrontCategoryGroupLabel": "Tipo di attività",
   "storefrontCategoryGroupHint": "Scegli un tipo",
   "userFollowStoresLabel": "Negozi",
-  "userFollowEmptyStores": "Non segui ancora nessun negozio"
+  "userFollowEmptyStores": "Non segui ancora nessun negozio",
+  "tpAttendeeNamesSwitch": "Chiedi i nomi dei partecipanti",
+  "tpAttendeeNamesSwitchHint": "Al pagamento chi acquista inserisce nome e cognome di ogni titolare. Li vedete solo tu e chi acquista.",
+  "tpAttendeeNamesTitle": "Nome su ogni biglietto",
+  "tpAttendeeNamesBuyerHint": "L’organizzatore chiede nome e cognome di ogni titolare.",
+  "tpAttendeeTicketN": "Biglietto {index}",
+  "tpAttendeeFirstName": "Nome",
+  "tpAttendeeLastName": "Cognome",
+  "tpAttendeeNamesRequired": "Inserisci nome e cognome per ogni biglietto.",
+  "tpErrAttendeeNamesRequired": "L’organizzatore ha bisogno di nome e cognome di ogni titolare.",
+  "tpErrTicketLimit": "Puoi acquistare fino a {count} biglietti per questo evento",
+  "tpMaxTicketsPerUserRange": "Da 1 a {max} biglietti a persona, sommando tutti gli ordini",
+  "tpTicketHolder": "Titolare: {name}",
+  "tpTicketHolders": "Titolari: {names}",
+  "evCapacityBelowPhases": "La capienza non può essere inferiore ai {count} biglietti delle fasi di prezzo. Aumentala o riduci le quantità delle fasi.",
+  "eventPlusOnesPaidNote": "Gli eventi a pagamento non prevedono accompagnatori: ogni ospite ha bisogno del proprio biglietto.",
+  "eventGuestsNoPlaces": "Non ci sono abbastanza posti per i tuoi ospiti.",
+  "csvColTicketHolders": "Titolari dei biglietti"
 }

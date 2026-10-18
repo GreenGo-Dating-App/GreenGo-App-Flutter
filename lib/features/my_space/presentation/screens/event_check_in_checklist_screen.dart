@@ -11,6 +11,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../../events/presentation/screens/event_scanner_screen.dart';
 import '../../../experience_bookings/presentation/booking_l10n.dart';
+import '../../../ticket_payments/data/ticket_payments_service.dart';
 import '../../data/my_space_repository.dart';
 import '../widgets/check_in_widgets.dart';
 import '../widgets/space_widgets.dart';
@@ -69,6 +70,8 @@ class _EventCheckInChecklistScreenState
   EventCheckInStats? _stats;
   String _query = '';
   CheckInFilter _filter = CheckInFilter.all;
+  // "Ask for attendee names": ticket holders by buyer (organizer-only read).
+  Map<String, List<String>> _holders = const {};
 
   MySpaceRepository get _repo => widget.repository;
 
@@ -76,6 +79,11 @@ class _EventCheckInChecklistScreenState
   void initState() {
     super.initState();
     unawaited(_reload());
+    if (widget.event.asksAttendeeNames) {
+      unawaited(TicketPaymentsService().attendeeNamesByBuyer(widget.event.id).then((m) {
+        if (mounted) setState(() => _holders = m);
+      }));
+    }
   }
 
   @override
@@ -333,7 +341,9 @@ class _EventCheckInChecklistScreenState
       checkedIn: a.checkedIn,
       busy: _busy.contains(a.id),
       onToggle: () => _toggle(a),
-      detail: a.guestCount > 0 ? l.eventGuestsBringing(a.guestCount) : null,
+      detail: (_holders[a.userId]?.isNotEmpty ?? false)
+          ? l.tpTicketHolders(_holders[a.userId]!.join(', '))
+          : (a.guestCount > 0 ? l.eventGuestsBringing(a.guestCount) : null),
       who: Row(children: [
         // Shared-link guest (no account): the generic guest avatar.
         if (a.isGuest)

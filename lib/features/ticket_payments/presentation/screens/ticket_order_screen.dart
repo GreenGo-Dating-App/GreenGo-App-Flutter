@@ -410,6 +410,13 @@ class TicketQrCard extends StatelessWidget {
                   style: const TextStyle(color: AppColors.deepBlack, fontWeight: FontWeight.w800)),
             ),
         ]),
+        if (ticket.attendeeName != null)
+          Padding(
+            padding: const EdgeInsets.only(top: 6),
+            child: Text(l.tpTicketHolder(ticket.attendeeName!),
+                key: ValueKey('ticket-holder-${ticket.id}'),
+                style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w700)),
+          ),
         if (ticket.partySize > 1)
           Padding(
             padding: const EdgeInsets.only(top: 6),

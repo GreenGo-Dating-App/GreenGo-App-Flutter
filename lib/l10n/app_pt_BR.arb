@@ -8364,5 +8364,22 @@
   "storefrontCategoryGroupLabel": "Tipo de negócio",
   "storefrontCategoryGroupHint": "Escolha um tipo",
   "userFollowStoresLabel": "Lojas",
-  "userFollowEmptyStores": "Você ainda não segue nenhuma loja"
+  "userFollowEmptyStores": "Você ainda não segue nenhuma loja",
+  "tpAttendeeNamesSwitch": "Pedir o nome de cada participante",
+  "tpAttendeeNamesSwitchHint": "No pagamento, o comprador informa o nome e sobrenome de cada titular. Só você e o comprador veem.",
+  "tpAttendeeNamesTitle": "Nome em cada ingresso",
+  "tpAttendeeNamesBuyerHint": "O organizador pede o nome e sobrenome de cada titular.",
+  "tpAttendeeTicketN": "Ingresso {index}",
+  "tpAttendeeFirstName": "Nome",
+  "tpAttendeeLastName": "Sobrenome",
+  "tpAttendeeNamesRequired": "Informe um nome e sobrenome para cada ingresso.",
+  "tpErrAttendeeNamesRequired": "O organizador precisa do nome e sobrenome de cada titular.",
+  "tpErrTicketLimit": "Você pode comprar até {count} ingressos para este evento",
+  "tpMaxTicketsPerUserRange": "De 1 a {max} ingressos por pessoa, somando todos os pedidos",
+  "tpTicketHolder": "Titular: {name}",
+  "tpTicketHolders": "Titulares: {names}",
+  "evCapacityBelowPhases": "A capacidade não pode ser menor que os {count} ingressos das suas fases de preço. Aumente-a ou reduza as quantidades das fases.",
+  "eventPlusOnesPaidNote": "Eventos pagos não têm acompanhantes: cada convidado precisa do próprio ingresso.",
+  "eventGuestsNoPlaces": "Não há vagas suficientes para seus convidados.",
+  "csvColTicketHolders": "Titulares dos ingressos"
 }

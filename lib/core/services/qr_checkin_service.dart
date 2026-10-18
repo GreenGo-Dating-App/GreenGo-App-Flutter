@@ -90,7 +90,11 @@ class CheckInOutcome {
     this.reason,
     this.ticketTypeName,
     this.partySize = 1,
+    this.attendeeName,
   });
+
+  /// "Ask for attendee names": the holder of THIS ticket (paid events).
+  final String? attendeeName;
 
   /// Paid tickets: the ticket type (VIP, General…) shown big at the door.
   final String? ticketTypeName;
@@ -273,6 +277,9 @@ class QrCheckinService {
         guestCount: ((m['partySize'] as num?)?.toInt() ?? 1) - 1,
         ticketTypeName: m['ticketTypeName'] as String?,
         partySize: (m['partySize'] as num?)?.toInt() ?? 1,
+        attendeeName: (m['attendeeName'] as String?)?.trim().isEmpty ?? true
+            ? null
+            : (m['attendeeName'] as String).trim(),
       );
     } catch (e) {
       return CheckInOutcome(approved: false, reason: _reasonOf(e));

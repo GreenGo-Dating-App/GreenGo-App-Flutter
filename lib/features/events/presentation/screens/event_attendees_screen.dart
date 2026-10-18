@@ -11,6 +11,7 @@ import '../../../../core/widgets/guest_avatar.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
+import '../../../ticket_payments/data/ticket_payments_service.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../domain/entities/event.dart';
 
@@ -55,6 +56,9 @@ class _EventAttendeesScreenState extends State<EventAttendeesScreen> {
   final List<EventAttendee> _items = [];
   final Set<String> _seen = {};
   Map<String, UserBrief> _dir = const {};
+  // "Ask for attendee names": ticket holder names by buyer (organizer and
+  // co-owners only; the rules refuse everyone else).
+  Map<String, List<String>> _holders = const {};
 
   String? _cursor;
   bool _loading = false;
@@ -67,6 +71,20 @@ class _EventAttendeesScreenState extends State<EventAttendeesScreen> {
     super.initState();
     _scroll.addListener(_onScroll);
     _loadMore();
+    if (widget.event.asksAttendeeNames && widget.event.isOwner(widget.currentUserId)) {
+      TicketPaymentsService().attendeeNamesByBuyer(widget.event.id).then((m) {
+        if (mounted) setState(() => _holders = m);
+      });
+    }
+  }
+
+  /// "Ticket holders: Ana Lima, João Silva" (organizer view), or null.
+  Widget? _holdersLine(EventAttendee a) {
+    final names = _holders[a.userId];
+    if (names == null || names.isEmpty) return null;
+    return Text(AppLocalizations.of(context)!.tpTicketHolders(names.join(', ')),
+        key: ValueKey('attendee-holders-${a.userId}'),
+        style: const TextStyle(color: AppColors.textSecondary, fontSize: 11.5));
   }
 
   @override
@@ -284,6 +302,7 @@ class _EventAttendeesScreenState extends State<EventAttendeesScreen> {
           const SizedBox(width: 6),
           const GuestLabel(),
         ]),
+        subtitle: _holdersLine(a),
       );
     }
     final anon = _isAnon(a);
@@ -314,11 +333,12 @@ class _EventAttendeesScreenState extends State<EventAttendeesScreen> {
             fontSize: 14.5,
             fontWeight: FontWeight.w600),
       ),
-      subtitle: a.guestCount > 0
-          ? Text(AppLocalizations.of(context)!.attendeesBringing(a.guestCount),
-              style: const TextStyle(
-                  color: AppColors.textTertiary, fontSize: 11.5))
-          : null,
+      subtitle: _holdersLine(a) ??
+          (a.guestCount > 0
+              ? Text(AppLocalizations.of(context)!.attendeesBringing(a.guestCount),
+                  style: const TextStyle(
+                      color: AppColors.textTertiary, fontSize: 11.5))
+              : null),
       trailing: (isOrganizer || isCoOwner)
           ? Container(
               padding:

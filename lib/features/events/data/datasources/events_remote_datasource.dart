@@ -24,6 +24,37 @@ class RsvpJoinResult {
 }
 
 /// Events Remote Data Source Interface
+/// Plus-ones are refused on a PAID event (owner rule 2026-10-18).
+class PlusOnesNotAllowedException implements Exception {
+  const PlusOnesNotAllowedException();
+}
+
+/// Not enough places left for the plus-ones asked for.
+class NotEnoughPlacesException implements Exception {
+  const NotEnoughPlacesException();
+}
+
+int _guestsOf(Map<String, dynamic>? attendee) {
+  final g = (attendee?['guestCount'] as num?)?.toInt() ?? 0;
+  return g < 0 ? 0 : g;
+}
+
+/// Places one roster entry takes: going = 1 + plus-ones (paid buyers: their
+/// tickets), anything else 0. Mirrors attendeeSeats() in
+/// functions/src/ticket_payments/ticketRules.ts.
+int attendeePlaces(Map<String, dynamic>? attendee) =>
+    (attendee?['status'] as String?) == RSVPStatus.going.name ? 1 + _guestsOf(attendee) : 0;
+
+/// Plus-ones allowed by an event doc: 0 on a paid one (price > 0 or a ticket
+/// provider), else guestsAllowedPerAttendee (0..10).
+int plusOnesAllowedFrom(Map<String, dynamic> ev) {
+  final price = ev['price'];
+  final paid = (price is num && price > 0) || ev['ticketProvider'] != null;
+  if (paid) return 0;
+  final n = (ev['guestsAllowedPerAttendee'] as num?)?.toInt() ?? 0;
+  return n < 0 ? 0 : (n > 10 ? 10 : n);
+}
+
 abstract class EventsRemoteDataSource {
   Future<List<Event>> getEvents({
     String? category,
@@ -720,6 +751,9 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
         if (existingData != null && existingData['rsvpDate'] != null) {
           json['rsvpDate'] = existingData['rsvpDate'];
         }
+        // Already going: keep the plus-ones (they are counted in
+        // attendeeCount; the rules refuse a silent change).
+        if (wasGoing) json['guestCount'] = existingData?['guestCount'] ?? 0;
         tx.set(attendeeRef, json);
 
         // Bump denormalized counters only when newly transitioning to going.
@@ -826,10 +860,14 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       final eventSnap = await tx.get(eventRef);
       final data = eventSnap.data() ?? {};
       final attendeeCount = (data['attendeeCount'] as num?)?.toInt() ?? 0;
+      final maxAttendees = (data['maxAttendees'] as num?)?.toInt() ?? 0;
       final tierCounts =
           Map<String, dynamic>.from(data['tierGoingCounts'] as Map? ?? {});
       final tierGoing =
           tierId != null ? ((tierCounts[tierId] as num?)?.toInt() ?? 0) : 0;
+      // Places the cancelling RSVP held: 1 + plus-ones (re-read here).
+      final mine = await tx.get(attendeeRef);
+      final freed = wasGoing ? attendeePlaces(mine.data()) : 0;
 
       // Re-read the promotion candidate inside the transaction.
       DocumentSnapshot<Map<String, dynamic>>? promoSnap;
@@ -841,17 +879,20 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       var newCount = attendeeCount;
       var newTierGoing = tierGoing;
       if (wasGoing) {
-        newCount = attendeeCount > 0 ? attendeeCount - 1 : 0;
+        newCount = attendeeCount - freed > 0 ? attendeeCount - freed : 0;
         newTierGoing = tierGoing > 0 ? tierGoing - 1 : 0;
       }
 
-      // Auto-promote the oldest still-waitlisted attendee into the freed slot.
+      // Auto-promote the oldest still-waitlisted attendee into the freed
+      // places, when ALL of their places (1 + plus-ones) fit.
+      final promoPlaces = 1 + _guestsOf(promoSnap?.data());
       if (promoSnap != null &&
           promoSnap.exists &&
           (promoSnap.data()?['status'] as String?) ==
-              RSVPStatus.waitlist.name) {
+              RSVPStatus.waitlist.name &&
+          (maxAttendees <= 0 || newCount + promoPlaces <= maxAttendees)) {
         tx.update(promoSnap.reference, {'status': RSVPStatus.going.name});
-        newCount += 1;
+        newCount += promoPlaces;
         newTierGoing += 1;
       }
 
@@ -950,14 +991,41 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
     required String userId,
     required int guestCount,
   }) async {
+    // Owner rule 2026-10-18: plus-ones only on FREE events, and they take
+    // places: the attendee doc and events.attendeeCount change together in
+    // one transaction (the rules check the counter moves by the difference
+    // and never past the capacity).
+    final eventRef = _eventsCollection.doc(eventId);
+    final attendeeRef = eventRef.collection('attendees').doc(userId);
     try {
-      final count = guestCount < 0 ? 0 : guestCount;
-      await _eventsCollection
-          .doc(eventId)
-          .collection('attendees')
-          .doc(userId)
-          .set({'guestCount': count}, SetOptions(merge: true));
+      final count = await _firestore.runTransaction<int>((tx) async {
+        final ev = (await tx.get(eventRef)).data() ?? const <String, dynamic>{};
+        final me = (await tx.get(attendeeRef)).data();
+        final allowed = plusOnesAllowedFrom(ev);
+        if (allowed <= 0 && guestCount > 0) throw const PlusOnesNotAllowedException();
+        final next = guestCount.clamp(0, allowed).toInt();
+        final prev = _guestsOf(me);
+        if (next == prev) return next;
+        final going = (me?['status'] as String?) == RSVPStatus.going.name;
+        if (going) {
+          final taken = (ev['attendeeCount'] as num?)?.toInt() ?? 0;
+          final max = (ev['maxAttendees'] as num?)?.toInt() ?? 0;
+          final after = taken + (next - prev);
+          if (next > prev && max > 0 && after > max) throw const NotEnoughPlacesException();
+          tx.update(eventRef, {'attendeeCount': after < 0 ? 0 : after});
+        }
+        if (me != null) {
+          tx.update(attendeeRef, {'guestCount': next});
+        } else {
+          tx.set(attendeeRef, {'guestCount': next}, SetOptions(merge: true));
+        }
+        return next;
+      });
       debugPrint('Guest count set: $userId -> $eventId ($count)');
+    } on PlusOnesNotAllowedException {
+      rethrow;
+    } on NotEnoughPlacesException {
+      rethrow;
     } catch (e) {
       debugPrint('Error setting guest count: $e');
       throw ServerException('Failed to set guest count: $e');
@@ -1433,17 +1501,25 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
   /// Update the attendeeCount field on the event document
   Future<void> _updateAttendeeCount(String eventId) async {
     try {
-      // Server-side count aggregate: the same exact number as reading every
-      // going attendee, without downloading them (1 read per 1000 docs).
-      final agg = await _eventsCollection
+      // PLACES (owner rule 2026-10-18): every going attendee counts 1 + their
+      // plus-ones. Server-side aggregates (count + sum of guestCount): exact,
+      // without downloading the attendees (1 read per 1000 docs).
+      final going = _eventsCollection
           .doc(eventId)
           .collection('attendees')
-          .where('status', isEqualTo: RSVPStatus.going.name)
-          .count()
-          .get();
+          .where('status', isEqualTo: RSVPStatus.going.name);
+      int places;
+      try {
+        final agg = await going.aggregate(count(), sum('guestCount')).get();
+        places = (agg.count ?? 0) + (agg.getSum('guestCount')?.round() ?? 0);
+      } catch (e) {
+        // Aggregate sum unavailable (older SDK / emulator): people only.
+        debugPrint('attendee places sum failed, counting people: $e');
+        places = (await going.count().get()).count ?? 0;
+      }
 
       await _eventsCollection.doc(eventId).update({
-        'attendeeCount': agg.count ?? 0,
+        'attendeeCount': places,
       });
     } catch (e) {
       debugPrint('Error updating attendee count: $e');

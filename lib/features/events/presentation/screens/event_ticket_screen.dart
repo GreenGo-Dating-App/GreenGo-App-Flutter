@@ -227,9 +227,12 @@ class _EventTicketScreenState extends State<EventTicketScreen> {
   }
 
   Future<void> _setGuestCount(int value) async {
-    final clamped =
-        value.clamp(0, widget.event.guestsAllowedPerAttendee).toInt();
+    // Plus-ones: free events only; each takes a place (owner rule 2026-10-18).
+    final clamped = value.clamp(0, widget.event.plusOnesAllowed).toInt();
     if (clamped == _guestCount) return;
+    final before = _guestCount;
+    final messenger = ScaffoldMessenger.of(context);
+    final l10n = AppLocalizations.of(context)!;
     setState(() {
       _guestCount = clamped;
       _savingGuests = true;
@@ -240,6 +243,15 @@ class _EventTicketScreenState extends State<EventTicketScreen> {
         userId: widget.userId,
         guestCount: clamped,
       );
+    } catch (e) {
+      // Not saved: show the count that is actually stored.
+      if (mounted) setState(() => _guestCount = before);
+      messenger.showSnackBar(SnackBar(
+          content: Text(e is NotEnoughPlacesException
+              ? l10n.eventGuestsNoPlaces
+              : e is PlusOnesNotAllowedException
+                  ? l10n.eventPlusOnesPaidNote
+                  : l10n.eventsRsvpError)));
     } finally {
       if (mounted) setState(() => _savingGuests = false);
     }
@@ -575,7 +587,7 @@ class _EventTicketScreenState extends State<EventTicketScreen> {
   }
 
   Widget _buildGuestPicker(AppLocalizations l10n) {
-    final max = widget.event.guestsAllowedPerAttendee;
+    final max = widget.event.plusOnesAllowed;
     return GlassContainer(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
       child: Row(

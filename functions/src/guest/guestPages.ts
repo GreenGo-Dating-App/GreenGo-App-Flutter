@@ -44,6 +44,12 @@ export interface FormView {
   partyMax?: number;
   /** "Stripe" | "Mercado Pago" (pay mode). */
   provider?: string;
+  /**
+   * "Ask for attendee names" (paid events): the most tickets one order can
+   * have. Ticket 1 is in the guest's own name; rows 2..N ask the name of
+   * every other ticket holder (only the rows up to the chosen quantity count).
+   */
+  attendeeNames?: number;
 }
 
 export interface ListingView {
@@ -62,6 +68,8 @@ export interface ListingView {
   /** Localized error from the last submit. */
   error: string | null;
   values?: Partial<GuestInput>;
+  /** Names typed for tickets 2..N (kept when the form is shown again). */
+  attendeeValues?: Array<{ firstName: string; lastName: string }>;
 }
 
 const CSS = `
@@ -87,6 +95,7 @@ label{display:block;font-weight:600;margin:12px 0 4px}
 input[type=text],input[type=email],select{width:100%;padding:12px;border-radius:10px;border:1px solid #3a3a3a;background:#0f0f0f;color:#fff;font:inherit}
 input:focus,select:focus{outline:2px solid #D4AF37;outline-offset:1px}
 .row{display:flex;gap:12px}.row>div{flex:1;min-width:0}
+fieldset.attendees{border:1px solid #333;border-radius:12px;padding:10px 12px;margin:12px 0}fieldset.attendees legend{color:#D4AF37;font-weight:600;padding:0 6px}
 .hint{font-size:13px;color:#9A9A9A;margin:4px 0 0}
 .chk{display:flex;gap:10px;align-items:flex-start;font-weight:400;margin-top:16px}
 .chk input{margin-top:4px;width:18px;height:18px;flex:none}
@@ -159,6 +168,20 @@ function formHtml(v: ListingView, f: FormView): string {
   if (f.slots) {
     choice += select('slot', gt(L, 'guest.form.time'), f.slots);
     choice += select('partySize', gt(L, 'guest.form.partySize'), range(Math.max(1, f.partyMin ?? 1), Math.max(1, f.partyMin ?? 1, f.partyMax ?? 1)), String(Math.max(1, f.partyMin ?? 1)));
+  }
+  if (f.attendeeNames && f.attendeeNames > 1) {
+    const av = v.attendeeValues ?? [];
+    let rows = '';
+    for (let i = 2; i <= f.attendeeNames; i++) {
+      const x = av[i - 2] ?? { firstName: '', lastName: '' };
+      rows += `<p class="hint" style="margin:10px 0 4px">${e(gt(L, 'guest.form.attendeeN', { index: i }))}</p>
+<div class="row">
+<div><label for="att_${i}_first">${e(gt(L, 'guest.form.firstName'))}</label><input type="text" id="att_${i}_first" name="att_${i}_first" maxlength="50" autocomplete="off" value="${e(x.firstName)}" /></div>
+<div><label for="att_${i}_last">${e(gt(L, 'guest.form.lastName'))}</label><input type="text" id="att_${i}_last" name="att_${i}_last" maxlength="50" autocomplete="off" value="${e(x.lastName)}" /></div>
+</div>`;
+    }
+    choice += `<fieldset class="attendees"><legend>${e(gt(L, 'guest.form.attendeesTitle'))}</legend>
+<p class="hint">${e(gt(L, 'guest.form.attendeesHint'))}</p>${rows}</fieldset>`;
   }
   const note = f.mode === 'pay' && f.provider
     ? `<p class="hint">${e(gt(L, 'guest.form.secureNote', { provider: f.provider }))}</p>`

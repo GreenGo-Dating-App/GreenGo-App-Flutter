@@ -2,6 +2,7 @@ import '../../../generated/app_localizations.dart';
 import '../data/ticket_payments_service.dart';
 import '../domain/price_phases.dart';
 import '../domain/ticket_payments.dart';
+import '../domain/ticket_rules.dart';
 
 /// Localized texts for ticket payments (reason codes, statuses, methods).
 class TicketL10n {
@@ -105,7 +106,13 @@ class TicketL10n {
         return l.tpErrPriceChanged(formatTicketAmount(total.toInt(), currency));
       }
     }
+    // Owner rule 2026-10-18: at most kMaxTicketsPerBuyer per event in total.
+    if (reason == 'ticket_limit_reached' && e is TicketPaymentException && e.details['kind'] != 'experience') {
+      final limit = e.details['limit'];
+      return l.tpErrTicketLimit(limit is num ? limit.toInt() : kMaxTicketsPerBuyer);
+    }
     return switch (reason) {
+      'attendee_names_required' => l.tpErrAttendeeNamesRequired,
       'price_phases_invalid' => l.tpErrPricePhasesInvalid,
       'payments_not_configured' => l.tpBlockNotConfigured,
       'organizer_payments_not_ready' => l.tpErrNotOnSale,
