@@ -56,6 +56,15 @@ export function isSupportConversation(c: Record<string, any> | undefined): boole
   return c.conversationType === 'support' || c.userId2 === 'support_system' || c.matchId === 'support';
 }
 
+/**
+ * A buyer <-> organizer conversation created by openListingChat (Admin SDK)
+ * for a verified ticket holder / booked guest: never counted against the
+ * daily cap. Clients cannot write `context.buyer == true` (firestore rules).
+ */
+export function isBuyerChatConversation(c: Record<string, any> | undefined): boolean {
+  return !!c && !!c.context && typeof c.context === 'object' && c.context.buyer === true;
+}
+
 /** Today's connect count stored in `usage` (0 when it is from an earlier day). */
 export function connectsToday(usage: Record<string, any> | undefined, nowMs: number): number {
   if (!usage) return 0;
@@ -78,7 +87,7 @@ export const onConversationCreatedCountConnect = onDocumentCreated(
     const snap = event.data;
     if (!snap) return;
     const c = snap.data() as Record<string, any>;
-    if (isSupportConversation(c)) return;
+    if (isSupportConversation(c) || isBuyerChatConversation(c)) return;
     const uid = c.userId1;
     if (typeof uid !== 'string' || !uid || uid.includes('/')) return;
     const usageRef = db.collection(USAGE_COLLECTION).doc(uid);

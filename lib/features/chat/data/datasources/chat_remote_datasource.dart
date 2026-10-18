@@ -283,6 +283,7 @@ abstract class ChatRemoteDataSource {
     required String currentUserId,
     required String otherUserId,
     bool businessInquiry,
+    bool businessOwnerSide,
   });
 
   /// Toggle favorite status for a conversation
@@ -2141,7 +2142,9 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     required String currentUserId,
     required String otherUserId,
     bool businessInquiry = false,
+    bool businessOwnerSide = false,
   }) async {
+    if (businessOwnerSide) businessInquiry = true;
     try {
       // Generate synthetic matchId for search conversations.
       // A BUSINESS inquiry gets its OWN directional id (business owner =
@@ -2149,9 +2152,13 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       // from the two users' personal chat — otherwise contacting a business
       // reused (and polluted) the personal `search_a_b` thread.
       final sortedIds = [currentUserId, otherUserId]..sort();
-      final syntheticMatchId = businessInquiry
-          ? 'bizsearch_${otherUserId}_$currentUserId'
-          : 'search_${sortedIds[0]}_${sortedIds[1]}';
+      // The business OWNER writing to a customer (Business Center >
+      // Customers) opens the same directional conversation from its side.
+      final syntheticMatchId = businessOwnerSide
+          ? 'bizsearch_${currentUserId}_$otherUserId'
+          : businessInquiry
+              ? 'bizsearch_${otherUserId}_$currentUserId'
+              : 'search_${sortedIds[0]}_${sortedIds[1]}';
 
       // Check if conversation already exists. CACHE-FIRST: a returning user's
       // conversation is already in the local cache, so this resolves instantly

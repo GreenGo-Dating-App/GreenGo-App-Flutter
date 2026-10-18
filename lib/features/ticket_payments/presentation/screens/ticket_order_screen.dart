@@ -15,6 +15,9 @@ import '../../data/ticket_payments_service.dart';
 import '../../domain/ticket_payments.dart';
 import '../ticket_l10n.dart';
 import '../widgets/ticket_fee_widgets.dart';
+import '../../../chat/domain/entities/conversation_listing_context.dart';
+import '../../../chat/presentation/listing_chat.dart';
+import '../../../chat/presentation/widgets/listing_chat_widgets.dart';
 
 /// One ticket order, live (`ticket_orders/{id}`):
 ///  * instant (Stripe / MP): "Waiting for payment confirmation…", 30-min
@@ -133,6 +136,22 @@ class _TicketOrderScreenState extends State<TicketOrderScreen> with WidgetsBindi
             ],
             const SizedBox(height: 16),
             _statusCard(l, o),
+            // Buyer <-> organizer chat (a paid order skips the daily cap).
+            if (o.organizerId.isNotEmpty) ...[
+              const SizedBox(height: 12),
+              ListingChatButton(
+                listing: ListingChatRef(
+                  type: o.kind == 'experience'
+                      ? ConversationListingContext.experience
+                      : ConversationListingContext.event,
+                  id: o.listingId,
+                  title: o.title ?? '',
+                  startAt: o.startsAt,
+                  organizerId: o.organizerId,
+                ),
+                currentUserId: FirebaseAuth.instance.currentUser?.uid ?? '',
+              ),
+            ],
             const SizedBox(height: 16),
             ..._body(l, o),
           ]);

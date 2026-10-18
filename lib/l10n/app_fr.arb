@@ -7779,5 +7779,16 @@
   "phoneVerifyAccountPhoneNeeded": "Vérifiez d'abord le numéro de téléphone de votre compte. C'est la seule exigence d'identité pour un compte professionnel.",
   "phoneVerifyOwnerDocumentOptional": "Pièce d'identité du titulaire (facultatif)",
   "phoneVerifyBannerTitleOptional": "Ajoutez votre numéro de téléphone (facultatif)",
-  "phoneVerifyBannerBodyOptional": "Cela aide à protéger votre compte. Votre numéro reste privé."
+  "phoneVerifyBannerBodyOptional": "Cela aide à protéger votre compte. Votre numéro reste privé.",
+  "listingChatMessageOrganizer": "Écrire à l’organisateur",
+  "listingChatMessageHost": "Écrire à l’hôte",
+  "listingChatAbout": "À propos : {title}",
+  "listingChatAboutDated": "À propos : {title} · {date}",
+  "listingChatTicketHolder": "Détenteur de billet",
+  "listingChatBooked": "Réservé",
+  "businessLeadMessage": "Message",
+  "emailAskOrganizer": "Demander à l’organisateur",
+  "emailMessageHost": "Écrire à l’hôte",
+  "emailGuestChatInviteOrganizer": "Créez un compte gratuit pour écrire à l’organisateur.",
+  "emailGuestChatInviteHost": "Créez un compte gratuit pour écrire à l’hôte."
 }

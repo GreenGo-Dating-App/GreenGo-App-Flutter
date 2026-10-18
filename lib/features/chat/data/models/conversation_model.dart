@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../domain/entities/conversation.dart';
+import '../../domain/entities/conversation_listing_context.dart';
 import '../../domain/entities/group_info.dart';
 import '../../domain/entities/message.dart';
 import 'message_model.dart';
@@ -28,6 +29,7 @@ class ConversationModel extends Conversation {
     super.settings,
     super.conversationType,
     super.businessInquiry,
+    super.listingContext,
     super.supportAgentId,
     super.supportPriority,
     super.supportTicketStatus,
@@ -69,6 +71,7 @@ class ConversationModel extends Conversation {
       settings: conversation.settings,
       conversationType: conversation.conversationType,
       businessInquiry: conversation.businessInquiry,
+      listingContext: conversation.listingContext,
       supportAgentId: conversation.supportAgentId,
       supportPriority: conversation.supportPriority,
       supportTicketStatus: conversation.supportTicketStatus,
@@ -173,6 +176,7 @@ class ConversationModel extends Conversation {
       settings: data['settings'] as Map<String, dynamic>?,
       conversationType: conversationType,
       businessInquiry: data['businessInquiry'] as bool? ?? false,
+      listingContext: ConversationListingContext.fromMap(data['context']),
       supportAgentId: data['supportAgentId'] as String?,
       supportPriority: supportPriority,
       supportTicketStatus: supportTicketStatus,
@@ -353,6 +357,7 @@ class ConversationModel extends Conversation {
       settings: settings,
       conversationType: conversationType,
       businessInquiry: businessInquiry,
+      listingContext: listingContext,
       supportAgentId: supportAgentId,
       supportPriority: supportPriority,
       supportTicketStatus: supportTicketStatus,

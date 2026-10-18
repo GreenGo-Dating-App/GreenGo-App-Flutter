@@ -235,6 +235,6 @@ export const sharePreview = onRequest(
 
     res.set('Cache-Control', htmlCache(kind));
     res.set('Vary', 'Accept-Language');
-    res.type('html').send(renderHtml(preview));
+    res.type('html').send(renderHtml(preview, req.query.chat === '1'));
   }),
 );

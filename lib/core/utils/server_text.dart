@@ -178,6 +178,8 @@ String? serverText(
       return l10n.csvStatusConfirmed;
     case 'csvStatusPaid':
       return l10n.csvStatusPaid;
+    case 'emailAskOrganizer':
+      return l10n.emailAskOrganizer;
     case 'emailBookingConfirmedGuestIntro':
       return l10n.emailBookingConfirmedGuestIntro;
     case 'emailBookingConfirmedHostIntro':
@@ -238,6 +240,12 @@ String? serverText(
       return l10n.emailCopyrightRestoredSubject;
     case 'emailCopyrightStrikeInfo':
       return l10n.emailCopyrightStrikeInfo(_int(p['count']));
+    case 'emailGuestChatInviteHost':
+      return l10n.emailGuestChatInviteHost;
+    case 'emailGuestChatInviteOrganizer':
+      return l10n.emailGuestChatInviteOrganizer;
+    case 'emailMessageHost':
+      return l10n.emailMessageHost;
     case 'emailParticipantsIntro':
       return l10n.emailParticipantsIntro(_str(p['title']), _str(p['when']), _int(p['count']));
     case 'emailParticipantsPrivacy':

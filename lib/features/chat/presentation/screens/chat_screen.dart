@@ -26,6 +26,8 @@ import '../../../../core/services/app_sound_service.dart';
 import '../../domain/message_insights.dart';
 import '../../../../core/services/chat_datasets/chat_datasets.dart';
 import '../widgets/chat_ideas_sheet.dart';
+import '../widgets/listing_chat_widgets.dart';
+import '../../domain/entities/conversation_listing_context.dart';
 import '../widgets/chat_places_bar.dart';
 import '../widgets/attraction_message.dart';
 import '../../../attractions/domain/entities/attraction.dart';
@@ -138,6 +140,23 @@ class _ChatScreenState extends State<ChatScreen> {
       ),
     ));
   }
+
+  /// What this chat is about (buyer <-> organizer chat), or null.
+  ConversationListingContext? get _listingContext {
+    final st = _chatBloc.state;
+    ConversationListingContext? c;
+    if (st is ChatLoaded) {
+      c = st.conversation.listingContext;
+    } else if (st is ChatSending) {
+      c = st.conversation.listingContext;
+    }
+    return c ?? widget.initialConversation?.listingContext;
+  }
+
+  /// Server-verified ticket holder / booked guest chat (`context.buyer`,
+  /// written only by the openListingChat callable): both sides may write
+  /// on any plan; the rules allow it (`buyerChat`).
+  bool get _buyerChat => _listingContext?.buyer ?? false;
 
   /// The conversation a send goes to (the id the bloc writes to).
   String _conversationIdForSend() {
@@ -713,18 +732,22 @@ class _ChatScreenState extends State<ChatScreen> {
   Future<void> _sendMessage(BuildContext _) async {
     // Record activity for online presence
     PresenceService.instance?.recordActivity();
+    // A verified buyer <-> organizer chat needs no plan (server-enforced).
+    final buyerChat = _buyerChat;
     // Valid-membership gate: a valid GreenGo membership is required to send
     // messages. Active Base (free) stays allowed — only a truly expired
     // membership is blocked (routes to the marketplace to renew).
-    if (_currentUserProfile != null &&
+    if (!buyerChat &&
+        _currentUserProfile != null &&
         !await TierGate().ensureValidMembership(context, _currentUserProfile!)) {
       return;
     }
     if (!mounted) return;
     // Base membership gate. Without Base the user may still chat with
     // TierEntitlements.freeDailyChats people a day (server-enforced).
-    final wasMember = _currentUserProfile?.isBaseMembershipActive ?? false;
-    var freeChat = false;
+    final wasMember =
+        buyerChat || (_currentUserProfile?.isBaseMembershipActive ?? false);
+    var freeChat = buyerChat;
     if (!wasMember && _currentUserProfile != null) {
       final claim =
           await FreeChatService.instance.claim(_conversationIdForSend());
@@ -1904,6 +1927,17 @@ class _ChatScreenState extends State<ChatScreen> {
           appBar: _buildAppBar(),
         body: Column(
           children: [
+            // "About: <listing> · <date>" (buyer <-> organizer chat).
+            BlocBuilder<ChatBloc, ChatState>(
+              builder: (context, _) {
+                final c = _listingContext;
+                return c == null
+                    ? const SizedBox.shrink()
+                    : ListingContextChip(
+                        listingContext: c,
+                        currentUserId: widget.currentUserId);
+              },
+            ),
             // Phrase of the Day banner
             if (_showPhraseOfDaySetting) _buildPhraseOfDay(),
             // Chat XP bar
@@ -3665,6 +3699,7 @@ class _ChatScreenState extends State<ChatScreen> {
   /// [Profile.isBaseMembershipActive]). While the own profile is still
   /// loading the composer stays available; the send path re-checks.
   bool get _canReply =>
+      _buyerChat ||
       _currentUserProfile == null ||
       _currentUserProfile!.isBaseMembershipActive ||
       _currentUserProfile!.effectiveTier == MembershipTier.test;

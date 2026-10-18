@@ -15810,5 +15810,62 @@
   "phoneVerifyBannerBodyOptional": "It helps keep your account safe. Your number stays private.",
   "@phoneVerifyBannerBodyOptional": {
     "description": "Own profile banner body for accounts created before 16 Oct 2026"
+  },
+  "listingChatMessageOrganizer": "Message the organizer",
+  "@listingChatMessageOrganizer": {
+    "description": "Button on an event / ticket screen: opens a chat with the event organizer."
+  },
+  "listingChatMessageHost": "Message the host",
+  "@listingChatMessageHost": {
+    "description": "Button on an experience / booking screen: opens a chat with the host."
+  },
+  "listingChatAbout": "About: {title}",
+  "@listingChatAbout": {
+    "description": "Pinned chip at the top of a chat started from a listing.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "listingChatAboutDated": "About: {title} · {date}",
+  "@listingChatAboutDated": {
+    "description": "Pinned chip at the top of a chat started from a listing, with its date.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "listingChatTicketHolder": "Ticket holder",
+  "@listingChatTicketHolder": {
+    "description": "Tag for the organizer: the other person holds a ticket for the event."
+  },
+  "listingChatBooked": "Booked",
+  "@listingChatBooked": {
+    "description": "Tag for the host: the other person booked the experience."
+  },
+  "businessLeadMessage": "Message",
+  "@businessLeadMessage": {
+    "description": "Button on a Business Center customer row: opens a chat with that customer."
+  },
+  "emailAskOrganizer": "Ask the organizer",
+  "@emailAskOrganizer": {
+    "description": "Email button (ticket email): opens the chat with the event organizer."
+  },
+  "emailMessageHost": "Message the host",
+  "@emailMessageHost": {
+    "description": "Email button (booking / ticket email): opens the chat with the experience host."
+  },
+  "emailGuestChatInviteOrganizer": "Create a free account to message the organizer.",
+  "@emailGuestChatInviteOrganizer": {
+    "description": "Email line for a guest buyer without an account, above the chat button."
+  },
+  "emailGuestChatInviteHost": "Create a free account to message the host.",
+  "@emailGuestChatInviteHost": {
+    "description": "Email line for a guest buyer without an account, above the chat button."
   }
 }

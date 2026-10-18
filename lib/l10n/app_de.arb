@@ -8353,5 +8353,16 @@
   "phoneVerifyAccountPhoneNeeded": "Bestätige zuerst die Telefonnummer deines Kontos. Sie ist die einzige Identitätsanforderung für ein Business-Konto.",
   "phoneVerifyOwnerDocumentOptional": "Ausweis des Inhabers (optional)",
   "phoneVerifyBannerTitleOptional": "Füge deine Telefonnummer hinzu (optional)",
-  "phoneVerifyBannerBodyOptional": "Das hilft, dein Konto zu schützen. Deine Nummer bleibt privat."
+  "phoneVerifyBannerBodyOptional": "Das hilft, dein Konto zu schützen. Deine Nummer bleibt privat.",
+  "listingChatMessageOrganizer": "Dem Veranstalter schreiben",
+  "listingChatMessageHost": "Dem Gastgeber schreiben",
+  "listingChatAbout": "Zu: {title}",
+  "listingChatAboutDated": "Zu: {title} · {date}",
+  "listingChatTicketHolder": "Ticketinhaber",
+  "listingChatBooked": "Gebucht",
+  "businessLeadMessage": "Nachricht",
+  "emailAskOrganizer": "Den Veranstalter fragen",
+  "emailMessageHost": "Dem Gastgeber schreiben",
+  "emailGuestChatInviteOrganizer": "Erstelle ein kostenloses Konto, um dem Veranstalter zu schreiben.",
+  "emailGuestChatInviteHost": "Erstelle ein kostenloses Konto, um dem Gastgeber zu schreiben."
 }

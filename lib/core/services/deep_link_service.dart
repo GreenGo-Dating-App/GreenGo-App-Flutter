@@ -11,6 +11,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../../features/attractions/data/datasources/attractions_datasource.dart';
+import '../../features/chat/domain/entities/conversation_listing_context.dart';
+import '../../features/chat/presentation/listing_chat.dart';
 import '../../features/attractions/presentation/screens/attraction_detail_screen.dart';
 import '../../features/communities/domain/repositories/communities_repository.dart';
 import '../../features/communities/presentation/bloc/communities_bloc.dart';
@@ -239,7 +241,7 @@ class DeepLinkService {
         final inner = Uri.tryParse(handOff);
         if (inner != null) {
           final t = _fromSegments(inner.pathSegments);
-          if (t != null) return t;
+          if (t != null) return _withChat(t, inner);
         }
       }
     }
@@ -248,7 +250,16 @@ class DeepLinkService {
     // For `greengo://u/{id}` the "u"/"e" lands in uri.host, not the path.
     if (!isHttp && uri.host.isNotEmpty) segments.add(uri.host);
     segments.addAll(uri.pathSegments);
-    return _fromSegments(segments);
+    final t = _fromSegments(segments);
+    return t == null ? null : _withChat(t, uri);
+  }
+
+  /// `?chat=1` on an event / experience link (ticket and booking e-mails):
+  /// open the listing AND the chat with its organizer / host.
+  static DeepLinkTarget _withChat(DeepLinkTarget t, Uri uri) {
+    final chat = uri.queryParameters['chat'] == '1' &&
+        (t.kind == DeepLinkKind.event || t.kind == DeepLinkKind.experience);
+    return chat ? DeepLinkTarget(t.kind, t.id, openChat: true) : t;
   }
 
   static DeepLinkTarget? _fromSegments(List<String> raw) {
@@ -319,6 +330,7 @@ class DeepLinkService {
         experienceId: target.id,
         currentUserId: currentUserId,
       ));
+      if (target.openChat) _openListingChat(context, target, currentUserId);
     } else if (target.kind == DeepLinkKind.attraction) {
       _openAttraction(context, target.id);
     } else if (target.kind == DeepLinkKind.ticketOrder) {
@@ -334,7 +346,28 @@ class DeepLinkService {
           currentUserId: currentUserId,
         ),
       );
+      if (target.openChat) _openListingChat(context, target, currentUserId);
     }
+  }
+
+  /// The chat with the listing's organizer / host, on top of the listing
+  /// (the server resolves the organizer and the buyer exemption).
+  void _openListingChat(
+      BuildContext context, DeepLinkTarget target, String currentUserId) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final ctx = _navigatorKey.currentContext ?? context;
+      if (!ctx.mounted) return;
+      unawaited(openListingChat(
+        ctx,
+        currentUserId: currentUserId,
+        listing: ListingChatRef(
+          type: target.kind == DeepLinkKind.event
+              ? ConversationListingContext.event
+              : ConversationListingContext.experience,
+          id: target.id,
+        ),
+      ));
+    });
   }
 
   /// Resolve the catalogue image bucket (memoised), then open the attraction.
@@ -398,19 +431,26 @@ enum DeepLinkKind {
 
 @immutable
 class DeepLinkTarget {
-  const DeepLinkTarget(this.kind, this.id);
+  const DeepLinkTarget(this.kind, this.id, {this.openChat = false});
   final DeepLinkKind kind;
   final String id;
 
+  /// Also open the buyer <-> organizer chat (`?chat=1`, events / experiences).
+  final bool openChat;
+
   @override
   bool operator ==(Object other) =>
-      other is DeepLinkTarget && other.kind == kind && other.id == id;
+      other is DeepLinkTarget &&
+      other.kind == kind &&
+      other.id == id &&
+      other.openChat == openChat;
 
   @override
-  int get hashCode => Object.hash(kind, id);
+  int get hashCode => Object.hash(kind, id, openChat);
 
   @override
-  String toString() => 'DeepLinkTarget(${kind.name}, $id)';
+  String toString() =>
+      'DeepLinkTarget(${kind.name}, $id${openChat ? ', chat' : ''})';
 }
 
 /// Share-sheet anchor for iPad (UIActivityViewController is a popover there

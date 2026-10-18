@@ -15,6 +15,7 @@ import '../../profile/domain/entities/profile.dart';
 import '../../profile/domain/repositories/profile_repository.dart';
 import '../data/datasources/chat_remote_datasource.dart';
 import '../data/models/conversation_model.dart';
+import '../domain/entities/conversation_listing_context.dart';
 import 'screens/chat_screen.dart';
 import '../../safety/data/services/age_assurance_service.dart';
 import '../../safety/presentation/screens/age_assurance_required_screen.dart';
@@ -38,11 +39,27 @@ Future<void> openConnectChat(
   required String otherUserId,
   Profile? otherUserProfile,
   bool? businessInquiry,
+  ConversationListingContext? listingContext,
+  bool businessOwnerSide = false,
 }) async {
   final l10n = AppLocalizations.of(context)!;
   final navigator = Navigator.of(context);
   final messenger = ScaffoldMessenger.of(context);
   final tierGate = TierGate();
+
+  // From a listing ("Message the organizer"): the organizer's storefront is
+  // chosen automatically (no person/business sheet), like the server does.
+  if (listingContext != null && businessInquiry == null) {
+    final p = otherUserProfile ?? await resolveChatProfile(otherUserId)
+        .catchError((Object _) => null);
+    businessInquiry = p != null && p.isBusiness &&
+        (p.businessName?.isNotEmpty ?? false);
+    otherUserProfile ??= p;
+  }
+  if (!context.mounted) return;
+  // Business Center > Customers: the owner writes to a customer from the
+  // business inbox (bizsearch_{owner}_{customer}).
+  if (businessOwnerSide) businessInquiry = true;
 
   // Resolve WHICH identity to chat with. When the caller didn't force it
   // (businessInquiry == null) and the target is a business storefront, ask the
@@ -113,9 +130,11 @@ Future<void> openConnectChat(
     final sortedIds = [currentUserId, otherUserId]..sort();
     // Must mirror getOrCreateSearchConversation: business inquiries live in
     // their own directional conversation, separate from the personal chat.
-    final syntheticMatchId = isBusinessChat
-        ? 'bizsearch_${otherUserId}_$currentUserId'
-        : 'search_${sortedIds[0]}_${sortedIds[1]}';
+    final syntheticMatchId = businessOwnerSide
+        ? 'bizsearch_${currentUserId}_$otherUserId'
+        : isBusinessChat
+            ? 'bizsearch_${otherUserId}_$currentUserId'
+            : 'search_${sortedIds[0]}_${sortedIds[1]}';
     // Existence check is CACHE-FIRST: for a returning user (the conversation is
     // already in the local Firestore cache) this resolves INSTANTLY with no
     // network round-trip, so re-opening a chat is immediate. Only a cache miss
@@ -163,6 +182,8 @@ Future<void> openConnectChat(
             otherUserId: otherUserId,
             otherUserProfile: otherUserProfile,
             businessInquiry: isBusinessChat,
+            listingContext: listingContext,
+            businessOwnerSide: businessOwnerSide,
           );
         }
       }
@@ -196,6 +217,7 @@ Future<void> openConnectChat(
               currentUserId: currentUserId,
               otherUserId: otherUserId,
               businessInquiry: isBusinessChat,
+              businessOwnerSide: businessOwnerSide,
             )
             .timeout(const Duration(seconds: 12));
       } catch (e) {
@@ -229,8 +251,27 @@ Future<void> openConnectChat(
             currentUserId: currentUserId,
             otherUserId: otherUserId,
             businessInquiry: isBusinessChat,
+            businessOwnerSide: businessOwnerSide,
           )
           .timeout(const Duration(seconds: 12));
+    }
+
+    // Topic card ("About: <listing>"): stamp the latest listing on the
+    // conversation (the history is kept). Best-effort, never blocks opening.
+    if (listingContext != null &&
+        !listingContext.sameListing(conversation.listingContext)) {
+      final topic = listingContext.copyWith(buyer: false);
+      try {
+        await FirebaseFirestore.instance
+            .collection('conversations')
+            .doc(conversation.conversationId)
+            .update({'context': topic.toClientMap()})
+            .timeout(const Duration(seconds: 8));
+      } catch (_) {
+        // Offline / refused: the chat still opens; the chip shows locally.
+      }
+      conversation = ConversationModel.fromEntity(
+          conversation.copyWith(listingContext: topic));
     }
 
     // Dismiss the loading barrier before navigating.
@@ -325,6 +366,9 @@ Future<bool?> _askBusinessOrPersonChat(
     ),
   );
 }
+
+/// The other user's profile for opening a chat (see [_resolveProfile]).
+Future<Profile?> resolveChatProfile(String uid) => _resolveProfile(uid);
 
 /// The other user's profile for opening a chat: the shared directory's
 /// cached copy when present, else its batched/cached resolve, else the

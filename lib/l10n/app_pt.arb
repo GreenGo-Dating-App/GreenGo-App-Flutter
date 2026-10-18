@@ -8353,5 +8353,16 @@
   "phoneVerifyAccountPhoneNeeded": "Verifique primeiro o número de telemóvel da sua conta. É o único requisito de identidade para uma conta de empresa.",
   "phoneVerifyOwnerDocumentOptional": "Documento de identificação do titular (opcional)",
   "phoneVerifyBannerTitleOptional": "Adicione o seu número de telemóvel (opcional)",
-  "phoneVerifyBannerBodyOptional": "Ajuda a manter a sua conta segura. O seu número fica privado."
+  "phoneVerifyBannerBodyOptional": "Ajuda a manter a sua conta segura. O seu número fica privado.",
+  "listingChatMessageOrganizer": "Enviar mensagem ao organizador",
+  "listingChatMessageHost": "Enviar mensagem ao anfitrião",
+  "listingChatAbout": "Sobre: {title}",
+  "listingChatAboutDated": "Sobre: {title} · {date}",
+  "listingChatTicketHolder": "Tem bilhete",
+  "listingChatBooked": "Reservado",
+  "businessLeadMessage": "Mensagem",
+  "emailAskOrganizer": "Perguntar ao organizador",
+  "emailMessageHost": "Enviar mensagem ao anfitrião",
+  "emailGuestChatInviteOrganizer": "Cria uma conta gratuita para enviar mensagem ao organizador.",
+  "emailGuestChatInviteHost": "Cria uma conta gratuita para enviar mensagem ao anfitrião."
 }

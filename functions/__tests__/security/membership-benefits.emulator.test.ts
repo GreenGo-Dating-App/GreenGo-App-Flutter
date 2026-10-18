@@ -32,6 +32,7 @@ import {
 } from '../../src/entitlements/usage';
 import { handleAiAssist } from '../../src/ai/aiGateway';
 import { claimFreeChat } from '../../src/entitlements/freeChat';
+import { openListingChat } from '../../src/entitlements/listingChat';
 
 const PROJECT = process.env.GCLOUD_PROJECT || 'test-project';
 const db = admin.firestore();
@@ -303,6 +304,59 @@ describe('P-H2 Base membership required to chat', () => {
     expect(await clientWrite(GOLD, `conversations/c_${FREE}/messages/m3`, msg(GOLD))).toBe(200);
     expect(await clientWrite(FREE, `conversations/sup_${FREE}/messages/m1`, msg(FREE))).toBe(200);
     expect(await clientWrite(FREE, `conversations/sup_${FREE}/messages/m2`, { senderId: 'system', content: 'Welcome', type: 'system' })).toBe(200);
+  });
+});
+
+// ---------------------------------------------------------------------------
+describe('Buyer <-> organizer chat (2026-10-17): server-verified context.buyer', () => {
+  const conv = (from: string, to: string, extra: Record<string, any> = {}) =>
+    ({ userId1: from, userId2: to, matchId: `search_${[from, to].sort().join('_')}`, ...extra });
+  const msg = (u: string) => ({ senderId: u, content: 'hi', type: 'text' });
+
+  test('a client can never claim buyer on create or update; a plain topic is fine', async () => {
+    expect(await clientWrite(BASE, 'conversations/b1',
+      conv(BASE, GOLD, { context: { type: 'event', id: 'ev1', buyer: true } }))).toBe(403);
+    expect(await clientWrite(BASE, 'conversations/b2',
+      conv(BASE, GOLD, { context: { type: 'event', id: 'ev1', title: 'T' } }))).toBe(200);
+    expect(await clientWrite(BASE, 'conversations/b2',
+      { context: { type: 'event', id: 'ev1', buyer: true } }, ['context'])).toBe(403);
+  });
+
+  test('a verified context stays (other fields editable), may be replaced by a plain topic, never forged', async () => {
+    await db.doc('conversations/v1').set(conv(GOLD, BASE, { context: { type: 'event', id: 'ev1', buyer: true, buyerId: BASE } }));
+    expect(await clientWrite(BASE, 'conversations/v1', { lastMessageAt: new Date() }, ['lastMessageAt'])).toBe(200);
+    expect(await clientWrite(BASE, 'conversations/v1',
+      { context: { type: 'event', id: 'ev2', buyer: true, buyerId: BASE } }, ['context'])).toBe(403);
+    expect(await clientWrite(BASE, 'conversations/v1', { context: { type: 'event', id: 'ev2', title: 'B' } }, ['context'])).toBe(200);
+  });
+
+  test('without Base: posting is allowed in a verified buyer chat only (both sides)', async () => {
+    await db.doc('conversations/fb').set(conv(FREE, GOLD, { context: { type: 'event', id: 'ev1', buyer: true, buyerId: FREE } }));
+    await db.doc('conversations/fp').set(conv(FREE, SILVER, { context: { type: 'event', id: 'ev1' } }));
+    expect(await clientWrite(FREE, 'conversations/fb/messages/m1', msg(FREE))).toBe(200);
+    expect(await clientWrite(GOLD, 'conversations/fb/messages/m2', msg(GOLD))).toBe(200);
+    expect(await clientWrite(FREE, 'conversations/fp/messages/m1', msg(FREE))).toBe(403);
+  });
+
+  test('openListingChat: a ticket holder over the daily cap gets the chat; the counter skips it', async () => {
+    await db.doc(`entitlement_usage/${FREE}`).set({ connectDayStartMs: dayStart(), connectCount: 10 });
+    await db.doc('events/ev1').set({ organizerId: GOLD, title: 'Samba', startDate: future() });
+    // Before buying: no write, the client create is refused over the cap.
+    const before = await call(openListingChat, { type: 'event', id: 'ev1' }, FREE);
+    expect(before.buyer).toBe(false);
+    expect(await clientWrite(FREE, 'conversations/x1', conv(FREE, GOLD))).toBe(403);
+    // After buying (attendee row written by the payment webhook).
+    await db.doc(`events/ev1/attendees/${FREE}`).set({ status: 'going', ticketStatus: 'valid', isApproved: true });
+    const r = await call(openListingChat, { type: 'event', id: 'ev1' }, FREE);
+    expect(r.buyer).toBe(true);
+    const snap = await db.doc(`conversations/${r.conversationId}`).get();
+    expect(snap.data()!.context).toMatchObject({ type: 'event', id: 'ev1', buyer: true, buyerId: FREE });
+    await (onConversationCreatedCountConnect as any).run({
+      data: fft.firestore.makeDocumentSnapshot(snap.data()!, `conversations/${r.conversationId}`),
+      params: { conversationId: r.conversationId } });
+    expect((await db.doc(`conversations/${r.conversationId}`).get()).exists).toBe(true);
+    expect((await db.doc(`entitlement_usage/${FREE}`).get()).data()!.connectCount).toBe(10);
+    expect(await clientWrite(FREE, `conversations/${r.conversationId}/messages/m1`, msg(FREE))).toBe(200);
   });
 });
 

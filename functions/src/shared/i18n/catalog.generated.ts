@@ -85,6 +85,7 @@ export type ArbKey =
   | 'csvStatusCheckedIn'
   | 'csvStatusConfirmed'
   | 'csvStatusPaid'
+  | 'emailAskOrganizer'
   | 'emailBookingConfirmedGuestIntro'
   | 'emailBookingConfirmedHostIntro'
   | 'emailBookingConfirmedSubject'
@@ -115,6 +116,9 @@ export type ArbKey =
   | 'emailCopyrightRestoredBody'
   | 'emailCopyrightRestoredSubject'
   | 'emailCopyrightStrikeInfo'
+  | 'emailGuestChatInviteHost'
+  | 'emailGuestChatInviteOrganizer'
+  | 'emailMessageHost'
   | 'emailParticipantsIntro'
   | 'emailParticipantsPrivacy'
   | 'emailParticipantsSubject'
@@ -496,6 +500,7 @@ export const ARB_KEYS: readonly ArbKey[] = [
   'csvStatusCheckedIn',
   'csvStatusConfirmed',
   'csvStatusPaid',
+  'emailAskOrganizer',
   'emailBookingConfirmedGuestIntro',
   'emailBookingConfirmedHostIntro',
   'emailBookingConfirmedSubject',
@@ -526,6 +531,9 @@ export const ARB_KEYS: readonly ArbKey[] = [
   'emailCopyrightRestoredBody',
   'emailCopyrightRestoredSubject',
   'emailCopyrightStrikeInfo',
+  'emailGuestChatInviteHost',
+  'emailGuestChatInviteOrganizer',
+  'emailMessageHost',
   'emailParticipantsIntro',
   'emailParticipantsPrivacy',
   'emailParticipantsSubject',
@@ -909,6 +917,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusCheckedIn: "checked-in",
     csvStatusConfirmed: "confirmed",
     csvStatusPaid: "paid",
+    emailAskOrganizer: "Ask the organizer",
     emailBookingConfirmedGuestIntro: "Your booking is confirmed.",
     emailBookingConfirmedHostIntro: "{name} has a confirmed booking for your experience.",
     emailBookingConfirmedSubject: "Booking confirmed: {title}",
@@ -939,6 +948,9 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     emailCopyrightRestoredBody: "The material from copyright notice {ref} has been restored after a counter-notice.",
     emailCopyrightRestoredSubject: "Material restored",
     emailCopyrightStrikeInfo: "This counts as a copyright strike. Active strikes: {count} of 3. Strikes expire after 12 months; accounts with 3 active strikes are terminated.",
+    emailGuestChatInviteHost: "Create a free account to message the host.",
+    emailGuestChatInviteOrganizer: "Create a free account to message the organizer.",
+    emailMessageHost: "Message the host",
     emailParticipantsIntro: "Attached is the participants list for {title} ({when}). Participants: {count}.",
     emailParticipantsPrivacy: "This file contains personal data shared only for entry. Do not share it and delete it after the event.",
     emailParticipantsSubject: "Participants list: {title}",
@@ -1320,6 +1332,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusCheckedIn: "eingecheckt",
     csvStatusConfirmed: "bestätigt",
     csvStatusPaid: "bezahlt",
+    emailAskOrganizer: "Den Veranstalter fragen",
     emailBookingConfirmedGuestIntro: "Deine Buchung ist bestätigt.",
     emailBookingConfirmedHostIntro: "{name} hat eine bestätigte Buchung für dein Erlebnis.",
     emailBookingConfirmedSubject: "Buchung bestätigt: {title}",
@@ -1350,6 +1363,9 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     emailCopyrightRestoredBody: "Das Material aus der Urheberrechtsmeldung {ref} wurde nach einer Gegendarstellung wiederhergestellt.",
     emailCopyrightRestoredSubject: "Material wiederhergestellt",
     emailCopyrightStrikeInfo: "Dies zählt als Urheberrechtsverwarnung. Aktive Verwarnungen: {count} von 3. Verwarnungen verfallen nach 12 Monaten; Konten mit 3 aktiven Verwarnungen werden gekündigt.",
+    emailGuestChatInviteHost: "Erstelle ein kostenloses Konto, um dem Gastgeber zu schreiben.",
+    emailGuestChatInviteOrganizer: "Erstelle ein kostenloses Konto, um dem Veranstalter zu schreiben.",
+    emailMessageHost: "Dem Gastgeber schreiben",
     emailParticipantsIntro: "Im Anhang findest du die Teilnehmerliste für {title} ({when}). Teilnehmende: {count}.",
     emailParticipantsPrivacy: "Diese Datei enthält personenbezogene Daten, die nur für den Einlass geteilt werden. Gib sie nicht weiter und lösche sie nach der Veranstaltung.",
     emailParticipantsSubject: "Teilnehmerliste: {title}",
@@ -1731,6 +1747,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusCheckedIn: "registrado",
     csvStatusConfirmed: "confirmado",
     csvStatusPaid: "pagado",
+    emailAskOrganizer: "Preguntar al organizador",
     emailBookingConfirmedGuestIntro: "Tu reserva está confirmada.",
     emailBookingConfirmedHostIntro: "{name} tiene una reserva confirmada para tu experiencia.",
     emailBookingConfirmedSubject: "Reserva confirmada: {title}",
@@ -1761,6 +1778,9 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     emailCopyrightRestoredBody: "El material de la notificación {ref} se ha restaurado tras una contranotificación.",
     emailCopyrightRestoredSubject: "Material restaurado",
     emailCopyrightStrikeInfo: "Esto cuenta como una advertencia de derechos de autor. Advertencias activas: {count} de 3. Caducan a los 12 meses; las cuentas con 3 advertencias activas se cancelan.",
+    emailGuestChatInviteHost: "Crea una cuenta gratuita para escribir al anfitrión.",
+    emailGuestChatInviteOrganizer: "Crea una cuenta gratuita para escribir al organizador.",
+    emailMessageHost: "Escribir al anfitrión",
     emailParticipantsIntro: "Adjuntamos la lista de participantes de {title} ({when}). Participantes: {count}.",
     emailParticipantsPrivacy: "Este archivo contiene datos personales compartidos solo para el acceso. No lo compartas y elimínalo después del evento.",
     emailParticipantsSubject: "Lista de participantes: {title}",
@@ -2142,6 +2162,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusCheckedIn: "enregistré",
     csvStatusConfirmed: "confirmé",
     csvStatusPaid: "payé",
+    emailAskOrganizer: "Demander à l’organisateur",
     emailBookingConfirmedGuestIntro: "Votre réservation est confirmée.",
     emailBookingConfirmedHostIntro: "{name} a une réservation confirmée pour votre expérience.",
     emailBookingConfirmedSubject: "Réservation confirmée : {title}",
@@ -2172,6 +2193,9 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     emailCopyrightRestoredBody: "Le contenu visé par la notification {ref} a été rétabli après une contre-notification.",
     emailCopyrightRestoredSubject: "Contenu rétabli",
     emailCopyrightStrikeInfo: "Ceci compte comme un avertissement pour droit d’auteur. Avertissements actifs : {count} sur 3. Ils expirent au bout de 12 mois ; les comptes ayant 3 avertissements actifs sont résiliés.",
+    emailGuestChatInviteHost: "Créez un compte gratuit pour écrire à l’hôte.",
+    emailGuestChatInviteOrganizer: "Créez un compte gratuit pour écrire à l’organisateur.",
+    emailMessageHost: "Écrire à l’hôte",
     emailParticipantsIntro: "Vous trouverez en pièce jointe la liste des participants de {title} ({when}). Participants : {count}.",
     emailParticipantsPrivacy: "Ce fichier contient des données personnelles partagées uniquement pour l’entrée. Ne le partagez pas et supprimez-le après l’événement.",
     emailParticipantsSubject: "Liste des participants : {title}",
@@ -2553,6 +2577,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusCheckedIn: "check-in fatto",
     csvStatusConfirmed: "confermato",
     csvStatusPaid: "pagato",
+    emailAskOrganizer: "Chiedi all’organizzatore",
     emailBookingConfirmedGuestIntro: "La tua prenotazione è confermata.",
     emailBookingConfirmedHostIntro: "{name} ha una prenotazione confermata per la tua esperienza.",
     emailBookingConfirmedSubject: "Prenotazione confermata: {title}",
@@ -2583,6 +2608,9 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     emailCopyrightRestoredBody: "Il materiale della segnalazione {ref} è stato ripristinato dopo una contronotifica.",
     emailCopyrightRestoredSubject: "Materiale ripristinato",
     emailCopyrightStrikeInfo: "Questo conta come un avvertimento per copyright. Avvertimenti attivi: {count} su 3. Scadono dopo 12 mesi; gli account con 3 avvertimenti attivi vengono chiusi.",
+    emailGuestChatInviteHost: "Crea un account gratuito per scrivere all’host.",
+    emailGuestChatInviteOrganizer: "Crea un account gratuito per scrivere all’organizzatore.",
+    emailMessageHost: "Scrivi all’host",
     emailParticipantsIntro: "In allegato trovi l’elenco dei partecipanti di {title} ({when}). Partecipanti: {count}.",
     emailParticipantsPrivacy: "Questo file contiene dati personali condivisi solo per l’ingresso. Non condividerlo ed eliminalo dopo l’evento.",
     emailParticipantsSubject: "Elenco partecipanti: {title}",
@@ -2964,6 +2992,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusCheckedIn: "check-in feito",
     csvStatusConfirmed: "confirmado",
     csvStatusPaid: "pago",
+    emailAskOrganizer: "Perguntar ao organizador",
     emailBookingConfirmedGuestIntro: "A tua reserva está confirmada.",
     emailBookingConfirmedHostIntro: "{name} tem uma reserva confirmada para a tua experiência.",
     emailBookingConfirmedSubject: "Reserva confirmada: {title}",
@@ -2994,6 +3023,9 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     emailCopyrightRestoredBody: "O material da notificação {ref} foi reposto após uma contranotificação.",
     emailCopyrightRestoredSubject: "Material reposto",
     emailCopyrightStrikeInfo: "Isto conta como um aviso de direitos de autor. Avisos ativos: {count} de 3. Expiram após 12 meses; as contas com 3 avisos ativos são encerradas.",
+    emailGuestChatInviteHost: "Cria uma conta gratuita para enviar mensagem ao anfitrião.",
+    emailGuestChatInviteOrganizer: "Cria uma conta gratuita para enviar mensagem ao organizador.",
+    emailMessageHost: "Enviar mensagem ao anfitrião",
     emailParticipantsIntro: "Em anexo está a lista de participantes de {title} ({when}). Participantes: {count}.",
     emailParticipantsPrivacy: "Este ficheiro contém dados pessoais partilhados apenas para a entrada. Não o partilhes e apaga-o depois do evento.",
     emailParticipantsSubject: "Lista de participantes: {title}",
@@ -3375,6 +3407,7 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     csvStatusCheckedIn: "check-in feito",
     csvStatusConfirmed: "confirmado",
     csvStatusPaid: "pago",
+    emailAskOrganizer: "Perguntar ao organizador",
     emailBookingConfirmedGuestIntro: "Sua reserva está confirmada.",
     emailBookingConfirmedHostIntro: "{name} tem uma reserva confirmada para sua experiência.",
     emailBookingConfirmedSubject: "Reserva confirmada: {title}",
@@ -3405,6 +3438,9 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     emailCopyrightRestoredBody: "O material da notificação {ref} foi restaurado após uma contranotificação.",
     emailCopyrightRestoredSubject: "Material restaurado",
     emailCopyrightStrikeInfo: "Isso conta como uma advertência de direitos autorais. Advertências ativas: {count} de 3. Elas expiram após 12 meses; contas com 3 advertências ativas são encerradas.",
+    emailGuestChatInviteHost: "Crie uma conta grátis para mandar mensagem ao anfitrião.",
+    emailGuestChatInviteOrganizer: "Crie uma conta grátis para mandar mensagem ao organizador.",
+    emailMessageHost: "Mandar mensagem ao anfitrião",
     emailParticipantsIntro: "Em anexo está a lista de participantes de {title} ({when}). Participantes: {count}.",
     emailParticipantsPrivacy: "Este arquivo contém dados pessoais compartilhados apenas para a entrada. Não compartilhe e apague-o depois do evento.",
     emailParticipantsSubject: "Lista de participantes: {title}",
