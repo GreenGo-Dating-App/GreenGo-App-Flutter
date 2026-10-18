@@ -43959,12 +43959,6 @@ abstract class AppLocalizations {
   /// **'Ticket price phases for events (for example early bird), and the 2026 launch offer: 50% off the first period of a new Membership'**
   String get legalUpdate532BulletPhases;
 
-  /// Terms 5.3.2 "what changes" bullet: verified phone number required; ID document details kept encrypted for legal requests (re-acceptance sheet and advance notice).
-  ///
-  /// In en, this message translates to:
-  /// **'A verified phone number is now required; ID document details are kept encrypted for legal requests'**
-  String get legalUpdate532BulletPhone;
-
   /// Third option of the Terms re-acceptance sheet (Terms 24.2 c).
   ///
   /// In en, this message translates to:

@@ -25893,10 +25893,6 @@ class AppLocalizationsPt extends AppLocalizations {
       'Fases de preço para os bilhetes de eventos (por exemplo, antecipado) e a oferta de lançamento 2026: 50% de desconto no primeiro período de uma nova Subscrição';
 
   @override
-  String get legalUpdate532BulletPhone =>
-      'Passa a ser obrigatório um número de telemóvel verificado; os dados do documento de identificação são guardados cifrados para pedidos legais';
-
-  @override
   String get legalUpdateCloseAccount => 'Não aceito – fechar a minha conta';
 
   @override
@@ -51929,10 +51925,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get legalUpdate532BulletPhases =>
       'Fases de preço para ingressos de eventos (por exemplo, antecipado) e a oferta de lançamento 2026: 50% de desconto no primeiro período de uma nova Assinatura';
-
-  @override
-  String get legalUpdate532BulletPhone =>
-      'Agora é obrigatório um número de celular verificado; os dados do documento de identidade ficam guardados criptografados para solicitações legais';
 
   @override
   String get legalUpdateCloseAccount => 'Não aceito – encerrar minha conta';

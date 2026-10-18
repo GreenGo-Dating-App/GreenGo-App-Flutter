@@ -25977,10 +25977,6 @@ class AppLocalizationsDe extends AppLocalizations {
       'Preisphasen für Event-Tickets (zum Beispiel Early Bird) und das Einführungsangebot 2026: 50 % Rabatt auf den ersten Zeitraum einer neuen Mitgliedschaft';
 
   @override
-  String get legalUpdate532BulletPhone =>
-      'Eine verifizierte Telefonnummer ist jetzt erforderlich; Angaben aus Ausweisdokumenten werden nur für rechtliche Anfragen verschlüsselt gespeichert';
-
-  @override
   String get legalUpdateCloseAccount => 'Ich stimme nicht zu – Konto schließen';
 
   @override
