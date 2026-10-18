@@ -439,12 +439,16 @@ depends on your plan (section 11.7). The organiser is responsible for:
 - cancelling it in good time if it cannot go ahead.
 
 11.2 Free and paid Events
-a) Joining a free Event is free.
+a) Joining a free Event is free. The organiser may let you bring plus-ones
+   (guests). Each plus-one takes one place: the capacity counts you and your
+   guests.
 b) Only active Business accounts (section 13) can sell tickets for their
    Events. The ticket contract is between you and the organiser: the
    organiser is the seller, sets the price and the cancellation and refund
    policy, and is responsible for the Event and for issuing any invoice or
-   receipt and paying any taxes on the ticket.
+   receipt and paying any taxes on the ticket. You can buy up to 4 tickets
+   per Event in total. Paid Events have no plus-ones: every person needs a
+   ticket.
 c) Paid tickets are paid only through the in-app checkout, to the
    organiser's own Stripe or Mercado Pago account connected to GreenGo. There
    are no payment links and no other payment methods for new orders: only
@@ -454,7 +458,9 @@ c) Paid tickets are paid only through the in-app checkout, to the
    never holds ticket money. GreenGo receives only its service fee, which the
    organiser pays (section 11.6).
 d) Buyer/guest name and email are shared with the event organizer for entry
-   (see the Privacy Policy, section 11.4).
+   (see the Privacy Policy, section 11.4). If the organiser asks for attendee
+   names, you must give the first name and surname of each ticket holder.
+   These names are shared only with the organiser and shown on the tickets.
 e) Your consumer rights against the organiser, including any right of
    withdrawal, are those of the law that applies to the organiser's sale.
    Contact the organiser first; if they do not answer, report the Event in the
@@ -467,7 +473,8 @@ f) Price phases: the organiser of a paid Event can sell its tickets in price
    at that moment; an order for several tickets can include tickets from
    more than one phase. The checkout shows the price before you pay.
    If the phase changes while you are paying, we show you the new price
-   before you confirm.
+   before you confirm. Together, the price phases cannot hold more tickets
+   than the Event's capacity.
 
 11.3 Event check-in uses a QR code in the app. For paid Events the QR code is
 issued only after your payment is confirmed. Guests who book without an
@@ -536,17 +543,20 @@ c) If your Membership changes to a lower plan, your newest listings up to the
 11.8 Booking as a guest without an account
 a) If the organiser allows guests to book, anyone who opens a shared link to
    a public Event can book it as a guest, without an account, by giving their
-   first name, surname and email, as long as places are left.
+   first name, surname and email, as long as places are left. A guest can
+   book up to 4 tickets per Event with the same email address.
 b) For a paid Event, the guest pays through the same Stripe or Mercado Pago
-   checkout and receives the ticket by email.
+   checkout and receives the ticket by email. If the organiser asks for
+   attendee names, the guest gives the first name and surname of each ticket
+   holder.
 c) Guest booking is not available for Events that need the organiser's
-   approval, that have age or gender limits, or that have several ticket
-   types. These Events can be booked only in the app.
+   approval or that have age or gender limits. These Events can be booked
+   only in the app.
 d) Guests can also send a booking request for an Experience from a shared
    link.
-e) The guest's name and email are shared with the organiser or Host
-   (participant list). We delete guest contact data after 400 days (see the
-   Privacy Policy).
+e) The guest's name and email, and the names of the ticket holders, are
+   shared with the organiser or Host (participant list). We delete guest
+   contact data after 400 days (see the Privacy Policy).
 f) These Terms apply to guest bookings as far as they are relevant.
 
 ================================================================================
@@ -1274,6 +1284,12 @@ Phone verification and identity details:
   if still pending, and the reviewed details are kept encrypted only to
   identify you when the law requires it.
 Clarifications to match how the app works:
+- Sections 11.2 and 11.8: plus-ones for free Events (each takes a place);
+  up to 4 tickets per Event, also for guests without an account; no
+  plus-ones at paid Events; the first name and surname of each ticket
+  holder when the organiser asks, shared only with the organiser; price
+  phases cannot hold more tickets than the Event's capacity; guests can also
+  book Events with several ticket types.
 - Section 13.1: only you see who follows your business and how many
   followers it has.
 - Sections 5.1 g, 14.1, 14.2 and 14.4: the AI helpers in chat are

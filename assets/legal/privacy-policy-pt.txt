@@ -864,7 +864,10 @@ fraudes.
   serviços de pagamento e a respetiva referência de pagamento, o estado do
   pagamento e eventuais reembolsos.
 - O nome e o endereço de e-mail do comprador/convidado são partilhados com o
-  organizador do evento para controlo de entrada. O organizador vê também a sua
+  organizador do evento para controlo de entrada. Se o organizador pedir os
+  nomes dos participantes, recolhemos também o nome próprio e o apelido de
+  cada titular de bilhete; estes nomes são partilhados apenas com o
+  organizador e aparecem nos bilhetes. O organizador vê também a sua
   encomenda de bilhetes. O organizador utiliza estes dados para registar a sua
   entrada e para gerir o evento ou a experiência, e é responsável por eles
   enquanto responsável pelo tratamento independente.
@@ -918,13 +921,15 @@ fraudes.
   sem conta GreenGo podem reservar um evento a partir de uma ligação
   partilhada. Os visitantes também podem enviar um pedido de reserva de uma
   experiência a partir de uma ligação partilhada.
-- Recolhemos o nome próprio, o apelido e o endereço de e-mail do visitante, e
-  a reserva ou a encomenda de bilhetes. Num evento pago, o visitante paga
+- Recolhemos o nome próprio, o apelido e o endereço de e-mail do visitante, a
+  reserva ou a encomenda de bilhetes e, se o organizador os pedir, os nomes
+  dos titulares dos bilhetes. Num evento pago, o visitante paga
   através do checkout da Stripe ou do Mercado Pago do organizador, como em
   11.4. O GreenGo não recebe dados de cartões.
-- O nome e o e-mail do visitante são partilhados com o organizador ou
-  anfitrião (lista de participantes, controlo de entrada). Os outros
-  participantes veem apenas o nome.
+- O nome e o e-mail do visitante, bem como os nomes dos titulares dos
+  bilhetes, são partilhados com o organizador ou anfitrião (lista de
+  participantes, controlo de entrada). Os outros participantes veem apenas o
+  nome.
 - Utilizamos o endereço de e-mail para enviar os e-mails de bilhetes e de
   reservas, incluindo o pedido de pagamento quando um anfitrião aceita um
   pedido de reserva de uma experiência, e avisos de cancelamentos e
@@ -1009,7 +1014,8 @@ Anthropic PBC                    | Assistente de apoio com IA        | EUA      
 - A Stripe, para a sua própria prevenção de fraudes e obrigações legais.
 - Os organizadores e anfitriões dos eventos e experiências para os quais compra
   um bilhete ou que reserva, também como visitante sem conta: o seu nome e
-  endereço de e-mail e a sua encomenda de bilhetes, para que possam admiti-lo
+  endereço de e-mail, os nomes dos titulares dos bilhetes se o organizador os
+  pedir, e a sua encomenda de bilhetes, para que possam admiti-lo
   (secções 11.4 e 11.7). A Stripe e o Mercado Pago processam os pagamentos de
   bilhetes para o organizador ao abrigo dos seus próprios termos e descontam a
   taxa de serviço do GreenGo (secção 11.5).
@@ -1622,6 +1628,9 @@ Verificação do telemóvel e dados de identificação:
   identificar quando a lei o exigir, até 6 meses após o encerramento da conta
   (também secções 2, 3.1, 4.2, 4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 e 22.1).
 Clarificações para corresponder ao funcionamento da aplicação:
+- Secções 11.4, 11.7 e 12.3: os nomes dos titulares dos bilhetes, se o
+  organizador os pedir, são partilhados apenas com o organizador e aparecem
+  nos bilhetes.
 - Secção 4.2: quem o segue, quem segue e os seus números de seguidores,
   contas seguidas e lojas nunca são mostrados a outros utilizadores (também
   nas contas de empresa).

@@ -870,7 +870,10 @@ prevenire le frodi.
   fornitore di pagamento e il suo riferimento di pagamento, lo stato del
   pagamento ed eventuali rimborsi.
 - Il nome e l'indirizzo e-mail dell'acquirente/ospite vengono condivisi con
-  l'organizzatore dell'evento per il controllo degli ingressi. L'organizzatore
+  l'organizzatore dell'evento per il controllo degli ingressi. Se
+  l'organizzatore chiede i nomi dei partecipanti, raccogliamo anche nome e
+  cognome di ogni titolare di biglietto; questi nomi vengono condivisi solo
+  con l'organizzatore e compaiono sui biglietti. L'organizzatore
   vede anche il tuo ordine di biglietti. L'organizzatore utilizza questi dati
   per registrare il tuo ingresso e per gestire l'evento o l'esperienza, e ne è
   responsabile in qualità di titolare del trattamento autonomo.
@@ -925,12 +928,14 @@ prevenire le frodi.
   persone senza un account GreenGo possono prenotare un evento da un link
   condiviso. Gli ospiti possono anche inviare una richiesta di prenotazione
   per un'esperienza da un link condiviso.
-- Raccogliamo il nome, il cognome e l'indirizzo e-mail dell'ospite, e la
-  prenotazione o l'ordine di biglietti. Per un evento a pagamento l'ospite
+- Raccogliamo il nome, il cognome e l'indirizzo e-mail dell'ospite, la
+  prenotazione o l'ordine di biglietti e, se l'organizzatore li chiede, i
+  nomi dei titolari dei biglietti. Per un evento a pagamento l'ospite
   paga tramite il checkout Stripe o Mercado Pago dell'organizzatore, come al
   punto 11.4. GreenGo non riceve i dati della carta.
-- Il nome e l'e-mail dell'ospite vengono condivisi con l'organizzatore o
-  l'host (elenco dei partecipanti, controllo degli ingressi). Gli altri
+- Il nome e l'e-mail dell'ospite, e i nomi dei titolari dei biglietti,
+  vengono condivisi con l'organizzatore o l'host (elenco dei partecipanti,
+  controllo degli ingressi). Gli altri
   partecipanti vedono solo il nome.
 - Usiamo l'indirizzo e-mail per inviare le e-mail del biglietto e della
   prenotazione, compresa la richiesta di pagamento quando un host accetta una
@@ -1016,7 +1021,8 @@ Anthropic PBC                    | Assistente di supporto IA (Claude) | USA     
 - Stripe, per la propria prevenzione delle frodi e i propri obblighi di legge.
 - Organizzatori e host degli eventi e delle esperienze per cui acquisti un
   biglietto o che prenoti, anche come ospite senza account: il tuo nome e
-  indirizzo e-mail e il tuo ordine di biglietti, affinché possano ammetterti
+  indirizzo e-mail, i nomi dei titolari dei biglietti se l'organizzatore li
+  chiede, e il tuo ordine di biglietti, affinché possano ammetterti
   (sezioni 11.4 e 11.7). Stripe e Mercado Pago elaborano i pagamenti dei
   biglietti per conto dell'organizzatore in base alle proprie condizioni e
   trattengono la commissione di servizio di GreenGo (sezione 11.5).
@@ -1625,6 +1631,9 @@ Verifica del telefono e dati identificativi:
   quando la legge lo richiede, fino a 6 mesi dopo la chiusura dell'account
   (anche sezioni 2, 3.1, 4.2, 4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 e 22.1).
 Chiarimenti per corrispondere al funzionamento dell'app:
+- Sezioni 11.4, 11.7 e 12.3: i nomi dei titolari dei biglietti, se
+  l'organizzatore li chiede, vengono condivisi solo con l'organizzatore e
+  compaiono sui biglietti.
 - Sezione 4.2: chi ti segue, chi segui e il numero di follower, account
   seguiti e negozi non sono mai mostrati agli altri utenti (anche per gli
   account business).

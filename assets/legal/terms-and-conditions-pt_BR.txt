@@ -472,12 +472,16 @@ tempo depende do seu plano (item 11.7). O organizador é responsável por:
 - cancelá-lo com antecedência se ele não puder ser realizado.
 
 11.2 Eventos gratuitos e pagos
-a) Participar de um Evento gratuito não tem custo.
+a) Participar de um Evento gratuito não tem custo. O organizador pode permitir
+   que você leve convidados extras (+1). Cada convidado extra ocupa uma vaga:
+   a capacidade conta você e os seus convidados.
 b) Somente Contas empresariais ativas (seção 13) podem vender ingressos para
    os seus Eventos. O contrato do ingresso é entre você e o organizador: o
    organizador é o vendedor, define o preço e a política de cancelamento e
    reembolso, e é responsável pelo Evento, pela emissão de qualquer nota
    fiscal ou recibo e pelo pagamento de quaisquer impostos sobre o ingresso.
+   Você pode comprar até 4 ingressos por Evento no total. Os Eventos pagos
+   não têm convidados extras: cada pessoa precisa de um ingresso.
 c) Os ingressos pagos são pagos somente pelo checkout do aplicativo, na
    própria conta Stripe ou Mercado Pago do organizador conectada ao GreenGo.
    Não há links de pagamento nem outros meios de pagamento para novos
@@ -490,7 +494,10 @@ c) Os ingressos pagos são pagos somente pelo checkout do aplicativo, na
    11.6).
 d) O nome e o e-mail do comprador/convidado são compartilhados com o
    organizador do evento para controle de entrada (veja a Política de
-   Privacidade, item 11.4).
+   Privacidade, item 11.4). Se o organizador pedir os nomes dos
+   participantes, você deve informar o nome e o sobrenome de cada titular de
+   ingresso. Esses nomes são compartilhados somente com o organizador e
+   aparecem nos ingressos.
 e) Os seus direitos de consumidor em relação ao organizador, incluindo
    qualquer direito de arrependimento, são os previstos na lei aplicável à
    venda feita pelo organizador. Fale primeiro com o organizador; se ele não
@@ -505,7 +512,8 @@ f) Fases de preço: o organizador de um Evento pago pode vender os ingressos
    ingressos de mais de uma fase. O checkout mostra o preço antes de você
    pagar.
    Se a fase mudar enquanto você estiver pagando, mostramos o novo preço
-   antes de você confirmar.
+   antes de você confirmar. Somadas, as fases de preço não podem ter mais
+   ingressos do que a capacidade do Evento.
 
 11.3 O check-in nos eventos usa um código QR no aplicativo. Nos Eventos pagos,
 o código QR só é emitido depois que o seu pagamento é confirmado. Os
@@ -581,17 +589,20 @@ c) Se a sua Assinatura mudar para um plano inferior, os seus anúncios mais
 a) Se o organizador permitir reservas de visitantes, qualquer pessoa que abrir
    um link compartilhado de um Evento público pode reservá-lo como visitante,
    sem conta, informando nome, sobrenome e e-mail, desde que ainda haja vagas.
+   Um visitante pode reservar até 4 ingressos por Evento com o mesmo e-mail.
 b) Em um Evento pago, o visitante paga pelo mesmo checkout da Stripe ou do
-   Mercado Pago e recebe o ingresso por e-mail.
+   Mercado Pago e recebe o ingresso por e-mail. Se o organizador pedir os
+   nomes dos participantes, o visitante informa o nome e o sobrenome de cada
+   titular de ingresso.
 c) A reserva como visitante não está disponível para Eventos que exigem a
-   aprovação do organizador, que têm limites de idade ou de gênero, ou que têm
-   vários tipos de ingresso. Esses Eventos só podem ser reservados no
-   aplicativo.
+   aprovação do organizador ou que têm limites de idade ou de gênero. Esses
+   Eventos só podem ser reservados no aplicativo.
 d) Os visitantes também podem enviar um pedido de reserva de uma Experiência a
    partir de um link compartilhado.
-e) O nome e o e-mail do visitante são compartilhados com o organizador ou o
-   Anfitrião (lista de participantes). Excluímos os dados de contato dos
-   visitantes após 400 dias (veja a Política de Privacidade).
+e) O nome e o e-mail do visitante, e os nomes dos titulares dos ingressos, são
+   compartilhados com o organizador ou o Anfitrião (lista de participantes).
+   Excluímos os dados de contato dos visitantes após 400 dias (veja a
+   Política de Privacidade).
 f) Estes Termos se aplicam às reservas de visitantes no que for pertinente.
 
 ================================================================================
@@ -1359,6 +1370,13 @@ Verificação por telefone e dados de identificação:
   e os dados analisados são guardados de forma criptografada somente para
   identificar você quando a lei o exigir.
 Esclarecimentos para refletir como o aplicativo funciona:
+- Seções 11.2 e 11.8: convidados extras (+1) nos Eventos gratuitos (cada um
+  ocupa uma vaga); até 4 ingressos por Evento, também para visitantes sem
+  conta; sem convidados extras nos Eventos pagos; o nome e o sobrenome de
+  cada titular de ingresso quando o organizador pedir, compartilhados somente
+  com o organizador; as fases de preço não podem ter mais ingressos do que a
+  capacidade do Evento; os visitantes também podem reservar Eventos com
+  vários tipos de ingresso.
 - Seção 13.1: só você vê quem segue a sua empresa e quantos seguidores ela
   tem.
 - Seções 5.1 g, 14.1, 14.2 e 14.4: os assistentes de IA no chat são a

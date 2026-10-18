@@ -847,7 +847,10 @@ contracargos para prevenir el fraude.
   de pagos y su referencia del pago, el estado del pago y cualquier
   reembolso.
 - El nombre y el correo electrónico del comprador/invitado se comparten con el
-  organizador del evento para el control de acceso. El organizador también ve
+  organizador del evento para el control de acceso. Si el organizador pide
+  los nombres de los asistentes, también recopilamos el nombre y los
+  apellidos de cada titular de entrada; estos nombres se comparten solo con
+  el organizador y aparecen en las entradas. El organizador también ve
   tu pedido de entradas. El organizador utiliza estos datos para registrar tu
   entrada y gestionar el evento o la experiencia, y es responsable de ellos
   como responsable del tratamiento independiente.
@@ -902,11 +905,13 @@ contracargos para prevenir el fraude.
   compartido. Los visitantes también pueden enviar una solicitud de reserva
   de una experiencia desde un enlace compartido.
 - Recopilamos el nombre, los apellidos y la dirección de correo electrónico
-  del visitante, y la reserva o el pedido de entradas. En un evento de pago,
+  del visitante, la reserva o el pedido de entradas y, si el organizador
+  los pide, los nombres de los titulares de las entradas. En un evento de pago,
   el visitante paga a través del pago de Stripe o de Mercado Pago del
   organizador, como en 11.4. GreenGo no recibe los datos de la tarjeta.
-- El nombre y el correo electrónico del visitante se comparten con el
-  organizador o el anfitrión (lista de participantes, control de acceso).
+- El nombre y el correo electrónico del visitante, y los nombres de los
+  titulares de las entradas, se comparten con el organizador o el
+  anfitrión (lista de participantes, control de acceso).
   Los demás participantes solo ven el nombre.
 - Usamos la dirección de correo electrónico para enviar los correos de la
   entrada y de la reserva, incluida la solicitud de pago cuando un
@@ -998,7 +1003,8 @@ Anthropic PBC                 | Asistente de soporte con IA        | EE. UU.    
 - Stripe, para su propia prevención del fraude y sus obligaciones legales.
 - Los organizadores y anfitriones de los eventos y experiencias para los que
   compras una entrada o haces una reserva, también como visitante sin
-  cuenta: tu nombre y tu correo electrónico y tu pedido de entradas, para que
+  cuenta: tu nombre y tu correo electrónico, los nombres de los titulares
+  de las entradas si el organizador los pide, y tu pedido de entradas, para que
   puedan darte acceso (secciones 11.4 y 11.7). Stripe y Mercado Pago procesan
   los pagos de entradas para el organizador según sus propias condiciones y
   descuentan la tarifa de servicio de GreenGo (sección 11.5).
@@ -1623,6 +1629,9 @@ Verificación del teléfono y datos de identidad:
   6 meses después del cierre de la cuenta (también secciones 2, 3.1, 4.2,
   4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 y 22.1).
 Aclaraciones para ajustarse al funcionamiento de la app:
+- Secciones 11.4, 11.7 y 12.3: los nombres de los titulares de las
+  entradas, si el organizador los pide, se comparten solo con el
+  organizador y aparecen en las entradas.
 - Sección 4.2: quién te sigue, a quién sigues y tus números de seguidores,
   seguidos y tiendas nunca se muestran a otros usuarios (también en cuentas
   de empresa).
