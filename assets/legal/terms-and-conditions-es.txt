@@ -75,10 +75,19 @@ nacimiento. Si tienes menos de 18 años, no puedes crear una cuenta.
 prohibido el uso de los Servicios según la ley de tu país o por sanciones.
 
 3.3 No puedes usar GreenGo si anteriormente cerramos tu cuenta por un
-incumplimiento grave de estos Términos, salvo que te permitamos volver.
+incumplimiento grave de estos Términos, salvo que te permitamos volver. Para
+impedir que los usuarios bloqueados vuelvan, conservamos una forma protegida
+(un hash con clave) de la dirección de correo electrónico y del número de
+teléfono de las cuentas bloqueadas (Política de Privacidad, sección 14).
 
 3.4 Una persona, una cuenta personal. Una Cuenta de empresa no es una cuenta
 independiente: es tu propia Cuenta cambiada al modo empresa (sección 13).
+
+3.5 Para crear una cuenta, debes verificar un número de teléfono móvil con un
+código que te enviamos por SMS (sección 4.5). La verificación del teléfono está
+disponible para números de países europeos (excepto Rusia y Bielorrusia),
+Brasil, Estados Unidos, Canadá y el Reino Unido. Sin un número móvil de uno de
+estos países, todavía no puedes crear una cuenta.
 
 ================================================================================
 4. TU CUENTA
@@ -101,12 +110,36 @@ a) Algunas funciones requieren que verifiques tu edad con un documento de
    - publicar cualquier Experiencia, y reservar una Experiencia como miembro
      (sección 12.3);
    - otros casos que exija la ley del lugar donde vives.
+   En todos los demás casos, la verificación con un documento de identidad es
+   opcional.
 b) Algunas insignias requieren que verifiques tu perfil con un selfi.
-c) Eliminamos las imágenes de los documentos de identidad en cuanto termina la
-   comprobación, tal como se explica en la sección 8 de la Política de
-   Privacidad.
+c) Cuando te verificas con un documento de identidad, la app lee el documento
+   en tu dispositivo y rellena tu nombre, apellidos, fecha de nacimiento, tipo
+   de documento, país de expedición y número de documento. Tú confirmas estos
+   datos, y un revisor de GreenGo los comprueba con la foto del documento.
+   Eliminamos la foto tras la revisión, o pasados 7 días si sigue pendiente de
+   revisión (entonces puedes volver a subirla). Esto también se aplica a una
+   foto tuya sosteniendo tu documento. Conservamos los datos que confirmaste
+   cifrados, en un almacén restringido separado, solo para identificarte
+   cuando la ley lo exija (sección 18.8). Nunca los mostramos a otros
+   usuarios y no los usamos para nada más. La sección 8 de la Política de
+   Privacidad explica esto y cuánto tiempo los conservamos.
 d) Usar un documento que no es tuyo, o que ya se utilizó para otra cuenta,
    infringe estos Términos.
+
+4.5 Número de teléfono
+a) Cada cuenta necesita su propio número de teléfono móvil verificado. Un
+   número de teléfono solo puede vincularse a una cuenta.
+b) Si tu cuenta se creó antes de que se exigiera la verificación del
+   teléfono, debes verificar un número de teléfono antes de:
+   - unirte a un Evento o a una Experiencia o reservarlos, o comprar una
+     entrada;
+   - crear u organizar un Evento o una Experiencia;
+   - usar una Cuenta de empresa.
+c) Tu número de teléfono es privado. Nunca lo mostramos a otros usuarios. Se
+   guarda en la parte privada de tu cuenta, tal como se explica en la
+   Política de Privacidad.
+d) Usa solo un número que tengas derecho a usar, y mantenlo actualizado.
 
 ================================================================================
 5. QUÉ ES GREENGO
@@ -440,7 +473,9 @@ que participes.
 
 11.1 Para crear un Evento necesitas una Membresía (Base o superior), y tu
 cuenta no puede estar restringida. Cuántos Eventos puedes tener a la vez
-depende de tu plan (sección 11.7). El organizador es responsable de:
+depende de tu plan (sección 11.7). Para crear un Evento, unirte a él o
+reservarlo, o para comprar una entrada, tu cuenta también necesita un número
+de teléfono verificado (sección 4.5). El organizador es responsable de:
 - describir el Evento con exactitud;
 - mantenerlo legal y seguro;
 - cancelarlo con tiempo suficiente si no puede celebrarse.
@@ -631,6 +666,8 @@ Documento de identidad:
   Experiencia como miembro.
 - Para publicar una Experiencia de pago, tu verificación de edad también debe
   haber sido aprobada.
+Número de teléfono: para publicar una Experiencia o ser su Anfitrión, tu
+cuenta necesita un número de teléfono verificado (sección 4.5).
 Los nuevos Anfitriones solo pueden publicar una Experiencia de pago hasta que
 tengan 3 reseñas.
 
@@ -663,7 +700,8 @@ c) Si el Anfitrión elimina tu horario reservado o cancela tu reserva,
    adeudado por el Anfitrión, o tomar medidas contra la cuenta del Anfitrión.
    GreenGo no paga reembolsos de Experiencias con sus propios fondos.
 d) Para reservar una Experiencia como miembro, debes haber subido un
-   documento de identidad (sección 12.3).
+   documento de identidad (sección 12.3) y verificado tu número de teléfono
+   (sección 4.5).
 
 12.6 Reseñas
 - Tras una reserva real, los Anfitriones y los Invitados pueden reseñarse
@@ -681,6 +719,9 @@ d) Para reservar una Experiencia como miembro, debes haber subido un
 Cuenta cambiada al modo empresa. Permite a una empresa o a un profesional
 mostrar una página de empresa:
 - datos del negocio y horario de apertura;
+- un número de contacto del negocio opcional (no verificado, puede ser un
+  teléfono fijo). Es privado salvo que actives su visualización en tu página
+  de empresa;
 - eventos y experiencias;
 - seguidores.
 
@@ -694,8 +735,11 @@ mostrar una página de empresa:
 de las personas que se ponen en contacto contigo (por ejemplo, clientes
 potenciales). Utilízalos solo como lo permita la ley.
 
-13.4 Podemos pedirte que verifiques la empresa. La insignia de verificado
-significa que comprobamos los documentos facilitados. No es un respaldo.
+13.4 Una Cuenta de empresa solo necesita un número de teléfono verificado
+(sección 4.5). El documento de identidad de la persona que dirige la empresa
+es opcional; si lo facilitas, se le aplica la sección 4.4 c. Podemos pedirte
+que verifiques la empresa. La insignia de verificado significa que comprobamos
+los documentos facilitados. No es un respaldo.
 
 13.5 Cualquier promoción de pago de una página de empresa se identifica
 claramente en la app como promocionada.
@@ -706,7 +750,8 @@ claramente en la app como promocionada.
   consumidores, salvo que la ley disponga otra cosa.
 
 13.7 Las Cuentas de empresa están disponibles con una Membresía Silver, Gold
-o Platinum. Si tu Membresía termina o baja de Silver, las herramientas de
+o Platinum, y necesitan un número de teléfono verificado (sección 4.5). Si tu
+Membresía termina o baja de Silver, las herramientas de
 empresa (por ejemplo la página de empresa, los clientes potenciales, la
 promoción y los anuncios de pago) quedan en pausa, y tu cuenta funciona como
 una cuenta personal, solo con anuncios gratuitos. Se reactivan cuando vuelves
@@ -1037,6 +1082,19 @@ Siempre puedes acudir a los tribunales o a una autoridad de consumo
   la DSA y publicaremos sus datos aquí. Hasta entonces, las autoridades pueden
   utilizar legal@greengochat.com.
 
+18.8 Solicitudes de las autoridades
+a) Divulgamos datos de la cuenta, incluidos tu número de teléfono y los datos
+   de identidad de la sección 4.4 c, solo cuando la ley lo exige o cuando es
+   necesario:
+   - para responder a una orden válida de un tribunal, o a una solicitud de
+     la policía o de otra autoridad competente;
+   - para proteger la vida o la seguridad de alguien en un caso grave;
+   - para formular, ejercer o defender reclamaciones legales.
+b) Solo un número reducido de personal autorizado puede acceder a los datos
+   de identidad, y cada acceso queda registrado.
+c) Cuando la ley lo permite, te informamos de la solicitud (Política de
+   Privacidad, sección 12.5).
+
 ================================================================================
 19. SEGURIDAD INFANTIL
 ================================================================================
@@ -1313,6 +1371,23 @@ HISTORIAL DE VERSIONES
 partir del 16 de octubre de 2026; desde el 16 de noviembre de 2026 para las
 cuentas creadas antes del 16 de octubre de 2026 (anunciada el 17 de octubre
 de 2026)
+Verificación del teléfono y datos de identidad:
+- Secciones 3.3, 3.5, 4.5, 11.1, 12.3, 12.5, 13.4 y 13.7: se exige un número
+  de teléfono móvil verificado para crear una cuenta (números de países
+  europeos excepto Rusia y Bielorrusia, Brasil, Estados Unidos, Canadá y el
+  Reino Unido) y, en las cuentas existentes, antes de unirse a Eventos y
+  Experiencias o reservarlos, comprar entradas, crear u organizar Eventos y
+  Experiencias y usar una Cuenta de empresa; un número por cuenta; el número
+  es privado; un hash con clave de la dirección de correo electrónico y del
+  número de teléfono de las cuentas bloqueadas.
+- Sección 13.1: un número de contacto del negocio opcional, que se muestra en
+  la página de empresa solo si lo activas.
+- Secciones 4.4, 13.4 y 18.8: la verificación con documento de identidad
+  sigue siendo opcional (también para el titular de una Cuenta de empresa, que
+  solo necesita un número de teléfono verificado); el documento se lee en tu
+  dispositivo y lo comprueba un revisor, la foto se elimina tras la revisión
+  o pasados 7 días si sigue pendiente, y los datos que confirmas se conservan
+  cifrados solo para identificarte cuando la ley lo exija.
 Aclaraciones para ajustarse al funcionamiento de la app:
 - Secciones 5.1 g, 14.1, 14.2 y 14.4: los asistentes de IA en el chat son la
   traducción, la lectura en voz alta y la transliteración (no se ofrecen

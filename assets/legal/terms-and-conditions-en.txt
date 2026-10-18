@@ -69,10 +69,19 @@ birth. If you are under 18, you cannot create an account.
 using the Services under the law of your country or by sanctions.
 
 3.3 You may not use GreenGo if we have previously closed your account for a
-serious breach of these Terms, unless we allow you to come back.
+serious breach of these Terms, unless we allow you to come back. To stop
+banned users from coming back, we keep a protected form (a keyed hash) of the
+email address and phone number of banned accounts (Privacy Policy, section
+14).
 
 3.4 One person, one personal account. A Business account is not a separate
 account: it is your own Account switched to business mode (section 13).
+
+3.5 To create an account, you must verify a mobile phone number with a code we
+send you by SMS (section 4.5). Phone verification is available for numbers
+from European countries (except Russia and Belarus), Brazil, the United
+States, Canada and the United Kingdom. Without a mobile number from one of
+these countries, you cannot create an account yet.
 
 ================================================================================
 4. YOUR ACCOUNT
@@ -93,11 +102,33 @@ a) Some features require you to verify your age with an identity document:
    - publishing any Experience, and booking an Experience as a member
      (section 12.3);
    - other cases the law requires where you live.
+   In all other cases, verifying with an identity document is optional.
 b) Some badges require you to verify your profile with a selfie.
-c) We delete identity-document images as soon as the check is finished, as
-   explained in section 8 of the Privacy Policy.
+c) When you verify with an identity document, the app reads the document on
+   your device and fills in your first name, surname, date of birth, document
+   type, issuing country and document number. You confirm these details, and
+   a GreenGo reviewer checks them against the photo of the document. We
+   delete the photo after the review, or after 7 days if it is still waiting
+   for review (you can then upload it again). This also applies to a photo
+   of you holding your document. We keep the details you confirmed
+   encrypted, in a separate restricted store, only to identify you when the
+   law requires it (section 18.8). We never show them to other users and do
+   not use them for anything else. Section 8 of the Privacy Policy explains
+   this, and how long we keep them.
 d) Using a document that is not yours, or that was already used for another
    account, breaks these Terms.
+
+4.5 Phone number
+a) Every account needs its own verified mobile phone number. One phone
+   number can be linked to only one account.
+b) If your account was created before phone verification was required, you
+   must verify a phone number before you:
+   - join or book an Event or an Experience, or buy a ticket;
+   - create or host an Event or an Experience;
+   - use a Business account.
+c) Your phone number is private. We never show it to other users. It is kept
+   in the private part of your account, as explained in the Privacy Policy.
+d) Use only a number that you are entitled to use, and keep it up to date.
 
 ================================================================================
 5. WHAT GREENGO IS
@@ -405,7 +436,9 @@ Specific promotions have their own rules, which we show before you take part.
 
 11.1 To create an Event you need a Membership (Base or higher), and your
 account must not be restricted. How many Events you can have at a time
-depends on your plan (section 11.7). The organiser is responsible for:
+depends on your plan (section 11.7). To create, join or book an Event, or to
+buy a ticket, your account also needs a verified phone number (section 4.5).
+The organiser is responsible for:
 - describing the Event accurately;
 - keeping it lawful and safe;
 - cancelling it in good time if it cannot go ahead.
@@ -575,6 +608,8 @@ Identity document:
   document. The same applies to booking an Experience as a member.
 - To publish a paid Experience, your age verification must also have been
   approved.
+Phone number: to publish or host an Experience, your account needs a verified
+phone number (section 4.5).
 New Hosts may publish only one paid Experience until they have 3 reviews.
 
 12.4 Hosts who are traders
@@ -603,7 +638,7 @@ c) If the Host removes your booked time or cancels your booking, GreenGo
    refund owed by the Host, or take action against the Host's account.
    GreenGo itself does not pay refunds for Experiences from its own funds.
 d) To book an Experience as a member, you must have uploaded an identity
-   document (section 12.3).
+   document (section 12.3) and verified your phone number (section 4.5).
 
 12.6 Reviews
 - After a real booking, Hosts and Guests can review each other.
@@ -620,6 +655,8 @@ d) To book an Experience as a member, you must have uploaded an identity
 switched to business mode. It lets a company or professional show a business
 page:
 - business details and opening hours;
+- an optional business contact number (not verified, it can be a landline).
+  It is private unless you switch on showing it on your business page;
 - events and experiences;
 - followers.
 
@@ -632,8 +669,11 @@ page:
 13.3 You are the controller of the personal data you collect from people who
 contact you (for example leads). Use it only as the law allows.
 
-13.4 We may ask you to verify the business. The verified badge means that we
-checked the documents provided. It is not an endorsement.
+13.4 A Business account needs only a verified phone number (section 4.5). An
+identity document of the person who runs the business is optional; if you
+provide one, section 4.4 c applies to it. We may ask you to verify the
+business. The verified badge means that we checked the documents provided.
+It is not an endorsement.
 
 13.5 Any paid promotion of a business page is clearly labelled in the app as
 promoted.
@@ -644,7 +684,8 @@ promoted.
   the law says otherwise.
 
 13.7 Business accounts are available with a Silver, Gold or Platinum
-Membership. If your Membership ends or drops below Silver, the business tools
+Membership, and need a verified phone number (section 4.5). If your
+Membership ends or drops below Silver, the business tools
 (for example the business page, leads, promotion and paid listings) pause,
 and your account works as a personal account with free listings only. They
 start again when you have a Silver, Gold or Platinum Membership again.
@@ -951,6 +992,19 @@ or to a consumer authority (section 26).
   will publish their details here. Until then, authorities can use
   legal@greengochat.com.
 
+18.8 Requests from authorities
+a) We disclose account data, including your phone number and the identity
+   details in section 4.4 c, only where the law requires it or where it is
+   necessary:
+   - to answer a valid order from a court, or a request from the police or
+     another competent authority;
+   - to protect someone's life or safety in a serious case;
+   - to establish, exercise or defend legal claims.
+b) Only a small number of authorised staff can access the identity details,
+   and every access is logged.
+c) Where the law allows, we tell you about the request (Privacy Policy,
+   section 12.5).
+
 ================================================================================
 19. CHILD SAFETY
 ================================================================================
@@ -1211,6 +1265,23 @@ VERSION HISTORY
 5.3.2 - effective 17 October 2026 for accounts created on or after
 16 October 2026; 16 November 2026 for accounts created before 16 October 2026
 (announced 17 October 2026)
+Phone verification and identity details:
+- Sections 3.3, 3.5, 4.5, 11.1, 12.3, 12.5, 13.4 and 13.7: a verified mobile
+  phone number is required to create an account (numbers from European countries
+  except Russia and Belarus, Brazil, the United States, Canada and the United
+  Kingdom), and for existing accounts before joining or booking Events and
+  Experiences, buying tickets, creating or hosting Events and Experiences
+  and using a Business account; one number per account; the number is
+  private; a keyed hash of the email address and phone number of banned
+  accounts.
+- Section 13.1: an optional business contact number, shown on the business
+  page only if you switch it on.
+- Sections 4.4, 13.4 and 18.8: identity-document verification stays optional
+  (also for the owner of a Business account, which needs only a verified
+  phone number); the document is read on your device and checked by a
+  reviewer, the photo is deleted after the review or after 7 days if still
+  pending, and the details you confirm are kept encrypted only to identify
+  you when the law requires it.
 Clarifications to match how the app works:
 - Sections 5.1 g, 14.1, 14.2 and 14.4: the AI helpers in chat are
   translation, read-aloud and transliteration (smart replies and word

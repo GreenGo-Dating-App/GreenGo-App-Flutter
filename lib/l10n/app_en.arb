@@ -14927,6 +14927,10 @@
   "@legalUpdate532BulletPhases": {
     "description": "Terms 5.3.2 \"what changes\" bullet: ticket price phases and the 2026 launch offer (re-acceptance sheet and advance notice)."
   },
+  "legalUpdate532BulletPhone": "A verified phone number is now required; ID document details are kept encrypted for legal requests",
+  "@legalUpdate532BulletPhone": {
+    "description": "Terms 5.3.2 \"what changes\" bullet: verified phone number required; ID document details kept encrypted for legal requests (re-acceptance sheet and advance notice)."
+  },
   "legalUpdateCloseAccount": "I don't accept – close my account",
   "@legalUpdateCloseAccount": {
     "description": "Third option of the Terms re-acceptance sheet (Terms 24.2 c)."

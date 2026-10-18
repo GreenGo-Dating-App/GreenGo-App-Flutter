@@ -79,14 +79,20 @@ applies to them too.
   you choose "Exact" in Globe Discoverability, they see a point within about
   100 m of your position instead. They never see your exact coordinates, date
   of birth, phone number or email address.
+- To create an account you must verify a mobile phone number by SMS. Your
+  number is private and never shown to other users. If we ban an account, we
+  keep only a keyed hash of its number, to stop it from coming back.
 - We do NOT sell your personal data. We do NOT use it for third-party
   advertising. There are no ads in GreenGo.
 - Your messages are encrypted in transit and at rest, but they are NOT
   end-to-end encrypted.
   - Our systems can process message content, for example to translate it when
     you ask, or to check a message someone has reported.
-- If you verify your age with an identity document, we delete the image as
-  soon as the check is finished. We keep only the result.
+- Verifying with an identity document is optional, except for the features
+  in section 8.1. If you do it, the app reads the document on your device, a
+  reviewer checks it, and we then delete the image. We keep the details you
+  confirmed encrypted in a restricted store, only to identify you when the
+  law requires it, until 6 months after your account is closed.
 - AI features (translation, read-aloud and transliteration of messages
   written in non-Latin scripts) use Google services, and our support
   assistant uses Anthropic's Claude. They run through our servers, except
@@ -108,7 +114,8 @@ applies to them too.
 
 a) Account data
    Email address, password (stored only as a secure hash by our
-   authentication provider), nickname and display name, date of birth, and
+   authentication provider), mobile phone number (verified with a code sent
+   by SMS, see section 6.5), nickname and display name, date of birth, and
    the language you use.
 
 b) Profile data
@@ -133,14 +140,18 @@ c) Content and communications
 
 d) Business account data
    Business name and legal name, category, address shown on your page, opening
-   hours, contact channels and, where you ask to be verified as a business, the
+   hours, contact channels, an optional business contact number (not
+   verified, it can be a landline; private unless you switch on showing it
+   on your business page) and, where you ask to be verified as a business, the
    documents needed for verification (see section 8.4). If you sell tickets or
    experiences, also your billing data (see h below) and, if you act as a
    trader, your trader details (see j below).
 
 e) Verification data
-   An identity document and/or a selfie, only if you choose to verify. See
-   section 8.
+   An identity document and/or a selfie, only if you choose to verify. If
+   you verify with an identity document, also the details read from it and
+   confirmed by you: first name, surname, date of birth, document type,
+   issuing country and document number. See section 8.
 
 f) Purchase data
    - What you bought, when, the price and currency.
@@ -255,15 +266,17 @@ People you have blocked cannot see your profile.
 4.2 Never shown to other users
 
 Your exact coordinates, date of birth, email address, phone number, identity
-document, verification selfie and private-album photos (unless
-you grant someone access to your private album).
+document and the identity details read from it, verification selfie and
+private-album photos (unless you grant someone access to your private album).
 
 4.3 Content you share
 
 - Messages are visible to the people in that conversation, group, community or
   event chat.
 - Posts in a public community are visible to everyone who can open it.
-- Your business page and the experiences you publish are public.
+- Your business page and the experiences you publish are public. Your
+  business contact number is shown on your business page only if you switch
+  this on. The verified phone number of your account is never shown.
 - If you sell as a trader, your trader details are shown on your listings
   (section 11.8).
 
@@ -276,8 +289,9 @@ for example to:
 - review a verification;
 - meet a legal obligation.
 
-Access to identity documents is limited to senior administrators. Every view
-is logged.
+Access to identity documents, and to the encrypted identity details we keep
+after the review (section 8.2), is limited to a small number of authorised
+senior administrators. Every access is logged.
 
 ================================================================================
 5. WHY WE USE YOUR DATA AND OUR LEGAL BASES
@@ -289,7 +303,8 @@ The law requires a legal basis for every use of personal data. In the table:
 
 Purpose                              | What we use                | Legal basis
 -------------------------------------|----------------------------|--------------------------------------
-1. Create and run your account       | Account, device data       | Contract (GDPR 6(1)(b); LGPD 7 V)
+1. Create and run your account       | Account, phone number,     | Contract (GDPR 6(1)(b); LGPD 7 V)
+                                     | device data                |
 2. Show your profile and let people  | Profile, approximate       | Contract (GDPR 6(1)(b); LGPD 7 V)
    discover each other, communities, | location, age, usage       |
    events and experiences            |                            |
@@ -301,8 +316,9 @@ Purpose                              | What we use                | Legal basis
 5. AI features: translation,        | The text you choose to     | Contract, after your consent to the
    read-aloud, transliteration       | process                    | AI feature (GDPR 6(1)(a)/(b); LGPD
                                      |                            | 7 I/V). See section 9.
-6. Age verification with an ID       | ID image, date of birth    | Explicit consent (GDPR 9(2)(a);
-   document                          | read from it               | LGPD 11 I). See section 8.
+6. Age and identity verification     | ID image; the details read | Explicit consent (GDPR 9(2)(a);
+   with an ID document               | from it and confirmed by   | LGPD 11 I). See section 8.
+                                     | you                        |
 7. Selfie verification               | Selfie, profile photos     | Explicit consent (GDPR 9(2)(a);
                                      |                            | LGPD 11 I)
 8. Purchases, coins, memberships,    | Purchase data, coin ledger | Contract (GDPR 6(1)(b); LGPD 7 V)
@@ -362,6 +378,16 @@ Purpose                              | What we use                | Legal basis
     (section 10.2)                   | warnings                   | legitimate interests in a working
                                      |                            | reporting system (GDPR 6(1)(f);
                                      |                            | LGPD 7 IX)
+24. Verify your phone number, allow  | Phone number; keyed hashes | Contract (GDPR 6(1)(b); LGPD 7 V);
+    one account per number and stop  | of the email address and   | legitimate interests in a safe
+    banned users from coming back    | phone number of banned     | service without banned users
+    (section 6.5)                    | accounts                   | (GDPR 6(1)(f); LGPD 7 IX)
+25. Identify a person when the law   | Encrypted identity details | Legal obligation where the law
+    requires it: court orders,       | (8.2), phone number,       | requires it (GDPR 6(1)(c); LGPD 7
+    requests from the police or      | account data               | II); otherwise legitimate
+    other competent authorities,     |                            | interests in protecting users and
+    legal claims, serious safety     |                            | defending legal claims (GDPR
+    cases (section 8.2)              |                            | 6(1)(f); LGPD 7 IX)
 
 Where we rely on legitimate interests, we have weighed our interest against your
 rights. You can ask us for that assessment. You can object at any time (16.2).
@@ -372,7 +398,8 @@ refuse or withdraw consent:
 - to an AI feature, you cannot use that AI feature, but the rest of GreenGo
   keeps working;
 - to verification, you lose only the features that need verification (see
-  section 8).
+  section 8). The identity details you already confirmed are kept for the
+  purpose in row 25 and for the period in section 8.2 g.
 
 ================================================================================
 6. ACCOUNT, PROFILE AND DISCOVERY
@@ -401,6 +428,22 @@ you for third parties.
   can turn it off at any time. After you turn it off, we do not use your
   content in new advertising or marketing.
 - We record your choice and when you made it.
+
+6.5 Phone number
+a) To create an account, you must verify a mobile phone number. We send you a
+   code by SMS through Google Firebase Authentication, our sign-in provider.
+   If your account was created before this rule, you must verify a number
+   before you join or book events and experiences, buy tickets, create or
+   host events or experiences, or use a business account.
+b) Phone verification is available for numbers from European countries
+   (except Russia and Belarus), Brazil, the United States, Canada and the
+   United Kingdom. Without such a number, you cannot create an account yet.
+c) Your number is stored in the private part of your account. It is never
+   shown to other users, and we do not use it for marketing.
+d) One number can be linked to only one account. If we ban an account, we
+   keep a keyed hash of its phone number (a code from which the number cannot
+   be read back), so that the number cannot be used to create a new account
+   (section 14).
 
 ================================================================================
 7. LOCATION
@@ -467,25 +510,41 @@ up. We ask for an identity document only in these cases:
 a) Before you upload, we explain what will happen and ask for your explicit
    consent.
 
-b) The image is sent to Google Cloud Vision, which reads the text on the
-   document so that we can find the date of birth. Google acts on our behalf
-   and keeps nothing afterwards.
+b) The app reads the text on the document on your device and fills in your
+   first name, surname, date of birth, document type, issuing country and
+   document number. You check these details and confirm them.
 
-c) If the automatic check is clear, the image is DELETED as soon as the
-   decision is made.
+c) A trained member of our staff checks the details you confirmed against
+   the image of the document.
 
-d) If the automatic check is unclear, a trained member of our staff may look
-   at the image. In that case the image is kept for no more than 7 days, and
-   then DELETED, whatever the outcome.
+d) The image is DELETED as soon as the review is finished. If it is still
+   waiting for review after 7 days, it is DELETED whatever the outcome, and
+   you can upload it again. This applies to every identity-document image,
+   including the photo of you holding your identity document that you can
+   add when you sign up (8.3) and the identity document of a business owner
+   (8.4).
 
-e) After deletion we keep only:
-   - whether your age was verified (yes or no);
-   - the method;
-   - the date of the check;
-   - your year of birth.
+e) After the review we keep:
+   - whether your age was verified (yes or no), the method, the date of the
+     check and your year of birth;
+   - the details you confirmed (first name, surname, date of birth, document
+     type, issuing country and document number), ENCRYPTED and kept apart
+     from your profile, in a restricted store.
 
-   We do not keep the image, your name as printed on the document, the
-   document number, your nationality or the document's expiry date.
+   We do not keep the image, your nationality or the document's expiry date.
+
+f) We use the encrypted details only to identify you when the law requires
+   it: to answer a valid order from a court, or a request from the police or
+   another competent authority; to protect someone's life or safety in a
+   serious case; or to establish, exercise or defend legal claims (section
+   12.5). Only a small number of authorised staff can access them, and every
+   access is logged. We never show them to other users, and we never use them
+   for anything else, for example marketing or profiling.
+
+g) We keep the encrypted details while your account exists and for 6 months
+   after it is closed (the period for which the Brazilian Marco Civil da
+   Internet requires access logs to be kept, art. 15). We keep them longer
+   only under a legal hold (section 14).
 
 8.3 Selfie verification
 
@@ -493,7 +552,9 @@ You can verify your profile by taking a selfie. A member of our staff compares
 it with your profile photos. We delete the selfie after the review and keep only
 the result (verified or not). We do not create a face template or any other
 biometric identifier from your selfie, and we do not use facial recognition to
-identify you.
+identify you. A photo of you holding your identity document is an
+identity-document image: the rules in 8.2, including deletion after 7 days at
+the latest, apply to it.
 
 On your device, before you upload a photo, the app checks that a face is
 visible and screens it for nudity. This check runs entirely on your phone,
@@ -502,9 +563,12 @@ data is stored.
 
 8.4 Business verification
 
-To verify a business account we may ask for the business's registration
-details and an identity document of the person who runs it. The owner's
-identity document follows the same rules as in 8.2. We keep the business
+A business account needs only a verified phone number (section 6.5). To
+verify a business account we may ask for the business's registration
+details. An identity document of the person who runs it is optional. If the
+owner provides one, it follows the same rules as in 8.2: the image is deleted
+after the review (at the latest after 7 days), and the confirmed details are
+kept encrypted only for legal requests. We keep the business
 registration details for as long as the business page exists and for 6 months
 afterwards, because the EU Digital Services Act requires us to be able to
 identify traders who offer services to consumers.
@@ -512,7 +576,8 @@ identify traders who offer services to consumers.
 8.5 If you say no
 
 You can refuse or withdraw your consent to verification. You then cannot use
-the features listed in 8.1 that need it. Your account is not deleted.
+the features listed in 8.1 that need it. Your account is not deleted. The
+identity details you already confirmed are kept as described in 8.2 f and g.
 
 8.6 Notice for residents of Illinois, Texas and other US states with biometric
 laws
@@ -809,7 +874,9 @@ These companies process data only on our instructions, under written contracts
 Provider                         | What they do for us               | Location | Transfer safeguard
 ---------------------------------|-----------------------------------|----------|---------------------------
 Google LLC / Google Cloud,       | Hosting, database, file storage,  | USA,     | EU SCCs, EU-US Data Privacy
-Firebase                         | server functions, sign-in, push   | global   | Framework; ANPD clauses
+Firebase                         | server functions, sign-in and SMS | global   | Framework; ANPD clauses
+                                 | codes for phone verification      |          |
+                                 | (Firebase Authentication), push   |          |
                                  | notifications, security checks    |          |
                                  | (App Check), analytics and crash  |          |
                                  | reports, logging                  |          |
@@ -866,7 +933,9 @@ We disclose data when the law requires it or when it is necessary:
 - to protect someone's life or safety;
 - to establish, exercise or defend legal claims.
 
-Where the law allows, we tell you about the request.
+This can include your phone number and the encrypted identity details from an
+identity-document verification (section 8.2). Where the law allows, we tell
+you about the request.
 
 12.6 Business changes
 
@@ -911,14 +980,20 @@ that it can no longer identify you.
 Data                                   | How long
 ---------------------------------------|----------------------------------------
 Account and profile                    | Until you delete your account
+Phone number (6.5)                     | Until you delete your account
 Exact location                         | Overwritten whenever it is updated;
                                        | deleted with the account
 Messages and media                     | Until you or the conversation deletes
                                        | them, or you delete your account (see
                                        | section 15)
-Identity document image                | Deleted when the check is decided, or
-                                       | after at most 7 days if a person must
-                                       | review it
+Identity document images (including    | Deleted as soon as the review is
+a photo holding the document, and      | finished, and at the latest after 7
+business owners' documents)            | days whatever the outcome (you can
+                                       | then upload it again)
+Identity details you confirmed (first  | While your account exists and 6
+name, surname, date of birth, document | months after it is closed (Marco Civil
+type, issuing country and number),     | da Internet access-log period);
+encrypted (8.2)                        | longer only under a legal hold
 Age verification result (yes/no,       | Until you delete your account
 method, date, birth year)              |
 Verification selfie                    | Deleted after the review; the result is
@@ -963,7 +1038,8 @@ of access to the Services)             | Marco Civil da Internet (art. 15)
 Other server security logs             | 30 days
 Backups                                | Overwritten within 90 days
 Banned-account records (to stop        | 5 years, kept as a one-way hash of the
-re-registration)                       | email address
+re-registration)                       | email address and a keyed hash of the
+                                       | phone number
 
 We may keep data longer only where the law requires it, or where it is needed
 for a pending legal claim or investigation (a "legal hold"). In that case we
@@ -1018,6 +1094,12 @@ g) Backups are overwritten within 90 days.
 
 h) We keep a short deletion receipt (the date and the number of items removed)
    so that we can prove the deletion took place.
+
+i) Your phone number is deleted with your account. The encrypted identity
+   details from an identity-document verification are kept for 6 months after
+   the account is closed, and then deleted (section 8.2 g). If the account
+   was banned, we keep the keyed hashes of its email address and phone number
+   (section 14).
 
 15.3 Any coins left in your account and any remaining membership time are lost
 when you delete your account. Deleting the app does not delete your account.
@@ -1179,6 +1261,8 @@ them. You can change them at any time in your device settings.
 - Server-side checks for purchases and coins.
 - App Check against fake clients.
 - Restricted, logged administrator access.
+- Identity details from document verification kept encrypted, in a separate
+  store that only a few authorised staff can open, with every access logged.
 - Keys and secrets kept in a secrets manager.
 - Regular security reviews.
 
@@ -1230,8 +1314,8 @@ comprehensive privacy laws, to the extent those laws apply to us.
 Category (Cal. Civ. Code 1798.140)     | Collected | Disclosed for a      | Sold or
                                        |           | business purpose to  | shared
 ---------------------------------------|-----------|----------------------|--------
-Identifiers (name, email, account id,  | Yes       | Service providers    | No
-IP address)                            |           |                      |
+Identifiers (name, email, phone number,| Yes       | Service providers    | No
+account id, IP address)                |           |                      |
 Customer records (1798.80)             | Yes       | Service providers    | No
 Protected characteristics (age,        | Yes       | Service providers    | No
 gender)                                |           |                      |
@@ -1247,7 +1331,8 @@ Professional or education information  | Yes, if   | Service providers    | No
 Inferences (interests, recommendations)| Yes       | No                   | No
 Sensitive personal information         | Yes       | Service providers    | No
 (precise geolocation, account log-in,  |           |                      |
-government ID during verification,     |           |                      |
+government ID and the ID details kept  |           |                      |
+encrypted after verification,          |           |                      |
 SSN/ITIN if a US seller gives it for   |           |                      |
 fee invoices)                          |           |                      |
 
@@ -1359,6 +1444,25 @@ VERSION HISTORY
 5.3.1 - effective 17 October 2026 for accounts created on or after
 16 October 2026; 16 November 2026 for accounts created before 16 October 2026
 (announced 17 October 2026)
+Phone verification and identity details:
+- New section 6.5: a verified mobile phone number is required to create an
+  account (numbers from European countries except Russia and Belarus,
+  Brazil, the United States, Canada and the United Kingdom), and for
+  existing accounts before events, experiences, tickets and business
+  accounts; one number per account; Google Firebase Authentication sends the
+  SMS; a keyed hash of the numbers of banned accounts (also sections 2, 3.1,
+  4.2, 5, 12.2, 14, 15.2 and 22.1).
+- Sections 3.1 d and 4.3: an optional business contact number, shown on the
+  business page only if the business switches it on.
+- Sections 8.2, 8.3 and 8.4: the identity document is read on your device
+  and checked by a reviewer; every identity-document image (also a photo
+  holding the document and a business owner's document) is deleted after
+  the review, or after 7 days if still pending (you can upload it again); a
+  business account needs only a verified phone number, the owner's identity
+  document is optional; the details you confirm
+  are kept encrypted in a restricted store, only to identify you when the
+  law requires it, until 6 months after the account is closed (also
+  sections 2, 3.1, 4.2, 4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 and 22.1).
 Clarifications to match how the app works:
 - Sections 2, 5 and 9: the AI features are translation, read-aloud and
   transliteration (smart replies and word breakdown are not offered); chat

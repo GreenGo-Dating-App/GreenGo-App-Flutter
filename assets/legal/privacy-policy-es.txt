@@ -84,6 +84,10 @@ visitantes (sección 11.7). Esta política también se aplica a ellas.
   «Exacta» en Visibilidad en el globo, ven en su lugar un punto a unos 100 m
   como máximo de tu posición. Nunca ven tus coordenadas exactas, tu fecha de
   nacimiento, tu número de teléfono ni tu dirección de correo electrónico.
+- Para crear una cuenta debes verificar un número de teléfono móvil por SMS.
+  Tu número es privado y nunca se muestra a otros usuarios. Si bloqueamos una
+  cuenta, solo conservamos un hash con clave de su número, para impedir que
+  vuelva.
 - NO vendemos tus datos personales. NO los usamos para publicidad de terceros.
   En GreenGo no hay anuncios.
 - Tus mensajes están cifrados en tránsito y en reposo, pero NO están cifrados
@@ -91,8 +95,12 @@ visitantes (sección 11.7). Esta política también se aplica a ellas.
   - Nuestros sistemas pueden procesar el contenido de los mensajes, por ejemplo
     para traducirlo cuando lo pides o para revisar un mensaje que alguien ha
     denunciado.
-- Si verificas tu edad con un documento de identidad, eliminamos la imagen en
-  cuanto termina la comprobación. Solo conservamos el resultado.
+- La verificación con un documento de identidad es opcional, salvo para las
+  funciones de la sección 8.1. Si la haces, la app lee el documento en tu
+  dispositivo, un revisor lo comprueba y después eliminamos la imagen.
+  Conservamos los datos que confirmaste cifrados en un almacén restringido,
+  solo para identificarte cuando la ley lo exija, hasta 6 meses después del
+  cierre de tu cuenta.
 - Las funciones de IA (traducción, lectura en voz alta y transliteración de
   mensajes escritos en alfabetos no latinos) utilizan servicios de Google, y
   nuestro asistente de soporte utiliza Claude, de Anthropic. Funcionan a
@@ -115,8 +123,9 @@ visitantes (sección 11.7). Esta política también se aplica a ellas.
 
 a) Datos de la cuenta
    Dirección de correo electrónico, contraseña (almacenada solo como hash
-   seguro por nuestro proveedor de autenticación), apodo y nombre visible,
-   fecha de nacimiento y el idioma que utilizas.
+   seguro por nuestro proveedor de autenticación), número de teléfono móvil
+   (verificado con un código enviado por SMS, consulta la sección 6.5), apodo
+   y nombre visible, fecha de nacimiento y el idioma que utilizas.
 
 b) Datos del perfil
    - Fotos, un vídeo de perfil opcional y una presentación de voz.
@@ -140,15 +149,19 @@ c) Contenido y comunicaciones
 
 d) Datos de la cuenta de empresa
    Nombre comercial y razón social, categoría, dirección mostrada en tu
-   página, horario de apertura, canales de contacto y, cuando solicitas ser
-   verificado como empresa, los documentos necesarios para la verificación
-   (consulta la sección 8.4). Si vendes entradas o experiencias, también tus
-   datos de facturación (consulta la letra h) y, si actúas como comerciante,
-   tus datos de comerciante (consulta la letra j).
+   página, horario de apertura, canales de contacto, un número de contacto
+   del negocio opcional (no verificado, puede ser un teléfono fijo; privado
+   salvo que actives su visualización en tu página de empresa) y, cuando
+   solicitas ser verificado como empresa, los documentos necesarios para la
+   verificación (consulta la sección 8.4). Si vendes entradas o
+   experiencias, también tus datos de facturación (consulta la letra h) y, si
+   actúas como comerciante, tus datos de comerciante (consulta la letra j).
 
 e) Datos de verificación
-   Un documento de identidad y/o un selfi, solo si decides verificarte.
-   Consulta la sección 8.
+   Un documento de identidad y/o un selfi, solo si decides verificarte. Si
+   te verificas con un documento de identidad, también los datos leídos en él
+   y confirmados por ti: nombre, apellidos, fecha de nacimiento, tipo de
+   documento, país de expedición y número de documento. Consulta la sección 8.
 
 f) Datos de compra
    - Qué compraste, cuándo, el precio y la moneda.
@@ -274,8 +287,9 @@ Las personas que has bloqueado no pueden ver tu perfil.
 4.2 Nunca se muestra a otros usuarios
 
 Tus coordenadas exactas, fecha de nacimiento, dirección de correo electrónico,
-número de teléfono, documento de identidad, selfi de verificación y fotos del
-álbum privado (salvo que concedas a alguien acceso a tu álbum privado).
+número de teléfono, documento de identidad y los datos de identidad leídos en
+él, selfi de verificación y fotos del álbum privado (salvo que concedas a
+alguien acceso a tu álbum privado).
 
 4.3 Contenido que compartes
 
@@ -283,7 +297,9 @@ número de teléfono, documento de identidad, selfi de verificación y fotos del
   comunidad o chat de evento.
 - Las publicaciones en una comunidad pública son visibles para todos los que
   pueden abrirla.
-- Tu página de empresa y las experiencias que publicas son públicas.
+- Tu página de empresa y las experiencias que publicas son públicas. Tu
+  número de contacto del negocio solo se muestra en tu página de empresa si lo
+  activas. El número de teléfono verificado de tu cuenta nunca se muestra.
 - Si vendes como comerciante, tus datos de comerciante se muestran en tus
   anuncios (sección 11.8).
 
@@ -296,8 +312,9 @@ datos de la cuenta cuando es necesario, por ejemplo para:
 - revisar una verificación;
 - cumplir una obligación legal.
 
-El acceso a los documentos de identidad está limitado a administradores
-sénior. Cada consulta queda registrada.
+El acceso a los documentos de identidad, y a los datos de identidad cifrados
+que conservamos tras la revisión (sección 8.2), está limitado a un número
+reducido de administradores sénior autorizados. Cada acceso queda registrado.
 
 ================================================================================
 5. POR QUÉ USAMOS TUS DATOS Y NUESTRAS BASES JURÍDICAS
@@ -309,8 +326,8 @@ La ley exige una base jurídica para cada uso de datos personales. En la tabla:
 
 Finalidad                             | Qué datos usamos             | Base jurídica
 --------------------------------------|------------------------------|----------------------------------------
-1. Crear y gestionar tu cuenta        | Cuenta, datos del            | Contrato (RGPD 6(1)(b); LGPD 7 V)
-                                      | dispositivo                  |
+1. Crear y gestionar tu cuenta        | Cuenta, número de teléfono,  | Contrato (RGPD 6(1)(b); LGPD 7 V)
+                                      | datos del dispositivo        |
 2. Mostrar tu perfil y permitir que   | Perfil, ubicación            | Contrato (RGPD 6(1)(b); LGPD 7 V)
    las personas se descubran entre    | aproximada, edad, uso        |
    sí, y descubran comunidades,       |                              |
@@ -323,8 +340,9 @@ Finalidad                             | Qué datos usamos             | Base jur
 5. Funciones de IA: traducción,       | El texto que decides         | Contrato, tras tu consentimiento a la
    lectura en voz alta,               | procesar                     | función de IA (RGPD 6(1)(a)/(b); LGPD 7
    transliteración                    |                              | I/V). Consulta la sección 9.
-6. Verificación de edad con un        | Imagen del documento, fecha  | Consentimiento explícito (RGPD 9(2)(a);
-   documento de identidad             | de nacimiento leída en él    | LGPD 11 I). Consulta la sección 8.
+6. Verificación de edad e identidad   | Imagen del documento; los    | Consentimiento explícito (RGPD 9(2)(a);
+   con un documento de identidad      | datos leídos en él y         | LGPD 11 I). Consulta la sección 8.
+                                      | confirmados por ti           |
 7. Verificación mediante selfi        | Selfi, fotos del perfil      | Consentimiento explícito (RGPD 9(2)(a);
                                       |                              | LGPD 11 I)
 8. Compras, monedas, membresías,      | Datos de compra, registro de | Contrato (RGPD 6(1)(b); LGPD 7 V)
@@ -387,6 +405,18 @@ Finalidad                             | Qué datos usamos             | Base jur
     manifiestamente infundadas        | advertencias                 | interés legítimo en un sistema de
     (sección 10.2)                    |                              | denuncias que funcione (RGPD 6(1)(f);
                                       |                              | LGPD 7 IX)
+24. Verificar tu número de teléfono,  | Número de teléfono; hashes   | Contrato (RGPD 6(1)(b); LGPD 7 V);
+    permitir una cuenta por número e  | con clave de la dirección de | interés legítimo en un servicio seguro
+    impedir que los usuarios          | correo electrónico y del     | sin usuarios bloqueados (RGPD 6(1)(f);
+    bloqueados vuelvan (sección 6.5)  | número de teléfono de las    | LGPD 7 IX)
+                                      | cuentas bloqueadas           |
+25. Identificar a una persona cuando  | Datos de identidad cifrados  | Obligación legal cuando la ley lo exige
+    la ley lo exija: órdenes          | (8.2), número de teléfono,   | (RGPD 6(1)(c); LGPD 7 II); en otros
+    judiciales, solicitudes de la     | datos de la cuenta           | casos, interés legítimo en proteger a
+    policía o de otras autoridades    |                              | los usuarios y defender reclamaciones
+    competentes, reclamaciones        |                              | legales (RGPD 6(1)(f); LGPD 7 IX)
+    legales, casos graves de          |                              |
+    seguridad (sección 8.2)           |                              |
 
 Cuando nos basamos en el interés legítimo, hemos ponderado nuestro interés
 frente a tus derechos. Puedes pedirnos esa evaluación. Puedes oponerte en
@@ -398,7 +428,9 @@ hicimos antes. Si rechazas o retiras el consentimiento:
 - a una función de IA, no podrás usar esa función de IA, pero el resto de
   GreenGo seguirá funcionando;
 - a la verificación, solo perderás las funciones que requieren verificación
-  (consulta la sección 8).
+  (consulta la sección 8). Los datos de identidad que ya confirmaste se
+  conservan para la finalidad de la fila 25 y durante el plazo de la sección
+  8.2 g.
 
 ================================================================================
 6. CUENTA, PERFIL Y DESCUBRIMIENTO
@@ -427,6 +459,23 @@ terceros.
   puedes desactivarla en cualquier momento. Después de desactivarla, no
   usamos tu contenido en nueva publicidad o marketing.
 - Registramos tu elección y cuándo la hiciste.
+
+6.5 Número de teléfono
+a) Para crear una cuenta, debes verificar un número de teléfono móvil. Te
+   enviamos un código por SMS a través de Google Firebase Authentication,
+   nuestro proveedor de inicio de sesión. Si tu cuenta se creó antes de esta
+   norma, debes verificar un número antes de unirte a eventos y experiencias
+   o reservarlos, comprar entradas, crear u organizar eventos o experiencias,
+   o usar una cuenta de empresa.
+b) La verificación del teléfono está disponible para números de países
+   europeos (excepto Rusia y Bielorrusia), Brasil, Estados Unidos, Canadá y
+   el Reino Unido. Sin un número así, todavía no puedes crear una cuenta.
+c) Tu número se guarda en la parte privada de tu cuenta. Nunca se muestra a
+   otros usuarios, y no lo usamos para marketing.
+d) Un número solo puede vincularse a una cuenta. Si bloqueamos una cuenta,
+   conservamos un hash con clave de su número de teléfono (un código a partir
+   del cual no se puede volver a leer el número), para que el número no pueda
+   usarse para crear una cuenta nueva (sección 14).
 
 ================================================================================
 7. UBICACIÓN
@@ -497,26 +546,43 @@ estos casos:
 a) Antes de que lo subas, te explicamos lo que ocurrirá y te pedimos tu
    consentimiento explícito.
 
-b) La imagen se envía a Google Cloud Vision, que lee el texto del documento
-   para que podamos encontrar la fecha de nacimiento. Google actúa en nuestro
-   nombre y no conserva nada después.
+b) La app lee el texto del documento en tu dispositivo y rellena tu nombre,
+   apellidos, fecha de nacimiento, tipo de documento, país de expedición y
+   número de documento. Tú compruebas estos datos y los confirmas.
 
-c) Si la comprobación automática es clara, la imagen se ELIMINA en cuanto se
-   toma la decisión.
+c) Un miembro formado de nuestro personal comprueba los datos que confirmaste
+   con la imagen del documento.
 
-d) Si la comprobación automática no es clara, un miembro formado de nuestro
-   personal puede ver la imagen. En ese caso, la imagen se conserva durante
-   no más de 7 días y después se ELIMINA, sea cual sea el resultado.
+d) La imagen se ELIMINA en cuanto termina la revisión. Si sigue pendiente de
+   revisión después de 7 días, se ELIMINA sea cual sea el resultado, y puedes
+   volver a subirla. Esto se aplica a todas las imágenes de documentos de
+   identidad, incluida la foto tuya sosteniendo tu documento de identidad que
+   puedes añadir al registrarte (8.3) y el documento de identidad del titular
+   de una empresa (8.4).
 
-e) Tras la eliminación solo conservamos:
-   - si tu edad fue verificada (sí o no);
-   - el método;
-   - la fecha de la comprobación;
-   - tu año de nacimiento.
+e) Tras la revisión conservamos:
+   - si tu edad fue verificada (sí o no), el método, la fecha de la
+     comprobación y tu año de nacimiento;
+   - los datos que confirmaste (nombre, apellidos, fecha de nacimiento, tipo
+     de documento, país de expedición y número de documento), CIFRADOS y
+     separados de tu perfil, en un almacén restringido.
 
-   No conservamos la imagen, tu nombre tal como figura en el documento, el
-   número del documento, tu nacionalidad ni la fecha de caducidad del
+   No conservamos la imagen, tu nacionalidad ni la fecha de caducidad del
    documento.
+
+f) Usamos los datos cifrados solo para identificarte cuando la ley lo exige:
+   para responder a una orden válida de un tribunal, o a una solicitud de la
+   policía o de otra autoridad competente; para proteger la vida o la
+   seguridad de alguien en un caso grave; o para formular, ejercer o defender
+   reclamaciones legales (sección 12.5). Solo un número reducido de personal
+   autorizado puede acceder a ellos, y cada acceso queda registrado. Nunca
+   los mostramos a otros usuarios, y nunca los usamos para nada más, por
+   ejemplo para marketing o elaboración de perfiles.
+
+g) Conservamos los datos cifrados mientras exista tu cuenta y durante 6 meses
+   después de su cierre (el plazo durante el cual el Marco Civil da Internet
+   brasileño exige conservar los registros de acceso, art. 15). Solo los
+   conservamos más tiempo en caso de retención legal (sección 14).
 
 8.3 Verificación mediante selfi
 
@@ -524,7 +590,10 @@ Puedes verificar tu perfil haciéndote un selfi. Un miembro de nuestro personal
 lo compara con tus fotos del perfil. Eliminamos el selfi después de la
 revisión y solo conservamos el resultado (verificado o no). No creamos una
 plantilla facial ni ningún otro identificador biométrico a partir de tu selfi,
-y no utilizamos el reconocimiento facial para identificarte.
+y no utilizamos el reconocimiento facial para identificarte. Una foto tuya
+sosteniendo tu documento de identidad es una imagen de documento de identidad:
+se le aplican las reglas de 8.2, incluida la eliminación como máximo a los 7
+días.
 
 En tu dispositivo, antes de que subas una foto, la app comprueba que se vea
 una cara y la analiza para detectar desnudos. Esta comprobación se realiza
@@ -533,9 +602,12 @@ nosotros ni a Google para ello, y no se almacena ningún dato facial.
 
 8.4 Verificación de empresas
 
-Para verificar una cuenta de empresa podemos pedir los datos de registro de la
-empresa y un documento de identidad de la persona que la dirige. El documento
-de identidad del titular sigue las mismas reglas que en 8.2. Conservamos los
+Una cuenta de empresa solo necesita un número de teléfono verificado (sección
+6.5). Para verificar una cuenta de empresa podemos pedir los datos de registro
+de la empresa. El documento de identidad de la persona que la dirige es
+opcional. Si el titular lo facilita, sigue las mismas reglas que en 8.2: la
+imagen se elimina tras la revisión (como máximo a los 7 días), y los datos
+confirmados se conservan cifrados solo para solicitudes legales. Conservamos los
 datos de registro de la empresa mientras exista la página de empresa y durante
 6 meses después, porque la Ley de Servicios Digitales de la UE nos exige poder
 identificar a los comerciantes que ofrecen servicios a los consumidores.
@@ -544,7 +616,8 @@ identificar a los comerciantes que ofrecen servicios a los consumidores.
 
 Puedes rechazar o retirar tu consentimiento a la verificación. En ese caso no
 podrás usar las funciones enumeradas en 8.1 que la requieren. Tu cuenta no se
-elimina.
+elimina. Los datos de identidad que ya confirmaste se conservan tal como se
+describe en 8.2 f y g.
 
 8.6 Aviso para los residentes de Illinois, Texas y otros estados de EE. UU.
 con leyes sobre datos biométricos
@@ -881,7 +954,10 @@ Proveedor                     | Qué hacen para nosotros            | Ubicación
 Google LLC / Google Cloud,    | Alojamiento, base de datos,        | EE. UU.,   | Cláusulas tipo de la UE, Marco
 Firebase                      | almacenamiento de archivos,        | global     | de Privacidad de Datos
                               | funciones de servidor, inicio de   |            | UE-EE. UU.; cláusulas de la
-                              | sesión, notificaciones push,       |            | ANPD
+                              | sesión y códigos SMS para la       |            | ANPD
+                              | verificación del teléfono          |            |
+                              | (Firebase Authentication),         |            |
+                              | notificaciones push,               |            |
                               | controles de seguridad (App        |            |
                               | Check), analítica e informes de    |            |
                               | fallos, registros                  |            |
@@ -945,7 +1021,9 @@ Divulgamos datos cuando la ley lo exige o cuando es necesario:
 - para proteger la vida o la seguridad de alguien;
 - para formular, ejercer o defender reclamaciones legales.
 
-Cuando la ley lo permite, te informamos de la solicitud.
+Esto puede incluir tu número de teléfono y los datos de identidad cifrados de
+una verificación con documento de identidad (sección 8.2). Cuando la ley lo
+permite, te informamos de la solicitud.
 
 12.6 Cambios empresariales
 
@@ -994,14 +1072,21 @@ los anonimizamos para que ya no puedan identificarte.
 Datos                                   | Plazo
 ----------------------------------------|----------------------------------------
 Cuenta y perfil                         | Hasta que elimines tu cuenta
+Número de teléfono (6.5)                | Hasta que elimines tu cuenta
 Ubicación exacta                        | Se sobrescribe cada vez que se
                                         | actualiza; se elimina con la cuenta
 Mensajes y archivos multimedia          | Hasta que tú o la conversación los
                                         | eliminéis, o hasta que elimines tu
                                         | cuenta (consulta la sección 15)
-Imagen del documento de identidad       | Se elimina cuando se resuelve la
-                                        | comprobación o, como máximo, a los 7
-                                        | días si debe revisarla una persona
+Imágenes de documentos de identidad     | Se eliminan en cuanto termina la
+(incluida una foto sosteniendo el       | revisión y, como máximo, a los 7 días
+documento y los documentos de los       | sea cual sea el resultado (después
+titulares de empresas)                  | puedes volver a subirlas)
+Datos de identidad que confirmaste      | Mientras exista tu cuenta y 6 meses
+(nombre, apellidos, fecha de            | después de su cierre (plazo de
+nacimiento, tipo de documento, país de  | conservación de los registros de acceso
+expedición y número), cifrados (8.2)    | del Marco Civil da Internet); solo más
+                                        | tiempo en caso de retención legal
 Resultado de la verificación de edad    | Hasta que elimines tu cuenta
 (sí/no, método, fecha, año de           |
 nacimiento)                             |
@@ -1058,7 +1143,8 @@ servidor                                |
 Copias de seguridad                     | Se sobrescriben en un plazo de 90 días
 Registros de cuentas bloqueadas (para   | 5 años, conservados como hash
 impedir un nuevo registro)              | unidireccional de la dirección de correo
-                                        | electrónico
+                                        | electrónico y como hash con clave del
+                                        | número de teléfono
 
 Solo podemos conservar los datos durante más tiempo cuando la ley lo exige, o
 cuando es necesario para una reclamación legal o una investigación pendiente
@@ -1117,6 +1203,13 @@ g) Las copias de seguridad se sobrescriben en un plazo de 90 días.
 
 h) Conservamos un breve justificante de eliminación (la fecha y el número de
    elementos eliminados) para poder demostrar que la eliminación se produjo.
+
+i) Tu número de teléfono se elimina con tu cuenta. Los datos de identidad
+   cifrados de una verificación con documento de identidad se conservan
+   durante 6 meses después del cierre de la cuenta, y después se eliminan
+   (sección 8.2 g). Si la cuenta fue bloqueada, conservamos los hashes con
+   clave de su dirección de correo electrónico y de su número de teléfono
+   (sección 14).
 
 15.3 Las monedas que queden en tu cuenta y el tiempo de membresía restante se
 pierden cuando eliminas tu cuenta. Eliminar la app no elimina tu cuenta.
@@ -1297,6 +1390,9 @@ Puedes cambiarlos en cualquier momento en los ajustes de tu dispositivo.
 - Comprobaciones en el servidor para compras y monedas.
 - App Check contra clientes falsos.
 - Acceso de administradores restringido y registrado.
+- Datos de identidad de la verificación con documento conservados cifrados,
+  en un almacén separado que solo puede abrir un número reducido de personal
+  autorizado, con cada acceso registrado.
 - Claves y secretos guardados en un gestor de secretos.
 - Revisiones periódicas de seguridad.
 
@@ -1352,8 +1448,8 @@ Categoría (Cal. Civ. Code 1798.140)     | Recopilada  | Divulgada con fines    
                                         |             | comerciales a          | compartida
 ----------------------------------------|-------------|------------------------|----------
 Identificadores (nombre, correo         | Sí          | Proveedores de         | No
-electrónico, id. de cuenta, dirección   |             | servicios              |
-IP)                                     |             |                        |
+electrónico, número de teléfono, id. de |             | servicios              |
+cuenta, dirección IP)                   |             |                        |
 Registros de clientes (1798.80)         | Sí          | Proveedores de         | No
                                         |             | servicios              |
 Características protegidas (edad,       | Sí          | Proveedores de         | No
@@ -1375,7 +1471,9 @@ recomendaciones)                        |             |                        |
 Información personal sensible           | Sí          | Proveedores de         | No
 (geolocalización precisa, inicio de     |             | servicios              |
 sesión en la cuenta, documento oficial  |             |                        |
-de identidad durante la verificación,   |             |                        |
+de identidad y los datos del documento  |             |                        |
+conservados cifrados tras la            |             |                        |
+verificación,                           |             |                        |
 SSN/ITIN si un vendedor de EE. UU. lo   |             |                        |
 facilita para las facturas de la        |             |                        |
 tarifa)                                 |             |                        |
@@ -1494,6 +1592,26 @@ HISTORIAL DE VERSIONES
 partir del 16 de octubre de 2026; desde el 16 de noviembre de 2026 para las
 cuentas creadas antes del 16 de octubre de 2026 (anunciada el 17 de octubre
 de 2026)
+Verificación del teléfono y datos de identidad:
+- Nueva sección 6.5: se exige un número de teléfono móvil verificado para
+  crear una cuenta (números de países europeos excepto Rusia y Bielorrusia,
+  Brasil, Estados Unidos, Canadá y el Reino Unido) y, en las cuentas
+  existentes, antes de eventos, experiencias, entradas y cuentas de empresa;
+  un número por cuenta; Google Firebase Authentication envía el SMS; un hash
+  con clave de los números de las cuentas bloqueadas (también secciones 2,
+  3.1, 4.2, 5, 12.2, 14, 15.2 y 22.1).
+- Secciones 3.1 d y 4.3: un número de contacto del negocio opcional, que se
+  muestra en la página de empresa solo si la empresa lo activa.
+- Secciones 8.2, 8.3 y 8.4: el documento de identidad se lee en tu
+  dispositivo y lo comprueba un revisor; todas las imágenes de documentos de
+  identidad (también una foto sosteniendo el documento y el documento del
+  titular de una empresa) se eliminan tras la revisión, o pasados 7 días si
+  siguen pendientes (puedes volver a subirlas); una cuenta de empresa solo
+  necesita un número de teléfono verificado, el documento de identidad del
+  titular es opcional; los datos que confirmas se conservan cifrados en un
+  almacén restringido, solo para identificarte cuando la ley lo exija, hasta
+  6 meses después del cierre de la cuenta (también secciones 2, 3.1, 4.2,
+  4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 y 22.1).
 Aclaraciones para ajustarse al funcionamiento de la app:
 - Secciones 2, 5 y 9: las funciones de IA son la traducción, la lectura en
   voz alta y la transliteración (no se ofrecen respuestas inteligentes ni

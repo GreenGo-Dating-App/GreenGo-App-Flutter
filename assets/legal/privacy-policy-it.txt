@@ -84,6 +84,10 @@ richiesta di prenotazione per un'esperienza, da un link condiviso come ospiti
   punto entro circa 100 m dalla tua posizione. Non vedono mai le tue
   coordinate esatte, la tua data di nascita, il tuo numero di telefono o il
   tuo indirizzo e-mail.
+- Per creare un account devi verificare un numero di cellulare via SMS. Il tuo
+  numero è privato e non viene mai mostrato agli altri utenti. Se banniamo un
+  account, conserviamo solo un hash con chiave del suo numero, per impedirgli
+  di tornare.
 - NON vendiamo i tuoi dati personali. NON li usiamo per la pubblicità di
   terzi. In GreenGo non c'è pubblicità.
 - I tuoi messaggi sono cifrati durante la trasmissione e quando sono
@@ -91,8 +95,12 @@ richiesta di prenotazione per un'esperienza, da un link condiviso come ospiti
   - I nostri sistemi possono elaborare il contenuto dei messaggi, ad esempio
     per tradurlo quando lo chiedi, o per verificare un messaggio che qualcuno
     ha segnalato.
-- Se verifichi la tua età con un documento d'identità, cancelliamo l'immagine
-  non appena il controllo è terminato. Conserviamo solo il risultato.
+- La verifica con un documento d'identità è facoltativa, salvo per le
+  funzioni indicate nella sezione 8.1. Se la effettui, l'app legge il
+  documento sul tuo dispositivo, un revisore lo controlla e poi cancelliamo
+  l'immagine. Conserviamo i dati che hai confermato in forma cifrata in un
+  archivio ad accesso limitato, solo per identificarti quando la legge lo
+  richiede, fino a 6 mesi dopo la chiusura del tuo account.
 - Le funzioni di IA (traduzione, lettura vocale e traslitterazione dei
   messaggi scritti in alfabeti non latini) utilizzano servizi Google, e il
   nostro assistente di supporto utilizza Claude di Anthropic. Passano
@@ -116,8 +124,9 @@ richiesta di prenotazione per un'esperienza, da un link condiviso come ospiti
 
 a) Dati dell'account
    Indirizzo e-mail, password (conservata solo come hash sicuro dal nostro
-   fornitore di autenticazione), nickname e nome visualizzato, data di
-   nascita e la lingua che utilizzi.
+   fornitore di autenticazione), numero di cellulare (verificato con un codice
+   inviato via SMS, vedi la sezione 6.5), nickname e nome visualizzato, data
+   di nascita e la lingua che utilizzi.
 
 b) Dati del profilo
    - Foto, un video di profilo facoltativo e una presentazione vocale.
@@ -141,15 +150,21 @@ c) Contenuti e comunicazioni
 
 d) Dati dell'account business
    Nome commerciale e ragione sociale, categoria, indirizzo mostrato sulla tua
-   pagina, orari di apertura, canali di contatto e, se chiedi di essere
-   verificato come attività commerciale, i documenti necessari per la
-   verifica (vedi la sezione 8.4). Se vendi biglietti o esperienze, anche i
+   pagina, orari di apertura, canali di contatto, un numero di contatto
+   dell'attività facoltativo (non verificato, può essere un numero fisso;
+   privato, a meno che tu non ne attivi la visualizzazione sulla tua pagina
+   business) e, se chiedi di essere verificato come attività commerciale, i
+   documenti necessari per la verifica (vedi la sezione 8.4). Se vendi
+   biglietti o esperienze, anche i
    tuoi dati di fatturazione (vedi la lettera h) e, se agisci in qualità di
    professionista, i tuoi dati di professionista (vedi la lettera j).
 
 e) Dati di verifica
    Un documento d'identità e/o un selfie, solo se scegli di effettuare la
-   verifica. Vedi la sezione 8.
+   verifica. Se effettui la verifica con un documento d'identità, anche i
+   dati letti dal documento e confermati da te: nome, cognome, data di
+   nascita, tipo di documento, paese di rilascio e numero del documento. Vedi
+   la sezione 8.
 
 f) Dati di acquisto
    - Che cosa hai acquistato, quando, il prezzo e la valuta.
@@ -277,15 +292,19 @@ Le persone che hai bloccato non possono vedere il tuo profilo.
 4.2 Mai mostrato agli altri utenti
 
 Le tue coordinate esatte, la data di nascita, l'indirizzo e-mail, il numero di
-telefono, il documento d'identità, il selfie di verifica e le foto dell'album
-privato (a meno che tu non conceda a qualcuno l'accesso al tuo album privato).
+telefono, il documento d'identità e i dati identificativi letti da esso, il
+selfie di verifica e le foto dell'album privato (a meno che tu non conceda a
+qualcuno l'accesso al tuo album privato).
 
 4.3 Contenuti che condividi
 
 - I messaggi sono visibili alle persone presenti in quella conversazione,
   gruppo, community o chat dell'evento.
 - I post in una community pubblica sono visibili a chiunque possa aprirla.
-- La tua pagina business e le esperienze che pubblichi sono pubbliche.
+- La tua pagina business e le esperienze che pubblichi sono pubbliche. Il
+  numero di contatto della tua attività è mostrato sulla tua pagina business
+  solo se attivi questa opzione. Il numero di telefono verificato del tuo
+  account non viene mai mostrato.
 - Se vendi in qualità di professionista, i tuoi dati di professionista sono
   mostrati nei tuoi annunci (sezione 11.8).
 
@@ -298,8 +317,9 @@ dell'account quando è necessario, ad esempio per:
 - esaminare una verifica;
 - adempiere a un obbligo di legge.
 
-L'accesso ai documenti d'identità è limitato agli amministratori senior. Ogni
-visualizzazione viene registrata.
+L'accesso ai documenti d'identità, e ai dati identificativi cifrati che
+conserviamo dopo l'esame (sezione 8.2), è limitato a un numero ridotto di
+amministratori senior autorizzati. Ogni accesso viene registrato.
 
 ================================================================================
 5. PERCHÉ USIAMO I TUOI DATI E LE NOSTRE BASI GIURIDICHE
@@ -312,7 +332,8 @@ Nella tabella:
 
 Finalità                             | Dati utilizzati            | Base giuridica
 -------------------------------------|----------------------------|--------------------------------------
-1. Creare e gestire il tuo account   | Account, dati del          | Contratto (GDPR 6(1)(b); LGPD 7 V)
+1. Creare e gestire il tuo account   | Account, numero di         | Contratto (GDPR 6(1)(b); LGPD 7 V)
+                                     | telefono, dati del         |
                                      | dispositivo                |
 2. Mostrare il tuo profilo e         | Profilo, posizione         | Contratto (GDPR 6(1)(b); LGPD 7 V)
    permettere alle persone di        | approssimativa, età,       |
@@ -326,9 +347,9 @@ Finalità                             | Dati utilizzati            | Base giurid
 5. Funzioni di IA: traduzione,       | Il testo che scegli di     | Contratto, dopo il tuo consenso alla
    lettura vocale,                   | elaborare                  | funzione di IA (GDPR 6(1)(a)/(b); LGPD
    traslitterazione                  |                            | 7 I/V). Vedi la sezione 9.
-6. Verifica dell'età con un          | Immagine del documento,    | Consenso esplicito (GDPR 9(2)(a);
-   documento d'identità              | data di nascita letta dal  | LGPD 11 I). Vedi la sezione 8.
-                                     | documento                  |
+6. Verifica dell'età e dell'identità | Immagine del documento;    | Consenso esplicito (GDPR 9(2)(a);
+   con un documento d'identità       | i dati letti dal documento | LGPD 11 I). Vedi la sezione 8.
+                                     | e confermati da te         |
 7. Verifica tramite selfie           | Selfie, foto del profilo   | Consenso esplicito (GDPR 9(2)(a);
                                      |                            | LGPD 11 I)
 8. Acquisti, monete, abbonamenti,    | Dati di acquisto, registro | Contratto (GDPR 6(1)(b); LGPD 7 V)
@@ -394,6 +415,18 @@ Finalità                             | Dati utilizzati            | Base giurid
     manifestamente infondate         | mente infondate,           | interesse a un sistema di
     (sezione 10.2)                   | avvertimenti               | segnalazione funzionante (GDPR
                                      |                            | 6(1)(f); LGPD 7 IX)
+24. Verificare il tuo numero di      | Numero di telefono; hash   | Contratto (GDPR 6(1)(b); LGPD 7 V);
+    telefono, consentire un solo     | con chiave dell'indirizzo  | legittimo interesse a un servizio
+    account per numero e impedire    | e-mail e del numero di     | sicuro e privo di utenti bannati
+    agli utenti bannati di tornare   | telefono degli account     | (GDPR 6(1)(f); LGPD 7 IX)
+    (sezione 6.5)                    | bannati                    |
+25. Identificare una persona quando  | Dati identificativi cifrati| Obbligo di legge quando la legge lo
+    la legge lo richiede: ordini dei | (8.2), numero di telefono, | richiede (GDPR 6(1)(c); LGPD 7 II);
+    tribunali, richieste della       | dati dell'account          | altrimenti legittimo interesse a
+    polizia o di altre autorità      |                            | proteggere gli utenti e a difendere
+    competenti, azioni legali, casi  |                            | un diritto in sede giudiziaria (GDPR
+    gravi per la sicurezza (sezione  |                            | 6(1)(f); LGPD 7 IX)
+    8.2)                             |                            |
 
 Quando ci basiamo sul legittimo interesse, abbiamo bilanciato il nostro
 interesse con i tuoi diritti. Puoi chiederci tale valutazione. Puoi opporti in
@@ -405,7 +438,8 @@ precedenza. Se rifiuti o revochi il consenso:
 - a una funzione di IA, non puoi usare quella funzione di IA, ma il resto di
   GreenGo continua a funzionare;
 - alla verifica, perdi solo le funzioni che richiedono la verifica (vedi la
-  sezione 8).
+  sezione 8). I dati identificativi che hai già confermato sono conservati
+  per la finalità della riga 25 e per il periodo indicato nella sezione 8.2 g.
 
 ================================================================================
 6. ACCOUNT, PROFILO E SCOPERTA
@@ -435,6 +469,24 @@ te per conto di terzi.
   utilizziamo i tuoi contenuti in nuove pubblicità o nuovi materiali di
   marketing.
 - Registriamo la tua scelta e il momento in cui l'hai fatta.
+
+6.5 Numero di telefono
+a) Per creare un account, devi verificare un numero di cellulare. Ti inviamo
+   un codice via SMS tramite Google Firebase Authentication, il nostro
+   fornitore di accesso. Se il tuo account è stato creato prima di questa
+   regola, devi verificare un numero prima di partecipare a eventi ed
+   esperienze o prenotarli, acquistare biglietti, creare od ospitare eventi o
+   esperienze, o usare un account business.
+b) La verifica del telefono è disponibile per i numeri di paesi europei
+   (tranne Russia e Bielorussia), del Brasile, degli Stati Uniti, del Canada e
+   del Regno Unito. Senza un numero di questo tipo, per ora non puoi creare un
+   account.
+c) Il tuo numero è conservato nella parte privata del tuo account. Non viene
+   mai mostrato agli altri utenti, e non lo usiamo per il marketing.
+d) Un numero può essere collegato a un solo account. Se banniamo un account,
+   conserviamo un hash con chiave del suo numero di telefono (un codice da cui
+   non è possibile risalire al numero), affinché il numero non possa essere
+   usato per creare un nuovo account (sezione 14).
 
 ================================================================================
 7. POSIZIONE
@@ -506,26 +558,43 @@ seguenti casi:
 a) Prima del caricamento, ti spieghiamo che cosa succederà e ti chiediamo il
    consenso esplicito.
 
-b) L'immagine viene inviata a Google Cloud Vision, che legge il testo del
-   documento affinché possiamo individuare la data di nascita. Google agisce
-   per nostro conto e in seguito non conserva nulla.
+b) L'app legge il testo del documento sul tuo dispositivo e compila nome,
+   cognome, data di nascita, tipo di documento, paese di rilascio e numero
+   del documento. Tu controlli questi dati e li confermi.
 
-c) Se il controllo automatico è chiaro, l'immagine viene CANCELLATA non appena
-   viene presa la decisione.
+c) Un membro qualificato del nostro personale controlla i dati che hai
+   confermato confrontandoli con l'immagine del documento.
 
-d) Se il controllo automatico non è chiaro, un membro qualificato del nostro
-   personale può esaminare l'immagine. In tal caso l'immagine viene conservata
-   per non più di 7 giorni, e poi CANCELLATA, qualunque sia l'esito.
+d) L'immagine viene CANCELLATA non appena l'esame è terminato. Se dopo 7
+   giorni è ancora in attesa di esame, viene CANCELLATA qualunque sia l'esito,
+   e puoi caricarla di nuovo. Questo vale per ogni immagine di un documento
+   d'identità, compresa la foto in cui tieni in mano il tuo documento
+   d'identità, che puoi aggiungere al momento della registrazione (8.3), e il
+   documento d'identità del titolare di un'attività (8.4).
 
-e) Dopo la cancellazione conserviamo solo:
-   - se la tua età è stata verificata (sì o no);
-   - il metodo;
-   - la data del controllo;
-   - il tuo anno di nascita.
+e) Dopo l'esame conserviamo:
+   - se la tua età è stata verificata (sì o no), il metodo, la data del
+     controllo e il tuo anno di nascita;
+   - i dati che hai confermato (nome, cognome, data di nascita, tipo di
+     documento, paese di rilascio e numero del documento), CIFRATI e tenuti
+     separati dal tuo profilo, in un archivio ad accesso limitato.
 
-   Non conserviamo l'immagine, il tuo nome come riportato sul documento, il
-   numero del documento, la tua nazionalità né la data di scadenza del
+   Non conserviamo l'immagine, la tua nazionalità né la data di scadenza del
    documento.
+
+f) Utilizziamo i dati cifrati solo per identificarti quando la legge lo
+   richiede: per rispondere a un ordine valido di un tribunale, o a una
+   richiesta della polizia o di un'altra autorità competente; per proteggere
+   la vita o la sicurezza di qualcuno in un caso grave; o per accertare,
+   esercitare o difendere un diritto in sede giudiziaria (sezione 12.5). Solo
+   un numero ridotto di membri del personale autorizzati può accedervi, e ogni
+   accesso viene registrato. Non li mostriamo mai agli altri utenti e non li
+   usiamo mai per nessun altro scopo, ad esempio marketing o profilazione.
+
+g) Conserviamo i dati cifrati finché il tuo account esiste e per 6 mesi dopo
+   la sua chiusura (il periodo per cui il Marco Civil da Internet brasiliano
+   impone la conservazione dei log di accesso, art. 15). Li conserviamo più a
+   lungo solo in caso di "legal hold" (sezione 14).
 
 8.3 Verifica tramite selfie
 
@@ -533,7 +602,10 @@ Puoi verificare il tuo profilo scattando un selfie. Un membro del nostro
 personale lo confronta con le foto del tuo profilo. Cancelliamo il selfie dopo
 l'esame e conserviamo solo il risultato (verificato o meno). Non creiamo un
 modello del volto né alcun altro identificatore biometrico a partire dal tuo
-selfie, e non utilizziamo il riconoscimento facciale per identificarti.
+selfie, e non utilizziamo il riconoscimento facciale per identificarti. Una
+foto in cui tieni in mano il tuo documento d'identità è un'immagine di un
+documento d'identità: si applicano anche a essa le regole del punto 8.2,
+compresa la cancellazione al più tardi dopo 7 giorni.
 
 Sul tuo dispositivo, prima che tu carichi una foto, l'app verifica che un volto
 sia visibile e la controlla per escludere nudità. Questo controllo avviene
@@ -543,10 +615,13 @@ volto.
 
 8.4 Verifica dell'attività commerciale
 
+Per un account business basta un numero di telefono verificato (sezione 6.5).
 Per verificare un account business possiamo chiedere i dati di registrazione
-dell'attività e un documento d'identità della persona che la gestisce. Il
-documento d'identità del titolare dell'attività segue le stesse regole del
-punto 8.2. Conserviamo i dati di registrazione dell'attività per tutto il
+dell'attività. Il documento d'identità della persona che la gestisce è
+facoltativo. Se il titolare lo fornisce, segue le stesse regole del punto 8.2:
+l'immagine viene cancellata dopo l'esame (al più tardi dopo 7 giorni), e i
+dati confermati sono conservati in forma cifrata solo per le richieste
+legali. Conserviamo i dati di registrazione dell'attività per tutto il
 tempo in cui esiste la pagina business e per i 6 mesi successivi, perché il
 Digital Services Act dell'UE ci impone di essere in grado di identificare i
 professionisti che offrono servizi ai consumatori.
@@ -555,7 +630,8 @@ professionisti che offrono servizi ai consumatori.
 
 Puoi rifiutare o revocare il tuo consenso alla verifica. In tal caso non puoi
 usare le funzioni elencate al punto 8.1 che la richiedono. Il tuo account non
-viene eliminato.
+viene eliminato. I dati identificativi che hai già confermato sono conservati
+come descritto al punto 8.2 f e g.
 
 8.6 Avviso per i residenti in Illinois, Texas e altri Stati USA con leggi sui
 dati biometrici
@@ -897,7 +973,9 @@ contratti scritti (accordi sul trattamento dei dati):
 Fornitore                        | Che cosa fa per noi                | Sede     | Garanzia per il trasferimento
 ---------------------------------|------------------------------------|----------|------------------------------
 Google LLC / Google Cloud,       | Hosting, database, archiviazione   | USA,     | SCC UE, EU-US Data Privacy
-Firebase                         | di file, funzioni server, accesso, | globale  | Framework; clausole ANPD
+Firebase                         | di file, funzioni server, accesso  | globale  | Framework; clausole ANPD
+                                 | e codici SMS per la verifica del   |          |
+                                 | telefono (Firebase Authentication),|          |
                                  | notifiche push, controlli di       |          |
                                  | sicurezza (App Check), analisi e   |          |
                                  | rapporti sugli arresti anomali,    |          |
@@ -960,7 +1038,9 @@ Comunichiamo i dati quando la legge lo richiede o quando è necessario:
 - per proteggere la vita o la sicurezza di qualcuno;
 - per accertare, esercitare o difendere un diritto in sede giudiziaria.
 
-Ove la legge lo consenta, ti informiamo della richiesta.
+Questo può includere il tuo numero di telefono e i dati identificativi cifrati
+provenienti da una verifica con documento d'identità (sezione 8.2). Ove la
+legge lo consenta, ti informiamo della richiesta.
 
 12.6 Modifiche societarie
 
@@ -1009,15 +1089,21 @@ anonimizziamo in modo che non possano più identificarti.
 Dati                                    | Durata
 ----------------------------------------|-----------------------------------------
 Account e profilo                       | Fino all'eliminazione del tuo account
+Numero di telefono (6.5)                | Fino all'eliminazione del tuo account
 Posizione esatta                        | Sovrascritta a ogni aggiornamento;
                                         | cancellata con l'account
 Messaggi e contenuti multimediali       | Finché tu o la conversazione non li
                                         | cancellate, o finché non elimini il tuo
                                         | account (vedi la sezione 15)
-Immagine del documento d'identità       | Cancellata quando viene presa la
-                                        | decisione sul controllo, o dopo al
-                                        | massimo 7 giorni se deve esaminarla una
-                                        | persona
+Immagini dei documenti d'identità       | Cancellate non appena l'esame è
+(compresa la foto in cui tieni in mano  | terminato, e al più tardi dopo 7 giorni
+il documento e i documenti dei titolari | qualunque sia l'esito (in tal caso puoi
+di attività)                            | caricarle di nuovo)
+Dati identificativi che hai confermato  | Finché il tuo account esiste e per 6
+(nome, cognome, data di nascita, tipo   | mesi dopo la sua chiusura (periodo dei
+di documento, paese di rilascio e       | log di accesso previsto dal Marco Civil
+numero), cifrati (8.2)                  | da Internet); più a lungo solo in caso
+                                        | di "legal hold"
 Risultato della verifica dell'età       | Fino all'eliminazione del tuo account
 (sì/no, metodo, data, anno di nascita)  |
 Selfie di verifica                      | Cancellato dopo l'esame; il risultato
@@ -1070,6 +1156,8 @@ Altri log di sicurezza dei server       | 30 giorni
 Backup                                  | Sovrascritti entro 90 giorni
 Registrazioni degli account bannati     | 5 anni, conservate come hash
 (per impedire una nuova registrazione)  | unidirezionale dell'indirizzo e-mail
+                                        | e come hash con chiave del numero di
+                                        | telefono
 
 Possiamo conservare i dati più a lungo solo quando la legge lo richiede, o
 quando sono necessari per un'azione legale o un'indagine in corso (un "legal
@@ -1128,6 +1216,12 @@ g) I backup vengono sovrascritti entro 90 giorni.
 
 h) Conserviamo una breve ricevuta di cancellazione (la data e il numero di
    elementi rimossi) per poter dimostrare che la cancellazione è avvenuta.
+
+i) Il tuo numero di telefono viene cancellato con il tuo account. I dati
+   identificativi cifrati provenienti da una verifica con documento d'identità
+   sono conservati per 6 mesi dopo la chiusura dell'account, e poi cancellati
+   (sezione 8.2 g). Se l'account è stato bannato, conserviamo gli hash con
+   chiave del suo indirizzo e-mail e del suo numero di telefono (sezione 14).
 
 15.3 Le monete rimaste nel tuo account e l'eventuale periodo di abbonamento
 residuo vanno persi quando elimini il tuo account. Disinstallare l'app non
@@ -1304,6 +1398,9 @@ Puoi modificarle in qualsiasi momento nelle impostazioni del dispositivo.
 - Controlli lato server per acquisti e monete.
 - App Check contro i client falsi.
 - Accesso amministrativo limitato e registrato.
+- Dati identificativi provenienti dalla verifica dei documenti conservati in
+  forma cifrata, in un archivio separato a cui possono accedere solo pochi
+  membri del personale autorizzati, con registrazione di ogni accesso.
 - Chiavi e segreti custoditi in un gestore di segreti.
 - Revisioni periodiche della sicurezza.
 
@@ -1360,8 +1457,8 @@ noi.
 Categoria (Cal. Civ. Code 1798.140)     | Raccolta  | Comunicata per uno    | Venduta o
                                         |           | scopo aziendale a     | condivisa
 ----------------------------------------|-----------|-----------------------|---------
-Identificatori (nome, e-mail, ID        | Sì        | Fornitori di servizi  | No
-account, indirizzo IP)                  |           |                       |
+Identificatori (nome, e-mail, numero di | Sì        | Fornitori di servizi  | No
+telefono, ID account, indirizzo IP)     |           |                       |
 Registrazioni dei clienti (1798.80)     | Sì        | Fornitori di servizi  | No
 Caratteristiche protette (età, genere)  | Sì        | Fornitori di servizi  | No
 Informazioni commerciali (acquisti)     | Sì        | Fornitori di servizi, | No
@@ -1377,10 +1474,11 @@ profilo)                                |           |                       |
 Deduzioni (interessi, suggerimenti)     | Sì        | No                    | No
 Informazioni personali sensibili        | Sì        | Fornitori di servizi  | No
 (geolocalizzazione precisa, accesso     |           |                       |
-all'account, documento d'identità       |           |                       |
-durante la verifica, SSN/ITIN se un     |           |                       |
-venditore statunitense lo fornisce per  |           |                       |
-le fatture della commissione)           |           |                       |
+all'account, documento d'identità e     |           |                       |
+dati identificativi conservati in forma |           |                       |
+cifrata dopo la verifica, SSN/ITIN se   |           |                       |
+un venditore statunitense lo fornisce   |           |                       |
+per le fatture della commissione)       |           |                       |
 
 22.2 Fonti
 
@@ -1493,6 +1591,27 @@ CRONOLOGIA DELLE VERSIONI
 5.3.1 - in vigore dal 17 ottobre 2026 per gli account creati dal 16 ottobre
 2026 in poi; dal 16 novembre 2026 per gli account creati prima del 16 ottobre
 2026 (annunciata il 17 ottobre 2026)
+Verifica del telefono e dati identificativi:
+- Nuova sezione 6.5: è richiesto un numero di cellulare verificato per creare
+  un account (numeri di paesi europei tranne Russia e Bielorussia, del
+  Brasile, degli Stati Uniti, del Canada e del Regno Unito) e, per gli
+  account esistenti, prima di eventi, esperienze, biglietti e account
+  business; un numero per account; Google Firebase Authentication invia
+  l'SMS; un hash con chiave dei numeri degli account bannati (anche sezioni
+  2, 3.1, 4.2, 5, 12.2, 14, 15.2 e 22.1).
+- Sezioni 3.1 d e 4.3: un numero di contatto dell'attività facoltativo,
+  mostrato sulla pagina business solo se l'attività ne attiva la
+  visualizzazione.
+- Sezioni 8.2, 8.3 e 8.4: il documento d'identità viene letto sul tuo
+  dispositivo e controllato da un revisore; ogni immagine di un documento
+  d'identità (anche una foto in cui si tiene in mano il documento e il
+  documento del titolare di un'attività) viene cancellata dopo l'esame, o
+  dopo 7 giorni se è ancora in attesa (puoi caricarla di nuovo); per un
+  account business basta un numero di telefono verificato, e il documento
+  d'identità del titolare è facoltativo; i dati che confermi sono conservati
+  in forma cifrata in un archivio ad accesso limitato, solo per identificarti
+  quando la legge lo richiede, fino a 6 mesi dopo la chiusura dell'account
+  (anche sezioni 2, 3.1, 4.2, 4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 e 22.1).
 Chiarimenti per corrispondere al funzionamento dell'app:
 - Sezioni 2, 5 e 9: le funzioni di IA sono traduzione, lettura vocale e
   traslitterazione (risposte intelligenti e analisi delle parole non sono

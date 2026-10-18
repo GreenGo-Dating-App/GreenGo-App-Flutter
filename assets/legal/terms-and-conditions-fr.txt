@@ -85,11 +85,21 @@ sanctions.
 
 3.3 Vous ne pouvez pas utiliser GreenGo si nous avons précédemment fermé votre
 compte pour une violation grave des présentes Conditions, sauf si nous vous
-autorisons à revenir.
+autorisons à revenir. Pour empêcher les utilisateurs bannis de revenir, nous
+conservons une forme protégée (un hachage à clé) de l'adresse e-mail et du
+numéro de téléphone des comptes bannis (Politique de confidentialité,
+section 14).
 
 3.4 Une personne, un compte personnel. Un Compte professionnel n'est pas un
 compte distinct : c'est votre propre Compte passé en mode professionnel
 (section 13).
+
+3.5 Pour créer un compte, vous devez vérifier un numéro de téléphone mobile au
+moyen d'un code que nous vous envoyons par SMS (section 4.5). La vérification
+du téléphone est disponible pour les numéros des pays européens (sauf la
+Russie et la Biélorussie), du Brésil, des États-Unis, du Canada et du
+Royaume-Uni. Sans numéro de téléphone mobile de l'un de ces pays, vous ne
+pouvez pas encore créer de compte.
 
 ================================================================================
 4. VOTRE COMPTE
@@ -113,14 +123,42 @@ a) Certaines fonctionnalités exigent que vous vérifiiez votre âge au moyen
    - publier toute Expérience, et réserver une Expérience en tant que membre
      (section 12.3) ;
    - les autres cas exigés par la loi de votre lieu de résidence.
+   Dans tous les autres cas, la vérification au moyen d'une pièce d'identité
+   est facultative.
 b) Certains badges exigent que vous vérifiiez votre profil au moyen d'un
    selfie.
-c) Nous supprimons les images des pièces d'identité dès que la vérification
-   est terminée, comme expliqué à la section 8 de la Politique de
-   confidentialité.
+c) Lorsque vous vous faites vérifier au moyen d'une pièce d'identité,
+   l'application lit le document sur votre appareil et renseigne votre
+   prénom, votre nom, votre date de naissance, le type de document, le pays
+   de délivrance et le numéro du document. Vous confirmez ces informations, et
+   un vérificateur de GreenGo les contrôle par rapport à la photo du document.
+   Nous supprimons la photo après l'examen, ou au bout de 7 jours si elle est
+   toujours en attente d'examen (vous pouvez alors la téléverser de nouveau).
+   Cela s'applique également à une photo de vous tenant votre pièce
+   d'identité. Nous conservons les informations que vous avez confirmées sous
+   forme chiffrée, dans un espace de stockage distinct à accès restreint,
+   uniquement pour vous identifier lorsque la loi l'exige (section 18.8). Nous
+   ne les montrons jamais aux autres utilisateurs et ne les utilisons à
+   aucune autre fin. La section 8 de la Politique de confidentialité explique
+   ce point, ainsi que la durée pendant laquelle nous les conservons.
 d) Utiliser une pièce d'identité qui n'est pas la vôtre, ou qui a déjà été
    utilisée pour un autre compte, constitue une violation des présentes
    Conditions.
+
+4.5 Numéro de téléphone
+a) Chaque compte doit avoir son propre numéro de téléphone mobile vérifié. Un
+   numéro de téléphone ne peut être associé qu'à un seul compte.
+b) Si votre compte a été créé avant que la vérification du téléphone ne soit
+   exigée, vous devez vérifier un numéro de téléphone avant de :
+   - rejoindre ou réserver un Événement ou une Expérience, ou acheter un
+     billet ;
+   - créer ou organiser un Événement ou une Expérience ;
+   - utiliser un Compte professionnel.
+c) Votre numéro de téléphone est privé. Nous ne le montrons jamais aux autres
+   utilisateurs. Il est conservé dans la partie privée de votre compte, comme
+   expliqué dans la Politique de confidentialité.
+d) N'utilisez qu'un numéro que vous êtes en droit d'utiliser, et tenez-le à
+   jour.
 
 ================================================================================
 5. CE QU'EST GREENGO
@@ -473,7 +511,9 @@ avant que vous n'y participiez.
 11.1 Pour créer un Événement, vous devez disposer d'un Abonnement (Base ou
 supérieur), et votre compte ne doit pas faire l'objet de restrictions. Le
 nombre d'Événements que vous pouvez avoir en même temps dépend de votre
-formule (section 11.7). L'organisateur est responsable :
+formule (section 11.7). Pour créer, rejoindre ou réserver un Événement, ou
+pour acheter un billet, votre compte doit également disposer d'un numéro de
+téléphone vérifié (section 4.5). L'organisateur est responsable :
 - de décrire l'Événement avec exactitude ;
 - de veiller à ce qu'il soit licite et sûr ;
 - de l'annuler en temps utile s'il ne peut pas avoir lieu.
@@ -670,6 +710,8 @@ Pièce d'identité :
   Expérience en tant que membre.
 - Pour publier une Expérience payante, votre vérification d'âge doit en outre
   avoir été approuvée.
+Numéro de téléphone : pour publier ou organiser une Expérience, votre compte
+doit disposer d'un numéro de téléphone vérifié (section 4.5).
 Les nouveaux Hôtes ne peuvent publier qu'une seule Expérience payante tant
 qu'ils n'ont pas reçu 3 avis.
 
@@ -706,7 +748,8 @@ c) Si l'Hôte supprime votre créneau réservé ou annule votre réservation,
    l'encontre du compte de l'Hôte. GreenGo ne verse pas lui-même de
    remboursements pour les Expériences sur ses propres fonds.
 d) Pour réserver une Expérience en tant que membre, vous devez avoir
-   téléversé une pièce d'identité (section 12.3).
+   téléversé une pièce d'identité (section 12.3) et vérifié votre numéro de
+   téléphone (section 4.5).
 
 12.6 Avis
 - Après une réservation réelle, les Hôtes et les Invités peuvent s'évaluer
@@ -724,6 +767,9 @@ d) Pour réserver une Expérience en tant que membre, vous devez avoir
 Compte passé en mode professionnel. Il permet à une entreprise ou à un
 professionnel d'afficher une page d'entreprise :
 - coordonnées de l'entreprise et horaires d'ouverture ;
+- un numéro de contact professionnel facultatif (non vérifié, il peut s'agir
+  d'une ligne fixe). Il reste privé, sauf si vous activez son affichage sur
+  votre page d'entreprise ;
 - événements et expériences ;
 - abonnés.
 
@@ -738,8 +784,11 @@ professionnel d'afficher une page d'entreprise :
 collectez auprès des personnes qui vous contactent (par exemple des
 prospects). Utilisez-les uniquement dans la mesure permise par la loi.
 
-13.4 Nous pouvons vous demander de faire vérifier l'entreprise. Le badge
-vérifié signifie que nous avons contrôlé les documents fournis. Il ne
+13.4 Un Compte professionnel nécessite uniquement un numéro de téléphone
+vérifié (section 4.5). Une pièce d'identité de la personne qui dirige
+l'entreprise est facultative ; si vous en fournissez une, la section 4.4 c
+s'y applique. Nous pouvons vous demander de faire vérifier l'entreprise. Le
+badge vérifié signifie que nous avons contrôlé les documents fournis. Il ne
 constitue pas une recommandation.
 
 13.5 Toute promotion payante d'une page d'entreprise est clairement signalée
@@ -751,7 +800,8 @@ comme sponsorisée dans l'application.
   Conditions ne s'appliquent pas, sauf disposition contraire de la loi.
 
 13.7 Les Comptes professionnels sont disponibles avec un Abonnement Silver,
-Gold ou Platinum. Si votre Abonnement prend fin ou passe en dessous de
+Gold ou Platinum, et nécessitent un numéro de téléphone vérifié
+(section 4.5). Si votre Abonnement prend fin ou passe en dessous de
 Silver, les outils professionnels (par exemple la page d'entreprise, les
 prospects, la promotion et les annonces payantes) sont suspendus, et votre
 compte fonctionne comme un compte personnel, avec des annonces gratuites
@@ -1099,6 +1149,19 @@ de protection des consommateurs (section 26).
   conformément à l'art. 13 du DSA et publierons ses coordonnées ici. D'ici
   là, les autorités peuvent utiliser legal@greengochat.com.
 
+18.8 Demandes des autorités
+a) Nous ne communiquons les données d'un compte, y compris votre numéro de
+   téléphone et les informations d'identité mentionnées à la section 4.4 c,
+   que lorsque la loi l'exige ou lorsque cela est nécessaire :
+   - pour répondre à une injonction valable d'un tribunal, ou à une demande de
+     la police ou d'une autre autorité compétente ;
+   - pour protéger la vie ou la sécurité d'une personne dans un cas grave ;
+   - pour constater, exercer ou défendre des droits en justice.
+b) Seul un petit nombre de membres du personnel habilités peut accéder aux
+   informations d'identité, et chaque accès est journalisé.
+c) Lorsque la loi le permet, nous vous informons de la demande (Politique de
+   confidentialité, section 12.5).
+
 ================================================================================
 19. SÉCURITÉ DES ENFANTS
 ================================================================================
@@ -1384,6 +1447,26 @@ HISTORIQUE DES VERSIONS
 5.3.2 - en vigueur le 17 octobre 2026 pour les comptes créés à partir du
 16 octobre 2026 ; le 16 novembre 2026 pour les comptes créés avant le
 16 octobre 2026 (annoncée le 17 octobre 2026)
+Vérification du téléphone et informations d'identité :
+- Sections 3.3, 3.5, 4.5, 11.1, 12.3, 12.5, 13.4 et 13.7 : un numéro de
+  téléphone mobile vérifié est exigé pour créer un compte (numéros des pays
+  européens sauf la Russie et la Biélorussie, du Brésil, des États-Unis, du
+  Canada et du Royaume-Uni) et, pour les comptes existants, avant de
+  rejoindre ou de réserver des Événements et des Expériences, d'acheter des
+  billets, de créer ou d'organiser des Événements et des Expériences et
+  d'utiliser un Compte professionnel ; un numéro par compte ; le numéro est
+  privé ; un hachage à clé de l'adresse e-mail et du numéro de téléphone des
+  comptes bannis.
+- Section 13.1 : un numéro de contact professionnel facultatif, affiché sur
+  la page d'entreprise uniquement si vous l'activez.
+- Sections 4.4, 13.4 et 18.8 : la vérification au moyen d'une pièce
+  d'identité reste facultative (y compris pour le titulaire d'un Compte
+  professionnel, qui nécessite uniquement un numéro de téléphone vérifié) ;
+  le document est lu sur votre appareil et contrôlé par un vérificateur, la
+  photo est supprimée après l'examen ou au bout de 7 jours si elle est
+  toujours en attente, et les informations que vous confirmez sont
+  conservées sous forme chiffrée uniquement pour vous identifier lorsque la
+  loi l'exige.
 Précisions pour correspondre au fonctionnement de l'application :
 - Sections 5.1 g, 14.1, 14.2 et 14.4 : les assistants IA du chat sont la
   traduction, la lecture à voix haute et la translittération (les réponses

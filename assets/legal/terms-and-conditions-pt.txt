@@ -75,10 +75,19 @@ data de nascimento. Se tiver menos de 18 anos, não pode criar uma conta.
 impedido de utilizar os Serviços pela lei do seu país ou por sanções.
 
 3.3 Não pode utilizar o GreenGo se tivermos encerrado anteriormente a sua conta
-por uma violação grave destes Termos, salvo se o autorizarmos a regressar.
+por uma violação grave destes Termos, salvo se o autorizarmos a regressar. Para
+impedir que utilizadores banidos regressem, conservamos uma forma protegida (um
+hash com chave) do endereço de e-mail e do número de telemóvel das contas
+banidas (Política de Privacidade, secção 14).
 
 3.4 Uma pessoa, uma conta pessoal. Uma Conta de empresa não é uma conta
 separada: é a sua própria Conta mudada para o modo empresa (secção 13).
+
+3.5 Para criar uma conta, tem de verificar um número de telemóvel com um código
+que lhe enviamos por SMS (secção 4.5). A verificação do telemóvel está
+disponível para números de países europeus (exceto a Rússia e a Bielorrússia),
+do Brasil, dos Estados Unidos, do Canadá e do Reino Unido. Sem um número de
+telemóvel de um destes países, ainda não pode criar uma conta.
 
 ================================================================================
 4. A SUA CONTA
@@ -101,12 +110,38 @@ a) Algumas funcionalidades exigem que verifique a sua idade com um documento de
    - publicar qualquer Experiência e reservar uma Experiência como membro
      (secção 12.3);
    - outros casos exigidos pela lei do local onde vive.
+   Em todos os outros casos, a verificação com um documento de identificação é
+   opcional.
 b) Alguns distintivos exigem que verifique o seu perfil com uma selfie.
-c) Eliminamos as imagens dos documentos de identificação logo que a
-   verificação esteja concluída, conforme explicado na secção 8 da Política de
-   Privacidade.
+c) Quando se verifica com um documento de identificação, a aplicação lê o
+   documento no seu dispositivo e preenche o seu nome próprio, apelido, data
+   de nascimento, tipo de documento, país emissor e número do documento. O
+   utilizador confirma estes dados, e um revisor do GreenGo compara-os com a
+   foto do documento. Eliminamos a foto após a revisão, ou ao fim de 7 dias se
+   ainda estiver a aguardar revisão (pode então carregá-la novamente). O mesmo
+   se aplica a uma foto sua a segurar o documento. Conservamos os dados que
+   confirmou encriptados, num arquivo separado de acesso restrito, apenas para
+   o identificar quando a lei o exigir (secção 18.8). Nunca os mostramos a
+   outros utilizadores e não os utilizamos para mais nada. A secção 8 da
+   Política de Privacidade explica este processo e durante quanto tempo os
+   conservamos.
 d) Utilizar um documento que não é seu, ou que já foi utilizado noutra conta,
    viola estes Termos.
+
+4.5 Número de telemóvel
+a) Cada conta precisa do seu próprio número de telemóvel verificado. Um número
+   de telemóvel só pode estar associado a uma conta.
+b) Se a sua conta foi criada antes de a verificação do telemóvel ser
+   obrigatória, tem de verificar um número de telemóvel antes de:
+   - participar num Evento ou numa Experiência ou reservá-los, ou comprar um
+     bilhete;
+   - criar ou organizar um Evento ou uma Experiência;
+   - utilizar uma Conta de empresa.
+c) O seu número de telemóvel é privado. Nunca o mostramos a outros
+   utilizadores. É guardado na parte privada da sua conta, conforme explicado
+   na Política de Privacidade.
+d) Utilize apenas um número que tenha o direito de utilizar e mantenha-o
+   atualizado.
 
 ================================================================================
 5. O QUE É O GREENGO
@@ -438,8 +473,10 @@ participar.
 
 11.1 Para criar um Evento, precisa de uma Subscrição (Base ou superior), e a
 sua conta não pode estar restringida. O número de Eventos que pode ter ao
-mesmo tempo depende do seu plano (secção 11.7). O organizador é responsável
-por:
+mesmo tempo depende do seu plano (secção 11.7). Para criar um Evento,
+participar nele ou reservá-lo, ou para comprar um bilhete, a sua conta precisa
+também de um número de telemóvel verificado (secção 4.5). O organizador é
+responsável por:
 - descrever o Evento com exatidão;
 - garantir que é lícito e seguro;
 - cancelá-lo atempadamente se não se puder realizar.
@@ -629,6 +666,8 @@ Documento de identificação:
   Experiência como membro.
 - Para publicar uma Experiência paga, a sua verificação da idade tem também
   de ter sido aprovada.
+Número de telemóvel: para publicar uma Experiência ou ser o seu Anfitrião, a
+sua conta precisa de um número de telemóvel verificado (secção 4.5).
 Os novos Anfitriões só podem publicar uma Experiência paga até terem 3
 avaliações.
 
@@ -661,7 +700,8 @@ c) Se o Anfitrião remover o seu horário reservado ou cancelar a sua reserva,
    pelo Anfitrião, ou tomar medidas contra a conta do Anfitrião. O próprio
    GreenGo não paga reembolsos de Experiências com fundos próprios.
 d) Para reservar uma Experiência como membro, tem de ter carregado um
-   documento de identificação (secção 12.3).
+   documento de identificação (secção 12.3) e verificado o seu número de
+   telemóvel (secção 4.5).
 
 12.6 Avaliações
 - Após uma reserva real, os Anfitriões e os Convidados podem avaliar-se
@@ -679,6 +719,9 @@ d) Para reservar uma Experiência como membro, tem de ter carregado um
 mudada para o modo empresa. Permite a uma empresa ou a um profissional
 apresentar uma página de empresa:
 - dados da empresa e horário de funcionamento;
+- um número de contacto da empresa opcional (não verificado, pode ser um
+  telefone fixo). É privado, salvo se ativar a sua apresentação na página da
+  empresa;
 - eventos e experiências;
 - seguidores.
 
@@ -692,8 +735,11 @@ apresentar uma página de empresa:
 que o contactam (por exemplo, potenciais clientes). Utilize-os apenas conforme
 a lei permite.
 
-13.4 Podemos pedir-lhe que verifique a empresa. O distintivo de verificação
-significa que verificámos os documentos fornecidos. Não constitui um aval.
+13.4 Uma Conta de empresa precisa apenas de um número de telemóvel verificado
+(secção 4.5). Um documento de identificação da pessoa que gere a empresa é
+opcional; se o fornecer, aplica-se-lhe a secção 4.4 c. Podemos pedir-lhe que
+verifique a empresa. O distintivo de verificação significa que verificámos os
+documentos fornecidos. Não constitui um aval.
 
 13.5 Qualquer promoção paga de uma página de empresa é claramente identificada
 na aplicação como promovida.
@@ -704,7 +750,8 @@ na aplicação como promovida.
   disposição legal em contrário.
 
 13.7 As Contas de empresa estão disponíveis com uma Subscrição Silver, Gold ou
-Platinum. Se a sua Subscrição terminar ou descer abaixo de Silver, as
+Platinum, e precisam de um número de telemóvel verificado (secção 4.5). Se a
+sua Subscrição terminar ou descer abaixo de Silver, as
 ferramentas de empresa (por exemplo a página da empresa, os potenciais
 clientes, a promoção e os anúncios pagos) ficam suspensas, e a sua conta
 funciona como uma conta pessoal, apenas com anúncios gratuitos. Voltam a
@@ -1035,6 +1082,19 @@ sempre recorrer a um tribunal ou a uma autoridade de defesa do consumidor
   e publicaremos os respetivos dados aqui. Até lá, as autoridades podem
   utilizar legal@greengochat.com.
 
+18.8 Pedidos das autoridades
+a) Divulgamos dados da conta, incluindo o seu número de telemóvel e os dados de
+   identificação referidos na secção 4.4 c, apenas quando a lei o exige ou
+   quando é necessário:
+   - para responder a uma ordem válida de um tribunal, ou a um pedido da
+     polícia ou de outra autoridade competente;
+   - para proteger a vida ou a segurança de alguém num caso grave;
+   - para declarar, exercer ou defender um direito num processo judicial.
+b) Apenas um número reduzido de membros autorizados do pessoal pode aceder aos
+   dados de identificação, e cada acesso fica registado.
+c) Quando a lei o permite, informamo-lo sobre o pedido (Política de
+   Privacidade, secção 12.5).
+
 ================================================================================
 19. SEGURANÇA INFANTIL
 ================================================================================
@@ -1305,6 +1365,24 @@ HISTÓRICO DE VERSÕES
 partir de 16 de outubro de 2026; a partir de 16 de novembro de 2026 para as
 contas criadas antes de 16 de outubro de 2026 (anunciada a 17 de outubro de
 2026)
+Verificação do telemóvel e dados de identificação:
+- Secções 3.3, 3.5, 4.5, 11.1, 12.3, 12.5, 13.4 e 13.7: é exigido um número de
+  telemóvel verificado para criar uma conta (números de países europeus,
+  exceto a Rússia e a Bielorrússia, do Brasil, dos Estados Unidos, do Canadá e
+  do Reino Unido) e, nas contas existentes, antes de participar em Eventos e
+  Experiências ou de os reservar, comprar bilhetes, criar ou organizar Eventos
+  e Experiências e utilizar uma Conta de empresa; um número por conta; o
+  número é privado; um hash com chave do endereço de e-mail e do número de
+  telemóvel das contas banidas.
+- Secção 13.1: um número de contacto da empresa opcional, apresentado na
+  página da empresa apenas se o ativar.
+- Secções 4.4, 13.4 e 18.8: a verificação com um documento de identificação
+  continua a ser opcional (também para o titular de uma Conta de empresa, que
+  precisa apenas de um número de telemóvel verificado); o documento é lido no
+  seu dispositivo e verificado por um revisor, a foto é eliminada após a
+  revisão ou ao fim de 7 dias se ainda estiver pendente, e os dados que
+  confirma são conservados encriptados apenas para o identificar quando a lei
+  o exigir.
 Clarificações para corresponder ao funcionamento da aplicação:
 - Secções 5.1 g, 14.1, 14.2 e 14.4: os assistentes de IA no chat são a
   tradução, a leitura em voz alta e a transliteração (as respostas

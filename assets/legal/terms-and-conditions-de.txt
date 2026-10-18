@@ -79,11 +79,20 @@ Nutzung der Dienste ausgeschlossen sein.
 
 3.3 Du darfst GreenGo nicht nutzen, wenn wir dein Konto zuvor wegen eines
 schweren Verstoßes gegen diese Bedingungen geschlossen haben, es sei denn, wir
-erlauben dir die Rückkehr.
+erlauben dir die Rückkehr. Damit gesperrte Nutzer nicht zurückkehren, speichern
+wir eine geschützte Form (einen Keyed Hash) der E-Mail-Adresse und der
+Telefonnummer gesperrter Konten (Datenschutzerklärung, Abschnitt 14).
 
 3.4 Eine Person, ein persönliches Konto. Ein Business-Konto ist kein
 separates Konto: Es ist dein eigenes Konto, in den Business-Modus umgeschaltet
 (Abschnitt 13).
+
+3.5 Um ein Konto zu erstellen, musst du eine Mobiltelefonnummer mit einem Code
+verifizieren, den wir dir per SMS senden (Abschnitt 4.5). Die
+Telefonverifizierung ist für Nummern aus europäischen Ländern (außer Russland
+und Belarus), Brasilien, den Vereinigten Staaten, Kanada und dem Vereinigten
+Königreich verfügbar. Ohne eine Mobilnummer aus einem dieser Länder kannst du
+noch kein Konto erstellen.
 
 ================================================================================
 4. DEIN KONTO
@@ -107,11 +116,39 @@ a) Für einige Funktionen musst du dein Alter mit einem Ausweisdokument
    - Veröffentlichen eines Erlebnisses und Buchen eines Erlebnisses als
      Mitglied (Abschnitt 12.3);
    - weitere Fälle, in denen das Recht deines Wohnorts dies vorschreibt.
+   In allen anderen Fällen ist die Verifizierung mit einem Ausweisdokument
+   freiwillig.
 b) Für einige Abzeichen musst du dein Profil mit einem Selfie verifizieren.
-c) Wir löschen Bilder von Ausweisdokumenten, sobald die Prüfung abgeschlossen
-   ist, wie in Abschnitt 8 der Datenschutzerklärung erläutert.
+c) Wenn du dich mit einem Ausweisdokument verifizierst, liest die App das
+   Dokument auf deinem Gerät aus und trägt deinen Vornamen, Nachnamen, dein
+   Geburtsdatum, die Dokumentart, das Ausstellungsland und die
+   Dokumentnummer ein. Du bestätigst diese Angaben, und ein Prüfer von
+   GreenGo gleicht sie mit dem Foto des Dokuments ab. Wir löschen das Foto
+   nach der Prüfung oder nach 7 Tagen, wenn es dann noch auf die Prüfung
+   wartet (du kannst es danach erneut hochladen). Das gilt auch für ein Foto,
+   auf dem du dein Dokument hältst. Die von dir bestätigten Angaben speichern
+   wir verschlüsselt in einem separaten, zugriffsbeschränkten Speicher, nur
+   um dich zu identifizieren, wenn das Gesetz es verlangt (Abschnitt 18.8).
+   Wir zeigen sie niemals anderen Nutzern und verwenden sie für nichts
+   anderes. Abschnitt 8 der Datenschutzerklärung erläutert dies und wie lange
+   wir sie aufbewahren.
 d) Die Verwendung eines Dokuments, das nicht dir gehört oder das bereits für
    ein anderes Konto verwendet wurde, verstößt gegen diese Bedingungen.
+
+4.5 Telefonnummer
+a) Jedes Konto braucht eine eigene verifizierte Mobiltelefonnummer. Eine
+   Telefonnummer kann nur mit einem Konto verknüpft werden.
+b) Wenn dein Konto erstellt wurde, bevor die Telefonverifizierung
+   vorgeschrieben war, musst du eine Telefonnummer verifizieren, bevor du:
+   - an einem Event oder Erlebnis teilnimmst oder es buchst oder ein Ticket
+     kaufst;
+   - ein Event oder Erlebnis erstellst oder als Gastgeber anbietest;
+   - ein Business-Konto nutzt.
+c) Deine Telefonnummer ist privat. Wir zeigen sie niemals anderen Nutzern.
+   Sie wird im privaten Bereich deines Kontos gespeichert, wie in der
+   Datenschutzerklärung erläutert.
+d) Verwende nur eine Nummer, zu deren Nutzung du berechtigt bist, und halte
+   sie aktuell.
 
 ================================================================================
 5. WAS GREENGO IST
@@ -453,8 +490,10 @@ du teilnimmst.
 
 11.1 Um ein Event zu erstellen, brauchst du eine Mitgliedschaft (Base oder
 höher), und dein Konto darf nicht eingeschränkt sein. Wie viele Events du
-gleichzeitig haben kannst, hängt von deinem Tarif ab (Abschnitt 11.7). Der
-Veranstalter ist dafür verantwortlich:
+gleichzeitig haben kannst, hängt von deinem Tarif ab (Abschnitt 11.7). Um ein
+Event zu erstellen, daran teilzunehmen oder es zu buchen oder ein Ticket zu
+kaufen, braucht dein Konto außerdem eine verifizierte Telefonnummer
+(Abschnitt 4.5). Der Veranstalter ist dafür verantwortlich:
 - das Event zutreffend zu beschreiben;
 - es rechtmäßig und sicher zu halten;
 - es rechtzeitig abzusagen, wenn es nicht stattfinden kann.
@@ -648,6 +687,8 @@ Ausweisdokument:
   Buchen eines Erlebnisses als Mitglied.
 - Um ein kostenpflichtiges Erlebnis zu veröffentlichen, muss außerdem deine
   Altersverifizierung genehmigt worden sein.
+Telefonnummer: Um ein Erlebnis zu veröffentlichen oder als Gastgeber
+anzubieten, braucht dein Konto eine verifizierte Telefonnummer (Abschnitt 4.5).
 Neue Gastgeber dürfen nur ein kostenpflichtiges Erlebnis veröffentlichen, bis
 sie 3 Bewertungen haben.
 
@@ -684,7 +725,8 @@ c) Wenn der Gastgeber deinen gebuchten Termin entfernt oder deine Buchung
    ergreifen. GreenGo selbst zahlt keine Erstattungen für Erlebnisse aus
    eigenen Mitteln.
 d) Um ein Erlebnis als Mitglied zu buchen, musst du ein Ausweisdokument
-   hochgeladen haben (Abschnitt 12.3).
+   hochgeladen (Abschnitt 12.3) und deine Telefonnummer verifiziert haben
+   (Abschnitt 4.5).
 
 12.6 Bewertungen
 - Nach einer echten Buchung können Gastgeber und Gäste einander bewerten.
@@ -701,6 +743,9 @@ d) Um ein Erlebnis als Mitglied zu buchen, musst du ein Ausweisdokument
 in den Business-Modus umgeschaltet. Damit kann ein Unternehmen oder eine
 Fachperson eine Unternehmensseite zeigen:
 - Unternehmensangaben und Öffnungszeiten;
+- eine optionale geschäftliche Kontaktnummer (nicht verifiziert, es kann ein
+  Festnetzanschluss sein). Sie ist privat, es sei denn, du schaltest ihre
+  Anzeige auf deiner Unternehmensseite ein;
 - Events und Erlebnisse;
 - Follower.
 
@@ -715,9 +760,12 @@ dass:
 Personen erhebst, die dich kontaktieren (zum Beispiel Leads). Verwende sie nur
 so, wie es das Gesetz erlaubt.
 
-13.4 Wir können dich bitten, das Unternehmen zu verifizieren. Das
-Verifizierungsabzeichen bedeutet, dass wir die vorgelegten Dokumente geprüft
-haben. Es ist keine Empfehlung.
+13.4 Ein Business-Konto braucht nur eine verifizierte Telefonnummer
+(Abschnitt 4.5). Ein Ausweisdokument der Person, die das Unternehmen führt, ist
+freiwillig; wenn du eines vorlegst, gilt dafür Abschnitt 4.4 c. Wir können
+dich bitten, das Unternehmen zu verifizieren. Das Verifizierungsabzeichen
+bedeutet, dass wir die vorgelegten Dokumente geprüft haben. Es ist keine
+Empfehlung.
 
 13.5 Jede bezahlte Bewerbung einer Unternehmensseite wird in der App deutlich
 als beworben gekennzeichnet.
@@ -728,7 +776,8 @@ als beworben gekennzeichnet.
   dieser Bedingungen nicht, es sei denn, das Gesetz bestimmt etwas anderes.
 
 13.7 Business-Konten sind mit einer Silver-, Gold- oder
-Platinum-Mitgliedschaft verfügbar. Endet deine Mitgliedschaft oder fällt sie
+Platinum-Mitgliedschaft verfügbar und brauchen eine verifizierte
+Telefonnummer (Abschnitt 4.5). Endet deine Mitgliedschaft oder fällt sie
 unter Silver, werden die Business-Funktionen (zum Beispiel die
 Unternehmensseite, Leads, Bewerbung und kostenpflichtige Angebote)
 pausiert, und dein Konto funktioniert wie ein persönliches Konto mit nur
@@ -1069,6 +1118,20 @@ Verbraucherschutzbehörde wenden (Abschnitt 26).
   werden dessen Angaben hier veröffentlichen. Bis dahin können Behörden
   legal@greengochat.com nutzen.
 
+18.8 Anfragen von Behörden
+a) Wir geben Kontodaten, einschließlich deiner Telefonnummer und der
+   Identitätsangaben in Abschnitt 4.4 c, nur heraus, wenn das Gesetz es
+   verlangt oder wenn es erforderlich ist:
+   - um eine gültige gerichtliche Anordnung oder eine Anfrage der Polizei
+     oder einer anderen zuständigen Behörde zu beantworten;
+   - um in einem schweren Fall Leben oder Sicherheit eines Menschen zu
+     schützen;
+   - um Rechtsansprüche geltend zu machen, auszuüben oder zu verteidigen.
+b) Nur eine kleine Zahl befugter Mitarbeiter kann auf die
+   Identitätsangaben zugreifen, und jeder Zugriff wird protokolliert.
+c) Soweit das Gesetz es erlaubt, informieren wir dich über die Anfrage
+   (Datenschutzerklärung, Abschnitt 12.5).
+
 ================================================================================
 19. KINDERSCHUTZ
 ================================================================================
@@ -1348,6 +1411,25 @@ VERSIONSVERLAUF
 5.3.2 - gültig ab 17. Oktober 2026 für Konten, die ab dem 16. Oktober 2026
 erstellt werden; ab 16. November 2026 für vor dem 16. Oktober 2026 erstellte
 Konten (angekündigt am 17. Oktober 2026)
+Telefonverifizierung und Identitätsangaben:
+- Abschnitte 3.3, 3.5, 4.5, 11.1, 12.3, 12.5, 13.4 und 13.7: Eine
+  verifizierte Mobiltelefonnummer ist erforderlich, um ein Konto zu erstellen
+  (Nummern aus europäischen Ländern außer Russland und Belarus, Brasilien,
+  den Vereinigten Staaten, Kanada und dem Vereinigten Königreich), und bei
+  bestehenden Konten, bevor man an Events und Erlebnissen teilnimmt oder sie
+  bucht, Tickets kauft, Events und Erlebnisse erstellt oder als Gastgeber
+  anbietet und ein Business-Konto nutzt; eine Nummer pro Konto; die Nummer
+  ist privat; ein Keyed Hash der E-Mail-Adresse und der Telefonnummer
+  gesperrter Konten.
+- Abschnitt 13.1: eine optionale geschäftliche Kontaktnummer, die nur auf
+  der Unternehmensseite angezeigt wird, wenn du sie einschaltest.
+- Abschnitte 4.4, 13.4 und 18.8: Die Verifizierung mit einem Ausweisdokument
+  bleibt freiwillig (auch für den Inhaber eines Business-Kontos, das nur eine
+  verifizierte Telefonnummer braucht); das Dokument wird auf deinem Gerät
+  ausgelesen und von einem Prüfer kontrolliert, das Foto wird nach der
+  Prüfung oder nach 7 Tagen, wenn sie noch aussteht, gelöscht, und die von
+  dir bestätigten Angaben werden verschlüsselt aufbewahrt, nur um dich zu
+  identifizieren, wenn das Gesetz es verlangt.
 Klarstellungen, damit die Bedingungen der Funktionsweise der App entsprechen:
 - Abschnitte 5.1 g, 14.1, 14.2 und 14.4: Die KI-Helfer im Chat sind
   Übersetzung, Vorlesen und Transliteration (intelligente

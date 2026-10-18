@@ -86,6 +86,10 @@ partilhada (secção 11.7). Esta política também se aplica a essas pessoas.
   em vez disso um ponto a cerca de 100 m, no máximo, da sua posição. Nunca
   veem as suas coordenadas exatas, a sua data de nascimento, o seu número de
   telemóvel nem o seu endereço de e-mail.
+- Para criar uma conta, tem de verificar um número de telemóvel por SMS. O seu
+  número é privado e nunca é mostrado a outros utilizadores. Se banirmos uma
+  conta, conservamos apenas um hash com chave do respetivo número, para
+  impedir que regresse.
 - NÃO vendemos os seus dados pessoais. NÃO os utilizamos para publicidade de
   terceiros. Não há anúncios no GreenGo.
 - As suas mensagens são encriptadas em trânsito e em repouso, mas NÃO são
@@ -93,9 +97,12 @@ partilhada (secção 11.7). Esta política também se aplica a essas pessoas.
   - Os nossos sistemas podem tratar o conteúdo das mensagens, por exemplo para
     as traduzir quando o pede, ou para verificar uma mensagem que alguém
     denunciou.
-- Se verificar a sua idade com um documento de identificação, eliminamos a
-  imagem logo que a verificação esteja concluída. Conservamos apenas o
-  resultado.
+- A verificação com um documento de identificação é opcional, exceto para as
+  funcionalidades da secção 8.1. Se a fizer, a aplicação lê o documento no seu
+  dispositivo, um revisor verifica-o e depois eliminamos a imagem. Conservamos
+  os dados que confirmou encriptados num arquivo de acesso restrito, apenas
+  para o identificar quando a lei o exigir, até 6 meses após o encerramento da
+  sua conta.
 - As funcionalidades de IA (tradução, leitura em voz alta e transliteração de
   mensagens escritas em alfabetos não latinos) utilizam serviços da Google, e
   o nosso assistente de apoio utiliza o Claude da Anthropic. Funcionam através
@@ -118,8 +125,9 @@ partilhada (secção 11.7). Esta política também se aplica a essas pessoas.
 
 a) Dados da conta
    Endereço de e-mail, palavra-passe (armazenada apenas sob a forma de um hash
-   seguro pelo nosso fornecedor de autenticação), pseudónimo e nome de
-   apresentação, data de nascimento e o idioma que utiliza.
+   seguro pelo nosso fornecedor de autenticação), número de telemóvel
+   (verificado com um código enviado por SMS, ver secção 6.5), pseudónimo e
+   nome de apresentação, data de nascimento e o idioma que utiliza.
 
 b) Dados do perfil
    - Fotos, um vídeo de perfil opcional e uma apresentação de voz.
@@ -143,15 +151,20 @@ c) Conteúdos e comunicações
 
 d) Dados de contas de empresa
    Nome comercial e denominação social, categoria, morada apresentada na sua
-   página, horário de funcionamento, canais de contacto e, quando pede para ser
-   verificado como empresa, os documentos necessários para a verificação (ver
-   secção 8.4). Se vender bilhetes ou experiências, também os seus dados de
-   faturação (ver alínea h abaixo) e, se atuar como profissional, os seus
-   dados de profissional (ver alínea j abaixo).
+   página, horário de funcionamento, canais de contacto, um número de contacto
+   da empresa opcional (não verificado, pode ser um telefone fixo; privado,
+   salvo se ativar a sua apresentação na página da empresa) e, quando pede
+   para ser verificado como empresa, os documentos necessários para a
+   verificação (ver secção 8.4). Se vender bilhetes ou experiências, também os
+   seus dados de faturação (ver alínea h abaixo) e, se atuar como
+   profissional, os seus dados de profissional (ver alínea j abaixo).
 
 e) Dados de verificação
    Um documento de identificação e/ou uma selfie, apenas se optar por se
-   verificar. Ver secção 8.
+   verificar. Se se verificar com um documento de identificação, também os
+   dados nele lidos e confirmados por si: nome próprio, apelido, data de
+   nascimento, tipo de documento, país emissor e número do documento. Ver
+   secção 8.
 
 f) Dados de compras
    - O que comprou, quando, o preço e a moeda.
@@ -279,8 +292,9 @@ As pessoas que bloqueou não podem ver o seu perfil.
 4.2 Nunca mostrado a outros utilizadores
 
 As suas coordenadas exatas, data de nascimento, endereço de e-mail, número de
-telemóvel, documento de identificação, selfie de verificação e fotos do álbum
-privado (a menos que conceda a alguém acesso ao seu álbum privado).
+telemóvel, documento de identificação e os dados de identificação nele lidos,
+selfie de verificação e fotos do álbum privado (a menos que conceda a alguém
+acesso ao seu álbum privado).
 
 4.3 Conteúdos que partilha
 
@@ -288,7 +302,10 @@ privado (a menos que conceda a alguém acesso ao seu álbum privado).
   comunidade ou chat de evento.
 - As publicações numa comunidade pública são visíveis para todas as pessoas que
   a possam abrir.
-- A sua página de empresa e as experiências que publica são públicas.
+- A sua página de empresa e as experiências que publica são públicas. O
+  número de contacto da empresa só é apresentado na sua página de empresa se
+  ativar esta opção. O número de telemóvel verificado da sua conta nunca é
+  mostrado.
 - Se vender como profissional, os seus dados de profissional são apresentados
   nos seus anúncios (secção 11.8).
 
@@ -301,8 +318,10 @@ conta quando tal for necessário, por exemplo para:
 - rever uma verificação;
 - cumprir uma obrigação legal.
 
-O acesso aos documentos de identificação está limitado a administradores
-seniores. Cada visualização fica registada.
+O acesso aos documentos de identificação, e aos dados de identificação
+encriptados que conservamos após a revisão (secção 8.2), está limitado a um
+número reduzido de administradores seniores autorizados. Cada acesso fica
+registado.
 
 ================================================================================
 5. PORQUE UTILIZAMOS OS SEUS DADOS E OS NOSSOS FUNDAMENTOS JURÍDICOS
@@ -315,7 +334,8 @@ tabela:
 
 Finalidade                           | O que utilizamos           | Fundamento jurídico
 -------------------------------------|----------------------------|--------------------------------------
-1. Criar e gerir a sua conta         | Conta, dados do            | Contrato (RGPD 6(1)(b); LGPD 7 V)
+1. Criar e gerir a sua conta         | Conta, número de           | Contrato (RGPD 6(1)(b); LGPD 7 V)
+                                     | telemóvel, dados do        |
                                      | dispositivo                |
 2. Mostrar o seu perfil e permitir   | Perfil, localização        | Contrato (RGPD 6(1)(b); LGPD 7 V)
    que as pessoas se descubram umas  | aproximada, idade, dados   |
@@ -331,8 +351,9 @@ Finalidade                           | O que utilizamos           | Fundamento j
    leitura em voz alta,              |                            | para a funcionalidade de IA (RGPD
    transliteração                    |                            | 6(1)(a)/(b); LGPD 7 I/V). Ver
                                      |                            | secção 9.
-6. Verificação da idade com um       | Imagem do documento, data  | Consentimento explícito (RGPD
-   documento de identificação        | de nascimento nele lida    | 9(2)(a); LGPD 11 I). Ver secção 8.
+6. Verificação da idade e da         | Imagem do documento; os    | Consentimento explícito (RGPD
+   identidade com um documento de    | dados nele lidos e         | 9(2)(a); LGPD 11 I). Ver secção 8.
+   identificação                     | confirmados por si         |
 7. Verificação por selfie            | Selfie, fotos de perfil    | Consentimento explícito (RGPD
                                      |                            | 9(2)(a); LGPD 11 I)
 8. Compras, Moedas, Subscrições,     | Dados de compra, registo   | Contrato (RGPD 6(1)(b); LGPD 7 V)
@@ -396,6 +417,17 @@ Finalidade                           | O que utilizamos           | Fundamento j
     manifestamente infundadas        | infundadas, avisos         | interesses legítimos num sistema
     (secção 10.2)                    |                            | de denúncias funcional (RGPD
                                      |                            | 6(1)(f); LGPD 7 IX)
+24. Verificar o seu número de        | Número de telemóvel;       | Contrato (RGPD 6(1)(b); LGPD 7 V);
+    telemóvel, permitir uma conta    | hashes com chave do        | interesses legítimos num serviço
+    por número e impedir que         | endereço de e-mail e do    | seguro e sem utilizadores banidos
+    utilizadores banidos regressem   | número de telemóvel das    | (RGPD 6(1)(f); LGPD 7 IX)
+    (secção 6.5)                     | contas banidas             |
+25. Identificar uma pessoa quando a  | Dados de identificação     | Obrigação legal quando a lei o exija
+    lei o exige: ordens judiciais,   | encriptados (8.2), número  | (RGPD 6(1)(c); LGPD 7 II); caso
+    pedidos da polícia ou de outras  | de telemóvel, dados da     | contrário, interesses legítimos na
+    autoridades competentes,         | conta                      | proteção dos utilizadores e na defesa
+    pretensões judiciais, casos      |                            | de pretensões judiciais (RGPD
+    graves de segurança (secção 8.2) |                            | 6(1)(f); LGPD 7 IX)
 
 Quando nos baseamos em interesses legítimos, ponderámos o nosso interesse face
 aos seus direitos. Pode pedir-nos essa avaliação. Pode opor-se a qualquer
@@ -407,7 +439,8 @@ anteriormente. Se recusar ou retirar o consentimento:
 - para uma funcionalidade de IA, não pode utilizar essa funcionalidade de IA,
   mas o resto do GreenGo continua a funcionar;
 - para a verificação, perde apenas as funcionalidades que exigem verificação
-  (ver secção 8).
+  (ver secção 8). Os dados de identificação que já confirmou são conservados
+  para a finalidade da linha 25 e durante o período indicado na secção 8.2 g.
 
 ================================================================================
 6. CONTA, PERFIL E DESCOBERTA
@@ -436,6 +469,24 @@ terceiros.
   ativar, e pode desativá-la a qualquer momento. Depois de a desativar, não
   utilizamos os seus conteúdos em nova publicidade ou marketing.
 - Registamos a sua escolha e quando a fez.
+
+6.5 Número de telemóvel
+a) Para criar uma conta, tem de verificar um número de telemóvel. Enviamos-lhe
+   um código por SMS através do Google Firebase Authentication, o nosso
+   fornecedor de início de sessão. Se a sua conta foi criada antes desta
+   regra, tem de verificar um número antes de participar em eventos e
+   experiências ou de os reservar, comprar bilhetes, criar ou organizar
+   eventos ou experiências, ou utilizar uma conta de empresa.
+b) A verificação do telemóvel está disponível para números de países europeus
+   (exceto a Rússia e a Bielorrússia), do Brasil, dos Estados Unidos, do
+   Canadá e do Reino Unido. Sem um número destes países, ainda não pode criar
+   uma conta.
+c) O seu número é guardado na parte privada da sua conta. Nunca é mostrado a
+   outros utilizadores, e não o utilizamos para marketing.
+d) Um número só pode estar associado a uma conta. Se banirmos uma conta,
+   conservamos um hash com chave do respetivo número de telemóvel (um código a
+   partir do qual não é possível voltar a ler o número), para que o número não
+   possa ser utilizado para criar uma nova conta (secção 14).
 
 ================================================================================
 7. LOCALIZAÇÃO
@@ -506,26 +557,44 @@ seguintes casos:
 a) Antes do carregamento, explicamos o que vai acontecer e pedimos o seu
    consentimento explícito.
 
-b) A imagem é enviada para o Google Cloud Vision, que lê o texto do documento
-   para que possamos encontrar a data de nascimento. A Google atua em nosso nome
-   e não conserva nada depois.
+b) A aplicação lê o texto do documento no seu dispositivo e preenche o seu
+   nome próprio, apelido, data de nascimento, tipo de documento, país emissor
+   e número do documento. O utilizador verifica estes dados e confirma-os.
 
-c) Se a verificação automática for clara, a imagem é ELIMINADA logo que a
-   decisão é tomada.
+c) Um membro do nosso pessoal com formação adequada compara os dados que
+   confirmou com a imagem do documento.
 
-d) Se a verificação automática não for clara, um membro do nosso pessoal com
-   formação adequada pode ver a imagem. Nesse caso, a imagem é conservada
-   durante, no máximo, 7 dias e depois ELIMINADA, seja qual for o resultado.
+d) A imagem é ELIMINADA logo que a revisão esteja concluída. Se ainda estiver
+   a aguardar revisão ao fim de 7 dias, é ELIMINADA seja qual for o resultado,
+   e pode carregá-la novamente. Isto aplica-se a todas as imagens de
+   documentos de identificação, incluindo a foto sua a segurar o documento de
+   identificação que pode adicionar quando se regista (8.3) e o documento de
+   identificação do titular de uma empresa (8.4).
 
-e) Após a eliminação, conservamos apenas:
-   - se a sua idade foi verificada (sim ou não);
-   - o método;
-   - a data da verificação;
-   - o seu ano de nascimento.
+e) Após a revisão, conservamos:
+   - se a sua idade foi verificada (sim ou não), o método, a data da
+     verificação e o seu ano de nascimento;
+   - os dados que confirmou (nome próprio, apelido, data de nascimento, tipo
+     de documento, país emissor e número do documento), ENCRIPTADOS e
+     guardados separadamente do seu perfil, num arquivo de acesso restrito.
 
-   Não conservamos a imagem, o seu nome tal como impresso no documento, o
-   número do documento, a sua nacionalidade nem a data de validade do
+   Não conservamos a imagem, a sua nacionalidade nem a data de validade do
    documento.
+
+f) Utilizamos os dados encriptados apenas para o identificar quando a lei o
+   exige: para responder a uma ordem válida de um tribunal, ou a um pedido da
+   polícia ou de outra autoridade competente; para proteger a vida ou a
+   segurança de alguém num caso grave; ou para declarar, exercer ou defender
+   um direito num processo judicial (secção 12.5). Só um número reduzido de
+   membros autorizados do pessoal lhes pode aceder, e cada acesso fica
+   registado. Nunca os mostramos a outros utilizadores e nunca os utilizamos
+   para mais nada, por exemplo marketing ou definição de perfis.
+
+g) Conservamos os dados encriptados enquanto a sua conta existir e durante 6
+   meses após o seu encerramento (o prazo durante o qual o Marco Civil da
+   Internet brasileiro exige a conservação dos registos de acesso, art. 15).
+   Só os conservamos durante mais tempo no âmbito de uma conservação para fins
+   legais (secção 14).
 
 8.3 Verificação por selfie
 
@@ -533,7 +602,10 @@ Pode verificar o seu perfil tirando uma selfie. Um membro do nosso pessoal
 compara-a com as suas fotos de perfil. Eliminamos a selfie após a revisão e
 conservamos apenas o resultado (verificado ou não). Não criamos um modelo facial
 nem qualquer outro identificador biométrico a partir da sua selfie, e não
-utilizamos reconhecimento facial para o identificar.
+utilizamos reconhecimento facial para o identificar. Uma foto sua a segurar o
+documento de identificação é uma imagem de documento de identificação:
+aplicam-se-lhe as regras de 8.2, incluindo a eliminação ao fim de, no máximo,
+7 dias.
 
 No seu dispositivo, antes de carregar uma foto, a aplicação verifica se há um
 rosto visível e analisa a foto para detetar nudez. Esta verificação é feita
@@ -542,10 +614,14 @@ para a Google para esse efeito, e não são armazenados dados faciais.
 
 8.4 Verificação de empresas
 
-Para verificar uma conta de empresa, podemos pedir os dados de registo da
-empresa e um documento de identificação da pessoa que a gere. O documento de
-identificação do titular segue as mesmas regras que em 8.2. Conservamos os dados
-de registo da empresa enquanto a página da empresa existir e durante 6 meses
+Uma conta de empresa precisa apenas de um número de telemóvel verificado
+(secção 6.5). Para verificar uma conta de empresa, podemos pedir os dados de
+registo da empresa. Um documento de identificação da pessoa que a gere é
+opcional. Se o titular o fornecer, segue as mesmas regras que em 8.2: a imagem
+é eliminada após a revisão (no máximo, ao fim de 7 dias), e os dados
+confirmados são conservados encriptados apenas para pedidos legais.
+Conservamos os dados de registo da empresa enquanto a página da empresa existir
+e durante 6 meses
 depois, porque o Regulamento dos Serviços Digitais da UE nos obriga a poder
 identificar os comerciantes que oferecem serviços a consumidores.
 
@@ -553,7 +629,8 @@ identificar os comerciantes que oferecem serviços a consumidores.
 
 Pode recusar ou retirar o seu consentimento para a verificação. Nesse caso, não
 pode utilizar as funcionalidades indicadas em 8.1 que a exigem. A sua conta não
-é eliminada.
+é eliminada. Os dados de identificação que já confirmou são conservados
+conforme descrito em 8.2 f e g.
 
 8.6 Aviso para residentes do Illinois, do Texas e de outros estados dos EUA com
 leis sobre dados biométricos
@@ -889,10 +966,13 @@ Fornecedor                       | O que fazem por nós               | Local   
 Google LLC / Google Cloud,       | Alojamento, base de dados,        | EUA,     | Cláusulas-tipo da UE, EU-US Data
 Firebase                         | armazenamento de ficheiros,       | global   | Privacy Framework; cláusulas ANPD
                                  | funções de servidor, início de    |          |
-                                 | sessão, notificações push,        |          |
-                                 | verificações de segurança (App    |          |
-                                 | Check), análise estatística e     |          |
-                                 | relatórios de falhas, registos    |          |
+                                 | sessão e códigos SMS para a       |          |
+                                 | verificação do telemóvel          |          |
+                                 | (Firebase Authentication),        |          |
+                                 | notificações push, verificações   |          |
+                                 | de segurança (App Check), análise |          |
+                                 | estatística e relatórios de       |          |
+                                 | falhas, registos                  |          |
 Serviços de IA do Google Cloud   | Vision (texto de documentos,      | EUA      | Como acima
                                  | moderação de imagens), Natural    |          |
                                  | Language (moderação de texto),    |          |
@@ -949,6 +1029,8 @@ Divulgamos dados quando a lei o exige ou quando é necessário:
 - para proteger a vida ou a segurança de alguém;
 - para declarar, exercer ou defender um direito num processo judicial.
 
+Isto pode incluir o seu número de telemóvel e os dados de identificação
+encriptados de uma verificação com documento de identificação (secção 8.2).
 Quando a lei o permite, informamo-lo sobre o pedido.
 
 12.6 Alterações empresariais
@@ -997,15 +1079,21 @@ eliminamo-los ou anonimizamo-los de modo a que deixem de o poder identificar.
 Dados                                  | Prazo
 ---------------------------------------|----------------------------------------
 Conta e perfil                         | Até eliminar a sua conta
+Número de telemóvel (6.5)              | Até eliminar a sua conta
 Localização exata                      | Substituída sempre que é atualizada;
                                        | eliminada com a conta
 Mensagens e conteúdos multimédia       | Até que o utilizador ou a conversa as
                                        | eliminem, ou até eliminar a sua conta
                                        | (ver secção 15)
-Imagem do documento de identificação   | Eliminada quando a verificação é
-                                       | decidida, ou ao fim de, no máximo, 7
-                                       | dias se tiver de ser revista por uma
-                                       | pessoa
+Imagens de documentos de identificação | Eliminadas logo que a revisão esteja
+(incluindo uma foto a segurar o        | concluída e, no máximo, ao fim de 7
+documento e documentos de titulares de | dias, seja qual for o resultado (pode
+empresas)                              | então carregá-las novamente)
+Dados de identificação que confirmou   | Enquanto a sua conta existir e 6 meses
+(nome próprio, apelido, data de        | após o seu encerramento (prazo dos
+nascimento, tipo de documento, país    | registos de acesso do Marco Civil da
+emissor e número), encriptados (8.2)   | Internet); mais tempo apenas no âmbito
+                                       | de uma conservação para fins legais
 Resultado da verificação da idade      | Até eliminar a sua conta
 (sim/não, método, data, ano de         |
 nascimento)                            |
@@ -1056,7 +1144,8 @@ Outros registos de segurança dos       | 30 dias
 servidores                             |
 Cópias de segurança                    | Substituídas no prazo de 90 dias
 Registos de contas banidas (para       | 5 anos, guardados como hash unidirecional
-impedir um novo registo)               | do endereço de e-mail
+impedir um novo registo)               | do endereço de e-mail e como hash com
+                                       | chave do número de telemóvel
 
 Só podemos conservar dados durante mais tempo quando a lei o exige, ou quando
 são necessários para uma ação judicial ou investigação pendente (uma
@@ -1116,6 +1205,13 @@ g) As cópias de segurança são substituídas no prazo de 90 dias.
 
 h) Conservamos um breve comprovativo de eliminação (a data e o número de itens
    removidos) para podermos provar que a eliminação ocorreu.
+
+i) O seu número de telemóvel é eliminado com a sua conta. Os dados de
+   identificação encriptados de uma verificação com documento de identificação
+   são conservados durante 6 meses após o encerramento da conta e depois
+   eliminados (secção 8.2 g). Se a conta tiver sido banida, conservamos os
+   hashes com chave do respetivo endereço de e-mail e número de telemóvel
+   (secção 14).
 
 15.3 As Moedas que restem na sua conta e o tempo de Subscrição remanescente
 perdem-se quando elimina a sua conta. Eliminar a aplicação não elimina a sua
@@ -1293,6 +1389,9 @@ dispositivo.
 - Verificações do lado do servidor para compras e Moedas.
 - App Check contra clientes falsos.
 - Acesso de administrador restrito e registado.
+- Dados de identificação da verificação de documentos conservados encriptados,
+  num arquivo separado que só alguns membros autorizados do pessoal podem
+  abrir, com registo de cada acesso.
 - Chaves e segredos guardados num gestor de segredos.
 - Revisões de segurança regulares.
 
@@ -1347,8 +1446,9 @@ aplicáveis.
 Categoria (Cal. Civ. Code 1798.140)    | Recolhida | Divulgada para fins  | Vendida ou
                                        |           | empresariais a       | partilhada
 ---------------------------------------|-----------|----------------------|----------
-Identificadores (nome, e-mail, ID da   | Sim       | Prestadores de       | Não
-conta, endereço IP)                    |           | serviços             |
+Identificadores (nome, e-mail, número  | Sim       | Prestadores de       | Não
+de telemóvel, ID da conta, endereço    |           | serviços             |
+IP)                                    |           |                      |
 Registos de clientes (1798.80)         | Sim       | Prestadores de       | Não
                                        |           | serviços             |
 Características protegidas (idade,     | Sim       | Prestadores de       | Não
@@ -1370,9 +1470,11 @@ recomendações)                         |           |                      |
 Informações pessoais sensíveis         | Sim       | Prestadores de       | Não
 (geolocalização precisa, início de     |           | serviços             |
 sessão na conta, documento oficial de  |           |                      |
-identificação durante a verificação,   |           |                      |
-SSN/ITIN se um vendedor dos EUA o      |           |                      |
-indicar para as faturas da taxa)       |           |                      |
+identificação e os dados de            |           |                      |
+identificação conservados encriptados  |           |                      |
+após a verificação, SSN/ITIN se um     |           |                      |
+vendedor dos EUA o indicar para as     |           |                      |
+faturas da taxa)                       |           |                      |
 
 22.2 Fontes
 
@@ -1487,6 +1589,26 @@ HISTÓRICO DE VERSÕES
 partir de 16 de outubro de 2026; a partir de 16 de novembro de 2026 para as
 contas criadas antes de 16 de outubro de 2026 (anunciada a 17 de outubro de
 2026)
+Verificação do telemóvel e dados de identificação:
+- Nova secção 6.5: é exigido um número de telemóvel verificado para criar uma
+  conta (números de países europeus, exceto a Rússia e a Bielorrússia, do
+  Brasil, dos Estados Unidos, do Canadá e do Reino Unido) e, nas contas
+  existentes, antes de eventos, experiências, bilhetes e contas de empresa;
+  um número por conta; o Google Firebase Authentication envia o SMS; um hash
+  com chave dos números das contas banidas (também secções 2, 3.1, 4.2, 5,
+  12.2, 14, 15.2 e 22.1).
+- Secções 3.1 d e 4.3: um número de contacto da empresa opcional, apresentado
+  na página da empresa apenas se a empresa o ativar.
+- Secções 8.2, 8.3 e 8.4: o documento de identificação é lido no seu
+  dispositivo e verificado por um revisor; todas as imagens de documentos de
+  identificação (também uma foto a segurar o documento e o documento do
+  titular de uma empresa) são eliminadas após a revisão, ou ao fim de 7 dias
+  se ainda estiverem pendentes (pode carregá-las novamente); uma conta de
+  empresa precisa apenas de um número de telemóvel verificado, e o documento
+  de identificação do titular é opcional; os dados que confirma são
+  conservados encriptados num arquivo de acesso restrito, apenas para o
+  identificar quando a lei o exigir, até 6 meses após o encerramento da conta
+  (também secções 2, 3.1, 4.2, 4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 e 22.1).
 Clarificações para corresponder ao funcionamento da aplicação:
 - Secções 2, 5 e 9: as funcionalidades de IA são a tradução, a leitura em voz
   alta e a transliteração (as respostas inteligentes e a decomposição de

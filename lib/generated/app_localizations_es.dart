@@ -25913,6 +25913,10 @@ class AppLocalizationsEs extends AppLocalizations {
       'Fases de precio para las entradas de eventos (por ejemplo, anticipada) y la oferta de lanzamiento 2026: 50 % de descuento en el primer periodo de una nueva Membresía';
 
   @override
+  String get legalUpdate532BulletPhone =>
+      'Ahora se requiere un número de teléfono verificado; los datos del documento de identidad se guardan cifrados para solicitudes legales';
+
+  @override
   String get legalUpdateCloseAccount => 'No acepto: cerrar mi cuenta';
 
   @override

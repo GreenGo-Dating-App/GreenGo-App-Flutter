@@ -67,7 +67,7 @@ void main() {
     });
   });
 
-  testWidgets('per-version bullets: 5.1.0 (3), 5.3.0 (5), 5.3.1 (6), 5.3.2 (7), unknown none', (tester) async {
+  testWidgets('per-version bullets: 5.1.0 (3), 5.3.0 (5), 5.3.1 (6), 5.3.2 (8), unknown none', (tester) async {
     await tester.pumpWidget(_app(const SizedBox()));
     final l10n = AppLocalizations.of(tester.element(find.byType(SizedBox)))!;
     expect(legalUpdateBullets(l10n, '5.1.0'), [
@@ -87,10 +87,12 @@ void main() {
     expect(b531.last, contains('US\$28'));
     expect(b531.last, contains('US\$25'));
     final b532 = legalUpdateBullets(l10n, '5.3.2');
-    expect(b532, hasLength(7));
+    expect(b532, hasLength(8));
     expect(b532.take(6), b531);
-    expect(b532.last, l10n.legalUpdate532BulletPhases);
-    expect(b532.last, contains('50%'));
+    expect(b532[6], l10n.legalUpdate532BulletPhases);
+    expect(b532[6], contains('50%'));
+    expect(b532.last, l10n.legalUpdate532BulletPhone);
+    expect(b532.last, contains('phone'));
     expect(legalUpdateBullets(l10n, '9.9.9'), isEmpty);
     expect(legalUpdateBullets(l10n, null), isEmpty);
   });
@@ -169,6 +171,7 @@ void main() {
       expect(find.text(l10n.legalUpdate530BulletTraders), findsOneWidget);
       expect(find.text(l10n.legalUpdate531BulletFeeCaps), findsOneWidget);
       expect(find.text(l10n.legalUpdate532BulletPhases), findsOneWidget);
+      expect(find.text(l10n.legalUpdate532BulletPhone), findsOneWidget);
       expect(find.textContaining('billing@greengochat.com'), findsOneWidget);
       await tester.ensureVisible(find.byKey(const Key('legalUpcomingGotIt')));
       await tester.pumpAndSettle();

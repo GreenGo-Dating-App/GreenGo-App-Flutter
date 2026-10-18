@@ -25674,6 +25674,10 @@ class AppLocalizationsEn extends AppLocalizations {
       'Ticket price phases for events (for example early bird), and the 2026 launch offer: 50% off the first period of a new Membership';
 
   @override
+  String get legalUpdate532BulletPhone =>
+      'A verified phone number is now required; ID document details are kept encrypted for legal requests';
+
+  @override
   String get legalUpdateCloseAccount => 'I don\'t accept – close my account';
 
   @override

@@ -25954,6 +25954,10 @@ class AppLocalizationsIt extends AppLocalizations {
       'Fasi di prezzo per i biglietti degli eventi (per esempio early bird) e l’offerta di lancio 2026: 50% di sconto sul primo periodo di un nuovo Abbonamento';
 
   @override
+  String get legalUpdate532BulletPhone =>
+      'Ora è richiesto un numero di telefono verificato; i dati del documento d’identità sono conservati cifrati per le richieste legali';
+
+  @override
   String get legalUpdateCloseAccount => 'Non accetto – chiudi il mio account';
 
   @override
