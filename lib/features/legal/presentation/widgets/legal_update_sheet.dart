@@ -109,6 +109,16 @@ List<String> legalUpdateBullets(AppLocalizations l10n, String? version) =>
           l10n.legalUpdate530BulletTraders,
           l10n.legalUpdate531BulletFeeCaps,
         ],
+      // 5.3.2 = 5.3.1 + ticket price phases and the 2026 launch offer.
+      '5.3.2' => [
+          l10n.legalUpdate530BulletReferral,
+          l10n.legalUpdate530BulletCoinGifts,
+          l10n.legalUpdate530BulletMenus,
+          l10n.legalUpdate530BulletModeration,
+          l10n.legalUpdate530BulletTraders,
+          l10n.legalUpdate531BulletFeeCaps,
+          l10n.legalUpdate532BulletPhases,
+        ],
       _ => const <String>[],
     };
 

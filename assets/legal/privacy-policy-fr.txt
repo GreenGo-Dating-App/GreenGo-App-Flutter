@@ -1,9 +1,10 @@
 POLITIQUE DE CONFIDENTIALITÉ DE GREENGO
 
-Version : 5.3.0
-Date d'entrée en vigueur : 16 octobre 2026 pour les comptes créés à partir de
-  cette date ; 16 novembre 2026 pour les comptes créés avant le 16 octobre 2026
-Annoncée le : 16 octobre 2026
+Version : 5.3.1
+Date d'entrée en vigueur : 17 octobre 2026 pour les comptes créés à partir du
+  16 octobre 2026 ; 16 novembre 2026 pour les comptes créés avant le
+  16 octobre 2026
+Annoncée le : 17 octobre 2026
 Version précédente : 5.2.1 (16 octobre 2026), qui continue de s'appliquer aux
   comptes créés avant le 16 octobre 2026 jusqu'au 15 novembre 2026
 
@@ -86,19 +87,33 @@ que visiteurs (point 11.7). La présente politique s'applique aussi à elles.
   ils voient à la place un point situé à environ 100 m au plus de votre
   position. Ils ne voient jamais vos coordonnées exactes, votre date de
   naissance, votre numéro de téléphone ni votre adresse e-mail.
+- Depuis le 16 octobre 2026, pour créer un compte, vous devez vérifier un numéro
+  de téléphone mobile par SMS (les comptes plus anciens ne sont pas obligés d'en
+  ajouter un). Votre numéro est privé et n'est jamais montré aux autres
+  utilisateurs. Si nous bannissons un compte, nous ne conservons qu'un hachage à
+  clé de son numéro, pour l'empêcher de revenir.
 - Nous ne VENDONS PAS vos données personnelles. Nous ne les utilisons PAS pour
   de la publicité de tiers. Il n'y a aucune publicité dans GreenGo.
 - Vos messages sont chiffrés en transit et au repos, mais ils ne sont PAS
   chiffrés de bout en bout.
   - Nos systèmes peuvent traiter le contenu des messages, par exemple pour le
     traduire à votre demande, ou pour examiner un message qui a été signalé.
-- Si vous vérifiez votre âge au moyen d'une pièce d'identité, nous supprimons
-  l'image dès la fin de la vérification. Nous ne conservons que le résultat.
-- Les fonctionnalités d'IA (traduction, lecture vocale, réponses suggérées et
-  décomposition des mots) passent par nos serveurs. Elles utilisent des services Google, et
-  notre assistant d'assistance utilise Claude d'Anthropic. Nous vous demandons
-  votre consentement avant leur première utilisation, et l'assistant
-  d'assistance est clairement identifié comme une IA.
+- La vérification au moyen d'une pièce d'identité est facultative, sauf
+  lorsque la loi exige des contrôles d'âge renforcés (point 8.1). Si vous la
+  faites, l'application lit le
+  document sur votre appareil, un vérificateur le contrôle, puis nous
+  supprimons l'image. Nous conservons les informations que vous avez
+  confirmées sous forme chiffrée, dans un espace de stockage à accès
+  restreint, uniquement pour vous identifier lorsque la loi l'exige, jusqu'à
+  6 mois après la clôture de votre compte.
+- Les fonctionnalités d'IA (traduction, lecture vocale et translittération
+  des messages écrits dans des alphabets non latins) utilisent des services
+  Google, et notre assistant d'assistance utilise Claude d'Anthropic. Elles
+  passent par nos serveurs, sauf que l'application peut demander directement
+  au service de traduction de Google de traduire des contenus publics. Nous
+  vous demandons votre consentement avant qu'elles ne traitent pour la
+  première fois votre contenu privé, et l'assistant d'assistance est
+  clairement identifié comme une IA.
 - Vous pouvez supprimer votre compte à tout moment :
   - dans l'application ;
   - sur notre site web, à l'adresse https://greengochat.com/delete-account, en
@@ -114,8 +129,9 @@ que visiteurs (point 11.7). La présente politique s'applique aussi à elles.
 
 a) Données de compte
    Adresse e-mail, mot de passe (stocké uniquement sous forme de hachage
-   sécurisé par notre fournisseur d'authentification), pseudonyme et nom
-   affiché, date de naissance et langue utilisée.
+   sécurisé par notre fournisseur d'authentification), numéro de téléphone
+   mobile (vérifié au moyen d'un code envoyé par SMS, voir le point 6.5),
+   pseudonyme et nom affiché, date de naissance et langue utilisée.
 
 b) Données de profil
    - Photos, un profil vidéo et une présentation vocale facultatifs.
@@ -140,8 +156,11 @@ c) Contenus et communications
 
 d) Données des comptes professionnels
    Nom commercial et dénomination sociale, catégorie, adresse affichée sur
-   votre page, horaires d'ouverture, canaux de contact et, si vous demandez à
-   être vérifié en tant qu'entreprise, les documents nécessaires à la
+   votre page, horaires d'ouverture, canaux de contact, un numéro de contact
+   professionnel facultatif (non vérifié, il peut s'agir d'une ligne fixe ;
+   privé, sauf si vous activez son affichage sur votre page professionnelle)
+   et, si vous demandez à être vérifié en tant qu'entreprise, les documents
+   nécessaires à la
    vérification (voir le point 8.4). Si vous vendez des billets ou des
    expériences, également vos données de facturation (voir le h ci-dessous)
    et, si vous agissez en tant que professionnel, vos coordonnées de
@@ -149,7 +168,10 @@ d) Données des comptes professionnels
 
 e) Données de vérification
    Une pièce d'identité et/ou un selfie, uniquement si vous choisissez de vous
-   faire vérifier. Voir la section 8.
+   faire vérifier. Si vous vous faites vérifier au moyen d'une pièce
+   d'identité, également les informations qui y sont lues et que vous avez
+   confirmées : prénom, nom, date de naissance, type de document, pays de
+   délivrance et numéro du document. Voir la section 8.
 
 f) Données d'achat
    - Ce que vous avez acheté, quand, le prix et la devise.
@@ -278,9 +300,10 @@ Les personnes que vous avez bloquées ne peuvent pas voir votre profil.
 4.2 Jamais montré aux autres utilisateurs
 
 Vos coordonnées exactes, votre date de naissance, votre adresse e-mail,
-votre numéro de téléphone, votre pièce d'identité, votre
-selfie de vérification et les photos de votre album privé (sauf si vous
-accordez à quelqu'un l'accès à votre album privé).
+votre numéro de téléphone, votre pièce d'identité et les informations
+d'identité qui y sont lues, votre selfie de vérification et les photos de
+votre album privé (sauf si vous accordez à quelqu'un l'accès à votre album
+privé).
 
 4.3 Contenus que vous partagez
 
@@ -289,7 +312,9 @@ accordez à quelqu'un l'accès à votre album privé).
 - Les publications dans une communauté publique sont visibles par toute
   personne pouvant l'ouvrir.
 - Votre page professionnelle et les expériences que vous publiez sont
-  publiques.
+  publiques. Votre numéro de contact professionnel n'est affiché sur votre
+  page professionnelle que si vous activez cette option. Le numéro de
+  téléphone vérifié de votre compte n'est jamais affiché.
 - Si vous vendez en tant que professionnel, vos coordonnées de professionnel
   sont affichées sur vos annonces (point 11.8).
 
@@ -302,8 +327,9 @@ de compte lorsque cela est nécessaire, par exemple pour :
 - examiner une vérification ;
 - respecter une obligation légale.
 
-L'accès aux pièces d'identité est limité aux administrateurs principaux. Chaque
-consultation est journalisée.
+L'accès aux pièces d'identité, et aux informations d'identité chiffrées que
+nous conservons après l'examen (point 8.2), est limité à un petit nombre
+d'administrateurs principaux habilités. Chaque accès est journalisé.
 
 ================================================================================
 5. POURQUOI NOUS UTILISONS VOS DONNÉES ET NOS BASES JURIDIQUES
@@ -316,7 +342,8 @@ personnelles. Dans le tableau :
 
 Finalité                             | Données utilisées          | Base juridique
 -------------------------------------|----------------------------|--------------------------------------
-1. Créer et gérer votre compte       | Compte, données appareil   | Contrat (RGPD 6(1)(b) ; LGPD 7 V)
+1. Créer et gérer votre compte       | Compte, numéro de          | Contrat (RGPD 6(1)(b) ; LGPD 7 V)
+                                     | téléphone, données appareil|
 2. Afficher votre profil et permettre| Profil, localisation       | Contrat (RGPD 6(1)(b) ; LGPD 7 V)
    la découverte de personnes,       | approximative, âge,        |
    communautés, événements et        | utilisation                |
@@ -327,11 +354,13 @@ Finalité                             | Données utilisées          | Base juri
 4. Messagerie, groupes, communautés, | Contenus, compte           | Contrat (RGPD 6(1)(b) ; LGPD 7 V)
    événements, réservations          |                            |
 5. Fonctionnalités d'IA : traduction,| Le texte que vous          | Contrat, après votre consentement à
-   lecture vocale, réponses          | choisissez de traiter      | la fonctionnalité d'IA (RGPD
-   suggérées, décomposition des mots |                            | 6(1)(a)/(b) ; LGPD 7 I/V). Voir la
+   lecture vocale,                   | choisissez de traiter      | la fonctionnalité d'IA (RGPD
+   translittération                  |                            | 6(1)(a)/(b) ; LGPD 7 I/V). Voir la
                                      |                            | section 9.
-6. Vérification de l'âge au moyen    | Image de la pièce, date de | Consentement explicite (RGPD
-   d'une pièce d'identité            | naissance qui y est lue    | 9(2)(a) ; LGPD 11 I). Voir section 8.
+6. Vérification de l'âge et de       | Image de la pièce ; les    | Consentement explicite (RGPD
+   l'identité au moyen d'une pièce   | informations qui y sont    | 9(2)(a) ; LGPD 11 I). Voir section 8.
+   d'identité                        | lues et que vous avez      |
+                                     | confirmées                 |
 7. Vérification par selfie           | Selfie, photos de profil   | Consentement explicite (RGPD
                                      |                            | 9(2)(a) ; LGPD 11 I)
 8. Achats, pièces, abonnements,      | Données d'achat, registre  | Contrat (RGPD 6(1)(b) ; LGPD 7 V)
@@ -401,6 +430,18 @@ Finalité                             | Données utilisées          | Base juri
     signalements manifestement       | infondés, avertissements   | légitimes au bon fonctionnement du
     infondés (point 10.2)            |                            | système de signalement (RGPD
                                      |                            | 6(1)(f) ; LGPD 7 IX)
+24. Vérifier votre numéro de         | Numéro de téléphone ;      | Contrat (RGPD 6(1)(b) ; LGPD 7 V) ;
+    téléphone, n'autoriser qu'un     | hachages à clé de l'adresse| intérêts légitimes à un service sûr
+    compte par numéro et empêcher    | e-mail et du numéro de     | sans utilisateurs bannis (RGPD
+    les utilisateurs bannis de       | téléphone des comptes      | 6(1)(f) ; LGPD 7 IX)
+    revenir (point 6.5)              | bannis                     |
+25. Identifier une personne lorsque  | Informations d'identité    | Obligation légale lorsque la loi
+    la loi l'exige : injonctions     | chiffrées (8.2), numéro de | l'exige (RGPD 6(1)(c) ; LGPD 7 II) ;
+    judiciaires, demandes de la      | téléphone, données de      | sinon intérêts légitimes à protéger
+    police ou d'autres autorités     | compte                     | les utilisateurs et à défendre des
+    compétentes, actions en justice, |                            | droits en justice (RGPD 6(1)(f) ;
+    cas graves de sécurité (point    |                            | LGPD 7 IX)
+    8.2)                             |                            |
 
 Lorsque nous nous fondons sur des intérêts légitimes, nous avons mis en balance
 notre intérêt et vos droits. Vous pouvez nous demander cette évaluation. Vous
@@ -413,7 +454,9 @@ votre consentement :
 - à une fonctionnalité d'IA, vous ne pouvez pas utiliser cette fonctionnalité,
   mais le reste de GreenGo continue de fonctionner ;
 - à la vérification, vous perdez uniquement les fonctionnalités qui exigent une
-  vérification (voir la section 8).
+  vérification (voir la section 8). Les informations d'identité que vous avez
+  déjà confirmées sont conservées pour la finalité de la ligne 25 et pendant
+  la durée indiquée au point 8.2 g.
 
 ================================================================================
 6. COMPTE, PROFIL ET DÉCOUVERTE
@@ -445,6 +488,26 @@ créons pas de profils vous concernant pour des tiers.
   moment. Une fois qu'il est désactivé, nous n'utilisons pas votre contenu
   dans de nouvelles publicités ou actions marketing.
 - Nous enregistrons votre choix et la date à laquelle vous l'avez fait.
+
+6.5 Numéro de téléphone
+a) Depuis le 16 octobre 2026, pour créer un compte, vous devez vérifier un
+   numéro de téléphone mobile. Nous vous envoyons un code par SMS via Google
+   Firebase Authentication, notre fournisseur de connexion. Si votre compte a
+   été créé avant le 16 octobre 2026, vous n'êtes pas obligé d'ajouter un numéro
+   de téléphone : vous pouvez en ajouter un si vous le souhaitez, et toutes les
+   fonctionnalités continuent de fonctionner sans numéro.
+b) La vérification du téléphone est disponible pour les numéros des pays
+   européens (sauf la Russie et la Biélorussie), du Brésil, des États-Unis,
+   du Canada et du Royaume-Uni. Sans un tel numéro, vous ne pouvez pas encore
+   créer de compte.
+c) Votre numéro est stocké dans la partie privée de votre compte. Il n'est
+   jamais montré aux autres utilisateurs, et nous ne l'utilisons pas à des
+   fins de marketing.
+d) Un numéro ne peut être associé qu'à un seul compte. Si nous bannissons un
+   compte, nous conservons un hachage à clé de son numéro de téléphone (un
+   code à partir duquel le numéro ne peut pas être retrouvé), afin que ce
+   numéro ne puisse pas être utilisé pour créer un nouveau compte
+   (section 14).
 
 ================================================================================
 7. LOCALISATION
@@ -505,10 +568,9 @@ pas vos données de compte.
 8.1 Quand nous le demandons
 
 GreenGo est destiné aux adultes (18 ans et plus). Chacun indique sa date de
-naissance lors de l'inscription. Nous ne demandons une pièce d'identité que
-dans les cas suivants :
-- avant que vous ne publiiez dans une Communauté ;
-- avant que vous ne publiiez une expérience payante en tant qu'hôte ;
+naissance lors de l'inscription. La vérification au moyen d'une pièce d'identité
+est facultative, y compris pour publier dans une Communauté et pour publier ou
+réserver des expériences. Nous ne pouvons demander une pièce d'identité que :
 - lorsque la loi de votre lieu de résidence exige des contrôles d'âge
   renforcés ;
 - lorsque nous avons une raison précise de penser qu'un compte appartient à
@@ -519,26 +581,47 @@ dans les cas suivants :
 a) Avant le téléversement, nous vous expliquons ce qui va se passer et vous
    demandons votre consentement explicite.
 
-b) L'image est envoyée à Google Cloud Vision, qui lit le texte figurant sur le
-   document afin que nous puissions trouver la date de naissance. Google agit
-   pour notre compte et ne conserve rien ensuite.
+b) L'application lit le texte figurant sur le document sur votre appareil et
+   renseigne votre prénom, votre nom, votre date de naissance, le type de
+   document, le pays de délivrance et le numéro du document. Vous vérifiez
+   ces informations et les confirmez.
 
-c) Si la vérification automatique est concluante, l'image est SUPPRIMÉE dès
-   que la décision est prise.
+c) Un membre formé de notre personnel contrôle les informations que vous avez
+   confirmées par rapport à l'image du document.
 
-d) Si la vérification automatique n'est pas concluante, un membre formé de
-   notre personnel peut examiner l'image. Dans ce cas, l'image est conservée
-   7 jours au maximum, puis SUPPRIMÉE, quel que soit le résultat.
+d) L'image est SUPPRIMÉE dès que l'examen est terminé. Si elle est toujours
+   en attente d'examen au bout de 7 jours, elle est SUPPRIMÉE quel que soit le
+   résultat, et vous pouvez la téléverser de nouveau. Cela s'applique à toute
+   image de pièce d'identité, y compris la photo de vous tenant votre pièce
+   d'identité que vous pouvez ajouter lors de votre inscription (8.3) et la
+   pièce d'identité du propriétaire d'une entreprise (8.4).
 
-e) Après la suppression, nous ne conservons que :
-   - le fait que votre âge a été vérifié ou non (oui ou non) ;
-   - la méthode ;
-   - la date de la vérification ;
-   - votre année de naissance.
+e) Après l'examen, nous conservons :
+   - le fait que votre âge a été vérifié ou non (oui ou non), la méthode, la
+     date de la vérification et votre année de naissance ;
+   - les informations que vous avez confirmées (prénom, nom, date de
+     naissance, type de document, pays de délivrance et numéro du document),
+     CHIFFRÉES et conservées à part de votre profil, dans un espace de
+     stockage à accès restreint.
 
-   Nous ne conservons ni l'image, ni votre nom tel qu'imprimé sur le document,
-   ni le numéro du document, ni votre nationalité, ni la date d'expiration du
-   document.
+   Nous ne conservons ni l'image, ni votre nationalité, ni la date
+   d'expiration du document.
+
+f) Nous n'utilisons les informations chiffrées que pour vous identifier
+   lorsque la loi l'exige : pour répondre à une injonction valable d'un
+   tribunal, ou à une demande de la police ou d'une autre autorité
+   compétente ; pour protéger la vie ou la sécurité d'une personne dans un
+   cas grave ; ou pour constater, exercer ou défendre des droits en justice
+   (point 12.5). Seul un petit nombre de membres du personnel habilités peut
+   y accéder, et chaque accès est journalisé. Nous ne les montrons jamais aux
+   autres utilisateurs, et nous ne les utilisons jamais à d'autres fins, par
+   exemple le marketing ou le profilage.
+
+g) Nous conservons les informations chiffrées tant que votre compte existe et
+   pendant 6 mois après sa clôture (la durée pendant laquelle le Marco Civil
+   da Internet brésilien impose de conserver les journaux d'accès, art. 15).
+   Nous ne les conservons plus longtemps que dans le cadre d'une conservation
+   à des fins juridiques (section 14).
 
 8.3 Vérification par selfie
 
@@ -547,7 +630,9 @@ notre personnel le compare à vos photos de profil. Nous supprimons le selfie
 après l'examen et ne conservons que le résultat (vérifié ou non). Nous ne
 créons à partir de votre selfie aucun gabarit facial ni aucun autre
 identifiant biométrique, et nous n'utilisons pas la reconnaissance faciale pour
-vous identifier.
+vous identifier. Une photo de vous tenant votre pièce d'identité est une image
+de pièce d'identité : les règles du point 8.2, y compris la suppression au
+plus tard au bout de 7 jours, s'y appliquent.
 
 Sur votre appareil, avant que vous ne téléversiez une photo, l'application
 vérifie qu'un visage est visible et contrôle l'absence de nudité. Cette
@@ -557,10 +642,14 @@ n'est stockée.
 
 8.4 Vérification des entreprises
 
-Pour vérifier un compte professionnel, nous pouvons demander les informations
-d'immatriculation de l'entreprise et une pièce d'identité de la personne qui la
-dirige. La pièce d'identité du propriétaire suit les mêmes règles qu'au point
-8.2. Nous conservons les informations d'immatriculation de l'entreprise tant
+Un compte professionnel ne nécessite pas de pièce d'identité. Pour vérifier un
+compte professionnel, nous pouvons demander les informations d'immatriculation
+de l'entreprise. Une pièce d'identité de la
+personne qui la dirige est facultative. Si le propriétaire en fournit une,
+elle suit les mêmes règles qu'au point 8.2 : l'image est supprimée après
+l'examen (au plus tard au bout de 7 jours), et les informations confirmées
+sont conservées sous forme chiffrée uniquement pour les demandes légales.
+Nous conservons les informations d'immatriculation de l'entreprise tant
 que la page professionnelle existe et pendant 6 mois ensuite, car le règlement
 européen sur les services numériques nous impose de pouvoir identifier les
 professionnels qui proposent des services aux consommateurs.
@@ -569,7 +658,8 @@ professionnels qui proposent des services aux consommateurs.
 
 Vous pouvez refuser ou retirer votre consentement à la vérification. Vous ne
 pouvez alors pas utiliser les fonctionnalités énumérées au point 8.1 qui
-l'exigent. Votre compte n'est pas supprimé.
+l'exigent. Votre compte n'est pas supprimé. Les informations d'identité que
+vous avez déjà confirmées sont conservées comme décrit au point 8.2 f et g.
 
 8.6 Avis aux résidents de l'Illinois, du Texas et des autres États américains
 dotés de lois sur la biométrie
@@ -601,35 +691,52 @@ n'en tirerons jamais profit d'aucune autre manière.
 
 Fonctionnalité                   | Fournisseur (pour notre compte) | Ce qui est envoyé
 ---------------------------------|---------------------------------|----------------------------
-Traduction des messages          | Google Cloud Translation        | Le texte à traduire
-Traduction des contenus publics  | Google Cloud Translation, au    | Le texte seul, sans données
-(événements, communautés,        | moyen d'un cache partagé sur    | personnelles
-annonces)                        | nos serveurs                    |
+Traduction des messages de chat  | Services de traduction de       | Le texte à traduire et la
+                                 | Google (Google Cloud            | langue cible
+                                 | Translation dans l'application  |
+                                 | actuelle)                       |
+Traduction des contenus publics  | Service de traduction de        | Le texte seul, sans données
+(événements, communautés,        | Google, au moyen d'un stockage  | personnelles
+annonces)                        | partagé sur nos serveurs ; si   |
+                                 | une traduction n'y est pas,     |
+                                 | l'application peut la demander  |
+                                 | directement à Google, qui voit  |
+                                 | alors votre adresse IP          |
 Lecture vocale (synthèse vocale) | Google Cloud Text-to-Speech     | Le texte à lire à voix haute
-Réponses suggérées, conseils     | Google Gemini (API payante)     | Le message ou le texte que
-culturels, décomposition des mots|                                 | vous sélectionnez, et les
-                                 |                                 | langues
+Translittération des messages    | Google Gemini (API payante)     | Le texte du message et sa
+écrits dans des alphabets non    |                                 | langue
+latins                           |                                 |
 Assistant d'assistance           | Anthropic Claude                | Vos messages à l'assistance
 Modération des images et des     | Google Cloud Vision et Natural  | Images téléversées ; texte
 textes                           | Language                        | contrôlé pour la sécurité
 
 9.2 Fonctionnement
 
-- Toutes les requêtes d'IA partent de nos serveurs vers le fournisseur. Votre
-  application ne communique pas directement avec le fournisseur d'IA.
-- Les fournisseurs agissent en tant que nos sous-traitants. Nous les utilisons
-  dans le cadre de leurs conditions professionnelles payantes, en vertu
-  desquelles ils n'utilisent pas vos données pour entraîner leurs modèles.
+- Les requêtes d'IA partent de nos serveurs vers le fournisseur. La seule
+  exception est la traduction des contenus publics : si elle ne se trouve pas
+  dans notre stockage partagé, l'application peut la demander directement au
+  service de traduction de Google. Votre contenu privé n'est jamais envoyé
+  depuis votre appareil à un fournisseur d'IA.
+- Pour votre contenu privé, les fournisseurs agissent en tant que nos
+  sous-traitants. Nous les utilisons dans le cadre de leurs conditions
+  professionnelles payantes, en vertu desquelles ils n'utilisent pas vos
+  données pour entraîner leurs modèles.
 - Avant que des fonctionnalités d'IA ne traitent votre contenu privé pour la
   première fois (par exemple la traduction des messages de chat, la lecture
   à voix haute et l'assistant IA), nous vous indiquons quel fournisseur est
   utilisé et ce qui est envoyé, et nous vous demandons votre consentement.
   Vous pouvez modifier ce choix dans les Paramètres.
 - Les contenus publics, tels que les événements, les communautés et les
-  annonces, sont traduits avec Google Cloud Translation au moyen d'un cache
-  partagé sur nos serveurs. Seul le texte est envoyé, sans aucune donnée
-  personnelle, et la traduction est conservée pour toutes les personnes qui
-  consultent ce contenu. Cela ne nécessite pas votre consentement.
+  annonces, sont traduits avec le service de traduction de Google au moyen
+  d'un stockage partagé sur nos serveurs. Seul le texte est envoyé, sans
+  aucune donnée personnelle, et la traduction est conservée pour toutes les
+  personnes qui consultent ce contenu. Cela ne nécessite pas votre
+  consentement.
+- Les traductions des messages de chat sont conservées avec le message, afin
+  de ne pas devoir être demandées à nouveau. Les traductions de phrases
+  courtes sans données personnelles (sans chiffres, liens, adresses e-mail ni
+  @noms) sont également conservées dans un cache partagé anonyme pendant
+  180 jours au maximum, sans le message d'origine ni aucun lien avec vous.
 - Les contenus créés ou modifiés par l'IA sont signalés, par exemple
   « Traduit ». Les résultats de l'IA peuvent contenir des erreurs. Ne vous y
   fiez pas pour des décisions importantes.
@@ -691,9 +798,10 @@ GreenGo :
 - Nous vous informons lorsque nous avons examiné votre signalement.
 - Si une personne envoie fréquemment des signalements manifestement infondés,
   nous conservons le nombre de ses signalements infondés pendant 12 mois.
-  Nous l'avertissons et, si elle continue, nous ne traitons pas ses
-  signalements pendant 30 jours (DSA art. 23 ; Conditions générales,
-  section 18.6).
+  Nous l'avertissons et, si elle continue, un modérateur examine le cas et
+  peut cesser de traiter ses signalements pendant 30 jours (DSA art. 23 ;
+  Conditions générales, section 18.6). Les signalements concernant la
+  sécurité des enfants sont toujours traités.
 
 10.3 Exploitation sexuelle des enfants
 
@@ -756,7 +864,8 @@ GreenGo :
 
 - Les achats sont effectués via Stripe. Vous saisissez vos informations de
   paiement sur la page sécurisée propre à Stripe : cartes et, pour les
-  paiements en réais brésiliens, Pix.
+  paiements ponctuels en réais brésiliens (par exemple les coins), Pix. Les
+  abonnements se paient par carte.
 - Nous recevons votre numéro de client Stripe, le montant, la devise, votre
   pays et le statut du paiement. Nous ne recevons jamais votre numéro de carte
   complet.
@@ -901,10 +1010,13 @@ Prestataire                      | Ce qu'ils font pour nous          | Lieu     
 ---------------------------------|-----------------------------------|----------|---------------------------
 Google LLC / Google Cloud,       | Hébergement, base de données,     | USA,     | CCT de l'UE, Data Privacy
 Firebase                         | stockage de fichiers, fonctions   | monde    | Framework UE-USA ; clauses
-                                 | serveur, connexion, notifications |          | de l'ANPD
-                                 | push, contrôles de sécurité (App  |          |
-                                 | Check), analyses et rapports de   |          |
-                                 | plantage, journalisation          |          |
+                                 | serveur, connexion et codes SMS   |          | de l'ANPD
+                                 | de vérification du téléphone      |          |
+                                 | (Firebase Authentication),        |          |
+                                 | notifications push, contrôles de  |          |
+                                 | sécurité (App Check), analyses et |          |
+                                 | rapports de plantage,             |          |
+                                 | journalisation                    |          |
 Services d'IA de Google Cloud    | Vision (texte des documents,      | USA      | Comme ci-dessus
                                  | modération des images), Natural   |          |
                                  | Language (modération des textes), |          |
@@ -969,7 +1081,9 @@ nécessaire :
 - pour protéger la vie ou la sécurité d'une personne ;
 - pour constater, exercer ou défendre des droits en justice.
 
-Lorsque la loi le permet, nous vous informons de la demande.
+Cela peut inclure votre numéro de téléphone et les informations d'identité
+chiffrées issues d'une vérification au moyen d'une pièce d'identité
+(point 8.2). Lorsque la loi le permet, nous vous informons de la demande.
 
 12.6 Évolutions de l'entreprise
 
@@ -1020,14 +1134,22 @@ identifier.
 Données                                | Durée
 ---------------------------------------|----------------------------------------
 Compte et profil                       | Jusqu'à la suppression de votre compte
+Numéro de téléphone (6.5)              | Jusqu'à la suppression de votre compte
 Localisation exacte                    | Écrasée à chaque mise à jour ;
                                        | supprimée avec le compte
 Messages et médias                     | Jusqu'à leur suppression par vous ou
                                        | par la conversation, ou la suppression
                                        | de votre compte (voir la section 15)
-Image de la pièce d'identité           | Supprimée dès la décision prise, ou au
-                                       | bout de 7 jours au maximum si une
-                                       | personne doit l'examiner
+Images des pièces d'identité (y        | Supprimées dès la fin de l'examen, et
+compris une photo tenant le document   | au plus tard au bout de 7 jours quel
+et les documents des propriétaires     | que soit le résultat (vous pouvez
+d'entreprise)                          | alors la téléverser de nouveau)
+Informations d'identité que vous avez  | Tant que votre compte existe et 6 mois
+confirmées (prénom, nom, date de       | après sa clôture (durée de
+naissance, type de document, pays de   | conservation des journaux d'accès du
+délivrance et numéro), chiffrées (8.2) | Marco Civil da Internet) ; plus
+                                       | longtemps uniquement en cas de
+                                       | conservation à des fins juridiques
 Résultat de la vérification de l'âge   | Jusqu'à la suppression de votre compte
 (oui/non, méthode, date, année de      |
 naissance)                             |
@@ -1059,6 +1181,9 @@ Coordonnées de professionnel des       | Tant que vous vendez en tant que
 vendeurs (11.8)                        | professionnel, et 6 mois ensuite
 Cache audio de lecture à voix haute    | Anonyme, sans lien avec vous ;
 (9.2)                                  | conservé tant qu'il est utilisé
+Traductions des messages de chat (9.2) | Avec le message ; phrases courtes
+                                       | dans le cache anonyme : 180 jours
+                                       | au maximum
 Signalements et preuves relatifs à la  | Au moins 1 an, ou plus lorsque la loi
 sécurité des enfants                   | ou une autorité l'exige
 Registres de consentement et           | Pendant toute l'existence de votre
@@ -1078,7 +1203,9 @@ heure d'accès aux Services)            | da Internet brésilien (art. 15)
 Autres journaux de sécurité serveur    | 30 jours
 Sauvegardes                            | Écrasées sous 90 jours
 Registres des comptes bannis (pour     | 5 ans, conservés sous forme de hachage
-empêcher une réinscription)            | irréversible de l'adresse e-mail
+empêcher une réinscription)            | irréversible de l'adresse e-mail et
+                                       | d'un hachage à clé du numéro de
+                                       | téléphone
 
 Nous ne pouvons conserver des données plus longtemps que si la loi l'exige, ou
 si cela est nécessaire pour une action en justice ou une enquête en cours (une
@@ -1138,6 +1265,13 @@ g) Les sauvegardes sont écrasées sous 90 jours.
 
 h) Nous conservons un bref justificatif de suppression (la date et le nombre
    d'éléments supprimés) afin de pouvoir prouver que la suppression a eu lieu.
+
+i) Votre numéro de téléphone est supprimé avec votre compte. Les informations
+   d'identité chiffrées issues d'une vérification au moyen d'une pièce
+   d'identité sont conservées pendant 6 mois après la clôture du compte, puis
+   supprimées (point 8.2 g). Si le compte a été banni, nous conservons les
+   hachages à clé de son adresse e-mail et de son numéro de téléphone
+   (section 14).
 
 15.3 Les pièces restant sur votre compte et toute durée d'abonnement restante
 sont perdues lorsque vous supprimez votre compte. Supprimer l'application ne
@@ -1323,6 +1457,10 @@ paramètres de votre appareil.
 - Contrôles côté serveur pour les achats et les pièces.
 - App Check contre les clients falsifiés.
 - Accès administrateur restreint et journalisé.
+- Informations d'identité issues de la vérification des documents conservées
+  sous forme chiffrée, dans un espace de stockage distinct que seuls quelques
+  membres du personnel habilités peuvent ouvrir, chaque accès étant
+  journalisé.
 - Clés et secrets conservés dans un gestionnaire de secrets.
 - Revues de sécurité régulières.
 
@@ -1381,8 +1519,9 @@ Catégorie (Cal. Civ. Code 1798.140)    | Collectée | Communiquée à des    | 
                                        |           | fins professionnelles| partagée
                                        |           | à                    |
 ---------------------------------------|-----------|----------------------|----------
-Identifiants (nom, e-mail, identifiant | Oui       | Prestataires de      | Non
-de compte, adresse IP)                 |           | services             |
+Identifiants (nom, e-mail, numéro de   | Oui       | Prestataires de      | Non
+téléphone, identifiant de compte,      |           | services             |
+adresse IP)                            |           |                      |
 Registres clients (1798.80)            | Oui       | Prestataires de      | Non
                                        |           | services             |
 Caractéristiques protégées (âge,       | Oui       | Prestataires de      | Non
@@ -1405,8 +1544,10 @@ recommandations)                       |           |                      |
 Informations personnelles sensibles    | Oui       | Prestataires de      | Non
 (géolocalisation précise, identifiants |           | services             |
 de connexion au compte, pièce          |           |                      |
-d'identité officielle lors de la       |           |                      |
-vérification, SSN/ITIN si un vendeur   |           |                      |
+d'identité officielle et informations  |           |                      |
+d'identité conservées chiffrées après  |           |                      |
+la vérification, SSN/ITIN si un        |           |                      |
+vendeur                                |           |                      |
 américain le fournit pour les          |           |                      |
 factures de frais)                     |           |                      |
 
@@ -1523,6 +1664,46 @@ point 1.3)
 ================================================================================
 HISTORIQUE DES VERSIONS
 ================================================================================
+
+5.3.1 - en vigueur le 17 octobre 2026 pour les comptes créés à partir du
+16 octobre 2026 ; le 16 novembre 2026 pour les comptes créés avant le
+16 octobre 2026 (annoncée le 17 octobre 2026)
+Vérification du téléphone et informations d'identité :
+- Nouveau point 6.5 : un numéro de téléphone mobile vérifié est exigé pour créer
+  un compte depuis le 16 octobre 2026 (numéros des pays européens sauf la Russie
+  et la Biélorussie, du Brésil, des États-Unis, du Canada et du Royaume-Uni) ;
+  les comptes créés avant le 16 octobre 2026 ne sont pas obligés d'en ajouter
+  un ; un numéro par compte ; Google Firebase Authentication envoie le SMS ; un
+  hachage à clé des numéros des comptes bannis (également points 2, 3.1, 4.2,
+  5, 12.2, 14, 15.2 et 22.1).
+- Points 3.1 d et 4.3 : un numéro de contact professionnel facultatif,
+  affiché sur la page professionnelle uniquement si l'entreprise l'active.
+- Points 8.2, 8.3 et 8.4 : la pièce d'identité est lue sur votre appareil et
+  contrôlée par un vérificateur ; toute image de pièce d'identité (y compris
+  une photo tenant le document et la pièce d'identité du propriétaire d'une
+  entreprise) est supprimée après l'examen, ou au bout de 7 jours si elle est
+  toujours en attente (vous pouvez la téléverser de nouveau) ; la pièce
+  d'identité du propriétaire d'une entreprise est facultative ; les informations
+  que vous confirmez sont conservées sous forme chiffrée dans un espace de
+  stockage à accès restreint, uniquement pour vous identifier lorsque la loi
+  l'exige, jusqu'à 6 mois après la clôture du compte (également
+  points 2, 3.1, 4.2, 4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 et 22.1).
+Précisions pour correspondre au fonctionnement de l'application :
+- Points 2, 5 et 9 : les fonctionnalités d'IA sont la traduction, la lecture
+  vocale et la translittération (les réponses suggérées et la décomposition
+  des mots ne sont pas proposées) ; les messages de chat sont traduits avec
+  les services de traduction de Google (Google Cloud Translation dans
+  l'application actuelle) ; les contenus publics sont traduits avec le
+  service de traduction de Google, et l'application peut demander ces
+  traductions directement ; traductions de chat conservées et cache anonyme
+  des phrases courtes (également point 14).
+- Point 8.1 : une pièce d'identité est facultative partout, y compris pour
+  publier dans une communauté et pour publier ou réserver des expériences.
+- Point 10.2 : un modérateur examine le cas avant que les signalements ne
+  cessent d'être traités ; les signalements concernant la sécurité des
+  enfants sont toujours traités.
+- Point 11.2 : Pix uniquement pour les paiements ponctuels ; abonnements par
+  carte.
 
 5.3.0 - en vigueur le 16 octobre 2026 pour les comptes créés à partir de cette
 date ; le 16 novembre 2026 pour les comptes créés avant le 16 octobre 2026

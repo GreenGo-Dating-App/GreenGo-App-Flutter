@@ -7798,7 +7798,7 @@
   "@aiConsentWhatSent": {
     "description": "AI consent sheet: data sent"
   },
-  "aiConsentWhy": "Why: only to produce the suggestion, translation or audio you asked for.",
+  "aiConsentWhy": "Why: only to produce the translation, audio, transliteration or reply you asked for.",
   "@aiConsentWhy": {
     "description": "AI consent sheet: purpose"
   },
@@ -8071,7 +8071,7 @@
   "@aiServicesWhatsIncluded": {
     "description": "Expandable list header: features controlled by the AI services switch"
   },
-  "aiServicesFeatureCoach": "Smart replies and the AI language coach (grammar, word breakdown, cultural tips)",
+  "aiServicesFeatureCoach": "Transliteration of messages written in non-Latin scripts into Latin letters (when cultural tips are on)",
   "@aiServicesFeatureCoach": {
     "description": "AI services switch: feature list item"
   },
@@ -12589,11 +12589,11 @@
   "@aiConsentTitleV2": {
     "description": "AI consent sheet title (v2: names Google and Anthropic)"
   },
-  "aiConsentIntroV2": "Smart replies, the AI language coach, translating messages you receive, read-aloud audio and the support assistant's automatic replies only work if GreenGo sends the text involved to these providers.",
+  "aiConsentIntroV2": "Translating messages you receive, read-aloud audio, transliterating messages written in non-Latin scripts (for example Japanese or Arabic) into Latin letters and the support assistant's automatic replies only work if GreenGo sends the text involved to these providers.",
   "@aiConsentIntroV2": {
     "description": "AI consent sheet intro (v2)"
   },
-  "aiConsentProvidersV2": "Who: Google Gemini (suggestions and coaching), Google Cloud Text-to-Speech (audio), Google Cloud Translation (translations) and Anthropic Claude (automatic replies from the support assistant).",
+  "aiConsentProvidersV2": "Who: Google's translation services (translations), Google Cloud Text-to-Speech (audio), Google Gemini (transliteration) and Anthropic Claude (automatic replies from the support assistant).",
   "@aiConsentProvidersV2": {
     "description": "AI consent sheet: named providers (v2, includes Anthropic)"
   },
@@ -14930,6 +14930,10 @@
   "legalUpdate531BulletFeeCaps": "Higher maximum GreenGo service fee per ticket for sellers: Silver US$30, Gold US$28, Platinum US$25",
   "@legalUpdate531BulletFeeCaps": {
     "description": "Terms 5.3.1 \"what changes\" bullet: higher GreenGo service fee caps per ticket (re-acceptance sheet and advance notice)."
+  },
+  "legalUpdate532BulletPhases": "Ticket price phases for events (for example early bird), and the 2026 launch offer: 50% off the first period of a new Membership",
+  "@legalUpdate532BulletPhases": {
+    "description": "Terms 5.3.2 \"what changes\" bullet: ticket price phases and the 2026 launch offer (re-acceptance sheet and advance notice)."
   },
   "legalUpdateCloseAccount": "I don't accept – close my account",
   "@legalUpdateCloseAccount": {

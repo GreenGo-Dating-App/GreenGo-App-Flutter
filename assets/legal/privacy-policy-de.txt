@@ -1,9 +1,10 @@
 DATENSCHUTZERKLÄRUNG VON GREENGO
 
-Version: 5.3.0
-Gültig ab: 16. Oktober 2026 für Konten, die ab diesem Tag erstellt werden;
-  16. November 2026 für Konten, die vor dem 16. Oktober 2026 erstellt wurden
-Angekündigt am: 16. Oktober 2026
+Version: 5.3.1
+Gültig ab: 17. Oktober 2026 für Konten, die ab dem 16. Oktober 2026 erstellt
+  werden; 16. November 2026 für Konten, die vor dem 16. Oktober 2026 erstellt
+  wurden
+Angekündigt am: 17. Oktober 2026
 Vorherige Version: 5.2.1 (16. Oktober 2026), die für vor dem 16. Oktober 2026
   erstellte Konten bis zum 15. November 2026 weiter gilt
 
@@ -83,19 +84,32 @@ Diese Erklärung gilt auch für sie.
   stattdessen einen Punkt, der höchstens etwa 100 m von deiner Position
   entfernt ist. Sie sehen niemals deine genauen Koordinaten, dein
   Geburtsdatum, deine Telefonnummer oder deine E-Mail-Adresse.
+- Seit dem 16. Oktober 2026 musst du, um ein Konto zu erstellen, eine
+  Mobiltelefonnummer per SMS verifizieren (ältere Konten müssen keine
+  hinzufügen). Deine Nummer ist privat und wird anderen Nutzern nie
+  angezeigt. Wenn wir ein Konto sperren, speichern wir nur einen Keyed Hash
+  seiner Nummer, damit es nicht zurückkehren kann.
 - Wir verkaufen deine personenbezogenen Daten NICHT. Wir verwenden sie NICHT für
   Werbung Dritter. In GreenGo gibt es keine Werbung.
 - Deine Nachrichten werden bei der Übertragung und im Ruhezustand verschlüsselt,
   sie sind aber NICHT Ende-zu-Ende-verschlüsselt.
   - Unsere Systeme können Nachrichteninhalte verarbeiten, zum Beispiel um sie
     auf deinen Wunsch zu übersetzen oder um eine gemeldete Nachricht zu prüfen.
-- Wenn du dein Alter mit einem Ausweisdokument bestätigst, löschen wir das Bild,
-  sobald die Prüfung abgeschlossen ist. Wir speichern nur das Ergebnis.
-- KI-Funktionen (Übersetzung, Vorlesen, intelligente Antworten und
-  Wortzerlegung) laufen über unsere Server. Sie nutzen Google-Dienste, und unser
-  Support-Assistent nutzt Claude von Anthropic. Wir bitten dich vor der ersten
-  Nutzung um deine Einwilligung, und der Support-Assistent ist deutlich als KI
-  gekennzeichnet.
+- Die Verifizierung mit einem Ausweisdokument ist freiwillig, außer wenn das
+  Gesetz strengere Alterskontrollen verlangt (Abschnitt 8.1). Wenn du sie
+  durchführst, liest die App das
+  Dokument auf deinem Gerät aus, ein Prüfer kontrolliert es, und danach
+  löschen wir das Bild. Die von dir bestätigten Angaben speichern wir
+  verschlüsselt in einem zugriffsbeschränkten Speicher, nur um dich zu
+  identifizieren, wenn das Gesetz es verlangt, bis 6 Monate nach der
+  Schließung deines Kontos.
+- KI-Funktionen (Übersetzung, Vorlesen und Transliteration von Nachrichten in
+  nicht-lateinischen Schriften) nutzen Google-Dienste, und unser
+  Support-Assistent nutzt Claude von Anthropic. Sie laufen über unsere Server,
+  mit einer Ausnahme: Die App kann den Übersetzungsdienst von Google direkt
+  bitten, öffentliche Inhalte zu übersetzen. Wir bitten dich um deine
+  Einwilligung, bevor sie zum ersten Mal deine privaten Inhalte verarbeiten,
+  und der Support-Assistent ist deutlich als KI gekennzeichnet.
 - Du kannst dein Konto jederzeit löschen:
   - in der App;
   - auf unserer Website unter https://greengochat.com/delete-account, indem du
@@ -111,8 +125,9 @@ Diese Erklärung gilt auch für sie.
 
 a) Kontodaten
    E-Mail-Adresse, Passwort (von unserem Authentifizierungsanbieter nur als
-   sicherer Hash gespeichert), Spitzname und Anzeigename, Geburtsdatum und die
-   Sprache, die du verwendest.
+   sicherer Hash gespeichert), Mobiltelefonnummer (verifiziert mit einem per
+   SMS gesendeten Code, siehe Abschnitt 6.5), Spitzname und Anzeigename,
+   Geburtsdatum und die Sprache, die du verwendest.
 
 b) Profildaten
    - Fotos, ein optionales Videoprofil und eine Sprachvorstellung.
@@ -136,15 +151,21 @@ c) Inhalte und Kommunikation
 
 d) Daten von Unternehmenskonten
    Name und Firmenname des Unternehmens, Kategorie, auf deiner Seite angezeigte
-   Adresse, Öffnungszeiten, Kontaktkanäle und, wenn du eine Verifizierung als
-   Unternehmen beantragst, die dafür erforderlichen Unterlagen (siehe Abschnitt
+   Adresse, Öffnungszeiten, Kontaktkanäle, eine optionale geschäftliche
+   Kontaktnummer (nicht verifiziert, es kann ein Festnetzanschluss sein;
+   privat, es sei denn, du schaltest ihre Anzeige auf deiner
+   Unternehmensseite ein) und, wenn du eine Verifizierung als Unternehmen
+   beantragst, die dafür erforderlichen Unterlagen (siehe Abschnitt
    8.4). Wenn du Tickets oder Erlebnisse verkaufst, auch deine
    Rechnungsdaten (siehe h unten) und, wenn du als Unternehmer handelst, deine
    Unternehmerangaben (siehe j unten).
 
 e) Verifizierungsdaten
    Ein Ausweisdokument und/oder ein Selfie, nur wenn du dich für eine
-   Verifizierung entscheidest. Siehe Abschnitt 8.
+   Verifizierung entscheidest. Wenn du dich mit einem Ausweisdokument
+   verifizierst, auch die daraus gelesenen und von dir bestätigten Angaben:
+   Vorname, Nachname, Geburtsdatum, Dokumentart, Ausstellungsland und
+   Dokumentnummer. Siehe Abschnitt 8.
 
 f) Kaufdaten
    - Was du gekauft hast, wann, der Preis und die Währung.
@@ -272,9 +293,9 @@ Personen, die du blockiert hast, können dein Profil nicht sehen.
 4.2 Wird anderen Nutzern nie angezeigt
 
 Deine genauen Koordinaten, dein Geburtsdatum, deine E-Mail-Adresse, deine
-Telefonnummer, dein Ausweisdokument, dein
-Verifizierungs-Selfie und die Fotos in deinem privaten Album (es sei denn, du
-gewährst jemandem Zugriff auf dein privates Album).
+Telefonnummer, dein Ausweisdokument und die daraus gelesenen
+Identitätsangaben, dein Verifizierungs-Selfie und die Fotos in deinem privaten
+Album (es sei denn, du gewährst jemandem Zugriff auf dein privates Album).
 
 4.3 Inhalte, die du teilst
 
@@ -283,7 +304,9 @@ gewährst jemandem Zugriff auf dein privates Album).
 - Beiträge in einer öffentlichen Community sind für alle sichtbar, die sie
   öffnen können.
 - Deine Unternehmensseite und die Erlebnisse, die du veröffentlichst, sind
-  öffentlich.
+  öffentlich. Deine geschäftliche Kontaktnummer wird auf deiner
+  Unternehmensseite nur angezeigt, wenn du dies einschaltest. Die
+  verifizierte Telefonnummer deines Kontos wird nie angezeigt.
 - Wenn du als Unternehmer verkaufst, werden deine Unternehmerangaben in
   deinen Angeboten angezeigt (Abschnitt 11.8).
 
@@ -296,8 +319,10 @@ erforderlich ist, zum Beispiel um:
 - eine Verifizierung zu prüfen;
 - eine rechtliche Verpflichtung zu erfüllen.
 
-Der Zugriff auf Ausweisdokumente ist auf leitende Administratoren beschränkt.
-Jeder Zugriff wird protokolliert.
+Der Zugriff auf Ausweisdokumente und auf die verschlüsselten
+Identitätsangaben, die wir nach der Prüfung aufbewahren (Abschnitt 8.2), ist
+auf eine kleine Zahl befugter leitender Administratoren beschränkt. Jeder
+Zugriff wird protokolliert.
 
 ================================================================================
 5. WARUM WIR DEINE DATEN VERWENDEN UND UNSERE RECHTSGRUNDLAGEN
@@ -310,7 +335,8 @@ Rechtsgrundlage. In der Tabelle:
 
 Zweck                                | Was wir verwenden          | Rechtsgrundlage
 -------------------------------------|----------------------------|--------------------------------------
-1. Dein Konto erstellen und führen   | Konto-, Gerätedaten        | Vertrag (DSGVO 6(1)(b); LGPD 7 V)
+1. Dein Konto erstellen und führen   | Kontodaten, Telefonnummer, | Vertrag (DSGVO 6(1)(b); LGPD 7 V)
+                                     | Gerätedaten                |
 2. Dein Profil anzeigen und es       | Profil, ungefährer         | Vertrag (DSGVO 6(1)(b); LGPD 7 V)
    Menschen ermöglichen, einander,   | Standort, Alter, Nutzung   |
    Communities, Events und Erlebnisse|                            |
@@ -322,10 +348,11 @@ Zweck                                | Was wir verwenden          | Rechtsgrundl
 4. Nachrichten, Gruppen, Communities,| Inhalte, Konto             | Vertrag (DSGVO 6(1)(b); LGPD 7 V)
    Events, Buchungen                 |                            |
 5. KI-Funktionen: Übersetzung,       | Der Text, den du           | Vertrag, nach deiner Einwilligung in
-   Vorlesen, intelligente Antworten, | verarbeiten lassen         | die KI-Funktion (DSGVO 6(1)(a)/(b);
-   Wortzerlegung                     | möchtest                   | LGPD 7 I/V). Siehe Abschnitt 9.
-6. Altersverifizierung mit einem     | Ausweisbild, daraus        | Ausdrückliche Einwilligung (DSGVO
-   Ausweisdokument                   | gelesenes Geburtsdatum     | 9(2)(a); LGPD 11 I). Siehe Abschnitt 8.
+   Vorlesen, Transliteration         | verarbeiten lassen         | die KI-Funktion (DSGVO 6(1)(a)/(b);
+                                     | möchtest                   | LGPD 7 I/V). Siehe Abschnitt 9.
+6. Alters- und Identitäts-           | Ausweisbild; die daraus    | Ausdrückliche Einwilligung (DSGVO
+   verifizierung mit einem           | gelesenen und von dir      | 9(2)(a); LGPD 11 I). Siehe Abschnitt 8.
+   Ausweisdokument                   | bestätigten Angaben        |
 7. Selfie-Verifizierung              | Selfie, Profilfotos        | Ausdrückliche Einwilligung (DSGVO
                                      |                            | 9(2)(a); LGPD 11 I)
 8. Käufe, Münzen, Mitgliedschaften,  | Kaufdaten, Münzbuch        | Vertrag (DSGVO 6(1)(b); LGPD 7 V)
@@ -392,6 +419,17 @@ Zweck                                | Was wir verwenden          | Rechtsgrundl
     Meldungen senden (Abschnitt      | Verwarnungen               | berechtigtes Interesse an einem
     10.2)                            |                            | funktionierenden Meldesystem
                                      |                            | (DSGVO 6(1)(f); LGPD 7 IX)
+24. Telefonnummer verifizieren, nur  | Telefonnummer; Keyed Hashes| Vertrag (DSGVO 6(1)(b); LGPD 7 V);
+    ein Konto pro Nummer zulassen    | der E-Mail-Adresse und der | berechtigte Interessen an einem
+    und Rückkehr gesperrter Nutzer   | Telefonnummer gesperrter   | sicheren Dienst ohne gesperrte
+    verhindern (Abschnitt 6.5)       | Konten                     | Nutzer (DSGVO 6(1)(f); LGPD 7 IX)
+25. Eine Person identifizieren, wenn | Verschlüsselte             | Rechtliche Verpflichtung, soweit das
+    das Gesetz es verlangt:          | Identitätsangaben (8.2),   | Gesetz es verlangt (DSGVO 6(1)(c);
+    gerichtliche Anordnungen,        | Telefonnummer, Kontodaten  | LGPD 7 II); ansonsten berechtigte
+    Anfragen der Polizei oder        |                            | Interessen am Schutz der Nutzer und
+    anderer zuständiger Behörden,    |                            | an der Verteidigung von
+    Rechtsansprüche, schwere         |                            | Rechtsansprüchen (DSGVO 6(1)(f);
+    Sicherheitsfälle (Abschnitt 8.2) |                            | LGPD 7 IX)
 
 Wo wir uns auf berechtigte Interessen stützen, haben wir unser Interesse gegen
 deine Rechte abgewogen. Du kannst uns um diese Abwägung bitten. Du kannst
@@ -404,7 +442,9 @@ oder widerrufst:
 - für eine KI-Funktion, kannst du diese KI-Funktion nicht nutzen, aber der Rest
   von GreenGo funktioniert weiter;
 - für die Verifizierung, verlierst du nur die Funktionen, die eine
-  Verifizierung erfordern (siehe Abschnitt 8).
+  Verifizierung erfordern (siehe Abschnitt 8). Die von dir bereits
+  bestätigten Identitätsangaben werden für den Zweck in Zeile 25 und für den
+  Zeitraum in Abschnitt 8.2 g aufbewahrt.
 
 ================================================================================
 6. KONTO, PROFIL UND ENTDECKEN
@@ -435,6 +475,24 @@ dir für Dritte.
   Nachdem du sie ausgeschaltet hast, verwenden wir deine Inhalte nicht in
   neuer Werbung oder neuem Marketing.
 - Wir speichern deine Entscheidung und wann du sie getroffen hast.
+
+6.5 Telefonnummer
+a) Seit dem 16. Oktober 2026 musst du, um ein Konto zu erstellen, eine
+   Mobiltelefonnummer verifizieren. Wir senden dir einen Code per SMS über
+   Google Firebase Authentication, unseren Anmeldeanbieter. Wenn dein Konto
+   vor dem 16. Oktober 2026 erstellt wurde, musst du keine Telefonnummer
+   hinzufügen: Du kannst eine hinzufügen, wenn du möchtest, und alle
+   Funktionen funktionieren auch ohne sie weiter.
+b) Die Telefonverifizierung ist für Nummern aus europäischen Ländern (außer
+   Russland und Belarus), Brasilien, den Vereinigten Staaten, Kanada und dem
+   Vereinigten Königreich verfügbar. Ohne eine solche Nummer kannst du noch
+   kein Konto erstellen.
+c) Deine Nummer wird im privaten Bereich deines Kontos gespeichert. Sie wird
+   anderen Nutzern nie angezeigt, und wir verwenden sie nicht für Marketing.
+d) Eine Nummer kann nur mit einem Konto verknüpft werden. Wenn wir ein Konto
+   sperren, speichern wir einen Keyed Hash seiner Telefonnummer (einen Code,
+   aus dem sich die Nummer nicht zurücklesen lässt), damit mit der Nummer
+   kein neues Konto erstellt werden kann (Abschnitt 14).
 
 ================================================================================
 7. STANDORT
@@ -491,9 +549,9 @@ und den angezeigten Kartenausschnitt erhalten, nicht aber deine Kontodaten.
 8.1 Wann wir danach fragen
 
 GreenGo ist für Erwachsene (18+). Alle geben bei der Registrierung ihr
-Geburtsdatum an. Ein Ausweisdokument verlangen wir nur in diesen Fällen:
-- bevor du in einer Community veröffentlichst;
-- bevor du als Gastgeber ein kostenpflichtiges Erlebnis veröffentlichst;
+Geburtsdatum an. Die Verifizierung mit einem Ausweisdokument ist freiwillig,
+auch für das Veröffentlichen in einer Community und für das Veröffentlichen
+oder Buchen von Erlebnissen. Ein Ausweisdokument können wir nur verlangen:
 - wenn das Gesetz an deinem Wohnort strengere Alterskontrollen verlangt;
 - wenn wir einen konkreten Grund zu der Annahme haben, dass ein Konto einer
   Person unter 18 Jahren gehört.
@@ -503,26 +561,46 @@ Geburtsdatum an. Ein Ausweisdokument verlangen wir nur in diesen Fällen:
 a) Bevor du hochlädst, erklären wir dir, was passieren wird, und bitten um
    deine ausdrückliche Einwilligung.
 
-b) Das Bild wird an Google Cloud Vision gesendet, das den Text auf dem Dokument
-   liest, damit wir das Geburtsdatum finden können. Google handelt in unserem
-   Auftrag und speichert danach nichts.
+b) Die App liest den Text auf dem Dokument auf deinem Gerät aus und trägt
+   deinen Vornamen, Nachnamen, dein Geburtsdatum, die Dokumentart, das
+   Ausstellungsland und die Dokumentnummer ein. Du prüfst diese Angaben und
+   bestätigst sie.
 
-c) Ist die automatische Prüfung eindeutig, wird das Bild GELÖSCHT, sobald die
-   Entscheidung getroffen ist.
+c) Ein geschulter Mitarbeiter gleicht die von dir bestätigten Angaben mit dem
+   Bild des Dokuments ab.
 
-d) Ist die automatische Prüfung nicht eindeutig, kann ein geschulter
-   Mitarbeiter das Bild ansehen. In diesem Fall wird das Bild höchstens 7 Tage
-   lang aufbewahrt und dann GELÖSCHT, unabhängig vom Ergebnis.
+d) Das Bild wird GELÖSCHT, sobald die Prüfung abgeschlossen ist. Wartet es
+   nach 7 Tagen noch auf die Prüfung, wird es unabhängig vom Ergebnis
+   GELÖSCHT, und du kannst es erneut hochladen. Das gilt für jedes Bild eines
+   Ausweisdokuments, einschließlich des Fotos, auf dem du dein
+   Ausweisdokument hältst und das du bei der Registrierung hinzufügen kannst
+   (8.3), und des Ausweisdokuments eines Unternehmensinhabers (8.4).
 
-e) Nach der Löschung speichern wir nur:
-   - ob dein Alter verifiziert wurde (ja oder nein);
-   - die Methode;
-   - das Datum der Prüfung;
-   - dein Geburtsjahr.
+e) Nach der Prüfung speichern wir:
+   - ob dein Alter verifiziert wurde (ja oder nein), die Methode, das Datum
+     der Prüfung und dein Geburtsjahr;
+   - die von dir bestätigten Angaben (Vorname, Nachname, Geburtsdatum,
+     Dokumentart, Ausstellungsland und Dokumentnummer), VERSCHLÜSSELT und
+     getrennt von deinem Profil in einem zugriffsbeschränkten Speicher.
 
-   Wir speichern weder das Bild noch deinen auf dem Dokument aufgedruckten
-   Namen, die Dokumentnummer, deine Staatsangehörigkeit oder das Ablaufdatum
-   des Dokuments.
+   Wir speichern weder das Bild noch deine Staatsangehörigkeit oder das
+   Ablaufdatum des Dokuments.
+
+f) Wir verwenden die verschlüsselten Angaben nur, um dich zu identifizieren,
+   wenn das Gesetz es verlangt: um eine gültige gerichtliche Anordnung oder
+   eine Anfrage der Polizei oder einer anderen zuständigen Behörde zu
+   beantworten; um in einem schweren Fall Leben oder Sicherheit eines
+   Menschen zu schützen; oder um Rechtsansprüche geltend zu machen,
+   auszuüben oder zu verteidigen (Abschnitt 12.5). Nur eine kleine Zahl
+   befugter Mitarbeiter kann darauf zugreifen, und jeder Zugriff wird
+   protokolliert. Wir zeigen sie niemals anderen Nutzern und verwenden sie
+   niemals für etwas anderes, zum Beispiel für Marketing oder Profiling.
+
+g) Wir bewahren die verschlüsselten Angaben auf, solange dein Konto besteht,
+   und 6 Monate nach seiner Schließung (der Zeitraum, für den der
+   brasilianische Marco Civil da Internet die Aufbewahrung von
+   Zugriffsprotokollen vorschreibt, Art. 15). Länger bewahren wir sie nur
+   bei einer „Legal Hold“ auf (Abschnitt 14).
 
 8.3 Selfie-Verifizierung
 
@@ -531,7 +609,9 @@ Mitarbeiter vergleicht es mit deinen Profilfotos. Wir löschen das Selfie nach
 der Prüfung und speichern nur das Ergebnis (verifiziert oder nicht). Wir
 erstellen aus deinem Selfie keine Gesichtsvorlage und keine anderen
 biometrischen Identifikatoren, und wir nutzen keine Gesichtserkennung, um dich
-zu identifizieren.
+zu identifizieren. Ein Foto, auf dem du dein Ausweisdokument hältst, ist ein
+Bild eines Ausweisdokuments: Dafür gelten die Regeln in 8.2, einschließlich
+der Löschung spätestens nach 7 Tagen.
 
 Auf deinem Gerät prüft die App vor dem Hochladen eines Fotos, ob ein Gesicht
 sichtbar ist, und untersucht es auf Nacktheit. Diese Prüfung läuft vollständig
@@ -540,9 +620,13 @@ Google gesendet, und es werden keine Gesichtsdaten gespeichert.
 
 8.4 Unternehmensverifizierung
 
-Um ein Unternehmenskonto zu verifizieren, können wir die Registerangaben des
-Unternehmens und ein Ausweisdokument der Person verlangen, die es führt. Für
-das Ausweisdokument des Inhabers gelten dieselben Regeln wie in 8.2. Die
+Ein Unternehmenskonto braucht kein Ausweisdokument. Um ein Unternehmenskonto
+zu verifizieren, können wir die
+Registerangaben des Unternehmens verlangen. Ein Ausweisdokument der Person,
+die es führt, ist freiwillig. Legt der Inhaber eines vor, gelten dafür
+dieselben Regeln wie in 8.2: Das Bild wird nach der Prüfung gelöscht
+(spätestens nach 7 Tagen), und die bestätigten Angaben werden verschlüsselt
+und nur für rechtliche Anfragen aufbewahrt. Die
 Registerangaben des Unternehmens speichern wir, solange die Unternehmensseite
 besteht, und 6 Monate darüber hinaus, weil der EU Digital Services Act von uns
 verlangt, Unternehmer identifizieren zu können, die Verbrauchern Leistungen
@@ -552,7 +636,8 @@ anbieten.
 
 Du kannst deine Einwilligung zur Verifizierung verweigern oder widerrufen. Du
 kannst dann die in 8.1 genannten Funktionen, die sie erfordern, nicht nutzen.
-Dein Konto wird nicht gelöscht.
+Dein Konto wird nicht gelöscht. Die von dir bereits bestätigten
+Identitätsangaben werden wie in 8.2 f und g beschrieben aufbewahrt.
 
 8.6 Hinweis für Einwohner von Illinois, Texas und anderen US-Bundesstaaten mit
 Biometrie-Gesetzen
@@ -583,14 +668,18 @@ anderweitig daraus Gewinn ziehen.
 
 Funktion                         | Anbieter (in unserem Auftrag)   | Was gesendet wird
 ---------------------------------|---------------------------------|----------------------------
-Übersetzung von Nachrichten      | Google Cloud Translation        | Der zu übersetzende Text
-Übersetzung öffentlicher Inhalte | Google Cloud Translation, über  | Nur der Text, ohne
-(Events, Communities, Angebote)  | einen gemeinsamen Cache auf     | personenbezogene Daten
-                                 | unseren Servern                 |
+Übersetzung von Chatnachrichten  | Übersetzungsdienste von Google  | Der zu übersetzende Text
+                                 | (Google Cloud Translation in    | und die Zielsprache
+                                 | der aktuellen App)              |
+Übersetzung öffentlicher Inhalte | Übersetzungsdienst von Google,  | Nur der Text, ohne
+(Events, Communities, Angebote)  | über einen gemeinsamen Speicher | personenbezogene Daten
+                                 | auf unseren Servern; fehlt dort |
+                                 | eine Übersetzung, kann die App  |
+                                 | sie direkt bei Google anfordern,|
+                                 | das dann deine IP-Adresse sieht |
 Vorlesen (Text-to-Speech)        | Google Cloud Text-to-Speech     | Der vorzulesende Text
-Intelligente Antworten,          | Google Gemini (kostenpflichtige | Die Nachricht oder der
-Kulturtipps, Wortzerlegung       | API)                            | Text, den du auswählst,
-                                 |                                 | und die Sprachen
+Transliteration von Nachrichten  | Google Gemini (kostenpflichtige | Der Nachrichtentext und
+in nicht-lateinischen Schriften  | API)                            | seine Sprache
 Support-Assistent                | Anthropic Claude                | Deine Nachrichten an den
                                  |                                 | Support
 Bild- und Textmoderation         | Google Cloud Vision und Natural | Hochgeladene Bilder; auf
@@ -598,21 +687,31 @@ Bild- und Textmoderation         | Google Cloud Vision und Natural | Hochgeladen
 
 9.2 So funktioniert es
 
-- Alle KI-Anfragen gehen von unseren Servern an den Anbieter. Deine App
-  kommuniziert nicht direkt mit dem KI-Anbieter.
-- Die Anbieter handeln als unsere Auftragsverarbeiter. Wir nutzen sie zu ihren
-  kostenpflichtigen Geschäftsbedingungen, nach denen sie deine Daten nicht zum
-  Training ihrer Modelle verwenden.
+- KI-Anfragen gehen von unseren Servern an den Anbieter. Die einzige Ausnahme
+  ist die Übersetzung öffentlicher Inhalte: Ist sie nicht in unserem
+  gemeinsamen Speicher, kann die App sie direkt beim Übersetzungsdienst von
+  Google anfordern. Deine privaten Inhalte werden nie von deinem Gerät an
+  einen KI-Anbieter gesendet.
+- Für deine privaten Inhalte handeln die Anbieter als unsere
+  Auftragsverarbeiter. Wir nutzen sie zu ihren kostenpflichtigen
+  Geschäftsbedingungen, nach denen sie deine Daten nicht zum Training ihrer
+  Modelle verwenden.
 - Bevor KI-Funktionen zum ersten Mal deine privaten Inhalte verarbeiten (zum
-  Beispiel die Übersetzung von Chatnachrichten, das Vorlesen und der
-  KI-Assistent), zeigen wir dir, welcher Anbieter genutzt wird und was
-  gesendet wird, und bitten um deine Einwilligung. Du kannst dies in den
-  Einstellungen ändern.
-- Öffentliche Inhalte, etwa Events, Communities und Angebote, werden mit
-  Google Cloud Translation über einen gemeinsamen Cache auf unseren Servern
-  übersetzt. Gesendet wird nur der Text, ohne personenbezogene Daten, und die
-  Übersetzung wird für alle gespeichert, die diese Inhalte ansehen. Dafür ist
-  deine Einwilligung nicht nötig.
+  Beispiel die Übersetzung von Chatnachrichten, das Vorlesen, die
+  Transliteration und der KI-Assistent), zeigen wir dir, welcher Anbieter
+  genutzt wird und was gesendet wird, und bitten um deine Einwilligung. Du
+  kannst dies in den Einstellungen ändern.
+- Öffentliche Inhalte, etwa Events, Communities und Angebote, werden mit dem
+  Übersetzungsdienst von Google über einen gemeinsamen Speicher auf unseren
+  Servern übersetzt. Gesendet wird nur der Text, ohne personenbezogene Daten,
+  und die Übersetzung wird für alle gespeichert, die diese Inhalte ansehen.
+  Dafür ist deine Einwilligung nicht nötig.
+- Übersetzungen von Chatnachrichten werden zusammen mit der Nachricht
+  gespeichert, damit sie nicht erneut angefordert werden müssen.
+  Übersetzungen kurzer Sätze ohne persönliche Angaben (keine Zahlen, Links,
+  E-Mail-Adressen oder @Namen) werden außerdem bis zu 180 Tage in einem
+  anonymen gemeinsamen Cache aufbewahrt, ohne die ursprüngliche Nachricht und
+  ohne Verbindung zu dir.
 - Von KI erstellte oder veränderte Inhalte werden gekennzeichnet, zum Beispiel
   mit „Übersetzt“. KI-Ergebnisse können Fehler enthalten. Verlass dich bei
   wichtigen Entscheidungen nicht darauf.
@@ -671,9 +770,11 @@ Wir nutzen automatisierte Werkzeuge, um GreenGo sicher zu halten:
 - Meldungen zur Sicherheit von Kindern werden vorrangig bearbeitet.
 - Wir teilen dir mit, wenn wir deine Meldung geprüft haben.
 - Wenn jemand häufig offensichtlich unbegründete Meldungen sendet, zählen wir
-  seine unbegründeten Meldungen über 12 Monate. Wir verwarnen ihn und
-  bearbeiten, wenn er weitermacht, seine Meldungen 30 Tage lang nicht (DSA
-  art. 23; Allgemeine Geschäftsbedingungen, Abschnitt 18.6).
+  seine unbegründeten Meldungen über 12 Monate. Wir verwarnen ihn, und wenn er
+  weitermacht, prüft ein Moderator den Fall und kann die Bearbeitung seiner
+  Meldungen für 30 Tage aussetzen (DSA art. 23; Allgemeine
+  Geschäftsbedingungen, Abschnitt 18.6). Meldungen zur Kindersicherheit
+  werden immer bearbeitet.
 
 10.3 Sexuelle Ausbeutung von Kindern
 
@@ -732,8 +833,9 @@ Wir nutzen automatisierte Werkzeuge, um GreenGo sicher zu halten:
 11.2 Im Web
 
 - Käufe erfolgen über Stripe. Du gibst deine Zahlungsdaten auf der eigenen
-  sicheren Seite von Stripe ein: Karten und, bei Zahlungen in brasilianischen
-  Reais, Pix.
+  sicheren Seite von Stripe ein: Karten und, bei einmaligen Zahlungen in
+  brasilianischen Reais (zum Beispiel Coins), Pix. Mitgliedschaften werden
+  per Karte bezahlt.
 - Wir erhalten deine Stripe-Kundennummer, den Betrag, die Währung, dein Land
   und den Zahlungsstatus. Deine vollständige Kartennummer erhalten wir nie.
 - Wir speichern einen Nachweis deiner Zustimmung zur sofortigen Bereitstellung
@@ -874,8 +976,10 @@ Anbieter                         | Was sie für uns tun               | Standort
 ---------------------------------|-----------------------------------|----------|---------------------------
 Google LLC / Google Cloud,       | Hosting, Datenbank, Datei-        | USA,     | EU-SCC, EU-US Data Privacy
 Firebase                         | speicherung, Serverfunktionen,    | weltweit | Framework; ANPD-Klauseln
-                                 | Anmeldung, Push-Benachrichti-     |          |
-                                 | gungen, Sicherheitsprüfungen      |          |
+                                 | Anmeldung und SMS-Codes für die   |          |
+                                 | Telefonverifizierung (Firebase    |          |
+                                 | Authentication), Push-Benachrich- |          |
+                                 | tigungen, Sicherheitsprüfungen    |          |
                                  | (App Check), Analysen und         |          |
                                  | Absturzberichte, Protokollierung  |          |
 Google Cloud AI services         | Vision (Dokumenttext, Bild-       | USA      | Wie oben
@@ -935,6 +1039,8 @@ ist:
 - um das Leben oder die Sicherheit eines Menschen zu schützen;
 - um Rechtsansprüche geltend zu machen, auszuüben oder zu verteidigen.
 
+Dies kann deine Telefonnummer und die verschlüsselten Identitätsangaben aus
+einer Verifizierung mit einem Ausweisdokument (Abschnitt 8.2) umfassen.
 Soweit gesetzlich zulässig, informieren wir dich über die Anfrage.
 
 12.6 Unternehmensveränderungen
@@ -983,15 +1089,22 @@ sie oder anonymisieren sie, sodass sie dich nicht mehr identifizieren können.
 Daten                                  | Dauer
 ---------------------------------------|----------------------------------------
 Konto und Profil                       | Bis du dein Konto löschst
+Telefonnummer (6.5)                    | Bis du dein Konto löschst
 Genauer Standort                       | Wird bei jeder Aktualisierung
                                        | überschrieben; mit dem Konto gelöscht
 Nachrichten und Medien                 | Bis du oder das Gespräch sie löscht
                                        | oder du dein Konto löschst (siehe
                                        | Abschnitt 15)
-Bild des Ausweisdokuments              | Gelöscht, sobald über die Prüfung
-                                       | entschieden ist, oder nach höchstens
-                                       | 7 Tagen, wenn eine Person sie prüfen
-                                       | muss
+Bilder von Ausweisdokumenten (auch     | Gelöscht, sobald die Prüfung
+ein Foto, auf dem du das Dokument      | abgeschlossen ist, spätestens nach 7
+hältst, und Dokumente von              | Tagen unabhängig vom Ergebnis (du
+Unternehmensinhabern)                  | kannst es dann erneut hochladen)
+Von dir bestätigte Identitätsangaben   | Solange dein Konto besteht und 6
+(Vorname, Nachname, Geburtsdatum,      | Monate nach seiner Schließung
+Dokumentart, Ausstellungsland und      | (Aufbewahrungsfrist für
+Dokumentnummer), verschlüsselt (8.2)   | Zugriffsprotokolle nach dem Marco
+                                       | Civil da Internet); länger nur bei
+                                       | einer „Legal Hold“
 Ergebnis der Altersverifizierung       | Bis du dein Konto löschst
 (ja/nein, Methode, Datum, Geburtsjahr) |
 Verifizierungs-Selfie                  | Nach der Prüfung gelöscht; das
@@ -1020,6 +1133,8 @@ Unternehmerangaben von Verkäufern      | Solange du als Unternehmer verkaufst,
 (11.8)                                 | und 6 Monate danach
 Vorlese-Audio-Cache (9.2)              | Anonym, nicht mit dir verbunden; wird
                                        | aufbewahrt, solange er genutzt wird
+Übersetzungen von Chatnachrichten      | Mit der Nachricht; kurze Sätze im
+(9.2)                                  | anonymen Cache: bis zu 180 Tage
 Meldungen und Beweise zum Kinderschutz | Mindestens 1 Jahr oder länger, wenn das
                                        | Gesetz oder eine Behörde es verlangt
 Einwilligungs- und Annahmenachweise,   | Solange dein Konto besteht und 5 Jahre
@@ -1039,7 +1154,8 @@ Dienste)                               | vorgeschrieben
 Sonstige Server-Sicherheitsprotokolle  | 30 Tage
 Backups                                | Innerhalb von 90 Tagen überschrieben
 Aufzeichnungen gesperrter Konten (zur  | 5 Jahre, gespeichert als Einweg-Hash
-Verhinderung einer Neuregistrierung)   | der E-Mail-Adresse
+Verhinderung einer Neuregistrierung)   | der E-Mail-Adresse und als Keyed Hash
+                                       | der Telefonnummer
 
 Wir dürfen Daten nur dann länger aufbewahren, wenn das Gesetz es verlangt oder
 wenn sie für einen anhängigen Rechtsanspruch oder eine Untersuchung benötigt
@@ -1098,6 +1214,12 @@ g) Backups werden innerhalb von 90 Tagen überschrieben.
 
 h) Wir bewahren eine kurze Löschbestätigung auf (das Datum und die Anzahl der
    entfernten Elemente), um nachweisen zu können, dass die Löschung erfolgt ist.
+
+i) Deine Telefonnummer wird mit deinem Konto gelöscht. Die verschlüsselten
+   Identitätsangaben aus einer Verifizierung mit einem Ausweisdokument werden
+   6 Monate nach der Schließung des Kontos aufbewahrt und dann gelöscht
+   (Abschnitt 8.2 g). Wurde das Konto gesperrt, speichern wir die Keyed
+   Hashes seiner E-Mail-Adresse und Telefonnummer (Abschnitt 14).
 
 15.3 Verbleibende Münzen in deinem Konto und verbleibende Mitgliedschaftszeit
 verfallen, wenn du dein Konto löschst. Das Löschen der App löscht nicht dein
@@ -1279,6 +1401,9 @@ sie benötigt. Du kannst sie jederzeit in den Einstellungen deines Geräts
 - Serverseitige Prüfungen für Käufe und Münzen.
 - App Check gegen gefälschte Clients.
 - Eingeschränkter, protokollierter Administratorzugriff.
+- Identitätsangaben aus der Dokumentenverifizierung werden verschlüsselt in
+  einem separaten Speicher aufbewahrt, den nur wenige befugte Mitarbeiter
+  öffnen können, und jeder Zugriff wird protokolliert.
 - Schlüssel und Geheimnisse werden in einem Secrets Manager verwahrt.
 - Regelmäßige Sicherheitsüberprüfungen.
 
@@ -1337,7 +1462,7 @@ Kategorie (Cal. Civ. Code 1798.140)    | Erhoben   | Offengelegt für einen| Ver
                                        |           |                      | geteilt
 ---------------------------------------|-----------|----------------------|--------
 Identifikatoren (Name, E-Mail,         | Ja        | Dienstleister        | Nein
-Konto-ID, IP-Adresse)                  |           |                      |
+Telefonnummer, Konto-ID, IP-Adresse)   |           |                      |
 Kundendatensätze (1798.80)             | Ja        | Dienstleister        | Nein
 Geschützte Merkmale (Alter, Geschlecht)| Ja        | Dienstleister        | Nein
 Kommerzielle Informationen (Käufe)     | Ja        | Dienstleister,       | Nein
@@ -1354,8 +1479,10 @@ Empfehlungen)                          |           |                      |
 Sensible personenbezogene              | Ja        | Dienstleister        | Nein
 Informationen (genaue                  |           |                      |
 Geolokalisierung, Kontoanmeldung,      |           |                      |
-amtlicher Ausweis bei der              |           |                      |
-Verifizierung, SSN/ITIN, wenn ein      |           |                      |
+amtlicher Ausweis und die nach der     |           |                      |
+Verifizierung verschlüsselt            |           |                      |
+gespeicherten Ausweisangaben,          |           |                      |
+SSN/ITIN, wenn ein                     |           |                      |
 US-Verkäufer sie für Gebühren-         |           |                      |
 rechnungen angibt)                     |           |                      |
 
@@ -1470,6 +1597,49 @@ Vertreter in der EU und im Vereinigten Königreich: werden derzeit benannt
 ================================================================================
 VERSIONSVERLAUF
 ================================================================================
+
+5.3.1 - gültig ab 17. Oktober 2026 für Konten, die ab dem 16. Oktober 2026
+erstellt werden; ab 16. November 2026 für vor dem 16. Oktober 2026 erstellte
+Konten (angekündigt am 17. Oktober 2026)
+Telefonverifizierung und Identitätsangaben:
+- Neuer Abschnitt 6.5: Eine verifizierte Mobiltelefonnummer ist seit dem
+  16. Oktober 2026 erforderlich, um ein Konto zu erstellen (Nummern aus
+  europäischen Ländern außer Russland und Belarus, Brasilien, den
+  Vereinigten Staaten, Kanada und dem Vereinigten Königreich); vor dem
+  16. Oktober 2026 erstellte Konten müssen keine hinzufügen; eine Nummer
+  pro Konto; Google Firebase
+  Authentication sendet die SMS; ein Keyed Hash der Nummern gesperrter Konten
+  (auch Abschnitte 2, 3.1, 4.2, 5, 12.2, 14, 15.2 und 22.1).
+- Abschnitte 3.1 d und 4.3: eine optionale geschäftliche Kontaktnummer, die
+  nur auf der Unternehmensseite angezeigt wird, wenn das Unternehmen sie
+  einschaltet.
+- Abschnitte 8.2, 8.3 und 8.4: Das Ausweisdokument wird auf deinem Gerät
+  ausgelesen und von einem Prüfer kontrolliert; jedes Bild eines
+  Ausweisdokuments (auch ein Foto, auf dem man das Dokument hält, und das
+  Dokument eines Unternehmensinhabers) wird nach der Prüfung oder nach
+  7 Tagen, wenn sie noch aussteht, gelöscht (du kannst es erneut hochladen);
+  das Ausweisdokument eines Unternehmensinhabers ist freiwillig; die von
+  dir bestätigten
+  Angaben werden verschlüsselt in einem zugriffsbeschränkten Speicher
+  aufbewahrt, nur um dich zu identifizieren, wenn das Gesetz es verlangt,
+  bis 6 Monate nach der Schließung des Kontos (auch Abschnitte 2, 3.1, 4.2,
+  4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 und 22.1).
+Klarstellungen, damit die Erklärung der Funktionsweise der App entspricht:
+- Abschnitte 2, 5 und 9: Die KI-Funktionen sind Übersetzung, Vorlesen und
+  Transliteration (intelligente Antworten und Wortzerlegung werden nicht
+  angeboten); Chatnachrichten werden mit den Übersetzungsdiensten von Google
+  übersetzt (Google Cloud Translation in der aktuellen App); öffentliche
+  Inhalte werden mit dem Übersetzungsdienst von Google übersetzt, und die App
+  kann solche Übersetzungen direkt anfordern; gespeicherte
+  Chat-Übersetzungen und der anonyme Cache für kurze Sätze (auch
+  Abschnitt 14).
+- Abschnitt 8.1: Ein Ausweisdokument ist überall freiwillig, auch für das
+  Veröffentlichen in einer Community und für das Veröffentlichen oder Buchen
+  von Erlebnissen.
+- Abschnitt 10.2: Ein Moderator prüft den Fall, bevor Meldungen nicht mehr
+  bearbeitet werden; Meldungen zur Kindersicherheit werden immer bearbeitet.
+- Abschnitt 11.2: Pix nur für einmalige Zahlungen; Mitgliedschaften per
+  Karte.
 
 5.3.0 - gültig ab 16. Oktober 2026 für Konten, die ab diesem Tag erstellt
 werden; ab 16. November 2026 für vor dem 16. Oktober 2026 erstellte Konten

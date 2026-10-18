@@ -1,9 +1,10 @@
 TERMOS E CONDIÇÕES DO GREENGO
 
-Versão: 5.3.1
-Data de vigência: 16 de outubro de 2026 para contas criadas a partir dessa data;
-  16 de novembro de 2026 para contas criadas antes de 16 de outubro de 2026
-Anunciada em: 16 de outubro de 2026
+Versão: 5.3.2
+Data de vigência: 17 de outubro de 2026 para contas criadas a partir de
+  16 de outubro de 2026; 16 de novembro de 2026 para contas criadas antes de
+  16 de outubro de 2026
+Anunciada em: 17 de outubro de 2026
 Versão anterior: 5.2.1 (16 de outubro de 2026), que continua valendo para contas
   criadas antes de 16 de outubro de 2026 até 15 de novembro de 2026
 
@@ -71,10 +72,19 @@ data de nascimento. Se você tiver menos de 18 anos, não poderá criar uma cont
 impedido de usar os Serviços pela lei do seu país ou por sanções.
 
 3.3 Você não pode usar o GreenGo se já tivermos encerrado a sua conta por uma
-violação grave destes Termos, a menos que permitamos o seu retorno.
+violação grave destes Termos, a menos que permitamos o seu retorno. Para
+impedir o retorno de usuários banidos, guardamos uma forma protegida (um hash
+com chave) do endereço de e-mail e do número de telefone das contas banidas
+(Política de Privacidade, seção 14).
 
 3.4 Uma pessoa, uma conta pessoal. Uma Conta empresarial não é uma conta
 separada: é a sua própria Conta colocada no modo empresarial (seção 13).
+
+3.5 Desde 16 de outubro de 2026, para criar uma conta você deve verificar um
+número de celular com um código que enviamos por SMS (item 4.5). A verificação
+por telefone está disponível para números de países europeus (exceto Rússia e
+Belarus), do Brasil, dos Estados Unidos, do Canadá e do Reino Unido. Sem um
+número de celular de um desses países, você ainda não pode criar uma conta.
 
 ================================================================================
 4. A SUA CONTA
@@ -92,17 +102,39 @@ usada sem culpa sua.
 transferi-la.
 
 4.4 Verificação
-a) Alguns recursos exigem que você verifique a sua idade com um documento de
-   identidade:
-   - publicar em uma Comunidade;
-   - publicar qualquer Experiência e reservar uma Experiência como membro
-     (item 12.3);
-   - outros casos exigidos pela lei do lugar onde você mora.
+a) A verificação com um documento de identidade é opcional, também para publicar
+   em uma Comunidade e para publicar uma Experiência, ser o Anfitrião dela ou
+   reservá-la. Quando a lei do lugar onde você mora exigir verificações de idade
+   mais rigorosas, podemos pedir que você verifique a sua idade com um documento
+   de identidade.
 b) Alguns selos exigem que você verifique o seu perfil com uma selfie.
-c) Excluímos as imagens de documentos de identidade assim que a verificação é
-   concluída, conforme explicado na seção 8 da Política de Privacidade.
+c) Quando você se verifica com um documento de identidade, o aplicativo lê o
+   documento no seu dispositivo e preenche o seu nome, sobrenome, data de
+   nascimento, tipo de documento, país emissor e número do documento. Você
+   confirma esses dados, e um revisor do GreenGo os confere com a foto do
+   documento. Excluímos a foto após a análise, ou após 7 dias se ela ainda
+   estiver aguardando análise (você pode então enviá-la novamente). O mesmo
+   vale para uma foto sua segurando o seu documento. Guardamos os dados que
+   você confirmou de forma criptografada, em um armazenamento separado e
+   restrito, somente para identificar você quando a lei o exigir (item 18.8).
+   Nunca os mostramos a outros usuários e não os usamos para nenhuma outra
+   finalidade. A seção 8 da Política de Privacidade explica isso e por quanto
+   tempo os guardamos.
 d) Usar um documento que não é seu, ou que já foi usado para outra conta, viola
    estes Termos.
+
+4.5 Número de telefone
+a) Cada conta criada em 16 de outubro de 2026 ou depois precisa do seu próprio
+   número de celular verificado. Um número de telefone só pode estar vinculado a
+   uma conta.
+b) Se a sua conta foi criada antes de 16 de outubro de 2026, você não precisa
+   adicionar um número de telefone. Você pode adicionar um se quiser, e todos os
+   recursos continuam funcionando sem ele.
+c) O seu número de telefone é privado. Nunca o mostramos a outros usuários. Ele
+   fica guardado na parte privada da sua conta, conforme explicado na Política
+   de Privacidade.
+d) Use somente um número que você tenha o direito de usar, e mantenha-o
+   atualizado.
 
 ================================================================================
 5. O QUE É O GREENGO
@@ -120,8 +152,8 @@ d) criar, encontrar e participar de Eventos, incluindo eventos de sites
    parceiros;
 e) oferecer e reservar Experiências organizadas por outros usuários;
 f) apresentar um negócio com uma Conta empresarial;
-g) usar assistentes de IA no chat: tradução, leitura em voz alta e, com Silver
-   ou superior, respostas inteligentes e análise de palavras (seção 14);
+g) usar assistentes de IA no chat: tradução, leitura em voz alta e
+   transliteração de mensagens escritas em alfabetos não latinos (seção 14);
 h) usar Moedas e Assinaturas para liberar recursos opcionais;
 i) convidar amigos pelo programa de indicação.
 
@@ -176,6 +208,9 @@ reduz uma Assinatura que você já tem.
 - Silver, Gold e Platinum: mensais ou anuais.
 - Os recursos, o preço, a moeda e o período de renovação de cada plano são
   mostrados no aplicativo antes da compra.
+- No aplicativo iOS, a Assinatura Base não pode ser comprada enquanto você
+  tiver uma Assinatura Silver, Gold ou Platinum: o aplicativo a mostra como
+  incluída no seu plano.
 
 7.2 Renovação automática
 - As Assinaturas são renovadas automaticamente ao final de cada período, pelo
@@ -198,21 +233,24 @@ Quando você cancela, a sua Assinatura permanece ativa até o fim do período
 pago e não é renovada. Excluir o aplicativo ou a sua conta não cancela uma
 assinatura feita pela loja: cancele-a na loja.
 
-7.4 Períodos de teste gratuitos
-a) Web
-   - A Assinatura Base pode incluir um período de teste gratuito de 7 dias na
-     web, uma vez por conta.
-   - A menos que você cancele antes do fim do período de teste, ele se
-     converte em uma Assinatura Base paga, e o primeiro pagamento é cobrado
-     quando o período de teste termina.
-   - Antes do fim do período de teste, a Stripe, o nosso provedor de
-     pagamentos, envia a você um lembrete por e-mail.
-b) Lojas de aplicativos
-   - Uma Assinatura comprada no aplicativo iOS ou Android pode incluir um
-     período de teste gratuito introdutório. A loja mostra o período de teste
-     e as suas condições antes da compra.
-   - O período de teste e qualquer lembrete antes do seu fim são gerenciados
-     pela Apple ou pelo Google, segundo as regras deles.
+7.4 Ofertas introdutórias
+a) Não existe período de teste gratuito em nenhuma plataforma: nem na web,
+   nem no Google Play, nem na App Store. Um período de teste gratuito da
+   Assinatura Base iniciado na web antes de 17 de outubro de 2026 continua
+   até terminar. A menos que você cancele antes do fim, ele se converte em
+   uma Assinatura Base paga, e o primeiro pagamento é cobrado quando ele
+   termina. Antes do fim, a Stripe, o nosso provedor de pagamentos, envia a
+   você um lembrete por e-mail.
+b) A única oferta introdutória é o preço de lançamento 2026: novos
+   assinantes que assinarem até 31 de dezembro de 2026 (horário de Brasília)
+   recebem 50% de desconto no primeiro período (o primeiro ano de um plano
+   anual, ou os 3 primeiros meses de um plano mensal). As renovações são
+   cobradas pelo preço normal.
+   - Na web, o preço de lançamento é mostrado no checkout. Ele vale uma vez
+     por conta para a Base, e uma vez para Silver, Gold e Platinum.
+   - No aplicativo iOS ou Android, a loja mostra a oferta antes da compra. A
+     Apple ou o Google decidem quem pode receber a oferta e a aplicam segundo
+     as regras deles.
 
 7.5 Alterações de preço
 - Avisaremos você sobre um aumento de preço pelo menos 30 dias antes de ele se
@@ -227,7 +265,9 @@ a) Se você fizer um upgrade na web, recebe um desconto fixo de upgrade sobre o
    - de Silver para Gold: 10%;
    - de Silver para Platinum: 15%;
    - de Gold para Platinum: 10%.
-   O upgrade entra em vigor imediatamente.
+   O upgrade entra em vigor imediatamente. Se o preço de lançamento 2026
+   (item 7.4 b) se aplicar ao novo plano, ele substitui o desconto de
+   upgrade.
 b) O tempo não utilizado do seu plano anterior é creditado no saldo da sua
    conta após o primeiro pagamento do novo plano.
 c) Não é possível fazer downgrade na web durante um período pago. Para passar
@@ -235,8 +275,10 @@ c) Não é possível fazer downgrade na web durante um período pago. Para passa
    inferior; a mudança entra em vigor nesse momento.
 
 7.7 Ofertas de pré-venda anteriores
-Se você comprou um plano de pré-venda "Founder" sob uma versão anterior destes
-Termos, os benefícios prometidos a você naquela ocasião continuam válidos.
+Se você comprou um plano de pré-venda (Silver, Gold ou Platinum) sob uma
+versão anterior destes Termos, os benefícios prometidos a você naquela ocasião
+continuam válidos. Aplicamos o plano, pelo número de dias que você comprou, à
+conta que você criar com o endereço de e-mail usado na pré-venda.
 
 ================================================================================
 8. MOEDAS
@@ -301,7 +343,8 @@ a) No aplicativo iOS, você paga à Apple. No aplicativo Android, você paga ao
    Google Play. Os termos de pagamento deles, e os seus processos de reembolso,
    se aplicam a essas compras.
 b) Na web (greengochat.com e o aplicativo web), você paga a nós, por meio da
-   Stripe. Você pode pagar com cartão e, para pagamentos em reais, com Pix.
+   Stripe. Você pode pagar com cartão e, para pagamentos únicos em reais (por
+   exemplo, Moedas), com Pix. As Assinaturas são pagas com cartão.
 c) Não aceitamos PayPal, boleto ou outros meios de pagamento para compras no
    GreenGo.
 
@@ -436,8 +479,11 @@ b) Somente Contas empresariais ativas (seção 13) podem vender ingressos para
    fiscal ou recibo e pelo pagamento de quaisquer impostos sobre o ingresso.
 c) Os ingressos pagos são pagos somente pelo checkout do aplicativo, na
    própria conta Stripe ou Mercado Pago do organizador conectada ao GreenGo.
-   Não há links de pagamento nem outros meios de pagamento. Você paga o preço
-   do ingresso indicado, e nada mais. O dinheiro vai para a conta do
+   Não há links de pagamento nem outros meios de pagamento para novos
+   pedidos: somente os pedidos de ingresso abertos antes de 14 de outubro de
+   2026 com o meio de pagamento próprio do organizador ainda podem ser
+   concluídos dessa forma. Você paga o preço do ingresso indicado, e nada
+   mais. O dinheiro vai para a conta do
    organizador: o GreenGo nunca retém o dinheiro dos ingressos. O GreenGo
    recebe somente a sua taxa de serviço, que é paga pelo organizador (item
    11.6).
@@ -449,6 +495,16 @@ e) Os seus direitos de consumidor em relação ao organizador, incluindo
    venda feita pelo organizador. Fale primeiro com o organizador; se ele não
    responder, denuncie o Evento no aplicativo e agiremos conforme descrito na
    seção 18.
+f) Fases de preço: o organizador de um Evento pago pode vender os ingressos
+   em fases de preço (por exemplo, "Antecipado", "Normal" ou "Na porta").
+   Cada fase tem o seu próprio preço e número de ingressos, e cada fase custa
+   mais do que a anterior. Quando uma fase se esgota, começa a seguinte. O
+   nosso servidor define o preço de cada ingresso no checkout, de acordo com
+   a fase vigente naquele momento; um pedido de vários ingressos pode incluir
+   ingressos de mais de uma fase. O checkout mostra o preço antes de você
+   pagar.
+   Se a fase mudar enquanto você estiver pagando, mostramos o novo preço
+   antes de você confirmar.
 
 11.3 O check-in nos eventos usa um código QR no aplicativo. Nos Eventos pagos,
 o código QR só é emitido depois que o seu pagamento é confirmado. Os
@@ -481,6 +537,8 @@ b) A taxa por ingresso depende da Assinatura do vendedor no momento da venda:
    - Silver: US$ 3 + 10% do preço do ingresso, no máximo US$ 30;
    - Gold: US$ 2 + 10% do preço do ingresso, no máximo US$ 28;
    - Platinum: US$ 1 + 10% do preço do ingresso, no máximo US$ 25.
+   Com fases de preço (item 11.2 f), a taxa é calculada sobre o preço de cada
+   ingresso.
 c) Primeiro anúncio pago: se você nunca vendeu ingressos pagos no GreenGo, a
    taxa é fixa, de US$ 1 por ingresso, no primeiro anúncio (Evento ou
    Experiência) em que um comprador abrir um checkout pago, para esse
@@ -588,12 +646,8 @@ d) nunca pedir aos Convidados que paguem fora do checkout do aplicativo, por
    exemplo por link de pagamento, transferência bancária ou em dinheiro;
 e) tratar os Convidados com respeito e mantê-los em segurança.
 
-Documento de identidade:
-- Para publicar qualquer Experiência, gratuita ou paga, você deve ter enviado
-  um documento de identidade. O mesmo vale para reservar uma Experiência como
-  membro.
-- Para publicar uma Experiência paga, a sua verificação de idade também deve
-  ter sido aprovada.
+Para publicar qualquer Experiência, gratuita ou paga, ou ser o Anfitrião dela,
+você não precisa de um documento de identidade (item 4.4).
 Os novos Anfitriões só podem publicar uma Experiência paga até terem 3
 avaliações.
 
@@ -627,8 +681,8 @@ c) Se o Anfitrião remover o seu horário reservado ou cancelar a sua reserva,
    indicado. O GreenGo a analisará e poderá registrar um reembolso devido pelo
    Anfitrião, ou tomar medidas contra a conta do Anfitrião. O próprio GreenGo
    não paga reembolsos de Experiências com recursos próprios.
-d) Para reservar uma Experiência como membro, você deve ter enviado um
-   documento de identidade (item 12.3).
+d) Para reservar uma Experiência como membro, você não precisa de um documento
+   de identidade (item 4.4).
 
 12.6 Avaliações
 - Após uma reserva real, Anfitriões e Convidados podem avaliar uns aos outros.
@@ -645,6 +699,9 @@ d) Para reservar uma Experiência como membro, você deve ter enviado um
 colocada no modo empresarial. Ela permite que uma empresa ou um profissional
 exiba uma página de empresa:
 - dados da empresa e horário de funcionamento;
+- um número de contato comercial opcional (não verificado, pode ser um
+  telefone fixo). Ele é privado, a menos que você ative a sua exibição na sua
+  página de empresa;
 - eventos e experiências;
 - seguidores.
 
@@ -658,8 +715,11 @@ exiba uma página de empresa:
 em contato com você (por exemplo, leads). Use-os somente conforme a lei
 permite.
 
-13.4 Podemos pedir que você verifique a empresa. O selo de verificado significa
-que conferimos os documentos fornecidos. Ele não é um endosso.
+13.4 Uma Conta empresarial não precisa de um documento de identidade: o
+documento de identidade da pessoa que administra a empresa é opcional; se você
+fornecer um, aplica-se a ele o item 4.4 c. Podemos pedir que você verifique a
+empresa. O selo de verificado significa que conferimos os documentos fornecidos.
+Ele não é um endosso.
 
 13.5 Qualquer promoção paga de uma página de empresa é claramente identificada
 no aplicativo como promovida.
@@ -685,8 +745,9 @@ Platinum.
 14.1 O GreenGo oferece recursos com inteligência artificial:
 - tradução;
 - leitura em voz alta (texto para fala);
-- respostas inteligentes e análise de palavras (Assinatura Silver ou
-  superior).
+- transliteração para o alfabeto latino de mensagens de chat escritas em
+  alfabetos não latinos, como japonês, árabe ou russo, quando as dicas
+  culturais estão ativadas nas configurações do chat.
 
 O chat de suporte começa com um assistente de IA. Ele é identificado como IA, e
 você pode tocar em "Falar com uma pessoa" a qualquer momento para ser atendido
@@ -695,13 +756,15 @@ por uma pessoa.
 14.2 Consentimento
 a) Antes de os recursos de IA processarem o seu conteúdo privado pela
    primeira vez (por exemplo, a tradução de mensagens de chat, a leitura em
-   voz alta e o assistente de IA), informamos qual provedor é usado e o que é
-   enviado, e pedimos o seu consentimento. Você pode revogar o seu
-   consentimento em Configurações.
+   voz alta, a transliteração e o assistente de IA), informamos qual
+   provedor é usado e o que é enviado, e pedimos o seu consentimento. Você
+   pode revogar o seu consentimento em Configurações.
 b) O conteúdo público, como Eventos, Comunidades e anúncios, é traduzido com
-   o Google Cloud Translation por meio de um cache compartilhado nos nossos
-   servidores. Somente o texto é enviado, sem nenhum dado pessoal. Isso não
-   exige o seu consentimento.
+   o serviço de tradução do Google por meio de um armazenamento compartilhado
+   nos nossos servidores. Se uma tradução não estiver disponível ali, o
+   aplicativo pode solicitá-la diretamente ao serviço de tradução do Google.
+   Somente o texto é enviado, sem nenhum dado pessoal. Isso não exige o seu
+   consentimento.
 c) A Política de Privacidade (seção 9) traz os detalhes.
 
 14.3 O resultado da IA pode estar errado, incompleto ou culturalmente
@@ -712,8 +775,8 @@ Em caso de dúvida, confirme com a outra pessoa.
 14.4 Limites e custos
 - Alguns recursos de IA têm limites ou custam Moedas, conforme mostrado no
   aplicativo. Por exemplo, a leitura em voz alta custa 5 Moedas.
-- As respostas inteligentes e a análise de palavras exigem uma Assinatura
-  Silver ou superior.
+- A quantidade de texto de chat que você pode traduzir por dia depende do
+  seu plano.
 
 ================================================================================
 15. O SEU CONTEÚDO
@@ -972,11 +1035,14 @@ pode recorrer à Justiça ou a um órgão de defesa do consumidor (seção 26).
 18.6 Uso indevido
 - Infratores reincidentes: se alguém publicar com frequência Conteúdo
   claramente ilegal ou continuar violando estes Termos, primeiro o
-  advertimos. Após 3 advertências em 12 meses, suspendemos a conta. Em casos
+  advertimos. Se, após uma advertência, a pessoa chegar a 3 violações
+  (advertências ou remoções do seu Conteúdo) em 12 meses, suspendemos a conta
+  por 7 dias, e por 30 dias se isso voltar a acontecer em 12 meses. Em casos
   graves, podemos agir imediatamente (seção 19 e item 20.3).
 - Denúncias infundadas: se alguém enviar com frequência denúncias claramente
-  infundadas, nós o advertimos. Se continuar, não processamos as suas
-  denúncias por 30 dias (DSA art. 23).
+  infundadas, nós o advertimos. Se continuar, um moderador analisa o caso e
+  pode deixar de processar as suas denúncias por 30 dias (DSA art. 23). As
+  denúncias sobre segurança infantil são sempre processadas.
 
 18.7 Pontos de contato (DSA arts. 11 e 12)
 - Para as autoridades dos Estados-Membros da UE, a Comissão Europeia e o
@@ -987,6 +1053,19 @@ pode recorrer à Justiça ou a um órgão de defesa do consumidor (seção 26).
 - Estamos nomeando um representante legal na UE nos termos do art. 13 do DSA e
   publicaremos os dados dele aqui. Até lá, as autoridades podem usar
   legal@greengochat.com.
+
+18.8 Solicitações de autoridades
+a) Divulgamos dados da conta, incluindo o seu número de telefone e os dados de
+   identificação do item 4.4 c, somente quando a lei o exige ou quando é
+   necessário:
+   - para atender a uma ordem válida de um tribunal, ou a uma solicitação da
+     polícia ou de outra autoridade competente;
+   - para proteger a vida ou a segurança de alguém em um caso grave;
+   - para propor, exercer ou defender direitos em processos judiciais.
+b) Somente um pequeno número de membros autorizados da equipe pode acessar os
+   dados de identificação, e cada acesso é registrado.
+c) Quando a lei permitir, informaremos você sobre a solicitação (Política de
+   Privacidade, item 12.5).
 
 ================================================================================
 19. SEGURANÇA DE CRIANÇAS
@@ -1255,6 +1334,45 @@ Direitos autorais (DMCA): copyright@greengochat.com
 ================================================================================
 HISTÓRICO DE VERSÕES
 ================================================================================
+
+5.3.2 - em vigor a partir de 17 de outubro de 2026 para contas criadas a partir
+de 16 de outubro de 2026; a partir de 16 de novembro de 2026 para contas
+criadas antes de 16 de outubro de 2026 (anunciada em 17 de outubro de 2026)
+Verificação por telefone e dados de identificação:
+- Seções 3.3, 3.5 e 4.5: um número de celular verificado é exigido para criar
+  uma conta desde 16 de outubro de 2026 (números de países europeus, exceto
+  Rússia e Belarus, do Brasil, dos Estados Unidos, do Canadá e do Reino Unido);
+  as contas criadas antes de 16 de outubro de 2026 não precisam adicionar um, e
+  todos os recursos continuam funcionando sem ele; um número por conta; o número
+  é privado; um hash com chave do endereço de e-mail e do número de telefone das
+  contas banidas.
+- Seção 13.1: um número de contato comercial opcional, exibido na página da
+  empresa somente se você o ativar.
+- Seções 4.4, 12.3, 12.5, 13.4 e 18.8: a verificação com documento de identidade
+  é opcional em todos os casos, também para publicar em uma Comunidade, para
+  publicar Experiências, ser o Anfitrião delas ou reservá-las e para o titular
+  de uma Conta empresarial; o documento é lido no seu dispositivo e conferido
+  por um revisor, a foto é excluída após a análise ou após 7 dias se ainda
+  estiver pendente, e os dados que você confirma são guardados de forma
+  criptografada somente para identificar você quando a lei o exigir.
+Esclarecimentos para refletir como o aplicativo funciona:
+- Seções 5.1 g, 14.1, 14.2 e 14.4: os assistentes de IA no chat são a
+  tradução, a leitura em voz alta e a transliteração (respostas inteligentes
+  e análise de palavras não são oferecidas); o conteúdo público é traduzido
+  com o serviço de tradução do Google; limites diários de tradução por plano.
+- Seções 7.1, 7.4 e 7.6: sem período de teste gratuito em nenhuma
+  plataforma (um período de teste na web iniciado antes de 17 de outubro de
+  2026 continua até terminar); a única oferta introdutória é o preço de
+  lançamento 2026 (50% de desconto no primeiro período), na web e nas lojas
+  de aplicativos; a Base está incluída no Silver, Gold e Platinum no
+  aplicativo iOS.
+- Seção 7.7: planos de pré-venda.
+- Seção 9.1 b: Pix somente para pagamentos únicos; Assinaturas com cartão.
+- Seção 11.2 c: pedidos de ingresso abertos antes de 14 de outubro de 2026
+  com o meio de pagamento próprio do organizador.
+- Seções 11.2 f e 11.6 b: fases de preço dos ingressos.
+- Seção 18.6: períodos de suspensão para infratores reincidentes; análise das
+  denúncias infundadas por um moderador.
 
 5.3.1 - em vigor a partir de 16 de outubro de 2026 para contas criadas a partir
 dessa data; a partir de 16 de novembro de 2026 para contas criadas antes de
