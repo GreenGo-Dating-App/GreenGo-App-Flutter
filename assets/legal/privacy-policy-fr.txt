@@ -905,8 +905,12 @@ rétrofacturations afin de prévenir la fraude.
   l'événement ou l'expérience, le nombre de billets, le prix et la devise, le
   prestataire de paiement et sa référence de paiement, le statut du paiement
   et tout remboursement.
-- Le nom et l'adresse e-mail de l'acheteur/de l'invité sont communiqués à l'organisateur de l'événement pour le contrôle d'accès.
-  L'organisateur voit également votre commande de billets. L'organisateur
+- Le nom et l'adresse e-mail de l'acheteur/de l'invité sont communiqués à
+  l'organisateur de l'événement pour le contrôle d'accès. Si l'organisateur
+  demande les noms des participants, nous collectons aussi le prénom et le
+  nom de chaque titulaire de billet ; ces noms sont communiqués uniquement à
+  l'organisateur et figurent sur les billets. L'organisateur voit également
+  votre commande de billets. L'organisateur
   utilise ces données pour vous enregistrer à l'entrée et pour gérer
   l'événement ou l'expérience, et il en est responsable en tant que
   responsable du traitement indépendant.
@@ -962,13 +966,15 @@ rétrofacturations afin de prévenir la fraude.
   personnes sans compte GreenGo peuvent réserver un événement depuis un lien
   partagé. Les visiteurs peuvent aussi envoyer une demande de réservation
   pour une expérience depuis un lien partagé.
-- Nous collectons le prénom, le nom et l'adresse e-mail du visiteur, ainsi
-  que la réservation ou la commande de billets. Pour un événement payant, le
+- Nous collectons le prénom, le nom et l'adresse e-mail du visiteur, la
+  réservation ou la commande de billets et, si l'organisateur les demande,
+  les noms des titulaires de billets. Pour un événement payant, le
   visiteur paie via le paiement Stripe ou Mercado Pago de l'organisateur,
   comme au point 11.4. GreenGo ne reçoit pas les données de carte.
-- Le nom et l'adresse e-mail du visiteur sont communiqués à l'organisateur
-  ou à l'hôte (liste des participants, contrôle d'accès). Les autres
-  participants ne voient que le nom.
+- Le nom et l'adresse e-mail du visiteur, ainsi que les noms des titulaires
+  de billets, sont communiqués à l'organisateur ou à l'hôte (liste des
+  participants, contrôle d'accès). Les autres participants ne voient que le
+  nom.
 - Nous utilisons l'adresse e-mail pour envoyer les e-mails de billet et de
   réservation, y compris la demande de paiement lorsqu'un hôte accepte une
   demande d'expérience, ainsi que les avis d'annulation et de remboursement.
@@ -1058,7 +1064,8 @@ Anthropic PBC                    | Assistant d'assistance IA (Claude)| USA      
 - Stripe, pour sa propre prévention de la fraude et ses obligations légales.
 - Les organisateurs et hôtes des événements et expériences pour lesquels vous
   achetez un billet ou effectuez une réservation, y compris en tant que
-  visiteur sans compte : votre nom, votre adresse e-mail et votre commande de
+  visiteur sans compte : votre nom, votre adresse e-mail, les noms des
+  titulaires de billets si l'organisateur les demande, et votre commande de
   billets, afin qu'ils puissent vous admettre (points 11.4 et 11.7). Stripe
   et Mercado Pago traitent les paiements de billets pour l'organisateur selon
   leurs propres conditions et déduisent les frais de service de GreenGo
@@ -1704,6 +1711,9 @@ Vérification du téléphone et informations d'identité :
   l'exige, jusqu'à 6 mois après la clôture du compte (également
   points 2, 3.1, 4.2, 4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 et 22.1).
 Précisions pour correspondre au fonctionnement de l'application :
+- Points 11.4, 11.7 et 12.3 : les noms des titulaires de billets, si
+  l'organisateur les demande, sont communiqués uniquement à l'organisateur
+  et figurent sur les billets.
 - Point 4.2 : qui vous suit, qui vous suivez et vos nombres d'abonnés,
   d'abonnements et de boutiques ne sont jamais montrés aux autres
   utilisateurs (comptes professionnels compris).

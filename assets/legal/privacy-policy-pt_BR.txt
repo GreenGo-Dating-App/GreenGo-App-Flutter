@@ -853,7 +853,10 @@ registros de reembolsos e estornos para prevenir fraudes.
   pagamento e a referência do pagamento nele, o status do pagamento e
   eventuais reembolsos.
 - O nome e o e-mail do comprador/convidado são compartilhados com o organizador
-  do evento para controle de entrada. O organizador também vê o seu pedido de
+  do evento para controle de entrada. Se o organizador pedir os nomes dos
+  participantes, também coletamos o nome e o sobrenome de cada titular de
+  ingresso; esses nomes são compartilhados somente com o organizador e
+  aparecem nos ingressos. O organizador também vê o seu pedido de
   ingresso. O organizador usa esses dados para fazer o seu check-in e para
   gerenciar o evento ou a experiência, e é responsável por eles como
   controlador independente.
@@ -905,13 +908,14 @@ registros de reembolsos e estornos para prevenir fraudes.
   conta no GreenGo podem reservar um evento a partir de um link
   compartilhado. Os visitantes também podem enviar um pedido de reserva de
   uma experiência a partir de um link compartilhado.
-- Coletamos o nome, o sobrenome e o endereço de e-mail do visitante, e a
-  reserva ou o pedido de ingresso. Em um evento pago, o visitante paga pelo
+- Coletamos o nome, o sobrenome e o endereço de e-mail do visitante, a
+  reserva ou o pedido de ingresso e, se o organizador pedir, os nomes dos
+  titulares dos ingressos. Em um evento pago, o visitante paga pelo
   checkout da Stripe ou do Mercado Pago do organizador, como no item 11.4. O
   GreenGo não recebe dados de cartão.
-- O nome e o e-mail do visitante são compartilhados com o organizador ou
-  anfitrião (lista de participantes, controle de entrada). Os outros
-  participantes veem apenas o nome.
+- O nome e o e-mail do visitante, e os nomes dos titulares dos ingressos, são
+  compartilhados com o organizador ou anfitrião (lista de participantes,
+  controle de entrada). Os outros participantes veem apenas o nome.
 - Usamos o endereço de e-mail para enviar os e-mails de ingresso e de
   reserva, incluindo o pedido de pagamento quando um anfitrião aceita um
   pedido de reserva de experiência, e avisos de cancelamentos e reembolsos.
@@ -995,7 +999,8 @@ Anthropic PBC                  | Assistente de suporte com IA     | EUA     | SC
 - Stripe, para a sua própria prevenção de fraudes e as suas obrigações legais.
 - Organizadores e anfitriões dos eventos e experiências para os quais você
   compra um ingresso ou faz uma reserva, inclusive como visitante sem conta:
-  o seu nome e e-mail e o seu pedido de ingresso, para que possam admitir a
+  o seu nome e e-mail, os nomes dos titulares dos ingressos se o organizador
+  pedir, e o seu pedido de ingresso, para que possam admitir a
   sua entrada (itens 11.4 e 11.7). A Stripe e o Mercado Pago processam os
   pagamentos de ingressos para o organizador segundo os seus próprios termos
   e descontam a taxa de serviço do GreenGo (item 11.5).
@@ -1600,6 +1605,9 @@ Verificação por telefone e dados de identificação:
   até 6 meses após o encerramento da conta (também seções 2, 3.1, 4.2, 4.4, 5,
   8.5, 12.5, 14, 15.2, 20.1 e 22.1).
 Esclarecimentos para refletir como o aplicativo funciona:
+- Seções 11.4, 11.7 e 12.3: os nomes dos titulares dos ingressos, se o
+  organizador pedir, são compartilhados somente com o organizador e aparecem
+  nos ingressos.
 - Seção 4.2: quem segue você, quem você segue e os seus números de
   seguidores, seguindo e lojas nunca são mostrados a outros usuários (também
   nas contas empresariais).

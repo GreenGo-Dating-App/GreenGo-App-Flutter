@@ -872,8 +872,12 @@ auf, um Betrug zu verhindern.
   Erlebnis, die Anzahl der Tickets, den Preis und die Währung, den
   Zahlungsanbieter und dessen Zahlungsreferenz, den Zahlungsstatus und
   etwaige Erstattungen.
-- Name und E-Mail-Adresse des Käufers/Gastes werden für die Einlasskontrolle an den Veranstalter weitergegeben.
-  Der Veranstalter sieht außerdem deine Ticketbestellung. Der Veranstalter
+- Name und E-Mail-Adresse des Käufers/Gastes werden für die Einlasskontrolle
+  an den Veranstalter weitergegeben. Wenn der Veranstalter nach den Namen der
+  Teilnehmer fragt, erheben wir zusätzlich Vorname und Nachname jedes
+  Ticketinhabers; diese Namen werden nur an den Veranstalter weitergegeben
+  und auf den Tickets angezeigt. Der Veranstalter sieht außerdem deine
+  Ticketbestellung. Der Veranstalter
   nutzt diese Daten, um dich einzuchecken und das Event oder Erlebnis zu
   organisieren, und ist dafür als eigenständiger Verantwortlicher
   verantwortlich.
@@ -928,13 +932,14 @@ auf, um Betrug zu verhindern.
   ohne GreenGo-Konto ein Event über einen geteilten Link buchen. Gäste können
   über einen geteilten Link auch eine Buchungsanfrage für ein Erlebnis
   senden.
-- Wir erheben Vorname, Nachname und E-Mail-Adresse des Gastes sowie die
-  Buchung oder Ticketbestellung. Bei einem kostenpflichtigen Event bezahlt der
+- Wir erheben Vorname, Nachname und E-Mail-Adresse des Gastes, die Buchung
+  oder Ticketbestellung und, wenn der Veranstalter danach fragt, die Namen
+  der Ticketinhaber. Bei einem kostenpflichtigen Event bezahlt der
   Gast über den Stripe- oder Mercado-Pago-Checkout des Veranstalters, wie in
   11.4. GreenGo erhält keine Kartendaten.
-- Name und E-Mail-Adresse des Gastes werden an den Veranstalter oder
-  Gastgeber weitergegeben (Teilnehmerliste, Einlasskontrolle). Andere
-  Teilnehmer sehen nur den Namen.
+- Name und E-Mail-Adresse des Gastes sowie die Namen der Ticketinhaber
+  werden an den Veranstalter oder Gastgeber weitergegeben (Teilnehmerliste,
+  Einlasskontrolle). Andere Teilnehmer sehen nur den Namen.
 - Wir verwenden die E-Mail-Adresse, um die Ticket- und Buchungs-E-Mails zu
   senden, einschließlich der Zahlungsaufforderung, wenn ein Gastgeber eine
   Erlebnis-Anfrage annimmt, sowie Hinweise auf Stornierungen und
@@ -1017,8 +1022,9 @@ Anthropic PBC                    | KI-Support-Assistent (Claude)     | USA      
 - Stripe, für die eigene Betrugsprävention und eigene gesetzliche Pflichten.
 - Veranstalter und Gastgeber der Events und Erlebnisse, für die du ein Ticket
   kaufst oder die du buchst, auch als Gast ohne Konto: dein Name und deine
-  E-Mail-Adresse und deine Ticketbestellung, damit sie dir Einlass gewähren
-  können (Abschnitte 11.4 und 11.7). Stripe und Mercado Pago wickeln
+  E-Mail-Adresse, die Namen der Ticketinhaber, wenn der Veranstalter danach
+  fragt, und deine Ticketbestellung, damit sie dir Einlass gewähren können
+  (Abschnitte 11.4 und 11.7). Stripe und Mercado Pago wickeln
   Ticketzahlungen für den Veranstalter nach ihren eigenen Bedingungen ab und
   ziehen die GreenGo-Servicegebühr ab (Abschnitt 11.5).
 - Steuerbehörden: Gebührenrechnungen und Steuerdokumente mit den
@@ -1635,6 +1641,9 @@ Telefonverifizierung und Identitätsangaben:
   6 Monate nach der Schließung des Kontos (auch Abschnitte 2, 3.1, 4.2, 4.4,
   5, 8.5, 12.5, 14, 15.2, 20.1 und 22.1).
 Klarstellungen, damit die Erklärung der Funktionsweise der App entspricht:
+- Abschnitte 11.4, 11.7 und 12.3: Die Namen der Ticketinhaber werden, wenn
+  der Veranstalter danach fragt, nur an den Veranstalter weitergegeben und
+  auf den Tickets angezeigt.
 - Abschnitt 4.2: Wer dir folgt, wem du folgst und deine Zahl an Followern,
   gefolgten Konten und Shops werden anderen Nutzern nie angezeigt (auch bei
   Unternehmenskonten).

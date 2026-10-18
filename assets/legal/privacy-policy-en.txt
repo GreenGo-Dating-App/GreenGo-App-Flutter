@@ -787,7 +787,10 @@ keep records of refunds and chargebacks to prevent fraud.
   the number of tickets, the price and currency, the payment provider and its
   payment reference, the payment status and any refund.
 - Buyer/guest name and email are shared with the event organizer for entry.
-  The organizer also sees your ticket order. The organizer uses this data to
+  If the organizer asks for attendee names, we also collect the first name
+  and surname of each ticket holder; these names are shared only with the
+  organizer and shown on the tickets. The organizer also sees your ticket
+  order. The organizer uses this data to
   check you in and to manage the event or experience, and is responsible for
   it as an independent controller.
 - The legal basis is the performance of your ticket contract (GDPR 6(1)(b);
@@ -832,12 +835,14 @@ keep records of refunds and chargebacks to prevent fraud.
 - If the organizer allows it ("Guests allowed to book"), people without a
   GreenGo account can book an event from a shared link. Guests can also send
   a booking request for an experience from a shared link.
-- We collect the guest's first name, surname and email address, and the
-  booking or ticket order. For a paid event the guest pays through the
+- We collect the guest's first name, surname and email address, the
+  booking or ticket order and, if the organizer asks for them, the names of
+  the ticket holders. For a paid event the guest pays through the
   organizer's Stripe or Mercado Pago checkout, as in 11.4. GreenGo does not
   receive card data.
-- The guest's name and email are shared with the organizer or host
-  (participant list, entry check). Other participants see only the name.
+- The guest's name and email, and the ticket holders' names, are shared
+  with the organizer or host (participant list, entry check). Other
+  participants see only the name.
 - We use the email address to send the ticket and booking emails, including
   the request to pay when a host accepts an experience request, and notices
   of cancellations and refunds.
@@ -913,8 +918,9 @@ Anthropic PBC                    | AI support assistant (Claude)     | USA      
 - Apple and Google, when you buy through their stores.
 - Stripe, for its own fraud prevention and legal duties.
 - Organizers and hosts of the events and experiences you buy a ticket for or
-  book, also as a guest without an account: your name and email and your
-  ticket order, so that they can admit you (sections 11.4 and 11.7). Stripe
+  book, also as a guest without an account: your name and email, the names
+  of the ticket holders if the organizer asks for them, and your ticket
+  order, so that they can admit you (sections 11.4 and 11.7). Stripe
   and Mercado Pago process ticket payments for the organizer under their own
   terms and deduct GreenGo's service fee (section 11.5).
 - Tax authorities: fee invoices and tax documents containing the billing data
@@ -1475,6 +1481,9 @@ Phone verification and identity details:
   law requires it, until 6 months after the account is closed (also
   sections 2, 3.1, 4.2, 4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 and 22.1).
 Clarifications to match how the app works:
+- Sections 11.4, 11.7 and 12.3: the names of the ticket holders, if the
+  organizer asks for them, are shared only with the organizer and shown on
+  the tickets.
 - Section 4.2: who follows you, whom you follow and your follower, following
   and store counts are never shown to other users (also business accounts).
 - Sections 2, 5 and 9: the AI features are translation, read-aloud and

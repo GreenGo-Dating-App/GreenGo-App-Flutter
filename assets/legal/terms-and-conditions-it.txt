@@ -478,13 +478,17 @@ responsabile di:
 - annullarlo per tempo se non può avere luogo.
 
 11.2 Eventi gratuiti e a pagamento
-a) La partecipazione a un Evento gratuito è gratuita.
+a) La partecipazione a un Evento gratuito è gratuita. L'organizzatore può
+   consentirti di portare accompagnatori (ospiti). Ogni accompagnatore occupa
+   un posto: la capienza conta te e i tuoi ospiti.
 b) Solo gli Account business attivi (sezione 13) possono vendere biglietti per
    i propri Eventi. Il contratto relativo al biglietto è tra te e
    l'organizzatore: l'organizzatore è il venditore, stabilisce il prezzo e la
    politica di annullamento e rimborso, ed è responsabile dell'Evento,
    dell'emissione di eventuali fatture o ricevute e del pagamento di eventuali
-   imposte sul biglietto.
+   imposte sul biglietto. Puoi acquistare fino a 4 biglietti per Evento in
+   totale. Gli Eventi a pagamento non prevedono accompagnatori: ogni persona
+   ha bisogno di un biglietto.
 c) I biglietti a pagamento si pagano solo tramite il checkout nell'app,
    sull'account Stripe o Mercado Pago dell'organizzatore collegato a GreenGo.
    Non ci sono link di pagamento né altri metodi di pagamento per i nuovi
@@ -497,7 +501,10 @@ c) I biglietti a pagamento si pagano solo tramite il checkout nell'app,
    dall'organizzatore (sezione 11.6).
 d) Il nome e l'indirizzo e-mail dell'acquirente/ospite vengono condivisi con
    l'organizzatore dell'evento per il controllo degli ingressi (vedi
-   l'Informativa sulla privacy, sezione 11.4).
+   l'Informativa sulla privacy, sezione 11.4). Se l'organizzatore chiede i
+   nomi dei partecipanti, devi indicare nome e cognome di ogni titolare di
+   biglietto. Questi nomi vengono condivisi solo con l'organizzatore e
+   compaiono sui biglietti.
 e) I tuoi diritti di consumatore nei confronti dell'organizzatore, compreso
    l'eventuale diritto di recesso, sono quelli previsti dalla legge applicabile
    alla vendita effettuata dall'organizzatore. Contatta prima l'organizzatore;
@@ -512,7 +519,8 @@ f) Fasi di prezzo: l'organizzatore di un Evento a pagamento può vendere i
    biglietti può comprendere biglietti di più fasi. Il checkout mostra il
    prezzo prima del pagamento.
    Se la fase cambia mentre stai pagando, ti mostriamo il nuovo prezzo prima
-   che tu confermi.
+   che tu confermi. Nel complesso, le fasi di prezzo non possono contenere
+   più biglietti della capienza dell'Evento.
 
 11.3 Il check-in agli Eventi utilizza un codice QR nell'app. Per gli Eventi a
 pagamento il codice QR viene emesso solo dopo la conferma del tuo pagamento. I
@@ -589,18 +597,22 @@ c) Se il tuo Abbonamento passa a un piano inferiore, i tuoi annunci più
 11.8 Prenotare come visitatore, senza account
 a) Se l'organizzatore lo consente, chiunque apra un link condiviso di un
    Evento pubblico può prenotarlo come visitatore, senza account, indicando
-   nome, cognome ed e-mail, finché ci sono posti disponibili.
+   nome, cognome ed e-mail, finché ci sono posti disponibili. Un visitatore
+   può prenotare fino a 4 biglietti per Evento con lo stesso indirizzo
+   e-mail.
 b) Per un Evento a pagamento, il visitatore paga tramite lo stesso checkout
-   di Stripe o Mercado Pago e riceve il biglietto via e-mail.
+   di Stripe o Mercado Pago e riceve il biglietto via e-mail. Se
+   l'organizzatore chiede i nomi dei partecipanti, il visitatore indica nome
+   e cognome di ogni titolare di biglietto.
 c) La prenotazione come visitatore non è disponibile per gli Eventi che
-   richiedono l'approvazione dell'organizzatore, che hanno limiti di età o di
-   genere, o che hanno più tipi di biglietto. Questi Eventi si possono
-   prenotare solo nell'app.
+   richiedono l'approvazione dell'organizzatore o che hanno limiti di età o
+   di genere. Questi Eventi si possono prenotare solo nell'app.
 d) I visitatori possono anche inviare una richiesta di prenotazione per
    un'Esperienza da un link condiviso.
-e) Il nome e l'e-mail del visitatore vengono condivisi con l'organizzatore o
-   l'Host (elenco dei partecipanti). Cancelliamo i dati di contatto dei
-   visitatori dopo 400 giorni (vedi l'Informativa sulla privacy).
+e) Il nome e l'e-mail del visitatore, e i nomi dei titolari dei biglietti,
+   vengono condivisi con l'organizzatore o l'Host (elenco dei partecipanti).
+   Cancelliamo i dati di contatto dei visitatori dopo 400 giorni (vedi
+   l'Informativa sulla privacy).
 f) I presenti Termini si applicano alle prenotazioni dei visitatori in quanto
    pertinenti.
 
@@ -1376,6 +1388,13 @@ Verifica del telefono e dati identificativi:
   se è ancora in attesa, e i dati esaminati sono conservati in forma cifrata
   solo per identificarti quando la legge lo richiede.
 Chiarimenti per corrispondere al funzionamento dell'app:
+- Sezioni 11.2 e 11.8: accompagnatori agli Eventi gratuiti (ognuno occupa
+  un posto); fino a 4 biglietti per Evento, anche per i visitatori senza
+  account; nessun accompagnatore agli Eventi a pagamento; nome e cognome di
+  ogni titolare di biglietto quando l'organizzatore li chiede, condivisi
+  solo con l'organizzatore; le fasi di prezzo non possono contenere più
+  biglietti della capienza dell'Evento; i visitatori possono prenotare anche
+  Eventi con più tipi di biglietto.
 - Sezione 13.1: solo tu vedi chi segue la tua attività e quanti follower ha.
 - Sezioni 5.1 g, 14.1, 14.2 e 14.4: gli assistenti di IA nella chat sono
   traduzione, lettura vocale e traslitterazione (risposte intelligenti e

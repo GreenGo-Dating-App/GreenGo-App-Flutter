@@ -477,13 +477,16 @@ responsável por:
 - cancelá-lo atempadamente se não se puder realizar.
 
 11.2 Eventos gratuitos e pagos
-a) Participar num Evento gratuito é gratuito.
+a) Participar num Evento gratuito é gratuito. O organizador pode permitir que
+   leve convidados adicionais (+1). Cada convidado adicional ocupa um lugar:
+   a lotação conta consigo e com os seus convidados.
 b) Só as Contas de empresa ativas (secção 13) podem vender bilhetes para os
    seus Eventos. O contrato do bilhete é celebrado entre o utilizador e o
    organizador: o organizador é o vendedor, define o preço e a política de
    cancelamento e reembolso, e é responsável pelo Evento, pela emissão de
    qualquer fatura ou recibo e pelo pagamento de quaisquer impostos sobre o
-   bilhete.
+   bilhete. Pode comprar até 4 bilhetes por Evento no total. Os Eventos pagos
+   não têm convidados adicionais: cada pessoa precisa de um bilhete.
 c) Os bilhetes pagos são pagos apenas através do checkout da aplicação, para a
    conta Stripe ou Mercado Pago do próprio organizador ligada ao GreenGo. Não
    existem ligações de pagamento nem outros meios de pagamento para novos
@@ -495,7 +498,10 @@ c) Os bilhetes pagos são pagos apenas através do checkout da aplicação, para
    recebe apenas a sua taxa de serviço, paga pelo organizador (secção 11.6).
 d) O nome e o endereço de e-mail do comprador/convidado são partilhados com o
    organizador do evento para controlo de entrada (ver a Política de
-   Privacidade, secção 11.4).
+   Privacidade, secção 11.4). Se o organizador pedir os nomes dos
+   participantes, tem de indicar o nome próprio e o apelido de cada titular
+   de bilhete. Estes nomes são partilhados apenas com o organizador e
+   aparecem nos bilhetes.
 e) Os seus direitos enquanto consumidor perante o organizador, incluindo
    qualquer direito de livre resolução, são os previstos na lei aplicável à
    venda efetuada pelo organizador. Contacte primeiro o organizador; se este
@@ -510,7 +516,8 @@ f) Fases de preço: o organizador de um Evento pago pode vender os respetivos
    incluir bilhetes de mais do que uma fase. O checkout mostra o preço antes
    de pagar.
    Se a fase mudar enquanto estiver a pagar, mostramos-lhe o novo preço antes
-   de confirmar.
+   de confirmar. No conjunto, as fases de preço não podem ter mais bilhetes
+   do que a lotação do Evento.
 
 11.3 O registo de entrada em Eventos utiliza um código QR na aplicação. Nos
 Eventos pagos, o código QR só é emitido depois de o seu pagamento ser
@@ -585,18 +592,21 @@ c) Se a sua Subscrição passar para um plano inferior, os seus anúncios mais
 a) Se o organizador permitir reservas de visitantes, qualquer pessoa que abra
    uma ligação partilhada de um Evento público pode reservá-lo como visitante,
    sem conta, indicando o nome próprio, o apelido e o e-mail, desde que ainda
-   haja lugares.
+   haja lugares. Um visitante pode reservar até 4 bilhetes por Evento com o
+   mesmo endereço de e-mail.
 b) Num Evento pago, o visitante paga através do mesmo checkout da Stripe ou do
-   Mercado Pago e recebe o bilhete por e-mail.
+   Mercado Pago e recebe o bilhete por e-mail. Se o organizador pedir os nomes
+   dos participantes, o visitante indica o nome próprio e o apelido de cada
+   titular de bilhete.
 c) A reserva como visitante não está disponível para Eventos que exigem a
-   aprovação do organizador, que têm limites de idade ou de género, ou que
-   têm vários tipos de bilhete. Estes Eventos só podem ser reservados na
-   aplicação.
+   aprovação do organizador ou que têm limites de idade ou de género. Estes
+   Eventos só podem ser reservados na aplicação.
 d) Os visitantes também podem enviar um pedido de reserva de uma Experiência a
    partir de uma ligação partilhada.
-e) O nome e o e-mail do visitante são partilhados com o organizador ou o
-   Anfitrião (lista de participantes). Eliminamos os dados de contacto dos
-   visitantes ao fim de 400 dias (ver a Política de Privacidade).
+e) O nome e o e-mail do visitante, bem como os nomes dos titulares dos
+   bilhetes, são partilhados com o organizador ou o Anfitrião (lista de
+   participantes). Eliminamos os dados de contacto dos visitantes ao fim de
+   400 dias (ver a Política de Privacidade).
 f) Estes Termos aplicam-se às reservas de visitantes na medida em que sejam
    pertinentes.
 
@@ -1372,6 +1382,13 @@ Verificação do telemóvel e dados de identificação:
   ainda estiver pendente, e os dados revistos são conservados encriptados
   apenas para o identificar quando a lei o exigir.
 Clarificações para corresponder ao funcionamento da aplicação:
+- Secções 11.2 e 11.8: convidados adicionais (+1) nos Eventos gratuitos (cada
+  um ocupa um lugar); até 4 bilhetes por Evento, também para visitantes sem
+  conta; sem convidados adicionais nos Eventos pagos; o nome próprio e o
+  apelido de cada titular de bilhete quando o organizador o pedir,
+  partilhados apenas com o organizador; as fases de preço não podem ter mais
+  bilhetes do que a lotação do Evento; os visitantes também podem reservar
+  Eventos com vários tipos de bilhete.
 - Secção 13.1: só o utilizador vê quem segue a sua empresa e quantos
   seguidores tem.
 - Secções 5.1 g, 14.1, 14.2 e 14.4: os assistentes de IA no chat são a

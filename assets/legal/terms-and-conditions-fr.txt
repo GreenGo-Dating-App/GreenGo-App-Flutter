@@ -514,13 +514,17 @@ formule (section 11.7). L'organisateur est responsable :
 - de l'annuler en temps utile s'il ne peut pas avoir lieu.
 
 11.2 Événements gratuits et payants
-a) La participation à un Événement gratuit est gratuite.
+a) La participation à un Événement gratuit est gratuite. L'organisateur
+   peut vous permettre de venir avec des accompagnants. Chaque accompagnant
+   occupe une place : la capacité compte vous et vos accompagnants.
 b) Seuls les Comptes professionnels actifs (section 13) peuvent vendre des
    billets pour leurs Événements. Le contrat de billetterie est conclu entre
    vous et l'organisateur : l'organisateur est le vendeur, fixe le prix ainsi
    que la politique d'annulation et de remboursement, et est responsable de
    l'Événement, de l'émission de toute facture ou de tout reçu et du paiement
-   de toute taxe sur le billet.
+   de toute taxe sur le billet. Vous pouvez acheter jusqu'à 4 billets par
+   Événement au total. Les Événements payants n'ont pas d'accompagnants :
+   chaque personne a besoin d'un billet.
 c) Les billets payants se paient uniquement via le paiement intégré à
    l'application, sur le propre compte Stripe ou Mercado Pago de
    l'organisateur connecté à GreenGo. Il n'existe ni lien de paiement ni
@@ -533,7 +537,10 @@ c) Les billets payants se paient uniquement via le paiement intégré à
    service, payés par l'organisateur (section 11.6).
 d) Le nom et l'adresse e-mail de l'acheteur/de l'invité sont communiqués à
    l'organisateur de l'événement pour le contrôle d'accès (voir la Politique
-   de confidentialité, section 11.4).
+   de confidentialité, section 11.4). Si l'organisateur demande les noms des
+   participants, vous devez indiquer le prénom et le nom de chaque titulaire
+   de billet. Ces noms sont communiqués uniquement à l'organisateur et
+   figurent sur les billets.
 e) Vos droits de consommateur à l'égard de l'organisateur, y compris tout
    droit de rétractation, sont ceux prévus par la loi applicable à la vente
    réalisée par l'organisateur. Contactez d'abord l'organisateur ; s'il ne
@@ -548,7 +555,8 @@ f) Phases de prix : l'organisateur d'un Événement payant peut vendre ses
    une commande de plusieurs billets peut comprendre des billets de plusieurs
    phases. Le paiement affiche le prix avant que vous ne payiez.
    Si la phase change pendant que vous payez, nous vous montrons le nouveau
-   prix avant que vous ne confirmiez.
+   prix avant que vous ne confirmiez. Ensemble, les phases de prix ne
+   peuvent pas contenir plus de billets que la capacité de l'Événement.
 
 11.3 L'enregistrement à un Événement se fait au moyen d'un code QR dans
 l'application. Pour les Événements payants, le code QR n'est émis qu'après la
@@ -628,18 +636,22 @@ c) Si votre Abonnement passe à une formule inférieure, vos annonces les plus
 a) Si l'organisateur l'autorise, toute personne qui ouvre un lien partagé
    vers un Événement public peut le réserver en tant que visiteur, sans
    compte, en indiquant son prénom, son nom et son adresse e-mail, dans la
-   limite des places disponibles.
+   limite des places disponibles. Un visiteur peut réserver jusqu'à
+   4 billets par Événement avec la même adresse e-mail.
 b) Pour un Événement payant, le visiteur paie via le même paiement Stripe ou
-   Mercado Pago et reçoit son billet par e-mail.
+   Mercado Pago et reçoit son billet par e-mail. Si l'organisateur demande
+   les noms des participants, le visiteur indique le prénom et le nom de
+   chaque titulaire de billet.
 c) La réservation en tant que visiteur n'est pas disponible pour les
-   Événements soumis à l'approbation de l'organisateur, comportant des
-   limites d'âge ou de genre, ou proposant plusieurs types de billets. Ces
-   Événements ne peuvent être réservés que dans l'application.
+   Événements soumis à l'approbation de l'organisateur ou comportant des
+   limites d'âge ou de genre. Ces Événements ne peuvent être réservés que
+   dans l'application.
 d) Les visiteurs peuvent également envoyer une demande de réservation pour
    une Expérience à partir d'un lien partagé.
-e) Le nom et l'adresse e-mail du visiteur sont communiqués à l'organisateur
-   ou à l'Hôte (liste des participants). Nous supprimons les coordonnées des
-   visiteurs au bout de 400 jours (voir la Politique de confidentialité).
+e) Le nom et l'adresse e-mail du visiteur, ainsi que les noms des
+   titulaires de billets, sont communiqués à l'organisateur ou à l'Hôte
+   (liste des participants). Nous supprimons les coordonnées des visiteurs
+   au bout de 400 jours (voir la Politique de confidentialité).
 f) Les présentes Conditions s'appliquent aux réservations des visiteurs dans
    la mesure où elles sont pertinentes.
 
@@ -1454,6 +1466,14 @@ Vérification du téléphone et informations d'identité :
   toujours en attente, et les informations examinées sont conservées sous
   forme chiffrée uniquement pour vous identifier lorsque la loi l'exige.
 Précisions pour correspondre au fonctionnement de l'application :
+- Sections 11.2 et 11.8 : accompagnants pour les Événements gratuits
+  (chacun occupe une place) ; jusqu'à 4 billets par Événement, y compris
+  pour les visiteurs sans compte ; pas d'accompagnants aux Événements
+  payants ; le prénom et le nom de chaque titulaire de billet lorsque
+  l'organisateur le demande, communiqués uniquement à l'organisateur ; les
+  phases de prix ne peuvent pas contenir plus de billets que la capacité de
+  l'Événement ; les visiteurs peuvent aussi réserver des Événements
+  proposant plusieurs types de billets.
 - Section 13.1 : vous seul voyez qui suit votre entreprise et combien
   d'abonnés elle a.
 - Sections 5.1 g, 14.1, 14.2 et 14.4 : les assistants IA du chat sont la

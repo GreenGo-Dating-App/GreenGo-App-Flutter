@@ -492,13 +492,17 @@ Veranstalter ist dafür verantwortlich:
 - es rechtzeitig abzusagen, wenn es nicht stattfinden kann.
 
 11.2 Kostenlose und kostenpflichtige Events
-a) Die Teilnahme an einem kostenlosen Event ist kostenlos.
+a) Die Teilnahme an einem kostenlosen Event ist kostenlos. Der Veranstalter
+   kann dir erlauben, Begleitpersonen mitzubringen. Jede Begleitperson belegt
+   einen Platz: Die Kapazität zählt dich und deine Begleitpersonen.
 b) Nur aktive Business-Konten (Abschnitt 13) können Tickets für ihre Events
    verkaufen. Der Ticketvertrag kommt zwischen dir und dem Veranstalter
    zustande: Der Veranstalter ist der Verkäufer, legt den Preis sowie die
    Stornierungs- und Erstattungsrichtlinie fest und ist für das Event sowie
    für die Ausstellung etwaiger Rechnungen oder Belege und die Zahlung
-   etwaiger Steuern auf das Ticket verantwortlich.
+   etwaiger Steuern auf das Ticket verantwortlich. Du kannst insgesamt bis zu
+   4 Tickets pro Event kaufen. Bei kostenpflichtigen Events gibt es keine
+   Begleitpersonen: Jede Person braucht ein Ticket.
 c) Kostenpflichtige Tickets werden nur über den Bezahlvorgang in der App
    bezahlt, auf das eigene, mit GreenGo verbundene Stripe- oder
    Mercado-Pago-Konto des Veranstalters. Für neue Bestellungen gibt es keine
@@ -509,8 +513,12 @@ c) Kostenpflichtige Tickets werden nur über den Bezahlvorgang in der App
    Das Geld geht auf das Konto des Veranstalters: GreenGo verwahrt niemals
    Ticketgelder. GreenGo erhält nur seine Servicegebühr, die der Veranstalter
    zahlt (Abschnitt 11.6).
-d) Name und E-Mail-Adresse des Käufers/Gastes werden für die Einlasskontrolle an
-   den Veranstalter weitergegeben (siehe Datenschutzerklärung, Abschnitt 11.4).
+d) Name und E-Mail-Adresse des Käufers/Gastes werden für die
+   Einlasskontrolle an den Veranstalter weitergegeben (siehe
+   Datenschutzerklärung, Abschnitt 11.4). Wenn der Veranstalter nach den
+   Namen der Teilnehmer fragt, musst du Vorname und Nachname jedes
+   Ticketinhabers angeben. Diese Namen werden nur an den Veranstalter
+   weitergegeben und auf den Tickets angezeigt.
 e) Deine Verbraucherrechte gegenüber dem Veranstalter, einschließlich eines
    etwaigen Widerrufsrechts, richten sich nach dem Recht, das für den Verkauf
    des Veranstalters gilt. Wende dich zuerst an den Veranstalter; wenn er nicht
@@ -525,7 +533,8 @@ f) Preisphasen: Der Veranstalter eines kostenpflichtigen Events kann dessen
    gilt; eine Bestellung mehrerer Tickets kann Tickets aus mehr als einer
    Phase enthalten. Der Bezahlvorgang zeigt den Preis an, bevor du zahlst.
    Ändert sich die Phase, während du bezahlst, zeigen wir dir den neuen
-   Preis, bevor du bestätigst.
+   Preis, bevor du bestätigst. Zusammen dürfen die Preisphasen nicht mehr
+   Tickets umfassen als die Kapazität des Events.
 
 11.3 Der Check-in bei Events erfolgt über einen QR-Code in der App. Bei
 kostenpflichtigen Events wird der QR-Code erst ausgestellt, nachdem deine
@@ -604,18 +613,22 @@ c) Wechselt deine Mitgliedschaft in einen niedrigeren Tarif, bleiben deine
 a) Wenn der Veranstalter es erlaubt, kann jeder, der einen geteilten Link zu
    einem öffentlichen Event öffnet, es als Besucher ohne Konto buchen, indem
    er Vorname, Nachname und E-Mail-Adresse angibt, solange Plätze frei sind.
+   Ein Besucher kann mit derselben E-Mail-Adresse bis zu 4 Tickets pro Event
+   buchen.
 b) Bei einem kostenpflichtigen Event zahlt der Besucher über denselben
    Bezahlvorgang von Stripe oder Mercado Pago und erhält das Ticket per
-   E-Mail.
+   E-Mail. Wenn der Veranstalter nach den Namen der Teilnehmer fragt, gibt
+   der Besucher Vorname und Nachname jedes Ticketinhabers an.
 c) Die Buchung als Besucher ist nicht möglich für Events, die eine Freigabe
-   durch den Veranstalter erfordern, Alters- oder Geschlechtsbeschränkungen
-   haben oder mehrere Ticketarten haben. Diese Events können nur in der App
+   durch den Veranstalter erfordern oder Alters- oder
+   Geschlechtsbeschränkungen haben. Diese Events können nur in der App
    gebucht werden.
 d) Besucher können über einen geteilten Link auch eine Buchungsanfrage für
    ein Erlebnis senden.
-e) Name und E-Mail-Adresse des Besuchers werden an den Veranstalter oder
-   Gastgeber weitergegeben (Teilnehmerliste). Wir löschen die Kontaktdaten
-   von Besuchern nach 400 Tagen (siehe Datenschutzerklärung).
+e) Name und E-Mail-Adresse des Besuchers sowie die Namen der Ticketinhaber
+   werden an den Veranstalter oder Gastgeber weitergegeben (Teilnehmerliste).
+   Wir löschen die Kontaktdaten von Besuchern nach 400 Tagen (siehe
+   Datenschutzerklärung).
 f) Diese Bedingungen gelten für Buchungen von Besuchern, soweit sie
    einschlägig sind.
 
@@ -1417,6 +1430,13 @@ Telefonverifizierung und Identitätsangaben:
   gelöscht, und die geprüften Angaben werden verschlüsselt aufbewahrt, nur um
   dich zu identifizieren, wenn das Gesetz es verlangt.
 Klarstellungen, damit die Bedingungen der Funktionsweise der App entsprechen:
+- Abschnitte 11.2 und 11.8: Begleitpersonen bei kostenlosen Events (jede
+  belegt einen Platz); bis zu 4 Tickets pro Event, auch für Besucher ohne
+  Konto; keine Begleitpersonen bei kostenpflichtigen Events; Vorname und
+  Nachname jedes Ticketinhabers, wenn der Veranstalter danach fragt, nur an
+  den Veranstalter weitergegeben; Preisphasen können nicht mehr Tickets
+  umfassen als die Kapazität des Events; Besucher können auch Events mit
+  mehreren Ticketarten buchen.
 - Abschnitt 13.1: Nur du siehst, wer deinem Unternehmen folgt und wie viele
   Follower es hat.
 - Abschnitte 5.1 g, 14.1, 14.2 und 14.4: Die KI-Helfer im Chat sind
