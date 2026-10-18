@@ -110,7 +110,8 @@ export function feePerTicket(rule: FeeRule, unitAmount: number, currency: string
   return Math.min(capped, unitAmount);
 }
 
-export interface FeeLine { typeId: string | null; unitAmount: number; quantity: number }
+/** One priced line: a ticket type, a price phase ([phaseId]) or the single general ticket. */
+export interface FeeLine { typeId: string | null; phaseId?: string; unitAmount: number; quantity: number }
 
 export interface FeeBreakdown {
   rule: FeeRule;

@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../../core/utils/geo_query.dart';
+import '../../../ticket_payments/domain/price_phases.dart';
 import '../../domain/entities/event.dart';
 import 'event_attendee_model.dart';
 
@@ -55,6 +56,7 @@ class EventModel extends Event {
     super.currencyCode,
     super.maxTicketsPerUser,
     super.guestBookingAllowed,
+    super.pricePhases,
   });
 
   /// Create from Event entity
@@ -115,6 +117,7 @@ class EventModel extends Event {
       currencyCode: event.currencyCode,
       maxTicketsPerUser: event.maxTicketsPerUser,
       guestBookingAllowed: event.guestBookingAllowed,
+      pricePhases: event.pricePhases,
     );
   }
 
@@ -197,6 +200,7 @@ class EventModel extends Event {
               ? null
               : (json['maxTicketsPerUser'] as num?)?.toInt()),
       guestBookingAllowed: json['guestsAllowed'] == true,
+      pricePhases: PricePhase.listFrom(json['pricePhases']),
       recurrence: json['recurrence'] is Map
           ? EventRecurrence.fromMap(
               Map<String, dynamic>.from(json['recurrence'] as Map))
@@ -275,6 +279,9 @@ class EventModel extends Event {
       'maxTicketsPerUser': maxTicketsPerUser,
       // Shared-link guest booking: only ever true on a public event.
       'guestsAllowed': guestBookingAllowed && visibility == EventVisibility.public,
+      // Ticket price phases (empty = the single price). Sold counters are
+      // server-only (ticket_inventory), never on the event.
+      'pricePhases': pricePhases.map((p) => p.toMap()).toList(),
       'recurrence': recurrence?.toMap(),
       // Draft & scheduled auto-publish (feeds gate on isLive using publishAt).
       'publishAt': publishAt != null ? Timestamp.fromDate(publishAt!) : null,

@@ -44195,6 +44195,198 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{km} km'**
   String distanceKmPrecise(String km);
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Price phases (early bird…)'**
+  String get ppSectionTitle;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Sell the first tickets for less. Each phase has its own price and number of tickets; when one sells out, the next starts. Each phase must cost more than the previous one. Phases set the price of the general ticket (not of ticket types).'**
+  String get ppSectionHint;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Add phase'**
+  String get ppAddPhase;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get ppPhaseName;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Price'**
+  String get ppPhasePrice;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Tickets at this price'**
+  String get ppPhaseQuantity;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Remove phase'**
+  String get ppRemovePhase;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'{count} sold'**
+  String ppPhaseSold(int count);
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Phases that already sold keep their price and can\'t be removed; new phases go after them.'**
+  String get ppLockedHint;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'You receive ≈ {amount} per ticket'**
+  String ppYouReceive(String amount);
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'The event price follows the current phase.'**
+  String get ppPriceFollowsPhase;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Super early bird'**
+  String get ppNameSuperEarlyBird;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Early bird'**
+  String get ppNameEarlyBird;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Presale'**
+  String get ppNamePresale;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Regular'**
+  String get ppNameRegular;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Late'**
+  String get ppNameLate;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Last minute'**
+  String get ppNameLastMinute;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'At the door'**
+  String get ppNameDoor;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Each phase must cost more than the previous one'**
+  String get ppErrNotIncreasing;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Phases have more tickets than the event capacity'**
+  String get ppErrOverCapacity;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Each phase needs at least 1 ticket'**
+  String get ppErrQuantity;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'A phase can\'t have fewer tickets than it already sold'**
+  String get ppErrBelowSold;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'A phase that already sold can\'t be removed or change its price'**
+  String get ppErrSoldLocked;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'New phases go after the phases that already sold'**
+  String get ppErrInsertedBeforeSold;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Each name can be used once'**
+  String get ppErrDuplicateName;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket prices'**
+  String get ppBuyerTitle;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Now'**
+  String get ppNow;
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'{count} left at this price'**
+  String ppLeftAtPrice(int count);
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'then {price} ({name})'**
+  String ppThenNext(String price, String name);
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'{name} × {count}'**
+  String ppLineQty(String name, int count);
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'The price has changed to {price}'**
+  String tpErrPriceChanged(String price);
+
+  /// Ticket price phases (events)
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket sales are paused while the organizer fixes the price phases.'**
+  String get tpErrPricePhasesInvalid;
 }
 
 class _AppLocalizationsDelegate

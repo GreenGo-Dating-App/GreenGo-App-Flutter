@@ -15118,5 +15118,169 @@
         "type": "String"
       }
     }
+  },
+  "ppSectionTitle": "Price phases (early bird…)",
+  "@ppSectionTitle": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppSectionHint": "Sell the first tickets for less. Each phase has its own price and number of tickets; when one sells out, the next starts. Each phase must cost more than the previous one. Phases set the price of the general ticket (not of ticket types).",
+  "@ppSectionHint": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppAddPhase": "Add phase",
+  "@ppAddPhase": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppPhaseName": "Name",
+  "@ppPhaseName": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppPhasePrice": "Price",
+  "@ppPhasePrice": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppPhaseQuantity": "Tickets at this price",
+  "@ppPhaseQuantity": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppRemovePhase": "Remove phase",
+  "@ppRemovePhase": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppPhaseSold": "{count} sold",
+  "@ppPhaseSold": {
+    "description": "Ticket price phases (events)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "ppLockedHint": "Phases that already sold keep their price and can't be removed; new phases go after them.",
+  "@ppLockedHint": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppYouReceive": "You receive ≈ {amount} per ticket",
+  "@ppYouReceive": {
+    "description": "Ticket price phases (events)",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "ppPriceFollowsPhase": "The event price follows the current phase.",
+  "@ppPriceFollowsPhase": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppNameSuperEarlyBird": "Super early bird",
+  "@ppNameSuperEarlyBird": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppNameEarlyBird": "Early bird",
+  "@ppNameEarlyBird": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppNamePresale": "Presale",
+  "@ppNamePresale": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppNameRegular": "Regular",
+  "@ppNameRegular": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppNameLate": "Late",
+  "@ppNameLate": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppNameLastMinute": "Last minute",
+  "@ppNameLastMinute": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppNameDoor": "At the door",
+  "@ppNameDoor": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppErrNotIncreasing": "Each phase must cost more than the previous one",
+  "@ppErrNotIncreasing": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppErrOverCapacity": "Phases have more tickets than the event capacity",
+  "@ppErrOverCapacity": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppErrQuantity": "Each phase needs at least 1 ticket",
+  "@ppErrQuantity": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppErrBelowSold": "A phase can't have fewer tickets than it already sold",
+  "@ppErrBelowSold": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppErrSoldLocked": "A phase that already sold can't be removed or change its price",
+  "@ppErrSoldLocked": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppErrInsertedBeforeSold": "New phases go after the phases that already sold",
+  "@ppErrInsertedBeforeSold": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppErrDuplicateName": "Each name can be used once",
+  "@ppErrDuplicateName": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppBuyerTitle": "Ticket prices",
+  "@ppBuyerTitle": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppNow": "Now",
+  "@ppNow": {
+    "description": "Ticket price phases (events)"
+  },
+  "ppLeftAtPrice": "{count} left at this price",
+  "@ppLeftAtPrice": {
+    "description": "Ticket price phases (events)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "ppThenNext": "then {price} ({name})",
+  "@ppThenNext": {
+    "description": "Ticket price phases (events)",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ppLineQty": "{name} × {count}",
+  "@ppLineQty": {
+    "description": "Ticket price phases (events)",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tpErrPriceChanged": "The price has changed to {price}",
+  "@tpErrPriceChanged": {
+    "description": "Ticket price phases (events)",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "tpErrPricePhasesInvalid": "Ticket sales are paused while the organizer fixes the price phases.",
+  "@tpErrPricePhasesInvalid": {
+    "description": "Ticket price phases (events)"
   }
 }

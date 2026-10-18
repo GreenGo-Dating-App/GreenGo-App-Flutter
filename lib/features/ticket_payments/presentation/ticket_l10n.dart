@@ -1,5 +1,6 @@
 import '../../../generated/app_localizations.dart';
 import '../data/ticket_payments_service.dart';
+import '../domain/price_phases.dart';
 import '../domain/ticket_payments.dart';
 
 /// Localized texts for ticket payments (reason codes, statuses, methods).
@@ -25,6 +26,35 @@ class TicketL10n {
     if (key == kTicketMethodBankTransfer) return l.tpMethodBankTransfer;
     return _methodBrands[key] ?? key;
   }
+
+  /// Preset price-phase name.
+  static String phaseName(AppLocalizations l, PricePhaseName n) => switch (n) {
+        PricePhaseName.superEarlyBird => l.ppNameSuperEarlyBird,
+        PricePhaseName.earlyBird => l.ppNameEarlyBird,
+        PricePhaseName.presale => l.ppNamePresale,
+        PricePhaseName.regular => l.ppNameRegular,
+        PricePhaseName.late => l.ppNameLate,
+        PricePhaseName.lastMinute => l.ppNameLastMinute,
+        PricePhaseName.door => l.ppNameDoor,
+      };
+
+  /// Stored phase key (orders, tickets) -> localized name (the key if unknown).
+  static String phaseNameKey(AppLocalizations l, String key) {
+    final n = PricePhaseName.fromWire(key);
+    return n == null ? key : phaseName(l, n);
+  }
+
+  /// Editor validation message of a price-phase setup.
+  static String phaseError(AppLocalizations l, PricePhaseError e) => switch (e) {
+        PricePhaseError.notIncreasing => l.ppErrNotIncreasing,
+        PricePhaseError.overCapacity => l.ppErrOverCapacity,
+        PricePhaseError.priceRange => l.eventsPriceRange,
+        PricePhaseError.quantity => l.ppErrQuantity,
+        PricePhaseError.belowSold => l.ppErrBelowSold,
+        PricePhaseError.soldPhaseRemoved || PricePhaseError.soldPriceChanged => l.ppErrSoldLocked,
+        PricePhaseError.insertedBeforeSold => l.ppErrInsertedBeforeSold,
+        PricePhaseError.duplicateName || PricePhaseError.tooMany => l.ppErrDuplicateName,
+      };
 
   static String payoutStatus(AppLocalizations l, PayoutStatus s) => switch (s) {
         PayoutStatus.notConnected => l.tpStatusNotConnected,
@@ -68,7 +98,15 @@ class TicketL10n {
   /// A server refusal (`details.code`) as a sentence.
   static String error(AppLocalizations l, Object e) {
     final reason = e is TicketPaymentException ? e.reason : 'internal';
+    if (reason == 'price_changed' && e is TicketPaymentException) {
+      final total = e.details['total'];
+      final currency = e.details['currency'];
+      if (total is num && currency is String) {
+        return l.tpErrPriceChanged(formatTicketAmount(total.toInt(), currency));
+      }
+    }
     return switch (reason) {
+      'price_phases_invalid' => l.tpErrPricePhasesInvalid,
       'payments_not_configured' => l.tpBlockNotConfigured,
       'organizer_payments_not_ready' => l.tpErrNotOnSale,
       'seller_billing_missing' => l.tpErrNotOnSale,

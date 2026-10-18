@@ -1,7 +1,10 @@
 import '../../../../core/widgets/listing_wizard.dart';
 import '../widgets/event_location_map.dart';
 import '../../../ticket_payments/presentation/ticket_l10n.dart';
+import '../../../ticket_payments/data/ticket_payments_service.dart';
+import '../../../ticket_payments/domain/price_phases.dart';
 import '../../../ticket_payments/domain/ticket_payments.dart';
+import '../../../ticket_payments/presentation/widgets/price_phases_widgets.dart';
 import '../../../ticket_payments/presentation/screens/get_paid_screen.dart';
 import '../../../ticket_payments/presentation/screens/ticket_types_screen.dart';
 import '../../../ticket_payments/presentation/widgets/buy_ticket_sheet.dart';
@@ -2670,6 +2673,16 @@ class EventDetailsScreen extends StatelessWidget {
                         : AppLocalizations.of(context)!
                             .eventsSpotsLeft(event.spotsLeft),
                   ),
+                  // Ticket price phases: current price, "N left at this
+                  // price", the next phase, sold-out phases struck through.
+                  if (!event.isFree && event.hasPricePhases) ...[
+                    const SizedBox(height: 12),
+                    EventPricePhasesSection(
+                      eventId: event.id,
+                      phases: event.pricePhases,
+                      currency: event.currencyCode ?? event.currency,
+                    ),
+                  ],
                   if (event.isPrivate) ...[
                     const SizedBox(height: 12),
                     _buildInfoRow(
@@ -3628,6 +3641,13 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   // Paid tickets: how buyers pay (instant Stripe / MP or manual link).
   TicketPaymentChoice _ticket = const TicketPaymentChoice();
   final _maxPerUserController = TextEditingController(text: '4');
+  // Ticket price phases (early bird...): the editor's latest list (price
+  // order), the saved list, and the server's reserved count per phase.
+  List<PricePhase> _pricePhases = const [];
+  List<PricePhase> _savedPhases = const [];
+  Map<String, int> _phaseSold = const {};
+  // Bumped when a draft restore replaces the list (re-creates the editor).
+  int _phasesEpoch = 0;
   String _currency = '\$';
   static const List<String> _currencies = ['\$', '€', '£', 'R\$', '¥'];
   EventVisibility _visibility = EventVisibility.public;
@@ -3943,6 +3963,13 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       instructions: e.ticketPaymentInstructions,
     );
     _maxPerUserController.text = e.maxTicketsPerUser?.toString() ?? '';
+    _pricePhases = e.pricePhases;
+    _savedPhases = e.pricePhases;
+    if (e.hasPricePhases) {
+      TicketPaymentsService().phaseSold(e.id).then((s) {
+        if (mounted) setState(() => _phaseSold = s);
+      });
+    }
     _visibility = e.visibility;
     _attendeeListVisibility = e.attendeeListVisibility;
     _guestsAllowed = e.guestBookingAllowed && e.isPublic;
@@ -4548,7 +4575,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               error: _ticketsError,
               summary: () => _isFree
                   ? AppLocalizations.of(context)!.eventsFreeEvent
-                  : '$_currency${_priceController.text} · ${_isUnlimited ? '\u221e' : _maxAttendeesController.text}',
+                  : '$_currency${_displayPriceText()} · ${_isUnlimited ? '\u221e' : _maxAttendeesController.text}',
               builder: (context) => Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
             SwitchListTile(
               contentPadding: EdgeInsets.zero,
@@ -4649,6 +4676,15 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                     ),
                   ),
                   const SizedBox(width: 12),
+                  if (_pricePhases.isNotEmpty)
+                    Expanded(
+                      child: Text(
+                        AppLocalizations.of(context)!.ppPriceFollowsPhase,
+                        key: const ValueKey('event-price-follows-phase'),
+                        style: const TextStyle(color: AppColors.textTertiary, fontSize: 12.5),
+                      ),
+                    )
+                  else
                   Expanded(
                     child: TextFormField(
                       controller: _priceController,
@@ -4677,6 +4713,18 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 keyboardType: TextInputType.number,
                 decoration: _inputDecoration(
                     AppLocalizations.of(context)!.tpMaxTicketsPerUser),
+              ),
+              const SizedBox(height: 16),
+              PricePhasesEditor(
+                key: ValueKey('price-phases-$_phasesEpoch'),
+                initial: _pricePhases,
+                sold: _phaseSold,
+                currency: _currency,
+                capacity: _phaseCapacity,
+                provider: _ticket.provider,
+                basePrice: double.tryParse(_priceController.text),
+                listingId: widget.existing?.id,
+                onChanged: (p) => setState(() => _pricePhases = p),
               ),
             ],
             if (!_isFree && _isEditing) ...[
@@ -4760,11 +4808,41 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       final c = int.tryParse(_maxAttendeesController.text.trim());
       if (c == null || c < 1) return l.wzErrCapacity;
     }
-    if (!_isFree) {
+    if (!_isFree && _pricePhases.isEmpty) {
       final n = int.tryParse(_priceController.text.trim());
       if (n == null || n < 1 || n > 1000) return l.eventsPriceRange;
     }
+    if (!_isFree && _pricePhases.isNotEmpty) {
+      final err = _phaseError();
+      if (err != null) return TicketL10n.phaseError(l, err);
+    }
     return null;
+  }
+
+  /// maxAttendees as saved (<= 0 = unlimited).
+  int get _phaseCapacity =>
+      _isUnlimited ? 0 : (int.tryParse(_maxAttendeesController.text.trim()) ?? 0);
+
+  PricePhaseError? _phaseError() => validatePricePhases(
+        _pricePhases,
+        capacity: _phaseCapacity,
+        currency: isoCurrencyFor(_currency) ?? 'usd',
+        sold: _phaseSold,
+        original: _savedPhases,
+      );
+
+  /// With phases the event price is the CURRENT phase's (first with tickets
+  /// left; the last one when all are sold out).
+  double? _phasePrice() {
+    if (_pricePhases.isEmpty) return null;
+    final i = currentPricePhaseIndex(_pricePhases, _phaseSold);
+    return (i >= 0 ? _pricePhases[i] : _pricePhases.last).price;
+  }
+
+  String _displayPriceText() {
+    final p = _phasePrice();
+    if (p == null) return _priceController.text;
+    return p == p.roundToDouble() ? p.toInt().toString() : p.toString();
   }
 
   String? _paymentError() {
@@ -4801,7 +4879,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 style: const TextStyle(color: AppColors.textSecondary)),
             Text(_locationController.text, style: const TextStyle(color: AppColors.textSecondary)),
             const SizedBox(height: 6),
-            Text(_isFree ? l.eventsFreeLabel : '$_currency${_priceController.text}',
+            Text(_isFree ? l.eventsFreeLabel : '$_currency${_displayPriceText()}',
                 style: const TextStyle(color: AppColors.richGold, fontWeight: FontWeight.w700)),
           ]),
         ),
@@ -4838,6 +4916,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         'guests': _guestsAllowedPerAttendee,
         'provider': _ticket.provider?.wire,
         'linkMethod': _ticket.linkMethod,
+        'pricePhases': _pricePhases.map((p) => p.toMap()).toList(),
       };
 
   void _restoreDraft(Map<String, dynamic> d) {
@@ -4861,6 +4940,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       _guestsAllowedPerAttendee = (d['guests'] as int?) ?? 0;
       _ticket = TicketPaymentChoice(
           provider: TicketProvider.fromWire(d['provider']), linkMethod: d['linkMethod'] as String?);
+      _pricePhases = sortPricePhases(PricePhase.listFrom(d['pricePhases']));
+      _phasesEpoch++;
     });
   }
 
@@ -5351,9 +5432,17 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       return;
     }
     final maxPerUser = int.tryParse(_maxPerUserController.text.trim());
+    if (!_isFree && _pricePhases.isNotEmpty && _phaseError() != null) {
+      unawaited(showUserErrorMessage(
+          context, TicketL10n.phaseError(AppLocalizations.of(context)!, _phaseError()!)));
+      return;
+    }
+    final phases = _isFree ? const <PricePhase>[] : sortPricePhases(_pricePhases);
+    // With phases the event price follows the current phase (the server
+    // keeps it there as tickets sell); old apps keep showing that price.
     final price = _isFree
         ? null
-        : (double.tryParse(_priceController.text)?.clamp(1, 1000))?.toDouble();
+        : (_phasePrice() ?? double.tryParse(_priceController.text)?.clamp(1, 1000))?.toDouble();
     final languagePairs = _category == EventCategory.languageExchange
         ? (_languagePairsController.text.isNotEmpty
             ? _languagePairsController.text
@@ -5390,6 +5479,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             _ticket.provider == TicketProvider.link ? _ticket.instructions : null,
         currencyCode: _isFree ? null : isoCurrencyFor(_currency),
         clearTicketing: _isFree,
+        pricePhases: phases,
         maxTicketsPerUser: maxPerUser == 0 ? null : maxPerUser,
         clearMaxTicketsPerUser: maxPerUser == null || maxPerUser == 0,
         visibility: _visibility,
@@ -5442,6 +5532,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
           _ticket.provider == TicketProvider.link ? _ticket.instructions : null,
       currencyCode: _isFree ? null : isoCurrencyFor(_currency),
       maxTicketsPerUser: maxPerUser == 0 ? null : maxPerUser,
+      pricePhases: phases,
       visibility: _visibility,
       attendeeListVisibility: _attendeeListVisibility,
       guestBookingAllowed: _guestsAllowed && _visibility == EventVisibility.public,

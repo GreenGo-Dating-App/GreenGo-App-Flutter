@@ -26036,6 +26036,122 @@ class AppLocalizationsPt extends AppLocalizations {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String get ppSectionTitle => 'Fases de preço (antecipado…)';
+
+  @override
+  String get ppSectionHint =>
+      'Venda os primeiros bilhetes mais baratos. Cada fase tem o seu preço e número de bilhetes; quando uma esgota, começa a seguinte. Cada fase tem de custar mais do que a anterior. As fases definem o preço do bilhete geral (não dos tipos de bilhete).';
+
+  @override
+  String get ppAddPhase => 'Adicionar fase';
+
+  @override
+  String get ppPhaseName => 'Nome';
+
+  @override
+  String get ppPhasePrice => 'Preço';
+
+  @override
+  String get ppPhaseQuantity => 'Bilhetes a este preço';
+
+  @override
+  String get ppRemovePhase => 'Remover fase';
+
+  @override
+  String ppPhaseSold(int count) {
+    return '$count vendidos';
+  }
+
+  @override
+  String get ppLockedHint =>
+      'As fases com vendas mantêm o preço e não podem ser removidas; as novas vêm depois.';
+
+  @override
+  String ppYouReceive(String amount) {
+    return 'Recebe ≈ $amount por bilhete';
+  }
+
+  @override
+  String get ppPriceFollowsPhase => 'O preço do evento segue a fase atual.';
+
+  @override
+  String get ppNameSuperEarlyBird => 'Super antecipado';
+
+  @override
+  String get ppNameEarlyBird => 'Antecipado';
+
+  @override
+  String get ppNamePresale => 'Pré-venda';
+
+  @override
+  String get ppNameRegular => 'Normal';
+
+  @override
+  String get ppNameLate => 'Tardio';
+
+  @override
+  String get ppNameLastMinute => 'Última hora';
+
+  @override
+  String get ppNameDoor => 'Na porta';
+
+  @override
+  String get ppErrNotIncreasing =>
+      'Cada fase tem de custar mais do que a anterior';
+
+  @override
+  String get ppErrOverCapacity =>
+      'As fases têm mais bilhetes do que a capacidade do evento';
+
+  @override
+  String get ppErrQuantity => 'Cada fase precisa de pelo menos 1 bilhete';
+
+  @override
+  String get ppErrBelowSold =>
+      'Uma fase não pode ter menos bilhetes do que os que já vendeu';
+
+  @override
+  String get ppErrSoldLocked =>
+      'Uma fase com vendas não pode ser removida nem mudar de preço';
+
+  @override
+  String get ppErrInsertedBeforeSold =>
+      'As novas fases vêm depois das que já venderam';
+
+  @override
+  String get ppErrDuplicateName => 'Cada nome só pode ser usado uma vez';
+
+  @override
+  String get ppBuyerTitle => 'Preços dos bilhetes';
+
+  @override
+  String get ppNow => 'Agora';
+
+  @override
+  String ppLeftAtPrice(int count) {
+    return 'Restam $count a este preço';
+  }
+
+  @override
+  String ppThenNext(String price, String name) {
+    return 'depois $price ($name)';
+  }
+
+  @override
+  String ppLineQty(String name, int count) {
+    return '$name × $count';
+  }
+
+  @override
+  String tpErrPriceChanged(String price) {
+    return 'O preço mudou para $price';
+  }
+
+  @override
+  String get tpErrPricePhasesInvalid =>
+      'A venda está em pausa até o organizador corrigir as fases de preço.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -52077,4 +52193,120 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String get ppSectionTitle => 'Lotes de preço (antecipado…)';
+
+  @override
+  String get ppSectionHint =>
+      'Venda os primeiros ingressos mais baratos. Cada lote tem seu preço e sua quantidade de ingressos; quando um esgota, começa o próximo. Cada lote precisa custar mais que o anterior. Os lotes definem o preço do ingresso geral (não dos tipos de ingresso).';
+
+  @override
+  String get ppAddPhase => 'Adicionar lote';
+
+  @override
+  String get ppPhaseName => 'Nome';
+
+  @override
+  String get ppPhasePrice => 'Preço';
+
+  @override
+  String get ppPhaseQuantity => 'Ingressos neste preço';
+
+  @override
+  String get ppRemovePhase => 'Remover lote';
+
+  @override
+  String ppPhaseSold(int count) {
+    return '$count vendidos';
+  }
+
+  @override
+  String get ppLockedHint =>
+      'Lotes com vendas mantêm o preço e não podem ser removidos; os novos vêm depois.';
+
+  @override
+  String ppYouReceive(String amount) {
+    return 'Você recebe ≈ $amount por ingresso';
+  }
+
+  @override
+  String get ppPriceFollowsPhase => 'O preço do evento segue o lote atual.';
+
+  @override
+  String get ppNameSuperEarlyBird => 'Super antecipado';
+
+  @override
+  String get ppNameEarlyBird => 'Antecipado';
+
+  @override
+  String get ppNamePresale => 'Pré-venda';
+
+  @override
+  String get ppNameRegular => 'Normal';
+
+  @override
+  String get ppNameLate => 'Tardio';
+
+  @override
+  String get ppNameLastMinute => 'Última hora';
+
+  @override
+  String get ppNameDoor => 'Na porta';
+
+  @override
+  String get ppErrNotIncreasing =>
+      'Cada lote precisa custar mais que o anterior';
+
+  @override
+  String get ppErrOverCapacity =>
+      'Os lotes têm mais ingressos que a capacidade do evento';
+
+  @override
+  String get ppErrQuantity => 'Cada lote precisa de pelo menos 1 ingresso';
+
+  @override
+  String get ppErrBelowSold =>
+      'Um lote não pode ter menos ingressos do que já vendeu';
+
+  @override
+  String get ppErrSoldLocked =>
+      'Um lote com vendas não pode ser removido nem mudar de preço';
+
+  @override
+  String get ppErrInsertedBeforeSold =>
+      'Os novos lotes vêm depois dos que já venderam';
+
+  @override
+  String get ppErrDuplicateName => 'Cada nome só pode ser usado uma vez';
+
+  @override
+  String get ppBuyerTitle => 'Preços dos ingressos';
+
+  @override
+  String get ppNow => 'Agora';
+
+  @override
+  String ppLeftAtPrice(int count) {
+    return 'Restam $count neste preço';
+  }
+
+  @override
+  String ppThenNext(String price, String name) {
+    return 'depois $price ($name)';
+  }
+
+  @override
+  String ppLineQty(String name, int count) {
+    return '$name × $count';
+  }
+
+  @override
+  String tpErrPriceChanged(String price) {
+    return 'O preço mudou para $price';
+  }
+
+  @override
+  String get tpErrPricePhasesInvalid =>
+      'A venda está pausada até o organizador corrigir os lotes.';
 }

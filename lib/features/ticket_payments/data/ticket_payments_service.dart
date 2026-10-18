@@ -7,14 +7,18 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../domain/price_phases.dart';
 import '../domain/ticket_fees.dart';
 import '../domain/ticket_payments.dart';
 
 /// A callable failure with the server's reason code (`details.code`).
 class TicketPaymentException implements Exception {
-  const TicketPaymentException(this.reason, [this.message]);
+  const TicketPaymentException(this.reason, [this.message, this.details = const {}]);
   final String reason;
   final String? message;
+
+  /// The server's `details` (e.g. `price_changed`: total, currency, lines).
+  final Map<String, dynamic> details;
   @override
   String toString() => 'TicketPaymentException($reason)';
 }
@@ -65,7 +69,8 @@ class TicketPaymentsService {
     } on FirebaseFunctionsException catch (e) {
       final d = e.details;
       final reason = d is Map && d['code'] is String ? d['code'] as String : e.code;
-      throw TicketPaymentException(reason, e.message);
+      throw TicketPaymentException(
+          reason, e.message, d is Map ? Map<String, dynamic>.from(d) : const {});
     }
   }
 
@@ -158,6 +163,8 @@ class TicketPaymentsService {
   }
 
   /// [items] = {typeId: qty} for events with ticket types (else [quantity]).
+  /// [expectedTotal] (minor units) = what the buyer was shown; the server
+  /// refuses with `price_changed` (+ the new total) when it differs.
   Future<TicketCheckoutResult> createCheckout({
     required String kind,
     required String id,
@@ -165,6 +172,7 @@ class TicketPaymentsService {
     int quantity = 1,
     Map<String, int>? items,
     String? locale,
+    int? expectedTotal,
   }) async {
     final m = await _call('createTicketCheckout', {
       'kind': kind,
@@ -179,12 +187,27 @@ class TicketPaymentsService {
         'quantity': quantity,
       'platform': _platform,
       if (locale != null) 'locale': locale,
+      if (expectedTotal != null) 'expectedTotal': expectedTotal,
     });
     return TicketCheckoutResult(
       orderId: m['orderId'] as String,
       isFree: m['mode'] == 'free',
       checkoutUrl: m['checkoutUrl'] as String?,
     );
+  }
+
+  // ─────────────────────────────── price phases (events)
+
+  /// Tickets reserved per price phase of [eventId] (server-only counters in
+  /// `ticket_inventory/event_{id}`; one doc read). Empty when unknown.
+  Future<Map<String, int>> phaseSold(String eventId) async {
+    try {
+      final d = await _db.collection('ticket_inventory').doc('event_$eventId').get();
+      return phaseSoldFrom(d.data()?['phaseSold']);
+    } catch (e) {
+      debugPrint('[tickets] phase counters: $e');
+      return const {};
+    }
   }
 
   // ─────────────────────────────── ticket types (events)

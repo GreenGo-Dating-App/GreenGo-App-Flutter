@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 
+import '../../../ticket_payments/domain/price_phases.dart';
 import 'event_scheduling.dart';
 
 export 'event_scheduling.dart';
@@ -165,6 +166,7 @@ class Event extends Equatable {
     this.currencyCode,
     this.maxTicketsPerUser = 4,
     this.guestBookingAllowed = false,
+    this.pricePhases = const [],
   });
   final String id;
   final String organizerId;
@@ -282,6 +284,14 @@ class Event extends Equatable {
   /// link (name + e-mail, server-rendered guest page; functions/src/guest).
   /// Public events only (enforced in firestore.rules). Default off.
   final bool guestBookingAllowed;
+
+  /// Optional ticket price phases (early bird, presale, ...), in price order.
+  /// Empty = the single [price]. With phases, [price] follows the CURRENT
+  /// phase (set by the editor, kept up to date by the server at checkout)
+  /// and the server prices every ticket from the phases.
+  final List<PricePhase> pricePhases;
+
+  bool get hasPricePhases => pricePhases.isNotEmpty;
 
   /// Paid event that can actually be bought (a ticket provider is set).
   bool get sellsTickets => !isFree && ticketProvider != null;
@@ -439,6 +449,7 @@ class Event extends Equatable {
         currencyCode,
         maxTicketsPerUser,
         guestBookingAllowed,
+        pricePhases,
       ];
 
   Event copyWith({
@@ -498,6 +509,7 @@ class Event extends Equatable {
     int? maxTicketsPerUser,
     bool clearMaxTicketsPerUser = false,
     bool? guestBookingAllowed,
+    List<PricePhase>? pricePhases,
     bool clearTicketing = false,
     bool clearCommunityId = false,
     // Drops latitude/longitude/city/country (a manually typed location that
@@ -569,6 +581,7 @@ class Event extends Equatable {
           ? null
           : (maxTicketsPerUser ?? this.maxTicketsPerUser),
       guestBookingAllowed: guestBookingAllowed ?? this.guestBookingAllowed,
+      pricePhases: clearTicketing ? const [] : (pricePhases ?? this.pricePhases),
     );
   }
 }

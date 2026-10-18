@@ -32,6 +32,84 @@ Branch `feat/ticket-payments` · 2026-10-08 · nothing deployed.
 >   bookings already open keep working until they close (confirm / reject /
 >   remind / expire). Leftover profile data: `functions/scripts/clear-payment-links.ts`.
 
+> **Update 2026-10-17 (branch `feat/ticket-price-phases`): ticket price phases
+> ("early bird").** Nothing deployed.
+>
+> * **What the organizer sets.** A paid event may carry `pricePhases`: an
+>   ordered list (max 10; one per preset name, so 7 in practice) of
+>   `{ id (stable, app-generated), nameKey, price, quantity }`. `nameKey` is one
+>   of `superEarlyBird · earlyBird · presale · regular · late · lastMinute ·
+>   door` (rendered localized: "Super early bird", "Early bird", "Presale",
+>   "Regular", "Late", "Last minute", "At the door"). `price` is in MAJOR units
+>   of the event currency, like `events.price`, within the same 1..1000
+>   limits; `quantity` (int >= 1) = tickets sold at that price. Prices strictly
+>   increase phase by phase; with a capacity (`maxAttendees > 0`) the
+>   quantities add up to at most the capacity. Phases set the price of the
+>   general ticket; events with **ticket types** keep the type prices
+>   (phases do not apply to `items` orders). No phases = exactly as before.
+> * **Current phase / price.** The first phase with tickets left. The app shows
+>   it on the event ("Now", "N left at this price", "then X (Late)", sold-out
+>   phases struck through) and in the buy sheet; `events.price` is set by the
+>   editor to the current phase and moved on by `createTicketCheckout` when a
+>   phase sells out, so old apps display a sensible price. All phases sold out
+>   = sold out for ticket sales; the capacity is still checked as an extra
+>   limit.
+> * **Counters (server-only).** In the doc that already holds the seat holds,
+>   `ticket_inventory/event_{id}`: `phaseSold {phaseId: n}` (= tickets
+>   RESERVED: open orders holding seats + paid orders) and `phaseLocks
+>   {phaseId: unitMinor}` (the price the phase was first sold at). Chosen over
+>   the event doc because every checkout / release already writes that doc in
+>   the same transaction: no extra writes and no event-trigger fan-out (~8
+>   `events/{id}` triggers) per sale. Reserved in the `createTicketCheckout`
+>   transaction (race-safe: computed from the read doc, like `held`);
+>   released exactly where seats are released (expire / cancel / reject /
+>   supersede in `closeOrder` + the checkout, refund / dispute in
+>   `markOrderReversed`); a late payment of a released order counts again
+>   (`markOrderPaid`). Idempotent through the order status transitions.
+>   Signed-in users may `get` one inventory doc (rules: no list, no writes).
+> * **Orders.** An order for N tickets takes them from the current phase on
+>   and may span phases. `ticket_orders.phaseLines = [{phaseId, nameKey,
+>   unitAmount (minor), quantity}]`, `totalAmount` = sum, `unitAmount` = the
+>   highest line, `feeLines = [{phaseId, unitFee, quantity}]`: the GreenGo
+>   fee is computed **per ticket on that ticket's own price** (fees.ts, seller
+>   pays as before). Stripe / MP get one line per phase ("Title – Early bird").
+>   Each `tickets/{id}` carries `pricePhaseId`, `pricePhaseNameKey` and its own
+>   `unitAmount`.
+> * **The server decides the price.** `createTicketCheckout` (members and the
+>   guest pages, the only paths that create event orders) ALWAYS prices from
+>   the phases. The app sends `expectedTotal` (minor units, what the buyer
+>   saw); when it differs the call fails with `price_changed` + `{ total,
+>   currency, quantity, lines }` and the app shows "The price has changed to
+>   X" with Retry. Old apps send nothing and are simply charged the server
+>   price (Stripe / MP show the real amount before paying).
+> * **Editing after sales start.** The organizer writes the event doc directly
+>   (no callable), so: the RULES check the shape of `pricePhases` (list <= 10,
+>   only the 4 keys, preset name, price 1..1000, quantity int >= 1, prices
+>   strictly increasing; only when the field changes), and EVERY CHECKOUT
+>   validates the whole setup against the counters before selling: a phase with
+>   reservations cannot be removed (`phase_with_sales_removed`), keeps its
+>   locked price (`phase_with_sales_price_changed`), cannot go below what it
+>   sold (`phase_quantity_below_sold`); a phase that never sold may not be
+>   placed before one that has (`phase_inserted_before_sold`); plus the
+>   structural rules (`phase_prices_not_increasing`, `phases_exceed_capacity`,
+>   `duplicate_phase_name`, ...). Any of these -> `price_phases_invalid` with
+>   `details.reason`, nothing is sold ("Ticket sales are paused while the
+>   organizer fixes the price phases"). The editor enforces the same rules
+>   inline (sold phases: price and remove disabled, "N sold").
+> * Code: `functions/src/ticket_payments/pricePhases.ts` (pure, unit-tested),
+>   `orders.ts`, `guest/guestService.ts` (guest page price + tickets left);
+>   app `lib/features/ticket_payments/domain/price_phases.dart`,
+>   `presentation/widgets/price_phases_widgets.dart` (editor section, buyer
+>   view), `buy_ticket_sheet.dart`, `ticket_purchase.dart`, the event editor /
+>   detail in `events_screen.dart` (community events use the same editor).
+> * Tests: `functions/__tests__/unit/ticketPricePhases.test.ts`,
+>   `functions/__tests__/security/ticket-price-phases.emulator.test.ts` (run
+>   against `firestore.rules` and `firestore.additive.rules`),
+>   `test/features/ticket_payments/price_phases_test.dart`.
+> * Deploy: rules (`ticket_inventory` get + `pricePhases` checks, both rule
+>   files) and the functions that import `ticket_payments/orders.ts` or
+>   `guest/guestService.ts`; see the branch report. No new indexes.
+
 GreenGo sells tickets for paid events and paid experiences **without touching
 the ticket money**: every payment goes straight to the organizer; GreenGo's
 service fee (above) is collected on top. The QR ticket exists **only after the
@@ -152,7 +230,8 @@ checkout; existing orders/tickets keep their stored price.
 | `ticket_orders/{orderId}` | buyer, organizer | status `creating·pending·pending_payment·awaiting_confirmation·paid·expired·cancelled·failed·rejected·refunded·disputed`, amounts, items, code, payment snapshot, receiptPath, ticketIds |
 | `tickets/{orderId}_{n}` | buyer only | signed `qrPayload`, status `valid·refunded·disputed`, type, partySize, checkedInAt |
 | `ticket_holdings/{kind}_{listingId}_{uid}` | that buyer | `{held, owned, types{}}` per-person limit counter |
-| `ticket_inventory/event_{id}`, `ticket_codes/{code}`, `payment_events/{key}`, `experience_slot_counters/{id}` | nobody | holds, code uniqueness, webhook idempotency, slot counters |
+| `ticket_inventory/event_{id}` | signed-in (`get` only) | `held` seats + price phases `phaseSold` / `phaseLocks` |
+| `ticket_codes/{code}`, `payment_events/{key}`, `experience_slot_counters/{id}` | nobody | code uniqueness, webhook idempotency, slot counters |
 | `events/{id}/ticket_types/{typeId}` | signed-in | organizer/co-owners write everything except `sold`/`held` |
 | Storage `ticket_receipts/{orderId}/…` | buyer, organizer, staff | buyer uploads one image ≤ 5 MB while the order is open; moderated as a private image |
 

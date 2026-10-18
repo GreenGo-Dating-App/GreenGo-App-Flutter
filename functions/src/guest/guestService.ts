@@ -33,6 +33,7 @@ import {
   syncOrderWithProvider, typeSaleError,
 } from '../ticket_payments/orders';
 import { toMajor } from '../ticket_payments/currency';
+import { currentPhaseIndex, phaseName, phasesLeft, readPricePhases, validatePricePhases } from '../ticket_payments/pricePhases';
 import { createBooking, loadConfig } from '../experience_bookings/service';
 import { getExperienceAvailability } from '../experience_bookings/availability';
 import { gt, GuestKey } from './guestI18n';
@@ -178,6 +179,8 @@ function getAttractionBucket(): Promise<string> {
 interface Loaded {
   d: Record<string, any>;
   held: number;
+  /** ticket_inventory/event_{id}.phaseSold (price phases), {} otherwise. */
+  phaseSold: Record<string, number>;
   types: Array<{ id: string; t: Record<string, any> }>;
 }
 
@@ -187,13 +190,15 @@ async function loadListing(kind: GuestKind, id: string): Promise<Loaded | null> 
   if (!snap.exists) return null;
   const d = snap.data() as Record<string, any>;
   let held = 0;
+  let phaseSold: Record<string, number> = {};
   let types: Loaded['types'] = [];
   if (kind === 'e' && eventSale(d) === 'instant') {
     const [inv, ty] = await Promise.all([inventoryRef(id).get(), ref.collection(TICKET_TYPES).limit(20).get()]);
     held = Number(inv.data()?.held) || 0;
+    phaseSold = (inv.data()?.phaseSold || {}) as Record<string, number>;
     types = ty.docs.map((x) => ({ id: x.id, t: x.data() }));
   }
-  return { d, held, types };
+  return { d, held, phaseSold, types };
 }
 
 /** Upcoming start times a guest may request (recurring rules + one-off slots), max 40. */
@@ -261,11 +266,25 @@ async function listingView(
     if (host && host !== 'Current User') facts.push([gt(locale, 'guest.page.host'), host]);
     const sale = eventSale(d);
     const cur = isoCurrency(d.currencyCode, d.currency);
+    // Price phases (ticket_payments/pricePhases.ts): the CURRENT phase's
+    // price and the tickets left across phases (createTicketCheckout prices
+    // the order again).
+    const rawPhases = L.types.length || sale === 'free' ? null : readPricePhases(d.pricePhases);
+    const pv = rawPhases && cur ? validatePricePhases(rawPhases, Math.floor(Number(d.maxAttendees) || 0), cur) : null;
+    const phases = pv && pv.ok ? pv.phases : null;
+    const curIdx = phases ? currentPhaseIndex(phases, L.phaseSold) : -1;
     if (sale === 'free') facts.push([gt(locale, 'guest.page.price'), gt(locale, 'guest.page.free')]);
-    else if (!L.types.length && typeof d.price === 'number') {
+    else if (phases && curIdx >= 0) {
+      facts.push([gt(locale, 'guest.page.price'),
+        `${priceLabel(phases[curIdx].price, cur ? cur.toUpperCase() : null, locale)} · ${phaseName(phases[curIdx].nameKey, locale)}`]);
+    } else if (!L.types.length && typeof d.price === 'number') {
       facts.push([gt(locale, 'guest.page.price'), priceLabel(d.price, cur ? cur.toUpperCase() : null, locale)]);
     }
     seatsLeft = eventSeatsLeft(d, L.held);
+    if (phases) {
+      const phaseLeft = phasesLeft(phases, L.phaseSold).reduce((a, b) => a + b, 0);
+      seatsLeft = seatsLeft === null ? phaseLeft : Math.min(seatsLeft, phaseLeft);
+    }
     if (!block && seatsLeft !== 0) {
       if (sale === 'free') {
         form = { mode: 'free', action: `/guest/e/${encodeURIComponent(id)}`, token };

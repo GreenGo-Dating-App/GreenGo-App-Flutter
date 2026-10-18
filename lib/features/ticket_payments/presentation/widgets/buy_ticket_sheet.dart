@@ -6,7 +6,9 @@ import '../../../../generated/app_localizations.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../../trader/presentation/widgets/seller_trader_info.dart';
 import '../../data/ticket_payments_service.dart';
+import '../../domain/price_phases.dart';
 import '../../domain/ticket_payments.dart';
+import '../ticket_l10n.dart';
 import '../ticket_purchase.dart';
 import 'ticket_fee_widgets.dart';
 
@@ -15,6 +17,10 @@ import 'ticket_fee_widgets.dart';
 /// capacity and the per-person limit ("You can buy N more"). The exact total
 /// (the ticket prices: the GreenGo service fee is paid by the seller) is shown
 /// BEFORE the checkout opens. The server re-checks (and re-prices) every number.
+/// Events with price phases: the tickets are priced from the current phase on
+/// (an order may span phases, one line per phase) and the shown total is sent
+/// as `expectedTotal` (the server answers `price_changed` if a phase sold out
+/// meanwhile).
 class BuyTicketSheet extends StatefulWidget {
   const BuyTicketSheet({
     super.key,
@@ -23,6 +29,7 @@ class BuyTicketSheet extends StatefulWidget {
     this.service,
     this.types,
     this.alreadyHeld,
+    this.phaseSold,
   });
 
   final Event event;
@@ -32,6 +39,7 @@ class BuyTicketSheet extends StatefulWidget {
   /// Test seams.
   final List<TicketType>? types;
   final int? alreadyHeld;
+  final Map<String, int>? phaseSold;
 
   static Future<void> show(BuildContext context, {required Event event, required String uid}) =>
       showModalBottomSheet<void>(
@@ -52,6 +60,8 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
   Map<String, int> _heldPerType = const {};
   final Map<String, int> _qty = {};
   int _single = 1;
+  // Reserved per price phase (null while loading; events with phases only).
+  Map<String, int>? _phaseSold;
 
   String get _currency => widget.event.currencyCode ?? isoCurrencyFor(widget.event.currency) ?? 'usd';
 
@@ -66,6 +76,15 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
       }).catchError((Object _) {
         if (mounted) setState(() => _types = const []);
       });
+    }
+    if (widget.event.hasPricePhases) {
+      if (widget.phaseSold != null) {
+        _phaseSold = widget.phaseSold;
+      } else {
+        _svc.phaseSold(widget.event.id).then((s) {
+          if (mounted) setState(() => _phaseSold = s);
+        });
+      }
     }
     if (widget.alreadyHeld != null) {
       _held = widget.alreadyHeld!;
@@ -94,8 +113,21 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
       ? _qty.values.fold(0, (a, b) => a + b)
       : _single;
 
+  /// Price phases apply to the general ticket (events without ticket types).
+  bool get _phased => widget.event.hasPricePhases && (_types?.isEmpty ?? false);
+
+  List<PricePhaseLine>? get _phaseLines =>
+      allocatePricePhases(widget.event.pricePhases, _phaseSold ?? const {}, _single, _currency);
+
+  int get _phaseLeft =>
+      pricePhasesLeft(widget.event.pricePhases, _phaseSold ?? const {}).fold(0, (a, b) => a + b);
+
   int get _total {
     final types = _types ?? const <TicketType>[];
+    if (_phased) {
+      final lines = _phaseLines;
+      return lines == null ? 0 : pricePhaseTotal(lines);
+    }
     if (types.isEmpty) {
       return toMinorUnits(widget.event.price ?? 0, _currency) * _single;
     }
@@ -125,7 +157,7 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
     return SafeArea(
       child: Padding(
         padding: EdgeInsets.fromLTRB(16, 16, 16, 16 + MediaQuery.viewInsetsOf(context).bottom),
-        child: types == null
+        child: types == null || (widget.event.hasPricePhases && types.isEmpty && _phaseSold == null)
             ? const SizedBox(height: 160, child: Center(child: CircularProgressIndicator(color: AppColors.richGold)))
             : Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.stretch, children: [
                 Text(l.tpBuyTickets,
@@ -135,7 +167,9 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
                     key: const ValueKey('buy-can-buy'),
                     style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
                 const SizedBox(height: 12),
-                if (types.isEmpty)
+                if (types.isEmpty && _phased)
+                  ..._phasedRows(l, can)
+                else if (types.isEmpty)
                   _row(
                     key: 'buy-qty-single',
                     title: widget.event.title,
@@ -166,7 +200,8 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
                       backgroundColor: AppColors.richGold,
                       foregroundColor: AppColors.deepBlack,
                       padding: const EdgeInsets.symmetric(vertical: 14)),
-                  onPressed: _selectedCount < 1 || (can != null && _selectedCount > can)
+                  onPressed: _selectedCount < 1 || (can != null && _selectedCount > can) ||
+                          (_phased && _phaseLines == null)
                       ? null
                       : () {
                           final nav = Navigator.of(context);
@@ -176,13 +211,54 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
                               kind: 'event',
                               id: widget.event.id,
                               quantity: _single,
-                              items: types.isEmpty ? null : Map.of(_qty));
+                              items: types.isEmpty ? null : Map.of(_qty),
+                              expectedTotal: _phased ? total : null);
                         },
                   child: Text(l.tpContinueToPay(formatTicketAmount(total, _currency))),
                 ),
               ]),
       ),
     );
+  }
+
+  /// Quantity stepper priced by phase + one line per phase of the order.
+  List<Widget> _phasedRows(AppLocalizations l, int? can) {
+    final phases = widget.event.pricePhases;
+    final sold = _phaseSold ?? const <String, int>{};
+    final cur = currentPricePhaseIndex(phases, sold);
+    final left = _phaseLeft;
+    var max = (can ?? 100).clamp(0, 100);
+    if (left < max) max = left;
+    final lines = _phaseLines;
+    return [
+      _row(
+        key: 'buy-qty-single',
+        title: widget.event.title,
+        subtitle: cur < 0
+            ? l.tpTypeSoldOut
+            : '${TicketL10n.phaseName(l, phases[cur].name)} · '
+                '${formatTicketAmount(toMinorUnits(phases[cur].price, _currency), _currency)} · '
+                '${l.ppLeftAtPrice(pricePhasesLeft(phases, sold)[cur])}',
+        value: _single,
+        min: max < 1 ? 0 : 1,
+        max: max,
+        onChanged: (v) => setState(() => _single = v),
+      ),
+      if (lines != null)
+        for (final x in lines)
+          Padding(
+            key: ValueKey('buy-phase-line-${x.phase.id}'),
+            padding: const EdgeInsets.only(top: 2, bottom: 2),
+            child: Row(children: [
+              Expanded(
+                child: Text(l.ppLineQty(TicketL10n.phaseName(l, x.phase.name), x.quantity),
+                    style: const TextStyle(color: AppColors.textSecondary, fontSize: 13)),
+              ),
+              Text(formatTicketAmount(x.unitAmount * x.quantity, _currency),
+                  style: const TextStyle(color: AppColors.textPrimary, fontSize: 13)),
+            ]),
+          ),
+    ];
   }
 
   Widget _typeRow(AppLocalizations l, TicketType t, TicketTypeState s) {

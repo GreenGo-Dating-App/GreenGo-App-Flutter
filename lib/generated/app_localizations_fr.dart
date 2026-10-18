@@ -26209,4 +26209,122 @@ class AppLocalizationsFr extends AppLocalizations {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String get ppSectionTitle => 'Paliers de prix (early bird…)';
+
+  @override
+  String get ppSectionHint =>
+      'Vendez les premiers billets moins cher. Chaque palier a son prix et son nombre de billets ; quand l\'un est épuisé, le suivant commence. Chaque palier doit coûter plus cher que le précédent. Les paliers fixent le prix du billet général (pas des types de billets).';
+
+  @override
+  String get ppAddPhase => 'Ajouter un palier';
+
+  @override
+  String get ppPhaseName => 'Nom';
+
+  @override
+  String get ppPhasePrice => 'Prix';
+
+  @override
+  String get ppPhaseQuantity => 'Billets à ce prix';
+
+  @override
+  String get ppRemovePhase => 'Retirer le palier';
+
+  @override
+  String ppPhaseSold(int count) {
+    return '$count vendus';
+  }
+
+  @override
+  String get ppLockedHint =>
+      'Les paliers déjà vendus gardent leur prix et ne peuvent pas être retirés ; les nouveaux viennent après.';
+
+  @override
+  String ppYouReceive(String amount) {
+    return 'Vous recevez ≈ $amount par billet';
+  }
+
+  @override
+  String get ppPriceFollowsPhase =>
+      'Le prix de l\'événement suit le palier en cours.';
+
+  @override
+  String get ppNameSuperEarlyBird => 'Super early bird';
+
+  @override
+  String get ppNameEarlyBird => 'Early bird';
+
+  @override
+  String get ppNamePresale => 'Prévente';
+
+  @override
+  String get ppNameRegular => 'Normal';
+
+  @override
+  String get ppNameLate => 'Tardif';
+
+  @override
+  String get ppNameLastMinute => 'Dernière minute';
+
+  @override
+  String get ppNameDoor => 'Sur place';
+
+  @override
+  String get ppErrNotIncreasing =>
+      'Chaque palier doit coûter plus cher que le précédent';
+
+  @override
+  String get ppErrOverCapacity =>
+      'Les paliers ont plus de billets que la capacité de l\'événement';
+
+  @override
+  String get ppErrQuantity => 'Chaque palier doit avoir au moins 1 billet';
+
+  @override
+  String get ppErrBelowSold =>
+      'Un palier ne peut pas avoir moins de billets qu\'il n\'en a déjà vendu';
+
+  @override
+  String get ppErrSoldLocked =>
+      'Un palier déjà vendu ne peut pas être retiré ni changer de prix';
+
+  @override
+  String get ppErrInsertedBeforeSold =>
+      'Les nouveaux paliers viennent après ceux déjà vendus';
+
+  @override
+  String get ppErrDuplicateName =>
+      'Chaque nom ne peut être utilisé qu\'une fois';
+
+  @override
+  String get ppBuyerTitle => 'Prix des billets';
+
+  @override
+  String get ppNow => 'Maintenant';
+
+  @override
+  String ppLeftAtPrice(int count) {
+    return 'Plus que $count à ce prix';
+  }
+
+  @override
+  String ppThenNext(String price, String name) {
+    return 'ensuite $price ($name)';
+  }
+
+  @override
+  String ppLineQty(String name, int count) {
+    return '$name × $count';
+  }
+
+  @override
+  String tpErrPriceChanged(String price) {
+    return 'Le prix est passé à $price';
+  }
+
+  @override
+  String get tpErrPricePhasesInvalid =>
+      'La vente est suspendue le temps que l\'organisateur corrige les paliers de prix.';
 }

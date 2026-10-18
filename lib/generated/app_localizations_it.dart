@@ -26097,4 +26097,121 @@ class AppLocalizationsIt extends AppLocalizations {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String get ppSectionTitle => 'Fasi di prezzo (early bird…)';
+
+  @override
+  String get ppSectionHint =>
+      'Vendi i primi biglietti a meno. Ogni fase ha il suo prezzo e il suo numero di biglietti; quando una è esaurita inizia la successiva. Ogni fase deve costare più della precedente. Le fasi fissano il prezzo del biglietto generale (non dei tipi di biglietto).';
+
+  @override
+  String get ppAddPhase => 'Aggiungi fase';
+
+  @override
+  String get ppPhaseName => 'Nome';
+
+  @override
+  String get ppPhasePrice => 'Prezzo';
+
+  @override
+  String get ppPhaseQuantity => 'Biglietti a questo prezzo';
+
+  @override
+  String get ppRemovePhase => 'Rimuovi fase';
+
+  @override
+  String ppPhaseSold(int count) {
+    return '$count venduti';
+  }
+
+  @override
+  String get ppLockedHint =>
+      'Le fasi con vendite mantengono il prezzo e non si possono rimuovere; le nuove vanno dopo.';
+
+  @override
+  String ppYouReceive(String amount) {
+    return 'Ricevi ≈ $amount per biglietto';
+  }
+
+  @override
+  String get ppPriceFollowsPhase =>
+      'Il prezzo dell\'evento segue la fase attuale.';
+
+  @override
+  String get ppNameSuperEarlyBird => 'Super early bird';
+
+  @override
+  String get ppNameEarlyBird => 'Early bird';
+
+  @override
+  String get ppNamePresale => 'Prevendita';
+
+  @override
+  String get ppNameRegular => 'Intero';
+
+  @override
+  String get ppNameLate => 'Ultimi biglietti';
+
+  @override
+  String get ppNameLastMinute => 'Last minute';
+
+  @override
+  String get ppNameDoor => 'Alla porta';
+
+  @override
+  String get ppErrNotIncreasing =>
+      'Ogni fase deve costare più della precedente';
+
+  @override
+  String get ppErrOverCapacity =>
+      'Le fasi hanno più biglietti della capienza dell\'evento';
+
+  @override
+  String get ppErrQuantity => 'Ogni fase deve avere almeno 1 biglietto';
+
+  @override
+  String get ppErrBelowSold =>
+      'Una fase non può avere meno biglietti di quelli già venduti';
+
+  @override
+  String get ppErrSoldLocked =>
+      'Una fase con vendite non si può rimuovere né cambiare prezzo';
+
+  @override
+  String get ppErrInsertedBeforeSold =>
+      'Le nuove fasi vanno dopo quelle che hanno già venduto';
+
+  @override
+  String get ppErrDuplicateName => 'Ogni nome si può usare una sola volta';
+
+  @override
+  String get ppBuyerTitle => 'Prezzi dei biglietti';
+
+  @override
+  String get ppNow => 'Ora';
+
+  @override
+  String ppLeftAtPrice(int count) {
+    return 'Ne restano $count a questo prezzo';
+  }
+
+  @override
+  String ppThenNext(String price, String name) {
+    return 'poi $price ($name)';
+  }
+
+  @override
+  String ppLineQty(String name, int count) {
+    return '$name × $count';
+  }
+
+  @override
+  String tpErrPriceChanged(String price) {
+    return 'Il prezzo è cambiato in $price';
+  }
+
+  @override
+  String get tpErrPricePhasesInvalid =>
+      'La vendita è in pausa finché l\'organizzatore non corregge le fasi di prezzo.';
 }

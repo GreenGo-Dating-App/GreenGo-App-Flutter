@@ -290,6 +290,7 @@ class TicketOrder extends Equatable {
     this.title,
     this.startsAt,
     this.createdAt,
+    this.phaseLines = const [],
   });
 
   final String id;
@@ -325,6 +326,9 @@ class TicketOrder extends Equatable {
   final DateTime? startsAt;
   final DateTime? createdAt;
 
+  /// Price phases of the order (each ticket at its phase): one line per phase.
+  final List<({String nameKey, int unitAmount, int quantity})> phaseLines;
+
   bool get isLink => provider == TicketProvider.link;
 
   factory TicketOrder.fromMap(String id, Map<String, dynamic> d) {
@@ -356,6 +360,16 @@ class TicketOrder extends Equatable {
       title: d['title'] as String?,
       startsAt: _date(d['startsAt']),
       createdAt: _date(d['createdAt']),
+      phaseLines: [
+        if (d['phaseLines'] is List)
+          for (final x in d['phaseLines'] as List)
+            if (x is Map && x['nameKey'] is String && x['unitAmount'] is num && x['quantity'] is num)
+              (
+                nameKey: x['nameKey'] as String,
+                unitAmount: (x['unitAmount'] as num).toInt(),
+                quantity: (x['quantity'] as num).toInt(),
+              ),
+      ],
     );
   }
 

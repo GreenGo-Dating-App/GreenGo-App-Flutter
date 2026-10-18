@@ -109,6 +109,17 @@ class _TicketOrderScreenState extends State<TicketOrderScreen> with WidgetsBindi
             Text('${formatTicketAmount(o.totalAmount, o.currency)} · ${l.tpTicketsCount(o.quantity)}',
                 key: const ValueKey('ticket-order-amount'),
                 style: const TextStyle(color: AppColors.richGold, fontSize: 16, fontWeight: FontWeight.w600)),
+            // Price phases: one line per phase (each ticket at its phase's price).
+            for (final x in o.phaseLines)
+              Padding(
+                padding: const EdgeInsets.only(top: 2),
+                child: Text(
+                  '${l.ppLineQty(TicketL10n.phaseNameKey(l, x.nameKey), x.quantity)}'
+                  ' · ${formatTicketAmount(x.unitAmount * x.quantity, o.currency)}',
+                  key: ValueKey('ticket-order-phase-${x.nameKey}'),
+                  style: const TextStyle(color: AppColors.textSecondary, fontSize: 13),
+                ),
+              ),
             // Orders priced before 2026-10-14 had the fee on top for the buyer.
             if (o.feeTotal > 0 && o.ticketSubtotal != null && o.totalAmount > o.ticketSubtotal!) ...[
               const SizedBox(height: 10),

@@ -2309,6 +2309,41 @@ service cloud.firestore {
               || (d.ticketProvider == 'link' && resource != null
                   && resource.data.get('ticketProvider', null) == 'link'));
       }
+      // Ticket price phases (functions/src/ticket_payments/pricePhases.ts):
+      // optional list (max 10) of { id, nameKey (preset), price (major units,
+      // 1..1000 like the event price), quantity (int >= 1) }, prices strictly
+      // increasing. The sold counters live in the server-only
+      // ticket_inventory doc (never on the event); "no removing / repricing a
+      // phase that has sales" and "sum <= capacity" are checked by
+      // createTicketCheckout, which never sells from an invalid setup.
+      function pricePhaseOk(p) {
+        return p is map
+          && p.keys().hasAll(['id', 'nameKey', 'price', 'quantity'])
+          && p.keys().hasOnly(['id', 'nameKey', 'price', 'quantity'])
+          && p.id is string && p.id.matches('^[A-Za-z0-9_-]{1,40}$')
+          && p.nameKey in ['superEarlyBird', 'earlyBird', 'presale', 'regular', 'late', 'lastMinute', 'door']
+          && p.price is number && p.price >= 1 && p.price <= 1000
+          && p.quantity is int && p.quantity >= 1 && p.quantity <= 100000;
+      }
+      function pricePhaseAt(ps, i) {
+        return ps.size() <= i
+          || (pricePhaseOk(ps[i]) && (i == 0 || ps[i - 1].price < ps[i].price));
+      }
+      function validPricePhases(d) {
+        return d.get('pricePhases', null) == null
+          || (d.pricePhases is list && d.pricePhases.size() <= 10
+              && pricePhaseAt(d.pricePhases, 0) && pricePhaseAt(d.pricePhases, 1)
+              && pricePhaseAt(d.pricePhases, 2) && pricePhaseAt(d.pricePhases, 3)
+              && pricePhaseAt(d.pricePhases, 4) && pricePhaseAt(d.pricePhases, 5)
+              && pricePhaseAt(d.pricePhases, 6) && pricePhaseAt(d.pricePhases, 7)
+              && pricePhaseAt(d.pricePhases, 8) && pricePhaseAt(d.pricePhases, 9));
+      }
+      // Only when the phases change: an unrelated edit never re-validates them.
+      function pricePhasesOk() {
+        return (resource != null
+                && request.resource.data.get('pricePhases', null) == resource.data.get('pricePhases', null))
+          || validPricePhases(request.resource.data);
+      }
       // Shared-link guest booking (functions/src/guest): the host's opt-in
       // `guestsAllowed` (default off) is a bool and only ever true on a
       // PUBLIC event (absent visibility = public, as in the app).
@@ -2364,6 +2399,7 @@ service cloud.firestore {
               .hasAny(['hiddenByDowngrade', 'preDowngradeStatus', 'hiddenByDowngradeAt'])
         && validCoOrganizers(request.resource.data)
         && validTicketing(request.resource.data)
+        && pricePhasesOk()
         && guestBookingOk(request.resource.data)
         && (!isPaidEventData(request.resource.data)
             || sellerBusinessActive(request.auth.uid))
@@ -2388,6 +2424,7 @@ service cloud.firestore {
                         && eventTextOk()
                         && downgradeFieldsUnchanged()
                         && validTicketing(request.resource.data)
+                        && pricePhasesOk()
                         && guestBookingOk(request.resource.data)
                         && paidAllowed(resource.data.organizerId))
         || (isSignedIn()
@@ -2400,6 +2437,7 @@ service cloud.firestore {
       allow update: if isCoOrganizer()
         && eventTextOk()
         && downgradeFieldsUnchanged()
+        && pricePhasesOk()
         && guestBookingOk(request.resource.data)
         && !request.resource.data.diff(resource.data).affectedKeys()
               .hasAny(['organizerId', 'organizerName', 'organizerPhotoUrl',
@@ -3213,7 +3251,15 @@ service cloud.firestore {
       allow read: if isSignedIn() && resource.data.uid == request.auth.uid;
       allow write: if false;
     }
-    // ticket_inventory, ticket_codes, payment_events, server_secrets: no
+    // ticket_inventory/event_{eventId}: seat holds + price-phase counters
+    // (phaseSold / phaseLocks), written ONLY by the server
+    // (ticket_payments/orders.ts). Signed-in users may read one doc (the app
+    // shows "N left at this price"); no listing, no client writes.
+    match /ticket_inventory/{inventoryId} {
+      allow get: if isSignedIn();
+      allow list, write: if false;
+    }
+    // ticket_codes, payment_events, server_secrets: no
     // match = default deny (server only).
 
     match /bookings/{bookingId} {

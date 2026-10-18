@@ -32,8 +32,12 @@
  *   seatHeld, ticketId, title, startsAt, platform, createdAt, updatedAt, paidAt
  * tickets/{ticketId = orderId}  server-only; ONLY the buyer reads (holds the QR).
  * ticket_codes/{code}  server-only: code uniqueness ({ orderId }).
- * ticket_inventory/event_{eventId}  server-only: { held } seats held by open
- *   orders. Capacity = attendeeCount (server-maintained for paid events) + held.
+ * ticket_inventory/event_{eventId}  server-only writes (signed-in `get` only):
+ *   { held } seats held by open orders. Capacity = attendeeCount
+ *   (server-maintained for paid events) + held. Events with price phases
+ *   (./pricePhases.ts) also keep { phaseSold: {phaseId: n}, phaseLocks:
+ *   {phaseId: unitMinor} } here; orders of such events carry phaseLines
+ *   [{ phaseId, nameKey, unitAmount, quantity }] (each ticket at its phase).
  * payment_events/{provider}_{eventId}  webhook idempotency.
  *
  * Experiences: the booking (status confirmed, payment.mode 'online') already
@@ -64,6 +68,10 @@ import { ticketQrPayload } from './tokens';
 import { ticketKey } from './keys';
 import { checkCharge, stripePaymentMethodTypes } from './currency';
 import { FeeBreakdown, computeOrderFee, feeRuleForTier, resolveTrial, trialKey } from './fees';
+import {
+  PhaseCounts, PhaseLine, PricePhase, allocatePhases, currentPhaseIndex, phaseEditError, phaseLineCounts,
+  phaseName, phasesLeft, readPricePhases, validatePricePhases,
+} from './pricePhases';
 import { CheckoutInput, publicImage, whenText } from './checkoutPayload';
 import { emitNotification } from '../notifications/notifyHelpers';
 import { lt, rawText } from '../shared/i18n';
@@ -251,6 +259,12 @@ export async function createTicketCheckout(
     fail('invalid-argument', 'invalid_booking_id');
   }
   const items = kind === 'event' ? parseItems(data?.items) : null;
+  // What the buyer saw (minor units, optional): when the server's price
+  // differs (a price phase sold out meanwhile) the checkout is refused with
+  // `price_changed` + the new total, and the app asks the buyer again.
+  const expectedTotal = data?.expectedTotal;
+  if (expectedTotal !== undefined && expectedTotal !== null
+    && (!Number.isSafeInteger(expectedTotal) || expectedTotal < 0)) fail('invalid-argument', 'invalid_expected_total');
   const reqQty = items ? items.reduce((s, i) => s + i.qty, 0) : (kind === 'event' ? (data?.quantity ?? 1) : 1);
   if (!Number.isInteger(reqQty) || reqQty < 1 || reqQty > cfg.MAX_QUANTITY) fail('invalid-argument', 'invalid_quantity');
 
@@ -285,6 +299,22 @@ export async function createTicketCheckout(
 
     let listing: Listing;
     let lines: OrderLine[] | null = null;
+    // Price phases (./pricePhases.ts): the general ticket (no ticket types).
+    let phases: PricePhase[] | null = null;
+    let phaseLines: PhaseLine[] | null = null;
+    const inv0 = (invSnap?.data() || {}) as Record<string, any>;
+    const phaseSold0 = (inv0.phaseSold || {}) as PhaseCounts;
+    const phaseLocks0 = (inv0.phaseLocks || {}) as PhaseCounts;
+    // The buyer's own open orders on this listing are reused or superseded
+    // below; a superseded one gives its phase tickets back first.
+    const phaseFreed: PhaseCounts = {};
+    for (const d of openSnap.docs) {
+      const o = d.data();
+      if (!o.seatHeld || (o.bookingId ?? null) !== null) continue;
+      for (const [k, n] of Object.entries(phaseLineCounts(o.phaseLines))) phaseFreed[k] = (phaseFreed[k] || 0) + n;
+    }
+    const phaseAvail: PhaseCounts = { ...phaseSold0 };
+    for (const [k, n] of Object.entries(phaseFreed)) phaseAvail[k] = Math.max(0, (Number(phaseAvail[k]) || 0) - n);
     if (kind === 'event') {
       // Ticket types: price, sales window, per-type stock and per-type limit
       // all from the server docs; the client only says which types and how many.
@@ -333,12 +363,30 @@ export async function createTicketCheckout(
       if (!guest) assertCanParticipate(buyerSnap?.data(), new Date(t0));
       const currency = isoCurrency(l.currencyCode, l.currency);
       if (!currency) fail('failed-precondition', 'currency_missing');
+      // Price phases: the SERVER picks the price of every ticket, whatever
+      // the client (or an old app showing a stale base price) believes.
+      const rawPhases = lines ? null : readPricePhases(l.pricePhases);
+      if (rawPhases) {
+        const v = validatePricePhases(rawPhases, Math.floor(Number(l.maxAttendees) || 0), currency);
+        if (v.ok === false) fail('failed-precondition', 'price_phases_invalid', { reason: v.reason });
+        const editErr = phaseEditError(v.phases, phaseSold0, phaseLocks0, currency);
+        if (editErr) fail('failed-precondition', 'price_phases_invalid', { reason: editErr });
+        phases = v.phases;
+        phaseLines = allocatePhases(phases, phaseAvail, reqQty, currency);
+        if (!phaseLines) {
+          fail('resource-exhausted', 'sold_out', {
+            remaining: phasesLeft(phases, phaseAvail).reduce((a, b) => a + b, 0), scope: 'price_phases',
+          });
+        }
+      }
       const place = [l.locationName, l.address, l.city].filter((x) => typeof x === 'string' && x.trim()).join(', ');
       listing = {
         kind, listingId: id, bookingId: null, organizerId: String(l.organizerId), provider: l.ticketProvider,
         linkMethod: typeof l.ticketLinkMethod === 'string' ? l.ticketLinkMethod : null,
         instructions: cleanInstructions(l.ticketPaymentInstructions),
-        unitAmount: lines ? Math.max(...lines.map((x) => x.unitAmount)) : toMinor(l.price, currency),
+        unitAmount: lines
+          ? Math.max(...lines.map((x) => x.unitAmount))
+          : (phaseLines ? Math.max(...phaseLines.map((x) => x.unitAmount)) : toMinor(l.price, currency)),
         quantity: reqQty, partySize: 1, currency,
         title: String(l.title || 'Event'), startsAtMs: msOf(l.startDate),
         place: place || null, timeZone: typeof l.timeZone === 'string' ? l.timeZone : null,
@@ -380,7 +428,10 @@ export async function createTicketCheckout(
     }
     const totalAmount = lines
       ? lines.reduce((s, x) => s + x.unitAmount * x.quantity, 0)
-      : listing.unitAmount * listing.quantity;
+      : (phaseLines ? phaseLines.reduce((s, x) => s + x.unitAmount * x.quantity, 0) : listing.unitAmount * listing.quantity);
+    if (expectedTotal !== undefined && expectedTotal !== null && expectedTotal !== totalAmount) {
+      fail('failed-precondition', 'price_changed', { total: totalAmount, currency: listing.currency, quantity: listing.quantity, lines: phaseLines });
+    }
     const isFreeOrder = !!lines && totalAmount === 0;
     if (!isFreeOrder && (!Number.isSafeInteger(listing.unitAmount) || listing.unitAmount <= 0)) fail('failed-precondition', 'invalid_price');
     if (isFreeOrder) listing.provider = 'free' as any;
@@ -428,7 +479,9 @@ export async function createTicketCheckout(
       const billing = (await tx.get(db().collection(BILLING).doc(listing.organizerId))).data();
       if (billingMissing(billing).length) fail('failed-precondition', 'seller_billing_missing');
       stripeCountry = acct?.stripe?.country ?? null;
-      const minUnit = lines ? Math.min(...lines.filter((x) => x.unitAmount > 0).map((x) => x.unitAmount)) : listing.unitAmount;
+      const minUnit = lines
+        ? Math.min(...lines.filter((x) => x.unitAmount > 0).map((x) => x.unitAmount))
+        : (phaseLines ? Math.min(...phaseLines.map((x) => x.unitAmount)) : listing.unitAmount);
       const chk = checkCharge(listing.provider as any, listing.currency, minUnit, acct?.mercadoPago?.currency ?? null);
       if (chk.ok === false) {
         fail('failed-precondition', chk.reason, chk.reason === 'currency_not_supported'
@@ -452,9 +505,12 @@ export async function createTicketCheckout(
       }
       const t = resolveTrial(acct?.feeTrial, trialKey(kind, id), earlierPaid);
       trialStore = t.store;
+      // Per ticket on each ticket's own price (ticket type or price phase).
       const feeLines = lines
         ? lines.map((x) => ({ typeId: x.typeId, unitAmount: x.unitAmount, quantity: x.quantity }))
-        : [{ typeId: null, unitAmount: listing.unitAmount, quantity: listing.quantity }];
+        : phaseLines
+          ? phaseLines.map((x) => ({ typeId: null, phaseId: x.phaseId, unitAmount: x.unitAmount, quantity: x.quantity }))
+          : [{ typeId: null, unitAmount: listing.unitAmount, quantity: listing.quantity }];
       fee = computeOrderFee(feeRuleForTier(effectiveTier(seller, new Date(t0)), t.trial), listing.currency, feeLines);
       if (!fee) fail('failed-precondition', 'fee_currency_unsupported', { currency: listing.currency });
     }
@@ -470,6 +526,7 @@ export async function createTicketCheckout(
       const exp = msOf(o.expiresAt) ?? 0;
       const sameShape = o.quantity === listing.quantity && o.provider === listing.provider
         && JSON.stringify(o.items ?? null) === JSON.stringify(lines ?? null)
+        && JSON.stringify(o.phaseLines ?? null) === JSON.stringify(phaseLines ?? null)
         && (Number(o.feeTotal) || 0) === (fee?.feeTotal ?? 0)
         // Orders priced before the fee moved to the seller (buyer paid it on top) are never reused.
         && (o.hostNet !== undefined || !(Number(o.feeTotal) > 0));
@@ -499,7 +556,27 @@ export async function createTicketCheckout(
       if (max > 0 && going + held + listing.quantity > max) {
         fail('resource-exhausted', 'sold_out', { remaining: Math.max(0, max - going - held) });
       }
-      tx.set(invRef!, { held: held + listing.quantity, updatedAt: ts(t0) }, { merge: true });
+      // Phase counters (computed from the read inventory: race-safe like the
+      // seat holds): superseded orders give back, this order takes.
+      const phaseWrite: PhaseCounts = {};
+      for (const k of Object.keys(phaseFreed)) phaseWrite[k] = Math.max(0, Number(phaseAvail[k]) || 0);
+      const locksWrite: PhaseCounts = {};
+      for (const x of phaseLines || []) {
+        const before = Math.max(0, Number(phaseAvail[x.phaseId]) || 0);
+        phaseWrite[x.phaseId] = before + x.quantity;
+        // The price a phase is first sold at is locked while it has reservations.
+        if (before === 0 || phaseLocks0[x.phaseId] === undefined) locksWrite[x.phaseId] = x.unitAmount;
+      }
+      tx.set(invRef!, {
+        held: held + listing.quantity, updatedAt: ts(t0),
+        ...(Object.keys(phaseWrite).length ? { phaseSold: phaseWrite } : {}),
+        ...(Object.keys(locksWrite).length ? { phaseLocks: locksWrite } : {}),
+      }, { merge: true });
+      // Old apps read events.price: keep it on the CURRENT phase's price.
+      if (phases) {
+        const after = currentPhaseIndex(phases, { ...phaseAvail, ...phaseWrite });
+        if (after >= 0 && phases[after].price !== l.price) tx.update(listingRef, { price: phases[after].price });
+      }
     }
     // Per-type stock + per-type per-user holds (superseded orders released first).
     const typesHold: Record<string, any> = { ...((holdSnap.data()?.types || {}) as Record<string, any>) };
@@ -555,9 +632,10 @@ export async function createTicketCheckout(
       feeTotal: fee?.feeTotal ?? 0,
       feePerTicket: fee ? fee.feePerTicket : 0,
       feeRuleApplied: fee?.rule ?? null,
-      feeLines: fee && lines ? fee.lines.map((x) => ({ typeId: x.typeId, unitFee: x.unitFee, quantity: x.quantity })) : null,
+      feeLines: fee && lines ? fee.lines.map((x) => ({ typeId: x.typeId, unitFee: x.unitFee, quantity: x.quantity }))
+        : (fee && phaseLines ? fee.lines.map((x) => ({ phaseId: x.phaseId ?? null, unitFee: x.unitFee, quantity: x.quantity })) : null),
       hostNet: totalAmount - (fee?.feeTotal ?? 0),
-      totalAmount, currency: listing.currency, items: lines,
+      totalAmount, currency: listing.currency, items: lines, phaseLines,
       status: isLink ? 'pending_payment' : (isFreeOrder ? 'pending' : 'creating'), expiresAt: ts(expiresAtMs), seatHeld: true,
       code, payment: payment ?? null, receiptPath: null, sentAt: null, remindAt: null,
       checkoutUrl: null, providerRef: {}, ticketId: null, ticketIds: [], title: listing.title.slice(0, 200),
@@ -610,7 +688,12 @@ export async function createTicketCheckout(
     lines: Array.isArray(o.items) && o.items.length
       ? (o.items as OrderLine[]).filter((x) => x.unitAmount > 0 || o.items.length === 1)
         .map((x) => ({ ...x, name: `${L.title} – ${x.name}` }))
-      : undefined,
+      : Array.isArray(o.phaseLines) && o.phaseLines.length
+        ? (o.phaseLines as PhaseLine[]).map((x) => ({
+          typeId: `phase_${x.phaseId}`, name: `${L.title} – ${phaseName(x.nameKey, locale)}`,
+          description: null, unitAmount: x.unitAmount, quantity: x.quantity,
+        }))
+        : undefined,
   };
   try {
     let checkoutUrl: string;
@@ -644,6 +727,7 @@ export async function createTicketCheckout(
 /** Fee breakdown returned with a checkout (amount = the buyer's total). */
 function feeView(o: Record<string, any>): Record<string, unknown> {
   return {
+    phaseLines: o.phaseLines ?? null,
     ticketSubtotal: Number(o.ticketSubtotal ?? o.totalAmount) || 0,
     feeTotal: Number(o.feeTotal) || 0,
     feePerTicket: o.feePerTicket ?? null,
@@ -684,10 +768,30 @@ export async function closeOrder(
     const hold = o.seatHeld ? await tx.get(holdingsRef(o.kind, o.listingId, o.buyerId)) : null;
     tx.update(ref, { ...patch, status: to, seatHeld: false, remindAt: null, updatedAt: ts(now()) });
     if (o.seatHeld) releaseTypeHolds(tx, o, hold, 'held');
-    if (inv) tx.set(inv.ref, { held: Math.max(0, (Number(inv.data()?.held) || 0) - q), updatedAt: ts(now()) }, { merge: true });
+    if (inv) {
+      tx.set(inv.ref, {
+        held: Math.max(0, (Number(inv.data()?.held) || 0) - q), updatedAt: ts(now()),
+        ...phaseSoldDelta(inv.data(), o.phaseLines, -1),
+      }, { merge: true });
+    }
     if (hold) tx.set(hold.ref, { held: Math.max(0, (Number(hold.data()?.held) || 0) - q), updatedAt: ts(now()) }, { merge: true });
     return true;
   });
+}
+
+/**
+ * Price-phase counters after releasing (sign -1) or re-adding (+1) an
+ * order's phaseLines, from the inventory doc read in the same transaction.
+ * {} when the order has no phases.
+ */
+export function phaseSoldDelta(inv: Record<string, any> | undefined, phaseLines: unknown, sign: 1 | -1): Record<string, unknown> {
+  const counts = phaseLineCounts(phaseLines);
+  const keys = Object.keys(counts);
+  if (!keys.length) return {};
+  const cur = (inv?.phaseSold || {}) as PhaseCounts;
+  const out: PhaseCounts = {};
+  for (const k of keys) out[k] = Math.max(0, (Number(cur[k]) || 0) + sign * counts[k]);
+  return { phaseSold: out };
 }
 
 /**
@@ -771,6 +875,10 @@ export async function markOrderPaid(orderId: string, ev: PaidEvidence): Promise<
       const max = Math.floor(Number(e.maxAttendees) || 0);
       if (!o.seatHeld && max > 0 && going + held + q > max) lateOverCapacity = true;
       if (o.seatHeld) tx.set(invSnap.ref, { held: Math.max(0, held - q), updatedAt: ts(t) }, { merge: true });
+      // Late payment of a released order: its phase tickets count again.
+      else if (Array.isArray(o.phaseLines) && o.phaseLines.length) {
+        tx.set(invSnap.ref, { ...phaseSoldDelta(invSnap.data(), o.phaseLines, 1), updatedAt: ts(t) }, { merge: true });
+      }
       const p = prof.data() || {};
       const photos = Array.isArray(p.photoUrls) ? p.photoUrls : [];
       const prior = attSnap.data() || {};
@@ -846,17 +954,22 @@ export async function markOrderPaid(orderId: string, ev: PaidEvidence): Promise<
     // Ticket type per seat (items in order); legacy single type -> null.
     const typeOf: Array<OrderLine | null> = [];
     for (const x of (Array.isArray(o.items) ? o.items : []) as OrderLine[]) for (let k = 0; k < x.quantity; k++) typeOf.push(x);
+    // Price phase per seat (phaseLines in order); null without phases.
+    const phaseOf: Array<PhaseLine | null> = [];
+    for (const x of (Array.isArray(o.phaseLines) ? o.phaseLines : []) as PhaseLine[]) for (let k = 0; k < x.quantity; k++) phaseOf.push(x);
     ids.forEach((tid, i) => {
       const tt = typeOf[i] ?? null;
+      const ph = phaseOf[i] ?? null;
       tx.set(db().collection(COL.tickets).doc(tid), {
         ticketTypeId: tt?.typeId ?? null, ticketTypeName: tt?.name ?? null,
+        pricePhaseId: ph?.phaseId ?? null, pricePhaseNameKey: ph?.nameKey ?? null,
         ticketId: tid, orderId, index: i + 1, of: q,
         kind: o.kind, listingId: o.listingId, bookingId: o.bookingId ?? null,
         buyerId: o.buyerId, organizerId: o.organizerId,
         partySize: Math.max(1, Number(o.partySize) || 1),
         status: 'valid', qrPayload: ticketQrPayload(key, tid),
         title: o.title ?? null, startsAt: o.startsAt ?? null,
-        unitAmount: tt ? tt.unitAmount : o.unitAmount, priceRule: o.priceRule ?? 'base', currency: o.currency, provider: o.provider, code: o.code ?? null,
+        unitAmount: tt ? tt.unitAmount : (ph ? ph.unitAmount : o.unitAmount), priceRule: o.priceRule ?? 'base', currency: o.currency, provider: o.provider, code: o.code ?? null,
         issuedAt: ts(t), checkedInAt: null,
       });
     });
@@ -1020,7 +1133,8 @@ export async function markOrderReversed(orderId: string, to: 'refunded' | 'dispu
     const tSnaps = await Promise.all(ids.map((id) => tx.get(db().collection(COL.tickets).doc(id))));
     const wasPaid = o.status === 'paid';
     const wasOpen = OPEN.has(o.status) && o.seatHeld;
-    const inv = wasOpen && o.kind === 'event' ? await tx.get(inventoryRef(o.listingId)) : null;
+    const hasPhases = Array.isArray(o.phaseLines) && o.phaseLines.length > 0;
+    const inv = (wasOpen || (wasPaid && hasPhases)) && o.kind === 'event' ? await tx.get(inventoryRef(o.listingId)) : null;
     const hold = wasPaid || wasOpen ? await tx.get(holdingsRef(o.kind, o.listingId, o.buyerId)) : null;
     if (o.kind === 'event' && wasPaid) {
       const evRef = db().collection('events').doc(o.listingId);
@@ -1044,7 +1158,12 @@ export async function markOrderReversed(orderId: string, to: 'refunded' | 'dispu
         tx.update(bRef, { payment: { ...b.payment, status: to }, updatedAt: ts(t) });
       }
     }
-    if (inv) tx.set(inv.ref, { held: Math.max(0, (Number(inv.data()?.held) || 0) - q) }, { merge: true });
+    if (inv) {
+      tx.set(inv.ref, {
+        ...(wasOpen ? { held: Math.max(0, (Number(inv.data()?.held) || 0) - q) } : {}),
+        ...phaseSoldDelta(inv.data(), o.phaseLines, -1),
+      }, { merge: true });
+    }
     if (wasPaid || wasOpen) releaseTypeHolds(tx, o, null, wasPaid ? 'sold' : 'held');
     if (hold && Array.isArray(o.items) && o.items.length) {
       const types: Record<string, any> = { ...((hold.data()?.types || {}) as Record<string, any>) };

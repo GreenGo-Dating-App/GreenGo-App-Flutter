@@ -25816,4 +25816,121 @@ class AppLocalizationsEn extends AppLocalizations {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String get ppSectionTitle => 'Price phases (early bird…)';
+
+  @override
+  String get ppSectionHint =>
+      'Sell the first tickets for less. Each phase has its own price and number of tickets; when one sells out, the next starts. Each phase must cost more than the previous one. Phases set the price of the general ticket (not of ticket types).';
+
+  @override
+  String get ppAddPhase => 'Add phase';
+
+  @override
+  String get ppPhaseName => 'Name';
+
+  @override
+  String get ppPhasePrice => 'Price';
+
+  @override
+  String get ppPhaseQuantity => 'Tickets at this price';
+
+  @override
+  String get ppRemovePhase => 'Remove phase';
+
+  @override
+  String ppPhaseSold(int count) {
+    return '$count sold';
+  }
+
+  @override
+  String get ppLockedHint =>
+      'Phases that already sold keep their price and can\'t be removed; new phases go after them.';
+
+  @override
+  String ppYouReceive(String amount) {
+    return 'You receive ≈ $amount per ticket';
+  }
+
+  @override
+  String get ppPriceFollowsPhase =>
+      'The event price follows the current phase.';
+
+  @override
+  String get ppNameSuperEarlyBird => 'Super early bird';
+
+  @override
+  String get ppNameEarlyBird => 'Early bird';
+
+  @override
+  String get ppNamePresale => 'Presale';
+
+  @override
+  String get ppNameRegular => 'Regular';
+
+  @override
+  String get ppNameLate => 'Late';
+
+  @override
+  String get ppNameLastMinute => 'Last minute';
+
+  @override
+  String get ppNameDoor => 'At the door';
+
+  @override
+  String get ppErrNotIncreasing =>
+      'Each phase must cost more than the previous one';
+
+  @override
+  String get ppErrOverCapacity =>
+      'Phases have more tickets than the event capacity';
+
+  @override
+  String get ppErrQuantity => 'Each phase needs at least 1 ticket';
+
+  @override
+  String get ppErrBelowSold =>
+      'A phase can\'t have fewer tickets than it already sold';
+
+  @override
+  String get ppErrSoldLocked =>
+      'A phase that already sold can\'t be removed or change its price';
+
+  @override
+  String get ppErrInsertedBeforeSold =>
+      'New phases go after the phases that already sold';
+
+  @override
+  String get ppErrDuplicateName => 'Each name can be used once';
+
+  @override
+  String get ppBuyerTitle => 'Ticket prices';
+
+  @override
+  String get ppNow => 'Now';
+
+  @override
+  String ppLeftAtPrice(int count) {
+    return '$count left at this price';
+  }
+
+  @override
+  String ppThenNext(String price, String name) {
+    return 'then $price ($name)';
+  }
+
+  @override
+  String ppLineQty(String name, int count) {
+    return '$name × $count';
+  }
+
+  @override
+  String tpErrPriceChanged(String price) {
+    return 'The price has changed to $price';
+  }
+
+  @override
+  String get tpErrPricePhasesInvalid =>
+      'Ticket sales are paused while the organizer fixes the price phases.';
 }
