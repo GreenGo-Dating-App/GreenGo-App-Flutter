@@ -33,12 +33,12 @@ void main() {
   final newAccount = DateTime.utc(2026, 10, 16, 8);
 
   group('upcoming version constants', () {
-    test('5.3.1: bundled for new accounts, announced 30 days ahead for existing ones', () {
-      expect(kTermsVersion, '5.3.1');
-      expect(kPrivacyPolicyVersion, '5.3.0');
-      expect(kTermsEffectiveDate, DateTime(2026, 10, 16));
-      expect(kLegalEffectiveDate, DateTime(2026, 10, 16));
-      expect(kUpcomingTermsVersion, '5.3.1');
+    test('5.3.2: bundled for new accounts, announced 30 days ahead for existing ones', () {
+      expect(kTermsVersion, '5.3.2');
+      expect(kPrivacyPolicyVersion, '5.3.1');
+      expect(kTermsEffectiveDate, DateTime(2026, 10, 17));
+      expect(kLegalEffectiveDate, DateTime(2026, 10, 17));
+      expect(kUpcomingTermsVersion, '5.3.2');
       expect(kUpcomingTermsEffectiveDate, DateTime(2026, 11, 16));
       expect(kUpcomingTermsAccountsCreatedBefore, DateTime.utc(2026, 10, 16));
       expect(kUpcomingTermsUrl, 'https://greengochat.com/terms-of-service/upcoming');
@@ -67,7 +67,7 @@ void main() {
     });
   });
 
-  testWidgets('per-version bullets: 5.1.0 (3), 5.3.0 (5), 5.3.1 (6), unknown none', (tester) async {
+  testWidgets('per-version bullets: 5.1.0 (3), 5.3.0 (5), 5.3.1 (6), 5.3.2 (7), unknown none', (tester) async {
     await tester.pumpWidget(_app(const SizedBox()));
     final l10n = AppLocalizations.of(tester.element(find.byType(SizedBox)))!;
     expect(legalUpdateBullets(l10n, '5.1.0'), [
@@ -86,6 +86,11 @@ void main() {
     expect(b531.last, contains('US\$30'));
     expect(b531.last, contains('US\$28'));
     expect(b531.last, contains('US\$25'));
+    final b532 = legalUpdateBullets(l10n, '5.3.2');
+    expect(b532, hasLength(7));
+    expect(b532.take(6), b531);
+    expect(b532.last, l10n.legalUpdate532BulletPhases);
+    expect(b532.last, contains('50%'));
     expect(legalUpdateBullets(l10n, '9.9.9'), isEmpty);
     expect(legalUpdateBullets(l10n, null), isEmpty);
   });
@@ -163,6 +168,7 @@ void main() {
       expect(find.text(l10n.legalUpcomingTitle(date)), findsOneWidget);
       expect(find.text(l10n.legalUpdate530BulletTraders), findsOneWidget);
       expect(find.text(l10n.legalUpdate531BulletFeeCaps), findsOneWidget);
+      expect(find.text(l10n.legalUpdate532BulletPhases), findsOneWidget);
       expect(find.textContaining('billing@greengochat.com'), findsOneWidget);
       await tester.ensureVisible(find.byKey(const Key('legalUpcomingGotIt')));
       await tester.pumpAndSettle();
@@ -170,7 +176,7 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.byType(UpcomingTermsNoticeBody), findsNothing);
       final prefs = await SharedPreferences.getInstance();
-      expect(prefs.getBool(UpcomingTermsNotice.dismissKey('5.3.1')), isTrue);
+      expect(prefs.getBool(UpcomingTermsNotice.dismissKey('5.3.2')), isTrue);
       expect(
           await UpcomingTermsNotice.shouldShow(
               now: DateTime(2026, 10, 21), accountCreatedAt: oldAccount, recorder: recorder),
@@ -209,7 +215,7 @@ void main() {
           isFalse);
     });
 
-    test('not shown once this device accepted 5.3.1; still shown with 5.2.1 or 5.3.0', () async {
+    test('not shown once this device accepted 5.3.2; still shown with 5.2.1, 5.3.0 or 5.3.1', () async {
       await recorder.rememberDocVersion(ConsentTypes.terms, '5.2.1');
       expect(
           await UpcomingTermsNotice.shouldShow(
@@ -221,6 +227,11 @@ void main() {
               now: DateTime(2026, 10, 20), accountCreatedAt: oldAccount, recorder: recorder),
           isTrue);
       await recorder.rememberDocVersion(ConsentTypes.terms, '5.3.1');
+      expect(
+          await UpcomingTermsNotice.shouldShow(
+              now: DateTime(2026, 10, 20), accountCreatedAt: oldAccount, recorder: recorder),
+          isTrue);
+      await recorder.rememberDocVersion(ConsentTypes.terms, '5.3.2');
       expect(
           await UpcomingTermsNotice.shouldShow(
               now: DateTime(2026, 10, 20), accountCreatedAt: oldAccount, recorder: recorder),

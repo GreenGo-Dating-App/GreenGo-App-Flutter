@@ -25920,6 +25920,10 @@ class AppLocalizationsEs extends AppLocalizations {
       'Tope más alto de la tarifa de servicio de GreenGo por entrada para vendedores: Silver 30 US\$, Gold 28 US\$, Platinum 25 US\$';
 
   @override
+  String get legalUpdate532BulletPhases =>
+      'Fases de precio para las entradas de eventos (por ejemplo, anticipada) y la oferta de lanzamiento 2026: 50 % de descuento en el primer periodo de una nueva Membresía';
+
+  @override
   String get legalUpdateCloseAccount => 'No acepto: cerrar mi cuenta';
 
   @override

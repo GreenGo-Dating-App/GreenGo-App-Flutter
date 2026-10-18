@@ -1,9 +1,10 @@
 POLITIQUE DE CONFIDENTIALITÉ DE GREENGO
 
-Version : 5.3.0
-Date d'entrée en vigueur : 16 octobre 2026 pour les comptes créés à partir de
-  cette date ; 16 novembre 2026 pour les comptes créés avant le 16 octobre 2026
-Annoncée le : 16 octobre 2026
+Version : 5.3.1
+Date d'entrée en vigueur : 17 octobre 2026 pour les comptes créés à partir du
+  16 octobre 2026 ; 16 novembre 2026 pour les comptes créés avant le
+  16 octobre 2026
+Annoncée le : 17 octobre 2026
 Version précédente : 5.2.1 (16 octobre 2026), qui continue de s'appliquer aux
   comptes créés avant le 16 octobre 2026 jusqu'au 15 novembre 2026
 
@@ -94,11 +95,14 @@ que visiteurs (point 11.7). La présente politique s'applique aussi à elles.
     traduire à votre demande, ou pour examiner un message qui a été signalé.
 - Si vous vérifiez votre âge au moyen d'une pièce d'identité, nous supprimons
   l'image dès la fin de la vérification. Nous ne conservons que le résultat.
-- Les fonctionnalités d'IA (traduction, lecture vocale, réponses suggérées et
-  décomposition des mots) passent par nos serveurs. Elles utilisent des services Google, et
-  notre assistant d'assistance utilise Claude d'Anthropic. Nous vous demandons
-  votre consentement avant leur première utilisation, et l'assistant
-  d'assistance est clairement identifié comme une IA.
+- Les fonctionnalités d'IA (traduction, lecture vocale et translittération
+  des messages écrits dans des alphabets non latins) utilisent des services
+  Google, et notre assistant d'assistance utilise Claude d'Anthropic. Elles
+  passent par nos serveurs, sauf que l'application peut demander directement
+  au service de traduction de Google de traduire des contenus publics. Nous
+  vous demandons votre consentement avant qu'elles ne traitent pour la
+  première fois votre contenu privé, et l'assistant d'assistance est
+  clairement identifié comme une IA.
 - Vous pouvez supprimer votre compte à tout moment :
   - dans l'application ;
   - sur notre site web, à l'adresse https://greengochat.com/delete-account, en
@@ -327,8 +331,8 @@ Finalité                             | Données utilisées          | Base juri
 4. Messagerie, groupes, communautés, | Contenus, compte           | Contrat (RGPD 6(1)(b) ; LGPD 7 V)
    événements, réservations          |                            |
 5. Fonctionnalités d'IA : traduction,| Le texte que vous          | Contrat, après votre consentement à
-   lecture vocale, réponses          | choisissez de traiter      | la fonctionnalité d'IA (RGPD
-   suggérées, décomposition des mots |                            | 6(1)(a)/(b) ; LGPD 7 I/V). Voir la
+   lecture vocale,                   | choisissez de traiter      | la fonctionnalité d'IA (RGPD
+   translittération                  |                            | 6(1)(a)/(b) ; LGPD 7 I/V). Voir la
                                      |                            | section 9.
 6. Vérification de l'âge au moyen    | Image de la pièce, date de | Consentement explicite (RGPD
    d'une pièce d'identité            | naissance qui y est lue    | 9(2)(a) ; LGPD 11 I). Voir section 8.
@@ -508,7 +512,8 @@ GreenGo est destiné aux adultes (18 ans et plus). Chacun indique sa date de
 naissance lors de l'inscription. Nous ne demandons une pièce d'identité que
 dans les cas suivants :
 - avant que vous ne publiiez dans une Communauté ;
-- avant que vous ne publiiez une expérience payante en tant qu'hôte ;
+- avant que vous ne publiiez toute expérience en tant qu'hôte, ou que vous
+  ne réserviez une expérience en tant que membre ;
 - lorsque la loi de votre lieu de résidence exige des contrôles d'âge
   renforcés ;
 - lorsque nous avons une raison précise de penser qu'un compte appartient à
@@ -601,35 +606,52 @@ n'en tirerons jamais profit d'aucune autre manière.
 
 Fonctionnalité                   | Fournisseur (pour notre compte) | Ce qui est envoyé
 ---------------------------------|---------------------------------|----------------------------
-Traduction des messages          | Google Cloud Translation        | Le texte à traduire
-Traduction des contenus publics  | Google Cloud Translation, au    | Le texte seul, sans données
-(événements, communautés,        | moyen d'un cache partagé sur    | personnelles
-annonces)                        | nos serveurs                    |
+Traduction des messages de chat  | Services de traduction de       | Le texte à traduire et la
+                                 | Google (Google Cloud            | langue cible
+                                 | Translation dans l'application  |
+                                 | actuelle)                       |
+Traduction des contenus publics  | Service de traduction de        | Le texte seul, sans données
+(événements, communautés,        | Google, au moyen d'un stockage  | personnelles
+annonces)                        | partagé sur nos serveurs ; si   |
+                                 | une traduction n'y est pas,     |
+                                 | l'application peut la demander  |
+                                 | directement à Google, qui voit  |
+                                 | alors votre adresse IP          |
 Lecture vocale (synthèse vocale) | Google Cloud Text-to-Speech     | Le texte à lire à voix haute
-Réponses suggérées, conseils     | Google Gemini (API payante)     | Le message ou le texte que
-culturels, décomposition des mots|                                 | vous sélectionnez, et les
-                                 |                                 | langues
+Translittération des messages    | Google Gemini (API payante)     | Le texte du message et sa
+écrits dans des alphabets non    |                                 | langue
+latins                           |                                 |
 Assistant d'assistance           | Anthropic Claude                | Vos messages à l'assistance
 Modération des images et des     | Google Cloud Vision et Natural  | Images téléversées ; texte
 textes                           | Language                        | contrôlé pour la sécurité
 
 9.2 Fonctionnement
 
-- Toutes les requêtes d'IA partent de nos serveurs vers le fournisseur. Votre
-  application ne communique pas directement avec le fournisseur d'IA.
-- Les fournisseurs agissent en tant que nos sous-traitants. Nous les utilisons
-  dans le cadre de leurs conditions professionnelles payantes, en vertu
-  desquelles ils n'utilisent pas vos données pour entraîner leurs modèles.
+- Les requêtes d'IA partent de nos serveurs vers le fournisseur. La seule
+  exception est la traduction des contenus publics : si elle ne se trouve pas
+  dans notre stockage partagé, l'application peut la demander directement au
+  service de traduction de Google. Votre contenu privé n'est jamais envoyé
+  depuis votre appareil à un fournisseur d'IA.
+- Pour votre contenu privé, les fournisseurs agissent en tant que nos
+  sous-traitants. Nous les utilisons dans le cadre de leurs conditions
+  professionnelles payantes, en vertu desquelles ils n'utilisent pas vos
+  données pour entraîner leurs modèles.
 - Avant que des fonctionnalités d'IA ne traitent votre contenu privé pour la
   première fois (par exemple la traduction des messages de chat, la lecture
   à voix haute et l'assistant IA), nous vous indiquons quel fournisseur est
   utilisé et ce qui est envoyé, et nous vous demandons votre consentement.
   Vous pouvez modifier ce choix dans les Paramètres.
 - Les contenus publics, tels que les événements, les communautés et les
-  annonces, sont traduits avec Google Cloud Translation au moyen d'un cache
-  partagé sur nos serveurs. Seul le texte est envoyé, sans aucune donnée
-  personnelle, et la traduction est conservée pour toutes les personnes qui
-  consultent ce contenu. Cela ne nécessite pas votre consentement.
+  annonces, sont traduits avec le service de traduction de Google au moyen
+  d'un stockage partagé sur nos serveurs. Seul le texte est envoyé, sans
+  aucune donnée personnelle, et la traduction est conservée pour toutes les
+  personnes qui consultent ce contenu. Cela ne nécessite pas votre
+  consentement.
+- Les traductions des messages de chat sont conservées avec le message, afin
+  de ne pas devoir être demandées à nouveau. Les traductions de phrases
+  courtes sans données personnelles (sans chiffres, liens, adresses e-mail ni
+  @noms) sont également conservées dans un cache partagé anonyme pendant
+  180 jours au maximum, sans le message d'origine ni aucun lien avec vous.
 - Les contenus créés ou modifiés par l'IA sont signalés, par exemple
   « Traduit ». Les résultats de l'IA peuvent contenir des erreurs. Ne vous y
   fiez pas pour des décisions importantes.
@@ -691,9 +713,10 @@ GreenGo :
 - Nous vous informons lorsque nous avons examiné votre signalement.
 - Si une personne envoie fréquemment des signalements manifestement infondés,
   nous conservons le nombre de ses signalements infondés pendant 12 mois.
-  Nous l'avertissons et, si elle continue, nous ne traitons pas ses
-  signalements pendant 30 jours (DSA art. 23 ; Conditions générales,
-  section 18.6).
+  Nous l'avertissons et, si elle continue, un modérateur examine le cas et
+  peut cesser de traiter ses signalements pendant 30 jours (DSA art. 23 ;
+  Conditions générales, section 18.6). Les signalements concernant la
+  sécurité des enfants sont toujours traités.
 
 10.3 Exploitation sexuelle des enfants
 
@@ -756,7 +779,8 @@ GreenGo :
 
 - Les achats sont effectués via Stripe. Vous saisissez vos informations de
   paiement sur la page sécurisée propre à Stripe : cartes et, pour les
-  paiements en réais brésiliens, Pix.
+  paiements ponctuels en réais brésiliens (par exemple les coins), Pix. Les
+  abonnements se paient par carte.
 - Nous recevons votre numéro de client Stripe, le montant, la devise, votre
   pays et le statut du paiement. Nous ne recevons jamais votre numéro de carte
   complet.
@@ -1059,6 +1083,9 @@ Coordonnées de professionnel des       | Tant que vous vendez en tant que
 vendeurs (11.8)                        | professionnel, et 6 mois ensuite
 Cache audio de lecture à voix haute    | Anonyme, sans lien avec vous ;
 (9.2)                                  | conservé tant qu'il est utilisé
+Traductions des messages de chat (9.2) | Avec le message ; phrases courtes
+                                       | dans le cache anonyme : 180 jours
+                                       | au maximum
 Signalements et preuves relatifs à la  | Au moins 1 an, ou plus lorsque la loi
 sécurité des enfants                   | ou une autorité l'exige
 Registres de consentement et           | Pendant toute l'existence de votre
@@ -1523,6 +1550,26 @@ point 1.3)
 ================================================================================
 HISTORIQUE DES VERSIONS
 ================================================================================
+
+5.3.1 - en vigueur le 17 octobre 2026 pour les comptes créés à partir du
+16 octobre 2026 ; le 16 novembre 2026 pour les comptes créés avant le
+16 octobre 2026 (annoncée le 17 octobre 2026)
+Précisions pour correspondre au fonctionnement de l'application :
+- Points 2, 5 et 9 : les fonctionnalités d'IA sont la traduction, la lecture
+  vocale et la translittération (les réponses suggérées et la décomposition
+  des mots ne sont pas proposées) ; les messages de chat sont traduits avec
+  les services de traduction de Google (Google Cloud Translation dans
+  l'application actuelle) ; les contenus publics sont traduits avec le
+  service de traduction de Google, et l'application peut demander ces
+  traductions directement ; traductions de chat conservées et cache anonyme
+  des phrases courtes (également point 14).
+- Point 8.1 : une pièce d'identité est demandée pour toute expérience que
+  vous publiez et pour réserver une expérience en tant que membre.
+- Point 10.2 : un modérateur examine le cas avant que les signalements ne
+  cessent d'être traités ; les signalements concernant la sécurité des
+  enfants sont toujours traités.
+- Point 11.2 : Pix uniquement pour les paiements ponctuels ; abonnements par
+  carte.
 
 5.3.0 - en vigueur le 16 octobre 2026 pour les comptes créés à partir de cette
 date ; le 16 novembre 2026 pour les comptes créés avant le 16 octobre 2026

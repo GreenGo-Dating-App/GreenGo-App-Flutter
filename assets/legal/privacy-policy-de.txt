@@ -1,9 +1,10 @@
 DATENSCHUTZERKLÄRUNG VON GREENGO
 
-Version: 5.3.0
-Gültig ab: 16. Oktober 2026 für Konten, die ab diesem Tag erstellt werden;
-  16. November 2026 für Konten, die vor dem 16. Oktober 2026 erstellt wurden
-Angekündigt am: 16. Oktober 2026
+Version: 5.3.1
+Gültig ab: 17. Oktober 2026 für Konten, die ab dem 16. Oktober 2026 erstellt
+  werden; 16. November 2026 für Konten, die vor dem 16. Oktober 2026 erstellt
+  wurden
+Angekündigt am: 17. Oktober 2026
 Vorherige Version: 5.2.1 (16. Oktober 2026), die für vor dem 16. Oktober 2026
   erstellte Konten bis zum 15. November 2026 weiter gilt
 
@@ -91,11 +92,13 @@ Diese Erklärung gilt auch für sie.
     auf deinen Wunsch zu übersetzen oder um eine gemeldete Nachricht zu prüfen.
 - Wenn du dein Alter mit einem Ausweisdokument bestätigst, löschen wir das Bild,
   sobald die Prüfung abgeschlossen ist. Wir speichern nur das Ergebnis.
-- KI-Funktionen (Übersetzung, Vorlesen, intelligente Antworten und
-  Wortzerlegung) laufen über unsere Server. Sie nutzen Google-Dienste, und unser
-  Support-Assistent nutzt Claude von Anthropic. Wir bitten dich vor der ersten
-  Nutzung um deine Einwilligung, und der Support-Assistent ist deutlich als KI
-  gekennzeichnet.
+- KI-Funktionen (Übersetzung, Vorlesen und Transliteration von Nachrichten in
+  nicht-lateinischen Schriften) nutzen Google-Dienste, und unser
+  Support-Assistent nutzt Claude von Anthropic. Sie laufen über unsere Server,
+  mit einer Ausnahme: Die App kann den Übersetzungsdienst von Google direkt
+  bitten, öffentliche Inhalte zu übersetzen. Wir bitten dich um deine
+  Einwilligung, bevor sie zum ersten Mal deine privaten Inhalte verarbeiten,
+  und der Support-Assistent ist deutlich als KI gekennzeichnet.
 - Du kannst dein Konto jederzeit löschen:
   - in der App;
   - auf unserer Website unter https://greengochat.com/delete-account, indem du
@@ -322,8 +325,8 @@ Zweck                                | Was wir verwenden          | Rechtsgrundl
 4. Nachrichten, Gruppen, Communities,| Inhalte, Konto             | Vertrag (DSGVO 6(1)(b); LGPD 7 V)
    Events, Buchungen                 |                            |
 5. KI-Funktionen: Übersetzung,       | Der Text, den du           | Vertrag, nach deiner Einwilligung in
-   Vorlesen, intelligente Antworten, | verarbeiten lassen         | die KI-Funktion (DSGVO 6(1)(a)/(b);
-   Wortzerlegung                     | möchtest                   | LGPD 7 I/V). Siehe Abschnitt 9.
+   Vorlesen, Transliteration         | verarbeiten lassen         | die KI-Funktion (DSGVO 6(1)(a)/(b);
+                                     | möchtest                   | LGPD 7 I/V). Siehe Abschnitt 9.
 6. Altersverifizierung mit einem     | Ausweisbild, daraus        | Ausdrückliche Einwilligung (DSGVO
    Ausweisdokument                   | gelesenes Geburtsdatum     | 9(2)(a); LGPD 11 I). Siehe Abschnitt 8.
 7. Selfie-Verifizierung              | Selfie, Profilfotos        | Ausdrückliche Einwilligung (DSGVO
@@ -493,7 +496,8 @@ und den angezeigten Kartenausschnitt erhalten, nicht aber deine Kontodaten.
 GreenGo ist für Erwachsene (18+). Alle geben bei der Registrierung ihr
 Geburtsdatum an. Ein Ausweisdokument verlangen wir nur in diesen Fällen:
 - bevor du in einer Community veröffentlichst;
-- bevor du als Gastgeber ein kostenpflichtiges Erlebnis veröffentlichst;
+- bevor du als Gastgeber ein Erlebnis veröffentlichst oder als Mitglied ein
+  Erlebnis buchst;
 - wenn das Gesetz an deinem Wohnort strengere Alterskontrollen verlangt;
 - wenn wir einen konkreten Grund zu der Annahme haben, dass ein Konto einer
   Person unter 18 Jahren gehört.
@@ -583,14 +587,18 @@ anderweitig daraus Gewinn ziehen.
 
 Funktion                         | Anbieter (in unserem Auftrag)   | Was gesendet wird
 ---------------------------------|---------------------------------|----------------------------
-Übersetzung von Nachrichten      | Google Cloud Translation        | Der zu übersetzende Text
-Übersetzung öffentlicher Inhalte | Google Cloud Translation, über  | Nur der Text, ohne
-(Events, Communities, Angebote)  | einen gemeinsamen Cache auf     | personenbezogene Daten
-                                 | unseren Servern                 |
+Übersetzung von Chatnachrichten  | Übersetzungsdienste von Google  | Der zu übersetzende Text
+                                 | (Google Cloud Translation in    | und die Zielsprache
+                                 | der aktuellen App)              |
+Übersetzung öffentlicher Inhalte | Übersetzungsdienst von Google,  | Nur der Text, ohne
+(Events, Communities, Angebote)  | über einen gemeinsamen Speicher | personenbezogene Daten
+                                 | auf unseren Servern; fehlt dort |
+                                 | eine Übersetzung, kann die App  |
+                                 | sie direkt bei Google anfordern,|
+                                 | das dann deine IP-Adresse sieht |
 Vorlesen (Text-to-Speech)        | Google Cloud Text-to-Speech     | Der vorzulesende Text
-Intelligente Antworten,          | Google Gemini (kostenpflichtige | Die Nachricht oder der
-Kulturtipps, Wortzerlegung       | API)                            | Text, den du auswählst,
-                                 |                                 | und die Sprachen
+Transliteration von Nachrichten  | Google Gemini (kostenpflichtige | Der Nachrichtentext und
+in nicht-lateinischen Schriften  | API)                            | seine Sprache
 Support-Assistent                | Anthropic Claude                | Deine Nachrichten an den
                                  |                                 | Support
 Bild- und Textmoderation         | Google Cloud Vision und Natural | Hochgeladene Bilder; auf
@@ -598,21 +606,31 @@ Bild- und Textmoderation         | Google Cloud Vision und Natural | Hochgeladen
 
 9.2 So funktioniert es
 
-- Alle KI-Anfragen gehen von unseren Servern an den Anbieter. Deine App
-  kommuniziert nicht direkt mit dem KI-Anbieter.
-- Die Anbieter handeln als unsere Auftragsverarbeiter. Wir nutzen sie zu ihren
-  kostenpflichtigen Geschäftsbedingungen, nach denen sie deine Daten nicht zum
-  Training ihrer Modelle verwenden.
+- KI-Anfragen gehen von unseren Servern an den Anbieter. Die einzige Ausnahme
+  ist die Übersetzung öffentlicher Inhalte: Ist sie nicht in unserem
+  gemeinsamen Speicher, kann die App sie direkt beim Übersetzungsdienst von
+  Google anfordern. Deine privaten Inhalte werden nie von deinem Gerät an
+  einen KI-Anbieter gesendet.
+- Für deine privaten Inhalte handeln die Anbieter als unsere
+  Auftragsverarbeiter. Wir nutzen sie zu ihren kostenpflichtigen
+  Geschäftsbedingungen, nach denen sie deine Daten nicht zum Training ihrer
+  Modelle verwenden.
 - Bevor KI-Funktionen zum ersten Mal deine privaten Inhalte verarbeiten (zum
-  Beispiel die Übersetzung von Chatnachrichten, das Vorlesen und der
-  KI-Assistent), zeigen wir dir, welcher Anbieter genutzt wird und was
-  gesendet wird, und bitten um deine Einwilligung. Du kannst dies in den
-  Einstellungen ändern.
-- Öffentliche Inhalte, etwa Events, Communities und Angebote, werden mit
-  Google Cloud Translation über einen gemeinsamen Cache auf unseren Servern
-  übersetzt. Gesendet wird nur der Text, ohne personenbezogene Daten, und die
-  Übersetzung wird für alle gespeichert, die diese Inhalte ansehen. Dafür ist
-  deine Einwilligung nicht nötig.
+  Beispiel die Übersetzung von Chatnachrichten, das Vorlesen, die
+  Transliteration und der KI-Assistent), zeigen wir dir, welcher Anbieter
+  genutzt wird und was gesendet wird, und bitten um deine Einwilligung. Du
+  kannst dies in den Einstellungen ändern.
+- Öffentliche Inhalte, etwa Events, Communities und Angebote, werden mit dem
+  Übersetzungsdienst von Google über einen gemeinsamen Speicher auf unseren
+  Servern übersetzt. Gesendet wird nur der Text, ohne personenbezogene Daten,
+  und die Übersetzung wird für alle gespeichert, die diese Inhalte ansehen.
+  Dafür ist deine Einwilligung nicht nötig.
+- Übersetzungen von Chatnachrichten werden zusammen mit der Nachricht
+  gespeichert, damit sie nicht erneut angefordert werden müssen.
+  Übersetzungen kurzer Sätze ohne persönliche Angaben (keine Zahlen, Links,
+  E-Mail-Adressen oder @Namen) werden außerdem bis zu 180 Tage in einem
+  anonymen gemeinsamen Cache aufbewahrt, ohne die ursprüngliche Nachricht und
+  ohne Verbindung zu dir.
 - Von KI erstellte oder veränderte Inhalte werden gekennzeichnet, zum Beispiel
   mit „Übersetzt“. KI-Ergebnisse können Fehler enthalten. Verlass dich bei
   wichtigen Entscheidungen nicht darauf.
@@ -671,9 +689,11 @@ Wir nutzen automatisierte Werkzeuge, um GreenGo sicher zu halten:
 - Meldungen zur Sicherheit von Kindern werden vorrangig bearbeitet.
 - Wir teilen dir mit, wenn wir deine Meldung geprüft haben.
 - Wenn jemand häufig offensichtlich unbegründete Meldungen sendet, zählen wir
-  seine unbegründeten Meldungen über 12 Monate. Wir verwarnen ihn und
-  bearbeiten, wenn er weitermacht, seine Meldungen 30 Tage lang nicht (DSA
-  art. 23; Allgemeine Geschäftsbedingungen, Abschnitt 18.6).
+  seine unbegründeten Meldungen über 12 Monate. Wir verwarnen ihn, und wenn er
+  weitermacht, prüft ein Moderator den Fall und kann die Bearbeitung seiner
+  Meldungen für 30 Tage aussetzen (DSA art. 23; Allgemeine
+  Geschäftsbedingungen, Abschnitt 18.6). Meldungen zur Kindersicherheit
+  werden immer bearbeitet.
 
 10.3 Sexuelle Ausbeutung von Kindern
 
@@ -732,8 +752,9 @@ Wir nutzen automatisierte Werkzeuge, um GreenGo sicher zu halten:
 11.2 Im Web
 
 - Käufe erfolgen über Stripe. Du gibst deine Zahlungsdaten auf der eigenen
-  sicheren Seite von Stripe ein: Karten und, bei Zahlungen in brasilianischen
-  Reais, Pix.
+  sicheren Seite von Stripe ein: Karten und, bei einmaligen Zahlungen in
+  brasilianischen Reais (zum Beispiel Coins), Pix. Mitgliedschaften werden
+  per Karte bezahlt.
 - Wir erhalten deine Stripe-Kundennummer, den Betrag, die Währung, dein Land
   und den Zahlungsstatus. Deine vollständige Kartennummer erhalten wir nie.
 - Wir speichern einen Nachweis deiner Zustimmung zur sofortigen Bereitstellung
@@ -1020,6 +1041,8 @@ Unternehmerangaben von Verkäufern      | Solange du als Unternehmer verkaufst,
 (11.8)                                 | und 6 Monate danach
 Vorlese-Audio-Cache (9.2)              | Anonym, nicht mit dir verbunden; wird
                                        | aufbewahrt, solange er genutzt wird
+Übersetzungen von Chatnachrichten      | Mit der Nachricht; kurze Sätze im
+(9.2)                                  | anonymen Cache: bis zu 180 Tage
 Meldungen und Beweise zum Kinderschutz | Mindestens 1 Jahr oder länger, wenn das
                                        | Gesetz oder eine Behörde es verlangt
 Einwilligungs- und Annahmenachweise,   | Solange dein Konto besteht und 5 Jahre
@@ -1470,6 +1493,25 @@ Vertreter in der EU und im Vereinigten Königreich: werden derzeit benannt
 ================================================================================
 VERSIONSVERLAUF
 ================================================================================
+
+5.3.1 - gültig ab 17. Oktober 2026 für Konten, die ab dem 16. Oktober 2026
+erstellt werden; ab 16. November 2026 für vor dem 16. Oktober 2026 erstellte
+Konten (angekündigt am 17. Oktober 2026)
+Klarstellungen, damit die Erklärung der Funktionsweise der App entspricht:
+- Abschnitte 2, 5 und 9: Die KI-Funktionen sind Übersetzung, Vorlesen und
+  Transliteration (intelligente Antworten und Wortzerlegung werden nicht
+  angeboten); Chatnachrichten werden mit den Übersetzungsdiensten von Google
+  übersetzt (Google Cloud Translation in der aktuellen App); öffentliche
+  Inhalte werden mit dem Übersetzungsdienst von Google übersetzt, und die App
+  kann solche Übersetzungen direkt anfordern; gespeicherte
+  Chat-Übersetzungen und der anonyme Cache für kurze Sätze (auch
+  Abschnitt 14).
+- Abschnitt 8.1: Ein Ausweisdokument wird für jedes Erlebnis verlangt, das du
+  veröffentlichst, und für die Buchung eines Erlebnisses als Mitglied.
+- Abschnitt 10.2: Ein Moderator prüft den Fall, bevor Meldungen nicht mehr
+  bearbeitet werden; Meldungen zur Kindersicherheit werden immer bearbeitet.
+- Abschnitt 11.2: Pix nur für einmalige Zahlungen; Mitgliedschaften per
+  Karte.
 
 5.3.0 - gültig ab 16. Oktober 2026 für Konten, die ab diesem Tag erstellt
 werden; ab 16. November 2026 für vor dem 16. Oktober 2026 erstellte Konten

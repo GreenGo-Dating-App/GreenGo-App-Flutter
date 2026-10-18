@@ -1,9 +1,10 @@
 GREENGO PRIVACY POLICY
 
-Version: 5.3.0
-Effective date: 16 October 2026 for accounts created on or after that date;
-  16 November 2026 for accounts created before 16 October 2026
-Announced: 16 October 2026
+Version: 5.3.1
+Effective date: 17 October 2026 for accounts created on or after
+  16 October 2026; 16 November 2026 for accounts created before
+  16 October 2026
+Announced: 17 October 2026
 Previous version: 5.2.1 (16 October 2026), which continues to apply to accounts
   created before 16 October 2026 until 15 November 2026
 
@@ -86,10 +87,12 @@ applies to them too.
     you ask, or to check a message someone has reported.
 - If you verify your age with an identity document, we delete the image as
   soon as the check is finished. We keep only the result.
-- AI features (translation, read-aloud, smart replies and word breakdown)
-  run through our servers. They use Google services, and our support assistant
-  uses Anthropic's Claude. We ask for your consent before you first use
-  them, and the support assistant is clearly labelled as AI.
+- AI features (translation, read-aloud and transliteration of messages
+  written in non-Latin scripts) use Google services, and our support
+  assistant uses Anthropic's Claude. They run through our servers, except
+  that the app may ask Google's translation service directly to translate
+  public content. We ask for your consent before they first process your
+  private content, and the support assistant is clearly labelled as AI.
 - You can delete your account at any time:
   - in the app;
   - on our website, at https://greengochat.com/delete-account, by confirming
@@ -296,8 +299,8 @@ Purpose                              | What we use                | Legal basis
 4. Messaging, groups, communities,   | Content, account           | Contract (GDPR 6(1)(b); LGPD 7 V)
    events, bookings                  |                            |
 5. AI features: translation,        | The text you choose to     | Contract, after your consent to the
-   read-aloud, smart replies, word   | process                    | AI feature (GDPR 6(1)(a)/(b); LGPD
-   breakdown                         |                            | 7 I/V). See section 9.
+   read-aloud, transliteration       | process                    | AI feature (GDPR 6(1)(a)/(b); LGPD
+                                     |                            | 7 I/V). See section 9.
 6. Age verification with an ID       | ID image, date of birth    | Explicit consent (GDPR 9(2)(a);
    document                          | read from it               | LGPD 11 I). See section 8.
 7. Selfie verification               | Selfie, profile photos     | Explicit consent (GDPR 9(2)(a);
@@ -453,7 +456,8 @@ your account data.
 GreenGo is for adults (18+). Everyone states their date of birth when they sign
 up. We ask for an identity document only in these cases:
 - before you publish in a Community;
-- before you publish a paid experience as a host;
+- before you publish any experience as a host, or book an experience as a
+  member;
 - where the law requires stronger age checks where you live;
 - when we have a specific reason to believe an account belongs to someone
   under 18.
@@ -535,31 +539,45 @@ We will never sell, lease, trade or otherwise profit from biometric data.
 
 Feature                          | Provider (acting for us)        | What is sent
 ---------------------------------|---------------------------------|----------------------------
-Translation of messages         | Google Cloud Translation        | The text to translate
-Translation of public content    | Google Cloud Translation,       | The text only, without
-(events, communities, listings)  | through a shared cache on our   | personal data
-                                 | servers                         |
+Translation of chat messages     | Google's translation services   | The text to translate and
+                                 | (Google Cloud Translation in    | the target language
+                                 | the current app)                |
+Translation of public content    | Google's translation service,   | The text only, without
+(events, communities, listings)  | through a shared store on our   | personal data
+                                 | servers; if a translation is    |
+                                 | not there, the app may request  |
+                                 | it directly from Google, which  |
+                                 | then sees your IP address       |
 Read-aloud (text-to-speech)      | Google Cloud Text-to-Speech     | The text to read aloud
-Smart replies, cultural tips,    | Google Gemini (paid API)        | The message or text you
-word breakdown                   |                                 | select, and the languages
+Transliteration of messages in   | Google Gemini (paid API)        | The message text and its
+non-Latin scripts                |                                 | language
 Support assistant                | Anthropic Claude                | Your messages to support
 Image and text moderation        | Google Cloud Vision and Natural | Uploaded images; text
                                  | Language                        | checked for safety
 
 9.2 How it works
 
-- All AI requests go from our servers to the provider. Your app does not talk
-  to the AI provider directly.
-- The providers act as our processors. We use them under their paid business
-  terms, under which they do not use your data to train their models.
+- AI requests go from our servers to the provider. The only exception is
+  the translation of public content: if it is not in our shared store, the
+  app may request it from Google's translation service directly. Your
+  private content is never sent from your device to an AI provider.
+- For your private content, the providers act as our processors. We use them
+  under their paid business terms, under which they do not use your data to
+  train their models.
 - Before AI features process your private content for the first time (for
   example translation of chat messages, read-aloud and the AI assistant), we
   show you which provider is used and what is sent, and we ask for your
   consent. You can change this in Settings.
 - Public content, such as events, communities and listings, is translated
-  with Google Cloud Translation through a shared cache on our servers. Only
-  the text is sent, without any personal data, and the translation is stored
-  for everyone who views that content. This does not need your consent.
+  with Google's translation service through a shared store on our servers.
+  Only the text is sent, without any personal data, and the translation is
+  stored for everyone who views that content. This does not need your
+  consent.
+- Translations of chat messages are stored with the message, so that they do
+  not have to be requested again. Translations of short phrases with no
+  personal details (no numbers, links, email addresses or @names) are also
+  kept in an anonymous shared cache for up to 180 days, without the original
+  message or any link to you.
 - Content created or changed by AI is labelled, for example "Translated".
   AI output can contain mistakes. Do not rely on it for important decisions.
 - Our support chat first answers with an AI assistant, which is clearly
@@ -611,9 +629,10 @@ We use automated tools to help keep GreenGo safe:
 - Reports about child safety are handled first.
 - We tell you when we have reviewed your report.
 - If someone often sends clearly unfounded reports, we keep a count of their
-  unfounded reports for 12 months. We warn them and, if they continue, we do
-  not process their reports for 30 days (DSA art. 23; Terms and Conditions,
-  section 18.6).
+  unfounded reports for 12 months. We warn them and, if they continue, a
+  moderator reviews the case and may stop processing their reports for 30
+  days (DSA art. 23; Terms and Conditions, section 18.6). Reports about child
+  safety are always processed.
 
 10.3 Child sexual exploitation
 
@@ -667,7 +686,8 @@ We use automated tools to help keep GreenGo safe:
 11.2 On the web
 
 - Purchases are made through Stripe. You enter your payment details on
-  Stripe's own secure page: cards and, for payments in Brazilian reais, Pix.
+  Stripe's own secure page: cards and, for one-time payments in Brazilian
+  reais (for example coins), Pix. Memberships are paid by card.
 - We receive your Stripe customer number, the amount, the currency, your
   country and the payment status. We never receive your full card number.
 - We keep a record of your consent to immediate delivery of digital content,
@@ -924,6 +944,8 @@ Trader details of sellers (11.8)       | While you sell as a trader, and 6
                                        | months afterwards
 Read-aloud audio cache (9.2)           | Anonymous, not linked to you; kept
                                        | while it is used
+Translations of chat messages (9.2)    | With the message; short phrases in
+                                       | the anonymous cache: up to 180 days
 Child-safety reports and evidence      | At least 1 year, or longer when the
                                        | law or an authority requires it
 Consent and acceptance records,        | For as long as your account exists and
@@ -1333,6 +1355,23 @@ EU and UK representatives: being appointed (see section 1.3)
 ================================================================================
 VERSION HISTORY
 ================================================================================
+
+5.3.1 - effective 17 October 2026 for accounts created on or after
+16 October 2026; 16 November 2026 for accounts created before 16 October 2026
+(announced 17 October 2026)
+Clarifications to match how the app works:
+- Sections 2, 5 and 9: the AI features are translation, read-aloud and
+  transliteration (smart replies and word breakdown are not offered); chat
+  messages are translated with Google's translation services (Google Cloud
+  Translation in the current app); public content is translated with Google's
+  translation service, and the app may request such translations directly;
+  stored chat translations and the anonymous cache of short phrases (also
+  section 14).
+- Section 8.1: an identity document is asked for every experience you publish
+  and for booking an experience as a member.
+- Section 10.2: a moderator reviews the case before reports stop being
+  processed; child-safety reports are always processed.
+- Section 11.2: Pix only for one-time payments; memberships by card.
 
 5.3.0 - effective 16 October 2026 for accounts created on or after that date;
 16 November 2026 for accounts created before 16 October 2026 (announced

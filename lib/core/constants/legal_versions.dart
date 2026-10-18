@@ -7,10 +7,10 @@
 library;
 
 /// Terms and Conditions version shown in-app and recorded at acceptance.
-const String kTermsVersion = '5.3.1';
+const String kTermsVersion = '5.3.2';
 
 /// Privacy Policy version shown in-app and recorded at acceptance.
-const String kPrivacyPolicyVersion = '5.3.0';
+const String kPrivacyPolicyVersion = '5.3.1';
 
 /// Effective date of [kPrivacyPolicyVersion] (and of the Terms up to 5.1.0).
 /// 5.2.0: in-app checkout only, seller-paid service fee 11.5, business
@@ -23,7 +23,11 @@ const String kPrivacyPolicyVersion = '5.3.0';
 /// 16 Oct 2026; accounts created before stay on 5.2.1 until 15 Nov 2026):
 /// trader details 11.8, promotional-use setting 6.4, moderation emails,
 /// app alignment. Sign-up records 5.3.0; existing users are NOT asked again.
-final DateTime kLegalEffectiveDate = DateTime(2026, 10, 16);
+/// 5.3.1 (17 Oct 2026 for accounts created from 16 Oct 2026; older accounts
+/// still move from 5.2.1 on 16 Nov 2026): clarifications to match the app
+/// (AI features, Google translation services, stored chat translations, ID
+/// document for experiences, unfounded reports, Pix). No re-acceptance.
+final DateTime kLegalEffectiveDate = DateTime(2026, 10, 17);
 
 /// Effective date of [kTermsVersion] (5.1.1: section 9.2 - fixed price
 /// points per currency; 5.1.2: the 9.2 example uses the current Base price.
@@ -43,7 +47,12 @@ final DateTime kLegalEffectiveDate = DateTime(2026, 10, 16);
 /// Platinum US$25; were 10 / 9 / 8). Sign-up records 5.3.1; older accounts
 /// still move from 5.2.1 on 16 Nov 2026 and are notified of 5.3.1.
 /// [kTermsReacceptFrom] is NOT raised.
-final DateTime kTermsEffectiveDate = DateTime(2026, 10, 16);
+/// 5.3.2 (17 Oct 2026 for accounts created from 16 Oct 2026; older accounts
+/// still move from 5.2.1 on 16 Nov 2026): clarifications to match the app
+/// (AI helpers, no store trials + 2026 launch offer, pre-sale plans, Pix,
+/// legacy link orders, ticket price phases 11.2 f / 11.6 b, repeat-offender
+/// periods 18.6). Sign-up records 5.3.2; [kTermsReacceptFrom] is NOT raised.
+final DateTime kTermsEffectiveDate = DateTime(2026, 10, 17);
 
 /// Oldest accepted version that does NOT trigger the "we've updated our
 /// Terms" sheet. Raise it only for a MATERIAL change (5.1.0: new Terms 16.9
@@ -68,13 +77,15 @@ const String kPrivacyReacceptFrom = '5.1.0';
 /// 5.3.1 (same day): replaces 5.3.0 in the notice (fee caps raised in 11.6 b);
 /// accounts created before 16 Oct 2026 move from 5.2.1 straight to 5.3.1 on
 /// 16 Nov 2026. A user who dismissed the 5.3.0 notice sees the 5.3.1 one.
+/// 5.3.2 (17 Oct 2026): replaces 5.3.1 in the notice (clarifications + ticket
+/// price phases); older accounts move from 5.2.1 to 5.3.2 on 16 Nov 2026.
 ///
 /// When the version takes effect for everyone: raise [kTermsReacceptFrom] if
 /// the change is material (the "we've updated our Terms" sheet then asks
 /// everyone again and shows that version's bullets,
 /// [legalUpdateBulletsVersion]), and clear or replace these constants. Set
 /// [kUpcomingTermsVersion] to null when nothing is announced.
-const String? kUpcomingTermsVersion = '5.3.1';
+const String? kUpcomingTermsVersion = '5.3.2';
 
 /// Date from which [kUpcomingTermsVersion] applies to accounts created before
 /// [kUpcomingTermsAccountsCreatedBefore] (16 October 2026 + 30 days).

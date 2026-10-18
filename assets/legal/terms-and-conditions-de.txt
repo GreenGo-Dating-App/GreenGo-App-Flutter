@@ -1,9 +1,10 @@
 ALLGEMEINE GESCHÄFTSBEDINGUNGEN VON GREENGO
 
-Version: 5.3.1
-Gültig ab: 16. Oktober 2026 für Konten, die ab diesem Tag erstellt werden;
-  16. November 2026 für Konten, die vor dem 16. Oktober 2026 erstellt wurden
-Angekündigt am: 16. Oktober 2026
+Version: 5.3.2
+Gültig ab: 17. Oktober 2026 für Konten, die ab dem 16. Oktober 2026 erstellt
+  werden; 16. November 2026 für Konten, die vor dem 16. Oktober 2026 erstellt
+  wurden
+Angekündigt am: 17. Oktober 2026
 Vorherige Version: 5.2.1 (16. Oktober 2026), die für vor dem 16. Oktober 2026
   erstellte Konten bis zum 15. November 2026 weiter gilt
 
@@ -129,8 +130,8 @@ d) Events erstellen, finden und besuchen, einschließlich Events von
    Partnerseiten;
 e) Erlebnisse anbieten und Erlebnisse anderer Nutzer buchen;
 f) mit einem Business-Konto ein Unternehmen präsentieren;
-g) KI-Helfer im Chat nutzen: Übersetzung, Vorlesen und, ab Silver,
-   intelligente Antwortvorschläge und Wortanalyse (Abschnitt 14);
+g) KI-Helfer im Chat nutzen: Übersetzung, Vorlesen und Transliteration von
+   Nachrichten in nicht-lateinischen Schriften (Abschnitt 14);
 h) Coins und Mitgliedschaften nutzen, um optionale Funktionen freizuschalten;
 i) Freunde über das Empfehlungsprogramm einladen.
 
@@ -186,6 +187,9 @@ Mitgliedschaft, die du bereits hast.
 - Silver, Gold und Platinum: monatlich oder jährlich.
 - Funktionen, Preis, Währung und Verlängerungszeitraum jedes Tarifs werden dir
   vor dem Kauf in der App angezeigt.
+- In der iOS-App kann die Base-Mitgliedschaft nicht gekauft werden, solange du
+  eine Silver-, Gold- oder Platinum-Mitgliedschaft hast: Die App zeigt sie als
+  in deinem Tarif enthalten an.
 
 7.2 Automatische Verlängerung
 - Mitgliedschaften verlängern sich am Ende jedes Zeitraums automatisch zu dem
@@ -207,7 +211,7 @@ Wenn du kündigst, bleibt deine Mitgliedschaft bis zum Ende des bezahlten
 Zeitraums aktiv und wird nicht verlängert. Das Löschen der App oder deines
 Kontos kündigt kein Store-Abo: Kündige es im Store.
 
-7.4 Kostenlose Testzeiträume
+7.4 Kostenlose Testzeiträume und Einführungsangebote
 a) Web
    - Zur Base-Mitgliedschaft kann im Web ein 7-tägiger kostenloser
      Testzeitraum gehören, einmal pro Konto.
@@ -216,12 +220,22 @@ a) Web
      Ende des Testzeitraums eingezogen.
    - Vor Ende des Testzeitraums sendet dir Stripe, unser Zahlungsdienstleister,
      eine Erinnerung per E-Mail.
-b) App-Stores
-   - Eine in der iOS- oder Android-App gekaufte Mitgliedschaft kann einen
-     kostenlosen Einführungs-Testzeitraum enthalten. Der Store zeigt den
-     Testzeitraum und seine Bedingungen vor dem Kauf an.
-   - Der Testzeitraum und eine etwaige Erinnerung vor seinem Ende werden von
-     Apple oder Google nach ihren eigenen Regeln abgewickelt.
+   - Einführungspreis 2026: Für Mitgliedschaften, die bis zum 31. Dezember
+     2026 (Uhrzeit Brasilien) im Web gekauft werden, kostet der erste
+     Zeitraum (das erste Jahr eines Jahrestarifs oder die ersten 3 Monate
+     eines Monatstarifs) 50 % weniger als der reguläre Preis, wie beim
+     Bezahlvorgang angezeigt. Er gilt einmal pro Konto für Base und einmal für
+     Silver, Gold und Platinum. Verlängerungen erfolgen zum regulären Preis.
+b) App-Stores (Apple App Store und Google Play)
+   - In der iOS- oder Android-App gekaufte Mitgliedschaften haben keinen
+     kostenlosen Testzeitraum.
+   - Einführungsangebot 2026: Neue Abonnenten, die bis zum 31. Dezember 2026
+     abschließen, erhalten 50 % Rabatt auf den ersten Zeitraum (das erste
+     Jahr eines Jahrestarifs oder die ersten 3 Monate eines Monatstarifs),
+     so wie der Store es vor dem Kauf anzeigt. Verlängerungen erfolgen zum
+     regulären Preis.
+   - Apple oder Google entscheiden, wer für das Angebot berechtigt ist, und
+     wenden es nach ihren eigenen Regeln an.
 
 7.5 Preisänderungen
 - Über eine Preiserhöhung informieren wir dich mindestens 30 Tage, bevor sie
@@ -236,7 +250,8 @@ a) Wenn du im Web ein Upgrade machst, erhältst du einen festen Upgrade-Rabatt
    - Silver auf Gold: 10 %;
    - Silver auf Platinum: 15 %;
    - Gold auf Platinum: 10 %.
-   Das Upgrade wird sofort wirksam.
+   Das Upgrade wird sofort wirksam. Gilt für den neuen Tarif der
+   Einführungspreis 2026 (Abschnitt 7.4 a), ersetzt er den Upgrade-Rabatt.
 b) Die ungenutzte Zeit deines alten Tarifs wird nach der ersten Zahlung für
    den neuen Tarif deinem Kontoguthaben gutgeschrieben.
 c) Ein Downgrade ist im Web während eines bezahlten Zeitraums nicht möglich.
@@ -246,8 +261,10 @@ c) Ein Downgrade ist im Web während eines bezahlten Zeitraums nicht möglich.
 
 7.7 Frühere Vorverkaufsangebote
 Wenn du unter einer früheren Version dieser Bedingungen einen
-„Founder“-Vorverkaufstarif gekauft hast, gelten die dir damals zugesagten
-Vorteile weiter.
+Vorverkaufstarif (Silver, Gold oder Platinum) gekauft hast, gelten die dir
+damals zugesagten Vorteile weiter. Wir wenden den Tarif für die gekaufte
+Anzahl von Tagen auf das Konto an, das du mit der beim Vorverkauf
+verwendeten E-Mail-Adresse erstellst.
 
 ================================================================================
 8. COINS
@@ -315,8 +332,9 @@ a) In der iOS-App zahlst du an Apple. In der Android-App zahlst du an Google
    Play. Für diese Käufe gelten deren Zahlungsbedingungen und
    Erstattungsverfahren.
 b) Im Web (greengochat.com und die Web-App) zahlst du an uns, über Stripe. Du
-   kannst per Karte und, bei Zahlungen in brasilianischen Real, per Pix
-   bezahlen.
+   kannst per Karte und, bei einmaligen Zahlungen in brasilianischen Real
+   (zum Beispiel Coins), per Pix bezahlen. Mitgliedschaften werden per Karte
+   bezahlt.
 c) Wir akzeptieren für GreenGo-Käufe weder PayPal noch Boleto oder andere
    Zahlungsmethoden.
 
@@ -458,11 +476,14 @@ b) Nur aktive Business-Konten (Abschnitt 13) können Tickets für ihre Events
    etwaiger Steuern auf das Ticket verantwortlich.
 c) Kostenpflichtige Tickets werden nur über den Bezahlvorgang in der App
    bezahlt, auf das eigene, mit GreenGo verbundene Stripe- oder
-   Mercado-Pago-Konto des Veranstalters. Es gibt keine Zahlungslinks und
-   keine anderen Zahlungsmethoden. Du zahlst den angezeigten Ticketpreis und
-   nichts darüber hinaus. Das Geld geht auf das Konto des Veranstalters:
-   GreenGo verwahrt niemals Ticketgelder. GreenGo erhält nur seine
-   Servicegebühr, die der Veranstalter zahlt (Abschnitt 11.6).
+   Mercado-Pago-Konto des Veranstalters. Für neue Bestellungen gibt es keine
+   Zahlungslinks und keine anderen Zahlungsmethoden: Nur Ticketbestellungen,
+   die vor dem 14. Oktober 2026 mit der eigenen Zahlungsmethode des
+   Veranstalters eröffnet wurden, können noch auf diesem Weg abgeschlossen
+   werden. Du zahlst den angezeigten Ticketpreis und nichts darüber hinaus.
+   Das Geld geht auf das Konto des Veranstalters: GreenGo verwahrt niemals
+   Ticketgelder. GreenGo erhält nur seine Servicegebühr, die der Veranstalter
+   zahlt (Abschnitt 11.6).
 d) Name und E-Mail-Adresse des Käufers/Gastes werden für die Einlasskontrolle an
    den Veranstalter weitergegeben (siehe Datenschutzerklärung, Abschnitt 11.4).
 e) Deine Verbraucherrechte gegenüber dem Veranstalter, einschließlich eines
@@ -470,6 +491,14 @@ e) Deine Verbraucherrechte gegenüber dem Veranstalter, einschließlich eines
    des Veranstalters gilt. Wende dich zuerst an den Veranstalter; wenn er nicht
    antwortet, melde das Event in der App, und wir handeln wie in Abschnitt 18
    beschrieben.
+f) Preisphasen: Der Veranstalter eines kostenpflichtigen Events kann dessen
+   Tickets in Preisphasen verkaufen (zum Beispiel „Early Bird“, „Regulär“
+   oder „Abendkasse“). Jede Phase hat ihren eigenen Preis und eine eigene
+   Anzahl von Tickets, und jede Phase kostet mehr als die vorherige. Ist eine
+   Phase ausverkauft, beginnt die nächste. Unser Server legt den Preis jedes
+   Tickets beim Bezahlvorgang fest, nach der Phase, die in diesem Moment
+   gilt; eine Bestellung mehrerer Tickets kann Tickets aus mehr als einer
+   Phase enthalten. Der Bezahlvorgang zeigt den Preis an, bevor du zahlst.
 
 11.3 Der Check-in bei Events erfolgt über einen QR-Code in der App. Bei
 kostenpflichtigen Events wird der QR-Code erst ausgestellt, nachdem deine
@@ -504,6 +533,8 @@ b) Die Gebühr pro Ticket hängt von der Mitgliedschaft des Verkäufers zum
    - Silver: 3 US$ + 10 % des Ticketpreises, höchstens 30 US$;
    - Gold: 2 US$ + 10 % des Ticketpreises, höchstens 28 US$;
    - Platinum: 1 US$ + 10 % des Ticketpreises, höchstens 25 US$.
+   Bei Preisphasen (Abschnitt 11.2 f) wird die Gebühr auf den Preis jedes
+   einzelnen Tickets berechnet.
 c) Erstes kostenpflichtiges Angebot: Wenn du auf GreenGo noch keine
    kostenpflichtigen Tickets verkauft hast, beträgt die Gebühr pauschal
    1 US$ pro Ticket für das erste Angebot (Event oder Erlebnis), bei dem ein
@@ -718,8 +749,9 @@ Platinum-Mitgliedschaft.
 14.1 GreenGo bietet KI-gestützte Funktionen:
 - Übersetzung;
 - Vorlesen (Text-to-Speech);
-- intelligente Antwortvorschläge und Wortanalyse (Silver-Mitgliedschaft oder
-  höher).
+- Transliteration in lateinische Buchstaben von Chatnachrichten in
+  nicht-lateinischen Schriften, etwa Japanisch, Arabisch oder Russisch, wenn
+  die kulturellen Tipps in den Chat-Einstellungen eingeschaltet sind.
 
 Der Support-Chat beginnt mit einem KI-Assistenten. Er ist als KI
 gekennzeichnet, und du kannst jederzeit auf „Mit einer Person sprechen“
@@ -727,14 +759,17 @@ tippen, um einen Menschen zu erreichen.
 
 14.2 Einwilligung
 a) Bevor KI-Funktionen zum ersten Mal deine privaten Inhalte verarbeiten (zum
-   Beispiel die Übersetzung von Chatnachrichten, das Vorlesen und der
-   KI-Assistent), teilen wir dir mit, welcher Anbieter verwendet wird und was
-   gesendet wird, und bitten um deine Einwilligung. Du kannst deine
-   Einwilligung in den Einstellungen widerrufen.
-b) Öffentliche Inhalte, etwa Events, Communities und Angebote, werden mit
-   Google Cloud Translation über einen gemeinsamen Cache auf unseren Servern
-   übersetzt. Gesendet wird nur der Text, ohne personenbezogene Daten. Dafür
-   ist deine Einwilligung nicht nötig.
+   Beispiel die Übersetzung von Chatnachrichten, das Vorlesen, die
+   Transliteration und der KI-Assistent), teilen wir dir mit, welcher
+   Anbieter verwendet wird und was gesendet wird, und bitten um deine
+   Einwilligung. Du kannst deine Einwilligung in den Einstellungen
+   widerrufen.
+b) Öffentliche Inhalte, etwa Events, Communities und Angebote, werden mit dem
+   Übersetzungsdienst von Google über einen gemeinsamen Speicher auf unseren
+   Servern übersetzt. Ist eine Übersetzung dort nicht vorhanden, kann die App
+   sie direkt beim Übersetzungsdienst von Google anfordern. Gesendet wird nur
+   der Text, ohne personenbezogene Daten. Dafür ist deine Einwilligung nicht
+   nötig.
 c) Einzelheiten findest du in der Datenschutzerklärung (Abschnitt 9).
 
 14.3 KI-Ergebnisse können falsch, unvollständig oder kulturell ungenau sein.
@@ -746,8 +781,7 @@ nach.
 14.4 Limits und Kosten
 - Einige KI-Funktionen sind begrenzt oder kosten Coins, wie in der App
   angezeigt. Zum Beispiel kostet das Vorlesen 5 Coins.
-- Intelligente Antwortvorschläge und Wortanalyse erfordern eine
-  Silver-Mitgliedschaft oder höher.
+- Wie viel Chattext du pro Tag übersetzen kannst, hängt von deinem Tarif ab.
 
 ================================================================================
 15. DEINE INHALTE
@@ -1020,11 +1054,15 @@ Verbraucherschutzbehörde wenden (Abschnitt 26).
 18.6 Missbrauch
 - Wiederholungstäter: Wenn jemand häufig offensichtlich rechtswidrige Inhalte
   postet oder immer wieder gegen diese Bedingungen verstößt, verwarnen wir ihn
-  zuerst. Nach 3 Verwarnungen innerhalb von 12 Monaten sperren wir das Konto.
-  In schweren Fällen können wir sofort handeln (Abschnitte 19 und 20.3).
+  zuerst. Erreicht er nach einer Verwarnung 3 Verstöße (Verwarnungen oder
+  Entfernungen seiner Inhalte) innerhalb von 12 Monaten, sperren wir das Konto
+  für 7 Tage, und für 30 Tage, wenn es innerhalb von 12 Monaten erneut
+  geschieht. In schweren Fällen können wir sofort handeln (Abschnitte 19 und
+  20.3).
 - Unbegründete Meldungen: Wenn jemand häufig offensichtlich unbegründete
-  Meldungen sendet, verwarnen wir ihn. Macht er weiter, bearbeiten wir seine
-  Meldungen 30 Tage lang nicht (DSA art. 23).
+  Meldungen sendet, verwarnen wir ihn. Macht er weiter, prüft ein Moderator
+  den Fall und kann die Bearbeitung seiner Meldungen für 30 Tage aussetzen
+  (DSA art. 23). Meldungen zur Kindersicherheit werden immer bearbeitet.
 
 18.7 Kontaktstellen (DSA arts. 11 and 12)
 - Für Behörden der EU-Mitgliedstaaten, die Europäische Kommission und das
@@ -1311,6 +1349,28 @@ Urheberrecht (DMCA): copyright@greengochat.com
 ================================================================================
 VERSIONSVERLAUF
 ================================================================================
+
+5.3.2 - gültig ab 17. Oktober 2026 für Konten, die ab dem 16. Oktober 2026
+erstellt werden; ab 16. November 2026 für vor dem 16. Oktober 2026 erstellte
+Konten (angekündigt am 17. Oktober 2026)
+Klarstellungen, damit die Bedingungen der Funktionsweise der App entsprechen:
+- Abschnitte 5.1 g, 14.1, 14.2 und 14.4: Die KI-Helfer im Chat sind
+  Übersetzung, Vorlesen und Transliteration (intelligente
+  Antwortvorschläge und Wortanalyse werden nicht angeboten); öffentliche
+  Inhalte werden mit dem Übersetzungsdienst von Google übersetzt; tägliche
+  Übersetzungslimits je Tarif.
+- Abschnitte 7.1, 7.4 und 7.6: keine kostenlosen Testzeiträume in den
+  App-Stores; das Einführungsangebot 2026 (50 % Rabatt auf den ersten
+  Zeitraum) im Web und in den App-Stores; Base ist in der iOS-App in Silver,
+  Gold und Platinum enthalten.
+- Abschnitt 7.7: Vorverkaufstarife.
+- Abschnitt 9.1 b: Pix nur für einmalige Zahlungen; Mitgliedschaften per
+  Karte.
+- Abschnitt 11.2 c: vor dem 14. Oktober 2026 mit der eigenen
+  Zahlungsmethode des Veranstalters eröffnete Ticketbestellungen.
+- Abschnitte 11.2 f und 11.6 b: Preisphasen für Tickets.
+- Abschnitt 18.6: Sperrfristen für Wiederholungstäter; Prüfung
+  unbegründeter Meldungen durch einen Moderator.
 
 5.3.1 - gültig ab 16. Oktober 2026 für Konten, die ab diesem Tag erstellt
 werden; ab 16. November 2026 für vor dem 16. Oktober 2026 erstellte Konten

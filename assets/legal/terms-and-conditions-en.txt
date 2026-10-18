@@ -1,9 +1,10 @@
 GREENGO TERMS AND CONDITIONS
 
-Version: 5.3.1
-Effective date: 16 October 2026 for accounts created on or after that date;
-  16 November 2026 for accounts created before 16 October 2026
-Announced: 16 October 2026
+Version: 5.3.2
+Effective date: 17 October 2026 for accounts created on or after
+  16 October 2026; 16 November 2026 for accounts created before
+  16 October 2026
+Announced: 17 October 2026
 Previous version: 5.2.1 (16 October 2026), which continues to apply to accounts
   created before 16 October 2026 until 15 November 2026
 
@@ -112,8 +113,8 @@ c) join and run Communities, with posts, tips, announcements and community
 d) create, find and attend Events, including events from partner sites;
 e) offer and book Experiences hosted by other users;
 f) present a business with a Business account;
-g) use AI helpers in chat: translation, read-aloud and, with Silver or above,
-   smart replies and word breakdown (section 14);
+g) use AI helpers in chat: translation, read-aloud and transliteration of
+   messages written in non-Latin scripts (section 14);
 h) use Coins and Memberships to unlock optional features;
 i) invite friends through the referral programme.
 
@@ -163,6 +164,8 @@ account directly. A grant never reduces a Membership you already hold.
 - Silver, Gold and Platinum: monthly or yearly.
 - The features, price, currency and renewal period of each plan are shown in
   the app before you buy.
+- In the iOS app, Base Membership cannot be bought while you have a Silver,
+  Gold or Platinum Membership: the app shows it as included in your plan.
 
 7.2 Automatic renewal
 - Memberships renew automatically at the end of each period, at the price
@@ -183,7 +186,7 @@ When you cancel, your Membership stays active until the end of the period you
 paid for, and is not renewed. Deleting the app or your account does not cancel
 a store subscription: cancel it in the store.
 
-7.4 Free trials
+7.4 Free trials and introductory offers
 a) Web
    - The Base Membership may come with a 7-day free trial on the web, once
      per account.
@@ -191,12 +194,19 @@ a) Web
      Base Membership, and the first payment is taken when the trial ends.
    - Before the trial ends, Stripe, our payment provider, sends you a reminder
      email.
-b) App stores
-   - A Membership bought in the iOS or Android app may include an
-     introductory free trial. The store shows the trial and its conditions
-     before you buy.
-   - The trial and any reminder before it ends are handled by Apple or Google
-     under their own rules.
+   - 2026 launch price: for Memberships bought on the web until 31 December
+     2026 (Brazil time), the first period (the first year of a yearly plan,
+     or the first 3 months of a monthly plan) is 50% off the regular price,
+     as shown at checkout. It applies once per account for Base, and once
+     for Silver, Gold and Platinum. Renewals are at the regular price.
+b) App stores (Apple App Store and Google Play)
+   - Memberships bought in the iOS or Android app have no free trial.
+   - 2026 launch offer: new subscribers who subscribe until 31 December 2026
+     get 50% off the first period (the first year of a yearly plan, or the
+     first 3 months of a monthly plan), as the store shows it before you
+     buy. Renewals are at the regular price.
+   - Apple or Google decide who is eligible for the offer, and apply it under
+     their own rules.
 
 7.5 Price changes
 - We will tell you about a price increase at least 30 days before it applies
@@ -211,7 +221,8 @@ a) If you upgrade on the web, you get a fixed upgrade discount on the price
    - Silver to Gold: 10%;
    - Silver to Platinum: 15%;
    - Gold to Platinum: 10%.
-   The upgrade takes effect immediately.
+   The upgrade takes effect immediately. If the 2026 launch price (section
+   7.4 a) applies to the new plan, it replaces the upgrade discount.
 b) The unused time of your old plan is credited to your account balance after
    the first payment for the new plan.
 c) You cannot downgrade on the web during a paid period. To move to a lower
@@ -219,8 +230,10 @@ c) You cannot downgrade on the web during a paid period. To move to a lower
    change takes effect then.
 
 7.7 Earlier pre-sale offers
-If you bought a "Founder" pre-sale plan under an earlier version of these Terms,
-the benefits promised to you at that time continue to apply.
+If you bought a pre-sale plan (Silver, Gold or Platinum) under an earlier
+version of these Terms, the benefits promised to you at that time continue to
+apply. We apply the plan, for the number of days you bought, to the account
+you create with the email address you used for the pre-sale.
 
 ================================================================================
 8. COINS
@@ -282,7 +295,8 @@ c) Coins obtained through fraud, abuse of a bug or breach of these Terms may be
 a) In the iOS app you pay Apple. In the Android app you pay Google Play. Their
    payment terms, and their refund processes, apply to those purchases.
 b) On the web (greengochat.com and the web app) you pay us, through Stripe. You
-   can pay by card and, for payments in Brazilian reais, by Pix.
+   can pay by card and, for one-time payments in Brazilian reais (for
+   example Coins), by Pix. Memberships are paid by card.
 c) We do not accept PayPal, boleto or other payment methods for GreenGo
    purchases.
 
@@ -410,7 +424,9 @@ b) Only active Business accounts (section 13) can sell tickets for their
    receipt and paying any taxes on the ticket.
 c) Paid tickets are paid only through the in-app checkout, to the
    organiser's own Stripe or Mercado Pago account connected to GreenGo. There
-   are no payment links and no other payment methods. You pay the ticket price
+   are no payment links and no other payment methods for new orders: only
+   ticket orders opened before 14 October 2026 with the organiser's own
+   payment method can still be completed that way. You pay the ticket price
    shown, and nothing more. The money goes to the organiser's account: GreenGo
    never holds ticket money. GreenGo receives only its service fee, which the
    organiser pays (section 11.6).
@@ -420,6 +436,13 @@ e) Your consumer rights against the organiser, including any right of
    withdrawal, are those of the law that applies to the organiser's sale.
    Contact the organiser first; if they do not answer, report the Event in the
    app and we will act as described in section 18.
+f) Price phases: the organiser of a paid Event can sell its tickets in price
+   phases (for example "Early bird", "Regular" or "At the door"). Each phase
+   has its own price and number of tickets, and each phase costs more than
+   the one before. When a phase sells out, the next one starts. Our server
+   sets the price of each ticket at checkout, from the phase that is current
+   at that moment; an order for several tickets can include tickets from
+   more than one phase. The checkout shows the price before you pay.
 
 11.3 Event check-in uses a QR code in the app. For paid Events the QR code is
 issued only after your payment is confirmed. Guests who book without an
@@ -452,6 +475,8 @@ b) The fee per ticket depends on the seller's Membership at the time of the
    - Silver: US$3 + 10% of the ticket price, at most US$30;
    - Gold: US$2 + 10% of the ticket price, at most US$28;
    - Platinum: US$1 + 10% of the ticket price, at most US$25.
+   With price phases (section 11.2 f), the fee is calculated on the price of
+   each ticket.
 c) First paid listing: if you have not sold paid tickets on GreenGo before,
    the fee is a flat US$1 per ticket for the first listing (Event or
    Experience) on which a buyer opens a paid checkout, for that listing.
@@ -636,20 +661,24 @@ Membership.
 14.1 GreenGo offers AI-powered features:
 - translation;
 - read-aloud (text-to-speech);
-- smart replies and word breakdown (Silver Membership or above).
+- transliteration into Latin letters of chat messages written in non-Latin
+  scripts, such as Japanese, Arabic or Russian, when cultural tips are on in
+  the chat settings.
 
 The support chat starts with an AI assistant. It is labelled as AI, and you can
 tap "Talk to a person" at any time to reach a human.
 
 14.2 Consent
 a) Before AI features process your private content for the first time (for
-   example translation of chat messages, read-aloud and the AI assistant), we
+   example translation of chat messages, read-aloud, transliteration and the
+   AI assistant), we
    tell you which provider is used and what is sent, and ask for your
    consent. You can withdraw your consent in Settings.
 b) Public content, such as Events, Communities and listings, is translated
-   with Google Cloud Translation through a shared cache on our servers. Only
-   the text is sent, without any personal data. This does not need your
-   consent.
+   with Google's translation service through a shared store on our servers.
+   If a translation is not available there, the app may request it from
+   Google's translation service directly. Only the text is sent, without any
+   personal data. This does not need your consent.
 c) The Privacy Policy (section 9) has the details.
 
 14.3 AI output can be wrong, incomplete or culturally inaccurate. Translated
@@ -659,7 +688,7 @@ financial or safety decisions. If in doubt, check with the other person.
 14.4 Limits and costs
 - Some AI features are limited or cost Coins, as shown in the app. For
   example, read-aloud costs 5 Coins.
-- Smart replies and word breakdown need a Silver Membership or above.
+- How much chat text you can translate each day depends on your plan.
 
 ================================================================================
 15. YOUR CONTENT
@@ -906,12 +935,14 @@ or to a consumer authority (section 26).
 
 18.6 Misuse
 - Repeat offenders: if someone often posts clearly illegal Content or keeps
-  breaking these Terms, we warn them first. After 3 warnings within 12
-  months, we suspend the account. In serious cases we can act at once
-  (sections 19 and 20.3).
+  breaking these Terms, we warn them first. If, after a warning, they reach
+  3 violations (warnings or removals of their Content) within 12 months, we
+  suspend the account for 7 days, and for 30 days if it happens again within
+  12 months. In serious cases we can act at once (sections 19 and 20.3).
 - Unfounded reports: if someone often sends clearly unfounded reports, we
-  warn them. If they continue, we do not process their reports for 30 days
-  (DSA art. 23).
+  warn them. If they continue, a moderator reviews the case and may stop
+  processing their reports for 30 days (DSA art. 23). Reports about child
+  safety are always processed.
 
 18.7 Points of contact (DSA arts. 11 and 12)
 - For authorities of the EU Member States, the European Commission and the
@@ -1179,6 +1210,25 @@ Copyright (DMCA): copyright@greengochat.com
 ================================================================================
 VERSION HISTORY
 ================================================================================
+
+5.3.2 - effective 17 October 2026 for accounts created on or after
+16 October 2026; 16 November 2026 for accounts created before 16 October 2026
+(announced 17 October 2026)
+Clarifications to match how the app works:
+- Sections 5.1 g, 14.1, 14.2 and 14.4: the AI helpers in chat are
+  translation, read-aloud and transliteration (smart replies and word
+  breakdown are not offered); public content is translated with Google's
+  translation service; daily translation limits per plan.
+- Sections 7.1, 7.4 and 7.6: no free trials in the app stores; the 2026
+  launch offer (50% off the first period) on the web and in the app stores;
+  Base is included in Silver, Gold and Platinum in the iOS app.
+- Section 7.7: pre-sale plans.
+- Section 9.1 b: Pix only for one-time payments; Memberships by card.
+- Section 11.2 c: ticket orders opened before 14 October 2026 with the
+  organiser's own payment method.
+- Sections 11.2 f and 11.6 b: ticket price phases.
+- Section 18.6: suspension periods for repeat offenders; review of
+  unfounded reports by a moderator.
 
 5.3.1 - effective 16 October 2026 for accounts created on or after that date;
 16 November 2026 for accounts created before 16 October 2026 (announced

@@ -25961,6 +25961,10 @@ class AppLocalizationsIt extends AppLocalizations {
       'Massimale più alto della commissione di servizio di GreenGo per biglietto per i venditori: Silver 30 US\$, Gold 28 US\$, Platinum 25 US\$';
 
   @override
+  String get legalUpdate532BulletPhases =>
+      'Fasi di prezzo per i biglietti degli eventi (per esempio early bird) e l’offerta di lancio 2026: 50% di sconto sul primo periodo di un nuovo Abbonamento';
+
+  @override
   String get legalUpdateCloseAccount => 'Non accetto – chiudi il mio account';
 
   @override

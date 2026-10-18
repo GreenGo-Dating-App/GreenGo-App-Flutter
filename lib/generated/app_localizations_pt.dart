@@ -25900,6 +25900,10 @@ class AppLocalizationsPt extends AppLocalizations {
       'Limite máximo mais alto da taxa de serviço do GreenGo por bilhete para vendedores: Silver 30 US\$, Gold 28 US\$, Platinum 25 US\$';
 
   @override
+  String get legalUpdate532BulletPhases =>
+      'Fases de preço para os bilhetes de eventos (por exemplo, antecipado) e a oferta de lançamento 2026: 50% de desconto no primeiro período de uma nova Subscrição';
+
+  @override
   String get legalUpdateCloseAccount => 'Não aceito – fechar a minha conta';
 
   @override
@@ -51939,6 +51943,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get legalUpdate531BulletFeeCaps =>
       'Limite máximo maior da taxa de serviço do GreenGo por ingresso para vendedores: Silver US\$ 30, Gold US\$ 28, Platinum US\$ 25';
+
+  @override
+  String get legalUpdate532BulletPhases =>
+      'Fases de preço para ingressos de eventos (por exemplo, antecipado) e a oferta de lançamento 2026: 50% de desconto no primeiro período de uma nova Assinatura';
 
   @override
   String get legalUpdateCloseAccount => 'Não aceito – encerrar minha conta';

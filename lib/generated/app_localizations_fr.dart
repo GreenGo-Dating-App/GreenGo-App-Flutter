@@ -26073,6 +26073,10 @@ class AppLocalizationsFr extends AppLocalizations {
       'Plafond plus élevé des frais de service de GreenGo par billet pour les vendeurs : Silver 30 \$ US, Gold 28 \$ US, Platinum 25 \$ US';
 
   @override
+  String get legalUpdate532BulletPhases =>
+      'Des phases de prix pour les billets d’événements (par exemple early bird) et l’offre de lancement 2026 : 50 % de réduction sur la première période d’un nouvel Abonnement';
+
+  @override
   String get legalUpdateCloseAccount => 'Je n’accepte pas – fermer mon compte';
 
   @override

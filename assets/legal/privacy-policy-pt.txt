@@ -1,10 +1,10 @@
 POLÍTICA DE PRIVACIDADE DO GREENGO
 
-Versão: 5.3.0
-Data de entrada em vigor: 16 de outubro de 2026 para as contas criadas a partir
-  dessa data; 16 de novembro de 2026 para as contas criadas antes de
-  16 de outubro de 2026
-Anunciada em: 16 de outubro de 2026
+Versão: 5.3.1
+Data de entrada em vigor: 17 de outubro de 2026 para as contas criadas a partir
+  de 16 de outubro de 2026; 16 de novembro de 2026 para as contas criadas
+  antes de 16 de outubro de 2026
+Anunciada em: 17 de outubro de 2026
 Versão anterior: 5.2.1 (16 de outubro de 2026), que continua a aplicar-se às
   contas criadas antes de 16 de outubro de 2026 até 15 de novembro de 2026
 
@@ -96,12 +96,13 @@ partilhada (secção 11.7). Esta política também se aplica a essas pessoas.
 - Se verificar a sua idade com um documento de identificação, eliminamos a
   imagem logo que a verificação esteja concluída. Conservamos apenas o
   resultado.
-- As funcionalidades de IA (tradução, leitura em voz alta, respostas
-  inteligentes e decomposição de palavras) funcionam através dos nossos
-  servidores.
-  Utilizam serviços da Google, e o nosso assistente de apoio utiliza o Claude da
-  Anthropic. Pedimos o seu consentimento antes de as utilizar pela primeira vez,
-  e o assistente de apoio está claramente identificado como IA.
+- As funcionalidades de IA (tradução, leitura em voz alta e transliteração de
+  mensagens escritas em alfabetos não latinos) utilizam serviços da Google, e
+  o nosso assistente de apoio utiliza o Claude da Anthropic. Funcionam através
+  dos nossos servidores, exceto que a aplicação pode pedir diretamente ao
+  serviço de tradução da Google a tradução de conteúdo público. Pedimos o seu
+  consentimento antes de tratarem pela primeira vez o seu conteúdo privado, e
+  o assistente de apoio está claramente identificado como IA.
 - Pode eliminar a sua conta a qualquer momento:
   - na aplicação;
   - no nosso website, em https://greengochat.com/delete-account, confirmando
@@ -327,9 +328,9 @@ Finalidade                           | O que utilizamos           | Fundamento j
 4. Mensagens, grupos, comunidades,   | Conteúdo, conta            | Contrato (RGPD 6(1)(b); LGPD 7 V)
    eventos, reservas                 |                            |
 5. Funcionalidades de IA: tradução,  | O texto que escolhe tratar | Contrato, após o seu consentimento
-   leitura em voz alta, respostas    |                            | para a funcionalidade de IA (RGPD
-   inteligentes, decomposição de     |                            | 6(1)(a)/(b); LGPD 7 I/V). Ver
-   palavras                          |                            | secção 9.
+   leitura em voz alta,              |                            | para a funcionalidade de IA (RGPD
+   transliteração                    |                            | 6(1)(a)/(b); LGPD 7 I/V). Ver
+                                     |                            | secção 9.
 6. Verificação da idade com um       | Imagem do documento, data  | Consentimento explícito (RGPD
    documento de identificação        | de nascimento nele lida    | 9(2)(a); LGPD 11 I). Ver secção 8.
 7. Verificação por selfie            | Selfie, fotos de perfil    | Consentimento explícito (RGPD
@@ -494,7 +495,8 @@ O GreenGo destina-se a adultos (maiores de 18 anos). Todos indicam a sua data
 de nascimento quando se registam. Só pedimos um documento de identificação nos
 seguintes casos:
 - antes de publicar numa Comunidade;
-- antes de publicar uma experiência paga como anfitrião;
+- antes de publicar qualquer experiência como anfitrião, ou de reservar uma
+  experiência como membro;
 - quando a lei do local onde vive exige verificações de idade mais rigorosas;
 - quando temos um motivo concreto para crer que uma conta pertence a uma
   pessoa com menos de 18 anos.
@@ -582,36 +584,51 @@ lucro com dados biométricos.
 
 Funcionalidade                   | Fornecedor (em nosso nome)      | O que é enviado
 ---------------------------------|---------------------------------|----------------------------
-Tradução de mensagens            | Google Cloud Translation        | O texto a traduzir
-Tradução de conteúdo público     | Google Cloud Translation,       | Apenas o texto, sem dados
-(eventos, comunidades, anúncios) | através de uma cache partilhada | pessoais
-                                 | nos nossos servidores           |
+Tradução de mensagens de chat    | Serviços de tradução da Google  | O texto a traduzir e o
+                                 | (Google Cloud Translation na    | idioma de destino
+                                 | aplicação atual)                |
+Tradução de conteúdo público     | Serviço de tradução da Google,  | Apenas o texto, sem dados
+(eventos, comunidades, anúncios) | através de um repositório       | pessoais
+                                 | partilhado nos nossos           |
+                                 | servidores; se uma tradução aí  |
+                                 | não existir, a aplicação pode   |
+                                 | pedi-la diretamente à Google,   |
+                                 | que vê então o seu endereço IP  |
 Leitura em voz alta (texto para  | Google Cloud Text-to-Speech     | O texto a ler em voz alta
 fala)                            |                                 |
-Respostas inteligentes, dicas    | Google Gemini (API paga)        | A mensagem ou o texto que
-culturais, decomposição de       |                                 | seleciona, e os idiomas
-palavras                         |                                 |
+Transliteração de mensagens em   | Google Gemini (API paga)        | O texto da mensagem e o
+alfabetos não latinos            |                                 | respetivo idioma
 Assistente de apoio              | Anthropic Claude                | As suas mensagens ao apoio
 Moderação de imagens e texto     | Google Cloud Vision e Natural   | Imagens carregadas; texto
                                  | Language                        | verificado por segurança
 
 9.2 Como funciona
 
-- Todos os pedidos de IA seguem dos nossos servidores para o fornecedor. A sua
-  aplicação não comunica diretamente com o fornecedor de IA.
-- Os fornecedores atuam como nossos subcontratantes. Utilizamo-los ao abrigo
-  dos respetivos termos empresariais pagos, nos termos dos quais não utilizam os
-  seus dados para treinar os seus modelos.
+- Os pedidos de IA seguem dos nossos servidores para o fornecedor. A única
+  exceção é a tradução de conteúdo público: se não estiver no nosso
+  repositório partilhado, a aplicação pode pedi-la diretamente ao serviço de
+  tradução da Google. O seu conteúdo privado nunca é enviado do seu
+  dispositivo para um fornecedor de IA.
+- Relativamente ao seu conteúdo privado, os fornecedores atuam como nossos
+  subcontratantes. Utilizamo-los ao abrigo dos respetivos termos empresariais
+  pagos, nos termos dos quais não utilizam os seus dados para treinar os seus
+  modelos.
 - Antes de as funcionalidades de IA tratarem o seu conteúdo privado pela
   primeira vez (por exemplo, a tradução de mensagens de chat, a leitura em voz
-  alta e o assistente de IA), mostramos-lhe qual o fornecedor utilizado e o
+  alta, a transliteração e o assistente de IA), mostramos-lhe qual o
+  fornecedor utilizado e o
   que é enviado, e pedimos o seu consentimento. Pode alterar esta opção nas
   Definições.
 - O conteúdo público, como eventos, comunidades e anúncios, é traduzido com o
-  Google Cloud Translation através de uma cache partilhada nos nossos
-  servidores. É enviado apenas o texto, sem quaisquer dados pessoais, e a
-  tradução é guardada para todas as pessoas que veem esse conteúdo. Isto não
+  serviço de tradução da Google através de um repositório partilhado nos
+  nossos servidores. É enviado apenas o texto, sem quaisquer dados pessoais, e
+  a tradução é guardada para todas as pessoas que veem esse conteúdo. Isto não
   exige o seu consentimento.
+- As traduções das mensagens de chat são guardadas com a mensagem, para que
+  não tenham de ser pedidas novamente. As traduções de frases curtas sem
+  dados pessoais (sem números, ligações, endereços de e-mail ou @nomes) são
+  também conservadas numa cache partilhada anónima durante até 180 dias, sem
+  a mensagem original nem qualquer ligação a si.
 - Os conteúdos criados ou alterados por IA são identificados, por exemplo com
   "Traduzido". Os resultados da IA podem conter erros. Não confie neles para
   decisões importantes.
@@ -670,8 +687,10 @@ Utilizamos ferramentas automatizadas para ajudar a manter o GreenGo seguro:
 - Informamo-lo quando tivermos analisado a sua denúncia.
 - Se alguém enviar frequentemente denúncias manifestamente infundadas,
   conservamos uma contagem das suas denúncias infundadas durante 12 meses.
-  Avisamo-lo e, se continuar, não tratamos as suas denúncias durante 30 dias
-  (RSD art. 23; Termos e Condições, secção 18.6).
+  Avisamo-lo e, se continuar, um moderador analisa o caso e pode deixar de
+  tratar as suas denúncias durante 30 dias (RSD art. 23; Termos e Condições,
+  secção 18.6). As denúncias relativas à segurança infantil são sempre
+  tratadas.
 
 10.3 Exploração sexual de crianças
 
@@ -727,8 +746,9 @@ Utilizamos ferramentas automatizadas para ajudar a manter o GreenGo seguro:
 11.2 Na web
 
 - As compras são efetuadas através da Stripe. Introduz os seus dados de
-  pagamento na página segura própria da Stripe: cartões e, para pagamentos em
-  reais brasileiros, Pix.
+  pagamento na página segura própria da Stripe: cartões e, para pagamentos
+  únicos em reais brasileiros (por exemplo, moedas), Pix. As subscrições são
+  pagas com cartão.
 - Recebemos o seu número de cliente Stripe, o montante, a moeda, o seu país e o
   estado do pagamento. Nunca recebemos o número completo do seu cartão.
 - Conservamos um registo do seu consentimento para o fornecimento imediato de
@@ -1016,6 +1036,8 @@ Dados de profissional dos vendedores   | Enquanto vender como profissional, e
 (11.8)                                 | 6 meses depois
 Cache de áudio de leitura em voz alta  | Anónima, sem ligação a si; conservada
 (9.2)                                  | enquanto for utilizada
+Traduções de mensagens de chat (9.2)   | Com a mensagem; frases curtas na cache
+                                       | anónima: até 180 dias
 Denúncias e provas relativas à         | Pelo menos 1 ano, ou mais quando a lei
 segurança infantil                     | ou uma autoridade o exija
 Registos de consentimento e aceitação, | Enquanto a sua conta existir e 5 anos
@@ -1460,6 +1482,25 @@ Representantes na UE e no Reino Unido: em processo de designação (ver secção
 ================================================================================
 HISTÓRICO DE VERSÕES
 ================================================================================
+
+5.3.1 - em vigor a partir de 17 de outubro de 2026 para as contas criadas a
+partir de 16 de outubro de 2026; a partir de 16 de novembro de 2026 para as
+contas criadas antes de 16 de outubro de 2026 (anunciada a 17 de outubro de
+2026)
+Clarificações para corresponder ao funcionamento da aplicação:
+- Secções 2, 5 e 9: as funcionalidades de IA são a tradução, a leitura em voz
+  alta e a transliteração (as respostas inteligentes e a decomposição de
+  palavras não são oferecidas); as mensagens de chat são traduzidas com os
+  serviços de tradução da Google (Google Cloud Translation na aplicação
+  atual); o conteúdo público é traduzido com o serviço de tradução da Google,
+  e a aplicação pode pedir essas traduções diretamente; traduções de chat
+  guardadas e a cache anónima de frases curtas (também secção 14).
+- Secção 8.1: é pedido um documento de identificação para cada experiência
+  que publica e para reservar uma experiência como membro.
+- Secção 10.2: um moderador analisa o caso antes de as denúncias deixarem de
+  ser tratadas; as denúncias relativas à segurança infantil são sempre
+  tratadas.
+- Secção 11.2: Pix apenas para pagamentos únicos; subscrições com cartão.
 
 5.3.0 - em vigor a partir de 16 de outubro de 2026 para as contas criadas a
 partir dessa data; a partir de 16 de novembro de 2026 para as contas criadas

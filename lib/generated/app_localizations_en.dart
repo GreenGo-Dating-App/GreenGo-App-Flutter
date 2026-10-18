@@ -25681,6 +25681,10 @@ class AppLocalizationsEn extends AppLocalizations {
       'Higher maximum GreenGo service fee per ticket for sellers: Silver US\$30, Gold US\$28, Platinum US\$25';
 
   @override
+  String get legalUpdate532BulletPhases =>
+      'Ticket price phases for events (for example early bird), and the 2026 launch offer: 50% off the first period of a new Membership';
+
+  @override
   String get legalUpdateCloseAccount => 'I don\'t accept – close my account';
 
   @override

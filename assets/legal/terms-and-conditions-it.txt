@@ -1,9 +1,10 @@
 TERMINI E CONDIZIONI DI GREENGO
 
-Versione: 5.3.1
-Data di entrata in vigore: 16 ottobre 2026 per gli account creati da quella data
-  in poi; 16 novembre 2026 per gli account creati prima del 16 ottobre 2026
-Annunciata il: 16 ottobre 2026
+Versione: 5.3.2
+Data di entrata in vigore: 17 ottobre 2026 per gli account creati dal
+  16 ottobre 2026 in poi; 16 novembre 2026 per gli account creati prima del
+  16 ottobre 2026
+Annunciata il: 17 ottobre 2026
 Versione precedente: 5.2.1 (16 ottobre 2026), che continua ad applicarsi agli
   account creati prima del 16 ottobre 2026 fino al 15 novembre 2026
 
@@ -123,9 +124,8 @@ d) creare, trovare e partecipare a Eventi, compresi gli eventi provenienti da
    siti partner;
 e) offrire e prenotare Esperienze organizzate da altri utenti;
 f) presentare un'attività commerciale con un Account business;
-g) usare gli assistenti di IA nella chat: traduzione, lettura vocale e, con
-   Silver o superiore, risposte intelligenti e analisi delle parole
-   (sezione 14);
+g) usare gli assistenti di IA nella chat: traduzione, lettura vocale e
+   traslitterazione dei messaggi scritti in alfabeti non latini (sezione 14);
 h) utilizzare Monete e Abbonamenti per sbloccare funzioni facoltative;
 i) invitare amici tramite il programma di referral.
 
@@ -179,6 +179,9 @@ riduce mai un Abbonamento che già possiedi.
 - Silver, Gold e Platinum: mensili o annuali.
 - Le funzioni, il prezzo, la valuta e il periodo di rinnovo di ciascun piano
   sono mostrati nell'app prima dell'acquisto.
+- Nell'app iOS l'Abbonamento Base non può essere acquistato mentre hai un
+  Abbonamento Silver, Gold o Platinum: l'app lo mostra come incluso nel tuo
+  piano.
 
 7.2 Rinnovo automatico
 - Gli Abbonamenti si rinnovano automaticamente alla fine di ogni periodo, al
@@ -202,7 +205,7 @@ hai pagato, e non viene rinnovato. Disinstallare l'app o eliminare il tuo
 account non annulla un abbonamento acquistato tramite uno store: annullalo
 nello store.
 
-7.4 Prove gratuite
+7.4 Prove gratuite e offerte introduttive
 a) Web
    - L'Abbonamento Base può includere una prova gratuita di 7 giorni sul web,
      una sola volta per account.
@@ -211,12 +214,22 @@ a) Web
      addebitato al termine della prova.
    - Prima della fine della prova, Stripe, il nostro fornitore di servizi di
      pagamento, ti invia un'e-mail di promemoria.
-b) Store delle app
-   - Un Abbonamento acquistato nell'app iOS o Android può includere una prova
-     gratuita introduttiva. Lo store mostra la prova e le relative condizioni
-     prima dell'acquisto.
-   - La prova ed eventuali promemoria prima della sua fine sono gestiti da
-     Apple o da Google secondo le loro regole.
+   - Prezzo di lancio 2026: per gli Abbonamenti acquistati sul web fino al
+     31 dicembre 2026 (ora del Brasile), il primo periodo (il primo anno di un
+     piano annuale, o i primi 3 mesi di un piano mensile) è scontato del 50%
+     rispetto al prezzo normale, come indicato al checkout. Si applica una
+     sola volta per account per Base, e una sola volta per Silver, Gold e
+     Platinum. I rinnovi avvengono al prezzo normale.
+b) Store delle app (Apple App Store e Google Play)
+   - Gli Abbonamenti acquistati nell'app iOS o Android non hanno una prova
+     gratuita.
+   - Offerta di lancio 2026: i nuovi abbonati che si abbonano entro il
+     31 dicembre 2026 ottengono il 50% di sconto sul primo periodo (il primo
+     anno di un piano annuale, o i primi 3 mesi di un piano mensile), come lo
+     store lo mostra prima dell'acquisto. I rinnovi avvengono al prezzo
+     normale.
+   - Apple o Google stabiliscono chi ha diritto all'offerta e la applicano
+     secondo le loro regole.
 
 7.5 Variazioni di prezzo
 - Ti informeremo di un aumento di prezzo almeno 30 giorni prima che si applichi
@@ -231,7 +244,8 @@ a) Se effettui un upgrade sul web, ottieni uno sconto fisso di upgrade sul
    - da Silver a Gold: 10%;
    - da Silver a Platinum: 15%;
    - da Gold a Platinum: 10%.
-   L'upgrade ha effetto immediato.
+   L'upgrade ha effetto immediato. Se al nuovo piano si applica il prezzo di
+   lancio 2026 (sezione 7.4 a), questo sostituisce lo sconto di upgrade.
 b) Il periodo non utilizzato del tuo vecchio piano viene accreditato sul saldo
    del tuo account dopo il primo pagamento del nuovo piano.
 c) Sul web non puoi effettuare un downgrade durante un periodo pagato. Per
@@ -239,9 +253,11 @@ c) Sul web non puoi effettuare un downgrade durante un periodo pagato. Per
    acquista il piano inferiore; il cambiamento ha effetto in quel momento.
 
 7.7 Precedenti offerte di prevendita
-Se hai acquistato un piano di prevendita "Founder" in base a una versione
-precedente dei presenti Termini, i vantaggi che ti sono stati promessi in quel
-momento continuano ad applicarsi.
+Se hai acquistato un piano di prevendita (Silver, Gold o Platinum) in base a
+una versione precedente dei presenti Termini, i vantaggi che ti sono stati
+promessi in quel momento continuano ad applicarsi. Applichiamo il piano, per il
+numero di giorni che hai acquistato, all'account che crei con l'indirizzo
+e-mail utilizzato per la prevendita.
 
 ================================================================================
 8. MONETE
@@ -308,7 +324,8 @@ a) Nell'app iOS paghi Apple. Nell'app Android paghi Google Play. A tali
    acquisti si applicano le loro condizioni di pagamento e le loro procedure di
    rimborso.
 b) Sul web (greengochat.com e la web app) paghi noi, tramite Stripe. Puoi
-   pagare con carta e, per i pagamenti in real brasiliani, con Pix.
+   pagare con carta e, per i pagamenti una tantum in real brasiliani (ad
+   esempio le Monete), con Pix. Gli Abbonamenti si pagano con carta.
 c) Non accettiamo PayPal, boleto o altri metodi di pagamento per gli acquisti
    su GreenGo.
 
@@ -446,8 +463,11 @@ b) Solo gli Account business attivi (sezione 13) possono vendere biglietti per
    imposte sul biglietto.
 c) I biglietti a pagamento si pagano solo tramite il checkout nell'app,
    sull'account Stripe o Mercado Pago dell'organizzatore collegato a GreenGo.
-   Non ci sono link di pagamento né altri metodi di pagamento. Paghi il prezzo
-   del biglietto indicato, e nient'altro. Il denaro va sull'account
+   Non ci sono link di pagamento né altri metodi di pagamento per i nuovi
+   ordini: solo gli ordini di biglietti aperti prima del 14 ottobre 2026 con
+   il metodo di pagamento proprio dell'organizzatore possono ancora essere
+   completati in quel modo. Paghi il prezzo del biglietto indicato, e
+   nient'altro. Il denaro va sull'account
    dell'organizzatore: GreenGo non detiene mai il denaro dei biglietti.
    GreenGo riceve solo la propria commissione di servizio, pagata
    dall'organizzatore (sezione 11.6).
@@ -459,6 +479,14 @@ e) I tuoi diritti di consumatore nei confronti dell'organizzatore, compreso
    alla vendita effettuata dall'organizzatore. Contatta prima l'organizzatore;
    se non risponde, segnala l'Evento nell'app e interverremo come descritto
    nella sezione 18.
+f) Fasi di prezzo: l'organizzatore di un Evento a pagamento può vendere i
+   biglietti in fasi di prezzo (ad esempio "Early bird", "Intero" o "Alla
+   porta"). Ogni fase ha il proprio prezzo e il proprio numero di biglietti,
+   e ogni fase costa più della precedente. Quando una fase è esaurita, inizia
+   la successiva. Il nostro server stabilisce il prezzo di ogni biglietto al
+   checkout, in base alla fase in corso in quel momento; un ordine di più
+   biglietti può comprendere biglietti di più fasi. Il checkout mostra il
+   prezzo prima del pagamento.
 
 11.3 Il check-in agli Eventi utilizza un codice QR nell'app. Per gli Eventi a
 pagamento il codice QR viene emesso solo dopo la conferma del tuo pagamento. I
@@ -492,6 +520,8 @@ b) La commissione per biglietto dipende dall'Abbonamento del venditore al
    - Silver: 3 USD + 10% del prezzo del biglietto, al massimo 30 USD;
    - Gold: 2 USD + 10% del prezzo del biglietto, al massimo 28 USD;
    - Platinum: 1 USD + 10% del prezzo del biglietto, al massimo 25 USD.
+   Con le fasi di prezzo (sezione 11.2 f), la commissione è calcolata sul
+   prezzo di ciascun biglietto.
 c) Primo annuncio a pagamento: se non hai mai venduto biglietti a pagamento
    su GreenGo, la commissione è fissa, di 1 USD per biglietto, per il primo
    annuncio (Evento o Esperienza) sul quale un acquirente apre un checkout a
@@ -699,8 +729,9 @@ richiedono un Abbonamento Platinum.
 14.1 GreenGo offre funzioni basate sull'IA:
 - traduzione;
 - lettura vocale (sintesi vocale);
-- risposte intelligenti e analisi delle parole (Abbonamento Silver o
-  superiore).
+- traslitterazione in lettere latine dei messaggi di chat scritti in
+  alfabeti non latini, come il giapponese, l'arabo o il russo, quando i
+  suggerimenti culturali sono attivi nelle impostazioni della chat.
 
 La chat di supporto inizia con un assistente di IA. È indicato come IA, e puoi
 toccare "Parla con una persona" in qualsiasi momento per raggiungere una
@@ -708,14 +739,16 @@ persona.
 
 14.2 Consenso
 a) Prima che le funzioni di IA trattino per la prima volta i tuoi contenuti
-   privati (ad esempio la traduzione dei messaggi di chat, la lettura vocale e
-   l'assistente di IA), ti indichiamo quale fornitore viene utilizzato e che
-   cosa viene inviato, e ti chiediamo il consenso. Puoi revocare il tuo
-   consenso nelle Impostazioni.
+   privati (ad esempio la traduzione dei messaggi di chat, la lettura vocale,
+   la traslitterazione e l'assistente di IA), ti indichiamo quale fornitore
+   viene utilizzato e che cosa viene inviato, e ti chiediamo il consenso.
+   Puoi revocare il tuo consenso nelle Impostazioni.
 b) I contenuti pubblici, come Eventi, Community e annunci, sono tradotti con
-   Google Cloud Translation tramite una cache condivisa sui nostri server.
-   Viene inviato solo il testo, senza alcun dato personale. Questo non
-   richiede il tuo consenso.
+   il servizio di traduzione di Google tramite un archivio condiviso sui
+   nostri server. Se una traduzione non è disponibile lì, l'app può
+   richiederla direttamente al servizio di traduzione di Google. Viene
+   inviato solo il testo, senza alcun dato personale. Questo non richiede il
+   tuo consenso.
 c) L'Informativa sulla privacy (sezione 9) contiene i dettagli.
 
 14.3 I risultati dell'IA possono essere errati, incompleti o culturalmente
@@ -726,8 +759,8 @@ di sicurezza. In caso di dubbio, verifica con l'altra persona.
 14.4 Limiti e costi
 - Alcune funzioni di IA sono soggette a limiti o costano Monete, come indicato
   nell'app. Ad esempio, la lettura vocale costa 5 Monete.
-- Le risposte intelligenti e l'analisi delle parole richiedono un Abbonamento
-  Silver o superiore.
+- La quantità di testo della chat che puoi tradurre ogni giorno dipende dal
+  tuo piano.
 
 ================================================================================
 15. I TUOI CONTENUTI
@@ -987,12 +1020,16 @@ dei consumatori (sezione 26).
 
 18.6 Uso improprio
 - Recidivi: se qualcuno pubblica frequentemente Contenuti manifestamente
-  illegali o continua a violare i presenti Termini, prima lo avvertiamo.
-  Dopo 3 avvertimenti nell'arco di 12 mesi, sospendiamo l'account. Nei casi
-  gravi possiamo intervenire immediatamente (sezioni 19 e 20.3).
+  illegali o continua a violare i presenti Termini, prima lo avvertiamo. Se,
+  dopo un avvertimento, raggiunge 3 violazioni (avvertimenti o rimozioni dei
+  suoi Contenuti) nell'arco di 12 mesi, sospendiamo l'account per 7 giorni, e
+  per 30 giorni se ciò si ripete entro 12 mesi. Nei casi gravi possiamo
+  intervenire immediatamente (sezioni 19 e 20.3).
 - Segnalazioni infondate: se qualcuno invia frequentemente segnalazioni
-  manifestamente infondate, lo avvertiamo. Se continua, non trattiamo le sue
-  segnalazioni per 30 giorni (DSA art. 23).
+  manifestamente infondate, lo avvertiamo. Se continua, un moderatore esamina
+  il caso e può smettere di trattare le sue segnalazioni per 30 giorni (DSA
+  art. 23). Le segnalazioni relative alla sicurezza dei minori vengono sempre
+  trattate.
 
 18.7 Punti di contatto (DSA artt. 11 e 12)
 - Per le autorità degli Stati membri dell'UE, la Commissione europea e il
@@ -1274,6 +1311,26 @@ Diritto d'autore (DMCA): copyright@greengochat.com
 ================================================================================
 CRONOLOGIA DELLE VERSIONI
 ================================================================================
+
+5.3.2 - in vigore dal 17 ottobre 2026 per gli account creati dal 16 ottobre
+2026 in poi; dal 16 novembre 2026 per gli account creati prima del 16 ottobre
+2026 (annunciata il 17 ottobre 2026)
+Chiarimenti per corrispondere al funzionamento dell'app:
+- Sezioni 5.1 g, 14.1, 14.2 e 14.4: gli assistenti di IA nella chat sono
+  traduzione, lettura vocale e traslitterazione (risposte intelligenti e
+  analisi delle parole non sono offerte); i contenuti pubblici sono tradotti
+  con il servizio di traduzione di Google; limiti giornalieri di traduzione
+  per piano.
+- Sezioni 7.1, 7.4 e 7.6: nessuna prova gratuita negli store delle app;
+  l'offerta di lancio 2026 (50% di sconto sul primo periodo) sul web e negli
+  store delle app; Base è incluso in Silver, Gold e Platinum nell'app iOS.
+- Sezione 7.7: piani di prevendita.
+- Sezione 9.1 b: Pix solo per i pagamenti una tantum; Abbonamenti con carta.
+- Sezione 11.2 c: ordini di biglietti aperti prima del 14 ottobre 2026 con il
+  metodo di pagamento proprio dell'organizzatore.
+- Sezioni 11.2 f e 11.6 b: fasi di prezzo dei biglietti.
+- Sezione 18.6: periodi di sospensione per i recidivi; esame delle
+  segnalazioni infondate da parte di un moderatore.
 
 5.3.1 - in vigore dal 16 ottobre 2026 per gli account creati da quella data in
 poi; dal 16 novembre 2026 per gli account creati prima del 16 ottobre 2026
