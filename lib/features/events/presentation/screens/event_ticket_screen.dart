@@ -16,6 +16,9 @@ import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../domain/entities/event.dart';
+import '../../../chat/domain/entities/conversation_listing_context.dart';
+import '../../../chat/presentation/listing_chat.dart';
+import '../../../chat/presentation/widgets/listing_chat_widgets.dart';
 
 /// LEGACY (pre-4.4.0) unsigned ticket codec:
 ///   greengo:{"e":"<eventId>","u":"<userId>"}
@@ -405,6 +408,20 @@ class _EventTicketScreenState extends State<EventTicketScreen> {
               if (event.guestsAllowed) ...[
                 const SizedBox(height: 20),
                 _buildGuestPicker(l10n),
+              ],
+              // Ticket holder -> organizer chat (no daily cap, any plan).
+              if (!event.isOwner(widget.userId)) ...[
+                const SizedBox(height: 20),
+                ListingChatButton(
+                  listing: ListingChatRef(
+                    type: ConversationListingContext.event,
+                    id: event.id,
+                    title: event.title,
+                    startAt: event.startDate,
+                    organizerId: event.organizerId,
+                  ),
+                  currentUserId: widget.userId,
+                ),
               ],
             ],
           ),

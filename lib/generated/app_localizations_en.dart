@@ -25816,4 +25816,43 @@ class AppLocalizationsEn extends AppLocalizations {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String get listingChatMessageOrganizer => 'Message the organizer';
+
+  @override
+  String get listingChatMessageHost => 'Message the host';
+
+  @override
+  String listingChatAbout(String title) {
+    return 'About: $title';
+  }
+
+  @override
+  String listingChatAboutDated(String title, String date) {
+    return 'About: $title · $date';
+  }
+
+  @override
+  String get listingChatTicketHolder => 'Ticket holder';
+
+  @override
+  String get listingChatBooked => 'Booked';
+
+  @override
+  String get businessLeadMessage => 'Message';
+
+  @override
+  String get emailAskOrganizer => 'Ask the organizer';
+
+  @override
+  String get emailMessageHost => 'Message the host';
+
+  @override
+  String get emailGuestChatInviteOrganizer =>
+      'Create a free account to message the organizer.';
+
+  @override
+  String get emailGuestChatInviteHost =>
+      'Create a free account to message the host.';
 }

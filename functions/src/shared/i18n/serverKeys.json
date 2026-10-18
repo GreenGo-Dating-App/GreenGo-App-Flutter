@@ -405,5 +405,9 @@
   "srvAppealOutcomeEmailSubject",
   "srvAppealPageTitle",
   "srvAppealPageInvalid",
-  "moderationDecisionAppealUntil"
+  "moderationDecisionAppealUntil",
+  "emailAskOrganizer",
+  "emailMessageHost",
+  "emailGuestChatInviteOrganizer",
+  "emailGuestChatInviteHost"
 ]

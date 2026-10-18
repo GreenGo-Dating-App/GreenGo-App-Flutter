@@ -26209,4 +26209,43 @@ class AppLocalizationsFr extends AppLocalizations {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String get listingChatMessageOrganizer => 'Écrire à l’organisateur';
+
+  @override
+  String get listingChatMessageHost => 'Écrire à l’hôte';
+
+  @override
+  String listingChatAbout(String title) {
+    return 'À propos : $title';
+  }
+
+  @override
+  String listingChatAboutDated(String title, String date) {
+    return 'À propos : $title · $date';
+  }
+
+  @override
+  String get listingChatTicketHolder => 'Détenteur de billet';
+
+  @override
+  String get listingChatBooked => 'Réservé';
+
+  @override
+  String get businessLeadMessage => 'Message';
+
+  @override
+  String get emailAskOrganizer => 'Demander à l’organisateur';
+
+  @override
+  String get emailMessageHost => 'Écrire à l’hôte';
+
+  @override
+  String get emailGuestChatInviteOrganizer =>
+      'Créez un compte gratuit pour écrire à l’organisateur.';
+
+  @override
+  String get emailGuestChatInviteHost =>
+      'Créez un compte gratuit pour écrire à l’hôte.';
 }

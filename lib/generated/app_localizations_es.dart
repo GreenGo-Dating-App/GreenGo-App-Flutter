@@ -26056,4 +26056,43 @@ class AppLocalizationsEs extends AppLocalizations {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String get listingChatMessageOrganizer => 'Escribir al organizador';
+
+  @override
+  String get listingChatMessageHost => 'Escribir al anfitrión';
+
+  @override
+  String listingChatAbout(String title) {
+    return 'Sobre: $title';
+  }
+
+  @override
+  String listingChatAboutDated(String title, String date) {
+    return 'Sobre: $title · $date';
+  }
+
+  @override
+  String get listingChatTicketHolder => 'Tiene entrada';
+
+  @override
+  String get listingChatBooked => 'Reservado';
+
+  @override
+  String get businessLeadMessage => 'Mensaje';
+
+  @override
+  String get emailAskOrganizer => 'Preguntar al organizador';
+
+  @override
+  String get emailMessageHost => 'Escribir al anfitrión';
+
+  @override
+  String get emailGuestChatInviteOrganizer =>
+      'Crea una cuenta gratuita para escribir al organizador.';
+
+  @override
+  String get emailGuestChatInviteHost =>
+      'Crea una cuenta gratuita para escribir al anfitrión.';
 }

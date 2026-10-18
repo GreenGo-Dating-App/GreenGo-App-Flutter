@@ -638,8 +638,8 @@ export function buildAttractionPreview(
 // ---------------------------------------------------------------------------
 
 /** Path the web app understands (see DeepLinkService.captureWebLaunchLink). */
-export function webAppUrl(kind: Kind, id: string): string {
-  return `${HOST}/?link=${encodeURIComponent(`/${kind}/${id}`)}`;
+export function webAppUrl(kind: Kind, id: string, chat = false): string {
+  return `${HOST}/?link=${encodeURIComponent(`/${kind}/${id}${chat ? '?chat=1' : ''}`)}`;
 }
 
 export function ogImageUrl(p: Preview): string {
@@ -648,7 +648,11 @@ export function ogImageUrl(p: Preview): string {
     : FALLBACK_IMAGE;
 }
 
-export function renderHtml(p: Preview): string {
+/**
+ * [chat]: the link asked to open the buyer <-> organizer chat (`?chat=1`,
+ * ticket / booking e-mails); kept on the app and web hand-offs.
+ */
+export function renderHtml(p: Preview, chat = false): string {
   const url = `${HOST}/${p.kind}/${encodeURIComponent(p.id)}`;
   const hasOwnImage = p.shareable && !!p.imageUrl;
   const image = ogImageUrl(p);
@@ -656,8 +660,9 @@ export function renderHtml(p: Preview): string {
   const desc = escapeHtml(p.description);
   const img = escapeHtml(image);
   const u = escapeHtml(url);
-  const appUrl = `greengo://${p.kind}/${encodeURIComponent(p.id)}`;
-  const web = webAppUrl(p.kind, p.id);
+  const withChat = chat && (p.kind === 'e' || p.kind === 'x');
+  const appUrl = `greengo://${p.kind}/${encodeURIComponent(p.id)}${withChat ? '?chat=1' : ''}`;
+  const web = webAppUrl(p.kind, p.id, withChat);
   const lang = escapeHtml(bcp47(p.locale));
   const ogLocale = OG_LOCALE[p.locale];
   const openApp = escapeHtml(t(p.locale, 'sharePreviewOpenApp'));

@@ -8220,5 +8220,16 @@
   "traderCardNonTrader": "Diese Person ist Privatperson und kein Unternehmer. Verbraucherrechte für Käufe bei Unternehmern gelten für diesen Kauf nicht.",
   "traderCardRegister": "{register}: {number}",
   "distanceMeters": "{meters} m",
-  "distanceKmPrecise": "{km} km"
+  "distanceKmPrecise": "{km} km",
+  "listingChatMessageOrganizer": "Dem Veranstalter schreiben",
+  "listingChatMessageHost": "Dem Gastgeber schreiben",
+  "listingChatAbout": "Zu: {title}",
+  "listingChatAboutDated": "Zu: {title} · {date}",
+  "listingChatTicketHolder": "Ticketinhaber",
+  "listingChatBooked": "Gebucht",
+  "businessLeadMessage": "Nachricht",
+  "emailAskOrganizer": "Den Veranstalter fragen",
+  "emailMessageHost": "Dem Gastgeber schreiben",
+  "emailGuestChatInviteOrganizer": "Erstelle ein kostenloses Konto, um dem Veranstalter zu schreiben.",
+  "emailGuestChatInviteHost": "Erstelle ein kostenloses Konto, um dem Gastgeber zu schreiben."
 }

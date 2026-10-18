@@ -38,6 +38,9 @@ import '../widgets/experience_widgets.dart';
 import '../widgets/report_experience_sheet.dart';
 import 'experience_editor_screen.dart';
 import '../../../trader/presentation/widgets/seller_trader_info.dart';
+import '../../../chat/domain/entities/conversation_listing_context.dart';
+import '../../../chat/presentation/listing_chat.dart';
+import '../../../chat/presentation/widgets/listing_chat_widgets.dart';
 
 /// What the detail screen reports back to the list that opened it.
 class ExperienceDetailResult {
@@ -691,6 +694,19 @@ class _DetailViewState extends State<_DetailView> {
               ),
               const SizedBox(height: 6),
               HostRatingBadge(hostId: e.hostId),
+              // Buyer <-> host chat (hidden for the host).
+              if (e.hostId != widget.currentUserId) ...[
+                const SizedBox(height: 10),
+                ListingChatButton(
+                  listing: ListingChatRef(
+                    type: ConversationListingContext.experience,
+                    id: e.id,
+                    title: e.title,
+                    organizerId: e.hostId,
+                  ),
+                  currentUserId: widget.currentUserId,
+                ),
+              ],
             ],
           ),
         ),

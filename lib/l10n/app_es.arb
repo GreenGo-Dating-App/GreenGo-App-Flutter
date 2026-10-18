@@ -8220,5 +8220,16 @@
   "traderCardNonTrader": "Esta persona es un particular, no un comerciante. Los derechos de los consumidores en compras a comerciantes no se aplican a esta compra.",
   "traderCardRegister": "{register}: {number}",
   "distanceMeters": "{meters} m",
-  "distanceKmPrecise": "{km} km"
+  "distanceKmPrecise": "{km} km",
+  "listingChatMessageOrganizer": "Escribir al organizador",
+  "listingChatMessageHost": "Escribir al anfitrión",
+  "listingChatAbout": "Sobre: {title}",
+  "listingChatAboutDated": "Sobre: {title} · {date}",
+  "listingChatTicketHolder": "Tiene entrada",
+  "listingChatBooked": "Reservado",
+  "businessLeadMessage": "Mensaje",
+  "emailAskOrganizer": "Preguntar al organizador",
+  "emailMessageHost": "Escribir al anfitrión",
+  "emailGuestChatInviteOrganizer": "Crea una cuenta gratuita para escribir al organizador.",
+  "emailGuestChatInviteHost": "Crea una cuenta gratuita para escribir al anfitrión."
 }

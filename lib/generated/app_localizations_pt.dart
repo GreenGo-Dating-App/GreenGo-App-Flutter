@@ -26036,6 +26036,45 @@ class AppLocalizationsPt extends AppLocalizations {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String get listingChatMessageOrganizer => 'Enviar mensagem ao organizador';
+
+  @override
+  String get listingChatMessageHost => 'Enviar mensagem ao anfitrião';
+
+  @override
+  String listingChatAbout(String title) {
+    return 'Sobre: $title';
+  }
+
+  @override
+  String listingChatAboutDated(String title, String date) {
+    return 'Sobre: $title · $date';
+  }
+
+  @override
+  String get listingChatTicketHolder => 'Tem bilhete';
+
+  @override
+  String get listingChatBooked => 'Reservado';
+
+  @override
+  String get businessLeadMessage => 'Mensagem';
+
+  @override
+  String get emailAskOrganizer => 'Perguntar ao organizador';
+
+  @override
+  String get emailMessageHost => 'Enviar mensagem ao anfitrião';
+
+  @override
+  String get emailGuestChatInviteOrganizer =>
+      'Cria uma conta gratuita para enviar mensagem ao organizador.';
+
+  @override
+  String get emailGuestChatInviteHost =>
+      'Cria uma conta gratuita para enviar mensagem ao anfitrião.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -52077,4 +52116,43 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String get listingChatMessageOrganizer => 'Mandar mensagem ao organizador';
+
+  @override
+  String get listingChatMessageHost => 'Mandar mensagem ao anfitrião';
+
+  @override
+  String listingChatAbout(String title) {
+    return 'Sobre: $title';
+  }
+
+  @override
+  String listingChatAboutDated(String title, String date) {
+    return 'Sobre: $title · $date';
+  }
+
+  @override
+  String get listingChatTicketHolder => 'Tem ingresso';
+
+  @override
+  String get listingChatBooked => 'Reservado';
+
+  @override
+  String get businessLeadMessage => 'Mensagem';
+
+  @override
+  String get emailAskOrganizer => 'Perguntar ao organizador';
+
+  @override
+  String get emailMessageHost => 'Mandar mensagem ao anfitrião';
+
+  @override
+  String get emailGuestChatInviteOrganizer =>
+      'Crie uma conta grátis para mandar mensagem ao organizador.';
+
+  @override
+  String get emailGuestChatInviteHost =>
+      'Crie uma conta grátis para mandar mensagem ao anfitrião.';
 }

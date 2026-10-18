@@ -44195,6 +44195,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{km} km'**
   String distanceKmPrecise(String km);
+
+  /// Button on an event / ticket screen: opens a chat with the event organizer.
+  ///
+  /// In en, this message translates to:
+  /// **'Message the organizer'**
+  String get listingChatMessageOrganizer;
+
+  /// Button on an experience / booking screen: opens a chat with the host.
+  ///
+  /// In en, this message translates to:
+  /// **'Message the host'**
+  String get listingChatMessageHost;
+
+  /// Pinned chip at the top of a chat started from a listing.
+  ///
+  /// In en, this message translates to:
+  /// **'About: {title}'**
+  String listingChatAbout(String title);
+
+  /// Pinned chip at the top of a chat started from a listing, with its date.
+  ///
+  /// In en, this message translates to:
+  /// **'About: {title} · {date}'**
+  String listingChatAboutDated(String title, String date);
+
+  /// Tag for the organizer: the other person holds a ticket for the event.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket holder'**
+  String get listingChatTicketHolder;
+
+  /// Tag for the host: the other person booked the experience.
+  ///
+  /// In en, this message translates to:
+  /// **'Booked'**
+  String get listingChatBooked;
+
+  /// Button on a Business Center customer row: opens a chat with that customer.
+  ///
+  /// In en, this message translates to:
+  /// **'Message'**
+  String get businessLeadMessage;
+
+  /// Email button (ticket email): opens the chat with the event organizer.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask the organizer'**
+  String get emailAskOrganizer;
+
+  /// Email button (booking / ticket email): opens the chat with the experience host.
+  ///
+  /// In en, this message translates to:
+  /// **'Message the host'**
+  String get emailMessageHost;
+
+  /// Email line for a guest buyer without an account, above the chat button.
+  ///
+  /// In en, this message translates to:
+  /// **'Create a free account to message the organizer.'**
+  String get emailGuestChatInviteOrganizer;
+
+  /// Email line for a guest buyer without an account, above the chat button.
+  ///
+  /// In en, this message translates to:
+  /// **'Create a free account to message the host.'**
+  String get emailGuestChatInviteHost;
 }
 
 class _AppLocalizationsDelegate

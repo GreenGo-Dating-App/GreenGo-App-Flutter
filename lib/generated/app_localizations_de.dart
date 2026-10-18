@@ -26120,4 +26120,43 @@ class AppLocalizationsDe extends AppLocalizations {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String get listingChatMessageOrganizer => 'Dem Veranstalter schreiben';
+
+  @override
+  String get listingChatMessageHost => 'Dem Gastgeber schreiben';
+
+  @override
+  String listingChatAbout(String title) {
+    return 'Zu: $title';
+  }
+
+  @override
+  String listingChatAboutDated(String title, String date) {
+    return 'Zu: $title · $date';
+  }
+
+  @override
+  String get listingChatTicketHolder => 'Ticketinhaber';
+
+  @override
+  String get listingChatBooked => 'Gebucht';
+
+  @override
+  String get businessLeadMessage => 'Nachricht';
+
+  @override
+  String get emailAskOrganizer => 'Den Veranstalter fragen';
+
+  @override
+  String get emailMessageHost => 'Dem Gastgeber schreiben';
+
+  @override
+  String get emailGuestChatInviteOrganizer =>
+      'Erstelle ein kostenloses Konto, um dem Veranstalter zu schreiben.';
+
+  @override
+  String get emailGuestChatInviteHost =>
+      'Erstelle ein kostenloses Konto, um dem Gastgeber zu schreiben.';
 }

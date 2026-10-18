@@ -7646,5 +7646,16 @@
   "traderCardNonTrader": "Cette personne est un particulier, pas un professionnel. Les droits des consommateurs pour les achats auprès de professionnels ne s’appliquent pas à cet achat.",
   "traderCardRegister": "{register}: {number}",
   "distanceMeters": "{meters} m",
-  "distanceKmPrecise": "{km} km"
+  "distanceKmPrecise": "{km} km",
+  "listingChatMessageOrganizer": "Écrire à l’organisateur",
+  "listingChatMessageHost": "Écrire à l’hôte",
+  "listingChatAbout": "À propos : {title}",
+  "listingChatAboutDated": "À propos : {title} · {date}",
+  "listingChatTicketHolder": "Détenteur de billet",
+  "listingChatBooked": "Réservé",
+  "businessLeadMessage": "Message",
+  "emailAskOrganizer": "Demander à l’organisateur",
+  "emailMessageHost": "Écrire à l’hôte",
+  "emailGuestChatInviteOrganizer": "Créez un compte gratuit pour écrire à l’organisateur.",
+  "emailGuestChatInviteHost": "Créez un compte gratuit pour écrire à l’hôte."
 }

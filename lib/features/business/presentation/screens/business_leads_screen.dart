@@ -11,6 +11,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../profile/domain/repositories/profile_repository.dart';
 import '../widgets/people_search.dart';
+import '../../../chat/presentation/connect_and_chat.dart';
 
 /// Business Leads / enquiries list.
 ///
@@ -396,6 +397,21 @@ class _BusinessLeadsScreenState extends State<BusinessLeadsScreen> {
               ),
             ),
           ],
+          // Message this customer (from the business inbox). One chat per
+          // tap; no bulk messaging.
+          if (lead.uid != widget.businessId)
+            IconButton(
+              key: ValueKey('lead-message-${lead.uid}'),
+              tooltip: l10n.businessLeadMessage,
+              icon: const Icon(Icons.chat_bubble_outline,
+                  color: AppColors.richGold, size: 20),
+              onPressed: () => openConnectChat(
+                context,
+                currentUserId: widget.businessId,
+                otherUserId: lead.uid,
+                businessOwnerSide: true,
+              ),
+            ),
         ],
       ),
       ),

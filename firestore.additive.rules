@@ -209,6 +209,26 @@ service cloud.firestore {
         || get(usagePath(uid)).data.get('groupsCreated', 0)
              < tierCapGroups(tierRankOf(get(profilePath(uid)).data));
     }
+    // Buyer <-> organizer chat (2026-10-17). `context.buyer == true` is
+    // written ONLY by the openListingChat callable (Admin SDK) after it
+    // verified the caller's ticket / booking: such a conversation was never
+    // counted against the daily cap and either member may post without Base.
+    // A client may write a context (topic card) but never claim `buyer`:
+    // it may keep a verified context unchanged or replace it with a plain
+    // (non-buyer) topic, so the organizer's tag is never forged.
+    function buyerChat(c) {
+      return c.get('context', null) is map
+        && c.context.get('buyer', false) == true;
+    }
+    function clientContextOk(d) {
+      return d.get('context', null) == null
+        || (d.context is map && d.context.get('buyer', false) == false);
+    }
+    function clientContextUpdateOk() {
+      return clientContextOk(request.resource.data)
+        || request.resource.data.get('context', null)
+             == resource.data.get('context', null);
+    }
     // A support ticket in the chat inbox (never a "new connection").
     function isSupportConvData(c) {
       return c.get('conversationType', '') == 'support'
@@ -736,8 +756,10 @@ service cloud.firestore {
       allow create: if isSignedIn()
         && request.auth.uid == request.resource.data.get('userId1', '')
         && (isSupportConvData(request.resource.data)
-            || connectCapOk(request.auth.uid));
-      allow update: if convMember(resource.data) || convAdmin();
+            || connectCapOk(request.auth.uid))
+        && clientContextOk(request.resource.data);
+      allow update: if (convMember(resource.data) || convAdmin())
+        && clientContextUpdateOk();
       allow delete: if convMember(resource.data) || convAdmin();
 
       // MESSAGES SUBCOLLECTION — gated on parent-conversation membership.
@@ -759,6 +781,7 @@ service cloud.firestore {
           && (isSupportConvData(conv())
               || canChat(request.auth.uid)
               || freeChatOk(request.auth.uid, conversationId)
+              || buyerChat(conv())
               || convAdmin());
         allow update: if (convMember(conv()) || convAdmin())
           && translationFieldsUnchanged();

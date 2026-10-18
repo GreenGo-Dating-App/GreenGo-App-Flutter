@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+import 'conversation_listing_context.dart';
 import 'group_info.dart';
 import 'message.dart';
 
@@ -64,6 +65,7 @@ class Conversation extends Equatable { // userId → Timestamp of deletion
     this.settings,
     this.conversationType = ConversationType.match,
     this.businessInquiry = false,
+    this.listingContext,
     this.supportAgentId,
     this.supportPriority,
     this.supportTicketStatus,
@@ -135,6 +137,9 @@ class Conversation extends Equatable { // userId → Timestamp of deletion
   /// storefront (the "Contact" button). Business inquiries are surfaced in the
   /// business owner's dedicated Exchanges "Business" tab.
   final bool businessInquiry;
+
+  /// Buyer <-> organizer chat topic (event / experience), or null.
+  final ConversationListingContext? listingContext;
 
   // Support-specific fields (only used when conversationType is support)
   final String? supportAgentId;       // Assigned support agent
@@ -365,6 +370,7 @@ class Conversation extends Equatable { // userId → Timestamp of deletion
     Map<String, dynamic>? settings,
     ConversationType? conversationType,
     bool? businessInquiry,
+    ConversationListingContext? listingContext,
     String? supportAgentId,
     SupportPriority? supportPriority,
     SupportTicketStatus? supportTicketStatus,
@@ -404,6 +410,7 @@ class Conversation extends Equatable { // userId → Timestamp of deletion
       settings: settings ?? this.settings,
       conversationType: conversationType ?? this.conversationType,
       businessInquiry: businessInquiry ?? this.businessInquiry,
+      listingContext: listingContext ?? this.listingContext,
       supportAgentId: supportAgentId ?? this.supportAgentId,
       supportPriority: supportPriority ?? this.supportPriority,
       supportTicketStatus: supportTicketStatus ?? this.supportTicketStatus,
@@ -445,6 +452,7 @@ class Conversation extends Equatable { // userId → Timestamp of deletion
         settings,
         conversationType,
         businessInquiry,
+        listingContext,
         supportAgentId,
         supportPriority,
         supportTicketStatus,

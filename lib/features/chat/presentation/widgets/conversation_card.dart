@@ -5,6 +5,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/language_flags.dart';
 import '../../../../generated/app_localizations.dart';
 import 'deleted_message_bubble.dart';
+import 'listing_chat_widgets.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/conversation.dart';
 import '../utils/chat_l10n.dart';
@@ -287,6 +288,12 @@ class _ConversationCardState extends State<ConversationCard>
               ],
             ],
           ),
+          // Buyer <-> organizer chat: the listing + "Ticket holder" / "Booked".
+          if (!_isGroup && widget.conversation.listingContext != null)
+            ListingContextLabel(
+              listingContext: widget.conversation.listingContext!,
+              currentUserId: widget.currentUserId,
+            ),
           const SizedBox(height: 4),
           if (isTyping)
             Row(

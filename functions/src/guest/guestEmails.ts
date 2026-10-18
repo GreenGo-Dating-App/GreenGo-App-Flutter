@@ -18,7 +18,7 @@ import '../shared/firebaseAdmin';
 import { HOST } from '../share/sharePreviewCore';
 import { emailFrame, detailsTable, formatWhen, hostTimeZone, millis } from '../emails/emailFormat';
 import { OutgoingEmail, authEmailOf, escapeHtml, sendEmailOnce } from '../emails/sendEmail';
-import { buildTicketEmail, placeOf } from '../emails/ticketEmails';
+import { buildTicketEmail, emailChatLink, placeOf } from '../emails/ticketEmails';
 import { resolveLocale } from '../shared/i18n/recipientLocale';
 import { t } from '../shared/i18n';
 import { isGuestKey } from '../shared/guestIdentity';
@@ -112,6 +112,7 @@ export async function sendGuestRsvpTicket(eventId: string, ev: Record<string, an
       partySize: null,
       bookingCode: code,
       qrs: [{ payload: eventTicketPayload(eventId, guestKey, code), caption: t(locale, 'emailTicketQrCaption', { index: 1, count: 1 }) }],
+      chat: emailChatLink(locale, 'event', eventId, guestKey),
     });
   }, { type: 'guest_rsvp', eventId });
   return outcome(r);

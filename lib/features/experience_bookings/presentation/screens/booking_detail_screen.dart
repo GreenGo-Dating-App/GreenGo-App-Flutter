@@ -24,6 +24,9 @@ import '../booking_l10n.dart';
 import '../widgets/booking_widgets.dart';
 import '../widgets/payment_link_actions.dart';
 import 'booking_check_in_scanner_screen.dart';
+import '../../../chat/domain/entities/conversation_listing_context.dart';
+import '../../../chat/presentation/listing_chat.dart';
+import '../../../chat/presentation/widgets/listing_chat_widgets.dart';
 
 /// One booking, for its guest or its host: when / where, the other party,
 /// payment (link: "Mark as paid"; cash: host "Cash received"), the refund
@@ -744,6 +747,20 @@ class _DetailViewState extends State<_DetailView> {
               ? null
               : () => openExperienceUserProfile(context, other, _uid),
         ),
+        // Guest -> host chat (a confirmed booking skips the daily cap).
+        if (b.isGuest(_uid)) ...[
+          const SizedBox(height: 10),
+          ListingChatButton(
+            listing: ListingChatRef(
+              type: ConversationListingContext.experience,
+              id: b.experienceId,
+              title: b.experienceTitle ?? '',
+              startAt: b.slotStart,
+              organizerId: b.hostId,
+            ),
+            currentUserId: _uid,
+          ),
+        ],
       ],
     );
   }

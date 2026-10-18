@@ -58,6 +58,9 @@ import '../../../user_experiences/presentation/widgets/merged_experiences_feed.d
 import '../../../user_experiences/presentation/widgets/community_experiences_tab.dart';
 import '../widgets/event_like_button.dart';
 import '../widgets/event_organizer_row.dart';
+import '../../../chat/domain/entities/conversation_listing_context.dart';
+import '../../../chat/presentation/listing_chat.dart';
+import '../../../chat/presentation/widgets/listing_chat_widgets.dart';
 import '../../../business/data/services/leads_service.dart';
 import '../../../communities/domain/entities/community.dart';
 import '../../../communities/domain/repositories/communities_repository.dart';
@@ -2626,6 +2629,20 @@ class EventDetailsScreen extends StatelessWidget {
                     event: event,
                     currentUserId: currentUserId,
                   ),
+                  // Buyer <-> organizer chat (hidden for the organizers).
+                  if (!event.isOwner(currentUserId)) ...[
+                    const SizedBox(height: 12),
+                    ListingChatButton(
+                      listing: ListingChatRef(
+                        type: ConversationListingContext.event,
+                        id: event.id,
+                        title: event.title,
+                        startAt: event.startDate,
+                        organizerId: event.organizerId,
+                      ),
+                      currentUserId: currentUserId,
+                    ),
+                  ],
                   const SizedBox(height: 16),
                   _buildInfoRow(
                     Icons.calendar_today,

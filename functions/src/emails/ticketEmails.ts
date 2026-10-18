@@ -32,12 +32,57 @@ import { qrPng } from './qrPng';
 import { authEmailOf, EmailAttachment, escapeHtml, OutgoingEmail, sendEmailOnce } from './sendEmail';
 import { detailsTable, emailFrame, formatWhen, hostTimeZone, joinPlace, millis } from './emailFormat';
 import { handleGuestBookingWrite, handleGuestOrderUpdate } from '../guest/guestEmails';
+import { HOST } from '../share/sharePreviewCore';
+import { isGuestKey } from '../shared/guestIdentity';
 
 const db = () => admin.firestore();
 
 export interface TicketEmailQr {
   payload: string;
   caption: string;
+}
+
+/**
+ * "Ask the organizer" / "Message the host" link (buyer <-> organizer chat,
+ * 2026-10-17). Members: the listing's universal link with `?chat=1` (opens
+ * the app, else the share page / web app) - the app opens the listing and
+ * the chat with its context. Guests (no account): the web app hand-off, where
+ * they create a free account; the pending link then opens the chat.
+ */
+export interface EmailChatLink {
+  url: string;
+  label: string;
+  /** Guests only: "Create a free account to message the organizer". */
+  hint: string | null;
+}
+
+export function listingChatUrl(kind: 'event' | 'experience', listingId: string, guest: boolean): string {
+  const path = `/${kind === 'event' ? 'e' : 'x'}/${encodeURIComponent(listingId)}?chat=1`;
+  return guest ? `${HOST}/?link=${encodeURIComponent(path)}` : `${HOST}${path}`;
+}
+
+export function emailChatLink(
+  locale: string, kind: 'event' | 'experience', listingId: unknown, recipientId: unknown,
+): EmailChatLink | null {
+  if (typeof listingId !== 'string' || !/^[A-Za-z0-9_-]{1,128}$/.test(listingId)) return null;
+  const guest = isGuestKey(recipientId);
+  return {
+    url: listingChatUrl(kind, listingId, guest),
+    label: t(locale, kind === 'event' ? 'emailAskOrganizer' : 'emailMessageHost'),
+    hint: guest ? t(locale, kind === 'event' ? 'emailGuestChatInviteOrganizer' : 'emailGuestChatInviteHost') : null,
+  };
+}
+
+/** HTML button + optional guest hint (only https links on our host). */
+export function chatLinkHtml(c: EmailChatLink | null | undefined): string {
+  if (!c || !c.url.startsWith(`${HOST}/`)) return '';
+  return (c.hint ? `<p style="margin:16px 0 4px">${escapeHtml(c.hint)}</p>` : '')
+    + `<p style="margin:12px 0 20px"><a href="${escapeHtml(c.url)}" style="background:#0F9D58;color:#fff;padding:10px 20px;border-radius:24px;text-decoration:none;font-weight:bold">${escapeHtml(c.label)}</a></p>`;
+}
+
+export function chatLinkText(c: EmailChatLink | null | undefined): string[] {
+  if (!c || !c.url.startsWith(`${HOST}/`)) return [];
+  return ['', ...(c.hint ? [c.hint] : []), `${c.label}: ${c.url}`];
 }
 
 export interface TicketEmailModel {
@@ -50,6 +95,8 @@ export interface TicketEmailModel {
   partySize: number | null;
   bookingCode: string;
   qrs: TicketEmailQr[];
+  /** Buyer <-> organizer chat link (absent: no link). */
+  chat?: EmailChatLink | null;
 }
 
 /** Booking code shown to the buyer AND in the organizer's participants CSV. */
@@ -101,12 +148,14 @@ export function buildTicketEmail(m: TicketEmailModel): OutgoingEmail {
     `<h2 style="margin:0 0 8px">${escapeHtml(m.title)}</h2>`
     + `<p>${escapeHtml(t(L, 'emailTicketIntro'))}</p>`
     + detailsTable(rows)
+    + chatLinkHtml(m.chat)
     + qrHtml
     + `<p style="color:#666;font-size:13px">${escapeHtml(t(L, 'emailTicketFooter'))}</p>`,
   );
   const text = [
     m.title, t(L, 'emailTicketIntro'), '',
     ...rows.filter(([, v]) => v).map(([k, v]) => `${k}: ${v}`),
+    ...chatLinkText(m.chat),
     '', t(L, 'emailTicketFooter'),
   ].join('\n');
   return { to: [m.to], subject: t(L, 'emailTicketSubject', { title: m.title }), html, text, attachments };
@@ -157,6 +206,7 @@ export async function handleTicketOrderUpdate(
         payload: tk.qrPayload,
         caption: t(locale, 'emailTicketQrCaption', { index: i + 1, count: tickets.length }),
       })),
+      chat: emailChatLink(locale, kind, o.listingId, o.buyerId),
     });
   }, { type: 'ticket_order', orderId });
   return r === 'duplicate' ? 'duplicate' : (r.sent ? 'sent' : `not_sent:${r.reason}`);
@@ -201,6 +251,7 @@ export async function sendBookingQrEmail(
       partySize: Math.max(1, Number(b.guests) || 1),
       bookingCode: code,
       qrs: [{ payload: checkInQrPayload(bookingId, code), caption: t(locale, 'emailTicketQrCaption', { index: 1, count: 1 }) }],
+      chat: emailChatLink(locale, 'experience', b.experienceId, b.guestId),
     });
   }, { type: 'booking_qr', bookingId });
   return r === 'duplicate' ? 'duplicate' : (r.sent ? 'sent' : `not_sent:${r.reason}`);
@@ -255,6 +306,8 @@ export interface BookingEmailModel {
   respondBy: string | null;
   /** How to pay, already localized (confirmed_guest). */
   payHint: string | null;
+  /** Guest emails: "Message the host" link (absent for host emails). */
+  chat?: EmailChatLink | null;
 }
 
 /** Build a booking request / confirmation email (pure; exported for tests). */
@@ -292,12 +345,14 @@ export function buildBookingEmail(m: BookingEmailModel): OutgoingEmail {
     + `<p>${escapeHtml(intro)}</p>`
     + detailsTable(rows)
     + (next ? `<p style="font-weight:bold">${escapeHtml(next)}</p>` : '')
+    + (forHost ? '' : chatLinkHtml(m.chat))
     + `<p style="color:#666;font-size:13px">${escapeHtml(footer)}</p>`,
   );
   const text = [
     m.title, intro, '',
     ...rows.filter(([, v]) => v).map(([k, v]) => `${k}: ${v}`),
     ...(next ? ['', next] : []),
+    ...(forHost ? [] : chatLinkText(m.chat)),
     '', footer,
   ].join('\n');
   return { to: [m.to], subject, html, text };
@@ -360,6 +415,7 @@ export async function sendBookingStatusEmails(
         guestName,
         respondBy: kind === 'request_host' && expiresMs !== null ? formatWhen(expiresMs, tz, locale) : null,
         payHint: kind === 'confirmed_guest' ? bookingPayHint(locale, b, title) : null,
+        chat: kind.endsWith('_guest') ? emailChatLink(locale, 'experience', b.experienceId, b.guestId) : null,
       });
     }, { type: `booking_${kind}`, bookingId });
     return `${kind}:${r === 'duplicate' ? 'duplicate' : (r.sent ? 'sent' : `not_sent:${r.reason}`)}`;
