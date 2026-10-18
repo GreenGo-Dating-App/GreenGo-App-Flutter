@@ -84,10 +84,11 @@ visitantes (sección 11.7). Esta política también se aplica a ellas.
   «Exacta» en Visibilidad en el globo, ven en su lugar un punto a unos 100 m
   como máximo de tu posición. Nunca ven tus coordenadas exactas, tu fecha de
   nacimiento, tu número de teléfono ni tu dirección de correo electrónico.
-- Para crear una cuenta debes verificar un número de teléfono móvil por SMS.
-  Tu número es privado y nunca se muestra a otros usuarios. Si bloqueamos una
-  cuenta, solo conservamos un hash con clave de su número, para impedir que
-  vuelva.
+- Desde el 16 de octubre de 2026, para crear una cuenta debes verificar un
+  número de teléfono móvil por SMS (las cuentas más antiguas no tienen que
+  añadir uno). Tu número es privado y nunca se muestra a otros usuarios. Si
+  bloqueamos una cuenta, solo conservamos un hash con clave de su número,
+  para impedir que vuelva.
 - NO vendemos tus datos personales. NO los usamos para publicidad de terceros.
   En GreenGo no hay anuncios.
 - Tus mensajes están cifrados en tránsito y en reposo, pero NO están cifrados
@@ -461,14 +462,12 @@ terceros.
 - Registramos tu elección y cuándo la hiciste.
 
 6.5 Número de teléfono
-a) Para crear una cuenta, debes verificar un número de teléfono móvil. Te
-   enviamos un código por SMS a través de Google Firebase Authentication,
-   nuestro proveedor de inicio de sesión. Si tu cuenta se creó antes del 16 de
-   octubre de 2026, hasta el 15 de noviembre de 2026 solo te pedimos que
-   verifiques un número. A partir del 16 de noviembre de 2026 debes verificar
-   uno antes de publicar en una comunidad, unirte a eventos y experiencias o
-   reservarlos, comprar entradas, crear u organizar eventos o experiencias, o
-   usar una cuenta de empresa.
+a) Desde el 16 de octubre de 2026, para crear una cuenta debes verificar un
+   número de teléfono móvil. Te enviamos un código por SMS a través de Google
+   Firebase Authentication, nuestro proveedor de inicio de sesión. Si tu
+   cuenta se creó antes del 16 de octubre de 2026, no tienes que añadir un
+   número de teléfono: puedes añadir uno si quieres, y todas las funciones
+   siguen funcionando sin él.
 b) La verificación del teléfono está disponible para números de países
    europeos (excepto Rusia y Bielorrusia), Brasil, Estados Unidos, Canadá y
    el Reino Unido. Sin un número así, todavía no puedes crear una cuenta.
@@ -534,9 +533,8 @@ cuenta.
 
 GreenGo es para adultos (mayores de 18 años). Todas las personas indican su
 fecha de nacimiento al registrarse. La verificación con un documento de
-identidad es opcional. Publicar en una Comunidad, y publicar o reservar
-experiencias, requieren en su lugar un número de teléfono verificado
-(sección 6.5). Solo podemos pedir un documento de identidad:
+identidad es opcional, también para publicar en una Comunidad y para publicar
+o reservar experiencias. Solo podemos pedir un documento de identidad:
 - cuando la ley del lugar donde vives exige comprobaciones de edad más
   estrictas;
 - cuando tenemos un motivo concreto para creer que una cuenta pertenece a una
@@ -603,8 +601,8 @@ nosotros ni a Google para ello, y no se almacena ningún dato facial.
 
 8.4 Verificación de empresas
 
-Una cuenta de empresa solo necesita un número de teléfono verificado
-(sección 6.5). Para verificar una cuenta de empresa podemos pedir los datos de
+Una cuenta de empresa no necesita un documento de identidad. Para verificar
+una cuenta de empresa podemos pedir los datos de
 registro de la empresa. El documento de identidad de la persona que la dirige es
 opcional. Si el titular lo facilita, sigue las mismas reglas que en 8.2: la
 imagen se elimina tras la revisión (como máximo a los 7 días), y los datos
@@ -1595,11 +1593,10 @@ cuentas creadas antes del 16 de octubre de 2026 (anunciada el 17 de octubre
 de 2026)
 Verificación del teléfono y datos de identidad:
 - Nueva sección 6.5: se exige un número de teléfono móvil verificado para
-  crear una cuenta (números de países europeos excepto Rusia y Bielorrusia,
-  Brasil, Estados Unidos, Canadá y el Reino Unido) y, en las cuentas
-  existentes, antes de eventos, experiencias, entradas y cuentas de empresa
-  (solo se pide hasta el 15 de noviembre de 2026, obligatorio a partir del 16 de
-  noviembre de 2026); un número por cuenta; Google Firebase Authentication envía
+  crear una cuenta desde el 16 de octubre de 2026 (números de países europeos
+  excepto Rusia y Bielorrusia, Brasil, Estados Unidos, Canadá y el Reino
+  Unido); las cuentas creadas antes del 16 de octubre de 2026 no tienen que
+  añadir uno; un número por cuenta; Google Firebase Authentication envía
   el SMS; un hash con clave de los números de las cuentas bloqueadas (también
   secciones 2, 3.1, 4.2, 5, 12.2, 14, 15.2 y 22.1).
 - Secciones 3.1 d y 4.3: un número de contacto del negocio opcional, que se
@@ -1608,10 +1605,10 @@ Verificación del teléfono y datos de identidad:
   dispositivo y lo comprueba un revisor; todas las imágenes de documentos de
   identidad (también una foto sosteniendo el documento y el documento del
   titular de una empresa) se eliminan tras la revisión, o pasados 7 días si
-  siguen pendientes (puedes volver a subirlas); una cuenta de empresa solo
-  necesita un número de teléfono verificado, el documento de identidad del
-  titular es opcional; los datos que confirmas se conservan cifrados en un
-  almacén restringido, solo para identificarte cuando la ley lo exija, hasta
+  siguen pendientes (puedes volver a subirlas); el documento de identidad del
+  titular de una empresa es opcional; los datos que confirmas se conservan
+  cifrados en un almacén restringido, solo para identificarte cuando la ley
+  lo exija, hasta
   6 meses después del cierre de la cuenta (también secciones 2, 3.1, 4.2,
   4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 y 22.1).
 Aclaraciones para ajustarse al funcionamiento de la app:
@@ -1622,9 +1619,9 @@ Aclaraciones para ajustarse al funcionamiento de la app:
   contenido público se traduce con el servicio de traducción de Google, y la
   app puede solicitar esas traducciones directamente; traducciones del chat
   guardadas y caché anónima de frases cortas (también sección 14).
-- Sección 8.1: el documento de identidad es opcional en todos los casos;
-  publicar en una comunidad y publicar o reservar experiencias requieren en su
-  lugar un número de teléfono verificado (sección 6.5).
+- Sección 8.1: el documento de identidad es opcional en todos los casos,
+  también para publicar en una comunidad y para publicar o reservar
+  experiencias.
 - Sección 10.2: un moderador revisa el caso antes de que se deje de tramitar
   las denuncias; las denuncias sobre la seguridad infantil se tramitan
   siempre.

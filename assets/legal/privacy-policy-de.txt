@@ -84,8 +84,9 @@ Diese Erklärung gilt auch für sie.
   stattdessen einen Punkt, der höchstens etwa 100 m von deiner Position
   entfernt ist. Sie sehen niemals deine genauen Koordinaten, dein
   Geburtsdatum, deine Telefonnummer oder deine E-Mail-Adresse.
-- Um ein Konto zu erstellen, musst du eine Mobiltelefonnummer per SMS
-  verifizieren. Deine Nummer ist privat und wird anderen Nutzern nie
+- Seit dem 16. Oktober 2026 musst du, um ein Konto zu erstellen, eine
+  Mobiltelefonnummer per SMS verifizieren (ältere Konten müssen keine
+  hinzufügen). Deine Nummer ist privat und wird anderen Nutzern nie
   angezeigt. Wenn wir ein Konto sperren, speichern wir nur einen Keyed Hash
   seiner Nummer, damit es nicht zurückkehren kann.
 - Wir verkaufen deine personenbezogenen Daten NICHT. Wir verwenden sie NICHT für
@@ -476,15 +477,12 @@ dir für Dritte.
 - Wir speichern deine Entscheidung und wann du sie getroffen hast.
 
 6.5 Telefonnummer
-a) Um ein Konto zu erstellen, musst du eine Mobiltelefonnummer verifizieren.
-   Wir senden dir einen Code per SMS über Google Firebase Authentication,
-   unseren Anmeldeanbieter. Wenn dein Konto vor dem 16. Oktober 2026
-   erstellt wurde, bitten wir dich bis zum 15. November 2026 nur darum, eine
-   Nummer zu verifizieren. Ab dem 16. November 2026 musst du eine Nummer
-   verifizieren, bevor du in einer Community veröffentlichst, an Events und
-   Erlebnissen teilnimmst oder sie buchst, Tickets kaufst, Events oder
-   Erlebnisse erstellst oder als Gastgeber anbietest oder ein
-   Unternehmenskonto nutzt.
+a) Seit dem 16. Oktober 2026 musst du, um ein Konto zu erstellen, eine
+   Mobiltelefonnummer verifizieren. Wir senden dir einen Code per SMS über
+   Google Firebase Authentication, unseren Anmeldeanbieter. Wenn dein Konto
+   vor dem 16. Oktober 2026 erstellt wurde, musst du keine Telefonnummer
+   hinzufügen: Du kannst eine hinzufügen, wenn du möchtest, und alle
+   Funktionen funktionieren auch ohne sie weiter.
 b) Die Telefonverifizierung ist für Nummern aus europäischen Ländern (außer
    Russland und Belarus), Brasilien, den Vereinigten Staaten, Kanada und dem
    Vereinigten Königreich verfügbar. Ohne eine solche Nummer kannst du noch
@@ -551,10 +549,9 @@ und den angezeigten Kartenausschnitt erhalten, nicht aber deine Kontodaten.
 8.1 Wann wir danach fragen
 
 GreenGo ist für Erwachsene (18+). Alle geben bei der Registrierung ihr
-Geburtsdatum an. Die Verifizierung mit einem Ausweisdokument ist freiwillig.
-Für das Veröffentlichen in einer Community und das Veröffentlichen oder Buchen
-von Erlebnissen braucht man stattdessen eine verifizierte Telefonnummer
-(Abschnitt 6.5). Ein Ausweisdokument können wir nur verlangen:
+Geburtsdatum an. Die Verifizierung mit einem Ausweisdokument ist freiwillig,
+auch für das Veröffentlichen in einer Community und für das Veröffentlichen
+oder Buchen von Erlebnissen. Ein Ausweisdokument können wir nur verlangen:
 - wenn das Gesetz an deinem Wohnort strengere Alterskontrollen verlangt;
 - wenn wir einen konkreten Grund zu der Annahme haben, dass ein Konto einer
   Person unter 18 Jahren gehört.
@@ -623,8 +620,8 @@ Google gesendet, und es werden keine Gesichtsdaten gespeichert.
 
 8.4 Unternehmensverifizierung
 
-Ein Unternehmenskonto braucht nur eine verifizierte Telefonnummer
-(Abschnitt 6.5). Um ein Unternehmenskonto zu verifizieren, können wir die
+Ein Unternehmenskonto braucht kein Ausweisdokument. Um ein Unternehmenskonto
+zu verifizieren, können wir die
 Registerangaben des Unternehmens verlangen. Ein Ausweisdokument der Person,
 die es führt, ist freiwillig. Legt der Inhaber eines vor, gelten dafür
 dieselben Regeln wie in 8.2: Das Bild wird nach der Prüfung gelöscht
@@ -1605,12 +1602,12 @@ VERSIONSVERLAUF
 erstellt werden; ab 16. November 2026 für vor dem 16. Oktober 2026 erstellte
 Konten (angekündigt am 17. Oktober 2026)
 Telefonverifizierung und Identitätsangaben:
-- Neuer Abschnitt 6.5: Eine verifizierte Mobiltelefonnummer ist erforderlich,
-  um ein Konto zu erstellen (Nummern aus europäischen Ländern außer Russland
-  und Belarus, Brasilien, den Vereinigten Staaten, Kanada und dem Vereinigten
-  Königreich), und bei bestehenden Konten vor Events, Erlebnissen, Tickets
-  und Unternehmenskonten (bis zum 15. November 2026 nur erbeten, ab dem
-  16. November 2026 erforderlich); eine Nummer pro Konto; Google Firebase
+- Neuer Abschnitt 6.5: Eine verifizierte Mobiltelefonnummer ist seit dem
+  16. Oktober 2026 erforderlich, um ein Konto zu erstellen (Nummern aus
+  europäischen Ländern außer Russland und Belarus, Brasilien, den
+  Vereinigten Staaten, Kanada und dem Vereinigten Königreich); vor dem
+  16. Oktober 2026 erstellte Konten müssen keine hinzufügen; eine Nummer
+  pro Konto; Google Firebase
   Authentication sendet die SMS; ein Keyed Hash der Nummern gesperrter Konten
   (auch Abschnitte 2, 3.1, 4.2, 5, 12.2, 14, 15.2 und 22.1).
 - Abschnitte 3.1 d und 4.3: eine optionale geschäftliche Kontaktnummer, die
@@ -1621,8 +1618,8 @@ Telefonverifizierung und Identitätsangaben:
   Ausweisdokuments (auch ein Foto, auf dem man das Dokument hält, und das
   Dokument eines Unternehmensinhabers) wird nach der Prüfung oder nach
   7 Tagen, wenn sie noch aussteht, gelöscht (du kannst es erneut hochladen);
-  ein Unternehmenskonto braucht nur eine verifizierte Telefonnummer, das
-  Ausweisdokument des Inhabers ist freiwillig; die von dir bestätigten
+  das Ausweisdokument eines Unternehmensinhabers ist freiwillig; die von
+  dir bestätigten
   Angaben werden verschlüsselt in einem zugriffsbeschränkten Speicher
   aufbewahrt, nur um dich zu identifizieren, wenn das Gesetz es verlangt,
   bis 6 Monate nach der Schließung des Kontos (auch Abschnitte 2, 3.1, 4.2,
@@ -1636,10 +1633,9 @@ Klarstellungen, damit die Erklärung der Funktionsweise der App entspricht:
   kann solche Übersetzungen direkt anfordern; gespeicherte
   Chat-Übersetzungen und der anonyme Cache für kurze Sätze (auch
   Abschnitt 14).
-- Abschnitt 8.1: Ein Ausweisdokument ist überall freiwillig; für das
-  Veröffentlichen in einer Community und das Veröffentlichen oder Buchen von
-  Erlebnissen braucht man stattdessen eine verifizierte Telefonnummer
-  (Abschnitt 6.5).
+- Abschnitt 8.1: Ein Ausweisdokument ist überall freiwillig, auch für das
+  Veröffentlichen in einer Community und für das Veröffentlichen oder Buchen
+  von Erlebnissen.
 - Abschnitt 10.2: Ein Moderator prüft den Fall, bevor Meldungen nicht mehr
   bearbeitet werden; Meldungen zur Kindersicherheit werden immer bearbeitet.
 - Abschnitt 11.2: Pix nur für einmalige Zahlungen; Mitgliedschaften per

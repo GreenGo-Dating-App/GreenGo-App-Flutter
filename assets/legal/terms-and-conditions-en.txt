@@ -77,11 +77,11 @@ email address and phone number of banned accounts (Privacy Policy, section
 3.4 One person, one personal account. A Business account is not a separate
 account: it is your own Account switched to business mode (section 13).
 
-3.5 To create an account, you must verify a mobile phone number with a code we
-send you by SMS (section 4.5). Phone verification is available for numbers
-from European countries (except Russia and Belarus), Brazil, the United
-States, Canada and the United Kingdom. Without a mobile number from one of
-these countries, you cannot create an account yet.
+3.5 Since 16 October 2026, to create an account you must verify a mobile phone
+number with a code we send you by SMS (section 4.5). Phone verification is
+available for numbers from European countries (except Russia and Belarus),
+Brazil, the United States, Canada and the United Kingdom. Without a mobile
+number from one of these countries, you cannot create an account yet.
 
 ================================================================================
 4. YOUR ACCOUNT
@@ -97,11 +97,10 @@ happens in your account unless it was used without your fault.
 4.3 Your account is personal. You may not sell, lend or transfer it.
 
 4.4 Verification
-a) Verifying with an identity document is optional. Publishing in a
-   Community, and publishing, hosting or booking an Experience, need a
-   verified phone number instead (section 4.5). Where the law requires
-   stronger age checks where you live, we may ask you to verify your age
-   with an identity document.
+a) Verifying with an identity document is optional, also for publishing in
+   a Community and for publishing, hosting or booking an Experience. Where
+   the law requires stronger age checks where you live, we may ask you to
+   verify your age with an identity document.
 b) Some badges require you to verify your profile with a selfie.
 c) When you verify with an identity document, the app reads the document on
    your device and fills in your first name, surname, date of birth, document
@@ -118,16 +117,11 @@ d) Using a document that is not yours, or that was already used for another
    account, breaks these Terms.
 
 4.5 Phone number
-a) Every account needs its own verified mobile phone number. One phone
-   number can be linked to only one account.
-b) If your account was created before 16 October 2026, until 15 November
-   2026 we only ask you to verify a phone number, and you can continue
-   without it. From 16 November 2026 you must verify a phone number before
-   you:
-   - publish in a Community;
-   - join or book an Event or an Experience, or buy a ticket;
-   - create or host an Event or an Experience;
-   - use a Business account.
+a) Every account created on or after 16 October 2026 needs its own verified
+   mobile phone number. One phone number can be linked to only one account.
+b) If your account was created before 16 October 2026, you do not have to
+   add a phone number. You can add one if you wish, and all features keep
+   working without it.
 c) Your phone number is private. We never show it to other users. It is kept
    in the private part of your account, as explained in the Privacy Policy.
 d) Use only a number that you are entitled to use, and keep it up to date.
@@ -438,9 +432,7 @@ Specific promotions have their own rules, which we show before you take part.
 
 11.1 To create an Event you need a Membership (Base or higher), and your
 account must not be restricted. How many Events you can have at a time
-depends on your plan (section 11.7). To create, join or book an Event, or to
-buy a ticket, your account also needs a verified phone number (section 4.5).
-The organiser is responsible for:
+depends on your plan (section 11.7). The organiser is responsible for:
 - describing the Event accurately;
 - keeping it lawful and safe;
 - cancelling it in good time if it cannot go ahead.
@@ -605,9 +597,8 @@ d) never ask Guests to pay outside the in-app checkout, for example with a
    payment link, a bank transfer or cash;
 e) treat Guests with respect and keep them safe.
 
-Phone number: to publish or host any Experience, free or paid, your account
-needs a verified phone number (section 4.5). An identity document is optional
-(section 4.4).
+To publish or host any Experience, free or paid, you do not need an identity
+document (section 4.4).
 New Hosts may publish only one paid Experience until they have 3 reviews.
 
 12.4 Hosts who are traders
@@ -635,8 +626,8 @@ c) If the Host removes your booked time or cancels your booking, GreenGo
    app within the window shown. GreenGo will look at it and may record a
    refund owed by the Host, or take action against the Host's account.
    GreenGo itself does not pay refunds for Experiences from its own funds.
-d) To book an Experience as a member, you must have verified your phone
-   number (section 4.5).
+d) To book an Experience as a member, you do not need an identity document
+   (section 4.4).
 
 12.6 Reviews
 - After a real booking, Hosts and Guests can review each other.
@@ -667,9 +658,9 @@ page:
 13.3 You are the controller of the personal data you collect from people who
 contact you (for example leads). Use it only as the law allows.
 
-13.4 A Business account needs only a verified phone number (section 4.5). An
-identity document of the person who runs the business is optional; if you
-provide one, section 4.4 c applies to it. We may ask you to verify the
+13.4 A Business account does not need an identity document: the identity
+document of the person who runs the business is optional; if you provide
+one, section 4.4 c applies to it. We may ask you to verify the
 business. The verified badge means that we checked the documents provided.
 It is not an endorsement.
 
@@ -682,8 +673,7 @@ promoted.
   the law says otherwise.
 
 13.7 Business accounts are available with a Silver, Gold or Platinum
-Membership, and need a verified phone number (section 4.5). If your
-Membership ends or drops below Silver, the business tools
+Membership. If your Membership ends or drops below Silver, the business tools
 (for example the business page, leads, promotion and paid listings) pause,
 and your account works as a personal account with free listings only. They
 start again when you have a Silver, Gold or Platinum Membership again.
@@ -1264,23 +1254,19 @@ VERSION HISTORY
 16 October 2026; 16 November 2026 for accounts created before 16 October 2026
 (announced 17 October 2026)
 Phone verification and identity details:
-- Sections 3.3, 3.5, 4.5, 11.1, 12.3, 12.5, 13.4 and 13.7: a verified mobile
-  phone number is required to create an account (numbers from European countries
-  except Russia and Belarus, Brazil, the United States, Canada and the United
-  Kingdom), and for existing accounts (only asked until 15 November 2026,
-  required from 16 November 2026) before publishing in a Community, joining
-  or booking Events and Experiences, buying tickets, creating or hosting
-  Events and Experiences and using a Business account; one number per
-  account; the number is
-  private; a keyed hash of the email address and phone number of banned
-  accounts.
+- Sections 3.3, 3.5 and 4.5: a verified mobile phone number is required to
+  create an account since 16 October 2026 (numbers from European countries
+  except Russia and Belarus, Brazil, the United States, Canada and the
+  United Kingdom); accounts created before 16 October 2026 do not have to
+  add one, and all features keep working without it; one number per
+  account; the number is private; a keyed hash of the email address and
+  phone number of banned accounts.
 - Section 13.1: an optional business contact number, shown on the business
   page only if you switch it on.
 - Sections 4.4, 12.3, 12.5, 13.4 and 18.8: identity-document verification
-  is optional everywhere: publishing in a Community and publishing, hosting
-  or booking Experiences need a verified phone number instead, and a
-  Business account needs only a verified phone number (the owner's identity
-  document is optional); the document is read on your device and checked by a
+  is optional everywhere, also for publishing in a Community, for
+  publishing, hosting or booking Experiences and for the owner of a
+  Business account; the document is read on your device and checked by a
   reviewer, the photo is deleted after the review or after 7 days if still
   pending, and the details you confirm are kept encrypted only to identify
   you when the law requires it.

@@ -84,10 +84,11 @@ richiesta di prenotazione per un'esperienza, da un link condiviso come ospiti
   punto entro circa 100 m dalla tua posizione. Non vedono mai le tue
   coordinate esatte, la tua data di nascita, il tuo numero di telefono o il
   tuo indirizzo e-mail.
-- Per creare un account devi verificare un numero di cellulare via SMS. Il tuo
-  numero è privato e non viene mai mostrato agli altri utenti. Se banniamo un
-  account, conserviamo solo un hash con chiave del suo numero, per impedirgli
-  di tornare.
+- Dal 16 ottobre 2026, per creare un account devi verificare un numero di
+  cellulare via SMS (gli account creati prima non devono aggiungerne uno). Il
+  tuo numero è privato e non viene mai mostrato agli altri utenti. Se
+  banniamo un account, conserviamo solo un hash con chiave del suo numero,
+  per impedirgli di tornare.
 - NON vendiamo i tuoi dati personali. NON li usiamo per la pubblicità di
   terzi. In GreenGo non c'è pubblicità.
 - I tuoi messaggi sono cifrati durante la trasmissione e quando sono
@@ -472,14 +473,12 @@ te per conto di terzi.
 - Registriamo la tua scelta e il momento in cui l'hai fatta.
 
 6.5 Numero di telefono
-a) Per creare un account, devi verificare un numero di cellulare. Ti inviamo
-   un codice via SMS tramite Google Firebase Authentication, il nostro
-   fornitore di accesso. Se il tuo account è stato creato prima del 16
-   ottobre 2026, fino al 15 novembre 2026 ti chiediamo soltanto di verificare
-   un numero. Dal 16 novembre 2026 devi verificarne uno prima di pubblicare in
-   una Community, partecipare a eventi ed esperienze o prenotarli, acquistare
-   biglietti, creare od ospitare eventi o esperienze, o usare un account
-   business.
+a) Dal 16 ottobre 2026, per creare un account devi verificare un numero di
+   cellulare. Ti inviamo un codice via SMS tramite Google Firebase
+   Authentication, il nostro fornitore di accesso. Se il tuo account è stato
+   creato prima del 16 ottobre 2026, non devi aggiungere un numero di
+   telefono: puoi aggiungerne uno se lo desideri, e tutte le funzioni restano
+   disponibili anche senza.
 b) La verifica del telefono è disponibile per i numeri di paesi europei
    (tranne Russia e Bielorussia), del Brasile, degli Stati Uniti, del Canada e
    del Regno Unito. Senza un numero di questo tipo, per ora non puoi creare un
@@ -547,9 +546,8 @@ account.
 
 GreenGo è per adulti (18+). Tutti dichiarano la propria data di nascita al
 momento della registrazione. La verifica con un documento d'identità è
-facoltativa. Per pubblicare in una Community, e per pubblicare o prenotare
-esperienze, serve invece un numero di telefono verificato (sezione 6.5).
-Potremmo chiedere un documento d'identità solo:
+facoltativa, anche per pubblicare in una Community e per pubblicare o
+prenotare esperienze. Potremmo chiedere un documento d'identità solo:
 - quando la legge del luogo in cui vivi richiede controlli dell'età più
   rigorosi;
 - quando abbiamo un motivo specifico per ritenere che un account appartenga a
@@ -617,8 +615,8 @@ volto.
 
 8.4 Verifica dell'attività commerciale
 
-Per un account business basta un numero di telefono verificato (sezione 6.5).
-Per verificare un account business possiamo chiedere i dati di registrazione
+Per un account business non serve un documento d'identità. Per verificare
+un account business possiamo chiedere i dati di registrazione
 dell'attività. Il documento d'identità della persona che la gestisce è
 facoltativo. Se il titolare lo fornisce, segue le stesse regole del punto 8.2:
 l'immagine viene cancellata dopo l'esame (al più tardi dopo 7 giorni), e i
@@ -1594,12 +1592,11 @@ CRONOLOGIA DELLE VERSIONI
 2026 in poi; dal 16 novembre 2026 per gli account creati prima del 16 ottobre
 2026 (annunciata il 17 ottobre 2026)
 Verifica del telefono e dati identificativi:
-- Nuova sezione 6.5: è richiesto un numero di cellulare verificato per creare
-  un account (numeri di paesi europei tranne Russia e Bielorussia, del
-  Brasile, degli Stati Uniti, del Canada e del Regno Unito) e, per gli
-  account esistenti, prima di eventi, esperienze, biglietti e account
-  business (fino al 15 novembre 2026 viene solo chiesto, dal 16 novembre
-  2026 è obbligatorio); un numero per account; Google Firebase
+- Nuova sezione 6.5: dal 16 ottobre 2026 è richiesto un numero di cellulare
+  verificato per creare un account (numeri di paesi europei tranne Russia e
+  Bielorussia, del Brasile, degli Stati Uniti, del Canada e del Regno
+  Unito); gli account creati prima del 16 ottobre 2026 non devono
+  aggiungerne uno; un numero per account; Google Firebase
   Authentication invia l'SMS; un hash con chiave dei numeri degli account
   bannati (anche sezioni 2, 3.1, 4.2, 5, 12.2, 14, 15.2 e 22.1).
 - Sezioni 3.1 d e 4.3: un numero di contatto dell'attività facoltativo,
@@ -1609,9 +1606,9 @@ Verifica del telefono e dati identificativi:
   dispositivo e controllato da un revisore; ogni immagine di un documento
   d'identità (anche una foto in cui si tiene in mano il documento e il
   documento del titolare di un'attività) viene cancellata dopo l'esame, o
-  dopo 7 giorni se è ancora in attesa (puoi caricarla di nuovo); per un
-  account business basta un numero di telefono verificato, e il documento
-  d'identità del titolare è facoltativo; i dati che confermi sono conservati
+  dopo 7 giorni se è ancora in attesa (puoi caricarla di nuovo); il
+  documento d'identità del titolare di un'attività è facoltativo; i dati che
+  confermi sono conservati
   in forma cifrata in un archivio ad accesso limitato, solo per identificarti
   quando la legge lo richiede, fino a 6 mesi dopo la chiusura dell'account
   (anche sezioni 2, 3.1, 4.2, 4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 e 22.1).
@@ -1623,9 +1620,8 @@ Chiarimenti per corrispondere al funzionamento dell'app:
   sono tradotti con il servizio di traduzione di Google, e l'app può
   richiedere tali traduzioni direttamente; traduzioni di chat conservate e
   cache anonima di brevi frasi (anche sezione 14).
-- Sezione 8.1: il documento d'identità è facoltativo ovunque; per pubblicare
-  in una Community e per pubblicare o prenotare esperienze serve invece un
-  numero di telefono verificato (sezione 6.5).
+- Sezione 8.1: il documento d'identità è facoltativo ovunque, anche per
+  pubblicare in una Community e per pubblicare o prenotare esperienze.
 - Sezione 10.2: un moderatore esamina il caso prima che le segnalazioni non
   vengano più trattate; le segnalazioni relative alla sicurezza dei minori
   vengono sempre trattate.

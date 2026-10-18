@@ -80,11 +80,11 @@ com chave) do endereço de e-mail e do número de telefone das contas banidas
 3.4 Uma pessoa, uma conta pessoal. Uma Conta empresarial não é uma conta
 separada: é a sua própria Conta colocada no modo empresarial (seção 13).
 
-3.5 Para criar uma conta, você deve verificar um número de celular com um
-código que enviamos por SMS (item 4.5). A verificação por telefone está
-disponível para números de países europeus (exceto Rússia e Belarus), do
-Brasil, dos Estados Unidos, do Canadá e do Reino Unido. Sem um número de
-celular de um desses países, você ainda não pode criar uma conta.
+3.5 Desde 16 de outubro de 2026, para criar uma conta você deve verificar um
+número de celular com um código que enviamos por SMS (item 4.5). A verificação
+por telefone está disponível para números de países europeus (exceto Rússia e
+Belarus), do Brasil, dos Estados Unidos, do Canadá e do Reino Unido. Sem um
+número de celular de um desses países, você ainda não pode criar uma conta.
 
 ================================================================================
 4. A SUA CONTA
@@ -102,12 +102,11 @@ usada sem culpa sua.
 transferi-la.
 
 4.4 Verificação
-a) A verificação com um documento de identidade é opcional. Para publicar em
-   uma Comunidade e para publicar uma Experiência, ser o Anfitrião dela ou
-   reservá-la, é preciso, em vez disso, um número de telefone verificado
-   (item 4.5). Quando a lei do lugar onde você mora exigir verificações de
-   idade mais rigorosas, podemos pedir que você verifique a sua idade com um
-   documento de identidade.
+a) A verificação com um documento de identidade é opcional, também para publicar
+   em uma Comunidade e para publicar uma Experiência, ser o Anfitrião dela ou
+   reservá-la. Quando a lei do lugar onde você mora exigir verificações de idade
+   mais rigorosas, podemos pedir que você verifique a sua idade com um documento
+   de identidade.
 b) Alguns selos exigem que você verifique o seu perfil com uma selfie.
 c) Quando você se verifica com um documento de identidade, o aplicativo lê o
    documento no seu dispositivo e preenche o seu nome, sobrenome, data de
@@ -125,17 +124,12 @@ d) Usar um documento que não é seu, ou que já foi usado para outra conta, vio
    estes Termos.
 
 4.5 Número de telefone
-a) Cada conta precisa do seu próprio número de celular verificado. Um número
-   de telefone só pode estar vinculado a uma conta.
-b) Se a sua conta foi criada antes de 16 de outubro de 2026, até 15 de
-   novembro de 2026 apenas pedimos que você verifique um número de telefone,
-   e você pode continuar sem ele. A partir de 16 de novembro de 2026, você
-   deve verificar um número de telefone antes de:
-   - publicar em uma Comunidade;
-   - participar de um Evento ou de uma Experiência ou reservá-los, ou comprar
-     um ingresso;
-   - criar um Evento ou uma Experiência, ou ser o Anfitrião deles;
-   - usar uma Conta empresarial.
+a) Cada conta criada em 16 de outubro de 2026 ou depois precisa do seu próprio
+   número de celular verificado. Um número de telefone só pode estar vinculado a
+   uma conta.
+b) Se a sua conta foi criada antes de 16 de outubro de 2026, você não precisa
+   adicionar um número de telefone. Você pode adicionar um se quiser, e todos os
+   recursos continuam funcionando sem ele.
 c) O seu número de telefone é privado. Nunca o mostramos a outros usuários. Ele
    fica guardado na parte privada da sua conta, conforme explicado na Política
    de Privacidade.
@@ -471,9 +465,7 @@ você participar.
 
 11.1 Para criar um Evento, você precisa de uma Assinatura (Base ou superior), e
 a sua conta não pode estar restrita. Quantos Eventos você pode ter ao mesmo
-tempo depende do seu plano (item 11.7). Para criar, participar ou reservar um
-Evento, ou para comprar um ingresso, a sua conta também precisa de um número
-de telefone verificado (item 4.5). O organizador é responsável por:
+tempo depende do seu plano (item 11.7). O organizador é responsável por:
 - descrever o Evento com precisão;
 - mantê-lo lícito e seguro;
 - cancelá-lo com antecedência se ele não puder ser realizado.
@@ -654,9 +646,8 @@ d) nunca pedir aos Convidados que paguem fora do checkout do aplicativo, por
    exemplo por link de pagamento, transferência bancária ou em dinheiro;
 e) tratar os Convidados com respeito e mantê-los em segurança.
 
-Número de telefone: para publicar qualquer Experiência, gratuita ou paga, ou
-ser o Anfitrião dela, a sua conta precisa de um número de telefone verificado
-(item 4.5). Um documento de identidade é opcional (item 4.4).
+Para publicar qualquer Experiência, gratuita ou paga, ou ser o Anfitrião dela,
+você não precisa de um documento de identidade (item 4.4).
 Os novos Anfitriões só podem publicar uma Experiência paga até terem 3
 avaliações.
 
@@ -690,8 +681,8 @@ c) Se o Anfitrião remover o seu horário reservado ou cancelar a sua reserva,
    indicado. O GreenGo a analisará e poderá registrar um reembolso devido pelo
    Anfitrião, ou tomar medidas contra a conta do Anfitrião. O próprio GreenGo
    não paga reembolsos de Experiências com recursos próprios.
-d) Para reservar uma Experiência como membro, você deve ter verificado o seu
-   número de telefone (item 4.5).
+d) Para reservar uma Experiência como membro, você não precisa de um documento
+   de identidade (item 4.4).
 
 12.6 Avaliações
 - Após uma reserva real, Anfitriões e Convidados podem avaliar uns aos outros.
@@ -724,11 +715,11 @@ exiba uma página de empresa:
 em contato com você (por exemplo, leads). Use-os somente conforme a lei
 permite.
 
-13.4 Uma Conta empresarial precisa apenas de um número de telefone verificado
-(item 4.5). Um documento de identidade da pessoa que administra a empresa é
-opcional; se você fornecer um, aplica-se a ele o item 4.4 c. Podemos pedir que
-você verifique a empresa. O selo de verificado significa que conferimos os
-documentos fornecidos. Ele não é um endosso.
+13.4 Uma Conta empresarial não precisa de um documento de identidade: o
+documento de identidade da pessoa que administra a empresa é opcional; se você
+fornecer um, aplica-se a ele o item 4.4 c. Podemos pedir que você verifique a
+empresa. O selo de verificado significa que conferimos os documentos fornecidos.
+Ele não é um endosso.
 
 13.5 Qualquer promoção paga de uma página de empresa é claramente identificada
 no aplicativo como promovida.
@@ -739,8 +730,7 @@ no aplicativo como promovida.
   exceto quando a lei dispuser de outra forma.
 
 13.7 As Contas empresariais estão disponíveis com uma Assinatura Silver, Gold
-ou Platinum e precisam de um número de telefone verificado (item 4.5). Se a
-sua Assinatura terminar ou ficar abaixo de Silver, as
+ou Platinum. Se a sua Assinatura terminar ou ficar abaixo de Silver, as
 ferramentas empresariais (por exemplo a página da empresa, os leads, a
 promoção e os anúncios pagos) ficam pausadas, e a sua conta funciona como uma
 conta pessoal, somente com anúncios gratuitos. Elas voltam a funcionar quando
@@ -1349,27 +1339,22 @@ HISTÓRICO DE VERSÕES
 de 16 de outubro de 2026; a partir de 16 de novembro de 2026 para contas
 criadas antes de 16 de outubro de 2026 (anunciada em 17 de outubro de 2026)
 Verificação por telefone e dados de identificação:
-- Seções 3.3, 3.5, 4.5, 11.1, 12.3, 12.5, 13.4 e 13.7: um número de celular
-  verificado é exigido para criar uma conta (números de países europeus,
-  exceto Rússia e Belarus, do Brasil, dos Estados Unidos, do Canadá e do Reino
-  Unido) e, nas contas existentes (apenas solicitado até 15 de novembro de
-  2026, obrigatório a partir de 16 de novembro de 2026), antes de publicar em
-  uma Comunidade, participar de Eventos e Experiências ou reservá-los,
-  comprar ingressos, criar Eventos e Experiências ou ser o Anfitrião deles e
-  usar uma Conta empresarial; um número por conta;
-  o número é privado; um hash com chave do endereço de e-mail e do número de
-  telefone das contas banidas.
+- Seções 3.3, 3.5 e 4.5: um número de celular verificado é exigido para criar
+  uma conta desde 16 de outubro de 2026 (números de países europeus, exceto
+  Rússia e Belarus, do Brasil, dos Estados Unidos, do Canadá e do Reino Unido);
+  as contas criadas antes de 16 de outubro de 2026 não precisam adicionar um, e
+  todos os recursos continuam funcionando sem ele; um número por conta; o número
+  é privado; um hash com chave do endereço de e-mail e do número de telefone das
+  contas banidas.
 - Seção 13.1: um número de contato comercial opcional, exibido na página da
   empresa somente se você o ativar.
-- Seções 4.4, 12.3, 12.5, 13.4 e 18.8: a verificação com documento de
-  identidade é opcional em todos os casos: publicar em uma Comunidade e
-  publicar Experiências, ser o Anfitrião delas ou reservá-las exigem, em vez
-  disso, um número de telefone verificado, e uma Conta empresarial precisa
-  apenas de um número de telefone verificado (o documento de identidade do
-  titular é opcional); o documento é lido no seu dispositivo
-  e conferido por um revisor, a foto é excluída após a análise ou após 7 dias
-  se ainda estiver pendente, e os dados que você confirma são guardados de
-  forma criptografada somente para identificar você quando a lei o exigir.
+- Seções 4.4, 12.3, 12.5, 13.4 e 18.8: a verificação com documento de identidade
+  é opcional em todos os casos, também para publicar em uma Comunidade, para
+  publicar Experiências, ser o Anfitrião delas ou reservá-las e para o titular
+  de uma Conta empresarial; o documento é lido no seu dispositivo e conferido
+  por um revisor, a foto é excluída após a análise ou após 7 dias se ainda
+  estiver pendente, e os dados que você confirma são guardados de forma
+  criptografada somente para identificar você quando a lei o exigir.
 Esclarecimentos para refletir como o aplicativo funciona:
 - Seções 5.1 g, 14.1, 14.2 e 14.4: os assistentes de IA no chat são a
   tradução, a leitura em voz alta e a transliteração (respostas inteligentes

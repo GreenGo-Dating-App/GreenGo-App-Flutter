@@ -79,9 +79,10 @@ applies to them too.
   you choose "Exact" in Globe Discoverability, they see a point within about
   100 m of your position instead. They never see your exact coordinates, date
   of birth, phone number or email address.
-- To create an account you must verify a mobile phone number by SMS. Your
-  number is private and never shown to other users. If we ban an account, we
-  keep only a keyed hash of its number, to stop it from coming back.
+- Since 16 October 2026, to create an account you must verify a mobile phone
+  number by SMS (older accounts do not have to add one). Your number is
+  private and never shown to other users. If we ban an account, we keep
+  only a keyed hash of its number, to stop it from coming back.
 - We do NOT sell your personal data. We do NOT use it for third-party
   advertising. There are no ads in GreenGo.
 - Your messages are encrypted in transit and at rest, but they are NOT
@@ -431,13 +432,11 @@ you for third parties.
 - We record your choice and when you made it.
 
 6.5 Phone number
-a) To create an account, you must verify a mobile phone number. We send you a
-   code by SMS through Google Firebase Authentication, our sign-in provider.
-   If your account was created before 16 October 2026, until 15 November
-   2026 we only ask you to verify a number. From 16 November 2026 you must
-   verify one before you publish in a community, join or book events and
-   experiences, buy tickets, create or host events or experiences, or use a
-   business account.
+a) Since 16 October 2026, to create an account you must verify a mobile
+   phone number. We send you a code by SMS through Google Firebase
+   Authentication, our sign-in provider. If your account was created before
+   16 October 2026, you do not have to add a phone number: you can add one
+   if you wish, and all features keep working without it.
 b) Phone verification is available for numbers from European countries
    (except Russia and Belarus), Brazil, the United States, Canada and the
    United Kingdom. Without such a number, you cannot create an account yet.
@@ -500,9 +499,9 @@ your account data.
 8.1 When we ask
 
 GreenGo is for adults (18+). Everyone states their date of birth when they sign
-up. Verifying with an identity document is optional. Publishing in a
-Community, and publishing or booking experiences, need a verified phone
-number instead (section 6.5). We may ask for an identity document only:
+up. Verifying with an identity document is optional, also for publishing in
+a Community and for publishing or booking experiences. We may ask for an
+identity document only:
 - where the law requires stronger age checks where you live;
 - when we have a specific reason to believe an account belongs to someone
   under 18.
@@ -565,8 +564,8 @@ data is stored.
 
 8.4 Business verification
 
-A business account needs only a verified phone number (section 6.5). To
-verify a business account we may ask for the business's registration
+A business account does not need an identity document. To verify a
+business account we may ask for the business's registration
 details. An identity document of the person who runs it is optional. If the
 owner provides one, it follows the same rules as in 8.2: the image is deleted
 after the review (at the latest after 7 days), and the confirmed details are
@@ -1448,11 +1447,10 @@ VERSION HISTORY
 (announced 17 October 2026)
 Phone verification and identity details:
 - New section 6.5: a verified mobile phone number is required to create an
-  account (numbers from European countries except Russia and Belarus,
-  Brazil, the United States, Canada and the United Kingdom), and for
-  existing accounts before events, experiences, tickets and business
-  accounts (only asked until 15 November 2026, required from 16 November
-  2026); one number per account; Google Firebase Authentication sends the
+  account since 16 October 2026 (numbers from European countries except
+  Russia and Belarus, Brazil, the United States, Canada and the United
+  Kingdom); accounts created before 16 October 2026 do not have to add one;
+  one number per account; Google Firebase Authentication sends the
   SMS; a keyed hash of the numbers of banned accounts (also sections 2, 3.1,
   4.2, 5, 12.2, 14, 15.2 and 22.1).
 - Sections 3.1 d and 4.3: an optional business contact number, shown on the
@@ -1461,8 +1459,7 @@ Phone verification and identity details:
   and checked by a reviewer; every identity-document image (also a photo
   holding the document and a business owner's document) is deleted after
   the review, or after 7 days if still pending (you can upload it again); a
-  business account needs only a verified phone number, the owner's identity
-  document is optional; the details you confirm
+  business owner's identity document is optional; the details you confirm
   are kept encrypted in a restricted store, only to identify you when the
   law requires it, until 6 months after the account is closed (also
   sections 2, 3.1, 4.2, 4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 and 22.1).
@@ -1474,9 +1471,8 @@ Clarifications to match how the app works:
   translation service, and the app may request such translations directly;
   stored chat translations and the anonymous cache of short phrases (also
   section 14).
-- Section 8.1: an identity document is optional everywhere; publishing in a
-  community and publishing or booking experiences need a verified phone
-  number instead (section 6.5).
+- Section 8.1: an identity document is optional everywhere, also for
+  publishing in a community and for publishing or booking experiences.
 - Section 10.2: a moderator reviews the case before reports stop being
   processed; child-safety reports are always processed.
 - Section 11.2: Pix only for one-time payments; memberships by card.

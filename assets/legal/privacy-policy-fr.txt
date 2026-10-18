@@ -87,10 +87,11 @@ que visiteurs (point 11.7). La présente politique s'applique aussi à elles.
   ils voient à la place un point situé à environ 100 m au plus de votre
   position. Ils ne voient jamais vos coordonnées exactes, votre date de
   naissance, votre numéro de téléphone ni votre adresse e-mail.
-- Pour créer un compte, vous devez vérifier un numéro de téléphone mobile par
-  SMS. Votre numéro est privé et n'est jamais montré aux autres utilisateurs.
-  Si nous bannissons un compte, nous ne conservons qu'un hachage à clé de son
-  numéro, pour l'empêcher de revenir.
+- Depuis le 16 octobre 2026, pour créer un compte, vous devez vérifier un numéro
+  de téléphone mobile par SMS (les comptes plus anciens ne sont pas obligés d'en
+  ajouter un). Votre numéro est privé et n'est jamais montré aux autres
+  utilisateurs. Si nous bannissons un compte, nous ne conservons qu'un hachage à
+  clé de son numéro, pour l'empêcher de revenir.
 - Nous ne VENDONS PAS vos données personnelles. Nous ne les utilisons PAS pour
   de la publicité de tiers. Il n'y a aucune publicité dans GreenGo.
 - Vos messages sont chiffrés en transit et au repos, mais ils ne sont PAS
@@ -489,15 +490,12 @@ créons pas de profils vous concernant pour des tiers.
 - Nous enregistrons votre choix et la date à laquelle vous l'avez fait.
 
 6.5 Numéro de téléphone
-a) Pour créer un compte, vous devez vérifier un numéro de téléphone mobile.
-   Nous vous envoyons un code par SMS via Google Firebase Authentication,
-   notre fournisseur de connexion. Si votre compte a été créé avant le
-   16 octobre 2026, jusqu'au 15 novembre 2026 nous vous demandons seulement
-   de vérifier un numéro. À partir du 16 novembre 2026, vous devez en
-   vérifier un avant de publier dans une communauté, de rejoindre ou de
-   réserver des événements et des expériences, d'acheter des billets, de
-   créer ou d'organiser des événements ou des expériences, ou d'utiliser un
-   compte professionnel.
+a) Depuis le 16 octobre 2026, pour créer un compte, vous devez vérifier un
+   numéro de téléphone mobile. Nous vous envoyons un code par SMS via Google
+   Firebase Authentication, notre fournisseur de connexion. Si votre compte a
+   été créé avant le 16 octobre 2026, vous n'êtes pas obligé d'ajouter un numéro
+   de téléphone : vous pouvez en ajouter un si vous le souhaitez, et toutes les
+   fonctionnalités continuent de fonctionner sans numéro.
 b) La vérification du téléphone est disponible pour les numéros des pays
    européens (sauf la Russie et la Biélorussie), du Brésil, des États-Unis,
    du Canada et du Royaume-Uni. Sans un tel numéro, vous ne pouvez pas encore
@@ -570,10 +568,9 @@ pas vos données de compte.
 8.1 Quand nous le demandons
 
 GreenGo est destiné aux adultes (18 ans et plus). Chacun indique sa date de
-naissance lors de l'inscription. La vérification au moyen d'une pièce
-d'identité est facultative. Publier dans une Communauté, ainsi que publier ou
-réserver des expériences, nécessitent à la place un numéro de téléphone
-vérifié (point 6.5). Nous ne pouvons demander une pièce d'identité que :
+naissance lors de l'inscription. La vérification au moyen d'une pièce d'identité
+est facultative, y compris pour publier dans une Communauté et pour publier ou
+réserver des expériences. Nous ne pouvons demander une pièce d'identité que :
 - lorsque la loi de votre lieu de résidence exige des contrôles d'âge
   renforcés ;
 - lorsque nous avons une raison précise de penser qu'un compte appartient à
@@ -645,9 +642,9 @@ n'est stockée.
 
 8.4 Vérification des entreprises
 
-Un compte professionnel nécessite uniquement un numéro de téléphone vérifié
-(point 6.5). Pour vérifier un compte professionnel, nous pouvons demander les
-informations d'immatriculation de l'entreprise. Une pièce d'identité de la
+Un compte professionnel ne nécessite pas de pièce d'identité. Pour vérifier un
+compte professionnel, nous pouvons demander les informations d'immatriculation
+de l'entreprise. Une pièce d'identité de la
 personne qui la dirige est facultative. Si le propriétaire en fournit une,
 elle suit les mêmes règles qu'au point 8.2 : l'image est supprimée après
 l'examen (au plus tard au bout de 7 jours), et les informations confirmées
@@ -1672,28 +1669,25 @@ HISTORIQUE DES VERSIONS
 16 octobre 2026 ; le 16 novembre 2026 pour les comptes créés avant le
 16 octobre 2026 (annoncée le 17 octobre 2026)
 Vérification du téléphone et informations d'identité :
-- Nouveau point 6.5 : un numéro de téléphone mobile vérifié est exigé pour
-  créer un compte (numéros des pays européens sauf la Russie et la
-  Biélorussie, du Brésil, des États-Unis, du Canada et du Royaume-Uni) et,
-  pour les comptes existants, avant les événements, les expériences, les
-  billets et les comptes professionnels (seulement demandé jusqu'au
-  15 novembre 2026, exigé à partir du 16 novembre 2026) ; un numéro par
-  compte ; Google
-  Firebase Authentication envoie le SMS ; un hachage à clé des numéros des
-  comptes bannis (également points 2, 3.1, 4.2, 5, 12.2, 14, 15.2 et 22.1).
+- Nouveau point 6.5 : un numéro de téléphone mobile vérifié est exigé pour créer
+  un compte depuis le 16 octobre 2026 (numéros des pays européens sauf la Russie
+  et la Biélorussie, du Brésil, des États-Unis, du Canada et du Royaume-Uni) ;
+  les comptes créés avant le 16 octobre 2026 ne sont pas obligés d'en ajouter
+  un ; un numéro par compte ; Google Firebase Authentication envoie le SMS ; un
+  hachage à clé des numéros des comptes bannis (également points 2, 3.1, 4.2,
+  5, 12.2, 14, 15.2 et 22.1).
 - Points 3.1 d et 4.3 : un numéro de contact professionnel facultatif,
   affiché sur la page professionnelle uniquement si l'entreprise l'active.
 - Points 8.2, 8.3 et 8.4 : la pièce d'identité est lue sur votre appareil et
   contrôlée par un vérificateur ; toute image de pièce d'identité (y compris
   une photo tenant le document et la pièce d'identité du propriétaire d'une
   entreprise) est supprimée après l'examen, ou au bout de 7 jours si elle est
-  toujours en attente (vous pouvez la téléverser de nouveau) ; un compte
-  professionnel nécessite uniquement un numéro de téléphone vérifié, la pièce
-  d'identité du propriétaire est facultative ; les informations que vous
-  confirmez sont conservées sous forme chiffrée dans un espace de stockage à
-  accès restreint, uniquement pour vous identifier lorsque la loi l'exige,
-  jusqu'à 6 mois après la clôture du compte (également points 2, 3.1, 4.2,
-  4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 et 22.1).
+  toujours en attente (vous pouvez la téléverser de nouveau) ; la pièce
+  d'identité du propriétaire d'une entreprise est facultative ; les informations
+  que vous confirmez sont conservées sous forme chiffrée dans un espace de
+  stockage à accès restreint, uniquement pour vous identifier lorsque la loi
+  l'exige, jusqu'à 6 mois après la clôture du compte (également
+  points 2, 3.1, 4.2, 4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 et 22.1).
 Précisions pour correspondre au fonctionnement de l'application :
 - Points 2, 5 et 9 : les fonctionnalités d'IA sont la traduction, la lecture
   vocale et la translittération (les réponses suggérées et la décomposition
@@ -1703,9 +1697,8 @@ Précisions pour correspondre au fonctionnement de l'application :
   service de traduction de Google, et l'application peut demander ces
   traductions directement ; traductions de chat conservées et cache anonyme
   des phrases courtes (également point 14).
-- Point 8.1 : une pièce d'identité est facultative partout ; publier dans
-  une communauté et publier ou réserver des expériences nécessitent à la
-  place un numéro de téléphone vérifié (point 6.5).
+- Point 8.1 : une pièce d'identité est facultative partout, y compris pour
+  publier dans une communauté et pour publier ou réserver des expériences.
 - Point 10.2 : un modérateur examine le cas avant que les signalements ne
   cessent d'être traités ; les signalements concernant la sécurité des
   enfants sont toujours traités.
