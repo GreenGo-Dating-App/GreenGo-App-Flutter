@@ -6376,10 +6376,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return '$tierName-Mitgliedschaft aktiv bis $formattedDate$coinsText';
   }
 
@@ -16279,21 +16276,13 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price pro $interval. Verlängert sich automatisch am $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price pro $interval. Gekündigt; Zugang endet am $date.';
   }
 
@@ -19874,9 +19863,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-    String name,
-    String rewards,
-  ) {
+      String name, String rewards) {
     return 'Belohnungen für $name abgeholt! $rewards';
   }
 
@@ -20342,10 +20329,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String profileTravelerActiveSubtitle(
-    String location,
-    int hours,
-    int minutes,
-  ) {
+      String location, int hours, int minutes) {
     return '$location - noch $hours Std. $minutes Min.';
   }
 
@@ -22299,11 +22283,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String supportReportFollowUpDetails(
-    String reason,
-    String message,
-    String user,
-    String date,
-  ) {
+      String reason, String message, String user, String date) {
     return 'Grund: $reason\nGemeldete Nachricht: „$message“\nGemeldeter Nutzer: $user\nGemeldet am: $date';
   }
 
@@ -22645,41 +22625,50 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(achievement, {
-      'first_match': 'Erste Verbindung',
-      'social_butterfly': 'Gesellige Seele',
-      'popular': 'Beliebt',
-      'video_enthusiast': 'Video-Fan',
-      'daily_streak_7': '7-Tage-Serie',
-      'daily_streak_30': '30-Tage-Serie',
-      'other': 'Neuer Erfolg',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      achievement,
+      {
+        'first_match': 'Erste Verbindung',
+        'social_butterfly': 'Gesellige Seele',
+        'popular': 'Beliebt',
+        'video_enthusiast': 'Video-Fan',
+        'daily_streak_7': '7-Tage-Serie',
+        'daily_streak_30': '30-Tage-Serie',
+        'other': 'Neuer Erfolg',
+      },
+    );
     return 'Erfolg freigeschaltet: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(achievement, {
-      'first_match': 'Knüpfe deine erste Verbindung',
-      'social_butterfly': 'Sende 100 Nachrichten',
-      'popular': 'Knüpfe 50 Verbindungen',
-      'video_enthusiast': 'Führe 10 Videoanrufe',
-      'daily_streak_7': 'Melde dich 7 Tage in Folge an',
-      'daily_streak_30': 'Melde dich 30 Tage in Folge an',
-      'other': 'Weiter so!',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      achievement,
+      {
+        'first_match': 'Knüpfe deine erste Verbindung',
+        'social_butterfly': 'Sende 100 Nachrichten',
+        'popular': 'Knüpfe 50 Verbindungen',
+        'video_enthusiast': 'Führe 10 Videoanrufe',
+        'daily_streak_7': 'Melde dich 7 Tage in Folge an',
+        'daily_streak_30': 'Melde dich 30 Tage in Folge an',
+        'other': 'Weiter so!',
+      },
+    );
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(challenge, {
-      'send_5_messages': 'Gesprächsstarter',
-      'get_3_matches': 'Netzwerker',
-      'complete_profile': 'Profil-Perfektionist',
-      'video_call_1': 'Von Angesicht zu Angesicht',
-      'other': 'Tägliche Herausforderung',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      challenge,
+      {
+        'send_5_messages': 'Gesprächsstarter',
+        'get_3_matches': 'Netzwerker',
+        'complete_profile': 'Profil-Perfektionist',
+        'video_call_1': 'Von Angesicht zu Angesicht',
+        'other': 'Tägliche Herausforderung',
+      },
+    );
     return 'Herausforderung geschafft: $_temp0!';
   }
 
@@ -26120,4 +26109,246 @@ class AppLocalizationsDe extends AppLocalizations {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String get businessContactPhoneLabel => 'Geschäftliche Kontaktnummer';
+
+  @override
+  String get businessContactPhoneHelper =>
+      'Optional. Jede Nummer, unter der Kunden anrufen können, auch Festnetz. Sie wird nicht per SMS bestätigt und ist nicht die bestätigte Telefonnummer deines Kontos, die nie angezeigt wird.';
+
+  @override
+  String get businessContactPhoneHint => 'Telefonnummer';
+
+  @override
+  String get businessContactPhoneShowOnStorefront =>
+      'In meinem Schaufenster anzeigen';
+
+  @override
+  String get businessContactPhoneShowHint =>
+      'Wenn aus, siehst nur du diese Nummer.';
+
+  @override
+  String get businessContactPhoneSave => 'Nummer speichern';
+
+  @override
+  String get businessContactPhoneSaved => 'Kontaktnummer gespeichert';
+
+  @override
+  String get businessContactPhoneSaveError =>
+      'Die Kontaktnummer konnte nicht gespeichert werden. Bitte versuche es erneut.';
+
+  @override
+  String get businessContactPhoneInvalid =>
+      'Gib eine gültige Telefonnummer ein';
+
+  @override
+  String get businessContactPhoneStorefrontTitle => 'Kontaktnummer';
+
+  @override
+  String get businessContactPhoneCall => 'Anrufen';
+
+  @override
+  String get identityDetailsTitle => 'Dokumentdaten (optional)';
+
+  @override
+  String get identityDetailsIntro =>
+      'Du kannst die Daten von deinem Dokument eingeben. Ein Prüfer vergleicht sie mit dem Foto. Sie werden verschlüsselt gespeichert und nur auf Anfrage eines Gerichts oder der Polizei verwendet. Das Foto wird nach der Prüfung gelöscht.';
+
+  @override
+  String get identityDetailsAddButton => 'Dokumentdaten hinzufügen (optional)';
+
+  @override
+  String get identityFirstNameLabel => 'Vorname(n)';
+
+  @override
+  String get identitySurnameLabel => 'Nachname';
+
+  @override
+  String get identityDobLabel => 'Geburtsdatum';
+
+  @override
+  String get identityDocTypeLabel => 'Dokumentart';
+
+  @override
+  String get identityDocTypePassport => 'Reisepass';
+
+  @override
+  String get identityDocTypeIdCard => 'Personalausweis';
+
+  @override
+  String get identityDocTypeDrivingLicence => 'Führerschein';
+
+  @override
+  String get identityDocTypeResidencePermit => 'Aufenthaltstitel';
+
+  @override
+  String get identityDocTypeOther => 'Anderes amtliches Dokument';
+
+  @override
+  String get identityIssuingCountryLabel => 'Ausstellungsland';
+
+  @override
+  String get identityDocNumberLabel => 'Dokumentnummer';
+
+  @override
+  String get identityFieldRequired => 'Pflichtfeld';
+
+  @override
+  String get identityDocNumberInvalid =>
+      'Verwende 3 bis 40 Buchstaben oder Ziffern';
+
+  @override
+  String get identitySubmitButton => 'Daten speichern';
+
+  @override
+  String get identitySavedMessage => 'Dokumentdaten gespeichert';
+
+  @override
+  String get identitySaveError =>
+      'Die Daten konnten nicht gespeichert werden. Bitte versuche es erneut.';
+
+  @override
+  String get identityReviewTitle => 'Eingegebene Dokumentdaten';
+
+  @override
+  String get identityReviewHint =>
+      'Vergleiche sie mit dem Foto und korrigiere sie vor der Freigabe. Die Freigabe speichert sie verschlüsselt.';
+
+  @override
+  String get identityReviewNone => 'Es wurden keine Dokumentdaten angegeben.';
+
+  @override
+  String get identityReviewConfirmButton => 'Diese Daten übernehmen';
+
+  @override
+  String get phoneVerifyTitle => 'Telefonnummer bestätigen';
+
+  @override
+  String get phoneVerifyRequiredBody =>
+      'Jedes GreenGo-Konto braucht eine bestätigte Handynummer. Wir senden dir einen Code per SMS. Deine Nummer bleibt privat und wird nie in deinem Profil angezeigt.';
+
+  @override
+  String get phoneVerifyGateBody =>
+      'Bestätige deine Handynummer, um an Events teilzunehmen, Erlebnisse zu buchen, Tickets zu kaufen, Gastgeber zu sein oder Business-Tools zu nutzen. Sie bleibt privat.';
+
+  @override
+  String get phoneVerifyCountryLabel => 'Land';
+
+  @override
+  String get phoneVerifyNumberLabel => 'Handynummer';
+
+  @override
+  String get phoneVerifySendCode => 'Code senden';
+
+  @override
+  String get phoneVerifyCodeLabel => '6-stelliger Code';
+
+  @override
+  String get phoneVerifyConfirm => 'Bestätigen';
+
+  @override
+  String get phoneVerifyResend => 'Code erneut senden';
+
+  @override
+  String phoneVerifyResendIn(int seconds) {
+    return 'Code erneut senden in $seconds s';
+  }
+
+  @override
+  String phoneVerifyCodeSentTo(String phone) {
+    return 'Wir haben einen Code an $phone gesendet';
+  }
+
+  @override
+  String get phoneVerifyChangeNumber => 'Nummer ändern';
+
+  @override
+  String get phoneVerifySuccess => 'Telefonnummer bestätigt';
+
+  @override
+  String phoneVerifyCountryNotListed(String email) {
+    return 'Land nicht dabei? Die Telefonbestätigung ist dort noch nicht verfügbar. Schreib an $email.';
+  }
+
+  @override
+  String phoneVerifyUnsupportedCountry(String email) {
+    return 'Die Telefonbestätigung ist in deinem Land noch nicht verfügbar. Bitte schreib an $email.';
+  }
+
+  @override
+  String get phoneVerifyInvalidNumber =>
+      'Bitte gib eine gültige Handynummer ein.';
+
+  @override
+  String get phoneVerifyAlreadyUsed =>
+      'Diese Nummer wird bereits von einem anderen Konto verwendet.';
+
+  @override
+  String phoneVerifyBlocked(String email) {
+    return 'Diese Nummer kann auf GreenGo nicht verwendet werden. Bitte schreib an $email.';
+  }
+
+  @override
+  String get phoneVerifyTooManyAttempts =>
+      'Zu viele Versuche. Bitte warte ein paar Minuten und versuch es erneut.';
+
+  @override
+  String get phoneVerifyInvalidCode =>
+      'Der Code stimmt nicht. Prüfe die SMS und versuch es erneut.';
+
+  @override
+  String get phoneVerifyCodeExpired =>
+      'Dieser Code ist abgelaufen. Bitte fordere einen neuen an.';
+
+  @override
+  String get phoneVerifyGenericError =>
+      'Wir konnten deine Nummer nicht bestätigen. Bitte versuch es erneut.';
+
+  @override
+  String get phoneVerifySmsNotice =>
+      'Es können die üblichen SMS-Gebühren anfallen.';
+
+  @override
+  String get phoneVerifyBannerTitle => 'Füge deine Telefonnummer hinzu';
+
+  @override
+  String get phoneVerifyBannerBody =>
+      'Bestätige deine Handynummer, um an Events teilzunehmen, Erlebnisse zu buchen und Gastgeber zu sein. Sie bleibt privat.';
+
+  @override
+  String get phoneVerifyBannerAction => 'Jetzt bestätigen';
+
+  @override
+  String get phoneVerifyDismiss => 'Nicht jetzt';
+
+  @override
+  String get phoneVerifyRequiredToContinue =>
+      'Bestätige deine Telefonnummer, um fortzufahren.';
+
+  @override
+  String get phoneVerifyOnboardingOptionalId => 'Ausweisdokument (optional)';
+
+  @override
+  String get phoneVerifyOnboardingOptionalIdBody =>
+      'Optional kannst du ein Foto von dir mit deinem Ausweis hinzufügen, um das Verifiziert-Abzeichen zu beantragen. Das Foto wird nach der Prüfung gelöscht.';
+
+  @override
+  String get phoneVerifyAccountPhone => 'Bestätigte Telefonnummer des Kontos';
+
+  @override
+  String get phoneVerifyAccountPhoneNeeded =>
+      'Bestätige zuerst die Telefonnummer deines Kontos. Sie ist die einzige Identitätsanforderung für ein Business-Konto.';
+
+  @override
+  String get phoneVerifyOwnerDocumentOptional =>
+      'Ausweis des Inhabers (optional)';
+
+  @override
+  String get phoneVerifyBannerTitleOptional =>
+      'Füge deine Telefonnummer hinzu (optional)';
+
+  @override
+  String get phoneVerifyBannerBodyOptional =>
+      'Das hilft, dein Konto zu schützen. Deine Nummer bleibt privat.';
 }

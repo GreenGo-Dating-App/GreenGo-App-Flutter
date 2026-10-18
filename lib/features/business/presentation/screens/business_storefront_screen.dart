@@ -20,6 +20,9 @@ import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../data/services/follow_service.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+import '../../data/business_contact_phone.dart';
 import '../widgets/business_contact_button.dart';
 import '../widgets/business_follow_button.dart';
 import '../widgets/opening_hours_section.dart';
@@ -71,6 +74,20 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
     super.initState();
     _eventsFuture = _loadEvents();
     _communitiesFuture = _loadCommunities();
+    _contactPhoneFuture = BusinessContactPhoneRepository()
+        .publicPhone(widget.business.userId)
+        .catchError((Object _) => null);
+  }
+
+  /// The optional business contact number, only when the business chose
+  /// "Show on my storefront" (never the account's verified phone).
+  late Future<String?> _contactPhoneFuture;
+
+  Future<void> _callBusiness(String phone) async {
+    final uri = Uri(scheme: 'tel', path: phone);
+    try {
+      await launchUrl(uri);
+    } catch (_) {}
   }
 
   /// Decode width (physical px) for an image [logical] dp wide.
@@ -338,6 +355,58 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                       ],
                     ),
                   ],
+                  // Business contact number (tap to call), when shown.
+                  FutureBuilder<String?>(
+                    future: _contactPhoneFuture,
+                    builder: (context, snap) {
+                      final phone = snap.data;
+                      if (phone == null) return const SizedBox.shrink();
+                      return Padding(
+                        padding: const EdgeInsets.only(top: 24),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            _sectionTitle(l10n.businessContactPhoneStorefrontTitle),
+                            const SizedBox(height: 8),
+                            InkWell(
+                              key: const ValueKey('storefront-call-business'),
+                              onTap: () => _callBusiness(phone),
+                              borderRadius:
+                                  BorderRadius.circular(AppDimensions.radiusM),
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 12, vertical: 10),
+                                decoration: BoxDecoration(
+                                  color: AppColors.backgroundCard,
+                                  borderRadius: BorderRadius.circular(
+                                      AppDimensions.radiusM),
+                                  border: Border.all(color: AppColors.divider),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    const Icon(Icons.call,
+                                        size: 18, color: AppColors.richGold),
+                                    const SizedBox(width: 8),
+                                    Text(phone,
+                                        style: const TextStyle(
+                                            color: AppColors.textPrimary,
+                                            fontSize: 14)),
+                                    const SizedBox(width: 8),
+                                    Text(l10n.businessContactPhoneCall,
+                                        style: const TextStyle(
+                                            color: AppColors.richGold,
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.w600)),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      );
+                    },
+                  ),
                   // Address + map (like events), when the business set one.
                   if (widget.business.businessAddress case final a?) ...[
                     const SizedBox(height: 24),

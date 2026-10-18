@@ -167,7 +167,29 @@ service cloud.firestore {
     // going / waitlist on someone else's event, booking consents. Server
     // callables use functions/src/shared/participation.ts.
     function canParticipate(uid) {
-      return baseAccess(uid);
+      return baseAccess(uid) && (uid != request.auth.uid || phoneOk());
+    }
+    // Mandatory verified phone (owner rule 2026-10-17): the Firebase Auth
+    // ID-token claim phone_number exists once an SMS-verified phone
+    // credential is linked (phone sign-in accounts have it from the start).
+    // Required (new accounts only, phoneOk) to join / book (canParticipate),
+    // create events, turn on a business account, request business
+    // verification, post in communities and edit a published paid experience. Server callables:
+    // functions/src/shared/participation.ts assertPhoneVerified.
+    function phoneVerified() {
+      return request.auth != null
+        && request.auth.token.get('phone_number', null) is string
+        && request.auth.token.get('phone_number', '').size() > 0;
+    }
+    // Owner decision 2026-10-17 (final): ONLY accounts created on/after
+    // 16 Oct 2026 must have the phone; older accounts are never required.
+    // Rules cannot see the creation time, so the server writes the marker
+    // phone_required/{uid} for new accounts (onAuthUserCreatedPhoneRequired +
+    // scripts/backfill-phone-required.ts). Callables use the Auth creation
+    // time (functions/src/shared/participation.ts).
+    function phoneOk() {
+      return phoneVerified()
+        || !exists(/databases/$(database)/documents/phone_required/$(request.auth.uid));
     }
     // Caps per rank (-1 = unlimited) = tierLimits.ts / TierEntitlements.
     function tierCapConnects(r) { return r == 0 ? 10 : r == 1 ? 50 : r == 2 ? 200 : -1; }
@@ -387,6 +409,20 @@ service cloud.firestore {
       return !(request.resource.data.get(field, null) is map)
         || request.resource.data.get(field, {}).get(sub, null) == null;
     }
+    // Optional business contact number (owner rule 2026-10-17): any country,
+    // landlines allowed, NOT SMS-verified, never the account's verified phone.
+    // The number lives in profiles_private/{uid}.businessContactPhone; the
+    // public mirror profiles/{uid}.businessContactPhone exists ONLY while
+    // showBusinessPhone == true ("Show on my storefront").
+    function e164Ok(v) {
+      return v is string && v.size() <= 16 && v.matches('^[+][1-9][0-9]{6,14}$');
+    }
+    function businessContactPhoneOk(d) {
+      return (d.get('showBusinessPhone', null) == null || d.showBusinessPhone is bool)
+        && (d.get('businessContactPhone', null) == null
+            || (e164Ok(d.businessContactPhone)
+                && d.get('showBusinessPhone', false) == true));
+    }
     function publicProfileCreateOk() {
       let d = request.resource.data;
       return !d.keys().hasAny(profileServerCoarseKeys())
@@ -405,7 +441,8 @@ service cloud.firestore {
         && profileNestedAbsent('travelerLocation', 'latitude')
         && profileNestedAbsent('travelerLocation', 'longitude')
         && profileNestedAbsent('ageVerification', 'documentHash')
-        && profileNestedAbsent('ageVerification', 'documentDateOfBirth');
+        && profileNestedAbsent('ageVerification', 'documentDateOfBirth')
+        && businessContactPhoneOk(d);
     }
     function publicProfileUpdateOk() {
       let changed = request.resource.data.diff(resource.data).affectedKeys();
@@ -426,7 +463,9 @@ service cloud.firestore {
         && profileNestedKeptOrCleared('travelerLocation', 'latitude')
         && profileNestedKeptOrCleared('travelerLocation', 'longitude')
         && profileNestedKeptOrCleared('ageVerification', 'documentHash')
-        && profileNestedKeptOrCleared('ageVerification', 'documentDateOfBirth');
+        && profileNestedKeptOrCleared('ageVerification', 'documentDateOfBirth')
+        && (!changed.hasAny(['businessContactPhone', 'showBusinessPhone'])
+            || businessContactPhoneOk(request.resource.data));
     }
 
     // ---- PERSONAL PAYMENT LINKS: NO LONGER ACCEPTED (owner rule 2026-10-14) --
@@ -564,7 +603,8 @@ service cloud.firestore {
                     == resource.data.get('isBusiness', false)
                   || (resource.data.get('isBusiness', false) == false
                       && request.resource.data.get('isBusiness', false) == true
-                      && tierRankOf(resource.data) >= 1))
+                      && tierRankOf(resource.data) >= 1
+                      && phoneOk()))
               && (request.resource.data.get('businessSince', null)
                     == resource.data.get('businessSince', null)
                   || resource.data.get('businessSince', null) == null)
@@ -674,7 +714,8 @@ service cloud.firestore {
       // 'sexualOrientation' is deliberately NOT here (removed, audit AS-06).
       return ['location', 'travelerLocation', 'geohash', 'dateOfBirth',
               'email', 'verificationPhone',
-              'verificationPhotoPath', 'privatePhotoUrls', 'updatedAt'];
+              'verificationPhotoPath', 'privatePhotoUrls', 'updatedAt',
+              'businessContactPhone'];
     }
     function privateProfileShapeOk(d) {
       return (!('location' in d) || d.location is map)
@@ -683,7 +724,9 @@ service cloud.firestore {
         && (!('privatePhotoUrls' in d) || d.privatePhotoUrls is list)
         && (!('verificationPhotoPath' in d) || d.verificationPhotoPath == null
             || (d.verificationPhotoPath is string
-                && d.verificationPhotoPath.matches('verifications/' + request.auth.uid + '/.+')));
+                && d.verificationPhotoPath.matches('verifications/' + request.auth.uid + '/.+')))
+        && (!('businessContactPhone' in d) || d.businessContactPhone == null
+            || e164Ok(d.businessContactPhone));
     }
     match /profiles_private/{uid} {
       allow read: if isOwner(uid) || isAdminPanelUser();
@@ -1986,8 +2029,10 @@ service cloud.firestore {
             .data.get('isAgeVerified', false) == true;
       }
       function canPostChat() {
+        // Owner decision 2026-10-17: the ID document is optional; a verified
+        // phone satisfies the publishing requirement too.
         return isMemberOf() &&
-          isAgeVerified() &&
+          (isAgeVerified() || phoneOk()) &&
           myMemberDoc().data.get('isBanned', false) == false &&
           myMemberDoc().data.get('isMuted', false) == false;
       }
@@ -2235,10 +2280,35 @@ service cloud.firestore {
     // Business verification requests. The owner creates/updates ONLY their own
     // pending request; profile-admins read all and set the approved/rejected
     // status (the badge itself is written on the profile doc).
+    // Optional ID-document details (encrypted), their reveal audit log and
+    // the verified-phone index: SERVER ONLY. No client - not the owner, not
+    // an admin-panel client - may read or write them; only the Admin SDK in
+    // functions/src/safety/identityRecords.ts / phone verification does.
+    match /identity_records/{uid} {
+      allow read, write: if false;
+    }
+    match /identity_access_log/{logId} {
+      allow read, write: if false;
+    }
+    match /identity_rate_limits/{key} {
+      allow read, write: if false;
+    }
+    // New-account marker (phone required), server-only.
+    match /phone_required/{uid} {
+      allow read, write: if false;
+    }
+    match /phone_index/{phoneHash} {
+      allow read, write: if false;
+    }
+
     match /business_verification_requests/{userId} {
       allow read: if isOwner(userId) || isProfileAdmin();
       allow create: if isOwner(userId)
-        && request.resource.data.status == 'pending';
+        && request.resource.data.status == 'pending'
+        // Owner decision 2026-10-17: the ONLY identity requirement for a
+        // business is the account's verified phone; the owner ID document
+        // is optional.
+        && phoneOk();
       allow update: if (isOwner(userId) && request.resource.data.status == 'pending')
         || isProfileAdmin();
       allow delete: if false;
@@ -2359,6 +2429,7 @@ service cloud.firestore {
       // Creator must set themselves as organizer.
       allow create: if isSignedIn()
         && request.resource.data.organizerId == request.auth.uid
+        && phoneOk()
         && eventTextOk()
         && !request.resource.data.keys()
               .hasAny(['hiddenByDowngrade', 'preDowngradeStatus', 'hiddenByDowngradeAt'])
@@ -2914,7 +2985,7 @@ service cloud.firestore {
           || (resource.data.status == 'published'
               && (!takesPayment(request.resource.data)
                   || (takesPayment(resource.data)
-                      && hostIdApproved(hostProfileData()))));
+                      && (hostIdApproved(hostProfileData()) || phoneOk()))));
       }
       // Field [f] of the experience is not changed by this write.
       function experienceFieldKept(f) {

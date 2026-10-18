@@ -12,6 +12,8 @@ import '../bloc/verification_admin_event.dart';
 import '../bloc/verification_admin_state.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/security/viewer_watermark.dart';
+import '../../../safety/data/services/identity_details_service.dart';
+import '../../../safety/presentation/widgets/identity_details_form.dart';
 
 class VerificationAdminScreen extends StatefulWidget {
 
@@ -344,7 +346,12 @@ class _PendingVerificationsTabState extends State<_PendingVerificationsTab> {
                   isLoading: isCurrentLoading,
                   isSelected: isSelected,
                   onToggleSelect: () => _toggleSelection(profile.userId),
-                  onApprove: () {
+                  onApprove: () async {
+                    // Confirm the (corrected) ID details first; they are
+                    // optional, so a failure never blocks the photo decision.
+                    await _decideIdentityDetails(context, profile.userId,
+                        approve: true);
+                    if (!context.mounted) return;
                     context.read<VerificationAdminBloc>().add(
                           ApproveVerification(
                             userId: profile.userId,
@@ -352,7 +359,10 @@ class _PendingVerificationsTabState extends State<_PendingVerificationsTab> {
                           ),
                         );
                   },
-                  onReject: (reason) {
+                  onReject: (reason) async {
+                    await _decideIdentityDetails(context, profile.userId,
+                        approve: false);
+                    if (!context.mounted) return;
                     context.read<VerificationAdminBloc>().add(
                           RejectVerification(
                             userId: profile.userId,
@@ -741,6 +751,10 @@ class _VerificationCard extends StatelessWidget {
             },
           ),
 
+          // Optional typed document details: check against the photo, correct,
+          // and they are stored encrypted on Approve (identity-records.md).
+          _IdentityReviewSection(uid: profile.userId),
+
           // Action buttons
           Padding(
             padding: const EdgeInsets.all(AppDimensions.paddingM),
@@ -905,3 +919,99 @@ class _VerificationCard extends StatelessWidget {
   }
 }
 
+
+// ======================== Optional ID details ========================
+
+/// Corrections a reviewer confirmed with "Use these details", by uid. Read
+/// by [_decideIdentityDetails] on Approve.
+final Map<String, IdentityDetails> _identityCorrections = {};
+
+/// Visible for tests: the service the review section and decisions use.
+IdentityDetailsService identityReviewService = IdentityDetailsService();
+
+Future<void> _decideIdentityDetails(
+  BuildContext context,
+  String uid, {
+  required bool approve,
+}) async {
+  try {
+    await identityReviewService.confirm(
+      uid,
+      approve: approve,
+      fields: approve ? _identityCorrections[uid] : null,
+    );
+    _identityCorrections.remove(uid);
+  } catch (e) {
+    // No record / no reviewer role / key unavailable: the details stay
+    // pending (deleted by the sweep after 30 days); the photo decision goes on.
+    reportUserError(e);
+  }
+}
+
+class _IdentityReviewSection extends StatefulWidget {
+  const _IdentityReviewSection({required this.uid});
+  final String uid;
+
+  @override
+  State<_IdentityReviewSection> createState() => _IdentityReviewSectionState();
+}
+
+class _IdentityReviewSectionState extends State<_IdentityReviewSection> {
+  late final Future<IdentityDetails?> _future =
+      identityReviewService.getForReview(widget.uid).catchError((Object e) {
+    reportUserError(e);
+    return null;
+  });
+  bool _confirmed = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    return FutureBuilder<IdentityDetails?>(
+      future: _future,
+      builder: (context, snap) {
+        if (snap.connectionState != ConnectionState.done) {
+          return const SizedBox.shrink();
+        }
+        final details = snap.data;
+        return Padding(
+          padding: const EdgeInsets.symmetric(horizontal: AppDimensions.paddingM),
+          child: Theme(
+            data: Theme.of(context).copyWith(
+              inputDecorationTheme: const InputDecorationTheme(isDense: true),
+            ),
+            child: ExpansionTile(
+              tilePadding: EdgeInsets.zero,
+              initiallyExpanded: details != null,
+              leading: Icon(
+                _confirmed ? Icons.check_circle : Icons.badge_outlined,
+                color: _confirmed ? AppColors.successGreen : AppColors.richGold,
+              ),
+              title: Text(
+                l10n.identityReviewTitle,
+                style: const TextStyle(color: AppColors.textPrimary, fontSize: 14),
+              ),
+              subtitle: Text(
+                details == null ? l10n.identityReviewNone : l10n.identityReviewHint,
+                style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
+              ),
+              children: [
+                if (details != null)
+                  IdentityDetailsForm(
+                    initial: details,
+                    showIntro: false,
+                    submitLabel: l10n.identityReviewConfirmButton,
+                    onSubmit: (d) async {
+                      _identityCorrections[widget.uid] = d;
+                      setState(() => _confirmed = true);
+                    },
+                  ),
+                const SizedBox(height: 8),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+}

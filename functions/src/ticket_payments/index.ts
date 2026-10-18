@@ -11,6 +11,7 @@ import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { defineSecret } from 'firebase-functions/params';
 import * as accounts from './accounts';
 import * as orders from './orders';
+import { assertPhoneVerified } from '../shared/participation';
 import { handleMercadoPagoWebhook, handleStripeConnectWebhook } from './webhooks';
 
 const STRIPE_SECRET_KEY = defineSecret('STRIPE_SECRET_KEY');
@@ -19,10 +20,16 @@ const CALL_STRIPE = { ...CALL, secrets: [STRIPE_SECRET_KEY] };
 
 type Impl = (uid: string, data: any, email: string | null) => Promise<Record<string, unknown>>;
 
-function callable(opts: typeof CALL | typeof CALL_STRIPE, impl: Impl) {
+function callable(
+  opts: typeof CALL | typeof CALL_STRIPE,
+  impl: Impl,
+  requirePhone?: (data: any) => boolean,
+) {
   return onCall(opts, async (req: CallableRequest<any>) => {
     const uid = req.auth?.uid;
     if (!uid) throw new HttpsError('unauthenticated', 'unauthenticated', { code: 'unauthenticated' });
+    // Owner rule 2026-10-17: buying tickets needs a verified phone.
+    if (requirePhone && requirePhone(req.data ?? {})) await assertPhoneVerified(req.auth?.token as any, uid);
     const email = typeof req.auth?.token?.email === 'string' ? req.auth.token.email : null;
     try {
       return await impl(uid, req.data ?? {}, email);
@@ -41,7 +48,14 @@ export const startMercadoPagoOnboarding = callable(CALL, (uid, data) => accounts
 export const refreshPaymentAccount = callable(CALL_STRIPE, (uid) => accounts.refreshPaymentAccount(uid));
 
 // Buyer.
-export const createTicketCheckout = callable(CALL_STRIPE, (uid, data, email) => orders.createTicketCheckout(uid, data, email));
+// Phone gate (2026-10-17) for event tickets only: kind 'experience' pays an
+// EXISTING booking (the booking was the participation). Guests (no account)
+// reach orders.createTicketCheckout through guestBooking, never this wrapper.
+export const createTicketCheckout = callable(
+  CALL_STRIPE,
+  (uid, data, email) => orders.createTicketCheckout(uid, data, email),
+  (data) => data?.kind !== 'experience',
+);
 export const syncTicketOrder = callable(CALL_STRIPE, (uid, data) => orders.syncTicketOrder(uid, data));
 export const cancelTicketOrder = callable(CALL_STRIPE, (uid, data) => orders.cancelTicketOrder(uid, data));
 // LEGACY link orders still open (no new link orders since 2026-10-14).

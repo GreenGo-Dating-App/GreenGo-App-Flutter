@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../../core/utils/phone_verification_gate.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -21,6 +22,7 @@ import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import 'business_verification_request_screen.dart';
+import '../widgets/business_contact_phone_section.dart';
 
 /// Business / venue account screen.
 ///
@@ -255,6 +257,10 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
     // Already a business (or a request to turn it off): nothing to do - the
     // conversion is permanent.
     if (_isSaving || !value || _isBusiness) return;
+    // Owner decision 2026-10-17: the business account needs ONLY the
+    // account's verified phone (no ID document). Rules: phoneOk().
+    if (!await PhoneVerificationGate.ensureVerified(context)) return;
+    if (!mounted) return;
     final uid = widget.profile.userId;
     final tier = widget.profile.effectiveTier;
     final l10n = AppLocalizations.of(context)!;
@@ -334,7 +340,7 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
     }
   }
 
-  /// Opens the full verification-request form (phone OTP, business & legal name,
+  /// Opens the full verification-request form (account phone, business & legal name,
   /// owner ID document, optional website, notes). On a successful submission the
   /// request becomes pending. Admin approval happens elsewhere. Disabled when
   /// already verified or a request is already pending.
@@ -535,6 +541,13 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
                 _fieldLabel(l10n.businessCategoryLabel),
                 const SizedBox(height: 4),
                 _buildCategoryGroups(),
+                const SizedBox(height: 24),
+                // Optional business contact number (not the verified account
+                // phone; private unless shown on the storefront).
+                BusinessContactPhoneSection(
+                  userId: widget.profile.userId,
+                  defaultCountry: widget.profile.primaryOrigin,
+                ),
                 const SizedBox(height: 24),
                 // Verified status (badge is admin-granted; user can REQUEST it).
                 Row(

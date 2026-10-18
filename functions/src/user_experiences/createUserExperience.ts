@@ -26,6 +26,7 @@
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
+import { assertPhoneVerified, identityRequirementMet } from '../shared/participation';
 import { effectiveTier, hasBaseAccess, isBusinessActive, isProfileAdmin } from '../shared/effectiveTier';
 import { moderateExperienceText } from './moderation';
 import { maxExperiencesFor, validateExperiencePayload } from './validation';
@@ -50,6 +51,11 @@ export const createUserExperience = onCall(
   async (request) => {
     const uid = request.auth?.uid;
     if (!uid) throw new HttpsError('unauthenticated', 'Sign in required.');
+    // Owner rule 2026-10-17: hosting needs a verified phone number.
+    await assertPhoneVerified(request.auth?.token as any, uid);
+    // Identity requirement (2026-10-17): verified phone, or an account created
+    // before 16 Oct 2026 (never required). The ID document is optional.
+    const phoneVerified = await identityRequirementMet(request.auth?.token as any, uid);
 
     const v = validateExperiencePayload(request.data as Record<string, unknown>);
     if (!v.ok) {
@@ -119,7 +125,7 @@ export const createUserExperience = onCall(
 
       // Phase 1 safety: ID document uploaded to create; agreement + approved
       // document (+ new-host paid limit) to publish a listing taking money.
-      const blocked = createBlockReason(profile);
+      const blocked = createBlockReason(profile, { phoneVerified });
       if (blocked) throw safetyError(blocked);
       // Only an ACTIVE business account may create a PAID listing (or one
       // carrying a payment link). Free listings: everyone.

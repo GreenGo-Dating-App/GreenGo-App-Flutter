@@ -15,6 +15,7 @@ import {
   onDocumentWritten,
 } from 'firebase-functions/v2/firestore';
 import * as svc from './service';
+import { assertPhoneVerified } from '../shared/participation';
 import * as availability from './availability';
 import {
   handleGuestReviewWrite,
@@ -28,10 +29,13 @@ const TRIGGER_OPTS = { memory: '512MiB' as const, timeoutSeconds: 120 };
 
 type Impl = (uid: string, data: any) => Promise<Record<string, unknown>>;
 
-function callable(impl: Impl) {
+function callable(impl: Impl, opts: { requirePhone?: boolean } = {}) {
   return onCall(CALL_OPTS, async (req: CallableRequest<any>) => {
     const uid = req.auth?.uid;
     if (!uid) throw new HttpsError('unauthenticated', 'Sign in required.', { code: 'unauthenticated' });
+    // Owner rule 2026-10-17: booking needs a verified phone (guest bookings
+    // run through guestBooking -> svc.createBooking, never this wrapper).
+    if (opts.requirePhone) await assertPhoneVerified(req.auth?.token as any, uid);
     try {
       return await impl(uid, req.data ?? {});
     } catch (e) {
@@ -43,7 +47,7 @@ function callable(impl: Impl) {
 }
 
 // Callables
-export const createBooking = callable(svc.createBooking);
+export const createBooking = callable(svc.createBooking, { requirePhone: true });
 export const getSlotAvailability = callable(svc.getSlotAvailability);
 export const respondToBookingRequest = callable(svc.respondToBookingRequest);
 export const cancelBooking = callable(svc.cancelBooking);

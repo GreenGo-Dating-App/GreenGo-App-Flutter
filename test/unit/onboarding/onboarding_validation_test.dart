@@ -108,10 +108,22 @@ void main() {
       expect(state(OnboardingStep.verification).canProceedToNext, isFalse);
     });
 
-    test('allowed with a verification photo', () {
+    // Owner rule 2026-10-17: the phone is mandatory, the ID photo optional.
+    test('blocked with only a verification photo (phone is mandatory)', () {
       expect(
         state(OnboardingStep.verification,
                 verificationPhotoUrl: 'https://v/id.png')
+            .canProceedToNext,
+        isFalse,
+      );
+    });
+
+    test('allowed with a verified phone plus the optional photo', () {
+      expect(
+        state(OnboardingStep.verification,
+                verificationPhotoUrl: 'https://v/id.png',
+                verificationMethod: 'phone',
+                verificationPhone: '+351912345678')
             .canProceedToNext,
         isTrue,
       );

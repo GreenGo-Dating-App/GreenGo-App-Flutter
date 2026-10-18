@@ -77,6 +77,8 @@ const Set<String> kOwnerWritablePrivateFields = {
   kVerificationPhotoPathField,
   'privatePhotoUrls',
   'updatedAt',
+  // Optional business contact number (business_contact_phone.dart).
+  'businessContactPhone',
 };
 
 DocumentReference<Map<String, dynamic>> privateProfileRef(

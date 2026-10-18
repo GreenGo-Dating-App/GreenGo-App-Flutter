@@ -6373,10 +6373,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Membresía $tierName activa hasta $formattedDate$coinsText';
   }
 
@@ -16250,21 +16247,13 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Se renueva automáticamente el $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Cancelada; el acceso termina el $date.';
   }
 
@@ -19839,9 +19828,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-    String name,
-    String rewards,
-  ) {
+      String name, String rewards) {
     return '¡Recompensas de $name reclamadas! $rewards';
   }
 
@@ -20308,10 +20295,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String profileTravelerActiveSubtitle(
-    String location,
-    int hours,
-    int minutes,
-  ) {
+      String location, int hours, int minutes) {
     return '$location - quedan $hours h $minutes min';
   }
 
@@ -22258,11 +22242,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String supportReportFollowUpDetails(
-    String reason,
-    String message,
-    String user,
-    String date,
-  ) {
+      String reason, String message, String user, String date) {
     return 'Motivo: $reason\nMensaje denunciado: «$message»\nUsuario denunciado: $user\nDenunciado el: $date';
   }
 
@@ -22600,41 +22580,50 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(achievement, {
-      'first_match': 'Primera conexión',
-      'social_butterfly': 'Mariposa social',
-      'popular': 'Popular',
-      'video_enthusiast': 'Entusiasta del vídeo',
-      'daily_streak_7': 'Racha de 7 días',
-      'daily_streak_30': 'Racha de 30 días',
-      'other': 'Nuevo logro',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      achievement,
+      {
+        'first_match': 'Primera conexión',
+        'social_butterfly': 'Mariposa social',
+        'popular': 'Popular',
+        'video_enthusiast': 'Entusiasta del vídeo',
+        'daily_streak_7': 'Racha de 7 días',
+        'daily_streak_30': 'Racha de 30 días',
+        'other': 'Nuevo logro',
+      },
+    );
     return 'Logro desbloqueado: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(achievement, {
-      'first_match': 'Haz tu primera conexión',
-      'social_butterfly': 'Envía 100 mensajes',
-      'popular': 'Haz 50 conexiones',
-      'video_enthusiast': 'Completa 10 videollamadas',
-      'daily_streak_7': 'Inicia sesión 7 días seguidos',
-      'daily_streak_30': 'Inicia sesión 30 días seguidos',
-      'other': '¡Sigue así!',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      achievement,
+      {
+        'first_match': 'Haz tu primera conexión',
+        'social_butterfly': 'Envía 100 mensajes',
+        'popular': 'Haz 50 conexiones',
+        'video_enthusiast': 'Completa 10 videollamadas',
+        'daily_streak_7': 'Inicia sesión 7 días seguidos',
+        'daily_streak_30': 'Inicia sesión 30 días seguidos',
+        'other': '¡Sigue así!',
+      },
+    );
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(challenge, {
-      'send_5_messages': 'Iniciador de conversaciones',
-      'get_3_matches': 'Conector',
-      'complete_profile': 'Perfil perfecto',
-      'video_call_1': 'Cara a cara',
-      'other': 'Reto diario',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      challenge,
+      {
+        'send_5_messages': 'Iniciador de conversaciones',
+        'get_3_matches': 'Conector',
+        'complete_profile': 'Perfil perfecto',
+        'video_call_1': 'Cara a cara',
+        'other': 'Reto diario',
+      },
+    );
     return 'Reto completado: $_temp0!';
   }
 
@@ -26056,4 +26045,244 @@ class AppLocalizationsEs extends AppLocalizations {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String get businessContactPhoneLabel => 'Número de contacto del negocio';
+
+  @override
+  String get businessContactPhoneHelper =>
+      'Opcional. Cualquier número al que puedan llamar los clientes, incluido un fijo. No se verifica por SMS y no es el teléfono verificado de tu cuenta, que nunca se muestra.';
+
+  @override
+  String get businessContactPhoneHint => 'Número de teléfono';
+
+  @override
+  String get businessContactPhoneShowOnStorefront => 'Mostrar en mi escaparate';
+
+  @override
+  String get businessContactPhoneShowHint =>
+      'Si está desactivado, solo tú ves este número.';
+
+  @override
+  String get businessContactPhoneSave => 'Guardar número';
+
+  @override
+  String get businessContactPhoneSaved => 'Número de contacto guardado';
+
+  @override
+  String get businessContactPhoneSaveError =>
+      'No se pudo guardar el número de contacto. Inténtalo de nuevo.';
+
+  @override
+  String get businessContactPhoneInvalid =>
+      'Introduce un número de teléfono válido';
+
+  @override
+  String get businessContactPhoneStorefrontTitle => 'Número de contacto';
+
+  @override
+  String get businessContactPhoneCall => 'Llamar';
+
+  @override
+  String get identityDetailsTitle => 'Datos del documento (opcional)';
+
+  @override
+  String get identityDetailsIntro =>
+      'Puedes escribir los datos impresos en tu documento. Un revisor los comprueba con la foto. Se guardan cifrados y solo se usan si un tribunal o la policía los solicitan. La foto se elimina tras la revisión.';
+
+  @override
+  String get identityDetailsAddButton =>
+      'Añadir datos del documento (opcional)';
+
+  @override
+  String get identityFirstNameLabel => 'Nombre(s)';
+
+  @override
+  String get identitySurnameLabel => 'Apellido(s)';
+
+  @override
+  String get identityDobLabel => 'Fecha de nacimiento';
+
+  @override
+  String get identityDocTypeLabel => 'Tipo de documento';
+
+  @override
+  String get identityDocTypePassport => 'Pasaporte';
+
+  @override
+  String get identityDocTypeIdCard => 'Documento de identidad';
+
+  @override
+  String get identityDocTypeDrivingLicence => 'Permiso de conducir';
+
+  @override
+  String get identityDocTypeResidencePermit => 'Permiso de residencia';
+
+  @override
+  String get identityDocTypeOther => 'Otro documento oficial';
+
+  @override
+  String get identityIssuingCountryLabel => 'País de emisión';
+
+  @override
+  String get identityDocNumberLabel => 'Número del documento';
+
+  @override
+  String get identityFieldRequired => 'Obligatorio';
+
+  @override
+  String get identityDocNumberInvalid => 'Usa de 3 a 40 letras o dígitos';
+
+  @override
+  String get identitySubmitButton => 'Guardar datos';
+
+  @override
+  String get identitySavedMessage => 'Datos del documento guardados';
+
+  @override
+  String get identitySaveError =>
+      'No se pudieron guardar los datos. Inténtalo de nuevo.';
+
+  @override
+  String get identityReviewTitle => 'Datos del documento escritos';
+
+  @override
+  String get identityReviewHint =>
+      'Compruébalos con la foto y corrígelos antes de aprobar. Al aprobar se guardan cifrados.';
+
+  @override
+  String get identityReviewNone => 'No se proporcionaron datos del documento.';
+
+  @override
+  String get identityReviewConfirmButton => 'Usar estos datos';
+
+  @override
+  String get phoneVerifyTitle => 'Verifica tu teléfono';
+
+  @override
+  String get phoneVerifyRequiredBody =>
+      'Toda cuenta de GreenGo necesita un número de móvil verificado. Te enviamos un código por SMS. Tu número es privado y nunca se muestra en tu perfil.';
+
+  @override
+  String get phoneVerifyGateBody =>
+      'Verifica tu número de móvil para unirte a eventos, reservar experiencias, comprar entradas, organizar o usar las herramientas de empresa. Es privado.';
+
+  @override
+  String get phoneVerifyCountryLabel => 'País';
+
+  @override
+  String get phoneVerifyNumberLabel => 'Número de móvil';
+
+  @override
+  String get phoneVerifySendCode => 'Enviar código';
+
+  @override
+  String get phoneVerifyCodeLabel => 'Código de 6 dígitos';
+
+  @override
+  String get phoneVerifyConfirm => 'Verificar';
+
+  @override
+  String get phoneVerifyResend => 'Reenviar código';
+
+  @override
+  String phoneVerifyResendIn(int seconds) {
+    return 'Reenviar código en $seconds s';
+  }
+
+  @override
+  String phoneVerifyCodeSentTo(String phone) {
+    return 'Enviamos un código a $phone';
+  }
+
+  @override
+  String get phoneVerifyChangeNumber => 'Cambiar número';
+
+  @override
+  String get phoneVerifySuccess => 'Número de teléfono verificado';
+
+  @override
+  String phoneVerifyCountryNotListed(String email) {
+    return '¿Tu país no aparece? La verificación por teléfono aún no está disponible allí. Escribe a $email.';
+  }
+
+  @override
+  String phoneVerifyUnsupportedCountry(String email) {
+    return 'La verificación por teléfono aún no está disponible en tu país. Escribe a $email.';
+  }
+
+  @override
+  String get phoneVerifyInvalidNumber => 'Introduce un número de móvil válido.';
+
+  @override
+  String get phoneVerifyAlreadyUsed => 'Este número ya lo usa otra cuenta.';
+
+  @override
+  String phoneVerifyBlocked(String email) {
+    return 'Este número no se puede usar en GreenGo. Escribe a $email.';
+  }
+
+  @override
+  String get phoneVerifyTooManyAttempts =>
+      'Demasiados intentos. Espera unos minutos y vuelve a intentarlo.';
+
+  @override
+  String get phoneVerifyInvalidCode =>
+      'El código no es correcto. Revisa el SMS e inténtalo de nuevo.';
+
+  @override
+  String get phoneVerifyCodeExpired =>
+      'Este código ha caducado. Solicita uno nuevo.';
+
+  @override
+  String get phoneVerifyGenericError =>
+      'No pudimos verificar tu número. Inténtalo de nuevo.';
+
+  @override
+  String get phoneVerifySmsNotice =>
+      'Pueden aplicarse tarifas estándar de SMS.';
+
+  @override
+  String get phoneVerifyBannerTitle => 'Añade tu número de teléfono';
+
+  @override
+  String get phoneVerifyBannerBody =>
+      'Verifica tu número de móvil para unirte a eventos, reservar experiencias y organizar. Es privado.';
+
+  @override
+  String get phoneVerifyBannerAction => 'Verificar ahora';
+
+  @override
+  String get phoneVerifyDismiss => 'Ahora no';
+
+  @override
+  String get phoneVerifyRequiredToContinue =>
+      'Verifica tu número de teléfono para continuar.';
+
+  @override
+  String get phoneVerifyOnboardingOptionalId =>
+      'Documento de identidad (opcional)';
+
+  @override
+  String get phoneVerifyOnboardingOptionalIdBody =>
+      'Si quieres, añade una foto tuya sosteniendo tu documento para solicitar la insignia de Verificado. La foto se elimina tras la revisión.';
+
+  @override
+  String get phoneVerifyAccountPhone => 'Teléfono verificado de la cuenta';
+
+  @override
+  String get phoneVerifyAccountPhoneNeeded =>
+      'Primero verifica el teléfono de tu cuenta. Es el único requisito de identidad para una cuenta de empresa.';
+
+  @override
+  String get phoneVerifyOwnerDocumentOptional =>
+      'Documento de identidad del titular (opcional)';
+
+  @override
+  String get phoneVerifyBannerTitleOptional =>
+      'Añade tu número de teléfono (opcional)';
+
+  @override
+  String get phoneVerifyBannerBodyOptional =>
+      'Ayuda a mantener tu cuenta segura. Tu número es privado.';
 }

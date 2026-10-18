@@ -59,7 +59,7 @@ async function clearAll() {
   });
 }
 
-const call = (fn: any, data: any, uid: string) => (fft.wrap(fn) as any)({ data, auth: { uid, token: {} } });
+const call = (fn: any, data: any, uid: string) => (fft.wrap(fn) as any)({ data, auth: { uid, token: { phone_number: '+351910000000' } } });
 async function refused(p: Promise<any>): Promise<any> {
   try { await p; } catch (e: any) { return { code: e.code, reason: e.details?.code ?? e.message }; }
   throw new Error('expected a refusal');
@@ -68,7 +68,7 @@ async function refused(p: Promise<any>): Promise<any> {
 function idToken(uid: string): string {
   const b = (o: any) => Buffer.from(JSON.stringify(o)).toString('base64url');
   const now = Math.floor(Date.now() / 1000);
-  return `${b({ alg: 'none', typ: 'JWT' })}.${b({ iss: `https://securetoken.google.com/${PROJECT}`, aud: PROJECT, auth_time: now, user_id: uid, sub: uid, iat: now, exp: now + 3600, firebase: { sign_in_provider: 'password' } })}.`;
+  return `${b({ alg: 'none', typ: 'JWT' })}.${b({ iss: `https://securetoken.google.com/${PROJECT}`, aud: PROJECT, auth_time: now, user_id: uid, sub: uid, iat: now, exp: now + 3600, phone_number: '+351910000000', firebase: { sign_in_provider: 'password' } })}.`;
 }
 function toValue(v: any): any {
   if (v === null) return { nullValue: null };

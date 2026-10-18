@@ -6,11 +6,11 @@ import 'package:greengo_chat/generated/app_localizations.dart';
 
 import '../support/profile_fixtures.dart';
 
-/// The app theme gives buttons `minimumSize: Size(double.infinity, ...)`.
-/// Next to the phone field (in a Row) that squeezed the field to almost no
-/// width; the "Send code" button must keep its own size.
+/// Owner decision 2026-10-17: the business verification request needs ONLY
+/// the account's verified phone (no separate OTP field, no mandatory ID
+/// document). Without a verified phone the screen asks to verify it first.
 void main() {
-  testWidgets('phone field keeps a usable width on a phone screen',
+  testWidgets('asks for the account phone; owner ID is optional',
       (tester) async {
     tester.view.physicalSize = const Size(360, 800);
     tester.view.devicePixelRatio = 1;
@@ -25,9 +25,8 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(tester.takeException(), isNull);
-    final field = find.byKey(const ValueKey('verify_field_phone'));
-    expect(field, findsOneWidget);
-    expect(tester.getSize(field).width, greaterThan(180));
-    expect(find.text('Send code'), findsOneWidget);
+    expect(find.byKey(const ValueKey('verify_field_phone')), findsNothing);
+    expect(find.byKey(const ValueKey('business-verify-phone-needed')), findsOneWidget);
+    expect(find.text('Owner ID document (optional)', findRichText: true), findsOneWidget);
   });
 }

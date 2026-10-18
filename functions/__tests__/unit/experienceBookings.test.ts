@@ -428,7 +428,9 @@ describe('createBooking', () => {
 
     db.seed(`profiles/${GUEST2}`, { ...BASE });
     db.seed(`user_experiences/${EXP}/slots/${SLOT}`, { start: ts(T0 + D * 10), end: ts(T0 + D * 10 + H), capacity: 9, bookedCount: 0, status: 'open' });
-    await expectCode(book(GUEST2), 'id_document_required');
+    // 2026-10-17: the ID document is optional (no 'id_document_required');
+    // the phone of NEW accounts is checked by the createBooking wrapper.
+    await expect(book(GUEST2)).rejects.not.toMatchObject({ details: { code: 'id_document_required' } });
 
     db.seed(`profiles/${GUEST2}`, { ...BASE, isAgeVerified: true });
     db.seed(`profiles/${HOST}`, { ...HOST_BIZ, ageVerification: { status: 'pending' } });

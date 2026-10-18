@@ -67,7 +67,7 @@ import 'app_localizations_pt.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -90,11 +90,11 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-        delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ];
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -104,7 +104,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('it'),
     Locale('pt'),
-    Locale('pt', 'BR'),
+    Locale('pt', 'BR')
   ];
 
   /// No description provided for @culturalPassportTitle.
@@ -11374,10 +11374,7 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{tierName} membership active until {formattedDate}{coinsText}'**
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  );
+      String tierName, String formattedDate, String coinsText);
 
   /// No description provided for @membershipActivatedTitle.
   ///
@@ -28298,22 +28295,14 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Renews automatically on {date}.'**
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  );
+      String plan, String price, String interval, String date);
 
   /// Web (Stripe) subscription cancelled at period end
   ///
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Cancelled; access ends on {date}.'**
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  );
+      String plan, String price, String interval, String date);
 
   /// No description provided for @billingIntervalMonth.
   ///
@@ -38316,11 +38305,7 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reason: {reason}\nReported message: \"{message}\"\nReported user: {user}\nReported at: {date}'**
   String supportReportFollowUpDetails(
-    String reason,
-    String message,
-    String user,
-    String date,
-  );
+      String reason, String message, String user, String date);
 
   /// No description provided for @supportChatWithGreenGoSubject.
   ///
@@ -44195,6 +44180,420 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{km} km'**
   String distanceKmPrecise(String km);
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Business contact number'**
+  String get businessContactPhoneLabel;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Optional. Any number customers can call, landlines included. It is not verified by SMS and it is not your account\'s verified phone number, which is never shown.'**
+  String get businessContactPhoneHelper;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Phone number'**
+  String get businessContactPhoneHint;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Show on my storefront'**
+  String get businessContactPhoneShowOnStorefront;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'When off, only you can see this number.'**
+  String get businessContactPhoneShowHint;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Save number'**
+  String get businessContactPhoneSave;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Contact number saved'**
+  String get businessContactPhoneSaved;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Could not save the contact number. Please try again.'**
+  String get businessContactPhoneSaveError;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a valid phone number'**
+  String get businessContactPhoneInvalid;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Contact number'**
+  String get businessContactPhoneStorefrontTitle;
+
+  /// Optional business contact number (Business Center / storefront).
+  ///
+  /// In en, this message translates to:
+  /// **'Call'**
+  String get businessContactPhoneCall;
+
+  /// Title of the optional ID-document details sheet
+  ///
+  /// In en, this message translates to:
+  /// **'Document details (optional)'**
+  String get identityDetailsTitle;
+
+  /// Explains what happens with optional ID details
+  ///
+  /// In en, this message translates to:
+  /// **'You can type the details printed on your document. A reviewer checks them against the photo. They are stored encrypted and used only if a court or the police request it. The photo is deleted after the review.'**
+  String get identityDetailsIntro;
+
+  /// Button next to an ID upload
+  ///
+  /// In en, this message translates to:
+  /// **'Add document details (optional)'**
+  String get identityDetailsAddButton;
+
+  /// Field label
+  ///
+  /// In en, this message translates to:
+  /// **'First name(s)'**
+  String get identityFirstNameLabel;
+
+  /// Field label
+  ///
+  /// In en, this message translates to:
+  /// **'Surname'**
+  String get identitySurnameLabel;
+
+  /// Field label
+  ///
+  /// In en, this message translates to:
+  /// **'Date of birth'**
+  String get identityDobLabel;
+
+  /// Field label
+  ///
+  /// In en, this message translates to:
+  /// **'Document type'**
+  String get identityDocTypeLabel;
+
+  /// Document type
+  ///
+  /// In en, this message translates to:
+  /// **'Passport'**
+  String get identityDocTypePassport;
+
+  /// Document type
+  ///
+  /// In en, this message translates to:
+  /// **'Identity card'**
+  String get identityDocTypeIdCard;
+
+  /// Document type
+  ///
+  /// In en, this message translates to:
+  /// **'Driving licence'**
+  String get identityDocTypeDrivingLicence;
+
+  /// Document type
+  ///
+  /// In en, this message translates to:
+  /// **'Residence permit'**
+  String get identityDocTypeResidencePermit;
+
+  /// Document type
+  ///
+  /// In en, this message translates to:
+  /// **'Other official document'**
+  String get identityDocTypeOther;
+
+  /// Field label
+  ///
+  /// In en, this message translates to:
+  /// **'Issuing country'**
+  String get identityIssuingCountryLabel;
+
+  /// Field label
+  ///
+  /// In en, this message translates to:
+  /// **'Document number'**
+  String get identityDocNumberLabel;
+
+  /// Validation error
+  ///
+  /// In en, this message translates to:
+  /// **'Required'**
+  String get identityFieldRequired;
+
+  /// Validation error
+  ///
+  /// In en, this message translates to:
+  /// **'Use 3 to 40 letters or digits'**
+  String get identityDocNumberInvalid;
+
+  /// Submit button
+  ///
+  /// In en, this message translates to:
+  /// **'Save details'**
+  String get identitySubmitButton;
+
+  /// Shown after saving
+  ///
+  /// In en, this message translates to:
+  /// **'Document details saved'**
+  String get identitySavedMessage;
+
+  /// Save failed
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t save the details. Please try again.'**
+  String get identitySaveError;
+
+  /// Admin review section title
+  ///
+  /// In en, this message translates to:
+  /// **'Typed document details'**
+  String get identityReviewTitle;
+
+  /// Admin review hint
+  ///
+  /// In en, this message translates to:
+  /// **'Check them against the photo and correct them before approving. Approving stores them encrypted.'**
+  String get identityReviewHint;
+
+  /// Admin review: none
+  ///
+  /// In en, this message translates to:
+  /// **'No document details were provided.'**
+  String get identityReviewNone;
+
+  /// Admin: confirm corrected details
+  ///
+  /// In en, this message translates to:
+  /// **'Use these details'**
+  String get identityReviewConfirmButton;
+
+  /// Title of the phone verification step / sheet
+  ///
+  /// In en, this message translates to:
+  /// **'Verify your phone'**
+  String get phoneVerifyTitle;
+
+  /// Why the phone is required (onboarding)
+  ///
+  /// In en, this message translates to:
+  /// **'Every GreenGo account needs a verified mobile number. We send you a code by SMS. Your number stays private and is never shown on your profile.'**
+  String get phoneVerifyRequiredBody;
+
+  /// Body of the verify-phone gate sheet
+  ///
+  /// In en, this message translates to:
+  /// **'Verify your mobile number to join events, book experiences, buy tickets, host or use business tools. It stays private.'**
+  String get phoneVerifyGateBody;
+
+  /// Country picker label
+  ///
+  /// In en, this message translates to:
+  /// **'Country'**
+  String get phoneVerifyCountryLabel;
+
+  /// Phone number field label
+  ///
+  /// In en, this message translates to:
+  /// **'Mobile number'**
+  String get phoneVerifyNumberLabel;
+
+  /// Button: send SMS code
+  ///
+  /// In en, this message translates to:
+  /// **'Send code'**
+  String get phoneVerifySendCode;
+
+  /// SMS code field label
+  ///
+  /// In en, this message translates to:
+  /// **'6-digit code'**
+  String get phoneVerifyCodeLabel;
+
+  /// Button: confirm SMS code
+  ///
+  /// In en, this message translates to:
+  /// **'Verify'**
+  String get phoneVerifyConfirm;
+
+  /// Button: resend SMS
+  ///
+  /// In en, this message translates to:
+  /// **'Resend code'**
+  String get phoneVerifyResend;
+
+  /// Resend countdown
+  ///
+  /// In en, this message translates to:
+  /// **'Resend code in {seconds}s'**
+  String phoneVerifyResendIn(int seconds);
+
+  /// Code sent confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'We sent a code to {phone}'**
+  String phoneVerifyCodeSentTo(String phone);
+
+  /// Button: go back to number entry
+  ///
+  /// In en, this message translates to:
+  /// **'Change number'**
+  String get phoneVerifyChangeNumber;
+
+  /// Success state
+  ///
+  /// In en, this message translates to:
+  /// **'Phone number verified'**
+  String get phoneVerifySuccess;
+
+  /// Note under the restricted country picker
+  ///
+  /// In en, this message translates to:
+  /// **'Country not listed? Phone verification is not yet available there. Contact {email}.'**
+  String phoneVerifyCountryNotListed(String email);
+
+  /// Unsupported country message
+  ///
+  /// In en, this message translates to:
+  /// **'Phone verification is not yet available in your country. Please contact {email}.'**
+  String phoneVerifyUnsupportedCountry(String email);
+
+  /// Invalid number error
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid mobile number.'**
+  String get phoneVerifyInvalidNumber;
+
+  /// Phone already linked to another account
+  ///
+  /// In en, this message translates to:
+  /// **'This number is already used by another account.'**
+  String get phoneVerifyAlreadyUsed;
+
+  /// Number of a banned account
+  ///
+  /// In en, this message translates to:
+  /// **'This number can\'t be used on GreenGo. Please contact {email}.'**
+  String phoneVerifyBlocked(String email);
+
+  /// Rate limited
+  ///
+  /// In en, this message translates to:
+  /// **'Too many attempts. Please wait a few minutes and try again.'**
+  String get phoneVerifyTooManyAttempts;
+
+  /// Wrong SMS code
+  ///
+  /// In en, this message translates to:
+  /// **'That code isn\'t right. Check the SMS and try again.'**
+  String get phoneVerifyInvalidCode;
+
+  /// Expired code
+  ///
+  /// In en, this message translates to:
+  /// **'This code has expired. Please request a new one.'**
+  String get phoneVerifyCodeExpired;
+
+  /// Generic failure
+  ///
+  /// In en, this message translates to:
+  /// **'We couldn\'t verify your number. Please try again.'**
+  String get phoneVerifyGenericError;
+
+  /// SMS cost notice
+  ///
+  /// In en, this message translates to:
+  /// **'Standard SMS rates may apply.'**
+  String get phoneVerifySmsNotice;
+
+  /// Own profile banner title
+  ///
+  /// In en, this message translates to:
+  /// **'Add your phone number'**
+  String get phoneVerifyBannerTitle;
+
+  /// Own profile banner body
+  ///
+  /// In en, this message translates to:
+  /// **'Verify your mobile number to join events, book experiences and host. It stays private.'**
+  String get phoneVerifyBannerBody;
+
+  /// Banner button
+  ///
+  /// In en, this message translates to:
+  /// **'Verify now'**
+  String get phoneVerifyBannerAction;
+
+  /// Dismiss button
+  ///
+  /// In en, this message translates to:
+  /// **'Not now'**
+  String get phoneVerifyDismiss;
+
+  /// Onboarding continue blocked
+  ///
+  /// In en, this message translates to:
+  /// **'Verify your phone number to continue.'**
+  String get phoneVerifyRequiredToContinue;
+
+  /// Onboarding optional ID section title
+  ///
+  /// In en, this message translates to:
+  /// **'ID document (optional)'**
+  String get phoneVerifyOnboardingOptionalId;
+
+  /// Onboarding optional ID section body
+  ///
+  /// In en, this message translates to:
+  /// **'Optionally add a photo of yourself holding your ID to request the Verified badge. The photo is deleted after review.'**
+  String get phoneVerifyOnboardingOptionalIdBody;
+
+  /// Business verification: account phone is verified
+  ///
+  /// In en, this message translates to:
+  /// **'Verified account phone'**
+  String get phoneVerifyAccountPhone;
+
+  /// Business verification: phone missing
+  ///
+  /// In en, this message translates to:
+  /// **'Verify your account phone number first. It is the only identity requirement for a business account.'**
+  String get phoneVerifyAccountPhoneNeeded;
+
+  /// Business verification: optional owner ID label
+  ///
+  /// In en, this message translates to:
+  /// **'Owner ID document (optional)'**
+  String get phoneVerifyOwnerDocumentOptional;
+
+  /// Own profile banner title for accounts created before 16 Oct 2026 (never required)
+  ///
+  /// In en, this message translates to:
+  /// **'Add your phone number (optional)'**
+  String get phoneVerifyBannerTitleOptional;
+
+  /// Own profile banner body for accounts created before 16 Oct 2026
+  ///
+  /// In en, this message translates to:
+  /// **'It helps keep your account safe. Your number stays private.'**
+  String get phoneVerifyBannerBodyOptional;
 }
 
 class _AppLocalizationsDelegate
@@ -44208,13 +44607,13 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-    'de',
-    'en',
-    'es',
-    'fr',
-    'it',
-    'pt',
-  ].contains(locale.languageCode);
+        'de',
+        'en',
+        'es',
+        'fr',
+        'it',
+        'pt'
+      ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -44250,9 +44649,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-    'an issue with the localizations generation tool. Please file an issue '
-    'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.',
-  );
+      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+      'an issue with the localizations generation tool. Please file an issue '
+      'on GitHub with a reproducible sample app and the gen-l10n configuration '
+      'that was used.');
 }

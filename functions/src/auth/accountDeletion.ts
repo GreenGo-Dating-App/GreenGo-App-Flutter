@@ -75,6 +75,7 @@ import * as admin from 'firebase-admin';
 import * as crypto from 'crypto';
 import '../shared/firebaseAdmin';
 import { retainIdDocumentsOnAccountDeletion } from '../safety/idDocumentRetention';
+import { retainIdentityRecordOnAccountDeletion } from '../safety/identityRecords';
 import { enqueueFollowGraphCleanup, removeFollowGraphRound } from '../social/followCleanup';
 import { preserveForAccountDeletion, LEGAL_HOLD_KEEP_COLLECTIONS } from '../safety/takedowns/legalHold';
 
@@ -104,6 +105,10 @@ export const RETENTION_STORES = [
   DELETION_FOLLOWUPS, // work queue for Stripe/analytics; deleted by its worker
   DELETION_JOBS, // only kept when a run FAILED (needed to retry)
   'id_document_retention', // legacy entries under an admin legal hold only (P2-6)
+  // Optional ID-document details, encrypted, kept 6 months after deletion
+  // for authority requests (safety/identityRecords.ts; retainUntil + sweep).
+  'identity_records',
+  'identity_access_log', // who revealed an identity record, when, on what basis
   'follow_cleanup_jobs', // queued follow-graph job, deleted when done
   // Marco Civil art. 15 access logs (IP + time), legal obligation to keep 6
   // months (LGPD art. 16 I); removed by the TTL on expireAt, not here.
@@ -667,6 +672,13 @@ async function runInventory(uid: string, report: DeletionReport, legalHold = fal
     report.files += await retainIdDocumentsOnAccountDeletion(uid);
   });
 
+  // Encrypted ID details: a confirmed record gets retainUntil = +6 months
+  // (deleted by sweepIdentityRecords unless a legal hold applies); a pending
+  // one is deleted now.
+  await step(`identity_records/${uid}`, async () => {
+    await retainIdentityRecordOnAccountDeletion(uid);
+  });
+
   // Follow graph: one bounded round inline; a queued job finishes the rest.
   // Runs before the doc deletions so edges are removed WITH their mirrors
   // (business_followers/{uid}/followers/* and user_business_following/{uid}).
@@ -847,6 +859,15 @@ export async function deleteAccountData(uid: string, source: DeletionSource): Pr
     await retainSubcollectionLedgers(uid, report);
   } catch (e) {
     report.failures.push('finance:coinBalances.subcollections');
+  }
+  // Verified-phone index (2026-10-17): a BANNED account's number stays
+  // remembered (hash only, banned:true); otherwise its entry is removed.
+  // Before runInventory, which deletes users / profiles / profiles_private.
+  try {
+    const { retirePhoneIndexForDeletion } = await import('../safety/phoneVerification');
+    await retirePhoneIndexForDeletion(uid);
+  } catch (e: any) {
+    console.error(`accountDeletion: phone index retire failed for ${uid}`, e?.message || e);
   }
   await runInventory(uid, report, legalHold);
   // The records themselves are never deleted; a failed stamp only loses the

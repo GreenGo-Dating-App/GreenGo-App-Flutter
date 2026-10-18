@@ -1,4 +1,5 @@
 import 'dart:async';
+import '../../../../core/utils/phone_verification_gate.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import '../../../my_space/data/my_space_badge.dart';
 import '../../../../core/constants/business_categories.dart';
@@ -2440,6 +2441,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
                     tooltip: l10n.bcExploreButton,
                     badgeCount: todo,
                     onTap: () async {
+                      // Verified phone required (owner rule 2026-10-17).
+                      if (!await PhoneVerificationGate.ensureVerified(context)) return;
+                      if (!context.mounted) return;
                       await Navigator.of(context).push(BusinessCenterScreen.route(me));
                       MySpaceBadge.refresh(widget.userId, force: true);
                     },

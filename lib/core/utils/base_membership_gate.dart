@@ -9,6 +9,8 @@ import '../error/failures.dart';
 import '../services/effective_tier.dart' show kBaseMembershipRequiredCode;
 import '../services/own_profile_store.dart';
 import '../widgets/base_membership_required_dialog.dart';
+import '../services/phone_verification_service.dart';
+import 'phone_verification_gate.dart';
 
 /// Centralized gate that blocks interactions for non-members.
 ///
@@ -65,6 +67,8 @@ class BaseMembershipGate {
     required String userId,
     Profile? profile,
   }) async {
+    // Owner rule 2026-10-17: a verified phone first (PhoneVerificationGate).
+    if (!await PhoneVerificationGate.ensureVerified(context)) return false;
     profile ??= await _ownProfile(userId);
     if (profile == null || canParticipate(profile)) return true;
     if (!context.mounted) return false;
@@ -84,6 +88,7 @@ class BaseMembershipGate {
     required String userId,
     Profile? profile,
   }) async {
+    if (!await PhoneVerificationGate.ensureVerified(context)) return false;
     profile ??= await _ownProfile(userId);
     if (profile == null || canParticipate(profile) || profile.isAdmin) {
       return true;
@@ -114,6 +119,10 @@ class BaseMembershipGate {
     String? reason,
   }) async {
     final code = reason ?? errorCodeOf(error);
+    if (code == kPhoneVerificationRequiredCode) {
+      if (context.mounted) await PhoneVerificationGate.showSheet(context);
+      return true;
+    }
     if (code == kBaseMembershipRequiredCode) {
       if (context.mounted) {
         await BaseMembershipRequiredDialog.show(context, userId: userId);
@@ -121,6 +130,11 @@ class BaseMembershipGate {
       return true;
     }
     if (code != 'permission-denied') return false;
+    // A rules refusal without a verified phone (RSVP / event create).
+    if (PhoneVerificationService.currentAccountHasPhone() == false) {
+      if (context.mounted) await PhoneVerificationGate.showSheet(context);
+      return true;
+    }
     final fresh =
         await OwnProfileStore.instance.current(userId, forceServer: true);
     if (fresh == null || canParticipate(fresh) || !context.mounted) {
@@ -142,6 +156,9 @@ class BaseMembershipGate {
     }
     if (error is FirebaseException) return error.code;
     final text = error is Failure ? error.message : error.toString();
+    if (text.contains(kPhoneVerificationRequiredCode)) {
+      return kPhoneVerificationRequiredCode;
+    }
     if (text.contains(kBaseMembershipRequiredCode)) {
       return kBaseMembershipRequiredCode;
     }

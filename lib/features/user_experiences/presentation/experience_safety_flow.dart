@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/di/injection_container.dart' as di;
 import '../../../core/error/failures.dart';
+import '../../../core/services/phone_verification_service.dart';
+import '../../../core/utils/phone_verification_gate.dart';
 import '../../../core/utils/user_error.dart';
 import '../../../generated/app_localizations.dart';
 import '../../safety/presentation/screens/age_verification_screen.dart';
@@ -127,16 +129,20 @@ class ExperienceSafetyFlow {
     String uid,
     IdDocPurpose purpose,
   ) async {
-    final before = await load(uid);
-    if (purpose == IdDocPurpose.createAsHost) {
-      if (before.docApproved) return true;
-      if (before.docPending) {
-        if (context.mounted) await _showPending(context);
-        return false;
-      }
-    } else if (before.idState != IdDocState.none) {
-      return true;
-    }
+    // Owner decision 2026-10-17 (final): the ID document is OPTIONAL. The
+    // identity requirement is a verified phone, and only for accounts created
+    // on/after 16 Oct 2026 (server: assertPhoneVerified + createBlockReason /
+    // publishBlockReason). Older accounts are never asked.
+    return PhoneVerificationGate.ensureVerified(context);
+  }
+
+  /// Legacy ID-document prompt (kept for the optional Verified badge flow).
+  // ignore: unused_element
+  static Future<bool> _legacyEnsureIdDocument(
+    BuildContext context,
+    String uid,
+    IdDocPurpose purpose,
+  ) async {
     if (!context.mounted) return false;
     final l = AppLocalizations.of(context)!;
     final go = await _ask(
@@ -203,7 +209,18 @@ class ExperienceSafetyFlow {
             ? SafetyResolution.retry
             : SafetyResolution.cancel;
       case 'id_document_not_approved':
+        // A verified phone satisfies it since 2026-10-17.
+        if (PhoneVerificationService.currentAccountHasPhone() == false &&
+            PhoneVerificationService.phoneRequiredNow() &&
+            await PhoneVerificationGate.showSheet(context)) {
+          return SafetyResolution.retry;
+        }
+        if (!context.mounted) return SafetyResolution.cancel;
         return paidBlocked(context, uid);
+      case 'phone_verification_required':
+        return await PhoneVerificationGate.showSheet(context)
+            ? SafetyResolution.retry
+            : SafetyResolution.cancel;
       case 'new_host_paid_limit':
         final r = await _ask(
           context,

@@ -39,6 +39,8 @@ import {
   takesPayment,
 } from './safety';
 
+import { assertPhoneVerified, identityRequirementMet } from '../shared/participation';
+
 const db = admin.firestore();
 const OPTS = { memory: '512MiB' as const, timeoutSeconds: 60 };
 
@@ -51,6 +53,10 @@ export const publishUserExperience = onCall<{ experienceId?: string; asFree?: bo
     const id = typeof request.data?.experienceId === 'string' ? request.data.experienceId : '';
     if (!id) throw new HttpsError('invalid-argument', 'experienceId is required.');
     const asFree = request.data?.asFree === true;
+    // Owner rule 2026-10-17: hosting needs a verified phone (accounts
+    // created on/after 16 Oct 2026 only).
+    await assertPhoneVerified(request.auth?.token as any, uid);
+    const phoneVerified = await identityRequirementMet(request.auth?.token as any, uid);
 
     const expRef = db.collection(EXPERIENCES).doc(id);
     const profileRef = db.collection('profiles').doc(uid);
@@ -69,10 +75,10 @@ export const publishUserExperience = onCall<{ experienceId?: string; asFree?: bo
       if (next.isFree !== true && profile?.isAdmin !== true && isNewHost(profile)) {
         otherPublishedPaid = await countPublishedPaid(tx, uid, id);
       }
-      const registrationApproved = takesPayment(next) && idDocumentState(profile) !== 'approved'
+      const registrationApproved = !phoneVerified && takesPayment(next) && idDocumentState(profile) !== 'approved'
         ? await registrationIdApprovedByAdmin(db, uid, profile)
         : false;
-      const why = publishBlockReason({ profile, experience: next, otherPublishedPaid, registrationApproved });
+      const why = publishBlockReason({ profile, experience: next, otherPublishedPaid, registrationApproved, phoneVerified });
       if (why) throw safetyError(why);
       // Availability must be defined: at least one upcoming open date.
       // Recurring schedule (Manage times) counts when it generates a future time.

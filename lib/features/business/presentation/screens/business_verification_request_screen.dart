@@ -8,18 +8,20 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/platform/web_media.dart';
+import '../../../../core/utils/phone_verification_gate.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../profile/domain/entities/profile.dart';
+import '../../../safety/data/services/identity_details_service.dart';
+import '../../../safety/presentation/widgets/identity_details_form.dart';
 
 /// Business verification request — collects everything an admin needs to
 /// verify a business, then writes it to `business_verification_requests/{uid}`.
 ///
-/// Required: phone-number OTP identification, business name, the owner's ID
-/// document (uploaded to Storage), and the owner's full name (as printed on the
-/// ID). Optional: a website URL and free-text notes. Submission is blocked
-/// until the phone is OTP-verified and the required fields + document are
-/// present.
+/// Required (owner decision 2026-10-17): the ACCOUNT's verified phone (the
+/// only identity requirement), the business name and the owner's full name.
+/// Optional: the owner's ID document (deleted after review; its details can be
+/// added encrypted), a website URL and free-text notes.
 class BusinessVerificationRequestScreen extends StatefulWidget {
   const BusinessVerificationRequestScreen({required this.profile, super.key});
 
@@ -35,8 +37,6 @@ class _BusinessVerificationRequestScreenState
   final _businessNameController = TextEditingController();
   // The OWNER's full name, exactly as printed on the uploaded ID document.
   final _ownerNameController = TextEditingController();
-  final _phoneController = TextEditingController();
-  final _codeController = TextEditingController();
   final _websiteController = TextEditingController();
   final _notesController = TextEditingController();
 
@@ -46,14 +46,19 @@ class _BusinessVerificationRequestScreenState
   String? _documentUrl;
   bool _uploadingDocument = false;
 
-  // Phone OTP state.
-  String? _verificationId;
-  int? _resendToken;
-  bool _codeSent = false;
-  bool _phoneVerified = false;
-  bool _sendingCode = false;
-  bool _verifyingCode = false;
-  String? _phoneError;
+  // Owner decision 2026-10-17: the ONLY identity requirement for a business
+  // is the ACCOUNT's verified phone (Firebase Auth phone credential, rules
+  // phoneVerified()). No separate OTP here; the owner ID is optional.
+  String? _accountPhone = _currentAccountPhone();
+
+  static String? _currentAccountPhone() {
+    try {
+      final p = FirebaseAuth.instance.currentUser?.phoneNumber;
+      return (p == null || p.isEmpty) ? null : p;
+    } catch (_) {
+      return null;
+    }
+  }
 
   bool _submitting = false;
 
@@ -73,8 +78,6 @@ class _BusinessVerificationRequestScreenState
   void dispose() {
     _businessNameController.dispose();
     _ownerNameController.dispose();
-    _phoneController.dispose();
-    _codeController.dispose();
     _websiteController.dispose();
     _notesController.dispose();
     super.dispose();
@@ -82,8 +85,7 @@ class _BusinessVerificationRequestScreenState
 
   bool get _canSubmit =>
       !_submitting &&
-      _phoneVerified &&
-      _documentUrl != null &&
+      _accountPhone != null &&
       _businessNameController.text.trim().isNotEmpty &&
       _ownerNameController.text.trim().isNotEmpty;
 
@@ -116,134 +118,6 @@ class _BusinessVerificationRequestScreenState
     }
   }
 
-  // ── Phone OTP ────────────────────────────────────────────────────────────
-
-  Future<void> _sendCode() async {
-    final phone = _phoneController.text.trim();
-    if (phone.isEmpty || _sendingCode) return;
-    // Firebase requires E.164 (+countrycode…). Without it the SDK throws an
-    // opaque "invalid/null length" error, so validate up-front with a clear msg.
-    final digits = phone.replaceAll(RegExp(r'[^0-9]'), '');
-    if (!phone.startsWith('+') || digits.length < 8) {
-      setState(() {
-        _phoneError = AppLocalizations.of(context)!.verifyPhoneFormatError;
-      });
-      return;
-    }
-    setState(() {
-      _sendingCode = true;
-      _phoneError = null;
-    });
-    try {
-      await FirebaseAuth.instance.verifyPhoneNumber(
-        phoneNumber: phone,
-        forceResendingToken: _resendToken,
-        verificationCompleted: (PhoneAuthCredential credential) {
-          if (mounted) {
-            setState(() {
-              _phoneVerified = true;
-              _sendingCode = false;
-            });
-          }
-        },
-        verificationFailed: (FirebaseAuthException e) {
-          if (mounted) {
-            setState(() {
-              _sendingCode = false;
-              _phoneError = _phoneErrorText(e);
-            });
-          }
-        },
-        codeSent: (String verificationId, int? resendToken) {
-          if (mounted) {
-            setState(() {
-              _verificationId = verificationId;
-              _resendToken = resendToken;
-              _codeSent = true;
-              _sendingCode = false;
-            });
-          }
-        },
-        codeAutoRetrievalTimeout: (String verificationId) {
-          _verificationId = verificationId;
-        },
-        timeout: const Duration(seconds: 60),
-      );
-    } catch (e) {
-      if (mounted) {
-        setState(() {
-          _sendingCode = false;
-          _phoneError = _phoneErrorText(e);
-        });
-      }
-    }
-  }
-
-  /// Friendly, localized text for a phone-verification failure (never the
-  /// raw Firebase message).
-  String _phoneErrorText(Object e) {
-    debugPrint('[BusinessVerification] phone error: $e');
-    final kind = classifyUserError(e);
-    if (kind == UserErrorKind.auth || kind == UserErrorKind.generic) {
-      return AppLocalizations.of(context)!.verificationPhoneError;
-    }
-    return userErrorMessage(context, e);
-  }
-
-  Future<void> _verifyCode() async {
-    final code = _codeController.text.trim();
-    final vid = _verificationId;
-    if (code.length != 6 || vid == null || _verifyingCode) return;
-    setState(() {
-      _verifyingCode = true;
-      _phoneError = null;
-    });
-    try {
-      final credential =
-          PhoneAuthProvider.credential(verificationId: vid, smsCode: code);
-      // Link to the current (already signed-in) user to prove ownership.
-      final user = FirebaseAuth.instance.currentUser;
-      if (user != null) {
-        await user.linkWithCredential(credential);
-      }
-      if (mounted) {
-        setState(() {
-          _phoneVerified = true;
-          _verifyingCode = false;
-        });
-      }
-    } on FirebaseAuthException catch (e) {
-      // A correct SMS code that is already linked (to this or another account)
-      // still PROVES the user controls the number — accept it as verified.
-      if (e.code == 'provider-already-linked' ||
-          e.code == 'credential-already-in-use') {
-        if (mounted) {
-          setState(() {
-            _phoneVerified = true;
-            _verifyingCode = false;
-          });
-        }
-        return;
-      }
-      if (mounted) {
-        final l10n = AppLocalizations.of(context)!;
-        setState(() {
-          _verifyingCode = false;
-          _phoneError = e.code == 'invalid-verification-code'
-              ? l10n.verificationInvalidCode
-              : _phoneErrorText(e);
-        });
-      }
-    } catch (e) {
-      if (mounted) {
-        setState(() {
-          _verifyingCode = false;
-          _phoneError = _phoneErrorText(e);
-        });
-      }
-    }
-  }
-
   // ── Submit ───────────────────────────────────────────────────────────────
 
   Future<void> _submit() async {
@@ -265,7 +139,7 @@ class _BusinessVerificationRequestScreenState
         'ownerName': _ownerNameController.text.trim(),
         'legalName': _ownerNameController.text.trim(),
         'ownerDocumentUrl': _documentUrl,
-        'phoneNumber': _phoneController.text.trim(),
+        'phoneNumber': _accountPhone,
         'phoneVerified': true,
         'website': _websiteController.text.trim(),
         'note': _notesController.text.trim(),
@@ -341,14 +215,17 @@ class _BusinessVerificationRequestScreenState
                 hint: l10n.verifyOwnerNameHint),
             const SizedBox(height: 20),
 
-            // Phone + OTP (required)
+            // The account's verified phone (required).
             _label(l10n.verifyPhoneLabel, required: true),
-            _buildPhoneSection(l10n),
+            _buildAccountPhoneSection(l10n),
             const SizedBox(height: 20),
 
-            // Owner document (required)
-            _label(l10n.verifyOwnerDocumentLabel, required: true),
+            // Owner document (OPTIONAL since 2026-10-17; deleted after review)
+            _label(l10n.phoneVerifyOwnerDocumentOptional),
             _buildDocumentSection(l10n),
+            // Optional: the details printed on the owner document (encrypted).
+            if (_documentUrl != null)
+              const IdentityDetailsButton(source: IdentitySource.business),
             const SizedBox(height: 20),
 
             // Website (optional)
@@ -414,103 +291,46 @@ class _BusinessVerificationRequestScreenState
     );
   }
 
-  Widget _buildPhoneSection(AppLocalizations l10n) {
+  Widget _buildAccountPhoneSection(AppLocalizations l10n) {
+    final phone = _accountPhone;
+    if (phone != null) {
+      final masked = phone.length > 4
+          ? '${phone.substring(0, phone.length - 4).replaceAll(RegExp(r'\d'), '•')}${phone.substring(phone.length - 4)}'
+          : phone;
+      return Container(
+        key: const ValueKey('business-verify-account-phone'),
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(
+          color: AppColors.successGreen.withValues(alpha: 0.1),
+          borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+        ),
+        child: Row(
+          children: [
+            const Icon(Icons.verified, color: AppColors.successGreen, size: 18),
+            const SizedBox(width: 8),
+            Expanded(
+              child: Text('${l10n.phoneVerifyAccountPhone}: $masked',
+                  style: const TextStyle(color: AppColors.textPrimary)),
+            ),
+          ],
+        ),
+      );
+    }
     return Column(
+      key: const ValueKey('business-verify-phone-needed'),
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Field and button are stacked, not side by side: on a phone the
-        // button left the number field too narrow to read (and the theme's
-        // full-width button minimumSize broke the Row outright).
-        _field(
-          _phoneController,
-          icon: Icons.phone_outlined,
-          fieldKey: 'phone',
-          hint: l10n.verifyPhoneHint,
-          keyboardType: TextInputType.phone,
-          enabled: !_phoneVerified,
-          suffix: _phoneVerified
-              ? const Icon(Icons.verified, color: AppColors.richGold)
-              : null,
+        Text(l10n.phoneVerifyAccountPhoneNeeded,
+            style: const TextStyle(color: AppColors.textSecondary)),
+        const SizedBox(height: 8),
+        OutlinedButton.icon(
+          onPressed: () async {
+            final ok = await PhoneVerificationGate.showSheet(context);
+            if (ok && mounted) setState(() => _accountPhone = _currentAccountPhone());
+          },
+          icon: const Icon(Icons.phone_android, size: 18),
+          label: Text(l10n.phoneVerifyBannerAction),
         ),
-        if (!_phoneVerified) ...[
-          const SizedBox(height: 8),
-          SizedBox(
-            width: double.infinity,
-            child: OutlinedButton(
-              onPressed: _sendingCode ? null : _sendCode,
-              style: OutlinedButton.styleFrom(
-                foregroundColor: AppColors.richGold,
-                side: const BorderSide(color: AppColors.richGold),
-                minimumSize: const Size(0, 48),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
-              ),
-              child: _sendingCode
-                  ? const SizedBox(
-                      width: 16,
-                      height: 16,
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2,
-                        valueColor:
-                            AlwaysStoppedAnimation<Color>(AppColors.richGold),
-                      ),
-                    )
-                  : Text(
-                      _codeSent ? l10n.verifyResendCode : l10n.verifySendCode),
-            ),
-          ),
-        ],
-        if (_codeSent && !_phoneVerified) ...[
-          const SizedBox(height: 10),
-          _field(
-            _codeController,
-            icon: Icons.sms_outlined,
-            fieldKey: 'code',
-            hint: l10n.verifyEnterCodeLabel,
-            keyboardType: TextInputType.number,
-          ),
-          const SizedBox(height: 8),
-          SizedBox(
-            width: double.infinity,
-            child: ElevatedButton(
-              onPressed: _verifyingCode ? null : _verifyCode,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.richGold,
-                foregroundColor: AppColors.deepBlack,
-                minimumSize: const Size(0, 48),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-              ),
-              child: _verifyingCode
-                  ? const SizedBox(
-                      width: 16,
-                      height: 16,
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2,
-                        valueColor:
-                            AlwaysStoppedAnimation<Color>(AppColors.deepBlack),
-                      ),
-                    )
-                  : Text(l10n.verifyConfirmCode),
-            ),
-          ),
-        ],
-        if (_phoneVerified)
-          Padding(
-            padding: const EdgeInsets.only(top: 6),
-            child: Text(
-              l10n.verifyPhoneVerified,
-              style: const TextStyle(color: AppColors.richGold, fontSize: 12),
-            ),
-          ),
-        if (_phoneError != null)
-          Padding(
-            padding: const EdgeInsets.only(top: 6),
-            child: Text(
-              _phoneError!,
-              style: const TextStyle(color: AppColors.errorRed, fontSize: 12),
-            ),
-          ),
       ],
     );
   }

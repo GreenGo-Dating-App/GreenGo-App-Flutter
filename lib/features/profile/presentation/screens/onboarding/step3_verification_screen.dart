@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -14,6 +12,9 @@ import '../../bloc/onboarding_state.dart';
 import '../../widgets/luxury_onboarding_layout.dart';
 import '../../widgets/onboarding_progress_bar.dart';
 import '../../../../../core/utils/user_error.dart';
+import '../../../../../core/widgets/phone_verification_panel.dart';
+import '../../../../safety/data/services/identity_details_service.dart';
+import '../../../../safety/presentation/widgets/identity_details_form.dart';
 
 class Step3VerificationScreen extends StatefulWidget {
   const Step3VerificationScreen({super.key});
@@ -25,81 +26,37 @@ class Step3VerificationScreen extends StatefulWidget {
 class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
   final ImagePicker _picker = ImagePicker();
 
-  // 'choose' | 'photo' | 'phone'
-  String _selectedMethod = 'choose';
-
-  // Phone verification state
-  final TextEditingController _phoneController = TextEditingController();
-  final TextEditingController _codeController = TextEditingController();
-  bool _codeSent = false;
-  bool _isVerifyingPhone = false;
+  // Owner rule 2026-10-17: the SMS-verified phone is MANDATORY for every new
+  // account (PhoneVerificationPanel: supported countries only, linked to the
+  // account, ID token refreshed). The ID photo below is OPTIONAL (Verified
+  // badge request, deleted after review).
   bool _phoneVerified = false;
-  String? _verificationId;
-  int? _resendToken;
-  String? _phoneError;
-  Timer? _resendTimer;
-  int _resendCountdown = 0;
-
-  // Country code selector
-  String _selectedCountry = 'US';
-  static const List<_CountryCode> _countryCodes = [
-    _CountryCode('US', '\u{1F1FA}\u{1F1F8}', '+1'),
-    _CountryCode('GB', '\u{1F1EC}\u{1F1E7}', '+44'),
-    _CountryCode('DE', '\u{1F1E9}\u{1F1EA}', '+49'),
-    _CountryCode('FR', '\u{1F1EB}\u{1F1F7}', '+33'),
-    _CountryCode('IT', '\u{1F1EE}\u{1F1F9}', '+39'),
-    _CountryCode('ES', '\u{1F1EA}\u{1F1F8}', '+34'),
-    _CountryCode('PT', '\u{1F1F5}\u{1F1F9}', '+351'),
-    _CountryCode('BR', '\u{1F1E7}\u{1F1F7}', '+55'),
-    _CountryCode('CH', '\u{1F1E8}\u{1F1ED}', '+41'),
-    _CountryCode('AT', '\u{1F1E6}\u{1F1F9}', '+43'),
-    _CountryCode('NL', '\u{1F1F3}\u{1F1F1}', '+31'),
-    _CountryCode('BE', '\u{1F1E7}\u{1F1EA}', '+32'),
-    _CountryCode('SE', '\u{1F1F8}\u{1F1EA}', '+46'),
-    _CountryCode('NO', '\u{1F1F3}\u{1F1F4}', '+47'),
-    _CountryCode('DK', '\u{1F1E9}\u{1F1F0}', '+45'),
-    _CountryCode('FI', '\u{1F1EB}\u{1F1EE}', '+358'),
-    _CountryCode('PL', '\u{1F1F5}\u{1F1F1}', '+48'),
-    _CountryCode('GR', '\u{1F1EC}\u{1F1F7}', '+30'),
-    _CountryCode('TR', '\u{1F1F9}\u{1F1F7}', '+90'),
-    _CountryCode('RU', '\u{1F1F7}\u{1F1FA}', '+7'),
-    _CountryCode('UA', '\u{1F1FA}\u{1F1E6}', '+380'),
-    _CountryCode('IN', '\u{1F1EE}\u{1F1F3}', '+91'),
-    _CountryCode('CN', '\u{1F1E8}\u{1F1F3}', '+86'),
-    _CountryCode('JP', '\u{1F1EF}\u{1F1F5}', '+81'),
-    _CountryCode('KR', '\u{1F1F0}\u{1F1F7}', '+82'),
-    _CountryCode('AU', '\u{1F1E6}\u{1F1FA}', '+61'),
-    _CountryCode('NZ', '\u{1F1F3}\u{1F1FF}', '+64'),
-    _CountryCode('CA', '\u{1F1E8}\u{1F1E6}', '+1'),
-    _CountryCode('MX', '\u{1F1F2}\u{1F1FD}', '+52'),
-    _CountryCode('AR', '\u{1F1E6}\u{1F1F7}', '+54'),
-    _CountryCode('CL', '\u{1F1E8}\u{1F1F1}', '+56'),
-    _CountryCode('CO', '\u{1F1E8}\u{1F1F4}', '+57'),
-    _CountryCode('PE', '\u{1F1F5}\u{1F1EA}', '+51'),
-    _CountryCode('ZA', '\u{1F1FF}\u{1F1E6}', '+27'),
-    _CountryCode('NG', '\u{1F1F3}\u{1F1EC}', '+234'),
-    _CountryCode('EG', '\u{1F1EA}\u{1F1EC}', '+20'),
-    _CountryCode('SA', '\u{1F1F8}\u{1F1E6}', '+966'),
-    _CountryCode('AE', '\u{1F1E6}\u{1F1EA}', '+971'),
-    _CountryCode('IL', '\u{1F1EE}\u{1F1F1}', '+972'),
-    _CountryCode('TH', '\u{1F1F9}\u{1F1ED}', '+66'),
-    _CountryCode('PH', '\u{1F1F5}\u{1F1ED}', '+63'),
-    _CountryCode('ID', '\u{1F1EE}\u{1F1E9}', '+62'),
-    _CountryCode('MY', '\u{1F1F2}\u{1F1FE}', '+60'),
-    _CountryCode('SG', '\u{1F1F8}\u{1F1EC}', '+65'),
-    _CountryCode('IE', '\u{1F1EE}\u{1F1EA}', '+353'),
-    _CountryCode('RO', '\u{1F1F7}\u{1F1F4}', '+40'),
-    _CountryCode('CZ', '\u{1F1E8}\u{1F1FF}', '+420'),
-    _CountryCode('HU', '\u{1F1ED}\u{1F1FA}', '+36'),
-    _CountryCode('HR', '\u{1F1ED}\u{1F1F7}', '+385'),
-  ];
 
   @override
-  void dispose() {
-    _phoneController.dispose();
-    _codeController.dispose();
-    _resendTimer?.cancel();
-    super.dispose();
+  void initState() {
+    super.initState();
+    // Phone sign-in accounts (or a retry after linking) already have one.
+    String? existing;
+    try {
+      existing = FirebaseAuth.instance.currentUser?.phoneNumber;
+    } catch (_) {}
+    if (existing != null && existing.isNotEmpty) {
+      _phoneVerified = true;
+      final phone = existing;
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted) return;
+        context.read<OnboardingBloc>().add(
+              OnboardingPhoneVerificationCompleted(phoneNumber: phone),
+            );
+      });
+    }
+  }
+
+  void _onPhoneVerified(String phone) {
+    setState(() => _phoneVerified = true);
+    context.read<OnboardingBloc>().add(
+          OnboardingPhoneVerificationCompleted(phoneNumber: phone),
+        );
   }
 
   Future<void> _takeVerificationPhoto() async {
@@ -122,171 +79,14 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
     }
   }
 
-  String get _selectedDialCode => _countryCodes.firstWhere((c) => c.code == _selectedCountry).dialCode;
-  String get _fullPhoneNumber => '$_selectedDialCode${_phoneController.text.trim()}';
-
-  Future<void> _sendPhoneCode() async {
-    final phone = _fullPhoneNumber;
-    if (_phoneController.text.trim().isEmpty) return;
-
-    setState(() {
-      _isVerifyingPhone = true;
-      _phoneError = null;
-    });
-
-    try {
-      await FirebaseAuth.instance.verifyPhoneNumber(
-        phoneNumber: phone,
-        forceResendingToken: _resendToken,
-        verificationCompleted: (PhoneAuthCredential credential) {
-          // Auto-verification on Android
-          if (mounted) {
-            setState(() {
-              _phoneVerified = true;
-              _isVerifyingPhone = false;
-            });
-            context.read<OnboardingBloc>().add(
-              OnboardingPhoneVerificationCompleted(phoneNumber: phone),
-            );
-          }
-        },
-        verificationFailed: (FirebaseAuthException e) {
-          debugPrint('Phone verification failed: ${e.code} - ${e.message}');
-          if (mounted) {
-            final l10n = AppLocalizations.of(context);
-            String errorMsg;
-            switch (e.code) {
-              case 'invalid-phone-number':
-                errorMsg = l10n?.phoneErrorInvalidNumber ?? 'Invalid phone number format. Please use international format (e.g. +1234567890).';
-                break;
-              case 'too-many-requests':
-                errorMsg = l10n?.phoneErrorTooManyRequests ?? 'Too many attempts. Please wait a few minutes before trying again.';
-                break;
-              case 'quota-exceeded':
-                errorMsg = l10n?.phoneErrorQuotaExceeded ?? 'SMS quota exceeded. Please try again later.';
-                break;
-              case 'captcha-check-failed':
-                errorMsg = l10n?.phoneErrorCaptchaFailed ?? 'reCAPTCHA verification failed. Please try again.';
-                break;
-              case 'missing-phone-number':
-                errorMsg = l10n?.phoneErrorMissingNumber ?? 'Please enter a phone number.';
-                break;
-              default:
-                // Never show the raw auth code to the user; log it instead.
-                reportUserError(e);
-                errorMsg = l10n?.verificationPhoneError ?? 'Failed to verify phone number. Please try again.';
-            }
-            setState(() {
-              _isVerifyingPhone = false;
-              _phoneError = errorMsg;
-            });
-          }
-        },
-        codeSent: (String verificationId, int? resendToken) {
-          if (mounted) {
-            setState(() {
-              _verificationId = verificationId;
-              _resendToken = resendToken;
-              _codeSent = true;
-              _isVerifyingPhone = false;
-              _resendCountdown = 60;
-            });
-            _startResendTimer();
-          }
-        },
-        codeAutoRetrievalTimeout: (String verificationId) {
-          _verificationId = verificationId;
-        },
-        timeout: const Duration(seconds: 60),
-      );
-    } catch (e) {
-      debugPrint('Phone verification exception: $e');
-      if (mounted) {
-        setState(() {
-          _isVerifyingPhone = false;
-          _phoneError = AppLocalizations.of(context)?.phoneErrorUnexpected ?? 'Phone verification error. Please try again.';
-        });
-      }
-    }
-  }
-
-  void _startResendTimer() {
-    _resendTimer?.cancel();
-    _resendTimer = Timer.periodic(const Duration(seconds: 1), (timer) {
-      if (_resendCountdown <= 0) {
-        timer.cancel();
-      } else {
-        setState(() => _resendCountdown--);
-      }
-    });
-  }
-
-  Future<void> _verifyCode() async {
-    final code = _codeController.text.trim();
-    if (code.length != 6 || _verificationId == null) return;
-
-    setState(() {
-      _isVerifyingPhone = true;
-      _phoneError = null;
-    });
-
-    try {
-      final credential = PhoneAuthProvider.credential(
-        verificationId: _verificationId!,
-        smsCode: code,
-      );
-
-      // Link phone credential to existing user (they're already signed in with email)
-      final user = FirebaseAuth.instance.currentUser;
-      if (user != null) {
-        await user.linkWithCredential(credential);
-      }
-
-      if (mounted) {
-        setState(() {
-          _phoneVerified = true;
-          _isVerifyingPhone = false;
-        });
-        context.read<OnboardingBloc>().add(
-          OnboardingPhoneVerificationCompleted(phoneNumber: _fullPhoneNumber),
-        );
-      }
-    } on FirebaseAuthException catch (e) {
-      if (mounted) {
-        String errorMsg;
-        if (e.code == 'invalid-verification-code') {
-          errorMsg = AppLocalizations.of(context)?.verificationInvalidCode ?? 'Invalid code. Please check and try again.';
-        } else if (e.code == 'credential-already-in-use') {
-          errorMsg = AppLocalizations.of(context)?.phoneErrorAlreadyLinked ?? 'This phone number is already linked to another account.';
-        } else {
-          errorMsg = AppLocalizations.of(context)?.verificationPhoneError ?? 'Failed to verify phone number. Please try again.';
-        }
-        setState(() {
-          _isVerifyingPhone = false;
-          _phoneError = errorMsg;
-        });
-      }
-    } catch (e) {
-      if (mounted) {
-        setState(() {
-          _isVerifyingPhone = false;
-          _phoneError = AppLocalizations.of(context)?.verificationPhoneError ?? 'Failed to verify phone number. Please try again.';
-        });
-      }
-    }
-  }
-
   void _handleContinue(OnboardingInProgress state) {
     final l10n = AppLocalizations.of(context)!;
-
-    // Check if either photo or phone verification is done
-    final hasPhoto = state.verificationPhotoUrl != null && state.verificationPhotoUrl!.isNotEmpty;
-    final hasPhone = _phoneVerified || (state.verificationMethod == 'phone' && state.verificationPhone != null);
-
-    if (!hasPhoto && !hasPhone) {
+    final hasPhone = _phoneVerified ||
+        (state.verificationPhone != null && state.verificationPhone!.isNotEmpty);
+    if (!hasPhone) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(l10n.takeVerificationPhoto),
+          content: Text(l10n.phoneVerifyRequiredToContinue),
           backgroundColor: AppColors.errorRed,
         ),
       );
@@ -295,6 +95,7 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
 
     context.read<OnboardingBloc>().add(const OnboardingNextStep());
   }
+
 
   void _handleBack() {
     context.read<OnboardingBloc>().add(const OnboardingPreviousStep());
@@ -343,19 +144,27 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
                 _PrivacySection(),
                 const SizedBox(height: 20),
 
-                // Method chooser or selected method content
-                if (_selectedMethod == 'choose' &&
-                    state.verificationPhotoUrl == null &&
-                    !_phoneVerified) ...[
-                  _MethodChooser(
-                    onPhotoSelected: () => setState(() => _selectedMethod = 'photo'),
-                    onPhoneSelected: () => setState(() => _selectedMethod = 'phone'),
-                  ),
-                ] else if (_selectedMethod == 'phone' || _phoneVerified) ...[
-                  _buildPhoneVerification(state),
-                ] else ...[
-                  _buildPhotoVerification(state, isUploading),
-                ],
+                // 1. Verified phone - mandatory.
+                _SectionTitle(
+                  icon: Icons.phone_android,
+                  title: l10n.phoneVerifyTitle,
+                  subtitle: l10n.phoneVerifyRequiredBody,
+                ),
+                const SizedBox(height: 12),
+                PhoneVerificationPanel(
+                  key: const ValueKey('onboarding-phone-panel'),
+                  onVerified: _onPhoneVerified,
+                ),
+                const SizedBox(height: 28),
+
+                // 2. ID document - optional (Verified badge request).
+                _SectionTitle(
+                  icon: Icons.badge_outlined,
+                  title: l10n.phoneVerifyOnboardingOptionalId,
+                  subtitle: l10n.phoneVerifyOnboardingOptionalIdBody,
+                ),
+                const SizedBox(height: 12),
+                _buildPhotoVerification(state, isUploading),
 
                 const SizedBox(height: 16),
               ],
@@ -421,18 +230,13 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
         ),
         const SizedBox(height: 16),
 
-        // Switch to phone option
-        if (state.verificationPhotoUrl == null)
-          Center(
-            child: TextButton.icon(
-              onPressed: () => setState(() => _selectedMethod = 'phone'),
-              icon: const Icon(Icons.phone_android, color: AppColors.textTertiary, size: 18),
-              label: Text(
-                AppLocalizations.of(context)!.verificationOrMethod(AppLocalizations.of(context)!.verificationMethodPhone),
-                style: const TextStyle(color: AppColors.textTertiary, fontSize: 13),
-              ),
-            ),
+        // Optional: the details printed on the document (stored encrypted).
+        if (state.verificationPhotoUrl != null) ...[
+          const Center(
+            child: IdentityDetailsButton(source: IdentitySource.registration),
           ),
+          const SizedBox(height: 8),
+        ],
 
         Text(
           l10n.verificationInstructions,
@@ -442,280 +246,7 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
       ],
     );
   }
-
-  Widget _buildPhoneVerification(OnboardingInProgress state) {
-    final l10n = AppLocalizations.of(context);
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        // Phone verification header
-        Container(
-          padding: const EdgeInsets.all(16),
-          decoration: BoxDecoration(
-            color: AppColors.backgroundCard,
-            borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-            border: Border.all(color: AppColors.divider),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  const Icon(Icons.phone_android, color: AppColors.richGold, size: 20),
-                  const SizedBox(width: 8),
-                  Text(
-                    l10n?.verificationPhoneTitle ?? 'Phone Verification',
-                    style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                      color: AppColors.richGold,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 8),
-              Text(
-                l10n?.verificationPhoneSubtitle ?? 'Enter your phone number to receive a verification code via SMS',
-                style: Theme.of(context).textTheme.bodySmall?.copyWith(color: AppColors.textSecondary),
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(height: 20),
-
-        if (_phoneVerified) ...[
-          // Success state
-          Center(
-            child: Container(
-              padding: const EdgeInsets.all(24),
-              decoration: BoxDecoration(
-                color: AppColors.successGreen.withValues(alpha: 0.1),
-                borderRadius: BorderRadius.circular(AppDimensions.radiusL),
-                border: Border.all(color: AppColors.successGreen.withValues(alpha: 0.5)),
-              ),
-              child: Column(
-                children: [
-                  const Icon(Icons.verified, color: AppColors.successGreen, size: 48),
-                  const SizedBox(height: 12),
-                  Text(
-                    l10n?.verificationPhoneSuccess ?? 'Phone number verified successfully!',
-                    style: const TextStyle(color: AppColors.successGreen, fontSize: 16, fontWeight: FontWeight.w600),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    _fullPhoneNumber,
-                    style: const TextStyle(color: AppColors.textPrimary, fontSize: 14),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ] else if (!_codeSent) ...[
-          // Phone input with country code selector
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Country code dropdown
-              Container(
-                decoration: BoxDecoration(
-                  color: AppColors.backgroundCard,
-                  borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                ),
-                child: DropdownButtonHideUnderline(
-                  child: DropdownButton<String>(
-                    value: _selectedCountry,
-                    dropdownColor: AppColors.backgroundCard,
-                    borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                    icon: const Icon(Icons.arrow_drop_down, color: AppColors.richGold, size: 20),
-                    selectedItemBuilder: (context) => _countryCodes.map((c) {
-                      return Center(
-                        child: Text(
-                          '${c.flag} ${c.dialCode}',
-                          style: const TextStyle(color: AppColors.textPrimary, fontSize: 15),
-                        ),
-                      );
-                    }).toList(),
-                    items: _countryCodes.map((c) {
-                      return DropdownMenuItem<String>(
-                        value: c.code,
-                        child: Text(
-                          '${c.flag}  ${c.code}  ${c.dialCode}',
-                          style: const TextStyle(color: AppColors.textPrimary, fontSize: 14),
-                        ),
-                      );
-                    }).toList(),
-                    onChanged: (value) {
-                      if (value != null) setState(() => _selectedCountry = value);
-                    },
-                  ),
-                ),
-              ),
-              const SizedBox(width: 10),
-              // Phone number field
-              Expanded(
-                child: TextField(
-                  controller: _phoneController,
-                  keyboardType: TextInputType.phone,
-                  style: const TextStyle(color: AppColors.textPrimary, fontSize: 16),
-                  decoration: InputDecoration(
-                    labelText: l10n?.verificationPhoneLabel ?? 'Phone number',
-                    labelStyle: const TextStyle(color: AppColors.textTertiary),
-                    hintText: '234 567 8900',
-                    hintStyle: const TextStyle(color: AppColors.textTertiary),
-                    filled: true,
-                    fillColor: AppColors.backgroundCard,
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                      borderSide: BorderSide.none,
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                      borderSide: const BorderSide(color: AppColors.richGold, width: 1.5),
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 16),
-
-          SizedBox(
-            width: double.infinity,
-            child: ElevatedButton(
-              onPressed: _isVerifyingPhone ? null : _sendPhoneCode,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.richGold,
-                foregroundColor: Colors.black,
-                padding: const EdgeInsets.symmetric(vertical: 14),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppDimensions.radiusM)),
-              ),
-              child: _isVerifyingPhone
-                  ? const SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2, color: Colors.black))
-                  : Text(l10n?.verificationSendCode ?? 'Send Code', style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
-            ),
-          ),
-        ] else ...[
-          // Code sent - show input
-          Text(
-            l10n?.verificationCodeSent(_fullPhoneNumber) ?? 'Code sent to $_fullPhoneNumber',
-            style: const TextStyle(color: AppColors.textSecondary, fontSize: 14),
-          ),
-          const SizedBox(height: 12),
-
-          Text(
-            l10n?.verificationEnterCode ?? 'Enter the 6-digit code sent to your phone',
-            style: const TextStyle(color: AppColors.textPrimary, fontSize: 14),
-          ),
-          const SizedBox(height: 12),
-
-          TextField(
-            controller: _codeController,
-            keyboardType: TextInputType.number,
-            maxLength: 6,
-            style: const TextStyle(color: AppColors.textPrimary, fontSize: 20, letterSpacing: 8),
-            textAlign: TextAlign.center,
-            decoration: InputDecoration(
-              counterText: '',
-              hintText: '------',
-              hintStyle: const TextStyle(color: AppColors.textTertiary, letterSpacing: 8),
-              filled: true,
-              fillColor: AppColors.backgroundCard,
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                borderSide: BorderSide.none,
-              ),
-              focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                borderSide: const BorderSide(color: AppColors.richGold, width: 1.5),
-              ),
-            ),
-          ),
-          const SizedBox(height: 16),
-
-          SizedBox(
-            width: double.infinity,
-            child: ElevatedButton(
-              onPressed: _isVerifyingPhone ? null : _verifyCode,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.richGold,
-                foregroundColor: Colors.black,
-                padding: const EdgeInsets.symmetric(vertical: 14),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppDimensions.radiusM)),
-              ),
-              child: _isVerifyingPhone
-                  ? const SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2, color: Colors.black))
-                  : Text(l10n?.verificationVerifyCode ?? 'Verify Code', style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
-            ),
-          ),
-          const SizedBox(height: 8),
-
-          // Resend button
-          Center(
-            child: TextButton(
-              onPressed: _resendCountdown > 0 ? null : _sendPhoneCode,
-              child: Text(
-                _resendCountdown > 0
-                    ? '${l10n?.verificationResendCode ?? 'Resend code'} (${_resendCountdown}s)'
-                    : l10n?.verificationResendCode ?? 'Resend code',
-                style: TextStyle(
-                  color: _resendCountdown > 0 ? AppColors.textTertiary : AppColors.richGold,
-                  fontSize: 13,
-                ),
-              ),
-            ),
-          ),
-        ],
-
-        if (_phoneError != null) ...[
-          const SizedBox(height: 8),
-          Text(_phoneError!, style: const TextStyle(color: AppColors.errorRed, fontSize: 13)),
-        ],
-
-        const SizedBox(height: 16),
-
-        // Responsibility notice
-        Container(
-          padding: const EdgeInsets.all(12),
-          decoration: BoxDecoration(
-            color: AppColors.warningAmber.withValues(alpha: 0.1),
-            borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-            border: Border.all(color: AppColors.warningAmber.withValues(alpha: 0.3)),
-          ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Icon(Icons.warning_amber_rounded, color: AppColors.warningAmber, size: 18),
-              const SizedBox(width: 8),
-              Expanded(
-                child: Text(
-                  l10n?.verificationPhoneResponsibility ?? 'By verifying with your phone number, you acknowledge that the owner of this number is personally responsible for all actions performed on this account.',
-                  style: Theme.of(context).textTheme.bodySmall?.copyWith(color: AppColors.textSecondary),
-                ),
-              ),
-            ],
-          ),
-        ),
-
-        // Switch to photo option
-        if (!_phoneVerified)
-          Center(
-            child: TextButton.icon(
-              onPressed: () => setState(() => _selectedMethod = 'photo'),
-              icon: const Icon(Icons.badge_outlined, color: AppColors.textTertiary, size: 18),
-              label: Text(
-                AppLocalizations.of(context)!.verificationOrMethod(AppLocalizations.of(context)!.verificationMethodPhoto),
-                style: const TextStyle(color: AppColors.textTertiary, fontSize: 13),
-              ),
-            ),
-          ),
-      ],
-    );
-  }
 }
-
-// ======================== Privacy Section ========================
 
 class _PrivacySection extends StatelessWidget {
   @override
@@ -804,93 +335,6 @@ class _PrivacyPoint extends StatelessWidget {
   }
 }
 
-// ======================== Method Chooser ========================
-
-class _MethodChooser extends StatelessWidget {
-
-  const _MethodChooser({required this.onPhotoSelected, required this.onPhoneSelected});
-  final VoidCallback onPhotoSelected;
-  final VoidCallback onPhoneSelected;
-
-  @override
-  Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context);
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          l10n?.verificationChooseMethod ?? 'Choose your verification method',
-          style: const TextStyle(color: AppColors.textPrimary, fontSize: 16, fontWeight: FontWeight.w600),
-        ),
-        const SizedBox(height: 16),
-        _MethodCard(
-          icon: Icons.badge_outlined,
-          title: l10n?.verificationMethodPhoto ?? 'ID Document',
-          subtitle: l10n?.verificationMethodPhotoDesc ?? 'Take a photo holding your ID next to your face',
-          onTap: onPhotoSelected,
-        ),
-        const SizedBox(height: 12),
-        _MethodCard(
-          icon: Icons.phone_android,
-          title: l10n?.verificationMethodPhone ?? 'Phone Number',
-          subtitle: l10n?.verificationMethodPhoneDesc ?? 'Verify via SMS code sent to your phone',
-          onTap: onPhoneSelected,
-        ),
-      ],
-    );
-  }
-}
-
-class _MethodCard extends StatelessWidget {
-
-  const _MethodCard({required this.icon, required this.title, required this.subtitle, required this.onTap});
-  final IconData icon;
-  final String title;
-  final String subtitle;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-      child: Container(
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          color: AppColors.backgroundCard,
-          borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-          border: Border.all(color: AppColors.divider),
-        ),
-        child: Row(
-          children: [
-            Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: AppColors.richGold.withValues(alpha: 0.1),
-                shape: BoxShape.circle,
-              ),
-              child: Icon(icon, color: AppColors.richGold, size: 28),
-            ),
-            const SizedBox(width: 16),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(title, style: const TextStyle(color: AppColors.textPrimary, fontSize: 16, fontWeight: FontWeight.w600)),
-                  const SizedBox(height: 4),
-                  Text(subtitle, style: const TextStyle(color: AppColors.textSecondary, fontSize: 13)),
-                ],
-              ),
-            ),
-            const Icon(Icons.chevron_right, color: AppColors.textTertiary, size: 24),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
 // ======================== Photo Widgets ========================
 
 class _VerificationTip extends StatelessWidget {
@@ -913,14 +357,6 @@ class _VerificationTip extends StatelessWidget {
       ),
     );
   }
-}
-
-class _CountryCode {
-
-  const _CountryCode(this.code, this.flag, this.dialCode);
-  final String code;
-  final String flag;
-  final String dialCode;
 }
 
 class _TakePhotoCard extends StatelessWidget {
@@ -1021,4 +457,33 @@ class _VerificationPhotoCard extends StatelessWidget {
       ],
     );
   }
+}
+
+class _SectionTitle extends StatelessWidget {
+  const _SectionTitle({required this.icon, required this.title, required this.subtitle});
+  final IconData icon;
+  final String title;
+  final String subtitle;
+
+  @override
+  Widget build(BuildContext context) => Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(icon, color: AppColors.richGold, size: 20),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  title,
+                  style: const TextStyle(
+                      color: AppColors.textPrimary, fontSize: 16, fontWeight: FontWeight.w600),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 6),
+          Text(subtitle, style: const TextStyle(color: AppColors.textSecondary, fontSize: 13)),
+        ],
+      );
 }
