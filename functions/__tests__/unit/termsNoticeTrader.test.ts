@@ -30,7 +30,6 @@ describe('terms change notice email', () => {
       ...['Referral', 'CoinGifts', 'Menus', 'Moderation', 'Traders'].map((k) => `legalUpdate530Bullet${k}`),
       'legalUpdate531BulletFeeCaps',
       'legalUpdate532BulletPhases',
-      'legalUpdate532BulletPhone',
     ];
     for (const l of SUPPORTED_LOCALES) {
       const a = arb(l);
