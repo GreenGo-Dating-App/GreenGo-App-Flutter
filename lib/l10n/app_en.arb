@@ -11918,6 +11918,14 @@
   "srvSupportNewMessageOnTicket": "New message on support ticket",
   "srvSupportUserSentMessage": "A user sent a new message.",
   "srvVerificationResubmit": "Please submit a new verification photo.",
+  "srvVerificationReviewExpired": "Your verification photo was not reviewed within 7 days, so we deleted it, as our Privacy Policy promises. Please send a new one.",
+  "srvBusinessDocumentExpired": "Your business verification document was not reviewed within 7 days, so we deleted it, as our Privacy Policy promises. Please send your request again.",
+  "@srvVerificationReviewExpired": {
+    "description": "Push + reverification notice: a registration ID photo pending review for 7 days was deleted (Privacy Policy 8.2(d))."
+  },
+  "@srvBusinessDocumentExpired": {
+    "description": "Push + business account notice: a business owner ID document pending review for 7 days was deleted (Privacy Policy 8.2(d), 8.4)."
+  },
   "srvVerificationResubmitReason": "Please submit a new verification photo. Reason: {reason}",
   "@srvVerificationResubmitReason": {
     "placeholders": {

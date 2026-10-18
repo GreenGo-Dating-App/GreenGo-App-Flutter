@@ -230,7 +230,12 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
                             ),
                             const SizedBox(height: 4),
                             Text(
-                              widget.rejectionReason!,
+                              // Server reason code: the photo waited 7 days
+                              // without a review and was deleted (Privacy
+                              // Policy 8.2(d)).
+                              widget.rejectionReason == 'reviewExpired'
+                                  ? l10n.srvVerificationReviewExpired
+                                  : widget.rejectionReason!,
                               style: TextStyle(
                                 color: AppColors.errorRed.withValues(alpha: 0.8),
                                 fontSize: 13,

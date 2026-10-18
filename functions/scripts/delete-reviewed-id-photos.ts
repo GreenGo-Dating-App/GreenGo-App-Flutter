@@ -5,7 +5,11 @@
  * request, never submitted, superseded) older than 7 days, and clear the
  * stored references. Keeps only the minimal record (see
  * src/safety/verificationPhotoRetention.ts). Images still awaiting a review
- * are NEVER deleted.
+ * younger than 7 days are NEVER deleted.
+ *
+ * Pending images older than 7 days are expired as the daily sweep does
+ * (Privacy Policy 8.2(d): deleted, user asked to upload again and notified);
+ * pass --no-expire to leave every pending review alone.
  *
  * DRY RUN BY DEFAULT: prints counts only (no uid, no path).
  * Resumable: it re-lists Storage on every run (deleted images are simply not
@@ -16,7 +20,7 @@
  *   npx tsc --outDir scripts/.out --module commonjs --target es2019 \
  *     --esModuleInterop --skipLibCheck --resolveJsonModule scripts/delete-reviewed-id-photos.ts
  *   GCLOUD_PROJECT=<project> STORAGE_BUCKET=<project>.appspot.com \
- *     node scripts/.out/delete-reviewed-id-photos.js [--apply] [--max-pages N] [--start-after NAME]
+ *     node scripts/.out/delete-reviewed-id-photos.js [--apply] [--no-expire] [--max-pages N] [--start-after NAME]
  */
 import * as admin from 'firebase-admin';
 
@@ -27,7 +31,7 @@ if (!admin.apps.length) admin.initializeApp({ projectId: project || undefined, s
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const retention = require('../../lib/safety/verificationPhotoRetention');
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const { ORPHAN_GRACE_MS } = require('../../lib/safety/verificationPhotoRetentionLogic');
+const { ORPHAN_GRACE_MS, PENDING_REVIEW_MAX_MS } = require('../../lib/safety/verificationPhotoRetentionLogic');
 
 function arg(name: string): string | null {
   const i = process.argv.indexOf(name);
@@ -43,7 +47,13 @@ async function main() {
 
   const fs = admin.firestore();
   const ports = retention.adminPorts(fs, admin.storage().bucket(bucketName));
-  const opts = { nowMs: Date.now(), dryRun: !apply, decidedGraceMs: 0, orphanGraceMs: ORPHAN_GRACE_MS, maxPages, pageSize: 500 };
+  // --no-expire: leave pending reviews alone (default: Privacy Policy 8.2(d),
+  // pending images older than 7 days are deleted and the user asked to resubmit).
+  const expire = !process.argv.includes('--no-expire');
+  const opts = {
+    nowMs: Date.now(), dryRun: !apply, decidedGraceMs: 0, orphanGraceMs: ORPHAN_GRACE_MS, maxPages, pageSize: 500,
+    ...(expire ? { expirePendingAfterMs: PENDING_REVIEW_MAX_MS } : {}),
+  };
   const passes: Array<{ prefix: string; matchGlob?: string }> = [
     { prefix: 'verifications/' },
     { prefix: 'profiles/', matchGlob: 'profiles/*/verifications/**' }, // pre-P1-4 uploads
@@ -68,7 +78,9 @@ function summary(s: any) {
   return {
     objects: s.objects,
     decidedWithImage: s.decided,
-    pendingKept: s.pending,
+    pendingTotal: s.pending,
+    pendingExpiredOver7Days: s.expired,
+    submissionsExpired: s.expiredSubmissions,
     orphans: s.orphan,
     notYetDue: s.notDue,
     deleted: s.deleted,

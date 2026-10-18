@@ -405,5 +405,7 @@
   "srvAppealOutcomeEmailSubject",
   "srvAppealPageTitle",
   "srvAppealPageInvalid",
-  "moderationDecisionAppealUntil"
+  "moderationDecisionAppealUntil",
+  "srvVerificationReviewExpired",
+  "srvBusinessDocumentExpired"
 ]

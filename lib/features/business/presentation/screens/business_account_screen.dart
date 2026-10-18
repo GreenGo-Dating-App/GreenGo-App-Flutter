@@ -67,6 +67,9 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
   // Verification-request state (a pending or approved request disables the
   // "Request verification" action).
   bool _verificationPending = false;
+  // The owner's ID document waited 7 days without a review and was deleted
+  // (Privacy Policy 8.2(d)); the request must be sent again.
+  bool _verificationExpired = false;
   bool _loadingVerification = true;
   final bool _submittingVerification = false;
 
@@ -90,6 +93,7 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
       if (mounted) {
         setState(() {
           _verificationPending = status == 'pending';
+          _verificationExpired = status == 'expired';
           _loadingVerification = false;
         });
       }
@@ -563,6 +567,15 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
                   ],
                 ),
                 const SizedBox(height: 12),
+                if (!widget.profile.businessVerified && _verificationExpired)
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 12),
+                    child: Text(
+                      l10n.srvBusinessDocumentExpired,
+                      style: const TextStyle(
+                          color: AppColors.errorRed, fontSize: 13),
+                    ),
+                  ),
                 if (!widget.profile.businessVerified)
                   SizedBox(
                     width: double.infinity,

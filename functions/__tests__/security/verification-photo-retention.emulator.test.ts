@@ -96,11 +96,11 @@ describe('registration ID photo', () => {
       .resolves.toEqual({ url: null, expiresAt: null, source: 'none' });
   });
 
-  test('pending photos survive the decision of another user and the sweep', async () => {
+  test('pending photos (< 7 days) survive the decision of another user and the sweep', async () => {
     const pending = await submitted('p1');
     await submitted('u2');
     await decide('u2', 'approved');
-    const far = Date.now() + 400 * 24 * 3600 * 1000;
+    const far = Date.now() + 6 * 24 * 3600 * 1000; // < 7 days: 8.2(d) expiry not reached
     await retention().runVerificationPhotoSweep(retention().adminPorts(db, bucket()), { nowMs: far });
     expect(await exists(pending)).toBe(true);
     expect((await db.doc('profiles_private/p1').get()).data()!.verificationPhotoPath).toBe(pending);
@@ -149,5 +149,49 @@ describe('business owner ID document', () => {
     expect(d.ownerDocumentUrl).toBeUndefined();
     expect(d).toMatchObject({ status: 'approved', businessName: 'Shop', ownerName: 'Ann' });
     expect(d.ownerDocumentDeletedAt).toBeInstanceOf(TS);
+  });
+});
+
+describe('Privacy Policy 8.2(d): pending review older than 7 days', () => {
+  const DAY = 24 * 3600 * 1000;
+
+  test('registration: image deleted, status needsResubmission/reviewExpired, leaves the admin queue', async () => {
+    const file = await submitted('x1');
+    const ports = retention().adminPorts(db, bucket());
+    await retention().runVerificationPhotoSweep(ports, { nowMs: Date.now() + 6 * DAY });
+    expect(await exists(file)).toBe(true);
+    const { stats } = await retention().runVerificationPhotoSweep(ports, { nowMs: Date.now() + 7 * DAY + 60_000 });
+    expect(stats.expiredSubmissions).toBe(1);
+    expect(await exists(file)).toBe(false);
+    const pub = (await db.doc('profiles/x1').get()).data()!;
+    expect(pub.verificationStatus).toBe('needsResubmission');
+    expect(pub.verificationRejectionReason).toBe('reviewExpired');
+    const priv = (await db.doc('profiles_private/x1').get()).data()!;
+    expect(priv.verificationPhotoPath).toBeUndefined();
+    expect(priv.verificationReview).toMatchObject({ verified: false, status: 'expired', reviewedBy: 'system' });
+    // the in-app admin queue query (verificationStatus == 'pending') no longer returns it
+    const queue = await db.collection('profiles').where('verificationStatus', '==', 'pending').get();
+    expect(queue.docs.map((d) => d.id)).not.toContain('x1');
+  });
+
+  test('business: document deleted, request expired, owner gets an in-app notification', async () => {
+    const path = 'business_verification/bx/owner_document.jpg';
+    await put(path);
+    await db.doc('business_verification_requests/bx').set({
+      status: 'pending', businessName: 'Shop', phoneVerified: true, submittedAt: TS.now(),
+      ownerDocumentUrl: 'https://firebasestorage.googleapis.com/v0/b/x/o/business_verification%2Fbx%2Fowner_document.jpg?alt=media',
+    });
+    await db.doc('business_verification_requests/nodoc').set({ status: 'pending', phoneVerified: true, submittedAt: TS.now() });
+    const ports = retention().adminPorts(db, bucket());
+    await retention().runVerificationPhotoSweep(ports, { nowMs: Date.now() + 8 * DAY });
+    expect(await exists(path)).toBe(false);
+    const d = (await db.doc('business_verification_requests/bx').get()).data()!;
+    expect(d).toMatchObject({ status: 'expired', expiredReason: 'documentExpired', businessName: 'Shop' });
+    expect(d.ownerDocumentUrl).toBeUndefined();
+    const notes = await db.collection('notifications').where('userId', '==', 'bx').get();
+    expect(notes.size).toBe(1);
+    expect(notes.docs[0].get('bodyKey')).toBe('srvBusinessDocumentExpired');
+    // without a document (now optional) the request stays pending
+    expect((await db.doc('business_verification_requests/nodoc').get()).get('status')).toBe('pending');
   });
 });

@@ -7026,6 +7026,8 @@
   "srvSupportNewMessageOnTicket": "Nuevo mensaje en un ticket de soporte",
   "srvSupportUserSentMessage": "Un usuario envió un mensaje nuevo.",
   "srvVerificationResubmit": "Envía una nueva foto de verificación.",
+  "srvVerificationReviewExpired": "Tu foto de verificación no se revisó en 7 días, así que la eliminamos, como promete nuestra Política de Privacidad. Envía una nueva.",
+  "srvBusinessDocumentExpired": "Tu documento de verificación de empresa no se revisó en 7 días, así que lo eliminamos, como promete nuestra Política de Privacidad. Envía tu solicitud de nuevo.",
   "srvVerificationResubmitReason": "Envía una nueva foto de verificación. Motivo: {reason}",
   "srvVerificationRejected": "Tu verificación no fue aprobada. Inténtalo de nuevo.",
   "srvVerificationRejectedReason": "Tu verificación no fue aprobada. Motivo: {reason}",

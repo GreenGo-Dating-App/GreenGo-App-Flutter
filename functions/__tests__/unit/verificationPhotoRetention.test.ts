@@ -11,6 +11,7 @@ import {
   isDue,
   latestFinalAction,
   ownerOfPath,
+  pendingReviewExpired,
   referencesToClear,
   registrationReviewRecord,
   storagePathOfRef,
@@ -37,6 +38,20 @@ class Fake implements RetentionPorts {
   failDeletes = new Set<string>();
   deleteCalls: string[] = [];
   logs: string[] = [];
+  notified: string[] = [];
+  /** Simulates an admin deciding between the sweep's read and its write. */
+  raceStatus: string | null = null;
+
+  async updateIfPending(path: string, field: string, patch: Record<string, unknown>, deleteFields: string[] = []) {
+    if (this.raceStatus) this.docs.set(path, { ...(this.docs.get(path) ?? {}), [field]: this.raceStatus });
+    const d = this.docs.get(path);
+    if (!d || d[field] !== 'pending') return false;
+    await this.mergeDoc(path, patch, deleteFields);
+    return true;
+  }
+  async notifyBusinessDocumentExpired(uid: string) {
+    this.notified.push(uid);
+  }
 
   async listPage(prefix: string, startOffset: string | null, max: number, matchGlob?: string, pageToken?: string | null) {
     let names = [...this.objects.keys()].filter((n) => n.startsWith(prefix)).sort();
@@ -312,11 +327,11 @@ describe('business owner ID document', () => {
 // ─────────────────────────────────────────────── daily sweep
 
 describe('daily sweep', () => {
-  it('applies the grace periods, never touches pending, logs counts only', async () => {
+  it('applies the grace periods, keeps pending younger than 7 days', async () => {
     const f = new Fake();
     registered(f, 'a1', 'approved'); // decided T, now = T + 2 h -> inside 24 h grace
     registered(f, 'a2', 'approved', { verificationReviewedAt: { toMillis: () => NOW - 3 * DAY_MS } }, NOW - 4 * DAY_MS);
-    registered(f, 'p1', 'pending', {}, NOW - 100 * DAY_MS);
+    registered(f, 'p1', 'pending', {}, NOW - 6 * DAY_MS);
     f.objects.set('verifications/gone/1.jpg', NOW - 8 * DAY_MS); // account deleted
     f.objects.set('verifications/new/1.jpg', NOW - 1 * DAY_MS); // onboarding in progress
     f.objects.set('business_verification/b1/owner_document.jpg', NOW - 3 * DAY_MS);
@@ -356,5 +371,111 @@ describe('daily sweep', () => {
     expect(cursor).toBeNull();
     expect([...f.objects.keys()].sort()).toEqual(['profiles/old/p.jpg', 'profiles/old/photos/p.jpg']);
     expect(s.deleted).toBe(1);
+  });
+});
+
+// ─────────────────────────────────────────────── 8.2(d): 7 days pending max
+
+describe('pending review older than 7 days (Privacy Policy 8.2(d))', () => {
+  it('registration: deleted whatever the outcome, user asked to resubmit, queue item leaves pending', async () => {
+    const f = new Fake();
+    const path = registered(f, 'e1', 'pending', {
+      verificationPhotoUrl: 'https://firebasestorage.googleapis.com/v0/b/b/o/verifications%2Fe1%2F1.jpg?alt=media',
+    }, NOW - 8 * DAY_MS);
+    const keep = registered(f, 'e2', 'pending', {}, NOW - 6 * DAY_MS);
+    const { stats } = await runVerificationPhotoSweep(f, { nowMs: NOW });
+    expect(f.objects.has(path)).toBe(false);
+    expect(f.objects.has(keep)).toBe(true);
+    const pub = f.docs.get('profiles/e1')!;
+    expect(pub).toMatchObject({
+      verificationStatus: 'needsResubmission', verificationRejectionReason: 'reviewExpired', verificationExpiredAt: { ms: NOW },
+    });
+    expect(pub.verificationPhotoUrl).toBeUndefined();
+    const priv = f.docs.get('profiles_private/e1')!;
+    expect(priv.verificationPhotoPath).toBeUndefined();
+    expect(priv.verificationReview).toEqual({
+      verified: false, status: 'expired', reviewedAt: null, reviewedBy: 'system', method: 'photo', imageDeletedAt: { ms: NOW },
+    });
+    expect(f.docs.get('profiles/e2')!.verificationStatus).toBe('pending');
+    expect(stats).toMatchObject({ expired: 1, expiredSubmissions: 1 });
+  });
+
+  it('exactly 7 days expires, unknown upload time falls back to the submission time', () => {
+    expect(pendingReviewExpired({ name: 'x', createdMs: NOW - 7 * DAY_MS }, NOW)).toBe(true);
+    expect(pendingReviewExpired({ name: 'x', createdMs: NOW - 7 * DAY_MS + 1 }, NOW)).toBe(false);
+    expect(pendingReviewExpired({ name: 'x', createdMs: NaN }, NOW, undefined, NOW - 8 * DAY_MS)).toBe(true);
+    expect(pendingReviewExpired({ name: 'x', createdMs: NaN }, NOW)).toBe(false);
+  });
+
+  it('the decision path never expires (no option = pending kept)', async () => {
+    const f = new Fake();
+    const path = registered(f, 'd1', 'pending', {}, NOW - 30 * DAY_MS);
+    await processRegistrationUser(f, 'd1', { nowMs: NOW, decidedGraceMs: 0 });
+    expect(f.objects.has(path)).toBe(true);
+  });
+
+  it('an admin deciding at the same moment wins: nothing is expired', async () => {
+    const f = new Fake();
+    const path = registered(f, 'race', 'pending', {}, NOW - 9 * DAY_MS);
+    f.raceStatus = 'approved';
+    const r = await processRegistrationUser(f, 'race', { nowMs: NOW, expirePendingAfterMs: 7 * DAY_MS });
+    expect(r).toMatchObject({ expired: 0, expiredSubmission: false });
+    expect(f.objects.has(path)).toBe(true); // the approval trigger deletes it
+    expect(f.docs.get('profiles/race')!.verificationRejectionReason).toBeUndefined();
+  });
+
+  it('dry run counts the expiry without changing anything', async () => {
+    const f = new Fake();
+    const path = registered(f, 'dr', 'pending', {}, NOW - 9 * DAY_MS);
+    const { stats } = await runVerificationPhotoSweep(f, { nowMs: NOW, dryRun: true });
+    expect(stats.expired).toBe(1);
+    expect(f.objects.has(path)).toBe(true);
+    expect(f.docs.get('profiles/dr')!.verificationStatus).toBe('pending');
+  });
+
+  it('business: document deleted, request expired, owner notified once', async () => {
+    const f = new Fake();
+    f.objects.set('business_verification/b/owner_document.jpg', NOW - 8 * DAY_MS);
+    f.docs.set('business_verification_requests/b', {
+      status: 'pending', businessName: 'Shop', phoneVerified: true,
+      ownerDocumentUrl: 'https://firebasestorage.googleapis.com/v0/b/x/o/business_verification%2Fb%2Fowner_document.jpg?alt=media',
+    });
+    await runVerificationPhotoSweep(f, { nowMs: NOW });
+    expect(f.objects.size).toBe(0);
+    const d = f.docs.get('business_verification_requests/b')!;
+    expect(d.ownerDocumentUrl).toBeUndefined();
+    expect(d).toMatchObject({ status: 'expired', expiredReason: 'documentExpired', businessName: 'Shop', expiredAt: { ms: NOW } });
+    expect(f.notified).toEqual(['b']);
+    await runVerificationPhotoSweep(f, { nowMs: NOW + DAY_MS });
+    expect(f.notified).toEqual(['b']);
+    // the expiry write re-fires onBusinessVerificationDecided: a no-op (nothing left)
+    expect(businessDecisionToProcess({ status: 'pending' }, { status: 'expired' })).toBe(true);
+    expect((await processBusinessUser(f, 'b', { nowMs: NOW, decidedGraceMs: 0 })).recordWritten).toBe(false);
+  });
+
+  it('business: the document is optional - a request without one is never expired', async () => {
+    const f = new Fake();
+    f.docs.set('business_verification_requests/n', {
+      status: 'pending', phoneVerified: true, submittedAt: { toMillis: () => NOW - 30 * DAY_MS },
+    });
+    f.objects.set('business_verification/n/owner_document.jpg', NOW - 8 * DAY_MS); // uploaded, never attached
+    await runVerificationPhotoSweep(f, { nowMs: NOW });
+    expect(f.docs.get('business_verification_requests/n')!.status).toBe('pending');
+    expect(f.objects.size).toBe(0); // the stray upload was not under review
+    expect(f.notified).toEqual([]);
+    const g = new Fake();
+    g.docs.set('business_verification_requests/z', { status: 'pending' });
+    const r = await processBusinessUser(g, 'z', { nowMs: NOW, expirePendingAfterMs: 7 * DAY_MS });
+    expect(r).toMatchObject({ objects: 0, expired: 0 });
+    expect(g.docs.get('business_verification_requests/z')!.status).toBe('pending');
+  });
+
+  it('business: pending document younger than 7 days is kept', async () => {
+    const f = new Fake();
+    f.objects.set('business_verification/k/owner_document.jpg', NOW - 6 * DAY_MS);
+    f.docs.set('business_verification_requests/k', { status: 'pending', ownerDocumentUrl: 'business_verification/k/owner_document.jpg' });
+    await runVerificationPhotoSweep(f, { nowMs: NOW });
+    expect(f.objects.size).toBe(1);
+    expect(f.docs.get('business_verification_requests/k')!.status).toBe('pending');
   });
 });

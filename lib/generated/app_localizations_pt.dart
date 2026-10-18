@@ -22475,6 +22475,14 @@ class AppLocalizationsPt extends AppLocalizations {
   String get srvVerificationResubmit => 'Envia uma nova foto de verificação.';
 
   @override
+  String get srvVerificationReviewExpired =>
+      'A tua foto de verificação não foi analisada em 7 dias, por isso eliminámo-la, como promete a nossa Política de Privacidade. Envia uma nova.';
+
+  @override
+  String get srvBusinessDocumentExpired =>
+      'O teu documento de verificação do negócio não foi analisado em 7 dias, por isso eliminámo-lo, como promete a nossa Política de Privacidade. Envia o pedido novamente.';
+
+  @override
   String srvVerificationResubmitReason(String reason) {
     return 'Envia uma nova foto de verificação. Motivo: $reason';
   }
@@ -48517,6 +48525,14 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get srvVerificationResubmit => 'Envie uma nova foto de verificação.';
+
+  @override
+  String get srvVerificationReviewExpired =>
+      'Sua foto de verificação não foi analisada em 7 dias, então a excluímos, como promete nossa Política de Privacidade. Envie uma nova.';
+
+  @override
+  String get srvBusinessDocumentExpired =>
+      'Seu documento de verificação do negócio não foi analisado em 7 dias, então o excluímos, como promete nossa Política de Privacidade. Envie sua solicitação novamente.';
 
   @override
   String srvVerificationResubmitReason(String reason) {

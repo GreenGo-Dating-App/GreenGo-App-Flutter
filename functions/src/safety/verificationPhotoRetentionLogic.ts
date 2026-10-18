@@ -18,7 +18,9 @@
  *     referenced by business_verification_requests/{uid}.ownerDocumentUrl.
  *     Decided when the request status leaves 'pending'.
  *
- * An image that may still be awaiting a review is NEVER deleted.
+ * An image awaiting a review is kept at most 7 days (8.2(d), owner decision
+ * 2026-10-17): then the daily sweep deletes it whatever the outcome and asks
+ * the user to upload again. The decision path never deletes a pending image.
  */
 
 export const HOUR_MS = 60 * 60 * 1000;
@@ -28,6 +30,19 @@ export const DAY_MS = 24 * HOUR_MS;
 export const DECIDED_GRACE_MS = 24 * HOUR_MS;
 /** Sweep: an image no review will ever look at (abandoned / superseded upload). */
 export const ORPHAN_GRACE_MS = 7 * DAY_MS;
+
+/**
+ * Privacy Policy 8.2(d) (owner decision 2026-10-17, option A): an ID image a
+ * person must review is kept at most 7 days, then DELETED whatever the
+ * outcome, and the user is asked to upload again. Applies to the
+ * registration photo and the business owner's ID document (8.4).
+ */
+export const PENDING_REVIEW_MAX_MS = 7 * DAY_MS;
+
+/** profiles.verificationRejectionReason written when a review expired. */
+export const REVIEW_EXPIRED_REASON = 'reviewExpired';
+/** business_verification_requests.status written when its document expired. */
+export const BUSINESS_EXPIRED_STATUS = 'expired';
 
 /** profiles.verificationStatus values that are a final admin decision. */
 export const FINAL_REGISTRATION_STATUSES: ReadonlySet<string> = new Set([
@@ -43,7 +58,7 @@ export const FINAL_REGISTRATION_ACTIONS: Readonly<Record<string, string>> = {
 
 /** business_verification_requests.status values that are a decision. */
 export const FINAL_BUSINESS_STATUSES: ReadonlySet<string> = new Set([
-  'approved', 'verified', 'rejected', 'denied',
+  'approved', 'verified', 'rejected', 'denied', 'expired',
 ]);
 
 /** Storage prefixes of a user's registration photos (current + legacy). */
@@ -215,6 +230,22 @@ export function latestFinalAction(
     }
   }
   return best;
+}
+
+/**
+ * Whether a PENDING image waited longer than [maxMs] for its review, counted
+ * from the upload ([obj.createdMs]; [fallbackMs] = the submission time when
+ * the upload time is unknown). Never true without a usable time.
+ */
+export function pendingReviewExpired(
+  obj: StoredObject,
+  nowMs: number,
+  maxMs: number = PENDING_REVIEW_MAX_MS,
+  fallbackMs: number | null = null,
+): boolean {
+  const from = Number.isFinite(obj.createdMs) ? obj.createdMs
+    : (fallbackMs !== null && Number.isFinite(fallbackMs) ? fallbackMs : null);
+  return from !== null && nowMs >= from + maxMs;
 }
 
 // ───────────────────────────────────────────────────── business owner ID

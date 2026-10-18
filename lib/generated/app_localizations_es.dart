@@ -22503,6 +22503,14 @@ class AppLocalizationsEs extends AppLocalizations {
   String get srvVerificationResubmit => 'Envía una nueva foto de verificación.';
 
   @override
+  String get srvVerificationReviewExpired =>
+      'Tu foto de verificación no se revisó en 7 días, así que la eliminamos, como promete nuestra Política de Privacidad. Envía una nueva.';
+
+  @override
+  String get srvBusinessDocumentExpired =>
+      'Tu documento de verificación de empresa no se revisó en 7 días, así que lo eliminamos, como promete nuestra Política de Privacidad. Envía tu solicitud de nuevo.';
+
+  @override
   String srvVerificationResubmitReason(String reason) {
     return 'Envía una nueva foto de verificación. Motivo: $reason';
   }

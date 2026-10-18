@@ -38700,6 +38700,18 @@ abstract class AppLocalizations {
   /// **'Please submit a new verification photo.'**
   String get srvVerificationResubmit;
 
+  /// Push + reverification notice: a registration ID photo pending review for 7 days was deleted (Privacy Policy 8.2(d)).
+  ///
+  /// In en, this message translates to:
+  /// **'Your verification photo was not reviewed within 7 days, so we deleted it, as our Privacy Policy promises. Please send a new one.'**
+  String get srvVerificationReviewExpired;
+
+  /// Push + business account notice: a business owner ID document pending review for 7 days was deleted (Privacy Policy 8.2(d), 8.4).
+  ///
+  /// In en, this message translates to:
+  /// **'Your business verification document was not reviewed within 7 days, so we deleted it, as our Privacy Policy promises. Please send your request again.'**
+  String get srvBusinessDocumentExpired;
+
   /// No description provided for @srvVerificationResubmitReason.
   ///
   /// In en, this message translates to:

@@ -579,9 +579,13 @@ export const onVerificationStatusChange = onDocumentUpdated(
           { isCritical: true },
         );
       } else if (afterStatus === 'needsResubmission') {
-        const body = reason
-          ? lt('srvVerificationResubmitReason', { reason: String(reason) })
-          : lt('srvVerificationResubmit');
+        // Privacy Policy 8.2(d): not reviewed within 7 days -> photo deleted
+        // by purgeReviewedVerificationPhotos, the user must send a new one.
+        const body = afterData.verificationRejectionReason === 'reviewExpired'
+          ? lt('srvVerificationReviewExpired')
+          : reason
+            ? lt('srvVerificationResubmitReason', { reason: String(reason) })
+            : lt('srvVerificationResubmit');
         await sendPushToUser(
           userId,
           'verification',

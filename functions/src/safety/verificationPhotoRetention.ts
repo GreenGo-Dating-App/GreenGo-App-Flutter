@@ -22,9 +22,17 @@
  *   - purgeReviewedVerificationPhotos (daily): retries failed deletes and
  *     catches decisions recorded without admin_actions (24 h grace), deletes
  *     orphans (7 days), clears dangling references. Paged, bounded, resumable.
+ *     Privacy Policy 8.2(d): an image still PENDING review 7 days after its
+ *     upload is deleted whatever the outcome; the submission becomes
+ *       registration  profiles.verificationStatus 'needsResubmission' +
+ *                     verificationRejectionReason 'reviewExpired' (leaves
+ *                     the admin queue; onVerificationStatusChange pushes
+ *                     srvVerificationReviewExpired), record status 'expired';
+ *       business      request status 'expired' (+ expiredReason
+ *                     'documentExpired'), in-app + push notification. A
+ *                     request WITHOUT an owner document (optional) is
+ *                     never expired.
  *   - scripts/delete-reviewed-id-photos.ts: one-off backfill (dry run default).
- *
- * Never deletes an image that may still be awaiting a review.
  */
 import * as admin from 'firebase-admin';
 import { onDocumentWritten } from 'firebase-functions/v2/firestore';
@@ -34,8 +42,11 @@ import {
   BusinessState,
   DECIDED_GRACE_MS,
   GraceOpts,
+  BUSINESS_EXPIRED_STATUS,
   ORPHAN_GRACE_MS,
+  PENDING_REVIEW_MAX_MS,
   PhotoClass,
+  REVIEW_EXPIRED_REASON,
   RegistrationState,
   StoredObject,
   businessPrefix,
@@ -46,6 +57,7 @@ import {
   isFinalRegistrationStatus,
   latestFinalAction,
   ownerOfPath,
+  pendingReviewExpired,
   referencesToClear,
   registrationPrefixes,
   registrationReviewRecord,
@@ -70,6 +82,13 @@ export interface RetentionPorts {
   /** Merge [patch] into [path] and delete [deleteFields] (top-level). */
   mergeDoc(path: string, patch: Record<string, unknown>, deleteFields?: string[]): Promise<void>;
   adminActions(uid: string): Promise<Array<{ actionType?: unknown; timestampMs: number; performedBy?: unknown }>>;
+  /**
+   * Transactionally: when [path].[field] is still 'pending', merge [patch]
+   * (and delete [deleteFields]) and return true; otherwise change nothing.
+   */
+  updateIfPending(path: string, field: string, patch: Record<string, unknown>, deleteFields?: string[]): Promise<boolean>;
+  /** Tell the business owner that the ID document expired (in-app + push). */
+  notifyBusinessDocumentExpired(uid: string): Promise<void>;
   timestamp(ms: number): unknown;
   log(message: string): void;
 }
@@ -135,6 +154,35 @@ export function adminPorts(
         return { actionType: x.actionType, performedBy: x.performedBy, timestampMs: toMillis(x.timestamp) ?? NaN };
       });
     },
+    async updateIfPending(path, field, patch, deleteFields = []) {
+      const ref = fs.doc(path);
+      return fs.runTransaction(async (tx) => {
+        const snap = await tx.get(ref);
+        if (!snap.exists || snap.get(field) !== 'pending') return false;
+        const out: Record<string, unknown> = { ...patch };
+        for (const f of deleteFields) out[f] = admin.firestore.FieldValue.delete();
+        tx.update(ref, out);
+        return true;
+      });
+    },
+    async notifyBusinessDocumentExpired(uid) {
+      try {
+        // Lazy: keeps the notifications module out of the trigger cold start.
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
+        const { emitNotification } = require('../notifications/notifyHelpers');
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
+        const { lt } = require('../shared/i18n');
+        await emitNotification({
+          recipientId: uid,
+          type: 'verification',
+          title: lt('notifServerVerificationUpdate'),
+          body: lt('srvBusinessDocumentExpired'),
+          data: { type: 'business_verification_expired' },
+        });
+      } catch (e) {
+        console.error('notifyBusinessDocumentExpired failed', (e as Error)?.message);
+      }
+    },
     timestamp: (ms) => admin.firestore.Timestamp.fromMillis(ms),
     log: (m) => console.log(m),
   };
@@ -165,10 +213,17 @@ export interface UserResult {
   notDue: number;
   cleared: number;
   recordWritten: boolean;
+  /** Pending images deleted because the review took longer than 7 days. */
+  expired: number;
+  /** The submission was set to "expired, please resubmit". */
+  expiredSubmission: boolean;
 }
 
 function emptyResult(): UserResult {
-  return { objects: 0, deleted: 0, failed: 0, pending: 0, decided: 0, orphan: 0, notDue: 0, cleared: 0, recordWritten: false };
+  return {
+    objects: 0, deleted: 0, failed: 0, pending: 0, decided: 0, orphan: 0, notDue: 0, cleared: 0,
+    recordWritten: false, expired: 0, expiredSubmission: false,
+  };
 }
 
 export interface ProcessOpts extends GraceOpts {
@@ -176,6 +231,24 @@ export interface ProcessOpts extends GraceOpts {
   dryRun?: boolean;
   /** The decision that triggered this run (admin_actions row / event time). */
   decisionHint?: { atMs: number; by?: string | null } | null;
+  /**
+   * Privacy Policy 8.2(d): delete PENDING images older than this (from the
+   * upload) and ask the user to upload again. Sweep/backfill only; unset =
+   * pending images are never touched.
+   */
+  expirePendingAfterMs?: number;
+}
+
+async function deleteAll(ports: RetentionPorts, names: string[], deleted: Set<string>, r: UserResult) {
+  for (const n of names) {
+    if (deleted.has(n)) continue;
+    if (await ports.deleteObject(n)) {
+      deleted.add(n);
+      r.deleted++;
+    } else {
+      r.failed++;
+    }
+  }
 }
 
 function tally(r: UserResult, cls: PhotoClass) {
@@ -227,32 +300,56 @@ export async function processRegistrationUser(
   const st: RegistrationState = { profileExists: !!profile, status, reviewedAtMs, referencedPaths };
 
   const deleted = new Set<string>();
+  const pendingObjs: StoredObject[] = [];
   for (const o of objects) {
     const cls = classifyRegistrationPhoto(o, st);
     tally(r, cls);
+    if (cls === 'pending') pendingObjs.push(o);
     if (!isDue(cls, o, reviewedAtMs, opts.nowMs, opts)) {
       if (cls !== 'pending') r.notDue++;
       continue;
     }
     if (opts.dryRun) continue;
-    if (await ports.deleteObject(o.name)) {
-      deleted.add(o.name);
-      r.deleted++;
+    await deleteAll(ports, [o.name], deleted, r);
+  }
+
+  // Privacy Policy 8.2(d): a submission nobody reviewed within 7 days.
+  const submittedMs = toMillis(profile?.verificationSubmittedAt);
+  const expire = opts.expirePendingAfterMs !== undefined && status === 'pending' && pendingObjs.length > 0
+    && pendingObjs.every((o) => pendingReviewExpired(o, opts.nowMs, opts.expirePendingAfterMs, submittedMs));
+  let expiredNow = false;
+  if (expire) {
+    r.expired = pendingObjs.length;
+    if (opts.dryRun) return r;
+    // Status first, conditionally: an admin deciding at the same moment wins
+    // (its own trigger then deletes the image).
+    expiredNow = await ports.updateIfPending(`profiles/${uid}`, 'verificationStatus', {
+      verificationStatus: 'needsResubmission',
+      verificationRejectionReason: REVIEW_EXPIRED_REASON,
+      verificationExpiredAt: ports.timestamp(opts.nowMs),
+    });
+    if (expiredNow) {
+      r.expiredSubmission = true;
+      await deleteAll(ports, pendingObjs.map((o) => o.name), deleted, r);
     } else {
-      r.failed++;
+      r.expired = 0;
     }
   }
   if (opts.dryRun || !profile) return r; // no profile: account gone, nothing to update
 
   const existing = new Set(objects.map((o) => o.name).filter((n) => !deleted.has(n)));
-  const reviewPending = status === 'pending';
+  const reviewPending = status === 'pending' && !expiredNow;
   const clearPub = referencesToClear(refsPub, deleted, existing, reviewPending);
   const clearPriv = referencesToClear(refsPriv, deleted, existing, reviewPending);
   if (clearPub.length) await ports.mergeDoc(`profiles/${uid}`, {}, clearPub);
-  const final = isFinalRegistrationStatus(status);
+  const final = isFinalRegistrationStatus(status) || expiredNow;
   const writeRecord = final && (deleted.size > 0 || clearPub.length > 0 || clearPriv.length > 0);
   if (clearPriv.length || writeRecord) {
-    const rec = registrationReviewRecord({
+    const rec = expiredNow ? {
+      verified: false, status: 'expired', reviewedAtMs: null, reviewedBy: 'system',
+      method: typeof profile.verificationMethod === 'string' && profile.verificationMethod !== 'phone'
+        ? profile.verificationMethod : 'photo',
+    } : registrationReviewRecord({
       status,
       reviewedAtMs,
       reviewedBy: (typeof profile.verificationReviewedBy === 'string' ? profile.verificationReviewedBy : null)
@@ -292,23 +389,60 @@ export async function processBusinessUser(
 
   const status = typeof req?.status === 'string' ? req.status : null;
   const decidedAtMs = opts.decisionHint?.atMs
-    ?? toMillis(req?.reviewedAt) ?? toMillis(req?.decidedAt) ?? toMillis(req?.updatedAt);
+    ?? toMillis(req?.reviewedAt) ?? toMillis(req?.decidedAt) ?? toMillis(req?.expiredAt) ?? toMillis(req?.updatedAt);
   const st: BusinessState = { requestExists: !!req, status, decidedAtMs };
 
   const deleted = new Set<string>();
+  const pendingObjs: StoredObject[] = [];
   for (const o of objects) {
     const cls = classifyBusinessDocument(o, st);
     tally(r, cls);
+    if (cls === 'pending') pendingObjs.push(o);
     if (!isDue(cls, o, decidedAtMs, opts.nowMs, opts)) {
       if (cls !== 'pending') r.notDue++;
       continue;
     }
     if (opts.dryRun) continue;
-    if (await ports.deleteObject(o.name)) {
-      deleted.add(o.name);
-      r.deleted++;
-    } else {
-      r.failed++;
+    await deleteAll(ports, [o.name], deleted, r);
+  }
+
+  // Privacy Policy 8.2(d) via 8.4: the owner's ID document waited 7 days.
+  // The document is optional (phone-only verification): a pending request
+  // without one is never expired; a stray upload it does not reference is
+  // just deleted.
+  if (opts.expirePendingAfterMs !== undefined && status === 'pending' && pendingObjs.length > 0) {
+    const submittedMs = toMillis(req?.submittedAt);
+    const old = pendingObjs.filter((o) => pendingReviewExpired(o, opts.nowMs, opts.expirePendingAfterMs, submittedMs));
+    const referenced = typeof refs.ownerDocumentUrl === 'string' && refs.ownerDocumentUrl.length > 0;
+    const refPath = referenced ? storagePathOfRef(refs.ownerDocumentUrl) : null;
+    const refObj = refPath !== null ? pendingObjs.find((o) => o.name === refPath) : undefined;
+    // The referenced document expired (unknown path: every pending object expired).
+    const refExpired = referenced && (refObj
+      ? old.includes(refObj)
+      : old.length === pendingObjs.length);
+    if (old.length) {
+      r.expired = old.length;
+      if (opts.dryRun) return r;
+      if (refExpired) {
+        const done = await ports.updateIfPending(`business_verification_requests/${uid}`, 'status', {
+          status: BUSINESS_EXPIRED_STATUS,
+          expiredReason: 'documentExpired',
+          expiredAt: ports.timestamp(opts.nowMs),
+          ownerDocumentDeletedAt: ports.timestamp(opts.nowMs),
+        }, ['ownerDocumentUrl']);
+        if (!done) {
+          r.expired = 0;
+          return r;
+        }
+        r.expiredSubmission = true;
+        r.cleared++;
+        r.recordWritten = true;
+        await deleteAll(ports, pendingObjs.map((o) => o.name), deleted, r);
+        await ports.notifyBusinessDocumentExpired(uid);
+        return r;
+      }
+      // Uploads the request does not reference: not under review.
+      await deleteAll(ports, old.filter((o) => o !== refObj).map((o) => o.name), deleted, r);
     }
   }
   if (opts.dryRun || !req) return r;
@@ -342,6 +476,10 @@ export interface SweepStats {
   cleared: number;
   danglingCleared: number;
   pages: number;
+  /** Pending images deleted after 7 days without a review (8.2(d)). */
+  expired: number;
+  /** Submissions set to "expired, please resubmit". */
+  expiredSubmissions: number;
 }
 
 function addTo(s: SweepStats, r: UserResult) {
@@ -353,10 +491,15 @@ function addTo(s: SweepStats, r: UserResult) {
   s.orphan += r.orphan;
   s.notDue += r.notDue;
   s.cleared += r.cleared;
+  s.expired += r.expired;
+  if (r.expiredSubmission) s.expiredSubmissions++;
 }
 
 export function emptyStats(): SweepStats {
-  return { users: 0, objects: 0, deleted: 0, failed: 0, pending: 0, decided: 0, orphan: 0, notDue: 0, cleared: 0, danglingCleared: 0, pages: 0 };
+  return {
+    users: 0, objects: 0, deleted: 0, failed: 0, pending: 0, decided: 0, orphan: 0, notDue: 0, cleared: 0,
+    danglingCleared: 0, pages: 0, expired: 0, expiredSubmissions: 0,
+  };
 }
 
 /**
@@ -412,7 +555,11 @@ export async function sweepPrefix(
  */
 export async function runVerificationPhotoSweep(
   ports: RetentionPorts,
-  opts: { nowMs: number; maxPages?: number; pageSize?: number; dryRun?: boolean; cursors?: Record<string, string | null> },
+  opts: {
+    nowMs: number; maxPages?: number; pageSize?: number; dryRun?: boolean; cursors?: Record<string, string | null>;
+    /** Default PENDING_REVIEW_MAX_MS (Privacy Policy 8.2(d)); null disables the expiry. */
+    expirePendingAfterMs?: number | null;
+  },
 ): Promise<{ stats: SweepStats; cursors: Record<string, string | null> }> {
   const stats = emptyStats();
   const cursors: Record<string, string | null> = { ...(opts.cursors ?? {}) };
@@ -420,6 +567,8 @@ export async function runVerificationPhotoSweep(
     cursors[prefix] = await sweepPrefix(ports, prefix, cursors[prefix] ?? null, {
       nowMs: opts.nowMs, dryRun: opts.dryRun, maxPages: opts.maxPages, pageSize: opts.pageSize,
       decidedGraceMs: DECIDED_GRACE_MS, orphanGraceMs: ORPHAN_GRACE_MS,
+      expirePendingAfterMs: opts.expirePendingAfterMs === null ? undefined
+        : (opts.expirePendingAfterMs ?? PENDING_REVIEW_MAX_MS),
     }, stats);
   }
   return { stats, cursors };

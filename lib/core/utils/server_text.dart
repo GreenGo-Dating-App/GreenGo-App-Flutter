@@ -652,6 +652,8 @@ String? serverText(
       return l10n.srvBundleNotifications(_int(p['count']));
     case 'srvBundleProfileViews':
       return l10n.srvBundleProfileViews(_int(p['count']));
+    case 'srvBusinessDocumentExpired':
+      return l10n.srvBusinessDocumentExpired;
     case 'srvChallengeCompletedTitle':
       return l10n.srvChallengeCompletedTitle(_str(p['challenge']));
     case 'srvChallengeRewardsBody':
@@ -824,6 +826,8 @@ String? serverText(
       return l10n.srvVerificationResubmit;
     case 'srvVerificationResubmitReason':
       return l10n.srvVerificationResubmitReason(_str(p['reason']));
+    case 'srvVerificationReviewExpired':
+      return l10n.srvVerificationReviewExpired;
     case 'srvYouWereAddedToGroup':
       return l10n.srvYouWereAddedToGroup;
     case 'superLikedYou':
