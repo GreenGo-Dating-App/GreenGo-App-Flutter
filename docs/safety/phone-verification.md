@@ -70,8 +70,12 @@ the console region policy).
    admins can read, the owner cannot write these keys, never public) and
    `phone_index/{HMAC-SHA256(PHONE_INDEX_KEY, e164)}` = `{uid, verifiedAt}`.
 4. Account deletion (`deleteAccountData`, every path): a BANNED account's
-   index entry is kept as `{banned: true, uid: null}` (hash only), otherwise
-   removed. A banned number can never verify again (`phone_banned`).
+   index entry is kept as `{banned: true, uid: null, retainUntil}` (hash
+   only) for **5 years** after the deletion (Privacy Policy), otherwise
+   removed. Until then the number cannot verify again (`phone_banned`). The
+   daily `sweepIdentityRecords` run also deletes expired banned hashes
+   (`runBannedPhoneSweep`, paged 300 x 50 per run; single-field query on
+   `retainUntil`, no composite index).
 
 `phone_index` is server-only (`allow read, write: if false`).
 

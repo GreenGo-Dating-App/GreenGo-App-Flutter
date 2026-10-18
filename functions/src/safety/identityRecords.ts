@@ -293,5 +293,8 @@ export const sweepIdentityRecords = onSchedule(
   { schedule: '50 3 * * *', timeZone: 'UTC', memory: '512MiB', timeoutSeconds: 540 },
   async () => {
     await runIdentitySweep(Date.now());
+    // Banned phone hashes past their 5-year retention (phoneVerification.ts).
+    const { runBannedPhoneSweep } = await import('./phoneVerification');
+    await runBannedPhoneSweep(Date.now());
   },
 );

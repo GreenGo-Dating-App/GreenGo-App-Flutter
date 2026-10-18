@@ -17,7 +17,13 @@ import {
   PHONE_VERIFICATION_REQUIRED,
 } from '../../src/shared/participation';
 import { createBlockReason, publishBlockReason } from '../../src/user_experiences/safety';
-import { isBannedAccount, phoneRequiredMarker, takeCheck } from '../../src/safety/phoneVerification';
+import {
+  bannedPhoneRetainUntil,
+  isBannedAccount,
+  phoneRequiredMarker,
+  runBannedPhoneSweep,
+  takeCheck,
+} from '../../src/safety/phoneVerification';
 
 const KEY = 'test-phone-index-key-0123456789';
 
@@ -134,5 +140,27 @@ describe('experiences: ID document optional, verified phone satisfies it', () =>
     const experience = { isFree: false, paymentMethods: ['online'], paymentProvider: 'stripe' };
     expect(publishBlockReason({ profile, experience, otherPublishedPaid: 0 })).toBe('id_document_required');
     expect(publishBlockReason({ profile, experience, otherPublishedPaid: 0, phoneVerified: true })).toBeNull();
+  });
+});
+
+describe('banned phone hashes: kept 5 years, then swept', () => {
+  test('retainUntil = deletion + 5 years', () => {
+    expect(bannedPhoneRetainUntil(Date.UTC(2026, 9, 17, 10))).toBe(Date.UTC(2031, 9, 17, 10));
+  });
+  test('sweep deletes only expired entries, paged and bounded', async () => {
+    const now = Date.UTC(2031, 9, 18);
+    const store = new Map<string, number>();
+    for (let i = 0; i < 7; i++) store.set(`old${i}`, bannedPhoneRetainUntil(Date.UTC(2026, 9, 17)));
+    store.set('young', bannedPhoneRetainUntil(Date.UTC(2027, 0, 1)));
+    const deps = {
+      page: async (n: number, limit: number) =>
+        [...store.entries()].filter(([, r]) => r <= n).slice(0, limit).map(([id]) => id),
+      remove: async (ids: string[]) => { ids.forEach((id) => store.delete(id)); },
+    };
+    const bounded = await runBannedPhoneSweep(now, deps, { pageSize: 3, maxPages: 2 });
+    expect(bounded).toEqual({ deleted: 6, pages: 2 });
+    const rest = await runBannedPhoneSweep(now, deps, { pageSize: 3, maxPages: 2 });
+    expect(rest.deleted).toBe(1);
+    expect([...store.keys()]).toEqual(['young']);
   });
 });

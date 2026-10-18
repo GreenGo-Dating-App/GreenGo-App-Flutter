@@ -147,8 +147,15 @@ export async function retirePhoneIndexForDeletion(uid: string): Promise<'banned'
   if (!hash) return 'none';
   const ref = db().collection(PHONE_INDEX).doc(hash);
   if (isBannedAccount(u.data(), p.data())) {
+    // Privacy Policy: the hash of a banned-then-deleted account's number is
+    // kept for 5 years (bannedPhoneRetainUntil), then removed by
+    // runBannedPhoneSweep (daily, inside sweepIdentityRecords).
     await ref.set(
-      { banned: true, uid: null, bannedAt: admin.firestore.FieldValue.serverTimestamp(), released: true },
+      {
+        banned: true, uid: null, released: true,
+        bannedAt: admin.firestore.FieldValue.serverTimestamp(),
+        retainUntil: admin.firestore.Timestamp.fromMillis(bannedPhoneRetainUntil(Date.now())),
+      },
       { merge: true },
     );
     return 'banned';
@@ -175,3 +182,59 @@ export const onAuthUserCreatedPhoneRequired = functionsV1
     if (!marker) return;
     await db().collection(PHONE_REQUIRED).doc(user.uid).set(marker, { merge: true });
   });
+
+/** Banned numbers are remembered for 5 years after the account deletion. */
+export const BANNED_PHONE_RETENTION_YEARS = 5;
+
+/** Pure: retainUntil (ms) for a banned number deleted at [deletedAtMs]. */
+export function bannedPhoneRetainUntil(deletedAtMs: number): number {
+  const d = new Date(deletedAtMs);
+  d.setUTCFullYear(d.getUTCFullYear() + BANNED_PHONE_RETENTION_YEARS);
+  return d.getTime();
+}
+
+export interface BannedPhoneSweepDeps {
+  /** Up to [limit] phone_index ids with retainUntil <= nowMs. */
+  page: (nowMs: number, limit: number) => Promise<string[]>;
+  remove: (ids: string[]) => Promise<void>;
+}
+
+const defaultBannedSweepDeps: BannedPhoneSweepDeps = {
+  page: async (nowMs, limit) => {
+    const snap = await db().collection(PHONE_INDEX)
+      .where('retainUntil', '<=', admin.firestore.Timestamp.fromMillis(nowMs))
+      .limit(limit)
+      .get();
+    return snap.docs.map((d) => d.id);
+  },
+  remove: async (ids) => {
+    const batch = db().batch();
+    for (const id of ids) batch.delete(db().collection(PHONE_INDEX).doc(id));
+    await batch.commit();
+  },
+};
+
+/**
+ * Deletes banned-number hashes past their 5-year retention. Paged (300) and
+ * bounded (maxPages) - the next daily run continues. Counts-only log.
+ */
+export async function runBannedPhoneSweep(
+  nowMs = Date.now(),
+  deps: BannedPhoneSweepDeps = defaultBannedSweepDeps,
+  opts: { pageSize?: number; maxPages?: number } = {},
+): Promise<{ deleted: number; pages: number }> {
+  const pageSize = opts.pageSize ?? 300;
+  const maxPages = opts.maxPages ?? 50;
+  let deleted = 0;
+  let pages = 0;
+  while (pages < maxPages) {
+    const ids = await deps.page(nowMs, pageSize);
+    if (ids.length === 0) break;
+    await deps.remove(ids);
+    deleted += ids.length;
+    pages++;
+    if (ids.length < pageSize) break;
+  }
+  if (deleted > 0) console.log(`bannedPhoneSweep: deleted=${deleted} pages=${pages}`);
+  return { deleted, pages };
+}
