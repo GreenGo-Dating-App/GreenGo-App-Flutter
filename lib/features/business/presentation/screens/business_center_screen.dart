@@ -34,6 +34,10 @@ import 'business_hub_screen.dart';
 /// here (same screens, [BusinessTools]); experiences stay in My Space.
 /// A paused business (membership below Silver) gets the hub's reactivate
 /// state instead.
+/// Tab indexes of the Business Center (see the tab list in build()).
+const int _kTabMySpace = 1;
+const int _kTabSettings = 6;
+
 class BusinessCenterScreen extends StatefulWidget {
   const BusinessCenterScreen(
       {required this.profile,
@@ -124,14 +128,17 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
     }
     final l = AppLocalizations.of(context)!;
     final tabs = <(String, IconData, Widget)>[
+      // Tab order (owner, 2026-10-18): Overview, My Space, Sales, Marketing,
+      // Customers, Storefront, Settings. Keep _kTabMySpace / _kTabSettings in
+      // sync when reordering.
       (l.bcTabOverview, Icons.dashboard_outlined, _overview(l)),
-      (l.bcTabCustomers, Icons.people_alt_outlined, _customers(l)),
-      (l.bcTabSales, Icons.payments_outlined, _sales(l)),
       // Events, experiences and the door scanner live in My Space (owner,
       // 2026-10-15: "replace those menus with the My Space page").
       (l.msTitle, Icons.space_dashboard_outlined,
           KeyedSubtree(key: const ValueKey('bc-my-space'), child: MySpaceScreen(currentUserId: p.userId, embedded: true, repository: widget.mySpaceRepository))),
+      (l.bcTabSales, Icons.payments_outlined, _sales(l)),
       (l.bcTabMarketing, Icons.campaign_outlined, _marketing(l)),
+      (l.bcTabCustomers, Icons.people_alt_outlined, _customers(l)),
       (l.bcTabStorefront, Icons.storefront_outlined, _storefront(l)),
       (l.bcTabSettings, Icons.settings_outlined, _settings(l)),
     ];
@@ -219,7 +226,7 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
             Text(l.bcQuickActions, style: _h),
             const SizedBox(height: 10),
             Wrap(spacing: 10, runSpacing: 10, children: [
-              _quick(l.msTitle, Icons.space_dashboard_outlined, () => DefaultTabController.of(context).animateTo(3), 'bc-q-my-space'),
+              _quick(l.msTitle, Icons.space_dashboard_outlined, () => DefaultTabController.of(context).animateTo(_kTabMySpace), 'bc-q-my-space'),
               _quick(l.promoteTitle, Icons.campaign, () => BusinessTools.openPromote(context, p), 'bc-q-promote'),
               _quick(l.editStorefront, Icons.edit_note, () => BusinessTools.openStorefrontEditor(context, p), 'bc-q-edit'),
             ]),
@@ -303,7 +310,7 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
         final rows = [
           if (company > 0)
             _todoItem(l.bcTodoCompany(company), Icons.business_outlined, 'bc-todo-company',
-                () => DefaultTabController.of(context).animateTo(6)),
+                () => DefaultTabController.of(context).animateTo(_kTabSettings)),
           ...items,
         ];
         if (rows.isEmpty && !billingMissing) {
@@ -395,8 +402,6 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
             () => BusinessTools.openPromote(context, p)),
         _tile('bc-analytics', l.businessHubAnalytics, l.personalStatisticsSubtitle, Icons.insights,
             () => BusinessTools.openAnalytics(context, p)),
-        _tile('bc-followers-m', l.businessHubFollowers, l.businessHubFollowersSubtitle, Icons.people_alt_outlined,
-            () => BusinessTools.openFollowers(context, p)),
       ]);
 
   Widget _settings(AppLocalizations l) => BlocBuilder<BillingProfileCubit, BillingProfileState>(

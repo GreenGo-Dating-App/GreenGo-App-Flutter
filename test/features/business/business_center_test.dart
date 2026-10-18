@@ -113,10 +113,20 @@ void main() {
     await tab('Marketing');
     expect(find.byKey(const ValueKey('bc-promote')), findsOneWidget);
     expect(find.byKey(const ValueKey('bc-analytics')), findsOneWidget);
+    // Followers lives only in Customers (owner, 2026-10-18).
+    expect(find.byKey(const ValueKey('bc-followers-m')), findsNothing);
     await tab('Storefront');
     expect(find.byKey(const ValueKey('bc-edit-storefront')), findsOneWidget);
     expect(find.byKey(const ValueKey('bc-account')), findsOneWidget);
     expect(find.byKey(const ValueKey('bc-verification')), findsOneWidget);
+  });
+
+  testWidgets('tabs are in the owner order: Overview, My Space, Sales, Marketing, Customers, Storefront, Settings', (t) async {
+    await t.pumpWidget(_app(BusinessCenterScreen(
+        profile: _business(), repository: _Repo(), billingRepository: _Billing(true), mySpaceRepository: FakeMySpaceRepository())));
+    await t.pumpAndSettle();
+    final labels = t.widgetList<Tab>(find.byType(Tab)).map((x) => x.text).toList();
+    expect(labels, ['Overview', 'My Space', 'Sales', 'Marketing', 'Customers', 'Storefront', 'Settings']);
   });
 
   testWidgets('settings: company checklist, and missing details show in Action needed', (t) async {
