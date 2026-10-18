@@ -296,6 +296,10 @@ Telefonnummer, dein Ausweisdokument und die von dir daraus angegebenen
 Identitätsangaben, dein Verifizierungs-Selfie und die Fotos in deinem privaten
 Album (es sei denn, du gewährst jemandem Zugriff auf dein privates Album).
 
+Wer dir folgt, wem du folgst, und deine Zahl an Followern, gefolgten Konten und
+Shops. Das gilt für private und für Unternehmenskonten. Andere Nutzer können
+dir weiterhin folgen, aber nur du siehst diese Listen und Zahlen.
+
 4.3 Inhalte, die du teilst
 
 - Nachrichten sind für die Personen in dem jeweiligen Gespräch, der Gruppe,
@@ -1631,6 +1635,9 @@ Telefonverifizierung und Identitätsangaben:
   6 Monate nach der Schließung des Kontos (auch Abschnitte 2, 3.1, 4.2, 4.4,
   5, 8.5, 12.5, 14, 15.2, 20.1 und 22.1).
 Klarstellungen, damit die Erklärung der Funktionsweise der App entspricht:
+- Abschnitt 4.2: Wer dir folgt, wem du folgst und deine Zahl an Followern,
+  gefolgten Konten und Shops werden anderen Nutzern nie angezeigt (auch bei
+  Unternehmenskonten).
 - Abschnitte 2, 5 und 9: Die KI-Funktionen sind Übersetzung, Vorlesen und
   Transliteration (intelligente Antworten und Wortzerlegung werden nicht
   angeboten); Chatnachrichten werden mit den Übersetzungsdiensten von Google

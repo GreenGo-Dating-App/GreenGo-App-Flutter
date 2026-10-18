@@ -271,6 +271,10 @@ Your exact coordinates, date of birth, email address, phone number, identity
 document and the identity details you gave from it, verification selfie and
 private-album photos (unless you grant someone access to your private album).
 
+Who follows you, whom you follow, and your follower, following and store
+counts. This applies to personal and business accounts. Other users can still
+follow you, but only you see these lists and counts.
+
 4.3 Content you share
 
 - Messages are visible to the people in that conversation, group, community or
@@ -1471,6 +1475,8 @@ Phone verification and identity details:
   law requires it, until 6 months after the account is closed (also
   sections 2, 3.1, 4.2, 4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 and 22.1).
 Clarifications to match how the app works:
+- Section 4.2: who follows you, whom you follow and your follower, following
+  and store counts are never shown to other users (also business accounts).
 - Sections 2, 5 and 9: the AI features are translation, read-aloud and
   transliteration (smart replies and word breakdown are not offered); chat
   messages are translated with Google's translation services (Google Cloud

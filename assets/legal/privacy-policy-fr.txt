@@ -304,6 +304,11 @@ d'identité que vous avez fournies à partir de celle-ci, votre selfie de
 vérification et les photos de votre album privé (sauf si vous accordez à
 quelqu'un l'accès à votre album privé).
 
+Qui vous suit, qui vous suivez, et vos nombres d'abonnés, d'abonnements et de
+boutiques. Cela vaut pour les comptes personnels et professionnels. Les autres
+utilisateurs peuvent toujours vous suivre, mais vous seul voyez ces listes et
+ces nombres.
+
 4.3 Contenus que vous partagez
 
 - Les messages sont visibles par les personnes présentes dans la conversation,
@@ -1699,6 +1704,9 @@ Vérification du téléphone et informations d'identité :
   l'exige, jusqu'à 6 mois après la clôture du compte (également
   points 2, 3.1, 4.2, 4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 et 22.1).
 Précisions pour correspondre au fonctionnement de l'application :
+- Point 4.2 : qui vous suit, qui vous suivez et vos nombres d'abonnés,
+  d'abonnements et de boutiques ne sont jamais montrés aux autres
+  utilisateurs (comptes professionnels compris).
 - Points 2, 5 et 9 : les fonctionnalités d'IA sont la traduction, la lecture
   vocale et la translittération (les réponses suggérées et la décomposition
   des mots ne sont pas proposées) ; les messages de chat sont traduits avec

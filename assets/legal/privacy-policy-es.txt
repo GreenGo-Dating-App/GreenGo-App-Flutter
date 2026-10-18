@@ -292,6 +292,10 @@ número de teléfono, documento de identidad y los datos de identidad que diste
 a partir de él, selfi de verificación y fotos del álbum privado (salvo que
 concedas a alguien acceso a tu álbum privado).
 
+Quién te sigue, a quién sigues y tus números de seguidores, seguidos y
+tiendas. Esto vale para cuentas personales y de empresa. Otros usuarios pueden
+seguirte, pero solo tú ves estas listas y números.
+
 4.3 Contenido que compartes
 
 - Los mensajes son visibles para las personas de esa conversación, grupo,
@@ -1619,6 +1623,9 @@ Verificación del teléfono y datos de identidad:
   6 meses después del cierre de la cuenta (también secciones 2, 3.1, 4.2,
   4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 y 22.1).
 Aclaraciones para ajustarse al funcionamiento de la app:
+- Sección 4.2: quién te sigue, a quién sigues y tus números de seguidores,
+  seguidos y tiendas nunca se muestran a otros usuarios (también en cuentas
+  de empresa).
 - Secciones 2, 5 y 9: las funciones de IA son la traducción, la lectura en
   voz alta y la transliteración (no se ofrecen respuestas inteligentes ni
   desglose de palabras); los mensajes del chat se traducen con los servicios

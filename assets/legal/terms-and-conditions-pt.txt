@@ -711,7 +711,8 @@ apresentar uma página de empresa:
   telefone fixo). É privado, salvo se ativar a sua apresentação na página da
   empresa;
 - eventos e experiências;
-- seguidores.
+- seguidores: outras pessoas podem seguir a sua empresa, mas só o utilizador
+  vê quem a segue e quantos seguidores tem.
 
 13.2 Ao mudar a sua Conta para o modo empresa, confirma que:
 - está autorizado a atuar em nome da empresa;
@@ -1371,6 +1372,8 @@ Verificação do telemóvel e dados de identificação:
   ainda estiver pendente, e os dados revistos são conservados encriptados
   apenas para o identificar quando a lei o exigir.
 Clarificações para corresponder ao funcionamento da aplicação:
+- Secção 13.1: só o utilizador vê quem segue a sua empresa e quantos
+  seguidores tem.
 - Secções 5.1 g, 14.1, 14.2 e 14.4: os assistentes de IA no chat são a
   tradução, a leitura em voz alta e a transliteração (as respostas
   inteligentes e a decomposição de palavras não são oferecidas); o conteúdo
