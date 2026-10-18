@@ -15414,63 +15414,6 @@
       }
     }
   },
-  "userFollowNamesTwo": "{first} and {second}",
-  "@userFollowNamesTwo": {
-    "description": "Two recent people, e.g. \"Maria and João\"",
-    "placeholders": {
-      "first": {
-        "type": "String"
-      },
-      "second": {
-        "type": "String"
-      }
-    }
-  },
-  "userFollowNamesTwoMore": "{count, plural, =1{{first}, {second} and 1 other} other{{first}, {second} and {formatted} others}}",
-  "@userFollowNamesTwoMore": {
-    "description": "Two names plus N more people; formatted = compact N",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      },
-      "first": {
-        "type": "String"
-      },
-      "second": {
-        "type": "String"
-      },
-      "formatted": {
-        "type": "String"
-      }
-    }
-  },
-  "userFollowNamesOneMore": "{count, plural, =1{{first} and 1 other} other{{first} and {formatted} others}}",
-  "@userFollowNamesOneMore": {
-    "description": "One name plus N more people; formatted = compact N",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      },
-      "first": {
-        "type": "String"
-      },
-      "formatted": {
-        "type": "String"
-      }
-    }
-  },
-  "userFollowNamesPeople": "{count, plural, =1{1 person} other{{formatted} people}}",
-  "@userFollowNamesPeople": {
-    "description": "N people when no names are known; formatted = compact N",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      },
-      "formatted": {
-        "type": "String"
-      }
-    }
-  },
   "userFollowTabFollowersCount": "Followers {formatted}",
   "@userFollowTabFollowersCount": {
     "description": "Followers tab label with compact count",

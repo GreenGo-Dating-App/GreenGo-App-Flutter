@@ -6347,7 +6347,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return 'Subscrição $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -16212,13 +16215,21 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price por $interval. Renova-se automaticamente a $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price por $interval. Cancelada; o acesso termina a $date.';
   }
 
@@ -19796,7 +19807,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-      String name, String rewards) {
+    String name,
+    String rewards,
+  ) {
     return 'Recompensas de $name recebidas! $rewards';
   }
 
@@ -20262,7 +20275,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String profileTravelerActiveSubtitle(
-      String location, int hours, int minutes) {
+    String location,
+    int hours,
+    int minutes,
+  ) {
     return '$location - faltam ${hours}h ${minutes}min';
   }
 
@@ -22213,7 +22229,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date) {
+    String reason,
+    String message,
+    String user,
+    String date,
+  ) {
     return 'Motivo: $reason\nMensagem denunciada: «$message»\nUtilizador denunciado: $user\nDenunciado em: $date';
   }
 
@@ -22560,50 +22580,41 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Primeira ligação',
-        'social_butterfly': 'Borboleta social',
-        'popular': 'Popular',
-        'video_enthusiast': 'Entusiasta de vídeo',
-        'daily_streak_7': 'Sequência de 7 dias',
-        'daily_streak_30': 'Sequência de 30 dias',
-        'other': 'Nova conquista',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Primeira ligação',
+      'social_butterfly': 'Borboleta social',
+      'popular': 'Popular',
+      'video_enthusiast': 'Entusiasta de vídeo',
+      'daily_streak_7': 'Sequência de 7 dias',
+      'daily_streak_30': 'Sequência de 30 dias',
+      'other': 'Nova conquista',
+    });
     return 'Conquista desbloqueada: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Faz a tua primeira ligação',
-        'social_butterfly': 'Envia 100 mensagens',
-        'popular': 'Faz 50 ligações',
-        'video_enthusiast': 'Conclui 10 videochamadas',
-        'daily_streak_7': 'Entra 7 dias seguidos',
-        'daily_streak_30': 'Entra 30 dias seguidos',
-        'other': 'Continua assim!',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Faz a tua primeira ligação',
+      'social_butterfly': 'Envia 100 mensagens',
+      'popular': 'Faz 50 ligações',
+      'video_enthusiast': 'Conclui 10 videochamadas',
+      'daily_streak_7': 'Entra 7 dias seguidos',
+      'daily_streak_30': 'Entra 30 dias seguidos',
+      'other': 'Continua assim!',
+    });
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(
-      challenge,
-      {
-        'send_5_messages': 'Iniciador de conversas',
-        'get_3_matches': 'Conector',
-        'complete_profile': 'Perfil perfeito',
-        'video_call_1': 'Cara a cara',
-        'other': 'Desafio diário',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(challenge, {
+      'send_5_messages': 'Iniciador de conversas',
+      'get_3_matches': 'Conector',
+      'complete_profile': 'Perfil perfeito',
+      'video_call_1': 'Cara a cara',
+      'other': 'Desafio diário',
+    });
     return 'Desafio concluído: $_temp0!';
   }
 
@@ -26231,45 +26242,6 @@ class AppLocalizationsPt extends AppLocalizations {
       locale: localeName,
       other: 'Seguidores',
       one: 'Seguidor',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String userFollowNamesTwo(String first, String second) {
-    return '$first e $second';
-  }
-
-  @override
-  String userFollowNamesTwoMore(
-      int count, String first, String second, String formatted) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$first, $second e mais $formatted',
-      one: '$first, $second e mais 1',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String userFollowNamesOneMore(int count, String first, String formatted) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$first e mais $formatted',
-      one: '$first e mais 1',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String userFollowNamesPeople(int count, String formatted) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$formatted pessoas',
-      one: '1 pessoa',
     );
     return '$_temp0';
   }
@@ -32929,7 +32901,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return 'Assinatura $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -42793,13 +42768,21 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price por $interval. Renovação automática em $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price por $interval. Cancelada; o acesso termina em $date.';
   }
 
@@ -46378,7 +46361,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-      String name, String rewards) {
+    String name,
+    String rewards,
+  ) {
     return 'Recompensas de $name resgatadas! $rewards';
   }
 
@@ -46844,7 +46829,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String profileTravelerActiveSubtitle(
-      String location, int hours, int minutes) {
+    String location,
+    int hours,
+    int minutes,
+  ) {
     return '$location - faltam ${hours}h ${minutes}min';
   }
 
@@ -48797,7 +48785,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date) {
+    String reason,
+    String message,
+    String user,
+    String date,
+  ) {
     return 'Motivo: $reason\nMensagem denunciada: \"$message\"\nUsuário denunciado: $user\nDenunciado em: $date';
   }
 
@@ -49145,50 +49137,41 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Primeira conexão',
-        'social_butterfly': 'Borboleta social',
-        'popular': 'Popular',
-        'video_enthusiast': 'Entusiasta de vídeo',
-        'daily_streak_7': 'Sequência de 7 dias',
-        'daily_streak_30': 'Sequência de 30 dias',
-        'other': 'Nova conquista',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Primeira conexão',
+      'social_butterfly': 'Borboleta social',
+      'popular': 'Popular',
+      'video_enthusiast': 'Entusiasta de vídeo',
+      'daily_streak_7': 'Sequência de 7 dias',
+      'daily_streak_30': 'Sequência de 30 dias',
+      'other': 'Nova conquista',
+    });
     return 'Conquista desbloqueada: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Faça sua primeira conexão',
-        'social_butterfly': 'Envie 100 mensagens',
-        'popular': 'Faça 50 conexões',
-        'video_enthusiast': 'Conclua 10 videochamadas',
-        'daily_streak_7': 'Entre 7 dias seguidos',
-        'daily_streak_30': 'Entre 30 dias seguidos',
-        'other': 'Continue assim!',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Faça sua primeira conexão',
+      'social_butterfly': 'Envie 100 mensagens',
+      'popular': 'Faça 50 conexões',
+      'video_enthusiast': 'Conclua 10 videochamadas',
+      'daily_streak_7': 'Entre 7 dias seguidos',
+      'daily_streak_30': 'Entre 30 dias seguidos',
+      'other': 'Continue assim!',
+    });
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(
-      challenge,
-      {
-        'send_5_messages': 'Iniciador de conversas',
-        'get_3_matches': 'Conector',
-        'complete_profile': 'Perfil perfeito',
-        'video_call_1': 'Cara a cara',
-        'other': 'Desafio diário',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(challenge, {
+      'send_5_messages': 'Iniciador de conversas',
+      'get_3_matches': 'Conector',
+      'complete_profile': 'Perfil perfeito',
+      'video_call_1': 'Cara a cara',
+      'other': 'Desafio diário',
+    });
     return 'Desafio concluído: $_temp0!';
   }
 
@@ -52813,45 +52796,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
       locale: localeName,
       other: 'Seguidores',
       one: 'Seguidor',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String userFollowNamesTwo(String first, String second) {
-    return '$first e $second';
-  }
-
-  @override
-  String userFollowNamesTwoMore(
-      int count, String first, String second, String formatted) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$first, $second e mais $formatted',
-      one: '$first, $second e mais 1',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String userFollowNamesOneMore(int count, String first, String formatted) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$first e mais $formatted',
-      one: '$first e mais 1',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String userFollowNamesPeople(int count, String formatted) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$formatted pessoas',
-      one: '1 pessoa',
     );
     return '$_temp0';
   }

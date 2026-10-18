@@ -50,16 +50,21 @@ void main() {
     expect(find.text('Following 1.2k'), findsOneWidget);
     expect(rows(), findsNWidgets(3));
     // Everyone on MY followers list follows me.
-    expect(find.byKey(const Key('follows_you_chip')), findsNWidgets(3));
+    // "Follows you" is the subtitle prefix, joined with the city + flag.
+    expect(find.text('Follows you · 🇵🇹 Lisbon, Portugal'), findsOneWidget);
+    expect(find.text('Follows you'), findsNWidgets(2)); // no city known
     expect(find.text('Follow back'), findsNWidgets(3));
-    // City + country flag from the directory brief.
-    expect(find.text('🇵🇹 Lisbon, Portugal'), findsOneWidget);
+    // Compact pill: text only, filled while not following.
+    expect(
+        find.descendant(
+            of: find.byType(UserFollowButton), matching: find.byType(Icon)),
+        findsNothing);
 
     // The Following tab: no "Follows you" chip (it would cost a read per row).
     await tester.tap(find.text('Following 1.2k'));
     await tester.pumpAndSettle();
     expect(find.text('Bia'), findsOneWidget);
-    expect(find.byKey(const Key('follows_you_chip')), findsNothing);
+    expect(find.textContaining('Follows you'), findsNothing);
   });
 
   testWidgets('search queries the server by name prefix; clearing restores',
@@ -138,7 +143,49 @@ void main() {
     expect(find.descendant(of: myRow, matching: find.byType(UserFollowButton)), findsNothing);
     final other = find.ancestor(of: find.text('Ana'), matching: find.byType(FollowRow));
     expect(find.descendant(of: other, matching: find.text('Follow')), findsOneWidget);
-    // Not the viewer's own followers list: no "Follows you" chip.
-    expect(find.byKey(const Key('follows_you_chip')), findsNothing);
+    // Not the viewer's own followers list: no "Follows you" prefix.
+    expect(find.textContaining('Follows you'), findsNothing);
+  });
+
+  testWidgets('pill flips Follow -> Following (filled -> outlined)',
+      (tester) async {
+    await w.counts('t', followers: 1);
+    await w.follow('u1', 't', followerName: 'ana');
+    w.briefs({'u1': const UserBrief(name: 'Ana', city: 'Rome')});
+    await tester.pumpWidget(
+        _app(const FollowListScreen(userId: 't', currentUserId: 'me')));
+    await tester.pumpAndSettle();
+    expect(find.text('Rome'), findsOneWidget);
+    expect(find.text('Follow'), findsOneWidget);
+    await tester.tap(find.text('Follow'));
+    await tester.pumpAndSettle();
+    expect(find.text('Following'), findsWidgets);
+    expect(
+        find.descendant(
+            of: find.byType(FollowRow), matching: find.text('Following')),
+        findsOneWidget);
+    // Let the follow write's deferred work (count overlay expiry) finish.
+    await tester.pumpWidget(const SizedBox());
+    await tester.pump(const Duration(minutes: 10));
+  });
+
+  testWidgets('empty list: one short line with a muted icon', (tester) async {
+    await w.counts('me');
+    await tester.pumpWidget(
+        _app(const FollowListScreen(userId: 'me', currentUserId: 'me')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('follow_list_message')), findsOneWidget);
+    expect(find.text('No followers yet'), findsOneWidget);
+    expect(find.byIcon(Icons.people_outline), findsOneWidget);
+  });
+
+  test('subtitleLine', () {
+    expect(FollowRow.subtitleLine('Follows you', 'Rome', followsYou: true),
+        'Follows you · Rome');
+    expect(FollowRow.subtitleLine('Follows you', '', followsYou: true),
+        'Follows you');
+    expect(FollowRow.subtitleLine('Follows you', 'Rome', followsYou: false),
+        'Rome');
+    expect(FollowRow.subtitleLine('Follows you', '', followsYou: false), '');
   });
 }

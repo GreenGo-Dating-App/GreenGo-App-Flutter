@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/cache/last_result_cache.dart';
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/user_directory_service.dart';
@@ -104,6 +103,12 @@ class _FollowListScreenState extends State<FollowListScreen> {
             indicatorColor: AppColors.richGold,
             labelColor: AppColors.richGold,
             unselectedLabelColor: AppColors.textSecondary,
+            indicatorSize: TabBarIndicatorSize.label,
+            dividerColor: AppColors.divider.withOpacity(0.4),
+            labelStyle:
+                const TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+            unselectedLabelStyle:
+                const TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
             tabs: [
               Tab(
                 text: c == null
@@ -393,7 +398,7 @@ class _FollowListTabState extends State<FollowListTab>
   }
 
   Widget _searchBox(AppLocalizations l10n) => Padding(
-        padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
+        padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
         child: TextField(
           key: const Key('follow_list_search'),
           controller: _searchCtrl,
@@ -408,11 +413,13 @@ class _FollowListTabState extends State<FollowListTab>
           decoration: InputDecoration(
             isDense: true,
             filled: true,
-            fillColor: AppColors.backgroundInput,
+            fillColor: AppColors.backgroundCard,
+            contentPadding: const EdgeInsets.symmetric(vertical: 12),
             hintText: l10n.userFollowSearchHint,
-            hintStyle: const TextStyle(color: AppColors.textTertiary),
-            prefixIcon:
-                const Icon(Icons.search, color: AppColors.textTertiary),
+            hintStyle:
+                const TextStyle(color: AppColors.textTertiary, fontSize: 14),
+            prefixIcon: const Icon(Icons.search,
+                size: 20, color: AppColors.textTertiary),
             suffixIcon: _searchCtrl.text.isEmpty
                 ? null
                 : IconButton(
@@ -422,8 +429,17 @@ class _FollowListTabState extends State<FollowListTab>
                     onPressed: _clearSearch,
                   ),
             border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+              borderRadius: BorderRadius.circular(24),
               borderSide: BorderSide.none,
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(24),
+              borderSide: BorderSide.none,
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(24),
+              borderSide: BorderSide(
+                  color: AppColors.richGold.withOpacity(0.35), width: 1),
             ),
           ),
         ),
@@ -442,25 +458,41 @@ class _FollowListTabState extends State<FollowListTab>
     Widget? message;
     if (visible.isEmpty && !p.hasMore && !p.loading) {
       message = Padding(
-        padding: const EdgeInsets.fromLTRB(24, 48, 24, 24),
-        child: Text(
-          p.error
-              ? l10n.userFollowListError
-              : _searching
-                  ? l10n.userFollowSearchNoResults(_searchCtrl.text.trim())
-                  : (widget.followersTab
-                      ? l10n.userFollowEmptyFollowers
-                      : l10n.userFollowEmptyFollowing),
-          key: const Key('follow_list_message'),
-          textAlign: TextAlign.center,
-          style: const TextStyle(color: AppColors.textSecondary, fontSize: 15),
+        padding: const EdgeInsets.fromLTRB(24, 56, 24, 24),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(
+              p.error
+                  ? Icons.cloud_off_outlined
+                  : _searching
+                      ? Icons.search_off
+                      : Icons.people_outline,
+              size: 32,
+              color: AppColors.textTertiary.withOpacity(0.6),
+            ),
+            const SizedBox(height: 10),
+            Text(
+              p.error
+                  ? l10n.userFollowListError
+                  : _searching
+                      ? l10n.userFollowSearchNoResults(_searchCtrl.text.trim())
+                      : (widget.followersTab
+                          ? l10n.userFollowEmptyFollowers
+                          : l10n.userFollowEmptyFollowing),
+              key: const Key('follow_list_message'),
+              textAlign: TextAlign.center,
+              style:
+                  const TextStyle(color: AppColors.textTertiary, fontSize: 14),
+            ),
+          ],
         ),
       );
     }
 
     final showFooter = message == null && (p.loading || p.error);
     // My own followers list: everyone here follows me. Elsewhere knowing it
-    // would cost one read per row, so the chip is not shown.
+    // would cost one read per row, so "Follows you" is not shown.
     final followsYou =
         widget.followersTab && widget.userId == widget.currentUserId;
     final rows = visible.length;
@@ -515,8 +547,9 @@ class _FollowListTabState extends State<FollowListTab>
   }
 }
 
-/// One person in a follow list: photo, name (+ verified), city + flag, a
-/// "Follows you" chip and the inline Follow back / Following button.
+/// One person in a follow list: 44 px photo, name (+ verified), one muted
+/// subtitle line ("Follows you · 🇵🇹 Lisbon, Portugal") and a compact
+/// Follow back / Following pill.
 @visibleForTesting
 class FollowRow extends StatelessWidget {
   const FollowRow({
@@ -533,6 +566,8 @@ class FollowRow extends StatelessWidget {
   final String currentUserId;
   final bool followsYou;
   final VoidCallback onTap;
+
+  static const double avatar = 44;
 
   static String placeLine(UserBrief? b) {
     if (b == null) return '';
@@ -551,99 +586,101 @@ class FollowRow extends StatelessWidget {
     return [if (flag.isNotEmpty) flag, if (place.isNotEmpty) place].join(' ');
   }
 
+  /// "Follows you · City" / "Follows you" / "City" / ''.
+  static String subtitleLine(String followsYouLabel, String place,
+          {required bool followsYou}) =>
+      [if (followsYou) followsYouLabel, if (place.isNotEmpty) place]
+          .join(' · ');
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     final name = brief?.name ?? '';
     final photo = brief?.photoUrl;
-    final place = placeLine(brief);
+    final hasPhoto = photo != null && photo.isNotEmpty;
     final isSelf = uid == currentUserId;
-    return ListTile(
+    final subtitle = subtitleLine(l10n.userFollowFollowsYou, placeLine(brief),
+        followsYou: followsYou && !isSelf);
+
+    return InkWell(
       onTap: onTap,
-      leading: CircleAvatar(
-        radius: 22,
-        backgroundColor: AppColors.richGold.withOpacity(0.15),
-        backgroundImage: (photo != null && photo.isNotEmpty)
-            ? CachedNetworkImageProvider(photo)
-            : null,
-        child: (photo == null || photo.isEmpty)
-            ? const Icon(Icons.person, color: AppColors.richGold)
-            : null,
-      ),
-      // Unknown name → a neutral placeholder bar, never the uid.
-      title: name.isNotEmpty
-          ? Row(children: [
-              Flexible(
-                child: Text(
-                  name,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(
-                    color: AppColors.textPrimary,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-              if (UserVerifiedBadge.isVisible(brief))
-                const Padding(
-                  padding: EdgeInsets.only(left: 4),
-                  child: VerifiedBadge(size: 15),
-                ),
-            ])
-          : Align(
-              alignment: Alignment.centerLeft,
-              child: Container(
-                width: 110,
-                height: 12,
-                decoration: BoxDecoration(
-                  color: AppColors.textTertiary.withOpacity(0.25),
-                  borderRadius: BorderRadius.circular(6),
-                ),
-              ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        child: Row(
+          children: [
+            CircleAvatar(
+              radius: avatar / 2,
+              backgroundColor: AppColors.richGold.withOpacity(0.15),
+              backgroundImage:
+                  hasPhoto ? CachedNetworkImageProvider(photo) : null,
+              child: hasPhoto
+                  ? null
+                  : const Icon(Icons.person,
+                      size: 22, color: AppColors.richGold),
             ),
-      subtitle: (place.isEmpty && !(followsYou && !isSelf))
-          ? null
-          : Padding(
-              padding: const EdgeInsets.only(top: 2),
-              child: Wrap(
-                spacing: 6,
-                runSpacing: 2,
-                crossAxisAlignment: WrapCrossAlignment.center,
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
                 children: [
-                  if (followsYou && !isSelf)
-                    Container(
-                      key: const Key('follows_you_chip'),
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 6, vertical: 1),
-                      decoration: BoxDecoration(
-                        color: AppColors.backgroundInput,
-                        borderRadius: BorderRadius.circular(4),
+                  // Unknown name -> a neutral placeholder bar, never the uid.
+                  if (name.isNotEmpty)
+                    Row(children: [
+                      Flexible(
+                        child: Text(
+                          name,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                            color: AppColors.textPrimary,
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
                       ),
-                      child: Text(
-                        l10n.userFollowFollowsYou,
-                        style: const TextStyle(
-                            color: AppColors.textSecondary, fontSize: 11),
+                      if (UserVerifiedBadge.isVisible(brief))
+                        const Padding(
+                          padding: EdgeInsets.only(left: 4),
+                          child: VerifiedBadge(size: 14),
+                        ),
+                    ])
+                  else
+                    Container(
+                      width: 110,
+                      height: 12,
+                      decoration: BoxDecoration(
+                        color: AppColors.textTertiary.withOpacity(0.25),
+                        borderRadius: BorderRadius.circular(6),
                       ),
                     ),
-                  if (place.isNotEmpty)
-                    Text(
-                      place,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: const TextStyle(
-                          color: AppColors.textTertiary, fontSize: 12.5),
+                  if (subtitle.isNotEmpty)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 2),
+                      child: Text(
+                        subtitle,
+                        key: const Key('follow_row_subtitle'),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                            color: AppColors.textTertiary, fontSize: 12.5),
+                      ),
                     ),
                 ],
               ),
             ),
-      trailing: isSelf
-          ? null
-          : UserFollowButton(
-              targetUserId: uid,
-              currentUserId: currentUserId,
-              compact: true,
-              followsYou: followsYou,
-            ),
+            if (!isSelf) ...[
+              const SizedBox(width: 10),
+              UserFollowButton(
+                targetUserId: uid,
+                currentUserId: currentUserId,
+                compact: true,
+                followsYou: followsYou,
+              ),
+            ],
+          ],
+        ),
+      ),
     );
   }
 }

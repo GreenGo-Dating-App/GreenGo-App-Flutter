@@ -199,20 +199,25 @@ class _UserFollowButtonState extends State<UserFollowButton> {
                   ? EdgeInsets.zero
                   : EdgeInsets.symmetric(
                       horizontal: widget.compact ? 14 : 20,
-                      vertical: widget.compact ? 7 : 11,
+                      vertical: widget.compact ? 6 : 11,
                     ),
               decoration: BoxDecoration(
                 color: bg,
                 borderRadius: BorderRadius.circular(30),
-                border: Border.all(color: AppColors.richGold, width: 1.5),
+                border: Border.all(
+                    color: AppColors.richGold,
+                    width: widget.compact ? 1 : 1.5),
               ),
               child: widget.iconOnly
                   ? Center(child: icon)
                   : Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        icon,
-                        const SizedBox(width: 6),
+                        // The compact pill (list rows) is text only.
+                        if (!widget.compact) ...[
+                          icon,
+                          const SizedBox(width: 6),
+                        ],
                         Text(
                           label,
                           maxLines: 1,
