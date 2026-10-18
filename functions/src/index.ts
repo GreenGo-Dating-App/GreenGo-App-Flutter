@@ -430,8 +430,26 @@ export {
   backfillIdVerifiedFlags,
 } from './safety/idDocumentRetention';
 
+// Optional ID-document details, AES-256-GCM encrypted (secret ID_DATA_KEY),
+// server-only; reveal for authorities = superAdmin + legal basis + audit.
+export {
+  submitIdentityDetails,
+  adminGetIdentityDetailsForReview,
+  adminConfirmIdentityDetails,
+  adminRevealIdentityRecord,
+  sweepIdentityRecords,
+} from './safety/identityRecords';
+
 // Banned / suspended hosts: hide their user experiences (restore on unban).
 export { onProfileBanStateChanged } from './user_experiences/hostBan';
+
+// Mandatory verified phone (2026-10-17): allowlist / banned-number check
+// before the SMS, server-side record + phone_index after linking.
+export {
+  checkPhoneAllowed,
+  recordVerifiedPhone,
+  onAuthUserCreatedPhoneRequired,
+} from './safety/phoneVerification';
 
 // Account deletion cascade (Guideline 5.1.1(v), GDPR Art. 17)
 // Fires on auth deletion however it is triggered — app, admin panel, console.

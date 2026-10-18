@@ -330,6 +330,9 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     }
   }
 
+  static bool _hasIdPhoto(OnboardingInProgress s) =>
+      s.verificationPhotoUrl != null && s.verificationPhotoUrl!.isNotEmpty;
+
   Future<void> _onOnboardingCompleted(
     OnboardingCompleted event,
     Emitter<OnboardingState> emit,
@@ -365,15 +368,18 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
         updatedAt: now,
         isComplete: true,
         // Verification fields
-        // Phone verification = auto-approved; photo = pending admin review
-        verificationStatus: currentState.verificationMethod == 'phone'
-            ? VerificationStatus.approved
-            : VerificationStatus.pending,
+        // The phone is mandatory (2026-10-17). Phone only = auto-approved; an
+        // optional ID photo on top = pending admin review.
+        verificationStatus: _hasIdPhoto(currentState)
+            ? VerificationStatus.pending
+            : VerificationStatus.approved,
         verificationPhotoUrl: currentState.verificationPhotoUrl,
-        verificationMethod: currentState.verificationMethod,
+        verificationMethod: _hasIdPhoto(currentState)
+            ? 'photo'
+            : currentState.verificationMethod,
         verificationPhone: currentState.verificationPhone,
         verificationSubmittedAt: (currentState.verificationPhotoUrl != null || currentState.verificationPhone != null) ? now : null,
-        verificationReviewedAt: currentState.verificationMethod == 'phone' ? now : null,
+        verificationReviewedAt: _hasIdPhoto(currentState) ? null : now,
         // Language learning fields
         preferredLanguages: currentState.preferredLanguages,
         nativeLanguage: currentState.nativeLanguage,

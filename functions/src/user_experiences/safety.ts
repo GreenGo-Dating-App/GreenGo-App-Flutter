@@ -123,9 +123,14 @@ export function paymentLinkBlocked(e: Record<string, unknown>): boolean {
 }
 
 /** Why [profile] may not CREATE an experience at all (any status), or null. */
-export function createBlockReason(profile: Record<string, any> | null | undefined): SafetyCode | null {
+export function createBlockReason(
+  profile: Record<string, any> | null | undefined,
+  opts: { phoneVerified?: boolean } = {},
+): SafetyCode | null {
   if (profile?.isBanned === true) return 'host_banned';
-  if (idDocumentState(profile) === 'none') return 'id_document_required';
+  // Owner decision 2026-10-17: the ID document is OPTIONAL; a verified phone
+  // satisfies the identity requirement (a document already sent still does).
+  if (opts.phoneVerified !== true && idDocumentState(profile) === 'none') return 'id_document_required';
   return null;
 }
 
@@ -141,16 +146,19 @@ export function publishBlockReason(params: {
   otherPublishedPaid: number;
   /** An admin approved the registration ID photo (registrationIdApprovedByAdmin). */
   registrationApproved?: boolean;
+  /** The caller's ID token carries a verified phone (2026-10-17). */
+  phoneVerified?: boolean;
 }): SafetyCode | null {
   const { profile, experience, otherPublishedPaid } = params;
-  const base = createBlockReason(profile);
+  const base = createBlockReason(profile, { phoneVerified: params.phoneVerified });
   if (base) return base;
   if (!hostAgreementAccepted(profile)) return 'host_agreement_required';
   if (!takesPayment(experience)) return null;
   if (paymentLinkBlocked(experience)) return 'payment_link_not_accepted';
   // Only active business accounts may charge for a listing.
   if (!isBusinessActive(profile)) return 'business_required';
-  if (idDocumentState(profile) !== 'approved' && params.registrationApproved !== true) {
+  if (params.phoneVerified !== true && idDocumentState(profile) !== 'approved' &&
+      params.registrationApproved !== true) {
     return 'id_document_not_approved';
   }
   if (experience.isFree !== true && profile?.isAdmin !== true && isNewHost(profile) &&

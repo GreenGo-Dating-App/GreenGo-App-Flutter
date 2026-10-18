@@ -1,3 +1,4 @@
+import '../../../../core/utils/phone_verification_gate.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
@@ -27,9 +28,19 @@ class AgeVerificationGate {
   /// prompt that appears the moment someone opens a community reads as a wall,
   /// while one that appears as they try to post reads as a reason.
   static Future<bool> ensureCanPublish(BuildContext context) async {
+    // Owner decision 2026-10-17 (final): the ID document is optional;
+    // publishing in communities needs a verified phone only for accounts
+    // created on/after 16 Oct 2026 (rules canPostChat: isAgeVerified() ||
+    // phoneOk()). Regional age assurance (ageAssuranceGate) is a separate,
+    // law-driven switch and unchanged.
+    return PhoneVerificationGate.ensureVerified(context);
+  }
+
+  /// Legacy document prompt (the ID document is optional since 2026-10-17).
+  // ignore: unused_element
+  static Future<bool> _legacyDocumentPrompt(BuildContext context) async {
     final service = AgeVerificationService();
     final state = await service.loadState();
-    if (state.canPublishToCommunities) return true;
     if (!context.mounted) return false;
 
     // Already submitted: say so rather than asking again.

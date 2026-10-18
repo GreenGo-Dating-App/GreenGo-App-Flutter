@@ -157,8 +157,9 @@ class OnboardingInProgress extends OnboardingState {
       case OnboardingStep.photos:
         return photoUrls.isNotEmpty;
       case OnboardingStep.verification:
-        return (verificationPhotoUrl != null && verificationPhotoUrl!.isNotEmpty) ||
-            (verificationMethod == 'phone' && verificationPhone != null && verificationPhone!.isNotEmpty);
+        // Owner rule 2026-10-17: a verified phone is MANDATORY for every new
+        // account; the ID photo is optional (Verified badge request).
+        return verificationPhone != null && verificationPhone!.isNotEmpty;
       case OnboardingStep.bio:
         return bio != null && bio!.isNotEmpty;
       case OnboardingStep.interests:

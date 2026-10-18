@@ -1,4 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../../core/utils/phone_verification_gate.dart';
+import '../../../../core/widgets/add_phone_banner.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -298,6 +300,9 @@ class EditProfileScreen extends StatelessWidget {
               padding: const EdgeInsets.all(AppDimensions.paddingL),
               child: Column(
                 children: [
+                  // Verified phone missing (legacy account): dismissible
+                  // reminder (owner rule 2026-10-17).
+                  AddPhoneBanner(userId: activeProfile.userId),
                   // Profile Header with name and membership badge
                   Padding(
                     padding: const EdgeInsets.only(bottom: 24),
@@ -989,6 +994,9 @@ class EditProfileScreen extends StatelessWidget {
   Future<void> _navigateToBusinessHub(
       BuildContext context, Profile currentProfile) async {
     final profileBloc = context.read<ProfileBloc>();
+    // Business Center needs a verified phone (owner rule 2026-10-17).
+    if (!await PhoneVerificationGate.ensureVerified(context)) return;
+    if (!context.mounted) return;
     await Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => BlocProvider.value(

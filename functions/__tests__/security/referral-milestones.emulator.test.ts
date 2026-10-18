@@ -268,7 +268,7 @@ describe('referral_stats rules (real client requests)', () => {
   function idToken(uid: string): string {
     const b = (o: any) => Buffer.from(JSON.stringify(o)).toString('base64url');
     const now = Math.floor(Date.now() / 1000);
-    return `${b({ alg: 'none', typ: 'JWT' })}.${b({ iss: `https://securetoken.google.com/${PROJECT}`, aud: PROJECT, auth_time: now, user_id: uid, sub: uid, iat: now, exp: now + 3600, firebase: { sign_in_provider: 'password' } })}.`;
+    return `${b({ alg: 'none', typ: 'JWT' })}.${b({ iss: `https://securetoken.google.com/${PROJECT}`, aud: PROJECT, auth_time: now, user_id: uid, sub: uid, iat: now, exp: now + 3600, phone_number: '+351910000000', firebase: { sign_in_provider: 'password' } })}.`;
   }
   const host = () => process.env.FIRESTORE_EMULATOR_HOST!.replace(/^(localhost|0.0.0.0):/, "127.0.0.1:");
   const base = () => `http://${host()}/v1/projects/${PROJECT}/databases/(default)/documents`;

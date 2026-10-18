@@ -21,7 +21,7 @@ import * as crypto from 'crypto';
 import { HttpsError, FunctionsErrorCode } from 'firebase-functions/v2/https';
 import '../shared/firebaseAdmin';
 import { isBusinessActive, tierDateFromValue } from '../shared/effectiveTier';
-import { assertCanParticipate } from '../shared/participation';
+import { assertCanParticipate, identityRequirementMetForUid } from '../shared/participation';
 import { registrationIdApprovedByAdmin } from '../shared/registrationIdReview';
 import { emitNotification, resolveActor, Actor } from '../notifications/notifyHelpers';
 import { LText, lt, rawText } from '../shared/i18n';
@@ -588,7 +588,10 @@ export async function createBooking(
       // Owner rule: booking an experience (any payment mode, free included)
       // needs Base or an active paid tier (shared/participation.ts).
       assertCanParticipate(guest, new Date(now));
-      if (idDocumentStateOf(guest) === 'none') fail('failed-precondition', 'id_document_required');
+      // Owner decision 2026-10-17: the ID document is OPTIONAL (was
+      // 'id_document_required'). New accounts need a verified phone, checked
+      // by the createBooking wrapper (assertPhoneVerified); older accounts
+      // are never required.
     }
 
     const sizeErr = groupSizeError(e, guests);
@@ -602,7 +605,10 @@ export async function createBooking(
       // Paid bookings only from an ACTIVE business account (existing paid
       // listings of other hosts stay readable; new sales are refused).
       if (!isBusinessActive(host)) fail('failed-precondition', 'seller_not_business');
+      // 2026-10-17: the host's ID document is optional - a verified phone (or
+      // an account older than the phone rule) satisfies the requirement.
       if (idDocumentStateOf(host) !== 'approved' &&
+          !(await identityRequirementMetForUid(hostP.id)) &&
           !(await registrationIdApprovedByAdmin(fdb(), hostP.id, host))) {
         fail('failed-precondition', 'host_not_verified');
       }

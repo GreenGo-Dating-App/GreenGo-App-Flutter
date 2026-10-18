@@ -15509,5 +15509,306 @@
   "userFollowSearchClear": "Clear search",
   "@userFollowSearchClear": {
     "description": "Tooltip of the clear button in the follow-list search box"
+  },
+  "businessContactPhoneLabel": "Business contact number",
+  "@businessContactPhoneLabel": {
+    "description": "Optional business contact number (Business Center / storefront)."
+  },
+  "businessContactPhoneHelper": "Optional. Any number customers can call, landlines included. It is not verified by SMS and it is not your account's verified phone number, which is never shown.",
+  "@businessContactPhoneHelper": {
+    "description": "Optional business contact number (Business Center / storefront)."
+  },
+  "businessContactPhoneHint": "Phone number",
+  "@businessContactPhoneHint": {
+    "description": "Optional business contact number (Business Center / storefront)."
+  },
+  "businessContactPhoneShowOnStorefront": "Show on my storefront",
+  "@businessContactPhoneShowOnStorefront": {
+    "description": "Optional business contact number (Business Center / storefront)."
+  },
+  "businessContactPhoneShowHint": "When off, only you can see this number.",
+  "@businessContactPhoneShowHint": {
+    "description": "Optional business contact number (Business Center / storefront)."
+  },
+  "businessContactPhoneSave": "Save number",
+  "@businessContactPhoneSave": {
+    "description": "Optional business contact number (Business Center / storefront)."
+  },
+  "businessContactPhoneSaved": "Contact number saved",
+  "@businessContactPhoneSaved": {
+    "description": "Optional business contact number (Business Center / storefront)."
+  },
+  "businessContactPhoneSaveError": "Could not save the contact number. Please try again.",
+  "@businessContactPhoneSaveError": {
+    "description": "Optional business contact number (Business Center / storefront)."
+  },
+  "businessContactPhoneInvalid": "Enter a valid phone number",
+  "@businessContactPhoneInvalid": {
+    "description": "Optional business contact number (Business Center / storefront)."
+  },
+  "businessContactPhoneStorefrontTitle": "Contact number",
+  "@businessContactPhoneStorefrontTitle": {
+    "description": "Optional business contact number (Business Center / storefront)."
+  },
+  "businessContactPhoneCall": "Call",
+  "@businessContactPhoneCall": {
+    "description": "Optional business contact number (Business Center / storefront)."
+  },
+  "identityDetailsTitle": "Document details (optional)",
+  "@identityDetailsTitle": {
+    "description": "Title of the optional ID-document details sheet"
+  },
+  "identityDetailsIntro": "You can type the details printed on your document. A reviewer checks them against the photo. They are stored encrypted and used only if a court or the police request it. The photo is deleted after the review.",
+  "@identityDetailsIntro": {
+    "description": "Explains what happens with optional ID details"
+  },
+  "identityDetailsAddButton": "Add document details (optional)",
+  "@identityDetailsAddButton": {
+    "description": "Button next to an ID upload"
+  },
+  "identityFirstNameLabel": "First name(s)",
+  "@identityFirstNameLabel": {
+    "description": "Field label"
+  },
+  "identitySurnameLabel": "Surname",
+  "@identitySurnameLabel": {
+    "description": "Field label"
+  },
+  "identityDobLabel": "Date of birth",
+  "@identityDobLabel": {
+    "description": "Field label"
+  },
+  "identityDocTypeLabel": "Document type",
+  "@identityDocTypeLabel": {
+    "description": "Field label"
+  },
+  "identityDocTypePassport": "Passport",
+  "@identityDocTypePassport": {
+    "description": "Document type"
+  },
+  "identityDocTypeIdCard": "Identity card",
+  "@identityDocTypeIdCard": {
+    "description": "Document type"
+  },
+  "identityDocTypeDrivingLicence": "Driving licence",
+  "@identityDocTypeDrivingLicence": {
+    "description": "Document type"
+  },
+  "identityDocTypeResidencePermit": "Residence permit",
+  "@identityDocTypeResidencePermit": {
+    "description": "Document type"
+  },
+  "identityDocTypeOther": "Other official document",
+  "@identityDocTypeOther": {
+    "description": "Document type"
+  },
+  "identityIssuingCountryLabel": "Issuing country",
+  "@identityIssuingCountryLabel": {
+    "description": "Field label"
+  },
+  "identityDocNumberLabel": "Document number",
+  "@identityDocNumberLabel": {
+    "description": "Field label"
+  },
+  "identityFieldRequired": "Required",
+  "@identityFieldRequired": {
+    "description": "Validation error"
+  },
+  "identityDocNumberInvalid": "Use 3 to 40 letters or digits",
+  "@identityDocNumberInvalid": {
+    "description": "Validation error"
+  },
+  "identitySubmitButton": "Save details",
+  "@identitySubmitButton": {
+    "description": "Submit button"
+  },
+  "identitySavedMessage": "Document details saved",
+  "@identitySavedMessage": {
+    "description": "Shown after saving"
+  },
+  "identitySaveError": "Couldn't save the details. Please try again.",
+  "@identitySaveError": {
+    "description": "Save failed"
+  },
+  "identityReviewTitle": "Typed document details",
+  "@identityReviewTitle": {
+    "description": "Admin review section title"
+  },
+  "identityReviewHint": "Check them against the photo and correct them before approving. Approving stores them encrypted.",
+  "@identityReviewHint": {
+    "description": "Admin review hint"
+  },
+  "identityReviewNone": "No document details were provided.",
+  "@identityReviewNone": {
+    "description": "Admin review: none"
+  },
+  "identityReviewConfirmButton": "Use these details",
+  "@identityReviewConfirmButton": {
+    "description": "Admin: confirm corrected details"
+  },
+  "phoneVerifyTitle": "Verify your phone",
+  "@phoneVerifyTitle": {
+    "description": "Title of the phone verification step / sheet"
+  },
+  "phoneVerifyRequiredBody": "Every GreenGo account needs a verified mobile number. We send you a code by SMS. Your number stays private and is never shown on your profile.",
+  "@phoneVerifyRequiredBody": {
+    "description": "Why the phone is required (onboarding)"
+  },
+  "phoneVerifyGateBody": "Verify your mobile number to join events, book experiences, buy tickets, host or use business tools. It stays private.",
+  "@phoneVerifyGateBody": {
+    "description": "Body of the verify-phone gate sheet"
+  },
+  "phoneVerifyCountryLabel": "Country",
+  "@phoneVerifyCountryLabel": {
+    "description": "Country picker label"
+  },
+  "phoneVerifyNumberLabel": "Mobile number",
+  "@phoneVerifyNumberLabel": {
+    "description": "Phone number field label"
+  },
+  "phoneVerifySendCode": "Send code",
+  "@phoneVerifySendCode": {
+    "description": "Button: send SMS code"
+  },
+  "phoneVerifyCodeLabel": "6-digit code",
+  "@phoneVerifyCodeLabel": {
+    "description": "SMS code field label"
+  },
+  "phoneVerifyConfirm": "Verify",
+  "@phoneVerifyConfirm": {
+    "description": "Button: confirm SMS code"
+  },
+  "phoneVerifyResend": "Resend code",
+  "@phoneVerifyResend": {
+    "description": "Button: resend SMS"
+  },
+  "phoneVerifyResendIn": "Resend code in {seconds}s",
+  "@phoneVerifyResendIn": {
+    "description": "Resend countdown",
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneVerifyCodeSentTo": "We sent a code to {phone}",
+  "@phoneVerifyCodeSentTo": {
+    "description": "Code sent confirmation",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "phoneVerifyChangeNumber": "Change number",
+  "@phoneVerifyChangeNumber": {
+    "description": "Button: go back to number entry"
+  },
+  "phoneVerifySuccess": "Phone number verified",
+  "@phoneVerifySuccess": {
+    "description": "Success state"
+  },
+  "phoneVerifyCountryNotListed": "Country not listed? Phone verification is not yet available there. Contact {email}.",
+  "@phoneVerifyCountryNotListed": {
+    "description": "Note under the restricted country picker",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "phoneVerifyUnsupportedCountry": "Phone verification is not yet available in your country. Please contact {email}.",
+  "@phoneVerifyUnsupportedCountry": {
+    "description": "Unsupported country message",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "phoneVerifyInvalidNumber": "Please enter a valid mobile number.",
+  "@phoneVerifyInvalidNumber": {
+    "description": "Invalid number error"
+  },
+  "phoneVerifyAlreadyUsed": "This number is already used by another account.",
+  "@phoneVerifyAlreadyUsed": {
+    "description": "Phone already linked to another account"
+  },
+  "phoneVerifyBlocked": "This number can't be used on GreenGo. Please contact {email}.",
+  "@phoneVerifyBlocked": {
+    "description": "Number of a banned account",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "phoneVerifyTooManyAttempts": "Too many attempts. Please wait a few minutes and try again.",
+  "@phoneVerifyTooManyAttempts": {
+    "description": "Rate limited"
+  },
+  "phoneVerifyInvalidCode": "That code isn't right. Check the SMS and try again.",
+  "@phoneVerifyInvalidCode": {
+    "description": "Wrong SMS code"
+  },
+  "phoneVerifyCodeExpired": "This code has expired. Please request a new one.",
+  "@phoneVerifyCodeExpired": {
+    "description": "Expired code"
+  },
+  "phoneVerifyGenericError": "We couldn't verify your number. Please try again.",
+  "@phoneVerifyGenericError": {
+    "description": "Generic failure"
+  },
+  "phoneVerifySmsNotice": "Standard SMS rates may apply.",
+  "@phoneVerifySmsNotice": {
+    "description": "SMS cost notice"
+  },
+  "phoneVerifyBannerTitle": "Add your phone number",
+  "@phoneVerifyBannerTitle": {
+    "description": "Own profile banner title"
+  },
+  "phoneVerifyBannerBody": "Verify your mobile number to join events, book experiences and host. It stays private.",
+  "@phoneVerifyBannerBody": {
+    "description": "Own profile banner body"
+  },
+  "phoneVerifyBannerAction": "Verify now",
+  "@phoneVerifyBannerAction": {
+    "description": "Banner button"
+  },
+  "phoneVerifyDismiss": "Not now",
+  "@phoneVerifyDismiss": {
+    "description": "Dismiss button"
+  },
+  "phoneVerifyRequiredToContinue": "Verify your phone number to continue.",
+  "@phoneVerifyRequiredToContinue": {
+    "description": "Onboarding continue blocked"
+  },
+  "phoneVerifyOnboardingOptionalId": "ID document (optional)",
+  "@phoneVerifyOnboardingOptionalId": {
+    "description": "Onboarding optional ID section title"
+  },
+  "phoneVerifyOnboardingOptionalIdBody": "Optionally add a photo of yourself holding your ID to request the Verified badge. The photo is deleted after review.",
+  "@phoneVerifyOnboardingOptionalIdBody": {
+    "description": "Onboarding optional ID section body"
+  },
+  "phoneVerifyAccountPhone": "Verified account phone",
+  "@phoneVerifyAccountPhone": {
+    "description": "Business verification: account phone is verified"
+  },
+  "phoneVerifyAccountPhoneNeeded": "Verify your account phone number first. It is the only identity requirement for a business account.",
+  "@phoneVerifyAccountPhoneNeeded": {
+    "description": "Business verification: phone missing"
+  },
+  "phoneVerifyOwnerDocumentOptional": "Owner ID document (optional)",
+  "@phoneVerifyOwnerDocumentOptional": {
+    "description": "Business verification: optional owner ID label"
+  },
+  "phoneVerifyBannerTitleOptional": "Add your phone number (optional)",
+  "@phoneVerifyBannerTitleOptional": {
+    "description": "Own profile banner title for accounts created before 16 Oct 2026 (never required)"
+  },
+  "phoneVerifyBannerBodyOptional": "It helps keep your account safe. Your number stays private.",
+  "@phoneVerifyBannerBodyOptional": {
+    "description": "Own profile banner body for accounts created before 16 Oct 2026"
   }
 }

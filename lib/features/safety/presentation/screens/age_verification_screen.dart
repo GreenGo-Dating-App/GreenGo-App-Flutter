@@ -4,7 +4,9 @@ import 'package:image_picker/image_picker.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/services/age_verification_service.dart';
+import '../../data/services/identity_details_service.dart';
 import '../widgets/id_consent_sheet.dart';
+import '../widgets/identity_details_form.dart';
 
 /// Age verification flow.
 ///
@@ -110,6 +112,14 @@ class _AgeVerificationScreenState extends State<AgeVerificationScreen> {
         rejectionReason: _state.rejectionReason,
       );
     });
+
+    // Optional: the details printed on the document, checked by the human
+    // reviewer and kept encrypted (identity-records.md). Only offered when a
+    // reviewer will look at the document.
+    if (status == AgeVerificationStatus.pending && mounted) {
+      await showIdentityDetailsSheet(context, source: IdentitySource.age);
+      if (!mounted) return;
+    }
 
     if (status == AgeVerificationStatus.verified && mounted) {
       Navigator.of(context).pop(true);
