@@ -6347,10 +6347,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Subscrição $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -15868,7 +15865,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get aiConsentWhy =>
-      'Porquê: apenas para produzir a sugestão, a tradução ou o áudio que pediu.';
+      'Porquê: apenas para produzir a tradução, o áudio, a transliteração ou a resposta que pediu.';
 
   @override
   String get aiConsentDeclineInfo =>
@@ -16215,21 +16212,13 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Renova-se automaticamente a $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Cancelada; o acesso termina a $date.';
   }
 
@@ -16372,7 +16361,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get aiServicesFeatureCoach =>
-      'Respostas sugeridas e o treinador de línguas com IA (gramática, análise de palavras, dicas culturais)';
+      'Transliteração para o alfabeto latino de mensagens escritas em alfabetos não latinos (com as dicas culturais ativadas)';
 
   @override
   String get aiServicesFeatureTranslate =>
@@ -19807,9 +19796,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-    String name,
-    String rewards,
-  ) {
+      String name, String rewards) {
     return 'Recompensas de $name recebidas! $rewards';
   }
 
@@ -20275,10 +20262,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String profileTravelerActiveSubtitle(
-    String location,
-    int hours,
-    int minutes,
-  ) {
+      String location, int hours, int minutes) {
     return '$location - faltam ${hours}h ${minutes}min';
   }
 
@@ -22229,11 +22213,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String supportReportFollowUpDetails(
-    String reason,
-    String message,
-    String user,
-    String date,
-  ) {
+      String reason, String message, String user, String date) {
     return 'Motivo: $reason\nMensagem denunciada: «$message»\nUtilizador denunciado: $user\nDenunciado em: $date';
   }
 
@@ -22572,41 +22552,50 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(achievement, {
-      'first_match': 'Primeira ligação',
-      'social_butterfly': 'Borboleta social',
-      'popular': 'Popular',
-      'video_enthusiast': 'Entusiasta de vídeo',
-      'daily_streak_7': 'Sequência de 7 dias',
-      'daily_streak_30': 'Sequência de 30 dias',
-      'other': 'Nova conquista',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      achievement,
+      {
+        'first_match': 'Primeira ligação',
+        'social_butterfly': 'Borboleta social',
+        'popular': 'Popular',
+        'video_enthusiast': 'Entusiasta de vídeo',
+        'daily_streak_7': 'Sequência de 7 dias',
+        'daily_streak_30': 'Sequência de 30 dias',
+        'other': 'Nova conquista',
+      },
+    );
     return 'Conquista desbloqueada: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(achievement, {
-      'first_match': 'Faz a tua primeira ligação',
-      'social_butterfly': 'Envia 100 mensagens',
-      'popular': 'Faz 50 ligações',
-      'video_enthusiast': 'Conclui 10 videochamadas',
-      'daily_streak_7': 'Entra 7 dias seguidos',
-      'daily_streak_30': 'Entra 30 dias seguidos',
-      'other': 'Continua assim!',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      achievement,
+      {
+        'first_match': 'Faz a tua primeira ligação',
+        'social_butterfly': 'Envia 100 mensagens',
+        'popular': 'Faz 50 ligações',
+        'video_enthusiast': 'Conclui 10 videochamadas',
+        'daily_streak_7': 'Entra 7 dias seguidos',
+        'daily_streak_30': 'Entra 30 dias seguidos',
+        'other': 'Continua assim!',
+      },
+    );
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(challenge, {
-      'send_5_messages': 'Iniciador de conversas',
-      'get_3_matches': 'Conector',
-      'complete_profile': 'Perfil perfeito',
-      'video_call_1': 'Cara a cara',
-      'other': 'Desafio diário',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      challenge,
+      {
+        'send_5_messages': 'Iniciador de conversas',
+        'get_3_matches': 'Conector',
+        'complete_profile': 'Perfil perfeito',
+        'video_call_1': 'Cara a cara',
+        'other': 'Desafio diário',
+      },
+    );
     return 'Desafio concluído: $_temp0!';
   }
 
@@ -23522,11 +23511,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get aiConsentIntroV2 =>
-      'As respostas inteligentes, o treinador de línguas com IA, a tradução das mensagens que recebe, a leitura em voz alta e as respostas automáticas do assistente de apoio só funcionam se a GreenGo enviar o texto em causa a estes fornecedores.';
+      'A tradução das mensagens que recebe, a leitura em voz alta, a transliteração para o alfabeto latino de mensagens escritas em alfabetos não latinos (por exemplo, japonês ou árabe) e as respostas automáticas do assistente de apoio só funcionam se a GreenGo enviar o texto em causa a estes fornecedores.';
 
   @override
   String get aiConsentProvidersV2 =>
-      'Quem: Google Gemini (sugestões e treino), Google Cloud Text-to-Speech (áudio), Google Cloud Translation (traduções) e Anthropic Claude (respostas automáticas do assistente de apoio).';
+      'Quem: os serviços de tradução da Google (traduções), Google Cloud Text-to-Speech (áudio), Google Gemini (transliteração) e Anthropic Claude (respostas automáticas do assistente de apoio).';
 
   @override
   String get aiConsentWhatSentV2 =>
@@ -32392,10 +32381,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Assinatura $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -41910,7 +41896,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get aiConsentWhy =>
-      'Por quê: apenas para gerar a sugestão, a tradução ou o áudio que você pediu.';
+      'Por quê: apenas para gerar a tradução, o áudio, a transliteração ou a resposta que você pediu.';
 
   @override
   String get aiConsentDeclineInfo =>
@@ -42259,21 +42245,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Renovação automática em $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Cancelada; o acesso termina em $date.';
   }
 
@@ -42414,7 +42392,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get aiServicesFeatureCoach =>
-      'Respostas sugeridas e o treinador de idiomas com IA (gramática, análise de palavras, dicas culturais)';
+      'Transliteração para o alfabeto latino de mensagens escritas em alfabetos não latinos (com as dicas culturais ativadas)';
 
   @override
   String get aiServicesFeatureTranslate =>
@@ -45852,9 +45830,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-    String name,
-    String rewards,
-  ) {
+      String name, String rewards) {
     return 'Recompensas de $name resgatadas! $rewards';
   }
 
@@ -46320,10 +46296,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String profileTravelerActiveSubtitle(
-    String location,
-    int hours,
-    int minutes,
-  ) {
+      String location, int hours, int minutes) {
     return '$location - faltam ${hours}h ${minutes}min';
   }
 
@@ -48276,11 +48249,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String supportReportFollowUpDetails(
-    String reason,
-    String message,
-    String user,
-    String date,
-  ) {
+      String reason, String message, String user, String date) {
     return 'Motivo: $reason\nMensagem denunciada: \"$message\"\nUsuário denunciado: $user\nDenunciado em: $date';
   }
 
@@ -48620,41 +48589,50 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(achievement, {
-      'first_match': 'Primeira conexão',
-      'social_butterfly': 'Borboleta social',
-      'popular': 'Popular',
-      'video_enthusiast': 'Entusiasta de vídeo',
-      'daily_streak_7': 'Sequência de 7 dias',
-      'daily_streak_30': 'Sequência de 30 dias',
-      'other': 'Nova conquista',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      achievement,
+      {
+        'first_match': 'Primeira conexão',
+        'social_butterfly': 'Borboleta social',
+        'popular': 'Popular',
+        'video_enthusiast': 'Entusiasta de vídeo',
+        'daily_streak_7': 'Sequência de 7 dias',
+        'daily_streak_30': 'Sequência de 30 dias',
+        'other': 'Nova conquista',
+      },
+    );
     return 'Conquista desbloqueada: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(achievement, {
-      'first_match': 'Faça sua primeira conexão',
-      'social_butterfly': 'Envie 100 mensagens',
-      'popular': 'Faça 50 conexões',
-      'video_enthusiast': 'Conclua 10 videochamadas',
-      'daily_streak_7': 'Entre 7 dias seguidos',
-      'daily_streak_30': 'Entre 30 dias seguidos',
-      'other': 'Continue assim!',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      achievement,
+      {
+        'first_match': 'Faça sua primeira conexão',
+        'social_butterfly': 'Envie 100 mensagens',
+        'popular': 'Faça 50 conexões',
+        'video_enthusiast': 'Conclua 10 videochamadas',
+        'daily_streak_7': 'Entre 7 dias seguidos',
+        'daily_streak_30': 'Entre 30 dias seguidos',
+        'other': 'Continue assim!',
+      },
+    );
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(challenge, {
-      'send_5_messages': 'Iniciador de conversas',
-      'get_3_matches': 'Conector',
-      'complete_profile': 'Perfil perfeito',
-      'video_call_1': 'Cara a cara',
-      'other': 'Desafio diário',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      challenge,
+      {
+        'send_5_messages': 'Iniciador de conversas',
+        'get_3_matches': 'Conector',
+        'complete_profile': 'Perfil perfeito',
+        'video_call_1': 'Cara a cara',
+        'other': 'Desafio diário',
+      },
+    );
     return 'Desafio concluído: $_temp0!';
   }
 
@@ -49570,11 +49548,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get aiConsentIntroV2 =>
-      'As respostas inteligentes, o coach de idiomas com IA, a tradução das mensagens que você recebe, a leitura em voz alta e as respostas automáticas do assistente de suporte só funcionam se o GreenGo enviar o texto em questão a esses fornecedores.';
+      'A tradução das mensagens que você recebe, a leitura em voz alta, a transliteração para o alfabeto latino de mensagens escritas em alfabetos não latinos (por exemplo, japonês ou árabe) e as respostas automáticas do assistente de suporte só funcionam se o GreenGo enviar o texto em questão a esses fornecedores.';
 
   @override
   String get aiConsentProvidersV2 =>
-      'Quem: Google Gemini (sugestões e coaching), Google Cloud Text-to-Speech (áudio), Google Cloud Translation (traduções) e Anthropic Claude (respostas automáticas do assistente de suporte).';
+      'Quem: os serviços de tradução do Google (traduções), Google Cloud Text-to-Speech (áudio), Google Gemini (transliteração) e Anthropic Claude (respostas automáticas do assistente de suporte).';
 
   @override
   String get aiConsentWhatSentV2 =>
