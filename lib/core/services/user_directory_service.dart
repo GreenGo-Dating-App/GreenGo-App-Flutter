@@ -23,6 +23,8 @@ class UserBrief {
     this.idVerified = false,
     this.guestRatingSum = 0,
     this.guestRatingCount = 0,
+    this.city,
+    this.country,
   });
 
   /// Builds a brief from a full profile. This is the ONE place the display
@@ -35,11 +37,20 @@ class UserBrief {
         : (p.nickname != null && p.nickname!.isNotEmpty
             ? '@${p.nickname}'
             : '');
+    String? clean(String v) {
+      final t = v.trim();
+      return t.isEmpty || t.toLowerCase() == 'unknown' ? null : t;
+    }
+
+    // The same (traveller-aware) location the profile page shows publicly.
+    final loc = p.effectiveLocation;
     return UserBrief(
       name: name,
       photoUrl: p.photoUrls.isNotEmpty ? p.photoUrls.first : null,
       language: p.languages.isNotEmpty ? p.languages.first : null,
       isActive: p.accountStatus == 'active' && !p.isBanned,
+      city: clean(loc.city),
+      country: clean(loc.country),
     );
   }
 
@@ -72,6 +83,12 @@ class UserBrief {
   /// "New guest".
   final double guestRatingSum;
   final int guestRatingCount;
+
+  /// Public city / country name of the profile's displayed location (from the
+  /// same profile doc the brief is built from — no extra read). Null when
+  /// unknown.
+  final String? city;
+  final String? country;
 
   double get guestRatingAvg =>
       guestRatingCount <= 0 ? 0 : guestRatingSum / guestRatingCount;
@@ -107,6 +124,8 @@ class UserBrief {
       idVerified: data['isAgeVerified'] == true,
       guestRatingSum: gSum,
       guestRatingCount: gCount,
+      city: city,
+      country: country,
     );
   }
 
@@ -120,6 +139,8 @@ class UserBrief {
         if (idVerified) 'v': true,
         if (guestRatingCount > 0) 'gs': guestRatingSum,
         if (guestRatingCount > 0) 'gc': guestRatingCount,
+        if (city != null) 'c': city,
+        if (country != null) 'co': country,
         't': fetchedAtMs,
       };
 
@@ -133,6 +154,8 @@ class UserBrief {
         idVerified: j['v'] == true,
         guestRatingSum: (j['gs'] as num?)?.toDouble() ?? 0,
         guestRatingCount: (j['gc'] as num?)?.toInt() ?? 0,
+        city: j['c'] as String?,
+        country: j['co'] as String?,
       );
 }
 
@@ -228,6 +251,25 @@ class UserDirectoryService extends ChangeNotifier {
 
   /// True when the server confirmed [uid] has no profile document.
   bool isConfirmedMissing(String uid) => _confirmedMissing.contains(uid);
+
+  /// Tests only: put [briefs] in memory as server-confirmed (no Hive, no
+  /// Firestore) and mark the directory loaded.
+  @visibleForTesting
+  void debugSeed(Map<String, UserBrief> briefs) {
+    _loaded = true;
+    for (final e in briefs.entries) {
+      _cache[e.key] = _Entry(e.value, _now);
+    }
+    _notify();
+  }
+
+  /// Tests only: forget everything [debugSeed] (or a fetch) put in memory.
+  @visibleForTesting
+  void debugReset() {
+    _cache.clear();
+    _profiles.clear();
+    _confirmedMissing.clear();
+  }
 
   // --------------------------------------------------------------- async API
 

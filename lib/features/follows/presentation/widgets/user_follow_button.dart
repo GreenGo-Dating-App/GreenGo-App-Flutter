@@ -16,7 +16,7 @@ import '../follow_toggle_controller.dart';
 /// write fails. Live state comes from one single-doc listener (the follow
 /// edge). Renders nothing for a self-view or when the two users blocked each
 /// other. Pass [controller] to share the optimistic state with a
-/// [FollowStatsRow] (so the follower count moves together with the button).
+/// [FollowCard] (so the follower count moves together with the button).
 class UserFollowButton extends StatefulWidget {
   const UserFollowButton({
     required this.targetUserId,

@@ -44195,6 +44195,77 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{km} km'**
   String distanceKmPrecise(String km);
+
+  /// Label under the follower count on the profile follow card
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Follower} other{Followers}}'**
+  String userFollowCardFollowersLabel(int count);
+
+  /// Two recent people, e.g. "Maria and João"
+  ///
+  /// In en, this message translates to:
+  /// **'{first} and {second}'**
+  String userFollowNamesTwo(String first, String second);
+
+  /// Two names plus N more people; formatted = compact N
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{first}, {second} and 1 other} other{{first}, {second} and {formatted} others}}'**
+  String userFollowNamesTwoMore(
+    int count,
+    String first,
+    String second,
+    String formatted,
+  );
+
+  /// One name plus N more people; formatted = compact N
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{first} and 1 other} other{{first} and {formatted} others}}'**
+  String userFollowNamesOneMore(int count, String first, String formatted);
+
+  /// N people when no names are known; formatted = compact N
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 person} other{{formatted} people}}'**
+  String userFollowNamesPeople(int count, String formatted);
+
+  /// Followers tab label with compact count
+  ///
+  /// In en, this message translates to:
+  /// **'Followers {formatted}'**
+  String userFollowTabFollowersCount(String formatted);
+
+  /// Following tab label with compact count
+  ///
+  /// In en, this message translates to:
+  /// **'Following {formatted}'**
+  String userFollowTabFollowingCount(String formatted);
+
+  /// Hint of the search box on the followers/following list
+  ///
+  /// In en, this message translates to:
+  /// **'Search by name'**
+  String get userFollowSearchHint;
+
+  /// Search on followers/following found nobody
+  ///
+  /// In en, this message translates to:
+  /// **'No one matches “{query}”'**
+  String userFollowSearchNoResults(String query);
+
+  /// Chip on a list row: this person follows the viewer
+  ///
+  /// In en, this message translates to:
+  /// **'Follows you'**
+  String get userFollowFollowsYou;
+
+  /// Tooltip of the clear button in the follow-list search box
+  ///
+  /// In en, this message translates to:
+  /// **'Clear search'**
+  String get userFollowSearchClear;
 }
 
 class _AppLocalizationsDelegate

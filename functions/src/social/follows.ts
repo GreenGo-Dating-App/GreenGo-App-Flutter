@@ -47,6 +47,12 @@ import {
   mirrorRef as coreMirrorRef,
 } from './followCounters';
 import { FOLLOW_CLEANUP_JOBS, removeFollowGraphRound } from './followCleanup';
+import {
+  FOLLOW_NAME_JOBS,
+  FollowNameJob,
+  followNameRound,
+  stampEdgeNames,
+} from './followNames';
 
 const db = admin.firestore();
 const FieldValue = admin.firestore.FieldValue;
@@ -125,6 +131,12 @@ export const onUserFollowCreated = onDocumentCreated(
     }
 
     const counted = await countEdge(followeeId, followerId);
+    // Searchable names for the followers / following search (followNames.ts).
+    // Idempotent, so a retried event re-stamps harmlessly; never blocks the
+    // count or the notification.
+    await stampEdgeNames(db, followeeId, followerId).catch((e) =>
+      console.error('onUserFollowCreated: name stamp failed', e?.message || e),
+    );
     if (!counted) return;
     const ageMs = Date.now() - Date.parse(event.time || '');
     if (Number.isFinite(ageMs) && ageMs > NOTIFY_MAX_AGE_MS) return;
@@ -219,6 +231,49 @@ export const onFollowCleanupJob = onDocumentWritten(
       { round: round + 1, lastRunAt: new Date(), lastRemoved: r.asFollower + r.asFollowee },
       { merge: true },
     );
+  }),
+);
+
+// ── Display name changed → refresh the searchable name on every edge ───────
+// `follow_name_jobs/{uid}` is (re)written by mirrorPrivateProfileFields only
+// when the searchable name changed. Each run fans out pages of <= 400 edges
+// under a deadline, then saves its cursor and bumps `round` (re-firing this
+// trigger) until done. A newer name overwrites the job (new `gen`), so an
+// older run stops at its next page and never writes a stale name last.
+const NAME_JOB_MAX_ROUNDS = 5000;
+const NAME_JOB_BUDGET_MS = 420_000;
+
+export const onFollowNameJob = onDocumentWritten(
+  {
+    document: `${FOLLOW_NAME_JOBS}/{uid}`,
+    memory: '512MiB',
+    timeoutSeconds: 540,
+    retry: true,
+  },
+  monitored('onFollowNameJob', async (event) => {
+    const after = event.data?.after;
+    if (!after?.exists) return; // finished (deleted)
+    const uid = event.params.uid as string;
+    const job = after.data() as FollowNameJob;
+    const round = Number(job.round ?? 0);
+    if (round > NAME_JOB_MAX_ROUNDS) {
+      console.error('onFollowNameJob: giving up after max rounds', uid, round);
+      return;
+    }
+    const r = await followNameRound(db, uid, job, {
+      deadlineMs: Date.now() + NAME_JOB_BUDGET_MS,
+    });
+    if (r.superseded) return; // the newer job write runs on its own
+    // Only touch the job while it is still OURS (same gen).
+    await db.runTransaction(async (txn) => {
+      const cur = await txn.get(after.ref);
+      if (!cur.exists || cur.get('gen') !== job.gen) return;
+      if (r.done) {
+        txn.delete(after.ref);
+      } else {
+        txn.update(after.ref, { phase: r.phase, cursor: r.cursor, round: round + 1 });
+      }
+    });
   }),
 );
 

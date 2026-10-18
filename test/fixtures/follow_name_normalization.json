@@ -1,0 +1,69 @@
+{
+  "_comment": "Shared by functions/src/social/__tests__/followNames.test.ts and test/unit/follows/follow_name_normalizer_test.dart: the server and app MUST normalize names identically.",
+  "cases": [
+    [
+      "  João  Silva ",
+      "joao silva"
+    ],
+    [
+      "MARÍA José",
+      "maria jose"
+    ],
+    [
+      "François Ç",
+      "francois c"
+    ],
+    [
+      "Müller-Lüdenscheidt",
+      "muller-ludenscheidt"
+    ],
+    [
+      "Đặng Thị Ngọc",
+      "đang thi ngoc"
+    ],
+    [
+      "İstanbul",
+      "istanbul"
+    ],
+    [
+      "éclair",
+      "eclair"
+    ],
+    [
+      "한국어",
+      "한국어"
+    ],
+    [
+      "がぎ",
+      "がぎ"
+    ],
+    [
+      "Straße",
+      "straße"
+    ],
+    [
+      "Øyvind Ærø",
+      "øyvind ærø"
+    ],
+    [
+      "Łukasz Żółć",
+      "łukasz zołc"
+    ],
+    [
+      "Ştefan Ţară",
+      "stefan tara"
+    ],
+    [
+      "Nguyễn Văn Ánh",
+      "nguyen van anh"
+    ],
+    [
+      "Ana\tMaria\n",
+      "ana maria"
+    ],
+    [
+      "",
+      ""
+    ]
+  ]
+}

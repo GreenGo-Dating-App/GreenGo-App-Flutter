@@ -59,19 +59,28 @@ export function makeDb() {
     delete: async () => remove(path),
   });
 
-  const list = (colPath: string, n: number) => {
+  const list = (colPath: string, n: number, afterId?: string) => {
     const depth = colPath.split('/').length + 1;
     const docs = [...store.keys()]
       .filter((k) => k.startsWith(`${colPath}/`) && k.split('/').length === depth)
+      .filter((k) => afterId === undefined || k.split('/').pop()! > afterId)
       .sort()
       .slice(0, n)
       .map(snap);
     return { empty: docs.length === 0, size: docs.length, docs };
   };
 
+  /** Document-id ordered query: orderBy('__name__').startAfter(id).limit(n). */
+  const idQuery = (path: string, n = Infinity, afterId?: string): any => ({
+    startAfter: (id: string) => idQuery(path, n, id),
+    limit: (m: number) => idQuery(path, m, afterId),
+    get: async () => list(path, n, afterId),
+  });
+
   const col = (path: string): any => ({
     doc: (id: string) => ref(`${path}/${id}`),
     limit: (n: number) => ({ get: async () => list(path, n) }),
+    orderBy: () => idQuery(path),
   });
 
   const db: any = {

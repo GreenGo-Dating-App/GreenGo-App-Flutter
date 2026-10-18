@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../../../../core/services/blocked_users_service.dart';
+import '../../../../core/utils/follow_name_normalizer.dart';
 import 'follow_count_overlay.dart';
 
 export 'follow_count_overlay.dart' show FollowCountOverlay, FollowCounter;
@@ -286,6 +287,62 @@ class FollowService {
     Query<Map<String, dynamic>> q =
         col.orderBy('createdAt', descending: true).limit(limit);
     if (after != null) q = q.startAfterDocument(after);
+    final snap = await q.get();
+    return FollowPage(
+      userIds: [for (final d in snap.docs) d.id],
+      cursor: snap.docs.isEmpty ? after : snap.docs.last,
+      hasMore: snap.docs.length == limit,
+    );
+  }
+
+  // ── search ─────────────────────────────────────────────────────────────
+
+  /// Searchable-name fields, written ONLY by the server (functions
+  /// social/followNames.ts) — normalized with [normalizeFollowName].
+  static const String followerNameField = 'followerNameLower';
+  static const String followeeNameField = 'followeeNameLower';
+
+  /// Page size for the followers / following search.
+  static const int searchPageSize = 20;
+
+  /// Prefix search over ALL of [uid]'s followers by name (server-side, not
+  /// just the loaded rows): one ordered, bounded query per page inside the
+  /// subcollection (automatic single-field index). [query] is normalized
+  /// here with [normalizeFollowName] (same as the server). Edges without a
+  /// name yet (pre-backfill) are not matched; they still list normally.
+  Future<FollowPage> searchFollowers(
+    String uid,
+    String query, {
+    DocumentSnapshot<Map<String, dynamic>>? after,
+    int limit = searchPageSize,
+  }) =>
+      _search(_followersCol(uid), followerNameField, query,
+          after: after, limit: limit);
+
+  /// Prefix search over ALL the accounts [uid] follows, by name.
+  Future<FollowPage> searchFollowing(
+    String uid,
+    String query, {
+    DocumentSnapshot<Map<String, dynamic>>? after,
+    int limit = searchPageSize,
+  }) =>
+      _search(_followingCol(uid), followeeNameField, query,
+          after: after, limit: limit);
+
+  Future<FollowPage> _search(
+    CollectionReference<Map<String, dynamic>> col,
+    String field,
+    String rawQuery, {
+    required int limit,
+    DocumentSnapshot<Map<String, dynamic>>? after,
+  }) async {
+    final query = normalizeFollowName(rawQuery);
+    if (query.isEmpty) {
+      return FollowPage(userIds: const [], cursor: after, hasMore: false);
+    }
+    Query<Map<String, dynamic>> q = col.orderBy(field);
+    q = after != null ? q.startAfterDocument(after) : q.startAt([query]);
+    q = q.endAt([query + String.fromCharCode(0xF8FF)]).limit(limit);
     final snap = await q.get();
     return FollowPage(
       userIds: [for (final d in snap.docs) d.id],

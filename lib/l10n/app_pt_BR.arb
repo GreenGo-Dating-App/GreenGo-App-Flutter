@@ -8220,5 +8220,16 @@
   "traderCardNonTrader": "Esta pessoa é pessoa física, não um profissional. Os direitos do consumidor em compras de profissionais não se aplicam a esta compra.",
   "traderCardRegister": "{register}: {number}",
   "distanceMeters": "{meters} m",
-  "distanceKmPrecise": "{km} km"
+  "distanceKmPrecise": "{km} km",
+  "userFollowCardFollowersLabel": "{count, plural, =1{Seguidor} other{Seguidores}}",
+  "userFollowNamesTwo": "{first} e {second}",
+  "userFollowNamesTwoMore": "{count, plural, =1{{first}, {second} e mais 1} other{{first}, {second} e mais {formatted}}}",
+  "userFollowNamesOneMore": "{count, plural, =1{{first} e mais 1} other{{first} e mais {formatted}}}",
+  "userFollowNamesPeople": "{count, plural, =1{1 pessoa} other{{formatted} pessoas}}",
+  "userFollowTabFollowersCount": "Seguidores {formatted}",
+  "userFollowTabFollowingCount": "Seguindo {formatted}",
+  "userFollowSearchHint": "Buscar por nome",
+  "userFollowSearchNoResults": "Ninguém corresponde a “{query}”",
+  "userFollowFollowsYou": "Segue você",
+  "userFollowSearchClear": "Limpar busca"
 }

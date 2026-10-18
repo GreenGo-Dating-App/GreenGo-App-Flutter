@@ -25816,4 +25816,82 @@ class AppLocalizationsEn extends AppLocalizations {
   String distanceKmPrecise(String km) {
     return '$km km';
   }
+
+  @override
+  String userFollowCardFollowersLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Followers',
+      one: 'Follower',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String userFollowNamesTwo(String first, String second) {
+    return '$first and $second';
+  }
+
+  @override
+  String userFollowNamesTwoMore(
+    int count,
+    String first,
+    String second,
+    String formatted,
+  ) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$first, $second and $formatted others',
+      one: '$first, $second and 1 other',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String userFollowNamesOneMore(int count, String first, String formatted) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$first and $formatted others',
+      one: '$first and 1 other',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String userFollowNamesPeople(int count, String formatted) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$formatted people',
+      one: '1 person',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String userFollowTabFollowersCount(String formatted) {
+    return 'Followers $formatted';
+  }
+
+  @override
+  String userFollowTabFollowingCount(String formatted) {
+    return 'Following $formatted';
+  }
+
+  @override
+  String get userFollowSearchHint => 'Search by name';
+
+  @override
+  String userFollowSearchNoResults(String query) {
+    return 'No one matches “$query”';
+  }
+
+  @override
+  String get userFollowFollowsYou => 'Follows you';
+
+  @override
+  String get userFollowSearchClear => 'Clear search';
 }
