@@ -3,6 +3,9 @@
  * ./privateProfile.ts (pure helpers + transactional sync); see the header
  * there for the data model and the no-loop argument.
  *
+ * mirrorPrivateProfileFields also (re)starts the follow-edge name fan-out
+ * (follow_name_jobs → onFollowNameJob) when the display name changes.
+ *
  * Deploy:  mirrorPrivateProfileFields, syncCoarseFromPrivateProfile,
  *          refreshBirthdayAges, getVerificationPhotoUrl
  *          (the first two also publish / delete `preciseLocation` for
@@ -33,6 +36,7 @@ import {
   handlePublicProfileWrite,
   syncProfile,
 } from './privateProfile';
+import { enqueueFollowNameJobIfChanged } from '../social/followNames';
 
 /**
  * profiles/{uid} written. Most writes (presence, counters) touch no watched
@@ -44,6 +48,13 @@ export const mirrorPrivateProfileFields = onDocumentWritten(
     const uid = event.params.uid as string;
     const before = event.data?.before?.exists ? event.data.before.data() : undefined;
     const after = event.data?.after?.exists ? event.data.after.data() : undefined;
+    // Searchable follow-edge names (followNames.ts): a pure in-memory compare,
+    // no read and no write unless the display name / nickname changed.
+    try {
+      await enqueueFollowNameJobIfChanged(admin.firestore(), uid, before, after);
+    } catch (e: any) {
+      console.error('follow name job enqueue failed:', e?.message || e);
+    }
     await handlePublicProfileWrite(uid, before, after);
   },
 );

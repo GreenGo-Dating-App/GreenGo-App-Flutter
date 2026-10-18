@@ -50,7 +50,7 @@ import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
 // Progress screen moved to bottom navigation - import removed
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
-import '../../../follows/presentation/widgets/follow_stats_row.dart';
+import '../../../follows/presentation/widgets/follow_card.dart';
 import '../../../gamification/domain/entities/achievement.dart';
 import '../../../gamification/presentation/bloc/gamification_bloc.dart';
 import '../../../gamification/presentation/screens/achievements_screen.dart';
@@ -344,13 +344,10 @@ class EditProfileScreen extends StatelessWidget {
                     ),
                   ),
 
-                  // Followers · following (tappable → lists).
-                  Center(
-                    child: FollowStatsRow(
-                      userId: activeProfile.userId,
-                      currentUserId: activeProfile.userId,
-                      alignment: MainAxisAlignment.center,
-                    ),
+                  // Followers | Following card (tappable → lists).
+                  FollowCard(
+                    userId: activeProfile.userId,
+                    currentUserId: activeProfile.userId,
                   ),
 
                   const SizedBox(height: 16),

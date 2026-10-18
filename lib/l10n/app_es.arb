@@ -8270,5 +8270,16 @@
   "aiConsentTranslateReceived": "Los mensajes que recibes pueden traducirse cuando tocas Traducir; el texto se envía al servicio de traducción de Google.",
   "deleteAccountConfirmationIos": "¿Eliminar tu cuenta? No se puede deshacer.\n\n• Se eliminan tu cuenta y tu perfil. Algunos registros se conservan cuando la ley lo exige (pagos y facturas, denuncias de seguridad); consulta la Política de privacidad.\n• Las monedas que te queden se pierden.\n• Una membresía comprada en la web se cancela.\n• Una membresía comprada en la App Store NO se cancela al eliminar la cuenta: cancélala en la tienda o la tienda te seguirá cobrando.",
   "profileDeleteAccountWarningIos": "Es definitivo. Se eliminan tu cuenta y tu perfil (algunos registros se conservan según exige la ley; consulta la Política de privacidad), se pierden las monedas restantes y se cancela la membresía web. Cancela cualquier suscripción de la App Store en la tienda. Introduce tu contraseña para confirmar.",
-  "promoRenewsWeb": "Se renueva automáticamente; cancela cuando quieras en el portal de facturación."
+  "promoRenewsWeb": "Se renueva automáticamente; cancela cuando quieras en el portal de facturación.",
+  "userFollowCardFollowersLabel": "{count, plural, =1{Seguidor} other{Seguidores}}",
+  "userFollowNamesTwo": "{first} y {second}",
+  "userFollowNamesTwoMore": "{count, plural, =1{{first}, {second} y 1 más} other{{first}, {second} y {formatted} más}}",
+  "userFollowNamesOneMore": "{count, plural, =1{{first} y 1 más} other{{first} y {formatted} más}}",
+  "userFollowNamesPeople": "{count, plural, =1{1 persona} other{{formatted} personas}}",
+  "userFollowTabFollowersCount": "Seguidores {formatted}",
+  "userFollowTabFollowingCount": "Siguiendo {formatted}",
+  "userFollowSearchHint": "Buscar por nombre",
+  "userFollowSearchNoResults": "Nadie coincide con «{query}»",
+  "userFollowFollowsYou": "Te sigue",
+  "userFollowSearchClear": "Borrar búsqueda"
 }

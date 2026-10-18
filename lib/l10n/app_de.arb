@@ -8270,5 +8270,16 @@
   "aiConsentTranslateReceived": "Empfangene Nachrichten können übersetzt werden, wenn du auf Übersetzen tippst; der Text wird an den Übersetzungsdienst von Google gesendet.",
   "deleteAccountConfirmationIos": "Konto löschen? Das kann nicht rückgängig gemacht werden.\n\n• Dein Konto und dein Profil werden gelöscht. Einige Unterlagen werden aufbewahrt, soweit das Gesetz es verlangt (Zahlungen und Rechnungen, Sicherheitsmeldungen); siehe Datenschutzerklärung.\n• Verbleibende Coins gehen verloren.\n• Eine im Web gekaufte Mitgliedschaft wird gekündigt.\n• Eine über den App Store gekaufte Mitgliedschaft wird durch das Löschen NICHT gekündigt: Kündige sie im Store, sonst bucht der Store weiter ab.",
   "profileDeleteAccountWarningIos": "Das ist endgültig. Dein Konto und dein Profil werden gelöscht (einige Unterlagen werden aufbewahrt, soweit das Gesetz es verlangt; siehe Datenschutzerklärung), verbleibende Coins gehen verloren und eine Web-Mitgliedschaft wird gekündigt. Kündige App-Store-Abos im App Store. Gib zur Bestätigung dein Passwort ein.",
-  "promoRenewsWeb": "Verlängert sich automatisch; jederzeit im Abrechnungsportal kündbar."
+  "promoRenewsWeb": "Verlängert sich automatisch; jederzeit im Abrechnungsportal kündbar.",
+  "userFollowCardFollowersLabel": "{count, plural, =1{Follower} other{Follower}}",
+  "userFollowNamesTwo": "{first} und {second}",
+  "userFollowNamesTwoMore": "{count, plural, =1{{first}, {second} und 1 weitere Person} other{{first}, {second} und {formatted} weitere}}",
+  "userFollowNamesOneMore": "{count, plural, =1{{first} und 1 weitere Person} other{{first} und {formatted} weitere}}",
+  "userFollowNamesPeople": "{count, plural, =1{1 Person} other{{formatted} Personen}}",
+  "userFollowTabFollowersCount": "Follower {formatted}",
+  "userFollowTabFollowingCount": "Folge ich {formatted}",
+  "userFollowSearchHint": "Nach Namen suchen",
+  "userFollowSearchNoResults": "Niemand passt zu „{query}“",
+  "userFollowFollowsYou": "Folgt dir",
+  "userFollowSearchClear": "Suche löschen"
 }

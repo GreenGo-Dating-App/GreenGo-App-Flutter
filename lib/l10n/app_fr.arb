@@ -7696,5 +7696,16 @@
   "aiConsentTranslateReceived": "Les messages que tu reçois peuvent être traduits lorsque tu touches Traduire ; le texte est envoyé au service de traduction de Google.",
   "deleteAccountConfirmationIos": "Supprimer votre compte ? Cette action est irréversible.\n\n• Votre compte et votre profil sont supprimés. Certaines données sont conservées lorsque la loi l'exige (paiements et factures, signalements de sécurité) ; voir la Politique de confidentialité.\n• Les pièces restantes sont perdues.\n• Un abonnement acheté sur le web est résilié.\n• Un abonnement acheté sur l'App Store n'est PAS résilié par la suppression du compte : résiliez-le dans la boutique, sinon elle continuera à vous facturer.",
   "profileDeleteAccountWarningIos": "C'est définitif. Votre compte et votre profil sont supprimés (certaines données sont conservées comme la loi l'exige ; voir la Politique de confidentialité), les pièces restantes sont perdues et un abonnement web est résilié. Résiliez tout abonnement App Store dans la boutique. Saisissez votre mot de passe pour confirmer.",
-  "promoRenewsWeb": "Renouvellement automatique ; résiliable à tout moment dans le portail de facturation."
+  "promoRenewsWeb": "Renouvellement automatique ; résiliable à tout moment dans le portail de facturation.",
+  "userFollowCardFollowersLabel": "{count, plural, =1{Abonné} other{Abonnés}}",
+  "userFollowNamesTwo": "{first} et {second}",
+  "userFollowNamesTwoMore": "{count, plural, =1{{first}, {second} et 1 autre} other{{first}, {second} et {formatted} autres}}",
+  "userFollowNamesOneMore": "{count, plural, =1{{first} et 1 autre} other{{first} et {formatted} autres}}",
+  "userFollowNamesPeople": "{count, plural, =1{1 personne} other{{formatted} personnes}}",
+  "userFollowTabFollowersCount": "Abonnés {formatted}",
+  "userFollowTabFollowingCount": "Abonnements {formatted}",
+  "userFollowSearchHint": "Rechercher par nom",
+  "userFollowSearchNoResults": "Personne ne correspond à « {query} »",
+  "userFollowFollowsYou": "Vous suit",
+  "userFollowSearchClear": "Effacer la recherche"
 }

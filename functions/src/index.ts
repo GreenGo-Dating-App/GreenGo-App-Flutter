@@ -748,6 +748,7 @@ export {
   onUserFollowCreated,
   onUserFollowDeleted,
   onFollowCleanupJob,
+  onFollowNameJob,
   backfillFollowCounts,
 } from './social/follows';
 

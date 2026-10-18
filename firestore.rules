@@ -2132,7 +2132,11 @@ service cloud.firestore {
     // (a profile's "Following" list); written only by its owner.
     match /user_business_following/{userId}/businesses/{businessId} {
       allow read: if isSignedIn();
-      allow create: if isOwner(userId) && userId != businessId;
+      // `followeeNameLower` (searchable name) is written ONLY by the server
+      // (functions social/followNames.ts); a client can never forge it. The
+      // canonical edge above already allows `createdAt` only.
+      allow create: if isOwner(userId) && userId != businessId
+        && !request.resource.data.keys().hasAny(['followeeNameLower', 'followerNameLower']);
       allow delete: if isOwner(userId);
     }
 
