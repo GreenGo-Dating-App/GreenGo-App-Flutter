@@ -196,6 +196,8 @@ describe('phone index: one number per account, banned numbers remembered', () =>
     const idx = (await db.doc(`phone_index/${phoneHash(PHONE)}`).get()).data()!;
     expect(idx.banned).toBe(true);
     expect(idx.uid).toBeNull();
+    // Privacy Policy: kept 5 years after the deletion.
+    expect(idx.retainUntil.toMillis()).toBeGreaterThan(Date.now() + 4.9 * 365 * DAY);
     expect(await call(checkPhoneAllowed, { phone: PHONE }, 'phc01', {})).toEqual({ allowed: false, reason: 'phone_banned' });
   });
   test('a non-banned deletion frees the number', async () => {
