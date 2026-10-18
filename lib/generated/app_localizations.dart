@@ -42048,7 +42048,7 @@ abstract class AppLocalizations {
   /// No description provided for @promoUntilNote.
   ///
   /// In en, this message translates to:
-  /// **'For new subscribers until 31 December 2026.'**
+  /// **'For new subscribers until 31 March 2027.'**
   String get promoUntilNote;
 
   /// No description provided for @translationDailyLimitReached.

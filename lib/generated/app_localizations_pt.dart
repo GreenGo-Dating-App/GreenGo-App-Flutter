@@ -24731,7 +24731,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get promoUntilNote =>
-      'Para novos subscritores até 31 de dezembro de 2026.';
+      'Para novos subscritores até 31 de março de 2027.';
 
   @override
   String get translationDailyLimitReached =>
@@ -51289,7 +51289,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get promoUntilNote =>
-      'Para novos assinantes até 31 de dezembro de 2026.';
+      'Para novos assinantes até 31 de março de 2027.';
 
   @override
   String get translationDailyLimitReached =>

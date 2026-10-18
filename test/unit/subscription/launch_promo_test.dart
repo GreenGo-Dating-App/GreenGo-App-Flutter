@@ -48,17 +48,20 @@ List<GooglePlayProductDetails> _play(List<List<PricingPhaseWrapper>> offers,
     ));
 
 void main() {
-  final before = DateTime.utc(2026, 12, 31, 23); // still 31 Dec in Brazil
-  final after = DateTime.utc(2027, 1, 1, 3);
+  final before = DateTime.utc(2027, 4, 1, 2, 59, 59); // still 31 Mar in Brazil
+  final after = DateTime.utc(2027, 4, 1, 3); // 1 Apr 2027 00:00 in Brazil
   final regular = _phase(34900000, r'R$ 34,90', 'P1M');
   final launch = _phase(16900000, r'R$ 16,90', 'P1M', cycles: 3);
 
   tearDown(() => LaunchPromo.clock = DateTime.now);
 
   group('promo window', () {
-    test('ends at the end of 31 Dec 2026, Brazil time', () {
+    test('ends at the end of 31 Mar 2027, Brazil time (extended from 31 Dec 2026)', () {
       expect(LaunchPromo.isActive(before), isTrue);
       expect(LaunchPromo.isActive(after), isFalse);
+      // The old end date no longer ends the offer.
+      expect(LaunchPromo.isActive(DateTime.utc(2027, 1, 1, 3)), isTrue);
+      expect(LaunchPromo.isActive(DateTime.utc(2027, 3, 31, 12)), isTrue);
       expect(LaunchPromo.percentOff, 50);
     });
 
@@ -197,7 +200,7 @@ void main() {
                 'percentOff': 50,
                 'periods': 1,
                 'interval': 'year',
-                'endsAt': endsAt ?? '2027-01-01T03:00:00.000Z',
+                'endsAt': endsAt ?? '2027-04-01T03:00:00.000Z',
               },
             },
           },

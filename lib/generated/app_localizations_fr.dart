@@ -24898,7 +24898,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get promoUntilNote =>
-      'Pour les nouveaux abonnés jusqu\'au 31 décembre 2026.';
+      'Pour les nouveaux abonnés jusqu\'au 31 mars 2027.';
 
   @override
   String get translationDailyLimitReached =>

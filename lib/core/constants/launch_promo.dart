@@ -2,8 +2,9 @@ import 'package:flutter/foundation.dart' show visibleForTesting;
 
 /// The 2026 launch promo (owner decision 2026-10-13): every membership plan is
 /// 50% off for its FIRST period - the first year of a yearly plan, the first
-/// 3 months of a monthly plan - for subscriptions bought until 31 December
-/// 2026 (end of day, Brazil time). Renewals are at the regular price.
+/// 3 months of a monthly plan - for subscriptions bought until 31 March 2027
+/// (end of day, Brazil time; extended from 31 December 2026 by the owner on
+/// 2026-10-18). Renewals are at the regular price.
 ///
 /// Shown as a "2026 launch price" next to the regular price, never as a
 /// struck-through former price. Everything promo-related hides itself once
@@ -29,8 +30,8 @@ class LaunchPromo {
   static const int monthlyPeriods = 3;
   static const int yearlyPeriods = 1;
 
-  /// 31 Dec 2026 23:59:59 in Brazil (UTC-3) = 1 Jan 2027 03:00 UTC.
-  static final DateTime endsAt = DateTime.utc(2027, 1, 1, 3);
+  /// 31 Mar 2027 23:59:59 in Brazil (UTC-3, no DST) = 1 Apr 2027 03:00 UTC.
+  static final DateTime endsAt = DateTime.utc(2027, 4, 1, 3);
 
   @visibleForTesting
   static DateTime Function() clock = DateTime.now;

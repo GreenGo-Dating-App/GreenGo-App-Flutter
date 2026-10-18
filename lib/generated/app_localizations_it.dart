@@ -24785,7 +24785,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get promoUntilNote => 'Per i nuovi abbonati fino al 31 dicembre 2026.';
+  String get promoUntilNote => 'Per i nuovi abbonati fino al 31 marzo 2027.';
 
   @override
   String get translationDailyLimitReached =>
