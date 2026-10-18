@@ -97,12 +97,11 @@ happens in your account unless it was used without your fault.
 4.3 Your account is personal. You may not sell, lend or transfer it.
 
 4.4 Verification
-a) Some features require you to verify your age with an identity document:
-   - publishing in a Community;
-   - publishing any Experience, and booking an Experience as a member
-     (section 12.3);
-   - other cases the law requires where you live.
-   In all other cases, verifying with an identity document is optional.
+a) Verifying with an identity document is optional. Publishing in a
+   Community, and publishing, hosting or booking an Experience, need a
+   verified phone number instead (section 4.5). Where the law requires
+   stronger age checks where you live, we may ask you to verify your age
+   with an identity document.
 b) Some badges require you to verify your profile with a selfie.
 c) When you verify with an identity document, the app reads the document on
    your device and fills in your first name, surname, date of birth, document
@@ -121,8 +120,11 @@ d) Using a document that is not yours, or that was already used for another
 4.5 Phone number
 a) Every account needs its own verified mobile phone number. One phone
    number can be linked to only one account.
-b) If your account was created before phone verification was required, you
-   must verify a phone number before you:
+b) If your account was created before 16 October 2026, until 15 November
+   2026 we only ask you to verify a phone number, and you can continue
+   without it. From 16 November 2026 you must verify a phone number before
+   you:
+   - publish in a Community;
    - join or book an Event or an Experience, or buy a ticket;
    - create or host an Event or an Experience;
    - use a Business account.
@@ -603,13 +605,9 @@ d) never ask Guests to pay outside the in-app checkout, for example with a
    payment link, a bank transfer or cash;
 e) treat Guests with respect and keep them safe.
 
-Identity document:
-- To publish any Experience, free or paid, you must have uploaded an identity
-  document. The same applies to booking an Experience as a member.
-- To publish a paid Experience, your age verification must also have been
-  approved.
-Phone number: to publish or host an Experience, your account needs a verified
-phone number (section 4.5).
+Phone number: to publish or host any Experience, free or paid, your account
+needs a verified phone number (section 4.5). An identity document is optional
+(section 4.4).
 New Hosts may publish only one paid Experience until they have 3 reviews.
 
 12.4 Hosts who are traders
@@ -637,8 +635,8 @@ c) If the Host removes your booked time or cancels your booking, GreenGo
    app within the window shown. GreenGo will look at it and may record a
    refund owed by the Host, or take action against the Host's account.
    GreenGo itself does not pay refunds for Experiences from its own funds.
-d) To book an Experience as a member, you must have uploaded an identity
-   document (section 12.3) and verified your phone number (section 4.5).
+d) To book an Experience as a member, you must have verified your phone
+   number (section 4.5).
 
 12.6 Reviews
 - After a real booking, Hosts and Guests can review each other.
@@ -1269,16 +1267,20 @@ Phone verification and identity details:
 - Sections 3.3, 3.5, 4.5, 11.1, 12.3, 12.5, 13.4 and 13.7: a verified mobile
   phone number is required to create an account (numbers from European countries
   except Russia and Belarus, Brazil, the United States, Canada and the United
-  Kingdom), and for existing accounts before joining or booking Events and
-  Experiences, buying tickets, creating or hosting Events and Experiences
-  and using a Business account; one number per account; the number is
+  Kingdom), and for existing accounts (only asked until 15 November 2026,
+  required from 16 November 2026) before publishing in a Community, joining
+  or booking Events and Experiences, buying tickets, creating or hosting
+  Events and Experiences and using a Business account; one number per
+  account; the number is
   private; a keyed hash of the email address and phone number of banned
   accounts.
 - Section 13.1: an optional business contact number, shown on the business
   page only if you switch it on.
-- Sections 4.4, 13.4 and 18.8: identity-document verification stays optional
-  (also for the owner of a Business account, which needs only a verified
-  phone number); the document is read on your device and checked by a
+- Sections 4.4, 12.3, 12.5, 13.4 and 18.8: identity-document verification
+  is optional everywhere: publishing in a Community and publishing, hosting
+  or booking Experiences need a verified phone number instead, and a
+  Business account needs only a verified phone number (the owner's identity
+  document is optional); the document is read on your device and checked by a
   reviewer, the photo is deleted after the review or after 7 days if still
   pending, and the details you confirm are kept encrypted only to identify
   you when the law requires it.

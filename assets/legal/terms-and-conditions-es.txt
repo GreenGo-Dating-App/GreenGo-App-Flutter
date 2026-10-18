@@ -104,14 +104,11 @@ por tu parte.
 4.3 Tu cuenta es personal. No puedes venderla, prestarla ni transferirla.
 
 4.4 Verificación
-a) Algunas funciones requieren que verifiques tu edad con un documento de
-   identidad:
-   - publicar en una Comunidad;
-   - publicar cualquier Experiencia, y reservar una Experiencia como miembro
-     (sección 12.3);
-   - otros casos que exija la ley del lugar donde vives.
-   En todos los demás casos, la verificación con un documento de identidad es
-   opcional.
+a) La verificación con un documento de identidad es opcional. Publicar en una
+   Comunidad, y publicar una Experiencia, ser su Anfitrión o reservarla,
+   requieren en su lugar un número de teléfono verificado (sección 4.5). Cuando
+   la ley del lugar donde vives exija comprobaciones de edad más estrictas,
+   podemos pedirte que verifiques tu edad con un documento de identidad.
 b) Algunas insignias requieren que verifiques tu perfil con un selfi.
 c) Cuando te verificas con un documento de identidad, la app lee el documento
    en tu dispositivo y rellena tu nombre, apellidos, fecha de nacimiento, tipo
@@ -130,8 +127,11 @@ d) Usar un documento que no es tuyo, o que ya se utilizó para otra cuenta,
 4.5 Número de teléfono
 a) Cada cuenta necesita su propio número de teléfono móvil verificado. Un
    número de teléfono solo puede vincularse a una cuenta.
-b) Si tu cuenta se creó antes de que se exigiera la verificación del
-   teléfono, debes verificar un número de teléfono antes de:
+b) Si tu cuenta se creó antes del 16 de octubre de 2026, hasta el 15 de
+   noviembre de 2026 solo te pedimos que verifiques un número de teléfono, y
+   puedes continuar sin hacerlo. A partir del 16 de noviembre de 2026 debes
+   verificar un número de teléfono antes de:
+   - publicar en una Comunidad;
    - unirte a un Evento o a una Experiencia o reservarlos, o comprar una
      entrada;
    - crear u organizar un Evento o una Experiencia;
@@ -660,14 +660,9 @@ d) no pedir nunca a los Invitados que paguen fuera del pago en la app, por
    ejemplo con un enlace de pago, una transferencia bancaria o en efectivo;
 e) tratar a los Invitados con respeto y mantenerlos seguros.
 
-Documento de identidad:
-- Para publicar cualquier Experiencia, gratuita o de pago, debes haber subido
-  un documento de identidad. Lo mismo se aplica para reservar una
-  Experiencia como miembro.
-- Para publicar una Experiencia de pago, tu verificación de edad también debe
-  haber sido aprobada.
-Número de teléfono: para publicar una Experiencia o ser su Anfitrión, tu
-cuenta necesita un número de teléfono verificado (sección 4.5).
+Número de teléfono: para publicar cualquier Experiencia, gratuita o de pago, o
+ser su Anfitrión, tu cuenta necesita un número de teléfono verificado
+(sección 4.5). El documento de identidad es opcional (sección 4.4).
 Los nuevos Anfitriones solo pueden publicar una Experiencia de pago hasta que
 tengan 3 reseñas.
 
@@ -699,9 +694,8 @@ c) Si el Anfitrión elimina tu horario reservado o cancela tu reserva,
    plazo indicado. GreenGo la examinará y podrá registrar un reembolso
    adeudado por el Anfitrión, o tomar medidas contra la cuenta del Anfitrión.
    GreenGo no paga reembolsos de Experiencias con sus propios fondos.
-d) Para reservar una Experiencia como miembro, debes haber subido un
-   documento de identidad (sección 12.3) y verificado tu número de teléfono
-   (sección 4.5).
+d) Para reservar una Experiencia como miembro, debes haber verificado tu número
+   de teléfono (sección 4.5).
 
 12.6 Reseñas
 - Tras una reserva real, los Anfitriones y los Invitados pueden reseñarse
@@ -1372,22 +1366,26 @@ partir del 16 de octubre de 2026; desde el 16 de noviembre de 2026 para las
 cuentas creadas antes del 16 de octubre de 2026 (anunciada el 17 de octubre
 de 2026)
 Verificación del teléfono y datos de identidad:
-- Secciones 3.3, 3.5, 4.5, 11.1, 12.3, 12.5, 13.4 y 13.7: se exige un número
-  de teléfono móvil verificado para crear una cuenta (números de países
-  europeos excepto Rusia y Bielorrusia, Brasil, Estados Unidos, Canadá y el
-  Reino Unido) y, en las cuentas existentes, antes de unirse a Eventos y
-  Experiencias o reservarlos, comprar entradas, crear u organizar Eventos y
-  Experiencias y usar una Cuenta de empresa; un número por cuenta; el número
-  es privado; un hash con clave de la dirección de correo electrónico y del
-  número de teléfono de las cuentas bloqueadas.
+- Secciones 3.3, 3.5, 4.5, 11.1, 12.3, 12.5, 13.4 y 13.7: se exige un número de
+  teléfono móvil verificado para crear una cuenta (números de países europeos
+  excepto Rusia y Bielorrusia, Brasil, Estados Unidos, Canadá y el Reino Unido)
+  y, en las cuentas existentes (solo se pide hasta el 15 de noviembre de 2026,
+  obligatorio a partir del 16 de noviembre de 2026), antes de publicar en una
+  Comunidad, unirse a Eventos y Experiencias o reservarlos, comprar entradas,
+  crear u organizar Eventos y Experiencias y usar una Cuenta de empresa; un
+  número por cuenta; el número es privado; un hash con clave de la dirección de
+  correo electrónico y del número de teléfono de las cuentas bloqueadas.
 - Sección 13.1: un número de contacto del negocio opcional, que se muestra en
   la página de empresa solo si lo activas.
-- Secciones 4.4, 13.4 y 18.8: la verificación con documento de identidad
-  sigue siendo opcional (también para el titular de una Cuenta de empresa, que
-  solo necesita un número de teléfono verificado); el documento se lee en tu
-  dispositivo y lo comprueba un revisor, la foto se elimina tras la revisión
-  o pasados 7 días si sigue pendiente, y los datos que confirmas se conservan
-  cifrados solo para identificarte cuando la ley lo exija.
+- Secciones 4.4, 12.3, 12.5, 13.4 y 18.8: la verificación con documento de
+  identidad es opcional en todos los casos: publicar en una Comunidad y publicar
+  Experiencias, ser su Anfitrión o reservarlas requieren en su lugar un número
+  de teléfono verificado, y una Cuenta de empresa solo necesita un número de
+  teléfono verificado (el documento de identidad del titular es opcional); el
+  documento se lee en tu dispositivo y lo comprueba un revisor, la foto se
+  elimina tras la revisión o pasados 7 días si sigue pendiente, y los datos que
+  confirmas se conservan cifrados solo para identificarte cuando la ley lo
+  exija.
 Aclaraciones para ajustarse al funcionamiento de la app:
 - Secciones 5.1 g, 14.1, 14.2 y 14.4: los asistentes de IA en el chat son la
   traducción, la lectura en voz alta y la transliteración (no se ofrecen

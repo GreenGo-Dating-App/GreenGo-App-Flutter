@@ -102,14 +102,12 @@ usada sem culpa sua.
 transferi-la.
 
 4.4 Verificação
-a) Alguns recursos exigem que você verifique a sua idade com um documento de
-   identidade:
-   - publicar em uma Comunidade;
-   - publicar qualquer Experiência e reservar uma Experiência como membro
-     (item 12.3);
-   - outros casos exigidos pela lei do lugar onde você mora.
-   Em todos os outros casos, a verificação com um documento de identidade é
-   opcional.
+a) A verificação com um documento de identidade é opcional. Para publicar em
+   uma Comunidade e para publicar uma Experiência, ser o Anfitrião dela ou
+   reservá-la, é preciso, em vez disso, um número de telefone verificado
+   (item 4.5). Quando a lei do lugar onde você mora exigir verificações de
+   idade mais rigorosas, podemos pedir que você verifique a sua idade com um
+   documento de identidade.
 b) Alguns selos exigem que você verifique o seu perfil com uma selfie.
 c) Quando você se verifica com um documento de identidade, o aplicativo lê o
    documento no seu dispositivo e preenche o seu nome, sobrenome, data de
@@ -129,8 +127,11 @@ d) Usar um documento que não é seu, ou que já foi usado para outra conta, vio
 4.5 Número de telefone
 a) Cada conta precisa do seu próprio número de celular verificado. Um número
    de telefone só pode estar vinculado a uma conta.
-b) Se a sua conta foi criada antes de a verificação por telefone ser
-   obrigatória, você deve verificar um número de telefone antes de:
+b) Se a sua conta foi criada antes de 16 de outubro de 2026, até 15 de
+   novembro de 2026 apenas pedimos que você verifique um número de telefone,
+   e você pode continuar sem ele. A partir de 16 de novembro de 2026, você
+   deve verificar um número de telefone antes de:
+   - publicar em uma Comunidade;
    - participar de um Evento ou de uma Experiência ou reservá-los, ou comprar
      um ingresso;
    - criar um Evento ou uma Experiência, ou ser o Anfitrião deles;
@@ -653,14 +654,9 @@ d) nunca pedir aos Convidados que paguem fora do checkout do aplicativo, por
    exemplo por link de pagamento, transferência bancária ou em dinheiro;
 e) tratar os Convidados com respeito e mantê-los em segurança.
 
-Documento de identidade:
-- Para publicar qualquer Experiência, gratuita ou paga, você deve ter enviado
-  um documento de identidade. O mesmo vale para reservar uma Experiência como
-  membro.
-- Para publicar uma Experiência paga, a sua verificação de idade também deve
-  ter sido aprovada.
-Número de telefone: para publicar uma Experiência ou ser o Anfitrião dela, a
-sua conta precisa de um número de telefone verificado (item 4.5).
+Número de telefone: para publicar qualquer Experiência, gratuita ou paga, ou
+ser o Anfitrião dela, a sua conta precisa de um número de telefone verificado
+(item 4.5). Um documento de identidade é opcional (item 4.4).
 Os novos Anfitriões só podem publicar uma Experiência paga até terem 3
 avaliações.
 
@@ -694,9 +690,8 @@ c) Se o Anfitrião remover o seu horário reservado ou cancelar a sua reserva,
    indicado. O GreenGo a analisará e poderá registrar um reembolso devido pelo
    Anfitrião, ou tomar medidas contra a conta do Anfitrião. O próprio GreenGo
    não paga reembolsos de Experiências com recursos próprios.
-d) Para reservar uma Experiência como membro, você deve ter enviado um
-   documento de identidade (item 12.3) e verificado o seu número de telefone
-   (item 4.5).
+d) Para reservar uma Experiência como membro, você deve ter verificado o seu
+   número de telefone (item 4.5).
 
 12.6 Avaliações
 - Após uma reserva real, Anfitriões e Convidados podem avaliar uns aos outros.
@@ -1357,16 +1352,21 @@ Verificação por telefone e dados de identificação:
 - Seções 3.3, 3.5, 4.5, 11.1, 12.3, 12.5, 13.4 e 13.7: um número de celular
   verificado é exigido para criar uma conta (números de países europeus,
   exceto Rússia e Belarus, do Brasil, dos Estados Unidos, do Canadá e do Reino
-  Unido) e, nas contas existentes, antes de participar de Eventos e
-  Experiências ou reservá-los, comprar ingressos, criar Eventos e Experiências
-  ou ser o Anfitrião deles e usar uma Conta empresarial; um número por conta;
+  Unido) e, nas contas existentes (apenas solicitado até 15 de novembro de
+  2026, obrigatório a partir de 16 de novembro de 2026), antes de publicar em
+  uma Comunidade, participar de Eventos e Experiências ou reservá-los,
+  comprar ingressos, criar Eventos e Experiências ou ser o Anfitrião deles e
+  usar uma Conta empresarial; um número por conta;
   o número é privado; um hash com chave do endereço de e-mail e do número de
   telefone das contas banidas.
 - Seção 13.1: um número de contato comercial opcional, exibido na página da
   empresa somente se você o ativar.
-- Seções 4.4, 13.4 e 18.8: a verificação com documento de identidade continua
-  opcional (também para o titular de uma Conta empresarial, que precisa apenas
-  de um número de telefone verificado); o documento é lido no seu dispositivo
+- Seções 4.4, 12.3, 12.5, 13.4 e 18.8: a verificação com documento de
+  identidade é opcional em todos os casos: publicar em uma Comunidade e
+  publicar Experiências, ser o Anfitrião delas ou reservá-las exigem, em vez
+  disso, um número de telefone verificado, e uma Conta empresarial precisa
+  apenas de um número de telefone verificado (o documento de identidade do
+  titular é opcional); o documento é lido no seu dispositivo
   e conferido por um revisor, a foto é excluída após a análise ou após 7 dias
   se ainda estiver pendente, e os dados que você confirma são guardados de
   forma criptografada somente para identificar você quando a lei o exigir.

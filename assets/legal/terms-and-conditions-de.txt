@@ -110,14 +110,12 @@ Verschulden genutzt.
 übertragen.
 
 4.4 Verifizierung
-a) Für einige Funktionen musst du dein Alter mit einem Ausweisdokument
-   verifizieren:
-   - Veröffentlichen in einer Community;
-   - Veröffentlichen eines Erlebnisses und Buchen eines Erlebnisses als
-     Mitglied (Abschnitt 12.3);
-   - weitere Fälle, in denen das Recht deines Wohnorts dies vorschreibt.
-   In allen anderen Fällen ist die Verifizierung mit einem Ausweisdokument
-   freiwillig.
+a) Die Verifizierung mit einem Ausweisdokument ist freiwillig. Für das
+   Veröffentlichen in einer Community sowie für das Veröffentlichen,
+   Anbieten als Gastgeber oder Buchen eines Erlebnisses brauchst du
+   stattdessen eine verifizierte Telefonnummer (Abschnitt 4.5). Wenn das
+   Recht deines Wohnorts strengere Alterskontrollen vorschreibt, können wir
+   dich bitten, dein Alter mit einem Ausweisdokument zu verifizieren.
 b) Für einige Abzeichen musst du dein Profil mit einem Selfie verifizieren.
 c) Wenn du dich mit einem Ausweisdokument verifizierst, liest die App das
    Dokument auf deinem Gerät aus und trägt deinen Vornamen, Nachnamen, dein
@@ -138,8 +136,11 @@ d) Die Verwendung eines Dokuments, das nicht dir gehört oder das bereits für
 4.5 Telefonnummer
 a) Jedes Konto braucht eine eigene verifizierte Mobiltelefonnummer. Eine
    Telefonnummer kann nur mit einem Konto verknüpft werden.
-b) Wenn dein Konto erstellt wurde, bevor die Telefonverifizierung
-   vorgeschrieben war, musst du eine Telefonnummer verifizieren, bevor du:
+b) Wenn dein Konto vor dem 16. Oktober 2026 erstellt wurde, bitten wir dich
+   bis zum 15. November 2026 nur darum, eine Telefonnummer zu verifizieren,
+   und du kannst ohne sie fortfahren. Ab dem 16. November 2026 musst du eine
+   Telefonnummer verifizieren, bevor du:
+   - in einer Community veröffentlichst;
    - an einem Event oder Erlebnis teilnimmst oder es buchst oder ein Ticket
      kaufst;
    - ein Event oder Erlebnis erstellst oder als Gastgeber anbietest;
@@ -681,14 +682,10 @@ d) Gäste niemals bitten, außerhalb des Bezahlvorgangs in der App zu bezahlen,
    zum Beispiel per Zahlungslink, Banküberweisung oder bar;
 e) Gäste respektvoll behandeln und für ihre Sicherheit sorgen.
 
-Ausweisdokument:
-- Um ein Erlebnis zu veröffentlichen, ob kostenlos oder kostenpflichtig,
-  musst du ein Ausweisdokument hochgeladen haben. Dasselbe gilt für das
-  Buchen eines Erlebnisses als Mitglied.
-- Um ein kostenpflichtiges Erlebnis zu veröffentlichen, muss außerdem deine
-  Altersverifizierung genehmigt worden sein.
-Telefonnummer: Um ein Erlebnis zu veröffentlichen oder als Gastgeber
-anzubieten, braucht dein Konto eine verifizierte Telefonnummer (Abschnitt 4.5).
+Telefonnummer: Um ein Erlebnis, ob kostenlos oder kostenpflichtig, zu
+veröffentlichen oder als Gastgeber anzubieten, braucht dein Konto eine
+verifizierte Telefonnummer (Abschnitt 4.5). Ein Ausweisdokument ist freiwillig
+(Abschnitt 4.4).
 Neue Gastgeber dürfen nur ein kostenpflichtiges Erlebnis veröffentlichen, bis
 sie 3 Bewertungen haben.
 
@@ -724,9 +721,8 @@ c) Wenn der Gastgeber deinen gebuchten Termin entfernt oder deine Buchung
    Erstattung erfassen oder Maßnahmen gegen das Konto des Gastgebers
    ergreifen. GreenGo selbst zahlt keine Erstattungen für Erlebnisse aus
    eigenen Mitteln.
-d) Um ein Erlebnis als Mitglied zu buchen, musst du ein Ausweisdokument
-   hochgeladen (Abschnitt 12.3) und deine Telefonnummer verifiziert haben
-   (Abschnitt 4.5).
+d) Um ein Erlebnis als Mitglied zu buchen, musst du deine Telefonnummer
+   verifiziert haben (Abschnitt 4.5).
 
 12.6 Bewertungen
 - Nach einer echten Buchung können Gastgeber und Gäste einander bewerten.
@@ -1416,16 +1412,22 @@ Telefonverifizierung und Identitätsangaben:
   verifizierte Mobiltelefonnummer ist erforderlich, um ein Konto zu erstellen
   (Nummern aus europäischen Ländern außer Russland und Belarus, Brasilien,
   den Vereinigten Staaten, Kanada und dem Vereinigten Königreich), und bei
-  bestehenden Konten, bevor man an Events und Erlebnissen teilnimmt oder sie
-  bucht, Tickets kauft, Events und Erlebnisse erstellt oder als Gastgeber
-  anbietet und ein Business-Konto nutzt; eine Nummer pro Konto; die Nummer
+  bestehenden Konten (bis zum 15. November 2026 nur erbeten, ab dem
+  16. November 2026 erforderlich), bevor man in einer Community
+  veröffentlicht, an Events und Erlebnissen teilnimmt oder sie bucht,
+  Tickets kauft, Events und Erlebnisse erstellt oder als Gastgeber anbietet
+  und ein Business-Konto nutzt; eine Nummer pro Konto; die Nummer
   ist privat; ein Keyed Hash der E-Mail-Adresse und der Telefonnummer
   gesperrter Konten.
 - Abschnitt 13.1: eine optionale geschäftliche Kontaktnummer, die nur auf
   der Unternehmensseite angezeigt wird, wenn du sie einschaltest.
-- Abschnitte 4.4, 13.4 und 18.8: Die Verifizierung mit einem Ausweisdokument
-  bleibt freiwillig (auch für den Inhaber eines Business-Kontos, das nur eine
-  verifizierte Telefonnummer braucht); das Dokument wird auf deinem Gerät
+- Abschnitte 4.4, 12.3, 12.5, 13.4 und 18.8: Die Verifizierung mit einem
+  Ausweisdokument ist überall freiwillig: Für das Veröffentlichen in einer
+  Community und das Veröffentlichen, Anbieten als Gastgeber oder Buchen von
+  Erlebnissen braucht man stattdessen eine verifizierte Telefonnummer, und
+  ein Business-Konto braucht nur eine verifizierte Telefonnummer (das
+  Ausweisdokument des Inhabers ist freiwillig); das Dokument wird auf deinem
+  Gerät
   ausgelesen und von einem Prüfer kontrolliert, das Foto wird nach der
   Prüfung oder nach 7 Tagen, wenn sie noch aussteht, gelöscht, und die von
   dir bestätigten Angaben werden verschlüsselt aufbewahrt, nur um dich zu

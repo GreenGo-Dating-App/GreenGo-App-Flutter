@@ -97,8 +97,9 @@ que visiteurs (point 11.7). La présente politique s'applique aussi à elles.
   chiffrés de bout en bout.
   - Nos systèmes peuvent traiter le contenu des messages, par exemple pour le
     traduire à votre demande, ou pour examiner un message qui a été signalé.
-- La vérification au moyen d'une pièce d'identité est facultative, sauf pour
-  les fonctionnalités du point 8.1. Si vous la faites, l'application lit le
+- La vérification au moyen d'une pièce d'identité est facultative, sauf
+  lorsque la loi exige des contrôles d'âge renforcés (point 8.1). Si vous la
+  faites, l'application lit le
   document sur votre appareil, un vérificateur le contrôle, puis nous
   supprimons l'image. Nous conservons les informations que vous avez
   confirmées sous forme chiffrée, dans un espace de stockage à accès
@@ -490,11 +491,13 @@ créons pas de profils vous concernant pour des tiers.
 6.5 Numéro de téléphone
 a) Pour créer un compte, vous devez vérifier un numéro de téléphone mobile.
    Nous vous envoyons un code par SMS via Google Firebase Authentication,
-   notre fournisseur de connexion. Si votre compte a été créé avant cette
-   règle, vous devez vérifier un numéro avant de rejoindre ou de réserver des
-   événements et des expériences, d'acheter des billets, de créer ou
-   d'organiser des événements ou des expériences, ou d'utiliser un compte
-   professionnel.
+   notre fournisseur de connexion. Si votre compte a été créé avant le
+   16 octobre 2026, jusqu'au 15 novembre 2026 nous vous demandons seulement
+   de vérifier un numéro. À partir du 16 novembre 2026, vous devez en
+   vérifier un avant de publier dans une communauté, de rejoindre ou de
+   réserver des événements et des expériences, d'acheter des billets, de
+   créer ou d'organiser des événements ou des expériences, ou d'utiliser un
+   compte professionnel.
 b) La vérification du téléphone est disponible pour les numéros des pays
    européens (sauf la Russie et la Biélorussie), du Brésil, des États-Unis,
    du Canada et du Royaume-Uni. Sans un tel numéro, vous ne pouvez pas encore
@@ -567,11 +570,10 @@ pas vos données de compte.
 8.1 Quand nous le demandons
 
 GreenGo est destiné aux adultes (18 ans et plus). Chacun indique sa date de
-naissance lors de l'inscription. Nous ne demandons une pièce d'identité que
-dans les cas suivants :
-- avant que vous ne publiiez dans une Communauté ;
-- avant que vous ne publiiez toute expérience en tant qu'hôte, ou que vous
-  ne réserviez une expérience en tant que membre ;
+naissance lors de l'inscription. La vérification au moyen d'une pièce
+d'identité est facultative. Publier dans une Communauté, ainsi que publier ou
+réserver des expériences, nécessitent à la place un numéro de téléphone
+vérifié (point 6.5). Nous ne pouvons demander une pièce d'identité que :
 - lorsque la loi de votre lieu de résidence exige des contrôles d'âge
   renforcés ;
 - lorsque nous avons une raison précise de penser qu'un compte appartient à
@@ -1674,7 +1676,9 @@ Vérification du téléphone et informations d'identité :
   créer un compte (numéros des pays européens sauf la Russie et la
   Biélorussie, du Brésil, des États-Unis, du Canada et du Royaume-Uni) et,
   pour les comptes existants, avant les événements, les expériences, les
-  billets et les comptes professionnels ; un numéro par compte ; Google
+  billets et les comptes professionnels (seulement demandé jusqu'au
+  15 novembre 2026, exigé à partir du 16 novembre 2026) ; un numéro par
+  compte ; Google
   Firebase Authentication envoie le SMS ; un hachage à clé des numéros des
   comptes bannis (également points 2, 3.1, 4.2, 5, 12.2, 14, 15.2 et 22.1).
 - Points 3.1 d et 4.3 : un numéro de contact professionnel facultatif,
@@ -1699,8 +1703,9 @@ Précisions pour correspondre au fonctionnement de l'application :
   service de traduction de Google, et l'application peut demander ces
   traductions directement ; traductions de chat conservées et cache anonyme
   des phrases courtes (également point 14).
-- Point 8.1 : une pièce d'identité est demandée pour toute expérience que
-  vous publiez et pour réserver une expérience en tant que membre.
+- Point 8.1 : une pièce d'identité est facultative partout ; publier dans
+  une communauté et publier ou réserver des expériences nécessitent à la
+  place un numéro de téléphone vérifié (point 6.5).
 - Point 10.2 : un modérateur examine le cas avant que les signalements ne
   cessent d'être traités ; les signalements concernant la sécurité des
   enfants sont toujours traités.

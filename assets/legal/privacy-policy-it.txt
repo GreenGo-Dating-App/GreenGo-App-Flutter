@@ -95,12 +95,13 @@ richiesta di prenotazione per un'esperienza, da un link condiviso come ospiti
   - I nostri sistemi possono elaborare il contenuto dei messaggi, ad esempio
     per tradurlo quando lo chiedi, o per verificare un messaggio che qualcuno
     ha segnalato.
-- La verifica con un documento d'identità è facoltativa, salvo per le
-  funzioni indicate nella sezione 8.1. Se la effettui, l'app legge il
-  documento sul tuo dispositivo, un revisore lo controlla e poi cancelliamo
-  l'immagine. Conserviamo i dati che hai confermato in forma cifrata in un
-  archivio ad accesso limitato, solo per identificarti quando la legge lo
-  richiede, fino a 6 mesi dopo la chiusura del tuo account.
+- La verifica con un documento d'identità è facoltativa, salvo quando la
+  legge richiede controlli dell'età più rigorosi (sezione 8.1). Se la
+  effettui, l'app legge il documento sul tuo dispositivo, un revisore lo
+  controlla e poi cancelliamo l'immagine. Conserviamo i dati che hai
+  confermato in forma cifrata in un archivio ad accesso limitato, solo per
+  identificarti quando la legge lo richiede, fino a 6 mesi dopo la chiusura
+  del tuo account.
 - Le funzioni di IA (traduzione, lettura vocale e traslitterazione dei
   messaggi scritti in alfabeti non latini) utilizzano servizi Google, e il
   nostro assistente di supporto utilizza Claude di Anthropic. Passano
@@ -473,10 +474,12 @@ te per conto di terzi.
 6.5 Numero di telefono
 a) Per creare un account, devi verificare un numero di cellulare. Ti inviamo
    un codice via SMS tramite Google Firebase Authentication, il nostro
-   fornitore di accesso. Se il tuo account è stato creato prima di questa
-   regola, devi verificare un numero prima di partecipare a eventi ed
-   esperienze o prenotarli, acquistare biglietti, creare od ospitare eventi o
-   esperienze, o usare un account business.
+   fornitore di accesso. Se il tuo account è stato creato prima del 16
+   ottobre 2026, fino al 15 novembre 2026 ti chiediamo soltanto di verificare
+   un numero. Dal 16 novembre 2026 devi verificarne uno prima di pubblicare in
+   una Community, partecipare a eventi ed esperienze o prenotarli, acquistare
+   biglietti, creare od ospitare eventi o esperienze, o usare un account
+   business.
 b) La verifica del telefono è disponibile per i numeri di paesi europei
    (tranne Russia e Bielorussia), del Brasile, degli Stati Uniti, del Canada e
    del Regno Unito. Senza un numero di questo tipo, per ora non puoi creare un
@@ -543,11 +546,10 @@ account.
 8.1 Quando lo chiediamo
 
 GreenGo è per adulti (18+). Tutti dichiarano la propria data di nascita al
-momento della registrazione. Chiediamo un documento d'identità solo nei
-seguenti casi:
-- prima che tu pubblichi in una Community;
-- prima che tu pubblichi qualsiasi esperienza come host, o prenoti
-  un'esperienza come membro;
+momento della registrazione. La verifica con un documento d'identità è
+facoltativa. Per pubblicare in una Community, e per pubblicare o prenotare
+esperienze, serve invece un numero di telefono verificato (sezione 6.5).
+Potremmo chiedere un documento d'identità solo:
 - quando la legge del luogo in cui vivi richiede controlli dell'età più
   rigorosi;
 - quando abbiamo un motivo specifico per ritenere che un account appartenga a
@@ -1596,9 +1598,10 @@ Verifica del telefono e dati identificativi:
   un account (numeri di paesi europei tranne Russia e Bielorussia, del
   Brasile, degli Stati Uniti, del Canada e del Regno Unito) e, per gli
   account esistenti, prima di eventi, esperienze, biglietti e account
-  business; un numero per account; Google Firebase Authentication invia
-  l'SMS; un hash con chiave dei numeri degli account bannati (anche sezioni
-  2, 3.1, 4.2, 5, 12.2, 14, 15.2 e 22.1).
+  business (fino al 15 novembre 2026 viene solo chiesto, dal 16 novembre
+  2026 è obbligatorio); un numero per account; Google Firebase
+  Authentication invia l'SMS; un hash con chiave dei numeri degli account
+  bannati (anche sezioni 2, 3.1, 4.2, 5, 12.2, 14, 15.2 e 22.1).
 - Sezioni 3.1 d e 4.3: un numero di contatto dell'attività facoltativo,
   mostrato sulla pagina business solo se l'attività ne attiva la
   visualizzazione.
@@ -1620,8 +1623,9 @@ Chiarimenti per corrispondere al funzionamento dell'app:
   sono tradotti con il servizio di traduzione di Google, e l'app può
   richiedere tali traduzioni direttamente; traduzioni di chat conservate e
   cache anonima di brevi frasi (anche sezione 14).
-- Sezione 8.1: è richiesto un documento d'identità per ogni esperienza che
-  pubblichi e per prenotare un'esperienza come membro.
+- Sezione 8.1: il documento d'identità è facoltativo ovunque; per pubblicare
+  in una Community e per pubblicare o prenotare esperienze serve invece un
+  numero di telefono verificato (sezione 6.5).
 - Sezione 10.2: un moderatore esamina il caso prima che le segnalazioni non
   vengano più trattate; le segnalazioni relative alla sicurezza dei minori
   vengono sempre trattate.

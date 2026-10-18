@@ -93,9 +93,10 @@ reserva de uma experiência, como visitantes, a partir de um link compartilhado
   - Os nossos sistemas podem tratar o conteúdo das mensagens, por exemplo para
     traduzi-lo quando você pede, ou para verificar uma mensagem que alguém
     denunciou.
-- A verificação com um documento de identidade é opcional, exceto para os
-  recursos do item 8.1. Se você a fizer, o aplicativo lê o documento no seu
-  dispositivo, um revisor o confere e, depois, excluímos a imagem. Guardamos
+- A verificação com um documento de identidade é opcional, exceto quando a
+  lei exige verificações de idade mais rigorosas (item 8.1). Se você a fizer,
+  o aplicativo lê o documento no seu dispositivo, um revisor o confere e,
+  depois, excluímos a imagem. Guardamos
   os dados que você confirmou de forma criptografada, em um armazenamento
   restrito, somente para identificar você quando a lei o exigir, até 6 meses
   após o encerramento da sua conta.
@@ -468,10 +469,12 @@ terceiros.
 6.5 Número de telefone
 a) Para criar uma conta, você deve verificar um número de celular. Enviamos a
    você um código por SMS pelo Google Firebase Authentication, o nosso provedor
-   de login. Se a sua conta foi criada antes desta regra, você deve verificar
-   um número antes de participar de eventos e experiências ou reservá-los,
-   comprar ingressos, criar eventos ou experiências ou ser o anfitrião deles,
-   ou usar uma conta empresarial.
+   de login. Se a sua conta foi criada antes de 16 de outubro de 2026, até 15
+   de novembro de 2026 apenas pedimos que você verifique um número. A partir
+   de 16 de novembro de 2026, você deve verificar um antes de publicar em uma
+   comunidade, participar de eventos e experiências ou reservá-los, comprar
+   ingressos, criar eventos ou experiências ou ser o anfitrião deles, ou usar
+   uma conta empresarial.
 b) A verificação por telefone está disponível para números de países europeus
    (exceto Rússia e Belarus), do Brasil, dos Estados Unidos, do Canadá e do
    Reino Unido. Sem um número desses, você ainda não pode criar uma conta.
@@ -537,10 +540,10 @@ sua conta.
 8.1 Quando pedimos
 
 O GreenGo é para adultos (18+). Todos informam a sua data de nascimento ao se
-cadastrar. Pedimos um documento de identidade somente nestes casos:
-- antes de você publicar em uma Comunidade;
-- antes de você publicar qualquer experiência como anfitrião, ou reservar uma
-  experiência como membro;
+cadastrar. A verificação com um documento de identidade é opcional. Para
+publicar em uma Comunidade e para publicar ou reservar experiências, é
+preciso, em vez disso, um número de telefone verificado (item 6.5). Podemos
+pedir um documento de identidade somente:
 - quando a lei do lugar onde você mora exige verificações de idade mais
   rigorosas;
 - quando temos um motivo específico para acreditar que uma conta pertence a
@@ -606,16 +609,16 @@ Google para isso, e nenhum dado facial é armazenado.
 
 8.4 Verificação de empresas
 
-Uma conta empresarial precisa apenas de um número de telefone verificado (item
-6.5). Para verificar uma conta empresarial, podemos pedir os dados de registro
-da empresa. Um documento de identidade da pessoa que a administra é opcional.
-Se o responsável fornecer um, ele segue as mesmas regras do item 8.2: a imagem
-é excluída após a análise (no máximo após 7 dias), e os dados confirmados são
-guardados de forma criptografada somente para solicitações legais. Guardamos
-os dados de registro da empresa enquanto a página da empresa existir e por 6
-meses depois, porque o Regulamento dos Serviços Digitais da UE (Digital
-Services Act) exige que possamos identificar os comerciantes que oferecem
-serviços a consumidores.
+Uma conta empresarial precisa apenas de um número de telefone verificado
+(item 6.5). Para verificar uma conta empresarial, podemos pedir os dados de
+registro da empresa. Um documento de identidade da pessoa que a administra é
+opcional. Se o responsável fornecer um, ele segue as mesmas regras do item 8.2:
+a imagem é excluída após a análise (no máximo após 7 dias), e os dados
+confirmados são guardados de forma criptografada somente para solicitações
+legais. Guardamos os dados de registro da empresa enquanto a página da empresa
+existir e por 6 meses depois, porque o Regulamento dos Serviços Digitais da UE
+(Digital Services Act) exige que possamos identificar os comerciantes que
+oferecem serviços a consumidores.
 
 8.5 Se você disser não
 
@@ -1571,8 +1574,10 @@ Verificação por telefone e dados de identificação:
 - Nova seção 6.5: um número de celular verificado é exigido para criar uma
   conta (números de países europeus, exceto Rússia e Belarus, do Brasil, dos
   Estados Unidos, do Canadá e do Reino Unido) e, nas contas existentes, antes
-  de eventos, experiências, ingressos e contas empresariais; um número por
-  conta; o Google Firebase Authentication envia o SMS; um hash com chave dos
+  de eventos, experiências, ingressos e contas empresariais (apenas
+  solicitado até 15 de novembro de 2026, obrigatório a partir de 16 de
+  novembro de 2026); um número por conta; o Google Firebase Authentication
+  envia o SMS; um hash com chave dos
   números das contas banidas (também seções 2, 3.1, 4.2, 5, 12.2, 14, 15.2 e
   22.1).
 - Seções 3.1 d e 4.3: um número de contato comercial opcional, exibido na
@@ -1595,8 +1600,9 @@ Esclarecimentos para refletir como o aplicativo funciona:
   é traduzido com o serviço de tradução do Google, e o aplicativo pode pedir
   essas traduções diretamente; traduções de chat armazenadas e o cache
   anônimo de frases curtas (também seção 14).
-- Item 8.1: pedimos um documento de identidade para cada experiência que você
-  publicar e para reservar uma experiência como membro.
+- Item 8.1: um documento de identidade é opcional em todos os casos; publicar
+  em uma comunidade e publicar ou reservar experiências exigem, em vez disso,
+  um número de telefone verificado (item 6.5).
 - Item 10.2: um moderador analisa o caso antes que as denúncias deixem de ser
   processadas; as denúncias sobre a segurança de crianças são sempre
   processadas.

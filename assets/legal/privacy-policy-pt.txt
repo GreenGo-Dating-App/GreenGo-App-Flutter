@@ -97,12 +97,12 @@ partilhada (secção 11.7). Esta política também se aplica a essas pessoas.
   - Os nossos sistemas podem tratar o conteúdo das mensagens, por exemplo para
     as traduzir quando o pede, ou para verificar uma mensagem que alguém
     denunciou.
-- A verificação com um documento de identificação é opcional, exceto para as
-  funcionalidades da secção 8.1. Se a fizer, a aplicação lê o documento no seu
-  dispositivo, um revisor verifica-o e depois eliminamos a imagem. Conservamos
-  os dados que confirmou encriptados num arquivo de acesso restrito, apenas
-  para o identificar quando a lei o exigir, até 6 meses após o encerramento da
-  sua conta.
+- A verificação com um documento de identificação é opcional, exceto quando a
+  lei exige verificações de idade mais rigorosas (secção 8.1). Se a fizer, a
+  aplicação lê o documento no seu dispositivo, um revisor verifica-o e depois
+  eliminamos a imagem. Conservamos os dados que confirmou encriptados num
+  arquivo de acesso restrito, apenas para o identificar quando a lei o exigir,
+  até 6 meses após o encerramento da sua conta.
 - As funcionalidades de IA (tradução, leitura em voz alta e transliteração de
   mensagens escritas em alfabetos não latinos) utilizam serviços da Google, e
   o nosso assistente de apoio utiliza o Claude da Anthropic. Funcionam através
@@ -473,8 +473,10 @@ terceiros.
 6.5 Número de telemóvel
 a) Para criar uma conta, tem de verificar um número de telemóvel. Enviamos-lhe
    um código por SMS através do Google Firebase Authentication, o nosso
-   fornecedor de início de sessão. Se a sua conta foi criada antes desta
-   regra, tem de verificar um número antes de participar em eventos e
+   fornecedor de início de sessão. Se a sua conta foi criada antes de 16 de
+   outubro de 2026, até 15 de novembro de 2026 apenas lhe pedimos que
+   verifique um número. A partir de 16 de novembro de 2026, tem de verificar
+   um número antes de publicar numa comunidade, participar em eventos e
    experiências ou de os reservar, comprar bilhetes, criar ou organizar
    eventos ou experiências, ou utilizar uma conta de empresa.
 b) A verificação do telemóvel está disponível para números de países europeus
@@ -543,11 +545,10 @@ sua conta.
 8.1 Quando pedimos
 
 O GreenGo destina-se a adultos (maiores de 18 anos). Todos indicam a sua data
-de nascimento quando se registam. Só pedimos um documento de identificação nos
-seguintes casos:
-- antes de publicar numa Comunidade;
-- antes de publicar qualquer experiência como anfitrião, ou de reservar uma
-  experiência como membro;
+de nascimento quando se registam. A verificação com um documento de
+identificação é opcional. Publicar numa Comunidade, e publicar ou reservar
+experiências, exigem, em vez disso, um número de telemóvel verificado
+(secção 6.5). Só podemos pedir um documento de identificação:
 - quando a lei do local onde vive exige verificações de idade mais rigorosas;
 - quando temos um motivo concreto para crer que uma conta pertence a uma
   pessoa com menos de 18 anos.
@@ -1593,10 +1594,11 @@ Verificação do telemóvel e dados de identificação:
 - Nova secção 6.5: é exigido um número de telemóvel verificado para criar uma
   conta (números de países europeus, exceto a Rússia e a Bielorrússia, do
   Brasil, dos Estados Unidos, do Canadá e do Reino Unido) e, nas contas
-  existentes, antes de eventos, experiências, bilhetes e contas de empresa;
-  um número por conta; o Google Firebase Authentication envia o SMS; um hash
-  com chave dos números das contas banidas (também secções 2, 3.1, 4.2, 5,
-  12.2, 14, 15.2 e 22.1).
+  existentes, antes de eventos, experiências, bilhetes e contas de empresa
+  (apenas pedido até 15 de novembro de 2026, obrigatório a partir de 16 de
+  novembro de 2026); um número por conta; o Google Firebase Authentication
+  envia o SMS; um hash com chave dos números das contas banidas (também
+  secções 2, 3.1, 4.2, 5, 12.2, 14, 15.2 e 22.1).
 - Secções 3.1 d e 4.3: um número de contacto da empresa opcional, apresentado
   na página da empresa apenas se a empresa o ativar.
 - Secções 8.2, 8.3 e 8.4: o documento de identificação é lido no seu
@@ -1617,8 +1619,9 @@ Clarificações para corresponder ao funcionamento da aplicação:
   atual); o conteúdo público é traduzido com o serviço de tradução da Google,
   e a aplicação pode pedir essas traduções diretamente; traduções de chat
   guardadas e a cache anónima de frases curtas (também secção 14).
-- Secção 8.1: é pedido um documento de identificação para cada experiência
-  que publica e para reservar uma experiência como membro.
+- Secção 8.1: um documento de identificação é opcional em todos os casos;
+  publicar numa comunidade e publicar ou reservar experiências exigem, em vez
+  disso, um número de telemóvel verificado (secção 6.5).
 - Secção 10.2: um moderador analisa o caso antes de as denúncias deixarem de
   ser tratadas; as denúncias relativas à segurança infantil são sempre
   tratadas.

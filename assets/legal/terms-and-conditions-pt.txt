@@ -104,14 +104,11 @@ utilizada sem culpa sua.
 4.3 A sua conta é pessoal. Não a pode vender, emprestar nem transferir.
 
 4.4 Verificação
-a) Algumas funcionalidades exigem que verifique a sua idade com um documento de
-   identificação:
-   - publicar numa Comunidade;
-   - publicar qualquer Experiência e reservar uma Experiência como membro
-     (secção 12.3);
-   - outros casos exigidos pela lei do local onde vive.
-   Em todos os outros casos, a verificação com um documento de identificação é
-   opcional.
+a) A verificação com um documento de identificação é opcional. Publicar numa
+   Comunidade, e publicar, organizar ou reservar uma Experiência, exigem, em
+   vez disso, um número de telemóvel verificado (secção 4.5). Quando a lei do
+   local onde vive exigir verificações de idade mais rigorosas, podemos
+   pedir-lhe que verifique a sua idade com um documento de identificação.
 b) Alguns distintivos exigem que verifique o seu perfil com uma selfie.
 c) Quando se verifica com um documento de identificação, a aplicação lê o
    documento no seu dispositivo e preenche o seu nome próprio, apelido, data
@@ -131,8 +128,11 @@ d) Utilizar um documento que não é seu, ou que já foi utilizado noutra conta,
 4.5 Número de telemóvel
 a) Cada conta precisa do seu próprio número de telemóvel verificado. Um número
    de telemóvel só pode estar associado a uma conta.
-b) Se a sua conta foi criada antes de a verificação do telemóvel ser
-   obrigatória, tem de verificar um número de telemóvel antes de:
+b) Se a sua conta foi criada antes de 16 de outubro de 2026, até 15 de
+   novembro de 2026 apenas lhe pedimos que verifique um número de telemóvel,
+   e pode continuar sem o fazer. A partir de 16 de novembro de 2026, tem de
+   verificar um número de telemóvel antes de:
+   - publicar numa Comunidade;
    - participar num Evento ou numa Experiência ou reservá-los, ou comprar um
      bilhete;
    - criar ou organizar um Evento ou uma Experiência;
@@ -660,14 +660,9 @@ d) nunca pedir aos Convidados que paguem fora do checkout da aplicação, por
    numerário;
 e) tratar os Convidados com respeito e mantê-los em segurança.
 
-Documento de identificação:
-- Para publicar qualquer Experiência, gratuita ou paga, tem de ter carregado
-  um documento de identificação. O mesmo se aplica à reserva de uma
-  Experiência como membro.
-- Para publicar uma Experiência paga, a sua verificação da idade tem também
-  de ter sido aprovada.
-Número de telemóvel: para publicar uma Experiência ou ser o seu Anfitrião, a
-sua conta precisa de um número de telemóvel verificado (secção 4.5).
+Número de telemóvel: para publicar qualquer Experiência, gratuita ou paga, ou
+ser o seu Anfitrião, a sua conta precisa de um número de telemóvel verificado
+(secção 4.5). Um documento de identificação é opcional (secção 4.4).
 Os novos Anfitriões só podem publicar uma Experiência paga até terem 3
 avaliações.
 
@@ -699,9 +694,8 @@ c) Se o Anfitrião remover o seu horário reservado ou cancelar a sua reserva,
    indicado. O GreenGo analisá-lo-á e poderá registar um reembolso devido
    pelo Anfitrião, ou tomar medidas contra a conta do Anfitrião. O próprio
    GreenGo não paga reembolsos de Experiências com fundos próprios.
-d) Para reservar uma Experiência como membro, tem de ter carregado um
-   documento de identificação (secção 12.3) e verificado o seu número de
-   telemóvel (secção 4.5).
+d) Para reservar uma Experiência como membro, tem de ter verificado o seu
+   número de telemóvel (secção 4.5).
 
 12.6 Avaliações
 - Após uma reserva real, os Anfitriões e os Convidados podem avaliar-se
@@ -1369,16 +1363,20 @@ Verificação do telemóvel e dados de identificação:
 - Secções 3.3, 3.5, 4.5, 11.1, 12.3, 12.5, 13.4 e 13.7: é exigido um número de
   telemóvel verificado para criar uma conta (números de países europeus,
   exceto a Rússia e a Bielorrússia, do Brasil, dos Estados Unidos, do Canadá e
-  do Reino Unido) e, nas contas existentes, antes de participar em Eventos e
-  Experiências ou de os reservar, comprar bilhetes, criar ou organizar Eventos
-  e Experiências e utilizar uma Conta de empresa; um número por conta; o
-  número é privado; um hash com chave do endereço de e-mail e do número de
-  telemóvel das contas banidas.
+  do Reino Unido) e, nas contas existentes (apenas pedido até 15 de novembro
+  de 2026, obrigatório a partir de 16 de novembro de 2026), antes de publicar
+  numa Comunidade, participar em Eventos e Experiências ou de os reservar,
+  comprar bilhetes, criar ou organizar Eventos e Experiências e utilizar uma
+  Conta de empresa; um número por conta; o número é privado; um hash com
+  chave do endereço de e-mail e do número de telemóvel das contas banidas.
 - Secção 13.1: um número de contacto da empresa opcional, apresentado na
   página da empresa apenas se o ativar.
-- Secções 4.4, 13.4 e 18.8: a verificação com um documento de identificação
-  continua a ser opcional (também para o titular de uma Conta de empresa, que
-  precisa apenas de um número de telemóvel verificado); o documento é lido no
+- Secções 4.4, 12.3, 12.5, 13.4 e 18.8: a verificação com um documento de
+  identificação é opcional em todos os casos: publicar numa Comunidade e
+  publicar, organizar ou reservar Experiências exigem, em vez disso, um número
+  de telemóvel verificado, e uma Conta de empresa precisa apenas de um número
+  de telemóvel verificado (o documento de identificação do titular é
+  opcional); o documento é lido no
   seu dispositivo e verificado por um revisor, a foto é eliminada após a
   revisão ou ao fim de 7 dias se ainda estiver pendente, e os dados que
   confirma são conservados encriptados apenas para o identificar quando a lei

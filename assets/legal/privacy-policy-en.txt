@@ -88,9 +88,10 @@ applies to them too.
   end-to-end encrypted.
   - Our systems can process message content, for example to translate it when
     you ask, or to check a message someone has reported.
-- Verifying with an identity document is optional, except for the features
-  in section 8.1. If you do it, the app reads the document on your device, a
-  reviewer checks it, and we then delete the image. We keep the details you
+- Verifying with an identity document is optional, except where the law
+  requires stronger age checks (section 8.1). If you do it, the app reads
+  the document on your device, a reviewer checks it, and we then delete the
+  image. We keep the details you
   confirmed encrypted in a restricted store, only to identify you when the
   law requires it, until 6 months after your account is closed.
 - AI features (translation, read-aloud and transliteration of messages
@@ -432,9 +433,11 @@ you for third parties.
 6.5 Phone number
 a) To create an account, you must verify a mobile phone number. We send you a
    code by SMS through Google Firebase Authentication, our sign-in provider.
-   If your account was created before this rule, you must verify a number
-   before you join or book events and experiences, buy tickets, create or
-   host events or experiences, or use a business account.
+   If your account was created before 16 October 2026, until 15 November
+   2026 we only ask you to verify a number. From 16 November 2026 you must
+   verify one before you publish in a community, join or book events and
+   experiences, buy tickets, create or host events or experiences, or use a
+   business account.
 b) Phone verification is available for numbers from European countries
    (except Russia and Belarus), Brazil, the United States, Canada and the
    United Kingdom. Without such a number, you cannot create an account yet.
@@ -497,10 +500,9 @@ your account data.
 8.1 When we ask
 
 GreenGo is for adults (18+). Everyone states their date of birth when they sign
-up. We ask for an identity document only in these cases:
-- before you publish in a Community;
-- before you publish any experience as a host, or book an experience as a
-  member;
+up. Verifying with an identity document is optional. Publishing in a
+Community, and publishing or booking experiences, need a verified phone
+number instead (section 6.5). We may ask for an identity document only:
 - where the law requires stronger age checks where you live;
 - when we have a specific reason to believe an account belongs to someone
   under 18.
@@ -1449,7 +1451,8 @@ Phone verification and identity details:
   account (numbers from European countries except Russia and Belarus,
   Brazil, the United States, Canada and the United Kingdom), and for
   existing accounts before events, experiences, tickets and business
-  accounts; one number per account; Google Firebase Authentication sends the
+  accounts (only asked until 15 November 2026, required from 16 November
+  2026); one number per account; Google Firebase Authentication sends the
   SMS; a keyed hash of the numbers of banned accounts (also sections 2, 3.1,
   4.2, 5, 12.2, 14, 15.2 and 22.1).
 - Sections 3.1 d and 4.3: an optional business contact number, shown on the
@@ -1471,8 +1474,9 @@ Clarifications to match how the app works:
   translation service, and the app may request such translations directly;
   stored chat translations and the anonymous cache of short phrases (also
   section 14).
-- Section 8.1: an identity document is asked for every experience you publish
-  and for booking an experience as a member.
+- Section 8.1: an identity document is optional everywhere; publishing in a
+  community and publishing or booking experiences need a verified phone
+  number instead (section 6.5).
 - Section 10.2: a moderator reviews the case before reports stop being
   processed; child-safety reports are always processed.
 - Section 11.2: Pix only for one-time payments; memberships by card.
