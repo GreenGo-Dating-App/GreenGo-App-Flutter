@@ -111,14 +111,15 @@ a) La verifica con un documento d'identità è facoltativa, anche per
    dell'età più rigorosi, potremmo chiederti di verificare la tua età con un
    documento d'identità.
 b) Alcuni badge richiedono che tu verifichi il tuo profilo con un selfie.
-c) Quando effettui la verifica con un documento d'identità, l'app legge il
-   documento sul tuo dispositivo e compila nome, cognome, data di nascita,
-   tipo di documento, paese di rilascio e numero del documento. Tu confermi
-   questi dati, e un revisore di GreenGo li controlla confrontandoli con la
-   foto del documento. Cancelliamo la foto dopo l'esame, o dopo 7 giorni se è
-   ancora in attesa di esame (in tal caso puoi caricarla di nuovo). Lo stesso
-   vale per una tua foto in cui tieni in mano il documento. Conserviamo i dati
-   che hai confermato in forma cifrata, in un archivio separato ad accesso
+c) Quando effettui la verifica con un documento d'identità, ne carichi una
+   foto e inserisci nome, cognome, data di nascita, tipo di documento, paese
+   di rilascio e numero del documento. Un revisore di GreenGo controlla
+   questi dati confrontandoli con la foto e li conferma o li corregge. Se non
+   vengono esaminati entro 30 giorni, li cancelliamo. Cancelliamo la foto
+   dopo l'esame, o dopo 7 giorni se è ancora in attesa di esame (in tal caso
+   puoi caricarla di nuovo). Lo stesso vale per una tua foto in cui tieni in
+   mano il documento. Dopo l'esame, conserviamo i dati in forma cifrata, in
+   un archivio separato ad accesso
    limitato, solo per identificarti quando la legge lo richiede (sezione
    18.8). Non li mostriamo mai agli altri utenti e non li usiamo per nessun
    altro scopo. La sezione 8 dell'Informativa sulla privacy spiega questo
@@ -1368,11 +1369,11 @@ Verifica del telefono e dati identificativi:
 - Sezioni 4.4, 12.3, 12.5, 13.4 e 18.8: la verifica con un documento
   d'identità è facoltativa ovunque, anche per pubblicare in una Community,
   per pubblicare, ospitare o prenotare Esperienze e per il titolare di un
-  Account business; il
-  documento viene letto sul tuo dispositivo e controllato da un revisore, la
-  foto viene cancellata dopo l'esame o dopo 7 giorni se è ancora in attesa, e
-  i dati che confermi sono conservati in forma cifrata solo per identificarti
-  quando la legge lo richiede.
+  Account business; inserisci i dati del documento e un revisore li
+  controlla confrontandoli con la foto (i dati non esaminati entro 30 giorni
+  vengono cancellati), la foto viene cancellata dopo l'esame o dopo 7 giorni
+  se è ancora in attesa, e i dati esaminati sono conservati in forma cifrata
+  solo per identificarti quando la legge lo richiede.
 Chiarimenti per corrispondere al funzionamento dell'app:
 - Sezioni 5.1 g, 14.1, 14.2 e 14.4: gli assistenti di IA nella chat sono
   traduzione, lettura vocale e traslitterazione (risposte intelligenti e

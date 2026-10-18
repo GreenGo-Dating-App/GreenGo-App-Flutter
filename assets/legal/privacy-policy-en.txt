@@ -90,11 +90,11 @@ applies to them too.
   - Our systems can process message content, for example to translate it when
     you ask, or to check a message someone has reported.
 - Verifying with an identity document is optional, except where the law
-  requires stronger age checks (section 8.1). If you do it, the app reads
-  the document on your device, a reviewer checks it, and we then delete the
-  image. We keep the details you
-  confirmed encrypted in a restricted store, only to identify you when the
-  law requires it, until 6 months after your account is closed.
+  requires stronger age checks (section 8.1). If you do it, you type in the
+  details from the document, a reviewer checks them against the image, and
+  we then delete the image. We keep the reviewed details encrypted in a
+  restricted store, only to identify you when the law requires it, until
+  6 months after your account is closed.
 - AI features (translation, read-aloud and transliteration of messages
   written in non-Latin scripts) use Google services, and our support
   assistant uses Anthropic's Claude. They run through our servers, except
@@ -151,9 +151,9 @@ d) Business account data
 
 e) Verification data
    An identity document and/or a selfie, only if you choose to verify. If
-   you verify with an identity document, also the details read from it and
-   confirmed by you: first name, surname, date of birth, document type,
-   issuing country and document number. See section 8.
+   you verify with an identity document, also the details you type in from
+   it: first name, surname, date of birth, document type, issuing country
+   and document number. See section 8.
 
 f) Purchase data
    - What you bought, when, the price and currency.
@@ -268,7 +268,7 @@ People you have blocked cannot see your profile.
 4.2 Never shown to other users
 
 Your exact coordinates, date of birth, email address, phone number, identity
-document and the identity details read from it, verification selfie and
+document and the identity details you gave from it, verification selfie and
 private-album photos (unless you grant someone access to your private album).
 
 4.3 Content you share
@@ -318,9 +318,9 @@ Purpose                              | What we use                | Legal basis
 5. AI features: translation,        | The text you choose to     | Contract, after your consent to the
    read-aloud, transliteration       | process                    | AI feature (GDPR 6(1)(a)/(b); LGPD
                                      |                            | 7 I/V). See section 9.
-6. Age and identity verification     | ID image; the details read | Explicit consent (GDPR 9(2)(a);
-   with an ID document               | from it and confirmed by   | LGPD 11 I). See section 8.
-                                     | you                        |
+6. Age and identity verification     | ID image; the details you  | Explicit consent (GDPR 9(2)(a);
+   with an ID document               | type in from it; date of   | LGPD 11 I). See section 8.
+                                     | birth read from it         |
 7. Selfie verification               | Selfie, profile photos     | Explicit consent (GDPR 9(2)(a);
                                      |                            | LGPD 11 I)
 8. Purchases, coins, memberships,    | Purchase data, coin ledger | Contract (GDPR 6(1)(b); LGPD 7 V)
@@ -400,8 +400,8 @@ refuse or withdraw consent:
 - to an AI feature, you cannot use that AI feature, but the rest of GreenGo
   keeps working;
 - to verification, you lose only the features that need verification (see
-  section 8). The identity details you already confirmed are kept for the
-  purpose in row 25 and for the period in section 8.2 g.
+  section 8). The identity details you already gave are kept for the
+  purpose in row 25 and for the period in section 8.2 h.
 
 ================================================================================
 6. ACCOUNT, PROFILE AND DISCOVERY
@@ -511,30 +511,34 @@ identity document only:
 a) Before you upload, we explain what will happen and ask for your explicit
    consent.
 
-b) The app reads the text on the document on your device and fills in your
-   first name, surname, date of birth, document type, issuing country and
-   document number. You check these details and confirm them.
+b) After uploading the image, you type in your first name, surname, date of
+   birth, document type, issuing country and document number.
 
-c) A trained member of our staff checks the details you confirmed against
-   the image of the document.
+c) For age verification, the image is sent to Google Cloud Vision, which
+   reads the text on the document so that we can find the date of birth.
+   Google acts on our behalf and keeps nothing afterwards.
 
-d) The image is DELETED as soon as the review is finished. If it is still
+d) A trained member of our staff checks the details you typed in against
+   the image of the document, and confirms or corrects them. Details that
+   are not reviewed within 30 days are DELETED.
+
+e) The image is DELETED as soon as the review is finished. If it is still
    waiting for review after 7 days, it is DELETED whatever the outcome, and
    you can upload it again. This applies to every identity-document image,
    including the photo of you holding your identity document that you can
    add when you sign up (8.3) and the identity document of a business owner
    (8.4).
 
-e) After the review we keep:
+f) After the review we keep:
    - whether your age was verified (yes or no), the method, the date of the
      check and your year of birth;
-   - the details you confirmed (first name, surname, date of birth, document
+   - the reviewed details (first name, surname, date of birth, document
      type, issuing country and document number), ENCRYPTED and kept apart
      from your profile, in a restricted store.
 
    We do not keep the image, your nationality or the document's expiry date.
 
-f) We use the encrypted details only to identify you when the law requires
+g) We use the encrypted details only to identify you when the law requires
    it: to answer a valid order from a court, or a request from the police or
    another competent authority; to protect someone's life or safety in a
    serious case; or to establish, exercise or defend legal claims (section
@@ -542,7 +546,7 @@ f) We use the encrypted details only to identify you when the law requires
    access is logged. We never show them to other users, and we never use them
    for anything else, for example marketing or profiling.
 
-g) We keep the encrypted details while your account exists and for 6 months
+h) We keep the encrypted details while your account exists and for 6 months
    after it is closed (the period for which the Brazilian Marco Civil da
    Internet requires access logs to be kept, art. 15). We keep them longer
    only under a legal hold (section 14).
@@ -578,7 +582,7 @@ identify traders who offer services to consumers.
 
 You can refuse or withdraw your consent to verification. You then cannot use
 the features listed in 8.1 that need it. Your account is not deleted. The
-identity details you already confirmed are kept as described in 8.2 f and g.
+identity details you already gave are kept as described in 8.2 g and h.
 
 8.6 Notice for residents of Illinois, Texas and other US states with biometric
 laws
@@ -991,10 +995,11 @@ Identity document images (including    | Deleted as soon as the review is
 a photo holding the document, and      | finished, and at the latest after 7
 business owners' documents)            | days whatever the outcome (you can
                                        | then upload it again)
-Identity details you confirmed (first  | While your account exists and 6
-name, surname, date of birth, document | months after it is closed (Marco Civil
-type, issuing country and number),     | da Internet access-log period);
-encrypted (8.2)                        | longer only under a legal hold
+Identity details from the document     | Not reviewed: deleted after 30 days.
+(first name, surname, date of birth,   | Reviewed: while your account exists and
+document type, issuing country and     | 6 months after it is closed (Marco
+number), encrypted (8.2)               | Civil da Internet access-log period);
+                                       | longer only under a legal hold
 Age verification result (yes/no,       | Until you delete your account
 method, date, birth year)              |
 Verification selfie                    | Deleted after the review; the result is
@@ -1098,7 +1103,7 @@ h) We keep a short deletion receipt (the date and the number of items removed)
 
 i) Your phone number is deleted with your account. The encrypted identity
    details from an identity-document verification are kept for 6 months after
-   the account is closed, and then deleted (section 8.2 g). If the account
+   the account is closed, and then deleted (section 8.2 h). If the account
    was banned, we keep the keyed hashes of its email address and phone number
    (section 14).
 
@@ -1455,11 +1460,13 @@ Phone verification and identity details:
   4.2, 5, 12.2, 14, 15.2 and 22.1).
 - Sections 3.1 d and 4.3: an optional business contact number, shown on the
   business page only if the business switches it on.
-- Sections 8.2, 8.3 and 8.4: the identity document is read on your device
-  and checked by a reviewer; every identity-document image (also a photo
+- Sections 8.2, 8.3 and 8.4: you type in the details from the identity
+  document and a reviewer checks them against the image (details not
+  reviewed within 30 days are deleted; for age checks Google Cloud Vision
+  reads the date of birth); every identity-document image (also a photo
   holding the document and a business owner's document) is deleted after
   the review, or after 7 days if still pending (you can upload it again); a
-  business owner's identity document is optional; the details you confirm
+  business owner's identity document is optional; the reviewed details
   are kept encrypted in a restricted store, only to identify you when the
   law requires it, until 6 months after the account is closed (also
   sections 2, 3.1, 4.2, 4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 and 22.1).

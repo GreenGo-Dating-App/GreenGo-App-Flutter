@@ -96,11 +96,10 @@ reserva de uma experiência, como visitantes, a partir de um link compartilhado
     denunciou.
 - A verificação com um documento de identidade é opcional, exceto quando a
   lei exige verificações de idade mais rigorosas (item 8.1). Se você a fizer,
-  o aplicativo lê o documento no seu dispositivo, um revisor o confere e,
-  depois, excluímos a imagem. Guardamos
-  os dados que você confirmou de forma criptografada, em um armazenamento
-  restrito, somente para identificar você quando a lei o exigir, até 6 meses
-  após o encerramento da sua conta.
+  você digita os dados do documento, um revisor os confere com a imagem e,
+  depois, excluímos a imagem. Guardamos os dados analisados de forma
+  criptografada, em um armazenamento restrito, somente para identificar você
+  quando a lei o exigir, até 6 meses após o encerramento da sua conta.
 - Os recursos de IA (tradução, leitura em voz alta e transliteração de
   mensagens escritas em alfabetos não latinos) usam serviços do Google, e o
   nosso assistente de suporte usa o Claude, da Anthropic. Eles funcionam por
@@ -160,7 +159,7 @@ d) Dados de conta empresarial
 e) Dados de verificação
    Um documento de identidade e/ou uma selfie, somente se você optar por se
    verificar. Se você se verificar com um documento de identidade, também os
-   dados lidos nele e confirmados por você: nome, sobrenome, data de
+   dados que você digita a partir dele: nome, sobrenome, data de
    nascimento, tipo de documento, país emissor e número do documento. Veja a
    seção 8.
 
@@ -285,9 +284,9 @@ As pessoas que você bloqueou não podem ver o seu perfil.
 4.2 Nunca mostrado a outros usuários
 
 As suas coordenadas exatas, data de nascimento, endereço de e-mail, número de
-telefone, documento de identidade e os dados de identificação lidos nele,
-selfie de verificação e as fotos do álbum privado (a menos que você dê acesso
-ao seu álbum privado a alguém).
+telefone, documento de identidade e os dados de identificação que você
+informou a partir dele, selfie de verificação e as fotos do álbum privado (a
+menos que você dê acesso ao seu álbum privado a alguém).
 
 4.3 Conteúdo que você compartilha
 
@@ -343,8 +342,9 @@ Finalidade                          | O que usamos            | Base legal
    transliteração                   |                         | 6(1)(a)/(b); LGPD 7 I/V). Veja a
                                     |                         | seção 9.
 6. Verificação de idade e de        | Imagem do documento; os | Consentimento explícito (GDPR
-   identidade com documento de      | dados lidos nele e      | 9(2)(a); LGPD 11 I). Veja a seção 8.
-   identidade                       | confirmados por você    |
+   identidade com documento de      | dados que você digita a | 9(2)(a); LGPD 11 I). Veja a seção 8.
+   identidade                       | partir dele; data de    |
+                                    | nascimento lida nele    |
 7. Verificação por selfie           | Selfie, fotos do perfil | Consentimento explícito (GDPR
                                     |                         | 9(2)(a); LGPD 11 I)
 8. Compras, moedas, assinaturas,    | Dados de compras,       | Contrato (GDPR 6(1)(b); LGPD 7 V)
@@ -435,8 +435,8 @@ que fizemos antes. Se você recusar ou revogar o consentimento:
 - para um recurso de IA, você não pode usar esse recurso de IA, mas o restante
   do GreenGo continua funcionando;
 - para a verificação, você perde apenas os recursos que exigem verificação
-  (veja a seção 8). Os dados de identificação que você já confirmou são
-  guardados para a finalidade da linha 25 e pelo período do item 8.2 g.
+  (veja a seção 8). Os dados de identificação que você já forneceu são
+  guardados para a finalidade da linha 25 e pelo período do item 8.2 h.
 
 ================================================================================
 6. CONTA, PERFIL E DESCOBERTA
@@ -552,31 +552,35 @@ pedir um documento de identidade somente:
 a) Antes do envio, explicamos o que vai acontecer e pedimos o seu
    consentimento explícito.
 
-b) O aplicativo lê o texto do documento no seu dispositivo e preenche o seu
-   nome, sobrenome, data de nascimento, tipo de documento, país emissor e
-   número do documento. Você confere esses dados e os confirma.
+b) Após enviar a imagem, você digita o seu nome, sobrenome, data de
+   nascimento, tipo de documento, país emissor e número do documento.
 
-c) Um membro treinado da nossa equipe confere os dados que você confirmou com
-   a imagem do documento.
+c) Para a verificação de idade, a imagem é enviada ao Google Cloud Vision, que
+   lê o texto do documento para que possamos encontrar a data de nascimento.
+   O Google atua em nosso nome e não guarda nada depois.
 
-d) A imagem é EXCLUÍDA assim que a análise é concluída. Se ela ainda estiver
+d) Um membro treinado da nossa equipe confere os dados que você digitou com a
+   imagem do documento e os confirma ou corrige. Os dados que não forem
+   analisados em até 30 dias são EXCLUÍDOS.
+
+e) A imagem é EXCLUÍDA assim que a análise é concluída. Se ela ainda estiver
    aguardando análise após 7 dias, é EXCLUÍDA qualquer que seja o resultado, e
    você pode enviá-la novamente. Isso vale para todas as imagens de documentos
    de identidade, incluindo a foto sua segurando o documento de identidade que
    você pode adicionar ao se cadastrar (8.3) e o documento de identidade do
    responsável por uma empresa (8.4).
 
-e) Após a análise, guardamos:
+f) Após a análise, guardamos:
    - se a sua idade foi verificada (sim ou não), o método, a data da
      verificação e o seu ano de nascimento;
-   - os dados que você confirmou (nome, sobrenome, data de nascimento, tipo de
+   - os dados analisados (nome, sobrenome, data de nascimento, tipo de
      documento, país emissor e número do documento), CRIPTOGRAFADOS e
      guardados separadamente do seu perfil, em um armazenamento restrito.
 
    Não guardamos a imagem, a sua nacionalidade nem a data de validade do
    documento.
 
-f) Usamos os dados criptografados somente para identificar você quando a lei
+g) Usamos os dados criptografados somente para identificar você quando a lei
    o exige: para atender a uma ordem válida de um tribunal, ou a uma
    solicitação da polícia ou de outra autoridade competente; para proteger a
    vida ou a segurança de alguém em um caso grave; ou para propor, exercer ou
@@ -585,7 +589,7 @@ f) Usamos os dados criptografados somente para identificar você quando a lei
    registrado. Nunca os mostramos a outros usuários e nunca os usamos para
    nenhuma outra finalidade, por exemplo marketing ou criação de perfis.
 
-g) Guardamos os dados criptografados enquanto a sua conta existir e por 6
+h) Guardamos os dados criptografados enquanto a sua conta existir e por 6
    meses após o seu encerramento (o prazo pelo qual o Marco Civil da Internet
    exige a guarda dos registros de acesso, art. 15). Só os guardamos por mais
    tempo em caso de preservação legal (seção 14).
@@ -622,8 +626,8 @@ oferecem serviços a consumidores.
 
 Você pode recusar ou revogar o seu consentimento para a verificação. Nesse
 caso, você não poderá usar os recursos listados no item 8.1 que a exigem. A sua
-conta não é excluída. Os dados de identificação que você já confirmou são
-guardados conforme descrito no item 8.2 f e g.
+conta não é excluída. Os dados de identificação que você já forneceu são
+guardados conforme descrito no item 8.2 g e h.
 
 8.6 Aviso para residentes de Illinois, do Texas e de outros estados dos EUA com
 leis sobre biometria
@@ -1076,11 +1080,12 @@ Imagens de documentos de identidade | Excluídas assim que a análise é
 (incluindo uma foto segurando o     | concluída e, no máximo, após 7 dias,
 documento e os documentos de        | qualquer que seja o resultado (você
 responsáveis por empresas)          | pode então enviá-las novamente)
-Dados de identificação que você     | Enquanto a sua conta existir e por 6
-confirmou (nome, sobrenome, data de | meses após o seu encerramento (prazo
-nascimento, tipo de documento, país | dos registros de acesso do Marco
-emissor e número), criptografados   | Civil da Internet); por mais tempo
-(8.2)                               | somente em caso de preservação legal
+Dados de identificação do documento | Não analisados: excluídos após 30 dias.
+(nome, sobrenome, data de           | Analisados: enquanto a sua conta existir
+nascimento, tipo de documento, país | e por 6 meses após o seu encerramento
+emissor e número), criptografados   | (prazo dos registros de acesso do Marco
+(8.2)                               | Civil da Internet); por mais tempo
+                                    | somente em caso de preservação legal
 Resultado da verificação de idade   | Até você excluir a sua conta
 (sim/não, método, data, ano de      |
 nascimento)                         |
@@ -1197,7 +1202,7 @@ h) Guardamos um breve comprovante de exclusão (a data e o número de itens
 i) O seu número de telefone é excluído com a sua conta. Os dados de
    identificação criptografados de uma verificação com documento de identidade
    são guardados por 6 meses após o encerramento da conta e depois excluídos
-   (item 8.2 g). Se a conta foi banida, guardamos os hashes com chave do
+   (item 8.2 h). Se a conta foi banida, guardamos os hashes com chave do
    endereço de e-mail e do número de telefone dela (seção 14).
 
 15.3 As moedas que restarem na sua conta e o tempo de assinatura restante são
@@ -1578,13 +1583,15 @@ Verificação por telefone e dados de identificação:
   e 22.1).
 - Seções 3.1 d e 4.3: um número de contato comercial opcional, exibido na
   página da empresa somente se a empresa o ativar.
-- Seções 8.2, 8.3 e 8.4: o documento de identidade é lido no seu dispositivo e
-  conferido por um revisor; toda imagem de documento de identidade (também uma
+- Seções 8.2, 8.3 e 8.4: você digita os dados do documento de identidade e um
+  revisor os confere com a imagem (dados não analisados em até 30 dias são
+  excluídos; para verificações de idade, o Google Cloud Vision lê a data de
+  nascimento); toda imagem de documento de identidade (também uma
   foto segurando o documento e o documento do responsável por uma empresa) é
   excluída após a análise, ou após 7 dias se ainda estiver pendente (você pode
   enviá-la novamente); o documento de identidade do responsável por uma
   empresa é opcional;
-  os dados que você confirma são guardados de forma criptografada em um
+  os dados analisados são guardados de forma criptografada em um
   armazenamento restrito, somente para identificar você quando a lei o exigir,
   até 6 meses após o encerramento da conta (também seções 2, 3.1, 4.2, 4.4, 5,
   8.5, 12.5, 14, 15.2, 20.1 e 22.1).

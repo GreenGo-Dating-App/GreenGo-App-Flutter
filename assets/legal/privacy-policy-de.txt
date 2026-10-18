@@ -97,11 +97,10 @@ Diese Erklärung gilt auch für sie.
     auf deinen Wunsch zu übersetzen oder um eine gemeldete Nachricht zu prüfen.
 - Die Verifizierung mit einem Ausweisdokument ist freiwillig, außer wenn das
   Gesetz strengere Alterskontrollen verlangt (Abschnitt 8.1). Wenn du sie
-  durchführst, liest die App das
-  Dokument auf deinem Gerät aus, ein Prüfer kontrolliert es, und danach
-  löschen wir das Bild. Die von dir bestätigten Angaben speichern wir
-  verschlüsselt in einem zugriffsbeschränkten Speicher, nur um dich zu
-  identifizieren, wenn das Gesetz es verlangt, bis 6 Monate nach der
+  durchführst, gibst du die Angaben aus dem Dokument ein, ein Prüfer gleicht
+  sie mit dem Bild ab, und danach löschen wir das Bild. Die geprüften Angaben
+  speichern wir verschlüsselt in einem zugriffsbeschränkten Speicher, nur um
+  dich zu identifizieren, wenn das Gesetz es verlangt, bis 6 Monate nach der
   Schließung deines Kontos.
 - KI-Funktionen (Übersetzung, Vorlesen und Transliteration von Nachrichten in
   nicht-lateinischen Schriften) nutzen Google-Dienste, und unser
@@ -163,7 +162,7 @@ d) Daten von Unternehmenskonten
 e) Verifizierungsdaten
    Ein Ausweisdokument und/oder ein Selfie, nur wenn du dich für eine
    Verifizierung entscheidest. Wenn du dich mit einem Ausweisdokument
-   verifizierst, auch die daraus gelesenen und von dir bestätigten Angaben:
+   verifizierst, auch die Angaben, die du daraus eingibst:
    Vorname, Nachname, Geburtsdatum, Dokumentart, Ausstellungsland und
    Dokumentnummer. Siehe Abschnitt 8.
 
@@ -293,7 +292,7 @@ Personen, die du blockiert hast, können dein Profil nicht sehen.
 4.2 Wird anderen Nutzern nie angezeigt
 
 Deine genauen Koordinaten, dein Geburtsdatum, deine E-Mail-Adresse, deine
-Telefonnummer, dein Ausweisdokument und die daraus gelesenen
+Telefonnummer, dein Ausweisdokument und die von dir daraus angegebenen
 Identitätsangaben, dein Verifizierungs-Selfie und die Fotos in deinem privaten
 Album (es sei denn, du gewährst jemandem Zugriff auf dein privates Album).
 
@@ -350,9 +349,10 @@ Zweck                                | Was wir verwenden          | Rechtsgrundl
 5. KI-Funktionen: Übersetzung,       | Der Text, den du           | Vertrag, nach deiner Einwilligung in
    Vorlesen, Transliteration         | verarbeiten lassen         | die KI-Funktion (DSGVO 6(1)(a)/(b);
                                      | möchtest                   | LGPD 7 I/V). Siehe Abschnitt 9.
-6. Alters- und Identitäts-           | Ausweisbild; die daraus    | Ausdrückliche Einwilligung (DSGVO
-   verifizierung mit einem           | gelesenen und von dir      | 9(2)(a); LGPD 11 I). Siehe Abschnitt 8.
-   Ausweisdokument                   | bestätigten Angaben        |
+6. Alters- und Identitäts-           | Ausweisbild; die von dir   | Ausdrückliche Einwilligung (DSGVO
+   verifizierung mit einem           | daraus eingegebenen        | 9(2)(a); LGPD 11 I). Siehe Abschnitt 8.
+   Ausweisdokument                   | Angaben; das daraus        |
+                                     | gelesene Geburtsdatum      |
 7. Selfie-Verifizierung              | Selfie, Profilfotos        | Ausdrückliche Einwilligung (DSGVO
                                      |                            | 9(2)(a); LGPD 11 I)
 8. Käufe, Münzen, Mitgliedschaften,  | Kaufdaten, Münzbuch        | Vertrag (DSGVO 6(1)(b); LGPD 7 V)
@@ -443,8 +443,8 @@ oder widerrufst:
   von GreenGo funktioniert weiter;
 - für die Verifizierung, verlierst du nur die Funktionen, die eine
   Verifizierung erfordern (siehe Abschnitt 8). Die von dir bereits
-  bestätigten Identitätsangaben werden für den Zweck in Zeile 25 und für den
-  Zeitraum in Abschnitt 8.2 g aufbewahrt.
+  angegebenen Identitätsangaben werden für den Zweck in Zeile 25 und für den
+  Zeitraum in Abschnitt 8.2 h aufbewahrt.
 
 ================================================================================
 6. KONTO, PROFIL UND ENTDECKEN
@@ -561,32 +561,36 @@ oder Buchen von Erlebnissen. Ein Ausweisdokument können wir nur verlangen:
 a) Bevor du hochlädst, erklären wir dir, was passieren wird, und bitten um
    deine ausdrückliche Einwilligung.
 
-b) Die App liest den Text auf dem Dokument auf deinem Gerät aus und trägt
-   deinen Vornamen, Nachnamen, dein Geburtsdatum, die Dokumentart, das
-   Ausstellungsland und die Dokumentnummer ein. Du prüfst diese Angaben und
-   bestätigst sie.
+b) Nachdem du das Bild hochgeladen hast, gibst du deinen Vornamen, Nachnamen,
+   dein Geburtsdatum, die Dokumentart, das Ausstellungsland und die
+   Dokumentnummer ein.
 
-c) Ein geschulter Mitarbeiter gleicht die von dir bestätigten Angaben mit dem
-   Bild des Dokuments ab.
+c) Für die Altersverifizierung wird das Bild an Google Cloud Vision gesendet,
+   das den Text auf dem Dokument ausliest, damit wir das Geburtsdatum finden
+   können. Google handelt in unserem Auftrag und speichert danach nichts.
 
-d) Das Bild wird GELÖSCHT, sobald die Prüfung abgeschlossen ist. Wartet es
+d) Ein geschulter Mitarbeiter gleicht die von dir eingegebenen Angaben mit dem
+   Bild des Dokuments ab und bestätigt oder korrigiert sie. Angaben, die nicht
+   innerhalb von 30 Tagen geprüft werden, werden GELÖSCHT.
+
+e) Das Bild wird GELÖSCHT, sobald die Prüfung abgeschlossen ist. Wartet es
    nach 7 Tagen noch auf die Prüfung, wird es unabhängig vom Ergebnis
    GELÖSCHT, und du kannst es erneut hochladen. Das gilt für jedes Bild eines
    Ausweisdokuments, einschließlich des Fotos, auf dem du dein
    Ausweisdokument hältst und das du bei der Registrierung hinzufügen kannst
    (8.3), und des Ausweisdokuments eines Unternehmensinhabers (8.4).
 
-e) Nach der Prüfung speichern wir:
+f) Nach der Prüfung speichern wir:
    - ob dein Alter verifiziert wurde (ja oder nein), die Methode, das Datum
      der Prüfung und dein Geburtsjahr;
-   - die von dir bestätigten Angaben (Vorname, Nachname, Geburtsdatum,
+   - die geprüften Angaben (Vorname, Nachname, Geburtsdatum,
      Dokumentart, Ausstellungsland und Dokumentnummer), VERSCHLÜSSELT und
      getrennt von deinem Profil in einem zugriffsbeschränkten Speicher.
 
    Wir speichern weder das Bild noch deine Staatsangehörigkeit oder das
    Ablaufdatum des Dokuments.
 
-f) Wir verwenden die verschlüsselten Angaben nur, um dich zu identifizieren,
+g) Wir verwenden die verschlüsselten Angaben nur, um dich zu identifizieren,
    wenn das Gesetz es verlangt: um eine gültige gerichtliche Anordnung oder
    eine Anfrage der Polizei oder einer anderen zuständigen Behörde zu
    beantworten; um in einem schweren Fall Leben oder Sicherheit eines
@@ -596,7 +600,7 @@ f) Wir verwenden die verschlüsselten Angaben nur, um dich zu identifizieren,
    protokolliert. Wir zeigen sie niemals anderen Nutzern und verwenden sie
    niemals für etwas anderes, zum Beispiel für Marketing oder Profiling.
 
-g) Wir bewahren die verschlüsselten Angaben auf, solange dein Konto besteht,
+h) Wir bewahren die verschlüsselten Angaben auf, solange dein Konto besteht,
    und 6 Monate nach seiner Schließung (der Zeitraum, für den der
    brasilianische Marco Civil da Internet die Aufbewahrung von
    Zugriffsprotokollen vorschreibt, Art. 15). Länger bewahren wir sie nur
@@ -636,8 +640,8 @@ anbieten.
 
 Du kannst deine Einwilligung zur Verifizierung verweigern oder widerrufen. Du
 kannst dann die in 8.1 genannten Funktionen, die sie erfordern, nicht nutzen.
-Dein Konto wird nicht gelöscht. Die von dir bereits bestätigten
-Identitätsangaben werden wie in 8.2 f und g beschrieben aufbewahrt.
+Dein Konto wird nicht gelöscht. Die von dir bereits angegebenen
+Identitätsangaben werden wie in 8.2 g und h beschrieben aufbewahrt.
 
 8.6 Hinweis für Einwohner von Illinois, Texas und anderen US-Bundesstaaten mit
 Biometrie-Gesetzen
@@ -1099,12 +1103,13 @@ Bilder von Ausweisdokumenten (auch     | Gelöscht, sobald die Prüfung
 ein Foto, auf dem du das Dokument      | abgeschlossen ist, spätestens nach 7
 hältst, und Dokumente von              | Tagen unabhängig vom Ergebnis (du
 Unternehmensinhabern)                  | kannst es dann erneut hochladen)
-Von dir bestätigte Identitätsangaben   | Solange dein Konto besteht und 6
-(Vorname, Nachname, Geburtsdatum,      | Monate nach seiner Schließung
-Dokumentart, Ausstellungsland und      | (Aufbewahrungsfrist für
-Dokumentnummer), verschlüsselt (8.2)   | Zugriffsprotokolle nach dem Marco
-                                       | Civil da Internet); länger nur bei
-                                       | einer „Legal Hold“
+Identitätsangaben aus dem Dokument     | Nicht geprüft: nach 30 Tagen gelöscht.
+(Vorname, Nachname, Geburtsdatum,      | Geprüft: solange dein Konto besteht und
+Dokumentart, Ausstellungsland und      | 6 Monate nach seiner Schließung
+Dokumentnummer), verschlüsselt (8.2)   | (Aufbewahrungsfrist für
+                                       | Zugriffsprotokolle nach dem Marco Civil
+                                       | da Internet); länger nur bei einer
+                                       | „Legal Hold“
 Ergebnis der Altersverifizierung       | Bis du dein Konto löschst
 (ja/nein, Methode, Datum, Geburtsjahr) |
 Verifizierungs-Selfie                  | Nach der Prüfung gelöscht; das
@@ -1218,7 +1223,7 @@ h) Wir bewahren eine kurze Löschbestätigung auf (das Datum und die Anzahl der
 i) Deine Telefonnummer wird mit deinem Konto gelöscht. Die verschlüsselten
    Identitätsangaben aus einer Verifizierung mit einem Ausweisdokument werden
    6 Monate nach der Schließung des Kontos aufbewahrt und dann gelöscht
-   (Abschnitt 8.2 g). Wurde das Konto gesperrt, speichern wir die Keyed
+   (Abschnitt 8.2 h). Wurde das Konto gesperrt, speichern wir die Keyed
    Hashes seiner E-Mail-Adresse und Telefonnummer (Abschnitt 14).
 
 15.3 Verbleibende Münzen in deinem Konto und verbleibende Mitgliedschaftszeit
@@ -1613,17 +1618,18 @@ Telefonverifizierung und Identitätsangaben:
 - Abschnitte 3.1 d und 4.3: eine optionale geschäftliche Kontaktnummer, die
   nur auf der Unternehmensseite angezeigt wird, wenn das Unternehmen sie
   einschaltet.
-- Abschnitte 8.2, 8.3 und 8.4: Das Ausweisdokument wird auf deinem Gerät
-  ausgelesen und von einem Prüfer kontrolliert; jedes Bild eines
+- Abschnitte 8.2, 8.3 und 8.4: Du gibst die Angaben aus dem Ausweisdokument
+  ein, und ein Prüfer gleicht sie mit dem Bild ab (Angaben, die nicht
+  innerhalb von 30 Tagen geprüft werden, werden gelöscht; für Alterskontrollen
+  liest Google Cloud Vision das Geburtsdatum aus); jedes Bild eines
   Ausweisdokuments (auch ein Foto, auf dem man das Dokument hält, und das
-  Dokument eines Unternehmensinhabers) wird nach der Prüfung oder nach
-  7 Tagen, wenn sie noch aussteht, gelöscht (du kannst es erneut hochladen);
-  das Ausweisdokument eines Unternehmensinhabers ist freiwillig; die von
-  dir bestätigten
+  Dokument eines Unternehmensinhabers) wird nach der Prüfung oder nach 7
+  Tagen, wenn sie noch aussteht, gelöscht (du kannst es erneut hochladen); das
+  Ausweisdokument eines Unternehmensinhabers ist freiwillig; die geprüften
   Angaben werden verschlüsselt in einem zugriffsbeschränkten Speicher
-  aufbewahrt, nur um dich zu identifizieren, wenn das Gesetz es verlangt,
-  bis 6 Monate nach der Schließung des Kontos (auch Abschnitte 2, 3.1, 4.2,
-  4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 und 22.1).
+  aufbewahrt, nur um dich zu identifizieren, wenn das Gesetz es verlangt, bis
+  6 Monate nach der Schließung des Kontos (auch Abschnitte 2, 3.1, 4.2, 4.4,
+  5, 8.5, 12.5, 14, 15.2, 20.1 und 22.1).
 Klarstellungen, damit die Erklärung der Funktionsweise der App entspricht:
 - Abschnitte 2, 5 und 9: Die KI-Funktionen sind Übersetzung, Vorlesen und
   Transliteration (intelligente Antworten und Wortzerlegung werden nicht

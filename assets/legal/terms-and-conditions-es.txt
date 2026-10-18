@@ -111,14 +111,15 @@ a) La verificación con un documento de identidad es opcional, también para
    comprobaciones de edad más estrictas, podemos pedirte que verifiques tu
    edad con un documento de identidad.
 b) Algunas insignias requieren que verifiques tu perfil con un selfi.
-c) Cuando te verificas con un documento de identidad, la app lee el documento
-   en tu dispositivo y rellena tu nombre, apellidos, fecha de nacimiento, tipo
-   de documento, país de expedición y número de documento. Tú confirmas estos
-   datos, y un revisor de GreenGo los comprueba con la foto del documento.
+c) Cuando te verificas con un documento de identidad, subes una foto del
+   documento y escribes tu nombre, apellidos, fecha de nacimiento, tipo de
+   documento, país de expedición y número de documento. Un revisor de GreenGo
+   comprueba estos datos con la foto y los confirma o los corrige. Si no se
+   revisan en un plazo de 30 días, los eliminamos.
    Eliminamos la foto tras la revisión, o pasados 7 días si sigue pendiente de
    revisión (entonces puedes volver a subirla). Esto también se aplica a una
-   foto tuya sosteniendo tu documento. Conservamos los datos que confirmaste
-   cifrados, en un almacén restringido separado, solo para identificarte
+   foto tuya sosteniendo tu documento. Tras la revisión, conservamos los
+   datos cifrados, en un almacén restringido separado, solo para identificarte
    cuando la ley lo exija (sección 18.8). Nunca los mostramos a otros
    usuarios y no los usamos para nada más. La sección 8 de la Política de
    Privacidad explica esto y cuánto tiempo los conservamos.
@@ -1370,11 +1371,11 @@ Verificación del teléfono y datos de identidad:
 - Secciones 4.4, 12.3, 12.5, 13.4 y 18.8: la verificación con documento de
   identidad es opcional en todos los casos, también para publicar en una
   Comunidad, para publicar Experiencias, ser su Anfitrión o reservarlas y
-  para el titular de una Cuenta de empresa; el
-  documento se lee en tu dispositivo y lo comprueba un revisor, la foto se
-  elimina tras la revisión o pasados 7 días si sigue pendiente, y los datos que
-  confirmas se conservan cifrados solo para identificarte cuando la ley lo
-  exija.
+  para el titular de una Cuenta de empresa; escribes los datos del
+  documento y un revisor los comprueba con la foto (los datos no revisados
+  en 30 días se eliminan), la foto se elimina tras la revisión o pasados 7
+  días si sigue pendiente, y los datos revisados se conservan cifrados solo
+  para identificarte cuando la ley lo exija.
 Aclaraciones para ajustarse al funcionamiento de la app:
 - Secciones 5.1 g, 14.1, 14.2 y 14.4: los asistentes de IA en el chat son la
   traducción, la lectura en voz alta y la transliteración (no se ofrecen

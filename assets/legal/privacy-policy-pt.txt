@@ -99,9 +99,9 @@ partilhada (secção 11.7). Esta política também se aplica a essas pessoas.
     as traduzir quando o pede, ou para verificar uma mensagem que alguém
     denunciou.
 - A verificação com um documento de identificação é opcional, exceto quando a
-  lei exige verificações de idade mais rigorosas (secção 8.1). Se a fizer, a
-  aplicação lê o documento no seu dispositivo, um revisor verifica-o e depois
-  eliminamos a imagem. Conservamos os dados que confirmou encriptados num
+  lei exige verificações de idade mais rigorosas (secção 8.1). Se a fizer,
+  introduz os dados do documento, um revisor compara-os com a imagem e depois
+  eliminamos a imagem. Conservamos os dados revistos encriptados num
   arquivo de acesso restrito, apenas para o identificar quando a lei o exigir,
   até 6 meses após o encerramento da sua conta.
 - As funcionalidades de IA (tradução, leitura em voz alta e transliteração de
@@ -163,7 +163,7 @@ d) Dados de contas de empresa
 e) Dados de verificação
    Um documento de identificação e/ou uma selfie, apenas se optar por se
    verificar. Se se verificar com um documento de identificação, também os
-   dados nele lidos e confirmados por si: nome próprio, apelido, data de
+   dados que introduz a partir dele: nome próprio, apelido, data de
    nascimento, tipo de documento, país emissor e número do documento. Ver
    secção 8.
 
@@ -293,7 +293,7 @@ As pessoas que bloqueou não podem ver o seu perfil.
 4.2 Nunca mostrado a outros utilizadores
 
 As suas coordenadas exatas, data de nascimento, endereço de e-mail, número de
-telemóvel, documento de identificação e os dados de identificação nele lidos,
+telemóvel, documento de identificação e os dados de identificação que forneceu,
 selfie de verificação e fotos do álbum privado (a menos que conceda a alguém
 acesso ao seu álbum privado).
 
@@ -353,8 +353,9 @@ Finalidade                           | O que utilizamos           | Fundamento j
    transliteração                    |                            | 6(1)(a)/(b); LGPD 7 I/V). Ver
                                      |                            | secção 9.
 6. Verificação da idade e da         | Imagem do documento; os    | Consentimento explícito (RGPD
-   identidade com um documento de    | dados nele lidos e         | 9(2)(a); LGPD 11 I). Ver secção 8.
-   identificação                     | confirmados por si         |
+   identidade com um documento de    | dados que introduz a       | 9(2)(a); LGPD 11 I). Ver secção 8.
+   identificação                     | partir dele; data de       |
+                                     | nascimento nele lida       |
 7. Verificação por selfie            | Selfie, fotos de perfil    | Consentimento explícito (RGPD
                                      |                            | 9(2)(a); LGPD 11 I)
 8. Compras, Moedas, Subscrições,     | Dados de compra, registo   | Contrato (RGPD 6(1)(b); LGPD 7 V)
@@ -440,8 +441,8 @@ anteriormente. Se recusar ou retirar o consentimento:
 - para uma funcionalidade de IA, não pode utilizar essa funcionalidade de IA,
   mas o resto do GreenGo continua a funcionar;
 - para a verificação, perde apenas as funcionalidades que exigem verificação
-  (ver secção 8). Os dados de identificação que já confirmou são conservados
-  para a finalidade da linha 25 e durante o período indicado na secção 8.2 g.
+  (ver secção 8). Os dados de identificação que já forneceu são conservados
+  para a finalidade da linha 25 e durante o período indicado na secção 8.2 h.
 
 ================================================================================
 6. CONTA, PERFIL E DESCOBERTA
@@ -557,31 +558,35 @@ identificação:
 a) Antes do carregamento, explicamos o que vai acontecer e pedimos o seu
    consentimento explícito.
 
-b) A aplicação lê o texto do documento no seu dispositivo e preenche o seu
-   nome próprio, apelido, data de nascimento, tipo de documento, país emissor
-   e número do documento. O utilizador verifica estes dados e confirma-os.
+b) Depois de carregar a imagem, introduz o seu nome próprio, apelido, data de
+   nascimento, tipo de documento, país emissor e número do documento.
 
-c) Um membro do nosso pessoal com formação adequada compara os dados que
-   confirmou com a imagem do documento.
+c) Para a verificação da idade, a imagem é enviada para o Google Cloud Vision,
+   que lê o texto do documento para que possamos encontrar a data de
+   nascimento. A Google atua em nosso nome e não conserva nada depois.
 
-d) A imagem é ELIMINADA logo que a revisão esteja concluída. Se ainda estiver
+d) Um membro do nosso pessoal com formação adequada compara os dados que
+   introduziu com a imagem do documento, e confirma-os ou corrige-os. Os
+   dados que não forem revistos no prazo de 30 dias são ELIMINADOS.
+
+e) A imagem é ELIMINADA logo que a revisão esteja concluída. Se ainda estiver
    a aguardar revisão ao fim de 7 dias, é ELIMINADA seja qual for o resultado,
    e pode carregá-la novamente. Isto aplica-se a todas as imagens de
    documentos de identificação, incluindo a foto sua a segurar o documento de
    identificação que pode adicionar quando se regista (8.3) e o documento de
    identificação do titular de uma empresa (8.4).
 
-e) Após a revisão, conservamos:
+f) Após a revisão, conservamos:
    - se a sua idade foi verificada (sim ou não), o método, a data da
      verificação e o seu ano de nascimento;
-   - os dados que confirmou (nome próprio, apelido, data de nascimento, tipo
+   - os dados revistos (nome próprio, apelido, data de nascimento, tipo
      de documento, país emissor e número do documento), ENCRIPTADOS e
      guardados separadamente do seu perfil, num arquivo de acesso restrito.
 
    Não conservamos a imagem, a sua nacionalidade nem a data de validade do
    documento.
 
-f) Utilizamos os dados encriptados apenas para o identificar quando a lei o
+g) Utilizamos os dados encriptados apenas para o identificar quando a lei o
    exige: para responder a uma ordem válida de um tribunal, ou a um pedido da
    polícia ou de outra autoridade competente; para proteger a vida ou a
    segurança de alguém num caso grave; ou para declarar, exercer ou defender
@@ -590,7 +595,7 @@ f) Utilizamos os dados encriptados apenas para o identificar quando a lei o
    registado. Nunca os mostramos a outros utilizadores e nunca os utilizamos
    para mais nada, por exemplo marketing ou definição de perfis.
 
-g) Conservamos os dados encriptados enquanto a sua conta existir e durante 6
+h) Conservamos os dados encriptados enquanto a sua conta existir e durante 6
    meses após o seu encerramento (o prazo durante o qual o Marco Civil da
    Internet brasileiro exige a conservação dos registos de acesso, art. 15).
    Só os conservamos durante mais tempo no âmbito de uma conservação para fins
@@ -629,8 +634,8 @@ identificar os comerciantes que oferecem serviços a consumidores.
 
 Pode recusar ou retirar o seu consentimento para a verificação. Nesse caso, não
 pode utilizar as funcionalidades indicadas em 8.1 que a exigem. A sua conta não
-é eliminada. Os dados de identificação que já confirmou são conservados
-conforme descrito em 8.2 f e g.
+é eliminada. Os dados de identificação que já forneceu são conservados
+conforme descrito em 8.2 g e h.
 
 8.6 Aviso para residentes do Illinois, do Texas e de outros estados dos EUA com
 leis sobre dados biométricos
@@ -1089,11 +1094,13 @@ Imagens de documentos de identificação | Eliminadas logo que a revisão esteja
 (incluindo uma foto a segurar o        | concluída e, no máximo, ao fim de 7
 documento e documentos de titulares de | dias, seja qual for o resultado (pode
 empresas)                              | então carregá-las novamente)
-Dados de identificação que confirmou   | Enquanto a sua conta existir e 6 meses
-(nome próprio, apelido, data de        | após o seu encerramento (prazo dos
-nascimento, tipo de documento, país    | registos de acesso do Marco Civil da
-emissor e número), encriptados (8.2)   | Internet); mais tempo apenas no âmbito
-                                       | de uma conservação para fins legais
+Dados de identificação do documento    | Não revistos: eliminados ao fim de 30
+(nome próprio, apelido, data de        | dias. Revistos: enquanto a sua conta
+nascimento, tipo de documento, país    | existir e 6 meses após o seu
+emissor e número), encriptados (8.2)   | encerramento (prazo dos registos de
+                                       | acesso do Marco Civil da Internet);
+                                       | mais tempo apenas no âmbito de uma
+                                       | conservação para fins legais
 Resultado da verificação da idade      | Até eliminar a sua conta
 (sim/não, método, data, ano de         |
 nascimento)                            |
@@ -1209,7 +1216,7 @@ h) Conservamos um breve comprovativo de eliminação (a data e o número de iten
 i) O seu número de telemóvel é eliminado com a sua conta. Os dados de
    identificação encriptados de uma verificação com documento de identificação
    são conservados durante 6 meses após o encerramento da conta e depois
-   eliminados (secção 8.2 g). Se a conta tiver sido banida, conservamos os
+   eliminados (secção 8.2 h). Se a conta tiver sido banida, conservamos os
    hashes com chave do respetivo endereço de e-mail e número de telemóvel
    (secção 14).
 
@@ -1599,12 +1606,14 @@ Verificação do telemóvel e dados de identificação:
   secções 2, 3.1, 4.2, 5, 12.2, 14, 15.2 e 22.1).
 - Secções 3.1 d e 4.3: um número de contacto da empresa opcional, apresentado
   na página da empresa apenas se a empresa o ativar.
-- Secções 8.2, 8.3 e 8.4: o documento de identificação é lido no seu
-  dispositivo e verificado por um revisor; todas as imagens de documentos de
+- Secções 8.2, 8.3 e 8.4: introduz os dados do documento de identificação e
+  um revisor compara-os com a imagem (os dados não revistos no prazo de 30
+  dias são eliminados; para as verificações de idade, o Google Cloud Vision
+  lê a data de nascimento); todas as imagens de documentos de
   identificação (também uma foto a segurar o documento e o documento do
   titular de uma empresa) são eliminadas após a revisão, ou ao fim de 7 dias
   se ainda estiverem pendentes (pode carregá-las novamente); o documento de
-  identificação do titular de uma empresa é opcional; os dados que confirma são
+  identificação do titular de uma empresa é opcional; os dados revistos são
   conservados encriptados num arquivo de acesso restrito, apenas para o
   identificar quando a lei o exigir, até 6 meses após o encerramento da conta
   (também secções 2, 3.1, 4.2, 4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 e 22.1).

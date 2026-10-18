@@ -100,12 +100,11 @@ que visiteurs (point 11.7). La présente politique s'applique aussi à elles.
     traduire à votre demande, ou pour examiner un message qui a été signalé.
 - La vérification au moyen d'une pièce d'identité est facultative, sauf
   lorsque la loi exige des contrôles d'âge renforcés (point 8.1). Si vous la
-  faites, l'application lit le
-  document sur votre appareil, un vérificateur le contrôle, puis nous
-  supprimons l'image. Nous conservons les informations que vous avez
-  confirmées sous forme chiffrée, dans un espace de stockage à accès
-  restreint, uniquement pour vous identifier lorsque la loi l'exige, jusqu'à
-  6 mois après la clôture de votre compte.
+  faites, vous saisissez les informations du document, un vérificateur les
+  contrôle par rapport à l'image, puis nous supprimons l'image. Nous
+  conservons les informations examinées sous forme chiffrée, dans un espace
+  de stockage à accès restreint, uniquement pour vous identifier lorsque la
+  loi l'exige, jusqu'à 6 mois après la clôture de votre compte.
 - Les fonctionnalités d'IA (traduction, lecture vocale et translittération
   des messages écrits dans des alphabets non latins) utilisent des services
   Google, et notre assistant d'assistance utilise Claude d'Anthropic. Elles
@@ -169,8 +168,8 @@ d) Données des comptes professionnels
 e) Données de vérification
    Une pièce d'identité et/ou un selfie, uniquement si vous choisissez de vous
    faire vérifier. Si vous vous faites vérifier au moyen d'une pièce
-   d'identité, également les informations qui y sont lues et que vous avez
-   confirmées : prénom, nom, date de naissance, type de document, pays de
+   d'identité, également les informations que vous saisissez à partir de
+   celle-ci : prénom, nom, date de naissance, type de document, pays de
    délivrance et numéro du document. Voir la section 8.
 
 f) Données d'achat
@@ -301,9 +300,9 @@ Les personnes que vous avez bloquées ne peuvent pas voir votre profil.
 
 Vos coordonnées exactes, votre date de naissance, votre adresse e-mail,
 votre numéro de téléphone, votre pièce d'identité et les informations
-d'identité qui y sont lues, votre selfie de vérification et les photos de
-votre album privé (sauf si vous accordez à quelqu'un l'accès à votre album
-privé).
+d'identité que vous avez fournies à partir de celle-ci, votre selfie de
+vérification et les photos de votre album privé (sauf si vous accordez à
+quelqu'un l'accès à votre album privé).
 
 4.3 Contenus que vous partagez
 
@@ -358,9 +357,9 @@ Finalité                             | Données utilisées          | Base juri
    translittération                  |                            | 6(1)(a)/(b) ; LGPD 7 I/V). Voir la
                                      |                            | section 9.
 6. Vérification de l'âge et de       | Image de la pièce ; les    | Consentement explicite (RGPD
-   l'identité au moyen d'une pièce   | informations qui y sont    | 9(2)(a) ; LGPD 11 I). Voir section 8.
-   d'identité                        | lues et que vous avez      |
-                                     | confirmées                 |
+   l'identité au moyen d'une pièce   | informations que vous y    | 9(2)(a) ; LGPD 11 I). Voir section 8.
+   d'identité                        | saisissez ; la date de     |
+                                     | naissance qui y est lue    |
 7. Vérification par selfie           | Selfie, photos de profil   | Consentement explicite (RGPD
                                      |                            | 9(2)(a) ; LGPD 11 I)
 8. Achats, pièces, abonnements,      | Données d'achat, registre  | Contrat (RGPD 6(1)(b) ; LGPD 7 V)
@@ -455,8 +454,8 @@ votre consentement :
   mais le reste de GreenGo continue de fonctionner ;
 - à la vérification, vous perdez uniquement les fonctionnalités qui exigent une
   vérification (voir la section 8). Les informations d'identité que vous avez
-  déjà confirmées sont conservées pour la finalité de la ligne 25 et pendant
-  la durée indiquée au point 8.2 g.
+  déjà fournies sont conservées pour la finalité de la ligne 25 et pendant
+  la durée indiquée au point 8.2 h.
 
 ================================================================================
 6. COMPTE, PROFIL ET DÉCOUVERTE
@@ -581,25 +580,31 @@ réserver des expériences. Nous ne pouvons demander une pièce d'identité que 
 a) Avant le téléversement, nous vous expliquons ce qui va se passer et vous
    demandons votre consentement explicite.
 
-b) L'application lit le texte figurant sur le document sur votre appareil et
-   renseigne votre prénom, votre nom, votre date de naissance, le type de
-   document, le pays de délivrance et le numéro du document. Vous vérifiez
-   ces informations et les confirmez.
+b) Après avoir téléversé l'image, vous saisissez votre prénom, votre nom,
+   votre date de naissance, le type de document, le pays de délivrance et le
+   numéro du document.
 
-c) Un membre formé de notre personnel contrôle les informations que vous avez
-   confirmées par rapport à l'image du document.
+c) Pour la vérification de l'âge, l'image est envoyée à Google Cloud Vision,
+   qui lit le texte figurant sur le document afin que nous puissions trouver
+   la date de naissance. Google agit pour notre compte et ne conserve rien
+   ensuite.
 
-d) L'image est SUPPRIMÉE dès que l'examen est terminé. Si elle est toujours
+d) Un membre formé de notre personnel contrôle les informations que vous avez
+   saisies par rapport à l'image du document, et les confirme ou les corrige.
+   Les informations qui ne sont pas examinées dans un délai de 30 jours sont
+   SUPPRIMÉES.
+
+e) L'image est SUPPRIMÉE dès que l'examen est terminé. Si elle est toujours
    en attente d'examen au bout de 7 jours, elle est SUPPRIMÉE quel que soit le
    résultat, et vous pouvez la téléverser de nouveau. Cela s'applique à toute
    image de pièce d'identité, y compris la photo de vous tenant votre pièce
    d'identité que vous pouvez ajouter lors de votre inscription (8.3) et la
    pièce d'identité du propriétaire d'une entreprise (8.4).
 
-e) Après l'examen, nous conservons :
+f) Après l'examen, nous conservons :
    - le fait que votre âge a été vérifié ou non (oui ou non), la méthode, la
      date de la vérification et votre année de naissance ;
-   - les informations que vous avez confirmées (prénom, nom, date de
+   - les informations examinées (prénom, nom, date de
      naissance, type de document, pays de délivrance et numéro du document),
      CHIFFRÉES et conservées à part de votre profil, dans un espace de
      stockage à accès restreint.
@@ -607,7 +612,7 @@ e) Après l'examen, nous conservons :
    Nous ne conservons ni l'image, ni votre nationalité, ni la date
    d'expiration du document.
 
-f) Nous n'utilisons les informations chiffrées que pour vous identifier
+g) Nous n'utilisons les informations chiffrées que pour vous identifier
    lorsque la loi l'exige : pour répondre à une injonction valable d'un
    tribunal, ou à une demande de la police ou d'une autre autorité
    compétente ; pour protéger la vie ou la sécurité d'une personne dans un
@@ -617,7 +622,7 @@ f) Nous n'utilisons les informations chiffrées que pour vous identifier
    autres utilisateurs, et nous ne les utilisons jamais à d'autres fins, par
    exemple le marketing ou le profilage.
 
-g) Nous conservons les informations chiffrées tant que votre compte existe et
+h) Nous conservons les informations chiffrées tant que votre compte existe et
    pendant 6 mois après sa clôture (la durée pendant laquelle le Marco Civil
    da Internet brésilien impose de conserver les journaux d'accès, art. 15).
    Nous ne les conservons plus longtemps que dans le cadre d'une conservation
@@ -659,7 +664,7 @@ professionnels qui proposent des services aux consommateurs.
 Vous pouvez refuser ou retirer votre consentement à la vérification. Vous ne
 pouvez alors pas utiliser les fonctionnalités énumérées au point 8.1 qui
 l'exigent. Votre compte n'est pas supprimé. Les informations d'identité que
-vous avez déjà confirmées sont conservées comme décrit au point 8.2 f et g.
+vous avez déjà fournies sont conservées comme décrit au point 8.2 g et h.
 
 8.6 Avis aux résidents de l'Illinois, du Texas et des autres États américains
 dotés de lois sur la biométrie
@@ -1144,12 +1149,14 @@ Images des pièces d'identité (y        | Supprimées dès la fin de l'examen, 
 compris une photo tenant le document   | au plus tard au bout de 7 jours quel
 et les documents des propriétaires     | que soit le résultat (vous pouvez
 d'entreprise)                          | alors la téléverser de nouveau)
-Informations d'identité que vous avez  | Tant que votre compte existe et 6 mois
-confirmées (prénom, nom, date de       | après sa clôture (durée de
-naissance, type de document, pays de   | conservation des journaux d'accès du
-délivrance et numéro), chiffrées (8.2) | Marco Civil da Internet) ; plus
-                                       | longtemps uniquement en cas de
-                                       | conservation à des fins juridiques
+Informations d'identité issues du      | Non examinées : supprimées au bout de
+document (prénom, nom, date de         | 30 jours. Examinées : tant que votre
+naissance, type de document, pays de   | compte existe et 6 mois après sa
+délivrance et numéro), chiffrées (8.2) | clôture (durée de conservation des
+                                       | journaux d'accès du Marco Civil da
+                                       | Internet) ; plus longtemps uniquement
+                                       | en cas de conservation à des fins
+                                       | juridiques
 Résultat de la vérification de l'âge   | Jusqu'à la suppression de votre compte
 (oui/non, méthode, date, année de      |
 naissance)                             |
@@ -1269,7 +1276,7 @@ h) Nous conservons un bref justificatif de suppression (la date et le nombre
 i) Votre numéro de téléphone est supprimé avec votre compte. Les informations
    d'identité chiffrées issues d'une vérification au moyen d'une pièce
    d'identité sont conservées pendant 6 mois après la clôture du compte, puis
-   supprimées (point 8.2 g). Si le compte a été banni, nous conservons les
+   supprimées (point 8.2 h). Si le compte a été banni, nous conservons les
    hachages à clé de son adresse e-mail et de son numéro de téléphone
    (section 14).
 
@@ -1678,13 +1685,16 @@ Vérification du téléphone et informations d'identité :
   5, 12.2, 14, 15.2 et 22.1).
 - Points 3.1 d et 4.3 : un numéro de contact professionnel facultatif,
   affiché sur la page professionnelle uniquement si l'entreprise l'active.
-- Points 8.2, 8.3 et 8.4 : la pièce d'identité est lue sur votre appareil et
-  contrôlée par un vérificateur ; toute image de pièce d'identité (y compris
+- Points 8.2, 8.3 et 8.4 : vous saisissez les informations de la pièce
+  d'identité et un vérificateur les contrôle par rapport à l'image (les
+  informations non examinées dans un délai de 30 jours sont supprimées ;
+  pour les contrôles d'âge, Google Cloud Vision lit la date de naissance) ;
+  toute image de pièce d'identité (y compris
   une photo tenant le document et la pièce d'identité du propriétaire d'une
   entreprise) est supprimée après l'examen, ou au bout de 7 jours si elle est
   toujours en attente (vous pouvez la téléverser de nouveau) ; la pièce
   d'identité du propriétaire d'une entreprise est facultative ; les informations
-  que vous confirmez sont conservées sous forme chiffrée dans un espace de
+  examinées sont conservées sous forme chiffrée dans un espace de
   stockage à accès restreint, uniquement pour vous identifier lorsque la loi
   l'exige, jusqu'à 6 mois après la clôture du compte (également
   points 2, 3.1, 4.2, 4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 et 22.1).

@@ -125,14 +125,15 @@ a) La vérification au moyen d'une pièce d'identité est facultative, y compris
 b) Certains badges exigent que vous vérifiiez votre profil au moyen d'un
    selfie.
 c) Lorsque vous vous faites vérifier au moyen d'une pièce d'identité,
-   l'application lit le document sur votre appareil et renseigne votre
-   prénom, votre nom, votre date de naissance, le type de document, le pays
-   de délivrance et le numéro du document. Vous confirmez ces informations, et
-   un vérificateur de GreenGo les contrôle par rapport à la photo du document.
+   vous en téléversez une photo et saisissez votre prénom, votre nom, votre
+   date de naissance, le type de document, le pays de délivrance et le
+   numéro du document. Un vérificateur de GreenGo contrôle ces informations
+   par rapport à la photo et les confirme ou les corrige. Si elles ne sont
+   pas examinées dans un délai de 30 jours, nous les supprimons.
    Nous supprimons la photo après l'examen, ou au bout de 7 jours si elle est
    toujours en attente d'examen (vous pouvez alors la téléverser de nouveau).
    Cela s'applique également à une photo de vous tenant votre pièce
-   d'identité. Nous conservons les informations que vous avez confirmées sous
+   d'identité. Après l'examen, nous conservons les informations sous
    forme chiffrée, dans un espace de stockage distinct à accès restreint,
    uniquement pour vous identifier lorsque la loi l'exige (section 18.8). Nous
    ne les montrons jamais aux autres utilisateurs et ne les utilisons à
@@ -1445,11 +1446,12 @@ Vérification du téléphone et informations d'identité :
 - Sections 4.4, 12.3, 12.5, 13.4 et 18.8 : la vérification au moyen d'une pièce
   d'identité est facultative partout, y compris pour publier dans une
   Communauté, pour publier, organiser ou réserver des Expériences et pour le
-  titulaire d'un Compte professionnel ; le document est lu sur votre appareil et
-  contrôlé par un vérificateur, la photo est supprimée après l'examen ou au bout
-  de 7 jours si elle est toujours en attente, et les informations que vous
-  confirmez sont conservées sous forme chiffrée uniquement pour vous identifier
-  lorsque la loi l'exige.
+  titulaire d'un Compte professionnel ; vous saisissez les informations du
+  document et un vérificateur les contrôle par rapport à la photo (les
+  informations non examinées dans un délai de 30 jours sont supprimées), la
+  photo est supprimée après l'examen ou au bout de 7 jours si elle est
+  toujours en attente, et les informations examinées sont conservées sous
+  forme chiffrée uniquement pour vous identifier lorsque la loi l'exige.
 Précisions pour correspondre au fonctionnement de l'application :
 - Sections 5.1 g, 14.1, 14.2 et 14.4 : les assistants IA du chat sont la
   traduction, la lecture à voix haute et la translittération (les réponses

@@ -102,13 +102,14 @@ a) Verifying with an identity document is optional, also for publishing in
    the law requires stronger age checks where you live, we may ask you to
    verify your age with an identity document.
 b) Some badges require you to verify your profile with a selfie.
-c) When you verify with an identity document, the app reads the document on
-   your device and fills in your first name, surname, date of birth, document
-   type, issuing country and document number. You confirm these details, and
-   a GreenGo reviewer checks them against the photo of the document. We
+c) When you verify with an identity document, you upload a photo of it and
+   type in your first name, surname, date of birth, document type, issuing
+   country and document number. A GreenGo reviewer checks these details
+   against the photo and confirms or corrects them. If they are not reviewed
+   within 30 days, we delete them. We
    delete the photo after the review, or after 7 days if it is still waiting
    for review (you can then upload it again). This also applies to a photo
-   of you holding your document. We keep the details you confirmed
+   of you holding your document. After the review, we keep the details
    encrypted, in a separate restricted store, only to identify you when the
    law requires it (section 18.8). We never show them to other users and do
    not use them for anything else. Section 8 of the Privacy Policy explains
@@ -1266,10 +1267,11 @@ Phone verification and identity details:
 - Sections 4.4, 12.3, 12.5, 13.4 and 18.8: identity-document verification
   is optional everywhere, also for publishing in a Community, for
   publishing, hosting or booking Experiences and for the owner of a
-  Business account; the document is read on your device and checked by a
-  reviewer, the photo is deleted after the review or after 7 days if still
-  pending, and the details you confirm are kept encrypted only to identify
-  you when the law requires it.
+  Business account; you type in the details from the document and a
+  reviewer checks them against the photo (details not reviewed within 30
+  days are deleted), the photo is deleted after the review or after 7 days
+  if still pending, and the reviewed details are kept encrypted only to
+  identify you when the law requires it.
 Clarifications to match how the app works:
 - Sections 5.1 g, 14.1, 14.2 and 14.4: the AI helpers in chat are
   translation, read-aloud and transliteration (smart replies and word
