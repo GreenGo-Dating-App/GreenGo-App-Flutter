@@ -9,11 +9,16 @@
  *   - approved, and the profile still says approved → isAgeVerified = true;
  *   - rejected / resubmission requested → isAgeVerified = false, unless the
  *     age-verification document itself is verified (that approval stands).
+ * Every final decision (approve / reject / resubmission requested) then
+ * DELETES the reviewed photo and clears its references (Privacy Policy 8.3,
+ * verificationPhotoRetention.ts); a photo still awaiting review is kept.
  */
 import * as admin from 'firebase-admin';
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import '../shared/firebaseAdmin';
 import { ADMIN_ACTIONS, registrationIdApproved } from '../shared/registrationIdReview';
+import { deleteRegistrationPhotoOnDecision, toMillis } from '../safety/verificationPhotoRetention';
+import { FINAL_REGISTRATION_ACTIONS } from '../safety/verificationPhotoRetentionLogic';
 
 const OPTS = { memory: '512MiB' as const, timeoutSeconds: 60 };
 
@@ -55,5 +60,11 @@ export const onAdminVerificationAction = onDocumentCreated(
         idVerifiedAt: admin.firestore.FieldValue.serverTimestamp(),
       });
     });
+    if (FINAL_REGISTRATION_ACTIONS[type]) {
+      await deleteRegistrationPhotoOnDecision(uid, {
+        atMs: toMillis(a?.timestamp),
+        by: typeof a?.performedBy === 'string' ? a.performedBy : null,
+      });
+    }
   }
 );

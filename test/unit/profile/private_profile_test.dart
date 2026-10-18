@@ -232,6 +232,27 @@ void main() {
       expect(privateProfileWrite(exactJson, current: current), isEmpty);
     });
 
+    test('a reviewed (deleted) verification photo path is never written back',
+        () {
+      // Privacy Policy 8.3: the server deleted the photo, cleared the path
+      // and left only the review record; a stale profile save must not
+      // restore the reference.
+      final current = {
+        'location': {'latitude': 41.1579, 'longitude': -8.6291},
+        kProfileGeohashField: geohashFor(41.1579, -8.6291),
+        'dateOfBirth': Timestamp.fromDate(DateTime(1995, 2, 3)),
+        'privatePhotoUrls': ['p1'],
+        kVerificationReviewField: {'verified': true, 'status': 'approved'},
+      };
+      final w = privateProfileWrite(exactJson, current: current);
+      expect(w.containsKey(kVerificationPhotoPathField), isFalse);
+      // without a review record it is still written (onboarding)
+      final fresh = Map<String, dynamic>.from(current)
+        ..remove(kVerificationReviewField);
+      expect(privateProfileWrite(exactJson, current: fresh)[
+          kVerificationPhotoPathField], 'verifications/me/1.jpg');
+    });
+
     test('approximate coordinates are never stored as the exact location',
         () {
       final json = {

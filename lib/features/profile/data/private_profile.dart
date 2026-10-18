@@ -45,6 +45,12 @@ const String kPreciseLocationField = 'preciseLocation';
 const String kPreciseViewMarker = '__preciseLocation';
 const String kVerificationPhotoPathField = 'verificationPhotoPath';
 
+/// Server-written minimal record of a decided registration-photo review
+/// (`{verified, status, reviewedAt, reviewedBy, method, imageDeletedAt}`).
+/// Once it exists the reviewed photo has been DELETED (Privacy Policy 8.3),
+/// so a full-profile save must never write a stale photo path back.
+const String kVerificationReviewField = 'verificationReview';
+
 /// In-memory marker on a raw profile map that already went through
 /// [ownProfileView]. Never written to Firestore.
 const String kOwnViewMarker = '__ownView';
@@ -369,9 +375,13 @@ Map<String, dynamic> privateProfileWrite(
     out['privatePhotoUrls'] = List<String>.from(photos);
   }
   final path = json[kVerificationPhotoPathField];
+  // After a review the server deletes the photo and clears the path; an
+  // in-memory copy of the profile must not resurrect it (a new photo is
+  // sent only by the reverification flow, which writes the path directly).
   if (path is String &&
       path.isNotEmpty &&
-      path != current?[kVerificationPhotoPathField]) {
+      path != current?[kVerificationPhotoPathField] &&
+      current?[kVerificationReviewField] == null) {
     out[kVerificationPhotoPathField] = path;
   }
   if (out.isNotEmpty) out['updatedAt'] = FieldValue.serverTimestamp();

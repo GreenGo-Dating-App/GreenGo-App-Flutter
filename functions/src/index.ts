@@ -703,6 +703,13 @@ export {
 // Registration ID photo approved by an admin -> "Verified" badge (isAgeVerified).
 export { onAdminVerificationAction } from './admin/registrationIdVerified';
 
+// Privacy Policy 8.3 / 8.4: reviewed registration ID photos and business owner
+// ID documents are deleted after the decision (only the result is kept).
+export {
+  purgeReviewedVerificationPhotos,
+  onBusinessVerificationDecided,
+} from './safety/verificationPhotoRetention';
+
 // Admin Panel Functions (2FA, password mgmt, user mgmt, AI support)
 export {
   send2FACode,
