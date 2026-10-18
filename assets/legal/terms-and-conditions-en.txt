@@ -186,27 +186,22 @@ When you cancel, your Membership stays active until the end of the period you
 paid for, and is not renewed. Deleting the app or your account does not cancel
 a store subscription: cancel it in the store.
 
-7.4 Free trials and introductory offers
-a) Web
-   - The Base Membership may come with a 7-day free trial on the web, once
-     per account.
-   - Unless you cancel before the trial ends, the trial turns into a paid
-     Base Membership, and the first payment is taken when the trial ends.
-   - Before the trial ends, Stripe, our payment provider, sends you a reminder
-     email.
-   - 2026 launch price: for Memberships bought on the web until 31 December
-     2026 (Brazil time), the first period (the first year of a yearly plan,
-     or the first 3 months of a monthly plan) is 50% off the regular price,
-     as shown at checkout. It applies once per account for Base, and once
-     for Silver, Gold and Platinum. Renewals are at the regular price.
-b) App stores (Apple App Store and Google Play)
-   - Memberships bought in the iOS or Android app have no free trial.
-   - 2026 launch offer: new subscribers who subscribe until 31 December 2026
-     get 50% off the first period (the first year of a yearly plan, or the
-     first 3 months of a monthly plan), as the store shows it before you
-     buy. Renewals are at the regular price.
-   - Apple or Google decide who is eligible for the offer, and apply it under
-     their own rules.
+7.4 Introductory offers
+a) There is no free trial on any platform: not on the web, not on Google Play
+   and not on the App Store. A free trial of Base Membership started on the
+   web before 17 October 2026 runs until it ends. Unless you cancel before it
+   ends, it turns into a paid Base Membership, and the first payment is taken
+   when it ends. Before it ends, Stripe, our payment provider, sends you a
+   reminder email.
+b) The only introductory offer is the 2026 launch price: new subscribers who
+   subscribe until 31 December 2026 (Brazil time) get 50% off the first
+   period (the first year of a yearly plan, or the first 3 months of a
+   monthly plan). Renewals are at the regular price.
+   - On the web, the launch price is shown at checkout. It applies once per
+     account for Base, and once for Silver, Gold and Platinum.
+   - In the iOS or Android app, the store shows the offer before you buy.
+     Apple or Google decide who is eligible for it, and apply it under their
+     own rules.
 
 7.5 Price changes
 - We will tell you about a price increase at least 30 days before it applies
@@ -222,7 +217,7 @@ a) If you upgrade on the web, you get a fixed upgrade discount on the price
    - Silver to Platinum: 15%;
    - Gold to Platinum: 10%.
    The upgrade takes effect immediately. If the 2026 launch price (section
-   7.4 a) applies to the new plan, it replaces the upgrade discount.
+   7.4 b) applies to the new plan, it replaces the upgrade discount.
 b) The unused time of your old plan is credited to your account balance after
    the first payment for the new plan.
 c) You cannot downgrade on the web during a paid period. To move to a lower
@@ -1221,9 +1216,11 @@ Clarifications to match how the app works:
   translation, read-aloud and transliteration (smart replies and word
   breakdown are not offered); public content is translated with Google's
   translation service; daily translation limits per plan.
-- Sections 7.1, 7.4 and 7.6: no free trials in the app stores; the 2026
-  launch offer (50% off the first period) on the web and in the app stores;
-  Base is included in Silver, Gold and Platinum in the iOS app.
+- Sections 7.1, 7.4 and 7.6: no free trial on any platform (a web trial
+  started before 17 October 2026 runs until it ends); the only introductory
+  offer is the 2026 launch price (50% off the first period), on the web and
+  in the app stores; Base is included in Silver, Gold and Platinum in the
+  iOS app.
 - Section 7.7: pre-sale plans.
 - Section 9.1 b: Pix only for one-time payments; Memberships by card.
 - Section 11.2 c: ticket orders opened before 14 October 2026 with the

@@ -205,31 +205,24 @@ hai pagato, e non viene rinnovato. Disinstallare l'app o eliminare il tuo
 account non annulla un abbonamento acquistato tramite uno store: annullalo
 nello store.
 
-7.4 Prove gratuite e offerte introduttive
-a) Web
-   - L'Abbonamento Base può includere una prova gratuita di 7 giorni sul web,
-     una sola volta per account.
-   - A meno che tu non annulli prima della fine della prova, la prova si
-     trasforma in un Abbonamento Base a pagamento, e il primo pagamento viene
-     addebitato al termine della prova.
-   - Prima della fine della prova, Stripe, il nostro fornitore di servizi di
-     pagamento, ti invia un'e-mail di promemoria.
-   - Prezzo di lancio 2026: per gli Abbonamenti acquistati sul web fino al
-     31 dicembre 2026 (ora del Brasile), il primo periodo (il primo anno di un
-     piano annuale, o i primi 3 mesi di un piano mensile) è scontato del 50%
-     rispetto al prezzo normale, come indicato al checkout. Si applica una
-     sola volta per account per Base, e una sola volta per Silver, Gold e
-     Platinum. I rinnovi avvengono al prezzo normale.
-b) Store delle app (Apple App Store e Google Play)
-   - Gli Abbonamenti acquistati nell'app iOS o Android non hanno una prova
-     gratuita.
-   - Offerta di lancio 2026: i nuovi abbonati che si abbonano entro il
-     31 dicembre 2026 ottengono il 50% di sconto sul primo periodo (il primo
-     anno di un piano annuale, o i primi 3 mesi di un piano mensile), come lo
-     store lo mostra prima dell'acquisto. I rinnovi avvengono al prezzo
-     normale.
-   - Apple o Google stabiliscono chi ha diritto all'offerta e la applicano
-     secondo le loro regole.
+7.4 Offerte introduttive
+a) Non esiste una prova gratuita su nessuna piattaforma: né sul web, né su
+   Google Play, né sull'App Store. Una prova gratuita dell'Abbonamento Base
+   iniziata sul web prima del 17 ottobre 2026 dura fino alla sua scadenza. A
+   meno che tu non annulli prima della scadenza, si trasforma in un
+   Abbonamento Base a pagamento, e il primo pagamento viene addebitato alla
+   scadenza. Prima della scadenza, Stripe, il nostro fornitore di servizi di
+   pagamento, ti invia un'e-mail di promemoria.
+b) L'unica offerta introduttiva è il prezzo di lancio 2026: i nuovi abbonati
+   che si abbonano entro il 31 dicembre 2026 (ora del Brasile) ottengono il
+   50% di sconto sul primo periodo (il primo anno di un piano annuale, o i
+   primi 3 mesi di un piano mensile). I rinnovi avvengono al prezzo normale.
+   - Sul web, il prezzo di lancio è indicato al checkout. Si applica una sola
+     volta per account per Base, e una sola volta per Silver, Gold e
+     Platinum.
+   - Nell'app iOS o Android, lo store mostra l'offerta prima dell'acquisto.
+     Apple o Google stabiliscono chi ne ha diritto e la applicano secondo le
+     loro regole.
 
 7.5 Variazioni di prezzo
 - Ti informeremo di un aumento di prezzo almeno 30 giorni prima che si applichi
@@ -245,7 +238,7 @@ a) Se effettui un upgrade sul web, ottieni uno sconto fisso di upgrade sul
    - da Silver a Platinum: 15%;
    - da Gold a Platinum: 10%.
    L'upgrade ha effetto immediato. Se al nuovo piano si applica il prezzo di
-   lancio 2026 (sezione 7.4 a), questo sostituisce lo sconto di upgrade.
+   lancio 2026 (sezione 7.4 b), questo sostituisce lo sconto di upgrade.
 b) Il periodo non utilizzato del tuo vecchio piano viene accreditato sul saldo
    del tuo account dopo il primo pagamento del nuovo piano.
 c) Sul web non puoi effettuare un downgrade durante un periodo pagato. Per
@@ -1323,9 +1316,11 @@ Chiarimenti per corrispondere al funzionamento dell'app:
   analisi delle parole non sono offerte); i contenuti pubblici sono tradotti
   con il servizio di traduzione di Google; limiti giornalieri di traduzione
   per piano.
-- Sezioni 7.1, 7.4 e 7.6: nessuna prova gratuita negli store delle app;
-  l'offerta di lancio 2026 (50% di sconto sul primo periodo) sul web e negli
-  store delle app; Base è incluso in Silver, Gold e Platinum nell'app iOS.
+- Sezioni 7.1, 7.4 e 7.6: nessuna prova gratuita su nessuna piattaforma
+  (una prova sul web iniziata prima del 17 ottobre 2026 dura fino alla sua
+  scadenza); l'unica offerta introduttiva è il prezzo di lancio 2026 (50% di
+  sconto sul primo periodo), sul web e negli store delle app; Base è incluso
+  in Silver, Gold e Platinum nell'app iOS.
 - Sezione 7.7: piani di prevendita.
 - Sezione 9.1 b: Pix solo per i pagamenti una tantum; Abbonamenti con carta.
 - Sezione 11.2 c: ordini di biglietti aperti prima del 14 ottobre 2026 con il

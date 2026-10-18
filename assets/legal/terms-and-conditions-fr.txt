@@ -226,31 +226,24 @@ période payée et n'est pas renouvelé. Supprimer l'application ou votre compte
 ne résilie pas un abonnement souscrit via une boutique : résiliez-le dans la
 boutique.
 
-7.4 Essais gratuits et offres de lancement
-a) Web
-   - L'Abonnement Base peut être assorti d'un essai gratuit de 7 jours sur le
-     web, une seule fois par compte.
-   - Sauf si vous résiliez avant la fin de l'essai, celui-ci se transforme en
-     Abonnement Base payant, et le premier paiement est prélevé à la fin de
-     l'essai.
-   - Avant la fin de l'essai, Stripe, notre prestataire de paiement, vous
-     envoie un e-mail de rappel.
-   - Prix de lancement 2026 : pour les Abonnements achetés sur le web jusqu'au
-     31 décembre 2026 (heure du Brésil), la première période (la première
-     année d'une formule annuelle, ou les 3 premiers mois d'une formule
-     mensuelle) bénéficie de 50 % de réduction sur le prix normal, comme
-     indiqué lors du paiement. Il s'applique une fois par compte pour Base,
-     et une fois pour Silver, Gold et Platinum. Les renouvellements se font au
-     prix normal.
-b) Boutiques d'applications (Apple App Store et Google Play)
-   - Les Abonnements achetés dans l'application iOS ou Android ne comportent
-     pas d'essai gratuit.
-   - Offre de lancement 2026 : les nouveaux abonnés qui s'abonnent jusqu'au
-     31 décembre 2026 bénéficient de 50 % de réduction sur la première
-     période (la première année d'une formule annuelle, ou les 3 premiers
-     mois d'une formule mensuelle), telle que la boutique l'affiche avant
-     l'achat. Les renouvellements se font au prix normal.
-   - Apple ou Google décident qui peut bénéficier de l'offre et l'appliquent
+7.4 Offres de lancement
+a) Il n'y a d'essai gratuit sur aucune plateforme : ni sur le web, ni sur
+   Google Play, ni sur l'App Store. Un essai gratuit de l'Abonnement Base
+   commencé sur le web avant le 17 octobre 2026 se poursuit jusqu'à son
+   terme. Sauf si vous résiliez avant son terme, il se transforme en
+   Abonnement Base payant, et le premier paiement est prélevé à son terme.
+   Avant son terme, Stripe, notre prestataire de paiement, vous envoie un
+   e-mail de rappel.
+b) La seule offre de lancement est le prix de lancement 2026 : les nouveaux
+   abonnés qui s'abonnent jusqu'au 31 décembre 2026 (heure du Brésil)
+   bénéficient de 50 % de réduction sur la première période (la première
+   année d'une formule annuelle, ou les 3 premiers mois d'une formule
+   mensuelle). Les renouvellements se font au prix normal.
+   - Sur le web, le prix de lancement est indiqué lors du paiement. Il
+     s'applique une fois par compte pour Base, et une fois pour Silver, Gold
+     et Platinum.
+   - Dans l'application iOS ou Android, la boutique affiche l'offre avant
+     l'achat. Apple ou Google décident qui peut en bénéficier et l'appliquent
      selon leurs propres règles.
 
 7.5 Modifications de prix
@@ -267,7 +260,7 @@ a) Si vous passez à une formule supérieure sur le web, vous bénéficiez d'une
    - de Silver à Platinum : 15 % ;
    - de Gold à Platinum : 10 %.
    Le changement prend effet immédiatement. Si le prix de lancement 2026
-   (section 7.4 a) s'applique à la nouvelle formule, il remplace la réduction
+   (section 7.4 b) s'applique à la nouvelle formule, il remplace la réduction
    de changement de formule.
 b) La durée non utilisée de votre ancienne formule est créditée sur le solde
    de votre compte après le premier paiement de la nouvelle formule.
@@ -1397,10 +1390,12 @@ Précisions pour correspondre au fonctionnement de l'application :
   intelligentes et la décomposition des mots ne sont pas proposées) ; les
   contenus publics sont traduits avec le service de traduction de Google ;
   limites quotidiennes de traduction selon la formule.
-- Sections 7.1, 7.4 et 7.6 : pas d'essai gratuit dans les boutiques
-  d'applications ; offre de lancement 2026 (50 % de réduction sur la première
-  période) sur le web et dans les boutiques d'applications ; Base est inclus
-  dans Silver, Gold et Platinum dans l'application iOS.
+- Sections 7.1, 7.4 et 7.6 : pas d'essai gratuit sur aucune plateforme (un
+  essai commencé sur le web avant le 17 octobre 2026 se poursuit jusqu'à son
+  terme) ; la seule offre de lancement est le prix de lancement 2026 (50 % de
+  réduction sur la première période), sur le web et dans les boutiques
+  d'applications ; Base est inclus dans Silver, Gold et Platinum dans
+  l'application iOS.
 - Section 7.7 : formules de prévente.
 - Section 9.1 b : Pix uniquement pour les paiements ponctuels ; Abonnements
   par carte.

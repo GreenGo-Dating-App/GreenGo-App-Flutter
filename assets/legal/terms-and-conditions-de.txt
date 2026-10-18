@@ -211,31 +211,24 @@ Wenn du kündigst, bleibt deine Mitgliedschaft bis zum Ende des bezahlten
 Zeitraums aktiv und wird nicht verlängert. Das Löschen der App oder deines
 Kontos kündigt kein Store-Abo: Kündige es im Store.
 
-7.4 Kostenlose Testzeiträume und Einführungsangebote
-a) Web
-   - Zur Base-Mitgliedschaft kann im Web ein 7-tägiger kostenloser
-     Testzeitraum gehören, einmal pro Konto.
-   - Wenn du nicht vor Ende des Testzeitraums kündigst, wird er zu einer
-     kostenpflichtigen Base-Mitgliedschaft, und die erste Zahlung wird am
-     Ende des Testzeitraums eingezogen.
-   - Vor Ende des Testzeitraums sendet dir Stripe, unser Zahlungsdienstleister,
-     eine Erinnerung per E-Mail.
-   - Einführungspreis 2026: Für Mitgliedschaften, die bis zum 31. Dezember
-     2026 (Uhrzeit Brasilien) im Web gekauft werden, kostet der erste
-     Zeitraum (das erste Jahr eines Jahrestarifs oder die ersten 3 Monate
-     eines Monatstarifs) 50 % weniger als der reguläre Preis, wie beim
-     Bezahlvorgang angezeigt. Er gilt einmal pro Konto für Base und einmal für
-     Silver, Gold und Platinum. Verlängerungen erfolgen zum regulären Preis.
-b) App-Stores (Apple App Store und Google Play)
-   - In der iOS- oder Android-App gekaufte Mitgliedschaften haben keinen
-     kostenlosen Testzeitraum.
-   - Einführungsangebot 2026: Neue Abonnenten, die bis zum 31. Dezember 2026
-     abschließen, erhalten 50 % Rabatt auf den ersten Zeitraum (das erste
-     Jahr eines Jahrestarifs oder die ersten 3 Monate eines Monatstarifs),
-     so wie der Store es vor dem Kauf anzeigt. Verlängerungen erfolgen zum
-     regulären Preis.
-   - Apple oder Google entscheiden, wer für das Angebot berechtigt ist, und
-     wenden es nach ihren eigenen Regeln an.
+7.4 Einführungsangebote
+a) Es gibt auf keiner Plattform einen kostenlosen Testzeitraum: weder im Web
+   noch bei Google Play oder im App Store. Ein kostenloser Testzeitraum der
+   Base-Mitgliedschaft, der vor dem 17. Oktober 2026 im Web begonnen hat,
+   läuft bis zu seinem Ende. Wenn du nicht vor seinem Ende kündigst, wird er
+   zu einer kostenpflichtigen Base-Mitgliedschaft, und die erste Zahlung wird
+   an seinem Ende eingezogen. Vor seinem Ende sendet dir Stripe, unser
+   Zahlungsdienstleister, eine Erinnerung per E-Mail.
+b) Das einzige Einführungsangebot ist der Einführungspreis 2026: Neue
+   Abonnenten, die bis zum 31. Dezember 2026 (Uhrzeit Brasilien) abschließen,
+   erhalten 50 % Rabatt auf den ersten Zeitraum (das erste Jahr eines
+   Jahrestarifs oder die ersten 3 Monate eines Monatstarifs). Verlängerungen
+   erfolgen zum regulären Preis.
+   - Im Web wird der Einführungspreis beim Bezahlvorgang angezeigt. Er gilt
+     einmal pro Konto für Base und einmal für Silver, Gold und Platinum.
+   - In der iOS- oder Android-App zeigt der Store das Angebot vor dem Kauf
+     an. Apple oder Google entscheiden, wer dafür berechtigt ist, und wenden
+     es nach ihren eigenen Regeln an.
 
 7.5 Preisänderungen
 - Über eine Preiserhöhung informieren wir dich mindestens 30 Tage, bevor sie
@@ -251,7 +244,7 @@ a) Wenn du im Web ein Upgrade machst, erhältst du einen festen Upgrade-Rabatt
    - Silver auf Platinum: 15 %;
    - Gold auf Platinum: 10 %.
    Das Upgrade wird sofort wirksam. Gilt für den neuen Tarif der
-   Einführungspreis 2026 (Abschnitt 7.4 a), ersetzt er den Upgrade-Rabatt.
+   Einführungspreis 2026 (Abschnitt 7.4 b), ersetzt er den Upgrade-Rabatt.
 b) Die ungenutzte Zeit deines alten Tarifs wird nach der ersten Zahlung für
    den neuen Tarif deinem Kontoguthaben gutgeschrieben.
 c) Ein Downgrade ist im Web während eines bezahlten Zeitraums nicht möglich.
@@ -1361,10 +1354,12 @@ Klarstellungen, damit die Bedingungen der Funktionsweise der App entsprechen:
   Antwortvorschläge und Wortanalyse werden nicht angeboten); öffentliche
   Inhalte werden mit dem Übersetzungsdienst von Google übersetzt; tägliche
   Übersetzungslimits je Tarif.
-- Abschnitte 7.1, 7.4 und 7.6: keine kostenlosen Testzeiträume in den
-  App-Stores; das Einführungsangebot 2026 (50 % Rabatt auf den ersten
-  Zeitraum) im Web und in den App-Stores; Base ist in der iOS-App in Silver,
-  Gold und Platinum enthalten.
+- Abschnitte 7.1, 7.4 und 7.6: kein kostenloser Testzeitraum auf irgendeiner
+  Plattform (ein vor dem 17. Oktober 2026 im Web begonnener Testzeitraum läuft
+  bis zu seinem Ende); das einzige Einführungsangebot ist der
+  Einführungspreis 2026 (50 % Rabatt auf den ersten Zeitraum), im Web und in
+  den App-Stores; Base ist in der iOS-App in Silver, Gold und Platinum
+  enthalten.
 - Abschnitt 7.7: Vorverkaufstarife.
 - Abschnitt 9.1 b: Pix nur für einmalige Zahlungen; Mitgliedschaften per
   Karte.

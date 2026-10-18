@@ -202,31 +202,24 @@ Quando você cancela, a sua Assinatura permanece ativa até o fim do período
 pago e não é renovada. Excluir o aplicativo ou a sua conta não cancela uma
 assinatura feita pela loja: cancele-a na loja.
 
-7.4 Períodos de teste gratuitos e ofertas introdutórias
-a) Web
-   - A Assinatura Base pode incluir um período de teste gratuito de 7 dias na
-     web, uma vez por conta.
-   - A menos que você cancele antes do fim do período de teste, ele se
-     converte em uma Assinatura Base paga, e o primeiro pagamento é cobrado
-     quando o período de teste termina.
-   - Antes do fim do período de teste, a Stripe, o nosso provedor de
-     pagamentos, envia a você um lembrete por e-mail.
-   - Preço de lançamento 2026: nas Assinaturas compradas na web até 31 de
-     dezembro de 2026 (horário de Brasília), o primeiro período (o primeiro
-     ano de um plano anual, ou os 3 primeiros meses de um plano mensal) tem
-     50% de desconto sobre o preço normal, conforme mostrado no checkout. Ele
-     vale uma vez por conta para a Base, e uma vez para Silver, Gold e
-     Platinum. As renovações são cobradas pelo preço normal.
-b) Lojas de aplicativos (Apple App Store e Google Play)
-   - As Assinaturas compradas no aplicativo iOS ou Android não têm período
-     de teste gratuito.
-   - Oferta de lançamento 2026: novos assinantes que assinarem até 31 de
-     dezembro de 2026 recebem 50% de desconto no primeiro período (o primeiro
-     ano de um plano anual, ou os 3 primeiros meses de um plano mensal),
-     conforme a loja mostra antes da compra. As renovações são cobradas pelo
-     preço normal.
-   - A Apple ou o Google decidem quem pode receber a oferta e a aplicam
-     segundo as regras deles.
+7.4 Ofertas introdutórias
+a) Não existe período de teste gratuito em nenhuma plataforma: nem na web,
+   nem no Google Play, nem na App Store. Um período de teste gratuito da
+   Assinatura Base iniciado na web antes de 17 de outubro de 2026 continua
+   até terminar. A menos que você cancele antes do fim, ele se converte em
+   uma Assinatura Base paga, e o primeiro pagamento é cobrado quando ele
+   termina. Antes do fim, a Stripe, o nosso provedor de pagamentos, envia a
+   você um lembrete por e-mail.
+b) A única oferta introdutória é o preço de lançamento 2026: novos
+   assinantes que assinarem até 31 de dezembro de 2026 (horário de Brasília)
+   recebem 50% de desconto no primeiro período (o primeiro ano de um plano
+   anual, ou os 3 primeiros meses de um plano mensal). As renovações são
+   cobradas pelo preço normal.
+   - Na web, o preço de lançamento é mostrado no checkout. Ele vale uma vez
+     por conta para a Base, e uma vez para Silver, Gold e Platinum.
+   - No aplicativo iOS ou Android, a loja mostra a oferta antes da compra. A
+     Apple ou o Google decidem quem pode receber a oferta e a aplicam segundo
+     as regras deles.
 
 7.5 Alterações de preço
 - Avisaremos você sobre um aumento de preço pelo menos 30 dias antes de ele se
@@ -242,7 +235,7 @@ a) Se você fizer um upgrade na web, recebe um desconto fixo de upgrade sobre o
    - de Silver para Platinum: 15%;
    - de Gold para Platinum: 10%.
    O upgrade entra em vigor imediatamente. Se o preço de lançamento 2026
-   (item 7.4 a) se aplicar ao novo plano, ele substitui o desconto de
+   (item 7.4 b) se aplicar ao novo plano, ele substitui o desconto de
    upgrade.
 b) O tempo não utilizado do seu plano anterior é creditado no saldo da sua
    conta após o primeiro pagamento do novo plano.
@@ -1304,10 +1297,12 @@ Esclarecimentos para refletir como o aplicativo funciona:
   tradução, a leitura em voz alta e a transliteração (respostas inteligentes
   e análise de palavras não são oferecidas); o conteúdo público é traduzido
   com o serviço de tradução do Google; limites diários de tradução por plano.
-- Seções 7.1, 7.4 e 7.6: sem períodos de teste gratuitos nas lojas de
-  aplicativos; a oferta de lançamento 2026 (50% de desconto no primeiro
-  período) na web e nas lojas de aplicativos; a Base está incluída no
-  Silver, Gold e Platinum no aplicativo iOS.
+- Seções 7.1, 7.4 e 7.6: sem período de teste gratuito em nenhuma
+  plataforma (um período de teste na web iniciado antes de 17 de outubro de
+  2026 continua até terminar); a única oferta introdutória é o preço de
+  lançamento 2026 (50% de desconto no primeiro período), na web e nas lojas
+  de aplicativos; a Base está incluída no Silver, Gold e Platinum no
+  aplicativo iOS.
 - Seção 7.7: planos de pré-venda.
 - Seção 9.1 b: Pix somente para pagamentos únicos; Assinaturas com cartão.
 - Seção 11.2 c: pedidos de ingresso abertos antes de 14 de outubro de 2026

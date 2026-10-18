@@ -206,30 +206,22 @@ Cuando cancelas, tu Membresía sigue activa hasta el final del periodo que
 pagaste y no se renueva. Eliminar la app o tu cuenta no cancela una
 suscripción de la tienda: cancélala en la tienda.
 
-7.4 Pruebas gratuitas y ofertas introductorias
-a) Web
-   - La Membresía Base puede incluir una prueba gratuita de 7 días en la web,
-     una vez por cuenta.
-   - Salvo que canceles antes de que termine la prueba, esta se convierte en
-     una Membresía Base de pago, y el primer pago se cobra cuando termina la
-     prueba.
-   - Antes de que termine la prueba, Stripe, nuestro proveedor de pagos, te
-     envía un correo electrónico de recordatorio.
-   - Precio de lanzamiento 2026: para las Membresías compradas en la web hasta
-     el 31 de diciembre de 2026 (hora de Brasil), el primer periodo (el primer
-     año de un plan anual o los 3 primeros meses de un plan mensual) tiene un
-     50 % de descuento sobre el precio normal, según se muestra en el pago. Se
-     aplica una vez por cuenta para Base, y una vez para Silver, Gold y
-     Platinum. Las renovaciones se cobran al precio normal.
-b) Tiendas de aplicaciones (Apple App Store y Google Play)
-   - Las Membresías compradas en la app de iOS o de Android no tienen prueba
-     gratuita.
-   - Oferta de lanzamiento 2026: los nuevos suscriptores que se suscriban
-     hasta el 31 de diciembre de 2026 obtienen un 50 % de descuento en el
-     primer periodo (el primer año de un plan anual o los 3 primeros meses de
-     un plan mensual), según lo muestra la tienda antes de que compres. Las
-     renovaciones se cobran al precio normal.
-   - Apple o Google deciden quién puede acceder a la oferta y la aplican
+7.4 Ofertas introductorias
+a) No hay prueba gratuita en ninguna plataforma: ni en la web, ni en Google
+   Play, ni en el App Store. Una prueba gratuita de la Membresía Base iniciada
+   en la web antes del 17 de octubre de 2026 dura hasta que termina. Salvo que
+   canceles antes de que termine, se convierte en una Membresía Base de pago,
+   y el primer pago se cobra cuando termina. Antes de que termine, Stripe,
+   nuestro proveedor de pagos, te envía un correo electrónico de recordatorio.
+b) La única oferta introductoria es el precio de lanzamiento 2026: los nuevos
+   suscriptores que se suscriban hasta el 31 de diciembre de 2026 (hora de
+   Brasil) obtienen un 50 % de descuento en el primer periodo (el primer año
+   de un plan anual o los 3 primeros meses de un plan mensual). Las
+   renovaciones se cobran al precio normal.
+   - En la web, el precio de lanzamiento se muestra en el pago. Se aplica una
+     vez por cuenta para Base, y una vez para Silver, Gold y Platinum.
+   - En la app de iOS o de Android, la tienda muestra la oferta antes de que
+     compres. Apple o Google deciden quién puede acceder a ella y la aplican
      según sus propias normas.
 
 7.5 Cambios de precio
@@ -246,7 +238,7 @@ a) Si mejoras tu plan en la web, obtienes un descuento fijo por mejora sobre
    - de Silver a Platinum: 15 %;
    - de Gold a Platinum: 10 %.
    La mejora surte efecto de inmediato. Si el precio de lanzamiento 2026
-   (sección 7.4 a) se aplica al nuevo plan, sustituye al descuento por
+   (sección 7.4 b) se aplica al nuevo plan, sustituye al descuento por
    mejora.
 b) El tiempo no utilizado de tu plan anterior se abona en el saldo de tu
    cuenta después del primer pago del nuevo plan.
@@ -1327,10 +1319,12 @@ Aclaraciones para ajustarse al funcionamiento de la app:
   respuestas inteligentes ni desglose de palabras); el contenido público se
   traduce con el servicio de traducción de Google; límites diarios de
   traducción por plan.
-- Secciones 7.1, 7.4 y 7.6: sin pruebas gratuitas en las tiendas de
-  aplicaciones; la oferta de lanzamiento 2026 (50 % de descuento en el primer
-  periodo) en la web y en las tiendas de aplicaciones; en la app de iOS, Base
-  está incluida en Silver, Gold y Platinum.
+- Secciones 7.1, 7.4 y 7.6: sin prueba gratuita en ninguna plataforma (una
+  prueba en la web iniciada antes del 17 de octubre de 2026 dura hasta que
+  termina); la única oferta introductoria es el precio de lanzamiento 2026
+  (50 % de descuento en el primer periodo), en la web y en las tiendas de
+  aplicaciones; en la app de iOS, Base está incluida en Silver, Gold y
+  Platinum.
 - Sección 7.7: planes de preventa.
 - Sección 9.1 b: Pix solo para pagos únicos; Membresías con tarjeta.
 - Sección 11.2 c: pedidos de entradas abiertos antes del 14 de octubre de

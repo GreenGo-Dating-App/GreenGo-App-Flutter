@@ -205,31 +205,24 @@ Quando cancela, a sua Subscrição permanece ativa até ao final do período que
 pagou, e não é renovada. Eliminar a aplicação ou a sua conta não cancela uma
 subscrição da loja: cancele-a na loja.
 
-7.4 Períodos experimentais gratuitos e ofertas introdutórias
-a) Web
-   - A Subscrição Base pode incluir um período experimental gratuito de 7
-     dias na web, uma vez por conta.
-   - Salvo se cancelar antes do fim do período experimental, este converte-se
-     numa Subscrição Base paga, e o primeiro pagamento é cobrado quando o
-     período experimental termina.
-   - Antes do fim do período experimental, a Stripe, o nosso fornecedor de
-     pagamentos, envia-lhe um lembrete por e-mail.
-   - Preço de lançamento 2026: nas Subscrições compradas na web até 31 de
-     dezembro de 2026 (hora do Brasil), o primeiro período (o primeiro ano de
-     um plano anual, ou os primeiros 3 meses de um plano mensal) tem 50% de
-     desconto sobre o preço normal, conforme indicado no checkout. Aplica-se
-     uma vez por conta para a Base, e uma vez para Silver, Gold e Platinum.
-     As renovações são feitas ao preço normal.
-b) Lojas de aplicações (Apple App Store e Google Play)
-   - As Subscrições compradas na aplicação iOS ou Android não têm período
-     experimental gratuito.
-   - Oferta de lançamento 2026: os novos subscritores que subscrevam até 31 de
-     dezembro de 2026 recebem 50% de desconto no primeiro período (o primeiro
-     ano de um plano anual, ou os primeiros 3 meses de um plano mensal),
-     conforme a loja o apresenta antes da compra. As renovações são feitas ao
-     preço normal.
-   - A Apple ou a Google decidem quem é elegível para a oferta e aplicam-na
-     de acordo com as suas próprias regras.
+7.4 Ofertas introdutórias
+a) Não existe período experimental gratuito em nenhuma plataforma: nem na
+   web, nem no Google Play, nem na App Store. Um período experimental
+   gratuito da Subscrição Base iniciado na web antes de 17 de outubro de 2026
+   continua até terminar. Salvo se cancelar antes do seu fim, converte-se
+   numa Subscrição Base paga, e o primeiro pagamento é cobrado quando
+   termina. Antes do seu fim, a Stripe, o nosso fornecedor de pagamentos,
+   envia-lhe um lembrete por e-mail.
+b) A única oferta introdutória é o preço de lançamento 2026: os novos
+   subscritores que subscrevam até 31 de dezembro de 2026 (hora do Brasil)
+   recebem 50% de desconto no primeiro período (o primeiro ano de um plano
+   anual, ou os primeiros 3 meses de um plano mensal). As renovações são
+   feitas ao preço normal.
+   - Na web, o preço de lançamento é indicado no checkout. Aplica-se uma vez
+     por conta para a Base, e uma vez para Silver, Gold e Platinum.
+   - Na aplicação iOS ou Android, a loja apresenta a oferta antes da compra.
+     A Apple ou a Google decidem quem é elegível e aplicam-na de acordo com
+     as suas próprias regras.
 
 7.5 Alterações de preço
 - Informá-lo-emos de um aumento de preço com, pelo menos, 30 dias de
@@ -245,7 +238,7 @@ a) Se fizer um upgrade na web, recebe um desconto de upgrade fixo sobre o
    - de Silver para Platinum: 15%;
    - de Gold para Platinum: 10%.
    O upgrade produz efeitos imediatamente. Se o preço de lançamento 2026
-   (secção 7.4 a) se aplicar ao novo plano, substitui o desconto de upgrade.
+   (secção 7.4 b) se aplicar ao novo plano, substitui o desconto de upgrade.
 b) O tempo não utilizado do seu plano anterior é creditado no saldo da sua
    conta após o primeiro pagamento do novo plano.
 c) Não pode fazer um downgrade na web durante um período pago. Para passar
@@ -1318,10 +1311,12 @@ Clarificações para corresponder ao funcionamento da aplicação:
   inteligentes e a decomposição de palavras não são oferecidas); o conteúdo
   público é traduzido com o serviço de tradução da Google; limites diários de
   tradução por plano.
-- Secções 7.1, 7.4 e 7.6: sem períodos experimentais gratuitos nas lojas de
-  aplicações; a oferta de lançamento 2026 (50% de desconto no primeiro
-  período) na web e nas lojas de aplicações; a Base está incluída em Silver,
-  Gold e Platinum na aplicação iOS.
+- Secções 7.1, 7.4 e 7.6: sem período experimental gratuito em nenhuma
+  plataforma (um período experimental na web iniciado antes de 17 de outubro
+  de 2026 continua até terminar); a única oferta introdutória é o preço de
+  lançamento 2026 (50% de desconto no primeiro período), na web e nas lojas
+  de aplicações; a Base está incluída em Silver, Gold e Platinum na
+  aplicação iOS.
 - Secção 7.7: planos de pré-venda.
 - Secção 9.1 b: Pix apenas para pagamentos únicos; Subscrições com cartão.
 - Secção 11.2 c: pedidos de bilhetes abertos antes de 14 de outubro de 2026
