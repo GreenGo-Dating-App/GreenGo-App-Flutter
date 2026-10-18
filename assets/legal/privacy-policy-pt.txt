@@ -297,6 +297,10 @@ telemóvel, documento de identificação e os dados de identificação que forne
 selfie de verificação e fotos do álbum privado (a menos que conceda a alguém
 acesso ao seu álbum privado).
 
+Quem o segue, quem segue e os seus números de seguidores, contas seguidas e
+lojas. Isto aplica-se a contas pessoais e de empresa. Outros utilizadores
+podem continuar a segui-lo, mas só o utilizador vê estas listas e números.
+
 4.3 Conteúdos que partilha
 
 - As mensagens são visíveis para as pessoas presentes nessa conversa, grupo,
@@ -1618,6 +1622,9 @@ Verificação do telemóvel e dados de identificação:
   identificar quando a lei o exigir, até 6 meses após o encerramento da conta
   (também secções 2, 3.1, 4.2, 4.4, 5, 8.5, 12.5, 14, 15.2, 20.1 e 22.1).
 Clarificações para corresponder ao funcionamento da aplicação:
+- Secção 4.2: quem o segue, quem segue e os seus números de seguidores,
+  contas seguidas e lojas nunca são mostrados a outros utilizadores (também
+  nas contas de empresa).
 - Secções 2, 5 e 9: as funcionalidades de IA são a tradução, a leitura em voz
   alta e a transliteração (as respostas inteligentes e a decomposição de
   palavras não são oferecidas); as mensagens de chat são traduzidas com os

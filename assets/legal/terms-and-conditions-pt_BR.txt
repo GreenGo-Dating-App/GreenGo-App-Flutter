@@ -704,7 +704,8 @@ exiba uma página de empresa:
   telefone fixo). Ele é privado, a menos que você ative a sua exibição na sua
   página de empresa;
 - eventos e experiências;
-- seguidores.
+- seguidores: outras pessoas podem seguir a sua empresa, mas só você vê
+  quem a segue e quantos seguidores ela tem.
 
 13.2 Ao colocar a sua Conta no modo empresarial, você confirma que:
 - está autorizado a agir em nome da empresa;
@@ -1358,6 +1359,8 @@ Verificação por telefone e dados de identificação:
   e os dados analisados são guardados de forma criptografada somente para
   identificar você quando a lei o exigir.
 Esclarecimentos para refletir como o aplicativo funciona:
+- Seção 13.1: só você vê quem segue a sua empresa e quantos seguidores ela
+  tem.
 - Seções 5.1 g, 14.1, 14.2 e 14.4: os assistentes de IA no chat são a
   tradução, a leitura em voz alta e a transliteração (respostas inteligentes
   e análise de palavras não são oferecidas); o conteúdo público é traduzido

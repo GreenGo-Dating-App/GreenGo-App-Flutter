@@ -288,6 +288,10 @@ telefone, documento de identidade e os dados de identificação que você
 informou a partir dele, selfie de verificação e as fotos do álbum privado (a
 menos que você dê acesso ao seu álbum privado a alguém).
 
+Quem segue você, quem você segue e os seus números de seguidores, seguindo e
+lojas. Isso vale para contas pessoais e empresariais. Outros usuários ainda
+podem seguir você, mas só você vê essas listas e números.
+
 4.3 Conteúdo que você compartilha
 
 - As mensagens são visíveis para as pessoas daquela conversa, grupo,
@@ -1596,6 +1600,9 @@ Verificação por telefone e dados de identificação:
   até 6 meses após o encerramento da conta (também seções 2, 3.1, 4.2, 4.4, 5,
   8.5, 12.5, 14, 15.2, 20.1 e 22.1).
 Esclarecimentos para refletir como o aplicativo funciona:
+- Seção 4.2: quem segue você, quem você segue e os seus números de
+  seguidores, seguindo e lojas nunca são mostrados a outros usuários (também
+  nas contas empresariais).
 - Seções 2, 5 e 9: os recursos de IA são a tradução, a leitura em voz alta e
   a transliteração (respostas inteligentes e análise de palavras não são
   oferecidas); as mensagens de chat são traduzidas com os serviços de tradução

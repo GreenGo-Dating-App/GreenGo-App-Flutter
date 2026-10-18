@@ -648,7 +648,8 @@ page:
 - an optional business contact number (not verified, it can be a landline).
   It is private unless you switch on showing it on your business page;
 - events and experiences;
-- followers.
+- followers: people can follow your business, but only you see who follows
+  it and how many followers it has.
 
 13.2 By switching your Account to business mode you confirm that:
 - you are authorised to act for the business;
@@ -1273,6 +1274,8 @@ Phone verification and identity details:
   if still pending, and the reviewed details are kept encrypted only to
   identify you when the law requires it.
 Clarifications to match how the app works:
+- Section 13.1: only you see who follows your business and how many
+  followers it has.
 - Sections 5.1 g, 14.1, 14.2 and 14.4: the AI helpers in chat are
   translation, read-aloud and transliteration (smart replies and word
   breakdown are not offered); public content is translated with Google's
