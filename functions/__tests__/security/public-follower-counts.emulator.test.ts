@@ -1,13 +1,15 @@
 /**
- * Public follower count (owner decision 2026-10-19): the NUMBER of followers
- * of every user AND business is public; who follows (the lists), the
- * following count and the stores count stay private.
+ * Public follow counts (owner decisions 2026-10-19): the NUMBER of followers
+ * AND of followed accounts of every user AND business is public (as are the
+ * lists themselves, see private-follows.emulator.test.ts); only the stores
+ * count stays private.
  *
  *  - The follow triggers write `follower_counts_public/{uid}` =
- *    {followersCount, updatedAt} in the same transaction as follow_counts.
+ *    {followersCount, followingCount, updatedAt} in the same transaction as
+ *    follow_counts.
  *  - Any signed-in user can GET one doc; nobody can LIST / query the
  *    collection; signed-out cannot read; no client can write.
- *  - follow_counts (following / stores) stays owner-only.
+ *  - follow_counts (incl. stores) stays owner-only.
  *  - scripts/backfill-public-follower-counts.ts copies follow_counts ->
  *    follower_counts_public, dry-run by default, idempotent.
  *
@@ -102,7 +104,7 @@ beforeEach(async () => {
 });
 
 describe('follower_counts_public', () => {
-  test('triggers keep it in step with follow_counts (followersCount + updatedAt only)', async () => {
+  test('triggers keep it in step with follow_counts (followersCount / followingCount + updatedAt only)', async () => {
     await follow('ana', 'bea');
     await follow('carl', 'bea');
     await follow('ana', 'shop');
@@ -110,9 +112,13 @@ describe('follower_counts_public', () => {
     expect(Object.keys(bea).sort()).toEqual(['followersCount', 'updatedAt']);
     expect(bea.followersCount).toBe(2);
     expect((await db.doc(`${PUB}/shop`).get()).get('followersCount')).toBe(1);
-    // The follower side never gets a public doc (following / stores private).
-    expect((await db.doc(`${PUB}/ana`).get()).exists).toBe(false);
-    expect((await db.doc(`${PUB}/carl`).get()).exists).toBe(false);
+    // The follower side carries the public followingCount (owner decision
+    // 2026-10-19), never storesCount.
+    const ana = (await db.doc(`${PUB}/ana`).get()).data()!;
+    expect(Object.keys(ana).sort()).toEqual(['followingCount', 'updatedAt']);
+    expect(ana.followingCount).toBe(2);
+    expect((await db.doc(`${PUB}/carl`).get()).get('followingCount')).toBe(1);
+    expect((await db.doc('follow_counts/ana').get()).get('storesCount')).toBe(1);
     // Public profile untouched.
     expect((await db.doc('profiles/bea').get()).data()).toEqual({ displayName: 'Bea' });
 
@@ -121,6 +127,7 @@ describe('follower_counts_public', () => {
     expect(await uncountEdge(deps, 'evt-pub-1', 'bea', 'carl', was)).toBe(true);
     expect((await db.doc(`${PUB}/bea`).get()).get('followersCount')).toBe(1);
     expect((await db.doc('follow_counts/bea').get()).get('followersCount')).toBe(1);
+    expect((await db.doc(`${PUB}/carl`).get()).get('followingCount')).toBe(0);
   });
 
   test('any signed-in user can GET one doc (users AND businesses); signed-out cannot', async () => {
@@ -145,6 +152,8 @@ describe('follower_counts_public', () => {
     expect(await clientSetInt('bea', `${PUB}/bea`, 'followersCount', 999, true)).toBe(403);
     expect(await clientSetInt('carl', `${PUB}/bea`, 'followersCount', 0, true)).toBe(403);
     expect(await clientSetInt('carl', `${PUB}/carl`, 'followersCount', 5, false)).toBe(403);
+    expect(await clientSetInt('ana', `${PUB}/ana`, 'followingCount', 99, true)).toBe(403);
+    expect(await clientSetInt('ana', `${PUB}/ana`, 'storesCount', 1, true)).toBe(403);
     expect(await clientDelete('bea', `${PUB}/bea`)).toBe(403);
     expect((await db.doc(`${PUB}/bea`).get()).get('followersCount')).toBe(1);
   });
@@ -160,7 +169,7 @@ describe('follower_counts_public', () => {
 });
 
 describe('backfill-public-follower-counts script', () => {
-  test('dry run writes nothing; apply copies followersCount only; re-run is a no-op', async () => {
+  test('dry run writes nothing; apply copies followers + following (never stores); re-run is a no-op', async () => {
     await db.doc('follow_counts/bea').set({ followersCount: 12, followingCount: 3 });
     await db.doc('follow_counts/shop').set({ followersCount: 40, followingCount: 0, storesCount: 2 });
     await db.doc('follow_counts/ana').set({ followingCount: 5, storesCount: 1 }); // 0 followers
@@ -169,21 +178,24 @@ describe('backfill-public-follower-counts script', () => {
     const quiet = { log: () => undefined };
 
     const dry = await runPublicFollowerBackfill({ db, apply: false, pageSize: 2, ...quiet });
-    expect(dry).toMatchObject({ scanned: 4, writes: 3, done: true });
+    expect(dry).toMatchObject({ scanned: 4, writes: 4, done: true });
     expect((await db.doc(`${PUB}/bea`).get()).exists).toBe(false);
     expect((await db.doc(`${PUB}/carl`).get()).get('followersCount')).toBe(3);
 
     const r = await runPublicFollowerBackfill({ db, apply: true, pageSize: 2, ...quiet });
-    expect(r).toMatchObject({ scanned: 4, writes: 3, done: true });
+    expect(r).toMatchObject({ scanned: 4, writes: 4, done: true });
     const bea = (await db.doc(`${PUB}/bea`).get()).data()!;
-    expect(Object.keys(bea).sort()).toEqual(['followersCount', 'updatedAt']);
+    expect(Object.keys(bea).sort()).toEqual(['followersCount', 'followingCount', 'updatedAt']);
     expect(bea.followersCount).toBe(12);
+    expect(bea.followingCount).toBe(3);
     const shop = (await db.doc(`${PUB}/shop`).get()).data()!;
     expect(shop.followersCount).toBe(40);
     expect(shop.storesCount).toBeUndefined();
-    expect(shop.followingCount).toBeUndefined();
+    expect(shop.followingCount).toBeUndefined(); // 0 -> missing (reads as 0)
     expect((await db.doc(`${PUB}/carl`).get()).get('followersCount')).toBe(4);
-    expect((await db.doc(`${PUB}/ana`).get()).exists).toBe(false);
+    const ana = (await db.doc(`${PUB}/ana`).get()).data()!;
+    expect(Object.keys(ana).sort()).toEqual(['followingCount', 'updatedAt']);
+    expect(ana.followingCount).toBe(5);
 
     expect(await runPublicFollowerBackfill({ db, apply: true, ...quiet })).toMatchObject({ writes: 0, done: true });
 
@@ -198,5 +210,16 @@ describe('backfill-public-follower-counts script', () => {
     await follow('ana', 'bea');
     expect((await db.doc('follow_counts/bea').get()).get('followersCount')).toBe(8);
     expect((await db.doc(`${PUB}/bea`).get()).get('followersCount')).toBe(8);
+  });
+
+  test('a doc seeded by the followers-only backfill (5.0.36) gets followingCount added', async () => {
+    await db.doc('follow_counts/bea').set({ followersCount: 7, followingCount: 2, storesCount: 1 });
+    await db.doc(`${PUB}/bea`).set({ followersCount: 7 });
+    const r = await runPublicFollowerBackfill({ db, apply: true, log: () => undefined });
+    expect(r).toMatchObject({ scanned: 1, writes: 1 });
+    const bea = (await db.doc(`${PUB}/bea`).get()).data()!;
+    expect(bea.followersCount).toBe(7);
+    expect(bea.followingCount).toBe(2);
+    expect(bea.storesCount).toBeUndefined();
   });
 });

@@ -1,10 +1,10 @@
 /**
- * One-off backfill of the PUBLIC follower count (owner decision 2026-10-19:
- * the NUMBER of followers of every user and business is public; who follows,
- * following and stores counts stay private):
+ * One-off backfill of the PUBLIC follow counts (owner decisions 2026-10-19:
+ * the NUMBER of followers AND the number followed of every user and business
+ * are public; only the stores count stays private):
  *
  *   follow_counts/{uid}.followersCount  ->  follower_counts_public/{uid}
- *                                          { followersCount, updatedAt }
+ *   follow_counts/{uid}.followingCount       { followersCount, followingCount, updatedAt }
  *
  * DRY-RUN BY DEFAULT (counts only); pass --apply to write.
  *
@@ -17,7 +17,7 @@
  *
  * Idempotent: writes only when the public value differs (a 0 count with no
  * public doc writes nothing - a missing doc reads as 0). Never writes
- * following / stores. Pages follow_counts by document id (bounded: --page
+ * storesCount. Pages follow_counts by document id (bounded: --page
  * docs per page, 10 transactions in flight). Resumable: every page prints
  * `cursor=<uid>`; re-run with `--start-after <uid>` to continue (the source
  * is not consumed, so the cursor is the correct resume point; a full re-run
@@ -31,7 +31,7 @@
  */
 import * as admin from 'firebase-admin';
 import { FOLLOW_COUNTS, FOLLOWER_COUNTS_PUBLIC } from '../src/social/followCounters';
-import { planPublicFollowerCount } from '../src/social/followCountsPrivacy';
+import { planPublicFollowCounts } from '../src/social/followCountsPrivacy';
 
 function arg(name: string): string | undefined {
   const i = process.argv.indexOf(name);
@@ -55,12 +55,12 @@ export async function copyOne(
     const privRef = db.collection(FOLLOW_COUNTS).doc(uid);
     const pubRef = db.collection(FOLLOWER_COUNTS_PUBLIC).doc(uid);
     const [priv, pub] = await tx.getAll(privRef, pubRef);
-    const want = planPublicFollowerCount(
+    const want = planPublicFollowCounts(
       priv.exists ? priv.data() : undefined,
       pub.exists ? pub.data() : undefined,
     );
-    if (want === null) return false;
-    if (apply) tx.set(pubRef, { followersCount: want, updatedAt: new Date() }, { merge: true });
+    if (Object.keys(want).length === 0) return false;
+    if (apply) tx.set(pubRef, { ...want, updatedAt: new Date() }, { merge: true });
     return true;
   });
 }

@@ -1,13 +1,13 @@
 /**
- * Private follows (owner rule 2026-10-17): "followers and following are
- * visible only on the profile page as information for the user, not to let
- * people know the followers of a user" - users AND businesses.
+ * Follow graph visibility. History: private follows (owner rule 2026-10-17)
+ * made the lists owner-only; owner decision 2026-10-19 made the follower AND
+ * following LISTS (and both counts) PUBLIC to every signed-in user, for users
+ * AND businesses. The stores count stays owner-only.
  *
- *  1. Follow lists: only the list owner can list / search their followers
- *     (`business_followers/{me}/followers`) and following
- *     (`user_business_following/{me}/businesses`). A viewer can still GET
- *     their OWN edge under someone else (follow button state), never someone
- *     else's edge.
+ *  1. Follow lists: any signed-in user can GET an edge and list / search the
+ *     followers (`business_followers/{x}/followers`) and following
+ *     (`user_business_following/{x}/businesses`) of any account; signed-out
+ *     cannot. Writes stay owner-only and un-forgeable.
  *  2. Counters live in the owner-only `follow_counts/{uid}` (server-written);
  *     no client can read another user's or write any.
  *  3. The public profile carries no counters: the follow triggers never write
@@ -127,41 +127,76 @@ beforeEach(async () => {
   await db.doc('profiles/shop').set({ displayName: 'Shop', isBusiness: true });
 });
 
-describe('follow lists are private to their owner', () => {
-  test('only the followee lists / searches their followers; only the follower lists their following', async () => {
+describe('follow lists are public to signed-in users (owner decision 2026-10-19)', () => {
+  test('anyone signed in lists / searches the followers and the following of any account', async () => {
     await follow('ana', 'bea');
 
-    // bea's followers: bea yes, everyone else no.
+    // bea's followers: bea and everyone else signed in.
     expect(await clientList('bea', 'business_followers/bea', 'followers')).toBe(200);
-    expect(await clientList('carl', 'business_followers/bea', 'followers')).toBe(403);
-    expect(await clientList('ana', 'business_followers/bea', 'followers')).toBe(403);
-    expect(await clientList('carl', 'business_followers/bea', 'followers', 'followerNameLower')).toBe(403);
+    expect(await clientList('carl', 'business_followers/bea', 'followers')).toBe(200);
+    expect(await clientList('ana', 'business_followers/bea', 'followers')).toBe(200);
+    expect(await clientList('carl', 'business_followers/bea', 'followers', 'followerNameLower')).toBe(200);
 
-    // ana's following: ana yes, everyone else no.
+    // ana's following: ana and everyone else signed in.
     expect(await clientList('ana', 'user_business_following/ana', 'businesses')).toBe(200);
-    expect(await clientList('carl', 'user_business_following/ana', 'businesses')).toBe(403);
-    expect(await clientList('bea', 'user_business_following/ana', 'businesses')).toBe(403);
-    expect(await clientGet('carl', mirror('ana', 'bea'))).toBe(403);
+    expect(await clientList('carl', 'user_business_following/ana', 'businesses')).toBe(200);
+    expect(await clientList('bea', 'user_business_following/ana', 'businesses')).toBe(200);
+    expect(await clientList('carl', 'user_business_following/ana', 'businesses', 'followeeNameLower')).toBe(200);
+    expect(await clientGet('carl', mirror('ana', 'bea'))).toBe(200);
   });
 
-  test('a viewer reads only their OWN edge (follow button state), never another user\'s', async () => {
+  test('signed-out clients can read no edge and list no list', async () => {
+    await follow('ana', 'bea');
+    const anon = async (path: string) => {
+      const res = await fetch(`${fsBase()}/${path}`);
+      await res.text();
+      return res.status;
+    };
+    expect(await anon(edge('bea', 'ana'))).toBe(403);
+    expect(await anon(mirror('ana', 'bea'))).toBe(403);
+    const res = await fetch(`${fsBase()}/business_followers/bea:runQuery`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ structuredQuery: { from: [{ collectionId: 'followers' }], limit: 30 } }),
+    });
+    await res.text();
+    expect(res.status).toBe(403);
+  });
+
+  test('any signed-in viewer can GET any edge (follow button + "follows you")', async () => {
     await follow('ana', 'bea');
     expect(await clientGet('ana', edge('bea', 'ana'))).toBe(200); // do I follow bea?
-    expect(await clientGet('carl', edge('bea', 'carl'))).toBe(404); // carl: not following (allowed, missing)
-    expect(await clientGet('carl', edge('bea', 'ana'))).toBe(403); // does ana follow bea? none of carl's business
-    expect(await clientGet('bea', edge('bea', 'ana'))).toBe(200); // "follows you" in bea's own list
+    expect(await clientGet('carl', edge('bea', 'carl'))).toBe(404); // carl: not following
+    expect(await clientGet('carl', edge('bea', 'ana'))).toBe(200); // does ana follow bea? public now
+    expect(await clientGet('bea', edge('bea', 'ana'))).toBe(200);
     expect(await clientGet('ana', mirror('ana', 'bea'))).toBe(200);
   });
 
-  test('business accounts are private too (owner decision 2026-10-17)', async () => {
+  test('business accounts: lists public, follow_counts (stores) still owner-only', async () => {
     await follow('ana', 'shop');
     expect(await clientList('shop', 'business_followers/shop', 'followers')).toBe(200);
-    expect(await clientList('carl', 'business_followers/shop', 'followers')).toBe(403);
-    expect(await clientGet('carl', edge('shop', 'ana'))).toBe(403);
-    expect(await clientGet('ana', edge('shop', 'ana'))).toBe(200);
+    expect(await clientList('carl', 'business_followers/shop', 'followers')).toBe(200);
+    expect(await clientGet('carl', edge('shop', 'ana'))).toBe(200);
     expect(await clientGet('carl', 'follow_counts/shop')).toBe(403);
+    expect(await clientGet('carl', 'follow_counts/ana')).toBe(403);
     expect(await clientGet('shop', 'follow_counts/shop')).toBe(200);
     expect((await db.doc('profiles/shop').get()).get('followersCount')).toBeUndefined();
+  });
+
+  test('reading is not writing: nobody forges, edits or removes edges or server fields', async () => {
+    await follow('ana', 'bea');
+    // Another user cannot create an edge on someone else's behalf.
+    expect(await clientCreate('carl', edge('bea', 'dan'))).toBe(403);
+    expect(await clientCreate('carl', mirror('ana', 'carl'))).toBe(403);
+    // Server-only fields: never on create, never by update (own edge or not).
+    expect(await clientCreateFields('carl', edge('bea', 'carl'), { followerNameLower: 'x' })).toBe(403);
+    expect(await clientCreateFields('carl', mirror('carl', 'bea'), { followeeNameLower: 'x' })).toBe(403);
+    expect(await clientCreateFields('carl', mirror('carl', 'shop'), { isStore: 1 })).toBe(403);
+    expect(await clientPatchInts('ana', edge('bea', 'ana'), { counted: 0 })).toBe(403);
+    expect(await clientPatchInts('carl', edge('bea', 'ana'), { counted: 0 })).toBe(403);
+    expect(await clientPatchInts('carl', mirror('ana', 'bea'), { isStore: 1 })).toBe(403);
+    expect(await clientDelete('carl', edge('bea', 'ana'))).toBe(403);
+    expect(await clientDelete('carl', mirror('ana', 'bea'))).toBe(403);
+    expect(await clientDelete('bea', mirror('ana', 'bea'))).toBe(403);
   });
 
   test('follow and unfollow still work for the follower', async () => {

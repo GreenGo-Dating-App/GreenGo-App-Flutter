@@ -2197,13 +2197,14 @@ service cloud.firestore {
     // `createdAt` (= server time), may never update an edge, and may not
     // follow itself.
     //
-    // PRIVATE (owner rule 2026-10-17, users AND businesses): the list of an
-    // account's followers is readable only by that account (and the admin
-    // panel). A viewer may still GET their OWN edge under someone else (the
-    // follow button state: "do I follow X?"), never list or search others.
+    // PUBLIC (owner decision 2026-10-19, users AND businesses; replaces the
+    // private-follows rule of 2026-10-17): any signed-in user may GET an
+    // edge and LIST / query (paged, prefix name search on the server-written
+    // `followerNameLower`) the followers of any account. Edges stay
+    // un-forgeable: a client creates only its OWN edge with `createdAt`
+    // only (never counted / countedStore / followerNameLower), never updates.
     match /business_followers/{businessId}/followers/{uid} {
-      allow get: if isOwner(businessId) || isOwner(uid) || isAdminPanelUser();
-      allow list: if isOwner(businessId) || isAdminPanelUser();
+      allow get, list: if isSignedIn();
       allow create: if isOwner(uid)
         && uid != businessId
         && request.resource.data.keys().hasOnly(['createdAt'])
@@ -2211,11 +2212,12 @@ service cloud.firestore {
       allow delete: if isOwner(uid);
     }
 
-    // Mirror index of the accounts a user follows. PRIVATE (owner rule
-    // 2026-10-17): readable and written only by its owner (and read by the
-    // admin panel).
+    // Mirror index of the accounts a user follows. PUBLIC to read (owner
+    // decision 2026-10-19: anyone signed in may page / name-search whom an
+    // account follows); written only by its owner, and never with the
+    // server-only fields below.
     match /user_business_following/{userId}/businesses/{businessId} {
-      allow read: if isOwner(userId) || isAdminPanelUser();
+      allow read: if isSignedIn();
       // `followeeNameLower` (searchable name) is written ONLY by the server
       // (functions social/followNames.ts); a client can never forge it. The
       // canonical edge above already allows `createdAt` only.
@@ -2233,11 +2235,11 @@ service cloud.firestore {
       allow write: if false;
     }
 
-    // PUBLIC follower count (owner decision 2026-10-19): the NUMBER of
-    // followers of every user AND business is public; who follows (the
-    // lists above), the following count and the stores count stay private
-    // (follow_counts). {followersCount, updatedAt} only, written by the same
-    // follow-trigger transactions as follow_counts. Any signed-in user may
+    // PUBLIC follow counts (owner decisions 2026-10-19): the NUMBER of
+    // followers and of followed accounts of every user AND business is
+    // public (as are the lists above); only the stores count stays private
+    // (follow_counts). {followersCount, followingCount, updatedAt} only,
+    // written by the same follow-trigger transactions as follow_counts. Any signed-in user may
     // GET one doc (profile page); nobody may list / query the collection
     // (no "top accounts" scraping), and no client may write.
     match /follower_counts_public/{uid} {

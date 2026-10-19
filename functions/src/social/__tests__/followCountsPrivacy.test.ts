@@ -1,4 +1,4 @@
-import { planFollowCountMove, planPublicFollowerCount } from '../followCountsPrivacy';
+import { planFollowCountMove, planPublicFollowCounts, planPublicFollowerCount } from '../followCountsPrivacy';
 
 describe('planFollowCountMove (public follow counts -> follow_counts)', () => {
   it('folds the public value into the post-deploy private delta and deletes the public fields', () => {
@@ -55,5 +55,27 @@ describe('planPublicFollowerCount (follow_counts -> follower_counts_public)', ()
     expect(planPublicFollowerCount({ followersCount: 'x' }, undefined)).toBeNull();
     expect(planPublicFollowerCount(undefined, { followersCount: 3 })).toBe(0);
     expect(planPublicFollowerCount({ followersCount: 2.9 }, undefined)).toBe(2);
+  });
+});
+
+describe('planPublicFollowCounts (followers + following -> follower_counts_public)', () => {
+  it('copies followers AND following, never storesCount', () => {
+    expect(planPublicFollowCounts({ followersCount: 7, followingCount: 3, storesCount: 1 }, undefined)).toEqual({
+      followersCount: 7,
+      followingCount: 3,
+    });
+  });
+  it('writes only the fields that differ (idempotent re-run)', () => {
+    expect(planPublicFollowCounts({ followersCount: 7, followingCount: 3 }, { followersCount: 7, followingCount: 3 })).toEqual({});
+    // A doc seeded by the 5.0.36 backfill (followers only) gets following added.
+    expect(planPublicFollowCounts({ followersCount: 7, followingCount: 3 }, { followersCount: 7 })).toEqual({ followingCount: 3 });
+    expect(planPublicFollowCounts({ followersCount: 2, followingCount: 0 }, { followersCount: 7, followingCount: 4 })).toEqual({
+      followersCount: 2,
+      followingCount: 0,
+    });
+  });
+  it('0 / invalid counts with no public value write nothing (missing reads as 0)', () => {
+    expect(planPublicFollowCounts({ followersCount: 0, followingCount: -1, storesCount: 5 }, undefined)).toEqual({});
+    expect(planPublicFollowCounts({ storesCount: 5 }, { followersCount: 0 })).toEqual({});
   });
 });

@@ -27,7 +27,7 @@ import '../../data/business_upcoming_events.dart';
 import '../widgets/storefront_chat_button.dart';
 import '../widgets/storefront_event_tile.dart';
 import 'business_upcoming_events_screen.dart';
-import '../../../follows/presentation/widgets/public_follower_count_line.dart';
+import '../../../follows/presentation/widgets/public_follow_stats_line.dart';
 import '../widgets/business_follow_button.dart';
 import '../widgets/opening_hours_section.dart';
 import '../widgets/business_rating.dart';
@@ -285,17 +285,20 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                                 ),
                               ),
                             ],
-                            // Follower count: the NUMBER is public (owner
-                            // decision 2026-10-19). Owner: live private
-                            // counter; everyone else: the public count
-                            // (hidden at 0, not tappable - the list stays
-                            // private).
+                            // Followers AND following are public (owner
+                            // decisions 2026-10-19). Owner: live private
+                            // counter; everyone else: "N followers · M
+                            // following", each part tappable (opens the
+                            // business's lists - its followers are
+                            // business_followers/{businessId}/followers).
                             if (_isOwner) ...[
                               const SizedBox(height: 6),
                               _followersLine(l10n),
                             ] else
-                              PublicFollowerCountLine(
-                                  userId: widget.business.userId),
+                              PublicFollowStatsLine(
+                                userId: widget.business.userId,
+                                currentUserId: widget.currentUserId,
+                              ),
                             const SizedBox(height: 6),
                             BusinessRatingSummary(
                                 businessId: widget.business.userId),

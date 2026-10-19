@@ -14,10 +14,10 @@ class FollowBlockedException implements Exception {
   const FollowBlockedException();
 }
 
-/// Follower / following / stores counts of an account.
-///
-/// PRIVATE (owner rule 2026-10-17): only the account itself can read them
-/// (`follow_counts/{uid}`, owner-only rules), for users AND businesses.
+/// Follower / following / stores counts of an account, from the owner-only
+/// `follow_counts/{uid}` (only the account itself can read it; the stores
+/// count is private, owner rule 2026-10-17). Other viewers read the public
+/// [PublicFollowCounts] instead.
 class FollowCounts {
   const FollowCounts({this.followers = 0, this.following = 0, this.stores = 0});
 
@@ -62,6 +62,33 @@ class FollowCounts {
   final int stores;
 }
 
+/// PUBLIC follower / following counts of any account (owner decisions
+/// 2026-10-19), from `follower_counts_public/{uid}`. Never the stores count.
+class PublicFollowCounts {
+  const PublicFollowCounts({this.followers = 0, this.following = 0});
+
+  factory PublicFollowCounts.fromData(Map<String, dynamic>? data) {
+    int read(String k) {
+      final v = (data?[k] as num?)?.toInt() ?? 0;
+      return v < 0 ? 0 : v;
+    }
+
+    return PublicFollowCounts(
+      followers: read('followersCount'),
+      following: read('followingCount'),
+    );
+  }
+
+  final int followers;
+  final int following;
+
+  PublicFollowCounts adjusted({int followers = 0, int following = 0}) {
+    final f = this.followers + followers;
+    final g = this.following + following;
+    return PublicFollowCounts(followers: f < 0 ? 0 : f, following: g < 0 ? 0 : g);
+  }
+}
+
 /// One page of a followers / following list (newest first).
 class FollowPage {
   const FollowPage({required this.userIds, required this.cursor, required this.hasMore});
@@ -88,10 +115,14 @@ class FollowPage {
 ///    `follow_counts/{id}` (`followersCount`, `followingCount`,
 ///    `storesCount`), which no client can write. The client only writes its
 ///    own edge docs.
-///  * PRIVATE (owner rule 2026-10-17): an account's counts and lists are
-///    readable only by the account itself. [counts], the list pages and the
-///    searches are therefore only ever called with the signed-in uid; the
-///    follow button reads only the viewer's OWN edge.
+///  * PUBLIC lists (owner decision 2026-10-19, replacing the private-follows
+///    rule of 2026-10-17): any signed-in user may page / name-search the
+///    followers and the following of ANY account (rules: get + list for
+///    signed-in users; edges and their server fields stay un-forgeable).
+///    Counts: [counts] (owner-only `follow_counts`, incl. stores) is only
+///    called for the signed-in uid; everyone else reads
+///    [publicFollowCounts] (`follower_counts_public`, followers + following,
+///    never stores).
 ///  * Because the triggers can lag (cold start), [counts] overlays this
 ///    device's committed-but-not-yet-counted changes ([FollowCountOverlay]) on
 ///    BOTH sides - the followee's followers and the follower's own following -
@@ -137,11 +168,11 @@ class FollowService {
   DocumentReference<Map<String, dynamic>> _countsDoc(String uid) =>
       _firestore.collection(countsCollection).doc(uid);
 
-  /// PUBLIC follower count (owner decision 2026-10-19): the NUMBER of
-  /// followers of every user and business is public (who follows, following
-  /// and stores stay private). `{followersCount, updatedAt}` only, written by
-  /// the same server triggers as [countsCollection]; any signed-in user may
-  /// GET one doc (never list).
+  /// PUBLIC follow counts (owner decisions 2026-10-19): the NUMBER of
+  /// followers and of followed accounts of every user and business is public
+  /// (the stores count stays private). `{followersCount, followingCount,
+  /// updatedAt}` only, written by the same server triggers as
+  /// [countsCollection]; any signed-in user may GET one doc (never list).
   static const String publicCountsCollection = 'follower_counts_public';
 
   /// How long a fetched public count is reused (profile pages are reopened
@@ -151,24 +182,26 @@ class FollowService {
   /// Bound of the in-memory public-count cache (oldest entries evicted).
   static const int publicCountCacheSize = 300;
 
-  final Map<String, ({int count, DateTime at})> _publicCounts = {};
-  final Map<String, Future<int?>> _publicInFlight = {};
+  final Map<String, ({PublicFollowCounts counts, DateTime at})> _publicCounts =
+      {};
+  final Map<String, Future<PublicFollowCounts?>> _publicInFlight = {};
 
-  /// Public follower count of [uid] (any account): ONE `get` of
-  /// `follower_counts_public/{uid}`, cached for [publicCountTtl] and
-  /// de-duplicated while in flight. A missing doc is 0; null when it could
-  /// not be read (offline / signed out). [refresh] skips the cache.
-  Future<int?> publicFollowerCount(String uid, {bool refresh = false}) {
-    if (uid.isEmpty) return Future.value(0);
+  /// Public follower / following counts of [uid] (any account): ONE `get`
+  /// of `follower_counts_public/{uid}`, cached for [publicCountTtl] and
+  /// de-duplicated while in flight. A missing doc / field is 0; null when it
+  /// could not be read (offline / signed out). [refresh] skips the cache.
+  Future<PublicFollowCounts?> publicFollowCounts(String uid,
+      {bool refresh = false}) {
+    if (uid.isEmpty) return Future.value(const PublicFollowCounts());
     final hit = _publicCounts[uid];
     if (!refresh &&
         hit != null &&
         DateTime.now().difference(hit.at) < publicCountTtl) {
-      return Future.value(hit.count);
+      return Future.value(hit.counts);
     }
     final pending = _publicInFlight[uid];
     if (pending != null) return pending;
-    final f = _fetchPublicCount(uid);
+    final f = _fetchPublicCounts(uid);
     _publicInFlight[uid] = f;
     // Block body: never return the stored future from its own callback.
     f.whenComplete(() {
@@ -177,34 +210,46 @@ class FollowService {
     return f;
   }
 
-  Future<int?> _fetchPublicCount(String uid) async {
+  /// Public follower count of [uid] ([publicFollowCounts].followers).
+  Future<int?> publicFollowerCount(String uid, {bool refresh = false}) async =>
+      (await publicFollowCounts(uid, refresh: refresh))?.followers;
+
+  Future<PublicFollowCounts?> _fetchPublicCounts(String uid) async {
     try {
       final d =
           await _firestore.collection(publicCountsCollection).doc(uid).get();
-      final v = (d.data()?['followersCount'] as num?)?.toInt() ?? 0;
-      final count = v < 0 ? 0 : v;
-      _cachePublicCount(uid, count);
-      return count;
+      final counts = PublicFollowCounts.fromData(d.data());
+      _cachePublicCounts(uid, counts);
+      return counts;
     } catch (_) {
       return null;
     }
   }
 
-  void _cachePublicCount(String uid, int count) {
+  void _cachePublicCounts(String uid, PublicFollowCounts counts) {
     _publicCounts.remove(uid); // re-insert = most recent
-    _publicCounts[uid] = (count: count < 0 ? 0 : count, at: DateTime.now());
+    _publicCounts[uid] = (counts: counts, at: DateTime.now());
     while (_publicCounts.length > publicCountCacheSize) {
       _publicCounts.remove(_publicCounts.keys.first);
     }
   }
 
-  /// This device's own committed follow (+1) / unfollow (-1) of [uid]: move
-  /// the cached public count so a reopened profile reflects it before the
-  /// server trigger has counted it.
-  void _adjustCachedPublicCount(String uid, int delta) {
-    final hit = _publicCounts[uid];
-    if (hit == null) return;
-    _publicCounts[uid] = (count: hit.count + delta < 0 ? 0 : hit.count + delta, at: hit.at);
+  /// This device's own committed follow (+1) / unfollow (-1): move the
+  /// cached public counts (the followee's followers, the follower's
+  /// following) so a reopened profile reflects it before the server trigger
+  /// has counted it.
+  void _adjustCachedPublicCounts(
+      {required String followeeId, required String followerId, required int delta}) {
+    final a = _publicCounts[followeeId];
+    if (a != null) {
+      _publicCounts[followeeId] =
+          (counts: a.counts.adjusted(followers: delta), at: a.at);
+    }
+    final b = _publicCounts[followerId];
+    if (b != null) {
+      _publicCounts[followerId] =
+          (counts: b.counts.adjusted(following: delta), at: b.at);
+    }
   }
 
   // ── state ──────────────────────────────────────────────────────────────
@@ -348,7 +393,8 @@ class FollowService {
     });
     if (wrote) {
       _recordChange(followerId: followerId, delta: 1, before: before);
-      _adjustCachedPublicCount(followeeId, 1);
+      _adjustCachedPublicCounts(
+          followeeId: followeeId, followerId: followerId, delta: 1);
     }
   }
 
@@ -375,7 +421,8 @@ class FollowService {
     });
     if (deleted) {
       _recordChange(followerId: followerId, delta: -1, before: before);
-      _adjustCachedPublicCount(followeeId, -1);
+      _adjustCachedPublicCounts(
+          followeeId: followeeId, followerId: followerId, delta: -1);
     }
   }
 
