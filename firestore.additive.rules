@@ -410,8 +410,10 @@ service cloud.firestore {
     // Coarse values computed by mirrorPrivateProfileFields /
     // syncCoarseFromPrivateProfile; a client never writes them. preciseLocation
     // (+-100 m) exists only while globeDiscoverability is 'exact'.
+    // businessGeohash = storefront-address cell (isBusiness only) that
+    // Discover's Businesses mode queries nearest-first.
     function profileServerCoarseKeys() {
-      return ['geohash5', 'approxLocation', 'age', 'preciseLocation'];
+      return ['geohash5', 'approxLocation', 'age', 'preciseLocation', 'businessGeohash'];
     }
     // `k` of the written profile is unchanged or cleared.
     function profileKeyKeptOrCleared(changed, k) {

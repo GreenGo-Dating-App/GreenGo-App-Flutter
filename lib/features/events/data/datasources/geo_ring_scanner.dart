@@ -34,8 +34,13 @@ class GeoRingScanner<T> {
     this.minRadiusM = 200,
     this.maxRoundsPerCall = 6,
     this.options = const GetOptions(),
-  })  : _base = base.orderBy('geohash'),
+    this.geohashField = 'geohash',
+  })  : _base = base.orderBy(geohashField),
         _radiusM = startRadiusM;
+
+  /// The geohash field the collection is ordered and ranged by (`geohash`
+  /// for events / experiences, `businessGeohash` for business storefronts).
+  final String geohashField;
 
   final Query<Map<String, dynamic>> _base;
   final double lat;
@@ -83,6 +88,16 @@ class GeoRingScanner<T> {
   final Set<String> _fetched = {};
 
   bool get hasMore => !_exhausted;
+
+  /// Radius (m) of the last ring emitted.
+  double get emittedRadiusM => _emittedM;
+
+  /// Whether the last ring was emitted COMPLETE: every document within
+  /// [emittedRadiusM] has been returned (or dropped by [parse]/[position]).
+  /// False after a best-effort ring (read budget spent), whose unread
+  /// documents surface in a later ring.
+  bool get lastRingComplete => _lastComplete;
+  bool _lastComplete = false;
 
   /// Number of parallel read rounds issued so far (for callers' latency caps).
   int get rounds => _rounds;
@@ -134,6 +149,7 @@ class GeoRingScanner<T> {
       });
       ring.sort((a, b) => a.$2.compareTo(b.$2));
       _emittedM = r;
+      _lastComplete = complete;
       if (global) {
         if (complete) _exhausted = true;
       } else {
@@ -180,7 +196,7 @@ class GeoRingScanner<T> {
         _pending[doc.id] =
             (item, GeoQuery.distanceMeters(lat, lng, p.lat, p.lng));
       }
-      final last = docs.isEmpty ? null : docs.last.data()['geohash'];
+      final last = docs.isEmpty ? null : docs.last.data()[geohashField];
       if (docs.length < perQueryLimit || last is! String) {
         _covered.add((start, end));
         _resume.remove(start);
