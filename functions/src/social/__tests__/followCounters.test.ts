@@ -5,6 +5,7 @@ import {
   uncountEdge,
   FollowCounterDeps,
   UNCOUNT_MARKERS,
+  FOLLOWER_COUNTS_PUBLIC,
 } from '../followCounters';
 
 import { Doc, increment, makeDb } from './fakeFirestore';
@@ -182,5 +183,61 @@ describe('follow / unfollow counters', () => {
     const u = setup({ [A]: {}, [B]: { isBusiness: true } });
     u.follow();
     expect(await countStoreEdge(u.deps, B, A)).toBe(false);
+  });
+});
+
+describe('public follower count (owner decision 2026-10-19)', () => {
+  const NOW = new Date('2026-10-03T12:00:00Z');
+  const pub = (store: Map<string, Doc>, uid: string) => store.get(`${FOLLOWER_COUNTS_PUBLIC}/${uid}`);
+
+  it('follow / unfollow move follower_counts_public with followersCount + updatedAt ONLY', async () => {
+    const t = setup({ [A]: {}, [B]: { isBusiness: true } });
+    t.follow();
+    await countEdge(t.deps, B, A);
+    expect(pub(t.store, B)).toEqual({ followersCount: 1, updatedAt: NOW });
+    // The FOLLOWER gets no public doc: following / stores are never public.
+    expect(t.store.has(`${FOLLOWER_COUNTS_PUBLIC}/${A}`)).toBe(false);
+    // Private doc unchanged in shape.
+    expect(t.store.get(`follow_counts/${B}`)).toEqual({ followersCount: 1 });
+    const was = t.unfollow();
+    await uncountEdge(t.deps, 'evt-pub', B, A, was, { wasStoreCounted: true });
+    expect(pub(t.store, B)).toEqual({ followersCount: 0, updatedAt: NOW });
+    expect(t.store.has(`${FOLLOWER_COUNTS_PUBLIC}/${A}`)).toBe(false);
+  });
+
+  it('never holds following / stores counts and never touches the public profile', async () => {
+    const t = setup({ [A]: { name: 'a' }, [B]: { name: 'b' } });
+    t.follow();
+    await countEdge(t.deps, B, A);
+    for (const id of [A, B]) {
+      const d = pub(t.store, id) ?? {};
+      expect(Object.keys(d).sort()).toEqual(id === B ? ['followersCount', 'updatedAt'] : []);
+    }
+    expect(t.store.get(`profiles/${B}`)).toEqual({ name: 'b' });
+  });
+
+  it('duplicated / retried events keep the public count exact and never negative', async () => {
+    const t = setup();
+    t.follow();
+    await countEdge(t.deps, B, A);
+    await countEdge(t.deps, B, A);
+    expect(pub(t.store, B)?.followersCount).toBe(1);
+    const was = t.unfollow();
+    await uncountEdge(t.deps, 'e', B, A, was);
+    await uncountEdge(t.deps, 'e', B, A, was);
+    expect(pub(t.store, B)?.followersCount).toBe(0);
+    // Drifted: counted edge, public doc not seeded yet (pre-backfill) -> 0, not -1.
+    const d = setup();
+    d.store.set(edgePath, { createdAt: 1, counted: true });
+    const w = d.unfollow();
+    await uncountEdge(d.deps, 'e2', B, A, w);
+    expect(pub(d.store, B)?.followersCount).toBe(0);
+  });
+
+  it('a deleted followee gets no public doc', async () => {
+    const t = setup({ [A]: {} }); // followee profile gone
+    t.follow();
+    await countEdge(t.deps, B, A);
+    expect(t.store.has(`${FOLLOWER_COUNTS_PUBLIC}/${B}`)).toBe(false);
   });
 });

@@ -59,3 +59,20 @@ export function planFollowCountMove(
   }
   return { privateSet, publicDelete };
 }
+
+/**
+ * Public follower count (owner decision 2026-10-19): the value
+ * `follower_counts_public/{uid}.followersCount` should hold for the private
+ * `follow_counts/{uid}` data [priv], or null when nothing needs writing
+ * ([pub] = the current public doc data, undefined when missing). A missing
+ * public doc already reads as 0, so a 0 count creates no doc. Used by
+ * scripts/backfill-public-follower-counts.ts (idempotent: equal -> null).
+ */
+export function planPublicFollowerCount(
+  priv: Record<string, any> | undefined,
+  pub: Record<string, any> | undefined,
+): number | null {
+  const want = Math.max(0, Math.floor(num(priv?.followersCount)));
+  if (pub === undefined) return want === 0 ? null : want;
+  return pub.followersCount === want ? null : want;
+}

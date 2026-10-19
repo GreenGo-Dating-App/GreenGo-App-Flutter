@@ -187,10 +187,16 @@ async function recountOne(profileSnap, adjust = { followers: 0, following: 0 }) 
       totals.fixed++;
     }
     if (dryRun) return;
-    await countsRef.set(
-      { followersCount: nonNeg(followers), followingCount: nonNeg(following) },
+    // follow_counts (private) + follower_counts_public (followersCount only,
+    // owner decision 2026-10-19) in ONE batch so they never disagree.
+    const wb = db.batch();
+    wb.set(countsRef, { followersCount: nonNeg(followers), followingCount: nonNeg(following) }, { merge: true });
+    wb.set(
+      db.collection('follower_counts_public').doc(uid),
+      { followersCount: nonNeg(followers), updatedAt: new Date() },
       { merge: true },
     );
+    await wb.commit();
     // Re-verify: a trigger may have moved an edge while we counted.
     stored = await countsRef.get();
   }

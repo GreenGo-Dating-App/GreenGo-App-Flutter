@@ -2233,6 +2233,19 @@ service cloud.firestore {
       allow write: if false;
     }
 
+    // PUBLIC follower count (owner decision 2026-10-19): the NUMBER of
+    // followers of every user AND business is public; who follows (the
+    // lists above), the following count and the stores count stay private
+    // (follow_counts). {followersCount, updatedAt} only, written by the same
+    // follow-trigger transactions as follow_counts. Any signed-in user may
+    // GET one doc (profile page); nobody may list / query the collection
+    // (no "top accounts" scraping), and no client may write.
+    match /follower_counts_public/{uid} {
+      allow get: if isSignedIn();
+      allow list: if false;
+      allow write: if false;
+    }
+
     // ============================================================================
     // ATTRACTION STATS — unique viewers per day (functions attractions/attractionStats.ts)
     // ============================================================================

@@ -27,6 +27,7 @@ import '../../data/business_upcoming_events.dart';
 import '../widgets/storefront_chat_button.dart';
 import '../widgets/storefront_event_tile.dart';
 import 'business_upcoming_events_screen.dart';
+import '../../../follows/presentation/widgets/public_follower_count_line.dart';
 import '../widgets/business_follow_button.dart';
 import '../widgets/opening_hours_section.dart';
 import '../widgets/business_rating.dart';
@@ -51,6 +52,7 @@ class BusinessStorefrontScreen extends StatefulWidget {
     required this.business,
     required this.currentUserId,
     this.eventsRepository,
+    this.firestore,
     super.key,
   });
 
@@ -59,6 +61,10 @@ class BusinessStorefrontScreen extends StatefulWidget {
 
   /// Injectable for tests; defaults to the Firestore-backed repository.
   final BusinessUpcomingEventsRepository? eventsRepository;
+
+  /// Injectable for tests (communities + contact phone reads); defaults to
+  /// [FirebaseFirestore.instance].
+  final FirebaseFirestore? firestore;
 
   /// Hero image: curated cover, else the FIRST storefront gallery image, else
   /// the profile photo (legacy); null = branded placeholder (never empty).
@@ -85,8 +91,8 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
       widget.eventsRepository ?? BusinessUpcomingEventsRepository();
   late Future<List<_CommunityCard>> _communitiesFuture;
 
-  // Follower count: PRIVATE (owner decision 2026-10-17) - only the business
-  // owner sees it on their own storefront (owner-only follow_counts doc).
+  // Follower count: the owner streams the private follow_counts doc; other
+  // viewers read the public count (owner decision 2026-10-19).
   final FollowService _followService = di.sl<FollowService>();
 
   bool get _isOwner => widget.currentUserId == widget.business.userId;
@@ -101,7 +107,7 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
     super.initState();
     _eventsFuture = _loadEvents();
     _communitiesFuture = _loadCommunities();
-    _contactPhoneFuture = BusinessContactPhoneRepository()
+    _contactPhoneFuture = BusinessContactPhoneRepository(firestore: widget.firestore)
         .publicPhone(widget.business.userId)
         .catchError((Object _) => null);
   }
@@ -162,7 +168,7 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
 
   Future<List<_CommunityCard>> _loadCommunities() async {
     try {
-      final snap = await FirebaseFirestore.instance
+      final snap = await (widget.firestore ?? FirebaseFirestore.instance)
           .collection('communities')
           .where('createdByUserId', isEqualTo: widget.business.userId)
           .limit(20)
@@ -279,11 +285,17 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                                 ),
                               ),
                             ],
-                            // Follower count - owner only (private).
+                            // Follower count: the NUMBER is public (owner
+                            // decision 2026-10-19). Owner: live private
+                            // counter; everyone else: the public count
+                            // (hidden at 0, not tappable - the list stays
+                            // private).
                             if (_isOwner) ...[
                               const SizedBox(height: 6),
                               _followersLine(l10n),
-                            ],
+                            ] else
+                              PublicFollowerCountLine(
+                                  userId: widget.business.userId),
                             const SizedBox(height: 6),
                             BusinessRatingSummary(
                                 businessId: widget.business.userId),

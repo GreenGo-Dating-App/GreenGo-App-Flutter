@@ -33,6 +33,7 @@ import '../../../chat/presentation/connect_and_chat.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
 import '../../../follows/presentation/follow_toggle_controller.dart';
 import '../../../follows/presentation/widgets/own_follow_stats.dart';
+import '../../../follows/presentation/widgets/public_follower_count_line.dart';
 import '../../../follows/presentation/widgets/user_follow_button.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/match.dart';
@@ -681,17 +682,24 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                           ],
                         ),
 
-                        // Own followers / following - ONLY on "View my
-                        // profile" (owner rule 2026-10-17: follow counts and
-                        // lists are private; other viewers see neither, the
-                        // app-bar Follow button stays).
+                        // Followers line under the city. The NUMBER of
+                        // followers is public (owner decision 2026-10-19);
+                        // the lists and the following count stay private:
+                        //  - "View my profile": own followers · following,
+                        //    each tappable (opens the own list);
+                        //  - anyone else: "N followers", not tappable,
+                        //    hidden at 0, moved by the app-bar Follow button.
                         if (_isSelfView) ...[
                           const SizedBox(height: 6),
                           OwnFollowStatsLine(
                             userId: widget.profile.userId,
                             currentUserId: widget.currentUserId,
                           ),
-                        ],
+                        ] else if (widget.currentUserId.isNotEmpty)
+                          PublicFollowerCountLine(
+                            userId: widget.profile.userId,
+                            controller: _followController,
+                          ),
 
                         const SizedBox(height: 24),
 
