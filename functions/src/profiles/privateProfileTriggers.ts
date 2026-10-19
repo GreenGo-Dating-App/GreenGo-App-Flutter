@@ -11,6 +11,9 @@
  *          (the first two also publish / delete `preciseLocation` for
  *          globeDiscoverability 'exact'; then run
  *          scripts/backfill-precise-location.ts --apply once)
+ *          (and keep `businessGeohash`, the storefront-address cell Discover's
+ *          Businesses mode queries; then run
+ *          scripts/backfill-business-geohash.ts --apply once)
  *
  * Personal payment links are no longer accepted (owner rule 2026-10-14): the
  * former payment-links visibility hook and its sweepExpiredPaymentLinks

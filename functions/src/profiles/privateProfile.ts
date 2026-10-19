@@ -24,6 +24,14 @@
  *                   approxLocation offset); published error <= 100 m
  *                   (PRECISE_JITTER_MAX_M). Deleted for every other setting
  *                   and when the location is unknown.
+ *   businessGeohash 9-char geohash of the PUBLIC storefront address
+ *                   (`businessAddress.latitude/longitude`), only while
+ *                   `isBusiness` is true and the address is usable; deleted
+ *                   otherwise. Discover's Businesses mode queries it
+ *                   nearest-first (index profiles(isBusiness, businessGeohash),
+ *                   owner rule 2026-10-19: businesses are found by their
+ *                   business address, never the owner's personal location).
+ *                   The address is public by design, so this leaks nothing.
  *
  * Two triggers keep both sides consistent without loops:
  *
@@ -43,7 +51,10 @@
  * made by mirrorPrivateProfileFields re-runs syncCoarse..., which recomputes
  * the very values just written and therefore writes nothing. The mirror
  * also watches the public `globeDiscoverability` (a user setting that turns
- * preciseLocation on/off); no trigger ever writes that field.
+ * preciseLocation on/off) and `isBusiness` / `businessAddress` coordinates
+ * and text (businessGeohash); no trigger ever writes those fields. A write
+ * that changes only the address text recomputes an identical businessGeohash
+ * and therefore writes nothing.
  *
  * Out-of-order delivery: the mirror copies the CURRENT public value (read in
  * the transaction), not the event's value, so a late event can never roll the
@@ -88,6 +99,17 @@ export const SENSITIVE_FIELDS: ReadonlyArray<{ pub: string; priv: string }> = [
  */
 export const COARSE_INPUT_FIELDS = ['isTraveler', 'travelerExpiry', 'globeDiscoverability'] as const;
 
+/**
+ * Public paths that drive `businessGeohash` (dotted). Never written by a
+ * trigger, so watching them cannot loop.
+ */
+export const BUSINESS_GEO_INPUTS = [
+  'isBusiness', 'businessAddress.latitude', 'businessAddress.longitude', 'businessAddress.address',
+] as const;
+
+export const BUSINESS_GEOHASH_FIELD = 'businessGeohash';
+export const BUSINESS_GEOHASH_PRECISION = 9;
+
 /** Private fields that change the coarse result. */
 export const PRIVATE_COARSE_INPUTS = [
   'location.latitude', 'location.longitude',
@@ -95,7 +117,7 @@ export const PRIVATE_COARSE_INPUTS = [
   'dateOfBirth',
 ] as const;
 
-export const COARSE_FIELDS = ['geohash5', 'approxLocation', 'age', 'preciseLocation'] as const;
+export const COARSE_FIELDS = ['geohash5', 'approxLocation', 'age', 'preciseLocation', 'businessGeohash'] as const;
 
 export const APPROX_PRECISION = 5;
 /** Max jitter radius in metres. 1495 (not 1500) leaves room for rounding. */
@@ -380,12 +402,30 @@ export function dateOfBirthOf(pub: any, priv: any): Date | null {
   return toDate(priv?.dateOfBirth) ?? toDate(pub?.dateOfBirth);
 }
 
+/**
+ * Geohash (precision 9) of the public storefront address, or null when the
+ * profile is not a business or has no usable address. Same usability rule as
+ * the app's BusinessAddress.fromMap: valid non-(0,0) coordinates and a
+ * non-empty address. Computed from the coordinates, never from the client's
+ * own `businessAddress.geohash`.
+ */
+export function businessGeohashOf(pub: any): string | null {
+  if (pub?.isBusiness !== true) return null;
+  const a = pub.businessAddress;
+  if (!a || typeof a !== 'object') return null;
+  if (!validCoords(a.latitude, a.longitude)) return null;
+  if (typeof a.address !== 'string' || a.address.trim() === '') return null;
+  return geohashEncode(a.latitude, a.longitude, BUSINESS_GEOHASH_PRECISION);
+}
+
 export interface Coarse {
   geohash5: string | null;
   approxLocation: { lat: number; lng: number } | null;
   age: number | null;
   /** Only when globeDiscoverability is 'exact' (see header). */
   preciseLocation: { lat: number; lng: number } | null;
+  /** Storefront address cell (see businessGeohashOf). */
+  businessGeohash: string | null;
 }
 
 export function computeCoarse(
@@ -398,6 +438,7 @@ export function computeCoarse(
     approxLocation: a?.approxLocation ?? null,
     age: ageFrom(dateOfBirthOf(pub, priv), now),
     preciseLocation: c && wantsPreciseLocation(pub) ? preciseLocationFor(uid, c[0], c[1], preciseKey) : null,
+    businessGeohash: businessGeohashOf(pub),
   };
 }
 
@@ -422,7 +463,8 @@ export function changedSensitive(before: any, after: any): Array<{ pub: string; 
 }
 
 export function coarseInputsChanged(before: any, after: any): boolean {
-  return COARSE_INPUT_FIELDS.some((f) => !valuesEqual(before?.[f], after?.[f]));
+  return COARSE_INPUT_FIELDS.some((f) => !valuesEqual(before?.[f], after?.[f]))
+    || BUSINESS_GEO_INPUTS.some((p) => !valuesEqual(getPath(before, p), getPath(after, p)));
 }
 
 /**

@@ -3599,6 +3599,20 @@
       "queryScope": "COLLECTION",
       "fields": [
         {
+          "fieldPath": "isBusiness",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "businessGeohash",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "profiles",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
           "fieldPath": "isActive",
           "order": "ASCENDING"
         },

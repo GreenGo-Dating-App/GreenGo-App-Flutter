@@ -19,6 +19,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
+import '../../../business/data/business_geo_pager.dart';
 import '../../../business/domain/business_distance.dart';
 import '../../../business/domain/business_name.dart';
 import '../../../business/presentation/screens/business_storefront_screen.dart';
@@ -110,12 +111,24 @@ bool discoveryTileIsBusiness(Profile profile,
 /// most 5 promoted storefronts (the closest ones) float to the top, the rest
 /// keep the nearest-first order. Also returns the ids whose distance came
 /// from the address (shown with 100 m resolution).
+///
+/// [maxDistanceKm] (the Discovery distance filter) is honoured against the
+/// business ADDRESS: an address-measured business farther than that is
+/// dropped. Businesses without an address keep the pool's own filtering.
 ({List<MatchCandidate> candidates, Set<String> addressBasedIds})
-    orderBusinessTiles(List<MatchCandidate> businesses, Location? viewer) {
+    orderBusinessTiles(List<MatchCandidate> businesses, Location? viewer,
+        {int? maxDistanceKm}) {
   final r = BusinessDistance.nearestFirst(businesses, viewer);
   final promoted = <MatchCandidate>[];
   final rest = <MatchCandidate>[];
+  final max =
+      (maxDistanceKm != null && maxDistanceKm > 0) ? maxDistanceKm : null;
   for (final c in r.candidates) {
+    if (max != null &&
+        r.addressBasedIds.contains(c.profile.userId) &&
+        c.distance > max) {
+      continue;
+    }
     (c.profile.isBusinessPromoted && promoted.length < 5 ? promoted : rest)
         .add(c);
   }
@@ -240,10 +253,16 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
     _blockedSub = di.sl<BlockedUsersService>().onUserBlocked.listen((id) {
       if (!mounted) return;
       final list = _candidates;
-      if (list == null) return;
+      final biz = _bizGeoCandidates;
+      if (list == null && biz == null) return;
       setState(() {
-        _candidates =
-            list.where((c) => c.profile.userId != id).toList();
+        if (list != null) {
+          _candidates = list.where((c) => c.profile.userId != id).toList();
+        }
+        if (biz != null) {
+          _bizGeoCandidates =
+              biz.where((c) => c.profile.userId != id).toList();
+        }
       });
     });
   }
@@ -272,6 +291,9 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
       if (_visibleCount < ceiling) {
         setState(() => _visibleCount =
             (_visibleCount + _pageSize).clamp(0, ceiling));
+      } else if (_bizGeoMode && total < _revealCap) {
+        // Everything loaded is revealed: fetch the next nearby businesses.
+        unawaited(_bizLoadMore());
       }
     }
   }
@@ -307,6 +329,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
   // when the pool or the viewer's location changes (not on every build).
   List<MatchCandidate>? _bizMemoSource;
   Location? _bizMemoViewer;
+  int? _bizMemoRadius;
   List<MatchCandidate> _bizOrdered = const [];
   Set<String> _addressDistanceIds = const {};
 
@@ -318,15 +341,139 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
   void _onOwnProfileChanged() {
     if (!mounted || !_effectiveShowBusinesses) return;
     if (_viewerLocation != _bizMemoViewer) setState(() {});
+    unawaited(_startBizGeo());
+  }
+
+  // -- Businesses mode: address-based geo search (owner 2026-10-19) ----------
+  // Businesses are FOUND by their storefront address: a nearest-first
+  // businessGeohash ring scan around the viewer's own location
+  // ([BusinessGeoPager]), paged as the grid scrolls. Falls back to the
+  // people pool (the previous behaviour) when the viewer's location is
+  // unknown, the query fails (e.g. index still building) or the scan finds no
+  // business at all (e.g. before the businessGeohash backfill).
+  BusinessGeoPager? _bizPager;
+  // Loaded businesses; null while the first page loads.
+  List<MatchCandidate>? _bizGeoCandidates;
+  bool _bizLoading = false;
+  bool _bizGeoFailed = false;
+  ({double lat, double lng})? _bizPagerCenter;
+  int? _bizPagerRadius;
+  int _bizGeneration = 0;
+  Future<void>? _bizStarting;
+
+  int? get _distanceFilterKm {
+    final km = _effectivePreferences.maxDistanceKm;
+    return (km == null || km <= 0) ? null : km;
+  }
+
+  /// Whether Businesses mode is served by the address-based geo search.
+  bool get _bizGeoMode {
+    if (!_effectiveShowBusinesses || _bizGeoFailed) return false;
+    if (BusinessGeoPager.searchCenter(_viewerLocation) == null) return false;
+    final p = _bizPager;
+    return p == null || !p.foundNothing;
+  }
+
+  /// The list the grid renders: the geo-loaded businesses in geo mode, else
+  /// the discovery pool. Null while loading.
+  List<MatchCandidate>? get _activeCandidates =>
+      _bizGeoMode ? _bizGeoCandidates : _candidates;
+
+  /// (Re)starts the geo search when Businesses mode is on and the viewer's
+  /// location is known. A no-op while the centre and the distance filter are
+  /// unchanged, unless [force] (pull-to-refresh, edited filters).
+  Future<void> _startBizGeo({bool force = false}) {
+    final running = _bizStarting;
+    if (!force && running != null) return running;
+    final f = _doStartBizGeo(force: force);
+    _bizStarting = f;
+    f.whenComplete(() {
+      if (identical(_bizStarting, f)) _bizStarting = null;
+    }).ignore();
+    return f;
+  }
+
+  Future<void> _doStartBizGeo({required bool force}) async {
+    if (!mounted || !_effectiveShowBusinesses) return;
+    final center = BusinessGeoPager.searchCenter(_viewerLocation);
+    if (center == null) return; // unknown location: people-pool fallback
+    final radius = _distanceFilterKm;
+    if (!force &&
+        _bizPager != null &&
+        center == _bizPagerCenter &&
+        radius == _bizPagerRadius) {
+      return;
+    }
+    final generation = ++_bizGeneration;
+    final Set<String> blocked;
+    try {
+      blocked =
+          await di.sl<BlockedUsersService>().getBlockedUserIds(widget.userId);
+    } catch (_) {
+      // Never risk showing a blocked person: use the people pool instead.
+      if (mounted && generation == _bizGeneration) {
+        setState(() => _bizGeoFailed = true);
+      }
+      return;
+    }
+    if (!mounted || generation != _bizGeneration) return;
+    setState(() {
+      _bizPager = BusinessGeoPager.forViewer(
+        firestore: FirebaseFirestore.instance,
+        viewerId: widget.userId,
+        viewer: _viewerLocation,
+        radiusKm: radius,
+        blockedIds: blocked,
+      );
+      _bizPagerCenter = center;
+      _bizPagerRadius = radius;
+      _bizGeoCandidates = null;
+      _bizGeoFailed = false;
+      _bizLoading = false;
+      _visibleCount = _pageSize;
+    });
+    await _bizLoadMore();
+  }
+
+  /// Appends the next page of nearby businesses (endless scroll).
+  Future<void> _bizLoadMore() async {
+    final pager = _bizPager;
+    if (pager == null || _bizLoading || !pager.hasMore) return;
+    final generation = _bizGeneration;
+    _bizLoading = true;
+    try {
+      final page = await pager.nextPage();
+      if (!mounted || generation != _bizGeneration) return;
+      final have = _bizGeoCandidates ?? const <MatchCandidate>[];
+      final ids = {for (final c in have) c.profile.userId};
+      setState(() {
+        _bizGeoCandidates = [
+          ...have,
+          for (final p in page)
+            if (ids.add(p.userId)) _candidateFor(p),
+        ];
+      });
+    } catch (_) {
+      if (mounted && generation == _bizGeneration) {
+        setState(() => _bizGeoFailed = true);
+      }
+    } finally {
+      if (generation == _bizGeneration) _bizLoading = false;
+    }
   }
 
   List<MatchCandidate> _businessPool(List<MatchCandidate> all) {
     final viewer = _viewerLocation;
-    if (!identical(all, _bizMemoSource) || viewer != _bizMemoViewer) {
+    final radius = _distanceFilterKm;
+    if (!identical(all, _bizMemoSource) ||
+        viewer != _bizMemoViewer ||
+        radius != _bizMemoRadius) {
       final r = orderBusinessTiles(
-          all.where((c) => c.profile.isBusiness).toList(), viewer);
+          all.where((c) => c.profile.isBusiness).toList(), viewer,
+          maxDistanceKm: radius);
       _bizMemoSource = all;
       _bizMemoViewer = viewer;
+      _bizMemoRadius = radius;
       _bizOrdered = r.candidates;
       _addressDistanceIds = r.addressBasedIds;
     }
@@ -334,7 +481,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
   }
 
   List<MatchCandidate> _visibleList() {
-    final all0 = _candidates ?? const <MatchCandidate>[];
+    final all0 = _activeCandidates ?? const <MatchCandidate>[];
     final all = _effectiveShowBusinesses ? _businessPool(all0) : all0;
     final q = _query.trim().toLowerCase();
     final networkIds = _networkIds;
@@ -385,6 +532,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
     await _loadPreferences();
     if (!mounted) return;
     unawaited(_loadSelf());
+    unawaited(_startBizGeo());
     // The cached grid is only a faithful preview of the DEFAULT grid: a seeded
     // (saved-search / interest) grid, a network-filtered one or the business
     // view (businesses sit deep in the pool, past the saved ids) would flash
@@ -561,6 +709,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
         _candidates = null;
         _visibleCount = _pageSize;
       });
+      unawaited(_startBizGeo(force: true));
       await _load();
     } catch (_) {
       // Keep the cached filters.
@@ -831,6 +980,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
       _visibleCount = _pageSize;
     });
 
+    unawaited(_startBizGeo(force: true));
     await _load();
   }
 
@@ -946,6 +1096,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
                   _businessModeOverride = businesses;
                   _visibleCount = _pageSize;
                 });
+                if (businesses) unawaited(_startBizGeo());
               },
             ),
       backgroundColor: AppColors.backgroundDark,
@@ -1057,7 +1208,12 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
               child: RefreshIndicator(
                 color: AppColors.richGold,
                 backgroundColor: AppColors.backgroundCard,
-                onRefresh: () => _load(forceRefresh: true),
+                onRefresh: () => Future.wait([
+                  _load(forceRefresh: true),
+                  // Also retries a geo search that failed (e.g. index
+                  // still building) in Businesses mode.
+                  if (_effectiveShowBusinesses) _startBizGeo(force: true),
+                ]),
                 child: _body(context, l10n, reduceMotion),
               ),
             ),
@@ -1154,7 +1310,14 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
       childAspectRatio: 5 / 7,
     );
 
-    final candidates = _candidates;
+    final candidates = _activeCandidates;
+    final bizGeo = _bizGeoMode;
+    // Safety net: geo mode without a started search (e.g. the location became
+    // known before any trigger ran) starts it after this frame.
+    if (bizGeo && _bizPager == null) {
+      WidgetsBinding.instance
+          .addPostFrameCallback((_) => unawaited(_startBizGeo()));
+    }
 
     // Loading — a grid of skeleton tiles.
     if (candidates == null) {
@@ -1180,9 +1343,20 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
 
     // Loaded but empty (or errored, or filtered to nothing).
     if (filtered.isEmpty && !showSelf && nicknameCandidate == null) {
+      // Businesses geo mode: nothing nearby YET but the scan can go on (a
+      // page whose read budget ran out) → keep loading, not "no results".
+      // Only while nothing at all is loaded: a search / tag filter that hides
+      // every loaded business must not page through the whole area.
+      final geoPending = bizGeo &&
+          candidates.isEmpty &&
+          (_bizPager?.hasMore ?? false);
+      if (geoPending) {
+        WidgetsBinding.instance
+            .addPostFrameCallback((_) => unawaited(_bizLoadMore()));
+      }
       // A remote nickname lookup is still in flight → subtle spinner, not a
       // premature "no profile found" message.
-      if (isSearchingQuery && _nicknameLoading) {
+      if (geoPending || (isSearchingQuery && _nicknameLoading)) {
         return const Center(
           child: SizedBox(
             width: 26,
@@ -1224,10 +1398,12 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
     final revealed = filtered.take(cappedCount).toList();
     final moreBeyondRevealed = filtered.length > revealed.length;
     final reachedCap = revealed.length >= _revealCap;
+    // Businesses geo mode: more pages may still exist on the server.
+    final morePages = bizGeo && (_bizPager?.hasMore ?? false);
     // Still more to progressively reveal within the current cap → spinner.
-    final hasMore = moreBeyondRevealed && !reachedCap;
+    final hasMore = (moreBeyondRevealed || morePages) && !reachedCap;
     // At the discovery limit with more candidates waiting → coin-gated prompt.
-    final showLimitCta = moreBeyondRevealed && reachedCap;
+    final showLimitCta = (moreBeyondRevealed || morePages) && reachedCap;
     // Leading tiles: the pinned nickname match (if any) first, then the "You"
     // tile. Both sit above the distance-ordered pool.
     final nicknameLeading = nicknameCandidate != null ? 1 : 0;
@@ -1259,6 +1435,13 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
             itemBuilder: (context, index) {
               // Loading footer tile (endless-scroll spinner).
               if (hasMore && index == itemCount - 1) {
+                // Footer in view with everything loaded revealed: fetch the
+                // next page of nearby businesses (also covers lists too
+                // short to scroll).
+                if (morePages && !moreBeyondRevealed) {
+                  WidgetsBinding.instance
+                      .addPostFrameCallback((_) => unawaited(_bizLoadMore()));
+                }
                 return const Center(
                   child: Padding(
                     padding: EdgeInsets.all(12),
