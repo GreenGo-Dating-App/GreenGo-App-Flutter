@@ -8388,5 +8388,6 @@
   "bcCheckStorefrontPhoto": "Foto della vetrina",
   "bcTodoStorefrontPhoto": "Aggiungi una foto della vetrina: è la foto della tua attività in Scopri",
   "storefrontChatButton": "Chat",
-  "storefrontEventsLoadError": "Impossibile caricare gli eventi. Riprova."
+  "storefrontEventsLoadError": "Impossibile caricare gli eventi. Riprova.",
+  "businessProfileNameRequiredError": "Inserisci il nome del profilo della tua attività."
 }

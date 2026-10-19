@@ -10,7 +10,9 @@ import 'package:greengo_chat/features/business/presentation/screens/business_sto
 import 'package:greengo_chat/features/business/presentation/screens/business_upcoming_events_screen.dart';
 import 'package:greengo_chat/features/business/presentation/screens/storefront_editor_screen.dart';
 import 'package:greengo_chat/features/business/presentation/widgets/storefront_chat_button.dart';
+import 'package:greengo_chat/features/business/domain/business_name.dart';
 import 'package:greengo_chat/features/discovery/presentation/widgets/network_grid_card.dart';
+import 'package:greengo_chat/features/explore/presentation/screens/network_discovery_screen.dart';
 import 'package:greengo_chat/features/matching/domain/entities/match_candidate.dart';
 import 'package:greengo_chat/features/matching/domain/entities/match_score.dart';
 import 'package:greengo_chat/features/profile/domain/entities/profile.dart';
@@ -44,14 +46,14 @@ MatchCandidate _candidate(Profile p) => MatchCandidate(
       suggestedAt: DateTime(2026, 10, 19),
     );
 
-Future<String?> _tileImage(WidgetTester t, Profile p, {required bool isBusiness}) async {
+Future<String?> _tileImage(WidgetTester t, Profile p, {required bool isBusiness, bool isSelf = false}) async {
   await t.pumpWidget(_app(Scaffold(
     body: SizedBox(
       width: 200,
       height: 300,
       child: NetworkGridCard(
         candidate: _candidate(p),
-        isSelf: false,
+        isSelf: isSelf,
         isBusiness: isBusiness,
         onOpenProfile: () {},
         onLongPressTag: () {},
@@ -115,6 +117,38 @@ void main() {
     });
   });
 
+  group('A. business identity on Discover tiles (incl. own tile)', () {
+    test('own business tile renders as a business only in Businesses mode', () {
+      expect(discoveryTileIsBusiness(business, isSelf: true, businessMode: true), isTrue);
+      expect(discoveryTileIsBusiness(business, isSelf: true, businessMode: false), isFalse);
+      expect(discoveryTileIsBusiness(business, isSelf: false, businessMode: true), isTrue);
+      final person = buildProfile();
+      expect(discoveryTileIsBusiness(person, isSelf: true, businessMode: true), isFalse);
+      expect(discoveryTileIsBusiness(person, isSelf: false, businessMode: false), isFalse);
+    });
+
+    test('search / tag name is the business name for business tiles', () {
+      final c = _candidate(business);
+      expect(discoveryTileName(c, asBusiness: true), "Elena's Cafe");
+      expect(discoveryTileName(c, asBusiness: false), 'Elena Marco');
+      expect(BusinessName.displayFor(business.copyWith(businessName: '  ')), 'Elena Marco');
+    });
+
+    testWidgets('own tile in Businesses mode: business name + first gallery image, no age', (t) async {
+      final url = await _tileImage(t, business, isBusiness: true, isSelf: true);
+      expect(url, 'https://example.com/g1.jpg');
+      final name = t.widget<Text>(find.byKey(const ValueKey('network-grid-card-name'))).data;
+      expect(name, "Elena's Cafe");
+      expect(find.textContaining('Elena Marco'), findsNothing);
+    });
+
+    testWidgets('person tile keeps "Name, age"', (t) async {
+      await _tileImage(t, business, isBusiness: false);
+      final name = t.widget<Text>(find.byKey(const ValueKey('network-grid-card-name'))).data;
+      expect(name, startsWith('Elena Marco, '));
+    });
+  });
+
   group('2. mandatory storefront photo', () {
     test('checklist: storefront photo is a REQUIRED item', () {
       expect(CompanyItem.storefrontPhoto.required, isTrue);
@@ -154,6 +188,61 @@ void main() {
       await t.pump();
       expect(find.byKey(const Key('storefront_gallery_required_error')), findsOneWidget);
       verifyNever(() => bloc.add(any()));
+    });
+  });
+
+  group('B. business profile name in the storefront editor', () {
+    late _MockProfileBloc bloc;
+    setUp(() {
+      registerFallbackValue(ProfileUpdateRequested(profile: business));
+      bloc = _MockProfileBloc();
+      when(() => bloc.state).thenReturn(const ProfileInitial());
+      when(() => bloc.stream).thenAnswer((_) => const Stream.empty());
+    });
+
+    Future<AppLocalizations> pumpEditor(WidgetTester t, Profile p) async {
+      t.view.physicalSize = const Size(1200, 6000);
+      t.view.devicePixelRatio = 1;
+      addTearDown(t.view.resetPhysicalSize);
+      addTearDown(t.view.resetDevicePixelRatio);
+      // No avatar / cover (their previews have no network error handler in
+      // tests); the gallery tiles do.
+      final noNet = p.copyWith(photoUrls: const [], coverImageUrl: '');
+      await t.pumpWidget(_app(BlocProvider<ProfileBloc>.value(value: bloc, child: StorefrontEditorScreen(profile: noNet))));
+      await t.pump();
+      return AppLocalizations.of(t.element(find.byType(StorefrontEditorScreen)))!;
+    }
+
+    test('shared validation (same as Business account)', () {
+      expect(BusinessName.isValid(''), isFalse);
+      expect(BusinessName.isValid('   '), isFalse);
+      expect(BusinessName.isValid(' Cafe '), isTrue);
+      expect(BusinessName.normalize('  Cafe Lua '), 'Cafe Lua');
+    });
+
+    testWidgets('prefilled; an empty name blocks the save with a localized error', (t) async {
+      final l = await pumpEditor(t, business);
+      final field = find.byKey(const ValueKey('storefront-business-name'));
+      expect(t.widget<TextField>(field).controller!.text, "Elena's Cafe");
+      await t.enterText(field, '   ');
+      final save = find.widgetWithText(ElevatedButton, l.save);
+      await t.ensureVisible(save);
+      await t.tap(save);
+      await t.pump();
+      expect(find.text(l.businessProfileNameRequiredError), findsWidgets);
+      verifyNever(() => bloc.add(any()));
+    });
+
+    testWidgets('saves the trimmed business name with the rest of the storefront', (t) async {
+      final l = await pumpEditor(t, business);
+      await t.enterText(find.byKey(const ValueKey('storefront-business-name')), '  Cafe Lua  ');
+      final save = find.widgetWithText(ElevatedButton, l.save);
+      await t.ensureVisible(save);
+      await t.tap(save);
+      await t.pump();
+      final ev = verify(() => bloc.add(captureAny())).captured.single as ProfileUpdateRequested;
+      expect(ev.profile.businessName, 'Cafe Lua');
+      expect(ev.profile.galleryImages, business.galleryImages);
     });
   });
 

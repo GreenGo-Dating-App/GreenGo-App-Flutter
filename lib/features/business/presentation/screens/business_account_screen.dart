@@ -18,6 +18,7 @@ import '../../../coins/presentation/bloc/coin_event.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/domain/entities/profile.dart';
+import '../../domain/business_name.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
@@ -210,14 +211,14 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
 
   bool get _isValid {
     if (!_isBusiness) return true; // nothing business-specific to validate
-    return _nameController.text.trim().isNotEmpty && _category != null;
+    return BusinessName.isValid(_nameController.text) && _category != null;
   }
 
   void _save() {
     if (!_isValid || _isSaving) return;
     setState(() => _isSaving = true);
 
-    final name = _nameController.text.trim();
+    final name = BusinessName.normalize(_nameController.text);
     final legalName = _legalNameController.text.trim();
     final updated = widget.profile.copyWith(
       isBusiness: _isBusiness,

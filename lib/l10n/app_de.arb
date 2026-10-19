@@ -8388,5 +8388,6 @@
   "bcCheckStorefrontPhoto": "Storefront-Foto",
   "bcTodoStorefrontPhoto": "Füge ein Storefront-Foto hinzu: Es ist dein Unternehmensfoto in Entdecken",
   "storefrontChatButton": "Chat",
-  "storefrontEventsLoadError": "Die Events konnten nicht geladen werden. Bitte versuche es erneut."
+  "storefrontEventsLoadError": "Die Events konnten nicht geladen werden. Bitte versuche es erneut.",
+  "businessProfileNameRequiredError": "Gib den Namen deines Unternehmensprofils ein."
 }

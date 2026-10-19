@@ -7814,5 +7814,6 @@
   "bcCheckStorefrontPhoto": "Photo de la vitrine",
   "bcTodoStorefrontPhoto": "Ajoutez une photo de vitrine : c'est la photo de votre entreprise dans Découvrir",
   "storefrontChatButton": "Chat",
-  "storefrontEventsLoadError": "Impossible de charger les événements. Veuillez réessayer."
+  "storefrontEventsLoadError": "Impossible de charger les événements. Veuillez réessayer.",
+  "businessProfileNameRequiredError": "Saisissez le nom du profil de votre entreprise."
 }

@@ -18,6 +18,7 @@ import '../../../profile/presentation/screens/edit_location_screen.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
+import '../../domain/business_name.dart';
 
 /// Storefront editor — lets a business account owner curate the public
 /// storefront that visitors see in [BusinessStorefrontScreen].
@@ -65,6 +66,10 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
 
   late List<String> _galleryImages;
   late List<OpeningHours> _openingHours; // exactly 7, index 0 = Monday
+  // Business PROFILE name (profiles/{uid}.businessName) - the same field the
+  // Business account screen edits; validated by [BusinessName].
+  late TextEditingController _businessNameController;
+  bool _businessNameError = false;
   late TextEditingController _descController;
   late TextEditingController _whatsappController;
   String? _category;
@@ -112,6 +117,9 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
       (i) => saved[i + 1] ?? OpeningHours(weekday: i + 1, isClosed: true),
     );
 
+    _businessNameController = TextEditingController(
+      text: widget.profile.businessName ?? '',
+    );
     _descController = TextEditingController(
       text: widget.profile.storefrontBio ?? '',
     );
@@ -131,6 +139,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
 
   @override
   void dispose() {
+    _businessNameController.dispose();
     _descController.dispose();
     _whatsappController.dispose();
     for (final c in _linkControllers) {
@@ -276,7 +285,11 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
       }
     }
 
+    final businessName =
+        BusinessName.normalize(_businessNameController.text);
     return widget.profile.copyWith(
+      // Empty (only in a nested, not-yet-validated draft) keeps the stored one.
+      businessName: businessName.isNotEmpty ? businessName : null,
       photoUrls: photoUrls,
       galleryImages: _galleryImages,
       // '' sentinel persists a removal; a URL persists the new cover; null
@@ -298,12 +311,19 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   }
 
   void _save() {
-    if (!StorefrontEditorScreen.hasRequiredGallery(_galleryImages)) {
-      setState(() => _galleryRequiredError = true);
-      final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context)!;
+    final nameOk = BusinessName.isValid(_businessNameController.text);
+    final galleryOk = StorefrontEditorScreen.hasRequiredGallery(_galleryImages);
+    if (!nameOk || !galleryOk) {
+      setState(() {
+        _businessNameError = !nameOk;
+        _galleryRequiredError = !galleryOk;
+      });
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(l10n.storefrontGalleryRequiredError),
+          content: Text(!nameOk
+              ? l10n.businessProfileNameRequiredError
+              : l10n.storefrontGalleryRequiredError),
           backgroundColor: AppColors.errorRed,
         ),
       );
@@ -402,6 +422,25 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           padding: const EdgeInsets.all(AppDimensions.paddingL),
           children: [
+            // Business profile name (required) - shown in Discover and on
+            // the storefront.
+            _sectionHeader('${l10n.businessProfileNameLabel} *',
+                l10n.businessProfileNameHint),
+            const SizedBox(height: 12),
+            _glassField(
+              key: const ValueKey('storefront-business-name'),
+              controller: _businessNameController,
+              hint: l10n.businessProfileNameLabel,
+              errorText:
+                  _businessNameError ? l10n.businessProfileNameRequiredError : null,
+              onChanged: (v) {
+                if (_businessNameError && BusinessName.isValid(v)) {
+                  setState(() => _businessNameError = false);
+                }
+              },
+            ),
+            const SizedBox(height: 28),
+
             // Featured / cover (hero) image
             _sectionHeader(
                 l10n.storefrontFeaturedImage, l10n.storefrontFeaturedImageSubtitle),
@@ -1139,15 +1178,21 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
     required String hint,
     int maxLines = 1,
     TextInputType? keyboardType,
+    Key? key,
+    String? errorText,
+    ValueChanged<String>? onChanged,
   }) {
     return TextField(
+      key: key,
       controller: controller,
+      onChanged: onChanged,
       maxLines: maxLines,
       keyboardType: keyboardType,
       style: const TextStyle(color: AppColors.textPrimary),
       decoration: InputDecoration(
         hintText: hint,
         hintStyle: const TextStyle(color: AppColors.textTertiary),
+        errorText: errorText,
         filled: true,
         fillColor: AppColors.backgroundCard,
         border: OutlineInputBorder(

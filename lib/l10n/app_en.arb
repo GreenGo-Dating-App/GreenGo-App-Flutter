@@ -15955,5 +15955,9 @@
   "storefrontEventsLoadError": "Could not load the events. Please try again.",
   "@storefrontEventsLoadError": {
     "description": "Business storefront 'See all' upcoming events list: load error."
+  },
+  "businessProfileNameRequiredError": "Enter your business profile name.",
+  "@businessProfileNameRequiredError": {
+    "description": "Storefront editor: error when the required business profile name (profiles.businessName) is empty."
   }
 }

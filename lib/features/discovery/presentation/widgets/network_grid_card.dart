@@ -9,6 +9,7 @@ import '../../../../core/theme/app_glass.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../matching/domain/entities/match_candidate.dart';
+import '../../../business/domain/business_name.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/utils/distance_bucket.dart';
@@ -313,7 +314,12 @@ class _NetworkGridCardState extends State<NetworkGridCard> {
                 Row(children: [
                   Flexible(
                     child: Text(
-                      '${widget.candidate.displayName}, ${widget.candidate.age}',
+                      // Business tiles show the BUSINESS identity (its
+                      // business name, no personal age).
+                      widget.isBusiness
+                          ? BusinessName.displayFor(profile)
+                          : '${widget.candidate.displayName}, ${widget.candidate.age}',
+                      key: const ValueKey('network-grid-card-name'),
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 15,

@@ -18,6 +18,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
+import '../../../business/domain/business_name.dart';
 import '../../../business/presentation/screens/business_storefront_screen.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
@@ -91,6 +92,19 @@ class NetworkDiscoveryScreen extends StatefulWidget {
   @override
   State<NetworkDiscoveryScreen> createState() => _NetworkDiscoveryScreenState();
 }
+
+/// Whether a tile renders as a BUSINESS (business name + first storefront
+/// gallery image, opens the storefront). Other users: whenever the profile is a
+/// business. The viewer's OWN tile: only in Businesses mode (owner 2026-10-19),
+/// so People mode is unchanged.
+bool discoveryTileIsBusiness(Profile profile,
+        {required bool isSelf, required bool businessMode}) =>
+    profile.isBusiness && (!isSelf || businessMode);
+
+/// The name a Discover tile is searched / tagged under: the business name for
+/// business tiles, the personal display name otherwise.
+String discoveryTileName(MatchCandidate c, {required bool asBusiness}) =>
+    asBusiness ? BusinessName.displayFor(c.profile) : c.displayName;
 
 class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
   /// How many tiles to reveal per page as the user scrolls (client-side
@@ -276,7 +290,10 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
           !networkIds.contains(c.profile.userId)) {
         return false;
       }
-      if (q.isNotEmpty && !c.displayName.toLowerCase().contains(q)) {
+      if (q.isNotEmpty &&
+          !discoveryTileName(c, asBusiness: c.profile.isBusiness)
+              .toLowerCase()
+              .contains(q)) {
         return false;
       }
       return true;
@@ -308,7 +325,10 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
     if (self == null) return false;
     if (_showMyNetwork) return false;
     final q = _query.trim().toLowerCase();
-    if (q.isNotEmpty && !self.displayName.toLowerCase().contains(q)) {
+    final selfName = discoveryTileName(self,
+        asBusiness: discoveryTileIsBusiness(self.profile,
+            isSelf: true, businessMode: _effectiveShowBusinesses));
+    if (q.isNotEmpty && !selfName.toLowerCase().contains(q)) {
       return false;
     }
     return true;
@@ -1403,7 +1423,9 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
     // Business accounts get the same premium effect as Explore's Featured
     // community-event card: a gold-framed tile that opens the public
     // storefront (on BOTH photo and name taps) instead of chat/profile.
-    final isBusiness = !isSelf && profile.isBusiness;
+    // The viewer's own business renders as a business in Businesses mode.
+    final isBusiness = discoveryTileIsBusiness(profile,
+        isSelf: isSelf, businessMode: _effectiveShowBusinesses);
     void openStorefront() {
       Navigator.of(context).push(
         MaterialPageRoute<void>(
@@ -1448,7 +1470,8 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
                 context,
                 ownerId: widget.userId,
                 targetUserId: profile.userId,
-                targetName: candidate.displayName,
+                targetName:
+                    discoveryTileName(candidate, asBusiness: isBusiness),
               ),
     );
   }

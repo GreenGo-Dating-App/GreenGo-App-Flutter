@@ -8388,5 +8388,6 @@
   "bcCheckStorefrontPhoto": "Foto de la tienda",
   "bcTodoStorefrontPhoto": "Añade una foto de la tienda: es la foto de tu negocio en Descubrir",
   "storefrontChatButton": "Chat",
-  "storefrontEventsLoadError": "No se pudieron cargar los eventos. Inténtalo de nuevo."
+  "storefrontEventsLoadError": "No se pudieron cargar los eventos. Inténtalo de nuevo.",
+  "businessProfileNameRequiredError": "Introduce el nombre del perfil de tu negocio."
 }
