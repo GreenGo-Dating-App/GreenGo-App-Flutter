@@ -190,6 +190,9 @@ void main() {
     test('Discover AppBar has no mode title text (owner 2026-10-19)', () {
       final src = File('lib/features/explore/presentation/screens/network_discovery_screen.dart').readAsStringSync();
       expect(src.contains('discover-mode-title'), isFalse);
+      // The People | Businesses switch floats at the bottom (owner, 2026-10-19).
+      expect(src.contains('floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat'), isTrue);
+      expect(src.contains('discover-people-business-switch'), isTrue);
       expect(src.contains('l10n.exploreBusinessAccounts'), isFalse);
     });
 

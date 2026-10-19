@@ -929,6 +929,25 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
     final reduceMotion = MediaQuery.of(context).disableAnimations;
 
     return Scaffold(
+      // People | Businesses switch floats at the BOTTOM of the screen, just
+      // above the app's menu bar (owner, 2026-10-19). Both icons always
+      // visible, the active one gold. Instant, no reload.
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: _searching
+          ? null
+          : _PeopleBusinessSwitch(
+              key: const ValueKey('discover-people-business-switch'),
+              showBusinesses: _effectiveShowBusinesses,
+              peopleLabel: l10n.discoverySegmentPeople,
+              businessesLabel: l10n.discoverySegmentBusinesses,
+              onChanged: (businesses) {
+                if (businesses == _effectiveShowBusinesses) return;
+                setState(() {
+                  _businessModeOverride = businesses;
+                  _visibleCount = _pageSize;
+                });
+              },
+            ),
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
@@ -957,24 +976,6 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
             // switch in the actions already shows the mode.
             : null,
         actions: [
-          // People | Businesses mini switch next to search (owner, 2026-10-19):
-          // both icons always visible, the active one gold. Instant, no reload.
-          if (!_searching)
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8),
-              child: _PeopleBusinessSwitch(
-                showBusinesses: _effectiveShowBusinesses,
-                peopleLabel: l10n.discoverySegmentPeople,
-                businessesLabel: l10n.discoverySegmentBusinesses,
-                onChanged: (businesses) {
-                  if (businesses == _effectiveShowBusinesses) return;
-                  setState(() {
-                    _businessModeOverride = businesses;
-                    _visibleCount = _pageSize;
-                  });
-                },
-              ),
-            ),
           IconButton(
             icon: Icon(_searching ? Icons.close : Icons.search),
             tooltip: l10n.searchByNicknameTooltip,
@@ -1251,7 +1252,8 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
             // Allow overscroll so pull-to-refresh triggers even when the grid
             // isn't full.
             physics: const AlwaysScrollableScrollPhysics(),
-            padding: EdgeInsets.zero,
+            // Room for the floating People | Businesses switch at the bottom.
+            padding: const EdgeInsets.only(bottom: 72),
             gridDelegate: gridDelegate,
             itemCount: itemCount,
             itemBuilder: (context, index) {
@@ -1566,6 +1568,7 @@ class _CandidateSkeletonState extends State<_CandidateSkeleton>
 /// and screen readers.
 class _PeopleBusinessSwitch extends StatelessWidget {
   const _PeopleBusinessSwitch({
+    super.key,
     required this.showBusinesses,
     required this.peopleLabel,
     required this.businessesLabel,
@@ -1613,6 +1616,9 @@ class _PeopleBusinessSwitch extends StatelessWidget {
         color: AppColors.backgroundCard,
         borderRadius: BorderRadius.circular(20),
         border: Border.all(color: AppColors.divider),
+        boxShadow: const [
+          BoxShadow(color: Colors.black54, blurRadius: 12, offset: Offset(0, 4)),
+        ],
       ),
       child: Row(mainAxisSize: MainAxisSize.min, children: [
         side(false, Icons.people_alt_outlined, peopleLabel),
