@@ -293,7 +293,8 @@ Vous décidez de le remplir ou non.
   fantôme ou incognito.
 - Vos évaluations en tant qu'hôte ou invité, et les avis que d'autres laissent
   à votre sujet.
-- Votre nombre d'abonnés (sur votre profil ou votre boutique).
+- Vos abonnés et les comptes que vous suivez, et leur nombre (sur votre
+  profil ou votre boutique).
 
 Les personnes que vous avez bloquées ne peuvent pas voir votre profil.
 
@@ -305,10 +306,8 @@ d'identité que vous avez fournies à partir de celle-ci, votre selfie de
 vérification et les photos de votre album privé (sauf si vous accordez à
 quelqu'un l'accès à votre album privé).
 
-Qui vous suit, qui vous suivez, et vos nombres d'abonnements et de boutiques.
-Cela vaut pour les comptes personnels et professionnels. Les autres
-utilisateurs peuvent vous suivre et voir votre nombre d'abonnés (4.1), mais
-vous seul voyez qui ils sont.
+Votre nombre de boutiques (combien d'entreprises vous suivez). Cela vaut pour
+les comptes personnels et professionnels.
 
 4.3 Contenus que vous partagez
 
@@ -1715,10 +1714,9 @@ Précisions pour correspondre au fonctionnement de l'application :
 - Points 11.4, 11.7 et 12.3 : les noms des titulaires de billets, si
   l'organisateur les demande, sont communiqués uniquement à l'organisateur
   et figurent sur les billets.
-- Points 4.1 et 4.2 : votre nombre d'abonnés est affiché sur votre profil ou
-  votre boutique ; qui vous suit, qui vous suivez et vos nombres d'abonnements
-  et de boutiques ne sont jamais montrés aux autres utilisateurs (comptes
-  professionnels compris).
+- Points 4.1 et 4.2 : vos abonnés et les comptes que vous suivez, et leur
+  nombre, sont visibles par les autres utilisateurs (comptes professionnels
+  compris) ; seul votre nombre de boutiques n'est jamais montré.
 - Points 2, 5 et 9 : les fonctionnalités d'IA sont la traduction, la lecture
   vocale et la translittération (les réponses suggérées et la décomposition
   des mots ne sont pas proposées) ; les messages de chat sont traduits avec

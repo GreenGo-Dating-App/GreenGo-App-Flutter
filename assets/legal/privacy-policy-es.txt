@@ -282,7 +282,8 @@ rellenas.
   incógnito.
 - Tus valoraciones como anfitrión o invitado, y las reseñas que otros dejan
   sobre ti.
-- Tu número de seguidores (en tu perfil o tu tienda).
+- Tus seguidores y las cuentas que sigues, y cuántos son (en tu perfil o tu
+  tienda).
 
 Las personas que has bloqueado no pueden ver tu perfil.
 
@@ -293,9 +294,8 @@ número de teléfono, documento de identidad y los datos de identidad que diste
 a partir de él, selfi de verificación y fotos del álbum privado (salvo que
 concedas a alguien acceso a tu álbum privado).
 
-Quién te sigue, a quién sigues y tus números de seguidos y tiendas. Esto vale
-para cuentas personales y de empresa. Otros usuarios pueden seguirte y ver tu
-número de seguidores (4.1), pero solo tú ves quiénes son.
+Tu número de tiendas (a cuántas empresas sigues). Esto vale para cuentas
+personales y de empresa.
 
 4.3 Contenido que compartes
 
@@ -1633,9 +1633,9 @@ Aclaraciones para ajustarse al funcionamiento de la app:
 - Secciones 11.4, 11.7 y 12.3: los nombres de los titulares de las
   entradas, si el organizador los pide, se comparten solo con el
   organizador y aparecen en las entradas.
-- Secciones 4.1 y 4.2: tu número de seguidores se muestra en tu perfil o tu
-  tienda; quién te sigue, a quién sigues y tus números de seguidos y tiendas
-  nunca se muestran a otros usuarios (también en cuentas de empresa).
+- Secciones 4.1 y 4.2: tus seguidores y las cuentas que sigues, y cuántos
+  son, son visibles para otros usuarios (también en cuentas de empresa); solo
+  tu número de tiendas nunca se muestra.
 - Secciones 2, 5 y 9: las funciones de IA son la traducción, la lectura en
   voz alta y la transliteración (no se ofrecen respuestas inteligentes ni
   desglose de palabras); los mensajes del chat se traducen con los servicios
