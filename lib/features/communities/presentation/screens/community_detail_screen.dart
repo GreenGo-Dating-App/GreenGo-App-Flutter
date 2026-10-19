@@ -109,6 +109,10 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
   /// pinned promo.
   late Community _community;
 
+  /// Last detail state of THIS community, kept on screen while the shared
+  /// bloc emits list states (see buildWhen).
+  CommunityDetailLoaded? _lastDetail;
+
   @override
   void initState() {
     super.initState();
@@ -226,7 +230,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                 backgroundColor: AppColors.successGreen,
               ),
             );
-          } else if (state is CommunityDetailLoaded) {
+          } else if (state is CommunityDetailLoaded &&
+              state.community.id == widget.community.id) {
             // Check membership + role + refresh the community (sponsor/promo may
             // have changed since navigation). Membership comes from the user's
             // single members/{uid} doc - only applied once it has resolved, so
@@ -263,11 +268,26 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
         // Transient one-shot states (joined / left / request sent / an action
         // error) are handled by the listener; keep the loaded detail on
         // screen instead of swapping it for the fallback text.
-        buildWhen: (previous, current) =>
-            current is CommunityDetailLoaded ||
-            current is CommunitiesLoading ||
-            previous is! CommunityDetailLoaded,
-        builder: (context, state) {
+        //
+        // The CommunitiesBloc is SHARED with the communities list underneath:
+        // after a join the list reloads itself (CommunitiesLoading /
+        // CommunitiesLoaded) and those states used to replace this page with
+        // "Unable to load community" (bug 2026-10-19). Once THIS community is
+        // on screen, ignore every other state and keep showing it.
+        buildWhen: (previous, current) {
+          if (current is CommunityDetailLoaded) {
+            return current.community.id == widget.community.id;
+          }
+          if (_lastDetail != null) return false;
+          return current is CommunitiesLoading ||
+              previous is! CommunityDetailLoaded;
+        },
+        builder: (context, rawState) {
+          final CommunitiesState state = rawState is CommunityDetailLoaded &&
+                  rawState.community.id == widget.community.id
+              ? rawState
+              : (_lastDetail ?? rawState);
+          if (state is CommunityDetailLoaded) _lastDetail = state;
           if (state is CommunitiesLoading) {
             return const Center(
               child: CircularProgressIndicator(color: AppColors.richGold),
