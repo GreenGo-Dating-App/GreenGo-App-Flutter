@@ -33,7 +33,7 @@ import '../../../chat/presentation/connect_and_chat.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
 import '../../../follows/presentation/follow_toggle_controller.dart';
 import '../../../follows/presentation/widgets/own_follow_stats.dart';
-import '../../../follows/presentation/widgets/public_follower_count_line.dart';
+import '../../../follows/presentation/widgets/public_follow_stats_line.dart';
 import '../../../follows/presentation/widgets/user_follow_button.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/match.dart';
@@ -682,13 +682,14 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                           ],
                         ),
 
-                        // Followers line under the city. The NUMBER of
-                        // followers is public (owner decision 2026-10-19);
-                        // the lists and the following count stay private:
+                        // Follow line under the city. Followers AND
+                        // following (counts and lists) are public (owner
+                        // decisions 2026-10-19); only stores stays private:
                         //  - "View my profile": own followers · following,
                         //    each tappable (opens the own list);
-                        //  - anyone else: "N followers", not tappable,
-                        //    hidden at 0, moved by the app-bar Follow button.
+                        //  - anyone else: "N followers · M following", each
+                        //    part tappable (opens THEIR lists, also at 0);
+                        //    followers moved by the app-bar Follow button.
                         if (_isSelfView) ...[
                           const SizedBox(height: 6),
                           OwnFollowStatsLine(
@@ -696,8 +697,9 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                             currentUserId: widget.currentUserId,
                           ),
                         ] else if (widget.currentUserId.isNotEmpty)
-                          PublicFollowerCountLine(
+                          PublicFollowStatsLine(
                             userId: widget.profile.userId,
+                            currentUserId: widget.currentUserId,
                             controller: _followController,
                           ),
 

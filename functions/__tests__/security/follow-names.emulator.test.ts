@@ -148,8 +148,15 @@ describe('server stamping + prefix search', () => {
     const all = await clientSearch(T, `business_followers/${T}`, 'followers', 'followerNameLower', 'mar');
     expect(all.status).toBe(200);
     expect(all.ids).toEqual(['u4', 'u2', 'u1', 'u3']); // marcos, maria jose, maria silva, mario
-    // Private follows (2026-10-17): nobody else may search T's followers.
-    expect((await clientSearch('u5', `business_followers/${T}`, 'followers', 'followerNameLower', 'mar')).status).toBe(403);
+    // Public follow lists (owner decision 2026-10-19): any signed-in user may
+    // search T's followers (server-written names, read-only to clients).
+    const other = await clientSearch('u5', `business_followers/${T}`, 'followers', 'followerNameLower', 'mar');
+    expect(other.status).toBe(200);
+    expect(other.ids).toEqual(['u4', 'u2', 'u1', 'u3']);
+    // ...and whom u1 follows (u1's Following tab, viewed by someone else).
+    const otherFollowing = await clientSearch('u5', 'user_business_following/u1', 'businesses', 'followeeNameLower', 'tam');
+    expect(otherFollowing.status).toBe(200);
+    expect(otherFollowing.ids).toEqual([T]);
 
     // Endless loading: limit 2 + startAfter the last row.
     const p1 = await clientSearch(T, `business_followers/${T}`, 'followers', 'followerNameLower', 'mar', 2);

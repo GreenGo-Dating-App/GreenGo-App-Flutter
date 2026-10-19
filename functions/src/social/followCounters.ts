@@ -29,14 +29,15 @@
  *    that would have gone below zero (drifted legacy data) is clamped back to
  *    0 right after.
  *
- * PUBLIC FOLLOWER COUNT (owner decision 2026-10-19): the NUMBER of followers
- * of every user and business is public; who follows, the following count and
- * the stores count stay private. The same transactions that move
- * `follow_counts/{uid}.followersCount` also move
- * `follower_counts_public/{uid}.followersCount` (+ `updatedAt`), a tiny doc
- * that any signed-in user may `get` (never list). It carries ONLY the
- * follower count, never following / stores, and is not the public profile,
- * so a follow still fires no profile trigger.
+ * PUBLIC FOLLOW COUNTS (owner decisions 2026-10-19): the NUMBER of followers
+ * AND the number followed (following) of every user and business are public,
+ * and so are the follower / following lists; ONLY the stores count stays
+ * private (follow_counts). The same transactions that move
+ * `follow_counts/{uid}.followersCount` / `.followingCount` also move
+ * `follower_counts_public/{uid}.followersCount` / `.followingCount`
+ * (+ `updatedAt`), a tiny doc that any signed-in user may `get` (never
+ * list). It never carries storesCount, and is not the public profile, so a
+ * follow still fires no profile trigger.
  * scripts/backfill-public-follower-counts.ts seeds it from follow_counts.
  */
 
@@ -109,7 +110,7 @@ export function countsRef(db: any, uid: string) {
   return db.collection(FOLLOW_COUNTS).doc(uid);
 }
 
-/** Public follower-count document (followersCount + updatedAt ONLY). */
+/** Public follow-count document (followersCount / followingCount + updatedAt ONLY). */
 export const FOLLOWER_COUNTS_PUBLIC = 'follower_counts_public';
 
 export function publicCountsRef(db: any, uid: string) {
@@ -122,6 +123,14 @@ export function publicCountsRef(db: any, uid: string) {
  */
 export function publicFollowerDelta(increment: unknown, now: Date): Record<string, unknown> {
   return { followersCount: increment, updatedAt: now };
+}
+
+/**
+ * The public-doc write that accompanies every followingCount change (the
+ * FOLLOWER's doc). Only these two fields, ever: storesCount stays private.
+ */
+export function publicFollowingDelta(increment: unknown, now: Date): Record<string, unknown> {
+  return { followingCount: increment, updatedAt: now };
 }
 
 /**
@@ -163,6 +172,7 @@ export async function countEdge(
         isStore ? { followingCount: increment(1), storesCount: increment(1) } : { followingCount: increment(1) },
         { merge: true },
       );
+      txn.set(publicCountsRef(db, followerId), publicFollowingDelta(increment(1), now), { merge: true });
     }
     return true;
   });
@@ -213,6 +223,7 @@ export async function uncountEdge(
         store ? { followingCount: increment(-1), storesCount: increment(-1) } : { followingCount: increment(-1) },
         { merge: true },
       );
+      txn.set(publicCountsRef(db, followerId), publicFollowingDelta(increment(-1), now), { merge: true });
     }
     return true;
   });
@@ -221,6 +232,7 @@ export async function uncountEdge(
       followee.exists ? clampNonNegative(deps, countsRef(db, followeeId), 'followersCount') : null,
       followee.exists ? clampNonNegative(deps, publicCountsRef(db, followeeId), 'followersCount') : null,
       follower.exists ? clampNonNegative(deps, countsRef(db, followerId), 'followingCount') : null,
+      follower.exists ? clampNonNegative(deps, publicCountsRef(db, followerId), 'followingCount') : null,
       follower.exists && store ? clampNonNegative(deps, countsRef(db, followerId), 'storesCount') : null,
     ]);
   }

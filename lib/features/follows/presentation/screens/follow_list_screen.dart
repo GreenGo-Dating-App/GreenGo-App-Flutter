@@ -18,12 +18,15 @@ import '../../../business/data/services/follow_service.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../widgets/user_follow_button.dart';
 
-/// Followers / Following of [userId] — two tabs (with live counts), endless
+/// Followers / Following of [userId] — two tabs (with counts), endless
 /// scroll (30 per page), pull to refresh, and a name search per tab.
 ///
-/// PRIVATE (owner rule 2026-10-17): only the signed-in user's OWN lists.
-/// For any other [userId] the screen reads nothing and shows nothing (the
-/// rules would refuse the reads anyway).
+/// PUBLIC (owner decision 2026-10-19): opens for ANY account, users and
+/// businesses alike (a business's followers are the same canonical
+/// `business_followers/{businessId}/followers` edges). Tab counts: the own
+/// account reads its live owner-only counters ([FollowService.counts]);
+/// anyone else reads the public [FollowService.publicFollowCounts] once.
+/// "Follows you" is shown only on the viewer's OWN Followers tab.
 ///
 /// Each page is ONE ordered read of a single subcollection (auto single-field
 /// index on `createdAt`). The search is SERVER-side over the WHOLE list: a
@@ -46,9 +49,10 @@ class FollowListScreen extends StatefulWidget {
   /// 0 = followers, 1 = following.
   final int initialTab;
 
-  /// True when the lists of [userId] may be shown to [currentUserId].
+  /// True when the lists of [userId] can be shown: any account (public lists,
+  /// owner decision 2026-10-19), as long as the viewer is signed in.
   static bool canOpen(String userId, String currentUserId) =>
-      userId.isNotEmpty && userId == currentUserId;
+      userId.isNotEmpty && currentUserId.isNotEmpty;
 
   static Route<void> route({
     required String userId,
@@ -69,20 +73,37 @@ class FollowListScreen extends StatefulWidget {
 
 class _FollowListScreenState extends State<FollowListScreen> {
   StreamSubscription<FollowCounts>? _sub;
-  FollowCounts? _counts;
+
+  /// Tab counts: (followers, following); null until known.
+  ({int followers, int following})? _counts;
+
+  bool get _own => widget.userId == widget.currentUserId;
 
   @override
   void initState() {
     super.initState();
-    // One single-doc listener for the tab counts (server counters + this
-    // device's not-yet-counted changes).
-    if (FollowListScreen.canOpen(widget.userId, widget.currentUserId)) {
-      _sub = di.sl<FollowService>().counts(widget.userId).listen(
+    if (!FollowListScreen.canOpen(widget.userId, widget.currentUserId)) return;
+    final service = di.sl<FollowService>();
+    if (_own) {
+      // Own lists: one single-doc listener (owner-only server counters +
+      // this device's not-yet-counted changes).
+      _sub = service.counts(widget.userId).listen(
         (c) {
-          if (mounted) setState(() => _counts = c);
+          if (mounted) {
+            setState(() =>
+                _counts = (followers: c.followers, following: c.following));
+          }
         },
         onError: (_) {},
       );
+    } else {
+      // Someone else's lists: ONE cached get of the public counts.
+      service.publicFollowCounts(widget.userId).then((c) {
+        if (mounted && c != null) {
+          setState(() =>
+              _counts = (followers: c.followers, following: c.following));
+        }
+      }, onError: (_) {});
     }
   }
 
@@ -95,9 +116,9 @@ class _FollowListScreenState extends State<FollowListScreen> {
   @override
   Widget build(BuildContext context) {
     if (!FollowListScreen.canOpen(widget.userId, widget.currentUserId)) {
-      // Someone else's lists are private: show (and read) nothing.
+      // Signed out / no account: show (and read) nothing.
       return Scaffold(
-        key: const Key('follow_list_private'),
+        key: const Key('follow_list_unavailable'),
         backgroundColor: AppColors.backgroundDark,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
@@ -512,8 +533,9 @@ class _FollowListTabState extends State<FollowListTab>
     }
 
     final showFooter = message == null && (p.loading || p.error);
-    // My own followers list: everyone here follows me. Elsewhere knowing it
-    // would cost one read per row, so "Follows you" is not shown.
+    // My own followers list: everyone here follows me. Elsewhere (my
+    // Following tab, anyone else's lists) knowing it would cost one read per
+    // row, so "Follows you" is not shown.
     final followsYou =
         widget.followersTab && widget.userId == widget.currentUserId;
     final rows = visible.length;

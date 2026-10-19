@@ -130,22 +130,90 @@ void main() {
     expect(find.text('Ana 24'), findsOneWidget);
   });
 
-  testWidgets("someone else's lists are private: nothing is shown or read",
+  Future<void> publicCounts(String uid, {int followers = 0, int following = 0}) =>
+      w.fs.collection('follower_counts_public').doc(uid).set(
+          {'followersCount': followers, 'followingCount': following});
+
+  testWidgets(
+      "someone else's lists open (public, owner decision 2026-10-19): "
+      'public tab counts, rows with follow pills, no "Follows you"',
       (tester) async {
-    await w.counts('t', followers: 2, following: 1);
+    // Private counters must NOT be what another viewer sees.
+    await w.counts('t', followers: 99, following: 99, stores: 5);
+    await publicCounts('t', followers: 2, following: 1);
     await w.follow('u1', 't', followerName: 'ana');
-    w.briefs({'u1': const UserBrief(name: 'Ana')});
+    await w.follow('me', 't', followerName: 'me');
+    await w.follow('t', 'x1', followeeName: 'bia');
+    w.briefs({
+      'u1': const UserBrief(name: 'Ana', city: 'Rome'),
+      'me': const UserBrief(name: 'Me'),
+      'x1': const UserBrief(name: 'Bia'),
+    });
     await tester.pumpWidget(
         _app(const FollowListScreen(userId: 't', currentUserId: 'me')));
     await tester.pumpAndSettle();
-    expect(find.byKey(const Key('follow_list_private')), findsOneWidget);
-    expect(rows(), findsNothing);
-    expect(find.byType(TabBar), findsNothing);
-    expect(find.textContaining('Followers'), findsNothing);
-    expect(find.text('Ana'), findsNothing);
-    expect(FollowListScreen.canOpen('t', 'me'), isFalse);
+
+    expect(find.byKey(const Key('follow_list_unavailable')), findsNothing);
+    expect(find.text('Followers 2'), findsOneWidget);
+    expect(find.text('Following 1'), findsOneWidget);
+    expect(find.textContaining('99'), findsNothing);
+    expect(rows(), findsNWidgets(2));
+    expect(find.text('Ana'), findsOneWidget);
+    // Not MY followers list: they follow t, not me.
+    expect(find.textContaining('Follows you'), findsNothing);
+    expect(find.text('Rome'), findsOneWidget);
+    // Follow pill on others' rows, none on my own row.
+    expect(
+        find.descendant(
+            of: find.byKey(const ValueKey('follow_row_u1')),
+            matching: find.byType(UserFollowButton)),
+        findsOneWidget);
+    expect(
+        find.descendant(
+            of: find.byKey(const ValueKey('follow_row_me')),
+            matching: find.byType(UserFollowButton)),
+        findsNothing);
+
+    await tester.tap(find.text('Following 1'));
+    await tester.pumpAndSettle();
+    expect(find.text('Bia'), findsOneWidget);
+    expect(find.textContaining('Follows you'), findsNothing);
+  });
+
+  testWidgets("search on someone else's list queries THEIR edges",
+      (tester) async {
+    await publicCounts('t', followers: 3);
+    await w.follow('u1', 't', followerName: 'maria silva');
+    await w.follow('u2', 't', followerName: 'joao');
+    await w.follow('u3', 'me', followerName: 'mario'); // follows me, not t
+    w.briefs({
+      'u1': const UserBrief(name: 'Maria Silva'),
+      'u2': const UserBrief(name: 'João'),
+      'u3': const UserBrief(name: 'Mário'),
+    });
+    await tester.pumpWidget(
+        _app(const FollowListScreen(userId: 't', currentUserId: 'me')));
+    await tester.pumpAndSettle();
+    expect(rows(), findsNWidgets(2));
+    await search(tester, 'mar');
+    expect(rows(), findsOneWidget);
+    expect(find.text('Maria Silva'), findsOneWidget);
+    expect(find.text('Mário'), findsNothing);
+  });
+
+  testWidgets("someone else's empty lists show the empty state", (tester) async {
+    await tester.pumpWidget(_app(const FollowListScreen(
+        userId: 't', currentUserId: 'me', initialTab: 1)));
+    await tester.pumpAndSettle();
+    expect(find.text('Following 0'), findsOneWidget);
+    expect(find.byKey(const Key('follow_list_message')), findsOneWidget);
+  });
+
+  test('canOpen: any account for a signed-in viewer', () {
+    expect(FollowListScreen.canOpen('t', 'me'), isTrue);
     expect(FollowListScreen.canOpen('me', 'me'), isTrue);
-    expect(FollowListScreen.canOpen('', ''), isFalse);
+    expect(FollowListScreen.canOpen('t', ''), isFalse);
+    expect(FollowListScreen.canOpen('', 'me'), isFalse);
   });
 
   testWidgets('pill flips Follow -> Following (filled -> outlined)',

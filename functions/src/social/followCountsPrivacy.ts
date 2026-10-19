@@ -72,7 +72,38 @@ export function planPublicFollowerCount(
   priv: Record<string, any> | undefined,
   pub: Record<string, any> | undefined,
 ): number | null {
-  const want = Math.max(0, Math.floor(num(priv?.followersCount)));
-  if (pub === undefined) return want === 0 ? null : want;
-  return pub.followersCount === want ? null : want;
+  return planPublicCount(priv, pub, 'followersCount');
+}
+
+/** Public counters copied from `follow_counts` (never storesCount). */
+export const PUBLIC_FOLLOW_COUNT_COPY_FIELDS = ['followersCount', 'followingCount'] as const;
+export type PublicFollowCountField = (typeof PUBLIC_FOLLOW_COUNT_COPY_FIELDS)[number];
+
+/** [planPublicFollowerCount] for any public counter field. */
+export function planPublicCount(
+  priv: Record<string, any> | undefined,
+  pub: Record<string, any> | undefined,
+  field: PublicFollowCountField,
+): number | null {
+  const want = Math.max(0, Math.floor(num(priv?.[field])));
+  if (pub === undefined || pub[field] === undefined) return want === 0 ? null : want;
+  return pub[field] === want ? null : want;
+}
+
+/**
+ * Public follow counts (owner decisions 2026-10-19: followers AND following
+ * counts are public; stores stays private): the merge-set
+ * `follower_counts_public/{uid}` needs for the private data [priv] (only the
+ * fields that differ; empty = nothing to write). Never contains storesCount.
+ */
+export function planPublicFollowCounts(
+  priv: Record<string, any> | undefined,
+  pub: Record<string, any> | undefined,
+): Partial<Record<PublicFollowCountField, number>> {
+  const out: Partial<Record<PublicFollowCountField, number>> = {};
+  for (const f of PUBLIC_FOLLOW_COUNT_COPY_FIELDS) {
+    const v = planPublicCount(priv, pub, f);
+    if (v !== null) out[f] = v;
+  }
+  return out;
 }
