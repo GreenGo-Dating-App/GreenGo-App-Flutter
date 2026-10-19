@@ -1,4 +1,4 @@
-import { planFollowCountMove } from '../followCountsPrivacy';
+import { planFollowCountMove, planPublicFollowerCount } from '../followCountsPrivacy';
 
 describe('planFollowCountMove (public follow counts -> follow_counts)', () => {
   it('folds the public value into the post-deploy private delta and deletes the public fields', () => {
@@ -40,5 +40,20 @@ describe('planFollowCountMove (public follow counts -> follow_counts)', () => {
         privateSet: { followersCount: 0, followingCount: 2 },
         publicDelete: ['followersCount', 'followingCount'],
       });
+  });
+});
+
+describe('planPublicFollowerCount (follow_counts -> follower_counts_public)', () => {
+  it('copies the private followersCount, idempotently', () => {
+    expect(planPublicFollowerCount({ followersCount: 7, followingCount: 3, storesCount: 1 }, undefined)).toBe(7);
+    expect(planPublicFollowerCount({ followersCount: 7 }, { followersCount: 7 })).toBeNull();
+    expect(planPublicFollowerCount({ followersCount: 7 }, { followersCount: 2 })).toBe(7);
+  });
+  it('0 / missing / negative / junk never create a doc, but fix a stale one', () => {
+    expect(planPublicFollowerCount({ followingCount: 4 }, undefined)).toBeNull();
+    expect(planPublicFollowerCount({ followersCount: -2 }, undefined)).toBeNull();
+    expect(planPublicFollowerCount({ followersCount: 'x' }, undefined)).toBeNull();
+    expect(planPublicFollowerCount(undefined, { followersCount: 3 })).toBe(0);
+    expect(planPublicFollowerCount({ followersCount: 2.9 }, undefined)).toBe(2);
   });
 });

@@ -192,6 +192,8 @@ export const ACCOUNT_DATA_INVENTORY: InventoryEntry[] = [
     'profiles_private',
     // Owner-only follower / following counters (social/followCounters.ts).
     'follow_counts',
+    // Public follower count (followersCount only; social/followCounters.ts).
+    'follower_counts_public',
     'streaks', 'mission_progress', 'usageLimits', 'dailyUsage', 'user_stats',
     'user_badge_preferences', 'user_vocabulary', 'user_experience_counts',
     'host_cancellation_stats', 'host_flags', 'host_suspensions', 'host_schedules',

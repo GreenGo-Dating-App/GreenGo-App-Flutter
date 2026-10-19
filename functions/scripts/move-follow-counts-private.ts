@@ -43,6 +43,7 @@
 import * as admin from 'firebase-admin';
 import {
   FOLLOW_COUNTS,
+  FOLLOWER_COUNTS_PUBLIC,
   FollowCounterDeps,
   STORE_COUNTED_FLAG,
   countStoreEdge,
@@ -72,6 +73,15 @@ export async function moveOne(
     if (!plan.publicDelete.length) return [];
     if (apply) {
       if (Object.keys(plan.privateSet).length) tx.set(privRef, plan.privateSet, { merge: true });
+      // Public follower count (owner decision 2026-10-19): kept equal to the
+      // private followersCount in the same transaction (never following).
+      if (plan.privateSet.followersCount !== undefined) {
+        tx.set(
+          fs.collection(FOLLOWER_COUNTS_PUBLIC).doc(uid),
+          { followersCount: plan.privateSet.followersCount, updatedAt: new Date() },
+          { merge: true },
+        );
+      }
       const del: Record<string, admin.firestore.FieldValue> = {};
       for (const f of plan.publicDelete) del[f] = admin.firestore.FieldValue.delete();
       tx.update(pubRef, del);

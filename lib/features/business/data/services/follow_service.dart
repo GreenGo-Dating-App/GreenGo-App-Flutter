@@ -137,6 +137,76 @@ class FollowService {
   DocumentReference<Map<String, dynamic>> _countsDoc(String uid) =>
       _firestore.collection(countsCollection).doc(uid);
 
+  /// PUBLIC follower count (owner decision 2026-10-19): the NUMBER of
+  /// followers of every user and business is public (who follows, following
+  /// and stores stay private). `{followersCount, updatedAt}` only, written by
+  /// the same server triggers as [countsCollection]; any signed-in user may
+  /// GET one doc (never list).
+  static const String publicCountsCollection = 'follower_counts_public';
+
+  /// How long a fetched public count is reused (profile pages are reopened
+  /// often; one `get` per profile per [publicCountTtl], not a listener).
+  static const Duration publicCountTtl = Duration(minutes: 5);
+
+  /// Bound of the in-memory public-count cache (oldest entries evicted).
+  static const int publicCountCacheSize = 300;
+
+  final Map<String, ({int count, DateTime at})> _publicCounts = {};
+  final Map<String, Future<int?>> _publicInFlight = {};
+
+  /// Public follower count of [uid] (any account): ONE `get` of
+  /// `follower_counts_public/{uid}`, cached for [publicCountTtl] and
+  /// de-duplicated while in flight. A missing doc is 0; null when it could
+  /// not be read (offline / signed out). [refresh] skips the cache.
+  Future<int?> publicFollowerCount(String uid, {bool refresh = false}) {
+    if (uid.isEmpty) return Future.value(0);
+    final hit = _publicCounts[uid];
+    if (!refresh &&
+        hit != null &&
+        DateTime.now().difference(hit.at) < publicCountTtl) {
+      return Future.value(hit.count);
+    }
+    final pending = _publicInFlight[uid];
+    if (pending != null) return pending;
+    final f = _fetchPublicCount(uid);
+    _publicInFlight[uid] = f;
+    // Block body: never return the stored future from its own callback.
+    f.whenComplete(() {
+      _publicInFlight.remove(uid);
+    });
+    return f;
+  }
+
+  Future<int?> _fetchPublicCount(String uid) async {
+    try {
+      final d =
+          await _firestore.collection(publicCountsCollection).doc(uid).get();
+      final v = (d.data()?['followersCount'] as num?)?.toInt() ?? 0;
+      final count = v < 0 ? 0 : v;
+      _cachePublicCount(uid, count);
+      return count;
+    } catch (_) {
+      return null;
+    }
+  }
+
+  void _cachePublicCount(String uid, int count) {
+    _publicCounts.remove(uid); // re-insert = most recent
+    _publicCounts[uid] = (count: count < 0 ? 0 : count, at: DateTime.now());
+    while (_publicCounts.length > publicCountCacheSize) {
+      _publicCounts.remove(_publicCounts.keys.first);
+    }
+  }
+
+  /// This device's own committed follow (+1) / unfollow (-1) of [uid]: move
+  /// the cached public count so a reopened profile reflects it before the
+  /// server trigger has counted it.
+  void _adjustCachedPublicCount(String uid, int delta) {
+    final hit = _publicCounts[uid];
+    if (hit == null) return;
+    _publicCounts[uid] = (count: hit.count + delta < 0 ? 0 : hit.count + delta, at: hit.at);
+  }
+
   // ── state ──────────────────────────────────────────────────────────────
 
   /// Live follow-state of [followerId] → [followeeId]. Single-doc stream.
@@ -278,6 +348,7 @@ class FollowService {
     });
     if (wrote) {
       _recordChange(followerId: followerId, delta: 1, before: before);
+      _adjustCachedPublicCount(followeeId, 1);
     }
   }
 
@@ -304,6 +375,7 @@ class FollowService {
     });
     if (deleted) {
       _recordChange(followerId: followerId, delta: -1, before: before);
+      _adjustCachedPublicCount(followeeId, -1);
     }
   }
 

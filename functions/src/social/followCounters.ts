@@ -28,6 +28,16 @@
  *    a followee with millions of followers is never a lock hot-spot). A value
  *    that would have gone below zero (drifted legacy data) is clamped back to
  *    0 right after.
+ *
+ * PUBLIC FOLLOWER COUNT (owner decision 2026-10-19): the NUMBER of followers
+ * of every user and business is public; who follows, the following count and
+ * the stores count stay private. The same transactions that move
+ * `follow_counts/{uid}.followersCount` also move
+ * `follower_counts_public/{uid}.followersCount` (+ `updatedAt`), a tiny doc
+ * that any signed-in user may `get` (never list). It carries ONLY the
+ * follower count, never following / stores, and is not the public profile,
+ * so a follow still fires no profile trigger.
+ * scripts/backfill-public-follower-counts.ts seeds it from follow_counts.
  */
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -99,6 +109,21 @@ export function countsRef(db: any, uid: string) {
   return db.collection(FOLLOW_COUNTS).doc(uid);
 }
 
+/** Public follower-count document (followersCount + updatedAt ONLY). */
+export const FOLLOWER_COUNTS_PUBLIC = 'follower_counts_public';
+
+export function publicCountsRef(db: any, uid: string) {
+  return db.collection(FOLLOWER_COUNTS_PUBLIC).doc(uid);
+}
+
+/**
+ * The public-doc write that accompanies every followersCount change. Only
+ * these two fields, ever (unit-tested): following / stores stay private.
+ */
+export function publicFollowerDelta(increment: unknown, now: Date): Record<string, unknown> {
+  return { followersCount: increment, updatedAt: now };
+}
+
 /**
  * Count ONE edge exactly once. Returns true when this call did the counting.
  * Profiles that do not exist (deleted accounts) are skipped instead of being
@@ -110,6 +135,7 @@ export async function countEdge(
   followerId: string,
 ): Promise<boolean> {
   const { db, increment } = deps;
+  const now = (deps.now ?? (() => new Date()))();
   const followeeRef = profileRef(db, followeeId);
   const followerRef = profileRef(db, followerId);
   // Existence pre-check OUTSIDE the transaction, so a popular followee's
@@ -129,6 +155,7 @@ export async function countEdge(
     // merge-set: the counters doc is created on the first follow.
     if (followee.exists) {
       txn.set(countsRef(db, followeeId), { followersCount: increment(1) }, { merge: true });
+      txn.set(publicCountsRef(db, followeeId), publicFollowerDelta(increment(1), now), { merge: true });
     }
     if (follower.exists) {
       txn.set(
@@ -178,6 +205,7 @@ export async function uncountEdge(
     });
     if (followee.exists) {
       txn.set(countsRef(db, followeeId), { followersCount: increment(-1) }, { merge: true });
+      txn.set(publicCountsRef(db, followeeId), publicFollowerDelta(increment(-1), now), { merge: true });
     }
     if (follower.exists) {
       txn.set(
@@ -191,6 +219,7 @@ export async function uncountEdge(
   if (did) {
     await Promise.all([
       followee.exists ? clampNonNegative(deps, countsRef(db, followeeId), 'followersCount') : null,
+      followee.exists ? clampNonNegative(deps, publicCountsRef(db, followeeId), 'followersCount') : null,
       follower.exists ? clampNonNegative(deps, countsRef(db, followerId), 'followingCount') : null,
       follower.exists && store ? clampNonNegative(deps, countsRef(db, followerId), 'storesCount') : null,
     ]);
