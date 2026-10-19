@@ -15971,5 +15971,21 @@
   "profileLocationSearchOrPick": "Search address or pick on map",
   "@profileLocationSearchOrPick": {
     "description": "Edit location: tappable field that opens the address search / map picker."
+  },
+  "globeFilterFollowing": "Following",
+  "@globeFilterFollowing": {
+    "description": "World map filter chip: people the user follows."
+  },
+  "globeFilterFollowers": "Followers",
+  "@globeFilterFollowers": {
+    "description": "World map filter chip: people who follow the user."
+  },
+  "globeFilterChats": "Chats",
+  "@globeFilterChats": {
+    "description": "World map filter chip: people the user had a 1:1 chat with."
+  },
+  "globeFilterBusinesses": "Businesses",
+  "@globeFilterBusinesses": {
+    "description": "World map filter chip and legend: business accounts the user follows or chatted with, pinned at the business address."
   }
 }

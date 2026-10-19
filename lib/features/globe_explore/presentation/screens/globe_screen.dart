@@ -12,7 +12,7 @@ import '../../../../core/utils/user_error.dart';
 import '../../../../core/widgets/interactive_location_map.dart'
     show LocationMapColors;
 import '../../../../generated/app_localizations.dart';
-import '../../../chat/presentation/screens/chat_screen.dart';
+import '../../../business/presentation/screens/business_storefront_screen.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../../events/domain/repositories/events_repository.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
@@ -24,10 +24,16 @@ import '../bloc/globe_bloc.dart';
 import '../bloc/globe_event.dart';
 import '../bloc/globe_state.dart';
 import '../widgets/globe_country_search.dart';
+import '../widgets/globe_filter_chips.dart';
 import '../widgets/globe_map_view.dart';
 import '../widgets/globe_markers.dart';
 
-/// "My World Map": where the user's network is, on the app's shared map.
+/// "My World Map": where the user's network is, on the app's shared map:
+/// the people they follow, their followers, the people they chatted with
+/// (1:1, at least one message) and the businesses they follow or chatted
+/// with (pinned at the business address). A row of filter chips (Following,
+/// Followers, Chats, Businesses; multi-select, remembered per device) picks
+/// which pins are drawn; a pin in several groups is drawn once, with badges.
 ///
 /// The map itself is [GlobeMapView]; this screen owns the bloc wiring, the
 /// light app bar (country search, refresh), the legend and connection-count
@@ -97,7 +103,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
       body: BlocConsumer<GlobeBloc, GlobeState>(
         listener: (context, state) {
           if (state is GlobePinSelected) {
-            _showUserBottomSheet(context, state.selectedUser);
+            _openPin(context, state.selectedUser);
           }
           if (state is GlobeCountrySelected) {
             _showCountryMatchesSheet(
@@ -116,6 +122,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
             );
           }
           final fly = state is GlobeLoaded ? state : null;
+          final filters = _filtersOf(state);
           return Stack(
             children: [
               Positioned.fill(
@@ -144,7 +151,18 @@ class _GlobeScreenState extends State<GlobeScreen> {
                 ),
               ),
               Positioned(
-                top: 10,
+                top: 8,
+                left: 8,
+                // Leaves room for the zoom controls on the right.
+                right: 60,
+                child: GlobeFilterChips(
+                  selected: filters,
+                  onToggle: (f) =>
+                      context.read<GlobeBloc>().add(GlobeFilterToggled(f)),
+                ),
+              ),
+              Positioned(
+                top: 56,
                 left: 10,
                 child: _MapChip(
                   child: Column(
@@ -155,6 +173,9 @@ class _GlobeScreenState extends State<GlobeScreen> {
                       _LegendItem(
                           color: LocationMapColors.gold,
                           label: l10n.globeConnections),
+                      _LegendItem(
+                          color: kGlobeBusinessColor,
+                          label: l10n.globeFilterBusinesses),
                       _LegendItem(
                           icon: Icons.flight, label: l10n.globeTraveler),
                     ],
@@ -191,6 +212,47 @@ class _GlobeScreenState extends State<GlobeScreen> {
         },
       ),
     );
+  }
+
+  static Set<GlobeNetworkFilter> _filtersOf(GlobeState state) =>
+      switch (state) {
+        GlobeLoaded(:final filters) => filters,
+        GlobePinSelected(:final filters) => filters,
+        GlobeCountrySelected(:final filters) => filters,
+        _ => kAllGlobeFilters,
+      };
+
+  /// A tapped pin: the user's own sheet, a business's storefront, or a
+  /// person's profile.
+  void _openPin(BuildContext context, GlobeUser user) {
+    if (user.pinType == GlobePinType.currentUser) {
+      _showSelfSheet(context, user);
+    } else if (user.isBusiness) {
+      _navigateToStorefront(context, user.userId);
+    } else {
+      _navigateToProfile(context, user.userId);
+    }
+  }
+
+  Future<void> _navigateToStorefront(
+      BuildContext context, String businessId) async {
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(businessId)
+          .get();
+      if (!doc.exists || !context.mounted) return;
+      final profile = ProfileModel.fromFirestore(doc);
+      Navigator.push(
+        context,
+        MaterialPageRoute<void>(
+          builder: (_) => BusinessStorefrontScreen(
+            business: profile,
+            currentUserId: userId,
+          ),
+        ),
+      );
+    } catch (_) {}
   }
 
   /// Search every country we can place on the map (plus any network country
@@ -256,175 +318,6 @@ class _GlobeScreenState extends State<GlobeScreen> {
         ),
       );
     } catch (_) {}
-  }
-
-  Future<void> _navigateToChat(
-      BuildContext context, String matchId, String otherUserId) async {
-    try {
-      final doc = await FirebaseFirestore.instance
-          .collection('profiles')
-          .doc(otherUserId)
-          .get();
-      if (!doc.exists || !context.mounted) return;
-      final profile = ProfileModel.fromFirestore(doc);
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (_) => ChatScreen(
-            matchId: matchId,
-            currentUserId: userId,
-            otherUserId: otherUserId,
-            otherUserProfile: profile,
-          ),
-        ),
-      );
-    } catch (_) {}
-  }
-
-  void _showUserBottomSheet(BuildContext context, GlobeUser user) {
-    if (user.pinType == GlobePinType.currentUser) {
-      _showSelfSheet(context, user);
-      return;
-    }
-
-    // Only matched users appear on the map — show Profile + Chat
-    showModalBottomSheet(
-      context: context,
-      backgroundColor: AppColors.backgroundDark,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (ctx) => Padding(
-        padding: const EdgeInsets.all(20),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            // Drag handle
-            Container(
-              width: 40,
-              height: 4,
-              margin: const EdgeInsets.only(bottom: 16),
-              decoration: BoxDecoration(
-                color: AppColors.textTertiary,
-                borderRadius: BorderRadius.circular(2),
-              ),
-            ),
-            // Photo + info
-            Row(
-              children: [
-                CircleAvatar(
-                  radius: 32,
-                  backgroundImage: user.photoUrl != null
-                      ? ResizeImage(CachedNetworkImageProvider(user.photoUrl!),
-                          width: 128, policy: ResizeImagePolicy.fit)
-                      : null,
-                  backgroundColor: AppColors.backgroundCard,
-                  child: user.photoUrl == null
-                      ? Text(
-                          user.displayName.isNotEmpty
-                              ? user.displayName[0].toUpperCase()
-                              : '?',
-                          style: const TextStyle(
-                            color: AppColors.textPrimary,
-                            fontSize: 24,
-                          ),
-                        )
-                      : null,
-                ),
-                const SizedBox(width: 14),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Flexible(
-                            child: Text(
-                              _orUnknown(context, user.displayName),
-                              style: const TextStyle(
-                                color: AppColors.textPrimary,
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                              ),
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                          ),
-                          if (user.isOnline) ...[
-                            const SizedBox(width: 8),
-                            Container(
-                              width: 10,
-                              height: 10,
-                              decoration: const BoxDecoration(
-                                color: Colors.green,
-                                shape: BoxShape.circle,
-                              ),
-                            ),
-                          ],
-                          if (user.isTravelerActive) ...[
-                            const SizedBox(width: 8),
-                            const Icon(Icons.flight,
-                                color: Colors.blue, size: 18),
-                          ],
-                        ],
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        '${_orUnknown(context, user.city)}, ${_countryLabel(context, user.country)}',
-                        style: const TextStyle(
-                          color: AppColors.textSecondary,
-                          fontSize: 13,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 20),
-            // Action buttons: Profile + Chat (matches only)
-            Row(
-              children: [
-                Expanded(
-                  child: OutlinedButton.icon(
-                    icon: const Icon(Icons.person_outline, size: 18),
-                    label: Text(AppLocalizations.of(context)!.globeProfile),
-                    style: OutlinedButton.styleFrom(
-                      foregroundColor: AppColors.textPrimary,
-                      side: const BorderSide(color: AppColors.divider),
-                      padding: const EdgeInsets.symmetric(vertical: 12),
-                    ),
-                    onPressed: () async {
-                      Navigator.pop(ctx);
-                      await _navigateToProfile(context, user.userId);
-                    },
-                  ),
-                ),
-                if (user.matchId != null) ...[
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: ElevatedButton.icon(
-                      icon: const Icon(Icons.chat_bubble_outline, size: 18),
-                      label: Text(AppLocalizations.of(context)!.globeChat),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFFFFD700),
-                        foregroundColor: Colors.black,
-                        padding: const EdgeInsets.symmetric(vertical: 12),
-                      ),
-                      onPressed: () async {
-                        Navigator.pop(ctx);
-                        await _navigateToChat(
-                            context, user.matchId!, user.userId);
-                      },
-                    ),
-                  ),
-                ],
-              ],
-            ),
-            const SizedBox(height: 8),
-          ],
-        ),
-      ),
-    );
   }
 
   void _showSelfSheet(BuildContext context, GlobeUser user) {
@@ -788,6 +681,11 @@ class _GlobeScreenState extends State<GlobeScreen> {
 
   Widget _buildCountryMatchTile(BuildContext context, GlobeUser match) {
     return ListTile(
+      key: ValueKey('globe-tile-${match.userId}'),
+      onTap: () {
+        Navigator.pop(context);
+        _openPin(context, match);
+      },
       leading: CircleAvatar(
         radius: 24,
         backgroundImage: match.photoUrl != null
@@ -839,26 +737,24 @@ class _GlobeScreenState extends State<GlobeScreen> {
       trailing: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
+          for (final r in GlobeRelation.values)
+            if (match.relations.contains(r))
+              Padding(
+                padding: const EdgeInsets.only(right: 4),
+                child: Icon(globeRelationIcon(r),
+                    color: globeRelationColor(r), size: 16),
+              ),
           IconButton(
-            icon: const Icon(Icons.person_outline,
-                color: AppColors.textSecondary, size: 20),
-            onPressed: () async {
+            icon: Icon(
+                match.isBusiness ? Icons.storefront : Icons.person_outline,
+                color: AppColors.textSecondary,
+                size: 20),
+            onPressed: () {
               Navigator.pop(context);
-              await _navigateToProfile(context, match.userId);
+              _openPin(context, match);
             },
             tooltip: AppLocalizations.of(context)!.globeViewProfileTooltip,
           ),
-          if (match.matchId != null)
-            IconButton(
-              icon: const Icon(Icons.chat_bubble_outline,
-                  color: Color(0xFFFFD700), size: 20),
-              onPressed: () async {
-                Navigator.pop(context);
-                await _navigateToChat(
-                    context, match.matchId!, match.userId);
-              },
-              tooltip: AppLocalizations.of(context)!.globeOpenChatTooltip,
-            ),
         ],
       ),
     );

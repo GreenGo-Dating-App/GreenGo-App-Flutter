@@ -29,16 +29,4 @@ class GlobeRepositoryImpl implements GlobeRepository {
       return Left(ServerFailure('Failed to load globe data: $e'));
     }
   }
-
-  @override
-  Stream<List<GlobeUser>> watchMatchUpdates({required String userId}) {
-    return remoteDataSource.watchMatchUpdates(userId: userId);
-  }
-
-  @override
-  Stream<Map<String, bool>> watchOnlineStatus({
-    required List<String> userIds,
-  }) {
-    return remoteDataSource.watchOnlineStatus(userIds: userIds);
-  }
 }

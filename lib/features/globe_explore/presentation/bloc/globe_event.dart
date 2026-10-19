@@ -39,14 +39,14 @@ class GlobePinTapped extends GlobeEvent {
   List<Object?> get props => [tappedUserId, pinType];
 }
 
+/// One filter chip tapped: turns [filter] on or off (remembered per device).
 class GlobeFilterToggled extends GlobeEvent {
 
-  const GlobeFilterToggled({this.showMatched, this.showDiscovery});
-  final bool? showMatched;
-  final bool? showDiscovery;
+  const GlobeFilterToggled(this.filter);
+  final GlobeNetworkFilter filter;
 
   @override
-  List<Object?> get props => [showMatched, showDiscovery];
+  List<Object?> get props => [filter];
 }
 
 class GlobeFlyToCountry extends GlobeEvent {
@@ -71,22 +71,4 @@ class GlobeCountryTapped extends GlobeEvent {
 
   @override
   List<Object?> get props => [countryName, latitude, longitude];
-}
-
-class GlobeMatchesUpdated extends GlobeEvent {
-
-  const GlobeMatchesUpdated({required this.updatedMatches});
-  final List<GlobeUser> updatedMatches;
-
-  @override
-  List<Object?> get props => [updatedMatches];
-}
-
-class GlobeOnlineStatusUpdated extends GlobeEvent {
-
-  const GlobeOnlineStatusUpdated({required this.onlineStatusMap});
-  final Map<String, bool> onlineStatusMap;
-
-  @override
-  List<Object?> get props => [onlineStatusMap];
 }

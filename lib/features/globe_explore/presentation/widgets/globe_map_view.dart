@@ -17,8 +17,9 @@ import 'globe_pin_layout.dart';
 /// all come from `core/widgets`, so it looks and behaves like the event and
 /// experience maps on mobile and web alike.
 ///
-/// Scale: the people come from the bounded matched-users read (see
-/// GlobeRemoteDataSource). Zoomed out they are aggregated per country; zoomed
+/// Scale: the pins come from the bounded network read (see
+/// GlobeRemoteDataSource): people the user follows / is followed by / chatted
+/// with, and businesses (at their business address). Zoomed out they are aggregated per country; zoomed
 /// in they cluster on a screen grid. Grouping is computed once per whole zoom
 /// band and cached, and only the marker layer listens to band changes, so
 /// panning and pinching never rebuild the map itself.
@@ -58,7 +59,7 @@ class _GlobeMapViewState extends State<GlobeMapView> {
   late final ValueNotifier<int> _band =
       ValueNotifier<int>(MapBasemap.initialZoom.floor());
 
-  /// Markers per zoom band for the current [GlobeData.matchedUsers].
+  /// Markers per zoom band for the current (filtered) [GlobeData.matchedUsers].
   final Map<int, List<Marker>> _markerCache = {};
   List<Polyline>? _flightPaths;
 
@@ -149,15 +150,21 @@ class _GlobeMapViewState extends State<GlobeMapView> {
             Marker(
               key: ValueKey('globe-pin-${g.first.userId}'),
               point: LatLng(g.first.pinLatitude, g.first.pinLongitude),
-              width: GlobeAvatarPin.boxWidth,
-              height: GlobeAvatarPin.boxHeight,
+              width: g.first.isBusiness
+                  ? GlobeAvatarPin.businessBoxWidth
+                  : GlobeAvatarPin.boxWidth,
+              height: g.first.isBusiness
+                  ? GlobeAvatarPin.businessBoxHeight
+                  : GlobeAvatarPin.boxHeight,
               child: GestureDetector(
                 onTap: () => _onGroupTapped(g),
                 child: GlobeAvatarPin(
                   name: g.first.displayName,
                   photoUrl: g.first.photoUrl,
-                  isOnline: g.first.isOnline,
+                  isOnline: g.first.isOnline && !g.first.isBusiness,
                   isTraveler: g.first.isTravelerActive,
+                  relations: g.first.relations,
+                  isBusiness: g.first.isBusiness,
                 ),
               ),
             )

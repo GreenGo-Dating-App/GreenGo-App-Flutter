@@ -129,7 +129,6 @@ import '../../features/globe_explore/data/datasources/globe_remote_datasource.da
 import '../../features/globe_explore/data/repositories/globe_repository_impl.dart';
 import '../../features/globe_explore/domain/repositories/globe_repository.dart';
 import '../../features/globe_explore/domain/usecases/get_globe_data.dart';
-import '../../features/globe_explore/domain/usecases/watch_globe_updates.dart';
 import '../../features/globe_explore/presentation/bloc/globe_bloc.dart';
 // Matching
 import '../../features/matching/data/datasources/matching_remote_datasource.dart';
@@ -839,7 +838,6 @@ Future<void> init() async {
 
   // Use cases
   sl.registerLazySingleton(() => GetGlobeData(sl()));
-  sl.registerLazySingleton(() => WatchGlobeUpdates(sl()));
 
   // BLoC
   sl.registerFactory(

@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:greengo_chat/core/error/failures.dart';
@@ -8,6 +6,7 @@ import 'package:greengo_chat/features/globe_explore/domain/repositories/globe_re
 import 'package:greengo_chat/features/globe_explore/domain/usecases/get_globe_data.dart';
 import 'package:greengo_chat/features/globe_explore/presentation/bloc/globe_bloc.dart';
 import 'package:greengo_chat/features/globe_explore/presentation/bloc/globe_event.dart';
+import 'package:greengo_chat/features/globe_explore/presentation/bloc/globe_filter_store.dart';
 import 'package:greengo_chat/features/globe_explore/presentation/bloc/globe_state.dart';
 
 const _me = GlobeUser(
@@ -27,7 +26,7 @@ const _ana = GlobeUser(
   country: 'Italy',
   city: 'Rome',
   pinType: GlobePinType.matched,
-  matchId: 'm1',
+  relations: {GlobeRelation.chatted},
 );
 
 class _Repo implements GlobeRepository {
@@ -39,22 +38,26 @@ class _Repo implements GlobeRepository {
           {required String userId}) async =>
       const Right(GlobeData(
           currentUser: _me, matchedUsers: [_ana], discoveryUsers: []));
+}
 
+class _MemStore implements GlobeFilterStore {
+  Set<GlobeNetworkFilter>? saved;
   @override
-  Stream<List<GlobeUser>> watchMatchUpdates({required String userId}) =>
-      const Stream.empty();
-
+  Future<Set<GlobeNetworkFilter>> load() async => saved ?? kAllGlobeFilters;
   @override
-  Stream<Map<String, bool>> watchOnlineStatus(
-          {required List<String> userIds}) =>
-      const Stream.empty();
+  Future<void> save(Set<GlobeNetworkFilter> filters) async => saved = filters;
 }
 
 void main() {
   late GlobeBloc bloc;
+  late _MemStore store;
   setUp(() {
     final repo = _Repo();
-    bloc = GlobeBloc(getGlobeData: GetGlobeData(repo), repository: repo);
+    store = _MemStore();
+    bloc = GlobeBloc(
+        getGlobeData: GetGlobeData(repo),
+        repository: repo,
+        filterStore: store);
   });
   tearDown(() => bloc.close());
 
@@ -102,5 +105,34 @@ void main() {
         .toList();
     expect(flights, hasLength(2));
     expect(flights.toSet(), hasLength(2));
+  });
+
+  test('a filter chip hides / shows its pins and is remembered', () async {
+    final seen = await run(const [
+      GlobeFilterToggled(GlobeNetworkFilter.chats),
+    ]);
+    final off = seen.whereType<GlobeLoaded>().last;
+    expect(off.filters.contains(GlobeNetworkFilter.chats), isFalse);
+    expect(off.data.matchedUsers, isEmpty);
+    expect(store.saved, isNot(contains(GlobeNetworkFilter.chats)));
+
+    bloc.add(const GlobeFilterToggled(GlobeNetworkFilter.chats));
+    final on = await bloc.stream.firstWhere((s) => s is GlobeLoaded) as GlobeLoaded;
+    expect(on.data.matchedUsers.single.userId, 'ana');
+    expect(store.saved, containsAll(kAllGlobeFilters));
+  });
+
+  test('the remembered filters apply on load', () async {
+    store.saved = {GlobeNetworkFilter.businesses};
+    bloc.add(const GlobeLoadRequested(userId: 'me'));
+    final loaded = await bloc.stream.firstWhere(
+            (s) => s is GlobeLoaded && s.data.currentUser.userId == 'me' &&
+                s.filters.length == 1)
+        as GlobeLoaded;
+    expect(loaded.filters, {GlobeNetworkFilter.businesses});
+    // Ana is only a chat: hidden while the Chats chip is off.
+    await Future<void>.delayed(Duration.zero);
+    final last = bloc.state as GlobeLoaded;
+    expect(last.data.matchedUsers, isEmpty);
   });
 }

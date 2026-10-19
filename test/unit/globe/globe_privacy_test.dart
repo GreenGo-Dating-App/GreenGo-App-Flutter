@@ -11,7 +11,8 @@ import 'package:greengo_chat/features/profile/data/private_profile.dart';
 
 /// Privacy rules of the network map: who is drawn, and how precisely.
 ///
-/// Every person on the map is a connection (an active match). They are left
+/// Every person on the map is part of the user's network (here: someone
+/// they follow, half of them also following back). They are left
 /// out when inactive, incognito (unexpired), in ghost mode, "Hidden" in Globe
 /// Discoverability, blocked, or without a known location; the rest are drawn
 /// at the precision they chose, computed from the PUBLIC approximate
@@ -72,14 +73,22 @@ Future<GlobeData> _load(Map<String, Map<String, dynamic>> others,
   var i = 0;
   for (final e in others.entries) {
     await fs.collection('profiles').doc(e.key).set(e.value);
-    // Alternate sides so both match queries are exercised.
-    final mine = i.isEven;
-    await fs.collection('matches').doc('m_${e.key}').set({
-      'userId1': mine ? 'me' : e.key,
-      'userId2': mine ? e.key : 'me',
-      'isActive': true,
-      'matchedAt': Timestamp.fromDate(DateTime(2026, 1, 1 + i)),
-    });
+    // Followed by me; every other one also follows me back.
+    final at = Timestamp.fromDate(DateTime(2026, 1, 1 + i));
+    await fs
+        .collection('user_business_following')
+        .doc('me')
+        .collection('businesses')
+        .doc(e.key)
+        .set({'createdAt': at});
+    if (i.isEven) {
+      await fs
+          .collection('business_followers')
+          .doc('me')
+          .collection('followers')
+          .doc(e.key)
+          .set({'createdAt': at});
+    }
     i++;
   }
   return GlobeRemoteDataSourceImpl(firestore: fs).getGlobeData(userId: 'me');
@@ -91,11 +100,13 @@ void main() {
   tearDown(() => PrivateProfileCache.instance.reset());
 
   group('who is drawn', () {
-    test('a plain active connection is drawn', () async {
+    test('a plain active connection is drawn, with its relations', () async {
       final d = await _load({'ok': _profile()});
       expect(_ids(d), {'ok'});
-      expect(d.matchedUsers.single.matchId, 'm_ok');
+      expect(d.matchedUsers.single.relations,
+          {GlobeRelation.following, GlobeRelation.follower});
       expect(d.matchedUsers.single.pinType, GlobePinType.matched);
+      expect(d.matchedUsers.single.isBusiness, isFalse);
     });
 
     test('incognito is left out unless it has expired', () async {

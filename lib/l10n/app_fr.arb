@@ -7815,5 +7815,9 @@
   "storefrontChatButton": "Chat",
   "storefrontEventsLoadError": "Impossible de charger les événements. Veuillez réessayer.",
   "businessProfileNameRequiredError": "Saisissez le nom du profil de votre entreprise.",
-  "profileLocationSearchOrPick": "Rechercher une adresse ou choisir sur la carte"
+  "profileLocationSearchOrPick": "Rechercher une adresse ou choisir sur la carte",
+  "globeFilterFollowing": "Abonnements",
+  "globeFilterFollowers": "Abonnés",
+  "globeFilterChats": "Discussions",
+  "globeFilterBusinesses": "Entreprises"
 }

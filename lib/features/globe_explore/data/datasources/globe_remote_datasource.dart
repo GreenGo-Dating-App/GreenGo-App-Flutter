@@ -5,42 +5,49 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../../domain/entities/globe_user.dart';
 import '../models/globe_user_model.dart';
+import '../network_pin_assembler.dart';
 import '../../../profile/data/private_profile.dart';
 
 abstract class GlobeRemoteDataSource {
   /// Just the signed-in user's own pin (one doc read, shared with an
-  /// in-flight [getGlobeData]) so the map can render before the matches.
+  /// in-flight [getGlobeData]) so the map can render before the network.
   Future<GlobeUser> getCurrentUserPin({required String userId});
   Future<GlobeData> getGlobeData({required String userId});
-  Stream<List<GlobeUser>> watchMatchUpdates({required String userId});
-  Stream<Map<String, bool>> watchOnlineStatus({required List<String> userIds});
 }
 
+/// The network ("world") map's reads. Per open, all bounded and in ONE
+/// parallel round trip, then the profiles in parallel `whereIn` batches:
+///
+///  * own profile (1 doc, shared with [getCurrentUserPin]);
+///  * own block list (`profiles/{uid}/blocked_users`, <= 1000);
+///  * following: `user_business_following/{uid}/businesses`, newest
+///    [kGlobeFollowingCap] by `createdAt` (auto single-field index);
+///  * followers: `business_followers/{uid}/followers`, newest
+///    [kGlobeFollowersCap] by `createdAt` (auto single-field index);
+///  * chats: the inbox query (`conversations` where userId1|userId2 == uid,
+///    `lastMessageAt` desc - the existing composite indexes), newest
+///    [kGlobeChatsCap];
+///  * profiles of the distinct accounts (<= 900), 30 per `whereIn`, reused
+///    from a short session cache on a reopen / refresh.
 class GlobeRemoteDataSourceImpl implements GlobeRemoteDataSource {
 
-  GlobeRemoteDataSourceImpl({required this.firestore});
+  GlobeRemoteDataSourceImpl({required this.firestore, DateTime Function()? now})
+      : _now = now ?? DateTime.now;
   final FirebaseFirestore firestore;
+  final DateTime Function() _now;
 
-  /// Matched users read per side (newest first). Bounded: the globe shows
-  /// pins, and an unbounded read pulled every match + profile on each open.
-  static const int _matchLimit = 200;
   static const int _whereInChunk = 30;
 
-  // Session memo, reused by [watchMatchUpdates] so a match snapshot only
-  // reads the profiles of NEW matches (it used to re-read every profile,
-  // one by one, on the first and every later snapshot).
-  String? _memoUserId;
-  final Map<String, GlobeUser> _matchedPins = {}; // otherUserId -> pin
-  final Set<String> _rejectedIds = {}; // filtered out (inactive, hidden...)
-  Set<String> _blockedIds = {};
-  (String, Future<GlobeUser>)? _currentUserLoad;
+  /// How long a fetched profile is reused by later opens of the map.
+  static const Duration profileTtl = Duration(minutes: 5);
 
-  void _resetMemo(String userId) {
-    _memoUserId = userId;
-    _matchedPins.clear();
-    _rejectedIds.clear();
-    _blockedIds = {};
-  }
+  /// Bound of the session profile cache (oldest evicted).
+  static const int profileCacheSize = 1500;
+
+  final Map<String, ({Map<String, dynamic>? data, DateTime at})> _profiles =
+      {};
+  String? _cacheOwner;
+  (String, Future<GlobeUser>)? _currentUserLoad;
 
   @override
   Future<GlobeUser> getCurrentUserPin({required String userId}) {
@@ -74,265 +81,152 @@ class GlobeRemoteDataSourceImpl implements GlobeRemoteDataSource {
 
   @override
   Future<GlobeData> getGlobeData({required String userId}) async {
-    final rng = Random();
-    _resetMemo(userId);
-
-    // Own profile, block list and both match sides in ONE parallel round
-    // trip (they used to run one after another).
-    final results = await Future.wait<Object>([
+    if (_cacheOwner != userId) {
+      _profiles.clear();
+      _cacheOwner = userId;
+    }
+    final results = await Future.wait<Object?>([
       getCurrentUserPin(userId: userId),
-      firestore
+      _safe(firestore
           .collection('profiles')
           .doc(userId)
           .collection('blocked_users')
           .limit(1000)
-          .get(),
-      _activeMatches('userId1', userId),
-      _activeMatches('userId2', userId),
+          .get()),
+      _newestEdges(
+          firestore
+              .collection('user_business_following')
+              .doc(userId)
+              .collection('businesses'),
+          kGlobeFollowingCap),
+      _newestEdges(
+          firestore
+              .collection('business_followers')
+              .doc(userId)
+              .collection('followers'),
+          kGlobeFollowersCap),
+      _recentChats(userId),
     ]);
 
-    final currentUser = results[0] as GlobeUser;
-    final blockedSnapshot = results[1] as QuerySnapshot<Map<String, dynamic>>;
-    _blockedIds = blockedSnapshot.docs.map((d) => d.id).toSet();
+    final currentUser = results[0]! as GlobeUser;
+    final blocked = <String>{
+      ...?(results[1] as QuerySnapshot<Map<String, dynamic>>?)
+          ?.docs
+          .map((d) => d.id),
+    };
+    final followingDocs =
+        results[2]! as List<QueryDocumentSnapshot<Map<String, dynamic>>>;
+    final followerDocs =
+        results[3]! as List<QueryDocumentSnapshot<Map<String, dynamic>>>;
+    final chats = results[4]! as List<String>;
 
-    // QUERY 1: Matched users (gold pins)
-    final matchedUsers = await _matchedPinsFor(
-      userId: userId,
-      matchDocs: [
-        ...(results[2] as QuerySnapshot<Map<String, dynamic>>).docs,
-        ...(results[3] as QuerySnapshot<Map<String, dynamic>>).docs,
-      ],
-      rng: rng,
-    );
+    final following = <GlobeFollowEdge>[
+      for (final d in followingDocs)
+        (id: d.id, isStore: d.data()['isStore'] == true),
+    ];
+    final followers = [for (final d in followerDocs) d.id];
+
+    final ids = <String>{
+      ...chats,
+      ...following.map((e) => e.id),
+      ...followers,
+    }..removeAll({userId, ...blocked});
+    final profiles = await _profilesFor(ids.toList());
 
     return GlobeData(
       currentUser: currentUser,
-      matchedUsers: matchedUsers,
+      matchedUsers: assembleNetworkPins(
+        userId: userId,
+        following: following,
+        followers: followers,
+        chats: chats,
+        profiles: profiles,
+        blocked: blocked,
+      ),
       discoveryUsers: const [],
     );
   }
 
-  Query<Map<String, dynamic>> _activeMatchesQuery(String field, String userId) =>
-      firestore
-          .collection('matches')
-          .where(field, isEqualTo: userId)
-          .where('isActive', isEqualTo: true);
-
-  /// Index: matches (userId1|userId2, isActive, matchedAt desc). Falls back to
-  /// the unordered (equality-only) read if the ordered one is rejected.
-  Future<QuerySnapshot<Map<String, dynamic>>> _activeMatches(
-      String field, String userId) async {
+  static Future<T?> _safe<T>(Future<T> f) async {
     try {
-      return await _activeMatchesQuery(field, userId)
-          .orderBy('matchedAt', descending: true)
-          .limit(_matchLimit)
-          .get();
+      return await f;
     } catch (_) {
-      return _activeMatchesQuery(field, userId).limit(_matchLimit).get();
+      return null;
     }
   }
 
-  /// Pins for [matchDocs] in their order: memoised pins are reused; the
-  /// profiles of the rest are read in parallel `whereIn` batches of 30.
-  Future<List<GlobeUser>> _matchedPinsFor({
-    required String userId,
-    required List<QueryDocumentSnapshot<Map<String, dynamic>>> matchDocs,
-    required Random rng,
-  }) async {
-    final seenMatch = <String>{};
-    final pairs = <(String matchId, String otherId)>[];
-    for (final doc in matchDocs) {
-      if (!seenMatch.add(doc.id)) continue;
-      final data = doc.data();
-      final other = data['userId1'] == userId
-          ? data['userId2'] as String?
-          : data['userId1'] as String?;
-      if (other == null || other.isEmpty) continue;
-      if (_blockedIds.contains(other)) continue;
-      pairs.add((doc.id, other));
+  /// Newest [cap] edge docs of a follow subcollection; an unreadable list
+  /// (offline / rules) is empty, never a failed map.
+  Future<List<QueryDocumentSnapshot<Map<String, dynamic>>>> _newestEdges(
+      CollectionReference<Map<String, dynamic>> col, int cap) async {
+    try {
+      return (await col.orderBy('createdAt', descending: true).limit(cap).get())
+          .docs;
+    } catch (_) {
+      final snap = await _safe(col.limit(cap).get());
+      return snap?.docs ?? const [];
     }
+  }
 
-    final toFetch = {
-      for (final p in pairs)
-        if (!_matchedPins.containsKey(p.$2) && !_rejectedIds.contains(p.$2))
-          p.$2,
-    }.toList();
+  /// Partners of the user's most recent 1:1 chats (with a message), newest
+  /// first - the inbox's own query and indexes.
+  Future<List<String>> _recentChats(String userId) async {
+    final base = firestore.collection('conversations').where(Filter.or(
+          Filter('userId1', isEqualTo: userId),
+          Filter('userId2', isEqualTo: userId),
+        ));
+    final snap = await _safe(base
+            .orderBy('lastMessageAt', descending: true)
+            .limit(kGlobeChatsCap)
+            .get()) ??
+        await _safe(base.limit(kGlobeChatsCap).get());
+    final out = <String>[];
+    final seen = <String>{};
+    for (final d in snap?.docs ??
+        const <QueryDocumentSnapshot<Map<String, dynamic>>>[]) {
+      final other = chatPartnerOf(d.data(), userId);
+      if (other != null && seen.add(other)) out.add(other);
+    }
+    return out;
+  }
+
+  /// Raw public profiles of [ids]: cached ones (younger than [profileTtl])
+  /// are reused, the rest read in parallel `whereIn` batches of 30. A
+  /// missing doc is remembered as null (deleted account); a failed batch is
+  /// simply retried on the next open.
+  Future<Map<String, Map<String, dynamic>>> _profilesFor(
+      List<String> ids) async {
+    final now = _now();
+    final toFetch = [
+      for (final id in ids)
+        if (_profiles[id] == null ||
+            now.difference(_profiles[id]!.at) >= profileTtl)
+          id,
+    ];
     if (toFetch.isNotEmpty) {
       final chunks = <List<String>>[
         for (var i = 0; i < toFetch.length; i += _whereInChunk)
           toFetch.sublist(i, min(i + _whereInChunk, toFetch.length)),
       ];
-      final snaps = await Future.wait(chunks.map((c) async {
-        try {
-          return await firestore
-              .collection('profiles')
-              .where(FieldPath.documentId, whereIn: c)
-              .get();
-        } catch (_) {
-          return null; // Skip profiles that can't be loaded
+      await Future.wait(chunks.map((c) async {
+        final snap = await _safe(firestore
+            .collection('profiles')
+            .where(FieldPath.documentId, whereIn: c)
+            .get());
+        if (snap == null) return;
+        final byId = {for (final d in snap.docs) d.id: d.data()};
+        for (final id in c) {
+          _profiles.remove(id);
+          _profiles[id] = (data: byId[id], at: now);
         }
       }));
-      final byId = <String, Map<String, dynamic>>{
-        for (final snap in snaps)
-          if (snap != null)
-            for (final d in snap.docs) d.id: d.data(),
-      };
-      final matchIdFor = {for (final p in pairs) p.$2: p.$1};
-      for (final id in toFetch) {
-        final data = byId[id];
-        if (data == null) continue; // missing / failed: retried next time
-        final pin = _matchedPinFrom(data, id, matchIdFor[id]!, rng);
-        if (pin == null) {
-          _rejectedIds.add(id);
-        } else {
-          _matchedPins[id] = pin;
-        }
+      while (_profiles.length > profileCacheSize) {
+        _profiles.remove(_profiles.keys.first);
       }
     }
-
-    return [
-      for (final p in pairs)
-        if (_matchedPins[p.$2] != null) _matchedPins[p.$2]!,
-    ];
-  }
-
-  /// A matched user's pin, or null when they must not be shown (inactive,
-  /// incognito, ghost mode, hidden from the map, unknown location).
-  GlobeUser? _matchedPinFrom(
-    Map<String, dynamic> profileData,
-    String otherUserId,
-    String matchId,
-    Random rng,
-  ) {
-    // Other users: public location only (security P1-4): approxLocation, or
-    // the ±100 m preciseLocation of users who chose exact discoverability.
-    profileData = publicProfileView(profileData);
-    try {
-      // Skip inactive accounts
-      if (profileData['accountStatus'] != 'active') return null;
-
-      // Skip incognito users
-      final isIncognito = profileData['isIncognito'] as bool? ?? false;
-      if (isIncognito) {
-        final incognitoExpiryTs = profileData['incognitoExpiry'] as Timestamp?;
-        if (incognitoExpiryTs == null ||
-            incognitoExpiryTs.toDate().isAfter(DateTime.now())) {
-          return null;
-        }
-      }
-
-      // Skip ghost mode users
-      if (profileData['isGhostMode'] as bool? ?? false) return null;
-
-      // Skip users who chose "Hidden" (Globe Discoverability): the setting
-      // promises they are "not discoverable on the map", connections included.
-      if (profileData['globeDiscoverability'] == 'hidden') return null;
-
-      // Skip users with unknown/missing location
-      final loc = profileData['location'] as Map<String, dynamic>?;
-      final hasLocation = loc != null &&
-          loc['latitude'] != null &&
-          loc['longitude'] != null &&
-          loc['country'] != null &&
-          (loc['country'] as String?) != 'Unknown';
-      if (!hasLocation) return null;
-
-      return GlobeUserModel.fromFirestore(
-        data: profileData,
-        odcId: otherUserId,
-        pinType: GlobePinType.matched,
-        matchId: matchId,
-        random: rng,
-      );
-    } catch (_) {
-      return null; // Skip profiles that can't be parsed
-    }
-  }
-
-  @override
-  Stream<List<GlobeUser>> watchMatchUpdates({required String userId}) {
-    final rng = Random();
-    if (_memoUserId != userId) _resetMemo(userId);
-
-    Stream<QuerySnapshot<Map<String, dynamic>>> side(String field) =>
-        _activeMatchesQuery(field, userId)
-            .orderBy('matchedAt', descending: true)
-            .limit(_matchLimit)
-            .snapshots();
-
-    // Keep latest snapshot from each query and combine
-    QuerySnapshot<Map<String, dynamic>>? latest1;
-    QuerySnapshot<Map<String, dynamic>>? latest2;
-
-    return StreamGroup.merge([
-      side('userId1').map((s) { latest1 = s; return true; }),
-      side('userId2').map((s) { latest2 = s; return true; }),
-    ])
-        // Until BOTH sides reported, a combined list would drop half the pins.
-        .where((_) => latest1 != null && latest2 != null)
-        .asyncMap((_) {
-      // Profiles already resolved by getGlobeData / earlier snapshots are
-      // reused (same pin, no re-read); only new matches hit Firestore.
-      return _matchedPinsFor(
-        userId: userId,
-        matchDocs: [...?latest1?.docs, ...?latest2?.docs],
-        rng: rng,
-      );
-    });
-  }
-
-  @override
-  Stream<Map<String, bool>> watchOnlineStatus({
-    required List<String> userIds,
-  }) {
-    if (userIds.isEmpty) return Stream.value({});
-
-    // Batch userIds into groups of 30 (Firestore whereIn limit)
-    final batches = <List<String>>[];
-    for (var i = 0; i < userIds.length; i += 30) {
-      batches.add(
-        userIds.sublist(i, i + 30 > userIds.length ? userIds.length : i + 30),
-      );
-    }
-
-    final streams = batches.map((batch) {
-      return firestore
-          .collection('profiles')
-          .where(FieldPath.documentId, whereIn: batch)
-          .snapshots()
-          .map((snapshot) {
-        final statusMap = <String, bool>{};
-        for (final doc in snapshot.docs) {
-          statusMap[doc.id] = doc.data()['isOnline'] as bool? ?? false;
-        }
-        return statusMap;
-      });
-    });
-
-    // Merge all batch streams
-    return StreamGroup.merge(streams);
-  }
-}
-
-/// Merges multiple streams into a single stream.
-class StreamGroup {
-  static Stream<T> merge<T>(Iterable<Stream<T>> streams) {
-    final controller = StreamController<T>();
-    final subscriptions = <StreamSubscription<T>>[];
-
-    for (final stream in streams) {
-      subscriptions.add(stream.listen(
-        controller.add,
-        onError: controller.addError,
-      ));
-    }
-
-    controller.onCancel = () {
-      for (final sub in subscriptions) {
-        sub.cancel();
-      }
+    return {
+      for (final id in ids)
+        if (_profiles[id]?.data != null) id: _profiles[id]!.data!,
     };
-
-    return controller.stream;
   }
 }

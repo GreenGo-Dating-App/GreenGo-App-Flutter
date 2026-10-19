@@ -16,14 +16,14 @@ class GlobeLoaded extends GlobeState {
 
   const GlobeLoaded({
     required this.data,
-    this.showMatched = true,
-    this.showDiscovery = true,
+    this.filters = kAllGlobeFilters,
     this.flyToCountry,
     this.flyRequestId = 0,
   });
   final GlobeData data;
-  final bool showMatched;
-  final bool showDiscovery;
+
+  /// The filter chips that are on; [data] holds only the pins they show.
+  final Set<GlobeNetworkFilter> filters;
   final String? flyToCountry;
 
   /// Bumped per fly request, so jumping to the same country twice is still
@@ -32,7 +32,7 @@ class GlobeLoaded extends GlobeState {
 
   @override
   List<Object?> get props =>
-      [data, showMatched, showDiscovery, flyToCountry, flyRequestId];
+      [data, filters, flyToCountry, flyRequestId];
 }
 
 class GlobeError extends GlobeState {
@@ -49,21 +49,21 @@ class GlobePinSelected extends GlobeState {
   const GlobePinSelected({
     required this.selectedUser,
     required this.data,
-    required this.showMatched,
-    required this.showDiscovery,
+    this.filters = kAllGlobeFilters,
     this.requestId = 0,
   });
   final GlobeUser selectedUser;
   final GlobeData data;
-  final bool showMatched;
-  final bool showDiscovery;
+
+  /// The filter chips that are on; [data] holds only the pins they show.
+  final Set<GlobeNetworkFilter> filters;
 
   /// Bumped per tap, so tapping the same pin again re-opens its sheet.
   final int requestId;
 
   @override
   List<Object?> get props =>
-      [selectedUser, data, showMatched, showDiscovery, requestId];
+      [selectedUser, data, filters, requestId];
 }
 
 class GlobeCountrySelected extends GlobeState {
@@ -72,15 +72,15 @@ class GlobeCountrySelected extends GlobeState {
     required this.countryName,
     required this.matchesInCountry,
     required this.data,
-    required this.showMatched,
-    required this.showDiscovery,
+    this.filters = kAllGlobeFilters,
     this.requestId = 0,
   });
   final String countryName;
   final List<GlobeUser> matchesInCountry;
   final GlobeData data;
-  final bool showMatched;
-  final bool showDiscovery;
+
+  /// The filter chips that are on; [data] holds only the pins they show.
+  final Set<GlobeNetworkFilter> filters;
 
   /// Bumped per tap, so tapping the same country again re-opens its sheet.
   final int requestId;
@@ -90,8 +90,7 @@ class GlobeCountrySelected extends GlobeState {
         countryName,
         matchesInCountry,
         data,
-        showMatched,
-        showDiscovery,
+        filters,
         requestId,
       ];
 }
