@@ -80,6 +80,17 @@ class BusinessStorefrontScreen extends StatefulWidget {
     return null;
   }
 
+  /// Header avatar circle: the dedicated business profile picture
+  /// (`businessLogoUrl`), else the owner's first photo (legacy); null = icon.
+  static String? avatarImageFor(Profile b) {
+    final logo = b.businessLogoOrNull;
+    if (logo != null) return logo;
+    for (final u in b.photoUrls) {
+      if (u.trim().isNotEmpty) return u;
+    }
+    return null;
+  }
+
   @override
   State<BusinessStorefrontScreen> createState() =>
       _BusinessStorefrontScreenState();
@@ -185,11 +196,11 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    final photos = widget.business.photoUrls;
     // Featured/cover (hero) image: prefer the curated coverImageUrl, then fall
     // back to the first profile photo, then a branded placeholder.
     final coverUrl = BusinessStorefrontScreen.heroImageFor(widget.business);
-    final avatarUrl = photos.isNotEmpty ? photos.first : null;
+    // Avatar circle: the business profile picture first (owner 2026-10-19).
+    final avatarUrl = BusinessStorefrontScreen.avatarImageFor(widget.business);
 
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,

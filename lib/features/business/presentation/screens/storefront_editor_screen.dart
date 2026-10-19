@@ -38,25 +38,29 @@ import '../../domain/business_name.dart';
 /// (`ProfileUpdateRequested`), so no new repository/datasource wiring is needed.
 ///
 /// Images are curated in three distinct roles:
-///   * Featured/cover (hero) image → `Profile.coverImageUrl` (REQUIRED: it is
-///     the business tile photo in Discover and the top of the storefront)
+///   * Business profile picture → `Profile.businessLogoUrl` (REQUIRED, owner
+///     2026-10-19: the business tile photo in Discover, the storefront avatar
+///     and the business chat avatar)
+///   * Featured/cover (hero) image → `Profile.coverImageUrl` (optional: the
+///     top of the storefront)
 ///   * Gallery → `Profile.galleryImages` (optional)
 /// The storefront NEVER touches the owner's personal avatar (`photoUrls`).
 /// Uploads flow through a single bloc event that returns only a URL, so the
 /// pending upload's target is tracked in [_pendingUploadTarget] before dispatch
 /// and applied in the listener — this keeps the uploads from mixing up.
-enum _UploadTarget { featured, gallery }
+enum _UploadTarget { logo, featured, gallery }
 
 class StorefrontEditorScreen extends StatefulWidget {
   const StorefrontEditorScreen({required this.profile, super.key});
 
   final Profile profile;
 
-  /// Business accounts must have a FEATURED (cover) image: it is the
-  /// business's tile photo in Discover and the top of the storefront.
-  /// Empty string is the "removed" sentinel, so it counts as missing.
-  static bool hasRequiredFeatured(String? coverImageUrl) =>
-      (coverImageUrl ?? '').trim().isNotEmpty;
+  /// Business accounts must have a BUSINESS PROFILE PICTURE
+  /// (`businessLogoUrl`, owner 2026-10-19): the business's tile photo in
+  /// Discover, its storefront avatar and chat avatar. The featured (cover)
+  /// image is optional. Empty string counts as missing.
+  static bool hasRequiredLogo(String? businessLogoUrl) =>
+      (businessLogoUrl ?? '').trim().isNotEmpty;
 
   @override
   State<StorefrontEditorScreen> createState() => _StorefrontEditorScreenState();
@@ -87,13 +91,17 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   // the removal survives the copyWith(coverImageUrl:) null-coalescing on save.
   String? _coverImageUrl;
 
+  // Business profile picture URL (required; never the personal photoUrls).
+  String? _businessLogoUrl;
+
   // Which image slot the in-flight upload belongs to (null = no upload).
   _UploadTarget? _pendingUploadTarget;
   bool _saving = false;
-  // Inline "add a featured image" error under the Featured image section (set
-  // on a save attempt without a cover, cleared as soon as one is uploaded).
-  bool _featuredRequiredError = false;
+  // Inline "add a business profile picture" error under that section (set on
+  // a save attempt without one, cleared as soon as one is uploaded).
+  bool _logoRequiredError = false;
 
+  bool get _uploadingLogo => _pendingUploadTarget == _UploadTarget.logo;
   bool get _uploadingFeatured => _pendingUploadTarget == _UploadTarget.featured;
   bool get _uploadingGallery => _pendingUploadTarget == _UploadTarget.gallery;
 
@@ -102,6 +110,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
     super.initState();
     _galleryImages = List<String>.from(widget.profile.galleryImages);
     _coverImageUrl = widget.profile.coverImageUrl;
+    _businessLogoUrl = widget.profile.businessLogoUrl;
 
     // Seed 7 weekday rows, hydrating from any saved entries.
     final saved = <int, OpeningHours>{
@@ -172,6 +181,12 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
       if (mounted) setState(() => _pendingUploadTarget = null);
     }
   }
+
+  // ─── Business profile picture ───────────────────────────────────────────
+  // Same validated public upload as the featured/gallery images (NSFW check,
+  // no face requirement): a logo or shop photo need not show a face.
+  Future<void> _pickLogoImage() =>
+      _pickAndUpload(_UploadTarget.logo, isMainPhoto: false);
 
   // ─── Featured / cover image ─────────────────────────────────────────────
   Future<void> _pickFeaturedImage() =>
@@ -275,6 +290,8 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
       // '' sentinel persists a removal; a URL persists the new cover; null
       // leaves the existing value untouched via copyWith's null-coalescing.
       coverImageUrl: _coverImageUrl,
+      // The business profile picture (separate from personal photoUrls).
+      businessLogoUrl: _businessLogoUrl,
       openingHours: _openingHours,
       storefrontBio: _descController.text.trim(),
       storefrontLinks: links,
@@ -293,18 +310,17 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   void _save() {
     final l10n = AppLocalizations.of(context)!;
     final nameOk = BusinessName.isValid(_businessNameController.text);
-    final featuredOk =
-        StorefrontEditorScreen.hasRequiredFeatured(_coverImageUrl);
-    if (!nameOk || !featuredOk) {
+    final logoOk = StorefrontEditorScreen.hasRequiredLogo(_businessLogoUrl);
+    if (!nameOk || !logoOk) {
       setState(() {
         _businessNameError = !nameOk;
-        _featuredRequiredError = !featuredOk;
+        _logoRequiredError = !logoOk;
       });
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(!nameOk
-              ? l10n.businessProfileNameRequiredError
-              : l10n.storefrontFeaturedRequiredError),
+          content: Text(!logoOk
+              ? l10n.storefrontLogoRequiredError
+              : l10n.businessProfileNameRequiredError),
           backgroundColor: AppColors.errorRed,
         ),
       );
@@ -366,9 +382,12 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
             _pendingUploadTarget = null;
             setState(() {
               switch (target!) {
+                case _UploadTarget.logo:
+                  _businessLogoUrl = state.photoUrl;
+                  _logoRequiredError = false;
+                  break;
                 case _UploadTarget.featured:
                   _coverImageUrl = state.photoUrl;
-                  _featuredRequiredError = false;
                   break;
                 case _UploadTarget.gallery:
                   _galleryImages.add(state.photoUrl);
@@ -400,6 +419,33 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           padding: const EdgeInsets.all(AppDimensions.paddingL),
           children: [
+            // Business profile picture (required, owner 2026-10-19) - the
+            // business's own picture, next to its name at the top.
+            _sectionHeader(
+                '${l10n.storefrontLogoTitle} *', l10n.storefrontLogoSubtitle),
+            const SizedBox(height: 12),
+            _logoPicker(l10n),
+            if (_logoRequiredError &&
+                !StorefrontEditorScreen.hasRequiredLogo(_businessLogoUrl)) ...[
+              const SizedBox(height: 8),
+              Row(
+                key: const Key('storefront_logo_required_error'),
+                children: [
+                  const Icon(Icons.error_outline,
+                      color: AppColors.errorRed, size: 16),
+                  const SizedBox(width: 6),
+                  Expanded(
+                    child: Text(
+                      l10n.storefrontLogoRequiredError,
+                      style: const TextStyle(
+                          color: AppColors.errorRed, fontSize: 12),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+            const SizedBox(height: 28),
+
             // Business profile name (required) - shown in Discover and on
             // the storefront.
             _sectionHeader('${l10n.businessProfileNameLabel} *',
@@ -419,30 +465,11 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
             ),
             const SizedBox(height: 28),
 
-            // Featured / cover (hero) image
-            _sectionHeader('${l10n.storefrontFeaturedImage} *',
+            // Featured / cover (hero) image (optional)
+            _sectionHeader(l10n.storefrontFeaturedImage,
                 l10n.storefrontFeaturedImageSubtitle),
             const SizedBox(height: 12),
             _featuredImagePicker(l10n),
-            if (_featuredRequiredError &&
-                !StorefrontEditorScreen.hasRequiredFeatured(_coverImageUrl)) ...[
-              const SizedBox(height: 8),
-              Row(
-                key: const Key('storefront_featured_required_error'),
-                children: [
-                  const Icon(Icons.error_outline,
-                      color: AppColors.errorRed, size: 16),
-                  const SizedBox(width: 6),
-                  Expanded(
-                    child: Text(
-                      l10n.storefrontFeaturedRequiredError,
-                      style: const TextStyle(
-                          color: AppColors.errorRed, fontSize: 12),
-                    ),
-                  ),
-                ],
-              ),
-            ],
             const SizedBox(height: 28),
 
             // Gallery (optional)
@@ -793,6 +820,85 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
           ],
         ],
       );
+
+  // ─── Business profile picture picker ────────────────────────────────────
+  Widget _logoPicker(AppLocalizations l10n) {
+    final url = (_businessLogoUrl ?? '').trim();
+    final hasLogo = url.isNotEmpty;
+    const size = 96.0;
+    return Row(
+      children: [
+        GestureDetector(
+          key: const Key('storefront_logo_picker'),
+          onTap: _pendingUploadTarget != null ? null : _pickLogoImage,
+          child: SizedBox(
+            width: size,
+            height: size,
+            child: Stack(
+              fit: StackFit.expand,
+              children: [
+                Container(
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: AppColors.backgroundCard,
+                    border: Border.all(
+                      color: _logoRequiredError && !hasLogo
+                          ? AppColors.errorRed
+                          : AppColors.richGold.withOpacity(0.6),
+                      width: 1.5,
+                    ),
+                  ),
+                  child: hasLogo
+                      ? Image.network(
+                          url,
+                          fit: BoxFit.cover,
+                          errorBuilder: (_, __, ___) => const Icon(
+                              Icons.storefront,
+                              color: AppColors.richGold,
+                              size: 36),
+                        )
+                      : const Icon(Icons.add_a_photo_outlined,
+                          color: AppColors.richGold, size: 32),
+                ),
+                if (_uploadingLogo)
+                  Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: AppColors.deepBlack.withOpacity(0.5),
+                    ),
+                    child: const Center(
+                      child: SizedBox(
+                        width: 24,
+                        height: 24,
+                        child: CircularProgressIndicator(
+                            strokeWidth: 2, color: AppColors.richGold),
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+          ),
+        ),
+        const SizedBox(width: 16),
+        Expanded(
+          child: Align(
+            alignment: Alignment.centerLeft,
+            child: TextButton.icon(
+              key: const Key('storefront_logo_button'),
+              onPressed: _pendingUploadTarget != null ? null : _pickLogoImage,
+              icon: Icon(hasLogo ? Icons.edit : Icons.add_photo_alternate,
+                  color: AppColors.richGold, size: 18),
+              label: Text(
+                hasLogo ? l10n.storefrontLogoChange : l10n.storefrontLogoAdd,
+                style: const TextStyle(color: AppColors.richGold),
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
 
   // ─── Featured / cover image picker ──────────────────────────────────────
   Widget _featuredImagePicker(AppLocalizations l10n) {

@@ -17,6 +17,9 @@ import 'package:greengo_chat/features/discovery/presentation/widgets/network_gri
 import 'package:greengo_chat/features/explore/presentation/screens/network_discovery_screen.dart';
 import 'package:greengo_chat/features/matching/domain/entities/match_candidate.dart';
 import 'package:greengo_chat/features/matching/domain/entities/match_score.dart';
+import 'package:greengo_chat/features/business/domain/business_distance.dart';
+import 'package:greengo_chat/features/profile/domain/entities/business_address.dart';
+import 'package:greengo_chat/features/profile/domain/entities/location.dart';
 import 'package:greengo_chat/features/profile/domain/entities/profile.dart';
 import 'package:greengo_chat/features/profile/presentation/bloc/profile_bloc.dart';
 import 'package:greengo_chat/features/profile/presentation/bloc/profile_event.dart';
@@ -34,7 +37,7 @@ Widget _app(Widget child) => MaterialApp(
       home: child,
     );
 
-MatchCandidate _candidate(Profile p) => MatchCandidate(
+MatchCandidate _candidate(Profile p, {double distance = 3}) => MatchCandidate(
       profile: p,
       matchScore: MatchScore(
         userId1: 'me',
@@ -44,7 +47,7 @@ MatchCandidate _candidate(Profile p) => MatchCandidate(
             locationScore: 0, ageCompatibilityScore: 0, interestOverlapScore: 0),
         calculatedAt: DateTime(2026, 10, 19),
       ),
-      distance: 3,
+      distance: distance,
       suggestedAt: DateTime(2026, 10, 19),
     );
 
@@ -89,6 +92,33 @@ void main() {
   );
 
   group('1. Discover business tile photo', () {
+    const logo = 'https://example.com/elena_logo.jpg';
+
+    test('business profile picture first, then cover, gallery, personal photo', () {
+      final withLogo = business.copyWith(businessLogoUrl: logo);
+      expect(NetworkGridCard.mainPhotoUrl(withLogo, isBusiness: true), logo);
+      expect(NetworkGridCard.tilePhotoUrls(withLogo, isBusiness: true), [
+        logo,
+        'https://example.com/elena_cover.jpg',
+        'https://example.com/g1.jpg',
+        'https://example.com/g2.jpg',
+      ]);
+      // '' logo = none -> the previous order (cover first).
+      expect(NetworkGridCard.mainPhotoUrl(business.copyWith(businessLogoUrl: ''), isBusiness: true),
+          'https://example.com/elena_cover.jpg');
+      // People tiles never use the business picture.
+      expect(NetworkGridCard.mainPhotoUrl(withLogo, isBusiness: false), 'https://example.com/profile.jpg');
+    });
+
+    testWidgets('business tile renders the business profile picture', (t) async {
+      expect(await _tileImage(t, business.copyWith(businessLogoUrl: logo), isBusiness: true), logo);
+    });
+
+    test('storefront avatar: business picture, else the first personal photo', () {
+      expect(BusinessStorefrontScreen.avatarImageFor(business.copyWith(businessLogoUrl: logo)), logo);
+      expect(BusinessStorefrontScreen.avatarImageFor(business), 'https://example.com/profile.jpg');
+    });
+
     test('featured (cover) image, else first gallery image, else the profile photo', () {
       expect(NetworkGridCard.mainPhotoUrl(business, isBusiness: true), 'https://example.com/elena_cover.jpg');
       final noCover = business.copyWith(coverImageUrl: '');
@@ -170,25 +200,32 @@ void main() {
     });
   });
 
-  group('2. mandatory FEATURED image', () {
-    test('checklist: featured image is a REQUIRED item (gallery does not count)', () {
+  group('2. mandatory BUSINESS PROFILE PICTURE (featured image optional)', () {
+    const logo = 'https://example.com/elena_logo.jpg';
+
+    test('checklist: business picture is the REQUIRED item (cover/gallery do not count)', () {
       expect(CompanyItem.storefrontPhoto.required, isTrue);
-      expect(companyChecklist(business)[CompanyItem.storefrontPhoto], isTrue);
-      final empty = business.copyWith(coverImageUrl: ' ');
-      expect(empty.galleryImages, isNotEmpty);
-      expect(companyChecklist(empty)[CompanyItem.storefrontPhoto], isFalse);
-      expect(missingRequired(companyChecklist(empty)), contains(CompanyItem.storefrontPhoto));
-      expect(missingRequired(companyChecklist(business)), isNot(contains(CompanyItem.storefrontPhoto)));
+      final withLogo = business.copyWith(businessLogoUrl: logo);
+      expect(companyChecklist(withLogo)[CompanyItem.storefrontPhoto], isTrue);
+      // Cover + gallery but no business picture -> missing.
+      expect(business.coverImageUrl, isNotEmpty);
+      expect(business.galleryImages, isNotEmpty);
+      expect(companyChecklist(business)[CompanyItem.storefrontPhoto], isFalse);
+      expect(missingRequired(companyChecklist(business)), contains(CompanyItem.storefrontPhoto));
+      // No cover is fine once the business picture exists.
+      expect(
+          missingRequired(companyChecklist(withLogo.copyWith(coverImageUrl: ''))),
+          isNot(contains(CompanyItem.storefrontPhoto)));
     });
 
     test('editor validator', () {
-      expect(StorefrontEditorScreen.hasRequiredFeatured(null), isFalse);
-      expect(StorefrontEditorScreen.hasRequiredFeatured(''), isFalse);
-      expect(StorefrontEditorScreen.hasRequiredFeatured(' '), isFalse);
-      expect(StorefrontEditorScreen.hasRequiredFeatured('https://x/c.jpg'), isTrue);
+      expect(StorefrontEditorScreen.hasRequiredLogo(null), isFalse);
+      expect(StorefrontEditorScreen.hasRequiredLogo(''), isFalse);
+      expect(StorefrontEditorScreen.hasRequiredLogo(' '), isFalse);
+      expect(StorefrontEditorScreen.hasRequiredLogo('https://x/l.jpg'), isTrue);
     });
 
-    testWidgets('editor: save without a featured image shows the inline error and does not save', (t) async {
+    testWidgets('editor: saves without a featured image when the business picture exists', (t) async {
       t.view.physicalSize = const Size(1200, 6000);
       t.view.devicePixelRatio = 1;
       addTearDown(t.view.resetPhysicalSize);
@@ -197,21 +234,55 @@ void main() {
       final bloc = _MockProfileBloc();
       when(() => bloc.state).thenReturn(const ProfileInitial());
       when(() => bloc.stream).thenAnswer((_) => const Stream.empty());
-      // A gallery alone is not enough.
-      final p = business.copyWith(coverImageUrl: '', photoUrls: const []);
+      final p = business.copyWith(coverImageUrl: '', businessLogoUrl: logo);
       await t.pumpWidget(_app(BlocProvider<ProfileBloc>.value(
         value: bloc,
         child: StorefrontEditorScreen(profile: p),
       )));
       await t.pump();
       final l = AppLocalizations.of(t.element(find.byType(StorefrontEditorScreen)))!;
-      expect(find.byKey(const Key('storefront_featured_required_error')), findsNothing);
+      // The section sits at the top, above the business name.
+      expect(find.text('${l.storefrontLogoTitle} *'), findsOneWidget);
+      expect(find.text('${l.storefrontFeaturedImage} *'), findsNothing);
+      expect(
+          t.getTopLeft(find.byKey(const Key('storefront_logo_picker'))).dy,
+          lessThan(t.getTopLeft(find.byKey(const ValueKey('storefront-business-name'))).dy));
       final save = find.widgetWithText(ElevatedButton, l.save);
       await t.ensureVisible(save);
       await t.tap(save);
       await t.pump();
-      expect(find.byKey(const Key('storefront_featured_required_error')), findsOneWidget);
-      expect(find.text(l.storefrontFeaturedRequiredError), findsWidgets);
+      final ev = verify(() => bloc.add(captureAny())).captured.single as ProfileUpdateRequested;
+      expect(ev.profile.businessLogoUrl, logo);
+      // Saving never touches the personal photos.
+      expect(ev.profile.photoUrls, business.photoUrls);
+    });
+
+    testWidgets('editor: save without a business picture shows the inline error + snackbar and does not save', (t) async {
+      t.view.physicalSize = const Size(1200, 6000);
+      t.view.devicePixelRatio = 1;
+      addTearDown(t.view.resetPhysicalSize);
+      addTearDown(t.view.resetDevicePixelRatio);
+      registerFallbackValue(ProfileUpdateRequested(profile: business));
+      final bloc = _MockProfileBloc();
+      when(() => bloc.state).thenReturn(const ProfileInitial());
+      when(() => bloc.stream).thenAnswer((_) => const Stream.empty());
+      // A cover and a gallery are not enough.
+      final p = business.copyWith(photoUrls: const []);
+      await t.pumpWidget(_app(BlocProvider<ProfileBloc>.value(
+        value: bloc,
+        child: StorefrontEditorScreen(profile: p),
+      )));
+      await t.pump();
+      final l = AppLocalizations.of(t.element(find.byType(StorefrontEditorScreen)))!;
+      expect(find.byKey(const Key('storefront_logo_required_error')), findsNothing);
+      final save = find.widgetWithText(ElevatedButton, l.save);
+      await t.ensureVisible(save);
+      await t.tap(save);
+      await t.pump();
+      expect(find.byKey(const Key('storefront_logo_required_error')), findsOneWidget);
+      // Inline error + snackbar.
+      expect(find.text(l.storefrontLogoRequiredError), findsNWidgets(2));
+      expect(find.byType(SnackBar), findsOneWidget);
       verifyNever(() => bloc.add(any()));
     });
   });
@@ -242,8 +313,10 @@ void main() {
       expect(BusinessName.normalize('  Cafe Lua '), 'Cafe Lua');
     });
 
+    final bizWithLogo = business.copyWith(businessLogoUrl: 'https://example.com/elena_logo.jpg');
+
     testWidgets('prefilled; an empty name blocks the save with a localized error', (t) async {
-      final l = await pumpEditor(t, business);
+      final l = await pumpEditor(t, bizWithLogo);
       final field = find.byKey(const ValueKey('storefront-business-name'));
       expect(t.widget<TextField>(field).controller!.text, "Elena's Cafe");
       await t.enterText(field, '   ');
@@ -256,7 +329,7 @@ void main() {
     });
 
     testWidgets('saves the trimmed business name with the rest of the storefront', (t) async {
-      final l = await pumpEditor(t, business);
+      final l = await pumpEditor(t, bizWithLogo);
       await t.enterText(find.byKey(const ValueKey('storefront-business-name')), '  Cafe Lua  ');
       final save = find.widgetWithText(ElevatedButton, l.save);
       await t.ensureVisible(save);
@@ -268,10 +341,11 @@ void main() {
       // The storefront never touches the owner's personal avatar.
       expect(ev.profile.photoUrls, business.photoUrls);
       expect(ev.profile.coverImageUrl, business.coverImageUrl);
+      expect(ev.profile.businessLogoUrl, bizWithLogo.businessLogoUrl);
     });
 
     testWidgets('no personal Profile image section; gallery is optional', (t) async {
-      final l = await pumpEditor(t, business.copyWith(galleryImages: const []));
+      final l = await pumpEditor(t, bizWithLogo.copyWith(galleryImages: const []));
       expect(find.text('Profile image'), findsNothing);
       expect(find.text('Add profile image'), findsNothing);
       final save = find.widgetWithText(ElevatedButton, l.save);
@@ -281,6 +355,85 @@ void main() {
       final ev = verify(() => bloc.add(captureAny())).captured.single as ProfileUpdateRequested;
       expect(ev.profile.galleryImages, isEmpty);
       expect(ev.profile.photoUrls, business.photoUrls);
+    });
+  });
+
+  group('3. business distance from the BUSINESS ADDRESS (owner 2026-10-19)', () {
+    // Viewer in Sao Paulo (Praca da Se).
+    const viewer = Location(latitude: -23.5503, longitude: -46.6339, city: 'Sao Paulo', country: 'Brazil', displayAddress: '');
+    Profile bizAt(String id, double lat, double lng, {bool promoted = false}) =>
+        buildBusinessProfile(promoted: promoted).copyWith(
+          userId: id,
+          businessAddress: BusinessAddress(address: 'Rua $id', latitude: lat, longitude: lng),
+        );
+
+    test('measured from the address, not the owner location; null without address', () {
+      // ~1.11 km north of the viewer (0.01 deg latitude).
+      final b = bizAt('b1', -23.5403, -46.6339);
+      final km = BusinessDistance.kmToAddress(b, viewer)!;
+      expect(km, closeTo(1.11, 0.02));
+      expect(BusinessDistance.kmToAddress(buildBusinessProfile(), viewer), isNull);
+      expect(BusinessDistance.kmToAddress(b, null), isNull);
+      expect(BusinessDistance.kmToAddress(b, const Location(latitude: 0, longitude: 0, city: '', country: '', displayAddress: '')),
+          isNull);
+      // People are never measured from an address.
+      expect(BusinessDistance.kmToAddress(b.copyWith(isBusiness: false), viewer), isNull);
+    });
+
+    test('business mode order: nearest-first by address; no address keeps the pool distance', () {
+      final far = _candidate(bizAt('far', -23.6503, -46.6339), distance: 0.5); // ~11 km
+      final near = _candidate(bizAt('near', -23.5513, -46.6339), distance: 40); // ~110 m
+      final noAddr = _candidate(buildBusinessProfile(promoted: false).copyWith(userId: 'noaddr'), distance: 5);
+      final unknown = _candidate(buildBusinessProfile(promoted: false).copyWith(userId: 'unknown'), distance: 0);
+      final r = orderBusinessTiles([unknown, far, noAddr, near], viewer);
+      expect(r.candidates.map((c) => c.profile.userId), ['near', 'noaddr', 'far', 'unknown']);
+      expect(r.addressBasedIds, {'near', 'far'});
+      expect(r.candidates.first.distance, closeTo(0.111, 0.005));
+      expect(r.candidates[1].distance, 5); // fallback: unchanged
+    });
+
+    test('promoted (max 5) float to the top, each group nearest-first', () {
+      final list = [
+        for (var i = 0; i < 7; i++)
+          _candidate(bizAt('p$i', -23.5503 - (7 - i) * 0.01, -46.6339, promoted: true)),
+        _candidate(bizAt('r0', -23.5513, -46.6339)),
+      ];
+      final ids = orderBusinessTiles(list, viewer).candidates.map((c) => c.profile.userId).toList();
+      // p6 is nearest among the promoted; the 2 farthest promoted fall back
+      // into the normal nearest-first order after r0 (the nearest of all).
+      expect(ids, ['p6', 'p5', 'p4', 'p3', 'p2', 'r0', 'p1', 'p0']);
+    });
+
+    Future<void> pumpTile(WidgetTester t, MatchCandidate c, {required bool fromAddress}) =>
+        t.pumpWidget(_app(Scaffold(
+          body: SizedBox(
+            width: 200,
+            height: 300,
+            child: NetworkGridCard(
+              candidate: c,
+              isSelf: false,
+              isBusiness: true,
+              distanceFromBusinessAddress: fromAddress,
+              onOpenProfile: () {},
+              onLongPressTag: () {},
+            ),
+          ),
+        )));
+
+    testWidgets('tile shows the address distance with 100 m resolution', (t) async {
+      final r = orderBusinessTiles([_candidate(bizAt('b', -23.5530, -46.6339), distance: 3)], viewer); // ~300 m
+      await pumpTile(t, r.candidates.single, fromAddress: r.addressBasedIds.contains('b'));
+      expect(find.text('300 m'), findsOneWidget);
+      final r2 = orderBusinessTiles([_candidate(bizAt('b2', -23.5395, -46.6339), distance: 3)], viewer); // ~1.2 km
+      await pumpTile(t, r2.candidates.single, fromAddress: true);
+      expect(find.text('1.2 km'), findsOneWidget);
+    });
+
+    testWidgets('fallback (no address): the approximate bucket as today', (t) async {
+      final r = orderBusinessTiles([_candidate(buildBusinessProfile(), distance: 3)], viewer);
+      expect(r.addressBasedIds, isEmpty);
+      await pumpTile(t, r.candidates.single, fromAddress: false);
+      expect(find.text('< 5 km'), findsOneWidget);
     });
   });
 

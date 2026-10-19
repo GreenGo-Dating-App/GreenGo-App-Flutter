@@ -52,9 +52,11 @@ Profile _business({MembershipTier tier = MembershipTier.gold, bool complete = tr
       businessCategory: complete ? 'cafe' : null,
       storefrontBio: complete ? 'Coffee and cake' : null,
       businessAddress: complete ? const BusinessAddress(address: 'Rua A 1', latitude: -23.5, longitude: -46.6) : null,
-      // Gallery present either way: the required photo is the FEATURED image.
+      // Gallery AND cover present either way: the required photo is the
+      // BUSINESS PROFILE PICTURE (owner 2026-10-19).
       galleryImages: const ['https://example.com/g1.jpg'],
-      coverImageUrl: complete ? 'https://example.com/cover.jpg' : '',
+      coverImageUrl: 'https://example.com/cover.jpg',
+      businessLogoUrl: complete ? 'https://example.com/logo.jpg' : '',
     );
 
 Widget _app(Widget child) => MaterialApp(
@@ -66,14 +68,27 @@ Widget _app(Widget child) => MaterialApp(
 String _text(WidgetTester t, String key) => (t.widget(find.byKey(ValueKey(key))) as Text).data!;
 
 void main() {
-  test('storefront photo checklist item = featured (cover) image, not gallery', () {
+  test('storefront photo checklist item = business profile picture, not cover/gallery', () {
     final p = _business();
     expect(companyChecklist(p)[CompanyItem.storefrontPhoto], isTrue);
-    expect(companyChecklist(p.copyWith(coverImageUrl: ''))[CompanyItem.storefrontPhoto], isFalse);
+    expect(companyChecklist(p.copyWith(businessLogoUrl: ''))[CompanyItem.storefrontPhoto], isFalse);
+    // A cover and a gallery do not satisfy it.
     expect(
-        companyChecklist(p.copyWith(coverImageUrl: '', galleryImages: const ['https://x/1.jpg']))[
-            CompanyItem.storefrontPhoto],
+        companyChecklist(p.copyWith(
+            businessLogoUrl: ' ',
+            coverImageUrl: 'https://x/c.jpg',
+            galleryImages: const ['https://x/1.jpg']))[CompanyItem.storefrontPhoto],
         isFalse);
+    // The featured image alone is no longer required.
+    expect(companyChecklist(p.copyWith(coverImageUrl: ''))[CompanyItem.storefrontPhoto], isTrue);
+  });
+
+  testWidgets('checklist item is labelled "Business profile picture"', (t) async {
+    await t.pumpWidget(_app(const SizedBox()));
+    final l = await AppLocalizations.delegate.load(const Locale('en'));
+    expect(l.bcCheckStorefrontPhoto, 'Business profile picture');
+    final it = await AppLocalizations.delegate.load(const Locale('it'));
+    expect(it.bcCheckStorefrontPhoto, "Foto profilo dell'attività");
   });
 
   testWidgets('overview: this month figures and what needs action', (t) async {

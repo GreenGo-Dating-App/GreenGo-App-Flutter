@@ -5955,6 +5955,26 @@
   "storefrontFeaturedImage": "Featured image",
   "storefrontFeaturedImageSubtitle": "The hero banner shown at the top of your storefront.",
   "storefrontAddFeaturedImage": "Add featured image",
+  "storefrontLogoTitle": "Business profile picture",
+  "@storefrontLogoTitle": {
+    "description": "Storefront editor: section title of the REQUIRED business profile picture (businessLogoUrl), separate from personal photos."
+  },
+  "storefrontLogoSubtitle": "Your business's own picture: shown in Discover, in chats and on your storefront. Separate from your personal photos.",
+  "@storefrontLogoSubtitle": {
+    "description": "Storefront editor: subtitle under the business profile picture section."
+  },
+  "storefrontLogoAdd": "Add picture",
+  "@storefrontLogoAdd": {
+    "description": "Storefront editor: button to add the business profile picture."
+  },
+  "storefrontLogoChange": "Change picture",
+  "@storefrontLogoChange": {
+    "description": "Storefront editor: button to replace the business profile picture."
+  },
+  "storefrontLogoRequiredError": "Add a business profile picture. It's your business photo in Discover and in chats.",
+  "@storefrontLogoRequiredError": {
+    "description": "Storefront editor: shown when saving without a business profile picture."
+  },
   "preferenceBusinessOnly": "Business accounts only",
   "preferenceBusinessOnlyDesc": "Show only business accounts in discovery",
   "businessProfileNameLabel": "Business profile name",
@@ -15928,11 +15948,11 @@
   "@discoverySegmentBusinesses": {
     "description": "Discover page: People / Businesses segmented switch"
   },
-  "bcCheckStorefrontPhoto": "Featured image",
+  "bcCheckStorefrontPhoto": "Business profile picture",
   "@bcCheckStorefrontPhoto": {
-    "description": "Business Center Settings checklist: REQUIRED item, the storefront featured (cover) image."
+    "description": "Business Center Settings checklist: REQUIRED item, the business profile picture (businessLogoUrl)."
   },
-  "bcTodoStorefrontPhoto": "Add a featured image: it is your business photo in Discover",
+  "bcTodoStorefrontPhoto": "Add a business profile picture: it is your business photo in Discover",
   "@bcTodoStorefrontPhoto": {
     "description": "Business Center Overview 'Action needed' row when the storefront featured (cover) image is missing."
   },
@@ -15947,10 +15967,6 @@
   "businessProfileNameRequiredError": "Enter your business profile name.",
   "@businessProfileNameRequiredError": {
     "description": "Storefront editor: error when the required business profile name (profiles.businessName) is empty."
-  },
-  "storefrontFeaturedRequiredError": "Add a featured image. It's your business photo in Discover and the top of your storefront.",
-  "@storefrontFeaturedRequiredError": {
-    "description": "Storefront editor: shown when saving without a featured (cover) image."
   },
   "profileLocationSearchOrPick": "Search address or pick on map",
   "@profileLocationSearchOrPick": {

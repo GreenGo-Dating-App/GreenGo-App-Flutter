@@ -188,6 +188,9 @@ class _ConversationCardState extends State<ConversationCard>
   String? get _avatarUrl {
     if (_isGroup) return widget.conversation.groupInfo?.photoUrl;
     if (_showBusinessIdentity) {
+      // Business profile picture first (owner 2026-10-19), then the cover.
+      final logo = widget.otherUserProfile!.businessLogoOrNull;
+      if (logo != null) return logo;
       final cover = widget.otherUserProfile!.coverImageUrl;
       if (cover != null && cover.isNotEmpty) return cover;
     }

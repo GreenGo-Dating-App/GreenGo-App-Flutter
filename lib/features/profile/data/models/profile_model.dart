@@ -77,6 +77,7 @@ class ProfileModel extends Profile {
     super.storefrontBio,
     super.storefrontLinks,
     super.coverImageUrl,
+    super.businessLogoUrl,
     super.isBanned,
     super.isIdVerified,
     super.publicAge,
@@ -168,6 +169,7 @@ class ProfileModel extends Profile {
       storefrontBio: profile.storefrontBio,
       storefrontLinks: profile.storefrontLinks,
       coverImageUrl: profile.coverImageUrl,
+      businessLogoUrl: profile.businessLogoUrl,
       isBanned: profile.isBanned,
       isIdVerified: profile.isIdVerified,
       publicAge: profile.publicAge,
@@ -324,6 +326,7 @@ class ProfileModel extends Profile {
           ? List<String>.from(json['storefrontLinks'] as List)
           : <String>[],
       coverImageUrl: json['coverImageUrl'] as String?,
+      businessLogoUrl: json['businessLogoUrl'] as String?,
       isBanned: json['isBanned'] as bool? ?? false,
       // Server-owned; read only (never in toJson).
       isIdVerified: json['isAgeVerified'] == true,
@@ -493,6 +496,7 @@ class ProfileModel extends Profile {
       'storefrontBio': storefrontBio,
       'storefrontLinks': storefrontLinks,
       'coverImageUrl': coverImageUrl,
+      'businessLogoUrl': businessLogoUrl,
       'isBanned': isBanned,
     };
     // Discoverable-location geohash (travel location while travelling, else

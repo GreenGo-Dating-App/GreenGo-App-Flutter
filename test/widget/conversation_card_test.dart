@@ -143,6 +143,28 @@ void main() {
     });
   });
 
+  testWidgets('business inquiry avatar prefers the business profile picture',
+      (tester) async {
+    final business = buildBusinessProfile().copyWith(
+      businessLogoUrl: 'https://example.com/elena_logo.jpg',
+    );
+    await mockNetworkImagesFor(() async {
+      await pumpCard(
+        tester,
+        ConversationCard(
+          conversation: buildConversation(businessInquiry: true),
+          otherUserProfile: business,
+          currentUserId: 'me',
+        ),
+      );
+      final avatar = tester.widget<CircleAvatar>(find.byType(CircleAvatar));
+      expect((avatar.backgroundImage! as CachedNetworkImageProvider).url,
+          'https://example.com/elena_logo.jpg');
+      await tester.pump();
+      tester.takeException();
+    });
+  });
+
   testWidgets('a NON-business profile keeps the personal displayName',
       (tester) async {
     // businessInquiry flag set but the profile is not a business -> personal.

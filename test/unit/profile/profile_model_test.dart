@@ -27,6 +27,20 @@ void main() {
       expect(restored.dateOfBirth, model.dateOfBirth);
     });
 
+    test('round-trips the business profile picture (businessLogoUrl)', () {
+      final model = ProfileModel.fromEntity(buildBusinessProfile().copyWith(
+        businessLogoUrl: 'https://example.com/logo.jpg',
+        photoUrls: const ['https://example.com/me.jpg'],
+      ));
+      final restored = ProfileModel.fromJson(model.toJson());
+      expect(restored.businessLogoUrl, 'https://example.com/logo.jpg');
+      expect(restored.businessLogoOrNull, 'https://example.com/logo.jpg');
+      // Kept apart from the personal photos.
+      expect(restored.photoUrls, ['https://example.com/me.jpg']);
+      expect(ProfileModel.fromJson({...model.toJson(), 'businessLogoUrl': ''})
+          .businessLogoOrNull, isNull);
+    });
+
     test('round-trips lists (photoUrls / interests / languages)', () {
       final model = ProfileModel.fromEntity(
         buildProfile(

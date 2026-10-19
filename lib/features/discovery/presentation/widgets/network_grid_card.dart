@@ -37,6 +37,7 @@ class NetworkGridCard extends StatefulWidget {
     required this.onOpenProfile,
     required this.onLongPressTag,
     this.isBusiness = false,
+    this.distanceFromBusinessAddress = false,
     super.key,
   });
 
@@ -51,6 +52,11 @@ class NetworkGridCard extends StatefulWidget {
   /// accounts (same "featured" effect as Explore's community-event card).
   final bool isBusiness;
 
+  /// True when [candidate.distance] was measured from the business's PUBLIC
+  /// storefront address (see BusinessDistance): shown with 100 m resolution
+  /// ("300 m", "1.2 km") instead of the approximate bucket.
+  final bool distanceFromBusinessAddress;
+
   /// Tap anywhere on the tile — photo or name / age / city block (opens the
   /// full profile; chat is one tap away from there).
   final VoidCallback onOpenProfile;
@@ -58,19 +64,21 @@ class NetworkGridCard extends StatefulWidget {
   /// Long-press anywhere on the tile (opens the private group-tag sheet).
   final VoidCallback onLongPressTag;
 
-  /// The photos a tile cycles through. Business tiles lead with the
-  /// storefront FEATURED image (`coverImageUrl`, '' = none) as the tile's main
-  /// photo (owner 2026-10-19), then the storefront gallery; when both are
-  /// empty (legacy businesses) they fall back to the profile photos.
-  /// People tiles: their profile photos.
+  /// The photos a tile cycles through. Business tiles (owner 2026-10-19) lead
+  /// with the dedicated BUSINESS PROFILE PICTURE (`businessLogoUrl`), then the
+  /// storefront featured image (`coverImageUrl`, '' = none), then the
+  /// storefront gallery; when all are empty (legacy businesses) they fall back
+  /// to the personal profile photos. People tiles: their profile photos.
   static List<String> tilePhotoUrls(Profile profile, {required bool isBusiness}) {
     if (isBusiness) {
-      final cover = (profile.coverImageUrl ?? '').trim();
+      final seen = <String>{};
       final urls = <String>[
-        if (cover.isNotEmpty) cover,
-        ...profile.galleryImages
-            .map((u) => u.trim())
-            .where((u) => u.isNotEmpty && u != cover),
+        for (final u in [
+          profile.businessLogoUrl ?? '',
+          profile.coverImageUrl ?? '',
+          ...profile.galleryImages,
+        ])
+          if (u.trim().isNotEmpty && seen.add(u.trim())) u.trim(),
       ];
       if (urls.isNotEmpty) return urls;
     }
@@ -161,9 +169,14 @@ class _NetworkGridCardState extends State<NetworkGridCard> {
     final location = profile.effectiveLocation;
     // Approximate distance bucket ("< 5 km"); 100 m resolution only for
     // users who opted into 'exact' (±100 m preciseLocation).
-    final distanceText = distanceLabel(
-        AppLocalizations.of(context)!, widget.candidate.distance,
-        precise: profile.hasPreciseLocation);
+    // Business tiles measured from the public storefront address: 100 m
+    // resolution too (the address is public).
+    final distanceText = widget.distanceFromBusinessAddress
+        ? preciseDistanceLabel(
+            AppLocalizations.of(context)!, widget.candidate.distance)
+        : distanceLabel(
+            AppLocalizations.of(context)!, widget.candidate.distance,
+            precise: profile.hasPreciseLocation);
     final matchPercentage = widget.candidate.matchScore.matchPercentageText;
     // Only surface the compatibility % when it is meaningful (> 0) and this is
     // not the user's own tile. Sources that carry no real score (e.g. the
