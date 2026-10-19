@@ -870,29 +870,6 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
-        // People | Businesses switch (owner, 2026-10-19): always visible under
-        // the top bar so it's obvious the grid can show either. Instant, no
-        // reload - it filters the already-loaded pool.
-        bottom: _searching
-            ? null
-            : PreferredSize(
-                preferredSize: const Size.fromHeight(52),
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 0, 16, 10),
-                  child: _PeopleBusinessSwitch(
-                    showBusinesses: _effectiveShowBusinesses,
-                    peopleLabel: l10n.discoverySegmentPeople,
-                    businessesLabel: l10n.discoverySegmentBusinesses,
-                    onChanged: (businesses) {
-                      if (businesses == _effectiveShowBusinesses) return;
-                      setState(() {
-                        _businessModeOverride = businesses;
-                        _visibleCount = _pageSize;
-                      });
-                    },
-                  ),
-                ),
-              ),
         iconTheme: const IconThemeData(color: AppColors.textPrimary),
         title: _searching
             ? TextField(
@@ -925,6 +902,24 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
                   )
                 : const SizedBox.shrink()),
         actions: [
+          // People | Businesses mini switch next to search (owner, 2026-10-19):
+          // both icons always visible, the active one gold. Instant, no reload.
+          if (!_searching)
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: _PeopleBusinessSwitch(
+                showBusinesses: _effectiveShowBusinesses,
+                peopleLabel: l10n.discoverySegmentPeople,
+                businessesLabel: l10n.discoverySegmentBusinesses,
+                onChanged: (businesses) {
+                  if (businesses == _effectiveShowBusinesses) return;
+                  setState(() {
+                    _businessModeOverride = businesses;
+                    _visibleCount = _pageSize;
+                  });
+                },
+              ),
+            ),
           IconButton(
             icon: Icon(_searching ? Icons.close : Icons.search),
             tooltip: l10n.searchByNicknameTooltip,
@@ -1506,7 +1501,9 @@ class _CandidateSkeletonState extends State<_CandidateSkeleton>
   }
 }
 
-/// Two-part People | Businesses switch: the active side is filled gold.
+/// Compact People | Businesses switch for the top bar: a small pill with both
+/// icons, the active one on a gold background. Labels are used for tooltips
+/// and screen readers.
 class _PeopleBusinessSwitch extends StatelessWidget {
   const _PeopleBusinessSwitch({
     required this.showBusinesses,
@@ -1524,40 +1521,26 @@ class _PeopleBusinessSwitch extends StatelessWidget {
   Widget build(BuildContext context) {
     Widget side(bool businesses, IconData icon, String label) {
       final active = showBusinesses == businesses;
-      return Expanded(
+      return Tooltip(
+        message: label,
         child: Semantics(
           button: true,
           selected: active,
+          label: label,
           child: InkWell(
             key: ValueKey(businesses ? 'discover-seg-businesses' : 'discover-seg-people'),
-            borderRadius: BorderRadius.circular(22),
+            borderRadius: BorderRadius.circular(16),
             onTap: () => onChanged(businesses),
             child: AnimatedContainer(
-              duration: const Duration(milliseconds: 180),
-              height: 40,
+              duration: const Duration(milliseconds: 160),
+              width: 34,
+              height: 30,
               decoration: BoxDecoration(
                 color: active ? AppColors.richGold : Colors.transparent,
-                borderRadius: BorderRadius.circular(22),
+                borderRadius: BorderRadius.circular(16),
               ),
               alignment: Alignment.center,
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Icon(icon, size: 18, color: active ? AppColors.deepBlack : AppColors.textSecondary),
-                  const SizedBox(width: 6),
-                  Flexible(
-                    child: Text(
-                      label,
-                      overflow: TextOverflow.ellipsis,
-                      style: TextStyle(
-                        color: active ? AppColors.deepBlack : AppColors.textSecondary,
-                        fontWeight: active ? FontWeight.w700 : FontWeight.w500,
-                        fontSize: 14,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+              child: Icon(icon, size: 18, color: active ? AppColors.deepBlack : AppColors.textSecondary),
             ),
           ),
         ),
@@ -1565,13 +1548,13 @@ class _PeopleBusinessSwitch extends StatelessWidget {
     }
 
     return Container(
-      padding: const EdgeInsets.all(3),
+      padding: const EdgeInsets.all(2),
       decoration: BoxDecoration(
         color: AppColors.backgroundCard,
-        borderRadius: BorderRadius.circular(25),
+        borderRadius: BorderRadius.circular(18),
         border: Border.all(color: AppColors.divider),
       ),
-      child: Row(children: [
+      child: Row(mainAxisSize: MainAxisSize.min, children: [
         side(false, Icons.people_alt_outlined, peopleLabel),
         side(true, Icons.storefront_outlined, businessesLabel),
       ]),
