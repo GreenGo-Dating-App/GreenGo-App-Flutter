@@ -722,7 +722,7 @@ apresentar uma página de empresa:
   empresa;
 - eventos e experiências;
 - seguidores: outras pessoas podem seguir a sua empresa. Todos podem ver
-  quantos seguidores tem, mas só o utilizador vê quem são.
+  quantos seguidores tem e quem são.
 
 13.2 Ao mudar a sua Conta para o modo empresa, confirma que:
 - está autorizado a atuar em nome da empresa;
@@ -1389,8 +1389,8 @@ Clarificações para corresponder ao funcionamento da aplicação:
   partilhados apenas com o organizador; as fases de preço não podem ter mais
   bilhetes do que a lotação do Evento; os visitantes também podem reservar
   Eventos com vários tipos de bilhete.
-- Secção 13.1: todos podem ver quantos seguidores tem a sua empresa; só o
-  utilizador vê quem são.
+- Secção 13.1: todos podem ver quantos seguidores tem a sua empresa e quem
+  são.
 - Secções 5.1 g, 14.1, 14.2 e 14.4: os assistentes de IA no chat são a
   tradução, a leitura em voz alta e a transliteração (as respostas
   inteligentes e a decomposição de palavras não são oferecidas); o conteúdo
