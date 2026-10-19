@@ -870,6 +870,29 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
+        // People | Businesses switch (owner, 2026-10-19): always visible under
+        // the top bar so it's obvious the grid can show either. Instant, no
+        // reload - it filters the already-loaded pool.
+        bottom: _searching
+            ? null
+            : PreferredSize(
+                preferredSize: const Size.fromHeight(52),
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 0, 16, 10),
+                  child: _PeopleBusinessSwitch(
+                    showBusinesses: _effectiveShowBusinesses,
+                    peopleLabel: l10n.discoverySegmentPeople,
+                    businessesLabel: l10n.discoverySegmentBusinesses,
+                    onChanged: (businesses) {
+                      if (businesses == _effectiveShowBusinesses) return;
+                      setState(() {
+                        _businessModeOverride = businesses;
+                        _visibleCount = _pageSize;
+                      });
+                    },
+                  ),
+                ),
+              ),
         iconTheme: const IconThemeData(color: AppColors.textPrimary),
         title: _searching
             ? TextField(
@@ -902,23 +925,6 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
                   )
                 : const SizedBox.shrink()),
         actions: [
-          // Instant People ⇄ Businesses toggle (no reload — filters the pool).
-          if (!_searching)
-            IconButton(
-              icon: Icon(_effectiveShowBusinesses
-                  ? Icons.storefront
-                  : Icons.people_alt_outlined),
-              tooltip: _effectiveShowBusinesses
-                  ? l10n.discoveryShowPeople
-                  : l10n.discoveryShowBusinesses,
-              color: _effectiveShowBusinesses ? AppColors.richGold : null,
-              onPressed: () {
-                setState(() {
-                  _businessModeOverride = !_effectiveShowBusinesses;
-                  _visibleCount = _pageSize;
-                });
-              },
-            ),
           IconButton(
             icon: Icon(_searching ? Icons.close : Icons.search),
             tooltip: l10n.searchByNicknameTooltip,
@@ -1496,6 +1502,79 @@ class _CandidateSkeletonState extends State<_CandidateSkeleton>
     return FadeTransition(
       opacity: Tween<double>(begin: 0.35, end: 0.7).animate(_controller!),
       child: box,
+    );
+  }
+}
+
+/// Two-part People | Businesses switch: the active side is filled gold.
+class _PeopleBusinessSwitch extends StatelessWidget {
+  const _PeopleBusinessSwitch({
+    required this.showBusinesses,
+    required this.peopleLabel,
+    required this.businessesLabel,
+    required this.onChanged,
+  });
+
+  final bool showBusinesses;
+  final String peopleLabel;
+  final String businessesLabel;
+  final ValueChanged<bool> onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    Widget side(bool businesses, IconData icon, String label) {
+      final active = showBusinesses == businesses;
+      return Expanded(
+        child: Semantics(
+          button: true,
+          selected: active,
+          child: InkWell(
+            key: ValueKey(businesses ? 'discover-seg-businesses' : 'discover-seg-people'),
+            borderRadius: BorderRadius.circular(22),
+            onTap: () => onChanged(businesses),
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 180),
+              height: 40,
+              decoration: BoxDecoration(
+                color: active ? AppColors.richGold : Colors.transparent,
+                borderRadius: BorderRadius.circular(22),
+              ),
+              alignment: Alignment.center,
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(icon, size: 18, color: active ? AppColors.deepBlack : AppColors.textSecondary),
+                  const SizedBox(width: 6),
+                  Flexible(
+                    child: Text(
+                      label,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        color: active ? AppColors.deepBlack : AppColors.textSecondary,
+                        fontWeight: active ? FontWeight.w700 : FontWeight.w500,
+                        fontSize: 14,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
+    return Container(
+      padding: const EdgeInsets.all(3),
+      decoration: BoxDecoration(
+        color: AppColors.backgroundCard,
+        borderRadius: BorderRadius.circular(25),
+        border: Border.all(color: AppColors.divider),
+      ),
+      child: Row(children: [
+        side(false, Icons.people_alt_outlined, peopleLabel),
+        side(true, Icons.storefront_outlined, businessesLabel),
+      ]),
     );
   }
 }

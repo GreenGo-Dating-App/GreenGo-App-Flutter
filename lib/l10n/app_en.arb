@@ -15927,5 +15927,13 @@
   "csvColTicketHolders": "Ticket holders",
   "@csvColTicketHolders": {
     "description": "CSV export"
+  },
+  "discoverySegmentPeople": "People",
+  "@discoverySegmentPeople": {
+    "description": "Discover page: People / Businesses segmented switch"
+  },
+  "discoverySegmentBusinesses": "Businesses",
+  "@discoverySegmentBusinesses": {
+    "description": "Discover page: People / Businesses segmented switch"
   }
 }

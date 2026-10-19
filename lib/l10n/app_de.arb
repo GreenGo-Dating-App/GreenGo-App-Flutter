@@ -8381,5 +8381,7 @@
   "evCapacityBelowPhases": "Die Kapazität darf nicht unter den {count} Tickets deiner Preisphasen liegen. Erhöhe sie oder senke die Phasenmengen.",
   "eventPlusOnesPaidNote": "Bezahlte Events haben keine Begleitpersonen: Jeder Gast braucht ein eigenes Ticket.",
   "eventGuestsNoPlaces": "Nicht mehr genug freie Plätze für deine Gäste.",
-  "csvColTicketHolders": "Ticketinhaber"
+  "csvColTicketHolders": "Ticketinhaber",
+  "discoverySegmentPeople": "Personen",
+  "discoverySegmentBusinesses": "Unternehmen"
 }

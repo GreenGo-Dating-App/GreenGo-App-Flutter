@@ -8381,5 +8381,7 @@
   "evCapacityBelowPhases": "La capienza non può essere inferiore ai {count} biglietti delle fasi di prezzo. Aumentala o riduci le quantità delle fasi.",
   "eventPlusOnesPaidNote": "Gli eventi a pagamento non prevedono accompagnatori: ogni ospite ha bisogno del proprio biglietto.",
   "eventGuestsNoPlaces": "Non ci sono abbastanza posti per i tuoi ospiti.",
-  "csvColTicketHolders": "Titolari dei biglietti"
+  "csvColTicketHolders": "Titolari dei biglietti",
+  "discoverySegmentPeople": "Persone",
+  "discoverySegmentBusinesses": "Attività"
 }

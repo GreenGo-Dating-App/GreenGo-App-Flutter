@@ -7807,5 +7807,7 @@
   "evCapacityBelowPhases": "La capacité ne peut pas être inférieure aux {count} billets de vos phases de prix. Augmentez-la ou réduisez les quantités des phases.",
   "eventPlusOnesPaidNote": "Les événements payants n’ont pas d’accompagnants : chaque invité a besoin de son propre billet.",
   "eventGuestsNoPlaces": "Il ne reste pas assez de places pour vos invités.",
-  "csvColTicketHolders": "Détenteurs des billets"
+  "csvColTicketHolders": "Détenteurs des billets",
+  "discoverySegmentPeople": "Personnes",
+  "discoverySegmentBusinesses": "Entreprises"
 }
