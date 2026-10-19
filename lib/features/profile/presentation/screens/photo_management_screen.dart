@@ -83,6 +83,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
                 photo: image,
                 isMainPhoto: !isPrivate && _photoUrls.isEmpty,
                 isPrivate: isPrivate,
+                isBusiness: widget.profile.isBusiness,
               ),
             );
       }

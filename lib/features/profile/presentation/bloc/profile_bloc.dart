@@ -118,8 +118,10 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
       final photoFile = File(event.photo.path);
       PhotoValidationResult validationResult;
 
-      if (!event.isPrivate && event.isMainPhoto) {
-        // Main photo: must have face + no NSFW
+      if (!event.isPrivate && event.isMainPhoto && !event.isBusiness) {
+        // Main photo: must have face + no NSFW (personal accounts only;
+        // business accounts may use a logo - they fall through to the
+        // NSFW-only check below)
         validationResult =
             await validationService.validateMainPhoto(photoFile);
         if (!validationResult.isValid) {
@@ -155,7 +157,7 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
         userId: event.userId,
         photo: event.photo,
         isPrivate: event.isPrivate,
-        requireFace: !event.isPrivate && event.isMainPhoto,
+        requireFace: !event.isPrivate && event.isMainPhoto && !event.isBusiness,
       ),
     );
 

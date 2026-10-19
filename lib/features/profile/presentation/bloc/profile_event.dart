@@ -44,14 +44,19 @@ class ProfilePhotoUploadRequested extends ProfileEvent {
     required this.photo,
     this.isMainPhoto = false,
     this.isPrivate = false,
+    this.isBusiness = false,
   });
   final String userId;
   final XFile photo;
   final bool isMainPhoto;
   final bool isPrivate;
 
+  /// Business accounts may use a logo or any image as their main photo: no
+  /// face required (owner, 2026-10-19). Nudity/explicit checks still apply.
+  final bool isBusiness;
+
   @override
-  List<Object?> get props => [userId, photo, isMainPhoto, isPrivate];
+  List<Object?> get props => [userId, photo, isMainPhoto, isPrivate, isBusiness];
 }
 
 class ProfilePhotoVerificationRequested extends ProfileEvent {
