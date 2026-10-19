@@ -262,6 +262,7 @@ decide whether to fill it in.
 - Badges: verified, membership tier, local guide, traveller, business.
 - Whether you are online, unless you hide it with ghost or incognito mode.
 - Your ratings as a host or guest, and the reviews others leave about you.
+- Your number of followers (on your profile or storefront).
 
 People you have blocked cannot see your profile.
 
@@ -271,9 +272,9 @@ Your exact coordinates, date of birth, email address, phone number, identity
 document and the identity details you gave from it, verification selfie and
 private-album photos (unless you grant someone access to your private album).
 
-Who follows you, whom you follow, and your follower, following and store
-counts. This applies to personal and business accounts. Other users can still
-follow you, but only you see these lists and counts.
+Who follows you, whom you follow, and your following and store counts. This
+applies to personal and business accounts. Other users can follow you and see
+your number of followers (4.1), but only you see who they are.
 
 4.3 Content you share
 
@@ -1484,8 +1485,9 @@ Clarifications to match how the app works:
 - Sections 11.4, 11.7 and 12.3: the names of the ticket holders, if the
   organizer asks for them, are shared only with the organizer and shown on
   the tickets.
-- Section 4.2: who follows you, whom you follow and your follower, following
-  and store counts are never shown to other users (also business accounts).
+- Sections 4.1 and 4.2: your number of followers is shown on your profile or
+  storefront; who follows you, whom you follow and your following and store
+  counts are never shown to other users (also business accounts).
 - Sections 2, 5 and 9: the AI features are translation, read-aloud and
   transliteration (smart replies and word breakdown are not offered); chat
   messages are translated with Google's translation services (Google Cloud
