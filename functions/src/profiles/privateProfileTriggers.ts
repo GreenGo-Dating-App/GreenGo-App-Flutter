@@ -4,7 +4,9 @@
  * there for the data model and the no-loop argument.
  *
  * mirrorPrivateProfileFields also (re)starts the follow-edge name fan-out
- * (follow_name_jobs → onFollowNameJob) when the display name changes.
+ * (follow_name_jobs → onFollowNameJob) when the display name changes, and
+ * enforces the main-photo face rule when photoUrls[0] changes
+ * (safety/mainPhotoFaceRule.ts).
  *
  * Deploy:  mirrorPrivateProfileFields, syncCoarseFromPrivateProfile,
  *          refreshBirthdayAges, getVerificationPhotoUrl
@@ -40,6 +42,7 @@ import {
   syncProfile,
 } from './privateProfile';
 import { enqueueFollowNameJobIfChanged } from '../social/followNames';
+import { enforceOnProfileWrite, firestoreFaceRulePorts } from '../safety/mainPhotoFaceRule';
 
 /**
  * profiles/{uid} written. Most writes (presence, counters) touch no watched
@@ -57,6 +60,14 @@ export const mirrorPrivateProfileFields = onDocumentWritten(
       await enqueueFollowNameJobIfChanged(admin.firestore(), uid, before, after);
     } catch (e: any) {
       console.error('follow name job enqueue failed:', e?.message || e);
+    }
+    // Main-photo face rule (safety/mainPhotoFaceRule.ts): an in-memory
+    // compare of photoUrls[0]; reads / Vision only when the main photo of a
+    // personal account changed. Never blocks the private mirror below.
+    try {
+      await enforceOnProfileWrite(uid, before, after, firestoreFaceRulePorts());
+    } catch (e: any) {
+      console.error('main photo face rule failed:', e?.message || e);
     }
     await handlePublicProfileWrite(uid, before, after);
   },

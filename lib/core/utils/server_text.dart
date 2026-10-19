@@ -738,6 +738,12 @@ String? serverText(
       return l10n.srvLevelUpTitle(_int(p['level']));
     case 'srvLikedYourEvent':
       return l10n.srvLikedYourEvent;
+    case 'srvMainPhotoFaceMovedBody':
+      return l10n.srvMainPhotoFaceMovedBody;
+    case 'srvMainPhotoFaceNeededBody':
+      return l10n.srvMainPhotoFaceNeededBody;
+    case 'srvMainPhotoFaceTitle':
+      return l10n.srvMainPhotoFaceTitle;
     case 'srvMembershipExpiredBody':
       return l10n.srvMembershipExpiredBody;
     case 'srvMembershipExpiredTitle':

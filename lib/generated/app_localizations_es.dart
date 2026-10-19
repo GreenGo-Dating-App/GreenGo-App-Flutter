@@ -22724,6 +22724,17 @@ class AppLocalizationsEs extends AppLocalizations {
   String get srvGiftFromGreenGo => 'Un regalo de GreenGo';
 
   @override
+  String get srvMainPhotoFaceTitle => 'Tu foto principal necesita tu cara';
+
+  @override
+  String get srvMainPhotoFaceMovedBody =>
+      'Tu foto de perfil principal debe mostrar tu cara con claridad. Una foto sin una cara visible se ha movido de la primera posición.';
+
+  @override
+  String get srvMainPhotoFaceNeededBody =>
+      'Tu foto de perfil principal debe mostrar tu cara con claridad. Añade una foto tuya y conviértela en tu foto principal.';
+
+  @override
   String get srvAccountNotApprovedTitle => 'Cuenta no aprobada';
 
   @override

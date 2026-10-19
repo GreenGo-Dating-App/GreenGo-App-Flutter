@@ -365,6 +365,9 @@ export type ArbKey =
   | 'srvLevelUpBody'
   | 'srvLevelUpTitle'
   | 'srvLikedYourEvent'
+  | 'srvMainPhotoFaceMovedBody'
+  | 'srvMainPhotoFaceNeededBody'
+  | 'srvMainPhotoFaceTitle'
   | 'srvMembershipExpiredBody'
   | 'srvMembershipExpiredTitle'
   | 'srvMembershipExpiringBody'
@@ -781,6 +784,9 @@ export const ARB_KEYS: readonly ArbKey[] = [
   'srvLevelUpBody',
   'srvLevelUpTitle',
   'srvLikedYourEvent',
+  'srvMainPhotoFaceMovedBody',
+  'srvMainPhotoFaceNeededBody',
+  'srvMainPhotoFaceTitle',
   'srvMembershipExpiredBody',
   'srvMembershipExpiredTitle',
   'srvMembershipExpiringBody',
@@ -1199,6 +1205,9 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvLevelUpBody: "{coins, plural, =1{Congratulations! You've earned 1 coin.} other{Congratulations! You've earned {coins} coins.}}",
     srvLevelUpTitle: "Level Up! You're now level {level}!",
     srvLikedYourEvent: "liked your event",
+    srvMainPhotoFaceMovedBody: "Your main profile photo must clearly show your face. A photo without a visible face was moved out of the first position.",
+    srvMainPhotoFaceNeededBody: "Your main profile photo must clearly show your face. Please add a photo of yourself and make it your main photo.",
+    srvMainPhotoFaceTitle: "Your main photo needs your face",
     srvMembershipExpiredBody: "Your membership has expired. Purchase a new membership to restore premium features.",
     srvMembershipExpiredTitle: "Membership expired",
     srvMembershipExpiringBody: "{days, plural, =1{Your {tier} membership expires in 1 day. Extend now to keep your premium features!} other{Your {tier} membership expires in {days} days. Extend now to keep your premium features!}}",
@@ -1615,6 +1624,9 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvLevelUpBody: "{coins, plural, =1{Glückwunsch! Du hast 1 Münze verdient.} other{Glückwunsch! Du hast {coins} Münzen verdient.}}",
     srvLevelUpTitle: "Level-Aufstieg! Du bist jetzt Level {level}!",
     srvLikedYourEvent: "mag dein Event",
+    srvMainPhotoFaceMovedBody: "Dein Hauptprofilfoto muss dein Gesicht deutlich zeigen. Ein Foto ohne sichtbares Gesicht wurde von der ersten Position verschoben.",
+    srvMainPhotoFaceNeededBody: "Dein Hauptprofilfoto muss dein Gesicht deutlich zeigen. Bitte füge ein Foto von dir hinzu und mache es zu deinem Hauptfoto.",
+    srvMainPhotoFaceTitle: "Dein Hauptfoto braucht dein Gesicht",
     srvMembershipExpiredBody: "Deine Mitgliedschaft ist abgelaufen. Schließe eine neue ab, um die Premium-Funktionen wiederherzustellen.",
     srvMembershipExpiredTitle: "Mitgliedschaft abgelaufen",
     srvMembershipExpiringBody: "{days, plural, =1{Deine {tier}-Mitgliedschaft läuft in 1 Tag ab. Verlängere jetzt, um deine Premium-Funktionen zu behalten!} other{Deine {tier}-Mitgliedschaft läuft in {days} Tagen ab. Verlängere jetzt, um deine Premium-Funktionen zu behalten!}}",
@@ -2031,6 +2043,9 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvLevelUpBody: "{coins, plural, =1{¡Enhorabuena! Has ganado 1 moneda.} other{¡Enhorabuena! Has ganado {coins} monedas.}}",
     srvLevelUpTitle: "¡Subiste de nivel! ¡Ahora eres nivel {level}!",
     srvLikedYourEvent: "le gustó tu evento",
+    srvMainPhotoFaceMovedBody: "Tu foto de perfil principal debe mostrar tu cara con claridad. Una foto sin una cara visible se ha movido de la primera posición.",
+    srvMainPhotoFaceNeededBody: "Tu foto de perfil principal debe mostrar tu cara con claridad. Añade una foto tuya y conviértela en tu foto principal.",
+    srvMainPhotoFaceTitle: "Tu foto principal necesita tu cara",
     srvMembershipExpiredBody: "Tu membresía ha caducado. Compra una nueva para recuperar las funciones premium.",
     srvMembershipExpiredTitle: "Membresía caducada",
     srvMembershipExpiringBody: "{days, plural, =1{Tu membresía {tier} caduca en 1 día. ¡Amplíala ahora para conservar tus funciones premium!} other{Tu membresía {tier} caduca en {days} días. ¡Amplíala ahora para conservar tus funciones premium!}}",
@@ -2447,6 +2462,9 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvLevelUpBody: "{coins, plural, =1{Félicitations ! Vous avez gagné 1 pièce.} other{Félicitations ! Vous avez gagné {coins} pièces.}}",
     srvLevelUpTitle: "Niveau supérieur ! Vous êtes maintenant niveau {level} !",
     srvLikedYourEvent: "a aimé votre événement",
+    srvMainPhotoFaceMovedBody: "Votre photo de profil principale doit montrer clairement votre visage. Une photo sans visage visible a été retirée de la première position.",
+    srvMainPhotoFaceNeededBody: "Votre photo de profil principale doit montrer clairement votre visage. Ajoutez une photo de vous et définissez-la comme photo principale.",
+    srvMainPhotoFaceTitle: "Votre photo principale doit montrer votre visage",
     srvMembershipExpiredBody: "Votre abonnement a expiré. Souscrivez un nouvel abonnement pour retrouver les fonctionnalités premium.",
     srvMembershipExpiredTitle: "Abonnement expiré",
     srvMembershipExpiringBody: "{days, plural, =1{Votre abonnement {tier} expire dans 1 jour. Prolongez-le pour garder vos fonctionnalités premium !} other{Votre abonnement {tier} expire dans {days} jours. Prolongez-le pour garder vos fonctionnalités premium !}}",
@@ -2863,6 +2881,9 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvLevelUpBody: "{coins, plural, =1{Complimenti! Hai guadagnato 1 moneta.} other{Complimenti! Hai guadagnato {coins} monete.}}",
     srvLevelUpTitle: "Livello superiore! Ora sei al livello {level}!",
     srvLikedYourEvent: "ha messo mi piace al tuo evento",
+    srvMainPhotoFaceMovedBody: "La tua foto profilo principale deve mostrare chiaramente il tuo viso. Una foto senza un viso visibile è stata spostata dalla prima posizione.",
+    srvMainPhotoFaceNeededBody: "La tua foto profilo principale deve mostrare chiaramente il tuo viso. Aggiungi una tua foto e impostala come foto principale.",
+    srvMainPhotoFaceTitle: "La tua foto principale deve mostrare il tuo viso",
     srvMembershipExpiredBody: "La tua iscrizione è scaduta. Acquistane una nuova per riattivare le funzioni premium.",
     srvMembershipExpiredTitle: "Iscrizione scaduta",
     srvMembershipExpiringBody: "{days, plural, =1{La tua iscrizione {tier} scade tra 1 giorno. Rinnova ora per mantenere le funzioni premium!} other{La tua iscrizione {tier} scade tra {days} giorni. Rinnova ora per mantenere le funzioni premium!}}",
@@ -3279,6 +3300,9 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvLevelUpBody: "{coins, plural, =1{Parabéns! Ganhaste 1 moeda.} other{Parabéns! Ganhaste {coins} moedas.}}",
     srvLevelUpTitle: "Subiste de nível! Agora estás no nível {level}!",
     srvLikedYourEvent: "gostou do teu evento",
+    srvMainPhotoFaceMovedBody: "A sua foto de perfil principal tem de mostrar claramente o seu rosto. Uma foto sem rosto visível foi retirada da primeira posição.",
+    srvMainPhotoFaceNeededBody: "A sua foto de perfil principal tem de mostrar claramente o seu rosto. Adicione uma foto sua e defina-a como foto principal.",
+    srvMainPhotoFaceTitle: "A sua foto principal precisa do seu rosto",
     srvMembershipExpiredBody: "A tua subscrição expirou. Compra uma nova para recuperares as funcionalidades premium.",
     srvMembershipExpiredTitle: "Subscrição expirada",
     srvMembershipExpiringBody: "{days, plural, =1{A tua subscrição {tier} expira dentro de 1 dia. Prolonga-a agora para manteres as funcionalidades premium!} other{A tua subscrição {tier} expira dentro de {days} dias. Prolonga-a agora para manteres as funcionalidades premium!}}",
@@ -3695,6 +3719,9 @@ export const ARB_CATALOG: Record<AppLocale, Record<ArbKey, string>> = {
     srvLevelUpBody: "{coins, plural, =1{Parabéns! Você ganhou 1 moeda.} other{Parabéns! Você ganhou {coins} moedas.}}",
     srvLevelUpTitle: "Você subiu de nível! Agora está no nível {level}!",
     srvLikedYourEvent: "curtiu seu evento",
+    srvMainPhotoFaceMovedBody: "Sua foto de perfil principal precisa mostrar seu rosto com clareza. Uma foto sem rosto visível foi retirada da primeira posição.",
+    srvMainPhotoFaceNeededBody: "Sua foto de perfil principal precisa mostrar seu rosto com clareza. Adicione uma foto sua e defina-a como foto principal.",
+    srvMainPhotoFaceTitle: "Sua foto principal precisa mostrar seu rosto",
     srvMembershipExpiredBody: "Sua assinatura expirou. Compre uma nova para recuperar os recursos premium.",
     srvMembershipExpiredTitle: "Assinatura expirada",
     srvMembershipExpiringBody: "{days, plural, =1{Sua assinatura {tier} expira em 1 dia. Renove agora para manter seus recursos premium!} other{Sua assinatura {tier} expira em {days} dias. Renove agora para manter seus recursos premium!}}",
