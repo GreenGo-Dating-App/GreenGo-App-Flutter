@@ -8383,5 +8383,10 @@
   "eventGuestsNoPlaces": "Nicht mehr genug freie Plätze für deine Gäste.",
   "csvColTicketHolders": "Ticketinhaber",
   "discoverySegmentPeople": "Personen",
-  "discoverySegmentBusinesses": "Unternehmen"
+  "discoverySegmentBusinesses": "Unternehmen",
+  "storefrontGalleryRequiredError": "Füge mindestens ein Galeriefoto hinzu. Das erste ist dein Unternehmensfoto in Entdecken.",
+  "bcCheckStorefrontPhoto": "Storefront-Foto",
+  "bcTodoStorefrontPhoto": "Füge ein Storefront-Foto hinzu: Es ist dein Unternehmensfoto in Entdecken",
+  "storefrontChatButton": "Chat",
+  "storefrontEventsLoadError": "Die Events konnten nicht geladen werden. Bitte versuche es erneut."
 }

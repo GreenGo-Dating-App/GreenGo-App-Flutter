@@ -9,6 +9,7 @@ import '../../../../core/theme/app_glass.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../matching/domain/entities/match_candidate.dart';
+import '../../../profile/domain/entities/profile.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/utils/distance_bucket.dart';
 import '../../../../core/utils/country_names_l10n.dart';
@@ -55,6 +56,25 @@ class NetworkGridCard extends StatefulWidget {
 
   /// Long-press anywhere on the tile (opens the private group-tag sheet).
   final VoidCallback onLongPressTag;
+
+  /// The photos a tile cycles through. Business tiles lead with the
+  /// business's storefront gallery (its FIRST image is the tile's main photo,
+  /// owner 2026-10-19), falling back to the profile photos when the gallery is
+  /// empty (legacy businesses). People tiles: their profile photos.
+  static List<String> tilePhotoUrls(Profile profile, {required bool isBusiness}) {
+    if (isBusiness) {
+      final gallery =
+          profile.galleryImages.where((u) => u.trim().isNotEmpty).toList();
+      if (gallery.isNotEmpty) return gallery;
+    }
+    return profile.photoUrls;
+  }
+
+  /// The tile's main (first) photo, or null. See [tilePhotoUrls].
+  static String? mainPhotoUrl(Profile profile, {required bool isBusiness}) {
+    final urls = tilePhotoUrls(profile, isBusiness: isBusiness);
+    return urls.isEmpty || urls.first.isEmpty ? null : urls.first;
+  }
 
   /// Width the tile decodes (memory) and stores (disk) its photo at.
   static const int photoCacheWidth = 600;
@@ -127,7 +147,8 @@ class _NetworkGridCardState extends State<NetworkGridCard> {
   @override
   Widget build(BuildContext context) {
     final profile = widget.candidate.profile;
-    final photoUrls = profile.photoUrls;
+    final photoUrls = NetworkGridCard.tilePhotoUrls(profile,
+        isBusiness: widget.isBusiness);
     final hasMultiplePhotos = photoUrls.length > 1;
 
     final location = profile.effectiveLocation;

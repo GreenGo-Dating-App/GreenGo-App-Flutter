@@ -66,8 +66,9 @@ class DiscoveryPrefetch {
         grid.map((c) => c.profile.userId),
       );
       final photos = grid
-          .map((c) => c.profile.photoUrls.isEmpty ? '' : c.profile.photoUrls.first)
-          .where((u) => u.isNotEmpty)
+          .map((c) => NetworkGridCard.mainPhotoUrl(c.profile,
+              isBusiness: c.profile.isBusiness && c.profile.userId != userId))
+          .whereType<String>()
           .take(_photosToWarm);
       await Future.wait(photos.map(NetworkGridCard.precachePhoto));
     } catch (e) {

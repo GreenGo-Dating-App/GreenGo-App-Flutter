@@ -15935,5 +15935,25 @@
   "discoverySegmentBusinesses": "Businesses",
   "@discoverySegmentBusinesses": {
     "description": "Discover page: People / Businesses segmented switch"
+  },
+  "storefrontGalleryRequiredError": "Add at least one gallery photo. The first one is your business photo in Discover.",
+  "@storefrontGalleryRequiredError": {
+    "description": "Storefront editor: inline error when saving a business storefront with an empty gallery (at least one image is required)."
+  },
+  "bcCheckStorefrontPhoto": "Storefront photo",
+  "@bcCheckStorefrontPhoto": {
+    "description": "Business Center Settings checklist: REQUIRED item, at least one storefront gallery photo."
+  },
+  "bcTodoStorefrontPhoto": "Add a storefront photo: it is your business photo in Discover",
+  "@bcTodoStorefrontPhoto": {
+    "description": "Business Center Overview 'Action needed' row when the storefront gallery is empty."
+  },
+  "storefrontChatButton": "Chat",
+  "@storefrontChatButton": {
+    "description": "Business storefront header: primary button next to Share that opens the business chat."
+  },
+  "storefrontEventsLoadError": "Could not load the events. Please try again.",
+  "@storefrontEventsLoadError": {
+    "description": "Business storefront 'See all' upcoming events list: load error."
   }
 }

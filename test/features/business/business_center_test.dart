@@ -51,6 +51,7 @@ Profile _business({MembershipTier tier = MembershipTier.gold, bool complete = tr
       businessCategory: complete ? 'cafe' : null,
       storefrontBio: complete ? 'Coffee and cake' : null,
       businessAddress: complete ? const BusinessAddress(address: 'Rua A 1', latitude: -23.5, longitude: -46.6) : null,
+      galleryImages: complete ? const ['https://example.com/g1.jpg'] : const [],
     );
 
 Widget _app(Widget child) => MaterialApp(
@@ -141,13 +142,16 @@ void main() {
         traderRepository: _Trader(false))));
     await t.pumpAndSettle();
     expect(find.byKey(const ValueKey('bc-todo-company')), findsOneWidget);
+    // The storefront photo has its own "Action needed" row.
+    expect(find.byKey(const ValueKey('bc-todo-storefront-photo')), findsOneWidget);
     await t.tap(find.byKey(const ValueKey('bc-todo-company')));
     await t.pumpAndSettle();
     expect(find.byKey(const ValueKey('bc-settings')), findsOneWidget);
-    expect(_text(t, 'bc-company-progress'), '3 of 7 required items complete');
+    expect(_text(t, 'bc-company-progress'), '3 of 8 required items complete');
     // Terms 12.4 / DSA art. 30: the trader declaration is a required item.
     expect(_text(t, 'bc-check-traderStatus-state'), 'Missing: tap to add');
     expect(_text(t, 'bc-check-description-state'), 'Missing: tap to add');
+    expect(_text(t, 'bc-check-storefrontPhoto-state'), 'Missing: tap to add');
     expect(_text(t, 'bc-check-name-state'), 'Done');
     expect(_text(t, 'bc-check-invoiceDetails-state'), 'Done');
   });

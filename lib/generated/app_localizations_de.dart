@@ -26723,4 +26723,22 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get discoverySegmentBusinesses => 'Unternehmen';
+
+  @override
+  String get storefrontGalleryRequiredError =>
+      'Füge mindestens ein Galeriefoto hinzu. Das erste ist dein Unternehmensfoto in Entdecken.';
+
+  @override
+  String get bcCheckStorefrontPhoto => 'Storefront-Foto';
+
+  @override
+  String get bcTodoStorefrontPhoto =>
+      'Füge ein Storefront-Foto hinzu: Es ist dein Unternehmensfoto in Entdecken';
+
+  @override
+  String get storefrontChatButton => 'Chat';
+
+  @override
+  String get storefrontEventsLoadError =>
+      'Die Events konnten nicht geladen werden. Bitte versuche es erneut.';
 }

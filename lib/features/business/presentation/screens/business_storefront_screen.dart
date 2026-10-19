@@ -23,7 +23,10 @@ import '../../data/services/follow_service.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../data/business_contact_phone.dart';
-import '../widgets/business_contact_button.dart';
+import '../../data/business_upcoming_events.dart';
+import '../widgets/storefront_chat_button.dart';
+import '../widgets/storefront_event_tile.dart';
+import 'business_upcoming_events_screen.dart';
 import '../widgets/business_follow_button.dart';
 import '../widgets/opening_hours_section.dart';
 import '../widgets/business_rating.dart';
@@ -37,21 +40,39 @@ import '../../../../core/services/deep_link_service.dart';
 /// events and the communities they own, plus Follow + Contact actions.
 ///
 /// Reads are deliberately cheap and index-free so this scales to millions:
-///   * Events: `events.where(organizerId == businessId)` from today onward,
-///     ordered by startDate, limited to 10 (existing organizerId+startDate
-///     index), then filtered to published + not ended; falls back to the
-///     unordered limit-20 read if that query fails.
+///   * Events: [BusinessUpcomingEventsRepository.preview] - upcoming
+///     (future + ongoing), published, not hidden/private, soonest first, on the
+///     existing events(organizerId, startDate) / (organizerId, endDate)
+///     indexes; "See all" pages through every upcoming event (20 per page).
 ///   * Communities: `communities.where(createdByUserId == businessId)` limited
 ///     to 20, filtered to public client side.
 class BusinessStorefrontScreen extends StatefulWidget {
   const BusinessStorefrontScreen({
     required this.business,
     required this.currentUserId,
+    this.eventsRepository,
     super.key,
   });
 
   final Profile business;
   final String currentUserId;
+
+  /// Injectable for tests; defaults to the Firestore-backed repository.
+  final BusinessUpcomingEventsRepository? eventsRepository;
+
+  /// Hero image: curated cover, else the FIRST storefront gallery image, else
+  /// the profile photo (legacy); null = branded placeholder (never empty).
+  static String? heroImageFor(Profile b) {
+    final cover = b.coverImageUrl?.trim() ?? '';
+    if (cover.isNotEmpty) return cover;
+    for (final u in b.galleryImages) {
+      if (u.trim().isNotEmpty) return u;
+    }
+    for (final u in b.photoUrls) {
+      if (u.trim().isNotEmpty) return u;
+    }
+    return null;
+  }
 
   @override
   State<BusinessStorefrontScreen> createState() =>
@@ -59,7 +80,9 @@ class BusinessStorefrontScreen extends StatefulWidget {
 }
 
 class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
-  late Future<List<_EventCard>> _eventsFuture;
+  late Future<List<StorefrontEvent>> _eventsFuture;
+  late final BusinessUpcomingEventsRepository _eventsRepo =
+      widget.eventsRepository ?? BusinessUpcomingEventsRepository();
   late Future<List<_CommunityCard>> _communitiesFuture;
 
   // Follower count: PRIVATE (owner decision 2026-10-17) - only the business
@@ -118,38 +141,23 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
       ? widget.business.galleryImages
       : widget.business.photoUrls;
 
-  Future<List<_EventCard>> _loadEvents() async {
+  Future<List<StorefrontEvent>> _loadEvents() async {
     try {
-      final events = FirebaseFirestore.instance
-          .collection('events')
-          .where('organizerId', isEqualTo: widget.business.userId);
-      final now = DateTime.now();
-      final startOfToday = DateTime(now.year, now.month, now.day);
-      QuerySnapshot<Map<String, dynamic>> snap;
-      try {
-        // Upcoming only, soonest first, server-side (existing
-        // events(organizerId, startDate) index).
-        snap = await events
-            .where('startDate',
-                isGreaterThanOrEqualTo: Timestamp.fromDate(startOfToday))
-            .orderBy('startDate')
-            .limit(10)
-            .get();
-      } catch (_) {
-        // The original unordered read, filtered/sorted below.
-        snap = await events.limit(20).get();
-      }
-      final cards = snap.docs
-          .map((d) => _EventCard.fromDoc(d.id, d.data()))
-          .where((e) =>
-              e.status == 'published' &&
-              (e.endDate == null || e.endDate!.isAfter(now)))
-          .toList()
-        ..sort((a, b) => (a.startDate ?? now).compareTo(b.startDate ?? now));
-      return cards;
+      return await _eventsRepo.preview(widget.business.userId);
     } catch (_) {
       return const [];
     }
+  }
+
+  void _openAllEvents() {
+    Navigator.of(context).push(MaterialPageRoute<void>(
+      builder: (_) => BusinessUpcomingEventsScreen(
+        businessId: widget.business.userId,
+        businessName: _title,
+        currentUserId: widget.currentUserId,
+        repository: _eventsRepo,
+      ),
+    ));
   }
 
   Future<List<_CommunityCard>> _loadCommunities() async {
@@ -174,10 +182,7 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
     final photos = widget.business.photoUrls;
     // Featured/cover (hero) image: prefer the curated coverImageUrl, then fall
     // back to the first profile photo, then a branded placeholder.
-    final cover = widget.business.coverImageUrl;
-    final coverUrl = (cover != null && cover.isNotEmpty)
-        ? cover
-        : (photos.isNotEmpty ? photos.first : null);
+    final coverUrl = BusinessStorefrontScreen.heroImageFor(widget.business);
     final avatarUrl = photos.isNotEmpty ? photos.first : null;
 
     return Scaffold(
@@ -296,8 +301,11 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                         currentUserId: widget.currentUserId,
                       ),
                       const SizedBox(width: 12),
-                      BusinessContactButton(
-                        businessProfile: widget.business,
+                      // Primary "Chat" (business inbox), right next to
+                      // Share. It replaces the former "Contact" pill here
+                      // (same action) so the header has no duplicate.
+                      StorefrontChatButton(
+                        business: widget.business,
                         currentUserId: widget.currentUserId,
                       ),
                       // Share this storefront/profile via its deep link
@@ -485,9 +493,26 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                   ],
                   // Upcoming events
                   const SizedBox(height: 24),
-                  _sectionTitle(l10n.businessUpcomingEvents),
+                  FutureBuilder<List<StorefrontEvent>>(
+                    future: _eventsFuture,
+                    builder: (context, snap) => Row(
+                      children: [
+                        Expanded(
+                            child:
+                                _sectionTitle(l10n.businessUpcomingEvents)),
+                        if ((snap.data ?? const []).isNotEmpty)
+                          TextButton(
+                            key: const ValueKey('storefront-events-see-all'),
+                            onPressed: _openAllEvents,
+                            child: Text(l10n.seeAll,
+                                style: const TextStyle(
+                                    color: AppColors.richGold)),
+                          ),
+                      ],
+                    ),
+                  ),
                   const SizedBox(height: 12),
-                  FutureBuilder<List<_EventCard>>(
+                  FutureBuilder<List<StorefrontEvent>>(
                     future: _eventsFuture,
                     builder: (context, snap) {
                       if (snap.connectionState == ConnectionState.waiting) {
@@ -498,9 +523,13 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                         return _emptyNote(l10n.businessNoUpcomingEvents);
                       }
                       return Column(
-                        children: events
-                            .map((e) => _eventTile(e))
-                            .toList(),
+                        children: [
+                          for (final e in events)
+                            StorefrontEventTile(
+                              event: e,
+                              onTap: () => _openStorefrontEvent(e.id),
+                            ),
+                        ],
                       );
                     },
                   ),
@@ -773,67 +802,6 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
     );
   }
 
-  Widget _eventTile(_EventCard e) {
-    return InkWell(
-      onTap: () => _openStorefrontEvent(e.id),
-      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-      child: Container(
-      margin: const EdgeInsets.only(bottom: 10),
-      padding: const EdgeInsets.all(12),
-      decoration: BoxDecoration(
-        color: AppColors.backgroundCard,
-        borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-        border: Border.all(color: AppColors.divider),
-      ),
-      child: Row(
-        children: [
-          Container(
-            width: 48,
-            height: 48,
-            decoration: BoxDecoration(
-              color: AppColors.richGold.withOpacity(0.12),
-              borderRadius: BorderRadius.circular(AppDimensions.radiusS),
-              image: e.imageUrl != null
-                  ? DecorationImage(
-                      image: _thumb(e.imageUrl!, 48), fit: BoxFit.cover)
-                  : null,
-            ),
-            child: e.imageUrl == null
-                ? const Icon(Icons.event, color: AppColors.richGold)
-                : null,
-          ),
-          const SizedBox(width: 12),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  e.title,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(
-                    color: AppColors.textPrimary,
-                    fontSize: 15,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                if (e.startDate != null) ...[
-                  const SizedBox(height: 2),
-                  Text(
-                    _fmtDate(e.startDate!),
-                    style: const TextStyle(
-                        color: AppColors.textSecondary, fontSize: 13),
-                  ),
-                ],
-              ],
-            ),
-          ),
-        ],
-      ),
-      ),
-    );
-  }
-
   Widget _communityTile(_CommunityCard c) {
     return InkWell(
       onTap: () => _openStorefrontCommunity(c.id),
@@ -894,40 +862,6 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
     );
   }
 
-  String _fmtDate(DateTime d) =>
-      '${d.day}/${d.month}/${d.year} · ${d.hour.toString().padLeft(2, '0')}:${d.minute.toString().padLeft(2, '0')}';
-}
-
-/// Lightweight view model for a storefront event card (avoids importing the
-/// events feature's model / entity into the business layer).
-class _EventCard {
-  const _EventCard({
-    required this.id,
-    required this.title,
-    required this.status,
-    this.imageUrl,
-    this.startDate,
-    this.endDate,
-  });
-
-  final String id;
-  final String title;
-  final String status;
-  final String? imageUrl;
-  final DateTime? startDate;
-  final DateTime? endDate;
-
-  factory _EventCard.fromDoc(String id, Map<String, dynamic> d) {
-    DateTime? ts(dynamic v) => v is Timestamp ? v.toDate() : null;
-    return _EventCard(
-      id: id,
-      title: (d['title'] as String?) ?? '',
-      status: (d['status'] as String?) ?? 'draft',
-      imageUrl: d['imageUrl'] as String?,
-      startDate: ts(d['startDate']),
-      endDate: ts(d['endDate']),
-    );
-  }
 }
 
 /// Lightweight view model for a storefront community card.

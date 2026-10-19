@@ -26411,4 +26411,22 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get discoverySegmentBusinesses => 'Businesses';
+
+  @override
+  String get storefrontGalleryRequiredError =>
+      'Add at least one gallery photo. The first one is your business photo in Discover.';
+
+  @override
+  String get bcCheckStorefrontPhoto => 'Storefront photo';
+
+  @override
+  String get bcTodoStorefrontPhoto =>
+      'Add a storefront photo: it is your business photo in Discover';
+
+  @override
+  String get storefrontChatButton => 'Chat';
+
+  @override
+  String get storefrontEventsLoadError =>
+      'Could not load the events. Please try again.';
 }

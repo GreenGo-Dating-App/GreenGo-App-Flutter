@@ -26812,4 +26812,22 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get discoverySegmentBusinesses => 'Entreprises';
+
+  @override
+  String get storefrontGalleryRequiredError =>
+      'Ajoutez au moins une photo à la galerie. La première est la photo de votre entreprise dans Découvrir.';
+
+  @override
+  String get bcCheckStorefrontPhoto => 'Photo de la vitrine';
+
+  @override
+  String get bcTodoStorefrontPhoto =>
+      'Ajoutez une photo de vitrine : c\'est la photo de votre entreprise dans Découvrir';
+
+  @override
+  String get storefrontChatButton => 'Chat';
+
+  @override
+  String get storefrontEventsLoadError =>
+      'Impossible de charger les événements. Veuillez réessayer.';
 }

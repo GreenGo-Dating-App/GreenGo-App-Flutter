@@ -7,6 +7,9 @@ enum CompanyItem {
   name(required: true),
   category(required: true),
   description(required: true),
+  // Owner 2026-10-19: at least one storefront gallery photo. Its first image
+  // is the business's tile photo in Discover and the storefront hero fallback.
+  storefrontPhoto(required: true),
   address(required: true),
   invoiceDetails(required: true),
   payments(required: true),
@@ -36,6 +39,7 @@ Map<CompanyItem, bool?> companyChecklist(Profile p,
     CompanyItem.name: has(p.businessName),
     CompanyItem.category: has(p.businessCategory),
     CompanyItem.description: has(p.storefrontBio),
+    CompanyItem.storefrontPhoto: p.galleryImages.any(has),
     CompanyItem.address: p.businessAddress != null,
     CompanyItem.invoiceDetails: billingComplete,
     CompanyItem.payments: paymentsConnected,

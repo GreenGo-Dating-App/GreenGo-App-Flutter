@@ -26698,4 +26698,22 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get discoverySegmentBusinesses => 'Attività';
+
+  @override
+  String get storefrontGalleryRequiredError =>
+      'Aggiungi almeno una foto alla galleria. La prima è la foto della tua attività in Scopri.';
+
+  @override
+  String get bcCheckStorefrontPhoto => 'Foto della vetrina';
+
+  @override
+  String get bcTodoStorefrontPhoto =>
+      'Aggiungi una foto della vetrina: è la foto della tua attività in Scopri';
+
+  @override
+  String get storefrontChatButton => 'Chat';
+
+  @override
+  String get storefrontEventsLoadError =>
+      'Impossibile caricare gli eventi. Riprova.';
 }

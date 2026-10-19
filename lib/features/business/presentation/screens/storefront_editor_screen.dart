@@ -50,6 +50,12 @@ class StorefrontEditorScreen extends StatefulWidget {
 
   final Profile profile;
 
+  /// Business accounts must keep at least ONE storefront gallery image: the
+  /// first one is the business's tile photo in Discover and the storefront
+  /// hero fallback, so an empty gallery would show an empty tile/hero.
+  static bool hasRequiredGallery(List<String> galleryImages) =>
+      galleryImages.any((u) => u.trim().isNotEmpty);
+
   @override
   State<StorefrontEditorScreen> createState() => _StorefrontEditorScreenState();
 }
@@ -80,6 +86,9 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   // Which image slot the in-flight upload belongs to (null = no upload).
   _UploadTarget? _pendingUploadTarget;
   bool _saving = false;
+  // Inline "add at least one photo" error under the gallery (set on a save
+  // attempt with an empty gallery, cleared as soon as an image is added).
+  bool _galleryRequiredError = false;
 
   bool get _uploadingFeatured => _pendingUploadTarget == _UploadTarget.featured;
   bool get _uploadingGallery => _pendingUploadTarget == _UploadTarget.gallery;
@@ -289,6 +298,17 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   }
 
   void _save() {
+    if (!StorefrontEditorScreen.hasRequiredGallery(_galleryImages)) {
+      setState(() => _galleryRequiredError = true);
+      final l10n = AppLocalizations.of(context)!;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(l10n.storefrontGalleryRequiredError),
+          backgroundColor: AppColors.errorRed,
+        ),
+      );
+      return;
+    }
     setState(() => _saving = true);
     context
         .read<ProfileBloc>()
@@ -350,6 +370,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
                   break;
                 case _UploadTarget.gallery:
                   _galleryImages.add(state.photoUrl);
+                  _galleryRequiredError = false;
                   break;
                 case _UploadTarget.avatar:
                   _avatarUrl = state.photoUrl;
@@ -396,9 +417,29 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
             const SizedBox(height: 28),
 
             // Gallery
-            _sectionHeader(l10n.businessGallery, l10n.storefrontGallerySubtitle),
+            _sectionHeader('${l10n.businessGallery} *',
+                l10n.storefrontGallerySubtitle),
             const SizedBox(height: 12),
             _galleryGrid(l10n),
+            if (_galleryRequiredError &&
+                !StorefrontEditorScreen.hasRequiredGallery(_galleryImages)) ...[
+              const SizedBox(height: 8),
+              Row(
+                key: const Key('storefront_gallery_required_error'),
+                children: [
+                  const Icon(Icons.error_outline,
+                      color: AppColors.errorRed, size: 16),
+                  const SizedBox(width: 6),
+                  Expanded(
+                    child: Text(
+                      l10n.storefrontGalleryRequiredError,
+                      style: const TextStyle(
+                          color: AppColors.errorRed, fontSize: 12),
+                    ),
+                  ),
+                ],
+              ),
+            ],
             const SizedBox(height: 28),
 
             // Opening hours

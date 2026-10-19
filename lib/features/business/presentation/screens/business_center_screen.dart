@@ -305,9 +305,17 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
             billingComplete: b.status == BillingLoadStatus.ready ? b.complete : null,
             paymentsConnected: t.paymentsConnected,
             traderDeclared: _traderDeclared));
-        // Invoice details and payments already have their own rows.
-        final company = missing.where((m) => m != CompanyItem.invoiceDetails && m != CompanyItem.payments).length;
+        // Invoice details, payments and the storefront photo have their own rows.
+        final company = missing
+            .where((m) =>
+                m != CompanyItem.invoiceDetails &&
+                m != CompanyItem.payments &&
+                m != CompanyItem.storefrontPhoto)
+            .length;
         final rows = [
+          if (missing.contains(CompanyItem.storefrontPhoto))
+            _todoItem(l.bcTodoStorefrontPhoto, Icons.add_photo_alternate_outlined, 'bc-todo-storefront-photo',
+                () => BusinessTools.openStorefrontEditor(context, p)),
           if (company > 0)
             _todoItem(l.bcTodoCompany(company), Icons.business_outlined, 'bc-todo-company',
                 () => DefaultTabController.of(context).animateTo(_kTabSettings)),
@@ -416,6 +424,7 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
                 CompanyItem.name => l.bcCheckName,
                 CompanyItem.category => l.bcCheckCategory,
                 CompanyItem.description => l.bcCheckDescription,
+                CompanyItem.storefrontPhoto => l.bcCheckStorefrontPhoto,
                 CompanyItem.address => l.bcCheckAddress,
                 CompanyItem.invoiceDetails => l.bcCheckInvoice,
                 CompanyItem.payments => l.bcCheckPayments,

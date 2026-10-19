@@ -8383,5 +8383,10 @@
   "eventGuestsNoPlaces": "Não restam lugares suficientes para os teus convidados.",
   "csvColTicketHolders": "Titulares dos bilhetes",
   "discoverySegmentPeople": "Pessoas",
-  "discoverySegmentBusinesses": "Negócios"
+  "discoverySegmentBusinesses": "Negócios",
+  "storefrontGalleryRequiredError": "Adicione pelo menos uma foto à galeria. A primeira é a foto do seu negócio em Descobrir.",
+  "bcCheckStorefrontPhoto": "Foto da montra",
+  "bcTodoStorefrontPhoto": "Adicione uma foto da montra: é a foto do seu negócio em Descobrir",
+  "storefrontChatButton": "Chat",
+  "storefrontEventsLoadError": "Não foi possível carregar os eventos. Tente novamente."
 }

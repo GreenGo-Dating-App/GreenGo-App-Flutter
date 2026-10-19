@@ -45173,6 +45173,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Businesses'**
   String get discoverySegmentBusinesses;
+
+  /// Storefront editor: inline error when saving a business storefront with an empty gallery (at least one image is required).
+  ///
+  /// In en, this message translates to:
+  /// **'Add at least one gallery photo. The first one is your business photo in Discover.'**
+  String get storefrontGalleryRequiredError;
+
+  /// Business Center Settings checklist: REQUIRED item, at least one storefront gallery photo.
+  ///
+  /// In en, this message translates to:
+  /// **'Storefront photo'**
+  String get bcCheckStorefrontPhoto;
+
+  /// Business Center Overview 'Action needed' row when the storefront gallery is empty.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a storefront photo: it is your business photo in Discover'**
+  String get bcTodoStorefrontPhoto;
+
+  /// Business storefront header: primary button next to Share that opens the business chat.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat'**
+  String get storefrontChatButton;
+
+  /// Business storefront 'See all' upcoming events list: load error.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load the events. Please try again.'**
+  String get storefrontEventsLoadError;
 }
 
 class _AppLocalizationsDelegate

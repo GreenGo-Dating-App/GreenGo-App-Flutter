@@ -81,6 +81,7 @@ void main() {
         businessCategory: 'cafe',
         storefrontBio: 'Coffee and cake',
         businessAddress: const BusinessAddress(address: 'Rua A 1', latitude: -23.5, longitude: -46.6),
+        galleryImages: const ['https://example.com/g1.jpg'],
       );
       expect(missingRequired(companyChecklist(p, billingComplete: true, paymentsConnected: true)), isEmpty);
       expect(missingRequired(companyChecklist(p, billingComplete: false, paymentsConnected: true)),

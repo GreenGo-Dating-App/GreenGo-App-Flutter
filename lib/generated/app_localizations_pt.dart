@@ -26636,6 +26636,24 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get discoverySegmentBusinesses => 'Negócios';
+
+  @override
+  String get storefrontGalleryRequiredError =>
+      'Adicione pelo menos uma foto à galeria. A primeira é a foto do seu negócio em Descobrir.';
+
+  @override
+  String get bcCheckStorefrontPhoto => 'Foto da montra';
+
+  @override
+  String get bcTodoStorefrontPhoto =>
+      'Adicione uma foto da montra: é a foto do seu negócio em Descobrir';
+
+  @override
+  String get storefrontChatButton => 'Chat';
+
+  @override
+  String get storefrontEventsLoadError =>
+      'Não foi possível carregar os eventos. Tente novamente.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -53276,4 +53294,22 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get discoverySegmentBusinesses => 'Negócios';
+
+  @override
+  String get storefrontGalleryRequiredError =>
+      'Adicione pelo menos uma foto à galeria. A primeira é a foto do seu negócio em Descobrir.';
+
+  @override
+  String get bcCheckStorefrontPhoto => 'Foto da vitrine';
+
+  @override
+  String get bcTodoStorefrontPhoto =>
+      'Adicione uma foto da vitrine: é a foto do seu negócio em Descobrir';
+
+  @override
+  String get storefrontChatButton => 'Chat';
+
+  @override
+  String get storefrontEventsLoadError =>
+      'Não foi possível carregar os eventos. Tente novamente.';
 }

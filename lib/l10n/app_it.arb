@@ -8383,5 +8383,10 @@
   "eventGuestsNoPlaces": "Non ci sono abbastanza posti per i tuoi ospiti.",
   "csvColTicketHolders": "Titolari dei biglietti",
   "discoverySegmentPeople": "Persone",
-  "discoverySegmentBusinesses": "Attività"
+  "discoverySegmentBusinesses": "Attività",
+  "storefrontGalleryRequiredError": "Aggiungi almeno una foto alla galleria. La prima è la foto della tua attività in Scopri.",
+  "bcCheckStorefrontPhoto": "Foto della vetrina",
+  "bcTodoStorefrontPhoto": "Aggiungi una foto della vetrina: è la foto della tua attività in Scopri",
+  "storefrontChatButton": "Chat",
+  "storefrontEventsLoadError": "Impossibile caricare gli eventi. Riprova."
 }
