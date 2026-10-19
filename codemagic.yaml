@@ -86,7 +86,7 @@ workflows:
         script: |
           flutter build ipa \
             --release \
-            --build-name=5.0.36 \
+            --build-name=5.0.37 \
             --build-number=$PROJECT_BUILD_NUMBER \
             --export-options-plist=$HOME/export_options.plist
     artifacts:
